@@ -1,0 +1,5658 @@
+{
+ "1": {
+  "speaker": "brother",
+  "listener_gender": "male",
+  "rel": "younger_sibling",
+  "self_term": "anh",
+  "listener_term": "em",
+  "same_sex": true,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Chào em!",
+     "gloss": "안녕  동생",
+     "translation": "안녕!",
+     "reply": "Nam: Dạ, chào anh!  — 네, 안녕하세요!",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Em khỏe không?",
+     "gloss": "동생  건강하다  ~입니까?",
+     "translation": "잘 지내니?",
+     "reply": "Nam: Dạ, em khỏe. Cảm ơn anh.  — 네, 잘 지내요. 고맙습니다.",
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Anh tên là Đông-ju.",
+     "gloss": "형  이름  이다  동주",
+     "translation": "형 이름은 동주야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh là người Hàn Quốc.",
+     "gloss": "형  이다  사람  한국",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh đang học tiếng Việt.",
+     "gloss": "형  ~하는 중  배우다  베트남어",
+     "translation": "형은 베트남어를 배우고 있어.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh là Nhân Chứng Giê-hô-va.",
+     "gloss": "형  이다  증인  여호와",
+     "translation": "형은 여호와의 증인이야.",
+     "reply": "Nam: Dạ, em tên là Nam. Rất vui được gặp anh.  — 네, 제 이름은 남이에요. 만나서 반가워요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Rất vui được gặp em.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  동생",
+     "translation": "만나서 반가워.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Em có Zalo không?",
+     "gloss": "동생  있다  잘로  ~입니까?",
+     "translation": "동생 잘로(Zalo) 있니?",
+     "reply": "Nam: Dạ, có ạ.  — 네, 있어요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Cho anh xin số điện thoại của em nhé.",
+     "gloss": "주다  형  청하다  번호  전화  ~의  동생  ~해요",
+     "translation": "동생 전화번호 좀 알려 줘.",
+     "reply": "Nam: Dạ, số của em là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Cảm ơn em nhiều.",
+     "gloss": "감사하다  동생  많이",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, anh muốn gặp em nữa.",
+     "gloss": "주(週)  다음  형  원하다  만나다  동생  또",
+     "translation": "다음 주에 동생을 또 만나고 싶어.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Em có thời gian không?",
+     "gloss": "동생  있다  시간  ~입니까?",
+     "translation": "동생 시간 있니?",
+     "reply": "Nam: Dạ, Chủ Nhật được ạ.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Hẹn gặp lại em nhé!",
+     "gloss": "약속하다  만나다  다시  동생  ~해요",
+     "translation": "그럼 또 만나!",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại em.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  동생",
+     "translation": "다시 만나서 반가워.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh muốn mời em đến Phòng Nước Trời.",
+     "gloss": "형  원하다  초대하다  동생  ~에 오다  회관  왕국",
+     "translation": "동생을 왕국회관에 초대하고 싶어.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị.",
+     "gloss": "모임  집회  아주  재미있다",
+     "translation": "집회는 정말 흥미로워.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Em đi với anh nhé!",
+     "gloss": "동생  가다  ~와 함께  형  ~해요",
+     "translation": "동생, 형이랑 같이 가자!",
+     "reply": "Nam: Dạ, em sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Em có muốn tìm hiểu Kinh Thánh không?",
+     "gloss": "동생  있다  원하다  알아보다  성경  ~입니까?",
+     "translation": "성경을 알아보고 싶니?",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí.",
+     "gloss": "배우다  성경  무료",
+     "translation": "성경 공부는 무료야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút.",
+     "gloss": "매  주(週)  한  번  약  30  분",
+     "translation": "일주일에 한 번, 30분 정도.",
+     "reply": "Nam: Dạ, em muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu nhé!",
+     "gloss": "우리  시작하다  ~해요",
+     "translation": "우리 시작하자!",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복",
+     "translation": "오늘은 우리 행복에 대해 배워.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Em đọc câu Kinh Thánh này nhé.",
+     "gloss": "동생  읽다  구절  성경  이  ~해요",
+     "translation": "동생이 이 성경 구절을 읽어 줘.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Em nghĩ sao?",
+     "gloss": "동생  생각하다  어떻게",
+     "translation": "어떻게 생각하니?",
+     "reply": "Nam: Dạ, hay quá ạ.  — 정말 좋네요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Cảm ơn em. Tuần sau gặp lại nhé!",
+     "gloss": "감사하다  동생  주(週)  다음  만나다  다시  ~해요",
+     "translation": "고마워 동생. 다음 주에 또 만나!",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Chào em!",
+     "gloss": "안녕  동생",
+     "translation": "안녕!",
+     "reply": "Nam: Dạ, chào anh!  — 네, 안녕하세요!",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Em khỏe không?",
+     "gloss": "동생  건강하다  ~입니까?",
+     "translation": "잘 지내니?",
+     "reply": "Nam: Dạ, em khỏe. Cảm ơn anh.  — 네, 잘 지내요. 고맙습니다.",
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Anh tên là Đông-ju.",
+     "gloss": "형  이름  이다  동주",
+     "translation": "형 이름은 동주야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh là người Hàn Quốc.",
+     "gloss": "형  이다  사람  한국",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh đang học tiếng Việt.",
+     "gloss": "형  ~하는 중  배우다  베트남어",
+     "translation": "형은 베트남어를 배우고 있어.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh là Nhân Chứng Giê-hô-va.",
+     "gloss": "형  이다  증인  여호와",
+     "translation": "형은 여호와의 증인이야.",
+     "reply": "Nam: Dạ, em tên là Nam. Rất vui được gặp anh.  — 네, 제 이름은 남이에요. 만나서 반가워요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Rất vui được gặp em.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  동생",
+     "translation": "만나서 반가워.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Em có Zalo không?",
+     "gloss": "동생  있다  잘로  ~입니까?",
+     "translation": "동생 잘로(Zalo) 있니?",
+     "reply": "Nam: Dạ, có ạ.  — 네, 있어요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Cho anh xin số điện thoại của em nhé.",
+     "gloss": "주다  형  청하다  번호  전화  ~의  동생  ~해요",
+     "translation": "동생 전화번호 좀 알려 줘.",
+     "reply": "Nam: Dạ, số của em là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Cảm ơn em nhiều.",
+     "gloss": "감사하다  동생  많이",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, anh muốn gặp em nữa.",
+     "gloss": "주(週)  다음  형  원하다  만나다  동생  또",
+     "translation": "다음 주에 동생을 또 만나고 싶어.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Em có thời gian không?",
+     "gloss": "동생  있다  시간  ~입니까?",
+     "translation": "동생 시간 있니?",
+     "reply": "Nam: Dạ, Chủ Nhật được ạ.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Hẹn gặp lại em nhé!",
+     "gloss": "약속하다  만나다  다시  동생  ~해요",
+     "translation": "그럼 또 만나!",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại em.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  동생",
+     "translation": "다시 만나서 반가워.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh muốn mời em đến Phòng Nước Trời.",
+     "gloss": "형  원하다  초대하다  동생  ~에 오다  회관  왕국",
+     "translation": "동생을 왕국회관에 초대하고 싶어.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị.",
+     "gloss": "모임  집회  아주  재미있다",
+     "translation": "집회는 정말 흥미로워.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Em đi với anh nhé!",
+     "gloss": "동생  가다  ~와 함께  형  ~해요",
+     "translation": "동생, 형이랑 같이 가자!",
+     "reply": "Nam: Dạ, em sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Em có muốn tìm hiểu Kinh Thánh không?",
+     "gloss": "동생  있다  원하다  알아보다  성경  ~입니까?",
+     "translation": "성경을 알아보고 싶니?",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí.",
+     "gloss": "배우다  성경  무료",
+     "translation": "성경 공부는 무료야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút.",
+     "gloss": "매  주(週)  한  번  약  30  분",
+     "translation": "일주일에 한 번, 30분 정도.",
+     "reply": "Nam: Dạ, em muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu nhé!",
+     "gloss": "우리  시작하다  ~해요",
+     "translation": "우리 시작하자!",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복",
+     "translation": "오늘은 우리 행복에 대해 배워.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Em đọc câu Kinh Thánh này nhé.",
+     "gloss": "동생  읽다  구절  성경  이  ~해요",
+     "translation": "동생이 이 성경 구절을 읽어 줘.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Em nghĩ sao?",
+     "gloss": "동생  생각하다  어떻게",
+     "translation": "어떻게 생각하니?",
+     "reply": "Nam: Dạ, hay quá ạ.  — 정말 좋네요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Cảm ơn em. Tuần sau gặp lại nhé!",
+     "gloss": "감사하다  동생  주(週)  다음  만나다  다시  ~해요",
+     "translation": "고마워 동생. 다음 주에 또 만나!",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ]
+  }
+ },
+ "2": {
+  "speaker": "brother",
+  "listener_gender": "female",
+  "rel": "younger_sibling",
+  "self_term": "anh",
+  "listener_term": "em",
+  "same_sex": false,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Chào em!",
+     "gloss": "안녕  동생",
+     "translation": "안녕하세요!",
+     "reply": "Hoa: Dạ, chào anh!  — 네, 안녕하세요!",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Em khỏe không?",
+     "gloss": "동생  건강하다  ~입니까?",
+     "translation": "잘 지내세요?",
+     "reply": "Hoa: Dạ, em khỏe. Cảm ơn anh.  — 네, 잘 지내요. 고맙습니다.",
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Anh tên là Đông-ju.",
+     "gloss": "형  이름  이다  동주",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh là người Hàn Quốc.",
+     "gloss": "형  이다  사람  한국",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh đang học tiếng Việt.",
+     "gloss": "형  ~하는 중  배우다  베트남어",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh là Nhân Chứng Giê-hô-va.",
+     "gloss": "형  이다  증인  여호와",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Hoa: Dạ, em tên là Hoa. Rất vui được gặp anh.  — 네, 제 이름은 호아이에요. 만나서 반가워요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Rất vui được gặp em.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  동생",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "3. 마이 자매 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của chị Mai.",
+     "gloss": "여기  이다  번호  전화  ~의  언니  마이",
+     "translation": "이건 마이 언니의 전화번호야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Chị Mai là vợ của anh.",
+     "gloss": "언니  마이  이다  아내  ~의  형/오빠/형제",
+     "translation": "마이 언니는 오빠의 아내야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Chị Mai cũng là Nhân Chứng Giê-hô-va.",
+     "gloss": "언니  마이  ~도  이다  증인  여호와",
+     "translation": "마이 언니도 여호와의 증인이야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho anh xin số của em nhé.",
+     "gloss": "주다  형  청하다  번호  ~의  동생  ~해요",
+     "translation": "동생 전화번호 좀 알려 줘.",
+     "reply": "Hoa: Dạ, số của em là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Chị Mai sẽ liên lạc với em.",
+     "gloss": "누나  마이  ~할 것이다  연락하다  ~와 함께  동생",
+     "translation": "마이 언니가 동생한테 연락할 거야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là chị Mai.",
+     "gloss": "여기  이다 언니  마이",
+     "translation": "이 사람이 마이 언니야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Chào em! Rất vui được gặp em.",
+     "gloss": "안녕  동생  아주  기쁘다  ~하게 되다  만나다  동생",
+     "translation": "안녕! 만나서 반가워.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Chúng tôi muốn mời em đến Phòng Nước Trời.",
+     "gloss": "저희  원하다  초대하다  동생  ~에 오다  회관  왕국",
+     "translation": "동생을 왕국회관에 초대하고 싶어.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị.",
+     "gloss": "모임  집회  아주  재미있다",
+     "translation": "집회는 정말 흥미로워.",
+     "reply": "Hoa: Dạ, em sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "6. 마이 자매가 연구 사회": [
+    {
+     "viet": "Chị Mai sẽ học Kinh Thánh với em.",
+     "gloss": "언니  마이  ~할 것이다  배우다  성경  ~와 함께  동생",
+     "translation": "마이 언니가 동생과 함께 성경을 공부할 거야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Mỗi tuần một lần nhé.",
+     "gloss": "매  주(週)  한  번  ~해요",
+     "translation": "일주일에 한 번이야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Chúng ta bắt đầu nhé!",
+     "gloss": "우리  시작하다  ~해요",
+     "translation": "우리 시작하자!",
+     "reply": "Hoa: Dạ, em cảm ơn ạ.  — 네, 고맙습니다.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Hẹn gặp lại em nhé!",
+     "gloss": "약속하다  만나다  다시  동생  ~해요",
+     "translation": "또 만나!",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Chào em!",
+     "gloss": "안녕  동생",
+     "translation": "안녕하세요!",
+     "reply": "Hoa: Dạ, chào anh!  — 네, 안녕하세요!",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Em khỏe không?",
+     "gloss": "동생  건강하다  ~입니까?",
+     "translation": "잘 지내세요?",
+     "reply": "Hoa: Dạ, em khỏe. Cảm ơn anh.  — 네, 잘 지내요. 고맙습니다.",
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Anh tên là Đông-ju.",
+     "gloss": "형  이름  이다  동주",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh là người Hàn Quốc.",
+     "gloss": "형  이다  사람  한국",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh đang học tiếng Việt.",
+     "gloss": "형  ~하는 중  배우다  베트남어",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Anh là Nhân Chứng Giê-hô-va.",
+     "gloss": "형  이다  증인  여호와",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Hoa: Dạ, em tên là Hoa. Rất vui được gặp anh.  — 네, 제 이름은 호아이에요. 만나서 반가워요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Rất vui được gặp em.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  동생",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "3. 마이 자매 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của chị Mai.",
+     "gloss": "여기  이다  번호  전화  ~의  언니  마이",
+     "translation": "이건 마이 언니의 전화번호야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Chị Mai là vợ của anh.",
+     "gloss": "언니  마이  이다  아내  ~의  형/오빠/형제",
+     "translation": "마이 언니는 오빠의 아내야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Chị Mai cũng là Nhân Chứng Giê-hô-va.",
+     "gloss": "언니  마이  ~도  이다  증인  여호와",
+     "translation": "마이 언니도 여호와의 증인이야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho anh xin số của em nhé.",
+     "gloss": "주다  형  청하다  번호  ~의  동생  ~해요",
+     "translation": "동생 전화번호 좀 알려 줘.",
+     "reply": "Hoa: Dạ, số của em là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Chị Mai sẽ liên lạc với em.",
+     "gloss": "누나  마이  ~할 것이다  연락하다  ~와 함께  동생",
+     "translation": "마이 언니가 동생한테 연락할 거야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là chị Mai.",
+     "gloss": "여기  이다 언니  마이",
+     "translation": "이 사람이 마이 언니야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Chào em! Rất vui được gặp em.",
+     "gloss": "안녕  동생  아주  기쁘다  ~하게 되다  만나다  동생",
+     "translation": "안녕! 만나서 반가워.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Chúng tôi muốn mời em đến Phòng Nước Trời.",
+     "gloss": "저희  원하다  초대하다  동생  ~에 오다  회관  왕국",
+     "translation": "동생을 왕국회관에 초대하고 싶어.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị.",
+     "gloss": "모임  집회  아주  재미있다",
+     "translation": "집회는 정말 흥미로워.",
+     "reply": "Hoa: Dạ, em sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ],
+   "6. 마이 자매가 연구 사회": [
+    {
+     "viet": "Chị Mai sẽ học Kinh Thánh với em.",
+     "gloss": "언니  마이  ~할 것이다  배우다  성경  ~와 함께  동생",
+     "translation": "마이 언니가 동생과 함께 성경을 공부할 거야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Mỗi tuần một lần nhé.",
+     "gloss": "매  주(週)  한  번  ~해요",
+     "translation": "일주일에 한 번이야.",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Chúng ta bắt đầu nhé!",
+     "gloss": "우리  시작하다  ~해요",
+     "translation": "우리 시작하자!",
+     "reply": "Hoa: Dạ, em cảm ơn ạ.  — 네, 고맙습니다.",
+     "speaker": "나: anh  ·  상대: em"
+    },
+    {
+     "viet": "Hẹn gặp lại em nhé!",
+     "gloss": "약속하다  만나다  다시  동생  ~해요",
+     "translation": "또 만나!",
+     "reply": null,
+     "speaker": "나: anh  ·  상대: em"
+    }
+   ]
+  }
+ },
+ "3": {
+  "speaker": "sister",
+  "listener_gender": "male",
+  "rel": "younger_sibling",
+  "self_term": "chị",
+  "listener_term": "em",
+  "same_sex": false,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Chào em!",
+     "gloss": "안녕  동생",
+     "translation": "안녕!",
+     "reply": "Nam: Dạ, chào chị!  — 네, 안녕하세요!",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Em khỏe không?",
+     "gloss": "동생  건강하다  ~입니까?",
+     "translation": "잘 지내니?",
+     "reply": "Nam: Dạ, em khỏe. Cảm ơn chị.  — 네, 잘 지내요. 고맙습니다.",
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Chị tên là Suji.",
+     "gloss": "언니  이름  이다  수지",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị là người Hàn Quốc.",
+     "gloss": "언니  이다  사람  한국",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị đang học tiếng Việt.",
+     "gloss": "언니  ~하는 중  배우다  베트남어",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị là Nhân Chứng Giê-hô-va.",
+     "gloss": "언니  이다  증인  여호와",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Nam: Dạ, em tên là Nam. Rất vui được gặp chị.  — 네, 제 이름은 남이에요. 만나서 반가워요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Rất vui được gặp em.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  동생",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "3. 빈 형제 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của anh Bình.",
+     "gloss": "여기  이다  번호  전화  ~의  오빠  빈",
+     "translation": "이건 빈 형제의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Anh Bình là bạn của chị.",
+     "gloss": "오빠  빈  이다  친구  ~의  언니",
+     "translation": "빈 형제는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Anh Bình cũng là Nhân Chứng Giê-hô-va.",
+     "gloss": "오빠  빈  ~도  이다  증인  여호와",
+     "translation": "빈 형제도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho chị xin số của em nhé.",
+     "gloss": "주다  언니  청하다  번호  ~의  동생  ~해요",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Nam: Dạ, số của em là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Anh Bình sẽ liên lạc với em.",
+     "gloss": "오빠  빈  ~할 것이다  연락하다  ~와 함께  동생",
+     "translation": "빈 형제가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là anh Bình.",
+     "gloss": "여기  이다  형제  빈",
+     "translation": "이분이 빈 형제예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chào em! Rất vui được gặp em.",
+     "gloss": "안녕  동생  아주  기쁘다  ~하게 되다  만나다  동생",
+     "translation": "안녕! 만나서 반가워.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chúng tôi muốn mời em đến Phòng Nước Trời.",
+     "gloss": "저희  원하다  초대하다  동생  ~에 오다  회관  왕국",
+     "translation": "동생을 왕국회관에 초대하고 싶어.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị.",
+     "gloss": "모임  집회  아주  재미있다",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Nam: Dạ, em sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "6. 빈 형제가 연구 사회": [
+    {
+     "viet": "Anh Bình sẽ học Kinh Thánh với em.",
+     "gloss": "오빠  빈  ~할 것이다  배우다  성경  ~와 함께  동생",
+     "translation": "빈 형제가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Mỗi tuần một lần nhé.",
+     "gloss": "매  주(週)  한  번  ~해요",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chúng ta bắt đầu nhé!",
+     "gloss": "우리  시작하다  ~해요",
+     "translation": "그럼 시작할까요?",
+     "reply": "Nam: Dạ, em cảm ơn ạ.  — 네, 고맙습니다.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Hẹn gặp lại em nhé!",
+     "gloss": "약속하다  만나다  다시  동생  ~해요",
+     "translation": "또 만나요!",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Chào em!",
+     "gloss": "안녕  동생",
+     "translation": "안녕!",
+     "reply": "Nam: Dạ, chào chị!  — 네, 안녕하세요!",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Em khỏe không?",
+     "gloss": "동생  건강하다  ~입니까?",
+     "translation": "잘 지내니?",
+     "reply": "Nam: Dạ, em khỏe. Cảm ơn chị.  — 네, 잘 지내요. 고맙습니다.",
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Chị tên là Suji.",
+     "gloss": "언니  이름  이다  수지",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị là người Hàn Quốc.",
+     "gloss": "언니  이다  사람  한국",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị đang học tiếng Việt.",
+     "gloss": "언니  ~하는 중  배우다  베트남어",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị là Nhân Chứng Giê-hô-va.",
+     "gloss": "언니  이다  증인  여호와",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Nam: Dạ, em tên là Nam. Rất vui được gặp chị.  — 네, 제 이름은 남이에요. 만나서 반가워요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Rất vui được gặp em.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  동생",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "3. 빈 형제 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của anh Bình.",
+     "gloss": "여기  이다  번호  전화  ~의  오빠  빈",
+     "translation": "이건 빈 형제의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Anh Bình là bạn của chị.",
+     "gloss": "오빠  빈  이다  친구  ~의  언니",
+     "translation": "빈 형제는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Anh Bình cũng là Nhân Chứng Giê-hô-va.",
+     "gloss": "오빠  빈  ~도  이다  증인  여호와",
+     "translation": "빈 형제도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho chị xin số của em nhé.",
+     "gloss": "주다  언니  청하다  번호  ~의  동생  ~해요",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Nam: Dạ, số của em là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Anh Bình sẽ liên lạc với em.",
+     "gloss": "오빠  빈  ~할 것이다  연락하다  ~와 함께  동생",
+     "translation": "빈 형제가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là anh Bình.",
+     "gloss": "여기  이다  형제  빈",
+     "translation": "이분이 빈 형제예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chào em! Rất vui được gặp em.",
+     "gloss": "안녕  동생  아주  기쁘다  ~하게 되다  만나다  동생",
+     "translation": "안녕! 만나서 반가워.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chúng tôi muốn mời em đến Phòng Nước Trời.",
+     "gloss": "저희  원하다  초대하다  동생  ~에 오다  회관  왕국",
+     "translation": "동생을 왕국회관에 초대하고 싶어.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị.",
+     "gloss": "모임  집회  아주  재미있다",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Nam: Dạ, em sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "6. 빈 형제가 연구 사회": [
+    {
+     "viet": "Anh Bình sẽ học Kinh Thánh với em.",
+     "gloss": "오빠  빈  ~할 것이다  배우다  성경  ~와 함께  동생",
+     "translation": "빈 형제가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Mỗi tuần một lần nhé.",
+     "gloss": "매  주(週)  한  번  ~해요",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chúng ta bắt đầu nhé!",
+     "gloss": "우리  시작하다  ~해요",
+     "translation": "그럼 시작할까요?",
+     "reply": "Nam: Dạ, em cảm ơn ạ.  — 네, 고맙습니다.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Hẹn gặp lại em nhé!",
+     "gloss": "약속하다  만나다  다시  동생  ~해요",
+     "translation": "또 만나요!",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ]
+  }
+ },
+ "4": {
+  "speaker": "sister",
+  "listener_gender": "female",
+  "rel": "younger_sibling",
+  "self_term": "chị",
+  "listener_term": "em",
+  "same_sex": true,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Chào em!",
+     "gloss": "안녕  동생",
+     "translation": "안녕하세요!",
+     "reply": "Hoa: Dạ, chào chị!  — 네, 안녕하세요!",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Em khỏe không?",
+     "gloss": "동생  건강하다  ~입니까?",
+     "translation": "잘 지내세요?",
+     "reply": "Hoa: Dạ, em khỏe. Cảm ơn chị.  — 네, 잘 지내요. 고맙습니다.",
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Chị tên là Suji.",
+     "gloss": "언니  이름  이다  수지",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị là người Hàn Quốc.",
+     "gloss": "언니  이다  사람  한국",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị đang học tiếng Việt.",
+     "gloss": "언니  ~하는 중  배우다  베트남어",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị là Nhân Chứng Giê-hô-va.",
+     "gloss": "언니  이다  증인  여호와",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Hoa: Dạ, em tên là Hoa. Rất vui được gặp chị.  — 네, 제 이름은 호아이에요. 만나서 반가워요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Rất vui được gặp em.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  동생",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Em có Zalo không?",
+     "gloss": "동생  있다  잘로  ~입니까?",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Hoa: Dạ, có ạ.  — 네, 있어요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Cho chị xin số điện thoại của em nhé.",
+     "gloss": "주다  언니  청하다  번호  전화  ~의  동생  ~해요",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Hoa: Dạ, số của em là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Cảm ơn em nhiều.",
+     "gloss": "감사하다  동생  많이",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, chị muốn gặp em nữa.",
+     "gloss": "주(週)  다음  언니  원하다  만나다  동생  또",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Em có thời gian không?",
+     "gloss": "동생  있다  시간  ~입니까?",
+     "translation": "시간 있으세요?",
+     "reply": "Hoa: Dạ, chủ nhật được ạ.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Hẹn gặp lại em nhé!",
+     "gloss": "약속하다  만나다  다시  동생  ~해요",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại em.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  동생",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị muốn mời em đến Phòng Nước Trời.",
+     "gloss": "언니  원하다  초대하다  동생  ~에 오다  회관  왕국",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị.",
+     "gloss": "모임  집회  아주  재미있다",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Em đi với chị nhé?",
+     "gloss": "동생  가다  ~와 함께  언니  ~해요",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Hoa: Dạ, em sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Em có muốn tìm hiểu Kinh Thánh không?",
+     "gloss": "동생  있다  원하다  알아보다  성경  ~입니까?",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí.",
+     "gloss": "배우다  성경  무료",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút.",
+     "gloss": "매  주(週)  한  번  약  30  분",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Hoa: Dạ, em muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu nhé.",
+     "gloss": "우리  시작하다  ~해요",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Em đọc câu Kinh Thánh này nhé.",
+     "gloss": "동생  읽다  구절  성경  이  ~해요",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Em nghĩ sao?",
+     "gloss": "동생  생각하다  어떻게",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Hoa: Dạ, hay quá ạ.  — 정말 좋네요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Cảm ơn em. Tuần sau gặp lại nhé!",
+     "gloss": "감사하다  동생  주(週)  다음  만나다  다시  ~해요",
+     "translation": "고맙습니다. 다음 주에 또 만나요!",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Chào em!",
+     "gloss": "안녕  동생",
+     "translation": "안녕하세요!",
+     "reply": "Hoa: Dạ, chào chị!  — 네, 안녕하세요!",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Em khỏe không?",
+     "gloss": "동생  건강하다  ~입니까?",
+     "translation": "잘 지내세요?",
+     "reply": "Hoa: Dạ, em khỏe. Cảm ơn chị.  — 네, 잘 지내요. 고맙습니다.",
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Chị tên là Suji.",
+     "gloss": "언니  이름  이다  수지",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị là người Hàn Quốc.",
+     "gloss": "언니  이다  사람  한국",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị đang học tiếng Việt.",
+     "gloss": "언니  ~하는 중  배우다  베트남어",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị là Nhân Chứng Giê-hô-va.",
+     "gloss": "언니  이다  증인  여호와",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Hoa: Dạ, em tên là Hoa. Rất vui được gặp chị.  — 네, 제 이름은 호아이에요. 만나서 반가워요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Rất vui được gặp em.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  동생",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Em có Zalo không?",
+     "gloss": "동생  있다  잘로  ~입니까?",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Hoa: Dạ, có ạ.  — 네, 있어요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Cho chị xin số điện thoại của em nhé.",
+     "gloss": "주다  언니  청하다  번호  전화  ~의  동생  ~해요",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Hoa: Dạ, số của em là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Cảm ơn em nhiều.",
+     "gloss": "감사하다  동생  많이",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, chị muốn gặp em nữa.",
+     "gloss": "주(週)  다음  언니  원하다  만나다  동생  또",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Em có thời gian không?",
+     "gloss": "동생  있다  시간  ~입니까?",
+     "translation": "시간 있으세요?",
+     "reply": "Hoa: Dạ, chủ nhật được ạ.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Hẹn gặp lại em nhé!",
+     "gloss": "약속하다  만나다  다시  동생  ~해요",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại em.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  동생",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Chị muốn mời em đến Phòng Nước Trời.",
+     "gloss": "언니  원하다  초대하다  동생  ~에 오다  회관  왕국",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị.",
+     "gloss": "모임  집회  아주  재미있다",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Em đi với chị nhé?",
+     "gloss": "동생  가다  ~와 함께  언니  ~해요",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Hoa: Dạ, em sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Em có muốn tìm hiểu Kinh Thánh không?",
+     "gloss": "동생  있다  원하다  알아보다  성경  ~입니까?",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí.",
+     "gloss": "배우다  성경  무료",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút.",
+     "gloss": "매  주(週)  한  번  약  30  분",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Hoa: Dạ, em muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu nhé.",
+     "gloss": "우리  시작하다  ~해요",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Em đọc câu Kinh Thánh này nhé.",
+     "gloss": "동생  읽다  구절  성경  이  ~해요",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Em nghĩ sao?",
+     "gloss": "동생  생각하다  어떻게",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Hoa: Dạ, hay quá ạ.  — 정말 좋네요.",
+     "speaker": "나: chị  ·  상대: em"
+    },
+    {
+     "viet": "Cảm ơn em. Tuần sau gặp lại nhé!",
+     "gloss": "감사하다  동생  주(週)  다음  만나다  다시  ~해요",
+     "translation": "고맙습니다. 다음 주에 또 만나요!",
+     "reply": null,
+     "speaker": "나: chị  ·  상대: em"
+    }
+   ]
+  }
+ },
+ "5": {
+  "speaker": "brother",
+  "listener_gender": "male",
+  "rel": "older_sibling",
+  "self_term": "em",
+  "listener_term": "anh",
+  "same_sex": true,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Em chào anh ạ!",
+     "gloss": "동생  안녕  형  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Tuấn: Chào em!  — 안녕!",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh khỏe không ạ?",
+     "gloss": "형  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Tuấn: Anh khỏe. Cảm ơn em.  — 잘 지내요. 고마워요.",
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Em tên là Đông-ju ạ.",
+     "gloss": "동생  이름  이다  동주  (높임)",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em là người Hàn Quốc ạ.",
+     "gloss": "동생  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em đang học tiếng Việt ạ.",
+     "gloss": "동생  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "동생  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Tuấn: Anh tên là Tuấn. Rất vui được gặp em.  — 제 이름은 뚜언이에요. 만나서 반가워요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Rất vui được gặp anh ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  형  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Anh có Zalo không ạ?",
+     "gloss": "형  있다  잘로  ~입니까?  (높임)",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Tuấn: Có.  — 있어요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Cho em xin số điện thoại của anh ạ.",
+     "gloss": "주다  동생  청하다  번호  전화  ~의  형  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Tuấn: Số của anh là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Cảm ơn anh nhiều ạ.",
+     "gloss": "감사하다  형  많이  (높임)",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, em muốn gặp anh nữa ạ.",
+     "gloss": "주(週)  다음  동생  원하다  만나다  형  또  (높임)",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh có thời gian không ạ?",
+     "gloss": "형  있다  시간  ~입니까?  (높임)",
+     "translation": "시간 있으세요?",
+     "reply": "Tuấn: Ừ, chủ nhật được.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Hẹn gặp lại anh ạ!",
+     "gloss": "약속하다  만나다  다시  형  (높임)",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại anh ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  형  (높임)",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em muốn mời anh đến Phòng Nước Trời ạ.",
+     "gloss": "동생  원하다  초대하다  형  ~에 오다  회관  왕국  (높임)",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh đi với em ạ?",
+     "gloss": "형  가다  ~와 함께  동생  (높임)",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Tuấn: Ừ, anh sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Anh có muốn tìm hiểu Kinh Thánh không ạ?",
+     "gloss": "형  있다  원하다  알아보다  성경  ~입니까?  (높임)",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí ạ.",
+     "gloss": "배우다  성경  무료  (높임)",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút ạ.",
+     "gloss": "매  주(週)  한  번  약  30  분  (높임)",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Tuấn: Ừ, anh muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu ạ.",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc ạ.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복  (높임)",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh đọc câu Kinh Thánh này ạ.",
+     "gloss": "형  읽다  구절  성경  이  (높임)",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh nghĩ sao ạ?",
+     "gloss": "형  생각하다  어떻게  (높임)",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Tuấn: Hay quá.  — 정말 좋네요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Cảm ơn anh. Tuần sau gặp lại ạ!",
+     "gloss": "감사하다  형  주(週)  다음  만나다  다시  (높임)",
+     "translation": "고맙습니다. 다음 주에 또 만나요!",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Em chào anh ạ!",
+     "gloss": "동생  안녕  형  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Tuấn: Chào em!  — 안녕!",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh khỏe không ạ?",
+     "gloss": "형  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Tuấn: Anh khỏe. Cảm ơn em.  — 잘 지내요. 고마워요.",
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Em tên là Đông-ju ạ.",
+     "gloss": "동생  이름  이다  동주  (높임)",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em là người Hàn Quốc ạ.",
+     "gloss": "동생  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em đang học tiếng Việt ạ.",
+     "gloss": "동생  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "동생  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Tuấn: Anh tên là Tuấn. Rất vui được gặp em.  — 제 이름은 뚜언이에요. 만나서 반가워요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Rất vui được gặp anh ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  형  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Anh có Zalo không ạ?",
+     "gloss": "형  있다  잘로  ~입니까?  (높임)",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Tuấn: Có.  — 있어요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Cho em xin số điện thoại của anh ạ.",
+     "gloss": "주다  동생  청하다  번호  전화  ~의  형  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Tuấn: Số của anh là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Cảm ơn anh nhiều ạ.",
+     "gloss": "감사하다  형  많이  (높임)",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, em muốn gặp anh nữa ạ.",
+     "gloss": "주(週)  다음  동생  원하다  만나다  형  또  (높임)",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh có thời gian không ạ?",
+     "gloss": "형  있다  시간  ~입니까?  (높임)",
+     "translation": "시간 있으세요?",
+     "reply": "Tuấn: Ừ, chủ nhật được.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Hẹn gặp lại anh ạ!",
+     "gloss": "약속하다  만나다  다시  형  (높임)",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại anh ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  형  (높임)",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em muốn mời anh đến Phòng Nước Trời ạ.",
+     "gloss": "동생  원하다  초대하다  형  ~에 오다  회관  왕국  (높임)",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh đi với em ạ?",
+     "gloss": "형  가다  ~와 함께  동생  (높임)",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Tuấn: Ừ, anh sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Anh có muốn tìm hiểu Kinh Thánh không ạ?",
+     "gloss": "형  있다  원하다  알아보다  성경  ~입니까?  (높임)",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí ạ.",
+     "gloss": "배우다  성경  무료  (높임)",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút ạ.",
+     "gloss": "매  주(週)  한  번  약  30  분  (높임)",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Tuấn: Ừ, anh muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu ạ.",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc ạ.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복  (높임)",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh đọc câu Kinh Thánh này ạ.",
+     "gloss": "형  읽다  구절  성경  이  (높임)",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh nghĩ sao ạ?",
+     "gloss": "형  생각하다  어떻게  (높임)",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Tuấn: Hay quá.  — 정말 좋네요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Cảm ơn anh. Tuần sau gặp lại ạ!",
+     "gloss": "감사하다  형  주(週)  다음  만나다  다시  (높임)",
+     "translation": "고맙습니다. 다음 주에 또 만나요!",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ]
+  }
+ },
+ "6": {
+  "speaker": "brother",
+  "listener_gender": "female",
+  "rel": "older_sibling",
+  "self_term": "em",
+  "listener_term": "chị",
+  "same_sex": false,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Em chào chị ạ!",
+     "gloss": "동생  안녕  누나  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Mai: Chào em!  — 안녕!",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị khỏe không ạ?",
+     "gloss": "누나  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Mai: Chị khỏe. Cảm ơn em.  — 잘 지내요. 고마워요.",
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Em tên là Đông-ju ạ.",
+     "gloss": "동생  이름  이다  동주  (높임)",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em là người Hàn Quốc ạ.",
+     "gloss": "동생  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em đang học tiếng Việt ạ.",
+     "gloss": "동생  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "동생  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Mai: Chị tên là Mai. Rất vui được gặp em.  — 제 이름은 마이이에요. 만나서 반가워요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Rất vui được gặp chị ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  누나  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "3. 마이 자매 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của chị Mai ạ.",
+     "gloss": "여기  이다  번호  전화  ~의  누나  마이  (높임)",
+     "translation": "이건 마이 자매의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị Mai là bạn của em ạ.",
+     "gloss": "누나  마이  이다  친구  ~의  동생  (높임)",
+     "translation": "마이 자매는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị Mai cũng là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "누나  마이  ~도  이다  증인  여호와  (높임)",
+     "translation": "마이 자매도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho em xin số của chị ạ.",
+     "gloss": "주다  동생  청하다  번호  ~의  누나  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Mai: Số của chị là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị Mai sẽ liên lạc với chị ạ.",
+     "gloss": "누나  마이  ~할 것이다  연락하다  ~와 함께  누나  (높임)",
+     "translation": "마이 자매가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là chị Mai ạ.",
+     "gloss": "여기  이다  누나  마이  (높임)",
+     "translation": "이분이 마이 자매예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chào chị ạ! Rất vui được gặp chị ạ.",
+     "gloss": "안녕  언니  (높임)  아주  기쁘다  ~하게 되다  만나다  언니  (높임)",
+     "translation": "안녕하세요! 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chúng em muốn mời chị đến Phòng Nước Trời ạ.",
+     "gloss": "저희  원하다  초대하다  누나  ~에 오다  회관  왕국  (높임)",
+     "translation": "저희는 왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Mai: Ừ, chị sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "6. 마이 자매가 연구 사회": [
+    {
+     "viet": "Chị Mai sẽ học Kinh Thánh với chị ạ.",
+     "gloss": "누나  마이  ~할 것이다  배우다  성경  ~와 함께  누나  (높임)",
+     "translation": "마이 자매가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Mỗi tuần một lần ạ.",
+     "gloss": "매  주(週)  한  번  (높임)",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chúng ta bắt đầu ạ!",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": "Mai: Cảm ơn nhé.  — 네, 고맙습니다.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Hẹn gặp lại chị ạ!",
+     "gloss": "약속하다  만나다  다시  누나  (높임)",
+     "translation": "또 만나요!",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Em chào chị ạ!",
+     "gloss": "동생  안녕  누나  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Mai: Chào em!  — 안녕!",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị khỏe không ạ?",
+     "gloss": "누나  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Mai: Chị khỏe. Cảm ơn em.  — 잘 지내요. 고마워요.",
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Em tên là Đông-ju ạ.",
+     "gloss": "동생  이름  이다  동주  (높임)",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em là người Hàn Quốc ạ.",
+     "gloss": "동생  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em đang học tiếng Việt ạ.",
+     "gloss": "동생  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "동생  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Mai: Chị tên là Mai. Rất vui được gặp em.  — 제 이름은 마이이에요. 만나서 반가워요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Rất vui được gặp chị ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  누나  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "3. 마이 자매 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của chị Mai ạ.",
+     "gloss": "여기  이다  번호  전화  ~의  누나  마이  (높임)",
+     "translation": "이건 마이 자매의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị Mai là bạn của em ạ.",
+     "gloss": "누나  마이  이다  친구  ~의  동생  (높임)",
+     "translation": "마이 자매는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị Mai cũng là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "누나  마이  ~도  이다  증인  여호와  (높임)",
+     "translation": "마이 자매도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho em xin số của chị ạ.",
+     "gloss": "주다  동생  청하다  번호  ~의  누나  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Mai: Số của chị là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị Mai sẽ liên lạc với chị ạ.",
+     "gloss": "누나  마이  ~할 것이다  연락하다  ~와 함께  누나  (높임)",
+     "translation": "마이 자매가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là chị Mai ạ.",
+     "gloss": "여기  이다  누나  마이  (높임)",
+     "translation": "이분이 마이 자매예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chào chị ạ! Rất vui được gặp chị ạ.",
+     "gloss": "안녕  언니  (높임)  아주  기쁘다  ~하게 되다  만나다  언니  (높임)",
+     "translation": "안녕하세요! 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chúng em muốn mời chị đến Phòng Nước Trời ạ.",
+     "gloss": "저희  원하다  초대하다  누나  ~에 오다  회관  왕국  (높임)",
+     "translation": "저희는 왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Mai: Ừ, chị sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "6. 마이 자매가 연구 사회": [
+    {
+     "viet": "Chị Mai sẽ học Kinh Thánh với chị ạ.",
+     "gloss": "누나  마이  ~할 것이다  배우다  성경  ~와 함께  누나  (높임)",
+     "translation": "마이 자매가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Mỗi tuần một lần ạ.",
+     "gloss": "매  주(週)  한  번  (높임)",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chúng ta bắt đầu ạ!",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": "Mai: Cảm ơn nhé.  — 네, 고맙습니다.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Hẹn gặp lại chị ạ!",
+     "gloss": "약속하다  만나다  다시  누나  (높임)",
+     "translation": "또 만나요!",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ]
+  }
+ },
+ "7": {
+  "speaker": "sister",
+  "listener_gender": "male",
+  "rel": "older_sibling",
+  "self_term": "em",
+  "listener_term": "anh",
+  "same_sex": false,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Em chào anh ạ!",
+     "gloss": "동생  안녕  오빠  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Tuấn: Chào em!  — 안녕!",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh khỏe không ạ?",
+     "gloss": "오빠  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Tuấn: Anh khỏe. Cảm ơn em.  — 잘 지내요. 고마워요.",
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Em tên là Suji ạ.",
+     "gloss": "동생  이름  이다  수지  (높임)",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em là người Hàn Quốc ạ.",
+     "gloss": "동생  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em đang học tiếng Việt ạ.",
+     "gloss": "동생  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "동생  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Tuấn: Anh tên là Tuấn. Rất vui được gặp em.  — 제 이름은 뚜언이에요. 만나서 반가워요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Rất vui được gặp anh ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  오빠  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "3. 빈 형제 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của anh Bình ạ.",
+     "gloss": "여기  이다  번호  전화  ~의  오빠  빈  (높임)",
+     "translation": "이건 빈 형제의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh Bình là bạn của em ạ.",
+     "gloss": "오빠  빈  이다  친구  ~의  동생  (높임)",
+     "translation": "빈 형제는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh Bình cũng là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "오빠  빈  ~도  이다  증인  여호와  (높임)",
+     "translation": "빈 형제도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho em xin số của anh ạ.",
+     "gloss": "주다  동생  청하다  번호  ~의  오빠  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Tuấn: Số của anh là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh Bình sẽ liên lạc với anh ạ.",
+     "gloss": "오빠  빈  ~할 것이다  연락하다  ~와 함께  오빠  (높임)",
+     "translation": "빈 형제가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là anh Bình ạ.",
+     "gloss": "여기  이다  오빠  빈  (높임)",
+     "translation": "이분이 빈 형제예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Chào anh ạ! Rất vui được gặp anh ạ.",
+     "gloss": "안녕  형  (높임)  아주  기쁘다  ~하게 되다  만나다  형  (높임)",
+     "translation": "안녕하세요! 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Chúng em muốn mời anh đến Phòng Nước Trời ạ.",
+     "gloss": "저희  원하다  초대하다  오빠  ~에 오다  회관  왕국  (높임)",
+     "translation": "저희는 왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Tuấn: Ừ, anh sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "6. 빈 형제가 연구 사회": [
+    {
+     "viet": "Anh Bình sẽ học Kinh Thánh với anh ạ.",
+     "gloss": "오빠  빈  ~할 것이다  배우다  성경  ~와 함께  오빠  (높임)",
+     "translation": "빈 형제가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Mỗi tuần một lần ạ.",
+     "gloss": "매  주(週)  한  번  (높임)",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Chúng ta bắt đầu ạ!",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": "Tuấn: Cảm ơn nhé.  — 네, 고맙습니다.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Hẹn gặp lại anh ạ!",
+     "gloss": "약속하다  만나다  다시  오빠  (높임)",
+     "translation": "또 만나요!",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Em chào anh ạ!",
+     "gloss": "동생  안녕  오빠  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Tuấn: Chào em!  — 안녕!",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh khỏe không ạ?",
+     "gloss": "오빠  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Tuấn: Anh khỏe. Cảm ơn em.  — 잘 지내요. 고마워요.",
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Em tên là Suji ạ.",
+     "gloss": "동생  이름  이다  수지  (높임)",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em là người Hàn Quốc ạ.",
+     "gloss": "동생  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em đang học tiếng Việt ạ.",
+     "gloss": "동생  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Em là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "동생  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Tuấn: Anh tên là Tuấn. Rất vui được gặp em.  — 제 이름은 뚜언이에요. 만나서 반가워요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Rất vui được gặp anh ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  오빠  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "3. 빈 형제 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của anh Bình ạ.",
+     "gloss": "여기  이다  번호  전화  ~의  오빠  빈  (높임)",
+     "translation": "이건 빈 형제의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh Bình là bạn của em ạ.",
+     "gloss": "오빠  빈  이다  친구  ~의  동생  (높임)",
+     "translation": "빈 형제는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh Bình cũng là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "오빠  빈  ~도  이다  증인  여호와  (높임)",
+     "translation": "빈 형제도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho em xin số của anh ạ.",
+     "gloss": "주다  동생  청하다  번호  ~의  오빠  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Tuấn: Số của anh là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Anh Bình sẽ liên lạc với anh ạ.",
+     "gloss": "오빠  빈  ~할 것이다  연락하다  ~와 함께  오빠  (높임)",
+     "translation": "빈 형제가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là anh Bình ạ.",
+     "gloss": "여기  이다  오빠  빈  (높임)",
+     "translation": "이분이 빈 형제예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Chào anh ạ! Rất vui được gặp anh ạ.",
+     "gloss": "안녕  형  (높임)  아주  기쁘다  ~하게 되다  만나다  형  (높임)",
+     "translation": "안녕하세요! 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Chúng em muốn mời anh đến Phòng Nước Trời ạ.",
+     "gloss": "저희  원하다  초대하다  오빠  ~에 오다  회관  왕국  (높임)",
+     "translation": "저희는 왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Tuấn: Ừ, anh sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ],
+   "6. 빈 형제가 연구 사회": [
+    {
+     "viet": "Anh Bình sẽ học Kinh Thánh với anh ạ.",
+     "gloss": "오빠  빈  ~할 것이다  배우다  성경  ~와 함께  오빠  (높임)",
+     "translation": "빈 형제가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Mỗi tuần một lần ạ.",
+     "gloss": "매  주(週)  한  번  (높임)",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Chúng ta bắt đầu ạ!",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": "Tuấn: Cảm ơn nhé.  — 네, 고맙습니다.",
+     "speaker": "나: em  ·  상대: anh"
+    },
+    {
+     "viet": "Hẹn gặp lại anh ạ!",
+     "gloss": "약속하다  만나다  다시  오빠  (높임)",
+     "translation": "또 만나요!",
+     "reply": null,
+     "speaker": "나: em  ·  상대: anh"
+    }
+   ]
+  }
+ },
+ "8": {
+  "speaker": "sister",
+  "listener_gender": "female",
+  "rel": "older_sibling",
+  "self_term": "em",
+  "listener_term": "chị",
+  "same_sex": true,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Em chào chị ạ!",
+     "gloss": "동생  안녕  언니  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Mai: Chào em!  — 안녕!",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị khỏe không ạ?",
+     "gloss": "언니  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Mai: Chị khỏe. Cảm ơn em.  — 잘 지내요. 고마워요.",
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Em tên là Suji ạ.",
+     "gloss": "동생  이름  이다  수지  (높임)",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em là người Hàn Quốc ạ.",
+     "gloss": "동생  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em đang học tiếng Việt ạ.",
+     "gloss": "동생  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "동생  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Mai: Chị tên là Mai. Rất vui được gặp em.  — 제 이름은 마이이에요. 만나서 반가워요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Rất vui được gặp chị ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  언니  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Chị có Zalo không ạ?",
+     "gloss": "언니  있다  잘로  ~입니까?  (높임)",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Mai: Có.  — 있어요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Cho em xin số điện thoại của chị ạ.",
+     "gloss": "주다  동생  청하다  번호  전화  ~의  언니  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Mai: Số của chị là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Cảm ơn chị nhiều ạ.",
+     "gloss": "감사하다  언니  많이  (높임)",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, em muốn gặp chị nữa ạ.",
+     "gloss": "주(週)  다음  동생  원하다  만나다  언니  또  (높임)",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị có thời gian không ạ?",
+     "gloss": "언니  있다  시간  ~입니까?  (높임)",
+     "translation": "시간 있으세요?",
+     "reply": "Mai: Ừ, chủ nhật được.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Hẹn gặp lại chị ạ!",
+     "gloss": "약속하다  만나다  다시  언니  (높임)",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại chị ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  언니  (높임)",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em muốn mời chị đến Phòng Nước Trời ạ.",
+     "gloss": "동생  원하다  초대하다  언니  ~에 오다  회관  왕국  (높임)",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị đi với em ạ?",
+     "gloss": "언니  가다  ~와 함께  동생  (높임)",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Mai: Ừ, chị sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Chị có muốn tìm hiểu Kinh Thánh không ạ?",
+     "gloss": "언니  있다  원하다  알아보다  성경  ~입니까?  (높임)",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí ạ.",
+     "gloss": "배우다  성경  무료  (높임)",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút ạ.",
+     "gloss": "매  주(週)  한  번  약  30  분  (높임)",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Mai: Ừ, chị muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu ạ.",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc ạ.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복  (높임)",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị đọc câu Kinh Thánh này ạ.",
+     "gloss": "언니  읽다  구절  성경  이  (높임)",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị nghĩ sao ạ?",
+     "gloss": "언니  생각하다  어떻게  (높임)",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Mai: Hay quá.  — 정말 좋네요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Cảm ơn chị. Tuần sau gặp lại ạ!",
+     "gloss": "감사하다  언니  주(週)  다음  만나다  다시  (높임)",
+     "translation": "고맙습니다. 다음 주에 또 만나요!",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Em chào chị ạ!",
+     "gloss": "동생  안녕  언니  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Mai: Chào em!  — 안녕!",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị khỏe không ạ?",
+     "gloss": "언니  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Mai: Chị khỏe. Cảm ơn em.  — 잘 지내요. 고마워요.",
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Em tên là Suji ạ.",
+     "gloss": "동생  이름  이다  수지  (높임)",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em là người Hàn Quốc ạ.",
+     "gloss": "동생  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em đang học tiếng Việt ạ.",
+     "gloss": "동생  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "동생  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Mai: Chị tên là Mai. Rất vui được gặp em.  — 제 이름은 마이이에요. 만나서 반가워요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Rất vui được gặp chị ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  언니  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Chị có Zalo không ạ?",
+     "gloss": "언니  있다  잘로  ~입니까?  (높임)",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Mai: Có.  — 있어요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Cho em xin số điện thoại của chị ạ.",
+     "gloss": "주다  동생  청하다  번호  전화  ~의  언니  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Mai: Số của chị là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Cảm ơn chị nhiều ạ.",
+     "gloss": "감사하다  언니  많이  (높임)",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, em muốn gặp chị nữa ạ.",
+     "gloss": "주(週)  다음  동생  원하다  만나다  언니  또  (높임)",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị có thời gian không ạ?",
+     "gloss": "언니  있다  시간  ~입니까?  (높임)",
+     "translation": "시간 있으세요?",
+     "reply": "Mai: Ừ, chủ nhật được.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Hẹn gặp lại chị ạ!",
+     "gloss": "약속하다  만나다  다시  언니  (높임)",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại chị ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  언니  (높임)",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Em muốn mời chị đến Phòng Nước Trời ạ.",
+     "gloss": "동생  원하다  초대하다  언니  ~에 오다  회관  왕국  (높임)",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị đi với em ạ?",
+     "gloss": "언니  가다  ~와 함께  동생  (높임)",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Mai: Ừ, chị sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Chị có muốn tìm hiểu Kinh Thánh không ạ?",
+     "gloss": "언니  있다  원하다  알아보다  성경  ~입니까?  (높임)",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí ạ.",
+     "gloss": "배우다  성경  무료  (높임)",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút ạ.",
+     "gloss": "매  주(週)  한  번  약  30  분  (높임)",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Mai: Ừ, chị muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu ạ.",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc ạ.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복  (높임)",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị đọc câu Kinh Thánh này ạ.",
+     "gloss": "언니  읽다  구절  성경  이  (높임)",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Chị nghĩ sao ạ?",
+     "gloss": "언니  생각하다  어떻게  (높임)",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Mai: Hay quá.  — 정말 좋네요.",
+     "speaker": "나: em  ·  상대: chị"
+    },
+    {
+     "viet": "Cảm ơn chị. Tuần sau gặp lại ạ!",
+     "gloss": "감사하다  언니  주(週)  다음  만나다  다시  (높임)",
+     "translation": "고맙습니다. 다음 주에 또 만나요!",
+     "reply": null,
+     "speaker": "나: em  ·  상대: chị"
+    }
+   ]
+  }
+ },
+ "9": {
+  "speaker": "brother",
+  "listener_gender": "male",
+  "rel": "younger_than_parent",
+  "self_term": "cháu",
+  "self_term_south": "con",
+  "listener_term": "chú",
+  "same_sex": true,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Cháu chào chú ạ!",
+     "gloss": "저(조카)  안녕  아저씨  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Hùng: Chào cháu!  — 안녕!",
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Chú khỏe không ạ?",
+     "gloss": "아저씨  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Hùng: Chú khỏe. Cảm ơn cháu.  — 잘 지내요. 고마워요.",
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Cháu tên là Đông-ju ạ.",
+     "gloss": "저(조카)  이름  이다  동주  (높임)",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Cháu là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Cháu đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Cháu là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Hùng: Chú tên là Hùng. Rất vui được gặp cháu.  — 제 이름은 훙이에요. 만나서 반가워요.",
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Rất vui được gặp chú ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  아저씨  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Chú có Zalo không ạ?",
+     "gloss": "아저씨  있다  잘로  ~입니까?  (높임)",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Hùng: Có.  — 있어요.",
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Cho cháu xin số điện thoại của chú ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  전화  ~의  아저씨  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Hùng: Số của chú là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Cảm ơn chú nhiều ạ.",
+     "gloss": "감사하다  아저씨  많이  (높임)",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, cháu muốn gặp chú nữa ạ.",
+     "gloss": "주(週)  다음  저(조카)  원하다  만나다  아저씨  또  (높임)",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Chú có thời gian không ạ?",
+     "gloss": "아저씨  있다  시간  ~입니까?  (높임)",
+     "translation": "시간 있으세요?",
+     "reply": "Hùng: Ừ, chủ nhật được.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Hẹn gặp lại chú ạ!",
+     "gloss": "약속하다  만나다  다시  아저씨  (높임)",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại chú ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  아저씨  (높임)",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Cháu muốn mời chú đến Phòng Nước Trời ạ.",
+     "gloss": "저(조카)  원하다  초대하다  아저씨  ~에 오다  회관  왕국  (높임)",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Chú đi với cháu ạ?",
+     "gloss": "아저씨  가다  ~와 함께  저(조카)  (높임)",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Hùng: Ừ, chú sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Chú có muốn tìm hiểu Kinh Thánh không ạ?",
+     "gloss": "아저씨  있다  원하다  알아보다  성경  ~입니까?  (높임)",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí ạ.",
+     "gloss": "배우다  성경  무료  (높임)",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút ạ.",
+     "gloss": "매  주(週)  한  번  약  30  분  (높임)",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Hùng: Ừ, chú muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu ạ.",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc ạ.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복  (높임)",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Chú đọc câu Kinh Thánh này ạ.",
+     "gloss": "아저씨  읽다  구절  성경  이  (높임)",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Chú nghĩ sao ạ?",
+     "gloss": "아저씨  생각하다  어떻게  (높임)",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Hùng: Hay quá.  — 정말 좋네요.",
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Cảm ơn chú. Tuần sau gặp lại ạ!",
+     "gloss": "감사하다  아저씨  주(週)  다음  만나다  다시  (높임)",
+     "translation": "고맙습니다. 다음 주에 또 만나요!",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Con chào chú ạ!",
+     "gloss": "저(조카)  안녕  아저씨  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Hùng: Chào con!  — 안녕!",
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Chú khỏe không ạ?",
+     "gloss": "아저씨  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Hùng: Chú khỏe. Cảm ơn con.  — 잘 지내요. 고마워요.",
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Con tên là Đông-ju ạ.",
+     "gloss": "저(조카)  이름  이다  동주  (높임)",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Con là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Con đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Con là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Hùng: Chú tên là Hùng. Rất vui được gặp con.  — 제 이름은 훙이에요. 만나서 반가워요.",
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Rất vui được gặp chú ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  아저씨  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Chú có Zalo không ạ?",
+     "gloss": "아저씨  있다  잘로  ~입니까?  (높임)",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Hùng: Có.  — 있어요.",
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Cho con xin số điện thoại của chú ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  전화  ~의  아저씨  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Hùng: Số của chú là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Cảm ơn chú nhiều ạ.",
+     "gloss": "감사하다  아저씨  많이  (높임)",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, con muốn gặp chú nữa ạ.",
+     "gloss": "주(週)  다음  저(조카)  원하다  만나다  아저씨  또  (높임)",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Chú có thời gian không ạ?",
+     "gloss": "아저씨  있다  시간  ~입니까?  (높임)",
+     "translation": "시간 있으세요?",
+     "reply": "Hùng: Ừ, chủ nhật được.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Hẹn gặp lại chú ạ!",
+     "gloss": "약속하다  만나다  다시  아저씨  (높임)",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại chú ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  아저씨  (높임)",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Con muốn mời chú đến Phòng Nước Trời ạ.",
+     "gloss": "저(조카)  원하다  초대하다  아저씨  ~에 오다  회관  왕국  (높임)",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Chú đi với con ạ?",
+     "gloss": "아저씨  가다  ~와 함께  저(조카)  (높임)",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Hùng: Ừ, chú sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Chú có muốn tìm hiểu Kinh Thánh không ạ?",
+     "gloss": "아저씨  있다  원하다  알아보다  성경  ~입니까?  (높임)",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí ạ.",
+     "gloss": "배우다  성경  무료  (높임)",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút ạ.",
+     "gloss": "매  주(週)  한  번  약  30  분  (높임)",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Hùng: Ừ, chú muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu ạ.",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc ạ.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복  (높임)",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Chú đọc câu Kinh Thánh này ạ.",
+     "gloss": "아저씨  읽다  구절  성경  이  (높임)",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Chú nghĩ sao ạ?",
+     "gloss": "아저씨  생각하다  어떻게  (높임)",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Hùng: Hay quá.  — 정말 좋네요.",
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Cảm ơn chú. Tuần sau gặp lại ạ!",
+     "gloss": "감사하다  아저씨  주(週)  다음  만나다  다시  (높임)",
+     "translation": "고맙습니다. 다음 주에 또 만나요!",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ]
+  }
+ },
+ "10": {
+  "speaker": "brother",
+  "listener_gender": "female",
+  "rel": "younger_than_parent",
+  "self_term": "cháu",
+  "self_term_south": "con",
+  "listener_term": "cô",
+  "same_sex": false,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Cháu chào cô ạ!",
+     "gloss": "저(조카)  안녕  아주머니  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Thu: Chào cháu!  — 안녕!",
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cô khỏe không ạ?",
+     "gloss": "아주머니  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Thu: Cô khỏe. Cảm ơn cháu.  — 잘 지내요. 고마워요.",
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Cháu tên là Đông-ju ạ.",
+     "gloss": "저(조카)  이름  이다  동주  (높임)",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cháu là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cháu đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cháu là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Thu: Cô tên là Thu. Rất vui được gặp cháu.  — 제 이름은 투이에요. 만나서 반가워요.",
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Rất vui được gặp cô ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  아주머니  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ],
+   "3. 마이 자매 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của chị Mai ạ.",
+     "gloss": "여기  이다  번호  전화  ~의  누나  마이  (높임)",
+     "translation": "이건 마이 자매의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Chị Mai là bạn của cháu ạ.",
+     "gloss": "누나  마이  이다  친구  ~의  저(조카)  (높임)",
+     "translation": "마이 자매는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Chị Mai cũng là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "누나  마이  ~도  이다  증인  여호와  (높임)",
+     "translation": "마이 자매도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho cháu xin số của cô ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  ~의  아주머니  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Thu: Số của cô là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Chị Mai sẽ liên lạc với cô ạ.",
+     "gloss": "누나  마이  ~할 것이다  연락하다  ~와 함께  아주머니  (높임)",
+     "translation": "마이 자매가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là chị Mai ạ.",
+     "gloss": "여기  이다  누나  마이  (높임)",
+     "translation": "이분이 마이 자매예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Chào cô ạ! Rất vui được gặp cô ạ.",
+     "gloss": "안녕  아주머니  (높임)  아주  기쁘다  ~하게 되다  만나다  아주머니  (높임)",
+     "translation": "안녕하세요! 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Chúng cháu muốn mời cô đến Phòng Nước Trời ạ.",
+     "gloss": "저희  원하다  초대하다  아주머니  ~에 오다  회관  왕국  (높임)",
+     "translation": "저희는 왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Thu: Ừ, cô sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ],
+   "6. 마이 자매가 연구 사회": [
+    {
+     "viet": "Chị Mai sẽ học Kinh Thánh với cô ạ.",
+     "gloss": "누나  마이  ~할 것이다  배우다  성경  ~와 함께  아주머니  (높임)",
+     "translation": "마이 자매가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Mỗi tuần một lần ạ.",
+     "gloss": "매  주(週)  한  번  (높임)",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Chúng ta bắt đầu ạ!",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": "Thu: Cảm ơn nhé.  — 네, 고맙습니다.",
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Hẹn gặp lại cô ạ!",
+     "gloss": "약속하다  만나다  다시  아주머니  (높임)",
+     "translation": "또 만나요!",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Con chào cô ạ!",
+     "gloss": "저(조카)  안녕  아주머니  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Thu: Chào con!  — 안녕!",
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Cô khỏe không ạ?",
+     "gloss": "아주머니  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Thu: Cô khỏe. Cảm ơn con.  — 잘 지내요. 고마워요.",
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Con tên là Đông-ju ạ.",
+     "gloss": "저(조카)  이름  이다  동주  (높임)",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Con là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Con đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Con là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Thu: Cô tên là Thu. Rất vui được gặp con.  — 제 이름은 투이에요. 만나서 반가워요.",
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Rất vui được gặp cô ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  아주머니  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ],
+   "3. 마이 자매 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của chị Mai ạ.",
+     "gloss": "여기  이다  번호  전화  ~의  누나  마이  (높임)",
+     "translation": "이건 마이 자매의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Chị Mai là bạn của con ạ.",
+     "gloss": "누나  마이  이다  친구  ~의  저(조카)  (높임)",
+     "translation": "마이 자매는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Chị Mai cũng là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "누나  마이  ~도  이다  증인  여호와  (높임)",
+     "translation": "마이 자매도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho con xin số của cô ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  ~의  아주머니  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Thu: Số của cô là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Chị Mai sẽ liên lạc với cô ạ.",
+     "gloss": "누나  마이  ~할 것이다  연락하다  ~와 함께  아주머니  (높임)",
+     "translation": "마이 자매가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là chị Mai ạ.",
+     "gloss": "여기  이다  누나  마이  (높임)",
+     "translation": "이분이 마이 자매예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Chào cô ạ! Rất vui được gặp cô ạ.",
+     "gloss": "안녕  아주머니  (높임)  아주  기쁘다  ~하게 되다  만나다  아주머니  (높임)",
+     "translation": "안녕하세요! 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Chúng con muốn mời cô đến Phòng Nước Trời ạ.",
+     "gloss": "저희  원하다  초대하다  아주머니  ~에 오다  회관  왕국  (높임)",
+     "translation": "저희는 왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Thu: Ừ, cô sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ],
+   "6. 마이 자매가 연구 사회": [
+    {
+     "viet": "Chị Mai sẽ học Kinh Thánh với cô ạ.",
+     "gloss": "누나  마이  ~할 것이다  배우다  성경  ~와 함께  아주머니  (높임)",
+     "translation": "마이 자매가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Mỗi tuần một lần ạ.",
+     "gloss": "매  주(週)  한  번  (높임)",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Chúng ta bắt đầu ạ!",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": "Thu: Cảm ơn nhé.  — 네, 고맙습니다.",
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Hẹn gặp lại cô ạ!",
+     "gloss": "약속하다  만나다  다시  아주머니  (높임)",
+     "translation": "또 만나요!",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ]
+  }
+ },
+ "11": {
+  "speaker": "sister",
+  "listener_gender": "male",
+  "rel": "younger_than_parent",
+  "self_term": "cháu",
+  "self_term_south": "con",
+  "listener_term": "chú",
+  "same_sex": false,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Cháu chào chú ạ!",
+     "gloss": "저(조카)  안녕  아저씨  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Hùng: Chào cháu!  — 안녕!",
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Chú khỏe không ạ?",
+     "gloss": "아저씨  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Hùng: Chú khỏe. Cảm ơn cháu.  — 잘 지내요. 고마워요.",
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Cháu tên là Suji ạ.",
+     "gloss": "저(조카)  이름  이다  수지  (높임)",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Cháu là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Cháu đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Cháu là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Hùng: Chú tên là Hùng. Rất vui được gặp cháu.  — 제 이름은 훙이에요. 만나서 반가워요.",
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Rất vui được gặp chú ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  아저씨  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ],
+   "3. 빈 형제 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của anh Bình ạ.",
+     "gloss": "여기  이다  번호  전화  ~의  오빠  빈  (높임)",
+     "translation": "이건 빈 형제의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Anh Bình là bạn của cháu ạ.",
+     "gloss": "오빠  빈  이다  친구  ~의  저(조카)  (높임)",
+     "translation": "빈 형제는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Anh Bình cũng là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "오빠  빈  ~도  이다  증인  여호와  (높임)",
+     "translation": "빈 형제도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho cháu xin số của chú ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  ~의  아저씨  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Hùng: Số của chú là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Anh Bình sẽ liên lạc với chú ạ.",
+     "gloss": "오빠  빈  ~할 것이다  연락하다  ~와 함께  아저씨  (높임)",
+     "translation": "빈 형제가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là anh Bình ạ.",
+     "gloss": "여기  이다  오빠  빈  (높임)",
+     "translation": "이분이 빈 형제예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Chào chú ạ! Rất vui được gặp chú ạ.",
+     "gloss": "안녕  아저씨  (높임)  아주  기쁘다  ~하게 되다  만나다  아저씨  (높임)",
+     "translation": "안녕하세요! 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Chúng cháu muốn mời chú đến Phòng Nước Trời ạ.",
+     "gloss": "저희  원하다  초대하다  아저씨  ~에 오다  회관  왕국  (높임)",
+     "translation": "저희는 왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Hùng: Ừ, chú sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ],
+   "6. 빈 형제가 연구 사회": [
+    {
+     "viet": "Anh Bình sẽ học Kinh Thánh với chú ạ.",
+     "gloss": "오빠  빈  ~할 것이다  배우다  성경  ~와 함께  아저씨  (높임)",
+     "translation": "빈 형제가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Mỗi tuần một lần ạ.",
+     "gloss": "매  주(週)  한  번  (높임)",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Chúng ta bắt đầu ạ!",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": "Hùng: Cảm ơn nhé.  — 네, 고맙습니다.",
+     "speaker": "나: cháu  ·  상대: chú"
+    },
+    {
+     "viet": "Hẹn gặp lại chú ạ!",
+     "gloss": "약속하다  만나다  다시  아저씨  (높임)",
+     "translation": "또 만나요!",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: chú"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Con chào chú ạ!",
+     "gloss": "저(조카)  안녕  아저씨  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Hùng: Chào con!  — 안녕!",
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Chú khỏe không ạ?",
+     "gloss": "아저씨  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Hùng: Chú khỏe. Cảm ơn con.  — 잘 지내요. 고마워요.",
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Con tên là Suji ạ.",
+     "gloss": "저(조카)  이름  이다  수지  (높임)",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Con là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Con đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Con là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Hùng: Chú tên là Hùng. Rất vui được gặp con.  — 제 이름은 훙이에요. 만나서 반가워요.",
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Rất vui được gặp chú ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  아저씨  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ],
+   "3. 빈 형제 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của anh Bình ạ.",
+     "gloss": "여기  이다  번호  전화  ~의  오빠  빈  (높임)",
+     "translation": "이건 빈 형제의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Anh Bình là bạn của con ạ.",
+     "gloss": "오빠  빈  이다  친구  ~의  저(조카)  (높임)",
+     "translation": "빈 형제는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Anh Bình cũng là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "오빠  빈  ~도  이다  증인  여호와  (높임)",
+     "translation": "빈 형제도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho con xin số của chú ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  ~의  아저씨  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Hùng: Số của chú là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Anh Bình sẽ liên lạc với chú ạ.",
+     "gloss": "오빠  빈  ~할 것이다  연락하다  ~와 함께  아저씨  (높임)",
+     "translation": "빈 형제가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là anh Bình ạ.",
+     "gloss": "여기  이다  오빠  빈  (높임)",
+     "translation": "이분이 빈 형제예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Chào chú ạ! Rất vui được gặp chú ạ.",
+     "gloss": "안녕  아저씨  (높임)  아주  기쁘다  ~하게 되다  만나다  아저씨  (높임)",
+     "translation": "안녕하세요! 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Chúng con muốn mời chú đến \u000bPhòng Nước Trời ạ.",
+     "gloss": "저희  원하다  초대하다  아저씨  ~에 오다  회관  왕국  (높임)",
+     "translation": "저희는 왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Hùng: Ừ, chú sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ],
+   "6. 빈 형제가 연구 사회": [
+    {
+     "viet": "Anh Bình sẽ học Kinh Thánh với chú ạ.",
+     "gloss": "오빠  빈  ~할 것이다  배우다  성경  ~와 함께  아저씨  (높임)",
+     "translation": "빈 형제가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Mỗi tuần một lần ạ.",
+     "gloss": "매  주(週)  한  번  (높임)",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Chúng ta bắt đầu ạ!",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": "Hùng: Cảm ơn nhé.  — 네, 고맙습니다.",
+     "speaker": "나: con  ·  상대: chú"
+    },
+    {
+     "viet": "Hẹn gặp lại chú ạ!",
+     "gloss": "약속하다  만나다  다시  아저씨  (높임)",
+     "translation": "또 만나요!",
+     "reply": null,
+     "speaker": "나: con  ·  상대: chú"
+    }
+   ]
+  }
+ },
+ "12": {
+  "speaker": "sister",
+  "listener_gender": "female",
+  "rel": "younger_than_parent",
+  "self_term": "cháu",
+  "self_term_south": "con",
+  "listener_term": "cô",
+  "same_sex": true,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Cháu chào cô ạ!",
+     "gloss": "저(조카)  안녕  아주머니  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Thu: Chào cháu!  — 안녕!",
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cô khỏe không ạ?",
+     "gloss": "아주머니  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Thu: Cô khỏe. Cảm ơn cháu.  — 잘 지내요. 고마워요.",
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Cháu tên là Suji ạ.",
+     "gloss": "저(조카)  이름  이다  수지  (높임)",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cháu là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cháu đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cháu là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Thu: Cô tên là Thu. Rất vui được gặp cháu.  — 제 이름은 투이에요. 만나서 반가워요.",
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Rất vui được gặp cô ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  아주머니  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Cô có Zalo không ạ?",
+     "gloss": "아주머니  있다  잘로  ~입니까?  (높임)",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Thu: Có.  — 있어요.",
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cho cháu xin số điện thoại của cô ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  전화  ~의  아주머니  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Thu: Số của cô là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cảm ơn cô nhiều ạ.",
+     "gloss": "감사하다  아주머니  많이  (높임)",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, cháu muốn gặp cô nữa ạ.",
+     "gloss": "주(週)  다음  저(조카)  원하다  만나다  아주머니  또  (높임)",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cô có thời gian không ạ?",
+     "gloss": "아주머니  있다  시간  ~입니까?  (높임)",
+     "translation": "시간 있으세요?",
+     "reply": "Thu: Ừ, chủ nhật được.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Hẹn gặp lại cô ạ!",
+     "gloss": "약속하다  만나다  다시  아주머니  (높임)",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại cô ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  아주머니  (높임)",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cháu muốn mời cô đến Phòng Nước Trời ạ.",
+     "gloss": "저(조카)  원하다  초대하다  아주머니  ~에 오다  회관  왕국  (높임)",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cô đi với cháu ạ?",
+     "gloss": "아주머니  가다  ~와 함께  저(조카)  (높임)",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Thu: Ừ, cô sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Cô có muốn tìm hiểu Kinh Thánh không ạ?",
+     "gloss": "아주머니  있다  원하다  알아보다  성경  ~입니까?  (높임)",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí ạ.",
+     "gloss": "배우다  성경  무료  (높임)",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút ạ.",
+     "gloss": "매  주(週)  한  번  약  30  분  (높임)",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Thu: Ừ, cô muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu ạ.",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc ạ.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복  (높임)",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cô đọc câu Kinh Thánh này ạ.",
+     "gloss": "아주머니  읽다  구절  성경  이  (높임)",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cô nghĩ sao ạ?",
+     "gloss": "아주머니  생각하다  어떻게  (높임)",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Thu: Hay quá.  — 정말 좋네요.",
+     "speaker": "나: cháu  ·  상대: cô"
+    },
+    {
+     "viet": "Cảm ơn cô. Tuần sau gặp lại ạ!",
+     "gloss": "감사하다  아주머니  주(週)  다음  만나다  다시  (높임)",
+     "translation": "고맙습니다. 다음 주에 또 만나요!",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: cô"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Con chào cô ạ!",
+     "gloss": "저(조카)  안녕  아주머니  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Thu: Chào con!  — 안녕!",
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Cô khỏe không ạ?",
+     "gloss": "아주머니  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Thu: Cô khỏe. Cảm ơn con.  — 잘 지내요. 고마워요.",
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Con tên là Suji ạ.",
+     "gloss": "저(조카)  이름  이다  수지  (높임)",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Con là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Con đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Con là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Thu: Cô tên là Thu. Rất vui được gặp con.  — 제 이름은 투이에요. 만나서 반가워요.",
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Rất vui được gặp cô ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  아주머니  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Cô có Zalo không ạ?",
+     "gloss": "아주머니  있다  잘로  ~입니까?  (높임)",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Thu: Có.  — 있어요.",
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Cho con xin số điện thoại của cô ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  전화  ~의  아주머니  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Thu: Số của cô là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Cảm ơn cô nhiều ạ.",
+     "gloss": "감사하다  아주머니  많이  (높임)",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, con muốn gặp cô nữa ạ.",
+     "gloss": "주(週)  다음  저(조카)  원하다  만나다  아주머니  또  (높임)",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Cô có thời gian không ạ?",
+     "gloss": "아주머니  있다  시간  ~입니까?  (높임)",
+     "translation": "시간 있으세요?",
+     "reply": "Thu: Ừ, chủ nhật được.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Hẹn gặp lại cô ạ!",
+     "gloss": "약속하다  만나다  다시  아주머니  (높임)",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại cô ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  아주머니  (높임)",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Con muốn mời cô đến Phòng Nước Trời ạ.",
+     "gloss": "저(조카)  원하다  초대하다  아주머니  ~에 오다  회관  왕국  (높임)",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Cô đi với con ạ?",
+     "gloss": "아주머니  가다  ~와 함께  저(조카)  (높임)",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Thu: Ừ, cô sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Cô có muốn tìm hiểu Kinh Thánh không ạ?",
+     "gloss": "아주머니  있다  원하다  알아보다  성경  ~입니까?  (높임)",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí ạ.",
+     "gloss": "배우다  성경  무료  (높임)",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút ạ.",
+     "gloss": "매  주(週)  한  번  약  30  분  (높임)",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Thu: Ừ, cô muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu ạ.",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc ạ.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복  (높임)",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Cô đọc câu Kinh Thánh này ạ.",
+     "gloss": "아주머니  읽다  구절  성경  이  (높임)",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Cô nghĩ sao ạ?",
+     "gloss": "아주머니  생각하다  어떻게  (높임)",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Thu: Hay quá.  — 정말 좋네요.",
+     "speaker": "나: con  ·  상대: cô"
+    },
+    {
+     "viet": "Cảm ơn cô. Tuần sau gặp lại ạ!",
+     "gloss": "감사하다  아주머니  주(週)  다음  만나다  다시  (높임)",
+     "translation": "고맙습니다. 다음 주에 또 만나요!",
+     "reply": null,
+     "speaker": "나: con  ·  상대: cô"
+    }
+   ]
+  }
+ },
+ "13": {
+  "speaker": "brother",
+  "listener_gender": "male",
+  "rel": "older_than_parent",
+  "self_term": "cháu",
+  "self_term_south": "con",
+  "listener_term": "bác",
+  "same_sex": true,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Cháu chào bác ạ!",
+     "gloss": "저(조카)  안녕  어르신  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Sơn: Chào cháu!  — 안녕!",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Bác khỏe không ạ?",
+     "gloss": "어르신  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Sơn: Bác khỏe. Cảm ơn cháu.  — 잘 지내요. 고마워요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Cháu tên là Đông-ju ạ.",
+     "gloss": "저(조카)  이름  이다  동주  (높임)",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Sơn: Bác tên là Sơn. Rất vui được gặp cháu.  — 제 이름은 썬이에요. 만나서 반가워요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Rất vui được gặp bác ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  어르신  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Bác có Zalo không ạ?",
+     "gloss": "어르신  있다  잘로  ~입니까?  (높임)",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Sơn: Có.  — 있어요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cho cháu xin số điện thoại của bác ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  전화  ~의  어르신  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Sơn: Số của bác là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cảm ơn bác nhiều ạ.",
+     "gloss": "감사하다  어르신  많이  (높임)",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, cháu muốn gặp bác nữa ạ.",
+     "gloss": "주(週)  다음  저(조카)  원하다  만나다  어르신  또  (높임)",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Bác có thời gian không ạ?",
+     "gloss": "어르신  있다  시간  ~입니까?  (높임)",
+     "translation": "시간 있으세요?",
+     "reply": "Sơn: Ừ, chủ nhật được.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Hẹn gặp lại bác ạ!",
+     "gloss": "약속하다  만나다  다시  어르신  (높임)",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại bác ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  어르신  (높임)",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu muốn mời bác đến Phòng Nước Trời ạ.",
+     "gloss": "저(조카)  원하다  초대하다  어르신  ~에 오다  회관  왕국  (높임)",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Bác đi với cháu ạ?",
+     "gloss": "어르신  가다  ~와 함께  저(조카)  (높임)",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Sơn: Ừ, bác sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Bác có muốn tìm hiểu Kinh Thánh không ạ?",
+     "gloss": "어르신  있다  원하다  알아보다  성경  ~입니까?  (높임)",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí ạ.",
+     "gloss": "배우다  성경  무료  (높임)",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút ạ.",
+     "gloss": "매  주(週)  한  번  약  30  분  (높임)",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Sơn: Ừ, bác muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu ạ.",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc ạ.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복  (높임)",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Bác đọc câu Kinh Thánh này ạ.",
+     "gloss": "어르신  읽다  구절  성경  이  (높임)",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Bác nghĩ sao ạ?",
+     "gloss": "어르신  생각하다  어떻게  (높임)",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Sơn: Hay quá.  — 정말 좋네요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cảm ơn bác. Tuần sau gặp lại ạ!",
+     "gloss": "감사하다  어르신  주(週)  다음  만나다  다시  (높임)",
+     "translation": "고맙습니다. 다음 주에 또 만나요!",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Con chào bác ạ!",
+     "gloss": "저(조카)  안녕  어르신  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Sơn: Chào con!  — 안녕!",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Bác khỏe không ạ?",
+     "gloss": "어르신  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Sơn: Bác khỏe. Cảm ơn con.  — 잘 지내요. 고마워요.",
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Con tên là Đông-ju ạ.",
+     "gloss": "저(조카)  이름  이다  동주  (높임)",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Sơn: Bác tên là Sơn. Rất vui được gặp con.  — 제 이름은 썬이에요. 만나서 반가워요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Rất vui được gặp bác ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  어르신  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Bác có Zalo không ạ?",
+     "gloss": "어르신  있다  잘로  ~입니까?  (높임)",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Sơn: Có.  — 있어요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Cho con xin số điện thoại của bác ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  전화  ~의  어르신  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Sơn: Số của bác là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Cảm ơn bác nhiều ạ.",
+     "gloss": "감사하다  어르신  많이  (높임)",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, con muốn gặp bác nữa ạ.",
+     "gloss": "주(週)  다음  저(조카)  원하다  만나다  어르신  또  (높임)",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Bác có thời gian không ạ?",
+     "gloss": "어르신  있다  시간  ~입니까?  (높임)",
+     "translation": "시간 있으세요?",
+     "reply": "Sơn: Ừ, chủ nhật được.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Hẹn gặp lại bác ạ!",
+     "gloss": "약속하다  만나다  다시  어르신  (높임)",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại bác ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  어르신  (높임)",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con muốn mời bác đến Phòng Nước Trời ạ.",
+     "gloss": "저(조카)  원하다  초대하다  어르신  ~에 오다  회관  왕국  (높임)",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Bác đi với con ạ?",
+     "gloss": "어르신  가다  ~와 함께  저(조카)  (높임)",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Sơn: Ừ, bác sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Bác có muốn tìm hiểu Kinh Thánh không ạ?",
+     "gloss": "어르신  있다  원하다  알아보다  성경  ~입니까?  (높임)",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí ạ.",
+     "gloss": "배우다  성경  무료  (높임)",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút ạ.",
+     "gloss": "매  주(週)  한  번  약  30  분  (높임)",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Sơn: Ừ, bác muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu ạ.",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc ạ.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복  (높임)",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Bác đọc câu Kinh Thánh này ạ.",
+     "gloss": "어르신  읽다  구절  성경  이  (높임)",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Bác nghĩ sao ạ?",
+     "gloss": "어르신  생각하다  어떻게  (높임)",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Sơn: Hay quá.  — 정말 좋네요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Cảm ơn bác. Tuần sau gặp lại ạ!",
+     "gloss": "감사하다  어르신  주(週)  다음  만나다  다시  (높임)",
+     "translation": "고맙습니다. 다음 주에 또 만나요!",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ]
+  }
+ },
+ "14": {
+  "speaker": "brother",
+  "listener_gender": "female",
+  "rel": "older_than_parent",
+  "self_term": "cháu",
+  "self_term_south": "con",
+  "listener_term": "bác",
+  "same_sex": false,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Cháu chào bác ạ!",
+     "gloss": "저(조카)  안녕  어르신  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Hà: Chào cháu!  — 안녕!",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Bác khỏe không ạ?",
+     "gloss": "어르신  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Hà: Bác khỏe. Cảm ơn cháu.  — 잘 지내요. 고마워요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Cháu tên là Đông-ju ạ.",
+     "gloss": "저(조카)  이름  이다  동주  (높임)",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Hà: Bác tên là Hà. Rất vui được gặp cháu.  — 제 이름은 하이에요. 만나서 반가워요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Rất vui được gặp bác ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  어르신  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "3. 마이 자매 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của chị Mai ạ.",
+     "gloss": "여기  이다  번호  전화  ~의  누나  마이  (높임)",
+     "translation": "이건 마이 자매의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Chị Mai là bạn của cháu ạ.",
+     "gloss": "누나  마이  이다  친구  ~의  저(조카)  (높임)",
+     "translation": "마이 자매는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Chị Mai cũng là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "누나  마이  ~도  이다  증인  여호와  (높임)",
+     "translation": "마이 자매도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho cháu xin số của bác ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  ~의  어르신  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Hà: Số của bác là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Chị Mai sẽ liên lạc với bác ạ.",
+     "gloss": "누나  마이  ~할 것이다  연락하다  ~와 함께  어르신  (높임)",
+     "translation": "마이 자매가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là chị Mai ạ.",
+     "gloss": "여기  이다  누나  마이  (높임)",
+     "translation": "이분이 마이 자매예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Chào bác ạ! Rất vui được gặp bác ạ.",
+     "gloss": "안녕  어르신  (높임)  아주  기쁘다  ~하게 되다  만나다  어르신  (높임)",
+     "translation": "안녕하세요! 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Chúng cháu muốn mời bác đến Phòng Nước Trời ạ.",
+     "gloss": "저희  원하다  초대하다  어르신  ~에 오다  회관  왕국  (높임)",
+     "translation": "저희는 왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Hà: Ừ, bác sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "6. 마이 자매가 연구 사회": [
+    {
+     "viet": "Chị Mai sẽ học Kinh Thánh với bác ạ.",
+     "gloss": "누나  마이  ~할 것이다  배우다  성경  ~와 함께  어르신  (높임)",
+     "translation": "마이 자매가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Mỗi tuần một lần ạ.",
+     "gloss": "매  주(週)  한  번  (높임)",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Chúng ta bắt đầu ạ!",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": "Hà: Cảm ơn nhé.  — 네, 고맙습니다.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Hẹn gặp lại bác ạ!",
+     "gloss": "약속하다  만나다  다시  어르신  (높임)",
+     "translation": "또 만나요!",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Con chào bác ạ!",
+     "gloss": "저(조카)  안녕  어르신  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Hà: Chào con!  — 안녕!",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Bác khỏe không ạ?",
+     "gloss": "어르신  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Hà: Bác khỏe. Cảm ơn con.  — 잘 지내요. 고마워요.",
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Con tên là Đông-ju ạ.",
+     "gloss": "저(조카)  이름  이다  동주  (높임)",
+     "translation": "제 이름은 동주예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Hà: Bác tên là Hà. Rất vui được gặp con.  — 제 이름은 하이에요. 만나서 반가워요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Rất vui được gặp bác ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  어르신  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "3. 마이 자매 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của chị Mai ạ.",
+     "gloss": "여기  이다  번호  전화  ~의  누나  마이  (높임)",
+     "translation": "이건 마이 자매의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Chị Mai là bạn của con ạ.",
+     "gloss": "누나  마이  이다  친구  ~의  저(조카)  (높임)",
+     "translation": "마이 자매는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Chị Mai cũng là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "누나  마이  ~도  이다  증인  여호와  (높임)",
+     "translation": "마이 자매도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho con xin số của bác ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  ~의  어르신  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Hà: Số của bác là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Chị Mai sẽ liên lạc với bác ạ.",
+     "gloss": "누나  마이  ~할 것이다  연락하다  ~와 함께  어르신  (높임)",
+     "translation": "마이 자매가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là chị Mai ạ.",
+     "gloss": "여기  이다  누나  마이  (높임)",
+     "translation": "이분이 마이 자매예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Chào bác ạ! Rất vui được gặp bác ạ.",
+     "gloss": "안녕  어르신  (높임)  아주  기쁘다  ~하게 되다  만나다  어르신  (높임)",
+     "translation": "안녕하세요! 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Chúng con muốn mời bác đến Phòng Nước Trời ạ.",
+     "gloss": "저희  원하다  초대하다  어르신  ~에 오다  회관  왕국  (높임)",
+     "translation": "저희는 왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Hà: Ừ, bác sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "6. 마이 자매가 연구 사회": [
+    {
+     "viet": "Chị Mai sẽ học Kinh Thánh với bác ạ.",
+     "gloss": "누나  마이  ~할 것이다  배우다  성경  ~와 함께  어르신  (높임)",
+     "translation": "마이 자매가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Mỗi tuần một lần ạ.",
+     "gloss": "매  주(週)  한  번  (높임)",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Chúng ta bắt đầu ạ!",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": "Hà: Cảm ơn nhé.  — 네, 고맙습니다.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Hẹn gặp lại bác ạ!",
+     "gloss": "약속하다  만나다  다시  어르신  (높임)",
+     "translation": "또 만나요!",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ]
+  }
+ },
+ "15": {
+  "speaker": "sister",
+  "listener_gender": "male",
+  "rel": "older_than_parent",
+  "self_term": "cháu",
+  "self_term_south": "con",
+  "listener_term": "bác",
+  "same_sex": false,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Cháu chào bác ạ!",
+     "gloss": "저(조카)  안녕  어르신  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Sơn: Chào cháu!  — 안녕!",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Bác khỏe không ạ?",
+     "gloss": "어르신  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Sơn: Bác khỏe. Cảm ơn cháu.  — 잘 지내요. 고마워요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Cháu tên là Suji ạ.",
+     "gloss": "저(조카)  이름  이다  수지  (높임)",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Sơn: Bác tên là Sơn. Rất vui được gặp cháu.  — 제 이름은 썬이에요. 만나서 반가워요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Rất vui được gặp bác ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  어르신  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "3. 빈 형제 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của anh Bình ạ.",
+     "gloss": "여기  이다  번호  전화  ~의  오빠  빈  (높임)",
+     "translation": "이건 빈 형제의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Anh Bình là bạn của cháu ạ.",
+     "gloss": "오빠  빈  이다  친구  ~의  저(조카)  (높임)",
+     "translation": "빈 형제는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Anh Bình cũng là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "오빠  빈  ~도  이다  증인  여호와  (높임)",
+     "translation": "빈 형제도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho cháu xin số của bác ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  ~의  어르신  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Sơn: Số của bác là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Anh Bình sẽ liên lạc với bác ạ.",
+     "gloss": "오빠  빈  ~할 것이다  연락하다  ~와 함께  어르신  (높임)",
+     "translation": "빈 형제가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là anh Bình ạ.",
+     "gloss": "여기  이다  오빠  빈  (높임)",
+     "translation": "이분이 빈 형제예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Chào bác ạ! Rất vui được gặp bác ạ.",
+     "gloss": "안녕  어르신  (높임)  아주  기쁘다  ~하게 되다  만나다  어르신  (높임)",
+     "translation": "안녕하세요! 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Chúng cháu muốn mời bác đến Phòng Nước Trời ạ.",
+     "gloss": "저희  원하다  초대하다  어르신  ~에 오다  회관  왕국  (높임)",
+     "translation": "저희는 왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Sơn: Ừ, bác sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "6. 빈 형제가 연구 사회": [
+    {
+     "viet": "Anh Bình sẽ học Kinh Thánh với bác ạ.",
+     "gloss": "오빠  빈  ~할 것이다  배우다  성경  ~와 함께  어르신  (높임)",
+     "translation": "빈 형제가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Mỗi tuần một lần ạ.",
+     "gloss": "매  주(週)  한  번  (높임)",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Chúng ta bắt đầu ạ!",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": "Sơn: Cảm ơn nhé.  — 네, 고맙습니다.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Hẹn gặp lại bác ạ!",
+     "gloss": "약속하다  만나다  다시  어르신  (높임)",
+     "translation": "또 뵈요!",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Con chào bác ạ!",
+     "gloss": "저(조카)  안녕  어르신  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Sơn: Chào con!  — 안녕!",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Bác khỏe không ạ?",
+     "gloss": "어르신  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Sơn: Bác khỏe. Cảm ơn con.  — 잘 지내요. 고마워요.",
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Con tên là Suji ạ.",
+     "gloss": "저(조카)  이름  이다  수지  (높임)",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Sơn: Bác tên là Sơn. Rất vui được gặp con.  — 제 이름은 썬이에요. 만나서 반가워요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Rất vui được gặp bác ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  어르신  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "3. 빈 형제 번호 전달": [
+    {
+     "viet": "Đây là số điện thoại của anh Bình ạ.",
+     "gloss": "여기  이다  번호  전화  ~의  오빠  빈  (높임)",
+     "translation": "이건 빈 형제의 전화번호예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Anh Bình là bạn của con ạ.",
+     "gloss": "오빠  빈  이다  친구  ~의  저(조카)  (높임)",
+     "translation": "빈 형제는 제 친구예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Anh Bình cũng là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "오빠  빈  ~도  이다  증인  여호와  (높임)",
+     "translation": "빈 형제도 여호와의 증인이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "4. 상대방 번호 받기": [
+    {
+     "viet": "Cho con xin số của bác ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  ~의  어르신  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Sơn: Số của bác là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Anh Bình sẽ liên lạc với bác ạ.",
+     "gloss": "오빠  빈  ~할 것이다  연락하다  ~와 함께  어르신  (높임)",
+     "translation": "빈 형제가 연락드릴 거예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "5. 함께 방문": [
+    {
+     "viet": "Đây là anh Bình ạ.",
+     "gloss": "여기  이다  오빠  빈  (높임)",
+     "translation": "이분이 빈 형제예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Chào bác ạ! Rất vui được gặp bác ạ.",
+     "gloss": "안녕  어르신  (높임)  아주  기쁘다  ~하게 되다  만나다  어르신  (높임)",
+     "translation": "안녕하세요! 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Chúng con muốn mời bác đến Phòng Nước Trời ạ.",
+     "gloss": "저희  원하다  초대하다  어르신  ~에 오다  회관  왕국  (높임)",
+     "translation": "저희는 왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": "Sơn: Ừ, bác sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "6. 빈 형제가 연구 사회": [
+    {
+     "viet": "Anh Bình sẽ học Kinh Thánh với bác ạ.",
+     "gloss": "오빠  빈  ~할 것이다  배우다  성경  ~와 함께  어르신  (높임)",
+     "translation": "빈 형제가 함께 성경을 공부할 거예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Mỗi tuần một lần ạ.",
+     "gloss": "매  주(週)  한  번  (높임)",
+     "translation": "일주일에 한 번이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Chúng ta bắt đầu ạ!",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": "Sơn: Cảm ơn nhé.  — 네, 고맙습니다.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Hẹn gặp lại bác ạ!",
+     "gloss": "약속하다  만나다  다시  어르신  (높임)",
+     "translation": "또 뵈요!",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ]
+  }
+ },
+ "16": {
+  "speaker": "sister",
+  "listener_gender": "female",
+  "rel": "older_than_parent",
+  "self_term": "cháu",
+  "self_term_south": "con",
+  "listener_term": "bác",
+  "same_sex": true,
+  "stages_north": {
+   "1. 첫 만남": [
+    {
+     "viet": "Cháu chào bác ạ!",
+     "gloss": "저(조카)  안녕  어르신  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Hà: Chào cháu!  — 안녕!",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Bác khỏe không ạ?",
+     "gloss": "어르신  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Hà: Bác khỏe. Cảm ơn cháu.  — 잘 지내요. 고마워요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Cháu tên là Suji ạ.",
+     "gloss": "저(조카)  이름  이다  수지  (높임)",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Hà: Bác tên là Hà. Rất vui được gặp cháu.  — 제 이름은 하이에요. 만나서 반가워요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Rất vui được gặp bác ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  어르신  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Bác có Zalo không ạ?",
+     "gloss": "어르신  있다  잘로  ~입니까?  (높임)",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Hà: Có.  — 있어요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cho cháu xin số điện thoại của bác ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  전화  ~의  어르신  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Hà: Số của bác là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cảm ơn bác nhiều ạ.",
+     "gloss": "감사하다  어르신  많이  (높임)",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, cháu muốn gặp bác nữa ạ.",
+     "gloss": "주(週)  다음  저(조카)  원하다  만나다  어르신  또  (높임)",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Bác có thời gian không ạ?",
+     "gloss": "어르신  있다  시간  ~입니까?  (높임)",
+     "translation": "시간 있으세요?",
+     "reply": "Hà: Ừ, chủ nhật được.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Hẹn gặp lại bác ạ!",
+     "gloss": "약속하다  만나다  다시  어르신  (높임)",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại bác ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  어르신  (높임)",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cháu muốn mời bác đến Phòng Nước Trời ạ.",
+     "gloss": "저(조카)  원하다  초대하다  어르신  ~에 오다  회관  왕국  (높임)",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Bác đi với cháu ạ?",
+     "gloss": "어르신  가다  ~와 함께  저(조카)  (높임)",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Hà: Ừ, bác sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Bác có muốn tìm hiểu Kinh Thánh không ạ?",
+     "gloss": "어르신  있다  원하다  알아보다  성경  ~입니까?  (높임)",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí ạ.",
+     "gloss": "배우다  성경  무료  (높임)",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút ạ.",
+     "gloss": "매  주(週)  한  번  약  30  분  (높임)",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Hà: Ừ, bác muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu ạ.",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc ạ.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복  (높임)",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Bác đọc câu Kinh Thánh này ạ.",
+     "gloss": "어르신  읽다  구절  성경  이  (높임)",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Bác nghĩ sao ạ?",
+     "gloss": "어르신  생각하다  어떻게  (높임)",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Hà: Hay quá.  — 정말 좋네요.",
+     "speaker": "나: cháu  ·  상대: bác"
+    },
+    {
+     "viet": "Cảm ơn bác. Tuần sau gặp lại bác ạ!",
+     "gloss": "감사하다  어르신  주(週)  다음  만나다  다시  (높임)",
+     "translation": "고맙습니다. 다음 주에 또 뵈요!",
+     "reply": null,
+     "speaker": "나: cháu  ·  상대: bác"
+    }
+   ]
+  },
+  "stages_south": {
+   "1. 첫 만남": [
+    {
+     "viet": "Con chào bác ạ!",
+     "gloss": "저(조카)  안녕  어르신  (높임)",
+     "translation": "안녕하세요!",
+     "reply": "Hà: Chào con!  — 안녕!",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Bác khỏe không ạ?",
+     "gloss": "어르신  건강하다  ~입니까?  (높임)",
+     "translation": "잘 지내세요?",
+     "reply": "Hà: Bác khỏe. Cảm ơn con.  — 잘 지내요. 고마워요.",
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "2. 자기소개": [
+    {
+     "viet": "Con tên là Suji ạ.",
+     "gloss": "저(조카)  이름  이다  수지  (높임)",
+     "translation": "제 이름은 수지예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con là người Hàn Quốc ạ.",
+     "gloss": "저(조카)  이다  사람  한국  (높임)",
+     "translation": "저는 한국 사람이에요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con đang học tiếng Việt ạ.",
+     "gloss": "저(조카)  ~하는 중  배우다  베트남어  (높임)",
+     "translation": "저는 베트남어를 배우고 있어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con là Nhân Chứng Giê-hô-va ạ.",
+     "gloss": "저(조카)  이다  증인  여호와  (높임)",
+     "translation": "저는 여호와의 증인이에요.",
+     "reply": "Hà: Bác tên là Hà. Rất vui được gặp con.  — 제 이름은 하이에요. 만나서 반가워요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Rất vui được gặp bác ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  어르신  (높임)",
+     "translation": "만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "3. 연락처 교환": [
+    {
+     "viet": "Bác có Zalo không ạ?",
+     "gloss": "어르신  있다  잘로  ~입니까?  (높임)",
+     "translation": "잘로(Zalo) 있으세요?",
+     "reply": "Hà: Có.  — 있어요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Cho con xin số điện thoại của bác ạ.",
+     "gloss": "주다  저(조카)  청하다  번호  전화  ~의  어르신  (높임)",
+     "translation": "전화번호 좀 알려 주세요.",
+     "reply": "Hà: Số của bác là 010-1234-5678.  — 제 번호는 010-1234-5678이에요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Cảm ơn bác nhiều ạ.",
+     "gloss": "감사하다  어르신  많이  (높임)",
+     "translation": "정말 고맙습니다.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "4. 다음 만남 약속": [
+    {
+     "viet": "Tuần sau, con muốn gặp bác nữa ạ.",
+     "gloss": "주(週)  다음  저(조카)  원하다  만나다  어르신  또  (높임)",
+     "translation": "다음 주에 또 뵙고 싶어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Bác có thời gian không ạ?",
+     "gloss": "어르신  있다  시간  ~입니까?  (높임)",
+     "translation": "시간 있으세요?",
+     "reply": "Hà: Ừ, chủ nhật được.  — 네, 일요일 괜찮아요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Hẹn gặp lại bác ạ!",
+     "gloss": "약속하다  만나다  다시  어르신  (높임)",
+     "translation": "그럼 또 만나요!",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "5. 재회": [
+    {
+     "viet": "Rất vui được gặp lại bác ạ.",
+     "gloss": "아주  기쁘다  ~하게 되다  만나다  다시  어르신  (높임)",
+     "translation": "다시 만나서 반가워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Con muốn mời bác đến Phòng Nước Trời ạ.",
+     "gloss": "저(조카)  원하다  초대하다  어르신  ~에 오다  회관  왕국  (높임)",
+     "translation": "왕국회관에 초대하고 싶어요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Buổi nhóm họp rất thú vị ạ.",
+     "gloss": "모임  집회  아주  재미있다  (높임)",
+     "translation": "집회는 정말 흥미로워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Bác đi với con ạ?",
+     "gloss": "어르신  가다  ~와 함께  저(조카)  (높임)",
+     "translation": "저와 같이 가실래요?",
+     "reply": "Hà: Ừ, bác sẽ đi thử.  — 네, 한번 가 볼게요.",
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "6. 성서 연구 제안": [
+    {
+     "viet": "Bác có muốn tìm hiểu Kinh Thánh không ạ?",
+     "gloss": "어르신  있다  원하다  알아보다  성경  ~입니까?  (높임)",
+     "translation": "성경을 알아보고 싶으세요?",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Học Kinh Thánh miễn phí ạ.",
+     "gloss": "배우다  성경  무료  (높임)",
+     "translation": "성경 공부는 무료예요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Mỗi tuần một lần, khoảng ba mươi phút ạ.",
+     "gloss": "매  주(週)  한  번  약  30  분  (높임)",
+     "translation": "일주일에 한 번, 30분 정도예요.",
+     "reply": "Hà: Ừ, bác muốn thử.  — 네, 해 보고 싶어요.",
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ],
+   "7. 성서 연구 사회": [
+    {
+     "viet": "Chúng ta bắt đầu ạ.",
+     "gloss": "우리  시작하다  (높임)",
+     "translation": "그럼 시작할까요?",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Hôm nay, chúng ta học về hạnh phúc ạ.",
+     "gloss": "오늘  우리  배우다  ~에 대해  행복  (높임)",
+     "translation": "오늘은 행복에 대해 배워요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Bác đọc câu Kinh Thánh này ạ.",
+     "gloss": "어르신  읽다  구절  성경  이  (높임)",
+     "translation": "이 성경 구절을 읽어 주세요.",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Bác nghĩ sao ạ?",
+     "gloss": "어르신  생각하다  어떻게  (높임)",
+     "translation": "어떻게 생각하세요?",
+     "reply": "Hà: Hay quá.  — 정말 좋네요.",
+     "speaker": "나: con  ·  상대: bác"
+    },
+    {
+     "viet": "Cảm ơn bác. Tuần sau gặp lại bác ạ!",
+     "gloss": "감사하다  어르신  주(週)  다음  만나다  다시  (높임)",
+     "translation": "고맙습니다. 다음 주에 또 뵈요!",
+     "reply": null,
+     "speaker": "나: con  ·  상대: bác"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,3057 @@
+[
+  {
+    "n": 1,
+    "word": "đầu hàng",
+    "hanja": "投降",
+    "meaning": {
+      "ko": "항복",
+      "zh": "投降",
+      "en": "surrender",
+      "ja": "降伏"
+    },
+    "kind": "normal",
+    "display_n": 1
+  },
+  {
+    "word": "hàng không",
+    "hanja": "航空",
+    "meaning": {
+      "ko": "항공",
+      "zh": "航空",
+      "en": "aviation",
+      "ja": "航空"
+    },
+    "kind": "base",
+    "display_n": 2
+  },
+  {
+    "word": "dân dụng",
+    "hanja": "民用",
+    "meaning": {
+      "ko": "민간(용)",
+      "zh": "民用",
+      "en": "civilian (use)",
+      "ja": "民間用"
+    },
+    "kind": "base",
+    "display_n": 3
+  },
+  {
+    "n": 2,
+    "word": "hàng không dân dụng",
+    "hanja": "航空民用",
+    "meaning": {
+      "ko": "민간 항공",
+      "zh": "民航",
+      "en": "civil aviation",
+      "ja": "民間航空"
+    },
+    "kind": "compound",
+    "parts": [
+      "hàng không",
+      "dân dụng"
+    ],
+    "display_n": 4
+  },
+  {
+    "n": 3,
+    "word": "dụng tâm",
+    "hanja": "用心",
+    "meaning": {
+      "ko": "의도를 기울임",
+      "zh": "傾注心意",
+      "en": "devoting one's intention",
+      "ja": "意を傾けること"
+    },
+    "kind": "normal",
+    "display_n": 5
+  },
+  {
+    "n": 4,
+    "word": "tâm sự",
+    "hanja": "心事",
+    "meaning": {
+      "ko": "속마음·고민토로",
+      "zh": "心裡話·傾訴煩惱",
+      "en": "inner thoughts, confiding worries",
+      "ja": "本音·悩み相談"
+    },
+    "kind": "normal",
+    "display_n": 6
+  },
+  {
+    "n": 5,
+    "word": "sự nghiệp",
+    "hanja": "事業",
+    "meaning": {
+      "ko": "사업·경력",
+      "zh": "事業·經歷",
+      "en": "business; career",
+      "ja": "事業・経歴"
+    },
+    "kind": "normal",
+    "display_n": 7
+  },
+  {
+    "word": "nghiệp vụ",
+    "hanja": "業務",
+    "meaning": {
+      "ko": "업무",
+      "zh": "業務",
+      "en": "work, task",
+      "ja": "業務"
+    },
+    "kind": "base",
+    "display_n": 8
+  },
+  {
+    "word": "ngân hàng",
+    "hanja": "銀行",
+    "meaning": {
+      "ko": "은행",
+      "zh": "銀行",
+      "en": "bank",
+      "ja": "銀行"
+    },
+    "kind": "base",
+    "display_n": 9
+  },
+  {
+    "n": 6,
+    "word": "nghiệp vụ ngân hàng",
+    "hanja": "業務銀行",
+    "meaning": {
+      "ko": "은행 업무",
+      "zh": "銀行業務",
+      "en": "banking business",
+      "ja": "銀行業務"
+    },
+    "kind": "compound",
+    "parts": [
+      "nghiệp vụ",
+      "ngân hàng"
+    ],
+    "display_n": 10
+  },
+  {
+    "n": 7,
+    "word": "hàng hóa",
+    "hanja": "行貨",
+    "meaning": {
+      "ko": "상품",
+      "zh": "商品",
+      "en": "product",
+      "ja": "商品"
+    },
+    "kind": "normal",
+    "display_n": 11
+  },
+  {
+    "n": 8,
+    "word": "hóa chất",
+    "hanja": "化質",
+    "meaning": {
+      "ko": "화학물질",
+      "zh": "化學物質",
+      "en": "chemical substance",
+      "ja": "化学物質"
+    },
+    "kind": "normal",
+    "display_n": 12
+  },
+  {
+    "n": 9,
+    "word": "chất liệu",
+    "hanja": "質料",
+    "meaning": {
+      "ko": "재질·소재",
+      "zh": "材質·素材",
+      "en": "texture/material",
+      "ja": "材質・素材"
+    },
+    "kind": "normal",
+    "display_n": 13
+  },
+  {
+    "n": 10,
+    "word": "liệu trình",
+    "hanja": "療程",
+    "meaning": {
+      "ko": "치료 과정",
+      "zh": "治療過程",
+      "en": "treatment process",
+      "ja": "治療過程"
+    },
+    "kind": "normal",
+    "display_n": 14
+  },
+  {
+    "n": 11,
+    "word": "trình diễn",
+    "hanja": "呈演",
+    "meaning": {
+      "ko": "공연·시연",
+      "zh": "表演‧示範",
+      "en": "performance, demonstration",
+      "ja": "公演・実演"
+    },
+    "kind": "normal",
+    "display_n": 15
+  },
+  {
+    "n": 12,
+    "word": "diễn viên",
+    "hanja": "演員",
+    "meaning": {
+      "ko": "배우",
+      "zh": "演員",
+      "en": "actor",
+      "ja": "俳優"
+    },
+    "kind": "normal",
+    "display_n": 16
+  },
+  {
+    "n": 13,
+    "word": "viên ngoại",
+    "hanja": "員外",
+    "meaning": {
+      "ko": "원외(옛 지주·부호)",
+      "zh": "員外(舊時的地主·富豪)",
+      "en": "wealthy landowner (archaic term)",
+      "ja": "(昔の)地主・富豪"
+    },
+    "kind": "normal",
+    "display_n": 17
+  },
+  {
+    "n": 14,
+    "word": "ngoại hình",
+    "hanja": "外形",
+    "meaning": {
+      "ko": "외모",
+      "zh": "外貌",
+      "en": "appearance",
+      "ja": "外見"
+    },
+    "kind": "normal",
+    "display_n": 18
+  },
+  {
+    "n": 15,
+    "word": "hình sự",
+    "hanja": "刑事",
+    "meaning": {
+      "ko": "형사",
+      "zh": "刑警",
+      "en": "detective",
+      "ja": "刑事"
+    },
+    "kind": "normal",
+    "display_n": 19
+  },
+  {
+    "n": 16,
+    "word": "sự thể",
+    "hanja": "事體",
+    "meaning": {
+      "ko": "사태·형편",
+      "zh": "事態·情況",
+      "en": "situation, circumstances",
+      "ja": "事態·状況"
+    },
+    "kind": "normal",
+    "display_n": 20
+  },
+  {
+    "n": 17,
+    "word": "thể chất",
+    "hanja": "體質",
+    "meaning": {
+      "ko": "체질·체격",
+      "zh": "體質·體格",
+      "en": "constitution, physique",
+      "ja": "体質・体格"
+    },
+    "kind": "normal",
+    "display_n": 21
+  },
+  {
+    "n": 18,
+    "word": "chất lượng",
+    "hanja": "質量",
+    "meaning": {
+      "ko": "품질",
+      "zh": "品質",
+      "en": "quality",
+      "ja": "品質"
+    },
+    "kind": "normal",
+    "display_n": 22
+  },
+  {
+    "n": 19,
+    "word": "lượng giá",
+    "hanja": "量價",
+    "meaning": {
+      "ko": "평가하다",
+      "zh": "評價",
+      "en": "to evaluate",
+      "ja": "評価する"
+    },
+    "kind": "normal",
+    "display_n": 23
+  },
+  {
+    "n": 20,
+    "word": "giá trị",
+    "hanja": "價值",
+    "meaning": {
+      "ko": "가치",
+      "zh": "價值",
+      "en": "value",
+      "ja": "価値"
+    },
+    "kind": "normal",
+    "display_n": 24
+  },
+  {
+    "n": 21,
+    "word": "trị liệu",
+    "hanja": "治療",
+    "meaning": {
+      "ko": "치료",
+      "zh": "治療",
+      "en": "treatment",
+      "ja": "治療"
+    },
+    "kind": "normal",
+    "display_n": 25
+  },
+  {
+    "n": 22,
+    "word": "liệu pháp",
+    "hanja": "療法",
+    "meaning": {
+      "ko": "요법",
+      "zh": "療法",
+      "en": "therapy",
+      "ja": "療法"
+    },
+    "kind": "normal",
+    "display_n": 26
+  },
+  {
+    "n": 23,
+    "word": "pháp chế",
+    "hanja": "法制",
+    "meaning": {
+      "ko": "법제",
+      "zh": "法制",
+      "en": "legal system",
+      "ja": "法制"
+    },
+    "kind": "normal",
+    "display_n": 27
+  },
+  {
+    "n": 24,
+    "word": "chế tạo",
+    "hanja": "製造",
+    "meaning": {
+      "ko": "제조",
+      "zh": "製造",
+      "en": "manufacturing",
+      "ja": "製造"
+    },
+    "kind": "normal",
+    "display_n": 28
+  },
+  {
+    "n": 25,
+    "word": "tạo hóa",
+    "hanja": "造化",
+    "meaning": {
+      "ko": "조화옹·창조주",
+      "zh": "造化翁·創造主",
+      "en": "the Creator",
+      "ja": "造化翁・創造主"
+    },
+    "kind": "normal",
+    "display_n": 29
+  },
+  {
+    "n": 26,
+    "word": "hóa trang",
+    "hanja": "化妝",
+    "meaning": {
+      "ko": "분장",
+      "zh": "化妝，扮裝",
+      "en": "makeup; costume",
+      "ja": "扮装"
+    },
+    "kind": "normal",
+    "display_n": 30
+  },
+  {
+    "n": 27,
+    "word": "trang trí",
+    "hanja": "裝置",
+    "meaning": {
+      "ko": "장식",
+      "zh": "裝飾",
+      "en": "decoration",
+      "ja": "装飾"
+    },
+    "kind": "normal",
+    "display_n": 31
+  },
+  {
+    "n": 28,
+    "word": "trí thức",
+    "hanja": "智識",
+    "meaning": {
+      "ko": "지식·지식인",
+      "zh": "知識·知識分子",
+      "en": "knowledge/intellectual",
+      "ja": "知識・知識人"
+    },
+    "kind": "normal",
+    "display_n": 32
+  },
+  {
+    "word": "thức tỉnh",
+    "hanja": "識醒",
+    "meaning": {
+      "ko": "일깨움·각성",
+      "zh": "喚醒·覺醒",
+      "en": "awakening/realization",
+      "ja": "目覚め・覚醒"
+    },
+    "kind": "base",
+    "display_n": 33
+  },
+  {
+    "word": "lương tâm",
+    "hanja": "良心",
+    "meaning": {
+      "ko": "양심",
+      "zh": "良心",
+      "en": "conscience",
+      "ja": "良心"
+    },
+    "kind": "base",
+    "display_n": 34
+  },
+  {
+    "n": 29,
+    "word": "thức tỉnh lương tâm",
+    "hanja": "識醒良心",
+    "meaning": {
+      "ko": "양심을 일깨움",
+      "zh": "喚醒良心",
+      "en": "awakening the conscience",
+      "ja": "良心を呼び覚ますこと"
+    },
+    "kind": "compound",
+    "parts": [
+      "thức tỉnh",
+      "lương tâm"
+    ],
+    "display_n": 35
+  },
+  {
+    "n": 30,
+    "word": "tâm tính",
+    "hanja": "心性",
+    "meaning": {
+      "ko": "심성·성격",
+      "zh": "心性・性格",
+      "en": "disposition · personality",
+      "ja": "心根・性格"
+    },
+    "kind": "normal",
+    "display_n": 36
+  },
+  {
+    "n": 31,
+    "word": "tính từ",
+    "hanja": "性詞",
+    "meaning": {
+      "ko": "형용사",
+      "zh": "形容詞",
+      "en": "adjective",
+      "ja": "形容詞"
+    },
+    "kind": "normal",
+    "display_n": 37
+  },
+  {
+    "n": 32,
+    "word": "từ điển",
+    "hanja": "辭典",
+    "meaning": {
+      "ko": "사전",
+      "zh": "字典",
+      "en": "dictionary",
+      "ja": "辞書"
+    },
+    "kind": "normal",
+    "display_n": 38
+  },
+  {
+    "n": 33,
+    "word": "điển hình",
+    "hanja": "典型",
+    "meaning": {
+      "ko": "전형적",
+      "zh": "典型的",
+      "en": "typical",
+      "ja": "典型的"
+    },
+    "kind": "normal",
+    "display_n": 39
+  },
+  {
+    "n": 34,
+    "word": "hình thức",
+    "hanja": "形式",
+    "meaning": {
+      "ko": "형식",
+      "zh": "形式",
+      "en": "form",
+      "ja": "形式"
+    },
+    "kind": "normal",
+    "display_n": 40
+  },
+  {
+    "n": 35,
+    "word": "thức thời",
+    "hanja": "識時",
+    "meaning": {
+      "ko": "시류에 밝음",
+      "zh": "精明世故·緊跟潮流",
+      "en": "savvy about trends",
+      "ja": "世情に明るい"
+    },
+    "kind": "normal",
+    "display_n": 41
+  },
+  {
+    "n": 36,
+    "word": "thời gian",
+    "hanja": "時間",
+    "meaning": {
+      "ko": "시간",
+      "zh": "時間",
+      "en": "time",
+      "ja": "時間"
+    },
+    "kind": "normal",
+    "display_n": 42
+  },
+  {
+    "n": 37,
+    "word": "gian tế",
+    "hanja": "奸細",
+    "meaning": {
+      "ko": "간첩·스파이",
+      "zh": "間諜·特務",
+      "en": "spy",
+      "ja": "スパイ・間者"
+    },
+    "kind": "normal",
+    "display_n": 43
+  },
+  {
+    "n": 38,
+    "word": "tế bào",
+    "hanja": "細胞",
+    "meaning": {
+      "ko": "세포",
+      "zh": "細胞",
+      "en": "cell",
+      "ja": "細胞"
+    },
+    "kind": "normal",
+    "display_n": 44
+  },
+  {
+    "n": 39,
+    "word": "bào chế",
+    "hanja": "炮製",
+    "meaning": {
+      "ko": "제약·조제",
+      "zh": "製藥·調劑",
+      "en": "pharmaceutical/dispensing",
+      "ja": "製薬・調剤"
+    },
+    "kind": "normal",
+    "display_n": 45
+  },
+  {
+    "n": 40,
+    "word": "chế độ",
+    "hanja": "制度",
+    "meaning": {
+      "ko": "제도",
+      "zh": "制度",
+      "en": "system",
+      "ja": "制度"
+    },
+    "kind": "normal",
+    "display_n": 46
+  },
+  {
+    "n": 41,
+    "word": "độ lượng",
+    "hanja": "度量",
+    "meaning": {
+      "ko": "도량이 넓음",
+      "zh": "度量寬大",
+      "en": "broad-mindedness",
+      "ja": "度量が広いこと"
+    },
+    "kind": "normal",
+    "display_n": 47
+  },
+  {
+    "n": 42,
+    "word": "lượng từ",
+    "hanja": "量詞",
+    "meaning": {
+      "ko": "양사(문법)",
+      "zh": "量詞（文法）",
+      "en": "classifier (grammar)",
+      "ja": "量詞（文法）"
+    },
+    "kind": "normal",
+    "display_n": 48
+  },
+  {
+    "n": 43,
+    "word": "từ tâm",
+    "hanja": "慈心",
+    "meaning": {
+      "ko": "자비심",
+      "zh": "慈悲心",
+      "en": "compassion",
+      "ja": "慈悲心"
+    },
+    "kind": "normal",
+    "display_n": 49
+  },
+  {
+    "n": 44,
+    "word": "tâm lý",
+    "hanja": "心理",
+    "meaning": {
+      "ko": "심리",
+      "zh": "心理",
+      "en": "psychology, mental state",
+      "ja": "心理"
+    },
+    "kind": "normal",
+    "display_n": 50
+  },
+  {
+    "n": 45,
+    "word": "lý trí",
+    "hanja": "理智",
+    "meaning": {
+      "ko": "이성",
+      "zh": "理性",
+      "en": "reason",
+      "ja": "理性"
+    },
+    "kind": "normal",
+    "display_n": 51
+  },
+  {
+    "n": 46,
+    "word": "trí lực",
+    "hanja": "智力",
+    "meaning": {
+      "ko": "지력",
+      "zh": "智力",
+      "en": "intellect",
+      "ja": "知力"
+    },
+    "kind": "normal",
+    "display_n": 52
+  },
+  {
+    "n": 47,
+    "word": "lực sĩ",
+    "hanja": "力士",
+    "meaning": {
+      "ko": "역사(力士)·장사",
+      "zh": "大力士・力士",
+      "en": "strongman · strong person",
+      "ja": "力士・力持ち"
+    },
+    "kind": "normal",
+    "display_n": 53
+  },
+  {
+    "n": 48,
+    "word": "sĩ quan",
+    "hanja": "士官",
+    "meaning": {
+      "ko": "사관·장교",
+      "zh": "士官·軍官",
+      "en": "cadet officer; officer",
+      "ja": "士官・将校"
+    },
+    "kind": "normal",
+    "display_n": 54
+  },
+  {
+    "n": 49,
+    "word": "quan tâm",
+    "hanja": "關心",
+    "meaning": {
+      "ko": "관심",
+      "zh": "關心",
+      "en": "interest",
+      "ja": "関心"
+    },
+    "kind": "normal",
+    "display_n": 55
+  },
+  {
+    "n": 50,
+    "word": "tâm lý học",
+    "hanja": "心理學",
+    "meaning": {
+      "ko": "심리학",
+      "zh": "心理學",
+      "en": "psychology",
+      "ja": "心理学"
+    },
+    "kind": "compound",
+    "parts": null,
+    "display_n": 56
+  },
+  {
+    "n": 51,
+    "word": "học phí",
+    "hanja": "學費",
+    "meaning": {
+      "ko": "학비",
+      "zh": "學費",
+      "en": "tuition",
+      "ja": "学費"
+    },
+    "kind": "normal",
+    "display_n": 57
+  },
+  {
+    "n": 52,
+    "word": "phí phạm",
+    "hanja": "費犯",
+    "meaning": {
+      "ko": "낭비하다",
+      "zh": "浪費",
+      "en": "waste",
+      "ja": "無駄にする"
+    },
+    "kind": "normal",
+    "display_n": 58
+  },
+  {
+    "n": 53,
+    "word": "phạm pháp",
+    "hanja": "犯法",
+    "meaning": {
+      "ko": "위법",
+      "zh": "違法",
+      "en": "illegal act",
+      "ja": "違法"
+    },
+    "kind": "normal",
+    "display_n": 59
+  },
+  {
+    "n": 54,
+    "word": "pháp luật",
+    "hanja": "法律",
+    "meaning": {
+      "ko": "법률",
+      "zh": "法律",
+      "en": "law; statute",
+      "ja": "法律"
+    },
+    "kind": "normal",
+    "display_n": 60
+  },
+  {
+    "n": 55,
+    "word": "luật sư",
+    "hanja": "律師",
+    "meaning": {
+      "ko": "변호사",
+      "zh": "律師",
+      "en": "lawyer",
+      "ja": "弁護士"
+    },
+    "kind": "normal",
+    "display_n": 61
+  },
+  {
+    "word": "sư phạm",
+    "hanja": "師範",
+    "meaning": {
+      "ko": "사범",
+      "zh": "師範，教練",
+      "en": "instructor",
+      "ja": "師範"
+    },
+    "kind": "base",
+    "display_n": 62
+  },
+  {
+    "word": "kỹ thuật",
+    "hanja": "技術",
+    "meaning": {
+      "ko": "기술",
+      "zh": "技術",
+      "en": "technology, skill",
+      "ja": "技術"
+    },
+    "kind": "base",
+    "display_n": 63
+  },
+  {
+    "n": 56,
+    "word": "sư phạm kỹ thuật",
+    "hanja": "師範技術",
+    "meaning": {
+      "ko": "공업 사범(기술교육)",
+      "zh": "工業師範(技職教育)",
+      "en": "industrial teacher training (technical education)",
+      "ja": "工業師範(技術教育)"
+    },
+    "kind": "compound",
+    "parts": [
+      "sư phạm",
+      "kỹ thuật"
+    ],
+    "display_n": 64
+  },
+  {
+    "word": "thuật toán",
+    "hanja": "術算",
+    "meaning": {
+      "ko": "알고리즘",
+      "zh": "演算法",
+      "en": "algorithm",
+      "ja": "アルゴリズム"
+    },
+    "kind": "base",
+    "display_n": 65
+  },
+  {
+    "word": "máy tính",
+    "hanja": "",
+    "meaning": {
+      "ko": "컴퓨터",
+      "zh": "電腦",
+      "en": "computer",
+      "ja": "コンピューター"
+    },
+    "kind": "base",
+    "display_n": 66
+  },
+  {
+    "n": 57,
+    "word": "thuật toán máy tính",
+    "hanja": "術算",
+    "meaning": {
+      "ko": "컴퓨터 알고리즘",
+      "zh": "電腦演算法",
+      "en": "computer algorithm",
+      "ja": "コンピューターアルゴリズム"
+    },
+    "kind": "compound",
+    "parts": [
+      "thuật toán",
+      "máy tính"
+    ],
+    "display_n": 67
+  },
+  {
+    "n": 58,
+    "word": "tính cách",
+    "hanja": "性格",
+    "meaning": {
+      "ko": "성격",
+      "zh": "性格",
+      "en": "personality",
+      "ja": "性格"
+    },
+    "kind": "normal",
+    "display_n": 68
+  },
+  {
+    "n": 59,
+    "word": "cách mạng",
+    "hanja": "革命",
+    "meaning": {
+      "ko": "혁명",
+      "zh": "革命",
+      "en": "revolution",
+      "ja": "革命"
+    },
+    "kind": "normal",
+    "display_n": 69
+  },
+  {
+    "word": "mạng",
+    "hanja": "",
+    "meaning": {
+      "ko": "망·네트워크",
+      "zh": "網・網路",
+      "en": "network",
+      "ja": "網・ネットワーク"
+    },
+    "kind": "base",
+    "display_n": 70
+  },
+  {
+    "word": "xã hội",
+    "hanja": "社會",
+    "meaning": {
+      "ko": "사회",
+      "zh": "社會",
+      "en": "society",
+      "ja": "社会"
+    },
+    "kind": "base",
+    "display_n": 71
+  },
+  {
+    "n": 60,
+    "word": "mạng xã hội",
+    "hanja": "社會",
+    "meaning": {
+      "ko": "소셜미디어",
+      "zh": "社群媒體",
+      "en": "social media",
+      "ja": "ソーシャルメディア"
+    },
+    "kind": "compound",
+    "parts": [
+      "mạng",
+      "xã hội"
+    ],
+    "display_n": 72
+  },
+  {
+    "n": 61,
+    "word": "hội viên",
+    "hanja": "會員",
+    "meaning": {
+      "ko": "회원",
+      "zh": "會員",
+      "en": "member",
+      "ja": "会員"
+    },
+    "kind": "normal",
+    "display_n": 73
+  },
+  {
+    "n": 62,
+    "word": "viên chức",
+    "hanja": "員職",
+    "meaning": {
+      "ko": "공무원·직원",
+      "zh": "公務員‧職員",
+      "en": "civil servant, staff",
+      "ja": "公務員・職員"
+    },
+    "kind": "normal",
+    "display_n": 74
+  },
+  {
+    "n": 63,
+    "word": "chức vụ",
+    "hanja": "職務",
+    "meaning": {
+      "ko": "직무·직위",
+      "zh": "職務·職位",
+      "en": "duty/position",
+      "ja": "職務・職位"
+    },
+    "kind": "normal",
+    "display_n": 75
+  },
+  {
+    "n": 64,
+    "word": "vụ lợi",
+    "hanja": "務利",
+    "meaning": {
+      "ko": "사리(私利)를 꾀함",
+      "zh": "謀求私利",
+      "en": "seeking self-interest",
+      "ja": "私利を図ること"
+    },
+    "kind": "normal",
+    "display_n": 76
+  },
+  {
+    "n": 65,
+    "word": "lợi dụng",
+    "hanja": "利用",
+    "meaning": {
+      "ko": "이용·악용",
+      "zh": "利用·濫用",
+      "en": "use/abuse",
+      "ja": "利用・悪用"
+    },
+    "kind": "normal",
+    "display_n": 77
+  },
+  {
+    "n": 66,
+    "word": "dụng ý",
+    "hanja": "用意",
+    "meaning": {
+      "ko": "의도",
+      "zh": "意圖",
+      "en": "intention",
+      "ja": "意図"
+    },
+    "kind": "normal",
+    "display_n": 78
+  },
+  {
+    "n": 67,
+    "word": "ý kiến",
+    "hanja": "意見",
+    "meaning": {
+      "ko": "의견",
+      "zh": "意見",
+      "en": "opinion",
+      "ja": "意見"
+    },
+    "kind": "normal",
+    "display_n": 79
+  },
+  {
+    "n": 68,
+    "word": "kiến tạo",
+    "hanja": "建造",
+    "meaning": {
+      "ko": "조성·형성",
+      "zh": "造成·形成",
+      "en": "formation",
+      "ja": "造成・形成"
+    },
+    "kind": "normal",
+    "display_n": 80
+  },
+  {
+    "n": 69,
+    "word": "tạo tác",
+    "hanja": "造作",
+    "meaning": {
+      "ko": "조작·제작",
+      "zh": "操作·製作",
+      "en": "manipulation/production",
+      "ja": "操作・製作"
+    },
+    "kind": "normal",
+    "display_n": 81
+  },
+  {
+    "n": 70,
+    "word": "tác phong",
+    "hanja": "作風",
+    "meaning": {
+      "ko": "태도·기풍",
+      "zh": "態度·風氣",
+      "en": "attitude, ethos",
+      "ja": "態度・気風"
+    },
+    "kind": "normal",
+    "display_n": 82
+  },
+  {
+    "n": 71,
+    "word": "phong kiến",
+    "hanja": "封建",
+    "meaning": {
+      "ko": "봉건",
+      "zh": "封建",
+      "en": "feudal",
+      "ja": "封建"
+    },
+    "kind": "normal",
+    "display_n": 83
+  },
+  {
+    "n": 72,
+    "word": "kiến giải",
+    "hanja": "見解",
+    "meaning": {
+      "ko": "견해",
+      "zh": "見解",
+      "en": "view/opinion",
+      "ja": "見解"
+    },
+    "kind": "normal",
+    "display_n": 84
+  },
+  {
+    "n": 73,
+    "word": "giải quyết",
+    "hanja": "解決",
+    "meaning": {
+      "ko": "해결",
+      "zh": "解決",
+      "en": "solution",
+      "ja": "解決"
+    },
+    "kind": "normal",
+    "display_n": 85
+  },
+  {
+    "n": 74,
+    "word": "quyết định",
+    "hanja": "決定",
+    "meaning": {
+      "ko": "결정",
+      "zh": "決定",
+      "en": "decision",
+      "ja": "決定"
+    },
+    "kind": "normal",
+    "display_n": 86
+  },
+  {
+    "n": 75,
+    "word": "định luật",
+    "hanja": "定律",
+    "meaning": {
+      "ko": "법칙",
+      "zh": "法則",
+      "en": "law; principle",
+      "ja": "法則"
+    },
+    "kind": "normal",
+    "display_n": 87
+  },
+  {
+    "n": 76,
+    "word": "luật pháp",
+    "hanja": "律法",
+    "meaning": {
+      "ko": "법률",
+      "zh": "法律",
+      "en": "law; statute",
+      "ja": "法律"
+    },
+    "kind": "normal",
+    "display_n": 88
+  },
+  {
+    "n": 77,
+    "word": "pháp lý",
+    "hanja": "法理",
+    "meaning": {
+      "ko": "법리·법적",
+      "zh": "法理·法律的",
+      "en": "legal principle; legal",
+      "ja": "法理・法的"
+    },
+    "kind": "normal",
+    "display_n": 89
+  },
+  {
+    "n": 78,
+    "word": "lý lịch",
+    "hanja": "履歷",
+    "meaning": {
+      "ko": "이력",
+      "zh": "履歷",
+      "en": "resume/history",
+      "ja": "履歴"
+    },
+    "kind": "normal",
+    "display_n": 90
+  },
+  {
+    "n": 79,
+    "word": "lịch trình",
+    "hanja": "歷程",
+    "meaning": {
+      "ko": "일정",
+      "zh": "日程",
+      "en": "schedule",
+      "ja": "日程"
+    },
+    "kind": "normal",
+    "display_n": 91
+  },
+  {
+    "n": 80,
+    "word": "trình độ",
+    "hanja": "程度",
+    "meaning": {
+      "ko": "수준",
+      "zh": "水準",
+      "en": "level, standard",
+      "ja": "水準"
+    },
+    "kind": "normal",
+    "display_n": 92
+  },
+  {
+    "word": "độ tuổi",
+    "hanja": "度",
+    "meaning": {
+      "ko": "연령(대)",
+      "zh": "年齡（層）",
+      "en": "age (group)",
+      "ja": "年齢（層）"
+    },
+    "kind": "base",
+    "display_n": 93
+  },
+  {
+    "word": "lao động",
+    "hanja": "勞動",
+    "meaning": {
+      "ko": "노동",
+      "zh": "勞動",
+      "en": "labor",
+      "ja": "労働"
+    },
+    "kind": "base",
+    "display_n": 94
+  },
+  {
+    "n": 81,
+    "word": "độ tuổi lao động",
+    "hanja": "度勞動",
+    "meaning": {
+      "ko": "노동 연령",
+      "zh": "勞動年齡",
+      "en": "working age",
+      "ja": "労働年齢"
+    },
+    "kind": "compound",
+    "parts": [
+      "độ tuổi",
+      "lao động"
+    ],
+    "display_n": 95
+  },
+  {
+    "n": 82,
+    "word": "động tác",
+    "hanja": "動作",
+    "meaning": {
+      "ko": "동작",
+      "zh": "動作",
+      "en": "motion",
+      "ja": "動作"
+    },
+    "kind": "normal",
+    "display_n": 96
+  },
+  {
+    "n": 83,
+    "word": "tác chiến",
+    "hanja": "作戰",
+    "meaning": {
+      "ko": "작전",
+      "zh": "作戰",
+      "en": "operation",
+      "ja": "作戦"
+    },
+    "kind": "normal",
+    "display_n": 97
+  },
+  {
+    "n": 84,
+    "word": "chiến dịch",
+    "hanja": "戰役",
+    "meaning": {
+      "ko": "작전·캠페인",
+      "zh": "作戰·活動",
+      "en": "operation/campaign",
+      "ja": "作戦・キャンペーン"
+    },
+    "kind": "normal",
+    "display_n": 98
+  },
+  {
+    "n": 85,
+    "word": "dịch vụ",
+    "hanja": "役務",
+    "meaning": {
+      "ko": "서비스",
+      "zh": "服務",
+      "en": "service",
+      "ja": "サービス"
+    },
+    "kind": "normal",
+    "display_n": 99
+  },
+  {
+    "n": 86,
+    "word": "vụ trưởng",
+    "hanja": "務長",
+    "meaning": {
+      "ko": "국장(부처 국장급)",
+      "zh": "局長(部會局長級)",
+      "en": "director-general (ministry bureau chief)",
+      "ja": "局長(省庁の局長級)"
+    },
+    "kind": "normal",
+    "display_n": 100
+  },
+  {
+    "n": 87,
+    "word": "trưởng thành",
+    "hanja": "長成",
+    "meaning": {
+      "ko": "성장·장성",
+      "zh": "成長·長大",
+      "en": "growth, maturation",
+      "ja": "成長"
+    },
+    "kind": "normal",
+    "display_n": 101
+  },
+  {
+    "n": 88,
+    "word": "thành lập",
+    "hanja": "成立",
+    "meaning": {
+      "ko": "설립",
+      "zh": "設立",
+      "en": "establishment",
+      "ja": "設立"
+    },
+    "kind": "normal",
+    "display_n": 102
+  },
+  {
+    "n": 89,
+    "word": "lập trường",
+    "hanja": "立場",
+    "meaning": {
+      "ko": "입장",
+      "zh": "立場",
+      "en": "stance",
+      "ja": "立場"
+    },
+    "kind": "normal",
+    "display_n": 103
+  },
+  {
+    "n": 90,
+    "word": "trường kỳ",
+    "hanja": "長期",
+    "meaning": {
+      "ko": "장기적",
+      "zh": "長期的",
+      "en": "long-term",
+      "ja": "長期的"
+    },
+    "kind": "normal",
+    "display_n": 104
+  },
+  {
+    "word": "kỳ thi",
+    "hanja": "期試",
+    "meaning": {
+      "ko": "시험",
+      "zh": "考試",
+      "en": "test, exam",
+      "ja": "試験"
+    },
+    "kind": "base",
+    "display_n": 105
+  },
+  {
+    "word": "tốt nghiệp",
+    "hanja": "卒業",
+    "meaning": {
+      "ko": "졸업",
+      "zh": "畢業",
+      "en": "graduation",
+      "ja": "卒業"
+    },
+    "kind": "base",
+    "display_n": 106
+  },
+  {
+    "n": 91,
+    "word": "kỳ thi tốt nghiệp",
+    "hanja": "期試卒業",
+    "meaning": {
+      "ko": "졸업시험",
+      "zh": "畢業考試",
+      "en": "graduation exam",
+      "ja": "卒業試験"
+    },
+    "kind": "compound",
+    "parts": [
+      "kỳ thi",
+      "tốt nghiệp"
+    ],
+    "display_n": 107
+  },
+  {
+    "n": 92,
+    "word": "nghiệp vụ",
+    "hanja": "業務",
+    "meaning": {
+      "ko": "업무",
+      "zh": "業務",
+      "en": "work, task",
+      "ja": "業務"
+    },
+    "kind": "normal",
+    "display_n": 108
+  },
+  {
+    "n": 93,
+    "word": "vụ án",
+    "hanja": "務案",
+    "meaning": {
+      "ko": "사건(소송)",
+      "zh": "案件（訴訟）",
+      "en": "case (lawsuit)",
+      "ja": "事件（訴訟）"
+    },
+    "kind": "normal",
+    "display_n": 109
+  },
+  {
+    "word": "án mạng",
+    "hanja": "案命",
+    "meaning": {
+      "ko": "살인사건",
+      "zh": "殺人案",
+      "en": "murder case",
+      "ja": "殺人事件"
+    },
+    "kind": "base",
+    "display_n": 110
+  },
+  {
+    "word": "nghiêm trọng",
+    "hanja": "嚴重",
+    "meaning": {
+      "ko": "중대한·심각한",
+      "zh": "重大·嚴重",
+      "en": "serious/grave",
+      "ja": "重大・深刻"
+    },
+    "kind": "base",
+    "display_n": 111
+  },
+  {
+    "n": 94,
+    "word": "án mạng nghiêm trọng",
+    "hanja": "案命嚴重",
+    "meaning": {
+      "ko": "중대 살인사건",
+      "zh": "重大殺人案件",
+      "en": "major murder case",
+      "ja": "重大殺人事件"
+    },
+    "kind": "compound",
+    "parts": [
+      "án mạng",
+      "nghiêm trọng"
+    ],
+    "display_n": 112
+  },
+  {
+    "n": 95,
+    "word": "trọng điểm",
+    "hanja": "重點",
+    "meaning": {
+      "ko": "중점",
+      "zh": "重點",
+      "en": "emphasis",
+      "ja": "重点"
+    },
+    "kind": "normal",
+    "display_n": 113
+  },
+  {
+    "n": 96,
+    "word": "điểm danh",
+    "hanja": "點名",
+    "meaning": {
+      "ko": "출석 체크",
+      "zh": "出席點名",
+      "en": "attendance check",
+      "ja": "出席チェック"
+    },
+    "kind": "normal",
+    "display_n": 114
+  },
+  {
+    "n": 97,
+    "word": "danh dự",
+    "hanja": "名譽",
+    "meaning": {
+      "ko": "명예",
+      "zh": "名譽",
+      "en": "honor",
+      "ja": "名誉"
+    },
+    "kind": "normal",
+    "display_n": 115
+  },
+  {
+    "n": 98,
+    "word": "dự phòng",
+    "hanja": "預防",
+    "meaning": {
+      "ko": "예방·대비",
+      "zh": "預防·防備",
+      "en": "prevention/preparedness",
+      "ja": "予防・備え"
+    },
+    "kind": "normal",
+    "display_n": 116
+  },
+  {
+    "n": 99,
+    "word": "phòng thủ",
+    "hanja": "防守",
+    "meaning": {
+      "ko": "방어",
+      "zh": "防禦",
+      "en": "defense",
+      "ja": "防御"
+    },
+    "kind": "normal",
+    "display_n": 117
+  },
+  {
+    "n": 100,
+    "word": "thủ đô",
+    "hanja": "首都",
+    "meaning": {
+      "ko": "수도",
+      "zh": "首都",
+      "en": "capital (city)",
+      "ja": "首都"
+    },
+    "kind": "normal",
+    "display_n": 118
+  },
+  {
+    "n": 101,
+    "word": "đô thị",
+    "hanja": "都市",
+    "meaning": {
+      "ko": "도시",
+      "zh": "城市",
+      "en": "city",
+      "ja": "都市"
+    },
+    "kind": "normal",
+    "display_n": 119
+  },
+  {
+    "n": 102,
+    "word": "thị trường",
+    "hanja": "市場",
+    "meaning": {
+      "ko": "시장",
+      "zh": "市場",
+      "en": "market",
+      "ja": "市場"
+    },
+    "kind": "normal",
+    "display_n": 120
+  },
+  {
+    "n": 103,
+    "word": "trường hợp",
+    "hanja": "場合",
+    "meaning": {
+      "ko": "경우",
+      "zh": "情況",
+      "en": "case/situation",
+      "ja": "場合"
+    },
+    "kind": "normal",
+    "display_n": 121
+  },
+  {
+    "n": 104,
+    "word": "hợp lý",
+    "hanja": "合理",
+    "meaning": {
+      "ko": "합리적",
+      "zh": "合理的",
+      "en": "reasonable",
+      "ja": "合理的"
+    },
+    "kind": "normal",
+    "display_n": 122
+  },
+  {
+    "n": 105,
+    "word": "lý luận",
+    "hanja": "理論",
+    "meaning": {
+      "ko": "이론·논리",
+      "zh": "理論·邏輯",
+      "en": "theory/logic",
+      "ja": "理論・論理"
+    },
+    "kind": "normal",
+    "display_n": 123
+  },
+  {
+    "n": 106,
+    "word": "luận văn",
+    "hanja": "論文",
+    "meaning": {
+      "ko": "논문",
+      "zh": "論文",
+      "en": "thesis",
+      "ja": "論文"
+    },
+    "kind": "normal",
+    "display_n": 124
+  },
+  {
+    "n": 107,
+    "word": "văn minh",
+    "hanja": "文明",
+    "meaning": {
+      "ko": "문명",
+      "zh": "文明",
+      "en": "civilization",
+      "ja": "文明"
+    },
+    "kind": "normal",
+    "display_n": 125
+  },
+  {
+    "n": 108,
+    "word": "minh triết",
+    "hanja": "明哲",
+    "meaning": {
+      "ko": "명철함·지혜",
+      "zh": "明辨力・智慧",
+      "en": "discernment, wisdom",
+      "ja": "明晰さ・知恵"
+    },
+    "kind": "normal",
+    "display_n": 126
+  },
+  {
+    "n": 109,
+    "word": "triết học",
+    "hanja": "哲學",
+    "meaning": {
+      "ko": "철학",
+      "zh": "哲學",
+      "en": "philosophy",
+      "ja": "哲学"
+    },
+    "kind": "normal",
+    "display_n": 127
+  },
+  {
+    "n": 110,
+    "word": "học kỳ",
+    "hanja": "學期",
+    "meaning": {
+      "ko": "학기",
+      "zh": "學期",
+      "en": "semester",
+      "ja": "学期"
+    },
+    "kind": "normal",
+    "display_n": 128
+  },
+  {
+    "n": 111,
+    "word": "kỳ hạn",
+    "hanja": "期限",
+    "meaning": {
+      "ko": "기한",
+      "zh": "期限",
+      "en": "deadline, time limit",
+      "ja": "期限"
+    },
+    "kind": "normal",
+    "display_n": 129
+  },
+  {
+    "n": 112,
+    "word": "hạn định",
+    "hanja": "限定",
+    "meaning": {
+      "ko": "기한설정",
+      "zh": "設定期限",
+      "en": "setting a deadline",
+      "ja": "期限設定"
+    },
+    "kind": "normal",
+    "display_n": 130
+  },
+  {
+    "n": 113,
+    "word": "định nghĩa",
+    "hanja": "定義",
+    "meaning": {
+      "ko": "정의",
+      "zh": "正義",
+      "en": "justice",
+      "ja": "正義"
+    },
+    "kind": "normal",
+    "display_n": 131
+  },
+  {
+    "n": 114,
+    "word": "nghĩa trang",
+    "hanja": "義莊",
+    "meaning": {
+      "ko": "묘지",
+      "zh": "墓地",
+      "en": "grave, cemetery",
+      "ja": "墓地"
+    },
+    "kind": "normal",
+    "display_n": 132
+  },
+  {
+    "n": 115,
+    "word": "trang sức",
+    "hanja": "裝飾",
+    "meaning": {
+      "ko": "장신구·액세서리",
+      "zh": "飾品·配件",
+      "en": "jewelry/accessories",
+      "ja": "装身具・アクセサリー"
+    },
+    "kind": "normal",
+    "display_n": 133
+  },
+  {
+    "word": "sức khỏe",
+    "hanja": "",
+    "meaning": {
+      "ko": "건강",
+      "zh": "健康",
+      "en": "health",
+      "ja": "健康"
+    },
+    "kind": "base",
+    "display_n": 134
+  },
+  {
+    "word": "cộng đồng",
+    "hanja": "共同",
+    "meaning": {
+      "ko": "공동체·지역사회",
+      "zh": "共同體‧社區",
+      "en": "community",
+      "ja": "共同体・地域社会"
+    },
+    "kind": "base",
+    "display_n": 135
+  },
+  {
+    "n": 116,
+    "word": "sức khỏe cộng đồng",
+    "hanja": "共同",
+    "meaning": {
+      "ko": "공중보건",
+      "zh": "公共衛生",
+      "en": "public health",
+      "ja": "公衆衛生"
+    },
+    "kind": "compound",
+    "parts": [
+      "sức khỏe",
+      "cộng đồng"
+    ],
+    "display_n": 136
+  },
+  {
+    "n": 117,
+    "word": "đồng bào",
+    "hanja": "同胞",
+    "meaning": {
+      "ko": "동포",
+      "zh": "同胞",
+      "en": "compatriot",
+      "ja": "同胞"
+    },
+    "kind": "normal",
+    "display_n": 137
+  },
+  {
+    "word": "dược phẩm",
+    "hanja": "藥品",
+    "meaning": {
+      "ko": "의약품",
+      "zh": "藥品",
+      "en": "medication",
+      "ja": "医薬品"
+    },
+    "kind": "base",
+    "display_n": 138
+  },
+  {
+    "n": 118,
+    "word": "bào chế dược phẩm",
+    "hanja": "炮製藥品",
+    "meaning": {
+      "ko": "의약품 조제",
+      "zh": "配藥",
+      "en": "dispensing medication",
+      "ja": "調剤"
+    },
+    "kind": "compound",
+    "parts": [
+      "dược phẩm"
+    ],
+    "display_n": 139
+  },
+  {
+    "n": 119,
+    "word": "phẩm giá",
+    "hanja": "品價",
+    "meaning": {
+      "ko": "품격·존엄",
+      "zh": "品格·尊嚴",
+      "en": "dignity, nobility",
+      "ja": "品格・尊厳"
+    },
+    "kind": "normal",
+    "display_n": 140
+  },
+  {
+    "n": 120,
+    "word": "giá thành",
+    "hanja": "價成",
+    "meaning": {
+      "ko": "원가",
+      "zh": "原價",
+      "en": "cost price",
+      "ja": "原価"
+    },
+    "kind": "normal",
+    "display_n": 141
+  },
+  {
+    "n": 121,
+    "word": "thành công",
+    "hanja": "成功",
+    "meaning": {
+      "ko": "성공",
+      "zh": "成功",
+      "en": "success",
+      "ja": "成功"
+    },
+    "kind": "normal",
+    "display_n": 142
+  },
+  {
+    "n": 122,
+    "word": "công chức",
+    "hanja": "公職",
+    "meaning": {
+      "ko": "공무원",
+      "zh": "公務員",
+      "en": "civil servant",
+      "ja": "公務員"
+    },
+    "kind": "normal",
+    "display_n": 143
+  },
+  {
+    "n": 123,
+    "word": "chức năng",
+    "hanja": "職能",
+    "meaning": {
+      "ko": "기능",
+      "zh": "功能",
+      "en": "function",
+      "ja": "機能"
+    },
+    "kind": "normal",
+    "display_n": 144
+  },
+  {
+    "n": 124,
+    "word": "năng động",
+    "hanja": "能動",
+    "meaning": {
+      "ko": "능동적·활동적",
+      "zh": "主動的·活躍的",
+      "en": "active · proactive",
+      "ja": "能動的・活動的"
+    },
+    "kind": "normal",
+    "display_n": 145
+  },
+  {
+    "n": 125,
+    "word": "động cơ",
+    "hanja": "動機",
+    "meaning": {
+      "ko": "동기·엔진",
+      "zh": "動機·引擎",
+      "en": "motive · engine",
+      "ja": "動機・エンジン"
+    },
+    "kind": "normal",
+    "display_n": 146
+  },
+  {
+    "n": 126,
+    "word": "cơ bản",
+    "hanja": "基本",
+    "meaning": {
+      "ko": "기본",
+      "zh": "基本",
+      "en": "basic",
+      "ja": "基本"
+    },
+    "kind": "normal",
+    "display_n": 147
+  },
+  {
+    "n": 127,
+    "word": "bản quyền",
+    "hanja": "版權",
+    "meaning": {
+      "ko": "저작권",
+      "zh": "著作權",
+      "en": "copyright",
+      "ja": "著作権"
+    },
+    "kind": "normal",
+    "display_n": 148
+  },
+  {
+    "n": 128,
+    "word": "quyền lợi",
+    "hanja": "權利",
+    "meaning": {
+      "ko": "권리",
+      "zh": "權利",
+      "en": "right",
+      "ja": "権利"
+    },
+    "kind": "normal",
+    "display_n": 149
+  },
+  {
+    "n": 129,
+    "word": "lợi thế",
+    "hanja": "利勢",
+    "meaning": {
+      "ko": "우위·이점",
+      "zh": "優勢·優點",
+      "en": "advantage",
+      "ja": "優位・利点"
+    },
+    "kind": "normal",
+    "display_n": 150
+  },
+  {
+    "n": 130,
+    "word": "thế hệ",
+    "hanja": "世系",
+    "meaning": {
+      "ko": "세대",
+      "zh": "世代",
+      "en": "generation",
+      "ja": "世代"
+    },
+    "kind": "normal",
+    "display_n": 151
+  },
+  {
+    "word": "hệ thống",
+    "hanja": "系統",
+    "meaning": {
+      "ko": "체계·시스템",
+      "zh": "體系·系統",
+      "en": "system, system",
+      "ja": "体系・システム"
+    },
+    "kind": "base",
+    "display_n": 152
+  },
+  {
+    "word": "thông tin",
+    "hanja": "通信",
+    "meaning": {
+      "ko": "정보·통신",
+      "zh": "資訊·通訊",
+      "en": "information/communication",
+      "ja": "情報・通信"
+    },
+    "kind": "base",
+    "display_n": 153
+  },
+  {
+    "n": 131,
+    "word": "hệ thống thông tin",
+    "hanja": "系統通信",
+    "meaning": {
+      "ko": "정보 시스템",
+      "zh": "資訊系統",
+      "en": "information system",
+      "ja": "情報システム"
+    },
+    "kind": "compound",
+    "parts": [
+      "hệ thống",
+      "thông tin"
+    ],
+    "display_n": 154
+  },
+  {
+    "n": 132,
+    "word": "tin học",
+    "hanja": "信學",
+    "meaning": {
+      "ko": "정보학·컴퓨터공학",
+      "zh": "資訊學·電腦工程學",
+      "en": "informatics/computer science",
+      "ja": "情報学・コンピュータ工学"
+    },
+    "kind": "normal",
+    "display_n": 155
+  },
+  {
+    "n": 133,
+    "word": "học viện",
+    "hanja": "學院",
+    "meaning": {
+      "ko": "학원·학교",
+      "zh": "補習班·學校",
+      "en": "academy, school",
+      "ja": "塾・学校"
+    },
+    "kind": "normal",
+    "display_n": 156
+  },
+  {
+    "n": 134,
+    "word": "viện trợ",
+    "hanja": "援助",
+    "meaning": {
+      "ko": "원조",
+      "zh": "援助",
+      "en": "aid/assistance",
+      "ja": "援助"
+    },
+    "kind": "normal",
+    "display_n": 157
+  },
+  {
+    "n": 135,
+    "word": "trợ cấp",
+    "hanja": "助給",
+    "meaning": {
+      "ko": "보조금·수당",
+      "zh": "補助金·津貼",
+      "en": "subsidy; allowance",
+      "ja": "補助金・手当"
+    },
+    "kind": "normal",
+    "display_n": 158
+  },
+  {
+    "n": 136,
+    "word": "cấp thiết",
+    "hanja": "急切",
+    "meaning": {
+      "ko": "시급함",
+      "zh": "急迫性",
+      "en": "urgency",
+      "ja": "緊急性"
+    },
+    "kind": "normal",
+    "display_n": 159
+  },
+  {
+    "n": 137,
+    "word": "thiết lập",
+    "hanja": "設立",
+    "meaning": {
+      "ko": "설립·구축",
+      "zh": "設立·建構",
+      "en": "establish, build",
+      "ja": "設立·構築"
+    },
+    "kind": "normal",
+    "display_n": 160
+  },
+  {
+    "n": 138,
+    "word": "lập pháp",
+    "hanja": "立法",
+    "meaning": {
+      "ko": "입법",
+      "zh": "立法",
+      "en": "legislation",
+      "ja": "立法"
+    },
+    "kind": "normal",
+    "display_n": 161
+  },
+  {
+    "n": 139,
+    "word": "pháp quyền",
+    "hanja": "法權",
+    "meaning": {
+      "ko": "법권·법치",
+      "zh": "法權·法治",
+      "en": "legal authority; rule of law",
+      "ja": "法権・法治"
+    },
+    "kind": "normal",
+    "display_n": 162
+  },
+  {
+    "n": 140,
+    "word": "quyền hành",
+    "hanja": "權衡",
+    "meaning": {
+      "ko": "권한·직권",
+      "zh": "權限‧職權",
+      "en": "authority, official power",
+      "ja": "権限・職権"
+    },
+    "kind": "normal",
+    "display_n": 163
+  },
+  {
+    "n": 141,
+    "word": "hành trình",
+    "hanja": "行程",
+    "meaning": {
+      "ko": "여정",
+      "zh": "旅程",
+      "en": "journey",
+      "ja": "旅程"
+    },
+    "kind": "normal",
+    "display_n": 164
+  },
+  {
+    "n": 142,
+    "word": "trình tự",
+    "hanja": "程序",
+    "meaning": {
+      "ko": "순서·절차",
+      "zh": "順序·程序",
+      "en": "order, procedure",
+      "ja": "順序·手順"
+    },
+    "kind": "normal",
+    "display_n": 165
+  },
+  {
+    "word": "tự động",
+    "hanja": "自動",
+    "meaning": {
+      "ko": "자동적",
+      "zh": "自動的",
+      "en": "automatic",
+      "ja": "自動的"
+    },
+    "kind": "base",
+    "display_n": 166
+  },
+  {
+    "n": 143,
+    "word": "tự động hóa",
+    "hanja": "自動化",
+    "meaning": {
+      "ko": "자동화",
+      "zh": "自動化",
+      "en": "automation",
+      "ja": "自動化"
+    },
+    "kind": "compound",
+    "parts": [
+      "tự động"
+    ],
+    "display_n": 167
+  },
+  {
+    "n": 144,
+    "word": "hóa đơn",
+    "hanja": "貨單",
+    "meaning": {
+      "ko": "영수증·청구서",
+      "zh": "收據·帳單",
+      "en": "receipt/bill",
+      "ja": "領収書・請求書"
+    },
+    "kind": "normal",
+    "display_n": 168
+  },
+  {
+    "n": 145,
+    "word": "đơn phương",
+    "hanja": "單方",
+    "meaning": {
+      "ko": "일방적",
+      "zh": "單方面的",
+      "en": "one-sided",
+      "ja": "一方的"
+    },
+    "kind": "normal",
+    "display_n": 169
+  },
+  {
+    "n": 146,
+    "word": "phương pháp",
+    "hanja": "方法",
+    "meaning": {
+      "ko": "방법",
+      "zh": "方法",
+      "en": "method",
+      "ja": "方法"
+    },
+    "kind": "normal",
+    "display_n": 170
+  },
+  {
+    "n": 147,
+    "word": "pháp y",
+    "hanja": "法醫",
+    "meaning": {
+      "ko": "법의학",
+      "zh": "法醫學",
+      "en": "forensic medicine",
+      "ja": "法医学"
+    },
+    "kind": "normal",
+    "display_n": 171
+  },
+  {
+    "n": 148,
+    "word": "y học",
+    "hanja": "醫學",
+    "meaning": {
+      "ko": "의학",
+      "zh": "醫學",
+      "en": "medicine (science)",
+      "ja": "医学"
+    },
+    "kind": "normal",
+    "display_n": 172
+  },
+  {
+    "n": 149,
+    "word": "học tập",
+    "hanja": "學習",
+    "meaning": {
+      "ko": "학습",
+      "zh": "學習",
+      "en": "learning",
+      "ja": "学習"
+    },
+    "kind": "normal",
+    "display_n": 173
+  },
+  {
+    "n": 150,
+    "word": "tập thể",
+    "hanja": "集體",
+    "meaning": {
+      "ko": "집단·단체",
+      "zh": "集團·團體",
+      "en": "group/organization",
+      "ja": "集団・団体"
+    },
+    "kind": "normal",
+    "display_n": 174
+  },
+  {
+    "n": 151,
+    "word": "thể hiện",
+    "hanja": "體現",
+    "meaning": {
+      "ko": "표현·나타냄",
+      "zh": "表現·表達",
+      "en": "expression, showing",
+      "ja": "表現・表すこと"
+    },
+    "kind": "normal",
+    "display_n": 175
+  },
+  {
+    "n": 152,
+    "word": "hiện trường",
+    "hanja": "現場",
+    "meaning": {
+      "ko": "현장",
+      "zh": "現場",
+      "en": "scene/site",
+      "ja": "現場"
+    },
+    "kind": "normal",
+    "display_n": 176
+  },
+  {
+    "n": 153,
+    "word": "trường học",
+    "hanja": "場學",
+    "meaning": {
+      "ko": "학교",
+      "zh": "學校",
+      "en": "school",
+      "ja": "学校"
+    },
+    "kind": "normal",
+    "display_n": 177
+  },
+  {
+    "n": 154,
+    "word": "học sinh",
+    "hanja": "學生",
+    "meaning": {
+      "ko": "학생",
+      "zh": "學生",
+      "en": "student",
+      "ja": "学生"
+    },
+    "kind": "normal",
+    "display_n": 178
+  },
+  {
+    "word": "sinh vật",
+    "hanja": "生物",
+    "meaning": {
+      "ko": "생물",
+      "zh": "生物",
+      "en": "living thing",
+      "ja": "生物"
+    },
+    "kind": "base",
+    "display_n": 179
+  },
+  {
+    "n": 155,
+    "word": "sinh vật học",
+    "hanja": "生物學",
+    "meaning": {
+      "ko": "생물학",
+      "zh": "生物學",
+      "en": "biology",
+      "ja": "生物学"
+    },
+    "kind": "compound",
+    "parts": [
+      "sinh vật"
+    ],
+    "display_n": 180
+  },
+  {
+    "n": 156,
+    "word": "học văn",
+    "hanja": "學文",
+    "meaning": {
+      "ko": "문학 공부",
+      "zh": "文學研究",
+      "en": "literature study",
+      "ja": "文学の勉強"
+    },
+    "kind": "normal",
+    "display_n": 181
+  },
+  {
+    "n": 157,
+    "word": "văn phòng",
+    "hanja": "文房",
+    "meaning": {
+      "ko": "사무실",
+      "zh": "辦公室",
+      "en": "office",
+      "ja": "事務所"
+    },
+    "kind": "normal",
+    "display_n": 182
+  },
+  {
+    "word": "phòng khám",
+    "hanja": "房勘",
+    "meaning": {
+      "ko": "진료실·클리닉",
+      "zh": "診療室·診所",
+      "en": "clinic",
+      "ja": "診療室・クリニック"
+    },
+    "kind": "base",
+    "display_n": 183
+  },
+  {
+    "word": "đa khoa",
+    "hanja": "多科",
+    "meaning": {
+      "ko": "다과·종합진료",
+      "zh": "茶點·綜合診療",
+      "en": "refreshments · general medical care",
+      "ja": "茶菓子・総合診療"
+    },
+    "kind": "base",
+    "display_n": 184
+  },
+  {
+    "n": 158,
+    "word": "phòng khám đa khoa",
+    "hanja": "房勘多科",
+    "meaning": {
+      "ko": "종합진료소",
+      "zh": "綜合診所",
+      "en": "general clinic",
+      "ja": "総合診療所"
+    },
+    "kind": "compound",
+    "parts": [
+      "phòng khám",
+      "đa khoa"
+    ],
+    "display_n": 185
+  },
+  {
+    "word": "khoa học",
+    "hanja": "科學",
+    "meaning": {
+      "ko": "과학",
+      "zh": "科學",
+      "en": "science",
+      "ja": "科学"
+    },
+    "kind": "base",
+    "display_n": 186
+  },
+  {
+    "n": 159,
+    "word": "khoa học xã hội",
+    "hanja": "科學社會",
+    "meaning": {
+      "ko": "사회과학",
+      "zh": "社會科學",
+      "en": "social science",
+      "ja": "社会科学"
+    },
+    "kind": "compound",
+    "parts": [
+      "khoa học"
+    ],
+    "display_n": 187
+  },
+  {
+    "n": 160,
+    "word": "hội đồng",
+    "hanja": "會同",
+    "meaning": {
+      "ko": "위원회·평의회",
+      "zh": "委員會·評議會",
+      "en": "committee/council",
+      "ja": "委員会・評議会"
+    },
+    "kind": "normal",
+    "display_n": 188
+  },
+  {
+    "n": 161,
+    "word": "đồng ý",
+    "hanja": "同意",
+    "meaning": {
+      "ko": "동의",
+      "zh": "同意",
+      "en": "agreement",
+      "ja": "同意"
+    },
+    "kind": "normal",
+    "display_n": 189
+  },
+  {
+    "n": 162,
+    "word": "ý nghĩa",
+    "hanja": "意義",
+    "meaning": {
+      "ko": "의미",
+      "zh": "意義",
+      "en": "meaning",
+      "ja": "意味"
+    },
+    "kind": "normal",
+    "display_n": 190
+  },
+  {
+    "n": 163,
+    "word": "nghĩa khí",
+    "hanja": "義氣",
+    "meaning": {
+      "ko": "의기(의리와 기개)",
+      "zh": "義氣(義理與氣概)",
+      "en": "sense of loyalty and honor",
+      "ja": "義気(義理と気概)"
+    },
+    "kind": "normal",
+    "display_n": 191
+  },
+  {
+    "n": 164,
+    "word": "khí công",
+    "hanja": "氣功",
+    "meaning": {
+      "ko": "기공",
+      "zh": "氣孔",
+      "en": "pore",
+      "ja": "気孔"
+    },
+    "kind": "normal",
+    "display_n": 192
+  },
+  {
+    "n": 165,
+    "word": "công nhân",
+    "hanja": "工人",
+    "meaning": {
+      "ko": "노동자",
+      "zh": "勞工",
+      "en": "worker",
+      "ja": "労働者"
+    },
+    "kind": "normal",
+    "display_n": 193
+  },
+  {
+    "n": 166,
+    "word": "nhân tài",
+    "hanja": "人才",
+    "meaning": {
+      "ko": "인재",
+      "zh": "人才",
+      "en": "talent (person)",
+      "ja": "人材"
+    },
+    "kind": "normal",
+    "display_n": 194
+  },
+  {
+    "n": 167,
+    "word": "tài chính",
+    "hanja": "財政",
+    "meaning": {
+      "ko": "재정·금융",
+      "zh": "財政·金融",
+      "en": "finance/banking",
+      "ja": "財政・金融"
+    },
+    "kind": "normal",
+    "display_n": 195
+  },
+  {
+    "word": "chính sách",
+    "hanja": "政策",
+    "meaning": {
+      "ko": "정책",
+      "zh": "政策",
+      "en": "policy",
+      "ja": "政策"
+    },
+    "kind": "base",
+    "display_n": 196
+  },
+  {
+    "word": "đối ngoại",
+    "hanja": "對外",
+    "meaning": {
+      "ko": "대외",
+      "zh": "對外",
+      "en": "external",
+      "ja": "対外"
+    },
+    "kind": "base",
+    "display_n": 197
+  },
+  {
+    "n": 168,
+    "word": "chính sách đối ngoại",
+    "hanja": "政策對外",
+    "meaning": {
+      "ko": "대외정책",
+      "zh": "對外政策",
+      "en": "foreign policy",
+      "ja": "対外政策"
+    },
+    "kind": "compound",
+    "parts": [
+      "chính sách",
+      "đối ngoại"
+    ],
+    "display_n": 198
+  },
+  {
+    "n": 169,
+    "word": "ngoại quốc",
+    "hanja": "外國",
+    "meaning": {
+      "ko": "외국",
+      "zh": "外國",
+      "en": "foreign country",
+      "ja": "外国"
+    },
+    "kind": "normal",
+    "display_n": 199
+  },
+  {
+    "n": 170,
+    "word": "quốc gia",
+    "hanja": "國家",
+    "meaning": {
+      "ko": "국가",
+      "zh": "國家",
+      "en": "nation, country",
+      "ja": "国家"
+    },
+    "kind": "normal",
+    "display_n": 200
+  },
+  {
+    "n": 171,
+    "word": "gia bảo",
+    "hanja": "家寶",
+    "meaning": {
+      "ko": "가보",
+      "zh": "傳家寶",
+      "en": "heirloom",
+      "ja": "家宝"
+    },
+    "kind": "normal",
+    "display_n": 201
+  },
+  {
+    "n": 172,
+    "word": "bảo hành",
+    "hanja": "保行",
+    "meaning": {
+      "ko": "보증·AS",
+      "zh": "保固·售後服務",
+      "en": "warranty; after-sales service",
+      "ja": "保証・アフターサービス"
+    },
+    "kind": "normal",
+    "display_n": 202
+  },
+  {
+    "n": 173,
+    "word": "hành chính",
+    "hanja": "行政",
+    "meaning": {
+      "ko": "행정",
+      "zh": "行政",
+      "en": "administration",
+      "ja": "行政"
+    },
+    "kind": "normal",
+    "display_n": 203
+  },
+  {
+    "n": 174,
+    "word": "chính trị",
+    "hanja": "政治",
+    "meaning": {
+      "ko": "정치",
+      "zh": "政治",
+      "en": "politics",
+      "ja": "政治"
+    },
+    "kind": "normal",
+    "display_n": 204
+  },
+  {
+    "n": 175,
+    "word": "trị an",
+    "hanja": "治安",
+    "meaning": {
+      "ko": "치안",
+      "zh": "治安",
+      "en": "public security",
+      "ja": "治安"
+    },
+    "kind": "normal",
+    "display_n": 205
+  },
+  {
+    "n": 176,
+    "word": "an sinh",
+    "hanja": "安生",
+    "meaning": {
+      "ko": "복지",
+      "zh": "福利",
+      "en": "welfare",
+      "ja": "福祉"
+    },
+    "kind": "normal",
+    "display_n": 206
+  },
+  {
+    "n": 177,
+    "word": "sinh sản",
+    "hanja": "生產",
+    "meaning": {
+      "ko": "생산·번식",
+      "zh": "生產·繁殖",
+      "en": "production, reproduction",
+      "ja": "生産·繁殖"
+    },
+    "kind": "normal",
+    "display_n": 207
+  },
+  {
+    "n": 178,
+    "word": "sản xuất",
+    "hanja": "產出",
+    "meaning": {
+      "ko": "생산",
+      "zh": "生產",
+      "en": "production",
+      "ja": "生産"
+    },
+    "kind": "normal",
+    "display_n": 208
+  },
+  {
+    "n": 179,
+    "word": "xuất phát",
+    "hanja": "出發",
+    "meaning": {
+      "ko": "출발",
+      "zh": "出發",
+      "en": "departure",
+      "ja": "出発"
+    },
+    "kind": "normal",
+    "display_n": 209
+  },
+  {
+    "n": 180,
+    "word": "phát biểu",
+    "hanja": "發表",
+    "meaning": {
+      "ko": "발표·발언",
+      "zh": "發表・發言",
+      "en": "presentation, statement",
+      "ja": "発表・発言"
+    },
+    "kind": "normal",
+    "display_n": 210
+  },
+  {
+    "n": 181,
+    "word": "biểu hiện",
+    "hanja": "表現",
+    "meaning": {
+      "ko": "표현",
+      "zh": "表現",
+      "en": "expression",
+      "ja": "表現"
+    },
+    "kind": "normal",
+    "display_n": 211
+  },
+  {
+    "n": 182,
+    "word": "hiện đại",
+    "hanja": "現代",
+    "meaning": {
+      "ko": "현대",
+      "zh": "現代",
+      "en": "modern era",
+      "ja": "現代"
+    },
+    "kind": "normal",
+    "display_n": 212
+  },
+  {
+    "n": 183,
+    "word": "đại đồng",
+    "hanja": "大同",
+    "meaning": {
+      "ko": "대동·큰 조화",
+      "zh": "大同·大和諧",
+      "en": "great unity · great harmony",
+      "ja": "大同・大調和"
+    },
+    "kind": "normal",
+    "display_n": 213
+  },
+  {
+    "n": 184,
+    "word": "đồng thời",
+    "hanja": "同時",
+    "meaning": {
+      "ko": "동시에",
+      "zh": "同時",
+      "en": "at the same time",
+      "ja": "同時に"
+    },
+    "kind": "normal",
+    "display_n": 214
+  },
+  {
+    "n": 185,
+    "word": "thời đại",
+    "hanja": "時代",
+    "meaning": {
+      "ko": "시대",
+      "zh": "時代",
+      "en": "era",
+      "ja": "時代"
+    },
+    "kind": "normal",
+    "display_n": 215
+  },
+  {
+    "word": "đại học",
+    "hanja": "大學",
+    "meaning": {
+      "ko": "대학",
+      "zh": "大學",
+      "en": "university",
+      "ja": "大学"
+    },
+    "kind": "base",
+    "display_n": 216
+  },
+  {
+    "n": 186,
+    "word": "đại học quốc gia",
+    "hanja": "大學國家",
+    "meaning": {
+      "ko": "국립대학교",
+      "zh": "國立大學",
+      "en": "national university",
+      "ja": "国立大学"
+    },
+    "kind": "compound",
+    "parts": [
+      "đại học"
+    ],
+    "display_n": 217
+  },
+  {
+    "n": 187,
+    "word": "gia tài",
+    "hanja": "家財",
+    "meaning": {
+      "ko": "재산",
+      "zh": "財產",
+      "en": "property",
+      "ja": "財産"
+    },
+    "kind": "normal",
+    "display_n": 218
+  },
+  {
+    "n": 188,
+    "word": "tài nguyên",
+    "hanja": "財源",
+    "meaning": {
+      "ko": "자원",
+      "zh": "資源",
+      "en": "resource",
+      "ja": "資源"
+    },
+    "kind": "normal",
+    "display_n": 219
+  },
+  {
+    "n": 189,
+    "word": "nguyên nhân",
+    "hanja": "原因",
+    "meaning": {
+      "ko": "원인",
+      "zh": "原因",
+      "en": "cause",
+      "ja": "原因"
+    },
+    "kind": "normal",
+    "display_n": 220
+  },
+  {
+    "n": 190,
+    "word": "nhân đạo",
+    "hanja": "人道",
+    "meaning": {
+      "ko": "인도적",
+      "zh": "人道的",
+      "en": "humane",
+      "ja": "人道的"
+    },
+    "kind": "normal",
+    "display_n": 221
+  },
+  {
+    "n": 191,
+    "word": "đạo diễn",
+    "hanja": "導演",
+    "meaning": {
+      "ko": "감독·연출",
+      "zh": "導演·執導",
+      "en": "director/directing",
+      "ja": "監督・演出"
+    },
+    "kind": "normal",
+    "display_n": 222
+  },
+  {
+    "n": 192,
+    "word": "diễn văn",
+    "hanja": "演文",
+    "meaning": {
+      "ko": "연설문",
+      "zh": "演講稿",
+      "en": "speech manuscript",
+      "ja": "演説原稿"
+    },
+    "kind": "normal",
+    "display_n": 223
+  },
+  {
+    "n": 193,
+    "word": "văn hóa",
+    "hanja": "文化",
+    "meaning": {
+      "ko": "문화",
+      "zh": "文化",
+      "en": "culture",
+      "ja": "文化"
+    },
+    "kind": "normal",
+    "display_n": 224
+  },
+  {
+    "n": 194,
+    "word": "hóa giải",
+    "hanja": "化解",
+    "meaning": {
+      "ko": "해소·풀다",
+      "zh": "解除·解開",
+      "en": "to resolve / to untie",
+      "ja": "解消・解く"
+    },
+    "kind": "normal",
+    "display_n": 225
+  },
+  {
+    "n": 195,
+    "word": "giải lao",
+    "hanja": "解勞",
+    "meaning": {
+      "ko": "휴식·쉬는 시간",
+      "zh": "休息·休息時間",
+      "en": "rest / break time",
+      "ja": "休息・休憩時間"
+    },
+    "kind": "normal",
+    "display_n": 226
+  },
+  {
+    "n": 196,
+    "word": "lao động",
+    "hanja": "勞動",
+    "meaning": {
+      "ko": "노동",
+      "zh": "勞動",
+      "en": "labor",
+      "ja": "労働"
+    },
+    "kind": "normal",
+    "display_n": 227
+  },
+  {
+    "n": 197,
+    "word": "động vật",
+    "hanja": "動物",
+    "meaning": {
+      "ko": "동물",
+      "zh": "動物",
+      "en": "animal",
+      "ja": "動物"
+    },
+    "kind": "normal",
+    "display_n": 228
+  },
+  {
+    "word": "vật lý",
+    "hanja": "物理",
+    "meaning": {
+      "ko": "물리",
+      "zh": "物理",
+      "en": "physics",
+      "ja": "物理"
+    },
+    "kind": "base",
+    "display_n": 229
+  },
+  {
+    "n": 198,
+    "word": "vật lý học",
+    "hanja": "物理學",
+    "meaning": {
+      "ko": "물리학",
+      "zh": "物理學",
+      "en": "physics",
+      "ja": "物理学"
+    },
+    "kind": "compound",
+    "parts": [
+      "vật lý"
+    ],
+    "display_n": 230
+  },
+  {
+    "n": 199,
+    "word": "học lực",
+    "hanja": "學力",
+    "meaning": {
+      "ko": "학력",
+      "zh": "學歷",
+      "en": "educational background",
+      "ja": "学歴"
+    },
+    "kind": "normal",
+    "display_n": 231
+  },
+  {
+    "n": 200,
+    "word": "lực lượng",
+    "hanja": "力量",
+    "meaning": {
+      "ko": "세력·병력",
+      "zh": "勢力·兵力",
+      "en": "power, military force",
+      "ja": "勢力·兵力"
+    },
+    "kind": "normal",
+    "display_n": 232
+  }
+]

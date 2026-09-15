@@ -1,0 +1,1037 @@
+{
+  "베트남어 학습반": {
+    "zh": "越南語學習班",
+    "en": "Vietnamese Language Course",
+    "ja": "ベトナム語学習会"
+  },
+  "한국어": {
+    "zh": "한국어",
+    "en": "한국어",
+    "ja": "한국어"
+  },
+  "교과": {
+    "zh": "教材",
+    "en": "Curriculum",
+    "ja": "教材"
+  },
+  "발음": {
+    "zh": "發音",
+    "en": "Pronunciation",
+    "ja": "発音"
+  },
+  "성경": {
+    "zh": "聖經",
+    "en": "Bible",
+    "ja": "聖書"
+  },
+  "대화": {
+    "zh": "對話",
+    "en": "Dialogue",
+    "ja": "会話"
+  },
+  "어휘": {
+    "zh": "詞彙",
+    "en": "Vocabulary",
+    "ja": "語彙"
+  },
+  "문법": {
+    "zh": "文法",
+    "en": "Grammar",
+    "ja": "文法"
+  },
+  "복습": {
+    "zh": "複習",
+    "en": "Review",
+    "ja": "復習"
+  },
+  "학습반 교과 자료": {
+    "zh": "學習班教材資料",
+    "en": "Class Curriculum Materials",
+    "ja": "学習会教材資料"
+  },
+  "16주 과정 목차, 베트남 문화 이야기, 기도와 노래까지 — 학습반 교재의 자료를 모아 뒀어요. 제공 연설은 호칭·대화 탭, 성경 인명 사전·기본 단어는 어휘 탭, 범용 언어 생성표·문법 특강은 문법·작문 탭에 있어요.": {
+    "zh": "從16週課程目錄、越南文化故事，到禱告與歌曲——這裡收集了學習班教材的所有資料。提供見證的內容在「稱呼‧對話」分頁，聖經人名辭典和基本詞彙在「詞彙」分頁，通用語言生成表和文法特別課程在「文法」分頁。",
+    "en": "From the 16-week course outline and stories about Vietnamese culture to prayers and songs — all the class materials are gathered here. The offer talks are under the Dialogue tab, the Bible name dictionary and basic vocabulary are under the Vocabulary tab, and the general sentence-pattern chart and grammar features are under the Grammar tab.",
+    "ja": "16週間コースの目次、ベトナムの文化についての話、祈りと歌まで――学習会教材の資料がここにまとめられています。提供のことばは「呼び方・会話」タブに、聖書人名辞典と基本単語は「語彙」タブに、汎用文型表と文法特別レッスンは「文法・作文」タブにあります。"
+  },
+  "16주 과정": {
+    "zh": "16週課程",
+    "en": "16-Week Course",
+    "ja": "16週間コース"
+  },
+  "문화": {
+    "zh": "文化",
+    "en": "Culture",
+    "ja": "文化"
+  },
+  "노래·기도": {
+    "zh": "歌曲‧禱告",
+    "en": "Songs & Prayer",
+    "ja": "歌・祈り"
+  },
+  "베트남 사람을 만났을 때": {
+    "zh": "遇到越南人的時候",
+    "en": "When You Meet a Vietnamese Person",
+    "ja": "ベトナム人に会ったとき"
+  },
+  "몇 가지만 답하면, 첫인사부터 자기소개·연락처 교환·재방문·집회 초대·성서 연구 사회까지 실제로 쓸 수 있는 베트남어 대화문을 보여 드려요.": {
+    "zh": "只要回答幾個問題，就能看到從打招呼、自我介紹、交換聯絡方式，到重訪、邀請聚會、主持聖經研究都能實際使用的越南語對話。",
+    "en": "Answer just a few questions and you'll get real Vietnamese dialogues you can use — from the first greeting and self-introduction to exchanging contact info, callbacks, meeting invitations, and even conducting a Bible study.",
+    "ja": "いくつか質問に答えるだけで、最初のあいさつから自己紹介・連絡先交換・再訪問・集会への招待・聖書研究の司会まで、実際に使えるベトナム語の会話文をご紹介します。"
+  },
+  "복습 게임으로 연습하기": {
+    "zh": "用複習遊戲來練習",
+    "en": "Practice with Review Games",
+    "ja": "復習ゲームで練習する"
+  },
+  "호칭": {
+    "zh": "稱呼",
+    "en": "Terms of Address",
+    "ja": "呼び方"
+  },
+  "제공 연설": {
+    "zh": "提供見證",
+    "en": "Offer Talks",
+    "ja": "提供のことば"
+  },
+  "참여자 정보": {
+    "zh": "參與者資訊",
+    "en": "Participant Info",
+    "ja": "参加者情報"
+  },
+  "(입력하면 대화·제공 연설에 자동 반영돼요)": {
+    "zh": "（輸入後會自動套用到對話與提供見證）",
+    "en": "(Enter these and they'll automatically apply to Dialogue and Offer Talks)",
+    "ja": "（入力すると会話・提供のことばに自動的に反映されます）"
+  },
+  "나": {
+    "zh": "我",
+    "en": "Me",
+    "ja": "自分"
+  },
+  "한국어 이름": {
+    "zh": "中文姓名",
+    "en": "Name",
+    "ja": "日本語の名前"
+  },
+  "베트남어 이름": {
+    "zh": "越南語姓名",
+    "en": "Vietnamese Name",
+    "ja": "ベトナム語の名前"
+  },
+  "성별": {
+    "zh": "性別",
+    "en": "Gender",
+    "ja": "性別"
+  },
+  "형제": {
+    "zh": "弟兄",
+    "en": "Brother",
+    "ja": "兄弟"
+  },
+  "자매": {
+    "zh": "姊妹",
+    "en": "Sister",
+    "ja": "姉妹"
+  },
+  "나이": {
+    "zh": "年齡",
+    "en": "Age",
+    "ja": "年齢"
+  },
+  "전화번호": {
+    "zh": "電話號碼",
+    "en": "Phone Number",
+    "ja": "電話番号"
+  },
+  "결혼": {
+    "zh": "婚姻狀況",
+    "en": "Marital Status",
+    "ja": "結婚"
+  },
+  "미혼": {
+    "zh": "未婚",
+    "en": "Single",
+    "ja": "未婚"
+  },
+  "기혼": {
+    "zh": "已婚",
+    "en": "Married",
+    "ja": "既婚"
+  },
+  "봉사짝": {
+    "zh": "傳道夥伴",
+    "en": "Ministry Companion",
+    "ja": "奉仕の相手"
+  },
+  "베트남어를 잘하는 형제·자매": {
+    "zh": "越南語流利的弟兄姊妹",
+    "en": "A brother or sister who speaks Vietnamese well",
+    "ja": "ベトナム語が上手な兄弟姉妹"
+  },
+  "상대방의 성별은?": {
+    "zh": "對方的性別是？",
+    "en": "What is the other person's gender?",
+    "ja": "相手の性別は？"
+  },
+  "남성": {
+    "zh": "男性",
+    "en": "Male",
+    "ja": "男性"
+  },
+  "여성": {
+    "zh": "女性",
+    "en": "Female",
+    "ja": "女性"
+  },
+  "상대방의 나이는 나와 비교하면?": {
+    "zh": "對方的年齡跟我相比？",
+    "en": "How does the other person's age compare to yours?",
+    "ja": "相手の年齢は自分と比べてどうですか？"
+  },
+  "나보다 어림 — 동생뻘": {
+    "zh": "比我小——像弟妹一樣",
+    "en": "Younger than me — like a younger sibling",
+    "ja": "自分より年下 — 弟や妹のような存在"
+  },
+  "나와 비슷함 — 동갑": {
+    "zh": "跟我差不多——同年齡",
+    "en": "About the same as me — peers",
+    "ja": "自分と同じくらい — 同い年"
+  },
+  "나보다 많음 — 형·오빠·누나·언니뻘": {
+    "zh": "比我大——像哥哥姊姊一樣",
+    "en": "Older than me — like an older sibling",
+    "ja": "自分より年上 — 兄や姉のような存在"
+  },
+  "나보다 훨씬 많음 — 삼촌·이모뻘": {
+    "zh": "比我大很多——像叔叔阿姨一樣",
+    "en": "Much older than me — like an aunt or uncle",
+    "ja": "自分よりずっと年上 — おじやおばのような存在"
+  },
+  "내 부모님보다는 젊은 분": {
+    "zh": "比我父母年輕的長輩",
+    "en": "Younger than my parents",
+    "ja": "自分の両親より若い方"
+  },
+  "내 부모님 또래이거나 더 많음": {
+    "zh": "跟我父母差不多或更年長",
+    "en": "About my parents' age or older",
+    "ja": "自分の両親と同じ世代か、それ以上"
+  },
+  "내가 상대방의 삼촌, 이모뻘": {
+    "zh": "我像對方的叔叔、阿姨一樣",
+    "en": "I'm like an aunt or uncle to them",
+    "ja": "自分が相手にとっておじやおばのような存在"
+  },
+  "내가 상대보다 훨씬 연장자": {
+    "zh": "我比對方年長很多",
+    "en": "I'm much older than them",
+    "ja": "自分が相手よりずっと年上"
+  },
+  "내가 상대방의 부모보다 나이가 많음": {
+    "zh": "我比對方的父母年長",
+    "en": "I'm older than their parents",
+    "ja": "自分が相手の両親より年上"
+  },
+  "처음 만나서 나이를 잘 모름": {
+    "zh": "初次見面，不太清楚年齡",
+    "en": "Just met, don't know their age well",
+    "ja": "初対面で、年齢がよくわからない"
+  },
+  "아직 친하지 않아 거리를 두고 예의를 차릴 때": {
+    "zh": "還不熟，需要保持距離、有禮貌相待時",
+    "en": "Not close yet, so keeping a polite distance",
+    "ja": "まだ親しくなく、距離を置いて丁寧に接するとき"
+  },
+  "상대방의 연령대는요?": {
+    "zh": "對方大概是哪個年齡層？",
+    "en": "What's the other person's approximate age range?",
+    "ja": "相手の年齢層は？"
+  },
+  "20~30대로 보임": {
+    "zh": "看起來20～30多歲",
+    "en": "Looks to be in their 20s–30s",
+    "ja": "20～30代に見える"
+  },
+  "40~70대로 보임": {
+    "zh": "看起來40～70多歲",
+    "en": "Looks to be in their 40s–70s",
+    "ja": "40～70代に見える"
+  },
+  "80대 이상으로 보임": {
+    "zh": "看起來80歲以上",
+    "en": "Looks to be 80 or older",
+    "ja": "80代以上に見える"
+  },
+  "베트남인은 상대방과 친해질 생각이 전혀 없는 경우가 아니라면 신속히 통성명하고, 나이를 묻고, 상대방과 나의 나이 차이에 따른 호칭을 사용하는 것이 아주 일상적이에요. 계속 \"나\"·\"tôi\"라는 단어를 사용한다면 상대방과 친해지기 어려워요.": {
+    "zh": "越南人只要不是完全不想跟對方熟識，通常都會很快互相報上姓名、詢問年齡，並依照彼此的年齡差距使用相應的稱呼，這是非常普遍的做法。如果一直使用「我」·「tôi」這個字，會很難跟對方拉近距離。",
+    "en": "Unless a Vietnamese person has no interest at all in getting to know someone, it's very common for them to quickly exchange names, ask each other's age, and then use the term of address that fits their age difference. If you keep using the plain word for \"I\" — \"tôi\" — it's hard to grow close to the other person.",
+    "ja": "ベトナムの人は、相手と親しくなるつもりが全くない場合でない限り、すぐに名前を名乗り合い、年齢を尋ね合い、お互いの年齢差に応じた呼び方を使うのがとても一般的です。ずっと「私」・「tôi」という言葉を使い続けると、相手と親しくなりにくくなります。"
+  },
+  "상대방은 베트남 어느 지역 사람인가요?": {
+    "zh": "對方是越南哪個地區的人？",
+    "en": "Which region of Vietnam is the other person from?",
+    "ja": "相手はベトナムのどの地域の方ですか？"
+  },
+  "북부": {
+    "zh": "北部",
+    "en": "North",
+    "ja": "北部"
+  },
+  "하노이 등": {
+    "zh": "河內等地",
+    "en": "Hanoi, etc.",
+    "ja": "ハノイなど"
+  },
+  "남부": {
+    "zh": "南部",
+    "en": "South",
+    "ja": "南部"
+  },
+  "호찌민 등": {
+    "zh": "胡志明市等地",
+    "en": "Ho Chi Minh City, etc.",
+    "ja": "ホーチミンなど"
+  },
+  "상황별 호칭을 한눈에 확인할 수 있어요. 굵은 글씨가 상대를 부르는 말, 그 옆이 나를 가리키는 말입니다.": {
+    "zh": "可以一目了然地查看各種情境下的稱呼。粗體字是稱呼對方的用語，旁邊是稱呼自己的用語。",
+    "en": "See the terms of address for every situation at a glance. The bold word is what you call the other person; next to it is what you call yourself.",
+    "ja": "状況別の呼び方が一目でわかります。太字が相手を呼ぶ言葉、その横が自分を指す言葉です。"
+  },
+  "아래에서 나와 상대방의 관계를 선택하면, 제공 연설 대화문 속 \"저는(tôi)\"·\"당신은(bạn)\" 표현이 실제 상황에 맞는 호칭으로 자동으로 바뀌어요. 아직 선택하지 않았다면 원문 그대로 tôi·bạn으로 표시돼요.": {
+    "zh": "在下面選擇我和對方的關係後，提供見證對話中的「我(tôi)」·「您(bạn)」用語就會自動換成符合實際情境的稱呼。如果還沒選擇，就會維持原文的 tôi·bạn。",
+    "en": "Choose the relationship between you and the other person below, and the words \"I (tôi)\" and \"you (bạn)\" in the offer-talk dialogue will automatically switch to the terms of address that fit the actual situation. Until you choose, they'll stay as the original tôi and bạn.",
+    "ja": "下で自分と相手の関係を選ぶと、提供トークの会話文にある「私は(tôi)」・「あなたは(bạn)」という表現が、実際の状況に合った呼び方に自動的に変わります。まだ選択していない場合は、原文のまま tôi・bạn と表示されます。"
+  },
+  "나는 어느 쪽인가요?": {
+    "zh": "我是哪一邊？",
+    "en": "Which side are you on?",
+    "ja": "自分はどちらですか？"
+  },
+  "다시 선택": {
+    "zh": "重新選擇",
+    "en": "Choose Again",
+    "ja": "選び直す"
+  },
+  "베트남어 어휘": {
+    "zh": "越南語詞彙",
+    "en": "Vietnamese Vocabulary",
+    "ja": "ベトナム語彙"
+  },
+  "한자어 대응표, 신권 용어, 자주 사용하는 단어까지 어휘 학습 자료를 한곳에 모았어요. 한국 한자음과 대응하는 경우가 많아, 알고 나면 새 단어를 훨씬 쉽게 외울 수 있어요.": {
+    "zh": "從漢字對應表、聖工用語，到常用單字，詞彙學習資料都集中在這裡。",
+    "en": "Hanja-cognate charts, theocratic terms, and common everyday words — all the vocabulary material is gathered in one place.",
+    "ja": "漢字語対応表や神権用語から、よく使う単語まで、語彙学習の資料をここに集めました。日本語の漢字音と対応することが多く、覚えると新しい単語をぐっと覚えやすくなります。"
+  },
+  "한자음": {
+    "zh": "漢字音",
+    "en": "Sino-Vietnamese",
+    "ja": "漢越音"
+  },
+  "동일음": {
+    "zh": "同音字",
+    "en": "Same Sound",
+    "ja": "同音"
+  },
+  "기본": {
+    "zh": "基本",
+    "en": "Basic",
+    "ja": "基本"
+  },
+  "반의": {
+    "zh": "反義",
+    "en": "Antonyms",
+    "ja": "反意語"
+  },
+  "상용": {
+    "zh": "常用",
+    "en": "Frequent",
+    "ja": "常用"
+  },
+  "신권": {
+    "zh": "聖工",
+    "en": "Theocratic",
+    "ja": "神権"
+  },
+  "인명": {
+    "zh": "人名",
+    "en": "Names",
+    "ja": "人名"
+  },
+  "끝말": {
+    "zh": "字尾",
+    "en": "Word Chain",
+    "ja": "しりとり"
+  },
+  "남북 단어": {
+    "zh": "南北用詞",
+    "en": "North/South Words",
+    "ja": "南北の単語"
+  },
+  "발음·성조·문자 기초": {
+    "zh": "發音‧聲調‧文字基礎",
+    "en": "Pronunciation, Tone & Alphabet Basics",
+    "ja": "発音・声調・文字の基礎"
+  },
+  "베트남어를 처음 배우는 분을 위한 기초 발음표예요. 16주 학습반 교재를 바탕으로 정리했습니다.": {
+    "zh": "這是為初學越南語的人準備的基礎發音表，根據16週學習班教材整理而成。",
+    "en": "A basic pronunciation chart for those just starting to learn Vietnamese, compiled from the 16-week class materials.",
+    "ja": "ベトナム語を初めて学ぶ方のための基礎発音表です。16週学習班の教材を基に作成しました。"
+  },
+  "설정": {
+    "zh": "設定",
+    "en": "Setup",
+    "ja": "設定"
+  },
+  "문자": {
+    "zh": "文字",
+    "en": "Alphabet",
+    "ja": "文字"
+  },
+  "모음": {
+    "zh": "母音",
+    "en": "Vowels",
+    "ja": "母音"
+  },
+  "자음": {
+    "zh": "子音",
+    "en": "Consonants",
+    "ja": "子音"
+  },
+  "성조": {
+    "zh": "聲調",
+    "en": "Tones",
+    "ja": "声調"
+  },
+  "연속 성조": {
+    "zh": "聲調組合",
+    "en": "Tone Pairs",
+    "ja": "声調の組み合わせ"
+  },
+  "남북 발음": {
+    "zh": "南北發音",
+    "en": "North/South Pronunciation",
+    "ja": "南北の発音"
+  },
+  "성경 책 이름 · 숫자 읽기": {
+    "zh": "聖經書卷名稱‧數字讀法",
+    "en": "Bible Book Names & Number Reading",
+    "ja": "聖書の書名・数字の読み方"
+  },
+  "신세계역 성경의 베트남어 책 이름을 한국어와 나란히 두고 발음을 들어 보세요. 숫자 탭에는 1~100, 1,000~10억, 144,000까지 숫자 읽는 법이 있어요.": {
+    "zh": "把《新世界譯本》聖經的越南語書卷名稱和中文並列，聽聽看發音。「數字」分頁裡有1～100、1,000～10億，以及144,000的讀法。",
+    "en": "See the Vietnamese New World Translation Bible book names side by side and listen to the pronunciation. The Numbers tab covers how to read 1–100, 1,000 to 1 billion, and 144,000.",
+    "ja": "「新世界訳」聖書のベトナム語の書名を日本語と並べて表示し、発音を聞くことができます。「数字」タブには1～100、1,000～10億、144,000までの数字の読み方があります。"
+  },
+  "숫자": {
+    "zh": "數字",
+    "en": "Numbers",
+    "ja": "数字"
+  },
+  "달과 요일": {
+    "zh": "月份與星期",
+    "en": "Months & Days",
+    "ja": "月と曜日"
+  },
+  "문법 및 작문 연습": {
+    "zh": "文法與造句練習",
+    "en": "Grammar & Sentence Practice",
+    "ja": "文法・作文練習"
+  },
+  "가장 짧은 문장에서 시작해 한 단어씩 늘려 가며, 한국어와 베트남어의 어순 차이를 몸에 익혀요.": {
+    "zh": "從最短的句子開始，一個字一個字地增加，親身體會中文和越南語語序的差異。",
+    "en": "Start with the shortest sentences and add one word at a time, so you get a feel for the word-order differences between your language and Vietnamese.",
+    "ja": "一番短い文から始めて、一語ずつ増やしながら、日本語とベトナム語の語順の違いを体で覚えましょう。"
+  },
+  "예문": {
+    "zh": "例句",
+    "en": "Examples",
+    "ja": "例文"
+  },
+  "특강": {
+    "zh": "特別課程",
+    "en": "Special Topics",
+    "ja": "特別講座"
+  },
+  "범용 언어 생성표": {
+    "zh": "通用語言生成表",
+    "en": "General Sentence Chart",
+    "ja": "汎用文生成表"
+  },
+  "문장 생성기": {
+    "zh": "造句產生器",
+    "en": "Sentence Builder",
+    "ja": "文章ジェネレーター"
+  },
+  "단어를 카테고리별로 골라 보세요. 비워 두면(선택 안 함) 그 부분 없이 문장이 만들어져요. 완성을 누르면 한국어 어순에서 베트남어 어순으로 단어가 자동으로 움직이는 걸 볼 수 있어요.": {
+    "zh": "請依類別挑選單字。如果留白（不選）就會做出沒有那個部分的句子。按下完成後，可以看到單字自動從原本的語序移動到越南語語序。",
+    "en": "Pick words by category. Leave a category blank and the sentence is built without that part. Press Done to see the words automatically move from your language's word order into Vietnamese word order.",
+    "ja": "カテゴリーごとに単語を選んでください。空欄のまま（選択しない）にすると、その部分を除いた文が作られます。「完成」を押すと、日本語の語順からベトナム語の語順へ単語が自動的に移動する様子を見ることができます。"
+  },
+  "문장 만들기": {
+    "zh": "造句",
+    "en": "Build a Sentence",
+    "ja": "文章を作る"
+  },
+  "복습 게임": {
+    "zh": "複習遊戲",
+    "en": "Review Games",
+    "ja": "復習ゲーム"
+  },
+  "플래시카드·듣기 4지선다·어순 배열·받아쓰기로 배운 내용을 복습하세요. 아래에서 복습할 영역을 먼저 골라 보세요.": {
+    "zh": "透過字卡、聽力四選一、排列語序、聽寫來複習所學內容。請先在下面選擇要複習的範圍。",
+    "en": "Review what you've learned with flashcards, listening multiple-choice, word-order arrangement, and dictation. First pick which area to review below.",
+    "ja": "フラッシュカード、リスニング四択、語順並べ替え、書き取りで学んだ内容を復習しましょう。まず下から復習する分野を選んでください。"
+  },
+  "플래시카드": {
+    "zh": "字卡",
+    "en": "Flashcards",
+    "ja": "フラッシュカード"
+  },
+  "듣기 4지선다": {
+    "zh": "聽力四選一",
+    "en": "Listening Quiz",
+    "ja": "リスニング四択"
+  },
+  "어순 배열": {
+    "zh": "排列語序",
+    "en": "Word Order",
+    "ja": "語順並べ替え"
+  },
+  "받아쓰기": {
+    "zh": "聽寫",
+    "en": "Dictation",
+    "ja": "書き取り"
+  },
+  "형제·자매 베트남어 대화 확장훈련(남/북부), 16주 학습반 교과과정, 한자어 어휘 자료를 통합해 만들었습니다.": {
+    "zh": "整合了弟兄姊妹越南語對話延伸訓練（南／北部）、16週學習班課程、漢字詞彙資料製作而成。",
+    "en": "Built by combining extended Vietnamese-dialogue training for brothers and sisters (North/South), the 16-week class curriculum, and Sino-Vietnamese vocabulary resources.",
+    "ja": "兄弟姉妹のためのベトナム語会話拡張トレーニング（南部／北部）、16週学習班のカリキュラム、漢越語彙資料を統合して作成しました。"
+  },
+  "언어 선택 / 選擇語言 / Language": {
+    "zh": "언어 선택 / 選擇語言 / Language",
+    "en": "언어 선택 / 選擇語言 / Language",
+    "ja": "언어 선택 / 選擇語言 / Language"
+  },
+  "주요 메뉴": {
+    "zh": "主要選單",
+    "en": "Main Menu",
+    "ja": "メインメニュー"
+  },
+  "베트남어 단어나 한국어 뜻으로 검색": {
+    "zh": "用越南語單字或中文意思搜尋",
+    "en": "Search by Vietnamese word or English meaning",
+    "ja": "ベトナム語の単語または日本語の意味で検索"
+  },
+  "성경책 이름으로 검색 (베트남어·한국어)": {
+    "zh": "用聖經書卷名稱搜尋（越南語‧中文）",
+    "en": "Search by Bible book name (Vietnamese/English)",
+    "ja": "聖書の書名で検索（ベトナム語・日本語）"
+  },
+  "문법 특강 검색 (베트남어·한국어)": {
+    "zh": "搜尋文法特別課程（越南語‧中文）",
+    "en": "Search grammar topics (Vietnamese/English)",
+    "ja": "文法特別講座を検索（ベトナム語・日本語）"
+  },
+  "예: 예나": {
+    "zh": "例：雅婷",
+    "en": "e.g. Amy",
+    "ja": "例：花子"
+  },
+  "예: Trang Thanh": {
+    "zh": "例：Trang Thanh",
+    "en": "e.g. Trang Thanh",
+    "ja": "例：Trang Thanh"
+  },
+  "예: 25": {
+    "zh": "例：25",
+    "en": "e.g. 25",
+    "ja": "例：25"
+  },
+  "예: 민수": {
+    "zh": "例：志豪",
+    "en": "e.g. Michael",
+    "ja": "例：太郎"
+  },
+  "예: Minh": {
+    "zh": "例：Minh",
+    "en": "e.g. Minh",
+    "ja": "例：Minh"
+  },
+  "예: 30": {
+    "zh": "例：30",
+    "en": "e.g. 30",
+    "ja": "例：30"
+  },
+  "예: 김철수": {
+    "zh": "例：王大明",
+    "en": "e.g. John Smith",
+    "ja": "例：山田太郎"
+  },
+  "예: Long": {
+    "zh": "例：Long",
+    "en": "e.g. Long",
+    "ja": "例：Long"
+  },
+  "예: 45": {
+    "zh": "例：45",
+    "en": "e.g. 45",
+    "ja": "例：45"
+  },
+  "예: 박영희": {
+    "zh": "例：林美惠",
+    "en": "e.g. Sarah Johnson",
+    "ja": "例：山田花子"
+  },
+  "예: Hoa": {
+    "zh": "例：Hoa",
+    "en": "e.g. Hoa",
+    "ja": "例：Hoa"
+  },
+  "예: 40": {
+    "zh": "例：40",
+    "en": "e.g. 40",
+    "ja": "例：40"
+  },
+  "동생뻘": {
+    "zh": "弟妹輩",
+    "en": "like a younger sibling",
+    "ja": "弟・妹くらい"
+  },
+  "동갑": {
+    "zh": "同輩",
+    "en": "peer",
+    "ja": "同い年"
+  },
+  "형·오빠·누나·언니뻘": {
+    "zh": "哥哥姊姊輩",
+    "en": "like an older sibling",
+    "ja": "兄・姉くらい"
+  },
+  "삼촌·이모뻘(상대가 연장자)": {
+    "zh": "叔叔阿姨輩（對方年長）",
+    "en": "like an aunt/uncle (they're older)",
+    "ja": "おじ・おばくらい（相手が年上）"
+  },
+  "부모님 또래 이상(상대가 연장자)": {
+    "zh": "父母輩以上（對方年長）",
+    "en": "parents' age or older (they're older)",
+    "ja": "親世代以上（相手が年上）"
+  },
+  "삼촌·이모뻘(내가 연장자)": {
+    "zh": "叔叔阿姨輩（我年長）",
+    "en": "like an aunt/uncle (I'm older)",
+    "ja": "おじ・おばくらい（自分が年上）"
+  },
+  "부모님뻘(내가 연장자)": {
+    "zh": "父母輩（我年長）",
+    "en": "parents' age (I'm older)",
+    "ja": "親世代くらい（自分が年上）"
+  },
+  "초면·예의를 갖춤": {
+    "zh": "初次見面‧有禮貌",
+    "en": "first meeting, polite",
+    "ja": "初対面・丁寧に"
+  },
+  "형·오빠": {
+    "zh": "哥哥",
+    "en": "older brother",
+    "ja": "兄"
+  },
+  "누나·언니": {
+    "zh": "姊姊",
+    "en": "older sister",
+    "ja": "姉"
+  },
+  "조카뻘": {
+    "zh": "晚輩（姪輩）",
+    "en": "like a niece/nephew",
+    "ja": "甥・姪くらい"
+  },
+  "자녀뻘(남부)": {
+    "zh": "晚輩（南部，子女輩）",
+    "en": "like one's child (South)",
+    "ja": "子どもくらい（南部）"
+  },
+  "삼촌·아저씨뻘": {
+    "zh": "叔叔‧大叔輩",
+    "en": "like an uncle",
+    "ja": "おじさんくらい"
+  },
+  "이모·고모·아주머니뻘": {
+    "zh": "阿姨‧姑姑輩",
+    "en": "like an aunt",
+    "ja": "おばさんくらい"
+  },
+  "큰아버지·큰어머니뻘 어르신": {
+    "zh": "伯父‧伯母輩長者",
+    "en": "like a respected elder (uncle/aunt)",
+    "ja": "伯父・伯母くらいの年配の方"
+  },
+  "나(또래·북부)": {
+    "zh": "我（同輩‧北部）",
+    "en": "I (peer, North)",
+    "ja": "私（同い年・北部）"
+  },
+  "너(또래·북부)": {
+    "zh": "你（同輩‧北部）",
+    "en": "you (peer, North)",
+    "ja": "あなた（同い年・北部）"
+  },
+  "나(또래·남부)": {
+    "zh": "我（同輩‧南部）",
+    "en": "I (peer, South)",
+    "ja": "私（同い年・南部）"
+  },
+  "너(또래·남부)": {
+    "zh": "你（同輩‧南部）",
+    "en": "you (peer, South)",
+    "ja": "あなた（同い年・南部）"
+  },
+  "나(중립·예의)": {
+    "zh": "我（中立‧禮貌）",
+    "en": "I (neutral, polite)",
+    "ja": "私（中立・丁寧）"
+  },
+  "나보다 어린 사람 — 동생뻘": {
+    "zh": "比我小的人——弟妹輩",
+    "en": "Someone younger than me — like a younger sibling",
+    "ja": "自分より年下の人 — 弟・妹くらい"
+  },
+  "나와 동갑 — 원자료에 없어 새로 구성": {
+    "zh": "跟我同輩——原始資料沒有，另行編寫",
+    "en": "My peers — not in the original material, newly composed",
+    "ja": "私と同い年 — 元の資料にないため、新たに作成"
+  },
+  "나보다 손위 — 형·오빠·누나·언니뻘": {
+    "zh": "比我年長的人——哥哥姊姊輩",
+    "en": "Someone older than me — like an older sibling",
+    "ja": "私より年上 — 兄や姉にあたる人"
+  },
+  "삼촌·이모뻘 — 내 아버지·어머니보다는 젊은 분(상대가 연장자)": {
+    "zh": "叔叔阿姨輩——比我父母年輕的長輩（對方年長）",
+    "en": "Like an aunt/uncle — younger than my parents (they're older)",
+    "ja": "おじ・おばにあたる方 — 私の父母より若い方（相手が年上）"
+  },
+  "부모님 또래이거나 더 많으신 분(상대가 연장자)": {
+    "zh": "跟父母同輩或更年長（對方年長）",
+    "en": "About my parents' age or older (they're older)",
+    "ja": "両親と同世代か、それ以上の方（相手が年上）"
+  },
+  "삼촌·이모뻘 — 내가 상대방보다 훨씬 연장자": {
+    "zh": "叔叔阿姨輩——我比對方年長很多",
+    "en": "Like an aunt/uncle — I'm much older than them",
+    "ja": "おじ・おばにあたる方 — 私が相手よりずっと年上"
+  },
+  "내가 상대방 부모보다 나이가 많음": {
+    "zh": "我比對方的父母年長",
+    "en": "I'm older than their parents",
+    "ja": "私が相手の親より年上"
+  },
+  "내가 형제일 때": {
+    "zh": "我是弟兄時",
+    "en": "When I'm a brother",
+    "ja": "私が兄弟の場合"
+  },
+  "내가 자매일 때": {
+    "zh": "我是姊妹時",
+    "en": "When I'm a sister",
+    "ja": "私が姉妹の場合"
+  },
+  "상대가 남성일 때": {
+    "zh": "對方是男性時",
+    "en": "When they're male",
+    "ja": "相手が男性の場合"
+  },
+  "상대가 여성일 때": {
+    "zh": "對方是女性時",
+    "en": "When they're female",
+    "ja": "相手が女性の場合"
+  },
+  "상대가 남성 · 북부": {
+    "zh": "對方是男性‧北部",
+    "en": "Male, North",
+    "ja": "相手が男性・北部"
+  },
+  "상대가 남성 · 남부": {
+    "zh": "對方是男性‧南部",
+    "en": "Male, South",
+    "ja": "相手が男性・南部"
+  },
+  "상대가 여성 · 북부": {
+    "zh": "對方是女性‧北部",
+    "en": "Female, North",
+    "ja": "相手が女性・北部"
+  },
+  "상대가 여성 · 남부": {
+    "zh": "對方是女性‧南部",
+    "en": "Female, South",
+    "ja": "相手が女性・南部"
+  },
+  "내가 남성 · 북부": {
+    "zh": "我是男性‧北部",
+    "en": "I'm male, North",
+    "ja": "私が男性・北部"
+  },
+  "내가 남성 · 남부": {
+    "zh": "我是男性‧南部",
+    "en": "I'm male, South",
+    "ja": "私が男性・南部"
+  },
+  "내가 여성 · 북부": {
+    "zh": "我是女性‧北部",
+    "en": "I'm female, North",
+    "ja": "私が女性・北部"
+  },
+  "내가 여성 · 남부": {
+    "zh": "我是女性‧南部",
+    "en": "I'm female, South",
+    "ja": "私が女性・南部"
+  },
+  "상대가 20~30대 남성": {
+    "zh": "對方是20～30多歲男性",
+    "en": "Male, 20s–30s",
+    "ja": "相手が20~30代の男性"
+  },
+  "상대가 20~30대 여성": {
+    "zh": "對方是20～30多歲女性",
+    "en": "Female, 20s–30s",
+    "ja": "相手が20~30代の女性"
+  },
+  "상대가 40~70대 남성": {
+    "zh": "對方是40～70多歲男性",
+    "en": "Male, 40s–70s",
+    "ja": "相手が40~70代の男性"
+  },
+  "상대가 40~70대 여성": {
+    "zh": "對方是40～70多歲女性",
+    "en": "Female, 40s–70s",
+    "ja": "相手が40~70代の女性"
+  },
+  "상대가 80대 이상": {
+    "zh": "對方是80歲以上",
+    "en": "80 or older",
+    "ja": "相手が80代以上"
+  },
+  "상대를 부를 때": {
+    "zh": "稱呼對方時",
+    "en": "When addressing them",
+    "ja": "相手を呼ぶとき"
+  },
+  "나를 가리킬 때": {
+    "zh": "稱呼自己時",
+    "en": "When referring to yourself",
+    "ja": "自分を指すとき"
+  },
+  "문장 끝: ": {
+    "zh": "句尾：",
+    "en": "End of sentence: ",
+    "ja": "文末: "
+  },
+  "대답 시작: ": {
+    "zh": "回答開頭：",
+    "en": "Start of reply: ",
+    "ja": "返事の始め: "
+  },
+  "<b>ạ</b> (존대)": {
+    "zh": "<b>ạ</b>（敬語）",
+    "en": "<b>ạ</b> (polite)",
+    "ja": "<b>ạ</b>（敬語）"
+  },
+  "<b>없음</b> (편하게)": {
+    "zh": "<b>沒有</b>（隨意）",
+    "en": "<b>None</b> (casual)",
+    "ja": "<b>なし</b>（気軽に）"
+  },
+  "<b>없음</b>": {
+    "zh": "<b>沒有</b>",
+    "en": "<b>None</b>",
+    "ja": "<b>なし</b>"
+  },
+  "<b>dạ</b> (네)": {
+    "zh": "<b>dạ</b>（是）",
+    "en": "<b>dạ</b> (yes)",
+    "ja": "<b>dạ</b>（はい）"
+  },
+  "발음 듣기": {
+    "zh": "播放發音",
+    "en": "Play pronunciation",
+    "ja": "発音を聞く"
+  },
+  "눌러서 뜻 보기": {
+    "zh": "點一下看意思",
+    "en": "Tap to reveal meaning",
+    "ja": "タップして意味を見る"
+  },
+  "눌러서 가리기": {
+    "zh": "點一下遮住",
+    "en": "Tap to hide",
+    "ja": "タップして隠す"
+  },
+  "남성 형제": {
+    "zh": "男性弟兄",
+    "en": "a brother",
+    "ja": "男性の兄弟"
+  },
+  "여성 자매": {
+    "zh": "女性姊妹",
+    "en": "a sister",
+    "ja": "女性の姉妹"
+  },
+  "장로 형제": {
+    "zh": "長老弟兄",
+    "en": "Elder Brother",
+    "ja": "長老の兄弟"
+  },
+  "파이오니아 자매": {
+    "zh": "先驅姊妹",
+    "en": "Pioneer Sister",
+    "ja": "開拓者の姉妹"
+  },
+  "이성과의 만남이에요. 인사와 소개 후에는 같은 성별의 동료(": {
+    "zh": "這是異性會面。打過招呼、做完自我介紹後，最好把聯絡方式轉交給同性別的同伴（",
+    "en": "This is a meeting with someone of the opposite sex. After greeting and introducing yourself, it's best to hand off contact info to a same-gender companion (",
+    "ja": "異性との面会です。挨拶と自己紹介を済ませたら、同性の奉仕の仲間（"
+  },
+  ")에게 연락처를 전달하고, 재방문·성서 연구는 그 동료와 함께 진행하는 것이 좋아요.": {
+    "zh": "），並和該同伴一起進行重訪和聖經研究。",
+    "en": ") and have that person join you for the callback and Bible study.",
+    "ja": "）に連絡先を渡し、再訪問・聖書研究はその仲間と一緒に行うとよいでしょう。"
+  },
+  "봉사짝 호칭: ": {
+    "zh": "傳道夥伴稱呼：",
+    "en": "Companion's term of address: ",
+    "ja": "奉仕の仲間の呼び方： "
+  },
+  "이전 단계": {
+    "zh": "上一步",
+    "en": "Previous",
+    "ja": "前へ"
+  },
+  "다음 단계": {
+    "zh": "下一步",
+    "en": "Next",
+    "ja": "次へ"
+  },
+  "아직 참여자 정보가 입력되지 않았어요. 입력하면 위 대화문의 이름·전화번호·나이·호칭이 자동으로 채워져요.": {
+    "zh": "還沒輸入參與者資訊。輸入後，上面對話中的姓名‧電話號碼‧年齡‧稱呼會自動填入。",
+    "en": "No participant info entered yet. Fill it in and the name, phone number, age, and terms of address in the dialogue above will fill in automatically.",
+    "ja": "まだ参加者情報が入力されていません。入力すると、上の会話文の名前・電話番号・年齢・呼び方が自動的に入力されます。"
+  },
+  "대화 탭에서 참여자 정보 입력하기 →": {
+    "zh": "到「對話」分頁輸入參與者資訊 →",
+    "en": "Enter participant info in the Dialogue tab →",
+    "ja": "「会話」タブで参加者情報を入力する →"
+  },
+  "대화 탭에서 참여자 정보 수정하기 →": {
+    "zh": "到「對話」分頁修改參與者資訊 →",
+    "en": "Edit participant info in the Dialogue tab →",
+    "ja": "「会話」タブで参加者情報を編集する →"
+  },
+  "이름 미입력": {
+    "zh": "尚未輸入姓名",
+    "en": "No name entered",
+    "ja": "名前未入力"
+  },
+  "호칭 ": {
+    "zh": "稱呼 ",
+    "en": "Address: ",
+    "ja": "呼び方 "
+  },
+  "세": {
+    "zh": "歲",
+    "en": " y/o",
+    "ja": "歳"
+  },
+  "이전 카드": {
+    "zh": "上一張卡片",
+    "en": "Previous card",
+    "ja": "前のカード"
+  },
+  "다시 듣기": {
+    "zh": "重新播放",
+    "en": "Play again",
+    "ja": "もう一度聞く"
+  },
+  "섞기": {
+    "zh": "洗牌",
+    "en": "Shuffle",
+    "ja": "シャッフル"
+  },
+  "다음 카드": {
+    "zh": "下一張卡片",
+    "en": "Next card",
+    "ja": "次のカード"
+  },
+  "듣고 알맞은 뜻을 고르세요": {
+    "zh": "聽發音，選出正確的意思",
+    "en": "Listen and choose the correct meaning",
+    "ja": "聞いて正しい意味を選んでください"
+  },
+  "다음 문제 →": {
+    "zh": "下一題 →",
+    "en": "Next →",
+    "ja": "次の問題 →"
+  },
+  "다시 담기": {
+    "zh": "重新排列",
+    "en": "Reset",
+    "ja": "リセット"
+  },
+  "정답이에요! 🎉": {
+    "zh": "答對了！🎉",
+    "en": "Correct! 🎉",
+    "ja": "正解です！🎉"
+  },
+  "순서가 달라요. 다시 시도해 보세요.": {
+    "zh": "順序不對，請再試一次。",
+    "en": "Wrong order — try again.",
+    "ja": "順序が違います。もう一度試してください。"
+  },
+  "정답: ": {
+    "zh": "正確答案：",
+    "en": "Answer: ",
+    "ja": "正解： "
+  },
+  "확인": {
+    "zh": "確認",
+    "en": "Check",
+    "ja": "確認"
+  },
+  "다시 확인해 보세요.": {
+    "zh": "請再檢查一次。",
+    "en": "Check again.",
+    "ja": "もう一度確認してください。"
+  },
+  "이 탭에는 아직 복습할 자료가 없어요.": {
+    "zh": "這個分頁還沒有可複習的資料。",
+    "en": "There's no material to review in this tab yet.",
+    "ja": "このタブにはまだ復習する内容がありません。"
+  },
+  "010-0000-0000": {
+    "zh": "0900-000-000",
+    "en": "010-0000-0000",
+    "ja": "090-0000-0000"
+  },
+  "대화 탭에서 선택한 나와 상대방의 관계에 따라, 제공 연설 대화문 속 \"저는(tôi)\"·\"당신은(bạn)\" 표현이 실제 상황에 맞는 호칭으로 자동으로 바뀌어요. 아직 선택하지 않았다면 원문 그대로 tôi·bạn으로 표시돼요.": {
+    "zh": "「提供演講」對話文中的「我是(tôi)」‧「您是(bạn)」會依照您在〔對話〕分頁中選擇的雙方關係，自動換成符合實際情況的稱呼。若尚未選擇，則會維持原文顯示為 tôi‧bạn。",
+    "en": "Based on the relationship you selected in the [Dialogue] tab, the \"I (tôi)\" / \"you (bạn)\" expressions in the offer-talk dialogue automatically change to the appropriate terms of address for that situation. If nothing has been selected yet, they stay as the original tôi/bạn.",
+    "ja": "「会話」タブで選択した自分と相手の関係に応じて、提供トークの会話文にある「私は(tôi)」・「あなたは(bạn)」という表現が、実際の状況に合った呼び方に自動的に変わります。まだ選択していない場合は、原文のまま tôi・bạn と表示されます。"
+  },
+  "현재 대화문: 상대를 부를 때 “": {
+    "zh": "目前對話文：稱呼對方時用「",
+    "en": "Current dialogue: addressing the other person as \"",
+    "ja": "現在の会話文：相手を呼ぶときは「"
+  },
+  "”, 나를 가리킬 때 “": {
+    "zh": "」，稱呼自己時用「",
+    "en": "\", and referring to yourself as \"",
+    "ja": "」、自分を指すときは「"
+  },
+  "” 로 표시돼요.": {
+    "zh": "」來顯示。",
+    "en": "\".",
+    "ja": "」と表示されます。"
+  }
+}

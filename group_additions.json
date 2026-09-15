@@ -1,0 +1,424 @@
+{
+ "none": [
+  {
+   "word": "bảo",
+   "hanja": "保",
+   "kr": "보",
+   "gloss": "지킬 보",
+   "example": "bảo vệ",
+   "example_kr": "보호(保衛)",
+   "example_mean": "보호"
+  },
+  {
+   "word": "chi",
+   "hanja": "支",
+   "kr": "지",
+   "gloss": "지탱할 지",
+   "example": "chi phí",
+   "example_kr": "비용(支費)",
+   "example_mean": "비용"
+  },
+  {
+   "word": "cơ",
+   "hanja": "機",
+   "kr": "기",
+   "gloss": "틀 기",
+   "example": "cơ hội",
+   "example_kr": "기회(機會)",
+   "example_mean": "기회"
+  },
+  {
+   "word": "cải",
+   "hanja": "改",
+   "kr": "개",
+   "gloss": "고칠 개",
+   "example": "cải cách",
+   "example_kr": "개혁(改革)",
+   "example_mean": "개혁"
+  },
+  {
+   "word": "du",
+   "hanja": "遊",
+   "kr": "유",
+   "gloss": "놀 유",
+   "example": "du lịch",
+   "example_kr": "여행(遊歷)",
+   "example_mean": "여행"
+  },
+  {
+   "word": "dự",
+   "hanja": "預",
+   "kr": "예",
+   "gloss": "미리 예",
+   "example": "dự án",
+   "example_kr": "프로젝트·사업(預案)",
+   "example_mean": "프로젝트·사업"
+  },
+  {
+   "word": "giáo",
+   "hanja": "教",
+   "kr": "교",
+   "gloss": "가르칠 교",
+   "example": "giáo dục",
+   "example_kr": "교육(教育)",
+   "example_mean": "교육"
+  },
+  {
+   "word": "giới",
+   "hanja": "介",
+   "kr": "개",
+   "gloss": "낄 개",
+   "example": "giới thiệu",
+   "example_kr": "소개(介紹)",
+   "example_mean": "소개"
+  },
+  {
+   "word": "hội",
+   "hanja": "會",
+   "kr": "회",
+   "gloss": "모일 회",
+   "example": "hội nghị",
+   "example_kr": "회의(會議)",
+   "example_mean": "회의"
+  },
+  {
+   "word": "khí",
+   "hanja": "氣",
+   "kr": "기",
+   "gloss": "기운 기",
+   "example": "khí hậu",
+   "example_kr": "기후(氣候)",
+   "example_mean": "기후"
+  },
+  {
+   "word": "kế",
+   "hanja": "計",
+   "kr": "계",
+   "gloss": "셀 계",
+   "example": "kế hoạch",
+   "example_kr": "계획(計劃)",
+   "example_mean": "계획"
+  },
+  {
+   "word": "kỹ",
+   "hanja": "技",
+   "kr": "기",
+   "gloss": "재주 기",
+   "example": "kỹ thuật",
+   "example_kr": "기술(技術)",
+   "example_mean": "기술"
+  },
+  {
+   "word": "lễ",
+   "hanja": "禮",
+   "kr": "례",
+   "gloss": "예도 례",
+   "example": "lễ hội",
+   "example_kr": "축제(禮會)",
+   "example_mean": "축제"
+  },
+  {
+   "word": "mỹ",
+   "hanja": "美",
+   "kr": "미",
+   "gloss": "아름다울 미",
+   "example": "mỹ thuật",
+   "example_kr": "미술(美術)",
+   "example_mean": "미술"
+  },
+  {
+   "word": "ngoại",
+   "hanja": "外",
+   "kr": "외",
+   "gloss": "바깥 외",
+   "example": "ngoại giao",
+   "example_kr": "외교(外交)",
+   "example_mean": "외교"
+  },
+  {
+   "word": "thu",
+   "hanja": "收",
+   "kr": "수",
+   "gloss": "거둘 수",
+   "example": "thu nhập",
+   "example_kr": "수입(收入)",
+   "example_mean": "수입"
+  },
+  {
+   "word": "thế",
+   "hanja": "世",
+   "kr": "세",
+   "gloss": "인간 세",
+   "example": "thế giới",
+   "example_kr": "세계(世界)",
+   "example_mean": "세계"
+  },
+  {
+   "word": "thể",
+   "hanja": "體",
+   "kr": "체",
+   "gloss": "몸 체",
+   "example": "thể thao",
+   "example_kr": "체육·스포츠(體操)",
+   "example_mean": "체육·스포츠"
+  },
+  {
+   "word": "thủ",
+   "hanja": "手",
+   "kr": "수",
+   "gloss": "손 수",
+   "example": "thủ tục",
+   "example_kr": "수속·절차(手續)",
+   "example_mean": "수속·절차"
+  },
+  {
+   "word": "trí",
+   "hanja": "智",
+   "kr": "지",
+   "gloss": "지혜 지",
+   "example": "trí thức",
+   "example_kr": "지식·지식인(智識)",
+   "example_mean": "지식·지식인"
+  },
+  {
+   "word": "tài",
+   "hanja": "財",
+   "kr": "재",
+   "gloss": "재물 재",
+   "example": "tài chính",
+   "example_kr": "재정·금융(財政)",
+   "example_mean": "재정·금융"
+  },
+  {
+   "word": "từ",
+   "hanja": "辭",
+   "kr": "사",
+   "gloss": "말씀 사",
+   "example": "từ điển",
+   "example_kr": "사전(辭典)",
+   "example_mean": "사전"
+  },
+  {
+   "word": "đạo",
+   "hanja": "道",
+   "kr": "도",
+   "gloss": "길 도",
+   "example": "đạo đức",
+   "example_kr": "도덕(道德)",
+   "example_mean": "도덕"
+  },
+  {
+   "word": "đầu",
+   "hanja": "投",
+   "kr": "투",
+   "gloss": "던질 투",
+   "example": "đầu tư",
+   "example_kr": "투자(投資)",
+   "example_mean": "투자"
+  },
+  {
+   "word": "đầu",
+   "hanja": "頭",
+   "kr": "두",
+   "gloss": "머리 두",
+   "example": "đầu tiên",
+   "example_kr": "첫 번째(頭先)",
+   "example_mean": "첫 번째"
+  }
+ ],
+ "n": [
+  {
+   "word": "chân",
+   "hanja": "真",
+   "kr": "진",
+   "gloss": "참 진",
+   "example": "chân thành",
+   "example_kr": "진심·성실(真誠)",
+   "example_mean": "진심·성실"
+  },
+  {
+   "word": "hiện",
+   "hanja": "現",
+   "kr": "현",
+   "gloss": "나타날 현",
+   "example": "hiện tại",
+   "example_kr": "현재(現在)",
+   "example_mean": "현재"
+  },
+  {
+   "word": "hoàn",
+   "hanja": "完",
+   "kr": "완",
+   "gloss": "완전할 완",
+   "example": "hoàn thành",
+   "example_kr": "완성·완료(完成)",
+   "example_mean": "완성·완료"
+  },
+  {
+   "word": "hôn",
+   "hanja": "婚",
+   "kr": "혼",
+   "gloss": "혼인할 혼",
+   "example": "hôn nhân",
+   "example_kr": "혼인(婚姻)",
+   "example_mean": "혼인"
+  },
+  {
+   "word": "hạn",
+   "hanja": "限",
+   "kr": "한",
+   "gloss": "한계 한",
+   "example": "hạn chế",
+   "example_kr": "제한(限制)",
+   "example_mean": "제한"
+  },
+  {
+   "word": "liên",
+   "hanja": "聯",
+   "kr": "련",
+   "gloss": "잇닿을 련",
+   "example": "liên hệ",
+   "example_kr": "연계·연락(聯繫)",
+   "example_mean": "연계·연락"
+  },
+  {
+   "word": "ngân",
+   "hanja": "銀",
+   "kr": "은",
+   "gloss": "은 은",
+   "example": "ngân hàng",
+   "example_kr": "은행(銀行)",
+   "example_mean": "은행"
+  },
+  {
+   "word": "tiến",
+   "hanja": "進",
+   "kr": "진",
+   "gloss": "나아갈 진",
+   "example": "tiến bộ",
+   "example_kr": "진보(進步)",
+   "example_mean": "진보"
+  },
+  {
+   "word": "truyền",
+   "hanja": "傳",
+   "kr": "전",
+   "gloss": "전할 전",
+   "example": "truyền thống",
+   "example_kr": "전통(傳統)",
+   "example_mean": "전통"
+  },
+  {
+   "word": "tôn",
+   "hanja": "宗",
+   "kr": "종",
+   "gloss": "마루 종",
+   "example": "tôn giáo",
+   "example_kr": "종교(宗教)",
+   "example_mean": "종교"
+  },
+  {
+   "word": "đơn",
+   "hanja": "單",
+   "kr": "단",
+   "gloss": "홑 단",
+   "example": "đơn giản",
+   "example_kr": "간단(單簡)",
+   "example_mean": "간단"
+  }
+ ],
+ "ng": [
+  {
+   "word": "hàng",
+   "hanja": "行",
+   "kr": "항",
+   "gloss": "항렬 항·줄 항",
+   "example": "hàng hóa",
+   "example_kr": "상품(行貨)",
+   "example_mean": "상품"
+  },
+  {
+   "word": "phong",
+   "hanja": "風",
+   "kr": "풍",
+   "gloss": "바람 풍",
+   "example": "phong cách",
+   "example_kr": "스타일·풍격(風格)",
+   "example_mean": "스타일·풍격"
+  },
+  {
+   "word": "sáng",
+   "hanja": "創",
+   "kr": "창",
+   "gloss": "비롯할 창",
+   "example": "sáng tạo",
+   "example_kr": "창조(創造)",
+   "example_mean": "창조"
+  },
+  {
+   "word": "thông",
+   "hanja": "通",
+   "kr": "통",
+   "gloss": "통할 통",
+   "example": "thông tin",
+   "example_kr": "정보(通信)",
+   "example_mean": "정보"
+  },
+  {
+   "word": "trang",
+   "hanja": "裝",
+   "kr": "장",
+   "gloss": "꾸밀 장",
+   "example": "trang phục",
+   "example_kr": "복장(裝服)",
+   "example_mean": "복장"
+  },
+  {
+   "word": "trình",
+   "hanja": "程",
+   "kr": "정",
+   "gloss": "한도 정",
+   "example": "trình độ",
+   "example_kr": "수준(程度)",
+   "example_mean": "수준"
+  },
+  {
+   "word": "tổng",
+   "hanja": "總",
+   "kr": "총",
+   "gloss": "다 총",
+   "example": "tổng thống",
+   "example_kr": "대통령(總統)",
+   "example_mean": "대통령"
+  }
+ ],
+ "g": [
+  {
+   "word": "dịch",
+   "hanja": "役",
+   "kr": "역",
+   "gloss": "부릴 역",
+   "example": "dịch vụ",
+   "example_kr": "서비스(役務)",
+   "example_mean": "서비스"
+  },
+  {
+   "word": "lịch",
+   "hanja": "歷",
+   "kr": "력",
+   "gloss": "지날 력",
+   "example": "lịch sử",
+   "example_kr": "역사(歷史)",
+   "example_mean": "역사"
+  },
+  {
+   "word": "tác",
+   "hanja": "作",
+   "kr": "작",
+   "gloss": "지을 작",
+   "example": "tác giả",
+   "example_kr": "작가(作者)",
+   "example_mean": "작가"
+  }
+ ]
+}

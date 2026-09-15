@@ -1,0 +1,329 @@
+{
+ "none": [
+  {
+   "word": "biểu",
+   "hanja": "表",
+   "kr": "표",
+   "gloss": "겉 표",
+   "example": "biểu hiện",
+   "example_kr": "표현(表現)",
+   "example_mean": "표현"
+  },
+  {
+   "word": "bào",
+   "hanja": "炮",
+   "kr": "포",
+   "gloss": "대포 포",
+   "example": "bào chế",
+   "example_kr": "제약·조제(炮製)",
+   "example_mean": "제약·조제"
+  },
+  {
+   "word": "chế",
+   "hanja": "製",
+   "kr": "제",
+   "gloss": "지을 제",
+   "example": "chế tạo",
+   "example_kr": "제조(製造)",
+   "example_mean": "제조"
+  },
+  {
+   "word": "diễn",
+   "hanja": "演",
+   "kr": "연",
+   "gloss": "펼 연",
+   "example": "diễn viên",
+   "example_kr": "배우(演員)",
+   "example_mean": "배우"
+  },
+  {
+   "word": "dụng",
+   "hanja": "用",
+   "kr": "용",
+   "gloss": "쓸 용",
+   "example": "dụng tâm",
+   "example_kr": "의도를 기울임(用心)",
+   "example_mean": "의도를 기울임"
+  },
+  {
+   "word": "hệ",
+   "hanja": "系",
+   "kr": "계",
+   "gloss": "맬 계",
+   "example": "hệ thống",
+   "example_kr": "체계·시스템(系統)",
+   "example_mean": "체계·시스템"
+  },
+  {
+   "word": "khoa",
+   "hanja": "科",
+   "kr": "과",
+   "gloss": "과목 과",
+   "example": "khoa học",
+   "example_kr": "과학(科學)",
+   "example_mean": "과학"
+  },
+  {
+   "word": "kỳ",
+   "hanja": "期",
+   "kr": "기",
+   "gloss": "기약할 기",
+   "example": "kỳ thi",
+   "example_kr": "시험(期試)",
+   "example_mean": "시험"
+  },
+  {
+   "word": "lao",
+   "hanja": "勞",
+   "kr": "노",
+   "gloss": "일할 노",
+   "example": "lao động",
+   "example_kr": "노동(勞動)",
+   "example_mean": "노동"
+  },
+  {
+   "word": "liệu",
+   "hanja": "療",
+   "kr": "료",
+   "gloss": "병 고칠 료",
+   "example": "liệu trình",
+   "example_kr": "치료 과정(療程)",
+   "example_mean": "치료 과정"
+  },
+  {
+   "word": "phí",
+   "hanja": "費",
+   "kr": "비",
+   "gloss": "쓸 비",
+   "example": "phí phạm",
+   "example_kr": "낭비하다(費犯)",
+   "example_mean": "낭비하다"
+  },
+  {
+   "word": "sĩ",
+   "hanja": "士",
+   "kr": "사",
+   "gloss": "선비 사",
+   "example": "sĩ quan",
+   "example_kr": "사관·장교(士官)",
+   "example_mean": "사관·장교"
+  },
+  {
+   "word": "trị",
+   "hanja": "治",
+   "kr": "치",
+   "gloss": "다스릴 치",
+   "example": "trị liệu",
+   "example_kr": "치료(治療)",
+   "example_mean": "치료"
+  },
+  {
+   "word": "trợ",
+   "hanja": "助",
+   "kr": "조",
+   "gloss": "도울 조",
+   "example": "trợ cấp",
+   "example_kr": "보조금·수당(助給)",
+   "example_mean": "보조금·수당"
+  },
+  {
+   "word": "tạo",
+   "hanja": "造",
+   "kr": "조",
+   "gloss": "지을 조",
+   "example": "tạo hóa",
+   "example_kr": "조화옹·창조주(造化)",
+   "example_mean": "조화옹·창조주"
+  },
+  {
+   "word": "tế",
+   "hanja": "細",
+   "kr": "세",
+   "gloss": "가늘 세",
+   "example": "tế bào",
+   "example_kr": "세포(細胞)",
+   "example_mean": "세포"
+  },
+  {
+   "word": "đa",
+   "hanja": "多",
+   "kr": "다",
+   "gloss": "많을 다",
+   "example": "đa khoa",
+   "example_kr": "다과·종합진료(多科)",
+   "example_mean": "다과·종합진료"
+  },
+  {
+   "word": "đô",
+   "hanja": "都",
+   "kr": "도",
+   "gloss": "도읍 도",
+   "example": "đô thị",
+   "example_kr": "도시(都市)",
+   "example_mean": "도시"
+  },
+  {
+   "word": "độ",
+   "hanja": "度",
+   "kr": "도",
+   "gloss": "법도 도",
+   "example": "độ lượng",
+   "example_kr": "도량이 넓음(度量)",
+   "example_mean": "도량이 넓음"
+  }
+ ],
+ "n": [
+  {
+   "word": "gian",
+   "hanja": "奸",
+   "kr": "간",
+   "gloss": "간사할 간",
+   "example": "gian tế",
+   "example_kr": "간첩·스파이(奸細)",
+   "example_mean": "간첩·스파이"
+  },
+  {
+   "word": "luận",
+   "hanja": "論",
+   "kr": "론",
+   "gloss": "논할 론",
+   "example": "luận văn",
+   "example_kr": "논문(論文)",
+   "example_mean": "논문"
+  },
+  {
+   "word": "viên",
+   "hanja": "員",
+   "kr": "원",
+   "gloss": "인원 원",
+   "example": "viên ngoại",
+   "example_kr": "원외(옛 지주·부호)(員外)",
+   "example_mean": "원외(옛 지주·부호)"
+  },
+  {
+   "word": "án",
+   "hanja": "案",
+   "kr": "안",
+   "gloss": "책상 안",
+   "example": "án mạng",
+   "example_kr": "살인사건(案命)",
+   "example_mean": "살인사건"
+  },
+  {
+   "word": "điển",
+   "hanja": "典",
+   "kr": "전",
+   "gloss": "법 전",
+   "example": "điển hình",
+   "example_kr": "전형적(典型)",
+   "example_mean": "전형적"
+  }
+ ],
+ "ng": [
+  {
+   "word": "cộng",
+   "hanja": "共",
+   "kr": "공",
+   "gloss": "함께 공",
+   "example": "cộng đồng",
+   "example_kr": "공동체·지역사회(共同)",
+   "example_mean": "공동체·지역사회"
+  },
+  {
+   "word": "hình",
+   "hanja": "刑",
+   "kr": "형",
+   "gloss": "형벌 형",
+   "example": "hình sự",
+   "example_kr": "형사(刑事)",
+   "example_mean": "형사"
+  },
+  {
+   "word": "năng",
+   "hanja": "能",
+   "kr": "능",
+   "gloss": "능할 능",
+   "example": "năng động",
+   "example_kr": "능동적·활동적(能動)",
+   "example_mean": "능동적·활동적"
+  },
+  {
+   "word": "phòng",
+   "hanja": "防",
+   "kr": "방",
+   "gloss": "막을 방",
+   "example": "phòng thủ",
+   "example_kr": "방어(防守)",
+   "example_mean": "방어"
+  }
+ ],
+ "g": [
+  {
+   "word": "cách",
+   "hanja": "革",
+   "kr": "혁",
+   "gloss": "가죽 혁",
+   "example": "cách mạng",
+   "example_kr": "혁명(革命)",
+   "example_mean": "혁명"
+  }
+ ],
+ "t": [
+  {
+   "word": "luật",
+   "hanja": "律",
+   "kr": "률",
+   "gloss": "법률 률",
+   "example": "luật sư",
+   "example_kr": "변호사(律師)",
+   "example_mean": "변호사"
+  },
+  {
+   "word": "triết",
+   "hanja": "哲",
+   "kr": "철",
+   "gloss": "밝을 철",
+   "example": "triết học",
+   "example_kr": "철학(哲學)",
+   "example_mean": "철학"
+  },
+  {
+   "word": "tốt",
+   "hanja": "卒",
+   "kr": "졸",
+   "gloss": "마칠 졸",
+   "example": "tốt nghiệp",
+   "example_kr": "졸업(卒業)",
+   "example_mean": "졸업"
+  }
+ ],
+ "m": [
+  {
+   "word": "nghiêm",
+   "hanja": "嚴",
+   "kr": "엄",
+   "gloss": "엄할 엄",
+   "example": "nghiêm trọng",
+   "example_kr": "중대한·심각한(嚴重)",
+   "example_mean": "중대한·심각한"
+  },
+  {
+   "word": "phạm",
+   "hanja": "犯",
+   "kr": "범",
+   "gloss": "범할 범",
+   "example": "phạm pháp",
+   "example_kr": "위법(犯法)",
+   "example_mean": "위법"
+  },
+  {
+   "word": "điểm",
+   "hanja": "點",
+   "kr": "점",
+   "gloss": "점 점",
+   "example": "điểm danh",
+   "example_kr": "출석 체크(點名)",
+   "example_mean": "출석 체크"
+  }
+ ]
+}

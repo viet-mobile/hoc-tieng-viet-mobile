@@ -1,0 +1,3008 @@
+[
+ {
+  "final_class": "받침 ㅇ (콧소리 -nh / -ng)",
+  "note": "베트남어 '-nh', '-ng'로 끝나는 한자어는 거의 예외 없이 한국 한자음 받침 'ㅇ'과 대응해요.",
+  "families": [
+   {
+    "final": "-ương",
+    "kr_note": "\"trung ương(中央, 중앙)\"의 'ương'처럼, 한국 한자음 '-앙' 계열(앙·강·량·방·상·당·장 등, 모두 'ㅏㅇ/ㅑㅇ'으로 끝남)과 대응해요.",
+    "words": [
+     {
+      "word": "cường",
+      "hanja": "強",
+      "kr": "강",
+      "gloss": "강할 강",
+      "example": "cường độ",
+      "example_kr": "강도(強度)",
+      "example_mean": "세기·정도"
+     },
+     {
+      "word": "cưỡng",
+      "hanja": "強",
+      "kr": "강",
+      "gloss": "강요할 강",
+      "example": "cưỡng bức",
+      "example_kr": "강제(強制→강박)",
+      "example_mean": "강제로 시킴"
+     },
+     {
+      "word": "cương",
+      "hanja": "剛",
+      "kr": "강",
+      "gloss": "굳셀 강",
+      "example": "kim cương",
+      "example_kr": "금강(석)(金剛石)",
+      "example_mean": "다이아몬드"
+     },
+     {
+      "word": "lương",
+      "hanja": "良",
+      "kr": "량",
+      "gloss": "좋을 량",
+      "example": "lương tâm",
+      "example_kr": "양심(良心)",
+      "example_mean": "양심"
+     },
+     {
+      "word": "lượng",
+      "hanja": "量",
+      "kr": "량",
+      "gloss": "헤아릴 량",
+      "example": "số lượng",
+      "example_kr": "수량(數量)",
+      "example_mean": "수량"
+     },
+     {
+      "word": "phương",
+      "hanja": "方",
+      "kr": "방",
+      "gloss": "모 방(방향)",
+      "example": "phương pháp",
+      "example_kr": "방법(方法)",
+      "example_mean": "방법"
+     },
+     {
+      "word": "thường",
+      "hanja": "常",
+      "kr": "상",
+      "gloss": "항상 상",
+      "example": "bình thường",
+      "example_kr": "평상(平常)",
+      "example_mean": "보통·평범함"
+     },
+     {
+      "word": "đương",
+      "hanja": "當",
+      "kr": "당",
+      "gloss": "마땅 당",
+      "example": "đương nhiên",
+      "example_kr": "당연(當然)",
+      "example_mean": "당연함"
+     },
+     {
+      "word": "trường",
+      "hanja": "場",
+      "kr": "장",
+      "gloss": "마당 장",
+      "example": "thị trường",
+      "example_kr": "시장(市場)",
+      "example_mean": "시장"
+     },
+     {
+      "word": "hương",
+      "hanja": "香",
+      "kr": "향",
+      "gloss": "향기 향",
+      "example": "hương vị",
+      "example_kr": "향기(香氣)",
+      "example_mean": "향기"
+     },
+     {
+      "word": "hương",
+      "hanja": "鄕",
+      "kr": "향",
+      "gloss": "고향 향",
+      "example": "cố hương",
+      "example_kr": "고향(故鄉)",
+      "example_mean": "고향"
+     },
+     {
+      "word": "hướng",
+      "hanja": "向",
+      "kr": "향",
+      "gloss": "향할 향",
+      "example": "phương hướng",
+      "example_kr": "방향(方向)",
+      "example_mean": "방향"
+     },
+     {
+      "word": "hưởng",
+      "hanja": "響",
+      "kr": "향",
+      "gloss": "울릴 향",
+      "example": "ảnh hưởng",
+      "example_kr": "영향(影響)",
+      "example_mean": "영향"
+     },
+     {
+      "word": "hưởng",
+      "hanja": "享",
+      "kr": "향",
+      "gloss": "누릴 향",
+      "example": "hưởng thụ",
+      "example_kr": "향수(享受)",
+      "example_mean": "향수"
+     },
+     {
+      "word": "vương",
+      "hanja": "王",
+      "kr": "왕",
+      "gloss": "임금 왕",
+      "example": "vương quốc",
+      "example_kr": "왕국(王國)",
+      "example_mean": "왕국"
+     },
+     {
+      "word": "cường",
+      "hanja": "强",
+      "kr": "강",
+      "gloss": "강할 강",
+      "example": "cường quốc",
+      "example_kr": "강국(強國)",
+      "example_mean": "강국"
+     },
+     {
+      "word": "trường",
+      "hanja": "長",
+      "kr": "장",
+      "gloss": "길 장",
+      "example": "trường kỳ",
+      "example_kr": "장기(長期)",
+      "example_mean": "장기"
+     },
+     {
+      "word": "trưởng",
+      "hanja": "長",
+      "kr": "장",
+      "gloss": "어른 장",
+      "example": "trưởng lão",
+      "example_kr": "장로(長老)",
+      "example_mean": "장로"
+     },
+     {
+      "word": "thương",
+      "hanja": "商",
+      "kr": "상",
+      "gloss": "장사 상",
+      "example": "thương nghiệp",
+      "example_kr": "상업(商業)",
+      "example_mean": "상업"
+     },
+     {
+      "word": "tưởng",
+      "hanja": "想",
+      "kr": "상",
+      "gloss": "생각 상",
+      "example": "tư tưởng",
+      "example_kr": "사상(思想)",
+      "example_mean": "사상"
+     },
+     {
+      "word": "thượng",
+      "hanja": "上",
+      "kr": "상",
+      "gloss": "위 상",
+      "example": "thượng lưu",
+      "example_kr": "상류(上流)",
+      "example_mean": "상류"
+     }
+    ]
+   },
+   {
+    "final": "-anh",
+    "kr_note": "한국 한자음 '영' 또는 '형'에서 시작해, 행·성·청 등 여러 갈래로 대응해요.",
+    "words": [
+     {
+      "word": "ánh",
+      "hanja": "映",
+      "kr": "영",
+      "gloss": "비칠 영",
+      "example": "phản ánh",
+      "example_kr": "반영(反映)",
+      "example_mean": "되비침·반영"
+     },
+     {
+      "word": "ảnh",
+      "hanja": "影",
+      "kr": "영",
+      "gloss": "그림자 영",
+      "example": "ảnh hưởng",
+      "example_kr": "영향(影響)",
+      "example_mean": "영향"
+     },
+     {
+      "word": "hành",
+      "hanja": "行",
+      "kr": "행",
+      "gloss": "다닐 행",
+      "example": "hành động",
+      "example_kr": "행동(行動)",
+      "example_mean": "행동"
+     },
+     {
+      "word": "hạnh",
+      "hanja": "幸",
+      "kr": "행",
+      "gloss": "다행 행",
+      "example": "hạnh phúc",
+      "example_kr": "행복(幸福)",
+      "example_mean": "행복"
+     },
+     {
+      "word": "thanh",
+      "hanja": "靑",
+      "kr": "청",
+      "gloss": "푸를 청",
+      "example": "thanh niên",
+      "example_kr": "청년(靑年)",
+      "example_mean": "청년"
+     },
+     {
+      "word": "thanh",
+      "hanja": "聲",
+      "kr": "성",
+      "gloss": "소리 성",
+      "example": "âm thanh",
+      "example_kr": "음성(音聲)",
+      "example_mean": "소리"
+     },
+     {
+      "word": "thành",
+      "hanja": "成",
+      "kr": "성",
+      "gloss": "이룰 성",
+      "example": "thành công",
+      "example_kr": "성공(成功)",
+      "example_mean": "성공"
+     },
+     {
+      "word": "thành",
+      "hanja": "誠",
+      "kr": "성",
+      "gloss": "성실할 성",
+      "example": "chân thành",
+      "example_kr": "진성(眞誠→진심)",
+      "example_mean": "진심 어림"
+     }
+    ]
+   },
+   {
+    "final": "-inh",
+    "kr_note": "'-anh'과 받침은 같은 'ㅇ'이지만 모음이 달라, 명·경·생·정·평·병 등 더 다양한 한국 한자음으로 대응해요.",
+    "words": [
+     {
+      "word": "minh",
+      "hanja": "明",
+      "kr": "명",
+      "gloss": "밝을 명",
+      "example": "văn minh",
+      "example_kr": "문명(文明)",
+      "example_mean": "문명"
+     },
+     {
+      "word": "kinh",
+      "hanja": "經",
+      "kr": "경",
+      "gloss": "글 경",
+      "example": "kinh tế",
+      "example_kr": "경제(經濟)",
+      "example_mean": "경제"
+     },
+     {
+      "word": "sinh",
+      "hanja": "生",
+      "kr": "생",
+      "gloss": "날 생",
+      "example": "học sinh",
+      "example_kr": "학생(學生)",
+      "example_mean": "학생"
+     },
+     {
+      "word": "tinh",
+      "hanja": "精",
+      "kr": "정",
+      "gloss": "정할 정",
+      "example": "tinh thần",
+      "example_kr": "정신(精神)",
+      "example_mean": "정신"
+     },
+     {
+      "word": "bình",
+      "hanja": "平",
+      "kr": "평",
+      "gloss": "평평할 평",
+      "example": "hòa bình",
+      "example_kr": "화평(和平→평화)",
+      "example_mean": "평화"
+     },
+     {
+      "word": "đình",
+      "hanja": "庭",
+      "kr": "정",
+      "gloss": "뜰 정",
+      "example": "gia đình",
+      "example_kr": "가정(家庭)",
+      "example_mean": "가정"
+     },
+     {
+      "word": "vinh",
+      "hanja": "榮",
+      "kr": "영",
+      "gloss": "영화 영",
+      "example": "vinh dự",
+      "example_kr": "영예(榮譽)",
+      "example_mean": "영예·명예"
+     },
+     {
+      "word": "thành",
+      "hanja": "成",
+      "kr": "성",
+      "gloss": "이룰 성",
+      "example": "thành công",
+      "example_kr": "성공(成功)",
+      "example_mean": "성공"
+     },
+     {
+      "word": "tính",
+      "hanja": "性",
+      "kr": "성",
+      "gloss": "성품 성",
+      "example": "tính cách",
+      "example_kr": "성격(性格)",
+      "example_mean": "성격"
+     },
+     {
+      "word": "kinh",
+      "hanja": "京",
+      "kr": "경",
+      "gloss": "서울 경",
+      "example": "Bắc Kinh",
+      "example_kr": "북경(北京)",
+      "example_mean": "북경"
+     },
+     {
+      "word": "kính",
+      "hanja": "敬",
+      "kr": "경",
+      "gloss": "공경 경",
+      "example": "tôn kính",
+      "example_kr": "존경(尊敬)",
+      "example_mean": "존경"
+     },
+     {
+      "word": "bình",
+      "hanja": "平",
+      "kr": "평",
+      "gloss": "평평할 평",
+      "example": "hòa bình",
+      "example_kr": "평화(和平)",
+      "example_mean": "평화"
+     },
+     {
+      "word": "tình",
+      "hanja": "情",
+      "kr": "정",
+      "gloss": "뜻 정",
+      "example": "cảm tình",
+      "example_kr": "감정(感情)",
+      "example_mean": "감정"
+     },
+     {
+      "word": "định",
+      "hanja": "定",
+      "kr": "정",
+      "gloss": "정할 정",
+      "example": "quyết định",
+      "example_kr": "결정(決定)",
+      "example_mean": "결정"
+     }
+    ]
+   },
+   {
+    "final": "-ông / -ung / -ọng / -ồng / -ộng / -ưng / -ứng",
+    "words": [
+     {
+      "word": "đông",
+      "hanja": "東",
+      "kr": "동",
+      "gloss": "동녘 동",
+      "example": "đông phương",
+      "example_kr": "동방(東方)",
+      "example_mean": "동방"
+     },
+     {
+      "word": "công",
+      "hanja": "工",
+      "kr": "공",
+      "gloss": "장인 공",
+      "example": "công nghiệp",
+      "example_kr": "공업(工業)",
+      "example_mean": "공업"
+     },
+     {
+      "word": "không",
+      "hanja": "空",
+      "kr": "공",
+      "gloss": "빌 공",
+      "example": "không trung",
+      "example_kr": "공중(空中)",
+      "example_mean": "공중"
+     },
+     {
+      "word": "công",
+      "hanja": "公",
+      "kr": "공",
+      "gloss": "공평할 공",
+      "example": "công viên",
+      "example_kr": "공원(公園)",
+      "example_mean": "공원"
+     },
+     {
+      "word": "trung",
+      "hanja": "中",
+      "kr": "중",
+      "gloss": "가운데 중",
+      "example": "trung tâm",
+      "example_kr": "중심(中心)",
+      "example_mean": "중심"
+     },
+     {
+      "word": "trọng",
+      "hanja": "重",
+      "kr": "중",
+      "gloss": "무거울 중",
+      "example": "trọng yếu",
+      "example_kr": "중요(重要)",
+      "example_mean": "중요"
+     },
+     {
+      "word": "đồng",
+      "hanja": "同",
+      "kr": "동",
+      "gloss": "한가지 동",
+      "example": "đồng ý",
+      "example_kr": "동의(同意)",
+      "example_mean": "동의"
+     },
+     {
+      "word": "động",
+      "hanja": "動",
+      "kr": "동",
+      "gloss": "움직일 동",
+      "example": "vận động",
+      "example_kr": "운동(運動)",
+      "example_mean": "운동"
+     },
+     {
+      "word": "hưng",
+      "hanja": "興",
+      "kr": "흥",
+      "gloss": "일 흥",
+      "example": "phục hưng",
+      "example_kr": "부흥(復興)",
+      "example_mean": "부흥"
+     },
+     {
+      "word": "ứng",
+      "hanja": "應",
+      "kr": "응",
+      "gloss": "응할 응",
+      "example": "ứng dụng",
+      "example_kr": "응용(應用)",
+      "example_mean": "응용"
+     }
+    ]
+   },
+   {
+    "final": "-ang / -ảng / -ảnh / -ệnh / -ịnh",
+    "words": [
+     {
+      "word": "giang",
+      "hanja": "江",
+      "kr": "강",
+      "gloss": "강 강",
+      "example": "giang sơn",
+      "example_kr": "강산(江山)",
+      "example_mean": "강산"
+     },
+     {
+      "word": "quang",
+      "hanja": "光",
+      "kr": "광",
+      "gloss": "빛 광",
+      "example": "quang cảnh",
+      "example_kr": "광경(光景)",
+      "example_mean": "광경"
+     },
+     {
+      "word": "quảng",
+      "hanja": "廣",
+      "kr": "광",
+      "gloss": "넓을 광",
+      "example": "quảng trường",
+      "example_kr": "광장(廣場)",
+      "example_mean": "광장"
+     },
+     {
+      "word": "cảnh",
+      "hanja": "景",
+      "kr": "경",
+      "gloss": "볕 경",
+      "example": "phong cảnh",
+      "example_kr": "풍경(風景)",
+      "example_mean": "풍경"
+     },
+     {
+      "word": "mệnh",
+      "hanja": "命",
+      "kr": "명",
+      "gloss": "목숨 명",
+      "example": "sinh mệnh",
+      "example_kr": "생명(生命)",
+      "example_mean": "생명"
+     },
+     {
+      "word": "bệnh",
+      "hanja": "病",
+      "kr": "병",
+      "gloss": "병 병",
+      "example": "bệnh viện",
+      "example_kr": "병원(病院)",
+      "example_mean": "병원"
+     }
+    ]
+   },
+   {
+    "final": "-anh / -inh (그 외)",
+    "words": [
+     {
+      "word": "danh",
+      "hanja": "名",
+      "kr": "명",
+      "gloss": "이름 명",
+      "example": "danh dự",
+      "example_kr": "명예(名譽)",
+      "example_mean": "명예"
+     },
+     {
+      "word": "sinh",
+      "hanja": "生",
+      "kr": "생",
+      "gloss": "날 생",
+      "example": "học sinh",
+      "example_kr": "학생(學生)",
+      "example_mean": "학생"
+     },
+     {
+      "word": "tinh",
+      "hanja": "星",
+      "kr": "성",
+      "gloss": "별 성",
+      "example": "vệ tinh",
+      "example_kr": "위성(衛星)",
+      "example_mean": "위성"
+     },
+     {
+      "word": "minh",
+      "hanja": "明",
+      "kr": "명",
+      "gloss": "밝을 명",
+      "example": "minh bạch",
+      "example_kr": "명백(明白)",
+      "example_mean": "명백"
+     },
+     {
+      "word": "binh",
+      "hanja": "兵",
+      "kr": "병",
+      "gloss": "병사 병",
+      "example": "binh sĩ",
+      "example_kr": "병사(兵士)",
+      "example_mean": "병사"
+     },
+     {
+      "word": "chính",
+      "hanja": "正",
+      "kr": "정",
+      "gloss": "바를 정",
+      "example": "chính xác",
+      "example_kr": "정확(正確)",
+      "example_mean": "정확"
+     },
+     {
+      "word": "chính",
+      "hanja": "政",
+      "kr": "정",
+      "gloss": "정사 정",
+      "example": "chính trị",
+      "example_kr": "정치(政治)",
+      "example_mean": "정치"
+     },
+     {
+      "word": "tinh",
+      "hanja": "精",
+      "kr": "정",
+      "gloss": "정할 정",
+      "example": "tinh thần",
+      "example_kr": "정신(精神)",
+      "example_mean": "정신"
+     }
+    ]
+   },
+   {
+    "final": "동일음 단어 모음집에서 온 음절",
+    "kr_note": "'동일음 단어 모음집' 탭에 있는 단어들의 첫 음절 중, 위 표에 아직 없던 것들을 모았어요.",
+    "words": [
+     {
+      "word": "hàng",
+      "hanja": "行",
+      "kr": "항",
+      "gloss": "항렬 항·줄 항",
+      "example": "hàng hóa",
+      "example_kr": "상품(行貨)",
+      "example_mean": "상품"
+     },
+     {
+      "word": "phong",
+      "hanja": "風",
+      "kr": "풍",
+      "gloss": "바람 풍",
+      "example": "phong cách",
+      "example_kr": "스타일·풍격(風格)",
+      "example_mean": "스타일·풍격"
+     },
+     {
+      "word": "sáng",
+      "hanja": "創",
+      "kr": "창",
+      "gloss": "비롯할 창",
+      "example": "sáng tạo",
+      "example_kr": "창조(創造)",
+      "example_mean": "창조"
+     },
+     {
+      "word": "thông",
+      "hanja": "通",
+      "kr": "통",
+      "gloss": "통할 통",
+      "example": "thông tin",
+      "example_kr": "정보(通信)",
+      "example_mean": "정보"
+     },
+     {
+      "word": "trang",
+      "hanja": "裝",
+      "kr": "장",
+      "gloss": "꾸밀 장",
+      "example": "trang phục",
+      "example_kr": "복장(裝服)",
+      "example_mean": "복장"
+     },
+     {
+      "word": "trình",
+      "hanja": "程",
+      "kr": "정",
+      "gloss": "한도 정",
+      "example": "trình độ",
+      "example_kr": "수준(程度)",
+      "example_mean": "수준"
+     },
+     {
+      "word": "tổng",
+      "hanja": "總",
+      "kr": "총",
+      "gloss": "다 총",
+      "example": "tổng thống",
+      "example_kr": "대통령(總統)",
+      "example_mean": "대통령"
+     }
+    ]
+   },
+   {
+    "final": "끝말잇기에서 온 음절",
+    "kr_note": "'끝말잇기' 탭 단어들의 첫 음절 중, 위 표에 아직 없던 것들을 모았어요.",
+    "words": [
+     {
+      "word": "cộng",
+      "hanja": "共",
+      "kr": "공",
+      "gloss": "함께 공",
+      "example": "cộng đồng",
+      "example_kr": "공동체·지역사회(共同)",
+      "example_mean": "공동체·지역사회"
+     },
+     {
+      "word": "hình",
+      "hanja": "刑",
+      "kr": "형",
+      "gloss": "형벌 형",
+      "example": "hình sự",
+      "example_kr": "형사(刑事)",
+      "example_mean": "형사"
+     },
+     {
+      "word": "năng",
+      "hanja": "能",
+      "kr": "능",
+      "gloss": "능할 능",
+      "example": "năng động",
+      "example_kr": "능동적·활동적(能動)",
+      "example_mean": "능동적·활동적"
+     },
+     {
+      "word": "phòng",
+      "hanja": "防",
+      "kr": "방",
+      "gloss": "막을 방",
+      "example": "phòng thủ",
+      "example_kr": "방어(防守)",
+      "example_mean": "방어"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "final_class": "받침 ㄱ (끝닿는소리 -c / -ch)",
+  "note": "베트남어 '-c', '-ch'로 끝나는 한자어는 한국 한자음 받침 'ㄱ'(억·력·특·직·식 등)과 대응해요. 옛 중국어의 입성(-k) 받침이 두 언어에 각각 이렇게 남은 거예요.",
+  "families": [
+   {
+    "final": "-ức / -ực / -ặc",
+    "kr_note": "모음은 다르지만 모두 한국 한자음 받침 'ㄱ'으로 끝나요.",
+    "words": [
+     {
+      "word": "đức",
+      "hanja": "德",
+      "kr": "덕",
+      "gloss": "덕 덕",
+      "example": "đạo đức",
+      "example_kr": "도덕(道德)",
+      "example_mean": "도덕"
+     },
+     {
+      "word": "thức",
+      "hanja": "識",
+      "kr": "식",
+      "gloss": "알 식",
+      "example": "kiến thức",
+      "example_kr": "견식(見識→지식)",
+      "example_mean": "지식"
+     },
+     {
+      "word": "thức",
+      "hanja": "式",
+      "kr": "식",
+      "gloss": "법 식",
+      "example": "hình thức",
+      "example_kr": "형식(形式)",
+      "example_mean": "형식"
+     },
+     {
+      "word": "lực",
+      "hanja": "力",
+      "kr": "력",
+      "gloss": "힘 력",
+      "example": "năng lực",
+      "example_kr": "능력(能力)",
+      "example_mean": "능력"
+     },
+     {
+      "word": "trực",
+      "hanja": "直",
+      "kr": "직",
+      "gloss": "곧을 직",
+      "example": "trực tiếp",
+      "example_kr": "직접(直接)",
+      "example_mean": "직접"
+     },
+     {
+      "word": "đặc",
+      "hanja": "特",
+      "kr": "특",
+      "gloss": "특별할 특",
+      "example": "đặc biệt",
+      "example_kr": "특별(特別)",
+      "example_mean": "특별함"
+     },
+     {
+      "word": "chức",
+      "hanja": "職",
+      "kr": "직",
+      "gloss": "직분 직",
+      "example": "từ chức",
+      "example_kr": "사직(辭職)",
+      "example_mean": "사직"
+     },
+     {
+      "word": "thực",
+      "hanja": "食/植",
+      "kr": "식",
+      "gloss": "밥 식·심을 식",
+      "example": "ẩm thực",
+      "example_kr": "음식(飮食)",
+      "example_mean": "음식"
+     }
+    ]
+   },
+   {
+    "final": "-ốc / -ộc / -ục / -ọc",
+    "words": [
+     {
+      "word": "quốc",
+      "hanja": "國",
+      "kr": "국",
+      "gloss": "나라 국",
+      "example": "quốc gia",
+      "example_kr": "국가(國家)",
+      "example_mean": "국가"
+     },
+     {
+      "word": "mộc",
+      "hanja": "木",
+      "kr": "목",
+      "gloss": "나무 목",
+      "example": "thảo mộc",
+      "example_kr": "초목(草木)",
+      "example_mean": "초목"
+     },
+     {
+      "word": "mục",
+      "hanja": "目",
+      "kr": "목",
+      "gloss": "눈 목",
+      "example": "mục đích",
+      "example_kr": "목적(目的)",
+      "example_mean": "목적"
+     },
+     {
+      "word": "học",
+      "hanja": "學",
+      "kr": "학",
+      "gloss": "배울 학",
+      "example": "học sinh",
+      "example_kr": "학생(學生)",
+      "example_mean": "학생"
+     },
+     {
+      "word": "phúc",
+      "hanja": "福",
+      "kr": "복",
+      "gloss": "복 복",
+      "example": "hạnh phúc",
+      "example_kr": "행복(幸福)",
+      "example_mean": "행복"
+     }
+    ]
+   },
+   {
+    "final": "-ắc / -ạc",
+    "words": [
+     {
+      "word": "bắc",
+      "hanja": "北",
+      "kr": "북",
+      "gloss": "북녘 북",
+      "example": "bắc bộ",
+      "example_kr": "북부(北部)",
+      "example_mean": "북부"
+     },
+     {
+      "word": "sắc",
+      "hanja": "色",
+      "kr": "색",
+      "gloss": "빛 색",
+      "example": "nhan sắc",
+      "example_kr": "안색(顏色)",
+      "example_mean": "안색"
+     },
+     {
+      "word": "đắc",
+      "hanja": "得",
+      "kr": "득",
+      "gloss": "얻을 득",
+      "example": "đắc điểm",
+      "example_kr": "득점(得點)",
+      "example_mean": "득점"
+     },
+     {
+      "word": "nhạc",
+      "hanja": "樂",
+      "kr": "악",
+      "gloss": "풍류 악",
+      "example": "âm nhạc",
+      "example_kr": "음악(音樂)",
+      "example_mean": "음악"
+     },
+     {
+      "word": "lạc",
+      "hanja": "樂",
+      "kr": "락",
+      "gloss": "즐길 락",
+      "example": "lạc quan",
+      "example_kr": "낙관(樂觀)",
+      "example_mean": "낙관"
+     }
+    ]
+   },
+   {
+    "final": "-ước / -ược",
+    "words": [
+     {
+      "word": "ước",
+      "hanja": "約",
+      "kr": "약",
+      "gloss": "맺을 약",
+      "example": "kết ước",
+      "example_kr": "결약(結約)",
+      "example_mean": "결약"
+     },
+     {
+      "word": "dược",
+      "hanja": "藥",
+      "kr": "약",
+      "gloss": "약 약",
+      "example": "y dược",
+      "example_kr": "의약(醫藥)",
+      "example_mean": "의약"
+     },
+     {
+      "word": "nhược",
+      "hanja": "弱",
+      "kr": "약",
+      "gloss": "약할 약",
+      "example": "nhược điểm",
+      "example_kr": "약점(弱點)",
+      "example_mean": "약점"
+     }
+    ]
+   },
+   {
+    "final": "-ạch / -ách",
+    "words": [
+     {
+      "word": "bạch",
+      "hanja": "白",
+      "kr": "백",
+      "gloss": "흰 백",
+      "example": "minh bạch",
+      "example_kr": "명백(明白)",
+      "example_mean": "명백"
+     },
+     {
+      "word": "bách",
+      "hanja": "百",
+      "kr": "백",
+      "gloss": "일백 백",
+      "example": "bách hóa",
+      "example_kr": "백화(百貨)",
+      "example_mean": "백화"
+     },
+     {
+      "word": "khách",
+      "hanja": "客",
+      "kr": "객",
+      "gloss": "손 객",
+      "example": "lữ khách",
+      "example_kr": "여객(旅客)",
+      "example_mean": "여객"
+     },
+     {
+      "word": "thạch",
+      "hanja": "石",
+      "kr": "석",
+      "gloss": "돌 석",
+      "example": "bảo thạch",
+      "example_kr": "보석(寶石)",
+      "example_mean": "보석"
+     }
+    ]
+   },
+   {
+    "final": "-ịch / -ích",
+    "words": [
+     {
+      "word": "địch",
+      "hanja": "敵",
+      "kr": "적",
+      "gloss": "대적할 적",
+      "example": "vô địch",
+      "example_kr": "무적(無敵)",
+      "example_mean": "무적"
+     },
+     {
+      "word": "tịch",
+      "hanja": "席",
+      "kr": "석",
+      "gloss": "자리 석",
+      "example": "xuất tịch",
+      "example_kr": "출석(出席)",
+      "example_mean": "출석"
+     },
+     {
+      "word": "thích",
+      "hanja": "適",
+      "kr": "적",
+      "gloss": "맞을 적",
+      "example": "thích hợp",
+      "example_kr": "적합(適合)",
+      "example_mean": "적합"
+     },
+     {
+      "word": "đích",
+      "hanja": "的",
+      "kr": "적",
+      "gloss": "과녁 적",
+      "example": "mục đích",
+      "example_kr": "목적(目的)",
+      "example_mean": "목적"
+     }
+    ]
+   },
+   {
+    "final": "동일음 단어 모음집에서 온 음절",
+    "kr_note": "'동일음 단어 모음집' 탭에 있는 단어들의 첫 음절 중, 위 표에 아직 없던 것들을 모았어요.",
+    "words": [
+     {
+      "word": "dịch",
+      "hanja": "役",
+      "kr": "역",
+      "gloss": "부릴 역",
+      "example": "dịch vụ",
+      "example_kr": "서비스(役務)",
+      "example_mean": "서비스"
+     },
+     {
+      "word": "lịch",
+      "hanja": "歷",
+      "kr": "력",
+      "gloss": "지날 력",
+      "example": "lịch sử",
+      "example_kr": "역사(歷史)",
+      "example_mean": "역사"
+     },
+     {
+      "word": "tác",
+      "hanja": "作",
+      "kr": "작",
+      "gloss": "지을 작",
+      "example": "tác giả",
+      "example_kr": "작가(作者)",
+      "example_mean": "작가"
+     }
+    ]
+   },
+   {
+    "final": "끝말잇기에서 온 음절",
+    "kr_note": "'끝말잇기' 탭 단어들의 첫 음절 중, 위 표에 아직 없던 것들을 모았어요.",
+    "words": [
+     {
+      "word": "cách",
+      "hanja": "革",
+      "kr": "혁",
+      "gloss": "가죽 혁",
+      "example": "cách mạng",
+      "example_kr": "혁명(革命)",
+      "example_mean": "혁명"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "final_class": "받침 ㄹ (끝닿는소리 -t)",
+  "note": "베트남어 '-t'로 끝나는 한자어는 한국 한자음 받침 'ㄹ'(일·출·칠·실 등)과 대응해요. 옛 중국어 입성 '-t' 받침의 흔적이에요.",
+  "families": [
+   {
+    "final": "-ất / -uất",
+    "words": [
+     {
+      "word": "nhất",
+      "hanja": "一",
+      "kr": "일",
+      "gloss": "한 일",
+      "example": "thứ nhất",
+      "example_kr": "제일(第一)",
+      "example_mean": "첫째"
+     },
+     {
+      "word": "xuất",
+      "hanja": "出",
+      "kr": "출",
+      "gloss": "날 출",
+      "example": "xuất bản",
+      "example_kr": "출판(出版)",
+      "example_mean": "출판"
+     },
+     {
+      "word": "thất",
+      "hanja": "失",
+      "kr": "실",
+      "gloss": "잃을 실",
+      "example": "thất bại",
+      "example_kr": "실패(失敗)",
+      "example_mean": "실패"
+     },
+     {
+      "word": "thất",
+      "hanja": "七",
+      "kr": "칠",
+      "gloss": "일곱 칠",
+      "example": "thất thập",
+      "example_kr": "칠십(七十)",
+      "example_mean": "칠십"
+     },
+     {
+      "word": "thất",
+      "hanja": "室",
+      "kr": "실",
+      "gloss": "집 실",
+      "example": "nội thất",
+      "example_kr": "내실(內室)",
+      "example_mean": "내실"
+     },
+     {
+      "word": "chất",
+      "hanja": "質",
+      "kr": "질",
+      "gloss": "바탕 질",
+      "example": "vật chất",
+      "example_kr": "물질(物質)",
+      "example_mean": "물질"
+     },
+     {
+      "word": "tất",
+      "hanja": "必",
+      "kr": "필",
+      "gloss": "반드시 필",
+      "example": "tất yếu",
+      "example_kr": "필요(必要)",
+      "example_mean": "필요"
+     },
+     {
+      "word": "nhật",
+      "hanja": "日",
+      "kr": "일",
+      "gloss": "날 일",
+      "example": "nhật ký",
+      "example_kr": "일기(日記)",
+      "example_mean": "일기"
+     },
+     {
+      "word": "vật",
+      "hanja": "物",
+      "kr": "물",
+      "gloss": "물건 물",
+      "example": "vật chất",
+      "example_kr": "물질(物質)",
+      "example_mean": "물질"
+     }
+    ]
+   },
+   {
+    "final": "-iết / -iệt / -uyết / -yết / -ết",
+    "words": [
+     {
+      "word": "tiết",
+      "hanja": "節",
+      "kr": "절",
+      "gloss": "마디 절",
+      "example": "quý tiết",
+      "example_kr": "계절(季節)",
+      "example_mean": "계절"
+     },
+     {
+      "word": "thiết",
+      "hanja": "設",
+      "kr": "설",
+      "gloss": "베풀 설",
+      "example": "thiết lập",
+      "example_kr": "설립(設立)",
+      "example_mean": "설립"
+     },
+     {
+      "word": "liệt",
+      "hanja": "列",
+      "kr": "렬",
+      "gloss": "벌일 렬",
+      "example": "bài liệt",
+      "example_kr": "배열(排列)",
+      "example_mean": "배열"
+     },
+     {
+      "word": "liệt",
+      "hanja": "烈",
+      "kr": "렬",
+      "gloss": "매울 렬",
+      "example": "kích liệt",
+      "example_kr": "격렬(激烈)",
+      "example_mean": "격렬"
+     },
+     {
+      "word": "nhiệt",
+      "hanja": "熱",
+      "kr": "열",
+      "gloss": "더울 열",
+      "example": "nhiệt tình",
+      "example_kr": "열정(熱情)",
+      "example_mean": "열정"
+     },
+     {
+      "word": "biệt",
+      "hanja": "別",
+      "kr": "별",
+      "gloss": "다를 별",
+      "example": "đặc biệt",
+      "example_kr": "특별(特別)",
+      "example_mean": "특별"
+     },
+     {
+      "word": "thuyết",
+      "hanja": "說",
+      "kr": "설",
+      "gloss": "말씀 설",
+      "example": "thuyết minh",
+      "example_kr": "설명(說明)",
+      "example_mean": "설명"
+     },
+     {
+      "word": "tuyết",
+      "hanja": "雪",
+      "kr": "설",
+      "gloss": "눈 설",
+      "example": "bạch tuyết",
+      "example_kr": "백설(白雪)",
+      "example_mean": "백설"
+     },
+     {
+      "word": "quyết",
+      "hanja": "決",
+      "kr": "결",
+      "gloss": "결단할 결",
+      "example": "quyết định",
+      "example_kr": "결정(決定)",
+      "example_mean": "결정"
+     },
+     {
+      "word": "kết",
+      "hanja": "結",
+      "kr": "결",
+      "gloss": "맺을 결",
+      "example": "kết quả",
+      "example_kr": "결과(結果)",
+      "example_mean": "결과"
+     },
+     {
+      "word": "nguyệt",
+      "hanja": "月",
+      "kr": "월",
+      "gloss": "달 월",
+      "example": "nguyệt quang",
+      "example_kr": "월광(月光)",
+      "example_mean": "월광"
+     }
+    ]
+   },
+   {
+    "final": "-oạt / -uật / -át / -út / -ốt",
+    "words": [
+     {
+      "word": "hoạt",
+      "hanja": "活",
+      "kr": "활",
+      "gloss": "살 활",
+      "example": "hoạt động",
+      "example_kr": "활동(活動)",
+      "example_mean": "활동"
+     },
+     {
+      "word": "thuật",
+      "hanja": "術",
+      "kr": "술",
+      "gloss": "재주 술",
+      "example": "kỹ thuật",
+      "example_kr": "기술(技術)",
+      "example_mean": "기술"
+     },
+     {
+      "word": "cát",
+      "hanja": "吉",
+      "kr": "길",
+      "gloss": "길할 길",
+      "example": "cát tường",
+      "example_kr": "길상(吉祥)",
+      "example_mean": "길상"
+     },
+     {
+      "word": "bút",
+      "hanja": "筆",
+      "kr": "필",
+      "gloss": "붓 필",
+      "example": "bút ký",
+      "example_kr": "필기(筆記)",
+      "example_mean": "필기"
+     },
+     {
+      "word": "cốt",
+      "hanja": "骨",
+      "kr": "골",
+      "gloss": "뼈 골",
+      "example": "cốt cách",
+      "example_kr": "골격(骨格)",
+      "example_mean": "골격"
+     },
+     {
+      "word": "phát",
+      "hanja": "發",
+      "kr": "발",
+      "gloss": "필 발",
+      "example": "phát triển",
+      "example_kr": "발전(發展)",
+      "example_mean": "발전"
+     }
+    ]
+   },
+   {
+    "final": "-ực (예외: 한국 받침 ㄹ ↔ 베트남 -c)",
+    "kr_note": "實(실)처럼 한국 한자음은 받침 'ㄹ'인데 베트남어는 -t가 아니라 -c로 끝나는 예외적인 경우도 있어요.",
+    "words": [
+     {
+      "word": "thực",
+      "hanja": "實",
+      "kr": "실",
+      "gloss": "열매 실",
+      "example": "thực tập",
+      "example_kr": "실습(實習)",
+      "example_mean": "실습"
+     }
+    ]
+   },
+   {
+    "final": "끝말잇기에서 온 음절",
+    "kr_note": "'끝말잇기' 탭 단어들의 첫 음절 중, 위 표에 아직 없던 것들을 모았어요.",
+    "words": [
+     {
+      "word": "luật",
+      "hanja": "律",
+      "kr": "률",
+      "gloss": "법률 률",
+      "example": "luật sư",
+      "example_kr": "변호사(律師)",
+      "example_mean": "변호사"
+     },
+     {
+      "word": "triết",
+      "hanja": "哲",
+      "kr": "철",
+      "gloss": "밝을 철",
+      "example": "triết học",
+      "example_kr": "철학(哲學)",
+      "example_mean": "철학"
+     },
+     {
+      "word": "tốt",
+      "hanja": "卒",
+      "kr": "졸",
+      "gloss": "마칠 졸",
+      "example": "tốt nghiệp",
+      "example_kr": "졸업(卒業)",
+      "example_mean": "졸업"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "final_class": "받침 ㅂ (끝닿는소리 -p)",
+  "note": "베트남어 '-p'로 끝나는 한자어는 한국 한자음 받침 'ㅂ'(업·합·습 등)과 대응해요. 옛 중국어 입성 '-p' 받침의 흔적이에요.",
+  "families": [
+   {
+    "final": "-iệp / -ập / -ợp",
+    "words": [
+     {
+      "word": "nghiệp",
+      "hanja": "業",
+      "kr": "업",
+      "gloss": "업 업",
+      "example": "nghề nghiệp",
+      "example_kr": "직업(職業)",
+      "example_mean": "직업"
+     },
+     {
+      "word": "hợp",
+      "hanja": "合",
+      "kr": "합",
+      "gloss": "합할 합",
+      "example": "phù hợp",
+      "example_kr": "부합(符合→적합)",
+      "example_mean": "알맞음"
+     },
+     {
+      "word": "hợp",
+      "hanja": "合",
+      "kr": "합",
+      "gloss": "합할 합",
+      "example": "hợp tác",
+      "example_kr": "합작(合作)",
+      "example_mean": "협력"
+     },
+     {
+      "word": "tập",
+      "hanja": "習",
+      "kr": "습",
+      "gloss": "익힐 습",
+      "example": "học tập",
+      "example_kr": "학습(學習)",
+      "example_mean": "학습"
+     },
+     {
+      "word": "thập",
+      "hanja": "十",
+      "kr": "십",
+      "gloss": "열 십",
+      "example": "thập tự",
+      "example_kr": "십자(十字)",
+      "example_mean": "십자"
+     },
+     {
+      "word": "nhập",
+      "hanja": "入",
+      "kr": "입",
+      "gloss": "들 입",
+      "example": "nhập cảnh",
+      "example_kr": "입경(入境)",
+      "example_mean": "입경"
+     },
+     {
+      "word": "lập",
+      "hanja": "立",
+      "kr": "립",
+      "gloss": "설 립",
+      "example": "độc lập",
+      "example_kr": "독립(獨立)",
+      "example_mean": "독립"
+     },
+     {
+      "word": "tiếp",
+      "hanja": "接",
+      "kr": "접",
+      "gloss": "이을 접",
+      "example": "trực tiếp",
+      "example_kr": "직접(直接)",
+      "example_mean": "직접"
+     },
+     {
+      "word": "tập",
+      "hanja": "集",
+      "kr": "집",
+      "gloss": "모을 집",
+      "example": "tập trung",
+      "example_kr": "집중(集中)",
+      "example_mean": "집중"
+     }
+    ]
+   },
+   {
+    "final": "-áp / -ạp / -ấp",
+    "words": [
+     {
+      "word": "pháp",
+      "hanja": "法",
+      "kr": "법",
+      "gloss": "법 법",
+      "example": "pháp luật",
+      "example_kr": "법률(法律)",
+      "example_mean": "법률"
+     },
+     {
+      "word": "đáp",
+      "hanja": "答",
+      "kr": "답",
+      "gloss": "대답 답",
+      "example": "hồi đáp",
+      "example_kr": "회답(回答)",
+      "example_mean": "회답"
+     },
+     {
+      "word": "tạp",
+      "hanja": "雜",
+      "kr": "잡",
+      "gloss": "섞일 잡",
+      "example": "phức tạp",
+      "example_kr": "복잡(複雜)",
+      "example_mean": "복잡"
+     },
+     {
+      "word": "cấp",
+      "hanja": "急",
+      "kr": "급",
+      "gloss": "급할 급",
+      "example": "khẩn cấp",
+      "example_kr": "긴급(緊急)",
+      "example_mean": "긴급"
+     },
+     {
+      "word": "cấp",
+      "hanja": "級",
+      "kr": "급",
+      "gloss": "등급 급",
+      "example": "đẳng cấp",
+      "example_kr": "등급(等級)",
+      "example_mean": "등급"
+     },
+     {
+      "word": "cấp",
+      "hanja": "給",
+      "kr": "급",
+      "gloss": "줄 급",
+      "example": "cung cấp",
+      "example_kr": "공급(供給)",
+      "example_mean": "공급"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "final_class": "받침 ㄴ (콧소리 -n)",
+  "note": "베트남어 '-n'으로 끝나는 한자어는 한국 한자음 받침 'ㄴ'(안·한·관·산·문 등)과 대응해요.",
+  "families": [
+   {
+    "final": "-an / -ăn / -ân",
+    "words": [
+     {
+      "word": "an",
+      "hanja": "安",
+      "kr": "안",
+      "gloss": "편안 안",
+      "example": "an toàn",
+      "example_kr": "안전(安全)",
+      "example_mean": "안전"
+     },
+     {
+      "word": "hàn",
+      "hanja": "韓",
+      "kr": "한",
+      "gloss": "나라이름 한",
+      "example": "Hàn Quốc",
+      "example_kr": "한국(韓國)",
+      "example_mean": "한국"
+     },
+     {
+      "word": "quan",
+      "hanja": "關",
+      "kr": "관",
+      "gloss": "관계할 관",
+      "example": "quan hệ",
+      "example_kr": "관계(關係)",
+      "example_mean": "관계"
+     },
+     {
+      "word": "sản",
+      "hanja": "産",
+      "kr": "산",
+      "gloss": "낳을 산",
+      "example": "sản xuất",
+      "example_kr": "산출(産出→생산)",
+      "example_mean": "생산"
+     },
+     {
+      "word": "văn",
+      "hanja": "文",
+      "kr": "문",
+      "gloss": "글월 문",
+      "example": "văn hóa",
+      "example_kr": "문화(文化)",
+      "example_mean": "문화"
+     },
+     {
+      "word": "dân",
+      "hanja": "民",
+      "kr": "민",
+      "gloss": "백성 민",
+      "example": "nhân dân",
+      "example_kr": "인민(人民)",
+      "example_mean": "인민"
+     },
+     {
+      "word": "nhân",
+      "hanja": "人",
+      "kr": "인",
+      "gloss": "사람 인",
+      "example": "nhân dân",
+      "example_kr": "인민(人民)",
+      "example_mean": "인민"
+     },
+     {
+      "word": "tân",
+      "hanja": "新",
+      "kr": "신",
+      "gloss": "새 신",
+      "example": "tân niên",
+      "example_kr": "신년(新年)",
+      "example_mean": "신년"
+     },
+     {
+      "word": "thân",
+      "hanja": "身",
+      "kr": "신",
+      "gloss": "몸 신",
+      "example": "thân thể",
+      "example_kr": "신체(身體)",
+      "example_mean": "신체"
+     },
+     {
+      "word": "phân",
+      "hanja": "分",
+      "kr": "분",
+      "gloss": "나눌 분",
+      "example": "phân tích",
+      "example_kr": "분석(分析)",
+      "example_mean": "분석"
+     },
+     {
+      "word": "quân",
+      "hanja": "軍",
+      "kr": "군",
+      "gloss": "군사 군",
+      "example": "quân đội",
+      "example_kr": "군대(軍隊)",
+      "example_mean": "군대"
+     }
+    ]
+   },
+   {
+    "final": "-iên / -iến / -iền / -iện",
+    "words": [
+     {
+      "word": "niên",
+      "hanja": "年",
+      "kr": "년",
+      "gloss": "해 년",
+      "example": "thanh niên",
+      "example_kr": "청년(青年)",
+      "example_mean": "청년"
+     },
+     {
+      "word": "thiên",
+      "hanja": "天",
+      "kr": "천",
+      "gloss": "하늘 천",
+      "example": "thiên đường",
+      "example_kr": "천당(天堂)",
+      "example_mean": "천당"
+     },
+     {
+      "word": "tiên",
+      "hanja": "先",
+      "kr": "선",
+      "gloss": "먼저 선",
+      "example": "tiên sinh",
+      "example_kr": "선생(先生)",
+      "example_mean": "선생"
+     },
+     {
+      "word": "chiến",
+      "hanja": "戰",
+      "kr": "전",
+      "gloss": "싸움 전",
+      "example": "chiến tranh",
+      "example_kr": "전쟁(戰爭)",
+      "example_mean": "전쟁"
+     },
+     {
+      "word": "kiến",
+      "hanja": "建",
+      "kr": "건",
+      "gloss": "세울 건",
+      "example": "kiến thiết",
+      "example_kr": "건설(建設)",
+      "example_mean": "건설"
+     },
+     {
+      "word": "kiến",
+      "hanja": "見",
+      "kr": "견",
+      "gloss": "볼 견",
+      "example": "ý kiến",
+      "example_kr": "의견(意見)",
+      "example_mean": "의견"
+     },
+     {
+      "word": "điền",
+      "hanja": "田",
+      "kr": "전",
+      "gloss": "밭 전",
+      "example": "điền viên",
+      "example_kr": "전원(田園)",
+      "example_mean": "전원"
+     },
+     {
+      "word": "điện",
+      "hanja": "電",
+      "kr": "전",
+      "gloss": "번개 전",
+      "example": "điện thoại",
+      "example_kr": "전화(電話)",
+      "example_mean": "전화"
+     },
+     {
+      "word": "viện",
+      "hanja": "院",
+      "kr": "원",
+      "gloss": "집 원",
+      "example": "bệnh viện",
+      "example_kr": "병원(病院)",
+      "example_mean": "병원"
+     },
+     {
+      "word": "thiện",
+      "hanja": "善",
+      "kr": "선",
+      "gloss": "착할 선",
+      "example": "thiện ác",
+      "example_kr": "선악(善惡)",
+      "example_mean": "선악"
+     }
+    ]
+   },
+   {
+    "final": "-ôn / -ơn / -ản / -ần",
+    "words": [
+     {
+      "word": "môn",
+      "hanja": "門",
+      "kr": "문",
+      "gloss": "문 문",
+      "example": "chuyên môn",
+      "example_kr": "전문(專門)",
+      "example_mean": "전문"
+     },
+     {
+      "word": "sơn",
+      "hanja": "山",
+      "kr": "산",
+      "gloss": "뫼 산",
+      "example": "giang sơn",
+      "example_kr": "강산(江山)",
+      "example_mean": "강산"
+     },
+     {
+      "word": "bản",
+      "hanja": "本",
+      "kr": "본",
+      "gloss": "근본 본",
+      "example": "căn bản",
+      "example_kr": "근본(根本)",
+      "example_mean": "근본"
+     },
+     {
+      "word": "thần",
+      "hanja": "神",
+      "kr": "신",
+      "gloss": "귀신 신",
+      "example": "tinh thần",
+      "example_kr": "정신(精神)",
+      "example_mean": "정신"
+     }
+    ]
+   },
+   {
+    "final": "-oàn / -uyên / -uyến / -uyện / -yền / -ận / -ín",
+    "words": [
+     {
+      "word": "toàn",
+      "hanja": "全",
+      "kr": "전",
+      "gloss": "온전할 전",
+      "example": "an toàn",
+      "example_kr": "안전(安全)",
+      "example_mean": "안전"
+     },
+     {
+      "word": "nguyên",
+      "hanja": "元",
+      "kr": "원",
+      "gloss": "으뜸 원",
+      "example": "nguyên tố",
+      "example_kr": "원소(元素)",
+      "example_mean": "원소"
+     },
+     {
+      "word": "tuyến",
+      "hanja": "線",
+      "kr": "선",
+      "gloss": "줄 선",
+      "example": "lộ tuyến",
+      "example_kr": "노선(路線)",
+      "example_mean": "노선"
+     },
+     {
+      "word": "nguyện",
+      "hanja": "願",
+      "kr": "원",
+      "gloss": "원할 원",
+      "example": "sở nguyện",
+      "example_kr": "소원(所願)",
+      "example_mean": "소원"
+     },
+     {
+      "word": "quyền",
+      "hanja": "權",
+      "kr": "권",
+      "gloss": "권세 권",
+      "example": "quyền lợi",
+      "example_kr": "권리(權利)",
+      "example_mean": "권리"
+     },
+     {
+      "word": "vận",
+      "hanja": "運",
+      "kr": "운",
+      "gloss": "옮길 운",
+      "example": "vận động",
+      "example_kr": "운동(運動)",
+      "example_mean": "운동"
+     },
+     {
+      "word": "tín",
+      "hanja": "信",
+      "kr": "신",
+      "gloss": "믿을 신",
+      "example": "tín dụng",
+      "example_kr": "신용(信用)",
+      "example_mean": "신용"
+     }
+    ]
+   },
+   {
+    "final": "동일음 단어 모음집에서 온 음절",
+    "kr_note": "'동일음 단어 모음집' 탭에 있는 단어들의 첫 음절 중, 위 표에 아직 없던 것들을 모았어요.",
+    "words": [
+     {
+      "word": "chân",
+      "hanja": "真",
+      "kr": "진",
+      "gloss": "참 진",
+      "example": "chân thành",
+      "example_kr": "진심·성실(真誠)",
+      "example_mean": "진심·성실"
+     },
+     {
+      "word": "hiện",
+      "hanja": "現",
+      "kr": "현",
+      "gloss": "나타날 현",
+      "example": "hiện tại",
+      "example_kr": "현재(現在)",
+      "example_mean": "현재"
+     },
+     {
+      "word": "hoàn",
+      "hanja": "完",
+      "kr": "완",
+      "gloss": "완전할 완",
+      "example": "hoàn thành",
+      "example_kr": "완성·완료(完成)",
+      "example_mean": "완성·완료"
+     },
+     {
+      "word": "hôn",
+      "hanja": "婚",
+      "kr": "혼",
+      "gloss": "혼인할 혼",
+      "example": "hôn nhân",
+      "example_kr": "혼인(婚姻)",
+      "example_mean": "혼인"
+     },
+     {
+      "word": "hạn",
+      "hanja": "限",
+      "kr": "한",
+      "gloss": "한계 한",
+      "example": "hạn chế",
+      "example_kr": "제한(限制)",
+      "example_mean": "제한"
+     },
+     {
+      "word": "liên",
+      "hanja": "聯",
+      "kr": "련",
+      "gloss": "잇닿을 련",
+      "example": "liên hệ",
+      "example_kr": "연계·연락(聯繫)",
+      "example_mean": "연계·연락"
+     },
+     {
+      "word": "ngân",
+      "hanja": "銀",
+      "kr": "은",
+      "gloss": "은 은",
+      "example": "ngân hàng",
+      "example_kr": "은행(銀行)",
+      "example_mean": "은행"
+     },
+     {
+      "word": "tiến",
+      "hanja": "進",
+      "kr": "진",
+      "gloss": "나아갈 진",
+      "example": "tiến bộ",
+      "example_kr": "진보(進步)",
+      "example_mean": "진보"
+     },
+     {
+      "word": "truyền",
+      "hanja": "傳",
+      "kr": "전",
+      "gloss": "전할 전",
+      "example": "truyền thống",
+      "example_kr": "전통(傳統)",
+      "example_mean": "전통"
+     },
+     {
+      "word": "tôn",
+      "hanja": "宗",
+      "kr": "종",
+      "gloss": "마루 종",
+      "example": "tôn giáo",
+      "example_kr": "종교(宗教)",
+      "example_mean": "종교"
+     },
+     {
+      "word": "đơn",
+      "hanja": "單",
+      "kr": "단",
+      "gloss": "홑 단",
+      "example": "đơn giản",
+      "example_kr": "간단(單簡)",
+      "example_mean": "간단"
+     }
+    ]
+   },
+   {
+    "final": "끝말잇기에서 온 음절",
+    "kr_note": "'끝말잇기' 탭 단어들의 첫 음절 중, 위 표에 아직 없던 것들을 모았어요.",
+    "words": [
+     {
+      "word": "gian",
+      "hanja": "奸",
+      "kr": "간",
+      "gloss": "간사할 간",
+      "example": "gian tế",
+      "example_kr": "간첩·스파이(奸細)",
+      "example_mean": "간첩·스파이"
+     },
+     {
+      "word": "luận",
+      "hanja": "論",
+      "kr": "론",
+      "gloss": "논할 론",
+      "example": "luận văn",
+      "example_kr": "논문(論文)",
+      "example_mean": "논문"
+     },
+     {
+      "word": "viên",
+      "hanja": "員",
+      "kr": "원",
+      "gloss": "인원 원",
+      "example": "viên ngoại",
+      "example_kr": "원외(옛 지주·부호)(員外)",
+      "example_mean": "원외(옛 지주·부호)"
+     },
+     {
+      "word": "án",
+      "hanja": "案",
+      "kr": "안",
+      "gloss": "책상 안",
+      "example": "án mạng",
+      "example_kr": "살인사건(案命)",
+      "example_mean": "살인사건"
+     },
+     {
+      "word": "điển",
+      "hanja": "典",
+      "kr": "전",
+      "gloss": "법 전",
+      "example": "điển hình",
+      "example_kr": "전형적(典型)",
+      "example_mean": "전형적"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "final_class": "받침 ㅁ (입술소리 -m)",
+  "note": "베트남어 '-m'으로 끝나는 한자어는 한국 한자음 받침 'ㅁ'(심·남·감·참 등)과 대응해요.",
+  "families": [
+   {
+    "final": "-âm / -am",
+    "words": [
+     {
+      "word": "tâm",
+      "hanja": "心",
+      "kr": "심",
+      "gloss": "마음 심",
+      "example": "tâm lý",
+      "example_kr": "심리(心理)",
+      "example_mean": "심리"
+     },
+     {
+      "word": "nam",
+      "hanja": "南",
+      "kr": "남",
+      "gloss": "남녘 남",
+      "example": "miền Nam",
+      "example_kr": "남부(南部)",
+      "example_mean": "남부(베트남 남부)"
+     },
+     {
+      "word": "cảm",
+      "hanja": "感",
+      "kr": "감",
+      "gloss": "느낄 감",
+      "example": "tình cảm",
+      "example_kr": "정감(情感→감정)",
+      "example_mean": "감정"
+     },
+     {
+      "word": "tham",
+      "hanja": "參",
+      "kr": "참",
+      "gloss": "참여할 참",
+      "example": "tham gia",
+      "example_kr": "참가(參加)",
+      "example_mean": "참가"
+     },
+     {
+      "word": "tam",
+      "hanja": "三",
+      "kr": "삼",
+      "gloss": "석 삼",
+      "example": "tam giác",
+      "example_kr": "삼각(三角)",
+      "example_mean": "삼각"
+     },
+     {
+      "word": "nam",
+      "hanja": "男",
+      "kr": "남",
+      "gloss": "사내 남",
+      "example": "nam tử",
+      "example_kr": "남자(男子)",
+      "example_mean": "남자"
+     },
+     {
+      "word": "âm",
+      "hanja": "音",
+      "kr": "음",
+      "gloss": "소리 음",
+      "example": "âm nhạc",
+      "example_kr": "음악(音樂)",
+      "example_mean": "음악"
+     },
+     {
+      "word": "ẩm",
+      "hanja": "飲",
+      "kr": "음",
+      "gloss": "마실 음",
+      "example": "ẩm thực",
+      "example_kr": "음식(飮食)",
+      "example_mean": "음식"
+     },
+     {
+      "word": "phẩm",
+      "hanja": "品",
+      "kr": "품",
+      "gloss": "물건 품",
+      "example": "chế phẩm",
+      "example_kr": "제품(製品)",
+      "example_mean": "제품"
+     },
+     {
+      "word": "lâm",
+      "hanja": "林",
+      "kr": "림",
+      "gloss": "수풀 림",
+      "example": "sơn lâm",
+      "example_kr": "산림(山林)",
+      "example_mean": "산림"
+     }
+    ]
+   },
+   {
+    "final": "-im / -iệm",
+    "words": [
+     {
+      "word": "kim",
+      "hanja": "金",
+      "kr": "금",
+      "gloss": "쇠 금",
+      "example": "kim loại",
+      "example_kr": "금속(金屬)",
+      "example_mean": "금속"
+     },
+     {
+      "word": "niệm",
+      "hanja": "念",
+      "kr": "념",
+      "gloss": "생각 념",
+      "example": "khái niệm",
+      "example_kr": "개념(概念)",
+      "example_mean": "개념"
+     },
+     {
+      "word": "nhiệm",
+      "hanja": "任",
+      "kr": "임",
+      "gloss": "맡길 임",
+      "example": "nhiệm vụ",
+      "example_kr": "임무(任務)",
+      "example_mean": "임무"
+     }
+    ]
+   },
+   {
+    "final": "끝말잇기에서 온 음절",
+    "kr_note": "'끝말잇기' 탭 단어들의 첫 음절 중, 위 표에 아직 없던 것들을 모았어요.",
+    "words": [
+     {
+      "word": "nghiêm",
+      "hanja": "嚴",
+      "kr": "엄",
+      "gloss": "엄할 엄",
+      "example": "nghiêm trọng",
+      "example_kr": "중대한·심각한(嚴重)",
+      "example_mean": "중대한·심각한"
+     },
+     {
+      "word": "phạm",
+      "hanja": "犯",
+      "kr": "범",
+      "gloss": "범할 범",
+      "example": "phạm pháp",
+      "example_kr": "위법(犯法)",
+      "example_mean": "위법"
+     },
+     {
+      "word": "điểm",
+      "hanja": "點",
+      "kr": "점",
+      "gloss": "점 점",
+      "example": "điểm danh",
+      "example_kr": "출석 체크(點名)",
+      "example_mean": "출석 체크"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "final_class": "받침 없음 (열린 음절)",
+  "note": "받침 없이 모음으로 끝나는 한자어도 한국 한자음은 받침 없이 끝나는 경우가 많아요.",
+  "families": [
+   {
+    "final": "-a / -oa",
+    "words": [
+     {
+      "word": "gia",
+      "hanja": "家",
+      "kr": "가",
+      "gloss": "집 가",
+      "example": "gia đình",
+      "example_kr": "가정(家庭)",
+      "example_mean": "가정"
+     },
+     {
+      "word": "hóa",
+      "hanja": "化",
+      "kr": "화",
+      "gloss": "될 화",
+      "example": "văn hóa",
+      "example_kr": "문화(文化)",
+      "example_mean": "문화"
+     },
+     {
+      "word": "xã",
+      "hanja": "社",
+      "kr": "사",
+      "gloss": "모일 사",
+      "example": "xã hội",
+      "example_kr": "사회(社會)",
+      "example_mean": "사회"
+     },
+     {
+      "word": "gia",
+      "hanja": "加",
+      "kr": "가",
+      "gloss": "더할 가",
+      "example": "tăng gia",
+      "example_kr": "증가(增加)",
+      "example_mean": "증가"
+     },
+     {
+      "word": "hoa",
+      "hanja": "花",
+      "kr": "화",
+      "gloss": "꽃 화",
+      "example": "hoa viên",
+      "example_kr": "화원(花園)",
+      "example_mean": "화원"
+     }
+    ]
+   },
+   {
+    "final": "-a / -á / -ã / -ây / -ại / -ải / -òa / -ỏa / -ô / -ối",
+    "words": [
+     {
+      "word": "ca",
+      "hanja": "歌",
+      "kr": "가",
+      "gloss": "노래 가",
+      "example": "ca sĩ",
+      "example_kr": "가수(歌手)",
+      "example_mean": "가수"
+     },
+     {
+      "word": "giá",
+      "hanja": "價",
+      "kr": "가",
+      "gloss": "값 가",
+      "example": "vật giá",
+      "example_kr": "물가(物價)",
+      "example_mean": "물가"
+     },
+     {
+      "word": "mã",
+      "hanja": "馬",
+      "kr": "마",
+      "gloss": "말 마",
+      "example": "mã lực",
+      "example_kr": "마력(馬力)",
+      "example_mean": "마력"
+     },
+     {
+      "word": "tây",
+      "hanja": "西",
+      "kr": "서",
+      "gloss": "서녘 서",
+      "example": "tây phương",
+      "example_kr": "서방(西方)",
+      "example_mean": "서방"
+     },
+     {
+      "word": "đại",
+      "hanja": "大",
+      "kr": "대",
+      "gloss": "큰 대",
+      "example": "đại học",
+      "example_kr": "대학(大學)",
+      "example_mean": "대학"
+     },
+     {
+      "word": "đại",
+      "hanja": "代",
+      "kr": "대",
+      "gloss": "대신할 대",
+      "example": "thời đại",
+      "example_kr": "시대(時代)",
+      "example_mean": "시대"
+     },
+     {
+      "word": "hải",
+      "hanja": "海",
+      "kr": "해",
+      "gloss": "바다 해",
+      "example": "hải dương",
+      "example_kr": "해양(海洋)",
+      "example_mean": "해양"
+     },
+     {
+      "word": "giải",
+      "hanja": "解",
+      "kr": "해",
+      "gloss": "풀 해",
+      "example": "giải quyết",
+      "example_kr": "해결(解決)",
+      "example_mean": "해결"
+     },
+     {
+      "word": "hòa",
+      "hanja": "和",
+      "kr": "화",
+      "gloss": "화할 화",
+      "example": "hòa bình",
+      "example_kr": "평화(和平)",
+      "example_mean": "평화"
+     },
+     {
+      "word": "hỏa",
+      "hanja": "火",
+      "kr": "화",
+      "gloss": "불 화",
+      "example": "phòng hỏa",
+      "example_kr": "방화(防火)",
+      "example_mean": "방화"
+     },
+     {
+      "word": "vô",
+      "hanja": "無",
+      "kr": "무",
+      "gloss": "없을 무",
+      "example": "vô sự",
+      "example_kr": "무사(無事)",
+      "example_mean": "무사"
+     },
+     {
+      "word": "đối",
+      "hanja": "對",
+      "kr": "대",
+      "gloss": "대할 대",
+      "example": "phản đối",
+      "example_kr": "반대(反對)",
+      "example_mean": "반대"
+     }
+    ]
+   },
+   {
+    "final": "-ư / -ũ / -ụ / -ủ / -ữ / -ự / -ú / -ẫu",
+    "words": [
+     {
+      "word": "sư",
+      "hanja": "師",
+      "kr": "사",
+      "gloss": "스승 사",
+      "example": "giáo sư",
+      "example_kr": "교사(教師)",
+      "example_mean": "교사"
+     },
+     {
+      "word": "tư",
+      "hanja": "思",
+      "kr": "사",
+      "gloss": "생각 사",
+      "example": "tư tưởng",
+      "example_kr": "사상(思想)",
+      "example_mean": "사상"
+     },
+     {
+      "word": "thư",
+      "hanja": "書",
+      "kr": "서",
+      "gloss": "글 서",
+      "example": "thư tín",
+      "example_kr": "서신(書信)",
+      "example_mean": "서신"
+     },
+     {
+      "word": "vũ",
+      "hanja": "武",
+      "kr": "무",
+      "gloss": "호반 무",
+      "example": "vũ khí",
+      "example_kr": "무기(武器)",
+      "example_mean": "무기"
+     },
+     {
+      "word": "vụ",
+      "hanja": "務",
+      "kr": "무",
+      "gloss": "힘쓸 무",
+      "example": "nhiệm vụ",
+      "example_kr": "임무(任務)",
+      "example_mean": "임무"
+     },
+     {
+      "word": "chủ",
+      "hanja": "主",
+      "kr": "주",
+      "gloss": "주인 주",
+      "example": "chủ nhân",
+      "example_kr": "주인(主人)",
+      "example_mean": "주인"
+     },
+     {
+      "word": "nữ",
+      "hanja": "女",
+      "kr": "녀",
+      "gloss": "여자 녀",
+      "example": "nữ tính",
+      "example_kr": "여성(女性)",
+      "example_mean": "여성"
+     },
+     {
+      "word": "tự",
+      "hanja": "自",
+      "kr": "자",
+      "gloss": "스스로 자",
+      "example": "tự do",
+      "example_kr": "자유(自由)",
+      "example_mean": "자유"
+     },
+     {
+      "word": "tự",
+      "hanja": "字",
+      "kr": "자",
+      "gloss": "글자 자",
+      "example": "văn tự",
+      "example_kr": "문자(文字)",
+      "example_mean": "문자"
+     },
+     {
+      "word": "sự",
+      "hanja": "事",
+      "kr": "사",
+      "gloss": "일 사",
+      "example": "sự nghiệp",
+      "example_kr": "사업(事業)",
+      "example_mean": "사업"
+     },
+     {
+      "word": "chú",
+      "hanja": "注",
+      "kr": "주",
+      "gloss": "부을 주",
+      "example": "chú ý",
+      "example_kr": "주의(注意)",
+      "example_mean": "주의"
+     },
+     {
+      "word": "mẫu",
+      "hanja": "母",
+      "kr": "모",
+      "gloss": "어미 모",
+      "example": "mẫu tính",
+      "example_kr": "모성(母性)",
+      "example_mean": "모성"
+     }
+    ]
+   },
+   {
+    "final": "-i / -ý / -ĩa / -ị / -ịa / -ời / -ợi / -ứ / -ử",
+    "words": [
+     {
+      "word": "thi",
+      "hanja": "詩",
+      "kr": "시",
+      "gloss": "시 시",
+      "example": "thi nhân",
+      "example_kr": "시인(詩人)",
+      "example_mean": "시인"
+     },
+     {
+      "word": "tri",
+      "hanja": "知",
+      "kr": "지",
+      "gloss": "알 지",
+      "example": "tri thức",
+      "example_kr": "지식(知識)",
+      "example_mean": "지식"
+     },
+     {
+      "word": "lý",
+      "hanja": "理",
+      "kr": "리",
+      "gloss": "다스릴 리",
+      "example": "lý do",
+      "example_kr": "이유(理由)",
+      "example_mean": "이유"
+     },
+     {
+      "word": "ý",
+      "hanja": "意",
+      "kr": "의",
+      "gloss": "뜻 의",
+      "example": "ý kiến",
+      "example_kr": "의견(意見)",
+      "example_mean": "의견"
+     },
+     {
+      "word": "nghĩa",
+      "hanja": "義",
+      "kr": "의",
+      "gloss": "옳을 의",
+      "example": "nghĩa vụ",
+      "example_kr": "의무(義務)",
+      "example_mean": "의무"
+     },
+     {
+      "word": "thị",
+      "hanja": "市",
+      "kr": "시",
+      "gloss": "저자 시",
+      "example": "thị trường",
+      "example_kr": "시장(市場)",
+      "example_mean": "시장"
+     },
+     {
+      "word": "nghị",
+      "hanja": "議",
+      "kr": "의",
+      "gloss": "의논할 의",
+      "example": "hội nghị",
+      "example_kr": "회의(會議)",
+      "example_mean": "회의"
+     },
+     {
+      "word": "địa",
+      "hanja": "地",
+      "kr": "지",
+      "gloss": "땅 지",
+      "example": "địa phương",
+      "example_kr": "지방(地方)",
+      "example_mean": "지방"
+     },
+     {
+      "word": "thời",
+      "hanja": "時",
+      "kr": "시",
+      "gloss": "때 시",
+      "example": "thời gian",
+      "example_kr": "시간(時間)",
+      "example_mean": "시간"
+     },
+     {
+      "word": "lợi",
+      "hanja": "利",
+      "kr": "리",
+      "gloss": "이로울 리",
+      "example": "lợi ích",
+      "example_kr": "이익(利益)",
+      "example_mean": "이익"
+     },
+     {
+      "word": "tứ",
+      "hanja": "四",
+      "kr": "사",
+      "gloss": "넉 사",
+      "example": "tứ phương",
+      "example_kr": "사방(四方)",
+      "example_mean": "사방"
+     },
+     {
+      "word": "sử",
+      "hanja": "史",
+      "kr": "사",
+      "gloss": "역사 사",
+      "example": "lịch sử",
+      "example_kr": "역사(歷史)",
+      "example_mean": "역사"
+     }
+    ]
+   },
+   {
+    "final": "-y (단독)",
+    "words": [
+     {
+      "word": "y",
+      "hanja": "醫",
+      "kr": "의",
+      "gloss": "의원 의",
+      "example": "y học",
+      "example_kr": "의학(醫學)",
+      "example_mean": "의학"
+     }
+    ]
+   },
+   {
+    "final": "동일음 단어 모음집에서 온 음절",
+    "kr_note": "'동일음 단어 모음집' 탭에 있는 단어들의 첫 음절 중, 위 표에 아직 없던 것들을 모았어요.",
+    "words": [
+     {
+      "word": "bảo",
+      "hanja": "保",
+      "kr": "보",
+      "gloss": "지킬 보",
+      "example": "bảo vệ",
+      "example_kr": "보호(保衛)",
+      "example_mean": "보호"
+     },
+     {
+      "word": "chi",
+      "hanja": "支",
+      "kr": "지",
+      "gloss": "지탱할 지",
+      "example": "chi phí",
+      "example_kr": "비용(支費)",
+      "example_mean": "비용"
+     },
+     {
+      "word": "cơ",
+      "hanja": "機",
+      "kr": "기",
+      "gloss": "틀 기",
+      "example": "cơ hội",
+      "example_kr": "기회(機會)",
+      "example_mean": "기회"
+     },
+     {
+      "word": "cải",
+      "hanja": "改",
+      "kr": "개",
+      "gloss": "고칠 개",
+      "example": "cải cách",
+      "example_kr": "개혁(改革)",
+      "example_mean": "개혁"
+     },
+     {
+      "word": "du",
+      "hanja": "遊",
+      "kr": "유",
+      "gloss": "놀 유",
+      "example": "du lịch",
+      "example_kr": "여행(遊歷)",
+      "example_mean": "여행"
+     },
+     {
+      "word": "dự",
+      "hanja": "預",
+      "kr": "예",
+      "gloss": "미리 예",
+      "example": "dự án",
+      "example_kr": "프로젝트·사업(預案)",
+      "example_mean": "프로젝트·사업"
+     },
+     {
+      "word": "giáo",
+      "hanja": "教",
+      "kr": "교",
+      "gloss": "가르칠 교",
+      "example": "giáo dục",
+      "example_kr": "교육(教育)",
+      "example_mean": "교육"
+     },
+     {
+      "word": "giới",
+      "hanja": "介",
+      "kr": "개",
+      "gloss": "낄 개",
+      "example": "giới thiệu",
+      "example_kr": "소개(介紹)",
+      "example_mean": "소개"
+     },
+     {
+      "word": "hội",
+      "hanja": "會",
+      "kr": "회",
+      "gloss": "모일 회",
+      "example": "hội nghị",
+      "example_kr": "회의(會議)",
+      "example_mean": "회의"
+     },
+     {
+      "word": "khí",
+      "hanja": "氣",
+      "kr": "기",
+      "gloss": "기운 기",
+      "example": "khí hậu",
+      "example_kr": "기후(氣候)",
+      "example_mean": "기후"
+     },
+     {
+      "word": "kế",
+      "hanja": "計",
+      "kr": "계",
+      "gloss": "셀 계",
+      "example": "kế hoạch",
+      "example_kr": "계획(計劃)",
+      "example_mean": "계획"
+     },
+     {
+      "word": "kỹ",
+      "hanja": "技",
+      "kr": "기",
+      "gloss": "재주 기",
+      "example": "kỹ thuật",
+      "example_kr": "기술(技術)",
+      "example_mean": "기술"
+     },
+     {
+      "word": "lễ",
+      "hanja": "禮",
+      "kr": "례",
+      "gloss": "예도 례",
+      "example": "lễ hội",
+      "example_kr": "축제(禮會)",
+      "example_mean": "축제"
+     },
+     {
+      "word": "mỹ",
+      "hanja": "美",
+      "kr": "미",
+      "gloss": "아름다울 미",
+      "example": "mỹ thuật",
+      "example_kr": "미술(美術)",
+      "example_mean": "미술"
+     },
+     {
+      "word": "ngoại",
+      "hanja": "外",
+      "kr": "외",
+      "gloss": "바깥 외",
+      "example": "ngoại giao",
+      "example_kr": "외교(外交)",
+      "example_mean": "외교"
+     },
+     {
+      "word": "thu",
+      "hanja": "收",
+      "kr": "수",
+      "gloss": "거둘 수",
+      "example": "thu nhập",
+      "example_kr": "수입(收入)",
+      "example_mean": "수입"
+     },
+     {
+      "word": "thế",
+      "hanja": "世",
+      "kr": "세",
+      "gloss": "인간 세",
+      "example": "thế giới",
+      "example_kr": "세계(世界)",
+      "example_mean": "세계"
+     },
+     {
+      "word": "thể",
+      "hanja": "體",
+      "kr": "체",
+      "gloss": "몸 체",
+      "example": "thể thao",
+      "example_kr": "체육·스포츠(體操)",
+      "example_mean": "체육·스포츠"
+     },
+     {
+      "word": "thủ",
+      "hanja": "手",
+      "kr": "수",
+      "gloss": "손 수",
+      "example": "thủ tục",
+      "example_kr": "수속·절차(手續)",
+      "example_mean": "수속·절차"
+     },
+     {
+      "word": "trí",
+      "hanja": "智",
+      "kr": "지",
+      "gloss": "지혜 지",
+      "example": "trí thức",
+      "example_kr": "지식·지식인(智識)",
+      "example_mean": "지식·지식인"
+     },
+     {
+      "word": "tài",
+      "hanja": "財",
+      "kr": "재",
+      "gloss": "재물 재",
+      "example": "tài chính",
+      "example_kr": "재정·금융(財政)",
+      "example_mean": "재정·금융"
+     },
+     {
+      "word": "từ",
+      "hanja": "辭",
+      "kr": "사",
+      "gloss": "말씀 사",
+      "example": "từ điển",
+      "example_kr": "사전(辭典)",
+      "example_mean": "사전"
+     },
+     {
+      "word": "đạo",
+      "hanja": "道",
+      "kr": "도",
+      "gloss": "길 도",
+      "example": "đạo đức",
+      "example_kr": "도덕(道德)",
+      "example_mean": "도덕"
+     },
+     {
+      "word": "đầu",
+      "hanja": "投",
+      "kr": "투",
+      "gloss": "던질 투",
+      "example": "đầu tư",
+      "example_kr": "투자(投資)",
+      "example_mean": "투자"
+     },
+     {
+      "word": "đầu",
+      "hanja": "頭",
+      "kr": "두",
+      "gloss": "머리 두",
+      "example": "đầu tiên",
+      "example_kr": "첫 번째(頭先)",
+      "example_mean": "첫 번째"
+     }
+    ]
+   },
+   {
+    "final": "끝말잇기에서 온 음절",
+    "kr_note": "'끝말잇기' 탭 단어들의 첫 음절 중, 위 표에 아직 없던 것들을 모았어요.",
+    "words": [
+     {
+      "word": "biểu",
+      "hanja": "表",
+      "kr": "표",
+      "gloss": "겉 표",
+      "example": "biểu hiện",
+      "example_kr": "표현(表現)",
+      "example_mean": "표현"
+     },
+     {
+      "word": "bào",
+      "hanja": "炮",
+      "kr": "포",
+      "gloss": "대포 포",
+      "example": "bào chế",
+      "example_kr": "제약·조제(炮製)",
+      "example_mean": "제약·조제"
+     },
+     {
+      "word": "chế",
+      "hanja": "製",
+      "kr": "제",
+      "gloss": "지을 제",
+      "example": "chế tạo",
+      "example_kr": "제조(製造)",
+      "example_mean": "제조"
+     },
+     {
+      "word": "diễn",
+      "hanja": "演",
+      "kr": "연",
+      "gloss": "펼 연",
+      "example": "diễn viên",
+      "example_kr": "배우(演員)",
+      "example_mean": "배우"
+     },
+     {
+      "word": "dụng",
+      "hanja": "用",
+      "kr": "용",
+      "gloss": "쓸 용",
+      "example": "dụng tâm",
+      "example_kr": "의도를 기울임(用心)",
+      "example_mean": "의도를 기울임"
+     },
+     {
+      "word": "hệ",
+      "hanja": "系",
+      "kr": "계",
+      "gloss": "맬 계",
+      "example": "hệ thống",
+      "example_kr": "체계·시스템(系統)",
+      "example_mean": "체계·시스템"
+     },
+     {
+      "word": "khoa",
+      "hanja": "科",
+      "kr": "과",
+      "gloss": "과목 과",
+      "example": "khoa học",
+      "example_kr": "과학(科學)",
+      "example_mean": "과학"
+     },
+     {
+      "word": "kỳ",
+      "hanja": "期",
+      "kr": "기",
+      "gloss": "기약할 기",
+      "example": "kỳ thi",
+      "example_kr": "시험(期試)",
+      "example_mean": "시험"
+     },
+     {
+      "word": "lao",
+      "hanja": "勞",
+      "kr": "노",
+      "gloss": "일할 노",
+      "example": "lao động",
+      "example_kr": "노동(勞動)",
+      "example_mean": "노동"
+     },
+     {
+      "word": "liệu",
+      "hanja": "療",
+      "kr": "료",
+      "gloss": "병 고칠 료",
+      "example": "liệu trình",
+      "example_kr": "치료 과정(療程)",
+      "example_mean": "치료 과정"
+     },
+     {
+      "word": "phí",
+      "hanja": "費",
+      "kr": "비",
+      "gloss": "쓸 비",
+      "example": "phí phạm",
+      "example_kr": "낭비하다(費犯)",
+      "example_mean": "낭비하다"
+     },
+     {
+      "word": "sĩ",
+      "hanja": "士",
+      "kr": "사",
+      "gloss": "선비 사",
+      "example": "sĩ quan",
+      "example_kr": "사관·장교(士官)",
+      "example_mean": "사관·장교"
+     },
+     {
+      "word": "trị",
+      "hanja": "治",
+      "kr": "치",
+      "gloss": "다스릴 치",
+      "example": "trị liệu",
+      "example_kr": "치료(治療)",
+      "example_mean": "치료"
+     },
+     {
+      "word": "trợ",
+      "hanja": "助",
+      "kr": "조",
+      "gloss": "도울 조",
+      "example": "trợ cấp",
+      "example_kr": "보조금·수당(助給)",
+      "example_mean": "보조금·수당"
+     },
+     {
+      "word": "tạo",
+      "hanja": "造",
+      "kr": "조",
+      "gloss": "지을 조",
+      "example": "tạo hóa",
+      "example_kr": "조화옹·창조주(造化)",
+      "example_mean": "조화옹·창조주"
+     },
+     {
+      "word": "tế",
+      "hanja": "細",
+      "kr": "세",
+      "gloss": "가늘 세",
+      "example": "tế bào",
+      "example_kr": "세포(細胞)",
+      "example_mean": "세포"
+     },
+     {
+      "word": "đa",
+      "hanja": "多",
+      "kr": "다",
+      "gloss": "많을 다",
+      "example": "đa khoa",
+      "example_kr": "다과·종합진료(多科)",
+      "example_mean": "다과·종합진료"
+     },
+     {
+      "word": "đô",
+      "hanja": "都",
+      "kr": "도",
+      "gloss": "도읍 도",
+      "example": "đô thị",
+      "example_kr": "도시(都市)",
+      "example_mean": "도시"
+     },
+     {
+      "word": "độ",
+      "hanja": "度",
+      "kr": "도",
+      "gloss": "법도 도",
+      "example": "độ lượng",
+      "example_kr": "도량이 넓음(度量)",
+      "example_mean": "도량이 넓음"
+     }
+    ]
+   }
+  ]
+ }
+]

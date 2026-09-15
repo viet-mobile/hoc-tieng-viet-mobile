@@ -1,0 +1,2006 @@
+{
+ "1": {
+  "zh": "你好！",
+  "en": "Hello!"
+ },
+ "2": {
+  "zh": "是的，你好！",
+  "en": "Yes, hello!"
+ },
+ "4": {
+  "zh": "你好嗎？",
+  "en": "How are you?"
+ },
+ "5": {
+  "zh": "是的，我很好，謝謝。",
+  "en": "Yes, I'm doing well. Thank you."
+ },
+ "7": {
+  "zh": "我叫志明。",
+  "en": "My name is John."
+ },
+ "9": {
+  "zh": "我是韓國人。",
+  "en": "I'm Korean."
+ },
+ "11": {
+  "zh": "我在學越南語。",
+  "en": "I'm learning Vietnamese."
+ },
+ "13": {
+  "zh": "我是耶和華見證人。",
+  "en": "I'm a Jehovah's Witness."
+ },
+ "14": {
+  "zh": "好，我叫Nam。很高興認識你。",
+  "en": "Yes, my name is Nam. Nice to meet you."
+ },
+ "16": {
+  "zh": "很高興認識你。",
+  "en": "Nice to meet you."
+ },
+ "18": {
+  "zh": "你有Zalo嗎？",
+  "en": "Do you have Zalo?"
+ },
+ "19": {
+  "zh": "有的。",
+  "en": "Yes, I do."
+ },
+ "21": {
+  "zh": "可以告訴我你的電話號碼嗎？",
+  "en": "Could you give me your phone number?"
+ },
+ "22": {
+  "zh": "我的號碼是010-2345-6789。",
+  "en": "My number is 010-2345-6789."
+ },
+ "24": {
+  "zh": "真的很謝謝你。",
+  "en": "Thank you so much."
+ },
+ "26": {
+  "zh": "我想下星期再見到你。",
+  "en": "I'd like to see you again next week."
+ },
+ "28": {
+  "zh": "你有時間嗎？",
+  "en": "Do you have time?"
+ },
+ "29": {
+  "zh": "好，星期日可以。",
+  "en": "Yes, Sunday works for me."
+ },
+ "31": {
+  "zh": "那就再見囉！",
+  "en": "Then see you again!"
+ },
+ "33": {
+  "zh": "很高興再次見到你。",
+  "en": "Nice to see you again."
+ },
+ "35": {
+  "zh": "我想邀請你來王國聚會所。",
+  "en": "I'd like to invite you to the Kingdom Hall."
+ },
+ "37": {
+  "zh": "聚會真的很有意思。",
+  "en": "The meetings are really interesting."
+ },
+ "39": {
+  "zh": "走吧，我們一起去！",
+  "en": "Let's go together!"
+ },
+ "40": {
+  "zh": "好，我去看看。",
+  "en": "Sure, I'll give it a try."
+ },
+ "42": {
+  "zh": "你想多了解聖經嗎？",
+  "en": "Would you like to learn more about the Bible?"
+ },
+ "44": {
+  "zh": "聖經研究是免費的。",
+  "en": "The Bible study is free."
+ },
+ "46": {
+  "zh": "一星期一次，大約30分鐘。",
+  "en": "Once a week, about 30 minutes."
+ },
+ "47": {
+  "zh": "好，我想試試看。",
+  "en": "Yes, I'd like to try."
+ },
+ "49": {
+  "zh": "我們開始吧！",
+  "en": "Let's get started!"
+ },
+ "51": {
+  "zh": "我們今天要學習關於幸福的內容。",
+  "en": "Today we'll learn about happiness."
+ },
+ "53": {
+  "zh": "請你唸一下這節聖經經文。",
+  "en": "Could you read this Bible verse?"
+ },
+ "55": {
+  "zh": "你覺得怎麼樣？",
+  "en": "What do you think?"
+ },
+ "56": {
+  "zh": "真的很好。",
+  "en": "That's really nice."
+ },
+ "58": {
+  "zh": "謝謝你。我們下星期再見！",
+  "en": "Thank you. See you again next week!"
+ },
+ "60": {
+  "zh": "詩篇119篇105節說，上帝的話語就像照亮我們道路的一盞燈。",
+  "en": "Psalm 119:105 says that God's word is like a lamp that lights our path."
+ },
+ "62": {
+  "zh": "就像手電筒在黑暗的夜裡照亮道路一樣。你覺得怎麼樣？",
+  "en": "It's like a flashlight lighting the way on a dark night. What do you think?"
+ },
+ "64": {
+  "zh": "你知道上帝有一個名字嗎？",
+  "en": "Did you know God has a name?"
+ },
+ "66": {
+  "zh": "上帝的名字是耶和華。",
+  "en": "God's name is Jehovah."
+ },
+ "68": {
+  "zh": "我可以給你看一支關於這個名字的短片嗎？",
+  "en": "Can I show you a short video about this name?"
+ },
+ "69": {
+  "zh": "好，可以。",
+  "en": "Sure, that sounds good."
+ },
+ "71": {
+  "zh": "聖經應許我們能夠永遠活著，沒有痛苦，也沒有死亡。",
+  "en": "The Bible promises that we can live forever without pain or death."
+ },
+ "73": {
+  "zh": "聚會星期日下午四點開始，完全免費。",
+  "en": "The meeting starts at 4:00 p.m. on Sunday, and it's completely free."
+ },
+ "74": {
+  "zh": "你好！",
+  "en": "Hello!"
+ },
+ "75": {
+  "zh": "你好嗎？",
+  "en": "How are you?"
+ },
+ "76": {
+  "zh": "我叫志明。",
+  "en": "My name is John."
+ },
+ "77": {
+  "zh": "我在學越南語。",
+  "en": "I'm learning Vietnamese."
+ },
+ "78": {
+  "zh": "我是耶和華見證人。",
+  "en": "I'm a Jehovah's Witness."
+ },
+ "79": {
+  "zh": "好，我叫Hoa。很高興認識你。",
+  "en": "Yes, my name is Hoa. Nice to meet you."
+ },
+ "80": {
+  "zh": "很高興認識你。",
+  "en": "Nice to meet you."
+ },
+ "82": {
+  "zh": "這是Mai姊的電話號碼。",
+  "en": "This is sister Mai's phone number."
+ },
+ "84": {
+  "zh": "Mai姊是哥哥的太太。",
+  "en": "Sister Mai is my older brother's wife."
+ },
+ "86": {
+  "zh": "Mai姊也是耶和華見證人。",
+  "en": "Sister Mai is also a Jehovah's Witness."
+ },
+ "89": {
+  "zh": "Mai姊會跟你聯絡。",
+  "en": "Sister Mai will get in touch with you."
+ },
+ "91": {
+  "zh": "這位是Mai姊。",
+  "en": "This is sister Mai."
+ },
+ "93": {
+  "zh": "你好！很高興認識你。",
+  "en": "Hello! Nice to meet you."
+ },
+ "96": {
+  "zh": "Mai姊會跟你一起研讀聖經。",
+  "en": "Sister Mai will study the Bible with you."
+ },
+ "98": {
+  "zh": "一星期一次。",
+  "en": "Once a week."
+ },
+ "99": {
+  "zh": "好，謝謝。",
+  "en": "Yes, thank you."
+ },
+ "100": {
+  "zh": "再見囉！",
+  "en": "See you again!"
+ },
+ "102": {
+  "zh": "我叫春嬌。",
+  "en": "My name is Mary."
+ },
+ "107": {
+  "zh": "這是Bình弟兄的電話號碼。",
+  "en": "This is brother Bình's phone number."
+ },
+ "109": {
+  "zh": "Bình弟兄是我的朋友。",
+  "en": "Brother Bình is my friend."
+ },
+ "111": {
+  "zh": "Bình弟兄也是耶和華見證人。",
+  "en": "Brother Bình is also a Jehovah's Witness."
+ },
+ "113": {
+  "zh": "可以告訴我你的電話號碼嗎？",
+  "en": "Could you give me your phone number?"
+ },
+ "115": {
+  "zh": "Bình弟兄會跟您聯絡。",
+  "en": "Brother Bình will get in touch with you."
+ },
+ "117": {
+  "zh": "這位是Bình弟兄。",
+  "en": "This is brother Bình."
+ },
+ "118": {
+  "zh": "聚會真的很有意思。",
+  "en": "The meetings are really interesting."
+ },
+ "120": {
+  "zh": "Bình弟兄會一起研讀聖經。",
+  "en": "Brother Bình will study the Bible together with you."
+ },
+ "121": {
+  "zh": "一星期一次。",
+  "en": "Once a week."
+ },
+ "122": {
+  "zh": "那我們開始吧？",
+  "en": "Shall we get started, then?"
+ },
+ "123": {
+  "zh": "再見囉！",
+  "en": "See you again!"
+ },
+ "124": {
+  "zh": "你有Zalo嗎？",
+  "en": "Do you have Zalo?"
+ },
+ "0": {
+  "zh": "你好  弟弟",
+  "en": "hello  younger brother"
+ },
+ "3": {
+  "zh": "弟弟  健康  嗎",
+  "en": "younger brother  healthy  ?"
+ },
+ "6": {
+  "zh": "哥哥  名字  是  志明",
+  "en": "older brother  name  is  John"
+ },
+ "8": {
+  "zh": "哥哥  是  人  韓國",
+  "en": "older brother  is  person  Korea"
+ },
+ "10": {
+  "zh": "哥哥  正在  學  越南語",
+  "en": "older brother  -ing  learn  Vietnamese"
+ },
+ "12": {
+  "zh": "哥哥  是  見證人  耶和華",
+  "en": "older brother  is  Witness  Jehovah"
+ },
+ "15": {
+  "zh": "非常  高興  得以  見  弟弟",
+  "en": "very  glad  to get to  meet  younger brother"
+ },
+ "17": {
+  "zh": "弟弟  有  Zalo  嗎",
+  "en": "younger brother  have  Zalo  ?"
+ },
+ "20": {
+  "zh": "給  哥哥  請求  號碼  電話  的  弟弟  請",
+  "en": "give  older brother  ask  number  phone  's  younger brother  please"
+ },
+ "23": {
+  "zh": "謝謝  弟弟  很多",
+  "en": "thank you  younger brother  very much"
+ },
+ "25": {
+  "zh": "週  下  哥哥  想要  見  弟弟  再",
+  "en": "week  next  older brother  want  meet  younger brother  again"
+ },
+ "27": {
+  "zh": "弟弟  有  時間  嗎",
+  "en": "younger brother  have  time  ?"
+ },
+ "30": {
+  "zh": "約定  見  再次  弟弟  吧",
+  "en": "promise  meet  once more  younger brother  let's"
+ },
+ "32": {
+  "zh": "非常  高興  得以  見  再次  弟弟",
+  "en": "very  glad  to get to  meet  once more  younger brother"
+ },
+ "34": {
+  "zh": "哥哥  想要  邀請  弟弟  來  聚會所  王國",
+  "en": "older brother  want  invite  younger brother  come to  hall  Kingdom"
+ },
+ "36": {
+  "zh": "聚會  聚會  非常  有趣",
+  "en": "gathering  meeting  very  interesting"
+ },
+ "38": {
+  "zh": "弟弟  去  一起  哥哥  吧",
+  "en": "younger brother  go  together  older brother  let's"
+ },
+ "41": {
+  "zh": "弟弟  有  想要  了解  聖經  嗎",
+  "en": "younger brother  have  want  find out about  the Bible  ?"
+ },
+ "43": {
+  "zh": "學  聖經  免費",
+  "en": "learn  the Bible  free"
+ },
+ "45": {
+  "zh": "每  週  一  次  大約  30  分鐘",
+  "en": "every  week  one  time  about  30  minutes"
+ },
+ "48": {
+  "zh": "我們  開始  吧",
+  "en": "we  start  let's"
+ },
+ "50": {
+  "zh": "今天  我們  學  關於  幸福",
+  "en": "today  we  learn  about  happiness"
+ },
+ "52": {
+  "zh": "弟弟  讀  經文  聖經  這  請",
+  "en": "younger brother  read  verse  the Bible  this  please"
+ },
+ "54": {
+  "zh": "弟弟  想  如何",
+  "en": "younger brother  think  how"
+ },
+ "57": {
+  "zh": "謝謝  弟弟  週  下  見  再次  吧",
+  "en": "thank you  younger brother  week  next  meet  once more  let's"
+ },
+ "59": {
+  "zh": "詩篇  119:105  說  話語  的  上帝  像  跟  燈  照亮  路  為了  我們",
+  "en": "Psalm  119:105  say  word  's  God  like  as  lamp  shine on  path  for  we"
+ },
+ "61": {
+  "zh": "像  跟  燈  手電筒  幫助  去  在  夜晚  黑暗",
+  "en": "like  as  lamp  flashlight  help  go  in  night  dark"
+ },
+ "63": {
+  "zh": "你  有  知道  上帝  有  一個  名字  嗎",
+  "en": "you  have  know  God  have  one  name  ?"
+ },
+ "65": {
+  "zh": "名字  的  上帝  是  耶和華",
+  "en": "name  's  God  is  Jehovah"
+ },
+ "67": {
+  "zh": "我  想要  給  你  看  影片  短  關於  這  名字",
+  "en": "I  want  give  you  watch  video  short  about  this  name"
+ },
+ "70": {
+  "zh": "聖經  應許  是  我們  能夠  活  永遠  不  有  痛苦  或  死亡  又",
+  "en": "the Bible  promise  is  we  be able to  live  forever  not  have  pain  or  death  also"
+ },
+ "72": {
+  "zh": "聚會  聚會  開始  在  4  點  下午  星期日  完全  免費",
+  "en": "gathering  meeting  start  at  4  o'clock  afternoon  Sunday  completely  free"
+ },
+ "81": {
+  "zh": "這裡  是  號碼  電話  的  姊姊  Mai",
+  "en": "here  is  number  phone  's  older sister  Mai"
+ },
+ "83": {
+  "zh": "姊姊  Mai  是  妻子  的  哥哥/大哥/弟兄",
+  "en": "older sister  Mai  is  wife  's  older brother/big brother/brother"
+ },
+ "85": {
+  "zh": "姊姊  Mai  也  是  見證人  耶和華",
+  "en": "older sister  Mai  also  is  Witness  Jehovah"
+ },
+ "87": {
+  "zh": "給  哥哥  請求  號碼  的  弟弟  請",
+  "en": "give  older brother  ask  number  's  younger brother  please"
+ },
+ "88": {
+  "zh": "姊姊  Mai  會  聯絡  一起  弟弟",
+  "en": "older sister  Mai  will  contact  together with  younger brother"
+ },
+ "90": {
+  "zh": "這裡  是姊姊  Mai",
+  "en": "here  is older sister  Mai"
+ },
+ "92": {
+  "zh": "你好  弟弟  非常  高興  得以  見  弟弟",
+  "en": "hello  younger brother  very  glad  to get to  meet  younger brother"
+ },
+ "94": {
+  "zh": "我們  想要  邀請  弟弟  來  聚會所  王國",
+  "en": "we  want  invite  younger brother  come to  hall  Kingdom"
+ },
+ "95": {
+  "zh": "姊姊  Mai  會  學  聖經  一起  弟弟",
+  "en": "older sister  Mai  will  study  the Bible  together with  younger brother"
+ },
+ "97": {
+  "zh": "每  週  一  次  是",
+  "en": "every  week  one  time  is"
+ },
+ "101": {
+  "zh": "姊姊  名字  是  春嬌",
+  "en": "older sister  name  is  Mary"
+ },
+ "103": {
+  "zh": "姊姊  是  人  韓國",
+  "en": "older sister  is  person  Korea"
+ },
+ "104": {
+  "zh": "姊姊  正在  學  越南語",
+  "en": "older sister  -ing  learn  Vietnamese"
+ },
+ "105": {
+  "zh": "姊姊  是  見證人  耶和華",
+  "en": "older sister  is  Witness  Jehovah"
+ },
+ "106": {
+  "zh": "這裡  是  號碼  電話  的  哥哥  Bình",
+  "en": "here  is  number  phone  's  older brother  Bình"
+ },
+ "108": {
+  "zh": "哥哥  Bình  是  朋友  的  姊姊",
+  "en": "older brother  Bình  is  friend  's  older sister"
+ },
+ "110": {
+  "zh": "哥哥  Bình  也  是  見證人  耶和華",
+  "en": "older brother  Bình  also  is  Witness  Jehovah"
+ },
+ "112": {
+  "zh": "給  姊姊  請求  號碼  的  弟弟  請",
+  "en": "give  older sister  ask  number  's  younger brother  please"
+ },
+ "114": {
+  "zh": "哥哥  Bình  會  聯絡  一起  弟弟",
+  "en": "older brother  Bình  will  contact  together with  younger brother"
+ },
+ "116": {
+  "zh": "這裡  是  弟兄  Bình",
+  "en": "here  is  brother  Bình"
+ },
+ "119": {
+  "zh": "哥哥  Bình  會  學  聖經  一起  弟弟",
+  "en": "older brother  Bình  will  study  the Bible  together with  younger brother"
+ },
+ "125": {
+  "zh": "給  姊姊  請求  號碼  電話  的  弟弟  請",
+  "en": "give  older sister  ask  number  phone  's  younger brother  please"
+ },
+ "126": {
+  "zh": "週  下  姐姐  想要  見面  弟妹  再",
+  "en": "week  next  older sister  want  meet  younger sibling  again"
+ },
+ "127": {
+  "zh": "我希望下星期能再次見到您。",
+  "en": "I'd love to see you again next week."
+ },
+ "128": {
+  "zh": "您有時間嗎？",
+  "en": "Do you have time?"
+ },
+ "129": {
+  "zh": "那我們再見囉！",
+  "en": "Alright, see you again!"
+ },
+ "130": {
+  "zh": "很高興再次見到您。",
+  "en": "It's nice to see you again."
+ },
+ "131": {
+  "zh": "姐姐  想要  邀請  弟妹  來  會館  王國",
+  "en": "older sister  want  invite  younger sibling  come to  Hall  Kingdom"
+ },
+ "132": {
+  "zh": "我想邀請您來王國聚會所。",
+  "en": "I'd like to invite you to the Kingdom Hall."
+ },
+ "133": {
+  "zh": "弟妹  去  一起  姐姐  好嗎",
+  "en": "younger sibling  go  with  older sister  shall we?"
+ },
+ "134": {
+  "zh": "您願意跟我一起去嗎？",
+  "en": "Would you like to come with me?"
+ },
+ "135": {
+  "zh": "您想更多認識聖經嗎？",
+  "en": "Would you like to learn more about the Bible?"
+ },
+ "136": {
+  "zh": "聖經研究是免費的。",
+  "en": "The Bible study is free."
+ },
+ "137": {
+  "zh": "一星期一次，大約三十分鐘。",
+  "en": "It's once a week, for about 30 minutes."
+ },
+ "138": {
+  "zh": "今天我們要來談談幸福。",
+  "en": "Today we're going to learn about happiness."
+ },
+ "139": {
+  "zh": "請您讀一下這節經文。",
+  "en": "Please read this Bible verse."
+ },
+ "140": {
+  "zh": "您覺得如何呢？",
+  "en": "What do you think?"
+ },
+ "141": {
+  "zh": "謝謝您。我們下星期再見！",
+  "en": "Thank you. See you again next week!"
+ },
+ "142": {
+  "zh": "弟妹  你好  哥哥",
+  "en": "younger sibling  hello  older brother"
+ },
+ "143": {
+  "zh": "哥哥  健康  嗎？",
+  "en": "older brother  healthy  is?"
+ },
+ "144": {
+  "zh": "我很好，謝謝。",
+  "en": "I'm doing well, thank you."
+ },
+ "145": {
+  "zh": "弟妹  名字  是  志明",
+  "en": "younger sibling  name  is  John"
+ },
+ "146": {
+  "zh": "弟妹  是  人  韓國",
+  "en": "younger sibling  is  person  Korea"
+ },
+ "147": {
+  "zh": "弟妹  正在  學習  越南語",
+  "en": "younger sibling  -ing  learn  Vietnamese"
+ },
+ "148": {
+  "zh": "弟妹  是  見證人  耶和華",
+  "en": "younger sibling  is  Witness  Jehovah"
+ },
+ "149": {
+  "zh": "我的名字是Tuấn。很高興認識您。",
+  "en": "My name is Tuấn. Nice to meet you."
+ },
+ "150": {
+  "zh": "很  高興  能夠  見面  哥哥",
+  "en": "very  glad  get to  meet  older brother"
+ },
+ "151": {
+  "zh": "哥哥  有  Zalo  嗎？",
+  "en": "older brother  have  Zalo  is?"
+ },
+ "152": {
+  "zh": "有的。",
+  "en": "Yes, I do."
+ },
+ "153": {
+  "zh": "給  弟妹  請求  號碼  電話  的  哥哥",
+  "en": "give  younger sibling  ask for  number  phone  's  older brother"
+ },
+ "154": {
+  "zh": "謝謝  哥哥  很多",
+  "en": "thank you  older brother  very much"
+ },
+ "155": {
+  "zh": "週  下  弟妹  想要  見面  哥哥  再",
+  "en": "week  next  younger sibling  want  meet  older brother  again"
+ },
+ "156": {
+  "zh": "哥哥  有  時間  嗎？",
+  "en": "older brother  have  time  is?"
+ },
+ "157": {
+  "zh": "約定  見面  再次  哥哥",
+  "en": "promise  meet  again  older brother"
+ },
+ "158": {
+  "zh": "很  高興  能夠  見面  再次  哥哥",
+  "en": "very  glad  get to  meet  again  older brother"
+ },
+ "159": {
+  "zh": "弟妹  想要  邀請  哥哥  來  會館  王國",
+  "en": "younger sibling  want  invite  older brother  come to  Hall  Kingdom"
+ },
+ "160": {
+  "zh": "哥哥  去  一起  弟妹",
+  "en": "older brother  go  with  younger sibling"
+ },
+ "161": {
+  "zh": "哥哥  有  想要  了解  聖經  嗎？",
+  "en": "older brother  have  want  learn about  the Bible  is?"
+ },
+ "162": {
+  "zh": "我們  開始",
+  "en": "we  start"
+ },
+ "163": {
+  "zh": "哥哥  讀  經文  聖經  這",
+  "en": "older brother  read  verse  the Bible  this"
+ },
+ "164": {
+  "zh": "哥哥  覺得  如何",
+  "en": "older brother  think  how"
+ },
+ "165": {
+  "zh": "謝謝  哥哥  週  下  見面  再次",
+  "en": "thank you  older brother  week  next  meet  again"
+ },
+ "166": {
+  "zh": "詩篇119篇105節說，上帝的話語就像照亮我們道路的一盞燈。",
+  "en": "Psalm 119:105 says that God's word is like a lamp that lights up our path."
+ },
+ "167": {
+  "zh": "就像在黑夜裡，手電筒能照亮前方的路一樣。",
+  "en": "It's like how a flashlight lights up the road on a dark night."
+ },
+ "168": {
+  "zh": "您知道上帝其實是有名字的嗎？",
+  "en": "Did you know that God actually has a name?"
+ },
+ "169": {
+  "zh": "上帝的名字是耶和華。",
+  "en": "God's name is Jehovah."
+ },
+ "170": {
+  "zh": "我可以給您看一段關於這個名字的短片嗎？",
+  "en": "May I show you a short video about this name?"
+ },
+ "171": {
+  "zh": "好啊，我很好奇。",
+  "en": "Sure, I'm curious."
+ },
+ "172": {
+  "zh": "聖經應許我們可以永遠活下去，沒有痛苦也沒有死亡。",
+  "en": "The Bible promises that we can live forever, free from suffering and death."
+ },
+ "173": {
+  "zh": "聚會在星期天下午四點開始，完全免費。",
+  "en": "The meeting starts at 4pm on Sunday, and it's completely free."
+ },
+ "174": {
+  "zh": "弟妹  你好  姐姐",
+  "en": "younger sibling  hello  older sister"
+ },
+ "175": {
+  "zh": "姐姐  健康  嗎？",
+  "en": "older sister  healthy  is?"
+ },
+ "176": {
+  "zh": "我的名字是Mai。很高興認識您。",
+  "en": "My name is Mai. Nice to meet you."
+ },
+ "177": {
+  "zh": "很  高興  能夠  見面  姐姐",
+  "en": "very  glad  get to  meet  older sister"
+ },
+ "178": {
+  "zh": "這是  是  號碼  電話  的  姐姐  Mai",
+  "en": "here  is  number  phone  's  older sister  Mai"
+ },
+ "179": {
+  "zh": "這是Mai姊妹的電話號碼。",
+  "en": "This is Sister Mai's phone number."
+ },
+ "180": {
+  "zh": "姐姐  Mai  是  朋友  的  弟妹",
+  "en": "older sister  Mai  is  friend  's  younger sibling"
+ },
+ "181": {
+  "zh": "Mai姊妹是我的朋友。",
+  "en": "Sister Mai is my friend."
+ },
+ "182": {
+  "zh": "姐姐  Mai  也  是  見證人  耶和華",
+  "en": "older sister  Mai  also  is  Witness  Jehovah"
+ },
+ "183": {
+  "zh": "Mai姊妹也是耶和華見證人。",
+  "en": "Sister Mai is also a Jehovah's Witness."
+ },
+ "184": {
+  "zh": "給  弟妹  請求  號碼  的  姐姐",
+  "en": "give  younger sibling  ask for  number  's  older sister"
+ },
+ "185": {
+  "zh": "姐姐  Mai  將會  聯絡  一起  姐姐",
+  "en": "older sister  Mai  will  contact  with  older sister"
+ },
+ "186": {
+  "zh": "Mai姊妹會跟您聯絡。",
+  "en": "Sister Mai will get in touch with you."
+ },
+ "187": {
+  "zh": "這是  是  姐姐  Mai",
+  "en": "here  is  older sister  Mai"
+ },
+ "188": {
+  "zh": "這位是Mai姊妹。",
+  "en": "This is Sister Mai."
+ },
+ "189": {
+  "zh": "你好  姐姐  很  高興  能夠  見面  姐姐",
+  "en": "hello  older sister  very  glad  get to  meet  older sister"
+ },
+ "190": {
+  "zh": "您好！很高興認識您。",
+  "en": "Hello! Nice to meet you."
+ },
+ "191": {
+  "zh": "我們  想要  邀請  姐姐  來  會館  王國",
+  "en": "we  want  invite  older sister  come to  Hall  Kingdom"
+ },
+ "192": {
+  "zh": "我們想邀請您來王國聚會所。",
+  "en": "We'd like to invite you to the Kingdom Hall."
+ },
+ "193": {
+  "zh": "姐姐  Mai  將會  學習  聖經  一起  姐姐",
+  "en": "older sister  Mai  will  learn  the Bible  with  older sister"
+ },
+ "194": {
+  "zh": "Mai姊妹會跟您一起研讀聖經。",
+  "en": "Sister Mai will study the Bible with you."
+ },
+ "195": {
+  "zh": "每  週  一  次",
+  "en": "every  week  one  time(s)"
+ },
+ "196": {
+  "zh": "約定  見面  再次  姐姐",
+  "en": "promise  meet  again  older sister"
+ },
+ "197": {
+  "zh": "弟妹  你好  哥哥",
+  "en": "younger sibling  hello  older brother"
+ },
+ "198": {
+  "zh": "哥哥  健康  嗎？",
+  "en": "older brother  healthy  is?"
+ },
+ "199": {
+  "zh": "弟妹  名字  是  春嬌",
+  "en": "younger sibling  name  is  Mary"
+ },
+ "200": {
+  "zh": "很  高興  能夠  見面  哥哥",
+  "en": "very  glad  get to  meet  older brother"
+ },
+ "201": {
+  "zh": "哥哥  Bình  是  朋友  的  弟妹",
+  "en": "older brother  Bình  is  friend  's  younger sibling"
+ },
+ "202": {
+  "zh": "給  弟妹  請求  號碼  的  哥哥",
+  "en": "give  younger sibling  ask for  number  's  older brother"
+ },
+ "203": {
+  "zh": "哥哥  Bình  將會  聯絡  一起  哥哥",
+  "en": "older brother  Bình  will  contact  with  older brother"
+ },
+ "204": {
+  "zh": "這是  是  哥哥  Bình",
+  "en": "here  is  older brother  Bình"
+ },
+ "205": {
+  "zh": "你好  哥哥  很  高興  能夠  見面  哥哥",
+  "en": "hello  older brother  very  glad  get to  meet  older brother"
+ },
+ "206": {
+  "zh": "我們  想要  邀請  哥哥  來  會館  王國",
+  "en": "we  want  invite  older brother  come to  Hall  Kingdom"
+ },
+ "207": {
+  "zh": "哥哥  Bình  將會  學習  聖經  一起  哥哥",
+  "en": "older brother  Bình  will  learn  the Bible  with  older brother"
+ },
+ "208": {
+  "zh": "約定  見面  再次  哥哥",
+  "en": "promise  meet  again  older brother"
+ },
+ "209": {
+  "zh": "弟妹  你好  姐姐",
+  "en": "younger sibling  hello  older sister"
+ },
+ "210": {
+  "zh": "姐姐  健康  嗎？",
+  "en": "older sister  healthy  is?"
+ },
+ "211": {
+  "zh": "很  高興  能夠  見面  姐姐",
+  "en": "very  glad  get to  meet  older sister"
+ },
+ "212": {
+  "zh": "姐姐  有  Zalo  嗎？",
+  "en": "older sister  have  Zalo  is?"
+ },
+ "213": {
+  "zh": "給  弟妹  請求  號碼  電話  的  姐姐",
+  "en": "give  younger sibling  ask for  number  phone  's  older sister"
+ },
+ "214": {
+  "zh": "謝謝  姐姐  很多",
+  "en": "thank you  older sister  very much"
+ },
+ "215": {
+  "zh": "週  下  弟妹  想要  見面  姐姐  再",
+  "en": "week  next  younger sibling  want  meet  older sister  again"
+ },
+ "216": {
+  "zh": "姐姐  有  時間  嗎？",
+  "en": "older sister  have  time  is?"
+ },
+ "217": {
+  "zh": "約定  見面  再次  姐姐",
+  "en": "promise  meet  again  older sister"
+ },
+ "218": {
+  "zh": "很  高興  能夠  見面  再次  姐姐",
+  "en": "very  glad  get to  meet  again  older sister"
+ },
+ "219": {
+  "zh": "弟妹  想要  邀請  姐姐  來  會館  王國",
+  "en": "younger sibling  want  invite  older sister  come to  Hall  Kingdom"
+ },
+ "220": {
+  "zh": "姐姐  去  一起  弟妹",
+  "en": "older sister  go  with  younger sibling"
+ },
+ "221": {
+  "zh": "姐姐  有  想要  了解  聖經  嗎？",
+  "en": "older sister  have  want  learn about  the Bible  is?"
+ },
+ "222": {
+  "zh": "姐姐  讀  經文  聖經  這",
+  "en": "older sister  read  verse  the Bible  this"
+ },
+ "223": {
+  "zh": "姐姐  覺得  如何",
+  "en": "older sister  think  how"
+ },
+ "224": {
+  "zh": "謝謝  姐姐  週  下  見面  再次",
+  "en": "thank you  older sister  week  next  meet  again"
+ },
+ "225": {
+  "zh": "我(晚輩)  你好  大叔  (敬語)",
+  "en": "I (junior)  hello  uncle  (polite)"
+ },
+ "226": {
+  "zh": "大叔  健康  嗎？  (敬語)",
+  "en": "uncle  healthy  is?  (polite)"
+ },
+ "227": {
+  "zh": "我(晚輩)  名字  是  志明  (敬語)",
+  "en": "I (junior)  name  is  John  (polite)"
+ },
+ "228": {
+  "zh": "我(晚輩)  是  人  韓國  (敬語)",
+  "en": "I (junior)  is  person  Korea  (polite)"
+ },
+ "229": {
+  "zh": "我(晚輩)  正在  學習  越南語  (敬語)",
+  "en": "I (junior)  -ing  learn  Vietnamese  (polite)"
+ },
+ "230": {
+  "zh": "我(晚輩)  是  見證人  耶和華  (敬語)",
+  "en": "I (junior)  is  Witness  Jehovah  (polite)"
+ },
+ "231": {
+  "zh": "我的名字是Hùng。很高興認識您。",
+  "en": "My name is Hùng. Nice to meet you."
+ },
+ "232": {
+  "zh": "很  高興  能夠  見面  大叔  (敬語)",
+  "en": "very  glad  get to  meet  uncle  (polite)"
+ },
+ "233": {
+  "zh": "大叔  有  Zalo  嗎？  (敬語)",
+  "en": "uncle  have  Zalo  is?  (polite)"
+ },
+ "234": {
+  "zh": "給  我(晚輩)  請求  號碼  電話  的  大叔  (敬語)",
+  "en": "give  I (junior)  ask for  number  phone  's  uncle  (polite)"
+ },
+ "235": {
+  "zh": "謝謝  大叔  很多  (敬語)",
+  "en": "thank you  uncle  very much  (polite)"
+ },
+ "236": {
+  "zh": "週  下  我(晚輩)  想要  見面  大叔  再  (敬語)",
+  "en": "week  next  I (junior)  want  meet  uncle  again  (polite)"
+ },
+ "237": {
+  "zh": "大叔  有  時間  嗎？  (敬語)",
+  "en": "uncle  have  time  is?  (polite)"
+ },
+ "238": {
+  "zh": "約定  見面  再次  大叔  (敬語)",
+  "en": "promise  meet  again  uncle  (polite)"
+ },
+ "239": {
+  "zh": "很  高興  能夠  見面  再次  大叔  (敬語)",
+  "en": "very  glad  get to  meet  again  uncle  (polite)"
+ },
+ "240": {
+  "zh": "我(晚輩)  想要  邀請  大叔  來  會館  王國  (敬語)",
+  "en": "I (junior)  want  invite  uncle  come to  Hall  Kingdom  (polite)"
+ },
+ "241": {
+  "zh": "聚會活動  聚會  很  有趣  (敬語)",
+  "en": "gathering  meeting  very  fun  (polite)"
+ },
+ "242": {
+  "zh": "大叔  去  一起  我(晚輩)  (敬語)",
+  "en": "uncle  go  with  I (junior)  (polite)"
+ },
+ "243": {
+  "zh": "大叔  有  想要  了解  聖經  嗎？  (敬語)",
+  "en": "uncle  have  want  learn about  the Bible  is?  (polite)"
+ },
+ "244": {
+  "zh": "學習  聖經  免費  (敬語)",
+  "en": "learn  the Bible  free  (polite)"
+ },
+ "245": {
+  "zh": "每  週  一  次  大約  30  分鐘  (敬語)",
+  "en": "every  week  one  time(s)  about  30  minutes  (polite)"
+ },
+ "246": {
+  "zh": "我們  開始  (敬語)",
+  "en": "we  start  (polite)"
+ },
+ "247": {
+  "zh": "今天  我們  學習  關於  幸福  (敬語)",
+  "en": "today  we  learn  about  happiness  (polite)"
+ },
+ "248": {
+  "zh": "大叔  讀  經文  聖經  這  (敬語)",
+  "en": "uncle  read  verse  the Bible  this  (polite)"
+ },
+ "249": {
+  "zh": "大叔  覺得  如何  (敬語)",
+  "en": "uncle  think  how  (polite)"
+ },
+ "250": {
+  "zh": "謝謝  大叔  週  下  見面  再次  (敬語)",
+  "en": "thank you  uncle  week  next  meet  again  (polite)"
+ },
+ "251": {
+  "zh": "我(晚輩)  你好  阿姨  (敬語)",
+  "en": "I (junior)  hello  auntie  (polite)"
+ },
+ "252": {
+  "zh": "阿姨  健康  嗎？  (敬語)",
+  "en": "ma'am  healthy  ?  (polite)"
+ },
+ "253": {
+  "zh": "我的名字是Thúy。很高興認識你。",
+  "en": "My name is Thúy. Nice to meet you."
+ },
+ "254": {
+  "zh": "很  高興  得以  見面  阿姨  (敬語)",
+  "en": "very  glad  get to  meet  ma'am  (polite)"
+ },
+ "255": {
+  "zh": "這裡  是  號碼  電話  的  姊姊  Mai  (敬語)",
+  "en": "here  is  number  phone  's  sister  Mai  (polite)"
+ },
+ "256": {
+  "zh": "姊姊  Mai  是  朋友  的  我(晚輩)  (敬語)",
+  "en": "sister  Mai  is  friend  's  I (junior)  (polite)"
+ },
+ "257": {
+  "zh": "姊姊  Mai  也  是  見證人  耶和華  (敬語)",
+  "en": "sister  Mai  too  is  Witness  Jehovah  (polite)"
+ },
+ "258": {
+  "zh": "給  我(晚輩)  請  號碼  的  阿姨  (敬語)",
+  "en": "give  I (junior)  ask  number  's  ma'am  (polite)"
+ },
+ "259": {
+  "zh": "姊姊  Mai  將會  聯絡  跟  阿姨  (敬語)",
+  "en": "sister  Mai  will  contact  with  ma'am  (polite)"
+ },
+ "260": {
+  "zh": "這裡  是  姊姊  Mai  (敬語)",
+  "en": "here  is  sister  Mai  (polite)"
+ },
+ "261": {
+  "zh": "你好  阿姨  (敬語)  很  高興  得以  見面  阿姨  (敬語)",
+  "en": "hello  ma'am  (polite)  very  glad  get to  meet  ma'am  (polite)"
+ },
+ "262": {
+  "zh": "我們  想要  邀請  阿姨  來  聚會所  王國  (敬語)",
+  "en": "we  want  invite  ma'am  come to  Hall  Kingdom  (polite)"
+ },
+ "263": {
+  "zh": "姊姊  Mai  將會  學習  聖經  跟  阿姨  (敬語)",
+  "en": "sister  Mai  will  learn  Bible  with  ma'am  (polite)"
+ },
+ "264": {
+  "zh": "每  週  一  次  (敬語)",
+  "en": "every  week  one  time  (polite)"
+ },
+ "265": {
+  "zh": "約定  見面  再  阿姨  (敬語)",
+  "en": "promise  meet  again  ma'am  (polite)"
+ },
+ "266": {
+  "zh": "我(晚輩)  名字  是  春嬌  (敬語)",
+  "en": "I (junior)  name  is  Mary  (polite)"
+ },
+ "267": {
+  "zh": "這裡  是  號碼  電話  的  哥哥  Bình  (敬語)",
+  "en": "here  is  number  phone  's  brother  Bình  (polite)"
+ },
+ "268": {
+  "zh": "哥哥  Bình  是  朋友  的  我(晚輩)  (敬語)",
+  "en": "brother  Bình  is  friend  's  I (junior)  (polite)"
+ },
+ "269": {
+  "zh": "哥哥  Bình  也  是  見證人  耶和華  (敬語)",
+  "en": "brother  Bình  too  is  Witness  Jehovah  (polite)"
+ },
+ "270": {
+  "zh": "給  我(晚輩)  請  號碼  的  阿伯  (敬語)",
+  "en": "give  I (junior)  ask  number  's  sir  (polite)"
+ },
+ "271": {
+  "zh": "哥哥  Bình  將會  聯絡  跟  阿伯  (敬語)",
+  "en": "brother  Bình  will  contact  with  sir  (polite)"
+ },
+ "272": {
+  "zh": "這裡  是  哥哥  Bình  (敬語)",
+  "en": "here  is  brother  Bình  (polite)"
+ },
+ "273": {
+  "zh": "你好  阿伯  (敬語)  很  高興  得以  見面  阿伯  (敬語)",
+  "en": "hello  sir  (polite)  very  glad  get to  meet  sir  (polite)"
+ },
+ "274": {
+  "zh": "我們  想要  邀請  阿伯  來  聚會所  王國  (敬語)",
+  "en": "we  want  invite  sir  come to  Hall  Kingdom  (polite)"
+ },
+ "275": {
+  "zh": "哥哥  Bình  將會  學習  聖經  跟  阿伯  (敬語)",
+  "en": "brother  Bình  will  learn  Bible  with  sir  (polite)"
+ },
+ "276": {
+  "zh": "阿姨  有  Zalo  嗎？  (敬語)",
+  "en": "ma'am  have  Zalo  ?  (polite)"
+ },
+ "277": {
+  "zh": "給  我(晚輩)  請  號碼  電話  的  阿姨  (敬語)",
+  "en": "give  I (junior)  ask  number  phone  's  ma'am  (polite)"
+ },
+ "278": {
+  "zh": "感謝  阿姨  很多  (敬語)",
+  "en": "thank  ma'am  a lot  (polite)"
+ },
+ "279": {
+  "zh": "週  下  我(晚輩)  想要  見面  阿姨  又  (敬語)",
+  "en": "week  next  I (junior)  want  meet  ma'am  again  (polite)"
+ },
+ "280": {
+  "zh": "阿姨  有  時間  嗎？  (敬語)",
+  "en": "ma'am  have  time  ?  (polite)"
+ },
+ "281": {
+  "zh": "很  高興  得以  見面  再  阿姨  (敬語)",
+  "en": "very  glad  get to  meet  again  ma'am  (polite)"
+ },
+ "282": {
+  "zh": "我(晚輩)  想要  邀請  阿姨  來  聚會所  王國  (敬語)",
+  "en": "I (junior)  want  invite  ma'am  come to  Hall  Kingdom  (polite)"
+ },
+ "283": {
+  "zh": "阿姨  去  跟  我(晚輩)  (敬語)",
+  "en": "ma'am  go  with  I (junior)  (polite)"
+ },
+ "284": {
+  "zh": "阿姨  有  想要  了解  聖經  嗎？  (敬語)",
+  "en": "ma'am  have  want  learn about  Bible  ?  (polite)"
+ },
+ "285": {
+  "zh": "阿姨  讀  經文  聖經  這  (敬語)",
+  "en": "ma'am  read  verse  Bible  this  (polite)"
+ },
+ "286": {
+  "zh": "阿姨  覺得  如何  (敬語)",
+  "en": "ma'am  think  how  (polite)"
+ },
+ "287": {
+  "zh": "感謝  阿姨  週  下  見面  再  (敬語)",
+  "en": "thank  ma'am  week  next  meet  again  (polite)"
+ },
+ "288": {
+  "zh": "我(晚輩)  你好  長輩  (敬語)",
+  "en": "I (junior)  hello  elder  (polite)"
+ },
+ "289": {
+  "zh": "長輩  健康  嗎？  (敬語)",
+  "en": "elder  healthy  ?  (polite)"
+ },
+ "290": {
+  "zh": "我的名字是Sơn。很高興認識你。",
+  "en": "My name is Sơn. Nice to meet you."
+ },
+ "291": {
+  "zh": "很  高興  得以  見面  長輩  (敬語)",
+  "en": "very  glad  get to  meet  elder  (polite)"
+ },
+ "292": {
+  "zh": "長輩  有  Zalo  嗎？  (敬語)",
+  "en": "elder  have  Zalo  ?  (polite)"
+ },
+ "293": {
+  "zh": "給  我(晚輩)  請  號碼  電話  的  長輩  (敬語)",
+  "en": "give  I (junior)  ask  number  phone  's  elder  (polite)"
+ },
+ "294": {
+  "zh": "感謝  長輩  很多  (敬語)",
+  "en": "thank  elder  a lot  (polite)"
+ },
+ "295": {
+  "zh": "週  下  我(晚輩)  想要  見面  長輩  又  (敬語)",
+  "en": "week  next  I (junior)  want  meet  elder  again  (polite)"
+ },
+ "296": {
+  "zh": "長輩  有  時間  嗎？  (敬語)",
+  "en": "elder  have  time  ?  (polite)"
+ },
+ "297": {
+  "zh": "約定  見面  再  長輩  (敬語)",
+  "en": "promise  meet  again  elder  (polite)"
+ },
+ "298": {
+  "zh": "很  高興  得以  再  見面  長輩  (敬語)",
+  "en": "very  glad  get to  again  meet  elder  (polite)"
+ },
+ "299": {
+  "zh": "我(晚輩)  想要  邀請  長輩  來  聚會所  王國  (敬語)",
+  "en": "I (junior)  want  invite  elder  come to  Hall  Kingdom  (polite)"
+ },
+ "300": {
+  "zh": "長輩  去  跟  我(晚輩)  (敬語)",
+  "en": "elder  go  with  I (junior)  (polite)"
+ },
+ "301": {
+  "zh": "長輩  有  想要  了解  聖經  嗎？  (敬語)",
+  "en": "elder  have  want  learn about  Bible  ?  (polite)"
+ },
+ "302": {
+  "zh": "長輩  讀  經文  聖經  這  (敬語)",
+  "en": "elder  read  verse  Bible  this  (polite)"
+ },
+ "303": {
+  "zh": "長輩  覺得  如何  (敬語)",
+  "en": "elder  think  how  (polite)"
+ },
+ "304": {
+  "zh": "感謝  長輩  週  下  見面  再  (敬語)",
+  "en": "thank  elder  week  next  meet  again  (polite)"
+ },
+ "305": {
+  "zh": "我的名字是Hải。很高興認識你。",
+  "en": "My name is Hải. Nice to meet you."
+ },
+ "306": {
+  "zh": "給  我(晚輩)  請  號碼  的  長輩  (敬語)",
+  "en": "give  I (junior)  ask  number  's  elder  (polite)"
+ },
+ "307": {
+  "zh": "姊姊  Mai  將會  聯絡  跟  長輩  (敬語)",
+  "en": "sister  Mai  will  contact  with  elder  (polite)"
+ },
+ "308": {
+  "zh": "你好  長輩  (敬語)  很  高興  得以  見面  長輩  (敬語)",
+  "en": "hello  elder  (polite)  very  glad  get to  meet  elder  (polite)"
+ },
+ "309": {
+  "zh": "我們  想要  邀請  長輩  來  聚會所  王國  (敬語)",
+  "en": "we  want  invite  elder  come to  Hall  Kingdom  (polite)"
+ },
+ "310": {
+  "zh": "姊姊  Mai  將會  學習  聖經  跟  長輩  (敬語)",
+  "en": "sister  Mai  will  learn  Bible  with  elder  (polite)"
+ },
+ "311": {
+  "zh": "哥哥  Bình  將會  聯絡  跟  長輩  (敬語)",
+  "en": "brother  Bình  will  contact  with  elder  (polite)"
+ },
+ "312": {
+  "zh": "哥哥  Bình  將會  學習  聖經  跟  長輩  (敬語)",
+  "en": "brother  Bình  will  learn  Bible  with  elder  (polite)"
+ },
+ "313": {
+  "zh": "再見面吧！",
+  "en": "See you again!"
+ },
+ "314": {
+  "zh": "謝謝。下週再見面吧！",
+  "en": "Thank you. See you again next week!"
+ },
+ "315": {
+  "zh": "你好  你",
+  "en": "hello  you"
+ },
+ "316": {
+  "zh": "你  健康  嗎？",
+  "en": "you  healthy  ?"
+ },
+ "317": {
+  "zh": "謝謝，我很好。",
+  "en": "Thank you, I'm doing well."
+ },
+ "318": {
+  "zh": "我  名字  是  志明",
+  "en": "I  name  is  John"
+ },
+ "319": {
+  "zh": "我  是  人  韓國",
+  "en": "I  is  person  Korea"
+ },
+ "320": {
+  "zh": "我  正在  學習  越南語",
+  "en": "I  -ing  learn  Vietnamese"
+ },
+ "321": {
+  "zh": "我  是  見證人  耶和華",
+  "en": "I  is  Witness  Jehovah"
+ },
+ "322": {
+  "zh": "我的名字是Nam。很高興認識你。",
+  "en": "My name is Nam. Nice to meet you."
+ },
+ "323": {
+  "zh": "很  高興  得以  見面  你",
+  "en": "very  glad  get to  meet  you"
+ },
+ "324": {
+  "zh": "你  有  Zalo  嗎？",
+  "en": "you  have  Zalo  ?"
+ },
+ "325": {
+  "zh": "有，我有Zalo。",
+  "en": "Yes, I have Zalo."
+ },
+ "326": {
+  "zh": "給  我  請  號碼  電話  的  你  (客氣)",
+  "en": "give  I  ask  number  phone  's  you  (polite)"
+ },
+ "327": {
+  "zh": "感謝  你  很多",
+  "en": "thank  you  a lot"
+ },
+ "328": {
+  "zh": "週  下  我  想要  見面  你  又",
+  "en": "week  next  I  want  meet  you  again"
+ },
+ "329": {
+  "zh": "你  有  時間  嗎？",
+  "en": "you  have  time  ?"
+ },
+ "330": {
+  "zh": "星期日可以。",
+  "en": "Sunday works for me."
+ },
+ "331": {
+  "zh": "約定  見面  再  你  (客氣)",
+  "en": "promise  meet  again  you  (polite)"
+ },
+ "332": {
+  "zh": "很  高興  得以  再  見面  你",
+  "en": "very  glad  get to  again  meet  you"
+ },
+ "333": {
+  "zh": "我  想要  邀請  你  來  聚會所  王國",
+  "en": "I  want  invite  you  come to  Hall  Kingdom"
+ },
+ "334": {
+  "zh": "你  去  跟  我  好嗎？",
+  "en": "you  go  with  I  would you like to?"
+ },
+ "335": {
+  "zh": "你  有  想要  了解  聖經  嗎？",
+  "en": "you  have  want  learn about  Bible  ?"
+ },
+ "336": {
+  "zh": "每  週  一  次  大約  三十  分鐘",
+  "en": "every  week  one  time  about  thirty  minutes"
+ },
+ "337": {
+  "zh": "我想試試看。",
+  "en": "I'd like to try."
+ },
+ "338": {
+  "zh": "你  讀  經文  聖經  這  (客氣)",
+  "en": "you  read  verse  Bible  this  (polite)"
+ },
+ "339": {
+  "zh": "你  覺得  如何",
+  "en": "you  think  how"
+ },
+ "340": {
+  "zh": "感謝  你  週  下  見面  再  (客氣)",
+  "en": "thank  you  week  next  meet  again  (polite)"
+ },
+ "341": {
+  "zh": "詩篇119篇105節說，上帝的話語就像照亮我們道路的燈。",
+  "en": "Psalm 119:105 says that God's word is like a lamp that lights our path."
+ },
+ "342": {
+  "zh": "就像手電筒在黑夜裡照亮道路一樣。您覺得怎麼樣呢？",
+  "en": "It's like a flashlight lighting the way on a dark night. What do you think?"
+ },
+ "343": {
+  "zh": "您知道上帝是有名字的嗎？",
+  "en": "Did you know God has a name?"
+ },
+ "344": {
+  "zh": "我的名字是Hoa。很高興認識你。",
+  "en": "My name is Hoa. Nice to meet you."
+ },
+ "345": {
+  "zh": "這裡  是  號碼  電話  的  姊妹  Mai",
+  "en": "here  is  number  phone  's  sister  Mai"
+ },
+ "346": {
+  "zh": "姊妹  Mai  是  朋友  的  我",
+  "en": "sister  Mai  is  friend  's  I"
+ },
+ "347": {
+  "zh": "姊妹  Mai  也  是  見證人  耶和華",
+  "en": "sister  Mai  too  is  Witness  Jehovah"
+ },
+ "348": {
+  "zh": "給  我  請  號碼  的  你  (客氣)",
+  "en": "give  I  ask  number  's  you  (polite)"
+ },
+ "349": {
+  "zh": "姊妹  Mai  將會  聯絡  跟  你",
+  "en": "sister  Mai  will  contact  with  you"
+ },
+ "350": {
+  "zh": "這裡  是  姊妹  Mai",
+  "en": "here  is  sister  Mai"
+ },
+ "351": {
+  "zh": "你好  你  很  高興  得以  見面  你",
+  "en": "hello  you  very  glad  get to  meet  you"
+ },
+ "352": {
+  "zh": "我們  想要  邀請  你  來  聚會所  王國",
+  "en": "we  want  invite  you  come to  Hall  Kingdom"
+ },
+ "353": {
+  "zh": "我想邀請你來王國聚會所。",
+  "en": "I'd like to invite you to the Kingdom Hall."
+ },
+ "354": {
+  "zh": "我會找時間去看看。",
+  "en": "I'll go check it out sometime."
+ },
+ "355": {
+  "zh": "姊妹  Mai  將會  學習  聖經  跟  你",
+  "en": "sister  Mai  will  learn  Bible  with  you"
+ },
+ "356": {
+  "zh": "謝謝。",
+  "en": "Thank you."
+ },
+ "357": {
+  "zh": "我  名字  是  春嬌",
+  "en": "I  name  is  Mary"
+ },
+ "358": {
+  "zh": "這裡  是  號碼  電話  的  弟兄  Bình",
+  "en": "here  is  number  phone  's  brother  Bình"
+ },
+ "359": {
+  "zh": "弟兄  Bình  是  朋友  的  我",
+  "en": "brother  Bình  is  friend  's  I"
+ },
+ "360": {
+  "zh": "弟兄  Bình  也  是  見證人  耶和華",
+  "en": "brother  Bình  too  is  Witness  Jehovah"
+ },
+ "361": {
+  "zh": "弟兄  Bình  將會  聯絡  跟  你",
+  "en": "brother  Bình  will  contact  with  you"
+ },
+ "362": {
+  "zh": "弟兄  Bình  將會  學習  聖經  跟  你",
+  "en": "brother  Bình  will  learn  Bible  with  you"
+ },
+ "363": {
+  "zh": "你好  你(晚輩)",
+  "en": "hello  you (junior)"
+ },
+ "364": {
+  "zh": "你(晚輩)  健康  嗎？",
+  "en": "you (junior)  healthy  ?"
+ },
+ "365": {
+  "zh": "是的，我很好，謝謝您的關心。",
+  "en": "Yes, I'm doing well. Thank you for asking."
+ },
+ "366": {
+  "zh": "我的名字是Minh。很高興認識你。",
+  "en": "My name is Minh. Nice to meet you."
+ },
+ "367": {
+  "zh": "我  也  很  高興  得以  見面  你",
+  "en": "I  too  very  glad  get to  meet  you"
+ },
+ "368": {
+  "zh": "我也很高興認識你。",
+  "en": "Nice to meet you too."
+ },
+ "369": {
+  "zh": "你有Zalo嗎？",
+  "en": "Do you have Zalo?"
+ },
+ "370": {
+  "zh": "可以給我你的電話號碼嗎？",
+  "en": "Could you give me your phone number?"
+ },
+ "371": {
+  "zh": "我的號碼是010-2345-6789。",
+  "en": "My number is 010-2345-6789."
+ },
+ "372": {
+  "zh": "真的很謝謝你。",
+  "en": "Thank you so much."
+ },
+ "373": {
+  "zh": "我想下週再見面。",
+  "en": "I'd like to meet again next week."
+ },
+ "374": {
+  "zh": "你有時間嗎？",
+  "en": "Do you have time?"
+ },
+ "375": {
+  "zh": "有，我星期日有時間。",
+  "en": "Yes, I have time on Sunday."
+ },
+ "376": {
+  "zh": "那就再見囉！",
+  "en": "See you then!"
+ },
+ "377": {
+  "zh": "我  很  高興  得以  再  見面  你",
+  "en": "I  very  glad  get to  again  meet  you"
+ },
+ "378": {
+  "zh": "我想邀請你來王國聚會所。",
+  "en": "I'd like to invite you to the Kingdom Hall."
+ },
+ "379": {
+  "zh": "你  去  跟...一起  我  要嗎？",
+  "en": "you  go  with  I  want to?"
+ },
+ "380": {
+  "zh": "你要跟我一起去嗎？",
+  "en": "Would you like to go with me?"
+ },
+ "381": {
+  "zh": "大概一星期一次，每次三十分鐘左右。",
+  "en": "It's about once a week, for around 30 minutes."
+ },
+ "382": {
+  "zh": "那我們開始吧？",
+  "en": "Shall we start then?"
+ },
+ "383": {
+  "zh": "我們今天來學習關於幸福的內容吧。",
+  "en": "Today, let's learn about happiness."
+ },
+ "384": {
+  "zh": "可以請你讀一下這節聖經經文嗎？",
+  "en": "Could you read this Bible verse for me?"
+ },
+ "385": {
+  "zh": "你覺得怎麼樣？",
+  "en": "What do you think?"
+ },
+ "386": {
+  "zh": "真的很好。",
+  "en": "That's really good."
+ },
+ "387": {
+  "zh": "謝謝。我們下星期再見！",
+  "en": "Thank you. See you again next week!"
+ },
+ "388": {
+  "zh": "我的名字是Lan。很高興認識你。",
+  "en": "My name is Lan. Nice to meet you."
+ },
+ "389": {
+  "zh": "這是Mai姊妹的電話號碼。",
+  "en": "This is Sister Mai's phone number."
+ },
+ "390": {
+  "zh": "Mai姊妹是我的朋友。",
+  "en": "Sister Mai is my friend."
+ },
+ "391": {
+  "zh": "Mai姊妹也是耶和華見證人。",
+  "en": "Sister Mai is also a Jehovah's Witness."
+ },
+ "392": {
+  "zh": "Mai姊妹會跟你聯絡。",
+  "en": "Sister Mai will contact you."
+ },
+ "393": {
+  "zh": "這位是Mai姊妹。",
+  "en": "This is Sister Mai."
+ },
+ "394": {
+  "zh": "你好  你  非常  高興  變得  再  見到  你",
+  "en": "hello  you  very  glad  to become  again  meet  you"
+ },
+ "395": {
+  "zh": "你好！很高興再見到你。",
+  "en": "Hi! Good to see you again."
+ },
+ "396": {
+  "zh": "我  和  姊妹  Mai  想要  邀請  你  來  聚會所  王國",
+  "en": "I  and  sister  Mai  want  invite  you  come to  hall  Kingdom"
+ },
+ "397": {
+  "zh": "我和Mai姊妹想邀請你來王國聚會所。",
+  "en": "Mai and I would like to invite you to the Kingdom Hall."
+ },
+ "398": {
+  "zh": "Mai姊妹會跟你一起研讀聖經。",
+  "en": "Sister Mai will study the Bible together with you."
+ },
+ "399": {
+  "zh": "謝謝。",
+  "en": "Thank you."
+ },
+ "400": {
+  "zh": "再見！",
+  "en": "See you again!"
+ },
+ "401": {
+  "zh": "這是Bình弟兄的電話號碼。",
+  "en": "This is Brother Bình's phone number."
+ },
+ "402": {
+  "zh": "Bình弟兄是我的朋友。",
+  "en": "Brother Bình is my friend."
+ },
+ "403": {
+  "zh": "Bình弟兄也是耶和華見證人。",
+  "en": "Brother Bình is also a Jehovah's Witness."
+ },
+ "404": {
+  "zh": "Bình弟兄會跟你聯絡。",
+  "en": "Brother Bình will contact you."
+ },
+ "405": {
+  "zh": "這位是Bình弟兄。",
+  "en": "This is Brother Bình."
+ },
+ "406": {
+  "zh": "我  和  弟兄  Bình  想要  邀請  你  來  聚會所  王國",
+  "en": "I  and  brother  Bình  want  invite  you  come to  hall  Kingdom"
+ },
+ "407": {
+  "zh": "我和Bình弟兄想邀請你來王國聚會所。",
+  "en": "Bình and I would like to invite you to the Kingdom Hall."
+ },
+ "408": {
+  "zh": "Bình弟兄會跟你一起研讀聖經。",
+  "en": "Brother Bình will study the Bible together with you."
+ },
+ "409": {
+  "zh": "你好  anh",
+  "en": "hello  anh"
+ },
+ "410": {
+  "zh": "anh  健康  嗎？",
+  "en": "anh  healthy  are you?"
+ },
+ "411": {
+  "zh": "我  名字  是  志明",
+  "en": "I  name  is  John"
+ },
+ "412": {
+  "zh": "我  是  人  韓國",
+  "en": "I  am  person  Korea"
+ },
+ "413": {
+  "zh": "我  正在  學習  越南語",
+  "en": "I  -ing  learn  Vietnamese"
+ },
+ "414": {
+  "zh": "我  是  見證人  耶和華",
+  "en": "I  am  Witness  Jehovah"
+ },
+ "415": {
+  "zh": "我的名字是Long。很高興認識你。",
+  "en": "My name is Long. Nice to meet you."
+ },
+ "416": {
+  "zh": "非常  高興  變得  見到  anh",
+  "en": "very  glad  to become  meet  anh"
+ },
+ "417": {
+  "zh": "很高興認識您。",
+  "en": "It's a pleasure to meet you."
+ },
+ "418": {
+  "zh": "anh  有  Zalo  嗎？",
+  "en": "anh  have  Zalo  do you?"
+ },
+ "419": {
+  "zh": "給  我  請求  號碼  電話",
+  "en": "give  me  ask  number  phone"
+ },
+ "420": {
+  "zh": "可以告訴我您的電話號碼嗎？",
+  "en": "Could you give me your phone number?"
+ },
+ "421": {
+  "zh": "謝謝  anh  很多",
+  "en": "thank you  anh  very much"
+ },
+ "422": {
+  "zh": "週  下  我  想要  見  anh  再",
+  "en": "week  next  I  want  meet  anh  again"
+ },
+ "423": {
+  "zh": "anh  有  時間  嗎？",
+  "en": "anh  have  time  do you?"
+ },
+ "424": {
+  "zh": "約定  見  再  anh",
+  "en": "promise  meet  again  anh"
+ },
+ "425": {
+  "zh": "那麼，我們再見！",
+  "en": "Well then, I'll see you again!"
+ },
+ "426": {
+  "zh": "非常  高興  變得  再  見到  anh",
+  "en": "very  glad  to become  again  meet  anh"
+ },
+ "427": {
+  "zh": "很高興再次見到您。",
+  "en": "It's nice to see you again."
+ },
+ "428": {
+  "zh": "我  想要  邀請  anh  來  聚會所  王國",
+  "en": "I  want  invite  anh  come to  hall  Kingdom"
+ },
+ "429": {
+  "zh": "anh  去  跟...一起  我",
+  "en": "anh  go  with  me"
+ },
+ "430": {
+  "zh": "anh  有  想要  了解  聖經  嗎？",
+  "en": "anh  have  want  find out  Bible  do you?"
+ },
+ "431": {
+  "zh": "anh  讀  節  聖經  這",
+  "en": "anh  read  verse  Bible  this"
+ },
+ "432": {
+  "zh": "anh  想  如何",
+  "en": "anh  think  how"
+ },
+ "433": {
+  "zh": "謝謝  anh  週  下  見  再",
+  "en": "thank you  anh  week  next  meet  again"
+ },
+ "434": {
+  "zh": "就像在黑暗的夜晚，手電筒為道路照明一樣。",
+  "en": "It's like how a flashlight lights up the road on a dark night."
+ },
+ "435": {
+  "zh": "你好  chị",
+  "en": "hello  chị"
+ },
+ "436": {
+  "zh": "chị  健康  嗎？",
+  "en": "chị  healthy  are you?"
+ },
+ "437": {
+  "zh": "我的名字是Linh。很高興認識你。",
+  "en": "My name is Linh. Nice to meet you."
+ },
+ "438": {
+  "zh": "非常  高興  變得  見到  chị",
+  "en": "very  glad  to become  meet  chị"
+ },
+ "439": {
+  "zh": "chị  有  Zalo  嗎？",
+  "en": "chị  have  Zalo  do you?"
+ },
+ "440": {
+  "zh": "謝謝  chị  很多",
+  "en": "thank you  chị  very much"
+ },
+ "441": {
+  "zh": "週  下  我  想要  見  chị  再",
+  "en": "week  next  I  want  meet  chị  again"
+ },
+ "442": {
+  "zh": "chị  有  時間  嗎？",
+  "en": "chị  have  time  do you?"
+ },
+ "443": {
+  "zh": "約定  見  再  chị",
+  "en": "promise  meet  again  chị"
+ },
+ "444": {
+  "zh": "非常  高興  變得  再  見到  chị",
+  "en": "very  glad  to become  again  meet  chị"
+ },
+ "445": {
+  "zh": "我  想要  邀請  chị  來  聚會所  王國",
+  "en": "I  want  invite  chị  come to  hall  Kingdom"
+ },
+ "446": {
+  "zh": "chị  去  跟...一起  我",
+  "en": "chị  go  with  me"
+ },
+ "447": {
+  "zh": "chị  有  想要  了解  聖經  嗎？",
+  "en": "chị  have  want  find out  Bible  do you?"
+ },
+ "448": {
+  "zh": "chị  讀  節  聖經  這",
+  "en": "chị  read  verse  Bible  this"
+ },
+ "449": {
+  "zh": "chị  想  如何",
+  "en": "chị  think  how"
+ },
+ "450": {
+  "zh": "謝謝  chị  週  下  見  再",
+  "en": "thank you  chị  week  next  meet  again"
+ },
+ "451": {
+  "zh": "你好  chú",
+  "en": "hello  chú"
+ },
+ "452": {
+  "zh": "chú  健康  嗎？",
+  "en": "chú  healthy  are you?"
+ },
+ "453": {
+  "zh": "我的名字是Hùng。很高興認識你。",
+  "en": "My name is Hùng. Nice to meet you."
+ },
+ "454": {
+  "zh": "非常  高興  變得  見到  chú",
+  "en": "very  glad  to become  meet  chú"
+ },
+ "455": {
+  "zh": "chú  有  Zalo  嗎？",
+  "en": "chú  have  Zalo  do you?"
+ },
+ "456": {
+  "zh": "謝謝  chú  很多",
+  "en": "thank you  chú  very much"
+ },
+ "457": {
+  "zh": "週  下  我  想要  見  chú  再",
+  "en": "week  next  I  want  meet  chú  again"
+ },
+ "458": {
+  "zh": "chú  有  時間  嗎？",
+  "en": "chú  have  time  do you?"
+ },
+ "459": {
+  "zh": "約定  見  再  chú",
+  "en": "promise  meet  again  chú"
+ },
+ "460": {
+  "zh": "非常  高興  變得  再  見到  chú",
+  "en": "very  glad  to become  again  meet  chú"
+ },
+ "461": {
+  "zh": "我  想要  邀請  chú  來  聚會所  王國",
+  "en": "I  want  invite  chú  come to  hall  Kingdom"
+ },
+ "462": {
+  "zh": "chú  去  跟...一起  我",
+  "en": "chú  go  with  me"
+ },
+ "463": {
+  "zh": "chú  有  想要  了解  聖經  嗎？",
+  "en": "chú  have  want  find out  Bible  do you?"
+ },
+ "464": {
+  "zh": "chú  讀  節  聖經  這",
+  "en": "chú  read  verse  Bible  this"
+ },
+ "465": {
+  "zh": "chú  想  如何",
+  "en": "chú  think  how"
+ },
+ "466": {
+  "zh": "謝謝  chú  週  下  見  再",
+  "en": "thank you  chú  week  next  meet  again"
+ },
+ "467": {
+  "zh": "你好  cô",
+  "en": "hello  cô"
+ },
+ "468": {
+  "zh": "cô  健康  嗎？",
+  "en": "cô  healthy  are you?"
+ },
+ "469": {
+  "zh": "我的名字是Xuân。很高興認識你。",
+  "en": "My name is Xuân. Nice to meet you."
+ },
+ "470": {
+  "zh": "非常  高興  變得  見到  cô",
+  "en": "very  glad  to become  meet  cô"
+ },
+ "471": {
+  "zh": "cô  有  Zalo  嗎？",
+  "en": "cô  have  Zalo  do you?"
+ },
+ "472": {
+  "zh": "謝謝  cô  很多",
+  "en": "thank you  cô  very much"
+ },
+ "473": {
+  "zh": "週  下  我  想要  見  cô  再",
+  "en": "week  next  I  want  meet  cô  again"
+ },
+ "474": {
+  "zh": "cô  有  時間  嗎？",
+  "en": "cô  have  time  do you?"
+ },
+ "475": {
+  "zh": "約定  見  再  cô",
+  "en": "promise  meet  again  cô"
+ },
+ "476": {
+  "zh": "非常  高興  變得  再  見到  cô",
+  "en": "very  glad  to become  again  meet  cô"
+ },
+ "477": {
+  "zh": "我  想要  邀請  cô  來  聚會所  王國",
+  "en": "I  want  invite  cô  come to  hall  Kingdom"
+ },
+ "478": {
+  "zh": "cô  去  跟...一起  我",
+  "en": "cô  go  with  me"
+ },
+ "479": {
+  "zh": "cô  有  想要  了解  聖經  嗎？",
+  "en": "cô  have  want  find out  Bible  do you?"
+ },
+ "480": {
+  "zh": "cô  讀  節  聖經  這",
+  "en": "cô  read  verse  Bible  this"
+ },
+ "481": {
+  "zh": "cô  想  如何",
+  "en": "cô  think  how"
+ },
+ "482": {
+  "zh": "謝謝  cô  週  下  見  再",
+  "en": "thank you  cô  week  next  meet  again"
+ },
+ "483": {
+  "zh": "你好  bác",
+  "en": "hello  bác"
+ },
+ "484": {
+  "zh": "bác  健康  嗎？",
+  "en": "bác  healthy  are you?"
+ },
+ "485": {
+  "zh": "我的名字是Tâm。很高興認識你。",
+  "en": "My name is Tâm. Nice to meet you."
+ },
+ "486": {
+  "zh": "非常  高興  變得  見到  bác",
+  "en": "very  glad  to become  meet  bác"
+ },
+ "487": {
+  "zh": "bác  有  Zalo  嗎？",
+  "en": "bác  have  Zalo  do you?"
+ },
+ "488": {
+  "zh": "謝謝  bác  很多",
+  "en": "thank you  bác  very much"
+ },
+ "489": {
+  "zh": "週  下  我  想要  見  bác  再",
+  "en": "week  next  I  want  meet  bác  again"
+ },
+ "490": {
+  "zh": "bác  有  時間  嗎？",
+  "en": "bác  have  time  do you?"
+ },
+ "491": {
+  "zh": "約定  見  再  bác",
+  "en": "promise  meet  again  bác"
+ },
+ "492": {
+  "zh": "非常  高興  變得  再  見到  bác",
+  "en": "very  glad  to become  again  meet  bác"
+ },
+ "493": {
+  "zh": "我  想要  邀請  bác  來  聚會所  王國",
+  "en": "I  want  invite  bác  come to  hall  Kingdom"
+ },
+ "494": {
+  "zh": "bác  去  跟...一起  我",
+  "en": "bác  go  with  me"
+ },
+ "495": {
+  "zh": "bác  有  想要  了解  聖經  嗎？",
+  "en": "bác  have  want  find out  Bible  do you?"
+ },
+ "496": {
+  "zh": "bác  讀  節  聖經  這",
+  "en": "bác  read  verse  Bible  this"
+ },
+ "497": {
+  "zh": "bác  想  如何",
+  "en": "bác  think  how"
+ },
+ "498": {
+  "zh": "謝謝  bác  週  下  見  再",
+  "en": "thank you  bác  week  next  meet  again"
+ },
+ "499": {
+  "zh": "我的名字是Hoa。很高興認識你。",
+  "en": "My name is Hoa. Nice to meet you."
+ },
+ "500": {
+  "zh": "我  名字  是  春嬌",
+  "en": "I  name  is  Mary"
+ }
+}

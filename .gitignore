@@ -1,0 +1,37 @@
+# Generated deployment artifacts
+dist/
+app.html
+data_block.js
+
+# Python and editor-local files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.vscode/
+.idea/
+
+# Local backups and visual verification artifacts
+*.bak
+*.ko_backup
+shot*.png
+settings_dark.png
+talks_dark.png
+
+# Local source captures and intermediate extraction files
+neighbor_conv_raw/
+wt_urls/
+week9_ko.html
+week9_vi.html
+week10_ko.html
+week10_vi.html
+week9_ko.txt
+week9_vi.txt
+week10_ko.txt
+week10_vi.txt
+pdf_*.txt
+docx1000_parsed.json
+hanja_raw.json
+hanja_words.txt
+hanja_endless.txt
+parse_stage1.json

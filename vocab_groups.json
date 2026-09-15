@@ -1,0 +1,6802 @@
+[
+  {
+    "n": 1,
+    "syllable": "an",
+    "words": [
+      {
+        "word": "an toàn",
+        "hanja": "安全",
+        "meaning": {
+          "ko": "안전",
+          "zh": "安全",
+          "en": "safety",
+          "ja": "安全"
+        }
+      },
+      {
+        "word": "an ninh",
+        "hanja": "安寧",
+        "meaning": {
+          "ko": "치안·안녕",
+          "zh": "治安·安寧",
+          "en": "public security, peace",
+          "ja": "治安・安寧"
+        }
+      },
+      {
+        "word": "an tâm",
+        "hanja": "安心",
+        "meaning": {
+          "ko": "안심",
+          "zh": "安心",
+          "en": "relief, peace of mind",
+          "ja": "安心"
+        }
+      },
+      {
+        "word": "an ủi",
+        "hanja": "安慰",
+        "meaning": {
+          "ko": "위로",
+          "zh": "安慰",
+          "en": "comfort",
+          "ja": "慰め"
+        }
+      },
+      {
+        "word": "an cư",
+        "hanja": "安居",
+        "meaning": {
+          "ko": "안주·정착",
+          "zh": "安頓・定居",
+          "en": "settling down · settlement",
+          "ja": "安住・定住"
+        }
+      },
+      {
+        "word": "an nhàn",
+        "hanja": "安閑",
+        "meaning": {
+          "ko": "한가함",
+          "zh": "空閒",
+          "en": "leisure",
+          "ja": "暇"
+        }
+      },
+      {
+        "word": "an sinh",
+        "hanja": "安生",
+        "meaning": {
+          "ko": "복지",
+          "zh": "福利",
+          "en": "welfare",
+          "ja": "福祉"
+        }
+      }
+    ]
+  },
+  {
+    "n": 2,
+    "syllable": "âm",
+    "words": [
+      {
+        "word": "âm nhạc",
+        "hanja": "音樂",
+        "meaning": {
+          "ko": "음악",
+          "zh": "音樂",
+          "en": "music",
+          "ja": "音楽"
+        }
+      },
+      {
+        "word": "âm thanh",
+        "hanja": "音聲",
+        "meaning": {
+          "ko": "음향·소리",
+          "zh": "音響·聲音",
+          "en": "sound",
+          "ja": "音響・音"
+        }
+      },
+      {
+        "word": "âm lượng",
+        "hanja": "音量",
+        "meaning": {
+          "ko": "음량",
+          "zh": "音量",
+          "en": "volume",
+          "ja": "音量"
+        }
+      },
+      {
+        "word": "âm mưu",
+        "hanja": "陰謀",
+        "meaning": {
+          "ko": "음모",
+          "zh": "陰謀",
+          "en": "conspiracy",
+          "ja": "陰謀"
+        }
+      },
+      {
+        "word": "âm thầm",
+        "hanja": "陰",
+        "meaning": {
+          "ko": "은밀히·조용히",
+          "zh": "秘密地·安靜地",
+          "en": "secretly, quietly",
+          "ja": "ひそかに・静かに"
+        }
+      },
+      {
+        "word": "âm điệu",
+        "hanja": "音調",
+        "meaning": {
+          "ko": "음조·가락",
+          "zh": "音調·旋律",
+          "en": "tone/melody",
+          "ja": "音調・メロディー"
+        }
+      },
+      {
+        "word": "âm tính",
+        "hanja": "陰性",
+        "meaning": {
+          "ko": "음성(검사결과)",
+          "zh": "陰性(檢查結果)",
+          "en": "negative (test result)",
+          "ja": "陰性(検査結果)"
+        }
+      }
+    ]
+  },
+  {
+    "n": 3,
+    "syllable": "bảo",
+    "words": [
+      {
+        "word": "bảo vệ",
+        "hanja": "保衛",
+        "meaning": {
+          "ko": "보호",
+          "zh": "保護",
+          "en": "protection",
+          "ja": "保護"
+        }
+      },
+      {
+        "word": "bảo hiểm",
+        "hanja": "保險",
+        "meaning": {
+          "ko": "보험",
+          "zh": "保險",
+          "en": "insurance",
+          "ja": "保険"
+        }
+      },
+      {
+        "word": "bảo đảm",
+        "hanja": "保擔",
+        "meaning": {
+          "ko": "보장·보증",
+          "zh": "保障·保證",
+          "en": "guarantee; assurance",
+          "ja": "保障・保証"
+        }
+      },
+      {
+        "word": "bảo quản",
+        "hanja": "保管",
+        "meaning": {
+          "ko": "보관",
+          "zh": "保管",
+          "en": "storage; keeping",
+          "ja": "保管"
+        }
+      },
+      {
+        "word": "bảo tồn",
+        "hanja": "保存",
+        "meaning": {
+          "ko": "보존",
+          "zh": "保存",
+          "en": "preservation",
+          "ja": "保存"
+        }
+      },
+      {
+        "word": "bảo trì",
+        "hanja": "保持",
+        "meaning": {
+          "ko": "보수·유지",
+          "zh": "維修·維護",
+          "en": "repair; maintenance",
+          "ja": "補修・維持"
+        }
+      },
+      {
+        "word": "bảo hành",
+        "hanja": "保行",
+        "meaning": {
+          "ko": "보증·AS",
+          "zh": "保固·售後服務",
+          "en": "warranty; after-sales service",
+          "ja": "保証・アフターサービス"
+        }
+      }
+    ]
+  },
+  {
+    "n": 4,
+    "syllable": "bình",
+    "words": [
+      {
+        "word": "bình thường",
+        "hanja": "平常",
+        "meaning": {
+          "ko": "보통·평범",
+          "zh": "普通·平凡",
+          "en": "ordinary; plain",
+          "ja": "普通・平凡"
+        }
+      },
+      {
+        "word": "bình tĩnh",
+        "hanja": "平靜",
+        "meaning": {
+          "ko": "침착",
+          "zh": "鎮定",
+          "en": "calmness",
+          "ja": "落ち着き"
+        }
+      },
+      {
+        "word": "bình luận",
+        "hanja": "評論",
+        "meaning": {
+          "ko": "평론·댓글",
+          "zh": "評論·留言",
+          "en": "commentary, comment",
+          "ja": "評論・コメント"
+        }
+      },
+      {
+        "word": "bình đẳng",
+        "hanja": "平等",
+        "meaning": {
+          "ko": "평등",
+          "zh": "平等",
+          "en": "equality",
+          "ja": "平等"
+        }
+      },
+      {
+        "word": "bình an",
+        "hanja": "平安",
+        "meaning": {
+          "ko": "평안",
+          "zh": "平安",
+          "en": "peace",
+          "ja": "平安"
+        }
+      },
+      {
+        "word": "bình dân",
+        "hanja": "平民",
+        "meaning": {
+          "ko": "서민적·대중적",
+          "zh": "平民的·大眾的",
+          "en": "folksy, popular",
+          "ja": "庶民的·大衆的"
+        }
+      },
+      {
+        "word": "hòa bình",
+        "hanja": "和平→평화",
+        "meaning": {
+          "ko": "평화",
+          "zh": "和平",
+          "en": "peace",
+          "ja": "平和"
+        }
+      }
+    ]
+  },
+  {
+    "n": 5,
+    "syllable": "cải",
+    "words": [
+      {
+        "word": "cải cách",
+        "hanja": "改革",
+        "meaning": {
+          "ko": "개혁",
+          "zh": "改革",
+          "en": "reform",
+          "ja": "改革"
+        }
+      },
+      {
+        "word": "cải thiện",
+        "hanja": "改善",
+        "meaning": {
+          "ko": "개선",
+          "zh": "改善",
+          "en": "improvement",
+          "ja": "改善"
+        }
+      },
+      {
+        "word": "cải tạo",
+        "hanja": "改造",
+        "meaning": {
+          "ko": "개조",
+          "zh": "改造",
+          "en": "remodeling",
+          "ja": "改造"
+        }
+      },
+      {
+        "word": "cải tiến",
+        "hanja": "改進",
+        "meaning": {
+          "ko": "개선·개량",
+          "zh": "改善·改良",
+          "en": "improvement",
+          "ja": "改善・改良"
+        }
+      },
+      {
+        "word": "cải chính",
+        "hanja": "改正",
+        "meaning": {
+          "ko": "정정·시정",
+          "zh": "訂正·糾正",
+          "en": "correction/rectification",
+          "ja": "訂正・是正"
+        }
+      }
+    ]
+  },
+  {
+    "n": 6,
+    "syllable": "cảm",
+    "words": [
+      {
+        "word": "cảm giác",
+        "hanja": "感覺",
+        "meaning": {
+          "ko": "감각·느낌",
+          "zh": "感覺",
+          "en": "sense/feeling",
+          "ja": "感覚・感じ"
+        }
+      },
+      {
+        "word": "cảm xúc",
+        "hanja": "感觸",
+        "meaning": {
+          "ko": "감정",
+          "zh": "感情",
+          "en": "emotion",
+          "ja": "感情"
+        }
+      },
+      {
+        "word": "cảm ơn",
+        "hanja": "感",
+        "meaning": {
+          "ko": "감사",
+          "zh": "感謝",
+          "en": "gratitude",
+          "ja": "感謝"
+        }
+      },
+      {
+        "word": "cảm động",
+        "hanja": "感動",
+        "meaning": {
+          "ko": "감동",
+          "zh": "感動",
+          "en": "being moved",
+          "ja": "感動"
+        }
+      },
+      {
+        "word": "cảm thông",
+        "hanja": "感通",
+        "meaning": {
+          "ko": "공감·이해",
+          "zh": "同感‧理解",
+          "en": "empathy, understanding",
+          "ja": "共感・理解"
+        }
+      },
+      {
+        "word": "cảm hứng",
+        "hanja": "感興",
+        "meaning": {
+          "ko": "영감",
+          "zh": "靈感",
+          "en": "inspiration",
+          "ja": "インスピレーション"
+        }
+      },
+      {
+        "word": "tình cảm",
+        "hanja": "情感→감정",
+        "meaning": {
+          "ko": "감정",
+          "zh": "感情",
+          "en": "emotion",
+          "ja": "感情"
+        }
+      }
+    ]
+  },
+  {
+    "n": 7,
+    "syllable": "cấp",
+    "words": [
+      {
+        "word": "cấp bậc",
+        "hanja": "級",
+        "meaning": {
+          "ko": "등급·계급",
+          "zh": "等級·階級",
+          "en": "grade · rank",
+          "ja": "等級・階級"
+        }
+      },
+      {
+        "word": "cấp cứu",
+        "hanja": "急救",
+        "meaning": {
+          "ko": "응급",
+          "zh": "緊急",
+          "en": "emergency",
+          "ja": "応急・緊急"
+        }
+      },
+      {
+        "word": "cấp tốc",
+        "hanja": "急速",
+        "meaning": {
+          "ko": "속성·급속",
+          "zh": "速成·急速",
+          "en": "rapid, fast",
+          "ja": "速成·急速"
+        }
+      },
+      {
+        "word": "cấp phát",
+        "hanja": "給發",
+        "meaning": {
+          "ko": "지급·발급",
+          "zh": "支付·發放",
+          "en": "payment/issuance",
+          "ja": "支給・発行"
+        }
+      },
+      {
+        "word": "cấp thiết",
+        "hanja": "急切",
+        "meaning": {
+          "ko": "시급함",
+          "zh": "急迫性",
+          "en": "urgency",
+          "ja": "緊急性"
+        }
+      },
+      {
+        "word": "khẩn cấp",
+        "hanja": "緊急",
+        "meaning": {
+          "ko": "긴급",
+          "zh": "緊急",
+          "en": "urgent",
+          "ja": "緊急"
+        }
+      },
+      {
+        "word": "đẳng cấp",
+        "hanja": "等級",
+        "meaning": {
+          "ko": "등급",
+          "zh": "等級",
+          "en": "grade",
+          "ja": "等級"
+        }
+      },
+      {
+        "word": "cung cấp",
+        "hanja": "供給",
+        "meaning": {
+          "ko": "공급",
+          "zh": "供給",
+          "en": "supply",
+          "ja": "供給"
+        }
+      }
+    ]
+  },
+  {
+    "n": 8,
+    "syllable": "chân",
+    "words": [
+      {
+        "word": "chân thành",
+        "hanja": "真誠",
+        "meaning": {
+          "ko": "진심·성실",
+          "zh": "真心·誠實",
+          "en": "sincerity/honesty",
+          "ja": "真心・誠実"
+        }
+      },
+      {
+        "word": "chân thật",
+        "hanja": "真實",
+        "meaning": {
+          "ko": "진실함",
+          "zh": "真誠",
+          "en": "sincerity",
+          "ja": "誠実さ"
+        }
+      },
+      {
+        "word": "chân lý",
+        "hanja": "真理",
+        "meaning": {
+          "ko": "진리",
+          "zh": "真理",
+          "en": "truth",
+          "ja": "真理"
+        }
+      },
+      {
+        "word": "chân dung",
+        "hanja": "真容",
+        "meaning": {
+          "ko": "초상·모습",
+          "zh": "肖像·樣子",
+          "en": "portrait, appearance",
+          "ja": "肖像・姿"
+        }
+      },
+      {
+        "word": "chân tướng",
+        "hanja": "真相",
+        "meaning": {
+          "ko": "진상",
+          "zh": "真相",
+          "en": "the truth of the matter",
+          "ja": "真相"
+        }
+      },
+      {
+        "word": "chân chính",
+        "hanja": "真正",
+        "meaning": {
+          "ko": "참됨·진정한",
+          "zh": "真實·真正的",
+          "en": "trueness/genuine",
+          "ja": "真実さ・本当の"
+        }
+      }
+    ]
+  },
+  {
+    "n": 9,
+    "syllable": "chất",
+    "words": [
+      {
+        "word": "chất lượng",
+        "hanja": "質量",
+        "meaning": {
+          "ko": "품질",
+          "zh": "品質",
+          "en": "quality",
+          "ja": "品質"
+        }
+      },
+      {
+        "word": "chất liệu",
+        "hanja": "質料",
+        "meaning": {
+          "ko": "재질·소재",
+          "zh": "材質·素材",
+          "en": "texture/material",
+          "ja": "材質・素材"
+        }
+      },
+      {
+        "word": "chất vấn",
+        "hanja": "質問",
+        "meaning": {
+          "ko": "질의·추궁",
+          "zh": "質詢·追究",
+          "en": "inquiry/interrogation",
+          "ja": "質疑・追及"
+        }
+      },
+      {
+        "word": "chất phác",
+        "hanja": "質樸",
+        "meaning": {
+          "ko": "소박함",
+          "zh": "樸素",
+          "en": "simplicity",
+          "ja": "素朴さ"
+        }
+      },
+      {
+        "word": "chất độc",
+        "hanja": "質毒",
+        "meaning": {
+          "ko": "독소·유독물질",
+          "zh": "毒素·有毒物質",
+          "en": "toxin · poisonous substance",
+          "ja": "毒素・有毒物質"
+        }
+      },
+      {
+        "word": "vật chất",
+        "hanja": "物質",
+        "meaning": {
+          "ko": "물질",
+          "zh": "物質",
+          "en": "matter, material",
+          "ja": "物質"
+        }
+      }
+    ]
+  },
+  {
+    "n": 10,
+    "syllable": "chi",
+    "words": [
+      {
+        "word": "chi phí",
+        "hanja": "支費",
+        "meaning": {
+          "ko": "비용",
+          "zh": "費用",
+          "en": "cost; expense",
+          "ja": "費用"
+        }
+      },
+      {
+        "word": "chi tiết",
+        "hanja": "枝節",
+        "meaning": {
+          "ko": "세부사항",
+          "zh": "細節",
+          "en": "details",
+          "ja": "詳細"
+        }
+      },
+      {
+        "word": "chi nhánh",
+        "hanja": "支",
+        "meaning": {
+          "ko": "지점·지사",
+          "zh": "分店·分公司",
+          "en": "branch office",
+          "ja": "支店・支社"
+        }
+      },
+      {
+        "word": "chi tiêu",
+        "hanja": "支銷",
+        "meaning": {
+          "ko": "지출",
+          "zh": "支出",
+          "en": "expenditure",
+          "ja": "支出"
+        }
+      },
+      {
+        "word": "chi viện",
+        "hanja": "支援",
+        "meaning": {
+          "ko": "지원·증원",
+          "zh": "支援·增援",
+          "en": "support/reinforcement",
+          "ja": "支援・増員"
+        }
+      }
+    ]
+  },
+  {
+    "n": 11,
+    "syllable": "chiến",
+    "words": [
+      {
+        "word": "chiến tranh",
+        "hanja": "戰爭",
+        "meaning": {
+          "ko": "전쟁",
+          "zh": "戰爭",
+          "en": "war",
+          "ja": "戦争"
+        }
+      },
+      {
+        "word": "chiến thắng",
+        "hanja": "戰勝",
+        "meaning": {
+          "ko": "승리",
+          "zh": "勝利",
+          "en": "victory",
+          "ja": "勝利"
+        }
+      },
+      {
+        "word": "chiến lược",
+        "hanja": "戰略",
+        "meaning": {
+          "ko": "전략",
+          "zh": "策略",
+          "en": "strategy",
+          "ja": "戦略"
+        }
+      },
+      {
+        "word": "chiến đấu",
+        "hanja": "戰鬥",
+        "meaning": {
+          "ko": "전투",
+          "zh": "戰鬥",
+          "en": "battle",
+          "ja": "戦闘"
+        }
+      },
+      {
+        "word": "chiến dịch",
+        "hanja": "戰役",
+        "meaning": {
+          "ko": "작전·캠페인",
+          "zh": "作戰·活動",
+          "en": "operation/campaign",
+          "ja": "作戦・キャンペーン"
+        }
+      },
+      {
+        "word": "chiến sĩ",
+        "hanja": "戰士",
+        "meaning": {
+          "ko": "전사·군인",
+          "zh": "戰士·軍人",
+          "en": "warrior/soldier",
+          "ja": "戦士・軍人"
+        }
+      }
+    ]
+  },
+  {
+    "n": 12,
+    "syllable": "chính",
+    "words": [
+      {
+        "word": "chính phủ",
+        "hanja": "政府",
+        "meaning": {
+          "ko": "정부",
+          "zh": "政府",
+          "en": "government",
+          "ja": "政府"
+        }
+      },
+      {
+        "word": "chính trị",
+        "hanja": "政治",
+        "meaning": {
+          "ko": "정치",
+          "zh": "政治",
+          "en": "politics",
+          "ja": "政治"
+        }
+      },
+      {
+        "word": "chính sách",
+        "hanja": "政策",
+        "meaning": {
+          "ko": "정책",
+          "zh": "政策",
+          "en": "policy",
+          "ja": "政策"
+        }
+      },
+      {
+        "word": "chính thức",
+        "hanja": "正式",
+        "meaning": {
+          "ko": "정식·공식",
+          "zh": "正式·公式",
+          "en": "formal/official",
+          "ja": "正式・公式"
+        }
+      },
+      {
+        "word": "chính xác",
+        "hanja": "正確",
+        "meaning": {
+          "ko": "정확",
+          "zh": "準確",
+          "en": "accuracy",
+          "ja": "正確"
+        }
+      },
+      {
+        "word": "chính đáng",
+        "hanja": "正當",
+        "meaning": {
+          "ko": "정당함",
+          "zh": "正當性",
+          "en": "justness",
+          "ja": "正当さ"
+        }
+      }
+    ]
+  },
+  {
+    "n": 13,
+    "syllable": "công",
+    "words": [
+      {
+        "word": "công việc",
+        "hanja": "工役",
+        "meaning": {
+          "ko": "일·업무",
+          "zh": "工作·業務",
+          "en": "work/task",
+          "ja": "仕事・業務"
+        }
+      },
+      {
+        "word": "công ty",
+        "hanja": "公司",
+        "meaning": {
+          "ko": "회사",
+          "zh": "公司",
+          "en": "company",
+          "ja": "会社"
+        }
+      },
+      {
+        "word": "công dân",
+        "hanja": "公民",
+        "meaning": {
+          "ko": "공민·시민",
+          "zh": "公民‧市民",
+          "en": "citizen",
+          "ja": "公民・市民"
+        }
+      },
+      {
+        "word": "công cộng",
+        "hanja": "公共",
+        "meaning": {
+          "ko": "공공",
+          "zh": "公共",
+          "en": "public",
+          "ja": "公共"
+        }
+      },
+      {
+        "word": "công nghiệp",
+        "hanja": "工業",
+        "meaning": {
+          "ko": "공업",
+          "zh": "工業",
+          "en": "industry",
+          "ja": "工業"
+        }
+      },
+      {
+        "word": "công bằng",
+        "hanja": "公平",
+        "meaning": {
+          "ko": "공평·공정",
+          "zh": "公平‧公正",
+          "en": "fairness, justice",
+          "ja": "公平・公正"
+        }
+      },
+      {
+        "word": "công nhận",
+        "hanja": "公認",
+        "meaning": {
+          "ko": "공인·인정",
+          "zh": "公認‧認可",
+          "en": "authorization, recognition",
+          "ja": "公認・認定"
+        }
+      },
+      {
+        "word": "công khai",
+        "hanja": "公開",
+        "meaning": {
+          "ko": "공개",
+          "zh": "公開",
+          "en": "public, open",
+          "ja": "公開"
+        }
+      },
+      {
+        "word": "công lao",
+        "hanja": "功勞",
+        "meaning": {
+          "ko": "공로",
+          "zh": "功勞",
+          "en": "merit, contribution",
+          "ja": "功労"
+        }
+      },
+      {
+        "word": "công nhân",
+        "hanja": "工人",
+        "meaning": {
+          "ko": "노동자",
+          "zh": "勞工",
+          "en": "worker",
+          "ja": "労働者"
+        }
+      },
+      {
+        "word": "công chức",
+        "hanja": "公職",
+        "meaning": {
+          "ko": "공무원",
+          "zh": "公務員",
+          "en": "civil servant",
+          "ja": "公務員"
+        }
+      },
+      {
+        "word": "công viên",
+        "hanja": "公園",
+        "meaning": {
+          "ko": "공원",
+          "zh": "公園",
+          "en": "park",
+          "ja": "公園"
+        }
+      }
+    ]
+  },
+  {
+    "n": 14,
+    "syllable": "cơ",
+    "words": [
+      {
+        "word": "cơ hội",
+        "hanja": "機會",
+        "meaning": {
+          "ko": "기회",
+          "zh": "機會",
+          "en": "opportunity",
+          "ja": "機会"
+        }
+      },
+      {
+        "word": "cơ bản",
+        "hanja": "基本",
+        "meaning": {
+          "ko": "기본",
+          "zh": "基本",
+          "en": "basic",
+          "ja": "基本"
+        }
+      },
+      {
+        "word": "cơ quan",
+        "hanja": "機關",
+        "meaning": {
+          "ko": "기관",
+          "zh": "機構、器官",
+          "en": "institution, organ",
+          "ja": "機関"
+        }
+      },
+      {
+        "word": "cơ sở",
+        "hanja": "基礎",
+        "meaning": {
+          "ko": "기초·토대",
+          "zh": "基礎‧根基",
+          "en": "foundation, base",
+          "ja": "基礎・土台"
+        }
+      },
+      {
+        "word": "cơ cấu",
+        "hanja": "機構",
+        "meaning": {
+          "ko": "구조",
+          "zh": "結構",
+          "en": "structure",
+          "ja": "構造"
+        }
+      },
+      {
+        "word": "cơ chế",
+        "hanja": "機制",
+        "meaning": {
+          "ko": "기제·메커니즘",
+          "zh": "機制‧機理",
+          "en": "mechanism",
+          "ja": "機構・メカニズム"
+        }
+      },
+      {
+        "word": "cơ thể",
+        "hanja": "肌體",
+        "meaning": {
+          "ko": "신체·몸",
+          "zh": "身體・身軀",
+          "en": "body · body",
+          "ja": "身体・体"
+        }
+      }
+    ]
+  },
+  {
+    "n": 15,
+    "syllable": "danh",
+    "words": [
+      {
+        "word": "danh từ",
+        "hanja": "名詞",
+        "meaning": {
+          "ko": "명사",
+          "zh": "名詞",
+          "en": "noun",
+          "ja": "名詞"
+        }
+      },
+      {
+        "word": "danh dự",
+        "hanja": "名譽",
+        "meaning": {
+          "ko": "명예",
+          "zh": "名譽",
+          "en": "honor",
+          "ja": "名誉"
+        }
+      },
+      {
+        "word": "danh sách",
+        "hanja": "名冊",
+        "meaning": {
+          "ko": "명단",
+          "zh": "名單",
+          "en": "list (of names)",
+          "ja": "名簿"
+        }
+      },
+      {
+        "word": "danh nghĩa",
+        "hanja": "名義",
+        "meaning": {
+          "ko": "명의·명목",
+          "zh": "名義・名目",
+          "en": "nominal, name",
+          "ja": "名義・名目"
+        }
+      },
+      {
+        "word": "danh tiếng",
+        "hanja": "名聲",
+        "meaning": {
+          "ko": "명성",
+          "zh": "名聲",
+          "en": "fame, reputation",
+          "ja": "名声"
+        }
+      }
+    ]
+  },
+  {
+    "n": 16,
+    "syllable": "dân",
+    "words": [
+      {
+        "word": "dân chủ",
+        "hanja": "民主",
+        "meaning": {
+          "ko": "민주",
+          "zh": "民主",
+          "en": "democracy",
+          "ja": "民主"
+        }
+      },
+      {
+        "word": "dân tộc",
+        "hanja": "民族",
+        "meaning": {
+          "ko": "민족",
+          "zh": "民族",
+          "en": "ethnic group, nation",
+          "ja": "民族"
+        }
+      },
+      {
+        "word": "dân số",
+        "hanja": "民數",
+        "meaning": {
+          "ko": "인구",
+          "zh": "人口",
+          "en": "population",
+          "ja": "人口"
+        }
+      },
+      {
+        "word": "dân sự",
+        "hanja": "民事",
+        "meaning": {
+          "ko": "민사",
+          "zh": "民事",
+          "en": "civil (law)",
+          "ja": "民事"
+        }
+      },
+      {
+        "word": "dân gian",
+        "hanja": "民間",
+        "meaning": {
+          "ko": "민간",
+          "zh": "民間",
+          "en": "civilian",
+          "ja": "民間"
+        }
+      },
+      {
+        "word": "dân trí",
+        "hanja": "民智",
+        "meaning": {
+          "ko": "민도·국민 지식수준",
+          "zh": "民智・國民知識水準",
+          "en": "public awareness, national education level",
+          "ja": "民度・国民の知識水準"
+        }
+      },
+      {
+        "word": "nhân dân",
+        "hanja": "人民",
+        "meaning": {
+          "ko": "인민",
+          "zh": "人民",
+          "en": "people",
+          "ja": "人民"
+        }
+      }
+    ]
+  },
+  {
+    "n": 17,
+    "syllable": "dịch",
+    "words": [
+      {
+        "word": "dịch vụ",
+        "hanja": "役務",
+        "meaning": {
+          "ko": "서비스",
+          "zh": "服務",
+          "en": "service",
+          "ja": "サービス"
+        }
+      },
+      {
+        "word": "dịch bệnh",
+        "hanja": "疫病",
+        "meaning": {
+          "ko": "전염병·역병",
+          "zh": "傳染病·瘟疫",
+          "en": "epidemic/plague",
+          "ja": "伝染病・疫病"
+        }
+      },
+      {
+        "word": "dịch giả",
+        "hanja": "譯者",
+        "meaning": {
+          "ko": "번역가",
+          "zh": "翻譯家",
+          "en": "translator",
+          "ja": "翻訳者"
+        }
+      },
+      {
+        "word": "dịch thuật",
+        "hanja": "譯術",
+        "meaning": {
+          "ko": "번역",
+          "zh": "翻譯",
+          "en": "translation",
+          "ja": "翻訳"
+        }
+      },
+      {
+        "word": "dịch tễ",
+        "hanja": "疫癠",
+        "meaning": {
+          "ko": "역학(질병)",
+          "zh": "流行病學（疾病）",
+          "en": "epidemiology (disease)",
+          "ja": "疫学（病気）"
+        }
+      }
+    ]
+  },
+  {
+    "n": 18,
+    "syllable": "du",
+    "words": [
+      {
+        "word": "du lịch",
+        "hanja": "遊歷",
+        "meaning": {
+          "ko": "여행",
+          "zh": "旅行",
+          "en": "travel",
+          "ja": "旅行"
+        }
+      },
+      {
+        "word": "du học",
+        "hanja": "遊學",
+        "meaning": {
+          "ko": "유학",
+          "zh": "留學",
+          "en": "studying abroad",
+          "ja": "留学"
+        }
+      },
+      {
+        "word": "du khách",
+        "hanja": "遊客",
+        "meaning": {
+          "ko": "관광객",
+          "zh": "觀光客",
+          "en": "tourist",
+          "ja": "観光客"
+        }
+      },
+      {
+        "word": "du hành",
+        "hanja": "遊行",
+        "meaning": {
+          "ko": "여행·비행",
+          "zh": "旅行・飛行",
+          "en": "travel · flight",
+          "ja": "旅行・飛行"
+        }
+      },
+      {
+        "word": "du nhập",
+        "hanja": "輸入",
+        "meaning": {
+          "ko": "유입·도입",
+          "zh": "流入·引進",
+          "en": "influx/introduction",
+          "ja": "流入・導入"
+        }
+      },
+      {
+        "word": "du côn",
+        "hanja": "遊棍",
+        "meaning": {
+          "ko": "불량배·건달",
+          "zh": "流氓·無賴",
+          "en": "hoodlum; thug",
+          "ja": "ならず者・ごろつき"
+        }
+      }
+    ]
+  },
+  {
+    "n": 19,
+    "syllable": "dự",
+    "words": [
+      {
+        "word": "dự án",
+        "hanja": "預案",
+        "meaning": {
+          "ko": "프로젝트·사업",
+          "zh": "項目·事業",
+          "en": "project, business",
+          "ja": "プロジェクト・事業"
+        }
+      },
+      {
+        "word": "dự báo",
+        "hanja": "預報",
+        "meaning": {
+          "ko": "예보",
+          "zh": "預報",
+          "en": "forecast",
+          "ja": "予報"
+        }
+      },
+      {
+        "word": "dự đoán",
+        "hanja": "預斷",
+        "meaning": {
+          "ko": "예측",
+          "zh": "預測",
+          "en": "prediction",
+          "ja": "予測"
+        }
+      },
+      {
+        "word": "dự định",
+        "hanja": "預定",
+        "meaning": {
+          "ko": "예정·계획",
+          "zh": "預定·計劃",
+          "en": "schedule/plan",
+          "ja": "予定・計画"
+        }
+      },
+      {
+        "word": "dự trữ",
+        "hanja": "預儲",
+        "meaning": {
+          "ko": "비축",
+          "zh": "儲備",
+          "en": "stockpile; reserve",
+          "ja": "備蓄"
+        }
+      },
+      {
+        "word": "dự phòng",
+        "hanja": "預防",
+        "meaning": {
+          "ko": "예방·대비",
+          "zh": "預防·防備",
+          "en": "prevention/preparedness",
+          "ja": "予防・備え"
+        }
+      }
+    ]
+  },
+  {
+    "n": 20,
+    "syllable": "đại",
+    "words": [
+      {
+        "word": "đại học",
+        "hanja": "大學",
+        "meaning": {
+          "ko": "대학",
+          "zh": "大學",
+          "en": "university",
+          "ja": "大学"
+        }
+      },
+      {
+        "word": "đại diện",
+        "hanja": "代面",
+        "meaning": {
+          "ko": "대표",
+          "zh": "代表",
+          "en": "representative",
+          "ja": "代表"
+        }
+      },
+      {
+        "word": "đại sứ",
+        "hanja": "大使",
+        "meaning": {
+          "ko": "대사",
+          "zh": "大使",
+          "en": "ambassador",
+          "ja": "大使"
+        }
+      },
+      {
+        "word": "đại chúng",
+        "hanja": "大眾",
+        "meaning": {
+          "ko": "대중",
+          "zh": "大眾",
+          "en": "the public",
+          "ja": "大衆"
+        }
+      },
+      {
+        "word": "đại lý",
+        "hanja": "代理",
+        "meaning": {
+          "ko": "대리점",
+          "zh": "代理店",
+          "en": "agency",
+          "ja": "代理店"
+        }
+      },
+      {
+        "word": "đại gia",
+        "hanja": "大家",
+        "meaning": {
+          "ko": "부호·큰손",
+          "zh": "富豪·大戶",
+          "en": "tycoon; big spender",
+          "ja": "富豪・大物"
+        }
+      },
+      {
+        "word": "đại đồng",
+        "hanja": "大同",
+        "meaning": {
+          "ko": "대동·큰 조화",
+          "zh": "大同·大和諧",
+          "en": "great unity · great harmony",
+          "ja": "大同・大調和"
+        }
+      },
+      {
+        "word": "thời đại",
+        "hanja": "時代",
+        "meaning": {
+          "ko": "시대",
+          "zh": "時代",
+          "en": "era",
+          "ja": "時代"
+        }
+      }
+    ]
+  },
+  {
+    "n": 21,
+    "syllable": "đạo",
+    "words": [
+      {
+        "word": "đạo đức",
+        "hanja": "道德",
+        "meaning": {
+          "ko": "도덕",
+          "zh": "道德",
+          "en": "morality",
+          "ja": "道徳"
+        }
+      },
+      {
+        "word": "đạo diễn",
+        "hanja": "導演",
+        "meaning": {
+          "ko": "감독·연출",
+          "zh": "導演·執導",
+          "en": "director/directing",
+          "ja": "監督・演出"
+        }
+      },
+      {
+        "word": "đạo lý",
+        "hanja": "道理",
+        "meaning": {
+          "ko": "도리",
+          "zh": "道理",
+          "en": "proper duty",
+          "ja": "道理"
+        }
+      },
+      {
+        "word": "đạo văn",
+        "hanja": "盜文",
+        "meaning": {
+          "ko": "표절",
+          "zh": "剽竊",
+          "en": "plagiarism",
+          "ja": "盗用"
+        }
+      },
+      {
+        "word": "đạo cụ",
+        "hanja": "道具",
+        "meaning": {
+          "ko": "소품",
+          "zh": "小道具",
+          "en": "prop, small item",
+          "ja": "小道具"
+        }
+      },
+      {
+        "word": "đạo Phật",
+        "hanja": "道佛",
+        "meaning": {
+          "ko": "불교",
+          "zh": "佛教",
+          "en": "Buddhism",
+          "ja": "仏教"
+        }
+      }
+    ]
+  },
+  {
+    "n": 22,
+    "syllable": "đầu",
+    "words": [
+      {
+        "word": "đầu tư",
+        "hanja": "投資",
+        "meaning": {
+          "ko": "투자",
+          "zh": "投資",
+          "en": "investment",
+          "ja": "投資"
+        }
+      },
+      {
+        "word": "đầu tiên",
+        "hanja": "頭先",
+        "meaning": {
+          "ko": "첫 번째",
+          "zh": "第一個",
+          "en": "first",
+          "ja": "一番目"
+        }
+      },
+      {
+        "word": "đầu hàng",
+        "hanja": "投降",
+        "meaning": {
+          "ko": "항복",
+          "zh": "投降",
+          "en": "surrender",
+          "ja": "降伏"
+        }
+      },
+      {
+        "word": "đầu độc",
+        "hanja": "投毒",
+        "meaning": {
+          "ko": "독살·해치다",
+          "zh": "毒殺·傷害",
+          "en": "poison · harm",
+          "ja": "毒殺・害する"
+        }
+      },
+      {
+        "word": "đầu bếp",
+        "hanja": "頭",
+        "meaning": {
+          "ko": "요리사",
+          "zh": "廚師",
+          "en": "cook",
+          "ja": "料理人"
+        }
+      }
+    ]
+  },
+  {
+    "n": 23,
+    "syllable": "định",
+    "words": [
+      {
+        "word": "định nghĩa",
+        "hanja": "定義",
+        "meaning": {
+          "ko": "정의",
+          "zh": "正義",
+          "en": "justice",
+          "ja": "正義"
+        }
+      },
+      {
+        "word": "định kỳ",
+        "hanja": "定期",
+        "meaning": {
+          "ko": "정기적",
+          "zh": "定期的",
+          "en": "regular",
+          "ja": "定期的"
+        }
+      },
+      {
+        "word": "định hướng",
+        "hanja": "定向",
+        "meaning": {
+          "ko": "방향설정",
+          "zh": "方向設定",
+          "en": "orientation",
+          "ja": "方向設定"
+        }
+      },
+      {
+        "word": "định mức",
+        "hanja": "定",
+        "meaning": {
+          "ko": "할당량·기준치",
+          "zh": "配額·標準",
+          "en": "quota / standard",
+          "ja": "割当量・基準値"
+        }
+      },
+      {
+        "word": "định luật",
+        "hanja": "定律",
+        "meaning": {
+          "ko": "법칙",
+          "zh": "法則",
+          "en": "law; principle",
+          "ja": "法則"
+        }
+      },
+      {
+        "word": "định cư",
+        "hanja": "定居",
+        "meaning": {
+          "ko": "정착",
+          "zh": "定居",
+          "en": "settling down",
+          "ja": "定着"
+        }
+      },
+      {
+        "word": "quyết định",
+        "hanja": "決定",
+        "meaning": {
+          "ko": "결정",
+          "zh": "決定",
+          "en": "decision",
+          "ja": "決定"
+        }
+      }
+    ]
+  },
+  {
+    "n": 24,
+    "syllable": "đồng",
+    "words": [
+      {
+        "word": "đồng ý",
+        "hanja": "同意",
+        "meaning": {
+          "ko": "동의",
+          "zh": "同意",
+          "en": "agreement",
+          "ja": "同意"
+        }
+      },
+      {
+        "word": "đồng nghiệp",
+        "hanja": "同業",
+        "meaning": {
+          "ko": "동료",
+          "zh": "同事",
+          "en": "colleague",
+          "ja": "同僚"
+        }
+      },
+      {
+        "word": "đồng thời",
+        "hanja": "同時",
+        "meaning": {
+          "ko": "동시에",
+          "zh": "同時",
+          "en": "at the same time",
+          "ja": "同時に"
+        }
+      },
+      {
+        "word": "đồng hồ",
+        "hanja": "銅壺",
+        "meaning": {
+          "ko": "시계",
+          "zh": "時鐘·手錶",
+          "en": "clock, watch",
+          "ja": "時計"
+        }
+      },
+      {
+        "word": "đồng minh",
+        "hanja": "同盟",
+        "meaning": {
+          "ko": "동맹",
+          "zh": "同盟",
+          "en": "alliance",
+          "ja": "同盟"
+        }
+      },
+      {
+        "word": "đồng bào",
+        "hanja": "同胞",
+        "meaning": {
+          "ko": "동포",
+          "zh": "同胞",
+          "en": "compatriot",
+          "ja": "同胞"
+        }
+      }
+    ]
+  },
+  {
+    "n": 25,
+    "syllable": "động",
+    "words": [
+      {
+        "word": "động vật",
+        "hanja": "動物",
+        "meaning": {
+          "ko": "동물",
+          "zh": "動物",
+          "en": "animal",
+          "ja": "動物"
+        }
+      },
+      {
+        "word": "động cơ",
+        "hanja": "動機",
+        "meaning": {
+          "ko": "동기·엔진",
+          "zh": "動機·引擎",
+          "en": "motive · engine",
+          "ja": "動機・エンジン"
+        }
+      },
+      {
+        "word": "động lực",
+        "hanja": "動力",
+        "meaning": {
+          "ko": "동력",
+          "zh": "動力",
+          "en": "motive power",
+          "ja": "動力"
+        }
+      },
+      {
+        "word": "động tác",
+        "hanja": "動作",
+        "meaning": {
+          "ko": "동작",
+          "zh": "動作",
+          "en": "motion",
+          "ja": "動作"
+        }
+      },
+      {
+        "word": "động viên",
+        "hanja": "動員",
+        "meaning": {
+          "ko": "격려·독려",
+          "zh": "鼓勵",
+          "en": "encouragement",
+          "ja": "激励・督励"
+        }
+      },
+      {
+        "word": "động đất",
+        "hanja": "動",
+        "meaning": {
+          "ko": "지진",
+          "zh": "地震",
+          "en": "earthquake",
+          "ja": "地震"
+        }
+      },
+      {
+        "word": "động từ",
+        "hanja": "動詞",
+        "meaning": {
+          "ko": "동사",
+          "zh": "動詞",
+          "en": "verb",
+          "ja": "動詞"
+        }
+      },
+      {
+        "word": "vận động",
+        "hanja": "運動",
+        "meaning": {
+          "ko": "운동",
+          "zh": "運動",
+          "en": "exercise",
+          "ja": "運動"
+        }
+      }
+    ]
+  },
+  {
+    "n": 26,
+    "syllable": "đơn",
+    "words": [
+      {
+        "word": "đơn giản",
+        "hanja": "單簡",
+        "meaning": {
+          "ko": "간단",
+          "zh": "簡單",
+          "en": "simple",
+          "ja": "簡単"
+        }
+      },
+      {
+        "word": "đơn vị",
+        "hanja": "單位",
+        "meaning": {
+          "ko": "단위",
+          "zh": "單位",
+          "en": "unit",
+          "ja": "単位"
+        }
+      },
+      {
+        "word": "đơn độc",
+        "hanja": "單獨",
+        "meaning": {
+          "ko": "고독·외로움",
+          "zh": "孤獨·寂寞",
+          "en": "loneliness",
+          "ja": "孤独・寂しさ"
+        }
+      },
+      {
+        "word": "đơn thuần",
+        "hanja": "單純",
+        "meaning": {
+          "ko": "단순함",
+          "zh": "單純",
+          "en": "simplicity",
+          "ja": "単純さ"
+        }
+      },
+      {
+        "word": "đơn phương",
+        "hanja": "單方",
+        "meaning": {
+          "ko": "일방적",
+          "zh": "單方面的",
+          "en": "one-sided",
+          "ja": "一方的"
+        }
+      }
+    ]
+  },
+  {
+    "n": 27,
+    "syllable": "đức",
+    "words": [
+      {
+        "word": "đức tính",
+        "hanja": "德性",
+        "meaning": {
+          "ko": "덕성·성품",
+          "zh": "德性·品性",
+          "en": "virtue · character",
+          "ja": "徳性・性格"
+        }
+      },
+      {
+        "word": "đức hạnh",
+        "hanja": "德行",
+        "meaning": {
+          "ko": "덕행",
+          "zh": "德行",
+          "en": "virtuous conduct",
+          "ja": "徳行"
+        }
+      },
+      {
+        "word": "đức độ",
+        "hanja": "德度",
+        "meaning": {
+          "ko": "덕망",
+          "zh": "德望",
+          "en": "moral reputation",
+          "ja": "徳望"
+        }
+      },
+      {
+        "word": "đức tin",
+        "hanja": "德",
+        "meaning": {
+          "ko": "신앙·믿음",
+          "zh": "信仰・信念",
+          "en": "faith · belief",
+          "ja": "信仰・信念"
+        }
+      },
+      {
+        "word": "đức dục",
+        "hanja": "德育",
+        "meaning": {
+          "ko": "덕육(도덕교육)",
+          "zh": "德育（道德教育）",
+          "en": "moral education",
+          "ja": "徳育（道徳教育）"
+        }
+      },
+      {
+        "word": "đạo đức",
+        "hanja": "道德",
+        "meaning": {
+          "ko": "도덕",
+          "zh": "道德",
+          "en": "morality",
+          "ja": "道徳"
+        }
+      }
+    ]
+  },
+  {
+    "n": 28,
+    "syllable": "gia",
+    "words": [
+      {
+        "word": "gia đình",
+        "hanja": "家庭",
+        "meaning": {
+          "ko": "가정",
+          "zh": "家庭",
+          "en": "family/home",
+          "ja": "家庭"
+        }
+      },
+      {
+        "word": "gia tăng",
+        "hanja": "加增",
+        "meaning": {
+          "ko": "증가",
+          "zh": "增加",
+          "en": "increase",
+          "ja": "増加"
+        }
+      },
+      {
+        "word": "gia súc",
+        "hanja": "家畜",
+        "meaning": {
+          "ko": "가축",
+          "zh": "家畜",
+          "en": "livestock",
+          "ja": "家畜"
+        }
+      },
+      {
+        "word": "gia vị",
+        "hanja": "加味",
+        "meaning": {
+          "ko": "양념",
+          "zh": "調味料",
+          "en": "seasoning",
+          "ja": "調味料"
+        }
+      },
+      {
+        "word": "gia tài",
+        "hanja": "家財",
+        "meaning": {
+          "ko": "재산",
+          "zh": "財產",
+          "en": "property",
+          "ja": "財産"
+        }
+      },
+      {
+        "word": "gia sư",
+        "hanja": "家師",
+        "meaning": {
+          "ko": "과외선생",
+          "zh": "家教老師",
+          "en": "tutor",
+          "ja": "家庭教師"
+        }
+      },
+      {
+        "word": "gia truyền",
+        "hanja": "家傳",
+        "meaning": {
+          "ko": "가전(집안 대대로)",
+          "zh": "家傳(世代相傳)",
+          "en": "family heirloom (passed down)",
+          "ja": "家伝(代々)"
+        }
+      },
+      {
+        "word": "gia bảo",
+        "hanja": "家寶",
+        "meaning": {
+          "ko": "가보",
+          "zh": "傳家寶",
+          "en": "heirloom",
+          "ja": "家宝"
+        }
+      },
+      {
+        "word": "gia giáo",
+        "hanja": "家教",
+        "meaning": {
+          "ko": "가정교육이 반듯함",
+          "zh": "家教良好",
+          "en": "well brought up",
+          "ja": "家庭教育がしっかりしている"
+        }
+      },
+      {
+        "word": "tăng gia",
+        "hanja": "增加",
+        "meaning": {
+          "ko": "증가",
+          "zh": "增加",
+          "en": "increase",
+          "ja": "増加"
+        }
+      }
+    ]
+  },
+  {
+    "n": 29,
+    "syllable": "giá",
+    "words": [
+      {
+        "word": "giá cả",
+        "hanja": "價",
+        "meaning": {
+          "ko": "가격",
+          "zh": "價格",
+          "en": "price",
+          "ja": "価格"
+        }
+      },
+      {
+        "word": "giá trị",
+        "hanja": "價值",
+        "meaning": {
+          "ko": "가치",
+          "zh": "價值",
+          "en": "value",
+          "ja": "価値"
+        }
+      },
+      {
+        "word": "giá thành",
+        "hanja": "價成",
+        "meaning": {
+          "ko": "원가",
+          "zh": "原價",
+          "en": "cost price",
+          "ja": "原価"
+        }
+      },
+      {
+        "word": "giá vé",
+        "hanja": "價",
+        "meaning": {
+          "ko": "요금(표값)",
+          "zh": "費用(票價)",
+          "en": "fare/fee",
+          "ja": "料金(運賃)"
+        }
+      },
+      {
+        "word": "giá tiền",
+        "hanja": "價錢",
+        "meaning": {
+          "ko": "값·가격",
+          "zh": "價錢·價格",
+          "en": "price",
+          "ja": "値段・価格"
+        }
+      },
+      {
+        "word": "vật giá",
+        "hanja": "物價",
+        "meaning": {
+          "ko": "물가",
+          "zh": "物價",
+          "en": "prices",
+          "ja": "物価"
+        }
+      }
+    ]
+  },
+  {
+    "n": 30,
+    "syllable": "giải",
+    "words": [
+      {
+        "word": "giải pháp",
+        "hanja": "解法",
+        "meaning": {
+          "ko": "해법",
+          "zh": "解決方法",
+          "en": "solution",
+          "ja": "解決法"
+        }
+      },
+      {
+        "word": "giải thích",
+        "hanja": "解釋",
+        "meaning": {
+          "ko": "설명",
+          "zh": "說明",
+          "en": "explanation",
+          "ja": "説明"
+        }
+      },
+      {
+        "word": "giải trí",
+        "hanja": "解智",
+        "meaning": {
+          "ko": "오락",
+          "zh": "娛樂",
+          "en": "entertainment",
+          "ja": "娯楽"
+        }
+      },
+      {
+        "word": "giải quyết",
+        "hanja": "解決",
+        "meaning": {
+          "ko": "해결",
+          "zh": "解決",
+          "en": "solution",
+          "ja": "解決"
+        }
+      },
+      {
+        "word": "giải phóng",
+        "hanja": "解放",
+        "meaning": {
+          "ko": "해방",
+          "zh": "解放",
+          "en": "liberation",
+          "ja": "解放"
+        }
+      },
+      {
+        "word": "giải lao",
+        "hanja": "解勞",
+        "meaning": {
+          "ko": "휴식·쉬는 시간",
+          "zh": "休息·休息時間",
+          "en": "rest / break time",
+          "ja": "休息・休憩時間"
+        }
+      }
+    ]
+  },
+  {
+    "n": 31,
+    "syllable": "giáo",
+    "words": [
+      {
+        "word": "giáo dục",
+        "hanja": "教育",
+        "meaning": {
+          "ko": "교육",
+          "zh": "教育",
+          "en": "education",
+          "ja": "教育"
+        }
+      },
+      {
+        "word": "giáo viên",
+        "hanja": "教員",
+        "meaning": {
+          "ko": "교사",
+          "zh": "教師",
+          "en": "teacher",
+          "ja": "教師"
+        }
+      },
+      {
+        "word": "giáo sư",
+        "hanja": "教師",
+        "meaning": {
+          "ko": "교수",
+          "zh": "教授",
+          "en": "professor",
+          "ja": "教授"
+        }
+      },
+      {
+        "word": "giáo trình",
+        "hanja": "教程",
+        "meaning": {
+          "ko": "교재·커리큘럼",
+          "zh": "教材‧課程",
+          "en": "textbook, curriculum",
+          "ja": "教材・カリキュラム"
+        }
+      },
+      {
+        "word": "giáo hội",
+        "hanja": "教會",
+        "meaning": {
+          "ko": "교회",
+          "zh": "教會",
+          "en": "church",
+          "ja": "教会"
+        }
+      },
+      {
+        "word": "giáo lý",
+        "hanja": "教理",
+        "meaning": {
+          "ko": "교리",
+          "zh": "教義",
+          "en": "doctrine",
+          "ja": "教理"
+        }
+      }
+    ]
+  },
+  {
+    "n": 32,
+    "syllable": "giới",
+    "words": [
+      {
+        "word": "giới thiệu",
+        "hanja": "介紹",
+        "meaning": {
+          "ko": "소개",
+          "zh": "介紹",
+          "en": "introduction",
+          "ja": "紹介"
+        }
+      },
+      {
+        "word": "giới hạn",
+        "hanja": "界限",
+        "meaning": {
+          "ko": "한계·범위",
+          "zh": "界限·範圍",
+          "en": "limit / scope",
+          "ja": "限界・範囲"
+        }
+      },
+      {
+        "word": "giới tính",
+        "hanja": "界性",
+        "meaning": {
+          "ko": "성별",
+          "zh": "性別",
+          "en": "gender",
+          "ja": "性別"
+        }
+      },
+      {
+        "word": "giới trẻ",
+        "hanja": "界",
+        "meaning": {
+          "ko": "젊은층",
+          "zh": "年輕族群",
+          "en": "younger generation",
+          "ja": "若年層"
+        }
+      },
+      {
+        "word": "giới nghiêm",
+        "hanja": "戒嚴",
+        "meaning": {
+          "ko": "계엄",
+          "zh": "戒嚴",
+          "en": "martial law",
+          "ja": "戒厳"
+        }
+      }
+    ]
+  },
+  {
+    "n": 33,
+    "syllable": "hạn",
+    "words": [
+      {
+        "word": "hạn chế",
+        "hanja": "限制",
+        "meaning": {
+          "ko": "제한",
+          "zh": "限制",
+          "en": "restriction",
+          "ja": "制限"
+        }
+      },
+      {
+        "word": "hạn hán",
+        "hanja": "旱暵",
+        "meaning": {
+          "ko": "가뭄",
+          "zh": "乾旱",
+          "en": "drought",
+          "ja": "干ばつ"
+        }
+      },
+      {
+        "word": "hạn ngạch",
+        "hanja": "限額",
+        "meaning": {
+          "ko": "할당량·쿼터",
+          "zh": "配額·限額",
+          "en": "quota / quota",
+          "ja": "割当量・クォータ"
+        }
+      },
+      {
+        "word": "hạn định",
+        "hanja": "限定",
+        "meaning": {
+          "ko": "기한설정",
+          "zh": "設定期限",
+          "en": "setting a deadline",
+          "ja": "期限設定"
+        }
+      },
+      {
+        "word": "hạn mức",
+        "hanja": "限",
+        "meaning": {
+          "ko": "한도",
+          "zh": "限度",
+          "en": "limit",
+          "ja": "限度"
+        }
+      }
+    ]
+  },
+  {
+    "n": 34,
+    "syllable": "hàng",
+    "words": [
+      {
+        "word": "hàng hóa",
+        "hanja": "行貨",
+        "meaning": {
+          "ko": "상품",
+          "zh": "商品",
+          "en": "product",
+          "ja": "商品"
+        }
+      },
+      {
+        "word": "hàng ngày",
+        "hanja": "恆",
+        "meaning": {
+          "ko": "매일",
+          "zh": "每天",
+          "en": "every day",
+          "ja": "毎日"
+        }
+      },
+      {
+        "word": "hàng xóm",
+        "hanja": "",
+        "meaning": {
+          "ko": "이웃",
+          "zh": "鄰居",
+          "en": "neighbor",
+          "ja": "隣人"
+        }
+      },
+      {
+        "word": "hàng không",
+        "hanja": "航空",
+        "meaning": {
+          "ko": "항공",
+          "zh": "航空",
+          "en": "aviation",
+          "ja": "航空"
+        }
+      },
+      {
+        "word": "hàng loạt",
+        "hanja": "行",
+        "meaning": {
+          "ko": "대량·일련의",
+          "zh": "大量·一系列的",
+          "en": "mass · a series of",
+          "ja": "大量・一連の"
+        }
+      }
+    ]
+  },
+  {
+    "n": 35,
+    "syllable": "hành",
+    "words": [
+      {
+        "word": "hành động",
+        "hanja": "行動",
+        "meaning": {
+          "ko": "행동",
+          "zh": "行動",
+          "en": "action",
+          "ja": "行動"
+        }
+      },
+      {
+        "word": "hành chính",
+        "hanja": "行政",
+        "meaning": {
+          "ko": "행정",
+          "zh": "行政",
+          "en": "administration",
+          "ja": "行政"
+        }
+      },
+      {
+        "word": "hành trình",
+        "hanja": "行程",
+        "meaning": {
+          "ko": "여정",
+          "zh": "旅程",
+          "en": "journey",
+          "ja": "旅程"
+        }
+      },
+      {
+        "word": "hành lý",
+        "hanja": "行李",
+        "meaning": {
+          "ko": "수하물",
+          "zh": "行李",
+          "en": "baggage",
+          "ja": "手荷物"
+        }
+      },
+      {
+        "word": "hành vi",
+        "hanja": "行為",
+        "meaning": {
+          "ko": "행위",
+          "zh": "行為",
+          "en": "act/deed",
+          "ja": "行為"
+        }
+      }
+    ]
+  },
+  {
+    "n": 36,
+    "syllable": "hiện",
+    "words": [
+      {
+        "word": "hiện tại",
+        "hanja": "現在",
+        "meaning": {
+          "ko": "현재",
+          "zh": "現在",
+          "en": "present",
+          "ja": "現在"
+        }
+      },
+      {
+        "word": "hiện đại",
+        "hanja": "現代",
+        "meaning": {
+          "ko": "현대",
+          "zh": "現代",
+          "en": "modern era",
+          "ja": "現代"
+        }
+      },
+      {
+        "word": "hiện tượng",
+        "hanja": "現象",
+        "meaning": {
+          "ko": "현상",
+          "zh": "現象",
+          "en": "phenomenon",
+          "ja": "現象"
+        }
+      },
+      {
+        "word": "hiện thực",
+        "hanja": "現實",
+        "meaning": {
+          "ko": "현실",
+          "zh": "現實",
+          "en": "reality",
+          "ja": "現実"
+        }
+      },
+      {
+        "word": "hiện trường",
+        "hanja": "現場",
+        "meaning": {
+          "ko": "현장",
+          "zh": "現場",
+          "en": "scene/site",
+          "ja": "現場"
+        }
+      },
+      {
+        "word": "hiện diện",
+        "hanja": "現面",
+        "meaning": {
+          "ko": "현존·참석",
+          "zh": "現存·出席",
+          "en": "existence / presence",
+          "ja": "現存・出席"
+        }
+      },
+      {
+        "word": "hiện hành",
+        "hanja": "現行",
+        "meaning": {
+          "ko": "현행",
+          "zh": "現行",
+          "en": "current (existing)",
+          "ja": "現行"
+        }
+      }
+    ]
+  },
+  {
+    "n": 37,
+    "syllable": "hòa",
+    "words": [
+      {
+        "word": "hòa bình",
+        "hanja": "和平",
+        "meaning": {
+          "ko": "평화",
+          "zh": "和平",
+          "en": "peace",
+          "ja": "平和"
+        }
+      },
+      {
+        "word": "hòa giải",
+        "hanja": "和解",
+        "meaning": {
+          "ko": "화해",
+          "zh": "和解",
+          "en": "reconciliation",
+          "ja": "和解"
+        }
+      },
+      {
+        "word": "hòa hợp",
+        "hanja": "和合",
+        "meaning": {
+          "ko": "화합",
+          "zh": "和合",
+          "en": "harmony",
+          "ja": "和合"
+        }
+      },
+      {
+        "word": "hòa nhập",
+        "hanja": "和入",
+        "meaning": {
+          "ko": "융화·편입",
+          "zh": "融合·編入",
+          "en": "assimilation/incorporation",
+          "ja": "融和・編入"
+        }
+      },
+      {
+        "word": "hòa tan",
+        "hanja": "和",
+        "meaning": {
+          "ko": "용해·녹임",
+          "zh": "溶解·融化",
+          "en": "dissolving/melting",
+          "ja": "溶解・融解"
+        }
+      }
+    ]
+  },
+  {
+    "n": 38,
+    "syllable": "hóa",
+    "words": [
+      {
+        "word": "hóa học",
+        "hanja": "化學",
+        "meaning": {
+          "ko": "화학",
+          "zh": "化學",
+          "en": "chemistry",
+          "ja": "化学"
+        }
+      },
+      {
+        "word": "hóa đơn",
+        "hanja": "貨單",
+        "meaning": {
+          "ko": "영수증·청구서",
+          "zh": "收據·帳單",
+          "en": "receipt/bill",
+          "ja": "領収書・請求書"
+        }
+      },
+      {
+        "word": "hóa trang",
+        "hanja": "化妝",
+        "meaning": {
+          "ko": "분장",
+          "zh": "化妝，扮裝",
+          "en": "makeup; costume",
+          "ja": "扮装"
+        }
+      },
+      {
+        "word": "hóa thân",
+        "hanja": "化身",
+        "meaning": {
+          "ko": "화신·변신",
+          "zh": "化身·變身",
+          "en": "incarnation / transformation",
+          "ja": "化身・変身"
+        }
+      },
+      {
+        "word": "hóa giải",
+        "hanja": "化解",
+        "meaning": {
+          "ko": "해소·풀다",
+          "zh": "解除·解開",
+          "en": "to resolve / to untie",
+          "ja": "解消・解く"
+        }
+      },
+      {
+        "word": "hóa chất",
+        "hanja": "化質",
+        "meaning": {
+          "ko": "화학물질",
+          "zh": "化學物質",
+          "en": "chemical substance",
+          "ja": "化学物質"
+        }
+      },
+      {
+        "word": "văn hóa",
+        "hanja": "文化",
+        "meaning": {
+          "ko": "문화",
+          "zh": "文化",
+          "en": "culture",
+          "ja": "文化"
+        }
+      }
+    ]
+  },
+  {
+    "n": 39,
+    "syllable": "hoàn",
+    "words": [
+      {
+        "word": "hoàn thành",
+        "hanja": "完成",
+        "meaning": {
+          "ko": "완성·완료",
+          "zh": "完成·完了",
+          "en": "completion",
+          "ja": "完成・完了"
+        }
+      },
+      {
+        "word": "hoàn cảnh",
+        "hanja": "環境",
+        "meaning": {
+          "ko": "환경·처지",
+          "zh": "環境·處境",
+          "en": "environment / circumstance",
+          "ja": "環境・境遇"
+        }
+      },
+      {
+        "word": "hoàn hảo",
+        "hanja": "完好",
+        "meaning": {
+          "ko": "완벽",
+          "zh": "完美",
+          "en": "perfection",
+          "ja": "完璧"
+        }
+      },
+      {
+        "word": "hoàn toàn",
+        "hanja": "完全",
+        "meaning": {
+          "ko": "완전히",
+          "zh": "完全地",
+          "en": "completely",
+          "ja": "完全に"
+        }
+      },
+      {
+        "word": "hoàn thiện",
+        "hanja": "完善",
+        "meaning": {
+          "ko": "완비·보완",
+          "zh": "完備·補充",
+          "en": "completeness/supplement",
+          "ja": "完備・補完"
+        }
+      },
+      {
+        "word": "hoàn trả",
+        "hanja": "還",
+        "meaning": {
+          "ko": "반환·상환",
+          "zh": "歸還・償還",
+          "en": "return, repayment",
+          "ja": "返還・償還"
+        }
+      },
+      {
+        "word": "hoàn công",
+        "hanja": "完工",
+        "meaning": {
+          "ko": "준공",
+          "zh": "竣工",
+          "en": "completion (of construction)",
+          "ja": "竣工"
+        }
+      }
+    ]
+  },
+  {
+    "n": 40,
+    "syllable": "học",
+    "words": [
+      {
+        "word": "học sinh",
+        "hanja": "學生",
+        "meaning": {
+          "ko": "학생",
+          "zh": "學生",
+          "en": "student",
+          "ja": "学生"
+        }
+      },
+      {
+        "word": "học tập",
+        "hanja": "學習",
+        "meaning": {
+          "ko": "학습",
+          "zh": "學習",
+          "en": "learning",
+          "ja": "学習"
+        }
+      },
+      {
+        "word": "học phí",
+        "hanja": "學費",
+        "meaning": {
+          "ko": "학비",
+          "zh": "學費",
+          "en": "tuition",
+          "ja": "学費"
+        }
+      },
+      {
+        "word": "học kỳ",
+        "hanja": "學期",
+        "meaning": {
+          "ko": "학기",
+          "zh": "學期",
+          "en": "semester",
+          "ja": "学期"
+        }
+      },
+      {
+        "word": "học viện",
+        "hanja": "學院",
+        "meaning": {
+          "ko": "학원·학교",
+          "zh": "補習班·學校",
+          "en": "academy, school",
+          "ja": "塾・学校"
+        }
+      },
+      {
+        "word": "học bổng",
+        "hanja": "學俸",
+        "meaning": {
+          "ko": "장학금",
+          "zh": "獎學金",
+          "en": "scholarship",
+          "ja": "奨学金"
+        }
+      },
+      {
+        "word": "học giả",
+        "hanja": "學者",
+        "meaning": {
+          "ko": "학자",
+          "zh": "學者",
+          "en": "scholar",
+          "ja": "学者"
+        }
+      },
+      {
+        "word": "học lực",
+        "hanja": "學力",
+        "meaning": {
+          "ko": "학력",
+          "zh": "學歷",
+          "en": "educational background",
+          "ja": "学歴"
+        }
+      },
+      {
+        "word": "học văn",
+        "hanja": "學文",
+        "meaning": {
+          "ko": "문학 공부",
+          "zh": "文學研究",
+          "en": "literature study",
+          "ja": "文学の勉強"
+        }
+      },
+      {
+        "word": "học y",
+        "hanja": "學醫",
+        "meaning": {
+          "ko": "의학 공부",
+          "zh": "醫學研究",
+          "en": "studying medicine",
+          "ja": "医学の勉強"
+        }
+      }
+    ]
+  },
+  {
+    "n": 41,
+    "syllable": "hội",
+    "words": [
+      {
+        "word": "hội nghị",
+        "hanja": "會議",
+        "meaning": {
+          "ko": "회의",
+          "zh": "會議",
+          "en": "meeting",
+          "ja": "会議"
+        }
+      },
+      {
+        "word": "hội thảo",
+        "hanja": "會討",
+        "meaning": {
+          "ko": "세미나·학술대회",
+          "zh": "研討會·學術大會",
+          "en": "seminar, academic conference",
+          "ja": "セミナー·学術大会"
+        }
+      },
+      {
+        "word": "hội đồng",
+        "hanja": "會同",
+        "meaning": {
+          "ko": "위원회·평의회",
+          "zh": "委員會·評議會",
+          "en": "committee/council",
+          "ja": "委員会・評議会"
+        }
+      },
+      {
+        "word": "hội viên",
+        "hanja": "會員",
+        "meaning": {
+          "ko": "회원",
+          "zh": "會員",
+          "en": "member",
+          "ja": "会員"
+        }
+      },
+      {
+        "word": "hội trường",
+        "hanja": "會場",
+        "meaning": {
+          "ko": "회관·강당",
+          "zh": "會館·禮堂",
+          "en": "hall / auditorium",
+          "ja": "会館・講堂"
+        }
+      },
+      {
+        "word": "hội chợ",
+        "hanja": "會",
+        "meaning": {
+          "ko": "박람회",
+          "zh": "博覽會",
+          "en": "fair, exhibition",
+          "ja": "博覧会"
+        }
+      }
+    ]
+  },
+  {
+    "n": 42,
+    "syllable": "hôn",
+    "words": [
+      {
+        "word": "hôn nhân",
+        "hanja": "婚姻",
+        "meaning": {
+          "ko": "혼인",
+          "zh": "婚姻",
+          "en": "marriage",
+          "ja": "婚姻"
+        }
+      },
+      {
+        "word": "hôn lễ",
+        "hanja": "婚禮",
+        "meaning": {
+          "ko": "혼례",
+          "zh": "婚禮",
+          "en": "wedding ceremony",
+          "ja": "婚礼"
+        }
+      },
+      {
+        "word": "hôn thê",
+        "hanja": "婚妻",
+        "meaning": {
+          "ko": "약혼녀",
+          "zh": "未婚妻",
+          "en": "fiancée",
+          "ja": "婚約者（女性）"
+        }
+      },
+      {
+        "word": "hôn phối",
+        "hanja": "婚配",
+        "meaning": {
+          "ko": "혼인·배우자",
+          "zh": "婚姻·配偶",
+          "en": "marriage / spouse",
+          "ja": "婚姻・配偶者"
+        }
+      },
+      {
+        "word": "hôn ước",
+        "hanja": "婚約",
+        "meaning": {
+          "ko": "혼약",
+          "zh": "婚約",
+          "en": "engagement",
+          "ja": "婚約"
+        }
+      }
+    ]
+  },
+  {
+    "n": 43,
+    "syllable": "hợp",
+    "words": [
+      {
+        "word": "hợp tác",
+        "hanja": "合作",
+        "meaning": {
+          "ko": "협력",
+          "zh": "合作",
+          "en": "cooperation",
+          "ja": "協力"
+        }
+      },
+      {
+        "word": "hợp đồng",
+        "hanja": "合同",
+        "meaning": {
+          "ko": "계약",
+          "zh": "合約",
+          "en": "contract",
+          "ja": "契約"
+        }
+      },
+      {
+        "word": "hợp lý",
+        "hanja": "合理",
+        "meaning": {
+          "ko": "합리적",
+          "zh": "合理的",
+          "en": "reasonable",
+          "ja": "合理的"
+        }
+      },
+      {
+        "word": "hợp pháp",
+        "hanja": "合法",
+        "meaning": {
+          "ko": "합법",
+          "zh": "合法",
+          "en": "legal",
+          "ja": "合法"
+        }
+      },
+      {
+        "word": "hợp nhất",
+        "hanja": "合一",
+        "meaning": {
+          "ko": "합병·통합",
+          "zh": "合併·整合",
+          "en": "merger / integration",
+          "ja": "合併・統合"
+        }
+      },
+      {
+        "word": "hợp lệ",
+        "hanja": "合例",
+        "meaning": {
+          "ko": "유효·적법",
+          "zh": "有效·合法",
+          "en": "valid/legal",
+          "ja": "有効・適法"
+        }
+      },
+      {
+        "word": "phù hợp",
+        "hanja": "符合→적합",
+        "meaning": {
+          "ko": "알맞음",
+          "zh": "合適",
+          "en": "suitability",
+          "ja": "適切さ"
+        }
+      }
+    ]
+  },
+  {
+    "n": 44,
+    "syllable": "kế",
+    "words": [
+      {
+        "word": "kế hoạch",
+        "hanja": "計劃",
+        "meaning": {
+          "ko": "계획",
+          "zh": "計劃",
+          "en": "plan",
+          "ja": "計画"
+        }
+      },
+      {
+        "word": "kế toán",
+        "hanja": "計算",
+        "meaning": {
+          "ko": "회계",
+          "zh": "會計",
+          "en": "accounting",
+          "ja": "会計"
+        }
+      },
+      {
+        "word": "kế tiếp",
+        "hanja": "繼接",
+        "meaning": {
+          "ko": "계속되는·다음",
+          "zh": "持續的·下一個",
+          "en": "continuing/next",
+          "ja": "続く・次の"
+        }
+      },
+      {
+        "word": "kế thừa",
+        "hanja": "繼承",
+        "meaning": {
+          "ko": "계승",
+          "zh": "繼承",
+          "en": "succession",
+          "ja": "継承"
+        }
+      },
+      {
+        "word": "kế nghiệp",
+        "hanja": "繼業",
+        "meaning": {
+          "ko": "가업 계승",
+          "zh": "繼承家業",
+          "en": "succeeding the family business",
+          "ja": "家業の継承"
+        }
+      }
+    ]
+  },
+  {
+    "n": 45,
+    "syllable": "kết",
+    "words": [
+      {
+        "word": "kết quả",
+        "hanja": "結果",
+        "meaning": {
+          "ko": "결과",
+          "zh": "結果",
+          "en": "result",
+          "ja": "結果"
+        }
+      },
+      {
+        "word": "kết luận",
+        "hanja": "結論",
+        "meaning": {
+          "ko": "결론",
+          "zh": "結論",
+          "en": "conclusion",
+          "ja": "結論"
+        }
+      },
+      {
+        "word": "kết hôn",
+        "hanja": "結婚",
+        "meaning": {
+          "ko": "결혼",
+          "zh": "結婚",
+          "en": "marriage",
+          "ja": "結婚"
+        }
+      },
+      {
+        "word": "kết thúc",
+        "hanja": "結束",
+        "meaning": {
+          "ko": "종결·끝",
+          "zh": "終結·結束",
+          "en": "conclusion/end",
+          "ja": "終結・終わり"
+        }
+      },
+      {
+        "word": "kết nối",
+        "hanja": "結",
+        "meaning": {
+          "ko": "연결",
+          "zh": "連結",
+          "en": "connection",
+          "ja": "連結"
+        }
+      },
+      {
+        "word": "kết hợp",
+        "hanja": "結合",
+        "meaning": {
+          "ko": "결합",
+          "zh": "結合",
+          "en": "combination",
+          "ja": "結合"
+        }
+      }
+    ]
+  },
+  {
+    "n": 46,
+    "syllable": "khách",
+    "words": [
+      {
+        "word": "khách hàng",
+        "hanja": "客行",
+        "meaning": {
+          "ko": "고객",
+          "zh": "顧客",
+          "en": "customer",
+          "ja": "顧客"
+        }
+      },
+      {
+        "word": "khách sạn",
+        "hanja": "客棧",
+        "meaning": {
+          "ko": "호텔",
+          "zh": "飯店",
+          "en": "hotel",
+          "ja": "ホテル"
+        }
+      },
+      {
+        "word": "khách quan",
+        "hanja": "客觀",
+        "meaning": {
+          "ko": "객관",
+          "zh": "客觀",
+          "en": "objectivity",
+          "ja": "客観"
+        }
+      },
+      {
+        "word": "khách mời",
+        "hanja": "客",
+        "meaning": {
+          "ko": "초대손님",
+          "zh": "客人",
+          "en": "guest",
+          "ja": "招待客"
+        }
+      },
+      {
+        "word": "khách trọ",
+        "hanja": "客",
+        "meaning": {
+          "ko": "투숙객",
+          "zh": "住客",
+          "en": "hotel guest",
+          "ja": "宿泊客"
+        }
+      },
+      {
+        "word": "lữ khách",
+        "hanja": "旅客",
+        "meaning": {
+          "ko": "여객",
+          "zh": "旅客",
+          "en": "passenger",
+          "ja": "旅客"
+        }
+      }
+    ]
+  },
+  {
+    "n": 47,
+    "syllable": "khí",
+    "words": [
+      {
+        "word": "khí hậu",
+        "hanja": "氣候",
+        "meaning": {
+          "ko": "기후",
+          "zh": "氣候",
+          "en": "climate",
+          "ja": "気候"
+        }
+      },
+      {
+        "word": "khí thế",
+        "hanja": "氣勢",
+        "meaning": {
+          "ko": "기세",
+          "zh": "氣勢",
+          "en": "momentum, vigor",
+          "ja": "勢い"
+        }
+      },
+      {
+        "word": "khí chất",
+        "hanja": "氣質",
+        "meaning": {
+          "ko": "기질",
+          "zh": "氣質",
+          "en": "temperament",
+          "ja": "気質"
+        }
+      },
+      {
+        "word": "khí công",
+        "hanja": "氣功",
+        "meaning": {
+          "ko": "기공",
+          "zh": "氣孔",
+          "en": "pore",
+          "ja": "気孔"
+        }
+      },
+      {
+        "word": "khí phách",
+        "hanja": "氣魄",
+        "meaning": {
+          "ko": "기백",
+          "zh": "氣魄",
+          "en": "spirit, vigor",
+          "ja": "気迫"
+        }
+      }
+    ]
+  },
+  {
+    "n": 48,
+    "syllable": "kinh",
+    "words": [
+      {
+        "word": "kinh tế",
+        "hanja": "經濟",
+        "meaning": {
+          "ko": "경제",
+          "zh": "經濟",
+          "en": "economy",
+          "ja": "経済"
+        }
+      },
+      {
+        "word": "kinh nghiệm",
+        "hanja": "經驗",
+        "meaning": {
+          "ko": "경험",
+          "zh": "經驗",
+          "en": "experience",
+          "ja": "経験"
+        }
+      },
+      {
+        "word": "kinh doanh",
+        "hanja": "經營",
+        "meaning": {
+          "ko": "경영",
+          "zh": "經營",
+          "en": "management",
+          "ja": "経営"
+        }
+      },
+      {
+        "word": "kinh phí",
+        "hanja": "經費",
+        "meaning": {
+          "ko": "경비·비용",
+          "zh": "經費·費用",
+          "en": "expense/cost",
+          "ja": "経費・費用"
+        }
+      },
+      {
+        "word": "kinh ngạc",
+        "hanja": "驚愕",
+        "meaning": {
+          "ko": "경악",
+          "zh": "驚愕",
+          "en": "shock/astonishment",
+          "ja": "驚愕"
+        }
+      },
+      {
+        "word": "kinh điển",
+        "hanja": "經典",
+        "meaning": {
+          "ko": "경전·고전",
+          "zh": "經典",
+          "en": "scripture/classic",
+          "ja": "経典・古典"
+        }
+      },
+      {
+        "word": "Bắc Kinh",
+        "hanja": "北京",
+        "meaning": {
+          "ko": "북경",
+          "zh": "北京",
+          "en": "Beijing",
+          "ja": "北京"
+        }
+      }
+    ]
+  },
+  {
+    "n": 49,
+    "syllable": "kỹ",
+    "words": [
+      {
+        "word": "kỹ thuật",
+        "hanja": "技術",
+        "meaning": {
+          "ko": "기술",
+          "zh": "技術",
+          "en": "technology, skill",
+          "ja": "技術"
+        }
+      },
+      {
+        "word": "kỹ năng",
+        "hanja": "技能",
+        "meaning": {
+          "ko": "기능·스킬",
+          "zh": "功能‧技能",
+          "en": "function, skill",
+          "ja": "機能・スキル"
+        }
+      },
+      {
+        "word": "kỹ sư",
+        "hanja": "技師",
+        "meaning": {
+          "ko": "기사·엔지니어",
+          "zh": "技師‧工程師",
+          "en": "engineer",
+          "ja": "技師・エンジニア"
+        }
+      },
+      {
+        "word": "kỹ nghệ",
+        "hanja": "技藝",
+        "meaning": {
+          "ko": "공업·기예",
+          "zh": "工業‧技藝",
+          "en": "industry, craft",
+          "ja": "工業・技芸"
+        }
+      },
+      {
+        "word": "kỹ xảo",
+        "hanja": "技巧",
+        "meaning": {
+          "ko": "기교",
+          "zh": "技巧",
+          "en": "technique",
+          "ja": "技巧"
+        }
+      }
+    ]
+  },
+  {
+    "n": 50,
+    "syllable": "lễ",
+    "words": [
+      {
+        "word": "lễ hội",
+        "hanja": "禮會",
+        "meaning": {
+          "ko": "축제",
+          "zh": "節慶",
+          "en": "festival",
+          "ja": "祭り"
+        }
+      },
+      {
+        "word": "lễ nghi",
+        "hanja": "禮儀",
+        "meaning": {
+          "ko": "예의·의례",
+          "zh": "禮儀·禮節",
+          "en": "courtesy/etiquette",
+          "ja": "礼儀・儀礼"
+        }
+      },
+      {
+        "word": "lễ phép",
+        "hanja": "禮法",
+        "meaning": {
+          "ko": "예의바름",
+          "zh": "禮貌",
+          "en": "politeness",
+          "ja": "礼儀正しさ"
+        }
+      },
+      {
+        "word": "lễ vật",
+        "hanja": "禮物",
+        "meaning": {
+          "ko": "예물",
+          "zh": "禮物",
+          "en": "gift/offering",
+          "ja": "贈り物"
+        }
+      },
+      {
+        "word": "lễ tân",
+        "hanja": "禮賓",
+        "meaning": {
+          "ko": "리셉션·접객",
+          "zh": "接待・迎賓",
+          "en": "reception, hospitality",
+          "ja": "接待"
+        }
+      },
+      {
+        "word": "lễ độ",
+        "hanja": "禮度",
+        "meaning": {
+          "ko": "예의",
+          "zh": "禮儀",
+          "en": "manners/courtesy",
+          "ja": "礼儀"
+        }
+      }
+    ]
+  },
+  {
+    "n": 51,
+    "syllable": "lịch",
+    "words": [
+      {
+        "word": "lịch sử",
+        "hanja": "歷史",
+        "meaning": {
+          "ko": "역사",
+          "zh": "歷史",
+          "en": "history",
+          "ja": "歴史"
+        }
+      },
+      {
+        "word": "lịch sự",
+        "hanja": "歷事",
+        "meaning": {
+          "ko": "예의바름",
+          "zh": "禮貌",
+          "en": "politeness",
+          "ja": "礼儀正しさ"
+        }
+      },
+      {
+        "word": "lịch trình",
+        "hanja": "歷程",
+        "meaning": {
+          "ko": "일정",
+          "zh": "日程",
+          "en": "schedule",
+          "ja": "日程"
+        }
+      },
+      {
+        "word": "lịch lãm",
+        "hanja": "歷覽",
+        "meaning": {
+          "ko": "세련됨·경험 많음",
+          "zh": "老練·經驗豐富",
+          "en": "refined, experienced",
+          "ja": "洗練されている·経験豊富"
+        }
+      },
+      {
+        "word": "lịch thiệp",
+        "hanja": "歷涉",
+        "meaning": {
+          "ko": "예의바르고 세련됨",
+          "zh": "有禮又文雅",
+          "en": "polite and refined",
+          "ja": "礼儀正しく洗練されている"
+        }
+      }
+    ]
+  },
+  {
+    "n": 52,
+    "syllable": "liên",
+    "words": [
+      {
+        "word": "liên hệ",
+        "hanja": "聯繫",
+        "meaning": {
+          "ko": "연계·연락",
+          "zh": "聯繫・聯絡",
+          "en": "liaison · contact",
+          "ja": "連携・連絡"
+        }
+      },
+      {
+        "word": "liên kết",
+        "hanja": "聯結",
+        "meaning": {
+          "ko": "연결",
+          "zh": "連結",
+          "en": "connection",
+          "ja": "連結"
+        }
+      },
+      {
+        "word": "liên minh",
+        "hanja": "聯盟",
+        "meaning": {
+          "ko": "연맹·동맹",
+          "zh": "聯盟・同盟",
+          "en": "federation · alliance",
+          "ja": "連盟・同盟"
+        }
+      },
+      {
+        "word": "liên tục",
+        "hanja": "連續",
+        "meaning": {
+          "ko": "연속·계속",
+          "zh": "連續・繼續",
+          "en": "continuation · continuing",
+          "ja": "連続・継続"
+        }
+      },
+      {
+        "word": "liên quan",
+        "hanja": "聯關",
+        "meaning": {
+          "ko": "관련",
+          "zh": "關聯",
+          "en": "relation, connection",
+          "ja": "関連"
+        }
+      },
+      {
+        "word": "liên hoan",
+        "hanja": "聯歡",
+        "meaning": {
+          "ko": "연회·모임",
+          "zh": "宴會・聚會",
+          "en": "banquet · gathering",
+          "ja": "宴会・集まり"
+        }
+      }
+    ]
+  },
+  {
+    "n": 53,
+    "syllable": "lợi",
+    "words": [
+      {
+        "word": "lợi ích",
+        "hanja": "利益",
+        "meaning": {
+          "ko": "이익",
+          "zh": "利益",
+          "en": "benefit",
+          "ja": "利益"
+        }
+      },
+      {
+        "word": "lợi nhuận",
+        "hanja": "利潤",
+        "meaning": {
+          "ko": "이윤",
+          "zh": "利潤",
+          "en": "profit",
+          "ja": "利潤"
+        }
+      },
+      {
+        "word": "lợi dụng",
+        "hanja": "利用",
+        "meaning": {
+          "ko": "이용·악용",
+          "zh": "利用·濫用",
+          "en": "use/abuse",
+          "ja": "利用・悪用"
+        }
+      },
+      {
+        "word": "lợi thế",
+        "hanja": "利勢",
+        "meaning": {
+          "ko": "우위·이점",
+          "zh": "優勢·優點",
+          "en": "advantage",
+          "ja": "優位・利点"
+        }
+      },
+      {
+        "word": "lợi hại",
+        "hanja": "利害",
+        "meaning": {
+          "ko": "이해(利害)·장단점",
+          "zh": "利害·優缺點",
+          "en": "advantages and disadvantages",
+          "ja": "利害・長所短所"
+        }
+      }
+    ]
+  },
+  {
+    "n": 54,
+    "syllable": "lý",
+    "words": [
+      {
+        "word": "lý do",
+        "hanja": "理由",
+        "meaning": {
+          "ko": "이유",
+          "zh": "理由",
+          "en": "reason",
+          "ja": "理由"
+        }
+      },
+      {
+        "word": "lý luận",
+        "hanja": "理論",
+        "meaning": {
+          "ko": "이론·논리",
+          "zh": "理論·邏輯",
+          "en": "theory/logic",
+          "ja": "理論・論理"
+        }
+      },
+      {
+        "word": "lý tưởng",
+        "hanja": "理想",
+        "meaning": {
+          "ko": "이상",
+          "zh": "異常",
+          "en": "abnormal",
+          "ja": "異常"
+        }
+      },
+      {
+        "word": "lý thuyết",
+        "hanja": "理說",
+        "meaning": {
+          "ko": "이론",
+          "zh": "理論",
+          "en": "theory",
+          "ja": "理論"
+        }
+      },
+      {
+        "word": "lý trí",
+        "hanja": "理智",
+        "meaning": {
+          "ko": "이성",
+          "zh": "理性",
+          "en": "reason",
+          "ja": "理性"
+        }
+      },
+      {
+        "word": "lý lịch",
+        "hanja": "履歷",
+        "meaning": {
+          "ko": "이력",
+          "zh": "履歷",
+          "en": "resume/history",
+          "ja": "履歴"
+        }
+      }
+    ]
+  },
+  {
+    "n": 55,
+    "syllable": "minh",
+    "words": [
+      {
+        "word": "minh bạch",
+        "hanja": "明白",
+        "meaning": {
+          "ko": "명백·투명",
+          "zh": "明白・透明",
+          "en": "clear, transparent",
+          "ja": "明白・透明"
+        }
+      },
+      {
+        "word": "minh chứng",
+        "hanja": "明證",
+        "meaning": {
+          "ko": "명증·증거",
+          "zh": "明證・證據",
+          "en": "evidence, proof",
+          "ja": "明証・証拠"
+        }
+      },
+      {
+        "word": "minh oan",
+        "hanja": "明冤",
+        "meaning": {
+          "ko": "누명을 벗음",
+          "zh": "洗清冤屈",
+          "en": "clearing one's name",
+          "ja": "汚名をそそぐこと"
+        }
+      },
+      {
+        "word": "minh họa",
+        "hanja": "明畫",
+        "meaning": {
+          "ko": "삽화·예시",
+          "zh": "插圖·例示",
+          "en": "illustration, example",
+          "ja": "挿絵·例示"
+        }
+      },
+      {
+        "word": "minh triết",
+        "hanja": "明哲",
+        "meaning": {
+          "ko": "명철함·지혜",
+          "zh": "明辨力・智慧",
+          "en": "discernment, wisdom",
+          "ja": "明晰さ・知恵"
+        }
+      },
+      {
+        "word": "văn minh",
+        "hanja": "文明",
+        "meaning": {
+          "ko": "문명",
+          "zh": "文明",
+          "en": "civilization",
+          "ja": "文明"
+        }
+      }
+    ]
+  },
+  {
+    "n": 56,
+    "syllable": "mỹ",
+    "words": [
+      {
+        "word": "mỹ thuật",
+        "hanja": "美術",
+        "meaning": {
+          "ko": "미술",
+          "zh": "美術",
+          "en": "art, fine arts",
+          "ja": "美術"
+        }
+      },
+      {
+        "word": "mỹ phẩm",
+        "hanja": "美品",
+        "meaning": {
+          "ko": "화장품",
+          "zh": "化妝品",
+          "en": "cosmetics",
+          "ja": "化粧品"
+        }
+      },
+      {
+        "word": "mỹ nhân",
+        "hanja": "美人",
+        "meaning": {
+          "ko": "미인",
+          "zh": "美人",
+          "en": "beautiful person",
+          "ja": "美人"
+        }
+      },
+      {
+        "word": "mỹ mãn",
+        "hanja": "美滿",
+        "meaning": {
+          "ko": "만족스러움·원만함",
+          "zh": "令人滿意・圓滿",
+          "en": "satisfactory, harmonious",
+          "ja": "満足・円満"
+        }
+      },
+      {
+        "word": "mỹ cảm",
+        "hanja": "美感",
+        "meaning": {
+          "ko": "미감",
+          "zh": "美感",
+          "en": "aesthetic sense",
+          "ja": "美的感覚"
+        }
+      }
+    ]
+  },
+  {
+    "n": 57,
+    "syllable": "ngân",
+    "words": [
+      {
+        "word": "ngân hàng",
+        "hanja": "銀行",
+        "meaning": {
+          "ko": "은행",
+          "zh": "銀行",
+          "en": "bank",
+          "ja": "銀行"
+        }
+      },
+      {
+        "word": "ngân sách",
+        "hanja": "銀策",
+        "meaning": {
+          "ko": "예산",
+          "zh": "預算",
+          "en": "budget",
+          "ja": "予算"
+        }
+      },
+      {
+        "word": "ngân khố",
+        "hanja": "銀庫",
+        "meaning": {
+          "ko": "국고",
+          "zh": "國庫",
+          "en": "national treasury",
+          "ja": "国庫"
+        }
+      },
+      {
+        "word": "ngân phiếu",
+        "hanja": "銀票",
+        "meaning": {
+          "ko": "수표",
+          "zh": "支票",
+          "en": "check (bank)",
+          "ja": "小切手"
+        }
+      },
+      {
+        "word": "ngân quỹ",
+        "hanja": "銀櫃",
+        "meaning": {
+          "ko": "기금·자금",
+          "zh": "基金‧資金",
+          "en": "fund, capital",
+          "ja": "基金・資金"
+        }
+      }
+    ]
+  },
+  {
+    "n": 58,
+    "syllable": "ngoại",
+    "words": [
+      {
+        "word": "ngoại giao",
+        "hanja": "外交",
+        "meaning": {
+          "ko": "외교",
+          "zh": "外交",
+          "en": "diplomacy",
+          "ja": "外交"
+        }
+      },
+      {
+        "word": "ngoại ngữ",
+        "hanja": "外語",
+        "meaning": {
+          "ko": "외국어",
+          "zh": "外語",
+          "en": "foreign language",
+          "ja": "外国語"
+        }
+      },
+      {
+        "word": "ngoại tệ",
+        "hanja": "外幣",
+        "meaning": {
+          "ko": "외화",
+          "zh": "外幣",
+          "en": "foreign currency",
+          "ja": "外貨"
+        }
+      },
+      {
+        "word": "ngoại quốc",
+        "hanja": "外國",
+        "meaning": {
+          "ko": "외국",
+          "zh": "外國",
+          "en": "foreign country",
+          "ja": "外国"
+        }
+      },
+      {
+        "word": "ngoại hình",
+        "hanja": "外形",
+        "meaning": {
+          "ko": "외모",
+          "zh": "外貌",
+          "en": "appearance",
+          "ja": "外見"
+        }
+      },
+      {
+        "word": "ngoại ô",
+        "hanja": "外",
+        "meaning": {
+          "ko": "외곽·교외",
+          "zh": "郊區·近郊",
+          "en": "outskirts/suburbs",
+          "ja": "郊外"
+        }
+      }
+    ]
+  },
+  {
+    "n": 59,
+    "syllable": "nguyên",
+    "words": [
+      {
+        "word": "nguyên nhân",
+        "hanja": "原因",
+        "meaning": {
+          "ko": "원인",
+          "zh": "原因",
+          "en": "cause",
+          "ja": "原因"
+        }
+      },
+      {
+        "word": "nguyên tắc",
+        "hanja": "原則",
+        "meaning": {
+          "ko": "원칙",
+          "zh": "原則",
+          "en": "principle",
+          "ja": "原則"
+        }
+      },
+      {
+        "word": "nguyên liệu",
+        "hanja": "原料",
+        "meaning": {
+          "ko": "원료",
+          "zh": "原料",
+          "en": "raw material",
+          "ja": "原料"
+        }
+      },
+      {
+        "word": "nguyên tử",
+        "hanja": "原子",
+        "meaning": {
+          "ko": "원자",
+          "zh": "原子",
+          "en": "atom",
+          "ja": "原子"
+        }
+      },
+      {
+        "word": "nguyên vẹn",
+        "hanja": "原",
+        "meaning": {
+          "ko": "온전함",
+          "zh": "完整",
+          "en": "wholeness/integrity",
+          "ja": "全さ・健全さ"
+        }
+      },
+      {
+        "word": "nguyên thủy",
+        "hanja": "原始",
+        "meaning": {
+          "ko": "원시",
+          "zh": "原始",
+          "en": "primitive",
+          "ja": "原始"
+        }
+      },
+      {
+        "word": "nguyên tố",
+        "hanja": "元素",
+        "meaning": {
+          "ko": "원소",
+          "zh": "元素",
+          "en": "element",
+          "ja": "元素"
+        }
+      }
+    ]
+  },
+  {
+    "n": 60,
+    "syllable": "nhân",
+    "words": [
+      {
+        "word": "nhân dân",
+        "hanja": "人民",
+        "meaning": {
+          "ko": "인민",
+          "zh": "人民",
+          "en": "people",
+          "ja": "人民"
+        }
+      },
+      {
+        "word": "nhân viên",
+        "hanja": "人員",
+        "meaning": {
+          "ko": "직원",
+          "zh": "職員",
+          "en": "staff",
+          "ja": "職員"
+        }
+      },
+      {
+        "word": "nhân vật",
+        "hanja": "人物",
+        "meaning": {
+          "ko": "인물",
+          "zh": "人物",
+          "en": "person",
+          "ja": "人物"
+        }
+      },
+      {
+        "word": "nhân loại",
+        "hanja": "人類",
+        "meaning": {
+          "ko": "인류",
+          "zh": "人類",
+          "en": "mankind",
+          "ja": "人類"
+        }
+      },
+      {
+        "word": "nhân cách",
+        "hanja": "人格",
+        "meaning": {
+          "ko": "인격",
+          "zh": "人格",
+          "en": "character",
+          "ja": "人格"
+        }
+      },
+      {
+        "word": "nhân quyền",
+        "hanja": "人權",
+        "meaning": {
+          "ko": "인권",
+          "zh": "人權",
+          "en": "human rights",
+          "ja": "人権"
+        }
+      },
+      {
+        "word": "nhân duyên",
+        "hanja": "因緣",
+        "meaning": {
+          "ko": "인연",
+          "zh": "緣分",
+          "en": "bond/fate",
+          "ja": "縁"
+        }
+      },
+      {
+        "word": "nhân đạo",
+        "hanja": "人道",
+        "meaning": {
+          "ko": "인도적",
+          "zh": "人道的",
+          "en": "humane",
+          "ja": "人道的"
+        }
+      },
+      {
+        "word": "nhân tài",
+        "hanja": "人才",
+        "meaning": {
+          "ko": "인재",
+          "zh": "人才",
+          "en": "talent (person)",
+          "ja": "人材"
+        }
+      },
+      {
+        "word": "nhân công",
+        "hanja": "人工",
+        "meaning": {
+          "ko": "인건비·노동력",
+          "zh": "人事費·勞動力",
+          "en": "labor cost/workforce",
+          "ja": "人件費・労働力"
+        }
+      }
+    ]
+  },
+  {
+    "n": 61,
+    "syllable": "pháp",
+    "words": [
+      {
+        "word": "pháp luật",
+        "hanja": "法律",
+        "meaning": {
+          "ko": "법률",
+          "zh": "法律",
+          "en": "law; statute",
+          "ja": "法律"
+        }
+      },
+      {
+        "word": "pháp lý",
+        "hanja": "法理",
+        "meaning": {
+          "ko": "법리·법적",
+          "zh": "法理·法律的",
+          "en": "legal principle; legal",
+          "ja": "法理・法的"
+        }
+      },
+      {
+        "word": "pháp y",
+        "hanja": "法醫",
+        "meaning": {
+          "ko": "법의학",
+          "zh": "法醫學",
+          "en": "forensic medicine",
+          "ja": "法医学"
+        }
+      },
+      {
+        "word": "pháp quyền",
+        "hanja": "法權",
+        "meaning": {
+          "ko": "법권·법치",
+          "zh": "法權·法治",
+          "en": "legal authority; rule of law",
+          "ja": "法権・法治"
+        }
+      },
+      {
+        "word": "pháp chế",
+        "hanja": "法制",
+        "meaning": {
+          "ko": "법제",
+          "zh": "法制",
+          "en": "legal system",
+          "ja": "法制"
+        }
+      }
+    ]
+  },
+  {
+    "n": 62,
+    "syllable": "phát",
+    "words": [
+      {
+        "word": "phát triển",
+        "hanja": "發展",
+        "meaning": {
+          "ko": "발전",
+          "zh": "發展",
+          "en": "development",
+          "ja": "発展"
+        }
+      },
+      {
+        "word": "phát biểu",
+        "hanja": "發表",
+        "meaning": {
+          "ko": "발표·발언",
+          "zh": "發表・發言",
+          "en": "presentation, statement",
+          "ja": "発表・発言"
+        }
+      },
+      {
+        "word": "phát hiện",
+        "hanja": "發現",
+        "meaning": {
+          "ko": "발견",
+          "zh": "發現",
+          "en": "discovery",
+          "ja": "発見"
+        }
+      },
+      {
+        "word": "phát minh",
+        "hanja": "發明",
+        "meaning": {
+          "ko": "발명",
+          "zh": "發明",
+          "en": "invention",
+          "ja": "発明"
+        }
+      },
+      {
+        "word": "phát sinh",
+        "hanja": "發生",
+        "meaning": {
+          "ko": "발생",
+          "zh": "發生",
+          "en": "occurrence",
+          "ja": "発生"
+        }
+      },
+      {
+        "word": "phát hành",
+        "hanja": "發行",
+        "meaning": {
+          "ko": "발행",
+          "zh": "發行",
+          "en": "publication, issuance",
+          "ja": "発行"
+        }
+      },
+      {
+        "word": "phát âm",
+        "hanja": "發音",
+        "meaning": {
+          "ko": "발음",
+          "zh": "發音",
+          "en": "pronunciation",
+          "ja": "発音"
+        }
+      }
+    ]
+  },
+  {
+    "n": 63,
+    "syllable": "phong",
+    "words": [
+      {
+        "word": "phong cách",
+        "hanja": "風格",
+        "meaning": {
+          "ko": "스타일·풍격",
+          "zh": "風格",
+          "en": "style",
+          "ja": "スタイル·風格"
+        }
+      },
+      {
+        "word": "phong tục",
+        "hanja": "風俗",
+        "meaning": {
+          "ko": "풍속",
+          "zh": "風俗",
+          "en": "custom",
+          "ja": "風俗"
+        }
+      },
+      {
+        "word": "phong trào",
+        "hanja": "風潮",
+        "meaning": {
+          "ko": "운동·풍조",
+          "zh": "運動·風潮",
+          "en": "movement/trend",
+          "ja": "運動・風潮"
+        }
+      },
+      {
+        "word": "phong phú",
+        "hanja": "豐富",
+        "meaning": {
+          "ko": "풍부",
+          "zh": "豐富",
+          "en": "abundance",
+          "ja": "豊富"
+        }
+      },
+      {
+        "word": "phong cảnh",
+        "hanja": "風景",
+        "meaning": {
+          "ko": "풍경",
+          "zh": "風景",
+          "en": "scenery",
+          "ja": "風景"
+        }
+      },
+      {
+        "word": "phong ba",
+        "hanja": "風波",
+        "meaning": {
+          "ko": "풍파",
+          "zh": "風波",
+          "en": "storm",
+          "ja": "風波"
+        }
+      },
+      {
+        "word": "phong kiến",
+        "hanja": "封建",
+        "meaning": {
+          "ko": "봉건",
+          "zh": "封建",
+          "en": "feudal",
+          "ja": "封建"
+        }
+      }
+    ]
+  },
+  {
+    "n": 64,
+    "syllable": "phương",
+    "words": [
+      {
+        "word": "phương pháp",
+        "hanja": "方法",
+        "meaning": {
+          "ko": "방법",
+          "zh": "方法",
+          "en": "method",
+          "ja": "方法"
+        }
+      },
+      {
+        "word": "phương tiện",
+        "hanja": "方便",
+        "meaning": {
+          "ko": "수단·도구",
+          "zh": "手段·工具",
+          "en": "means, tool",
+          "ja": "手段·道具"
+        }
+      },
+      {
+        "word": "phương hướng",
+        "hanja": "方向",
+        "meaning": {
+          "ko": "방향",
+          "zh": "方向",
+          "en": "direction",
+          "ja": "方向"
+        }
+      },
+      {
+        "word": "phương án",
+        "hanja": "方案",
+        "meaning": {
+          "ko": "방안",
+          "zh": "方案",
+          "en": "plan; method",
+          "ja": "方策"
+        }
+      },
+      {
+        "word": "phương diện",
+        "hanja": "方面",
+        "meaning": {
+          "ko": "방면·측면",
+          "zh": "方面・側面",
+          "en": "aspect, side",
+          "ja": "方面・側面"
+        }
+      },
+      {
+        "word": "phương thức",
+        "hanja": "方式",
+        "meaning": {
+          "ko": "방식",
+          "zh": "方式",
+          "en": "way, manner",
+          "ja": "方式"
+        }
+      }
+    ]
+  },
+  {
+    "n": 65,
+    "syllable": "quan",
+    "words": [
+      {
+        "word": "quan hệ",
+        "hanja": "關係",
+        "meaning": {
+          "ko": "관계",
+          "zh": "關係",
+          "en": "relationship",
+          "ja": "関係"
+        }
+      },
+      {
+        "word": "quan điểm",
+        "hanja": "觀點",
+        "meaning": {
+          "ko": "관점",
+          "zh": "觀點",
+          "en": "viewpoint",
+          "ja": "観点"
+        }
+      },
+      {
+        "word": "quan tâm",
+        "hanja": "關心",
+        "meaning": {
+          "ko": "관심",
+          "zh": "關心",
+          "en": "interest",
+          "ja": "関心"
+        }
+      },
+      {
+        "word": "quan trọng",
+        "hanja": "關重",
+        "meaning": {
+          "ko": "중요",
+          "zh": "重要",
+          "en": "importance",
+          "ja": "重要"
+        }
+      },
+      {
+        "word": "quan sát",
+        "hanja": "觀察",
+        "meaning": {
+          "ko": "관찰",
+          "zh": "觀察",
+          "en": "observation",
+          "ja": "観察"
+        }
+      },
+      {
+        "word": "quan chức",
+        "hanja": "官職",
+        "meaning": {
+          "ko": "관료·공직자",
+          "zh": "官僚‧公職者",
+          "en": "bureaucrat, official",
+          "ja": "官僚・公職者"
+        }
+      }
+    ]
+  },
+  {
+    "n": 66,
+    "syllable": "quốc",
+    "words": [
+      {
+        "word": "quốc gia",
+        "hanja": "國家",
+        "meaning": {
+          "ko": "국가",
+          "zh": "國家",
+          "en": "nation, country",
+          "ja": "国家"
+        }
+      },
+      {
+        "word": "quốc tế",
+        "hanja": "國際",
+        "meaning": {
+          "ko": "국제",
+          "zh": "國際",
+          "en": "international",
+          "ja": "国際"
+        }
+      },
+      {
+        "word": "quốc hội",
+        "hanja": "國會",
+        "meaning": {
+          "ko": "국회",
+          "zh": "國會",
+          "en": "National Assembly",
+          "ja": "国会"
+        }
+      },
+      {
+        "word": "quốc phòng",
+        "hanja": "國防",
+        "meaning": {
+          "ko": "국방",
+          "zh": "國防",
+          "en": "national defense",
+          "ja": "国防"
+        }
+      },
+      {
+        "word": "quốc ca",
+        "hanja": "國歌",
+        "meaning": {
+          "ko": "국가(애국가)",
+          "zh": "國歌",
+          "en": "anthem (national anthem)",
+          "ja": "国歌"
+        }
+      },
+      {
+        "word": "quốc kỳ",
+        "hanja": "國旗",
+        "meaning": {
+          "ko": "국기",
+          "zh": "國旗",
+          "en": "national flag",
+          "ja": "国旗"
+        }
+      },
+      {
+        "word": "quốc tịch",
+        "hanja": "國籍",
+        "meaning": {
+          "ko": "국적",
+          "zh": "國籍",
+          "en": "nationality",
+          "ja": "国籍"
+        }
+      }
+    ]
+  },
+  {
+    "n": 67,
+    "syllable": "quyền",
+    "words": [
+      {
+        "word": "quyền lợi",
+        "hanja": "權利",
+        "meaning": {
+          "ko": "권리",
+          "zh": "權利",
+          "en": "right",
+          "ja": "権利"
+        }
+      },
+      {
+        "word": "quyền lực",
+        "hanja": "權力",
+        "meaning": {
+          "ko": "권력",
+          "zh": "權力",
+          "en": "power",
+          "ja": "権力"
+        }
+      },
+      {
+        "word": "quyền hạn",
+        "hanja": "權限",
+        "meaning": {
+          "ko": "권한",
+          "zh": "權限",
+          "en": "authority",
+          "ja": "権限"
+        }
+      },
+      {
+        "word": "quyền uy",
+        "hanja": "權威",
+        "meaning": {
+          "ko": "권위",
+          "zh": "權威",
+          "en": "authority",
+          "ja": "権威"
+        }
+      },
+      {
+        "word": "quyền hành",
+        "hanja": "權衡",
+        "meaning": {
+          "ko": "권한·직권",
+          "zh": "權限‧職權",
+          "en": "authority, official power",
+          "ja": "権限・職権"
+        }
+      }
+    ]
+  },
+  {
+    "n": 68,
+    "syllable": "sáng",
+    "words": [
+      {
+        "word": "sáng tạo",
+        "hanja": "創造",
+        "meaning": {
+          "ko": "창조",
+          "zh": "創造",
+          "en": "creation",
+          "ja": "創造"
+        }
+      },
+      {
+        "word": "sáng tác",
+        "hanja": "創作",
+        "meaning": {
+          "ko": "창작",
+          "zh": "創作",
+          "en": "creation",
+          "ja": "創作"
+        }
+      },
+      {
+        "word": "sáng kiến",
+        "hanja": "創見",
+        "meaning": {
+          "ko": "발상·아이디어",
+          "zh": "構想・點子",
+          "en": "idea, notion",
+          "ja": "発想・アイデア"
+        }
+      },
+      {
+        "word": "sáng lập",
+        "hanja": "創立",
+        "meaning": {
+          "ko": "창립",
+          "zh": "創立",
+          "en": "founding",
+          "ja": "創立"
+        }
+      },
+      {
+        "word": "sáng suốt",
+        "hanja": "",
+        "meaning": {
+          "ko": "현명함",
+          "zh": "明智",
+          "en": "wisdom",
+          "ja": "賢明さ"
+        }
+      },
+      {
+        "word": "sáng chế",
+        "hanja": "創制",
+        "meaning": {
+          "ko": "발명·특허",
+          "zh": "發明・專利",
+          "en": "invention, patent",
+          "ja": "発明・特許"
+        }
+      }
+    ]
+  },
+  {
+    "n": 69,
+    "syllable": "sinh",
+    "words": [
+      {
+        "word": "sinh viên",
+        "hanja": "生員",
+        "meaning": {
+          "ko": "대학생",
+          "zh": "大學生",
+          "en": "university student",
+          "ja": "大学生"
+        }
+      },
+      {
+        "word": "sinh nhật",
+        "hanja": "生日",
+        "meaning": {
+          "ko": "생일",
+          "zh": "生日",
+          "en": "birthday",
+          "ja": "誕生日"
+        }
+      },
+      {
+        "word": "sinh hoạt",
+        "hanja": "生活",
+        "meaning": {
+          "ko": "생활",
+          "zh": "生活",
+          "en": "life, living",
+          "ja": "生活"
+        }
+      },
+      {
+        "word": "sinh vật",
+        "hanja": "生物",
+        "meaning": {
+          "ko": "생물",
+          "zh": "生物",
+          "en": "living thing",
+          "ja": "生物"
+        }
+      },
+      {
+        "word": "sinh động",
+        "hanja": "生動",
+        "meaning": {
+          "ko": "생동감",
+          "zh": "生動感",
+          "en": "vividness, liveliness",
+          "ja": "生き生きした感じ"
+        }
+      },
+      {
+        "word": "sinh mệnh",
+        "hanja": "生命",
+        "meaning": {
+          "ko": "생명",
+          "zh": "生命",
+          "en": "life",
+          "ja": "命"
+        }
+      },
+      {
+        "word": "sinh sản",
+        "hanja": "生產",
+        "meaning": {
+          "ko": "생산·번식",
+          "zh": "生產·繁殖",
+          "en": "production, reproduction",
+          "ja": "生産·繁殖"
+        }
+      },
+      {
+        "word": "học sinh",
+        "hanja": "學生",
+        "meaning": {
+          "ko": "학생",
+          "zh": "學生",
+          "en": "student",
+          "ja": "学生"
+        }
+      }
+    ]
+  },
+  {
+    "n": 70,
+    "syllable": "sự",
+    "words": [
+      {
+        "word": "sự kiện",
+        "hanja": "事件",
+        "meaning": {
+          "ko": "사건",
+          "zh": "事件",
+          "en": "incident",
+          "ja": "事件"
+        }
+      },
+      {
+        "word": "sự thật",
+        "hanja": "事實",
+        "meaning": {
+          "ko": "사실",
+          "zh": "事實",
+          "en": "fact",
+          "ja": "事実"
+        }
+      },
+      {
+        "word": "sự nghiệp",
+        "hanja": "事業",
+        "meaning": {
+          "ko": "사업·경력",
+          "zh": "事業·經歷",
+          "en": "business; career",
+          "ja": "事業・経歴"
+        }
+      },
+      {
+        "word": "sự cố",
+        "hanja": "事故",
+        "meaning": {
+          "ko": "사고·문제",
+          "zh": "事故·問題",
+          "en": "accident; problem",
+          "ja": "事故・問題"
+        }
+      },
+      {
+        "word": "sự việc",
+        "hanja": "事",
+        "meaning": {
+          "ko": "사건·일",
+          "zh": "事件·事情",
+          "en": "incident; matter",
+          "ja": "事件・出来事"
+        }
+      },
+      {
+        "word": "sự thể",
+        "hanja": "事體",
+        "meaning": {
+          "ko": "사태·형편",
+          "zh": "事態·情況",
+          "en": "situation, circumstances",
+          "ja": "事態·状況"
+        }
+      }
+    ]
+  },
+  {
+    "n": 71,
+    "syllable": "tác",
+    "words": [
+      {
+        "word": "tác giả",
+        "hanja": "作者",
+        "meaning": {
+          "ko": "작가",
+          "zh": "作家",
+          "en": "writer",
+          "ja": "作家"
+        }
+      },
+      {
+        "word": "tác phẩm",
+        "hanja": "作品",
+        "meaning": {
+          "ko": "작품",
+          "zh": "作品",
+          "en": "work (of art)",
+          "ja": "作品"
+        }
+      },
+      {
+        "word": "tác dụng",
+        "hanja": "作用",
+        "meaning": {
+          "ko": "작용·효과",
+          "zh": "作用·效果",
+          "en": "action/effect",
+          "ja": "作用・効果"
+        }
+      },
+      {
+        "word": "tác động",
+        "hanja": "作動",
+        "meaning": {
+          "ko": "영향·작용",
+          "zh": "影響·作用",
+          "en": "influence/effect",
+          "ja": "影響・作用"
+        }
+      },
+      {
+        "word": "tác chiến",
+        "hanja": "作戰",
+        "meaning": {
+          "ko": "작전",
+          "zh": "作戰",
+          "en": "operation",
+          "ja": "作戦"
+        }
+      },
+      {
+        "word": "tác phong",
+        "hanja": "作風",
+        "meaning": {
+          "ko": "태도·기풍",
+          "zh": "態度·風氣",
+          "en": "attitude, ethos",
+          "ja": "態度・気風"
+        }
+      }
+    ]
+  },
+  {
+    "n": 72,
+    "syllable": "tài",
+    "words": [
+      {
+        "word": "tài chính",
+        "hanja": "財政",
+        "meaning": {
+          "ko": "재정·금융",
+          "zh": "財政·金融",
+          "en": "finance/banking",
+          "ja": "財政・金融"
+        }
+      },
+      {
+        "word": "tài năng",
+        "hanja": "才能",
+        "meaning": {
+          "ko": "재능",
+          "zh": "才能",
+          "en": "talent",
+          "ja": "才能"
+        }
+      },
+      {
+        "word": "tài sản",
+        "hanja": "財產",
+        "meaning": {
+          "ko": "재산",
+          "zh": "財產",
+          "en": "property",
+          "ja": "財産"
+        }
+      },
+      {
+        "word": "tài liệu",
+        "hanja": "材料",
+        "meaning": {
+          "ko": "자료",
+          "zh": "資料",
+          "en": "data",
+          "ja": "資料"
+        }
+      },
+      {
+        "word": "tài trợ",
+        "hanja": "財助",
+        "meaning": {
+          "ko": "후원·지원",
+          "zh": "贊助·支持",
+          "en": "sponsorship / support",
+          "ja": "後援・支援"
+        }
+      },
+      {
+        "word": "tài nguyên",
+        "hanja": "財源",
+        "meaning": {
+          "ko": "자원",
+          "zh": "資源",
+          "en": "resource",
+          "ja": "資源"
+        }
+      }
+    ]
+  },
+  {
+    "n": 73,
+    "syllable": "tâm",
+    "words": [
+      {
+        "word": "tâm lý",
+        "hanja": "心理",
+        "meaning": {
+          "ko": "심리",
+          "zh": "心理",
+          "en": "psychology, mental state",
+          "ja": "心理"
+        }
+      },
+      {
+        "word": "tâm trạng",
+        "hanja": "心狀",
+        "meaning": {
+          "ko": "심정·기분",
+          "zh": "心情・情緒",
+          "en": "feelings · mood",
+          "ja": "心情・気分"
+        }
+      },
+      {
+        "word": "tâm hồn",
+        "hanja": "心魂",
+        "meaning": {
+          "ko": "마음·영혼",
+          "zh": "心・靈魂",
+          "en": "mind, soul",
+          "ja": "心・魂"
+        }
+      },
+      {
+        "word": "tâm sự",
+        "hanja": "心事",
+        "meaning": {
+          "ko": "속마음·고민토로",
+          "zh": "心裡話·傾訴煩惱",
+          "en": "inner thoughts, confiding worries",
+          "ja": "本音·悩み相談"
+        }
+      },
+      {
+        "word": "tâm huyết",
+        "hanja": "心血",
+        "meaning": {
+          "ko": "심혈",
+          "zh": "心血",
+          "en": "heart and effort",
+          "ja": "心血"
+        }
+      },
+      {
+        "word": "tâm linh",
+        "hanja": "心靈",
+        "meaning": {
+          "ko": "심령",
+          "zh": "心靈",
+          "en": "spirit, soul",
+          "ja": "心霊"
+        }
+      },
+      {
+        "word": "tâm đắc",
+        "hanja": "心得",
+        "meaning": {
+          "ko": "마음에 듦·터득함",
+          "zh": "中意・掌握",
+          "en": "liking, mastering",
+          "ja": "気に入る・習得"
+        }
+      },
+      {
+        "word": "tâm tính",
+        "hanja": "心性",
+        "meaning": {
+          "ko": "심성·성격",
+          "zh": "心性・性格",
+          "en": "disposition · personality",
+          "ja": "心根・性格"
+        }
+      }
+    ]
+  },
+  {
+    "n": 74,
+    "syllable": "tập",
+    "words": [
+      {
+        "word": "tập trung",
+        "hanja": "集中",
+        "meaning": {
+          "ko": "집중",
+          "zh": "集中",
+          "en": "concentration",
+          "ja": "集中"
+        }
+      },
+      {
+        "word": "tập thể",
+        "hanja": "集體",
+        "meaning": {
+          "ko": "집단·단체",
+          "zh": "集團·團體",
+          "en": "group/organization",
+          "ja": "集団・団体"
+        }
+      },
+      {
+        "word": "tập quán",
+        "hanja": "習慣",
+        "meaning": {
+          "ko": "습관·관습",
+          "zh": "習慣·風俗",
+          "en": "habit, custom",
+          "ja": "習慣·慣習"
+        }
+      },
+      {
+        "word": "tập luyện",
+        "hanja": "習練",
+        "meaning": {
+          "ko": "훈련·연습",
+          "zh": "訓練·練習",
+          "en": "training / practice",
+          "ja": "訓練・練習"
+        }
+      },
+      {
+        "word": "tập đoàn",
+        "hanja": "集團",
+        "meaning": {
+          "ko": "그룹·기업집단",
+          "zh": "集團‧企業集團",
+          "en": "group, conglomerate",
+          "ja": "グループ・企業集団"
+        }
+      },
+      {
+        "word": "học tập",
+        "hanja": "學習",
+        "meaning": {
+          "ko": "학습",
+          "zh": "學習",
+          "en": "learning",
+          "ja": "学習"
+        }
+      }
+    ]
+  },
+  {
+    "n": 75,
+    "syllable": "thành",
+    "words": [
+      {
+        "word": "thành công",
+        "hanja": "成功",
+        "meaning": {
+          "ko": "성공",
+          "zh": "成功",
+          "en": "success",
+          "ja": "成功"
+        }
+      },
+      {
+        "word": "thành phố",
+        "hanja": "城鋪",
+        "meaning": {
+          "ko": "도시",
+          "zh": "城市",
+          "en": "city",
+          "ja": "都市"
+        }
+      },
+      {
+        "word": "thành viên",
+        "hanja": "成員",
+        "meaning": {
+          "ko": "구성원",
+          "zh": "成員",
+          "en": "member",
+          "ja": "構成員"
+        }
+      },
+      {
+        "word": "thành tích",
+        "hanja": "成績",
+        "meaning": {
+          "ko": "성적·업적",
+          "zh": "成績·業績",
+          "en": "grades, achievement",
+          "ja": "成績·業績"
+        }
+      },
+      {
+        "word": "thành lập",
+        "hanja": "成立",
+        "meaning": {
+          "ko": "설립",
+          "zh": "設立",
+          "en": "establishment",
+          "ja": "設立"
+        }
+      },
+      {
+        "word": "thành thật",
+        "hanja": "誠實",
+        "meaning": {
+          "ko": "성실함",
+          "zh": "誠實·忠信",
+          "en": "sincerity, faithfulness",
+          "ja": "誠実さ"
+        }
+      },
+      {
+        "word": "thành thạo",
+        "hanja": "成",
+        "meaning": {
+          "ko": "숙달됨",
+          "zh": "熟練",
+          "en": "proficient",
+          "ja": "熟達している"
+        }
+      },
+      {
+        "word": "chân thành",
+        "hanja": "眞誠→진심",
+        "meaning": {
+          "ko": "진심 어림",
+          "zh": "誠心誠意",
+          "en": "being heartfelt",
+          "ja": "心がこもっていること"
+        }
+      }
+    ]
+  },
+  {
+    "n": 76,
+    "syllable": "thế",
+    "words": [
+      {
+        "word": "thế giới",
+        "hanja": "世界",
+        "meaning": {
+          "ko": "세계",
+          "zh": "世界",
+          "en": "world",
+          "ja": "世界"
+        }
+      },
+      {
+        "word": "thế kỷ",
+        "hanja": "世紀",
+        "meaning": {
+          "ko": "세기",
+          "zh": "世紀",
+          "en": "century",
+          "ja": "世紀"
+        }
+      },
+      {
+        "word": "thế hệ",
+        "hanja": "世系",
+        "meaning": {
+          "ko": "세대",
+          "zh": "世代",
+          "en": "generation",
+          "ja": "世代"
+        }
+      },
+      {
+        "word": "thế lực",
+        "hanja": "勢力",
+        "meaning": {
+          "ko": "세력",
+          "zh": "勢力",
+          "en": "power, influence",
+          "ja": "勢力"
+        }
+      },
+      {
+        "word": "thế sự",
+        "hanja": "世事",
+        "meaning": {
+          "ko": "세상사·시사",
+          "zh": "世事·時事",
+          "en": "worldly affairs, current events",
+          "ja": "世事·時事"
+        }
+      }
+    ]
+  },
+  {
+    "n": 77,
+    "syllable": "thể",
+    "words": [
+      {
+        "word": "thể thao",
+        "hanja": "體操",
+        "meaning": {
+          "ko": "체육·스포츠",
+          "zh": "體育·運動",
+          "en": "physical education, sports",
+          "ja": "体育・スポーツ"
+        }
+      },
+      {
+        "word": "thể hiện",
+        "hanja": "體現",
+        "meaning": {
+          "ko": "표현·나타냄",
+          "zh": "表現·表達",
+          "en": "expression, showing",
+          "ja": "表現・表すこと"
+        }
+      },
+      {
+        "word": "thể chất",
+        "hanja": "體質",
+        "meaning": {
+          "ko": "체질·체격",
+          "zh": "體質·體格",
+          "en": "constitution, physique",
+          "ja": "体質・体格"
+        }
+      },
+      {
+        "word": "thể loại",
+        "hanja": "體類",
+        "meaning": {
+          "ko": "장르·종류",
+          "zh": "類型·種類",
+          "en": "genre/type",
+          "ja": "ジャンル・種類"
+        }
+      },
+      {
+        "word": "thể lực",
+        "hanja": "體力",
+        "meaning": {
+          "ko": "체력",
+          "zh": "體力",
+          "en": "physical strength",
+          "ja": "体力"
+        }
+      },
+      {
+        "word": "thể chế",
+        "hanja": "體制",
+        "meaning": {
+          "ko": "체제",
+          "zh": "體制",
+          "en": "system",
+          "ja": "体制"
+        }
+      }
+    ]
+  },
+  {
+    "n": 78,
+    "syllable": "thị",
+    "words": [
+      {
+        "word": "thị trường",
+        "hanja": "市場",
+        "meaning": {
+          "ko": "시장",
+          "zh": "市場",
+          "en": "market",
+          "ja": "市場"
+        }
+      },
+      {
+        "word": "thị trấn",
+        "hanja": "市鎮",
+        "meaning": {
+          "ko": "읍·소도시",
+          "zh": "邑·小城鎮",
+          "en": "town/small city",
+          "ja": "町・小都市"
+        }
+      },
+      {
+        "word": "thị xã",
+        "hanja": "市社",
+        "meaning": {
+          "ko": "시사(소도시)",
+          "zh": "城鎮（小城市）",
+          "en": "town (small city)",
+          "ja": "町（小都市）"
+        }
+      },
+      {
+        "word": "thị lực",
+        "hanja": "視力",
+        "meaning": {
+          "ko": "시력",
+          "zh": "視力",
+          "en": "eyesight",
+          "ja": "視力"
+        }
+      },
+      {
+        "word": "thị giác",
+        "hanja": "視覺",
+        "meaning": {
+          "ko": "시각",
+          "zh": "時刻",
+          "en": "point in time",
+          "ja": "時刻"
+        }
+      }
+    ]
+  },
+  {
+    "n": 79,
+    "syllable": "thông",
+    "words": [
+      {
+        "word": "thông tin",
+        "hanja": "通信",
+        "meaning": {
+          "ko": "정보",
+          "zh": "資訊",
+          "en": "information",
+          "ja": "情報"
+        }
+      },
+      {
+        "word": "thông báo",
+        "hanja": "通報",
+        "meaning": {
+          "ko": "통보·공지",
+          "zh": "通報·公告",
+          "en": "notification, notice",
+          "ja": "通報・告知"
+        }
+      },
+      {
+        "word": "thông minh",
+        "hanja": "聰明",
+        "meaning": {
+          "ko": "똑똑함",
+          "zh": "聰明",
+          "en": "smartness, cleverness",
+          "ja": "賢さ"
+        }
+      },
+      {
+        "word": "thông thường",
+        "hanja": "通常",
+        "meaning": {
+          "ko": "보통·일반적",
+          "zh": "普通·一般",
+          "en": "normal; general",
+          "ja": "普通・一般的"
+        }
+      },
+      {
+        "word": "thông cảm",
+        "hanja": "通感",
+        "meaning": {
+          "ko": "이해·공감",
+          "zh": "理解·共鳴",
+          "en": "understanding/empathy",
+          "ja": "理解・共感"
+        }
+      },
+      {
+        "word": "thông qua",
+        "hanja": "通過",
+        "meaning": {
+          "ko": "통과",
+          "zh": "通過",
+          "en": "passage",
+          "ja": "通過"
+        }
+      }
+    ]
+  },
+  {
+    "n": 80,
+    "syllable": "thời",
+    "words": [
+      {
+        "word": "thời gian",
+        "hanja": "時間",
+        "meaning": {
+          "ko": "시간",
+          "zh": "時間",
+          "en": "time",
+          "ja": "時間"
+        }
+      },
+      {
+        "word": "thời tiết",
+        "hanja": "時節",
+        "meaning": {
+          "ko": "날씨",
+          "zh": "天氣",
+          "en": "weather",
+          "ja": "天気"
+        }
+      },
+      {
+        "word": "thời trang",
+        "hanja": "時裝",
+        "meaning": {
+          "ko": "패션",
+          "zh": "時尚",
+          "en": "fashion",
+          "ja": "ファッション"
+        }
+      },
+      {
+        "word": "thời sự",
+        "hanja": "時事",
+        "meaning": {
+          "ko": "시사",
+          "zh": "時事",
+          "en": "current affairs",
+          "ja": "時事"
+        }
+      },
+      {
+        "word": "thời đại",
+        "hanja": "時代",
+        "meaning": {
+          "ko": "시대",
+          "zh": "時代",
+          "en": "era",
+          "ja": "時代"
+        }
+      },
+      {
+        "word": "thời cơ",
+        "hanja": "時機",
+        "meaning": {
+          "ko": "시기·기회",
+          "zh": "時機·機會",
+          "en": "timing, opportunity",
+          "ja": "時期·機会"
+        }
+      }
+    ]
+  },
+  {
+    "n": 81,
+    "syllable": "thu",
+    "words": [
+      {
+        "word": "thu nhập",
+        "hanja": "收入",
+        "meaning": {
+          "ko": "수입",
+          "zh": "收入",
+          "en": "income",
+          "ja": "収入"
+        }
+      },
+      {
+        "word": "thu hoạch",
+        "hanja": "收穫",
+        "meaning": {
+          "ko": "수확",
+          "zh": "收穫",
+          "en": "harvest",
+          "ja": "収穫"
+        }
+      },
+      {
+        "word": "thu hút",
+        "hanja": "收",
+        "meaning": {
+          "ko": "끌어들임·매료",
+          "zh": "吸引·魅力",
+          "en": "attraction · fascination",
+          "ja": "引き寄せ・魅了"
+        }
+      },
+      {
+        "word": "thu thập",
+        "hanja": "收集",
+        "meaning": {
+          "ko": "수집",
+          "zh": "收集",
+          "en": "collection",
+          "ja": "収集"
+        }
+      },
+      {
+        "word": "thu ngân",
+        "hanja": "收銀",
+        "meaning": {
+          "ko": "계산원·수납원",
+          "zh": "收銀員",
+          "en": "cashier",
+          "ja": "レジ係"
+        }
+      }
+    ]
+  },
+  {
+    "n": 82,
+    "syllable": "thủ",
+    "words": [
+      {
+        "word": "thủ tục",
+        "hanja": "手續",
+        "meaning": {
+          "ko": "수속·절차",
+          "zh": "手續·程序",
+          "en": "procedure",
+          "ja": "手続き"
+        }
+      },
+      {
+        "word": "thủ đô",
+        "hanja": "首都",
+        "meaning": {
+          "ko": "수도",
+          "zh": "首都",
+          "en": "capital (city)",
+          "ja": "首都"
+        }
+      },
+      {
+        "word": "thủ tướng",
+        "hanja": "首相",
+        "meaning": {
+          "ko": "총리",
+          "zh": "總理",
+          "en": "prime minister",
+          "ja": "首相"
+        }
+      },
+      {
+        "word": "thủ lĩnh",
+        "hanja": "首領",
+        "meaning": {
+          "ko": "수령·우두머리",
+          "zh": "首領·頭目",
+          "en": "leader, chief",
+          "ja": "首領·頭"
+        }
+      },
+      {
+        "word": "thủ công",
+        "hanja": "手工",
+        "meaning": {
+          "ko": "수공",
+          "zh": "手工",
+          "en": "handicraft",
+          "ja": "手工"
+        }
+      }
+    ]
+  },
+  {
+    "n": 83,
+    "syllable": "tiến",
+    "words": [
+      {
+        "word": "tiến bộ",
+        "hanja": "進步",
+        "meaning": {
+          "ko": "진보",
+          "zh": "進步",
+          "en": "progress",
+          "ja": "進歩"
+        }
+      },
+      {
+        "word": "tiến hành",
+        "hanja": "進行",
+        "meaning": {
+          "ko": "진행",
+          "zh": "進行",
+          "en": "progress",
+          "ja": "進行"
+        }
+      },
+      {
+        "word": "tiến sĩ",
+        "hanja": "進士",
+        "meaning": {
+          "ko": "박사",
+          "zh": "博士",
+          "en": "doctor (PhD)",
+          "ja": "博士"
+        }
+      },
+      {
+        "word": "tiến trình",
+        "hanja": "進程",
+        "meaning": {
+          "ko": "진행과정",
+          "zh": "進行過程",
+          "en": "process",
+          "ja": "進行過程"
+        }
+      },
+      {
+        "word": "tiến độ",
+        "hanja": "進度",
+        "meaning": {
+          "ko": "진도",
+          "zh": "進度",
+          "en": "progress",
+          "ja": "進度"
+        }
+      },
+      {
+        "word": "tiến triển",
+        "hanja": "進展",
+        "meaning": {
+          "ko": "진전",
+          "zh": "進展",
+          "en": "progress",
+          "ja": "進展"
+        }
+      }
+    ]
+  },
+  {
+    "n": 84,
+    "syllable": "tình",
+    "words": [
+      {
+        "word": "tình yêu",
+        "hanja": "情",
+        "meaning": {
+          "ko": "사랑",
+          "zh": "愛",
+          "en": "love",
+          "ja": "愛"
+        }
+      },
+      {
+        "word": "tình bạn",
+        "hanja": "情伴",
+        "meaning": {
+          "ko": "우정",
+          "zh": "友情",
+          "en": "friendship",
+          "ja": "友情"
+        }
+      },
+      {
+        "word": "tình cảm",
+        "hanja": "情感",
+        "meaning": {
+          "ko": "감정·정",
+          "zh": "感情",
+          "en": "emotion/feeling",
+          "ja": "感情・情"
+        }
+      },
+      {
+        "word": "tình huống",
+        "hanja": "情況",
+        "meaning": {
+          "ko": "상황",
+          "zh": "狀況",
+          "en": "situation",
+          "ja": "状況"
+        }
+      },
+      {
+        "word": "tình hình",
+        "hanja": "情形",
+        "meaning": {
+          "ko": "정세·상황",
+          "zh": "情勢·狀況",
+          "en": "situation/circumstances",
+          "ja": "情勢・状況"
+        }
+      },
+      {
+        "word": "tình nguyện",
+        "hanja": "情願",
+        "meaning": {
+          "ko": "자원·자원봉사",
+          "zh": "資源·志願服務",
+          "en": "resource/volunteering",
+          "ja": "資源・ボランティア"
+        }
+      },
+      {
+        "word": "tình nghĩa",
+        "hanja": "情義",
+        "meaning": {
+          "ko": "정의(情義)·의리",
+          "zh": "情義·義理",
+          "en": "loyalty, affection",
+          "ja": "情義・義理"
+        }
+      },
+      {
+        "word": "tình nhân",
+        "hanja": "情人",
+        "meaning": {
+          "ko": "연인",
+          "zh": "戀人",
+          "en": "lover, sweetheart",
+          "ja": "恋人"
+        }
+      },
+      {
+        "word": "cảm tình",
+        "hanja": "感情",
+        "meaning": {
+          "ko": "감정",
+          "zh": "感情",
+          "en": "emotion",
+          "ja": "感情"
+        }
+      }
+    ]
+  },
+  {
+    "n": 85,
+    "syllable": "tôn",
+    "words": [
+      {
+        "word": "tôn giáo",
+        "hanja": "宗教",
+        "meaning": {
+          "ko": "종교",
+          "zh": "宗教",
+          "en": "religion",
+          "ja": "宗教"
+        }
+      },
+      {
+        "word": "tôn trọng",
+        "hanja": "尊重",
+        "meaning": {
+          "ko": "존중",
+          "zh": "尊重",
+          "en": "respect",
+          "ja": "尊重"
+        }
+      },
+      {
+        "word": "tôn sùng",
+        "hanja": "尊崇",
+        "meaning": {
+          "ko": "숭배",
+          "zh": "崇拜",
+          "en": "worship",
+          "ja": "崇拝"
+        }
+      },
+      {
+        "word": "tôn vinh",
+        "hanja": "尊榮",
+        "meaning": {
+          "ko": "영예·기림",
+          "zh": "榮譽·讚揚",
+          "en": "honor/praise",
+          "ja": "栄誉・称賛"
+        }
+      },
+      {
+        "word": "tôn ti",
+        "hanja": "尊卑",
+        "meaning": {
+          "ko": "위계·서열",
+          "zh": "位階·序列",
+          "en": "hierarchy/rank",
+          "ja": "位階・序列"
+        }
+      }
+    ]
+  },
+  {
+    "n": 86,
+    "syllable": "tổng",
+    "words": [
+      {
+        "word": "tổng thống",
+        "hanja": "總統",
+        "meaning": {
+          "ko": "대통령",
+          "zh": "總統",
+          "en": "president",
+          "ja": "大統領"
+        }
+      },
+      {
+        "word": "tổng hợp",
+        "hanja": "綜合",
+        "meaning": {
+          "ko": "종합",
+          "zh": "綜合",
+          "en": "comprehensive",
+          "ja": "総合"
+        }
+      },
+      {
+        "word": "tổng cộng",
+        "hanja": "總共",
+        "meaning": {
+          "ko": "합계·총",
+          "zh": "合計·總計",
+          "en": "sum / total",
+          "ja": "合計・総"
+        }
+      },
+      {
+        "word": "tổng kết",
+        "hanja": "總結",
+        "meaning": {
+          "ko": "총결·총정리",
+          "zh": "總結·總整理",
+          "en": "summary, overall review",
+          "ja": "総括・まとめ"
+        }
+      },
+      {
+        "word": "tổng thể",
+        "hanja": "總體",
+        "meaning": {
+          "ko": "전체",
+          "zh": "全體",
+          "en": "whole",
+          "ja": "全体"
+        }
+      }
+    ]
+  },
+  {
+    "n": 87,
+    "syllable": "trang",
+    "words": [
+      {
+        "word": "trang phục",
+        "hanja": "裝服",
+        "meaning": {
+          "ko": "복장",
+          "zh": "服裝",
+          "en": "attire",
+          "ja": "服装"
+        }
+      },
+      {
+        "word": "trang bị",
+        "hanja": "裝備",
+        "meaning": {
+          "ko": "장비·갖춤",
+          "zh": "裝備·配備",
+          "en": "equipment",
+          "ja": "装備・備え"
+        }
+      },
+      {
+        "word": "trang trí",
+        "hanja": "裝置",
+        "meaning": {
+          "ko": "장식",
+          "zh": "裝飾",
+          "en": "decoration",
+          "ja": "装飾"
+        }
+      },
+      {
+        "word": "trang nghiêm",
+        "hanja": "莊嚴",
+        "meaning": {
+          "ko": "장엄함",
+          "zh": "莊嚴",
+          "en": "majesty",
+          "ja": "荘厳さ"
+        }
+      },
+      {
+        "word": "trang sức",
+        "hanja": "裝飾",
+        "meaning": {
+          "ko": "장신구·액세서리",
+          "zh": "飾品·配件",
+          "en": "jewelry/accessories",
+          "ja": "装身具・アクセサリー"
+        }
+      }
+    ]
+  },
+  {
+    "n": 88,
+    "syllable": "trí",
+    "words": [
+      {
+        "word": "trí thức",
+        "hanja": "智識",
+        "meaning": {
+          "ko": "지식·지식인",
+          "zh": "知識·知識分子",
+          "en": "knowledge/intellectual",
+          "ja": "知識・知識人"
+        }
+      },
+      {
+        "word": "trí tuệ",
+        "hanja": "智慧",
+        "meaning": {
+          "ko": "지혜",
+          "zh": "智慧",
+          "en": "wisdom",
+          "ja": "知恵"
+        }
+      },
+      {
+        "word": "trí nhớ",
+        "hanja": "智",
+        "meaning": {
+          "ko": "기억력",
+          "zh": "記憶力",
+          "en": "memory (power)",
+          "ja": "記憶力"
+        }
+      },
+      {
+        "word": "trí óc",
+        "hanja": "智",
+        "meaning": {
+          "ko": "두뇌",
+          "zh": "頭腦",
+          "en": "brain",
+          "ja": "頭脳"
+        }
+      },
+      {
+        "word": "trí lực",
+        "hanja": "智力",
+        "meaning": {
+          "ko": "지력",
+          "zh": "智力",
+          "en": "intellect",
+          "ja": "知力"
+        }
+      }
+    ]
+  },
+  {
+    "n": 89,
+    "syllable": "trình",
+    "words": [
+      {
+        "word": "trình độ",
+        "hanja": "程度",
+        "meaning": {
+          "ko": "수준",
+          "zh": "水準",
+          "en": "level, standard",
+          "ja": "水準"
+        }
+      },
+      {
+        "word": "trình bày",
+        "hanja": "呈",
+        "meaning": {
+          "ko": "설명·제시",
+          "zh": "說明·提示",
+          "en": "explanation, presentation",
+          "ja": "説明·提示"
+        }
+      },
+      {
+        "word": "trình diễn",
+        "hanja": "呈演",
+        "meaning": {
+          "ko": "공연·시연",
+          "zh": "表演‧示範",
+          "en": "performance, demonstration",
+          "ja": "公演・実演"
+        }
+      },
+      {
+        "word": "trình tự",
+        "hanja": "程序",
+        "meaning": {
+          "ko": "순서·절차",
+          "zh": "順序·程序",
+          "en": "order, procedure",
+          "ja": "順序·手順"
+        }
+      },
+      {
+        "word": "trình duyệt",
+        "hanja": "程閱",
+        "meaning": {
+          "ko": "브라우저",
+          "zh": "瀏覽器",
+          "en": "browser",
+          "ja": "ブラウザ"
+        }
+      }
+    ]
+  },
+  {
+    "n": 90,
+    "syllable": "trung",
+    "words": [
+      {
+        "word": "trung tâm",
+        "hanja": "中心",
+        "meaning": {
+          "ko": "중심·센터",
+          "zh": "中心",
+          "en": "center",
+          "ja": "中心・センター"
+        }
+      },
+      {
+        "word": "trung thành",
+        "hanja": "忠誠",
+        "meaning": {
+          "ko": "충성",
+          "zh": "忠誠",
+          "en": "loyalty",
+          "ja": "忠誠"
+        }
+      },
+      {
+        "word": "trung thực",
+        "hanja": "忠實",
+        "meaning": {
+          "ko": "정직",
+          "zh": "正直",
+          "en": "honesty",
+          "ja": "正直"
+        }
+      },
+      {
+        "word": "trung bình",
+        "hanja": "中平",
+        "meaning": {
+          "ko": "평균",
+          "zh": "平均",
+          "en": "average",
+          "ja": "平均"
+        }
+      },
+      {
+        "word": "trung lập",
+        "hanja": "中立",
+        "meaning": {
+          "ko": "중립",
+          "zh": "中立",
+          "en": "neutrality",
+          "ja": "中立"
+        }
+      },
+      {
+        "word": "trung gian",
+        "hanja": "中間",
+        "meaning": {
+          "ko": "중개·매개",
+          "zh": "仲介·媒介",
+          "en": "intermediary/mediation",
+          "ja": "仲介・媒介"
+        }
+      }
+    ]
+  },
+  {
+    "n": 91,
+    "syllable": "truyền",
+    "words": [
+      {
+        "word": "truyền thống",
+        "hanja": "傳統",
+        "meaning": {
+          "ko": "전통",
+          "zh": "傳統",
+          "en": "tradition",
+          "ja": "伝統"
+        }
+      },
+      {
+        "word": "truyền thông",
+        "hanja": "傳通",
+        "meaning": {
+          "ko": "미디어·전달",
+          "zh": "媒體・傳達",
+          "en": "media, communication",
+          "ja": "メディア・伝達"
+        }
+      },
+      {
+        "word": "truyền hình",
+        "hanja": "傳形",
+        "meaning": {
+          "ko": "텔레비전",
+          "zh": "電視",
+          "en": "television",
+          "ja": "テレビ"
+        }
+      },
+      {
+        "word": "truyền thuyết",
+        "hanja": "傳說",
+        "meaning": {
+          "ko": "전설",
+          "zh": "傳說",
+          "en": "legend",
+          "ja": "伝説"
+        }
+      },
+      {
+        "word": "truyền nhiễm",
+        "hanja": "傳染",
+        "meaning": {
+          "ko": "전염",
+          "zh": "傳染",
+          "en": "contagion",
+          "ja": "伝染"
+        }
+      },
+      {
+        "word": "truyền đạt",
+        "hanja": "傳達",
+        "meaning": {
+          "ko": "전달",
+          "zh": "傳達",
+          "en": "delivery",
+          "ja": "伝達"
+        }
+      }
+    ]
+  },
+  {
+    "n": 92,
+    "syllable": "trường",
+    "words": [
+      {
+        "word": "trường học",
+        "hanja": "場學",
+        "meaning": {
+          "ko": "학교",
+          "zh": "學校",
+          "en": "school",
+          "ja": "学校"
+        }
+      },
+      {
+        "word": "trường hợp",
+        "hanja": "場合",
+        "meaning": {
+          "ko": "경우",
+          "zh": "情況",
+          "en": "case/situation",
+          "ja": "場合"
+        }
+      },
+      {
+        "word": "trường kỳ",
+        "hanja": "長期",
+        "meaning": {
+          "ko": "장기적",
+          "zh": "長期的",
+          "en": "long-term",
+          "ja": "長期的"
+        }
+      },
+      {
+        "word": "trường thọ",
+        "hanja": "長壽",
+        "meaning": {
+          "ko": "장수",
+          "zh": "長壽",
+          "en": "longevity",
+          "ja": "長寿"
+        }
+      },
+      {
+        "word": "trường ca",
+        "hanja": "長歌",
+        "meaning": {
+          "ko": "장가(서사시)",
+          "zh": "長歌（史詩）",
+          "en": "epic poem",
+          "ja": "長歌（叙事詩）"
+        }
+      },
+      {
+        "word": "thị trường",
+        "hanja": "市場",
+        "meaning": {
+          "ko": "시장",
+          "zh": "市場",
+          "en": "market",
+          "ja": "市場"
+        }
+      },
+      {
+        "word": "hiệu trưởng",
+        "hanja": "校長",
+        "meaning": {
+          "ko": "교장",
+          "zh": "校長",
+          "en": "principal",
+          "ja": "校長"
+        }
+      }
+    ]
+  },
+  {
+    "n": 93,
+    "syllable": "tư",
+    "words": [
+      {
+        "word": "tư duy",
+        "hanja": "思維",
+        "meaning": {
+          "ko": "사유·사고",
+          "zh": "思維·思考",
+          "en": "reasoning; thinking",
+          "ja": "思惟・思考"
+        }
+      },
+      {
+        "word": "tư tưởng",
+        "hanja": "思想",
+        "meaning": {
+          "ko": "사상",
+          "zh": "思想",
+          "en": "thought; ideology",
+          "ja": "思想"
+        }
+      },
+      {
+        "word": "tư cách",
+        "hanja": "資格",
+        "meaning": {
+          "ko": "자격",
+          "zh": "資格",
+          "en": "qualification",
+          "ja": "資格"
+        }
+      },
+      {
+        "word": "tư vấn",
+        "hanja": "諮詢",
+        "meaning": {
+          "ko": "자문·상담",
+          "zh": "諮詢·輔導",
+          "en": "consultation/counseling",
+          "ja": "諮問・相談"
+        }
+      },
+      {
+        "word": "tư nhân",
+        "hanja": "私人",
+        "meaning": {
+          "ko": "사적·민간",
+          "zh": "私人·民間",
+          "en": "private; civilian",
+          "ja": "私的・民間"
+        }
+      },
+      {
+        "word": "tư liệu",
+        "hanja": "資料",
+        "meaning": {
+          "ko": "자료",
+          "zh": "資料",
+          "en": "data",
+          "ja": "資料"
+        }
+      }
+    ]
+  },
+  {
+    "n": 94,
+    "syllable": "từ",
+    "words": [
+      {
+        "word": "từ điển",
+        "hanja": "辭典",
+        "meaning": {
+          "ko": "사전",
+          "zh": "字典",
+          "en": "dictionary",
+          "ja": "辞書"
+        }
+      },
+      {
+        "word": "từ ngữ",
+        "hanja": "詞語",
+        "meaning": {
+          "ko": "어휘·단어",
+          "zh": "詞彙・單詞",
+          "en": "vocabulary · word",
+          "ja": "語彙・単語"
+        }
+      },
+      {
+        "word": "từ chối",
+        "hanja": "辭",
+        "meaning": {
+          "ko": "거절",
+          "zh": "拒絕",
+          "en": "refusal",
+          "ja": "拒絶"
+        }
+      },
+      {
+        "word": "từ thiện",
+        "hanja": "慈善",
+        "meaning": {
+          "ko": "자선",
+          "zh": "慈善",
+          "en": "charity",
+          "ja": "慈善"
+        }
+      },
+      {
+        "word": "từ tâm",
+        "hanja": "慈心",
+        "meaning": {
+          "ko": "자비심",
+          "zh": "慈悲心",
+          "en": "compassion",
+          "ja": "慈悲心"
+        }
+      }
+    ]
+  },
+  {
+    "n": 95,
+    "syllable": "tự",
+    "words": [
+      {
+        "word": "tự do",
+        "hanja": "自由",
+        "meaning": {
+          "ko": "자유",
+          "zh": "自由",
+          "en": "freedom",
+          "ja": "自由"
+        }
+      },
+      {
+        "word": "tự tin",
+        "hanja": "自信",
+        "meaning": {
+          "ko": "자신감",
+          "zh": "自信心",
+          "en": "confidence",
+          "ja": "自信"
+        }
+      },
+      {
+        "word": "tự nhiên",
+        "hanja": "自然",
+        "meaning": {
+          "ko": "자연",
+          "zh": "自然",
+          "en": "nature",
+          "ja": "自然"
+        }
+      },
+      {
+        "word": "tự động",
+        "hanja": "自動",
+        "meaning": {
+          "ko": "자동",
+          "zh": "自動",
+          "en": "automatic",
+          "ja": "自動"
+        }
+      },
+      {
+        "word": "tự giác",
+        "hanja": "自覺",
+        "meaning": {
+          "ko": "자각·자발적",
+          "zh": "自覺·自發的",
+          "en": "self-awareness/voluntary",
+          "ja": "自覚・自発的"
+        }
+      },
+      {
+        "word": "tự trọng",
+        "hanja": "自重",
+        "meaning": {
+          "ko": "자존심",
+          "zh": "自尊心",
+          "en": "pride",
+          "ja": "自尊心"
+        }
+      },
+      {
+        "word": "văn tự",
+        "hanja": "文字",
+        "meaning": {
+          "ko": "문자",
+          "zh": "文字",
+          "en": "character, letter",
+          "ja": "文字"
+        }
+      }
+    ]
+  },
+  {
+    "n": 96,
+    "syllable": "văn",
+    "words": [
+      {
+        "word": "văn hóa",
+        "hanja": "文化",
+        "meaning": {
+          "ko": "문화",
+          "zh": "文化",
+          "en": "culture",
+          "ja": "文化"
+        }
+      },
+      {
+        "word": "văn học",
+        "hanja": "文學",
+        "meaning": {
+          "ko": "문학",
+          "zh": "文學",
+          "en": "literature",
+          "ja": "文学"
+        }
+      },
+      {
+        "word": "văn phòng",
+        "hanja": "文房",
+        "meaning": {
+          "ko": "사무실",
+          "zh": "辦公室",
+          "en": "office",
+          "ja": "事務所"
+        }
+      },
+      {
+        "word": "văn bản",
+        "hanja": "文本",
+        "meaning": {
+          "ko": "문서",
+          "zh": "文件",
+          "en": "document",
+          "ja": "文書"
+        }
+      },
+      {
+        "word": "văn minh",
+        "hanja": "文明",
+        "meaning": {
+          "ko": "문명",
+          "zh": "文明",
+          "en": "civilization",
+          "ja": "文明"
+        }
+      },
+      {
+        "word": "văn nghệ",
+        "hanja": "文藝",
+        "meaning": {
+          "ko": "문예",
+          "zh": "文藝",
+          "en": "literature and art",
+          "ja": "文芸"
+        }
+      }
+    ]
+  },
+  {
+    "n": 97,
+    "syllable": "vật",
+    "words": [
+      {
+        "word": "vật liệu",
+        "hanja": "物料",
+        "meaning": {
+          "ko": "재료",
+          "zh": "材料",
+          "en": "material",
+          "ja": "材料"
+        }
+      },
+      {
+        "word": "vật chất",
+        "hanja": "物質",
+        "meaning": {
+          "ko": "물질",
+          "zh": "物質",
+          "en": "matter, material",
+          "ja": "物質"
+        }
+      },
+      {
+        "word": "vật giá",
+        "hanja": "物價",
+        "meaning": {
+          "ko": "물가",
+          "zh": "物價",
+          "en": "prices",
+          "ja": "物価"
+        }
+      },
+      {
+        "word": "vật lý",
+        "hanja": "物理",
+        "meaning": {
+          "ko": "물리",
+          "zh": "物理",
+          "en": "physics",
+          "ja": "物理"
+        }
+      },
+      {
+        "word": "vật nuôi",
+        "hanja": "物",
+        "meaning": {
+          "ko": "가축·반려동물",
+          "zh": "家畜·寵物",
+          "en": "livestock/pet",
+          "ja": "家畜・ペット"
+        }
+      }
+    ]
+  },
+  {
+    "n": 98,
+    "syllable": "xuất",
+    "words": [
+      {
+        "word": "xuất khẩu",
+        "hanja": "出口",
+        "meaning": {
+          "ko": "수출",
+          "zh": "出口",
+          "en": "export",
+          "ja": "輸出"
+        }
+      },
+      {
+        "word": "xuất bản",
+        "hanja": "出版",
+        "meaning": {
+          "ko": "출판",
+          "zh": "出版",
+          "en": "publication",
+          "ja": "出版"
+        }
+      },
+      {
+        "word": "xuất hiện",
+        "hanja": "出現",
+        "meaning": {
+          "ko": "출현",
+          "zh": "出現",
+          "en": "appearance",
+          "ja": "出現"
+        }
+      },
+      {
+        "word": "xuất phát",
+        "hanja": "出發",
+        "meaning": {
+          "ko": "출발",
+          "zh": "出發",
+          "en": "departure",
+          "ja": "出発"
+        }
+      },
+      {
+        "word": "xuất sắc",
+        "hanja": "出色",
+        "meaning": {
+          "ko": "우수함·뛰어남",
+          "zh": "優秀·卓越",
+          "en": "excellence",
+          "ja": "優秀さ・卓越"
+        }
+      },
+      {
+        "word": "xuất xứ",
+        "hanja": "出處",
+        "meaning": {
+          "ko": "출처·원산지",
+          "zh": "出處·原產地",
+          "en": "source, origin",
+          "ja": "出所・原産地"
+        }
+      },
+      {
+        "word": "xuất thần",
+        "hanja": "出神",
+        "meaning": {
+          "ko": "신들린 듯 뛰어남",
+          "zh": "出神入化",
+          "en": "uncannily brilliant, as if inspired",
+          "ja": "神がかり的な素晴らしさ"
+        }
+      }
+    ]
+  },
+  {
+    "n": 99,
+    "syllable": "y",
+    "words": [
+      {
+        "word": "y tế",
+        "hanja": "醫濟",
+        "meaning": {
+          "ko": "의료",
+          "zh": "醫療",
+          "en": "medical care",
+          "ja": "医療"
+        }
+      },
+      {
+        "word": "y học",
+        "hanja": "醫學",
+        "meaning": {
+          "ko": "의학",
+          "zh": "醫學",
+          "en": "medicine (science)",
+          "ja": "医学"
+        }
+      },
+      {
+        "word": "y tá",
+        "hanja": "醫佐",
+        "meaning": {
+          "ko": "간호사",
+          "zh": "護士",
+          "en": "nurse",
+          "ja": "看護師"
+        }
+      },
+      {
+        "word": "y sĩ",
+        "hanja": "醫士",
+        "meaning": {
+          "ko": "의사",
+          "zh": "醫生",
+          "en": "doctor",
+          "ja": "医者"
+        }
+      },
+      {
+        "word": "y phục",
+        "hanja": "衣服",
+        "meaning": {
+          "ko": "의복",
+          "zh": "衣服",
+          "en": "clothing",
+          "ja": "衣服"
+        }
+      }
+    ]
+  },
+  {
+    "n": 100,
+    "syllable": "ý",
+    "words": [
+      {
+        "word": "ý nghĩa",
+        "hanja": "意義",
+        "meaning": {
+          "ko": "의미",
+          "zh": "意義",
+          "en": "meaning",
+          "ja": "意味"
+        }
+      },
+      {
+        "word": "ý kiến",
+        "hanja": "意見",
+        "meaning": {
+          "ko": "의견",
+          "zh": "意見",
+          "en": "opinion",
+          "ja": "意見"
+        }
+      },
+      {
+        "word": "ý thức",
+        "hanja": "意識",
+        "meaning": {
+          "ko": "의식",
+          "zh": "儀式",
+          "en": "ceremony",
+          "ja": "儀式"
+        }
+      },
+      {
+        "word": "ý chí",
+        "hanja": "意志",
+        "meaning": {
+          "ko": "의지",
+          "zh": "意志",
+          "en": "will",
+          "ja": "意志"
+        }
+      },
+      {
+        "word": "ý định",
+        "hanja": "意定",
+        "meaning": {
+          "ko": "의도",
+          "zh": "意圖",
+          "en": "intention",
+          "ja": "意図"
+        }
+      },
+      {
+        "word": "ý tưởng",
+        "hanja": "意想",
+        "meaning": {
+          "ko": "아이디어·발상",
+          "zh": "點子・構想",
+          "en": "idea · notion",
+          "ja": "アイデア・発想"
+        }
+      }
+    ]
+  }
+]
