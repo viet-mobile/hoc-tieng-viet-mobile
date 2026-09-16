@@ -2529,6 +2529,9 @@
     try { window.localStorage && window.localStorage.setItem("vn-app-dialect", activeDialect); } catch (e) { /* no-op */ }
   }
   function currentViVoice() {
+    // A north/south switch is meaningful only when this browser exposes both
+    // region-labelled voices. Otherwise let vi-VN use the browser's default.
+    if (!pickAutoViVoice("north") || !pickAutoViVoice("south")) return null;
     var key = selectedViVoiceURI[activeDialect];
     if (!key) return null;
     return availableViVoices.filter(function (x) { return voiceMatchKey(x) === key; })[0] || null;
@@ -2759,6 +2762,10 @@
     });
   }
   function renderVoicePicker() {
+    var regionSettings = document.getElementById("vi-region-settings");
+    var hasRegionalVoices = !!(pickAutoViVoice("north") && pickAutoViVoice("south"));
+    if (regionSettings) regionSettings.hidden = !hasRegionalVoices;
+    if (!hasRegionalVoices) return;
     renderViVoicePicker("north");
     renderViVoicePicker("south");
     renderAllDialectToggles();
@@ -2796,6 +2803,9 @@
   function renderLangVoicePicker() {
     var root = document.getElementById("voice-picker-lang");
     if (!root) return;
+    var section = document.getElementById("language-voice-settings");
+    if (section) section.hidden = availableLangVoices.length < 2;
+    if (availableLangVoices.length < 2) return;
     var ref = LANG_VOICE_REFERENCE[currentLang] || [];
     if (!availableLangVoices.length && !ref.length) {
       root.innerHTML = '<p class="p-desc">' + TU("이 브라우저에서는 현재 언어 모드의 음성을 찾을 수 없어요. 뜻·해석 읽기는 기본 음성으로 재생을 시도합니다.") + '</p>';
@@ -4771,15 +4781,14 @@
       '<div class="tts-tip">간편하게 읽기 실행: 윈도우 기본 돋보기 기능(Win + +)을 켜고 Ctrl + Alt + 마우스 좌클릭을 활용하면 원하는 베트남어 텍스트를 바로 TTS 음성으로 들을 수 있어요. 다만 아쉽게도 윈도우에서 지원하는 “자연스러운 음성” 목록에는 베트남어가 없어서, 윈도우를 사용할 경우 베트남어 TTS 음성이 좀 부자연스럽게 느껴질 수 있어요.</div>');
 
     var settingsHtml =
-      '<div class="p-section"><h3>' + TU("발음 듣기 목소리") + '</h3>' +
-      '<p class="p-desc">' + TU("베트남어를 읽어줄 목소리를 3종류 중에서 고를 수 있어요: 북부 베트남어, 남부 베트남어, 현재 언어 모드(한국어·中文·English·日本語)의 TTS. 지금 실제로 사용할 지역은 아래 북부/남부 토글로 골라요.") + '</p>' +
+      '<div class="p-section"><div id="vi-region-settings" hidden><h3>' + TU("발음 듣기 목소리") + '</h3>' +
       '<div class="p-subsection"><h4>' + TU("지금 사용할 지역") + '</h4><div id="dialect-toggle-settings"></div></div>' +
+      '<div class="p-subsection"><h4>' + TU("북부") + ' ' + TU("발음 듣기 목소리") + '</h4><div id="voice-picker-north"></div></div>' +
+      '<div class="p-subsection"><h4>' + TU("남부") + ' ' + TU("발음 듣기 목소리") + '</h4><div id="voice-picker-south"></div></div></div>' +
       '<div class="p-subsection"><h4>' + TU("베트남어 반복 듣기 횟수") + '</h4>' +
       '<p class="p-desc">' + TU("발음 듣기 버튼을 누르면 베트남어를 몇 번 반복해서 들려줄지 선택하세요.") + '</p>' +
       '<div id="repeat-toggle-settings"></div></div>' +
-      '<div class="p-subsection"><h4>' + TU("북부") + ' ' + TU("발음 듣기 목소리") + '</h4><div id="voice-picker-north"></div></div>' +
-      '<div class="p-subsection"><h4>' + TU("남부") + ' ' + TU("발음 듣기 목소리") + '</h4><div id="voice-picker-south"></div></div>' +
-      '<div class="p-subsection"><h4>' + TU("언어 모드") + ' TTS (' + TU("뜻·해석 읽기 목소리") + ')</h4>' +
+      '<div class="p-subsection" id="language-voice-settings" hidden><h4>' + TU("언어 모드") + ' TTS (' + TU("뜻·해석 읽기 목소리") + ')</h4>' +
       '<p class="p-desc">' + TU("전체 듣기에서 단어 뜻이나 문장 해석도 함께 읽어드려요. 아래에서 현재 언어 모드(한국어·中文·English·日本語)로 읽어줄 목소리를 선택하세요.") + '</p>' +
       '<div id="voice-picker-lang"></div></div></div>' +
       '<div class="p-section"><h3>' + TU("기기별 베트남어 음성(TTS) 추가 방법") + '</h3>' +
