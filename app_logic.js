@@ -5064,7 +5064,7 @@
     var sourceReadingLabels = ["베트남어 출판물 읽기 연습 (행누, 랑제)", "행누책 읽기", "베트남어 읽기 연습"];
     return w.items.filter(function (it) { return sourceReadingLabels.indexOf((it.text || {}).ko) < 0; }).concat(courseReadingItems(w.week));
   }
-  function addCourseReadingAssignments(assign, reviewWeekKey, previewWeekKey) {
+  function addCourseReadingAssignments(assign, reviewWeekKeys, previewWeekKey) {
     if (!assign || !assign.days || !assign.days.length) return assign;
     var days = assign.days.map(function (day) {
       var copy = Object.assign({}, day);
@@ -5072,9 +5072,13 @@
       copy.previews = (day.previews || []).slice();
       return copy;
     });
-    // Separate the two books across the week: the preceding course is reviewed first,
-    // then the following course's material is previewed on the next study days.
-    courseReadingItems(reviewWeekKey).forEach(function (item, index) {
+    // Review both the preceding and current course, then preview the following course.
+    // The two books are distributed over the week instead of being concentrated on one day.
+    var reviewItems = [];
+    (Array.isArray(reviewWeekKeys) ? reviewWeekKeys : [reviewWeekKeys]).forEach(function (weekKey) {
+      reviewItems = reviewItems.concat(courseReadingItems(weekKey));
+    });
+    reviewItems.forEach(function (item, index) {
       days[(index * 2) % days.length].reviews.push(item);
     });
     courseReadingItems(previewWeekKey).forEach(function (item, index) {
@@ -5135,7 +5139,7 @@
     html += '</div>';
     // The first week's homework belongs at the bottom of the Oct 3 welcome card.
     var welcomeAssign = (typeof CURR_ASSIGNMENTS !== "undefined") ? CURR_ASSIGNMENTS.filter(function (a) { return a.week === 0; })[0] : null;
-    welcomeAssign = addCourseReadingAssignments(welcomeAssign, null, 1);
+    welcomeAssign = addCourseReadingAssignments(welcomeAssign, [null, 0], 1);
     if (welcomeAssign) {
       html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button><div class="curr-assign-body">';
       welcomeAssign.days.forEach(function (d) {
@@ -5189,7 +5193,7 @@
             if (!d.reviews.length && w.items.length) d.reviews = [w.items[dayIndex % w.items.length]];
           });
         }
-        assign = addCourseReadingAssignments(assign, previousSlot ? previousSlot.week : null, nextSlot ? nextSlot.week : null);
+        assign = addCourseReadingAssignments(assign, [previousSlot ? previousSlot.week : null, w.week], nextSlot ? nextSlot.week : null);
       }
       if (assign) {
         html += '<div class="curr-assign-card" data-open="false">' +
