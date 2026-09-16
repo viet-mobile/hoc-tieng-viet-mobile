@@ -1258,6 +1258,26 @@
   /* The first subtab row starts directly under the primary navigation in every section. */
   .app main { padding-top: 0; }
   .panel > .subtab-row:first-child { padding-top: 2px; }
+
+  /* Individual audio buttons: a 31px pastel face inside the existing 44px touch area. */
+  .speak-btn {
+    position: relative; isolation: isolate; width: 44px; height: 44px;
+    min-width: 44px; min-height: 44px; padding: 0;
+    border: 0; border-radius: 0; background: transparent; color: var(--accent);
+  }
+  .speak-btn::before {
+    content: ""; position: absolute; inset: 15%;
+    border: 1px solid color-mix(in srgb, var(--accent) 32%, var(--border));
+    border-radius: 10px 10px 10px 3px;
+    background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+    transition: background .15s, border-color .15s;
+  }
+  .speak-btn svg { position: relative; z-index: 1; width: 13px; height: 13px; }
+  .speak-btn:hover, .speak-btn:active { background: transparent; color: var(--accent); }
+  .speak-btn:hover::before, .speak-btn:active::before {
+    background: color-mix(in srgb, var(--accent) 22%, var(--surface));
+    border-color: color-mix(in srgb, var(--accent) 52%, var(--border));
+  }
 </style>
 
 <div class="app" data-active-tab="review">
