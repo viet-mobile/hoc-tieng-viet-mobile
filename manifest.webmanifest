@@ -1,0 +1,16 @@
+{
+  "name": "베트남어 학습반",
+  "short_name": "베트남어",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F1F4EC",
+  "theme_color": "#00613F",
+  "icons": [
+    {
+      "src": "assets/hoc-tieng-viet-logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
