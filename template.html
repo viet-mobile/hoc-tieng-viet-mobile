@@ -795,6 +795,13 @@
     font-size: 0.8rem; font-weight: 700; padding: 5px 8px; border-radius: 8px; cursor: pointer;
   }
   .study-auto-row .auto-seconds-select:disabled { opacity: .45; cursor: default; }
+  #panel-review .subtab-row { margin-bottom: 7px; padding-top: 4px; padding-bottom: 4px; }
+  #panel-review .study-mode-tabs { margin-bottom: 7px; gap: 3px; }
+  #panel-review .study-auto-row { padding: 6px 9px; margin-bottom: 7px; gap: 6px; flex-wrap: wrap; }
+  #panel-review .study-auto-row .auto-lbl { flex: 0 1 auto; }
+  #panel-review .auto-correct-option { font-size: 0.76rem; font-weight: 700; color: var(--ink-soft); white-space: nowrap; }
+  #panel-review .auto-correct-option input { vertical-align: middle; margin: 0 3px 0 0; }
+  #panel-review .study-body { padding-top: 0; }
   .study-body { padding: 4px 0 4px; }
   .study-empty { text-align: center; padding: 30px 10px; color: var(--ink-faint); font-size: 0.88rem; }
   .study-progress { font-size: 0.76rem; color: var(--ink-faint); text-align: center; margin-bottom: 10px; font-weight: 700; }
@@ -1128,7 +1135,7 @@
         </span></button>
       </div>
       <div class="subtab-row">
-        <button class="subtab-btn" data-wizard="main" aria-selected="true" data-i18n="대화">대화</button>
+        <button class="subtab-btn" data-wizard="main" aria-selected="true" data-i18n="첫만남">첫만남</button>
         <button class="subtab-btn" data-wizard="reftable" aria-selected="false" data-i18n="호칭">호칭</button>
         <button class="subtab-btn" data-wizard="talks" aria-selected="false" data-i18n="제공 연설">제공 연설</button>
         <button class="subtab-btn" data-wizard="neighbor" aria-selected="false" data-i18n="이웃 사람과의 대화">이웃 사람과의 대화</button>
@@ -1448,7 +1455,6 @@
         <button class="subtab-btn" data-grammar="sentences" aria-selected="false" data-i18n="범용 언어 생성표">범용 언어 생성표</button>
         <button class="subtab-btn" data-grammar="builder" aria-selected="false" data-i18n="문장 생성기">문장 생성기</button>
       </div>
-      <div class="p-subsection dialect-inline-toggle"><h4 data-i18n="지금 사용할 지역">지금 사용할 지역</h4><div id="dialect-toggle-grammar"></div></div>
       <div id="grammar-lessons-panel">
         <div id="grammar-intro-root"></div>
         <div id="grammar-units-root"></div>
@@ -1471,10 +1477,6 @@
 
     <!-- ============ REVIEW (복습) ============ -->
     <section class="panel active" id="panel-review">
-      <div class="intro">
-        <h2 data-i18n="복습 게임">복습 게임</h2>
-        <p data-i18n="플래시카드·보기 4지선다·듣기 4지선다·어순 배열·받아쓰기로 배운 내용을 복습하세요. 아래에서 복습할 영역을 먼저 골라 보세요.">플래시카드·보기 4지선다·듣기 4지선다·어순 배열·받아쓰기로 배운 내용을 복습하세요. 아래에서 복습할 영역을 먼저 골라 보세요.</p>
-      </div>
       <div class="subtab-row">
         <button class="subtab-btn" data-review="pron" aria-selected="false" data-i18n="발음">발음</button>
         <button class="subtab-btn" data-review="bible" aria-selected="false" data-i18n="성경">성경</button>
@@ -1483,7 +1485,6 @@
         <button class="subtab-btn" data-review="grammar" aria-selected="false" data-i18n="문법">문법</button>
       </div>
       <div class="subtab-row" id="review-scope-tabs" aria-label="복습 범위"></div>
-      <div class="p-subsection dialect-inline-toggle"><h4 data-i18n="지금 사용할 지역">지금 사용할 지역</h4><div id="dialect-toggle-review"></div></div>
       <div class="p-subsection dialect-inline-toggle"><h4 data-i18n="베트남어 반복 듣기 횟수">베트남어 반복 듣기 횟수</h4><div id="repeat-toggle-review"></div></div>
       <div class="study-mode-tabs" id="study-mode-tabs" role="tablist">
         <button class="study-mode-btn" role="tab" data-mode="flash" aria-selected="false" data-i18n="플래시카드">플래시카드</button>

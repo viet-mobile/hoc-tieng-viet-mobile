@@ -8,6 +8,11 @@
 # (see build_app.py) serializes them straight into JS objects that app_logic.js's T() helper reads.
 
 USAGE_GUIDE_COMMON = [
+    {'name': {'ko': '복습 화면', 'zh': '複習畫面', 'en': 'Review screen', 'ja': '復習画面'},
+     'body': {'ko': '복습할 대분류와 하위 분류를 고른 뒤 학습 방식을 선택하세요. 자동 넘김은 시간을 두고 답을 보여 주며, “정답 시 다음 문제”는 맞힌 즉시 다음 문제로 이동합니다.',
+              'zh': '先選擇複習的大分類和小分類，再選擇練習方式。「自動切換」會在設定時間後顯示答案，「答對後下一題」則會在答對後立刻前往下一題。',
+              'en': 'Choose a main and subcategory to review, then select a study mode. Auto-advance reveals an answer after a delay; Next question when correct moves on immediately after a correct answer.',
+              'ja': '復習する大分類と小分類を選び，学習方法を選択します。「自動送り」は設定時間後に答えを表示し，「正解で次の問題」は正解した直後に次へ進みます。'}},
     {'name': {'ko': '언어 전환',
               'zh': '切換語言',
               'en': 'Language switcher',

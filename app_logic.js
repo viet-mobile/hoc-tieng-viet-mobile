@@ -78,6 +78,8 @@
     "en": "Auto-advance",
     "ja": "自動送り"
   },
+  "정답 시 다음 문제": { "zh": "答對後下一題", "en": "Next question when correct", "ja": "正解で次の問題" },
+  "첫만남": { "zh": "初次見面", "en": "First Meeting", "ja": "初対面" },
   "다음 문제": {
     "zh": "下一題",
     "en": "Next question",
@@ -6564,17 +6566,19 @@
     // armAutoReveal()/speakThenAdvance() below are the shared plumbing every mode calls into.
     var AUTO_ADV_SECONDS_OPTS = [3, 5, 8, 10, 15];
     var autoAdvanceEnabled = false;
+    var autoNextOnCorrect = false;
     var autoAdvanceSeconds = 5;
     try {
       var savedAutoAdv = window.localStorage && window.localStorage.getItem("vn-app-auto-adv");
       if (savedAutoAdv) {
         var parsedAutoAdv = JSON.parse(savedAutoAdv);
         if (parsedAutoAdv && typeof parsedAutoAdv.enabled === "boolean") autoAdvanceEnabled = parsedAutoAdv.enabled;
+        if (parsedAutoAdv && typeof parsedAutoAdv.nextOnCorrect === "boolean") autoNextOnCorrect = parsedAutoAdv.nextOnCorrect;
         if (parsedAutoAdv && AUTO_ADV_SECONDS_OPTS.indexOf(parsedAutoAdv.seconds) >= 0) autoAdvanceSeconds = parsedAutoAdv.seconds;
       }
     } catch (e0) { /* no-op: localStorage unavailable */ }
     function saveAutoAdvancePref() {
-      try { window.localStorage && window.localStorage.setItem("vn-app-auto-adv", JSON.stringify({ enabled: autoAdvanceEnabled, seconds: autoAdvanceSeconds })); } catch (e) { /* no-op */ }
+      try { window.localStorage && window.localStorage.setItem("vn-app-auto-adv", JSON.stringify({ enabled: autoAdvanceEnabled, nextOnCorrect: autoNextOnCorrect, seconds: autoAdvanceSeconds })); } catch (e) { /* no-op */ }
     }
     var autoAdvanceTimer = null;
     function clearAutoAdvanceTimer() {
@@ -6643,7 +6647,7 @@
         '<span class="auto-lbl">' + TU("자동 넘김") + '</span>' +
         '<select id="auto-advance-seconds" class="auto-seconds-select" ' + (autoAdvanceEnabled ? "" : "disabled") + '>' +
         AUTO_ADV_SECONDS_OPTS.map(function (s) { return '<option value="' + s + '"' + (s === autoAdvanceSeconds ? " selected" : "") + '>' + s + TU("초") + '</option>'; }).join("") +
-        '</select>';
+        '</select><label class="auto-correct-option"><input type="checkbox" id="auto-next-correct-toggle" ' + (autoNextOnCorrect ? "checked" : "") + '> ' + TU("정답 시 다음 문제") + '</label>';
       autoAdvRoot.innerHTML = html;
       document.getElementById("auto-advance-toggle").addEventListener("change", function (e) {
         autoAdvanceEnabled = e.target.checked;
@@ -6656,6 +6660,10 @@
         autoAdvanceSeconds = parseInt(e.target.value, 10) || 5;
         saveAutoAdvancePref();
         if (autoAdvanceEnabled && studyState.current) armAutoReveal(currentRevealFn());
+      });
+      document.getElementById("auto-next-correct-toggle").addEventListener("change", function (e) {
+        autoNextOnCorrect = e.target.checked;
+        saveAutoAdvancePref();
       });
     }
     renderAutoAdvanceControls();
@@ -6915,7 +6923,7 @@
       actionRow.innerHTML = '<button class="foot-btn primary" id="mcq-next">' + TU("다음 문제 →") + '</button>';
       bodyEl.appendChild(actionRow);
       document.getElementById("mcq-next").addEventListener("click", nextMcq);
-      if (autoAdvanceEnabled) speakThenAdvance(item.kr, false, nextMcq);
+      if (isCorrect && (autoAdvanceEnabled || autoNextOnCorrect)) speakThenAdvance(item.kr, false, nextMcq);
     }
 
     /* ---------- reading 4-choice quiz (보기 4지선다) ---------- */
@@ -6990,7 +6998,7 @@
       actionRow.innerHTML = '<button class="foot-btn primary" id="look-next">' + TU("다음 문제 →") + '</button>';
       bodyEl.appendChild(actionRow);
       document.getElementById("look-next").addEventListener("click", nextLook);
-      if (autoAdvanceEnabled) speakThenAdvance(item.kr, false, nextLook);
+      if (isCorrect && (autoAdvanceEnabled || autoNextOnCorrect)) speakThenAdvance(item.kr, false, nextLook);
     }
 
     /* ---------- word-order arrangement ---------- */
@@ -7078,7 +7086,7 @@
         // speak+advance right away instead of leaving the learner staring at a solved card for
         // the rest of the interval.
         clearAutoAdvanceTimer();
-        if (autoAdvanceEnabled) speakThenAdvance(item.vi, true, nextOrder);
+        if (autoAdvanceEnabled || autoNextOnCorrect) speakThenAdvance(item.vi, true, nextOrder);
         else speak(item.vi);
       } else {
         fb.innerHTML = '<div class="study-order-feedback no">' + TU("순서가 달라요. 다시 시도해 보세요.") + '</div>' +
@@ -7123,7 +7131,7 @@
           ? '<div class="study-type-feedback ok">' + TU("정답이에요! 🎉") + '</div>'
           : '<div class="study-type-feedback no">' + TU("다시 확인해 보세요.") + '</div><div class="study-type-answer vn">' + TU("정답: ") + escapeHtml(item.vi) + '</div>';
         answered = true;
-        if (autoAdvanceEnabled) speakThenAdvance(item.vi, true, nextType);
+        if (correct && (autoAdvanceEnabled || autoNextOnCorrect)) speakThenAdvance(item.vi, true, nextType);
         else speak(item.vi);
       }
       document.getElementById("type-submit").addEventListener("click", submit);
