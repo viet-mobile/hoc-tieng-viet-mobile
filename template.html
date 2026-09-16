@@ -536,6 +536,13 @@
   .lff-title { display: inline; }
   .lff-title-vi { color: var(--ink); }
   .lff-title-translation { color: var(--ink-faint); }
+  /* The Love People—Make Disciples lesson headings keep the Vietnamese title
+     visually equal to the BÀI label. Appendix C's long translation deliberately
+     starts on its own line, aligned with the Vietnamese title rather than BÀI. */
+  .lpd-title { display: inline-block; vertical-align: top; }
+  .lpd-title-vi { color: var(--ink); font-family: var(--font-vn); font-weight: 800; font-size: 1.05rem; }
+  .lpd-title-translation { color: var(--ink-faint); }
+  .lpd-title.is-appendix-title .lpd-title-translation { display: block; margin-top: 2px; }
   .subtab-row {
     display: flex; flex-wrap: wrap; gap: 2px;
     margin: 0 -18px 14px; padding: 7px 10px;
@@ -1128,6 +1135,7 @@
         <button class="subtab-btn" data-wizard="talks" aria-selected="false" data-i18n="제공 연설">제공 연설</button>
         <button class="subtab-btn" data-wizard="neighbor" aria-selected="false" data-i18n="이웃 사람과의 대화">이웃 사람과의 대화</button>
         <button class="subtab-btn" data-wizard="lff" aria-selected="false" data-i18n="행복한 삶을 영원히">행복한 삶을 영원히</button>
+        <button class="subtab-btn" data-wizard="lpd" aria-selected="false" data-i18n="사람들을 사랑하고 제자로">사람들을 사랑하고 제자로</button>
       </div>
 
       <div id="wizard-main-pane">
@@ -1322,6 +1330,11 @@
           <input type="text" id="lff-search" data-i18n-placeholder="베트남어 문장이나 뜻으로 검색" placeholder="베트남어 문장이나 뜻으로 검색">
         </div>
         <div id="curr-lff-root"></div>
+      </div>
+
+      <div id="wizard-lpd-pane" style="display:none">
+        <div class="chain-note" data-i18n="&quot;사람들을 사랑하고 제자로 삼으십시오&quot; 소책자에서 뽑은 과별 대표 예문이에요. 1~12과와 부록 가·나·다에서 각 5~8개씩 골라 5개 언어로 대조해 두었어요. 전체 본문이 아니라 학습용으로 엄선한 예문이에요.">"사람들을 사랑하고 제자로 삼으십시오" 소책자에서 뽑은 과별 대표 예문이에요. 1~12과와 부록 가·나·다에서 각 5~8개씩 골라 5개 언어로 대조해 두었어요. 전체 본문이 아니라 학습용으로 엄선한 예문이에요.</div>
+        <div id="curr-lpd-root"></div>
       </div>
     </section>
 

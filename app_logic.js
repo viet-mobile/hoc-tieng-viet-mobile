@@ -1905,7 +1905,14 @@
   },
   "부": { "zh": "部分", "en": "Part", "ja": "部" },
   "베트남어 문장이나 뜻으로 검색": { "zh": "用越南語句子或意思搜尋", "en": "Search by Vietnamese sentence or meaning", "ja": "ベトナム語の文や意味で検索" },
-  "나는 준비가 되었는가?": { "zh": "我準備好了嗎？", "en": "Am I Ready?", "ja": "準備はできていますか" }
+  "나는 준비가 되었는가?": { "zh": "我準備好了嗎？", "en": "Am I Ready?", "ja": "準備はできていますか" },
+  "사람들을 사랑하고 제자로": { "zh": "用愛心幫助人成為基督徒", "en": "Love People—Make Disciples", "ja": "愛を込めて弟子を育てる" },
+  "\"사람들을 사랑하고 제자로 삼으십시오\" 소책자에서 뽑은 과별 대표 예문이에요. 1~12과와 부록 가·나·다에서 각 5~8개씩 골라 5개 언어로 대조해 두었어요. 전체 본문이 아니라 학습용으로 엄선한 예문이에요.": {
+    "zh": "從「用愛心幫助人成為基督徒」小冊子中，每課精選5~8個代表例句，共12課加上附錄A、B、C，以5種語言對照。這不是全文，而是為學習精選的例句。",
+    "en": "A handful of representative example sentences (5-8 per lesson) selected from the \"Love People—Make Disciples\" brochure—Lessons 1-12 plus Appendices A, B, C—aligned across 5 languages. This is a small curated selection for study, not the full text.",
+    "ja": "「愛を込めて弟子を育てる」小冊子から選んだ、各課の代表的な例文です。レッスン1~12と付録a・b・cから5~8個ずつ選び、5つの言語で対照してあります。全文ではなく、学習用に厳選した例文です。"
+  },
+  "부록": { "zh": "附錄", "en": "Appendix", "ja": "付録" }
 };
   function TU(ko) {
     if (!ko) return ko;
@@ -3200,6 +3207,7 @@
       talks: document.getElementById("wizard-talks-pane"),
       neighbor: document.getElementById("wizard-neighbor-pane"),
       lff: document.getElementById("wizard-lff-pane"),
+      lpd: document.getElementById("wizard-lpd-pane"),
     };
     var btns = document.querySelectorAll(".subtab-btn[data-wizard]");
     if (!btns.length || !panes.main) return;
@@ -3213,6 +3221,7 @@
     renderCurrTalks();
     renderCurrNeighbor();
     renderCurrLff();
+    renderCurrLpd();
   })();
 
   /* ================= WIZARD ================= */
@@ -4913,6 +4922,12 @@
       setTimeout(function () {
         var target = document.querySelector('[data-anchor="' + anchor.replace(/"/g, '\\"') + '"]');
         if (!target) return;
+        var lffPart = target.closest ? target.closest(".lff-part") : null;
+        if (lffPart) {
+          lffPart.dataset.open = "true";
+          var partButton = lffPart.querySelector(".lff-part-head");
+          if (partButton) partButton.setAttribute("aria-expanded", "true");
+        }
         var card = target.closest ? target.closest(".group-card") : null;
         if (card) card.dataset.open = "true";
         target.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -4974,7 +4989,7 @@
     12: "2027/1/23 - 13주", 13: "2027/1/30 - 14주", 14: "2027/2/6 - 15주", 15: "2027/2/13 - 16주"
   };
   var COURSE_BREAK_LABELS = {
-    "-1.5": "2026/11/7 베트남 자매 결혼식 방학",
+    "-1.5": "2026/11/7 방학",
     "-2.5": "2026/12/5 천안 베트남어 순회대회 파이오니아 모임",
     "-3.5": "2026/12/26 군산 한국어 순회대회"
   };
@@ -5014,6 +5029,58 @@
       if (number) return "베트남어 파수대 어휘 50개 학습 " + number + "주차";
     }
     return text;
+  }
+  // Reading practice proceeds through Enjoy Life Forever! (행누) and Love People—Make
+  // Disciples (랑제) from Week 5 onward, including the scheduled breaks. Keep these
+  // as display-only course items so the authored source curriculum remains intact.
+  var COURSE_READING_PLAN = {
+    "4": { lff: 1, lpd: 1 }, "5": { lff: 2, lpd: 2 }, "6": { lff: 3, lpd: 3 }, "7": { lff: 4, lpd: 4 },
+    "-2.5": { lff: 5, lpd: 5 }, "8": { lff: 6, lpd: 6 }, "9": { lff: 7, lpd: 7 }, "-3.5": { lff: 8, lpd: 8 },
+    "10": { lff: 9, lpd: 9 }, "11": { lff: 10, lpd: 10 }, "12": { lff: 11, lpd: 11 }, "13": { lff: 12, lpd: 12 },
+    "14": { lffReview: 1, lpdAppendix: "A" }
+  };
+  function courseReadingText(kind, value) {
+    var appendix = kind === "lpdAppendix";
+    var partReview = kind === "lffReview";
+    if (kind === "lff") return { ko: "행누 " + value + "과 읽기 연습", zh: "「행누」第" + value + "課閱讀練習", en: "행누 Lesson " + value + " Reading Practice", ja: "「행누」レッスン" + value + " 読解練習" };
+    if (partReview) return { ko: "행누 1부 복습 읽기 연습", zh: "「행누」第1部分複習閱讀練習", en: "행누 Part 1 Review Reading Practice", ja: "「행누」第1部 復習読解練習" };
+    if (appendix) return { ko: "랑제 부록 " + ({ A: "가", B: "나", C: "다" }[value]) + " 읽기 연습", zh: "《用愛心幫助人成為基督徒》附錄" + value + "閱讀練習", en: "Love People—Make Disciples Appendix " + value + " Reading Practice", ja: "「愛を込めて弟子を育てる」付録" + value + " 読解練習" };
+    return { ko: "랑제 " + value + "과 읽기 연습", zh: "《用愛心幫助人成為基督徒》第" + value + "課閱讀練習", en: "Love People—Make Disciples Lesson " + value + " Reading Practice", ja: "「愛を込めて弟子を育てる」レッスン" + value + " 読解練習" };
+  }
+  function courseReadingItems(weekKey) {
+    var plan = COURSE_READING_PLAN[String(weekKey)];
+    if (!plan) return [];
+    var items = [];
+    if (plan.lff) items.push({ text: courseReadingText("lff", plan.lff), link: { tab: "wizard", subAttr: "wizard", subVal: "lff", anchor: "lff" + (plan.lff - 1) } });
+    if (plan.lffReview) items.push({ text: courseReadingText("lffReview", plan.lffReview), link: { tab: "wizard", subAttr: "wizard", subVal: "lff", anchor: "lff12" } });
+    if (plan.lpd) items.push({ text: courseReadingText("lpd", plan.lpd), link: { tab: "wizard", subAttr: "wizard", subVal: "lpd", anchor: "lpd" + (plan.lpd - 1) } });
+    if (plan.lpdAppendix) {
+      var appendixIndex = { A: 12, B: 13, C: 14 }[plan.lpdAppendix];
+      items.push({ text: courseReadingText("lpdAppendix", plan.lpdAppendix), link: { tab: "wizard", subAttr: "wizard", subVal: "lpd", anchor: "lpd" + appendixIndex } });
+    }
+    return items;
+  }
+  function curriculumDisplayItems(w) {
+    var sourceReadingLabels = ["베트남어 출판물 읽기 연습 (행누, 랑제)", "행누책 읽기", "베트남어 읽기 연습"];
+    return w.items.filter(function (it) { return sourceReadingLabels.indexOf((it.text || {}).ko) < 0; }).concat(courseReadingItems(w.week));
+  }
+  function addCourseReadingAssignments(assign, reviewWeekKey, previewWeekKey) {
+    if (!assign || !assign.days || !assign.days.length) return assign;
+    var days = assign.days.map(function (day) {
+      var copy = Object.assign({}, day);
+      copy.reviews = (day.reviews || []).slice();
+      copy.previews = (day.previews || []).slice();
+      return copy;
+    });
+    // Separate the two books across the week: the preceding course is reviewed first,
+    // then the following course's material is previewed on the next study days.
+    courseReadingItems(reviewWeekKey).forEach(function (item, index) {
+      days[(index * 2) % days.length].reviews.push(item);
+    });
+    courseReadingItems(previewWeekKey).forEach(function (item, index) {
+      days[(index * 2 + 1) % days.length].previews.push(item);
+    });
+    return Object.assign({}, assign, { days: days });
   }
   function bindCurrGroupCards(root) {
     root.querySelectorAll(".group-card").forEach(function (card) {
@@ -5068,6 +5135,7 @@
     html += '</div>';
     // The first week's homework belongs at the bottom of the Oct 3 welcome card.
     var welcomeAssign = (typeof CURR_ASSIGNMENTS !== "undefined") ? CURR_ASSIGNMENTS.filter(function (a) { return a.week === 0; })[0] : null;
+    welcomeAssign = addCourseReadingAssignments(welcomeAssign, null, 1);
     if (welcomeAssign) {
       html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button><div class="curr-assign-body">';
       welcomeAssign.days.forEach(function (d) {
@@ -5090,13 +5158,14 @@
         (w.note ? '<span class="curr-week-note">' + escapeHtml(T(w.note)) + '</span>' : '') + '</span>' +
         currChev() + '</button>' +
         '<div class="group-body"><div class="curr-item-list">';
-      w.items.forEach(function (it) {
+      curriculumDisplayItems(w).forEach(function (it) {
         html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, w.week)) +
           (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') + '</div>' +
           currLinkBtn(curriculumLinkForWeek(it.link, w.week)) + '</div>';
       });
       html += '</div>';
       // Homework is shown one calendar slot before the class it prepares for.
+      var previousSlot = courseWeeks[wi - 1];
       var nextSlot = courseWeeks[wi + 1];
       var assign = (typeof CURR_ASSIGNMENTS !== "undefined" && nextSlot) ? CURR_ASSIGNMENTS.filter(function (a) { return a.week === nextSlot.week; })[0] : null;
       if (assign) {
@@ -5120,6 +5189,7 @@
             if (!d.reviews.length && w.items.length) d.reviews = [w.items[dayIndex % w.items.length]];
           });
         }
+        assign = addCourseReadingAssignments(assign, previousSlot ? previousSlot.week : null, nextSlot ? nextSlot.week : null);
       }
       if (assign) {
         html += '<div class="curr-assign-card" data-open="false">' +
@@ -5590,7 +5660,7 @@
         var titleHtml = rec.kind === "lesson"
           ? '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(rec.title.vi) + '</span> <span class="lff-title-translation">· ' + escapeHtml(T(rec.title)) + '</span></span>'
           : '<span class="cnt">' + escapeHtml(rec.title.vi) + ' · ' + escapeHtml(T(rec.title)) + '</span>';
-        html += '<div class="group-card" data-open="' + (openSyls["lff" + ri] ? "true" : "false") + '" data-syl="lff' + ri + '">' +
+        html += '<div class="group-card" data-open="' + (openSyls["lff" + ri] ? "true" : "false") + '" data-syl="lff' + ri + '" data-anchor="lff' + ri + '">' +
           '<div class="group-head-row"><button class="group-head"><span>' +
           (label ? '<span class="syl">' + escapeHtml(label) + '</span> ' : '') +
           titleHtml + '</span>' + currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
@@ -5621,11 +5691,60 @@
     var input = document.getElementById("lff-search");
     if (input) input.addEventListener("input", function () { renderCurrLff(input.value.trim()); });
   })();
+
+  // "사람들을 사랑하고 제자로" (Love People—Make Disciples) -- LPD_LESSONS holds a small, hand-picked
+  // set of representative example sentences (5-8 per lesson) for Lessons 1-12 plus Appendices A-C,
+  // in all 5 languages. This is a curated study selection, not the brochure's full text, so unlike
+  // LFF_CONVERSATIONS there's no part-grouping or search box needed -- just a flat list of cards.
+  function lpdRecordLabel(rec) {
+    if (rec.kind === "lesson") return "BÀI " + (rec.num < 10 ? "0" + rec.num : String(rec.num));
+    return TU("부록") + " " + rec.num;
+  }
+  function renderCurrLpd() {
+    var root = document.getElementById("curr-lpd-root");
+    if (!root) return;
+    var openSyls = {};
+    var existing = root.querySelectorAll('.group-card[data-open="true"]');
+    if (existing.length) {
+      existing.forEach(function (c) { openSyls[c.dataset.syl] = true; });
+    } else if (!root.dataset.rendered && LPD_LESSONS.length) {
+      openSyls["lpd0"] = true;
+    }
+    root.dataset.rendered = "true";
+
+    var html = "";
+    LPD_LESSONS.forEach(function (rec, ri) {
+      var lineUnits = [];
+      rec.lines.forEach(function (line) {
+        sentencePairs(line.vi, T(line)).forEach(function (pair) {
+          lineUnits.push({ vi: pair.vi, kr: pair.kr });
+        });
+      });
+      var readPairs = [[rec.title.vi, T(rec.title)]].concat(lineUnits.map(function (l) { return [l.vi, l.kr]; }));
+      html += '<div class="group-card" data-open="' + (openSyls["lpd" + ri] ? "true" : "false") + '" data-syl="lpd' + ri + '" data-anchor="lpd' + ri + '">' +
+        '<div class="group-head-row"><button class="group-head"><span>' +
+        '<span class="syl">' + escapeHtml(lpdRecordLabel(rec)) + '</span> ' +
+        '<span class="lpd-title' + (rec.kind === "appendix" ? " is-appendix-title" : "") + '"><span class="lpd-title-vi">' + escapeHtml(rec.title.vi) + '</span> <span class="lpd-title-translation">· ' + escapeHtml(T(rec.title)) + '</span></span>' +
+        '</span>' + currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
+        '<div class="group-body"><div class="talk-lines">';
+      lineUnits.forEach(function (l) {
+        html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
+          '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
+          '<div class="talk-kr">' + escapeHtml(l.kr) + '</div></div></div>';
+      });
+      html += '</div></div></div>';
+    });
+    root.innerHTML = html;
+    bindCurrGroupCards(root);
+    bindCurrSpeakBtns(root);
+  }
+
   // Re-render on a language change. Previously this pane was rendered only once at startup,
   // leaving the initial (for example Japanese) translation on screen in every later mode.
   onLangChange(function () {
     var input = document.getElementById("lff-search");
     renderCurrLff(input ? input.value.trim() : "");
+    renderCurrLpd();
   });
 
   // Compact read-only summary of the shared people-profile, shown at the top of 제공 연설 with
@@ -6243,6 +6362,11 @@
         LFF_CONVERSATIONS.forEach(function (rec) {
           lffDisplayLines(rec).forEach(function (l) { if (isReviewableLffLine(l)) addSentencePairs(out, l.vi, T(l)); });
         });
+        // 사람들을 사랑하고 제자로 (new 대화 subtab, LPD_LESSONS) contributes its curated example
+        // sentences too.
+        LPD_LESSONS.forEach(function (rec) {
+          rec.lines.forEach(function (l) { if (l.vi) addSentencePairs(out, l.vi, T(l)); });
+        });
         return dedupeByVi(out);
       },
       vocab: function () {
@@ -6331,14 +6455,14 @@
     var REVIEW_SCOPES = {
       pron: ["all", "alphabet", "vowels", "consonants", "tones", "tonepairs", "nsdiff"],
       bible: ["all", "books", "numbers", "time", "days", "months"],
-      wizard: ["all", "main", "reftable", "talks", "neighbor", "lff"],
+      wizard: ["all", "main", "reftable", "talks", "neighbor", "lff", "lpd"],
       vocab: ["all", "rhyme", "orderrev", "groups", "basic", "antonym", "freq", "theo", "names", "chain", "dialect", "wt"],
       grammar: ["all", "lessons", "special", "sentences"]
     };
     var REVIEW_SCOPE_LABELS = {
       all: "전체", alphabet: "문자", vowels: "모음", consonants: "자음", tones: "성조", tonepairs: "연속 성조", nsdiff: "남북 발음",
       books: "성경", numbers: "숫자", time: "시간", days: "요일, 날짜", months: "달, 계절",
-      main: "대화", reftable: "호칭", talks: "제공 연설", neighbor: "이웃 사람과의 대화", lff: "행복한 삶을 영원히",
+      main: "대화", reftable: "호칭", talks: "제공 연설", neighbor: "이웃 사람과의 대화", lff: "행복한 삶을 영원히", lpd: "사람들을 사랑하고 제자로",
       rhyme: "한자음", orderrev: "어순반대", groups: "동일음", basic: "기본", antonym: "반의", freq: "상용", theo: "신권", names: "인명", chain: "끝말", dialect: "남북 단어", wt: "파수대",
       lessons: "예문", special: "특강", sentences: "범용 언어 생성표"
     };
@@ -6374,6 +6498,7 @@
         else if (scope === "talks") OFFER_TALKS.forEach(function (t) { t.lines.forEach(function (l) { sentence(l.vi, T(l.kr)); }); });
         else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(l.vi, T(l)); }); });
         else if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(l.vi, T(l)); }); });
+        else if (scope === "lpd") LPD_LESSONS.forEach(function (r) { r.lines.forEach(function (l) { sentence(l.vi, T(l)); }); });
       } else if (key === "vocab") {
         if (scope === "rhyme") RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); });
         else if (scope === "orderrev") { RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { if (w.word_order_reversed) out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); }); if (typeof WORD_ORDER_REVERSED_EXTRA !== "undefined") WORD_ORDER_REVERSED_EXTRA.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }

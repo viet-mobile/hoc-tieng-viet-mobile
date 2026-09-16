@@ -374,7 +374,7 @@ WEEK16_TOC = [{'items': [{'link': {'subAttr': 'pron', 'subVal': 'settings', 'tab
            'zh': '暫停新詞彙進度，但每天10個守望台詞彙學習照常進行。'},
   'title': {'en': "Break (Vietnamese Sister's Wedding, Nov 7, 2026)",
             'ja': '休み（ベトナム語姉妹の結婚式 2026/11/7）',
-            'ko': '방학(베트남 자매 결혼식 2026/11/7)',
+            'ko': '방학(2026/11/7)',
             'zh': '假期（越南姐妹婚禮 2026/11/7）'},
   'week': -1.5},
  {'items': [{'link': {'subAttr': 'pron', 'subVal': 'tonepairs', 'tab': 'pron'},
