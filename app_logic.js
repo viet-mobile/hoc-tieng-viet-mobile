@@ -79,6 +79,7 @@
     "ja": "自動送り"
   },
   "정답 시 다음 문제": { "zh": "答對後下一題", "en": "Next question when correct", "ja": "正解で次の問題" },
+  "반복 듣기": { "zh": "重複播放", "en": "Repeat", "ja": "繰り返し再生" },
   "첫만남": { "zh": "初次見面", "en": "First Meeting", "ja": "初対面" },
   "다음 문제": {
     "zh": "下一題",
@@ -2537,7 +2538,7 @@
   // One shared global, same single-setting-with-multiple-synced-widgets pattern as activeDialect
   // above -- adjusting it from 발음 설정 or 복습 keeps both widgets (and every actual playback)
   // in sync.
-  var VI_REPEAT_OPTS = [1, 2, 3, 4, 5];
+  var VI_REPEAT_OPTS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   var viRepeatCount = 1;
   try {
     var savedViRepeat = parseInt(window.localStorage && window.localStorage.getItem("vn-app-vi-repeat"), 10);
@@ -2557,20 +2558,18 @@
   function onViRepeatChange(fn) { VI_REPEAT_CHANGE_LISTENERS.push(fn); }
   function renderViRepeatToggle(root) {
     if (!root) return;
-    var html = '<div class="repeat-toggle" role="tablist">' +
+    var html = '<select class="repeat-count-select" aria-label="' + TU("베트남어 반복 듣기 횟수") + '">' +
       VI_REPEAT_OPTS.map(function (n) {
-        return '<button type="button" class="repeat-toggle-btn" data-repeat="' + n + '" aria-selected="' + (viRepeatCount === n ? "true" : "false") + '">' + repeatCountLabel(n) + '</button>';
+        return '<option value="' + n + '"' + (viRepeatCount === n ? " selected" : "") + '>' + repeatCountLabel(n) + '</option>';
       }).join("") +
-      '</div>';
+      '</select>';
     root.innerHTML = html;
-    root.querySelectorAll(".repeat-toggle-btn").forEach(function (b) {
-      b.addEventListener("click", function () {
-        var n = parseInt(b.dataset.repeat, 10);
-        if (viRepeatCount === n) return;
-        viRepeatCount = n;
-        saveViRepeatPref();
-        VI_REPEAT_CHANGE_LISTENERS.forEach(function (fn) { fn(viRepeatCount); });
-      });
+    root.querySelector(".repeat-count-select").addEventListener("change", function (e) {
+      var n = parseInt(e.target.value, 10);
+      if (viRepeatCount === n) return;
+      viRepeatCount = n;
+      saveViRepeatPref();
+      VI_REPEAT_CHANGE_LISTENERS.forEach(function (fn) { fn(viRepeatCount); });
     });
   }
   // Every widget instance (발음 설정, 복습) re-renders whenever the setting changes from ANY of
@@ -3168,6 +3167,15 @@
     Object.keys(panels).forEach(function (k) { panels[k].classList.remove("active"); });
     panels[tab].classList.add("active");
     if (appRoot) appRoot.dataset.activeTab = tab;
+    // Keep the selected item visible in the horizontally scrolling phone menu.
+    var activeButton = document.querySelector('.tab-btn[data-tab="' + tab + '"]');
+    if (activeButton && activeButton.parentElement) {
+      var menu = activeButton.parentElement;
+      var itemRect = activeButton.getBoundingClientRect();
+      var menuRect = menu.getBoundingClientRect();
+      if (itemRect.left < menuRect.left) menu.scrollLeft += itemRect.left - menuRect.left;
+      else if (itemRect.right > menuRect.right) menu.scrollLeft += itemRect.right - menuRect.right;
+    }
     var targetTop = (restoreScroll && tabScrollPos.hasOwnProperty(tab)) ? tabScrollPos[tab] : 0;
     window.scrollTo({ top: targetTop, behavior: "instant" in window ? "instant" : "auto" });
   }
@@ -6643,12 +6651,13 @@
     var autoAdvRoot = document.getElementById("study-auto-row");
     function renderAutoAdvanceControls() {
       if (!autoAdvRoot) return;
-      var html = '<label class="switch"><input type="checkbox" id="auto-advance-toggle" ' + (autoAdvanceEnabled ? "checked" : "") + '><span class="track"></span><span class="thumb"></span></label>' +
-        '<span class="auto-lbl">' + TU("자동 넘김") + '</span>' +
+      var html = '<label class="auto-advance-option"><input type="checkbox" id="auto-advance-toggle" ' + (autoAdvanceEnabled ? "checked" : "") + '> ' + TU("자동 넘김") + '</label>' +
         '<select id="auto-advance-seconds" class="auto-seconds-select" ' + (autoAdvanceEnabled ? "" : "disabled") + '>' +
         AUTO_ADV_SECONDS_OPTS.map(function (s) { return '<option value="' + s + '"' + (s === autoAdvanceSeconds ? " selected" : "") + '>' + s + TU("초") + '</option>'; }).join("") +
-        '</select><label class="auto-correct-option"><input type="checkbox" id="auto-next-correct-toggle" ' + (autoNextOnCorrect ? "checked" : "") + '> ' + TU("정답 시 다음 문제") + '</label>';
+        '</select><label class="auto-correct-option"><input type="checkbox" id="auto-next-correct-toggle" ' + (autoNextOnCorrect ? "checked" : "") + '> ' + TU("정답 시 다음 문제") + '</label>' +
+        '<label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span id="repeat-toggle-review"></span></label>';
       autoAdvRoot.innerHTML = html;
+      renderViRepeatToggle(document.getElementById("repeat-toggle-review"));
       document.getElementById("auto-advance-toggle").addEventListener("change", function (e) {
         autoAdvanceEnabled = e.target.checked;
         saveAutoAdvancePref();

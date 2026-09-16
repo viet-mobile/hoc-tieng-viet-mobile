@@ -434,12 +434,6 @@
     padding: 10px 13px; margin-bottom: 14px;
   }
   .practice-toggle .lbl { font-size: 0.82rem; font-weight: 700; color: var(--ink-soft); }
-  .switch { position: relative; width: 40px; height: 23px; flex: none; }
-  .switch input { opacity: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; position: absolute; z-index: 1; }
-  .switch .track { position: absolute; inset: 0; background: var(--chip-bg); border-radius: 999px; transition: background .15s; }
-  .switch .thumb { position: absolute; top: 2.5px; left: 2.5px; width: 18px; height: 18px; border-radius: 50%; background: var(--surface); box-shadow: 0 1px 3px rgba(0,0,0,.25); transition: transform .15s; }
-  .switch input:checked ~ .track { background: var(--accent); }
-  .switch input:checked ~ .thumb { transform: translateX(17px); }
   .speak-btn {
     border: none; background: var(--chip-bg); color: var(--ink-soft); width: 26px; height: 26px;
     border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
@@ -1067,6 +1061,104 @@
     width: auto; height: auto; min-width: 22px; border-radius: 999px;
     padding: 3px 9px; font-size: 0.68rem; white-space: nowrap;
   }
+
+  /* Device layout: keep long reading passages in one column while giving controls room. */
+  .app, .topbar-inner, .tabs { max-width: 1100px; }
+  .app { width: 100%; min-width: 0; }
+  .topbar { padding-inline: clamp(16px, 3vw, 32px); }
+  main { padding: 24px clamp(16px, 3vw, 32px); min-width: 0; }
+  .tabs { gap: 5px; padding: 8px clamp(16px, 3vw, 32px); }
+  .tab-btn { min-height: 44px; padding: 10px 16px; font-size: .88rem; }
+  .subtab-btn { min-height: 42px; padding: 9px 13px; font-size: .82rem; }
+  .subtab-row { margin-inline: calc(-1 * clamp(16px, 3vw, 32px)); padding-inline: clamp(16px, 3vw, 32px); gap: 5px; }
+  .intro { max-width: 76ch; margin-bottom: 22px; }
+  .intro h2 { font-size: clamp(1.2rem, 1.5vw, 1.5rem); }
+  .intro p { font-size: .96rem; }
+  .panel, .panel > div, .people-card, .choice-btn, .turn, .curr-card { min-width: 0; }
+  .name-field input, .search-box input, .study-type-input, .sb-field select { min-height: 44px; }
+  .choice-btn, .mini-btn, .dialect-toggle-btn, .repeat-toggle-btn,
+  .stage-pill, .study-chip, .study-mcq-choice, .curr-link-btn, .read-all-btn { min-height: 44px; }
+  .speak-btn { min-width: 44px; min-height: 44px; }
+  .group-head, .lff-part-head { min-height: 48px; }
+  .panel { scroll-margin-top: calc(var(--tabbar-h, 60px) + 16px); }
+  .subtab-row { scroll-margin-top: var(--tabbar-h, 60px); }
+
+  @media (min-width: 700px) {
+    .topbar { padding-block: 22px 14px; }
+    .brand-logo { width: 64px; height: 64px; }
+    .brand h1 { font-size: 1.35rem; }
+    .lang-btn { min-height: 38px; font-size: .75rem; padding-inline: 10px; }
+    .tabs { justify-content: flex-start; }
+    .curr-phase-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .voice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .sb-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+  }
+  @media (min-width: 1000px) {
+    .tabs { gap: 8px; }
+    .tab-btn { flex: 1 1 0; }
+    .curr-phase-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .people-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+  @media (max-width: 699px) {
+    .app { padding-bottom: calc(36px + env(safe-area-inset-bottom)); }
+    .topbar { padding: 12px 16px 8px; }
+    .topbar-row { align-items: center; }
+    .brand-logo { width: 44px; height: 44px; }
+    .brand h1 { white-space: normal; font-size: 1rem; line-height: 1.3; }
+    .lang-switch { max-width: 100%; }
+    .lang-btn { min-height: 36px; font-size: .69rem; padding: 6px; }
+    .tabs, .subtab-row { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+    .tabs { padding: 6px 16px 8px; scroll-padding-inline: 16px; }
+    .tabs::-webkit-scrollbar, .subtab-row::-webkit-scrollbar { height: 3px; }
+    .tabs::-webkit-scrollbar-thumb, .subtab-row::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+    .tab-btn { font-size: .85rem; padding-inline: 14px; }
+    .subtab-row { margin-inline: -16px; padding: 6px 16px 9px; scroll-padding-inline: 16px; }
+    main { padding: 18px 16px; }
+    .intro h2 { font-size: 1.2rem; }
+    .choice-row.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .people-fields-age, .people-fields-myname { grid-template-columns: 72px minmax(0, 1fr); }
+    .study-mode-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+  @media (max-width: 380px) {
+    .topbar-row { gap: 6px; }
+    .brand-wrap { flex-basis: 100%; }
+    .lang-switch { margin-left: auto; }
+    .choice-row.cols-2 { grid-template-columns: 1fr; }
+  }
+
+  /* Compact header and the stacked navigation in Review. */
+  .topbar { padding-top: 8px; padding-bottom: 0; }
+  .brand { margin-bottom: 0; }
+  .tabs { padding-top: 2px; padding-bottom: 2px; }
+  .app[data-active-tab="review"] main { padding-top: 0; }
+  #panel-review > .subtab-row:first-child { position: relative; top: auto; margin-bottom: 0; padding-top: 2px; padding-bottom: 2px; }
+  #review-scope-tabs { margin-bottom: 2px; padding-top: 2px; padding-bottom: 2px; }
+  #panel-review .study-mode-tabs { margin-bottom: 5px; }
+  #panel-review .study-auto-row { margin-bottom: 6px; }
+  .repeat-count-select {
+    min-height: 44px; border: 1.5px solid var(--border); border-radius: 8px;
+    background: var(--bg); color: var(--ink); font: 700 .8rem var(--font-kr);
+    padding: 5px 8px; cursor: pointer;
+  }
+  #panel-review .study-auto-row { display: flex; align-items: center; gap: 7px 10px; flex-wrap: wrap; }
+  #panel-review .study-auto-row .auto-lbl { flex: none; }
+  #panel-review .auto-advance-option, #panel-review .auto-correct-option, #panel-review .repeat-review-option {
+    display: inline-flex; align-items: center; gap: 5px; min-height: 44px;
+    font-size: .78rem; font-weight: 700; color: var(--ink-soft); white-space: nowrap;
+  }
+  #panel-review .auto-advance-option input,
+  #panel-review .auto-correct-option input { margin: 0; flex: none; }
+  #panel-review .repeat-review-option { margin-left: 2px; }
+  #panel-review .auto-seconds-select { min-height: 44px; }
+  @media (min-width: 700px) {
+    .topbar { padding-top: 10px; padding-bottom: 0; }
+  }
+  @media (max-width: 699px) {
+    .topbar { padding-top: 6px; padding-bottom: 0; }
+    .tabs { padding-top: 2px; padding-bottom: 3px; }
+    #panel-review > .subtab-row:first-child,
+    #review-scope-tabs { padding-top: 2px; padding-bottom: 3px; }
+  }
 </style>
 
 <div class="app" data-active-tab="review">
@@ -1485,7 +1577,6 @@
         <button class="subtab-btn" data-review="grammar" aria-selected="false" data-i18n="문법">문법</button>
       </div>
       <div class="subtab-row" id="review-scope-tabs" aria-label="복습 범위"></div>
-      <div class="p-subsection dialect-inline-toggle"><h4 data-i18n="베트남어 반복 듣기 횟수">베트남어 반복 듣기 횟수</h4><div id="repeat-toggle-review"></div></div>
       <div class="study-mode-tabs" id="study-mode-tabs" role="tablist">
         <button class="study-mode-btn" role="tab" data-mode="flash" aria-selected="false" data-i18n="플래시카드">플래시카드</button>
         <button class="study-mode-btn" role="tab" data-mode="look" aria-selected="false" data-i18n="보기 4지선다">보기 4지선다</button>
