@@ -4960,8 +4960,60 @@
       (l.subAttr ? ' data-goto-subattr="' + escapeAttr(l.subAttr) + '" data-goto-subval="' + escapeAttr(l.subVal) + '"' : '') +
       (l.talkNums ? ' data-goto-talknums="' + escapeAttr(l.talkNums.join(",")) + '"' : '') +
       (l.vocabRange ? ' data-goto-vr-start="' + escapeAttr(String(l.vocabRange.start)) + '" data-goto-vr-end="' + escapeAttr(String(l.vocabRange.end)) + '"' : '') +
+      (l.reviewScope ? ' data-goto-review-scope="' + escapeAttr(l.reviewScope) + '" data-goto-review-mode="' + escapeAttr(l.reviewMode || "order") + '"' : '') +
       (l.anchor ? ' data-goto-anchor="' + escapeAttr(l.anchor) + '"' : '') +
       '>' + TU("바로가기") + '</button>';
+  }
+  // 2026–27 class calendar. The first 16 study slots correspond to Watchtower vocabulary
+  // collections 6–24; the final cumulative-review card deliberately has no new collection.
+  var COURSE_SLOT_ORDER = [0, 1, 2, 3, -1.5, 4, 5, 6, 7, -2.5, 8, 9, -3.5, 10, 11, 12, 13, 14, 15, 16];
+  var COURSE_DATE_LABELS = {
+    0: "2026/10/10 - 1주", 1: "2026/10/17 - 2주", 2: "2026/10/24 - 3주", 3: "2026/10/31 - 4주",
+    4: "2026/11/14 - 5주", 5: "2026/11/21 - 6주", 6: "2026/11/28 - 7주", 7: "2026/12/12 - 8주",
+    8: "2026/12/19 - 9주", 9: "2027/1/2 - 10주", 10: "2027/1/9 - 11주", 11: "2027/1/16 - 12주",
+    12: "2027/1/23 - 13주", 13: "2027/1/30 - 14주", 14: "2027/2/6 - 15주", 15: "2027/2/13 - 16주"
+  };
+  var COURSE_BREAK_LABELS = {
+    "-1.5": "2026/11/7 베트남 자매 결혼식 방학",
+    "-2.5": "2026/12/5 천안 베트남어 순회대회 파이오니아 모임",
+    "-3.5": "2026/12/26 군산 한국어 순회대회"
+  };
+  function courseSlotIndex(key) { return COURSE_SLOT_ORDER.indexOf(Number(key)); }
+  function courseWatchtowerWeek(key) {
+    var index = courseSlotIndex(key);
+    return index >= 0 && index < 19 ? index + 6 : null;
+  }
+  function watchtowerRange(weekNumber) {
+    if (!weekNumber || !WATCHTOWER_VOCAB[weekNumber - 1]) return null;
+    var start = 0;
+    for (var i = 0; i < weekNumber - 1; i++) start += WATCHTOWER_VOCAB[i].words.length;
+    return { start: start, end: start + WATCHTOWER_VOCAB[weekNumber - 1].words.length };
+  }
+  function curriculumLinkForWeek(link, weekKey) {
+    if (!link || link.subAttr !== "vocab" || link.subVal !== "wt") return link;
+    if (Number(weekKey) === 16) return { tab: "review", reviewScope: "wt", reviewMode: "order" };
+    var range = watchtowerRange(courseWatchtowerWeek(weekKey));
+    if (!range) return null;
+    var adjusted = Object.assign({}, link);
+    adjusted.vocabRange = range;
+    return adjusted;
+  }
+  function courseWeekTitle(w) {
+    if (w.week === 16) return "총복습";
+    return COURSE_BREAK_LABELS[String(w.week)] || COURSE_DATE_LABELS[w.week] || (w.title ? T(w.title) : weekBadge(w.week));
+  }
+  function courseStudyNumber(weekKey) {
+    return Number(weekKey) >= 0 && Number(weekKey) <= 15 ? Number(weekKey) + 1 : null;
+  }
+  function curriculumItemText(it, weekKey) {
+    var text = T(it.text);
+    if (currentLang !== "ko") return text;
+    if (/^베트남어 파수대 어휘 50개 학습/.test(text)) {
+      if (Number(weekKey) === 16) return "베트남어 파수대 어휘 및 문장 복습";
+      var number = courseStudyNumber(weekKey);
+      if (number) return "베트남어 파수대 어휘 50개 학습 " + number + "주차";
+    }
+    return text;
   }
   function bindCurrGroupCards(root) {
     root.querySelectorAll(".group-card").forEach(function (card) {
@@ -4974,6 +5026,18 @@
     root.querySelectorAll(".curr-link-btn").forEach(function (b) {
       b.addEventListener("click", function (e) {
         e.stopPropagation();
+        if (b.dataset.gotoReviewScope) {
+          activateTab("review", false);
+          var reviewTab = document.querySelector('.subtab-btn[data-review="vocab"]');
+          if (reviewTab) reviewTab.click();
+          setTimeout(function () {
+            var scope = document.querySelector('.subtab-btn[data-review-scope="' + b.dataset.gotoReviewScope + '"]');
+            if (scope) scope.click();
+            var mode = document.querySelector('.study-mode-btn[data-mode="' + b.dataset.gotoReviewMode + '"]');
+            if (mode) mode.click();
+          }, 0);
+          return;
+        }
         var talkNums = b.dataset.gotoTalknums ? b.dataset.gotoTalknums.split(",").map(Number) : null;
         var vocabRange = (b.dataset.gotoVrStart !== undefined && b.dataset.gotoVrEnd !== undefined) ?
           { start: Number(b.dataset.gotoVrStart), end: Number(b.dataset.gotoVrEnd) } : null;
@@ -4991,7 +5055,7 @@
     var html = "";
     // Welcome card: collapsed by default, click the title to expand/collapse the body paragraphs.
     html += '<div class="curr-card curr-welcome-card" data-open="false">' +
-      '<button class="curr-welcome-toggle" aria-expanded="false"><h3>' + escapeHtml(T(CURR_WELCOME.title)) + '</h3>' + currChev() + '</button>' +
+      '<button class="curr-welcome-toggle" aria-expanded="false"><h3>' + escapeHtml("2026/10/3 " + T(CURR_WELCOME.title)) + '</h3>' + currChev() + '</button>' +
       '<div class="curr-welcome-body">';
     CURR_WELCOME.body.forEach(function (p) { html += '<p>' + escapeHtml(T(p)) + '</p>'; });
     html += '<div class="curr-phase-grid">';
@@ -5002,21 +5066,61 @@
       html += '</div>';
     });
     html += '</div>';
+    // The first week's homework belongs at the bottom of the Oct 3 welcome card.
+    var welcomeAssign = (typeof CURR_ASSIGNMENTS !== "undefined") ? CURR_ASSIGNMENTS.filter(function (a) { return a.week === 0; })[0] : null;
+    if (welcomeAssign) {
+      html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button><div class="curr-assign-body">';
+      welcomeAssign.days.forEach(function (d) {
+        html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
+        [[d.reviews || [], "review", "복습"], [d.previews || [], "preview", "예습"], [d.vocab || [], "vocab", "어휘"]].forEach(function (group) {
+          group[0].forEach(function (it) {
+            html += '<div class="curr-assign-row"><span class="curr-assign-kind ' + group[1] + '">' + TU(group[2]) + '</span><span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, 0)) + '</div>';
+          });
+        });
+        html += '</div>';
+      });
+      html += '</div></div>';
+    }
     html += '</div></div>';
 
-    CURR_WEEKS.forEach(function (w) {
+    var courseWeeks = CURR_WEEKS.slice().sort(function (a, b) { return courseSlotIndex(a.week) - courseSlotIndex(b.week); });
+    courseWeeks.forEach(function (w, wi) {
       html += '<div class="group-card' + (w.vacation ? " curr-vacation-card" : "") + '" data-open="' + (w.week === 0 ? "true" : "false") + '" data-syl="wk' + w.week + '">' +
-        '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + (w.title ? escapeHtml(T(w.title)) : weekBadge(w.week)) + '</span>' +
+        '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(courseWeekTitle(w)) + '</span>' +
         (w.note ? '<span class="curr-week-note">' + escapeHtml(T(w.note)) + '</span>' : '') + '</span>' +
         currChev() + '</button>' +
         '<div class="group-body"><div class="curr-item-list">';
       w.items.forEach(function (it) {
-        html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(T(it.text)) +
+        html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, w.week)) +
           (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') + '</div>' +
-          currLinkBtn(it.link) + '</div>';
+          currLinkBtn(curriculumLinkForWeek(it.link, w.week)) + '</div>';
       });
       html += '</div>';
-      var assign = (typeof CURR_ASSIGNMENTS !== "undefined") ? CURR_ASSIGNMENTS.filter(function (a) { return a.week === w.week; })[0] : null;
+      // Homework is shown one calendar slot before the class it prepares for.
+      var nextSlot = courseWeeks[wi + 1];
+      var assign = (typeof CURR_ASSIGNMENTS !== "undefined" && nextSlot) ? CURR_ASSIGNMENTS.filter(function (a) { return a.week === nextSlot.week; })[0] : null;
+      if (assign) {
+        // Ensure every weekday explicitly has both a review and a preview. Existing authored
+        // assignments are retained; only an empty category receives a relevant course-item link.
+        assign = Object.assign({}, assign, { days: assign.days.map(function (d, dayIndex) {
+          var copy = Object.assign({}, d);
+          copy.reviews = (d.reviews || []).slice();
+          copy.previews = (d.previews || []).slice();
+          if (!copy.reviews.length && w.items.length) copy.reviews.push(w.items[dayIndex % w.items.length]);
+          if (!copy.previews.length && nextSlot.items.length) copy.previews.push(nextSlot.items[dayIndex % nextSlot.items.length]);
+          if (!copy.reviews.length) copy.reviews.push({ text: { ko: "이번 주 학습 내용 복습", zh: "複習本週學習內容", en: "Review this week’s study", ja: "今週の学習内容を復習" }, link: { tab: "review" } });
+          if (!copy.previews.length) copy.previews.push({ text: { ko: "다음 주 학습 내용 예습", zh: "預習下週學習內容", en: "Preview next week’s study", ja: "来週の学習内容を予習" }, link: { tab: "curriculum" } });
+          return copy;
+        }) });
+        // Week 16 reviews the actual Week 15 material across Mon–Fri rather than repeating one
+        // generic "Week 15 review" instruction each day.
+        if (w.week === 15) {
+          assign.days.forEach(function (d, dayIndex) {
+            d.reviews = w.items.filter(function (_, itemIndex) { return itemIndex % assign.days.length === dayIndex; });
+            if (!d.reviews.length && w.items.length) d.reviews = [w.items[dayIndex % w.items.length]];
+          });
+        }
+      }
       if (assign) {
         html += '<div class="curr-assign-card" data-open="false">' +
           '<button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button>' +
@@ -5027,19 +5131,19 @@
             html += '<div class="curr-assign-row">' +
               '<span class="curr-assign-kind review">' + TU("복습") + '</span>' +
               '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
-              currLinkBtn(it.link) + '</div>';
+              currLinkBtn(curriculumLinkForWeek(it.link, nextSlot.week)) + '</div>';
           });
           (d.previews || []).forEach(function (it) {
             html += '<div class="curr-assign-row">' +
               '<span class="curr-assign-kind preview">' + TU("예습") + '</span>' +
               '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
-              currLinkBtn(it.link) + '</div>';
+              currLinkBtn(curriculumLinkForWeek(it.link, nextSlot.week)) + '</div>';
           });
           (d.vocab || []).forEach(function (it) {
             html += '<div class="curr-assign-row">' +
               '<span class="curr-assign-kind vocab">' + TU("어휘") + '</span>' +
               '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
-              currLinkBtn(it.link) + '</div>';
+              currLinkBtn(curriculumLinkForWeek(it.link, nextSlot.week)) + '</div>';
           });
           html += '</div>';
         });
@@ -5778,6 +5882,13 @@
   // 다시 주차별로 묶어 그 주차 카드만 펼쳐서 보여준다(교과/주간 수행 과제 바로가기가
   // vocabRange:{start:(week-1)*50, end:week*50}로 특정 주차를 가리키는 방식과 맞춘 것).
   function renderVocabWatchtower(root, q) {
+    // The first five articles predate this class. From source article 6 onward, labels follow
+    // the actual class calendar, including the three scheduled breaks.
+    function watchtowerDisplayLabel(sourceWeek) {
+      if (sourceWeek <= 5) return "";
+      var labels = { 6: "1주차", 7: "2주차", 8: "3주차", 9: "4주차", 10: "방학", 11: "5주차", 12: "6주차", 13: "7주차", 14: "방학", 15: "8주차", 16: "9주차", 17: "방학", 18: "10주차", 19: "11주차", 20: "12주차", 21: "13주차", 22: "14주차", 23: "15주차", 24: "16주차" };
+      return labels[sourceWeek] || sourceWeek + TU("주차");
+    }
     var weeks = WATCHTOWER_VOCAB;
     if (vocabFocus && vocabFocus.mode === "wt") {
       var fullFlat = [];
@@ -5810,8 +5921,10 @@
         readAllEntries.push([w.vi, T(w.mean)]);
         readAllEntries.push([w.example, w.example_mean ? T(w.example_mean) : ""]);
       });
+      var weekLabel = watchtowerDisplayLabel(wk.week);
       html += '<div class="group-card" data-open="' + openAll + '" data-syl="wt' + wk.week + '">' +
-        '<div class="group-head-row"><button class="group-head"><span><span class="syl">' + wk.week + TU("주차") + '</span> ' +
+        '<div class="group-head-row"><button class="group-head"><span>' +
+        (weekLabel ? '<span class="syl">' + escapeHtml(weekLabel) + '</span> ' : '') +
         '<span class="cnt">' + escapeHtml(T(wk.date_range)) + ' · ' + wk.words.length + TU("개 단어") + '</span></span>' +
         '<span class="chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></button>' +
         readAllButtonHtml(readAllEntries) + '</div>' +
