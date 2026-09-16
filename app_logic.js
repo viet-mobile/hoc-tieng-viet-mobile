@@ -5473,8 +5473,13 @@
     viCites.forEach(function (c, i) { pairs.push({ vi: c, kr: meaningCites[i] }); });
     return pairs;
   }
+  function stripReviewListMarker(value) {
+    // Only a leading list label followed by whitespace (or the end) is removed.
+    // Decimal numbers, abbreviations and punctuation inside a sentence remain intact.
+    return String(value || "").replace(/^\s*(?:(?:[0-9]+|[A-Za-z]|[ㄱ-ㅎㅏ-ㅣᄀ-ᇿ])\.(?:\s+|$))+/u, "").trim();
+  }
   function addSentencePairs(target, vietnamese, meaning) {
-    sentencePairs(vietnamese, meaning).forEach(function (pair) {
+    sentencePairs(stripReviewListMarker(vietnamese), stripReviewListMarker(meaning)).forEach(function (pair) {
       if (pair.vi) target.push(pair);
     });
   }
@@ -6767,7 +6772,9 @@
       scope = scope || "all";
       studyState.tabKey = key;
       studyState.scope = scope;
-      studyState.pool = poolOverride || getPool(key, scope);
+      studyState.pool = dedupeByVi((poolOverride || getPool(key, scope)).map(function (item) {
+        return { vi: stripReviewListMarker(item.vi), kr: stripReviewListMarker(item.kr) };
+      }));
       studyState.score = { correct: 0, total: 0 };
       studyState.current = null;
       reviewBtns.forEach(function (b) { b.setAttribute("aria-selected", b.dataset.review === key ? "true" : "false"); });
