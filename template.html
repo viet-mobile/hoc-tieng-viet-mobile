@@ -1255,6 +1255,9 @@
   @media (max-width: 380px) {
     body[data-app-lang="en"] .tab-btn { font-size: .64rem; letter-spacing: -.02em; }
   }
+  /* The first subtab row starts directly under the primary navigation in every section. */
+  .app main { padding-top: 0; }
+  .panel > .subtab-row:first-child { padding-top: 2px; }
 </style>
 
 <div class="app" data-active-tab="review">
