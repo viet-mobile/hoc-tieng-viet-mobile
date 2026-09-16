@@ -17,6 +17,7 @@ from curriculum_data import WELCOME_TEXT, COURSE_PHASES, WEEK16_TOC
 from culture_data import CULTURE_ARTICLES
 from offer_talks_data import OFFER_TALKS, KINGDOM_SONGS, PRAYER_TEMPLATE
 from neighbor_conversations_data import NEIGHBOR_CONVERSATIONS
+from lff_data import LFF_CONVERSATIONS
 from bible_names_data import BIBLE_NAMES
 from basic_words_list import BASIC_WORD_GROUPS
 from antonym_data import ANTONYM_PAIRS
@@ -100,6 +101,7 @@ const OFFER_TALKS = {js_json(OFFER_TALKS)};
 const KINGDOM_SONGS = {js_json(KINGDOM_SONGS)};
 const PRAYER_TEMPLATE = {js_json(PRAYER_TEMPLATE)};
 const NEIGHBOR_CONVERSATIONS = {js_json(NEIGHBOR_CONVERSATIONS)};
+const LFF_CONVERSATIONS = {js_json(LFF_CONVERSATIONS)};
 const BIBLE_NAMES = {js_json(BIBLE_NAMES)};
 const BASIC_WORD_GROUPS = {js_json(BASIC_WORD_GROUPS)};
 const ANTONYM_PAIRS = {js_json(ANTONYM_PAIRS)};

@@ -1,0 +1,61 @@
+  // Split at the Vietnamese speaker's sentence boundary, not at an arbitrary visual line.
+  // This gives every sentence its own play button and lets review modes quiz one utterance at a
+  // time.  Translations are normally sentence-for-sentence; where a source language combines
+  // sentences differently, its nearest natural clauses are kept together and distributed in the
+  // same order so each Vietnamese sentence still has one matching translation unit.
+  // A run of 2+ dots (typed as "...", ".." or the single "…" glyph) marks words elided from a
+  // quotation -- it's never a sentence boundary -- so it must be hidden from the splitter, not
+  // treated as a terminal ".". Stash it before splitting on real punctuation, restore after.
+  function stashEllipses(text, bag) {
+    return text.replace(/\.{2,}|\u2026/g, function (m) { bag.push(m); return "\u0000" + (bag.length - 1) + "\u0000"; });
+  }
+  function unstashEllipses(text, bag) {
+    return text.replace(/\u0000(\d+)\u0000/g, function (_, i) { return bag[Number(i)] || ""; });
+  }
+  // A trailing citation ("— 2 Ti-mô-thê 3:16.", "—디모데 후서 3:16.") or a stray remainder made up
+  // only of a leftover closing quote/bracket isn't a sentence of its own -- both are typographic
+  // tails of the sentence right before them, so fold them back in rather than pairing them up on
+  // their own (that's what used to scramble the vi/translation alignment on quote+citation lines).
+  function mergeStrayFragments(parts) {
+    var merged = [];
+    parts.forEach(function (p) {
+      var isCitation = /^[\u200b\s]*[—–]\s*\S/.test(p);
+      var isPunctOnly = merged.length && /^[”"'’)）\].!?,;:\u3002\uff01\uff1f]+$/.test(p);
+      if (merged.length && (isCitation || isPunctOnly)) {
+        merged[merged.length - 1] += (isPunctOnly ? "" : " ") + p;
+      } else {
+        merged.push(p);
+      }
+    });
+    return merged;
+  }
+  function splitSentences(text) {
+    var bag = [];
+    var stashed = stashEllipses(String(text || ""), bag);
+    var parts = stashed.match(/[^.!?\u3002\uff01\uff1f]+[.!?\u3002\uff01\uff1f]*|[^.!?\u3002\uff01\uff1f]+$/g) || [];
+    parts = parts.map(function (part) { return unstashEllipses(part, bag).trim(); }).filter(Boolean);
+    return mergeStrayFragments(parts);
+  }
+  function sentencePairs(vietnamese, meaning) {
+    var viParts = splitSentences(vietnamese);
+    if (viParts.length < 2) return [{ vi: String(vietnamese || "").trim(), kr: String(meaning || "").trim() }];
+    var meaningParts = splitSentences(meaning);
+    if (meaningParts.length === viParts.length) {
+      return viParts.map(function (vi, i) { return { vi: vi, kr: meaningParts[i] }; });
+    }
+    // The translation splits/joins sentences differently than the Vietnamese does (common with
+    // Bible-quote-plus-citation lines). Group the translation's OWN sentences proportionally across
+    // the Vietnamese sentences, in order -- this only ever merges whole translated sentences
+    // together, never re-cuts one at a comma, so every group boundary still falls on a real
+    // sentence break in the translation rather than a guessed clause split (which used to scramble
+    // the pairing on exactly these quote+citation lines).
+    if (!meaningParts.length) meaningParts = [String(meaning || "").trim()];
+    var pairs = [], start = 0;
+    viParts.forEach(function (vi, i) {
+      var end = Math.round((i + 1) * meaningParts.length / viParts.length);
+      if (end <= start && start < meaningParts.length) end = start + 1;
+      pairs.push({ vi: vi, kr: meaningParts.slice(start, end).join(" ") || String(meaning || "").trim() });
+      start = end;
+    });
+    return pairs;
+  }

@@ -20,18 +20,18 @@ NEIGHBOR_CONVERSATIONS = [
       {
         "who": "PUBLISHER",
         "vi": "Một số người tin rằng người tốt sẽ lên thiên đàng sau khi qua đời. Anh có tin như thế không?",
-        "ko": "우리의 미래가 어떨 거라고 생각하십니까? 더 좋아질까요, 나빠질까요, 아니면 그대로일까요?",
-        "zh": "你認為好人將來會怎樣？",
-        "en": "When you consider the future, do you think that things are likely to improve, become worse, or stay the same?",
-        "ja": "善良な人は死んだら天国に行く，と信じている人もいますが，あなたもそう思われますか。"
+        "ko": "어떤 사람들은 선한 사람이 죽은 뒤 하늘에 간다고 믿습니다. 선생님께서도 그렇게 믿으시는지요?",
+        "zh": "有些人相信好人死後會上天堂。你也相信是這樣嗎？",
+        "en": "Some people believe that good people will go to heaven after they die. Do you believe that too?",
+        "ja": "善良な人は死後，天国に行くと信じている人もいます。あなたもそう信じていますか。"
       },
       {
         "who": "HOUSEHOLDER",
         "vi": "Ừ. Tôi tin là người tốt sẽ lên thiên đàng.",
-        "ko": "더 좋아지겠지요. 사실 저는 하늘에 가서 주님 곁에 있을 때를 기다리고 있습니다.",
-        "zh": "世界看來沒有什麼希望了，不過，我相信好人一定會有好報，可以上天堂享福。",
-        "en": "I feel that things will improve. I look forward to going to heaven to be with the Lord.",
-        "ja": "ええ，わたしもそう思っています。"
+        "ko": "네. 저는 선한 사람이 하늘에 간다고 믿습니다.",
+        "zh": "是的。我相信好人會上天堂。",
+        "en": "Yes. I believe that good people will go to heaven.",
+        "ja": "ええ，善良な人は天国に行くと信じています。"
       },
       {
         "who": "PUBLISHER",
@@ -67,7 +67,7 @@ NEIGHBOR_CONVERSATIONS = [
       },
       {
         "who": "PUBLISHER",
-        "vi": "Đó là trách nhiệm được nhắc đến nơi Khải huyền 5:10. Câu đó cho biết: “Ngài [Chúa Giê-su] làm cho họ thành một nước và thành các thầy tế lễ cho Đức Chúa Trời chúng ta, họ sẽ làm vua cai trị trái đất”. Anh Dương thấy những người lên trời phải gánh vác trách nhiệm nào?",
+        "vi": "Đó là trách nhiệm được nhắc đến nơi Khải huyền 5:10. Câu đó cho biết: “Ngài làm cho họ thành một nước và thành các thầy tế lễ cho Đức Chúa Trời chúng ta, họ sẽ làm vua cai trị trái đất”. Anh thấy những người lên trời phải gánh vác trách nhiệm nào?",
         "ko": "그 책임에 관해 계시록 5:10에서는 이렇게 알려 줍니다. “당신은 그들이 우리 하느님의 왕국과 제사장이 되게 하셨으니, 그들은 왕으로서 땅을 통치하게 될 것입니다.” 여기 보시면, 하늘에 가는 사람들은 어떤 책임을 맡게 된다고 했나요?",
         "zh": "就是啟示錄5:10提到的工作。這節經文說：「［耶穌］讓他們組成王國，做我們上帝的祭司。他們要做君王，統治大地。」羅先生，你從經文看出，那些到天上去的人會做什麼呢？",
         "en": "It’s the responsibility mentioned here in Revelation 5:10. That verse says: “You [Jesus] made them to be a kingdom and priests to our God, and they are to rule as kings over the earth.” Did you notice, Robert, what responsibility those who go to heaven will shoulder?",
@@ -456,7 +456,7 @@ NEIGHBOR_CONVERSATIONS = [
       {
         "who": "HOUSEHOLDER",
         "vi": "Tôi nghe nói Nhân Chứng Giê-hô-va không phải là tín đồ đạo Đấng Ki-tô. Các anh không tin Đức Thánh Thần.",
-        "ko": "여호와의 증인은 그리스도인이 아니라는 말을 들었습니다. 증인들은 성신을 믿지 않는다면서요?",
+        "ko": "여호와의 증인은 그리스도인이 아니라는 말을 들었습니다. 증인들은 성신님을 믿지 않는다면서요?",
         "zh": "我聽說你們耶和華見證人不是基督徒，因為你們不相信聖靈。",
         "en": "I have heard that Jehovah’s Witnesses are not Christians. You don’t believe in the Holy Ghost.",
         "ja": "エホバの証人はクリスチャンではないと聞いています。あなたたちは聖霊を信じていないですよね。"
@@ -464,18 +464,18 @@ NEIGHBOR_CONVERSATIONS = [
       {
         "who": "PUBLISHER",
         "vi": "Trước hết, tôi xin khẳng định chúng tôi là tín đồ đạo Đấng Ki-tô. Sáng nay tôi đến gặp anh cũng vì niềm tin nơi Chúa Giê-su. Suy cho cùng, ngài là đấng bảo môn đồ phải đi rao giảng. Anh nghĩ gì về Đức Thánh Thần?",
-        "ko": "선생님께 저희가 그리스도인이라는 사실을 먼저 말씀드리고 싶네요. 제가 오늘 오전에 이렇게 선생님 댁을 방문한 것도 예수 그리스도를 믿기 때문입니다. 제자들에게 전도하라고 명령하신 분이 바로 그분이니까요. 그런데 좀 전에 무슨 뜻으로 “성신”이라고 하신 건지 여쭤 봐도 될까요?",
+        "ko": "선생님께 저희가 그리스도인이라는 사실을 먼저 말씀드리고 싶네요. 제가 오늘 오전에 이렇게 선생님 댁을 방문한 것도 예수 그리스도를 믿기 때문입니다. 제자들에게 전도하라고 명령하신 분이 바로 그분이니까요. 그런데 좀 전에 무슨 뜻으로 “성신님”이라고 하신 건지 여쭤 봐도 될까요?",
         "zh": "不，我們真的是基督徒。如果我不相信耶穌基督，今天早上就不會到您這裡來了，因為耶穌曾經吩咐他的門徒要向人傳道。不過，我想先聽聽您的意見。在您心目中，聖靈到底是什麼呢？",
         "en": "First, let me assure you that we are Christians. My belief in Jesus Christ has brought me to your door this morning. After all, he is the One who commands his followers to preach. But may I ask, just what do you mean by “Holy Ghost”?",
         "ja": "まず，わたしたちはクリスチャンですので，ご安心ください。イエス･キリストを信じているので，今朝，このようにお宅を訪ねています。イエスは弟子たちに，伝道するようにと命じておられましたね。ところで，ご主人は聖霊をどのようなものとして理解しておられますか。"
       },
       {
         "who": "HOUSEHOLDER",
-        "vi": "Đức Thánh Thần là ngôi thứ ba trong Chúa Ba Ngôi, Đấng giúp đỡ mà Chúa Giê-su hứa sai đến với chúng ta. Đấng ấy rất quan trọng với tôi. Tôi muốn cảm nhận được thần khí thánh trong đời sống.",
-        "ko": "성령을 가리키는 말이에요. 삼위일체의 세 번째 위 말이죠. 예수께서는 우리를 돕기 위해 성령을 보내 주겠다고 약속하셨죠. 성령은 제게 매우 중요합니다. 제 생활에 성령이 역사하시기를 원하거든요.",
-        "zh": "我相信聖靈是三位一體神當中的第三位，也就是耶穌答應要派來幫助我們的保惠師。對我來說，聖靈非常重要。我希望一生都能感受到聖靈與我同在。",
-        "en": "I mean the holy spirit, the third person in the Trinity, the helper that Jesus promised to send to us. That helper is very important to me. I want to feel the presence of the holy spirit in my life.",
-        "ja": "聖霊は，三位一体の第3の位格だと理解していますよ。イエスが，遣わすと約束してくださった助け手なので，その役割は非常に大切だと考えています。生活の中で，聖霊が共にいてくださることを実感したいと思っています。"
+        "vi": "Đức Thánh Thần là ngôi thứ ba trong Chúa Ba Ngôi. Ngài là Đấng giúp đỡ mà Chúa Giê-su hứa sai đến với chúng ta. Đấng ấy rất quan trọng với tôi. Tôi muốn cảm nhận được thần khí thánh trong đời sống.",
+        "ko": "성신님은 삼위일체의 세 번째 위입니다. 예수께서는 우리를 돕기 위해 성신님을 보내 주겠다고 약속하셨죠. 성신님은 제게 매우 중요합니다. 제 생활에 성신님이 역사하시기를 원하거든요.",
+        "zh": "聖靈是三位一體中的第三位。聖靈是耶穌答應要派來幫助我們的保惠師。對我來說，聖靈非常重要。我希望一生都能感受到聖靈與我同在。",
+        "en": "The Holy Ghost is the third person in the Trinity. The Holy Ghost is the helper that Jesus promised to send to us. The Holy Ghost is very important to me. I want to feel the presence of the Holy Ghost in my life.",
+        "ja": "聖霊は三位一体の第3の位格です。聖霊は，イエスが私たちを助けるために遣わすと約束してくださった助け手です。聖霊は私にとってとても大切です。生活の中で聖霊の存在を感じたいと思っています。"
       },
       {
         "who": "PUBLISHER",

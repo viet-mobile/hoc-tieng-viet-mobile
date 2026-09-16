@@ -1896,7 +1896,16 @@
   "사돈어른(바깥사돈)": { "zh": "親家公（男方親家）", "en": "Male co-parent-in-law", "ja": "男性側の親家（サドンの夫）" },
   "안사돈": { "zh": "親家母（女方親家）", "en": "Female co-parent-in-law", "ja": "女性側の親家（サドンの妻）" },
   "제3자에게 말할 때": { "zh": "對第三者提起時", "en": "When mentioning them to someone else", "ja": "第三者に話すとき" },
-  "직접 호칭할 때": { "zh": "直接稱呼時", "en": "When addressing them directly", "ja": "直接呼びかけるとき" }
+  "직접 호칭할 때": { "zh": "直接稱呼時", "en": "When addressing them directly", "ja": "直接呼びかけるとき" },
+  "행복한 삶을 영원히": { "zh": "永遠享受美好的生命", "en": "Enjoy Life Forever", "ja": "いつまでも幸せに暮らせます" },
+  "\"행복한 삶을 영원히 누리십시오!\" 성경 공부 과정의 본문 문장이에요. 각 과의 토론 질문과 본문을 실제 발행물 그대로 5개 언어로 대조해 두었어요. 동영상 안내와 \"더 찾아보기\" 자료는 포함하지 않아요.": {
+    "zh": "「永遠享受美好的生命！」聖經課程的正文。每一課的討論問題和正文都依照原文，以5種語言對照收錄。不包含影片提示和「更多精彩內容」的資料。",
+    "en": "The body text of the \"Enjoy Life Forever!\" Bible course. Each lesson's discussion questions and text are given exactly as published, aligned across 5 languages. Video cues and the \"Explore\" section are not included.",
+    "ja": "「いつまでも幸せに暮らせます！」聖書研究コースの本文です。各課の話し合いの質問と本文は、実際の出版物どおりに5つの言語で対照してあります。動画の案内と「見てみよう」の資料は含まれていません。"
+  },
+  "부": { "zh": "部分", "en": "Part", "ja": "部" },
+  "베트남어 문장이나 뜻으로 검색": { "zh": "用越南語句子或意思搜尋", "en": "Search by Vietnamese sentence or meaning", "ja": "ベトナム語の文や意味で検索" },
+  "나는 준비가 되었는가?": { "zh": "我準備好了嗎？", "en": "Am I Ready?", "ja": "準備はできていますか" }
 };
   function TU(ko) {
     if (!ko) return ko;
@@ -3190,6 +3199,7 @@
       reftable: document.getElementById("wizard-reftable-pane"),
       talks: document.getElementById("wizard-talks-pane"),
       neighbor: document.getElementById("wizard-neighbor-pane"),
+      lff: document.getElementById("wizard-lff-pane"),
     };
     var btns = document.querySelectorAll(".subtab-btn[data-wizard]");
     if (!btns.length || !panes.main) return;
@@ -3202,6 +3212,7 @@
     });
     renderCurrTalks();
     renderCurrNeighbor();
+    renderCurrLff();
   })();
 
   /* ================= WIZARD ================= */
@@ -4994,8 +5005,8 @@
     html += '</div></div>';
 
     CURR_WEEKS.forEach(function (w) {
-      html += '<div class="group-card" data-open="' + (w.week === 1 ? "true" : "false") + '" data-syl="wk' + w.week + '">' +
-        '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + weekBadge(w.week) + '</span>' +
+      html += '<div class="group-card' + (w.vacation ? " curr-vacation-card" : "") + '" data-open="' + (w.week === 0 ? "true" : "false") + '" data-syl="wk' + w.week + '">' +
+        '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + (w.title ? escapeHtml(T(w.title)) : weekBadge(w.week)) + '</span>' +
         (w.note ? '<span class="curr-week-note">' + escapeHtml(T(w.note)) + '</span>' : '') + '</span>' +
         currChev() + '</button>' +
         '<div class="group-body"><div class="curr-item-list">';
@@ -5151,6 +5162,117 @@
   function neighborWhoLabel(who) {
     return who === "PUBLISHER" ? TU("전도인") : TU("집주인");
   }
+
+  // Split at the Vietnamese speaker's sentence boundary, not at an arbitrary visual line.
+  // This gives every sentence its own play button and lets review modes quiz one utterance at a
+  // time.  Translations are normally sentence-for-sentence; where a source language combines
+  // sentences differently, its nearest whole sentences are grouped together and distributed in
+  // the same order so each Vietnamese sentence still has one matching translation unit.
+  //
+  // Bible citations get special handling so a plain "."-based split never has to guess at them:
+  //  - "(Doc Gie-re-mi 29:11, 12).", "(Cong vu 17:11)" -- a parenthetical citation is one atomic
+  //    unit (opening paren to closing paren, plus a trailing period right after it if there is
+  //    one); nothing inside it -- including its own commas -- is ever a split point.
+  //  - "- 2 Ti-mo-the 3:16.", "- Timothe hau thu 3:16." -- a dash citation with a chapter:verse
+  //    number runs from the dash to the next period and is always its own separate sentence,
+  //    split out from whatever precedes the dash (never merged into it), matching how these are
+  //    laid out one per line in the source. (Requires a chapter:verse digit pattern so an
+  //    ordinary emphatic dash elsewhere in a sentence is never mistaken for a citation.)
+  //
+  // Two independent stash channels (distinct literal marker tags, chosen to never appear in real
+  // prose) so a paren-citation placeholder can never collide with -- and get wrongly restored
+  // from -- the unrelated ellipsis stash when both land in the same chunk of text.
+  function stashPattern(text, re, bag, tag) {
+    return text.replace(re, function (m) { bag.push(m); return tag + (bag.length - 1) + tag; });
+  }
+  function unstashPattern(text, bag, tag) {
+    var re = new RegExp(tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(\\d+)" + tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g");
+    return text.replace(re, function (_, i) { return bag[Number(i)] || ""; });
+  }
+  function splitPlain(text, parenBag) {
+    var ellBag = [];
+    var decimalBag = [];
+    var stashed = stashPattern(text, /\.{2,}|…/g, ellBag, "");
+    // A period between digits is a Vietnamese thousands/decimal separator (2.500, 144.000),
+    // never a sentence boundary. Stash the complete number before looking for final periods.
+    stashed = stashPattern(stashed, /\d+(?:\.\d+)+/g, decimalBag, "");
+    var parts = stashed.match(/[^.!?。！？]+[.!?。！？”"'’)）\]]+|[^.!?。！？]+$/g) || [];
+    return parts.map(function (p) {
+      return unstashPattern(unstashPattern(unstashPattern(p, decimalBag, ""), ellBag, ""), parenBag, "").trim();
+    }).filter(Boolean);
+  }
+  // A delimiter run may be followed immediately by closing quote/bracket characters that are
+  // part of the SAME sentence-final punctuation (e.g. a quoted question ending in `?".`) -- the
+  // regex above consumes those together with the delimiter(s) that end the sentence.
+  function splitSentences(text) {
+    var s = String(text || "");
+    var parenBag = [];
+    s = stashPattern(s, /\([^()]*\)\.?/g, parenBag, "");
+    var out = [];
+    // Split around dash-citations: even indices are plain text, odd indices are the citations
+    // themselves (String.split with a capturing group keeps the matched groups in the result).
+    var chunks = s.split(/([​\s]*[—–][^.]*\d+:\d+[^.]*\.)/);
+    chunks.forEach(function (chunk, i) {
+      if (i % 2 === 1) {
+        var citation = unstashPattern(chunk.replace(/^[​\s]+/, ""), parenBag, "").trim();
+        if (citation) out.push(citation);
+        return;
+      }
+      splitPlain(chunk, parenBag).forEach(function (p) { if (p) out.push(p); });
+    });
+    return out;
+  }
+  function isDashCitation(s) {
+    return /^[—–]/.test(s);
+  }
+  function sentencePairs(vietnamese, meaning) {
+    var viParts = splitSentences(vietnamese);
+    if (viParts.length < 2) return [{ vi: String(vietnamese || "").trim(), kr: String(meaning || "").trim() }];
+    var meaningParts = splitSentences(meaning);
+
+    // A trailing dash-citation is always exactly one sentence in every language (the "— Book
+    // ch:vs." shape never itself splits), so peel off any matching citation tail from both sides
+    // and pair those 1:1 up front. Otherwise a citation-count mismatch would throw off the
+    // proportional alignment of the actual content sentences before it.
+    var viCites = [], meaningCites = [];
+    while (
+      viParts.length && meaningParts.length &&
+      isDashCitation(viParts[viParts.length - 1]) && isDashCitation(meaningParts[meaningParts.length - 1])
+    ) {
+      viCites.unshift(viParts.pop());
+      meaningCites.unshift(meaningParts.pop());
+    }
+
+    var pairs;
+    if (!viParts.length) {
+      pairs = [];
+    } else if (meaningParts.length === viParts.length) {
+      pairs = viParts.map(function (vi, i) { return { vi: vi, kr: meaningParts[i] }; });
+    } else {
+      // The translation splits/joins sentences differently than the Vietnamese does. Group the
+      // translation's OWN sentences proportionally across the Vietnamese sentences, in order --
+      // this only ever merges whole translated sentences together, never re-cuts one at a comma,
+      // so every group boundary still falls on a real sentence break in the translation rather
+      // than a guessed clause split.
+      var src = meaningParts.length ? meaningParts : [String(meaning || "").trim()];
+      pairs = [];
+      var start = 0;
+      viParts.forEach(function (vi, i) {
+        var end = Math.round((i + 1) * src.length / viParts.length);
+        if (end <= start && start < src.length) end = start + 1;
+        pairs.push({ vi: vi, kr: src.slice(start, end).join(" ") || String(meaning || "").trim() });
+        start = end;
+      });
+    }
+    viCites.forEach(function (c, i) { pairs.push({ vi: c, kr: meaningCites[i] }); });
+    return pairs;
+  }
+  function addSentencePairs(target, vietnamese, meaning) {
+    sentencePairs(vietnamese, meaning).forEach(function (pair) {
+      if (pair.vi) target.push(pair);
+    });
+  }
+
   function renderCurrNeighbor() {
     var root = document.getElementById("curr-neighbor-root");
     if (!root) return;
@@ -5165,16 +5287,22 @@
 
     var html = "";
     NEIGHBOR_CONVERSATIONS.forEach(function (conv, ci) {
-      var readPairs = conv.lines.map(function (l) { return [l.vi, T(l)]; });
+      var lineUnits = [];
+      conv.lines.forEach(function (line) {
+        sentencePairs(line.vi, T(line)).forEach(function (pair) {
+          lineUnits.push({ who: line.who, vi: pair.vi, kr: pair.kr });
+        });
+      });
+      var readPairs = lineUnits.map(function (line) { return [line.vi, line.kr]; });
       html += '<div class="group-card" data-open="' + (openSyls["nb" + ci] ? "true" : "false") + '" data-syl="nb' + ci + '">' +
         '<div class="group-head-row"><button class="group-head"><span><span class="syl">' + (ci + 1) + '.</span> <span class="cnt">' + escapeHtml(T(conv.title)) + '</span></span>' +
         currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
         '<div class="group-body"><div class="talk-lines">';
-      conv.lines.forEach(function (l) {
+      lineUnits.forEach(function (l) {
         html += '<div class="talk-line"><span class="talk-who">' + escapeHtml(neighborWhoLabel(l.who)) + '</span>' +
           '<div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
           '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-          '<div class="talk-kr">' + escapeHtml(T(l)) + '</div></div></div>';
+          '<div class="talk-kr">' + escapeHtml(l.kr) + '</div></div></div>';
       });
       html += '</div></div></div>';
     });
@@ -5182,6 +5310,219 @@
     bindCurrGroupCards(root);
     bindCurrSpeakBtns(root);
   }
+
+  // "행복한 삶을 영원히" (Enjoy Life Forever!) -- LFF_CONVERSATIONS holds the body-text sentences of
+  // lessons 1-60 (plus the 4 part-review docs and the closing "Am I Ready?" doc), verbatim in all
+  // 5 languages, sourced from wol.jw.org (video call-outs and the trailing "더 찾아보기"/EXPLORE
+  // section already excluded during data extraction). No "who" speaker field (unlike 이웃 사람과의
+  // 대화) since this is study-course body text, not a two-party dialogue.
+  function lffRecordLabel(rec) {
+    if (rec.kind === "lesson") return "BÀI " + (rec.num < 10 ? "0" + rec.num : String(rec.num));
+    if (rec.kind === "review") return TU("복습");
+    return "";
+  }
+  function lffPartLabel(partNumber) {
+    if (currentLang === "zh") return "第" + partNumber + "部分";
+    if (currentLang === "en") return "Part " + partNumber;
+    if (currentLang === "ja") return "第" + partNumber + "部";
+    return partNumber + "부";
+  }
+  // A few source paragraphs contain a Bible-reading cue inside the explanatory paragraph.
+  // Keep the cue as its own bilingual line, so the explanation, quotation, reference and the
+  // following thought are shown in the intended order in every language mode.
+  function lffDisplayLines(rec) {
+    var out = [];
+    rec.lines.forEach(function (line) {
+      if (line.vi.indexOf('Kinh Thánh hứa trong tương lai “sẽ không còn sự chết') === 0) {
+        out.push(
+          { vi: 'Kinh Thánh hứa trong tương lai “sẽ không còn sự chết, than van, khóc lóc hay đau đớn nữa”.', ko: '성경은 우리의 미래에 대해 이렇게 알려 줍니다. “더 이상 죽음이 없고, 슬픔과 부르짖음과 고통도 더는 없을 것이다.”', zh: '聖經說，將來「不再有死亡，也不再有哀痛、呼號、痛苦」。', en: 'The Bible describes a future time when “death will be no more, neither will mourning nor outcry nor pain be anymore.”', ja: '聖書によると，将来「死はなくなり，悲しみも嘆きも苦痛もなくなります」。' },
+          { vi: '(Đọc Khải huyền 21:4).', ko: '(요한 계시록 21:4 을 읽어 보세요.)', zh: '（請讀啟示錄21:4。）', en: '(Read Revelation 21:4.)', ja: '（啓示21:4を読む。）' },
+          { vi: 'Những vấn đề khiến cuộc sống có vẻ vô vọng như nghèo đói, bất công, bệnh tật và sự chết sẽ không còn nữa.', ko: '가난, 불공정, 질병, 죽음처럼 우리를 절망하게 만드는 문제들이 더는 없을 것입니다.', zh: '今天，貧窮、疾病、死亡以及各種不公正的事可能使人生看似毫無希望。可是，將來不會再有這些問題。', en: 'The problems that can make life seem hopeless today—such as poverty, injustice, sickness, and death—will no longer exist.', ja: '貧困，不正，病気，死といった問題が全部なくなるということです。' },
+          { vi: 'Kinh Thánh hứa trái đất sẽ trở thành địa đàng và con người sẽ được sống mãi mãi trong đó.', ko: '성경은 사람들이 낙원이 된 땅에서 영원히 행복한 삶을 누릴 수 있을 것이라고 약속합니다.', zh: '聖經保證，地球會變成一個樂園，我們能夠在地上永遠過快樂的生活。', en: 'The Bible promises that humans will be able to enjoy life forever in Paradise on earth.', ja: '人間はパラダイスになった地球でいつまでも幸せに暮らせるようになると，聖書に約束されています。' }
+        );
+      } else if (line.vi.indexOf('Nhiều người hy vọng những điều tốt đẹp sẽ đến') === 0) {
+        out.push(
+          { vi: 'Nhiều người hy vọng những điều tốt đẹp sẽ đến nhưng không có gì bảo đảm là nó sẽ xảy ra.', ko: '많은 사람은 좋은 일이 있기를 희망하지만, 그 희망이 언젠가 이루어질 것이라고 자신할 수 없습니다.', zh: '很多人心中都有一些美好的希望，不過他們不確定自己的希望是否能實現。', en: 'Many people hope for good things to happen, but they cannot be sure that their hopes will ever be fulfilled.', ja: 'いいことが起こると言われても，なかなか信じられないかもしれません。' },
+          { vi: 'Còn những lời hứa trong Kinh Thánh thì khác.', ko: '하지만 성경의 약속은 그와는 다릅니다.', zh: '但聖經給人的希望卻不一樣。', en: 'What the Bible promises is different.', ja: 'でも，聖書の約束は必ずその通りになります。' },
+          { vi: 'Chúng ta có thể tin chắc những lời hứa ấy sẽ thành hiện thực khi “cẩn thận tra xem Kinh Thánh”.', ko: '“성경을 주의 깊이 조사” 한다면 성경의 내용을 신뢰하게 될 것입니다.', zh: '如果我們「用心查考聖經」，就能對這本書越來越有信心。', en: 'We can build up our trust in what it says by “carefully examining the Scriptures.”', ja: '「聖書を……注意深く調べ」ると，そのことが分かります。' },
+          { vi: '(Công vụ 17:11)', ko: '(사도행전 17:11)', zh: '（使徒行傳17:11）', en: '(Acts 17:11)', ja: '（使徒17:11）' },
+          { vi: 'Nhờ tìm hiểu Kinh Thánh, chính bạn sẽ biết những điều Kinh Thánh hứa về tương lai có đáng tin cậy hay không.', ko: '성경을 공부해 보면 미래에 관한 성경의 약속이 믿을 만한지 스스로 판단할 수 있을 것입니다.', zh: '你繼續學習就能看出聖經中的希望是否可信。', en: 'As you study the Bible, you will be able to decide for yourself whether you can believe what it says about the future.', ja: '聖書を学んで，将来について聖書に書かれていることが信じられるかどうかを確かめてください。' }
+        );
+      } else if (line.vi.indexOf('Kinh Thánh không chỉ giải thích tại sao thế giới') === 0) {
+        out.push(
+          { vi: 'Kinh Thánh không chỉ giải thích tại sao thế giới tràn ngập vấn đề mà còn cho biết tin mừng là những vấn đề ấy chỉ tạm thời thôi và sẽ sớm chấm dứt.', ko: '성경은 이 세상에 왜 이렇게 문제가 많은지 알려 줍니다. 하지만 그러한 문제들이 일시적이며 머지않아 사라질 것이라는 좋은 소식도 알려 줍니다.', zh: '聖經不但解釋了世界充滿難題的原因，也告訴我們這些難題只是暫時的，很快就會解決。', en: 'The Bible not only explains why the world is full of problems but also gives the good news that these problems are temporary and will soon end.', ja: '聖書は，世の中に問題が多い理由を説明し，そうした問題が一時的で，間もなくなくなるという良い知らせも伝えています。' },
+          { vi: 'Tương lai mà Kinh Thánh hứa có thể giúp bạn có hy vọng.', ko: '성경은 밝은 “미래” 를 약속하며 그 약속은 우리에게 “희망” 을 줍니다.', zh: '聖經中提到的「前途」讓我們有「希望」。', en: 'The future that the Bible promises can give you hope.', ja: '聖書が約束している将来は，希望を与えてくれます。' },
+          { vi: '(Đọc Giê-rê-mi 29:11, 12).', ko: '(예레미야 29:11, 12 을 읽어 보세요.)', zh: '（請讀耶利米書29:11，12。）', en: '(Read Jeremiah 29:11, 12.)', ja: '（エレミヤ29:11，12を読む。）' },
+          { vi: 'Những lời hứa ấy giúp mỗi người trong chúng ta đối phó với vấn đề hiện tại, có quan điểm tích cực và tìm được hạnh phúc lâu dài.', ko: '성경의 약속은 우리가 지금 겪는 문제들을 잘 이겨 내고 긍정적인 태도를 갖는 데 도움이 되며, 영원한 행복의 길을 알려 줍니다.', zh: '知道這一點能幫助我們面對目前的難題，保持積極，也能確信未來有永遠快樂的生活。', en: 'Those promises can help us cope with present problems, stay positive, and find lasting happiness.', ja: 'そうした約束は，今の問題に立ち向かい，前向きな考え方を保ち，永続する幸せを見いだす助けになります。' }
+        );
+      } else if (line.vi.indexOf('Kinh Thánh khẳng định những gì được ghi') === 0) {
+        out.push(
+          { vi: 'Kinh Thánh khẳng định những gì được ghi trong đó là “những lời chân thật”.', ko: '성경은 그 안에 담긴 기록이 “진리의 정확한 말씀” 이라고 말합니다.', zh: '聖經說，寫聖經的人「力求用正確的字眼寫下真理」。', en: 'The Bible says that what is written in it is “words of truth.”', ja: '聖書には「真実」が「正確に記録」されています。' },
+          { vi: '(Truyền đạo 12:10)', ko: '(전도서 12:10)', zh: '（傳道書12:10）', en: '(Ecclesiastes 12:10)', ja: '（伝道の書12:10）' },
+          { vi: 'Kinh Thánh kể lại về người thật việc thật.', ko: '성경에는 실존 인물들과 실제 사건들에 관한 기록이 들어 있습니다.', zh: '聖經記錄了許多真人真事。', en: 'The Bible records real people and real events.', ja: '実在した人たちや実際にあった出来事について書かれています。' },
+          { vi: '(Đọc Lu-ca 1:1, 3; 3:1, 2).', ko: '(누가복음 1:3; 3:1, 2 을 읽어 보세요.)', zh: '（請讀路加福音1:1，3；3:1，2。）', en: '(Read Luke 1:1, 3; 3:1, 2.)', ja: '（ルカ1:1，3；3:1，2を読む。）' },
+          { vi: 'Nhiều sử gia và nhà khảo cổ đã xác nhận rằng những ngày tháng, nhân vật, nơi chốn và sự kiện quan trọng được ghi lại trong Kinh Thánh là chính xác.', ko: '많은 역사가들과 고고학자들은 성경에 나오는 중요한 날짜, 인물, 장소, 사건이 정확하다는 것을 확증해 줍니다.', zh: '許多歷史家和考古學家都證實，聖經記載的重要年代、人物、地點和事件都很準確。', en: 'Many historians and archaeologists have confirmed that the important dates, people, places, and events recorded in the Bible are accurate.', ja: '聖書に記されている年代，人物，場所，出来事が正確だということを，多くの歴史家や考古学者が認めています。' }
+        );
+      } else if (line.vi.indexOf('Kinh Thánh có những lời tiên tri a báo trước') === 0) {
+        out.push(
+          { vi: 'Kinh Thánh có những lời tiên tri báo trước “việc chưa làm”, tức việc chưa xảy ra.', ko: '성경에는 “아직 이루어지지 않은 일들” 을 미리 알려 주는 예언들이 들어 있습니다.', zh: '聖經有預言能預先說明「未來還沒有發生的事」。', en: 'The Bible contains prophecies that foretell “things not yet done,” that is, things that have not yet happened.', ja: '聖書には，まだ起きていない「将来の事柄」を前もって伝える預言があります。' },
+          { vi: '(Ê-sai 46:10)', ko: '(이사야 46:10)', zh: '（以賽亞書46:10）', en: '(Isaiah 46:10)', ja: '（イザヤ46:10）' },
+          { vi: 'Kinh Thánh báo trước chính xác nhiều sự kiện lịch sử mà rất lâu sau mới xảy ra.', ko: '성경은 많은 역사적인 사건을 그 일이 일어나기 오래 전에 정확하게 예언했습니다.', zh: '聖經準確預告了許多很久以後才發生的歷史事件。', en: 'The Bible accurately foretold many historical events long before they happened.', ja: '聖書は，多くの歴史上の出来事を，実際に起きるずっと前に正確に予告していました。' },
+          { vi: 'Sách này cũng miêu tả tình trạng thế giới hiện nay với những chi tiết nổi bật.', ko: '또한 성경은 오늘날의 세상 상태를 놀랄 만큼 구체적으로 예언했습니다.', zh: '聖經也詳細描述了今天的世界情況。', en: 'It also describes the condition of today’s world in remarkable detail.', ja: '今の世の中についても前もって詳しく書かれていました。' },
+          { vi: 'Trong bài này, chúng ta sẽ xem xét một số lời tiên tri đáng kinh ngạc.', ko: '이 과에서는 성경 예언 몇 가지를 살펴볼 것입니다. 그 예언들은 매우 정확하게 성취되었습니다!', zh: '這一課，我們會看看聖經中的一些預言。', en: 'In this lesson, we will examine some remarkable prophecies.', ja: 'このレッスンでは驚くほど正確な聖書の預言を幾つか調べます。' }
+        );
+      } else if (line.vi.indexOf('Lịch sử chứng thực rằng vua của Ba Tư') === 0) {
+        out.push(
+          { vi: 'Hiện nay, hơn 2.500 năm sau, thành Ba-by-lôn xưa chỉ còn là đống hoang tàn.', ko: '2500여 년이 지난 지금까지도 바빌론은 폐허로 남아 있습니다.', zh: '2500多年後，巴比倫城曾經所在的地方如今是一片廢墟。', en: 'Today, more than 2,500 years later, ancient Babylon is still in ruins.', ja: '2500年以上たった今も，バビロンは廃墟のままです。' },
+          { vi: 'Hãy xem Kinh Thánh báo trước như thế nào.', ko: '그에 관한 성경 예언에 유의해 보세요.', zh: '這と聖經の預言を比べてみましょう。', en: 'Notice what the Bible foretold.', ja: '聖書がどのように予告していたかを見てみましょう。' }
+        );
+      } else if (line.vi.indexOf('Kinh Thánh cho biết chúng ta đang sống trong “những ngày sau cùng”') === 0) {
+        out.push(
+          { vi: 'Kinh Thánh cho biết chúng ta đang sống trong “những ngày sau cùng”.', ko: '성경은 우리가 살고 있는 시대를 “마지막 날”이라고 부릅니다.', zh: '聖經把我們生活的時代稱為「最後的日子」。', en: 'The Bible refers to our time as “the last days.”', ja: '聖書の中で，今は「終わりの時代」と言われています。' },
+          { vi: '(2 Ti-mô-thê 3:1)', ko: '(디모데 후서 3:1)', zh: '（提摩太後書3:1）', en: '(2 Timothy 3:1)', ja: '（テモテ第二3:1）' },
+          { vi: 'Hãy xem Kinh Thánh báo trước như thế nào về thời kỳ này.', ko: '우리 시대에 관한 성경 예언에 유의해 보세요.', zh: '請看看聖經怎樣預告這段時期會發生的事。', en: 'Notice what the Bible foretold about this time period.', ja: 'この時代についてどんなことが予告されていたでしょうか。' }
+        );
+      } else {
+        // Put a full stop before a trailing parenthetical Bible citation. This lets the normal
+        // sentence splitter present the citation as its own line instead of attaching it to the
+        // preceding Vietnamese sentence. The same normalization keeps the translations aligned.
+        var normalized = {};
+        Object.keys(line).forEach(function (key) {
+          normalized[key] = typeof line[key] === "string"
+            ? line[key].replace(/([^\s.!?…])\s*(\([^()]*\))\./g, "$1. $2.")
+            : line[key];
+        });
+        // A citation can lead OR appear in the middle of a source paragraph. Split every
+        // citation-shaped parenthesis into its own bilingual line: "Text. (Read X 1:1). Text."
+        var viSegments = String(normalized.vi || "").split(/(\([^()]*\)\.?)/);
+        var hasCitation = viSegments.some(function (part) {
+          return /^\((?:Đọc\s+)?[^)]*\d+:\d+[^)]*\)\.?$/.test(part.trim());
+        });
+        if (hasCitation) {
+          var byLang = {};
+          Object.keys(normalized).forEach(function (key) {
+            byLang[key] = typeof normalized[key] === "string" ? normalized[key].split(/(\([^()]*\)\.?)/) : [normalized[key]];
+          });
+          viSegments.forEach(function (segment, index) {
+            if (!segment.trim()) return;
+            var separated = {};
+            Object.keys(normalized).forEach(function (key) {
+              separated[key] = typeof normalized[key] === "string" ? String(byLang[key][index] || "").trim() : normalized[key];
+            });
+            out.push(separated);
+          });
+        } else out.push(normalized);
+      }
+    });
+    // Extraction artifacts occasionally inserted a standalone Latin "a" into CJK/Korean
+    // translations. It is not source text, so remove it without touching Vietnamese or English.
+    return out.map(function (line) {
+      // Vietnamese does not begin a sentence with a standalone Latin "a". This is an
+      // extraction artifact, so remove it (and the following space) before display or review.
+      if (typeof line.vi === "string") line.vi = line.vi.replace(/^a\s+/, "");
+      ["ko", "zh", "ja"].forEach(function (key) {
+        if (typeof line[key] === "string") line[key] = line[key].replace(/\s+a\s+/g, " ");
+      });
+      return line;
+    });
+  }
+  function isReviewableLffLine(line) {
+    var vi = String(line.vi || '').trim();
+    // Reading directions, cross-references, headings and bare numbered prompts are navigation
+    // material, not vocabulary/sentence practice. Keep substantive questions and explanations.
+    return !!vi && !/^(\(\s*)?(Đọc\b|Xem\b)/i.test(vi) && !/^\([^)]*\d+:\d+[^)]*\)\.?$/.test(vi) && !/^—\s*(Xem\b|\d|[A-ZÀ-Ỹ])/i.test(vi) &&
+      !/^(ĐÀO SÂU|ĐIỂM CHÍNH|Ôn lại)$/i.test(vi) && !/^\d+\.$/.test(vi);
+  }
+  function renderCurrLff(q) {
+    var root = document.getElementById("curr-lff-root");
+    if (!root) return;
+    var openSyls = {};
+    var existing = root.querySelectorAll('.group-card[data-open="true"]');
+    if (existing.length) {
+      existing.forEach(function (c) { openSyls[c.dataset.syl] = true; });
+    } else if (!root.dataset.rendered && LFF_CONVERSATIONS.length) {
+      openSyls["lff0"] = true;
+    }
+    var openParts = {};
+    root.querySelectorAll('.lff-part[data-open="true"]').forEach(function (part) {
+      openParts[part.dataset.part] = true;
+    });
+    var firstRender = !root.dataset.rendered;
+    root.dataset.rendered = "true";
+
+    var recordsByPart = {};
+    LFF_CONVERSATIONS.forEach(function (rec, ri) {
+      var lineUnits = [];
+      lffDisplayLines(rec).forEach(function (line) {
+        sentencePairs(line.vi, T(line)).forEach(function (pair) {
+          lineUnits.push({ vi: pair.vi, kr: pair.kr });
+        });
+      });
+      if (q) {
+        var ql = q.toLowerCase();
+        lineUnits = lineUnits.filter(function (l) { return l.vi.toLowerCase().indexOf(ql) >= 0 || l.kr.toLowerCase().indexOf(ql) >= 0; });
+        if (!lineUnits.length && rec.title.vi.toLowerCase().indexOf(ql) < 0 && T(rec.title).toLowerCase().indexOf(ql) < 0) return;
+      }
+      if (!recordsByPart[rec.part]) recordsByPart[rec.part] = [];
+      recordsByPart[rec.part].push({ rec: rec, ri: ri, lineUnits: lineUnits });
+    });
+
+    var html = "";
+    [1, 2, 3, 4].forEach(function (partNumber) {
+      var records = recordsByPart[partNumber];
+      if (!records || !records.length) return;
+      // Part 1 is expanded initially. During a search, each part containing a result expands
+      // automatically, so matching lessons are never hidden behind a collapsed section.
+      var partOpen = q ? true : (Object.prototype.hasOwnProperty.call(openParts, String(partNumber)) ? openParts[String(partNumber)] : (firstRender && partNumber === 1));
+      html += '<section class="lff-part" data-part="' + partNumber + '" data-open="' + (partOpen ? "true" : "false") + '">' +
+        '<button type="button" class="lff-part-head" aria-expanded="' + (partOpen ? "true" : "false") + '">' +
+        '<span>' + escapeHtml(lffPartLabel(partNumber)) + '</span>' + currChev() + '</button><div class="lff-part-body">';
+      records.forEach(function (entry) {
+        var rec = entry.rec, ri = entry.ri, lineUnits = entry.lineUnits;
+        // Start every full read with the same bilingual title shown in the card header, then
+        // continue with the lesson's Vietnamese sentence and its selected-language translation.
+        var readPairs = [[rec.title.vi, T(rec.title)]].concat(lineUnits.map(function (l) { return [l.vi, l.kr]; }));
+        var label = lffRecordLabel(rec);
+        var titleHtml = rec.kind === "lesson"
+          ? '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(rec.title.vi) + '</span> <span class="lff-title-translation">· ' + escapeHtml(T(rec.title)) + '</span></span>'
+          : '<span class="cnt">' + escapeHtml(rec.title.vi) + ' · ' + escapeHtml(T(rec.title)) + '</span>';
+        html += '<div class="group-card" data-open="' + (openSyls["lff" + ri] ? "true" : "false") + '" data-syl="lff' + ri + '">' +
+          '<div class="group-head-row"><button class="group-head"><span>' +
+          (label ? '<span class="syl">' + escapeHtml(label) + '</span> ' : '') +
+          titleHtml + '</span>' + currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
+          '<div class="group-body"><div class="talk-lines">';
+        lineUnits.forEach(function (l) {
+          html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
+            '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
+            '<div class="talk-kr">' + escapeHtml(l.kr) + '</div></div></div>';
+        });
+        html += '</div></div></div>';
+      });
+      html += '</div></section>';
+    });
+    if (q && !html) html = '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
+    root.innerHTML = html;
+    bindCurrGroupCards(root);
+    root.querySelectorAll(".lff-part-head").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var part = button.closest(".lff-part");
+        var willOpen = part.dataset.open !== "true";
+        part.dataset.open = willOpen ? "true" : "false";
+        button.setAttribute("aria-expanded", willOpen ? "true" : "false");
+      });
+    });
+    bindCurrSpeakBtns(root);
+  }
+  (function () {
+    var input = document.getElementById("lff-search");
+    if (input) input.addEventListener("input", function () { renderCurrLff(input.value.trim()); });
+  })();
+  // Re-render on a language change. Previously this pane was rendered only once at startup,
+  // leaving the initial (for example Japanese) translation on screen in every later mode.
+  onLangChange(function () {
+    var input = document.getElementById("lff-search");
+    renderCurrLff(input ? input.value.trim() : "");
+  });
 
   // Compact read-only summary of the shared people-profile, shown at the top of 제공 연설 with
   // a jump-link back to the input form living in 대화's people-section (see bindPeopleSection
@@ -5762,8 +6103,8 @@
         CASES.forEach(function (c) {
           Object.keys(c.stages).forEach(function (sn) {
             c.stages[sn].forEach(function (it) {
-              if (it.viet && it.translation) out.push({ vi: it.viet, kr: T(it.translation) });
-              if (it.reply && it.reply.name) out.push({ vi: it.reply.viet, kr: T(it.reply.translation) });
+              if (it.viet && it.translation) addSentencePairs(out, it.viet, T(it.translation));
+              if (it.reply && it.reply.name) addSentencePairs(out, it.reply.viet, T(it.reply.translation));
             });
           });
         });
@@ -5776,13 +6117,18 @@
         });
         // 제공 연설 (moved from 교과 into 호칭·대화 as a subtab) contributes to the same pool.
         OFFER_TALKS.forEach(function (t) {
-          t.lines.forEach(function (l) { if (l.vi && l.kr) out.push({ vi: l.vi, kr: T(l.kr) }); });
+          t.lines.forEach(function (l) { if (l.vi && l.kr) addSentencePairs(out, l.vi, T(l.kr)); });
         });
         // 기도 준비하기 (노래·기도) contributes its lines too, so the prayer text can be reviewed.
-        PRAYER_TEMPLATE.lines.forEach(function (l) { if (l.vi && l.kr) out.push({ vi: l.vi, kr: T(l.kr) }); });
+        PRAYER_TEMPLATE.lines.forEach(function (l) { if (l.vi && l.kr) addSentencePairs(out, l.vi, T(l.kr)); });
         // 이웃 사람과의 대화 (new 대화 subtab) contributes its 11 conversations' lines too.
         NEIGHBOR_CONVERSATIONS.forEach(function (conv) {
-          conv.lines.forEach(function (l) { if (l.vi) out.push({ vi: l.vi, kr: T(l) }); });
+          conv.lines.forEach(function (l) { if (l.vi) addSentencePairs(out, l.vi, T(l)); });
+        });
+        // 행복한 삶을 영원히 (new 대화 subtab, LFF_CONVERSATIONS) contributes its lesson-body
+        // sentences too, except reading directions, headings and bare numbered prompts.
+        LFF_CONVERSATIONS.forEach(function (rec) {
+          lffDisplayLines(rec).forEach(function (l) { if (isReviewableLffLine(l)) addSentencePairs(out, l.vi, T(l)); });
         });
         return dedupeByVi(out);
       },
@@ -5842,34 +6188,104 @@
       grammar: function () {
         var out = [];
         GRAMMAR_INTRO.forEach(function (sec) {
-          sec.examples.forEach(function (ex) { if (ex.vi && ex.kr) out.push({ vi: ex.vi, kr: T(ex.kr) }); });
+          sec.examples.forEach(function (ex) { if (ex.vi && ex.kr) addSentencePairs(out, ex.vi, T(ex.kr)); });
         });
         GRAMMAR_UNITS.forEach(function (u) {
-          u.steps.forEach(function (s) { if (s.kr) out.push({ vi: s.vi, kr: T(s.kr) }); });
+          u.steps.forEach(function (s) { if (s.kr) addSentencePairs(out, s.vi, T(s.kr)); });
         });
         // 범용 언어 생성표 + 문법 특강 (moved from 교과 into 문법·작문 as subtabs) contribute too.
         ["subjects", "modals", "verbs", "places"].forEach(function (k) {
-          (SENT_GEN_BANK[k] || []).forEach(function (w) { out.push({ vi: w.vi, kr: T(w.kr) }); });
+          (SENT_GEN_BANK[k] || []).forEach(function (w) { addSentencePairs(out, w.vi, T(w.kr)); });
         });
-        GX_MOTION_VERBS.forEach(function (v) { out.push({ vi: v.vi, kr: T(v.kr) }); });
-        GX_POS_EXAMPLES.forEach(function (e) { out.push({ vi: e.vi, kr: T(e.kr) }); });
+        GX_MOTION_VERBS.forEach(function (v) { addSentencePairs(out, v.vi, T(v.kr)); });
+        GX_POS_EXAMPLES.forEach(function (e) { addSentencePairs(out, e.vi, T(e.kr)); });
         GRAMMAR_DICT.forEach(function (g) {
-          g.examples.forEach(function (e) { if (e.vi && e.kr) out.push({ vi: e.vi, kr: T(e.kr) }); });
+          g.examples.forEach(function (e) { if (e.vi && e.kr) addSentencePairs(out, e.vi, T(e.kr)); });
         });
         // [파수대] 탭의 모든 예문도 문법 복습 풀에 포함시킨다.
         WATCHTOWER_VOCAB.forEach(function (wk) {
           wk.words.forEach(function (w) {
-            if (w.example && w.example_mean) out.push({ vi: w.example, kr: T(w.example_mean) });
+            if (w.example && w.example_mean) addSentencePairs(out, w.example, T(w.example_mean));
           });
         });
         return dedupeByVi(out);
       }
     };
 
+    // The review panel mirrors the learnable subtabs of each main section.  Utility/settings
+    // panes (voice settings and the sentence generator) intentionally aren't listed: they do
+    // not contain a fixed set of question-and-answer study items to quiz.
+    var REVIEW_SCOPES = {
+      pron: ["all", "alphabet", "vowels", "consonants", "tones", "tonepairs", "nsdiff"],
+      bible: ["all", "books", "numbers", "time", "days", "months"],
+      wizard: ["all", "main", "reftable", "talks", "neighbor", "lff"],
+      vocab: ["all", "rhyme", "orderrev", "groups", "basic", "antonym", "freq", "theo", "names", "chain", "dialect", "wt"],
+      grammar: ["all", "lessons", "special", "sentences"]
+    };
+    var REVIEW_SCOPE_LABELS = {
+      all: "전체", alphabet: "문자", vowels: "모음", consonants: "자음", tones: "성조", tonepairs: "연속 성조", nsdiff: "남북 발음",
+      books: "성경", numbers: "숫자", time: "시간", days: "요일, 날짜", months: "달, 계절",
+      main: "대화", reftable: "호칭", talks: "제공 연설", neighbor: "이웃 사람과의 대화", lff: "행복한 삶을 영원히",
+      rhyme: "한자음", orderrev: "어순반대", groups: "동일음", basic: "기본", antonym: "반의", freq: "상용", theo: "신권", names: "인명", chain: "끝말", dialect: "남북 단어", wt: "파수대",
+      lessons: "예문", special: "특강", sentences: "범용 언어 생성표"
+    };
+    function reviewScopeLabel(scope) {
+      if (scope !== "all") return TU(REVIEW_SCOPE_LABELS[scope] || scope);
+      return currentLang === "zh" ? "全部" : currentLang === "en" ? "All" : currentLang === "ja" ? "すべて" : "전체";
+    }
+    function rowsPool(rows, wordFn, meaningFn) {
+      return dedupeByVi((rows || []).map(function (row) {
+        return { vi: wordFn(row), kr: meaningFn(row) };
+      }));
+    }
+    function reviewScopedPool(key, scope) {
+      if (!scope || scope === "all") return POOL_BUILDERS[key] ? POOL_BUILDERS[key]() : [];
+      var out = [];
+      function sentence(vi, kr) { if (vi && kr) addSentencePairs(out, vi, kr); }
+      if (key === "pron") {
+        if (scope === "alphabet") ALPHABET.forEach(function (a) { out.push({ vi: a[1].replace(/^\[|\]$/g, ""), kr: a[0] }); });
+        else if (scope === "vowels") out = rowsPool(VOW_SIMPLE.concat(VOW_COMPLEX), function (r) { return r[0].split(",")[0].trim(); }, function (r) { return T(r[1]); });
+        else if (scope === "consonants") out = rowsPool(CONS_SIMPLE.concat(CONS_COMPLEX), function (r) { return r[0].split(",")[0].trim(); }, function (r) { return T(r[1]); });
+        else if (scope === "tones") TONES.forEach(function (t) { out.push({ vi: t.mark, kr: T(t.kr) }); });
+        else if (scope === "tonepairs") TONE_PAIRS.forEach(function (p) { p.words.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.kr) }); }); });
+        else if (scope === "nsdiff") NS_DIFFS.forEach(function (d) { d.examples.forEach(function (e) { out.push({ vi: e.word, kr: T(e.mean) }); }); });
+      } else if (key === "bible") {
+        if (scope === "books") BIBLE_OT.concat(BIBLE_NT).forEach(function (b) { out.push({ vi: b.vi, kr: T(b.kr) }); });
+        else if (scope === "numbers") [NUM_BASIC, NUM_TEEN, NUM_TENS, NUM_HUNDREDS, NUM_LARGE, NUM_SPECIAL].forEach(function (list) { list.forEach(function (n) { out.push({ vi: n.reading, kr: formatNum(n.num) }); }); });
+        else if (scope === "time") [TIME_HOURS, TIME_PERIODS, TIME_EXAMPLES].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: T(i.kr) }); }); });
+        else if (scope === "days") [CAL_DAYS, CAL_DATES].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: T(i.kr) }); }); });
+        else if (scope === "months") [CAL_MONTHS, CAL_SEASONS].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: T(i.kr) }); }); });
+      } else if (key === "wizard") {
+        if (scope === "main") CASES.forEach(function (c) { Object.keys(c.stages).forEach(function (s) { c.stages[s].forEach(function (i) { if (i.viet && i.translation) sentence(i.viet, T(i.translation)); if (i.reply && i.reply.name) sentence(i.reply.viet, T(i.reply.translation)); }); }); });
+        else if (scope === "reftable") REF_TABLE.forEach(function (sec) { sec.rows.forEach(function (r) { if (TERM_MEAN[r.listener]) out.push({ vi: r.listener, kr: TU(TERM_MEAN[r.listener]) }); if (TERM_MEAN[r.self]) out.push({ vi: r.self, kr: TU(TERM_MEAN[r.self]) }); }); });
+        else if (scope === "talks") OFFER_TALKS.forEach(function (t) { t.lines.forEach(function (l) { sentence(l.vi, T(l.kr)); }); });
+        else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(l.vi, T(l)); }); });
+        else if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(l.vi, T(l)); }); });
+      } else if (key === "vocab") {
+        if (scope === "rhyme") RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); });
+        else if (scope === "orderrev") { RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { if (w.word_order_reversed) out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); }); if (typeof WORD_ORDER_REVERSED_EXTRA !== "undefined") WORD_ORDER_REVERSED_EXTRA.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }
+        else if (scope === "groups") VOCAB_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.word, kr: T(w.meaning) }); }); });
+        else if (scope === "basic") BASIC_WORD_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.kr) }); }); });
+        else if (scope === "antonym") ANTONYM_PAIRS.forEach(function (p) { out.push({ vi: p.vi1, kr: T(p.kr1) }, { vi: p.vi2, kr: T(p.kr2) }); });
+        else if (scope === "freq") FREQ_VOCAB.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.kr) }); });
+        else if (scope === "theo") VOCAB_THEO.forEach(function (w) { out.push({ vi: w.word, kr: T(w.meaning) }); });
+        else if (scope === "names") BIBLE_NAMES.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.kr) }); });
+        else if (scope === "chain") VOCAB_CHAIN.forEach(function (w) { out.push({ vi: w.word, kr: T(w.meaning) }); });
+        else if (scope === "dialect") DIALECT_WORDS.forEach(function (w) { out.push({ vi: w.north.replace(/[/].*$/, ""), kr: T(w.mean) }, { vi: w.south.replace(/[/].*$/, ""), kr: T(w.mean) }); });
+        else if (scope === "wt") WATCHTOWER_VOCAB.forEach(function (week) { week.words.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.mean) }); }); });
+      } else if (key === "grammar") {
+        if (scope === "lessons") { GRAMMAR_INTRO.forEach(function (s) { s.examples.forEach(function (e) { sentence(e.vi, T(e.kr)); }); }); GRAMMAR_UNITS.forEach(function (u) { u.steps.forEach(function (s) { sentence(s.vi, T(s.kr)); }); }); }
+        else if (scope === "special") { GX_MOTION_VERBS.forEach(function (v) { sentence(v.vi, T(v.kr)); }); GX_POS_EXAMPLES.forEach(function (e) { sentence(e.vi, T(e.kr)); }); GRAMMAR_DICT.forEach(function (g) { g.examples.forEach(function (e) { sentence(e.vi, T(e.kr)); }); }); }
+        else if (scope === "sentences") ["subjects", "modals", "verbs", "places"].forEach(function (k) { (SENT_GEN_BANK[k] || []).forEach(function (w) { sentence(w.vi, T(w.kr)); }); });
+      }
+      return dedupeByVi(out);
+    }
+
     var poolCache = {};
-    function getPool(key) {
-      if (!poolCache[key]) poolCache[key] = (POOL_BUILDERS[key] ? POOL_BUILDERS[key]() : []);
-      return poolCache[key];
+    function getPool(key, scope) {
+      var cacheKey = key + ":" + (scope || "all");
+      if (!poolCache[cacheKey]) poolCache[cacheKey] = reviewScopedPool(key, scope || "all");
+      return poolCache[cacheKey];
     }
 
     function tokenize(vi) { return vi.trim().split(/\s+/).filter(Boolean); }
@@ -5889,7 +6305,7 @@
       return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>';
     }
 
-    var studyState = { tabKey: null, mode: "flash", pool: [], deck: [], idx: 0, score: { correct: 0, total: 0 }, current: null, orderTokens: [], orderBank: [], orderPlaced: [] };
+    var studyState = { tabKey: null, scope: "all", mode: "flash", pool: [], deck: [], idx: 0, score: { correct: 0, total: 0 }, current: null, orderTokens: [], orderBank: [], orderPlaced: [] };
 
     /* ---------- 자동 넘김 (auto-advance) ---------- */
     // A single toggle + interval selector, shared across all 5 study modes. The timer starts only
@@ -6010,7 +6426,8 @@
     onLangChange(function () {
       poolCache = {};
       if (studyState.tabKey) {
-        studyState.pool = getPool(studyState.tabKey);
+        studyState.pool = getPool(studyState.tabKey, studyState.scope);
+        renderReviewScopes(studyState.tabKey, studyState.scope);
         startMode();
       }
     });
@@ -6048,19 +6465,37 @@
     });
 
     var reviewBtns = document.querySelectorAll(".subtab-btn[data-review]");
+    var reviewScopeEl = document.getElementById("review-scope-tabs");
+
+    function renderReviewScopes(key, selectedScope) {
+      if (!reviewScopeEl) return;
+      var scopes = REVIEW_SCOPES[key] || ["all"];
+      reviewScopeEl.innerHTML = scopes.map(function (scope) {
+        return '<button type="button" class="subtab-btn" data-review-scope="' + escapeAttr(scope) +
+          '" aria-selected="' + (scope === selectedScope ? "true" : "false") + '">' +
+          escapeHtml(reviewScopeLabel(scope)) + '</button>';
+      }).join("");
+      reviewScopeEl.querySelectorAll("[data-review-scope]").forEach(function (btn) {
+        btn.addEventListener("click", function () { selectCategory(key, btn.dataset.reviewScope); });
+      });
+    }
 
     // poolOverride (optional) lets a caller supply an already-built pool instead of the full
     // getPool(key) pool -- used by the "[학습 범위내 복습 게임]" vocab-focus-banner button so it
     // can show the "어휘" subtab as selected (key stays "vocab") while only testing the words in
     // the currently-scoped range, without touching/polluting getPool()'s poolCache for "vocab".
-    function selectCategory(key, poolOverride) {
+    function selectCategory(key, scope, poolOverride) {
+      if (Array.isArray(scope)) { poolOverride = scope; scope = "all"; }
+      scope = scope || "all";
       studyState.tabKey = key;
-      studyState.pool = poolOverride || getPool(key);
+      studyState.scope = scope;
+      studyState.pool = poolOverride || getPool(key, scope);
       studyState.score = { correct: 0, total: 0 };
       studyState.current = null;
       reviewBtns.forEach(function (b) { b.setAttribute("aria-selected", b.dataset.review === key ? "true" : "false"); });
-      // 문법 카테고리로 들어올 때는 기본 학습 모드를 "어순 배열"로, 그 외에는 기존대로 "플래시카드"로 시작한다.
-      var defaultMode = key === "grammar" ? "order" : "flash";
+      renderReviewScopes(key, scope);
+      // 문법과 대화 복습은 기본 학습 모드를 "어순 배열"로 시작한다.
+      var defaultMode = (key === "grammar" || key === "wizard") ? "order" : "flash";
       modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (b) { b.setAttribute("aria-selected", b.dataset.mode === defaultMode ? "true" : "false"); });
       studyState.mode = defaultMode;
       startMode();
@@ -6069,7 +6504,7 @@
     function goToReview(key, poolOverride) {
       try { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); } catch (e) { /* no-op */ }
       activateTab("review", false);
-      selectCategory(key, poolOverride);
+      selectCategory(key, "all", poolOverride);
     }
     // Exposed so the vocab-focus banner (built in a different IIFE) can launch a review session
     // scoped to just its currently-visible range; see vocabFocusBannerHtml()/bindVocabFocusClear().
@@ -6079,9 +6514,9 @@
       btn.addEventListener("click", function () { goToReview(btn.dataset.study); });
     });
     reviewBtns.forEach(function (btn) {
-      btn.addEventListener("click", function () { selectCategory(btn.dataset.review); });
+      btn.addEventListener("click", function () { selectCategory(btn.dataset.review, "all"); });
     });
-    if (reviewBtns.length) selectCategory("grammar");
+    if (reviewBtns.length) selectCategory("wizard", "all");
     modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
         modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (b) { b.setAttribute("aria-selected", "false"); });
