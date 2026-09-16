@@ -593,7 +593,7 @@
   },
   "이웃 사람과의 대화": {
     "zh": "耶和華見證人是怎樣跟人討論聖經的",
-    "en": "A CONVERSATION WITH A NEIGHBOR",
+    "en": "Conversation with a neighbor",
     "ja": "聖書についての話し合い"
   },
   "여호와의 증인이 이웃집을 방문해 성경에 관해 나누는 실제 대화문 11편이에요. 집주인의 말은 원문 그대로, 전도인의 말 속 성경 인용은 최신 개정판 신세계역과 대조해 두었어요.": {
@@ -2030,6 +2030,24 @@
   }
   applyStaticI18n();
   onLangChange(applyStaticI18n);
+
+  // Use short, readable English names when seven primary tabs share a narrow row.
+  // The full translation remains available to assistive technology and on wider screens.
+  (function () {
+    var shortNames = { curriculum: "Course", pron: "Sounds", bible: "Bible", wizard: "Talk", vocab: "Words", grammar: "Grammar", review: "Review" };
+    function syncPrimaryTabLabels() {
+      var compact = currentLang === "en" && window.innerWidth < 1000;
+      document.querySelectorAll(".tabs .tab-btn").forEach(function (btn) {
+        var fullName = TU(btn.getAttribute("data-i18n"));
+        btn.textContent = compact ? (shortNames[btn.dataset.tab] || fullName) : fullName;
+        if (compact) btn.setAttribute("aria-label", fullName);
+        else btn.removeAttribute("aria-label");
+      });
+    }
+    syncPrimaryTabLabels();
+    onLangChange(syncPrimaryTabLabels);
+    window.addEventListener("resize", syncPrimaryTabLabels);
+  })();
 
   // Header language-switch buttons (ko / zh-TW / en). Reflects currentLang (which may already
   // be zh or en on load, restored from localStorage) both at startup and after every switch, and
@@ -6476,7 +6494,7 @@
     var REVIEW_SCOPE_LABELS = {
       all: "전체", alphabet: "문자", vowels: "모음", consonants: "자음", tones: "성조", tonepairs: "연속 성조", nsdiff: "남북 발음",
       books: "성경", numbers: "숫자", time: "시간", days: "요일, 날짜", months: "달, 계절",
-      main: "대화", reftable: "호칭", talks: "제공 연설", neighbor: "이웃 사람과의 대화", lff: "행복한 삶을 영원히", lpd: "사람들을 사랑하고 제자로",
+      main: "첫만남", reftable: "호칭", talks: "제공 연설", neighbor: "이웃 사람과의 대화", lff: "행복한 삶을 영원히", lpd: "사람들을 사랑하고 제자로",
       rhyme: "한자음", orderrev: "어순반대", groups: "동일음", basic: "기본", antonym: "반의", freq: "상용", theo: "신권", names: "인명", chain: "끝말", dialect: "남북 단어", wt: "파수대",
       lessons: "예문", special: "특강", sentences: "범용 언어 생성표"
     };
@@ -6651,11 +6669,11 @@
     var autoAdvRoot = document.getElementById("study-auto-row");
     function renderAutoAdvanceControls() {
       if (!autoAdvRoot) return;
-      var html = '<label class="auto-advance-option"><input type="checkbox" id="auto-advance-toggle" ' + (autoAdvanceEnabled ? "checked" : "") + '> ' + TU("자동 넘김") + '</label>' +
+      var html = '<label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span id="repeat-toggle-review"></span></label>' +
+        '<span class="auto-advance-group"><label class="auto-advance-option"><input type="checkbox" id="auto-advance-toggle" ' + (autoAdvanceEnabled ? "checked" : "") + '> ' + TU("자동 넘김") + '</label>' +
         '<select id="auto-advance-seconds" class="auto-seconds-select" ' + (autoAdvanceEnabled ? "" : "disabled") + '>' +
         AUTO_ADV_SECONDS_OPTS.map(function (s) { return '<option value="' + s + '"' + (s === autoAdvanceSeconds ? " selected" : "") + '>' + s + TU("초") + '</option>'; }).join("") +
-        '</select><label class="auto-correct-option"><input type="checkbox" id="auto-next-correct-toggle" ' + (autoNextOnCorrect ? "checked" : "") + '> ' + TU("정답 시 다음 문제") + '</label>' +
-        '<label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span id="repeat-toggle-review"></span></label>';
+        '</select></span><label class="auto-correct-option"><input type="checkbox" id="auto-next-correct-toggle" ' + (autoNextOnCorrect ? "checked" : "") + '> ' + TU("정답 시 다음 문제") + '</label>';
       autoAdvRoot.innerHTML = html;
       renderViRepeatToggle(document.getElementById("repeat-toggle-review"));
       document.getElementById("auto-advance-toggle").addEventListener("change", function (e) {
@@ -6729,6 +6747,7 @@
     function renderReviewScopes(key, selectedScope) {
       if (!reviewScopeEl) return;
       var scopes = REVIEW_SCOPES[key] || ["all"];
+      reviewScopeEl.dataset.scopeCategory = key;
       reviewScopeEl.innerHTML = scopes.map(function (scope) {
         return '<button type="button" class="subtab-btn" data-review-scope="' + escapeAttr(scope) +
           '" aria-selected="' + (scope === selectedScope ? "true" : "false") + '">' +
@@ -6769,9 +6788,6 @@
     // scoped to just its currently-visible range; see vocabFocusBannerHtml()/bindVocabFocusClear().
     window.__goToScopedVocabReview = function () { goToReview("vocab", vocabScopedPool()); };
 
-    document.querySelectorAll(".study-trigger-btn").forEach(function (btn) {
-      btn.addEventListener("click", function () { goToReview(btn.dataset.study); });
-    });
     reviewBtns.forEach(function (btn) {
       btn.addEventListener("click", function () { selectCategory(btn.dataset.review, "all"); });
     });

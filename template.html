@@ -763,14 +763,6 @@
   .gr-align-kr { font-size: 0.7rem; color: var(--ink-faint); margin-top: 2px; white-space: nowrap; text-align: center; }
 
   /* ---------- Study games ---------- */
-  .study-trigger-btn {
-    display: inline-flex; align-items: center; gap: 7px; margin-top: 12px;
-    border: 1.5px solid var(--accent); background: var(--accent-soft); color: var(--accent);
-    font-weight: 800; font-size: 0.86rem; padding: 10px 16px; border-radius: 999px; cursor: pointer;
-  }
-  .study-trigger-btn svg { width: 16px; height: 16px; flex: none; }
-  .study-trigger-btn:hover { background: var(--accent); color: var(--accent-ink); }
-
   .study-mode-tabs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; margin-bottom: 14px; }
   .study-mode-btn {
     border: 1.5px solid var(--border); background: var(--surface); color: var(--ink-soft);
@@ -1159,6 +1151,110 @@
     #panel-review > .subtab-row:first-child,
     #review-scope-tabs { padding-top: 2px; padding-bottom: 3px; }
   }
+  .auto-advance-group { display: inline-flex; align-items: center; gap: 5px; min-width: 0; }
+  @media (max-width: 699px) {
+    /* Keep the language selector at the top right in every UI language. */
+    .topbar-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 4px; }
+    .brand-wrap { flex-basis: auto; min-width: 0; }
+    .brand { gap: 5px; min-width: 0; }
+    .brand-logo { width: 38px; height: 38px; }
+    .brand h1 { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: clamp(.72rem, 2.6vw, .96rem); }
+    .lang-switch { margin: 0; padding: 2px; gap: 0; align-self: start; }
+    .lang-btn { min-height: 34px; padding: 4px 3px; font-size: clamp(.51rem, 2vw, .67rem); }
+
+    /* Seven primary tabs fit the viewport; deeper tabs wrap in place. */
+    .tabs { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0; overflow: visible; padding-inline: 4px; }
+    .tab-btn { min-width: 0; width: 100%; min-height: 42px; padding: 6px 0; font-size: clamp(.7rem, 3vw, .84rem); }
+    .subtab-row { flex-wrap: wrap; overflow: visible; gap: 2px 4px; }
+    .stage-nav { flex-wrap: wrap; overflow-x: visible; }
+    .subtab-btn { min-height: 38px; padding: 6px 9px; font-size: .78rem; }
+    #panel-review > .subtab-row:first-child { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; }
+    #panel-review > .subtab-row:first-child .subtab-btn { min-width: 0; width: 100%; padding-inline: 0; }
+    #review-scope-tabs .subtab-btn { white-space: normal; text-align: center; word-break: keep-all; }
+
+    #panel-review .study-mode-tabs { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; }
+    #panel-review .study-mode-btn { min-width: 0; min-height: 44px; padding: 4px 2px; font-size: clamp(.59rem, 2.4vw, .75rem); }
+    #panel-review .study-auto-row { display: grid; grid-template-columns: minmax(0, auto) minmax(0, auto) minmax(0, auto); justify-content: space-between; align-items: center; gap: 4px; padding: 4px 6px; }
+    #panel-review .study-auto-row > * { min-width: 0; }
+    #panel-review .auto-advance-group { gap: 3px; }
+    #panel-review .auto-advance-option, #panel-review .auto-correct-option,
+    #panel-review .repeat-review-option { min-width: 0; min-height: 38px; gap: 2px; font-size: clamp(.6rem, 2.3vw, .75rem); line-height: 1.15; }
+    #panel-review .repeat-review-option { margin-left: 0; }
+    #panel-review .auto-advance-option, #panel-review .auto-correct-option,
+    #panel-review .repeat-review-option { white-space: normal; }
+    #panel-review .auto-advance-option input, #panel-review .auto-correct-option input { width: 14px; height: 14px; }
+    #panel-review .auto-seconds-select, #panel-review .repeat-count-select { min-width: 0; min-height: 38px; padding: 2px 1px; font-size: .7rem; }
+  }
+  @media (max-width: 380px) {
+    .brand-logo { width: 32px; height: 32px; }
+    .lang-btn { padding-inline: 2px; }
+    #panel-review .study-auto-row { gap: 2px; }
+    #panel-review .auto-advance-option, #panel-review .auto-correct-option,
+    #panel-review .repeat-review-option { font-size: .6rem; }
+  }
+
+  /* Scale the study surface with the available viewport, including large iPads in landscape. */
+  .app, .topbar-inner, .tabs { max-width: 1600px; }
+  .app { width: 100%; }
+  @media (min-width: 700px) {
+    html { font-size: 17px; }
+    main { padding-inline: clamp(24px, 3vw, 48px); }
+    .topbar { padding-inline: clamp(24px, 3vw, 48px); }
+    .tabs { padding-inline: clamp(24px, 3vw, 48px); }
+    .subtab-row { margin-inline: calc(-1 * clamp(24px, 3vw, 48px)); padding-inline: clamp(24px, 3vw, 48px); }
+  }
+  @media (min-width: 1100px) {
+    html { font-size: 18px; }
+    .app { max-width: min(1600px, 100vw); }
+    .topbar-inner, .tabs { max-width: min(1600px, 100vw); }
+  }
+
+  /* Soft square-drop tabs retain a clear selected state in light and dark themes. */
+  .subtab-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; margin-bottom: 10px; }
+  .subtab-btn {
+    min-width: 0; width: 100%; min-height: 44px; white-space: normal; text-align: center;
+    overflow-wrap: anywhere; line-height: 1.25; font-weight: 750;
+    border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--border));
+    border-radius: 14px 14px 14px 5px;
+    background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+    color: var(--ink);
+  }
+  .subtab-btn[aria-selected="true"] {
+    background: color-mix(in srgb, var(--accent) 22%, var(--surface));
+    border-color: color-mix(in srgb, var(--accent) 50%, var(--border));
+    color: var(--accent);
+    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 12%, transparent);
+  }
+  .subtab-btn:hover { background: color-mix(in srgb, var(--accent) 16%, var(--surface)); }
+  #panel-curriculum > .subtab-row, #panel-grammar > .subtab-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #panel-wizard > .subtab-row, #panel-bible > .subtab-row,
+  #panel-review > .subtab-row:first-child { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  #panel-pron > .subtab-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  #panel-vocab > .subtab-row, #review-scope-tabs[data-scope-category="vocab"] { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  #review-scope-tabs[data-scope-category="pron"], #review-scope-tabs[data-scope-category="wizard"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  #review-scope-tabs[data-scope-category="bible"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  #review-scope-tabs[data-scope-category="grammar"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (min-width: 700px) {
+    #panel-curriculum > .subtab-row, #panel-grammar > .subtab-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    #panel-wizard > .subtab-row, #panel-bible > .subtab-row { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    #panel-pron > .subtab-row { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+    #panel-review > .subtab-row:first-child { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    #review-scope-tabs[data-scope-category="pron"], #review-scope-tabs[data-scope-category="wizard"] { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+    #review-scope-tabs[data-scope-category="bible"] { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    #review-scope-tabs[data-scope-category="grammar"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+  @media (max-width: 699px) {
+    .subtab-row { overflow: visible; }
+    .subtab-btn { font-size: clamp(.7rem, 2.9vw, .83rem); padding: 7px 3px; }
+    #panel-review > .subtab-row:first-child { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+  @media (max-width: 999px) {
+    body[data-app-lang="en"] .tabs { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 1px; overflow: visible; }
+    body[data-app-lang="en"] .tab-btn { min-width: 0; width: 100%; padding-inline: 0; white-space: nowrap; font-size: .72rem; }
+  }
+  @media (max-width: 380px) {
+    body[data-app-lang="en"] .tab-btn { font-size: .64rem; letter-spacing: -.02em; }
+  }
 </style>
 
 <div class="app" data-active-tab="review">
@@ -1218,14 +1314,6 @@
 
     <!-- ============ WIZARD ============ -->
     <section class="panel" id="panel-wizard">
-      <div class="intro">
-        <h2 data-i18n="베트남 사람을 만났을 때">베트남 사람을 만났을 때</h2>
-        <p data-i18n="몇 가지만 답하면, 첫인사부터 자기소개·연락처 교환·재방문·집회 초대·성서 연구 사회까지 실제로 쓸 수 있는 베트남어 대화문을 보여 드려요.">몇 가지만 답하면, 첫인사부터 자기소개·연락처 교환·재방문·집회 초대·성서 연구 사회까지 실제로 쓸 수 있는 베트남어 대화문을 보여 드려요.</p>
-        <button class="study-trigger-btn" data-study="wizard">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><span data-i18n="복습 게임으로 연습하기">
-          복습 게임으로 연습하기
-        </span></button>
-      </div>
       <div class="subtab-row">
         <button class="subtab-btn" data-wizard="main" aria-selected="true" data-i18n="첫만남">첫만남</button>
         <button class="subtab-btn" data-wizard="reftable" aria-selected="false" data-i18n="호칭">호칭</button>
@@ -1437,14 +1525,6 @@
 
     <!-- ============ VOCAB (한자어 어휘 + 신권 어휘 + 자주 사용 어휘 통합) ============ -->
     <section class="panel" id="panel-vocab">
-      <div class="intro">
-        <h2 data-i18n="베트남어 어휘">베트남어 어휘</h2>
-        <p data-i18n="한자어 대응표, 신권 용어, 자주 사용하는 단어까지 어휘 학습 자료를 한곳에 모았어요. 한국 한자음과 대응하는 경우가 많아, 알고 나면 새 단어를 훨씬 쉽게 외울 수 있어요.">한자어 대응표, 신권 용어, 자주 사용하는 단어까지 어휘 학습 자료를 한곳에 모았어요. 한국 한자음과 대응하는 경우가 많아, 알고 나면 새 단어를 훨씬 쉽게 외울 수 있어요.</p>
-        <button class="study-trigger-btn" data-study="vocab">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><span data-i18n="전체 범위 복습 게임">
-          전체 범위 복습 게임
-        </span></button>
-      </div>
       <div class="subtab-row">
         <button class="subtab-btn" data-vocab="rhyme" aria-selected="true" data-i18n="한자음">한자음</button>
         <button class="subtab-btn" data-vocab="orderrev" aria-selected="false" data-i18n="어순반대">어순반대</button>
@@ -1467,14 +1547,6 @@
 
     <!-- ============ PRONUNCIATION ============ -->
     <section class="panel" id="panel-pron">
-      <div class="intro">
-        <h2 data-i18n="발음·성조·문자 기초">발음·성조·문자 기초</h2>
-        <p data-i18n="베트남어를 처음 배우는 분을 위한 기초 발음표예요. 16주 학습반 교재를 바탕으로 정리했습니다.">베트남어를 처음 배우는 분을 위한 기초 발음표예요. 16주 학습반 교재를 바탕으로 정리했습니다.</p>
-        <button class="study-trigger-btn" data-study="pron">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><span data-i18n="복습 게임으로 연습하기">
-          복습 게임으로 연습하기
-        </span></button>
-      </div>
       <div class="subtab-row">
         <button class="subtab-btn" data-pron="settings" aria-selected="false" data-i18n="설정">설정</button>
         <button class="subtab-btn" data-pron="alphabet" aria-selected="true" data-i18n="문자">문자</button>
@@ -1495,14 +1567,6 @@
 
     <!-- ============ BIBLE & NUMBERS ============ -->
     <section class="panel" id="panel-bible">
-      <div class="intro">
-        <h2 data-i18n="성경 책 이름 · 숫자 읽기">성경 책 이름 · 숫자 읽기</h2>
-        <p data-i18n="신세계역 성경의 베트남어와 한국어 책 이름을 나란히 두고 발음을 들어 보세요. 숫자 탭에는 1~100, 1,000~10억까지 숫자 읽는 법이 있어요.">신세계역 성경의 베트남어와 한국어 책 이름을 나란히 두고 발음을 들어 보세요. 숫자 탭에는 1~100, 1,000~10억까지 숫자 읽는 법이 있어요.</p>
-        <button class="study-trigger-btn" data-study="bible">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><span data-i18n="복습 게임으로 연습하기">
-          복습 게임으로 연습하기
-        </span></button>
-      </div>
       <div class="subtab-row">
         <button class="subtab-btn" data-bible="books" aria-selected="true" data-i18n="성경">성경</button>
         <button class="subtab-btn" data-bible="numbers" aria-selected="false" data-i18n="숫자">숫자</button>
@@ -1533,14 +1597,6 @@
 
     <!-- ============ GRAMMAR & COMPOSITION ============ -->
     <section class="panel" id="panel-grammar">
-      <div class="intro">
-        <h2 data-i18n="문법 및 작문 연습">문법 및 작문 연습</h2>
-        <p data-i18n="가장 짧은 문장에서 시작해 한 단어씩 늘려 가며, 한국어와 베트남어의 어순 차이를 몸에 익혀요.">가장 짧은 문장에서 시작해 한 단어씩 늘려 가며, 한국어와 베트남어의 어순 차이를 몸에 익혀요.</p>
-        <button class="study-trigger-btn" data-study="grammar">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><span data-i18n="복습 게임으로 연습하기">
-          복습 게임으로 연습하기
-        </span></button>
-      </div>
       <div class="subtab-row">
         <button class="subtab-btn" data-grammar="lessons" aria-selected="true" data-i18n="예문">예문</button>
         <button class="subtab-btn" data-grammar="special" aria-selected="false" data-i18n="특강">특강</button>
