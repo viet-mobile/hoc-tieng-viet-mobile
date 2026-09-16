@@ -7,17 +7,18 @@
   // it unchanged in every language -- this lets the multi-language rollout happen field-by-
   // field across the app without ever breaking anything not yet converted.
   var VALID_LANGS = ["ko", "zh", "en", "ja"];
-  // With no saved preference yet (first visit, or localStorage unavailable), the starting
-  // language follows the device's own system/browser language: Korean -> ko, any Chinese
-  // variant -> zh, Japanese -> ja, and everything else -> en.
+  // With no saved preference yet (first visit, or localStorage unavailable), use the
+  // browser's primary language: Korean -> ko, Chinese/Vietnamese -> zh, Japanese -> ja,
+  // English and all remaining languages -> en.
   function detectSystemLang() {
     try {
       var navLang = String(
         (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage || ""
       ).toLowerCase();
-      if (navLang.indexOf("ko") === 0) return "ko";
-      if (navLang.indexOf("zh") === 0) return "zh";
-      if (navLang.indexOf("ja") === 0) return "ja";
+      var languageCode = navLang.split(/[-_]/)[0];
+      if (languageCode === "ko") return "ko";
+      if (languageCode === "zh" || languageCode === "vi") return "zh";
+      if (languageCode === "ja") return "ja";
     } catch (e) { /* no-op: navigator unavailable */ }
     return "en";
   }
