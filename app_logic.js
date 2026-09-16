@@ -2404,9 +2404,9 @@
   function applyNameText(text, viet) {
     if (!text) return text;
     var out = text;
-    if (viet && userNameVi) {
-      // Vietnamese text uses spaces between syllables, so a word-boundary-safe replace
-      // avoids accidentally touching a longer word that merely contains "Suji"/"Đông-ju".
+    if (userNameVi) {
+      // The Vietnamese placeholder also appears in word-by-word glosses, regardless
+      // of the active UI language. Keep it aligned with the spoken sentence.
       out = wordReplace(out, "Suji", userNameVi);
       out = wordReplace(out, "Đông-ju", userNameVi);
     }
@@ -2502,6 +2502,11 @@
     var compKr = (peopleState.companion.nameKr || "").trim();
     if (!compKr) return name;
     return name.split("마이").join(compKr).split("빈").join(compKr);
+  }
+  function displayStageName(name, caseId) {
+    var label = name.replace(/^\d+\.\s*/, "");
+    if (label === "번외: 하느님의 이름과 소망") return "집회 초대";
+    return applyCompanionStageName(label, caseId);
   }
 
   /* -------- text-to-speech voice selection -------- */
@@ -3842,8 +3847,8 @@
     var html = '<div class="practice-toggle"><span class="lbl">' + TU("한국어 뜻 가리고 연습하기") + '</span><label class="switch"><input type="checkbox" id="practice-switch" ' + (practiceMode ? "checked" : "") + '><span class="track"></span><span class="thumb"></span></label></div>';
     html += '<div class="stage-nav" id="stage-nav">';
     stageNames.forEach(function (name, i) {
-      var short = TU(applyCompanionStageName(name.replace(/^\d+\.\s*/, ""), c.id));
-      html += '<button class="stage-pill" data-idx="' + i + '" aria-selected="' + (i === currentStageIdx) + '">' + (i + 1) + '. ' + short + '</button>';
+      var short = TU(displayStageName(name, c.id));
+      html += '<button class="stage-pill subtab-btn" data-idx="' + i + '" aria-selected="' + (i === currentStageIdx) + '">' + (i + 1) + '. ' + short + '</button>';
     });
     html += '</div>';
     html += '<div id="stage-body"></div>';
@@ -3859,7 +3864,7 @@
     var name = stageNames[currentStageIdx];
     var items = c.stages[name];
     var body = document.getElementById("stage-body");
-    var shortTitle = TU(applyCompanionStageName(name.replace(/^\d+\.\s*/, ""), c.id));
+    var shortTitle = TU(displayStageName(name, c.id));
     var stageTexts = [];
     var turnsHtml = '<div class="turns">';
     items.forEach(function (it) {
@@ -3935,7 +3940,6 @@
     });
     renderStageBody(c);
     updateStageFootNav(c);
-    document.getElementById("stage-nav").querySelector('[aria-selected="true"]').scrollIntoView({ inline: "center", block: "nearest" });
   }
   function updateStageFootNav(c) {
     var stageNames = Object.keys(c.stages);

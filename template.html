@@ -1281,6 +1281,21 @@
     background: color-mix(in srgb, var(--accent) 22%, var(--surface));
     border-color: color-mix(in srgb, var(--accent) 52%, var(--border));
   }
+  #stage-nav {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px; overflow: visible; padding: 2px 0 8px;
+  }
+  #stage-nav .stage-pill {
+    min-width: 0; width: 100%; min-height: 44px; padding: 7px 6px;
+    white-space: normal; overflow-wrap: anywhere; text-align: center;
+    font-size: .78rem; line-height: 1.25;
+  }
+  @media (min-width: 1000px) {
+    #stage-nav { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+  }
+  @media (max-width: 699px) {
+    #stage-nav .stage-pill { font-size: clamp(.68rem, 2.8vw, .78rem); padding-inline: 3px; }
+  }
 </style>
 
 <div class="app" data-active-tab="review">
