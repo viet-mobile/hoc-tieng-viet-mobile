@@ -139,17 +139,37 @@ USAGE_GUIDE_COMMON = [
                     'browser\'s) system setting, so switching your device\'s display mode automatically changes the '
                     'app\'s colors too.',
               'ja': 'このアプリには画面内にダーク・ライト切り替え用の専用ボタンはなく、端末（またはブラウザ）のシステム設定にそのまま従います。端末の表示モードを変更すると、このアプリの配色も自動的に一緒に切り替わります。'}},
-    {'name': {'ko': '복습 게임으로 연습하기 버튼',
-              'zh': '「用複習遊戲來練習」按鈕',
-              'en': '"Practice with Review Games" button',
-              'ja': '「復習ゲームで練習する」ボタン'},
-     'body': {'ko': '대화, 어휘, 발음, 성경, 문법 탭 상단에 있는 복습 게임으로 연습하기 버튼을 누르면 그 카테고리가 미리 선택된 상태로 '
-                     '복습 탭으로 바로 이동하고, 점수는 새로 시작돼요.',
-              'zh': '點選「對話」「詞彙」「發音」「聖經」「文法」分頁上方的「用複習遊戲來練習」按鈕，就會直接跳到「複習」分頁，並預先選好該分類，分數也會重新開始計算。',
-              'en': 'The "Practice with Review Games" button near the top of the Conversation, Vocabulary, '
-                    'Pronunciation, Bible, and Grammar tabs jumps straight to the Review tab with that category '
-                    'already selected and the score reset.',
-              'ja': '「対話」「語彙」「発音」「聖書」「文法」タブ上部にある「復習ゲームで練習する」ボタンを押すと、そのカテゴリーがあらかじめ選択された状態で「復習」タブへ直接移動し、スコアも新しく始まります。'}},
+    {'name': {'ko': '묵음(Mute) 옵션',
+              'zh': '「靜音」選項',
+              'en': 'Mute option',
+              'ja': '「ミュート」オプション'},
+     'body': {'ko': '플래시카드 · 보기 4지선다 · 어순 배열 · 받아쓰기에서는 새 문제가 나올 때 자동으로 읽어 주는 베트남어 음성을 묵음 '
+                     '체크박스로 끌 수 있어요. 이 네 모드는 문제가 이미 화면에 글자로 보이기 때문에 소리 없이도 풀 수 있어요. 듣기 4지선다는 '
+                     '소리 자체가 문제이기 때문에 묵음 옵션이 없어요. 묵음 상태에서도 다시 듣기 버튼은 그대로 작동해요.',
+              'zh': '在「單字卡」「看選項猜四選一」「排列語序」「聽寫」中，可以用「靜音」核取方塊關閉新題目出現時自動播放的越南語語音。這四種模式的題目'
+                    '本身已經以文字顯示在畫面上，所以沒有聲音也能作答。「聽發音猜四選一」因為聲音本身就是題目，所以沒有靜音選項。即使開啟靜音，'
+                    '「重新播放」按鈕仍可正常使用。',
+              'en': 'In Flashcard, Look and choose (4 options), Word order, and Dictation, the Mute checkbox turns off '
+                    'the automatic Vietnamese playback that plays when a new question appears. All four modes already '
+                    'show the question as text on screen, so you can still answer with the sound off. Listen and '
+                    'choose (4 options) has no Mute option, since the audio itself is the question. The replay button '
+                    'still works even while muted.',
+              'ja': '「フラッシュカード」「見て選ぶ4択」「語順並べ替え」「書き取り」では、新しい問題が表示されたときに自動再生されるベトナム語音声を'
+                    '「ミュート」チェックボックスでオフにできます。この4つのモードは問題がすでに画面上に文字で表示されているため、音声なしでも解答'
+                    'できます。「聞いて選ぶ4択」は音声自体が問題なのでミュートのオプションはありません。ミュート中でも「もう一度聞く」ボタンは通常'
+                    'どおり使えます。'}},
+    {'name': {'ko': '언어별 바로가기 주소',
+              'zh': '各語言的直達網址',
+              'en': 'Language-specific web addresses',
+              'ja': '言語別ショートカットURL'},
+     'body': {'ko': 'hoc.tieng.viet.mobile/ko, /en, /zt, /ja 주소로 바로 접속하면 그 언어 모드로 곧바로 열려요. 이렇게 열린 언어는 '
+                     '저장되어 다음에 다시 방문할 때도 그대로 유지돼요.',
+              'zh': '直接前往 hoc.tieng.viet.mobile/ko、/en、/zt、/ja 這些網址，就能以該語言模式立即開啟。這樣選擇的語言會被記住，下次造訪時'
+                    '也會維持相同語言。',
+              'en': 'Going directly to hoc.tieng.viet.mobile/ko, /en, /zt, or /ja opens the app in that language right '
+                    'away. The language you land on this way is remembered for your next visit too.',
+              'ja': 'hoc.tieng.viet.mobile/ko、/en、/zt、/ja のアドレスに直接アクセスすると、その言語モードですぐに開きます。この方法で開いた'
+                    '言語は記憶され、次回訪問時も同じ言語が保持されます。'}},
 ]
 
 USAGE_GUIDE_TABS = [
@@ -464,12 +484,13 @@ USAGE_GUIDE_TABS = [
                       'en': 'Hear the audio with no text shown, and pick the meaning from four choices.',
                       'ja': '文字なしで音声だけを聞き、4つの選択肢の中から正しい意味を選ぶモードです。'}},
             {'name': {'ko': '어순 배열', 'zh': '排列語序', 'en': 'Word order', 'ja': '語順並べ'},
-             'body': {'ko': '한국어 문장이 제시되면 베트남어 단어 조각을 순서대로 눌러 담아 문장을 완성해요. 다시 담기나 건너뛰기도 가능하고, '
-                             '완성하면 자동으로 정답을 확인해줘요.',
-                      'zh': '看到韓語句子後，依序點選越南語單字碎片來完成句子。可以重新排列或跳過，完成後會自動核對答案。',
-                      'en': 'Given a Korean sentence, tap Vietnamese word chips in order to build it. You can reset '
-                            'your picks or skip, and it checks the answer automatically once complete.',
-                      'ja': '韓国語の文が提示されたら、ベトナム語の単語の断片を順番にタップして文を完成させます。やり直しやスキップも可能で、完成すると自動的に正解を確認します。'}},
+             'body': {'ko': '문제 문장이 제시되면서 음성으로도 읽어 줘요. 베트남어 단어 조각을 순서대로 눌러 담아 문장을 완성하세요. 다시 담기나 '
+                             '건너뛰기도 가능하고, 완성하면 자동으로 정답을 확인해줘요.',
+                      'zh': '看到題目句子的同時也會朗讀出來。依序點選越南語單字碎片來完成句子。可以重新排列或跳過，完成後會自動核對答案。',
+                      'en': 'The prompt sentence is shown and read aloud at the same time. Tap Vietnamese word chips '
+                            'in order to build it. You can reset your picks or skip, and it checks the answer '
+                            'automatically once complete.',
+                      'ja': '問題文が表示されると同時に音声でも読み上げられます。ベトナム語の単語の断片を順番にタップして文を完成させます。やり直しやスキップも可能で、完成すると自動的に正解を確認します。'}},
             {'name': {'ko': '받아쓰기', 'zh': '聽寫', 'en': 'Dictation', 'ja': '書き取り'},
              'body': {'ko': '베트남어 음성을 듣고 그대로 받아 적는 모드예요. 다시 듣기 버튼으로 음성을 반복해서 들을 수 있어요.',
                       'zh': '聆聽越南語語音並直接聽寫下來的模式，可用「重新聆聽」按鈕反覆聽取語音。',
