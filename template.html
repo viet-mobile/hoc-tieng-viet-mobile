@@ -1229,12 +1229,14 @@
   }
   #panel-review .study-auto-row { display: flex; align-items: center; gap: 7px 10px; flex-wrap: wrap; }
   #panel-review .study-auto-row .auto-lbl { flex: none; }
-  #panel-review .auto-advance-option, #panel-review .auto-correct-option, #panel-review .repeat-review-option {
+  #panel-review .auto-advance-option, #panel-review .auto-correct-option, #panel-review .repeat-review-option,
+  #panel-review .mute-autoplay-option {
     display: inline-flex; align-items: center; gap: 5px; min-height: 44px;
     font-size: .78rem; font-weight: 700; color: var(--ink-soft); white-space: nowrap;
   }
   #panel-review .auto-advance-option input,
-  #panel-review .auto-correct-option input { margin: 0; flex: none; }
+  #panel-review .auto-correct-option input,
+  #panel-review .mute-autoplay-option input { margin: 0; flex: none; }
   #panel-review .repeat-review-option { margin-left: 2px; }
   #panel-review .auto-seconds-select { min-height: 44px; }
   @media (min-width: 700px) {
@@ -1269,15 +1271,16 @@
 
     #panel-review .study-mode-tabs { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; }
     #panel-review .study-mode-btn { min-width: 0; min-height: 44px; padding: 4px 2px; font-size: clamp(.59rem, 2.4vw, .75rem); }
-    #panel-review .study-auto-row { display: grid; grid-template-columns: minmax(0, auto) minmax(0, auto) minmax(0, auto); justify-content: space-between; align-items: center; gap: 4px; padding: 4px 6px; }
+    #panel-review .study-auto-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, auto)); justify-content: space-between; align-items: center; gap: 4px; padding: 4px 6px; }
     #panel-review .study-auto-row > * { min-width: 0; }
     #panel-review .auto-advance-group { gap: 3px; }
     #panel-review .auto-advance-option, #panel-review .auto-correct-option,
-    #panel-review .repeat-review-option { min-width: 0; min-height: 38px; gap: 2px; font-size: clamp(.6rem, 2.3vw, .75rem); line-height: 1.15; }
+    #panel-review .repeat-review-option, #panel-review .mute-autoplay-option { min-width: 0; min-height: 38px; gap: 2px; font-size: clamp(.6rem, 2.3vw, .75rem); line-height: 1.15; }
     #panel-review .repeat-review-option { margin-left: 0; }
     #panel-review .auto-advance-option, #panel-review .auto-correct-option,
-    #panel-review .repeat-review-option { white-space: normal; }
-    #panel-review .auto-advance-option input, #panel-review .auto-correct-option input { width: 14px; height: 14px; }
+    #panel-review .repeat-review-option, #panel-review .mute-autoplay-option { white-space: normal; }
+    #panel-review .auto-advance-option input, #panel-review .auto-correct-option input,
+    #panel-review .mute-autoplay-option input { width: 14px; height: 14px; }
     #panel-review .auto-seconds-select, #panel-review .repeat-count-select { min-width: 0; min-height: 38px; padding: 2px 1px; font-size: .7rem; }
   }
   @media (max-width: 380px) {
@@ -1285,7 +1288,7 @@
     .lang-btn { padding-inline: 2px; }
     #panel-review .study-auto-row { gap: 2px; }
     #panel-review .auto-advance-option, #panel-review .auto-correct-option,
-    #panel-review .repeat-review-option { font-size: .6rem; }
+    #panel-review .repeat-review-option, #panel-review .mute-autoplay-option { font-size: .6rem; }
   }
 
   /* Scale the study surface with the available viewport, including large iPads in landscape. */

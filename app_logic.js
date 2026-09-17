@@ -132,6 +132,7 @@
   },
   "정답 시 다음 문제": { "zh": "答對後下一題", "en": "Next question when correct", "ja": "正解で次の問題" },
   "반복 듣기": { "zh": "重複播放", "en": "Repeat", "ja": "繰り返し再生" },
+  "묵음": { "zh": "靜音", "en": "Mute", "ja": "ミュート" },
   "첫만남": { "zh": "初次見面", "en": "First Meeting", "ja": "初対面" },
   "다음 문제": {
     "zh": "下一題",
@@ -6772,6 +6773,19 @@
     function saveAutoAdvancePref() {
       try { window.localStorage && window.localStorage.setItem("vn-app-auto-adv", JSON.stringify({ enabled: autoAdvanceEnabled, nextOnCorrect: autoNextOnCorrect, seconds: autoAdvanceSeconds })); } catch (e) { /* no-op */ }
     }
+    // 묵음(Mute): skips the automatic question-start playback in flash/look/order/type -- every
+    // one of those modes already shows the full question as text (the Vietnamese itself, or in
+    // order/type's case the meaning prompt), so the audio there is a convenience, not the
+    // question. 듣기 4지선다 is deliberately exempt: its audio IS the question, nothing else on
+    // screen identifies the item, so muting it would make the mode unplayable -- see the mode
+    // check in speakItemThenArm()/speakPromptThenArm() below. Manual replay buttons (다시 듣기 /
+    // the speak-btn) are untouched either way; this only suppresses the automatic auto-play.
+    var muteAutoPlay = false;
+    try { muteAutoPlay = window.localStorage && window.localStorage.getItem("vn-app-mute-autoplay") === "1"; } catch (eMute) { /* no-op */ }
+    function saveMuteAutoPlayPref() {
+      try { window.localStorage && window.localStorage.setItem("vn-app-mute-autoplay", muteAutoPlay ? "1" : "0"); } catch (e) { /* no-op */ }
+    }
+    function autoPlayMuted() { return muteAutoPlay && studyState.mode !== "mcq"; }
     var autoAdvanceTimer = null;
     function clearAutoAdvanceTimer() {
       if (autoAdvanceTimer) { clearTimeout(autoAdvanceTimer); autoAdvanceTimer = null; }
@@ -6815,13 +6829,14 @@
     // autoAdvanceSeconds window entirely: the learner now gets the full playback PLUS a full
     // autoAdvanceSeconds to answer, rather than the two overlapping and the audio losing the race.
     function speakItemThenArm(vi, revealFn) {
-      if (reviewTabIsActive()) {
+      if (reviewTabIsActive() && !autoPlayMuted()) {
         if (autoAdvanceEnabled) speak(vi, function () { if (reviewTabIsActive()) armAutoReveal(revealFn); });
         else speak(vi);
       } else if (autoAdvanceEnabled) {
-        // Background pre-render (see reviewTabIsActive()'s own comment) -- no audio plays, so
-        // there's nothing to wait on; arm immediately same as before, harmless since the timer's
-        // own fire-time reviewTabIsActive() check no-ops it if the tab is still never opened.
+        // Background pre-render (see reviewTabIsActive()'s own comment), or 묵음 is on -- either
+        // way no audio plays, so there's nothing to wait on; arm immediately same as before,
+        // harmless since the timer's own fire-time reviewTabIsActive() check no-ops it if the
+        // tab is still never opened.
         armAutoReveal(revealFn);
       }
     }
@@ -6831,7 +6846,7 @@
     // item.vi in Vietnamese, same background-pre-render guard and same "arm only after the
     // audio finishes" auto-advance chaining.
     function speakPromptThenArm(kr, revealFn) {
-      if (reviewTabIsActive()) {
+      if (reviewTabIsActive() && !autoPlayMuted()) {
         if (autoAdvanceEnabled) speakMeaning(kr, function () { if (reviewTabIsActive()) armAutoReveal(revealFn); });
         else speakMeaning(kr);
       } else if (autoAdvanceEnabled) {
@@ -6848,13 +6863,26 @@
     var autoAdvRoot = document.getElementById("study-auto-row");
     function renderAutoAdvanceControls() {
       if (!autoAdvRoot) return;
+      // 묵음 only makes sense where the question is already fully shown as text (flash/look/
+      // order/type) -- in 듣기 4지선다 the audio IS the question, so the checkbox is hidden
+      // there entirely rather than offering a mute that would make the mode unplayable.
+      var muteHtml = studyState.mode === "mcq" ? "" :
+        '<label class="mute-autoplay-option"><input type="checkbox" id="mute-autoplay-toggle" ' + (muteAutoPlay ? "checked" : "") + '> ' + TU("묵음") + '</label>';
       var html = '<label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span id="repeat-toggle-review"></span></label>' +
+        muteHtml +
         '<span class="auto-advance-group"><label class="auto-advance-option"><input type="checkbox" id="auto-advance-toggle" ' + (autoAdvanceEnabled ? "checked" : "") + '> ' + TU("자동 넘김") + '</label>' +
         '<select id="auto-advance-seconds" class="auto-seconds-select" ' + (autoAdvanceEnabled ? "" : "disabled") + '>' +
         AUTO_ADV_SECONDS_OPTS.map(function (s) { return '<option value="' + s + '"' + (s === autoAdvanceSeconds ? " selected" : "") + '>' + s + TU("초") + '</option>'; }).join("") +
         '</select></span><label class="auto-correct-option"><input type="checkbox" id="auto-next-correct-toggle" ' + (autoNextOnCorrect ? "checked" : "") + '> ' + TU("정답 시 다음 문제") + '</label>';
       autoAdvRoot.innerHTML = html;
       renderViRepeatToggle(document.getElementById("repeat-toggle-review"));
+      var muteToggle = document.getElementById("mute-autoplay-toggle");
+      if (muteToggle) {
+        muteToggle.addEventListener("change", function (e) {
+          muteAutoPlay = e.target.checked;
+          saveMuteAutoPlayPref();
+        });
+      }
       document.getElementById("auto-advance-toggle").addEventListener("change", function (e) {
         autoAdvanceEnabled = e.target.checked;
         saveAutoAdvancePref();
@@ -6979,6 +7007,7 @@
         btn.setAttribute("aria-selected", "true");
         studyState.mode = btn.dataset.mode;
         studyState.current = null;
+        renderAutoAdvanceControls();
         startMode();
       });
     });
