@@ -3035,9 +3035,25 @@
   // Shared by speakMeaning() and playReadAllMeaning(): the same "/" -> ", " swap
   // prepareSpeechText() applies for Vietnamese (see stripSlashForSpeech() above), so meaning/
   // translation text like "담보/보장하다" is read as a natural pause instead of the word "slash".
+  // A scripture citation's "N:M" (chapter:verse) reads badly if a TTS engine speaks the colon
+  // literally or mistakes it for a clock time -- e.g. Korean "디모데 후서 3:16" should be heard as
+  // "디모데 후서 3장 16절", not "디모데 후서 삼 콜론 십육" or "세 시 십육 분". Meaning text is
+  // already resolved to currentLang by T(), so every "N:M" can be rewritten in place using that
+  // language's own chapter/verse phrasing.
+  var SCRIPTURE_VERSE_TEMPLATE = {
+    ko: function (ch, vs) { return ch + "장 " + vs + "절"; },
+    zh: function (ch, vs) { return ch + "章" + vs + "節"; },
+    ja: function (ch, vs) { return ch + "章" + vs + "節"; },
+    en: function (ch, vs) { return "chapter " + ch + ", verse " + vs; }
+  };
+  function expandScriptureVersesForSpeech(text) {
+    var tpl = SCRIPTURE_VERSE_TEMPLATE[currentLang];
+    if (!tpl || !text) return text;
+    return String(text).replace(/(\d+):(\d+)/g, function (m, ch, vs) { return tpl(ch, vs); });
+  }
   function prepareMeaningSpeechText(text) {
     if (!text) return text;
-    return stripHanjaParensForSpeech(stripSlashForSpeech(String(text).trim()));
+    return expandScriptureVersesForSpeech(stripHanjaParensForSpeech(stripSlashForSpeech(String(text).trim())));
   }
   // Reads text (a meaning/translation, already resolved to the current UI language) in that
   // language's own voice/voiceURI (selectedLangVoiceURI, same picker 전체 듣기 uses) -- a
