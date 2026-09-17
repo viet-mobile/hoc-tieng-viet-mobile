@@ -3131,7 +3131,29 @@
     if (labelEl) labelEl.textContent = playing ? TU("정지") : TU("전체 듣기");
   }
 
+  // iOS/iPadOS Safari has a long-standing WebKit bug where speechSynthesis silently stalls
+  // partway through a queue of chained utterances -- 전체 듣기 reads only the first entry, then
+  // falls permanently silent with no error event to react to. Nudging pause()+resume() every
+  // few seconds while a sequence is playing resets WebKit's internal watchdog and keeps it
+  // going; harmless elsewhere (Windows/desktop, which the user confirms isn't affected, simply
+  // pause/resume an utterance that was never at risk of stalling).
+  var readAllKeepAliveTimer = null;
+  function startReadAllKeepAlive() {
+    stopReadAllKeepAlive();
+    if (!("speechSynthesis" in window)) return;
+    readAllKeepAliveTimer = setInterval(function () {
+      if (!readAllState.id) { stopReadAllKeepAlive(); return; }
+      try {
+        var synth = window.speechSynthesis;
+        if (synth.speaking) { synth.pause(); synth.resume(); }
+      } catch (e) { /* no-op */ }
+    }, 5000);
+  }
+  function stopReadAllKeepAlive() {
+    if (readAllKeepAliveTimer) { clearInterval(readAllKeepAliveTimer); readAllKeepAliveTimer = null; }
+  }
   function stopReadAllSequence() {
+    stopReadAllKeepAlive();
     if (readAllState.btn) setReadAllBtnPlaying(readAllState.btn, false);
     readAllState = { id: null, texts: [], idx: -1, btn: null, token: readAllState.token + 1 };
   }
@@ -3200,6 +3222,7 @@
     var token = readAllState.token + 1;
     readAllState = { id: id, texts: texts, idx: -1, btn: btn, token: token };
     setReadAllBtnPlaying(btn, true);
+    startReadAllKeepAlive();
     playReadAllNext(token);
   }
 
