@@ -5541,7 +5541,15 @@
     // A period between digits is a Vietnamese thousands/decimal separator (2.500, 144.000),
     // never a sentence boundary. Stash the complete number before looking for final periods.
     stashed = stashPattern(stashed, /\d+(?:\.\d+)+/g, decimalBag, "");
-    var parts = stashed.match(/[^.!?。！？]+[.!?。！？”"'’)）\]]+|[^.!?。！？]+$/g) || [];
+    // The trailing closer class also needs 」/』 (Chinese/Japanese closing corner brackets) --
+    // without them, "...歡樂。」" split right after the 。 and left the 」 orphaned at the start
+    // of the NEXT match, corrupting every sentence boundary downstream of a quoted citation.
+    // ．(fullwidth period, U+FF0E) is also a delimiter -- this corpus uses it only as a numbered-
+    // heading marker ("1．", "2．"...), never as real prose punctuation, but the OTHER languages'
+    // matching heading uses an ASCII "1. " that already splits -- without ．here too, zh/ja stayed
+    // one unsplit sentence while vi/ko/en split into two, throwing sentencePairs()'s count-based
+    // alignment off by one for every single numbered heading in the source.
+    var parts = stashed.match(/[^.!?。！？．]+[.!?。！？．”"'’)）\]』」]+|[^.!?。！？．]+$/g) || [];
     return parts.map(function (p) {
       return unstashPattern(unstashPattern(unstashPattern(p, decimalBag, ""), ellBag, ""), parenBag, "").trim();
     }).filter(Boolean);
@@ -5551,19 +5559,38 @@
   // regex above consumes those together with the delimiter(s) that end the sentence.
   function splitSentences(text) {
     var s = String(text || "");
-    var parenBag = [];
-    s = stashPattern(s, /\([^()]*\)\.?/g, parenBag, "");
     var out = [];
     // Split around dash-citations: even indices are plain text, odd indices are the citations
     // themselves (String.split with a capturing group keeps the matched groups in the result).
     var chunks = s.split(/([​\s]*[—–][^.]*\d+:\d+[^.]*\.)/);
     chunks.forEach(function (chunk, i) {
       if (i % 2 === 1) {
-        var citation = unstashPattern(chunk.replace(/^[​\s]+/, ""), parenBag, "").trim();
+        var citation = chunk.replace(/^[​\s]+/, "").trim();
         if (citation) out.push(citation);
         return;
       }
-      splitPlain(chunk, parenBag).forEach(function (p) { if (p) out.push(p); });
+      // A parenthetical Bible citation -- ASCII "(...)" or the full-width "（...）" Chinese/
+      // Japanese text uses -- is always its own atomic sentence, split out explicitly (same
+      // technique as the dash-citation split above) BEFORE the generic splitter ever runs.
+      // Merely stashing it (as any other non-citation paren still is, just below) isn't enough
+      // here: a stashed citation has no delimiter character left on either side of it, so
+      // "...hớn hở” (Thi thiên 104:14, 15). Một số..." glued the citation onto whichever
+      // neighbor had no punctuation of its own, throwing off every pairing after it -- and
+      // Chinese's full-width （） was never even recognized by the old ASCII-only stash, so its
+      // citations never lined up with the Vietnamese boundary they were supposed to match
+      // either. Requires a chapter:verse digit pattern so an ordinary parenthetical remark is
+      // never mistaken for a citation.
+      var subchunks = chunk.split(/([(（][^()（）]*\d+:\d+[^()（）]*[)）][.。]?)/);
+      subchunks.forEach(function (sub, j) {
+        if (j % 2 === 1) {
+          var citation = sub.trim();
+          if (citation) out.push(citation);
+          return;
+        }
+        var parenBag = [];
+        var stashed = stashPattern(sub, /\([^()]*\)\.?/g, parenBag, "");
+        splitPlain(stashed, parenBag).forEach(function (p) { if (p) out.push(p); });
+      });
     });
     return out;
   }
@@ -5613,11 +5640,14 @@
     return pairs;
   }
   function stripReviewListMarker(value) {
-    // Only a leading list label followed by whitespace (or the end) is removed -- either
-    // "1. "/"A. "/"ㄱ. " or the parenthesized "(A) "/"(ㄱ) " form LFF's lettered sub-questions
-    // use. Decimal numbers, abbreviations and punctuation inside a sentence remain intact.
+    // Only a leading list label followed by whitespace (or the end) is removed -- "1. "/"A. "/
+    // "ㄱ. ", the parenthesized "(A) "/"(ㄱ) " form LFF's lettered sub-questions use, or a
+    // full-width-period marker like "2．"/"3。" (Chinese/Japanese numbered questions don't put a
+    // space after the marker, so that one doesn't require trailing whitespace -- only the ASCII
+    // "." form does, so a decimal number at the very start of a sentence, e.g. "12.5 là...",
+    // is never mistaken for marker "12." followed by "5 là...").
     return String(value || "").replace(
-      /^\s*(?:(?:[0-9]+|[A-Za-z]|[ㄱ-ㅎㅏ-ㅣᄀ-ᇿ])\.(?:\s+|$)|\((?:[0-9]+|[A-Za-z]|[ㄱ-ㅎㅏ-ㅣᄀ-ᇿ])\)(?:\s+|$))+/u,
+      /^\s*(?:(?:[0-9]+|[A-Za-z]|[ㄱ-ㅎㅏ-ㅣᄀ-ᇿ])\.(?:\s+|$)|(?:[0-9]+|[A-Za-z]|[ㄱ-ㅎㅏ-ㅣᄀ-ᇿ])[．。]\s*|\((?:[0-9]+|[A-Za-z]|[ㄱ-ㅎㅏ-ㅣᄀ-ᇿ])\)(?:\s+|$))+/u,
       ""
     ).trim();
   }
