@@ -652,8 +652,6 @@
   }
   .read-all-btn .ra-icon { display: inline-flex; width: 12px; height: 12px; }
   .read-all-btn .ra-icon svg { width: 12px; height: 12px; }
-  .read-all-btn:hover { background: var(--accent); color: var(--accent-ink); }
-  .read-all-btn[data-playing="true"] { background: var(--accent); color: var(--accent-ink); }
   .read-all-btn[data-playing="true"] .ra-icon { animation: read-all-pulse 1s ease-in-out infinite; }
   @media (prefers-reduced-motion: reduce) { .read-all-btn[data-playing="true"] .ra-icon { animation: none; } }
   @keyframes read-all-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
@@ -829,7 +827,7 @@
      below -- itself assigned in fixed order (자주-분홍-주황-노랑-연두-민트-하늘-파랑-네이비-보라,
      wrapping back to 1 after 10) by assignPastelSlots() in app_logic.js. --pastel-rgb here is
      just the neutral fallback shown for the instant before that JS runs. */
-  .tab-btn, .subtab-btn, .lang-btn, .study-mode-btn, .foot-btn {
+  .tab-btn, .subtab-btn, .lang-btn, .study-mode-btn, .foot-btn, .study-chip, .read-all-btn {
     --pastel-rgb: 216 220 206;
     background-color: rgb(var(--pastel-rgb) / var(--pastel-fill-a));
     background-image: var(--droplet-gloss);
@@ -837,15 +835,18 @@
     box-shadow: var(--droplet-shadow);
     transition: background-color .15s, border-color .15s, box-shadow .15s, color .15s;
   }
-  /* The selected/primary state has to read at a glance, independent of which of the 10 hues a
-     given button happens to be wearing -- a same-hue-just-more-opaque fill alone was too subtle
-     (see comment above assignPastelSlots() in app_logic.js). Layering on a solid ink-darkened
-     border, bolder text and a small lift on top of the stronger fill gives it its own consistent
-     shape/weight language, not just "a bit more saturated". .foot-btn.primary (다음 문제/확인,
-     the study-action-row's emphasized action) shares this same treatment rather than a plain
-     solid --accent fill, so it reads as the same pastel-droplet family as everything else. */
+  /* The selected/primary/placed/playing state has to read at a glance, independent of which of
+     the 10 hues a given button happens to be wearing -- a same-hue-just-more-opaque fill alone
+     was too subtle (see comment above assignPastelSlots() in app_logic.js). Layering on a solid
+     ink-darkened border, bolder text and a small lift on top of the stronger fill gives it its
+     own consistent shape/weight language, not just "a bit more saturated". .foot-btn.primary
+     (다음 문제/확인), .study-chip.placed (어순 배열의 이미 놓인 낱말) and
+     .read-all-btn[data-playing="true"] (전체 듣기 재생 중) all share this same treatment rather
+     than a plain solid --accent fill, so every one of them reads as the same pastel-droplet
+     family as the tabs above them. */
   .tab-btn[aria-selected="true"], .subtab-btn[aria-selected="true"],
-  .lang-btn[aria-pressed="true"], .study-mode-btn[aria-selected="true"], .foot-btn.primary {
+  .lang-btn[aria-pressed="true"], .study-mode-btn[aria-selected="true"], .foot-btn.primary,
+  .study-chip.placed, .read-all-btn[data-playing="true"] {
     background-color: rgb(var(--pastel-rgb) / var(--pastel-selected-a));
     background-image: var(--droplet-gloss);
     border-width: 2px;

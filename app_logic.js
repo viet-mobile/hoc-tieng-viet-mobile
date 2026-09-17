@@ -6825,6 +6825,19 @@
         armAutoReveal(revealFn);
       }
     }
+    // 어순 배열's prompt is the MEANING (item.kr) -- the Vietnamese is what the learner is
+    // arranging, so reading it aloud up front would just hand them the answer. This mirrors
+    // speakItemThenArm() above but reads item.kr in the current UI-language voice instead of
+    // item.vi in Vietnamese, same background-pre-render guard and same "arm only after the
+    // audio finishes" auto-advance chaining.
+    function speakPromptThenArm(kr, revealFn) {
+      if (reviewTabIsActive()) {
+        if (autoAdvanceEnabled) speakMeaning(kr, function () { if (reviewTabIsActive()) armAutoReveal(revealFn); });
+        else speakMeaning(kr);
+      } else if (autoAdvanceEnabled) {
+        armAutoReveal(revealFn);
+      }
+    }
     function currentRevealFn() {
       if (studyState.mode === "flash") return revealFlash;
       if (studyState.mode === "look") return revealLook;
@@ -7226,7 +7239,7 @@
         renderOrderChips();
       });
       document.getElementById("order-skip").addEventListener("click", nextOrder);
-      if (autoAdvanceEnabled) armAutoReveal(revealOrder);
+      speakPromptThenArm(item.kr, revealOrder);
     }
     // Cold reveal -- the learner hasn't finished (or hasn't gotten right) the arrangement by the
     // time the interval nearly runs out. Shows the correct Vietnamese order in the feedback area
