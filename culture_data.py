@@ -205,11 +205,11 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'zh': '舉個例子給大家看吧！',
                   'en': 'Let me give you an example!',
                   'ja': '例を挙げてみますね！'},
-                 {'ko': 'sinh hoạt [씽 호앋] 생활 / xã hội [싸 호이] 사회 / quan tâm [꽌떰] 관심',
-                  'zh': 'sinh hoạt [씽 호앋] 生活 / xã hội [싸 호이] 社會 / quan tâm [꽌떰] 關心',
-                  'en': 'sinh hoạt [씽 호앋] life/living / xã hội [싸 호이] society / quan tâm [꽌떰] '
-                        'interest/concern',
-                  'ja': 'sinh hoạt [씽 호앋] 生活 / xã hội [싸 호이] 社会 / quan tâm [꽌떰] 関心'},
+                 {'ko': 'đồng ý [동 이] 동의(同意) / xã hội [싸 호이] 사회(社會) / quan quang [꽌꽝] 관광',
+                  'zh': 'đồng ý [동 이] 同意 / xã hội [싸 호이] 社會 / quan quang [꽌꽝] 觀光',
+                  'en': 'đồng ý [동 이] agree / xã hội [싸 호이] society / quan quang [꽌꽝] '
+                        'tourism',
+                  'ja': 'đồng ý [동 이] 同意 / xã hội [싸 호이] 社会 / quan quang [꽌꽝] 観光'},
                  {'ko': '위 단어들을 보시면 발음이 상당히 비슷한 것을 아셨을 텐데요. 물론 베트남어는 성조가 있어서 성조에 따라 그 뜻이 달라지지만 음은 같기 때문에 처음 '
                         '보는 단어일지라도 음으로 유추할 수가 있습니다.',
                   'zh': '看了上面的單字，大家應該會發現發音相當相似吧。當然，越南語有聲調之分，發音會因聲調不同而意思有所改變，但由於音節本身相同，就算是第一次見到的單字，也能透過發音來推測其意思。',
