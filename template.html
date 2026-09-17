@@ -54,9 +54,9 @@
     --pastel-8: 187 208 247;  /* 파랑 */
     --pastel-9: 172 184 222;  /* 네이비 */
     --pastel-10: 214 195 242; /* 보라 */
-    --pastel-fill-a: 0.55;
-    --pastel-border-a: 0.7;
-    --pastel-selected-a: 0.9;
+    --pastel-fill-a: 0.38;
+    --pastel-border-a: 0.55;
+    --pastel-selected-a: 0.95;
     /* Convex, semi-transparent "water droplet" bubble: a soft outer shadow for lift, a bright
        inset highlight along the top for a glossy dome, and a faint inset shadow along the
        bottom edge so the surface reads as swollen rather than flat. */
@@ -101,9 +101,9 @@
       --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
       /* Same pastel hues, dialed down so they read as tinted glass on a dark surface
          instead of glowing. */
-      --pastel-fill-a: 0.22;
-      --pastel-border-a: 0.4;
-      --pastel-selected-a: 0.5;
+      --pastel-fill-a: 0.16;
+      --pastel-border-a: 0.32;
+      --pastel-selected-a: 0.62;
       --droplet-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 7px 16px -10px rgba(0,0,0,0.5),
         inset 0 1.5px 0 rgba(255,255,255,0.12), inset 0 -3px 6px -3px rgba(0,0,0,0.3);
       --droplet-shadow-selected: 0 2px 5px rgba(0,0,0,0.35), 0 10px 20px -10px rgba(0,0,0,0.55),
@@ -133,9 +133,9 @@
     --pink: #E39BC0;
     --pink-soft: #3A2530;
     --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
-    --pastel-fill-a: 0.22;
-    --pastel-border-a: 0.4;
-    --pastel-selected-a: 0.5;
+    --pastel-fill-a: 0.16;
+    --pastel-border-a: 0.32;
+    --pastel-selected-a: 0.62;
     --droplet-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 7px 16px -10px rgba(0,0,0,0.5),
       inset 0 1.5px 0 rgba(255,255,255,0.12), inset 0 -3px 6px -3px rgba(0,0,0,0.3);
     --droplet-shadow-selected: 0 2px 5px rgba(0,0,0,0.35), 0 10px 20px -10px rgba(0,0,0,0.55),
@@ -837,13 +837,21 @@
     box-shadow: var(--droplet-shadow);
     transition: background-color .15s, border-color .15s, box-shadow .15s, color .15s;
   }
+  /* The selected state has to read at a glance, independent of which of the 10 hues a given
+     button happens to be wearing -- a same-hue-just-more-opaque fill alone was too subtle (see
+     comment above assignPastelSlots() in app_logic.js). Layering on a solid ink-darkened border,
+     bolder text and a small lift on top of the stronger fill gives selection its own consistent
+     shape/weight language, not just "a bit more saturated". */
   .tab-btn[aria-selected="true"], .subtab-btn[aria-selected="true"],
   .lang-btn[aria-pressed="true"], .study-mode-btn[aria-selected="true"] {
     background-color: rgb(var(--pastel-rgb) / var(--pastel-selected-a));
     background-image: var(--droplet-gloss);
-    border-color: rgb(var(--pastel-rgb) / 1);
+    border-width: 2px;
+    border-color: color-mix(in srgb, rgb(var(--pastel-rgb)) 55%, var(--ink) 45%);
     box-shadow: var(--droplet-shadow-selected);
     color: var(--ink);
+    font-weight: 800;
+    transform: translateY(-1px);
   }
   [data-pastel="1"]  { --pastel-rgb: var(--pastel-1); }
   [data-pastel="2"]  { --pastel-rgb: var(--pastel-2); }
