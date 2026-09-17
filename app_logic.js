@@ -73,17 +73,19 @@
   }
 
   /* ---------------- pastel droplet slot assignment ---------------- */
-  // Every nav box/button (top tabs, every subtab row, study-mode tabs, the language switch)
-  // gets one hue from a fixed 10-color rotation -- 자주/분홍/주황/노랑/연두/민트/하늘/파랑/
-  // 네이비/보라, wrapping back to the 1st color after the 10th -- via a data-pastel="1".."10"
-  // attribute that template.html's [data-pastel] rules turn into --pastel-rgb (see the "Pastel
-  // droplet buttons" CSS section). Slots are handed out in document order and, once given,
-  // never revisited -- see pastelSlotCounter below -- so a button's color stays stable across
+  // Every nav box/button (top tabs, every subtab row, study-mode tabs, the language switch, and
+  // the 다시 담기/다음 문제/확인 foot-btn action row every study mode ends with) gets one hue
+  // from a fixed 10-color rotation -- 자주/분홍/주황/노랑/연두/민트/하늘/파랑/네이비/보라,
+  // wrapping back to the 1st color after the 10th -- via a data-pastel="1".."10" attribute that
+  // template.html's [data-pastel] rules turn into --pastel-rgb (see the "Pastel droplet
+  // buttons" CSS section). Slots are handed out in document order and, once given, never
+  // revisited -- see pastelSlotCounter below -- so a button's color stays stable across
   // re-renders. A MutationObserver keeps re-scanning for newly-created buttons this app renders
-  // on demand (the wizard's per-conversation stage pills, review's per-category scope tabs)
-  // that didn't exist yet at the previous scan; already-assigned elements are skipped instantly.
+  // on demand (the wizard's per-conversation stage pills, review's per-category scope tabs, each
+  // study mode's own foot-btn row) that didn't exist yet at the previous scan; already-assigned
+  // elements are skipped instantly.
   var PASTEL_SLOT_COUNT = 10;
-  var PASTEL_SLOT_SELECTOR = ".tab-btn, .subtab-btn, .lang-btn, .study-mode-btn";
+  var PASTEL_SLOT_SELECTOR = ".tab-btn, .subtab-btn, .lang-btn, .study-mode-btn, .foot-btn";
   var pastelSlotCounter = 0;
   function assignPastelSlots() {
     document.querySelectorAll(PASTEL_SLOT_SELECTOR).forEach(function (el) {
