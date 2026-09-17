@@ -1236,6 +1236,15 @@
   #panel-review .mute-autoplay-option input { margin: 0; flex: none; }
   #panel-review .repeat-review-option { margin-left: 2px; }
   #panel-review .auto-seconds-select { min-height: 44px; }
+  /* 묵음 체크박스 옆에 뜨는 한/베/베한(또는 中文/越南語/全部 등) 범위 선택 버튼들. */
+  .mute-group { display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+  .mute-scope-row { display: inline-flex; gap: 3px; }
+  .mute-scope-btn {
+    border: 1.5px solid var(--border); background: var(--surface); color: var(--ink-soft);
+    font-family: inherit; font-size: .68rem; font-weight: 700; padding: 4px 8px;
+    border-radius: 8px 0 8px 0; cursor: pointer; min-height: 30px; white-space: nowrap;
+  }
+  .mute-scope-btn[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
   @media (min-width: 700px) {
     .topbar { padding-top: 10px; padding-bottom: 0; }
   }
@@ -1279,6 +1288,7 @@
     #panel-review .auto-advance-option input, #panel-review .auto-correct-option input,
     #panel-review .mute-autoplay-option input { width: 14px; height: 14px; }
     #panel-review .auto-seconds-select, #panel-review .repeat-count-select { min-width: 0; min-height: 38px; padding: 2px 1px; font-size: .7rem; }
+    .mute-scope-btn { min-height: 26px; padding: 3px 6px; font-size: .62rem; }
   }
   @media (max-width: 380px) {
     .brand-logo { width: 32px; height: 32px; }
@@ -1766,8 +1776,8 @@
       <div class="subtab-row" id="review-scope-tabs" aria-label="복습 범위"></div>
       <div class="study-mode-tabs" id="study-mode-tabs" role="tablist">
         <button class="study-mode-btn" role="tab" data-mode="flash" aria-selected="false" data-i18n="플래시카드">플래시카드</button>
-        <button class="study-mode-btn" role="tab" data-mode="look" aria-selected="false" data-i18n="보기 4지선다">보기 4지선다</button>
-        <button class="study-mode-btn" role="tab" data-mode="mcq" aria-selected="false" data-i18n="듣기 4지선다">듣기 4지선다</button>
+        <button class="study-mode-btn" role="tab" data-mode="look" aria-selected="false" data-i18n="보기">보기</button>
+        <button class="study-mode-btn" role="tab" data-mode="mcq" aria-selected="false" data-i18n="듣기">듣기</button>
         <button class="study-mode-btn" role="tab" data-mode="order" aria-selected="true" data-i18n="어순 배열">어순 배열</button>
         <button class="study-mode-btn" role="tab" data-mode="type" aria-selected="false" data-i18n="받아쓰기">받아쓰기</button>
       </div>

@@ -59,6 +59,20 @@
     if (typeof field === "string") return field;
     return field[currentLang] || field.ko || field.zh || field.en || field.ja || "";
   }
+  // T()'s graceful Korean fallback is exactly right for CONTENT DISPLAY (an untranslated field
+  // should still show something rather than go blank), but it's wrong for review pools: a field
+  // that has no zh/en/ja entry yet (e.g. some LFF_CONVERSATIONS lines are missing 'zh' entirely)
+  // would otherwise offer a Korean-language flashcard/multiple-choice option while the UI is in
+  // zh/en/ja mode. Tstrict() returns null instead of silently falling back to a different
+  // language, so review-pool builders can skip that item in this language rather than leak it.
+  // ko itself is always "available" (either field.ko or, for not-yet-multilingual content, the
+  // plain string IS the Korean text).
+  function Tstrict(field) {
+    if (field === null || field === undefined) return null;
+    if (typeof field === "string") return currentLang === "ko" ? field : null;
+    if (currentLang === "ko") return field.ko || field.zh || field.en || field.ja || null;
+    return field[currentLang] || null;
+  }
   var LANG_CHANGE_LISTENERS = [];
   function onLangChange(fn) { LANG_CHANGE_LISTENERS.push(fn); }
   function setLang(lang) {
@@ -794,25 +808,25 @@
     "en": "Review Games",
     "ja": "復習ゲーム"
   },
-  "플래시카드·보기 4지선다·듣기 4지선다·어순 배열·받아쓰기로 배운 내용을 복습하세요. 아래에서 복습할 영역을 먼저 골라 보세요.": {
-    "zh": "透過字卡、閱讀四選一、聽力四選一、排列語序、聽寫來複習所學內容。請先在下面選擇要複習的範圍。",
-    "en": "Review what you've learned with flashcards, reading multiple-choice, listening multiple-choice, word-order arrangement, and dictation. First pick which area to review below.",
-    "ja": "フラッシュカード、読解四択、リスニング四択、語順並べ替え、書き取りで学んだ内容を復習しましょう。まず下から復習する分野を選んでください。"
+  "플래시카드·보기·듣기·어순 배열·받아쓰기로 배운 내용을 복습하세요. 아래에서 복습할 영역을 먼저 골라 보세요.": {
+    "zh": "透過字卡、閱讀、聽力、排列語序、聽寫來複習所學內容。請先在下面選擇要複習的範圍。",
+    "en": "Review what you've learned with flashcards, reading, listening, word-order arrangement, and dictation. First pick which area to review below.",
+    "ja": "フラッシュカード、読解、聞き取り、語順並べ替え、書き取りで学んだ内容を復習しましょう。まず下から復習する分野を選んでください。"
   },
   "플래시카드": {
     "zh": "字卡",
     "en": "Flashcards",
     "ja": "フラッシュカード"
   },
-  "보기 4지선다": {
-    "zh": "閱讀四選一",
-    "en": "Reading Quiz",
-    "ja": "読解四択"
+  "보기": {
+    "zh": "閱讀",
+    "en": "Reading",
+    "ja": "読解"
   },
-  "듣기 4지선다": {
-    "zh": "聽力四選一",
-    "en": "Listening Quiz",
-    "ja": "リスニング四択"
+  "듣기": {
+    "zh": "聽力",
+    "en": "Listening",
+    "ja": "聞き取り"
   },
   "어순 배열": {
     "zh": "排列語序",
@@ -6503,7 +6517,8 @@
     // carry a 'hanja' field the other vocab sources don't -- on their review flashcards we show
     // the hanja in parens right after the Korean gloss, e.g. "이룰 성(成)".
     function krGlossWithHanja(wd) {
-      var g = T(wd.gloss);
+      var g = Tstrict(wd.gloss);
+      if (!g) return null;
       return wd.hanja ? (g + "(" + wd.hanja + ")") : g;
     }
 
@@ -6532,23 +6547,23 @@
       var mode = vocabFocus.mode, out = [];
       function push(vi, kr) { if (vi && kr) out.push({ vi: vi, kr: kr }); }
       if (mode === "theo") {
-        applyVocabFocus("theo", VOCAB_THEO).forEach(function (it) { push(it.word, T(it.meaning)); });
+        applyVocabFocus("theo", VOCAB_THEO).forEach(function (it) { push(it.word, Tstrict(it.meaning)); });
       } else if (mode === "freq") {
-        applyVocabFocus("freq", FREQ_VOCAB).forEach(function (it) { push(it.vi, T(it.kr)); });
+        applyVocabFocus("freq", FREQ_VOCAB).forEach(function (it) { push(it.vi, Tstrict(it.kr)); });
       } else if (mode === "chain") {
-        applyVocabFocus("chain", VOCAB_CHAIN).forEach(function (it) { push(it.word, T(it.meaning)); });
+        applyVocabFocus("chain", VOCAB_CHAIN).forEach(function (it) { push(it.word, Tstrict(it.meaning)); });
       } else if (mode === "names") {
-        applyVocabFocus("names", BIBLE_NAMES).forEach(function (n) { push(n.vi, T(n.kr)); });
+        applyVocabFocus("names", BIBLE_NAMES).forEach(function (n) { push(n.vi, Tstrict(n.kr)); });
       } else if (mode === "basic") {
         var basicWords = [];
         BASIC_WORD_GROUPS.forEach(function (g) { basicWords = basicWords.concat(g.words); });
-        applyVocabFocus("basic", basicWords).forEach(function (w) { push(w.vi, T(w.kr)); });
+        applyVocabFocus("basic", basicWords).forEach(function (w) { push(w.vi, Tstrict(w.kr)); });
       } else if (mode === "antonym") {
-        applyVocabFocus("antonym", ANTONYM_PAIRS).forEach(function (p) { push(p.vi1, T(p.kr1)); push(p.vi2, T(p.kr2)); });
+        applyVocabFocus("antonym", ANTONYM_PAIRS).forEach(function (p) { push(p.vi1, Tstrict(p.kr1)); push(p.vi2, Tstrict(p.kr2)); });
       } else if (mode === "dialect") {
         applyVocabFocus("dialect", DIALECT_WORDS).forEach(function (d) {
-          push(d.north.replace(/[/].*$/, ""), T(d.mean));
-          push(d.south.replace(/[/].*$/, ""), T(d.mean));
+          push(d.north.replace(/[/].*$/, ""), Tstrict(d.mean));
+          push(d.south.replace(/[/].*$/, ""), Tstrict(d.mean));
         });
       } else if (mode === "rhyme") {
         var rhymeFlat = [];
@@ -6557,7 +6572,7 @@
       } else if (mode === "groups") {
         var groupsFlat = [];
         VOCAB_GROUPS.forEach(function (g) { g.words.forEach(function (w) { groupsFlat.push(w); }); });
-        groupsFlat.slice(vocabFocus.start, vocabFocus.end).forEach(function (w) { push(w.word, T(w.meaning)); });
+        groupsFlat.slice(vocabFocus.start, vocabFocus.end).forEach(function (w) { push(w.word, Tstrict(w.meaning)); });
       } else if (mode === "orderrev") {
         var orItems = [];
         RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (fam) { fam.words.forEach(function (wd) { if (wd.word_order_reversed) orItems.push(wd); }); }); });
@@ -6566,7 +6581,7 @@
       } else if (mode === "wt") {
         var wtFlat = [];
         WATCHTOWER_VOCAB.forEach(function (wk) { wk.words.forEach(function (w) { wtFlat.push(w); }); });
-        wtFlat.slice(vocabFocus.start, vocabFocus.end).forEach(function (w) { push(w.vi, T(w.mean)); });
+        wtFlat.slice(vocabFocus.start, vocabFocus.end).forEach(function (w) { push(w.vi, Tstrict(w.mean)); });
       }
       return dedupeByVi(out);
     }
@@ -6577,8 +6592,8 @@
         CASES.forEach(function (c) {
           Object.keys(c.stages).forEach(function (sn) {
             c.stages[sn].forEach(function (it) {
-              if (it.viet && it.translation) addSentencePairs(out, it.viet, T(it.translation));
-              if (it.reply && it.reply.name) addSentencePairs(out, it.reply.viet, T(it.reply.translation));
+              if (it.viet && it.translation) addSentencePairs(out, it.viet, Tstrict(it.translation));
+              if (it.reply && it.reply.name) addSentencePairs(out, it.reply.viet, Tstrict(it.reply.translation));
             });
           });
         });
@@ -6591,23 +6606,23 @@
         });
         // 제공 연설 (moved from 교과 into 호칭·대화 as a subtab) contributes to the same pool.
         OFFER_TALKS.forEach(function (t) {
-          t.lines.forEach(function (l) { if (l.vi && l.kr) addSentencePairs(out, l.vi, T(l.kr)); });
+          t.lines.forEach(function (l) { if (l.vi && l.kr) addSentencePairs(out, l.vi, Tstrict(l.kr)); });
         });
         // 기도 준비하기 (노래·기도) contributes its lines too, so the prayer text can be reviewed.
-        PRAYER_TEMPLATE.lines.forEach(function (l) { if (l.vi && l.kr) addSentencePairs(out, l.vi, T(l.kr)); });
+        PRAYER_TEMPLATE.lines.forEach(function (l) { if (l.vi && l.kr) addSentencePairs(out, l.vi, Tstrict(l.kr)); });
         // 이웃 사람과의 대화 (new 대화 subtab) contributes its 11 conversations' lines too.
         NEIGHBOR_CONVERSATIONS.forEach(function (conv) {
-          conv.lines.forEach(function (l) { if (l.vi) addSentencePairs(out, l.vi, T(l)); });
+          conv.lines.forEach(function (l) { if (l.vi) addSentencePairs(out, l.vi, Tstrict(l)); });
         });
         // 행복한 삶을 영원히 (new 대화 subtab, LFF_CONVERSATIONS) contributes its lesson-body
         // sentences too, except reading directions, headings and bare numbered prompts.
         LFF_CONVERSATIONS.forEach(function (rec) {
-          lffDisplayLines(rec).forEach(function (l) { if (isReviewableLffLine(l)) addSentencePairs(out, l.vi, T(l)); });
+          lffDisplayLines(rec).forEach(function (l) { if (isReviewableLffLine(l)) addSentencePairs(out, l.vi, Tstrict(l)); });
         });
         // 사람들을 사랑하고 제자로 (new 대화 subtab, LPD_LESSONS) contributes its curated example
         // sentences too.
         LPD_LESSONS.forEach(function (rec) {
-          rec.lines.forEach(function (l) { if (l.vi) addSentencePairs(out, l.vi, T(l)); });
+          rec.lines.forEach(function (l) { if (l.vi) addSentencePairs(out, l.vi, Tstrict(l)); });
         });
         return dedupeByVi(out);
       },
@@ -6619,46 +6634,46 @@
           });
         });
         VOCAB_GROUPS.forEach(function (g) {
-          g.words.forEach(function (w) { out.push({ vi: w.word, kr: T(w.meaning) }); });
+          g.words.forEach(function (w) { out.push({ vi: w.word, kr: Tstrict(w.meaning) }); });
         });
-        VOCAB_CHAIN.forEach(function (it) { out.push({ vi: it.word, kr: T(it.meaning) }); });
+        VOCAB_CHAIN.forEach(function (it) { out.push({ vi: it.word, kr: Tstrict(it.meaning) }); });
         // 신권 어휘 + 자주 사용 어휘 (merged into 어휘 as subtabs) contribute to the same pool.
-        VOCAB_THEO.forEach(function (it) { out.push({ vi: it.word, kr: T(it.meaning) }); });
-        FREQ_VOCAB.forEach(function (it) { out.push({ vi: it.vi, kr: T(it.kr) }); });
+        VOCAB_THEO.forEach(function (it) { out.push({ vi: it.word, kr: Tstrict(it.meaning) }); });
+        FREQ_VOCAB.forEach(function (it) { out.push({ vi: it.vi, kr: Tstrict(it.kr) }); });
         // 성경 인명 사전 + 기본 단어·반의어 (moved from 교과 into 어휘 as subtabs) contribute too.
-        BIBLE_NAMES.forEach(function (n) { out.push({ vi: n.vi, kr: T(n.kr) }); });
+        BIBLE_NAMES.forEach(function (n) { out.push({ vi: n.vi, kr: Tstrict(n.kr) }); });
         BASIC_WORD_GROUPS.forEach(function (g) {
-          g.words.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.kr) }); });
+          g.words.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.kr) }); });
         });
         ANTONYM_PAIRS.forEach(function (p) {
-          out.push({ vi: p.vi1, kr: T(p.kr1) });
-          out.push({ vi: p.vi2, kr: T(p.kr2) });
+          out.push({ vi: p.vi1, kr: Tstrict(p.kr1) });
+          out.push({ vi: p.vi2, kr: Tstrict(p.kr2) });
         });
         // 남북 단어 (new 어휘 subtab) contributes too.
         DIALECT_WORDS.forEach(function (d) {
-          out.push({ vi: d.north.replace(/[/].*$/, ""), kr: T(d.mean) });
-          out.push({ vi: d.south.replace(/[/].*$/, ""), kr: T(d.mean) });
+          out.push({ vi: d.north.replace(/[/].*$/, ""), kr: Tstrict(d.mean) });
+          out.push({ vi: d.south.replace(/[/].*$/, ""), kr: Tstrict(d.mean) });
         });
         // 파수대 (new 어휘 subtab) contributes too.
         WATCHTOWER_VOCAB.forEach(function (wk) {
-          wk.words.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.mean) }); });
+          wk.words.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.mean) }); });
         });
         return dedupeByVi(out);
       },
       pron: function () {
         var out = [];
         TONE_PAIRS.forEach(function (p) {
-          p.words.forEach(function (wd) { out.push({ vi: wd.vi, kr: T(wd.kr) }); });
+          p.words.forEach(function (wd) { out.push({ vi: wd.vi, kr: Tstrict(wd.kr) }); });
         });
         NS_DIFFS.forEach(function (d) {
-          d.examples.forEach(function (ex) { out.push({ vi: ex.word, kr: T(ex.mean) }); });
+          d.examples.forEach(function (ex) { out.push({ vi: ex.word, kr: Tstrict(ex.mean) }); });
         });
         return dedupeByVi(out);
       },
       bible: function () {
         var out = [];
-        BIBLE_OT.forEach(function (bk) { out.push({ vi: bk.vi, kr: T(bk.kr) }); });
-        BIBLE_NT.forEach(function (bk) { out.push({ vi: bk.vi, kr: T(bk.kr) }); });
+        BIBLE_OT.forEach(function (bk) { out.push({ vi: bk.vi, kr: Tstrict(bk.kr) }); });
+        BIBLE_NT.forEach(function (bk) { out.push({ vi: bk.vi, kr: Tstrict(bk.kr) }); });
         [NUM_BASIC, NUM_TEEN, NUM_TENS, NUM_HUNDREDS, NUM_LARGE, NUM_SPECIAL].forEach(function (list) {
           list.forEach(function (it) { out.push({ vi: it.reading, kr: formatNum(it.num) }); });
         });
@@ -6667,24 +6682,24 @@
       grammar: function () {
         var out = [];
         GRAMMAR_INTRO.forEach(function (sec) {
-          sec.examples.forEach(function (ex) { if (ex.vi && ex.kr) addSentencePairs(out, ex.vi, T(ex.kr)); });
+          sec.examples.forEach(function (ex) { if (ex.vi && ex.kr) addSentencePairs(out, ex.vi, Tstrict(ex.kr)); });
         });
         GRAMMAR_UNITS.forEach(function (u) {
-          u.steps.forEach(function (s) { if (s.kr) addSentencePairs(out, s.vi, T(s.kr)); });
+          u.steps.forEach(function (s) { if (s.kr) addSentencePairs(out, s.vi, Tstrict(s.kr)); });
         });
         // 범용 언어 생성표 + 문법 특강 (moved from 교과 into 문법·작문 as subtabs) contribute too.
         ["subjects", "modals", "verbs", "places"].forEach(function (k) {
-          (SENT_GEN_BANK[k] || []).forEach(function (w) { addSentencePairs(out, w.vi, T(w.kr)); });
+          (SENT_GEN_BANK[k] || []).forEach(function (w) { addSentencePairs(out, w.vi, Tstrict(w.kr)); });
         });
-        GX_MOTION_VERBS.forEach(function (v) { addSentencePairs(out, v.vi, T(v.kr)); });
-        GX_POS_EXAMPLES.forEach(function (e) { addSentencePairs(out, e.vi, T(e.kr)); });
+        GX_MOTION_VERBS.forEach(function (v) { addSentencePairs(out, v.vi, Tstrict(v.kr)); });
+        GX_POS_EXAMPLES.forEach(function (e) { addSentencePairs(out, e.vi, Tstrict(e.kr)); });
         GRAMMAR_DICT.forEach(function (g) {
-          g.examples.forEach(function (e) { if (e.vi && e.kr) addSentencePairs(out, e.vi, T(e.kr)); });
+          g.examples.forEach(function (e) { if (e.vi && e.kr) addSentencePairs(out, e.vi, Tstrict(e.kr)); });
         });
         // [파수대] 탭의 모든 예문도 문법 복습 풀에 포함시킨다.
         WATCHTOWER_VOCAB.forEach(function (wk) {
           wk.words.forEach(function (w) {
-            if (w.example && w.example_mean) addSentencePairs(out, w.example, T(w.example_mean));
+            if (w.example && w.example_mean) addSentencePairs(out, w.example, Tstrict(w.example_mean));
           });
         });
         return dedupeByVi(out);
@@ -6718,38 +6733,38 @@
       function sentence(vi, kr) { if (vi && kr) addSentencePairs(out, vi, kr); }
       if (key === "pron") {
         if (scope === "alphabet") ALPHABET.forEach(function (a) { out.push({ vi: a[1].replace(/^\[|\]$/g, ""), kr: a[0] }); });
-        else if (scope === "tones") TONES.forEach(function (t) { out.push({ vi: t.mark, kr: T(t.kr) }); });
-        else if (scope === "tonepairs") TONE_PAIRS.forEach(function (p) { p.words.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.kr) }); }); });
-        else if (scope === "nsdiff") NS_DIFFS.forEach(function (d) { d.examples.forEach(function (e) { out.push({ vi: e.word, kr: T(e.mean) }); }); });
+        else if (scope === "tones") TONES.forEach(function (t) { out.push({ vi: t.mark, kr: Tstrict(t.kr) }); });
+        else if (scope === "tonepairs") TONE_PAIRS.forEach(function (p) { p.words.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.kr) }); }); });
+        else if (scope === "nsdiff") NS_DIFFS.forEach(function (d) { d.examples.forEach(function (e) { out.push({ vi: e.word, kr: Tstrict(e.mean) }); }); });
       } else if (key === "bible") {
-        if (scope === "books") BIBLE_OT.concat(BIBLE_NT).forEach(function (b) { out.push({ vi: b.vi, kr: T(b.kr) }); });
+        if (scope === "books") BIBLE_OT.concat(BIBLE_NT).forEach(function (b) { out.push({ vi: b.vi, kr: Tstrict(b.kr) }); });
         else if (scope === "numbers") [NUM_BASIC, NUM_TEEN, NUM_TENS, NUM_HUNDREDS, NUM_LARGE, NUM_SPECIAL].forEach(function (list) { list.forEach(function (n) { out.push({ vi: n.reading, kr: formatNum(n.num) }); }); });
-        else if (scope === "time") [TIME_HOURS, TIME_PERIODS, TIME_EXAMPLES].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: T(i.kr) }); }); });
-        else if (scope === "days") [CAL_DAYS, CAL_DATES].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: T(i.kr) }); }); });
-        else if (scope === "months") [CAL_MONTHS, CAL_SEASONS].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: T(i.kr) }); }); });
+        else if (scope === "time") [TIME_HOURS, TIME_PERIODS, TIME_EXAMPLES].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: Tstrict(i.kr) }); }); });
+        else if (scope === "days") [CAL_DAYS, CAL_DATES].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: Tstrict(i.kr) }); }); });
+        else if (scope === "months") [CAL_MONTHS, CAL_SEASONS].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: Tstrict(i.kr) }); }); });
       } else if (key === "wizard") {
-        if (scope === "main") CASES.forEach(function (c) { Object.keys(c.stages).forEach(function (s) { c.stages[s].forEach(function (i) { if (i.viet && i.translation) sentence(i.viet, T(i.translation)); if (i.reply && i.reply.name) sentence(i.reply.viet, T(i.reply.translation)); }); }); });
+        if (scope === "main") CASES.forEach(function (c) { Object.keys(c.stages).forEach(function (s) { c.stages[s].forEach(function (i) { if (i.viet && i.translation) sentence(i.viet, Tstrict(i.translation)); if (i.reply && i.reply.name) sentence(i.reply.viet, Tstrict(i.reply.translation)); }); }); });
         else if (scope === "reftable") REF_TABLE.forEach(function (sec) { sec.rows.forEach(function (r) { if (TERM_MEAN[r.listener]) out.push({ vi: r.listener, kr: TU(TERM_MEAN[r.listener]) }); if (TERM_MEAN[r.self]) out.push({ vi: r.self, kr: TU(TERM_MEAN[r.self]) }); }); });
-        else if (scope === "talks") OFFER_TALKS.forEach(function (t) { t.lines.forEach(function (l) { sentence(l.vi, T(l.kr)); }); });
-        else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(l.vi, T(l)); }); });
-        else if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(l.vi, T(l)); }); });
-        else if (scope === "lpd") LPD_LESSONS.forEach(function (r) { r.lines.forEach(function (l) { sentence(l.vi, T(l)); }); });
+        else if (scope === "talks") OFFER_TALKS.forEach(function (t) { t.lines.forEach(function (l) { sentence(l.vi, Tstrict(l.kr)); }); });
+        else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(l.vi, Tstrict(l)); }); });
+        else if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(l.vi, Tstrict(l)); }); });
+        else if (scope === "lpd") LPD_LESSONS.forEach(function (r) { r.lines.forEach(function (l) { sentence(l.vi, Tstrict(l)); }); });
       } else if (key === "vocab") {
         if (scope === "rhyme") RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); });
         else if (scope === "orderrev") { RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { if (w.word_order_reversed) out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); }); if (typeof WORD_ORDER_REVERSED_EXTRA !== "undefined") WORD_ORDER_REVERSED_EXTRA.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }
-        else if (scope === "groups") VOCAB_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.word, kr: T(w.meaning) }); }); });
-        else if (scope === "basic") BASIC_WORD_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.kr) }); }); });
-        else if (scope === "antonym") ANTONYM_PAIRS.forEach(function (p) { out.push({ vi: p.vi1, kr: T(p.kr1) }, { vi: p.vi2, kr: T(p.kr2) }); });
-        else if (scope === "freq") FREQ_VOCAB.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.kr) }); });
-        else if (scope === "theo") VOCAB_THEO.forEach(function (w) { out.push({ vi: w.word, kr: T(w.meaning) }); });
-        else if (scope === "names") BIBLE_NAMES.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.kr) }); });
-        else if (scope === "chain") VOCAB_CHAIN.forEach(function (w) { out.push({ vi: w.word, kr: T(w.meaning) }); });
-        else if (scope === "dialect") DIALECT_WORDS.forEach(function (w) { out.push({ vi: w.north.replace(/[/].*$/, ""), kr: T(w.mean) }, { vi: w.south.replace(/[/].*$/, ""), kr: T(w.mean) }); });
-        else if (scope === "wt") WATCHTOWER_VOCAB.forEach(function (week) { week.words.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.mean) }); }); });
+        else if (scope === "groups") VOCAB_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.word, kr: Tstrict(w.meaning) }); }); });
+        else if (scope === "basic") BASIC_WORD_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.kr) }); }); });
+        else if (scope === "antonym") ANTONYM_PAIRS.forEach(function (p) { out.push({ vi: p.vi1, kr: Tstrict(p.kr1) }, { vi: p.vi2, kr: Tstrict(p.kr2) }); });
+        else if (scope === "freq") FREQ_VOCAB.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.kr) }); });
+        else if (scope === "theo") VOCAB_THEO.forEach(function (w) { out.push({ vi: w.word, kr: Tstrict(w.meaning) }); });
+        else if (scope === "names") BIBLE_NAMES.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.kr) }); });
+        else if (scope === "chain") VOCAB_CHAIN.forEach(function (w) { out.push({ vi: w.word, kr: Tstrict(w.meaning) }); });
+        else if (scope === "dialect") DIALECT_WORDS.forEach(function (w) { out.push({ vi: w.north.replace(/[/].*$/, ""), kr: Tstrict(w.mean) }, { vi: w.south.replace(/[/].*$/, ""), kr: Tstrict(w.mean) }); });
+        else if (scope === "wt") WATCHTOWER_VOCAB.forEach(function (week) { week.words.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.mean) }); }); });
       } else if (key === "grammar") {
-        if (scope === "lessons") { GRAMMAR_INTRO.forEach(function (s) { s.examples.forEach(function (e) { sentence(e.vi, T(e.kr)); }); }); GRAMMAR_UNITS.forEach(function (u) { u.steps.forEach(function (s) { sentence(s.vi, T(s.kr)); }); }); }
-        else if (scope === "special") { GX_MOTION_VERBS.forEach(function (v) { sentence(v.vi, T(v.kr)); }); GX_POS_EXAMPLES.forEach(function (e) { sentence(e.vi, T(e.kr)); }); GRAMMAR_DICT.forEach(function (g) { g.examples.forEach(function (e) { sentence(e.vi, T(e.kr)); }); }); }
-        else if (scope === "sentences") ["subjects", "modals", "verbs", "places"].forEach(function (k) { (SENT_GEN_BANK[k] || []).forEach(function (w) { sentence(w.vi, T(w.kr)); }); });
+        if (scope === "lessons") { GRAMMAR_INTRO.forEach(function (s) { s.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); }); GRAMMAR_UNITS.forEach(function (u) { u.steps.forEach(function (s) { sentence(s.vi, Tstrict(s.kr)); }); }); }
+        else if (scope === "special") { GX_MOTION_VERBS.forEach(function (v) { sentence(v.vi, Tstrict(v.kr)); }); GX_POS_EXAMPLES.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); GRAMMAR_DICT.forEach(function (g) { g.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); }); }
+        else if (scope === "sentences") ["subjects", "modals", "verbs", "places"].forEach(function (k) { (SENT_GEN_BANK[k] || []).forEach(function (w) { sentence(w.vi, Tstrict(w.kr)); }); });
       }
       return dedupeByVi(out);
     }
@@ -6812,16 +6827,37 @@
     // 묵음(Mute): skips the automatic question-start playback in flash/look/order/type -- every
     // one of those modes already shows the full question as text (the Vietnamese itself, or in
     // order/type's case the meaning prompt), so the audio there is a convenience, not the
-    // question. 듣기 4지선다 is deliberately exempt: its audio IS the question, nothing else on
-    // screen identifies the item, so muting it would make the mode unplayable -- see the mode
-    // check in speakItemThenArm()/speakPromptThenArm() below. Manual replay buttons (다시 듣기 /
-    // the speak-btn) are untouched either way; this only suppresses the automatic auto-play.
-    var muteAutoPlay = false;
-    try { muteAutoPlay = window.localStorage && window.localStorage.getItem("vn-app-mute-autoplay") === "1"; } catch (eMute) { /* no-op */ }
-    function saveMuteAutoPlayPref() {
-      try { window.localStorage && window.localStorage.setItem("vn-app-mute-autoplay", muteAutoPlay ? "1" : "0"); } catch (e) { /* no-op */ }
+    // question. Three sub-scopes let the learner mute just one language or both: 한/베/베한 (ko),
+    // 中文/越南語/全部 (zh), EN/VN/All (en), 日本語/ベトナム/全て (ja) -- i.e. "meaning", "vi", or
+    // "both". 듣기 4지선다 is special-cased: its Vietnamese audio IS the question, nothing else
+    // on screen identifies the item, so that mode only ever offers/honors the meaning-mute
+    // option (checking 묵음 there locks to it automatically) -- see isMuted() and the mcq
+    // handling in renderAutoAdvanceControls() below. Manual replay buttons (다시 듣기 / the
+    // speak-btn) are untouched either way; this only suppresses the automatic auto-play.
+    var MUTE_SCOPE_LABELS = {
+      meaning: { ko: "한", zh: "中文", en: "EN", ja: "日本語" },
+      vi: { ko: "베", zh: "越南語", en: "VN", ja: "ベトナム" },
+      both: { ko: "베한", zh: "全部", en: "All", ja: "全て" }
+    };
+    function muteScopeLabel(key) { return (MUTE_SCOPE_LABELS[key] || {})[currentLang] || key; }
+    var muteScope = ""; // "" (off) | "meaning" | "vi" | "both"
+    try {
+      var savedMuteScope = window.localStorage && window.localStorage.getItem("vn-app-mute-scope");
+      if (savedMuteScope === "meaning" || savedMuteScope === "vi" || savedMuteScope === "both") {
+        muteScope = savedMuteScope;
+      } else if (window.localStorage && window.localStorage.getItem("vn-app-mute-autoplay") === "1") {
+        muteScope = "both"; // one-time migration from the old plain on/off checkbox
+      }
+    } catch (eMute) { /* no-op */ }
+    function saveMuteScopePref() {
+      try { window.localStorage && window.localStorage.setItem("vn-app-mute-scope", muteScope); } catch (e) { /* no-op */ }
     }
-    function autoPlayMuted() { return muteAutoPlay && studyState.mode !== "mcq"; }
+    // kind: "vi" or "meaning" -- which language's audio is about to auto-play.
+    function isMuted(kind) {
+      if (!muteScope) return false;
+      if (studyState.mode === "mcq") return kind === "meaning";
+      return muteScope === "both" || muteScope === kind;
+    }
     var autoAdvanceTimer = null;
     function clearAutoAdvanceTimer() {
       if (autoAdvanceTimer) { clearTimeout(autoAdvanceTimer); autoAdvanceTimer = null; }
@@ -6865,7 +6901,7 @@
     // autoAdvanceSeconds window entirely: the learner now gets the full playback PLUS a full
     // autoAdvanceSeconds to answer, rather than the two overlapping and the audio losing the race.
     function speakItemThenArm(vi, revealFn) {
-      if (reviewTabIsActive() && !autoPlayMuted()) {
+      if (reviewTabIsActive() && !isMuted("vi")) {
         if (autoAdvanceEnabled) speak(vi, function () { if (reviewTabIsActive()) armAutoReveal(revealFn); });
         else speak(vi);
       } else if (autoAdvanceEnabled) {
@@ -6882,7 +6918,7 @@
     // item.vi in Vietnamese, same background-pre-render guard and same "arm only after the
     // audio finishes" auto-advance chaining.
     function speakPromptThenArm(kr, revealFn) {
-      if (reviewTabIsActive() && !autoPlayMuted()) {
+      if (reviewTabIsActive() && !isMuted("meaning")) {
         if (autoAdvanceEnabled) speakMeaning(kr, function () { if (reviewTabIsActive()) armAutoReveal(revealFn); });
         else speakMeaning(kr);
       } else if (autoAdvanceEnabled) {
@@ -6899,11 +6935,17 @@
     var autoAdvRoot = document.getElementById("study-auto-row");
     function renderAutoAdvanceControls() {
       if (!autoAdvRoot) return;
-      // 묵음 only makes sense where the question is already fully shown as text (flash/look/
-      // order/type) -- in 듣기 4지선다 the audio IS the question, so the checkbox is hidden
-      // there entirely rather than offering a mute that would make the mode unplayable.
-      var muteHtml = studyState.mode === "mcq" ? "" :
-        '<label class="mute-autoplay-option"><input type="checkbox" id="mute-autoplay-toggle" ' + (muteAutoPlay ? "checked" : "") + '> ' + TU("묵음") + '</label>';
+      // 듣기 4지선다's Vietnamese audio IS the question, so only the (functionally silent
+      // anyway) meaning-mute sub-option is ever offered there -- checking 묵음 in that mode
+      // locks straight to it, with no 베/베한 button rendered to switch away from it.
+      var inMcq = studyState.mode === "mcq";
+      var scopeKeys = inMcq ? ["meaning"] : ["meaning", "vi", "both"];
+      var subHtml = muteScope ? scopeKeys.map(function (k) {
+        var pressed = inMcq ? true : muteScope === k;
+        return '<button type="button" class="mute-scope-btn" data-mute-scope="' + k + '" aria-pressed="' + (pressed ? "true" : "false") + '">' + escapeHtml(muteScopeLabel(k)) + '</button>';
+      }).join("") : "";
+      var muteHtml = '<span class="mute-group"><label class="mute-autoplay-option"><input type="checkbox" id="mute-autoplay-toggle" ' + (muteScope ? "checked" : "") + '> ' + TU("묵음") + '</label>' +
+        '<span class="mute-scope-row">' + subHtml + '</span></span>';
       var html = '<label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span id="repeat-toggle-review"></span></label>' +
         muteHtml +
         '<span class="auto-advance-group"><label class="auto-advance-option"><input type="checkbox" id="auto-advance-toggle" ' + (autoAdvanceEnabled ? "checked" : "") + '> ' + TU("자동 넘김") + '</label>' +
@@ -6915,10 +6957,20 @@
       var muteToggle = document.getElementById("mute-autoplay-toggle");
       if (muteToggle) {
         muteToggle.addEventListener("change", function (e) {
-          muteAutoPlay = e.target.checked;
-          saveMuteAutoPlayPref();
+          if (e.target.checked) muteScope = inMcq ? "meaning" : (muteScope || "both");
+          else muteScope = "";
+          saveMuteScopePref();
+          renderAutoAdvanceControls();
         });
       }
+      autoAdvRoot.querySelectorAll(".mute-scope-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (inMcq) return; // only one button rendered there; nothing to switch to
+          muteScope = btn.dataset.muteScope;
+          saveMuteScopePref();
+          renderAutoAdvanceControls();
+        });
+      });
       document.getElementById("auto-advance-toggle").addEventListener("change", function (e) {
         autoAdvanceEnabled = e.target.checked;
         saveAutoAdvancePref();
@@ -7095,6 +7147,10 @@
         var showing = kr.style.display !== "none";
         kr.style.display = showing ? "none" : "block";
         hint.textContent = showing ? TU("눌러서 뜻 보기") : TU("눌러서 가리기");
+        // Revealing the meaning also reads it aloud (in the current UI language), same as
+        // 보기/듣기 4지선다 speak the correct answer when the learner answers -- always, not
+        // gated behind 자동 넘김/정답 시 다음 문제, so it plays before "다음 카드" is clicked.
+        if (!showing) speakMeaning(item.kr);
       });
       document.getElementById("flash-prev").addEventListener("click", function (e) {
         e.stopPropagation();
@@ -7194,7 +7250,11 @@
       actionRow.innerHTML = '<button class="foot-btn primary" id="mcq-next">' + TU("다음 문제 →") + '</button>';
       bodyEl.appendChild(actionRow);
       document.getElementById("mcq-next").addEventListener("click", nextMcq);
+      // The correct answer is always read aloud (in the current UI language) once the learner
+      // answers, right or wrong -- when auto-advance is also active it chains straight into the
+      // next question; otherwise it's just the spoken confirmation, and "다음 문제" stays manual.
       if (isCorrect && (autoAdvanceEnabled || autoNextOnCorrect)) speakThenAdvance(item.kr, false, nextMcq);
+      else speakMeaning(item.kr);
     }
 
     /* ---------- reading 4-choice quiz (보기 4지선다) ---------- */
@@ -7269,7 +7329,10 @@
       actionRow.innerHTML = '<button class="foot-btn primary" id="look-next">' + TU("다음 문제 →") + '</button>';
       bodyEl.appendChild(actionRow);
       document.getElementById("look-next").addEventListener("click", nextLook);
+      // Always read the correct answer aloud once the learner answers -- see the matching
+      // comment in answerMcq() above.
       if (isCorrect && (autoAdvanceEnabled || autoNextOnCorrect)) speakThenAdvance(item.kr, false, nextLook);
+      else speakMeaning(item.kr);
     }
 
     /* ---------- word-order arrangement ---------- */

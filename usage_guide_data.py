@@ -143,21 +143,28 @@ USAGE_GUIDE_COMMON = [
               'zh': '「靜音」選項',
               'en': 'Mute option',
               'ja': '「ミュート」オプション'},
-     'body': {'ko': '플래시카드 · 보기 4지선다 · 어순 배열 · 받아쓰기에서는 새 문제가 나올 때 자동으로 읽어 주는 베트남어 음성을 묵음 '
-                     '체크박스로 끌 수 있어요. 이 네 모드는 문제가 이미 화면에 글자로 보이기 때문에 소리 없이도 풀 수 있어요. 듣기 4지선다는 '
-                     '소리 자체가 문제이기 때문에 묵음 옵션이 없어요. 묵음 상태에서도 다시 듣기 버튼은 그대로 작동해요.',
-              'zh': '在「單字卡」「看選項猜四選一」「排列語序」「聽寫」中，可以用「靜音」核取方塊關閉新題目出現時自動播放的越南語語音。這四種模式的題目'
-                    '本身已經以文字顯示在畫面上，所以沒有聲音也能作答。「聽發音猜四選一」因為聲音本身就是題目，所以沒有靜音選項。即使開啟靜音，'
-                    '「重新播放」按鈕仍可正常使用。',
-              'en': 'In Flashcard, Look and choose (4 options), Word order, and Dictation, the Mute checkbox turns off '
-                    'the automatic Vietnamese playback that plays when a new question appears. All four modes already '
-                    'show the question as text on screen, so you can still answer with the sound off. Listen and '
-                    'choose (4 options) has no Mute option, since the audio itself is the question. The replay button '
-                    'still works even while muted.',
-              'ja': '「フラッシュカード」「見て選ぶ4択」「語順並べ替え」「書き取り」では、新しい問題が表示されたときに自動再生されるベトナム語音声を'
-                    '「ミュート」チェックボックスでオフにできます。この4つのモードは問題がすでに画面上に文字で表示されているため、音声なしでも解答'
-                    'できます。「聞いて選ぶ4択」は音声自体が問題なのでミュートのオプションはありません。ミュート中でも「もう一度聞く」ボタンは通常'
-                    'どおり使えます。'}},
+     'body': {'ko': '묵음 체크박스를 켜면 새 문제가 나올 때 자동으로 읽어 주는 음성을 끌 범위를 고를 수 있어요: 한(뜻 언어만) · 베(베트남어만) '
+                     '· 베한(둘 다). 플래시카드 · 보기 · 어순 배열 · 받아쓰기는 문제가 이미 화면에 글자로 보이기 때문에 어느 쪽을 꺼도 풀 수 '
+                     '있어요. 듣기는 베트남어 음성 자체가 문제이기 때문에 묵음을 켜면 자동으로 한(뜻 언어)만 꺼지고 베트남어는 항상 들려요. 묵음 '
+                     '상태에서도 다시 듣기 버튼은 그대로 작동하고, 플래시카드 · 보기 · 듣기는 문제를 맞히거나 틀려도 다음 문제로 넘어가기 전에 '
+                     '정답을 항상 읽어 줘요.',
+              'zh': '打開「靜音」核取方塊後，可以選擇要關閉哪個語言的自動播放語音：中文（只關詞義語言）、越南語（只關越南語）、全部（兩者都關）。'
+                    '「單字卡」「看選項猜四選一」「排列語序」「聽寫」的題目本身已經以文字顯示在畫面上，所以關掉任何一邊都能作答。「聽發音猜四選一」'
+                    '因為越南語語音本身就是題目，所以開啟靜音只會關掉中文（詞義語言），越南語一律照常播放。即使開啟靜音，「重新播放」按鈕仍可正常'
+                    '使用；「單字卡」「看選項猜四選一」「聽發音猜四選一」不論答對或答錯，換下一題前都會讀出正確答案。',
+              'en': 'Turning on the Mute checkbox lets you pick which language\'s automatic playback to turn off: EN '
+                    '(meaning language only), VN (Vietnamese only), or All (both). Flashcard, Reading, Word order, and '
+                    'Dictation already show the question as text on screen, so you can mute either side and still '
+                    'answer. Listening\'s Vietnamese audio IS the question, so turning on Mute there only ever mutes '
+                    'EN (the meaning language) -- Vietnamese always plays. The replay button still works even while '
+                    'muted, and Flashcard, Reading, and Listening always read the correct answer aloud before moving '
+                    'to the next question, whether you got it right or wrong.',
+              'ja': '「ミュート」チェックボックスをオンにすると、どちらの言語の自動再生をオフにするか選べます：日本語（意味の言語のみ）、'
+                    'ベトナム（ベトナム語のみ）、全て（両方）。「フラッシュカード」「読解」「語順並べ替え」「書き取り」は問題がすでに画面上に'
+                    '文字で表示されているため、どちらをミュートしても解答できます。「聞き取り」はベトナム語音声自体が問題なので、ミュートを'
+                    'オンにすると自動的に日本語（意味の言語）だけがミュートされ、ベトナム語は常に再生されます。ミュート中でも「もう一度聞く」'
+                    'ボタンは通常どおり使え、「フラッシュカード」「読解」「聞き取り」は正解・不正解にかかわらず、次の問題に進む前に必ず正解を'
+                    '読み上げます。'}},
     {'name': {'ko': '언어별 바로가기 주소',
               'zh': '各語言的直達網址',
               'en': 'Language-specific web addresses',
@@ -468,21 +475,28 @@ USAGE_GUIDE_TABS = [
                             'Pronunciation > Settings -- change either one and both stay in sync.',
                       'ja': '「復習」タブにも「発音 > 設定」と同じように連動する北部・南部の切り替えと、ベトナム語の繰り返し再生回数の設定があります。どちらで変更しても一緒に変わります。'}},
             {'name': {'ko': '플래시카드', 'zh': '字卡', 'en': 'Flashcard', 'ja': 'フラッシュカード'},
-             'body': {'ko': '카드를 눌러 뒤집으면 뜻이 나와요. 이전·다음·섞기·다시 듣기 버튼을 사용할 수 있어요.',
-                      'zh': '點選卡片翻面後即可看到詞義。可使用上一個、下一個、隨機排列、重新聆聽等按鈕。',
-                      'en': 'Tap a card to flip it and reveal the meaning. Previous, next, shuffle, and replay '
-                            'buttons are all available.',
-                      'ja': 'カードをタップして裏返すと意味が表示されます。前へ・次へ・シャッフル・もう一度聞くボタンが使えます。'}},
-            {'name': {'ko': '보기 4지선다', 'zh': '看題四選一', 'en': 'Look & choose (4-choice)', 'ja': '見て選ぶ4択'},
-             'body': {'ko': '베트남어 단어·문장이 보이면 알맞은 뜻을 4개 보기 중에서 고르는 모드예요.',
-                      'zh': '看到越南語單字或句子後，從 4 個選項中選出正確詞義的模式。',
-                      'en': 'See a Vietnamese word or sentence and pick its meaning from four choices.',
-                      'ja': 'ベトナム語の単語や文が表示されたら、4つの選択肢の中から正しい意味を選ぶモードです。'}},
-            {'name': {'ko': '듣기 4지선다', 'zh': '聽題四選一', 'en': 'Listen & choose (4-choice)', 'ja': '聞いて選ぶ4択'},
-             'body': {'ko': '글자 없이 음성만 듣고 알맞은 뜻을 4개 보기 중에서 고르는 모드예요.',
-                      'zh': '不顯示文字，只靠聆聽語音，從 4 個選項中選出正確詞義的模式。',
-                      'en': 'Hear the audio with no text shown, and pick the meaning from four choices.',
-                      'ja': '文字なしで音声だけを聞き、4つの選択肢の中から正しい意味を選ぶモードです。'}},
+             'body': {'ko': '카드를 눌러 뒤집으면 뜻이 나오고 동시에 뜻도 읽어 줘요. 이전·다음·섞기·다시 듣기 버튼을 사용할 수 있어요.',
+                      'zh': '點選卡片翻面後即可看到詞義，同時也會讀出詞義。可使用上一個、下一個、隨機排列、重新聆聽等按鈕。',
+                      'en': 'Tap a card to flip it and reveal the meaning -- it\'s read aloud at the same time. '
+                            'Previous, next, shuffle, and replay buttons are all available.',
+                      'ja': 'カードをタップして裏返すと意味が表示され、同時に意味も読み上げられます。前へ・次へ・シャッフル・もう一度聞く'
+                            'ボタンが使えます。'}},
+            {'name': {'ko': '보기', 'zh': '閱讀', 'en': 'Reading', 'ja': '読解'},
+             'body': {'ko': '베트남어 단어·문장이 보이면 알맞은 뜻을 4개 보기 중에서 고르는 모드예요. 맞히거나 틀리거나 다음 문제로 넘어가기 전에 '
+                             '정답을 항상 읽어 줘요.',
+                      'zh': '看到越南語單字或句子後，從 4 個選項中選出正確詞義的模式。不論答對或答錯，換下一題前都會讀出正確答案。',
+                      'en': 'See a Vietnamese word or sentence and pick its meaning from four choices. The correct '
+                            'answer is always read aloud before moving to the next question, right or wrong.',
+                      'ja': 'ベトナム語の単語や文が表示されたら、4つの選択肢の中から正しい意味を選ぶモードです。正解・不正解にかかわらず、次の'
+                            '問題に進む前に必ず正解を読み上げます。'}},
+            {'name': {'ko': '듣기', 'zh': '聽力', 'en': 'Listening', 'ja': '聞き取り'},
+             'body': {'ko': '글자 없이 음성만 듣고 알맞은 뜻을 4개 보기 중에서 고르는 모드예요. 맞히거나 틀리거나 다음 문제로 넘어가기 전에 정답을 '
+                             '항상 읽어 줘요.',
+                      'zh': '不顯示文字，只靠聆聽語音，從 4 個選項中選出正確詞義的模式。不論答對或答錯，換下一題前都會讀出正確答案。',
+                      'en': 'Hear the audio with no text shown, and pick the meaning from four choices. The correct '
+                            'answer is always read aloud before moving to the next question, right or wrong.',
+                      'ja': '文字なしで音声だけを聞き、4つの選択肢の中から正しい意味を選ぶモードです。正解・不正解にかかわらず、次の問題に'
+                            '進む前に必ず正解を読み上げます。'}},
             {'name': {'ko': '어순 배열', 'zh': '排列語序', 'en': 'Word order', 'ja': '語順並べ'},
              'body': {'ko': '문제 문장이 제시되면서 음성으로도 읽어 줘요. 베트남어 단어 조각을 순서대로 눌러 담아 문장을 완성하세요. 다시 담기나 '
                              '건너뛰기도 가능하고, 완성하면 자동으로 정답을 확인해줘요.',
@@ -500,15 +514,14 @@ USAGE_GUIDE_TABS = [
             {'name': {'ko': '(탭 공통) 자동 넘김·단축키·점수', 'zh': '（分頁共通）自動切換、快速鍵、分數',
                       'en': '(Shared) Auto-advance, shortcuts & score', 'ja': '（タブ共通）自動送り・ショートカット・スコア'},
              'body': {'ko': '자동 넘김을 켜면 문제(반복 재생 포함)와 정답 음성이 모두 끝난 뒤부터 설정한 시간을 세어 자동으로 다음 문제로 '
-                             '넘어가요. 플래시카드·보기 4지선다·듣기 4지선다·어순 배열 모드에서는 스페이스바나 Enter 키로도 다음으로 넘어갈 '
-                             '수 있고, 보기·듣기 4지선다에는 맞힌 개수를 보여주는 점수 표시도 있어요.',
-                      'zh': '開啟自動切換後，會等問題（含重複播放）與正確答案的語音都播完，才開始倒數設定的秒數並自動前往下一題。在字卡、看題四選一、聽題四選一、排列語序模式中，也可以用空白鍵或 Enter 鍵前往下一題；看題、聽題四選一還會顯示答對題數的分數。',
+                             '넘어가요. 플래시카드·보기·듣기·어순 배열 모드에서는 스페이스바나 Enter 키로도 다음으로 넘어갈 수 있고, 보기·듣기에는 '
+                             '맞힌 개수를 보여주는 점수 표시도 있어요.',
+                      'zh': '開啟自動切換後，會等問題（含重複播放）與正確答案的語音都播完，才開始倒數設定的秒數並自動前往下一題。在字卡、閱讀、聽力、排列語序模式中，也可以用空白鍵或 Enter 鍵前往下一題；閱讀、聽力還會顯示答對題數的分數。',
                       'en': 'With auto-advance on, the countdown starts only after both the question audio '
                             '(including repeats) and the answer audio finish, then moves to the next card. In '
-                            'Flashcard, Look & choose, Listen & choose, and Word order, the spacebar or Enter key '
-                            'also advances; Look & choose and Listen & choose show a running score of correct '
-                            'answers.',
-                      'ja': '自動送りをオンにすると、問題（繰り返し再生を含む）と正解の音声がすべて終わってから設定した時間をカウントし、自動的に次の問題へ進みます。フラッシュカード・見て選ぶ4択・聞いて選ぶ4択・語順並べのモードではスペースキーやEnterキーでも次に進むことができ、見て選ぶ・聞いて選ぶ4択には正解数を示すスコア表示もあります。'}},
+                            'Flashcard, Reading, Listening, and Word order, the spacebar or Enter key also advances; '
+                            'Reading and Listening show a running score of correct answers.',
+                      'ja': '自動送りをオンにすると、問題（繰り返し再生を含む）と正解の音声がすべて終わってから設定した時間をカウントし、自動的に次の問題へ進みます。フラッシュカード・読解・聞き取り・語順並べのモードではスペースキーやEnterキーでも次に進むことができ、読解・聞き取りには正解数を示すスコア表示もあります。'}},
         ],
     },
 ]
