@@ -5634,9 +5634,10 @@
           lineUnits.push({ who: line.who, vi: pair.vi, kr: pair.kr });
         });
       });
-      var readPairs = lineUnits.map(function (line) { return [line.vi, line.kr]; });
+      var readPairs = [[conv.title.vi, T(conv.title)]].concat(lineUnits.map(function (line) { return [line.vi, line.kr]; }));
       html += '<div class="group-card" data-open="' + (openSyls["nb" + ci] ? "true" : "false") + '" data-syl="nb' + ci + '">' +
-        '<div class="group-head-row"><button class="group-head"><span><span class="syl">' + (ci + 1) + '.</span> <span class="cnt">' + escapeHtml(T(conv.title)) + '</span></span>' +
+        '<div class="group-head-row"><button class="group-head"><span><span class="syl">' + (ci + 1) + '.</span> ' +
+        '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(conv.title.vi) + '</span> <span class="lff-title-translation">· ' + escapeHtml(T(conv.title)) + '</span></span></span>' +
         currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
         '<div class="group-body"><div class="talk-lines">';
       lineUnits.forEach(function (l) {
