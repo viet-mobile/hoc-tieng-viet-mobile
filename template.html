@@ -1230,8 +1230,9 @@
   }
   .subtab-btn:hover { background: color-mix(in srgb, var(--accent) 16%, var(--surface)); }
   #panel-curriculum > .subtab-row, #panel-grammar > .subtab-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  #panel-wizard > .subtab-row, #panel-bible > .subtab-row,
-  #panel-review > .subtab-row:first-child { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  #panel-wizard > .subtab-row, #panel-bible > .subtab-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  /* 발음/성경/대화/어휘/문법: always 5 across in a single row, even on narrow phones. */
+  #panel-review > .subtab-row:first-child { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   #panel-pron > .subtab-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   #panel-vocab > .subtab-row, #review-scope-tabs[data-scope-category="vocab"] { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   #review-scope-tabs[data-scope-category="pron"], #review-scope-tabs[data-scope-category="wizard"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -1249,7 +1250,8 @@
   @media (max-width: 699px) {
     .subtab-row { overflow: visible; }
     .subtab-btn { font-size: clamp(.7rem, 2.9vw, .83rem); padding: 7px 3px; }
-    #panel-review > .subtab-row:first-child { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    #panel-review > .subtab-row:first-child { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; }
+    #panel-review > .subtab-row:first-child .subtab-btn { padding-inline: 1px; font-size: clamp(.6rem, 3.4vw, .78rem); }
   }
   @media (max-width: 999px) {
     body[data-app-lang="en"] .tabs { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 1px; overflow: visible; }
