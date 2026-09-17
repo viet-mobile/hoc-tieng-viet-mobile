@@ -6695,14 +6695,14 @@
     // panes (voice settings and the sentence generator) intentionally aren't listed: they do
     // not contain a fixed set of question-and-answer study items to quiz.
     var REVIEW_SCOPES = {
-      pron: ["all", "alphabet", "vowels", "consonants", "tones", "tonepairs", "nsdiff"],
+      pron: ["all", "alphabet", "tones", "tonepairs", "nsdiff"],
       bible: ["all", "books", "numbers", "time", "days", "months"],
       wizard: ["all", "main", "reftable", "talks", "neighbor", "lff", "lpd"],
       vocab: ["all", "rhyme", "orderrev", "groups", "basic", "antonym", "freq", "theo", "names", "chain", "dialect", "wt"],
       grammar: ["all", "lessons", "special", "sentences"]
     };
     var REVIEW_SCOPE_LABELS = {
-      all: "전체", alphabet: "문자", vowels: "모음", consonants: "자음", tones: "성조", tonepairs: "연속 성조", nsdiff: "남북 발음",
+      all: "전체", alphabet: "문자", tones: "성조", tonepairs: "연속 성조", nsdiff: "남북 발음",
       books: "성경", numbers: "숫자", time: "시간", days: "요일, 날짜", months: "달, 계절",
       main: "첫만남", reftable: "호칭", talks: "제공 연설", neighbor: "이웃 사람과의 대화", lff: "행복한 삶을 영원히", lpd: "사람들을 사랑하고 제자로",
       rhyme: "한자음", orderrev: "어순반대", groups: "동일음", basic: "기본", antonym: "반의", freq: "상용", theo: "신권", names: "인명", chain: "끝말", dialect: "남북 단어", wt: "파수대",
@@ -6712,19 +6712,12 @@
       if (scope !== "all") return TU(REVIEW_SCOPE_LABELS[scope] || scope);
       return currentLang === "zh" ? "全部" : currentLang === "en" ? "All" : currentLang === "ja" ? "すべて" : "전체";
     }
-    function rowsPool(rows, wordFn, meaningFn) {
-      return dedupeByVi((rows || []).map(function (row) {
-        return { vi: wordFn(row), kr: meaningFn(row) };
-      }));
-    }
     function reviewScopedPool(key, scope) {
       if (!scope || scope === "all") return POOL_BUILDERS[key] ? POOL_BUILDERS[key]() : [];
       var out = [];
       function sentence(vi, kr) { if (vi && kr) addSentencePairs(out, vi, kr); }
       if (key === "pron") {
         if (scope === "alphabet") ALPHABET.forEach(function (a) { out.push({ vi: a[1].replace(/^\[|\]$/g, ""), kr: a[0] }); });
-        else if (scope === "vowels") out = rowsPool(VOW_SIMPLE.concat(VOW_COMPLEX), function (r) { return r[0].split(",")[0].trim(); }, function (r) { return T(r[1]); });
-        else if (scope === "consonants") out = rowsPool(CONS_SIMPLE.concat(CONS_COMPLEX), function (r) { return r[0].split(",")[0].trim(); }, function (r) { return T(r[1]); });
         else if (scope === "tones") TONES.forEach(function (t) { out.push({ vi: t.mark, kr: T(t.kr) }); });
         else if (scope === "tonepairs") TONE_PAIRS.forEach(function (p) { p.words.forEach(function (w) { out.push({ vi: w.vi, kr: T(w.kr) }); }); });
         else if (scope === "nsdiff") NS_DIFFS.forEach(function (d) { d.examples.forEach(function (e) { out.push({ vi: e.word, kr: T(e.mean) }); }); });
