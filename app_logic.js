@@ -5673,8 +5673,14 @@
     // sentence with a bare "Đọc"/"Xem" the way "Đọc sách là..." (reading books is...) would.
     if (/^(?:Xem|Đọc)\b/i.test(s)) return true;
     s = s.replace(/^Đọc\s+/i, "");
-    // "1 Tê-sa-lô-ni-ca 5:11.", "Công vụ 17:11" -- a bare Bible book/chapter:verse citation.
-    return /^\d{0,2}\s*[A-ZÀ-Ỹ][^".!?“”‘’]*\d+:\d+[\d,;:\-–\s]*\.?$/.test(s);
+    // "1 Tê-sa-lô-ni-ca 5:11.", "Công vụ 17:11" -- a bare Bible book/chapter:verse citation,
+    // optionally followed by a named translation/edition ("—Ma-thi-ơ 5:4, Các Giờ Kinh Phụng
+    // Vụ.", "—Matthew 5:5, King James Version.") when a householder cites a Bible other than the
+    // New World Translation. That trailing clause must itself start with a capital letter (a
+    // proper-noun title) so a real sentence that happens to continue past a citation in lower-
+    // case prose -- "Kinh Thánh Thi-thiên 37:29 cho biết như sau." (the Bible, at Psalm 37:29,
+    // says the following) -- is never mistaken for one.
+    return /^\d{0,2}\s*[A-ZÀ-Ỹ][^".!?“”‘’]*\d+:\d+[\d,;:\-–\s]*(?:,\s*[A-ZÀ-Ỹ][^".!?“”‘’]*)?\.?$/.test(s);
   }
   function addSentencePairs(target, vietnamese, meaning) {
     sentencePairs(stripReviewListMarker(vietnamese), stripReviewListMarker(meaning)).forEach(function (pair) {
