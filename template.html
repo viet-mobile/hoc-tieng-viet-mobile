@@ -910,18 +910,6 @@
   .study-mcq-q { background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius-l);
     padding: 26px 18px; text-align: center; box-shadow: var(--shadow); margin-bottom: 14px; }
   .study-mcq-btn-row { display: flex; align-items: center; justify-content: center; gap: 12px; }
-  .study-mcq-replay { border: none; background: var(--accent); color: var(--accent-ink); width: 56px; height: 56px;
-    border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; flex: none; }
-  .study-mcq-replay svg { width: 24px; height: 24px; }
-  /* 듣기 버튼 통일: 플래시카드/보기 4지선다/듣기 4지선다의 재생 버튼을 받아쓰기의 .speak-btn과
-     똑같은 작은 원형 아이콘 버튼으로 맞춘다. #flash-replay는 .study-nav-btn(이전/다음/섞기와
-     공유)을, #mcq-replay/#look-speak는 .study-mcq-replay(강조용 큰 버튼)를 그대로 쓰면 다른
-     버튼들과 모양이 달라지므로 이 셋만 별도로 재정의한다. */
-  #flash-replay, #mcq-replay, #look-speak {
-    width: 26px; height: 26px; border: none; background: var(--chip-bg); color: var(--ink-soft);
-  }
-  #flash-replay svg, #mcq-replay svg, #look-speak svg { width: 13px; height: 13px; }
-  #flash-replay:hover, #mcq-replay:hover, #look-speak:hover { background: var(--accent-soft); color: var(--accent); }
   .study-mcq-skip { border: 1.5px solid var(--border); background: var(--surface); color: var(--ink);
     width: 42px; height: 42px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
     cursor: pointer; flex: none; }

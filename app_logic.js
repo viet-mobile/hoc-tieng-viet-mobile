@@ -7085,7 +7085,7 @@
         '<div class="study-flash-hint" id="flash-hint">' + TU("눌러서 뜻 보기") + '</div></div>';
       html += '<div class="study-flash-nav">' +
         '<button class="study-nav-btn" id="flash-prev" aria-label="' + TU("이전 카드") + '">' + chevronIcon("left") + '</button>' +
-        '<button class="study-nav-btn" id="flash-replay" aria-label="' + TU("다시 듣기") + '">' + speakIcon() + '</button>' +
+        '<button class="speak-btn" id="flash-replay" aria-label="' + TU("다시 듣기") + '">' + speakIcon() + '</button>' +
         '<button class="study-nav-btn wide" id="flash-shuffle">' + shuffleGlyphIcon() + ' ' + TU("섞기") + '</button>' +
         '<button class="study-nav-btn" id="flash-next" aria-label="' + TU("다음 카드") + '">' + chevronIcon("right") + '</button></div>';
       bodyEl.innerHTML = html;
@@ -7140,7 +7140,7 @@
     function renderMcq(choices) {
       var item = studyState.current;
       var html = '<div class="study-score">' + studyState.score.correct + ' / ' + studyState.score.total + ' ' + TU("맞음") + '</div>';
-      html += '<div class="study-mcq-q"><div class="study-mcq-btn-row"><button class="study-mcq-replay" id="mcq-replay" aria-label="' + TU("다시 듣기") + '">' + speakIcon() + '</button>' +
+      html += '<div class="study-mcq-q"><div class="study-mcq-btn-row"><button class="speak-btn" id="mcq-replay" aria-label="' + TU("다시 듣기") + '">' + speakIcon() + '</button>' +
         '<button class="study-mcq-skip" id="mcq-skip" aria-label="' + TU("다음 문제") + '">' + chevronIcon("right") + '</button></div>' +
         '<div class="study-mcq-note">' + TU("듣고 알맞은 뜻을 고르세요") + '</div></div>';
       html += '<div class="study-mcq-choices" id="mcq-choices">';
@@ -7221,7 +7221,7 @@
       var item = studyState.current;
       var html = '<div class="study-score">' + studyState.score.correct + ' / ' + studyState.score.total + ' ' + TU("맞음") + '</div>';
       html += '<div class="study-mcq-q"><div class="study-look-word vn">' + escapeHtml(item.vi) + '</div>' +
-        '<div class="study-mcq-btn-row"><button class="study-mcq-replay" id="look-speak" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+        '<div class="study-mcq-btn-row"><button class="speak-btn" id="look-speak" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
         '<button class="study-mcq-skip" id="look-skip" aria-label="' + TU("다음 문제") + '">' + chevronIcon("right") + '</button></div>' +
         '<div class="study-mcq-note">' + TU("보고 알맞은 뜻을 고르세요") + '</div></div>';
       html += '<div class="study-mcq-choices" id="look-choices">';
