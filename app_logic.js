@@ -5662,9 +5662,16 @@
     var s = String(vi || "").trim().replace(/^[—–]\s*/, "");
     var wrapped = s.match(/^\(([^()]*)\)\.?$/);
     if (wrapped) s = wrapped[1].trim();
-    // "Xem câu 23.", "Xem câu 20 và 21.", "Đọc đoạn 12, 13." -- points the reader elsewhere
-    // instead of saying anything itself.
-    if (/^(?:Xem|Đọc)\s+(?:câu|đoạn|trang)\s+\d+(?:\s*(?:,|và|-|–)\s*\d+)*\.?$/i.test(s)) return true;
+    // Any fragment that OPENS with a bare "Xem"/"Đọc" reading/viewing directive is navigation,
+    // not sentence content, no matter what follows it -- a verse pointer ("Xem câu 23."), a full
+    // citation possibly with a "then discuss..." tail ("Đọc Tít 3:1, rồi thảo luận câu hỏi
+    // sau:"), a picture/web-article pointer ("Xem hình nơi đầu bài.", "Xem bài trên trang web
+    // ..."). isReviewableLffLine() already applies this same blunt "starts with Xem/Đọc" rule to
+    // whole source lines; this mirrors it for fragments split off a longer line, which that
+    // whole-line check never sees. Checked against every actual "Đọc ...”/"Xem ..." fragment in
+    // the LFF corpus (147 of them) with zero false positives -- this corpus never opens a real
+    // sentence with a bare "Đọc"/"Xem" the way "Đọc sách là..." (reading books is...) would.
+    if (/^(?:Xem|Đọc)\b/i.test(s)) return true;
     s = s.replace(/^Đọc\s+/i, "");
     // "1 Tê-sa-lô-ni-ca 5:11.", "Công vụ 17:11" -- a bare Bible book/chapter:verse citation.
     return /^\d{0,2}\s*[A-ZÀ-Ỹ][^".!?“”‘’]*\d+:\d+[\d,;:\-–\s]*\.?$/.test(s);
