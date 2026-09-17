@@ -2986,9 +2986,15 @@
           u1.onstart = function () { started = true; };
           synth.speak(u1);
           // If Chrome silently dropped the request (queue stuck from a previous stall),
-          // force a hard reset and retry once.
+          // force a hard reset and retry once. Checking synth.speaking too (not just the
+          // onstart flag) matters: onstart can fire well after audio actually starts on some
+          // voices/platforms, and treating that lag as "dropped" cancelled u1 mid-word and
+          // re-queued an identical utterance -- audibly repeating the first word/syllable in
+          // flashcard, 보기/듣기 4지선다, and every other speak() caller. synth.cancel() right
+          // before this speak() call already clears any truly stuck queue from before, so
+          // synth.speaking===true here reliably means u1 itself is genuinely playing.
           setTimeout(function () {
-            if (started || !("speechSynthesis" in window)) return;
+            if (started || synth.speaking || !("speechSynthesis" in window)) return;
             try {
               synth.cancel();
               synth.speak(buildUtterance());
@@ -5537,13 +5543,35 @@
     return pairs;
   }
   function stripReviewListMarker(value) {
-    // Only a leading list label followed by whitespace (or the end) is removed.
-    // Decimal numbers, abbreviations and punctuation inside a sentence remain intact.
-    return String(value || "").replace(/^\s*(?:(?:[0-9]+|[A-Za-z]|[ㄱ-ㅎㅏ-ㅣᄀ-ᇿ])\.(?:\s+|$))+/u, "").trim();
+    // Only a leading list label followed by whitespace (or the end) is removed -- either
+    // "1. "/"A. "/"ㄱ. " or the parenthesized "(A) "/"(ㄱ) " form LFF's lettered sub-questions
+    // use. Decimal numbers, abbreviations and punctuation inside a sentence remain intact.
+    return String(value || "").replace(
+      /^\s*(?:(?:[0-9]+|[A-Za-z]|[ㄱ-ㅎㅏ-ㅣᄀ-ᇿ])\.(?:\s+|$)|\((?:[0-9]+|[A-Za-z]|[ㄱ-ㅎㅏ-ㅣᄀ-ᇿ])\)(?:\s+|$))+/u,
+      ""
+    ).trim();
+  }
+  // A bare Bible citation ("— 1 Tê-sa-lô-ni-ca 5:11.", "(Công vụ 17:11)") or a bare "go read/look
+  // over there" pointer ("—Xem câu 23.", "23절을 보세요.") is not a sentence to practice --
+  // sentencePairs() above peels a trailing dash-citation off into its own pair (to keep the
+  // Vietnamese/translation split aligned), and some source lines are nothing but a citation or
+  // pointer to begin with. Either way, that fragment shouldn't reach a review pool as its own
+  // flashcard/word-order/etc. item, even though it's fine to show inline in the actual reading
+  // content (sentencePairs() itself is left alone; only the review-pool path filters this out).
+  function isCitationOnlyLine(vi) {
+    var s = String(vi || "").trim().replace(/^[—–]\s*/, "");
+    var wrapped = s.match(/^\(([^()]*)\)\.?$/);
+    if (wrapped) s = wrapped[1].trim();
+    // "Xem câu 23.", "Xem câu 20 và 21.", "Đọc đoạn 12, 13." -- points the reader elsewhere
+    // instead of saying anything itself.
+    if (/^(?:Xem|Đọc)\s+(?:câu|đoạn|trang)\s+\d+(?:\s*(?:,|và|-|–)\s*\d+)*\.?$/i.test(s)) return true;
+    s = s.replace(/^Đọc\s+/i, "");
+    // "1 Tê-sa-lô-ni-ca 5:11.", "Công vụ 17:11" -- a bare Bible book/chapter:verse citation.
+    return /^\d{0,2}\s*[A-ZÀ-Ỹ][^".!?“”‘’]*\d+:\d+[\d,;:\-–\s]*\.?$/.test(s);
   }
   function addSentencePairs(target, vietnamese, meaning) {
     sentencePairs(stripReviewListMarker(vietnamese), stripReviewListMarker(meaning)).forEach(function (pair) {
-      if (pair.vi) target.push(pair);
+      if (pair.vi && !isCitationOnlyLine(pair.vi)) target.push(pair);
     });
   }
 
