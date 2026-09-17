@@ -72,6 +72,40 @@
     LANG_CHANGE_LISTENERS.forEach(function (fn) { try { fn(lang); } catch (e) { /* no-op */ } });
   }
 
+  /* ---------------- pastel droplet slot assignment ---------------- */
+  // Every nav box/button (top tabs, every subtab row, study-mode tabs, the language switch)
+  // gets one hue from a fixed 10-color rotation -- 자주/분홍/주황/노랑/연두/민트/하늘/파랑/
+  // 네이비/보라, wrapping back to the 1st color after the 10th -- via a data-pastel="1".."10"
+  // attribute that template.html's [data-pastel] rules turn into --pastel-rgb (see the "Pastel
+  // droplet buttons" CSS section). Slots are handed out in document order and, once given,
+  // never revisited -- see pastelSlotCounter below -- so a button's color stays stable across
+  // re-renders. A MutationObserver keeps re-scanning for newly-created buttons this app renders
+  // on demand (the wizard's per-conversation stage pills, review's per-category scope tabs)
+  // that didn't exist yet at the previous scan; already-assigned elements are skipped instantly.
+  var PASTEL_SLOT_COUNT = 10;
+  var PASTEL_SLOT_SELECTOR = ".tab-btn, .subtab-btn, .lang-btn, .study-mode-btn";
+  var pastelSlotCounter = 0;
+  function assignPastelSlots() {
+    document.querySelectorAll(PASTEL_SLOT_SELECTOR).forEach(function (el) {
+      if (el.hasAttribute("data-pastel")) return;
+      pastelSlotCounter += 1;
+      el.setAttribute("data-pastel", String(((pastelSlotCounter - 1) % PASTEL_SLOT_COUNT) + 1));
+    });
+  }
+  assignPastelSlots();
+  if (typeof MutationObserver !== "undefined" && document.body) {
+    var pastelScanQueued = false;
+    var pastelObserver = new MutationObserver(function () {
+      if (pastelScanQueued) return;
+      pastelScanQueued = true;
+      (window.requestAnimationFrame || window.setTimeout)(function () {
+        pastelScanQueued = false;
+        assignPastelSlots();
+      });
+    });
+    pastelObserver.observe(document.body, { childList: true, subtree: true });
+  }
+
   // I18N_UI: translations for static UI chrome (labels, headings, help text, buttons) that live
   // as literal Korean text in template.html or as literal Korean strings in this file, keyed by
   // the exact Korean source string (so no separate semantic key has to be invented or kept in
