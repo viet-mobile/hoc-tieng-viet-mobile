@@ -14,7 +14,7 @@ NEIGHBOR_CONVERSATIONS = [
       "zh": "耶和華見證人是怎樣跟人討論聖經的——所有好人都會上天堂嗎？",
       "en": "Do All Good People Go to Heaven?",
       "ja": "善良な人はみな天に召されますか",
-      "vi": "Nói chuyện với chủ nhà—Mọi người tốt đều lên thiên đàng?"
+      "vi": "Mọi người tốt đều lên thiên đàng?"
     },
     "lines": [
       {
