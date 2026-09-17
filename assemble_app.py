@@ -16,6 +16,7 @@ dist_dir.mkdir(exist_ok=True)
 shutil.copyfile('app.html', dist_dir / 'index.html')
 shutil.copytree('assets', dist_dir / 'assets', dirs_exist_ok=True)
 shutil.copyfile('manifest.webmanifest', dist_dir / 'manifest.webmanifest')
+shutil.copyfile('_redirects', dist_dir / '_redirects')
 
 print('app.html bytes:', len(out))
 print('deployment artifact:', dist_dir / 'index.html')

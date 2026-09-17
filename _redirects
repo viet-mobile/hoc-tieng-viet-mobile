@@ -1,0 +1,7 @@
+# Serve the single-page app for the language entry points, keeping the URL intact
+# (200 = rewrite, not a redirect) so /ko, /en, /zt, /ja load directly into that
+# language mode instead of 404ing. See PATH_LANG_MAP in app_logic.js.
+/ko    /index.html   200
+/en    /index.html   200
+/zt    /index.html   200
+/ja    /index.html   200

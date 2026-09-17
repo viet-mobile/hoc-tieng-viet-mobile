@@ -22,13 +22,28 @@
     } catch (e) { /* no-op: navigator unavailable */ }
     return "en";
   }
-  var currentLang = (function () {
+  // A first path segment of /ko, /en, /zt, or /ja (see _redirects, which rewrites each of
+  // these paths to this same page) picks the language mode directly, ahead of any saved
+  // preference -- this is what lets hoc.tieng.viet.mobile/ko etc. work as direct entry points.
+  var PATH_LANG_MAP = { ko: "ko", en: "en", zt: "zh", ja: "ja" };
+  function detectLangFromPath() {
+    try {
+      var seg = (String(window.location.pathname || "").split("/")[1] || "").toLowerCase();
+      if (Object.prototype.hasOwnProperty.call(PATH_LANG_MAP, seg)) return PATH_LANG_MAP[seg];
+    } catch (e) { /* no-op: location unavailable */ }
+    return null;
+  }
+  var langFromPath = detectLangFromPath();
+  var currentLang = langFromPath || (function () {
     try {
       var saved = window.localStorage && window.localStorage.getItem("vn-app-lang");
       if (VALID_LANGS.indexOf(saved) >= 0) return saved;
     } catch (e) { /* no-op: localStorage unavailable */ }
     return detectSystemLang();
   })();
+  if (langFromPath) {
+    try { window.localStorage && window.localStorage.setItem("vn-app-lang", langFromPath); } catch (e) { /* no-op */ }
+  }
   // Browser-tab title per language (same wording as the "베트남어 학습반" I18N_UI entry below) --
   // kept as its own small map, rather than reading I18N_UI, so it's available before I18N_UI is
   // defined and so document.title can be set immediately, before the rest of the app boots.
