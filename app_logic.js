@@ -8,8 +8,8 @@
   // field across the app without ever breaking anything not yet converted.
   var VALID_LANGS = ["ko", "zh", "en", "ja"];
   // With no saved preference yet (first visit, or localStorage unavailable), use the
-  // browser's primary language: Korean -> ko, Chinese/Vietnamese -> zh, Japanese -> ja,
-  // English and all remaining languages -> en.
+  // device/browser's system language: Korean -> ko, Chinese -> zh, Japanese -> ja, and
+  // English plus every other system language (including ones this app has no UI for) -> en.
   function detectSystemLang() {
     try {
       var navLang = String(
@@ -17,7 +17,7 @@
       ).toLowerCase();
       var languageCode = navLang.split(/[-_]/)[0];
       if (languageCode === "ko") return "ko";
-      if (languageCode === "zh" || languageCode === "vi") return "zh";
+      if (languageCode === "zh") return "zh";
       if (languageCode === "ja") return "ja";
     } catch (e) { /* no-op: navigator unavailable */ }
     return "en";
