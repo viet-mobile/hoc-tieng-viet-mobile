@@ -6827,7 +6827,7 @@
     reviewBtns.forEach(function (btn) {
       btn.addEventListener("click", function () { selectCategory(btn.dataset.review, "all"); });
     });
-    if (reviewBtns.length) selectCategory("wizard", "all");
+    if (reviewBtns.length) selectCategory("wizard", "lff");
     modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
         modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (b) { b.setAttribute("aria-selected", "false"); });
