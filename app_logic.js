@@ -3046,10 +3046,38 @@
     ja: function (ch, vs) { return ch + "章" + vs + "節"; },
     en: function (ch, vs) { return "chapter " + ch + ", verse " + vs; }
   };
+  // Sino-Korean reading of an integer ("5" -> "오", "119" -> "백십구") -- see
+  // expandScriptureVersesForSpeech() below for why this matters for 장/절.
+  var SINO_KOREAN_DIGITS = ["", "일", "이", "삼", "사", "오", "육", "칠", "팔", "구"];
+  var SINO_KOREAN_UNITS = ["", "십", "백", "천"];
+  function sinoKoreanNumber(n) {
+    n = Math.floor(Math.abs(Number(n) || 0));
+    if (n === 0) return "영";
+    var s = String(n);
+    var out = "";
+    for (var i = 0; i < s.length; i++) {
+      var d = Number(s[i]);
+      var place = s.length - i - 1;
+      if (d === 0) continue;
+      out += (place > 0 && d === 1) ? SINO_KOREAN_UNITS[place] : SINO_KOREAN_DIGITS[d] + SINO_KOREAN_UNITS[place];
+    }
+    return out;
+  }
   function expandScriptureVersesForSpeech(text) {
     var tpl = SCRIPTURE_VERSE_TEMPLATE[currentLang];
-    if (!tpl || !text) return text;
-    return String(text).replace(/(\d+):(\d+)/g, function (m, ch, vs) { return tpl(ch, vs); });
+    if (tpl && text) {
+      text = String(text).replace(/(\d+):(\d+)/g, function (m, ch, vs) { return tpl(ch, vs); });
+    }
+    if (currentLang === "ko" && text) {
+      // A Bible chapter/verse count ("3장", "16절") is always read with Sino-Korean numerals in
+      // real usage -- "삼장", never the native-Korean "세장" -- but Korean TTS engines don't
+      // reliably know that on their own and can default to native-Korean counting instead (the
+      // way they would for an object counter like 개/마리/명). Spelling the digits out as Hangul
+      // forces the correct reading, both for the "N장 M절" built just above and any bare
+      // "책이름 N장" mention already written that way in the source text.
+      text = String(text).replace(/(\d+)(장|절)/g, function (m, num, unit) { return sinoKoreanNumber(num) + unit; });
+    }
+    return text;
   }
   function prepareMeaningSpeechText(text) {
     if (!text) return text;
