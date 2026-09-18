@@ -260,16 +260,6 @@
   }
  },
  {
-  "word": "buổi họp giữa tuần",
-  "hanja": null,
-  "meaning": {
-   "ko": "평일 집회",
-   "zh": "週中聚會",
-   "en": "midweek meeting",
-   "ja": "週半ばの集会"
-  }
- },
- {
   "word": "buổi họp cuối tuần",
   "hanja": null,
   "meaning": {
@@ -280,6 +270,16 @@
   }
  },
  {
+  "word": "buổi họp giữa tuần",
+  "hanja": null,
+  "meaning": {
+   "ko": "평일 집회",
+   "zh": "週中聚會",
+   "en": "midweek meeting",
+   "ja": "週半ばの集会"
+  }
+ },
+ {
   "word": "buổi họp tạp chí Tháp Canh",
   "hanja": null,
   "meaning": {
@@ -287,6 +287,16 @@
    "zh": "守望台研讀班",
    "en": "Watchtower Study (meeting)",
    "ja": "ものみの塔研究(集会)"
+  }
+ },
+ {
+  "word": "buổi nhóm họp",
+  "hanja": null,
+  "meaning": {
+   "ko": "집회",
+   "zh": "聚會",
+   "en": "meeting, gathering",
+   "ja": "集会"
   }
  },
  {
@@ -307,16 +317,6 @@
    "zh": "路程",
    "en": "course/path",
    "ja": "行路"
-  }
- },
- {
-  "word": "buổi nhóm họp",
-  "hanja": null,
-  "meaning": {
-   "ko": "집회",
-   "zh": "聚會",
-   "en": "meeting, gathering",
-   "ja": "集会"
   }
  },
  {
@@ -570,16 +570,6 @@
   }
  },
  {
-  "word": "đất hứa",
-  "hanja": null,
-  "meaning": {
-   "ko": "약속의 땅",
-   "zh": "應許之地",
-   "en": "the promised land",
-   "ja": "約束の地"
-  }
- },
- {
   "word": "dạy dỗ",
   "hanja": null,
   "meaning": {
@@ -597,16 +587,6 @@
    "zh": "獻身",
    "en": "to devote oneself",
    "ja": "献身する"
-  }
- },
- {
-  "word": "đền thờ",
-  "hanja": null,
-  "meaning": {
-   "ko": "성전",
-   "zh": "聖殿",
-   "en": "temple",
-   "ja": "神殿"
   }
  },
  {
@@ -690,6 +670,16 @@
   }
  },
  {
+  "word": "đất hứa",
+  "hanja": null,
+  "meaning": {
+   "ko": "약속의 땅",
+   "zh": "應許之地",
+   "en": "the promised land",
+   "ja": "約束の地"
+  }
+ },
+ {
   "word": "Đất Hứa",
   "hanja": null,
   "meaning": {
@@ -707,6 +697,16 @@
    "zh": "忠信睿智的奴隸",
    "en": "faithful and discreet slave",
    "ja": "忠実で思慮深い奴隷"
+  }
+ },
+ {
+  "word": "đền thờ",
+  "hanja": null,
+  "meaning": {
+   "ko": "성전",
+   "zh": "聖殿",
+   "en": "temple",
+   "ja": "神殿"
   }
  },
  {
@@ -2740,16 +2740,6 @@
   }
  },
  {
-  "word": "vô biên",
-  "hanja": "無邊",
-  "meaning": {
-   "ko": "무한한, 끝이 없는",
-   "zh": "無邊的",
-   "en": "boundless, limitless",
-   "ja": "果てしない"
-  }
- },
- {
   "word": "vòng quanh",
   "hanja": null,
   "meaning": {
@@ -2757,6 +2747,16 @@
    "zh": "巡迴區",
    "en": "circuit",
    "ja": "巡回区"
+  }
+ },
+ {
+  "word": "vô biên",
+  "hanja": "無邊",
+  "meaning": {
+   "ko": "무한한, 끝이 없는",
+   "zh": "無邊的",
+   "en": "boundless, limitless",
+   "ja": "果てしない"
   }
  },
  {

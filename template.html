@@ -1272,13 +1272,13 @@
     .lang-switch { margin: 0; padding: 2px; gap: 0; align-self: start; }
     .lang-btn { min-height: 34px; padding: 4px 3px; font-size: clamp(.51rem, 2vw, .67rem); }
 
-    /* Seven primary tabs fit the viewport; deeper tabs wrap in place. */
-    .tabs { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0; overflow: visible; padding-inline: 4px; }
+    /* Eight primary tabs fit the viewport; deeper tabs wrap in place. */
+    .tabs { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 0; overflow: visible; padding-inline: 4px; }
     .tab-btn { min-width: 0; width: 100%; min-height: 42px; padding: 6px 0; font-size: clamp(.7rem, 3vw, .84rem); }
     .subtab-row { flex-wrap: wrap; overflow: visible; gap: 2px 4px; }
     .stage-nav { flex-wrap: wrap; overflow-x: visible; }
     .subtab-btn { min-height: 38px; padding: 6px 9px; font-size: .78rem; }
-    #panel-review > .subtab-row:first-child { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; }
+    #panel-review > .subtab-row:first-child { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 2px; }
     #panel-review > .subtab-row:first-child .subtab-btn { min-width: 0; width: 100%; padding-inline: 0; }
     #review-scope-tabs .subtab-btn { white-space: normal; text-align: center; word-break: keep-all; }
 
@@ -1349,30 +1349,33 @@
   .subtab-btn:hover { background: color-mix(in srgb, var(--accent) 16%, var(--surface)); }
   #panel-curriculum > .subtab-row, #panel-grammar > .subtab-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   #panel-wizard > .subtab-row, #panel-bible > .subtab-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  /* 발음/성경/대화/어휘/문법: always 5 across in a single row, even on narrow phones. */
-  #panel-review > .subtab-row:first-child { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  /* 발음/성경/대화/어휘/문장/문법: always 6 across in a single row, even on narrow phones. */
+  #panel-review > .subtab-row:first-child { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   #panel-pron > .subtab-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  #panel-vocab > .subtab-row, #review-scope-tabs[data-scope-category="vocab"] { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  #panel-vocab > .subtab-row { grid-template-columns: repeat(10, minmax(0, 1fr)); }
+  #panel-vocab > .subtab-row .subtab-btn { white-space: normal; word-break: keep-all; overflow-wrap: anywhere; text-align: center; min-width: 0; }
+  #panel-sentence > .subtab-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  #review-scope-tabs[data-scope-category="vocab"] { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   #review-scope-tabs[data-scope-category="pron"], #review-scope-tabs[data-scope-category="wizard"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   #review-scope-tabs[data-scope-category="bible"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  #review-scope-tabs[data-scope-category="grammar"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #review-scope-tabs[data-scope-category="grammar"], #review-scope-tabs[data-scope-category="sentence"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   @media (min-width: 700px) {
     #panel-curriculum > .subtab-row, #panel-grammar > .subtab-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     #panel-wizard > .subtab-row, #panel-bible > .subtab-row { grid-template-columns: repeat(6, minmax(0, 1fr)); }
     #panel-pron > .subtab-row { grid-template-columns: repeat(7, minmax(0, 1fr)); }
-    #panel-review > .subtab-row:first-child { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    #panel-review > .subtab-row:first-child { grid-template-columns: repeat(6, minmax(0, 1fr)); }
     #review-scope-tabs[data-scope-category="pron"], #review-scope-tabs[data-scope-category="wizard"] { grid-template-columns: repeat(7, minmax(0, 1fr)); }
     #review-scope-tabs[data-scope-category="bible"] { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-    #review-scope-tabs[data-scope-category="grammar"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    #review-scope-tabs[data-scope-category="grammar"], #review-scope-tabs[data-scope-category="sentence"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   }
   @media (max-width: 699px) {
     .subtab-row { overflow: visible; }
     .subtab-btn { font-size: clamp(.7rem, 2.9vw, .83rem); padding: 7px 3px; }
-    #panel-review > .subtab-row:first-child { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; }
+    #panel-review > .subtab-row:first-child { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 3px; }
     #panel-review > .subtab-row:first-child .subtab-btn { padding-inline: 1px; font-size: clamp(.6rem, 3.4vw, .78rem); }
   }
   @media (max-width: 999px) {
-    body[data-app-lang="en"] .tabs { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 1px; overflow: visible; }
+    body[data-app-lang="en"] .tabs { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 1px; overflow: visible; }
     body[data-app-lang="en"] .tab-btn { min-width: 0; width: 100%; padding-inline: 0; white-space: nowrap; font-size: .72rem; }
   }
   @media (max-width: 380px) {
@@ -1445,6 +1448,7 @@
       <button class="tab-btn" role="tab" data-tab="bible" aria-selected="false" data-i18n="성경">성경</button>
       <button class="tab-btn" role="tab" data-tab="wizard" aria-selected="false" data-i18n="대화">대화</button>
       <button class="tab-btn" role="tab" data-tab="vocab" aria-selected="false" data-i18n="어휘">어휘</button>
+      <button class="tab-btn" role="tab" data-tab="sentence" aria-selected="false" data-i18n="문장">문장</button>
       <button class="tab-btn" role="tab" data-tab="grammar" aria-selected="false" data-i18n="문법">문법</button>
       <button class="tab-btn" role="tab" data-tab="review" aria-selected="true" data-i18n="복습">복습</button>
     </nav>
@@ -1476,8 +1480,6 @@
         <button class="subtab-btn" data-wizard="reftable" aria-selected="false" data-i18n="호칭">호칭</button>
         <button class="subtab-btn" data-wizard="talks" aria-selected="false" data-i18n="제공 연설">제공 연설</button>
         <button class="subtab-btn" data-wizard="neighbor" aria-selected="false" data-i18n="이웃 사람과의 대화">이웃 사람과의 대화</button>
-        <button class="subtab-btn" data-wizard="lff" aria-selected="false" data-i18n="행복한 삶을 영원히">행복한 삶을 영원히</button>
-        <button class="subtab-btn" data-wizard="lpd" aria-selected="false" data-i18n="사람들을 사랑하고 제자로">사람들을 사랑하고 제자로</button>
       </div>
 
       <div id="wizard-main-pane">
@@ -1673,19 +1675,6 @@
         <div id="curr-neighbor-root"></div>
       </div>
 
-      <div id="wizard-lff-pane" style="display:none">
-        <div class="chain-note" data-i18n="&quot;행복한 삶을 영원히 누리십시오!&quot; 성경 공부 과정의 본문 문장이에요. 각 과의 토론 질문과 본문을 실제 발행물 그대로 5개 언어로 대조해 두었어요. 동영상 안내와 &quot;더 찾아보기&quot; 자료는 포함하지 않아요.">"행복한 삶을 영원히 누리십시오!" 성경 공부 과정의 본문 문장이에요. 각 과의 토론 질문과 본문을 실제 발행물 그대로 5개 언어로 대조해 두었어요. 동영상 안내와 "더 찾아보기" 자료는 포함하지 않아요.</div>
-        <div class="search-box">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-          <input type="text" id="lff-search" data-i18n-placeholder="베트남어 문장이나 뜻으로 검색" placeholder="베트남어 문장이나 뜻으로 검색">
-        </div>
-        <div id="curr-lff-root"></div>
-      </div>
-
-      <div id="wizard-lpd-pane" style="display:none">
-        <div class="chain-note" data-i18n="&quot;사람들을 사랑하고 제자로 삼으십시오&quot; 소책자에서 뽑은 과별 대표 예문이에요. 1~12과와 부록 가·나·다에서 각 5~8개씩 골라 5개 언어로 대조해 두었어요. 전체 본문이 아니라 학습용으로 엄선한 예문이에요.">"사람들을 사랑하고 제자로 삼으십시오" 소책자에서 뽑은 과별 대표 예문이에요. 1~12과와 부록 가·나·다에서 각 5~8개씩 골라 5개 언어로 대조해 두었어요. 전체 본문이 아니라 학습용으로 엄선한 예문이에요.</div>
-        <div id="curr-lpd-root"></div>
-      </div>
     </section>
 
     <!-- ============ VOCAB (한자어 어휘 + 신권 어휘 + 자주 사용 어휘 통합) ============ -->
@@ -1701,13 +1690,44 @@
         <button class="subtab-btn" data-vocab="names" aria-selected="false" data-i18n="인명">인명</button>
         <button class="subtab-btn" data-vocab="chain" aria-selected="false" data-i18n="끝말">끝말</button>
         <button class="subtab-btn" data-vocab="dialect" aria-selected="false" data-i18n="남북 단어">남북 단어</button>
-        <button class="subtab-btn" data-vocab="wt" aria-selected="false" data-i18n="파수대">파수대</button>
       </div>
       <div class="search-box">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         <input type="text" id="vocab-search" placeholder="베트남어 단어나 한국어 뜻으로 검색" data-i18n-placeholder="베트남어 단어나 한국어 뜻으로 검색">
       </div>
       <div id="vocab-root"></div>
+    </section>
+
+    <!-- ============ SENTENCE (행복한 삶을 영원히 · 사람들을 사랑하고 제자로 · 파수대) ============ -->
+    <section class="panel" id="panel-sentence">
+      <div class="subtab-row">
+        <button class="subtab-btn" data-sentence="lff" aria-selected="true" data-i18n="행복한 삶을 영원히">행복한 삶을 영원히</button>
+        <button class="subtab-btn" data-sentence="lpd" aria-selected="false" data-i18n="사람들을 사랑하고 제자로">사람들을 사랑하고 제자로</button>
+        <button class="subtab-btn" data-sentence="wt" aria-selected="false" data-i18n="파수대">파수대</button>
+      </div>
+
+      <div id="sentence-lff-pane">
+        <div class="chain-note" data-i18n="&quot;행복한 삶을 영원히 누리십시오!&quot; 성경 공부 과정의 본문 문장이에요. 각 과의 토론 질문과 본문을 실제 발행물 그대로 5개 언어로 대조해 두었어요. 동영상 안내와 &quot;더 찾아보기&quot; 자료는 포함하지 않아요.">"행복한 삶을 영원히 누리십시오!" 성경 공부 과정의 본문 문장이에요. 각 과의 토론 질문과 본문을 실제 발행물 그대로 5개 언어로 대조해 두었어요. 동영상 안내와 "더 찾아보기" 자료는 포함하지 않아요.</div>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="lff-search" data-i18n-placeholder="베트남어 문장이나 뜻으로 검색" placeholder="베트남어 문장이나 뜻으로 검색">
+        </div>
+        <div id="curr-lff-root"></div>
+      </div>
+
+      <div id="sentence-lpd-pane" style="display:none">
+        <div class="chain-note" data-i18n="&quot;사람들을 사랑하고 제자로 삼으십시오&quot; 소책자에서 뽑은 과별 대표 예문이에요. 1~12과와 부록 가·나·다에서 각 5~8개씩 골라 5개 언어로 대조해 두었어요. 전체 본문이 아니라 학습용으로 엄선한 예문이에요.">"사람들을 사랑하고 제자로 삼으십시오" 소책자에서 뽑은 과별 대표 예문이에요. 1~12과와 부록 가·나·다에서 각 5~8개씩 골라 5개 언어로 대조해 두었어요. 전체 본문이 아니라 학습용으로 엄선한 예문이에요.</div>
+        <div id="curr-lpd-root"></div>
+      </div>
+
+      <div id="sentence-wt-pane" style="display:none">
+        <div class="chain-note" data-i18n="파수대 연구 기사에서 뽑은 예문이에요. 매주 학습한 어휘가 포함된 문장과 그 뜻을 보여줘요.">파수대 연구 기사에서 뽑은 예문이에요. 매주 학습한 어휘가 포함된 문장과 그 뜻을 보여줘요.</div>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="wt-search" data-i18n-placeholder="베트남어 문장이나 뜻으로 검색" placeholder="베트남어 문장이나 뜻으로 검색">
+        </div>
+        <div id="curr-wt-root"></div>
+      </div>
     </section>
 
     <!-- ============ PRONUNCIATION ============ -->
@@ -1793,8 +1813,9 @@
       <div class="subtab-row">
         <button class="subtab-btn" data-review="pron" aria-selected="false" data-i18n="발음">발음</button>
         <button class="subtab-btn" data-review="bible" aria-selected="false" data-i18n="성경">성경</button>
-        <button class="subtab-btn" data-review="wizard" aria-selected="true" data-i18n="대화">대화</button>
+        <button class="subtab-btn" data-review="wizard" aria-selected="false" data-i18n="대화">대화</button>
         <button class="subtab-btn" data-review="vocab" aria-selected="false" data-i18n="어휘">어휘</button>
+        <button class="subtab-btn" data-review="sentence" aria-selected="true" data-i18n="문장">문장</button>
         <button class="subtab-btn" data-review="grammar" aria-selected="false" data-i18n="문법">문법</button>
       </div>
       <div class="subtab-row" id="review-scope-tabs" aria-label="복습 범위"></div>

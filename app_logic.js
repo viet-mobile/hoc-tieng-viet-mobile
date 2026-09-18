@@ -3352,7 +3352,7 @@
   /* ---------------- tabs ---------------- */
   var tabButtons = document.querySelectorAll(".tab-btn");
   var appRoot = document.querySelector(".app");
-  var panels = { curriculum: document.getElementById("panel-curriculum"), wizard: document.getElementById("panel-wizard"), vocab: document.getElementById("panel-vocab"), pron: document.getElementById("panel-pron"), bible: document.getElementById("panel-bible"), grammar: document.getElementById("panel-grammar"), review: document.getElementById("panel-review") };
+  var panels = { curriculum: document.getElementById("panel-curriculum"), wizard: document.getElementById("panel-wizard"), vocab: document.getElementById("panel-vocab"), sentence: document.getElementById("panel-sentence"), pron: document.getElementById("panel-pron"), bible: document.getElementById("panel-bible"), grammar: document.getElementById("panel-grammar"), review: document.getElementById("panel-review") };
   // Remember each tab's scroll position so switching away and back doesn't lose your place.
   // Direct tab-bar clicks restore the remembered position (or top, on a first visit);
   // programmatic jumps (goToTab / goToReview, used by 바로가기 shortcut buttons) intentionally
@@ -3411,7 +3411,7 @@
   document.addEventListener("click", function (e) {
     var btn = e.target.closest(".subtab-btn");
     if (!btn) return;
-    ["wizard", "curriculum", "vocab", "pron", "bible", "grammar", "review"].forEach(function (group) {
+    ["wizard", "curriculum", "vocab", "sentence", "pron", "bible", "grammar", "review"].forEach(function (group) {
       if (btn.dataset[group]) {
         recordSubtab(group, btn.dataset[group]);
       }
@@ -3704,8 +3704,6 @@
       reftable: document.getElementById("wizard-reftable-pane"),
       talks: document.getElementById("wizard-talks-pane"),
       neighbor: document.getElementById("wizard-neighbor-pane"),
-      lff: document.getElementById("wizard-lff-pane"),
-      lpd: document.getElementById("wizard-lpd-pane"),
     };
     var btns = document.querySelectorAll(".subtab-btn[data-wizard]");
     if (!btns.length || !panes.main) return;
@@ -3714,16 +3712,37 @@
         btns.forEach(function (b) { b.setAttribute("aria-selected", "false"); });
         btn.setAttribute("aria-selected", "true");
         Object.keys(panes).forEach(function (k) { if (panes[k]) panes[k].style.display = k === btn.dataset.wizard ? "" : "none"; });
-        if (btn.dataset.wizard === "lpd") renderCurrLpd();
         if (btn.dataset.wizard === "talks") renderCurrTalks();
         if (btn.dataset.wizard === "neighbor") renderCurrNeighbor();
-        if (btn.dataset.wizard === "lff") renderCurrLff();
       });
     });
     renderCurrTalks();
     renderCurrNeighbor();
+  })();
+
+  /* ---------------- 문장 subtab (행복한 삶을 영원히 / 사람들을 사랑하고 제자로 / 파수대) ---------------- */
+  (function () {
+    var panes = {
+      lff: document.getElementById("sentence-lff-pane"),
+      lpd: document.getElementById("sentence-lpd-pane"),
+      wt: document.getElementById("sentence-wt-pane"),
+    };
+    var btns = document.querySelectorAll(".subtab-btn[data-sentence]");
+    if (!btns.length || !panes.lff) return;
+    btns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        btns.forEach(function (b) { b.setAttribute("aria-selected", "false"); });
+        btn.setAttribute("aria-selected", "true");
+        Object.keys(panes).forEach(function (k) { if (panes[k]) panes[k].style.display = k === btn.dataset.sentence ? "" : "none"; });
+        vocabFocus = null;
+        if (btn.dataset.sentence === "lpd") renderCurrLpd();
+        if (btn.dataset.sentence === "wt") renderCurrWt();
+        if (btn.dataset.sentence === "lff") renderCurrLff();
+      });
+    });
     renderCurrLff();
     renderCurrLpd();
+    renderCurrWt();
   })();
 
   /* ================= WIZARD ================= */
@@ -4598,9 +4617,14 @@
       '<button class="vocab-focus-scoped-review">' + TU("학습 범위내 복습 게임") + '</button>' +
       '<button class="vocab-focus-clear">' + TU("전체 보기") + '</button></div></div>';
   }
-  function bindVocabFocusClear(root) {
+  // renderFn (optional): which render function "전체 보기" should call after clearing the focus
+  // -- defaults to renderVocab() for every ordinary vocab subtab, but 파수대 moved to its own
+  // 문장 tab (see renderCurrWt()) and passes that instead so clearing its focus re-renders the
+  // right pane.
+  function bindVocabFocusClear(root, renderFn) {
+    renderFn = renderFn || renderVocab;
     var b = root.querySelector(".vocab-focus-clear");
-    if (b) b.addEventListener("click", function () { vocabFocus = null; renderVocab(); });
+    if (b) b.addEventListener("click", function () { vocabFocus = null; renderFn(); });
     var sr = root.querySelector(".vocab-focus-scoped-review");
     if (sr) sr.addEventListener("click", function () {
       if (typeof window.__goToScopedVocabReview === "function") window.__goToScopedVocabReview();
@@ -4692,10 +4716,6 @@
     }
     if (vocabMode === "orderrev") {
       renderVocabOrderReversed(root, q);
-      return;
-    }
-    if (vocabMode === "wt") {
-      renderVocabWatchtower(root, q);
       return;
     }
     if (vocabMode === "chain") {
@@ -5486,10 +5506,10 @@
     // subtab's own natural item order (see VOCAB_PLAN), pin that range so the learner lands on
     // exactly the words they should study today -- must run AFTER the subtab-btn click above,
     // since that click handler unconditionally clears vocabFocus before re-rendering.
-    if (tab === "vocab" && vocabRange && typeof vocabRange.start === "number" && typeof vocabRange.end === "number") {
+    if ((tab === "vocab" || tab === "sentence") && vocabRange && typeof vocabRange.start === "number" && typeof vocabRange.end === "number") {
       vocabFocus = { mode: subVal, start: vocabRange.start, end: vocabRange.end };
-      renderVocab();
-    } else if (tab === "vocab" && !subAttr) {
+      if (tab === "vocab") renderVocab(); else renderCurrWt();
+    } else if ((tab === "vocab" || tab === "sentence") && !subAttr) {
       vocabFocus = null;
     }
     // For 교과 → 16주 과정 links that point at a specific 제공 연설 number (or numbers, for a
@@ -5554,7 +5574,7 @@
     return { start: start, end: start + WATCHTOWER_VOCAB[weekNumber - 1].words.length };
   }
   function curriculumLinkForWeek(link, weekKey) {
-    if (!link || link.subAttr !== "vocab" || link.subVal !== "wt") return link;
+    if (!link || link.subAttr !== "sentence" || link.subVal !== "wt") return link;
     if (Number(weekKey) === 16) return { tab: "review", reviewScope: "wt", reviewMode: "order" };
     var range = watchtowerRange(courseWatchtowerWeek(weekKey));
     if (!range) return null;
@@ -5600,12 +5620,12 @@
     var plan = COURSE_READING_PLAN[String(weekKey)];
     if (!plan) return [];
     var items = [];
-    if (plan.lff) items.push({ text: courseReadingText("lff", plan.lff), link: { tab: "wizard", subAttr: "wizard", subVal: "lff", anchor: "lff" + (plan.lff - 1) } });
-    if (plan.lffReview) items.push({ text: courseReadingText("lffReview", plan.lffReview), link: { tab: "wizard", subAttr: "wizard", subVal: "lff", anchor: "lff12" } });
-    if (plan.lpd) items.push({ text: courseReadingText("lpd", plan.lpd), link: { tab: "wizard", subAttr: "wizard", subVal: "lpd", anchor: "lpd" + (plan.lpd - 1) } });
+    if (plan.lff) items.push({ text: courseReadingText("lff", plan.lff), link: { tab: "sentence", subAttr: "sentence", subVal: "lff", anchor: "lff" + (plan.lff - 1) } });
+    if (plan.lffReview) items.push({ text: courseReadingText("lffReview", plan.lffReview), link: { tab: "sentence", subAttr: "sentence", subVal: "lff", anchor: "lff12" } });
+    if (plan.lpd) items.push({ text: courseReadingText("lpd", plan.lpd), link: { tab: "sentence", subAttr: "sentence", subVal: "lpd", anchor: "lpd" + (plan.lpd - 1) } });
     if (plan.lpdAppendix) {
       var appendixIndex = { A: 12, B: 13, C: 14 }[plan.lpdAppendix];
-      items.push({ text: courseReadingText("lpdAppendix", plan.lpdAppendix), link: { tab: "wizard", subAttr: "wizard", subVal: "lpd", anchor: "lpd" + appendixIndex } });
+      items.push({ text: courseReadingText("lpdAppendix", plan.lpdAppendix), link: { tab: "sentence", subAttr: "sentence", subVal: "lpd", anchor: "lpd" + appendixIndex } });
     }
     return items;
   }
@@ -5648,7 +5668,7 @@
         e.stopPropagation();
         if (b.dataset.gotoReviewScope) {
           activateTab("review", false);
-          var reviewTab = document.querySelector('.subtab-btn[data-review="vocab"]');
+          var reviewTab = document.querySelector('.subtab-btn[data-review="sentence"]');
           if (reviewTab) reviewTab.click();
           setTimeout(function () {
             var scope = document.querySelector('.subtab-btn[data-review-scope="' + b.dataset.gotoReviewScope + '"]');
@@ -6709,7 +6729,7 @@
       });
       return words.length ? Object.assign({}, wk, { words: words }) : null;
     }).filter(Boolean);
-    if (!qWeeks.length) { root.innerHTML = vocabFocusBannerHtml("wt") + '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>'; bindVocabFocusClear(root); return; }
+    if (!qWeeks.length) { root.innerHTML = vocabFocusBannerHtml("wt") + '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>'; bindVocabFocusClear(root, renderCurrWt); return; }
     var openAll = !!q || (vocabFocus && vocabFocus.mode === "wt");
     var html = vocabFocusBannerHtml("wt") + '<div class="chain-note">' + TU("이 주의 파수대 연구 기사에서 뽑은 어휘예요. 예문과 예문의 뜻도 함께 보여줘요.") + '</div>';
     // Read-all order per word: 단어(vi) -> 단어 뜻 -> 예문(vi) -> 예문 뜻, so each word contributes
@@ -6748,8 +6768,22 @@
       });
     });
     root.querySelectorAll(".speak-btn").forEach(function (b) { b.addEventListener("click", function (e) { e.stopPropagation(); speak(b.dataset.speak); }); });
-    bindVocabFocusClear(root);
+    bindVocabFocusClear(root, renderCurrWt);
   }
+
+  // 파수대 moved from 어휘 into its own 문장 subtab (data-sentence="wt") -- this thin wrapper just
+  // supplies renderVocabWatchtower() with the 문장 tab's own mount/search elements instead of
+  // 어휘's, so every existing vocabFocus/바로가기 range-banner behavior keeps working unchanged.
+  function renderCurrWt(q) {
+    var root = document.getElementById("curr-wt-root");
+    if (!root) return;
+    if (q === undefined) {
+      var searchEl = document.getElementById("wt-search");
+      q = searchEl ? searchEl.value.trim().toLowerCase() : "";
+    }
+    renderVocabWatchtower(root, q);
+  }
+  document.getElementById("wt-search").addEventListener("input", function () { vocabFocus = null; renderCurrWt(); });
 
   function renderCurrSentences() {
     var root = document.getElementById("curr-sentences-root");
@@ -7054,27 +7088,6 @@
             }
           });
         });
-        // 행복한 삶을 영원히 (new 대화 subtab, LFF_CONVERSATIONS) contributes its lesson-body
-        // sentences too, except reading directions, headings and bare numbered prompts.
-        LFF_CONVERSATIONS.forEach(function (rec) {
-          lffDisplayLines(rec).forEach(function (l) {
-            if (isReviewableLffLine(l)) addSentencePairs(out, applyLffListenerTerms(l.vi), Tstrict(l));
-          });
-        });
-        // 사람들을 사랑하고 제자로 (new 대화 subtab, LPD_LESSONS) contributes its curated example
-        // sentences too.
-        LPD_LESSONS.forEach(function (rec) {
-          rec.lines.forEach(function (l) {
-            if (l.vi) {
-              if (rec.kind === "appendix" && rec.num === "A") {
-                var u = applyLpdTerms(l);
-                out.push({ vi: u.vi, kr: u.kr });
-              } else {
-                addSentencePairs(out, l.vi, Tstrict(l));
-              }
-            }
-          });
-        });
         return dedupeByVi(out);
       },
       vocab: function () {
@@ -7104,10 +7117,6 @@
         DIALECT_WORDS.forEach(function (d) {
           out.push({ vi: d.north.replace(/[/].*$/, ""), kr: Tstrict(d.mean) });
           out.push({ vi: d.south.replace(/[/].*$/, ""), kr: Tstrict(d.mean) });
-        });
-        // 파수대 (new 어휘 subtab) contributes too.
-        WATCHTOWER_VOCAB.forEach(function (wk) {
-          wk.words.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.mean) }); });
         });
         return dedupeByVi(out);
       },
@@ -7147,7 +7156,29 @@
         GRAMMAR_DICT.forEach(function (g) {
           g.examples.forEach(function (e) { if (e.vi && e.kr) addSentencePairs(out, e.vi, Tstrict(e.kr)); });
         });
-        // [파수대] 탭의 모든 예문도 문법 복습 풀에 포함시킨다.
+        return dedupeByVi(out);
+      },
+      // 문장 탭 (행복한 삶을 영원히 · 사람들을 사랑하고 제자로 · 파수대) -- 문장이 아닌 항목은 모두
+      // 제외하므로, 파수대에서는 단어(w.vi/w.mean)가 아니라 예문(w.example/w.example_mean)만 쓴다.
+      sentence: function () {
+        var out = [];
+        LFF_CONVERSATIONS.forEach(function (rec) {
+          lffDisplayLines(rec).forEach(function (l) {
+            if (isReviewableLffLine(l)) addSentencePairs(out, applyLffListenerTerms(l.vi), Tstrict(l));
+          });
+        });
+        LPD_LESSONS.forEach(function (rec) {
+          rec.lines.forEach(function (l) {
+            if (l.vi) {
+              if (rec.kind === "appendix" && rec.num === "A") {
+                var u = applyLpdTerms(l);
+                out.push({ vi: u.vi, kr: u.kr });
+              } else {
+                addSentencePairs(out, l.vi, Tstrict(l));
+              }
+            }
+          });
+        });
         WATCHTOWER_VOCAB.forEach(function (wk) {
           wk.words.forEach(function (w) {
             if (w.example && w.example_mean) addSentencePairs(out, w.example, Tstrict(w.example_mean));
@@ -7163,8 +7194,9 @@
     var REVIEW_SCOPES = {
       pron: ["all", "alphabet", "tones", "tonepairs", "nsdiff"],
       bible: ["all", "books", "numbers", "time", "days", "months"],
-      wizard: ["all", "main", "reftable", "talks", "neighbor", "lff", "lpd"],
-      vocab: ["all", "rhyme", "orderrev", "groups", "basic", "antonym", "freq", "theo", "names", "chain", "dialect", "wt"],
+      wizard: ["all", "main", "reftable", "talks", "neighbor"],
+      vocab: ["all", "rhyme", "orderrev", "groups", "basic", "antonym", "freq", "theo", "names", "chain", "dialect"],
+      sentence: ["all", "lff", "lpd", "wt"],
       grammar: ["all", "lessons", "special", "sentences"]
     };
     var REVIEW_SCOPE_LABELS = {
@@ -7198,7 +7230,8 @@
         else if (scope === "reftable") REF_TABLE.forEach(function (sec) { sec.rows.forEach(function (r) { if (TERM_MEAN[r.listener]) out.push({ vi: r.listener, kr: TU(TERM_MEAN[r.listener]) }); if (TERM_MEAN[r.self]) out.push({ vi: r.self, kr: TU(TERM_MEAN[r.self]) }); }); });
         else if (scope === "talks") OFFER_TALKS.forEach(function (t) { t.lines.forEach(function (l) { sentence(l.vi, Tstrict(l.kr)); }); });
         else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(applyNeighborTermsVi(l.vi), applyNeighborTermsMeaning(Tstrict(l), currentLang)); }); });
-        else if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
+      } else if (key === "sentence") {
+        if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
         else if (scope === "lpd") LPD_LESSONS.forEach(function (r) {
           r.lines.forEach(function (l) {
             if (r.kind === "appendix" && r.num === "A") {
@@ -7209,6 +7242,7 @@
             }
           });
         });
+        else if (scope === "wt") WATCHTOWER_VOCAB.forEach(function (wk) { wk.words.forEach(function (w) { if (w.example && w.example_mean) sentence(w.example, Tstrict(w.example_mean)); }); });
       } else if (key === "vocab") {
         if (scope === "rhyme") RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); });
         else if (scope === "orderrev") { RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { if (w.word_order_reversed) out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); }); if (typeof WORD_ORDER_REVERSED_EXTRA !== "undefined") WORD_ORDER_REVERSED_EXTRA.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }
@@ -7220,7 +7254,6 @@
         else if (scope === "names") BIBLE_NAMES.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.kr) }); });
         else if (scope === "chain") VOCAB_CHAIN.forEach(function (w) { out.push({ vi: w.word, kr: Tstrict(w.meaning) }); });
         else if (scope === "dialect") DIALECT_WORDS.forEach(function (w) { out.push({ vi: w.north.replace(/[/].*$/, ""), kr: Tstrict(w.mean) }, { vi: w.south.replace(/[/].*$/, ""), kr: Tstrict(w.mean) }); });
-        else if (scope === "wt") WATCHTOWER_VOCAB.forEach(function (week) { week.words.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.mean) }); }); });
       } else if (key === "grammar") {
         if (scope === "lessons") { GRAMMAR_INTRO.forEach(function (s) { s.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); }); GRAMMAR_UNITS.forEach(function (u) { u.steps.forEach(function (s) { sentence(s.vi, Tstrict(s.kr)); }); }); }
         else if (scope === "special") { GX_MOTION_VERBS.forEach(function (v) { sentence(v.vi, Tstrict(v.kr)); }); GX_POS_EXAMPLES.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); GRAMMAR_DICT.forEach(function (g) { g.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); }); }
@@ -7547,8 +7580,8 @@
       studyState.current = null;
       reviewBtns.forEach(function (b) { b.setAttribute("aria-selected", b.dataset.review === key ? "true" : "false"); });
       renderReviewScopes(key, scope);
-      // 문법과 대화 복습은 기본 학습 모드를 "어순 배열"로 시작한다.
-      var defaultMode = (key === "grammar" || key === "wizard") ? "order" : "flash";
+      // 문법·대화·문장 복습은 기본 학습 모드를 "어순 배열"로 시작한다.
+      var defaultMode = (key === "grammar" || key === "wizard" || key === "sentence") ? "order" : "flash";
       modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (b) { b.setAttribute("aria-selected", b.dataset.mode === defaultMode ? "true" : "false"); });
       studyState.mode = defaultMode;
       startMode();
@@ -7561,12 +7594,15 @@
     }
     // Exposed so the vocab-focus banner (built in a different IIFE) can launch a review session
     // scoped to just its currently-visible range; see vocabFocusBannerHtml()/bindVocabFocusClear().
-    window.__goToScopedVocabReview = function () { goToReview("vocab", vocabScopedPool()); };
+    window.__goToScopedVocabReview = function () {
+      var key = (vocabFocus && vocabFocus.mode === "wt") ? "sentence" : "vocab";
+      goToReview(key, vocabScopedPool());
+    };
 
     reviewBtns.forEach(function (btn) {
       btn.addEventListener("click", function () { selectCategory(btn.dataset.review, "all"); });
     });
-    if (reviewBtns.length) selectCategory("wizard", "lff");
+    if (reviewBtns.length) selectCategory("sentence", "lff");
     modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
         modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (b) { b.setAttribute("aria-selected", "false"); });
@@ -9611,7 +9647,7 @@
       if (!saved) return;
       if (saved.subtabs) {
         lastPlaceState.subtabs = saved.subtabs;
-        ["wizard", "curriculum", "vocab", "pron", "bible", "grammar", "review"].forEach(function (group) {
+        ["wizard", "curriculum", "vocab", "sentence", "pron", "bible", "grammar", "review"].forEach(function (group) {
           var val = saved.subtabs[group];
           if (!val) return;
           var btn = document.querySelector('.subtab-btn[data-' + group + '="' + val + '"]');
