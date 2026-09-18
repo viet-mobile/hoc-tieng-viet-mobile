@@ -3677,14 +3677,14 @@
     } else if (currentLang === "ja") {
       if (isQuestion) {
         if (isInformal) {
-          meaning = meaning.replace(/^「こんなことをお聞きになったことがありますか(?:\?|？)?」/, "「こんなこと聞いたことある？」");
+          meaning = meaning.replace(/^「こんなことをお聞きになったことがありますか(?:\?|？)?」/, "こんなこと聞いたことある。");
           Object.keys(jaInformal).forEach(function (politeSt) {
             if (meaning.indexOf(politeSt) >= 0) {
               meaning = meaning.replace(politeSt, jaInformal[politeSt]);
             }
           });
         } else {
-          meaning = meaning.replace(/^「こんなこと聞いたことある(?:\?|？)?」/, "「こんなことをお聞きになったことがありますか?」");
+          meaning = meaning.replace(/^こんなこと聞いたことある[。.]?/, "「こんなことをお聞きになったことがありますか?」");
           Object.keys(jaPolite).forEach(function (casualSt) {
             if (meaning.indexOf(casualSt) >= 0) {
               meaning = meaning.replace(casualSt, jaPolite[casualSt]);
