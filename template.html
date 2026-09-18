@@ -335,6 +335,7 @@
   .people-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(88px, 1fr)); gap: 8px; }
   .people-fields-age { grid-template-columns: 52px minmax(0, 1fr); }
   .people-fields-myname { grid-template-columns: 72px minmax(0, 1fr); }
+  .people-fields-listener { grid-template-columns: 1fr 1fr; }
   .people-toggle-row { display: flex; align-items: center; gap: 8px; font-size: 0.78rem; color: var(--ink-soft); }
   .people-toggle-row .ptl { flex: none; width: 32px; }
   .mini-toggle { display: flex; gap: 6px; flex: 1; }
@@ -1565,6 +1566,14 @@
             </div>
           </div>
 
+        </div>
+      </div>
+
+      <div class="qgroup" id="qgroup-listener-name">
+        <div class="qgroup-label"><span data-i18n="상대방의 이름은?">상대방의 이름은?</span></div>
+        <div class="people-fields people-fields-listener">
+          <label class="name-field"><span data-i18n="한국어 이름">한국어 이름</span><input type="text" id="people-listener-namekr" placeholder="예: 동식" data-i18n-placeholder="예: 동식"></label>
+          <label class="name-field"><span data-i18n="베트남어 이름">베트남어 이름</span><input type="text" id="people-listener-namevi" placeholder="예: Trung" data-i18n-placeholder="예: Trung"></label>
         </div>
       </div>
 

@@ -433,6 +433,11 @@
     "en": "A brother or sister who speaks Vietnamese well",
     "ja": "ベトナム語が上手な兄弟姉妹"
   },
+  "상대방의 이름은?": {
+    "zh": "對方的名字是？",
+    "en": "What is the other person's name?",
+    "ja": "相手の名前は？"
+  },
   "상대방의 성별은?": {
     "zh": "對方的性別是？",
     "en": "What is the other person's gender?",
@@ -3353,6 +3358,29 @@
   // land at the top instead, since those are meant to show specific new content, not resume
   // a spot the user left on their own.
   var tabScrollPos = {};
+  var LAST_PLACE_STORAGE_KEY = "vn-app-last-place-v1";
+  var lastPlaceState = {
+    tab: "review",
+    subtabs: {},
+    scrollY: 0
+  };
+
+  function saveLastPlace() {
+    try {
+      if (!window.localStorage) return;
+      var activeTab = (appRoot && appRoot.dataset.activeTab) || "review";
+      lastPlaceState.tab = activeTab;
+      lastPlaceState.scrollY = window.scrollY || 0;
+      window.localStorage.setItem(LAST_PLACE_STORAGE_KEY, JSON.stringify(lastPlaceState));
+    } catch (e) { /* no-op */ }
+  }
+
+  function recordSubtab(group, val) {
+    if (!lastPlaceState.subtabs) lastPlaceState.subtabs = {};
+    lastPlaceState.subtabs[group] = val;
+    saveLastPlace();
+  }
+
   function activateTab(tab, restoreScroll) {
     if (!panels[tab]) return;
     var prevTab = appRoot ? appRoot.dataset.activeTab : null;
@@ -3372,10 +3400,29 @@
     }
     var targetTop = (restoreScroll && tabScrollPos.hasOwnProperty(tab)) ? tabScrollPos[tab] : 0;
     window.scrollTo({ top: targetTop, behavior: "instant" in window ? "instant" : "auto" });
+    saveLastPlace();
   }
   tabButtons.forEach(function (btn) {
     btn.addEventListener("click", function () { activateTab(btn.dataset.tab, true); });
   });
+
+  // Track subtab selections across all groups
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest(".subtab-btn");
+    if (!btn) return;
+    ["wizard", "curriculum", "vocab", "pron", "bible", "grammar", "review"].forEach(function (group) {
+      if (btn.dataset[group]) {
+        recordSubtab(group, btn.dataset[group]);
+      }
+    });
+  });
+
+  var lastPlaceScrollTimer = null;
+  window.addEventListener("scroll", function () {
+    if (lastPlaceScrollTimer) clearTimeout(lastPlaceScrollTimer);
+    lastPlaceScrollTimer = setTimeout(saveLastPlace, 400);
+  }, { passive: true });
+  window.addEventListener("beforeunload", saveLastPlace);
 
   // Shared selection state for the WIZARD (대화 subtab) -- declared here (ahead of the WIZARD
   // section below, where it used to live) because renderCurrTalks() is invoked once,
@@ -3400,8 +3447,254 @@
     // computeCompanionTerm() below still resolves a term.
     companion: { nameKr: "", nameVi: "", gender: null, age: null, phone: "", married: null, region: "north" },
     elder: { nameKr: "", nameVi: "", age: null, phone: "" },
-    pioneer: { nameKr: "", nameVi: "", age: null, phone: "" }
+    pioneer: { nameKr: "", nameVi: "", age: null, phone: "" },
+    listener: { nameKr: "", nameVi: "" }
   };
+
+  /* ---------------- 상대방 호칭 및 변형 헬퍼 (LPD / LFF / 이웃 대화 공유) ---------------- */
+  function getLpdListenerTerm() {
+    var talkCase = typeof findCaseForState === "function" ? findCaseForState(state) : null;
+    if (talkCase) return termWord(talkCase.listener_term, talkCase.listener_term_south, state.region);
+    if (typeof findCaseForState === "function") {
+      var fbSpeaker = state.speaker || (peopleState.me && peopleState.me.gender === "sister" ? "sister" : "brother");
+      var fbCase = findCaseForState({
+        speaker: fbSpeaker,
+        listener_gender: state.listener_gender || "male",
+        rel: state.rel || "older_than_parent",
+        region: state.region || "north",
+        ageBracket: state.ageBracket || "4070"
+      });
+      if (fbCase) return termWord(fbCase.listener_term, fbCase.listener_term_south, state.region || "north");
+    }
+    return "ông";
+  }
+
+  function lpdRecordLabel(rec) {
+    if (rec.kind === "lesson") return "Bài " + (rec.num < 10 ? "0" + rec.num : String(rec.num));
+    return "Phụ lục " + rec.num;
+  }
+
+  function isLpdInformalListener(term) {
+    return /^(?:cháu|con|em|cậu|bạn)$/i.test(term || "");
+  }
+
+  function applyLpdListenerTerm(text, term) {
+    if (!text) return text;
+    var t = term || getLpdListenerTerm();
+    var termCap = capitalize(t);
+    return text.replace(/([“"'\s]|^)Ông(?=\s+có\s+bao\s+giờ(?:\s|$))/g, "$1" + termCap);
+  }
+
+  /* ---------------- 행복한 삶을 영원히 (LFF) 호칭 변형 ("친구" 뜻 제외) ---------------- */
+  function applyLffListenerTerms(text) {
+    if (!text || typeof text !== "string") return text;
+    var term = getLpdListenerTerm();
+    if (!term || term.toLowerCase() === "bạn") return text;
+    var termCap = capitalize(term);
+    var termLow = term.toLowerCase();
+
+    return text.replace(/\b([Bb]ạn)\b/g, function (match, word, offset, fullStr) {
+      var before = fullStr.slice(0, offset);
+      var after = fullStr.slice(offset + match.length);
+
+      // 1. Followed by friend-related words
+      if (/^\s+(?:bè|thân|xấu|thật|thiết|cùng\s+(?:phòng|lớp|lứa)|đời|ngài)\b/i.test(after)) return match;
+      if (/^\s+tốt(?!\s+đẹp)\b/i.test(after)) return match;
+      if (/^\s+của\s+(?:ngài|Đức\s+Giê-hô-va|Đức\s+Chúa\s+Trời|Chúa|một\s+người|ai|nhau|ông)\b/i.test(after)) return match;
+      if (/^\s+và\s+Đấng\s+Tạo\s+Hóa\b/i.test(after)) return match;
+
+      // 2. Preceded by friend-related context
+      if (/\b(?:(?:những|các|một)\s+)?người\s+$/i.test(before)) return match;
+      if (/\btình\s+$/i.test(before)) return match;
+      if (/\b(?:kết|chọn|tìm|trở\s+thành)\s+$/i.test(before)) return match;
+      if (/\blàm\s+$/i.test(before) && /^\s+(?:với|cùng)\b/i.test(after)) return match;
+      if (/\bxem\s+(?:chúng\s+ta|họ|mình)\s+là\s+$/i.test(before)) return match;
+      if (/\bkhông\s+có\s+$/i.test(before) && (/^\s*[”".!,?]/.test(after) || /^\s+(?:bè|thân|tốt)\b/i.test(after))) return match;
+
+      return (word === "Bạn") ? termCap : termLow;
+    });
+  }
+
+  /* ---------------- 이웃 사람과의 대화 호칭 및 이름 변형 ---------------- */
+  var KNOWN_NEIGHBOR_NAMES_RE = "(?:Trung|Sương|Giang|Dũng|Dương|An|Vy|Tín)";
+
+  function applyNeighborTermsVi(text) {
+    if (!text || typeof text !== "string") return text;
+    var term = getLpdListenerTerm();
+    var termCap = capitalize(term);
+    var termLow = term.toLowerCase();
+    var customNameVi = (peopleState.listener && peopleState.listener.nameVi) ? peopleState.listener.nameVi.trim() : "";
+
+    var nameRegex = new RegExp("\\b(Anh|Chị|anh|chị)\\s+" + KNOWN_NEIGHBOR_NAMES_RE + "\\b", "g");
+    text = text.replace(nameRegex, function (m, pTerm) {
+      var isCap = pTerm[0] === pTerm[0].toUpperCase();
+      var t = isCap ? termCap : termLow;
+      if (customNameVi) return t + " " + customNameVi;
+      return m.replace(/^(Anh|Chị|anh|chị)/, t);
+    });
+
+    if (customNameVi) {
+      text = text.replace(new RegExp("\\b(Tôi\\s+(?:tên|là))\\s+" + KNOWN_NEIGHBOR_NAMES_RE + "\\b", "g"), "$1 " + customNameVi);
+    }
+
+    text = text.replace(/\b(Anh|Chị|anh|chị)\b/g, function (m, pTerm, offset, fullStr) {
+      var after = fullStr.slice(offset + m.length);
+      if (/^\s+ấy\b/.test(after)) return m;
+      var isCap = pTerm[0] === pTerm[0].toUpperCase();
+      return isCap ? termCap : termLow;
+    });
+
+    return text;
+  }
+
+  function applyNeighborTermsMeaning(meaning, lang) {
+    if (!meaning || typeof meaning !== "string") return meaning;
+    var checkLang = lang || currentLang;
+    if (checkLang === "ko") {
+      var customNameKr = (peopleState.listener && peopleState.listener.nameKr) ? peopleState.listener.nameKr.trim() : "";
+      if (customNameKr) {
+        meaning = meaning.replace(/(?:최영철|성식|지연|민혜림|기철|정숙)\s*씨/g, customNameKr + " 씨");
+        meaning = meaning.replace(/저는\s+민혜림이에요/g, "저는 " + customNameKr + "이에요");
+        meaning = meaning.replace(/이정숙이라고\s+해요/g, customNameKr + "(이)라고 해요");
+      }
+    }
+    return meaning;
+  }
+
+  var LPD_KO_INFORMAL_MAP = {
+    "지금 일어나고 있는 일들과 사람들이 나타내는 태도를 보면 이 세상에 곧 변화가 있을 것임을 알 수 있습니다.": "지금 일어나고 있는 일들과 사람들이 나타내는 태도를 보면 이 세상에 곧 변화가 있을 것임을 알 수 있어.",
+    "지구는 결코 멸망되지 않을 것입니다.": "지구는 결코 멸망되지 않을 거야.",
+    "환경 문제가 해결되고 땅이 낙원이 될 것입니다.": "환경 문제가 해결되고 땅이 낙원이 될 거야.",
+    "모든 사람이 아프지 않고 건강해질 것입니다.": "모든 사람이 아프지 않고 건강해질 거야.",
+    "죽지 않고 땅에서 영원히 살게 될 것입니다.": "죽지 않고 땅에서 영원히 살게 될 거야.",
+    "남편은 “자신을 사랑하듯이 아내를 사랑”해야 합니다.": "남편은 “자신을 사랑하듯이 아내를 사랑”해야 해.",
+    "아내는 남편을 깊이 존경해야 합니다.": "아내는 남편을 깊이 존경해야 해.",
+    "남편과 아내는 서로에게 충실해야 합니다.": "남편과 아내는 서로에게 충실해야 해.",
+    "부모를 존경하고 부모의 말에 순종하는 자녀는 행복하고 성공적인 삶을 살게 됩니다.": "부모를 존경하고 부모의 말에 순종하는 자녀는 행복하고 성공적인 삶을 살게 돼.",
+    "하느님에게는 이름이 있습니다.": "하느님에게는 이름이 있어.",
+    "하느님은 우리에게 중요한 소식을 알려 주셨습니다.": "하느님은 우리에게 중요한 소식을 알려 주셨어.",
+    "하느님은 공정하시고 편견이 없으십니다.": "하느님은 공정하시고 편견이 없으셔.",
+    "하느님은 우리를 돕고 싶어 하십니다.": "하느님은 우리를 돕고 싶어 하셔.",
+    "하느님은 우리가 그분에게 기도하기를 바라십니다.": "하느님은 우리가 그분에게 기도하기를 바라셔.",
+    "성경은 기도하는 방법을 알려 줍니다.": "성경은 기도하는 방법을 알려 줘.",
+    "우리는 자주 기도해야 합니다.": "우리는 자주 기도해야 해.",
+    "예수는 훌륭한 선생님이셨으며 그분의 가르침은 오늘날 우리에게도 도움이 됩니다.": "예수는 훌륭한 선생님이셨으며 그분의 가르침은 오늘날 우리에게도 도움이 돼.",
+    "예수는 오늘날 일어나는 일들을 예언했습니다.": "예수는 오늘날 일어나는 일들을 예언했어.",
+    "예수는 하느님의 아들입니다.": "예수는 하느님의 아들이야.",
+    "예수는 전능한 하느님이 아닙니다.": "예수는 전능한 하느님이 아니야.",
+    "하느님의 왕국은 하늘에 있는 실제 정부입니다.": "하느님의 왕국은 하늘에 있는 실제 정부야.",
+    "앞으로는 인간 정부가 아니라 하느님의 왕국이 온 땅을 다스릴 것입니다.": "앞으로는 인간 정부가 아니라 하느님의 왕국이 온 땅을 다스릴 거야.",
+    "하느님의 왕국만이 인류가 겪고 있는 모든 문제를 해결할 수 있습니다.": "하느님의 왕국만이 인류가 겪고 있는 모든 문제를 해결할 수 있어.",
+    "우리가 겪는 고난은 하느님 때문이 아닙니다.": "우리가 겪는 고난은 하느님 때문이 아니야.",
+    "이 세상은 사탄이 통치하고 있습니다.": "이 세상은 사탄이 통치하고 있어.",
+    "하느님은 우리가 고난을 겪을 때 도와주고 싶어 하십니다.": "하느님은 우리가 고난을 겪을 때 도와주고 싶어 하셔.",
+    "하느님이 곧 모든 고난을 없애실 것입니다.": "하느님이 곧 모든 고난을 없애실 거야.",
+    "죽은 사람은 의식이 없으며 고통도 느끼지 못합니다.": "죽은 사람은 의식이 없으며 고통도 느끼지 못해.",
+    "죽은 사람은 우리에게 도움을 주거나 해를 끼칠 수 없습니다.": "죽은 사람은 우리에게 도움을 주거나 해를 끼칠 수 없어.",
+    "사망한 가족과 친구들이 부활될 것입니다.": "사망한 가족과 친구들이 부활될 거야.",
+    "“더 이상 죽음이 없을 것입니다.”": "“더 이상 죽음이 없을 거야.”",
+    "모든 종교를 하느님이 좋아하시는 것은 아닙니다.": "모든 종교를 하느님이 좋아하시는 것은 아니야.",
+    "하느님은 위선을 싫어하십니다.": "하느님은 위선을 싫어하셔.",
+    "진정한 사랑을 보이는 종교가 참종교입니다.": "진정한 사랑을 보이는 종교가 참종교야."
+  };
+  var LPD_KO_POLITE_MAP = {};
+  Object.keys(LPD_KO_INFORMAL_MAP).forEach(function (k) { LPD_KO_POLITE_MAP[LPD_KO_INFORMAL_MAP[k]] = k; });
+
+  var LPD_JA_POLITE_MAP = {
+    "今起きていることや世の中の様子を見ると，もうすぐ世界が大きく変わることが分かる。": "今起きていることや世の中の様子を見ると，もうすぐ世界が大きく変わることが分かります。",
+    "地球が滅びることはない。": "地球が滅びることはありません。",
+    "環境問題はなくなる。": "環境問題はなくなります。",
+    "全ての人が健康になる。": "全ての人が健康になります。",
+    "地球でいつまでも幸せに暮らせる。": "地球でいつまでも幸せに暮らせます。",
+    "夫が「自分を愛するように妻を愛」することは大切。": "夫が「自分を愛するように妻を愛」することは大切です。",
+    "妻が夫に心から敬意を払うことは大切。": "妻が夫に心から敬意を払うことは大切です。",
+    "結婚の絆を大切にする夫婦はうまくいく。": "結婚の絆を大切にする夫婦はうまくいきます。",
+    "親を敬って言うことを聞く子供は幸せになれる。": "親を敬って言うことを聞く子供は幸せになれます。",
+    "神には名前がある。": "神에는名前があります。",
+    "神は人間に自分の考えを伝えている。": "神は人間に自分の考えを伝えています。",
+    "神は誰に対しても公平。": "神は誰に対しても公平です。",
+    "神は私たちのことを助けたいと思っている。": "神は私たちのことを助けたいと思っています。",
+    "神は私たちの祈りを聞きたいと思っている。": "神は私たちの祈りを聞きたいと思っています。",
+    "聖書を読むと，どう祈ったらいいかが分かる。": "聖書を読むと，どう祈ったらいいかが分かります。",
+    "何度も祈ることは大切。": "何度も祈ることは大切です。",
+    "イエスのアドバイスは今でも役に立つ。": "イエスのアドバイスは今でも役に立ちます。",
+    "イエスが予告した通りのことが今起きている。": "イエスが予告した通りのことが今起きています。",
+    "イエスは神の子。": "イエスは神の子です。",
+    "イエスは神ではない。": "イエスは神ではありません。",
+    "神は地球を治めるために王国をつくった。天に政府がある。": "神は地球を治めるために王国をつくりました。天に政府があります。",
+    "人間の政府はなくなり，神の王国の政府が世界中を治めるようになる。": "人間の政府はなくなり，神の王国の政府が世界中を治めるようになります。",
+    "世の中のいろいろな問題を全て解決できるのは，神の王国だけ。": "世の中のいろいろな問題を全て解決できるのは，神の王国だけです。",
+    "神が私たちを苦しめることはない。": "神が私たちを苦しめることはありません。",
+    "サタンが世界を支配している。": "サタンが世界を支配しています。",
+    "私たちが苦しいとき，神は助けたいと思っている。": "私たちが苦しいとき，神は助けたいと思っています。",
+    "神は間もなく全ての苦しみをなくす。": "神は間もなく全ての苦しみをなくします。",
+    "死んだ人は何も考えたり感じたりしない。苦しむこともない。": "死んだ人は何も考えたり感じたりしません。苦しむこともありません。",
+    "死んだ人は私たちを助けることはできず，何か悪さをすることもない。": "死んだ人は私たちを助けることはできず，何か悪さをすることもありません。",
+    "亡くなった人は生き返る。": "亡くなった人は生き返ります。",
+    "「死はなくな[る]」。": "「死はなくなります」。",
+    "全ての宗教が神から見て良いものというわけではない。": "全ての宗教が神から見て良いものというわけではありません。",
+    "宗教の名の下に行われる偽善は神に許されない。": "宗教の名の下に行われる偽善は神に許されません。",
+    "正しい宗教は，皆が愛を表しているかどうかで見分けられる。": "正しい宗教は，皆が愛を表しているかどうかで見分けられます。"
+  };
+  var LPD_JA_INFORMAL_MAP = {};
+  Object.keys(LPD_JA_POLITE_MAP).forEach(function (k) { LPD_JA_INFORMAL_MAP[LPD_JA_POLITE_MAP[k]] = k; });
+
+  function applyLpdTerms(line) {
+    if (!line) return { vi: "", kr: "" };
+    var term = getLpdListenerTerm();
+    var isInformal = isLpdInformalListener(term);
+    var vi = line.vi;
+    var isQuestion = vi && vi.indexOf("có bao giờ") >= 0;
+    if (isQuestion) {
+      vi = applyLpdListenerTerm(vi, term);
+    }
+    var meaning = T(line);
+    var koInformal = (typeof LPD_KO_INFORMAL_MAP !== "undefined" && LPD_KO_INFORMAL_MAP) || {};
+    var koPolite = (typeof LPD_KO_POLITE_MAP !== "undefined" && LPD_KO_POLITE_MAP) || {};
+    var jaInformal = (typeof LPD_JA_INFORMAL_MAP !== "undefined" && LPD_JA_INFORMAL_MAP) || {};
+    var jaPolite = (typeof LPD_JA_POLITE_MAP !== "undefined" && LPD_JA_POLITE_MAP) || {};
+
+    if (currentLang === "ko") {
+      if (isQuestion) {
+        if (isInformal) {
+          meaning = meaning.replace(/들어 보신 적 있나요\?$/, "들어 본 적 있니?");
+        } else {
+          meaning = meaning.replace(/들어 본 적 있니\?$/, "들어 보신 적 있나요?");
+        }
+      } else {
+        if (isInformal) {
+          meaning = koInformal[meaning] || meaning;
+        } else {
+          meaning = koPolite[meaning] || meaning;
+        }
+      }
+    } else if (currentLang === "ja") {
+      if (isQuestion) {
+        if (isInformal) {
+          meaning = meaning.replace(/^「こんなことをお聞きになったことがありますか(?:\?|？)?」/, "「こんなこと聞いたことある？」");
+          Object.keys(jaInformal).forEach(function (politeSt) {
+            if (meaning.indexOf(politeSt) >= 0) {
+              meaning = meaning.replace(politeSt, jaInformal[politeSt]);
+            }
+          });
+        } else {
+          meaning = meaning.replace(/^「こんなこと聞いたことある(?:\?|？)?」/, "「こんなことをお聞きになったことがありますか?」");
+          Object.keys(jaPolite).forEach(function (casualSt) {
+            if (meaning.indexOf(casualSt) >= 0) {
+              meaning = meaning.replace(casualSt, jaPolite[casualSt]);
+            }
+          });
+        }
+      } else {
+        if (isInformal) {
+          meaning = jaInformal[meaning] || meaning;
+        } else {
+          meaning = jaPolite[meaning] || meaning;
+        }
+      }
+    }
+    return { vi: vi, kr: meaning };
+  }
 
   /* ---------------- 호칭·대화 subtab (베트남 사람을 만났을 때 / 전체 호칭표 / 제공 연설) ---------------- */
   (function () {
@@ -3422,6 +3715,8 @@
         Object.keys(panes).forEach(function (k) { if (panes[k]) panes[k].style.display = k === btn.dataset.wizard ? "" : "none"; });
         if (btn.dataset.wizard === "lpd") renderCurrLpd();
         if (btn.dataset.wizard === "talks") renderCurrTalks();
+        if (btn.dataset.wizard === "neighbor") renderCurrNeighbor();
+        if (btn.dataset.wizard === "lff") renderCurrLff();
       });
     });
     renderCurrTalks();
@@ -3459,10 +3754,12 @@
         currentStageIdx = 0;
         regionNote();
         renderResult();
-        // 제공 연설 reads this same shared `state` (see comment where `state` is declared) --
+        // 제공 연설, LPD, 이웃 대화, LFF reads this same shared `state` --
         // keep it in sync live, not just when its own subtab is opened.
         renderCurrTalks();
         renderCurrLpd();
+        renderCurrNeighbor();
+        renderCurrLff();
         savePeopleState();
       });
     });
@@ -3506,6 +3803,8 @@
     updateCompanionNoteInPlace();
     renderCurrTalks();
     renderCurrLpd();
+    renderCurrNeighbor();
+    renderCurrLff();
     savePeopleState();
   }
   function bindMiniToggle(groupId, target, key) {
@@ -3557,6 +3856,8 @@
         renderResult();
         renderCurrTalks();
         renderCurrLpd();
+        renderCurrNeighbor();
+        renderCurrLff();
         savePeopleState();
       });
     });
@@ -3581,6 +3882,9 @@
   bindPeopleField("people-pioneer-namevi", peopleState.pioneer, "nameVi", false);
   bindPeopleField("people-pioneer-age", peopleState.pioneer, "age", true);
   bindPeopleField("people-pioneer-phone", peopleState.pioneer, "phone", false);
+
+  bindPeopleField("people-listener-namekr", peopleState.listener, "nameKr", false);
+  bindPeopleField("people-listener-namevi", peopleState.listener, "nameVi", false);
 
   updateCompanionTermNote();
 
@@ -3650,7 +3954,7 @@
       state.ageBracket = saved.state.ageBracket || null;
     }
     if (saved.peopleState) {
-      ["me", "companion", "elder", "pioneer"].forEach(function (k) {
+      ["me", "companion", "elder", "pioneer", "listener"].forEach(function (k) {
         if (!saved.peopleState[k]) return;
         Object.keys(saved.peopleState[k]).forEach(function (f) {
           peopleState[k][f] = saved.peopleState[k][f];
@@ -3697,6 +4001,11 @@
     setFieldValue("people-pioneer-age", peopleState.pioneer.age);
     setFieldValue("people-pioneer-phone", peopleState.pioneer.phone);
 
+    if (peopleState.listener) {
+      setFieldValue("people-listener-namekr", peopleState.listener.nameKr);
+      setFieldValue("people-listener-namevi", peopleState.listener.nameVi);
+    }
+
     if (nameKrInput) nameKrInput.value = userNameByLang[currentLang] || "";
     if (nameViInput) nameViInput.value = userNameVi || "";
 
@@ -3704,7 +4013,7 @@
   })();
 
   function findCaseForState(st) {
-    if (!st.speaker || !st.listener_gender || !st.rel || !st.region) return null;
+    if (!st || !st.speaker || !st.listener_gender || !st.rel) return null;
     if (st.rel === "stranger_polite" && !st.ageBracket) return null;
     for (var i = 0; i < CASES.length; i++) {
       var c = CASES[i];
@@ -5797,7 +6106,9 @@
     NEIGHBOR_CONVERSATIONS.forEach(function (conv, ci) {
       var lineUnits = [];
       conv.lines.forEach(function (line) {
-        sentencePairs(line.vi, T(line)).forEach(function (pair) {
+        var vi = applyNeighborTermsVi(line.vi);
+        var kr = applyNeighborTermsMeaning(T(line), currentLang);
+        sentencePairs(vi, kr).forEach(function (pair) {
           lineUnits.push({ who: line.who, vi: pair.vi, kr: pair.kr });
         });
       });
@@ -5978,19 +6289,21 @@
 
     var recordsByPart = {};
     LFF_CONVERSATIONS.forEach(function (rec, ri) {
+      var titleVi = applyLffListenerTerms(rec.title.vi);
       var lineUnits = [];
       lffDisplayLines(rec).forEach(function (line) {
-        sentencePairs(line.vi, T(line)).forEach(function (pair) {
+        var vi = applyLffListenerTerms(line.vi);
+        sentencePairs(vi, T(line)).forEach(function (pair) {
           lineUnits.push({ vi: pair.vi, kr: pair.kr });
         });
       });
       if (q) {
         var ql = q.toLowerCase();
         lineUnits = lineUnits.filter(function (l) { return l.vi.toLowerCase().indexOf(ql) >= 0 || l.kr.toLowerCase().indexOf(ql) >= 0; });
-        if (!lineUnits.length && rec.title.vi.toLowerCase().indexOf(ql) < 0 && T(rec.title).toLowerCase().indexOf(ql) < 0) return;
+        if (!lineUnits.length && titleVi.toLowerCase().indexOf(ql) < 0 && T(rec.title).toLowerCase().indexOf(ql) < 0) return;
       }
       if (!recordsByPart[rec.part]) recordsByPart[rec.part] = [];
-      recordsByPart[rec.part].push({ rec: rec, ri: ri, lineUnits: lineUnits });
+      recordsByPart[rec.part].push({ rec: rec, ri: ri, lineUnits: lineUnits, titleVi: titleVi });
     });
 
     var html = "";
@@ -6004,14 +6317,14 @@
         '<button type="button" class="lff-part-head" aria-expanded="' + (partOpen ? "true" : "false") + '">' +
         '<span>' + escapeHtml(lffPartLabel(partNumber)) + '</span>' + currChev() + '</button><div class="lff-part-body">';
       records.forEach(function (entry) {
-        var rec = entry.rec, ri = entry.ri, lineUnits = entry.lineUnits;
+        var rec = entry.rec, ri = entry.ri, lineUnits = entry.lineUnits, titleVi = entry.titleVi;
         // Start every full read with the same bilingual title shown in the card header, then
         // continue with the lesson's Vietnamese sentence and its selected-language translation.
-        var readPairs = [[rec.title.vi, T(rec.title)]].concat(lineUnits.map(function (l) { return [l.vi, l.kr]; }));
+        var readPairs = [[titleVi, T(rec.title)]].concat(lineUnits.map(function (l) { return [l.vi, l.kr]; }));
         var label = lffRecordLabel(rec);
         var titleHtml = rec.kind === "lesson"
-          ? '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(rec.title.vi) + '</span> <span class="lff-title-translation">· ' + escapeHtml(T(rec.title)) + '</span></span>'
-          : '<span class="cnt">' + escapeHtml(rec.title.vi) + ' · ' + escapeHtml(T(rec.title)) + '</span>';
+          ? '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(titleVi) + '</span> <span class="lff-title-translation">· ' + escapeHtml(T(rec.title)) + '</span></span>'
+          : '<span class="cnt">' + escapeHtml(titleVi) + ' · ' + escapeHtml(T(rec.title)) + '</span>';
         html += '<div class="group-card" data-open="' + (openSyls["lff" + ri] ? "true" : "false") + '" data-syl="lff' + ri + '" data-anchor="lff' + ri + '">' +
           '<div class="group-head-row"><button class="group-head"><span>' +
           (label ? '<span class="syl">' + escapeHtml(label) + '</span> ' : '') +
@@ -6046,159 +6359,8 @@
     if (input) input.addEventListener("input", function () { renderCurrLff(input.value.trim()); });
   })();
 
-  // "사람들을 사랑하고 제자로" (Love People—Make Disciples) -- LPD_LESSONS holds a small, hand-picked
-  // set of representative example sentences (5-8 per lesson) for Lessons 1-12 plus Appendices A-C,
-  // in all 5 languages. This is a curated study selection, not the brochure's full text, so unlike
-  // LFF_CONVERSATIONS there's no part-grouping or search box needed -- just a flat list of cards.
-  function lpdRecordLabel(rec) {
-    if (rec.kind === "lesson") return "Bài " + (rec.num < 10 ? "0" + rec.num : String(rec.num));
-    return "Phụ lục " + rec.num;
-  }
-  function getLpdListenerTerm() {
-    var talkCase = findCaseForState(state);
-    return talkCase ? termWord(talkCase.listener_term, talkCase.listener_term_south, state.region) : "ông";
-  }
-
-  function isLpdInformalListener(term) {
-    return /^(?:cháu|con|em|cậu|bạn)$/i.test(term || "");
-  }
-
-  function applyLpdListenerTerm(text, term) {
-    if (!text) return text;
-    var t = term || getLpdListenerTerm();
-    var termCap = capitalize(t);
-    return text.replace(/([“"'\s]|^)Ông(?=\s+có\s+bao\s+giờ(?:\s|$))/g, "$1" + termCap);
-  }
-
-  var LPD_KO_INFORMAL_MAP = {
-    "지금 일어나고 있는 일들과 사람들이 나타내는 태도를 보면 이 세상에 곧 변화가 있을 것임을 알 수 있습니다.": "지금 일어나고 있는 일들과 사람들이 나타내는 태도를 보면 이 세상에 곧 변화가 있을 것임을 알 수 있어.",
-    "지구는 결코 멸망되지 않을 것입니다.": "지구는 결코 멸망되지 않을 거야.",
-    "환경 문제가 해결되고 땅이 낙원이 될 것입니다.": "환경 문제가 해결되고 땅이 낙원이 될 거야.",
-    "모든 사람이 아프지 않고 건강해질 것입니다.": "모든 사람이 아프지 않고 건강해질 거야.",
-    "죽지 않고 땅에서 영원히 살게 될 것입니다.": "죽지 않고 땅에서 영원히 살게 될 거야.",
-    "남편은 “자신을 사랑하듯이 아내를 사랑”해야 합니다.": "남편은 “자신을 사랑하듯이 아내를 사랑”해야 해.",
-    "아내는 남편을 깊이 존경해야 합니다.": "아내는 남편을 깊이 존경해야 해.",
-    "남편과 아내는 서로에게 충실해야 합니다.": "남편과 아내는 서로에게 충실해야 해.",
-    "부모를 존경하고 부모의 말에 순종하는 자녀는 행복하고 성공적인 삶을 살게 됩니다.": "부모를 존경하고 부모의 말에 순종하는 자녀는 행복하고 성공적인 삶을 살게 돼.",
-    "하느님에게는 이름이 있습니다.": "하느님에게는 이름이 있어.",
-    "하느님은 우리에게 중요한 소식을 알려 주셨습니다.": "하느님은 우리에게 중요한 소식을 알려 주셨어.",
-    "하느님은 공정하시고 편견이 없으십니다.": "하느님은 공정하시고 편견이 없으셔.",
-    "하느님은 우리를 돕고 싶어 하십니다.": "하느님은 우리를 돕고 싶어 하셔.",
-    "하느님은 우리가 그분에게 기도하기를 바라십니다.": "하느님은 우리가 그분에게 기도하기를 바라셔.",
-    "성경은 기도하는 방법을 알려 줍니다.": "성경은 기도하는 방법을 알려 줘.",
-    "우리는 자주 기도해야 합니다.": "우리는 자주 기도해야 해.",
-    "예수는 훌륭한 선생님이셨으며 그분의 가르침은 오늘날 우리에게도 도움이 됩니다.": "예수는 훌륭한 선생님이셨으며 그분의 가르침은 오늘날 우리에게도 도움이 돼.",
-    "예수는 오늘날 일어나는 일들을 예언했습니다.": "예수는 오늘날 일어나는 일들을 예언했어.",
-    "예수는 하느님의 아들입니다.": "예수는 하느님의 아들이야.",
-    "예수는 전능한 하느님이 아닙니다.": "예수는 전능한 하느님이 아니야.",
-    "하느님의 왕국은 하늘에 있는 실제 정부입니다.": "하느님의 왕국은 하늘에 있는 실제 정부야.",
-    "앞으로는 인간 정부가 아니라 하느님의 왕국이 온 땅을 다스릴 것입니다.": "앞으로는 인간 정부가 아니라 하느님의 왕국이 온 땅을 다스릴 거야.",
-    "하느님의 왕국만이 인류가 겪고 있는 모든 문제를 해결할 수 있습니다.": "하느님의 왕국만이 인류가 겪고 있는 모든 문제를 해결할 수 있어.",
-    "우리가 겪는 고난은 하느님 때문이 아닙니다.": "우리가 겪는 고난은 하느님 때문이 아니야.",
-    "이 세상은 사탄이 통치하고 있습니다.": "이 세상은 사탄이 통치하고 있어.",
-    "하느님은 우리가 고난을 겪을 때 도와주고 싶어 하십니다.": "하느님은 우리가 고난을 겪을 때 도와주고 싶어 하셔.",
-    "하느님이 곧 모든 고난을 없애실 것입니다.": "하느님이 곧 모든 고난을 없애실 거야.",
-    "죽은 사람은 의식이 없으며 고통도 느끼지 못합니다.": "죽은 사람은 의식이 없으며 고통도 느끼지 못해.",
-    "죽은 사람은 우리에게 도움을 주거나 해를 끼칠 수 없습니다.": "죽은 사람은 우리에게 도움을 주거나 해를 끼칠 수 없어.",
-    "사망한 가족과 친구들이 부활될 것입니다.": "사망한 가족과 친구들이 부활될 거야.",
-    "“더 이상 죽음이 없을 것입니다.”": "“더 이상 죽음이 없을 거야.”",
-    "모든 종교를 하느님이 좋아하시는 것은 아닙니다.": "모든 종교를 하느님이 좋아하시는 것은 아니야.",
-    "하느님은 위선을 싫어하십니다.": "하느님은 위선을 싫어하셔.",
-    "진정한 사랑을 보이는 종교가 참종교입니다.": "진정한 사랑을 보이는 종교가 참종교야."
-  };
-  var LPD_KO_POLITE_MAP = {};
-  Object.keys(LPD_KO_INFORMAL_MAP).forEach(function (k) { LPD_KO_POLITE_MAP[LPD_KO_INFORMAL_MAP[k]] = k; });
-
-  var LPD_JA_POLITE_MAP = {
-    "今起きていることや世の中の様子を見ると，もうすぐ世界が大きく変わることが分かる。": "今起きていることや世の中の様子を見ると，もうすぐ世界が大きく変わることが分かります。",
-    "地球が滅びることはない。": "地球が滅びることはありません。",
-    "環境問題はなくなる。": "環境問題はなくなります。",
-    "全ての人が健康になる。": "全ての人が健康になります。",
-    "地球でいつまでも幸せに暮らせる。": "地球でいつまでも幸せに暮らせます。",
-    "夫が「自分を愛するように妻を愛」することは大切。": "夫が「自分を愛するように妻を愛」することは大切です。",
-    "妻が夫に心から敬意を払うことは大切。": "妻が夫に心から敬意を払うことは大切です。",
-    "結婚の絆を大切にする夫婦はうまくいく。": "結婚の絆を大切にする夫婦はうまくいきます。",
-    "親を敬って言うことを聞く子供は幸せになれる。": "親を敬って言うことを聞く子供は幸せになれます。",
-    "神には名前がある。": "神には名前があります。",
-    "神は人間に自分の考えを伝えている。": "神は人間に自分の考えを伝えています。",
-    "神は誰に対しても公平。": "神は誰に対しても公平です。",
-    "神は私たちのことを助けたいと思っている。": "神は私たちのことを助けたいと思っています。",
-    "神は私たちの祈りを聞きたいと思っている。": "神は私たちの祈りを聞きたいと思っています。",
-    "聖書を読むと，どう祈ったらいいかが分かる。": "聖書を読むと，どう祈ったらいいかが分かります。",
-    "何度も祈ることは大切。": "何度も祈ることは大切です。",
-    "イエスのアドバイスは今でも役に立つ。": "イエスのアドバイスは今でも役に立ちます。",
-    "イエスが予告した通りのことが今起きている。": "イエスが予告した通りのことが今起きています。",
-    "イエスは神の子。": "イエスは神の子です。",
-    "イエスは神ではない。": "イエスは神ではありません。",
-    "神は地球を治めるために王国をつくった。天に政府がある。": "神は地球を治めるために王国をつくりました。天に政府があります。",
-    "人間の政府はなくなり，神の王国の政府が世界中を治めるようになる。": "人間の政府はなくなり，神の王国の政府が世界中を治めるようになります。",
-    "世の中のいろいろな問題を全て解決できるのは，神の王国だけ。": "世の中のいろいろな問題を全て解決できるのは，神の王国だけです。",
-    "神が私たちを苦しめることはない。": "神が私たちを苦しめることはありません。",
-    "サタンが世界を支配している。": "サタンが世界を支配しています。",
-    "私たちが苦しいとき，神は助けたいと思っている。": "私たちが苦しいとき，神は助けたいと思っています。",
-    "神は間もなく全ての苦しみをなくす。": "神は間もなく全ての苦しみをなくします。",
-    "死んだ人は何も考えたり感じたりしない。苦しむこともない。": "死んだ人は何も考えたり感じたりしません。苦しむこともありません。",
-    "死んだ人は私たちを助けることはできず，何か悪さをすることもない。": "死んだ人は私たちを助けることはできず，何か悪さをすることもありません。",
-    "亡くなった人は生き返る。": "亡くなった人は生き返ります。",
-    "「死はなくな[る]」。": "「死はなくなります」。",
-    "全ての宗教が神から見て良いものというわけではない。": "全ての宗教が神から見て良いものというわけではありません。",
-    "宗教の名の下に行われる偽善は神に許されない。": "宗教の名の下に行われる偽善は神に許されません。",
-    "正しい宗教は，皆が愛を表しているかどうかで見分けられる。": "正しい宗教は，皆が愛を表しているかどうかで見分けられます。"
-  };
-  var LPD_JA_INFORMAL_MAP = {};
-  Object.keys(LPD_JA_POLITE_MAP).forEach(function (k) { LPD_JA_INFORMAL_MAP[LPD_JA_POLITE_MAP[k]] = k; });
-
-  function applyLpdTerms(line) {
-    if (!line) return { vi: "", kr: "" };
-    var term = getLpdListenerTerm();
-    var isInformal = isLpdInformalListener(term);
-    var vi = line.vi;
-    var isQuestion = vi.indexOf("có bao giờ") >= 0;
-    if (isQuestion) {
-      vi = applyLpdListenerTerm(vi, term);
-    }
-    var meaning = T(line);
-    if (currentLang === "ko") {
-      if (isQuestion) {
-        if (isInformal) {
-          meaning = meaning.replace(/들어 보신 적 있나요\?$/, "들어 본 적 있니?");
-        } else {
-          meaning = meaning.replace(/들어 본 적 있니\?$/, "들어 보신 적 있나요?");
-        }
-      } else {
-        if (isInformal) {
-          meaning = LPD_KO_INFORMAL_MAP[meaning] || meaning;
-        } else {
-          meaning = LPD_KO_POLITE_MAP[meaning] || meaning;
-        }
-      }
-    } else if (currentLang === "ja") {
-      if (isQuestion) {
-        if (isInformal) {
-          meaning = meaning.replace(/^「こんなことをお聞きになったことがありますか(?:\?|？)?」/, "「こんなこと聞いたことある？」");
-          Object.keys(LPD_JA_INFORMAL_MAP).forEach(function (politeSt) {
-            if (meaning.indexOf(politeSt) >= 0) {
-              meaning = meaning.replace(politeSt, LPD_JA_INFORMAL_MAP[politeSt]);
-            }
-          });
-        } else {
-          meaning = meaning.replace(/^「こんなこと聞いたことある(?:\?|？)?」/, "「こんなことをお聞きになったことがありますか?」");
-          Object.keys(LPD_JA_POLITE_MAP).forEach(function (casualSt) {
-            if (meaning.indexOf(casualSt) >= 0) {
-              meaning = meaning.replace(casualSt, LPD_JA_POLITE_MAP[casualSt]);
-            }
-          });
-        }
-      } else {
-        if (isInformal) {
-          meaning = LPD_JA_INFORMAL_MAP[meaning] || meaning;
-        } else {
-          meaning = LPD_JA_POLITE_MAP[meaning] || meaning;
-        }
-      }
-    }
-    return { vi: vi, kr: meaning };
-  }
+  // "사람들을 사랑하고 제자로" (Love People—Make Disciples) -- LPD maps and applyLpdTerms()
+  // are declared above near peopleState so they are initialized ahead of subtab setup.
 
   function renderCurrLpd() {
     var root = document.getElementById("curr-lpd-root");
@@ -6872,12 +7034,20 @@
         PRAYER_TEMPLATE.lines.forEach(function (l) { if (l.vi && l.kr) addSentencePairs(out, l.vi, Tstrict(l.kr)); });
         // 이웃 사람과의 대화 (new 대화 subtab) contributes its 11 conversations' lines too.
         NEIGHBOR_CONVERSATIONS.forEach(function (conv) {
-          conv.lines.forEach(function (l) { if (l.vi) addSentencePairs(out, l.vi, Tstrict(l)); });
+          conv.lines.forEach(function (l) {
+            if (l.vi) {
+              var vi = applyNeighborTermsVi(l.vi);
+              var kr = applyNeighborTermsMeaning(Tstrict(l), currentLang);
+              addSentencePairs(out, vi, kr);
+            }
+          });
         });
         // 행복한 삶을 영원히 (new 대화 subtab, LFF_CONVERSATIONS) contributes its lesson-body
         // sentences too, except reading directions, headings and bare numbered prompts.
         LFF_CONVERSATIONS.forEach(function (rec) {
-          lffDisplayLines(rec).forEach(function (l) { if (isReviewableLffLine(l)) addSentencePairs(out, l.vi, Tstrict(l)); });
+          lffDisplayLines(rec).forEach(function (l) {
+            if (isReviewableLffLine(l)) addSentencePairs(out, applyLffListenerTerms(l.vi), Tstrict(l));
+          });
         });
         // 사람들을 사랑하고 제자로 (new 대화 subtab, LPD_LESSONS) contributes its curated example
         // sentences too.
@@ -7015,8 +7185,8 @@
         if (scope === "main") CASES.forEach(function (c) { Object.keys(c.stages).forEach(function (s) { c.stages[s].forEach(function (i) { if (i.viet && i.translation) sentence(i.viet, Tstrict(i.translation)); if (i.reply && i.reply.name) sentence(i.reply.viet, Tstrict(i.reply.translation)); }); }); });
         else if (scope === "reftable") REF_TABLE.forEach(function (sec) { sec.rows.forEach(function (r) { if (TERM_MEAN[r.listener]) out.push({ vi: r.listener, kr: TU(TERM_MEAN[r.listener]) }); if (TERM_MEAN[r.self]) out.push({ vi: r.self, kr: TU(TERM_MEAN[r.self]) }); }); });
         else if (scope === "talks") OFFER_TALKS.forEach(function (t) { t.lines.forEach(function (l) { sentence(l.vi, Tstrict(l.kr)); }); });
-        else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(l.vi, Tstrict(l)); }); });
-        else if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(l.vi, Tstrict(l)); }); });
+        else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(applyNeighborTermsVi(l.vi), applyNeighborTermsMeaning(Tstrict(l), currentLang)); }); });
+        else if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
         else if (scope === "lpd") LPD_LESSONS.forEach(function (r) {
           r.lines.forEach(function (l) {
             if (r.kind === "appendix" && r.num === "A") {
@@ -9415,6 +9585,38 @@
     updateCompanionNoteInPlace();
     renderCurrTalks();
     renderCurrLpd();
+    renderCurrNeighbor();
+    renderCurrLff();
   }
+
+  /* -------- 마지막 방문 위치 복원 (탭, 서브탭, 스크롤 위치) -------- */
+  (function restoreLastPlace() {
+    try {
+      if (!window.localStorage) return;
+      var raw = window.localStorage.getItem(LAST_PLACE_STORAGE_KEY);
+      if (!raw) return;
+      var saved = JSON.parse(raw);
+      if (!saved) return;
+      if (saved.subtabs) {
+        lastPlaceState.subtabs = saved.subtabs;
+        ["wizard", "curriculum", "vocab", "pron", "bible", "grammar", "review"].forEach(function (group) {
+          var val = saved.subtabs[group];
+          if (!val) return;
+          var btn = document.querySelector('.subtab-btn[data-' + group + '="' + val + '"]');
+          if (btn) {
+            btn.click();
+          }
+        });
+      }
+      if (saved.tab && panels[saved.tab]) {
+        activateTab(saved.tab, false);
+      }
+      if (typeof saved.scrollY === "number" && saved.scrollY > 0) {
+        setTimeout(function () {
+          window.scrollTo({ top: saved.scrollY, behavior: "instant" in window ? "instant" : "auto" });
+        }, 150);
+      }
+    } catch (e) { /* no-op */ }
+  })();
 
 })();
