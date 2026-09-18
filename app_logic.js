@@ -6257,10 +6257,13 @@
         // Put a full stop before a trailing parenthetical Bible citation. This lets the normal
         // sentence splitter present the citation as its own line instead of attaching it to the
         // preceding Vietnamese sentence. The same normalization keeps the translations aligned.
+        // Scoped to citation-shaped parens (chapter:verse digit pattern) only -- an ordinary
+        // clarifying parenthetical like "(trọn bộ hay một phần)" isn't a citation and shouldn't
+        // get a fabricated sentence break in front of it.
         var normalized = {};
         Object.keys(line).forEach(function (key) {
           normalized[key] = typeof line[key] === "string"
-            ? line[key].replace(/([^\s.!?…])\s*([（(][^()（）]*[)）])/g, "$1. $2")
+            ? line[key].replace(/([^\s.!?…])\s*([（(][^()（）]*\d+:\d+[^()（）]*[)）])/g, "$1. $2")
             : line[key];
         });
         // Parenthetical Bible citations may use ASCII "()" or full-width "（）" (Chinese / Japanese).
