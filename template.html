@@ -708,6 +708,10 @@
   .rhyme-word-ex { margin-top: 4px; padding-top: 4px; border-top: 1px dashed var(--border); font-size: 0.8rem; }
   .rhyme-word-ex .vn { font-family: var(--font-vn); font-weight: 600; color: var(--ink-soft); }
   .rhyme-word-ex-mean { font-size: 0.78rem; color: var(--ink-faint); margin-top: 2px; }
+  /* [문장] > [파수대]만: 예문 베트남어 글씨를 단어(.rw-word)와 같은 굵기·크기로 맞춘다 -- 다른
+     탭(한자음/어순반대)이 재사용하는 공용 .rhyme-word-ex 규칙은 그대로 둔다. */
+  #curr-wt-root .rhyme-word-ex { font-size: 1rem; }
+  #curr-wt-root .rhyme-word-ex .vn { font-weight: 800; color: var(--ink); }
   .rw-ex-kr { color: var(--ink-faint); }
   .empty-state { text-align: center; padding: 30px 10px; color: var(--ink-faint); font-size: 0.88rem; }
 
