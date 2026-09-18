@@ -4567,11 +4567,11 @@ NEIGHBOR_CONVERSATIONS = [
       },
       {
         "who": "PUBLISHER",
-        "vi": "Hay quá. Địa chỉ của trang web là www.jw.org/vi. Đây là trang chủ.",
-        "ko": "잘됐군요. 웹사이트 주소는 www.jw.org예요. 여기가 홈페이지입니다.",
-        "zh": "好，網站是jw.org，打開了。這是首頁。",
-        "en": "Good. The address for the Web site is www.jw.org. Here is the home page.",
-        "ja": "よかったです。ウェブサイトのアドレスはwww.jw.orgで，これがホームページなんです。"
+        "vi": "Hay quá. Địa chỉ của trang web là www.JW.org/vi. Đây là trang chủ.",
+        "ko": "잘됐군요. 웹사이트 주소는 www.JW.org예요. 여기가 홈페이지입니다.",
+        "zh": "好，網站是JW.org，打開了。這是首頁。",
+        "en": "Good. The address for the Web site is www.JW.org. Here is the home page.",
+        "ja": "よかったです。ウェブサイトのアドレスはwww.JW.orgで，これがホームページなんです。"
       },
       {
         "who": "HOUSEHOLDER",

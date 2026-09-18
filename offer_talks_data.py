@@ -323,7 +323,7 @@ OFFER_TALKS = [{'number': 1,
                     'ja': 'とても良い話ですが、信じることができません。'}},
             {'who': 'A',
              'vi': 'Đúng là một điều khó tin. Nhưng Kinh Thánh cho biết rằng Đức Chúa Trời sẽ làm cho họ '
-                   'sống lại. Để biết thêm, xin vào trang jw.org. (để lại thẻ JW)',
+                   'sống lại. Để biết thêm, xin vào trang JW.org. (để lại thẻ JW)',
              'kr': {'ko': '믿기 힘든 말이긴 하죠. 하지만 성경에서는 하느님께서 그들을 부활시키실 것이라고 알려주지요. 더 자세한 점은 JW.ORG에서 알아보세요.(JW카드 '
                           '제공)',
                     'zh': '確實不容易相信。不過聖經告訴我們，上帝會使他們復活。您可以到JW.ORG網站進一步瞭解。（提供JW卡片）',

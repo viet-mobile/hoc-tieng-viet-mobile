@@ -2946,7 +2946,7 @@
     // once the hyphens are gone, same as if the syllables were simply space-separated; a hyphen
     // that already has spacing around it (a real dash, not a name-joiner) is left alone.
     out = out.replace(/([^\s-])-(?=[^\s-])/g, "$1 ");
-    out = out.replace(/(\d+)\s*:\s*(\d+)/g, "chương $1 câu $2");
+    out = out.replace(/(\d+)\s*:\s*(\d+(?:[\s,、–~-]+\d+)*)/g, "chương $1 câu $2");
     // "jw.org"/"JW" have no native Vietnamese pronunciation, so most TTS voices default to
     // reading them the English way ("jay double-u dot o-r-g"). J and W aren't in the
     // Vietnamese alphabet either, so Vietnamese speakers spell them out with the standard
@@ -3057,12 +3057,6 @@
   // "디모데 후서 3장 16절", not "디모데 후서 삼 콜론 십육" or "세 시 십육 분". Meaning text is
   // already resolved to currentLang by T(), so every "N:M" can be rewritten in place using that
   // language's own chapter/verse phrasing.
-  var SCRIPTURE_VERSE_TEMPLATE = {
-    ko: function (ch, vs) { return ch + "장 " + vs + "절"; },
-    zh: function (ch, vs) { return ch + "章" + vs + "節"; },
-    ja: function (ch, vs) { return ch + "章" + vs + "節"; },
-    en: function (ch, vs) { return "chapter " + ch + ", verse " + vs; }
-  };
   // Sino-Korean reading of an integer ("5" -> "오", "119" -> "백십구") -- see
   // expandScriptureVersesForSpeech() below for why this matters for 장/절.
   var SINO_KOREAN_DIGITS = ["", "일", "이", "삼", "사", "오", "육", "칠", "팔", "구"];
@@ -3080,10 +3074,23 @@
     }
     return out;
   }
+  var SCRIPTURE_VERSE_TEMPLATE = {
+    ko: function (ch, vs) {
+      var chKo = sinoKoreanNumber(ch);
+      var vsKo = vs.replace(/\d+/g, function (d) { return sinoKoreanNumber(d); });
+      return chKo + "장 " + vsKo + "절";
+    },
+    zh: function (ch, vs) { return ch + "章" + vs + "節"; },
+    ja: function (ch, vs) { return ch + "章" + vs + "節"; },
+    en: function (ch, vs) {
+      var isPlural = /[\s,–~-]/.test(vs);
+      return "chapter " + ch + ", " + (isPlural ? "verses " : "verse ") + vs;
+    }
+  };
   function expandScriptureVersesForSpeech(text) {
     var tpl = SCRIPTURE_VERSE_TEMPLATE[currentLang];
     if (tpl && text) {
-      text = String(text).replace(/(\d+):(\d+)/g, function (m, ch, vs) { return tpl(ch, vs); });
+      text = String(text).replace(/(\d+):(\d+(?:[\s,、–~-]+\d+)*)/g, function (m, ch, vs) { return tpl(ch, vs); });
     }
     if (currentLang === "ko" && text) {
       // A Bible chapter/verse count ("3장", "16절") is always read with Sino-Korean numerals in
@@ -5581,7 +5588,11 @@
   function splitPlain(text, parenBag) {
     var ellBag = [];
     var decimalBag = [];
+    var urlBag = [];
     var stashed = stashPattern(text, /\.{2,}|…/g, ellBag, "");
+    // Web addresses / domain names (JW.org, jw.org, donate.jw.org, www.jw.org, wol.jw.org, etc.)
+    // contain dots that are NOT sentence boundaries. Stash them before splitting sentences.
+    stashed = stashPattern(stashed, /(?:https?:\/\/)?(?:[a-zA-Z0-9_-]+\.)*(?:jw\.org|donate\.jw\.org|wol\.jw\.org|[a-zA-Z0-9_-]+\.(?:org|com|net|gov|edu|io|vn))(?:\/[^\s.,!?。！？．"'’)）\]』」]*)?/gi, urlBag, "");
     // A period between digits is a Vietnamese thousands/decimal separator (2.500, 144.000),
     // never a sentence boundary. Stash the complete number before looking for final periods.
     stashed = stashPattern(stashed, /\d+(?:\.\d+)+/g, decimalBag, "");
@@ -5595,8 +5606,15 @@
     // alignment off by one for every single numbered heading in the source.
     var parts = stashed.match(/[^.!?。！？．]+[.!?。！？．”"'’)）\]』」]+|[^.!?。！？．]+$/g) || [];
     return parts.map(function (p) {
-      return unstashPattern(unstashPattern(unstashPattern(p, decimalBag, ""), ellBag, ""), parenBag, "").trim();
+      return unstashPattern(unstashPattern(unstashPattern(unstashPattern(p, urlBag, ""), decimalBag, ""), ellBag, ""), parenBag, "").trim();
     }).filter(Boolean);
+  }
+  function normalizeJwOrg(s) {
+    if (!s) return "";
+    return String(s).replace(/(^|[\s(（“"‘'])org(?=[에에서와의를는도로,\s.!?。！？]|$)/gi, "$1JW.org");
+  }
+  function isIsolatedJw(s) {
+    return /^(?:JW|jw)\.?$/i.test(String(s || "").trim());
   }
   // A delimiter run may be followed immediately by closing quote/bracket characters that are
   // part of the SAME sentence-final punctuation (e.g. a quoted question ending in `?".`) -- the
@@ -5636,7 +5654,9 @@
         splitPlain(stashed, parenBag).forEach(function (p) { if (p) out.push(p); });
       });
     });
-    return out;
+    return out
+      .filter(function (p) { return !isIsolatedJw(p); })
+      .map(function (p) { return normalizeJwOrg(p); });
   }
   function isDashCitation(s) {
     return /^[—–]/.test(s);
@@ -5681,6 +5701,13 @@
       });
     }
     viCites.forEach(function (c, i) { pairs.push({ vi: c, kr: meaningCites[i] }); });
+    pairs = pairs.filter(function (p) {
+      return !isIsolatedJw(p.vi) && !isIsolatedJw(p.kr);
+    });
+    pairs.forEach(function (p) {
+      p.vi = normalizeJwOrg(p.vi);
+      p.kr = normalizeJwOrg(p.kr);
+    });
     return pairs;
   }
   function stripReviewListMarker(value) {
@@ -5728,7 +5755,11 @@
   }
   function addSentencePairs(target, vietnamese, meaning) {
     sentencePairs(stripReviewListMarker(vietnamese), stripReviewListMarker(meaning)).forEach(function (pair) {
-      if (pair.vi && !isCitationOnlyLine(pair.vi)) target.push(pair);
+      if (pair.vi && !isIsolatedJw(pair.vi) && !isIsolatedJw(pair.kr) && !isCitationOnlyLine(pair.vi)) {
+        pair.vi = normalizeJwOrg(pair.vi);
+        pair.kr = normalizeJwOrg(pair.kr);
+        target.push(pair);
+      }
     });
   }
 
@@ -5890,6 +5921,7 @@
   }
   function isReviewableLffLine(line) {
     var vi = String(line.vi || '').trim();
+    if (isIsolatedJw(vi) || isIsolatedJw(line.ko) || isIsolatedJw(line.kr)) return false;
     // Reading directions, cross-references, headings and bare numbered prompts are navigation
     // material, not vocabulary/sentence practice. Keep substantive questions and explanations.
     return !!vi && !/^(\(\s*)?(Đọc\b|Xem\b)/i.test(vi) && !/^\([^)]*\d+:\d+[^)]*\)\.?$/.test(vi) && !/^—\s*(Xem\b|\d|[A-ZÀ-Ỹ])/i.test(vi) &&

@@ -14,3 +14,4 @@
    git push origin main
    ```
 3. 푸시 완료 후 배포 상태 확인 및 보고.
+
