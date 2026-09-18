@@ -13374,31 +13374,51 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
              'ko': '2. 어떻게 물질적 자산을 사용해 회중을 지원할 수 있습니까?',
              'vi': '2. Bạn có thể dùng của cải vật chất để hỗ trợ hội thánh như thế nào?',
              'zh': '2．我們可以怎樣善用財物支持會眾？'},
-            {'en': 'We can “honor Jehovah with [our] valuable things.” (Proverbs 3:9) We count it a privilege to '
-                   'contribute money and other resources to support the local congregation and the worldwide '
-                   'preaching work. (Read 2 Corinthians 9:7.) Our donations also support disaster relief. Many '
-                   'choose to “set something aside” regularly as a donation. (Read 1 Corinthians 16:2.) We can '
-                   'donate using contribution boxes at our places of worship or online at donate.jw.org. Jehovah '
-                   'gives us the opportunity to show our love for him by the way we choose to use our material '
-                   'things.',
-             'ja': '自分の 「貴重なもの……を捧げてエホバを敬え」ます。 （格言 3:9）お金や他の資産を寄付することによって，自分の会衆や世界的な伝道活動をサポートできます。（コリント第二 9:7 '
-                   'を読む。）寄付は災害時の救援活動にも使われます。多くの人は，寄付するために定期的に「幾らかを取り分けて」おきます。（コリント第一 16:2 '
-                   'を読む。）王国会館にある寄付箱に寄付を入れることもできますし， donate.jw.org '
-                   'からオンラインで寄付することもできます。自分のお金や持ち物を差し出すことによってエホバへの愛を表せるのは，うれしいことです。',
-             'ko': '우리는 ‘우리가 가진 가치 있는 것들로 여호와를 공경’ 할 수 있습니다. (잠언 3:9) 우리는 자신의 회중과 세계적인 전파 활동을 지원하기 위해 돈과 그 밖의 자산을 '
-                   '기부하는 일에 기쁘게 참여합니다. (고린도 후서 9:7 을 읽어 보세요.) 우리의 헌금은 재해 구호 활동에도 사용됩니다. 많은 사람들은 정기적으로 헌금을 하기 위해 “얼마를 '
-                   '따로 모아 둡니다.” (고린도 전서 16:2 을 읽어 보세요.) 우리는 숭배 장소에 있는 헌금함에 헌금할 수도 있고 donate.jw.org 에서 온라인으로 기부할 수도 '
-                   '있습니다. 여호와께서는 우리가 자신의 자산을 사용해 그분에 대한 사랑을 나타낼 수 있는 기회를 주십니다.',
-             'vi': 'Chúng ta có thể “tôn kính Đức Giê-hô-va bằng những điều quý báu của [mình]” (Châm ngôn 3:9). '
-                   'Thật là một đặc ân khi được đóng góp tiền bạc và những thứ khác để ủng hộ hội thánh địa phương '
-                   'và công việc rao giảng toàn cầu! (Đọc 2 Cô-rinh-tô 9:7). Khoản đóng góp của chúng ta cũng được '
-                   'dùng cho công việc cứu trợ. Nhiều người thường xuyên “dành riêng một số tiền” để đóng góp. (Đọc '
-                   '1 Cô-rinh-tô 16:2). Chúng ta có thể đóng góp bằng cách bỏ tiền vào hộp đóng góp tại những nơi '
-                   'thờ phượng hoặc đóng góp trực tuyến trên trang donate.jw.org. Đức Giê-hô-va cho chúng ta cơ hội '
-                   'để thể hiện tình yêu thương với ngài qua việc đóng góp.',
-             'zh': '我們可以 用寶貴的資產尊崇耶和華。（箴言3:9）能用金錢或其他財物支持會眾和全球的傳道工作，這讓我們感到很榮幸。（請讀 '
-                   '哥林多後書9:7）我們的捐獻也能支援救災工作。不少弟兄姐妹都定期「撥出一些錢」作為捐獻。（請讀 哥林多前書16:2）我們可以把錢投進崇拜場所裡的捐款箱，或上 donate.jw.org '
-                   '網站捐款。耶和華讓我們有機會表達對他的愛。我們善用財物就是表明自己愛耶和華了。'},
+            {'en': 'We can “honor Jehovah with [our] valuable things.”',
+             'ja': '自分の 「貴重なもの……を捧げてエホバを敬え」ます。',
+             'ko': '우리는 ‘우리가 가진 가치 있는 것들로 여호와를 공경’할 수 있습니다.',
+             'vi': 'Chúng ta có thể “tôn kính Đức Giê-hô-va bằng những điều quý báu của [mình]”.',
+             'zh': '我們可以用寶貴的資產尊崇耶和華。'},
+            {'en': '(Proverbs 3:9)',
+             'ja': '（格言 3:9）',
+             'ko': '(잠언 3:9)',
+             'vi': '(Châm ngôn 3:9).',
+             'zh': '（箴言3:9）'},
+            {'en': 'We count it a privilege to contribute money and other resources to support the local congregation and the worldwide preaching work.',
+             'ja': 'お金や他の資産を寄付することによって，自分の会衆や世界的な伝道活動をサポートできます。',
+             'ko': '우리는 자신의 회중과 세계적인 전파 활동을 지원하기 위해 돈과 그 밖의 자산을 기부하는 일에 기쁘게 참여합니다.',
+             'vi': 'Thật là một đặc ân khi được đóng góp tiền bạc và những thứ khác để ủng hộ hội thánh địa phương và công việc rao giảng toàn cầu!',
+             'zh': '能用金錢或其他財物支持會眾和全球的傳道工作，這讓我們感到很榮幸。'},
+            {'en': '(Read 2 Corinthians 9:7.)',
+             'ja': '（コリント第二 9:7 を読む。）',
+             'ko': '(고린도 후서 9:7 을 읽어 보세요.)',
+             'vi': '(Đọc 2 Cô-rinh-tô 9:7).',
+             'zh': '（請讀 哥林多後書9:7）'},
+            {'en': 'Our donations also support disaster relief.',
+             'ja': '寄付は災害時の救援活動にも使われます。',
+             'ko': '우리의 헌금은 재해 구호 활동에도 사용됩니다.',
+             'vi': 'Khoản đóng góp của chúng ta cũng được dùng cho công việc cứu trợ.',
+             'zh': '我們的捐獻也能支援救災工作。'},
+            {'en': 'Many choose to “set something aside” regularly as a donation.',
+             'ja': '多くの人は，寄付するために定期的に「幾らかを取り分けて」おきます。',
+             'ko': '많은 사람들은 정기적으로 헌금을 하기 위해 “얼마를 따로 모아 둡니다.”',
+             'vi': 'Nhiều người thường xuyên “dành riêng một số tiền” để đóng góp.',
+             'zh': '不少弟兄姐妹都定期「撥出一些錢」作為捐獻。'},
+            {'en': '(Read 1 Corinthians 16:2.)',
+             'ja': '（コリント第一 16:2 を読む。）',
+             'ko': '(고린도 전서 16:2 을 읽어 보세요.)',
+             'vi': '(Đọc 1 Cô-rinh-tô 16:2).',
+             'zh': '（請讀 哥林多前書16:2）'},
+            {'en': 'We can donate using contribution boxes at our places of worship or online at donate.jw.org.',
+             'ja': '王国会館にある寄付箱に寄付を入れることもできますし， donate.jw.org からオンラインで寄付することもできます。',
+             'ko': '우리는 숭배 장소에 있는 헌금함에 헌금할 수도 있고 donate.jw.org 에서 온라인으로 기부할 수도 있습니다.',
+             'vi': 'Chúng ta có thể đóng góp bằng cách bỏ tiền vào hộp đóng góp tại những nơi thờ phượng hoặc đóng góp trực tuyến trên trang donate.jw.org.',
+             'zh': '我們可以把錢投進崇拜場所裡的捐款箱，或上 donate.jw.org 網站捐款。'},
+            {'en': 'Jehovah gives us the opportunity to show our love for him by the way we choose to use our material things.',
+             'ja': '自分のお金や持ち物を差し出すことによってエホバへの愛を表せるのは，うれしいことです。',
+             'ko': '여호와께서는 우리가 자신의 자산을 사용해 그분에 대한 사랑을 나타낼 수 있는 기회를 주십니다.',
+             'vi': 'Đức Giê-hô-va cho chúng ta cơ hội để thể hiện tình yêu thương với ngài qua việc đóng góp.',
+             'zh': '耶和華讓我們有機會表達對他的愛。我們善用財物就是表明自己愛耶和華了。'},
             {'en': 'DIG DEEPER', 'ja': 'もっと調べよう', 'ko': '더 깊이 알아보기', 'vi': 'ĐÀO SÂU', 'zh': '深入挖掘'},
             {'en': 'Consider some of the ways that you can support the congregation.',
              'ja': 'どんな方法で会衆をサポートできるか，さらに考えましょう。',
