@@ -6171,7 +6171,7 @@
   // section already excluded during data extraction). No "who" speaker field (unlike 이웃 사람과의
   // 대화) since this is study-course body text, not a two-party dialogue.
   function lffRecordLabel(rec) {
-    if (rec.kind === "lesson") return "BÀI " + (rec.num < 10 ? "0" + rec.num : String(rec.num));
+    if (rec.kind === "lesson") return "Bài " + (rec.num < 10 ? "0" + rec.num : String(rec.num));
     if (rec.kind === "review") return TU("복습");
     return "";
   }
