@@ -428,20 +428,20 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
             'zh': '聖經給人希望'}},
  {'id': '1102021203',
   'kind': 'lesson',
-  'lines': [{'en': 'The Bible makes many promises and offers much advice. Likely you are curious about what it '
-                   'teaches, but perhaps you are also cautious. Should you trust promises and advice from such an '
-                   'old book? Can you really believe what the Bible says about enjoying life now and in the future? '
-                   'Millions of people do. Let us see whether you can too.',
-             'ja': '聖書にはたくさんの約束やアドバイスが書かれています。少し興味があっても，「こんな古い本に書かれていることが信用できるんだろうか」と思うかもしれません。聖書は本当に今の時代にも役立つのでしょうか。将来について書かれていることは本当でしょうか。大勢の人が聖書に書かれていることを信じているのはなぜか，ぜひ調べてみてください。',
-             'ko': '성경에는 많은 약속과 조언이 들어 있습니다. 당신은 성경의 가르침이 궁금하면서도 성경이 정말 믿을 수 있는 책인지 의문이 들지 모릅니다. 그렇게 오래된 책에 들어 있는 '
-                   '약속과 조언을 신뢰할 수 있습니까? 성경의 실용적인 조언과 미래에 관한 약속을 정말로 믿을 수 있습니까? 많은 사람이 성경을 믿습니다. 이제 성경이 정말 신뢰할 만한 책인지 '
-                   '알아보겠습니다.',
-             'vi': 'Kinh Thánh đưa ra nhiều lời hứa và sự hướng dẫn. Hẳn bạn tò mò về những điều Kinh Thánh dạy '
-                   'nhưng có lẽ cũng phần nào thận trọng. Bạn có thể tin cậy lời hứa và sự hướng dẫn từ cuốn sách cổ '
-                   'xưa như thế không? Hàng triệu người tin rằng Kinh Thánh giúp ích cho đời sống hiện tại và lời '
-                   'hứa của Kinh Thánh về tương lai sẽ thành hiện thực. Hãy xem bạn cũng có thể tin cậy Kinh Thánh '
-                   'hay không.',
-             'zh': '聖經提到了未來的希望，也在很多方面給人建議。你也許對聖經感興趣，但心中還有不少疑問。聖經是這麼古老的一本書，裡面提出的希望和建議真的可靠嗎？聖經說，你現在就可以過快樂的生活，未來還會有光明的前途。這真的可以相信嗎？世界上有許許多多的人都信賴聖經。讓我們來親自了解一些證據，看看聖經是否真的可信。'},
+   'lines': [{'en': 'The Bible makes many promises and offers much advice. Likely you are curious about what it '
+                    'teaches, but perhaps you are also cautious. Should you trust promises and advice from such an '
+                    'old book? Millions of people believe that the Bible helps life now and its promises for the '
+                    'future will come true. Let us see whether you can too.',
+              'ja': '聖書にはたくさんの約束やアドバイスが書かれています。聖書の教えに興味がある一方で，少し慎重になっているかもしれません。そんな古い本に書かれている約束やアドバイスを信用できるでしょうか。大勢の人が，聖書は今の生活に役立ち，将来についての約束は実現すると信じています。あなたも聖書を信頼できるかどうか，ぜひ調べてみてください。',
+              'ko': '성경에는 많은 약속과 조언이 들어 있습니다. 당신은 성경의 가르침이 궁금하면서도 성경이 정말 믿을 수 있는 책인지 의문이 들지 모릅니다. 그렇게 오래된 책에 들어 있는 '
+                    '약속과 조언을 신뢰할 수 있습니까? 많은 사람이 성경이 현재의 삶에 도움이 되고 성경의 미래에 관한 약속이 현실이 될 것이라고 믿습니다. 이제 성경이 정말 신뢰할 만한 책인지 '
+                    '알아보겠습니다.',
+              'vi': 'Kinh Thánh đưa ra nhiều lời hứa và sự hướng dẫn. Hẳn bạn tò mò về những điều Kinh Thánh dạy '
+                    'nhưng có lẽ cũng phần nào thận trọng. Bạn có thể tin cậy lời hứa và sự hướng dẫn từ cuốn sách cổ '
+                    'xưa như thế không? Hàng triệu người tin rằng Kinh Thánh giúp ích cho đời sống hiện tại và lời '
+                    'hứa của Kinh Thánh về tương lai sẽ thành hiện thực. Hãy xem bạn cũng có thể tin cậy Kinh Thánh '
+                    'hay không.',
+              'zh': '聖經提出了許多承諾和指引。你也許對聖經感興趣，但心中可能也有點猶豫。這麼古老的一本書，裡面提出的承諾和指引真的值得信賴嗎？數以百萬計的人相信，聖經對現在的生活大有幫助，而且聖經對未來的承諾一定會實現。讓我們來看看你是否也能信賴聖經。'},
             {'en': '1. Is the Bible a book of fact or fiction?',
              'ja': '1. 聖書に書かれていることは作り話？',
              'ko': '1. 성경 내용은 사실입니까, 지어낸 이야기입니까?',

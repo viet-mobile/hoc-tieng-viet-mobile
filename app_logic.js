@@ -2947,6 +2947,12 @@
     // that already has spacing around it (a real dash, not a name-joiner) is left alone.
     out = out.replace(/([^\s-])-(?=[^\s-])/g, "$1 ");
     out = out.replace(/(\d+)\s*:\s*(\d+(?:[\s,、–~-]+\d+)*)/g, "chương $1 câu $2");
+    // In Vietnamese, "donate" (as in donate.jw.org) is an English borrowing. Vietnamese TTS
+    // voices default to reading "donate" with Vietnamese phonetic rules ("đô-na-te"),
+    // which sounds completely wrong. Translating "donate" to Vietnamese phonetic "đô nết"
+    // forces the English reading across all Vietnamese TTS engines.
+    out = out.replace(/\bdonate\.jw\.org\b/gi, "đô nết chấm gi vê kép chấm o rờ gờ");
+    out = out.replace(/\bdonate\b/gi, "đô nết");
     // "jw.org"/"JW" have no native Vietnamese pronunciation, so most TTS voices default to
     // reading them the English way ("jay double-u dot o-r-g"). J and W aren't in the
     // Vietnamese alphabet either, so Vietnamese speakers spell them out with the standard
@@ -3105,7 +3111,19 @@
   }
   function prepareMeaningSpeechText(text) {
     if (!text) return text;
-    return expandScriptureVersesForSpeech(stripHanjaParensForSpeech(stripSlashForSpeech(String(text).trim())));
+    var t = expandScriptureVersesForSpeech(stripHanjaParensForSpeech(stripSlashForSpeech(String(text).trim())));
+    if (currentLang === "ko") {
+      // Age/generation counters ("10대", "20대" etc.) are read Sino-Korean ("십대", "이십대"),
+      // not native-Korean ("열 대").
+      t = t.replace(/(\d+)대/g, function (m, n) { return sinoKoreanNumber(n) + "대"; });
+      // "donate" (as in donate.jw.org) is read as the English loanword "도네이트",
+      // preventing Korean TTS engines from spelling out letters ("디-오-엔-에이-티-이").
+      t = t.replace(/\bdonate\b/gi, "도네이트");
+    } else if (currentLang === "ja") {
+      // In Japanese, official JW usage reads donate.jw.org with "ドネイト".
+      t = t.replace(/\bdonate\b/gi, "ドネイト");
+    }
+    return t;
   }
   // Reads text (a meaning/translation, already resolved to the current UI language) in that
   // language's own voice/voiceURI (selectedLangVoiceURI, same picker 전체 듣기 uses) -- a
