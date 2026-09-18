@@ -195,7 +195,7 @@ VOCAB = [
     ("Thánh chức Nước Trời", None, "우리의 왕국봉사"),
     ("Trung tâm giáo dục của Hội Tháp Canh", None, "워치타워 교육센터"),
     ("Wallkill", None, "월킬"),
-    ("trang Wep", None, "웹사이트"),
+    ("trang web", None, "웹사이트"),
     ("tạp chí", "雜誌", "잡지"),
     ("tờ chuyên đề", None, "전도지"),
     ("hội đồng lãnh đạo", "會同領導", "중앙장로회"),

@@ -228,6 +228,11 @@
     "en": "Vocabulary",
     "ja": "語彙"
   },
+  "문장": {
+    "zh": "句子",
+    "en": "Sentence",
+    "ja": "文"
+  },
   "문법": {
     "zh": "文法",
     "en": "Grammar",
