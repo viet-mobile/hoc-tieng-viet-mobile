@@ -2977,31 +2977,35 @@
   // enough to sound like a deliberate re-read rather than a stutter, short enough not to feel
   // like a stall.
   var VI_REPEAT_GAP_MS = 450;
-  // Speaks text ONE time and calls onOnceDone when that single utterance finishes (onend/
-  // onerror), or immediately if speech isn't available -- the original body of speak() before
-  // 베트남어 반복 듣기 횟수 was added; speak() below wraps this in a repeat loop. Kept as its own
-  // function (rather than inlining a loop directly in speak()) so the existing per-utterance
-  // Chrome-stuck-queue retry logic doesn't have to be duplicated or reasoned about twice.
-  function speakOnce(text, onOnceDone) {
+  // Speaks opts.text (opts.lang/opts.rate/opts.voice optional) and calls onDone exactly once,
+  // whether speech finishes normally, errors, or isn't available at all. Shared by every speech
+  // call in the app -- individual speak-btns (via speakOnce below) AND 전체 듣기's chained
+  // Vietnamese/meaning steps (playReadAllVi/playReadAllMeaning) -- because the workaround below
+  // isn't just a Chrome desktop quirk: iOS/iPadOS/Android/macOS WebKit has the same "silently
+  // swallows the next speak() call" failure mode, and it's *worse* for a chained sequence, since
+  // each step's speak() call happens from inside the previous utterance's onend handler rather
+  // than a fresh user gesture. Before this was unified, 전체 듣기 called synth.speak() directly
+  // with none of this protection, so on those platforms the very first entry played fine (a
+  // clean synth state) and every entry after it was dropped silently -- 전체 듣기 looked like it
+  // read one sentence and then went permanently silent, while individual speak-btns (already
+  // routed through this same defense) kept working. Resetting paused/speaking state before each
+  // call, and deferring the actual speak() by a tick after cancel(), works around the known race
+  // where speak() issued synchronously right after cancel() is dropped; the follow-up check
+  // retries once if the engine never actually started.
+  function robustSpeak(opts, onDone) {
     try {
-      if (!("speechSynthesis" in window)) { if (onOnceDone) onOnceDone(); return; }
-      var speechText = prepareSpeechText(text);
+      if (!("speechSynthesis" in window)) { if (onDone) onDone(); return; }
       var synth = window.speechSynthesis;
       if (speakRetryTimer) { clearTimeout(speakRetryTimer); speakRetryTimer = null; }
       var doneCalled = false;
-      function callDone() { if (doneCalled) return; doneCalled = true; if (onOnceDone) onOnceDone(); }
-      // Chrome can get stuck in a "paused"/"speaking" state after being idle or backgrounded,
-      // which silently swallows every speak() call from then on. Resetting both before each
-      // call, and deferring the actual speak() by a tick after cancel(), works around Chrome's
-      // known race where speak() issued synchronously right after cancel() is dropped.
+      function callDone() { if (doneCalled) return; doneCalled = true; if (onDone) onDone(); }
       try { if (synth.paused) synth.resume(); } catch (e1) { /* no-op */ }
       synth.cancel();
       var buildUtterance = function () {
-        var u = new SpeechSynthesisUtterance(speechText);
-        u.lang = "vi-VN";
-        u.rate = 0.92;
-        var v = currentViVoice();
-        if (v) { u.voice = v; u.lang = v.lang; }
+        var u = new SpeechSynthesisUtterance(opts.text);
+        if (opts.lang) u.lang = opts.lang;
+        if (opts.rate) u.rate = opts.rate;
+        if (opts.voice) { u.voice = opts.voice; u.lang = opts.voice.lang; }
         u.onend = callDone;
         u.onerror = callDone;
         return u;
@@ -3013,13 +3017,13 @@
           var started = false;
           u1.onstart = function () { started = true; };
           synth.speak(u1);
-          // If Chrome silently dropped the request (queue stuck from a previous stall),
+          // If the engine silently dropped the request (queue stuck from a previous stall),
           // force a hard reset and retry once. Checking synth.speaking too (not just the
           // onstart flag) matters: onstart can fire well after audio actually starts on some
           // voices/platforms, and treating that lag as "dropped" cancelled u1 mid-word and
           // re-queued an identical utterance -- audibly repeating the first word/syllable in
-          // flashcard, 보기/듣기 4지선다, and every other speak() caller. synth.cancel() right
-          // before this speak() call already clears any truly stuck queue from before, so
+          // flashcard, 보기/듣기 4지선다, and every other caller. synth.cancel() right before
+          // this speak() call already clears any truly stuck queue from before, so
           // synth.speaking===true here reliably means u1 itself is genuinely playing.
           setTimeout(function () {
             if (started || synth.speaking || !("speechSynthesis" in window)) return;
@@ -3030,7 +3034,13 @@
           }, 350);
         } catch (e2) { callDone(); /* no-op: speech not available */ }
       }, 30);
-    } catch (e) { if (onOnceDone) onOnceDone(); /* no-op: speech not available */ }
+    } catch (e) { if (onDone) onDone(); /* no-op: speech not available */ }
+  }
+  // Speaks text ONE time (Vietnamese, current speak-voice) and calls onOnceDone when that single
+  // utterance finishes -- the original body of speak() before 베트남어 반복 듣기 횟수 was added;
+  // speak() below wraps this in a repeat loop.
+  function speakOnce(text, onOnceDone) {
+    robustSpeak({ text: prepareSpeechText(text), lang: "vi-VN", rate: 0.92, voice: currentViVoice() }, onOnceDone);
   }
   // onDone (optional): called once after every repetition finishes, or immediately if speech
   // isn't available at all -- lets callers (복습's auto-advance) chain "speak, then move on"
@@ -3223,11 +3233,17 @@
   // falls permanently silent with no error event to react to. Nudging pause()+resume() every
   // few seconds while a sequence is playing resets WebKit's internal watchdog and keeps it
   // going; harmless elsewhere (Windows/desktop, which the user confirms isn't affected, simply
-  // pause/resume an utterance that was never at risk of stalling).
+  // pause/resume an utterance that was never at risk of stalling). Android Chrome/WebView is the
+  // opposite: its pause()/resume() pair is itself unreliable and can leave speechSynthesis
+  // permanently paused (resume() silently failing to un-pause), which is indistinguishable from
+  // the very stall this nudge exists to prevent -- 전체 듣기 read the first entry's Vietnamese
+  // and meaning fine, then went silent forever right around the first 5s nudge. Since Android
+  // doesn't have WebKit's stall bug in the first place, the fix is simply to never nudge there.
+  var IS_ANDROID_UA = /Android/i.test(navigator.userAgent || "");
   var readAllKeepAliveTimer = null;
   function startReadAllKeepAlive() {
     stopReadAllKeepAlive();
-    if (!("speechSynthesis" in window)) return;
+    if (!("speechSynthesis" in window) || IS_ANDROID_UA) return;
     readAllKeepAliveTimer = setInterval(function () {
       if (!readAllState.id) { stopReadAllKeepAlive(); return; }
       try {
@@ -3262,22 +3278,12 @@
   // object through the whole sequence instead of a plain onDone callback.
   function playReadAllVi(token, entry, repsLeft) {
     if (token !== readAllState.token) return;
-    try {
-      var synth = window.speechSynthesis;
-      var u = new SpeechSynthesisUtterance(prepareSpeechText(entry.vi));
-      u.lang = "vi-VN";
-      u.rate = 0.92;
-      var v = currentViVoice();
-      if (v) { u.voice = v; u.lang = v.lang; }
-      var advance = function () {
-        if (token !== readAllState.token) return;
-        if (repsLeft > 1) setTimeout(function () { playReadAllVi(token, entry, repsLeft - 1); }, VI_REPEAT_GAP_MS);
-        else setTimeout(function () { playReadAllMeaning(token, entry); }, 300);
-      };
-      u.onend = advance;
-      u.onerror = advance;
-      synth.speak(u);
-    } catch (e) { stopReadAllSequence(); }
+    var advance = function () {
+      if (token !== readAllState.token) return;
+      if (repsLeft > 1) setTimeout(function () { playReadAllVi(token, entry, repsLeft - 1); }, VI_REPEAT_GAP_MS);
+      else setTimeout(function () { playReadAllMeaning(token, entry); }, 300);
+    };
+    robustSpeak({ text: prepareSpeechText(entry.vi), lang: "vi-VN", rate: 0.92, voice: currentViVoice() }, advance);
   }
 
   // Reads entry.mean (the word's meaning / the sentence's translation, already resolved to the
@@ -3286,19 +3292,14 @@
   function playReadAllMeaning(token, entry) {
     if (token !== readAllState.token) return;
     if (!entry.mean) { playReadAllNext(token); return; }
-    try {
-      var synth = window.speechSynthesis;
-      var mu = new SpeechSynthesisUtterance(prepareMeaningSpeechText(entry.mean));
-      mu.lang = READALL_LANG_TAG[currentLang] || "en-US";
-      var lv = selectedLangVoiceURI[currentLang];
-      if (lv) {
-        var v2 = availableLangVoices.filter(function (x) { return voiceMatchKey(x) === lv; })[0];
-        if (v2) { mu.voice = v2; mu.lang = v2.lang; }
-      }
-      mu.onend = function () { if (token === readAllState.token) setTimeout(function () { playReadAllNext(token); }, 300); };
-      mu.onerror = function () { if (token === readAllState.token) setTimeout(function () { playReadAllNext(token); }, 300); };
-      synth.speak(mu);
-    } catch (e) { playReadAllNext(token); }
+    var lang = READALL_LANG_TAG[currentLang] || "en-US";
+    var voice = null;
+    var lv = selectedLangVoiceURI[currentLang];
+    if (lv) voice = availableLangVoices.filter(function (x) { return voiceMatchKey(x) === lv; })[0] || null;
+    var next = function () {
+      if (token === readAllState.token) setTimeout(function () { playReadAllNext(token); }, 300);
+    };
+    robustSpeak({ text: prepareMeaningSpeechText(entry.mean), lang: lang, voice: voice }, next);
   }
 
   function startReadAllSequence(id, btn) {
@@ -5262,6 +5263,17 @@
       '<li>음성 추가: ‘음성 관리’ 항목에 있는 <b>음성 추가</b> 버튼을 누릅니다.</li>' +
       '<li>베트남어 설치: 검색창에 베트남어를 검색해 선택한 후, <b>추가</b>(또는 설치) 버튼을 누르면 다운로드가 시작돼요.</li>' +
       '<li>기본 음성 설정: 다운로드가 끝나면 상단의 ‘음성 선택’ 드롭다운 메뉴에서 설치된 베트남어 음성을 기본값으로 지정할 수 있어요.</li>' +
+      '</ol>' +
+      '<h4>⚙️ 접근성 &gt; 내레이터에서 고급 음성 데이터 추가하기 (대안)</h4>' +
+      '<p class="p-desc">위 방법으로 원하는 음성이 안 보이거나 더 다양한 고급 음성을 설치하고 싶다면, 내레이터 메뉴를 통해서도 같은 음성 데이터를 추가할 수 있어요. 여기서 설치한 음성도 이 화면을 포함해 컴퓨터의 다른 프로그램에서 똑같이 사용할 수 있습니다.</p>' +
+      '<ol>' +
+      '<li>설정 열기: <b>Win + I</b> 단축키를 누릅니다.</li>' +
+      '<li>왼쪽 메뉴에서 <b>접근성</b>을 클릭합니다.</li>' +
+      '<li>오른쪽 목록에서 <b>내레이터</b>를 클릭합니다.</li>' +
+      '<li>‘내레이터 음성’ 항목에서 <b>음성 추가</b> 버튼을 누릅니다.</li>' +
+      '<li><b>추가</b> 버튼을 누른 뒤, 목록에서 원하는 언어(예: 베트남어)를 선택합니다.</li>' +
+      '<li>해당 언어로 다운로드할 수 있는 음성 목록이 뜨면 원하는 음성을 선택하고 <b>다운로드 및 설치</b> 버튼을 누릅니다.</li>' +
+      '<li>설치가 끝나면 상단의 ‘음성 선택’ 드롭다운 메뉴에서 방금 설치한 음성을 기본값으로 지정할 수 있어요.</li>' +
       '</ol>' +
       '<h4>⚙️ Windows 10에서 베트남어 TTS 추가하기</h4>' +
       '<ol>' +

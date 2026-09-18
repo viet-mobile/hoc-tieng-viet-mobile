@@ -819,7 +819,7 @@
   .study-mode-btn {
     border: 1.5px solid var(--border); background: var(--surface); color: var(--ink-soft);
     font-size: 0.62rem; font-weight: 700; padding: 6px 2px; border-radius: 10px 0 10px 0; cursor: pointer; line-height: 1.2;
-    white-space: normal; word-break: keep-all; overflow-wrap: break-word; min-height: 2.6em;
+    white-space: normal; word-break: keep-all; overflow-wrap: anywhere; min-width: 0; min-height: 2.6em;
     display: flex; align-items: center; justify-content: center; text-align: center;
   }
   .study-mode-btn[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
@@ -1283,7 +1283,7 @@
     #review-scope-tabs .subtab-btn { white-space: normal; text-align: center; word-break: keep-all; }
 
     #panel-review .study-mode-tabs { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; }
-    #panel-review .study-mode-btn { min-width: 0; min-height: 44px; padding: 4px 2px; font-size: clamp(.59rem, 2.4vw, .75rem); }
+    #panel-review .study-mode-btn { min-width: 0; min-height: 22px; padding: 2px 2px; font-size: clamp(.59rem, 2.4vw, .75rem); }
     #panel-review .study-auto-row {
       display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;
       gap: 3px; padding: 4px 5px; overflow-x: auto; scrollbar-width: none;
