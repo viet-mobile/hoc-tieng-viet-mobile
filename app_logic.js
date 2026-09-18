@@ -6049,8 +6049,8 @@
   // in all 5 languages. This is a curated study selection, not the brochure's full text, so unlike
   // LFF_CONVERSATIONS there's no part-grouping or search box needed -- just a flat list of cards.
   function lpdRecordLabel(rec) {
-    if (rec.kind === "lesson") return "BÀI " + (rec.num < 10 ? "0" + rec.num : String(rec.num));
-    return TU("부록") + " " + rec.num;
+    if (rec.kind === "lesson") return "Bài " + (rec.num < 10 ? "0" + rec.num : String(rec.num));
+    return "Phụ lục " + rec.num;
   }
   function getLpdListenerTerm() {
     var talkCase = findCaseForState(state);
