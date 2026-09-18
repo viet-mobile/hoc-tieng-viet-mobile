@@ -3147,20 +3147,18 @@
     try {
       if (!text || !("speechSynthesis" in window)) { if (onDone) onDone(); return; }
       if (readAllState.id) stopReadAllSequence();
-      var synth = window.speechSynthesis;
-      synth.cancel();
-      var mu = new SpeechSynthesisUtterance(prepareMeaningSpeechText(text));
-      mu.lang = READALL_LANG_TAG[currentLang] || "en-US";
       var lv = selectedLangVoiceURI[currentLang];
-      if (lv) {
-        var v2 = availableLangVoices.filter(function (x) { return voiceMatchKey(x) === lv; })[0];
-        if (v2) { mu.voice = v2; mu.lang = v2.lang; }
-      }
+      var voice = lv ? availableLangVoices.filter(function (x) { return voiceMatchKey(x) === lv; })[0] : null;
       var done = false;
       function finish() { if (done) return; done = true; if (onDone) onDone(); }
-      mu.onend = finish;
-      mu.onerror = finish;
-      synth.speak(mu);
+      // robustSpeak() (not a bare cancel()+speak()) matters here specifically: 복습's category
+      // switch can fire two speakMeaning() calls back to back (e.g. the default-landing category
+      // and a same-tick restoreLastPlace() replay onto a different saved category -- see
+      // selectCategory()'s own comment). A plain cancel() immediately followed by speak() is the
+      // same Chrome race speakOnce()/전체 듣기 already had to work around: the two calls can end
+      // up both audible instead of the second cleanly replacing the first, which is what made an
+      // 어순 배열 prompt sometimes carry on into an unrelated sentence never shown on screen.
+      robustSpeak({ text: prepareMeaningSpeechText(text), lang: READALL_LANG_TAG[currentLang] || "en-US", voice: voice }, finish);
       setTimeout(finish, 6000);
     } catch (e) { if (onDone) onDone(); }
   }
@@ -7589,6 +7587,15 @@
     function selectCategory(key, scope, poolOverride) {
       if (Array.isArray(scope)) { poolOverride = scope; scope = "all"; }
       scope = scope || "all";
+      // Re-selecting the already-active category+scope used to still rebuild the pool, restart
+      // the mode and speak a freshly-picked random item's prompt -- a no-visible-change action
+      // that nonetheless raced a brand-new speechSynthesis call against whatever was already
+      // playing. This matters most for the default-landing category: on every page load,
+      // restoreLastPlace() below replays a click on the last-visited review category, which (if
+      // it happens to be the same one this function's boot-time default call already selected)
+      // used to immediately re-trigger a second, competing prompt read-aloud. poolOverride always
+      // forces through, since a scoped-review launch needs a fresh pool even when key/scope match.
+      if (!poolOverride && studyState.tabKey === key && studyState.scope === scope) return;
       studyState.tabKey = key;
       studyState.scope = scope;
       studyState.pool = dedupeByVi((poolOverride || getPool(key, scope)).map(function (item) {
@@ -7620,9 +7627,14 @@
     reviewBtns.forEach(function (btn) {
       btn.addEventListener("click", function () { selectCategory(btn.dataset.review, "all"); });
     });
-    if (reviewBtns.length) selectCategory("sentence", "lff");
+    if (reviewBtns.length) selectCategory("sentence", "all");
     modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
+        // Re-clicking the already-active mode tab used to still restart the question (a fresh
+        // random pick + a fresh prompt read-aloud) on top of whatever was already playing --
+        // harmless-looking on screen, but it left the previous utterance's speak()/speakMeaning()
+        // call racing against the new one, sometimes audible as two sentences overlapping.
+        if (btn.dataset.mode === studyState.mode) return;
         modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (b) { b.setAttribute("aria-selected", "false"); });
         btn.setAttribute("aria-selected", "true");
         var prevMode = studyState.mode;
