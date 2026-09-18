@@ -3499,23 +3499,29 @@
     var termCap = capitalize(term);
     var termLow = term.toLowerCase();
 
+    // Note: exclusion checks below use (?![\p{L}]) instead of a trailing \b wherever the
+    // guarded word can end in a Vietnamese diacritic vowel (e.g. "bè") -- JS's \b only treats
+    // ASCII [A-Za-z0-9_] as "word" characters, so \b silently fails to match right after a
+    // letter like "è"/"ì" when followed by whitespace/punctuation (both sides read as non-word,
+    // so there's no boundary transition). That previously let "bạn bè" ("friends") slip through
+    // and get wrongly replaced as if "bạn" were the 2nd-person pronoun.
     return text.replace(/\b([Bb]ạn)\b/g, function (match, word, offset, fullStr) {
       var before = fullStr.slice(0, offset);
       var after = fullStr.slice(offset + match.length);
 
       // 1. Followed by friend-related words
-      if (/^\s+(?:bè|thân|xấu|thật|thiết|cùng\s+(?:phòng|lớp|lứa)|đời|ngài)\b/i.test(after)) return match;
-      if (/^\s+tốt(?!\s+đẹp)\b/i.test(after)) return match;
-      if (/^\s+của\s+(?:ngài|Đức\s+Giê-hô-va|Đức\s+Chúa\s+Trời|Chúa|một\s+người|ai|nhau|ông)\b/i.test(after)) return match;
-      if (/^\s+và\s+Đấng\s+Tạo\s+Hóa\b/i.test(after)) return match;
+      if (/^\s+(?:bè|thân|xấu|thật|thiết|cùng\s+(?:phòng|lớp|lứa)|đời|ngài)(?![\p{L}])/iu.test(after)) return match;
+      if (/^\s+tốt(?!\s+đẹp)(?![\p{L}])/iu.test(after)) return match;
+      if (/^\s+của\s+(?:ngài|Đức\s+Giê-hô-va|Đức\s+Chúa\s+Trời|Chúa|một\s+người|ai|nhau|ông)(?![\p{L}])/iu.test(after)) return match;
+      if (/^\s+và\s+Đấng\s+Tạo\s+Hóa(?![\p{L}])/iu.test(after)) return match;
 
       // 2. Preceded by friend-related context
       if (/\b(?:(?:những|các|một)\s+)?người\s+$/i.test(before)) return match;
       if (/\btình\s+$/i.test(before)) return match;
       if (/\b(?:kết|chọn|tìm|trở\s+thành)\s+$/i.test(before)) return match;
-      if (/\blàm\s+$/i.test(before) && /^\s+(?:với|cùng)\b/i.test(after)) return match;
+      if (/\blàm\s+$/i.test(before) && /^\s+(?:với|cùng)(?![\p{L}])/iu.test(after)) return match;
       if (/\bxem\s+(?:chúng\s+ta|họ|mình)\s+là\s+$/i.test(before)) return match;
-      if (/\bkhông\s+có\s+$/i.test(before) && (/^\s*[”".!,?]/.test(after) || /^\s+(?:bè|thân|tốt)\b/i.test(after))) return match;
+      if (/\bkhông\s+có\s+$/i.test(before) && (/^\s*[”".!,?]/.test(after) || /^\s+(?:bè|thân|tốt)(?![\p{L}])/iu.test(after))) return match;
 
       return (word === "Bạn") ? termCap : termLow;
     });
@@ -3543,7 +3549,11 @@
       text = text.replace(new RegExp("\\b(Tôi\\s+(?:tên|là))\\s+" + KNOWN_NEIGHBOR_NAMES_RE + "\\b", "g"), "$1 " + customNameVi);
     }
 
-    text = text.replace(/\b(Anh|Chị|anh|chị)\b/g, function (m, pTerm, offset, fullStr) {
+    // (?<![\p{L}])/(?![\p{L}]) instead of \b: plain \b never matches right after "Chị"/"chị"
+    // (JS's \b only treats ASCII letters as "word" characters, so the accented "ị" reads as
+    // non-word on both sides of a following space/comma/period, i.e. no boundary) -- this left
+    // "Chị"/"chị" permanently unable to be swapped for the chosen listener term.
+    text = text.replace(/(?<![\p{L}])(Anh|Chị|anh|chị)(?![\p{L}])/gu, function (m, pTerm, offset, fullStr) {
       var after = fullStr.slice(offset + m.length);
       if (/^\s+ấy\b/.test(after)) return m;
       var isCap = pTerm[0] === pTerm[0].toUpperCase();
