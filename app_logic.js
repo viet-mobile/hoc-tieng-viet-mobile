@@ -3107,7 +3107,9 @@
   function speakMeaning(text, onDone) {
     try {
       if (!text || !("speechSynthesis" in window)) { if (onDone) onDone(); return; }
+      if (readAllState.id) stopReadAllSequence();
       var synth = window.speechSynthesis;
+      synth.cancel();
       var mu = new SpeechSynthesisUtterance(prepareMeaningSpeechText(text));
       mu.lang = READALL_LANG_TAG[currentLang] || "en-US";
       var lv = selectedLangVoiceURI[currentLang];
@@ -3120,7 +3122,7 @@
       mu.onend = finish;
       mu.onerror = finish;
       synth.speak(mu);
-      setTimeout(finish, 4000);
+      setTimeout(finish, 6000);
     } catch (e) { if (onDone) onDone(); }
   }
 
@@ -4021,12 +4023,16 @@
       viet = applyChungTa(viet, c, state.region);
       if (state.region === "south") viet = stripA(viet);
       var translation = applyCompanionText(applyNameText(T(it.translation), false), false, c.id);
+      var meaningBtnHtml = function (txt) {
+        return '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(txt) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>';
+      };
       stageTexts.push([viet, translation]);
       turnsHtml += '<div class="turn">';
       turnsHtml += '  <div class="me-label">' + TU("나") + '</div>';
       turnsHtml += '  <div class="viet vn">' + escapeHtml(viet) + '<button class="speak-btn" data-speak="' + escapeAttr(viet) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>';
       turnsHtml += '  <div class="gloss">' + escapeHtml(applyCompanionText(applyNameText(T(it.gloss), false), false, c.id).replace(/\s{2,}/g, " · ")) + '</div>';
-      turnsHtml += '  <div class="kr' + (practiceMode ? " hidden-mode" : "") + '" data-full="' + escapeAttr(translation) + '">' + (practiceMode ? '<span class="peek">' + TU("눌러서 뜻 보기") + '</span>' : escapeHtml(translation)) + '</div>';
+      turnsHtml += '  <div class="kr' + (practiceMode ? " hidden-mode" : "") + '" data-full="' + escapeAttr(translation) + '">' +
+        (practiceMode ? '<span class="peek">' + TU("눌러서 뜻 보기") + '</span>' : '<span class="kr-text">' + escapeHtml(translation) + '</span>' + meaningBtnHtml(translation)) + '</div>';
       turnsHtml += '</div>';
       if (it.reply) {
         var rname = it.reply.name, rviet = applyCompanionText(applyNameText(applyRegionText(it.reply.viet, c, state.region), true), true, c.id), rkr = applyCompanionText(applyNameText(T(it.reply.translation), false), false, c.id);
@@ -4037,7 +4043,8 @@
           turnsHtml += '<div class="turn reply-turn">';
           turnsHtml += '  <div class="me-label">' + escapeHtml(rname) + ' (' + TU("상대") + ')</div>';
           turnsHtml += '  <div class="viet vn">' + escapeHtml(rviet) + '<button class="speak-btn" data-speak="' + escapeAttr(rviet) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>';
-          turnsHtml += '  <div class="kr' + (practiceMode ? " hidden-mode" : "") + '" data-full="' + escapeAttr(rkr) + '">' + (practiceMode ? '<span class="peek">' + TU("눌러서 뜻 보기") + '</span>' : escapeHtml(rkr)) + '</div>';
+          turnsHtml += '  <div class="kr' + (practiceMode ? " hidden-mode" : "") + '" data-full="' + escapeAttr(rkr) + '">' +
+            (practiceMode ? '<span class="peek">' + TU("눌러서 뜻 보기") + '</span>' : '<span class="kr-text">' + escapeHtml(rkr) + '</span>' + meaningBtnHtml(rkr)) + '</div>';
           turnsHtml += '</div>';
         }
       }
@@ -4048,13 +4055,20 @@
     body.innerHTML = html;
 
     body.querySelectorAll(".speak-btn").forEach(function (b) {
-      b.addEventListener("click", function (e) { e.stopPropagation(); speak(b.dataset.speak); });
+      b.addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (b.dataset.speakMeaning) speakMeaning(b.dataset.speakMeaning);
+        else speak(b.dataset.speak);
+      });
     });
     body.querySelectorAll(".kr").forEach(function (k) {
       k.addEventListener("click", function () {
-        if (!practiceMode) return;
+        if (!practiceMode || !k.classList.contains("hidden-mode")) return;
         k.classList.remove("hidden-mode");
-        k.textContent = k.dataset.full;
+        var full = k.dataset.full;
+        k.innerHTML = '<span class="kr-text">' + escapeHtml(full) + '</span>' + meaningBtnHtml(full);
+        var mb = k.querySelector(".speak-meaning-btn");
+        if (mb) mb.addEventListener("click", function (e) { e.stopPropagation(); speakMeaning(mb.dataset.speakMeaning); });
       });
     });
   }
@@ -4754,7 +4768,9 @@
         '<div class="gr-intro-desc">' + escapeHtml(T(sec.desc)) + '</div>';
       sec.examples.forEach(function (ex) {
         introHtml += '<div class="gr-ex">' +
-          '<div class="gr-ex-row"><span class="gr-ex-kr">' + escapeHtml(T(ex.kr)) + '</span>' +
+          '<div class="gr-ex-row"><span class="gr-ex-kr">' + escapeHtml(T(ex.kr)) +
+          '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(T(ex.kr)) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+          '</span>' +
           '<button class="speak-btn" data-speak="' + escapeAttr(ex.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
           alignedRow(ex.pairs) +
           (ex.note ? '<div class="gr-ex-note">' + escapeHtml(T(ex.note)) + '</div>' : '') +
@@ -4777,7 +4793,9 @@
         unitsHtml += '<div class="gr-step">' +
           '<div class="gr-step-head">' + alignedRow(s.pairs) +
           '<button class="speak-btn" data-speak="' + escapeAttr(s.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-          (s.kr ? '<div class="gr-step-kr">' + escapeHtml(T(s.kr)) + '</div>' : '') + '</div>';
+          (s.kr ? '<div class="gr-step-kr"><span>' + escapeHtml(T(s.kr)) + '</span>' +
+            '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(T(s.kr)) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+            '</div>' : '') + '</div>';
       });
       unitsHtml += '</div></div></div>';
     });
@@ -4795,8 +4813,12 @@
           card.dataset.open = card.dataset.open === "true" ? "false" : "true";
         });
       });
-      scopeEl.querySelectorAll("[data-speak]").forEach(function (b) {
-        b.addEventListener("click", function (e) { e.stopPropagation(); speak(b.dataset.speak); });
+      scopeEl.querySelectorAll(".speak-btn").forEach(function (b) {
+        b.addEventListener("click", function (e) {
+          e.stopPropagation();
+          if (b.dataset.speakMeaning) speakMeaning(b.dataset.speakMeaning);
+          else speak(b.dataset.speak);
+        });
       });
     });
   }
@@ -5298,7 +5320,13 @@
     });
   }
   function bindCurrSpeakBtns(root) {
-    root.querySelectorAll(".speak-btn").forEach(function (b) { b.addEventListener("click", function (e) { e.stopPropagation(); speak(b.dataset.speak); }); });
+    root.querySelectorAll(".speak-btn").forEach(function (b) {
+      b.addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (b.dataset.speakMeaning) speakMeaning(b.dataset.speakMeaning);
+        else speak(b.dataset.speak);
+      });
+    });
   }
 
   function renderCurrWeek16() {
@@ -5503,7 +5531,9 @@
         html += '<div class="talk-line"><span class="talk-who">' + escapeHtml(l.who || "•") + '</span>' +
           '<div class="talk-body"><div class="talk-vi">' + escapeHtml(vi) +
           '<button class="speak-btn" data-speak="' + escapeAttr(vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-          '<div class="talk-kr">' + escapeHtml(kr) + '</div></div></div>';
+          '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(kr) + '</span>' +
+          '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(kr) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+          '</div></div></div>';
       });
       html += '</div></div></div>';
     });
@@ -5732,7 +5762,9 @@
         html += '<div class="talk-line"><span class="talk-who">' + escapeHtml(neighborWhoLabel(l.who)) + '</span>' +
           '<div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
           '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-          '<div class="talk-kr">' + escapeHtml(l.kr) + '</div></div></div>';
+          '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(l.kr) + '</span>' +
+          '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(l.kr) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+          '</div></div></div>';
       });
       html += '</div></div></div>';
     });
@@ -5924,7 +5956,9 @@
         lineUnits.forEach(function (l) {
           html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
             '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-            '<div class="talk-kr">' + escapeHtml(l.kr) + '</div></div></div>';
+            '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(l.kr) + '</span>' +
+            '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(l.kr) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+            '</div></div></div>';
         });
         html += '</div></div></div>';
       });
@@ -5986,7 +6020,9 @@
       lineUnits.forEach(function (l) {
         html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
           '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-          '<div class="talk-kr">' + escapeHtml(l.kr) + '</div></div></div>';
+          '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(l.kr) + '</span>' +
+          '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(l.kr) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+          '</div></div></div>';
       });
       html += '</div></div></div>';
     });
@@ -6392,7 +6428,11 @@
           readAllButtonHtml(d.lines.map(function (l) { return [l.vi, T(l.kr)]; })) + '</p><div class="talk-lines">';
         d.lines.forEach(function (l) {
           html += '<div class="talk-line"><span class="talk-who">' + escapeHtml(l.who) + '</span>' +
-            '<div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) + '</div><div class="talk-kr">' + escapeHtml(T(l.kr)) + '</div></div></div>';
+            '<div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
+            '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
+            '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(T(l.kr)) + '</span>' +
+            '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(T(l.kr)) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+            '</div></div></div>';
         });
         html += '</div></div>';
       });
@@ -6417,6 +6457,7 @@
     html += '</div>';
 
     root.innerHTML = html;
+    bindCurrSpeakBtns(root);
   }
 
   function renderCurrPrayer() {
@@ -6434,7 +6475,9 @@
         verse.forEach(function (l) {
           html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
             '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-            (l.kr ? '<div class="talk-kr">' + escapeHtml(T(l.kr)) + '</div>' : '') + '</div></div>';
+            (l.kr ? '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(T(l.kr)) + '</span>' +
+              '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(T(l.kr)) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+              '</div>' : '') + '</div></div>';
         });
         html += '</div>';
       });
@@ -6449,7 +6492,9 @@
     PRAYER_TEMPLATE.lines.forEach(function (l) {
       html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
         '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-        '<div class="talk-kr">' + escapeHtml(T(l.kr)) + '</div></div></div>';
+        '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(T(l.kr)) + '</span>' +
+        '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(T(l.kr)) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+        '</div></div></div>';
     });
     html += '</div></div></div>';
 
@@ -6835,9 +6880,9 @@
     // handling in renderAutoAdvanceControls() below. Manual replay buttons (다시 듣기 / the
     // speak-btn) are untouched either way; this only suppresses the automatic auto-play.
     var MUTE_SCOPE_LABELS = {
-      meaning: { ko: "한", zh: "中文", en: "EN", ja: "日本語" },
-      vi: { ko: "베", zh: "越南語", en: "VN", ja: "ベトナム" },
-      both: { ko: "베한", zh: "全部", en: "All", ja: "全て" }
+      meaning: { ko: "한", zh: "中", en: "EN", ja: "日語" },
+      vi: { ko: "베", zh: "越", en: "VN", ja: "ベト" },
+      both: { ko: "베한", zh: "全", en: "All", ja: "全て" }
     };
     function muteScopeLabel(key) { return (MUTE_SCOPE_LABELS[key] || {})[currentLang] || key; }
     var muteScope = ""; // "" (off) | "meaning" | "vi" | "both"
@@ -6887,7 +6932,12 @@
     // reached via a manual answer or via armAutoReveal's own cold reveal.
     function speakThenAdvance(text, isVi, advanceFn) {
       function go() { if (reviewTabIsActive()) advanceFn(); }
-      if (isVi) speak(text, go); else speakMeaning(text, go);
+      var kind = isVi ? "vi" : "meaning";
+      if (isMuted(kind)) {
+        go();
+      } else {
+        if (isVi) speak(text, go); else speakMeaning(text, go);
+      }
     }
     // flash/mcq/look/type all auto-play the item's Vietnamese audio the moment it's shown, and
     // (when 자동 넘김 is on) also start a countdown toward auto-revealing the answer and moving
@@ -6933,19 +6983,27 @@
       return revealType;
     }
     var autoAdvRoot = document.getElementById("study-auto-row");
+    var lastNonMcqScope = (muteScope && muteScope !== "meaning") ? muteScope : "both";
     function renderAutoAdvanceControls() {
       if (!autoAdvRoot) return;
       // 듣기 4지선다's Vietnamese audio IS the question, so only the (functionally silent
       // anyway) meaning-mute sub-option is ever offered there -- checking 묵음 in that mode
       // locks straight to it, with no 베/베한 button rendered to switch away from it.
       var inMcq = studyState.mode === "mcq";
+      if (inMcq && muteScope && muteScope !== "meaning") {
+        muteScope = "meaning";
+        saveMuteScopePref();
+      }
       var scopeKeys = inMcq ? ["meaning"] : ["meaning", "vi", "both"];
-      var subHtml = muteScope ? scopeKeys.map(function (k) {
-        var pressed = inMcq ? true : muteScope === k;
-        return '<button type="button" class="mute-scope-btn" data-mute-scope="' + k + '" aria-pressed="' + (pressed ? "true" : "false") + '">' + escapeHtml(muteScopeLabel(k)) + '</button>';
-      }).join("") : "";
-      var muteHtml = '<span class="mute-group"><label class="mute-autoplay-option"><input type="checkbox" id="mute-autoplay-toggle" ' + (muteScope ? "checked" : "") + '> ' + TU("묵음") + '</label>' +
-        '<span class="mute-scope-row">' + subHtml + '</span></span>';
+      var activeScope = inMcq ? "meaning" : (muteScope || lastNonMcqScope || "both");
+      var optionsHtml = scopeKeys.map(function (k) {
+        return '<option value="' + k + '"' + (activeScope === k ? ' selected' : '') + '>' + escapeHtml(muteScopeLabel(k)) + '</option>';
+      }).join('');
+      var muteHtml = '<span class="mute-group">' +
+        '<label class="mute-autoplay-option"><input type="checkbox" id="mute-autoplay-toggle" ' + (muteScope ? "checked" : "") + '> ' + TU("묵음") + '</label>' +
+        '<select id="mute-scope-select" class="mute-scope-select" ' + (muteScope ? "" : "disabled") + (inMcq ? ' aria-readonly="true"' : '') + '>' +
+        optionsHtml +
+        '</select></span>';
       var html = '<label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span id="repeat-toggle-review"></span></label>' +
         muteHtml +
         '<span class="auto-advance-group"><label class="auto-advance-option"><input type="checkbox" id="auto-advance-toggle" ' + (autoAdvanceEnabled ? "checked" : "") + '> ' + TU("자동 넘김") + '</label>' +
@@ -6955,22 +7013,27 @@
       autoAdvRoot.innerHTML = html;
       renderViRepeatToggle(document.getElementById("repeat-toggle-review"));
       var muteToggle = document.getElementById("mute-autoplay-toggle");
+      var muteSelect = document.getElementById("mute-scope-select");
       if (muteToggle) {
         muteToggle.addEventListener("change", function (e) {
-          if (e.target.checked) muteScope = inMcq ? "meaning" : (muteScope || "both");
-          else muteScope = "";
+          if (e.target.checked) {
+            muteScope = inMcq ? "meaning" : (lastNonMcqScope || "both");
+          } else {
+            muteScope = "";
+          }
           saveMuteScopePref();
           renderAutoAdvanceControls();
         });
       }
-      autoAdvRoot.querySelectorAll(".mute-scope-btn").forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          if (inMcq) return; // only one button rendered there; nothing to switch to
-          muteScope = btn.dataset.muteScope;
+      if (muteSelect) {
+        muteSelect.addEventListener("change", function (e) {
+          if (inMcq) return;
+          muteScope = e.target.value;
+          lastNonMcqScope = muteScope;
           saveMuteScopePref();
           renderAutoAdvanceControls();
         });
-      });
+      }
       document.getElementById("auto-advance-toggle").addEventListener("change", function (e) {
         autoAdvanceEnabled = e.target.checked;
         saveAutoAdvancePref();
@@ -7093,7 +7156,20 @@
       btn.addEventListener("click", function () {
         modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (b) { b.setAttribute("aria-selected", "false"); });
         btn.setAttribute("aria-selected", "true");
+        var prevMode = studyState.mode;
         studyState.mode = btn.dataset.mode;
+        if (prevMode === "mcq" && studyState.mode !== "mcq") {
+          if (muteScope === "meaning" && lastNonMcqScope) {
+            muteScope = lastNonMcqScope;
+            saveMuteScopePref();
+          }
+        } else if (prevMode !== "mcq" && studyState.mode === "mcq") {
+          if (muteScope && muteScope !== "meaning") {
+            lastNonMcqScope = muteScope;
+            muteScope = "meaning";
+            saveMuteScopePref();
+          }
+        }
         studyState.current = null;
         renderAutoAdvanceControls();
         startMode();
@@ -7150,7 +7226,7 @@
         // Revealing the meaning also reads it aloud (in the current UI language), same as
         // 보기/듣기 4지선다 speak the correct answer when the learner answers -- always, not
         // gated behind 자동 넘김/정답 시 다음 문제, so it plays before "다음 카드" is clicked.
-        if (!showing) speakMeaning(item.kr);
+        if (!showing && !isMuted("meaning")) speakMeaning(item.kr);
       });
       document.getElementById("flash-prev").addEventListener("click", function (e) {
         e.stopPropagation();
@@ -7254,7 +7330,7 @@
       // answers, right or wrong -- when auto-advance is also active it chains straight into the
       // next question; otherwise it's just the spoken confirmation, and "다음 문제" stays manual.
       if (isCorrect && (autoAdvanceEnabled || autoNextOnCorrect)) speakThenAdvance(item.kr, false, nextMcq);
-      else speakMeaning(item.kr);
+      else if (!isMuted("meaning")) speakMeaning(item.kr);
     }
 
     /* ---------- reading 4-choice quiz (보기 4지선다) ---------- */
@@ -7332,7 +7408,7 @@
       // Always read the correct answer aloud once the learner answers -- see the matching
       // comment in answerMcq() above.
       if (isCorrect && (autoAdvanceEnabled || autoNextOnCorrect)) speakThenAdvance(item.kr, false, nextLook);
-      else speakMeaning(item.kr);
+      else if (!isMuted("meaning")) speakMeaning(item.kr);
     }
 
     /* ---------- word-order arrangement ---------- */
@@ -7421,7 +7497,7 @@
         // the rest of the interval.
         clearAutoAdvanceTimer();
         if (autoAdvanceEnabled || autoNextOnCorrect) speakThenAdvance(item.vi, true, nextOrder);
-        else speak(item.vi);
+        else if (!isMuted("vi")) speak(item.vi);
       } else {
         fb.innerHTML = '<div class="study-order-feedback no">' + TU("순서가 달라요. 다시 시도해 보세요.") + '</div>' +
           '<div class="study-order-correct-answer">' + TU("정답: ") + escapeHtml(item.vi) + '</div>';
@@ -7429,7 +7505,7 @@
         // chips back off) -- the cold auto-advance timer armed at render time is left running, so
         // an unresolved attempt still reveals the answer and moves on near the end of the interval
         // rather than stalling forever.
-        speak(item.vi);
+        if (!isMuted("vi")) speak(item.vi);
       }
     }
 
@@ -7466,7 +7542,7 @@
           : '<div class="study-type-feedback no">' + TU("다시 확인해 보세요.") + '</div><div class="study-type-answer vn">' + TU("정답: ") + escapeHtml(item.vi) + '</div>';
         answered = true;
         if (correct && (autoAdvanceEnabled || autoNextOnCorrect)) speakThenAdvance(item.vi, true, nextType);
-        else speak(item.vi);
+        else if (!isMuted("vi")) speak(item.vi);
       }
       document.getElementById("type-submit").addEventListener("click", submit);
       // First Enter checks the answer; once it's been checked, a second Enter (focus still
@@ -8998,11 +9074,17 @@
       html += '<div class="gr-align-row">' + pairs.map(function (p) {
         return '<div class="gr-align-col"><div class="gr-align-vi vn">' + escapeHtml(p[0]) + '</div><div class="gr-align-kr">' + escapeHtml(p[1]) + "</div></div>";
       }).join("") + "</div>";
-      html += '<div class="sb-result-kr">' + TU("문장 뜻: ") + escapeHtml(result.krText) + "</div>";
+      html += '<div class="sb-result-kr">' + TU("문장 뜻: ") + '<span>' + escapeHtml(result.krText) + '</span>' +
+        '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(result.krText) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + "</button></div>";
       if (result.notes.length) html += '<div class="sb-notes">' + result.notes.map(escapeHtml).join("<br>") + "</div>";
       html += "</div>";
       resultEl.innerHTML = html;
-      resultEl.querySelectorAll(".speak-btn").forEach(function (b) { b.addEventListener("click", function () { speak(b.dataset.speak); }); });
+      resultEl.querySelectorAll(".speak-btn").forEach(function (b) {
+        b.addEventListener("click", function () {
+          if (b.dataset.speakMeaning) speakMeaning(b.dataset.speakMeaning);
+          else speak(b.dataset.speak);
+        });
+      });
     }
 
     document.getElementById("sb-generate").addEventListener("click", function () {
