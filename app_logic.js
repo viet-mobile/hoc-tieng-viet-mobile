@@ -3116,15 +3116,6 @@
       // Age/generation counters ("10대", "20대" etc.) are read Sino-Korean ("십대", "이십대"),
       // not native-Korean ("열 대").
       t = t.replace(/(\d+)대/g, function (m, n) { return sinoKoreanNumber(n) + "대"; });
-      // URLs like donate.jw.org and JW.org read aloud with Korean dot ("점") and "오르그".
-      t = t.replace(/\bdonate\.jw\.org\b/gi, "도네이트 점 제이더블유 점 오르그");
-      t = t.replace(/\bjw\.org\b/gi, "제이더블유 점 오르그");
-      t = t.replace(/\bdonate\b/gi, "도네이트");
-    } else if (currentLang === "ja") {
-      // In Japanese, official JW usage reads donate.jw.org as "ドネイト・ジェイダブリュー・ドット・オルグ".
-      t = t.replace(/\bdonate\.jw\.org\b/gi, "ドネイト ドット ジェイダブリュー ドット オルグ");
-      t = t.replace(/\bjw\.org\b/gi, "ジェイダブリュー ドット オルグ");
-      t = t.replace(/\bdonate\b/gi, "ドネイト");
     }
     return t;
   }
@@ -3469,6 +3460,7 @@
         // 제공 연설 reads this same shared `state` (see comment where `state` is declared) --
         // keep it in sync live, not just when its own subtab is opened.
         renderCurrTalks();
+        renderCurrLpd();
         savePeopleState();
       });
     });
@@ -3511,6 +3503,7 @@
     updateCompanionTermNote();
     updateCompanionNoteInPlace();
     renderCurrTalks();
+    renderCurrLpd();
     savePeopleState();
   }
   function bindMiniToggle(groupId, target, key) {
@@ -3561,6 +3554,7 @@
         regionNote();
         renderResult();
         renderCurrTalks();
+        renderCurrLpd();
         savePeopleState();
       });
     });
@@ -4017,6 +4011,7 @@
     document.getElementById("result-wrap").innerHTML = "";
     window.scrollTo({ top: 0, behavior: "smooth" });
     renderCurrTalks();
+    renderCurrLpd();
     savePeopleState();
   }
 
@@ -6057,6 +6052,44 @@
     if (rec.kind === "lesson") return "BÀI " + (rec.num < 10 ? "0" + rec.num : String(rec.num));
     return TU("부록") + " " + rec.num;
   }
+  function getLpdListenerTerm() {
+    var talkCase = findCaseForState(state);
+    return talkCase ? termWord(talkCase.listener_term, talkCase.listener_term_south, state.region) : "ông";
+  }
+
+  function isLpdInformalListener(term) {
+    return /^(?:cháu|con|em|cậu|bạn)$/i.test(term || "");
+  }
+
+  function applyLpdListenerTerm(text, term) {
+    if (!text) return text;
+    var t = term || getLpdListenerTerm();
+    var termCap = capitalize(t);
+    return text.replace(/([“"'\s]|^)Ông(?=\s+có\s+bao\s+giờ(?:\s|$))/g, "$1" + termCap);
+  }
+
+  function applyLpdTerms(line) {
+    if (!line) return { vi: "", kr: "" };
+    var term = getLpdListenerTerm();
+    var isInformal = isLpdInformalListener(term);
+    var vi = applyLpdListenerTerm(line.vi, term);
+    var meaning = T(line);
+    if (currentLang === "ko") {
+      if (isInformal) {
+        meaning = meaning.replace(/들어 보신 적 있나요\?$/, "들어 본 적 있니?");
+      } else {
+        meaning = meaning.replace(/들어 본 적 있니\?$/, "들어 보신 적 있나요?");
+      }
+    } else if (currentLang === "ja") {
+      if (isInformal) {
+        meaning = meaning.replace(/^「こんなことをお聞きになったことがありますか(?:\?|？)?」/, "「こんなこと聞いたことある？」");
+      } else {
+        meaning = meaning.replace(/^「こんなこと聞いたことある(?:\?|？)?」/, "「こんなことをお聞きになったことがありますか?」");
+      }
+    }
+    return { vi: vi, kr: meaning };
+  }
+
   function renderCurrLpd() {
     var root = document.getElementById("curr-lpd-root");
     if (!root) return;
@@ -6073,9 +6106,14 @@
     LPD_LESSONS.forEach(function (rec, ri) {
       var lineUnits = [];
       rec.lines.forEach(function (line) {
-        sentencePairs(line.vi, T(line)).forEach(function (pair) {
-          lineUnits.push({ vi: pair.vi, kr: pair.kr });
-        });
+        if (rec.kind === "appendix" && rec.num === "A") {
+          var item = applyLpdTerms(line);
+          lineUnits.push({ vi: item.vi, kr: item.kr });
+        } else {
+          sentencePairs(line.vi, T(line)).forEach(function (pair) {
+            lineUnits.push({ vi: pair.vi, kr: pair.kr });
+          });
+        }
       });
       var readPairs = [[rec.title.vi, T(rec.title)]].concat(lineUnits.map(function (l) { return [l.vi, l.kr]; }));
       html += '<div class="group-card" data-open="' + (openSyls["lpd" + ri] ? "true" : "false") + '" data-syl="lpd' + ri + '" data-anchor="lpd' + ri + '">' +
@@ -6734,7 +6772,16 @@
         // 사람들을 사랑하고 제자로 (new 대화 subtab, LPD_LESSONS) contributes its curated example
         // sentences too.
         LPD_LESSONS.forEach(function (rec) {
-          rec.lines.forEach(function (l) { if (l.vi) addSentencePairs(out, l.vi, Tstrict(l)); });
+          rec.lines.forEach(function (l) {
+            if (l.vi) {
+              if (rec.kind === "appendix" && rec.num === "A") {
+                var u = applyLpdTerms(l);
+                out.push({ vi: u.vi, kr: u.kr });
+              } else {
+                addSentencePairs(out, l.vi, Tstrict(l));
+              }
+            }
+          });
         });
         return dedupeByVi(out);
       },
@@ -6860,7 +6907,16 @@
         else if (scope === "talks") OFFER_TALKS.forEach(function (t) { t.lines.forEach(function (l) { sentence(l.vi, Tstrict(l.kr)); }); });
         else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(l.vi, Tstrict(l)); }); });
         else if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(l.vi, Tstrict(l)); }); });
-        else if (scope === "lpd") LPD_LESSONS.forEach(function (r) { r.lines.forEach(function (l) { sentence(l.vi, Tstrict(l)); }); });
+        else if (scope === "lpd") LPD_LESSONS.forEach(function (r) {
+          r.lines.forEach(function (l) {
+            if (r.kind === "appendix" && r.num === "A") {
+              var u = applyLpdTerms(l);
+              out.push({ vi: u.vi, kr: u.kr });
+            } else {
+              sentence(l.vi, Tstrict(l));
+            }
+          });
+        });
       } else if (key === "vocab") {
         if (scope === "rhyme") RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); });
         else if (scope === "orderrev") { RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { if (w.word_order_reversed) out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); }); if (typeof WORD_ORDER_REVERSED_EXTRA !== "undefined") WORD_ORDER_REVERSED_EXTRA.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }
