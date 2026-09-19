@@ -6984,6 +6984,17 @@
   var songPickerActiveRange = "all";
   var songPickerSearchQuery = "";
 
+  function songSanitize(str) {
+    if (!str || typeof str !== "string") return str;
+    return str.replace(/예수님/g, "예수").replace(/주님/g, "주");
+  }
+
+  function isSongSectionMarker(str) {
+    if (!str) return false;
+    var s = str.trim();
+    return s.charAt(0) === "(" || s.charAt(0) === "（";
+  }
+
   function renderCurrSongs(targetSongNum) {
     var root = document.getElementById("curr-songs-root");
     if (!root) return;
@@ -7030,8 +7041,10 @@
     var sNum = String(sel.number);
     var meaningsMap = (typeof SONG_MEANINGS !== "undefined" && SONG_MEANINGS[sNum]) || {};
 
-    var targetTitle = sel.title[currentLang] || sel.title.ko || "";
-    var targetScripture = (sel.scripture && (sel.scripture[currentLang] || sel.scripture.vi)) || "";
+    var viTitle = sel.title.vi || "";
+    var targetTitle = songSanitize(sel.title[currentLang] || sel.title.ko || "");
+    var viScripture = (sel.scripture && sel.scripture.vi) || "";
+    var targetScripture = songSanitize((sel.scripture && (sel.scripture[currentLang] || sel.scripture.ko)) || "");
 
     // Build lyric units and readAll lines
     var songLines = [];
@@ -7039,8 +7052,18 @@
     sel.lines.forEach(function (l, idx) {
       var vi = (l.vi || "").trim();
       if (!vi) return;
-      var target = (l[currentLang] || l.ko || "").trim();
-      var lineMeaning = (meaningsMap[String(idx)] && meaningsMap[String(idx)][currentLang]) || "";
+      var target = songSanitize((l[currentLang] || l.ko || "").trim());
+
+      // Section marker (Chorus, Ending, Bridge, Pre-chorus)
+      if (isSongSectionMarker(vi)) {
+        lyricsHtml += '<div class="lyric-section-marker">' +
+          '<div class="lyric-marker-vi vn">' + escapeHtml(vi) + '</div>' +
+          (target ? '<div class="lyric-marker-target">' + escapeHtml(target) + '</div>' : '') +
+          '</div>';
+        return;
+      }
+
+      var lineMeaning = songSanitize((meaningsMap[String(idx)] && meaningsMap[String(idx)][currentLang]) || "");
 
       songLines.push(target ? [vi, target] : vi);
 
@@ -7069,6 +7092,16 @@
       lyricsHtml += '</div>';
     });
 
+    // Reference (if present at the end of the song)
+    var viRef = (sel.reference && sel.reference.vi) ? sel.reference.vi.trim() : "";
+    var targetRef = (sel.reference && (sel.reference[currentLang] || sel.reference.ko)) ? songSanitize(sel.reference[currentLang] || sel.reference.ko).trim() : "";
+    if (viRef || targetRef) {
+      lyricsHtml += '<div class="song-reference-card">' +
+        (viRef ? '<div class="song-reference-vi vn">' + escapeHtml(viRef) + '</div>' : '') +
+        (targetRef ? '<div class="song-reference-target">' + escapeHtml(targetRef) + '</div>' : '') +
+        '</div>';
+    }
+
     var maxNum = 0;
     songs.forEach(function (s) { if (s.number > maxNum) maxNum = s.number; });
     if (!maxNum) maxNum = songs.length;
@@ -7083,8 +7116,8 @@
       '<button type="button" class="song-ctrl-picker-btn" id="song-picker-open-btn" aria-label="' + TU("노래 선택") + '">' +
         '<div class="song-ctrl-badge">' + sel.number + '</div>' +
         '<div class="song-ctrl-title-wrap">' +
-          '<div class="song-ctrl-main-title">' + escapeHtml(targetTitle) + '</div>' +
-          '<div class="song-ctrl-sub-title vn">' + escapeHtml(sel.title.vi) + '</div>' +
+          '<div class="song-ctrl-main-title vn">' + escapeHtml(viTitle) + '</div>' +
+          '<div class="song-ctrl-sub-title">' + escapeHtml(targetTitle) + '</div>' +
         '</div>' +
         '<div class="song-ctrl-dropdown-arrow">▾</div>' +
       '</button>' +
@@ -7093,12 +7126,15 @@
       '</button>' +
     '</div>';
 
-    // 2. Selected song lyrics detail view (Prominently displayed right under the control bar)
+    // 2. Selected song lyrics detail view (Required order: number, vi title, target title, vi scripture, target scripture)
     html += '<div class="song-detail-card" id="song-detail-card" data-anchor="song-' + sel.number + '">';
     html += '<div class="song-detail-header">' +
       '<div class="song-detail-title-group">' +
-        '<h3 class="song-detail-main-title">' + sel.number + TU("번") + ' — ' + escapeHtml(targetTitle) + '</h3>' +
-        '<div class="song-detail-sub-title vn">' + escapeHtml(sel.title.vi) + (targetScripture ? ' <span class="song-scripture-tag">' + escapeHtml(targetScripture) + '</span>' : '') + '</div>' +
+        '<div class="song-detail-number-badge">' + sel.number + TU("번") + '</div>' +
+        '<h3 class="song-detail-vi-title vn">' + escapeHtml(viTitle) + '</h3>' +
+        '<div class="song-detail-target-title">' + escapeHtml(targetTitle) + '</div>' +
+        (viScripture ? '<div class="song-detail-vi-scripture vn">' + escapeHtml(viScripture) + '</div>' : '') +
+        (targetScripture ? '<div class="song-detail-target-scripture">' + escapeHtml(targetScripture) + '</div>' : '') +
       '</div>' +
       '<div class="song-detail-nav">' +
         readAllButtonHtml(songLines) +
@@ -7168,8 +7204,9 @@
     html += '<div class="song-picker-grid" id="song-picker-grid" style="' + (songPickerViewMode === "grid" ? "" : "display:none;") + '">';
     songs.forEach(function (s) {
       var isActive = s.number === sel.number;
-      var tTitle = s.title[currentLang] || s.title.ko || "";
-      var searchTerms = (s.number + " " + s.title.vi + " " + tTitle + " " + (s.title.ko || "")).toLowerCase();
+      var tTitle = songSanitize(s.title[currentLang] || s.title.ko || "");
+      var vTitle = s.title.vi || "";
+      var searchTerms = (s.number + " " + vTitle + " " + tTitle + " " + (s.title.ko || "")).toLowerCase();
       html += '<button type="button" class="song-grid-chip" data-song-num="' + s.number + '" data-active="' + (isActive ? "true" : "false") + '" data-search="' + escapeAttr(searchTerms) + '" title="' + s.number + '. ' + escapeAttr(tTitle) + '">' +
         s.number +
       '</button>';
@@ -7180,12 +7217,13 @@
     html += '<div class="song-picker-list" id="song-picker-list" style="' + (songPickerViewMode === "list" ? "" : "display:none;") + '">';
     songs.forEach(function (s) {
       var isActive = s.number === sel.number;
-      var tTitle = s.title[currentLang] || s.title.ko || "";
-      var searchTerms = (s.number + " " + s.title.vi + " " + tTitle + " " + (s.title.ko || "")).toLowerCase();
+      var tTitle = songSanitize(s.title[currentLang] || s.title.ko || "");
+      var vTitle = s.title.vi || "";
+      var searchTerms = (s.number + " " + vTitle + " " + tTitle + " " + (s.title.ko || "")).toLowerCase();
       html += '<button type="button" class="song-list-row" data-song-num="' + s.number + '" data-active="' + (isActive ? "true" : "false") + '" data-search="' + escapeAttr(searchTerms) + '">' +
         '<div class="song-badge">' + s.number + '</div>' +
         '<div class="song-item-info">' +
-          '<div class="song-item-vi vn">' + escapeHtml(s.title.vi) + '</div>' +
+          '<div class="song-item-vi vn">' + escapeHtml(vTitle) + '</div>' +
           '<div class="song-item-target">' + escapeHtml(tTitle) + '</div>' +
         '</div>' +
       '</button>';
@@ -7662,10 +7700,10 @@
           var mObj = (typeof SONG_MEANINGS !== "undefined" && SONG_MEANINGS[sNum]) || {};
           s.lines.forEach(function (l, idx) {
             var vi = (l.vi || "").trim();
-            if (!vi || vi.indexOf("(") === 0 || vi.indexOf("（") === 0) return;
-            var target = (l[currentLang] || l.ko || "").trim();
-            if (!target || target.indexOf("(") === 0 || target.indexOf("（") === 0) return;
-            var mn = (mObj[String(idx)] && mObj[String(idx)][currentLang]) || "";
+            if (!vi || isSongSectionMarker(vi)) return;
+            var target = songSanitize((l[currentLang] || l.ko || "").trim());
+            if (!target || isSongSectionMarker(target)) return;
+            var mn = songSanitize((mObj[String(idx)] && mObj[String(idx)][currentLang]) || "");
             out.push({
               vi: stripReviewListMarker(vi),
               kr: stripReviewListMarker(target),
@@ -7682,7 +7720,7 @@
       var songs = (typeof SONGS_DATA !== "undefined" && SONGS_DATA) || [];
       var maxNum = 0;
       songs.forEach(function (s) { if (s.number > maxNum) maxNum = s.number; });
-      if (!maxNum) maxNum = songs.length || 31;
+      if (!maxNum) maxNum = songs.length || 163;
       var scopes = ["all"];
       for (var start = 1; start <= maxNum; start += 20) {
         var end = Math.min(start + 19, maxNum);
