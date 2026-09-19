@@ -129,6 +129,31 @@
   // back to returning the Korean unchanged, same "never breaks, just shows Korean until
   // translated" philosophy as T() above -- this lets translation coverage grow incrementally.
   var I18N_UI = {
+  "이전 곡": {
+    "zh": "上一首",
+    "en": "Previous Song",
+    "ja": "前の曲"
+  },
+  "다음 곡": {
+    "zh": "下一首",
+    "en": "Next Song",
+    "ja": "次の曲"
+  },
+  "방향 전환": {
+    "zh": "切換方向",
+    "en": "Switch Direction",
+    "ja": "方向切替"
+  },
+  "의미": {
+    "zh": "意思",
+    "en": "Meaning",
+    "ja": "意味"
+  },
+  "눌러서 베트남어 보기": {
+    "zh": "點擊查看越南語",
+    "en": "Tap to see Vietnamese",
+    "ja": "タップしてベトナム語を見る"
+  },
   "전체 듣기": {
     "zh": "全部播放",
     "en": "Play all",
@@ -5537,6 +5562,12 @@
       var sb = document.querySelector('.subtab-btn[data-' + subAttr + '="' + subVal + '"]');
       if (sb) sb.click();
     }
+    if (anchor && anchor.indexOf('song-') === 0) {
+      var snum = parseInt(anchor.replace('song-', ''), 10);
+      if (snum && typeof renderCurrSongs === "function") {
+        renderCurrSongs(snum);
+      }
+    }
     // For links that point at one specific sub-section of a subtab's content (e.g. a particular
     // song, or the 기도 준비하기 block, inside 노래·기도) rather than the subtab as a whole --
     // scroll (and, if it's inside a collapsed .group-card, expand) straight to that element
@@ -6941,33 +6972,165 @@
     bindCurrSpeakBtns(root);
   }
 
-  function renderCurrSongs() {
+  var currentSelectedSong = 1;
+
+  function renderCurrSongs(targetSongNum) {
     var root = document.getElementById("curr-songs-root");
     if (!root) return;
-    var html = '<div class="p-section"><h3>' + TU("왕국 노래") + '</h3>';
-    KINGDOM_SONGS.forEach(function (s) {
-      var songLines = [];
-      s.verses.forEach(function (verse) { verse.forEach(function (l) { if (l.vi) songLines.push(l.kr ? [l.vi, T(l.kr)] : l.vi); }); });
-      html += '<div class="curr-card" data-anchor="song-' + s.number + '">' +
-        '<div class="curr-dict-head"><h3 style="margin:0">' + s.number + TU("번") + ' — ' + escapeHtml(T(s.title_kr)) + '</h3>' + readAllButtonHtml(songLines) + '</div>' +
-        '<div class="curr-culture-sub vn">' + escapeHtml(s.title_vi) + (s.scripture ? ' (' + escapeHtml(s.scripture) + ')' : '') + '</div>';
-      s.verses.forEach(function (verse) {
-        html += '<div class="talk-lines" style="margin-bottom:10px">';
-        verse.forEach(function (l) {
-          html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
-            '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-            (l.kr ? '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(T(l.kr)) + '</span>' +
-              '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(T(l.kr)) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
-              '</div>' : '') + '</div></div>';
+
+    var songs = (typeof SONGS_DATA !== "undefined" && SONGS_DATA) || [];
+    if (!songs.length) {
+      var htmlFallback = '<div class="p-section"><h3>' + TU("왕국 노래") + '</h3>';
+      KINGDOM_SONGS.forEach(function (s) {
+        var songLines = [];
+        s.verses.forEach(function (verse) { verse.forEach(function (l) { if (l.vi) songLines.push(l.kr ? [l.vi, T(l.kr)] : l.vi); }); });
+        htmlFallback += '<div class="curr-card" data-anchor="song-' + s.number + '">' +
+          '<div class="curr-dict-head"><h3 style="margin:0">' + s.number + TU("번") + ' — ' + escapeHtml(T(s.title_kr)) + '</h3>' + readAllButtonHtml(songLines) + '</div>' +
+          '<div class="curr-culture-sub vn">' + escapeHtml(s.title_vi) + (s.scripture ? ' (' + escapeHtml(s.scripture) + ')' : '') + '</div>';
+        s.verses.forEach(function (verse) {
+          htmlFallback += '<div class="talk-lines" style="margin-bottom:10px">';
+          verse.forEach(function (l) {
+            htmlFallback += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
+              '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
+              (l.kr ? '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(T(l.kr)) + '</span>' +
+                '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(T(l.kr)) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+                '</div>' : '') + '</div></div>';
+          });
+          htmlFallback += '</div>';
         });
-        html += '</div>';
+        htmlFallback += '</div>';
       });
-      html += '</div>';
+      htmlFallback += '</div>';
+      root.innerHTML = htmlFallback;
+      bindCurrSpeakBtns(root);
+      return;
+    }
+
+    if (typeof targetSongNum === "number") {
+      currentSelectedSong = targetSongNum;
+    }
+
+    // Find selected song or default to 1st song
+    var sel = songs.find(function (s) { return s.number === currentSelectedSong; });
+    if (!sel) {
+      sel = songs[0];
+      currentSelectedSong = sel ? sel.number : 1;
+    }
+
+    var sNum = String(sel.number);
+    var meaningsMap = (typeof SONG_MEANINGS !== "undefined" && SONG_MEANINGS[sNum]) || {};
+
+    var targetTitle = sel.title[currentLang] || sel.title.ko || "";
+    var targetScripture = (sel.scripture && (sel.scripture[currentLang] || sel.scripture.vi)) || "";
+
+    // Build lyric units and readAll lines
+    var songLines = [];
+    var lyricsHtml = "";
+    sel.lines.forEach(function (l, idx) {
+      var vi = (l.vi || "").trim();
+      if (!vi) return;
+      var target = (l[currentLang] || l.ko || "").trim();
+      var lineMeaning = (meaningsMap[String(idx)] && meaningsMap[String(idx)][currentLang]) || "";
+
+      songLines.push(target ? [vi, target] : vi);
+
+      lyricsHtml += '<div class="lyric-unit">';
+      // Line 1: Vietnamese Original (Prominent font-weight, largest)
+      lyricsHtml += '<div class="lyric-vi-row">' +
+        '<div class="lyric-vi vn">' + escapeHtml(vi) + '</div>' +
+        '<button type="button" class="speak-btn" data-speak="' + escapeAttr(vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+        '</div>';
+
+      // Line 2: Target official song lyric
+      if (target) {
+        lyricsHtml += '<div class="lyric-target-row">' +
+          '<div class="lyric-target">' + escapeHtml(target) + '</div>' +
+          '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(target) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+          '</div>';
+      }
+
+      // Line 3: Meaning (conditional, only if semantic divergence exists)
+      if (lineMeaning) {
+        lyricsHtml += '<div class="lyric-meaning-row">' +
+          '<div class="lyric-meaning"><span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(lineMeaning) + '</div>' +
+          '</div>';
+      }
+
+      lyricsHtml += '</div>';
+    });
+
+    var html = '<div class="p-section">';
+    html += '<div class="curr-dict-head"><h3 style="margin:0">' + TU("왕국 노래") + ' <span style="font-size:0.85em;color:var(--ink-soft);font-weight:600">(1~' + songs.length + TU("번") + ')</span></h3></div>';
+
+    // 1. Song selection list (31 songs)
+    html += '<div class="song-list-grid" id="song-list-grid">';
+    songs.forEach(function (s) {
+      var isActive = s.number === sel.number;
+      var tTitle = s.title[currentLang] || s.title.ko || "";
+      html += '<button type="button" class="song-item-btn" data-song-num="' + s.number + '" data-active="' + (isActive ? "true" : "false") + '">' +
+        '<div class="song-badge">' + s.number + '</div>' +
+        '<div class="song-item-info">' +
+          '<div class="song-item-vi vn">' + escapeHtml(s.title.vi) + '</div>' +
+          '<div class="song-item-target">' + escapeHtml(tTitle) + '</div>' +
+        '</div>' +
+        '</button>';
     });
     html += '</div>';
 
+    // 2. Selected song lyrics detail view
+    html += '<div class="song-detail-card" id="song-detail-card" data-anchor="song-' + sel.number + '">';
+    html += '<div class="song-detail-header">' +
+      '<div class="song-detail-title-group">' +
+        '<h3 class="song-detail-main-title">' + sel.number + TU("번") + ' — ' + escapeHtml(targetTitle) + '</h3>' +
+        '<div class="song-detail-sub-title vn">' + escapeHtml(sel.title.vi) + (targetScripture ? ' <span class="song-scripture-tag">' + escapeHtml(targetScripture) + '</span>' : '') + '</div>' +
+      '</div>' +
+      '<div class="song-detail-nav">' +
+        '<button type="button" class="song-nav-btn" id="song-prev-btn" aria-label="' + TU("이전 곡") + '">← ' + TU("이전 곡") + '</button>' +
+        readAllButtonHtml(songLines) +
+        '<button type="button" class="song-nav-btn" id="song-next-btn" aria-label="' + TU("다음 곡") + '">' + TU("다음 곡") + ' →</button>' +
+      '</div>' +
+    '</div>';
+
+    html += '<div class="song-lyrics-container">' + lyricsHtml + '</div>';
+    html += '</div>'; // close song-detail-card
+    html += '</div>'; // close p-section
+
     root.innerHTML = html;
     bindCurrSpeakBtns(root);
+
+    // Event handlers for song list and prev/next navigation
+    root.querySelectorAll(".song-item-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var num = parseInt(btn.dataset.songNum, 10);
+        if (num && num !== currentSelectedSong) {
+          renderCurrSongs(num);
+          var detailEl = document.getElementById("song-detail-card");
+          if (detailEl) detailEl.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    });
+
+    var prevBtn = root.querySelector("#song-prev-btn");
+    if (prevBtn) {
+      prevBtn.addEventListener("click", function () {
+        var curIdx = songs.findIndex(function (s) { return s.number === currentSelectedSong; });
+        var prevIdx = (curIdx - 1 + songs.length) % songs.length;
+        renderCurrSongs(songs[prevIdx].number);
+        var detailEl = document.getElementById("song-detail-card");
+        if (detailEl) detailEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+
+    var nextBtn = root.querySelector("#song-next-btn");
+    if (nextBtn) {
+      nextBtn.addEventListener("click", function () {
+        var curIdx = songs.findIndex(function (s) { return s.number === currentSelectedSong; });
+        var nextIdx = (curIdx + 1) % songs.length;
+        renderCurrSongs(songs[nextIdx].number);
+        var detailEl = document.getElementById("song-detail-card");
+        if (detailEl) detailEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
   }
 
   function renderCurrPrayer() {
@@ -7067,7 +7230,7 @@
         var m = String(it.kr).trim();
         if (!k || !m || seen[k]) return;
         seen[k] = true;
-        out.push({ vi: k, kr: m });
+        out.push({ vi: k, kr: m, meaning: it.meaning || "", songNo: it.songNo });
       });
       return out;
     }
@@ -7254,6 +7417,28 @@
           });
         });
         return dedupeByVi(out);
+      },
+      song: function () {
+        var out = [];
+        var data = (typeof SONGS_DATA !== "undefined" && SONGS_DATA) || [];
+        data.forEach(function (s) {
+          var sNum = String(s.number);
+          var mObj = (typeof SONG_MEANINGS !== "undefined" && SONG_MEANINGS[sNum]) || {};
+          s.lines.forEach(function (l, idx) {
+            var vi = (l.vi || "").trim();
+            if (!vi || vi.indexOf("(") === 0 || vi.indexOf("（") === 0) return;
+            var target = (l[currentLang] || l.ko || "").trim();
+            if (!target || target.indexOf("(") === 0 || target.indexOf("（") === 0) return;
+            var mn = (mObj[String(idx)] && mObj[String(idx)][currentLang]) || "";
+            out.push({
+              vi: stripReviewListMarker(vi),
+              kr: stripReviewListMarker(target),
+              meaning: mn,
+              songNo: s.number
+            });
+          });
+        });
+        return dedupeByVi(out);
       }
     };
 
@@ -7266,16 +7451,21 @@
       wizard: ["all", "main", "reftable", "talks", "neighbor"],
       vocab: ["all", "rhyme", "orderrev", "groups", "basic", "antonym", "freq", "theo", "names", "chain", "dialect"],
       sentence: ["all", "lff", "lpd", "wt"],
-      grammar: ["all", "lessons", "special", "sentences"]
+      grammar: ["all", "lessons", "special", "sentences"],
+      song: ["all", "1-10", "11-20", "21-31"]
     };
     var REVIEW_SCOPE_LABELS = {
       all: "전체", alphabet: "문자", tones: "성조", tonepairs: "연속 성조", nsdiff: "남북 발음",
       books: "성경", numbers: "숫자", time: "시간", days: "요일, 날짜", months: "달, 계절",
       main: "첫만남", reftable: "호칭", talks: "제공 연설", neighbor: "이웃 사람과의 대화", lff: "행복한 삶을 영원히", lpd: "사람들을 사랑하고 제자로",
       rhyme: "한자음", orderrev: "어순반대", groups: "동일음", basic: "기본", antonym: "반의", freq: "상용", theo: "신권", names: "인명", chain: "끝말", dialect: "남북 단어", wt: "파수대",
-      lessons: "예문", special: "특강", sentences: "범용 언어 생성표"
+      lessons: "예문", special: "특강", sentences: "범용 언어 생성표",
+      "1-10": "1~10번", "11-20": "11~20번", "21-31": "21~31번"
     };
     function reviewScopeLabel(scope) {
+      if (scope === "1-10") return currentLang === "zh" ? "1-10首" : currentLang === "en" ? "Songs 1-10" : currentLang === "ja" ? "1-10番" : "1~10번";
+      if (scope === "11-20") return currentLang === "zh" ? "11-20首" : currentLang === "en" ? "Songs 11-20" : currentLang === "ja" ? "11-20番" : "11~20번";
+      if (scope === "21-31") return currentLang === "zh" ? "21-31首" : currentLang === "en" ? "Songs 21-31" : currentLang === "ja" ? "21-31番" : "21~31번";
       if (scope !== "all") return TU(REVIEW_SCOPE_LABELS[scope] || scope);
       return currentLang === "zh" ? "全部" : currentLang === "en" ? "All" : currentLang === "ja" ? "すべて" : "전체";
     }
@@ -7327,6 +7517,12 @@
         if (scope === "lessons") { GRAMMAR_INTRO.forEach(function (s) { s.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); }); GRAMMAR_UNITS.forEach(function (u) { u.steps.forEach(function (s) { sentence(s.vi, Tstrict(s.kr)); }); }); }
         else if (scope === "special") { GX_MOTION_VERBS.forEach(function (v) { sentence(v.vi, Tstrict(v.kr)); }); GX_POS_EXAMPLES.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); GRAMMAR_DICT.forEach(function (g) { g.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); }); }
         else if (scope === "sentences") ["subjects", "modals", "verbs", "places"].forEach(function (k) { (SENT_GEN_BANK[k] || []).forEach(function (w) { sentence(w.vi, Tstrict(w.kr)); }); });
+      } else if (key === "song") {
+        var allSongs = POOL_BUILDERS.song ? POOL_BUILDERS.song() : [];
+        if (scope === "1-10") out = allSongs.filter(function (it) { return it.songNo >= 1 && it.songNo <= 10; });
+        else if (scope === "11-20") out = allSongs.filter(function (it) { return it.songNo >= 11 && it.songNo <= 20; });
+        else if (scope === "21-31") out = allSongs.filter(function (it) { return it.songNo >= 21 && it.songNo <= 31; });
+        else out = allSongs;
       }
       return dedupeByVi(out);
     }
@@ -7652,7 +7848,7 @@
       studyState.tabKey = key;
       studyState.scope = scope;
       studyState.pool = dedupeByVi((poolOverride || getPool(key, scope)).map(function (item) {
-        return { vi: stripReviewListMarker(item.vi), kr: stripReviewListMarker(item.kr) };
+        return { vi: stripReviewListMarker(item.vi), kr: stripReviewListMarker(item.kr), meaning: item.meaning || "", songNo: item.songNo };
       }));
       studyState.score = { correct: 0, total: 0 };
       studyState.current = null;
@@ -7724,6 +7920,7 @@
     function startFlash() {
       studyState.deck = shuffle(studyState.pool);
       studyState.idx = 0;
+      studyState.flashDir = studyState.flashDir || "vi-to-target";
       renderFlash();
     }
     function revealFlash() {
@@ -7732,23 +7929,35 @@
       var kr = document.getElementById("flash-kr");
       var hint = document.getElementById("flash-hint");
       if (kr) kr.style.display = "block";
+      var isRev = studyState.flashDir === "target-to-vi";
       if (hint) hint.textContent = TU("눌러서 가리기");
-      speakThenAdvance(item.kr, false, function () {
+      speakThenAdvance(isRev ? item.vi : item.kr, isRev, function () {
         var b = document.getElementById("flash-next"); if (b) b.click();
       });
     }
     function renderFlash() {
       var item = studyState.deck[studyState.idx];
       studyState.current = item;
+      var isRev = studyState.flashDir === "target-to-vi";
+      var frontText = isRev ? item.kr : item.vi;
+      var backText = isRev ? item.vi : item.kr;
+      var frontClass = isRev ? "study-flash-vi" : "study-flash-vi vn";
+      var backClass = isRev ? "study-flash-kr vn" : "study-flash-kr";
+      var flagEmoji = currentLang === "ko" ? "🇰🇷" : currentLang === "zh" ? "🇹🇼" : currentLang === "ja" ? "🇯🇵" : "🇺🇸";
+      var dirLabel = isRev ? (flagEmoji + " → 🇻🇳") : ("🇻🇳 → " + flagEmoji);
+
+      var meaningHtml = item.meaning ? '<div class="study-flash-meaning"><span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(item.meaning) + '</div>' : '';
+
       var html = '<div class="study-progress">' + (studyState.idx + 1) + ' / ' + studyState.deck.length + '</div>';
       html += '<div class="study-flash-card" id="flash-card">' +
-        '<div class="study-flash-vi vn">' + escapeHtml(item.vi) + '</div>' +
-        '<div class="study-flash-kr" id="flash-kr" style="display:none">' + escapeHtml(item.kr) + '</div>' +
-        '<div class="study-flash-hint" id="flash-hint">' + TU("눌러서 뜻 보기") + '</div></div>';
+        '<div class="' + frontClass + '">' + escapeHtml(frontText) + '</div>' +
+        '<div class="' + backClass + '" id="flash-kr" style="display:none">' + escapeHtml(backText) + meaningHtml + '</div>' +
+        '<div class="study-flash-hint" id="flash-hint">' + (isRev ? TU("눌러서 베트남어 보기") : TU("눌러서 뜻 보기")) + '</div></div>';
       html += '<div class="study-flash-nav">' +
         '<button class="study-nav-btn" id="flash-prev" aria-label="' + TU("이전 카드") + '">' + chevronIcon("left") + '</button>' +
         '<button class="speak-btn" id="flash-replay" aria-label="' + TU("다시 듣기") + '">' + speakIcon() + '</button>' +
         '<button class="study-nav-btn wide" id="flash-shuffle">' + shuffleGlyphIcon() + ' ' + TU("섞기") + '</button>' +
+        '<button class="study-nav-btn dir-toggle" id="flash-dir-toggle" title="' + TU("방향 전환") + '">' + dirLabel + '</button>' +
         '<button class="study-nav-btn" id="flash-next" aria-label="' + TU("다음 카드") + '">' + chevronIcon("right") + '</button></div>';
       bodyEl.innerHTML = html;
       document.getElementById("flash-card").addEventListener("click", function () {
@@ -7756,11 +7965,19 @@
         var hint = document.getElementById("flash-hint");
         var showing = kr.style.display !== "none";
         kr.style.display = showing ? "none" : "block";
-        hint.textContent = showing ? TU("눌러서 뜻 보기") : TU("눌러서 가리기");
-        // Revealing the meaning also reads it aloud (in the current UI language), same as
-        // 보기/듣기 4지선다 speak the correct answer when the learner answers -- always, not
-        // gated behind 자동 넘김/정답 시 다음 문제, so it plays before "다음 카드" is clicked.
-        if (!showing && !isMuted("meaning")) speakMeaning(item.kr);
+        hint.textContent = showing ? (isRev ? TU("눌러서 베트남어 보기") : TU("눌러서 뜻 보기")) : TU("눌러서 가리기");
+        if (!showing) {
+          if (isRev) {
+            if (!isMuted("vi")) speak(item.vi);
+          } else {
+            if (!isMuted("meaning")) speakMeaning(item.kr);
+          }
+        }
+      });
+      document.getElementById("flash-dir-toggle").addEventListener("click", function (e) {
+        e.stopPropagation();
+        studyState.flashDir = (studyState.flashDir === "target-to-vi") ? "vi-to-target" : "target-to-vi";
+        renderFlash();
       });
       document.getElementById("flash-prev").addEventListener("click", function (e) {
         e.stopPropagation();
@@ -7772,9 +7989,22 @@
         studyState.idx = (studyState.idx + 1) % studyState.deck.length;
         renderFlash();
       });
-      document.getElementById("flash-replay").addEventListener("click", function (e) { e.stopPropagation(); speak(item.vi); });
+      document.getElementById("flash-replay").addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (isRev) {
+          var krEl = document.getElementById("flash-kr");
+          if (krEl && krEl.style.display !== "none") speak(item.vi);
+          else speakMeaning(item.kr);
+        } else {
+          speak(item.vi);
+        }
+      });
       document.getElementById("flash-shuffle").addEventListener("click", function (e) { e.stopPropagation(); startFlash(); });
-      speakItemThenArm(item.vi, revealFlash);
+      if (isRev) {
+        speakPromptThenArm(item.kr, revealFlash);
+      } else {
+        speakItemThenArm(item.vi, revealFlash);
+      }
     }
 
     /* ---------- listening 4-choice quiz ---------- */
@@ -7835,6 +8065,12 @@
       var extra = document.createElement("div");
       extra.className = "study-mcq-reveal vn";
       extra.textContent = item.vi;
+      if (item.meaning) {
+        var mn = document.createElement("div");
+        mn.className = "study-meaning-sub";
+        mn.innerHTML = '<span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(item.meaning);
+        extra.appendChild(mn);
+      }
       bodyEl.appendChild(extra);
       speakThenAdvance(item.kr, false, nextMcq);
     }
@@ -7854,6 +8090,12 @@
       var extra = document.createElement("div");
       extra.className = "study-mcq-reveal vn";
       extra.textContent = item.vi;
+      if (item.meaning) {
+        var mn = document.createElement("div");
+        mn.className = "study-meaning-sub";
+        mn.innerHTML = '<span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(item.meaning);
+        extra.appendChild(mn);
+      }
       bodyEl.appendChild(extra);
       var actionRow = document.createElement("div");
       actionRow.className = "study-action-row";
@@ -7919,6 +8161,12 @@
         b.disabled = true;
         if (b.dataset.kr === item.kr) b.setAttribute("data-state", "correct");
       });
+      if (item.meaning) {
+        var mn = document.createElement("div");
+        mn.className = "study-meaning-sub";
+        mn.innerHTML = '<span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(item.meaning);
+        bodyEl.appendChild(mn);
+      }
       speakThenAdvance(item.kr, false, nextLook);
     }
     function answerLook(btn) {
@@ -7934,6 +8182,12 @@
       });
       var scoreEl = document.querySelector(".study-score");
       if (scoreEl) scoreEl.textContent = studyState.score.correct + ' / ' + studyState.score.total + ' ' + TU("맞음");
+      if (item.meaning) {
+        var mn = document.createElement("div");
+        mn.className = "study-meaning-sub";
+        mn.innerHTML = '<span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(item.meaning);
+        bodyEl.appendChild(mn);
+      }
       var actionRow = document.createElement("div");
       actionRow.className = "study-action-row";
       actionRow.innerHTML = '<button class="foot-btn primary" id="look-next">' + TU("다음 문제 →") + '</button>';
@@ -7986,7 +8240,8 @@
       var item = studyState.current;
       if (!item) return;
       var fb = document.getElementById("order-feedback");
-      if (fb) fb.innerHTML = '<div class="study-order-correct-answer">' + TU("정답: ") + escapeHtml(item.vi) + '</div>';
+      var meaningNote = item.meaning ? '<div class="study-meaning-sub"><span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(item.meaning) + '</div>' : '';
+      if (fb) fb.innerHTML = '<div class="study-order-correct-answer">' + TU("정답: ") + escapeHtml(item.vi) + '</div>' + meaningNote;
       speakThenAdvance(item.vi, true, nextOrder);
     }
     function renderOrderChips() {
@@ -8024,8 +8279,9 @@
       var userSeq = studyState.orderPlaced.map(function (p) { return p.t; });
       var correct = userSeq.join(" ") === studyState.orderTokens.join(" ");
       var fb = document.getElementById("order-feedback");
+      var meaningNote = item.meaning ? '<div class="study-meaning-sub"><span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(item.meaning) + '</div>' : '';
       if (correct) {
-        fb.innerHTML = '<div class="study-order-feedback ok">' + TU("정답이에요! 🎉") + '</div>';
+        fb.innerHTML = '<div class="study-order-feedback ok">' + TU("정답이에요! 🎉") + '</div>' + meaningNote;
         // A correct arrangement always ends the wait early: cancel the cold reveal timer and
         // speak+advance right away instead of leaving the learner staring at a solved card for
         // the rest of the interval.
@@ -8071,9 +8327,10 @@
         input.classList.remove("correct", "wrong");
         input.classList.add(correct ? "correct" : "wrong");
         var fb = document.getElementById("type-feedback");
-        fb.innerHTML = correct
+        var meaningNote = item.meaning ? '<div class="study-meaning-sub"><span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(item.meaning) + '</div>' : '';
+        fb.innerHTML = (correct
           ? '<div class="study-type-feedback ok">' + TU("정답이에요! 🎉") + '</div>'
-          : '<div class="study-type-feedback no">' + TU("다시 확인해 보세요.") + '</div><div class="study-type-answer vn">' + TU("정답: ") + escapeHtml(item.vi) + '</div>';
+          : '<div class="study-type-feedback no">' + TU("다시 확인해 보세요.") + '</div><div class="study-type-answer vn">' + TU("정답: ") + escapeHtml(item.vi) + '</div>') + meaningNote;
         answered = true;
         if (correct && (autoAdvanceEnabled || autoNextOnCorrect)) speakThenAdvance(item.vi, true, nextType);
         else if (!isMuted("vi")) speak(item.vi);
@@ -8098,7 +8355,8 @@
       var input = document.getElementById("type-input");
       var fb = document.getElementById("type-feedback");
       if (input) { input.classList.remove("correct"); input.classList.add("wrong"); input.disabled = true; }
-      if (fb) fb.innerHTML = '<div class="study-type-answer vn">' + TU("정답: ") + escapeHtml(item.vi) + '</div>';
+      var meaningNote = item.meaning ? '<div class="study-meaning-sub"><span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(item.meaning) + '</div>' : '';
+      if (fb) fb.innerHTML = '<div class="study-type-answer vn">' + TU("정답: ") + escapeHtml(item.vi) + '</div>' + meaningNote;
       speakThenAdvance(item.vi, true, nextType);
     }
   })();

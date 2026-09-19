@@ -133,5 +133,10 @@ const VOCAB_PLAN = {js_json(VOCAB_PLAN)};
 const WATCHTOWER_VOCAB = {js_json(WATCHTOWER_VOCAB)};
 """
 
+songs_data_js = open("songs_data.js", encoding="utf-8").read()
+song_meanings_js = open("song_meanings.js", encoding="utf-8").read()
+DATA_JS += "\n" + songs_data_js + "\n" + song_meanings_js + "\n"
+
 open("data_block.js", "w", encoding="utf-8").write(DATA_JS)
 print("data block bytes:", len(DATA_JS))
+

@@ -1176,6 +1176,215 @@
   .panel { scroll-margin-top: calc(var(--tabbar-h, 60px) + 16px); }
   .subtab-row { scroll-margin-top: var(--tabbar-h, 60px); }
 
+  /* ---------- Songs (노래) 3-tier lyric hierarchy & layout ---------- */
+  .song-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .song-item-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-s);
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--ink);
+    transition: all 0.15s ease;
+    box-shadow: var(--shadow);
+  }
+  .song-item-btn:hover {
+    background: var(--surface-2);
+    border-color: var(--accent);
+  }
+  .song-item-btn[data-active="true"] {
+    background: var(--accent-soft);
+    border-color: var(--accent);
+    outline: 2px solid var(--accent);
+  }
+  .song-badge {
+    flex: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .song-item-info {
+    flex: 1;
+    min-width: 0;
+  }
+  .song-item-vi {
+    font-family: var(--font-vn);
+    font-weight: 700;
+    font-size: 0.96rem;
+    color: var(--ink);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.35;
+  }
+  .song-item-target {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+  }
+  .song-detail-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-m);
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+  }
+  .song-detail-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .song-detail-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .song-nav-btn {
+    padding: 6px 12px;
+    border-radius: var(--radius-s);
+    border: 1.5px solid var(--border);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 0.82rem;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .song-nav-btn:hover {
+    background: var(--surface-2);
+    border-color: var(--accent);
+  }
+  .song-detail-title-group {
+    flex: 1;
+    min-width: 200px;
+  }
+  .song-detail-main-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin: 0 0 4px;
+    color: var(--ink);
+  }
+  .song-detail-sub-title {
+    font-family: var(--font-vn);
+    font-size: 0.96rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .song-scripture-tag {
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+    font-weight: 400;
+    margin-left: 4px;
+  }
+  /* Lyric unit: 3-tier visual hierarchy */
+  .lyric-unit {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 12px;
+    margin-bottom: 7px;
+    background: var(--chip-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-s);
+  }
+  .lyric-vi-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .lyric-vi {
+    font-family: var(--font-vn);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.48;
+    flex: 1;
+  }
+  .lyric-target-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 3px;
+  }
+  .lyric-target {
+    font-size: 0.91rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    line-height: 1.42;
+    flex: 1;
+  }
+  .lyric-meaning-row {
+    margin-top: 5px;
+    padding-top: 4px;
+    border-top: 1px dashed var(--border);
+  }
+  .lyric-meaning {
+    font-size: 0.82rem;
+    color: var(--warm);
+    line-height: 1.38;
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+  .lyric-meaning-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--accent-ink);
+    background: var(--warm);
+    border-radius: 4px;
+    padding: 1px 5px;
+    flex: none;
+  }
+  .study-meaning-sub {
+    font-size: 0.84rem;
+    color: var(--warm);
+    margin-top: 5px;
+    line-height: 1.35;
+    font-weight: 500;
+  }
+  .study-flash-meaning {
+    font-size: 0.86rem;
+    color: var(--warm);
+    margin-top: 8px;
+    padding-top: 6px;
+    border-top: 1px dashed var(--border);
+    line-height: 1.4;
+  }
+  .study-nav-btn.dir-toggle {
+    font-size: 0.8rem;
+    padding: 0 10px;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+  }
+
+
   @media (min-width: 700px) {
     .topbar { padding-block: 22px 14px; }
     .brand-logo { width: 64px; height: 64px; }
@@ -1828,6 +2037,7 @@
         <button class="subtab-btn" data-review="vocab" aria-selected="false" data-i18n="어휘">어휘</button>
         <button class="subtab-btn" data-review="sentence" aria-selected="true" data-i18n="문장">문장</button>
         <button class="subtab-btn" data-review="grammar" aria-selected="false" data-i18n="문법">문법</button>
+        <button class="subtab-btn" data-review="song" aria-selected="false" data-i18n="노래">노래</button>
       </div>
       <div class="subtab-row" id="review-scope-tabs" aria-label="복습 범위"></div>
       <div class="study-mode-tabs" id="study-mode-tabs" role="tablist">
