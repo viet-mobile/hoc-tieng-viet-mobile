@@ -2093,7 +2093,7 @@
     word-break: break-word;
     overflow-wrap: anywhere;
   }
-  /* English mode [복습][어휘] subtabs: horizontally wide shape instead of vertically narrow */
+  /* English mode [복습][어휘] subtabs: horizontally wide shape, 3 per row on mobile */
   body[data-app-lang="en"] #review-scope-tabs[data-scope-category="vocab"],
   body[data-app-lang="en"] #panel-vocab > .subtab-row {
     display: grid;
@@ -2104,27 +2104,29 @@
   body[data-app-lang="en"] #panel-vocab > .subtab-row .subtab-btn {
     min-height: 42px;
     height: auto;
-    padding: 8px 10px;
-    font-size: 0.75rem;
-    line-height: 1.25;
+    padding: 8px 6px;
+    font-size: 0.74rem;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
     white-space: normal;
-    word-break: keep-all;
+    word-break: break-word;
+    overflow-wrap: anywhere;
     text-align: center;
     display: inline-flex;
     align-items: center;
     justify-content: center;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 699px) {
     body[data-app-lang="en"] #review-scope-tabs[data-scope-category="vocab"],
     body[data-app-lang="en"] #panel-vocab > .subtab-row {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 5px;
     }
     body[data-app-lang="en"] #review-scope-tabs[data-scope-category="vocab"] .subtab-btn,
     body[data-app-lang="en"] #panel-vocab > .subtab-row .subtab-btn {
-      font-size: 0.72rem;
-      padding: 7px 6px;
-      min-height: 40px;
+      font-size: clamp(.60rem, 2.6vw, .72rem);
+      padding: 7px 3px;
+      min-height: 42px;
     }
   }
   /* The first subtab row starts directly under the primary navigation in every section. */
