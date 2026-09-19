@@ -2027,7 +2027,14 @@
     "en": "A handful of representative example sentences (5-8 per lesson) selected from the \"Love People—Make Disciples\" brochure—Lessons 1-12 plus Appendices A, B, C—aligned across 5 languages. This is a small curated selection for study, not the full text.",
     "ja": "「愛を込めて弟子を育てる」小冊子から選んだ、各課の代表的な例文です。レッスン1~12と付録a・b・cから5~8個ずつ選び、5つの言語で対照してあります。全文ではなく、学習用に厳選した例文です。"
   },
-  "부록": { "zh": "附錄", "en": "Appendix", "ja": "付録" }
+  "부록": { "zh": "附錄", "en": "Appendix", "ja": "付録" },
+  "노래 선택": { "zh": "選擇詩歌", "en": "Select Song", "ja": "歌の選択" },
+  "바둑판": { "zh": "網格", "en": "Grid", "ja": "グリッド" },
+  "목록": { "zh": "列表", "en": "List", "ja": "一覧" },
+  "곡 번호 또는 제목 검색... (예: 12 또는 사랑)": { "zh": "搜尋歌曲編號或標題... (例: 12 或 愛)", "en": "Search song number or title... (e.g. 12 or Love)", "ja": "番号や曲名で検索... (例: 12 または 愛)" },
+  "검색 결과가 없습니다.": { "zh": "找不到搜尋結果。", "en": "No results found.", "ja": "検索結果がありません。" },
+  "닫기": { "zh": "關閉", "en": "Close", "ja": "閉じる" },
+  "전체": { "zh": "全部", "en": "All", "ja": "すべて" }
 };
   function TU(ko) {
     if (!ko) return ko;
@@ -6973,6 +6980,9 @@
   }
 
   var currentSelectedSong = 1;
+  var songPickerViewMode = "grid"; // "grid" | "list"
+  var songPickerActiveRange = "all";
+  var songPickerSearchQuery = "";
 
   function renderCurrSongs(targetSongNum) {
     var root = document.getElementById("curr-songs-root");
@@ -7059,25 +7069,31 @@
       lyricsHtml += '</div>';
     });
 
+    var maxNum = 0;
+    songs.forEach(function (s) { if (s.number > maxNum) maxNum = s.number; });
+    if (!maxNum) maxNum = songs.length;
+
     var html = '<div class="p-section">';
-    html += '<div class="curr-dict-head"><h3 style="margin:0">' + TU("왕국 노래") + ' <span style="font-size:0.85em;color:var(--ink-soft);font-weight:600">(1~' + songs.length + TU("번") + ')</span></h3></div>';
 
-    // 1. Song selection list (31 songs)
-    html += '<div class="song-list-grid" id="song-list-grid">';
-    songs.forEach(function (s) {
-      var isActive = s.number === sel.number;
-      var tTitle = s.title[currentLang] || s.title.ko || "";
-      html += '<button type="button" class="song-item-btn" data-song-num="' + s.number + '" data-active="' + (isActive ? "true" : "false") + '">' +
-        '<div class="song-badge">' + s.number + '</div>' +
-        '<div class="song-item-info">' +
-          '<div class="song-item-vi vn">' + escapeHtml(s.title.vi) + '</div>' +
-          '<div class="song-item-target">' + escapeHtml(tTitle) + '</div>' +
+    // 1. Sticky Top Song Control Bar (JW Library style)
+    html += '<div class="song-ctrl-bar">' +
+      '<button type="button" class="song-ctrl-nav-btn" id="song-bar-prev" aria-label="' + TU("이전 곡") + '">' +
+        '<span class="song-ctrl-arrow">◀</span> <span class="song-ctrl-nav-text">' + TU("이전 곡") + '</span>' +
+      '</button>' +
+      '<button type="button" class="song-ctrl-picker-btn" id="song-picker-open-btn" aria-label="' + TU("노래 선택") + '">' +
+        '<div class="song-ctrl-badge">' + sel.number + '</div>' +
+        '<div class="song-ctrl-title-wrap">' +
+          '<div class="song-ctrl-main-title">' + escapeHtml(targetTitle) + '</div>' +
+          '<div class="song-ctrl-sub-title vn">' + escapeHtml(sel.title.vi) + '</div>' +
         '</div>' +
-        '</button>';
-    });
-    html += '</div>';
+        '<div class="song-ctrl-dropdown-arrow">▾</div>' +
+      '</button>' +
+      '<button type="button" class="song-ctrl-nav-btn" id="song-bar-next" aria-label="' + TU("다음 곡") + '">' +
+        '<span class="song-ctrl-nav-text">' + TU("다음 곡") + '</span> <span class="song-ctrl-arrow">▶</span>' +
+      '</button>' +
+    '</div>';
 
-    // 2. Selected song lyrics detail view
+    // 2. Selected song lyrics detail view (Prominently displayed right under the control bar)
     html += '<div class="song-detail-card" id="song-detail-card" data-anchor="song-' + sel.number + '">';
     html += '<div class="song-detail-header">' +
       '<div class="song-detail-title-group">' +
@@ -7085,23 +7101,265 @@
         '<div class="song-detail-sub-title vn">' + escapeHtml(sel.title.vi) + (targetScripture ? ' <span class="song-scripture-tag">' + escapeHtml(targetScripture) + '</span>' : '') + '</div>' +
       '</div>' +
       '<div class="song-detail-nav">' +
-        '<button type="button" class="song-nav-btn" id="song-prev-btn" aria-label="' + TU("이전 곡") + '">← ' + TU("이전 곡") + '</button>' +
         readAllButtonHtml(songLines) +
-        '<button type="button" class="song-nav-btn" id="song-next-btn" aria-label="' + TU("다음 곡") + '">' + TU("다음 곡") + ' →</button>' +
       '</div>' +
     '</div>';
 
     html += '<div class="song-lyrics-container">' + lyricsHtml + '</div>';
+
+    // Bottom Navigation
+    html += '<div class="song-detail-bottom-nav">' +
+      '<button type="button" class="song-nav-btn" id="song-bottom-prev-btn">← ' + TU("이전 곡") + '</button>' +
+      '<button type="button" class="song-nav-btn song-nav-center-btn" id="song-bottom-picker-btn">🎵 ' + TU("노래 선택") + '</button>' +
+      '<button type="button" class="song-nav-btn" id="song-bottom-next-btn">' + TU("다음 곡") + ' →</button>' +
+    '</div>';
+
     html += '</div>'; // close song-detail-card
+
+    // 3. Song Picker Modal / Bottom Sheet
+    html += '<div id="song-picker-modal" class="song-picker-modal" style="display:none;" aria-hidden="true">' +
+      '<div class="song-picker-backdrop" id="song-picker-backdrop"></div>' +
+      '<div class="song-picker-dialog" role="dialog" aria-modal="true">' +
+        // Modal Header
+        '<div class="song-picker-header">' +
+          '<div class="song-picker-title-group">' +
+            '<h3 class="song-picker-title">🎵 ' + TU("노래 선택") + ' <span class="song-picker-count">(1~' + maxNum + TU("번") + ')</span></h3>' +
+          '</div>' +
+          '<div class="song-picker-header-actions">' +
+            '<div class="song-view-toggle-group">' +
+              '<button type="button" class="song-view-toggle-btn" id="song-view-grid-btn" data-active="' + (songPickerViewMode === "grid" ? "true" : "false") + '" title="' + TU("바둑판") + '">' +
+                '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h7v7H3zm11 0h7v7h-7zM3 14h7v7H3zm11 0h7v7h-7z"/></svg>' +
+                '<span>' + TU("바둑판") + '</span>' +
+              '</button>' +
+              '<button type="button" class="song-view-toggle-btn" id="song-view-list-btn" data-active="' + (songPickerViewMode === "list" ? "true" : "false") + '" title="' + TU("목록") + '">' +
+                '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>' +
+                '<span>' + TU("목록") + '</span>' +
+              '</button>' +
+            '</div>' +
+            '<button type="button" class="song-picker-close-btn" id="song-picker-close-btn" aria-label="' + TU("닫기") + '">✕</button>' +
+          '</div>' +
+        '</div>' +
+
+        // Search Bar
+        '<div class="song-picker-search-bar">' +
+          '<span class="song-picker-search-icon">🔍</span>' +
+          '<input type="search" id="song-picker-search-input" class="song-picker-search-input" placeholder="' + escapeAttr(TU("곡 번호 또는 제목 검색... (예: 12 또는 사랑)")) + '" value="' + escapeAttr(songPickerSearchQuery) + '" autocomplete="off" />' +
+          '<button type="button" class="song-picker-search-clear" id="song-picker-search-clear" style="' + (songPickerSearchQuery ? "" : "display:none;") + '" aria-label="' + TU("지우기") + '">✕</button>' +
+        '</div>';
+
+    // Range Tabs
+    html += '<div class="song-picker-ranges" id="song-picker-ranges">';
+    html += '<button type="button" class="song-range-chip" data-range="all" data-active="' + (songPickerActiveRange === "all" ? "true" : "false") + '">' + TU("전체") + '</button>';
+    for (var rStart = 1; rStart <= maxNum; rStart += 20) {
+      var rEnd = Math.min(rStart + 19, maxNum);
+      var rCode = rStart + "-" + rEnd;
+      var rLabel = rStart + "~" + rEnd + TU("번");
+      if (currentLang === "zh") rLabel = rStart + "-" + rEnd + "首";
+      else if (currentLang === "en") rLabel = "Songs " + rStart + "-" + rEnd;
+      else if (currentLang === "ja") rLabel = rStart + "-" + rEnd + "番";
+      html += '<button type="button" class="song-range-chip" data-range="' + rCode + '" data-active="' + (songPickerActiveRange === rCode ? "true" : "false") + '">' + escapeHtml(rLabel) + '</button>';
+    }
+    html += '</div>';
+
+    // Picker Body (Grid & List)
+    html += '<div class="song-picker-body" id="song-picker-body">';
+
+    // Grid View
+    html += '<div class="song-picker-grid" id="song-picker-grid" style="' + (songPickerViewMode === "grid" ? "" : "display:none;") + '">';
+    songs.forEach(function (s) {
+      var isActive = s.number === sel.number;
+      var tTitle = s.title[currentLang] || s.title.ko || "";
+      var searchTerms = (s.number + " " + s.title.vi + " " + tTitle + " " + (s.title.ko || "")).toLowerCase();
+      html += '<button type="button" class="song-grid-chip" data-song-num="' + s.number + '" data-active="' + (isActive ? "true" : "false") + '" data-search="' + escapeAttr(searchTerms) + '" title="' + s.number + '. ' + escapeAttr(tTitle) + '">' +
+        s.number +
+      '</button>';
+    });
+    html += '</div>';
+
+    // List View
+    html += '<div class="song-picker-list" id="song-picker-list" style="' + (songPickerViewMode === "list" ? "" : "display:none;") + '">';
+    songs.forEach(function (s) {
+      var isActive = s.number === sel.number;
+      var tTitle = s.title[currentLang] || s.title.ko || "";
+      var searchTerms = (s.number + " " + s.title.vi + " " + tTitle + " " + (s.title.ko || "")).toLowerCase();
+      html += '<button type="button" class="song-list-row" data-song-num="' + s.number + '" data-active="' + (isActive ? "true" : "false") + '" data-search="' + escapeAttr(searchTerms) + '">' +
+        '<div class="song-badge">' + s.number + '</div>' +
+        '<div class="song-item-info">' +
+          '<div class="song-item-vi vn">' + escapeHtml(s.title.vi) + '</div>' +
+          '<div class="song-item-target">' + escapeHtml(tTitle) + '</div>' +
+        '</div>' +
+      '</button>';
+    });
+    html += '</div>';
+
+    html += '<div class="song-picker-empty" id="song-picker-empty" style="display:none;"><p>' + TU("검색 결과가 없습니다.") + '</p></div>';
+    html += '</div>'; // close song-picker-body
+
+    html += '</div></div>'; // close dialog & modal
     html += '</div>'; // close p-section
 
     root.innerHTML = html;
     bindCurrSpeakBtns(root);
 
-    // Event handlers for song list and prev/next navigation
-    root.querySelectorAll(".song-item-btn").forEach(function (btn) {
+    // Filter logic for modal
+    function filterSongPicker() {
+      var q = songPickerSearchQuery.trim().toLowerCase();
+      var range = songPickerActiveRange;
+      var rangeStart = 0, rangeEnd = 999999;
+      if (range !== "all") {
+        var parts = range.split("-");
+        rangeStart = parseInt(parts[0], 10) || 0;
+        rangeEnd = parseInt(parts[1], 10) || 999999;
+      }
+
+      var gridChips = root.querySelectorAll(".song-grid-chip");
+      var listRows = root.querySelectorAll(".song-list-row");
+      var visibleCount = 0;
+
+      gridChips.forEach(function (chip) {
+        var num = parseInt(chip.dataset.songNum, 10);
+        var inRange = (range === "all") || (num >= rangeStart && num <= rangeEnd);
+        var inSearch = (!q) || (chip.dataset.search.indexOf(q) >= 0);
+        var show = inRange && inSearch;
+        chip.style.display = show ? "" : "none";
+        if (show) visibleCount++;
+      });
+
+      listRows.forEach(function (row) {
+        var num = parseInt(row.dataset.songNum, 10);
+        var inRange = (range === "all") || (num >= rangeStart && num <= rangeEnd);
+        var inSearch = (!q) || (row.dataset.search.indexOf(q) >= 0);
+        row.style.display = (inRange && inSearch) ? "" : "none";
+      });
+
+      var emptyEl = document.getElementById("song-picker-empty");
+      if (emptyEl) emptyEl.style.display = (visibleCount === 0) ? "block" : "none";
+    }
+
+    function openSongPicker() {
+      var modal = document.getElementById("song-picker-modal");
+      if (!modal) return;
+      modal.style.display = "flex";
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      filterSongPicker();
+      var activeEl = modal.querySelector('.song-grid-chip[data-active="true"], .song-list-row[data-active="true"]');
+      if (activeEl) {
+        setTimeout(function () {
+          activeEl.scrollIntoView({ block: "nearest", behavior: "smooth" });
+        }, 80);
+      }
+    }
+
+    function closeSongPicker() {
+      var modal = document.getElementById("song-picker-modal");
+      if (!modal) return;
+      modal.style.display = "none";
+      modal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    // Bind modal trigger & close events
+    var pickerOpenBtn = root.querySelector("#song-picker-open-btn");
+    var bottomPickerBtn = root.querySelector("#song-bottom-picker-btn");
+    var pickerCloseBtn = root.querySelector("#song-picker-close-btn");
+    var pickerBackdrop = root.querySelector("#song-picker-backdrop");
+
+    if (pickerOpenBtn) pickerOpenBtn.addEventListener("click", openSongPicker);
+    if (bottomPickerBtn) bottomPickerBtn.addEventListener("click", openSongPicker);
+    if (pickerCloseBtn) pickerCloseBtn.addEventListener("click", closeSongPicker);
+    if (pickerBackdrop) pickerBackdrop.addEventListener("click", closeSongPicker);
+
+    // Escape key closes modal
+    function onEscKey(e) {
+      if (e.key === "Escape") closeSongPicker();
+    }
+    window.removeEventListener("keydown", onEscKey);
+    window.addEventListener("keydown", onEscKey);
+
+    // Prev / Next button navigation
+    function goToPrevSong() {
+      var curIdx = songs.findIndex(function (s) { return s.number === currentSelectedSong; });
+      var prevIdx = (curIdx - 1 + songs.length) % songs.length;
+      renderCurrSongs(songs[prevIdx].number);
+      var detailEl = document.getElementById("song-detail-card");
+      if (detailEl) detailEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    function goToNextSong() {
+      var curIdx = songs.findIndex(function (s) { return s.number === currentSelectedSong; });
+      var nextIdx = (curIdx + 1) % songs.length;
+      renderCurrSongs(songs[nextIdx].number);
+      var detailEl = document.getElementById("song-detail-card");
+      if (detailEl) detailEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    var barPrev = root.querySelector("#song-bar-prev");
+    var barNext = root.querySelector("#song-bar-next");
+    var bottomPrev = root.querySelector("#song-bottom-prev-btn");
+    var bottomNext = root.querySelector("#song-bottom-next-btn");
+
+    if (barPrev) barPrev.addEventListener("click", goToPrevSong);
+    if (barNext) barNext.addEventListener("click", goToNextSong);
+    if (bottomPrev) bottomPrev.addEventListener("click", goToPrevSong);
+    if (bottomNext) bottomNext.addEventListener("click", goToNextSong);
+
+    // View toggle buttons (Grid / List)
+    var gridBtn = root.querySelector("#song-view-grid-btn");
+    var listBtn = root.querySelector("#song-view-list-btn");
+    var gridContainer = root.querySelector("#song-picker-grid");
+    var listContainer = root.querySelector("#song-picker-list");
+
+    if (gridBtn && listBtn && gridContainer && listContainer) {
+      gridBtn.addEventListener("click", function () {
+        songPickerViewMode = "grid";
+        gridBtn.dataset.active = "true";
+        listBtn.dataset.active = "false";
+        gridContainer.style.display = "";
+        listContainer.style.display = "none";
+      });
+      listBtn.addEventListener("click", function () {
+        songPickerViewMode = "list";
+        gridBtn.dataset.active = "false";
+        listBtn.dataset.active = "true";
+        gridContainer.style.display = "none";
+        listContainer.style.display = "";
+      });
+    }
+
+    // Search input handling
+    var searchInput = root.querySelector("#song-picker-search-input");
+    var searchClear = root.querySelector("#song-picker-search-clear");
+    if (searchInput) {
+      searchInput.addEventListener("input", function () {
+        songPickerSearchQuery = searchInput.value;
+        if (searchClear) searchClear.style.display = songPickerSearchQuery ? "" : "none";
+        filterSongPicker();
+      });
+    }
+    if (searchClear) {
+      searchClear.addEventListener("click", function () {
+        songPickerSearchQuery = "";
+        if (searchInput) { searchInput.value = ""; searchInput.focus(); }
+        searchClear.style.display = "none";
+        filterSongPicker();
+      });
+    }
+
+    // Range filter chips
+    root.querySelectorAll(".song-range-chip").forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        root.querySelectorAll(".song-range-chip").forEach(function (c) { c.dataset.active = "false"; });
+        chip.dataset.active = "true";
+        songPickerActiveRange = chip.dataset.range;
+        filterSongPicker();
+      });
+    });
+
+    // Song items selection (in Grid and List)
+    root.querySelectorAll(".song-grid-chip, .song-list-row").forEach(function (btn) {
       btn.addEventListener("click", function () {
         var num = parseInt(btn.dataset.songNum, 10);
+        closeSongPicker();
         if (num && num !== currentSelectedSong) {
           renderCurrSongs(num);
           var detailEl = document.getElementById("song-detail-card");
@@ -7109,28 +7367,6 @@
         }
       });
     });
-
-    var prevBtn = root.querySelector("#song-prev-btn");
-    if (prevBtn) {
-      prevBtn.addEventListener("click", function () {
-        var curIdx = songs.findIndex(function (s) { return s.number === currentSelectedSong; });
-        var prevIdx = (curIdx - 1 + songs.length) % songs.length;
-        renderCurrSongs(songs[prevIdx].number);
-        var detailEl = document.getElementById("song-detail-card");
-        if (detailEl) detailEl.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    }
-
-    var nextBtn = root.querySelector("#song-next-btn");
-    if (nextBtn) {
-      nextBtn.addEventListener("click", function () {
-        var curIdx = songs.findIndex(function (s) { return s.number === currentSelectedSong; });
-        var nextIdx = (curIdx + 1) % songs.length;
-        renderCurrSongs(songs[nextIdx].number);
-        var detailEl = document.getElementById("song-detail-card");
-        if (detailEl) detailEl.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    }
   }
 
   function renderCurrPrayer() {
@@ -7442,6 +7678,19 @@
       }
     };
 
+    function getSongReviewScopes() {
+      var songs = (typeof SONGS_DATA !== "undefined" && SONGS_DATA) || [];
+      var maxNum = 0;
+      songs.forEach(function (s) { if (s.number > maxNum) maxNum = s.number; });
+      if (!maxNum) maxNum = songs.length || 31;
+      var scopes = ["all"];
+      for (var start = 1; start <= maxNum; start += 20) {
+        var end = Math.min(start + 19, maxNum);
+        scopes.push(start + "-" + end);
+      }
+      return scopes;
+    }
+
     // The review panel mirrors the learnable subtabs of each main section.  Utility/settings
     // panes (voice settings and the sentence generator) intentionally aren't listed: they do
     // not contain a fixed set of question-and-answer study items to quiz.
@@ -7452,20 +7701,24 @@
       vocab: ["all", "rhyme", "orderrev", "groups", "basic", "antonym", "freq", "theo", "names", "chain", "dialect"],
       sentence: ["all", "lff", "lpd", "wt"],
       grammar: ["all", "lessons", "special", "sentences"],
-      song: ["all", "1-10", "11-20", "21-31"]
+      song: ["all"]
     };
     var REVIEW_SCOPE_LABELS = {
       all: "전체", alphabet: "문자", tones: "성조", tonepairs: "연속 성조", nsdiff: "남북 발음",
       books: "성경", numbers: "숫자", time: "시간", days: "요일, 날짜", months: "달, 계절",
       main: "첫만남", reftable: "호칭", talks: "제공 연설", neighbor: "이웃 사람과의 대화", lff: "행복한 삶을 영원히", lpd: "사람들을 사랑하고 제자로",
       rhyme: "한자음", orderrev: "어순반대", groups: "동일음", basic: "기본", antonym: "반의", freq: "상용", theo: "신권", names: "인명", chain: "끝말", dialect: "남북 단어", wt: "파수대",
-      lessons: "예문", special: "특강", sentences: "범용 언어 생성표",
-      "1-10": "1~10번", "11-20": "11~20번", "21-31": "21~31번"
+      lessons: "예문", special: "특강", sentences: "범용 언어 생성표"
     };
     function reviewScopeLabel(scope) {
-      if (scope === "1-10") return currentLang === "zh" ? "1-10首" : currentLang === "en" ? "Songs 1-10" : currentLang === "ja" ? "1-10番" : "1~10번";
-      if (scope === "11-20") return currentLang === "zh" ? "11-20首" : currentLang === "en" ? "Songs 11-20" : currentLang === "ja" ? "11-20番" : "11~20번";
-      if (scope === "21-31") return currentLang === "zh" ? "21-31首" : currentLang === "en" ? "Songs 21-31" : currentLang === "ja" ? "21-31番" : "21~31번";
+      var m = scope && scope.match(/^(\d+)-(\d+)$/);
+      if (m) {
+        var s1 = m[1], s2 = m[2];
+        if (currentLang === "zh") return s1 + "-" + s2 + "首";
+        if (currentLang === "en") return "Songs " + s1 + "-" + s2;
+        if (currentLang === "ja") return s1 + "-" + s2 + "番";
+        return s1 + "~" + s2 + "번";
+      }
       if (scope !== "all") return TU(REVIEW_SCOPE_LABELS[scope] || scope);
       return currentLang === "zh" ? "全部" : currentLang === "en" ? "All" : currentLang === "ja" ? "すべて" : "전체";
     }
@@ -7519,10 +7772,14 @@
         else if (scope === "sentences") ["subjects", "modals", "verbs", "places"].forEach(function (k) { (SENT_GEN_BANK[k] || []).forEach(function (w) { sentence(w.vi, Tstrict(w.kr)); }); });
       } else if (key === "song") {
         var allSongs = POOL_BUILDERS.song ? POOL_BUILDERS.song() : [];
-        if (scope === "1-10") out = allSongs.filter(function (it) { return it.songNo >= 1 && it.songNo <= 10; });
-        else if (scope === "11-20") out = allSongs.filter(function (it) { return it.songNo >= 11 && it.songNo <= 20; });
-        else if (scope === "21-31") out = allSongs.filter(function (it) { return it.songNo >= 21 && it.songNo <= 31; });
-        else out = allSongs;
+        var m = scope ? scope.match(/^(\d+)-(\d+)$/) : null;
+        if (m) {
+          var startNum = parseInt(m[1], 10);
+          var endNum = parseInt(m[2], 10);
+          out = allSongs.filter(function (it) { return it.songNo >= startNum && it.songNo <= endNum; });
+        } else {
+          out = allSongs;
+        }
       }
       return dedupeByVi(out);
     }
@@ -7817,7 +8074,7 @@
 
     function renderReviewScopes(key, selectedScope) {
       if (!reviewScopeEl) return;
-      var scopes = REVIEW_SCOPES[key] || ["all"];
+      var scopes = (key === "song" ? getSongReviewScopes() : (REVIEW_SCOPES[key] || ["all"]));
       reviewScopeEl.dataset.scopeCategory = key;
       reviewScopeEl.innerHTML = scopes.map(function (scope) {
         return '<button type="button" class="subtab-btn" data-review-scope="' + escapeAttr(scope) +
