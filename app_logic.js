@@ -313,6 +313,16 @@
     "en": "Culture",
     "ja": "文化"
   },
+  "노래": {
+    "zh": "詩歌",
+    "en": "Songs",
+    "ja": "歌"
+  },
+  "기도": {
+    "zh": "禱告",
+    "en": "Prayer",
+    "ja": "祈り"
+  },
   "노래·기도": {
     "zh": "歌曲‧禱告",
     "en": "Songs & Prayer",
@@ -2997,15 +3007,41 @@
   // call, and deferring the actual speak() by a tick after cancel(), works around the known race
   // where speak() issued synchronously right after cancel() is dropped; the follow-up check
   // retries once if the engine never actually started.
+  window.__activeUtterances = window.__activeUtterances || [];
   function robustSpeak(opts, onDone) {
     try {
-      if (!("speechSynthesis" in window)) { if (onDone) onDone(); return; }
+      if (!("speechSynthesis" in window) || !opts || !opts.text) { if (onDone) onDone(); return; }
       var synth = window.speechSynthesis;
       if (speakRetryTimer) { clearTimeout(speakRetryTimer); speakRetryTimer = null; }
       var doneCalled = false;
-      function callDone() { if (doneCalled) return; doneCalled = true; if (onDone) onDone(); }
+      var watchdogTimer = null;
+      var currentU = null;
+
+      function callDone() {
+        if (doneCalled) return;
+        doneCalled = true;
+        if (watchdogTimer) { clearTimeout(watchdogTimer); watchdogTimer = null; }
+        if (currentU) {
+          var idx = window.__activeUtterances.indexOf(currentU);
+          if (idx !== -1) window.__activeUtterances.splice(idx, 1);
+          currentU = null;
+        }
+        if (onDone) onDone();
+      }
+
+      var textLen = (opts.text ? String(opts.text).length : 10);
+      var estMs = Math.max(3500, textLen * 160);
+      watchdogTimer = setTimeout(callDone, estMs);
+
       try { if (synth.paused) synth.resume(); } catch (e1) { /* no-op */ }
-      synth.cancel();
+      var hadActiveSpeech = false;
+      try {
+        if (synth.speaking || synth.pending) {
+          hadActiveSpeech = true;
+          synth.cancel();
+        }
+      } catch (eCancel) { /* no-op */ }
+
       var buildUtterance = function () {
         var u = new SpeechSynthesisUtterance(opts.text);
         if (opts.lang) u.lang = opts.lang;
@@ -3013,32 +3049,28 @@
         if (opts.voice) { u.voice = opts.voice; u.lang = opts.voice.lang; }
         u.onend = callDone;
         u.onerror = callDone;
+        window.__activeUtterances.push(u);
         return u;
       };
+
+      var delay = hadActiveSpeech ? 30 : 10;
       speakRetryTimer = setTimeout(function () {
         speakRetryTimer = null;
         try {
-          var u1 = buildUtterance();
+          currentU = buildUtterance();
           var started = false;
-          u1.onstart = function () { started = true; };
-          synth.speak(u1);
-          // If the engine silently dropped the request (queue stuck from a previous stall),
-          // force a hard reset and retry once. Checking synth.speaking too (not just the
-          // onstart flag) matters: onstart can fire well after audio actually starts on some
-          // voices/platforms, and treating that lag as "dropped" cancelled u1 mid-word and
-          // re-queued an identical utterance -- audibly repeating the first word/syllable in
-          // flashcard, 보기/듣기 4지선다, and every other caller. synth.cancel() right before
-          // this speak() call already clears any truly stuck queue from before, so
-          // synth.speaking===true here reliably means u1 itself is genuinely playing.
+          currentU.onstart = function () { started = true; };
+          synth.speak(currentU);
           setTimeout(function () {
-            if (started || synth.speaking || !("speechSynthesis" in window)) return;
+            if (started || synth.speaking || !("speechSynthesis" in window) || doneCalled) return;
             try {
               synth.cancel();
-              synth.speak(buildUtterance());
+              currentU = buildUtterance();
+              synth.speak(currentU);
             } catch (e3) { callDone(); }
           }, 350);
         } catch (e2) { callDone(); /* no-op: speech not available */ }
-      }, 30);
+      }, delay);
     } catch (e) { if (onDone) onDone(); /* no-op: speech not available */ }
   }
   // Speaks text ONE time (Vietnamese, current speak-voice) and calls onOnceDone when that single
@@ -3242,11 +3274,12 @@
   // the very stall this nudge exists to prevent -- 전체 듣기 read the first entry's Vietnamese
   // and meaning fine, then went silent forever right around the first 5s nudge. Since Android
   // doesn't have WebKit's stall bug in the first place, the fix is simply to never nudge there.
-  var IS_ANDROID_UA = /Android/i.test(navigator.userAgent || "");
+  var IS_MOBILE_UA = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent || "") ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   var readAllKeepAliveTimer = null;
   function startReadAllKeepAlive() {
     stopReadAllKeepAlive();
-    if (!("speechSynthesis" in window) || IS_ANDROID_UA) return;
+    if (!("speechSynthesis" in window) || IS_MOBILE_UA) return;
     readAllKeepAliveTimer = setInterval(function () {
       if (!readAllState.id) { stopReadAllKeepAlive(); return; }
       try {
@@ -3262,6 +3295,8 @@
     stopReadAllKeepAlive();
     if (readAllState.btn) setReadAllBtnPlaying(readAllState.btn, false);
     readAllState = { id: null, texts: [], idx: -1, btn: null, token: readAllState.token + 1 };
+    window.__activeUtterances = [];
+    try { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); } catch (e) { /* no-op */ }
   }
 
   var READALL_LANG_TAG = { ko: "ko-KR", zh: "zh-TW", en: "en-US", ja: "ja-JP" };
@@ -3308,6 +3343,13 @@
   function startReadAllSequence(id, btn) {
     var texts = READALL_REGISTRY[id] || [];
     if (!texts.length) return;
+    try {
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if (AC) {
+        if (!window.__globalAudioCtx) window.__globalAudioCtx = new AC();
+        if (window.__globalAudioCtx.state === "suspended") window.__globalAudioCtx.resume();
+      }
+    } catch (e0) { /* no-op */ }
     try { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); } catch (e1) { /* no-op */ }
     if (speakRetryTimer) { clearTimeout(speakRetryTimer); speakRetryTimer = null; }
     var token = readAllState.token + 1;
@@ -6899,8 +6941,8 @@
     bindCurrSpeakBtns(root);
   }
 
-  function renderCurrPrayer() {
-    var root = document.getElementById("curr-prayer-root");
+  function renderCurrSongs() {
+    var root = document.getElementById("curr-songs-root");
     if (!root) return;
     var html = '<div class="p-section"><h3>' + TU("왕국 노래") + '</h3>';
     KINGDOM_SONGS.forEach(function (s) {
@@ -6924,8 +6966,15 @@
     });
     html += '</div>';
 
+    root.innerHTML = html;
+    bindCurrSpeakBtns(root);
+  }
+
+  function renderCurrPrayer() {
+    var root = document.getElementById("curr-prayer-root");
+    if (!root) return;
     var prayerLines = PRAYER_TEMPLATE.lines.map(function (l) { return [l.vi, T(l.kr)]; });
-    html += '<div class="p-section" data-anchor="prayer-prep"><div class="curr-dict-head"><h3 style="margin:0">' + TU("기도 준비하기") + '</h3>' + readAllButtonHtml(prayerLines) + '</div><div class="curr-card">';
+    var html = '<div class="p-section" data-anchor="prayer-prep"><div class="curr-dict-head"><h3 style="margin:0">' + TU("기도 준비하기") + '</h3>' + readAllButtonHtml(prayerLines) + '</div><div class="curr-card">';
     if (PRAYER_TEMPLATE.note) html += '<p>' + escapeHtml(T(PRAYER_TEMPLATE.note)) + '</p>';
     html += '<div class="talk-lines">';
     PRAYER_TEMPLATE.lines.forEach(function (l) {
@@ -6973,6 +7022,7 @@
     var panes = {
       week16: document.getElementById("curr-week16-pane"),
       culture: document.getElementById("curr-culture-pane"),
+      song: document.getElementById("curr-song-pane"),
       prayer: document.getElementById("curr-prayer-pane"),
       guide: document.getElementById("curr-guide-pane"),
     };
@@ -6981,12 +7031,15 @@
       btn.addEventListener("click", function () {
         document.querySelectorAll(".subtab-btn[data-curriculum]").forEach(function (b) { b.setAttribute("aria-selected", "false"); });
         btn.setAttribute("aria-selected", "true");
-        Object.keys(panes).forEach(function (k) { panes[k].style.display = k === btn.dataset.curriculum ? "" : "none"; });
+        Object.keys(panes).forEach(function (k) {
+          if (panes[k]) panes[k].style.display = k === btn.dataset.curriculum ? "" : "none";
+        });
       });
     });
 
     renderCurrWeek16();
     renderCurrCulture();
+    renderCurrSongs();
     renderCurrPrayer();
     renderCurrGuide();
   })();
@@ -9644,6 +9697,7 @@
     renderPron();
     renderCurrWeek16();
     renderCurrCulture();
+    renderCurrSongs();
     renderCurrPrayer();
     renderCurrGuide();
     renderCurrSentences();

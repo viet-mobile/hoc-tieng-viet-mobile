@@ -199,14 +199,16 @@ USAGE_GUIDE_TABS = [
                       'en': 'A collection of short articles introducing Vietnamese culture. There\'s nothing to '
                             'configure here -- just read.',
                       'ja': 'ベトナムの文化を紹介する短い読み物集です。特別な設定は不要で、読むだけのタブです。'}},
-            {'name': {'ko': '노래·기도', 'zh': '詩歌、禱告', 'en': 'Songs & Prayer', 'ja': '歌・祈り'},
-             'body': {'ko': '왕국 노래 가사를 절별로 들으며 따라 읽을 수 있고, 노래별 전체 듣기도 지원해요. 기도 준비하기에는 기도 예문과 '
-                             '발음 듣기 버튼, 전체 듣기 기능이 있어요.',
-                      'zh': '可以逐節聆聽王國詩歌歌詞並跟讀，也支援按首曲子整首播放。「準備禱告」中則有禱告例句、發音播放按鈕與全部播放功能。',
-                      'en': 'Listen to Kingdom song lyrics verse by verse and read along, with a "Play all" option '
-                            'per song. "Prepare a Prayer" offers sample prayer lines with pronunciation buttons and '
-                            'its own "Play all".',
-                      'ja': '王国の歌の歌詞を節ごとに聞きながら一緒に読むことができ、曲ごとの全部再生にも対応しています。「祈りの準備」には祈りの例文と発音再生ボタン、全部再生機能があります。'}},
+            {'name': {'ko': '노래', 'zh': '詩歌', 'en': 'Songs', 'ja': '歌'},
+             'body': {'ko': '왕국 노래 가사를 절별로 들으며 따라 읽을 수 있고, 노래별 전체 듣기도 지원해요.',
+                      'zh': '可以逐節聆聽王國詩歌歌詞並跟讀，也支援按首曲子整首播放。',
+                      'en': 'Listen to Kingdom song lyrics verse by verse and read along, with a "Play all" option per song.',
+                      'ja': '王国の歌の歌詞を節ごとに聞きながら一緒に読むことができ、曲ごとの全部再生にも対応しています。'}},
+            {'name': {'ko': '기도', 'zh': '禱告', 'en': 'Prayer', 'ja': '祈り'},
+             'body': {'ko': '기도 준비하기에는 기도 예문과 발음 듣기 버튼, 전체 듣기 기능이 있어요.',
+                      'zh': '「準備禱告」中收錄了禱告例句、發音播放按鈕與全部播放功能。',
+                      'en': '"Prepare a Prayer" offers sample prayer lines with pronunciation buttons and its own "Play all".',
+                      'ja': '「祈りの準備」には祈りの例文と発音再生ボタン、全部再生機能があります。'}},
             {'name': {'ko': '사용설명', 'zh': '使用說明', 'en': 'Usage Guide', 'ja': '使い方ガイド'},
              'body': {'ko': '지금 보고 계신 이 안내 화면이에요. 언제든 다시 돌아와 각 탭·소분류·설정과 버튼의 쓰임을 확인할 수 있어요.',
                       'zh': '這裡正是您現在看到的這份說明畫面。您隨時可以回來查看各分頁、小分類、設定與按鈕的用途。',

@@ -1351,7 +1351,9 @@
     box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 12%, transparent);
   }
   .subtab-btn:hover { background: color-mix(in srgb, var(--accent) 16%, var(--surface)); }
-  #panel-curriculum > .subtab-row, #panel-grammar > .subtab-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #panel-curriculum > .subtab-row { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  #panel-curriculum > .subtab-row .subtab-btn { font-size: clamp(.62rem, 2.5vw, .82rem); padding-inline: 2px; }
+  #panel-grammar > .subtab-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   #panel-wizard > .subtab-row, #panel-bible > .subtab-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   /* 발음/성경/대화/어휘/문장/문법: always 6 across in a single row, even on narrow phones. */
   #panel-review > .subtab-row:first-child { grid-template-columns: repeat(6, minmax(0, 1fr)); }
@@ -1365,7 +1367,8 @@
   #review-scope-tabs[data-scope-category="bible"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   #review-scope-tabs[data-scope-category="grammar"], #review-scope-tabs[data-scope-category="sentence"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   @media (min-width: 700px) {
-    #panel-curriculum > .subtab-row, #panel-grammar > .subtab-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    #panel-curriculum > .subtab-row { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    #panel-grammar > .subtab-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     #panel-wizard > .subtab-row, #panel-bible > .subtab-row { grid-template-columns: repeat(6, minmax(0, 1fr)); }
     #panel-pron > .subtab-row { grid-template-columns: repeat(7, minmax(0, 1fr)); }
     #panel-review > .subtab-row:first-child { grid-template-columns: repeat(6, minmax(0, 1fr)); }
@@ -1465,13 +1468,16 @@
       <div class="subtab-row">
         <button class="subtab-btn" data-curriculum="week16" aria-selected="true" data-i18n="16주 과정">16주 과정</button>
         <button class="subtab-btn" data-curriculum="culture" aria-selected="false" data-i18n="문화">문화</button>
-        <button class="subtab-btn" data-curriculum="prayer" aria-selected="false" data-i18n="노래·기도">노래·기도</button>
+        <button class="subtab-btn" data-curriculum="song" aria-selected="false" data-i18n="노래">노래</button>
+        <button class="subtab-btn" data-curriculum="prayer" aria-selected="false" data-i18n="기도">기도</button>
         <button class="subtab-btn" data-curriculum="guide" aria-selected="false" data-i18n="사용설명">사용설명</button>
       </div>
 
       <div id="curr-week16-pane"><div id="curr-week16-root"></div></div>
 
       <div id="curr-culture-pane" style="display:none"><div id="curr-culture-root"></div></div>
+
+      <div id="curr-song-pane" style="display:none"><div id="curr-songs-root"></div></div>
 
       <div id="curr-prayer-pane" style="display:none"><div id="curr-prayer-root"></div></div>
 
