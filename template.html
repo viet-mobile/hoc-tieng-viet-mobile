@@ -211,7 +211,8 @@
   .brand { display: flex; align-items: center; gap: 11px; margin-bottom: 4px; }
   .brand-logo { width: 56px; height: 56px; object-fit: contain; display: block; flex: none; }
   .brand h1 { font-size: 1.1rem; font-weight: 800; letter-spacing: -0.01em; }
-  .lang-switch { display: flex; gap: 3px; flex: none; background: var(--accent-soft); border-radius: 8px 0 8px 0; padding: 3px; }
+  .lang-switch { display: flex; align-items: center; flex: none; }
+  .lang-switch-buttons { display: flex; gap: 3px; background: var(--accent-soft); border-radius: 8px 0 8px 0; padding: 3px; }
   .lang-btn {
     border: none; background: transparent; color: var(--ink-soft); font-family: inherit;
     font-size: 0.64rem; font-weight: 700; padding: 5px 6px; border-radius: 6px 0 6px 0; cursor: pointer;
@@ -219,6 +220,20 @@
   }
   .lang-btn[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
   .lang-btn:hover:not([aria-pressed="true"]) { color: var(--ink); }
+  .lang-select-wrap { display: none; }
+  .lang-select {
+    min-height: 32px;
+    border: 1.5px solid var(--accent);
+    border-radius: 8px 0 8px 0;
+    background: var(--surface);
+    color: var(--ink);
+    font: 700 0.8rem var(--font-kr);
+    padding: 3px 8px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: var(--shadow-sm);
+  }
+  .lang-select:focus-visible { outline: 2px solid var(--accent); }
   @media (max-width: 420px) {
     .lang-btn { font-size: 0.58rem; padding: 4px 4px; }
   }
@@ -1946,8 +1961,10 @@
     .brand { gap: 5px; min-width: 0; }
     .brand-logo { width: 38px; height: 38px; }
     .brand h1 { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: clamp(.72rem, 2.6vw, .96rem); }
-    .lang-switch { margin: 0; padding: 2px; gap: 0; align-self: start; }
-    .lang-btn { min-height: 34px; padding: 4px 3px; font-size: clamp(.51rem, 2vw, .67rem); }
+    .lang-switch { margin: 0; padding: 0; gap: 0; align-self: start; background: transparent; }
+    .lang-switch-buttons { display: none; }
+    .lang-select-wrap { display: block; }
+    .lang-select { min-height: 32px; font-size: 0.78rem; padding: 3px 6px; }
 
     /* Eight primary tabs fit the viewport; deeper tabs wrap in place. */
     .tabs { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 0; overflow: visible; padding-inline: 4px; }
@@ -1955,7 +1972,7 @@
     .subtab-row { flex-wrap: wrap; overflow: visible; gap: 2px 4px; }
     .stage-nav { flex-wrap: wrap; overflow-x: visible; }
     .subtab-btn { min-height: 38px; padding: 6px 9px; font-size: .78rem; }
-    #panel-review > .subtab-row:first-child { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 2px; }
+    #panel-review > .subtab-row:first-child { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 2px; }
     #panel-review > .subtab-row:first-child .subtab-btn { min-width: 0; width: 100%; padding-inline: 0; }
     #review-scope-tabs .subtab-btn { white-space: normal; text-align: center; word-break: keep-all; }
 
@@ -2252,11 +2269,23 @@
             <h1 id="app-title" data-i18n="베트남어 학습반">베트남어 학습반</h1>
           </div>
         </div>
-        <div class="lang-switch" id="lang-switch" role="group" aria-label="언어 선택 / 選擇語言 / Language" data-i18n-aria-label="언어 선택 / 選擇語言 / Language">
-          <button type="button" class="lang-btn" data-lang="ko" aria-pressed="true" data-i18n="한국어">한국어</button>
-          <button type="button" class="lang-btn" data-lang="zh" aria-pressed="false">繁體中文</button>
-          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">English</button>
-          <button type="button" class="lang-btn" data-lang="ja" aria-pressed="false">日本語</button>
+        <div class="lang-switch" id="lang-switch" role="group" aria-label="언어 선택 / 選擇語言 / Language / Sprachauswahl" data-i18n-aria-label="언어 선택 / 選擇語言 / Language">
+          <div class="lang-switch-buttons">
+            <button type="button" class="lang-btn" data-lang="ko" aria-pressed="true" data-i18n="한국어">한국어</button>
+            <button type="button" class="lang-btn" data-lang="zh" aria-pressed="false">繁體中文</button>
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+            <button type="button" class="lang-btn" data-lang="ja" aria-pressed="false">日本語</button>
+            <button type="button" class="lang-btn" data-lang="de" aria-pressed="false">Deutsch</button>
+          </div>
+          <div class="lang-select-wrap">
+            <select id="lang-select" class="lang-select" aria-label="언어 선택 / 選擇語言 / Language / Sprachauswahl">
+              <option value="ko">한국어</option>
+              <option value="zh">繁體中文</option>
+              <option value="en">English</option>
+              <option value="ja">日本語</option>
+              <option value="de">Deutsch</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>

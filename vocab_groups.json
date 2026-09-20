@@ -10,7 +10,8 @@
           "ko": "안전",
           "zh": "安全",
           "en": "safety",
-          "ja": "安全"
+          "ja": "安全",
+          "de": "Sicherheit"
         }
       },
       {
@@ -20,7 +21,8 @@
           "ko": "치안·안녕",
           "zh": "治安·安寧",
           "en": "public security, peace",
-          "ja": "治安・安寧"
+          "ja": "治安・安寧",
+          "de": "öffentliche Sicherheit, Frieden"
         }
       },
       {
@@ -30,7 +32,8 @@
           "ko": "안심",
           "zh": "安心",
           "en": "relief, peace of mind",
-          "ja": "安心"
+          "ja": "安心",
+          "de": "Beruhigung, Seelenfrieden"
         }
       },
       {
@@ -40,7 +43,8 @@
           "ko": "위로",
           "zh": "安慰",
           "en": "comfort",
-          "ja": "慰め"
+          "ja": "慰め",
+          "de": "Trost, trösten"
         }
       },
       {
@@ -50,7 +54,8 @@
           "ko": "안주·정착",
           "zh": "安頓・定居",
           "en": "settling down · settlement",
-          "ja": "安住・定住"
+          "ja": "安住・定住",
+          "de": "Niederlassung, Sesshaftigkeit"
         }
       },
       {
@@ -60,7 +65,8 @@
           "ko": "한가함",
           "zh": "空閒",
           "en": "leisure",
-          "ja": "暇"
+          "ja": "暇",
+          "de": "Muße, Geruhsamkeit"
         }
       },
       {
@@ -70,7 +76,8 @@
           "ko": "복지",
           "zh": "福利",
           "en": "welfare",
-          "ja": "福祉"
+          "ja": "福祉",
+          "de": "soziale Wohlfahrt"
         }
       }
     ]
@@ -86,7 +93,8 @@
           "ko": "음악",
           "zh": "音樂",
           "en": "music",
-          "ja": "音楽"
+          "ja": "音楽",
+          "de": "Musik"
         }
       },
       {
@@ -96,7 +104,8 @@
           "ko": "음향·소리",
           "zh": "音響·聲音",
           "en": "sound",
-          "ja": "音響・音"
+          "ja": "音響・音",
+          "de": "Klang, Ton, Laut"
         }
       },
       {
@@ -106,7 +115,8 @@
           "ko": "음량",
           "zh": "音量",
           "en": "volume",
-          "ja": "音量"
+          "ja": "音量",
+          "de": "Lautstärke"
         }
       },
       {
@@ -116,7 +126,8 @@
           "ko": "음모",
           "zh": "陰謀",
           "en": "conspiracy",
-          "ja": "陰謀"
+          "ja": "陰謀",
+          "de": "Verschwörung, Komplott"
         }
       },
       {
@@ -126,7 +137,8 @@
           "ko": "은밀히·조용히",
           "zh": "秘密地·安靜地",
           "en": "secretly, quietly",
-          "ja": "ひそかに・静かに"
+          "ja": "ひそかに・静かに",
+          "de": "heimlich, im Verborgenen"
         }
       },
       {
@@ -136,7 +148,8 @@
           "ko": "음조·가락",
           "zh": "音調·旋律",
           "en": "tone/melody",
-          "ja": "音調・メロディー"
+          "ja": "音調・メロディー",
+          "de": "Tonart, Melodie"
         }
       },
       {
@@ -146,7 +159,8 @@
           "ko": "음성(검사결과)",
           "zh": "陰性(檢查結果)",
           "en": "negative (test result)",
-          "ja": "陰性(検査結果)"
+          "ja": "陰性(検査結果)",
+          "de": "negativ (Testergebnis)"
         }
       }
     ]
@@ -162,7 +176,8 @@
           "ko": "보호",
           "zh": "保護",
           "en": "protection",
-          "ja": "保護"
+          "ja": "保護",
+          "de": "Schutz, beschützen"
         }
       },
       {
@@ -172,7 +187,8 @@
           "ko": "보험",
           "zh": "保險",
           "en": "insurance",
-          "ja": "保険"
+          "ja": "保険",
+          "de": "Versicherung"
         }
       },
       {
@@ -182,7 +198,8 @@
           "ko": "보장·보증",
           "zh": "保障·保證",
           "en": "guarantee; assurance",
-          "ja": "保障・保証"
+          "ja": "保障・保証",
+          "de": "Garantie, Gewährleistung, Sicherstellung"
         }
       },
       {
@@ -192,7 +209,8 @@
           "ko": "보관",
           "zh": "保管",
           "en": "storage; keeping",
-          "ja": "保管"
+          "ja": "保管",
+          "de": "Aufbewahrung, Lagerung"
         }
       },
       {
@@ -202,7 +220,8 @@
           "ko": "보존",
           "zh": "保存",
           "en": "preservation",
-          "ja": "保存"
+          "ja": "保存",
+          "de": "Erhaltung, Bewahrung"
         }
       },
       {
@@ -212,7 +231,8 @@
           "ko": "보수·유지",
           "zh": "維修·維護",
           "en": "repair; maintenance",
-          "ja": "補修・維持"
+          "ja": "補修・維持",
+          "de": "Wartung, Instandhaltung"
         }
       },
       {
@@ -222,7 +242,8 @@
           "ko": "보증·AS",
           "zh": "保固·售後服務",
           "en": "warranty; after-sales service",
-          "ja": "保証・アフターサービス"
+          "ja": "保証・アフターサービス",
+          "de": "Garantie, Gewährleistung"
         }
       }
     ]
@@ -238,7 +259,8 @@
           "ko": "보통·평범",
           "zh": "普通·平凡",
           "en": "ordinary; plain",
-          "ja": "普通・平凡"
+          "ja": "普通・平凡",
+          "de": "normal, gewöhnlich"
         }
       },
       {
@@ -248,7 +270,8 @@
           "ko": "침착",
           "zh": "鎮定",
           "en": "calmness",
-          "ja": "落ち着き"
+          "ja": "落ち着き",
+          "de": "Ruhe, Gelassenheit"
         }
       },
       {
@@ -258,7 +281,8 @@
           "ko": "평론·댓글",
           "zh": "評論·留言",
           "en": "commentary, comment",
-          "ja": "評論・コメント"
+          "ja": "評論・コメント",
+          "de": "Kommentar, Rezension"
         }
       },
       {
@@ -268,7 +292,8 @@
           "ko": "평등",
           "zh": "平等",
           "en": "equality",
-          "ja": "平等"
+          "ja": "平等",
+          "de": "Gleichberechtigung, Gleichheit"
         }
       },
       {
@@ -278,7 +303,8 @@
           "ko": "평안",
           "zh": "平安",
           "en": "peace",
-          "ja": "平安"
+          "ja": "平安",
+          "de": "Frieden, wohlbehalten"
         }
       },
       {
@@ -288,7 +314,8 @@
           "ko": "서민적·대중적",
           "zh": "平民的·大眾的",
           "en": "folksy, popular",
-          "ja": "庶民的·大衆的"
+          "ja": "庶民的·大衆的",
+          "de": "volkstümlich, bürgerlich"
         }
       },
       {
@@ -298,7 +325,8 @@
           "ko": "평화",
           "zh": "和平",
           "en": "peace",
-          "ja": "平和"
+          "ja": "平和",
+          "de": "Frieden"
         }
       }
     ]
@@ -314,7 +342,8 @@
           "ko": "개혁",
           "zh": "改革",
           "en": "reform",
-          "ja": "改革"
+          "ja": "改革",
+          "de": "Reform"
         }
       },
       {
@@ -324,7 +353,8 @@
           "ko": "개선",
           "zh": "改善",
           "en": "improvement",
-          "ja": "改善"
+          "ja": "改善",
+          "de": "Verbesserung, Optimierung"
         }
       },
       {
@@ -334,7 +364,8 @@
           "ko": "개조",
           "zh": "改造",
           "en": "remodeling",
-          "ja": "改造"
+          "ja": "改造",
+          "de": "Umbau, Neugestaltung"
         }
       },
       {
@@ -344,7 +375,8 @@
           "ko": "개선·개량",
           "zh": "改善·改良",
           "en": "improvement",
-          "ja": "改善・改良"
+          "ja": "改善・改良",
+          "de": "Verbesserung, Weiterentwicklung"
         }
       },
       {
@@ -354,7 +386,8 @@
           "ko": "정정·시정",
           "zh": "訂正·糾正",
           "en": "correction/rectification",
-          "ja": "訂正・是正"
+          "ja": "訂正・是正",
+          "de": "Richtigstellung, Korrektur"
         }
       }
     ]
@@ -370,7 +403,8 @@
           "ko": "감각·느낌",
           "zh": "感覺",
           "en": "sense/feeling",
-          "ja": "感覚・感じ"
+          "ja": "感覚・感じ",
+          "de": "Gefühl, Empfindung"
         }
       },
       {
@@ -380,7 +414,8 @@
           "ko": "감정",
           "zh": "感情",
           "en": "emotion",
-          "ja": "感情"
+          "ja": "感情",
+          "de": "Emotion, Gefühl"
         }
       },
       {
@@ -390,7 +425,8 @@
           "ko": "감사",
           "zh": "感謝",
           "en": "gratitude",
-          "ja": "感謝"
+          "ja": "感謝",
+          "de": "Danke, Dankbarkeit"
         }
       },
       {
@@ -400,7 +436,8 @@
           "ko": "감동",
           "zh": "感動",
           "en": "being moved",
-          "ja": "感動"
+          "ja": "感動",
+          "de": "berührt sein, Ergriffenheit"
         }
       },
       {
@@ -410,7 +447,8 @@
           "ko": "공감·이해",
           "zh": "同感‧理解",
           "en": "empathy, understanding",
-          "ja": "共感・理解"
+          "ja": "共感・理解",
+          "de": "Mitgefühl, Verständnis"
         }
       },
       {
@@ -420,7 +458,8 @@
           "ko": "영감",
           "zh": "靈感",
           "en": "inspiration",
-          "ja": "インスピレーション"
+          "ja": "インスピレーション",
+          "de": "Inspiration"
         }
       },
       {
@@ -430,7 +469,8 @@
           "ko": "감정",
           "zh": "感情",
           "en": "emotion",
-          "ja": "感情"
+          "ja": "感情",
+          "de": "Gefühl, Zuneigung"
         }
       }
     ]
@@ -446,7 +486,8 @@
           "ko": "등급·계급",
           "zh": "等級·階級",
           "en": "grade · rank",
-          "ja": "等級・階級"
+          "ja": "等級・階級",
+          "de": "Rang, Dienstgrad"
         }
       },
       {
@@ -456,7 +497,8 @@
           "ko": "응급",
           "zh": "緊急",
           "en": "emergency",
-          "ja": "応急・緊急"
+          "ja": "応急・緊急",
+          "de": "Erste Hilfe, Notfall"
         }
       },
       {
@@ -466,7 +508,8 @@
           "ko": "속성·급속",
           "zh": "速成·急速",
           "en": "rapid, fast",
-          "ja": "速成·急速"
+          "ja": "速成·急速",
+          "de": "beschleunigt, im Eiltempo"
         }
       },
       {
@@ -476,7 +519,8 @@
           "ko": "지급·발급",
           "zh": "支付·發放",
           "en": "payment/issuance",
-          "ja": "支給・発行"
+          "ja": "支給・発行",
+          "de": "Ausgabe, Zuteilung"
         }
       },
       {
@@ -486,7 +530,8 @@
           "ko": "시급함",
           "zh": "急迫性",
           "en": "urgency",
-          "ja": "緊急性"
+          "ja": "緊急性",
+          "de": "dringend, vordringlich"
         }
       },
       {
@@ -496,7 +541,8 @@
           "ko": "긴급",
           "zh": "緊急",
           "en": "urgent",
-          "ja": "緊急"
+          "ja": "緊急",
+          "de": "dringend, Notfall"
         }
       },
       {
@@ -506,7 +552,8 @@
           "ko": "등급",
           "zh": "等級",
           "en": "grade",
-          "ja": "等級"
+          "ja": "等級",
+          "de": "Klasse, Rang"
         }
       },
       {
@@ -516,7 +563,8 @@
           "ko": "공급",
           "zh": "供給",
           "en": "supply",
-          "ja": "供給"
+          "ja": "供給",
+          "de": "liefern, Versorgung"
         }
       }
     ]
@@ -532,7 +580,8 @@
           "ko": "진심·성실",
           "zh": "真心·誠實",
           "en": "sincerity/honesty",
-          "ja": "真心・誠実"
+          "ja": "真心・誠実",
+          "de": "aufrichtig, herzlich"
         }
       },
       {
@@ -542,7 +591,8 @@
           "ko": "진실함",
           "zh": "真誠",
           "en": "sincerity",
-          "ja": "誠実さ"
+          "ja": "誠実さ",
+          "de": "wahrhaftig, aufrichtig"
         }
       },
       {
@@ -552,7 +602,8 @@
           "ko": "진리",
           "zh": "真理",
           "en": "truth",
-          "ja": "真理"
+          "ja": "真理",
+          "de": "Wahrheit"
         }
       },
       {
@@ -562,7 +613,8 @@
           "ko": "초상·모습",
           "zh": "肖像·樣子",
           "en": "portrait, appearance",
-          "ja": "肖像・姿"
+          "ja": "肖像・姿",
+          "de": "Porträt, Bildnis"
         }
       },
       {
@@ -572,7 +624,8 @@
           "ko": "진상",
           "zh": "真相",
           "en": "the truth of the matter",
-          "ja": "真相"
+          "ja": "真相",
+          "de": "wahre Sachlage, Wahrheit"
         }
       },
       {
@@ -582,7 +635,8 @@
           "ko": "참됨·진정한",
           "zh": "真實·真正的",
           "en": "trueness/genuine",
-          "ja": "真実さ・本当の"
+          "ja": "真実さ・本当の",
+          "de": "echt, wahrhaftig"
         }
       }
     ]
@@ -598,7 +652,8 @@
           "ko": "품질",
           "zh": "品質",
           "en": "quality",
-          "ja": "品質"
+          "ja": "品質",
+          "de": "Qualität"
         }
       },
       {
@@ -608,7 +663,8 @@
           "ko": "재질·소재",
           "zh": "材質·素材",
           "en": "texture/material",
-          "ja": "材質・素材"
+          "ja": "材質・素材",
+          "de": "Material, Werkstoff"
         }
       },
       {
@@ -618,7 +674,8 @@
           "ko": "질의·추궁",
           "zh": "質詢·追究",
           "en": "inquiry/interrogation",
-          "ja": "質疑・追及"
+          "ja": "質疑・追及",
+          "de": "Befragung, Verhör"
         }
       },
       {
@@ -628,7 +685,8 @@
           "ko": "소박함",
           "zh": "樸素",
           "en": "simplicity",
-          "ja": "素朴さ"
+          "ja": "素朴さ",
+          "de": "schlicht, einfach, natürlich"
         }
       },
       {
@@ -638,7 +696,8 @@
           "ko": "독소·유독물질",
           "zh": "毒素·有毒物質",
           "en": "toxin · poisonous substance",
-          "ja": "毒素・有毒物質"
+          "ja": "毒素・有毒物質",
+          "de": "Giftstoff, Gift"
         }
       },
       {
@@ -648,7 +707,8 @@
           "ko": "물질",
           "zh": "物質",
           "en": "matter, material",
-          "ja": "物質"
+          "ja": "物質",
+          "de": "Materie, Stoff"
         }
       }
     ]
@@ -664,7 +724,8 @@
           "ko": "비용",
           "zh": "費用",
           "en": "cost; expense",
-          "ja": "費用"
+          "ja": "費用",
+          "de": "Kosten, Ausgaben"
         }
       },
       {
@@ -674,7 +735,8 @@
           "ko": "세부사항",
           "zh": "細節",
           "en": "details",
-          "ja": "詳細"
+          "ja": "詳細",
+          "de": "Detail, Einzelheit"
         }
       },
       {
@@ -684,7 +746,8 @@
           "ko": "지점·지사",
           "zh": "分店·分公司",
           "en": "branch office",
-          "ja": "支店・支社"
+          "ja": "支店・支社",
+          "de": "Filiale, Zweigstelle"
         }
       },
       {
@@ -694,7 +757,8 @@
           "ko": "지출",
           "zh": "支出",
           "en": "expenditure",
-          "ja": "支出"
+          "ja": "支出",
+          "de": "Ausgaben, Konsumausgaben"
         }
       },
       {
@@ -704,7 +768,8 @@
           "ko": "지원·증원",
           "zh": "支援·增援",
           "en": "support/reinforcement",
-          "ja": "支援・増員"
+          "ja": "支援・増員",
+          "de": "Unterstützung, Verstärkung"
         }
       }
     ]
@@ -720,7 +785,8 @@
           "ko": "전쟁",
           "zh": "戰爭",
           "en": "war",
-          "ja": "戦争"
+          "ja": "戦争",
+          "de": "Krieg"
         }
       },
       {
@@ -730,7 +796,8 @@
           "ko": "승리",
           "zh": "勝利",
           "en": "victory",
-          "ja": "勝利"
+          "ja": "勝利",
+          "de": "Sieg"
         }
       },
       {
@@ -740,7 +807,8 @@
           "ko": "전략",
           "zh": "策略",
           "en": "strategy",
-          "ja": "戦略"
+          "ja": "戦略",
+          "de": "Strategie"
         }
       },
       {
@@ -750,7 +818,8 @@
           "ko": "전투",
           "zh": "戰鬥",
           "en": "battle",
-          "ja": "戦闘"
+          "ja": "戦闘",
+          "de": "Kampf, Gefecht"
         }
       },
       {
@@ -760,7 +829,8 @@
           "ko": "작전·캠페인",
           "zh": "作戰·活動",
           "en": "operation/campaign",
-          "ja": "作戦・キャンペーン"
+          "ja": "作戦・キャンペーン",
+          "de": "Kampagne, Operation"
         }
       },
       {
@@ -770,7 +840,8 @@
           "ko": "전사·군인",
           "zh": "戰士·軍人",
           "en": "warrior/soldier",
-          "ja": "戦士・軍人"
+          "ja": "戦士・軍人",
+          "de": "Kämpfer, Soldat"
         }
       }
     ]
@@ -786,7 +857,8 @@
           "ko": "정부",
           "zh": "政府",
           "en": "government",
-          "ja": "政府"
+          "ja": "政府",
+          "de": "Regierung"
         }
       },
       {
@@ -796,7 +868,8 @@
           "ko": "정치",
           "zh": "政治",
           "en": "politics",
-          "ja": "政治"
+          "ja": "政治",
+          "de": "Politik"
         }
       },
       {
@@ -806,7 +879,8 @@
           "ko": "정책",
           "zh": "政策",
           "en": "policy",
-          "ja": "政策"
+          "ja": "政策",
+          "de": "Politik, Richtlinie"
         }
       },
       {
@@ -816,7 +890,8 @@
           "ko": "정식·공식",
           "zh": "正式·公式",
           "en": "formal/official",
-          "ja": "正式・公式"
+          "ja": "正式・公式",
+          "de": "offiziell, formell"
         }
       },
       {
@@ -826,7 +901,8 @@
           "ko": "정확",
           "zh": "準確",
           "en": "accuracy",
-          "ja": "正確"
+          "ja": "正確",
+          "de": "präzise, genau"
         }
       },
       {
@@ -836,7 +912,8 @@
           "ko": "정당함",
           "zh": "正當性",
           "en": "justness",
-          "ja": "正当さ"
+          "ja": "正当さ",
+          "de": "gerechtfertigt, legitim"
         }
       }
     ]
@@ -852,7 +929,8 @@
           "ko": "일·업무",
           "zh": "工作·業務",
           "en": "work/task",
-          "ja": "仕事・業務"
+          "ja": "仕事・業務",
+          "de": "Arbeit, Aufgabe"
         }
       },
       {
@@ -862,7 +940,8 @@
           "ko": "회사",
           "zh": "公司",
           "en": "company",
-          "ja": "会社"
+          "ja": "会社",
+          "de": "Firma, Unternehmen"
         }
       },
       {
@@ -872,7 +951,8 @@
           "ko": "공민·시민",
           "zh": "公民‧市民",
           "en": "citizen",
-          "ja": "公民・市民"
+          "ja": "公民・市民",
+          "de": "Bürger, Staatsbürger"
         }
       },
       {
@@ -882,7 +962,8 @@
           "ko": "공공",
           "zh": "公共",
           "en": "public",
-          "ja": "公共"
+          "ja": "公共",
+          "de": "öffentlich"
         }
       },
       {
@@ -892,7 +973,8 @@
           "ko": "공업",
           "zh": "工業",
           "en": "industry",
-          "ja": "工業"
+          "ja": "工業",
+          "de": "Industrie"
         }
       },
       {
@@ -902,7 +984,8 @@
           "ko": "공평·공정",
           "zh": "公平‧公正",
           "en": "fairness, justice",
-          "ja": "公平・公正"
+          "ja": "公平・公正",
+          "de": "Gerechtigkeit, Fairness"
         }
       },
       {
@@ -912,7 +995,8 @@
           "ko": "공인·인정",
           "zh": "公認‧認可",
           "en": "authorization, recognition",
-          "ja": "公認・認定"
+          "ja": "公認・認定",
+          "de": "Anerkennung, Zulassung"
         }
       },
       {
@@ -922,7 +1006,8 @@
           "ko": "공개",
           "zh": "公開",
           "en": "public, open",
-          "ja": "公開"
+          "ja": "公開",
+          "de": "öffentlich, offenlegen"
         }
       },
       {
@@ -932,7 +1017,8 @@
           "ko": "공로",
           "zh": "功勞",
           "en": "merit, contribution",
-          "ja": "功労"
+          "ja": "功労",
+          "de": "Verdienst, Leistung"
         }
       },
       {
@@ -942,7 +1028,8 @@
           "ko": "노동자",
           "zh": "勞工",
           "en": "worker",
-          "ja": "労働者"
+          "ja": "労働者",
+          "de": "Arbeiter"
         }
       },
       {
@@ -952,7 +1039,8 @@
           "ko": "공무원",
           "zh": "公務員",
           "en": "civil servant",
-          "ja": "公務員"
+          "ja": "公務員",
+          "de": "Beamter, Staatsdiener"
         }
       },
       {
@@ -962,7 +1050,8 @@
           "ko": "공원",
           "zh": "公園",
           "en": "park",
-          "ja": "公園"
+          "ja": "公園",
+          "de": "Park, Parkanlage"
         }
       }
     ]
@@ -978,7 +1067,8 @@
           "ko": "기회",
           "zh": "機會",
           "en": "opportunity",
-          "ja": "機会"
+          "ja": "機会",
+          "de": "Gelegenheit, Chance"
         }
       },
       {
@@ -988,7 +1078,8 @@
           "ko": "기본",
           "zh": "基本",
           "en": "basic",
-          "ja": "基本"
+          "ja": "基本",
+          "de": "Grundlage, elementar"
         }
       },
       {
@@ -998,7 +1089,8 @@
           "ko": "기관",
           "zh": "機構、器官",
           "en": "institution, organ",
-          "ja": "機関"
+          "ja": "機関",
+          "de": "Behörde, Institution, Organ"
         }
       },
       {
@@ -1008,7 +1100,8 @@
           "ko": "기초·토대",
           "zh": "基礎‧根基",
           "en": "foundation, base",
-          "ja": "基礎・土台"
+          "ja": "基礎・土台",
+          "de": "Basis, Grundlage, Einrichtung"
         }
       },
       {
@@ -1018,7 +1111,8 @@
           "ko": "구조",
           "zh": "結構",
           "en": "structure",
-          "ja": "構造"
+          "ja": "構造",
+          "de": "Struktur, Gefüge"
         }
       },
       {
@@ -1028,7 +1122,8 @@
           "ko": "기제·메커니즘",
           "zh": "機制‧機理",
           "en": "mechanism",
-          "ja": "機構・メカニズム"
+          "ja": "機構・メカニズム",
+          "de": "Mechanismus"
         }
       },
       {
@@ -1038,7 +1133,8 @@
           "ko": "신체·몸",
           "zh": "身體・身軀",
           "en": "body · body",
-          "ja": "身体・体"
+          "ja": "身体・体",
+          "de": "Körper, Organismus"
         }
       }
     ]
@@ -1054,7 +1150,8 @@
           "ko": "명사",
           "zh": "名詞",
           "en": "noun",
-          "ja": "名詞"
+          "ja": "名詞",
+          "de": "Nomen, Substantiv"
         }
       },
       {
@@ -1064,7 +1161,8 @@
           "ko": "명예",
           "zh": "名譽",
           "en": "honor",
-          "ja": "名誉"
+          "ja": "名誉",
+          "de": "Ehre"
         }
       },
       {
@@ -1074,7 +1172,8 @@
           "ko": "명단",
           "zh": "名單",
           "en": "list (of names)",
-          "ja": "名簿"
+          "ja": "名簿",
+          "de": "Liste, Namensliste"
         }
       },
       {
@@ -1084,7 +1183,8 @@
           "ko": "명의·명목",
           "zh": "名義・名目",
           "en": "nominal, name",
-          "ja": "名義・名目"
+          "ja": "名義・名目",
+          "de": "im Namen von, nominell"
         }
       },
       {
@@ -1094,7 +1194,8 @@
           "ko": "명성",
           "zh": "名聲",
           "en": "fame, reputation",
-          "ja": "名声"
+          "ja": "名声",
+          "de": "Ruf, Ruhm, Ansehen"
         }
       }
     ]
@@ -1110,7 +1211,8 @@
           "ko": "민주",
           "zh": "民主",
           "en": "democracy",
-          "ja": "民主"
+          "ja": "民主",
+          "de": "Demokratie"
         }
       },
       {
@@ -1120,7 +1222,8 @@
           "ko": "민족",
           "zh": "民族",
           "en": "ethnic group, nation",
-          "ja": "民族"
+          "ja": "民族",
+          "de": "Volk, Ethnie, Nation"
         }
       },
       {
@@ -1130,7 +1233,8 @@
           "ko": "인구",
           "zh": "人口",
           "en": "population",
-          "ja": "人口"
+          "ja": "人口",
+          "de": "Bevölkerung, Einwohnerzahl"
         }
       },
       {
@@ -1140,7 +1244,8 @@
           "ko": "민사",
           "zh": "民事",
           "en": "civil (law)",
-          "ja": "民事"
+          "ja": "民事",
+          "de": "Zivilrecht, zivil"
         }
       },
       {
@@ -1150,7 +1255,8 @@
           "ko": "민간",
           "zh": "民間",
           "en": "civilian",
-          "ja": "民間"
+          "ja": "民間",
+          "de": "volkstümlich, Volks-"
         }
       },
       {
@@ -1160,7 +1266,8 @@
           "ko": "민도·국민 지식수준",
           "zh": "民智・國民知識水準",
           "en": "public awareness, national education level",
-          "ja": "民度・国民の知識水準"
+          "ja": "民度・国民の知識水準",
+          "de": "Bildungsniveau der Bevölkerung"
         }
       },
       {
@@ -1170,7 +1277,8 @@
           "ko": "인민",
           "zh": "人民",
           "en": "people",
-          "ja": "人民"
+          "ja": "人民",
+          "de": "Volk, Bevölkerung"
         }
       }
     ]
@@ -1186,7 +1294,8 @@
           "ko": "서비스",
           "zh": "服務",
           "en": "service",
-          "ja": "サービス"
+          "ja": "サービス",
+          "de": "Dienstleistung, Service"
         }
       },
       {
@@ -1196,7 +1305,8 @@
           "ko": "전염병·역병",
           "zh": "傳染病·瘟疫",
           "en": "epidemic/plague",
-          "ja": "伝染病・疫病"
+          "ja": "伝染病・疫病",
+          "de": "Epidemie, Seuche"
         }
       },
       {
@@ -1206,7 +1316,8 @@
           "ko": "번역가",
           "zh": "翻譯家",
           "en": "translator",
-          "ja": "翻訳者"
+          "ja": "翻訳者",
+          "de": "Übersetzer"
         }
       },
       {
@@ -1216,7 +1327,8 @@
           "ko": "번역",
           "zh": "翻譯",
           "en": "translation",
-          "ja": "翻訳"
+          "ja": "翻訳",
+          "de": "Übersetzung"
         }
       },
       {
@@ -1226,7 +1338,8 @@
           "ko": "역학(질병)",
           "zh": "流行病學（疾病）",
           "en": "epidemiology (disease)",
-          "ja": "疫学（病気）"
+          "ja": "疫学（病気）",
+          "de": "Epidemiologie"
         }
       }
     ]
@@ -1242,7 +1355,8 @@
           "ko": "여행",
           "zh": "旅行",
           "en": "travel",
-          "ja": "旅行"
+          "ja": "旅行",
+          "de": "Reisen, Tourismus"
         }
       },
       {
@@ -1252,7 +1366,8 @@
           "ko": "유학",
           "zh": "留學",
           "en": "studying abroad",
-          "ja": "留学"
+          "ja": "留学",
+          "de": "Auslandsstudium"
         }
       },
       {
@@ -1262,7 +1377,8 @@
           "ko": "관광객",
           "zh": "觀光客",
           "en": "tourist",
-          "ja": "観光客"
+          "ja": "観光客",
+          "de": "Tourist, Reisender"
         }
       },
       {
@@ -1272,7 +1388,8 @@
           "ko": "여행·비행",
           "zh": "旅行・飛行",
           "en": "travel · flight",
-          "ja": "旅行・飛行"
+          "ja": "旅行・飛行",
+          "de": "Reise, Reiseverlauf"
         }
       },
       {
@@ -1282,7 +1399,8 @@
           "ko": "유입·도입",
           "zh": "流入·引進",
           "en": "influx/introduction",
-          "ja": "流入・導入"
+          "ja": "流入・導入",
+          "de": "Einführung, Einzug, Übernahme"
         }
       },
       {
@@ -1292,7 +1410,8 @@
           "ko": "불량배·건달",
           "zh": "流氓·無賴",
           "en": "hoodlum; thug",
-          "ja": "ならず者・ごろつき"
+          "ja": "ならず者・ごろつき",
+          "de": "Schläger, Raufbold"
         }
       }
     ]
@@ -1308,7 +1427,8 @@
           "ko": "프로젝트·사업",
           "zh": "項目·事業",
           "en": "project, business",
-          "ja": "プロジェクト・事業"
+          "ja": "プロジェクト・事業",
+          "de": "Projekt, Vorhaben"
         }
       },
       {
@@ -1318,7 +1438,8 @@
           "ko": "예보",
           "zh": "預報",
           "en": "forecast",
-          "ja": "予報"
+          "ja": "予報",
+          "de": "Vorhersage, Prognose"
         }
       },
       {
@@ -1328,7 +1449,8 @@
           "ko": "예측",
           "zh": "預測",
           "en": "prediction",
-          "ja": "予測"
+          "ja": "予測",
+          "de": "Vorhersage, Prognose"
         }
       },
       {
@@ -1338,7 +1460,8 @@
           "ko": "예정·계획",
           "zh": "預定·計劃",
           "en": "schedule/plan",
-          "ja": "予定・計画"
+          "ja": "予定・計画",
+          "de": "Vorhaben, Planung"
         }
       },
       {
@@ -1348,7 +1471,8 @@
           "ko": "비축",
           "zh": "儲備",
           "en": "stockpile; reserve",
-          "ja": "備蓄"
+          "ja": "備蓄",
+          "de": "Reserve, Vorrat"
         }
       },
       {
@@ -1358,7 +1482,8 @@
           "ko": "예방·대비",
           "zh": "預防·防備",
           "en": "prevention/preparedness",
-          "ja": "予防・備え"
+          "ja": "予防・備え",
+          "de": "Vorbeugung, Vorsorge"
         }
       }
     ]
@@ -1374,7 +1499,8 @@
           "ko": "대학",
           "zh": "大學",
           "en": "university",
-          "ja": "大学"
+          "ja": "大学",
+          "de": "Universität"
         }
       },
       {
@@ -1384,7 +1510,8 @@
           "ko": "대표",
           "zh": "代表",
           "en": "representative",
-          "ja": "代表"
+          "ja": "代表",
+          "de": "Vertreter, Repräsentant"
         }
       },
       {
@@ -1394,7 +1521,8 @@
           "ko": "대사",
           "zh": "大使",
           "en": "ambassador",
-          "ja": "大使"
+          "ja": "大使",
+          "de": "Botschafter"
         }
       },
       {
@@ -1404,7 +1532,8 @@
           "ko": "대중",
           "zh": "大眾",
           "en": "the public",
-          "ja": "大衆"
+          "ja": "大衆",
+          "de": "Öffentlichkeit, Massen"
         }
       },
       {
@@ -1414,7 +1543,8 @@
           "ko": "대리점",
           "zh": "代理店",
           "en": "agency",
-          "ja": "代理店"
+          "ja": "代理店",
+          "de": "Agentur, Vertretung"
         }
       },
       {
@@ -1424,7 +1554,8 @@
           "ko": "부호·큰손",
           "zh": "富豪·大戶",
           "en": "tycoon; big spender",
-          "ja": "富豪・大物"
+          "ja": "富豪・大物",
+          "de": "Magnat, Großverdiener"
         }
       },
       {
@@ -1434,7 +1565,8 @@
           "ko": "대동·큰 조화",
           "zh": "大同·大和諧",
           "en": "great unity · great harmony",
-          "ja": "大同・大調和"
+          "ja": "大同・大調和",
+          "de": "große Harmonie, allgemeine Eintracht"
         }
       },
       {
@@ -1444,7 +1576,8 @@
           "ko": "시대",
           "zh": "時代",
           "en": "era",
-          "ja": "時代"
+          "ja": "時代",
+          "de": "Epoche, Ära"
         }
       }
     ]
@@ -1460,7 +1593,8 @@
           "ko": "도덕",
           "zh": "道德",
           "en": "morality",
-          "ja": "道徳"
+          "ja": "道徳",
+          "de": "Moral"
         }
       },
       {
@@ -1470,7 +1604,8 @@
           "ko": "감독·연출",
           "zh": "導演·執導",
           "en": "director/directing",
-          "ja": "監督・演出"
+          "ja": "監督・演出",
+          "de": "Regisseur, Regie"
         }
       },
       {
@@ -1480,7 +1615,8 @@
           "ko": "도리",
           "zh": "道理",
           "en": "proper duty",
-          "ja": "道理"
+          "ja": "道理",
+          "de": "Sittenlehre, moralische Prinzipien"
         }
       },
       {
@@ -1490,7 +1626,8 @@
           "ko": "표절",
           "zh": "剽竊",
           "en": "plagiarism",
-          "ja": "盗用"
+          "ja": "盗用",
+          "de": "Plagiat"
         }
       },
       {
@@ -1500,7 +1637,8 @@
           "ko": "소품",
           "zh": "小道具",
           "en": "prop, small item",
-          "ja": "小道具"
+          "ja": "小道具",
+          "de": "Requisite"
         }
       },
       {
@@ -1510,7 +1648,8 @@
           "ko": "불교",
           "zh": "佛教",
           "en": "Buddhism",
-          "ja": "仏教"
+          "ja": "仏教",
+          "de": "Buddhismus"
         }
       }
     ]
@@ -1526,7 +1665,8 @@
           "ko": "투자",
           "zh": "投資",
           "en": "investment",
-          "ja": "投資"
+          "ja": "投資",
+          "de": "Investition, anlegen"
         }
       },
       {
@@ -1536,7 +1676,8 @@
           "ko": "첫 번째",
           "zh": "第一個",
           "en": "first",
-          "ja": "一番目"
+          "ja": "一番目",
+          "de": "zuerst, erster"
         }
       },
       {
@@ -1546,7 +1687,8 @@
           "ko": "항복",
           "zh": "投降",
           "en": "surrender",
-          "ja": "降伏"
+          "ja": "降伏",
+          "de": "Kapitulation"
         }
       },
       {
@@ -1556,7 +1698,8 @@
           "ko": "독살·해치다",
           "zh": "毒殺·傷害",
           "en": "poison · harm",
-          "ja": "毒殺・害する"
+          "ja": "毒殺・害する",
+          "de": "vergiften, Vergiftung"
         }
       },
       {
@@ -1566,7 +1709,8 @@
           "ko": "요리사",
           "zh": "廚師",
           "en": "cook",
-          "ja": "料理人"
+          "ja": "料理人",
+          "de": "Koch, Chefkoch"
         }
       }
     ]
@@ -1582,7 +1726,8 @@
           "ko": "정의",
           "zh": "正義",
           "en": "justice",
-          "ja": "正義"
+          "ja": "正義",
+          "de": "Definition"
         }
       },
       {
@@ -1592,7 +1737,8 @@
           "ko": "정기적",
           "zh": "定期的",
           "en": "regular",
-          "ja": "定期的"
+          "ja": "定期的",
+          "de": "regelmäßig, periodisch"
         }
       },
       {
@@ -1602,7 +1748,8 @@
           "ko": "방향설정",
           "zh": "方向設定",
           "en": "orientation",
-          "ja": "方向設定"
+          "ja": "方向設定",
+          "de": "Orientierung, Ausrichtung"
         }
       },
       {
@@ -1612,7 +1759,8 @@
           "ko": "할당량·기준치",
           "zh": "配額·標準",
           "en": "quota / standard",
-          "ja": "割当量・基準値"
+          "ja": "割当量・基準値",
+          "de": "Norm, Richtwert, Quote"
         }
       },
       {
@@ -1622,7 +1770,8 @@
           "ko": "법칙",
           "zh": "法則",
           "en": "law; principle",
-          "ja": "法則"
+          "ja": "法則",
+          "de": "Gesetzmäßigkeit, Prinzip"
         }
       },
       {
@@ -1632,7 +1781,8 @@
           "ko": "정착",
           "zh": "定居",
           "en": "settling down",
-          "ja": "定着"
+          "ja": "定着",
+          "de": "Sesshaftwerdung, Niederlassung"
         }
       },
       {
@@ -1642,7 +1792,8 @@
           "ko": "결정",
           "zh": "決定",
           "en": "decision",
-          "ja": "決定"
+          "ja": "決定",
+          "de": "Entscheidung, Beschluss"
         }
       }
     ]
@@ -1658,7 +1809,8 @@
           "ko": "동의",
           "zh": "同意",
           "en": "agreement",
-          "ja": "同意"
+          "ja": "同意",
+          "de": "Zustimmung, Einverständnis"
         }
       },
       {
@@ -1668,7 +1820,8 @@
           "ko": "동료",
           "zh": "同事",
           "en": "colleague",
-          "ja": "同僚"
+          "ja": "同僚",
+          "de": "Kollege, Arbeitskollege"
         }
       },
       {
@@ -1678,7 +1831,8 @@
           "ko": "동시에",
           "zh": "同時",
           "en": "at the same time",
-          "ja": "同時に"
+          "ja": "同時に",
+          "de": "gleichzeitig"
         }
       },
       {
@@ -1688,7 +1842,8 @@
           "ko": "시계",
           "zh": "時鐘·手錶",
           "en": "clock, watch",
-          "ja": "時計"
+          "ja": "時計",
+          "de": "Uhr, Armbanduhr"
         }
       },
       {
@@ -1698,7 +1853,8 @@
           "ko": "동맹",
           "zh": "同盟",
           "en": "alliance",
-          "ja": "同盟"
+          "ja": "同盟",
+          "de": "Allianz, Verbündeter"
         }
       },
       {
@@ -1708,7 +1864,8 @@
           "ko": "동포",
           "zh": "同胞",
           "en": "compatriot",
-          "ja": "同胞"
+          "ja": "同胞",
+          "de": "Landsleute, Mitbürger"
         }
       }
     ]
@@ -1724,7 +1881,8 @@
           "ko": "동물",
           "zh": "動物",
           "en": "animal",
-          "ja": "動物"
+          "ja": "動物",
+          "de": "Tier"
         }
       },
       {
@@ -1734,7 +1892,8 @@
           "ko": "동기·엔진",
           "zh": "動機·引擎",
           "en": "motive · engine",
-          "ja": "動機・エンジン"
+          "ja": "動機・エンジン",
+          "de": "Motiv, Motor"
         }
       },
       {
@@ -1744,7 +1903,8 @@
           "ko": "동력",
           "zh": "動力",
           "en": "motive power",
-          "ja": "動力"
+          "ja": "動力",
+          "de": "Antrieb, Triebkraft, Motivation"
         }
       },
       {
@@ -1754,7 +1914,8 @@
           "ko": "동작",
           "zh": "動作",
           "en": "motion",
-          "ja": "動作"
+          "ja": "動作",
+          "de": "Bewegung, Handlung"
         }
       },
       {
@@ -1764,7 +1925,8 @@
           "ko": "격려·독려",
           "zh": "鼓勵",
           "en": "encouragement",
-          "ja": "激励・督励"
+          "ja": "激励・督励",
+          "de": "Ermutigung, ermutigen"
         }
       },
       {
@@ -1774,7 +1936,8 @@
           "ko": "지진",
           "zh": "地震",
           "en": "earthquake",
-          "ja": "地震"
+          "ja": "地震",
+          "de": "Erdbeben"
         }
       },
       {
@@ -1784,7 +1947,8 @@
           "ko": "동사",
           "zh": "動詞",
           "en": "verb",
-          "ja": "動詞"
+          "ja": "動詞",
+          "de": "Verb, Zeitwort"
         }
       },
       {
@@ -1794,7 +1958,8 @@
           "ko": "운동",
           "zh": "運動",
           "en": "exercise",
-          "ja": "運動"
+          "ja": "運動",
+          "de": "Bewegung, Sport"
         }
       }
     ]
@@ -1810,7 +1975,8 @@
           "ko": "간단",
           "zh": "簡單",
           "en": "simple",
-          "ja": "簡単"
+          "ja": "簡単",
+          "de": "einfach, simpel"
         }
       },
       {
@@ -1820,7 +1986,8 @@
           "ko": "단위",
           "zh": "單位",
           "en": "unit",
-          "ja": "単位"
+          "ja": "単位",
+          "de": "Einheit"
         }
       },
       {
@@ -1830,7 +1997,8 @@
           "ko": "고독·외로움",
           "zh": "孤獨·寂寞",
           "en": "loneliness",
-          "ja": "孤独・寂しさ"
+          "ja": "孤独・寂しさ",
+          "de": "allein, einsam"
         }
       },
       {
@@ -1840,7 +2008,8 @@
           "ko": "단순함",
           "zh": "單純",
           "en": "simplicity",
-          "ja": "単純さ"
+          "ja": "単純さ",
+          "de": "schlicht, rein, einfach"
         }
       },
       {
@@ -1850,7 +2019,8 @@
           "ko": "일방적",
           "zh": "單方面的",
           "en": "one-sided",
-          "ja": "一方的"
+          "ja": "一方的",
+          "de": "einseitig"
         }
       }
     ]
@@ -1866,7 +2036,8 @@
           "ko": "덕성·성품",
           "zh": "德性·品性",
           "en": "virtue · character",
-          "ja": "徳性・性格"
+          "ja": "徳性・性格",
+          "de": "Tugend, Charakterzug"
         }
       },
       {
@@ -1876,7 +2047,8 @@
           "ko": "덕행",
           "zh": "德行",
           "en": "virtuous conduct",
-          "ja": "徳行"
+          "ja": "徳行",
+          "de": "tugendhaftes Verhalten, Tugend"
         }
       },
       {
@@ -1886,7 +2058,8 @@
           "ko": "덕망",
           "zh": "德望",
           "en": "moral reputation",
-          "ja": "徳望"
+          "ja": "徳望",
+          "de": "Tugendhaftigkeit, moralische Autorität"
         }
       },
       {
@@ -1896,7 +2069,8 @@
           "ko": "신앙·믿음",
           "zh": "信仰・信念",
           "en": "faith · belief",
-          "ja": "信仰・信念"
+          "ja": "信仰・信念",
+          "de": "Glaube, Glaubensüberzeugung"
         }
       },
       {
@@ -1906,7 +2080,8 @@
           "ko": "덕육(도덕교육)",
           "zh": "德育（道德教育）",
           "en": "moral education",
-          "ja": "徳育（道徳教育）"
+          "ja": "徳育（道徳教育）",
+          "de": "moralische Erziehung, Charakterbildung"
         }
       },
       {
@@ -1916,7 +2091,8 @@
           "ko": "도덕",
           "zh": "道德",
           "en": "morality",
-          "ja": "道徳"
+          "ja": "道徳",
+          "de": "Moral, Sittlichkeit"
         }
       }
     ]
@@ -1932,7 +2108,8 @@
           "ko": "가정",
           "zh": "家庭",
           "en": "family/home",
-          "ja": "家庭"
+          "ja": "家庭",
+          "de": "Familie"
         }
       },
       {
@@ -1942,7 +2119,8 @@
           "ko": "증가",
           "zh": "增加",
           "en": "increase",
-          "ja": "増加"
+          "ja": "増加",
+          "de": "Zunahme, ansteigen"
         }
       },
       {
@@ -1952,7 +2130,8 @@
           "ko": "가축",
           "zh": "家畜",
           "en": "livestock",
-          "ja": "家畜"
+          "ja": "家畜",
+          "de": "Nutzvieh, Haustier"
         }
       },
       {
@@ -1962,7 +2141,8 @@
           "ko": "양념",
           "zh": "調味料",
           "en": "seasoning",
-          "ja": "調味料"
+          "ja": "調味料",
+          "de": "Gewürz, Würze"
         }
       },
       {
@@ -1972,7 +2152,8 @@
           "ko": "재산",
           "zh": "財產",
           "en": "property",
-          "ja": "財産"
+          "ja": "財産",
+          "de": "Vermögen, Besitz"
         }
       },
       {
@@ -1982,7 +2163,8 @@
           "ko": "과외선생",
           "zh": "家教老師",
           "en": "tutor",
-          "ja": "家庭教師"
+          "ja": "家庭教師",
+          "de": "Nachhilfelehrer, Hauslehrer"
         }
       },
       {
@@ -1992,7 +2174,8 @@
           "ko": "가전(집안 대대로)",
           "zh": "家傳(世代相傳)",
           "en": "family heirloom (passed down)",
-          "ja": "家伝(代々)"
+          "ja": "家伝(代々)",
+          "de": "familiär überliefert, Tradition-"
         }
       },
       {
@@ -2002,7 +2185,8 @@
           "ko": "가보",
           "zh": "傳家寶",
           "en": "heirloom",
-          "ja": "家宝"
+          "ja": "家宝",
+          "de": "Familienerbstück"
         }
       },
       {
@@ -2012,7 +2196,8 @@
           "ko": "가정교육이 반듯함",
           "zh": "家教良好",
           "en": "well brought up",
-          "ja": "家庭教育がしっかりしている"
+          "ja": "家庭教育がしっかりしている",
+          "de": "gute Kinderstube, Erziehung"
         }
       },
       {
@@ -2022,7 +2207,8 @@
           "ko": "증가",
           "zh": "增加",
           "en": "increase",
-          "ja": "増加"
+          "ja": "増加",
+          "de": "Produktionssteigerung, Vermehrung"
         }
       }
     ]
@@ -2038,7 +2224,8 @@
           "ko": "가격",
           "zh": "價格",
           "en": "price",
-          "ja": "価格"
+          "ja": "価格",
+          "de": "Preis, Preise"
         }
       },
       {
@@ -2048,7 +2235,8 @@
           "ko": "가치",
           "zh": "價值",
           "en": "value",
-          "ja": "価値"
+          "ja": "価値",
+          "de": "Wert"
         }
       },
       {
@@ -2058,7 +2246,8 @@
           "ko": "원가",
           "zh": "原價",
           "en": "cost price",
-          "ja": "原価"
+          "ja": "原価",
+          "de": "Selbstkosten, Gestehungskosten"
         }
       },
       {
@@ -2068,7 +2257,8 @@
           "ko": "요금(표값)",
           "zh": "費用(票價)",
           "en": "fare/fee",
-          "ja": "料金(運賃)"
+          "ja": "料金(運賃)",
+          "de": "Fahrpreis, Eintrittspreis"
         }
       },
       {
@@ -2078,7 +2268,8 @@
           "ko": "값·가격",
           "zh": "價錢·價格",
           "en": "price",
-          "ja": "値段・価格"
+          "ja": "値段・価格",
+          "de": "Preis, Geldbetrag"
         }
       },
       {
@@ -2088,7 +2279,8 @@
           "ko": "물가",
           "zh": "物價",
           "en": "prices",
-          "ja": "物価"
+          "ja": "物価",
+          "de": "Lebenshaltungskosten, Güterpreise"
         }
       }
     ]
@@ -2104,7 +2296,8 @@
           "ko": "해법",
           "zh": "解決方法",
           "en": "solution",
-          "ja": "解決法"
+          "ja": "解決法",
+          "de": "Lösung, Lösungsansatz"
         }
       },
       {
@@ -2114,7 +2307,8 @@
           "ko": "설명",
           "zh": "說明",
           "en": "explanation",
-          "ja": "説明"
+          "ja": "説明",
+          "de": "Erklärung, erläutern"
         }
       },
       {
@@ -2124,7 +2318,8 @@
           "ko": "오락",
           "zh": "娛樂",
           "en": "entertainment",
-          "ja": "娯楽"
+          "ja": "娯楽",
+          "de": "Unterhaltung, Freizeitbeschäftigung"
         }
       },
       {
@@ -2134,7 +2329,8 @@
           "ko": "해결",
           "zh": "解決",
           "en": "solution",
-          "ja": "解決"
+          "ja": "解決",
+          "de": "Lösung, beilegen"
         }
       },
       {
@@ -2144,7 +2340,8 @@
           "ko": "해방",
           "zh": "解放",
           "en": "liberation",
-          "ja": "解放"
+          "ja": "解放",
+          "de": "Befreiung, freisetzen"
         }
       },
       {
@@ -2154,7 +2351,8 @@
           "ko": "휴식·쉬는 시간",
           "zh": "休息·休息時間",
           "en": "rest / break time",
-          "ja": "休息・休憩時間"
+          "ja": "休息・休憩時間",
+          "de": "Pause, Erholung"
         }
       }
     ]
@@ -2170,7 +2368,8 @@
           "ko": "교육",
           "zh": "教育",
           "en": "education",
-          "ja": "教育"
+          "ja": "教育",
+          "de": "Bildung, Erziehung"
         }
       },
       {
@@ -2180,7 +2379,8 @@
           "ko": "교사",
           "zh": "教師",
           "en": "teacher",
-          "ja": "教師"
+          "ja": "教師",
+          "de": "Lehrer, Lehrkraft"
         }
       },
       {
@@ -2190,7 +2390,8 @@
           "ko": "교수",
           "zh": "教授",
           "en": "professor",
-          "ja": "教授"
+          "ja": "教授",
+          "de": "Professor, Dozent"
         }
       },
       {
@@ -2200,7 +2401,8 @@
           "ko": "교재·커리큘럼",
           "zh": "教材‧課程",
           "en": "textbook, curriculum",
-          "ja": "教材・カリキュラム"
+          "ja": "教材・カリキュラム",
+          "de": "Lehrbuch, Lehrplan"
         }
       },
       {
@@ -2210,7 +2412,8 @@
           "ko": "교회",
           "zh": "教會",
           "en": "church",
-          "ja": "教会"
+          "ja": "教会",
+          "de": "Kirche, Kirchengemeinde"
         }
       },
       {
@@ -2220,7 +2423,8 @@
           "ko": "교리",
           "zh": "教義",
           "en": "doctrine",
-          "ja": "教理"
+          "ja": "教理",
+          "de": "Lehre, Glaubenslehre"
         }
       }
     ]
@@ -2236,7 +2440,8 @@
           "ko": "소개",
           "zh": "介紹",
           "en": "introduction",
-          "ja": "紹介"
+          "ja": "紹介",
+          "de": "Vorstellung, Einführung, empfehlen"
         }
       },
       {
@@ -2246,7 +2451,8 @@
           "ko": "한계·범위",
           "zh": "界限·範圍",
           "en": "limit / scope",
-          "ja": "限界・範囲"
+          "ja": "限界・範囲",
+          "de": "Grenze, Begrenzung"
         }
       },
       {
@@ -2256,7 +2462,8 @@
           "ko": "성별",
           "zh": "性別",
           "en": "gender",
-          "ja": "性別"
+          "ja": "性別",
+          "de": "Geschlecht"
         }
       },
       {
@@ -2266,7 +2473,8 @@
           "ko": "젊은층",
           "zh": "年輕族群",
           "en": "younger generation",
-          "ja": "若年層"
+          "ja": "若年層",
+          "de": "Jugend, junge Generation"
         }
       },
       {
@@ -2276,7 +2484,8 @@
           "ko": "계엄",
           "zh": "戒嚴",
           "en": "martial law",
-          "ja": "戒厳"
+          "ja": "戒厳",
+          "de": "Ausgangssperre, Belagerungszustand"
         }
       }
     ]
@@ -2292,7 +2501,8 @@
           "ko": "제한",
           "zh": "限制",
           "en": "restriction",
-          "ja": "制限"
+          "ja": "制限",
+          "de": "Einschränkung, beschränken"
         }
       },
       {
@@ -2302,7 +2512,8 @@
           "ko": "가뭄",
           "zh": "乾旱",
           "en": "drought",
-          "ja": "干ばつ"
+          "ja": "干ばつ",
+          "de": "Dürre, Trockenheit"
         }
       },
       {
@@ -2312,7 +2523,8 @@
           "ko": "할당량·쿼터",
           "zh": "配額·限額",
           "en": "quota / quota",
-          "ja": "割当量・クォータ"
+          "ja": "割当量・クォータ",
+          "de": "Quote, Kontingent"
         }
       },
       {
@@ -2322,7 +2534,8 @@
           "ko": "기한설정",
           "zh": "設定期限",
           "en": "setting a deadline",
-          "ja": "期限設定"
+          "ja": "期限設定",
+          "de": "Fristsetzung"
         }
       },
       {
@@ -2332,7 +2545,8 @@
           "ko": "한도",
           "zh": "限度",
           "en": "limit",
-          "ja": "限度"
+          "ja": "限度",
+          "de": "Kreditlinie, Höchstgrenze"
         }
       }
     ]
@@ -2348,7 +2562,8 @@
           "ko": "상품",
           "zh": "商品",
           "en": "product",
-          "ja": "商品"
+          "ja": "商品",
+          "de": "Ware, Güter"
         }
       },
       {
@@ -2358,7 +2573,8 @@
           "ko": "매일",
           "zh": "每天",
           "en": "every day",
-          "ja": "毎日"
+          "ja": "毎日",
+          "de": "täglich, jeden Tag"
         }
       },
       {
@@ -2368,7 +2584,8 @@
           "ko": "이웃",
           "zh": "鄰居",
           "en": "neighbor",
-          "ja": "隣人"
+          "ja": "隣人",
+          "de": "Nachbar, Nachbarschaft"
         }
       },
       {
@@ -2378,7 +2595,8 @@
           "ko": "항공",
           "zh": "航空",
           "en": "aviation",
-          "ja": "航空"
+          "ja": "航空",
+          "de": "Luftfahrt"
         }
       },
       {
@@ -2388,7 +2606,8 @@
           "ko": "대량·일련의",
           "zh": "大量·一系列的",
           "en": "mass · a series of",
-          "ja": "大量・一連の"
+          "ja": "大量・一連の",
+          "de": "seriell, massenhaft, reihenweise"
         }
       }
     ]
@@ -2404,7 +2623,8 @@
           "ko": "행동",
           "zh": "行動",
           "en": "action",
-          "ja": "行動"
+          "ja": "行動",
+          "de": "Handlung, Aktion, handeln"
         }
       },
       {
@@ -2414,7 +2634,8 @@
           "ko": "행정",
           "zh": "行政",
           "en": "administration",
-          "ja": "行政"
+          "ja": "行政",
+          "de": "Verwaltung"
         }
       },
       {
@@ -2424,7 +2645,8 @@
           "ko": "여정",
           "zh": "旅程",
           "en": "journey",
-          "ja": "旅程"
+          "ja": "旅程",
+          "de": "Reiseroute, Reise"
         }
       },
       {
@@ -2434,7 +2656,8 @@
           "ko": "수하물",
           "zh": "行李",
           "en": "baggage",
-          "ja": "手荷物"
+          "ja": "手荷物",
+          "de": "Gepäck, Reisegepäck"
         }
       },
       {
@@ -2444,7 +2667,8 @@
           "ko": "행위",
           "zh": "行為",
           "en": "act/deed",
-          "ja": "行為"
+          "ja": "行為",
+          "de": "Verhalten, Benehmen, Tat"
         }
       }
     ]
@@ -2460,7 +2684,8 @@
           "ko": "현재",
           "zh": "現在",
           "en": "present",
-          "ja": "現在"
+          "ja": "現在",
+          "de": "Gegenwart, gegenwärtig"
         }
       },
       {
@@ -2470,7 +2695,8 @@
           "ko": "현대",
           "zh": "現代",
           "en": "modern era",
-          "ja": "現代"
+          "ja": "現代",
+          "de": "moderne Zeit, Gegenwart"
         }
       },
       {
@@ -2480,7 +2706,8 @@
           "ko": "현상",
           "zh": "現象",
           "en": "phenomenon",
-          "ja": "現象"
+          "ja": "現象",
+          "de": "Phänomen, Erscheinung"
         }
       },
       {
@@ -2490,7 +2717,8 @@
           "ko": "현실",
           "zh": "現實",
           "en": "reality",
-          "ja": "現実"
+          "ja": "現実",
+          "de": "Wirklichkeit, Realität"
         }
       },
       {
@@ -2500,7 +2728,8 @@
           "ko": "현장",
           "zh": "現場",
           "en": "scene/site",
-          "ja": "現場"
+          "ja": "現場",
+          "de": "Schauplatz, Tatort"
         }
       },
       {
@@ -2510,7 +2739,8 @@
           "ko": "현존·참석",
           "zh": "現存·出席",
           "en": "existence / presence",
-          "ja": "現存・出席"
+          "ja": "現存・出席",
+          "de": "Anwesenheit, Gegenwart"
         }
       },
       {
@@ -2520,7 +2750,8 @@
           "ko": "현행",
           "zh": "現行",
           "en": "current (existing)",
-          "ja": "現行"
+          "ja": "現行",
+          "de": "geltend, gegenwärtig"
         }
       }
     ]
@@ -2536,7 +2767,8 @@
           "ko": "평화",
           "zh": "和平",
           "en": "peace",
-          "ja": "平和"
+          "ja": "平和",
+          "de": "Frieden"
         }
       },
       {
@@ -2546,7 +2778,8 @@
           "ko": "화해",
           "zh": "和解",
           "en": "reconciliation",
-          "ja": "和解"
+          "ja": "和解",
+          "de": "Aussöhnung, Schlichtung"
         }
       },
       {
@@ -2556,7 +2789,8 @@
           "ko": "화합",
           "zh": "和合",
           "en": "harmony",
-          "ja": "和合"
+          "ja": "和合",
+          "de": "Harmonie, Eintracht"
         }
       },
       {
@@ -2566,7 +2800,8 @@
           "ko": "융화·편입",
           "zh": "融合·編入",
           "en": "assimilation/incorporation",
-          "ja": "融和・編入"
+          "ja": "融和・編入",
+          "de": "Integration, Eingliederung"
         }
       },
       {
@@ -2576,7 +2811,8 @@
           "ko": "용해·녹임",
           "zh": "溶解·融化",
           "en": "dissolving/melting",
-          "ja": "溶解・融解"
+          "ja": "溶解・融解",
+          "de": "auflösen, Lösen (in Flüssigkeit)"
         }
       }
     ]
@@ -2592,7 +2828,8 @@
           "ko": "화학",
           "zh": "化學",
           "en": "chemistry",
-          "ja": "化学"
+          "ja": "化学",
+          "de": "Chemie"
         }
       },
       {
@@ -2602,7 +2839,8 @@
           "ko": "영수증·청구서",
           "zh": "收據·帳單",
           "en": "receipt/bill",
-          "ja": "領収書・請求書"
+          "ja": "領収書・請求書",
+          "de": "Rechnung, Beleg"
         }
       },
       {
@@ -2612,7 +2850,8 @@
           "ko": "분장",
           "zh": "化妝，扮裝",
           "en": "makeup; costume",
-          "ja": "扮装"
+          "ja": "扮装",
+          "de": "Maske, Kostümierung"
         }
       },
       {
@@ -2622,7 +2861,8 @@
           "ko": "화신·변신",
           "zh": "化身·變身",
           "en": "incarnation / transformation",
-          "ja": "化身・変身"
+          "ja": "化身・変身",
+          "de": "Verkörperung, Inkarnation"
         }
       },
       {
@@ -2632,7 +2872,8 @@
           "ko": "해소·풀다",
           "zh": "解除·解開",
           "en": "to resolve / to untie",
-          "ja": "解消・解く"
+          "ja": "解消・解く",
+          "de": "auflösen, entschärfen, schlichten"
         }
       },
       {
@@ -2642,7 +2883,8 @@
           "ko": "화학물질",
           "zh": "化學物質",
           "en": "chemical substance",
-          "ja": "化学物質"
+          "ja": "化学物質",
+          "de": "Chemikalie"
         }
       },
       {
@@ -2652,7 +2894,8 @@
           "ko": "문화",
           "zh": "文化",
           "en": "culture",
-          "ja": "文化"
+          "ja": "文化",
+          "de": "Kultur"
         }
       }
     ]
@@ -2668,7 +2911,8 @@
           "ko": "완성·완료",
           "zh": "完成·完了",
           "en": "completion",
-          "ja": "完成・完了"
+          "ja": "完成・完了",
+          "de": "Vollendung, abschließen"
         }
       },
       {
@@ -2678,7 +2922,8 @@
           "ko": "환경·처지",
           "zh": "環境·處境",
           "en": "environment / circumstance",
-          "ja": "環境・境遇"
+          "ja": "環境・境遇",
+          "de": "Lebensumstände, Verhältnisse"
         }
       },
       {
@@ -2688,7 +2933,8 @@
           "ko": "완벽",
           "zh": "完美",
           "en": "perfection",
-          "ja": "完璧"
+          "ja": "完璧",
+          "de": "vollkommen, tadellos"
         }
       },
       {
@@ -2698,7 +2944,8 @@
           "ko": "완전히",
           "zh": "完全地",
           "en": "completely",
-          "ja": "完全に"
+          "ja": "完全に",
+          "de": "völlig, vollkommen, ganz"
         }
       },
       {
@@ -2708,7 +2955,8 @@
           "ko": "완비·보완",
           "zh": "完備·補充",
           "en": "completeness/supplement",
-          "ja": "完備・補完"
+          "ja": "完備・補完",
+          "de": "vervollkommnen, optimieren"
         }
       },
       {
@@ -2718,7 +2966,8 @@
           "ko": "반환·상환",
           "zh": "歸還・償還",
           "en": "return, repayment",
-          "ja": "返還・償還"
+          "ja": "返還・償還",
+          "de": "Rückzahlung, erstatten"
         }
       },
       {
@@ -2728,7 +2977,8 @@
           "ko": "준공",
           "zh": "竣工",
           "en": "completion (of construction)",
-          "ja": "竣工"
+          "ja": "竣工",
+          "de": "Fertigstellung (Bau)"
         }
       }
     ]
@@ -2744,7 +2994,8 @@
           "ko": "학생",
           "zh": "學生",
           "en": "student",
-          "ja": "学生"
+          "ja": "学生",
+          "de": "Schüler"
         }
       },
       {
@@ -2754,7 +3005,8 @@
           "ko": "학습",
           "zh": "學習",
           "en": "learning",
-          "ja": "学習"
+          "ja": "学習",
+          "de": "Lernen, Studium"
         }
       },
       {
@@ -2764,7 +3016,8 @@
           "ko": "학비",
           "zh": "學費",
           "en": "tuition",
-          "ja": "学費"
+          "ja": "学費",
+          "de": "Schulgeld, Studiengebühren"
         }
       },
       {
@@ -2774,7 +3027,8 @@
           "ko": "학기",
           "zh": "學期",
           "en": "semester",
-          "ja": "学期"
+          "ja": "学期",
+          "de": "Semester, Schulhalbjahr"
         }
       },
       {
@@ -2784,7 +3038,8 @@
           "ko": "학원·학교",
           "zh": "補習班·學校",
           "en": "academy, school",
-          "ja": "塾・学校"
+          "ja": "塾・学校",
+          "de": "Akademie, Institut"
         }
       },
       {
@@ -2794,7 +3049,8 @@
           "ko": "장학금",
           "zh": "獎學金",
           "en": "scholarship",
-          "ja": "奨学金"
+          "ja": "奨学金",
+          "de": "Stipendium"
         }
       },
       {
@@ -2804,7 +3060,8 @@
           "ko": "학자",
           "zh": "學者",
           "en": "scholar",
-          "ja": "学者"
+          "ja": "学者",
+          "de": "Gelehrter, Wissenschaftler"
         }
       },
       {
@@ -2814,7 +3071,8 @@
           "ko": "학력",
           "zh": "學歷",
           "en": "educational background",
-          "ja": "学歴"
+          "ja": "学歴",
+          "de": "Schulleistung, Bildungsstand"
         }
       },
       {
@@ -2824,7 +3082,8 @@
           "ko": "문학 공부",
           "zh": "文學研究",
           "en": "literature study",
-          "ja": "文学の勉強"
+          "ja": "文学の勉強",
+          "de": "Literaturstudium"
         }
       },
       {
@@ -2834,7 +3093,8 @@
           "ko": "의학 공부",
           "zh": "醫學研究",
           "en": "studying medicine",
-          "ja": "医学の勉強"
+          "ja": "医学の勉強",
+          "de": "Medizinstudium"
         }
       }
     ]
@@ -2850,7 +3110,8 @@
           "ko": "회의",
           "zh": "會議",
           "en": "meeting",
-          "ja": "会議"
+          "ja": "会議",
+          "de": "Konferenz, Tagung"
         }
       },
       {
@@ -2860,7 +3121,8 @@
           "ko": "세미나·학술대회",
           "zh": "研討會·學術大會",
           "en": "seminar, academic conference",
-          "ja": "セミナー·学術大会"
+          "ja": "セミナー·学術大会",
+          "de": "Seminar, Symposium"
         }
       },
       {
@@ -2870,7 +3132,8 @@
           "ko": "위원회·평의회",
           "zh": "委員會·評議會",
           "en": "committee/council",
-          "ja": "委員会・評議会"
+          "ja": "委員会・評議会",
+          "de": "Rat, Ausschuss"
         }
       },
       {
@@ -2880,7 +3143,8 @@
           "ko": "회원",
           "zh": "會員",
           "en": "member",
-          "ja": "会員"
+          "ja": "会員",
+          "de": "Mitglied"
         }
       },
       {
@@ -2890,7 +3154,8 @@
           "ko": "회관·강당",
           "zh": "會館·禮堂",
           "en": "hall / auditorium",
-          "ja": "会館・講堂"
+          "ja": "会館・講堂",
+          "de": "Konferenzsaal, Aula"
         }
       },
       {
@@ -2900,7 +3165,8 @@
           "ko": "박람회",
           "zh": "博覽會",
           "en": "fair, exhibition",
-          "ja": "博覧会"
+          "ja": "博覧会",
+          "de": "Messe, Jahrmarkt"
         }
       }
     ]
@@ -2916,7 +3182,8 @@
           "ko": "혼인",
           "zh": "婚姻",
           "en": "marriage",
-          "ja": "婚姻"
+          "ja": "婚姻",
+          "de": "Ehe, Heirat"
         }
       },
       {
@@ -2926,7 +3193,8 @@
           "ko": "혼례",
           "zh": "婚禮",
           "en": "wedding ceremony",
-          "ja": "婚礼"
+          "ja": "婚礼",
+          "de": "Hochzeitsfeier, Trauung"
         }
       },
       {
@@ -2936,7 +3204,8 @@
           "ko": "약혼녀",
           "zh": "未婚妻",
           "en": "fiancée",
-          "ja": "婚約者（女性）"
+          "ja": "婚約者（女性）",
+          "de": "Verlobte"
         }
       },
       {
@@ -2946,7 +3215,8 @@
           "ko": "혼인·배우자",
           "zh": "婚姻·配偶",
           "en": "marriage / spouse",
-          "ja": "婚姻・配偶者"
+          "ja": "婚姻・配偶者",
+          "de": "Eheschließung, Ehepartner"
         }
       },
       {
@@ -2956,7 +3226,8 @@
           "ko": "혼약",
           "zh": "婚約",
           "en": "engagement",
-          "ja": "婚約"
+          "ja": "婚約",
+          "de": "Verlobung, Eheversprechen"
         }
       }
     ]
@@ -2972,7 +3243,8 @@
           "ko": "협력",
           "zh": "合作",
           "en": "cooperation",
-          "ja": "協力"
+          "ja": "協力",
+          "de": "Zusammenarbeit, Kooperation"
         }
       },
       {
@@ -2982,7 +3254,8 @@
           "ko": "계약",
           "zh": "合約",
           "en": "contract",
-          "ja": "契約"
+          "ja": "契約",
+          "de": "Vertrag"
         }
       },
       {
@@ -2992,7 +3265,8 @@
           "ko": "합리적",
           "zh": "合理的",
           "en": "reasonable",
-          "ja": "合理的"
+          "ja": "合理的",
+          "de": "vernünftig, plausibel"
         }
       },
       {
@@ -3002,7 +3276,8 @@
           "ko": "합법",
           "zh": "合法",
           "en": "legal",
-          "ja": "合法"
+          "ja": "合法",
+          "de": "legal, rechtmäßig"
         }
       },
       {
@@ -3012,7 +3287,8 @@
           "ko": "합병·통합",
           "zh": "合併·整合",
           "en": "merger / integration",
-          "ja": "合併・統合"
+          "ja": "合併・統合",
+          "de": "Fusion, Vereinigung"
         }
       },
       {
@@ -3022,7 +3298,8 @@
           "ko": "유효·적법",
           "zh": "有效·合法",
           "en": "valid/legal",
-          "ja": "有効・適法"
+          "ja": "有効・適法",
+          "de": "gültig, ordnungsgemäß"
         }
       },
       {
@@ -3032,7 +3309,8 @@
           "ko": "알맞음",
           "zh": "合適",
           "en": "suitability",
-          "ja": "適切さ"
+          "ja": "適切さ",
+          "de": "passend, geeignet"
         }
       }
     ]
@@ -3048,7 +3326,8 @@
           "ko": "계획",
           "zh": "計劃",
           "en": "plan",
-          "ja": "計画"
+          "ja": "計画",
+          "de": "Plan, Planung"
         }
       },
       {
@@ -3058,7 +3337,8 @@
           "ko": "회계",
           "zh": "會計",
           "en": "accounting",
-          "ja": "会計"
+          "ja": "会計",
+          "de": "Buchhaltung, Rechnungswesen"
         }
       },
       {
@@ -3068,7 +3348,8 @@
           "ko": "계속되는·다음",
           "zh": "持續的·下一個",
           "en": "continuing/next",
-          "ja": "続く・次の"
+          "ja": "続く・次の",
+          "de": "folgend, anschließend"
         }
       },
       {
@@ -3078,7 +3359,8 @@
           "ko": "계승",
           "zh": "繼承",
           "en": "succession",
-          "ja": "継承"
+          "ja": "継承",
+          "de": "Erbschaft, Nachfolge"
         }
       },
       {
@@ -3088,7 +3370,8 @@
           "ko": "가업 계승",
           "zh": "繼承家業",
           "en": "succeeding the family business",
-          "ja": "家業の継承"
+          "ja": "家業の継承",
+          "de": "Betriebsnachfolge, Familientradition fortführen"
         }
       }
     ]
@@ -3104,7 +3387,8 @@
           "ko": "결과",
           "zh": "結果",
           "en": "result",
-          "ja": "結果"
+          "ja": "結果",
+          "de": "Ergebnis, Resultat"
         }
       },
       {
@@ -3114,7 +3398,8 @@
           "ko": "결론",
           "zh": "結論",
           "en": "conclusion",
-          "ja": "結論"
+          "ja": "結論",
+          "de": "Schlussfolgerung, Fazit"
         }
       },
       {
@@ -3124,7 +3409,8 @@
           "ko": "결혼",
           "zh": "結婚",
           "en": "marriage",
-          "ja": "結婚"
+          "ja": "結婚",
+          "de": "Heirat, Ehe"
         }
       },
       {
@@ -3134,7 +3420,8 @@
           "ko": "종결·끝",
           "zh": "終結·結束",
           "en": "conclusion/end",
-          "ja": "終結・終わり"
+          "ja": "終結・終わり",
+          "de": "Abschluss, Ende"
         }
       },
       {
@@ -3144,7 +3431,8 @@
           "ko": "연결",
           "zh": "連結",
           "en": "connection",
-          "ja": "連結"
+          "ja": "連結",
+          "de": "Verbindung, Verknüpfung"
         }
       },
       {
@@ -3154,7 +3442,8 @@
           "ko": "결합",
           "zh": "結合",
           "en": "combination",
-          "ja": "結合"
+          "ja": "結合",
+          "de": "Kombination, verbinden"
         }
       }
     ]
@@ -3170,7 +3459,8 @@
           "ko": "고객",
           "zh": "顧客",
           "en": "customer",
-          "ja": "顧客"
+          "ja": "顧客",
+          "de": "Kunde, Kundschaft"
         }
       },
       {
@@ -3180,7 +3470,8 @@
           "ko": "호텔",
           "zh": "飯店",
           "en": "hotel",
-          "ja": "ホテル"
+          "ja": "ホテル",
+          "de": "Hotel"
         }
       },
       {
@@ -3190,7 +3481,8 @@
           "ko": "객관",
           "zh": "客觀",
           "en": "objectivity",
-          "ja": "客観"
+          "ja": "客観",
+          "de": "objektiv, Sachlichkeit"
         }
       },
       {
@@ -3200,7 +3492,8 @@
           "ko": "초대손님",
           "zh": "客人",
           "en": "guest",
-          "ja": "招待客"
+          "ja": "招待客",
+          "de": "Gast, Ehrengast"
         }
       },
       {
@@ -3210,7 +3503,8 @@
           "ko": "투숙객",
           "zh": "住客",
           "en": "hotel guest",
-          "ja": "宿泊客"
+          "ja": "宿泊客",
+          "de": "Hotelgast, Übernachtungsgast"
         }
       },
       {
@@ -3220,7 +3514,8 @@
           "ko": "여객",
           "zh": "旅客",
           "en": "passenger",
-          "ja": "旅客"
+          "ja": "旅客",
+          "de": "Reisender, Fahrgast"
         }
       }
     ]
@@ -3236,7 +3531,8 @@
           "ko": "기후",
           "zh": "氣候",
           "en": "climate",
-          "ja": "気候"
+          "ja": "気候",
+          "de": "Klima"
         }
       },
       {
@@ -3246,7 +3542,8 @@
           "ko": "기세",
           "zh": "氣勢",
           "en": "momentum, vigor",
-          "ja": "勢い"
+          "ja": "勢い",
+          "de": "Elan, Schwung, Kampfgeist"
         }
       },
       {
@@ -3256,7 +3553,8 @@
           "ko": "기질",
           "zh": "氣質",
           "en": "temperament",
-          "ja": "気質"
+          "ja": "気質",
+          "de": "Temperament, Veranlagung"
         }
       },
       {
@@ -3266,7 +3564,8 @@
           "ko": "기공",
           "zh": "氣孔",
           "en": "pore",
-          "ja": "気孔"
+          "ja": "気孔",
+          "de": "Qigong"
         }
       },
       {
@@ -3276,7 +3575,8 @@
           "ko": "기백",
           "zh": "氣魄",
           "en": "spirit, vigor",
-          "ja": "気迫"
+          "ja": "気迫",
+          "de": "Entschlossenheit, Heldenmut"
         }
       }
     ]
@@ -3292,7 +3592,8 @@
           "ko": "경제",
           "zh": "經濟",
           "en": "economy",
-          "ja": "経済"
+          "ja": "経済",
+          "de": "Wirtschaft, Ökonomie"
         }
       },
       {
@@ -3302,7 +3603,8 @@
           "ko": "경험",
           "zh": "經驗",
           "en": "experience",
-          "ja": "経験"
+          "ja": "経験",
+          "de": "Erfahrung"
         }
       },
       {
@@ -3312,7 +3614,8 @@
           "ko": "경영",
           "zh": "經營",
           "en": "management",
-          "ja": "経営"
+          "ja": "経営",
+          "de": "Geschäftstätigkeit, Gewerbe"
         }
       },
       {
@@ -3322,7 +3625,8 @@
           "ko": "경비·비용",
           "zh": "經費·費用",
           "en": "expense/cost",
-          "ja": "経費・費用"
+          "ja": "経費・費用",
+          "de": "Kosten, Aufwand, Spesen"
         }
       },
       {
@@ -3332,7 +3636,8 @@
           "ko": "경악",
           "zh": "驚愕",
           "en": "shock/astonishment",
-          "ja": "驚愕"
+          "ja": "驚愕",
+          "de": "Erstaunen, Verblüffung"
         }
       },
       {
@@ -3342,7 +3647,8 @@
           "ko": "경전·고전",
           "zh": "經典",
           "en": "scripture/classic",
-          "ja": "経典・古典"
+          "ja": "経典・古典",
+          "de": "Klassiker, klassisch"
         }
       },
       {
@@ -3352,7 +3658,8 @@
           "ko": "북경",
           "zh": "北京",
           "en": "Beijing",
-          "ja": "北京"
+          "ja": "北京",
+          "de": "Peking"
         }
       }
     ]
@@ -3368,7 +3675,8 @@
           "ko": "기술",
           "zh": "技術",
           "en": "technology, skill",
-          "ja": "技術"
+          "ja": "技術",
+          "de": "Technologie, Technik"
         }
       },
       {
@@ -3378,7 +3686,8 @@
           "ko": "기능·스킬",
           "zh": "功能‧技能",
           "en": "function, skill",
-          "ja": "機能・スキル"
+          "ja": "機能・スキル",
+          "de": "Fertigkeit, Kompetenz"
         }
       },
       {
@@ -3388,7 +3697,8 @@
           "ko": "기사·엔지니어",
           "zh": "技師‧工程師",
           "en": "engineer",
-          "ja": "技師・エンジニア"
+          "ja": "技師・エンジニア",
+          "de": "Ingenieur"
         }
       },
       {
@@ -3398,7 +3708,8 @@
           "ko": "공업·기예",
           "zh": "工業‧技藝",
           "en": "industry, craft",
-          "ja": "工業・技芸"
+          "ja": "工業・技芸",
+          "de": "Kunsthandwerk, Technologie"
         }
       },
       {
@@ -3408,7 +3719,8 @@
           "ko": "기교",
           "zh": "技巧",
           "en": "technique",
-          "ja": "技巧"
+          "ja": "技巧",
+          "de": "Kunstgriff, Technik, Raffinesse"
         }
       }
     ]
@@ -3424,7 +3736,8 @@
           "ko": "축제",
           "zh": "節慶",
           "en": "festival",
-          "ja": "祭り"
+          "ja": "祭り",
+          "de": "Fest, Festival"
         }
       },
       {
@@ -3434,7 +3747,8 @@
           "ko": "예의·의례",
           "zh": "禮儀·禮節",
           "en": "courtesy/etiquette",
-          "ja": "礼儀・儀礼"
+          "ja": "礼儀・儀礼",
+          "de": "Ritual, Zeremoniell, Etikette"
         }
       },
       {
@@ -3444,7 +3758,8 @@
           "ko": "예의바름",
           "zh": "禮貌",
           "en": "politeness",
-          "ja": "礼儀正しさ"
+          "ja": "礼儀正しさ",
+          "de": "Höflichkeit, artig"
         }
       },
       {
@@ -3454,7 +3769,8 @@
           "ko": "예물",
           "zh": "禮物",
           "en": "gift/offering",
-          "ja": "贈り物"
+          "ja": "贈り物",
+          "de": "Gabe, Opfergabe, Geschenk"
         }
       },
       {
@@ -3464,7 +3780,8 @@
           "ko": "리셉션·접객",
           "zh": "接待・迎賓",
           "en": "reception, hospitality",
-          "ja": "接待"
+          "ja": "接待",
+          "de": "Empfang, Rezeption"
         }
       },
       {
@@ -3474,7 +3791,8 @@
           "ko": "예의",
           "zh": "禮儀",
           "en": "manners/courtesy",
-          "ja": "礼儀"
+          "ja": "礼儀",
+          "de": "Anstand, Wohlerzogenheit"
         }
       }
     ]
@@ -3490,7 +3808,8 @@
           "ko": "역사",
           "zh": "歷史",
           "en": "history",
-          "ja": "歴史"
+          "ja": "歴史",
+          "de": "Geschichte, Historie"
         }
       },
       {
@@ -3500,7 +3819,8 @@
           "ko": "예의바름",
           "zh": "禮貌",
           "en": "politeness",
-          "ja": "礼儀正しさ"
+          "ja": "礼儀正しさ",
+          "de": "höflich, Manieren"
         }
       },
       {
@@ -3510,7 +3830,8 @@
           "ko": "일정",
           "zh": "日程",
           "en": "schedule",
-          "ja": "日程"
+          "ja": "日程",
+          "de": "Zeitplan, Ablauf"
         }
       },
       {
@@ -3520,7 +3841,8 @@
           "ko": "세련됨·경험 많음",
           "zh": "老練·經驗豐富",
           "en": "refined, experienced",
-          "ja": "洗練されている·経験豊富"
+          "ja": "洗練されている·経験豊富",
+          "de": "weltgewandt, kultiviert"
         }
       },
       {
@@ -3530,7 +3852,8 @@
           "ko": "예의바르고 세련됨",
           "zh": "有禮又文雅",
           "en": "polite and refined",
-          "ja": "礼儀正しく洗練されている"
+          "ja": "礼儀正しく洗練されている",
+          "de": "höflich und weltmännisch, charmant"
         }
       }
     ]
@@ -3546,7 +3869,8 @@
           "ko": "연계·연락",
           "zh": "聯繫・聯絡",
           "en": "liaison · contact",
-          "ja": "連携・連絡"
+          "ja": "連携・連絡",
+          "de": "Kontakt, Verbindung"
         }
       },
       {
@@ -3556,7 +3880,8 @@
           "ko": "연결",
           "zh": "連結",
           "en": "connection",
-          "ja": "連結"
+          "ja": "連結",
+          "de": "Verknüpfung, vernetzen"
         }
       },
       {
@@ -3566,7 +3891,8 @@
           "ko": "연맹·동맹",
           "zh": "聯盟・同盟",
           "en": "federation · alliance",
-          "ja": "連盟・同盟"
+          "ja": "連盟・同盟",
+          "de": "Bündnis, Allianz"
         }
       },
       {
@@ -3576,7 +3902,8 @@
           "ko": "연속·계속",
           "zh": "連續・繼續",
           "en": "continuation · continuing",
-          "ja": "連続・継続"
+          "ja": "連続・継続",
+          "de": "ununterbrochen, kontinuierlich"
         }
       },
       {
@@ -3586,7 +3913,8 @@
           "ko": "관련",
           "zh": "關聯",
           "en": "relation, connection",
-          "ja": "関連"
+          "ja": "関連",
+          "de": "bezüglich, zusammenhängend"
         }
       },
       {
@@ -3596,7 +3924,8 @@
           "ko": "연회·모임",
           "zh": "宴會・聚會",
           "en": "banquet · gathering",
-          "ja": "宴会・集まり"
+          "ja": "宴会・集まり",
+          "de": "Feier, Festlichkeit"
         }
       }
     ]
@@ -3612,7 +3941,8 @@
           "ko": "이익",
           "zh": "利益",
           "en": "benefit",
-          "ja": "利益"
+          "ja": "利益",
+          "de": "Nutzen, Vorteil, Interesse"
         }
       },
       {
@@ -3622,7 +3952,8 @@
           "ko": "이윤",
           "zh": "利潤",
           "en": "profit",
-          "ja": "利潤"
+          "ja": "利潤",
+          "de": "Gewinn, Profit"
         }
       },
       {
@@ -3632,7 +3963,8 @@
           "ko": "이용·악용",
           "zh": "利用·濫用",
           "en": "use/abuse",
-          "ja": "利用・悪用"
+          "ja": "利用・悪用",
+          "de": "ausnutzen, nutzen"
         }
       },
       {
@@ -3642,7 +3974,8 @@
           "ko": "우위·이점",
           "zh": "優勢·優點",
           "en": "advantage",
-          "ja": "優位・利点"
+          "ja": "優位・利点",
+          "de": "Vorteil, Überlegenheit"
         }
       },
       {
@@ -3652,7 +3985,8 @@
           "ko": "이해(利害)·장단점",
           "zh": "利害·優缺點",
           "en": "advantages and disadvantages",
-          "ja": "利害・長所短所"
+          "ja": "利害・長所短所",
+          "de": "Vor- und Nachteile, schlagkräftig"
         }
       }
     ]
@@ -3668,7 +4002,8 @@
           "ko": "이유",
           "zh": "理由",
           "en": "reason",
-          "ja": "理由"
+          "ja": "理由",
+          "de": "Grund, Ursache, Anlass"
         }
       },
       {
@@ -3678,7 +4013,8 @@
           "ko": "이론·논리",
           "zh": "理論·邏輯",
           "en": "theory/logic",
-          "ja": "理論・論理"
+          "ja": "理論・論理",
+          "de": "Theorie, Argumentation"
         }
       },
       {
@@ -3688,7 +4024,8 @@
           "ko": "이상",
           "zh": "異常",
           "en": "abnormal",
-          "ja": "異常"
+          "ja": "異常",
+          "de": "Ideal, Wunschvorstellung"
         }
       },
       {
@@ -3698,7 +4035,8 @@
           "ko": "이론",
           "zh": "理論",
           "en": "theory",
-          "ja": "理論"
+          "ja": "理論",
+          "de": "Theorie"
         }
       },
       {
@@ -3708,7 +4046,8 @@
           "ko": "이성",
           "zh": "理性",
           "en": "reason",
-          "ja": "理性"
+          "ja": "理性",
+          "de": "Vernunft, Verstand"
         }
       },
       {
@@ -3718,7 +4057,8 @@
           "ko": "이력",
           "zh": "履歷",
           "en": "resume/history",
-          "ja": "履歴"
+          "ja": "履歴",
+          "de": "Lebenslauf, Werdegang"
         }
       }
     ]
@@ -3734,7 +4074,8 @@
           "ko": "명백·투명",
           "zh": "明白・透明",
           "en": "clear, transparent",
-          "ja": "明白・透明"
+          "ja": "明白・透明",
+          "de": "transparent, eindeutig, klar"
         }
       },
       {
@@ -3744,7 +4085,8 @@
           "ko": "명증·증거",
           "zh": "明證・證據",
           "en": "evidence, proof",
-          "ja": "明証・証拠"
+          "ja": "明証・証拠",
+          "de": "Beweis, Beleg"
         }
       },
       {
@@ -3754,7 +4096,8 @@
           "ko": "누명을 벗음",
           "zh": "洗清冤屈",
           "en": "clearing one's name",
-          "ja": "汚名をそそぐこと"
+          "ja": "汚名をそそぐこと",
+          "de": "Rehabilitation, Unschuld beweisen"
         }
       },
       {
@@ -3764,7 +4107,8 @@
           "ko": "삽화·예시",
           "zh": "插圖·例示",
           "en": "illustration, example",
-          "ja": "挿絵·例示"
+          "ja": "挿絵·例示",
+          "de": "Illustration, anschaulich machen"
         }
       },
       {
@@ -3774,7 +4118,8 @@
           "ko": "명철함·지혜",
           "zh": "明辨力・智慧",
           "en": "discernment, wisdom",
-          "ja": "明晰さ・知恵"
+          "ja": "明晰さ・知恵",
+          "de": "Weisheit, Urteilskraft"
         }
       },
       {
@@ -3784,7 +4129,8 @@
           "ko": "문명",
           "zh": "文明",
           "en": "civilization",
-          "ja": "文明"
+          "ja": "文明",
+          "de": "Zivilisation"
         }
       }
     ]
@@ -3800,7 +4146,8 @@
           "ko": "미술",
           "zh": "美術",
           "en": "art, fine arts",
-          "ja": "美術"
+          "ja": "美術",
+          "de": "bildende Kunst"
         }
       },
       {
@@ -3810,7 +4157,8 @@
           "ko": "화장품",
           "zh": "化妝品",
           "en": "cosmetics",
-          "ja": "化粧品"
+          "ja": "化粧品",
+          "de": "Kosmetik, Schönheitspflege"
         }
       },
       {
@@ -3820,7 +4168,8 @@
           "ko": "미인",
           "zh": "美人",
           "en": "beautiful person",
-          "ja": "美人"
+          "ja": "美人",
+          "de": "Schönheit, schöne Frau"
         }
       },
       {
@@ -3830,7 +4179,8 @@
           "ko": "만족스러움·원만함",
           "zh": "令人滿意・圓滿",
           "en": "satisfactory, harmonious",
-          "ja": "満足・円満"
+          "ja": "満足・円満",
+          "de": "vollkommen zufriedenstellend"
         }
       },
       {
@@ -3840,7 +4190,8 @@
           "ko": "미감",
           "zh": "美感",
           "en": "aesthetic sense",
-          "ja": "美的感覚"
+          "ja": "美的感覚",
+          "de": "Schönheitssinn, Ästhetik"
         }
       }
     ]
@@ -3856,7 +4207,8 @@
           "ko": "은행",
           "zh": "銀行",
           "en": "bank",
-          "ja": "銀行"
+          "ja": "銀行",
+          "de": "Bank"
         }
       },
       {
@@ -3866,7 +4218,8 @@
           "ko": "예산",
           "zh": "預算",
           "en": "budget",
-          "ja": "予算"
+          "ja": "予算",
+          "de": "Haushalt, Budget"
         }
       },
       {
@@ -3876,7 +4229,8 @@
           "ko": "국고",
           "zh": "國庫",
           "en": "national treasury",
-          "ja": "国庫"
+          "ja": "国庫",
+          "de": "Staatskasse, Fiskus"
         }
       },
       {
@@ -3886,7 +4240,8 @@
           "ko": "수표",
           "zh": "支票",
           "en": "check (bank)",
-          "ja": "小切手"
+          "ja": "小切手",
+          "de": "Bankscheck, Scheck"
         }
       },
       {
@@ -3896,7 +4251,8 @@
           "ko": "기금·자금",
           "zh": "基金‧資金",
           "en": "fund, capital",
-          "ja": "基金・資金"
+          "ja": "基金・資金",
+          "de": "Kassenbestand, Geldmittel"
         }
       }
     ]
@@ -3912,7 +4268,8 @@
           "ko": "외교",
           "zh": "外交",
           "en": "diplomacy",
-          "ja": "外交"
+          "ja": "外交",
+          "de": "Diplomatie"
         }
       },
       {
@@ -3922,7 +4279,8 @@
           "ko": "외국어",
           "zh": "外語",
           "en": "foreign language",
-          "ja": "外国語"
+          "ja": "外国語",
+          "de": "Fremdsprache"
         }
       },
       {
@@ -3932,7 +4290,8 @@
           "ko": "외화",
           "zh": "外幣",
           "en": "foreign currency",
-          "ja": "外貨"
+          "ja": "外貨",
+          "de": "Devisen, Fremdwährung"
         }
       },
       {
@@ -3942,7 +4301,8 @@
           "ko": "외국",
           "zh": "外國",
           "en": "foreign country",
-          "ja": "外国"
+          "ja": "外国",
+          "de": "Ausland, fremdes Land"
         }
       },
       {
@@ -3952,7 +4312,8 @@
           "ko": "외모",
           "zh": "外貌",
           "en": "appearance",
-          "ja": "外見"
+          "ja": "外見",
+          "de": "Aussehen, äußere Erscheinung"
         }
       },
       {
@@ -3962,7 +4323,8 @@
           "ko": "외곽·교외",
           "zh": "郊區·近郊",
           "en": "outskirts/suburbs",
-          "ja": "郊外"
+          "ja": "郊外",
+          "de": "Vorort, Stadtrand"
         }
       }
     ]
@@ -3978,7 +4340,8 @@
           "ko": "원인",
           "zh": "原因",
           "en": "cause",
-          "ja": "原因"
+          "ja": "原因",
+          "de": "Ursache, Anlass"
         }
       },
       {
@@ -3988,7 +4351,8 @@
           "ko": "원칙",
           "zh": "原則",
           "en": "principle",
-          "ja": "原則"
+          "ja": "原則",
+          "de": "Prinzip, Grundsatz"
         }
       },
       {
@@ -3998,7 +4362,8 @@
           "ko": "원료",
           "zh": "原料",
           "en": "raw material",
-          "ja": "原料"
+          "ja": "原料",
+          "de": "Rohstoff, Rohmaterial"
         }
       },
       {
@@ -4008,7 +4373,8 @@
           "ko": "원자",
           "zh": "原子",
           "en": "atom",
-          "ja": "原子"
+          "ja": "原子",
+          "de": "Atom"
         }
       },
       {
@@ -4018,7 +4384,8 @@
           "ko": "온전함",
           "zh": "完整",
           "en": "wholeness/integrity",
-          "ja": "全さ・健全さ"
+          "ja": "全さ・健全さ",
+          "de": "unversehrt, intakt"
         }
       },
       {
@@ -4028,7 +4395,8 @@
           "ko": "원시",
           "zh": "原始",
           "en": "primitive",
-          "ja": "原始"
+          "ja": "原始",
+          "de": "ursprünglich, urzeitlich"
         }
       },
       {
@@ -4038,7 +4406,8 @@
           "ko": "원소",
           "zh": "元素",
           "en": "element",
-          "ja": "元素"
+          "ja": "元素",
+          "de": "chemisches Element"
         }
       }
     ]
@@ -4054,7 +4423,8 @@
           "ko": "인민",
           "zh": "人民",
           "en": "people",
-          "ja": "人民"
+          "ja": "人民",
+          "de": "Volk, Bevölkerung"
         }
       },
       {
@@ -4064,7 +4434,8 @@
           "ko": "직원",
           "zh": "職員",
           "en": "staff",
-          "ja": "職員"
+          "ja": "職員",
+          "de": "Mitarbeiter, Angestellter"
         }
       },
       {
@@ -4074,7 +4445,8 @@
           "ko": "인물",
           "zh": "人物",
           "en": "person",
-          "ja": "人物"
+          "ja": "人物",
+          "de": "Persönlichkeit, Figur"
         }
       },
       {
@@ -4084,7 +4456,8 @@
           "ko": "인류",
           "zh": "人類",
           "en": "mankind",
-          "ja": "人類"
+          "ja": "人類",
+          "de": "Menschheit"
         }
       },
       {
@@ -4094,7 +4467,8 @@
           "ko": "인격",
           "zh": "人格",
           "en": "character",
-          "ja": "人格"
+          "ja": "人格",
+          "de": "Persönlichkeit, Charakter"
         }
       },
       {
@@ -4104,7 +4478,8 @@
           "ko": "인권",
           "zh": "人權",
           "en": "human rights",
-          "ja": "人権"
+          "ja": "人権",
+          "de": "Menschenrechte"
         }
       },
       {
@@ -4114,7 +4489,8 @@
           "ko": "인연",
           "zh": "緣分",
           "en": "bond/fate",
-          "ja": "縁"
+          "ja": "縁",
+          "de": "Schicksalsverbindung, Fügung"
         }
       },
       {
@@ -4124,7 +4500,8 @@
           "ko": "인도적",
           "zh": "人道的",
           "en": "humane",
-          "ja": "人道的"
+          "ja": "人道的",
+          "de": "humanitär, menschenfreundlich"
         }
       },
       {
@@ -4134,7 +4511,8 @@
           "ko": "인재",
           "zh": "人才",
           "en": "talent (person)",
-          "ja": "人材"
+          "ja": "人材",
+          "de": "Fachkraft, Talent"
         }
       },
       {
@@ -4144,7 +4522,8 @@
           "ko": "인건비·노동력",
           "zh": "人事費·勞動力",
           "en": "labor cost/workforce",
-          "ja": "人件費・労働力"
+          "ja": "人件費・労働力",
+          "de": "Arbeitskraft, Personalkosten"
         }
       }
     ]
@@ -4160,7 +4539,8 @@
           "ko": "법률",
           "zh": "法律",
           "en": "law; statute",
-          "ja": "法律"
+          "ja": "法律",
+          "de": "Gesetz, Rechtsordnung"
         }
       },
       {
@@ -4170,7 +4550,8 @@
           "ko": "법리·법적",
           "zh": "法理·法律的",
           "en": "legal principle; legal",
-          "ja": "法理・法的"
+          "ja": "法理・法的",
+          "de": "Rechtslehre, juristisch"
         }
       },
       {
@@ -4180,7 +4561,8 @@
           "ko": "법의학",
           "zh": "法醫學",
           "en": "forensic medicine",
-          "ja": "法医学"
+          "ja": "法医学",
+          "de": "Rechtsmedizin"
         }
       },
       {
@@ -4190,7 +4572,8 @@
           "ko": "법권·법치",
           "zh": "法權·法治",
           "en": "legal authority; rule of law",
-          "ja": "法権・法治"
+          "ja": "法権・法治",
+          "de": "Rechtsordnung, Rechtsstaatlichkeit"
         }
       },
       {
@@ -4200,7 +4583,8 @@
           "ko": "법제",
           "zh": "法制",
           "en": "legal system",
-          "ja": "法制"
+          "ja": "法制",
+          "de": "Gesetzgebung, Rechtsordnung"
         }
       }
     ]
@@ -4216,7 +4600,8 @@
           "ko": "발전",
           "zh": "發展",
           "en": "development",
-          "ja": "発展"
+          "ja": "発展",
+          "de": "Entwicklung, entfalten"
         }
       },
       {
@@ -4226,7 +4611,8 @@
           "ko": "발표·발언",
           "zh": "發表・發言",
           "en": "presentation, statement",
-          "ja": "発表・発言"
+          "ja": "発表・発言",
+          "de": "Redebeitrag, Äußerung, vortragen"
         }
       },
       {
@@ -4236,7 +4622,8 @@
           "ko": "발견",
           "zh": "發現",
           "en": "discovery",
-          "ja": "発見"
+          "ja": "発見",
+          "de": "Entdeckung, entdecken"
         }
       },
       {
@@ -4246,7 +4633,8 @@
           "ko": "발명",
           "zh": "發明",
           "en": "invention",
-          "ja": "発明"
+          "ja": "発明",
+          "de": "Erfindung, erfinden"
         }
       },
       {
@@ -4256,7 +4644,8 @@
           "ko": "발생",
           "zh": "發生",
           "en": "occurrence",
-          "ja": "発生"
+          "ja": "発生",
+          "de": "Entstehung, auftreten"
         }
       },
       {
@@ -4266,7 +4655,8 @@
           "ko": "발행",
           "zh": "發行",
           "en": "publication, issuance",
-          "ja": "発行"
+          "ja": "発行",
+          "de": "Herausgabe, Veröffentlichung"
         }
       },
       {
@@ -4276,7 +4666,8 @@
           "ko": "발음",
           "zh": "發音",
           "en": "pronunciation",
-          "ja": "発音"
+          "ja": "発音",
+          "de": "Aussprache"
         }
       }
     ]
@@ -4292,7 +4683,8 @@
           "ko": "스타일·풍격",
           "zh": "風格",
           "en": "style",
-          "ja": "スタイル·風格"
+          "ja": "スタイル·風格",
+          "de": "Stil, Fasson"
         }
       },
       {
@@ -4302,7 +4694,8 @@
           "ko": "풍속",
           "zh": "風俗",
           "en": "custom",
-          "ja": "風俗"
+          "ja": "風俗",
+          "de": "Brauch, Sitte"
         }
       },
       {
@@ -4312,7 +4705,8 @@
           "ko": "운동·풍조",
           "zh": "運動·風潮",
           "en": "movement/trend",
-          "ja": "運動・風潮"
+          "ja": "運動・風潮",
+          "de": "Bewegung, Strömung"
         }
       },
       {
@@ -4322,7 +4716,8 @@
           "ko": "풍부",
           "zh": "豐富",
           "en": "abundance",
-          "ja": "豊富"
+          "ja": "豊富",
+          "de": "reichhaltig, vielfältig"
         }
       },
       {
@@ -4332,7 +4727,8 @@
           "ko": "풍경",
           "zh": "風景",
           "en": "scenery",
-          "ja": "風景"
+          "ja": "風景",
+          "de": "Landschaft, Szenerie"
         }
       },
       {
@@ -4342,7 +4738,8 @@
           "ko": "풍파",
           "zh": "風波",
           "en": "storm",
-          "ja": "風波"
+          "ja": "風波",
+          "de": "Sturm, Fährnisse, Wirren"
         }
       },
       {
@@ -4352,7 +4749,8 @@
           "ko": "봉건",
           "zh": "封建",
           "en": "feudal",
-          "ja": "封建"
+          "ja": "封建",
+          "de": "feudal, Feudalismus"
         }
       }
     ]
@@ -4368,7 +4766,8 @@
           "ko": "방법",
           "zh": "方法",
           "en": "method",
-          "ja": "方法"
+          "ja": "方法",
+          "de": "Methode, Verfahren"
         }
       },
       {
@@ -4378,7 +4777,8 @@
           "ko": "수단·도구",
           "zh": "手段·工具",
           "en": "means, tool",
-          "ja": "手段·道具"
+          "ja": "手段·道具",
+          "de": "Mittel, Verkehrsmittel, Werkzeug"
         }
       },
       {
@@ -4388,7 +4788,8 @@
           "ko": "방향",
           "zh": "方向",
           "en": "direction",
-          "ja": "方向"
+          "ja": "方向",
+          "de": "Richtung, Orientierung"
         }
       },
       {
@@ -4398,7 +4799,8 @@
           "ko": "방안",
           "zh": "方案",
           "en": "plan; method",
-          "ja": "方策"
+          "ja": "方策",
+          "de": "Entwurf, Konzept, Plan"
         }
       },
       {
@@ -4408,7 +4810,8 @@
           "ko": "방면·측면",
           "zh": "方面・側面",
           "en": "aspect, side",
-          "ja": "方面・側面"
+          "ja": "方面・側面",
+          "de": "Hinsicht, Aspekt, Seite"
         }
       },
       {
@@ -4418,7 +4821,8 @@
           "ko": "방식",
           "zh": "方式",
           "en": "way, manner",
-          "ja": "方式"
+          "ja": "方式",
+          "de": "Art und Weise, Methode"
         }
       }
     ]
@@ -4434,7 +4838,8 @@
           "ko": "관계",
           "zh": "關係",
           "en": "relationship",
-          "ja": "関係"
+          "ja": "関係",
+          "de": "Beziehung, Verhältnis"
         }
       },
       {
@@ -4444,7 +4849,8 @@
           "ko": "관점",
           "zh": "觀點",
           "en": "viewpoint",
-          "ja": "観点"
+          "ja": "観点",
+          "de": "Standpunkt, Ansicht"
         }
       },
       {
@@ -4454,7 +4860,8 @@
           "ko": "관심",
           "zh": "關心",
           "en": "interest",
-          "ja": "関心"
+          "ja": "関心",
+          "de": "Interesse, Aufmerksamkeit"
         }
       },
       {
@@ -4464,7 +4871,8 @@
           "ko": "중요",
           "zh": "重要",
           "en": "importance",
-          "ja": "重要"
+          "ja": "重要",
+          "de": "wichtig, bedeutend"
         }
       },
       {
@@ -4474,7 +4882,8 @@
           "ko": "관찰",
           "zh": "觀察",
           "en": "observation",
-          "ja": "観察"
+          "ja": "観察",
+          "de": "Beobachtung, beobachten"
         }
       },
       {
@@ -4484,7 +4893,8 @@
           "ko": "관료·공직자",
           "zh": "官僚‧公職者",
           "en": "bureaucrat, official",
-          "ja": "官僚・公職者"
+          "ja": "官僚・公職者",
+          "de": "Beamter, Regierungsbeamter"
         }
       }
     ]
@@ -4500,7 +4910,8 @@
           "ko": "국가",
           "zh": "國家",
           "en": "nation, country",
-          "ja": "国家"
+          "ja": "国家",
+          "de": "Nation, Staat"
         }
       },
       {
@@ -4510,7 +4921,8 @@
           "ko": "국제",
           "zh": "國際",
           "en": "international",
-          "ja": "国際"
+          "ja": "国際",
+          "de": "international"
         }
       },
       {
@@ -4520,7 +4932,8 @@
           "ko": "국회",
           "zh": "國會",
           "en": "National Assembly",
-          "ja": "国会"
+          "ja": "国会",
+          "de": "Nationalversammlung, Parlament"
         }
       },
       {
@@ -4530,7 +4943,8 @@
           "ko": "국방",
           "zh": "國防",
           "en": "national defense",
-          "ja": "国防"
+          "ja": "国防",
+          "de": "Landesverteidigung"
         }
       },
       {
@@ -4540,7 +4954,8 @@
           "ko": "국가(애국가)",
           "zh": "國歌",
           "en": "anthem (national anthem)",
-          "ja": "国歌"
+          "ja": "国歌",
+          "de": "Nationalhymne"
         }
       },
       {
@@ -4550,7 +4965,8 @@
           "ko": "국기",
           "zh": "國旗",
           "en": "national flag",
-          "ja": "国旗"
+          "ja": "国旗",
+          "de": "Nationalflagge"
         }
       },
       {
@@ -4560,7 +4976,8 @@
           "ko": "국적",
           "zh": "國籍",
           "en": "nationality",
-          "ja": "国籍"
+          "ja": "国籍",
+          "de": "Staatsangehörigkeit, Staatsbürgerschaft"
         }
       }
     ]
@@ -4576,7 +4993,8 @@
           "ko": "권리",
           "zh": "權利",
           "en": "right",
-          "ja": "権利"
+          "ja": "権利",
+          "de": "Rechte, Anspruch"
         }
       },
       {
@@ -4586,7 +5004,8 @@
           "ko": "권력",
           "zh": "權力",
           "en": "power",
-          "ja": "権力"
+          "ja": "権力",
+          "de": "Macht, Gewalt"
         }
       },
       {
@@ -4596,7 +5015,8 @@
           "ko": "권한",
           "zh": "權限",
           "en": "authority",
-          "ja": "権限"
+          "ja": "権限",
+          "de": "Befugnis, Kompetenz"
         }
       },
       {
@@ -4606,7 +5026,8 @@
           "ko": "권위",
           "zh": "權威",
           "en": "authority",
-          "ja": "権威"
+          "ja": "権威",
+          "de": "Autorität, Machtbefugnis"
         }
       },
       {
@@ -4616,7 +5037,8 @@
           "ko": "권한·직권",
           "zh": "權限‧職權",
           "en": "authority, official power",
-          "ja": "権限・職権"
+          "ja": "権限・職権",
+          "de": "Amtsbefugnis, Vollmacht"
         }
       }
     ]
@@ -4632,7 +5054,8 @@
           "ko": "창조",
           "zh": "創造",
           "en": "creation",
-          "ja": "創造"
+          "ja": "創造",
+          "de": "Schöpfung, Kreativität"
         }
       },
       {
@@ -4642,7 +5065,8 @@
           "ko": "창작",
           "zh": "創作",
           "en": "creation",
-          "ja": "創作"
+          "ja": "創作",
+          "de": "künstlerisches Schaffen, Werk"
         }
       },
       {
@@ -4652,7 +5076,8 @@
           "ko": "발상·아이디어",
           "zh": "構想・點子",
           "en": "idea, notion",
-          "ja": "発想・アイデア"
+          "ja": "発想・アイデア",
+          "de": "Initiative, Einfall, Idee"
         }
       },
       {
@@ -4662,7 +5087,8 @@
           "ko": "창립",
           "zh": "創立",
           "en": "founding",
-          "ja": "創立"
+          "ja": "創立",
+          "de": "Gründung, ins Leben rufen"
         }
       },
       {
@@ -4672,7 +5098,8 @@
           "ko": "현명함",
           "zh": "明智",
           "en": "wisdom",
-          "ja": "賢明さ"
+          "ja": "賢明さ",
+          "de": "scharfsinnig, weise, besonnen"
         }
       },
       {
@@ -4682,7 +5109,8 @@
           "ko": "발명·특허",
           "zh": "發明・專利",
           "en": "invention, patent",
-          "ja": "発明・特許"
+          "ja": "発明・特許",
+          "de": "Erfindung, Patent"
         }
       }
     ]
@@ -4698,7 +5126,8 @@
           "ko": "대학생",
           "zh": "大學生",
           "en": "university student",
-          "ja": "大学生"
+          "ja": "大学生",
+          "de": "Student, Studentin"
         }
       },
       {
@@ -4708,7 +5137,8 @@
           "ko": "생일",
           "zh": "生日",
           "en": "birthday",
-          "ja": "誕生日"
+          "ja": "誕生日",
+          "de": "Geburtstag"
         }
       },
       {
@@ -4718,7 +5148,8 @@
           "ko": "생활",
           "zh": "生活",
           "en": "life, living",
-          "ja": "生活"
+          "ja": "生活",
+          "de": "Alltag, Lebensweise, Aktivität"
         }
       },
       {
@@ -4728,7 +5159,8 @@
           "ko": "생물",
           "zh": "生物",
           "en": "living thing",
-          "ja": "生物"
+          "ja": "生物",
+          "de": "Lebewesen, Organismus"
         }
       },
       {
@@ -4738,7 +5170,8 @@
           "ko": "생동감",
           "zh": "生動感",
           "en": "vividness, liveliness",
-          "ja": "生き生きした感じ"
+          "ja": "生き生きした感じ",
+          "de": "lebendig, anschaulich"
         }
       },
       {
@@ -4748,7 +5181,8 @@
           "ko": "생명",
           "zh": "生命",
           "en": "life",
-          "ja": "命"
+          "ja": "命",
+          "de": "Leben, Existenz"
         }
       },
       {
@@ -4758,7 +5192,8 @@
           "ko": "생산·번식",
           "zh": "生產·繁殖",
           "en": "production, reproduction",
-          "ja": "生産·繁殖"
+          "ja": "生産·繁殖",
+          "de": "Fortpflanzung, Vermehrung"
         }
       },
       {
@@ -4768,7 +5203,8 @@
           "ko": "학생",
           "zh": "學生",
           "en": "student",
-          "ja": "学生"
+          "ja": "学生",
+          "de": "Schüler, Schülerin"
         }
       }
     ]
@@ -4784,7 +5220,8 @@
           "ko": "사건",
           "zh": "事件",
           "en": "incident",
-          "ja": "事件"
+          "ja": "事件",
+          "de": "Ereignis, Vorfall, Event"
         }
       },
       {
@@ -4794,7 +5231,8 @@
           "ko": "사실",
           "zh": "事實",
           "en": "fact",
-          "ja": "事実"
+          "ja": "事実",
+          "de": "Wahrheit, Tatsache, Fakt"
         }
       },
       {
@@ -4804,7 +5242,8 @@
           "ko": "사업·경력",
           "zh": "事業·經歷",
           "en": "business; career",
-          "ja": "事業・経歴"
+          "ja": "事業・経歴",
+          "de": "Karriere, Lebenswerk"
         }
       },
       {
@@ -4814,7 +5253,8 @@
           "ko": "사고·문제",
           "zh": "事故·問題",
           "en": "accident; problem",
-          "ja": "事故・問題"
+          "ja": "事故・問題",
+          "de": "Störung, Zwischenfall, Panne"
         }
       },
       {
@@ -4824,7 +5264,8 @@
           "ko": "사건·일",
           "zh": "事件·事情",
           "en": "incident; matter",
-          "ja": "事件・出来事"
+          "ja": "事件・出来事",
+          "de": "Vorfall, Sachverhalt, Angelegenheit"
         }
       },
       {
@@ -4834,7 +5275,8 @@
           "ko": "사태·형편",
           "zh": "事態·情況",
           "en": "situation, circumstances",
-          "ja": "事態·状況"
+          "ja": "事態·状況",
+          "de": "Sachlage, Umstände"
         }
       }
     ]
@@ -4850,7 +5292,8 @@
           "ko": "작가",
           "zh": "作家",
           "en": "writer",
-          "ja": "作家"
+          "ja": "作家",
+          "de": "Autor, Verfasser"
         }
       },
       {
@@ -4860,7 +5303,8 @@
           "ko": "작품",
           "zh": "作品",
           "en": "work (of art)",
-          "ja": "作品"
+          "ja": "作品",
+          "de": "Kunstwerk, Werk"
         }
       },
       {
@@ -4870,7 +5314,8 @@
           "ko": "작용·효과",
           "zh": "作用·效果",
           "en": "action/effect",
-          "ja": "作用・効果"
+          "ja": "作用・効果",
+          "de": "Wirkung, Effekt"
         }
       },
       {
@@ -4880,7 +5325,8 @@
           "ko": "영향·작용",
           "zh": "影響·作用",
           "en": "influence/effect",
-          "ja": "影響・作用"
+          "ja": "影響・作用",
+          "de": "Einwirkung, Einfluss"
         }
       },
       {
@@ -4890,7 +5336,8 @@
           "ko": "작전",
           "zh": "作戰",
           "en": "operation",
-          "ja": "作戦"
+          "ja": "作戦",
+          "de": "Operation, Gefecht"
         }
       },
       {
@@ -4900,7 +5347,8 @@
           "ko": "태도·기풍",
           "zh": "態度·風氣",
           "en": "attitude, ethos",
-          "ja": "態度・気風"
+          "ja": "態度・気風",
+          "de": "Arbeitsweise, Auftreten"
         }
       }
     ]
@@ -4916,7 +5364,8 @@
           "ko": "재정·금융",
           "zh": "財政·金融",
           "en": "finance/banking",
-          "ja": "財政・金融"
+          "ja": "財政・金融",
+          "de": "Finanzen, Finanzwesen"
         }
       },
       {
@@ -4926,7 +5375,8 @@
           "ko": "재능",
           "zh": "才能",
           "en": "talent",
-          "ja": "才能"
+          "ja": "才能",
+          "de": "Talent, Begabung"
         }
       },
       {
@@ -4936,7 +5386,8 @@
           "ko": "재산",
           "zh": "財產",
           "en": "property",
-          "ja": "財産"
+          "ja": "財産",
+          "de": "Vermögen, Eigentum"
         }
       },
       {
@@ -4946,7 +5397,8 @@
           "ko": "자료",
           "zh": "資料",
           "en": "data",
-          "ja": "資料"
+          "ja": "資料",
+          "de": "Unterlagen, Material, Dokument"
         }
       },
       {
@@ -4956,7 +5408,8 @@
           "ko": "후원·지원",
           "zh": "贊助·支持",
           "en": "sponsorship / support",
-          "ja": "後援・支援"
+          "ja": "後援・支援",
+          "de": "Sponsoring, finanzielle Unterstützung"
         }
       },
       {
@@ -4966,7 +5419,8 @@
           "ko": "자원",
           "zh": "資源",
           "en": "resource",
-          "ja": "資源"
+          "ja": "資源",
+          "de": "Ressourcen, Bodenschätze"
         }
       }
     ]
@@ -4982,7 +5436,8 @@
           "ko": "심리",
           "zh": "心理",
           "en": "psychology, mental state",
-          "ja": "心理"
+          "ja": "心理",
+          "de": "Psychologie, Seelenleben"
         }
       },
       {
@@ -4992,7 +5447,8 @@
           "ko": "심정·기분",
           "zh": "心情・情緒",
           "en": "feelings · mood",
-          "ja": "心情・気分"
+          "ja": "心情・気分",
+          "de": "Gemütszustand, Stimmung"
         }
       },
       {
@@ -5002,7 +5458,8 @@
           "ko": "마음·영혼",
           "zh": "心・靈魂",
           "en": "mind, soul",
-          "ja": "心・魂"
+          "ja": "心・魂",
+          "de": "Seele, Gemüt"
         }
       },
       {
@@ -5012,7 +5469,8 @@
           "ko": "속마음·고민토로",
           "zh": "心裡話·傾訴煩惱",
           "en": "inner thoughts, confiding worries",
-          "ja": "本音·悩み相談"
+          "ja": "本音·悩み相談",
+          "de": "Herzensgedanken, Sorgen anvertrauen"
         }
       },
       {
@@ -5022,7 +5480,8 @@
           "ko": "심혈",
           "zh": "心血",
           "en": "heart and effort",
-          "ja": "心血"
+          "ja": "心血",
+          "de": "Herzblut, Hingabe"
         }
       },
       {
@@ -5032,7 +5491,8 @@
           "ko": "심령",
           "zh": "心靈",
           "en": "spirit, soul",
-          "ja": "心霊"
+          "ja": "心霊",
+          "de": "Spiritualität, seelisch"
         }
       },
       {
@@ -5042,7 +5502,8 @@
           "ko": "마음에 듦·터득함",
           "zh": "中意・掌握",
           "en": "liking, mastering",
-          "ja": "気に入る・習得"
+          "ja": "気に入る・習得",
+          "de": "begeistert, verinnerlicht"
         }
       },
       {
@@ -5052,7 +5513,8 @@
           "ko": "심성·성격",
           "zh": "心性・性格",
           "en": "disposition · personality",
-          "ja": "心根・性格"
+          "ja": "心根・性格",
+          "de": "Gemüt, Wesensart"
         }
       }
     ]
@@ -5068,7 +5530,8 @@
           "ko": "집중",
           "zh": "集中",
           "en": "concentration",
-          "ja": "集中"
+          "ja": "集中",
+          "de": "Konzentration, fokussieren"
         }
       },
       {
@@ -5078,7 +5541,8 @@
           "ko": "집단·단체",
           "zh": "集團·團體",
           "en": "group/organization",
-          "ja": "集団・団体"
+          "ja": "集団・団体",
+          "de": "Kollektiv, Gruppe"
         }
       },
       {
@@ -5088,7 +5552,8 @@
           "ko": "습관·관습",
           "zh": "習慣·風俗",
           "en": "habit, custom",
-          "ja": "習慣·慣習"
+          "ja": "習慣·慣習",
+          "de": "Gewohnheit, Brauch"
         }
       },
       {
@@ -5098,7 +5563,8 @@
           "ko": "훈련·연습",
           "zh": "訓練·練習",
           "en": "training / practice",
-          "ja": "訓練・練習"
+          "ja": "訓練・練習",
+          "de": "Training, Übung"
         }
       },
       {
@@ -5108,7 +5574,8 @@
           "ko": "그룹·기업집단",
           "zh": "集團‧企業集團",
           "en": "group, conglomerate",
-          "ja": "グループ・企業集団"
+          "ja": "グループ・企業集団",
+          "de": "Konzern, Unternehmensgruppe"
         }
       },
       {
@@ -5118,7 +5585,8 @@
           "ko": "학습",
           "zh": "學習",
           "en": "learning",
-          "ja": "学習"
+          "ja": "学習",
+          "de": "Lernen, Studium"
         }
       }
     ]
@@ -5134,7 +5602,8 @@
           "ko": "성공",
           "zh": "成功",
           "en": "success",
-          "ja": "成功"
+          "ja": "成功",
+          "de": "Erfolg"
         }
       },
       {
@@ -5144,7 +5613,8 @@
           "ko": "도시",
           "zh": "城市",
           "en": "city",
-          "ja": "都市"
+          "ja": "都市",
+          "de": "Stadt, Großstadt"
         }
       },
       {
@@ -5154,7 +5624,8 @@
           "ko": "구성원",
           "zh": "成員",
           "en": "member",
-          "ja": "構成員"
+          "ja": "構成員",
+          "de": "Mitglied"
         }
       },
       {
@@ -5164,7 +5635,8 @@
           "ko": "성적·업적",
           "zh": "成績·業績",
           "en": "grades, achievement",
-          "ja": "成績·業績"
+          "ja": "成績·業績",
+          "de": "Leistung, Errungenschaft"
         }
       },
       {
@@ -5174,7 +5646,8 @@
           "ko": "설립",
           "zh": "設立",
           "en": "establishment",
-          "ja": "設立"
+          "ja": "設立",
+          "de": "Gründung, Errichtung"
         }
       },
       {
@@ -5184,7 +5657,8 @@
           "ko": "성실함",
           "zh": "誠實·忠信",
           "en": "sincerity, faithfulness",
-          "ja": "誠実さ"
+          "ja": "誠実さ",
+          "de": "ehrlich, aufrichtig"
         }
       },
       {
@@ -5194,7 +5668,8 @@
           "ko": "숙달됨",
           "zh": "熟練",
           "en": "proficient",
-          "ja": "熟達している"
+          "ja": "熟達している",
+          "de": "versiert, meisterhaft, routiniert"
         }
       },
       {
@@ -5204,7 +5679,8 @@
           "ko": "진심 어림",
           "zh": "誠心誠意",
           "en": "being heartfelt",
-          "ja": "心がこもっていること"
+          "ja": "心がこもっていること",
+          "de": "aufrichtig, herzlich"
         }
       }
     ]
@@ -5220,7 +5696,8 @@
           "ko": "세계",
           "zh": "世界",
           "en": "world",
-          "ja": "世界"
+          "ja": "世界",
+          "de": "Welt"
         }
       },
       {
@@ -5230,7 +5707,8 @@
           "ko": "세기",
           "zh": "世紀",
           "en": "century",
-          "ja": "世紀"
+          "ja": "世紀",
+          "de": "Jahrhundert"
         }
       },
       {
@@ -5240,7 +5718,8 @@
           "ko": "세대",
           "zh": "世代",
           "en": "generation",
-          "ja": "世代"
+          "ja": "世代",
+          "de": "Generation"
         }
       },
       {
@@ -5250,7 +5729,8 @@
           "ko": "세력",
           "zh": "勢力",
           "en": "power, influence",
-          "ja": "勢力"
+          "ja": "勢力",
+          "de": "Macht, Einfluss"
         }
       },
       {
@@ -5260,7 +5740,8 @@
           "ko": "세상사·시사",
           "zh": "世事·時事",
           "en": "worldly affairs, current events",
-          "ja": "世事·時事"
+          "ja": "世事·時事",
+          "de": "Zeitgeschehen, Weltgeschehen"
         }
       }
     ]
@@ -5276,7 +5757,8 @@
           "ko": "체육·스포츠",
           "zh": "體育·運動",
           "en": "physical education, sports",
-          "ja": "体育・スポーツ"
+          "ja": "体育・スポーツ",
+          "de": "Sport"
         }
       },
       {
@@ -5286,7 +5768,8 @@
           "ko": "표현·나타냄",
           "zh": "表現·表達",
           "en": "expression, showing",
-          "ja": "表現・表すこと"
+          "ja": "表現・表すこと",
+          "de": "Ausdruck, Darstellung"
         }
       },
       {
@@ -5296,7 +5779,8 @@
           "ko": "체질·체격",
           "zh": "體質·體格",
           "en": "constitution, physique",
-          "ja": "体質・体格"
+          "ja": "体質・体格",
+          "de": "Konstitution, Körperbau"
         }
       },
       {
@@ -5306,7 +5790,8 @@
           "ko": "장르·종류",
           "zh": "類型·種類",
           "en": "genre/type",
-          "ja": "ジャンル・種類"
+          "ja": "ジャンル・種類",
+          "de": "Genre, Gattung"
         }
       },
       {
@@ -5316,7 +5801,8 @@
           "ko": "체력",
           "zh": "體力",
           "en": "physical strength",
-          "ja": "体力"
+          "ja": "体力",
+          "de": "physische Kraft, Ausdauer"
         }
       },
       {
@@ -5326,7 +5812,8 @@
           "ko": "체제",
           "zh": "體制",
           "en": "system",
-          "ja": "体制"
+          "ja": "体制",
+          "de": "System, Staatsform, Ordnung"
         }
       }
     ]
@@ -5342,7 +5829,8 @@
           "ko": "시장",
           "zh": "市場",
           "en": "market",
-          "ja": "市場"
+          "ja": "市場",
+          "de": "Markt"
         }
       },
       {
@@ -5352,7 +5840,8 @@
           "ko": "읍·소도시",
           "zh": "邑·小城鎮",
           "en": "town/small city",
-          "ja": "町・小都市"
+          "ja": "町・小都市",
+          "de": "Kleinstadt, Ortschaft"
         }
       },
       {
@@ -5362,7 +5851,8 @@
           "ko": "시사(소도시)",
           "zh": "城鎮（小城市）",
           "en": "town (small city)",
-          "ja": "町（小都市）"
+          "ja": "町（小都市）",
+          "de": "Kreisstadt, Kleinstadt"
         }
       },
       {
@@ -5372,7 +5862,8 @@
           "ko": "시력",
           "zh": "視力",
           "en": "eyesight",
-          "ja": "視力"
+          "ja": "視力",
+          "de": "Sehkraft, Sehschärfe"
         }
       },
       {
@@ -5382,7 +5873,8 @@
           "ko": "시각",
           "zh": "時刻",
           "en": "point in time",
-          "ja": "時刻"
+          "ja": "時刻",
+          "de": "Sehsinn, Sehkraft"
         }
       }
     ]
@@ -5398,7 +5890,8 @@
           "ko": "정보",
           "zh": "資訊",
           "en": "information",
-          "ja": "情報"
+          "ja": "情報",
+          "de": "Information, Nachricht"
         }
       },
       {
@@ -5408,7 +5901,8 @@
           "ko": "통보·공지",
           "zh": "通報·公告",
           "en": "notification, notice",
-          "ja": "通報・告知"
+          "ja": "通報・告知",
+          "de": "Mitteilung, Bekanntmachung"
         }
       },
       {
@@ -5418,7 +5912,8 @@
           "ko": "똑똑함",
           "zh": "聰明",
           "en": "smartness, cleverness",
-          "ja": "賢さ"
+          "ja": "賢さ",
+          "de": "klug, intelligent"
         }
       },
       {
@@ -5428,7 +5923,8 @@
           "ko": "보통·일반적",
           "zh": "普通·一般",
           "en": "normal; general",
-          "ja": "普通・一般的"
+          "ja": "普通・一般的",
+          "de": "gewöhnlich, üblich, normal"
         }
       },
       {
@@ -5438,7 +5934,8 @@
           "ko": "이해·공감",
           "zh": "理解·共鳴",
           "en": "understanding/empathy",
-          "ja": "理解・共感"
+          "ja": "理解・共感",
+          "de": "Verständnis, Einfühlungsvermögen"
         }
       },
       {
@@ -5448,7 +5945,8 @@
           "ko": "통과",
           "zh": "通過",
           "en": "passage",
-          "ja": "通過"
+          "ja": "通過",
+          "de": "billigen, verabschieden, passieren"
         }
       }
     ]
@@ -5464,7 +5962,8 @@
           "ko": "시간",
           "zh": "時間",
           "en": "time",
-          "ja": "時間"
+          "ja": "時間",
+          "de": "Zeit"
         }
       },
       {
@@ -5474,7 +5973,8 @@
           "ko": "날씨",
           "zh": "天氣",
           "en": "weather",
-          "ja": "天気"
+          "ja": "天気",
+          "de": "Wetter"
         }
       },
       {
@@ -5484,7 +5984,8 @@
           "ko": "패션",
           "zh": "時尚",
           "en": "fashion",
-          "ja": "ファッション"
+          "ja": "ファッション",
+          "de": "Mode, Fashion"
         }
       },
       {
@@ -5494,7 +5995,8 @@
           "ko": "시사",
           "zh": "時事",
           "en": "current affairs",
-          "ja": "時事"
+          "ja": "時事",
+          "de": "Tagesgeschehen, aktuelle Nachrichten"
         }
       },
       {
@@ -5504,7 +6006,8 @@
           "ko": "시대",
           "zh": "時代",
           "en": "era",
-          "ja": "時代"
+          "ja": "時代",
+          "de": "Epoche, Zeitalter, Ära"
         }
       },
       {
@@ -5514,7 +6017,8 @@
           "ko": "시기·기회",
           "zh": "時機·機會",
           "en": "timing, opportunity",
-          "ja": "時期·機会"
+          "ja": "時期·機会",
+          "de": "Gelegenheit, günstiger Moment"
         }
       }
     ]
@@ -5530,7 +6034,8 @@
           "ko": "수입",
           "zh": "收入",
           "en": "income",
-          "ja": "収入"
+          "ja": "収入",
+          "de": "Einkommen, Einnahmen"
         }
       },
       {
@@ -5540,7 +6045,8 @@
           "ko": "수확",
           "zh": "收穫",
           "en": "harvest",
-          "ja": "収穫"
+          "ja": "収穫",
+          "de": "Ernte, ernten"
         }
       },
       {
@@ -5550,7 +6056,8 @@
           "ko": "끌어들임·매료",
           "zh": "吸引·魅力",
           "en": "attraction · fascination",
-          "ja": "引き寄せ・魅了"
+          "ja": "引き寄せ・魅了",
+          "de": "anziehen, faszinieren"
         }
       },
       {
@@ -5560,7 +6067,8 @@
           "ko": "수집",
           "zh": "收集",
           "en": "collection",
-          "ja": "収集"
+          "ja": "収集",
+          "de": "sammeln, erfassen"
         }
       },
       {
@@ -5570,7 +6078,8 @@
           "ko": "계산원·수납원",
           "zh": "收銀員",
           "en": "cashier",
-          "ja": "レジ係"
+          "ja": "レジ係",
+          "de": "Kassierer, Kasse"
         }
       }
     ]
@@ -5586,7 +6095,8 @@
           "ko": "수속·절차",
           "zh": "手續·程序",
           "en": "procedure",
-          "ja": "手続き"
+          "ja": "手続き",
+          "de": "Verfahren, Formalität"
         }
       },
       {
@@ -5596,7 +6106,8 @@
           "ko": "수도",
           "zh": "首都",
           "en": "capital (city)",
-          "ja": "首都"
+          "ja": "首都",
+          "de": "Hauptstadt"
         }
       },
       {
@@ -5606,7 +6117,8 @@
           "ko": "총리",
           "zh": "總理",
           "en": "prime minister",
-          "ja": "首相"
+          "ja": "首相",
+          "de": "Premierminister, Regierungschef"
         }
       },
       {
@@ -5616,7 +6128,8 @@
           "ko": "수령·우두머리",
           "zh": "首領·頭目",
           "en": "leader, chief",
-          "ja": "首領·頭"
+          "ja": "首領·頭",
+          "de": "Anführer, Oberhaupt"
         }
       },
       {
@@ -5626,7 +6139,8 @@
           "ko": "수공",
           "zh": "手工",
           "en": "handicraft",
-          "ja": "手工"
+          "ja": "手工",
+          "de": "Handarbeit, Handwerk"
         }
       }
     ]
@@ -5642,7 +6156,8 @@
           "ko": "진보",
           "zh": "進步",
           "en": "progress",
-          "ja": "進歩"
+          "ja": "進歩",
+          "de": "Fortschritt, fortschrittlich"
         }
       },
       {
@@ -5652,7 +6167,8 @@
           "ko": "진행",
           "zh": "進行",
           "en": "progress",
-          "ja": "進行"
+          "ja": "進行",
+          "de": "durchführen, vornehmen"
         }
       },
       {
@@ -5662,7 +6178,8 @@
           "ko": "박사",
           "zh": "博士",
           "en": "doctor (PhD)",
-          "ja": "博士"
+          "ja": "博士",
+          "de": "Doktor (PhD)"
         }
       },
       {
@@ -5672,7 +6189,8 @@
           "ko": "진행과정",
           "zh": "進行過程",
           "en": "process",
-          "ja": "進行過程"
+          "ja": "進行過程",
+          "de": "Verlauf, Prozess"
         }
       },
       {
@@ -5682,7 +6200,8 @@
           "ko": "진도",
           "zh": "進度",
           "en": "progress",
-          "ja": "進度"
+          "ja": "進度",
+          "de": "Fortschrittstempo, Zeitplan"
         }
       },
       {
@@ -5692,7 +6211,8 @@
           "ko": "진전",
           "zh": "進展",
           "en": "progress",
-          "ja": "進展"
+          "ja": "進展",
+          "de": "Entwicklung, Fortschreiten"
         }
       }
     ]
@@ -5708,7 +6228,8 @@
           "ko": "사랑",
           "zh": "愛",
           "en": "love",
-          "ja": "愛"
+          "ja": "愛",
+          "de": "Liebe"
         }
       },
       {
@@ -5718,7 +6239,8 @@
           "ko": "우정",
           "zh": "友情",
           "en": "friendship",
-          "ja": "友情"
+          "ja": "友情",
+          "de": "Freundschaft"
         }
       },
       {
@@ -5728,7 +6250,8 @@
           "ko": "감정·정",
           "zh": "感情",
           "en": "emotion/feeling",
-          "ja": "感情・情"
+          "ja": "感情・情",
+          "de": "Gefühl, Zuneigung, Emotion"
         }
       },
       {
@@ -5738,7 +6261,8 @@
           "ko": "상황",
           "zh": "狀況",
           "en": "situation",
-          "ja": "状況"
+          "ja": "状況",
+          "de": "Situation, Sachlage"
         }
       },
       {
@@ -5748,7 +6272,8 @@
           "ko": "정세·상황",
           "zh": "情勢·狀況",
           "en": "situation/circumstances",
-          "ja": "情勢・状況"
+          "ja": "情勢・状況",
+          "de": "Lage, Umstände"
         }
       },
       {
@@ -5758,7 +6283,8 @@
           "ko": "자원·자원봉사",
           "zh": "資源·志願服務",
           "en": "resource/volunteering",
-          "ja": "資源・ボランティア"
+          "ja": "資源・ボランティア",
+          "de": "freiwillig, ehrenamtlich"
         }
       },
       {
@@ -5768,7 +6294,8 @@
           "ko": "정의(情義)·의리",
           "zh": "情義·義理",
           "en": "loyalty, affection",
-          "ja": "情義・義理"
+          "ja": "情義・義理",
+          "de": "Verbundenheit, Loyalität, Zuneigung"
         }
       },
       {
@@ -5778,7 +6305,8 @@
           "ko": "연인",
           "zh": "戀人",
           "en": "lover, sweetheart",
-          "ja": "恋人"
+          "ja": "恋人",
+          "de": "Liebhaber, Geliebte(r)"
         }
       },
       {
@@ -5788,7 +6316,8 @@
           "ko": "감정",
           "zh": "感情",
           "en": "emotion",
-          "ja": "感情"
+          "ja": "感情",
+          "de": "Zuneigung, Wohlwollen"
         }
       }
     ]
@@ -5804,7 +6333,8 @@
           "ko": "종교",
           "zh": "宗教",
           "en": "religion",
-          "ja": "宗教"
+          "ja": "宗教",
+          "de": "Religion"
         }
       },
       {
@@ -5814,7 +6344,8 @@
           "ko": "존중",
           "zh": "尊重",
           "en": "respect",
-          "ja": "尊重"
+          "ja": "尊重",
+          "de": "Respekt, respektieren"
         }
       },
       {
@@ -5824,7 +6355,8 @@
           "ko": "숭배",
           "zh": "崇拜",
           "en": "worship",
-          "ja": "崇拝"
+          "ja": "崇拝",
+          "de": "Verehrung, anbeten"
         }
       },
       {
@@ -5834,7 +6366,8 @@
           "ko": "영예·기림",
           "zh": "榮譽·讚揚",
           "en": "honor/praise",
-          "ja": "栄誉・称賛"
+          "ja": "栄誉・称賛",
+          "de": "ehren, preisen, würdigen"
         }
       },
       {
@@ -5844,7 +6377,8 @@
           "ko": "위계·서열",
           "zh": "位階·序列",
           "en": "hierarchy/rank",
-          "ja": "位階・序列"
+          "ja": "位階・序列",
+          "de": "Rangordnung, Hierarchie"
         }
       }
     ]
@@ -5860,7 +6394,8 @@
           "ko": "대통령",
           "zh": "總統",
           "en": "president",
-          "ja": "大統領"
+          "ja": "大統領",
+          "de": "Präsident, Staatspräsident"
         }
       },
       {
@@ -5870,7 +6405,8 @@
           "ko": "종합",
           "zh": "綜合",
           "en": "comprehensive",
-          "ja": "総合"
+          "ja": "総合",
+          "de": "umfassend, Synthese"
         }
       },
       {
@@ -5880,7 +6416,8 @@
           "ko": "합계·총",
           "zh": "合計·總計",
           "en": "sum / total",
-          "ja": "合計・総"
+          "ja": "合計・総",
+          "de": "insgesamt, Summe"
         }
       },
       {
@@ -5890,7 +6427,8 @@
           "ko": "총결·총정리",
           "zh": "總結·總整理",
           "en": "summary, overall review",
-          "ja": "総括・まとめ"
+          "ja": "総括・まとめ",
+          "de": "Zusammenfassung, Fazit"
         }
       },
       {
@@ -5900,7 +6438,8 @@
           "ko": "전체",
           "zh": "全體",
           "en": "whole",
-          "ja": "全体"
+          "ja": "全体",
+          "de": "Gesamtheit, gesamt"
         }
       }
     ]
@@ -5916,7 +6455,8 @@
           "ko": "복장",
           "zh": "服裝",
           "en": "attire",
-          "ja": "服装"
+          "ja": "服装",
+          "de": "Kleidung, Tracht, Bekleidung"
         }
       },
       {
@@ -5926,7 +6466,8 @@
           "ko": "장비·갖춤",
           "zh": "裝備·配備",
           "en": "equipment",
-          "ja": "装備・備え"
+          "ja": "装備・備え",
+          "de": "Ausrüstung, Ausstattung"
         }
       },
       {
@@ -5936,7 +6477,8 @@
           "ko": "장식",
           "zh": "裝飾",
           "en": "decoration",
-          "ja": "装飾"
+          "ja": "装飾",
+          "de": "Dekoration, Verzierung"
         }
       },
       {
@@ -5946,7 +6488,8 @@
           "ko": "장엄함",
           "zh": "莊嚴",
           "en": "majesty",
-          "ja": "荘厳さ"
+          "ja": "荘厳さ",
+          "de": "feierlich, würdevoll, erhaben"
         }
       },
       {
@@ -5956,7 +6499,8 @@
           "ko": "장신구·액세서리",
           "zh": "飾品·配件",
           "en": "jewelry/accessories",
-          "ja": "装身具・アクセサリー"
+          "ja": "装身具・アクセサリー",
+          "de": "Schmuck, Zierde"
         }
       }
     ]
@@ -5972,7 +6516,8 @@
           "ko": "지식·지식인",
           "zh": "知識·知識分子",
           "en": "knowledge/intellectual",
-          "ja": "知識・知識人"
+          "ja": "知識・知識人",
+          "de": "Wissen, Intellektuelle"
         }
       },
       {
@@ -5982,7 +6527,8 @@
           "ko": "지혜",
           "zh": "智慧",
           "en": "wisdom",
-          "ja": "知恵"
+          "ja": "知恵",
+          "de": "Weisheit, Klugheit"
         }
       },
       {
@@ -5992,7 +6538,8 @@
           "ko": "기억력",
           "zh": "記憶力",
           "en": "memory (power)",
-          "ja": "記憶力"
+          "ja": "記憶力",
+          "de": "Gedächtnis, Erinnerungsvermögen"
         }
       },
       {
@@ -6002,7 +6549,8 @@
           "ko": "두뇌",
           "zh": "頭腦",
           "en": "brain",
-          "ja": "頭脳"
+          "ja": "頭脳",
+          "de": "Verstand, Gehirn"
         }
       },
       {
@@ -6012,7 +6560,8 @@
           "ko": "지력",
           "zh": "智力",
           "en": "intellect",
-          "ja": "知力"
+          "ja": "知力",
+          "de": "Geisteskraft, Intellekt"
         }
       }
     ]
@@ -6028,7 +6577,8 @@
           "ko": "수준",
           "zh": "水準",
           "en": "level, standard",
-          "ja": "水準"
+          "ja": "水準",
+          "de": "Niveau, Bildungsgrad"
         }
       },
       {
@@ -6038,7 +6588,8 @@
           "ko": "설명·제시",
           "zh": "說明·提示",
           "en": "explanation, presentation",
-          "ja": "説明·提示"
+          "ja": "説明·提示",
+          "de": "darlegen, vortragen, präsentieren"
         }
       },
       {
@@ -6048,7 +6599,8 @@
           "ko": "공연·시연",
           "zh": "表演‧示範",
           "en": "performance, demonstration",
-          "ja": "公演・実演"
+          "ja": "公演・実演",
+          "de": "Aufführung, Vorführung"
         }
       },
       {
@@ -6058,7 +6610,8 @@
           "ko": "순서·절차",
           "zh": "順序·程序",
           "en": "order, procedure",
-          "ja": "順序·手順"
+          "ja": "順序·手順",
+          "de": "Reihenfolge, Ablauf, Prozedur"
         }
       },
       {
@@ -6068,7 +6621,8 @@
           "ko": "브라우저",
           "zh": "瀏覽器",
           "en": "browser",
-          "ja": "ブラウザ"
+          "ja": "ブラウザ",
+          "de": "Browser, Webbrowser"
         }
       }
     ]
@@ -6084,7 +6638,8 @@
           "ko": "중심·센터",
           "zh": "中心",
           "en": "center",
-          "ja": "中心・センター"
+          "ja": "中心・センター",
+          "de": "Zentrum, Mittelpunkt"
         }
       },
       {
@@ -6094,7 +6649,8 @@
           "ko": "충성",
           "zh": "忠誠",
           "en": "loyalty",
-          "ja": "忠誠"
+          "ja": "忠誠",
+          "de": "loyal, treu, Loyalität"
         }
       },
       {
@@ -6104,7 +6660,8 @@
           "ko": "정직",
           "zh": "正直",
           "en": "honesty",
-          "ja": "正直"
+          "ja": "正直",
+          "de": "ehrlich, aufrichtig"
         }
       },
       {
@@ -6114,7 +6671,8 @@
           "ko": "평균",
           "zh": "平均",
           "en": "average",
-          "ja": "平均"
+          "ja": "平均",
+          "de": "durchschnittlich, Mittelwert"
         }
       },
       {
@@ -6124,7 +6682,8 @@
           "ko": "중립",
           "zh": "中立",
           "en": "neutrality",
-          "ja": "中立"
+          "ja": "中立",
+          "de": "neutral, Neutralität"
         }
       },
       {
@@ -6134,7 +6693,8 @@
           "ko": "중개·매개",
           "zh": "仲介·媒介",
           "en": "intermediary/mediation",
-          "ja": "仲介・媒介"
+          "ja": "仲介・媒介",
+          "de": "Vermittler, Zwischenstation"
         }
       }
     ]
@@ -6150,7 +6710,8 @@
           "ko": "전통",
           "zh": "傳統",
           "en": "tradition",
-          "ja": "伝統"
+          "ja": "伝統",
+          "de": "Tradition, traditionell"
         }
       },
       {
@@ -6160,7 +6721,8 @@
           "ko": "미디어·전달",
           "zh": "媒體・傳達",
           "en": "media, communication",
-          "ja": "メディア・伝達"
+          "ja": "メディア・伝達",
+          "de": "Medien, Kommunikation"
         }
       },
       {
@@ -6170,7 +6732,8 @@
           "ko": "텔레비전",
           "zh": "電視",
           "en": "television",
-          "ja": "テレビ"
+          "ja": "テレビ",
+          "de": "Fernsehen, TV"
         }
       },
       {
@@ -6180,7 +6743,8 @@
           "ko": "전설",
           "zh": "傳說",
           "en": "legend",
-          "ja": "伝説"
+          "ja": "伝説",
+          "de": "Legende, Überlieferung"
         }
       },
       {
@@ -6190,7 +6754,8 @@
           "ko": "전염",
           "zh": "傳染",
           "en": "contagion",
-          "ja": "伝染"
+          "ja": "伝染",
+          "de": "Ansteckung, Infektion"
         }
       },
       {
@@ -6200,7 +6765,8 @@
           "ko": "전달",
           "zh": "傳達",
           "en": "delivery",
-          "ja": "伝達"
+          "ja": "伝達",
+          "de": "übermitteln, mitteilen"
         }
       }
     ]
@@ -6216,7 +6782,8 @@
           "ko": "학교",
           "zh": "學校",
           "en": "school",
-          "ja": "学校"
+          "ja": "学校",
+          "de": "Schule"
         }
       },
       {
@@ -6226,7 +6793,8 @@
           "ko": "경우",
           "zh": "情況",
           "en": "case/situation",
-          "ja": "場合"
+          "ja": "場合",
+          "de": "Fall, Situation"
         }
       },
       {
@@ -6236,7 +6804,8 @@
           "ko": "장기적",
           "zh": "長期的",
           "en": "long-term",
-          "ja": "長期的"
+          "ja": "長期的",
+          "de": "langfristig, langwierig"
         }
       },
       {
@@ -6246,7 +6815,8 @@
           "ko": "장수",
           "zh": "長壽",
           "en": "longevity",
-          "ja": "長寿"
+          "ja": "長寿",
+          "de": "Langlebigkeit, langes Leben"
         }
       },
       {
@@ -6256,7 +6826,8 @@
           "ko": "장가(서사시)",
           "zh": "長歌（史詩）",
           "en": "epic poem",
-          "ja": "長歌（叙事詩）"
+          "ja": "長歌（叙事詩）",
+          "de": "Epos, episches Langgedicht"
         }
       },
       {
@@ -6266,7 +6837,8 @@
           "ko": "시장",
           "zh": "市場",
           "en": "market",
-          "ja": "市場"
+          "ja": "市場",
+          "de": "Markt"
         }
       },
       {
@@ -6276,7 +6848,8 @@
           "ko": "교장",
           "zh": "校長",
           "en": "principal",
-          "ja": "校長"
+          "ja": "校長",
+          "de": "Schulleiter, Rektor"
         }
       }
     ]
@@ -6292,7 +6865,8 @@
           "ko": "사유·사고",
           "zh": "思維·思考",
           "en": "reasoning; thinking",
-          "ja": "思惟・思考"
+          "ja": "思惟・思考",
+          "de": "Denken, Denkweise"
         }
       },
       {
@@ -6302,7 +6876,8 @@
           "ko": "사상",
           "zh": "思想",
           "en": "thought; ideology",
-          "ja": "思想"
+          "ja": "思想",
+          "de": "Ideologie, Gedankengut"
         }
       },
       {
@@ -6312,7 +6887,8 @@
           "ko": "자격",
           "zh": "資格",
           "en": "qualification",
-          "ja": "資格"
+          "ja": "資格",
+          "de": "Qualifikation, Eignung, Status"
         }
       },
       {
@@ -6322,7 +6898,8 @@
           "ko": "자문·상담",
           "zh": "諮詢·輔導",
           "en": "consultation/counseling",
-          "ja": "諮問・相談"
+          "ja": "諮問・相談",
+          "de": "Beratung, konsultieren"
         }
       },
       {
@@ -6332,7 +6909,8 @@
           "ko": "사적·민간",
           "zh": "私人·民間",
           "en": "private; civilian",
-          "ja": "私的・民間"
+          "ja": "私的・民間",
+          "de": "privat, Privatperson"
         }
       },
       {
@@ -6342,7 +6920,8 @@
           "ko": "자료",
           "zh": "資料",
           "en": "data",
-          "ja": "資料"
+          "ja": "資料",
+          "de": "Materialien, Dokumente"
         }
       }
     ]
@@ -6358,7 +6937,8 @@
           "ko": "사전",
           "zh": "字典",
           "en": "dictionary",
-          "ja": "辞書"
+          "ja": "辞書",
+          "de": "Wörterbuch"
         }
       },
       {
@@ -6368,7 +6948,8 @@
           "ko": "어휘·단어",
           "zh": "詞彙・單詞",
           "en": "vocabulary · word",
-          "ja": "語彙・単語"
+          "ja": "語彙・単語",
+          "de": "Wortschatz, Begriffe"
         }
       },
       {
@@ -6378,7 +6959,8 @@
           "ko": "거절",
           "zh": "拒絕",
           "en": "refusal",
-          "ja": "拒絶"
+          "ja": "拒絶",
+          "de": "ablehnen, abweisen"
         }
       },
       {
@@ -6388,7 +6970,8 @@
           "ko": "자선",
           "zh": "慈善",
           "en": "charity",
-          "ja": "慈善"
+          "ja": "慈善",
+          "de": "Wohltätigkeit, Nächstenliebe"
         }
       },
       {
@@ -6398,7 +6981,8 @@
           "ko": "자비심",
           "zh": "慈悲心",
           "en": "compassion",
-          "ja": "慈悲心"
+          "ja": "慈悲心",
+          "de": "Barmherzigkeit, Mitgefühl"
         }
       }
     ]
@@ -6414,7 +6998,8 @@
           "ko": "자유",
           "zh": "自由",
           "en": "freedom",
-          "ja": "自由"
+          "ja": "自由",
+          "de": "Freiheit, frei"
         }
       },
       {
@@ -6424,7 +7009,8 @@
           "ko": "자신감",
           "zh": "自信心",
           "en": "confidence",
-          "ja": "自信"
+          "ja": "自信",
+          "de": "Selbstvertrauen, zuversichtlich"
         }
       },
       {
@@ -6434,7 +7020,8 @@
           "ko": "자연",
           "zh": "自然",
           "en": "nature",
-          "ja": "自然"
+          "ja": "自然",
+          "de": "Natur, natürlich"
         }
       },
       {
@@ -6444,7 +7031,8 @@
           "ko": "자동",
           "zh": "自動",
           "en": "automatic",
-          "ja": "自動"
+          "ja": "自動",
+          "de": "automatisch"
         }
       },
       {
@@ -6454,7 +7042,8 @@
           "ko": "자각·자발적",
           "zh": "自覺·自發的",
           "en": "self-awareness/voluntary",
-          "ja": "自覚・自発的"
+          "ja": "自覚・自発的",
+          "de": "selbstbewusst, eigenverantwortlich"
         }
       },
       {
@@ -6464,7 +7053,8 @@
           "ko": "자존심",
           "zh": "自尊心",
           "en": "pride",
-          "ja": "自尊心"
+          "ja": "自尊心",
+          "de": "Selbstachtung, Würde"
         }
       },
       {
@@ -6474,7 +7064,8 @@
           "ko": "문자",
           "zh": "文字",
           "en": "character, letter",
-          "ja": "文字"
+          "ja": "文字",
+          "de": "Schrift, Schriftzeichen"
         }
       }
     ]
@@ -6490,7 +7081,8 @@
           "ko": "문화",
           "zh": "文化",
           "en": "culture",
-          "ja": "文化"
+          "ja": "文化",
+          "de": "Kultur"
         }
       },
       {
@@ -6500,7 +7092,8 @@
           "ko": "문학",
           "zh": "文學",
           "en": "literature",
-          "ja": "文学"
+          "ja": "文学",
+          "de": "Literatur"
         }
       },
       {
@@ -6510,7 +7103,8 @@
           "ko": "사무실",
           "zh": "辦公室",
           "en": "office",
-          "ja": "事務所"
+          "ja": "事務所",
+          "de": "Büro"
         }
       },
       {
@@ -6520,7 +7114,8 @@
           "ko": "문서",
           "zh": "文件",
           "en": "document",
-          "ja": "文書"
+          "ja": "文書",
+          "de": "Dokument, Textfassung"
         }
       },
       {
@@ -6530,7 +7125,8 @@
           "ko": "문명",
           "zh": "文明",
           "en": "civilization",
-          "ja": "文明"
+          "ja": "文明",
+          "de": "Zivilisation"
         }
       },
       {
@@ -6540,7 +7136,8 @@
           "ko": "문예",
           "zh": "文藝",
           "en": "literature and art",
-          "ja": "文芸"
+          "ja": "文芸",
+          "de": "Kunst und Kultur, Literatur"
         }
       }
     ]
@@ -6556,7 +7153,8 @@
           "ko": "재료",
           "zh": "材料",
           "en": "material",
-          "ja": "材料"
+          "ja": "材料",
+          "de": "Werkstoff, Material"
         }
       },
       {
@@ -6566,7 +7164,8 @@
           "ko": "물질",
           "zh": "物質",
           "en": "matter, material",
-          "ja": "物質"
+          "ja": "物質",
+          "de": "Materie, Sachwerte"
         }
       },
       {
@@ -6576,7 +7175,8 @@
           "ko": "물가",
           "zh": "物價",
           "en": "prices",
-          "ja": "物価"
+          "ja": "物価",
+          "de": "Lebenshaltungskosten, Preisniveau"
         }
       },
       {
@@ -6586,7 +7186,8 @@
           "ko": "물리",
           "zh": "物理",
           "en": "physics",
-          "ja": "物理"
+          "ja": "物理",
+          "de": "Physik"
         }
       },
       {
@@ -6596,7 +7197,8 @@
           "ko": "가축·반려동물",
           "zh": "家畜·寵物",
           "en": "livestock/pet",
-          "ja": "家畜・ペット"
+          "ja": "家畜・ペット",
+          "de": "Haustier, Nutztier"
         }
       }
     ]
@@ -6612,7 +7214,8 @@
           "ko": "수출",
           "zh": "出口",
           "en": "export",
-          "ja": "輸出"
+          "ja": "輸出",
+          "de": "Export, Ausfuhr"
         }
       },
       {
@@ -6622,7 +7225,8 @@
           "ko": "출판",
           "zh": "出版",
           "en": "publication",
-          "ja": "出版"
+          "ja": "出版",
+          "de": "Veröffentlichung, publizieren"
         }
       },
       {
@@ -6632,7 +7236,8 @@
           "ko": "출현",
           "zh": "出現",
           "en": "appearance",
-          "ja": "出現"
+          "ja": "出現",
+          "de": "Erscheinen, Auftauchen"
         }
       },
       {
@@ -6642,7 +7247,8 @@
           "ko": "출발",
           "zh": "出發",
           "en": "departure",
-          "ja": "出発"
+          "ja": "出発",
+          "de": "Abfahrt, Start"
         }
       },
       {
@@ -6652,7 +7258,8 @@
           "ko": "우수함·뛰어남",
           "zh": "優秀·卓越",
           "en": "excellence",
-          "ja": "優秀さ・卓越"
+          "ja": "優秀さ・卓越",
+          "de": "hervorragend, ausgezeichnet"
         }
       },
       {
@@ -6662,7 +7269,8 @@
           "ko": "출처·원산지",
           "zh": "出處·原產地",
           "en": "source, origin",
-          "ja": "出所・原産地"
+          "ja": "出所・原産地",
+          "de": "Herkunft, Ursprung"
         }
       },
       {
@@ -6672,7 +7280,8 @@
           "ko": "신들린 듯 뛰어남",
           "zh": "出神入化",
           "en": "uncannily brilliant, as if inspired",
-          "ja": "神がかり的な素晴らしさ"
+          "ja": "神がかり的な素晴らしさ",
+          "de": "meisterhaft, genial, hingerissen"
         }
       }
     ]
@@ -6688,7 +7297,8 @@
           "ko": "의료",
           "zh": "醫療",
           "en": "medical care",
-          "ja": "医療"
+          "ja": "医療",
+          "de": "Gesundheitswesen, medizinische Versorgung"
         }
       },
       {
@@ -6698,7 +7308,8 @@
           "ko": "의학",
           "zh": "醫學",
           "en": "medicine (science)",
-          "ja": "医学"
+          "ja": "医学",
+          "de": "Medizin (Wissenschaft)"
         }
       },
       {
@@ -6708,7 +7319,8 @@
           "ko": "간호사",
           "zh": "護士",
           "en": "nurse",
-          "ja": "看護師"
+          "ja": "看護師",
+          "de": "Krankenpfleger, Krankenschwester"
         }
       },
       {
@@ -6718,7 +7330,8 @@
           "ko": "의사",
           "zh": "醫生",
           "en": "doctor",
-          "ja": "医者"
+          "ja": "医者",
+          "de": "Arzt, Mediziner"
         }
       },
       {
@@ -6728,7 +7341,8 @@
           "ko": "의복",
           "zh": "衣服",
           "en": "clothing",
-          "ja": "衣服"
+          "ja": "衣服",
+          "de": "Kleidung, Gewand"
         }
       }
     ]
@@ -6744,7 +7358,8 @@
           "ko": "의미",
           "zh": "意義",
           "en": "meaning",
-          "ja": "意味"
+          "ja": "意味",
+          "de": "Bedeutung, Sinn"
         }
       },
       {
@@ -6754,7 +7369,8 @@
           "ko": "의견",
           "zh": "意見",
           "en": "opinion",
-          "ja": "意見"
+          "ja": "意見",
+          "de": "Meinung, Ansicht"
         }
       },
       {
@@ -6764,7 +7380,8 @@
           "ko": "의식",
           "zh": "儀式",
           "en": "ceremony",
-          "ja": "儀式"
+          "ja": "儀式",
+          "de": "Bewusstsein"
         }
       },
       {
@@ -6774,7 +7391,8 @@
           "ko": "의지",
           "zh": "意志",
           "en": "will",
-          "ja": "意志"
+          "ja": "意志",
+          "de": "Wille, Willenskraft"
         }
       },
       {
@@ -6784,7 +7402,8 @@
           "ko": "의도",
           "zh": "意圖",
           "en": "intention",
-          "ja": "意図"
+          "ja": "意図",
+          "de": "Absicht, Vorhaben"
         }
       },
       {
@@ -6794,7 +7413,8 @@
           "ko": "아이디어·발상",
           "zh": "點子・構想",
           "en": "idea · notion",
-          "ja": "アイデア・発想"
+          "ja": "アイデア・発想",
+          "de": "Idee, Gedanke"
         }
       }
     ]
