@@ -9,7 +9,8 @@
       "en": "surrender",
       "ja": "降伏",
       "de": "Kapitulation",
-      "fr": "capitulation"
+      "fr": "capitulation",
+      "pl": "kapitulacja"
     },
     "kind": "normal",
     "display_n": 1
@@ -23,7 +24,8 @@
       "en": "aviation",
       "ja": "航空",
       "de": "Luftfahrt",
-      "fr": "aviation"
+      "fr": "aviation",
+      "pl": "lotnictwo"
     },
     "kind": "base",
     "display_n": 2
@@ -37,7 +39,8 @@
       "en": "civilian (use)",
       "ja": "民間用",
       "de": "zivil (Nutzung)",
-      "fr": "civil (usage)"
+      "fr": "civil (usage)",
+      "pl": "cywilny (użytek)"
     },
     "kind": "base",
     "display_n": 3
@@ -52,7 +55,8 @@
       "en": "civil aviation",
       "ja": "民間航空",
       "de": "Zivilluftfahrt",
-      "fr": "aviation civile"
+      "fr": "aviation civile",
+      "pl": "lotnictwo cywilne"
     },
     "kind": "compound",
     "parts": [
@@ -71,7 +75,8 @@
       "en": "devoting one's intention",
       "ja": "意を傾けること",
       "de": "Sorgfalt, Absicht widmen",
-      "fr": "consacrer son intention, application"
+      "fr": "consacrer son intention, application",
+      "pl": "skupienie intencji, zaangażowanie"
     },
     "kind": "normal",
     "display_n": 5
@@ -86,7 +91,8 @@
       "en": "inner thoughts, confiding worries",
       "ja": "本音·悩み相談",
       "de": "Herzensgedanken, Sorgen anvertrauen",
-      "fr": "pensées intimes, confidences"
+      "fr": "pensées intimes, confidences",
+      "pl": "zwierzenia, intymne myśli"
     },
     "kind": "normal",
     "display_n": 6
@@ -101,7 +107,8 @@
       "en": "business; career",
       "ja": "事業・経歴",
       "de": "Karriere, Lebenswerk",
-      "fr": "carrière, œuvre"
+      "fr": "carrière, œuvre",
+      "pl": "kariera, dorobek życiowy"
     },
     "kind": "normal",
     "display_n": 7
@@ -115,7 +122,8 @@
       "en": "work, task",
       "ja": "業務",
       "de": "Geschäftstätigkeit, Dienstgeschäft",
-      "fr": "activité professionnelle, opérations"
+      "fr": "activité professionnelle, opérations",
+      "pl": "obowiązki zawodowe, operacje"
     },
     "kind": "base",
     "display_n": 8
@@ -129,7 +137,8 @@
       "en": "bank",
       "ja": "銀行",
       "de": "Bank",
-      "fr": "banque"
+      "fr": "banque",
+      "pl": "bank"
     },
     "kind": "base",
     "display_n": 9
@@ -144,7 +153,8 @@
       "en": "banking business",
       "ja": "銀行業務",
       "de": "Bankgeschäft",
-      "fr": "opérations bancaires"
+      "fr": "opérations bancaires",
+      "pl": "operacje bankowe"
     },
     "kind": "compound",
     "parts": [
@@ -163,7 +173,8 @@
       "en": "product",
       "ja": "商品",
       "de": "Ware, Güter",
-      "fr": "marchandise, biens"
+      "fr": "marchandise, biens",
+      "pl": "towar, dobra"
     },
     "kind": "normal",
     "display_n": 11
@@ -178,7 +189,8 @@
       "en": "chemical substance",
       "ja": "化学物質",
       "de": "Chemikalie",
-      "fr": "produit chimique, substance chimique"
+      "fr": "produit chimique, substance chimique",
+      "pl": "substancja chemiczna"
     },
     "kind": "normal",
     "display_n": 12
@@ -193,7 +205,8 @@
       "en": "texture/material",
       "ja": "材質・素材",
       "de": "Material, Werkstoff",
-      "fr": "matériau, matière"
+      "fr": "matériau, matière",
+      "pl": "tworzywo, materiał"
     },
     "kind": "normal",
     "display_n": 13
@@ -208,7 +221,8 @@
       "en": "treatment process",
       "ja": "治療過程",
       "de": "Behandlungsverlauf, Kur",
-      "fr": "protocole de traitement, cure"
+      "fr": "protocole de traitement, cure",
+      "pl": "cykl leczenia, kuracja"
     },
     "kind": "normal",
     "display_n": 14
@@ -223,7 +237,8 @@
       "en": "performance, demonstration",
       "ja": "公演・実演",
       "de": "Aufführung, Vorführung",
-      "fr": "spectacle, démonstration"
+      "fr": "spectacle, démonstration",
+      "pl": "występ, pokaz"
     },
     "kind": "normal",
     "display_n": 15
@@ -238,7 +253,8 @@
       "en": "actor",
       "ja": "俳優",
       "de": "Schauspieler",
-      "fr": "acteur, comédien"
+      "fr": "acteur, comédien",
+      "pl": "aktor"
     },
     "kind": "normal",
     "display_n": 16
@@ -253,7 +269,8 @@
       "en": "wealthy landowner (archaic term)",
       "ja": "(昔の)地主・富豪",
       "de": "Gutsherr, Großgrundbesitzer",
-      "fr": "grand propriétaire terrien, notable"
+      "fr": "grand propriétaire terrien, notable",
+      "pl": "zamożny właściciel ziemski (dawny)"
     },
     "kind": "normal",
     "display_n": 17
@@ -268,7 +285,8 @@
       "en": "appearance",
       "ja": "外見",
       "de": "Aussehen, Erscheinungsbild",
-      "fr": "apparence physique"
+      "fr": "apparence physique",
+      "pl": "wygląd zewnętrzny"
     },
     "kind": "normal",
     "display_n": 18
@@ -283,7 +301,8 @@
       "en": "detective",
       "ja": "刑事",
       "de": "Kriminalfall, Strafsache",
-      "fr": "affaire criminelle, pénal"
+      "fr": "affaire criminelle, pénal",
+      "pl": "sprawa kryminalna, wydział śledczy"
     },
     "kind": "normal",
     "display_n": 19
@@ -298,7 +317,8 @@
       "en": "situation, circumstances",
       "ja": "事態·状況",
       "de": "Sachlage, Umstände",
-      "fr": "état des choses, situation"
+      "fr": "état des choses, situation",
+      "pl": "stan rzeczy, sytuacja"
     },
     "kind": "normal",
     "display_n": 20
@@ -313,7 +333,8 @@
       "en": "constitution, physique",
       "ja": "体質・体格",
       "de": "Konstitution, Körperbau",
-      "fr": "constitution physique"
+      "fr": "constitution physique",
+      "pl": "budowa ciała, kondycja"
     },
     "kind": "normal",
     "display_n": 21
@@ -328,7 +349,8 @@
       "en": "quality",
       "ja": "品質",
       "de": "Qualität",
-      "fr": "qualité"
+      "fr": "qualité",
+      "pl": "jakość"
     },
     "kind": "normal",
     "display_n": 22
@@ -343,7 +365,8 @@
       "en": "to evaluate",
       "ja": "評価する",
       "de": "bewerten, einschätzen",
-      "fr": "évaluer, estimer"
+      "fr": "évaluer, estimer",
+      "pl": "oceniać, szacować"
     },
     "kind": "normal",
     "display_n": 23
@@ -358,7 +381,8 @@
       "en": "value",
       "ja": "価値",
       "de": "Wert",
-      "fr": "valeur"
+      "fr": "valeur",
+      "pl": "wartość"
     },
     "kind": "normal",
     "display_n": 24
@@ -373,7 +397,8 @@
       "en": "treatment",
       "ja": "治療",
       "de": "Behandlung, Therapie",
-      "fr": "traitement, thérapie"
+      "fr": "traitement, thérapie",
+      "pl": "terapia, leczenie"
     },
     "kind": "normal",
     "display_n": 25
@@ -388,7 +413,8 @@
       "en": "therapy",
       "ja": "療法",
       "de": "Therapieform, Heilverfahren",
-      "fr": "thérapie, méthode thérapeutique"
+      "fr": "thérapie, méthode thérapeutique",
+      "pl": "metoda terapeutyczna"
     },
     "kind": "normal",
     "display_n": 26
@@ -403,7 +429,8 @@
       "en": "legal system",
       "ja": "法制",
       "de": "Gesetzgebung, Rechtsordnung",
-      "fr": "législation, système juridique"
+      "fr": "législation, système juridique",
+      "pl": "system prawny, prawodawstwo"
     },
     "kind": "normal",
     "display_n": 27
@@ -418,7 +445,8 @@
       "en": "manufacturing",
       "ja": "製造",
       "de": "Herstellung, Fabrikation",
-      "fr": "fabrication, manufacture"
+      "fr": "fabrication, manufacture",
+      "pl": "produkcja, wytwarzanie"
     },
     "kind": "normal",
     "display_n": 28
@@ -433,7 +461,8 @@
       "en": "the Creator",
       "ja": "造化翁・創造主",
       "de": "Schöpfer, Schöpfung",
-      "fr": "Créateur, nature créatrice"
+      "fr": "Créateur, nature créatrice",
+      "pl": "Stwórca"
     },
     "kind": "normal",
     "display_n": 29
@@ -448,7 +477,8 @@
       "en": "makeup; costume",
       "ja": "扮装",
       "de": "Maske, Kostümierung",
-      "fr": "maquillage, déguisement"
+      "fr": "maquillage, déguisement",
+      "pl": "charakteryzacja, makijaż"
     },
     "kind": "normal",
     "display_n": 30
@@ -463,7 +493,8 @@
       "en": "decoration",
       "ja": "装飾",
       "de": "Dekoration, Verzierung",
-      "fr": "décoration, ornement"
+      "fr": "décoration, ornement",
+      "pl": "dekoracja, ozdoba"
     },
     "kind": "normal",
     "display_n": 31
@@ -478,7 +509,8 @@
       "en": "knowledge/intellectual",
       "ja": "知識・知識人",
       "de": "Wissen, Intellektuelle",
-      "fr": "intellectuel, connaissances"
+      "fr": "intellectuel, connaissances",
+      "pl": "wiedza, intelektualista"
     },
     "kind": "normal",
     "display_n": 32
@@ -492,7 +524,8 @@
       "en": "awakening/realization",
       "ja": "目覚め・覚醒",
       "de": "Erwachen, Besinnung",
-      "fr": "éveil, prise de conscience"
+      "fr": "éveil, prise de conscience",
+      "pl": "przebudzenie, uświadomienie"
     },
     "kind": "base",
     "display_n": 33
@@ -506,7 +539,8 @@
       "en": "conscience",
       "ja": "良心",
       "de": "Gewissen",
-      "fr": "conscience"
+      "fr": "conscience",
+      "pl": "sumienie"
     },
     "kind": "base",
     "display_n": 34
@@ -521,7 +555,8 @@
       "en": "awakening the conscience",
       "ja": "良心を呼び覚ますこと",
       "de": "das Gewissen wachrütteln",
-      "fr": "éveiller la conscience"
+      "fr": "éveiller la conscience",
+      "pl": "przebudzenie sumienia"
     },
     "kind": "compound",
     "parts": [
@@ -540,7 +575,8 @@
       "en": "disposition · personality",
       "ja": "心根・性格",
       "de": "Gemüt, Wesensart",
-      "fr": "caractère, tempérament"
+      "fr": "caractère, tempérament",
+      "pl": "usposobienie, charakter"
     },
     "kind": "normal",
     "display_n": 36
@@ -555,7 +591,8 @@
       "en": "adjective",
       "ja": "形容詞",
       "de": "Adjektiv",
-      "fr": "adjectif"
+      "fr": "adjectif",
+      "pl": "przymiotnik"
     },
     "kind": "normal",
     "display_n": 37
@@ -570,7 +607,8 @@
       "en": "dictionary",
       "ja": "辞書",
       "de": "Wörterbuch",
-      "fr": "dictionnaire"
+      "fr": "dictionnaire",
+      "pl": "słownik"
     },
     "kind": "normal",
     "display_n": 38
@@ -585,7 +623,8 @@
       "en": "typical",
       "ja": "典型的",
       "de": "typisch",
-      "fr": "typique"
+      "fr": "typique",
+      "pl": "typowy"
     },
     "kind": "normal",
     "display_n": 39
@@ -600,7 +639,8 @@
       "en": "form",
       "ja": "形式",
       "de": "Form, Formalität",
-      "fr": "forme, formalité"
+      "fr": "forme, formalité",
+      "pl": "forma, formalność"
     },
     "kind": "normal",
     "display_n": 40
@@ -615,7 +655,8 @@
       "en": "savvy about trends",
       "ja": "世情に明るい",
       "de": "zeitgemäß, die Zeichen der Zeit verstehen",
-      "fr": "dans l’air du temps, avisé"
+      "fr": "dans l’air du temps, avisé",
+      "pl": "znający realia, nowoczesny"
     },
     "kind": "normal",
     "display_n": 41
@@ -630,7 +671,8 @@
       "en": "time",
       "ja": "時間",
       "de": "Zeit",
-      "fr": "temps"
+      "fr": "temps",
+      "pl": "czas"
     },
     "kind": "normal",
     "display_n": 42
@@ -645,7 +687,8 @@
       "en": "spy",
       "ja": "スパイ・間者",
       "de": "Spion",
-      "fr": "espion"
+      "fr": "espion",
+      "pl": "szpieg"
     },
     "kind": "normal",
     "display_n": 43
@@ -660,7 +703,8 @@
       "en": "cell",
       "ja": "細胞",
       "de": "Zelle",
-      "fr": "cellule"
+      "fr": "cellule",
+      "pl": "komórka (biol.)"
     },
     "kind": "normal",
     "display_n": 44
@@ -675,7 +719,8 @@
       "en": "pharmaceutical/dispensing",
       "ja": "製薬・調剤",
       "de": "Arzneizubereitung, Rezeptur",
-      "fr": "préparation pharmaceutique"
+      "fr": "préparation pharmaceutique",
+      "pl": "sporządzanie leków, farmacja"
     },
     "kind": "normal",
     "display_n": 45
@@ -690,7 +735,8 @@
       "en": "system",
       "ja": "制度",
       "de": "System, Ordnung",
-      "fr": "régime, système"
+      "fr": "régime, système",
+      "pl": "ustrój, system"
     },
     "kind": "normal",
     "display_n": 46
@@ -705,7 +751,8 @@
       "en": "broad-mindedness",
       "ja": "度量が広いこと",
       "de": "Großmut, Weitherzigkeit",
-      "fr": "indulgence, générosité"
+      "fr": "indulgence, générosité",
+      "pl": "wielkoduszność, pobłażliwość"
     },
     "kind": "normal",
     "display_n": 47
@@ -720,7 +767,8 @@
       "en": "classifier (grammar)",
       "ja": "量詞（文法）",
       "de": "Zähleinheitswort, Klassifikator",
-      "fr": "classificateur (grammaire)"
+      "fr": "classificateur (grammaire)",
+      "pl": "klasyfikator (gramatyka)"
     },
     "kind": "normal",
     "display_n": 48
@@ -735,7 +783,8 @@
       "en": "compassion",
       "ja": "慈悲心",
       "de": "Barmherzigkeit, Mitgefühl",
-      "fr": "compassion, bienveillance"
+      "fr": "compassion, bienveillance",
+      "pl": "współczucie, życzliwość"
     },
     "kind": "normal",
     "display_n": 49
@@ -750,7 +799,8 @@
       "en": "psychology, mental state",
       "ja": "心理",
       "de": "Psychologie, Seelenleben",
-      "fr": "psychologie, état d’esprit"
+      "fr": "psychologie, état d’esprit",
+      "pl": "psychologia, stan psychiczny"
     },
     "kind": "normal",
     "display_n": 50
@@ -765,7 +815,8 @@
       "en": "reason",
       "ja": "理性",
       "de": "Vernunft, Verstand",
-      "fr": "raison, esprit rationnel"
+      "fr": "raison, esprit rationnel",
+      "pl": "rozsądek, rozum"
     },
     "kind": "normal",
     "display_n": 51
@@ -780,7 +831,8 @@
       "en": "intellect",
       "ja": "知力",
       "de": "Geisteskraft, Intellekt",
-      "fr": "facultés intellectuelles"
+      "fr": "facultés intellectuelles",
+      "pl": "sprawność umysłowa"
     },
     "kind": "normal",
     "display_n": 52
@@ -795,7 +847,8 @@
       "en": "strongman · strong person",
       "ja": "力士・力持ち",
       "de": "Kraftmensch, Athlet",
-      "fr": "athlète, homme fort"
+      "fr": "athlète, homme fort",
+      "pl": "siłacz, atleta"
     },
     "kind": "normal",
     "display_n": 53
@@ -810,7 +863,8 @@
       "en": "cadet officer; officer",
       "ja": "士官・将校",
       "de": "Offizier",
-      "fr": "officier"
+      "fr": "officier",
+      "pl": "oficer"
     },
     "kind": "normal",
     "display_n": 54
@@ -825,7 +879,8 @@
       "en": "interest",
       "ja": "関心",
       "de": "Interesse, Aufmerksamkeit",
-      "fr": "intérêt, attention"
+      "fr": "intérêt, attention",
+      "pl": "zainteresowanie, uwaga"
     },
     "kind": "normal",
     "display_n": 55
@@ -840,7 +895,8 @@
       "en": "psychology",
       "ja": "心理学",
       "de": "Psychologie",
-      "fr": "psychologie"
+      "fr": "psychologie",
+      "pl": "psychologia"
     },
     "kind": "compound",
     "parts": null,
@@ -856,7 +912,8 @@
       "en": "tuition",
       "ja": "学費",
       "de": "Schulgeld, Studiengebühren",
-      "fr": "frais de scolarité"
+      "fr": "frais de scolarité",
+      "pl": "czesne, opłata za naukę"
     },
     "kind": "normal",
     "display_n": 57
@@ -871,7 +928,8 @@
       "en": "waste",
       "ja": "無駄にする",
       "de": "verschwenden",
-      "fr": "gaspiller"
+      "fr": "gaspiller",
+      "pl": "marnotrawić"
     },
     "kind": "normal",
     "display_n": 58
@@ -886,7 +944,8 @@
       "en": "illegal act",
       "ja": "違法",
       "de": "Rechtsverstoß, rechtswidrig",
-      "fr": "infraction, illégal"
+      "fr": "infraction, illégal",
+      "pl": "przestępstwo, naruszenie prawa"
     },
     "kind": "normal",
     "display_n": 59
@@ -901,7 +960,8 @@
       "en": "law; statute",
       "ja": "法律",
       "de": "Gesetz, Rechtsordnung",
-      "fr": "loi, législation"
+      "fr": "loi, législation",
+      "pl": "prawo, przepisy"
     },
     "kind": "normal",
     "display_n": 60
@@ -916,7 +976,8 @@
       "en": "lawyer",
       "ja": "弁護士",
       "de": "Rechtsanwalt",
-      "fr": "avocat"
+      "fr": "avocat",
+      "pl": "adwokat, prawnik"
     },
     "kind": "normal",
     "display_n": 61
@@ -930,7 +991,8 @@
       "en": "instructor",
       "ja": "師範",
       "de": "Pädagogik, Ausbilder",
-      "fr": "pédagogie"
+      "fr": "pédagogie",
+      "pl": "pedagogika"
     },
     "kind": "base",
     "display_n": 62
@@ -944,7 +1006,8 @@
       "en": "technology, skill",
       "ja": "技術",
       "de": "Technologie, Technik",
-      "fr": "technique, technologie"
+      "fr": "technique, technologie",
+      "pl": "technologia, technika"
     },
     "kind": "base",
     "display_n": 63
@@ -959,7 +1022,8 @@
       "en": "industrial teacher training (technical education)",
       "ja": "工業師範(技術教育)",
       "de": "technische Berufspädagogik",
-      "fr": "pédagogie de l’enseignement technique"
+      "fr": "pédagogie de l’enseignement technique",
+      "pl": "pedagogika techniczna"
     },
     "kind": "compound",
     "parts": [
@@ -977,7 +1041,8 @@
       "en": "algorithm",
       "ja": "アルゴリズム",
       "de": "Algorithmus",
-      "fr": "algorithme"
+      "fr": "algorithme",
+      "pl": "algorytm"
     },
     "kind": "base",
     "display_n": 65
@@ -991,7 +1056,8 @@
       "en": "computer",
       "ja": "コンピューター",
       "de": "Computer, Rechner",
-      "fr": "ordinateur"
+      "fr": "ordinateur",
+      "pl": "komputer"
     },
     "kind": "base",
     "display_n": 66
@@ -1006,7 +1072,8 @@
       "en": "computer algorithm",
       "ja": "コンピューターアルゴリズム",
       "de": "Computeralgorithmus",
-      "fr": "algorithme informatique"
+      "fr": "algorithme informatique",
+      "pl": "algorytm komputerowy"
     },
     "kind": "compound",
     "parts": [
@@ -1025,7 +1092,8 @@
       "en": "personality",
       "ja": "性格",
       "de": "Charakter, Persönlichkeit",
-      "fr": "caractère, personnalité"
+      "fr": "caractère, personnalité",
+      "pl": "osobowość, charakter"
     },
     "kind": "normal",
     "display_n": 68
@@ -1040,7 +1108,8 @@
       "en": "revolution",
       "ja": "革命",
       "de": "Revolution",
-      "fr": "révolution"
+      "fr": "révolution",
+      "pl": "rewolucja"
     },
     "kind": "normal",
     "display_n": 69
@@ -1054,7 +1123,8 @@
       "en": "network",
       "ja": "網・ネットワーク",
       "de": "Netzwerk, Netz",
-      "fr": "réseau"
+      "fr": "réseau",
+      "pl": "sieć"
     },
     "kind": "base",
     "display_n": 70
@@ -1068,7 +1138,8 @@
       "en": "society",
       "ja": "社会",
       "de": "Gesellschaft",
-      "fr": "société"
+      "fr": "société",
+      "pl": "społeczeństwo"
     },
     "kind": "base",
     "display_n": 71
@@ -1083,7 +1154,8 @@
       "en": "social media",
       "ja": "ソーシャルメディア",
       "de": "soziale Medien",
-      "fr": "médias sociaux, réseau social"
+      "fr": "médias sociaux, réseau social",
+      "pl": "media społecznościowe"
     },
     "kind": "compound",
     "parts": [
@@ -1102,7 +1174,8 @@
       "en": "member",
       "ja": "会員",
       "de": "Mitglied",
-      "fr": "membre, adhérent"
+      "fr": "membre, adhérent",
+      "pl": "członek (organizacji)"
     },
     "kind": "normal",
     "display_n": 73
@@ -1117,7 +1190,8 @@
       "en": "civil servant, staff",
       "ja": "公務員・職員",
       "de": "Beamter, Angestellter",
-      "fr": "fonctionnaire, agent"
+      "fr": "fonctionnaire, agent",
+      "pl": "urzędnik, pracownik państwowy"
     },
     "kind": "normal",
     "display_n": 74
@@ -1132,7 +1206,8 @@
       "en": "duty/position",
       "ja": "職務・職位",
       "de": "Amt, Position",
-      "fr": "fonction, poste"
+      "fr": "fonction, poste",
+      "pl": "stanowisko, funkcja"
     },
     "kind": "normal",
     "display_n": 75
@@ -1147,7 +1222,8 @@
       "en": "seeking self-interest",
       "ja": "私利を図ること",
       "de": "Eigennutz, Selbstsucht",
-      "fr": "intérêt personnel, égoïsme"
+      "fr": "intérêt personnel, égoïsme",
+      "pl": "własny interes, egoizm"
     },
     "kind": "normal",
     "display_n": 76
@@ -1162,7 +1238,8 @@
       "en": "use/abuse",
       "ja": "利用・悪用",
       "de": "ausnutzen, nutzen",
-      "fr": "exploiter, profiter de"
+      "fr": "exploiter, profiter de",
+      "pl": "wykorzystywać, nadużywać"
     },
     "kind": "normal",
     "display_n": 77
@@ -1177,7 +1254,8 @@
       "en": "intention",
       "ja": "意図",
       "de": "Absicht, Intention",
-      "fr": "intention, dessein"
+      "fr": "intention, dessein",
+      "pl": "zamysł, intencja"
     },
     "kind": "normal",
     "display_n": 78
@@ -1192,7 +1270,8 @@
       "en": "opinion",
       "ja": "意見",
       "de": "Meinung, Ansicht",
-      "fr": "opinion, avis"
+      "fr": "opinion, avis",
+      "pl": "opinia, zdanie"
     },
     "kind": "normal",
     "display_n": 79
@@ -1207,7 +1286,8 @@
       "en": "formation",
       "ja": "造成・形成",
       "de": "Gestaltung, Bildung",
-      "fr": "formation, création"
+      "fr": "formation, création",
+      "pl": "tworzenie, kształtowanie"
     },
     "kind": "normal",
     "display_n": 80
@@ -1222,7 +1302,8 @@
       "en": "manipulation/production",
       "ja": "操作・製作",
       "de": "Herstellung, Werk",
-      "fr": "création, fabrication"
+      "fr": "création, fabrication",
+      "pl": "wytwarzanie, manipulacja"
     },
     "kind": "normal",
     "display_n": 81
@@ -1237,7 +1318,8 @@
       "en": "attitude, ethos",
       "ja": "態度・気風",
       "de": "Arbeitsweise, Auftreten",
-      "fr": "manière d’être, allure"
+      "fr": "manière d’être, allure",
+      "pl": "postawa, maniery"
     },
     "kind": "normal",
     "display_n": 82
@@ -1252,7 +1334,8 @@
       "en": "feudal",
       "ja": "封建",
       "de": "feudal, Feudalismus",
-      "fr": "féodal, féodalité"
+      "fr": "féodal, féodalité",
+      "pl": "feudalizm, feudalny"
     },
     "kind": "normal",
     "display_n": 83
@@ -1267,7 +1350,8 @@
       "en": "view/opinion",
       "ja": "見解",
       "de": "Auffassung, Erkenntnis",
-      "fr": "point de vue, conception"
+      "fr": "point de vue, conception",
+      "pl": "punkt widzenia, interpretacja"
     },
     "kind": "normal",
     "display_n": 84
@@ -1282,7 +1366,8 @@
       "en": "solution",
       "ja": "解決",
       "de": "Lösung, beilegen",
-      "fr": "résoudre, régler"
+      "fr": "résoudre, régler",
+      "pl": "rozwiązanie problemu"
     },
     "kind": "normal",
     "display_n": 85
@@ -1297,7 +1382,8 @@
       "en": "decision",
       "ja": "決定",
       "de": "Entscheidung, Beschluss",
-      "fr": "décision"
+      "fr": "décision",
+      "pl": "decyzja"
     },
     "kind": "normal",
     "display_n": 86
@@ -1312,7 +1398,8 @@
       "en": "law; principle",
       "ja": "法則",
       "de": "Gesetzmäßigkeit, Prinzip",
-      "fr": "loi (scientifique)"
+      "fr": "loi (scientifique)",
+      "pl": "prawo (naukowe), reguła"
     },
     "kind": "normal",
     "display_n": 87
@@ -1327,7 +1414,8 @@
       "en": "law; statute",
       "ja": "法律",
       "de": "Gesetze, Rechtswesen",
-      "fr": "lois, droit"
+      "fr": "lois, droit",
+      "pl": "prawo, kodeks"
     },
     "kind": "normal",
     "display_n": 88
@@ -1342,7 +1430,8 @@
       "en": "legal principle; legal",
       "ja": "法理・法的",
       "de": "Rechtslehre, juristisch",
-      "fr": "juridique"
+      "fr": "juridique",
+      "pl": "prawny, zasada prawna"
     },
     "kind": "normal",
     "display_n": 89
@@ -1357,7 +1446,8 @@
       "en": "resume/history",
       "ja": "履歴",
       "de": "Lebenslauf, Werdegang",
-      "fr": "curriculum vitae, biographie"
+      "fr": "curriculum vitae, biographie",
+      "pl": "życiorys, biografia"
     },
     "kind": "normal",
     "display_n": 90
@@ -1372,7 +1462,8 @@
       "en": "schedule",
       "ja": "日程",
       "de": "Zeitplan, Ablauf",
-      "fr": "calendrier, itinéraire"
+      "fr": "calendrier, itinéraire",
+      "pl": "harmonogram, plan podróży"
     },
     "kind": "normal",
     "display_n": 91
@@ -1387,7 +1478,8 @@
       "en": "level, standard",
       "ja": "水準",
       "de": "Niveau, Standard",
-      "fr": "niveau"
+      "fr": "niveau",
+      "pl": "poziom, standard"
     },
     "kind": "normal",
     "display_n": 92
@@ -1401,7 +1493,8 @@
       "en": "age (group)",
       "ja": "年齢（層）",
       "de": "Altersgruppe",
-      "fr": "tranche d’âge"
+      "fr": "tranche d’âge",
+      "pl": "przedział wiekowy"
     },
     "kind": "base",
     "display_n": 93
@@ -1415,7 +1508,8 @@
       "en": "labor",
       "ja": "労働",
       "de": "Arbeit, Arbeitskraft",
-      "fr": "travail, main-d’œuvre"
+      "fr": "travail, main-d’œuvre",
+      "pl": "praca, siła robocza"
     },
     "kind": "base",
     "display_n": 94
@@ -1430,7 +1524,8 @@
       "en": "working age",
       "ja": "労働年齢",
       "de": "Erwerbsalter",
-      "fr": "âge de travailler"
+      "fr": "âge de travailler",
+      "pl": "wiek produkcyjny"
     },
     "kind": "compound",
     "parts": [
@@ -1449,7 +1544,8 @@
       "en": "motion",
       "ja": "動作",
       "de": "Bewegung, Handlung",
-      "fr": "mouvement, geste"
+      "fr": "mouvement, geste",
+      "pl": "ruch, gest"
     },
     "kind": "normal",
     "display_n": 96
@@ -1464,7 +1560,8 @@
       "en": "operation",
       "ja": "作戦",
       "de": "Operation, Gefecht",
-      "fr": "opération de combat"
+      "fr": "opération de combat",
+      "pl": "operacja bojowa"
     },
     "kind": "normal",
     "display_n": 97
@@ -1479,7 +1576,8 @@
       "en": "operation/campaign",
       "ja": "作戦・キャンペーン",
       "de": "Kampagne, Operation",
-      "fr": "campagne, opération"
+      "fr": "campagne, opération",
+      "pl": "kampania, operacja"
     },
     "kind": "normal",
     "display_n": 98
@@ -1494,7 +1592,8 @@
       "en": "service",
       "ja": "サービス",
       "de": "Dienstleistung, Service",
-      "fr": "service, prestation"
+      "fr": "service, prestation",
+      "pl": "usługa, serwis"
     },
     "kind": "normal",
     "display_n": 99
@@ -1509,7 +1608,8 @@
       "en": "director-general (ministry bureau chief)",
       "ja": "局長(省庁の局長級)",
       "de": "Abteilungsleiter (Ministerium)",
-      "fr": "directeur de département (ministère)"
+      "fr": "directeur de département (ministère)",
+      "pl": "dyrektor departamentu (w ministerstwie)"
     },
     "kind": "normal",
     "display_n": 100
@@ -1524,7 +1624,8 @@
       "en": "growth, maturation",
       "ja": "成長",
       "de": "Reife, heranwachsen",
-      "fr": "maturité, grandir"
+      "fr": "maturité, grandir",
+      "pl": "dojrzałość, dorastanie"
     },
     "kind": "normal",
     "display_n": 101
@@ -1539,7 +1640,8 @@
       "en": "establishment",
       "ja": "設立",
       "de": "Gründung, Errichtung",
-      "fr": "fondation, établissement"
+      "fr": "fondation, établissement",
+      "pl": "założenie, utworzenie"
     },
     "kind": "normal",
     "display_n": 102
@@ -1554,7 +1656,8 @@
       "en": "stance",
       "ja": "立場",
       "de": "Standpunkt, Haltung",
-      "fr": "position, prise de position"
+      "fr": "position, prise de position",
+      "pl": "stanowisko, punkt widzenia"
     },
     "kind": "normal",
     "display_n": 103
@@ -1569,7 +1672,8 @@
       "en": "long-term",
       "ja": "長期的",
       "de": "langfristig",
-      "fr": "à long terme, de longue haleine"
+      "fr": "à long terme, de longue haleine",
+      "pl": "długoterminowy"
     },
     "kind": "normal",
     "display_n": 104
@@ -1583,7 +1687,8 @@
       "en": "test, exam",
       "ja": "試験",
       "de": "Prüfung, Examen",
-      "fr": "examen, épreuve"
+      "fr": "examen, épreuve",
+      "pl": "egzamin, test"
     },
     "kind": "base",
     "display_n": 105
@@ -1597,7 +1702,8 @@
       "en": "graduation",
       "ja": "卒業",
       "de": "Studienabschluss, Abschluss",
-      "fr": "remise des diplômes, fin d’études"
+      "fr": "remise des diplômes, fin d’études",
+      "pl": "ukończenie szkoły, absolwium"
     },
     "kind": "base",
     "display_n": 106
@@ -1612,7 +1718,8 @@
       "en": "graduation exam",
       "ja": "卒業試験",
       "de": "Abschlussprüfung",
-      "fr": "examen de fin d’études"
+      "fr": "examen de fin d’études",
+      "pl": "egzamin końcowy"
     },
     "kind": "compound",
     "parts": [
@@ -1631,7 +1738,8 @@
       "en": "work, task",
       "ja": "業務",
       "de": "Fachbereich, Dienstgeschäft",
-      "fr": "opérations, pratique professionnelle"
+      "fr": "opérations, pratique professionnelle",
+      "pl": "obowiązki zawodowe"
     },
     "kind": "normal",
     "display_n": 108
@@ -1646,7 +1754,8 @@
       "en": "case (lawsuit)",
       "ja": "事件（訴訟）",
       "de": "Gerichtsfall, Strafsache",
-      "fr": "procès, affaire judiciaire"
+      "fr": "procès, affaire judiciaire",
+      "pl": "sprawa sądowa, proces"
     },
     "kind": "normal",
     "display_n": 109
@@ -1660,7 +1769,8 @@
       "en": "murder case",
       "ja": "殺人事件",
       "de": "Mordfall, Tötungsdelikt",
-      "fr": "homicide, meurtre"
+      "fr": "homicide, meurtre",
+      "pl": "zabójstwo, morderstwo"
     },
     "kind": "base",
     "display_n": 110
@@ -1674,7 +1784,8 @@
       "en": "serious/grave",
       "ja": "重大・深刻",
       "de": "schwerwiegend, ernst",
-      "fr": "grave, sérieux"
+      "fr": "grave, sérieux",
+      "pl": "poważny, ciężki"
     },
     "kind": "base",
     "display_n": 111
@@ -1689,7 +1800,8 @@
       "en": "major murder case",
       "ja": "重大殺人事件",
       "de": "schwerer Mordfall",
-      "fr": "meurtre grave"
+      "fr": "meurtre grave",
+      "pl": "poważne zabójstwo"
     },
     "kind": "compound",
     "parts": [
@@ -1708,7 +1820,8 @@
       "en": "emphasis",
       "ja": "重点",
       "de": "Schwerpunkt",
-      "fr": "priorité, point clé"
+      "fr": "priorité, point clé",
+      "pl": "punkt kluczowy, priorytet"
     },
     "kind": "normal",
     "display_n": 113
@@ -1723,7 +1836,8 @@
       "en": "attendance check",
       "ja": "出席チェック",
       "de": "Anwesenheitskontrolle",
-      "fr": "appel (présence)"
+      "fr": "appel (présence)",
+      "pl": "sprawdzanie obecności"
     },
     "kind": "normal",
     "display_n": 114
@@ -1738,7 +1852,8 @@
       "en": "honor",
       "ja": "名誉",
       "de": "Ehre",
-      "fr": "honneur"
+      "fr": "honneur",
+      "pl": "honor, dobre imię"
     },
     "kind": "normal",
     "display_n": 115
@@ -1753,7 +1868,8 @@
       "en": "prevention/preparedness",
       "ja": "予防・備え",
       "de": "Vorbeugung, Vorsorge",
-      "fr": "prévention, prévoyance"
+      "fr": "prévention, prévoyance",
+      "pl": "profilaktyka, zapobieganie"
     },
     "kind": "normal",
     "display_n": 116
@@ -1768,7 +1884,8 @@
       "en": "defense",
       "ja": "防御",
       "de": "Verteidigung, Abwehr",
-      "fr": "défense"
+      "fr": "défense",
+      "pl": "obrona, defensywa"
     },
     "kind": "normal",
     "display_n": 117
@@ -1783,7 +1900,8 @@
       "en": "capital (city)",
       "ja": "首都",
       "de": "Hauptstadt",
-      "fr": "capitale"
+      "fr": "capitale",
+      "pl": "stolica"
     },
     "kind": "normal",
     "display_n": 118
@@ -1798,7 +1916,8 @@
       "en": "city",
       "ja": "都市",
       "de": "Stadt, städtischer Raum",
-      "fr": "ville, zone urbaine"
+      "fr": "ville, zone urbaine",
+      "pl": "obszar miejski, miasto"
     },
     "kind": "normal",
     "display_n": 119
@@ -1813,7 +1932,8 @@
       "en": "market",
       "ja": "市場",
       "de": "Markt",
-      "fr": "marché"
+      "fr": "marché",
+      "pl": "rynek"
     },
     "kind": "normal",
     "display_n": 120
@@ -1828,7 +1948,8 @@
       "en": "case/situation",
       "ja": "場合",
       "de": "Fall, Situation",
-      "fr": "cas, situation"
+      "fr": "cas, situation",
+      "pl": "przypadek, sytuacja"
     },
     "kind": "normal",
     "display_n": 121
@@ -1843,7 +1964,8 @@
       "en": "reasonable",
       "ja": "合理的",
       "de": "vernünftig, plausibel",
-      "fr": "raisonnable, rationnel"
+      "fr": "raisonnable, rationnel",
+      "pl": "racjonalny, rozsądny"
     },
     "kind": "normal",
     "display_n": 122
@@ -1858,7 +1980,8 @@
       "en": "theory/logic",
       "ja": "理論・論理",
       "de": "Theorie, Argumentation",
-      "fr": "théorie, argumentation"
+      "fr": "théorie, argumentation",
+      "pl": "teoria, logika"
     },
     "kind": "normal",
     "display_n": 123
@@ -1873,7 +1996,8 @@
       "en": "thesis",
       "ja": "論文",
       "de": "Abschlussarbeit, Abhandlung",
-      "fr": "mémoire, thèse"
+      "fr": "mémoire, thèse",
+      "pl": "praca naukowa, teza"
     },
     "kind": "normal",
     "display_n": 124
@@ -1888,7 +2012,8 @@
       "en": "civilization",
       "ja": "文明",
       "de": "Zivilisation",
-      "fr": "civilisation"
+      "fr": "civilisation",
+      "pl": "cywilizacja"
     },
     "kind": "normal",
     "display_n": 125
@@ -1903,7 +2028,8 @@
       "en": "discernment, wisdom",
       "ja": "明晰さ・知恵",
       "de": "Weisheit, Urteilskraft",
-      "fr": "sagesse, clairvoyance"
+      "fr": "sagesse, clairvoyance",
+      "pl": "mądrość, roztropność"
     },
     "kind": "normal",
     "display_n": 126
@@ -1918,7 +2044,8 @@
       "en": "philosophy",
       "ja": "哲学",
       "de": "Philosophie",
-      "fr": "philosophie"
+      "fr": "philosophie",
+      "pl": "filozofia"
     },
     "kind": "normal",
     "display_n": 127
@@ -1933,7 +2060,8 @@
       "en": "semester",
       "ja": "学期",
       "de": "Semester, Schulhalbjahr",
-      "fr": "semestre"
+      "fr": "semestre",
+      "pl": "semestr"
     },
     "kind": "normal",
     "display_n": 128
@@ -1948,7 +2076,8 @@
       "en": "deadline, time limit",
       "ja": "期限",
       "de": "Frist, Termin",
-      "fr": "échéance, délai"
+      "fr": "échéance, délai",
+      "pl": "termin, data płatności"
     },
     "kind": "normal",
     "display_n": 129
@@ -1963,7 +2092,8 @@
       "en": "setting a deadline",
       "ja": "期限設定",
       "de": "Fristsetzung",
-      "fr": "fixation d’un délai"
+      "fr": "fixation d’un délai",
+      "pl": "wyznaczenie terminu"
     },
     "kind": "normal",
     "display_n": 130
@@ -1978,7 +2108,8 @@
       "en": "justice",
       "ja": "正義",
       "de": "Definition",
-      "fr": "définition"
+      "fr": "définition",
+      "pl": "definicja"
     },
     "kind": "normal",
     "display_n": 131
@@ -1993,7 +2124,8 @@
       "en": "grave, cemetery",
       "ja": "墓地",
       "de": "Friedhof",
-      "fr": "cimetière"
+      "fr": "cimetière",
+      "pl": "cmentarz"
     },
     "kind": "normal",
     "display_n": 132
@@ -2008,7 +2140,8 @@
       "en": "jewelry/accessories",
       "ja": "装身具・アクセサリー",
       "de": "Schmuck, Zierde",
-      "fr": "bijoux, parure"
+      "fr": "bijoux, parure",
+      "pl": "biżuteria, ozdoby"
     },
     "kind": "normal",
     "display_n": 133
@@ -2022,7 +2155,8 @@
       "en": "health",
       "ja": "健康",
       "de": "Gesundheit",
-      "fr": "santé"
+      "fr": "santé",
+      "pl": "zdrowie"
     },
     "kind": "base",
     "display_n": 134
@@ -2036,7 +2170,8 @@
       "en": "community",
       "ja": "共同体・地域社会",
       "de": "Gemeinschaft, Kommune",
-      "fr": "communauté"
+      "fr": "communauté",
+      "pl": "społeczność, wspólnota"
     },
     "kind": "base",
     "display_n": 135
@@ -2051,7 +2186,8 @@
       "en": "public health",
       "ja": "公衆衛生",
       "de": "öffentliche Gesundheit",
-      "fr": "santé publique"
+      "fr": "santé publique",
+      "pl": "zdrowie publiczne"
     },
     "kind": "compound",
     "parts": [
@@ -2070,7 +2206,8 @@
       "en": "compatriot",
       "ja": "同胞",
       "de": "Landsleute, Mitbürger",
-      "fr": "compatriotes"
+      "fr": "compatriotes",
+      "pl": "rodacy"
     },
     "kind": "normal",
     "display_n": 137
@@ -2084,7 +2221,8 @@
       "en": "medication",
       "ja": "医薬品",
       "de": "Arzneimittel",
-      "fr": "produit pharmaceutique, médicament"
+      "fr": "produit pharmaceutique, médicament",
+      "pl": "produkt farmaceutyczny, lek"
     },
     "kind": "base",
     "display_n": 138
@@ -2099,7 +2237,8 @@
       "en": "dispensing medication",
       "ja": "調剤",
       "de": "Arzneizubereitung",
-      "fr": "préparation pharmaceutique"
+      "fr": "préparation pharmaceutique",
+      "pl": "przygotowanie leku"
     },
     "kind": "compound",
     "parts": [
@@ -2117,7 +2256,8 @@
       "en": "dignity, nobility",
       "ja": "品格・尊厳",
       "de": "Würde",
-      "fr": "dignité"
+      "fr": "dignité",
+      "pl": "godność"
     },
     "kind": "normal",
     "display_n": 140
@@ -2132,7 +2272,8 @@
       "en": "cost price",
       "ja": "原価",
       "de": "Selbstkosten, Gestehungskosten",
-      "fr": "prix de revient, coût"
+      "fr": "prix de revient, coût",
+      "pl": "koszt własny, cena wytworzenia"
     },
     "kind": "normal",
     "display_n": 141
@@ -2147,7 +2288,8 @@
       "en": "success",
       "ja": "成功",
       "de": "Erfolg",
-      "fr": "succès"
+      "fr": "succès",
+      "pl": "sukces"
     },
     "kind": "normal",
     "display_n": 142
@@ -2162,7 +2304,8 @@
       "en": "civil servant",
       "ja": "公務員",
       "de": "Beamter, Staatsdiener",
-      "fr": "fonctionnaire"
+      "fr": "fonctionnaire",
+      "pl": "urzędnik państwowy"
     },
     "kind": "normal",
     "display_n": 143
@@ -2177,7 +2320,8 @@
       "en": "function",
       "ja": "機能",
       "de": "Funktion",
-      "fr": "fonction"
+      "fr": "fonction",
+      "pl": "funkcja"
     },
     "kind": "normal",
     "display_n": 144
@@ -2192,7 +2336,8 @@
       "en": "active · proactive",
       "ja": "能動的・活動的",
       "de": "aktiv, tatkräftig",
-      "fr": "dynamique, actif"
+      "fr": "dynamique, actif",
+      "pl": "aktywny, dynamiczny"
     },
     "kind": "normal",
     "display_n": 145
@@ -2207,7 +2352,8 @@
       "en": "motive · engine",
       "ja": "動機・エンジン",
       "de": "Motiv, Motor",
-      "fr": "moteur, motif"
+      "fr": "moteur, motif",
+      "pl": "motyw, silnik"
     },
     "kind": "normal",
     "display_n": 146
@@ -2222,7 +2368,8 @@
       "en": "basic",
       "ja": "基本",
       "de": "Grundlage, elementar",
-      "fr": "fondamental, de base"
+      "fr": "fondamental, de base",
+      "pl": "podstawowy"
     },
     "kind": "normal",
     "display_n": 147
@@ -2237,7 +2384,8 @@
       "en": "copyright",
       "ja": "著作権",
       "de": "Urheberrecht",
-      "fr": "droit d’auteur"
+      "fr": "droit d’auteur",
+      "pl": "prawa autorskie"
     },
     "kind": "normal",
     "display_n": 148
@@ -2252,7 +2400,8 @@
       "en": "right",
       "ja": "権利",
       "de": "Rechte, Anspruch",
-      "fr": "droits, intérêts"
+      "fr": "droits, intérêts",
+      "pl": "prawa i korzyści"
     },
     "kind": "normal",
     "display_n": 149
@@ -2267,7 +2416,8 @@
       "en": "advantage",
       "ja": "優位・利点",
       "de": "Vorteil, Überlegenheit",
-      "fr": "avantage"
+      "fr": "avantage",
+      "pl": "przewaga, atut"
     },
     "kind": "normal",
     "display_n": 150
@@ -2282,7 +2432,8 @@
       "en": "generation",
       "ja": "世代",
       "de": "Generation",
-      "fr": "génération"
+      "fr": "génération",
+      "pl": "pokolenie"
     },
     "kind": "normal",
     "display_n": 151
@@ -2296,7 +2447,8 @@
       "en": "system, system",
       "ja": "体系・システム",
       "de": "System, Gefüge",
-      "fr": "système"
+      "fr": "système",
+      "pl": "system, ustrój"
     },
     "kind": "base",
     "display_n": 152
@@ -2310,7 +2462,8 @@
       "en": "information/communication",
       "ja": "情報・通信",
       "de": "Information, Nachricht",
-      "fr": "information"
+      "fr": "information",
+      "pl": "informacja, łączność"
     },
     "kind": "base",
     "display_n": 153
@@ -2325,7 +2478,8 @@
       "en": "information system",
       "ja": "情報システム",
       "de": "Informationssystem",
-      "fr": "système d’information"
+      "fr": "système d’information",
+      "pl": "system informacyjny"
     },
     "kind": "compound",
     "parts": [
@@ -2344,7 +2498,8 @@
       "en": "informatics/computer science",
       "ja": "情報学・コンピュータ工学",
       "de": "Informatik",
-      "fr": "informatique"
+      "fr": "informatique",
+      "pl": "informatyka"
     },
     "kind": "normal",
     "display_n": 155
@@ -2359,7 +2514,8 @@
       "en": "academy, school",
       "ja": "塾・学校",
       "de": "Akademie, Institut",
-      "fr": "académie, institut"
+      "fr": "académie, institut",
+      "pl": "akademia, instytut"
     },
     "kind": "normal",
     "display_n": 156
@@ -2374,7 +2530,8 @@
       "en": "aid/assistance",
       "ja": "援助",
       "de": "Hilfe, Beistand",
-      "fr": "aide, assistance"
+      "fr": "aide, assistance",
+      "pl": "pomoc, wsparcie"
     },
     "kind": "normal",
     "display_n": 157
@@ -2389,7 +2546,8 @@
       "en": "subsidy; allowance",
       "ja": "補助金・手当",
       "de": "Zuschuss, Beihilfe",
-      "fr": "allocation, subvention"
+      "fr": "allocation, subvention",
+      "pl": "zasiłek, dotacja"
     },
     "kind": "normal",
     "display_n": 158
@@ -2404,7 +2562,8 @@
       "en": "urgency",
       "ja": "緊急性",
       "de": "dringend, vordringlich",
-      "fr": "urgent"
+      "fr": "urgent",
+      "pl": "pilny, naglący"
     },
     "kind": "normal",
     "display_n": 159
@@ -2419,7 +2578,8 @@
       "en": "establish, build",
       "ja": "設立·構築",
       "de": "errichten, aufbauen",
-      "fr": "établir, instaurer"
+      "fr": "établir, instaurer",
+      "pl": "ustanowić, wdrożyć"
     },
     "kind": "normal",
     "display_n": 160
@@ -2434,7 +2594,8 @@
       "en": "legislation",
       "ja": "立法",
       "de": "Gesetzgebung, Legislative",
-      "fr": "législation, pouvoir législatif"
+      "fr": "législation, pouvoir législatif",
+      "pl": "władza ustawodawcza, prawodawstwo"
     },
     "kind": "normal",
     "display_n": 161
@@ -2449,7 +2610,8 @@
       "en": "legal authority; rule of law",
       "ja": "法権・法治",
       "de": "Rechtsordnung, Rechtsstaatlichkeit",
-      "fr": "État de droit, légalité"
+      "fr": "État de droit, légalité",
+      "pl": "państwo prawa, praworządność"
     },
     "kind": "normal",
     "display_n": 162
@@ -2464,7 +2626,8 @@
       "en": "authority, official power",
       "ja": "権限・職権",
       "de": "Amtsbefugnis, Vollmacht",
-      "fr": "autorité, pouvoir officiel"
+      "fr": "autorité, pouvoir officiel",
+      "pl": "władza, uprawnienia urzędowe"
     },
     "kind": "normal",
     "display_n": 163
@@ -2479,7 +2642,8 @@
       "en": "journey",
       "ja": "旅程",
       "de": "Reiseroute, Reise",
-      "fr": "voyage, itinéraire"
+      "fr": "voyage, itinéraire",
+      "pl": "podróż, trasa"
     },
     "kind": "normal",
     "display_n": 164
@@ -2494,7 +2658,8 @@
       "en": "order, procedure",
       "ja": "順序·手順",
       "de": "Reihenfolge, Ablauf",
-      "fr": "ordre, procédure"
+      "fr": "ordre, procédure",
+      "pl": "kolejność, procedura"
     },
     "kind": "normal",
     "display_n": 165
@@ -2508,7 +2673,8 @@
       "en": "automatic",
       "ja": "自動的",
       "de": "automatisch",
-      "fr": "automatique"
+      "fr": "automatique",
+      "pl": "automatyczny"
     },
     "kind": "base",
     "display_n": 166
@@ -2523,7 +2689,8 @@
       "en": "automation",
       "ja": "自動化",
       "de": "Automatisierung",
-      "fr": "automatisation"
+      "fr": "automatisation",
+      "pl": "automatyzacja"
     },
     "kind": "compound",
     "parts": [
@@ -2541,7 +2708,8 @@
       "en": "receipt/bill",
       "ja": "領収書・請求書",
       "de": "Rechnung, Beleg",
-      "fr": "facture, reçu"
+      "fr": "facture, reçu",
+      "pl": "rachunek, faktura"
     },
     "kind": "normal",
     "display_n": 168
@@ -2556,7 +2724,8 @@
       "en": "one-sided",
       "ja": "一方的",
       "de": "einseitig",
-      "fr": "unilatéral"
+      "fr": "unilatéral",
+      "pl": "jednostronny"
     },
     "kind": "normal",
     "display_n": 169
@@ -2571,7 +2740,8 @@
       "en": "method",
       "ja": "方法",
       "de": "Methode, Verfahren",
-      "fr": "méthode"
+      "fr": "méthode",
+      "pl": "metoda"
     },
     "kind": "normal",
     "display_n": 170
@@ -2586,7 +2756,8 @@
       "en": "forensic medicine",
       "ja": "法医学",
       "de": "Rechtsmedizin",
-      "fr": "médecine légale"
+      "fr": "médecine légale",
+      "pl": "medycyna sądowa"
     },
     "kind": "normal",
     "display_n": 171
@@ -2601,7 +2772,8 @@
       "en": "medicine (science)",
       "ja": "医学",
       "de": "Medizin (Wissenschaft)",
-      "fr": "médecine (science)"
+      "fr": "médecine (science)",
+      "pl": "medycyna (nauka)"
     },
     "kind": "normal",
     "display_n": 172
@@ -2616,7 +2788,8 @@
       "en": "learning",
       "ja": "学習",
       "de": "Lernen, Studium",
-      "fr": "apprentissage, études"
+      "fr": "apprentissage, études",
+      "pl": "nauka, studiowanie"
     },
     "kind": "normal",
     "display_n": 173
@@ -2631,7 +2804,8 @@
       "en": "group/organization",
       "ja": "集団・団体",
       "de": "Kollektiv, Gruppe",
-      "fr": "collectif, groupe"
+      "fr": "collectif, groupe",
+      "pl": "zbiorowość, kolektyw"
     },
     "kind": "normal",
     "display_n": 174
@@ -2646,7 +2820,8 @@
       "en": "expression, showing",
       "ja": "表現・表すこと",
       "de": "Ausdruck, Darstellung",
-      "fr": "expression, manifestation"
+      "fr": "expression, manifestation",
+      "pl": "wyraz, przejaw"
     },
     "kind": "normal",
     "display_n": 175
@@ -2661,7 +2836,8 @@
       "en": "scene/site",
       "ja": "現場",
       "de": "Schauplatz, Ort des Geschehens",
-      "fr": "lieu, scène (des faits)"
+      "fr": "lieu, scène (des faits)",
+      "pl": "miejsce zdarzenia"
     },
     "kind": "normal",
     "display_n": 176
@@ -2676,7 +2852,8 @@
       "en": "school",
       "ja": "学校",
       "de": "Schule",
-      "fr": "école"
+      "fr": "école",
+      "pl": "szkoła"
     },
     "kind": "normal",
     "display_n": 177
@@ -2691,7 +2868,8 @@
       "en": "student",
       "ja": "学生",
       "de": "Schüler",
-      "fr": "élève"
+      "fr": "élève",
+      "pl": "uczeń"
     },
     "kind": "normal",
     "display_n": 178
@@ -2705,7 +2883,8 @@
       "en": "living thing",
       "ja": "生物",
       "de": "Lebewesen, Organismus",
-      "fr": "organisme, être vivant"
+      "fr": "organisme, être vivant",
+      "pl": "organizm żywy"
     },
     "kind": "base",
     "display_n": 179
@@ -2720,7 +2899,8 @@
       "en": "biology",
       "ja": "生物学",
       "de": "Biologie",
-      "fr": "biologie"
+      "fr": "biologie",
+      "pl": "biologia"
     },
     "kind": "compound",
     "parts": [
@@ -2738,7 +2918,8 @@
       "en": "literature study",
       "ja": "文学の勉強",
       "de": "Literaturstudium",
-      "fr": "étude de la littérature"
+      "fr": "étude de la littérature",
+      "pl": "studia literackie"
     },
     "kind": "normal",
     "display_n": 181
@@ -2753,7 +2934,8 @@
       "en": "office",
       "ja": "事務所",
       "de": "Büro",
-      "fr": "bureau"
+      "fr": "bureau",
+      "pl": "biuro"
     },
     "kind": "normal",
     "display_n": 182
@@ -2767,7 +2949,8 @@
       "en": "clinic",
       "ja": "診療室・クリニック",
       "de": "Arztpraxis, Ambulanz",
-      "fr": "cabinet médical, dispensaire"
+      "fr": "cabinet médical, dispensaire",
+      "pl": "gabinet lekarski, przychodnia"
     },
     "kind": "base",
     "display_n": 183
@@ -2781,7 +2964,8 @@
       "en": "refreshments · general medical care",
       "ja": "茶菓子・総合診療",
       "de": "Poliklinik, Allgemeinmedizin",
-      "fr": "polyclinique, médecine générale"
+      "fr": "polyclinique, médecine générale",
+      "pl": "wielospecjalistyczny"
     },
     "kind": "base",
     "display_n": 184
@@ -2796,7 +2980,8 @@
       "en": "general clinic",
       "ja": "総合診療所",
       "de": "Poliklinik, Ärztezentrum",
-      "fr": "polyclinique"
+      "fr": "polyclinique",
+      "pl": "poliklinika, przychodnia rejonowa"
     },
     "kind": "compound",
     "parts": [
@@ -2814,7 +2999,8 @@
       "en": "science",
       "ja": "科学",
       "de": "Wissenschaft",
-      "fr": "science"
+      "fr": "science",
+      "pl": "nauka"
     },
     "kind": "base",
     "display_n": 186
@@ -2829,7 +3015,8 @@
       "en": "social science",
       "ja": "社会科学",
       "de": "Sozialwissenschaften",
-      "fr": "sciences sociales"
+      "fr": "sciences sociales",
+      "pl": "nauki społeczne"
     },
     "kind": "compound",
     "parts": [
@@ -2847,7 +3034,8 @@
       "en": "committee/council",
       "ja": "委員会・評議会",
       "de": "Rat, Ausschuss",
-      "fr": "conseil, comité"
+      "fr": "conseil, comité",
+      "pl": "rada, komitet"
     },
     "kind": "normal",
     "display_n": 188
@@ -2862,7 +3050,8 @@
       "en": "agreement",
       "ja": "同意",
       "de": "Zustimmung, Einverständnis",
-      "fr": "accord, consentement"
+      "fr": "accord, consentement",
+      "pl": "zgoda"
     },
     "kind": "normal",
     "display_n": 189
@@ -2877,7 +3066,8 @@
       "en": "meaning",
       "ja": "意味",
       "de": "Bedeutung, Sinn",
-      "fr": "sens, signification"
+      "fr": "sens, signification",
+      "pl": "znaczenie, sens"
     },
     "kind": "normal",
     "display_n": 190
@@ -2892,7 +3082,8 @@
       "en": "sense of loyalty and honor",
       "ja": "義気(義理と気概)",
       "de": "Rechtschaffenheit, Ehrenhaftigkeit",
-      "fr": "sens de l’honneur et de la loyauté"
+      "fr": "sens de l’honneur et de la loyauté",
+      "pl": "poczucie honoru i lojalności"
     },
     "kind": "normal",
     "display_n": 191
@@ -2907,7 +3098,8 @@
       "en": "pore",
       "ja": "気孔",
       "de": "Pore, Spaltöffnung",
-      "fr": "stomate (biologie)"
+      "fr": "stomate (biologie)",
+      "pl": "aparat szparkowy (biol.)"
     },
     "kind": "normal",
     "display_n": 192
@@ -2922,7 +3114,8 @@
       "en": "worker",
       "ja": "労働者",
       "de": "Arbeiter",
-      "fr": "ouvrier, travailleur"
+      "fr": "ouvrier, travailleur",
+      "pl": "robotnik, pracownik"
     },
     "kind": "normal",
     "display_n": 193
@@ -2937,7 +3130,8 @@
       "en": "talent (person)",
       "ja": "人材",
       "de": "Fachkraft, Talent",
-      "fr": "talent, personne compétente"
+      "fr": "talent, personne compétente",
+      "pl": "utalentowana osoba, talent"
     },
     "kind": "normal",
     "display_n": 194
@@ -2952,7 +3146,8 @@
       "en": "finance/banking",
       "ja": "財政・金融",
       "de": "Finanzen, Finanzwesen",
-      "fr": "finances"
+      "fr": "finances",
+      "pl": "finanse"
     },
     "kind": "normal",
     "display_n": 195
@@ -2966,7 +3161,8 @@
       "en": "policy",
       "ja": "政策",
       "de": "Politik, Richtlinie",
-      "fr": "politique (orientation)"
+      "fr": "politique (orientation)",
+      "pl": "polityka (działania)"
     },
     "kind": "base",
     "display_n": 196
@@ -2980,7 +3176,8 @@
       "en": "external",
       "ja": "対外",
       "de": "Außenpolitik, externe Beziehungen",
-      "fr": "relations extérieures"
+      "fr": "relations extérieures",
+      "pl": "zewnętrzny, zagraniczny"
     },
     "kind": "base",
     "display_n": 197
@@ -2995,7 +3192,8 @@
       "en": "foreign policy",
       "ja": "対外政策",
       "de": "Außenpolitik",
-      "fr": "politique étrangère"
+      "fr": "politique étrangère",
+      "pl": "polityka zagraniczna"
     },
     "kind": "compound",
     "parts": [
@@ -3014,7 +3212,8 @@
       "en": "foreign country",
       "ja": "外国",
       "de": "Ausland, fremdes Land",
-      "fr": "pays étranger, étranger"
+      "fr": "pays étranger, étranger",
+      "pl": "obcy kraj, zagranica"
     },
     "kind": "normal",
     "display_n": 199
@@ -3029,7 +3228,8 @@
       "en": "nation, country",
       "ja": "国家",
       "de": "Nation, Staat",
-      "fr": "nation, pays"
+      "fr": "nation, pays",
+      "pl": "naród, państwo"
     },
     "kind": "normal",
     "display_n": 200
@@ -3044,7 +3244,8 @@
       "en": "heirloom",
       "ja": "家宝",
       "de": "Familienerbstück",
-      "fr": "trésor de famille"
+      "fr": "trésor de famille",
+      "pl": "pamiątka rodzinna"
     },
     "kind": "normal",
     "display_n": 201
@@ -3059,7 +3260,8 @@
       "en": "warranty; after-sales service",
       "ja": "保証・アフターサービス",
       "de": "Garantie, Gewährleistung",
-      "fr": "garantie, SAV"
+      "fr": "garantie, SAV",
+      "pl": "gwarancja, serwis"
     },
     "kind": "normal",
     "display_n": 202
@@ -3074,7 +3276,8 @@
       "en": "administration",
       "ja": "行政",
       "de": "Verwaltung",
-      "fr": "administration"
+      "fr": "administration",
+      "pl": "administracja"
     },
     "kind": "normal",
     "display_n": 203
@@ -3089,7 +3292,8 @@
       "en": "politics",
       "ja": "政治",
       "de": "Politik",
-      "fr": "politique"
+      "fr": "politique",
+      "pl": "polityka"
     },
     "kind": "normal",
     "display_n": 204
@@ -3104,7 +3308,8 @@
       "en": "public security",
       "ja": "治安",
       "de": "öffentliche Ordnung, Sicherheit",
-      "fr": "ordre public, sécurité"
+      "fr": "ordre public, sécurité",
+      "pl": "bezpieczeństwo publiczne"
     },
     "kind": "normal",
     "display_n": 205
@@ -3119,7 +3324,8 @@
       "en": "welfare",
       "ja": "福祉",
       "de": "soziale Wohlfahrt",
-      "fr": "bien-être, protection sociale"
+      "fr": "bien-être, protection sociale",
+      "pl": "opieka społeczna"
     },
     "kind": "normal",
     "display_n": 206
@@ -3134,7 +3340,8 @@
       "en": "production, reproduction",
       "ja": "生産·繁殖",
       "de": "Fortpflanzung, Reproduktion",
-      "fr": "reproduction"
+      "fr": "reproduction",
+      "pl": "rozmnażanie, reprodukcja"
     },
     "kind": "normal",
     "display_n": 207
@@ -3149,7 +3356,8 @@
       "en": "production",
       "ja": "生産",
       "de": "Produktion, Erzeugung",
-      "fr": "production"
+      "fr": "production",
+      "pl": "produkcja"
     },
     "kind": "normal",
     "display_n": 208
@@ -3164,7 +3372,8 @@
       "en": "departure",
       "ja": "出発",
       "de": "Abfahrt, Start",
-      "fr": "départ"
+      "fr": "départ",
+      "pl": "odjazd, wyruszenie"
     },
     "kind": "normal",
     "display_n": 209
@@ -3179,7 +3388,8 @@
       "en": "presentation, statement",
       "ja": "発表・発言",
       "de": "Redebeitrag, Äußerung",
-      "fr": "intervention, prise de parole"
+      "fr": "intervention, prise de parole",
+      "pl": "wystąpienie, oświadczenie"
     },
     "kind": "normal",
     "display_n": 210
@@ -3194,7 +3404,8 @@
       "en": "expression",
       "ja": "表現",
       "de": "Äußerung, Ausdruck",
-      "fr": "manifestation, signe"
+      "fr": "manifestation, signe",
+      "pl": "przejaw, objaw"
     },
     "kind": "normal",
     "display_n": 211
@@ -3209,7 +3420,8 @@
       "en": "modern era",
       "ja": "現代",
       "de": "moderne Zeit, Gegenwart",
-      "fr": "époque moderne, moderne"
+      "fr": "époque moderne, moderne",
+      "pl": "epoka nowożytna, współczesność"
     },
     "kind": "normal",
     "display_n": 212
@@ -3224,7 +3436,8 @@
       "en": "great unity · great harmony",
       "ja": "大同・大調和",
       "de": "große Harmonie, allgemeine Eintracht",
-      "fr": "grande harmonie universelle"
+      "fr": "grande harmonie universelle",
+      "pl": "powszechna harmonia"
     },
     "kind": "normal",
     "display_n": 213
@@ -3239,7 +3452,8 @@
       "en": "at the same time",
       "ja": "同時に",
       "de": "gleichzeitig",
-      "fr": "en même temps, simultanément"
+      "fr": "en même temps, simultanément",
+      "pl": "jednocześnie, równocześnie"
     },
     "kind": "normal",
     "display_n": 214
@@ -3254,7 +3468,8 @@
       "en": "era",
       "ja": "時代",
       "de": "Epoche, Ära",
-      "fr": "époque, ère"
+      "fr": "époque, ère",
+      "pl": "era, epoka"
     },
     "kind": "normal",
     "display_n": 215
@@ -3268,7 +3483,8 @@
       "en": "university",
       "ja": "大学",
       "de": "Universität",
-      "fr": "université"
+      "fr": "université",
+      "pl": "uniwersytet"
     },
     "kind": "base",
     "display_n": 216
@@ -3283,7 +3499,8 @@
       "en": "national university",
       "ja": "国立大学",
       "de": "staatliche Universität",
-      "fr": "université nationale"
+      "fr": "université nationale",
+      "pl": "uniwersytet państwowy"
     },
     "kind": "compound",
     "parts": [
@@ -3301,7 +3518,8 @@
       "en": "property",
       "ja": "財産",
       "de": "Vermögen, Besitz",
-      "fr": "patrimoine, fortune"
+      "fr": "patrimoine, fortune",
+      "pl": "majątek rodzinny, fortuna"
     },
     "kind": "normal",
     "display_n": 218
@@ -3316,7 +3534,8 @@
       "en": "resource",
       "ja": "資源",
       "de": "Ressourcen",
-      "fr": "ressources"
+      "fr": "ressources",
+      "pl": "zasoby"
     },
     "kind": "normal",
     "display_n": 219
@@ -3331,7 +3550,8 @@
       "en": "cause",
       "ja": "原因",
       "de": "Ursache, Anlass",
-      "fr": "cause, raison"
+      "fr": "cause, raison",
+      "pl": "przyczyna, powód"
     },
     "kind": "normal",
     "display_n": 220
@@ -3346,7 +3566,8 @@
       "en": "humane",
       "ja": "人道的",
       "de": "humanitär, menschenfreundlich",
-      "fr": "humanitaire"
+      "fr": "humanitaire",
+      "pl": "humanitarny"
     },
     "kind": "normal",
     "display_n": 221
@@ -3361,7 +3582,8 @@
       "en": "director/directing",
       "ja": "監督・演出",
       "de": "Regisseur, Regie",
-      "fr": "réalisateur, mise en scène"
+      "fr": "réalisateur, mise en scène",
+      "pl": "reżyser, reżyseria"
     },
     "kind": "normal",
     "display_n": 222
@@ -3376,7 +3598,8 @@
       "en": "speech manuscript",
       "ja": "演説原稿",
       "de": "Redemanuskript, Ansprache",
-      "fr": "discours, allocution"
+      "fr": "discours, allocution",
+      "pl": "tekst przemówienia"
     },
     "kind": "normal",
     "display_n": 223
@@ -3391,7 +3614,8 @@
       "en": "culture",
       "ja": "文化",
       "de": "Kultur",
-      "fr": "culture"
+      "fr": "culture",
+      "pl": "kultura"
     },
     "kind": "normal",
     "display_n": 224
@@ -3406,7 +3630,8 @@
       "en": "to resolve / to untie",
       "ja": "解消・解く",
       "de": "auflösen, schlichten",
-      "fr": "dissiper, apaiser"
+      "fr": "dissiper, apaiser",
+      "pl": "rozładować, rozwikłać"
     },
     "kind": "normal",
     "display_n": 225
@@ -3421,7 +3646,8 @@
       "en": "rest / break time",
       "ja": "休息・休憩時間",
       "de": "Pause, Erholung",
-      "fr": "pause, récréation"
+      "fr": "pause, récréation",
+      "pl": "przerwa, odpoczynek"
     },
     "kind": "normal",
     "display_n": 226
@@ -3436,7 +3662,8 @@
       "en": "labor",
       "ja": "労働",
       "de": "Arbeit, Werktätigkeit",
-      "fr": "travail, labeur"
+      "fr": "travail, labeur",
+      "pl": "praca, trud"
     },
     "kind": "normal",
     "display_n": 227
@@ -3451,7 +3678,8 @@
       "en": "animal",
       "ja": "動物",
       "de": "Tier",
-      "fr": "animal"
+      "fr": "animal",
+      "pl": "zwierzę"
     },
     "kind": "normal",
     "display_n": 228
@@ -3465,7 +3693,8 @@
       "en": "physics",
       "ja": "物理",
       "de": "Physik",
-      "fr": "physique"
+      "fr": "physique",
+      "pl": "fizyka"
     },
     "kind": "base",
     "display_n": 229
@@ -3480,7 +3709,8 @@
       "en": "physics",
       "ja": "物理学",
       "de": "Physik",
-      "fr": "physique"
+      "fr": "physique",
+      "pl": "fizyka (nauka)"
     },
     "kind": "compound",
     "parts": [
@@ -3498,7 +3728,8 @@
       "en": "educational background",
       "ja": "学歴",
       "de": "Schulleistung, Bildungsstand",
-      "fr": "niveau scolaire, rendement scolaire"
+      "fr": "niveau scolaire, rendement scolaire",
+      "pl": "wyniki w nauce, wykształcenie"
     },
     "kind": "normal",
     "display_n": 231
@@ -3513,7 +3744,8 @@
       "en": "power, military force",
       "ja": "勢力·兵力",
       "de": "Kräfte, Streitkräfte",
-      "fr": "forces, effectifs"
+      "fr": "forces, effectifs",
+      "pl": "siły, potencjał militarny"
     },
     "kind": "normal",
     "display_n": 232

@@ -1,3398 +1,3681 @@
 [
- {
-  "word": "Ác quỉ",
-  "hanja": "惡鬼",
-  "meaning": {
-   "ko": "마귀",
-   "zh": "魔鬼",
-   "en": "devil, demon",
-   "ja": "悪魔",
-   "de": "Teufel",
-   "fr": "Diable"
+  {
+    "word": "Ác quỉ",
+    "hanja": "惡鬼",
+    "meaning": {
+      "ko": "마귀",
+      "zh": "魔鬼",
+      "en": "devil, demon",
+      "ja": "悪魔",
+      "de": "Teufel",
+      "fr": "Diable",
+      "pl": "Diabeł"
+    }
+  },
+  {
+    "word": "ấn phẩm",
+    "hanja": "印品",
+    "meaning": {
+      "ko": "출판물",
+      "zh": "出版物",
+      "en": "publication",
+      "ja": "出版物",
+      "de": "Veröffentlichung",
+      "fr": "publication",
+      "pl": "publikacja"
+    }
+  },
+  {
+    "word": "anh em",
+    "hanja": null,
+    "meaning": {
+      "ko": "형제",
+      "zh": "弟兄",
+      "en": "Brother",
+      "ja": "兄弟",
+      "de": "Bruder",
+      "fr": "frère",
+      "pl": "brat"
+    }
+  },
+  {
+    "word": "anh giám thị",
+    "hanja": "監視",
+    "meaning": {
+      "ko": "감독자",
+      "zh": "監督",
+      "en": "overseer",
+      "ja": "監督者",
+      "de": "Aufseher",
+      "fr": "surveillant",
+      "pl": "nadzorca"
+    }
+  },
+  {
+    "word": "anh giám thị công tác",
+    "hanja": "監視工作",
+    "meaning": {
+      "ko": "봉사감독자",
+      "zh": "傳道監督",
+      "en": "service overseer",
+      "ja": "奉仕監督者",
+      "de": "Dienstaufseher",
+      "fr": "surveillant au service",
+      "pl": "nadzorca służby"
+    }
+  },
+  {
+    "word": "anh giám thị vòng quanh",
+    "hanja": null,
+    "meaning": {
+      "ko": "순회 감독자",
+      "zh": "分區監督",
+      "en": "circuit overseer",
+      "ja": "巡回監督",
+      "de": "Kreisaufseher",
+      "fr": "surveillant de circonscription",
+      "pl": "nadzorca obwodu"
+    }
+  },
+  {
+    "word": "áp lực bạn bè",
+    "hanja": null,
+    "meaning": {
+      "ko": "동배의 압력",
+      "zh": "同輩壓力",
+      "en": "peer pressure",
+      "ja": "仲間からの圧力",
+      "de": "Gruppenzwang",
+      "fr": "pression du groupe",
+      "pl": "presja rówieśników"
+    }
+  },
+  {
+    "word": "A-men",
+    "hanja": null,
+    "meaning": {
+      "ko": "아멘",
+      "zh": "阿們",
+      "en": "amen",
+      "ja": "アーメン",
+      "de": "Amen",
+      "fr": "amen",
+      "pl": "amen"
+    }
+  },
+  {
+    "word": "ăn năn",
+    "hanja": null,
+    "meaning": {
+      "ko": "회개하다",
+      "zh": "悔改",
+      "en": "to repent",
+      "ja": "悔い改める",
+      "de": "bereuen",
+      "fr": "se repentir",
+      "pl": "okazać skruchę / skrucha"
+    }
+  },
+  {
+    "word": "ân phước",
+    "hanja": "恩福",
+    "meaning": {
+      "ko": "축복",
+      "zh": "福分",
+      "en": "blessing",
+      "ja": "祝福",
+      "de": "Segen",
+      "fr": "bénédiction",
+      "pl": "błogosławieństwo"
+    }
+  },
+  {
+    "word": "bài giảng",
+    "hanja": null,
+    "meaning": {
+      "ko": "연설",
+      "zh": "演講",
+      "en": "speech",
+      "ja": "演説",
+      "de": "Vortrag",
+      "fr": "discours",
+      "pl": "przemówienie"
+    }
+  },
+  {
+    "word": "bài giảng trên núi",
+    "hanja": null,
+    "meaning": {
+      "ko": "산상 수훈",
+      "zh": "登山寶訓",
+      "en": "Sermon on the Mount",
+      "ja": "山上の垂訓",
+      "de": "Bergpredigt",
+      "fr": "Sermon sur la montagne",
+      "pl": "Kazanie na Górze"
+    }
+  },
+  {
+    "word": "bài hát",
+    "hanja": null,
+    "meaning": {
+      "ko": "노래",
+      "zh": "歌曲",
+      "en": "song",
+      "ja": "歌",
+      "de": "Lied",
+      "fr": "cantique",
+      "pl": "pieśń"
+    }
+  },
+  {
+    "word": "báo cáo",
+    "hanja": "報告",
+    "meaning": {
+      "ko": "보고하다",
+      "zh": "報告",
+      "en": "to report",
+      "ja": "報告する",
+      "de": "Bericht abgeben",
+      "fr": "rapporter, remettre un rapport",
+      "pl": "składać sprawozdanie"
+    }
+  },
+  {
+    "word": "báo thù",
+    "hanja": "報仇",
+    "meaning": {
+      "ko": "복수하다, 원수를 갚다",
+      "zh": "報仇、復仇",
+      "en": "to avenge, to take revenge",
+      "ja": "復讐する",
+      "de": "rächen, Rache nehmen",
+      "fr": "se venger",
+      "pl": "pomścić, wywrzeć zemstę"
+    }
+  },
+  {
+    "word": "báp têm",
+    "hanja": null,
+    "meaning": {
+      "ko": "침례",
+      "zh": "浸禮",
+      "en": "baptism",
+      "ja": "バプテスマ",
+      "de": "Taufe",
+      "fr": "baptême",
+      "pl": "chrzest"
+    }
+  },
+  {
+    "word": "bất tử",
+    "hanja": "不死",
+    "meaning": {
+      "ko": "불멸의",
+      "zh": "不朽的，不滅的",
+      "en": "immortal",
+      "ja": "不滅の",
+      "de": "unsterblich",
+      "fr": "immortel",
+      "pl": "nieśmiertelny"
+    }
+  },
+  {
+    "word": "bầy nhỏ",
+    "hanja": null,
+    "meaning": {
+      "ko": "적은 무리",
+      "zh": "一小群",
+      "en": "little flock",
+      "ja": "小さな群れ",
+      "de": "kleine Herde",
+      "fr": "petit troupeau",
+      "pl": "mała trzódka"
+    }
+  },
+  {
+    "word": "Ba-by-lôn Lớn",
+    "hanja": null,
+    "meaning": {
+      "ko": "큰 바빌론",
+      "zh": "大巴比倫",
+      "en": "Babylon the Great",
+      "ja": "大いなるバビロン",
+      "de": "Babylon die Große",
+      "fr": "Babylone la Grande",
+      "pl": "Babilon Wielki"
+    }
+  },
+  {
+    "word": "bệnh AIDS",
+    "hanja": null,
+    "meaning": {
+      "ko": "에이즈",
+      "zh": "愛滋病",
+      "en": "AIDS",
+      "ja": "エイズ",
+      "de": "Aids",
+      "fr": "sida",
+      "pl": "AIDS"
+    }
+  },
+  {
+    "word": "Bê-tên",
+    "hanja": null,
+    "meaning": {
+      "ko": "베델",
+      "zh": "伯特利",
+      "en": "Bethel",
+      "ja": "ベテル",
+      "de": "Bethel",
+      "fr": "Béthel",
+      "pl": "Betel"
+    }
+  },
+  {
+    "word": "Biển Ga-li-lê",
+    "hanja": null,
+    "meaning": {
+      "ko": "갈릴리 바다",
+      "zh": "加利利海",
+      "en": "Sea of Galilee",
+      "ja": "ガリラヤ湖",
+      "de": "Galiläisches Meer",
+      "fr": "mer de Galilée",
+      "pl": "Morze Galilejskie"
+    }
+  },
+  {
+    "word": "bông trái thần khí thánh",
+    "hanja": null,
+    "meaning": {
+      "ko": "성령의 열매",
+      "zh": "神聖力量的果實",
+      "en": "fruitage of the spirit",
+      "ja": "聖霊の実",
+      "de": "Frucht des Geistes",
+      "fr": "fruit de l’esprit",
+      "pl": "owoc ducha"
+    }
+  },
+  {
+    "word": "Bữa Ăn Tối Của Chúa",
+    "hanja": null,
+    "meaning": {
+      "ko": "주의 만찬",
+      "zh": "主的晚餐",
+      "en": "the Lord's Evening Meal",
+      "ja": "主の晩さん",
+      "de": "Abendmahl des Herrn",
+      "fr": "Repas du Seigneur",
+      "pl": "Wieczerza Pańska"
+    }
+  },
+  {
+    "word": "bục giảng",
+    "hanja": null,
+    "meaning": {
+      "ko": "연단",
+      "zh": "講台",
+      "en": "podium, platform",
+      "ja": "演壇",
+      "de": "Bühne, Podium",
+      "fr": "estrade, pupitre",
+      "pl": "podium"
+    }
+  },
+  {
+    "word": "buổi họp",
+    "hanja": null,
+    "meaning": {
+      "ko": "집회",
+      "zh": "聚會",
+      "en": "meeting",
+      "ja": "集会",
+      "de": "Zusammenkunft",
+      "fr": "réunion",
+      "pl": "zebranie"
+    }
+  },
+  {
+    "word": "buổi họp cuối tuần",
+    "hanja": null,
+    "meaning": {
+      "ko": "주말 집회",
+      "zh": "週末聚會",
+      "en": "weekend meeting",
+      "ja": "週末の集会",
+      "de": "Wochenendzusammenkunft",
+      "fr": "réunion du week-end",
+      "pl": "zebranie w weekend"
+    }
+  },
+  {
+    "word": "buổi họp giữa tuần",
+    "hanja": null,
+    "meaning": {
+      "ko": "평일 집회",
+      "zh": "週中聚會",
+      "en": "midweek meeting",
+      "ja": "週半ばの集会",
+      "de": "Zusammenkunft unter der Woche",
+      "fr": "réunion de semaine",
+      "pl": "zebranie w tygodniu"
+    }
+  },
+  {
+    "word": "buổi họp tạp chí Tháp Canh",
+    "hanja": null,
+    "meaning": {
+      "ko": "파수대 연구(집회)",
+      "zh": "守望台研讀班",
+      "en": "Watchtower Study (meeting)",
+      "ja": "ものみの塔研究(集会)",
+      "de": "Wachtturm-Studium",
+      "fr": "étude de La Tour de Garde",
+      "pl": "studium Strażnicy"
+    }
+  },
+  {
+    "word": "buổi nhóm họp",
+    "hanja": null,
+    "meaning": {
+      "ko": "집회",
+      "zh": "聚會",
+      "en": "meeting, gathering",
+      "ja": "集会",
+      "de": "Zusammenkunft",
+      "fr": "réunion",
+      "pl": "zebranie zborowe"
+    }
+  },
+  {
+    "word": "buổi thờ phượng gia đình",
+    "hanja": null,
+    "meaning": {
+      "ko": "가족 숭배",
+      "zh": "家庭崇拜",
+      "en": "family worship",
+      "ja": "家族崇拝",
+      "de": "Familienanbetung",
+      "fr": "culte familial",
+      "pl": "wielbienie Boga w gronie rodziny"
+    }
+  },
+  {
+    "word": "bước tiến",
+    "hanja": null,
+    "meaning": {
+      "ko": "행로",
+      "zh": "路程",
+      "en": "course/path",
+      "ja": "行路",
+      "de": "Lebensweg, Lauf",
+      "fr": "voie, course",
+      "pl": "droga, postępowanie"
+    }
+  },
+  {
+    "word": "cách trình bày",
+    "hanja": null,
+    "meaning": {
+      "ko": "제공 방법(봉사,연설)",
+      "zh": "提供方式(奉仕、演講)",
+      "en": "method of offering (service, talk)",
+      "ja": "提供方法(奉仕、話)",
+      "de": "Gesprächsvorschlag",
+      "fr": "suggestion de conversation",
+      "pl": "schemat rozmowy"
+    }
+  },
+  {
+    "word": "cải thiện thánh chức",
+    "hanja": "改善聖職",
+    "meaning": {
+      "ko": "야외봉사에 힘쓰십시오(집회)",
+      "zh": "要努力做外勤傳道（聚會）",
+      "en": "Strive in field service (meeting)",
+      "ja": "野外奉仕に励みなさい（集会）",
+      "de": "Uns im Dienst verbessern",
+      "fr": "Applique-toi au ministère",
+      "pl": "Ulepszajmy swoją służbę"
+    }
+  },
+  {
+    "word": "cảm tạ",
+    "hanja": "感謝",
+    "meaning": {
+      "ko": "감사하다, 감사드리다",
+      "zh": "感謝、感恩",
+      "en": "to give thanks, to be thankful",
+      "ja": "感謝する",
+      "de": "danken, Dank sagen",
+      "fr": "remercier, rendre grâce",
+      "pl": "dziękować, składać dziękczynienie"
+    }
+  },
+  {
+    "word": "cầu nguyện",
+    "hanja": "求願",
+    "meaning": {
+      "ko": "기도",
+      "zh": "禱告",
+      "en": "prayer",
+      "ja": "祈り",
+      "de": "Gebet",
+      "fr": "prière",
+      "pl": "modlitwa"
+    }
+  },
+  {
+    "word": "căng thẳng",
+    "hanja": null,
+    "meaning": {
+      "ko": "스트레스",
+      "zh": "壓力",
+      "en": "stress",
+      "ja": "ストレス",
+      "de": "Stress",
+      "fr": "stress",
+      "pl": "stres"
+    }
+  },
+  {
+    "word": "câu",
+    "hanja": "句",
+    "meaning": {
+      "ko": "절",
+      "zh": "鞠躬",
+      "en": "bow (greeting)",
+      "ja": "お辞儀",
+      "de": "Vers",
+      "fr": "verset",
+      "pl": "werset"
+    }
+  },
+  {
+    "word": "câu Kinh Thánh",
+    "hanja": "句經聖",
+    "meaning": {
+      "ko": "성구",
+      "zh": "經文",
+      "en": "scripture",
+      "ja": "聖句",
+      "de": "Bibeltext",
+      "fr": "verset, texte biblique",
+      "pl": "werset biblijny"
+    }
+  },
+  {
+    "word": "cây khổ hình",
+    "hanja": null,
+    "meaning": {
+      "ko": "형주",
+      "zh": "荊州",
+      "en": "Jingzhou",
+      "ja": "荊州",
+      "de": "Marterpfahl",
+      "fr": "poteau de supplice",
+      "pl": "pal męki"
+    }
+  },
+  {
+    "word": "chân lý",
+    "hanja": "眞理",
+    "meaning": {
+      "ko": "진리",
+      "zh": "真理",
+      "en": "truth",
+      "ja": "真理",
+      "de": "Wahrheit",
+      "fr": "vérité",
+      "pl": "prawda"
+    }
+  },
+  {
+    "word": "chỉ định",
+    "hanja": "指定",
+    "meaning": {
+      "ko": "임명하다.(과제)",
+      "zh": "任命（課題）",
+      "en": "to appoint (assignment)",
+      "ja": "任命する（課題）",
+      "de": "zuteilen (Aufgabe)",
+      "fr": "attribution (devoir)",
+      "pl": "zadanie, przydział"
+    }
+  },
+  {
+    "word": "chia sẻ niềm tin",
+    "hanja": null,
+    "meaning": {
+      "ko": "전파",
+      "zh": "傳播·電波",
+      "en": "propagation/wave",
+      "ja": "電波・伝播",
+      "de": "Glauben weitergeben, predigen",
+      "fr": "prêcher, partager sa foi",
+      "pl": "dzielenie się wiarą, głoszenie"
+    }
+  },
+  {
+    "word": "chiên khác",
+    "hanja": null,
+    "meaning": {
+      "ko": "다른 양들",
+      "zh": "別的羊",
+      "en": "other sheep",
+      "ja": "ほかの羊",
+      "de": "andere Schafe",
+      "fr": "autres brebis",
+      "pl": "drugie owce"
+    }
+  },
+  {
+    "word": "chính phủ",
+    "hanja": "政府",
+    "meaning": {
+      "ko": "정부",
+      "zh": "政府",
+      "en": "government",
+      "ja": "政府",
+      "de": "Regierung",
+      "fr": "gouvernement",
+      "pl": "rząd"
+    }
+  },
+  {
+    "word": "chính quyền",
+    "hanja": "政權",
+    "meaning": {
+      "ko": "행정부",
+      "zh": "行政部門",
+      "en": "administrative branch",
+      "ja": "行政府",
+      "de": "Behörden, Verwaltung",
+      "fr": "autorités, pouvoir exécutif",
+      "pl": "władze"
+    }
+  },
+  {
+    "word": "chủ đề",
+    "hanja": "主題",
+    "meaning": {
+      "ko": "주제",
+      "zh": "主題",
+      "en": "topic/subject",
+      "ja": "主題",
+      "de": "Thema",
+      "fr": "thème, sujet",
+      "pl": "myśl przewodnia, temat"
+    }
+  },
+  {
+    "word": "chủ nghĩa quốc gia",
+    "hanja": "主義國家",
+    "meaning": {
+      "ko": "국가주의",
+      "zh": "國家主義",
+      "en": "nationalism",
+      "ja": "国家主義",
+      "de": "Nationalismus",
+      "fr": "nationalisme",
+      "pl": "nacjonalizm"
+    }
+  },
+  {
+    "word": "chủ nghĩa vật chất",
+    "hanja": "主義物質",
+    "meaning": {
+      "ko": "물질주의",
+      "zh": "物質主義",
+      "en": "materialism",
+      "ja": "物質主義",
+      "de": "Materialismus",
+      "fr": "matérialisme",
+      "pl": "materializm"
+    }
+  },
+  {
+    "word": "chức tế lễ",
+    "hanja": "職祭禮",
+    "meaning": {
+      "ko": "제사직",
+      "zh": "祭司職",
+      "en": "priesthood",
+      "ja": "祭司職",
+      "de": "Priestertum",
+      "fr": "prêtrise",
+      "pl": "kapłaństwo"
+    }
+  },
+  {
+    "word": "chương",
+    "hanja": "章",
+    "meaning": {
+      "ko": "장",
+      "zh": "章",
+      "en": "chapter",
+      "ja": "章",
+      "de": "Kapitel",
+      "fr": "chapitre",
+      "pl": "rozdział"
+    }
+  },
+  {
+    "word": "con của Đức Chúa Trời",
+    "hanja": null,
+    "meaning": {
+      "ko": "하느님의 아들",
+      "zh": "上帝的兒子",
+      "en": "God's Son",
+      "ja": "神の子",
+      "de": "Sohn Gottes",
+      "fr": "Fils de Dieu",
+      "pl": "Syn Boży"
+    }
+  },
+  {
+    "word": "con dê",
+    "hanja": null,
+    "meaning": {
+      "ko": "염소",
+      "zh": "山羊",
+      "en": "goat",
+      "ja": "ヤギ",
+      "de": "Ziege",
+      "fr": "chèvre, bouc",
+      "pl": "koza, kozioł"
+    }
+  },
+  {
+    "word": "Con một",
+    "hanja": null,
+    "meaning": {
+      "ko": "독생자",
+      "zh": "獨生子",
+      "en": "only-begotten son",
+      "ja": "独り子",
+      "de": "einziggezeugter Sohn",
+      "fr": "Fils unique",
+      "pl": "jednorodzony Syn"
+    }
+  },
+  {
+    "word": "công chính",
+    "hanja": "公正",
+    "meaning": {
+      "ko": "의로운",
+      "zh": "正義的",
+      "en": "righteous",
+      "ja": "義にかなった",
+      "de": "gerecht",
+      "fr": "juste",
+      "pl": "prawy"
+    }
+  },
+  {
+    "word": "cử tọa",
+    "hanja": "舉座",
+    "meaning": {
+      "ko": "청중",
+      "zh": "聽眾",
+      "en": "audience",
+      "ja": "聴衆",
+      "de": "Zuhörerschaft",
+      "fr": "auditoire",
+      "pl": "audytorium, słuchacze"
+    }
+  },
+  {
+    "word": "cuộc học hỏi Kinh Thánh tại nhà",
+    "hanja": null,
+    "meaning": {
+      "ko": "가정성서연구",
+      "zh": "家庭聖經研究",
+      "en": "home Bible study",
+      "ja": "家庭聖書研究",
+      "de": "Heimbibelstudium",
+      "fr": "cours biblique à domicile",
+      "pl": "domowe studium biblijne"
+    }
+  },
+  {
+    "word": "dạy dỗ",
+    "hanja": null,
+    "meaning": {
+      "ko": "교육",
+      "zh": "教育",
+      "en": "education",
+      "ja": "教育",
+      "de": "Lehre, Belehrung",
+      "fr": "enseignement, éducation",
+      "pl": "pouczanie, nauczanie"
+    }
+  },
+  {
+    "word": "dâng mình",
+    "hanja": null,
+    "meaning": {
+      "ko": "헌신하다",
+      "zh": "獻身",
+      "en": "to devote oneself",
+      "ja": "献身する",
+      "de": "sich hingeben",
+      "fr": "se vouer, vouement",
+      "pl": "oddać się Bogu"
+    }
+  },
+  {
+    "word": "diễn giả",
+    "hanja": "演者",
+    "meaning": {
+      "ko": "연사",
+      "zh": "講者",
+      "en": "speaker",
+      "ja": "講演者",
+      "de": "Redner",
+      "fr": "orateur",
+      "pl": "mówca"
+    }
+  },
+  {
+    "word": "diễn văn công cộng",
+    "hanja": "演文公共",
+    "meaning": {
+      "ko": "공개강연",
+      "zh": "公眾演講",
+      "en": "public talk",
+      "ja": "公開講演",
+      "de": "öffentlicher Vortrag",
+      "fr": "discours public",
+      "pl": "wykład publiczny"
+    }
+  },
+  {
+    "word": "đại hội",
+    "hanja": "大會",
+    "meaning": {
+      "ko": "대회",
+      "zh": "大會",
+      "en": "convention",
+      "ja": "大会",
+      "de": "Kongress",
+      "fr": "assemblée",
+      "pl": "kongres"
+    }
+  },
+  {
+    "word": "Đấng Tạo Hoá",
+    "hanja": "造化",
+    "meaning": {
+      "ko": "창조주",
+      "zh": "創造主",
+      "en": "Creator",
+      "ja": "創造主",
+      "de": "Schöpfer",
+      "fr": "Créateur",
+      "pl": "Stwórca"
+    }
+  },
+  {
+    "word": "Đấng Toàn Năng",
+    "hanja": "全能",
+    "meaning": {
+      "ko": "전능자",
+      "zh": "全能者",
+      "en": "the Almighty",
+      "ja": "全能者",
+      "de": "der Allmächtige",
+      "fr": "le Tout-Puissant",
+      "pl": "Wszechmocny"
+    }
+  },
+  {
+    "word": "đấng Trung Gian",
+    "hanja": "中間",
+    "meaning": {
+      "ko": "중개자",
+      "zh": "居間人",
+      "en": "intermediary",
+      "ja": "仲介者",
+      "de": "Mittler",
+      "fr": "Médiateur",
+      "pl": "Pośrednik"
+    }
+  },
+  {
+    "word": "đạo Đấng Ki-tô",
+    "hanja": null,
+    "meaning": {
+      "ko": "그리스도교",
+      "zh": "基督教",
+      "en": "Christianity",
+      "ja": "キリスト教",
+      "de": "Christentum",
+      "fr": "christianisme",
+      "pl": "chrystianizm"
+    }
+  },
+  {
+    "word": "đạo đức",
+    "hanja": "道德",
+    "meaning": {
+      "ko": "도덕",
+      "zh": "道德",
+      "en": "morality",
+      "ja": "道徳",
+      "de": "Moral",
+      "fr": "morale, moralité",
+      "pl": "moralność"
+    }
+  },
+  {
+    "word": "đất hứa",
+    "hanja": null,
+    "meaning": {
+      "ko": "약속의 땅",
+      "zh": "應許之地",
+      "en": "the promised land",
+      "ja": "約束の地",
+      "de": "verheißenes Land",
+      "fr": "pays promis",
+      "pl": "ziemia obiecana"
+    }
+  },
+  {
+    "word": "Đất Hứa",
+    "hanja": null,
+    "meaning": {
+      "ko": "약속의 땅",
+      "zh": "應許之地",
+      "en": "Promised Land",
+      "ja": "約束の地",
+      "de": "Verheißenes Land",
+      "fr": "Terre promise",
+      "pl": "Ziemia Obiecana"
+    }
+  },
+  {
+    "word": "đầy tớ trung tín và khôn ngoan",
+    "hanja": null,
+    "meaning": {
+      "ko": "충실하고 슬기로운 종",
+      "zh": "忠信睿智的奴隸",
+      "en": "faithful and discreet slave",
+      "ja": "忠実で思慮深い奴隷",
+      "de": "treuer und verständiger Sklave",
+      "fr": "esclave fidèle et avisé",
+      "pl": "niewolnik wierny i roztropny"
+    }
+  },
+  {
+    "word": "đền thờ",
+    "hanja": null,
+    "meaning": {
+      "ko": "성전",
+      "zh": "聖殿",
+      "en": "temple",
+      "ja": "神殿",
+      "de": "Tempel",
+      "fr": "temple",
+      "pl": "świątynia"
+    }
+  },
+  {
+    "word": "đoàn thể anh em",
+    "hanja": null,
+    "meaning": {
+      "ko": "형제 관계",
+      "zh": "弟兄關係",
+      "en": "brotherhood",
+      "ja": "兄弟関係",
+      "de": "Bruderschaft",
+      "fr": "communauté des frères",
+      "pl": "społeczność braterska"
+    }
+  },
+  {
+    "word": "đọc Kinh Thánh",
+    "hanja": null,
+    "meaning": {
+      "ko": "성경 낭독",
+      "zh": "聖經朗讀",
+      "en": "Bible reading",
+      "ja": "聖書の朗読",
+      "de": "Bibellesung",
+      "fr": "lecture de la Bible",
+      "pl": "czytanie Biblii"
+    }
+  },
+  {
+    "word": "đồng tính luyến ái",
+    "hanja": "同性戀愛",
+    "meaning": {
+      "ko": "동성애",
+      "zh": "同性戀",
+      "en": "homosexuality",
+      "ja": "同性愛",
+      "de": "Homosexualität",
+      "fr": "homosexualité",
+      "pl": "homoseksualizm"
+    }
+  },
+  {
+    "word": "đương đầu với vấn đề",
+    "hanja": null,
+    "meaning": {
+      "ko": "문제에 대처하다",
+      "zh": "應對問題",
+      "en": "deal with a problem",
+      "ja": "問題に対処する",
+      "de": "mit Problemen umgehen",
+      "fr": "faire face aux problèmes",
+      "pl": "radzić sobie z problemami"
+    }
+  },
+  {
+    "word": "giá chuộc",
+    "hanja": null,
+    "meaning": {
+      "ko": "대속",
+      "zh": "贖價",
+      "en": "ransom",
+      "ja": "贖い",
+      "de": "Lösegeld",
+      "fr": "rançon",
+      "pl": "okup"
+    }
+  },
+  {
+    "word": "giải trí",
+    "hanja": null,
+    "meaning": {
+      "ko": "여가활동",
+      "zh": "休閒活動",
+      "en": "leisure activity",
+      "ja": "余暇活動",
+      "de": "Freizeitbeschäftigung",
+      "fr": "détente, loisirs",
+      "pl": "odpoczynek, rozrywka"
+    }
+  },
+  {
+    "word": "giám thị điều phối",
+    "hanja": "監視調配",
+    "meaning": {
+      "ko": "조정자",
+      "zh": "長老團協調者",
+      "en": "mediator",
+      "ja": "調停者",
+      "de": "Koordinator der Ältestenschaft",
+      "fr": "coordinateur du collège des anciens",
+      "pl": "koordynator grona starszych"
+    }
+  },
+  {
+    "word": "giáo lý",
+    "hanja": "敎理",
+    "meaning": {
+      "ko": "교리",
+      "zh": "教義",
+      "en": "doctrine",
+      "ja": "教理",
+      "de": "Lehre, Glaubenslehre",
+      "fr": "doctrine",
+      "pl": "nauka, doktryna"
+    }
+  },
+  {
+    "word": "giáo sĩ",
+    "hanja": "教士",
+    "meaning": {
+      "ko": "선교인",
+      "zh": "特派傳道員",
+      "en": "missionary",
+      "ja": "宣教師",
+      "de": "Missionar",
+      "fr": "missionnaire",
+      "pl": "misjonarz"
+    }
+  },
+  {
+    "word": "giao ước",
+    "hanja": null,
+    "meaning": {
+      "ko": "계약",
+      "zh": "合約",
+      "en": "contract",
+      "ja": "契約",
+      "de": "Bund",
+      "fr": "alliance",
+      "pl": "przymierze"
+    }
+  },
+  {
+    "word": "Giấy uỷ quyền chăm sóc sức khỏe",
+    "hanja": null,
+    "meaning": {
+      "ko": "의료 위임장",
+      "zh": "醫療委任書",
+      "en": "medical power of attorney",
+      "ja": "医療委任状",
+      "de": "Vorsorgevollmacht",
+      "fr": "mandat de protection médicale",
+      "pl": "pełnomocnictwo medyczne"
+    }
+  },
+  {
+    "word": "Giê-hô-va Đức Chúa Trời",
+    "hanja": null,
+    "meaning": {
+      "ko": "여호와 하느님",
+      "zh": "耶和華上帝",
+      "en": "Jehovah God",
+      "ja": "エホバ神",
+      "de": "Jehova Gott",
+      "fr": "Jéhovah Dieu",
+      "pl": "Jehowa Bóg"
+    }
+  },
+  {
+    "word": "Giê-su Ki-tô",
+    "hanja": null,
+    "meaning": {
+      "ko": "예수 그리스도",
+      "zh": "耶穌基督",
+      "en": "Jesus Christ",
+      "ja": "イエス・キリスト",
+      "de": "Jesus Christus",
+      "fr": "Jésus Christ",
+      "pl": "Jezus Chrystus"
+    }
+  },
+  {
+    "word": "Hades",
+    "hanja": null,
+    "meaning": {
+      "ko": "하데스",
+      "zh": "「海地斯」（希臘語）",
+      "en": "Hades",
+      "ja": "ハデス",
+      "de": "Hades",
+      "fr": "Hadès",
+      "pl": "Hades"
+    }
+  },
+  {
+    "word": "hàng giáo phẩm",
+    "hanja": null,
+    "meaning": {
+      "ko": "교직자",
+      "zh": "教職人員",
+      "en": "educator",
+      "ja": "教職者",
+      "de": "Geistlichkeit",
+      "fr": "clergé",
+      "pl": "duchowieństwo"
+    }
+  },
+  {
+    "word": "hầu việc",
+    "hanja": null,
+    "meaning": {
+      "ko": "섬기다, 봉사하다",
+      "zh": "事奉",
+      "en": "to serve (God)",
+      "ja": "仕える",
+      "de": "dienen (Gott)",
+      "fr": "servir Dieu",
+      "pl": "służyć Bogu"
+    }
+  },
+  {
+    "word": "hết mình",
+    "hanja": null,
+    "meaning": {
+      "ko": "영혼을 다한",
+      "zh": "用全部生命 (盡心竭力)",
+      "en": "with all one's soul",
+      "ja": "魂を尽くした",
+      "de": "mit ganzer Seele",
+      "fr": "de toute son âme",
+      "pl": "z całej duszy"
+    }
+  },
+  {
+    "word": "hiểu biết chính xác",
+    "hanja": null,
+    "meaning": {
+      "ko": "정확한 지식",
+      "zh": "確切的認識",
+      "en": "accurate knowledge",
+      "ja": "正確な知識",
+      "de": "genaue Erkenntnis",
+      "fr": "connaissance exacte",
+      "pl": "dokładna wiedza"
+    }
+  },
+  {
+    "word": "hoàn hảo",
+    "hanja": "完好",
+    "meaning": {
+      "ko": "완벽한",
+      "zh": "完美的",
+      "en": "perfect",
+      "ja": "完璧な",
+      "de": "vollkommen",
+      "fr": "parfait",
+      "pl": "doskonały"
+    }
+  },
+  {
+    "word": "hoạn nạn lớn",
+    "hanja": null,
+    "meaning": {
+      "ko": "큰 환난",
+      "zh": "大患難",
+      "en": "the great tribulation",
+      "ja": "大患難",
+      "de": "große Drangsal",
+      "fr": "grande tribulation",
+      "pl": "wielki ucisk"
+    }
+  },
+  {
+    "word": "hoàn vũ",
+    "hanja": "寰宇",
+    "meaning": {
+      "ko": "우주적인",
+      "zh": "宇宙的",
+      "en": "cosmic",
+      "ja": "宇宙的な",
+      "de": "universell",
+      "fr": "universel",
+      "pl": "uniwersalny, wszechświatowy"
+    }
+  },
+  {
+    "word": "học hỏi",
+    "hanja": null,
+    "meaning": {
+      "ko": "연구(하다)",
+      "zh": "研究",
+      "en": "to research",
+      "ja": "研究（する）",
+      "de": "studieren, Studium",
+      "fr": "étudier, étude",
+      "pl": "studiować, studium"
+    }
+  },
+  {
+    "word": "học hỏi cá nhân",
+    "hanja": null,
+    "meaning": {
+      "ko": "개인 연구",
+      "zh": "個人研讀",
+      "en": "personal study",
+      "ja": "個人研究",
+      "de": "persönliches Studium",
+      "fr": "étude individuelle",
+      "pl": "studium osobiste"
+    }
+  },
+  {
+    "word": "học viên Kinh Thánh",
+    "hanja": "學員經聖",
+    "meaning": {
+      "ko": "성서 연구생",
+      "zh": "聖經研究生",
+      "en": "Bible student",
+      "ja": "聖書研究生",
+      "de": "Bibelschüler",
+      "fr": "étudiant de la Bible",
+      "pl": "osoba studiująca Biblię"
+    }
+  },
+  {
+    "word": "hội đồng lãnh đạo",
+    "hanja": "會同領導",
+    "meaning": {
+      "ko": "중앙장로회",
+      "zh": "中央長老團",
+      "en": "central body of elders",
+      "ja": "中央長老会",
+      "de": "Leitende Körperschaft",
+      "fr": "Collège central",
+      "pl": "Ciało Kierownicze"
+    }
+  },
+  {
+    "word": "hội đồng trưởng lão",
+    "hanja": "會同長老",
+    "meaning": {
+      "ko": "장로의 회",
+      "zh": "長老團",
+      "en": "body of elders",
+      "ja": "長老の会",
+      "de": "Ältestenschaft",
+      "fr": "collège des anciens",
+      "pl": "grono starszych"
+    }
+  },
+  {
+    "word": "hội nghị vòng quanh",
+    "hanja": null,
+    "meaning": {
+      "ko": "순회 대회",
+      "zh": "分區大會",
+      "en": "circuit assembly",
+      "ja": "巡回大会",
+      "de": "Kreiskongress",
+      "fr": "assemblée de circonscription",
+      "pl": "zgromadzenie obwodowe"
+    }
+  },
+  {
+    "word": "Hội Quốc Liên",
+    "hanja": null,
+    "meaning": {
+      "ko": "국제 연맹",
+      "zh": "國際聯盟",
+      "en": "League of Nations",
+      "ja": "国際連盟",
+      "de": "Völkerbund",
+      "fr": "Société des Nations",
+      "pl": "Liga Narodów"
+    }
+  },
+  {
+    "word": "hội thánh",
+    "hanja": "會聖",
+    "meaning": {
+      "ko": "회중",
+      "zh": "會眾",
+      "en": "congregation",
+      "ja": "会衆",
+      "de": "Versammlung",
+      "fr": "assemblée, congrégation",
+      "pl": "zbór"
+    }
+  },
+  {
+    "word": "hộp đóng góp",
+    "hanja": null,
+    "meaning": {
+      "ko": "헌금함",
+      "zh": "奉獻箱",
+      "en": "offering box",
+      "ja": "献金箱",
+      "de": "Spendenkasten",
+      "fr": "boîte à offrandes",
+      "pl": "puszka na datki"
+    }
+  },
+  {
+    "word": "hy sinh",
+    "hanja": "犧牲",
+    "meaning": {
+      "ko": "희생하다",
+      "zh": "犧牲",
+      "en": "to sacrifice",
+      "ja": "犠牲にする",
+      "de": "opfern, Opfer bringen",
+      "fr": "sacrifier, faire des sacrifices",
+      "pl": "poświęcać się, składać ofiary"
+    }
+  },
+  {
+    "word": "kết hợp với người xấu",
+    "hanja": null,
+    "meaning": {
+      "ko": "나쁜 교제",
+      "zh": "壞的交往",
+      "en": "bad association",
+      "ja": "悪い交わり",
+      "de": "schlechter Umgang",
+      "fr": "mauvaises fréquentations",
+      "pl": "złe towarzystwo"
+    }
+  },
+  {
+    "word": "kết hôn",
+    "hanja": "結婚",
+    "meaning": {
+      "ko": "결혼",
+      "zh": "結婚",
+      "en": "marriage",
+      "ja": "結婚",
+      "de": "Heirat, Ehe",
+      "fr": "mariage",
+      "pl": "małżeństwo"
+    }
+  },
+  {
+    "word": "khả năng suy xét",
+    "hanja": null,
+    "meaning": {
+      "ko": "사고력",
+      "zh": "思考能力",
+      "en": "thinking ability",
+      "ja": "思考力",
+      "de": "Denkvermögen",
+      "fr": "capacité de réflexion",
+      "pl": "zdolność myślenia"
+    }
+  },
+  {
+    "word": "khích lệ",
+    "hanja": "激勵",
+    "meaning": {
+      "ko": "동기를 부여하다",
+      "zh": "賦予動機",
+      "en": "to motivate",
+      "ja": "動機を与える",
+      "de": "ermuntern, motivieren",
+      "fr": "encourager, motiver",
+      "pl": "motywować, zachęcać"
+    }
+  },
+  {
+    "word": "kho báu từ Kinh Thánh",
+    "hanja": null,
+    "meaning": {
+      "ko": "성경에 담긴 보물(집회)",
+      "zh": "聖經寶藏(聚會)",
+      "en": "Treasures From God's Word (meeting)",
+      "ja": "神の言葉の宝(集会)",
+      "de": "Schätze aus Gottes Wort",
+      "fr": "Joyaux de la Parole de Dieu",
+      "pl": "Skarby ze Słowa Bożego"
+    }
+  },
+  {
+    "word": "khối Ki-tô giáo",
+    "hanja": null,
+    "meaning": {
+      "ko": "그리스도교국",
+      "zh": "基督教國",
+      "en": "Christendom",
+      "ja": "キリスト教国",
+      "de": "Christenheit",
+      "fr": "chrétienté",
+      "pl": "chrześcijaństwo (nominalne)"
+    }
+  },
+  {
+    "word": "khu vực",
+    "hanja": "區域",
+    "meaning": {
+      "ko": "구역",
+      "zh": "區域",
+      "en": "district, territory",
+      "ja": "区域",
+      "de": "Gebiet",
+      "fr": "territoire",
+      "pl": "teren"
+    }
+  },
+  {
+    "word": "kịch",
+    "hanja": "劇",
+    "meaning": {
+      "ko": "드라마",
+      "zh": "電視劇",
+      "en": "drama",
+      "ja": "ドラマ",
+      "de": "Hörspiel, Drama",
+      "fr": "pièce, fiction dramatique",
+      "pl": "słuchowisko, dramat"
+    }
+  },
+  {
+    "word": "kinh lạy Cha",
+    "hanja": null,
+    "meaning": {
+      "ko": "주기도문",
+      "zh": "主禱文",
+      "en": "the Lord's Prayer",
+      "ja": "主の祈り",
+      "de": "Vaterunser",
+      "fr": "Notre Père",
+      "pl": "Modlitwa Pańska"
+    }
+  },
+  {
+    "word": "Kinh Thánh",
+    "hanja": "經聖",
+    "meaning": {
+      "ko": "성서",
+      "zh": "聖經",
+      "en": "the Bible",
+      "ja": "聖書",
+      "de": "die Bibel",
+      "fr": "la Bible",
+      "pl": "Biblia / Pismo Święte"
+    }
+  },
+  {
+    "word": "làm chứng",
+    "hanja": null,
+    "meaning": {
+      "ko": "증거하다",
+      "zh": "見證",
+      "en": "to testify/witness",
+      "ja": "証しする",
+      "de": "Zeugnis ablegen",
+      "fr": "rendre témoignage",
+      "pl": "dawać świadectwo"
+    }
+  },
+  {
+    "word": "làm chứng bán chính thức",
+    "hanja": null,
+    "meaning": {
+      "ko": "비공식 증거",
+      "zh": "非正式證據",
+      "en": "informal evidence",
+      "ja": "非公式の証拠",
+      "de": "informelles Zeugnisgeben",
+      "fr": "témoignage informel",
+      "pl": "świadczenie nieoficjalne"
+    }
+  },
+  {
+    "word": "làm chứng nơi công cộng",
+    "hanja": null,
+    "meaning": {
+      "ko": "공개 증거",
+      "zh": "公開見證",
+      "en": "public witnessing",
+      "ja": "公開の証言",
+      "de": "Zeugnisgeben in der Öffentlichkeit",
+      "fr": "témoignage public",
+      "pl": "świadczenie publiczne"
+    }
+  },
+  {
+    "word": "Lễ Ngũ Tuần",
+    "hanja": "禮五旬",
+    "meaning": {
+      "ko": "오순절",
+      "zh": "五旬節",
+      "en": "Pentecost",
+      "ja": "ペンテコステ",
+      "de": "Pfingsten",
+      "fr": "Pentecôte",
+      "pl": "Pięćdziesiątnica"
+    }
+  },
+  {
+    "word": "Lễ Vượt qua",
+    "hanja": null,
+    "meaning": {
+      "ko": "유월절",
+      "zh": "逾越節",
+      "en": "Passover",
+      "ja": "過ぎ越し",
+      "de": "Passah",
+      "fr": "Pâque",
+      "pl": "Pascha"
+    }
+  },
+  {
+    "word": "Liên hợp Quốc",
+    "hanja": null,
+    "meaning": {
+      "ko": "국제 연합",
+      "zh": "聯合國",
+      "en": "United Nations",
+      "ja": "国際連合",
+      "de": "Vereinte Nationen",
+      "fr": "Nations unies",
+      "pl": "Organizacja Narodów Zjednoczonych"
+    }
+  },
+  {
+    "word": "loại bỏ",
+    "hanja": null,
+    "meaning": {
+      "ko": "내보냈다",
+      "zh": "趕出去了",
+      "en": "sent out, expelled",
+      "ja": "追い出した",
+      "de": "entfernen, ausschließen",
+      "fr": "exclure, renvoyer",
+      "pl": "wykluczyć"
+    }
+  },
+  {
+    "word": "lời Đức Chúa Trời",
+    "hanja": null,
+    "meaning": {
+      "ko": "하느님의 말씀",
+      "zh": "上帝的話語",
+      "en": "God's word",
+      "ja": "神の言葉",
+      "de": "Wort Gottes",
+      "fr": "parole de Dieu",
+      "pl": "słowo Boże"
+    }
+  },
+  {
+    "word": "lối sống",
+    "hanja": null,
+    "meaning": {
+      "ko": "생활 방식",
+      "zh": "生活方式",
+      "en": "lifestyle",
+      "ja": "生活様式",
+      "de": "Lebensweise",
+      "fr": "mode de vie",
+      "pl": "styl życia"
+    }
+  },
+  {
+    "word": "lối sống một tín đồ",
+    "hanja": null,
+    "meaning": {
+      "ko": "그리스도인 생활(집회)",
+      "zh": "基督徒生活(聚會)",
+      "en": "Christian Life (meeting)",
+      "ja": "クリスチャン生活(集会)",
+      "de": "Unser Leben als Christ",
+      "fr": "Vie chrétienne",
+      "pl": "Chrześcijańskie życie"
+    }
+  },
+  {
+    "word": "Lối sống và Thánh chức",
+    "hanja": null,
+    "meaning": {
+      "ko": "생활과 봉사 집회",
+      "zh": "生活與服事聚會",
+      "en": "Life and Ministry Meeting",
+      "ja": "生活と奉仕の集会",
+      "de": "Leben-und-Dienst-Zusammenkunft",
+      "fr": "réunion Vie et ministère",
+      "pl": "Zebranie chrześcijańskiego życia i służby"
+    }
+  },
+  {
+    "word": "Lối sống và thánh chức -Chương trình nhóm họp",
+    "hanja": null,
+    "meaning": {
+      "ko": "그리스도인 생활과 집회 교재",
+      "zh": "《基督徒生活與聚會教材》",
+      "en": "Christian Life and Meeting Workbook",
+      "ja": "クリスチャンの生活と集会の教材",
+      "de": "Arbeitsheft für die Zusammenkunft",
+      "fr": "Cahier pour la réunion Vie et ministère",
+      "pl": "Chrześcijańskie życie i służba — program zebrań"
+    }
+  },
+  {
+    "word": "lòng sùng kính",
+    "hanja": "崇敬",
+    "meaning": {
+      "ko": "경건한 정성",
+      "zh": "敬虔的忠貞",
+      "en": "godly devotion",
+      "ja": "敬虔な献身",
+      "de": "Gottergebenheit",
+      "fr": "attachement à Dieu",
+      "pl": "pobożność, zbożne oddanie"
+    }
+  },
+  {
+    "word": "lòng trung thành",
+    "hanja": "忠誠",
+    "meaning": {
+      "ko": "충성",
+      "zh": "忠誠",
+      "en": "loyalty",
+      "ja": "忠誠",
+      "de": "Loyalität",
+      "fr": "loyauté, fidélité",
+      "pl": "lojalność"
+    }
+  },
+  {
+    "word": "lòng trung thành",
+    "hanja": "忠誠",
+    "meaning": {
+      "ko": "충실함",
+      "zh": "忠實",
+      "en": "faithfulness",
+      "ja": "忠実さ",
+      "de": "Treue, Zuverlässigkeit",
+      "fr": "fidélité",
+      "pl": "wierność"
+    }
+  },
+  {
+    "word": "luật pháp Môi-se",
+    "hanja": null,
+    "meaning": {
+      "ko": "모세의 율법",
+      "zh": "摩西律法",
+      "en": "Law of Moses",
+      "ja": "モーセの律法",
+      "de": "mosaisches Gesetz",
+      "fr": "Loi mosaïque",
+      "pl": "Prawo Mojżeszowe"
+    }
+  },
+  {
+    "word": "lương tâm",
+    "hanja": "良心",
+    "meaning": {
+      "ko": "양심",
+      "zh": "良心",
+      "en": "conscience",
+      "ja": "良心",
+      "de": "Gewissen",
+      "fr": "conscience",
+      "pl": "sumienie"
+    }
+  },
+  {
+    "word": "lưu đày",
+    "hanja": null,
+    "meaning": {
+      "ko": "유배, 유배되다",
+      "zh": "流放、被放逐",
+      "en": "exile, to be exiled",
+      "ja": "流刑、追放される",
+      "de": "Exil, verbannt werden",
+      "fr": "exil, être exilé",
+      "pl": "wygnanie"
+    }
+  },
+  {
+    "word": "ly dị",
+    "hanja": "離異",
+    "meaning": {
+      "ko": "이혼",
+      "zh": "離婚",
+      "en": "divorce",
+      "ja": "離婚",
+      "de": "Scheidung",
+      "fr": "divorce",
+      "pl": "rozwód"
+    }
+  },
+  {
+    "word": "ma thuật",
+    "hanja": "魔術",
+    "meaning": {
+      "ko": "영매술",
+      "zh": "通靈術",
+      "en": "spiritism",
+      "ja": "交霊術",
+      "de": "Spiritismus",
+      "fr": "spiritisme",
+      "pl": "spirytyzm"
+    }
+  },
+  {
+    "word": "ma túy",
+    "hanja": "麻醉",
+    "meaning": {
+      "ko": "마약",
+      "zh": "毒品",
+      "en": "drug, narcotic",
+      "ja": "麻薬",
+      "de": "Drogen",
+      "fr": "drogue",
+      "pl": "narkotyki"
+    }
+  },
+  {
+    "word": "Mê-si",
+    "hanja": null,
+    "meaning": {
+      "ko": "메시아",
+      "zh": "彌賽亞",
+      "en": "Messiah",
+      "ja": "メシア",
+      "de": "Messias",
+      "fr": "Messie",
+      "pl": "Mesjasz"
+    }
+  },
+  {
+    "word": "micrô",
+    "hanja": null,
+    "meaning": {
+      "ko": "마이크",
+      "zh": "麥克風",
+      "en": "microphone",
+      "ja": "マイク",
+      "de": "Mikrofon",
+      "fr": "micro",
+      "pl": "mikrofon"
+    }
+  },
+  {
+    "word": "món biểu tượng",
+    "hanja": null,
+    "meaning": {
+      "ko": "표상물",
+      "zh": "象徵物",
+      "en": "symbol",
+      "ja": "表象物",
+      "de": "Symbole",
+      "fr": "emblèmes",
+      "pl": "emblematy"
+    }
+  },
+  {
+    "word": "một đám đông lớn",
+    "hanja": null,
+    "meaning": {
+      "ko": "큰 무리",
+      "zh": "大群眾",
+      "en": "great crowd",
+      "ja": "大群衆",
+      "de": "große Volksmenge",
+      "fr": "grande foule",
+      "pl": "wielka rzesza"
+    }
+  },
+  {
+    "word": "một trăm bốn mươi bốn ngàn người",
+    "hanja": null,
+    "meaning": {
+      "ko": "144,000명",
+      "zh": "144,000人",
+      "en": "144,000",
+      "ja": "144,000人",
+      "de": "144 000",
+      "fr": "144 000",
+      "pl": "144 000"
+    }
+  },
+  {
+    "word": "mô mả chung của nhân loại",
+    "hanja": null,
+    "meaning": {
+      "ko": "인류의 일반 무덤",
+      "zh": "人類的共同墳墓",
+      "en": "common grave of mankind",
+      "ja": "人類の共通の墓",
+      "de": "allgemeines Grab der Menschheit",
+      "fr": "tombe commune aux humains",
+      "pl": "wspólny grób ludzkości"
+    }
+  },
+  {
+    "word": "môn đồ",
+    "hanja": "門徒",
+    "meaning": {
+      "ko": "제자",
+      "zh": "門徒",
+      "en": "disciple",
+      "ja": "弟子",
+      "de": "Jünger",
+      "fr": "disciple",
+      "pl": "uczeń"
+    }
+  },
+  {
+    "word": "Mười Điều Răn",
+    "hanja": null,
+    "meaning": {
+      "ko": "십계명",
+      "zh": "十誡",
+      "en": "Ten Commandments",
+      "ja": "十戒",
+      "de": "Zehn Gebote",
+      "fr": "Dix Commandements",
+      "pl": "Dziesięć Przykazań"
+    }
+  },
+  {
+    "word": "mười hai sứ đồ",
+    "hanja": null,
+    "meaning": {
+      "ko": "12사도",
+      "zh": "十二使徒",
+      "en": "the 12 apostles",
+      "ja": "12使徒",
+      "de": "zwölf Apostel",
+      "fr": "douze apôtres",
+      "pl": "dwunastu apostołów"
+    }
+  },
+  {
+    "word": "nêu gương mẫu",
+    "hanja": null,
+    "meaning": {
+      "ko": "모범을 보이다",
+      "zh": "樹立榜樣",
+      "en": "set an example",
+      "ja": "模範を示す",
+      "de": "ein Vorbild sein",
+      "fr": "donner l’exemple",
+      "pl": "dawać przykład"
+    }
+  },
+  {
+    "word": "ngày Sa-bát",
+    "hanja": null,
+    "meaning": {
+      "ko": "안식(일)",
+      "zh": "安息（日）",
+      "en": "sabbath (day)",
+      "ja": "安息（日）",
+      "de": "Sabbat",
+      "fr": "sabbat",
+      "pl": "sabat"
+    }
+  },
+  {
+    "word": "ngoại tình",
+    "hanja": "外情",
+    "meaning": {
+      "ko": "간음",
+      "zh": "姦淫",
+      "en": "adultery",
+      "ja": "姦淫",
+      "de": "Ehebruch",
+      "fr": "adultère",
+      "pl": "cudzołóstwo"
+    }
+  },
+  {
+    "word": "nguyên tắc Kinh Thánh",
+    "hanja": "原則經聖",
+    "meaning": {
+      "ko": "성서원칙",
+      "zh": "聖經原則",
+      "en": "Bible principle",
+      "ja": "聖書の原則",
+      "de": "biblischer Grundsatz",
+      "fr": "principe biblique",
+      "pl": "zasada biblijna"
+    }
+  },
+  {
+    "word": "nguyên tắc về quyền làm đầu",
+    "hanja": null,
+    "meaning": {
+      "ko": "머리 직분 원칙",
+      "zh": "元首的原則",
+      "en": "headship principle",
+      "ja": "かしらの原則",
+      "de": "Grundsatz der Führerschaft",
+      "fr": "principe de l’autorité",
+      "pl": "zasada zwierzchnictwa"
+    }
+  },
+  {
+    "word": "người công bố",
+    "hanja": null,
+    "meaning": {
+      "ko": "전도인",
+      "zh": "傳道員",
+      "en": "publisher",
+      "ja": "伝道者",
+      "de": "Verkündiger",
+      "fr": "proclamateur",
+      "pl": "głosiciel"
+    }
+  },
+  {
+    "word": "người công bố chưa báp têm",
+    "hanja": null,
+    "meaning": {
+      "ko": "미침례 전도인",
+      "zh": "未受浸傳道員",
+      "en": "unbaptized publisher",
+      "ja": "未バプテスマの伝道者",
+      "de": "ungetaufter Verkündiger",
+      "fr": "proclamateur non baptisé",
+      "pl": "nieochrzczony głosiciel"
+    }
+  },
+  {
+    "word": "người Do Thái",
+    "hanja": null,
+    "meaning": {
+      "ko": "유대인",
+      "zh": "猶太人",
+      "en": "Jew",
+      "ja": "ユダヤ人",
+      "de": "Jude",
+      "fr": "Juif",
+      "pl": "Żyd"
+    }
+  },
+  {
+    "word": "người đọc bài",
+    "hanja": null,
+    "meaning": {
+      "ko": "낭독자",
+      "zh": "朗讀者",
+      "en": "reader",
+      "ja": "朗読者",
+      "de": "Leser",
+      "fr": "lecteur",
+      "pl": "lektor"
+    }
+  },
+  {
+    "word": "người hôn phối không tin đạo",
+    "hanja": null,
+    "meaning": {
+      "ko": "믿지 않는 배우자",
+      "zh": "不信的配偶",
+      "en": "unbelieving spouse",
+      "ja": "信者でない配偶者",
+      "de": "ungläubiger Ehepartner",
+      "fr": "conjoint non croyant",
+      "pl": "współmałżonek niebędący Świadkiem"
+    }
+  },
+  {
+    "word": "người lân cận",
+    "hanja": null,
+    "meaning": {
+      "ko": "이웃",
+      "zh": "鄰居",
+      "en": "neighbor",
+      "ja": "隣人",
+      "de": "Nächster",
+      "fr": "prochain",
+      "pl": "bliźni"
+    }
+  },
+  {
+    "word": "người Pha-ri-si",
+    "hanja": null,
+    "meaning": {
+      "ko": "바리새인",
+      "zh": "法利賽人",
+      "en": "Pharisee",
+      "ja": "パリサイ人",
+      "de": "Pharisäer",
+      "fr": "pharisien",
+      "pl": "faryzeusz"
+    }
+  },
+  {
+    "word": "người phục vụ",
+    "hanja": null,
+    "meaning": {
+      "ko": "봉사자",
+      "zh": "奉仕者",
+      "en": "servant; volunteer",
+      "ja": "奉仕者",
+      "de": "Diener, Freiwilliger",
+      "fr": "serviteur, bénévole",
+      "pl": "sługa, ochotnik"
+    }
+  },
+  {
+    "word": "người phụng sự trọn thời gian",
+    "hanja": null,
+    "meaning": {
+      "ko": "전 시간 봉사자",
+      "zh": "全時間傳道員",
+      "en": "full-time servant",
+      "ja": "全時間奉仕者",
+      "de": "Vollzeitdiener",
+      "fr": "serviteur à plein temps",
+      "pl": "sługa pełnoczasowy"
+    }
+  },
+  {
+    "word": "nhắc nhở",
+    "hanja": null,
+    "meaning": {
+      "ko": "상기시킴, 일깨움",
+      "zh": "提醒",
+      "en": "reminder",
+      "ja": "気づかせるもの",
+      "de": "Erinnerung",
+      "fr": "rappel",
+      "pl": "przypomnienie"
+    }
+  },
+  {
+    "word": "nhận thức",
+    "hanja": "認識",
+    "meaning": {
+      "ko": "인식하다",
+      "zh": "認識",
+      "en": "to recognize",
+      "ja": "認識する",
+      "de": "erkennen, wahrnehmen",
+      "fr": "prendre conscience, reconnaître",
+      "pl": "uświadomić sobie, dostrzec"
+    }
+  },
+  {
+    "word": "nhân cách cũ",
+    "hanja": null,
+    "meaning": {
+      "ko": "옛 인간성",
+      "zh": "舊的人性",
+      "en": "old personality",
+      "ja": "古い人格",
+      "de": "alte Persönlichkeit",
+      "fr": "vieille personnalité",
+      "pl": "stara osobowość"
+    }
+  },
+  {
+    "word": "nhân cách mới",
+    "hanja": null,
+    "meaning": {
+      "ko": "새 인간성",
+      "zh": "新品格",
+      "en": "new personality",
+      "ja": "新しい人格",
+      "de": "neue Persönlichkeit",
+      "fr": "nouvelle personnalité",
+      "pl": "nowa osobowość"
+    }
+  },
+  {
+    "word": "Nhân chứng Giê-hô-va",
+    "hanja": null,
+    "meaning": {
+      "ko": "여호와의 증인",
+      "zh": "耶和華見證人",
+      "en": "Jehovah's Witnesses",
+      "ja": "エホバの証人",
+      "de": "Jehovas Zeugen",
+      "fr": "Témoins de Jéhovah",
+      "pl": "Świadkowie Jehowy"
+    }
+  },
+  {
+    "word": "nhân từ bao la",
+    "hanja": null,
+    "meaning": {
+      "ko": "과분한 친절",
+      "zh": "過分的仁慈",
+      "en": "undeserved kindness",
+      "ja": "過分な親切",
+      "de": "unverdiente Güte",
+      "fr": "faveur imméritée",
+      "pl": "niezasłużona życzliwość"
+    }
+  },
+  {
+    "word": "nhiệm sở",
+    "hanja": "任所",
+    "meaning": {
+      "ko": "임지",
+      "zh": "任派",
+      "en": "assignment, place of service",
+      "ja": "任地",
+      "de": "Zuteilung, Dienstort",
+      "fr": "affectation, lieu de service",
+      "pl": "przydział służby"
+    }
+  },
+  {
+    "word": "nhóm rao giảng",
+    "hanja": null,
+    "meaning": {
+      "ko": "야외봉사를 위한 모임",
+      "zh": "外勤傳道聚會",
+      "en": "meeting for field service",
+      "ja": "野外奉仕のための集まり",
+      "de": "Zusammenkunft für den Predigtdienst",
+      "fr": "réunion pour la prédication",
+      "pl": "zbiórka do służby polowej"
+    }
+  },
+  {
+    "word": "niên giám",
+    "hanja": "年鑑",
+    "meaning": {
+      "ko": "연감",
+      "zh": "年鑑",
+      "en": "yearbook, almanac",
+      "ja": "年鑑",
+      "de": "Jahrbuch",
+      "fr": "annuaire",
+      "pl": "rocznik"
+    }
+  },
+  {
+    "word": "Núi Si-nai",
+    "hanja": null,
+    "meaning": {
+      "ko": "시나이 산",
+      "zh": "西奈山",
+      "en": "Mount Sinai",
+      "ja": "シナイ山",
+      "de": "Berg Sinai",
+      "fr": "mont Sinaï",
+      "pl": "góra Synaj"
+    }
+  },
+  {
+    "word": "Núi Si-ôn",
+    "hanja": null,
+    "meaning": {
+      "ko": "시온 산",
+      "zh": "錫安山",
+      "en": "Mount Zion",
+      "ja": "シオンの山",
+      "de": "Berg Zion",
+      "fr": "mont Sion",
+      "pl": "góra Syjon"
+    }
+  },
+  {
+    "word": "Nước Đức Chúa Trời",
+    "hanja": null,
+    "meaning": {
+      "ko": "하느님의 왕국",
+      "zh": "上帝的王國",
+      "en": "God's Kingdom",
+      "ja": "神の王国",
+      "de": "Gottes Königreich",
+      "fr": "Royaume de Dieu",
+      "pl": "Królestwo Boże"
+    }
+  },
+  {
+    "word": "Nước Trời",
+    "hanja": null,
+    "meaning": {
+      "ko": "왕국",
+      "zh": "王國",
+      "en": "Kingdom",
+      "ja": "王国",
+      "de": "Königreich",
+      "fr": "Royaume",
+      "pl": "Królestwo"
+    }
+  },
+  {
+    "word": "ô uế",
+    "hanja": "汚穢",
+    "meaning": {
+      "ko": "불결한",
+      "zh": "不潔的，骯髒的",
+      "en": "unclean; dirty",
+      "ja": "不潔な",
+      "de": "unrein",
+      "fr": "impur",
+      "pl": "nieczysty"
+    }
+  },
+  {
+    "word": "phần đọc Kinh Thánh hằng tuần",
+    "hanja": null,
+    "meaning": {
+      "ko": "주간 성서 읽기 범위",
+      "zh": "每週聖經閱讀範圍",
+      "en": "weekly Bible reading schedule",
+      "ja": "週の聖書通読範囲",
+      "de": "wöchentliches Bibelleseprogramm",
+      "fr": "programme hebdomadaire de lecture de la Bible",
+      "pl": "program cotygodniowego czytania Biblii"
+    }
+  },
+  {
+    "word": "phần học Kinh Thánh của hội thánh",
+    "hanja": null,
+    "meaning": {
+      "ko": "회중 성서 연구",
+      "zh": "會眾聖經研究",
+      "en": "Congregation Bible Study",
+      "ja": "会衆聖書研究",
+      "de": "Versammlungsbibelstudium",
+      "fr": "étude biblique de l’assemblée",
+      "pl": "zborowe studium Biblii"
+    }
+  },
+  {
+    "word": "phần Kinh Thánh tiếng Hê-bơ-rơ",
+    "hanja": null,
+    "meaning": {
+      "ko": "히브리어 성경",
+      "zh": "希伯來語聖經",
+      "en": "Hebrew Scriptures",
+      "ja": "ヘブライ語聖書",
+      "de": "Hebräische Schriften",
+      "fr": "Écritures hébraïques",
+      "pl": "Pisma Hebrajskie"
+    }
+  },
+  {
+    "word": "phần Kinh Thánh tiếng Hy Lạp",
+    "hanja": null,
+    "meaning": {
+      "ko": "그리스도인 그리스어 성경",
+      "zh": "《基督教希臘語聖經》",
+      "en": "Christian Greek Scriptures",
+      "ja": "クリスチャン・ギリシャ語聖書",
+      "de": "Christliche Griechische Schriften",
+      "fr": "Écritures grecques chrétiennes",
+      "pl": "Chrześcijańskie Pisma Greckie"
+    }
+  },
+  {
+    "word": "phát hành",
+    "hanja": "發行",
+    "meaning": {
+      "ko": "제공하다(잡지)",
+      "zh": "提供(雜誌)",
+      "en": "to offer (magazine)",
+      "ja": "提供する(雑誌)",
+      "de": "anbieten (Zeitschrift)",
+      "fr": "proposer (une revue)",
+      "pl": "proponować czasopisma"
+    }
+  },
+  {
+    "word": "phiên họp trưởng lão",
+    "hanja": null,
+    "meaning": {
+      "ko": "장로회의",
+      "zh": "長老會議",
+      "en": "elders' meeting",
+      "ja": "長老会議",
+      "de": "Ältestensitzung",
+      "fr": "réunion des anciens",
+      "pl": "spotkanie starszych"
+    }
+  },
+  {
+    "word": "Phòng Nước Trời",
+    "hanja": null,
+    "meaning": {
+      "ko": "왕국회관",
+      "zh": "王國聚會所",
+      "en": "Kingdom Hall",
+      "ja": "王国会館",
+      "de": "Königreichssaal",
+      "fr": "Salle du Royaume",
+      "pl": "Sala Królestwa"
+    }
+  },
+  {
+    "word": "Phòng Nước Trời được xây cấp tốc",
+    "hanja": null,
+    "meaning": {
+      "ko": "속성 건축 왕국회관",
+      "zh": "速建王國聚會所",
+      "en": "Quickly Built Kingdom Hall",
+      "ja": "速建王国会館",
+      "de": "Schnellbau-Königreichssaal",
+      "fr": "Salle du Royaume construite rapidement",
+      "pl": "Sala Królestwa budowana metodą szybkościową"
+    }
+  },
+  {
+    "word": "phụ tá",
+    "hanja": "輔佐",
+    "meaning": {
+      "ko": "봉사의 종",
+      "zh": "助理僕人",
+      "en": "ministerial servant",
+      "ja": "奉仕の僕",
+      "de": "Dienstamtgehilfe",
+      "fr": "assistant ministériel",
+      "pl": "sługa pomocniczy"
+    }
+  },
+  {
+    "word": "phục sinh",
+    "hanja": "復生",
+    "meaning": {
+      "ko": "부활",
+      "zh": "復活",
+      "en": "resurrection",
+      "ja": "復活",
+      "de": "Auferstehung",
+      "fr": "résurrection",
+      "pl": "zmartwychwstanie"
+    }
+  },
+  {
+    "word": "phục tùng",
+    "hanja": "服從",
+    "meaning": {
+      "ko": "복종",
+      "zh": "服從",
+      "en": "obedience",
+      "ja": "服従",
+      "de": "Unterordnung, Gehorsam",
+      "fr": "soumission, obéissance",
+      "pl": "posłuszeństwo, uległość"
+    }
+  },
+  {
+    "word": "phụng sự",
+    "hanja": "奉事",
+    "meaning": {
+      "ko": "신성한 봉사",
+      "zh": "神聖的服務",
+      "en": "sacred service",
+      "ja": "神聖な奉仕",
+      "de": "heiliger Dienst",
+      "fr": "service sacré",
+      "pl": "święta służba"
+    }
+  },
+  {
+    "word": "quan hệ với Đức Chúa Trời",
+    "hanja": null,
+    "meaning": {
+      "ko": "하느님과의 관계",
+      "zh": "與上帝的關係",
+      "en": "relationship with God",
+      "ja": "神との関係",
+      "de": "Verhältnis zu Gott",
+      "fr": "relations avec Dieu",
+      "pl": "więź z Bogiem"
+    }
+  },
+  {
+    "word": "quầy sách báo",
+    "hanja": null,
+    "meaning": {
+      "ko": "서적부",
+      "zh": "書刊檯",
+      "en": "literature counter",
+      "ja": "書籍台",
+      "de": "Literaturschalter",
+      "fr": "comptoir des publications",
+      "pl": "dział literatury"
+    }
+  },
+  {
+    "word": "quyền cai trị",
+    "hanja": null,
+    "meaning": {
+      "ko": "통치권",
+      "zh": "統治權",
+      "en": "sovereignty",
+      "ja": "統治権",
+      "de": "Herrschaft, Herrschergewalt",
+      "fr": "souveraineté, domination",
+      "pl": "zwierzchnictwo, władza"
+    }
+  },
+  {
+    "word": "quyền tối thượng",
+    "hanja": "權最上",
+    "meaning": {
+      "ko": "주권",
+      "zh": "主權",
+      "en": "sovereignty",
+      "ja": "主権",
+      "de": "Souveränität",
+      "fr": "souveraineté",
+      "pl": "zwierzchnia władza"
+    }
+  },
+  {
+    "word": "rao giảng",
+    "hanja": null,
+    "meaning": {
+      "ko": "야외 봉사",
+      "zh": "外勤傳道",
+      "en": "field service",
+      "ja": "野外奉仕",
+      "de": "Predigtdienst",
+      "fr": "prédication, ministère",
+      "pl": "służba kaznodziejska"
+    }
+  },
+  {
+    "word": "rao giảng từng nhà",
+    "hanja": null,
+    "meaning": {
+      "ko": "호별방문",
+      "zh": "逐戶訪問",
+      "en": "door-to-door visit",
+      "ja": "戸別訪問",
+      "de": "Dienst von Haus zu Haus",
+      "fr": "prédication de porte en porte",
+      "pl": "głoszenie od drzwi do drzwi"
+    }
+  },
+  {
+    "word": "sách",
+    "hanja": null,
+    "meaning": {
+      "ko": "서적",
+      "zh": "書籍",
+      "en": "books",
+      "ja": "書籍",
+      "de": "Bücher, Literatur",
+      "fr": "livres, publications",
+      "pl": "książki, publikacje"
+    }
+  },
+  {
+    "word": "sách hát",
+    "hanja": null,
+    "meaning": {
+      "ko": "노래책",
+      "zh": "歌本",
+      "en": "songbook",
+      "ja": "歌集",
+      "de": "Liederbuch",
+      "fr": "recueil de cantiques",
+      "pl": "śpiewnik"
+    }
+  },
+  {
+    "word": "Sa-tan Ác quỉ",
+    "hanja": null,
+    "meaning": {
+      "ko": "사탄 마귀",
+      "zh": "撒但魔鬼",
+      "en": "Satan the Devil",
+      "ja": "悪魔サタン",
+      "de": "Satan der Teufel",
+      "fr": "Satan le Diable",
+      "pl": "Szatan Diabeł"
+    }
+  },
+  {
+    "word": "Sheol",
+    "hanja": null,
+    "meaning": {
+      "ko": "스올",
+      "zh": "陰間",
+      "en": "Sheol",
+      "ja": "シェオル",
+      "de": "Scheol",
+      "fr": "Schéol",
+      "pl": "Szeol"
+    }
+  },
+  {
+    "word": "sự ăn năn",
+    "hanja": null,
+    "meaning": {
+      "ko": "회개",
+      "zh": "悔改",
+      "en": "repentance",
+      "ja": "悔い改め",
+      "de": "Reue",
+      "fr": "repentir",
+      "pl": "skrucha"
+    }
+  },
+  {
+    "word": "sự bắt bớ",
+    "hanja": null,
+    "meaning": {
+      "ko": "박해",
+      "zh": "迫害",
+      "en": "persecution",
+      "ja": "迫害",
+      "de": "Verfolgung",
+      "fr": "persécution",
+      "pl": "prześladowanie"
+    }
+  },
+  {
+    "word": "sự công chính",
+    "hanja": "公正",
+    "meaning": {
+      "ko": "의",
+      "zh": "的",
+      "en": "of ('s)",
+      "ja": "の",
+      "de": "Gerechtigkeit",
+      "fr": "justice",
+      "pl": "prawość"
+    }
+  },
+  {
+    "word": "sự công lý",
+    "hanja": "公理",
+    "meaning": {
+      "ko": "공의",
+      "zh": "公義",
+      "en": "righteousness",
+      "ja": "公義",
+      "de": "Gerechtigkeit, Recht",
+      "fr": "justice, droit",
+      "pl": "sprawiedliwość"
+    }
+  },
+  {
+    "word": "sự đặt trước",
+    "hanja": null,
+    "meaning": {
+      "ko": "예약",
+      "zh": "預約",
+      "en": "reservation",
+      "ja": "予約",
+      "de": "Vorbestellung, Reservierung",
+      "fr": "réservation",
+      "pl": "rezerwacja"
+    }
+  },
+  {
+    "word": "sự đóng góp",
+    "hanja": null,
+    "meaning": {
+      "ko": "기부",
+      "zh": "捐贈",
+      "en": "donation",
+      "ja": "寄付",
+      "de": "Spende",
+      "fr": "offrande, don",
+      "pl": "datek"
+    }
+  },
+  {
+    "word": "sự hiểu biết chính xác",
+    "hanja": null,
+    "meaning": {
+      "ko": "정확한 지식",
+      "zh": "準確的知識",
+      "en": "accurate knowledge",
+      "ja": "正確な知識",
+      "de": "genaue Erkenntnis",
+      "fr": "connaissance exacte",
+      "pl": "dokładna wiedza"
+    }
+  },
+  {
+    "word": "sự hợp nhất",
+    "hanja": null,
+    "meaning": {
+      "ko": "연합",
+      "zh": "團結、合一",
+      "en": "unity",
+      "ja": "一致、団結",
+      "de": "Einheit",
+      "fr": "unité",
+      "pl": "jedność"
+    }
+  },
+  {
+    "word": "sự phá thai",
+    "hanja": null,
+    "meaning": {
+      "ko": "낙태",
+      "zh": "墮胎",
+      "en": "abortion",
+      "ja": "堕胎",
+      "de": "Abtreibung",
+      "fr": "avortement",
+      "pl": "aborcja"
+    }
+  },
+  {
+    "word": "sự sáng tạo",
+    "hanja": "創造",
+    "meaning": {
+      "ko": "창조",
+      "zh": "創造",
+      "en": "creation",
+      "ja": "創造",
+      "de": "Schöpfung",
+      "fr": "création",
+      "pl": "stworzenie"
+    }
+  },
+  {
+    "word": "sự sống",
+    "hanja": null,
+    "meaning": {
+      "ko": "영혼",
+      "zh": "靈魂",
+      "en": "soul",
+      "ja": "魂",
+      "de": "Seele, Leben",
+      "fr": "âme, vie",
+      "pl": "dusza, życie"
+    }
+  },
+  {
+    "word": "sự sống vĩnh cửu",
+    "hanja": null,
+    "meaning": {
+      "ko": "영원한 생명",
+      "zh": "永遠的生命",
+      "en": "eternal life",
+      "ja": "永遠の命",
+      "de": "ewiges Leben",
+      "fr": "vie éternelle",
+      "pl": "życie wieczne"
+    }
+  },
+  {
+    "word": "sự tha thứ",
+    "hanja": null,
+    "meaning": {
+      "ko": "용서",
+      "zh": "饒恕",
+      "en": "forgiveness",
+      "ja": "許し",
+      "de": "Vergebung",
+      "fr": "pardon",
+      "pl": "przebaczenie"
+    }
+  },
+  {
+    "word": "sự thờ phượng thanh sạch",
+    "hanja": null,
+    "meaning": {
+      "ko": "순결한 숭배",
+      "zh": "純潔的崇拜",
+      "en": "pure worship",
+      "ja": "清い崇拝",
+      "de": "reine Anbetung",
+      "fr": "culte pur",
+      "pl": "czyste wielbienie"
+    }
+  },
+  {
+    "word": "sự thử thách",
+    "hanja": null,
+    "meaning": {
+      "ko": "시련",
+      "zh": "考驗",
+      "en": "trial, ordeal",
+      "ja": "試練",
+      "de": "Prüfung, Erprobung",
+      "fr": "épreuve",
+      "pl": "próba, doświadczenie"
+    }
+  },
+  {
+    "word": "sự trọn thành",
+    "hanja": null,
+    "meaning": {
+      "ko": "충절",
+      "zh": "忠節",
+      "en": "loyalty",
+      "ja": "忠節",
+      "de": "Lauterkeit, Integrität",
+      "fr": "intégrité",
+      "pl": "nieskazitelność"
+    }
+  },
+  {
+    "word": "sự trung lập",
+    "hanja": "中立",
+    "meaning": {
+      "ko": "중립",
+      "zh": "中立",
+      "en": "neutrality",
+      "ja": "中立",
+      "de": "Neutralität",
+      "fr": "neutralité",
+      "pl": "neutralność"
+    }
+  },
+  {
+    "word": "sự vâng lời",
+    "hanja": null,
+    "meaning": {
+      "ko": "순종",
+      "zh": "順從",
+      "en": "obedience",
+      "ja": "従順",
+      "de": "Gehorsam",
+      "fr": "obéissance",
+      "pl": "posłuszeństwo"
+    }
+  },
+  {
+    "word": "sửa trị",
+    "hanja": null,
+    "meaning": {
+      "ko": "징계하다",
+      "zh": "懲戒",
+      "en": "to discipline",
+      "ja": "懲らしめる",
+      "de": "zurechtweisen, schulen",
+      "fr": "discipliner, corriger",
+      "pl": "skorygować, skartcić"
+    }
+  },
+  {
+    "word": "tạp chí",
+    "hanja": "雜誌",
+    "meaning": {
+      "ko": "잡지",
+      "zh": "雜誌",
+      "en": "magazine",
+      "ja": "雑誌",
+      "de": "Zeitschrift",
+      "fr": "revue, périodique",
+      "pl": "czasopismo"
+    }
+  },
+  {
+    "word": "tâm trạng",
+    "hanja": "心狀",
+    "meaning": {
+      "ko": "마음 상태",
+      "zh": "心態",
+      "en": "state of mind",
+      "ja": "心の状態",
+      "de": "Herzenszustand",
+      "fr": "état d’esprit, disposition de cœur",
+      "pl": "stan serca, usposobienie"
+    }
+  },
+  {
+    "word": "thái độ",
+    "hanja": "態度",
+    "meaning": {
+      "ko": "태도",
+      "zh": "態度",
+      "en": "attitude",
+      "ja": "態度",
+      "de": "Einstellung",
+      "fr": "attitude",
+      "pl": "postawa"
+    }
+  },
+  {
+    "word": "Thái độ chỉ nghĩ đến mình",
+    "hanja": null,
+    "meaning": {
+      "ko": "자아 제일 주의적인 태도",
+      "zh": "自我第一主義的態度",
+      "en": "self-centered attitude",
+      "ja": "自己第一主義的な態度",
+      "de": "ich-bezogene Haltung",
+      "fr": "égocentrisme",
+      "pl": "egocentryzm"
+    }
+  },
+  {
+    "word": "thái độ tiêu cực",
+    "hanja": "態度消極",
+    "meaning": {
+      "ko": "부정적인 태도",
+      "zh": "消極的態度",
+      "en": "negative attitude",
+      "ja": "否定的な態度",
+      "de": "negative Einstellung",
+      "fr": "attitude négative",
+      "pl": "negatywna postawa"
+    }
+  },
+  {
+    "word": "thần khí thánh",
+    "hanja": "神氣聖",
+    "meaning": {
+      "ko": "성령",
+      "zh": "神聖力量",
+      "en": "holy spirit",
+      "ja": "聖霊",
+      "de": "heiliger Geist",
+      "fr": "esprit saint",
+      "pl": "duch święty"
+    }
+  },
+  {
+    "word": "thần thánh",
+    "hanja": "神聖",
+    "meaning": {
+      "ko": "신성한, 거룩한",
+      "zh": "神聖的",
+      "en": "divine, sacred",
+      "ja": "神聖な",
+      "de": "heilig, göttlich",
+      "fr": "saint, sacré",
+      "pl": "święty"
+    }
+  },
+  {
+    "word": "thánh chức",
+    "hanja": "聖職",
+    "meaning": {
+      "ko": "봉사, 성직",
+      "zh": "傳道服務",
+      "en": "the ministry",
+      "ja": "奉仕",
+      "de": "Predigtdienst, Dienst",
+      "fr": "ministère",
+      "pl": "służba"
+    }
+  },
+  {
+    "word": "Thánh chức Nước Trời",
+    "hanja": null,
+    "meaning": {
+      "ko": "우리의 왕국봉사",
+      "zh": "我們的王國事工",
+      "en": "Our Kingdom Ministry",
+      "ja": "王国宣教",
+      "de": "Unser Königreichsdienst",
+      "fr": "Ministère du Royaume",
+      "pl": "Nasza Służba Królestwa"
+    }
+  },
+  {
+    "word": "thánh chức rao giảng",
+    "hanja": null,
+    "meaning": {
+      "ko": "봉사의 직무",
+      "zh": "奉仕的職務",
+      "en": "ministerial service",
+      "ja": "奉仕の務め",
+      "de": "Dienstamt",
+      "fr": "ministère",
+      "pl": "służba kaznodziejska"
+    }
+  },
+  {
+    "word": "thành viên Bê-tên",
+    "hanja": null,
+    "meaning": {
+      "ko": "베델성원",
+      "zh": "伯特利成員",
+      "en": "Bethel family member",
+      "ja": "ベテル家族員",
+      "de": "Bethelmitarbeiter",
+      "fr": "Béthélite, membre du Béthel",
+      "pl": "betelczyk, członek rodziny Betel"
+    }
+  },
+  {
+    "word": "thầy tế lễ",
+    "hanja": null,
+    "meaning": {
+      "ko": "제사장",
+      "zh": "祭司",
+      "en": "priest",
+      "ja": "祭司",
+      "de": "Priester",
+      "fr": "prêtre",
+      "pl": "kapłan"
+    }
+  },
+  {
+    "word": "thăm lại",
+    "hanja": null,
+    "meaning": {
+      "ko": "재방문",
+      "zh": "再訪問",
+      "en": "return visit",
+      "ja": "再訪問",
+      "de": "Rückbesuch",
+      "fr": "nouvelle visite",
+      "pl": "odwiedziny ponowne"
+    }
+  },
+  {
+    "word": "thăng bằng",
+    "hanja": null,
+    "meaning": {
+      "ko": "균형 잡힌",
+      "zh": "平衡的",
+      "en": "balanced",
+      "ja": "バランスの取れた",
+      "de": "ausgeglichen",
+      "fr": "équilibré",
+      "pl": "zrównoważony"
+    }
+  },
+  {
+    "word": "thế gian",
+    "hanja": "世間",
+    "meaning": {
+      "ko": "세상",
+      "zh": "世界、世人",
+      "en": "the world",
+      "ja": "世",
+      "de": "die Welt",
+      "fr": "monde",
+      "pl": "świat"
+    }
+  },
+  {
+    "word": "thế giới mới",
+    "hanja": null,
+    "meaning": {
+      "ko": "새 세상",
+      "zh": "新世界",
+      "en": "new world",
+      "ja": "新しい世界",
+      "de": "neue Welt",
+      "fr": "monde nouveau",
+      "pl": "nowy świat"
+    }
+  },
+  {
+    "word": "thiên sứ",
+    "hanja": "天使",
+    "meaning": {
+      "ko": "천사",
+      "zh": "天使",
+      "en": "angel",
+      "ja": "天使",
+      "de": "Engel",
+      "fr": "ange",
+      "pl": "anioł"
+    }
+  },
+  {
+    "word": "thờ phượng",
+    "hanja": null,
+    "meaning": {
+      "ko": "숭배하다, 예배하다",
+      "zh": "崇拜",
+      "en": "to worship",
+      "ja": "崇拝する",
+      "de": "anbeten",
+      "fr": "adorer",
+      "pl": "oddawać cześć, wielbić"
+    }
+  },
+  {
+    "word": "thỏa hiệp",
+    "hanja": "妥協",
+    "meaning": {
+      "ko": "타협하다",
+      "zh": "妥協",
+      "en": "to compromise",
+      "ja": "妥協する",
+      "de": "Kompromisse eingehen",
+      "fr": "faire des compromis",
+      "pl": "iść na kompromis"
+    }
+  },
+  {
+    "word": "thời gian",
+    "hanja": "時間",
+    "meaning": {
+      "ko": "시간",
+      "zh": "時間",
+      "en": "time",
+      "ja": "時間",
+      "de": "Zeit",
+      "fr": "temps",
+      "pl": "czas"
+    }
+  },
+  {
+    "word": "thói nghiện rượu",
+    "hanja": null,
+    "meaning": {
+      "ko": "알코올 의존증",
+      "zh": "酒精依賴症",
+      "en": "alcohol dependence",
+      "ja": "アルコール依存症",
+      "de": "Alkoholabhängigkeit",
+      "fr": "alcoolisme",
+      "pl": "alkoholizm"
+    }
+  },
+  {
+    "word": "thức ăn thiêng liêng",
+    "hanja": null,
+    "meaning": {
+      "ko": "영적 양식",
+      "zh": "屬靈的糧食",
+      "en": "spiritual food",
+      "ja": "霊的な食物",
+      "de": "geistige Speise",
+      "fr": "nourriture spirituelle",
+      "pl": "pokarm duchowy"
+    }
+  },
+  {
+    "word": "thư ký",
+    "hanja": "書記",
+    "meaning": {
+      "ko": "서기",
+      "zh": "西元",
+      "en": "A.D. (Christian era)",
+      "ja": "西暦",
+      "de": "Sekretär",
+      "fr": "secrétaire",
+      "pl": "sekretarz"
+    }
+  },
+  {
+    "word": "thư viện",
+    "hanja": "書院",
+    "meaning": {
+      "ko": "도서실",
+      "zh": "圖書室",
+      "en": "library room",
+      "ja": "図書室",
+      "de": "Bibliothek",
+      "fr": "bibliothèque",
+      "pl": "biblioteka zborowa"
+    }
+  },
+  {
+    "word": "thư viện trực tuyến",
+    "hanja": null,
+    "meaning": {
+      "ko": "온라인 도서실",
+      "zh": "網上圖書館",
+      "en": "online library",
+      "ja": "オンライン図書館",
+      "de": "Online-Bibliothek",
+      "fr": "bibliothèque en ligne",
+      "pl": "Biblioteka Internetowa"
+    }
+  },
+  {
+    "word": "tiền đóng góp",
+    "hanja": null,
+    "meaning": {
+      "ko": "헌금",
+      "zh": "奉獻金",
+      "en": "offering (donation)",
+      "ja": "献金",
+      "de": "Spendengeld",
+      "fr": "offrande, dons",
+      "pl": "datki"
+    }
+  },
+  {
+    "word": "tiến hoá",
+    "hanja": "進化",
+    "meaning": {
+      "ko": "진화",
+      "zh": "進化",
+      "en": "evolution",
+      "ja": "進化",
+      "de": "Evolution",
+      "fr": "évolution",
+      "pl": "ewolucja"
+    }
+  },
+  {
+    "word": "tiên phong",
+    "hanja": "先鋒",
+    "meaning": {
+      "ko": "파이오니아",
+      "zh": "開拓者",
+      "en": "pioneer",
+      "ja": "開拓者",
+      "de": "Pionier",
+      "fr": "pionnier",
+      "pl": "pionier"
+    }
+  },
+  {
+    "word": "tiên phong đều đều",
+    "hanja": null,
+    "meaning": {
+      "ko": "정규 파이오니아",
+      "zh": "正規開拓者",
+      "en": "regular pioneer",
+      "ja": "正規開拓者",
+      "de": "allgemeiner Pionier",
+      "fr": "pionnier permanent",
+      "pl": "pionier stały"
+    }
+  },
+  {
+    "word": "tiên phong phụ trợ",
+    "hanja": "先鋒輔助",
+    "meaning": {
+      "ko": "보조 파이오니아",
+      "zh": "輔助先驅",
+      "en": "auxiliary pioneer",
+      "ja": "補助開拓者",
+      "de": "Hilfspionier",
+      "fr": "pionnier auxiliaire",
+      "pl": "pionier pomocniczy"
+    }
+  },
+  {
+    "word": "tiên tri",
+    "hanja": "先知",
+    "meaning": {
+      "ko": "예언자, 선지자",
+      "zh": "先知",
+      "en": "prophet",
+      "ja": "預言者",
+      "de": "Prophet",
+      "fr": "prophète",
+      "pl": "prorok"
+    }
+  },
+  {
+    "word": "tín đồ Đấng Ki-tô",
+    "hanja": null,
+    "meaning": {
+      "ko": "그리스도인",
+      "zh": "基督徒",
+      "en": "Christian",
+      "ja": "クリスチャン",
+      "de": "Christ",
+      "fr": "chrétien",
+      "pl": "chrześcijanin"
+    }
+  },
+  {
+    "word": "tín đồ được xức dầu",
+    "hanja": null,
+    "meaning": {
+      "ko": "기름부음받은 그리스도인",
+      "zh": "受膏的基督徒",
+      "en": "anointed Christian",
+      "ja": "油そそがれたクリスチャン",
+      "de": "gesalbter Christ",
+      "fr": "chrétien oint",
+      "pl": "namaszczony chrześcijanin"
+    }
+  },
+  {
+    "word": "tín đồ được xức dầu còn sốt lại",
+    "hanja": null,
+    "meaning": {
+      "ko": "기름부음받은 남은 자",
+      "zh": "受膏的餘民",
+      "en": "anointed remnant",
+      "ja": "油そそがれた残りの者",
+      "de": "gesalbter Überrest",
+      "fr": "reste des oints",
+      "pl": "ostatek namaszczonych"
+    }
+  },
+  {
+    "word": "tin mừng",
+    "hanja": null,
+    "meaning": {
+      "ko": "좋은 소식",
+      "zh": "好消息",
+      "en": "good news",
+      "ja": "良い知らせ",
+      "de": "gute Botschaft",
+      "fr": "bonne nouvelle",
+      "pl": "dobra nowina"
+    }
+  },
+  {
+    "word": "tình nguyện viên",
+    "hanja": "情願員",
+    "meaning": {
+      "ko": "자원봉사자",
+      "zh": "志工",
+      "en": "volunteer",
+      "ja": "ボランティア",
+      "de": "Freiwilliger",
+      "fr": "volontaire, bénévole",
+      "pl": "ochotnik"
+    }
+  },
+  {
+    "word": "tinh thần",
+    "hanja": "精神",
+    "meaning": {
+      "ko": "정신",
+      "zh": "精神",
+      "en": "spirit/mind",
+      "ja": "精神",
+      "de": "Geist, Geisteshaltung",
+      "fr": "esprit, état d’esprit",
+      "pl": "duch, nastawienie umysłu"
+    }
+  },
+  {
+    "word": "tỉnh thức",
+    "hanja": null,
+    "meaning": {
+      "ko": "(영적으로) 깨어 있음",
+      "zh": "保持警醒",
+      "en": "to stay spiritually alert",
+      "ja": "目を覚ましていること",
+      "de": "wachsam bleiben",
+      "fr": "rester vigilant, veiller",
+      "pl": "czuwać duchowo"
+    }
+  },
+  {
+    "word": "Tỉnh Thức!",
+    "hanja": null,
+    "meaning": {
+      "ko": "깨어라",
+      "zh": "《儆醒!》",
+      "en": "Awake!",
+      "ja": "「目ざめよ!」",
+      "de": "Erwachet!",
+      "fr": "Réveillez-vous !",
+      "pl": "Przebudźcie się!"
+    }
+  },
+  {
+    "word": "tình trạng thiêng liêng",
+    "hanja": null,
+    "meaning": {
+      "ko": "영성",
+      "zh": "靈性",
+      "en": "spirituality",
+      "ja": "霊性",
+      "de": "Geistigkeit",
+      "fr": "spiritualité",
+      "pl": "usposobienie duchowe"
+    }
+  },
+  {
+    "word": "tình yêu thương thành tín",
+    "hanja": null,
+    "meaning": {
+      "ko": "충성스러운 사랑",
+      "zh": "忠貞之愛",
+      "en": "loyal love",
+      "ja": "忠実な愛",
+      "de": "loyale Liebe",
+      "fr": "amour fidèle",
+      "pl": "lojalna miłość"
+    }
+  },
+  {
+    "word": "tổ chức",
+    "hanja": "組織",
+    "meaning": {
+      "ko": "조직",
+      "zh": "組織",
+      "en": "organization",
+      "ja": "組織",
+      "de": "Organisation",
+      "fr": "organisation",
+      "pl": "organizacja"
+    }
+  },
+  {
+    "word": "tổ chức Đức Giê-hô-va",
+    "hanja": null,
+    "meaning": {
+      "ko": "여호와의 조직",
+      "zh": "耶和華的組織",
+      "en": "Jehovah's organization",
+      "ja": "エホバの組織",
+      "de": "Jehovas Organisation",
+      "fr": "organisation de Jéhovah",
+      "pl": "organizacja Jehowy"
+    }
+  },
+  {
+    "word": "tờ chuyên đề",
+    "hanja": null,
+    "meaning": {
+      "ko": "전도지",
+      "zh": "傳單",
+      "en": "tract",
+      "ja": "パンフレット",
+      "de": "Traktat",
+      "fr": "tract",
+      "pl": "traktat"
+    }
+  },
+  {
+    "word": "tội lỗi",
+    "hanja": "罪戾",
+    "meaning": {
+      "ko": "죄",
+      "zh": "罪",
+      "en": "sin",
+      "ja": "罪",
+      "de": "Sünde",
+      "fr": "péché",
+      "pl": "grzech"
+    }
+  },
+  {
+    "word": "tôn giáo",
+    "hanja": "宗教",
+    "meaning": {
+      "ko": "종교",
+      "zh": "宗教",
+      "en": "religion",
+      "ja": "宗教",
+      "de": "Religion",
+      "fr": "religion",
+      "pl": "religia"
+    }
+  },
+  {
+    "word": "tôn giáo sai lầm",
+    "hanja": null,
+    "meaning": {
+      "ko": "거짓 종교",
+      "zh": "假宗教",
+      "en": "false religion",
+      "ja": "偽りの宗教",
+      "de": "falsche Religion",
+      "fr": "fausse religion",
+      "pl": "religia fałszywa"
+    }
+  },
+  {
+    "word": "Tra xem Kinh Thánh mỗi ngày",
+    "hanja": null,
+    "meaning": {
+      "ko": "일용할 성구",
+      "zh": "每日經文",
+      "en": "daily scripture text",
+      "ja": "日々の聖句",
+      "de": "Täglich in den Schriften forschen",
+      "fr": "Examinons les Écritures chaque jour",
+      "pl": "Codzienne badanie Pism"
+    }
+  },
+  {
+    "word": "trầm cảm",
+    "hanja": "沈感",
+    "meaning": {
+      "ko": "우울증",
+      "zh": "憂鬱症",
+      "en": "depression",
+      "ja": "うつ病",
+      "de": "Depression",
+      "fr": "dépression",
+      "pl": "depresja"
+    }
+  },
+  {
+    "word": "trận nước lụt",
+    "hanja": null,
+    "meaning": {
+      "ko": "홍수",
+      "zh": "洪水",
+      "en": "flood",
+      "ja": "洪水",
+      "de": "Sintflut",
+      "fr": "Déluge",
+      "pl": "potop"
+    }
+  },
+  {
+    "word": "trang web",
+    "hanja": null,
+    "meaning": {
+      "ko": "웹사이트",
+      "zh": "網站",
+      "en": "website",
+      "ja": "ウェブサイト",
+      "de": "Website",
+      "fr": "site Internet",
+      "pl": "serwis internetowy"
+    }
+  },
+  {
+    "word": "trâng tráo",
+    "hanja": null,
+    "meaning": {
+      "ko": "방종한",
+      "zh": "放縱的",
+      "en": "self-indulgent; unruly",
+      "ja": "放縦な",
+      "de": "dreist, schamlos",
+      "fr": "effronté, débauche",
+      "pl": "bezwstydne postępowanie"
+    }
+  },
+  {
+    "word": "Trụ sở Trung ương",
+    "hanja": null,
+    "meaning": {
+      "ko": "세계 본부",
+      "zh": "世界總部",
+      "en": "world headquarters",
+      "ja": "世界本部",
+      "de": "Weltzentrale",
+      "fr": "siège mondial",
+      "pl": "Biuro Główne"
+    }
+  },
+  {
+    "word": "Trung tâm giáo dục của Hội Tháp Canh",
+    "hanja": null,
+    "meaning": {
+      "ko": "워치타워 교육센터",
+      "zh": "守望台教育中心",
+      "en": "Watchtower Educational Center",
+      "ja": "ものみの塔教育センター",
+      "de": "Wachtturm-Bildungszentrum",
+      "fr": "Centre d’enseignement",
+      "pl": "Centrum Szkoleniowe Towarzystwa Strażnica"
+    }
+  },
+  {
+    "word": "trung thực",
+    "hanja": "忠實",
+    "meaning": {
+      "ko": "정직한",
+      "zh": "正直的",
+      "en": "honest",
+      "ja": "正直な",
+      "de": "ehrlich",
+      "fr": "honnête",
+      "pl": "uczciwy"
+    }
+  },
+  {
+    "word": "truyền máu",
+    "hanja": null,
+    "meaning": {
+      "ko": "수혈",
+      "zh": "輸血",
+      "en": "blood transfusion",
+      "ja": "輸血",
+      "de": "Bluttransfusion",
+      "fr": "transfusion sanguine",
+      "pl": "transfuzja krwi"
+    }
+  },
+  {
+    "word": "Trường dành cho người rao truyền Nước Trời",
+    "hanja": null,
+    "meaning": {
+      "ko": "왕국 전파자 학교",
+      "zh": "王國傳道員學校",
+      "en": "Kingdom Publisher School",
+      "ja": "王国宣明者学校",
+      "de": "Schule für Königreichsverkündiger",
+      "fr": "École pour évangélisateurs du Royaume",
+      "pl": "Kurs dla Ewangelizatorów Królestwa"
+    }
+  },
+  {
+    "word": "trưởng lão",
+    "hanja": "長老",
+    "meaning": {
+      "ko": "장로",
+      "zh": "長老",
+      "en": "Elder",
+      "ja": "長老",
+      "de": "Ältester",
+      "fr": "ancien",
+      "pl": "starszy"
+    }
+  },
+  {
+    "word": "từ điển",
+    "hanja": "辭典",
+    "meaning": {
+      "ko": "사전",
+      "zh": "字典",
+      "en": "dictionary",
+      "ja": "辞書",
+      "de": "Wörterbuch",
+      "fr": "dictionnaire",
+      "pl": "słownik"
+    }
+  },
+  {
+    "word": "Ủy ban Chi nhánh",
+    "hanja": null,
+    "meaning": {
+      "ko": "지부 위원회",
+      "zh": "分部委員會",
+      "en": "Branch Committee",
+      "ja": "支部委員会",
+      "de": "Zweigkomitee",
+      "fr": "comité de filiale",
+      "pl": "Komitet Oddziału"
+    }
+  },
+  {
+    "word": "vấn đề",
+    "hanja": "問題",
+    "meaning": {
+      "ko": "쟁점",
+      "zh": "爭議點",
+      "en": "issue",
+      "ja": "争点",
+      "de": "Streitfrage",
+      "fr": "controverse, question",
+      "pl": "kwestia sporna"
+    }
+  },
+  {
+    "word": "Video",
+    "hanja": null,
+    "meaning": {
+      "ko": "동영상",
+      "zh": "影片",
+      "en": "video",
+      "ja": "動画",
+      "de": "Video",
+      "fr": "vidéo",
+      "pl": "film wideo"
+    }
+  },
+  {
+    "word": "viên ngọc thiêng liêng",
+    "hanja": null,
+    "meaning": {
+      "ko": "영적보물 찾기(집회)",
+      "zh": "屬靈珍寶(聚會)",
+      "en": "Spiritual Gems (meeting)",
+      "ja": "霊的な宝探し(集会)",
+      "de": "Geistige Schätze",
+      "fr": "perles spirituelles",
+      "pl": "wyszukiwanie duchowych skarbów"
+    }
+  },
+  {
+    "word": "vòng quanh",
+    "hanja": null,
+    "meaning": {
+      "ko": "순회구",
+      "zh": "巡迴區",
+      "en": "circuit",
+      "ja": "巡回区",
+      "de": "Kreis",
+      "fr": "circonscription",
+      "pl": "obwód"
+    }
+  },
+  {
+    "word": "vô biên",
+    "hanja": "無邊",
+    "meaning": {
+      "ko": "무한한, 끝이 없는",
+      "zh": "無邊的",
+      "en": "boundless, limitless",
+      "ja": "果てしない",
+      "de": "grenzenlos",
+      "fr": "infini, sans limites",
+      "pl": "bezgraniczny"
+    }
+  },
+  {
+    "word": "vô luân",
+    "hanja": "無倫",
+    "meaning": {
+      "ko": "부도덕한",
+      "zh": "不道德的",
+      "en": "immoral",
+      "ja": "不道徳な",
+      "de": "unmoralisch",
+      "fr": "immoral",
+      "pl": "niemoralny"
+    }
+  },
+  {
+    "word": "vườn Ê-đen",
+    "hanja": null,
+    "meaning": {
+      "ko": "에덴동산",
+      "zh": "伊甸園",
+      "en": "Garden of Eden",
+      "ja": "エデンの園",
+      "de": "Garten Eden",
+      "fr": "jardin d’Éden",
+      "pl": "ogród Eden"
+    }
+  },
+  {
+    "word": "xây dựng",
+    "hanja": null,
+    "meaning": {
+      "ko": "건축",
+      "zh": "建築",
+      "en": "architecture",
+      "ja": "建築",
+      "de": "Bauarbeiten, Bau",
+      "fr": "construction",
+      "pl": "budownictwo"
+    }
+  },
+  {
+    "word": "Y-sơ-ra-ên",
+    "hanja": null,
+    "meaning": {
+      "ko": "이스라엘",
+      "zh": "以色列",
+      "en": "Israel",
+      "ja": "イスラエル",
+      "de": "Israel",
+      "fr": "Israël",
+      "pl": "Izrael"
+    }
+  },
+  {
+    "word": "Y-sơ-ra-ên thiêng liêng",
+    "hanja": null,
+    "meaning": {
+      "ko": "영적 이스라엘",
+      "zh": "屬靈以色列",
+      "en": "spiritual Israel",
+      "ja": "霊的イスラエル",
+      "de": "geistiges Israel",
+      "fr": "Israël spirituel",
+      "pl": "Izrael duchowy"
+    }
+  },
+  {
+    "word": "Y-sơ-ra-ên xưa",
+    "hanja": null,
+    "meaning": {
+      "ko": "고대 이스라엘",
+      "zh": "古代以色列",
+      "en": "ancient Israel",
+      "ja": "古代イスラエル",
+      "de": "das alte Israel",
+      "fr": "Israël antique",
+      "pl": "starożytny Izrael"
+    }
+  },
+  {
+    "word": "Wallkill",
+    "hanja": null,
+    "meaning": {
+      "ko": "월킬",
+      "zh": "沃基爾",
+      "en": "Wallkill",
+      "ja": "ウォールキル",
+      "de": "Wallkill",
+      "fr": "Wallkill",
+      "pl": "Wallkill"
+    }
   }
- },
- {
-  "word": "ấn phẩm",
-  "hanja": "印品",
-  "meaning": {
-   "ko": "출판물",
-   "zh": "出版物",
-   "en": "publication",
-   "ja": "出版物",
-   "de": "Veröffentlichung",
-   "fr": "publication"
-  }
- },
- {
-  "word": "anh em",
-  "hanja": null,
-  "meaning": {
-   "ko": "형제",
-   "zh": "弟兄",
-   "en": "Brother",
-   "ja": "兄弟",
-   "de": "Bruder",
-   "fr": "frère"
-  }
- },
- {
-  "word": "anh giám thị",
-  "hanja": "監視",
-  "meaning": {
-   "ko": "감독자",
-   "zh": "監督",
-   "en": "overseer",
-   "ja": "監督者",
-   "de": "Aufseher",
-   "fr": "surveillant"
-  }
- },
- {
-  "word": "anh giám thị công tác",
-  "hanja": "監視工作",
-  "meaning": {
-   "ko": "봉사감독자",
-   "zh": "傳道監督",
-   "en": "service overseer",
-   "ja": "奉仕監督者",
-   "de": "Dienstaufseher",
-   "fr": "surveillant au service"
-  }
- },
- {
-  "word": "anh giám thị vòng quanh",
-  "hanja": null,
-  "meaning": {
-   "ko": "순회 감독자",
-   "zh": "分區監督",
-   "en": "circuit overseer",
-   "ja": "巡回監督",
-   "de": "Kreisaufseher",
-   "fr": "surveillant de circonscription"
-  }
- },
- {
-  "word": "áp lực bạn bè",
-  "hanja": null,
-  "meaning": {
-   "ko": "동배의 압력",
-   "zh": "同輩壓力",
-   "en": "peer pressure",
-   "ja": "仲間からの圧力",
-   "de": "Gruppenzwang",
-   "fr": "pression du groupe"
-  }
- },
- {
-  "word": "A-men",
-  "hanja": null,
-  "meaning": {
-   "ko": "아멘",
-   "zh": "阿們",
-   "en": "amen",
-   "ja": "アーメン",
-   "de": "Amen",
-   "fr": "amen"
-  }
- },
- {
-  "word": "ăn năn",
-  "hanja": null,
-  "meaning": {
-   "ko": "회개하다",
-   "zh": "悔改",
-   "en": "to repent",
-   "ja": "悔い改める",
-   "de": "bereuen",
-   "fr": "se repentir"
-  }
- },
- {
-  "word": "ân phước",
-  "hanja": "恩福",
-  "meaning": {
-   "ko": "축복",
-   "zh": "福分",
-   "en": "blessing",
-   "ja": "祝福",
-   "de": "Segen",
-   "fr": "bénédiction"
-  }
- },
- {
-  "word": "bài giảng",
-  "hanja": null,
-  "meaning": {
-   "ko": "연설",
-   "zh": "演講",
-   "en": "speech",
-   "ja": "演説",
-   "de": "Vortrag",
-   "fr": "discours"
-  }
- },
- {
-  "word": "bài giảng trên núi",
-  "hanja": null,
-  "meaning": {
-   "ko": "산상 수훈",
-   "zh": "登山寶訓",
-   "en": "Sermon on the Mount",
-   "ja": "山上の垂訓",
-   "de": "Bergpredigt",
-   "fr": "Sermon sur la montagne"
-  }
- },
- {
-  "word": "bài hát",
-  "hanja": null,
-  "meaning": {
-   "ko": "노래",
-   "zh": "歌曲",
-   "en": "song",
-   "ja": "歌",
-   "de": "Lied",
-   "fr": "cantique"
-  }
- },
- {
-  "word": "báo cáo",
-  "hanja": "報告",
-  "meaning": {
-   "ko": "보고하다",
-   "zh": "報告",
-   "en": "to report",
-   "ja": "報告する",
-   "de": "Bericht abgeben",
-   "fr": "rapporter, remettre un rapport"
-  }
- },
- {
-  "word": "báo thù",
-  "hanja": "報仇",
-  "meaning": {
-   "ko": "복수하다, 원수를 갚다",
-   "zh": "報仇、復仇",
-   "en": "to avenge, to take revenge",
-   "ja": "復讐する",
-   "de": "rächen, Rache nehmen",
-   "fr": "se venger"
-  }
- },
- {
-  "word": "báp têm",
-  "hanja": null,
-  "meaning": {
-   "ko": "침례",
-   "zh": "浸禮",
-   "en": "baptism",
-   "ja": "バプテスマ",
-   "de": "Taufe",
-   "fr": "baptême"
-  }
- },
- {
-  "word": "bất tử",
-  "hanja": "不死",
-  "meaning": {
-   "ko": "불멸의",
-   "zh": "不朽的，不滅的",
-   "en": "immortal",
-   "ja": "不滅の",
-   "de": "unsterblich",
-   "fr": "immortel"
-  }
- },
- {
-  "word": "bầy nhỏ",
-  "hanja": null,
-  "meaning": {
-   "ko": "적은 무리",
-   "zh": "一小群",
-   "en": "little flock",
-   "ja": "小さな群れ",
-   "de": "kleine Herde",
-   "fr": "petit troupeau"
-  }
- },
- {
-  "word": "Ba-by-lôn Lớn",
-  "hanja": null,
-  "meaning": {
-   "ko": "큰 바빌론",
-   "zh": "大巴比倫",
-   "en": "Babylon the Great",
-   "ja": "大いなるバビロン",
-   "de": "Babylon die Große",
-   "fr": "Babylone la Grande"
-  }
- },
- {
-  "word": "bệnh AIDS",
-  "hanja": null,
-  "meaning": {
-   "ko": "에이즈",
-   "zh": "愛滋病",
-   "en": "AIDS",
-   "ja": "エイズ",
-   "de": "Aids",
-   "fr": "sida"
-  }
- },
- {
-  "word": "Bê-tên",
-  "hanja": null,
-  "meaning": {
-   "ko": "베델",
-   "zh": "伯特利",
-   "en": "Bethel",
-   "ja": "ベテル",
-   "de": "Bethel",
-   "fr": "Béthel"
-  }
- },
- {
-  "word": "Biển Ga-li-lê",
-  "hanja": null,
-  "meaning": {
-   "ko": "갈릴리 바다",
-   "zh": "加利利海",
-   "en": "Sea of Galilee",
-   "ja": "ガリラヤ湖",
-   "de": "Galiläisches Meer",
-   "fr": "mer de Galilée"
-  }
- },
- {
-  "word": "bông trái thần khí thánh",
-  "hanja": null,
-  "meaning": {
-   "ko": "성령의 열매",
-   "zh": "神聖力量的果實",
-   "en": "fruitage of the spirit",
-   "ja": "聖霊の実",
-   "de": "Frucht des Geistes",
-   "fr": "fruit de l’esprit"
-  }
- },
- {
-  "word": "Bữa Ăn Tối Của Chúa",
-  "hanja": null,
-  "meaning": {
-   "ko": "주의 만찬",
-   "zh": "主的晚餐",
-   "en": "the Lord's Evening Meal",
-   "ja": "主の晩さん",
-   "de": "Abendmahl des Herrn",
-   "fr": "Repas du Seigneur"
-  }
- },
- {
-  "word": "bục giảng",
-  "hanja": null,
-  "meaning": {
-   "ko": "연단",
-   "zh": "講台",
-   "en": "podium, platform",
-   "ja": "演壇",
-   "de": "Bühne, Podium",
-   "fr": "estrade, pupitre"
-  }
- },
- {
-  "word": "buổi họp",
-  "hanja": null,
-  "meaning": {
-   "ko": "집회",
-   "zh": "聚會",
-   "en": "meeting",
-   "ja": "集会",
-   "de": "Zusammenkunft",
-   "fr": "réunion"
-  }
- },
- {
-  "word": "buổi họp cuối tuần",
-  "hanja": null,
-  "meaning": {
-   "ko": "주말 집회",
-   "zh": "週末聚會",
-   "en": "weekend meeting",
-   "ja": "週末の集会",
-   "de": "Wochenendzusammenkunft",
-   "fr": "réunion du week-end"
-  }
- },
- {
-  "word": "buổi họp giữa tuần",
-  "hanja": null,
-  "meaning": {
-   "ko": "평일 집회",
-   "zh": "週中聚會",
-   "en": "midweek meeting",
-   "ja": "週半ばの集会",
-   "de": "Zusammenkunft unter der Woche",
-   "fr": "réunion de semaine"
-  }
- },
- {
-  "word": "buổi họp tạp chí Tháp Canh",
-  "hanja": null,
-  "meaning": {
-   "ko": "파수대 연구(집회)",
-   "zh": "守望台研讀班",
-   "en": "Watchtower Study (meeting)",
-   "ja": "ものみの塔研究(集会)",
-   "de": "Wachtturm-Studium",
-   "fr": "étude de La Tour de Garde"
-  }
- },
- {
-  "word": "buổi nhóm họp",
-  "hanja": null,
-  "meaning": {
-   "ko": "집회",
-   "zh": "聚會",
-   "en": "meeting, gathering",
-   "ja": "集会",
-   "de": "Zusammenkunft",
-   "fr": "réunion"
-  }
- },
- {
-  "word": "buổi thờ phượng gia đình",
-  "hanja": null,
-  "meaning": {
-   "ko": "가족 숭배",
-   "zh": "家庭崇拜",
-   "en": "family worship",
-   "ja": "家族崇拝",
-   "de": "Familienanbetung",
-   "fr": "culte familial"
-  }
- },
- {
-  "word": "bước tiến",
-  "hanja": null,
-  "meaning": {
-   "ko": "행로",
-   "zh": "路程",
-   "en": "course/path",
-   "ja": "行路",
-   "de": "Lebensweg, Lauf",
-   "fr": "voie, course"
-  }
- },
- {
-  "word": "cách trình bày",
-  "hanja": null,
-  "meaning": {
-   "ko": "제공 방법(봉사,연설)",
-   "zh": "提供方式(奉仕、演講)",
-   "en": "method of offering (service, talk)",
-   "ja": "提供方法(奉仕、話)",
-   "de": "Gesprächsvorschlag",
-   "fr": "suggestion de conversation"
-  }
- },
- {
-  "word": "cải thiện thánh chức",
-  "hanja": "改善聖職",
-  "meaning": {
-   "ko": "야외봉사에 힘쓰십시오(집회)",
-   "zh": "要努力做外勤傳道（聚會）",
-   "en": "Strive in field service (meeting)",
-   "ja": "野外奉仕に励みなさい（集会）",
-   "de": "Uns im Dienst verbessern",
-   "fr": "Applique-toi au ministère"
-  }
- },
- {
-  "word": "cảm tạ",
-  "hanja": "感謝",
-  "meaning": {
-   "ko": "감사하다, 감사드리다",
-   "zh": "感謝、感恩",
-   "en": "to give thanks, to be thankful",
-   "ja": "感謝する",
-   "de": "danken, Dank sagen",
-   "fr": "remercier, rendre grâce"
-  }
- },
- {
-  "word": "cầu nguyện",
-  "hanja": "求願",
-  "meaning": {
-   "ko": "기도",
-   "zh": "禱告",
-   "en": "prayer",
-   "ja": "祈り",
-   "de": "Gebet",
-   "fr": "prière"
-  }
- },
- {
-  "word": "căng thẳng",
-  "hanja": null,
-  "meaning": {
-   "ko": "스트레스",
-   "zh": "壓力",
-   "en": "stress",
-   "ja": "ストレス",
-   "de": "Stress",
-   "fr": "stress"
-  }
- },
- {
-  "word": "câu",
-  "hanja": "句",
-  "meaning": {
-   "ko": "절",
-   "zh": "鞠躬",
-   "en": "bow (greeting)",
-   "ja": "お辞儀",
-   "de": "Vers",
-   "fr": "verset"
-  }
- },
- {
-  "word": "câu Kinh Thánh",
-  "hanja": "句經聖",
-  "meaning": {
-   "ko": "성구",
-   "zh": "經文",
-   "en": "scripture",
-   "ja": "聖句",
-   "de": "Bibeltext",
-   "fr": "verset, texte biblique"
-  }
- },
- {
-  "word": "cây khổ hình",
-  "hanja": null,
-  "meaning": {
-   "ko": "형주",
-   "zh": "荊州",
-   "en": "Jingzhou",
-   "ja": "荊州",
-   "de": "Marterpfahl",
-   "fr": "poteau de supplice"
-  }
- },
- {
-  "word": "chân lý",
-  "hanja": "眞理",
-  "meaning": {
-   "ko": "진리",
-   "zh": "真理",
-   "en": "truth",
-   "ja": "真理",
-   "de": "Wahrheit",
-   "fr": "vérité"
-  }
- },
- {
-  "word": "chỉ định",
-  "hanja": "指定",
-  "meaning": {
-   "ko": "임명하다.(과제)",
-   "zh": "任命（課題）",
-   "en": "to appoint (assignment)",
-   "ja": "任命する（課題）",
-   "de": "zuteilen (Aufgabe)",
-   "fr": "attribution (devoir)"
-  }
- },
- {
-  "word": "chia sẻ niềm tin",
-  "hanja": null,
-  "meaning": {
-   "ko": "전파",
-   "zh": "傳播·電波",
-   "en": "propagation/wave",
-   "ja": "電波・伝播",
-   "de": "Glauben weitergeben, predigen",
-   "fr": "prêcher, partager sa foi"
-  }
- },
- {
-  "word": "chiên khác",
-  "hanja": null,
-  "meaning": {
-   "ko": "다른 양들",
-   "zh": "別的羊",
-   "en": "other sheep",
-   "ja": "ほかの羊",
-   "de": "andere Schafe",
-   "fr": "autres brebis"
-  }
- },
- {
-  "word": "chính phủ",
-  "hanja": "政府",
-  "meaning": {
-   "ko": "정부",
-   "zh": "政府",
-   "en": "government",
-   "ja": "政府",
-   "de": "Regierung",
-   "fr": "gouvernement"
-  }
- },
- {
-  "word": "chính quyền",
-  "hanja": "政權",
-  "meaning": {
-   "ko": "행정부",
-   "zh": "行政部門",
-   "en": "administrative branch",
-   "ja": "行政府",
-   "de": "Behörden, Verwaltung",
-   "fr": "autorités, pouvoir exécutif"
-  }
- },
- {
-  "word": "chủ đề",
-  "hanja": "主題",
-  "meaning": {
-   "ko": "주제",
-   "zh": "主題",
-   "en": "topic/subject",
-   "ja": "主題",
-   "de": "Thema",
-   "fr": "thème, sujet"
-  }
- },
- {
-  "word": "chủ nghĩa quốc gia",
-  "hanja": "主義國家",
-  "meaning": {
-   "ko": "국가주의",
-   "zh": "國家主義",
-   "en": "nationalism",
-   "ja": "国家主義",
-   "de": "Nationalismus",
-   "fr": "nationalisme"
-  }
- },
- {
-  "word": "chủ nghĩa vật chất",
-  "hanja": "主義物質",
-  "meaning": {
-   "ko": "물질주의",
-   "zh": "物質主義",
-   "en": "materialism",
-   "ja": "物質主義",
-   "de": "Materialismus",
-   "fr": "matérialisme"
-  }
- },
- {
-  "word": "chức tế lễ",
-  "hanja": "職祭禮",
-  "meaning": {
-   "ko": "제사직",
-   "zh": "祭司職",
-   "en": "priesthood",
-   "ja": "祭司職",
-   "de": "Priestertum",
-   "fr": "prêtrise"
-  }
- },
- {
-  "word": "chương",
-  "hanja": "章",
-  "meaning": {
-   "ko": "장",
-   "zh": "章",
-   "en": "chapter",
-   "ja": "章",
-   "de": "Kapitel",
-   "fr": "chapitre"
-  }
- },
- {
-  "word": "con của Đức Chúa Trời",
-  "hanja": null,
-  "meaning": {
-   "ko": "하느님의 아들",
-   "zh": "上帝的兒子",
-   "en": "God's Son",
-   "ja": "神の子",
-   "de": "Sohn Gottes",
-   "fr": "Fils de Dieu"
-  }
- },
- {
-  "word": "con dê",
-  "hanja": null,
-  "meaning": {
-   "ko": "염소",
-   "zh": "山羊",
-   "en": "goat",
-   "ja": "ヤギ",
-   "de": "Ziege",
-   "fr": "chèvre, bouc"
-  }
- },
- {
-  "word": "Con một",
-  "hanja": null,
-  "meaning": {
-   "ko": "독생자",
-   "zh": "獨生子",
-   "en": "only-begotten son",
-   "ja": "独り子",
-   "de": "einziggezeugter Sohn",
-   "fr": "Fils unique"
-  }
- },
- {
-  "word": "công chính",
-  "hanja": "公正",
-  "meaning": {
-   "ko": "의로운",
-   "zh": "正義的",
-   "en": "righteous",
-   "ja": "義にかなった",
-   "de": "gerecht",
-   "fr": "juste"
-  }
- },
- {
-  "word": "cử tọa",
-  "hanja": "舉座",
-  "meaning": {
-   "ko": "청중",
-   "zh": "聽眾",
-   "en": "audience",
-   "ja": "聴衆",
-   "de": "Zuhörerschaft",
-   "fr": "auditoire"
-  }
- },
- {
-  "word": "cuộc học hỏi Kinh Thánh tại nhà",
-  "hanja": null,
-  "meaning": {
-   "ko": "가정성서연구",
-   "zh": "家庭聖經研究",
-   "en": "home Bible study",
-   "ja": "家庭聖書研究",
-   "de": "Heimbibelstudium",
-   "fr": "cours biblique à domicile"
-  }
- },
- {
-  "word": "dạy dỗ",
-  "hanja": null,
-  "meaning": {
-   "ko": "교육",
-   "zh": "教育",
-   "en": "education",
-   "ja": "教育",
-   "de": "Lehre, Belehrung",
-   "fr": "enseignement, éducation"
-  }
- },
- {
-  "word": "dâng mình",
-  "hanja": null,
-  "meaning": {
-   "ko": "헌신하다",
-   "zh": "獻身",
-   "en": "to devote oneself",
-   "ja": "献身する",
-   "de": "sich hingeben",
-   "fr": "se vouer, vouement"
-  }
- },
- {
-  "word": "diễn giả",
-  "hanja": "演者",
-  "meaning": {
-   "ko": "연사",
-   "zh": "講者",
-   "en": "speaker",
-   "ja": "講演者",
-   "de": "Redner",
-   "fr": "orateur"
-  }
- },
- {
-  "word": "diễn văn công cộng",
-  "hanja": "演文公共",
-  "meaning": {
-   "ko": "공개강연",
-   "zh": "公眾演講",
-   "en": "public talk",
-   "ja": "公開講演",
-   "de": "öffentlicher Vortrag",
-   "fr": "discours public"
-  }
- },
- {
-  "word": "đại hội",
-  "hanja": "大會",
-  "meaning": {
-   "ko": "대회",
-   "zh": "大會",
-   "en": "convention",
-   "ja": "大会",
-   "de": "Kongress",
-   "fr": "assemblée"
-  }
- },
- {
-  "word": "Đấng Tạo Hoá",
-  "hanja": "造化",
-  "meaning": {
-   "ko": "창조주",
-   "zh": "創造主",
-   "en": "Creator",
-   "ja": "創造主",
-   "de": "Schöpfer",
-   "fr": "Créateur"
-  }
- },
- {
-  "word": "Đấng Toàn Năng",
-  "hanja": "全能",
-  "meaning": {
-   "ko": "전능자",
-   "zh": "全能者",
-   "en": "the Almighty",
-   "ja": "全能者",
-   "de": "der Allmächtige",
-   "fr": "le Tout-Puissant"
-  }
- },
- {
-  "word": "đấng Trung Gian",
-  "hanja": "中間",
-  "meaning": {
-   "ko": "중개자",
-   "zh": "居間人",
-   "en": "intermediary",
-   "ja": "仲介者",
-   "de": "Mittler",
-   "fr": "Médiateur"
-  }
- },
- {
-  "word": "đạo Đấng Ki-tô",
-  "hanja": null,
-  "meaning": {
-   "ko": "그리스도교",
-   "zh": "基督教",
-   "en": "Christianity",
-   "ja": "キリスト教",
-   "de": "Christentum",
-   "fr": "christianisme"
-  }
- },
- {
-  "word": "đạo đức",
-  "hanja": "道德",
-  "meaning": {
-   "ko": "도덕",
-   "zh": "道德",
-   "en": "morality",
-   "ja": "道徳",
-   "de": "Moral",
-   "fr": "morale, moralité"
-  }
- },
- {
-  "word": "đất hứa",
-  "hanja": null,
-  "meaning": {
-   "ko": "약속의 땅",
-   "zh": "應許之地",
-   "en": "the promised land",
-   "ja": "約束の地",
-   "de": "verheißenes Land",
-   "fr": "pays promis"
-  }
- },
- {
-  "word": "Đất Hứa",
-  "hanja": null,
-  "meaning": {
-   "ko": "약속의 땅",
-   "zh": "應許之地",
-   "en": "Promised Land",
-   "ja": "約束の地",
-   "de": "Verheißenes Land",
-   "fr": "Terre promise"
-  }
- },
- {
-  "word": "đầy tớ trung tín và khôn ngoan",
-  "hanja": null,
-  "meaning": {
-   "ko": "충실하고 슬기로운 종",
-   "zh": "忠信睿智的奴隸",
-   "en": "faithful and discreet slave",
-   "ja": "忠実で思慮深い奴隷",
-   "de": "treuer und verständiger Sklave",
-   "fr": "esclave fidèle et avisé"
-  }
- },
- {
-  "word": "đền thờ",
-  "hanja": null,
-  "meaning": {
-   "ko": "성전",
-   "zh": "聖殿",
-   "en": "temple",
-   "ja": "神殿",
-   "de": "Tempel",
-   "fr": "temple"
-  }
- },
- {
-  "word": "đoàn thể anh em",
-  "hanja": null,
-  "meaning": {
-   "ko": "형제 관계",
-   "zh": "弟兄關係",
-   "en": "brotherhood",
-   "ja": "兄弟関係",
-   "de": "Bruderschaft",
-   "fr": "communauté des frères"
-  }
- },
- {
-  "word": "đọc Kinh Thánh",
-  "hanja": null,
-  "meaning": {
-   "ko": "성경 낭독",
-   "zh": "聖經朗讀",
-   "en": "Bible reading",
-   "ja": "聖書の朗読",
-   "de": "Bibellesung",
-   "fr": "lecture de la Bible"
-  }
- },
- {
-  "word": "đồng tính luyến ái",
-  "hanja": "同性戀愛",
-  "meaning": {
-   "ko": "동성애",
-   "zh": "同性戀",
-   "en": "homosexuality",
-   "ja": "同性愛",
-   "de": "Homosexualität",
-   "fr": "homosexualité"
-  }
- },
- {
-  "word": "đương đầu với vấn đề",
-  "hanja": null,
-  "meaning": {
-   "ko": "문제에 대처하다",
-   "zh": "應對問題",
-   "en": "deal with a problem",
-   "ja": "問題に対処する",
-   "de": "mit Problemen umgehen",
-   "fr": "faire face aux problèmes"
-  }
- },
- {
-  "word": "giá chuộc",
-  "hanja": null,
-  "meaning": {
-   "ko": "대속",
-   "zh": "贖價",
-   "en": "ransom",
-   "ja": "贖い",
-   "de": "Lösegeld",
-   "fr": "rançon"
-  }
- },
- {
-  "word": "giải trí",
-  "hanja": null,
-  "meaning": {
-   "ko": "여가활동",
-   "zh": "休閒活動",
-   "en": "leisure activity",
-   "ja": "余暇活動",
-   "de": "Freizeitbeschäftigung",
-   "fr": "détente, loisirs"
-  }
- },
- {
-  "word": "giám thị điều phối",
-  "hanja": "監視調配",
-  "meaning": {
-   "ko": "조정자",
-   "zh": "長老團協調者",
-   "en": "mediator",
-   "ja": "調停者",
-   "de": "Koordinator der Ältestenschaft",
-   "fr": "coordinateur du collège des anciens"
-  }
- },
- {
-  "word": "giáo lý",
-  "hanja": "敎理",
-  "meaning": {
-   "ko": "교리",
-   "zh": "教義",
-   "en": "doctrine",
-   "ja": "教理",
-   "de": "Lehre, Glaubenslehre",
-   "fr": "doctrine"
-  }
- },
- {
-  "word": "giáo sĩ",
-  "hanja": "教士",
-  "meaning": {
-   "ko": "선교인",
-   "zh": "特派傳道員",
-   "en": "missionary",
-   "ja": "宣教師",
-   "de": "Missionar",
-   "fr": "missionnaire"
-  }
- },
- {
-  "word": "giao ước",
-  "hanja": null,
-  "meaning": {
-   "ko": "계약",
-   "zh": "合約",
-   "en": "contract",
-   "ja": "契約",
-   "de": "Bund",
-   "fr": "alliance"
-  }
- },
- {
-  "word": "Giấy uỷ quyền chăm sóc sức khỏe",
-  "hanja": null,
-  "meaning": {
-   "ko": "의료 위임장",
-   "zh": "醫療委任書",
-   "en": "medical power of attorney",
-   "ja": "医療委任状",
-   "de": "Vorsorgevollmacht",
-   "fr": "mandat de protection médicale"
-  }
- },
- {
-  "word": "Giê-hô-va Đức Chúa Trời",
-  "hanja": null,
-  "meaning": {
-   "ko": "여호와 하느님",
-   "zh": "耶和華上帝",
-   "en": "Jehovah God",
-   "ja": "エホバ神",
-   "de": "Jehova Gott",
-   "fr": "Jéhovah Dieu"
-  }
- },
- {
-  "word": "Giê-su Ki-tô",
-  "hanja": null,
-  "meaning": {
-   "ko": "예수 그리스도",
-   "zh": "耶穌基督",
-   "en": "Jesus Christ",
-   "ja": "イエス・キリスト",
-   "de": "Jesus Christus",
-   "fr": "Jésus Christ"
-  }
- },
- {
-  "word": "Hades",
-  "hanja": null,
-  "meaning": {
-   "ko": "하데스",
-   "zh": "「海地斯」（希臘語）",
-   "en": "Hades",
-   "ja": "ハデス",
-   "de": "Hades",
-   "fr": "Hadès"
-  }
- },
- {
-  "word": "hàng giáo phẩm",
-  "hanja": null,
-  "meaning": {
-   "ko": "교직자",
-   "zh": "教職人員",
-   "en": "educator",
-   "ja": "教職者",
-   "de": "Geistlichkeit",
-   "fr": "clergé"
-  }
- },
- {
-  "word": "hầu việc",
-  "hanja": null,
-  "meaning": {
-   "ko": "섬기다, 봉사하다",
-   "zh": "事奉",
-   "en": "to serve (God)",
-   "ja": "仕える",
-   "de": "dienen (Gott)",
-   "fr": "servir Dieu"
-  }
- },
- {
-  "word": "hết mình",
-  "hanja": null,
-  "meaning": {
-   "ko": "영혼을 다한",
-   "zh": "用全部生命 (盡心竭力)",
-   "en": "with all one's soul",
-   "ja": "魂を尽くした",
-   "de": "mit ganzer Seele",
-   "fr": "de toute son âme"
-  }
- },
- {
-  "word": "hiểu biết chính xác",
-  "hanja": null,
-  "meaning": {
-   "ko": "정확한 지식",
-   "zh": "確切的認識",
-   "en": "accurate knowledge",
-   "ja": "正確な知識",
-   "de": "genaue Erkenntnis",
-   "fr": "connaissance exacte"
-  }
- },
- {
-  "word": "hoàn hảo",
-  "hanja": "完好",
-  "meaning": {
-   "ko": "완벽한",
-   "zh": "完美的",
-   "en": "perfect",
-   "ja": "完璧な",
-   "de": "vollkommen",
-   "fr": "parfait"
-  }
- },
- {
-  "word": "hoạn nạn lớn",
-  "hanja": null,
-  "meaning": {
-   "ko": "큰 환난",
-   "zh": "大患難",
-   "en": "the great tribulation",
-   "ja": "大患難",
-   "de": "große Drangsal",
-   "fr": "grande tribulation"
-  }
- },
- {
-  "word": "hoàn vũ",
-  "hanja": "寰宇",
-  "meaning": {
-   "ko": "우주적인",
-   "zh": "宇宙的",
-   "en": "cosmic",
-   "ja": "宇宙的な",
-   "de": "universell",
-   "fr": "universel"
-  }
- },
- {
-  "word": "học hỏi",
-  "hanja": null,
-  "meaning": {
-   "ko": "연구(하다)",
-   "zh": "研究",
-   "en": "to research",
-   "ja": "研究（する）",
-   "de": "studieren, Studium",
-   "fr": "étudier, étude"
-  }
- },
- {
-  "word": "học hỏi cá nhân",
-  "hanja": null,
-  "meaning": {
-   "ko": "개인 연구",
-   "zh": "個人研讀",
-   "en": "personal study",
-   "ja": "個人研究",
-   "de": "persönliches Studium",
-   "fr": "étude individuelle"
-  }
- },
- {
-  "word": "học viên Kinh Thánh",
-  "hanja": "學員經聖",
-  "meaning": {
-   "ko": "성서 연구생",
-   "zh": "聖經研究生",
-   "en": "Bible student",
-   "ja": "聖書研究生",
-   "de": "Bibelschüler",
-   "fr": "étudiant de la Bible"
-  }
- },
- {
-  "word": "hội đồng lãnh đạo",
-  "hanja": "會同領導",
-  "meaning": {
-   "ko": "중앙장로회",
-   "zh": "中央長老團",
-   "en": "central body of elders",
-   "ja": "中央長老会",
-   "de": "Leitende Körperschaft",
-   "fr": "Collège central"
-  }
- },
- {
-  "word": "hội đồng trưởng lão",
-  "hanja": "會同長老",
-  "meaning": {
-   "ko": "장로의 회",
-   "zh": "長老團",
-   "en": "body of elders",
-   "ja": "長老の会",
-   "de": "Ältestenschaft",
-   "fr": "collège des anciens"
-  }
- },
- {
-  "word": "hội nghị vòng quanh",
-  "hanja": null,
-  "meaning": {
-   "ko": "순회 대회",
-   "zh": "分區大會",
-   "en": "circuit assembly",
-   "ja": "巡回大会",
-   "de": "Kreiskongress",
-   "fr": "assemblée de circonscription"
-  }
- },
- {
-  "word": "Hội Quốc Liên",
-  "hanja": null,
-  "meaning": {
-   "ko": "국제 연맹",
-   "zh": "國際聯盟",
-   "en": "League of Nations",
-   "ja": "国際連盟",
-   "de": "Völkerbund",
-   "fr": "Société des Nations"
-  }
- },
- {
-  "word": "hội thánh",
-  "hanja": "會聖",
-  "meaning": {
-   "ko": "회중",
-   "zh": "會眾",
-   "en": "congregation",
-   "ja": "会衆",
-   "de": "Versammlung",
-   "fr": "assemblée, congrégation"
-  }
- },
- {
-  "word": "hộp đóng góp",
-  "hanja": null,
-  "meaning": {
-   "ko": "헌금함",
-   "zh": "奉獻箱",
-   "en": "offering box",
-   "ja": "献金箱",
-   "de": "Spendenkasten",
-   "fr": "boîte à offrandes"
-  }
- },
- {
-  "word": "hy sinh",
-  "hanja": "犧牲",
-  "meaning": {
-   "ko": "희생하다",
-   "zh": "犧牲",
-   "en": "to sacrifice",
-   "ja": "犠牲にする",
-   "de": "opfern, Opfer bringen",
-   "fr": "sacrifier, faire des sacrifices"
-  }
- },
- {
-  "word": "kết hợp với người xấu",
-  "hanja": null,
-  "meaning": {
-   "ko": "나쁜 교제",
-   "zh": "壞的交往",
-   "en": "bad association",
-   "ja": "悪い交わり",
-   "de": "schlechter Umgang",
-   "fr": "mauvaises fréquentations"
-  }
- },
- {
-  "word": "kết hôn",
-  "hanja": "結婚",
-  "meaning": {
-   "ko": "결혼",
-   "zh": "結婚",
-   "en": "marriage",
-   "ja": "結婚",
-   "de": "Heirat, Ehe",
-   "fr": "mariage"
-  }
- },
- {
-  "word": "khả năng suy xét",
-  "hanja": null,
-  "meaning": {
-   "ko": "사고력",
-   "zh": "思考能力",
-   "en": "thinking ability",
-   "ja": "思考力",
-   "de": "Denkvermögen",
-   "fr": "capacité de réflexion"
-  }
- },
- {
-  "word": "khích lệ",
-  "hanja": "激勵",
-  "meaning": {
-   "ko": "동기를 부여하다",
-   "zh": "賦予動機",
-   "en": "to motivate",
-   "ja": "動機を与える",
-   "de": "ermuntern, motivieren",
-   "fr": "encourager, motiver"
-  }
- },
- {
-  "word": "kho báu từ Kinh Thánh",
-  "hanja": null,
-  "meaning": {
-   "ko": "성경에 담긴 보물(집회)",
-   "zh": "聖經寶藏(聚會)",
-   "en": "Treasures From God's Word (meeting)",
-   "ja": "神の言葉の宝(集会)",
-   "de": "Schätze aus Gottes Wort",
-   "fr": "Joyaux de la Parole de Dieu"
-  }
- },
- {
-  "word": "khối Ki-tô giáo",
-  "hanja": null,
-  "meaning": {
-   "ko": "그리스도교국",
-   "zh": "基督教國",
-   "en": "Christendom",
-   "ja": "キリスト教国",
-   "de": "Christenheit",
-   "fr": "chrétienté"
-  }
- },
- {
-  "word": "khu vực",
-  "hanja": "區域",
-  "meaning": {
-   "ko": "구역",
-   "zh": "區域",
-   "en": "district, territory",
-   "ja": "区域",
-   "de": "Gebiet",
-   "fr": "territoire"
-  }
- },
- {
-  "word": "kịch",
-  "hanja": "劇",
-  "meaning": {
-   "ko": "드라마",
-   "zh": "電視劇",
-   "en": "drama",
-   "ja": "ドラマ",
-   "de": "Hörspiel, Drama",
-   "fr": "pièce, fiction dramatique"
-  }
- },
- {
-  "word": "kinh lạy Cha",
-  "hanja": null,
-  "meaning": {
-   "ko": "주기도문",
-   "zh": "主禱文",
-   "en": "the Lord's Prayer",
-   "ja": "主の祈り",
-   "de": "Vaterunser",
-   "fr": "Notre Père"
-  }
- },
- {
-  "word": "Kinh Thánh",
-  "hanja": "經聖",
-  "meaning": {
-   "ko": "성서",
-   "zh": "聖經",
-   "en": "the Bible",
-   "ja": "聖書",
-   "de": "die Bibel",
-   "fr": "la Bible"
-  }
- },
- {
-  "word": "làm chứng",
-  "hanja": null,
-  "meaning": {
-   "ko": "증거하다",
-   "zh": "見證",
-   "en": "to testify/witness",
-   "ja": "証しする",
-   "de": "Zeugnis ablegen",
-   "fr": "rendre témoignage"
-  }
- },
- {
-  "word": "làm chứng bán chính thức",
-  "hanja": null,
-  "meaning": {
-   "ko": "비공식 증거",
-   "zh": "非正式證據",
-   "en": "informal evidence",
-   "ja": "非公式の証拠",
-   "de": "informelles Zeugnisgeben",
-   "fr": "témoignage informel"
-  }
- },
- {
-  "word": "làm chứng nơi công cộng",
-  "hanja": null,
-  "meaning": {
-   "ko": "공개 증거",
-   "zh": "公開見證",
-   "en": "public witnessing",
-   "ja": "公開の証言",
-   "de": "Zeugnisgeben in der Öffentlichkeit",
-   "fr": "témoignage public"
-  }
- },
- {
-  "word": "Lễ Ngũ Tuần",
-  "hanja": "禮五旬",
-  "meaning": {
-   "ko": "오순절",
-   "zh": "五旬節",
-   "en": "Pentecost",
-   "ja": "ペンテコステ",
-   "de": "Pfingsten",
-   "fr": "Pentecôte"
-  }
- },
- {
-  "word": "Lễ Vượt qua",
-  "hanja": null,
-  "meaning": {
-   "ko": "유월절",
-   "zh": "逾越節",
-   "en": "Passover",
-   "ja": "過ぎ越し",
-   "de": "Passah",
-   "fr": "Pâque"
-  }
- },
- {
-  "word": "Liên hợp Quốc",
-  "hanja": null,
-  "meaning": {
-   "ko": "국제 연합",
-   "zh": "聯合國",
-   "en": "United Nations",
-   "ja": "国際連合",
-   "de": "Vereinte Nationen",
-   "fr": "Nations unies"
-  }
- },
- {
-  "word": "loại bỏ",
-  "hanja": null,
-  "meaning": {
-   "ko": "내보냈다",
-   "zh": "趕出去了",
-   "en": "sent out, expelled",
-   "ja": "追い出した",
-   "de": "entfernen, ausschließen",
-   "fr": "exclure, renvoyer"
-  }
- },
- {
-  "word": "lời Đức Chúa Trời",
-  "hanja": null,
-  "meaning": {
-   "ko": "하느님의 말씀",
-   "zh": "上帝的話語",
-   "en": "God's word",
-   "ja": "神の言葉",
-   "de": "Wort Gottes",
-   "fr": "parole de Dieu"
-  }
- },
- {
-  "word": "lối sống",
-  "hanja": null,
-  "meaning": {
-   "ko": "생활 방식",
-   "zh": "生活方式",
-   "en": "lifestyle",
-   "ja": "生活様式",
-   "de": "Lebensweise",
-   "fr": "mode de vie"
-  }
- },
- {
-  "word": "lối sống một tín đồ",
-  "hanja": null,
-  "meaning": {
-   "ko": "그리스도인 생활(집회)",
-   "zh": "基督徒生活(聚會)",
-   "en": "Christian Life (meeting)",
-   "ja": "クリスチャン生活(集会)",
-   "de": "Unser Leben als Christ",
-   "fr": "Vie chrétienne"
-  }
- },
- {
-  "word": "Lối sống và Thánh chức",
-  "hanja": null,
-  "meaning": {
-   "ko": "생활과 봉사 집회",
-   "zh": "生活與服事聚會",
-   "en": "Life and Ministry Meeting",
-   "ja": "生活と奉仕の集会",
-   "de": "Leben-und-Dienst-Zusammenkunft",
-   "fr": "réunion Vie et ministère"
-  }
- },
- {
-  "word": "Lối sống và thánh chức -Chương trình nhóm họp",
-  "hanja": null,
-  "meaning": {
-   "ko": "그리스도인 생활과 집회 교재",
-   "zh": "《基督徒生活與聚會教材》",
-   "en": "Christian Life and Meeting Workbook",
-   "ja": "クリスチャンの生活と集会の教材",
-   "de": "Arbeitsheft für die Zusammenkunft",
-   "fr": "Cahier pour la réunion Vie et ministère"
-  }
- },
- {
-  "word": "lòng sùng kính",
-  "hanja": "崇敬",
-  "meaning": {
-   "ko": "경건한 정성",
-   "zh": "敬虔的忠貞",
-   "en": "godly devotion",
-   "ja": "敬虔な献身",
-   "de": "Gottergebenheit",
-   "fr": "attachement à Dieu"
-  }
- },
- {
-  "word": "lòng trung thành",
-  "hanja": "忠誠",
-  "meaning": {
-   "ko": "충성",
-   "zh": "忠誠",
-   "en": "loyalty",
-   "ja": "忠誠",
-   "de": "Loyalität",
-   "fr": "loyauté, fidélité"
-  }
- },
- {
-  "word": "lòng trung thành",
-  "hanja": "忠誠",
-  "meaning": {
-   "ko": "충실함",
-   "zh": "忠實",
-   "en": "faithfulness",
-   "ja": "忠実さ",
-   "de": "Treue, Zuverlässigkeit",
-   "fr": "fidélité"
-  }
- },
- {
-  "word": "luật pháp Môi-se",
-  "hanja": null,
-  "meaning": {
-   "ko": "모세의 율법",
-   "zh": "摩西律法",
-   "en": "Law of Moses",
-   "ja": "モーセの律法",
-   "de": "mosaisches Gesetz",
-   "fr": "Loi mosaïque"
-  }
- },
- {
-  "word": "lương tâm",
-  "hanja": "良心",
-  "meaning": {
-   "ko": "양심",
-   "zh": "良心",
-   "en": "conscience",
-   "ja": "良心",
-   "de": "Gewissen",
-   "fr": "conscience"
-  }
- },
- {
-  "word": "lưu đày",
-  "hanja": null,
-  "meaning": {
-   "ko": "유배, 유배되다",
-   "zh": "流放、被放逐",
-   "en": "exile, to be exiled",
-   "ja": "流刑、追放される",
-   "de": "Exil, verbannt werden",
-   "fr": "exil, être exilé"
-  }
- },
- {
-  "word": "ly dị",
-  "hanja": "離異",
-  "meaning": {
-   "ko": "이혼",
-   "zh": "離婚",
-   "en": "divorce",
-   "ja": "離婚",
-   "de": "Scheidung",
-   "fr": "divorce"
-  }
- },
- {
-  "word": "ma thuật",
-  "hanja": "魔術",
-  "meaning": {
-   "ko": "영매술",
-   "zh": "通靈術",
-   "en": "spiritism",
-   "ja": "交霊術",
-   "de": "Spiritismus",
-   "fr": "spiritisme"
-  }
- },
- {
-  "word": "ma túy",
-  "hanja": "麻醉",
-  "meaning": {
-   "ko": "마약",
-   "zh": "毒品",
-   "en": "drug, narcotic",
-   "ja": "麻薬",
-   "de": "Drogen",
-   "fr": "drogue"
-  }
- },
- {
-  "word": "Mê-si",
-  "hanja": null,
-  "meaning": {
-   "ko": "메시아",
-   "zh": "彌賽亞",
-   "en": "Messiah",
-   "ja": "メシア",
-   "de": "Messias",
-   "fr": "Messie"
-  }
- },
- {
-  "word": "micrô",
-  "hanja": null,
-  "meaning": {
-   "ko": "마이크",
-   "zh": "麥克風",
-   "en": "microphone",
-   "ja": "マイク",
-   "de": "Mikrofon",
-   "fr": "micro"
-  }
- },
- {
-  "word": "món biểu tượng",
-  "hanja": null,
-  "meaning": {
-   "ko": "표상물",
-   "zh": "象徵物",
-   "en": "symbol",
-   "ja": "表象物",
-   "de": "Symbole",
-   "fr": "emblèmes"
-  }
- },
- {
-  "word": "một đám đông lớn",
-  "hanja": null,
-  "meaning": {
-   "ko": "큰 무리",
-   "zh": "大群眾",
-   "en": "great crowd",
-   "ja": "大群衆",
-   "de": "große Volksmenge",
-   "fr": "grande foule"
-  }
- },
- {
-  "word": "một trăm bốn mươi bốn ngàn người",
-  "hanja": null,
-  "meaning": {
-   "ko": "144,000명",
-   "zh": "144,000人",
-   "en": "144,000",
-   "ja": "144,000人",
-   "de": "144 000",
-   "fr": "144 000"
-  }
- },
- {
-  "word": "mô mả chung của nhân loại",
-  "hanja": null,
-  "meaning": {
-   "ko": "인류의 일반 무덤",
-   "zh": "人類的共同墳墓",
-   "en": "common grave of mankind",
-   "ja": "人類の共通の墓",
-   "de": "allgemeines Grab der Menschheit",
-   "fr": "tombe commune aux humains"
-  }
- },
- {
-  "word": "môn đồ",
-  "hanja": "門徒",
-  "meaning": {
-   "ko": "제자",
-   "zh": "門徒",
-   "en": "disciple",
-   "ja": "弟子",
-   "de": "Jünger",
-   "fr": "disciple"
-  }
- },
- {
-  "word": "Mười Điều Răn",
-  "hanja": null,
-  "meaning": {
-   "ko": "십계명",
-   "zh": "十誡",
-   "en": "Ten Commandments",
-   "ja": "十戒",
-   "de": "Zehn Gebote",
-   "fr": "Dix Commandements"
-  }
- },
- {
-  "word": "mười hai sứ đồ",
-  "hanja": null,
-  "meaning": {
-   "ko": "12사도",
-   "zh": "十二使徒",
-   "en": "the 12 apostles",
-   "ja": "12使徒",
-   "de": "zwölf Apostel",
-   "fr": "douze apôtres"
-  }
- },
- {
-  "word": "nêu gương mẫu",
-  "hanja": null,
-  "meaning": {
-   "ko": "모범을 보이다",
-   "zh": "樹立榜樣",
-   "en": "set an example",
-   "ja": "模範を示す",
-   "de": "ein Vorbild sein",
-   "fr": "donner l’exemple"
-  }
- },
- {
-  "word": "ngày Sa-bát",
-  "hanja": null,
-  "meaning": {
-   "ko": "안식(일)",
-   "zh": "安息（日）",
-   "en": "sabbath (day)",
-   "ja": "安息（日）",
-   "de": "Sabbat",
-   "fr": "sabbat"
-  }
- },
- {
-  "word": "ngoại tình",
-  "hanja": "外情",
-  "meaning": {
-   "ko": "간음",
-   "zh": "姦淫",
-   "en": "adultery",
-   "ja": "姦淫",
-   "de": "Ehebruch",
-   "fr": "adultère"
-  }
- },
- {
-  "word": "nguyên tắc Kinh Thánh",
-  "hanja": "原則經聖",
-  "meaning": {
-   "ko": "성서원칙",
-   "zh": "聖經原則",
-   "en": "Bible principle",
-   "ja": "聖書の原則",
-   "de": "biblischer Grundsatz",
-   "fr": "principe biblique"
-  }
- },
- {
-  "word": "nguyên tắc về quyền làm đầu",
-  "hanja": null,
-  "meaning": {
-   "ko": "머리 직분 원칙",
-   "zh": "元首的原則",
-   "en": "headship principle",
-   "ja": "かしらの原則",
-   "de": "Grundsatz der Führerschaft",
-   "fr": "principe de l’autorité"
-  }
- },
- {
-  "word": "người công bố",
-  "hanja": null,
-  "meaning": {
-   "ko": "전도인",
-   "zh": "傳道員",
-   "en": "publisher",
-   "ja": "伝道者",
-   "de": "Verkündiger",
-   "fr": "proclamateur"
-  }
- },
- {
-  "word": "người công bố chưa báp têm",
-  "hanja": null,
-  "meaning": {
-   "ko": "미침례 전도인",
-   "zh": "未受浸傳道員",
-   "en": "unbaptized publisher",
-   "ja": "未バプテスマの伝道者",
-   "de": "ungetaufter Verkündiger",
-   "fr": "proclamateur non baptisé"
-  }
- },
- {
-  "word": "người Do Thái",
-  "hanja": null,
-  "meaning": {
-   "ko": "유대인",
-   "zh": "猶太人",
-   "en": "Jew",
-   "ja": "ユダヤ人",
-   "de": "Jude",
-   "fr": "Juif"
-  }
- },
- {
-  "word": "người đọc bài",
-  "hanja": null,
-  "meaning": {
-   "ko": "낭독자",
-   "zh": "朗讀者",
-   "en": "reader",
-   "ja": "朗読者",
-   "de": "Leser",
-   "fr": "lecteur"
-  }
- },
- {
-  "word": "người hôn phối không tin đạo",
-  "hanja": null,
-  "meaning": {
-   "ko": "믿지 않는 배우자",
-   "zh": "不信的配偶",
-   "en": "unbelieving spouse",
-   "ja": "信者でない配偶者",
-   "de": "ungläubiger Ehepartner",
-   "fr": "conjoint non croyant"
-  }
- },
- {
-  "word": "người lân cận",
-  "hanja": null,
-  "meaning": {
-   "ko": "이웃",
-   "zh": "鄰居",
-   "en": "neighbor",
-   "ja": "隣人",
-   "de": "Nächster",
-   "fr": "prochain"
-  }
- },
- {
-  "word": "người Pha-ri-si",
-  "hanja": null,
-  "meaning": {
-   "ko": "바리새인",
-   "zh": "法利賽人",
-   "en": "Pharisee",
-   "ja": "パリサイ人",
-   "de": "Pharisäer",
-   "fr": "pharisien"
-  }
- },
- {
-  "word": "người phục vụ",
-  "hanja": null,
-  "meaning": {
-   "ko": "봉사자",
-   "zh": "奉仕者",
-   "en": "servant; volunteer",
-   "ja": "奉仕者",
-   "de": "Diener, Freiwilliger",
-   "fr": "serviteur, bénévole"
-  }
- },
- {
-  "word": "người phụng sự trọn thời gian",
-  "hanja": null,
-  "meaning": {
-   "ko": "전 시간 봉사자",
-   "zh": "全時間傳道員",
-   "en": "full-time servant",
-   "ja": "全時間奉仕者",
-   "de": "Vollzeitdiener",
-   "fr": "serviteur à plein temps"
-  }
- },
- {
-  "word": "nhắc nhở",
-  "hanja": null,
-  "meaning": {
-   "ko": "상기시킴, 일깨움",
-   "zh": "提醒",
-   "en": "reminder",
-   "ja": "気づかせるもの",
-   "de": "Erinnerung",
-   "fr": "rappel"
-  }
- },
- {
-  "word": "nhận thức",
-  "hanja": "認識",
-  "meaning": {
-   "ko": "인식하다",
-   "zh": "認識",
-   "en": "to recognize",
-   "ja": "認識する",
-   "de": "erkennen, wahrnehmen",
-   "fr": "prendre conscience, reconnaître"
-  }
- },
- {
-  "word": "nhân cách cũ",
-  "hanja": null,
-  "meaning": {
-   "ko": "옛 인간성",
-   "zh": "舊的人性",
-   "en": "old personality",
-   "ja": "古い人格",
-   "de": "alte Persönlichkeit",
-   "fr": "vieille personnalité"
-  }
- },
- {
-  "word": "nhân cách mới",
-  "hanja": null,
-  "meaning": {
-   "ko": "새 인간성",
-   "zh": "新品格",
-   "en": "new personality",
-   "ja": "新しい人格",
-   "de": "neue Persönlichkeit",
-   "fr": "nouvelle personnalité"
-  }
- },
- {
-  "word": "Nhân chứng Giê-hô-va",
-  "hanja": null,
-  "meaning": {
-   "ko": "여호와의 증인",
-   "zh": "耶和華見證人",
-   "en": "Jehovah's Witnesses",
-   "ja": "エホバの証人",
-   "de": "Jehovas Zeugen",
-   "fr": "Témoins de Jéhovah"
-  }
- },
- {
-  "word": "nhân từ bao la",
-  "hanja": null,
-  "meaning": {
-   "ko": "과분한 친절",
-   "zh": "過分的仁慈",
-   "en": "undeserved kindness",
-   "ja": "過分な親切",
-   "de": "unverdiente Güte",
-   "fr": "faveur imméritée"
-  }
- },
- {
-  "word": "nhiệm sở",
-  "hanja": "任所",
-  "meaning": {
-   "ko": "임지",
-   "zh": "任派",
-   "en": "assignment, place of service",
-   "ja": "任地",
-   "de": "Zuteilung, Dienstort",
-   "fr": "affectation, lieu de service"
-  }
- },
- {
-  "word": "nhóm rao giảng",
-  "hanja": null,
-  "meaning": {
-   "ko": "야외봉사를 위한 모임",
-   "zh": "外勤傳道聚會",
-   "en": "meeting for field service",
-   "ja": "野外奉仕のための集まり",
-   "de": "Zusammenkunft für den Predigtdienst",
-   "fr": "réunion pour la prédication"
-  }
- },
- {
-  "word": "niên giám",
-  "hanja": "年鑑",
-  "meaning": {
-   "ko": "연감",
-   "zh": "年鑑",
-   "en": "yearbook, almanac",
-   "ja": "年鑑",
-   "de": "Jahrbuch",
-   "fr": "annuaire"
-  }
- },
- {
-  "word": "Núi Si-nai",
-  "hanja": null,
-  "meaning": {
-   "ko": "시나이 산",
-   "zh": "西奈山",
-   "en": "Mount Sinai",
-   "ja": "シナイ山",
-   "de": "Berg Sinai",
-   "fr": "mont Sinaï"
-  }
- },
- {
-  "word": "Núi Si-ôn",
-  "hanja": null,
-  "meaning": {
-   "ko": "시온 산",
-   "zh": "錫安山",
-   "en": "Mount Zion",
-   "ja": "シオンの山",
-   "de": "Berg Zion",
-   "fr": "mont Sion"
-  }
- },
- {
-  "word": "Nước Đức Chúa Trời",
-  "hanja": null,
-  "meaning": {
-   "ko": "하느님의 왕국",
-   "zh": "上帝的王國",
-   "en": "God's Kingdom",
-   "ja": "神の王国",
-   "de": "Gottes Königreich",
-   "fr": "Royaume de Dieu"
-  }
- },
- {
-  "word": "Nước Trời",
-  "hanja": null,
-  "meaning": {
-   "ko": "왕국",
-   "zh": "王國",
-   "en": "Kingdom",
-   "ja": "王国",
-   "de": "Königreich",
-   "fr": "Royaume"
-  }
- },
- {
-  "word": "ô uế",
-  "hanja": "汚穢",
-  "meaning": {
-   "ko": "불결한",
-   "zh": "不潔的，骯髒的",
-   "en": "unclean; dirty",
-   "ja": "不潔な",
-   "de": "unrein",
-   "fr": "impur"
-  }
- },
- {
-  "word": "phần đọc Kinh Thánh hằng tuần",
-  "hanja": null,
-  "meaning": {
-   "ko": "주간 성서 읽기 범위",
-   "zh": "每週聖經閱讀範圍",
-   "en": "weekly Bible reading schedule",
-   "ja": "週の聖書通読範囲",
-   "de": "wöchentliches Bibelleseprogramm",
-   "fr": "programme hebdomadaire de lecture de la Bible"
-  }
- },
- {
-  "word": "phần học Kinh Thánh của hội thánh",
-  "hanja": null,
-  "meaning": {
-   "ko": "회중 성서 연구",
-   "zh": "會眾聖經研究",
-   "en": "Congregation Bible Study",
-   "ja": "会衆聖書研究",
-   "de": "Versammlungsbibelstudium",
-   "fr": "étude biblique de l’assemblée"
-  }
- },
- {
-  "word": "phần Kinh Thánh tiếng Hê-bơ-rơ",
-  "hanja": null,
-  "meaning": {
-   "ko": "히브리어 성경",
-   "zh": "希伯來語聖經",
-   "en": "Hebrew Scriptures",
-   "ja": "ヘブライ語聖書",
-   "de": "Hebräische Schriften",
-   "fr": "Écritures hébraïques"
-  }
- },
- {
-  "word": "phần Kinh Thánh tiếng Hy Lạp",
-  "hanja": null,
-  "meaning": {
-   "ko": "그리스도인 그리스어 성경",
-   "zh": "《基督教希臘語聖經》",
-   "en": "Christian Greek Scriptures",
-   "ja": "クリスチャン・ギリシャ語聖書",
-   "de": "Christliche Griechische Schriften",
-   "fr": "Écritures grecques chrétiennes"
-  }
- },
- {
-  "word": "phát hành",
-  "hanja": "發行",
-  "meaning": {
-   "ko": "제공하다(잡지)",
-   "zh": "提供(雜誌)",
-   "en": "to offer (magazine)",
-   "ja": "提供する(雑誌)",
-   "de": "anbieten (Zeitschrift)",
-   "fr": "proposer (une revue)"
-  }
- },
- {
-  "word": "phiên họp trưởng lão",
-  "hanja": null,
-  "meaning": {
-   "ko": "장로회의",
-   "zh": "長老會議",
-   "en": "elders' meeting",
-   "ja": "長老会議",
-   "de": "Ältestensitzung",
-   "fr": "réunion des anciens"
-  }
- },
- {
-  "word": "Phòng Nước Trời",
-  "hanja": null,
-  "meaning": {
-   "ko": "왕국회관",
-   "zh": "王國聚會所",
-   "en": "Kingdom Hall",
-   "ja": "王国会館",
-   "de": "Königreichssaal",
-   "fr": "Salle du Royaume"
-  }
- },
- {
-  "word": "Phòng Nước Trời được xây cấp tốc",
-  "hanja": null,
-  "meaning": {
-   "ko": "속성 건축 왕국회관",
-   "zh": "速建王國聚會所",
-   "en": "Quickly Built Kingdom Hall",
-   "ja": "速建王国会館",
-   "de": "Schnellbau-Königreichssaal",
-   "fr": "Salle du Royaume construite rapidement"
-  }
- },
- {
-  "word": "phụ tá",
-  "hanja": "輔佐",
-  "meaning": {
-   "ko": "봉사의 종",
-   "zh": "助理僕人",
-   "en": "ministerial servant",
-   "ja": "奉仕の僕",
-   "de": "Dienstamtgehilfe",
-   "fr": "assistant ministériel"
-  }
- },
- {
-  "word": "phục sinh",
-  "hanja": "復生",
-  "meaning": {
-   "ko": "부활",
-   "zh": "復活",
-   "en": "resurrection",
-   "ja": "復活",
-   "de": "Auferstehung",
-   "fr": "résurrection"
-  }
- },
- {
-  "word": "phục tùng",
-  "hanja": "服從",
-  "meaning": {
-   "ko": "복종",
-   "zh": "服從",
-   "en": "obedience",
-   "ja": "服従",
-   "de": "Unterordnung, Gehorsam",
-   "fr": "soumission, obéissance"
-  }
- },
- {
-  "word": "phụng sự",
-  "hanja": "奉事",
-  "meaning": {
-   "ko": "신성한 봉사",
-   "zh": "神聖的服務",
-   "en": "sacred service",
-   "ja": "神聖な奉仕",
-   "de": "heiliger Dienst",
-   "fr": "service sacré"
-  }
- },
- {
-  "word": "quan hệ với Đức Chúa Trời",
-  "hanja": null,
-  "meaning": {
-   "ko": "하느님과의 관계",
-   "zh": "與上帝的關係",
-   "en": "relationship with God",
-   "ja": "神との関係",
-   "de": "Verhältnis zu Gott",
-   "fr": "relations avec Dieu"
-  }
- },
- {
-  "word": "quầy sách báo",
-  "hanja": null,
-  "meaning": {
-   "ko": "서적부",
-   "zh": "書刊檯",
-   "en": "literature counter",
-   "ja": "書籍台",
-   "de": "Literaturschalter",
-   "fr": "comptoir des publications"
-  }
- },
- {
-  "word": "quyền cai trị",
-  "hanja": null,
-  "meaning": {
-   "ko": "통치권",
-   "zh": "統治權",
-   "en": "sovereignty",
-   "ja": "統治権",
-   "de": "Herrschaft, Herrschergewalt",
-   "fr": "souveraineté, domination"
-  }
- },
- {
-  "word": "quyền tối thượng",
-  "hanja": "權最上",
-  "meaning": {
-   "ko": "주권",
-   "zh": "主權",
-   "en": "sovereignty",
-   "ja": "主権",
-   "de": "Souveränität",
-   "fr": "souveraineté"
-  }
- },
- {
-  "word": "rao giảng",
-  "hanja": null,
-  "meaning": {
-   "ko": "야외 봉사",
-   "zh": "外勤傳道",
-   "en": "field service",
-   "ja": "野外奉仕",
-   "de": "Predigtdienst",
-   "fr": "prédication, ministère"
-  }
- },
- {
-  "word": "rao giảng từng nhà",
-  "hanja": null,
-  "meaning": {
-   "ko": "호별방문",
-   "zh": "逐戶訪問",
-   "en": "door-to-door visit",
-   "ja": "戸別訪問",
-   "de": "Dienst von Haus zu Haus",
-   "fr": "prédication de porte en porte"
-  }
- },
- {
-  "word": "sách",
-  "hanja": null,
-  "meaning": {
-   "ko": "서적",
-   "zh": "書籍",
-   "en": "books",
-   "ja": "書籍",
-   "de": "Bücher, Literatur",
-   "fr": "livres, publications"
-  }
- },
- {
-  "word": "sách hát",
-  "hanja": null,
-  "meaning": {
-   "ko": "노래책",
-   "zh": "歌本",
-   "en": "songbook",
-   "ja": "歌集",
-   "de": "Liederbuch",
-   "fr": "recueil de cantiques"
-  }
- },
- {
-  "word": "Sa-tan Ác quỉ",
-  "hanja": null,
-  "meaning": {
-   "ko": "사탄 마귀",
-   "zh": "撒但魔鬼",
-   "en": "Satan the Devil",
-   "ja": "悪魔サタン",
-   "de": "Satan der Teufel",
-   "fr": "Satan le Diable"
-  }
- },
- {
-  "word": "Sheol",
-  "hanja": null,
-  "meaning": {
-   "ko": "스올",
-   "zh": "陰間",
-   "en": "Sheol",
-   "ja": "シェオル",
-   "de": "Scheol",
-   "fr": "Schéol"
-  }
- },
- {
-  "word": "sự ăn năn",
-  "hanja": null,
-  "meaning": {
-   "ko": "회개",
-   "zh": "悔改",
-   "en": "repentance",
-   "ja": "悔い改め",
-   "de": "Reue",
-   "fr": "repentir"
-  }
- },
- {
-  "word": "sự bắt bớ",
-  "hanja": null,
-  "meaning": {
-   "ko": "박해",
-   "zh": "迫害",
-   "en": "persecution",
-   "ja": "迫害",
-   "de": "Verfolgung",
-   "fr": "persécution"
-  }
- },
- {
-  "word": "sự công chính",
-  "hanja": "公正",
-  "meaning": {
-   "ko": "의",
-   "zh": "的",
-   "en": "of ('s)",
-   "ja": "の",
-   "de": "Gerechtigkeit",
-   "fr": "justice"
-  }
- },
- {
-  "word": "sự công lý",
-  "hanja": "公理",
-  "meaning": {
-   "ko": "공의",
-   "zh": "公義",
-   "en": "righteousness",
-   "ja": "公義",
-   "de": "Gerechtigkeit, Recht",
-   "fr": "justice, droit"
-  }
- },
- {
-  "word": "sự đặt trước",
-  "hanja": null,
-  "meaning": {
-   "ko": "예약",
-   "zh": "預約",
-   "en": "reservation",
-   "ja": "予約",
-   "de": "Vorbestellung, Reservierung",
-   "fr": "réservation"
-  }
- },
- {
-  "word": "sự đóng góp",
-  "hanja": null,
-  "meaning": {
-   "ko": "기부",
-   "zh": "捐贈",
-   "en": "donation",
-   "ja": "寄付",
-   "de": "Spende",
-   "fr": "offrande, don"
-  }
- },
- {
-  "word": "sự hiểu biết chính xác",
-  "hanja": null,
-  "meaning": {
-   "ko": "정확한 지식",
-   "zh": "準確的知識",
-   "en": "accurate knowledge",
-   "ja": "正確な知識",
-   "de": "genaue Erkenntnis",
-   "fr": "connaissance exacte"
-  }
- },
- {
-  "word": "sự hợp nhất",
-  "hanja": null,
-  "meaning": {
-   "ko": "연합",
-   "zh": "團結、合一",
-   "en": "unity",
-   "ja": "一致、団結",
-   "de": "Einheit",
-   "fr": "unité"
-  }
- },
- {
-  "word": "sự phá thai",
-  "hanja": null,
-  "meaning": {
-   "ko": "낙태",
-   "zh": "墮胎",
-   "en": "abortion",
-   "ja": "堕胎",
-   "de": "Abtreibung",
-   "fr": "avortement"
-  }
- },
- {
-  "word": "sự sáng tạo",
-  "hanja": "創造",
-  "meaning": {
-   "ko": "창조",
-   "zh": "創造",
-   "en": "creation",
-   "ja": "創造",
-   "de": "Schöpfung",
-   "fr": "création"
-  }
- },
- {
-  "word": "sự sống",
-  "hanja": null,
-  "meaning": {
-   "ko": "영혼",
-   "zh": "靈魂",
-   "en": "soul",
-   "ja": "魂",
-   "de": "Seele, Leben",
-   "fr": "âme, vie"
-  }
- },
- {
-  "word": "sự sống vĩnh cửu",
-  "hanja": null,
-  "meaning": {
-   "ko": "영원한 생명",
-   "zh": "永遠的生命",
-   "en": "eternal life",
-   "ja": "永遠の命",
-   "de": "ewiges Leben",
-   "fr": "vie éternelle"
-  }
- },
- {
-  "word": "sự tha thứ",
-  "hanja": null,
-  "meaning": {
-   "ko": "용서",
-   "zh": "饒恕",
-   "en": "forgiveness",
-   "ja": "許し",
-   "de": "Vergebung",
-   "fr": "pardon"
-  }
- },
- {
-  "word": "sự thờ phượng thanh sạch",
-  "hanja": null,
-  "meaning": {
-   "ko": "순결한 숭배",
-   "zh": "純潔的崇拜",
-   "en": "pure worship",
-   "ja": "清い崇拝",
-   "de": "reine Anbetung",
-   "fr": "culte pur"
-  }
- },
- {
-  "word": "sự thử thách",
-  "hanja": null,
-  "meaning": {
-   "ko": "시련",
-   "zh": "考驗",
-   "en": "trial, ordeal",
-   "ja": "試練",
-   "de": "Prüfung, Erprobung",
-   "fr": "épreuve"
-  }
- },
- {
-  "word": "sự trọn thành",
-  "hanja": null,
-  "meaning": {
-   "ko": "충절",
-   "zh": "忠節",
-   "en": "loyalty",
-   "ja": "忠節",
-   "de": "Lauterkeit, Integrität",
-   "fr": "intégrité"
-  }
- },
- {
-  "word": "sự trung lập",
-  "hanja": "中立",
-  "meaning": {
-   "ko": "중립",
-   "zh": "中立",
-   "en": "neutrality",
-   "ja": "中立",
-   "de": "Neutralität",
-   "fr": "neutralité"
-  }
- },
- {
-  "word": "sự vâng lời",
-  "hanja": null,
-  "meaning": {
-   "ko": "순종",
-   "zh": "順從",
-   "en": "obedience",
-   "ja": "従順",
-   "de": "Gehorsam",
-   "fr": "obéissance"
-  }
- },
- {
-  "word": "sửa trị",
-  "hanja": null,
-  "meaning": {
-   "ko": "징계하다",
-   "zh": "懲戒",
-   "en": "to discipline",
-   "ja": "懲らしめる",
-   "de": "zurechtweisen, schulen",
-   "fr": "discipliner, corriger"
-  }
- },
- {
-  "word": "tạp chí",
-  "hanja": "雜誌",
-  "meaning": {
-   "ko": "잡지",
-   "zh": "雜誌",
-   "en": "magazine",
-   "ja": "雑誌",
-   "de": "Zeitschrift",
-   "fr": "revue, périodique"
-  }
- },
- {
-  "word": "tâm trạng",
-  "hanja": "心狀",
-  "meaning": {
-   "ko": "마음 상태",
-   "zh": "心態",
-   "en": "state of mind",
-   "ja": "心の状態",
-   "de": "Herzenszustand",
-   "fr": "état d’esprit, disposition de cœur"
-  }
- },
- {
-  "word": "thái độ",
-  "hanja": "態度",
-  "meaning": {
-   "ko": "태도",
-   "zh": "態度",
-   "en": "attitude",
-   "ja": "態度",
-   "de": "Einstellung",
-   "fr": "attitude"
-  }
- },
- {
-  "word": "Thái độ chỉ nghĩ đến mình",
-  "hanja": null,
-  "meaning": {
-   "ko": "자아 제일 주의적인 태도",
-   "zh": "自我第一主義的態度",
-   "en": "self-centered attitude",
-   "ja": "自己第一主義的な態度",
-   "de": "ich-bezogene Haltung",
-   "fr": "égocentrisme"
-  }
- },
- {
-  "word": "thái độ tiêu cực",
-  "hanja": "態度消極",
-  "meaning": {
-   "ko": "부정적인 태도",
-   "zh": "消極的態度",
-   "en": "negative attitude",
-   "ja": "否定的な態度",
-   "de": "negative Einstellung",
-   "fr": "attitude négative"
-  }
- },
- {
-  "word": "thần khí thánh",
-  "hanja": "神氣聖",
-  "meaning": {
-   "ko": "성령",
-   "zh": "神聖力量",
-   "en": "holy spirit",
-   "ja": "聖霊",
-   "de": "heiliger Geist",
-   "fr": "esprit saint"
-  }
- },
- {
-  "word": "thần thánh",
-  "hanja": "神聖",
-  "meaning": {
-   "ko": "신성한, 거룩한",
-   "zh": "神聖的",
-   "en": "divine, sacred",
-   "ja": "神聖な",
-   "de": "heilig, göttlich",
-   "fr": "saint, sacré"
-  }
- },
- {
-  "word": "thánh chức",
-  "hanja": "聖職",
-  "meaning": {
-   "ko": "봉사, 성직",
-   "zh": "傳道服務",
-   "en": "the ministry",
-   "ja": "奉仕",
-   "de": "Predigtdienst, Dienst",
-   "fr": "ministère"
-  }
- },
- {
-  "word": "Thánh chức Nước Trời",
-  "hanja": null,
-  "meaning": {
-   "ko": "우리의 왕국봉사",
-   "zh": "我們的王國事工",
-   "en": "Our Kingdom Ministry",
-   "ja": "王国宣教",
-   "de": "Unser Königreichsdienst",
-   "fr": "Ministère du Royaume"
-  }
- },
- {
-  "word": "thánh chức rao giảng",
-  "hanja": null,
-  "meaning": {
-   "ko": "봉사의 직무",
-   "zh": "奉仕的職務",
-   "en": "ministerial service",
-   "ja": "奉仕の務め",
-   "de": "Dienstamt",
-   "fr": "ministère"
-  }
- },
- {
-  "word": "thành viên Bê-tên",
-  "hanja": null,
-  "meaning": {
-   "ko": "베델성원",
-   "zh": "伯特利成員",
-   "en": "Bethel family member",
-   "ja": "ベテル家族員",
-   "de": "Bethelmitarbeiter",
-   "fr": "Béthélite, membre du Béthel"
-  }
- },
- {
-  "word": "thầy tế lễ",
-  "hanja": null,
-  "meaning": {
-   "ko": "제사장",
-   "zh": "祭司",
-   "en": "priest",
-   "ja": "祭司",
-   "de": "Priester",
-   "fr": "prêtre"
-  }
- },
- {
-  "word": "thăm lại",
-  "hanja": null,
-  "meaning": {
-   "ko": "재방문",
-   "zh": "再訪問",
-   "en": "return visit",
-   "ja": "再訪問",
-   "de": "Rückbesuch",
-   "fr": "nouvelle visite"
-  }
- },
- {
-  "word": "thăng bằng",
-  "hanja": null,
-  "meaning": {
-   "ko": "균형 잡힌",
-   "zh": "平衡的",
-   "en": "balanced",
-   "ja": "バランスの取れた",
-   "de": "ausgeglichen",
-   "fr": "équilibré"
-  }
- },
- {
-  "word": "thế gian",
-  "hanja": "世間",
-  "meaning": {
-   "ko": "세상",
-   "zh": "世界、世人",
-   "en": "the world",
-   "ja": "世",
-   "de": "die Welt",
-   "fr": "monde"
-  }
- },
- {
-  "word": "thế giới mới",
-  "hanja": null,
-  "meaning": {
-   "ko": "새 세상",
-   "zh": "新世界",
-   "en": "new world",
-   "ja": "新しい世界",
-   "de": "neue Welt",
-   "fr": "monde nouveau"
-  }
- },
- {
-  "word": "thiên sứ",
-  "hanja": "天使",
-  "meaning": {
-   "ko": "천사",
-   "zh": "天使",
-   "en": "angel",
-   "ja": "天使",
-   "de": "Engel",
-   "fr": "ange"
-  }
- },
- {
-  "word": "thờ phượng",
-  "hanja": null,
-  "meaning": {
-   "ko": "숭배하다, 예배하다",
-   "zh": "崇拜",
-   "en": "to worship",
-   "ja": "崇拝する",
-   "de": "anbeten",
-   "fr": "adorer"
-  }
- },
- {
-  "word": "thỏa hiệp",
-  "hanja": "妥協",
-  "meaning": {
-   "ko": "타협하다",
-   "zh": "妥協",
-   "en": "to compromise",
-   "ja": "妥協する",
-   "de": "Kompromisse eingehen",
-   "fr": "faire des compromis"
-  }
- },
- {
-  "word": "thời gian",
-  "hanja": "時間",
-  "meaning": {
-   "ko": "시간",
-   "zh": "時間",
-   "en": "time",
-   "ja": "時間",
-   "de": "Zeit",
-   "fr": "temps"
-  }
- },
- {
-  "word": "thói nghiện rượu",
-  "hanja": null,
-  "meaning": {
-   "ko": "알코올 의존증",
-   "zh": "酒精依賴症",
-   "en": "alcohol dependence",
-   "ja": "アルコール依存症",
-   "de": "Alkoholabhängigkeit",
-   "fr": "alcoolisme"
-  }
- },
- {
-  "word": "thức ăn thiêng liêng",
-  "hanja": null,
-  "meaning": {
-   "ko": "영적 양식",
-   "zh": "屬靈的糧食",
-   "en": "spiritual food",
-   "ja": "霊的な食物",
-   "de": "geistige Speise",
-   "fr": "nourriture spirituelle"
-  }
- },
- {
-  "word": "thư ký",
-  "hanja": "書記",
-  "meaning": {
-   "ko": "서기",
-   "zh": "西元",
-   "en": "A.D. (Christian era)",
-   "ja": "西暦",
-   "de": "Sekretär",
-   "fr": "secrétaire"
-  }
- },
- {
-  "word": "thư viện",
-  "hanja": "書院",
-  "meaning": {
-   "ko": "도서실",
-   "zh": "圖書室",
-   "en": "library room",
-   "ja": "図書室",
-   "de": "Bibliothek",
-   "fr": "bibliothèque"
-  }
- },
- {
-  "word": "thư viện trực tuyến",
-  "hanja": null,
-  "meaning": {
-   "ko": "온라인 도서실",
-   "zh": "網上圖書館",
-   "en": "online library",
-   "ja": "オンライン図書館",
-   "de": "Online-Bibliothek",
-   "fr": "bibliothèque en ligne"
-  }
- },
- {
-  "word": "tiền đóng góp",
-  "hanja": null,
-  "meaning": {
-   "ko": "헌금",
-   "zh": "奉獻金",
-   "en": "offering (donation)",
-   "ja": "献金",
-   "de": "Spendengeld",
-   "fr": "offrande, dons"
-  }
- },
- {
-  "word": "tiến hoá",
-  "hanja": "進化",
-  "meaning": {
-   "ko": "진화",
-   "zh": "進化",
-   "en": "evolution",
-   "ja": "進化",
-   "de": "Evolution",
-   "fr": "évolution"
-  }
- },
- {
-  "word": "tiên phong",
-  "hanja": "先鋒",
-  "meaning": {
-   "ko": "파이오니아",
-   "zh": "開拓者",
-   "en": "pioneer",
-   "ja": "開拓者",
-   "de": "Pionier",
-   "fr": "pionnier"
-  }
- },
- {
-  "word": "tiên phong đều đều",
-  "hanja": null,
-  "meaning": {
-   "ko": "정규 파이오니아",
-   "zh": "正規開拓者",
-   "en": "regular pioneer",
-   "ja": "正規開拓者",
-   "de": "allgemeiner Pionier",
-   "fr": "pionnier permanent"
-  }
- },
- {
-  "word": "tiên phong phụ trợ",
-  "hanja": "先鋒輔助",
-  "meaning": {
-   "ko": "보조 파이오니아",
-   "zh": "輔助先驅",
-   "en": "auxiliary pioneer",
-   "ja": "補助開拓者",
-   "de": "Hilfspionier",
-   "fr": "pionnier auxiliaire"
-  }
- },
- {
-  "word": "tiên tri",
-  "hanja": "先知",
-  "meaning": {
-   "ko": "예언자, 선지자",
-   "zh": "先知",
-   "en": "prophet",
-   "ja": "預言者",
-   "de": "Prophet",
-   "fr": "prophète"
-  }
- },
- {
-  "word": "tín đồ Đấng Ki-tô",
-  "hanja": null,
-  "meaning": {
-   "ko": "그리스도인",
-   "zh": "基督徒",
-   "en": "Christian",
-   "ja": "クリスチャン",
-   "de": "Christ",
-   "fr": "chrétien"
-  }
- },
- {
-  "word": "tín đồ được xức dầu",
-  "hanja": null,
-  "meaning": {
-   "ko": "기름부음받은 그리스도인",
-   "zh": "受膏的基督徒",
-   "en": "anointed Christian",
-   "ja": "油そそがれたクリスチャン",
-   "de": "gesalbter Christ",
-   "fr": "chrétien oint"
-  }
- },
- {
-  "word": "tín đồ được xức dầu còn sốt lại",
-  "hanja": null,
-  "meaning": {
-   "ko": "기름부음받은 남은 자",
-   "zh": "受膏的餘民",
-   "en": "anointed remnant",
-   "ja": "油そそがれた残りの者",
-   "de": "gesalbter Überrest",
-   "fr": "reste des oints"
-  }
- },
- {
-  "word": "tin mừng",
-  "hanja": null,
-  "meaning": {
-   "ko": "좋은 소식",
-   "zh": "好消息",
-   "en": "good news",
-   "ja": "良い知らせ",
-   "de": "gute Botschaft",
-   "fr": "bonne nouvelle"
-  }
- },
- {
-  "word": "tình nguyện viên",
-  "hanja": "情願員",
-  "meaning": {
-   "ko": "자원봉사자",
-   "zh": "志工",
-   "en": "volunteer",
-   "ja": "ボランティア",
-   "de": "Freiwilliger",
-   "fr": "volontaire, bénévole"
-  }
- },
- {
-  "word": "tinh thần",
-  "hanja": "精神",
-  "meaning": {
-   "ko": "정신",
-   "zh": "精神",
-   "en": "spirit/mind",
-   "ja": "精神",
-   "de": "Geist, Geisteshaltung",
-   "fr": "esprit, état d’esprit"
-  }
- },
- {
-  "word": "tỉnh thức",
-  "hanja": null,
-  "meaning": {
-   "ko": "(영적으로) 깨어 있음",
-   "zh": "保持警醒",
-   "en": "to stay spiritually alert",
-   "ja": "目を覚ましていること",
-   "de": "wachsam bleiben",
-   "fr": "rester vigilant, veiller"
-  }
- },
- {
-  "word": "Tỉnh Thức!",
-  "hanja": null,
-  "meaning": {
-   "ko": "깨어라",
-   "zh": "《儆醒!》",
-   "en": "Awake!",
-   "ja": "「目ざめよ!」",
-   "de": "Erwachet!",
-   "fr": "Réveillez-vous !"
-  }
- },
- {
-  "word": "tình trạng thiêng liêng",
-  "hanja": null,
-  "meaning": {
-   "ko": "영성",
-   "zh": "靈性",
-   "en": "spirituality",
-   "ja": "霊性",
-   "de": "Geistigkeit",
-   "fr": "spiritualité"
-  }
- },
- {
-  "word": "tình yêu thương thành tín",
-  "hanja": null,
-  "meaning": {
-   "ko": "충성스러운 사랑",
-   "zh": "忠貞之愛",
-   "en": "loyal love",
-   "ja": "忠実な愛",
-   "de": "loyale Liebe",
-   "fr": "amour fidèle"
-  }
- },
- {
-  "word": "tổ chức",
-  "hanja": "組織",
-  "meaning": {
-   "ko": "조직",
-   "zh": "組織",
-   "en": "organization",
-   "ja": "組織",
-   "de": "Organisation",
-   "fr": "organisation"
-  }
- },
- {
-  "word": "tổ chức Đức Giê-hô-va",
-  "hanja": null,
-  "meaning": {
-   "ko": "여호와의 조직",
-   "zh": "耶和華的組織",
-   "en": "Jehovah's organization",
-   "ja": "エホバの組織",
-   "de": "Jehovas Organisation",
-   "fr": "organisation de Jéhovah"
-  }
- },
- {
-  "word": "tờ chuyên đề",
-  "hanja": null,
-  "meaning": {
-   "ko": "전도지",
-   "zh": "傳單",
-   "en": "tract",
-   "ja": "パンフレット",
-   "de": "Traktat",
-   "fr": "tract"
-  }
- },
- {
-  "word": "tội lỗi",
-  "hanja": "罪戾",
-  "meaning": {
-   "ko": "죄",
-   "zh": "罪",
-   "en": "sin",
-   "ja": "罪",
-   "de": "Sünde",
-   "fr": "péché"
-  }
- },
- {
-  "word": "tôn giáo",
-  "hanja": "宗教",
-  "meaning": {
-   "ko": "종교",
-   "zh": "宗教",
-   "en": "religion",
-   "ja": "宗教",
-   "de": "Religion",
-   "fr": "religion"
-  }
- },
- {
-  "word": "tôn giáo sai lầm",
-  "hanja": null,
-  "meaning": {
-   "ko": "거짓 종교",
-   "zh": "假宗教",
-   "en": "false religion",
-   "ja": "偽りの宗教",
-   "de": "falsche Religion",
-   "fr": "fausse religion"
-  }
- },
- {
-  "word": "Tra xem Kinh Thánh mỗi ngày",
-  "hanja": null,
-  "meaning": {
-   "ko": "일용할 성구",
-   "zh": "每日經文",
-   "en": "daily scripture text",
-   "ja": "日々の聖句",
-   "de": "Täglich in den Schriften forschen",
-   "fr": "Examinons les Écritures chaque jour"
-  }
- },
- {
-  "word": "trầm cảm",
-  "hanja": "沈感",
-  "meaning": {
-   "ko": "우울증",
-   "zh": "憂鬱症",
-   "en": "depression",
-   "ja": "うつ病",
-   "de": "Depression",
-   "fr": "dépression"
-  }
- },
- {
-  "word": "trận nước lụt",
-  "hanja": null,
-  "meaning": {
-   "ko": "홍수",
-   "zh": "洪水",
-   "en": "flood",
-   "ja": "洪水",
-   "de": "Sintflut",
-   "fr": "Déluge"
-  }
- },
- {
-  "word": "trang web",
-  "hanja": null,
-  "meaning": {
-   "ko": "웹사이트",
-   "zh": "網站",
-   "en": "website",
-   "ja": "ウェブサイト",
-   "de": "Website",
-   "fr": "site Internet"
-  }
- },
- {
-  "word": "trâng tráo",
-  "hanja": null,
-  "meaning": {
-   "ko": "방종한",
-   "zh": "放縱的",
-   "en": "self-indulgent; unruly",
-   "ja": "放縦な",
-   "de": "dreist, schamlos",
-   "fr": "effronté, débauche"
-  }
- },
- {
-  "word": "Trụ sở Trung ương",
-  "hanja": null,
-  "meaning": {
-   "ko": "세계 본부",
-   "zh": "世界總部",
-   "en": "world headquarters",
-   "ja": "世界本部",
-   "de": "Weltzentrale",
-   "fr": "siège mondial"
-  }
- },
- {
-  "word": "Trung tâm giáo dục của Hội Tháp Canh",
-  "hanja": null,
-  "meaning": {
-   "ko": "워치타워 교육센터",
-   "zh": "守望台教育中心",
-   "en": "Watchtower Educational Center",
-   "ja": "ものみの塔教育センター",
-   "de": "Wachtturm-Bildungszentrum",
-   "fr": "Centre d’enseignement"
-  }
- },
- {
-  "word": "trung thực",
-  "hanja": "忠實",
-  "meaning": {
-   "ko": "정직한",
-   "zh": "正直的",
-   "en": "honest",
-   "ja": "正直な",
-   "de": "ehrlich",
-   "fr": "honnête"
-  }
- },
- {
-  "word": "truyền máu",
-  "hanja": null,
-  "meaning": {
-   "ko": "수혈",
-   "zh": "輸血",
-   "en": "blood transfusion",
-   "ja": "輸血",
-   "de": "Bluttransfusion",
-   "fr": "transfusion sanguine"
-  }
- },
- {
-  "word": "Trường dành cho người rao truyền Nước Trời",
-  "hanja": null,
-  "meaning": {
-   "ko": "왕국 전파자 학교",
-   "zh": "王國傳道員學校",
-   "en": "Kingdom Publisher School",
-   "ja": "王国宣明者学校",
-   "de": "Schule für Königreichsverkündiger",
-   "fr": "École pour évangélisateurs du Royaume"
-  }
- },
- {
-  "word": "trưởng lão",
-  "hanja": "長老",
-  "meaning": {
-   "ko": "장로",
-   "zh": "長老",
-   "en": "Elder",
-   "ja": "長老",
-   "de": "Ältester",
-   "fr": "ancien"
-  }
- },
- {
-  "word": "từ điển",
-  "hanja": "辭典",
-  "meaning": {
-   "ko": "사전",
-   "zh": "字典",
-   "en": "dictionary",
-   "ja": "辞書",
-   "de": "Wörterbuch",
-   "fr": "dictionnaire"
-  }
- },
- {
-  "word": "Ủy ban Chi nhánh",
-  "hanja": null,
-  "meaning": {
-   "ko": "지부 위원회",
-   "zh": "分部委員會",
-   "en": "Branch Committee",
-   "ja": "支部委員会",
-   "de": "Zweigkomitee",
-   "fr": "comité de filiale"
-  }
- },
- {
-  "word": "vấn đề",
-  "hanja": "問題",
-  "meaning": {
-   "ko": "쟁점",
-   "zh": "爭議點",
-   "en": "issue",
-   "ja": "争点",
-   "de": "Streitfrage",
-   "fr": "controverse, question"
-  }
- },
- {
-  "word": "Video",
-  "hanja": null,
-  "meaning": {
-   "ko": "동영상",
-   "zh": "影片",
-   "en": "video",
-   "ja": "動画",
-   "de": "Video",
-   "fr": "vidéo"
-  }
- },
- {
-  "word": "viên ngọc thiêng liêng",
-  "hanja": null,
-  "meaning": {
-   "ko": "영적보물 찾기(집회)",
-   "zh": "屬靈珍寶(聚會)",
-   "en": "Spiritual Gems (meeting)",
-   "ja": "霊的な宝探し(集会)",
-   "de": "Geistige Schätze",
-   "fr": "perles spirituelles"
-  }
- },
- {
-  "word": "vòng quanh",
-  "hanja": null,
-  "meaning": {
-   "ko": "순회구",
-   "zh": "巡迴區",
-   "en": "circuit",
-   "ja": "巡回区",
-   "de": "Kreis",
-   "fr": "circonscription"
-  }
- },
- {
-  "word": "vô biên",
-  "hanja": "無邊",
-  "meaning": {
-   "ko": "무한한, 끝이 없는",
-   "zh": "無邊的",
-   "en": "boundless, limitless",
-   "ja": "果てしない",
-   "de": "grenzenlos",
-   "fr": "infini, sans limites"
-  }
- },
- {
-  "word": "vô luân",
-  "hanja": "無倫",
-  "meaning": {
-   "ko": "부도덕한",
-   "zh": "不道德的",
-   "en": "immoral",
-   "ja": "不道徳な",
-   "de": "unmoralisch",
-   "fr": "immoral"
-  }
- },
- {
-  "word": "vườn Ê-đen",
-  "hanja": null,
-  "meaning": {
-   "ko": "에덴동산",
-   "zh": "伊甸園",
-   "en": "Garden of Eden",
-   "ja": "エデンの園",
-   "de": "Garten Eden",
-   "fr": "jardin d’Éden"
-  }
- },
- {
-  "word": "xây dựng",
-  "hanja": null,
-  "meaning": {
-   "ko": "건축",
-   "zh": "建築",
-   "en": "architecture",
-   "ja": "建築",
-   "de": "Bauarbeiten, Bau",
-   "fr": "construction"
-  }
- },
- {
-  "word": "Y-sơ-ra-ên",
-  "hanja": null,
-  "meaning": {
-   "ko": "이스라엘",
-   "zh": "以色列",
-   "en": "Israel",
-   "ja": "イスラエル",
-   "de": "Israel",
-   "fr": "Israël"
-  }
- },
- {
-  "word": "Y-sơ-ra-ên thiêng liêng",
-  "hanja": null,
-  "meaning": {
-   "ko": "영적 이스라엘",
-   "zh": "屬靈以色列",
-   "en": "spiritual Israel",
-   "ja": "霊的イスラエル",
-   "de": "geistiges Israel",
-   "fr": "Israël spirituel"
-  }
- },
- {
-  "word": "Y-sơ-ra-ên xưa",
-  "hanja": null,
-  "meaning": {
-   "ko": "고대 이스라엘",
-   "zh": "古代以色列",
-   "en": "ancient Israel",
-   "ja": "古代イスラエル",
-   "de": "das alte Israel",
-   "fr": "Israël antique"
-  }
- },
- {
-  "word": "Wallkill",
-  "hanja": null,
-  "meaning": {
-   "ko": "월킬",
-   "zh": "沃基爾",
-   "en": "Wallkill",
-   "ja": "ウォールキル",
-   "de": "Wallkill",
-   "fr": "Wallkill"
-  }
- }
 ]
