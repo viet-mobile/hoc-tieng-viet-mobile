@@ -2033,19 +2033,36 @@
   #panel-pron > .subtab-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   #panel-vocab > .subtab-row { grid-template-columns: repeat(10, minmax(0, 1fr)); }
   #panel-vocab > .subtab-row .subtab-btn { white-space: normal; word-break: keep-all; overflow-wrap: anywhere; text-align: center; min-width: 0; }
-  #panel-sentence > .subtab-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  /* Review scope tabs: sized just slightly larger than study mode buttons (~28px vs ~24px) in Korean, Chinese, and English */
+  #review-scope-tabs .subtab-btn {
+    min-height: 28px;
+    height: auto;
+    padding: 3px 2px;
+    font-size: clamp(.60rem, 2.4vw, .74rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #review-scope-tabs[data-scope-category="song"] { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; }
   #review-scope-tabs[data-scope-category="vocab"] { grid-template-columns: repeat(11, minmax(0, 1fr)); }
   #review-scope-tabs[data-scope-category="vocab"] .subtab-btn { white-space: normal; word-break: keep-all; overflow-wrap: anywhere; text-align: center; min-width: 0; }
-  #review-scope-tabs[data-scope-category="pron"] { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-  #review-scope-tabs[data-scope-category="wizard"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  #review-scope-tabs[data-scope-category="bible"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  #review-scope-tabs[data-scope-category="grammar"], #review-scope-tabs[data-scope-category="sentence"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #review-scope-tabs[data-scope-category="pron"] { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; }
+  #review-scope-tabs[data-scope-category="wizard"] { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3px; }
+  #review-scope-tabs[data-scope-category="bible"] { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3px; }
+  #review-scope-tabs[data-scope-category="grammar"], #review-scope-tabs[data-scope-category="sentence"] { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3px; }
   @media (min-width: 700px) {
     #panel-curriculum > .subtab-row { grid-template-columns: repeat(5, minmax(0, 1fr)); }
     #panel-grammar > .subtab-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     #panel-wizard > .subtab-row, #panel-bible > .subtab-row { grid-template-columns: repeat(6, minmax(0, 1fr)); }
     #panel-pron > .subtab-row { grid-template-columns: repeat(7, minmax(0, 1fr)); }
     #panel-review > .subtab-row:first-child { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+    #review-scope-tabs[data-scope-category="song"] { grid-template-columns: repeat(10, minmax(0, 1fr)); }
     #review-scope-tabs[data-scope-category="pron"] { grid-template-columns: repeat(5, minmax(0, 1fr)); }
     #review-scope-tabs[data-scope-category="wizard"] { grid-template-columns: repeat(7, minmax(0, 1fr)); }
     #review-scope-tabs[data-scope-category="bible"] { grid-template-columns: repeat(6, minmax(0, 1fr)); }
@@ -2056,8 +2073,10 @@
     .subtab-btn { font-size: clamp(.7rem, 2.9vw, .83rem); padding: 7px 3px; }
     #panel-review > .subtab-row:first-child { grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 2px; }
     #panel-review > .subtab-row:first-child .subtab-btn { padding-inline: 1px; font-size: clamp(.56rem, 2.9vw, .76rem); white-space: nowrap; }
+    #review-scope-tabs .subtab-btn { min-height: 28px; padding: 3px 2px; font-size: clamp(.58rem, 2.3vw, .72rem); }
+    #review-scope-tabs[data-scope-category="song"] { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; }
     #review-scope-tabs[data-scope-category="pron"] { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; }
-    #review-scope-tabs[data-scope-category="pron"] .subtab-btn { padding-inline: 1px; font-size: clamp(.60rem, 2.7vw, .78rem); white-space: nowrap; }
+    #review-scope-tabs[data-scope-category="pron"] .subtab-btn { padding-inline: 1px; font-size: clamp(.58rem, 2.3vw, .72rem); white-space: nowrap; }
   }
   @media (max-width: 999px) {
     body[data-app-lang="en"] .tabs { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 1px; overflow: visible; }
@@ -2072,23 +2091,35 @@
     gap: 1px;
   }
   body[data-app-lang="en"] #panel-review > .subtab-row:first-child .subtab-btn {
-    font-size: clamp(.40rem, 1.65vw, .58rem);
-    padding: 6px 0px;
-    letter-spacing: -0.04em;
+    font-size: clamp(.65rem, 2.7vw, .74rem);
+    padding: 6px 1px;
+    letter-spacing: -0.02em;
     line-height: 1.15;
     white-space: normal;
     word-break: break-word;
     overflow-wrap: anywhere;
+  }
+  body[data-app-lang="en"] #review-scope-tabs .subtab-btn {
+    min-height: 28px;
+    height: auto;
+    padding: 3px 1px;
+    font-size: clamp(.54rem, 2.1vw, .68rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    text-align: center;
   }
   body[data-app-lang="en"] #review-scope-tabs[data-scope-category="pron"] {
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 2px;
   }
   body[data-app-lang="en"] #review-scope-tabs[data-scope-category="pron"] .subtab-btn {
-    font-size: clamp(.52rem, 2.2vw, .70rem);
-    padding: 6px 1px;
+    font-size: clamp(.52rem, 2.1vw, .68rem);
+    padding: 3px 1px;
     letter-spacing: -0.02em;
-    line-height: 1.15;
+    line-height: 1.12;
     white-space: normal;
     word-break: break-word;
     overflow-wrap: anywhere;
@@ -2102,11 +2133,11 @@
   }
   body[data-app-lang="en"] #review-scope-tabs[data-scope-category="vocab"] .subtab-btn,
   body[data-app-lang="en"] #panel-vocab > .subtab-row .subtab-btn {
-    min-height: 42px;
+    min-height: 28px;
     height: auto;
-    padding: 8px 6px;
-    font-size: 0.74rem;
-    line-height: 1.2;
+    padding: 4px 3px;
+    font-size: 0.72rem;
+    line-height: 1.15;
     letter-spacing: -0.015em;
     white-space: normal;
     word-break: break-word;
@@ -2124,10 +2155,52 @@
     }
     body[data-app-lang="en"] #review-scope-tabs[data-scope-category="vocab"] .subtab-btn,
     body[data-app-lang="en"] #panel-vocab > .subtab-row .subtab-btn {
-      font-size: clamp(.60rem, 2.6vw, .72rem);
-      padding: 7px 3px;
-      min-height: 42px;
+      font-size: clamp(.56rem, 2.3vw, .68rem);
+      padding: 3px 2px;
+      min-height: 28px;
     }
+  }
+  /* Review Subscope Row (e.g. Watchtower week selector) */
+  .review-subscope-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin: 4px 0 6px;
+    padding: 0 4px;
+  }
+  .review-subscope-select {
+    flex: 1;
+    max-width: 420px;
+    height: 32px;
+    padding: 2px 8px;
+    font-size: clamp(.72rem, 2.7vw, .82rem);
+    font-family: inherit;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-s);
+    background: var(--surface);
+    color: var(--ink);
+    outline: none;
+    cursor: pointer;
+  }
+  .review-subscope-nav-btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-s);
+    background: var(--surface-2);
+    color: var(--ink);
+    font-size: 0.78rem;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .review-subscope-nav-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
   }
   /* The first subtab row starts directly under the primary navigation in every section. */
   .app main { padding-top: 0; }
@@ -2571,6 +2644,7 @@
         <button class="subtab-btn" data-review="grammar" aria-selected="false" data-i18n="문법">문법</button>
       </div>
       <div class="subtab-row" id="review-scope-tabs" aria-label="복습 범위"></div>
+      <div id="review-subscope-row" class="review-subscope-row" style="display:none;"></div>
       <div class="study-mode-tabs" id="study-mode-tabs" role="tablist">
         <button class="study-mode-btn" role="tab" data-mode="flash" aria-selected="false" data-i18n="플래시카드">플래시카드</button>
         <button class="study-mode-btn" role="tab" data-mode="look" aria-selected="false" data-i18n="보기">보기</button>

@@ -178,6 +178,16 @@
     "en": "Next question",
     "ja": "次の問題"
   },
+  "파수대 주차 선택": {
+    "zh": "選擇守望台週次",
+    "en": "Select Watchtower Week",
+    "ja": "ものみの塔の週を選択"
+  },
+  "주차": {
+    "zh": "週",
+    "en": "Week",
+    "ja": "週目"
+  },
   "초": {
     "zh": "秒",
     "en": "s",
@@ -3250,6 +3260,7 @@
   // first, which is unreliable to queue against, and some mobile browsers drop queued
   // utterances silently when backgrounded).
   var READALL_REGISTRY = {};
+  window.__READALL_REGISTRY = READALL_REGISTRY;
   var readAllCounter = 0;
   var readAllState = { id: null, texts: [], idx: -1, btn: null, token: 0 };
 
@@ -7048,6 +7059,11 @@
 
     // Build lyric units and readAll lines
     var songLines = [];
+    var readViTitle = "Bài " + sel.number + ". " + viTitle;
+    songLines.push(targetTitle ? [readViTitle, targetTitle] : readViTitle);
+    if (viScripture) {
+      songLines.push(targetScripture ? [viScripture, targetScripture] : viScripture);
+    }
     var lyricsHtml = "";
     sel.lines.forEach(function (l, idx) {
       var vi = (l.vi || "").trim();
@@ -7698,19 +7714,53 @@
         data.forEach(function (s) {
           var sNum = String(s.number);
           var mObj = (typeof SONG_MEANINGS !== "undefined" && SONG_MEANINGS[sNum]) || {};
+          var buf = [];
+
+          function flushSentence() {
+            if (!buf.length) return;
+            var viFull = buf.map(function (it) { return stripReviewListMarker(it.vi); }).join(" ").trim();
+            var targetFull = buf.map(function (it) { return stripReviewListMarker(it.target); }).join(" ").trim();
+            var hasAnyMeaning = buf.some(function (it) { return it.meaning; });
+            var meaningFull = "";
+            if (hasAnyMeaning) {
+              meaningFull = buf.map(function (it) {
+                return it.meaning ? stripReviewListMarker(it.meaning) : stripReviewListMarker(it.target);
+              }).join(" ").trim();
+            }
+            if (viFull && targetFull) {
+              out.push({
+                vi: viFull,
+                kr: targetFull,
+                meaning: meaningFull,
+                songNo: s.number
+              });
+            }
+            buf = [];
+          }
+
           s.lines.forEach(function (l, idx) {
             var vi = (l.vi || "").trim();
-            if (!vi || isSongSectionMarker(vi)) return;
+            if (!vi) return;
+            if (isSongSectionMarker(vi)) {
+              flushSentence();
+              return;
+            }
             var target = songSanitize((l[currentLang] || l.ko || "").trim());
-            if (!target || isSongSectionMarker(target)) return;
+            if (!target || isSongSectionMarker(target)) {
+              flushSentence();
+              return;
+            }
             var mn = songSanitize((mObj[String(idx)] && mObj[String(idx)][currentLang]) || "");
-            out.push({
-              vi: stripReviewListMarker(vi),
-              kr: stripReviewListMarker(target),
-              meaning: mn,
-              songNo: s.number
+            buf.push({
+              vi: vi,
+              target: target,
+              meaning: mn
             });
+            if (/[.!?…]["'”’)]?\s*$/.test(vi)) {
+              flushSentence();
+            }
           });
+          flushSentence();
         });
         return dedupeByVi(out);
       }
@@ -7792,7 +7842,15 @@
             }
           });
         });
-        else if (scope === "wt") WATCHTOWER_VOCAB.forEach(function (wk) { wk.words.forEach(function (w) { if (w.example && w.example_mean) sentence(w.example, Tstrict(w.example_mean)); }); });
+        else if (scope === "wt" || (scope && scope.indexOf("wt:") === 0)) {
+          var targetWeek = (scope && scope.indexOf("wt:") === 0) ? parseInt(scope.slice(3), 10) : 0;
+          WATCHTOWER_VOCAB.forEach(function (wk) {
+            if (targetWeek && wk.week !== targetWeek) return;
+            wk.words.forEach(function (w) {
+              if (w.example && w.example_mean) sentence(w.example, Tstrict(w.example_mean));
+            });
+          });
+        }
       } else if (key === "vocab") {
         if (scope === "rhyme") RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); });
         else if (scope === "orderrev") { RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { if (w.word_order_reversed) out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); }); if (typeof WORD_ORDER_REVERSED_EXTRA !== "undefined") WORD_ORDER_REVERSED_EXTRA.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }
@@ -7847,6 +7905,8 @@
     }
 
     var studyState = { tabKey: null, scope: "all", mode: "flash", pool: [], deck: [], idx: 0, score: { correct: 0, total: 0 }, current: null, orderTokens: [], orderBank: [], orderPlaced: [] };
+    window.__getPool = getPool;
+    window.__studyState = studyState;
 
     /* ---------- 자동 넘김 (auto-advance) ---------- */
     // A single toggle + interval selector, shared across all 5 study modes. The timer starts only
@@ -8109,19 +8169,87 @@
 
     var reviewBtns = document.querySelectorAll(".subtab-btn[data-review]");
     var reviewScopeEl = document.getElementById("review-scope-tabs");
+    var reviewSubscopeEl = document.getElementById("review-subscope-row");
+
+    function renderReviewSubscope(key, selectedScope) {
+      if (!reviewSubscopeEl) return;
+      var isWt = (key === "sentence" && (selectedScope === "wt" || (selectedScope && selectedScope.indexOf("wt:") === 0)));
+      if (!isWt) {
+        reviewSubscopeEl.style.display = "none";
+        reviewSubscopeEl.innerHTML = "";
+        return;
+      }
+      reviewSubscopeEl.style.display = "flex";
+      var activeWeek = (selectedScope && selectedScope.indexOf("wt:") === 0) ? parseInt(selectedScope.slice(3), 10) : 0;
+      var totalWeeks = (typeof WATCHTOWER_VOCAB !== "undefined" && WATCHTOWER_VOCAB.length) || 24;
+
+      var allLabel = currentLang === "en" ? "All Weeks (1–" + totalWeeks + ")" :
+                     currentLang === "zh" ? "全部週次 (1~" + totalWeeks + "週)" :
+                     currentLang === "ja" ? "全週 (1～" + totalWeeks + "週)" :
+                     "전체 주차 (1~" + totalWeeks + "주)";
+
+      var optionsHtml = '<option value="wt"' + (activeWeek === 0 ? ' selected' : '') + '>' + escapeHtml(allLabel) + '</option>';
+      (WATCHTOWER_VOCAB || []).forEach(function (wk) {
+        var wNum = wk.week;
+        var dateStr = T(wk.date_range);
+        var labelPrefix = currentLang === "en" ? "Week " + wNum :
+                          currentLang === "zh" ? "第" + wNum + "週" :
+                          currentLang === "ja" ? "第" + wNum + "週" :
+                          wNum + "주차";
+        var label = labelPrefix + ": " + dateStr;
+        optionsHtml += '<option value="wt:' + wNum + '"' + (activeWeek === wNum ? ' selected' : '') + '>' + escapeHtml(label) + '</option>';
+      });
+
+      var prevDisabled = activeWeek <= 1 ? (activeWeek === 0 ? ' disabled' : '') : '';
+      var nextDisabled = activeWeek >= totalWeeks ? ' disabled' : '';
+
+      reviewSubscopeEl.innerHTML =
+        '<button type="button" class="review-subscope-nav-btn" id="review-wt-prev"' + prevDisabled + ' aria-label="' + TU("이전") + '">◀</button>' +
+        '<select id="review-wt-week-select" class="review-subscope-select" aria-label="' + TU("파수대 주차 선택") + '">' + optionsHtml + '</select>' +
+        '<button type="button" class="review-subscope-nav-btn" id="review-wt-next"' + nextDisabled + ' aria-label="' + TU("다음") + '">▶</button>';
+
+      var sel = document.getElementById("review-wt-week-select");
+      if (sel) {
+        sel.addEventListener("change", function () {
+          selectCategory("sentence", sel.value);
+        });
+      }
+      var prevBtn = document.getElementById("review-wt-prev");
+      if (prevBtn) {
+        prevBtn.addEventListener("click", function () {
+          if (activeWeek <= 1) {
+            selectCategory("sentence", "wt");
+          } else {
+            selectCategory("sentence", "wt:" + (activeWeek - 1));
+          }
+        });
+      }
+      var nextBtn = document.getElementById("review-wt-next");
+      if (nextBtn) {
+        nextBtn.addEventListener("click", function () {
+          if (activeWeek === 0) {
+            selectCategory("sentence", "wt:1");
+          } else if (activeWeek < totalWeeks) {
+            selectCategory("sentence", "wt:" + (activeWeek + 1));
+          }
+        });
+      }
+    }
 
     function renderReviewScopes(key, selectedScope) {
       if (!reviewScopeEl) return;
       var scopes = (key === "song" ? getSongReviewScopes() : (REVIEW_SCOPES[key] || ["all"]));
       reviewScopeEl.dataset.scopeCategory = key;
       reviewScopeEl.innerHTML = scopes.map(function (scope) {
+        var isSelected = (scope === selectedScope || (scope === "wt" && selectedScope && selectedScope.indexOf("wt:") === 0));
         return '<button type="button" class="subtab-btn" data-review-scope="' + escapeAttr(scope) +
-          '" aria-selected="' + (scope === selectedScope ? "true" : "false") + '">' +
+          '" aria-selected="' + (isSelected ? "true" : "false") + '">' +
           escapeHtml(reviewScopeLabel(scope)) + '</button>';
       }).join("");
       reviewScopeEl.querySelectorAll("[data-review-scope]").forEach(function (btn) {
         btn.addEventListener("click", function () { selectCategory(key, btn.dataset.reviewScope); });
       });
+      renderReviewSubscope(key, selectedScope);
     }
 
     // poolOverride (optional) lets a caller supply an already-built pool instead of the full
@@ -8140,6 +8268,7 @@
       // used to immediately re-trigger a second, competing prompt read-aloud. poolOverride always
       // forces through, since a scoped-review launch needs a fresh pool even when key/scope match.
       if (!poolOverride && studyState.tabKey === key && studyState.scope === scope) return;
+      var prevKey = studyState.tabKey;
       studyState.tabKey = key;
       studyState.scope = scope;
       studyState.pool = dedupeByVi((poolOverride || getPool(key, scope)).map(function (item) {
@@ -8149,10 +8278,10 @@
       studyState.current = null;
       reviewBtns.forEach(function (b) { b.setAttribute("aria-selected", b.dataset.review === key ? "true" : "false"); });
       renderReviewScopes(key, scope);
-      // 문법·대화·문장 복습은 기본 학습 모드를 "어순 배열"로 시작한다.
-      var defaultMode = (key === "grammar" || key === "wizard" || key === "sentence") ? "order" : "flash";
-      modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (b) { b.setAttribute("aria-selected", b.dataset.mode === defaultMode ? "true" : "false"); });
-      studyState.mode = defaultMode;
+      // 문법·대화·문장 복습은 기본 학습 모드를 "어순 배열"로 시작하되, 같은 카테고리 내 범위 전환 시에는 현재 모드를 유지한다.
+      var modeToKeep = (prevKey === key && studyState.mode) ? studyState.mode : ((key === "grammar" || key === "wizard" || key === "sentence") ? "order" : "flash");
+      modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (b) { b.setAttribute("aria-selected", b.dataset.mode === modeToKeep ? "true" : "false"); });
+      studyState.mode = modeToKeep;
       startMode();
     }
 
@@ -8513,7 +8642,8 @@
     }
     function renderOrder() {
       var item = studyState.current;
-      var html = '<div class="study-order-prompt">' + escapeHtml(item.kr) + '</div>';
+      var meaningSub = item.meaning ? '<div class="study-meaning-sub"><span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(item.meaning) + '</div>' : '';
+      var html = '<div class="study-order-prompt">' + escapeHtml(item.kr) + meaningSub + '</div>';
       html += '<div class="study-order-answer" id="order-answer"></div>';
       html += '<div class="study-order-bank" id="order-bank"></div>';
       html += '<div id="order-feedback"></div>';
@@ -8585,7 +8715,7 @@
         else if (!isMuted("vi")) speak(item.vi);
       } else {
         fb.innerHTML = '<div class="study-order-feedback no">' + TU("순서가 달라요. 다시 시도해 보세요.") + '</div>' +
-          '<div class="study-order-correct-answer">' + TU("정답: ") + escapeHtml(item.vi) + '</div>';
+          '<div class="study-order-correct-answer">' + TU("정답: ") + escapeHtml(item.vi) + '</div>' + meaningNote;
         // Wrong: leave the chips in place so the person can fix it (via "다시 담기" or by picking
         // chips back off) -- the cold auto-advance timer armed at render time is left running, so
         // an unresolved attempt still reveals the answer and moves on near the end of the interval
