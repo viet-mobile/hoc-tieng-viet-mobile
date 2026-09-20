@@ -11,7 +11,8 @@
           "zh": "安全",
           "en": "safety",
           "ja": "安全",
-          "de": "Sicherheit"
+          "de": "Sicherheit",
+          "fr": "sécurité"
         }
       },
       {
@@ -22,7 +23,8 @@
           "zh": "治安·安寧",
           "en": "public security, peace",
           "ja": "治安・安寧",
-          "de": "öffentliche Sicherheit, Frieden"
+          "de": "öffentliche Sicherheit, Frieden",
+          "fr": "sécurité publique, paix"
         }
       },
       {
@@ -33,7 +35,8 @@
           "zh": "安心",
           "en": "relief, peace of mind",
           "ja": "安心",
-          "de": "Beruhigung, Seelenfrieden"
+          "de": "Beruhigung, Seelenfrieden",
+          "fr": "tranquillité d'esprit, sérénité"
         }
       },
       {
@@ -44,7 +47,8 @@
           "zh": "安慰",
           "en": "comfort",
           "ja": "慰め",
-          "de": "Trost, trösten"
+          "de": "Trost, trösten",
+          "fr": "consolation, réconfort"
         }
       },
       {
@@ -55,7 +59,8 @@
           "zh": "安頓・定居",
           "en": "settling down · settlement",
           "ja": "安住・定住",
-          "de": "Niederlassung, Sesshaftigkeit"
+          "de": "Niederlassung, Sesshaftigkeit",
+          "fr": "établissement, sédentarisation"
         }
       },
       {
@@ -66,7 +71,8 @@
           "zh": "空閒",
           "en": "leisure",
           "ja": "暇",
-          "de": "Muße, Geruhsamkeit"
+          "de": "Muße, Geruhsamkeit",
+          "fr": "loisir, quiétude"
         }
       },
       {
@@ -77,7 +83,8 @@
           "zh": "福利",
           "en": "welfare",
           "ja": "福祉",
-          "de": "soziale Wohlfahrt"
+          "de": "soziale Wohlfahrt",
+          "fr": "bien-être social, protection sociale"
         }
       }
     ]
@@ -94,7 +101,8 @@
           "zh": "音樂",
           "en": "music",
           "ja": "音楽",
-          "de": "Musik"
+          "de": "Musik",
+          "fr": "musique"
         }
       },
       {
@@ -105,7 +113,8 @@
           "zh": "音響·聲音",
           "en": "sound",
           "ja": "音響・音",
-          "de": "Klang, Ton, Laut"
+          "de": "Klang, Ton, Laut",
+          "fr": "son, acoustique"
         }
       },
       {
@@ -116,7 +125,8 @@
           "zh": "音量",
           "en": "volume",
           "ja": "音量",
-          "de": "Lautstärke"
+          "de": "Lautstärke",
+          "fr": "volume sonore"
         }
       },
       {
@@ -127,7 +137,8 @@
           "zh": "陰謀",
           "en": "conspiracy",
           "ja": "陰謀",
-          "de": "Verschwörung, Komplott"
+          "de": "Verschwörung, Komplott",
+          "fr": "complot, conspiration"
         }
       },
       {
@@ -138,7 +149,8 @@
           "zh": "秘密地·安靜地",
           "en": "secretly, quietly",
           "ja": "ひそかに・静かに",
-          "de": "heimlich, im Verborgenen"
+          "de": "heimlich, im Verborgenen",
+          "fr": "en secret, silencieusement"
         }
       },
       {
@@ -149,7 +161,8 @@
           "zh": "音調·旋律",
           "en": "tone/melody",
           "ja": "音調・メロディー",
-          "de": "Tonart, Melodie"
+          "de": "Tonart, Melodie",
+          "fr": "tonalité, mélodie"
         }
       },
       {
@@ -160,7 +173,8 @@
           "zh": "陰性(檢查結果)",
           "en": "negative (test result)",
           "ja": "陰性(検査結果)",
-          "de": "negativ (Testergebnis)"
+          "de": "negativ (Testergebnis)",
+          "fr": "négatif (résultat de test)"
         }
       }
     ]
@@ -177,7 +191,8 @@
           "zh": "保護",
           "en": "protection",
           "ja": "保護",
-          "de": "Schutz, beschützen"
+          "de": "Schutz, beschützen",
+          "fr": "protection, protéger"
         }
       },
       {
@@ -188,7 +203,8 @@
           "zh": "保險",
           "en": "insurance",
           "ja": "保険",
-          "de": "Versicherung"
+          "de": "Versicherung",
+          "fr": "assurance"
         }
       },
       {
@@ -199,7 +215,8 @@
           "zh": "保障·保證",
           "en": "guarantee; assurance",
           "ja": "保障・保証",
-          "de": "Garantie, Gewährleistung, Sicherstellung"
+          "de": "Garantie, Gewährleistung, Sicherstellung",
+          "fr": "garantie, assurance"
         }
       },
       {
@@ -210,7 +227,8 @@
           "zh": "保管",
           "en": "storage; keeping",
           "ja": "保管",
-          "de": "Aufbewahrung, Lagerung"
+          "de": "Aufbewahrung, Lagerung",
+          "fr": "conservation, stockage"
         }
       },
       {
@@ -221,7 +239,8 @@
           "zh": "保存",
           "en": "preservation",
           "ja": "保存",
-          "de": "Erhaltung, Bewahrung"
+          "de": "Erhaltung, Bewahrung",
+          "fr": "préservation, conservation"
         }
       },
       {
@@ -232,7 +251,8 @@
           "zh": "維修·維護",
           "en": "repair; maintenance",
           "ja": "補修・維持",
-          "de": "Wartung, Instandhaltung"
+          "de": "Wartung, Instandhaltung",
+          "fr": "maintenance, entretien"
         }
       },
       {
@@ -243,7 +263,8 @@
           "zh": "保固·售後服務",
           "en": "warranty; after-sales service",
           "ja": "保証・アフターサービス",
-          "de": "Garantie, Gewährleistung"
+          "de": "Garantie, Gewährleistung",
+          "fr": "garantie, service après-vente"
         }
       }
     ]
@@ -260,7 +281,8 @@
           "zh": "普通·平凡",
           "en": "ordinary; plain",
           "ja": "普通・平凡",
-          "de": "normal, gewöhnlich"
+          "de": "normal, gewöhnlich",
+          "fr": "normal, ordinaire"
         }
       },
       {
@@ -271,7 +293,8 @@
           "zh": "鎮定",
           "en": "calmness",
           "ja": "落ち着き",
-          "de": "Ruhe, Gelassenheit"
+          "de": "Ruhe, Gelassenheit",
+          "fr": "calme, sérénité"
         }
       },
       {
@@ -282,7 +305,8 @@
           "zh": "評論·留言",
           "en": "commentary, comment",
           "ja": "評論・コメント",
-          "de": "Kommentar, Rezension"
+          "de": "Kommentar, Rezension",
+          "fr": "commentaire, critique"
         }
       },
       {
@@ -293,7 +317,8 @@
           "zh": "平等",
           "en": "equality",
           "ja": "平等",
-          "de": "Gleichberechtigung, Gleichheit"
+          "de": "Gleichberechtigung, Gleichheit",
+          "fr": "égalité"
         }
       },
       {
@@ -304,7 +329,8 @@
           "zh": "平安",
           "en": "peace",
           "ja": "平安",
-          "de": "Frieden, wohlbehalten"
+          "de": "Frieden, wohlbehalten",
+          "fr": "paix, tranquillité"
         }
       },
       {
@@ -315,7 +341,8 @@
           "zh": "平民的·大眾的",
           "en": "folksy, popular",
           "ja": "庶民的·大衆的",
-          "de": "volkstümlich, bürgerlich"
+          "de": "volkstümlich, bürgerlich",
+          "fr": "populaire, démocratique"
         }
       },
       {
@@ -326,7 +353,8 @@
           "zh": "和平",
           "en": "peace",
           "ja": "平和",
-          "de": "Frieden"
+          "de": "Frieden",
+          "fr": "paix"
         }
       }
     ]
@@ -343,7 +371,8 @@
           "zh": "改革",
           "en": "reform",
           "ja": "改革",
-          "de": "Reform"
+          "de": "Reform",
+          "fr": "réforme"
         }
       },
       {
@@ -354,7 +383,8 @@
           "zh": "改善",
           "en": "improvement",
           "ja": "改善",
-          "de": "Verbesserung, Optimierung"
+          "de": "Verbesserung, Optimierung",
+          "fr": "amélioration, optimiser"
         }
       },
       {
@@ -365,7 +395,8 @@
           "zh": "改造",
           "en": "remodeling",
           "ja": "改造",
-          "de": "Umbau, Neugestaltung"
+          "de": "Umbau, Neugestaltung",
+          "fr": "rénovation, transformation"
         }
       },
       {
@@ -376,7 +407,8 @@
           "zh": "改善·改良",
           "en": "improvement",
           "ja": "改善・改良",
-          "de": "Verbesserung, Weiterentwicklung"
+          "de": "Verbesserung, Weiterentwicklung",
+          "fr": "perfectionnement, modernisation"
         }
       },
       {
@@ -387,7 +419,8 @@
           "zh": "訂正·糾正",
           "en": "correction/rectification",
           "ja": "訂正・是正",
-          "de": "Richtigstellung, Korrektur"
+          "de": "Richtigstellung, Korrektur",
+          "fr": "rectification, correction"
         }
       }
     ]
@@ -404,7 +437,8 @@
           "zh": "感覺",
           "en": "sense/feeling",
           "ja": "感覚・感じ",
-          "de": "Gefühl, Empfindung"
+          "de": "Gefühl, Empfindung",
+          "fr": "sensation, sentiment"
         }
       },
       {
@@ -415,7 +449,8 @@
           "zh": "感情",
           "en": "emotion",
           "ja": "感情",
-          "de": "Emotion, Gefühl"
+          "de": "Emotion, Gefühl",
+          "fr": "émotion, sentiment"
         }
       },
       {
@@ -426,7 +461,8 @@
           "zh": "感謝",
           "en": "gratitude",
           "ja": "感謝",
-          "de": "Danke, Dankbarkeit"
+          "de": "Danke, Dankbarkeit",
+          "fr": "merci, gratitude"
         }
       },
       {
@@ -437,7 +473,8 @@
           "zh": "感動",
           "en": "being moved",
           "ja": "感動",
-          "de": "berührt sein, Ergriffenheit"
+          "de": "berührt sein, Ergriffenheit",
+          "fr": "ému, touché, émotion"
         }
       },
       {
@@ -448,7 +485,8 @@
           "zh": "同感‧理解",
           "en": "empathy, understanding",
           "ja": "共感・理解",
-          "de": "Mitgefühl, Verständnis"
+          "de": "Mitgefühl, Verständnis",
+          "fr": "empathie, compassion"
         }
       },
       {
@@ -459,7 +497,8 @@
           "zh": "靈感",
           "en": "inspiration",
           "ja": "インスピレーション",
-          "de": "Inspiration"
+          "de": "Inspiration",
+          "fr": "inspiration"
         }
       },
       {
@@ -470,7 +509,8 @@
           "zh": "感情",
           "en": "emotion",
           "ja": "感情",
-          "de": "Gefühl, Zuneigung"
+          "de": "Gefühl, Zuneigung",
+          "fr": "sentiment, affection"
         }
       }
     ]
@@ -487,7 +527,8 @@
           "zh": "等級·階級",
           "en": "grade · rank",
           "ja": "等級・階級",
-          "de": "Rang, Dienstgrad"
+          "de": "Rang, Dienstgrad",
+          "fr": "rang, grade, échelon"
         }
       },
       {
@@ -498,7 +539,8 @@
           "zh": "緊急",
           "en": "emergency",
           "ja": "応急・緊急",
-          "de": "Erste Hilfe, Notfall"
+          "de": "Erste Hilfe, Notfall",
+          "fr": "premiers secours, urgences"
         }
       },
       {
@@ -509,7 +551,8 @@
           "zh": "速成·急速",
           "en": "rapid, fast",
           "ja": "速成·急速",
-          "de": "beschleunigt, im Eiltempo"
+          "de": "beschleunigt, im Eiltempo",
+          "fr": "express, accéléré, rapide"
         }
       },
       {
@@ -520,7 +563,8 @@
           "zh": "支付·發放",
           "en": "payment/issuance",
           "ja": "支給・発行",
-          "de": "Ausgabe, Zuteilung"
+          "de": "Ausgabe, Zuteilung",
+          "fr": "distribution, délivrance, allocation"
         }
       },
       {
@@ -531,7 +575,8 @@
           "zh": "急迫性",
           "en": "urgency",
           "ja": "緊急性",
-          "de": "dringend, vordringlich"
+          "de": "dringend, vordringlich",
+          "fr": "urgent, pressant"
         }
       },
       {
@@ -542,7 +587,8 @@
           "zh": "緊急",
           "en": "urgent",
           "ja": "緊急",
-          "de": "dringend, Notfall"
+          "de": "dringend, Notfall",
+          "fr": "urgent, urgence"
         }
       },
       {
@@ -553,7 +599,8 @@
           "zh": "等級",
           "en": "grade",
           "ja": "等級",
-          "de": "Klasse, Rang"
+          "de": "Klasse, Rang",
+          "fr": "classe, standing, rang"
         }
       },
       {
@@ -564,7 +611,8 @@
           "zh": "供給",
           "en": "supply",
           "ja": "供給",
-          "de": "liefern, Versorgung"
+          "de": "liefern, Versorgung",
+          "fr": "fournir, approvisionner"
         }
       }
     ]
@@ -581,7 +629,8 @@
           "zh": "真心·誠實",
           "en": "sincerity/honesty",
           "ja": "真心・誠実",
-          "de": "aufrichtig, herzlich"
+          "de": "aufrichtig, herzlich",
+          "fr": "sincère, chaleureux"
         }
       },
       {
@@ -592,7 +641,8 @@
           "zh": "真誠",
           "en": "sincerity",
           "ja": "誠実さ",
-          "de": "wahrhaftig, aufrichtig"
+          "de": "wahrhaftig, aufrichtig",
+          "fr": "véridique, authentique"
         }
       },
       {
@@ -603,7 +653,8 @@
           "zh": "真理",
           "en": "truth",
           "ja": "真理",
-          "de": "Wahrheit"
+          "de": "Wahrheit",
+          "fr": "vérité"
         }
       },
       {
@@ -614,7 +665,8 @@
           "zh": "肖像·樣子",
           "en": "portrait, appearance",
           "ja": "肖像・姿",
-          "de": "Porträt, Bildnis"
+          "de": "Porträt, Bildnis",
+          "fr": "portrait, effigie"
         }
       },
       {
@@ -625,7 +677,8 @@
           "zh": "真相",
           "en": "the truth of the matter",
           "ja": "真相",
-          "de": "wahre Sachlage, Wahrheit"
+          "de": "wahre Sachlage, Wahrheit",
+          "fr": "vérité des faits, réalité"
         }
       },
       {
@@ -636,7 +689,8 @@
           "zh": "真實·真正的",
           "en": "trueness/genuine",
           "ja": "真実さ・本当の",
-          "de": "echt, wahrhaftig"
+          "de": "echt, wahrhaftig",
+          "fr": "authentique, véritable"
         }
       }
     ]
@@ -653,7 +707,8 @@
           "zh": "品質",
           "en": "quality",
           "ja": "品質",
-          "de": "Qualität"
+          "de": "Qualität",
+          "fr": "qualité"
         }
       },
       {
@@ -664,7 +719,8 @@
           "zh": "材質·素材",
           "en": "texture/material",
           "ja": "材質・素材",
-          "de": "Material, Werkstoff"
+          "de": "Material, Werkstoff",
+          "fr": "matière, matériau"
         }
       },
       {
@@ -675,7 +731,8 @@
           "zh": "質詢·追究",
           "en": "inquiry/interrogation",
           "ja": "質疑・追及",
-          "de": "Befragung, Verhör"
+          "de": "Befragung, Verhör",
+          "fr": "interpellation, interrogatoire"
         }
       },
       {
@@ -686,7 +743,8 @@
           "zh": "樸素",
           "en": "simplicity",
           "ja": "素朴さ",
-          "de": "schlicht, einfach, natürlich"
+          "de": "schlicht, einfach, natürlich",
+          "fr": "simple, rustique, naturel"
         }
       },
       {
@@ -697,7 +755,8 @@
           "zh": "毒素·有毒物質",
           "en": "toxin · poisonous substance",
           "ja": "毒素・有毒物質",
-          "de": "Giftstoff, Gift"
+          "de": "Giftstoff, Gift",
+          "fr": "substance toxique, poison"
         }
       },
       {
@@ -708,7 +767,8 @@
           "zh": "物質",
           "en": "matter, material",
           "ja": "物質",
-          "de": "Materie, Stoff"
+          "de": "Materie, Stoff",
+          "fr": "matière, matériel"
         }
       }
     ]
@@ -725,7 +785,8 @@
           "zh": "費用",
           "en": "cost; expense",
           "ja": "費用",
-          "de": "Kosten, Ausgaben"
+          "de": "Kosten, Ausgaben",
+          "fr": "coût, dépenses, frais"
         }
       },
       {
@@ -736,7 +797,8 @@
           "zh": "細節",
           "en": "details",
           "ja": "詳細",
-          "de": "Detail, Einzelheit"
+          "de": "Detail, Einzelheit",
+          "fr": "détail, précision"
         }
       },
       {
@@ -747,7 +809,8 @@
           "zh": "分店·分公司",
           "en": "branch office",
           "ja": "支店・支社",
-          "de": "Filiale, Zweigstelle"
+          "de": "Filiale, Zweigstelle",
+          "fr": "succursale, filiale, agence"
         }
       },
       {
@@ -758,7 +821,8 @@
           "zh": "支出",
           "en": "expenditure",
           "ja": "支出",
-          "de": "Ausgaben, Konsumausgaben"
+          "de": "Ausgaben, Konsumausgaben",
+          "fr": "dépenses, consommation"
         }
       },
       {
@@ -769,7 +833,8 @@
           "zh": "支援·增援",
           "en": "support/reinforcement",
           "ja": "支援・増員",
-          "de": "Unterstützung, Verstärkung"
+          "de": "Unterstützung, Verstärkung",
+          "fr": "renfort, soutien"
         }
       }
     ]
@@ -786,7 +851,8 @@
           "zh": "戰爭",
           "en": "war",
           "ja": "戦争",
-          "de": "Krieg"
+          "de": "Krieg",
+          "fr": "guerre"
         }
       },
       {
@@ -797,7 +863,8 @@
           "zh": "勝利",
           "en": "victory",
           "ja": "勝利",
-          "de": "Sieg"
+          "de": "Sieg",
+          "fr": "victoire"
         }
       },
       {
@@ -808,7 +875,8 @@
           "zh": "策略",
           "en": "strategy",
           "ja": "戦略",
-          "de": "Strategie"
+          "de": "Strategie",
+          "fr": "stratégie"
         }
       },
       {
@@ -819,7 +887,8 @@
           "zh": "戰鬥",
           "en": "battle",
           "ja": "戦闘",
-          "de": "Kampf, Gefecht"
+          "de": "Kampf, Gefecht",
+          "fr": "combat, lutter"
         }
       },
       {
@@ -830,7 +899,8 @@
           "zh": "作戰·活動",
           "en": "operation/campaign",
           "ja": "作戦・キャンペーン",
-          "de": "Kampagne, Operation"
+          "de": "Kampagne, Operation",
+          "fr": "campagne, opération"
         }
       },
       {
@@ -841,7 +911,8 @@
           "zh": "戰士·軍人",
           "en": "warrior/soldier",
           "ja": "戦士・軍人",
-          "de": "Kämpfer, Soldat"
+          "de": "Kämpfer, Soldat",
+          "fr": "combattant, soldat"
         }
       }
     ]
@@ -858,7 +929,8 @@
           "zh": "政府",
           "en": "government",
           "ja": "政府",
-          "de": "Regierung"
+          "de": "Regierung",
+          "fr": "gouvernement"
         }
       },
       {
@@ -869,7 +941,8 @@
           "zh": "政治",
           "en": "politics",
           "ja": "政治",
-          "de": "Politik"
+          "de": "Politik",
+          "fr": "politique"
         }
       },
       {
@@ -880,7 +953,8 @@
           "zh": "政策",
           "en": "policy",
           "ja": "政策",
-          "de": "Politik, Richtlinie"
+          "de": "Politik, Richtlinie",
+          "fr": "politique, directive"
         }
       },
       {
@@ -891,7 +965,8 @@
           "zh": "正式·公式",
           "en": "formal/official",
           "ja": "正式・公式",
-          "de": "offiziell, formell"
+          "de": "offiziell, formell",
+          "fr": "officiel, formel"
         }
       },
       {
@@ -902,7 +977,8 @@
           "zh": "準確",
           "en": "accuracy",
           "ja": "正確",
-          "de": "präzise, genau"
+          "de": "präzise, genau",
+          "fr": "précis, exact"
         }
       },
       {
@@ -913,7 +989,8 @@
           "zh": "正當性",
           "en": "justness",
           "ja": "正当さ",
-          "de": "gerechtfertigt, legitim"
+          "de": "gerechtfertigt, legitim",
+          "fr": "légitime, justifié"
         }
       }
     ]
@@ -930,7 +1007,8 @@
           "zh": "工作·業務",
           "en": "work/task",
           "ja": "仕事・業務",
-          "de": "Arbeit, Aufgabe"
+          "de": "Arbeit, Aufgabe",
+          "fr": "travail, tâche, emploi"
         }
       },
       {
@@ -941,7 +1019,8 @@
           "zh": "公司",
           "en": "company",
           "ja": "会社",
-          "de": "Firma, Unternehmen"
+          "de": "Firma, Unternehmen",
+          "fr": "entreprise, société"
         }
       },
       {
@@ -952,7 +1031,8 @@
           "zh": "公民‧市民",
           "en": "citizen",
           "ja": "公民・市民",
-          "de": "Bürger, Staatsbürger"
+          "de": "Bürger, Staatsbürger",
+          "fr": "citoyen"
         }
       },
       {
@@ -963,7 +1043,8 @@
           "zh": "公共",
           "en": "public",
           "ja": "公共",
-          "de": "öffentlich"
+          "de": "öffentlich",
+          "fr": "public, commun"
         }
       },
       {
@@ -974,7 +1055,8 @@
           "zh": "工業",
           "en": "industry",
           "ja": "工業",
-          "de": "Industrie"
+          "de": "Industrie",
+          "fr": "industrie"
         }
       },
       {
@@ -985,7 +1067,8 @@
           "zh": "公平‧公正",
           "en": "fairness, justice",
           "ja": "公平・公正",
-          "de": "Gerechtigkeit, Fairness"
+          "de": "Gerechtigkeit, Fairness",
+          "fr": "justice, équité"
         }
       },
       {
@@ -996,7 +1079,8 @@
           "zh": "公認‧認可",
           "en": "authorization, recognition",
           "ja": "公認・認定",
-          "de": "Anerkennung, Zulassung"
+          "de": "Anerkennung, Zulassung",
+          "fr": "reconnaissance, homologation"
         }
       },
       {
@@ -1007,7 +1091,8 @@
           "zh": "公開",
           "en": "public, open",
           "ja": "公開",
-          "de": "öffentlich, offenlegen"
+          "de": "öffentlich, offenlegen",
+          "fr": "public, divulguer, ouvert"
         }
       },
       {
@@ -1018,7 +1103,8 @@
           "zh": "功勞",
           "en": "merit, contribution",
           "ja": "功労",
-          "de": "Verdienst, Leistung"
+          "de": "Verdienst, Leistung",
+          "fr": "mérite, contribution"
         }
       },
       {
@@ -1029,7 +1115,8 @@
           "zh": "勞工",
           "en": "worker",
           "ja": "労働者",
-          "de": "Arbeiter"
+          "de": "Arbeiter",
+          "fr": "ouvrier, travailleur"
         }
       },
       {
@@ -1040,7 +1127,8 @@
           "zh": "公務員",
           "en": "civil servant",
           "ja": "公務員",
-          "de": "Beamter, Staatsdiener"
+          "de": "Beamter, Staatsdiener",
+          "fr": "fonctionnaire, agent public"
         }
       },
       {
@@ -1051,7 +1139,8 @@
           "zh": "公園",
           "en": "park",
           "ja": "公園",
-          "de": "Park, Parkanlage"
+          "de": "Park, Parkanlage",
+          "fr": "parc, jardin public"
         }
       }
     ]
@@ -1068,7 +1157,8 @@
           "zh": "機會",
           "en": "opportunity",
           "ja": "機会",
-          "de": "Gelegenheit, Chance"
+          "de": "Gelegenheit, Chance",
+          "fr": "opportunité, occasion"
         }
       },
       {
@@ -1079,7 +1169,8 @@
           "zh": "基本",
           "en": "basic",
           "ja": "基本",
-          "de": "Grundlage, elementar"
+          "de": "Grundlage, elementar",
+          "fr": "de base, fondamental, élémentaire"
         }
       },
       {
@@ -1090,7 +1181,8 @@
           "zh": "機構、器官",
           "en": "institution, organ",
           "ja": "機関",
-          "de": "Behörde, Institution, Organ"
+          "de": "Behörde, Institution, Organ",
+          "fr": "organisme, institution, organe"
         }
       },
       {
@@ -1101,7 +1193,8 @@
           "zh": "基礎‧根基",
           "en": "foundation, base",
           "ja": "基礎・土台",
-          "de": "Basis, Grundlage, Einrichtung"
+          "de": "Basis, Grundlage, Einrichtung",
+          "fr": "base, fondement, établissement"
         }
       },
       {
@@ -1112,7 +1205,8 @@
           "zh": "結構",
           "en": "structure",
           "ja": "構造",
-          "de": "Struktur, Gefüge"
+          "de": "Struktur, Gefüge",
+          "fr": "structure, mécanisme"
         }
       },
       {
@@ -1123,7 +1217,8 @@
           "zh": "機制‧機理",
           "en": "mechanism",
           "ja": "機構・メカニズム",
-          "de": "Mechanismus"
+          "de": "Mechanismus",
+          "fr": "mécanisme"
         }
       },
       {
@@ -1134,7 +1229,8 @@
           "zh": "身體・身軀",
           "en": "body · body",
           "ja": "身体・体",
-          "de": "Körper, Organismus"
+          "de": "Körper, Organismus",
+          "fr": "corps, organisme"
         }
       }
     ]
@@ -1151,7 +1247,8 @@
           "zh": "名詞",
           "en": "noun",
           "ja": "名詞",
-          "de": "Nomen, Substantiv"
+          "de": "Nomen, Substantiv",
+          "fr": "nom, substantif"
         }
       },
       {
@@ -1162,7 +1259,8 @@
           "zh": "名譽",
           "en": "honor",
           "ja": "名誉",
-          "de": "Ehre"
+          "de": "Ehre",
+          "fr": "honneur"
         }
       },
       {
@@ -1173,7 +1271,8 @@
           "zh": "名單",
           "en": "list (of names)",
           "ja": "名簿",
-          "de": "Liste, Namensliste"
+          "de": "Liste, Namensliste",
+          "fr": "liste, répertoire"
         }
       },
       {
@@ -1184,7 +1283,8 @@
           "zh": "名義・名目",
           "en": "nominal, name",
           "ja": "名義・名目",
-          "de": "im Namen von, nominell"
+          "de": "im Namen von, nominell",
+          "fr": "au nom de, à titre nominal"
         }
       },
       {
@@ -1195,7 +1295,8 @@
           "zh": "名聲",
           "en": "fame, reputation",
           "ja": "名声",
-          "de": "Ruf, Ruhm, Ansehen"
+          "de": "Ruf, Ruhm, Ansehen",
+          "fr": "réputation, renommée"
         }
       }
     ]
@@ -1212,7 +1313,8 @@
           "zh": "民主",
           "en": "democracy",
           "ja": "民主",
-          "de": "Demokratie"
+          "de": "Demokratie",
+          "fr": "démocratie"
         }
       },
       {
@@ -1223,7 +1325,8 @@
           "zh": "民族",
           "en": "ethnic group, nation",
           "ja": "民族",
-          "de": "Volk, Ethnie, Nation"
+          "de": "Volk, Ethnie, Nation",
+          "fr": "ethnie, peuple, nation"
         }
       },
       {
@@ -1234,7 +1337,8 @@
           "zh": "人口",
           "en": "population",
           "ja": "人口",
-          "de": "Bevölkerung, Einwohnerzahl"
+          "de": "Bevölkerung, Einwohnerzahl",
+          "fr": "population"
         }
       },
       {
@@ -1245,7 +1349,8 @@
           "zh": "民事",
           "en": "civil (law)",
           "ja": "民事",
-          "de": "Zivilrecht, zivil"
+          "de": "Zivilrecht, zivil",
+          "fr": "civil, droit civil"
         }
       },
       {
@@ -1256,7 +1361,8 @@
           "zh": "民間",
           "en": "civilian",
           "ja": "民間",
-          "de": "volkstümlich, Volks-"
+          "de": "volkstümlich, Volks-",
+          "fr": "populaire, folklorique"
         }
       },
       {
@@ -1267,7 +1373,8 @@
           "zh": "民智・國民知識水準",
           "en": "public awareness, national education level",
           "ja": "民度・国民の知識水準",
-          "de": "Bildungsniveau der Bevölkerung"
+          "de": "Bildungsniveau der Bevölkerung",
+          "fr": "niveau d'instruction publique, conscience civique"
         }
       },
       {
@@ -1278,7 +1385,8 @@
           "zh": "人民",
           "en": "people",
           "ja": "人民",
-          "de": "Volk, Bevölkerung"
+          "de": "Volk, Bevölkerung",
+          "fr": "peuple, population"
         }
       }
     ]
@@ -1295,7 +1403,8 @@
           "zh": "服務",
           "en": "service",
           "ja": "サービス",
-          "de": "Dienstleistung, Service"
+          "de": "Dienstleistung, Service",
+          "fr": "service, prestation"
         }
       },
       {
@@ -1306,7 +1415,8 @@
           "zh": "傳染病·瘟疫",
           "en": "epidemic/plague",
           "ja": "伝染病・疫病",
-          "de": "Epidemie, Seuche"
+          "de": "Epidemie, Seuche",
+          "fr": "épidémie, maladie contagieuse"
         }
       },
       {
@@ -1317,7 +1427,8 @@
           "zh": "翻譯家",
           "en": "translator",
           "ja": "翻訳者",
-          "de": "Übersetzer"
+          "de": "Übersetzer",
+          "fr": "traducteur, traductrice"
         }
       },
       {
@@ -1328,7 +1439,8 @@
           "zh": "翻譯",
           "en": "translation",
           "ja": "翻訳",
-          "de": "Übersetzung"
+          "de": "Übersetzung",
+          "fr": "traduction"
         }
       },
       {
@@ -1339,7 +1451,8 @@
           "zh": "流行病學（疾病）",
           "en": "epidemiology (disease)",
           "ja": "疫学（病気）",
-          "de": "Epidemiologie"
+          "de": "Epidemiologie",
+          "fr": "épidémiologie"
         }
       }
     ]
@@ -1356,7 +1469,8 @@
           "zh": "旅行",
           "en": "travel",
           "ja": "旅行",
-          "de": "Reisen, Tourismus"
+          "de": "Reisen, Tourismus",
+          "fr": "tourisme, voyage"
         }
       },
       {
@@ -1367,7 +1481,8 @@
           "zh": "留學",
           "en": "studying abroad",
           "ja": "留学",
-          "de": "Auslandsstudium"
+          "de": "Auslandsstudium",
+          "fr": "études à l'étranger"
         }
       },
       {
@@ -1378,7 +1493,8 @@
           "zh": "觀光客",
           "en": "tourist",
           "ja": "観光客",
-          "de": "Tourist, Reisender"
+          "de": "Tourist, Reisender",
+          "fr": "touriste, voyageur"
         }
       },
       {
@@ -1389,7 +1505,8 @@
           "zh": "旅行・飛行",
           "en": "travel · flight",
           "ja": "旅行・飛行",
-          "de": "Reise, Reiseverlauf"
+          "de": "Reise, Reiseverlauf",
+          "fr": "voyage, périple"
         }
       },
       {
@@ -1400,7 +1517,8 @@
           "zh": "流入·引進",
           "en": "influx/introduction",
           "ja": "流入・導入",
-          "de": "Einführung, Einzug, Übernahme"
+          "de": "Einführung, Einzug, Übernahme",
+          "fr": "introduction, importation, adoption"
         }
       },
       {
@@ -1411,7 +1529,8 @@
           "zh": "流氓·無賴",
           "en": "hoodlum; thug",
           "ja": "ならず者・ごろつき",
-          "de": "Schläger, Raufbold"
+          "de": "Schläger, Raufbold",
+          "fr": "voyou, bandit"
         }
       }
     ]
@@ -1428,7 +1547,8 @@
           "zh": "項目·事業",
           "en": "project, business",
           "ja": "プロジェクト・事業",
-          "de": "Projekt, Vorhaben"
+          "de": "Projekt, Vorhaben",
+          "fr": "projet"
         }
       },
       {
@@ -1439,7 +1559,8 @@
           "zh": "預報",
           "en": "forecast",
           "ja": "予報",
-          "de": "Vorhersage, Prognose"
+          "de": "Vorhersage, Prognose",
+          "fr": "prévision, pronostic"
         }
       },
       {
@@ -1450,7 +1571,8 @@
           "zh": "預測",
           "en": "prediction",
           "ja": "予測",
-          "de": "Vorhersage, Prognose"
+          "de": "Vorhersage, Prognose",
+          "fr": "prédiction, prévision"
         }
       },
       {
@@ -1461,7 +1583,8 @@
           "zh": "預定·計劃",
           "en": "schedule/plan",
           "ja": "予定・計画",
-          "de": "Vorhaben, Planung"
+          "de": "Vorhaben, Planung",
+          "fr": "intention, projet, planifier"
         }
       },
       {
@@ -1472,7 +1595,8 @@
           "zh": "儲備",
           "en": "stockpile; reserve",
           "ja": "備蓄",
-          "de": "Reserve, Vorrat"
+          "de": "Reserve, Vorrat",
+          "fr": "réserve, stock"
         }
       },
       {
@@ -1483,7 +1607,8 @@
           "zh": "預防·防備",
           "en": "prevention/preparedness",
           "ja": "予防・備え",
-          "de": "Vorbeugung, Vorsorge"
+          "de": "Vorbeugung, Vorsorge",
+          "fr": "prévention, précaution"
         }
       }
     ]
@@ -1500,7 +1625,8 @@
           "zh": "大學",
           "en": "university",
           "ja": "大学",
-          "de": "Universität"
+          "de": "Universität",
+          "fr": "université"
         }
       },
       {
@@ -1511,7 +1637,8 @@
           "zh": "代表",
           "en": "representative",
           "ja": "代表",
-          "de": "Vertreter, Repräsentant"
+          "de": "Vertreter, Repräsentant",
+          "fr": "représentant, délégué"
         }
       },
       {
@@ -1522,7 +1649,8 @@
           "zh": "大使",
           "en": "ambassador",
           "ja": "大使",
-          "de": "Botschafter"
+          "de": "Botschafter",
+          "fr": "ambassadeur"
         }
       },
       {
@@ -1533,7 +1661,8 @@
           "zh": "大眾",
           "en": "the public",
           "ja": "大衆",
-          "de": "Öffentlichkeit, Massen"
+          "de": "Öffentlichkeit, Massen",
+          "fr": "grand public, masses"
         }
       },
       {
@@ -1544,7 +1673,8 @@
           "zh": "代理店",
           "en": "agency",
           "ja": "代理店",
-          "de": "Agentur, Vertretung"
+          "de": "Agentur, Vertretung",
+          "fr": "agence, concessionnaire"
         }
       },
       {
@@ -1555,7 +1685,8 @@
           "zh": "富豪·大戶",
           "en": "tycoon; big spender",
           "ja": "富豪・大物",
-          "de": "Magnat, Großverdiener"
+          "de": "Magnat, Großverdiener",
+          "fr": "magnat, grande fortune"
         }
       },
       {
@@ -1566,7 +1697,8 @@
           "zh": "大同·大和諧",
           "en": "great unity · great harmony",
           "ja": "大同・大調和",
-          "de": "große Harmonie, allgemeine Eintracht"
+          "de": "große Harmonie, allgemeine Eintracht",
+          "fr": "grande concorde, harmonie universelle"
         }
       },
       {
@@ -1577,7 +1709,8 @@
           "zh": "時代",
           "en": "era",
           "ja": "時代",
-          "de": "Epoche, Ära"
+          "de": "Epoche, Ära",
+          "fr": "époque, ère, âge"
         }
       }
     ]
@@ -1594,7 +1727,8 @@
           "zh": "道德",
           "en": "morality",
           "ja": "道徳",
-          "de": "Moral"
+          "de": "Moral",
+          "fr": "morale, moralité"
         }
       },
       {
@@ -1605,7 +1739,8 @@
           "zh": "導演·執導",
           "en": "director/directing",
           "ja": "監督・演出",
-          "de": "Regisseur, Regie"
+          "de": "Regisseur, Regie",
+          "fr": "réalisateur, mise en scène"
         }
       },
       {
@@ -1616,7 +1751,8 @@
           "zh": "道理",
           "en": "proper duty",
           "ja": "道理",
-          "de": "Sittenlehre, moralische Prinzipien"
+          "de": "Sittenlehre, moralische Prinzipien",
+          "fr": "morale, principes moraux"
         }
       },
       {
@@ -1627,7 +1763,8 @@
           "zh": "剽竊",
           "en": "plagiarism",
           "ja": "盗用",
-          "de": "Plagiat"
+          "de": "Plagiat",
+          "fr": "plagiat"
         }
       },
       {
@@ -1638,7 +1775,8 @@
           "zh": "小道具",
           "en": "prop, small item",
           "ja": "小道具",
-          "de": "Requisite"
+          "de": "Requisite",
+          "fr": "accessoire (de théâtre)"
         }
       },
       {
@@ -1649,7 +1787,8 @@
           "zh": "佛教",
           "en": "Buddhism",
           "ja": "仏教",
-          "de": "Buddhismus"
+          "de": "Buddhismus",
+          "fr": "bouddhisme"
         }
       }
     ]
@@ -1666,7 +1805,8 @@
           "zh": "投資",
           "en": "investment",
           "ja": "投資",
-          "de": "Investition, anlegen"
+          "de": "Investition, anlegen",
+          "fr": "investissement, investir"
         }
       },
       {
@@ -1677,7 +1817,8 @@
           "zh": "第一個",
           "en": "first",
           "ja": "一番目",
-          "de": "zuerst, erster"
+          "de": "zuerst, erster",
+          "fr": "premier, d'abord"
         }
       },
       {
@@ -1688,7 +1829,8 @@
           "zh": "投降",
           "en": "surrender",
           "ja": "降伏",
-          "de": "Kapitulation"
+          "de": "Kapitulation",
+          "fr": "capitulation, se rendre"
         }
       },
       {
@@ -1699,7 +1841,8 @@
           "zh": "毒殺·傷害",
           "en": "poison · harm",
           "ja": "毒殺・害する",
-          "de": "vergiften, Vergiftung"
+          "de": "vergiften, Vergiftung",
+          "fr": "empoisonnement, empoisonner"
         }
       },
       {
@@ -1710,7 +1853,8 @@
           "zh": "廚師",
           "en": "cook",
           "ja": "料理人",
-          "de": "Koch, Chefkoch"
+          "de": "Koch, Chefkoch",
+          "fr": "cuisinier, chef cuisinier"
         }
       }
     ]
@@ -1727,7 +1871,8 @@
           "zh": "正義",
           "en": "justice",
           "ja": "正義",
-          "de": "Definition"
+          "de": "Definition",
+          "fr": "définition"
         }
       },
       {
@@ -1738,7 +1883,8 @@
           "zh": "定期的",
           "en": "regular",
           "ja": "定期的",
-          "de": "regelmäßig, periodisch"
+          "de": "regelmäßig, periodisch",
+          "fr": "périodique, régulier"
         }
       },
       {
@@ -1749,7 +1895,8 @@
           "zh": "方向設定",
           "en": "orientation",
           "ja": "方向設定",
-          "de": "Orientierung, Ausrichtung"
+          "de": "Orientierung, Ausrichtung",
+          "fr": "orientation, directif"
         }
       },
       {
@@ -1760,7 +1907,8 @@
           "zh": "配額·標準",
           "en": "quota / standard",
           "ja": "割当量・基準値",
-          "de": "Norm, Richtwert, Quote"
+          "de": "Norm, Richtwert, Quote",
+          "fr": "quota, norme, barème"
         }
       },
       {
@@ -1771,7 +1919,8 @@
           "zh": "法則",
           "en": "law; principle",
           "ja": "法則",
-          "de": "Gesetzmäßigkeit, Prinzip"
+          "de": "Gesetzmäßigkeit, Prinzip",
+          "fr": "loi, principe scientifique"
         }
       },
       {
@@ -1782,7 +1931,8 @@
           "zh": "定居",
           "en": "settling down",
           "ja": "定着",
-          "de": "Sesshaftwerdung, Niederlassung"
+          "de": "Sesshaftwerdung, Niederlassung",
+          "fr": "s'établir, sédentarisation"
         }
       },
       {
@@ -1793,7 +1943,8 @@
           "zh": "決定",
           "en": "decision",
           "ja": "決定",
-          "de": "Entscheidung, Beschluss"
+          "de": "Entscheidung, Beschluss",
+          "fr": "décision"
         }
       }
     ]
@@ -1810,7 +1961,8 @@
           "zh": "同意",
           "en": "agreement",
           "ja": "同意",
-          "de": "Zustimmung, Einverständnis"
+          "de": "Zustimmung, Einverständnis",
+          "fr": "accord, consentement"
         }
       },
       {
@@ -1821,7 +1973,8 @@
           "zh": "同事",
           "en": "colleague",
           "ja": "同僚",
-          "de": "Kollege, Arbeitskollege"
+          "de": "Kollege, Arbeitskollege",
+          "fr": "collègue"
         }
       },
       {
@@ -1832,7 +1985,8 @@
           "zh": "同時",
           "en": "at the same time",
           "ja": "同時に",
-          "de": "gleichzeitig"
+          "de": "gleichzeitig",
+          "fr": "en même temps, simultanément"
         }
       },
       {
@@ -1843,7 +1997,8 @@
           "zh": "時鐘·手錶",
           "en": "clock, watch",
           "ja": "時計",
-          "de": "Uhr, Armbanduhr"
+          "de": "Uhr, Armbanduhr",
+          "fr": "horloge, montre"
         }
       },
       {
@@ -1854,7 +2009,8 @@
           "zh": "同盟",
           "en": "alliance",
           "ja": "同盟",
-          "de": "Allianz, Verbündeter"
+          "de": "Allianz, Verbündeter",
+          "fr": "allié, alliance"
         }
       },
       {
@@ -1865,7 +2021,8 @@
           "zh": "同胞",
           "en": "compatriot",
           "ja": "同胞",
-          "de": "Landsleute, Mitbürger"
+          "de": "Landsleute, Mitbürger",
+          "fr": "compatriotes"
         }
       }
     ]
@@ -1882,7 +2039,8 @@
           "zh": "動物",
           "en": "animal",
           "ja": "動物",
-          "de": "Tier"
+          "de": "Tier",
+          "fr": "animal"
         }
       },
       {
@@ -1893,7 +2051,8 @@
           "zh": "動機·引擎",
           "en": "motive · engine",
           "ja": "動機・エンジン",
-          "de": "Motiv, Motor"
+          "de": "Motiv, Motor",
+          "fr": "motif, moteur"
         }
       },
       {
@@ -1904,7 +2063,8 @@
           "zh": "動力",
           "en": "motive power",
           "ja": "動力",
-          "de": "Antrieb, Triebkraft, Motivation"
+          "de": "Antrieb, Triebkraft, Motivation",
+          "fr": "force motrice, motivation"
         }
       },
       {
@@ -1915,7 +2075,8 @@
           "zh": "動作",
           "en": "motion",
           "ja": "動作",
-          "de": "Bewegung, Handlung"
+          "de": "Bewegung, Handlung",
+          "fr": "mouvement, geste"
         }
       },
       {
@@ -1926,7 +2087,8 @@
           "zh": "鼓勵",
           "en": "encouragement",
           "ja": "激励・督励",
-          "de": "Ermutigung, ermutigen"
+          "de": "Ermutigung, ermutigen",
+          "fr": "encouragement, encourager"
         }
       },
       {
@@ -1937,7 +2099,8 @@
           "zh": "地震",
           "en": "earthquake",
           "ja": "地震",
-          "de": "Erdbeben"
+          "de": "Erdbeben",
+          "fr": "séisme, tremblement de terre"
         }
       },
       {
@@ -1948,7 +2111,8 @@
           "zh": "動詞",
           "en": "verb",
           "ja": "動詞",
-          "de": "Verb, Zeitwort"
+          "de": "Verb, Zeitwort",
+          "fr": "verbe"
         }
       },
       {
@@ -1959,7 +2123,8 @@
           "zh": "運動",
           "en": "exercise",
           "ja": "運動",
-          "de": "Bewegung, Sport"
+          "de": "Bewegung, Sport",
+          "fr": "exercice physique, mouvement"
         }
       }
     ]
@@ -1976,7 +2141,8 @@
           "zh": "簡單",
           "en": "simple",
           "ja": "簡単",
-          "de": "einfach, simpel"
+          "de": "einfach, simpel",
+          "fr": "simple"
         }
       },
       {
@@ -1987,7 +2153,8 @@
           "zh": "單位",
           "en": "unit",
           "ja": "単位",
-          "de": "Einheit"
+          "de": "Einheit",
+          "fr": "unité"
         }
       },
       {
@@ -1998,7 +2165,8 @@
           "zh": "孤獨·寂寞",
           "en": "loneliness",
           "ja": "孤独・寂しさ",
-          "de": "allein, einsam"
+          "de": "allein, einsam",
+          "fr": "seul, isolé, solitaire"
         }
       },
       {
@@ -2009,7 +2177,8 @@
           "zh": "單純",
           "en": "simplicity",
           "ja": "単純さ",
-          "de": "schlicht, rein, einfach"
+          "de": "schlicht, rein, einfach",
+          "fr": "pur et simple, naïf"
         }
       },
       {
@@ -2020,7 +2189,8 @@
           "zh": "單方面的",
           "en": "one-sided",
           "ja": "一方的",
-          "de": "einseitig"
+          "de": "einseitig",
+          "fr": "unilatéral"
         }
       }
     ]
@@ -2037,7 +2207,8 @@
           "zh": "德性·品性",
           "en": "virtue · character",
           "ja": "徳性・性格",
-          "de": "Tugend, Charakterzug"
+          "de": "Tugend, Charakterzug",
+          "fr": "vertu, trait de caractère"
         }
       },
       {
@@ -2048,7 +2219,8 @@
           "zh": "德行",
           "en": "virtuous conduct",
           "ja": "徳行",
-          "de": "tugendhaftes Verhalten, Tugend"
+          "de": "tugendhaftes Verhalten, Tugend",
+          "fr": "vertu, conduite vertueuse"
         }
       },
       {
@@ -2059,7 +2231,8 @@
           "zh": "德望",
           "en": "moral reputation",
           "ja": "徳望",
-          "de": "Tugendhaftigkeit, moralische Autorität"
+          "de": "Tugendhaftigkeit, moralische Autorität",
+          "fr": "vertu, autorité morale"
         }
       },
       {
@@ -2070,7 +2243,8 @@
           "zh": "信仰・信念",
           "en": "faith · belief",
           "ja": "信仰・信念",
-          "de": "Glaube, Glaubensüberzeugung"
+          "de": "Glaube, Glaubensüberzeugung",
+          "fr": "foi, croyance"
         }
       },
       {
@@ -2081,7 +2255,8 @@
           "zh": "德育（道德教育）",
           "en": "moral education",
           "ja": "徳育（道徳教育）",
-          "de": "moralische Erziehung, Charakterbildung"
+          "de": "moralische Erziehung, Charakterbildung",
+          "fr": "éducation morale"
         }
       },
       {
@@ -2092,7 +2267,8 @@
           "zh": "道德",
           "en": "morality",
           "ja": "道徳",
-          "de": "Moral, Sittlichkeit"
+          "de": "Moral, Sittlichkeit",
+          "fr": "morale, éthique"
         }
       }
     ]
@@ -2109,7 +2285,8 @@
           "zh": "家庭",
           "en": "family/home",
           "ja": "家庭",
-          "de": "Familie"
+          "de": "Familie",
+          "fr": "famille, foyer"
         }
       },
       {
@@ -2120,7 +2297,8 @@
           "zh": "增加",
           "en": "increase",
           "ja": "増加",
-          "de": "Zunahme, ansteigen"
+          "de": "Zunahme, ansteigen",
+          "fr": "augmentation, accroissement"
         }
       },
       {
@@ -2131,7 +2309,8 @@
           "zh": "家畜",
           "en": "livestock",
           "ja": "家畜",
-          "de": "Nutzvieh, Haustier"
+          "de": "Nutzvieh, Haustier",
+          "fr": "bétail, animaux d'élevage"
         }
       },
       {
@@ -2142,7 +2321,8 @@
           "zh": "調味料",
           "en": "seasoning",
           "ja": "調味料",
-          "de": "Gewürz, Würze"
+          "de": "Gewürz, Würze",
+          "fr": "assaisonnement, épice"
         }
       },
       {
@@ -2153,7 +2333,8 @@
           "zh": "財產",
           "en": "property",
           "ja": "財産",
-          "de": "Vermögen, Besitz"
+          "de": "Vermögen, Besitz",
+          "fr": "patrimoine, fortune"
         }
       },
       {
@@ -2164,7 +2345,8 @@
           "zh": "家教老師",
           "en": "tutor",
           "ja": "家庭教師",
-          "de": "Nachhilfelehrer, Hauslehrer"
+          "de": "Nachhilfelehrer, Hauslehrer",
+          "fr": "professeur particulier, tuteur"
         }
       },
       {
@@ -2175,7 +2357,8 @@
           "zh": "家傳(世代相傳)",
           "en": "family heirloom (passed down)",
           "ja": "家伝(代々)",
-          "de": "familiär überliefert, Tradition-"
+          "de": "familiär überliefert, Tradition-",
+          "fr": "recette traditionnelle familiale"
         }
       },
       {
@@ -2186,7 +2369,8 @@
           "zh": "傳家寶",
           "en": "heirloom",
           "ja": "家宝",
-          "de": "Familienerbstück"
+          "de": "Familienerbstück",
+          "fr": "trésor de famille, joyau familial"
         }
       },
       {
@@ -2197,7 +2381,8 @@
           "zh": "家教良好",
           "en": "well brought up",
           "ja": "家庭教育がしっかりしている",
-          "de": "gute Kinderstube, Erziehung"
+          "de": "gute Kinderstube, Erziehung",
+          "fr": "bonne éducation familiale"
         }
       },
       {
@@ -2208,7 +2393,8 @@
           "zh": "增加",
           "en": "increase",
           "ja": "増加",
-          "de": "Produktionssteigerung, Vermehrung"
+          "de": "Produktionssteigerung, Vermehrung",
+          "fr": "accroissement de production"
         }
       }
     ]
@@ -2225,7 +2411,8 @@
           "zh": "價格",
           "en": "price",
           "ja": "価格",
-          "de": "Preis, Preise"
+          "de": "Preis, Preise",
+          "fr": "prix, tarif"
         }
       },
       {
@@ -2236,7 +2423,8 @@
           "zh": "價值",
           "en": "value",
           "ja": "価値",
-          "de": "Wert"
+          "de": "Wert",
+          "fr": "valeur"
         }
       },
       {
@@ -2247,7 +2435,8 @@
           "zh": "原價",
           "en": "cost price",
           "ja": "原価",
-          "de": "Selbstkosten, Gestehungskosten"
+          "de": "Selbstkosten, Gestehungskosten",
+          "fr": "prix de revient, coût de production"
         }
       },
       {
@@ -2258,7 +2447,8 @@
           "zh": "費用(票價)",
           "en": "fare/fee",
           "ja": "料金(運賃)",
-          "de": "Fahrpreis, Eintrittspreis"
+          "de": "Fahrpreis, Eintrittspreis",
+          "fr": "tarif, prix du billet"
         }
       },
       {
@@ -2269,7 +2459,8 @@
           "zh": "價錢·價格",
           "en": "price",
           "ja": "値段・価格",
-          "de": "Preis, Geldbetrag"
+          "de": "Preis, Geldbetrag",
+          "fr": "prix, montant"
         }
       },
       {
@@ -2280,7 +2471,8 @@
           "zh": "物價",
           "en": "prices",
           "ja": "物価",
-          "de": "Lebenshaltungskosten, Güterpreise"
+          "de": "Lebenshaltungskosten, Güterpreise",
+          "fr": "prix des denrées, coût de la vie"
         }
       }
     ]
@@ -2297,7 +2489,8 @@
           "zh": "解決方法",
           "en": "solution",
           "ja": "解決法",
-          "de": "Lösung, Lösungsansatz"
+          "de": "Lösung, Lösungsansatz",
+          "fr": "solution"
         }
       },
       {
@@ -2308,7 +2501,8 @@
           "zh": "說明",
           "en": "explanation",
           "ja": "説明",
-          "de": "Erklärung, erläutern"
+          "de": "Erklärung, erläutern",
+          "fr": "explication, expliquer"
         }
       },
       {
@@ -2319,7 +2513,8 @@
           "zh": "娛樂",
           "en": "entertainment",
           "ja": "娯楽",
-          "de": "Unterhaltung, Freizeitbeschäftigung"
+          "de": "Unterhaltung, Freizeitbeschäftigung",
+          "fr": "divertissement, loisir"
         }
       },
       {
@@ -2330,7 +2525,8 @@
           "zh": "解決",
           "en": "solution",
           "ja": "解決",
-          "de": "Lösung, beilegen"
+          "de": "Lösung, beilegen",
+          "fr": "résoudre, règlement"
         }
       },
       {
@@ -2341,7 +2537,8 @@
           "zh": "解放",
           "en": "liberation",
           "ja": "解放",
-          "de": "Befreiung, freisetzen"
+          "de": "Befreiung, freisetzen",
+          "fr": "libération, émancipation"
         }
       },
       {
@@ -2352,7 +2549,8 @@
           "zh": "休息·休息時間",
           "en": "rest / break time",
           "ja": "休息・休憩時間",
-          "de": "Pause, Erholung"
+          "de": "Pause, Erholung",
+          "fr": "pause, récréation"
         }
       }
     ]
@@ -2369,7 +2567,8 @@
           "zh": "教育",
           "en": "education",
           "ja": "教育",
-          "de": "Bildung, Erziehung"
+          "de": "Bildung, Erziehung",
+          "fr": "éducation, enseignement"
         }
       },
       {
@@ -2380,7 +2579,8 @@
           "zh": "教師",
           "en": "teacher",
           "ja": "教師",
-          "de": "Lehrer, Lehrkraft"
+          "de": "Lehrer, Lehrkraft",
+          "fr": "enseignant, professeur"
         }
       },
       {
@@ -2391,7 +2591,8 @@
           "zh": "教授",
           "en": "professor",
           "ja": "教授",
-          "de": "Professor, Dozent"
+          "de": "Professor, Dozent",
+          "fr": "professeur (d'université)"
         }
       },
       {
@@ -2402,7 +2603,8 @@
           "zh": "教材‧課程",
           "en": "textbook, curriculum",
           "ja": "教材・カリキュラム",
-          "de": "Lehrbuch, Lehrplan"
+          "de": "Lehrbuch, Lehrplan",
+          "fr": "manuel scolaire, programme de cours"
         }
       },
       {
@@ -2413,7 +2615,8 @@
           "zh": "教會",
           "en": "church",
           "ja": "教会",
-          "de": "Kirche, Kirchengemeinde"
+          "de": "Kirche, Kirchengemeinde",
+          "fr": "Église, congrégation"
         }
       },
       {
@@ -2424,7 +2627,8 @@
           "zh": "教義",
           "en": "doctrine",
           "ja": "教理",
-          "de": "Lehre, Glaubenslehre"
+          "de": "Lehre, Glaubenslehre",
+          "fr": "doctrine religieuse, dogme"
         }
       }
     ]
@@ -2441,7 +2645,8 @@
           "zh": "介紹",
           "en": "introduction",
           "ja": "紹介",
-          "de": "Vorstellung, Einführung, empfehlen"
+          "de": "Vorstellung, Einführung, empfehlen",
+          "fr": "présenter, recommander, introduction"
         }
       },
       {
@@ -2452,7 +2657,8 @@
           "zh": "界限·範圍",
           "en": "limit / scope",
           "ja": "限界・範囲",
-          "de": "Grenze, Begrenzung"
+          "de": "Grenze, Begrenzung",
+          "fr": "limite, restriction"
         }
       },
       {
@@ -2463,7 +2669,8 @@
           "zh": "性別",
           "en": "gender",
           "ja": "性別",
-          "de": "Geschlecht"
+          "de": "Geschlecht",
+          "fr": "sexe, genre"
         }
       },
       {
@@ -2474,7 +2681,8 @@
           "zh": "年輕族群",
           "en": "younger generation",
           "ja": "若年層",
-          "de": "Jugend, junge Generation"
+          "de": "Jugend, junge Generation",
+          "fr": "jeunesse, jeunes"
         }
       },
       {
@@ -2485,7 +2693,8 @@
           "zh": "戒嚴",
           "en": "martial law",
           "ja": "戒厳",
-          "de": "Ausgangssperre, Belagerungszustand"
+          "de": "Ausgangssperre, Belagerungszustand",
+          "fr": "couvre-feu, état de siège"
         }
       }
     ]
@@ -2502,7 +2711,8 @@
           "zh": "限制",
           "en": "restriction",
           "ja": "制限",
-          "de": "Einschränkung, beschränken"
+          "de": "Einschränkung, beschränken",
+          "fr": "restriction, limiter"
         }
       },
       {
@@ -2513,7 +2723,8 @@
           "zh": "乾旱",
           "en": "drought",
           "ja": "干ばつ",
-          "de": "Dürre, Trockenheit"
+          "de": "Dürre, Trockenheit",
+          "fr": "sécheresse"
         }
       },
       {
@@ -2524,7 +2735,8 @@
           "zh": "配額·限額",
           "en": "quota / quota",
           "ja": "割当量・クォータ",
-          "de": "Quote, Kontingent"
+          "de": "Quote, Kontingent",
+          "fr": "quota, contingent"
         }
       },
       {
@@ -2535,7 +2747,8 @@
           "zh": "設定期限",
           "en": "setting a deadline",
           "ja": "期限設定",
-          "de": "Fristsetzung"
+          "de": "Fristsetzung",
+          "fr": "délai fixé, fixation d'un terme"
         }
       },
       {
@@ -2546,7 +2759,8 @@
           "zh": "限度",
           "en": "limit",
           "ja": "限度",
-          "de": "Kreditlinie, Höchstgrenze"
+          "de": "Kreditlinie, Höchstgrenze",
+          "fr": "plafond, limite maximale"
         }
       }
     ]
@@ -2563,7 +2777,8 @@
           "zh": "商品",
           "en": "product",
           "ja": "商品",
-          "de": "Ware, Güter"
+          "de": "Ware, Güter",
+          "fr": "marchandise, biens"
         }
       },
       {
@@ -2574,7 +2789,8 @@
           "zh": "每天",
           "en": "every day",
           "ja": "毎日",
-          "de": "täglich, jeden Tag"
+          "de": "täglich, jeden Tag",
+          "fr": "quotidiennement, tous les jours"
         }
       },
       {
@@ -2585,7 +2801,8 @@
           "zh": "鄰居",
           "en": "neighbor",
           "ja": "隣人",
-          "de": "Nachbar, Nachbarschaft"
+          "de": "Nachbar, Nachbarschaft",
+          "fr": "voisin, voisinage"
         }
       },
       {
@@ -2596,7 +2813,8 @@
           "zh": "航空",
           "en": "aviation",
           "ja": "航空",
-          "de": "Luftfahrt"
+          "de": "Luftfahrt",
+          "fr": "aviation, aéronautique"
         }
       },
       {
@@ -2607,7 +2825,8 @@
           "zh": "大量·一系列的",
           "en": "mass · a series of",
           "ja": "大量・一連の",
-          "de": "seriell, massenhaft, reihenweise"
+          "de": "seriell, massenhaft, reihenweise",
+          "fr": "en série, massif, en masse"
         }
       }
     ]
@@ -2624,7 +2843,8 @@
           "zh": "行動",
           "en": "action",
           "ja": "行動",
-          "de": "Handlung, Aktion, handeln"
+          "de": "Handlung, Aktion, handeln",
+          "fr": "action, agir"
         }
       },
       {
@@ -2635,7 +2855,8 @@
           "zh": "行政",
           "en": "administration",
           "ja": "行政",
-          "de": "Verwaltung"
+          "de": "Verwaltung",
+          "fr": "administration, administratif"
         }
       },
       {
@@ -2646,7 +2867,8 @@
           "zh": "旅程",
           "en": "journey",
           "ja": "旅程",
-          "de": "Reiseroute, Reise"
+          "de": "Reiseroute, Reise",
+          "fr": "itinéraire, parcours"
         }
       },
       {
@@ -2657,7 +2879,8 @@
           "zh": "行李",
           "en": "baggage",
           "ja": "手荷物",
-          "de": "Gepäck, Reisegepäck"
+          "de": "Gepäck, Reisegepäck",
+          "fr": "bagages"
         }
       },
       {
@@ -2668,7 +2891,8 @@
           "zh": "行為",
           "en": "act/deed",
           "ja": "行為",
-          "de": "Verhalten, Benehmen, Tat"
+          "de": "Verhalten, Benehmen, Tat",
+          "fr": "comportement, conduite, acte"
         }
       }
     ]
@@ -2685,7 +2909,8 @@
           "zh": "現在",
           "en": "present",
           "ja": "現在",
-          "de": "Gegenwart, gegenwärtig"
+          "de": "Gegenwart, gegenwärtig",
+          "fr": "présent, actuel, actuellement"
         }
       },
       {
@@ -2696,7 +2921,8 @@
           "zh": "現代",
           "en": "modern era",
           "ja": "現代",
-          "de": "moderne Zeit, Gegenwart"
+          "de": "moderne Zeit, Gegenwart",
+          "fr": "moderne, contemporain"
         }
       },
       {
@@ -2707,7 +2933,8 @@
           "zh": "現象",
           "en": "phenomenon",
           "ja": "現象",
-          "de": "Phänomen, Erscheinung"
+          "de": "Phänomen, Erscheinung",
+          "fr": "phénomène"
         }
       },
       {
@@ -2718,7 +2945,8 @@
           "zh": "現實",
           "en": "reality",
           "ja": "現実",
-          "de": "Wirklichkeit, Realität"
+          "de": "Wirklichkeit, Realität",
+          "fr": "réalité"
         }
       },
       {
@@ -2729,7 +2957,8 @@
           "zh": "現場",
           "en": "scene/site",
           "ja": "現場",
-          "de": "Schauplatz, Tatort"
+          "de": "Schauplatz, Tatort",
+          "fr": "lieu des faits, sur place"
         }
       },
       {
@@ -2740,7 +2969,8 @@
           "zh": "現存·出席",
           "en": "existence / presence",
           "ja": "現存・出席",
-          "de": "Anwesenheit, Gegenwart"
+          "de": "Anwesenheit, Gegenwart",
+          "fr": "présence, être présent"
         }
       },
       {
@@ -2751,7 +2981,8 @@
           "zh": "現行",
           "en": "current (existing)",
           "ja": "現行",
-          "de": "geltend, gegenwärtig"
+          "de": "geltend, gegenwärtig",
+          "fr": "en vigueur, actuel"
         }
       }
     ]
@@ -2768,7 +2999,8 @@
           "zh": "和平",
           "en": "peace",
           "ja": "平和",
-          "de": "Frieden"
+          "de": "Frieden",
+          "fr": "paix"
         }
       },
       {
@@ -2779,7 +3011,8 @@
           "zh": "和解",
           "en": "reconciliation",
           "ja": "和解",
-          "de": "Aussöhnung, Schlichtung"
+          "de": "Aussöhnung, Schlichtung",
+          "fr": "réconciliation, médiation"
         }
       },
       {
@@ -2790,7 +3023,8 @@
           "zh": "和合",
           "en": "harmony",
           "ja": "和合",
-          "de": "Harmonie, Eintracht"
+          "de": "Harmonie, Eintracht",
+          "fr": "harmonie, concorde"
         }
       },
       {
@@ -2801,7 +3035,8 @@
           "zh": "融合·編入",
           "en": "assimilation/incorporation",
           "ja": "融和・編入",
-          "de": "Integration, Eingliederung"
+          "de": "Integration, Eingliederung",
+          "fr": "intégration, s'intégrer"
         }
       },
       {
@@ -2812,7 +3047,8 @@
           "zh": "溶解·融化",
           "en": "dissolving/melting",
           "ja": "溶解・融解",
-          "de": "auflösen, Lösen (in Flüssigkeit)"
+          "de": "auflösen, Lösen (in Flüssigkeit)",
+          "fr": "dissoudre, dissolution"
         }
       }
     ]
@@ -2829,7 +3065,8 @@
           "zh": "化學",
           "en": "chemistry",
           "ja": "化学",
-          "de": "Chemie"
+          "de": "Chemie",
+          "fr": "chimie"
         }
       },
       {
@@ -2840,7 +3077,8 @@
           "zh": "收據·帳單",
           "en": "receipt/bill",
           "ja": "領収書・請求書",
-          "de": "Rechnung, Beleg"
+          "de": "Rechnung, Beleg",
+          "fr": "facture, reçu"
         }
       },
       {
@@ -2851,7 +3089,8 @@
           "zh": "化妝，扮裝",
           "en": "makeup; costume",
           "ja": "扮装",
-          "de": "Maske, Kostümierung"
+          "de": "Maske, Kostümierung",
+          "fr": "déguisement, maquillage"
         }
       },
       {
@@ -2862,7 +3101,8 @@
           "zh": "化身·變身",
           "en": "incarnation / transformation",
           "ja": "化身・変身",
-          "de": "Verkörperung, Inkarnation"
+          "de": "Verkörperung, Inkarnation",
+          "fr": "incarnation, métamorphose"
         }
       },
       {
@@ -2873,7 +3113,8 @@
           "zh": "解除·解開",
           "en": "to resolve / to untie",
           "ja": "解消・解く",
-          "de": "auflösen, entschärfen, schlichten"
+          "de": "auflösen, entschärfen, schlichten",
+          "fr": "désamorcer, neutraliser, apaiser"
         }
       },
       {
@@ -2884,7 +3125,8 @@
           "zh": "化學物質",
           "en": "chemical substance",
           "ja": "化学物質",
-          "de": "Chemikalie"
+          "de": "Chemikalie",
+          "fr": "produit chimique"
         }
       },
       {
@@ -2895,7 +3137,8 @@
           "zh": "文化",
           "en": "culture",
           "ja": "文化",
-          "de": "Kultur"
+          "de": "Kultur",
+          "fr": "culture"
         }
       }
     ]
@@ -2912,7 +3155,8 @@
           "zh": "完成·完了",
           "en": "completion",
           "ja": "完成・完了",
-          "de": "Vollendung, abschließen"
+          "de": "Vollendung, abschließen",
+          "fr": "achever, accomplir, terminer"
         }
       },
       {
@@ -2923,7 +3167,8 @@
           "zh": "環境·處境",
           "en": "environment / circumstance",
           "ja": "環境・境遇",
-          "de": "Lebensumstände, Verhältnisse"
+          "de": "Lebensumstände, Verhältnisse",
+          "fr": "circonstances, environnement, situation"
         }
       },
       {
@@ -2934,7 +3179,8 @@
           "zh": "完美",
           "en": "perfection",
           "ja": "完璧",
-          "de": "vollkommen, tadellos"
+          "de": "vollkommen, tadellos",
+          "fr": "parfait, impeccable"
         }
       },
       {
@@ -2945,7 +3191,8 @@
           "zh": "完全地",
           "en": "completely",
           "ja": "完全に",
-          "de": "völlig, vollkommen, ganz"
+          "de": "völlig, vollkommen, ganz",
+          "fr": "totalement, complètement"
         }
       },
       {
@@ -2956,7 +3203,8 @@
           "zh": "完備·補充",
           "en": "completeness/supplement",
           "ja": "完備・補完",
-          "de": "vervollkommnen, optimieren"
+          "de": "vervollkommnen, optimieren",
+          "fr": "perfectionner, optimiser"
         }
       },
       {
@@ -2967,7 +3215,8 @@
           "zh": "歸還・償還",
           "en": "return, repayment",
           "ja": "返還・償還",
-          "de": "Rückzahlung, erstatten"
+          "de": "Rückzahlung, erstatten",
+          "fr": "restituer, rembourser"
         }
       },
       {
@@ -2978,7 +3227,8 @@
           "zh": "竣工",
           "en": "completion (of construction)",
           "ja": "竣工",
-          "de": "Fertigstellung (Bau)"
+          "de": "Fertigstellung (Bau)",
+          "fr": "achèvement des travaux"
         }
       }
     ]
@@ -2995,7 +3245,8 @@
           "zh": "學生",
           "en": "student",
           "ja": "学生",
-          "de": "Schüler"
+          "de": "Schüler",
+          "fr": "élève, écolier"
         }
       },
       {
@@ -3006,7 +3257,8 @@
           "zh": "學習",
           "en": "learning",
           "ja": "学習",
-          "de": "Lernen, Studium"
+          "de": "Lernen, Studium",
+          "fr": "apprendre, études"
         }
       },
       {
@@ -3017,7 +3269,8 @@
           "zh": "學費",
           "en": "tuition",
           "ja": "学費",
-          "de": "Schulgeld, Studiengebühren"
+          "de": "Schulgeld, Studiengebühren",
+          "fr": "frais de scolarité"
         }
       },
       {
@@ -3028,7 +3281,8 @@
           "zh": "學期",
           "en": "semester",
           "ja": "学期",
-          "de": "Semester, Schulhalbjahr"
+          "de": "Semester, Schulhalbjahr",
+          "fr": "semestre, trimestre scolaire"
         }
       },
       {
@@ -3039,7 +3293,8 @@
           "zh": "補習班·學校",
           "en": "academy, school",
           "ja": "塾・学校",
-          "de": "Akademie, Institut"
+          "de": "Akademie, Institut",
+          "fr": "académie, institut"
         }
       },
       {
@@ -3050,7 +3305,8 @@
           "zh": "獎學金",
           "en": "scholarship",
           "ja": "奨学金",
-          "de": "Stipendium"
+          "de": "Stipendium",
+          "fr": "bourse d'études"
         }
       },
       {
@@ -3061,7 +3317,8 @@
           "zh": "學者",
           "en": "scholar",
           "ja": "学者",
-          "de": "Gelehrter, Wissenschaftler"
+          "de": "Gelehrter, Wissenschaftler",
+          "fr": "érudit, savant"
         }
       },
       {
@@ -3072,7 +3329,8 @@
           "zh": "學歷",
           "en": "educational background",
           "ja": "学歴",
-          "de": "Schulleistung, Bildungsstand"
+          "de": "Schulleistung, Bildungsstand",
+          "fr": "niveau scolaire, compétences académiques"
         }
       },
       {
@@ -3083,7 +3341,8 @@
           "zh": "文學研究",
           "en": "literature study",
           "ja": "文学の勉強",
-          "de": "Literaturstudium"
+          "de": "Literaturstudium",
+          "fr": "études littéraires"
         }
       },
       {
@@ -3094,7 +3353,8 @@
           "zh": "醫學研究",
           "en": "studying medicine",
           "ja": "医学の勉強",
-          "de": "Medizinstudium"
+          "de": "Medizinstudium",
+          "fr": "études de médecine"
         }
       }
     ]
@@ -3111,7 +3371,8 @@
           "zh": "會議",
           "en": "meeting",
           "ja": "会議",
-          "de": "Konferenz, Tagung"
+          "de": "Konferenz, Tagung",
+          "fr": "conférence, réunion"
         }
       },
       {
@@ -3122,7 +3383,8 @@
           "zh": "研討會·學術大會",
           "en": "seminar, academic conference",
           "ja": "セミナー·学術大会",
-          "de": "Seminar, Symposium"
+          "de": "Seminar, Symposium",
+          "fr": "séminaire, colloque"
         }
       },
       {
@@ -3133,7 +3395,8 @@
           "zh": "委員會·評議會",
           "en": "committee/council",
           "ja": "委員会・評議会",
-          "de": "Rat, Ausschuss"
+          "de": "Rat, Ausschuss",
+          "fr": "conseil, comité"
         }
       },
       {
@@ -3144,7 +3407,8 @@
           "zh": "會員",
           "en": "member",
           "ja": "会員",
-          "de": "Mitglied"
+          "de": "Mitglied",
+          "fr": "membre, adhérent"
         }
       },
       {
@@ -3155,7 +3419,8 @@
           "zh": "會館·禮堂",
           "en": "hall / auditorium",
           "ja": "会館・講堂",
-          "de": "Konferenzsaal, Aula"
+          "de": "Konferenzsaal, Aula",
+          "fr": "salle de conférence, amphithéâtre"
         }
       },
       {
@@ -3166,7 +3431,8 @@
           "zh": "博覽會",
           "en": "fair, exhibition",
           "ja": "博覧会",
-          "de": "Messe, Jahrmarkt"
+          "de": "Messe, Jahrmarkt",
+          "fr": "foire, salon"
         }
       }
     ]
@@ -3183,7 +3449,8 @@
           "zh": "婚姻",
           "en": "marriage",
           "ja": "婚姻",
-          "de": "Ehe, Heirat"
+          "de": "Ehe, Heirat",
+          "fr": "mariage"
         }
       },
       {
@@ -3194,7 +3461,8 @@
           "zh": "婚禮",
           "en": "wedding ceremony",
           "ja": "婚礼",
-          "de": "Hochzeitsfeier, Trauung"
+          "de": "Hochzeitsfeier, Trauung",
+          "fr": "cérémonie de mariage, noces"
         }
       },
       {
@@ -3205,7 +3473,8 @@
           "zh": "未婚妻",
           "en": "fiancée",
           "ja": "婚約者（女性）",
-          "de": "Verlobte"
+          "de": "Verlobte",
+          "fr": "fiancée"
         }
       },
       {
@@ -3216,7 +3485,8 @@
           "zh": "婚姻·配偶",
           "en": "marriage / spouse",
           "ja": "婚姻・配偶者",
-          "de": "Eheschließung, Ehepartner"
+          "de": "Eheschließung, Ehepartner",
+          "fr": "conjoint, mariage"
         }
       },
       {
@@ -3227,7 +3497,8 @@
           "zh": "婚約",
           "en": "engagement",
           "ja": "婚約",
-          "de": "Verlobung, Eheversprechen"
+          "de": "Verlobung, Eheversprechen",
+          "fr": "fiançailles, promesse de mariage"
         }
       }
     ]
@@ -3244,7 +3515,8 @@
           "zh": "合作",
           "en": "cooperation",
           "ja": "協力",
-          "de": "Zusammenarbeit, Kooperation"
+          "de": "Zusammenarbeit, Kooperation",
+          "fr": "coopération, collaboration"
         }
       },
       {
@@ -3255,7 +3527,8 @@
           "zh": "合約",
           "en": "contract",
           "ja": "契約",
-          "de": "Vertrag"
+          "de": "Vertrag",
+          "fr": "contrat"
         }
       },
       {
@@ -3266,7 +3539,8 @@
           "zh": "合理的",
           "en": "reasonable",
           "ja": "合理的",
-          "de": "vernünftig, plausibel"
+          "de": "vernünftig, plausibel",
+          "fr": "raisonnable, rationnel"
         }
       },
       {
@@ -3277,7 +3551,8 @@
           "zh": "合法",
           "en": "legal",
           "ja": "合法",
-          "de": "legal, rechtmäßig"
+          "de": "legal, rechtmäßig",
+          "fr": "légal, légitime"
         }
       },
       {
@@ -3288,7 +3563,8 @@
           "zh": "合併·整合",
           "en": "merger / integration",
           "ja": "合併・統合",
-          "de": "Fusion, Vereinigung"
+          "de": "Fusion, Vereinigung",
+          "fr": "fusion, unification"
         }
       },
       {
@@ -3299,7 +3575,8 @@
           "zh": "有效·合法",
           "en": "valid/legal",
           "ja": "有効・適法",
-          "de": "gültig, ordnungsgemäß"
+          "de": "gültig, ordnungsgemäß",
+          "fr": "valide, conforme, régulier"
         }
       },
       {
@@ -3310,7 +3587,8 @@
           "zh": "合適",
           "en": "suitability",
           "ja": "適切さ",
-          "de": "passend, geeignet"
+          "de": "passend, geeignet",
+          "fr": "approprié, convenable"
         }
       }
     ]
@@ -3327,7 +3605,8 @@
           "zh": "計劃",
           "en": "plan",
           "ja": "計画",
-          "de": "Plan, Planung"
+          "de": "Plan, Planung",
+          "fr": "plan, projet"
         }
       },
       {
@@ -3338,7 +3617,8 @@
           "zh": "會計",
           "en": "accounting",
           "ja": "会計",
-          "de": "Buchhaltung, Rechnungswesen"
+          "de": "Buchhaltung, Rechnungswesen",
+          "fr": "comptabilité"
         }
       },
       {
@@ -3349,7 +3629,8 @@
           "zh": "持續的·下一個",
           "en": "continuing/next",
           "ja": "続く・次の",
-          "de": "folgend, anschließend"
+          "de": "folgend, anschließend",
+          "fr": "suivant, consécutif"
         }
       },
       {
@@ -3360,7 +3641,8 @@
           "zh": "繼承",
           "en": "succession",
           "ja": "継承",
-          "de": "Erbschaft, Nachfolge"
+          "de": "Erbschaft, Nachfolge",
+          "fr": "héritage, succession"
         }
       },
       {
@@ -3371,7 +3653,8 @@
           "zh": "繼承家業",
           "en": "succeeding the family business",
           "ja": "家業の継承",
-          "de": "Betriebsnachfolge, Familientradition fortführen"
+          "de": "Betriebsnachfolge, Familientradition fortführen",
+          "fr": "reprise de l'entreprise familiale, succession"
         }
       }
     ]
@@ -3388,7 +3671,8 @@
           "zh": "結果",
           "en": "result",
           "ja": "結果",
-          "de": "Ergebnis, Resultat"
+          "de": "Ergebnis, Resultat",
+          "fr": "résultat"
         }
       },
       {
@@ -3399,7 +3683,8 @@
           "zh": "結論",
           "en": "conclusion",
           "ja": "結論",
-          "de": "Schlussfolgerung, Fazit"
+          "de": "Schlussfolgerung, Fazit",
+          "fr": "conclusion"
         }
       },
       {
@@ -3410,7 +3695,8 @@
           "zh": "結婚",
           "en": "marriage",
           "ja": "結婚",
-          "de": "Heirat, Ehe"
+          "de": "Heirat, Ehe",
+          "fr": "se marier, mariage"
         }
       },
       {
@@ -3421,7 +3707,8 @@
           "zh": "終結·結束",
           "en": "conclusion/end",
           "ja": "終結・終わり",
-          "de": "Abschluss, Ende"
+          "de": "Abschluss, Ende",
+          "fr": "fin, terminer, clôture"
         }
       },
       {
@@ -3432,7 +3719,8 @@
           "zh": "連結",
           "en": "connection",
           "ja": "連結",
-          "de": "Verbindung, Verknüpfung"
+          "de": "Verbindung, Verknüpfung",
+          "fr": "connexion, relier"
         }
       },
       {
@@ -3443,7 +3731,8 @@
           "zh": "結合",
           "en": "combination",
           "ja": "結合",
-          "de": "Kombination, verbinden"
+          "de": "Kombination, verbinden",
+          "fr": "combiner, association, allier"
         }
       }
     ]
@@ -3460,7 +3749,8 @@
           "zh": "顧客",
           "en": "customer",
           "ja": "顧客",
-          "de": "Kunde, Kundschaft"
+          "de": "Kunde, Kundschaft",
+          "fr": "client, clientèle"
         }
       },
       {
@@ -3471,7 +3761,8 @@
           "zh": "飯店",
           "en": "hotel",
           "ja": "ホテル",
-          "de": "Hotel"
+          "de": "Hotel",
+          "fr": "hôtel"
         }
       },
       {
@@ -3482,7 +3773,8 @@
           "zh": "客觀",
           "en": "objectivity",
           "ja": "客観",
-          "de": "objektiv, Sachlichkeit"
+          "de": "objektiv, Sachlichkeit",
+          "fr": "objectif, objectivité"
         }
       },
       {
@@ -3493,7 +3785,8 @@
           "zh": "客人",
           "en": "guest",
           "ja": "招待客",
-          "de": "Gast, Ehrengast"
+          "de": "Gast, Ehrengast",
+          "fr": "invité"
         }
       },
       {
@@ -3504,7 +3797,8 @@
           "zh": "住客",
           "en": "hotel guest",
           "ja": "宿泊客",
-          "de": "Hotelgast, Übernachtungsgast"
+          "de": "Hotelgast, Übernachtungsgast",
+          "fr": "client d'hôtel, pensionnaire"
         }
       },
       {
@@ -3515,7 +3809,8 @@
           "zh": "旅客",
           "en": "passenger",
           "ja": "旅客",
-          "de": "Reisender, Fahrgast"
+          "de": "Reisender, Fahrgast",
+          "fr": "voyageur, passager"
         }
       }
     ]
@@ -3532,7 +3827,8 @@
           "zh": "氣候",
           "en": "climate",
           "ja": "気候",
-          "de": "Klima"
+          "de": "Klima",
+          "fr": "climat"
         }
       },
       {
@@ -3543,7 +3839,8 @@
           "zh": "氣勢",
           "en": "momentum, vigor",
           "ja": "勢い",
-          "de": "Elan, Schwung, Kampfgeist"
+          "de": "Elan, Schwung, Kampfgeist",
+          "fr": "élan, ardeur, dynamisme"
         }
       },
       {
@@ -3554,7 +3851,8 @@
           "zh": "氣質",
           "en": "temperament",
           "ja": "気質",
-          "de": "Temperament, Veranlagung"
+          "de": "Temperament, Veranlagung",
+          "fr": "tempérament"
         }
       },
       {
@@ -3565,7 +3863,8 @@
           "zh": "氣孔",
           "en": "pore",
           "ja": "気孔",
-          "de": "Qigong"
+          "de": "Qigong",
+          "fr": "qigong (gymnastique énergétique)"
         }
       },
       {
@@ -3576,7 +3875,8 @@
           "zh": "氣魄",
           "en": "spirit, vigor",
           "ja": "気迫",
-          "de": "Entschlossenheit, Heldenmut"
+          "de": "Entschlossenheit, Heldenmut",
+          "fr": "courage, force d'âme, héroïsme"
         }
       }
     ]
@@ -3593,7 +3893,8 @@
           "zh": "經濟",
           "en": "economy",
           "ja": "経済",
-          "de": "Wirtschaft, Ökonomie"
+          "de": "Wirtschaft, Ökonomie",
+          "fr": "économie"
         }
       },
       {
@@ -3604,7 +3905,8 @@
           "zh": "經驗",
           "en": "experience",
           "ja": "経験",
-          "de": "Erfahrung"
+          "de": "Erfahrung",
+          "fr": "expérience"
         }
       },
       {
@@ -3615,7 +3917,8 @@
           "zh": "經營",
           "en": "management",
           "ja": "経営",
-          "de": "Geschäftstätigkeit, Gewerbe"
+          "de": "Geschäftstätigkeit, Gewerbe",
+          "fr": "commerce, affaires, gestion"
         }
       },
       {
@@ -3626,7 +3929,8 @@
           "zh": "經費·費用",
           "en": "expense/cost",
           "ja": "経費・費用",
-          "de": "Kosten, Aufwand, Spesen"
+          "de": "Kosten, Aufwand, Spesen",
+          "fr": "frais, budget, dépenses"
         }
       },
       {
@@ -3637,7 +3941,8 @@
           "zh": "驚愕",
           "en": "shock/astonishment",
           "ja": "驚愕",
-          "de": "Erstaunen, Verblüffung"
+          "de": "Erstaunen, Verblüffung",
+          "fr": "stupéfaction, étonnement"
         }
       },
       {
@@ -3648,7 +3953,8 @@
           "zh": "經典",
           "en": "scripture/classic",
           "ja": "経典・古典",
-          "de": "Klassiker, klassisch"
+          "de": "Klassiker, klassisch",
+          "fr": "classique"
         }
       },
       {
@@ -3659,7 +3965,8 @@
           "zh": "北京",
           "en": "Beijing",
           "ja": "北京",
-          "de": "Peking"
+          "de": "Peking",
+          "fr": "Pékin"
         }
       }
     ]
@@ -3676,7 +3983,8 @@
           "zh": "技術",
           "en": "technology, skill",
           "ja": "技術",
-          "de": "Technologie, Technik"
+          "de": "Technologie, Technik",
+          "fr": "technique, technologie"
         }
       },
       {
@@ -3687,7 +3995,8 @@
           "zh": "功能‧技能",
           "en": "function, skill",
           "ja": "機能・スキル",
-          "de": "Fertigkeit, Kompetenz"
+          "de": "Fertigkeit, Kompetenz",
+          "fr": "compétence, savoir-faire"
         }
       },
       {
@@ -3698,7 +4007,8 @@
           "zh": "技師‧工程師",
           "en": "engineer",
           "ja": "技師・エンジニア",
-          "de": "Ingenieur"
+          "de": "Ingenieur",
+          "fr": "ingénieur"
         }
       },
       {
@@ -3709,7 +4019,8 @@
           "zh": "工業‧技藝",
           "en": "industry, craft",
           "ja": "工業・技芸",
-          "de": "Kunsthandwerk, Technologie"
+          "de": "Kunsthandwerk, Technologie",
+          "fr": "artisanat, technologie industrielle"
         }
       },
       {
@@ -3720,7 +4031,8 @@
           "zh": "技巧",
           "en": "technique",
           "ja": "技巧",
-          "de": "Kunstgriff, Technik, Raffinesse"
+          "de": "Kunstgriff, Technik, Raffinesse",
+          "fr": "artifice, technique raffinée, effets spéciaux"
         }
       }
     ]
@@ -3737,7 +4049,8 @@
           "zh": "節慶",
           "en": "festival",
           "ja": "祭り",
-          "de": "Fest, Festival"
+          "de": "Fest, Festival",
+          "fr": "fête, festival"
         }
       },
       {
@@ -3748,7 +4061,8 @@
           "zh": "禮儀·禮節",
           "en": "courtesy/etiquette",
           "ja": "礼儀・儀礼",
-          "de": "Ritual, Zeremoniell, Etikette"
+          "de": "Ritual, Zeremoniell, Etikette",
+          "fr": "rituel, étiquette, cérémonie"
         }
       },
       {
@@ -3759,7 +4073,8 @@
           "zh": "禮貌",
           "en": "politeness",
           "ja": "礼儀正しさ",
-          "de": "Höflichkeit, artig"
+          "de": "Höflichkeit, artig",
+          "fr": "poli, politesse"
         }
       },
       {
@@ -3770,7 +4085,8 @@
           "zh": "禮物",
           "en": "gift/offering",
           "ja": "贈り物",
-          "de": "Gabe, Opfergabe, Geschenk"
+          "de": "Gabe, Opfergabe, Geschenk",
+          "fr": "offrande, présent, don"
         }
       },
       {
@@ -3781,7 +4097,8 @@
           "zh": "接待・迎賓",
           "en": "reception, hospitality",
           "ja": "接待",
-          "de": "Empfang, Rezeption"
+          "de": "Empfang, Rezeption",
+          "fr": "réception, accueil"
         }
       },
       {
@@ -3792,7 +4109,8 @@
           "zh": "禮儀",
           "en": "manners/courtesy",
           "ja": "礼儀",
-          "de": "Anstand, Wohlerzogenheit"
+          "de": "Anstand, Wohlerzogenheit",
+          "fr": "courtoisie, bienséance"
         }
       }
     ]
@@ -3809,7 +4127,8 @@
           "zh": "歷史",
           "en": "history",
           "ja": "歴史",
-          "de": "Geschichte, Historie"
+          "de": "Geschichte, Historie",
+          "fr": "histoire"
         }
       },
       {
@@ -3820,7 +4139,8 @@
           "zh": "禮貌",
           "en": "politeness",
           "ja": "礼儀正しさ",
-          "de": "höflich, Manieren"
+          "de": "höflich, Manieren",
+          "fr": "poli, courtois"
         }
       },
       {
@@ -3831,7 +4151,8 @@
           "zh": "日程",
           "en": "schedule",
           "ja": "日程",
-          "de": "Zeitplan, Ablauf"
+          "de": "Zeitplan, Ablauf",
+          "fr": "calendrier, itinéraire"
         }
       },
       {
@@ -3842,7 +4163,8 @@
           "zh": "老練·經驗豐富",
           "en": "refined, experienced",
           "ja": "洗練されている·経験豊富",
-          "de": "weltgewandt, kultiviert"
+          "de": "weltgewandt, kultiviert",
+          "fr": "raffiné, expérimenté, cultivé"
         }
       },
       {
@@ -3853,7 +4175,8 @@
           "zh": "有禮又文雅",
           "en": "polite and refined",
           "ja": "礼儀正しく洗練されている",
-          "de": "höflich und weltmännisch, charmant"
+          "de": "höflich und weltmännisch, charmant",
+          "fr": "élégant, courtois, affable"
         }
       }
     ]
@@ -3870,7 +4193,8 @@
           "zh": "聯繫・聯絡",
           "en": "liaison · contact",
           "ja": "連携・連絡",
-          "de": "Kontakt, Verbindung"
+          "de": "Kontakt, Verbindung",
+          "fr": "contact, liaison"
         }
       },
       {
@@ -3881,7 +4205,8 @@
           "zh": "連結",
           "en": "connection",
           "ja": "連結",
-          "de": "Verknüpfung, vernetzen"
+          "de": "Verknüpfung, vernetzen",
+          "fr": "lier, connecter, liaison"
         }
       },
       {
@@ -3892,7 +4217,8 @@
           "zh": "聯盟・同盟",
           "en": "federation · alliance",
           "ja": "連盟・同盟",
-          "de": "Bündnis, Allianz"
+          "de": "Bündnis, Allianz",
+          "fr": "alliance, coalition, ligue"
         }
       },
       {
@@ -3903,7 +4229,8 @@
           "zh": "連續・繼續",
           "en": "continuation · continuing",
           "ja": "連続・継続",
-          "de": "ununterbrochen, kontinuierlich"
+          "de": "ununterbrochen, kontinuierlich",
+          "fr": "continu, sans interruption"
         }
       },
       {
@@ -3914,7 +4241,8 @@
           "zh": "關聯",
           "en": "relation, connection",
           "ja": "関連",
-          "de": "bezüglich, zusammenhängend"
+          "de": "bezüglich, zusammenhängend",
+          "fr": "lié, concerné, relatif à"
         }
       },
       {
@@ -3925,7 +4253,8 @@
           "zh": "宴會・聚會",
           "en": "banquet · gathering",
           "ja": "宴会・集まり",
-          "de": "Feier, Festlichkeit"
+          "de": "Feier, Festlichkeit",
+          "fr": "fête, célébration, réjouissance"
         }
       }
     ]
@@ -3942,7 +4271,8 @@
           "zh": "利益",
           "en": "benefit",
           "ja": "利益",
-          "de": "Nutzen, Vorteil, Interesse"
+          "de": "Nutzen, Vorteil, Interesse",
+          "fr": "intérêt, avantage, bénéfice"
         }
       },
       {
@@ -3953,7 +4283,8 @@
           "zh": "利潤",
           "en": "profit",
           "ja": "利潤",
-          "de": "Gewinn, Profit"
+          "de": "Gewinn, Profit",
+          "fr": "profit, bénéfice"
         }
       },
       {
@@ -3964,7 +4295,8 @@
           "zh": "利用·濫用",
           "en": "use/abuse",
           "ja": "利用・悪用",
-          "de": "ausnutzen, nutzen"
+          "de": "ausnutzen, nutzen",
+          "fr": "exploiter, profiter de, abuser de"
         }
       },
       {
@@ -3975,7 +4307,8 @@
           "zh": "優勢·優點",
           "en": "advantage",
           "ja": "優位・利点",
-          "de": "Vorteil, Überlegenheit"
+          "de": "Vorteil, Überlegenheit",
+          "fr": "avantage, atout"
         }
       },
       {
@@ -3986,7 +4319,8 @@
           "zh": "利害·優缺點",
           "en": "advantages and disadvantages",
           "ja": "利害・長所短所",
-          "de": "Vor- und Nachteile, schlagkräftig"
+          "de": "Vor- und Nachteile, schlagkräftig",
+          "fr": "avantages et inconvénients, redoutable"
         }
       }
     ]
@@ -4003,7 +4337,8 @@
           "zh": "理由",
           "en": "reason",
           "ja": "理由",
-          "de": "Grund, Ursache, Anlass"
+          "de": "Grund, Ursache, Anlass",
+          "fr": "raison, motif"
         }
       },
       {
@@ -4014,7 +4349,8 @@
           "zh": "理論·邏輯",
           "en": "theory/logic",
           "ja": "理論・論理",
-          "de": "Theorie, Argumentation"
+          "de": "Theorie, Argumentation",
+          "fr": "théorie, argumentation"
         }
       },
       {
@@ -4025,7 +4361,8 @@
           "zh": "異常",
           "en": "abnormal",
           "ja": "異常",
-          "de": "Ideal, Wunschvorstellung"
+          "de": "Ideal, Wunschvorstellung",
+          "fr": "idéal"
         }
       },
       {
@@ -4036,7 +4373,8 @@
           "zh": "理論",
           "en": "theory",
           "ja": "理論",
-          "de": "Theorie"
+          "de": "Theorie",
+          "fr": "théorie"
         }
       },
       {
@@ -4047,7 +4385,8 @@
           "zh": "理性",
           "en": "reason",
           "ja": "理性",
-          "de": "Vernunft, Verstand"
+          "de": "Vernunft, Verstand",
+          "fr": "raison, intellect"
         }
       },
       {
@@ -4058,7 +4397,8 @@
           "zh": "履歷",
           "en": "resume/history",
           "ja": "履歴",
-          "de": "Lebenslauf, Werdegang"
+          "de": "Lebenslauf, Werdegang",
+          "fr": "curriculum vitae, biographie"
         }
       }
     ]
@@ -4075,7 +4415,8 @@
           "zh": "明白・透明",
           "en": "clear, transparent",
           "ja": "明白・透明",
-          "de": "transparent, eindeutig, klar"
+          "de": "transparent, eindeutig, klar",
+          "fr": "transparent, limpide, clair"
         }
       },
       {
@@ -4086,7 +4427,8 @@
           "zh": "明證・證據",
           "en": "evidence, proof",
           "ja": "明証・証拠",
-          "de": "Beweis, Beleg"
+          "de": "Beweis, Beleg",
+          "fr": "preuve, témoignage"
         }
       },
       {
@@ -4097,7 +4439,8 @@
           "zh": "洗清冤屈",
           "en": "clearing one's name",
           "ja": "汚名をそそぐこと",
-          "de": "Rehabilitation, Unschuld beweisen"
+          "de": "Rehabilitation, Unschuld beweisen",
+          "fr": "innocenter, réhabiliter"
         }
       },
       {
@@ -4108,7 +4451,8 @@
           "zh": "插圖·例示",
           "en": "illustration, example",
           "ja": "挿絵·例示",
-          "de": "Illustration, anschaulich machen"
+          "de": "Illustration, anschaulich machen",
+          "fr": "illustration, illustrer"
         }
       },
       {
@@ -4119,7 +4463,8 @@
           "zh": "明辨力・智慧",
           "en": "discernment, wisdom",
           "ja": "明晰さ・知恵",
-          "de": "Weisheit, Urteilskraft"
+          "de": "Weisheit, Urteilskraft",
+          "fr": "sagesse, clairvoyance"
         }
       },
       {
@@ -4130,7 +4475,8 @@
           "zh": "文明",
           "en": "civilization",
           "ja": "文明",
-          "de": "Zivilisation"
+          "de": "Zivilisation",
+          "fr": "civilisation"
         }
       }
     ]
@@ -4147,7 +4493,8 @@
           "zh": "美術",
           "en": "art, fine arts",
           "ja": "美術",
-          "de": "bildende Kunst"
+          "de": "bildende Kunst",
+          "fr": "beaux-arts"
         }
       },
       {
@@ -4158,7 +4505,8 @@
           "zh": "化妝品",
           "en": "cosmetics",
           "ja": "化粧品",
-          "de": "Kosmetik, Schönheitspflege"
+          "de": "Kosmetik, Schönheitspflege",
+          "fr": "cosmétique, produits de beauté"
         }
       },
       {
@@ -4169,7 +4517,8 @@
           "zh": "美人",
           "en": "beautiful person",
           "ja": "美人",
-          "de": "Schönheit, schöne Frau"
+          "de": "Schönheit, schöne Frau",
+          "fr": "beauté, belle femme"
         }
       },
       {
@@ -4180,7 +4529,8 @@
           "zh": "令人滿意・圓滿",
           "en": "satisfactory, harmonious",
           "ja": "満足・円満",
-          "de": "vollkommen zufriedenstellend"
+          "de": "vollkommen zufriedenstellend",
+          "fr": "parfaitement satisfaisant, comblé"
         }
       },
       {
@@ -4191,7 +4541,8 @@
           "zh": "美感",
           "en": "aesthetic sense",
           "ja": "美的感覚",
-          "de": "Schönheitssinn, Ästhetik"
+          "de": "Schönheitssinn, Ästhetik",
+          "fr": "sens esthétique"
         }
       }
     ]
@@ -4208,7 +4559,8 @@
           "zh": "銀行",
           "en": "bank",
           "ja": "銀行",
-          "de": "Bank"
+          "de": "Bank",
+          "fr": "banque"
         }
       },
       {
@@ -4219,7 +4571,8 @@
           "zh": "預算",
           "en": "budget",
           "ja": "予算",
-          "de": "Haushalt, Budget"
+          "de": "Haushalt, Budget",
+          "fr": "budget"
         }
       },
       {
@@ -4230,7 +4583,8 @@
           "zh": "國庫",
           "en": "national treasury",
           "ja": "国庫",
-          "de": "Staatskasse, Fiskus"
+          "de": "Staatskasse, Fiskus",
+          "fr": "trésor public"
         }
       },
       {
@@ -4241,7 +4595,8 @@
           "zh": "支票",
           "en": "check (bank)",
           "ja": "小切手",
-          "de": "Bankscheck, Scheck"
+          "de": "Bankscheck, Scheck",
+          "fr": "chèque bancaire"
         }
       },
       {
@@ -4252,7 +4607,8 @@
           "zh": "基金‧資金",
           "en": "fund, capital",
           "ja": "基金・資金",
-          "de": "Kassenbestand, Geldmittel"
+          "de": "Kassenbestand, Geldmittel",
+          "fr": "fonds, trésorerie"
         }
       }
     ]
@@ -4269,7 +4625,8 @@
           "zh": "外交",
           "en": "diplomacy",
           "ja": "外交",
-          "de": "Diplomatie"
+          "de": "Diplomatie",
+          "fr": "diplomatie"
         }
       },
       {
@@ -4280,7 +4637,8 @@
           "zh": "外語",
           "en": "foreign language",
           "ja": "外国語",
-          "de": "Fremdsprache"
+          "de": "Fremdsprache",
+          "fr": "langue étrangère"
         }
       },
       {
@@ -4291,7 +4649,8 @@
           "zh": "外幣",
           "en": "foreign currency",
           "ja": "外貨",
-          "de": "Devisen, Fremdwährung"
+          "de": "Devisen, Fremdwährung",
+          "fr": "devise étrangère"
         }
       },
       {
@@ -4302,7 +4661,8 @@
           "zh": "外國",
           "en": "foreign country",
           "ja": "外国",
-          "de": "Ausland, fremdes Land"
+          "de": "Ausland, fremdes Land",
+          "fr": "pays étranger, étranger"
         }
       },
       {
@@ -4313,7 +4673,8 @@
           "zh": "外貌",
           "en": "appearance",
           "ja": "外見",
-          "de": "Aussehen, äußere Erscheinung"
+          "de": "Aussehen, äußere Erscheinung",
+          "fr": "apparence physique, aspect extérieur"
         }
       },
       {
@@ -4324,7 +4685,8 @@
           "zh": "郊區·近郊",
           "en": "outskirts/suburbs",
           "ja": "郊外",
-          "de": "Vorort, Stadtrand"
+          "de": "Vorort, Stadtrand",
+          "fr": "banlieue, périphérie"
         }
       }
     ]
@@ -4341,7 +4703,8 @@
           "zh": "原因",
           "en": "cause",
           "ja": "原因",
-          "de": "Ursache, Anlass"
+          "de": "Ursache, Anlass",
+          "fr": "cause, raison"
         }
       },
       {
@@ -4352,7 +4715,8 @@
           "zh": "原則",
           "en": "principle",
           "ja": "原則",
-          "de": "Prinzip, Grundsatz"
+          "de": "Prinzip, Grundsatz",
+          "fr": "principe, règle"
         }
       },
       {
@@ -4363,7 +4727,8 @@
           "zh": "原料",
           "en": "raw material",
           "ja": "原料",
-          "de": "Rohstoff, Rohmaterial"
+          "de": "Rohstoff, Rohmaterial",
+          "fr": "matière première"
         }
       },
       {
@@ -4374,7 +4739,8 @@
           "zh": "原子",
           "en": "atom",
           "ja": "原子",
-          "de": "Atom"
+          "de": "Atom",
+          "fr": "atome"
         }
       },
       {
@@ -4385,7 +4751,8 @@
           "zh": "完整",
           "en": "wholeness/integrity",
           "ja": "全さ・健全さ",
-          "de": "unversehrt, intakt"
+          "de": "unversehrt, intakt",
+          "fr": "intact, indemne"
         }
       },
       {
@@ -4396,7 +4763,8 @@
           "zh": "原始",
           "en": "primitive",
           "ja": "原始",
-          "de": "ursprünglich, urzeitlich"
+          "de": "ursprünglich, urzeitlich",
+          "fr": "primitif, originel"
         }
       },
       {
@@ -4407,7 +4775,8 @@
           "zh": "元素",
           "en": "element",
           "ja": "元素",
-          "de": "chemisches Element"
+          "de": "chemisches Element",
+          "fr": "élément chimique"
         }
       }
     ]
@@ -4424,7 +4793,8 @@
           "zh": "人民",
           "en": "people",
           "ja": "人民",
-          "de": "Volk, Bevölkerung"
+          "de": "Volk, Bevölkerung",
+          "fr": "peuple"
         }
       },
       {
@@ -4435,7 +4805,8 @@
           "zh": "職員",
           "en": "staff",
           "ja": "職員",
-          "de": "Mitarbeiter, Angestellter"
+          "de": "Mitarbeiter, Angestellter",
+          "fr": "employé, personnel"
         }
       },
       {
@@ -4446,7 +4817,8 @@
           "zh": "人物",
           "en": "person",
           "ja": "人物",
-          "de": "Persönlichkeit, Figur"
+          "de": "Persönlichkeit, Figur",
+          "fr": "personnage, personnalité"
         }
       },
       {
@@ -4457,7 +4829,8 @@
           "zh": "人類",
           "en": "mankind",
           "ja": "人類",
-          "de": "Menschheit"
+          "de": "Menschheit",
+          "fr": "humanité, genre humain"
         }
       },
       {
@@ -4468,7 +4841,8 @@
           "zh": "人格",
           "en": "character",
           "ja": "人格",
-          "de": "Persönlichkeit, Charakter"
+          "de": "Persönlichkeit, Charakter",
+          "fr": "personnalité, dignité morale"
         }
       },
       {
@@ -4479,7 +4853,8 @@
           "zh": "人權",
           "en": "human rights",
           "ja": "人権",
-          "de": "Menschenrechte"
+          "de": "Menschenrechte",
+          "fr": "droits de l'homme"
         }
       },
       {
@@ -4490,7 +4865,8 @@
           "zh": "緣分",
           "en": "bond/fate",
           "ja": "縁",
-          "de": "Schicksalsverbindung, Fügung"
+          "de": "Schicksalsverbindung, Fügung",
+          "fr": "affinité prédestinée, lien du destin"
         }
       },
       {
@@ -4501,7 +4877,8 @@
           "zh": "人道的",
           "en": "humane",
           "ja": "人道的",
-          "de": "humanitär, menschenfreundlich"
+          "de": "humanitär, menschenfreundlich",
+          "fr": "humanitaire, humain"
         }
       },
       {
@@ -4512,7 +4889,8 @@
           "zh": "人才",
           "en": "talent (person)",
           "ja": "人材",
-          "de": "Fachkraft, Talent"
+          "de": "Fachkraft, Talent",
+          "fr": "talent, personne compétente"
         }
       },
       {
@@ -4523,7 +4901,8 @@
           "zh": "人事費·勞動力",
           "en": "labor cost/workforce",
           "ja": "人件費・労働力",
-          "de": "Arbeitskraft, Personalkosten"
+          "de": "Arbeitskraft, Personalkosten",
+          "fr": "main-d'œuvre, coût de travail"
         }
       }
     ]
@@ -4540,7 +4919,8 @@
           "zh": "法律",
           "en": "law; statute",
           "ja": "法律",
-          "de": "Gesetz, Rechtsordnung"
+          "de": "Gesetz, Rechtsordnung",
+          "fr": "loi, législation"
         }
       },
       {
@@ -4551,7 +4931,8 @@
           "zh": "法理·法律的",
           "en": "legal principle; legal",
           "ja": "法理・法的",
-          "de": "Rechtslehre, juristisch"
+          "de": "Rechtslehre, juristisch",
+          "fr": "juridique, droit"
         }
       },
       {
@@ -4562,7 +4943,8 @@
           "zh": "法醫學",
           "en": "forensic medicine",
           "ja": "法医学",
-          "de": "Rechtsmedizin"
+          "de": "Rechtsmedizin",
+          "fr": "médecine légale"
         }
       },
       {
@@ -4573,7 +4955,8 @@
           "zh": "法權·法治",
           "en": "legal authority; rule of law",
           "ja": "法権・法治",
-          "de": "Rechtsordnung, Rechtsstaatlichkeit"
+          "de": "Rechtsordnung, Rechtsstaatlichkeit",
+          "fr": "État de droit, autorité de la loi"
         }
       },
       {
@@ -4584,7 +4967,8 @@
           "zh": "法制",
           "en": "legal system",
           "ja": "法制",
-          "de": "Gesetzgebung, Rechtsordnung"
+          "de": "Gesetzgebung, Rechtsordnung",
+          "fr": "régime juridique, législation"
         }
       }
     ]
@@ -4601,7 +4985,8 @@
           "zh": "發展",
           "en": "development",
           "ja": "発展",
-          "de": "Entwicklung, entfalten"
+          "de": "Entwicklung, entfalten",
+          "fr": "développement, développer"
         }
       },
       {
@@ -4612,7 +4997,8 @@
           "zh": "發表・發言",
           "en": "presentation, statement",
           "ja": "発表・発言",
-          "de": "Redebeitrag, Äußerung, vortragen"
+          "de": "Redebeitrag, Äußerung, vortragen",
+          "fr": "prendre la parole, discours"
         }
       },
       {
@@ -4623,7 +5009,8 @@
           "zh": "發現",
           "en": "discovery",
           "ja": "発見",
-          "de": "Entdeckung, entdecken"
+          "de": "Entdeckung, entdecken",
+          "fr": "découverte, découvrir"
         }
       },
       {
@@ -4634,7 +5021,8 @@
           "zh": "發明",
           "en": "invention",
           "ja": "発明",
-          "de": "Erfindung, erfinden"
+          "de": "Erfindung, erfinden",
+          "fr": "invention, inventer"
         }
       },
       {
@@ -4645,7 +5033,8 @@
           "zh": "發生",
           "en": "occurrence",
           "ja": "発生",
-          "de": "Entstehung, auftreten"
+          "de": "Entstehung, auftreten",
+          "fr": "survenir, se produire"
         }
       },
       {
@@ -4656,7 +5045,8 @@
           "zh": "發行",
           "en": "publication, issuance",
           "ja": "発行",
-          "de": "Herausgabe, Veröffentlichung"
+          "de": "Herausgabe, Veröffentlichung",
+          "fr": "publication, émission, diffusion"
         }
       },
       {
@@ -4667,7 +5057,8 @@
           "zh": "發音",
           "en": "pronunciation",
           "ja": "発音",
-          "de": "Aussprache"
+          "de": "Aussprache",
+          "fr": "prononciation"
         }
       }
     ]
@@ -4684,7 +5075,8 @@
           "zh": "風格",
           "en": "style",
           "ja": "スタイル·風格",
-          "de": "Stil, Fasson"
+          "de": "Stil, Fasson",
+          "fr": "style, allure"
         }
       },
       {
@@ -4695,7 +5087,8 @@
           "zh": "風俗",
           "en": "custom",
           "ja": "風俗",
-          "de": "Brauch, Sitte"
+          "de": "Brauch, Sitte",
+          "fr": "coutume, mœurs"
         }
       },
       {
@@ -4706,7 +5099,8 @@
           "zh": "運動·風潮",
           "en": "movement/trend",
           "ja": "運動・風潮",
-          "de": "Bewegung, Strömung"
+          "de": "Bewegung, Strömung",
+          "fr": "mouvement, courant"
         }
       },
       {
@@ -4717,7 +5111,8 @@
           "zh": "豐富",
           "en": "abundance",
           "ja": "豊富",
-          "de": "reichhaltig, vielfältig"
+          "de": "reichhaltig, vielfältig",
+          "fr": "riche, abondant, varié"
         }
       },
       {
@@ -4728,7 +5123,8 @@
           "zh": "風景",
           "en": "scenery",
           "ja": "風景",
-          "de": "Landschaft, Szenerie"
+          "de": "Landschaft, Szenerie",
+          "fr": "paysage"
         }
       },
       {
@@ -4739,7 +5135,8 @@
           "zh": "風波",
           "en": "storm",
           "ja": "風波",
-          "de": "Sturm, Fährnisse, Wirren"
+          "de": "Sturm, Fährnisse, Wirren",
+          "fr": "tempête, vicissitudes"
         }
       },
       {
@@ -4750,7 +5147,8 @@
           "zh": "封建",
           "en": "feudal",
           "ja": "封建",
-          "de": "feudal, Feudalismus"
+          "de": "feudal, Feudalismus",
+          "fr": "féodal, féodalité"
         }
       }
     ]
@@ -4767,7 +5165,8 @@
           "zh": "方法",
           "en": "method",
           "ja": "方法",
-          "de": "Methode, Verfahren"
+          "de": "Methode, Verfahren",
+          "fr": "méthode, procédé"
         }
       },
       {
@@ -4778,7 +5177,8 @@
           "zh": "手段·工具",
           "en": "means, tool",
           "ja": "手段·道具",
-          "de": "Mittel, Verkehrsmittel, Werkzeug"
+          "de": "Mittel, Verkehrsmittel, Werkzeug",
+          "fr": "moyen, véhicule, instrument"
         }
       },
       {
@@ -4789,7 +5189,8 @@
           "zh": "方向",
           "en": "direction",
           "ja": "方向",
-          "de": "Richtung, Orientierung"
+          "de": "Richtung, Orientierung",
+          "fr": "direction, orientation"
         }
       },
       {
@@ -4800,7 +5201,8 @@
           "zh": "方案",
           "en": "plan; method",
           "ja": "方策",
-          "de": "Entwurf, Konzept, Plan"
+          "de": "Entwurf, Konzept, Plan",
+          "fr": "plan, proposition, projet"
         }
       },
       {
@@ -4811,7 +5213,8 @@
           "zh": "方面・側面",
           "en": "aspect, side",
           "ja": "方面・側面",
-          "de": "Hinsicht, Aspekt, Seite"
+          "de": "Hinsicht, Aspekt, Seite",
+          "fr": "aspect, domaine, point de vue"
         }
       },
       {
@@ -4822,7 +5225,8 @@
           "zh": "方式",
           "en": "way, manner",
           "ja": "方式",
-          "de": "Art und Weise, Methode"
+          "de": "Art und Weise, Methode",
+          "fr": "mode, méthode, modalité"
         }
       }
     ]
@@ -4839,7 +5243,8 @@
           "zh": "關係",
           "en": "relationship",
           "ja": "関係",
-          "de": "Beziehung, Verhältnis"
+          "de": "Beziehung, Verhältnis",
+          "fr": "relation, rapport"
         }
       },
       {
@@ -4850,7 +5255,8 @@
           "zh": "觀點",
           "en": "viewpoint",
           "ja": "観点",
-          "de": "Standpunkt, Ansicht"
+          "de": "Standpunkt, Ansicht",
+          "fr": "point de vue, opinion"
         }
       },
       {
@@ -4861,7 +5267,8 @@
           "zh": "關心",
           "en": "interest",
           "ja": "関心",
-          "de": "Interesse, Aufmerksamkeit"
+          "de": "Interesse, Aufmerksamkeit",
+          "fr": "s'intéresser, attention, sollicitude"
         }
       },
       {
@@ -4872,7 +5279,8 @@
           "zh": "重要",
           "en": "importance",
           "ja": "重要",
-          "de": "wichtig, bedeutend"
+          "de": "wichtig, bedeutend",
+          "fr": "important, primordial"
         }
       },
       {
@@ -4883,7 +5291,8 @@
           "zh": "觀察",
           "en": "observation",
           "ja": "観察",
-          "de": "Beobachtung, beobachten"
+          "de": "Beobachtung, beobachten",
+          "fr": "observation, observer"
         }
       },
       {
@@ -4894,7 +5303,8 @@
           "zh": "官僚‧公職者",
           "en": "bureaucrat, official",
           "ja": "官僚・公職者",
-          "de": "Beamter, Regierungsbeamter"
+          "de": "Beamter, Regierungsbeamter",
+          "fr": "fonctionnaire, haut responsable"
         }
       }
     ]
@@ -4911,7 +5321,8 @@
           "zh": "國家",
           "en": "nation, country",
           "ja": "国家",
-          "de": "Nation, Staat"
+          "de": "Nation, Staat",
+          "fr": "pays, nation, État"
         }
       },
       {
@@ -4922,7 +5333,8 @@
           "zh": "國際",
           "en": "international",
           "ja": "国際",
-          "de": "international"
+          "de": "international",
+          "fr": "international"
         }
       },
       {
@@ -4933,7 +5345,8 @@
           "zh": "國會",
           "en": "National Assembly",
           "ja": "国会",
-          "de": "Nationalversammlung, Parlament"
+          "de": "Nationalversammlung, Parlament",
+          "fr": "Assemblée nationale, parlement"
         }
       },
       {
@@ -4944,7 +5357,8 @@
           "zh": "國防",
           "en": "national defense",
           "ja": "国防",
-          "de": "Landesverteidigung"
+          "de": "Landesverteidigung",
+          "fr": "défense nationale"
         }
       },
       {
@@ -4955,7 +5369,8 @@
           "zh": "國歌",
           "en": "anthem (national anthem)",
           "ja": "国歌",
-          "de": "Nationalhymne"
+          "de": "Nationalhymne",
+          "fr": "hymne national"
         }
       },
       {
@@ -4966,7 +5381,8 @@
           "zh": "國旗",
           "en": "national flag",
           "ja": "国旗",
-          "de": "Nationalflagge"
+          "de": "Nationalflagge",
+          "fr": "drapeau national"
         }
       },
       {
@@ -4977,7 +5393,8 @@
           "zh": "國籍",
           "en": "nationality",
           "ja": "国籍",
-          "de": "Staatsangehörigkeit, Staatsbürgerschaft"
+          "de": "Staatsangehörigkeit, Staatsbürgerschaft",
+          "fr": "nationalité"
         }
       }
     ]
@@ -4994,7 +5411,8 @@
           "zh": "權利",
           "en": "right",
           "ja": "権利",
-          "de": "Rechte, Anspruch"
+          "de": "Rechte, Anspruch",
+          "fr": "droits, intérêts, prérogatives"
         }
       },
       {
@@ -5005,7 +5423,8 @@
           "zh": "權力",
           "en": "power",
           "ja": "権力",
-          "de": "Macht, Gewalt"
+          "de": "Macht, Gewalt",
+          "fr": "pouvoir, puissance"
         }
       },
       {
@@ -5016,7 +5435,8 @@
           "zh": "權限",
           "en": "authority",
           "ja": "権限",
-          "de": "Befugnis, Kompetenz"
+          "de": "Befugnis, Kompetenz",
+          "fr": "compétence, autorité, attributions"
         }
       },
       {
@@ -5027,7 +5447,8 @@
           "zh": "權威",
           "en": "authority",
           "ja": "権威",
-          "de": "Autorität, Machtbefugnis"
+          "de": "Autorität, Machtbefugnis",
+          "fr": "autorité, prestige"
         }
       },
       {
@@ -5038,7 +5459,8 @@
           "zh": "權限‧職權",
           "en": "authority, official power",
           "ja": "権限・職権",
-          "de": "Amtsbefugnis, Vollmacht"
+          "de": "Amtsbefugnis, Vollmacht",
+          "fr": "pouvoir exécutif, autorité légale"
         }
       }
     ]
@@ -5055,7 +5477,8 @@
           "zh": "創造",
           "en": "creation",
           "ja": "創造",
-          "de": "Schöpfung, Kreativität"
+          "de": "Schöpfung, Kreativität",
+          "fr": "création, créativité"
         }
       },
       {
@@ -5066,7 +5489,8 @@
           "zh": "創作",
           "en": "creation",
           "ja": "創作",
-          "de": "künstlerisches Schaffen, Werk"
+          "de": "künstlerisches Schaffen, Werk",
+          "fr": "créer, œuvre artistique, composer"
         }
       },
       {
@@ -5077,7 +5501,8 @@
           "zh": "構想・點子",
           "en": "idea, notion",
           "ja": "発想・アイデア",
-          "de": "Initiative, Einfall, Idee"
+          "de": "Initiative, Einfall, Idee",
+          "fr": "initiative, idée originale"
         }
       },
       {
@@ -5088,7 +5513,8 @@
           "zh": "創立",
           "en": "founding",
           "ja": "創立",
-          "de": "Gründung, ins Leben rufen"
+          "de": "Gründung, ins Leben rufen",
+          "fr": "fonder, créer, établissement"
         }
       },
       {
@@ -5099,7 +5525,8 @@
           "zh": "明智",
           "en": "wisdom",
           "ja": "賢明さ",
-          "de": "scharfsinnig, weise, besonnen"
+          "de": "scharfsinnig, weise, besonnen",
+          "fr": "perspicace, clairvoyant, lucide"
         }
       },
       {
@@ -5110,7 +5537,8 @@
           "zh": "發明・專利",
           "en": "invention, patent",
           "ja": "発明・特許",
-          "de": "Erfindung, Patent"
+          "de": "Erfindung, Patent",
+          "fr": "invention, brevet"
         }
       }
     ]
@@ -5127,7 +5555,8 @@
           "zh": "大學生",
           "en": "university student",
           "ja": "大学生",
-          "de": "Student, Studentin"
+          "de": "Student, Studentin",
+          "fr": "étudiant, étudiante"
         }
       },
       {
@@ -5138,7 +5567,8 @@
           "zh": "生日",
           "en": "birthday",
           "ja": "誕生日",
-          "de": "Geburtstag"
+          "de": "Geburtstag",
+          "fr": "anniversaire"
         }
       },
       {
@@ -5149,7 +5579,8 @@
           "zh": "生活",
           "en": "life, living",
           "ja": "生活",
-          "de": "Alltag, Lebensweise, Aktivität"
+          "de": "Alltag, Lebensweise, Aktivität",
+          "fr": "vie quotidienne, activités"
         }
       },
       {
@@ -5160,7 +5591,8 @@
           "zh": "生物",
           "en": "living thing",
           "ja": "生物",
-          "de": "Lebewesen, Organismus"
+          "de": "Lebewesen, Organismus",
+          "fr": "être vivant, organisme"
         }
       },
       {
@@ -5171,7 +5603,8 @@
           "zh": "生動感",
           "en": "vividness, liveliness",
           "ja": "生き生きした感じ",
-          "de": "lebendig, anschaulich"
+          "de": "lebendig, anschaulich",
+          "fr": "vivant, animé"
         }
       },
       {
@@ -5182,7 +5615,8 @@
           "zh": "生命",
           "en": "life",
           "ja": "命",
-          "de": "Leben, Existenz"
+          "de": "Leben, Existenz",
+          "fr": "vie, existence"
         }
       },
       {
@@ -5193,7 +5627,8 @@
           "zh": "生產·繁殖",
           "en": "production, reproduction",
           "ja": "生産·繁殖",
-          "de": "Fortpflanzung, Vermehrung"
+          "de": "Fortpflanzung, Vermehrung",
+          "fr": "reproduction, procréation"
         }
       },
       {
@@ -5204,7 +5639,8 @@
           "zh": "學生",
           "en": "student",
           "ja": "学生",
-          "de": "Schüler, Schülerin"
+          "de": "Schüler, Schülerin",
+          "fr": "élève, écolier"
         }
       }
     ]
@@ -5221,7 +5657,8 @@
           "zh": "事件",
           "en": "incident",
           "ja": "事件",
-          "de": "Ereignis, Vorfall, Event"
+          "de": "Ereignis, Vorfall, Event",
+          "fr": "événement, incident"
         }
       },
       {
@@ -5232,7 +5669,8 @@
           "zh": "事實",
           "en": "fact",
           "ja": "事実",
-          "de": "Wahrheit, Tatsache, Fakt"
+          "de": "Wahrheit, Tatsache, Fakt",
+          "fr": "vérité, fait, réalité"
         }
       },
       {
@@ -5243,7 +5681,8 @@
           "zh": "事業·經歷",
           "en": "business; career",
           "ja": "事業・経歴",
-          "de": "Karriere, Lebenswerk"
+          "de": "Karriere, Lebenswerk",
+          "fr": "carrière, œuvre de vie"
         }
       },
       {
@@ -5254,7 +5693,8 @@
           "zh": "事故·問題",
           "en": "accident; problem",
           "ja": "事故・問題",
-          "de": "Störung, Zwischenfall, Panne"
+          "de": "Störung, Zwischenfall, Panne",
+          "fr": "incident, panne, problème"
         }
       },
       {
@@ -5265,7 +5705,8 @@
           "zh": "事件·事情",
           "en": "incident; matter",
           "ja": "事件・出来事",
-          "de": "Vorfall, Sachverhalt, Angelegenheit"
+          "de": "Vorfall, Sachverhalt, Angelegenheit",
+          "fr": "affaire, fait, événement"
         }
       },
       {
@@ -5276,7 +5717,8 @@
           "zh": "事態·情況",
           "en": "situation, circumstances",
           "ja": "事態·状況",
-          "de": "Sachlage, Umstände"
+          "de": "Sachlage, Umstände",
+          "fr": "situation, état des choses"
         }
       }
     ]
@@ -5293,7 +5735,8 @@
           "zh": "作家",
           "en": "writer",
           "ja": "作家",
-          "de": "Autor, Verfasser"
+          "de": "Autor, Verfasser",
+          "fr": "auteur"
         }
       },
       {
@@ -5304,7 +5747,8 @@
           "zh": "作品",
           "en": "work (of art)",
           "ja": "作品",
-          "de": "Kunstwerk, Werk"
+          "de": "Kunstwerk, Werk",
+          "fr": "œuvre (d'art)"
         }
       },
       {
@@ -5315,7 +5759,8 @@
           "zh": "作用·效果",
           "en": "action/effect",
           "ja": "作用・効果",
-          "de": "Wirkung, Effekt"
+          "de": "Wirkung, Effekt",
+          "fr": "effet, action, utilité"
         }
       },
       {
@@ -5326,7 +5771,8 @@
           "zh": "影響·作用",
           "en": "influence/effect",
           "ja": "影響・作用",
-          "de": "Einwirkung, Einfluss"
+          "de": "Einwirkung, Einfluss",
+          "fr": "impact, influence, effet"
         }
       },
       {
@@ -5337,7 +5783,8 @@
           "zh": "作戰",
           "en": "operation",
           "ja": "作戦",
-          "de": "Operation, Gefecht"
+          "de": "Operation, Gefecht",
+          "fr": "combat, opération militaire"
         }
       },
       {
@@ -5348,7 +5795,8 @@
           "zh": "態度·風氣",
           "en": "attitude, ethos",
           "ja": "態度・気風",
-          "de": "Arbeitsweise, Auftreten"
+          "de": "Arbeitsweise, Auftreten",
+          "fr": "style de travail, allure, tenue"
         }
       }
     ]
@@ -5365,7 +5813,8 @@
           "zh": "財政·金融",
           "en": "finance/banking",
           "ja": "財政・金融",
-          "de": "Finanzen, Finanzwesen"
+          "de": "Finanzen, Finanzwesen",
+          "fr": "finances"
         }
       },
       {
@@ -5376,7 +5825,8 @@
           "zh": "才能",
           "en": "talent",
           "ja": "才能",
-          "de": "Talent, Begabung"
+          "de": "Talent, Begabung",
+          "fr": "talent, don"
         }
       },
       {
@@ -5387,7 +5837,8 @@
           "zh": "財產",
           "en": "property",
           "ja": "財産",
-          "de": "Vermögen, Eigentum"
+          "de": "Vermögen, Eigentum",
+          "fr": "patrimoine, biens, propriété"
         }
       },
       {
@@ -5398,7 +5849,8 @@
           "zh": "資料",
           "en": "data",
           "ja": "資料",
-          "de": "Unterlagen, Material, Dokument"
+          "de": "Unterlagen, Material, Dokument",
+          "fr": "document, données, documentation"
         }
       },
       {
@@ -5409,7 +5861,8 @@
           "zh": "贊助·支持",
           "en": "sponsorship / support",
           "ja": "後援・支援",
-          "de": "Sponsoring, finanzielle Unterstützung"
+          "de": "Sponsoring, finanzielle Unterstützung",
+          "fr": "subventionner, sponsoriser, parrainage"
         }
       },
       {
@@ -5420,7 +5873,8 @@
           "zh": "資源",
           "en": "resource",
           "ja": "資源",
-          "de": "Ressourcen, Bodenschätze"
+          "de": "Ressourcen, Bodenschätze",
+          "fr": "ressources"
         }
       }
     ]
@@ -5437,7 +5891,8 @@
           "zh": "心理",
           "en": "psychology, mental state",
           "ja": "心理",
-          "de": "Psychologie, Seelenleben"
+          "de": "Psychologie, Seelenleben",
+          "fr": "psychologie, état d'esprit"
         }
       },
       {
@@ -5448,7 +5903,8 @@
           "zh": "心情・情緒",
           "en": "feelings · mood",
           "ja": "心情・気分",
-          "de": "Gemütszustand, Stimmung"
+          "de": "Gemütszustand, Stimmung",
+          "fr": "humeur, état d'âme"
         }
       },
       {
@@ -5459,7 +5915,8 @@
           "zh": "心・靈魂",
           "en": "mind, soul",
           "ja": "心・魂",
-          "de": "Seele, Gemüt"
+          "de": "Seele, Gemüt",
+          "fr": "âme, esprit"
         }
       },
       {
@@ -5470,7 +5927,8 @@
           "zh": "心裡話·傾訴煩惱",
           "en": "inner thoughts, confiding worries",
           "ja": "本音·悩み相談",
-          "de": "Herzensgedanken, Sorgen anvertrauen"
+          "de": "Herzensgedanken, Sorgen anvertrauen",
+          "fr": "confidences, confier ses pensées"
         }
       },
       {
@@ -5481,7 +5939,8 @@
           "zh": "心血",
           "en": "heart and effort",
           "ja": "心血",
-          "de": "Herzblut, Hingabe"
+          "de": "Herzblut, Hingabe",
+          "fr": "dévouement, cœur à l'ouvrage"
         }
       },
       {
@@ -5492,7 +5951,8 @@
           "zh": "心靈",
           "en": "spirit, soul",
           "ja": "心霊",
-          "de": "Spiritualität, seelisch"
+          "de": "Spiritualität, seelisch",
+          "fr": "spirituel, spiritualité"
         }
       },
       {
@@ -5503,7 +5963,8 @@
           "zh": "中意・掌握",
           "en": "liking, mastering",
           "ja": "気に入る・習得",
-          "de": "begeistert, verinnerlicht"
+          "de": "begeistert, verinnerlicht",
+          "fr": "satisfait, intime conviction"
         }
       },
       {
@@ -5514,7 +5975,8 @@
           "zh": "心性・性格",
           "en": "disposition · personality",
           "ja": "心根・性格",
-          "de": "Gemüt, Wesensart"
+          "de": "Gemüt, Wesensart",
+          "fr": "caractère, tempérament"
         }
       }
     ]
@@ -5531,7 +5993,8 @@
           "zh": "集中",
           "en": "concentration",
           "ja": "集中",
-          "de": "Konzentration, fokussieren"
+          "de": "Konzentration, fokussieren",
+          "fr": "se concentrer, concentration"
         }
       },
       {
@@ -5542,7 +6005,8 @@
           "zh": "集團·團體",
           "en": "group/organization",
           "ja": "集団・団体",
-          "de": "Kollektiv, Gruppe"
+          "de": "Kollektiv, Gruppe",
+          "fr": "collectif, groupe"
         }
       },
       {
@@ -5553,7 +6017,8 @@
           "zh": "習慣·風俗",
           "en": "habit, custom",
           "ja": "習慣·慣習",
-          "de": "Gewohnheit, Brauch"
+          "de": "Gewohnheit, Brauch",
+          "fr": "coutume, habitude"
         }
       },
       {
@@ -5564,7 +6029,8 @@
           "zh": "訓練·練習",
           "en": "training / practice",
           "ja": "訓練・練習",
-          "de": "Training, Übung"
+          "de": "Training, Übung",
+          "fr": "entraînement, s'exercer"
         }
       },
       {
@@ -5575,7 +6041,8 @@
           "zh": "集團‧企業集團",
           "en": "group, conglomerate",
           "ja": "グループ・企業集団",
-          "de": "Konzern, Unternehmensgruppe"
+          "de": "Konzern, Unternehmensgruppe",
+          "fr": "groupe, conglomérat"
         }
       },
       {
@@ -5586,7 +6053,8 @@
           "zh": "學習",
           "en": "learning",
           "ja": "学習",
-          "de": "Lernen, Studium"
+          "de": "Lernen, Studium",
+          "fr": "étudier, apprentissage"
         }
       }
     ]
@@ -5603,7 +6071,8 @@
           "zh": "成功",
           "en": "success",
           "ja": "成功",
-          "de": "Erfolg"
+          "de": "Erfolg",
+          "fr": "succès, réussite"
         }
       },
       {
@@ -5614,7 +6083,8 @@
           "zh": "城市",
           "en": "city",
           "ja": "都市",
-          "de": "Stadt, Großstadt"
+          "de": "Stadt, Großstadt",
+          "fr": "ville"
         }
       },
       {
@@ -5625,7 +6095,8 @@
           "zh": "成員",
           "en": "member",
           "ja": "構成員",
-          "de": "Mitglied"
+          "de": "Mitglied",
+          "fr": "membre"
         }
       },
       {
@@ -5636,7 +6107,8 @@
           "zh": "成績·業績",
           "en": "grades, achievement",
           "ja": "成績·業績",
-          "de": "Leistung, Errungenschaft"
+          "de": "Leistung, Errungenschaft",
+          "fr": "résultats, accomplissement, performance"
         }
       },
       {
@@ -5647,7 +6119,8 @@
           "zh": "設立",
           "en": "establishment",
           "ja": "設立",
-          "de": "Gründung, Errichtung"
+          "de": "Gründung, Errichtung",
+          "fr": "fonder, créer, établissement"
         }
       },
       {
@@ -5658,7 +6131,8 @@
           "zh": "誠實·忠信",
           "en": "sincerity, faithfulness",
           "ja": "誠実さ",
-          "de": "ehrlich, aufrichtig"
+          "de": "ehrlich, aufrichtig",
+          "fr": "sincère, honnête"
         }
       },
       {
@@ -5669,7 +6143,8 @@
           "zh": "熟練",
           "en": "proficient",
           "ja": "熟達している",
-          "de": "versiert, meisterhaft, routiniert"
+          "de": "versiert, meisterhaft, routiniert",
+          "fr": "compétent, maîtriser, chevronné"
         }
       },
       {
@@ -5680,7 +6155,8 @@
           "zh": "誠心誠意",
           "en": "being heartfelt",
           "ja": "心がこもっていること",
-          "de": "aufrichtig, herzlich"
+          "de": "aufrichtig, herzlich",
+          "fr": "sincère, du fond du cœur"
         }
       }
     ]
@@ -5697,7 +6173,8 @@
           "zh": "世界",
           "en": "world",
           "ja": "世界",
-          "de": "Welt"
+          "de": "Welt",
+          "fr": "monde"
         }
       },
       {
@@ -5708,7 +6185,8 @@
           "zh": "世紀",
           "en": "century",
           "ja": "世紀",
-          "de": "Jahrhundert"
+          "de": "Jahrhundert",
+          "fr": "siècle"
         }
       },
       {
@@ -5719,7 +6197,8 @@
           "zh": "世代",
           "en": "generation",
           "ja": "世代",
-          "de": "Generation"
+          "de": "Generation",
+          "fr": "génération"
         }
       },
       {
@@ -5730,7 +6209,8 @@
           "zh": "勢力",
           "en": "power, influence",
           "ja": "勢力",
-          "de": "Macht, Einfluss"
+          "de": "Macht, Einfluss",
+          "fr": "force, influence, puissance"
         }
       },
       {
@@ -5741,7 +6221,8 @@
           "zh": "世事·時事",
           "en": "worldly affairs, current events",
           "ja": "世事·時事",
-          "de": "Zeitgeschehen, Weltgeschehen"
+          "de": "Zeitgeschehen, Weltgeschehen",
+          "fr": "affaires du monde, actualité"
         }
       }
     ]
@@ -5758,7 +6239,8 @@
           "zh": "體育·運動",
           "en": "physical education, sports",
           "ja": "体育・スポーツ",
-          "de": "Sport"
+          "de": "Sport",
+          "fr": "sport"
         }
       },
       {
@@ -5769,7 +6251,8 @@
           "zh": "表現·表達",
           "en": "expression, showing",
           "ja": "表現・表すこと",
-          "de": "Ausdruck, Darstellung"
+          "de": "Ausdruck, Darstellung",
+          "fr": "exprimer, manifester, refléter"
         }
       },
       {
@@ -5780,7 +6263,8 @@
           "zh": "體質·體格",
           "en": "constitution, physique",
           "ja": "体質・体格",
-          "de": "Konstitution, Körperbau"
+          "de": "Konstitution, Körperbau",
+          "fr": "constitution physique"
         }
       },
       {
@@ -5791,7 +6275,8 @@
           "zh": "類型·種類",
           "en": "genre/type",
           "ja": "ジャンル・種類",
-          "de": "Genre, Gattung"
+          "de": "Genre, Gattung",
+          "fr": "genre, catégorie"
         }
       },
       {
@@ -5802,7 +6287,8 @@
           "zh": "體力",
           "en": "physical strength",
           "ja": "体力",
-          "de": "physische Kraft, Ausdauer"
+          "de": "physische Kraft, Ausdauer",
+          "fr": "force physique, endurance"
         }
       },
       {
@@ -5813,7 +6299,8 @@
           "zh": "體制",
           "en": "system",
           "ja": "体制",
-          "de": "System, Staatsform, Ordnung"
+          "de": "System, Staatsform, Ordnung",
+          "fr": "régime, institution, système politique"
         }
       }
     ]
@@ -5830,7 +6317,8 @@
           "zh": "市場",
           "en": "market",
           "ja": "市場",
-          "de": "Markt"
+          "de": "Markt",
+          "fr": "marché"
         }
       },
       {
@@ -5841,7 +6329,8 @@
           "zh": "邑·小城鎮",
           "en": "town/small city",
           "ja": "町・小都市",
-          "de": "Kleinstadt, Ortschaft"
+          "de": "Kleinstadt, Ortschaft",
+          "fr": "bourg, petite ville"
         }
       },
       {
@@ -5852,7 +6341,8 @@
           "zh": "城鎮（小城市）",
           "en": "town (small city)",
           "ja": "町（小都市）",
-          "de": "Kreisstadt, Kleinstadt"
+          "de": "Kreisstadt, Kleinstadt",
+          "fr": "commune urbaine, ville moyenne"
         }
       },
       {
@@ -5863,7 +6353,8 @@
           "zh": "視力",
           "en": "eyesight",
           "ja": "視力",
-          "de": "Sehkraft, Sehschärfe"
+          "de": "Sehkraft, Sehschärfe",
+          "fr": "acuité visuelle, vue"
         }
       },
       {
@@ -5874,7 +6365,8 @@
           "zh": "時刻",
           "en": "point in time",
           "ja": "時刻",
-          "de": "Sehsinn, Sehkraft"
+          "de": "Sehsinn, Sehkraft",
+          "fr": "vue, sens visuel"
         }
       }
     ]
@@ -5891,7 +6383,8 @@
           "zh": "資訊",
           "en": "information",
           "ja": "情報",
-          "de": "Information, Nachricht"
+          "de": "Information, Nachricht",
+          "fr": "information, nouvelles"
         }
       },
       {
@@ -5902,7 +6395,8 @@
           "zh": "通報·公告",
           "en": "notification, notice",
           "ja": "通報・告知",
-          "de": "Mitteilung, Bekanntmachung"
+          "de": "Mitteilung, Bekanntmachung",
+          "fr": "annonce, avis, notification"
         }
       },
       {
@@ -5913,7 +6407,8 @@
           "zh": "聰明",
           "en": "smartness, cleverness",
           "ja": "賢さ",
-          "de": "klug, intelligent"
+          "de": "klug, intelligent",
+          "fr": "intelligent, brillant"
         }
       },
       {
@@ -5924,7 +6419,8 @@
           "zh": "普通·一般",
           "en": "normal; general",
           "ja": "普通・一般的",
-          "de": "gewöhnlich, üblich, normal"
+          "de": "gewöhnlich, üblich, normal",
+          "fr": "habituel, ordinaire, courant"
         }
       },
       {
@@ -5935,7 +6431,8 @@
           "zh": "理解·共鳴",
           "en": "understanding/empathy",
           "ja": "理解・共感",
-          "de": "Verständnis, Einfühlungsvermögen"
+          "de": "Verständnis, Einfühlungsvermögen",
+          "fr": "compréhension, sympathie"
         }
       },
       {
@@ -5946,7 +6443,8 @@
           "zh": "通過",
           "en": "passage",
           "ja": "通過",
-          "de": "billigen, verabschieden, passieren"
+          "de": "billigen, verabschieden, passieren",
+          "fr": "adopter, approuver, franchir"
         }
       }
     ]
@@ -5963,7 +6461,8 @@
           "zh": "時間",
           "en": "time",
           "ja": "時間",
-          "de": "Zeit"
+          "de": "Zeit",
+          "fr": "temps"
         }
       },
       {
@@ -5974,7 +6473,8 @@
           "zh": "天氣",
           "en": "weather",
           "ja": "天気",
-          "de": "Wetter"
+          "de": "Wetter",
+          "fr": "météo, temps"
         }
       },
       {
@@ -5985,7 +6485,8 @@
           "zh": "時尚",
           "en": "fashion",
           "ja": "ファッション",
-          "de": "Mode, Fashion"
+          "de": "Mode, Fashion",
+          "fr": "mode, habillement"
         }
       },
       {
@@ -5996,7 +6497,8 @@
           "zh": "時事",
           "en": "current affairs",
           "ja": "時事",
-          "de": "Tagesgeschehen, aktuelle Nachrichten"
+          "de": "Tagesgeschehen, aktuelle Nachrichten",
+          "fr": "actualités"
         }
       },
       {
@@ -6007,7 +6509,8 @@
           "zh": "時代",
           "en": "era",
           "ja": "時代",
-          "de": "Epoche, Zeitalter, Ära"
+          "de": "Epoche, Zeitalter, Ära",
+          "fr": "époque, ère"
         }
       },
       {
@@ -6018,7 +6521,8 @@
           "zh": "時機·機會",
           "en": "timing, opportunity",
           "ja": "時期·機会",
-          "de": "Gelegenheit, günstiger Moment"
+          "de": "Gelegenheit, günstiger Moment",
+          "fr": "opportunité, occasion propice"
         }
       }
     ]
@@ -6035,7 +6539,8 @@
           "zh": "收入",
           "en": "income",
           "ja": "収入",
-          "de": "Einkommen, Einnahmen"
+          "de": "Einkommen, Einnahmen",
+          "fr": "revenu, recettes"
         }
       },
       {
@@ -6046,7 +6551,8 @@
           "zh": "收穫",
           "en": "harvest",
           "ja": "収穫",
-          "de": "Ernte, ernten"
+          "de": "Ernte, ernten",
+          "fr": "récolte, récolter"
         }
       },
       {
@@ -6057,7 +6563,8 @@
           "zh": "吸引·魅力",
           "en": "attraction · fascination",
           "ja": "引き寄せ・魅了",
-          "de": "anziehen, faszinieren"
+          "de": "anziehen, faszinieren",
+          "fr": "attirer, séduire"
         }
       },
       {
@@ -6068,7 +6575,8 @@
           "zh": "收集",
           "en": "collection",
           "ja": "収集",
-          "de": "sammeln, erfassen"
+          "de": "sammeln, erfassen",
+          "fr": "collecter, recueillir"
         }
       },
       {
@@ -6079,7 +6587,8 @@
           "zh": "收銀員",
           "en": "cashier",
           "ja": "レジ係",
-          "de": "Kassierer, Kasse"
+          "de": "Kassierer, Kasse",
+          "fr": "caissier, caissière"
         }
       }
     ]
@@ -6096,7 +6605,8 @@
           "zh": "手續·程序",
           "en": "procedure",
           "ja": "手続き",
-          "de": "Verfahren, Formalität"
+          "de": "Verfahren, Formalität",
+          "fr": "procédure, formalité"
         }
       },
       {
@@ -6107,7 +6617,8 @@
           "zh": "首都",
           "en": "capital (city)",
           "ja": "首都",
-          "de": "Hauptstadt"
+          "de": "Hauptstadt",
+          "fr": "capitale"
         }
       },
       {
@@ -6118,7 +6629,8 @@
           "zh": "總理",
           "en": "prime minister",
           "ja": "首相",
-          "de": "Premierminister, Regierungschef"
+          "de": "Premierminister, Regierungschef",
+          "fr": "Premier ministre"
         }
       },
       {
@@ -6129,7 +6641,8 @@
           "zh": "首領·頭目",
           "en": "leader, chief",
           "ja": "首領·頭",
-          "de": "Anführer, Oberhaupt"
+          "de": "Anführer, Oberhaupt",
+          "fr": "chef, leader"
         }
       },
       {
@@ -6140,7 +6653,8 @@
           "zh": "手工",
           "en": "handicraft",
           "ja": "手工",
-          "de": "Handarbeit, Handwerk"
+          "de": "Handarbeit, Handwerk",
+          "fr": "artisanat, fait main"
         }
       }
     ]
@@ -6157,7 +6671,8 @@
           "zh": "進步",
           "en": "progress",
           "ja": "進歩",
-          "de": "Fortschritt, fortschrittlich"
+          "de": "Fortschritt, fortschrittlich",
+          "fr": "progrès, progresser"
         }
       },
       {
@@ -6168,7 +6683,8 @@
           "zh": "進行",
           "en": "progress",
           "ja": "進行",
-          "de": "durchführen, vornehmen"
+          "de": "durchführen, vornehmen",
+          "fr": "procéder à, effectuer"
         }
       },
       {
@@ -6179,7 +6695,8 @@
           "zh": "博士",
           "en": "doctor (PhD)",
           "ja": "博士",
-          "de": "Doktor (PhD)"
+          "de": "Doktor (PhD)",
+          "fr": "docteur (doctorat)"
         }
       },
       {
@@ -6190,7 +6707,8 @@
           "zh": "進行過程",
           "en": "process",
           "ja": "進行過程",
-          "de": "Verlauf, Prozess"
+          "de": "Verlauf, Prozess",
+          "fr": "processus, déroulement"
         }
       },
       {
@@ -6201,7 +6719,8 @@
           "zh": "進度",
           "en": "progress",
           "ja": "進度",
-          "de": "Fortschrittstempo, Zeitplan"
+          "de": "Fortschrittstempo, Zeitplan",
+          "fr": "rythme d'avancement, calendrier"
         }
       },
       {
@@ -6212,7 +6731,8 @@
           "zh": "進展",
           "en": "progress",
           "ja": "進展",
-          "de": "Entwicklung, Fortschreiten"
+          "de": "Entwicklung, Fortschreiten",
+          "fr": "évolution, progression"
         }
       }
     ]
@@ -6229,7 +6749,8 @@
           "zh": "愛",
           "en": "love",
           "ja": "愛",
-          "de": "Liebe"
+          "de": "Liebe",
+          "fr": "amour"
         }
       },
       {
@@ -6240,7 +6761,8 @@
           "zh": "友情",
           "en": "friendship",
           "ja": "友情",
-          "de": "Freundschaft"
+          "de": "Freundschaft",
+          "fr": "amitié"
         }
       },
       {
@@ -6251,7 +6773,8 @@
           "zh": "感情",
           "en": "emotion/feeling",
           "ja": "感情・情",
-          "de": "Gefühl, Zuneigung, Emotion"
+          "de": "Gefühl, Zuneigung, Emotion",
+          "fr": "sentiment, affection, émotion"
         }
       },
       {
@@ -6262,7 +6785,8 @@
           "zh": "狀況",
           "en": "situation",
           "ja": "状況",
-          "de": "Situation, Sachlage"
+          "de": "Situation, Sachlage",
+          "fr": "situation, circonstance"
         }
       },
       {
@@ -6273,7 +6797,8 @@
           "zh": "情勢·狀況",
           "en": "situation/circumstances",
           "ja": "情勢・状況",
-          "de": "Lage, Umstände"
+          "de": "Lage, Umstände",
+          "fr": "situation, état des lieux"
         }
       },
       {
@@ -6284,7 +6809,8 @@
           "zh": "資源·志願服務",
           "en": "resource/volunteering",
           "ja": "資源・ボランティア",
-          "de": "freiwillig, ehrenamtlich"
+          "de": "freiwillig, ehrenamtlich",
+          "fr": "bénévole, volontariat"
         }
       },
       {
@@ -6295,7 +6821,8 @@
           "zh": "情義·義理",
           "en": "loyalty, affection",
           "ja": "情義・義理",
-          "de": "Verbundenheit, Loyalität, Zuneigung"
+          "de": "Verbundenheit, Loyalität, Zuneigung",
+          "fr": "attachement, loyauté, fidélité"
         }
       },
       {
@@ -6306,7 +6833,8 @@
           "zh": "戀人",
           "en": "lover, sweetheart",
           "ja": "恋人",
-          "de": "Liebhaber, Geliebte(r)"
+          "de": "Liebhaber, Geliebte(r)",
+          "fr": "amant, amoureuse"
         }
       },
       {
@@ -6317,7 +6845,8 @@
           "zh": "感情",
           "en": "emotion",
           "ja": "感情",
-          "de": "Zuneigung, Wohlwollen"
+          "de": "Zuneigung, Wohlwollen",
+          "fr": "sympathie, affection"
         }
       }
     ]
@@ -6334,7 +6863,8 @@
           "zh": "宗教",
           "en": "religion",
           "ja": "宗教",
-          "de": "Religion"
+          "de": "Religion",
+          "fr": "religion"
         }
       },
       {
@@ -6345,7 +6875,8 @@
           "zh": "尊重",
           "en": "respect",
           "ja": "尊重",
-          "de": "Respekt, respektieren"
+          "de": "Respekt, respektieren",
+          "fr": "respect, respecter"
         }
       },
       {
@@ -6356,7 +6887,8 @@
           "zh": "崇拜",
           "en": "worship",
           "ja": "崇拝",
-          "de": "Verehrung, anbeten"
+          "de": "Verehrung, anbeten",
+          "fr": "vénérer, culte, adorer"
         }
       },
       {
@@ -6367,7 +6899,8 @@
           "zh": "榮譽·讚揚",
           "en": "honor/praise",
           "ja": "栄誉・称賛",
-          "de": "ehren, preisen, würdigen"
+          "de": "ehren, preisen, würdigen",
+          "fr": "honorer, célébrer, glorifier"
         }
       },
       {
@@ -6378,7 +6911,8 @@
           "zh": "位階·序列",
           "en": "hierarchy/rank",
           "ja": "位階・序列",
-          "de": "Rangordnung, Hierarchie"
+          "de": "Rangordnung, Hierarchie",
+          "fr": "hiérarchie, ordre hiérarchique"
         }
       }
     ]
@@ -6395,7 +6929,8 @@
           "zh": "總統",
           "en": "president",
           "ja": "大統領",
-          "de": "Präsident, Staatspräsident"
+          "de": "Präsident, Staatspräsident",
+          "fr": "président (de la République)"
         }
       },
       {
@@ -6406,7 +6941,8 @@
           "zh": "綜合",
           "en": "comprehensive",
           "ja": "総合",
-          "de": "umfassend, Synthese"
+          "de": "umfassend, Synthese",
+          "fr": "synthèse, synthétique"
         }
       },
       {
@@ -6417,7 +6953,8 @@
           "zh": "合計·總計",
           "en": "sum / total",
           "ja": "合計・総",
-          "de": "insgesamt, Summe"
+          "de": "insgesamt, Summe",
+          "fr": "au total, somme totale"
         }
       },
       {
@@ -6428,7 +6965,8 @@
           "zh": "總結·總整理",
           "en": "summary, overall review",
           "ja": "総括・まとめ",
-          "de": "Zusammenfassung, Fazit"
+          "de": "Zusammenfassung, Fazit",
+          "fr": "bilan, récapitulation, conclure"
         }
       },
       {
@@ -6439,7 +6977,8 @@
           "zh": "全體",
           "en": "whole",
           "ja": "全体",
-          "de": "Gesamtheit, gesamt"
+          "de": "Gesamtheit, gesamt",
+          "fr": "ensemble, global, globalité"
         }
       }
     ]
@@ -6456,7 +6995,8 @@
           "zh": "服裝",
           "en": "attire",
           "ja": "服装",
-          "de": "Kleidung, Tracht, Bekleidung"
+          "de": "Kleidung, Tracht, Bekleidung",
+          "fr": "tenue, vêtement, costume"
         }
       },
       {
@@ -6467,7 +7007,8 @@
           "zh": "裝備·配備",
           "en": "equipment",
           "ja": "装備・備え",
-          "de": "Ausrüstung, Ausstattung"
+          "de": "Ausrüstung, Ausstattung",
+          "fr": "équipement, équiper"
         }
       },
       {
@@ -6478,7 +7019,8 @@
           "zh": "裝飾",
           "en": "decoration",
           "ja": "装飾",
-          "de": "Dekoration, Verzierung"
+          "de": "Dekoration, Verzierung",
+          "fr": "décoration, ornement"
         }
       },
       {
@@ -6489,7 +7031,8 @@
           "zh": "莊嚴",
           "en": "majesty",
           "ja": "荘厳さ",
-          "de": "feierlich, würdevoll, erhaben"
+          "de": "feierlich, würdevoll, erhaben",
+          "fr": "solennel, digne, imposant"
         }
       },
       {
@@ -6500,7 +7043,8 @@
           "zh": "飾品·配件",
           "en": "jewelry/accessories",
           "ja": "装身具・アクセサリー",
-          "de": "Schmuck, Zierde"
+          "de": "Schmuck, Zierde",
+          "fr": "bijou, parure"
         }
       }
     ]
@@ -6517,7 +7061,8 @@
           "zh": "知識·知識分子",
           "en": "knowledge/intellectual",
           "ja": "知識・知識人",
-          "de": "Wissen, Intellektuelle"
+          "de": "Wissen, Intellektuelle",
+          "fr": "intellectuel, connaissances"
         }
       },
       {
@@ -6528,7 +7073,8 @@
           "zh": "智慧",
           "en": "wisdom",
           "ja": "知恵",
-          "de": "Weisheit, Klugheit"
+          "de": "Weisheit, Klugheit",
+          "fr": "sagesse, intelligence"
         }
       },
       {
@@ -6539,7 +7085,8 @@
           "zh": "記憶力",
           "en": "memory (power)",
           "ja": "記憶力",
-          "de": "Gedächtnis, Erinnerungsvermögen"
+          "de": "Gedächtnis, Erinnerungsvermögen",
+          "fr": "mémoire"
         }
       },
       {
@@ -6550,7 +7097,8 @@
           "zh": "頭腦",
           "en": "brain",
           "ja": "頭脳",
-          "de": "Verstand, Gehirn"
+          "de": "Verstand, Gehirn",
+          "fr": "esprit, intellect, cerveau"
         }
       },
       {
@@ -6561,7 +7109,8 @@
           "zh": "智力",
           "en": "intellect",
           "ja": "知力",
-          "de": "Geisteskraft, Intellekt"
+          "de": "Geisteskraft, Intellekt",
+          "fr": "force intellectuelle, capacité mentale"
         }
       }
     ]
@@ -6578,7 +7127,8 @@
           "zh": "水準",
           "en": "level, standard",
           "ja": "水準",
-          "de": "Niveau, Bildungsgrad"
+          "de": "Niveau, Bildungsgrad",
+          "fr": "niveau, qualification"
         }
       },
       {
@@ -6589,7 +7139,8 @@
           "zh": "說明·提示",
           "en": "explanation, presentation",
           "ja": "説明·提示",
-          "de": "darlegen, vortragen, präsentieren"
+          "de": "darlegen, vortragen, präsentieren",
+          "fr": "présenter, exposer, énoncer"
         }
       },
       {
@@ -6600,7 +7151,8 @@
           "zh": "表演‧示範",
           "en": "performance, demonstration",
           "ja": "公演・実演",
-          "de": "Aufführung, Vorführung"
+          "de": "Aufführung, Vorführung",
+          "fr": "représentation, spectacle"
         }
       },
       {
@@ -6611,7 +7163,8 @@
           "zh": "順序·程序",
           "en": "order, procedure",
           "ja": "順序·手順",
-          "de": "Reihenfolge, Ablauf, Prozedur"
+          "de": "Reihenfolge, Ablauf, Prozedur",
+          "fr": "ordre, séquence, procédure"
         }
       },
       {
@@ -6622,7 +7175,8 @@
           "zh": "瀏覽器",
           "en": "browser",
           "ja": "ブラウザ",
-          "de": "Browser, Webbrowser"
+          "de": "Browser, Webbrowser",
+          "fr": "navigateur (web)"
         }
       }
     ]
@@ -6639,7 +7193,8 @@
           "zh": "中心",
           "en": "center",
           "ja": "中心・センター",
-          "de": "Zentrum, Mittelpunkt"
+          "de": "Zentrum, Mittelpunkt",
+          "fr": "centre, milieu"
         }
       },
       {
@@ -6650,7 +7205,8 @@
           "zh": "忠誠",
           "en": "loyalty",
           "ja": "忠誠",
-          "de": "loyal, treu, Loyalität"
+          "de": "loyal, treu, Loyalität",
+          "fr": "loyal, fidèle, loyauté"
         }
       },
       {
@@ -6661,7 +7217,8 @@
           "zh": "正直",
           "en": "honesty",
           "ja": "正直",
-          "de": "ehrlich, aufrichtig"
+          "de": "ehrlich, aufrichtig",
+          "fr": "honnête, sincère"
         }
       },
       {
@@ -6672,7 +7229,8 @@
           "zh": "平均",
           "en": "average",
           "ja": "平均",
-          "de": "durchschnittlich, Mittelwert"
+          "de": "durchschnittlich, Mittelwert",
+          "fr": "moyen, moyenne"
         }
       },
       {
@@ -6683,7 +7241,8 @@
           "zh": "中立",
           "en": "neutrality",
           "ja": "中立",
-          "de": "neutral, Neutralität"
+          "de": "neutral, Neutralität",
+          "fr": "neutre, neutralité"
         }
       },
       {
@@ -6694,7 +7253,8 @@
           "zh": "仲介·媒介",
           "en": "intermediary/mediation",
           "ja": "仲介・媒介",
-          "de": "Vermittler, Zwischenstation"
+          "de": "Vermittler, Zwischenstation",
+          "fr": "intermédiaire, médiateur"
         }
       }
     ]
@@ -6711,7 +7271,8 @@
           "zh": "傳統",
           "en": "tradition",
           "ja": "伝統",
-          "de": "Tradition, traditionell"
+          "de": "Tradition, traditionell",
+          "fr": "tradition, traditionnel"
         }
       },
       {
@@ -6722,7 +7283,8 @@
           "zh": "媒體・傳達",
           "en": "media, communication",
           "ja": "メディア・伝達",
-          "de": "Medien, Kommunikation"
+          "de": "Medien, Kommunikation",
+          "fr": "médias, communication"
         }
       },
       {
@@ -6733,7 +7295,8 @@
           "zh": "電視",
           "en": "television",
           "ja": "テレビ",
-          "de": "Fernsehen, TV"
+          "de": "Fernsehen, TV",
+          "fr": "télévision"
         }
       },
       {
@@ -6744,7 +7307,8 @@
           "zh": "傳說",
           "en": "legend",
           "ja": "伝説",
-          "de": "Legende, Überlieferung"
+          "de": "Legende, Überlieferung",
+          "fr": "légende, mythe"
         }
       },
       {
@@ -6755,7 +7319,8 @@
           "zh": "傳染",
           "en": "contagion",
           "ja": "伝染",
-          "de": "Ansteckung, Infektion"
+          "de": "Ansteckung, Infektion",
+          "fr": "contagion, contagieux"
         }
       },
       {
@@ -6766,7 +7331,8 @@
           "zh": "傳達",
           "en": "delivery",
           "ja": "伝達",
-          "de": "übermitteln, mitteilen"
+          "de": "übermitteln, mitteilen",
+          "fr": "transmettre, communiquer"
         }
       }
     ]
@@ -6783,7 +7349,8 @@
           "zh": "學校",
           "en": "school",
           "ja": "学校",
-          "de": "Schule"
+          "de": "Schule",
+          "fr": "école"
         }
       },
       {
@@ -6794,7 +7361,8 @@
           "zh": "情況",
           "en": "case/situation",
           "ja": "場合",
-          "de": "Fall, Situation"
+          "de": "Fall, Situation",
+          "fr": "cas, situation"
         }
       },
       {
@@ -6805,7 +7373,8 @@
           "zh": "長期的",
           "en": "long-term",
           "ja": "長期的",
-          "de": "langfristig, langwierig"
+          "de": "langfristig, langwierig",
+          "fr": "à long terme, prolongé"
         }
       },
       {
@@ -6816,7 +7385,8 @@
           "zh": "長壽",
           "en": "longevity",
           "ja": "長寿",
-          "de": "Langlebigkeit, langes Leben"
+          "de": "Langlebigkeit, langes Leben",
+          "fr": "longévité"
         }
       },
       {
@@ -6827,7 +7397,8 @@
           "zh": "長歌（史詩）",
           "en": "epic poem",
           "ja": "長歌（叙事詩）",
-          "de": "Epos, episches Langgedicht"
+          "de": "Epos, episches Langgedicht",
+          "fr": "poème épique, épopée"
         }
       },
       {
@@ -6838,7 +7409,8 @@
           "zh": "市場",
           "en": "market",
           "ja": "市場",
-          "de": "Markt"
+          "de": "Markt",
+          "fr": "marché"
         }
       },
       {
@@ -6849,7 +7421,8 @@
           "zh": "校長",
           "en": "principal",
           "ja": "校長",
-          "de": "Schulleiter, Rektor"
+          "de": "Schulleiter, Rektor",
+          "fr": "directeur d'école, proviseur"
         }
       }
     ]
@@ -6866,7 +7439,8 @@
           "zh": "思維·思考",
           "en": "reasoning; thinking",
           "ja": "思惟・思考",
-          "de": "Denken, Denkweise"
+          "de": "Denken, Denkweise",
+          "fr": "pensée, mode de pensée"
         }
       },
       {
@@ -6877,7 +7451,8 @@
           "zh": "思想",
           "en": "thought; ideology",
           "ja": "思想",
-          "de": "Ideologie, Gedankengut"
+          "de": "Ideologie, Gedankengut",
+          "fr": "pensée, idéologie"
         }
       },
       {
@@ -6888,7 +7463,8 @@
           "zh": "資格",
           "en": "qualification",
           "ja": "資格",
-          "de": "Qualifikation, Eignung, Status"
+          "de": "Qualifikation, Eignung, Status",
+          "fr": "qualité, titre, statut"
         }
       },
       {
@@ -6899,7 +7475,8 @@
           "zh": "諮詢·輔導",
           "en": "consultation/counseling",
           "ja": "諮問・相談",
-          "de": "Beratung, konsultieren"
+          "de": "Beratung, konsultieren",
+          "fr": "consultation, conseil"
         }
       },
       {
@@ -6910,7 +7487,8 @@
           "zh": "私人·民間",
           "en": "private; civilian",
           "ja": "私的・民間",
-          "de": "privat, Privatperson"
+          "de": "privat, Privatperson",
+          "fr": "privé, particulier"
         }
       },
       {
@@ -6921,7 +7499,8 @@
           "zh": "資料",
           "en": "data",
           "ja": "資料",
-          "de": "Materialien, Dokumente"
+          "de": "Materialien, Dokumente",
+          "fr": "documents, données"
         }
       }
     ]
@@ -6938,7 +7517,8 @@
           "zh": "字典",
           "en": "dictionary",
           "ja": "辞書",
-          "de": "Wörterbuch"
+          "de": "Wörterbuch",
+          "fr": "dictionnaire"
         }
       },
       {
@@ -6949,7 +7529,8 @@
           "zh": "詞彙・單詞",
           "en": "vocabulary · word",
           "ja": "語彙・単語",
-          "de": "Wortschatz, Begriffe"
+          "de": "Wortschatz, Begriffe",
+          "fr": "vocabulaire, termes"
         }
       },
       {
@@ -6960,7 +7541,8 @@
           "zh": "拒絕",
           "en": "refusal",
           "ja": "拒絶",
-          "de": "ablehnen, abweisen"
+          "de": "ablehnen, abweisen",
+          "fr": "refuser, décliner"
         }
       },
       {
@@ -6971,7 +7553,8 @@
           "zh": "慈善",
           "en": "charity",
           "ja": "慈善",
-          "de": "Wohltätigkeit, Nächstenliebe"
+          "de": "Wohltätigkeit, Nächstenliebe",
+          "fr": "charité, bienfaisance"
         }
       },
       {
@@ -6982,7 +7565,8 @@
           "zh": "慈悲心",
           "en": "compassion",
           "ja": "慈悲心",
-          "de": "Barmherzigkeit, Mitgefühl"
+          "de": "Barmherzigkeit, Mitgefühl",
+          "fr": "compassion, cœur bienveillant"
         }
       }
     ]
@@ -6999,7 +7583,8 @@
           "zh": "自由",
           "en": "freedom",
           "ja": "自由",
-          "de": "Freiheit, frei"
+          "de": "Freiheit, frei",
+          "fr": "liberté, libre"
         }
       },
       {
@@ -7010,7 +7595,8 @@
           "zh": "自信心",
           "en": "confidence",
           "ja": "自信",
-          "de": "Selbstvertrauen, zuversichtlich"
+          "de": "Selbstvertrauen, zuversichtlich",
+          "fr": "confiance en soi, confiant"
         }
       },
       {
@@ -7021,7 +7607,8 @@
           "zh": "自然",
           "en": "nature",
           "ja": "自然",
-          "de": "Natur, natürlich"
+          "de": "Natur, natürlich",
+          "fr": "nature, naturel"
         }
       },
       {
@@ -7032,7 +7619,8 @@
           "zh": "自動",
           "en": "automatic",
           "ja": "自動",
-          "de": "automatisch"
+          "de": "automatisch",
+          "fr": "automatique"
         }
       },
       {
@@ -7043,7 +7631,8 @@
           "zh": "自覺·自發的",
           "en": "self-awareness/voluntary",
           "ja": "自覚・自発的",
-          "de": "selbstbewusst, eigenverantwortlich"
+          "de": "selbstbewusst, eigenverantwortlich",
+          "fr": "conscient, volontaire"
         }
       },
       {
@@ -7054,7 +7643,8 @@
           "zh": "自尊心",
           "en": "pride",
           "ja": "自尊心",
-          "de": "Selbstachtung, Würde"
+          "de": "Selbstachtung, Würde",
+          "fr": "amour-propre, dignité"
         }
       },
       {
@@ -7065,7 +7655,8 @@
           "zh": "文字",
           "en": "character, letter",
           "ja": "文字",
-          "de": "Schrift, Schriftzeichen"
+          "de": "Schrift, Schriftzeichen",
+          "fr": "écriture, caractères"
         }
       }
     ]
@@ -7082,7 +7673,8 @@
           "zh": "文化",
           "en": "culture",
           "ja": "文化",
-          "de": "Kultur"
+          "de": "Kultur",
+          "fr": "culture"
         }
       },
       {
@@ -7093,7 +7685,8 @@
           "zh": "文學",
           "en": "literature",
           "ja": "文学",
-          "de": "Literatur"
+          "de": "Literatur",
+          "fr": "littérature"
         }
       },
       {
@@ -7104,7 +7697,8 @@
           "zh": "辦公室",
           "en": "office",
           "ja": "事務所",
-          "de": "Büro"
+          "de": "Büro",
+          "fr": "bureau"
         }
       },
       {
@@ -7115,7 +7709,8 @@
           "zh": "文件",
           "en": "document",
           "ja": "文書",
-          "de": "Dokument, Textfassung"
+          "de": "Dokument, Textfassung",
+          "fr": "texte, document officiel"
         }
       },
       {
@@ -7126,7 +7721,8 @@
           "zh": "文明",
           "en": "civilization",
           "ja": "文明",
-          "de": "Zivilisation"
+          "de": "Zivilisation",
+          "fr": "civilisation"
         }
       },
       {
@@ -7137,7 +7733,8 @@
           "zh": "文藝",
           "en": "literature and art",
           "ja": "文芸",
-          "de": "Kunst und Kultur, Literatur"
+          "de": "Kunst und Kultur, Literatur",
+          "fr": "arts et lettres, culture artistique"
         }
       }
     ]
@@ -7154,7 +7751,8 @@
           "zh": "材料",
           "en": "material",
           "ja": "材料",
-          "de": "Werkstoff, Material"
+          "de": "Werkstoff, Material",
+          "fr": "matériau, matière"
         }
       },
       {
@@ -7165,7 +7763,8 @@
           "zh": "物質",
           "en": "matter, material",
           "ja": "物質",
-          "de": "Materie, Sachwerte"
+          "de": "Materie, Sachwerte",
+          "fr": "matière, matériel"
         }
       },
       {
@@ -7176,7 +7775,8 @@
           "zh": "物價",
           "en": "prices",
           "ja": "物価",
-          "de": "Lebenshaltungskosten, Preisniveau"
+          "de": "Lebenshaltungskosten, Preisniveau",
+          "fr": "prix des marchandises, coût de la vie"
         }
       },
       {
@@ -7187,7 +7787,8 @@
           "zh": "物理",
           "en": "physics",
           "ja": "物理",
-          "de": "Physik"
+          "de": "Physik",
+          "fr": "physique"
         }
       },
       {
@@ -7198,7 +7799,8 @@
           "zh": "家畜·寵物",
           "en": "livestock/pet",
           "ja": "家畜・ペット",
-          "de": "Haustier, Nutztier"
+          "de": "Haustier, Nutztier",
+          "fr": "animal domestique, animal d'élevage"
         }
       }
     ]
@@ -7215,7 +7817,8 @@
           "zh": "出口",
           "en": "export",
           "ja": "輸出",
-          "de": "Export, Ausfuhr"
+          "de": "Export, Ausfuhr",
+          "fr": "exporter, exportation"
         }
       },
       {
@@ -7226,7 +7829,8 @@
           "zh": "出版",
           "en": "publication",
           "ja": "出版",
-          "de": "Veröffentlichung, publizieren"
+          "de": "Veröffentlichung, publizieren",
+          "fr": "éditer, publication, édition"
         }
       },
       {
@@ -7237,7 +7841,8 @@
           "zh": "出現",
           "en": "appearance",
           "ja": "出現",
-          "de": "Erscheinen, Auftauchen"
+          "de": "Erscheinen, Auftauchen",
+          "fr": "apparaître, apparition"
         }
       },
       {
@@ -7248,7 +7853,8 @@
           "zh": "出發",
           "en": "departure",
           "ja": "出発",
-          "de": "Abfahrt, Start"
+          "de": "Abfahrt, Start",
+          "fr": "partir, départ"
         }
       },
       {
@@ -7259,7 +7865,8 @@
           "zh": "優秀·卓越",
           "en": "excellence",
           "ja": "優秀さ・卓越",
-          "de": "hervorragend, ausgezeichnet"
+          "de": "hervorragend, ausgezeichnet",
+          "fr": "excellent, brillant, remarquable"
         }
       },
       {
@@ -7270,7 +7877,8 @@
           "zh": "出處·原產地",
           "en": "source, origin",
           "ja": "出所・原産地",
-          "de": "Herkunft, Ursprung"
+          "de": "Herkunft, Ursprung",
+          "fr": "origine, provenance, source"
         }
       },
       {
@@ -7281,7 +7889,8 @@
           "zh": "出神入化",
           "en": "uncannily brilliant, as if inspired",
           "ja": "神がかり的な素晴らしさ",
-          "de": "meisterhaft, genial, hingerissen"
+          "de": "meisterhaft, genial, hingerissen",
+          "fr": "inspiré, génial, transcendant"
         }
       }
     ]
@@ -7298,7 +7907,8 @@
           "zh": "醫療",
           "en": "medical care",
           "ja": "医療",
-          "de": "Gesundheitswesen, medizinische Versorgung"
+          "de": "Gesundheitswesen, medizinische Versorgung",
+          "fr": "santé publique, soins médicaux"
         }
       },
       {
@@ -7309,7 +7919,8 @@
           "zh": "醫學",
           "en": "medicine (science)",
           "ja": "医学",
-          "de": "Medizin (Wissenschaft)"
+          "de": "Medizin (Wissenschaft)",
+          "fr": "médecine (science)"
         }
       },
       {
@@ -7320,7 +7931,8 @@
           "zh": "護士",
           "en": "nurse",
           "ja": "看護師",
-          "de": "Krankenpfleger, Krankenschwester"
+          "de": "Krankenpfleger, Krankenschwester",
+          "fr": "infirmier, infirmière"
         }
       },
       {
@@ -7331,7 +7943,8 @@
           "zh": "醫生",
           "en": "doctor",
           "ja": "医者",
-          "de": "Arzt, Mediziner"
+          "de": "Arzt, Mediziner",
+          "fr": "médecin, praticien"
         }
       },
       {
@@ -7342,7 +7955,8 @@
           "zh": "衣服",
           "en": "clothing",
           "ja": "衣服",
-          "de": "Kleidung, Gewand"
+          "de": "Kleidung, Gewand",
+          "fr": "vêtement, tenue vestimentaire"
         }
       }
     ]
@@ -7359,7 +7973,8 @@
           "zh": "意義",
           "en": "meaning",
           "ja": "意味",
-          "de": "Bedeutung, Sinn"
+          "de": "Bedeutung, Sinn",
+          "fr": "sens, signification"
         }
       },
       {
@@ -7370,7 +7985,8 @@
           "zh": "意見",
           "en": "opinion",
           "ja": "意見",
-          "de": "Meinung, Ansicht"
+          "de": "Meinung, Ansicht",
+          "fr": "avis, opinion"
         }
       },
       {
@@ -7381,7 +7997,8 @@
           "zh": "儀式",
           "en": "ceremony",
           "ja": "儀式",
-          "de": "Bewusstsein"
+          "de": "Bewusstsein",
+          "fr": "conscience"
         }
       },
       {
@@ -7392,7 +8009,8 @@
           "zh": "意志",
           "en": "will",
           "ja": "意志",
-          "de": "Wille, Willenskraft"
+          "de": "Wille, Willenskraft",
+          "fr": "volonté"
         }
       },
       {
@@ -7403,7 +8021,8 @@
           "zh": "意圖",
           "en": "intention",
           "ja": "意図",
-          "de": "Absicht, Vorhaben"
+          "de": "Absicht, Vorhaben",
+          "fr": "intention, dessein"
         }
       },
       {
@@ -7414,7 +8033,8 @@
           "zh": "點子・構想",
           "en": "idea · notion",
           "ja": "アイデア・発想",
-          "de": "Idee, Gedanke"
+          "de": "Idee, Gedanke",
+          "fr": "idée, concept"
         }
       }
     ]

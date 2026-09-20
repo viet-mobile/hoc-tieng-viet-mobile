@@ -4,7 +4,7 @@
 # them because it was run against an incomplete copy of the PDF.
 #
 # Translatable Korean text fields (title/subtitle/paragraphs/kr) are stored as
-# {"ko","zh","en","ja","de"} dicts so js_json() (see build_app.py) serializes them straight into JS
+# {"ko","zh","en","ja","de","fr"} dicts so js_json() (see build_app.py) serializes them straight into JS
 # objects that app_logic.js's T() helper can read directly. Vietnamese words (vi) and IPA-style
 # Hangul pronunciation hints (ipa) are never translated, and page is a plain structural value.
 
@@ -12,12 +12,14 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
             'zh': '越南多樣的麵食料理',
             'en': 'Various Noodle Dishes of Vietnam',
             'ja': 'ベトナムの多様な麺料理',
-            'de': 'Vielfältige Nudelgerichte Vietnams'},
+            'de': 'Vielfältige Nudelgerichte Vietnams',
+            'fr': 'Diversité des plats de nouilles au Vietnam'},
   'subtitle': {'ko': '내가 먹고 있는 쌀국수는 북부와 남부 중 어디 것일까?',
                'zh': '我吃的河粉是北部的還是南部的呢？',
                'en': "Is the pho I'm eating from the North or the South?",
                'ja': '私が食べているフォーは北部と南部どちらのものだろうか？',
-               'de': 'Stammt meine Pho aus dem Norden oder aus dem Süden?'},
+               'de': 'Stammt meine Pho aus dem Norden oder aus dem Süden?',
+               'fr': 'La soupe pho que je déguste vient-elle du Nord ou du Sud ?'},
   'paragraphs': [{'ko': '숙주와 소고기, 개운한 국물에 국수가 한 데 어우러져 개운하고 깔끔한 맛을 내는 쌀국수. 쌀국수는 베트남 사람들이 즐겨먹는 음식으로 '
                         '면은 조금 두껍고 국물도 진한 편입니다. 쌀국수를 먹을 때는 고수 외에 다양한 채소를 넣어 먹으며, 북부 지역에서는 쌀국수에 기다란 '
                         '튀김 빵을 함께 적셔 먹기도 합니다.',
@@ -34,7 +36,13 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                         'Lieblingsgericht der Vietnamesen; die Nudeln sind etwas dicker und die '
                         'Brühe meist kräftig. Neben Koriander gibt man verschiedene frische '
                         'Kräuter und Gemüse hinein, und im Norden taucht man dazu gern längliche '
-                        'frittierte Teigstangen in die Suppe.'},
+                        'frittierte Teigstangen in die Suppe.',
+                  'fr': 'Pousses de soja et bœuf se mêlent aux nouilles dans un bouillon '
+                        'revigorant pour donner à la soupe pho sa saveur délicate et claire. Plat '
+                        'emblématique apprécié des Vietnamiens, le pho se compose de nouilles un '
+                        'peu épaisses et d’un bouillon généralement corsé. On y ajoute de la '
+                        'coriandre et diverses herbes fraîches ; dans le Nord, il est d’usage de '
+                        'tremper de longs beignets frits dans le bouillon.'},
                  {'ko': '쌀국수는 원래 하노이 등 베트남 북부 지역 음식이었습니다. 북부 지역은 나라의 근간인 농업을 중요시했기 때문에 소의 도축과 고기 '
                         '판매를 금지했습니다. 따라서 육수도 닭고기 뼈를 고아 만들어서 담백한 편이죠.',
                   'zh': '河粉原本是河內等越南北部地區的食物。北部地區因重視作為國家根基的農業，因此禁止屠宰牛隻與販售牛肉，所以湯頭多以雞骨熬煮而成，味道較為清淡。',
@@ -48,7 +56,12 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                         'der Norden die Landwirtschaft als Grundlage des Landes hoch schätzte, war '
                         'das Schlachten von Rindern und der Verkauf von Rindfleisch verboten. '
                         'Daher kochte man die Brühe aus Hühnerknochen, was ihr einen milden, '
-                        'leichten Geschmack verlieh.'},
+                        'leichten Geschmack verlieh.',
+                  'fr': 'À l’origine, le pho est une spécialité du Nord du Vietnam, notamment de '
+                        'Hanoï. Comme l’agriculture constituait le fondement de la nation, '
+                        'l’abattage des bœufs et la vente de leur viande étaient interdits. Le '
+                        'bouillon était donc préparé à base d’os de poulet, lui conférant une '
+                        'saveur légère et douce.'},
                  {'ko': '남부 지역의 음식은 주로 단맛이 납니다. 따라서 쌀국수도 국물에서 단맛이 나는 편입니다. 또한 북부와는 다르게 소고기 뼈를 푹 고아 '
                         '국물을 만들었다고 합니다. 라임, 숙주, 여러 향채 등을 섞어 먹을 뿐만 아니라 소스들도 함께 곁들여 먹습니다.',
                   'zh': '南部地區的食物大多帶有甜味，因此河粉的湯頭也偏甜。此外，和北部不同的是，南部的湯頭是用牛骨長時間熬煮而成。吃的時候不僅會加入萊姆、豆芽菜及各種香草，還會搭配各式醬料一起享用。',
@@ -62,7 +75,12 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                         'auch die Pho-Brühe dort eine süßliche Note. Anders als im Norden wird die '
                         'Brühe traditionell lange mit Rinderknochen ausgekocht. Man serviert sie '
                         'nicht nur mit Limetten, Sojasprossen und verschiedenen Kräutern, sondern '
-                        'reicht auch diverse Saucen dazu.'},
+                        'reicht auch diverse Saucen dazu.',
+                  'fr': 'Dans le Sud, la cuisine a une tonalité plus douce et sucrée, de sorte que '
+                        'le bouillon du pho y est également plus doux. Contrairement au Nord, on y '
+                        'fait mijoter longuement des os de bœuf. On le sert accompagné de citron '
+                        'vert, de pousses de soja et d’herbes aromatiques, ainsi que de sauces '
+                        'variées.'},
                  {'ko': '현재 국내에서도 각양각색의 쌀국수를 맛볼 수 있게 되었는데요, 여러 종류의 소스를 적절히 배합하여 국물과 함께 먹거나, 고기를 찍어 '
                         '먹기도 하는 모습은 마치 베트남 남부 지역의 쌀국수와 비슷한 듯합니다.',
                   'zh': '現在在韓國國內也能品嚐到各式各樣的河粉了。將多種醬料適度調配後配著湯一起吃，或是用來沾肉吃的方式，似乎與越南南部地區的河粉頗為相似。',
@@ -72,25 +90,32 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'ja': '現在では韓国国内でも様々な種類のフォーを味わえるようになりました。数種類のソースを適度に配合してスープと一緒に食べたり、肉をつけて食べたりする様子は、まるでベトナム南部地域のフォーに似ているようです。',
                   'de': 'Heutzutage kann man verschiedenste Pho-Varianten auch außerhalb Vietnams '
                         'genießen. Wie man verschiedene Saucen mischt, in die Brühe gibt oder das '
-                        'Fleisch hineintunkt, erinnert stark an die südliche Art der Pho.'},
+                        'Fleisch hineintunkt, erinnert stark an die südliche Art der Pho.',
+                  'fr': 'Aujourd’hui, on trouve différentes variantes de pho dans le monde entier. '
+                        'Cette façon d’associer les sauces au bouillon ou d’y tremper la viande '
+                        'rappelle fidèlement la tradition du Sud du Vietnam.'},
                  {'ko': '여러분은 베트남의 어느 지역 쌀국수를 더 좋아하시나요? 직접 가서 맛보는 것이 가장 좋겠지요?',
                   'zh': '大家比較喜歡越南哪個地區的河粉呢？親自前往品嚐應該是最好的方式吧？',
                   'en': "Which region's pho do you like better? Wouldn't it be best to go and "
                         'taste it for yourself?',
                   'ja': '皆さんはベトナムのどの地域のフォーがお好きですか？やはり直接行って味わってみるのが一番でしょうね？',
                   'de': 'Welche regionale Pho mögen Sie lieber? Am schönsten ist es natürlich, sie '
-                        'vor Ort selbst zu probieren!'}],
+                        'vor Ort selbst zu probieren!',
+                  'fr': 'Quelle version régionale préférez-vous ? Le meilleur moyen de le savoir '
+                        'reste bien sûr d’aller la goûter sur place !'}],
   'page': 79},
  {'title': {'ko': '베트남의 전통 의상',
             'zh': '越南的傳統服飾',
             'en': "Vietnam's Traditional Costume",
             'ja': 'ベトナムの伝統衣装',
-            'de': 'Die traditionelle Kleidung Vietnams'},
+            'de': 'Die traditionelle Kleidung Vietnams',
+            'fr': 'Le costume traditionnel du Vietnam'},
   'subtitle': {'ko': '형형색색의 화려한 베트남의 아오자이',
                'zh': '五彩繽紛、華麗的越南奧黛',
                'en': "Vietnam's Colorful and Gorgeous Ao Dai",
                'ja': '色とりどりで華やかなベトナムのアオザイ',
-               'de': 'Farbenfroh und elegant: Vietnams Ao Dai'},
+               'de': 'Farbenfroh und elegant: Vietnams Ao Dai',
+               'fr': 'L’élégance chatoyante de l’áo dài vietnamien'},
   'paragraphs': [{'ko': '베트남을 배경으로 한 영화를 떠올려 보면 가장 먼저 생각나는 것이 베트남 전통 의상인 아오자이를 입은 날씬한 여성일 것입니다. '
                         "베트남어로 '아오(áo)'는 '옷', '자이(dài)'는 '길다'라는 뜻입니다. 즉 이름에서도 옷의 형태를 알 수 있죠.",
                   'zh': '若想到以越南為背景的電影，最先浮現腦海的大概就是身穿越南傳統服飾奧黛的苗條女性吧。在越南語中，「áo」意為「衣服」，「dài」意為「長」，也就是說，光從名稱就能看出這件衣服的形狀。',
@@ -103,7 +128,12 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'de': 'Wer an Filme denkt, die in Vietnam spielen, hat wohl zuerst das Bild '
                         'einer zierlichen Frau im traditionellen Ao Dai vor Augen. Auf '
                         'Vietnamesisch bedeutet „áo“ „Kleidung“ und „dài“ „lang“ – die Form des '
-                        'Kleides lässt sich also schon am Namen erkennen.'},
+                        'Kleides lässt sich also schon am Namen erkennen.',
+                  'fr': 'Quand on pense à un film se déroulant au Vietnam, l’image qui vient '
+                        'aussitôt à l’esprit est celle d’une femme gracieuse vêtue de l’áo dài '
+                        'traditionnel. En vietnamien, « áo » signifie « vêtement » et « dài » '
+                        'signifie « long » — la forme du vêtement transparaît donc directement '
+                        'dans son nom.'},
                  {'ko': '아오자이의 상의는 보통 다리까지 내려올 정도로 길고, 하의는 통바지 형태로 되어 있습니다. 언뜻 보면 중국의 치파오와 비슷해 '
                         '보이지만, 안에 통이 넓은 바지를 입는다는 점이 다릅니다. 아오자이는 신체의 사이즈를 18곳이나 재서 만들 정도로 섬세한 옷입니다. '
                         '입는 사람의 몸에 꼭 맞으며 아름다운 몸의 선이 그대로 드러나 마른 몸매의 베트남 여성들에게 무척 잘 어울리는 옷이기도 합니다.',
@@ -122,7 +152,13 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                         'weite Hose darunter. Das Ao Dai ist so maßgeschneidert, dass bis zu 18 '
                         'Körpermaße genommen werden. Es schmiegt sich elegant an die Figur der '
                         'Trägerin an und passt wunderbar zur zierlichen Statur vietnamesischer '
-                        'Frauen.'},
+                        'Frauen.',
+                  'fr': 'La tunique de l’áo dài descend généralement jusqu’aux jambes, portée sur '
+                        'un pantalon ample à jambes droites. Elle rappelle la robe chinoise qipao, '
+                        'mais s’en distingue par ce pantalon ample porté dessous. L’áo dài est si '
+                        'délicat à confectionner qu’il nécessite jusqu’à 18 mesures corporelles. '
+                        'Épousant parfaitement la silhouette, il met en valeur les lignes du corps '
+                        'et convient à merveille à la stature menue des femmes vietnamiennes.'},
                  {'ko': '베트남의 관공서, 은행, 호텔, 항공사에서의 유니폼, 그리고 결혼식, 입학식, 졸업식 등 특별한 행사가 있을 때 아오자이의 모습을 '
                         '많이 볼 수 있습니다.',
                   'zh': '在越南的政府機關、銀行、飯店、航空公司的制服，以及婚禮、入學典禮、畢業典禮等特別場合，都能經常看到奧黛的身影。',
@@ -132,7 +168,11 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'ja': 'ベトナムの官公庁、銀行、ホテル、航空会社の制服、そして結婚式、入学式、卒業式など特別な行事の際に、アオザイの姿を多く見ることができます。',
                   'de': 'In Vietnam wird das Ao Dai häufig als Dienstkleidung in Behörden, Banken, '
                         'Hotels und Fluggesellschaften getragen, aber auch zu besonderen Anlässen '
-                        'wie Hochzeiten, Schuleinführungen und Abschlussfeiern.'},
+                        'wie Hochzeiten, Schuleinführungen und Abschlussfeiern.',
+                  'fr': 'Au Vietnam, l’áo dài est fréquemment porté comme uniforme dans les '
+                        'administrations, les banques, les hôtels et les compagnies aériennes, '
+                        'ainsi que lors d’occasions spéciales telles que mariages, rentrées '
+                        'scolaires et cérémonies de remise de diplômes.'},
                  {'ko': '그렇다면 베트남에서 아오자이를 입어보고 싶을 때 꼭 신체 사이즈를 전부 재야 할까요? 그렇지는 않습니다. 요즘은 다양한 사이즈의 '
                         '기성 제품들이 많기 때문에 누구나 쉽게 자신의 사이즈에 맞는 아오자이를 구입할 수 있습니다.',
                   'zh': '那麼，如果想在越南試穿奧黛，一定要把身體尺寸全部量一遍嗎？其實不然。現在有許多不同尺寸的成品服裝，任何人都能輕鬆買到適合自己尺寸的奧黛。',
@@ -144,7 +184,11 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'de': 'Muss man sich nun komplett vermessen lassen, wenn man in Vietnam ein Ao '
                         'Dai anprobieren möchte? Nicht unbedingt! Heutzutage gibt es viele '
                         'Konfektionsgrößen von der Stange, sodass jeder problemlos ein passendes '
-                        'Ao Dai finden kann.'},
+                        'Ao Dai finden kann.',
+                  'fr': 'Faut-il pour autant prendre toutes ses mesures si l’on souhaite essayer '
+                        'un áo dài lors d’un séjour au Vietnam ? Pas nécessairement ! Il existe '
+                        'aujourd’hui de nombreux modèles de prêt-à-porter en différentes tailles, '
+                        'ce qui permet à chacun d’en trouver un à sa convenance.'},
                  {'ko': '하늘거리는 아오자이를 입고, 베트남의 예쁜 관광지에서 멋진 사진을 찍어보는 것은 어떨까요? 베트남 여행의 즐거움 중 하나가 될 '
                         '것입니다.',
                   'zh': '穿上輕柔飄逸的奧黛，在越南美麗的觀光景點拍幾張美美的照片，如何呢？這將會成為越南旅行樂趣之一。',
@@ -154,18 +198,23 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'ja': 'ふんわりと揺れるアオザイを着て、ベトナムの美しい観光地で素敵な写真を撮ってみるのはいかがでしょうか？ベトナム旅行の楽しみの一つになることでしょう。',
                   'de': 'Wie wäre es, im luftigen Ao Dai durch Vietnams malerische '
                         'Sehenswürdigkeiten zu spazieren und unvergessliche Fotos zu machen? Es '
-                        'wird mit Sicherheit zu einem Highlight jeder Vietnamreise!'}],
+                        'wird mit Sicherheit zu einem Highlight jeder Vietnamreise!',
+                  'fr': 'Que diriez-vous de revêtir un vêtement aussi fluide et d’immortaliser '
+                        'votre voyage devant les magnifiques paysages du Vietnam ? Ce sera sans '
+                        'nul doute l’un des plus beaux souvenirs de votre séjour.'}],
   'page': 83},
  {'title': {'ko': '오토바이의 나라 베트남',
             'zh': '摩托車王國越南',
             'en': 'Vietnam, the Country of Motorbikes',
             'ja': 'バイクの国ベトナム',
-            'de': 'Vietnam – Das Land der Motorroller'},
+            'de': 'Vietnam – Das Land der Motorroller',
+            'fr': 'Le Vietnam, pays des deux-roues'},
   'subtitle': {'ko': '길은 이렇게 건너요!',
                'zh': '這樣過馬路吧！',
                'en': 'This Is How You Cross the Street!',
                'ja': '道はこうやって渡ります！',
-               'de': 'So überquert man die Straße!'},
+               'de': 'So überquert man die Straße!',
+               'fr': 'Comment traverser la rue !'},
   'paragraphs': [{'ko': '"베트남" 하면 바로 오토바이가 떠오를 만큼 "오토바이의 나라"라고 불리는 것은 많은 분들께서 알고 계실 것 같습니다. 베트남의 '
                         '오토바이 보유량은 전 세계에서 TOP5 안에 들 정도로 엄청난 오토바이 수를 가지고 있습니다. 그럼 베트남은 왜 오토바이를 많이 '
                         '이용하고 있는 것일까요?',
@@ -179,7 +228,12 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'de': 'Viele wissen wohl, dass Vietnam oft als „Land der Motorroller“ bezeichnet '
                         'wird – das Wort „Vietnam“ weckt sofort Bilder dichter Rollerschwärme. Mit '
                         'einer Rollerdichte unter den weltweiten Top 5 ist die Anzahl riesig. Doch '
-                        'warum sind Motorroller in Vietnam so beliebt?'},
+                        'warum sind Motorroller in Vietnam so beliebt?',
+                  'fr': 'Beaucoup savent que le Vietnam est souvent surnommé « le pays des motos » '
+                        ': le simple nom de « Vietnam » évoque d’emblée des nuées de deux-roues. '
+                        'Avec un nombre de deux-roues classé parmi les cinq premiers au monde, '
+                        'leur présence est spectaculaire. Mais pourquoi sont-ils si populaires au '
+                        'Vietnam ?'},
                  {'ko': '첫 번째는 베트남의 도로 사정 때문입니다. 도로가 좁은 편이고, 일방통행도 많아서 베트남에서는 오토바이를 이용하는 것이 시간도 '
                         '절약되고 편리하기 때문입니다. 두 번째는 자동차의 가격이 굉장히 비싸서 오토바이를 많이 이용한다고 합니다.',
                   'zh': '第一個原因是越南的道路狀況。由於道路較為狹窄，加上單行道又多，因此在越南騎乘摩托車既能節省時間又相當便利。第二個原因則是汽車價格非常昂貴，所以人們大多選擇使用摩托車。',
@@ -191,7 +245,12 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'de': 'Ein erster Grund sind die Straßenverhältnisse: Straßen sind oft schmal '
                         'und es gibt viele Einbahnstraßen, sodass ein Roller viel Zeit spart und '
                         'ungemein praktisch ist. Zweitens sind Autos sehr teuer, weshalb die '
-                        'meisten Menschen den Roller bevorzugen.'},
+                        'meisten Menschen den Roller bevorzugen.',
+                  'fr': 'La première raison tient à l’état des routes : celles-ci sont souvent '
+                        'étroites et comptent de nombreux sens uniques, de sorte que le deux-roues '
+                        'fait gagner un temps précieux tout en étant très pratique. La seconde '
+                        'raison est le coût très élevé des automobiles, qui conduit la grande '
+                        'majorité des habitants à choisir le scooter.'},
                  {'ko': '이러한 이유들로 오토바이가 정말 많은 베트남! 하지만 여행객들에게는 매우 낯선 풍경이 아닐 수 없습니다. 특히 길을 건널 때 '
                         '신호등이나 횡단보도가 없으면 어디서 어떻게 건너야 할지 매우 고민이 되는데요. 오토바이가 온다고 빨리 건너기 위해서 절대 뛰어서는 '
                         '안 됩니다. 천천히 걸어가면 오토바이들이 잘 피해서 지나갈 것입니다.',
@@ -209,24 +268,34 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                         'einer Straße ohne Ampel oder Zebrastreifen fragt man sich besorgt, wie '
                         'man sicher hinüberkommt. Wichtigste Regel: Niemals rennen! Gehen Sie '
                         'einfach mit gleichmäßigem, langsamem Schritt – die Rollerfahrer weichen '
-                        'Ihnen dann geschickt aus.'},
+                        'Ihnen dann geschickt aus.',
+                  'fr': 'Pour toutes ces raisons, les motos foisonnent au Vietnam ! Pour les '
+                        'voyageurs, c’est un spectacle pour le moins déroutant. En l’absence de '
+                        'feux de signalisation ou de passages piétons, on peut se demander avec '
+                        'inquiétude comment traverser. Règle essentielle : ne courez jamais ! '
+                        'Avancez d’un pas régulier et tranquille, et les conducteurs sauront vous '
+                        'contourner avec adresse.'},
                  {'ko': '베트남에서만 느낄 수 있는 아주 재밌는 경험일 것입니다.',
                   'zh': '這將會是只有在越南才能體驗到的非常有趣的經歷。',
                   'en': 'It will be a truly fun experience that you can only have in Vietnam.',
                   'ja': 'ベトナムでしか味わえない、とても面白い経験になることでしょう。',
                   'de': 'Ein wirklich spannendes Erlebnis, das man so wohl nur in Vietnam '
-                        'kennenlernt.'}],
+                        'kennenlernt.',
+                  'fr': 'C’est une expérience insolite et mémorable que l’on ne vit nulle part '
+                        'ailleurs qu’au Vietnam.'}],
   'page': 88},
  {'title': {'ko': '베트남의 기후',
             'zh': '越南的氣候',
             'en': "Vietnam's Climate",
             'ja': 'ベトナムの気候',
-            'de': 'Das Klima in Vietnam'},
+            'de': 'Das Klima in Vietnam',
+            'fr': 'Le climat au Vietnam'},
   'subtitle': {'ko': '베트남에서도 두꺼운 점퍼를 입는다고요?',
                'zh': '在越南竟然也要穿厚外套？',
                'en': 'They Wear Thick Jackets in Vietnam Too?',
                'ja': 'ベトナムでも厚手のジャンパーを着るんですか？',
-               'de': 'Dicke Winterjacken in Vietnam?'},
+               'de': 'Dicke Winterjacken in Vietnam?',
+               'fr': 'Des doudounes d’hiver au Vietnam ?'},
   'paragraphs': [{'ko': '베트남의 지형은 긴 S자 형태로, 최남단에서 최북단까지의 거리가 1,750km가 될 정도로 상당히 떨어져 있습니다. 이로 인해 '
                         '지역별 기후 차도 매우 뚜렷하게 나타납니다.',
                   'zh': '越南的地形呈長長的S字型，從最南端到最北端的距離長達1,750公里，相隔相當遙遠。因此各地區之間的氣候差異也十分明顯。',
@@ -238,7 +307,10 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'de': 'Vietnams Landesform hat eine langgestreckte S-Form; die Entfernung vom '
                         'südlichsten bis zum nördlichsten Punkt beträgt rund 1.750 km. '
                         'Entsprechend deutlich unterscheiden sich die Klimazonen der einzelnen '
-                        'Regionen.'},
+                        'Regionen.',
+                  'fr': 'Le Vietnam présente une silhouette allongée en forme de S ; la distance '
+                        'entre l’extrémité sud et l’extrémité nord atteint près de 1 750 km. De ce '
+                        'fait, les contrastes climatiques entre les régions sont très marqués.'},
                  {'ko': '베트남의 북부 지역은 한국과 비슷하게 사계절이 있습니다. 봄과 가을은 상대적으로 짧은 편이나 겨울에는 눈이 오는 지역도 있을 만큼 '
                         '기온도 많이 내려갑니다. 현지인들이 두꺼운 점퍼를 입고 다니는 모습을 흔하게 볼 수 있습니다.',
                   'zh': '越南北部地區和韓國一樣有四季之分。春季和秋季相對較短，但冬季氣溫下降得相當多，甚至有些地區會下雪。因此經常可以看到當地人穿著厚外套出門的樣子。',
@@ -250,7 +322,12 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'de': 'Nordvietnam hat vier ausgeprägte Jahreszeiten, ähnlich wie Korea. '
                         'Frühling und Herbst sind relativ kurz, im Winter fallen die Temperaturen '
                         'jedoch deutlich – in manchen Bergregionen fällt sogar Schnee! Man sieht '
-                        'die Einheimischen dann häufig in dicken Winterjacken.'},
+                        'die Einheimischen dann häufig in dicken Winterjacken.',
+                  'fr': 'Le Nord du Vietnam connaît quatre saisons distinctes. Le printemps et '
+                        'l’automne sont relativement courts, tandis qu’en hiver les températures '
+                        'chutent sensiblement — au point qu’il neige parfois dans certaines '
+                        'régions montagneuses. On y croise couramment des habitants emmitouflés '
+                        'dans de chaudes doudounes.'},
                  {'ko': '중부 지역 중에는 고원 지대가 있는 지역이 많은데, 이 고원 지대는 이름처럼 높이 위치해 있기 때문에 비교적 서늘한 기후를 '
                         '보입니다. 이 서늘한 기후로 인해 베트남의 커피와 같은 여러 작물 등을 많이 재배하는 지역이기도 합니다. 한국 가을~초겨울 정도의 '
                         '날씨로 시원하고 선선하여 여행을 즐기기에 아주 좋은 지역입니다.',
@@ -266,7 +343,12 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                         'ein angenehm kühles Klima bieten. Dank dieses kühlen Klimas werden hier '
                         'viele Nutzpflanzen wie der berühmte vietnamesische Kaffee angebaut. Mit '
                         'angenehm frischen Temperaturen wie im Spätherbst ist diese Region ein '
-                        'ideales Reiseziel.'},
+                        'ideales Reiseziel.',
+                  'fr': 'Le Centre comprend de nombreux hauts plateaux qui, en raison de leur '
+                        'altitude, bénéficient d’un climat tempéré et agréable. Ce climat frais '
+                        'favorise la culture de nombreuses plantes, notamment le réputé café '
+                        'vietnamien. Avec des températures évoquant la fin d’automne, c’est une '
+                        'région idéale pour voyager.'},
                  {'ko': '호찌민시를 중심으로 한 남부 지역은 전형적인 동남아 날씨입니다. 평균 기온은 27~30도이며, 건기와 우기로 계절을 나눌 수 '
                         '있습니다. 건기는 한국의 여름과 비교할 수 없을 정도로 햇볕이 뜨겁습니다. 우기가 되면 게릴라성 폭우가 하루에도 몇 번씩 내려, '
                         '베트남 사람들은 우기에 꼭 우비를 가지고 다니곤 합니다.',
@@ -284,18 +366,26 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                         'aufgeteilt in Trocken- und Regenzeit. In der Trockenzeit brennt die Sonne '
                         'intensiv. Während der Regenzeit treten mehrmals täglich plötzliche '
                         'tropische Regengüsse auf, weshalb man in dieser Zeit stets ein Regencape '
-                        'dabeihaben sollte.'}],
+                        'dabeihaben sollte.',
+                  'fr': 'Le Sud, autour de Hô Chi Minh-Ville, jouit d’un climat tropical typique '
+                        'd’Asie du Sud-Est. La température moyenne oscille entre 27 et 30 °C, avec '
+                        'une alternance de saison sèche et de saison des pluies. Pendant la saison '
+                        'sèche, le soleil tape fort. En saison des pluies, de violentes averses '
+                        'tropicales peuvent survenir plusieurs fois par jour, si bien que les '
+                        'Vietnamiens gardent toujours un imperméable à portée de main.'}],
   'page': 91},
  {'title': {'ko': '베트남어와 한자',
             'zh': '越南語與漢字',
             'en': 'Vietnamese and Chinese Characters',
             'ja': 'ベトナム語と漢字',
-            'de': 'Vietnamesisch und chinesische Schriftzeichen'},
+            'de': 'Vietnamesisch und chinesische Schriftzeichen',
+            'fr': 'Le vietnamien et les caractères chinois'},
   'subtitle': {'ko': '60% 이상이 한자어로 구성된 베트남어',
                'zh': '60%以上由漢字詞構成的越南語',
                'en': 'Vietnamese: Over 60% Made Up of Sino-Vietnamese Words',
                'ja': '60％以上が漢字語で構成されたベトナム語',
-               'de': 'Über 60 % des Wortschatzes stammen aus dem Chinesischen'},
+               'de': 'Über 60 % des Wortschatzes stammen aus dem Chinesischen',
+               'fr': 'Plus de 60 % du vocabulaire provient de mots sino-vietnamiens'},
   'paragraphs': [{'ko': '베트남어를 공부하시는 분들이라면 신기한 발견을 하셨을 것 같습니다. 바로 베트남어의 60% 정도가 한자 베트남어로 이루어졌다는 '
                         '사실입니다.',
                   'zh': '如果是正在學習越南語的朋友，應該會有一個令人驚奇的發現，那就是越南語中約有60%是由漢越詞（漢字詞）所構成的。',
@@ -305,7 +395,10 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'ja': 'ベトナム語を勉強している方なら、興味深い発見をされたのではないでしょうか。それはベトナム語の約60％が漢字ベトナム語（漢越語）で構成されているという事実です。',
                   'de': 'Wer Vietnamesisch lernt, macht bald eine faszinierende Entdeckung: Etwa '
                         '60 % des vietnamesischen Wortschatzes bestehen aus sino-vietnamesischen '
-                        'Wörtern (Lehnwörtern aus dem Chinesischen).'},
+                        'Wörtern (Lehnwörtern aus dem Chinesischen).',
+                  'fr': 'Toute personne qui étudie le vietnamien fait rapidement une découverte '
+                        'fascinante : environ 60 % du vocabulaire vietnamien est composé de mots '
+                        'd’origine chinoise (termes sino-vietnamiens).'},
                  {'ko': '베트남은 중국의 영향으로 한자음이 발달되어 있는 언어입니다. 그래서 베트남어의 글자는 로마자로 표기하고 있지만 한자음과 상당히 '
                         '비슷한 부분이 많이 있습니다.',
                   'zh': '越南語受中國影響，發展出許多漢字音，因此雖然越南語的文字是以羅馬字標記，但其中有不少部分與漢字讀音相當相似。',
@@ -317,18 +410,25 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'de': 'Durch den historischen Einfluss Chinas haben sich im Vietnamesischen '
                         'chinesische Lautungen herausgebildet. Obwohl Vietnamesisch heute im '
                         'lateinischen Alphabet geschrieben wird, klingen viele Wörter den '
-                        'chinesischen Zeichenaussprachen erstaunlich ähnlich.'},
+                        'chinesischen Zeichenaussprachen erstaunlich ähnlich.',
+                  'fr': 'Sous l’influence historique de la Chine, le vietnamien a développé des '
+                        'lectures sino-vietnamiennes des caractères. Bien que la langue s’écrive '
+                        'aujourd’hui en alphabet latin, de nombreuses sonorités demeurent très '
+                        'proches des prononciations chinoises.'},
                  {'ko': '예를 들어 드릴게요!',
                   'zh': '舉個例子給大家看吧！',
                   'en': 'Let me give you an example!',
                   'ja': '例を挙げてみますね！',
-                  'de': 'Hier sind einige Beispiele:'},
+                  'de': 'Hier sind einige Beispiele:',
+                  'fr': 'Voici quelques exemples parlants :'},
                  {'ko': 'đồng ý [동 이] 동의(同意) / xã hội [싸 호이] 사회(社會) / quan quang [꽌꽝] 관광',
                   'zh': 'đồng ý [동 이] 同意 / xã hội [싸 호이] 社會 / quan quang [꽌꽝] 觀光',
                   'en': 'đồng ý [동 이] agree / xã hội [싸 호이] society / quan quang [꽌꽝] tourism',
                   'ja': 'đồng ý [동 이] 同意 / xã hội [싸 호이] 社会 / quan quang [꽌꽝] 観光',
                   'de': 'đồng ý [동 이] zustimmen / xã hội [싸 호이] Gesellschaft / quan quang [꽌꽝] '
-                        'Tourismus'},
+                        'Tourismus',
+                  'fr': 'đồng ý [dông i] être d’accord / xã hội [sa hôï] société / quan quang '
+                        '[kouan kouang] tourisme'},
                  {'ko': '위 단어들을 보시면 발음이 상당히 비슷한 것을 아셨을 텐데요. 물론 베트남어는 성조가 있어서 성조에 따라 그 뜻이 달라지지만 음은 '
                         '같기 때문에 처음 보는 단어일지라도 음으로 유추할 수가 있습니다.',
                   'zh': '看了上面的單字，大家應該會發現發音相當相似吧。當然，越南語有聲調之分，發音會因聲調不同而意思有所改變，但由於音節本身相同，就算是第一次見到的單字，也能透過發音來推測其意思。',
@@ -341,22 +441,33 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'de': 'Wie Sie an diesen Wörtern sehen, sind die Aussprachen oft sehr ähnlich. '
                         'Zwar verändern Töne die Bedeutung eines Wortes, doch da der Grundlaut '
                         'gleich bleibt, kann man sich die Bedeutung selbst bei unbekannten Wörtern '
-                        'oft herleiten.'},
+                        'oft herleiten.',
+                  'fr': 'En observant ces mots, vous remarquerez la grande proximité des '
+                        'sonorités. Bien que le vietnamien comporte des tons qui modifient le '
+                        'sens, le son de base reste identique, ce qui permet souvent de deviner la '
+                        'signification d’un mot inconnu.'},
                  {'ko': '베트남어 공부 어렵게만 생각했는데, 이렇게 보니 베트남어 공부가 조금은 쉽게 느껴지지는 않으신가요?',
                   'zh': '原本以為越南語很難學，但這樣看下來，是不是覺得學越南語稍微變得簡單一些了呢？',
                   'en': 'You may have thought studying Vietnamese was only difficult, but seeing '
                         "it this way, doesn't it feel a little easier now?",
                   'ja': 'ベトナム語の勉強は難しいとばかり思っていましたが、こうして見てみるとベトナム語の勉強が少し簡単に感じられませんか？',
                   'de': 'Vielleicht erschien Ihnen Vietnamesisch bisher sehr schwer – doch aus '
-                        'diesem Blickwinkel wirkt es gleich viel zugänglicher, nicht wahr?'}],
+                        'diesem Blickwinkel wirkt es gleich viel zugänglicher, nicht wahr?',
+                  'fr': 'Vous pensiez peut-être que le vietnamien était inaccessible, mais sous '
+                        'cet angle, l’apprentissage ne paraît-il pas plus abordable ?'}],
   'page': 125}]
 
 CULTURE_HANJA_EXAMPLES = [{'vi': 'sinh hoạt',
   'ipa': '씽 호앋',
-  'kr': {'ko': '생활', 'zh': '生活', 'en': 'Life', 'ja': '生活', 'de': 'Leben'}},
+  'kr': {'ko': '생활', 'zh': '生活', 'en': 'Life', 'ja': '生活', 'de': 'Leben', 'fr': 'Vie'}},
  {'vi': 'xã hội',
   'ipa': '싸 호이',
-  'kr': {'ko': '사회', 'zh': '社會', 'en': 'Society', 'ja': '社会', 'de': 'Gesellschaft'}},
+  'kr': {'ko': '사회',
+         'zh': '社會',
+         'en': 'Society',
+         'ja': '社会',
+         'de': 'Gesellschaft',
+         'fr': 'Société'}},
  {'vi': 'quan tâm',
   'ipa': '꽌떰',
-  'kr': {'ko': '관심', 'zh': '關心', 'en': 'Interest', 'ja': '関心', 'de': 'Interesse'}}]
+  'kr': {'ko': '관심', 'zh': '關心', 'en': 'Interest', 'ja': '関心', 'de': 'Interesse', 'fr': 'Intérêt'}}]

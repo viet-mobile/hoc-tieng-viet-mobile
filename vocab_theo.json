@@ -7,7 +7,8 @@
    "zh": "魔鬼",
    "en": "devil, demon",
    "ja": "悪魔",
-   "de": "Teufel"
+   "de": "Teufel",
+   "fr": "Diable"
   }
  },
  {
@@ -18,7 +19,8 @@
    "zh": "出版物",
    "en": "publication",
    "ja": "出版物",
-   "de": "Veröffentlichung"
+   "de": "Veröffentlichung",
+   "fr": "publication"
   }
  },
  {
@@ -29,7 +31,8 @@
    "zh": "弟兄",
    "en": "Brother",
    "ja": "兄弟",
-   "de": "Bruder"
+   "de": "Bruder",
+   "fr": "frère"
   }
  },
  {
@@ -40,7 +43,8 @@
    "zh": "監督",
    "en": "overseer",
    "ja": "監督者",
-   "de": "Aufseher"
+   "de": "Aufseher",
+   "fr": "surveillant"
   }
  },
  {
@@ -51,7 +55,8 @@
    "zh": "傳道監督",
    "en": "service overseer",
    "ja": "奉仕監督者",
-   "de": "Dienstaufseher"
+   "de": "Dienstaufseher",
+   "fr": "surveillant au service"
   }
  },
  {
@@ -62,7 +67,8 @@
    "zh": "分區監督",
    "en": "circuit overseer",
    "ja": "巡回監督",
-   "de": "Kreisaufseher"
+   "de": "Kreisaufseher",
+   "fr": "surveillant de circonscription"
   }
  },
  {
@@ -73,7 +79,8 @@
    "zh": "同輩壓力",
    "en": "peer pressure",
    "ja": "仲間からの圧力",
-   "de": "Gruppenzwang"
+   "de": "Gruppenzwang",
+   "fr": "pression du groupe"
   }
  },
  {
@@ -84,7 +91,8 @@
    "zh": "阿們",
    "en": "amen",
    "ja": "アーメン",
-   "de": "Amen"
+   "de": "Amen",
+   "fr": "amen"
   }
  },
  {
@@ -95,7 +103,8 @@
    "zh": "悔改",
    "en": "to repent",
    "ja": "悔い改める",
-   "de": "bereuen"
+   "de": "bereuen",
+   "fr": "se repentir"
   }
  },
  {
@@ -106,7 +115,8 @@
    "zh": "福分",
    "en": "blessing",
    "ja": "祝福",
-   "de": "Segen"
+   "de": "Segen",
+   "fr": "bénédiction"
   }
  },
  {
@@ -117,7 +127,8 @@
    "zh": "演講",
    "en": "speech",
    "ja": "演説",
-   "de": "Vortrag"
+   "de": "Vortrag",
+   "fr": "discours"
   }
  },
  {
@@ -128,7 +139,8 @@
    "zh": "登山寶訓",
    "en": "Sermon on the Mount",
    "ja": "山上の垂訓",
-   "de": "Bergpredigt"
+   "de": "Bergpredigt",
+   "fr": "Sermon sur la montagne"
   }
  },
  {
@@ -139,7 +151,8 @@
    "zh": "歌曲",
    "en": "song",
    "ja": "歌",
-   "de": "Lied"
+   "de": "Lied",
+   "fr": "cantique"
   }
  },
  {
@@ -150,7 +163,8 @@
    "zh": "報告",
    "en": "to report",
    "ja": "報告する",
-   "de": "Bericht abgeben"
+   "de": "Bericht abgeben",
+   "fr": "rapporter, remettre un rapport"
   }
  },
  {
@@ -161,7 +175,8 @@
    "zh": "報仇、復仇",
    "en": "to avenge, to take revenge",
    "ja": "復讐する",
-   "de": "rächen, Rache nehmen"
+   "de": "rächen, Rache nehmen",
+   "fr": "se venger"
   }
  },
  {
@@ -172,7 +187,8 @@
    "zh": "浸禮",
    "en": "baptism",
    "ja": "バプテスマ",
-   "de": "Taufe"
+   "de": "Taufe",
+   "fr": "baptême"
   }
  },
  {
@@ -183,7 +199,8 @@
    "zh": "不朽的，不滅的",
    "en": "immortal",
    "ja": "不滅の",
-   "de": "unsterblich"
+   "de": "unsterblich",
+   "fr": "immortel"
   }
  },
  {
@@ -194,7 +211,8 @@
    "zh": "一小群",
    "en": "little flock",
    "ja": "小さな群れ",
-   "de": "kleine Herde"
+   "de": "kleine Herde",
+   "fr": "petit troupeau"
   }
  },
  {
@@ -205,7 +223,8 @@
    "zh": "大巴比倫",
    "en": "Babylon the Great",
    "ja": "大いなるバビロン",
-   "de": "Babylon die Große"
+   "de": "Babylon die Große",
+   "fr": "Babylone la Grande"
   }
  },
  {
@@ -216,7 +235,8 @@
    "zh": "愛滋病",
    "en": "AIDS",
    "ja": "エイズ",
-   "de": "Aids"
+   "de": "Aids",
+   "fr": "sida"
   }
  },
  {
@@ -227,7 +247,8 @@
    "zh": "伯特利",
    "en": "Bethel",
    "ja": "ベテル",
-   "de": "Bethel"
+   "de": "Bethel",
+   "fr": "Béthel"
   }
  },
  {
@@ -238,7 +259,8 @@
    "zh": "加利利海",
    "en": "Sea of Galilee",
    "ja": "ガリラヤ湖",
-   "de": "Galiläisches Meer"
+   "de": "Galiläisches Meer",
+   "fr": "mer de Galilée"
   }
  },
  {
@@ -249,7 +271,8 @@
    "zh": "神聖力量的果實",
    "en": "fruitage of the spirit",
    "ja": "聖霊の実",
-   "de": "Frucht des Geistes"
+   "de": "Frucht des Geistes",
+   "fr": "fruit de l’esprit"
   }
  },
  {
@@ -260,7 +283,8 @@
    "zh": "主的晚餐",
    "en": "the Lord's Evening Meal",
    "ja": "主の晩さん",
-   "de": "Abendmahl des Herrn"
+   "de": "Abendmahl des Herrn",
+   "fr": "Repas du Seigneur"
   }
  },
  {
@@ -271,7 +295,8 @@
    "zh": "講台",
    "en": "podium, platform",
    "ja": "演壇",
-   "de": "Bühne, Podium"
+   "de": "Bühne, Podium",
+   "fr": "estrade, pupitre"
   }
  },
  {
@@ -282,7 +307,8 @@
    "zh": "聚會",
    "en": "meeting",
    "ja": "集会",
-   "de": "Zusammenkunft"
+   "de": "Zusammenkunft",
+   "fr": "réunion"
   }
  },
  {
@@ -293,7 +319,8 @@
    "zh": "週末聚會",
    "en": "weekend meeting",
    "ja": "週末の集会",
-   "de": "Wochenendzusammenkunft"
+   "de": "Wochenendzusammenkunft",
+   "fr": "réunion du week-end"
   }
  },
  {
@@ -304,7 +331,8 @@
    "zh": "週中聚會",
    "en": "midweek meeting",
    "ja": "週半ばの集会",
-   "de": "Zusammenkunft unter der Woche"
+   "de": "Zusammenkunft unter der Woche",
+   "fr": "réunion de semaine"
   }
  },
  {
@@ -315,7 +343,8 @@
    "zh": "守望台研讀班",
    "en": "Watchtower Study (meeting)",
    "ja": "ものみの塔研究(集会)",
-   "de": "Wachtturm-Studium"
+   "de": "Wachtturm-Studium",
+   "fr": "étude de La Tour de Garde"
   }
  },
  {
@@ -326,7 +355,8 @@
    "zh": "聚會",
    "en": "meeting, gathering",
    "ja": "集会",
-   "de": "Zusammenkunft"
+   "de": "Zusammenkunft",
+   "fr": "réunion"
   }
  },
  {
@@ -337,7 +367,8 @@
    "zh": "家庭崇拜",
    "en": "family worship",
    "ja": "家族崇拝",
-   "de": "Familienanbetung"
+   "de": "Familienanbetung",
+   "fr": "culte familial"
   }
  },
  {
@@ -348,7 +379,8 @@
    "zh": "路程",
    "en": "course/path",
    "ja": "行路",
-   "de": "Lebensweg, Lauf"
+   "de": "Lebensweg, Lauf",
+   "fr": "voie, course"
   }
  },
  {
@@ -359,7 +391,8 @@
    "zh": "提供方式(奉仕、演講)",
    "en": "method of offering (service, talk)",
    "ja": "提供方法(奉仕、話)",
-   "de": "Gesprächsvorschlag"
+   "de": "Gesprächsvorschlag",
+   "fr": "suggestion de conversation"
   }
  },
  {
@@ -370,7 +403,8 @@
    "zh": "要努力做外勤傳道（聚會）",
    "en": "Strive in field service (meeting)",
    "ja": "野外奉仕に励みなさい（集会）",
-   "de": "Uns im Dienst verbessern"
+   "de": "Uns im Dienst verbessern",
+   "fr": "Applique-toi au ministère"
   }
  },
  {
@@ -381,7 +415,8 @@
    "zh": "感謝、感恩",
    "en": "to give thanks, to be thankful",
    "ja": "感謝する",
-   "de": "danken, Dank sagen"
+   "de": "danken, Dank sagen",
+   "fr": "remercier, rendre grâce"
   }
  },
  {
@@ -392,7 +427,8 @@
    "zh": "禱告",
    "en": "prayer",
    "ja": "祈り",
-   "de": "Gebet"
+   "de": "Gebet",
+   "fr": "prière"
   }
  },
  {
@@ -403,7 +439,8 @@
    "zh": "壓力",
    "en": "stress",
    "ja": "ストレス",
-   "de": "Stress"
+   "de": "Stress",
+   "fr": "stress"
   }
  },
  {
@@ -414,7 +451,8 @@
    "zh": "鞠躬",
    "en": "bow (greeting)",
    "ja": "お辞儀",
-   "de": "Vers"
+   "de": "Vers",
+   "fr": "verset"
   }
  },
  {
@@ -425,7 +463,8 @@
    "zh": "經文",
    "en": "scripture",
    "ja": "聖句",
-   "de": "Bibeltext"
+   "de": "Bibeltext",
+   "fr": "verset, texte biblique"
   }
  },
  {
@@ -436,7 +475,8 @@
    "zh": "荊州",
    "en": "Jingzhou",
    "ja": "荊州",
-   "de": "Marterpfahl"
+   "de": "Marterpfahl",
+   "fr": "poteau de supplice"
   }
  },
  {
@@ -447,7 +487,8 @@
    "zh": "真理",
    "en": "truth",
    "ja": "真理",
-   "de": "Wahrheit"
+   "de": "Wahrheit",
+   "fr": "vérité"
   }
  },
  {
@@ -458,7 +499,8 @@
    "zh": "任命（課題）",
    "en": "to appoint (assignment)",
    "ja": "任命する（課題）",
-   "de": "zuteilen (Aufgabe)"
+   "de": "zuteilen (Aufgabe)",
+   "fr": "attribution (devoir)"
   }
  },
  {
@@ -469,7 +511,8 @@
    "zh": "傳播·電波",
    "en": "propagation/wave",
    "ja": "電波・伝播",
-   "de": "Glauben weitergeben, predigen"
+   "de": "Glauben weitergeben, predigen",
+   "fr": "prêcher, partager sa foi"
   }
  },
  {
@@ -480,7 +523,8 @@
    "zh": "別的羊",
    "en": "other sheep",
    "ja": "ほかの羊",
-   "de": "andere Schafe"
+   "de": "andere Schafe",
+   "fr": "autres brebis"
   }
  },
  {
@@ -491,7 +535,8 @@
    "zh": "政府",
    "en": "government",
    "ja": "政府",
-   "de": "Regierung"
+   "de": "Regierung",
+   "fr": "gouvernement"
   }
  },
  {
@@ -502,7 +547,8 @@
    "zh": "行政部門",
    "en": "administrative branch",
    "ja": "行政府",
-   "de": "Behörden, Verwaltung"
+   "de": "Behörden, Verwaltung",
+   "fr": "autorités, pouvoir exécutif"
   }
  },
  {
@@ -513,7 +559,8 @@
    "zh": "主題",
    "en": "topic/subject",
    "ja": "主題",
-   "de": "Thema"
+   "de": "Thema",
+   "fr": "thème, sujet"
   }
  },
  {
@@ -524,7 +571,8 @@
    "zh": "國家主義",
    "en": "nationalism",
    "ja": "国家主義",
-   "de": "Nationalismus"
+   "de": "Nationalismus",
+   "fr": "nationalisme"
   }
  },
  {
@@ -535,7 +583,8 @@
    "zh": "物質主義",
    "en": "materialism",
    "ja": "物質主義",
-   "de": "Materialismus"
+   "de": "Materialismus",
+   "fr": "matérialisme"
   }
  },
  {
@@ -546,7 +595,8 @@
    "zh": "祭司職",
    "en": "priesthood",
    "ja": "祭司職",
-   "de": "Priestertum"
+   "de": "Priestertum",
+   "fr": "prêtrise"
   }
  },
  {
@@ -557,7 +607,8 @@
    "zh": "章",
    "en": "chapter",
    "ja": "章",
-   "de": "Kapitel"
+   "de": "Kapitel",
+   "fr": "chapitre"
   }
  },
  {
@@ -568,7 +619,8 @@
    "zh": "上帝的兒子",
    "en": "God's Son",
    "ja": "神の子",
-   "de": "Sohn Gottes"
+   "de": "Sohn Gottes",
+   "fr": "Fils de Dieu"
   }
  },
  {
@@ -579,7 +631,8 @@
    "zh": "山羊",
    "en": "goat",
    "ja": "ヤギ",
-   "de": "Ziege"
+   "de": "Ziege",
+   "fr": "chèvre, bouc"
   }
  },
  {
@@ -590,7 +643,8 @@
    "zh": "獨生子",
    "en": "only-begotten son",
    "ja": "独り子",
-   "de": "einziggezeugter Sohn"
+   "de": "einziggezeugter Sohn",
+   "fr": "Fils unique"
   }
  },
  {
@@ -601,7 +655,8 @@
    "zh": "正義的",
    "en": "righteous",
    "ja": "義にかなった",
-   "de": "gerecht"
+   "de": "gerecht",
+   "fr": "juste"
   }
  },
  {
@@ -612,7 +667,8 @@
    "zh": "聽眾",
    "en": "audience",
    "ja": "聴衆",
-   "de": "Zuhörerschaft"
+   "de": "Zuhörerschaft",
+   "fr": "auditoire"
   }
  },
  {
@@ -623,7 +679,8 @@
    "zh": "家庭聖經研究",
    "en": "home Bible study",
    "ja": "家庭聖書研究",
-   "de": "Heimbibelstudium"
+   "de": "Heimbibelstudium",
+   "fr": "cours biblique à domicile"
   }
  },
  {
@@ -634,7 +691,8 @@
    "zh": "教育",
    "en": "education",
    "ja": "教育",
-   "de": "Lehre, Belehrung"
+   "de": "Lehre, Belehrung",
+   "fr": "enseignement, éducation"
   }
  },
  {
@@ -645,7 +703,8 @@
    "zh": "獻身",
    "en": "to devote oneself",
    "ja": "献身する",
-   "de": "sich hingeben"
+   "de": "sich hingeben",
+   "fr": "se vouer, vouement"
   }
  },
  {
@@ -656,7 +715,8 @@
    "zh": "講者",
    "en": "speaker",
    "ja": "講演者",
-   "de": "Redner"
+   "de": "Redner",
+   "fr": "orateur"
   }
  },
  {
@@ -667,7 +727,8 @@
    "zh": "公眾演講",
    "en": "public talk",
    "ja": "公開講演",
-   "de": "öffentlicher Vortrag"
+   "de": "öffentlicher Vortrag",
+   "fr": "discours public"
   }
  },
  {
@@ -678,7 +739,8 @@
    "zh": "大會",
    "en": "convention",
    "ja": "大会",
-   "de": "Kongress"
+   "de": "Kongress",
+   "fr": "assemblée"
   }
  },
  {
@@ -689,7 +751,8 @@
    "zh": "創造主",
    "en": "Creator",
    "ja": "創造主",
-   "de": "Schöpfer"
+   "de": "Schöpfer",
+   "fr": "Créateur"
   }
  },
  {
@@ -700,7 +763,8 @@
    "zh": "全能者",
    "en": "the Almighty",
    "ja": "全能者",
-   "de": "der Allmächtige"
+   "de": "der Allmächtige",
+   "fr": "le Tout-Puissant"
   }
  },
  {
@@ -711,7 +775,8 @@
    "zh": "居間人",
    "en": "intermediary",
    "ja": "仲介者",
-   "de": "Mittler"
+   "de": "Mittler",
+   "fr": "Médiateur"
   }
  },
  {
@@ -722,7 +787,8 @@
    "zh": "基督教",
    "en": "Christianity",
    "ja": "キリスト教",
-   "de": "Christentum"
+   "de": "Christentum",
+   "fr": "christianisme"
   }
  },
  {
@@ -733,7 +799,8 @@
    "zh": "道德",
    "en": "morality",
    "ja": "道徳",
-   "de": "Moral"
+   "de": "Moral",
+   "fr": "morale, moralité"
   }
  },
  {
@@ -744,7 +811,8 @@
    "zh": "應許之地",
    "en": "the promised land",
    "ja": "約束の地",
-   "de": "verheißenes Land"
+   "de": "verheißenes Land",
+   "fr": "pays promis"
   }
  },
  {
@@ -755,7 +823,8 @@
    "zh": "應許之地",
    "en": "Promised Land",
    "ja": "約束の地",
-   "de": "Verheißenes Land"
+   "de": "Verheißenes Land",
+   "fr": "Terre promise"
   }
  },
  {
@@ -766,7 +835,8 @@
    "zh": "忠信睿智的奴隸",
    "en": "faithful and discreet slave",
    "ja": "忠実で思慮深い奴隷",
-   "de": "treuer und verständiger Sklave"
+   "de": "treuer und verständiger Sklave",
+   "fr": "esclave fidèle et avisé"
   }
  },
  {
@@ -777,7 +847,8 @@
    "zh": "聖殿",
    "en": "temple",
    "ja": "神殿",
-   "de": "Tempel"
+   "de": "Tempel",
+   "fr": "temple"
   }
  },
  {
@@ -788,7 +859,8 @@
    "zh": "弟兄關係",
    "en": "brotherhood",
    "ja": "兄弟関係",
-   "de": "Bruderschaft"
+   "de": "Bruderschaft",
+   "fr": "communauté des frères"
   }
  },
  {
@@ -799,7 +871,8 @@
    "zh": "聖經朗讀",
    "en": "Bible reading",
    "ja": "聖書の朗読",
-   "de": "Bibellesung"
+   "de": "Bibellesung",
+   "fr": "lecture de la Bible"
   }
  },
  {
@@ -810,7 +883,8 @@
    "zh": "同性戀",
    "en": "homosexuality",
    "ja": "同性愛",
-   "de": "Homosexualität"
+   "de": "Homosexualität",
+   "fr": "homosexualité"
   }
  },
  {
@@ -821,7 +895,8 @@
    "zh": "應對問題",
    "en": "deal with a problem",
    "ja": "問題に対処する",
-   "de": "mit Problemen umgehen"
+   "de": "mit Problemen umgehen",
+   "fr": "faire face aux problèmes"
   }
  },
  {
@@ -832,7 +907,8 @@
    "zh": "贖價",
    "en": "ransom",
    "ja": "贖い",
-   "de": "Lösegeld"
+   "de": "Lösegeld",
+   "fr": "rançon"
   }
  },
  {
@@ -843,7 +919,8 @@
    "zh": "休閒活動",
    "en": "leisure activity",
    "ja": "余暇活動",
-   "de": "Freizeitbeschäftigung"
+   "de": "Freizeitbeschäftigung",
+   "fr": "détente, loisirs"
   }
  },
  {
@@ -854,7 +931,8 @@
    "zh": "長老團協調者",
    "en": "mediator",
    "ja": "調停者",
-   "de": "Koordinator der Ältestenschaft"
+   "de": "Koordinator der Ältestenschaft",
+   "fr": "coordinateur du collège des anciens"
   }
  },
  {
@@ -865,7 +943,8 @@
    "zh": "教義",
    "en": "doctrine",
    "ja": "教理",
-   "de": "Lehre, Glaubenslehre"
+   "de": "Lehre, Glaubenslehre",
+   "fr": "doctrine"
   }
  },
  {
@@ -876,7 +955,8 @@
    "zh": "特派傳道員",
    "en": "missionary",
    "ja": "宣教師",
-   "de": "Missionar"
+   "de": "Missionar",
+   "fr": "missionnaire"
   }
  },
  {
@@ -887,7 +967,8 @@
    "zh": "合約",
    "en": "contract",
    "ja": "契約",
-   "de": "Bund"
+   "de": "Bund",
+   "fr": "alliance"
   }
  },
  {
@@ -898,7 +979,8 @@
    "zh": "醫療委任書",
    "en": "medical power of attorney",
    "ja": "医療委任状",
-   "de": "Vorsorgevollmacht"
+   "de": "Vorsorgevollmacht",
+   "fr": "mandat de protection médicale"
   }
  },
  {
@@ -909,7 +991,8 @@
    "zh": "耶和華上帝",
    "en": "Jehovah God",
    "ja": "エホバ神",
-   "de": "Jehova Gott"
+   "de": "Jehova Gott",
+   "fr": "Jéhovah Dieu"
   }
  },
  {
@@ -920,7 +1003,8 @@
    "zh": "耶穌基督",
    "en": "Jesus Christ",
    "ja": "イエス・キリスト",
-   "de": "Jesus Christus"
+   "de": "Jesus Christus",
+   "fr": "Jésus Christ"
   }
  },
  {
@@ -931,7 +1015,8 @@
    "zh": "「海地斯」（希臘語）",
    "en": "Hades",
    "ja": "ハデス",
-   "de": "Hades"
+   "de": "Hades",
+   "fr": "Hadès"
   }
  },
  {
@@ -942,7 +1027,8 @@
    "zh": "教職人員",
    "en": "educator",
    "ja": "教職者",
-   "de": "Geistlichkeit"
+   "de": "Geistlichkeit",
+   "fr": "clergé"
   }
  },
  {
@@ -953,7 +1039,8 @@
    "zh": "事奉",
    "en": "to serve (God)",
    "ja": "仕える",
-   "de": "dienen (Gott)"
+   "de": "dienen (Gott)",
+   "fr": "servir Dieu"
   }
  },
  {
@@ -964,7 +1051,8 @@
    "zh": "用全部生命 (盡心竭力)",
    "en": "with all one's soul",
    "ja": "魂を尽くした",
-   "de": "mit ganzer Seele"
+   "de": "mit ganzer Seele",
+   "fr": "de toute son âme"
   }
  },
  {
@@ -975,7 +1063,8 @@
    "zh": "確切的認識",
    "en": "accurate knowledge",
    "ja": "正確な知識",
-   "de": "genaue Erkenntnis"
+   "de": "genaue Erkenntnis",
+   "fr": "connaissance exacte"
   }
  },
  {
@@ -986,7 +1075,8 @@
    "zh": "完美的",
    "en": "perfect",
    "ja": "完璧な",
-   "de": "vollkommen"
+   "de": "vollkommen",
+   "fr": "parfait"
   }
  },
  {
@@ -997,7 +1087,8 @@
    "zh": "大患難",
    "en": "the great tribulation",
    "ja": "大患難",
-   "de": "große Drangsal"
+   "de": "große Drangsal",
+   "fr": "grande tribulation"
   }
  },
  {
@@ -1008,7 +1099,8 @@
    "zh": "宇宙的",
    "en": "cosmic",
    "ja": "宇宙的な",
-   "de": "universell"
+   "de": "universell",
+   "fr": "universel"
   }
  },
  {
@@ -1019,7 +1111,8 @@
    "zh": "研究",
    "en": "to research",
    "ja": "研究（する）",
-   "de": "studieren, Studium"
+   "de": "studieren, Studium",
+   "fr": "étudier, étude"
   }
  },
  {
@@ -1030,7 +1123,8 @@
    "zh": "個人研讀",
    "en": "personal study",
    "ja": "個人研究",
-   "de": "persönliches Studium"
+   "de": "persönliches Studium",
+   "fr": "étude individuelle"
   }
  },
  {
@@ -1041,7 +1135,8 @@
    "zh": "聖經研究生",
    "en": "Bible student",
    "ja": "聖書研究生",
-   "de": "Bibelschüler"
+   "de": "Bibelschüler",
+   "fr": "étudiant de la Bible"
   }
  },
  {
@@ -1052,7 +1147,8 @@
    "zh": "中央長老團",
    "en": "central body of elders",
    "ja": "中央長老会",
-   "de": "Leitende Körperschaft"
+   "de": "Leitende Körperschaft",
+   "fr": "Collège central"
   }
  },
  {
@@ -1063,7 +1159,8 @@
    "zh": "長老團",
    "en": "body of elders",
    "ja": "長老の会",
-   "de": "Ältestenschaft"
+   "de": "Ältestenschaft",
+   "fr": "collège des anciens"
   }
  },
  {
@@ -1074,7 +1171,8 @@
    "zh": "分區大會",
    "en": "circuit assembly",
    "ja": "巡回大会",
-   "de": "Kreiskongress"
+   "de": "Kreiskongress",
+   "fr": "assemblée de circonscription"
   }
  },
  {
@@ -1085,7 +1183,8 @@
    "zh": "國際聯盟",
    "en": "League of Nations",
    "ja": "国際連盟",
-   "de": "Völkerbund"
+   "de": "Völkerbund",
+   "fr": "Société des Nations"
   }
  },
  {
@@ -1096,7 +1195,8 @@
    "zh": "會眾",
    "en": "congregation",
    "ja": "会衆",
-   "de": "Versammlung"
+   "de": "Versammlung",
+   "fr": "assemblée, congrégation"
   }
  },
  {
@@ -1107,7 +1207,8 @@
    "zh": "奉獻箱",
    "en": "offering box",
    "ja": "献金箱",
-   "de": "Spendenkasten"
+   "de": "Spendenkasten",
+   "fr": "boîte à offrandes"
   }
  },
  {
@@ -1118,7 +1219,8 @@
    "zh": "犧牲",
    "en": "to sacrifice",
    "ja": "犠牲にする",
-   "de": "opfern, Opfer bringen"
+   "de": "opfern, Opfer bringen",
+   "fr": "sacrifier, faire des sacrifices"
   }
  },
  {
@@ -1129,7 +1231,8 @@
    "zh": "壞的交往",
    "en": "bad association",
    "ja": "悪い交わり",
-   "de": "schlechter Umgang"
+   "de": "schlechter Umgang",
+   "fr": "mauvaises fréquentations"
   }
  },
  {
@@ -1140,7 +1243,8 @@
    "zh": "結婚",
    "en": "marriage",
    "ja": "結婚",
-   "de": "Heirat, Ehe"
+   "de": "Heirat, Ehe",
+   "fr": "mariage"
   }
  },
  {
@@ -1151,7 +1255,8 @@
    "zh": "思考能力",
    "en": "thinking ability",
    "ja": "思考力",
-   "de": "Denkvermögen"
+   "de": "Denkvermögen",
+   "fr": "capacité de réflexion"
   }
  },
  {
@@ -1162,7 +1267,8 @@
    "zh": "賦予動機",
    "en": "to motivate",
    "ja": "動機を与える",
-   "de": "ermuntern, motivieren"
+   "de": "ermuntern, motivieren",
+   "fr": "encourager, motiver"
   }
  },
  {
@@ -1173,7 +1279,8 @@
    "zh": "聖經寶藏(聚會)",
    "en": "Treasures From God's Word (meeting)",
    "ja": "神の言葉の宝(集会)",
-   "de": "Schätze aus Gottes Wort"
+   "de": "Schätze aus Gottes Wort",
+   "fr": "Joyaux de la Parole de Dieu"
   }
  },
  {
@@ -1184,7 +1291,8 @@
    "zh": "基督教國",
    "en": "Christendom",
    "ja": "キリスト教国",
-   "de": "Christenheit"
+   "de": "Christenheit",
+   "fr": "chrétienté"
   }
  },
  {
@@ -1195,7 +1303,8 @@
    "zh": "區域",
    "en": "district, territory",
    "ja": "区域",
-   "de": "Gebiet"
+   "de": "Gebiet",
+   "fr": "territoire"
   }
  },
  {
@@ -1206,7 +1315,8 @@
    "zh": "電視劇",
    "en": "drama",
    "ja": "ドラマ",
-   "de": "Hörspiel, Drama"
+   "de": "Hörspiel, Drama",
+   "fr": "pièce, fiction dramatique"
   }
  },
  {
@@ -1217,7 +1327,8 @@
    "zh": "主禱文",
    "en": "the Lord's Prayer",
    "ja": "主の祈り",
-   "de": "Vaterunser"
+   "de": "Vaterunser",
+   "fr": "Notre Père"
   }
  },
  {
@@ -1228,7 +1339,8 @@
    "zh": "聖經",
    "en": "the Bible",
    "ja": "聖書",
-   "de": "die Bibel"
+   "de": "die Bibel",
+   "fr": "la Bible"
   }
  },
  {
@@ -1239,7 +1351,8 @@
    "zh": "見證",
    "en": "to testify/witness",
    "ja": "証しする",
-   "de": "Zeugnis ablegen"
+   "de": "Zeugnis ablegen",
+   "fr": "rendre témoignage"
   }
  },
  {
@@ -1250,7 +1363,8 @@
    "zh": "非正式證據",
    "en": "informal evidence",
    "ja": "非公式の証拠",
-   "de": "informelles Zeugnisgeben"
+   "de": "informelles Zeugnisgeben",
+   "fr": "témoignage informel"
   }
  },
  {
@@ -1261,7 +1375,8 @@
    "zh": "公開見證",
    "en": "public witnessing",
    "ja": "公開の証言",
-   "de": "Zeugnisgeben in der Öffentlichkeit"
+   "de": "Zeugnisgeben in der Öffentlichkeit",
+   "fr": "témoignage public"
   }
  },
  {
@@ -1272,7 +1387,8 @@
    "zh": "五旬節",
    "en": "Pentecost",
    "ja": "ペンテコステ",
-   "de": "Pfingsten"
+   "de": "Pfingsten",
+   "fr": "Pentecôte"
   }
  },
  {
@@ -1283,7 +1399,8 @@
    "zh": "逾越節",
    "en": "Passover",
    "ja": "過ぎ越し",
-   "de": "Passah"
+   "de": "Passah",
+   "fr": "Pâque"
   }
  },
  {
@@ -1294,7 +1411,8 @@
    "zh": "聯合國",
    "en": "United Nations",
    "ja": "国際連合",
-   "de": "Vereinte Nationen"
+   "de": "Vereinte Nationen",
+   "fr": "Nations unies"
   }
  },
  {
@@ -1305,7 +1423,8 @@
    "zh": "趕出去了",
    "en": "sent out, expelled",
    "ja": "追い出した",
-   "de": "entfernen, ausschließen"
+   "de": "entfernen, ausschließen",
+   "fr": "exclure, renvoyer"
   }
  },
  {
@@ -1316,7 +1435,8 @@
    "zh": "上帝的話語",
    "en": "God's word",
    "ja": "神の言葉",
-   "de": "Wort Gottes"
+   "de": "Wort Gottes",
+   "fr": "parole de Dieu"
   }
  },
  {
@@ -1327,7 +1447,8 @@
    "zh": "生活方式",
    "en": "lifestyle",
    "ja": "生活様式",
-   "de": "Lebensweise"
+   "de": "Lebensweise",
+   "fr": "mode de vie"
   }
  },
  {
@@ -1338,7 +1459,8 @@
    "zh": "基督徒生活(聚會)",
    "en": "Christian Life (meeting)",
    "ja": "クリスチャン生活(集会)",
-   "de": "Unser Leben als Christ"
+   "de": "Unser Leben als Christ",
+   "fr": "Vie chrétienne"
   }
  },
  {
@@ -1349,7 +1471,8 @@
    "zh": "生活與服事聚會",
    "en": "Life and Ministry Meeting",
    "ja": "生活と奉仕の集会",
-   "de": "Leben-und-Dienst-Zusammenkunft"
+   "de": "Leben-und-Dienst-Zusammenkunft",
+   "fr": "réunion Vie et ministère"
   }
  },
  {
@@ -1360,7 +1483,8 @@
    "zh": "《基督徒生活與聚會教材》",
    "en": "Christian Life and Meeting Workbook",
    "ja": "クリスチャンの生活と集会の教材",
-   "de": "Arbeitsheft für die Zusammenkunft"
+   "de": "Arbeitsheft für die Zusammenkunft",
+   "fr": "Cahier pour la réunion Vie et ministère"
   }
  },
  {
@@ -1371,7 +1495,8 @@
    "zh": "敬虔的忠貞",
    "en": "godly devotion",
    "ja": "敬虔な献身",
-   "de": "Gottergebenheit"
+   "de": "Gottergebenheit",
+   "fr": "attachement à Dieu"
   }
  },
  {
@@ -1382,7 +1507,8 @@
    "zh": "忠誠",
    "en": "loyalty",
    "ja": "忠誠",
-   "de": "Loyalität"
+   "de": "Loyalität",
+   "fr": "loyauté, fidélité"
   }
  },
  {
@@ -1393,7 +1519,8 @@
    "zh": "忠實",
    "en": "faithfulness",
    "ja": "忠実さ",
-   "de": "Treue, Zuverlässigkeit"
+   "de": "Treue, Zuverlässigkeit",
+   "fr": "fidélité"
   }
  },
  {
@@ -1404,7 +1531,8 @@
    "zh": "摩西律法",
    "en": "Law of Moses",
    "ja": "モーセの律法",
-   "de": "mosaisches Gesetz"
+   "de": "mosaisches Gesetz",
+   "fr": "Loi mosaïque"
   }
  },
  {
@@ -1415,7 +1543,8 @@
    "zh": "良心",
    "en": "conscience",
    "ja": "良心",
-   "de": "Gewissen"
+   "de": "Gewissen",
+   "fr": "conscience"
   }
  },
  {
@@ -1426,7 +1555,8 @@
    "zh": "流放、被放逐",
    "en": "exile, to be exiled",
    "ja": "流刑、追放される",
-   "de": "Exil, verbannt werden"
+   "de": "Exil, verbannt werden",
+   "fr": "exil, être exilé"
   }
  },
  {
@@ -1437,7 +1567,8 @@
    "zh": "離婚",
    "en": "divorce",
    "ja": "離婚",
-   "de": "Scheidung"
+   "de": "Scheidung",
+   "fr": "divorce"
   }
  },
  {
@@ -1448,7 +1579,8 @@
    "zh": "通靈術",
    "en": "spiritism",
    "ja": "交霊術",
-   "de": "Spiritismus"
+   "de": "Spiritismus",
+   "fr": "spiritisme"
   }
  },
  {
@@ -1459,7 +1591,8 @@
    "zh": "毒品",
    "en": "drug, narcotic",
    "ja": "麻薬",
-   "de": "Drogen"
+   "de": "Drogen",
+   "fr": "drogue"
   }
  },
  {
@@ -1470,7 +1603,8 @@
    "zh": "彌賽亞",
    "en": "Messiah",
    "ja": "メシア",
-   "de": "Messias"
+   "de": "Messias",
+   "fr": "Messie"
   }
  },
  {
@@ -1481,7 +1615,8 @@
    "zh": "麥克風",
    "en": "microphone",
    "ja": "マイク",
-   "de": "Mikrofon"
+   "de": "Mikrofon",
+   "fr": "micro"
   }
  },
  {
@@ -1492,7 +1627,8 @@
    "zh": "象徵物",
    "en": "symbol",
    "ja": "表象物",
-   "de": "Symbole"
+   "de": "Symbole",
+   "fr": "emblèmes"
   }
  },
  {
@@ -1503,7 +1639,8 @@
    "zh": "大群眾",
    "en": "great crowd",
    "ja": "大群衆",
-   "de": "große Volksmenge"
+   "de": "große Volksmenge",
+   "fr": "grande foule"
   }
  },
  {
@@ -1514,7 +1651,8 @@
    "zh": "144,000人",
    "en": "144,000",
    "ja": "144,000人",
-   "de": "144 000"
+   "de": "144 000",
+   "fr": "144 000"
   }
  },
  {
@@ -1525,7 +1663,8 @@
    "zh": "人類的共同墳墓",
    "en": "common grave of mankind",
    "ja": "人類の共通の墓",
-   "de": "allgemeines Grab der Menschheit"
+   "de": "allgemeines Grab der Menschheit",
+   "fr": "tombe commune aux humains"
   }
  },
  {
@@ -1536,7 +1675,8 @@
    "zh": "門徒",
    "en": "disciple",
    "ja": "弟子",
-   "de": "Jünger"
+   "de": "Jünger",
+   "fr": "disciple"
   }
  },
  {
@@ -1547,7 +1687,8 @@
    "zh": "十誡",
    "en": "Ten Commandments",
    "ja": "十戒",
-   "de": "Zehn Gebote"
+   "de": "Zehn Gebote",
+   "fr": "Dix Commandements"
   }
  },
  {
@@ -1558,7 +1699,8 @@
    "zh": "十二使徒",
    "en": "the 12 apostles",
    "ja": "12使徒",
-   "de": "zwölf Apostel"
+   "de": "zwölf Apostel",
+   "fr": "douze apôtres"
   }
  },
  {
@@ -1569,7 +1711,8 @@
    "zh": "樹立榜樣",
    "en": "set an example",
    "ja": "模範を示す",
-   "de": "ein Vorbild sein"
+   "de": "ein Vorbild sein",
+   "fr": "donner l’exemple"
   }
  },
  {
@@ -1580,7 +1723,8 @@
    "zh": "安息（日）",
    "en": "sabbath (day)",
    "ja": "安息（日）",
-   "de": "Sabbat"
+   "de": "Sabbat",
+   "fr": "sabbat"
   }
  },
  {
@@ -1591,7 +1735,8 @@
    "zh": "姦淫",
    "en": "adultery",
    "ja": "姦淫",
-   "de": "Ehebruch"
+   "de": "Ehebruch",
+   "fr": "adultère"
   }
  },
  {
@@ -1602,7 +1747,8 @@
    "zh": "聖經原則",
    "en": "Bible principle",
    "ja": "聖書の原則",
-   "de": "biblischer Grundsatz"
+   "de": "biblischer Grundsatz",
+   "fr": "principe biblique"
   }
  },
  {
@@ -1613,7 +1759,8 @@
    "zh": "元首的原則",
    "en": "headship principle",
    "ja": "かしらの原則",
-   "de": "Grundsatz der Führerschaft"
+   "de": "Grundsatz der Führerschaft",
+   "fr": "principe de l’autorité"
   }
  },
  {
@@ -1624,7 +1771,8 @@
    "zh": "傳道員",
    "en": "publisher",
    "ja": "伝道者",
-   "de": "Verkündiger"
+   "de": "Verkündiger",
+   "fr": "proclamateur"
   }
  },
  {
@@ -1635,7 +1783,8 @@
    "zh": "未受浸傳道員",
    "en": "unbaptized publisher",
    "ja": "未バプテスマの伝道者",
-   "de": "ungetaufter Verkündiger"
+   "de": "ungetaufter Verkündiger",
+   "fr": "proclamateur non baptisé"
   }
  },
  {
@@ -1646,7 +1795,8 @@
    "zh": "猶太人",
    "en": "Jew",
    "ja": "ユダヤ人",
-   "de": "Jude"
+   "de": "Jude",
+   "fr": "Juif"
   }
  },
  {
@@ -1657,7 +1807,8 @@
    "zh": "朗讀者",
    "en": "reader",
    "ja": "朗読者",
-   "de": "Leser"
+   "de": "Leser",
+   "fr": "lecteur"
   }
  },
  {
@@ -1668,7 +1819,8 @@
    "zh": "不信的配偶",
    "en": "unbelieving spouse",
    "ja": "信者でない配偶者",
-   "de": "ungläubiger Ehepartner"
+   "de": "ungläubiger Ehepartner",
+   "fr": "conjoint non croyant"
   }
  },
  {
@@ -1679,7 +1831,8 @@
    "zh": "鄰居",
    "en": "neighbor",
    "ja": "隣人",
-   "de": "Nächster"
+   "de": "Nächster",
+   "fr": "prochain"
   }
  },
  {
@@ -1690,7 +1843,8 @@
    "zh": "法利賽人",
    "en": "Pharisee",
    "ja": "パリサイ人",
-   "de": "Pharisäer"
+   "de": "Pharisäer",
+   "fr": "pharisien"
   }
  },
  {
@@ -1701,7 +1855,8 @@
    "zh": "奉仕者",
    "en": "servant; volunteer",
    "ja": "奉仕者",
-   "de": "Diener, Freiwilliger"
+   "de": "Diener, Freiwilliger",
+   "fr": "serviteur, bénévole"
   }
  },
  {
@@ -1712,7 +1867,8 @@
    "zh": "全時間傳道員",
    "en": "full-time servant",
    "ja": "全時間奉仕者",
-   "de": "Vollzeitdiener"
+   "de": "Vollzeitdiener",
+   "fr": "serviteur à plein temps"
   }
  },
  {
@@ -1723,7 +1879,8 @@
    "zh": "提醒",
    "en": "reminder",
    "ja": "気づかせるもの",
-   "de": "Erinnerung"
+   "de": "Erinnerung",
+   "fr": "rappel"
   }
  },
  {
@@ -1734,7 +1891,8 @@
    "zh": "認識",
    "en": "to recognize",
    "ja": "認識する",
-   "de": "erkennen, wahrnehmen"
+   "de": "erkennen, wahrnehmen",
+   "fr": "prendre conscience, reconnaître"
   }
  },
  {
@@ -1745,7 +1903,8 @@
    "zh": "舊的人性",
    "en": "old personality",
    "ja": "古い人格",
-   "de": "alte Persönlichkeit"
+   "de": "alte Persönlichkeit",
+   "fr": "vieille personnalité"
   }
  },
  {
@@ -1756,7 +1915,8 @@
    "zh": "新品格",
    "en": "new personality",
    "ja": "新しい人格",
-   "de": "neue Persönlichkeit"
+   "de": "neue Persönlichkeit",
+   "fr": "nouvelle personnalité"
   }
  },
  {
@@ -1767,7 +1927,8 @@
    "zh": "耶和華見證人",
    "en": "Jehovah's Witnesses",
    "ja": "エホバの証人",
-   "de": "Jehovas Zeugen"
+   "de": "Jehovas Zeugen",
+   "fr": "Témoins de Jéhovah"
   }
  },
  {
@@ -1778,7 +1939,8 @@
    "zh": "過分的仁慈",
    "en": "undeserved kindness",
    "ja": "過分な親切",
-   "de": "unverdiente Güte"
+   "de": "unverdiente Güte",
+   "fr": "faveur imméritée"
   }
  },
  {
@@ -1789,7 +1951,8 @@
    "zh": "任派",
    "en": "assignment, place of service",
    "ja": "任地",
-   "de": "Zuteilung, Dienstort"
+   "de": "Zuteilung, Dienstort",
+   "fr": "affectation, lieu de service"
   }
  },
  {
@@ -1800,7 +1963,8 @@
    "zh": "外勤傳道聚會",
    "en": "meeting for field service",
    "ja": "野外奉仕のための集まり",
-   "de": "Zusammenkunft für den Predigtdienst"
+   "de": "Zusammenkunft für den Predigtdienst",
+   "fr": "réunion pour la prédication"
   }
  },
  {
@@ -1811,7 +1975,8 @@
    "zh": "年鑑",
    "en": "yearbook, almanac",
    "ja": "年鑑",
-   "de": "Jahrbuch"
+   "de": "Jahrbuch",
+   "fr": "annuaire"
   }
  },
  {
@@ -1822,7 +1987,8 @@
    "zh": "西奈山",
    "en": "Mount Sinai",
    "ja": "シナイ山",
-   "de": "Berg Sinai"
+   "de": "Berg Sinai",
+   "fr": "mont Sinaï"
   }
  },
  {
@@ -1833,7 +1999,8 @@
    "zh": "錫安山",
    "en": "Mount Zion",
    "ja": "シオンの山",
-   "de": "Berg Zion"
+   "de": "Berg Zion",
+   "fr": "mont Sion"
   }
  },
  {
@@ -1844,7 +2011,8 @@
    "zh": "上帝的王國",
    "en": "God's Kingdom",
    "ja": "神の王国",
-   "de": "Gottes Königreich"
+   "de": "Gottes Königreich",
+   "fr": "Royaume de Dieu"
   }
  },
  {
@@ -1855,7 +2023,8 @@
    "zh": "王國",
    "en": "Kingdom",
    "ja": "王国",
-   "de": "Königreich"
+   "de": "Königreich",
+   "fr": "Royaume"
   }
  },
  {
@@ -1866,7 +2035,8 @@
    "zh": "不潔的，骯髒的",
    "en": "unclean; dirty",
    "ja": "不潔な",
-   "de": "unrein"
+   "de": "unrein",
+   "fr": "impur"
   }
  },
  {
@@ -1877,7 +2047,8 @@
    "zh": "每週聖經閱讀範圍",
    "en": "weekly Bible reading schedule",
    "ja": "週の聖書通読範囲",
-   "de": "wöchentliches Bibelleseprogramm"
+   "de": "wöchentliches Bibelleseprogramm",
+   "fr": "programme hebdomadaire de lecture de la Bible"
   }
  },
  {
@@ -1888,7 +2059,8 @@
    "zh": "會眾聖經研究",
    "en": "Congregation Bible Study",
    "ja": "会衆聖書研究",
-   "de": "Versammlungsbibelstudium"
+   "de": "Versammlungsbibelstudium",
+   "fr": "étude biblique de l’assemblée"
   }
  },
  {
@@ -1899,7 +2071,8 @@
    "zh": "希伯來語聖經",
    "en": "Hebrew Scriptures",
    "ja": "ヘブライ語聖書",
-   "de": "Hebräische Schriften"
+   "de": "Hebräische Schriften",
+   "fr": "Écritures hébraïques"
   }
  },
  {
@@ -1910,7 +2083,8 @@
    "zh": "《基督教希臘語聖經》",
    "en": "Christian Greek Scriptures",
    "ja": "クリスチャン・ギリシャ語聖書",
-   "de": "Christliche Griechische Schriften"
+   "de": "Christliche Griechische Schriften",
+   "fr": "Écritures grecques chrétiennes"
   }
  },
  {
@@ -1921,7 +2095,8 @@
    "zh": "提供(雜誌)",
    "en": "to offer (magazine)",
    "ja": "提供する(雑誌)",
-   "de": "anbieten (Zeitschrift)"
+   "de": "anbieten (Zeitschrift)",
+   "fr": "proposer (une revue)"
   }
  },
  {
@@ -1932,7 +2107,8 @@
    "zh": "長老會議",
    "en": "elders' meeting",
    "ja": "長老会議",
-   "de": "Ältestensitzung"
+   "de": "Ältestensitzung",
+   "fr": "réunion des anciens"
   }
  },
  {
@@ -1943,7 +2119,8 @@
    "zh": "王國聚會所",
    "en": "Kingdom Hall",
    "ja": "王国会館",
-   "de": "Königreichssaal"
+   "de": "Königreichssaal",
+   "fr": "Salle du Royaume"
   }
  },
  {
@@ -1954,7 +2131,8 @@
    "zh": "速建王國聚會所",
    "en": "Quickly Built Kingdom Hall",
    "ja": "速建王国会館",
-   "de": "Schnellbau-Königreichssaal"
+   "de": "Schnellbau-Königreichssaal",
+   "fr": "Salle du Royaume construite rapidement"
   }
  },
  {
@@ -1965,7 +2143,8 @@
    "zh": "助理僕人",
    "en": "ministerial servant",
    "ja": "奉仕の僕",
-   "de": "Dienstamtgehilfe"
+   "de": "Dienstamtgehilfe",
+   "fr": "assistant ministériel"
   }
  },
  {
@@ -1976,7 +2155,8 @@
    "zh": "復活",
    "en": "resurrection",
    "ja": "復活",
-   "de": "Auferstehung"
+   "de": "Auferstehung",
+   "fr": "résurrection"
   }
  },
  {
@@ -1987,7 +2167,8 @@
    "zh": "服從",
    "en": "obedience",
    "ja": "服従",
-   "de": "Unterordnung, Gehorsam"
+   "de": "Unterordnung, Gehorsam",
+   "fr": "soumission, obéissance"
   }
  },
  {
@@ -1998,7 +2179,8 @@
    "zh": "神聖的服務",
    "en": "sacred service",
    "ja": "神聖な奉仕",
-   "de": "heiliger Dienst"
+   "de": "heiliger Dienst",
+   "fr": "service sacré"
   }
  },
  {
@@ -2009,7 +2191,8 @@
    "zh": "與上帝的關係",
    "en": "relationship with God",
    "ja": "神との関係",
-   "de": "Verhältnis zu Gott"
+   "de": "Verhältnis zu Gott",
+   "fr": "relations avec Dieu"
   }
  },
  {
@@ -2020,7 +2203,8 @@
    "zh": "書刊檯",
    "en": "literature counter",
    "ja": "書籍台",
-   "de": "Literaturschalter"
+   "de": "Literaturschalter",
+   "fr": "comptoir des publications"
   }
  },
  {
@@ -2031,7 +2215,8 @@
    "zh": "統治權",
    "en": "sovereignty",
    "ja": "統治権",
-   "de": "Herrschaft, Herrschergewalt"
+   "de": "Herrschaft, Herrschergewalt",
+   "fr": "souveraineté, domination"
   }
  },
  {
@@ -2042,7 +2227,8 @@
    "zh": "主權",
    "en": "sovereignty",
    "ja": "主権",
-   "de": "Souveränität"
+   "de": "Souveränität",
+   "fr": "souveraineté"
   }
  },
  {
@@ -2053,7 +2239,8 @@
    "zh": "外勤傳道",
    "en": "field service",
    "ja": "野外奉仕",
-   "de": "Predigtdienst"
+   "de": "Predigtdienst",
+   "fr": "prédication, ministère"
   }
  },
  {
@@ -2064,7 +2251,8 @@
    "zh": "逐戶訪問",
    "en": "door-to-door visit",
    "ja": "戸別訪問",
-   "de": "Dienst von Haus zu Haus"
+   "de": "Dienst von Haus zu Haus",
+   "fr": "prédication de porte en porte"
   }
  },
  {
@@ -2075,7 +2263,8 @@
    "zh": "書籍",
    "en": "books",
    "ja": "書籍",
-   "de": "Bücher, Literatur"
+   "de": "Bücher, Literatur",
+   "fr": "livres, publications"
   }
  },
  {
@@ -2086,7 +2275,8 @@
    "zh": "歌本",
    "en": "songbook",
    "ja": "歌集",
-   "de": "Liederbuch"
+   "de": "Liederbuch",
+   "fr": "recueil de cantiques"
   }
  },
  {
@@ -2097,7 +2287,8 @@
    "zh": "撒但魔鬼",
    "en": "Satan the Devil",
    "ja": "悪魔サタン",
-   "de": "Satan der Teufel"
+   "de": "Satan der Teufel",
+   "fr": "Satan le Diable"
   }
  },
  {
@@ -2108,7 +2299,8 @@
    "zh": "陰間",
    "en": "Sheol",
    "ja": "シェオル",
-   "de": "Scheol"
+   "de": "Scheol",
+   "fr": "Schéol"
   }
  },
  {
@@ -2119,7 +2311,8 @@
    "zh": "悔改",
    "en": "repentance",
    "ja": "悔い改め",
-   "de": "Reue"
+   "de": "Reue",
+   "fr": "repentir"
   }
  },
  {
@@ -2130,7 +2323,8 @@
    "zh": "迫害",
    "en": "persecution",
    "ja": "迫害",
-   "de": "Verfolgung"
+   "de": "Verfolgung",
+   "fr": "persécution"
   }
  },
  {
@@ -2141,7 +2335,8 @@
    "zh": "的",
    "en": "of ('s)",
    "ja": "の",
-   "de": "Gerechtigkeit"
+   "de": "Gerechtigkeit",
+   "fr": "justice"
   }
  },
  {
@@ -2152,7 +2347,8 @@
    "zh": "公義",
    "en": "righteousness",
    "ja": "公義",
-   "de": "Gerechtigkeit, Recht"
+   "de": "Gerechtigkeit, Recht",
+   "fr": "justice, droit"
   }
  },
  {
@@ -2163,7 +2359,8 @@
    "zh": "預約",
    "en": "reservation",
    "ja": "予約",
-   "de": "Vorbestellung, Reservierung"
+   "de": "Vorbestellung, Reservierung",
+   "fr": "réservation"
   }
  },
  {
@@ -2174,7 +2371,8 @@
    "zh": "捐贈",
    "en": "donation",
    "ja": "寄付",
-   "de": "Spende"
+   "de": "Spende",
+   "fr": "offrande, don"
   }
  },
  {
@@ -2185,7 +2383,8 @@
    "zh": "準確的知識",
    "en": "accurate knowledge",
    "ja": "正確な知識",
-   "de": "genaue Erkenntnis"
+   "de": "genaue Erkenntnis",
+   "fr": "connaissance exacte"
   }
  },
  {
@@ -2196,7 +2395,8 @@
    "zh": "團結、合一",
    "en": "unity",
    "ja": "一致、団結",
-   "de": "Einheit"
+   "de": "Einheit",
+   "fr": "unité"
   }
  },
  {
@@ -2207,7 +2407,8 @@
    "zh": "墮胎",
    "en": "abortion",
    "ja": "堕胎",
-   "de": "Abtreibung"
+   "de": "Abtreibung",
+   "fr": "avortement"
   }
  },
  {
@@ -2218,7 +2419,8 @@
    "zh": "創造",
    "en": "creation",
    "ja": "創造",
-   "de": "Schöpfung"
+   "de": "Schöpfung",
+   "fr": "création"
   }
  },
  {
@@ -2229,7 +2431,8 @@
    "zh": "靈魂",
    "en": "soul",
    "ja": "魂",
-   "de": "Seele, Leben"
+   "de": "Seele, Leben",
+   "fr": "âme, vie"
   }
  },
  {
@@ -2240,7 +2443,8 @@
    "zh": "永遠的生命",
    "en": "eternal life",
    "ja": "永遠の命",
-   "de": "ewiges Leben"
+   "de": "ewiges Leben",
+   "fr": "vie éternelle"
   }
  },
  {
@@ -2251,7 +2455,8 @@
    "zh": "饒恕",
    "en": "forgiveness",
    "ja": "許し",
-   "de": "Vergebung"
+   "de": "Vergebung",
+   "fr": "pardon"
   }
  },
  {
@@ -2262,7 +2467,8 @@
    "zh": "純潔的崇拜",
    "en": "pure worship",
    "ja": "清い崇拝",
-   "de": "reine Anbetung"
+   "de": "reine Anbetung",
+   "fr": "culte pur"
   }
  },
  {
@@ -2273,7 +2479,8 @@
    "zh": "考驗",
    "en": "trial, ordeal",
    "ja": "試練",
-   "de": "Prüfung, Erprobung"
+   "de": "Prüfung, Erprobung",
+   "fr": "épreuve"
   }
  },
  {
@@ -2284,7 +2491,8 @@
    "zh": "忠節",
    "en": "loyalty",
    "ja": "忠節",
-   "de": "Lauterkeit, Integrität"
+   "de": "Lauterkeit, Integrität",
+   "fr": "intégrité"
   }
  },
  {
@@ -2295,7 +2503,8 @@
    "zh": "中立",
    "en": "neutrality",
    "ja": "中立",
-   "de": "Neutralität"
+   "de": "Neutralität",
+   "fr": "neutralité"
   }
  },
  {
@@ -2306,7 +2515,8 @@
    "zh": "順從",
    "en": "obedience",
    "ja": "従順",
-   "de": "Gehorsam"
+   "de": "Gehorsam",
+   "fr": "obéissance"
   }
  },
  {
@@ -2317,7 +2527,8 @@
    "zh": "懲戒",
    "en": "to discipline",
    "ja": "懲らしめる",
-   "de": "zurechtweisen, schulen"
+   "de": "zurechtweisen, schulen",
+   "fr": "discipliner, corriger"
   }
  },
  {
@@ -2328,7 +2539,8 @@
    "zh": "雜誌",
    "en": "magazine",
    "ja": "雑誌",
-   "de": "Zeitschrift"
+   "de": "Zeitschrift",
+   "fr": "revue, périodique"
   }
  },
  {
@@ -2339,7 +2551,8 @@
    "zh": "心態",
    "en": "state of mind",
    "ja": "心の状態",
-   "de": "Herzenszustand"
+   "de": "Herzenszustand",
+   "fr": "état d’esprit, disposition de cœur"
   }
  },
  {
@@ -2350,7 +2563,8 @@
    "zh": "態度",
    "en": "attitude",
    "ja": "態度",
-   "de": "Einstellung"
+   "de": "Einstellung",
+   "fr": "attitude"
   }
  },
  {
@@ -2361,7 +2575,8 @@
    "zh": "自我第一主義的態度",
    "en": "self-centered attitude",
    "ja": "自己第一主義的な態度",
-   "de": "ich-bezogene Haltung"
+   "de": "ich-bezogene Haltung",
+   "fr": "égocentrisme"
   }
  },
  {
@@ -2372,7 +2587,8 @@
    "zh": "消極的態度",
    "en": "negative attitude",
    "ja": "否定的な態度",
-   "de": "negative Einstellung"
+   "de": "negative Einstellung",
+   "fr": "attitude négative"
   }
  },
  {
@@ -2383,7 +2599,8 @@
    "zh": "神聖力量",
    "en": "holy spirit",
    "ja": "聖霊",
-   "de": "heiliger Geist"
+   "de": "heiliger Geist",
+   "fr": "esprit saint"
   }
  },
  {
@@ -2394,7 +2611,8 @@
    "zh": "神聖的",
    "en": "divine, sacred",
    "ja": "神聖な",
-   "de": "heilig, göttlich"
+   "de": "heilig, göttlich",
+   "fr": "saint, sacré"
   }
  },
  {
@@ -2405,7 +2623,8 @@
    "zh": "傳道服務",
    "en": "the ministry",
    "ja": "奉仕",
-   "de": "Predigtdienst, Dienst"
+   "de": "Predigtdienst, Dienst",
+   "fr": "ministère"
   }
  },
  {
@@ -2416,7 +2635,8 @@
    "zh": "我們的王國事工",
    "en": "Our Kingdom Ministry",
    "ja": "王国宣教",
-   "de": "Unser Königreichsdienst"
+   "de": "Unser Königreichsdienst",
+   "fr": "Ministère du Royaume"
   }
  },
  {
@@ -2427,7 +2647,8 @@
    "zh": "奉仕的職務",
    "en": "ministerial service",
    "ja": "奉仕の務め",
-   "de": "Dienstamt"
+   "de": "Dienstamt",
+   "fr": "ministère"
   }
  },
  {
@@ -2438,7 +2659,8 @@
    "zh": "伯特利成員",
    "en": "Bethel family member",
    "ja": "ベテル家族員",
-   "de": "Bethelmitarbeiter"
+   "de": "Bethelmitarbeiter",
+   "fr": "Béthélite, membre du Béthel"
   }
  },
  {
@@ -2449,7 +2671,8 @@
    "zh": "祭司",
    "en": "priest",
    "ja": "祭司",
-   "de": "Priester"
+   "de": "Priester",
+   "fr": "prêtre"
   }
  },
  {
@@ -2460,7 +2683,8 @@
    "zh": "再訪問",
    "en": "return visit",
    "ja": "再訪問",
-   "de": "Rückbesuch"
+   "de": "Rückbesuch",
+   "fr": "nouvelle visite"
   }
  },
  {
@@ -2471,7 +2695,8 @@
    "zh": "平衡的",
    "en": "balanced",
    "ja": "バランスの取れた",
-   "de": "ausgeglichen"
+   "de": "ausgeglichen",
+   "fr": "équilibré"
   }
  },
  {
@@ -2482,7 +2707,8 @@
    "zh": "世界、世人",
    "en": "the world",
    "ja": "世",
-   "de": "die Welt"
+   "de": "die Welt",
+   "fr": "monde"
   }
  },
  {
@@ -2493,7 +2719,8 @@
    "zh": "新世界",
    "en": "new world",
    "ja": "新しい世界",
-   "de": "neue Welt"
+   "de": "neue Welt",
+   "fr": "monde nouveau"
   }
  },
  {
@@ -2504,7 +2731,8 @@
    "zh": "天使",
    "en": "angel",
    "ja": "天使",
-   "de": "Engel"
+   "de": "Engel",
+   "fr": "ange"
   }
  },
  {
@@ -2515,7 +2743,8 @@
    "zh": "崇拜",
    "en": "to worship",
    "ja": "崇拝する",
-   "de": "anbeten"
+   "de": "anbeten",
+   "fr": "adorer"
   }
  },
  {
@@ -2526,7 +2755,8 @@
    "zh": "妥協",
    "en": "to compromise",
    "ja": "妥協する",
-   "de": "Kompromisse eingehen"
+   "de": "Kompromisse eingehen",
+   "fr": "faire des compromis"
   }
  },
  {
@@ -2537,7 +2767,8 @@
    "zh": "時間",
    "en": "time",
    "ja": "時間",
-   "de": "Zeit"
+   "de": "Zeit",
+   "fr": "temps"
   }
  },
  {
@@ -2548,7 +2779,8 @@
    "zh": "酒精依賴症",
    "en": "alcohol dependence",
    "ja": "アルコール依存症",
-   "de": "Alkoholabhängigkeit"
+   "de": "Alkoholabhängigkeit",
+   "fr": "alcoolisme"
   }
  },
  {
@@ -2559,7 +2791,8 @@
    "zh": "屬靈的糧食",
    "en": "spiritual food",
    "ja": "霊的な食物",
-   "de": "geistige Speise"
+   "de": "geistige Speise",
+   "fr": "nourriture spirituelle"
   }
  },
  {
@@ -2570,7 +2803,8 @@
    "zh": "西元",
    "en": "A.D. (Christian era)",
    "ja": "西暦",
-   "de": "Sekretär"
+   "de": "Sekretär",
+   "fr": "secrétaire"
   }
  },
  {
@@ -2581,7 +2815,8 @@
    "zh": "圖書室",
    "en": "library room",
    "ja": "図書室",
-   "de": "Bibliothek"
+   "de": "Bibliothek",
+   "fr": "bibliothèque"
   }
  },
  {
@@ -2592,7 +2827,8 @@
    "zh": "網上圖書館",
    "en": "online library",
    "ja": "オンライン図書館",
-   "de": "Online-Bibliothek"
+   "de": "Online-Bibliothek",
+   "fr": "bibliothèque en ligne"
   }
  },
  {
@@ -2603,7 +2839,8 @@
    "zh": "奉獻金",
    "en": "offering (donation)",
    "ja": "献金",
-   "de": "Spendengeld"
+   "de": "Spendengeld",
+   "fr": "offrande, dons"
   }
  },
  {
@@ -2614,7 +2851,8 @@
    "zh": "進化",
    "en": "evolution",
    "ja": "進化",
-   "de": "Evolution"
+   "de": "Evolution",
+   "fr": "évolution"
   }
  },
  {
@@ -2625,7 +2863,8 @@
    "zh": "開拓者",
    "en": "pioneer",
    "ja": "開拓者",
-   "de": "Pionier"
+   "de": "Pionier",
+   "fr": "pionnier"
   }
  },
  {
@@ -2636,7 +2875,8 @@
    "zh": "正規開拓者",
    "en": "regular pioneer",
    "ja": "正規開拓者",
-   "de": "allgemeiner Pionier"
+   "de": "allgemeiner Pionier",
+   "fr": "pionnier permanent"
   }
  },
  {
@@ -2647,7 +2887,8 @@
    "zh": "輔助先驅",
    "en": "auxiliary pioneer",
    "ja": "補助開拓者",
-   "de": "Hilfspionier"
+   "de": "Hilfspionier",
+   "fr": "pionnier auxiliaire"
   }
  },
  {
@@ -2658,7 +2899,8 @@
    "zh": "先知",
    "en": "prophet",
    "ja": "預言者",
-   "de": "Prophet"
+   "de": "Prophet",
+   "fr": "prophète"
   }
  },
  {
@@ -2669,7 +2911,8 @@
    "zh": "基督徒",
    "en": "Christian",
    "ja": "クリスチャン",
-   "de": "Christ"
+   "de": "Christ",
+   "fr": "chrétien"
   }
  },
  {
@@ -2680,7 +2923,8 @@
    "zh": "受膏的基督徒",
    "en": "anointed Christian",
    "ja": "油そそがれたクリスチャン",
-   "de": "gesalbter Christ"
+   "de": "gesalbter Christ",
+   "fr": "chrétien oint"
   }
  },
  {
@@ -2691,7 +2935,8 @@
    "zh": "受膏的餘民",
    "en": "anointed remnant",
    "ja": "油そそがれた残りの者",
-   "de": "gesalbter Überrest"
+   "de": "gesalbter Überrest",
+   "fr": "reste des oints"
   }
  },
  {
@@ -2702,7 +2947,8 @@
    "zh": "好消息",
    "en": "good news",
    "ja": "良い知らせ",
-   "de": "gute Botschaft"
+   "de": "gute Botschaft",
+   "fr": "bonne nouvelle"
   }
  },
  {
@@ -2713,7 +2959,8 @@
    "zh": "志工",
    "en": "volunteer",
    "ja": "ボランティア",
-   "de": "Freiwilliger"
+   "de": "Freiwilliger",
+   "fr": "volontaire, bénévole"
   }
  },
  {
@@ -2724,7 +2971,8 @@
    "zh": "精神",
    "en": "spirit/mind",
    "ja": "精神",
-   "de": "Geist, Geisteshaltung"
+   "de": "Geist, Geisteshaltung",
+   "fr": "esprit, état d’esprit"
   }
  },
  {
@@ -2735,7 +2983,8 @@
    "zh": "保持警醒",
    "en": "to stay spiritually alert",
    "ja": "目を覚ましていること",
-   "de": "wachsam bleiben"
+   "de": "wachsam bleiben",
+   "fr": "rester vigilant, veiller"
   }
  },
  {
@@ -2746,7 +2995,8 @@
    "zh": "《儆醒!》",
    "en": "Awake!",
    "ja": "「目ざめよ!」",
-   "de": "Erwachet!"
+   "de": "Erwachet!",
+   "fr": "Réveillez-vous !"
   }
  },
  {
@@ -2757,7 +3007,8 @@
    "zh": "靈性",
    "en": "spirituality",
    "ja": "霊性",
-   "de": "Geistigkeit"
+   "de": "Geistigkeit",
+   "fr": "spiritualité"
   }
  },
  {
@@ -2768,7 +3019,8 @@
    "zh": "忠貞之愛",
    "en": "loyal love",
    "ja": "忠実な愛",
-   "de": "loyale Liebe"
+   "de": "loyale Liebe",
+   "fr": "amour fidèle"
   }
  },
  {
@@ -2779,7 +3031,8 @@
    "zh": "組織",
    "en": "organization",
    "ja": "組織",
-   "de": "Organisation"
+   "de": "Organisation",
+   "fr": "organisation"
   }
  },
  {
@@ -2790,7 +3043,8 @@
    "zh": "耶和華的組織",
    "en": "Jehovah's organization",
    "ja": "エホバの組織",
-   "de": "Jehovas Organisation"
+   "de": "Jehovas Organisation",
+   "fr": "organisation de Jéhovah"
   }
  },
  {
@@ -2801,7 +3055,8 @@
    "zh": "傳單",
    "en": "tract",
    "ja": "パンフレット",
-   "de": "Traktat"
+   "de": "Traktat",
+   "fr": "tract"
   }
  },
  {
@@ -2812,7 +3067,8 @@
    "zh": "罪",
    "en": "sin",
    "ja": "罪",
-   "de": "Sünde"
+   "de": "Sünde",
+   "fr": "péché"
   }
  },
  {
@@ -2823,7 +3079,8 @@
    "zh": "宗教",
    "en": "religion",
    "ja": "宗教",
-   "de": "Religion"
+   "de": "Religion",
+   "fr": "religion"
   }
  },
  {
@@ -2834,7 +3091,8 @@
    "zh": "假宗教",
    "en": "false religion",
    "ja": "偽りの宗教",
-   "de": "falsche Religion"
+   "de": "falsche Religion",
+   "fr": "fausse religion"
   }
  },
  {
@@ -2845,7 +3103,8 @@
    "zh": "每日經文",
    "en": "daily scripture text",
    "ja": "日々の聖句",
-   "de": "Täglich in den Schriften forschen"
+   "de": "Täglich in den Schriften forschen",
+   "fr": "Examinons les Écritures chaque jour"
   }
  },
  {
@@ -2856,7 +3115,8 @@
    "zh": "憂鬱症",
    "en": "depression",
    "ja": "うつ病",
-   "de": "Depression"
+   "de": "Depression",
+   "fr": "dépression"
   }
  },
  {
@@ -2867,7 +3127,8 @@
    "zh": "洪水",
    "en": "flood",
    "ja": "洪水",
-   "de": "Sintflut"
+   "de": "Sintflut",
+   "fr": "Déluge"
   }
  },
  {
@@ -2878,7 +3139,8 @@
    "zh": "網站",
    "en": "website",
    "ja": "ウェブサイト",
-   "de": "Website"
+   "de": "Website",
+   "fr": "site Internet"
   }
  },
  {
@@ -2889,7 +3151,8 @@
    "zh": "放縱的",
    "en": "self-indulgent; unruly",
    "ja": "放縦な",
-   "de": "dreist, schamlos"
+   "de": "dreist, schamlos",
+   "fr": "effronté, débauche"
   }
  },
  {
@@ -2900,7 +3163,8 @@
    "zh": "世界總部",
    "en": "world headquarters",
    "ja": "世界本部",
-   "de": "Weltzentrale"
+   "de": "Weltzentrale",
+   "fr": "siège mondial"
   }
  },
  {
@@ -2911,7 +3175,8 @@
    "zh": "守望台教育中心",
    "en": "Watchtower Educational Center",
    "ja": "ものみの塔教育センター",
-   "de": "Wachtturm-Bildungszentrum"
+   "de": "Wachtturm-Bildungszentrum",
+   "fr": "Centre d’enseignement"
   }
  },
  {
@@ -2922,7 +3187,8 @@
    "zh": "正直的",
    "en": "honest",
    "ja": "正直な",
-   "de": "ehrlich"
+   "de": "ehrlich",
+   "fr": "honnête"
   }
  },
  {
@@ -2933,7 +3199,8 @@
    "zh": "輸血",
    "en": "blood transfusion",
    "ja": "輸血",
-   "de": "Bluttransfusion"
+   "de": "Bluttransfusion",
+   "fr": "transfusion sanguine"
   }
  },
  {
@@ -2944,7 +3211,8 @@
    "zh": "王國傳道員學校",
    "en": "Kingdom Publisher School",
    "ja": "王国宣明者学校",
-   "de": "Schule für Königreichsverkündiger"
+   "de": "Schule für Königreichsverkündiger",
+   "fr": "École pour évangélisateurs du Royaume"
   }
  },
  {
@@ -2955,7 +3223,8 @@
    "zh": "長老",
    "en": "Elder",
    "ja": "長老",
-   "de": "Ältester"
+   "de": "Ältester",
+   "fr": "ancien"
   }
  },
  {
@@ -2966,7 +3235,8 @@
    "zh": "字典",
    "en": "dictionary",
    "ja": "辞書",
-   "de": "Wörterbuch"
+   "de": "Wörterbuch",
+   "fr": "dictionnaire"
   }
  },
  {
@@ -2977,7 +3247,8 @@
    "zh": "分部委員會",
    "en": "Branch Committee",
    "ja": "支部委員会",
-   "de": "Zweigkomitee"
+   "de": "Zweigkomitee",
+   "fr": "comité de filiale"
   }
  },
  {
@@ -2988,7 +3259,8 @@
    "zh": "爭議點",
    "en": "issue",
    "ja": "争点",
-   "de": "Streitfrage"
+   "de": "Streitfrage",
+   "fr": "controverse, question"
   }
  },
  {
@@ -2999,7 +3271,8 @@
    "zh": "影片",
    "en": "video",
    "ja": "動画",
-   "de": "Video"
+   "de": "Video",
+   "fr": "vidéo"
   }
  },
  {
@@ -3010,7 +3283,8 @@
    "zh": "屬靈珍寶(聚會)",
    "en": "Spiritual Gems (meeting)",
    "ja": "霊的な宝探し(集会)",
-   "de": "Geistige Schätze"
+   "de": "Geistige Schätze",
+   "fr": "perles spirituelles"
   }
  },
  {
@@ -3021,7 +3295,8 @@
    "zh": "巡迴區",
    "en": "circuit",
    "ja": "巡回区",
-   "de": "Kreis"
+   "de": "Kreis",
+   "fr": "circonscription"
   }
  },
  {
@@ -3032,7 +3307,8 @@
    "zh": "無邊的",
    "en": "boundless, limitless",
    "ja": "果てしない",
-   "de": "grenzenlos"
+   "de": "grenzenlos",
+   "fr": "infini, sans limites"
   }
  },
  {
@@ -3043,7 +3319,8 @@
    "zh": "不道德的",
    "en": "immoral",
    "ja": "不道徳な",
-   "de": "unmoralisch"
+   "de": "unmoralisch",
+   "fr": "immoral"
   }
  },
  {
@@ -3054,7 +3331,8 @@
    "zh": "伊甸園",
    "en": "Garden of Eden",
    "ja": "エデンの園",
-   "de": "Garten Eden"
+   "de": "Garten Eden",
+   "fr": "jardin d’Éden"
   }
  },
  {
@@ -3065,7 +3343,8 @@
    "zh": "建築",
    "en": "architecture",
    "ja": "建築",
-   "de": "Bauarbeiten, Bau"
+   "de": "Bauarbeiten, Bau",
+   "fr": "construction"
   }
  },
  {
@@ -3076,7 +3355,8 @@
    "zh": "以色列",
    "en": "Israel",
    "ja": "イスラエル",
-   "de": "Israel"
+   "de": "Israel",
+   "fr": "Israël"
   }
  },
  {
@@ -3087,7 +3367,8 @@
    "zh": "屬靈以色列",
    "en": "spiritual Israel",
    "ja": "霊的イスラエル",
-   "de": "geistiges Israel"
+   "de": "geistiges Israel",
+   "fr": "Israël spirituel"
   }
  },
  {
@@ -3098,7 +3379,8 @@
    "zh": "古代以色列",
    "en": "ancient Israel",
    "ja": "古代イスラエル",
-   "de": "das alte Israel"
+   "de": "das alte Israel",
+   "fr": "Israël antique"
   }
  },
  {
@@ -3109,7 +3391,8 @@
    "zh": "沃基爾",
    "en": "Wallkill",
    "ja": "ウォールキル",
-   "de": "Wallkill"
+   "de": "Wallkill",
+   "fr": "Wallkill"
   }
  }
 ]

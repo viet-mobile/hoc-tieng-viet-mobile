@@ -8,7 +8,8 @@
       "zh": "投降",
       "en": "surrender",
       "ja": "降伏",
-      "de": "Kapitulation"
+      "de": "Kapitulation",
+      "fr": "capitulation"
     },
     "kind": "normal",
     "display_n": 1
@@ -21,7 +22,8 @@
       "zh": "航空",
       "en": "aviation",
       "ja": "航空",
-      "de": "Luftfahrt"
+      "de": "Luftfahrt",
+      "fr": "aviation"
     },
     "kind": "base",
     "display_n": 2
@@ -34,7 +36,8 @@
       "zh": "民用",
       "en": "civilian (use)",
       "ja": "民間用",
-      "de": "zivil (Nutzung)"
+      "de": "zivil (Nutzung)",
+      "fr": "civil (usage)"
     },
     "kind": "base",
     "display_n": 3
@@ -48,7 +51,8 @@
       "zh": "民航",
       "en": "civil aviation",
       "ja": "民間航空",
-      "de": "Zivilluftfahrt"
+      "de": "Zivilluftfahrt",
+      "fr": "aviation civile"
     },
     "kind": "compound",
     "parts": [
@@ -66,7 +70,8 @@
       "zh": "傾注心意",
       "en": "devoting one's intention",
       "ja": "意を傾けること",
-      "de": "Sorgfalt, Absicht widmen"
+      "de": "Sorgfalt, Absicht widmen",
+      "fr": "consacrer son intention, application"
     },
     "kind": "normal",
     "display_n": 5
@@ -80,7 +85,8 @@
       "zh": "心裡話·傾訴煩惱",
       "en": "inner thoughts, confiding worries",
       "ja": "本音·悩み相談",
-      "de": "Herzensgedanken, Sorgen anvertrauen"
+      "de": "Herzensgedanken, Sorgen anvertrauen",
+      "fr": "pensées intimes, confidences"
     },
     "kind": "normal",
     "display_n": 6
@@ -94,7 +100,8 @@
       "zh": "事業·經歷",
       "en": "business; career",
       "ja": "事業・経歴",
-      "de": "Karriere, Lebenswerk"
+      "de": "Karriere, Lebenswerk",
+      "fr": "carrière, œuvre"
     },
     "kind": "normal",
     "display_n": 7
@@ -107,7 +114,8 @@
       "zh": "業務",
       "en": "work, task",
       "ja": "業務",
-      "de": "Geschäftstätigkeit, Dienstgeschäft"
+      "de": "Geschäftstätigkeit, Dienstgeschäft",
+      "fr": "activité professionnelle, opérations"
     },
     "kind": "base",
     "display_n": 8
@@ -120,7 +128,8 @@
       "zh": "銀行",
       "en": "bank",
       "ja": "銀行",
-      "de": "Bank"
+      "de": "Bank",
+      "fr": "banque"
     },
     "kind": "base",
     "display_n": 9
@@ -134,7 +143,8 @@
       "zh": "銀行業務",
       "en": "banking business",
       "ja": "銀行業務",
-      "de": "Bankgeschäft"
+      "de": "Bankgeschäft",
+      "fr": "opérations bancaires"
     },
     "kind": "compound",
     "parts": [
@@ -152,7 +162,8 @@
       "zh": "商品",
       "en": "product",
       "ja": "商品",
-      "de": "Ware, Güter"
+      "de": "Ware, Güter",
+      "fr": "marchandise, biens"
     },
     "kind": "normal",
     "display_n": 11
@@ -166,7 +177,8 @@
       "zh": "化學物質",
       "en": "chemical substance",
       "ja": "化学物質",
-      "de": "Chemikalie"
+      "de": "Chemikalie",
+      "fr": "produit chimique, substance chimique"
     },
     "kind": "normal",
     "display_n": 12
@@ -180,7 +192,8 @@
       "zh": "材質·素材",
       "en": "texture/material",
       "ja": "材質・素材",
-      "de": "Material, Werkstoff"
+      "de": "Material, Werkstoff",
+      "fr": "matériau, matière"
     },
     "kind": "normal",
     "display_n": 13
@@ -194,7 +207,8 @@
       "zh": "治療過程",
       "en": "treatment process",
       "ja": "治療過程",
-      "de": "Behandlungsverlauf, Kur"
+      "de": "Behandlungsverlauf, Kur",
+      "fr": "protocole de traitement, cure"
     },
     "kind": "normal",
     "display_n": 14
@@ -208,7 +222,8 @@
       "zh": "表演‧示範",
       "en": "performance, demonstration",
       "ja": "公演・実演",
-      "de": "Aufführung, Vorführung"
+      "de": "Aufführung, Vorführung",
+      "fr": "spectacle, démonstration"
     },
     "kind": "normal",
     "display_n": 15
@@ -222,7 +237,8 @@
       "zh": "演員",
       "en": "actor",
       "ja": "俳優",
-      "de": "Schauspieler"
+      "de": "Schauspieler",
+      "fr": "acteur, comédien"
     },
     "kind": "normal",
     "display_n": 16
@@ -236,7 +252,8 @@
       "zh": "員外(舊時的地主·富豪)",
       "en": "wealthy landowner (archaic term)",
       "ja": "(昔の)地主・富豪",
-      "de": "Gutsherr, Großgrundbesitzer"
+      "de": "Gutsherr, Großgrundbesitzer",
+      "fr": "grand propriétaire terrien, notable"
     },
     "kind": "normal",
     "display_n": 17
@@ -250,7 +267,8 @@
       "zh": "外貌",
       "en": "appearance",
       "ja": "外見",
-      "de": "Aussehen, Erscheinungsbild"
+      "de": "Aussehen, Erscheinungsbild",
+      "fr": "apparence physique"
     },
     "kind": "normal",
     "display_n": 18
@@ -264,7 +282,8 @@
       "zh": "刑警",
       "en": "detective",
       "ja": "刑事",
-      "de": "Kriminalfall, Strafsache"
+      "de": "Kriminalfall, Strafsache",
+      "fr": "affaire criminelle, pénal"
     },
     "kind": "normal",
     "display_n": 19
@@ -278,7 +297,8 @@
       "zh": "事態·情況",
       "en": "situation, circumstances",
       "ja": "事態·状況",
-      "de": "Sachlage, Umstände"
+      "de": "Sachlage, Umstände",
+      "fr": "état des choses, situation"
     },
     "kind": "normal",
     "display_n": 20
@@ -292,7 +312,8 @@
       "zh": "體質·體格",
       "en": "constitution, physique",
       "ja": "体質・体格",
-      "de": "Konstitution, Körperbau"
+      "de": "Konstitution, Körperbau",
+      "fr": "constitution physique"
     },
     "kind": "normal",
     "display_n": 21
@@ -306,7 +327,8 @@
       "zh": "品質",
       "en": "quality",
       "ja": "品質",
-      "de": "Qualität"
+      "de": "Qualität",
+      "fr": "qualité"
     },
     "kind": "normal",
     "display_n": 22
@@ -320,7 +342,8 @@
       "zh": "評價",
       "en": "to evaluate",
       "ja": "評価する",
-      "de": "bewerten, einschätzen"
+      "de": "bewerten, einschätzen",
+      "fr": "évaluer, estimer"
     },
     "kind": "normal",
     "display_n": 23
@@ -334,7 +357,8 @@
       "zh": "價值",
       "en": "value",
       "ja": "価値",
-      "de": "Wert"
+      "de": "Wert",
+      "fr": "valeur"
     },
     "kind": "normal",
     "display_n": 24
@@ -348,7 +372,8 @@
       "zh": "治療",
       "en": "treatment",
       "ja": "治療",
-      "de": "Behandlung, Therapie"
+      "de": "Behandlung, Therapie",
+      "fr": "traitement, thérapie"
     },
     "kind": "normal",
     "display_n": 25
@@ -362,7 +387,8 @@
       "zh": "療法",
       "en": "therapy",
       "ja": "療法",
-      "de": "Therapieform, Heilverfahren"
+      "de": "Therapieform, Heilverfahren",
+      "fr": "thérapie, méthode thérapeutique"
     },
     "kind": "normal",
     "display_n": 26
@@ -376,7 +402,8 @@
       "zh": "法制",
       "en": "legal system",
       "ja": "法制",
-      "de": "Gesetzgebung, Rechtsordnung"
+      "de": "Gesetzgebung, Rechtsordnung",
+      "fr": "législation, système juridique"
     },
     "kind": "normal",
     "display_n": 27
@@ -390,7 +417,8 @@
       "zh": "製造",
       "en": "manufacturing",
       "ja": "製造",
-      "de": "Herstellung, Fabrikation"
+      "de": "Herstellung, Fabrikation",
+      "fr": "fabrication, manufacture"
     },
     "kind": "normal",
     "display_n": 28
@@ -404,7 +432,8 @@
       "zh": "造化翁·創造主",
       "en": "the Creator",
       "ja": "造化翁・創造主",
-      "de": "Schöpfer, Schöpfung"
+      "de": "Schöpfer, Schöpfung",
+      "fr": "Créateur, nature créatrice"
     },
     "kind": "normal",
     "display_n": 29
@@ -418,7 +447,8 @@
       "zh": "化妝，扮裝",
       "en": "makeup; costume",
       "ja": "扮装",
-      "de": "Maske, Kostümierung"
+      "de": "Maske, Kostümierung",
+      "fr": "maquillage, déguisement"
     },
     "kind": "normal",
     "display_n": 30
@@ -432,7 +462,8 @@
       "zh": "裝飾",
       "en": "decoration",
       "ja": "装飾",
-      "de": "Dekoration, Verzierung"
+      "de": "Dekoration, Verzierung",
+      "fr": "décoration, ornement"
     },
     "kind": "normal",
     "display_n": 31
@@ -446,7 +477,8 @@
       "zh": "知識·知識分子",
       "en": "knowledge/intellectual",
       "ja": "知識・知識人",
-      "de": "Wissen, Intellektuelle"
+      "de": "Wissen, Intellektuelle",
+      "fr": "intellectuel, connaissances"
     },
     "kind": "normal",
     "display_n": 32
@@ -459,7 +491,8 @@
       "zh": "喚醒·覺醒",
       "en": "awakening/realization",
       "ja": "目覚め・覚醒",
-      "de": "Erwachen, Besinnung"
+      "de": "Erwachen, Besinnung",
+      "fr": "éveil, prise de conscience"
     },
     "kind": "base",
     "display_n": 33
@@ -472,7 +505,8 @@
       "zh": "良心",
       "en": "conscience",
       "ja": "良心",
-      "de": "Gewissen"
+      "de": "Gewissen",
+      "fr": "conscience"
     },
     "kind": "base",
     "display_n": 34
@@ -486,7 +520,8 @@
       "zh": "喚醒良心",
       "en": "awakening the conscience",
       "ja": "良心を呼び覚ますこと",
-      "de": "das Gewissen wachrütteln"
+      "de": "das Gewissen wachrütteln",
+      "fr": "éveiller la conscience"
     },
     "kind": "compound",
     "parts": [
@@ -504,7 +539,8 @@
       "zh": "心性・性格",
       "en": "disposition · personality",
       "ja": "心根・性格",
-      "de": "Gemüt, Wesensart"
+      "de": "Gemüt, Wesensart",
+      "fr": "caractère, tempérament"
     },
     "kind": "normal",
     "display_n": 36
@@ -518,7 +554,8 @@
       "zh": "形容詞",
       "en": "adjective",
       "ja": "形容詞",
-      "de": "Adjektiv"
+      "de": "Adjektiv",
+      "fr": "adjectif"
     },
     "kind": "normal",
     "display_n": 37
@@ -532,7 +569,8 @@
       "zh": "字典",
       "en": "dictionary",
       "ja": "辞書",
-      "de": "Wörterbuch"
+      "de": "Wörterbuch",
+      "fr": "dictionnaire"
     },
     "kind": "normal",
     "display_n": 38
@@ -546,7 +584,8 @@
       "zh": "典型的",
       "en": "typical",
       "ja": "典型的",
-      "de": "typisch"
+      "de": "typisch",
+      "fr": "typique"
     },
     "kind": "normal",
     "display_n": 39
@@ -560,7 +599,8 @@
       "zh": "形式",
       "en": "form",
       "ja": "形式",
-      "de": "Form, Formalität"
+      "de": "Form, Formalität",
+      "fr": "forme, formalité"
     },
     "kind": "normal",
     "display_n": 40
@@ -574,7 +614,8 @@
       "zh": "精明世故·緊跟潮流",
       "en": "savvy about trends",
       "ja": "世情に明るい",
-      "de": "zeitgemäß, die Zeichen der Zeit verstehen"
+      "de": "zeitgemäß, die Zeichen der Zeit verstehen",
+      "fr": "dans l’air du temps, avisé"
     },
     "kind": "normal",
     "display_n": 41
@@ -588,7 +629,8 @@
       "zh": "時間",
       "en": "time",
       "ja": "時間",
-      "de": "Zeit"
+      "de": "Zeit",
+      "fr": "temps"
     },
     "kind": "normal",
     "display_n": 42
@@ -602,7 +644,8 @@
       "zh": "間諜·特務",
       "en": "spy",
       "ja": "スパイ・間者",
-      "de": "Spion"
+      "de": "Spion",
+      "fr": "espion"
     },
     "kind": "normal",
     "display_n": 43
@@ -616,7 +659,8 @@
       "zh": "細胞",
       "en": "cell",
       "ja": "細胞",
-      "de": "Zelle"
+      "de": "Zelle",
+      "fr": "cellule"
     },
     "kind": "normal",
     "display_n": 44
@@ -630,7 +674,8 @@
       "zh": "製藥·調劑",
       "en": "pharmaceutical/dispensing",
       "ja": "製薬・調剤",
-      "de": "Arzneizubereitung, Rezeptur"
+      "de": "Arzneizubereitung, Rezeptur",
+      "fr": "préparation pharmaceutique"
     },
     "kind": "normal",
     "display_n": 45
@@ -644,7 +689,8 @@
       "zh": "制度",
       "en": "system",
       "ja": "制度",
-      "de": "System, Ordnung"
+      "de": "System, Ordnung",
+      "fr": "régime, système"
     },
     "kind": "normal",
     "display_n": 46
@@ -658,7 +704,8 @@
       "zh": "度量寬大",
       "en": "broad-mindedness",
       "ja": "度量が広いこと",
-      "de": "Großmut, Weitherzigkeit"
+      "de": "Großmut, Weitherzigkeit",
+      "fr": "indulgence, générosité"
     },
     "kind": "normal",
     "display_n": 47
@@ -672,7 +719,8 @@
       "zh": "量詞（文法）",
       "en": "classifier (grammar)",
       "ja": "量詞（文法）",
-      "de": "Zähleinheitswort, Klassifikator"
+      "de": "Zähleinheitswort, Klassifikator",
+      "fr": "classificateur (grammaire)"
     },
     "kind": "normal",
     "display_n": 48
@@ -686,7 +734,8 @@
       "zh": "慈悲心",
       "en": "compassion",
       "ja": "慈悲心",
-      "de": "Barmherzigkeit, Mitgefühl"
+      "de": "Barmherzigkeit, Mitgefühl",
+      "fr": "compassion, bienveillance"
     },
     "kind": "normal",
     "display_n": 49
@@ -700,7 +749,8 @@
       "zh": "心理",
       "en": "psychology, mental state",
       "ja": "心理",
-      "de": "Psychologie, Seelenleben"
+      "de": "Psychologie, Seelenleben",
+      "fr": "psychologie, état d’esprit"
     },
     "kind": "normal",
     "display_n": 50
@@ -714,7 +764,8 @@
       "zh": "理性",
       "en": "reason",
       "ja": "理性",
-      "de": "Vernunft, Verstand"
+      "de": "Vernunft, Verstand",
+      "fr": "raison, esprit rationnel"
     },
     "kind": "normal",
     "display_n": 51
@@ -728,7 +779,8 @@
       "zh": "智力",
       "en": "intellect",
       "ja": "知力",
-      "de": "Geisteskraft, Intellekt"
+      "de": "Geisteskraft, Intellekt",
+      "fr": "facultés intellectuelles"
     },
     "kind": "normal",
     "display_n": 52
@@ -742,7 +794,8 @@
       "zh": "大力士・力士",
       "en": "strongman · strong person",
       "ja": "力士・力持ち",
-      "de": "Kraftmensch, Athlet"
+      "de": "Kraftmensch, Athlet",
+      "fr": "athlète, homme fort"
     },
     "kind": "normal",
     "display_n": 53
@@ -756,7 +809,8 @@
       "zh": "士官·軍官",
       "en": "cadet officer; officer",
       "ja": "士官・将校",
-      "de": "Offizier"
+      "de": "Offizier",
+      "fr": "officier"
     },
     "kind": "normal",
     "display_n": 54
@@ -770,7 +824,8 @@
       "zh": "關心",
       "en": "interest",
       "ja": "関心",
-      "de": "Interesse, Aufmerksamkeit"
+      "de": "Interesse, Aufmerksamkeit",
+      "fr": "intérêt, attention"
     },
     "kind": "normal",
     "display_n": 55
@@ -784,7 +839,8 @@
       "zh": "心理學",
       "en": "psychology",
       "ja": "心理学",
-      "de": "Psychologie"
+      "de": "Psychologie",
+      "fr": "psychologie"
     },
     "kind": "compound",
     "parts": null,
@@ -799,7 +855,8 @@
       "zh": "學費",
       "en": "tuition",
       "ja": "学費",
-      "de": "Schulgeld, Studiengebühren"
+      "de": "Schulgeld, Studiengebühren",
+      "fr": "frais de scolarité"
     },
     "kind": "normal",
     "display_n": 57
@@ -813,7 +870,8 @@
       "zh": "浪費",
       "en": "waste",
       "ja": "無駄にする",
-      "de": "verschwenden"
+      "de": "verschwenden",
+      "fr": "gaspiller"
     },
     "kind": "normal",
     "display_n": 58
@@ -827,7 +885,8 @@
       "zh": "違法",
       "en": "illegal act",
       "ja": "違法",
-      "de": "Rechtsverstoß, rechtswidrig"
+      "de": "Rechtsverstoß, rechtswidrig",
+      "fr": "infraction, illégal"
     },
     "kind": "normal",
     "display_n": 59
@@ -841,7 +900,8 @@
       "zh": "法律",
       "en": "law; statute",
       "ja": "法律",
-      "de": "Gesetz, Rechtsordnung"
+      "de": "Gesetz, Rechtsordnung",
+      "fr": "loi, législation"
     },
     "kind": "normal",
     "display_n": 60
@@ -855,7 +915,8 @@
       "zh": "律師",
       "en": "lawyer",
       "ja": "弁護士",
-      "de": "Rechtsanwalt"
+      "de": "Rechtsanwalt",
+      "fr": "avocat"
     },
     "kind": "normal",
     "display_n": 61
@@ -868,7 +929,8 @@
       "zh": "師範，教練",
       "en": "instructor",
       "ja": "師範",
-      "de": "Pädagogik, Ausbilder"
+      "de": "Pädagogik, Ausbilder",
+      "fr": "pédagogie"
     },
     "kind": "base",
     "display_n": 62
@@ -881,7 +943,8 @@
       "zh": "技術",
       "en": "technology, skill",
       "ja": "技術",
-      "de": "Technologie, Technik"
+      "de": "Technologie, Technik",
+      "fr": "technique, technologie"
     },
     "kind": "base",
     "display_n": 63
@@ -895,7 +958,8 @@
       "zh": "工業師範(技職教育)",
       "en": "industrial teacher training (technical education)",
       "ja": "工業師範(技術教育)",
-      "de": "technische Berufspädagogik"
+      "de": "technische Berufspädagogik",
+      "fr": "pédagogie de l’enseignement technique"
     },
     "kind": "compound",
     "parts": [
@@ -912,7 +976,8 @@
       "zh": "演算法",
       "en": "algorithm",
       "ja": "アルゴリズム",
-      "de": "Algorithmus"
+      "de": "Algorithmus",
+      "fr": "algorithme"
     },
     "kind": "base",
     "display_n": 65
@@ -925,7 +990,8 @@
       "zh": "電腦",
       "en": "computer",
       "ja": "コンピューター",
-      "de": "Computer, Rechner"
+      "de": "Computer, Rechner",
+      "fr": "ordinateur"
     },
     "kind": "base",
     "display_n": 66
@@ -939,7 +1005,8 @@
       "zh": "電腦演算法",
       "en": "computer algorithm",
       "ja": "コンピューターアルゴリズム",
-      "de": "Computeralgorithmus"
+      "de": "Computeralgorithmus",
+      "fr": "algorithme informatique"
     },
     "kind": "compound",
     "parts": [
@@ -957,7 +1024,8 @@
       "zh": "性格",
       "en": "personality",
       "ja": "性格",
-      "de": "Charakter, Persönlichkeit"
+      "de": "Charakter, Persönlichkeit",
+      "fr": "caractère, personnalité"
     },
     "kind": "normal",
     "display_n": 68
@@ -971,7 +1039,8 @@
       "zh": "革命",
       "en": "revolution",
       "ja": "革命",
-      "de": "Revolution"
+      "de": "Revolution",
+      "fr": "révolution"
     },
     "kind": "normal",
     "display_n": 69
@@ -984,7 +1053,8 @@
       "zh": "網・網路",
       "en": "network",
       "ja": "網・ネットワーク",
-      "de": "Netzwerk, Netz"
+      "de": "Netzwerk, Netz",
+      "fr": "réseau"
     },
     "kind": "base",
     "display_n": 70
@@ -997,7 +1067,8 @@
       "zh": "社會",
       "en": "society",
       "ja": "社会",
-      "de": "Gesellschaft"
+      "de": "Gesellschaft",
+      "fr": "société"
     },
     "kind": "base",
     "display_n": 71
@@ -1011,7 +1082,8 @@
       "zh": "社群媒體",
       "en": "social media",
       "ja": "ソーシャルメディア",
-      "de": "soziale Medien"
+      "de": "soziale Medien",
+      "fr": "médias sociaux, réseau social"
     },
     "kind": "compound",
     "parts": [
@@ -1029,7 +1101,8 @@
       "zh": "會員",
       "en": "member",
       "ja": "会員",
-      "de": "Mitglied"
+      "de": "Mitglied",
+      "fr": "membre, adhérent"
     },
     "kind": "normal",
     "display_n": 73
@@ -1043,7 +1116,8 @@
       "zh": "公務員‧職員",
       "en": "civil servant, staff",
       "ja": "公務員・職員",
-      "de": "Beamter, Angestellter"
+      "de": "Beamter, Angestellter",
+      "fr": "fonctionnaire, agent"
     },
     "kind": "normal",
     "display_n": 74
@@ -1057,7 +1131,8 @@
       "zh": "職務·職位",
       "en": "duty/position",
       "ja": "職務・職位",
-      "de": "Amt, Position"
+      "de": "Amt, Position",
+      "fr": "fonction, poste"
     },
     "kind": "normal",
     "display_n": 75
@@ -1071,7 +1146,8 @@
       "zh": "謀求私利",
       "en": "seeking self-interest",
       "ja": "私利を図ること",
-      "de": "Eigennutz, Selbstsucht"
+      "de": "Eigennutz, Selbstsucht",
+      "fr": "intérêt personnel, égoïsme"
     },
     "kind": "normal",
     "display_n": 76
@@ -1085,7 +1161,8 @@
       "zh": "利用·濫用",
       "en": "use/abuse",
       "ja": "利用・悪用",
-      "de": "ausnutzen, nutzen"
+      "de": "ausnutzen, nutzen",
+      "fr": "exploiter, profiter de"
     },
     "kind": "normal",
     "display_n": 77
@@ -1099,7 +1176,8 @@
       "zh": "意圖",
       "en": "intention",
       "ja": "意図",
-      "de": "Absicht, Intention"
+      "de": "Absicht, Intention",
+      "fr": "intention, dessein"
     },
     "kind": "normal",
     "display_n": 78
@@ -1113,7 +1191,8 @@
       "zh": "意見",
       "en": "opinion",
       "ja": "意見",
-      "de": "Meinung, Ansicht"
+      "de": "Meinung, Ansicht",
+      "fr": "opinion, avis"
     },
     "kind": "normal",
     "display_n": 79
@@ -1127,7 +1206,8 @@
       "zh": "造成·形成",
       "en": "formation",
       "ja": "造成・形成",
-      "de": "Gestaltung, Bildung"
+      "de": "Gestaltung, Bildung",
+      "fr": "formation, création"
     },
     "kind": "normal",
     "display_n": 80
@@ -1141,7 +1221,8 @@
       "zh": "操作·製作",
       "en": "manipulation/production",
       "ja": "操作・製作",
-      "de": "Herstellung, Werk"
+      "de": "Herstellung, Werk",
+      "fr": "création, fabrication"
     },
     "kind": "normal",
     "display_n": 81
@@ -1155,7 +1236,8 @@
       "zh": "態度·風氣",
       "en": "attitude, ethos",
       "ja": "態度・気風",
-      "de": "Arbeitsweise, Auftreten"
+      "de": "Arbeitsweise, Auftreten",
+      "fr": "manière d’être, allure"
     },
     "kind": "normal",
     "display_n": 82
@@ -1169,7 +1251,8 @@
       "zh": "封建",
       "en": "feudal",
       "ja": "封建",
-      "de": "feudal, Feudalismus"
+      "de": "feudal, Feudalismus",
+      "fr": "féodal, féodalité"
     },
     "kind": "normal",
     "display_n": 83
@@ -1183,7 +1266,8 @@
       "zh": "見解",
       "en": "view/opinion",
       "ja": "見解",
-      "de": "Auffassung, Erkenntnis"
+      "de": "Auffassung, Erkenntnis",
+      "fr": "point de vue, conception"
     },
     "kind": "normal",
     "display_n": 84
@@ -1197,7 +1281,8 @@
       "zh": "解決",
       "en": "solution",
       "ja": "解決",
-      "de": "Lösung, beilegen"
+      "de": "Lösung, beilegen",
+      "fr": "résoudre, régler"
     },
     "kind": "normal",
     "display_n": 85
@@ -1211,7 +1296,8 @@
       "zh": "決定",
       "en": "decision",
       "ja": "決定",
-      "de": "Entscheidung, Beschluss"
+      "de": "Entscheidung, Beschluss",
+      "fr": "décision"
     },
     "kind": "normal",
     "display_n": 86
@@ -1225,7 +1311,8 @@
       "zh": "法則",
       "en": "law; principle",
       "ja": "法則",
-      "de": "Gesetzmäßigkeit, Prinzip"
+      "de": "Gesetzmäßigkeit, Prinzip",
+      "fr": "loi (scientifique)"
     },
     "kind": "normal",
     "display_n": 87
@@ -1239,7 +1326,8 @@
       "zh": "法律",
       "en": "law; statute",
       "ja": "法律",
-      "de": "Gesetze, Rechtswesen"
+      "de": "Gesetze, Rechtswesen",
+      "fr": "lois, droit"
     },
     "kind": "normal",
     "display_n": 88
@@ -1253,7 +1341,8 @@
       "zh": "法理·法律的",
       "en": "legal principle; legal",
       "ja": "法理・法的",
-      "de": "Rechtslehre, juristisch"
+      "de": "Rechtslehre, juristisch",
+      "fr": "juridique"
     },
     "kind": "normal",
     "display_n": 89
@@ -1267,7 +1356,8 @@
       "zh": "履歷",
       "en": "resume/history",
       "ja": "履歴",
-      "de": "Lebenslauf, Werdegang"
+      "de": "Lebenslauf, Werdegang",
+      "fr": "curriculum vitae, biographie"
     },
     "kind": "normal",
     "display_n": 90
@@ -1281,7 +1371,8 @@
       "zh": "日程",
       "en": "schedule",
       "ja": "日程",
-      "de": "Zeitplan, Ablauf"
+      "de": "Zeitplan, Ablauf",
+      "fr": "calendrier, itinéraire"
     },
     "kind": "normal",
     "display_n": 91
@@ -1295,7 +1386,8 @@
       "zh": "水準",
       "en": "level, standard",
       "ja": "水準",
-      "de": "Niveau, Standard"
+      "de": "Niveau, Standard",
+      "fr": "niveau"
     },
     "kind": "normal",
     "display_n": 92
@@ -1308,7 +1400,8 @@
       "zh": "年齡（層）",
       "en": "age (group)",
       "ja": "年齢（層）",
-      "de": "Altersgruppe"
+      "de": "Altersgruppe",
+      "fr": "tranche d’âge"
     },
     "kind": "base",
     "display_n": 93
@@ -1321,7 +1414,8 @@
       "zh": "勞動",
       "en": "labor",
       "ja": "労働",
-      "de": "Arbeit, Arbeitskraft"
+      "de": "Arbeit, Arbeitskraft",
+      "fr": "travail, main-d’œuvre"
     },
     "kind": "base",
     "display_n": 94
@@ -1335,7 +1429,8 @@
       "zh": "勞動年齡",
       "en": "working age",
       "ja": "労働年齢",
-      "de": "Erwerbsalter"
+      "de": "Erwerbsalter",
+      "fr": "âge de travailler"
     },
     "kind": "compound",
     "parts": [
@@ -1353,7 +1448,8 @@
       "zh": "動作",
       "en": "motion",
       "ja": "動作",
-      "de": "Bewegung, Handlung"
+      "de": "Bewegung, Handlung",
+      "fr": "mouvement, geste"
     },
     "kind": "normal",
     "display_n": 96
@@ -1367,7 +1463,8 @@
       "zh": "作戰",
       "en": "operation",
       "ja": "作戦",
-      "de": "Operation, Gefecht"
+      "de": "Operation, Gefecht",
+      "fr": "opération de combat"
     },
     "kind": "normal",
     "display_n": 97
@@ -1381,7 +1478,8 @@
       "zh": "作戰·活動",
       "en": "operation/campaign",
       "ja": "作戦・キャンペーン",
-      "de": "Kampagne, Operation"
+      "de": "Kampagne, Operation",
+      "fr": "campagne, opération"
     },
     "kind": "normal",
     "display_n": 98
@@ -1395,7 +1493,8 @@
       "zh": "服務",
       "en": "service",
       "ja": "サービス",
-      "de": "Dienstleistung, Service"
+      "de": "Dienstleistung, Service",
+      "fr": "service, prestation"
     },
     "kind": "normal",
     "display_n": 99
@@ -1409,7 +1508,8 @@
       "zh": "局長(部會局長級)",
       "en": "director-general (ministry bureau chief)",
       "ja": "局長(省庁の局長級)",
-      "de": "Abteilungsleiter (Ministerium)"
+      "de": "Abteilungsleiter (Ministerium)",
+      "fr": "directeur de département (ministère)"
     },
     "kind": "normal",
     "display_n": 100
@@ -1423,7 +1523,8 @@
       "zh": "成長·長大",
       "en": "growth, maturation",
       "ja": "成長",
-      "de": "Reife, heranwachsen"
+      "de": "Reife, heranwachsen",
+      "fr": "maturité, grandir"
     },
     "kind": "normal",
     "display_n": 101
@@ -1437,7 +1538,8 @@
       "zh": "設立",
       "en": "establishment",
       "ja": "設立",
-      "de": "Gründung, Errichtung"
+      "de": "Gründung, Errichtung",
+      "fr": "fondation, établissement"
     },
     "kind": "normal",
     "display_n": 102
@@ -1451,7 +1553,8 @@
       "zh": "立場",
       "en": "stance",
       "ja": "立場",
-      "de": "Standpunkt, Haltung"
+      "de": "Standpunkt, Haltung",
+      "fr": "position, prise de position"
     },
     "kind": "normal",
     "display_n": 103
@@ -1465,7 +1568,8 @@
       "zh": "長期的",
       "en": "long-term",
       "ja": "長期的",
-      "de": "langfristig"
+      "de": "langfristig",
+      "fr": "à long terme, de longue haleine"
     },
     "kind": "normal",
     "display_n": 104
@@ -1478,7 +1582,8 @@
       "zh": "考試",
       "en": "test, exam",
       "ja": "試験",
-      "de": "Prüfung, Examen"
+      "de": "Prüfung, Examen",
+      "fr": "examen, épreuve"
     },
     "kind": "base",
     "display_n": 105
@@ -1491,7 +1596,8 @@
       "zh": "畢業",
       "en": "graduation",
       "ja": "卒業",
-      "de": "Studienabschluss, Abschluss"
+      "de": "Studienabschluss, Abschluss",
+      "fr": "remise des diplômes, fin d’études"
     },
     "kind": "base",
     "display_n": 106
@@ -1505,7 +1611,8 @@
       "zh": "畢業考試",
       "en": "graduation exam",
       "ja": "卒業試験",
-      "de": "Abschlussprüfung"
+      "de": "Abschlussprüfung",
+      "fr": "examen de fin d’études"
     },
     "kind": "compound",
     "parts": [
@@ -1523,7 +1630,8 @@
       "zh": "業務",
       "en": "work, task",
       "ja": "業務",
-      "de": "Fachbereich, Dienstgeschäft"
+      "de": "Fachbereich, Dienstgeschäft",
+      "fr": "opérations, pratique professionnelle"
     },
     "kind": "normal",
     "display_n": 108
@@ -1537,7 +1645,8 @@
       "zh": "案件（訴訟）",
       "en": "case (lawsuit)",
       "ja": "事件（訴訟）",
-      "de": "Gerichtsfall, Strafsache"
+      "de": "Gerichtsfall, Strafsache",
+      "fr": "procès, affaire judiciaire"
     },
     "kind": "normal",
     "display_n": 109
@@ -1550,7 +1659,8 @@
       "zh": "殺人案",
       "en": "murder case",
       "ja": "殺人事件",
-      "de": "Mordfall, Tötungsdelikt"
+      "de": "Mordfall, Tötungsdelikt",
+      "fr": "homicide, meurtre"
     },
     "kind": "base",
     "display_n": 110
@@ -1563,7 +1673,8 @@
       "zh": "重大·嚴重",
       "en": "serious/grave",
       "ja": "重大・深刻",
-      "de": "schwerwiegend, ernst"
+      "de": "schwerwiegend, ernst",
+      "fr": "grave, sérieux"
     },
     "kind": "base",
     "display_n": 111
@@ -1577,7 +1688,8 @@
       "zh": "重大殺人案件",
       "en": "major murder case",
       "ja": "重大殺人事件",
-      "de": "schwerer Mordfall"
+      "de": "schwerer Mordfall",
+      "fr": "meurtre grave"
     },
     "kind": "compound",
     "parts": [
@@ -1595,7 +1707,8 @@
       "zh": "重點",
       "en": "emphasis",
       "ja": "重点",
-      "de": "Schwerpunkt"
+      "de": "Schwerpunkt",
+      "fr": "priorité, point clé"
     },
     "kind": "normal",
     "display_n": 113
@@ -1609,7 +1722,8 @@
       "zh": "出席點名",
       "en": "attendance check",
       "ja": "出席チェック",
-      "de": "Anwesenheitskontrolle"
+      "de": "Anwesenheitskontrolle",
+      "fr": "appel (présence)"
     },
     "kind": "normal",
     "display_n": 114
@@ -1623,7 +1737,8 @@
       "zh": "名譽",
       "en": "honor",
       "ja": "名誉",
-      "de": "Ehre"
+      "de": "Ehre",
+      "fr": "honneur"
     },
     "kind": "normal",
     "display_n": 115
@@ -1637,7 +1752,8 @@
       "zh": "預防·防備",
       "en": "prevention/preparedness",
       "ja": "予防・備え",
-      "de": "Vorbeugung, Vorsorge"
+      "de": "Vorbeugung, Vorsorge",
+      "fr": "prévention, prévoyance"
     },
     "kind": "normal",
     "display_n": 116
@@ -1651,7 +1767,8 @@
       "zh": "防禦",
       "en": "defense",
       "ja": "防御",
-      "de": "Verteidigung, Abwehr"
+      "de": "Verteidigung, Abwehr",
+      "fr": "défense"
     },
     "kind": "normal",
     "display_n": 117
@@ -1665,7 +1782,8 @@
       "zh": "首都",
       "en": "capital (city)",
       "ja": "首都",
-      "de": "Hauptstadt"
+      "de": "Hauptstadt",
+      "fr": "capitale"
     },
     "kind": "normal",
     "display_n": 118
@@ -1679,7 +1797,8 @@
       "zh": "城市",
       "en": "city",
       "ja": "都市",
-      "de": "Stadt, städtischer Raum"
+      "de": "Stadt, städtischer Raum",
+      "fr": "ville, zone urbaine"
     },
     "kind": "normal",
     "display_n": 119
@@ -1693,7 +1812,8 @@
       "zh": "市場",
       "en": "market",
       "ja": "市場",
-      "de": "Markt"
+      "de": "Markt",
+      "fr": "marché"
     },
     "kind": "normal",
     "display_n": 120
@@ -1707,7 +1827,8 @@
       "zh": "情況",
       "en": "case/situation",
       "ja": "場合",
-      "de": "Fall, Situation"
+      "de": "Fall, Situation",
+      "fr": "cas, situation"
     },
     "kind": "normal",
     "display_n": 121
@@ -1721,7 +1842,8 @@
       "zh": "合理的",
       "en": "reasonable",
       "ja": "合理的",
-      "de": "vernünftig, plausibel"
+      "de": "vernünftig, plausibel",
+      "fr": "raisonnable, rationnel"
     },
     "kind": "normal",
     "display_n": 122
@@ -1735,7 +1857,8 @@
       "zh": "理論·邏輯",
       "en": "theory/logic",
       "ja": "理論・論理",
-      "de": "Theorie, Argumentation"
+      "de": "Theorie, Argumentation",
+      "fr": "théorie, argumentation"
     },
     "kind": "normal",
     "display_n": 123
@@ -1749,7 +1872,8 @@
       "zh": "論文",
       "en": "thesis",
       "ja": "論文",
-      "de": "Abschlussarbeit, Abhandlung"
+      "de": "Abschlussarbeit, Abhandlung",
+      "fr": "mémoire, thèse"
     },
     "kind": "normal",
     "display_n": 124
@@ -1763,7 +1887,8 @@
       "zh": "文明",
       "en": "civilization",
       "ja": "文明",
-      "de": "Zivilisation"
+      "de": "Zivilisation",
+      "fr": "civilisation"
     },
     "kind": "normal",
     "display_n": 125
@@ -1777,7 +1902,8 @@
       "zh": "明辨力・智慧",
       "en": "discernment, wisdom",
       "ja": "明晰さ・知恵",
-      "de": "Weisheit, Urteilskraft"
+      "de": "Weisheit, Urteilskraft",
+      "fr": "sagesse, clairvoyance"
     },
     "kind": "normal",
     "display_n": 126
@@ -1791,7 +1917,8 @@
       "zh": "哲學",
       "en": "philosophy",
       "ja": "哲学",
-      "de": "Philosophie"
+      "de": "Philosophie",
+      "fr": "philosophie"
     },
     "kind": "normal",
     "display_n": 127
@@ -1805,7 +1932,8 @@
       "zh": "學期",
       "en": "semester",
       "ja": "学期",
-      "de": "Semester, Schulhalbjahr"
+      "de": "Semester, Schulhalbjahr",
+      "fr": "semestre"
     },
     "kind": "normal",
     "display_n": 128
@@ -1819,7 +1947,8 @@
       "zh": "期限",
       "en": "deadline, time limit",
       "ja": "期限",
-      "de": "Frist, Termin"
+      "de": "Frist, Termin",
+      "fr": "échéance, délai"
     },
     "kind": "normal",
     "display_n": 129
@@ -1833,7 +1962,8 @@
       "zh": "設定期限",
       "en": "setting a deadline",
       "ja": "期限設定",
-      "de": "Fristsetzung"
+      "de": "Fristsetzung",
+      "fr": "fixation d’un délai"
     },
     "kind": "normal",
     "display_n": 130
@@ -1847,7 +1977,8 @@
       "zh": "正義",
       "en": "justice",
       "ja": "正義",
-      "de": "Definition"
+      "de": "Definition",
+      "fr": "définition"
     },
     "kind": "normal",
     "display_n": 131
@@ -1861,7 +1992,8 @@
       "zh": "墓地",
       "en": "grave, cemetery",
       "ja": "墓地",
-      "de": "Friedhof"
+      "de": "Friedhof",
+      "fr": "cimetière"
     },
     "kind": "normal",
     "display_n": 132
@@ -1875,7 +2007,8 @@
       "zh": "飾品·配件",
       "en": "jewelry/accessories",
       "ja": "装身具・アクセサリー",
-      "de": "Schmuck, Zierde"
+      "de": "Schmuck, Zierde",
+      "fr": "bijoux, parure"
     },
     "kind": "normal",
     "display_n": 133
@@ -1888,7 +2021,8 @@
       "zh": "健康",
       "en": "health",
       "ja": "健康",
-      "de": "Gesundheit"
+      "de": "Gesundheit",
+      "fr": "santé"
     },
     "kind": "base",
     "display_n": 134
@@ -1901,7 +2035,8 @@
       "zh": "共同體‧社區",
       "en": "community",
       "ja": "共同体・地域社会",
-      "de": "Gemeinschaft, Kommune"
+      "de": "Gemeinschaft, Kommune",
+      "fr": "communauté"
     },
     "kind": "base",
     "display_n": 135
@@ -1915,7 +2050,8 @@
       "zh": "公共衛生",
       "en": "public health",
       "ja": "公衆衛生",
-      "de": "öffentliche Gesundheit"
+      "de": "öffentliche Gesundheit",
+      "fr": "santé publique"
     },
     "kind": "compound",
     "parts": [
@@ -1933,7 +2069,8 @@
       "zh": "同胞",
       "en": "compatriot",
       "ja": "同胞",
-      "de": "Landsleute, Mitbürger"
+      "de": "Landsleute, Mitbürger",
+      "fr": "compatriotes"
     },
     "kind": "normal",
     "display_n": 137
@@ -1946,7 +2083,8 @@
       "zh": "藥品",
       "en": "medication",
       "ja": "医薬品",
-      "de": "Arzneimittel"
+      "de": "Arzneimittel",
+      "fr": "produit pharmaceutique, médicament"
     },
     "kind": "base",
     "display_n": 138
@@ -1960,7 +2098,8 @@
       "zh": "配藥",
       "en": "dispensing medication",
       "ja": "調剤",
-      "de": "Arzneizubereitung"
+      "de": "Arzneizubereitung",
+      "fr": "préparation pharmaceutique"
     },
     "kind": "compound",
     "parts": [
@@ -1977,7 +2116,8 @@
       "zh": "品格·尊嚴",
       "en": "dignity, nobility",
       "ja": "品格・尊厳",
-      "de": "Würde"
+      "de": "Würde",
+      "fr": "dignité"
     },
     "kind": "normal",
     "display_n": 140
@@ -1991,7 +2131,8 @@
       "zh": "原價",
       "en": "cost price",
       "ja": "原価",
-      "de": "Selbstkosten, Gestehungskosten"
+      "de": "Selbstkosten, Gestehungskosten",
+      "fr": "prix de revient, coût"
     },
     "kind": "normal",
     "display_n": 141
@@ -2005,7 +2146,8 @@
       "zh": "成功",
       "en": "success",
       "ja": "成功",
-      "de": "Erfolg"
+      "de": "Erfolg",
+      "fr": "succès"
     },
     "kind": "normal",
     "display_n": 142
@@ -2019,7 +2161,8 @@
       "zh": "公務員",
       "en": "civil servant",
       "ja": "公務員",
-      "de": "Beamter, Staatsdiener"
+      "de": "Beamter, Staatsdiener",
+      "fr": "fonctionnaire"
     },
     "kind": "normal",
     "display_n": 143
@@ -2033,7 +2176,8 @@
       "zh": "功能",
       "en": "function",
       "ja": "機能",
-      "de": "Funktion"
+      "de": "Funktion",
+      "fr": "fonction"
     },
     "kind": "normal",
     "display_n": 144
@@ -2047,7 +2191,8 @@
       "zh": "主動的·活躍的",
       "en": "active · proactive",
       "ja": "能動的・活動的",
-      "de": "aktiv, tatkräftig"
+      "de": "aktiv, tatkräftig",
+      "fr": "dynamique, actif"
     },
     "kind": "normal",
     "display_n": 145
@@ -2061,7 +2206,8 @@
       "zh": "動機·引擎",
       "en": "motive · engine",
       "ja": "動機・エンジン",
-      "de": "Motiv, Motor"
+      "de": "Motiv, Motor",
+      "fr": "moteur, motif"
     },
     "kind": "normal",
     "display_n": 146
@@ -2075,7 +2221,8 @@
       "zh": "基本",
       "en": "basic",
       "ja": "基本",
-      "de": "Grundlage, elementar"
+      "de": "Grundlage, elementar",
+      "fr": "fondamental, de base"
     },
     "kind": "normal",
     "display_n": 147
@@ -2089,7 +2236,8 @@
       "zh": "著作權",
       "en": "copyright",
       "ja": "著作権",
-      "de": "Urheberrecht"
+      "de": "Urheberrecht",
+      "fr": "droit d’auteur"
     },
     "kind": "normal",
     "display_n": 148
@@ -2103,7 +2251,8 @@
       "zh": "權利",
       "en": "right",
       "ja": "権利",
-      "de": "Rechte, Anspruch"
+      "de": "Rechte, Anspruch",
+      "fr": "droits, intérêts"
     },
     "kind": "normal",
     "display_n": 149
@@ -2117,7 +2266,8 @@
       "zh": "優勢·優點",
       "en": "advantage",
       "ja": "優位・利点",
-      "de": "Vorteil, Überlegenheit"
+      "de": "Vorteil, Überlegenheit",
+      "fr": "avantage"
     },
     "kind": "normal",
     "display_n": 150
@@ -2131,7 +2281,8 @@
       "zh": "世代",
       "en": "generation",
       "ja": "世代",
-      "de": "Generation"
+      "de": "Generation",
+      "fr": "génération"
     },
     "kind": "normal",
     "display_n": 151
@@ -2144,7 +2295,8 @@
       "zh": "體系·系統",
       "en": "system, system",
       "ja": "体系・システム",
-      "de": "System, Gefüge"
+      "de": "System, Gefüge",
+      "fr": "système"
     },
     "kind": "base",
     "display_n": 152
@@ -2157,7 +2309,8 @@
       "zh": "資訊·通訊",
       "en": "information/communication",
       "ja": "情報・通信",
-      "de": "Information, Nachricht"
+      "de": "Information, Nachricht",
+      "fr": "information"
     },
     "kind": "base",
     "display_n": 153
@@ -2171,7 +2324,8 @@
       "zh": "資訊系統",
       "en": "information system",
       "ja": "情報システム",
-      "de": "Informationssystem"
+      "de": "Informationssystem",
+      "fr": "système d’information"
     },
     "kind": "compound",
     "parts": [
@@ -2189,7 +2343,8 @@
       "zh": "資訊學·電腦工程學",
       "en": "informatics/computer science",
       "ja": "情報学・コンピュータ工学",
-      "de": "Informatik"
+      "de": "Informatik",
+      "fr": "informatique"
     },
     "kind": "normal",
     "display_n": 155
@@ -2203,7 +2358,8 @@
       "zh": "補習班·學校",
       "en": "academy, school",
       "ja": "塾・学校",
-      "de": "Akademie, Institut"
+      "de": "Akademie, Institut",
+      "fr": "académie, institut"
     },
     "kind": "normal",
     "display_n": 156
@@ -2217,7 +2373,8 @@
       "zh": "援助",
       "en": "aid/assistance",
       "ja": "援助",
-      "de": "Hilfe, Beistand"
+      "de": "Hilfe, Beistand",
+      "fr": "aide, assistance"
     },
     "kind": "normal",
     "display_n": 157
@@ -2231,7 +2388,8 @@
       "zh": "補助金·津貼",
       "en": "subsidy; allowance",
       "ja": "補助金・手当",
-      "de": "Zuschuss, Beihilfe"
+      "de": "Zuschuss, Beihilfe",
+      "fr": "allocation, subvention"
     },
     "kind": "normal",
     "display_n": 158
@@ -2245,7 +2403,8 @@
       "zh": "急迫性",
       "en": "urgency",
       "ja": "緊急性",
-      "de": "dringend, vordringlich"
+      "de": "dringend, vordringlich",
+      "fr": "urgent"
     },
     "kind": "normal",
     "display_n": 159
@@ -2259,7 +2418,8 @@
       "zh": "設立·建構",
       "en": "establish, build",
       "ja": "設立·構築",
-      "de": "errichten, aufbauen"
+      "de": "errichten, aufbauen",
+      "fr": "établir, instaurer"
     },
     "kind": "normal",
     "display_n": 160
@@ -2273,7 +2433,8 @@
       "zh": "立法",
       "en": "legislation",
       "ja": "立法",
-      "de": "Gesetzgebung, Legislative"
+      "de": "Gesetzgebung, Legislative",
+      "fr": "législation, pouvoir législatif"
     },
     "kind": "normal",
     "display_n": 161
@@ -2287,7 +2448,8 @@
       "zh": "法權·法治",
       "en": "legal authority; rule of law",
       "ja": "法権・法治",
-      "de": "Rechtsordnung, Rechtsstaatlichkeit"
+      "de": "Rechtsordnung, Rechtsstaatlichkeit",
+      "fr": "État de droit, légalité"
     },
     "kind": "normal",
     "display_n": 162
@@ -2301,7 +2463,8 @@
       "zh": "權限‧職權",
       "en": "authority, official power",
       "ja": "権限・職権",
-      "de": "Amtsbefugnis, Vollmacht"
+      "de": "Amtsbefugnis, Vollmacht",
+      "fr": "autorité, pouvoir officiel"
     },
     "kind": "normal",
     "display_n": 163
@@ -2315,7 +2478,8 @@
       "zh": "旅程",
       "en": "journey",
       "ja": "旅程",
-      "de": "Reiseroute, Reise"
+      "de": "Reiseroute, Reise",
+      "fr": "voyage, itinéraire"
     },
     "kind": "normal",
     "display_n": 164
@@ -2329,7 +2493,8 @@
       "zh": "順序·程序",
       "en": "order, procedure",
       "ja": "順序·手順",
-      "de": "Reihenfolge, Ablauf"
+      "de": "Reihenfolge, Ablauf",
+      "fr": "ordre, procédure"
     },
     "kind": "normal",
     "display_n": 165
@@ -2342,7 +2507,8 @@
       "zh": "自動的",
       "en": "automatic",
       "ja": "自動的",
-      "de": "automatisch"
+      "de": "automatisch",
+      "fr": "automatique"
     },
     "kind": "base",
     "display_n": 166
@@ -2356,7 +2522,8 @@
       "zh": "自動化",
       "en": "automation",
       "ja": "自動化",
-      "de": "Automatisierung"
+      "de": "Automatisierung",
+      "fr": "automatisation"
     },
     "kind": "compound",
     "parts": [
@@ -2373,7 +2540,8 @@
       "zh": "收據·帳單",
       "en": "receipt/bill",
       "ja": "領収書・請求書",
-      "de": "Rechnung, Beleg"
+      "de": "Rechnung, Beleg",
+      "fr": "facture, reçu"
     },
     "kind": "normal",
     "display_n": 168
@@ -2387,7 +2555,8 @@
       "zh": "單方面的",
       "en": "one-sided",
       "ja": "一方的",
-      "de": "einseitig"
+      "de": "einseitig",
+      "fr": "unilatéral"
     },
     "kind": "normal",
     "display_n": 169
@@ -2401,7 +2570,8 @@
       "zh": "方法",
       "en": "method",
       "ja": "方法",
-      "de": "Methode, Verfahren"
+      "de": "Methode, Verfahren",
+      "fr": "méthode"
     },
     "kind": "normal",
     "display_n": 170
@@ -2415,7 +2585,8 @@
       "zh": "法醫學",
       "en": "forensic medicine",
       "ja": "法医学",
-      "de": "Rechtsmedizin"
+      "de": "Rechtsmedizin",
+      "fr": "médecine légale"
     },
     "kind": "normal",
     "display_n": 171
@@ -2429,7 +2600,8 @@
       "zh": "醫學",
       "en": "medicine (science)",
       "ja": "医学",
-      "de": "Medizin (Wissenschaft)"
+      "de": "Medizin (Wissenschaft)",
+      "fr": "médecine (science)"
     },
     "kind": "normal",
     "display_n": 172
@@ -2443,7 +2615,8 @@
       "zh": "學習",
       "en": "learning",
       "ja": "学習",
-      "de": "Lernen, Studium"
+      "de": "Lernen, Studium",
+      "fr": "apprentissage, études"
     },
     "kind": "normal",
     "display_n": 173
@@ -2457,7 +2630,8 @@
       "zh": "集團·團體",
       "en": "group/organization",
       "ja": "集団・団体",
-      "de": "Kollektiv, Gruppe"
+      "de": "Kollektiv, Gruppe",
+      "fr": "collectif, groupe"
     },
     "kind": "normal",
     "display_n": 174
@@ -2471,7 +2645,8 @@
       "zh": "表現·表達",
       "en": "expression, showing",
       "ja": "表現・表すこと",
-      "de": "Ausdruck, Darstellung"
+      "de": "Ausdruck, Darstellung",
+      "fr": "expression, manifestation"
     },
     "kind": "normal",
     "display_n": 175
@@ -2485,7 +2660,8 @@
       "zh": "現場",
       "en": "scene/site",
       "ja": "現場",
-      "de": "Schauplatz, Ort des Geschehens"
+      "de": "Schauplatz, Ort des Geschehens",
+      "fr": "lieu, scène (des faits)"
     },
     "kind": "normal",
     "display_n": 176
@@ -2499,7 +2675,8 @@
       "zh": "學校",
       "en": "school",
       "ja": "学校",
-      "de": "Schule"
+      "de": "Schule",
+      "fr": "école"
     },
     "kind": "normal",
     "display_n": 177
@@ -2513,7 +2690,8 @@
       "zh": "學生",
       "en": "student",
       "ja": "学生",
-      "de": "Schüler"
+      "de": "Schüler",
+      "fr": "élève"
     },
     "kind": "normal",
     "display_n": 178
@@ -2526,7 +2704,8 @@
       "zh": "生物",
       "en": "living thing",
       "ja": "生物",
-      "de": "Lebewesen, Organismus"
+      "de": "Lebewesen, Organismus",
+      "fr": "organisme, être vivant"
     },
     "kind": "base",
     "display_n": 179
@@ -2540,7 +2719,8 @@
       "zh": "生物學",
       "en": "biology",
       "ja": "生物学",
-      "de": "Biologie"
+      "de": "Biologie",
+      "fr": "biologie"
     },
     "kind": "compound",
     "parts": [
@@ -2557,7 +2737,8 @@
       "zh": "文學研究",
       "en": "literature study",
       "ja": "文学の勉強",
-      "de": "Literaturstudium"
+      "de": "Literaturstudium",
+      "fr": "étude de la littérature"
     },
     "kind": "normal",
     "display_n": 181
@@ -2571,7 +2752,8 @@
       "zh": "辦公室",
       "en": "office",
       "ja": "事務所",
-      "de": "Büro"
+      "de": "Büro",
+      "fr": "bureau"
     },
     "kind": "normal",
     "display_n": 182
@@ -2584,7 +2766,8 @@
       "zh": "診療室·診所",
       "en": "clinic",
       "ja": "診療室・クリニック",
-      "de": "Arztpraxis, Ambulanz"
+      "de": "Arztpraxis, Ambulanz",
+      "fr": "cabinet médical, dispensaire"
     },
     "kind": "base",
     "display_n": 183
@@ -2597,7 +2780,8 @@
       "zh": "茶點·綜合診療",
       "en": "refreshments · general medical care",
       "ja": "茶菓子・総合診療",
-      "de": "Poliklinik, Allgemeinmedizin"
+      "de": "Poliklinik, Allgemeinmedizin",
+      "fr": "polyclinique, médecine générale"
     },
     "kind": "base",
     "display_n": 184
@@ -2611,7 +2795,8 @@
       "zh": "綜合診所",
       "en": "general clinic",
       "ja": "総合診療所",
-      "de": "Poliklinik, Ärztezentrum"
+      "de": "Poliklinik, Ärztezentrum",
+      "fr": "polyclinique"
     },
     "kind": "compound",
     "parts": [
@@ -2628,7 +2813,8 @@
       "zh": "科學",
       "en": "science",
       "ja": "科学",
-      "de": "Wissenschaft"
+      "de": "Wissenschaft",
+      "fr": "science"
     },
     "kind": "base",
     "display_n": 186
@@ -2642,7 +2828,8 @@
       "zh": "社會科學",
       "en": "social science",
       "ja": "社会科学",
-      "de": "Sozialwissenschaften"
+      "de": "Sozialwissenschaften",
+      "fr": "sciences sociales"
     },
     "kind": "compound",
     "parts": [
@@ -2659,7 +2846,8 @@
       "zh": "委員會·評議會",
       "en": "committee/council",
       "ja": "委員会・評議会",
-      "de": "Rat, Ausschuss"
+      "de": "Rat, Ausschuss",
+      "fr": "conseil, comité"
     },
     "kind": "normal",
     "display_n": 188
@@ -2673,7 +2861,8 @@
       "zh": "同意",
       "en": "agreement",
       "ja": "同意",
-      "de": "Zustimmung, Einverständnis"
+      "de": "Zustimmung, Einverständnis",
+      "fr": "accord, consentement"
     },
     "kind": "normal",
     "display_n": 189
@@ -2687,7 +2876,8 @@
       "zh": "意義",
       "en": "meaning",
       "ja": "意味",
-      "de": "Bedeutung, Sinn"
+      "de": "Bedeutung, Sinn",
+      "fr": "sens, signification"
     },
     "kind": "normal",
     "display_n": 190
@@ -2701,7 +2891,8 @@
       "zh": "義氣(義理與氣概)",
       "en": "sense of loyalty and honor",
       "ja": "義気(義理と気概)",
-      "de": "Rechtschaffenheit, Ehrenhaftigkeit"
+      "de": "Rechtschaffenheit, Ehrenhaftigkeit",
+      "fr": "sens de l’honneur et de la loyauté"
     },
     "kind": "normal",
     "display_n": 191
@@ -2715,7 +2906,8 @@
       "zh": "氣孔",
       "en": "pore",
       "ja": "気孔",
-      "de": "Pore, Spaltöffnung"
+      "de": "Pore, Spaltöffnung",
+      "fr": "stomate (biologie)"
     },
     "kind": "normal",
     "display_n": 192
@@ -2729,7 +2921,8 @@
       "zh": "勞工",
       "en": "worker",
       "ja": "労働者",
-      "de": "Arbeiter"
+      "de": "Arbeiter",
+      "fr": "ouvrier, travailleur"
     },
     "kind": "normal",
     "display_n": 193
@@ -2743,7 +2936,8 @@
       "zh": "人才",
       "en": "talent (person)",
       "ja": "人材",
-      "de": "Fachkraft, Talent"
+      "de": "Fachkraft, Talent",
+      "fr": "talent, personne compétente"
     },
     "kind": "normal",
     "display_n": 194
@@ -2757,7 +2951,8 @@
       "zh": "財政·金融",
       "en": "finance/banking",
       "ja": "財政・金融",
-      "de": "Finanzen, Finanzwesen"
+      "de": "Finanzen, Finanzwesen",
+      "fr": "finances"
     },
     "kind": "normal",
     "display_n": 195
@@ -2770,7 +2965,8 @@
       "zh": "政策",
       "en": "policy",
       "ja": "政策",
-      "de": "Politik, Richtlinie"
+      "de": "Politik, Richtlinie",
+      "fr": "politique (orientation)"
     },
     "kind": "base",
     "display_n": 196
@@ -2783,7 +2979,8 @@
       "zh": "對外",
       "en": "external",
       "ja": "対外",
-      "de": "Außenpolitik, externe Beziehungen"
+      "de": "Außenpolitik, externe Beziehungen",
+      "fr": "relations extérieures"
     },
     "kind": "base",
     "display_n": 197
@@ -2797,7 +2994,8 @@
       "zh": "對外政策",
       "en": "foreign policy",
       "ja": "対外政策",
-      "de": "Außenpolitik"
+      "de": "Außenpolitik",
+      "fr": "politique étrangère"
     },
     "kind": "compound",
     "parts": [
@@ -2815,7 +3013,8 @@
       "zh": "外國",
       "en": "foreign country",
       "ja": "外国",
-      "de": "Ausland, fremdes Land"
+      "de": "Ausland, fremdes Land",
+      "fr": "pays étranger, étranger"
     },
     "kind": "normal",
     "display_n": 199
@@ -2829,7 +3028,8 @@
       "zh": "國家",
       "en": "nation, country",
       "ja": "国家",
-      "de": "Nation, Staat"
+      "de": "Nation, Staat",
+      "fr": "nation, pays"
     },
     "kind": "normal",
     "display_n": 200
@@ -2843,7 +3043,8 @@
       "zh": "傳家寶",
       "en": "heirloom",
       "ja": "家宝",
-      "de": "Familienerbstück"
+      "de": "Familienerbstück",
+      "fr": "trésor de famille"
     },
     "kind": "normal",
     "display_n": 201
@@ -2857,7 +3058,8 @@
       "zh": "保固·售後服務",
       "en": "warranty; after-sales service",
       "ja": "保証・アフターサービス",
-      "de": "Garantie, Gewährleistung"
+      "de": "Garantie, Gewährleistung",
+      "fr": "garantie, SAV"
     },
     "kind": "normal",
     "display_n": 202
@@ -2871,7 +3073,8 @@
       "zh": "行政",
       "en": "administration",
       "ja": "行政",
-      "de": "Verwaltung"
+      "de": "Verwaltung",
+      "fr": "administration"
     },
     "kind": "normal",
     "display_n": 203
@@ -2885,7 +3088,8 @@
       "zh": "政治",
       "en": "politics",
       "ja": "政治",
-      "de": "Politik"
+      "de": "Politik",
+      "fr": "politique"
     },
     "kind": "normal",
     "display_n": 204
@@ -2899,7 +3103,8 @@
       "zh": "治安",
       "en": "public security",
       "ja": "治安",
-      "de": "öffentliche Ordnung, Sicherheit"
+      "de": "öffentliche Ordnung, Sicherheit",
+      "fr": "ordre public, sécurité"
     },
     "kind": "normal",
     "display_n": 205
@@ -2913,7 +3118,8 @@
       "zh": "福利",
       "en": "welfare",
       "ja": "福祉",
-      "de": "soziale Wohlfahrt"
+      "de": "soziale Wohlfahrt",
+      "fr": "bien-être, protection sociale"
     },
     "kind": "normal",
     "display_n": 206
@@ -2927,7 +3133,8 @@
       "zh": "生產·繁殖",
       "en": "production, reproduction",
       "ja": "生産·繁殖",
-      "de": "Fortpflanzung, Reproduktion"
+      "de": "Fortpflanzung, Reproduktion",
+      "fr": "reproduction"
     },
     "kind": "normal",
     "display_n": 207
@@ -2941,7 +3148,8 @@
       "zh": "生產",
       "en": "production",
       "ja": "生産",
-      "de": "Produktion, Erzeugung"
+      "de": "Produktion, Erzeugung",
+      "fr": "production"
     },
     "kind": "normal",
     "display_n": 208
@@ -2955,7 +3163,8 @@
       "zh": "出發",
       "en": "departure",
       "ja": "出発",
-      "de": "Abfahrt, Start"
+      "de": "Abfahrt, Start",
+      "fr": "départ"
     },
     "kind": "normal",
     "display_n": 209
@@ -2969,7 +3178,8 @@
       "zh": "發表・發言",
       "en": "presentation, statement",
       "ja": "発表・発言",
-      "de": "Redebeitrag, Äußerung"
+      "de": "Redebeitrag, Äußerung",
+      "fr": "intervention, prise de parole"
     },
     "kind": "normal",
     "display_n": 210
@@ -2983,7 +3193,8 @@
       "zh": "表現",
       "en": "expression",
       "ja": "表現",
-      "de": "Äußerung, Ausdruck"
+      "de": "Äußerung, Ausdruck",
+      "fr": "manifestation, signe"
     },
     "kind": "normal",
     "display_n": 211
@@ -2997,7 +3208,8 @@
       "zh": "現代",
       "en": "modern era",
       "ja": "現代",
-      "de": "moderne Zeit, Gegenwart"
+      "de": "moderne Zeit, Gegenwart",
+      "fr": "époque moderne, moderne"
     },
     "kind": "normal",
     "display_n": 212
@@ -3011,7 +3223,8 @@
       "zh": "大同·大和諧",
       "en": "great unity · great harmony",
       "ja": "大同・大調和",
-      "de": "große Harmonie, allgemeine Eintracht"
+      "de": "große Harmonie, allgemeine Eintracht",
+      "fr": "grande harmonie universelle"
     },
     "kind": "normal",
     "display_n": 213
@@ -3025,7 +3238,8 @@
       "zh": "同時",
       "en": "at the same time",
       "ja": "同時に",
-      "de": "gleichzeitig"
+      "de": "gleichzeitig",
+      "fr": "en même temps, simultanément"
     },
     "kind": "normal",
     "display_n": 214
@@ -3039,7 +3253,8 @@
       "zh": "時代",
       "en": "era",
       "ja": "時代",
-      "de": "Epoche, Ära"
+      "de": "Epoche, Ära",
+      "fr": "époque, ère"
     },
     "kind": "normal",
     "display_n": 215
@@ -3052,7 +3267,8 @@
       "zh": "大學",
       "en": "university",
       "ja": "大学",
-      "de": "Universität"
+      "de": "Universität",
+      "fr": "université"
     },
     "kind": "base",
     "display_n": 216
@@ -3066,7 +3282,8 @@
       "zh": "國立大學",
       "en": "national university",
       "ja": "国立大学",
-      "de": "staatliche Universität"
+      "de": "staatliche Universität",
+      "fr": "université nationale"
     },
     "kind": "compound",
     "parts": [
@@ -3083,7 +3300,8 @@
       "zh": "財產",
       "en": "property",
       "ja": "財産",
-      "de": "Vermögen, Besitz"
+      "de": "Vermögen, Besitz",
+      "fr": "patrimoine, fortune"
     },
     "kind": "normal",
     "display_n": 218
@@ -3097,7 +3315,8 @@
       "zh": "資源",
       "en": "resource",
       "ja": "資源",
-      "de": "Ressourcen"
+      "de": "Ressourcen",
+      "fr": "ressources"
     },
     "kind": "normal",
     "display_n": 219
@@ -3111,7 +3330,8 @@
       "zh": "原因",
       "en": "cause",
       "ja": "原因",
-      "de": "Ursache, Anlass"
+      "de": "Ursache, Anlass",
+      "fr": "cause, raison"
     },
     "kind": "normal",
     "display_n": 220
@@ -3125,7 +3345,8 @@
       "zh": "人道的",
       "en": "humane",
       "ja": "人道的",
-      "de": "humanitär, menschenfreundlich"
+      "de": "humanitär, menschenfreundlich",
+      "fr": "humanitaire"
     },
     "kind": "normal",
     "display_n": 221
@@ -3139,7 +3360,8 @@
       "zh": "導演·執導",
       "en": "director/directing",
       "ja": "監督・演出",
-      "de": "Regisseur, Regie"
+      "de": "Regisseur, Regie",
+      "fr": "réalisateur, mise en scène"
     },
     "kind": "normal",
     "display_n": 222
@@ -3153,7 +3375,8 @@
       "zh": "演講稿",
       "en": "speech manuscript",
       "ja": "演説原稿",
-      "de": "Redemanuskript, Ansprache"
+      "de": "Redemanuskript, Ansprache",
+      "fr": "discours, allocution"
     },
     "kind": "normal",
     "display_n": 223
@@ -3167,7 +3390,8 @@
       "zh": "文化",
       "en": "culture",
       "ja": "文化",
-      "de": "Kultur"
+      "de": "Kultur",
+      "fr": "culture"
     },
     "kind": "normal",
     "display_n": 224
@@ -3181,7 +3405,8 @@
       "zh": "解除·解開",
       "en": "to resolve / to untie",
       "ja": "解消・解く",
-      "de": "auflösen, schlichten"
+      "de": "auflösen, schlichten",
+      "fr": "dissiper, apaiser"
     },
     "kind": "normal",
     "display_n": 225
@@ -3195,7 +3420,8 @@
       "zh": "休息·休息時間",
       "en": "rest / break time",
       "ja": "休息・休憩時間",
-      "de": "Pause, Erholung"
+      "de": "Pause, Erholung",
+      "fr": "pause, récréation"
     },
     "kind": "normal",
     "display_n": 226
@@ -3209,7 +3435,8 @@
       "zh": "勞動",
       "en": "labor",
       "ja": "労働",
-      "de": "Arbeit, Werktätigkeit"
+      "de": "Arbeit, Werktätigkeit",
+      "fr": "travail, labeur"
     },
     "kind": "normal",
     "display_n": 227
@@ -3223,7 +3450,8 @@
       "zh": "動物",
       "en": "animal",
       "ja": "動物",
-      "de": "Tier"
+      "de": "Tier",
+      "fr": "animal"
     },
     "kind": "normal",
     "display_n": 228
@@ -3236,7 +3464,8 @@
       "zh": "物理",
       "en": "physics",
       "ja": "物理",
-      "de": "Physik"
+      "de": "Physik",
+      "fr": "physique"
     },
     "kind": "base",
     "display_n": 229
@@ -3250,7 +3479,8 @@
       "zh": "物理學",
       "en": "physics",
       "ja": "物理学",
-      "de": "Physik"
+      "de": "Physik",
+      "fr": "physique"
     },
     "kind": "compound",
     "parts": [
@@ -3267,7 +3497,8 @@
       "zh": "學歷",
       "en": "educational background",
       "ja": "学歴",
-      "de": "Schulleistung, Bildungsstand"
+      "de": "Schulleistung, Bildungsstand",
+      "fr": "niveau scolaire, rendement scolaire"
     },
     "kind": "normal",
     "display_n": 231
@@ -3281,7 +3512,8 @@
       "zh": "勢力·兵力",
       "en": "power, military force",
       "ja": "勢力·兵力",
-      "de": "Kräfte, Streitkräfte"
+      "de": "Kräfte, Streitkräfte",
+      "fr": "forces, effectifs"
     },
     "kind": "normal",
     "display_n": 232
