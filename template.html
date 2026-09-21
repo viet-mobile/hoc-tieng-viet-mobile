@@ -1018,6 +1018,19 @@
     border: 1.5px solid var(--border); border-radius: 8px 0 8px 0; padding: 8px 14px; cursor: pointer;
   }
   .study-chip.placed { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  /* Each placed word in [어순 배열] gets its own slot with ◀/▶ move buttons either side, so a
+     mid-sentence word can be repositioned in place instead of removing it and everything after
+     it. The slot itself (not the individual buttons) is the flex-wrap unit, so a word and its
+     two move buttons always wrap onto a new line together rather than splitting apart. */
+  .study-chip-slot { display: inline-flex; align-items: center; gap: 3px; }
+  .study-chip-move {
+    min-width: 26px; min-height: 26px; padding: 0; display: inline-flex; align-items: center;
+    justify-content: center; font-size: 0.72rem; line-height: 1; font-family: var(--font-vn);
+    background: var(--surface); color: var(--ink-faint); border: 1.5px solid var(--border);
+    border-radius: 999px; cursor: pointer; flex: none;
+  }
+  .study-chip-move:disabled { opacity: 0.35; cursor: default; }
+  .study-chip-move:not(:disabled):hover { color: var(--accent); border-color: var(--accent); }
   .study-order-feedback { text-align: center; font-weight: 700; font-size: 0.88rem; margin: 12px 0 4px; }
   .study-order-feedback.ok { color: var(--good); }
   .study-order-feedback.no { color: var(--danger); }

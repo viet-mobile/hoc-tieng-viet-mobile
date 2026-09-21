@@ -3579,6 +3579,8 @@
   "번역 언어": {"zh":"翻譯語言","en":"Translation language","ja":"翻訳言語","de":"Übersetzungssprache","fr":"Langue de traduction","pl":"Język tłumaczenia"},
   "이전": {"zh":"上一個","en":"Previous","ja":"前へ","de":"Zurück","fr":"Précédent","pl":"Poprzedni"},
   "다음": {"zh":"下一個","en":"Next","ja":"次へ","de":"Weiter","fr":"Suivant","pl":"Następny"},
+  "왼쪽으로 이동": {"zh":"向左移動","en":"Move left","ja":"左へ移動","de":"Nach links verschieben","fr":"Déplacer vers la gauche","pl":"Przesuń w lewo"},
+  "오른쪽으로 이동": {"zh":"向右移動","en":"Move right","ja":"右へ移動","de":"Nach rechts verschieben","fr":"Déplacer vers la droite","pl":"Przesuń w prawo"},
   "\"행복한 삶을 영원히 누리십시오!\" 교재의 엑셀 원본 자료를 그대로 옮긴 콘텐츠예요. 72개 항목(1~60과·부별 복습·미디어 자료·참조 자료 등)을 10개 언어로 대조할 수 있어요. [문장] 탭의 같은 이름 콘텐츠와는 다른, 더 완전한 원문 자료예요.": {
     "zh": "這是「盡情享受人生！」教材Excel原始資料的完整內容，涵蓋72個項目（第1~60課、各部複習、多媒體資料、參考資料等），可對照10種語言。與[句子]分頁中同名內容不同，這是更完整的原始資料。",
     "en": "The full Excel source data of the \"Enjoy Life Forever!\" course, covering all 72 items (Lessons 1–60, section reviews, media, endnotes, etc.) aligned across 10 languages. This is a more complete source than the same-named content under the [Sentence] tab.",
@@ -10564,7 +10566,21 @@
         bankEl.appendChild(chip);
       });
       ansEl.innerHTML = "";
-      studyState.orderPlaced.forEach(function (tok) {
+      studyState.orderPlaced.forEach(function (tok, idx) {
+        var slot = document.createElement("span");
+        slot.className = "study-chip-slot";
+
+        var moveLeft = document.createElement("button");
+        moveLeft.type = "button";
+        moveLeft.className = "study-chip-move";
+        moveLeft.textContent = "◀";
+        moveLeft.setAttribute("aria-label", TU("왼쪽으로 이동"));
+        if (idx === 0) moveLeft.disabled = true;
+        moveLeft.addEventListener("click", function (e) {
+          e.stopPropagation();
+          moveOrderPlaced(idx, -1);
+        });
+
         var chip = document.createElement("button");
         chip.className = "study-chip placed vn";
         chip.textContent = tok.t;
@@ -10573,8 +10589,36 @@
           document.getElementById("order-feedback").innerHTML = "";
           renderOrderChips();
         });
-        ansEl.appendChild(chip);
+
+        var moveRight = document.createElement("button");
+        moveRight.type = "button";
+        moveRight.className = "study-chip-move";
+        moveRight.textContent = "▶";
+        moveRight.setAttribute("aria-label", TU("오른쪽으로 이동"));
+        if (idx === studyState.orderPlaced.length - 1) moveRight.disabled = true;
+        moveRight.addEventListener("click", function (e) {
+          e.stopPropagation();
+          moveOrderPlaced(idx, 1);
+        });
+
+        slot.appendChild(moveLeft);
+        slot.appendChild(chip);
+        slot.appendChild(moveRight);
+        ansEl.appendChild(slot);
       });
+    }
+    // Swaps the placed word at `index` with its immediate left/right neighbor (direction -1/+1)
+    // so a mid-sentence word can be repositioned directly, instead of having to remove it and
+    // every word placed after it just to re-add them in the new order.
+    function moveOrderPlaced(index, direction) {
+      var arr = studyState.orderPlaced;
+      var target = index + direction;
+      if (target < 0 || target >= arr.length) return;
+      var tmp = arr[index];
+      arr[index] = arr[target];
+      arr[target] = tmp;
+      document.getElementById("order-feedback").innerHTML = "";
+      renderOrderChips();
     }
     function checkOrder() {
       var item = studyState.current;
