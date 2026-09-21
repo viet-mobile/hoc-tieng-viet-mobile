@@ -1,15 +1,21 @@
 (function () {
   "use strict";
 
-  /* ---------------- language switching (ko / zh-TW / en / ja / de / fr / pl) ---------------- */
-  // currentLang drives which translation is shown for any {ko,zh,en,ja,de,fr,pl}-shaped content field.
-  // Content not yet converted to that shape is left as a plain string, and T() below returns
-  // it unchanged in every language -- this lets the multi-language rollout happen field-by-
-  // field across the app without ever breaking anything not yet converted.
-  var VALID_LANGS = ["ko", "zh", "en", "ja", "de", "fr", "pl"];
+  /* ---------------- language switching (ko / zh-TW / en / ja / de / fr / pl / cs / hu) ---------------- */
+  // currentLang drives which translation is shown for any {ko,zh,en,ja,de,fr,pl,cs,hu}-shaped
+  // content field. Content not yet converted to that shape is left as a plain string, and T()
+  // below returns it unchanged in every language -- this lets the multi-language rollout happen
+  // field-by-field across the app without ever breaking anything not yet converted.
+  // NOTE: cs/hu are common-infrastructure-only for now (this switch, the UI dictionary fallback
+  // chain, html lang, system-language detection, path entry points, compact mobile tab labels).
+  // No I18N_UI dictionary entries or content-data cs/hu fields have been added yet -- until they
+  // are, cs/hu mode falls back to Korean throughout the app via T()/TU()'s existing fallback
+  // chains, exactly like a not-yet-translated field does in any other language mode.
+  var VALID_LANGS = ["ko", "zh", "en", "ja", "de", "fr", "pl", "cs", "hu"];
   // With no saved preference yet (first visit, or localStorage unavailable), use the
   // device/browser's system language: Korean -> ko, Chinese -> zh, Japanese -> ja, German -> de,
-  // French -> fr, Polish -> pl, and English plus every other system language (including ones this app has no UI for) -> en.
+  // French -> fr, Polish -> pl, Czech -> cs, Hungarian -> hu, and English plus every other
+  // system language (including ones this app has no UI for) -> en.
   function detectSystemLang() {
     try {
       var navLang = String(
@@ -22,13 +28,15 @@
       if (languageCode === "de") return "de";
       if (languageCode === "fr") return "fr";
       if (languageCode === "pl") return "pl";
+      if (languageCode === "cs") return "cs";
+      if (languageCode === "hu") return "hu";
     } catch (e) { /* no-op: navigator unavailable */ }
     return "en";
   }
-  // A first path segment of /ko, /en, /zt, /ja, /de, /fr, or /pl (see _redirects, which rewrites each of
-  // these paths to this same page) picks the language mode directly, ahead of any saved
-  // preference -- this is what lets hoc.tieng.viet.mobile/ko etc. work as direct entry points.
-  var PATH_LANG_MAP = { ko: "ko", en: "en", zt: "zh", ja: "ja", de: "de", fr: "fr", pl: "pl" };
+  // A first path segment of /ko, /en, /zt, /ja, /de, /fr, /pl, /cs, or /hu (see _redirects, which
+  // rewrites each of these paths to this same page) picks the language mode directly, ahead of
+  // any saved preference -- this is what lets hoc.tieng.viet.mobile/ko etc. work as direct entry points.
+  var PATH_LANG_MAP = { ko: "ko", en: "en", zt: "zh", ja: "ja", de: "de", fr: "fr", pl: "pl", cs: "cs", hu: "hu" };
   function detectLangFromPath() {
     try {
       var seg = (String(window.location.pathname || "").split("/")[1] || "").toLowerCase();
@@ -57,26 +65,28 @@
     ja: "ベトナム語訓練コース",
     de: "Vietnamesisch-Sprachkurs",
     fr: "Cours de vietnamien",
-    pl: "Kurs języka wietnamskiego"
+    pl: "Kurs języka wietnamskiego",
+    cs: "Kurz vietnamštiny",
+    hu: "Vietnami nyelvtanfolyam"
   };
   try { document.title = TITLE_BY_LANG[currentLang] || document.title; } catch (e) { /* no-op */ }
   function T(field) {
     if (field === null || field === undefined) return field;
     if (typeof field === "string") return field;
-    return field[currentLang] || field.ko || field.zh || field.en || field.ja || field.de || field.fr || field.pl || "";
+    return field[currentLang] || field.ko || field.zh || field.en || field.ja || field.de || field.fr || field.pl || field.cs || field.hu || "";
   }
   // T()'s graceful Korean fallback is exactly right for CONTENT DISPLAY (an untranslated field
   // should still show something rather than go blank), but it's wrong for review pools: a field
-  // that has no zh/en/ja/de/fr/pl entry yet (e.g. some LFF_CONVERSATIONS lines are missing 'zh' entirely)
-  // would otherwise offer a Korean-language flashcard/multiple-choice option while the UI is in
-  // zh/en/ja/de/fr/pl mode. Tstrict() returns null instead of silently falling back to a different
-  // language, so review-pool builders can skip that item in this language rather than leak it.
-  // ko itself is always "available" (either field.ko or, for not-yet-multilingual content, the
-  // plain string IS the Korean text).
+  // that has no zh/en/ja/de/fr/pl/cs/hu entry yet (e.g. some LFF_CONVERSATIONS lines are missing
+  // 'zh' entirely) would otherwise offer a Korean-language flashcard/multiple-choice option while
+  // the UI is in a non-Korean mode. Tstrict() returns null instead of silently falling back to a
+  // different language, so review-pool builders can skip that item in this language rather than
+  // leak it. ko itself is always "available" (either field.ko or, for not-yet-multilingual
+  // content, the plain string IS the Korean text).
   function Tstrict(field) {
     if (field === null || field === undefined) return null;
     if (typeof field === "string") return currentLang === "ko" ? field : null;
-    if (currentLang === "ko") return field.ko || field.zh || field.en || field.ja || field.de || field.fr || field.pl || null;
+    if (currentLang === "ko") return field.ko || field.zh || field.en || field.ja || field.de || field.fr || field.pl || field.cs || field.hu || null;
     return field[currentLang] || null;
   }
   var LANG_CHANGE_LISTENERS = [];
@@ -85,7 +95,7 @@
     if (VALID_LANGS.indexOf(lang) < 0) return;
     currentLang = lang;
     try { window.localStorage && window.localStorage.setItem("vn-app-lang", lang); } catch (e) { /* no-op */ }
-    var htmlLang = lang === "ko" ? "ko" : lang === "zh" ? "zh-Hant" : lang === "ja" ? "ja" : lang === "de" ? "de" : lang === "fr" ? "fr" : lang === "pl" ? "pl" : "en";
+    var htmlLang = lang === "ko" ? "ko" : lang === "zh" ? "zh-Hant" : lang === "ja" ? "ja" : lang === "de" ? "de" : lang === "fr" ? "fr" : lang === "pl" ? "pl" : lang === "cs" ? "cs" : lang === "hu" ? "hu" : "en";
     document.documentElement.setAttribute("lang", htmlLang);
     if (document.body) document.body.setAttribute("data-app-lang", lang);
     try { document.title = TITLE_BY_LANG[lang] || document.title; } catch (e) { /* no-op */ }
@@ -3691,16 +3701,24 @@
       en: { curriculum: "Course", pron: "Sounds", bible: "Bible", wizard: "Talk", vocab: "Words", sentence: "Sentence", grammar: "Grammar", review: "Review" },
       de: { curriculum: "Kurs", pron: "Laut", bible: "Bibel", wizard: "Dialog", vocab: "Wörter", sentence: "Satz", grammar: "Gramm.", review: "Wdh." },
       fr: { curriculum: "Cours", pron: "Sons", bible: "Bible", wizard: "Dialog", vocab: "Mots", sentence: "Phrase", grammar: "Gramm.", review: "Rév." },
-      pl: { curriculum: "Kurs", pron: "Wymowa", bible: "Biblia", wizard: "Rozm.", vocab: "Słowa", sentence: "Zdanie", grammar: "Gram.", review: "Powt." }
+      pl: { curriculum: "Kurs", pron: "Wymowa", bible: "Biblia", wizard: "Rozm.", vocab: "Słowa", sentence: "Zdanie", grammar: "Gram.", review: "Powt." },
+      cs: { curriculum: "Kurz", pron: "Výsl.", bible: "Bible", wizard: "Dialog", vocab: "Slova", sentence: "Věta", grammar: "Gram.", review: "Opak." },
+      // Hungarian compound words run long (e.g. "nyelvtan", "ismétlés") -- abbreviated more
+      // aggressively than cs/de/pl here so the 8-tab row still fits without horizontal scroll
+      // at 320-390px (verified with Playwright; en's own long words needed a dedicated
+      // body[data-app-lang="en"] font-size override elsewhere to fit, which this avoids).
+      hu: { curriculum: "Kurzus", pron: "Kiejt.", bible: "Biblia", wizard: "Beszéd", vocab: "Szavak", sentence: "Mondat", grammar: "Nytan", review: "Ism." }
     };
     var shortReviewByLang = {
       en: { song: "Songs", pron: "Sounds", bible: "Bible", wizard: "Talk", vocab: "Words", sentence: "Sentence", grammar: "Grammar" },
       de: { song: "Lieder", pron: "Laut", bible: "Bibel", wizard: "Dialog", vocab: "Wörter", sentence: "Satz", grammar: "Gramm." },
       fr: { song: "Chants", pron: "Sons", bible: "Bible", wizard: "Dialog", vocab: "Mots", sentence: "Phrase", grammar: "Gramm." },
-      pl: { song: "Pieśni", pron: "Wymowa", bible: "Biblia", wizard: "Rozm.", vocab: "Słowa", sentence: "Zdanie", grammar: "Gram." }
+      pl: { song: "Pieśni", pron: "Wymowa", bible: "Biblia", wizard: "Rozm.", vocab: "Słowa", sentence: "Zdanie", grammar: "Gram." },
+      cs: { song: "Písně", pron: "Výsl.", bible: "Bible", wizard: "Dialog", vocab: "Slova", sentence: "Věta", grammar: "Gram." },
+      hu: { song: "Dalok", pron: "Kiejt.", bible: "Biblia", wizard: "Beszéd", vocab: "Szavak", sentence: "Mondat", grammar: "Nytan" }
     };
     function syncPrimaryTabLabels() {
-      var compact = (currentLang === "en" || currentLang === "de" || currentLang === "fr" || currentLang === "pl") && window.innerWidth < 1000;
+      var compact = (currentLang === "en" || currentLang === "de" || currentLang === "fr" || currentLang === "pl" || currentLang === "cs" || currentLang === "hu") && window.innerWidth < 1000;
       var shortMap = shortNamesByLang[currentLang] || {};
       document.querySelectorAll(".tabs .tab-btn").forEach(function (btn) {
         var fullName = TU(btn.getAttribute("data-i18n"));
@@ -3747,7 +3765,7 @@
     sync(currentLang);
     document.documentElement.setAttribute(
       "lang",
-      currentLang === "ko" ? "ko" : currentLang === "zh" ? "zh-Hant" : currentLang === "ja" ? "ja" : currentLang === "de" ? "de" : currentLang === "fr" ? "fr" : currentLang === "pl" ? "pl" : "en"
+      currentLang === "ko" ? "ko" : currentLang === "zh" ? "zh-Hant" : currentLang === "ja" ? "ja" : currentLang === "de" ? "de" : currentLang === "fr" ? "fr" : currentLang === "pl" ? "pl" : currentLang === "cs" ? "cs" : currentLang === "hu" ? "hu" : "en"
     );
     if (document.body) document.body.setAttribute("data-app-lang", currentLang);
     onLangChange(sync);
