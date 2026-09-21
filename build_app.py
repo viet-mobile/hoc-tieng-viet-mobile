@@ -39,6 +39,7 @@ vocab_chain = json.load(open("vocab_chain.json", encoding="utf-8"))
 vocab_groups = json.load(open("vocab_groups.json", encoding="utf-8"))
 vocab_theo = json.load(open("vocab_theo.json", encoding="utf-8"))
 freq_vocab = json.load(open("freq_vocab.json", encoding="utf-8"))
+enjoy_life_forever_data = json.load(open("enjoy_life_forever_data.json", encoding="utf-8"))
 
 def js_json(obj):
     return json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
@@ -131,6 +132,7 @@ const TIME_HOURS = {js_json(TIME_HOURS)};
 const TIME_EXAMPLES = {js_json(TIME_EXAMPLES)};
 const VOCAB_PLAN = {js_json(VOCAB_PLAN)};
 const WATCHTOWER_VOCAB = {js_json(WATCHTOWER_VOCAB)};
+const ENJOY_LIFE_FOREVER = {js_json(enjoy_life_forever_data)};
 """
 
 songs_data_js = open("songs_data.js", encoding="utf-8").read()

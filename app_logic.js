@@ -3575,7 +3575,18 @@
     "pl": "Brak wyników wyszukiwania."
   },
   "닫기": {"zh":"關閉","en":"Close","ja":"閉じる","de":"Schließen","fr":"Fermer","pl":"Zamknij"},
-  "전체": {"zh":"全部","en":"All","ja":"すべて","de":"Alle","fr":"Tous","pl":"Wszystkie"}
+  "전체": {"zh":"全部","en":"All","ja":"すべて","de":"Alle","fr":"Tous","pl":"Wszystkie"},
+  "번역 언어": {"zh":"翻譯語言","en":"Translation language","ja":"翻訳言語","de":"Übersetzungssprache","fr":"Langue de traduction","pl":"Język tłumaczenia"},
+  "이전": {"zh":"上一個","en":"Previous","ja":"前へ","de":"Zurück","fr":"Précédent","pl":"Poprzedni"},
+  "다음": {"zh":"下一個","en":"Next","ja":"次へ","de":"Weiter","fr":"Suivant","pl":"Następny"},
+  "\"행복한 삶을 영원히 누리십시오!\" 교재의 엑셀 원본 자료를 그대로 옮긴 콘텐츠예요. 72개 항목(1~60과·부별 복습·미디어 자료·참조 자료 등)을 10개 언어로 대조할 수 있어요. [문장] 탭의 같은 이름 콘텐츠와는 다른, 더 완전한 원문 자료예요.": {
+    "zh": "這是「盡情享受人生！」教材Excel原始資料的完整內容，涵蓋72個項目（第1~60課、各部複習、多媒體資料、參考資料等），可對照10種語言。與[句子]分頁中同名內容不同，這是更完整的原始資料。",
+    "en": "The full Excel source data of the \"Enjoy Life Forever!\" course, covering all 72 items (Lessons 1–60, section reviews, media, endnotes, etc.) aligned across 10 languages. This is a more complete source than the same-named content under the [Sentence] tab.",
+    "ja": "「幸せな人生を永遠に」教材のExcel原本データをそのまま収録したコンテンツです。72項目（1～60課・各部の復習・メディア資料・参照資料など）を10言語で対照できます。［文章］タブの同名コンテンツとは異なる、より完全な原本資料です。",
+    "de": "Die vollständigen Excel-Quelldaten des Kurses „Genieße das Leben für immer!“ mit allen 72 Einheiten (Lektionen 1–60, Teil-Wiederholungen, Medien, Anmerkungen usw.) in 10 Sprachen. Dies ist eine vollständigere Quelle als der gleichnamige Inhalt im Tab [Sätze].",
+    "fr": "Les données source Excel complètes du cours « Jouissez de la vie à jamais ! », couvrant les 72 éléments (leçons 1 à 60, révisions de section, contenus multimédias, notes, etc.) alignés sur 10 langues. Il s'agit d'une source plus complète que le contenu du même nom dans l'onglet [Phrases].",
+    "pl": "Pełne dane źródłowe z arkusza Excel dla kursu „Ciesz się życiem na zawsze!”, obejmujące wszystkie 72 pozycje (lekcje 1–60, powtórki poszczególnych części, materiały multimedialne, przypisy itd.) zestawione w 10 językach. To pełniejsze źródło niż treść o tej samej nazwie w zakładce [Zdania]."
+  }
 };
   function TU(ko) {
     if (!ko) return ko;
@@ -5388,12 +5399,13 @@
     renderCurrNeighbor();
   })();
 
-  /* ---------------- 문장 subtab (행복한 삶을 영원히 / 사람들을 사랑하고 제자로 / 파수대) ---------------- */
+  /* ---------------- 문장 subtab (행복한 삶을 영원히 / 사람들을 사랑하고 제자로 / 파수대 / 행복한 삶을 영원히(전체)) ---------------- */
   (function () {
     var panes = {
       lff: document.getElementById("sentence-lff-pane"),
       lpd: document.getElementById("sentence-lpd-pane"),
       wt: document.getElementById("sentence-wt-pane"),
+      lff2: document.getElementById("sentence-lff2-pane"),
     };
     var btns = document.querySelectorAll(".subtab-btn[data-sentence]");
     if (!btns.length || !panes.lff) return;
@@ -5406,6 +5418,11 @@
         if (btn.dataset.sentence === "lpd") renderCurrLpd();
         if (btn.dataset.sentence === "wt") renderCurrWt();
         if (btn.dataset.sentence === "lff") renderCurrLff();
+        // initLff2 is defined further down the file (its LFF2_* state is set up via `var`
+        // initializers that haven't run yet this early in the script), so it's only ever invoked
+        // lazily here on click -- never eagerly alongside the other renderCurr* calls below,
+        // which read plain top-level `const`s already available from data_block.js.
+        if (btn.dataset.sentence === "lff2") initLff2();
       });
     });
     renderCurrLff();
@@ -7839,8 +7856,230 @@
     bindCurrSpeakBtns(root);
   }
 
+  // "문장 > 행복한 삶을 영원히(전체)" (Enjoy Life Forever! -- full Excel source, 72 units x 10
+  // languages). Lives alongside, not inside, the "문장" tab's own "행복한 삶을 영원히" subtab
+  // (LFF_CONVERSATIONS, 5-language sentence-split body text) -- originally implemented under
+  // [대화], moved here so the same feature isn't shown under two different top-level menus. This
+  // renders ENJOY_LIFE_FOREVER verbatim at row granularity (no sentence splitting, no reordering --
+  // an Excel row's 10 language cells must stay aligned exactly as given) and only ever renders the
+  // ONE currently selected unit's rows (up to ~412 for the largest lessons), never all 72 at once,
+  // since the underlying JSON is multiple MB. The site-wide currentLang only covers 7 languages
+  // (no cs/hu), so translation language here is a separate, panel-local selector/localStorage key
+  // rather than reusing currentLang -- UI chrome (buttons, empty-state text) still follows the
+  // site-wide currentLang via TU(), only the row content follows this local picker.
+  var LFF2_LANGS = ["ko", "zh", "en", "ja", "de", "fr", "pl", "cs", "hu"];
+  var LFF2_STORAGE_KEY = "vn-app-lff2-v1";
+  var lff2State = { lang: null, unitId: null };
+  (function loadLff2State() {
+    try {
+      var raw = window.localStorage && window.localStorage.getItem(LFF2_STORAGE_KEY);
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        if (parsed && LFF2_LANGS.indexOf(parsed.lang) >= 0) lff2State.lang = parsed.lang;
+        if (parsed && typeof parsed.unitId === "number") lff2State.unitId = parsed.unitId;
+      }
+    } catch (e) { /* no-op: localStorage unavailable */ }
+    if (!lff2State.lang) lff2State.lang = LFF2_LANGS.indexOf(currentLang) >= 0 ? currentLang : "ko";
+  })();
+  function saveLff2State() {
+    try { window.localStorage && window.localStorage.setItem(LFF2_STORAGE_KEY, JSON.stringify(lff2State)); } catch (e) { /* no-op */ }
+  }
+
+  // Fixed part boundaries by unit id, exactly matching the course's own Section 1-4 structure
+  // (units never get reordered -- see ENJOY_LIFE_FOREVER.units).
+  var LFF2_PART_RANGES = [
+    { part: 1, startId: 1, endId: 14 },
+    { part: 2, startId: 15, endId: 37 },
+    { part: 3, startId: 38, endId: 53 },
+    { part: 4, startId: 54, endId: 72 }
+  ];
+  var LFF2_PART_LABEL_FN = {
+    ko: function (n) { return "제" + n + "부"; },
+    zh: function (n) { return "第" + n + "部"; },
+    en: function (n) { return "Part " + n; },
+    ja: function (n) { return "第" + n + "部"; },
+    de: function (n) { return "Teil " + n; },
+    fr: function (n) { return "Partie " + n; },
+    pl: function (n) { return "Część " + n; },
+    cs: function (n) { return "Část " + n; },
+    hu: function (n) { return n + ". rész"; }
+  };
+  function lff2PartLabel(n) {
+    return (LFF2_PART_LABEL_FN[lff2State.lang] || LFF2_PART_LABEL_FN.ko)(n);
+  }
+  function lff2RowText(row, lang) {
+    var v = row[lang];
+    return typeof v === "string" ? v.trim() : "";
+  }
+  // Every unit's own row 1 already carries its title in all 10 languages (verbatim, from the
+  // source publication) -- reused as-is for menu/header labels instead of writing new translations.
+  function lff2UnitLabel(u, lang) {
+    var row0 = u && u.rows && u.rows[0];
+    if (!row0) return u ? u.labelKo : "";
+    return lff2RowText(row0, lang) || lff2RowText(row0, "vi");
+  }
+
+  function renderLff2Picker() {
+    var root = document.getElementById("lff2-picker-root");
+    if (!root || typeof ENJOY_LIFE_FOREVER === "undefined") return;
+    var units = ENJOY_LIFE_FOREVER.units;
+    var lang = lff2State.lang;
+    var openParts = {};
+    root.querySelectorAll('.lff2-part[data-open="true"]').forEach(function (p) { openParts[p.dataset.part] = true; });
+    var firstRender = !root.dataset.rendered;
+    root.dataset.rendered = "true";
+    var html = "";
+    LFF2_PART_RANGES.forEach(function (range) {
+      var partOpen = Object.prototype.hasOwnProperty.call(openParts, String(range.part))
+        ? openParts[String(range.part)]
+        : (firstRender && range.part === 1);
+      html += '<section class="lff2-part" data-part="' + range.part + '" data-open="' + (partOpen ? "true" : "false") + '">' +
+        '<button type="button" class="lff2-part-head" aria-expanded="' + (partOpen ? "true" : "false") + '">' +
+        '<span>' + escapeHtml(lff2PartLabel(range.part)) + '</span>' + currChev() + '</button><div class="lff2-part-body">';
+      var itemsHtml = "";
+      for (var id = range.startId; id <= range.endId; id++) {
+        var u = units[id - 1];
+        if (!u || u.id !== id) u = units.filter(function (x) { return x.id === id; })[0];
+        if (!u) continue;
+        var isCurrent = lff2State.unitId === u.id;
+        var label = lff2UnitLabel(u, lang);
+        if (u.type === "lesson") {
+          itemsHtml += '<button type="button" class="lff2-unit-btn" data-unit-id="' + u.id + '" aria-current="' + (isCurrent ? "true" : "false") + '" title="' + escapeAttr(label) + '" aria-label="' + escapeAttr(label) + '">' + u.lesson + '</button>';
+        } else {
+          itemsHtml += '<button type="button" class="lff2-special-btn" data-unit-id="' + u.id + '" aria-current="' + (isCurrent ? "true" : "false") + '">' + escapeHtml(label) + '</button>';
+        }
+      }
+      html += '<div class="lff2-unit-grid">' + itemsHtml + '</div></div></section>';
+    });
+    root.innerHTML = html;
+    root.querySelectorAll(".lff2-part-head").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var part = button.closest(".lff2-part");
+        var willOpen = part.dataset.open !== "true";
+        part.dataset.open = willOpen ? "true" : "false";
+        button.setAttribute("aria-expanded", willOpen ? "true" : "false");
+      });
+    });
+    root.querySelectorAll("[data-unit-id]").forEach(function (btn) {
+      btn.addEventListener("click", function () { renderLff2Unit(Number(btn.dataset.unitId)); });
+    });
+  }
+
+  // Builds only the row-list HTML (not the header/nav around it) so the per-unit search box can
+  // refresh just this part without rebuilding prev/next buttons on every keystroke.
+  function lff2BuildRowsHtml(unit, lang, query) {
+    var q = query ? query.toLowerCase() : "";
+    var html = "";
+    (unit.rows || []).forEach(function (row) {
+      var vi = lff2RowText(row, "vi");
+      var tr = lang === "vi" ? "" : lff2RowText(row, lang);
+      if (!vi && !tr) return;
+      if (q && vi.toLowerCase().indexOf(q) < 0 && (!tr || tr.toLowerCase().indexOf(q) < 0)) return;
+      html += '<div class="lff2-row"><span class="lff2-row-num">' + row.row + '</span><div class="lff2-row-body">';
+      if (vi) {
+        html += '<div class="lff2-row-vi">' + escapeHtml(vi) +
+          '<button type="button" class="speak-btn" data-speak="' + escapeAttr(vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>';
+      }
+      if (tr) html += '<div class="lff2-row-tr">' + escapeHtml(tr) + '</div>';
+      html += '</div></div>';
+    });
+    return html || '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
+  }
+
+  function renderLff2Unit(unitId) {
+    var pickerRoot = document.getElementById("lff2-picker-root");
+    var viewerRoot = document.getElementById("lff2-viewer-root");
+    if (!pickerRoot || !viewerRoot || typeof ENJOY_LIFE_FOREVER === "undefined") return;
+    var units = ENJOY_LIFE_FOREVER.units;
+    var unit = units[unitId - 1] && units[unitId - 1].id === unitId ? units[unitId - 1] : units.filter(function (u) { return u.id === unitId; })[0];
+    if (!unit) return;
+    var idx = units.indexOf(unit);
+    var lang = lff2State.lang;
+    lff2State.unitId = unitId;
+    saveLff2State();
+
+    pickerRoot.style.display = "none";
+    viewerRoot.style.display = "";
+
+    var prevUnit = units[idx - 1] || null;
+    var nextUnit = units[idx + 1] || null;
+    var titleText = lff2UnitLabel(unit, lang);
+
+    var html = '<div class="lff2-viewer-head">' +
+      '<button type="button" class="lff2-back-btn" id="lff2-back-btn">← ' + escapeHtml(TU("목록")) + '</button>' +
+      '<div class="lff2-unit-title">' + escapeHtml(titleText) + '</div></div>' +
+      '<div class="lff2-nav-row">' +
+      '<button type="button" class="lff2-nav-btn" id="lff2-prev-btn"' + (prevUnit ? "" : " disabled") + '>' +
+      (prevUnit ? "← " + escapeHtml(lff2UnitLabel(prevUnit, lang)) : escapeHtml(TU("이전"))) + '</button>' +
+      '<button type="button" class="lff2-nav-btn" id="lff2-next-btn"' + (nextUnit ? "" : " disabled") + '>' +
+      (nextUnit ? escapeHtml(lff2UnitLabel(nextUnit, lang)) + " →" : escapeHtml(TU("다음"))) + '</button>' +
+      '</div>' +
+      '<div class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>' +
+      '<input type="text" id="lff2-search" data-i18n-placeholder="베트남어 문장이나 뜻으로 검색" placeholder="' + escapeAttr(TU("베트남어 문장이나 뜻으로 검색")) + '"></div>' +
+      '<div class="lff2-row-list" id="lff2-row-list">' + lff2BuildRowsHtml(unit, lang) + '</div>';
+
+    viewerRoot.innerHTML = html;
+    bindCurrSpeakBtns(viewerRoot);
+
+    var backBtn = document.getElementById("lff2-back-btn");
+    if (backBtn) backBtn.addEventListener("click", function () {
+      viewerRoot.style.display = "none";
+      pickerRoot.style.display = "";
+      renderLff2Picker();
+    });
+    var prevBtn = document.getElementById("lff2-prev-btn");
+    if (prevBtn && prevUnit) prevBtn.addEventListener("click", function () { renderLff2Unit(prevUnit.id); window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" }); });
+    var nextBtn = document.getElementById("lff2-next-btn");
+    if (nextBtn && nextUnit) nextBtn.addEventListener("click", function () { renderLff2Unit(nextUnit.id); window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" }); });
+
+    var searchInput = document.getElementById("lff2-search");
+    if (searchInput) {
+      searchInput.addEventListener("input", function () {
+        var listRoot = document.getElementById("lff2-row-list");
+        if (!listRoot) return;
+        listRoot.innerHTML = lff2BuildRowsHtml(unit, lang, searchInput.value.trim());
+        bindCurrSpeakBtns(listRoot);
+      });
+    }
+  }
+
+  function populateLff2LangSelect() {
+    var sel = document.getElementById("lff2-lang-select");
+    if (!sel || sel.dataset.populated || typeof ENJOY_LIFE_FOREVER === "undefined") return;
+    sel.dataset.populated = "true";
+    var names = ENJOY_LIFE_FOREVER.languages || {};
+    sel.innerHTML = LFF2_LANGS.map(function (code) {
+      return '<option value="' + code + '"' + (code === lff2State.lang ? " selected" : "") + '>' + escapeHtml(names[code] || code) + '</option>';
+    }).join("");
+    sel.addEventListener("change", function () {
+      if (LFF2_LANGS.indexOf(sel.value) < 0) return;
+      lff2State.lang = sel.value;
+      saveLff2State();
+      renderLff2Picker();
+      if (lff2State.unitId) renderLff2Unit(lff2State.unitId);
+    });
+  }
+
+  function initLff2() {
+    if (typeof ENJOY_LIFE_FOREVER === "undefined" || document.body.dataset.lff2Init) return;
+    document.body.dataset.lff2Init = "true";
+    populateLff2LangSelect();
+    renderLff2Picker();
+    if (lff2State.unitId) {
+      renderLff2Unit(lff2State.unitId);
+    } else {
+      document.getElementById("lff2-picker-root").style.display = "";
+      document.getElementById("lff2-viewer-root").style.display = "none";
+    }
+  }
+  // Chrome text (목록/이전/다음/검색 placeholder/발음 듣기 aria-labels, via TU()) follows the
+  // site-wide language switch even though the row content's translation language does not.
+  onLangChange(function () {
+    if (!document.body.dataset.lff2Init) return;
+    if (lff2State.unitId) renderLff2Unit(lff2State.unitId);
+  });
+
   // "행복한 삶을 영원히" (Enjoy Life Forever!) -- LFF_CONVERSATIONS holds the body-text sentences of
-  // lessons 1-60 (plus the 4 part-review docs and the closing "Am I Ready?" doc), verbatim in all
   // 5 languages, sourced from wol.jw.org (video call-outs and the trailing "더 찾아보기"/EXPLORE
   // section already excluded during data extraction). No "who" speaker field (unlike 이웃 사람과의
   // 대화) since this is study-course body text, not a two-party dialogue.

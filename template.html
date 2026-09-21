@@ -606,6 +606,62 @@
   .lpd-title-vi { color: var(--ink); font-family: var(--font-vn); font-weight: 800; font-size: 1.05rem; }
   .lpd-title-translation { color: var(--ink-faint); }
   .lpd-title.is-appendix-title .lpd-title-translation { display: block; margin-top: 2px; }
+
+  /* ---------- [대화] > 행복한 삶을 영원히 (10-language Excel-sourced course, 72 units) ---------- */
+  .lff2-lang-row { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .lff2-lang-label { font-size: 0.8rem; font-weight: 700; color: var(--ink-faint); flex: none; }
+  .lff2-lang-select {
+    flex: 1; min-width: 120px; min-height: 40px; padding: 6px 10px; border-radius: var(--radius-s);
+    border: 1.5px solid var(--border); background: var(--surface); color: var(--ink); font-size: 0.86rem;
+    font-family: var(--font-kr);
+  }
+  .lff2-part { margin-bottom: 10px; }
+  .lff2-part-head {
+    width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    border: 1px solid var(--border); border-radius: var(--radius-m); background: var(--accent-soft);
+    color: var(--accent); cursor: pointer; padding: 11px 14px; font: inherit; font-weight: 800;
+    text-align: left; min-height: 48px;
+  }
+  .lff2-part-head .chev { color: var(--accent); transition: transform .15s; flex: none; }
+  .lff2-part[data-open="true"] .lff2-part-head .chev { transform: rotate(180deg); }
+  .lff2-part-body { display: none; padding-top: 10px; }
+  .lff2-part[data-open="true"] .lff2-part-body { display: block; }
+  .lff2-unit-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); gap: 7px; margin-bottom: 8px; }
+  .lff2-unit-btn {
+    min-height: 44px; border: 1.5px solid var(--border); border-radius: var(--radius-s);
+    background: var(--surface); color: var(--ink); font-weight: 700; font-size: 0.88rem; cursor: pointer;
+  }
+  .lff2-unit-btn:hover { background: var(--accent-soft); border-color: var(--accent); }
+  .lff2-unit-btn[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .lff2-special-btn {
+    grid-column: 1 / -1; min-height: 44px; border: 1.5px solid var(--border); border-radius: var(--radius-s);
+    background: var(--surface); color: var(--ink); font-weight: 700; font-size: 0.84rem; cursor: pointer;
+    text-align: left; padding: 8px 12px; overflow-wrap: anywhere;
+  }
+  .lff2-special-btn:hover { background: var(--accent-soft); border-color: var(--accent); }
+  .lff2-special-btn[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .lff2-viewer-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+  .lff2-back-btn {
+    flex: none; border: 1.5px solid var(--accent); background: var(--surface); color: var(--accent);
+    font-size: 0.78rem; font-weight: 700; padding: 7px 12px; border-radius: 999px 0 999px 0; cursor: pointer;
+  }
+  .lff2-back-btn:hover { background: var(--accent); color: var(--accent-ink); }
+  .lff2-unit-title { flex: 1; min-width: 0; font-size: 0.82rem; font-weight: 800; color: var(--ink); overflow-wrap: anywhere; }
+  .lff2-nav-row { display: flex; gap: 8px; margin: 12px 0; }
+  .lff2-nav-btn {
+    flex: 1; min-height: 44px; border: 1.5px solid var(--border); border-radius: var(--radius-s);
+    background: var(--surface); color: var(--ink); font-weight: 700; font-size: 0.82rem; cursor: pointer;
+    overflow-wrap: anywhere; padding: 6px 8px;
+  }
+  .lff2-nav-btn:hover:not(:disabled) { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .lff2-nav-btn:disabled { opacity: 0.4; cursor: default; }
+  .lff2-row-list { display: flex; flex-direction: column; gap: 10px; }
+  .lff2-row { display: flex; align-items: flex-start; gap: 8px; padding: 10px 12px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-s); }
+  .lff2-row-num { flex: none; width: 26px; font-size: 0.68rem; color: var(--ink-faint); font-weight: 700; margin-top: 3px; }
+  .lff2-row-body { flex: 1; min-width: 0; }
+  .lff2-row-vi { font-family: var(--font-vn); font-weight: 600; font-size: 0.94rem; color: var(--ink); display: flex; align-items: flex-start; gap: 6px; line-height: 1.55; overflow-wrap: anywhere; }
+  .lff2-row-vi .speak-btn { margin-top: 2px; }
+  .lff2-row-tr { font-size: 0.84rem; color: var(--ink-faint); margin-top: 4px; line-height: 1.55; overflow-wrap: anywhere; }
   .subtab-row {
     display: flex; flex-wrap: wrap; gap: 2px;
     margin: 0 -18px 14px; padding: 7px 10px;
@@ -2565,6 +2621,7 @@
         <button class="subtab-btn" data-sentence="lff" aria-selected="true" data-i18n="행복한 삶을 영원히">행복한 삶을 영원히</button>
         <button class="subtab-btn" data-sentence="lpd" aria-selected="false" data-i18n="사람들을 사랑하고 제자로">사람들을 사랑하고 제자로</button>
         <button class="subtab-btn" data-sentence="wt" aria-selected="false" data-i18n="파수대">파수대</button>
+        <button class="subtab-btn" data-sentence="lff2" aria-selected="false" data-i18n="행복한 삶을 영원히(전체)">행복한 삶을 영원히(전체)</button>
       </div>
 
       <div id="sentence-lff-pane">
@@ -2588,6 +2645,18 @@
           <input type="text" id="wt-search" data-i18n-placeholder="베트남어 문장이나 뜻으로 검색" placeholder="베트남어 문장이나 뜻으로 검색">
         </div>
         <div id="curr-wt-root"></div>
+      </div>
+
+      <div id="sentence-lff2-pane" style="display:none">
+        <div class="chain-note" data-i18n="&quot;행복한 삶을 영원히 누리십시오!&quot; 교재의 엑셀 원본 자료를 그대로 옮긴 콘텐츠예요. 72개 항목(1~60과·부별 복습·미디어 자료·참조 자료 등)을 10개 언어로 대조할 수 있어요. 옆의 [행복한 삶을 영원히] 탭(5개 언어, 문장 단위로 나눈 버전)과는 다른, 더 완전한 원문 자료예요.">"행복한 삶을 영원히 누리십시오!" 교재의 엑셀 원본 자료를 그대로 옮긴 콘텐츠예요. 72개 항목(1~60과·부별 복습·미디어 자료·참조 자료 등)을 10개 언어로 대조할 수 있어요. 옆의 [행복한 삶을 영원히] 탭(5개 언어, 문장 단위로 나눈 버전)과는 다른, 더 완전한 원문 자료예요.</div>
+
+        <div class="lff2-lang-row">
+          <label class="lff2-lang-label" for="lff2-lang-select" data-i18n="번역 언어">번역 언어</label>
+          <select id="lff2-lang-select" class="lff2-lang-select" aria-label="번역 언어" data-i18n-aria-label="번역 언어"></select>
+        </div>
+
+        <div id="lff2-picker-root"></div>
+        <div id="lff2-viewer-root" style="display:none"></div>
       </div>
     </section>
 
