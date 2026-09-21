@@ -43,6 +43,49 @@ freq_vocab = json.load(open("freq_vocab.json", encoding="utf-8"))
 def js_json(obj):
     return json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
+
+def load_songs():
+    raw_songs = json.load(open("songs_data.json", encoding="utf-8-sig"))["songs"]
+    current_js = open("songs_data.js", encoding="utf-8").read()
+    current_songs = json.loads(current_js[current_js.index("["):current_js.rfind("]") + 1])
+    current_by_number = {song["number"]: song for song in current_songs}
+    raw_ja_song_numbers = {13, 17, 18, 24, 35, 38, 53, 54, 56, 60, 69, 73, 81, 84, 158}
+    language_map = {
+        "vi": "vi", "ko": "ko", "zh_tw": "zh", "zh_cn": "zh_cn", "en": "en",
+        "de": "de", "fr": "fr", "pl": "pl", "cs": "cs", "hu": "hu", "id": "id",
+    }
+    songs = []
+    for raw in raw_songs:
+        number = int(raw["song"])
+        lines = raw["lines"]
+        current = current_by_number[number]
+        song = {
+            "number": number,
+            "sourceSheet": str(number),
+            "labels": {target: lines[source][0] for source, target in language_map.items()},
+            "title": {target: lines[source][1] for source, target in language_map.items()},
+            "scripture": {target: lines[source][2] for source, target in language_map.items()},
+            "lines": [
+                {target: lines[source][index] for source, target in language_map.items()}
+                for index in range(3, len(lines["vi"]) - 1)
+            ],
+            "reference": {target: lines[source][-1] for source, target in language_map.items()},
+        }
+        japanese_lines = lines["ja"][3:-1] if number in raw_ja_song_numbers else [line["ja"] for line in current["lines"]]
+        song["labels"]["ja"] = lines["ja"][0] if number in raw_ja_song_numbers else current["labels"]["ja"]
+        song["title"]["ja"] = lines["ja"][1] if number in raw_ja_song_numbers else current["title"]["ja"]
+        song["scripture"]["ja"] = lines["ja"][2] if number in raw_ja_song_numbers else current["scripture"]["ja"]
+        song["lines"] = [
+            {**line, "ja": japanese_lines[index]}
+            for index, line in enumerate(song["lines"])
+        ]
+        song["reference"]["ja"] = lines["ja"][-1] if number in raw_ja_song_numbers else current["reference"]["ja"]
+        songs.append(song)
+    return songs
+
+
+SONGS_DATA = load_songs()
+
 DATA_JS = f"""
 const CASES = {js_json(app_data)};
 const VOCAB_CHAIN = {js_json(vocab_chain)};
@@ -133,9 +176,8 @@ const VOCAB_PLAN = {js_json(VOCAB_PLAN)};
 const WATCHTOWER_VOCAB = {js_json(WATCHTOWER_VOCAB)};
 """
 
-songs_data_js = open("songs_data.js", encoding="utf-8").read()
 song_meanings_js = open("song_meanings.js", encoding="utf-8").read()
-DATA_JS += "\n" + songs_data_js + "\n" + song_meanings_js + "\n"
+DATA_JS += "\nconst SONGS_DATA = " + js_json(SONGS_DATA) + ";\n" + song_meanings_js + "\n"
 
 open("data_block.js", "w", encoding="utf-8").write(DATA_JS)
 print("data block bytes:", len(DATA_JS))
