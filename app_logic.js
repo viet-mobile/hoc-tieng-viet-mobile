@@ -5383,6 +5383,7 @@
       reftable: document.getElementById("wizard-reftable-pane"),
       talks: document.getElementById("wizard-talks-pane"),
       neighbor: document.getElementById("wizard-neighbor-pane"),
+      daily: document.getElementById("wizard-daily-pane"),
     };
     var btns = document.querySelectorAll(".subtab-btn[data-wizard]");
     if (!btns.length || !panes.main) return;
@@ -5393,10 +5394,12 @@
         Object.keys(panes).forEach(function (k) { if (panes[k]) panes[k].style.display = k === btn.dataset.wizard ? "" : "none"; });
         if (btn.dataset.wizard === "talks") renderCurrTalks();
         if (btn.dataset.wizard === "neighbor") renderCurrNeighbor();
+        if (btn.dataset.wizard === "daily") renderCurrDaily();
       });
     });
     renderCurrTalks();
     renderCurrNeighbor();
+    renderCurrDaily();
   })();
 
   /* ---------------- 문장 subtab (행복한 삶을 영원히 / 사람들을 사랑하고 제자로 / 파수대 / 행복한 삶을 영원히(전체)) ---------------- */
@@ -7855,6 +7858,71 @@
     bindCurrGroupCards(root);
     bindCurrSpeakBtns(root);
   }
+
+  // "대화 > 일상 회화" -- DAILY_CONVERSATIONS holds 21 real dialogues from "베트남어 일상 회화"
+  // (lessons 1-13), vi/ko verbatim from the textbook (both languages are printed side by side in
+  // the source) with zh/en/ja added as natural conversational translations. Only 5 languages (no
+  // de/fr/pl yet) -- T()'s existing fallback chain shows Korean in that case, same as any other
+  // not-yet-translated content in this app.
+  function dailyWhoLabel(who) {
+    return T(who);
+  }
+  function renderCurrDaily(q) {
+    var root = document.getElementById("curr-daily-root");
+    if (!root) return;
+    var openSyls = {};
+    var existing = root.querySelectorAll('.group-card[data-open="true"]');
+    if (existing.length) {
+      existing.forEach(function (c) { openSyls[c.dataset.syl] = true; });
+    } else if (!root.dataset.rendered && DAILY_CONVERSATIONS.length) {
+      openSyls["dc0"] = true;
+    }
+    root.dataset.rendered = "true";
+
+    var ql = q ? q.toLowerCase() : "";
+    var html = "";
+    DAILY_CONVERSATIONS.forEach(function (conv, ci) {
+      var turns = conv.turns.map(function (t) { return { who: t.who, vi: t.vi, kr: T(t) }; });
+      var vocab = (conv.vocab || []).map(function (v) { return { vi: v.vi, kr: T(v) }; });
+      if (ql) {
+        var hit = conv.title.vi.toLowerCase().indexOf(ql) >= 0 || T(conv.title).toLowerCase().indexOf(ql) >= 0 ||
+          turns.some(function (t) { return t.vi.toLowerCase().indexOf(ql) >= 0 || t.kr.toLowerCase().indexOf(ql) >= 0; }) ||
+          vocab.some(function (v) { return v.vi.toLowerCase().indexOf(ql) >= 0 || v.kr.toLowerCase().indexOf(ql) >= 0; });
+        if (!hit) return;
+      }
+      var readPairs = [[conv.title.vi, T(conv.title)]].concat(turns.map(function (t) { return [t.vi, t.kr]; }));
+      html += '<div class="group-card" data-open="' + (openSyls["dc" + ci] ? "true" : "false") + '" data-syl="dc' + ci + '">' +
+        '<div class="group-head-row"><button class="group-head"><span><span class="syl">' + (ci + 1) + '.</span> ' +
+        '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(conv.title.vi) + '</span> <span class="lff-title-translation">· ' + escapeHtml(T(conv.title)) + '</span></span></span>' +
+        currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
+        '<div class="group-body"><div class="talk-lines">';
+      turns.forEach(function (t) {
+        html += '<div class="talk-line"><span class="talk-who">' + escapeHtml(dailyWhoLabel(t.who)) + '</span>' +
+          '<div class="talk-body"><div class="talk-vi">' + escapeHtml(t.vi) +
+          '<button class="speak-btn" data-speak="' + escapeAttr(t.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
+          '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(t.kr) + '</span>' +
+          '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(t.kr) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+          '</div></div></div>';
+      });
+      if (vocab.length) {
+        html += '<div class="word-row" style="border-top:none;padding-top:10px"><b>' + TU("단어") + '</b></div>';
+        vocab.forEach(function (v) {
+          html += '<div class="word-row"><span class="w">' + escapeHtml(v.vi) +
+            '<button class="speak-btn" data-speak="' + escapeAttr(v.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></span>' +
+            '<span class="m">' + escapeHtml(v.kr) + '</span></div>';
+        });
+      }
+      html += '</div></div>';
+    });
+    if (q && !html) html = '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
+    root.innerHTML = html;
+    bindCurrGroupCards(root);
+    bindCurrSpeakBtns(root);
+  }
+  (function () {
+    var input = document.getElementById("daily-search");
+    if (input) input.addEventListener("input", function () { renderCurrDaily(input.value.trim()); });
+  })();
 
   // "문장 > 행복한 삶을 영원히(전체)" (Enjoy Life Forever! -- full Excel source, 72 units x 10
   // languages). Lives alongside, not inside, the "문장" tab's own "행복한 삶을 영원히" subtab

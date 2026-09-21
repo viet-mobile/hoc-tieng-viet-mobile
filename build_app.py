@@ -17,6 +17,7 @@ from curriculum_data import WELCOME_TEXT, COURSE_PHASES, WEEK16_TOC
 from culture_data import CULTURE_ARTICLES
 from offer_talks_data import OFFER_TALKS, KINGDOM_SONGS, PRAYER_TEMPLATE
 from neighbor_conversations_data import NEIGHBOR_CONVERSATIONS
+from daily_conversations_data import DAILY_CONVERSATIONS
 from lff_data import LFF_CONVERSATIONS
 from lpd_data import LPD_LESSONS
 from bible_names_data import BIBLE_NAMES
@@ -103,6 +104,7 @@ const OFFER_TALKS = {js_json(OFFER_TALKS)};
 const KINGDOM_SONGS = {js_json(KINGDOM_SONGS)};
 const PRAYER_TEMPLATE = {js_json(PRAYER_TEMPLATE)};
 const NEIGHBOR_CONVERSATIONS = {js_json(NEIGHBOR_CONVERSATIONS)};
+const DAILY_CONVERSATIONS = {js_json(DAILY_CONVERSATIONS)};
 const LFF_CONVERSATIONS = {js_json(LFF_CONVERSATIONS)};
 const LPD_LESSONS = {js_json(LPD_LESSONS)};
 const BIBLE_NAMES = {js_json(BIBLE_NAMES)};
