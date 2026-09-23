@@ -1,7 +1,15 @@
 # Generated deployment artifacts
 dist/
 app.html
+app.general.html
+app.jeonju.html
 data_block.js
+data_block.general.js
+data_block.jeonju.js
+
+# Session temp/scratch directories (one-off scripts and zip-verification extractions)
+.temp/
+scratch/
 
 # Python and editor-local files
 __pycache__/

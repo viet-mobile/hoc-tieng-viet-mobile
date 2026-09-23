@@ -232,11 +232,11 @@ DAILY_CONVERSATIONS = [
     "turns": [
       {
         "who": {
-          "ko": "훙",
-          "vi": "Hùng",
-          "zh": "雄",
-          "en": "Hung",
-          "ja": "フン"
+          "ko": "Minh",
+          "vi": "Minh",
+          "zh": "Minh",
+          "en": "Minh",
+          "ja": "Minh"
         },
         "vi": "Chào anh.",
         "ko": "안녕하세요, 형.",
@@ -246,11 +246,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Chào em. Em khoẻ không?",
         "ko": "안녕, 동생. 너(동생) 건강하니?",
@@ -260,11 +260,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "훙",
-          "vi": "Hùng",
-          "zh": "雄",
-          "en": "Hung",
-          "ja": "フン"
+          "ko": "Minh",
+          "vi": "Minh",
+          "zh": "Minh",
+          "en": "Minh",
+          "ja": "Minh"
         },
         "vi": "Vâng. Em khoẻ. Còn anh khoẻ không?",
         "ko": "예, 저(동생)는 건강해요. 그런데 형은 건강하세요?",
@@ -274,11 +274,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Ừ. Anh cũng khoẻ.",
         "ko": "응, 나(형)도 건강해.",
@@ -382,11 +382,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Chào chị. Xin lỗi, tên của chị là gì?",
         "ko": "안녕하세요. 실례지만, 누나의 이름은 뭐예요?",
@@ -410,17 +410,17 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
-        "vi": "Tôi tên là Se-ho. Tôi cũng rất vui được gặp chị.",
-        "ko": "나는 이름이 세호예요. 나도 누나를 만나게 되어 매우 반가워요.",
-        "zh": "我叫世鎬。我也很高興見到你。",
-        "en": "My name is Se-ho. I am also very glad to meet you.",
-        "ja": "私の名前はセホです。私もお会いできてとても嬉しいです。"
+        "vi": "Tôi tên là Tuấn. Tôi cũng rất vui được gặp chị.",
+        "ko": "나는 이름이 Tuấn예요. 나도 누나를 만나게 되어 매우 반가워요.",
+        "zh": "我叫Tuấn。我也很高興見到你。",
+        "en": "My name is Tuấn. I am also very glad to meet you.",
+        "ja": "私の名前はTuấnです。私もお会いできてとても嬉しいです。"
       }
     ],
     "vocab": [
@@ -504,31 +504,31 @@ DAILY_CONVERSATIONS = [
     "turns": [
       {
         "who": {
-          "ko": "훙",
-          "vi": "Hùng",
-          "zh": "雄",
-          "en": "Hung",
-          "ja": "フン"
+          "ko": "Minh",
+          "vi": "Minh",
+          "zh": "Minh",
+          "en": "Minh",
+          "ja": "Minh"
         },
-        "vi": "Anh Se-ho ơi, đây là em gái của em.",
-        "ko": "세호형, 이쪽은 저의 여동생이에요.",
-        "zh": "世鎬哥，這是我妹妹。",
-        "en": "Brother Se-ho, this is my younger sister.",
-        "ja": "セホ兄さん、こちらは私の妹です。"
+        "vi": "Anh Tuấn ơi, đây là em gái của em.",
+        "ko": "Tuấn형, 이쪽은 저의 여동생이에요.",
+        "zh": "Tuấn哥，這是我妹妹。",
+        "en": "Brother Tuấn, this is my younger sister.",
+        "ja": "Tuấn兄さん、こちらは私の妹です。"
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
-        "vi": "Chào em. Anh là Se-ho.",
-        "ko": "안녕. 오빠는 세호야.",
-        "zh": "你好。我是世鎬哥。",
-        "en": "Hello. I'm Se-ho.",
-        "ja": "こんにちは。僕はセホだよ。"
+        "vi": "Chào em. Anh là Tuấn.",
+        "ko": "안녕. 오빠는 Tuấn이야.",
+        "zh": "你好。我是Tuấn哥。",
+        "en": "Hello. I'm Tuấn.",
+        "ja": "こんにちは。僕はTuấnだよ。"
       },
       {
         "who": {
@@ -546,17 +546,17 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
-        "vi": "Tên của anh là Se-ho.",
-        "ko": "오빠의 이름은 세호야.",
-        "zh": "哥的名字叫世鎬。",
-        "en": "My name is Se-ho.",
-        "ja": "僕の名前はセホだよ。"
+        "vi": "Tên của anh là Tuấn.",
+        "ko": "오빠의 이름은 Tuấn이야.",
+        "zh": "哥的名字叫Tuấn。",
+        "en": "My name is Tuấn.",
+        "ja": "僕の名前はTuấnだよ。"
       },
       {
         "who": {
@@ -566,11 +566,11 @@ DAILY_CONVERSATIONS = [
           "en": "Thuy",
           "ja": "トゥイ"
         },
-        "vi": "À, cảm ơn anh Se-ho. Tên em là Thuý ạ.",
-        "ko": "아, 감사합니다, 세호 오빠. 제 이름은 투이예요.",
-        "zh": "啊，謝謝世鎬哥。我的名字叫翠。",
-        "en": "Ah, thank you, brother Se-ho. My name is Thuy.",
-        "ja": "あ、ありがとうございます、セホ兄さん。私の名前はトゥイです。"
+        "vi": "À, cảm ơn anh Tuấn. Tên em là Thuý ạ.",
+        "ko": "아, 감사합니다, Tuấn 오빠. 제 이름은 투이예요.",
+        "zh": "啊，謝謝Tuấn哥。我的名字叫翠。",
+        "en": "Ah, thank you, brother Tuấn. My name is Thuy.",
+        "ja": "あ、ありがとうございます、Tuấn兄さん。私の名前はトゥイです。"
       }
     ],
     "vocab": [
@@ -633,11 +633,11 @@ DAILY_CONVERSATIONS = [
     "turns": [
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Em là người nước nào?",
         "ko": "너는 어느 나라 사람이니?",
@@ -661,11 +661,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Không phải. Anh là người Hàn Quốc.",
         "ko": "아니야. 나는 한국 사람이야.",
@@ -689,11 +689,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Cảm ơn em.",
         "ko": "고마워.",
@@ -797,11 +797,11 @@ DAILY_CONVERSATIONS = [
     "turns": [
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Em sống ở đâu?",
         "ko": "너는 어디에서 사니?",
@@ -825,11 +825,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Nhà anh ở Seoul. Nhưng vì anh đang làm việc ở công ti Hàn Quốc tại Hà Nội nên thuê nhà ở đây.",
         "ko": "오빠 집은 서울에 있어. 하지만 하노이에 있는 한국 회사에서 일하고 있어서 여기에서 집을 얻었어.",
@@ -853,11 +853,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Anh sống với vợ, một con gái và một con trai.",
         "ko": "오빠는 아내, 딸 한 명 그리고 아들 한 명과 살아.",
@@ -961,11 +961,11 @@ DAILY_CONVERSATIONS = [
     "turns": [
       {
         "who": {
-          "ko": "훙",
-          "vi": "Hùng",
-          "zh": "雄",
-          "en": "Hung",
-          "ja": "フン"
+          "ko": "Minh",
+          "vi": "Minh",
+          "zh": "Minh",
+          "en": "Minh",
+          "ja": "Minh"
         },
         "vi": "Đây là em gái của em đấy.",
         "ko": "이쪽은 저의 여동생이에요.",
@@ -989,11 +989,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "훙",
-          "vi": "Hùng",
-          "zh": "雄",
-          "en": "Hung",
-          "ja": "フン"
+          "ko": "Minh",
+          "vi": "Minh",
+          "zh": "Minh",
+          "en": "Minh",
+          "ja": "Minh"
         },
         "vi": "Vâng. Em ấy vừa đẹp vừa thông minh.",
         "ko": "네. 그 애는 예쁘면서 총명해요.",
@@ -1017,11 +1017,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "훙",
-          "vi": "Hùng",
-          "zh": "雄",
-          "en": "Hung",
-          "ja": "フン"
+          "ko": "Minh",
+          "vi": "Minh",
+          "zh": "Minh",
+          "en": "Minh",
+          "ja": "Minh"
         },
         "vi": "Em ấy hai mươi tuổi.",
         "ko": "그 애는 스무 살이에요.",
@@ -1397,11 +1397,11 @@ DAILY_CONVERSATIONS = [
     "turns": [
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Chị ơi, cái mũ màu xanh này giá bao nhiêu?",
         "ko": "여기요, 이 파란색 모자 얼마예요?",
@@ -1425,11 +1425,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Cái mũ màu đen này thì bao nhiêu tiền?",
         "ko": "이 검은색 모자는 얼마예요?",
@@ -1453,11 +1453,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Tôi sẽ mua 2 cái mũ này. Chị giảm giá một chút đi.",
         "ko": "나는 이 2개의 모자를 살 거예요. 조금 할인해 주세요.",
@@ -1655,11 +1655,11 @@ DAILY_CONVERSATIONS = [
     "turns": [
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Chị ơi, cho tôi xem thực đơn.",
         "ko": "여기요, 메뉴 좀 보여 주세요.",
@@ -1683,11 +1683,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Cảm ơn chị.",
         "ko": "감사합니다.",
@@ -1711,11 +1711,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Cho tôi một bát phở và một đĩa nem rán.",
         "ko": "퍼 한 그릇과 냄잔 한 접시를 주세요.",
@@ -1739,11 +1739,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Cho tôi phở bò.",
         "ko": "소고기 퍼를 주세요.",
@@ -1767,11 +1767,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Cho tôi một cốc trà đá.",
         "ko": "짜다(아이스 녹차) 한 잔 주세요.",
@@ -1854,11 +1854,11 @@ DAILY_CONVERSATIONS = [
     "turns": [
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Khi đi làm, chị thường đi bằng gì?",
         "ko": "일하러 갈 때 누나는 보통 뭘 타고 가세요?",
@@ -1868,11 +1868,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "호아",
-          "vi": "Hoa",
-          "zh": "花",
-          "en": "Hoa",
-          "ja": "ホア"
+          "ko": "Lan",
+          "vi": "Lan",
+          "zh": "Lan",
+          "en": "Lan",
+          "ja": "Lan"
         },
         "vi": "Chị thường đi bằng xe máy.",
         "ko": "나는 보통 오토바이를 타고 가.",
@@ -1882,11 +1882,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Chị đi xe máy không sợ à?",
         "ko": "누나 오토바이를 타는 게 무섭지 않아요?",
@@ -1896,11 +1896,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "호아",
-          "vi": "Hoa",
-          "zh": "花",
-          "en": "Hoa",
-          "ja": "ホア"
+          "ko": "Lan",
+          "vi": "Lan",
+          "zh": "Lan",
+          "en": "Lan",
+          "ja": "Lan"
         },
         "vi": "Không sợ lắm. Ở Việt Nam xe máy là phương tiện đi lại phổ biến nhất.",
         "ko": "그다지 무섭지 않아. 베트남에서 오토바이는 가장 보편적인 교통수단이야.",
@@ -1976,11 +1976,11 @@ DAILY_CONVERSATIONS = [
     "turns": [
       {
         "who": {
-          "ko": "호아",
-          "vi": "Hoa",
-          "zh": "花",
-          "en": "Hoa",
-          "ja": "ホア"
+          "ko": "Lan",
+          "vi": "Lan",
+          "zh": "Lan",
+          "en": "Lan",
+          "ja": "Lan"
         },
         "vi": "Em đã đi xe máy bao giờ chưa?",
         "ko": "너는 오토바이를 타 본 적 있니?",
@@ -1990,11 +1990,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Chưa ạ. Nhưng em muốn học lái. Học lái xe máy có khó không, chị?",
         "ko": "아직이요. 그런데 저는 운전하는 것을 배우고 싶어요. 오토바이 운전 배우기가 어려운가요, 누나?",
@@ -2004,11 +2004,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "호아",
-          "vi": "Hoa",
-          "zh": "花",
-          "en": "Hoa",
-          "ja": "ホア"
+          "ko": "Lan",
+          "vi": "Lan",
+          "zh": "Lan",
+          "en": "Lan",
+          "ja": "Lan"
         },
         "vi": "Không khó lắm. Em đừng lo. Học một ngày thì sẽ đi được ngay.",
         "ko": "그다지 어렵지 않아. 걱정하지 마. 하루만 배우면 바로 탈 수 있어.",
@@ -2018,11 +2018,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Vậy chị dạy cho em nhé.",
         "ko": "그러면 누나가 저 좀 가르쳐 주세요.",
@@ -2032,11 +2032,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "호아",
-          "vi": "Hoa",
-          "zh": "花",
-          "en": "Hoa",
-          "ja": "ホア"
+          "ko": "Lan",
+          "vi": "Lan",
+          "zh": "Lan",
+          "en": "Lan",
+          "ja": "Lan"
         },
         "vi": "Ừ, cũng được.",
         "ko": "그래, 그래도 되지.",
@@ -2112,11 +2112,11 @@ DAILY_CONVERSATIONS = [
     "turns": [
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Sở thích của em là gì?",
         "ko": "너의 취미는 무엇이야?",
@@ -2126,11 +2126,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "훙",
-          "vi": "Hùng",
-          "zh": "雄",
-          "en": "Hung",
-          "ja": "フン"
+          "ko": "Minh",
+          "vi": "Minh",
+          "zh": "Minh",
+          "en": "Minh",
+          "ja": "Minh"
         },
         "vi": "Em thích chơi bóng đá ạ. Vào ngày nghỉ, em thường đá bóng cùng với các bạn em.",
         "ko": "저는 축구하는 것을 좋아해요. 휴일에 저는 보통 친구들과 함께 축구를 해요.",
@@ -2140,11 +2140,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Vậy em có biết cầu thủ bóng đá Hàn Quốc Son Heung-min không?",
         "ko": "그러면 너는 한국 축구 선수 손흥민을 아니?",
@@ -2154,11 +2154,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "훙",
-          "vi": "Hùng",
-          "zh": "雄",
-          "en": "Hung",
-          "ja": "フン"
+          "ko": "Minh",
+          "vi": "Minh",
+          "zh": "Minh",
+          "en": "Minh",
+          "ja": "Minh"
         },
         "vi": "Biết chứ ạ! Em là fan hâm mộ của Son Heung-min đấy. Anh ấy chơi giỏi thật.",
         "ko": "알고 말고요! 저는 손흥민 선수의 팬이에요. 그는 정말 플레이를 잘 해요.",
@@ -2227,11 +2227,11 @@ DAILY_CONVERSATIONS = [
     "turns": [
       {
         "who": {
-          "ko": "훙",
-          "vi": "Hùng",
-          "zh": "雄",
-          "en": "Hung",
-          "ja": "フン"
+          "ko": "Minh",
+          "vi": "Minh",
+          "zh": "Minh",
+          "en": "Minh",
+          "ja": "Minh"
         },
         "vi": "Khi rỗi, anh thường làm gì?",
         "ko": "한가할 때, 형은 보통 뭘 해요?",
@@ -2241,11 +2241,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Anh thường đi xem phim hoặc đi mua sắm.",
         "ko": "나는 보통 영화를 보러 가거나 쇼핑을 가.",
@@ -2255,11 +2255,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "훙",
-          "vi": "Hùng",
-          "zh": "雄",
-          "en": "Hung",
-          "ja": "フン"
+          "ko": "Minh",
+          "vi": "Minh",
+          "zh": "Minh",
+          "en": "Minh",
+          "ja": "Minh"
         },
         "vi": "Vậy anh thích loại phim nào nhất?",
         "ko": "그러면 형은 어떤 종류의 영화를 가장 좋아해요?",
@@ -2269,11 +2269,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Anh thích nhất phim hành động. Còn em thì sao?",
         "ko": "나는 액션 영화를 가장 좋아해. 너는 어떤데?",
@@ -2283,11 +2283,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "훙",
-          "vi": "Hùng",
-          "zh": "雄",
-          "en": "Hung",
-          "ja": "フン"
+          "ko": "Minh",
+          "vi": "Minh",
+          "zh": "Minh",
+          "en": "Minh",
+          "ja": "Minh"
         },
         "vi": "Em thì thích phim hài hơn ạ.",
         "ko": "저는 코믹 영화를 더 좋아해요.",
@@ -2384,11 +2384,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Cô ạ, tuần sau có bài kiểm tra, đúng không ạ? Có khó không ạ?",
         "ko": "선생님, 다음 주에 시험이 있어요, 그렇죠? 어렵나요?",
@@ -2621,11 +2621,11 @@ DAILY_CONVERSATIONS = [
     "turns": [
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Em đi đâu về à? Hôm nay thời tiết thế nào?",
         "ko": "어디 다녀와? 오늘 날씨가 어때?",
@@ -2649,11 +2649,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Anh không thích trời nóng. Nên anh thích mùa thu nhất.",
         "ko": "나는 더운 날씨가 싫어. 그래서 가을을 가장 좋아해.",
@@ -2677,11 +2677,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Vì vào mùa thu trời trong, cao và mát.",
         "ko": "왜냐하면 가을에는 하늘이 맑고 높으며 시원하기 때문이야.",
@@ -2907,11 +2907,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Anh bị đau họng từ tối qua và bây giờ bị sốt đến 39°C.",
         "ko": "어제 저녁부터 목이 아프고 지금은 열이 39도까지 올랐어.",
@@ -2935,11 +2935,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Chưa. Anh chỉ uống thuốc thôi. Nhưng lát nữa anh sẽ đi bệnh viện.",
         "ko": "아직. 그냥 약만 먹었어. 그런데 조금 뒤에 병원에 가보려고.",
@@ -2963,11 +2963,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Ừ. Cảm ơn em.",
         "ko": "응. 고마워.",
@@ -3057,11 +3057,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Thế nào? Có nặng không ạ?",
         "ko": "어떤가요? 심한가요?",
@@ -3085,11 +3085,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Dạo này, tôi có nhiều việc làm nên đã không nghỉ được ạ.",
         "ko": "요새 일이 많아서 쉴 수가 없었어요.",
@@ -3113,11 +3113,11 @@ DAILY_CONVERSATIONS = [
       },
       {
         "who": {
-          "ko": "세호",
-          "vi": "Se-ho",
-          "zh": "世鎬",
-          "en": "Se-ho",
-          "ja": "セホ"
+          "ko": "Tuấn",
+          "vi": "Tuấn",
+          "zh": "Tuấn",
+          "en": "Tuấn",
+          "ja": "Tuấn"
         },
         "vi": "Dạ, cảm ơn bác sĩ.",
         "ko": "네, 감사합니다, 선생님.",

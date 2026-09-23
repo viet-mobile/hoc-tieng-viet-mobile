@@ -70,10 +70,24 @@
     hu: "Vietnami nyelvtanfolyam"
   };
   try { document.title = TITLE_BY_LANG[currentLang] || document.title; } catch (e) { /* no-op */ }
+  // Languages added after most curated (non-Excel-full) datasets were authored -- those datasets
+  // only ever have ko/vi/zh/en/ja fields, so a plain field[currentLang] lookup always misses for
+  // these 5 and used to fall through to field.ko, silently showing Korean as if it were the
+  // selected language's translation. T() still falls back to ko for the *original* 4 (zh/en/ja
+  // missing a single field within an otherwise-covered object, e.g. some LFF_CONVERSATIONS
+  // lines), since that gap is a real, isolated content omission rather than "this language was
+  // never supported here."
+  var T_EXTENDED_LANGS_NO_FALLBACK = ["de", "fr", "pl", "cs", "hu"];
   function T(field) {
     if (field === null || field === undefined) return field;
     if (typeof field === "string") return field;
-    return field[currentLang] || field.ko || field.zh || field.en || field.ja || field.de || field.fr || field.pl || field.cs || field.hu || "";
+    // A key that's *present* (even as "" or null) means this field explicitly has no content in
+    // that language -- normalize to "" for the renderer rather than cascade to Korean or let a
+    // raw null through. Only a genuinely *missing* key (undefined) falls through below.
+    var v = field[currentLang];
+    if (v !== undefined) return v || "";
+    if (T_EXTENDED_LANGS_NO_FALLBACK.indexOf(currentLang) >= 0) return "";
+    return field.ko || field.zh || field.en || field.ja || field.de || field.fr || field.pl || field.cs || field.hu || "";
   }
   // T()'s graceful Korean fallback is exactly right for CONTENT DISPLAY (an untranslated field
   // should still show something rather than go blank), but it's wrong for review pools: a field
@@ -83,6 +97,14 @@
   // different language, so review-pool builders can skip that item in this language rather than
   // leak it. ko itself is always "available" (either field.ko or, for not-yet-multilingual
   // content, the plain string IS the Korean text).
+  // Shared by the "group-card" title header markup (LFF/daily/neighbor conversations): the
+  // "· <translation>" suffix after the Vietnamese title. Now that T() can return "" for a
+  // language a curated (non-Excel-full) dataset never covers, this keeps that gap from showing
+  // as a bare, dangling "· " with nothing after it.
+  function titleTrSpan(title) {
+    var tr = T(title);
+    return tr ? ' <span class="lff-title-translation">· ' + escapeHtml(tr) + '</span>' : '';
+  }
   function Tstrict(field) {
     if (field === null || field === undefined) return null;
     if (typeof field === "string") return currentLang === "ko" ? field : null;
@@ -299,6 +321,14 @@
     "pl": "Wymowa"
   },
   "성경": {"zh":"聖經","en":"Bible","ja":"聖書","de":"Bibel","fr":"Bible","pl":"Biblia"},
+  // GENERAL's own top-level tab label override reuses the "숫자" key just below (already
+  // translated for the data-bible="numbers" subtab button) -- see assemble_app.py's
+  // apply_general_label_overrides(). JW/JEONJU keep the "성경" entry above unchanged.
+  //
+  // Jeonju event-layer UI strings (see renderJeonjuEvent()) -- only ever shown on the jeonju
+  // profile, where JEONJU_INFO/JEONJU_WEEKS exist.
+  "전주 학습반": {"zh":"全州越南語班","en":"Jeonju Class","ja":"チョンジュ学習班","de":"Jeonju-Kurs","fr":"Cours de Jeonju","pl":"Kurs w Jeonju","cs":"Kurz Jeonju","hu":"Jeonju tanfolyam"},
+  "자료 미정": {"zh":"教材待定","en":"Material TBD","ja":"資料未定","de":"Material noch offen","fr":"Contenu à venir","pl":"Materiał nieustalony","cs":"Materiál zatím neurčen","hu":"Anyag még nincs meghatározva"},
   "대화": {"zh":"對話","en":"Dialogue","ja":"会話","de":"Dialog","fr":"Dialogue","pl":"Rozmowy"},
   "어휘": {
     "zh": "詞彙",
@@ -3730,19 +3760,30 @@
       cs: { song: "Písně", pron: "Výsl.", bible: "Bible", wizard: "Dialog", vocab: "Slova", sentence: "Věta", grammar: "Gram." },
       hu: { song: "Dalok", pron: "Kiejt.", bible: "Biblia", wizard: "Beszéd", vocab: "Szavak", sentence: "Mondat", grammar: "Nytan" }
     };
+    // shortNamesByLang/shortReviewByLang below are keyed by tab id ("bible", "curriculum", ...),
+    // not by the button's current data-i18n text, and assume each id always carries its
+    // original JW-profile label. GENERAL overrides two of those labels at assemble time
+    // (bible -> "숫자", curriculum -> "문화", see assemble_app.py's
+    // apply_general_label_overrides) -- ORIGINAL_I18N_KEY records what data-i18n was for each id
+    // *before* any such override, so the compact lookup can detect "this button's label was
+    // overridden" and fall back to the (already-correct, TU()-translated) full name instead of
+    // silently re-injecting the stale hardcoded short label.
+    var ORIGINAL_I18N_KEY = { bible: "성경", curriculum: "교과" };
     function syncPrimaryTabLabels() {
       var compact = (currentLang === "en" || currentLang === "de" || currentLang === "fr" || currentLang === "pl" || currentLang === "cs" || currentLang === "hu") && window.innerWidth < 1000;
       var shortMap = shortNamesByLang[currentLang] || {};
       document.querySelectorAll(".tabs .tab-btn").forEach(function (btn) {
         var fullName = TU(btn.getAttribute("data-i18n"));
-        btn.textContent = compact ? (shortMap[btn.dataset.tab] || fullName) : fullName;
+        var relabeled = ORIGINAL_I18N_KEY[btn.dataset.tab] && ORIGINAL_I18N_KEY[btn.dataset.tab] !== btn.getAttribute("data-i18n");
+        btn.textContent = (compact && !relabeled) ? (shortMap[btn.dataset.tab] || fullName) : fullName;
         if (compact) btn.setAttribute("aria-label", fullName);
         else btn.removeAttribute("aria-label");
       });
       var reviewMap = shortReviewByLang[currentLang] || {};
       document.querySelectorAll("#panel-review > .subtab-row:first-child .subtab-btn").forEach(function (btn) {
         var fullName = TU(btn.getAttribute("data-i18n"));
-        btn.textContent = compact ? (reviewMap[btn.dataset.review] || fullName) : fullName;
+        var relabeled = ORIGINAL_I18N_KEY[btn.dataset.review] && ORIGINAL_I18N_KEY[btn.dataset.review] !== btn.getAttribute("data-i18n");
+        btn.textContent = (compact && !relabeled) ? (reviewMap[btn.dataset.review] || fullName) : fullName;
         if (compact) btn.setAttribute("aria-label", fullName);
         else btn.removeAttribute("aria-label");
       });
@@ -5058,7 +5099,7 @@
     var prevTab = appRoot ? appRoot.dataset.activeTab : null;
     if (prevTab) tabScrollPos[prevTab] = window.scrollY;
     tabButtons.forEach(function (b) { b.setAttribute("aria-selected", b.dataset.tab === tab ? "true" : "false"); });
-    Object.keys(panels).forEach(function (k) { panels[k].classList.remove("active"); });
+    Object.keys(panels).forEach(function (k) { if (panels[k]) panels[k].classList.remove("active"); });
     panels[tab].classList.add("active");
     if (appRoot) appRoot.dataset.activeTab = tab;
     // Keep the selected item visible in the horizontally scrolling phone menu.
@@ -5388,7 +5429,7 @@
       daily: document.getElementById("wizard-daily-pane"),
     };
     var btns = document.querySelectorAll(".subtab-btn[data-wizard]");
-    if (!btns.length || !panes.main) return;
+    if (!btns.length) return;
     btns.forEach(function (btn) {
       btn.addEventListener("click", function () {
         btns.forEach(function (b) { b.setAttribute("aria-selected", "false"); });
@@ -5404,13 +5445,15 @@
     renderCurrDaily();
   })();
 
-  /* ---------------- 문장 subtab (행복한 삶을 영원히 / 사람들을 사랑하고 제자로 / 파수대 / 행복한 삶을 영원히(전체)) ---------------- */
+  /* ---------------- 문장 subtab (행복한 삶을 영원히 / 사람들을 사랑하고 제자로 / 파수대 / (전체) 원문 뷰어 3종) ---------------- */
   (function () {
     var panes = {
       lff: document.getElementById("sentence-lff-pane"),
       lpd: document.getElementById("sentence-lpd-pane"),
       wt: document.getElementById("sentence-wt-pane"),
       lff2: document.getElementById("sentence-lff2-pane"),
+      lpd2: document.getElementById("sentence-lpd2-pane"),
+      wt2: document.getElementById("sentence-wt2-pane"),
     };
     var btns = document.querySelectorAll(".subtab-btn[data-sentence]");
     if (!btns.length || !panes.lff) return;
@@ -5423,11 +5466,13 @@
         if (btn.dataset.sentence === "lpd") renderCurrLpd();
         if (btn.dataset.sentence === "wt") renderCurrWt();
         if (btn.dataset.sentence === "lff") renderCurrLff();
-        // initLff2 is defined further down the file (its LFF2_* state is set up via `var`
-        // initializers that haven't run yet this early in the script), so it's only ever invoked
-        // lazily here on click -- never eagerly alongside the other renderCurr* calls below,
-        // which read plain top-level `const`s already available from data_block.js.
+        // initLff2/initLpd2/initWt2 are defined further down the file (their state is set up via
+        // `var` initializers that haven't run yet this early in the script), so they're only ever
+        // invoked lazily here on click -- never eagerly alongside the other renderCurr* calls
+        // below, which read plain top-level `const`s already available from data_block.js.
         if (btn.dataset.sentence === "lff2") initLff2();
+        if (btn.dataset.sentence === "lpd2") initLpd2();
+        if (btn.dataset.sentence === "wt2") initWt2();
       });
     });
     renderCurrLff();
@@ -5448,6 +5493,7 @@
 
   function bindChoiceGroup(groupId, key) {
     var group = document.getElementById(groupId);
+    if (!group) return;
     group.querySelectorAll(".choice-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
         group.querySelectorAll(".choice-btn").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
@@ -6180,6 +6226,7 @@
   /* ================= REFERENCE TABLE ================= */
   function renderRefTable() {
     var root = document.getElementById("ref-table-root");
+    if (!root) return;
     var html = "";
     REF_TABLE.forEach(function (sec) {
       var secTexts = [];
@@ -7843,7 +7890,7 @@
       var readPairs = [[conv.title.vi, T(conv.title)]].concat(lineUnits.map(function (line) { return [line.vi, line.kr]; }));
       html += '<div class="group-card" data-open="' + (openSyls["nb" + ci] ? "true" : "false") + '" data-syl="nb' + ci + '">' +
         '<div class="group-head-row"><button class="group-head"><span><span class="syl">' + (ci + 1) + '.</span> ' +
-        '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(conv.title.vi) + '</span> <span class="lff-title-translation">· ' + escapeHtml(T(conv.title)) + '</span></span></span>' +
+        '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(conv.title.vi) + '</span>' + titleTrSpan(conv.title) + '</span></span>' +
         currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
         '<div class="group-body"><div class="talk-lines">';
       lineUnits.forEach(function (l) {
@@ -7864,8 +7911,14 @@
   // "대화 > 일상 회화" -- DAILY_CONVERSATIONS holds 21 real dialogues from "베트남어 일상 회화"
   // (lessons 1-13), vi/ko verbatim from the textbook (both languages are printed side by side in
   // the source) with zh/en/ja added as natural conversational translations. Only 5 languages (no
-  // de/fr/pl yet) -- T()'s existing fallback chain shows Korean in that case, same as any other
-  // not-yet-translated content in this app.
+  // de/fr/pl/cs/hu yet).
+  //
+  // "who" is just another T()-shaped field, no special-casing needed: role titles ("Bác sĩ",
+  // "Người phục vụ", ...) have real ko/zh/en/ja translations that a plain lookup returns
+  // correctly, and renamed characters (Minh/Tuấn/Lan) were generated with the same Vietnamese
+  // spelling already stored under ko/zh/en/ja too, so a plain lookup returns the right name there
+  // as well. (A previous version of this function forced "vi" first for every case, which broke
+  // role titles -- e.g. "의사"/"醫生"/"Doctor"/"医師" all showing as "Bác sĩ".)
   function dailyWhoLabel(who) {
     return T(who);
   }
@@ -7888,14 +7941,17 @@
       var vocab = (conv.vocab || []).map(function (v) { return { vi: v.vi, kr: T(v) }; });
       if (ql) {
         var hit = conv.title.vi.toLowerCase().indexOf(ql) >= 0 || T(conv.title).toLowerCase().indexOf(ql) >= 0 ||
-          turns.some(function (t) { return t.vi.toLowerCase().indexOf(ql) >= 0 || t.kr.toLowerCase().indexOf(ql) >= 0; }) ||
+          turns.some(function (t) {
+            return t.vi.toLowerCase().indexOf(ql) >= 0 || t.kr.toLowerCase().indexOf(ql) >= 0 ||
+              dailyWhoLabel(t.who).toLowerCase().indexOf(ql) >= 0;
+          }) ||
           vocab.some(function (v) { return v.vi.toLowerCase().indexOf(ql) >= 0 || v.kr.toLowerCase().indexOf(ql) >= 0; });
         if (!hit) return;
       }
       var readPairs = [[conv.title.vi, T(conv.title)]].concat(turns.map(function (t) { return [t.vi, t.kr]; }));
       html += '<div class="group-card" data-open="' + (openSyls["dc" + ci] ? "true" : "false") + '" data-syl="dc' + ci + '">' +
         '<div class="group-head-row"><button class="group-head"><span><span class="syl">' + (ci + 1) + '.</span> ' +
-        '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(conv.title.vi) + '</span> <span class="lff-title-translation">· ' + escapeHtml(T(conv.title)) + '</span></span></span>' +
+        '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(conv.title.vi) + '</span>' + titleTrSpan(conv.title) + '</span></span>' +
         currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
         '<div class="group-body"><div class="talk-lines">';
       turns.forEach(function (t) {
@@ -7925,19 +7981,26 @@
     var input = document.getElementById("daily-search");
     if (input) input.addEventListener("input", function () { renderCurrDaily(input.value.trim()); });
   })();
+  // Re-render on a language change, same fix already applied to LFF/LPD above -- this pane was
+  // otherwise only rendered once at startup/subtab-entry, leaving the initial language's
+  // speaker names/dialogue/translations on screen after a later language switch.
+  onLangChange(function () {
+    var input = document.getElementById("daily-search");
+    renderCurrDaily(input ? input.value.trim() : "");
+  });
 
   // "문장 > 행복한 삶을 영원히(전체)" (Enjoy Life Forever! -- full Excel source, 72 units x 10
   // languages). Lives alongside, not inside, the "문장" tab's own "행복한 삶을 영원히" subtab
   // (LFF_CONVERSATIONS, 5-language sentence-split body text) -- originally implemented under
   // [대화], moved here so the same feature isn't shown under two different top-level menus. This
   // renders ENJOY_LIFE_FOREVER verbatim at row granularity (no sentence splitting, no reordering --
-  // an Excel row's 10 language cells must stay aligned exactly as given) and only ever renders the
+  // an Excel row's 12 language cells must stay aligned exactly as given) and only ever renders the
   // ONE currently selected unit's rows (up to ~412 for the largest lessons), never all 72 at once,
   // since the underlying JSON is multiple MB. The site-wide currentLang only covers 7 languages
-  // (no cs/hu), so translation language here is a separate, panel-local selector/localStorage key
-  // rather than reusing currentLang -- UI chrome (buttons, empty-state text) still follows the
+  // (no cs/hu/zh_cn/id), so translation language here is a separate, panel-local selector/localStorage
+  // key rather than reusing currentLang -- UI chrome (buttons, empty-state text) still follows the
   // site-wide currentLang via TU(), only the row content follows this local picker.
-  var LFF2_LANGS = ["ko", "zh", "en", "ja", "de", "fr", "pl", "cs", "hu"];
+  var LFF2_LANGS = ["ko", "zh", "en", "ja", "de", "fr", "pl", "cs", "hu", "zh_cn", "id"];
   var LFF2_STORAGE_KEY = "vn-app-lff2-v1";
   var lff2State = { lang: null, unitId: null };
   (function loadLff2State() {
@@ -7972,7 +8035,9 @@
     fr: function (n) { return "Partie " + n; },
     pl: function (n) { return "Część " + n; },
     cs: function (n) { return "Část " + n; },
-    hu: function (n) { return n + ". rész"; }
+    hu: function (n) { return n + ". rész"; },
+    zh_cn: function (n) { return "第" + n + "部"; },
+    id: function (n) { return "Bagian " + n; }
   };
   function lff2PartLabel(n) {
     return (LFF2_PART_LABEL_FN[lff2State.lang] || LFF2_PART_LABEL_FN.ko)(n);
@@ -8148,6 +8213,190 @@
     if (!document.body.dataset.lff2Init) return;
     if (lff2State.unitId) renderLff2Unit(lff2State.unitId);
   });
+
+  // Shared engine behind the two other "(전체)" full-Excel-transcription viewers (Love People,
+  // Watchtower Study) -- same verbatim-row-list behavior as LFF2 above (reuses its .lff2-* CSS,
+  // since the two are visually identical), just without LFF2's part/section accordion, since
+  // both of these datasets are small enough (<=24 items) for one flat grid.
+  function createExcelFullViewer(opts) {
+    var prefix = opts.prefix;
+    var storageKey = "vn-app-" + prefix + "-v1";
+    var state = { lang: null, unitId: null };
+    (function loadState() {
+      try {
+        var raw = window.localStorage && window.localStorage.getItem(storageKey);
+        if (raw) {
+          var parsed = JSON.parse(raw);
+          if (parsed && LFF2_LANGS.indexOf(parsed.lang) >= 0) state.lang = parsed.lang;
+          if (parsed && typeof parsed.unitId === "number") state.unitId = parsed.unitId;
+        }
+      } catch (e) { /* no-op: localStorage unavailable */ }
+      if (!state.lang) state.lang = LFF2_LANGS.indexOf(currentLang) >= 0 ? currentLang : "ko";
+    })();
+    function saveState() {
+      try { window.localStorage && window.localStorage.setItem(storageKey, JSON.stringify(state)); } catch (e) { /* no-op */ }
+    }
+    function rowText(row, lang) {
+      var v = row[lang];
+      return typeof v === "string" ? v.trim() : "";
+    }
+    function unitLabel(u, lang) {
+      var row0 = u && u.rows && u.rows[0];
+      if (!row0) return u ? u.labelKo : "";
+      return rowText(row0, lang) || rowText(row0, "vi");
+    }
+    function unitButtonText(u) {
+      if (u.type === "lesson") return String(u.lesson);
+      if (u.type === "week") return String(u.week);
+      return null;
+    }
+    function buildRowsHtml(unit, lang, query) {
+      var q = query ? query.toLowerCase() : "";
+      var html = "";
+      (unit.rows || []).forEach(function (row) {
+        var vi = rowText(row, "vi");
+        var tr = lang === "vi" ? "" : rowText(row, lang);
+        if (!vi && !tr) return;
+        if (q && vi.toLowerCase().indexOf(q) < 0 && (!tr || tr.toLowerCase().indexOf(q) < 0)) return;
+        html += '<div class="lff2-row"><span class="lff2-row-num">' + row.row + '</span><div class="lff2-row-body">';
+        if (vi) {
+          html += '<div class="lff2-row-vi">' + escapeHtml(vi) +
+            '<button type="button" class="speak-btn" data-speak="' + escapeAttr(vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>';
+        }
+        if (tr) html += '<div class="lff2-row-tr">' + escapeHtml(tr) + '</div>';
+        html += '</div></div>';
+      });
+      return html || '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
+    }
+    function renderPicker() {
+      var root = document.getElementById(prefix + "-picker-root");
+      var data = opts.getData();
+      if (!root || !data) return;
+      var units = data.units;
+      var lang = state.lang;
+      var itemsHtml = units.map(function (u) {
+        var isCurrent = state.unitId === u.id;
+        var label = unitLabel(u, lang);
+        var btnText = unitButtonText(u);
+        if (btnText !== null) {
+          return '<button type="button" class="lff2-unit-btn" data-unit-id="' + u.id + '" aria-current="' + (isCurrent ? "true" : "false") + '" title="' + escapeAttr(label) + '" aria-label="' + escapeAttr(label) + '">' + btnText + '</button>';
+        }
+        return '<button type="button" class="lff2-special-btn" data-unit-id="' + u.id + '" aria-current="' + (isCurrent ? "true" : "false") + '">' + escapeHtml(label) + '</button>';
+      }).join("");
+      root.innerHTML = '<div class="lff2-unit-grid">' + itemsHtml + '</div>';
+      root.querySelectorAll("[data-unit-id]").forEach(function (btn) {
+        btn.addEventListener("click", function () { renderUnit(Number(btn.dataset.unitId)); });
+      });
+    }
+    function renderUnit(unitId) {
+      var pickerRoot = document.getElementById(prefix + "-picker-root");
+      var viewerRoot = document.getElementById(prefix + "-viewer-root");
+      var data = opts.getData();
+      if (!pickerRoot || !viewerRoot || !data) return;
+      var units = data.units;
+      var unit = units[unitId - 1] && units[unitId - 1].id === unitId ? units[unitId - 1] : units.filter(function (u) { return u.id === unitId; })[0];
+      if (!unit) return;
+      var idx = units.indexOf(unit);
+      var lang = state.lang;
+      state.unitId = unitId;
+      saveState();
+
+      pickerRoot.style.display = "none";
+      viewerRoot.style.display = "";
+
+      var prevUnit = units[idx - 1] || null;
+      var nextUnit = units[idx + 1] || null;
+      var titleText = unitLabel(unit, lang);
+
+      var searchId = prefix + "-search";
+      var listId = prefix + "-row-list";
+      var html = '<div class="lff2-viewer-head">' +
+        '<button type="button" class="lff2-back-btn" id="' + prefix + '-back-btn">← ' + escapeHtml(TU("목록")) + '</button>' +
+        '<div class="lff2-unit-title">' + escapeHtml(titleText) + '</div></div>' +
+        '<div class="lff2-nav-row">' +
+        '<button type="button" class="lff2-nav-btn" id="' + prefix + '-prev-btn"' + (prevUnit ? "" : " disabled") + '>' +
+        (prevUnit ? "← " + escapeHtml(unitLabel(prevUnit, lang)) : escapeHtml(TU("이전"))) + '</button>' +
+        '<button type="button" class="lff2-nav-btn" id="' + prefix + '-next-btn"' + (nextUnit ? "" : " disabled") + '>' +
+        (nextUnit ? escapeHtml(unitLabel(nextUnit, lang)) + " →" : escapeHtml(TU("다음"))) + '</button>' +
+        '</div>' +
+        '<div class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>' +
+        '<input type="text" id="' + searchId + '" data-i18n-placeholder="베트남어 문장이나 뜻으로 검색" placeholder="' + escapeAttr(TU("베트남어 문장이나 뜻으로 검색")) + '"></div>' +
+        '<div class="lff2-row-list" id="' + listId + '">' + buildRowsHtml(unit, lang) + '</div>';
+
+      viewerRoot.innerHTML = html;
+      bindCurrSpeakBtns(viewerRoot);
+
+      var backBtn = document.getElementById(prefix + "-back-btn");
+      if (backBtn) backBtn.addEventListener("click", function () {
+        viewerRoot.style.display = "none";
+        pickerRoot.style.display = "";
+        renderPicker();
+      });
+      var prevBtn = document.getElementById(prefix + "-prev-btn");
+      if (prevBtn && prevUnit) prevBtn.addEventListener("click", function () { renderUnit(prevUnit.id); window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" }); });
+      var nextBtn = document.getElementById(prefix + "-next-btn");
+      if (nextBtn && nextUnit) nextBtn.addEventListener("click", function () { renderUnit(nextUnit.id); window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" }); });
+
+      var searchInput = document.getElementById(searchId);
+      if (searchInput) {
+        searchInput.addEventListener("input", function () {
+          var listRoot = document.getElementById(listId);
+          if (!listRoot) return;
+          listRoot.innerHTML = buildRowsHtml(unit, lang, searchInput.value.trim());
+          bindCurrSpeakBtns(listRoot);
+        });
+      }
+    }
+    function populateLangSelect() {
+      var sel = document.getElementById(prefix + "-lang-select");
+      var data = opts.getData();
+      if (!sel || sel.dataset.populated || !data) return;
+      sel.dataset.populated = "true";
+      var names = data.languages || {};
+      sel.innerHTML = LFF2_LANGS.map(function (code) {
+        return '<option value="' + code + '"' + (code === state.lang ? " selected" : "") + '>' + escapeHtml(names[code] || code) + '</option>';
+      }).join("");
+      sel.addEventListener("change", function () {
+        if (LFF2_LANGS.indexOf(sel.value) < 0) return;
+        state.lang = sel.value;
+        saveState();
+        renderPicker();
+        if (state.unitId) renderUnit(state.unitId);
+      });
+    }
+    function init() {
+      var data = opts.getData();
+      if (!data || document.body.dataset[opts.initFlag]) return;
+      document.body.dataset[opts.initFlag] = "true";
+      populateLangSelect();
+      renderPicker();
+      if (state.unitId) {
+        renderUnit(state.unitId);
+      } else {
+        document.getElementById(prefix + "-picker-root").style.display = "";
+        document.getElementById(prefix + "-viewer-root").style.display = "none";
+      }
+    }
+    onLangChange(function () {
+      if (!document.body.dataset[opts.initFlag]) return;
+      if (state.unitId) renderUnit(state.unitId);
+    });
+    return { init: init };
+  }
+
+  var lpd2Viewer = createExcelFullViewer({
+    prefix: "lpd2",
+    initFlag: "lpd2Init",
+    getData: function () { return typeof LOVE_PEOPLE_FULL === "undefined" ? null : LOVE_PEOPLE_FULL; },
+  });
+  function initLpd2() { lpd2Viewer.init(); }
+
+  var wt2Viewer = createExcelFullViewer({
+    prefix: "wt2",
+    initFlag: "wt2Init",
+    getData: function () { return typeof WATCHTOWER_FULL === "undefined" ? null : WATCHTOWER_FULL; },
+  });
+  function initWt2() { wt2Viewer.init(); }
 
   // "행복한 삶을 영원히" (Enjoy Life Forever!) -- LFF_CONVERSATIONS holds the body-text sentences of
   // 5 languages, sourced from wol.jw.org (video call-outs and the trailing "더 찾아보기"/EXPLORE
@@ -8340,9 +8589,10 @@
         // continue with the lesson's Vietnamese sentence and its selected-language translation.
         var readPairs = [[titleVi, T(rec.title)]].concat(lineUnits.map(function (l) { return [l.vi, l.kr]; }));
         var label = lffRecordLabel(rec);
+        var recTitleTr = T(rec.title);
         var titleHtml = rec.kind === "lesson"
-          ? '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(titleVi) + '</span> <span class="lff-title-translation">· ' + escapeHtml(T(rec.title)) + '</span></span>'
-          : '<span class="cnt">' + escapeHtml(titleVi) + ' · ' + escapeHtml(T(rec.title)) + '</span>';
+          ? '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(titleVi) + '</span>' + titleTrSpan(rec.title) + '</span>'
+          : '<span class="cnt">' + escapeHtml(titleVi) + (recTitleTr ? ' · ' + escapeHtml(recTitleTr) : '') + '</span>';
         html += '<div class="group-card" data-open="' + (openSyls["lff" + ri] ? "true" : "false") + '" data-syl="lff' + ri + '" data-anchor="lff' + ri + '">' +
           '<div class="group-head-row"><button class="group-head"><span>' +
           (label ? '<span class="syl">' + escapeHtml(label) + '</span> ' : '') +
@@ -8409,7 +8659,7 @@
       html += '<div class="group-card" data-open="' + (openSyls["lpd" + ri] ? "true" : "false") + '" data-syl="lpd' + ri + '" data-anchor="lpd' + ri + '">' +
         '<div class="group-head-row"><button class="group-head"><span>' +
         '<span class="syl">' + escapeHtml(lpdRecordLabel(rec)) + '</span> ' +
-        '<span class="lpd-title' + (rec.kind === "appendix" ? " is-appendix-title" : "") + '"><span class="lpd-title-vi">' + escapeHtml(rec.title.vi) + '</span> <span class="lpd-title-translation">· ' + escapeHtml(T(rec.title)) + '</span></span>' +
+        '<span class="lpd-title' + (rec.kind === "appendix" ? " is-appendix-title" : "") + '"><span class="lpd-title-vi">' + escapeHtml(rec.title.vi) + '</span>' + (T(rec.title) ? ' <span class="lpd-title-translation">· ' + escapeHtml(T(rec.title)) + '</span>' : '') + '</span>' +
         '</span>' + currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
         '<div class="group-body"><div class="talk-lines">';
       lineUnits.forEach(function (l) {
@@ -8728,10 +8978,11 @@
         readAllEntries.push([w.example, w.example_mean ? T(w.example_mean) : ""]);
       });
       var weekLabel = watchtowerDisplayLabel(wk.week);
+      var dateRangeTr = T(wk.date_range);
       html += '<div class="group-card" data-open="' + openAll + '" data-syl="wt' + wk.week + '">' +
         '<div class="group-head-row"><button class="group-head"><span>' +
         (weekLabel ? '<span class="syl">' + escapeHtml(weekLabel) + '</span> ' : '') +
-        '<span class="cnt">' + escapeHtml(T(wk.date_range)) + ' · ' + wk.words.length + TU("개 단어") + '</span></span>' +
+        '<span class="cnt">' + (dateRangeTr ? escapeHtml(dateRangeTr) + ' · ' : '') + wk.words.length + TU("개 단어") + '</span></span>' +
         '<span class="chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></button>' +
         readAllButtonHtml(readAllEntries) + '</div>' +
         '<div class="group-body"><div class="rhyme-word-list">';
@@ -8769,7 +9020,13 @@
     }
     renderVocabWatchtower(root, q);
   }
-  document.getElementById("wt-search").addEventListener("input", function () { vocabFocus = null; renderCurrWt(); });
+  (function () {
+    var wtSearchInput = document.getElementById("wt-search");
+    if (wtSearchInput) wtSearchInput.addEventListener("input", function () { vocabFocus = null; renderCurrWt(); });
+  })();
+  // Same re-render-on-language-change fix as daily/LFF/LPD above -- otherwise this pane also
+  // kept showing whichever language was active the first time its subtab was opened.
+  onLangChange(function () { renderCurrWt(); });
 
   function renderCurrSentences() {
     var root = document.getElementById("curr-sentences-root");
@@ -9357,15 +9614,25 @@
       song: document.getElementById("curr-song-pane"),
       prayer: document.getElementById("curr-prayer-pane"),
       guide: document.getElementById("curr-guide-pane"),
+      jeonju_event: document.getElementById("curr-jeonju_event-pane"),
     };
-    if (!panes.week16) return;
-    document.querySelectorAll(".subtab-btn[data-curriculum]").forEach(function (btn) {
+    var curriculumBtns = document.querySelectorAll(".subtab-btn[data-curriculum]");
+    if (!curriculumBtns.length) return;
+    // Generic event hook, not Jeonju-specific logic: any profile whose data_block.js defines a
+    // non-empty JEONJU_WEEKS (currently only the jeonju profile) reveals this one extra subtab
+    // button. JW's own data_block.js never defines JEONJU_WEEKS at all, so the button stays
+    // hidden there without any "if profile === jeonju" check in this file.
+    var jeonjuBtn = document.getElementById("curriculum-jeonju-btn");
+    var hasJeonjuEvent = typeof JEONJU_WEEKS !== "undefined" && JEONJU_WEEKS.length > 0;
+    if (jeonjuBtn && hasJeonjuEvent) jeonjuBtn.style.display = "";
+    curriculumBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        document.querySelectorAll(".subtab-btn[data-curriculum]").forEach(function (b) { b.setAttribute("aria-selected", "false"); });
+        curriculumBtns.forEach(function (b) { b.setAttribute("aria-selected", "false"); });
         btn.setAttribute("aria-selected", "true");
         Object.keys(panes).forEach(function (k) {
           if (panes[k]) panes[k].style.display = k === btn.dataset.curriculum ? "" : "none";
         });
+        if (btn.dataset.curriculum === "jeonju_event") renderJeonjuEvent();
       });
     });
 
@@ -9374,7 +9641,28 @@
     renderCurrSongs();
     renderCurrPrayer();
     renderCurrGuide();
+    if (hasJeonjuEvent) renderJeonjuEvent();
   })();
+
+  // Generic event-layer renderer: activates purely from JEONJU_INFO/JEONJU_WEEKS existing in
+  // data_block.js (see hasJeonjuEvent above), not from any hardcoded site/profile name, so a
+  // future second event profile only needs its own {EVENT}_INFO/{EVENT}_WEEKS constants and a
+  // renderer like this one -- no changes to the tab-switching wiring above.
+  function renderJeonjuEvent() {
+    var root = document.getElementById("curr-jeonju-root");
+    if (!root || typeof JEONJU_INFO === "undefined" || typeof JEONJU_WEEKS === "undefined") return;
+    var html = '<div class="curr-card"><h3>' + escapeHtml(JEONJU_INFO.name) + '</h3>' +
+      '<p>' + escapeHtml(JEONJU_INFO.startDate) + ' ~ ' + escapeHtml(JEONJU_INFO.endDate) +
+      ' (' + escapeHtml(JEONJU_INFO.schedule) + ', ' + JEONJU_WEEKS.length + TU("주") + ')</p></div>';
+    html += '<div class="ref-table">';
+    JEONJU_WEEKS.forEach(function (w) {
+      html += '<div class="ref-row"><div><div class="rel-label">Week ' + w.week + '</div>' +
+        '<div>' + escapeHtml(w.date) + '</div></div>' +
+        '<div>' + escapeHtml(w.material == null ? TU("자료 미정") : String(w.material)) + '</div></div>';
+    });
+    html += '</div>';
+    root.innerHTML = html;
+  }
 
   /* ================= STUDY GAMES (복습 게임) ================= */
   (function () {
@@ -9488,6 +9776,10 @@
               addSentencePairs(out, vi, kr);
             }
           });
+        });
+        // 일상 회화 (21 general dialogues, shared by all profiles) contributes its lines too.
+        DAILY_CONVERSATIONS.forEach(function (conv) {
+          conv.turns.forEach(function (t) { if (t.vi) addSentencePairs(out, t.vi, Tstrict(t)); });
         });
         return dedupeByVi(out);
       },
@@ -9664,7 +9956,7 @@
     var REVIEW_SCOPES = {
       pron: ["all", "alphabet", "tones", "tonepairs", "nsdiff"],
       bible: ["all", "books", "numbers", "time", "days", "months"],
-      wizard: ["all", "main", "reftable", "talks", "neighbor"],
+      wizard: ["all", "main", "reftable", "talks", "neighbor", "daily"],
       vocab: ["all", "rhyme", "orderrev", "groups", "basic", "antonym", "freq", "theo", "names", "chain", "dialect"],
       sentence: ["all", "lff", "lpd", "wt"],
       grammar: ["all", "lessons", "special", "sentences"],
@@ -9673,7 +9965,7 @@
     var REVIEW_SCOPE_LABELS = {
       all: "전체", alphabet: "문자", tones: "성조", tonepairs: "연속 성조", nsdiff: "남북 발음",
       books: "성경", numbers: "숫자", time: "시간", days: "요일, 날짜", months: "달, 계절",
-      main: "첫만남", reftable: "호칭", talks: "제공 연설", neighbor: "이웃 사람과의 대화", lff: "행복한 삶을 영원히", lpd: "사람들을 사랑하고 제자로",
+      main: "첫만남", reftable: "호칭", talks: "제공 연설", neighbor: "이웃 사람과의 대화", daily: "일상 회화", lff: "행복한 삶을 영원히", lpd: "사람들을 사랑하고 제자로",
       rhyme: "한자음", orderrev: "어순반대", groups: "동일음", basic: "기본", antonym: "반의", freq: "상용", theo: "신권", names: "인명", chain: "끝말", dialect: "남북 단어", wt: "파수대",
       lessons: "예문", special: "특강", sentences: "범용 언어 생성표"
     };
@@ -9709,6 +10001,7 @@
         else if (scope === "reftable") REF_TABLE.forEach(function (sec) { sec.rows.forEach(function (r) { if (TERM_MEAN[r.listener]) out.push({ vi: r.listener, kr: TU(TERM_MEAN[r.listener]) }); if (TERM_MEAN[r.self]) out.push({ vi: r.self, kr: TU(TERM_MEAN[r.self]) }); }); });
         else if (scope === "talks") OFFER_TALKS.forEach(function (t) { t.lines.forEach(function (l) { sentence(l.vi, Tstrict(l.kr)); }); });
         else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(applyNeighborTermsVi(l.vi), applyNeighborTermsMeaning(Tstrict(l), currentLang)); }); });
+        else if (scope === "daily") DAILY_CONVERSATIONS.forEach(function (c) { c.turns.forEach(function (t) { sentence(t.vi, Tstrict(t)); }); });
       } else if (key === "sentence") {
         if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
         else if (scope === "lpd") LPD_LESSONS.forEach(function (r) {
@@ -10118,6 +10411,16 @@
     function renderReviewScopes(key, selectedScope) {
       if (!reviewScopeEl) return;
       var scopes = (key === "song" ? getSongReviewScopes() : (REVIEW_SCOPES[key] || ["all"]));
+      // REVIEW_SCOPES is a static, profile-independent list; each of its non-"all" entries names
+      // exactly one subtab value of this same category's own top-level tab (e.g. "wizard":"talks"
+      // <-> that tab's own [data-wizard="talks"] button). GENERAL removes several of those subtab
+      // buttons (제공 연설/이웃 사람과의 대화/... under 대화, 신권/인명 under 어휘, 성경 under
+      // 숫자, 예문/특강 under 문법) without touching this shared list, so filter here instead of
+      // forking REVIEW_SCOPES per profile: a scope only appears if its own subtab button still
+      // exists somewhere in the document (or it's the always-present "all").
+      scopes = scopes.filter(function (s) {
+        return s === "all" || !!document.querySelector('[data-' + key + '="' + s + '"]');
+      });
       reviewScopeEl.dataset.scopeCategory = key;
       reviewScopeEl.innerHTML = scopes.map(function (scope) {
         var isSelected = (scope === selectedScope || (scope === "wt" && selectedScope && selectedScope.indexOf("wt:") === 0));
@@ -10138,6 +10441,15 @@
     function selectCategory(key, scope, poolOverride) {
       if (Array.isArray(scope)) { poolOverride = scope; scope = "all"; }
       scope = scope || "all";
+      // Guards every entry point into this function (button clicks, the boot-time default,
+      // window.__goToScopedVocabReview, and any "바로가기" deep-link), not just the visible
+      // category row: a profile that doesn't have this category's button at all (e.g. GENERAL
+      // has no "sentence" category) must never end up with that key as studyState.tabKey, since
+      // callers other than a direct button click don't otherwise check whether the button exists.
+      if (!document.querySelector('.subtab-btn[data-review="' + key + '"]')) {
+        var sentenceBtn = document.querySelector('.subtab-btn[data-review="sentence"]');
+        key = (sentenceBtn || reviewBtns[0]).dataset.review;
+      }
       // Re-selecting the already-active category+scope used to still rebuild the pool, restart
       // the mode and speak a freshly-picked random item's prompt -- a no-visible-change action
       // that nonetheless raced a brand-new speechSynthesis call against whatever was already
@@ -10179,7 +10491,12 @@
     reviewBtns.forEach(function (btn) {
       btn.addEventListener("click", function () { selectCategory(btn.dataset.review, "all"); });
     });
-    if (reviewBtns.length) selectCategory("sentence", "all");
+    // Prefer "sentence" as the default category (unchanged JW/JEONJU behavior) when that button
+    // exists; GENERAL removes it entirely (its [문장] tab is JW-only), so fall back to whichever
+    // category button actually exists first in this profile's DOM, instead of a hardcoded
+    // "sentence" that used to leave the review pane opening on an empty, unselected pool there.
+    var defaultReviewBtn = document.querySelector('.subtab-btn[data-review="sentence"]') || reviewBtns[0];
+    if (defaultReviewBtn) selectCategory(defaultReviewBtn.dataset.review, "all");
     modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
         // Re-clicking the already-active mode tab used to still restart the question (a fresh
