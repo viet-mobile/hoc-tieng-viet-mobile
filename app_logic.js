@@ -211,7 +211,7 @@
   "정지": {"zh":"停止","en":"Stop","ja":"停止","de":"Stopp","fr":"Arrêter","pl":"Zatrzymaj"},
   "자동 넘김": {
     "zh": "自動切換",
-    "en": "Auto-advance",
+    "en": "Auto-play",
     "ja": "自動送り",
     "de": "Automatisch weiter",
     "fr": "Défilement auto",
@@ -314,7 +314,7 @@
   "교과": {"zh":"教材","en":"Curriculum","ja":"教材","de":"Lehrplan","fr":"Cours","pl":"Kurs"},
   "발음": {
     "zh": "發音",
-    "en": "Pronunciation",
+    "en": "Phonics",
     "ja": "発音",
     "de": "Aussprache",
     "fr": "Prononciation",
@@ -329,17 +329,17 @@
   // profile, where JEONJU_INFO/JEONJU_WEEKS exist.
   "전주 학습반": {"zh":"全州越南語班","en":"Jeonju Class","ja":"チョンジュ学習班","de":"Jeonju-Kurs","fr":"Cours de Jeonju","pl":"Kurs w Jeonju","cs":"Kurz Jeonju","hu":"Jeonju tanfolyam"},
   "자료 미정": {"zh":"教材待定","en":"Material TBD","ja":"資料未定","de":"Material noch offen","fr":"Contenu à venir","pl":"Materiał nieustalony","cs":"Materiál zatím neurčen","hu":"Anyag még nincs meghatározva"},
-  "대화": {"zh":"對話","en":"Dialogue","ja":"会話","de":"Dialog","fr":"Dialogue","pl":"Rozmowy"},
+  "대화": {"zh":"對話","en":"Talks","ja":"会話","de":"Dialog","fr":"Dialogue","pl":"Rozmowy"},
   "어휘": {
     "zh": "詞彙",
-    "en": "Vocabulary",
+    "en": "Words",
     "ja": "語彙",
     "de": "Wortschatz",
     "fr": "Vocabulaire",
     "pl": "Słownictwo"
   },
-  "문장": {"zh":"句子","en":"Sentence","ja":"文","de":"Satz","fr":"Phrases","pl":"Zdania"},
-  "문법": {"zh":"文法","en":"Grammar","ja":"文法","de":"Grammatik","fr":"Grammaire","pl":"Gramatyka"},
+  "문장": {"zh":"句子","en":"Clauses","ja":"文","de":"Satz","fr":"Phrases","pl":"Zdania"},
+  "문법": {"zh":"文法","en":"Usage","ja":"文法","de":"Grammatik","fr":"Grammaire","pl":"Gramatyka"},
   "복습": {"zh":"複習","en":"Review","ja":"復習","de":"Wiederholung","fr":"Révision","pl":"Powtórka"},
   "예습": {"zh":"預習","en":"Preview","ja":"予習","de":"Vorschau","fr":"Aperçu","pl":"Zapowiedź"},
   "주간 수행 과제": {
@@ -3741,7 +3741,7 @@
   // The full translation remains available to assistive technology and on wider screens.
   (function () {
     var shortNamesByLang = {
-      en: { curriculum: "Course", pron: "Sounds", bible: "Bible", wizard: "Talk", vocab: "Words", sentence: "Sentence", grammar: "Grammar", review: "Review" },
+      en: { curriculum: "Course", pron: "Phonics", bible: "Bible", wizard: "Talks", vocab: "Words", sentence: "Clauses", grammar: "Usage", review: "Review" },
       de: { curriculum: "Kurs", pron: "Laut", bible: "Bibel", wizard: "Dialog", vocab: "Wörter", sentence: "Satz", grammar: "Gramm.", review: "Wdh." },
       fr: { curriculum: "Cours", pron: "Sons", bible: "Bible", wizard: "Dialog", vocab: "Mots", sentence: "Phrase", grammar: "Gramm.", review: "Rév." },
       pl: { curriculum: "Kurs", pron: "Wymowa", bible: "Biblia", wizard: "Rozm.", vocab: "Słowa", sentence: "Zdanie", grammar: "Gram.", review: "Powt." },
@@ -3753,7 +3753,7 @@
       hu: { curriculum: "Kurzus", pron: "Kiejt.", bible: "Biblia", wizard: "Beszéd", vocab: "Szavak", sentence: "Mondat", grammar: "Nytan", review: "Ism." }
     };
     var shortReviewByLang = {
-      en: { song: "Songs", pron: "Sounds", bible: "Bible", wizard: "Talk", vocab: "Words", sentence: "Sentence", grammar: "Grammar" },
+      en: { song: "Songs", pron: "Phonics", bible: "Bible", wizard: "Talks", vocab: "Words", sentence: "Clauses", grammar: "Usage" },
       de: { song: "Lieder", pron: "Laut", bible: "Bibel", wizard: "Dialog", vocab: "Wörter", sentence: "Satz", grammar: "Gramm." },
       fr: { song: "Chants", pron: "Sons", bible: "Bible", wizard: "Dialog", vocab: "Mots", sentence: "Phrase", grammar: "Gramm." },
       pl: { song: "Pieśni", pron: "Wymowa", bible: "Biblia", wizard: "Rozm.", vocab: "Słowa", sentence: "Zdanie", grammar: "Gram." },
@@ -5424,9 +5424,10 @@
     var panes = {
       main: document.getElementById("wizard-main-pane"),
       reftable: document.getElementById("wizard-reftable-pane"),
+      daily: document.getElementById("wizard-daily-pane"),
       talks: document.getElementById("wizard-talks-pane"),
       neighbor: document.getElementById("wizard-neighbor-pane"),
-      daily: document.getElementById("wizard-daily-pane"),
+      culture: document.getElementById("wizard-culture-pane"),
     };
     var btns = document.querySelectorAll(".subtab-btn[data-wizard]");
     if (!btns.length) return;
@@ -5438,19 +5439,23 @@
         if (btn.dataset.wizard === "talks") renderCurrTalks();
         if (btn.dataset.wizard === "neighbor") renderCurrNeighbor();
         if (btn.dataset.wizard === "daily") renderCurrDaily();
+        if (btn.dataset.wizard === "culture") renderCurrCulture();
       });
     });
     renderCurrTalks();
     renderCurrNeighbor();
     renderCurrDaily();
+    renderCurrCulture();
   })();
 
-  /* ---------------- 문장 subtab (행복한 삶을 영원히 / 사람들을 사랑하고 제자로 / 파수대 / (전체) 원문 뷰어 3종) ---------------- */
+  /* ---------------- 문장 subtab (행복한 삶을 영원히 / 사람들을 사랑하고 제자로 / 파수대 / 노래 / 기도 / (전체) 원문 뷰어 3종) ---------------- */
   (function () {
     var panes = {
       lff: document.getElementById("sentence-lff-pane"),
       lpd: document.getElementById("sentence-lpd-pane"),
       wt: document.getElementById("sentence-wt-pane"),
+      song: document.getElementById("sentence-song-pane"),
+      prayer: document.getElementById("sentence-prayer-pane"),
       lff2: document.getElementById("sentence-lff2-pane"),
       lpd2: document.getElementById("sentence-lpd2-pane"),
       wt2: document.getElementById("sentence-wt2-pane"),
@@ -5466,6 +5471,8 @@
         if (btn.dataset.sentence === "lpd") renderCurrLpd();
         if (btn.dataset.sentence === "wt") renderCurrWt();
         if (btn.dataset.sentence === "lff") renderCurrLff();
+        if (btn.dataset.sentence === "song") renderCurrSongs();
+        if (btn.dataset.sentence === "prayer") renderCurrPrayer();
         // initLff2/initLpd2/initWt2 are defined further down the file (their state is set up via
         // `var` initializers that haven't run yet this early in the script), so they're only ever
         // invoked lazily here on click -- never eagerly alongside the other renderCurr* calls
@@ -5478,6 +5485,8 @@
     renderCurrLff();
     renderCurrLpd();
     renderCurrWt();
+    renderCurrSongs();
+    renderCurrPrayer();
   })();
 
   /* ================= WIZARD ================= */
@@ -6332,14 +6341,16 @@
   }
   renderFamilyTree();
 
-  /* ================= VOCAB (한자어 어휘 + 신권 어휘 + 자주 사용 어휘) ================= */
-  var vocabMode = "rhyme";
+  /* ================= VOCAB (단어 통합 + 전문 메뉴) ================= */
+  var vocabMode = "words";
+  var activeWordTag = "all";
+  var wordsDisplayLimit = 80;
   // Set by goToTab() when a 16주 과정 / 주간 수행 과제 어휘 바로가기 targets a specific slice of a
   // vocab subtab's own natural item order (see VOCAB_PLAN / applyVocabFocus()) -- {mode, start, end}.
   // Cleared on any ordinary subtab click or search so a stale focus never silently narrows the list.
   var vocabFocus = null;
   var VOCAB_SUBTAB_LABEL_KEY = {
-    rhyme: "한자음", orderrev: "어순반대", groups: "동일음", basic: "기본", antonym: "반의",
+    words: "단어", rhyme: "한자음", orderrev: "어순반대", groups: "동일음", basic: "기본", antonym: "반의",
     freq: "상용", theo: "신권", names: "인명", chain: "끝말", dialect: "남북 단어", wt: "파수대"
   };
   function applyVocabFocus(mode, arr) {
@@ -6373,6 +6384,9 @@
       btn.setAttribute("aria-selected", "true");
       vocabFocus = null;
       vocabMode = btn.dataset.vocab;
+      if (vocabMode === "words") {
+        wordsDisplayLimit = 80;
+      }
       renderVocab();
     });
   });
@@ -6420,9 +6434,127 @@
     bindVocabFocusClear(root);
   }
 
+  function renderVocabWords(root, q) {
+    var words = (typeof UNIFIED_WORDS !== "undefined" && UNIFIED_WORDS) || [];
+    var filterEl = document.getElementById("vocab-tag-filters");
+    if (filterEl) {
+      filterEl.style.display = "";
+      var allTags = ["all"];
+      var knownTags = ["기본", "상용", "신권", "인명", "한자음", "어순반대", "동일음", "반의"];
+      var presentTags = {};
+      words.forEach(function (w) {
+        if (w.tags) w.tags.forEach(function (t) { presentTags[t] = true; });
+      });
+      knownTags.forEach(function (t) {
+        if (presentTags[t]) allTags.push(t);
+      });
+      var filterHtml = '';
+      allTags.forEach(function (t) {
+        var label = t === "all" ? TU("전체") : TU(t);
+        var isActive = activeWordTag === t;
+        filterHtml += '<button type="button" class="tag-filter-btn' + (isActive ? ' active' : '') + '" data-tag="' + escapeAttr(t) + '" aria-pressed="' + (isActive ? 'true' : 'false') + '">' + escapeHtml(label) + '</button>';
+      });
+      filterEl.innerHTML = filterHtml;
+      filterEl.querySelectorAll(".tag-filter-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          activeWordTag = btn.dataset.tag;
+          wordsDisplayLimit = 80;
+          renderVocabWords(root, document.getElementById("vocab-search").value.trim().toLowerCase());
+        });
+      });
+    }
+
+    function getWordMeaning(w) {
+      if (!w) return "";
+      var m = w.kr || w.meanings;
+      if (typeof m === "string") return m;
+      if (m && typeof m === "object") return m[currentLang] || m.ko || m.en || "";
+      return "";
+    }
+    function getAntonymMeaning(w) {
+      if (!w || !w.antonymMeaning) return "";
+      var m = w.antonymMeaning;
+      if (typeof m === "string") return m;
+      if (m && typeof m === "object") return m[currentLang] || m.ko || m.en || "";
+      return "";
+    }
+
+    var filtered = words.filter(function (w) {
+      if (activeWordTag !== "all" && (!w.tags || w.tags.indexOf(activeWordTag) < 0)) return false;
+      if (!q) return true;
+      var meaningStr = getWordMeaning(w);
+      return (w.vi && w.vi.toLowerCase().indexOf(q) >= 0) || meaningStr.toLowerCase().indexOf(q) >= 0;
+    });
+
+    if (!filtered.length) {
+      root.innerHTML = '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
+      return;
+    }
+
+    var slice = filtered.slice(0, wordsDisplayLimit);
+    var html = '<div class="chain-note" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">' +
+      '<span>' + TU("총 ") + filtered.length + TU("개 단어") + (activeWordTag !== "all" ? ' (' + TU(activeWordTag) + ')' : '') + '</span>' +
+      readAllButtonHtml(slice.map(function (w) { return [w.vi, getWordMeaning(w)]; })) +
+      '</div>';
+
+    html += '<div class="theo-list">';
+    slice.forEach(function (w) {
+      var mean = getWordMeaning(w);
+      html += '<div class="bible-item"><div class="bible-body">' +
+        '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">' +
+        '<span class="bible-word vn font-bold">' + escapeHtml(w.vi) + '</span>' +
+        (typeof w.frequency === "number" && w.frequency > 0 ? '<span class="word-freq-badge" title="' + TU("등장 빈도") + '">' + TU("빈도: ") + w.frequency + '</span>' : '') +
+        '<div style="display:inline-flex;gap:4px;flex-wrap:wrap">' +
+        (w.tags || []).map(function (t) { return '<span class="word-tag-pill">' + escapeHtml(TU(t)) + '</span>'; }).join('') +
+        '</div></div>' +
+        '<div class="bible-mean">' + escapeHtml(mean) + '</div>';
+
+      if (w.antonym) {
+        var antMean = getAntonymMeaning(w);
+        html += '<div class="word-antonym-box">' +
+          '<span class="ant-label">' + TU("반의어:") + '</span>' +
+          '<span class="vn font-bold">' + escapeHtml(w.antonym) + '</span>' +
+          (antMean ? ' <span class="ant-mean">(' + escapeHtml(antMean) + ')</span>' : '') +
+          '</div>';
+      }
+
+      html += '</div>' +
+        '<button class="speak-btn" data-speak="' + escapeAttr(w.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+        '</div>';
+    });
+    html += '</div>';
+
+    if (filtered.length > wordsDisplayLimit) {
+      html += '<div style="text-align:center;padding:16px 0;">' +
+        '<button id="vocab-words-more-btn" class="foot-btn secondary" style="min-width:180px;">' +
+        TU("더 보기") + ' (' + slice.length + ' / ' + filtered.length + ')' +
+        '</button></div>';
+    }
+
+    root.innerHTML = html;
+    root.querySelectorAll(".speak-btn").forEach(function (b) {
+      b.addEventListener("click", function () { speak(b.dataset.speak); });
+    });
+    var moreBtn = document.getElementById("vocab-words-more-btn");
+    if (moreBtn) {
+      moreBtn.addEventListener("click", function () {
+        wordsDisplayLimit += 80;
+        renderVocabWords(root, q);
+      });
+    }
+  }
+
   function renderVocab() {
     var q = document.getElementById("vocab-search").value.trim().toLowerCase();
     var root = document.getElementById("vocab-root");
+    var filterEl = document.getElementById("vocab-tag-filters");
+    if (filterEl) {
+      filterEl.style.display = (vocabMode === "words") ? "" : "none";
+    }
+    if (vocabMode === "words") {
+      renderVocabWords(root, q);
+      return;
+    }
     if (vocabMode === "rhyme") {
       renderRhyme(root, q);
       return;
@@ -6894,12 +7026,40 @@
     unitsHtml += '</div>';
     unitsRoot.innerHTML = unitsHtml;
 
-    // Scoped to introRoot/unitsRoot specifically (not the whole #panel-grammar panel), since
+    var a1a2Root = document.getElementById("grammar-a1a2-root");
+    if (a1a2Root && typeof GRAMMAR_A1_A2_PATTERNS !== "undefined" && GRAMMAR_A1_A2_PATTERNS.length) {
+      var a1a2Html = '<div class="gr-a1a2-section"><div class="p-section-head"><h3>' + TU("기초 핵심 문형 (A1/A2)") + '</h3></div>';
+      a1a2Html += '<div class="gr-a1a2-list">';
+      GRAMMAR_A1_A2_PATTERNS.forEach(function (pat, pi) {
+        a1a2Html += '<div class="group-card" data-open="false" data-syl="gra1a2_' + pi + '">' +
+          '<div class="group-head-row"><button class="group-head"><span><span class="syl vn font-bold">' + escapeHtml(pat.pattern) + '</span> <span class="badge">' + escapeHtml(pat.level) + '</span> - ' + escapeHtml(pat.meaningKo) + '</span>' +
+          '<span class="chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></button>' +
+          readAllButtonHtml(pat.examples.map(function (ex) { return [ex.vi, ex.ko]; })) + '</div>' +
+          '<div class="group-body"><div class="gr-step-list">';
+        pat.examples.forEach(function (ex) {
+          a1a2Html += '<div class="gr-step">' +
+            '<div class="gr-step-head"><div class="gr-align-vi vn">' + escapeHtml(ex.vi) + '</div>' +
+            '<button class="speak-btn" data-speak="' + escapeAttr(ex.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
+            '<div class="gr-step-kr"><span>' + escapeHtml(ex.ko) + '</span>' +
+            '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(ex.ko) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+            '</div></div>';
+        });
+        if (pat.source) {
+          a1a2Html += '<div class="culture-source" style="margin-top:6px;font-size:0.78rem;color:var(--ink-muted);">' + escapeHtml(pat.source.file) + ' p.' + pat.source.page + '</div>';
+        }
+        a1a2Html += '</div></div></div>';
+      });
+      a1a2Html += '</div></div>';
+      a1a2Root.innerHTML = a1a2Html;
+    }
+
+    // Scoped to introRoot/unitsRoot/a1a2Root specifically (not the whole #panel-grammar panel), since
     // renderGrammar() re-runs on every language switch (see onLangChange registration below) --
     // a broader #panel-grammar query would re-bind duplicate listeners onto the 특강/범용 언어
     // 생성표/문장 생성기 subtabs' own elements, which live in the same panel but are rendered
     // (and listener-bound) by their own functions.
-    [introRoot, unitsRoot].forEach(function (scopeEl) {
+    [introRoot, unitsRoot, a1a2Root].forEach(function (scopeEl) {
+      if (!scopeEl) return;
       scopeEl.querySelectorAll(".group-card").forEach(function (card) {
         card.querySelector(".group-head").addEventListener("click", function () {
           card.dataset.open = card.dataset.open === "true" ? "false" : "true";
@@ -6924,11 +7084,8 @@
   // stable object instead.
   var PRON_PANE_ELS = {
     settings: document.getElementById("pron-settings-pane"),
-    alphabet: document.getElementById("pron-alphabet-pane"),
-    vowels: document.getElementById("pron-vowels-pane"),
-    consonants: document.getElementById("pron-consonants-pane"),
+    jamo: document.getElementById("pron-jamo-pane"),
     tones: document.getElementById("pron-tones-pane"),
-    tonepairs: document.getElementById("pron-tonepairs-pane"),
     nsdiff: document.getElementById("pron-nsdiff-pane")
   };
   function renderPron() {
@@ -7159,13 +7316,28 @@
     });
     nsHtml += '</div>';
 
+    function groupSection(id, title, contentHtml, openDefault) {
+      return '<div class="group-card" data-open="' + (openDefault ? "true" : "false") + '" data-pron-section="' + id + '" data-anchor="pron-' + id + '">' +
+        '<div class="group-head-row"><button class="group-head"><span><span class="syl">' + escapeHtml(title) + '</span></span>' +
+        '<span class="chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></button></div>' +
+        '<div class="group-body">' + contentHtml + '</div></div>';
+    }
+
+    var jamoHtml = '<div class="p-section">' +
+      groupSection("alphabet", TU("문자"), alphabetHtml, true) +
+      groupSection("vowels", TU("모음"), vowelsHtml, false) +
+      groupSection("consonants", TU("자음"), consHtml, false) +
+      '</div>';
+
+    var tonesCombinedHtml = '<div class="p-section">' +
+      groupSection("tones", TU("성조"), tonesHtml, true) +
+      groupSection("tonepairs", TU("연속 성조"), tonePairsHtml, false) +
+      '</div>';
+
     var PRON_PANES_HTML = {
       settings: settingsHtml,
-      alphabet: alphabetHtml,
-      vowels: vowelsHtml,
-      consonants: consHtml,
-      tones: tonesHtml,
-      tonepairs: tonePairsHtml,
+      jamo: jamoHtml,
+      tones: tonesCombinedHtml,
       nsdiff: nsHtml
     };
     Object.keys(PRON_PANE_ELS).forEach(function (key) {
@@ -7173,15 +7345,19 @@
       if (!el) return;
       el.innerHTML = PRON_PANES_HTML[key];
       el.querySelectorAll(".group-card").forEach(function (card) {
-        card.querySelector(".group-head").addEventListener("click", function () {
-          card.dataset.open = card.dataset.open === "true" ? "false" : "true";
-        });
+        var headBtn = card.querySelector(".group-head");
+        if (headBtn) {
+          headBtn.addEventListener("click", function () {
+            card.dataset.open = card.dataset.open === "true" ? "false" : "true";
+          });
+        }
       });
       el.querySelectorAll("[data-speak]").forEach(function (b) { b.addEventListener("click", function (e) { e.stopPropagation(); speak(b.dataset.speak); }); });
     });
     renderVoicePicker();
     renderLangVoicePicker();
     renderAllViRepeatToggles();
+    renderCurrGuide();
   }
   renderPron();
 
@@ -7214,6 +7390,25 @@
 
   /* ================= CURRICULUM (교과) ================= */
   function goToTab(tab, subAttr, subVal, talkNums, vocabRange, anchor) {
+    if (tab === "curriculum") {
+      if (subVal === "culture") { tab = "wizard"; subAttr = "wizard"; subVal = "culture"; }
+      else if (subVal === "song") { tab = "sentence"; subAttr = "sentence"; subVal = "song"; }
+      else if (subVal === "prayer") { tab = "sentence"; subAttr = "sentence"; subVal = "prayer"; }
+      else if (subVal === "guide") { tab = "pron"; subAttr = "pron"; subVal = "settings"; }
+    }
+    if (tab === "pron") {
+      if (subVal === "alphabet") { subVal = "jamo"; anchor = anchor || "pron-alphabet"; }
+      else if (subVal === "vowels") { subVal = "jamo"; anchor = anchor || "pron-vowels"; }
+      else if (subVal === "consonants") { subVal = "jamo"; anchor = anchor || "pron-consonants"; }
+      else if (subVal === "tones") { subVal = "tones"; anchor = anchor || "pron-tones"; }
+      else if (subVal === "tonepairs") { subVal = "tones"; anchor = anchor || "pron-tonepairs"; }
+    }
+    if (tab === "vocab") {
+      if (subVal === "basic") { subVal = "words"; activeWordTag = "기본"; }
+      else if (subVal === "freq") { subVal = "words"; activeWordTag = "상용"; }
+      else if (subVal === "theo") { subVal = "words"; activeWordTag = "신권"; }
+      else if (subVal === "names") { subVal = "words"; activeWordTag = "인명"; }
+    }
     activateTab(tab, false);
     if (subAttr && subVal) {
       var sb = document.querySelector('.subtab-btn[data-' + subAttr + '="' + subVal + '"]');
@@ -7242,6 +7437,7 @@
         }
         var card = target.closest ? target.closest(".group-card") : null;
         if (card) card.dataset.open = "true";
+        if (target.classList.contains("group-card")) target.dataset.open = "true";
         target.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 0);
     }
@@ -7569,12 +7765,45 @@
     if (!root) return;
     var html = "";
     CULTURE_ARTICLES.forEach(function (a) {
-      html += '<div class="curr-card"><h3>' + escapeHtml(T(a.title)) + '</h3>' +
-        '<div class="curr-culture-sub">' + escapeHtml(T(a.subtitle)) + '</div>';
-      a.paragraphs.forEach(function (p) { html += '<p>' + escapeHtml(T(p)) + '</p>'; });
-      html += '</div>';
+      if (a.keywords || a.summaryKo) {
+        html += '<div class="curr-card culture-card">';
+        if (a.category) {
+          html += '<span class="culture-category-badge">' + escapeHtml(a.category) + '</span>';
+        }
+        html += '<div class="culture-card-title">' +
+          '<span class="ko">' + escapeHtml(a.titleKo || "") + '</span> ' +
+          (a.titleVi ? '<span class="vi vn">(' + escapeHtml(a.titleVi) + ')</span>' : '') +
+          '</div>';
+        if (a.summaryKo) {
+          html += '<p class="culture-summary">' + escapeHtml(a.summaryKo) + '</p>';
+        }
+        if (a.learningPoint) {
+          html += '<div class="culture-learning-point"><strong>' + TU("핵심 포인트: ") + '</strong>' + escapeHtml(a.learningPoint) + '</div>';
+        }
+        if (a.keywords && a.keywords.length) {
+          html += '<div class="culture-keywords-list">';
+          a.keywords.forEach(function (kw) {
+            html += '<div class="culture-keyword-chip">' +
+              '<span class="vn font-bold">' + escapeHtml(kw.vi) + '</span>' +
+              '<button class="speak-btn" data-speak="' + escapeAttr(kw.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+              '<span class="kw-ko">' + escapeHtml(kw.ko) + '</span>' +
+              '</div>';
+          });
+          html += '</div>';
+        }
+        if (a.source) {
+          html += '<div class="culture-source">' + escapeHtml(a.source.file || "") + ' p.' + (a.source.page || "") + '</div>';
+        }
+        html += '</div>';
+      } else {
+        html += '<div class="curr-card"><h3>' + escapeHtml(T(a.title)) + '</h3>' +
+          '<div class="curr-culture-sub">' + escapeHtml(T(a.subtitle)) + '</div>';
+        (a.paragraphs || []).forEach(function (p) { html += '<p>' + escapeHtml(T(p)) + '</p>'; });
+        html += '</div>';
+      }
     });
     root.innerHTML = html;
+    bindCurrSpeakBtns(root);
   }
 
   function renderCurrTalks() {
@@ -9105,7 +9334,8 @@
       html += '</div>';
     }
 
-    var dict = GRAMMAR_DICT.filter(function (g) {
+    var dictSource = GRAMMAR_DICT.concat(typeof GRAMMAR_B1_B2_PATTERNS !== "undefined" ? GRAMMAR_B1_B2_PATTERNS : []);
+    var dict = dictSource.filter(function (g) {
       return !q || g.headword.toLowerCase().indexOf(q) >= 0 || T(g.meaning).indexOf(q) >= 0;
     });
     html += '<div class="p-section"><h3>' + TU("A–Z 문법 사전") + '</h3>';
@@ -9206,11 +9436,15 @@
       if (!vi) return;
       var target = songSanitize((l[currentLang] || l.ko || "").trim());
 
-      // Section marker (Chorus, Ending, Bridge, Pre-chorus)
+      // Section marker (Chorus, Ending, Bridge, Pre-chorus) -- still shown as a marker (not a
+      // regular lyric line), but a real, existing SONG_MEANINGS entry attached to this index
+      // must not become silently unreachable just because its line is a marker.
       if (isSongSectionMarker(vi)) {
+        var markerMeaning = songSanitize((meaningsMap[String(idx)] && meaningsMap[String(idx)][currentLang]) || "");
         lyricsHtml += '<div class="lyric-section-marker">' +
           '<div class="lyric-marker-vi vn">' + escapeHtml(vi) + '</div>' +
           (target ? '<div class="lyric-marker-target">' + escapeHtml(target) + '</div>' : '') +
+          (markerMeaning ? '<div class="lyric-meaning-row"><div class="lyric-meaning"><span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(markerMeaning) + '</div></div>' : '') +
           '</div>';
         return;
       }
@@ -9610,10 +9844,6 @@
   (function () {
     var panes = {
       week16: document.getElementById("curr-week16-pane"),
-      culture: document.getElementById("curr-culture-pane"),
-      song: document.getElementById("curr-song-pane"),
-      prayer: document.getElementById("curr-prayer-pane"),
-      guide: document.getElementById("curr-guide-pane"),
       jeonju_event: document.getElementById("curr-jeonju_event-pane"),
     };
     var curriculumBtns = document.querySelectorAll(".subtab-btn[data-curriculum]");
@@ -9637,10 +9867,6 @@
     });
 
     renderCurrWeek16();
-    renderCurrCulture();
-    renderCurrSongs();
-    renderCurrPrayer();
-    renderCurrGuide();
     if (hasJeonjuEvent) renderJeonjuEvent();
   })();
 
@@ -9849,6 +10075,16 @@
         GRAMMAR_DICT.forEach(function (g) {
           g.examples.forEach(function (e) { if (e.vi && e.kr) addSentencePairs(out, e.vi, Tstrict(e.kr)); });
         });
+        if (typeof GRAMMAR_B1_B2_PATTERNS !== "undefined") {
+          GRAMMAR_B1_B2_PATTERNS.forEach(function (g) {
+            g.examples.forEach(function (e) { if (e.vi && e.kr) addSentencePairs(out, e.vi, Tstrict(e.kr)); });
+          });
+        }
+        if (typeof GRAMMAR_A1_A2_PATTERNS !== "undefined") {
+          GRAMMAR_A1_A2_PATTERNS.forEach(function (pat) {
+            pat.examples.forEach(function (ex) { if (ex.vi && ex.ko) addSentencePairs(out, ex.vi, ex.ko); });
+          });
+        }
         return dedupeByVi(out);
       },
       // 문장 탭 (행복한 삶을 영원히 · 사람들을 사랑하고 제자로 · 파수대) -- 문장이 아닌 항목은 모두
@@ -9914,6 +10150,15 @@
             if (!vi) return;
             if (isSongSectionMarker(vi)) {
               flushSentence();
+              // A section marker itself carries no reviewable lyric content, but a real,
+              // existing SONG_MEANINGS entry attached to its index must still be reachable --
+              // same invariant as the viewer (renderCurrSongs) -- so surface it as its own
+              // standalone Review unit rather than silently dropping it.
+              var markerTarget = songSanitize((l[currentLang] || l.ko || "").trim());
+              var markerMeaning = songSanitize((mObj[String(idx)] && mObj[String(idx)][currentLang]) || "");
+              if (markerMeaning && markerTarget) {
+                out.push({ vi: vi, kr: markerTarget, meaning: markerMeaning, songNo: s.number });
+              }
               return;
             }
             var target = songSanitize((l[currentLang] || l.ko || "").trim());
@@ -10035,8 +10280,16 @@
         else if (scope === "chain") VOCAB_CHAIN.forEach(function (w) { out.push({ vi: w.word, kr: Tstrict(w.meaning) }); });
         else if (scope === "dialect") DIALECT_WORDS.forEach(function (w) { out.push({ vi: w.north.replace(/[/].*$/, ""), kr: Tstrict(w.mean) }, { vi: w.south.replace(/[/].*$/, ""), kr: Tstrict(w.mean) }); });
       } else if (key === "grammar") {
-        if (scope === "lessons") { GRAMMAR_INTRO.forEach(function (s) { s.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); }); GRAMMAR_UNITS.forEach(function (u) { u.steps.forEach(function (s) { sentence(s.vi, Tstrict(s.kr)); }); }); }
-        else if (scope === "special") { GX_MOTION_VERBS.forEach(function (v) { sentence(v.vi, Tstrict(v.kr)); }); GX_POS_EXAMPLES.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); GRAMMAR_DICT.forEach(function (g) { g.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); }); }
+        if (scope === "lessons") {
+          GRAMMAR_INTRO.forEach(function (s) { s.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); });
+          GRAMMAR_UNITS.forEach(function (u) { u.steps.forEach(function (s) { sentence(s.vi, Tstrict(s.kr)); }); });
+          if (typeof GRAMMAR_A1_A2_PATTERNS !== "undefined") {
+            GRAMMAR_A1_A2_PATTERNS.forEach(function (p) {
+              p.examples.forEach(function (e) { sentence(e.vi, e.ko); });
+            });
+          }
+        }
+        else if (scope === "special") { GX_MOTION_VERBS.forEach(function (v) { sentence(v.vi, Tstrict(v.kr)); }); GX_POS_EXAMPLES.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); GRAMMAR_DICT.concat(typeof GRAMMAR_B1_B2_PATTERNS !== "undefined" ? GRAMMAR_B1_B2_PATTERNS : []).forEach(function (g) { g.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); }); }
         else if (scope === "sentences") ["subjects", "modals", "verbs", "places"].forEach(function (k) { (SENT_GEN_BANK[k] || []).forEach(function (w) { sentence(w.vi, Tstrict(w.kr)); }); });
       } else if (key === "song") {
         var allSongs = POOL_BUILDERS.song ? POOL_BUILDERS.song() : [];
@@ -12651,6 +12904,24 @@
       var saved = JSON.parse(raw);
       if (!saved) return;
       if (saved.subtabs) {
+        if (saved.subtabs.pron === "alphabet" || saved.subtabs.pron === "vowels" || saved.subtabs.pron === "consonants") {
+          saved.subtabs.pron = "jamo";
+        }
+        if (saved.subtabs.pron === "tonepairs") {
+          saved.subtabs.pron = "tones";
+        }
+        if (saved.subtabs.curriculum === "culture") {
+          saved.subtabs.wizard = "culture";
+        }
+        if (saved.subtabs.curriculum === "song") {
+          saved.subtabs.sentence = "song";
+        }
+        if (saved.subtabs.curriculum === "prayer") {
+          saved.subtabs.sentence = "prayer";
+        }
+        if (saved.subtabs.curriculum === "guide") {
+          saved.subtabs.pron = "settings";
+        }
         lastPlaceState.subtabs = saved.subtabs;
         ["wizard", "curriculum", "vocab", "sentence", "pron", "bible", "grammar", "review"].forEach(function (group) {
           var val = saved.subtabs[group];

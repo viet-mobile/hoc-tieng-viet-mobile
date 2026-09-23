@@ -40,8 +40,10 @@ JW_ONLY_CONSTS = {
     "GX_CONNECTIVES", "GX_MOTION_VERBS", "GX_POS_PREPS", "GX_POS_EXAMPLES", "GX_DIRECTION_DIALOGUES",
                                  # grammar_extra_data.py -- "교과 > 문법 특강", course booklet
                                  # pages 94-103; some entries contain religious example content
-    "GRAMMAR_DICT",              # grammar_dict_data.py -- ~104-entry dictionary, pervasive
-                                 # religious example sentences scattered across entries
+    "GRAMMAR_DICT",              # grammar_dict_data.py -- ~104-entry legacy dictionary, pervasive
+                                 # religious example sentences scattered across entries. The
+                                 # newer general-safe B1/B2 additions live in their own COMMON
+                                 # constant, GRAMMAR_B1_B2_PATTERNS (not a member of this set).
     "VOCAB_PLAN",                # vocab_study_plan_data.py -- weekly-test partition mechanism
                                  # for the 16-week ministry class (see CURR_ASSIGNMENTS)
     "WATCHTOWER_VOCAB",          # Watchtower Study article vocabulary
@@ -127,18 +129,20 @@ SITE_TITLES = {
 #         removing the button is what actually removes the feature from the UI + nav + search).
 #   review_categories: data-review values to drop from the review panel's own category row.
 NON_JW_HTML_REMOVALS = {
-    # [문장] has zero general content (all 6 subtabs are JW Excel/curated data) -- removed whole,
-    # button + panel. [교과] is NOT removed whole: its "문화"(culture) subtab is COMMON content
-    # (CULTURE_ARTICLES, same source used by JW/JEONJU) and must stay reachable in GENERAL too --
-    # see the "subtabs" entry below, which removes only its other 4 (JW-only) subtabs and leaves
-    # "culture" as the tab's sole, auto-promoted default.
-    "tabs": ["sentence"],
+    # In GENERAL: [교과](curriculum) and [문장](sentence) are excluded whole.
+    # Culture has been relocated to [대화] > [문화] (a COMMON subtab under wizard).
+    # Songs and Prayer have been relocated to [문장] (JW/JEONJU only).
+    # Usage Guide has been merged into [발음] > [설정].
+    # [문법] > [특강] ("data-grammar":"special") is NOT removed for GENERAL: it now also holds
+    # GRAMMAR_B1_B2_PATTERNS (COMMON), alongside its legacy JW-only content (GX_*, the original
+    # GRAMMAR_DICT entries), which is already emptied at the data level for GENERAL via
+    # JW_ONLY_CONSTS -- whole-removing this pane would also hide the COMMON B1/B2 material.
+    "tabs": ["curriculum", "sentence"],
     "subtabs": [
-        {"attr": "data-curriculum", "values": ["week16", "song", "prayer", "guide"], "pane_prefix": "curr"},
-        {"attr": "data-wizard", "values": ["main", "reftable", "talks", "neighbor"]},
+        {"attr": "data-wizard", "values": ["main", "talks", "neighbor"]},
         {"attr": "data-vocab", "values": ["theo", "names"]},
         {"attr": "data-bible", "values": ["books"]},
-        {"attr": "data-grammar", "values": ["lessons", "special"]},
+        {"attr": "data-grammar", "values": ["lessons"]},
     ],
     "review_categories": ["song", "sentence"],
 }

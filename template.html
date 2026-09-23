@@ -1560,7 +1560,7 @@
     position: relative;
     width: 100%;
     max-width: 620px;
-    max-height: 86vh;
+    max-height: min(88vh, calc(100dvh - 32px));
     margin-bottom: env(safe-area-inset-bottom, 24px);
     background: var(--surface);
     border-radius: 20px 20px 16px 16px;
@@ -1743,9 +1743,11 @@
   /* Picker Body & Views */
   .song-picker-body {
     flex: 1;
+    min-height: 0;
     overflow-y: auto;
-    padding: 10px 18px 80px;
+    padding: 10px 18px 90px;
     -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
   }
   .song-picker-grid {
     display: grid;
@@ -2328,6 +2330,159 @@
   @media (max-width: 699px) {
     #stage-nav .stage-pill { font-size: clamp(.68rem, 2.8vw, .78rem); padding-inline: 3px; }
   }
+
+  /* Tag filter row for unified words */
+  .tag-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px 0 10px;
+    align-items: center;
+  }
+  .tag-filter-btn {
+    padding: 4px 10px;
+    border-radius: 9999px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--ink);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .tag-filter-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .tag-filter-btn.active, .tag-filter-btn[aria-pressed="true"] {
+    background: var(--accent);
+    color: var(--accent-ink);
+    border-color: var(--accent);
+  }
+
+  /* Word card items */
+  .word-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+  }
+  .word-freq-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 9999px;
+    background: color-mix(in srgb, var(--accent) 15%, var(--surface));
+    color: var(--accent);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  }
+  .word-tag-pill {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: var(--surface-3, #f1f5f9);
+    color: var(--ink-muted);
+    border: 1px solid var(--border);
+  }
+  .word-antonym-box {
+    margin-top: 6px;
+    padding: 6px 10px;
+    border-left: 3px solid var(--accent);
+    background: var(--surface-2);
+    border-radius: 0 4px 4px 0;
+    font-size: 0.84rem;
+    color: var(--ink);
+  }
+  .word-antonym-box .ant-label {
+    font-weight: 600;
+    color: var(--accent);
+    margin-right: 4px;
+  }
+
+  /* Culture compact cards */
+  .culture-category-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: color-mix(in srgb, var(--accent) 18%, var(--surface));
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .culture-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--ink);
+  }
+  .culture-card-title .vi {
+    color: var(--accent);
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  .culture-summary {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+  .culture-learning-point {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    background: var(--surface-2);
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border-left: 3px solid var(--accent);
+  }
+  .culture-keywords-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0;
+  }
+  .culture-keyword-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.8rem;
+  }
+  .culture-keyword-chip .kw-ko {
+    color: var(--ink-muted);
+    font-size: 0.75rem;
+  }
+  .culture-source {
+    font-size: 0.74rem;
+    color: var(--ink-muted);
+    text-align: right;
+    margin-top: 4px;
+  }
+
+  /* Grammar A1/A2 section */
+  .gr-a1a2-section {
+    margin-top: 16px;
+  }
+  .gr-a1a2-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .gr-a1a2-section .badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
 </style>
 
 <div class="app" data-active-tab="review">
@@ -2388,23 +2543,10 @@
     <section class="panel" id="panel-curriculum">
       <div class="subtab-row">
         <button class="subtab-btn" data-curriculum="week16" aria-selected="true" data-i18n="16주 과정">16주 과정</button>
-        <button class="subtab-btn" data-curriculum="culture" aria-selected="false" data-i18n="문화">문화</button>
-        <button class="subtab-btn" data-curriculum="song" aria-selected="false" data-i18n="노래">노래</button>
-        <button class="subtab-btn" data-curriculum="prayer" aria-selected="false" data-i18n="기도">기도</button>
-        <button class="subtab-btn" data-curriculum="guide" aria-selected="false" data-i18n="사용설명">사용설명</button>
         <button class="subtab-btn" id="curriculum-jeonju-btn" data-curriculum="jeonju_event" aria-selected="false" data-i18n="전주 학습반" style="display:none">전주 학습반</button>
       </div>
 
       <div id="curr-week16-pane"><div id="curr-week16-root"></div></div>
-
-      <div id="curr-culture-pane" style="display:none"><div id="curr-culture-root"></div></div>
-
-      <div id="curr-song-pane" style="display:none"><div id="curr-songs-root"></div></div>
-
-      <div id="curr-prayer-pane" style="display:none"><div id="curr-prayer-root"></div></div>
-
-      <div id="curr-guide-pane" style="display:none"><div id="curr-guide-root"></div></div>
-
       <div id="curr-jeonju_event-pane" style="display:none"><div id="curr-jeonju-root"></div></div>
     </section>
 
@@ -2413,9 +2555,10 @@
       <div class="subtab-row">
         <button class="subtab-btn" data-wizard="main" aria-selected="true" data-i18n="첫만남">첫만남</button>
         <button class="subtab-btn" data-wizard="reftable" aria-selected="false" data-i18n="호칭">호칭</button>
+        <button class="subtab-btn" data-wizard="daily" aria-selected="false" data-i18n="일상 회화">일상 회화</button>
         <button class="subtab-btn" data-wizard="talks" aria-selected="false" data-i18n="제공 연설">제공 연설</button>
         <button class="subtab-btn" data-wizard="neighbor" aria-selected="false" data-i18n="이웃 사람과의 대화">이웃 사람과의 대화</button>
-        <button class="subtab-btn" data-wizard="daily" aria-selected="false" data-i18n="일상 회화">일상 회화</button>
+        <button class="subtab-btn" data-wizard="culture" aria-selected="false" data-i18n="문화">문화</button>
       </div>
 
       <div id="wizard-main-pane">
@@ -2620,22 +2763,25 @@
         <div id="curr-daily-root"></div>
       </div>
 
+      <div id="wizard-culture-pane" style="display:none">
+        <div class="chain-note" data-i18n="베트남의 문화, 음식, 풍습, 일상생활에 대한 유용한 이야기예요.">베트남의 문화, 음식, 풍습, 일상생활에 대한 유용한 이야기예요.</div>
+        <div id="curr-culture-root"></div>
+      </div>
+
     </section>
 
-    <!-- ============ VOCAB (한자어 어휘 + 신권 어휘 + 자주 사용 어휘 통합) ============ -->
+    <!-- ============ VOCAB (어휘) ============ -->
     <section class="panel" id="panel-vocab">
       <div class="subtab-row">
-        <button class="subtab-btn" data-vocab="rhyme" aria-selected="true" data-i18n="한자음">한자음</button>
+        <button class="subtab-btn" data-vocab="words" aria-selected="true" data-i18n="단어">단어</button>
+        <button class="subtab-btn" data-vocab="rhyme" aria-selected="false" data-i18n="한자음">한자음</button>
         <button class="subtab-btn" data-vocab="orderrev" aria-selected="false" data-i18n="어순반대">어순반대</button>
         <button class="subtab-btn" data-vocab="groups" aria-selected="false" data-i18n="동일음">동일음</button>
-        <button class="subtab-btn" data-vocab="basic" aria-selected="false" data-i18n="기본">기본</button>
         <button class="subtab-btn" data-vocab="antonym" aria-selected="false" data-i18n="반의">반의</button>
-        <button class="subtab-btn" data-vocab="freq" aria-selected="false" data-i18n="상용">상용</button>
-        <button class="subtab-btn" data-vocab="theo" aria-selected="false" data-i18n="신권">신권</button>
-        <button class="subtab-btn" data-vocab="names" aria-selected="false" data-i18n="인명">인명</button>
         <button class="subtab-btn" data-vocab="chain" aria-selected="false" data-i18n="끝말">끝말</button>
         <button class="subtab-btn" data-vocab="dialect" aria-selected="false" data-i18n="남북 단어">남북 단어</button>
       </div>
+      <div id="vocab-tag-filters" class="tag-filter-row"></div>
       <div class="search-box">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         <input type="text" id="vocab-search" placeholder="베트남어 단어나 한국어 뜻으로 검색" data-i18n-placeholder="베트남어 단어나 한국어 뜻으로 검색">
@@ -2649,6 +2795,8 @@
         <button class="subtab-btn" data-sentence="lff" aria-selected="true" data-i18n="행복한 삶을 영원히">행복한 삶을 영원히</button>
         <button class="subtab-btn" data-sentence="lpd" aria-selected="false" data-i18n="사람들을 사랑하고 제자로">사람들을 사랑하고 제자로</button>
         <button class="subtab-btn" data-sentence="wt" aria-selected="false" data-i18n="파수대">파수대</button>
+        <button class="subtab-btn" data-sentence="song" aria-selected="false" data-i18n="노래">노래</button>
+        <button class="subtab-btn" data-sentence="prayer" aria-selected="false" data-i18n="기도">기도</button>
         <button class="subtab-btn" data-sentence="lff2" aria-selected="false" data-i18n="행복한 삶을 영원히(전체)">행복한 삶을 영원히(전체)</button>
         <button class="subtab-btn" data-sentence="lpd2" aria-selected="false" data-i18n="사람들을 사랑하고 제자로(전체)">사람들을 사랑하고 제자로(전체)</button>
         <button class="subtab-btn" data-sentence="wt2" aria-selected="false" data-i18n="파수대(전체)">파수대(전체)</button>
@@ -2712,25 +2860,30 @@
         <div id="wt2-picker-root"></div>
         <div id="wt2-viewer-root" style="display:none"></div>
       </div>
+
+      <div id="sentence-song-pane" style="display:none">
+        <div id="curr-songs-root"></div>
+      </div>
+
+      <div id="sentence-prayer-pane" style="display:none">
+        <div id="curr-prayer-root"></div>
+      </div>
     </section>
 
     <!-- ============ PRONUNCIATION ============ -->
     <section class="panel" id="panel-pron">
       <div class="subtab-row">
         <button class="subtab-btn" data-pron="settings" aria-selected="false" data-i18n="설정">설정</button>
-        <button class="subtab-btn" data-pron="alphabet" aria-selected="true" data-i18n="문자">문자</button>
-        <button class="subtab-btn" data-pron="vowels" aria-selected="false" data-i18n="모음">모음</button>
-        <button class="subtab-btn" data-pron="consonants" aria-selected="false" data-i18n="자음">자음</button>
+        <button class="subtab-btn" data-pron="jamo" aria-selected="true" data-i18n="자모">자모</button>
         <button class="subtab-btn" data-pron="tones" aria-selected="false" data-i18n="성조">성조</button>
-        <button class="subtab-btn" data-pron="tonepairs" aria-selected="false" data-i18n="연속 성조">연속 성조</button>
         <button class="subtab-btn" data-pron="nsdiff" aria-selected="false" data-i18n="남북 발음">남북 발음</button>
       </div>
-      <div id="pron-settings-pane" style="display:none"></div>
-      <div id="pron-alphabet-pane"></div>
-      <div id="pron-vowels-pane" style="display:none"></div>
-      <div id="pron-consonants-pane" style="display:none"></div>
+      <div id="pron-settings-pane" style="display:none">
+        <div id="pron-settings-root"></div>
+        <div id="curr-guide-root"></div>
+      </div>
+      <div id="pron-jamo-pane"></div>
       <div id="pron-tones-pane" style="display:none"></div>
-      <div id="pron-tonepairs-pane" style="display:none"></div>
       <div id="pron-nsdiff-pane" style="display:none"></div>
     </section>
 
@@ -2775,6 +2928,7 @@
       <div id="grammar-lessons-panel">
         <div id="grammar-intro-root"></div>
         <div id="grammar-units-root"></div>
+        <div id="grammar-a1a2-root"></div>
       </div>
       <div id="grammar-builder-panel" style="display:none">
         <div class="chain-note" data-i18n="단어를 카테고리별로 골라 보세요. 비워 두면(선택 안 함) 그 부분 없이 문장이 만들어져요. 완성을 누르면 한국어 어순에서 베트남어 어순으로 단어가 자동으로 움직이는 걸 볼 수 있어요.">단어를 카테고리별로 골라 보세요. 비워 두면(선택 안 함) 그 부분 없이 문장이 만들어져요. 완성을 누르면 한국어 어순에서 베트남어 어순으로 단어가 자동으로 움직이는 걸 볼 수 있어요.</div>

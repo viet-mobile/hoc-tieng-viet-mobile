@@ -11,7 +11,9 @@ from bible_numbers_data import (BIBLE_BOOKS_OT, BIBLE_BOOKS_NT, NUMBERS_BASIC, N
                                  NUMBERS_LARGE, NUMBERS_SPECIAL, NUMBER_FORMAT_NOTE,
                                  NUMBER_DECIMAL_EXAMPLE)
 from tone_pairs_data import TONE_PAIRS
-from grammar_data import GRAMMAR_INTRO, GRAMMAR_UNITS
+from grammar_data import GRAMMAR_INTRO, GRAMMAR_UNITS, GRAMMAR_A1_A2_PATTERNS
+from user_words_data import USER_NEW_WORDS
+from unified_words_builder import gather_learning_corpus, build_unified_words
 from sentence_builder_data import (SB_PRONOUNS, SB_NOUN_SUBJECTS, SB_INTRANS_VERBS, SB_TRANS_VERBS,
                                     SB_AUX_VERBS, SB_OBJECT_NOUNS, SB_ADJECTIVES, SB_CONNECTIVES,
                                     SB_TIME_ADV, SB_PLACE_ADV, SB_MANNER_ADV, SB_SENTENCE_TYPES, SB_WH_WORDS,
@@ -28,7 +30,7 @@ from basic_words_list import BASIC_WORD_GROUPS
 from antonym_data import ANTONYM_PAIRS
 from sentence_gen_data import SENTENCE_GEN_INTRO, SENTENCE_GEN_BANK, SENTENCE_GEN_STAGES
 from grammar_extra_data import CONNECTIVES, MOTION_VERBS, POSITION_PREPS, POSITION_EXAMPLES, DIRECTION_DIALOGUES
-from grammar_dict_data import GRAMMAR_DICT
+from grammar_dict_data import GRAMMAR_DICT, GRAMMAR_B1_B2_PATTERNS
 from dialect_words_data import DIALECT_WORDS
 from calendar_data import MONTHS, DAYS, SEASONS, DATES, DATE_ORDER_NOTE, DATE_MONG_NOTE, YEAR_LE_NOTE
 from word_order_reversed_data import WORD_ORDER_REVERSED_EXTRA
@@ -345,6 +347,22 @@ def build_data_js(site):
     parts.append(emit("ENJOY_LIFE_FOREVER", enjoy_life_forever_data))
     parts.append(emit("LOVE_PEOPLE_FULL", love_people_full_data))
     parts.append(emit("WATCHTOWER_FULL", watchtower_full_data))
+
+    corpus_text = gather_learning_corpus(
+        site, DAILY_CONVERSATIONS, OFFER_TALKS, NEIGHBOR_CONVERSATIONS,
+        LFF_CONVERSATIONS, LPD_LESSONS, WATCHTOWER_VOCAB,
+        GRAMMAR_INTRO, GRAMMAR_UNITS, GRAMMAR_DICT,
+        CONNECTIVES, MOTION_VERBS, POSITION_EXAMPLES, DIRECTION_DIALOGUES,
+        GRAMMAR_A1_A2_PATTERNS, GRAMMAR_B1_B2_PATTERNS, CULTURE_ARTICLES
+    )
+    unified_words = build_unified_words(
+        site, BASIC_WORD_GROUPS, freq_vocab, vocab_theo, BIBLE_NAMES,
+        RHYME_GROUPS, WORD_ORDER_REVERSED_EXTRA, vocab_groups, ANTONYM_PAIRS,
+        USER_NEW_WORDS, corpus_text, RELIGIOUS_FILTER_TERMS
+    )
+    parts.append(emit("UNIFIED_WORDS", unified_words))
+    parts.append(emit("GRAMMAR_A1_A2_PATTERNS", GRAMMAR_A1_A2_PATTERNS))
+    parts.append(emit("GRAMMAR_B1_B2_PATTERNS", GRAMMAR_B1_B2_PATTERNS))
 
     if site == "jeonju":
         from jeonju_data import JEONJU_INFO, JEONJU_WEEKS

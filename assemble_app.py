@@ -25,11 +25,6 @@ def apply_general_label_overrides(html_text):
         '<button class="tab-btn" role="tab" data-tab="bible" aria-selected="false" data-i18n="숫자">숫자</button>',
         1,
     )
-    out = out.replace(
-        '<button class="tab-btn" role="tab" data-tab="curriculum" aria-selected="false" data-i18n="교과">교과</button>',
-        '<button class="tab-btn" role="tab" data-tab="curriculum" aria-selected="false" data-i18n="문화">문화</button>',
-        1,
-    )
     # The review panel's own category row has its own separate "성경" button (data-review="bible")
     # -- same relabel, since its pool is also numbers/time/days/months only in GENERAL.
     out = out.replace(
