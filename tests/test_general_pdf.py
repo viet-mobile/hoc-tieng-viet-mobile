@@ -2,6 +2,7 @@ import json
 import re
 import unittest
 from general_pdf_data import ROOT, build_general_pdf, merge_pdf_words, normalize
+from tests.site_bundle import read_site_bundle
 from site_profiles import RELIGIOUS_FILTER_TERMS, NON_JW_HTML_REMOVALS, JW_ONLY_CONSTS, STRUCTURED_EMPTY_SHAPES
 
 
@@ -48,7 +49,7 @@ class GeneralPdfTests(unittest.TestCase):
 
     def test_general_physical_isolation(self):
         self.assertNotIn('sentence', NON_JW_HTML_REMOVALS['tabs'])
-        html = (ROOT / 'dist/index.html').read_text(encoding='utf-8')
+        html = read_site_bundle('general')
         self.assertIn('id="sentence-pdf-pane"', html)
         self.assertIn('const GENERAL_PDF = ', html)
         for pane in ['lff', 'lpd', 'wt', 'lff2', 'lpd2', 'wt2', 'song', 'prayer']:
@@ -68,8 +69,7 @@ class GeneralPdfTests(unittest.TestCase):
 
     def test_all_physical_builds_contain_current_authoritative_pdf_records(self):
         for site in ['general', 'jw', 'jeonju', 'ulsan']:
-            path = ROOT / 'dist' / ('' if site == 'general' else site) / 'index.html'
-            html = path.read_text(encoding='utf-8')
+            html = read_site_bundle(site)
             match = re.search(r'^const GENERAL_PDF = (.*);$', html, re.MULTILINE)
             self.assertIsNotNone(match, site)
             self.assertEqual(json.loads(match[1]), self.data, site)

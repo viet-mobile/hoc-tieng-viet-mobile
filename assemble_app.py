@@ -1,5 +1,7 @@
 import argparse
+import hashlib
 import json
+import re
 from pathlib import Path
 import shutil
 
@@ -105,6 +107,49 @@ def build_site_identity_prelude(site):
     return "\n".join(parts)
 
 
+# Cloudflare Pages rejects any single deployed file over 25 MiB. The JW/JEONJU/ULSAN data payload alone is
+# ~27 MiB, so each profile's own data block is published as separate classic scripts, each at most this size.
+DATA_CHUNK_LIMIT = 20 * 1024 * 1024
+DATA_PLACEHOLDER = "__DATA_SCRIPTS__"
+PROFILE_SUBDIRS = ("jw", "jeonju", "ulsan")
+
+
+def split_data_js(data_js, limit=DATA_CHUNK_LIMIT):
+    """Split a data block into chunks of whole top-level declarations (`const NAME = ...;`).
+
+    Classic <script> files share one global lexical scope, so the constants stay visible to app_logic.js
+    exactly as when inlined. A chunk boundary is only ever placed before a column-0 declaration.
+    """
+    statements = [st for st in re.split(r"(?m)^(?=(?:const|let|var) [A-Za-z_$][\w$]* = )", data_js) if st]
+    chunks, current, size = [], [], 0
+    for st in statements:
+        n = len(st.encode("utf-8"))
+        if n > limit:
+            raise SystemExit(f"single data declaration is {n} bytes, over the {limit}-byte chunk limit: {st[:60]!r}")
+        if current and size + n > limit:
+            chunks.append("".join(current))
+            current, size = [], 0
+        current.append(st)
+        size += n
+    if current:
+        chunks.append("".join(current))
+    return chunks
+
+
+def write_data_scripts(dist_dir, data_js):
+    """Write this profile's data chunks next to its index.html; return the <script src> tags (content-hashed names)."""
+    for old in dist_dir.glob("data.*.js"):
+        old.unlink()
+    tags = []
+    for i, chunk in enumerate(split_data_js(data_js), 1):
+        digest = hashlib.sha256(chunk.encode("utf-8")).hexdigest()[:10]
+        name = f"data.{i}.{digest}.js"
+        with open(dist_dir / name, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(chunk)
+        tags.append(f'<script src="{name}"></script>')
+    return "\n".join(tags)
+
+
 def strip_marked_block(text, name):
     """Remove `/* BEGIN <name> ... */ ... /* END <name> */` (both marker lines and everything between)."""
     begin = text.index(f"/* BEGIN {name}")
@@ -123,7 +168,10 @@ def assemble_site(site):
         # The regional public site's live-data client (its only network call) exists only in regional builds.
         app_js = strip_marked_block(app_js, "REGIONAL-HYDRATION")
 
-    out = tpl.replace("__DATA_JS__", data_js, 1)
+    # The data block is published as separate files (see write_data_scripts); keep a placeholder until the end.
+    out, n = re.subn(r"<script>\s*__DATA_JS__\s*</script>", DATA_PLACEHOLDER, tpl, count=1)
+    if n != 1:
+        raise SystemExit("template.html: <script>__DATA_JS__</script> slot not found")
     out = out.replace("__APP_JS__", build_site_identity_prelude(site) + "\n" + app_js, 1)
 
     # GENERAL is the only slim profile -- JW and JEONJU both keep the full JW-profile HTML
@@ -135,8 +183,9 @@ def assemble_site(site):
 
     out = apply_site_identity(out, site)
 
+    # Local single-file copy (not deployed) keeps the data inline.
     out_html_name = "app.html" if site == "jw" else f"app.{site}.html"
-    open(out_html_name, "w", encoding="utf-8").write(out)
+    open(out_html_name, "w", encoding="utf-8").write(out.replace(DATA_PLACEHOLDER, "<script>\n" + data_js + "\n</script>", 1))
 
     # dist/ layout follows DOMAIN_MAP's meaning, not build-CLI legacy defaults: GENERAL is
     # hoc.tieng.viet.mobile's own content (bare dist/), JW and JEONJU are the two subdomains
@@ -144,7 +193,17 @@ def assemble_site(site):
     # deployment-artifact directory differs; see site_profiles.DOMAIN_MAP.
     dist_dir = Path("dist") if site == "general" else Path("dist") / site
     dist_dir.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(out_html_name, dist_dir / "index.html")
+    if site == "general":
+        # GENERAL's Pages output is dist/ itself: it must not also publish the other profiles' artifacts.
+        for sub in PROFILE_SUBDIRS:
+            try:
+                shutil.rmtree(dist_dir / sub)
+            except FileNotFoundError:
+                pass
+            except OSError as exc:  # e.g. a local server holding the directory open on Windows
+                print(f"[general] WARNING: could not remove dist/{sub} ({exc}); do not deploy this local dist/ as GENERAL")
+    data_tags = write_data_scripts(dist_dir, data_js)
+    open(dist_dir / "index.html", "w", encoding="utf-8").write(out.replace(DATA_PLACEHOLDER, data_tags, 1))
     shutil.copytree("assets", dist_dir / "assets", dirs_exist_ok=True)
     open(dist_dir / "manifest.webmanifest", "w", encoding="utf-8").write(build_manifest(site))
     shutil.copyfile("_redirects", dist_dir / "_redirects")
@@ -162,7 +221,9 @@ def assemble_site(site):
         if worker_path.exists():
             worker_path.unlink()
 
-    print(f"[{site}] app html bytes:", len(out))
+    for f in sorted(dist_dir.glob("*")):
+        if f.is_file():
+            print(f"[{site}] {f.name}: {f.stat().st_size / 1048576:.2f} MiB")
     if removal_counts:
         print(f"[{site}] html removals:", removal_counts)
     print(f"[{site}] deployment artifact:", dist_dir / "index.html")
@@ -174,14 +235,16 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--product", choices=list(PRODUCTS.keys()), default="vietnamese",
                          help="Learning-content language/product (only 'vietnamese' is implemented).")
-    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju", "ulsan", "all"], default="all",
-                         help="Content profile to assemble: general | jw | jeonju | ulsan | all (default: all). --site is kept "
+    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju", "ulsan", "all"], default="general",
+                         help="Content profile to assemble: general | jw | jeonju | ulsan | all (default: general, which is "
+                              "what the GENERAL Pages project deploys from dist/). --site is kept "
                               "as an alias for --profile for backward compatibility.")
     args = parser.parse_args()
     if args.product != "vietnamese":
         raise SystemExit(f"--product {args.product!r} is architecture-ready only; no data/content "
                           f"exists for it in this repo (see site_profiles.PRODUCTS).")
 
+    # "all" builds general first (it clears dist/<profile>/), then each profile into its own subdirectory.
     sites = ["general", "jw", "jeonju", "ulsan"] if args.site == "all" else [args.site]
     for s in sites:
         assemble_site(s)

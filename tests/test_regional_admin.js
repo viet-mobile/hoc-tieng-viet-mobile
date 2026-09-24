@@ -90,8 +90,11 @@ async function signJwt(key, payload, headerOverrides = {}) {
       assert.strictEqual(shipped, fs.readFileSync(buildBundle(region), 'utf8'), `dist/${region}/_worker.js is stale relative to regional_admin/`);
     }
     const forbidden = ['/api/admin/', '/api/auth/', '/api/regional/', 'renderAdminHtml', 'class_cancellations', 'course_plan_items', 'admin_session', 'CF_ACCESS', 'X-CSRF-Token'];
-    for (const [name, file] of [['GENERAL', 'index.html'], ['JW', path.join('jw', 'index.html')]]) {
-      const html = fs.readFileSync(path.join(dist, file), 'utf8');
+    // the deployed bundle = index.html + the data.<n>.<hash>.js files it loads
+    const bundle = dir => [fs.readFileSync(path.join(dir, 'index.html'), 'utf8')]
+      .concat(fs.readdirSync(dir).filter(f => /^data\..+\.js$/.test(f)).map(f => fs.readFileSync(path.join(dir, f), 'utf8'))).join('\n');
+    for (const [name, dir] of [['GENERAL', dist], ['JW', path.join(dist, 'jw')]]) {
+      const html = bundle(dir);
       for (const sig of forbidden) assert(!html.includes(sig), `${name} must not contain regional-admin signature ${sig}`);
     }
     // the regional public pages call only the read-only public endpoint, never the admin/auth API

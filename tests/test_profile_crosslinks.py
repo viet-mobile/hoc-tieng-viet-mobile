@@ -51,14 +51,11 @@ class TestProfileCrossLinks(unittest.TestCase):
 
     def test_built_dist_files_isolation(self):
         root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        with open(os.path.join(root_dir, "dist", "index.html"), encoding="utf-8") as f:
-            general_html = f.read()
-        with open(os.path.join(root_dir, "dist", "jw", "index.html"), encoding="utf-8") as f:
-            jw_html = f.read()
-        with open(os.path.join(root_dir, "dist", "jeonju", "index.html"), encoding="utf-8") as f:
-            jeonju_html = f.read()
-        with open(os.path.join(root_dir, "dist", "ulsan", "index.html"), encoding="utf-8") as f:
-            ulsan_html = f.read()
+        from tests.site_bundle import read_site_bundle
+        general_html = read_site_bundle("general")
+        jw_html = read_site_bundle("jw")
+        jeonju_html = read_site_bundle("jeonju")
+        ulsan_html = read_site_bundle("ulsan")
 
         for html_text, name in [(general_html, "general"), (jw_html, "jw"), (jeonju_html, "jeonju"), (ulsan_html, "ulsan")]:
             # Old footer text must be completely absent in all profiles

@@ -663,10 +663,10 @@ if __name__ == "__main__":
     parser.add_argument("--product", choices=list(PRODUCTS.keys()), default="vietnamese",
                          help="Learning-content language/product (only 'vietnamese' is implemented; "
                               "see site_profiles.PRODUCTS for architecture-ready placeholders).")
-    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju", "ulsan", "all"], default="all",
+    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju", "ulsan", "all"], default="general",
                          help="Content profile to build: general | jw | jeonju | ulsan | all. "
                               "--site is kept as an alias for --profile for backward compatibility; "
-                              "default all builds all profiles.")
+                              "default general (the GENERAL Pages project's build); use --profile all locally.")
     args = parser.parse_args()
 
     if args.product != "vietnamese":
