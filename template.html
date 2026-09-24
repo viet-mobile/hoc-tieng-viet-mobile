@@ -2527,6 +2527,84 @@
     outline: none;
     list-style: none;
   }
+  .pdf-subheading-summary .pdf-readall { margin-left: auto; margin-right: 8px; flex: none; }
+  .pdf-inline-speak { display: inline-flex; vertical-align: middle; width: 28px; height: 28px; margin: 0 4px; }
+  .pdf-inline-speak svg { width: 15px; height: 15px; }
+  .pdf-subheading-summary::-webkit-details-marker {
+    display: none;
+  }
+  .pdf-subheading-summary:focus-visible {
+    box-shadow: inset 0 0 0 2px var(--accent);
+  }
+  .pdf-subheading-group[open] > .pdf-subheading-summary {
+    border-bottom-color: var(--border);
+  }
+  .pdf-subheading-group[open] > .pdf-subheading-summary .chev {
+    transform: rotate(180deg);
+  }
+  .pdf-subheading-summary .chev {
+    color: var(--ink-faint);
+    transition: transform .15s;
+    flex: none;
+    font-size: 0.8rem;
+  }
+  .pdf-subheading-body {
+    padding: 14px 16px;
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--ink);
+  }
+  .pdf-vocab-box {
+    margin: 10px 0;
+    padding: 10px 14px;
+    border-radius: var(--radius-s);
+    background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+    border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border));
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .pdf-vocab-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: var(--accent);
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .pdf-vocab-text {
+    font-size: 0.88rem;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+
+  /* ---------- PDF Learning Content UI ---------- */
+  .pdf-subheading-group {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-m);
+    margin-bottom: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .pdf-subheading-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--ink);
+    cursor: pointer;
+    background: var(--surface-2, var(--surface));
+    border-bottom: 1px solid transparent;
+    user-select: none;
+    outline: none;
+    list-style: none;
+  }
   .pdf-subheading-summary::-webkit-details-marker {
     display: none;
   }
@@ -3087,7 +3165,7 @@
     <!-- ============ GRAMMAR & COMPOSITION ============ -->
     <section class="panel" id="panel-grammar">
       <div class="subtab-row">
-        <button class="subtab-btn" data-grammar="pdf" aria-selected="false" data-i18n="일상 생활">일상 생활</button>
+        <button class="subtab-btn" data-grammar="pdf" aria-selected="false" data-i18n="일반 문법">일반 문법</button>
         <button class="subtab-btn" data-grammar="lessons" aria-selected="true" data-i18n="예문">예문</button>
         <button class="subtab-btn" data-grammar="special" aria-selected="false" data-i18n="특강">특강</button>
         <button class="subtab-btn" data-grammar="sentences" aria-selected="false" data-i18n="범용 언어 생성표">범용 언어 생성표</button>
