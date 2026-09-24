@@ -213,6 +213,10 @@ SITE_TITLES = {
             "ko": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
             "pl": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
         },
+        "cross_link": {
+            "url": "https://jeonju.hoc.tieng.viet.mobile/admin",
+            "text": "관리자?",
+        },
     },
     "ulsan": {
         "title": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
@@ -245,6 +249,10 @@ SITE_TITLES = {
             "ja": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
             "ko": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
             "pl": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+        },
+        "cross_link": {
+            "url": "https://ulsan.hoc.tieng.viet.mobile/admin",
+            "text": "관리자?",
         },
     },
 }

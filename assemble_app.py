@@ -97,6 +97,7 @@ def build_site_identity_prelude(site):
     parts = [
         f'window.SITE_PROFILE = "{site}";',
         f'window.SITE_HOST = "{info["host"]}";',
+        f'document.documentElement.setAttribute("data-site", "{site}");',
     ]
     if info.get("h1_by_lang"):
         parts.append(f"var SITE_H1_BY_LANG = {json.dumps(info['h1_by_lang'], ensure_ascii=False)};")

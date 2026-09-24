@@ -135,12 +135,25 @@
   function Tstrict(field) {
     if (field === null || field === undefined) return null;
     if (typeof field === "string") return currentLang === "ko" ? field : null;
+    // A present-but-empty "ko" means "no Korean translation" (never substitute another language for it).
+    if (currentLang === "ko" && Object.prototype.hasOwnProperty.call(field, "ko")) return field.ko || null;
     if (currentLang === "ko") return field.ko || field.cs || field.zh_cn || field.zh || field.en || field.fr || field.de || field.hu || field.id || field.ja || field.pl || null;
     return field[currentLang] || null;
   }
   var LANG_CHANGE_LISTENERS = [];
   function onLangChange(fn) { LANG_CHANGE_LISTENERS.push(fn); }
   window.setLang = setLang; // hook used by tests/test_browser_runtime.js
+  // GENERAL PDF learning material: the example character "Se-ho / 세호" is presented as "Min-su / 민수".
+  (function renameGeneralPdfCharacters() {
+    if (typeof GENERAL_PDF === "undefined" || !GENERAL_PDF) return;
+    var fix = function (v) {
+      if (typeof v === "string") return v.replace(/Se-ho/g, "Min-su").replace(/세호/g, "민수");
+      if (Array.isArray(v)) { for (var i = 0; i < v.length; i++) v[i] = fix(v[i]); return v; }
+      if (v && typeof v === "object") { Object.keys(v).forEach(function (k) { if (k !== "sources" && k !== "id") v[k] = fix(v[k]); }); }
+      return v;
+    };
+    ["words", "sentences", "grammar"].forEach(function (k) { if (GENERAL_PDF[k]) fix(GENERAL_PDF[k]); });
+  })();
   function setLang(lang) {
     if (VALID_LANGS.indexOf(lang) < 0) return;
     currentLang = lang;
@@ -2443,6 +2456,68 @@
     });
   }
 
+  /* ---------------- [일상 회화] 1·2인칭 대명사: [첫만남] 설정에 맞춰 변형 ----------------
+     In each two-person conversation the Korean character (Tuấn, or Mi-na when Tuấn is absent) stands for the learner
+     ("나" in [첫만남]) and the other speaker for the conversation partner. DAILY_PRONOUN_ROLES lists, per speaker, the
+     pronouns that speaker uses for themselves (self) and for the other person (addr), read from the source dialogue.
+     With a [첫만남] case configured: learner self -> self_term, learner addr -> listener_term; partner self ->
+     listener_term, partner addr -> self_term. Conversations with fixed social roles (shop, restaurant, teacher, doctor)
+     or three speakers are not listed and stay as written. Nouns such as "em gái", "anh ấy", "các bạn" are never touched. */
+  var DAILY_PRONOUN_ROLES = {
+    "daily-01": { learner: "Tuấn", speakers: { "Tuấn": { self: ["anh"], addr: ["em"] }, "Minh": { self: ["em"], addr: ["anh"] } } },
+    "daily-02": { learner: "Tuấn", speakers: { "Tuấn": { self: ["tôi"], addr: ["chị"] }, "Trang": { self: ["em"], addr: ["anh"] } } },
+    "daily-04": { learner: "Tuấn", speakers: { "Tuấn": { self: ["anh"], addr: ["em"] }, "Trang": { self: ["em"], addr: ["anh"] } } },
+    "daily-05": { learner: "Tuấn", speakers: { "Tuấn": { self: ["anh"], addr: ["em"] }, "Trang": { self: ["em"], addr: ["anh"] } } },
+    "daily-06": { learner: "Mi-na", speakers: { "Mi-na": { self: [], addr: ["em"] }, "Minh": { self: ["em"], addr: [] } } },
+    "daily-07": { learner: "Mi-na", speakers: { "Mi-na": { self: [], addr: [] }, "Thuý": { self: ["em"], addr: ["chị"] } } },
+    "daily-10": { learner: "Mi-na", speakers: { "Mi-na": { self: ["chị"], addr: ["em"] }, "Trang": { self: ["em"], addr: ["chị"] } } },
+    "daily-12": { learner: "Tuấn", speakers: { "Tuấn": { self: [], addr: ["chị"] }, "Lan": { self: ["chị"], addr: [] } } },
+    "daily-13": { learner: "Tuấn", speakers: { "Tuấn": { self: ["em"], addr: ["chị"] }, "Lan": { self: [], addr: ["em"] } } },
+    "daily-14": { learner: "Tuấn", speakers: { "Tuấn": { self: [], addr: ["em"] }, "Minh": { self: ["em"], addr: [] } } },
+    "daily-15": { learner: "Tuấn", speakers: { "Tuấn": { self: ["anh"], addr: ["em"] }, "Minh": { self: ["em"], addr: ["anh"] } } },
+    "daily-17": { learner: "Mi-na", speakers: { "Mi-na": { self: ["chị"], addr: [] }, "Trang": { self: [], addr: ["chị"] } } },
+    "daily-18": { learner: "Tuấn", speakers: { "Tuấn": { self: ["anh"], addr: ["em"] }, "Trang": { self: ["em"], addr: ["anh"] } } },
+    "daily-19": { learner: "Mi-na", speakers: { "Mi-na": { self: ["chị"], addr: [] }, "Trang": { self: [], addr: [] } } },
+    "daily-20": { learner: "Tuấn", speakers: { "Tuấn": { self: ["anh"], addr: ["em"] }, "Trang": { self: [], addr: ["anh"] } } }
+  };
+  // The [첫만남] relationship as {self, addr} words, or null while it is not configured (text then stays as written).
+  function firstMeetingPronouns() {
+    var c = typeof findCaseForState === "function" ? findCaseForState(state) : null;
+    if (!c) return null;
+    return {
+      self: termWord(c.self_term, c.self_term_south, state.region),
+      addr: termWord(c.listener_term, c.listener_term_south, state.region)
+    };
+  }
+  // target: [lowercaseReplacement, capitalizedReplacement]
+  function replacePronounWords(text, words, target) {
+    if (!text || !words || !words.length || !target) return text;
+    var re = new RegExp("(?<![\\p{L}])(" + words.join("|") + ")(?![\\p{L}])", "giu");
+    return text.replace(re, function (m, w, offset, full) {
+      var before = full.slice(0, offset), after = full.slice(offset + m.length);
+      // not a personal pronoun here: "em gái", "anh ấy", "con trai", "chị em", plural "các/những/chúng ..."
+      if (/^\s+(?:ấy|gái|trai|họ|ruột|em|chị)(?![\p{L}])/iu.test(after)) return m;
+      if (/(?:các|những|chúng|hai|mấy)\s+$/iu.test(before)) return m;
+      return m[0] !== m[0].toLowerCase() ? target[1] : target[0];
+    });
+  }
+  // Two-step swap through placeholders so "anh"->"em" and "em"->"anh" in the same sentence do not collide.
+  function applyDailyPronouns(conv, turn) {
+    var roles = conv && DAILY_PRONOUN_ROLES[conv.id];
+    var terms = roles ? firstMeetingPronouns() : null;
+    if (!terms || !turn || !turn.vi) return turn ? turn.vi : "";
+    var who = turn.who && turn.who.vi;
+    var mine = roles.speakers[who];
+    if (!mine) return turn.vi;
+    var isLearner = who === roles.learner;
+    var selfTarget = isLearner ? terms.self : terms.addr;
+    var addrTarget = isLearner ? terms.addr : terms.self;
+    var out = replacePronounWords(turn.vi, mine.self, ["\u0001", "\u0003"]);
+    out = replacePronounWords(out, mine.addr, ["\u0002", "\u0004"]);
+    return out.replace(/\u0001/g, selfTarget.toLowerCase()).replace(/\u0003/g, capitalize(selfTarget))
+      .replace(/\u0002/g, addrTarget.toLowerCase()).replace(/\u0004/g, capitalize(addrTarget));
+  }
+
   /* ---------------- 이웃 사람과의 대화 호칭 및 이름 변형 ---------------- */
   var KNOWN_NEIGHBOR_NAMES_RE = "(?:Trung|Sương|Giang|Dũng|Dương|An|Vy|Tín)";
 
@@ -2673,6 +2748,16 @@
     if (sentRoot) {
       sentRoot.replaceChildren();
       var sentRows = GENERAL_PDF.sentences || [];
+      var readAllSentences = readAllButtonHtml(sentRows.filter(function (r) { return r.vi; }).map(function (r) {
+        return [r.vi, (r.translations && r.translations[currentLang]) || ""];
+      }));
+      if (readAllSentences) {
+        var raBar = document.createElement("div");
+        raBar.className = "chain-note";
+        raBar.style.cssText = "display:flex;justify-content:flex-end;align-items:center;gap:8px;";
+        raBar.innerHTML = readAllSentences;
+        sentRoot.appendChild(raBar);
+      }
       sentRows.forEach(function (row) {
         var card = document.createElement("article");
         card.className = "curr-card";
@@ -2934,6 +3019,12 @@
     renderCurrWt();
     renderCurrSongs();
     renderCurrPrayer();
+    if (btns.length === 1) {
+      // Only one subtab left (GENERAL): show its content directly under [문장] and drop the lone subtab button.
+      btns[0].click();
+      var onlyRow = btns[0].closest(".subtab-row");
+      if (onlyRow) onlyRow.style.display = "none";
+    }
   })();
 
   /* ================= WIZARD ================= */
@@ -6275,6 +6366,8 @@ function verifyDistribution(units, dist, pins) {
   }
   function addSentencePairs(target, vietnamese, meaning) {
     sentencePairs(stripReviewListMarker(vietnamese), stripReviewListMarker(meaning)).forEach(function (pair) {
+      // A "Vietnamese" side that contains Hangul is a mis-split fragment (e.g. "/ quyển vở노트"), not a sentence to order.
+      if (pair.vi && /[가-힣]/.test(pair.vi)) return;
       if (pair.vi && pair.kr && pair.kr.trim() && !isIsolatedJw(pair.vi) && !isIsolatedJw(pair.kr) && !isCitationOnlyLine(pair.vi)) {
         pair.vi = normalizeJwOrg(pair.vi);
         pair.kr = normalizeJwOrg(pair.kr);
@@ -6355,7 +6448,7 @@ function verifyDistribution(units, dist, pins) {
     var ql = q ? q.toLowerCase() : "";
     var html = "";
     DAILY_CONVERSATIONS.forEach(function (conv, ci) {
-      var turns = conv.turns.map(function (t) { return { who: t.who, vi: t.vi, kr: T(t) }; });
+      var turns = conv.turns.map(function (t) { return { who: t.who, vi: applyDailyPronouns(conv, t), kr: T(t) }; });
       var vocab = (conv.vocab || []).map(function (v) { return { vi: v.vi, kr: T(v) }; });
       if (ql) {
         var hit = conv.title.vi.toLowerCase().indexOf(ql) >= 0 || T(conv.title).toLowerCase().indexOf(ql) >= 0 ||
@@ -7356,6 +7449,14 @@ function verifyDistribution(units, dist, pins) {
   // rhyme/groups 탭과 같은 방식으로 전체를 한 번 평탄화한 뒤 그 인덱스 범위로 슬라이스하고,
   // 다시 주차별로 묶어 그 주차 카드만 펼쳐서 보여준다(교과/주간 수행 과제 바로가기가
   // vocabRange:{start:(week-1)*50, end:week*50}로 특정 주차를 가리키는 방식과 맞춘 것).
+  // [문장] > [파수대] example sentences: the reader-addressing "bạn" follows the [첫만남] partner term (same exclusions
+  // as 행누: "bạn bè", "người bạn" ... stay). Unchanged until [첫만남] is configured, and never for the word "bạn" itself.
+  function wtExampleVi(w) {
+    if (!w || !w.example) return w ? w.example : "";
+    if (/(?<![\p{L}])bạn(?![\p{L}])/iu.test(w.vi || "")) return w.example;
+    if (!firstMeetingPronouns()) return w.example;
+    return applyLffListenerTerms(w.example);
+  }
   function renderVocabWatchtower(root, q) {
     // The first five articles predate this class. From source article 6 onward, labels follow
     // the actual class calendar, including the three scheduled breaks.
@@ -7394,7 +7495,7 @@ function verifyDistribution(units, dist, pins) {
       var readAllEntries = [];
       wk.words.forEach(function (w) {
         readAllEntries.push([w.vi, T(w.mean)]);
-        readAllEntries.push([w.example, w.example_mean ? T(w.example_mean) : ""]);
+        readAllEntries.push([wtExampleVi(w), w.example_mean ? T(w.example_mean) : ""]);
       });
       var weekLabel = watchtowerDisplayLabel(wk.week);
       var dateRangeTr = T(wk.date_range);
@@ -7410,8 +7511,8 @@ function verifyDistribution(units, dist, pins) {
           '<div class="rhyme-word-main"><span class="rw-word vn">' + escapeHtml(w.vi) + '</span>' +
           '<button class="speak-btn" data-speak="' + escapeAttr(w.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
           '<span class="rw-gloss">' + escapeHtml(T(w.mean)) + '</span></div>' +
-          '<div class="rhyme-word-ex"><span class="vn">' + escapeHtml(w.example) + '</span>' +
-          '<button class="speak-btn" data-speak="' + escapeAttr(w.example) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
+          '<div class="rhyme-word-ex"><span class="vn">' + escapeHtml(wtExampleVi(w)) + '</span>' +
+          '<button class="speak-btn" data-speak="' + escapeAttr(wtExampleVi(w)) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
           (w.example_mean ? '<div class="rhyme-word-ex-mean">' + escapeHtml(T(w.example_mean)) + '</div>' : '') +
           '</div>';
       });
@@ -8412,7 +8513,7 @@ function verifyDistribution(units, dist, pins) {
         else if (scope === "reftable") REF_TABLE.forEach(function (sec) { sec.rows.forEach(function (r) { if (TERM_MEAN[r.listener]) out.push({ vi: r.listener, kr: TU(TERM_MEAN[r.listener]) }); if (TERM_MEAN[r.self]) out.push({ vi: r.self, kr: TU(TERM_MEAN[r.self]) }); }); });
         else if (scope === "talks") OFFER_TALKS.forEach(function (t) { t.lines.forEach(function (l) { sentence(l.vi, Tstrict(l.kr)); }); });
         else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(applyNeighborTermsVi(l.vi), applyNeighborTermsMeaning(Tstrict(l), currentLang)); }); });
-        else if (scope === "daily") DAILY_CONVERSATIONS.forEach(function (c) { c.turns.forEach(function (t) { sentence(t.vi, Tstrict(t)); }); });
+        else if (scope === "daily") DAILY_CONVERSATIONS.forEach(function (c) { c.turns.forEach(function (t) { sentence(applyDailyPronouns(c, t), Tstrict(t)); }); });
       } else if (key === "sentence") {
         if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
         else if (scope === "lpd") LPD_LESSONS.forEach(function (r) {

@@ -33,14 +33,20 @@ class TestProfileCrossLinks(unittest.TestCase):
         self.assertEqual(cross_link["url"], "https://jeonju.hoc.tieng.viet.mobile")
         self.assertEqual(cross_link.get("text"), "전주 학습반?")
 
-    def test_jeonju_has_no_cross_link_config(self):
+    def test_jeonju_cross_link_config(self):
         jeonju_title = SITE_TITLES["jeonju"]
-        self.assertNotIn("cross_link", jeonju_title)
+        self.assertIn("cross_link", jeonju_title)
+        cross_link = jeonju_title["cross_link"]
+        self.assertEqual(cross_link["url"], "https://jeonju.hoc.tieng.viet.mobile/admin")
+        self.assertEqual(cross_link.get("text"), "관리자?")
         self.assertEqual(jeonju_title["h1"], "2026-2027 전주 베트남어 학습반")
 
-    def test_ulsan_has_no_cross_link_config(self):
+    def test_ulsan_cross_link_config(self):
         ulsan_title = SITE_TITLES["ulsan"]
-        self.assertNotIn("cross_link", ulsan_title)
+        self.assertIn("cross_link", ulsan_title)
+        cross_link = ulsan_title["cross_link"]
+        self.assertEqual(cross_link["url"], "https://ulsan.hoc.tieng.viet.mobile/admin")
+        self.assertEqual(cross_link.get("text"), "관리자?")
         self.assertEqual(ulsan_title["h1"], "2026-2027 울산 베트남어 학습반")
         self.assertEqual(ulsan_title["title"], "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027")
         self.assertEqual(ulsan_title["host"], "ulsan.hoc.tieng.viet.mobile")
@@ -90,18 +96,20 @@ class TestProfileCrossLinks(unittest.TestCase):
         self.assertNotIn("ULSAN_INFO", jw_html)
         self.assertNotIn("ULSAN_WEEKS", jw_html)
 
-        # JEONJU check: has NO cross link at all and no empty visible wrapper
-        self.assertNotIn('<a id="site-cross-link"', jeonju_html)
-        self.assertNotIn('class="site-cross-link-wrap"', jeonju_html)
+        # JEONJU check: has cross link to jeonju admin with text "관리자?"
+        self.assertIn('id="site-cross-link"', jeonju_html)
+        self.assertIn('href="https://jeonju.hoc.tieng.viet.mobile/admin"', jeonju_html)
+        self.assertIn('관리자?', jeonju_html)
         self.assertIn('2026-2027 전주 베트남어 학습반', jeonju_html)
         self.assertIn("JEONJU_INFO", jeonju_html)
         self.assertIn("JEONJU_WEEKS", jeonju_html)
         self.assertNotIn("ULSAN_INFO", jeonju_html)
         self.assertNotIn("ULSAN_WEEKS", jeonju_html)
 
-        # ULSAN check: has NO cross link at all and no empty visible wrapper
-        self.assertNotIn('<a id="site-cross-link"', ulsan_html)
-        self.assertNotIn('class="site-cross-link-wrap"', ulsan_html)
+        # ULSAN check: has cross link to ulsan admin with text "관리자?"
+        self.assertIn('id="site-cross-link"', ulsan_html)
+        self.assertIn('href="https://ulsan.hoc.tieng.viet.mobile/admin"', ulsan_html)
+        self.assertIn('관리자?', ulsan_html)
         self.assertIn('2026-2027 울산 베트남어 학습반', ulsan_html)
         self.assertIn("ULSAN_INFO", ulsan_html)
         self.assertIn("ULSAN_WEEKS", ulsan_html)
