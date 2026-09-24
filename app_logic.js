@@ -2770,23 +2770,26 @@
         return sections;
       }
 
-      // Vietnamese sentences inside a mixed Vietnamese/Korean source line: maximal Hangul-free runs with at least two
-      // Latin words that contain a Vietnamese diacritic or have three or more words. A run glued to a following Korean
-      // particle ("Chào는") loses that glued word; list/speaker markers ("A", "1", "①", "•") are not read aloud.
-      var VI_WORD_RE = /[A-Za-zÀ-ɏḀ-ỿ]+/g;
+      // Vietnamese sentences inside a mixed Vietnamese/Korean source line. Pieces are Hangul-free text split at column
+      // gaps (3+ spaces) and list/speaker markers (❶ Ⓐ ① • |); a piece counts when it has at least two Latin words and
+      // either a Vietnamese diacritic or three or more words. A word glued to a Korean particle ("Chào는") is dropped,
+      // leading markers are not read aloud, and pattern notation (+ ~ = _) is skipped.
+      var VI_WORD_RE = /[A-Za-z\u00C0-\u024F\u1E00-\u1EFF]+/g;
       var VI_DIACRITIC_RE = /[àáảãạăằắẳẵặâầấẩẫậèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵđ]/i;
       function viRunsOf(line) {
         var runs = [];
-        var re = /[^가-힣㄰-㆏ᄀ-ᇿ]+/g, m;
+        var re = /(?:(?!\s{3})[^\uAC00-\uD7A3\u3130-\u318F\u1100-\u11FF❶-❿①-⑳Ⓐ-Ⓩⓐ-ⓩ•|])+/g, m;
         while ((m = re.exec(line))) {
-          var start = m.index, seg = m[0], end = start + seg.length;
-          if (end < line.length && /\S$/.test(seg)) seg = seg.slice(0, seg.search(/\S+$/)); // glued to Hangul
-          var lead = seg.match(/^[\s\-–•·*>⇒→①-⑳()\[\]0-9.:]*(?:[A-Z](?=\s{2,}|\s*[:.)]\s))?[\s:.)]*/);
-          var offset = lead ? lead[0].length : 0;
-          var text = seg.slice(offset).replace(/[\s|\/(\[]+$/, "");
+          var seg = m[0], segStart = m.index, segEnd = segStart + seg.length;
+          if (segEnd < line.length && /[\uAC00-\uD7A3]/.test(line[segEnd]) && /\S$/.test(seg)) {
+            seg = seg.slice(0, seg.search(/\S+$/));
+          }
+          var lead = seg.match(/^[\s\-–·*>⇒→()\[\]0-9.:,;'"‘’“”~!?]*(?:[A-Z](?=\s{2,}|\s*[:.)]\s))?[\s:.)]*/);
+          var o = lead ? lead[0].length : 0;
+          var text = seg.slice(o).replace(/[\s\/(\[,;:~‘“]+$/, "");
           var words = text.match(VI_WORD_RE) || [];
-          if (words.length < 2 || !(VI_DIACRITIC_RE.test(text) || words.length >= 3)) continue;
-          runs.push({ start: start + offset, end: start + offset + text.length, text: text });
+          if (/[+~=_]/.test(text) || words.length < 2 || !(VI_DIACRITIC_RE.test(text) || words.length >= 3)) continue;
+          runs.push({ start: segStart + o, end: segStart + o + text.length, text: text });
         }
         return runs;
       }
@@ -5692,11 +5695,6 @@ function verifyDistribution(units, dist, pins) {
   function renderCurrWeek16() {
     var root = document.getElementById("curr-week16-root");
     if (!root) return;
-    var courseSubtab = document.querySelector('.subtab-btn[data-curriculum="week16"]');
-    if (courseSubtab && typeof REGIONAL_SCHEDULE === "undefined" && CURR_WEEKS && CURR_WEEKS.length) {
-      courseSubtab.setAttribute("data-i18n", "20주 과정");
-      courseSubtab.textContent = TU("20주 과정");
-    }
     var html = "";
 
     var isRegional = (typeof REGIONAL_SCHEDULE !== "undefined");

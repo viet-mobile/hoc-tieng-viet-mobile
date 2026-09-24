@@ -213,12 +213,13 @@ async function startServer(workers) {
     await courseHtml();
     info = await cardInfo();
     ok(info.sessions[0] === '2026/10/10 - Session 1', 'English session badge: ' + info.sessions[0]);
-    const tabLabel = await E(`document.querySelector('.subtab-btn[data-curriculum="week16"]').textContent`);
-    ok(tabLabel === 'Study Course', 'the tab is labelled duration-neutrally, got ' + tabLabel);
+    const tabLabel = await E(`document.querySelector('.tab-btn[data-tab="curriculum"]').getAttribute('aria-label') || document.querySelector('.tab-btn[data-tab="curriculum"]').textContent`);
+    ok(tabLabel === 'Course', 'the course tab is labelled duration-neutrally, got ' + tabLabel);
+    ok(await E(`!document.querySelector('#panel-curriculum .subtab-row')`), 'the course panel has no subtab row');
     await E(`localStorage.removeItem('vn-app-lang')`);
     ok((await E(`(function(){ localStorage.setItem('vn-app-lang','ko'); return 1; })()`)) === 1, 'reset language');
     await goto(`http://jeonju.test:${PORT}/`);
-    ok((await E(`document.querySelector('.subtab-btn[data-curriculum="week16"]').textContent`)) === '학습 과정', 'Korean tab label is 학습 과정');
+    ok((await E(`document.querySelector('.tab-btn[data-tab="curriculum"]').textContent`)) === '과정', 'Korean tab label is 과정');
 
     /* ---------- 4. rollback from the admin UI restores the 16-session public plan ---------- */
     await goto(`http://jeonju.test:${PORT}/admin`);
