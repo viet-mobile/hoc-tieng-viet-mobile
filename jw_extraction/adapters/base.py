@@ -41,7 +41,7 @@ class BaseSourceAdapter(ABC):
 
     def finalize_document(self, doc_id: str, title: Dict[str, str],
                           segments: List[CanonicalSegment],
-                          languages: List[str] = None) -> SourceDocument:
+                          languages: List[str] = None, profile: str = "jw") -> SourceDocument:
         """Helper to create a SourceDocument with hash computed over its segments."""
         if languages is None:
             languages = sorted(list({lang for seg in segments for lang in seg.texts.keys()}))
@@ -55,7 +55,7 @@ class BaseSourceAdapter(ABC):
             sourceType=self.source_type,
             sourceId=doc_id,
             title={k: normalize_text(v) for k, v in title.items()},
-            profile="jw",
+            profile=profile,
             hash=doc_hash,
             languages=languages,
             segments=segments,

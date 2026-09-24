@@ -214,12 +214,45 @@ SITE_TITLES = {
             "pl": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
         },
     },
+    "ulsan": {
+        "title": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+        "h1": "2026-2027 울산 베트남어 학습반",
+        "host": "ulsan.hoc.tieng.viet.mobile",
+        "h1_by_lang": {
+            "vi": "2026-2027 울산 베트남어 학습반",
+            "cs": "2026-2027 울산 베트남어 학습반",
+            "zh_cn": "2026-2027 울산 베트남어 학습반",
+            "zh": "2026-2027 울산 베트남어 학습반",
+            "en": "2026-2027 울산 베트남어 학습반",
+            "fr": "2026-2027 울산 베트남어 학습반",
+            "de": "2026-2027 울산 베트남어 학습반",
+            "hu": "2026-2027 울산 베트남어 학습반",
+            "id": "2026-2027 울산 베트남어 학습반",
+            "ja": "2026-2027 울산 베트남어 학습반",
+            "ko": "2026-2027 울산 베트남어 학습반",
+            "pl": "2026-2027 울산 베트남어 학습반",
+        },
+        "title_by_lang": {
+            "vi": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+            "cs": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+            "zh_cn": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+            "zh": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+            "en": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+            "fr": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+            "de": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+            "hu": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+            "id": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+            "ja": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+            "ko": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+            "pl": "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027",
+        },
+    },
 }
 
 # JW-only top-level UI to remove from the template for the GENERAL (slim) profile only --
-# JW and JEONJU both keep the full JW-profile HTML unchanged (JEONJU = JW's complete feature set
-# + its own event layer, not general + event). Described declaratively so assemble_app.py's HTML
-# stripper doesn't need any site-specific logic of its own.
+# JW, JEONJU, and ULSAN keep the full JW-profile HTML unchanged (regional profiles = JW's complete
+# feature set + their own event layer, not general + event). Described declaratively so
+# assemble_app.py's HTML stripper doesn't need any site-specific logic of its own.
 #   tabs: top-level <button class="tab-btn" data-tab="..."> + its <section id="panel-...">, both
 #         removed whole.
 #   subtabs: {attr: e.g. "data-wizard", values: [...]} -- just those subtab-btn buttons, plus any
@@ -228,7 +261,7 @@ SITE_TITLES = {
 #         removing the button is what actually removes the feature from the UI + nav + search).
 #   review_categories: data-review values to drop from the review panel's own category row.
 NON_JW_HTML_REMOVALS = {
-    # In GENERAL: [교과](curriculum) and [문장](sentence) are excluded whole.
+    # GENERAL retains the COMMON PDF sentence pane; only publication panes are removed.
     # Culture has been relocated to [대화] > [문화] (a COMMON subtab under wizard).
     # Songs and Prayer have been relocated to [문장] (JW/JEONJU only).
     # Usage Guide has been merged into [발음] > [설정].
@@ -236,8 +269,9 @@ NON_JW_HTML_REMOVALS = {
     # GRAMMAR_B1_B2_PATTERNS (COMMON), alongside its legacy JW-only content (GX_*, the original
     # GRAMMAR_DICT entries), which is already emptied at the data level for GENERAL via
     # JW_ONLY_CONSTS -- whole-removing this pane would also hide the COMMON B1/B2 material.
-    "tabs": ["curriculum", "sentence"],
+    "tabs": ["curriculum"],
     "subtabs": [
+        {"attr": "data-sentence", "values": ["lff", "lpd", "wt", "song", "prayer", "lff2", "lpd2", "wt2"]},
         {"attr": "data-wizard", "values": ["main", "talks", "neighbor"]},
         {"attr": "data-vocab", "values": ["theo", "names"]},
         {"attr": "data-bible", "values": ["books"]},
@@ -258,10 +292,8 @@ NON_JW_HTML_REMOVALS = {
 #   general        = COMMON only
 #   jw             = COMMON + JW_CONTENT
 #   <event>_event  = COMMON + JW_CONTENT + EVENT_CONTENT[event]
-# (Vietnamese's event profile is internally still keyed "jeonju" rather than "jeonju_event" --
-# see PRODUCTS["vietnamese"]["events"] -- to avoid renaming already-working files/folders
-# (data_block.jeonju.js, dist/jeonju/, app.jeonju.html) for no functional gain; the concept is
-# identical, "jeonju_event" is what it means, not a required literal file/profile name.)
+# (Vietnamese's event profiles are internally keyed "jeonju" and "ulsan" to match build/dist
+# conventions.)
 PRODUCTS = {
     "vietnamese": {
         "jw_content_consts": JW_ONLY_CONSTS,
@@ -272,6 +304,7 @@ PRODUCTS = {
         "titles": SITE_TITLES,
         "events": {
             "jeonju": {"data_module": "jeonju_data", "consts": ["JEONJU_INFO", "JEONJU_WEEKS"]},
+            "ulsan": {"data_module": "ulsan_data", "consts": ["ULSAN_INFO", "ULSAN_WEEKS"]},
         },
     },
     # Architecture-ready placeholders only -- NOT implemented this pass. No Chinese/Indonesian
@@ -309,6 +342,7 @@ DOMAIN_MAP = {
     "hoc.tieng.viet.mobile": {"product": "vietnamese", "profile": "general"},
     "jw.hoc.tieng.viet.mobile": {"product": "vietnamese", "profile": "jw"},
     "jeonju.hoc.tieng.viet.mobile": {"product": "vietnamese", "profile": "jeonju"},
+    "ulsan.hoc.tieng.viet.mobile": {"product": "vietnamese", "profile": "ulsan"},
     # Future domains (architecture-ready only -- these products don't exist yet, see PRODUCTS):
     # "zhong.wen.viet.mobile": {"product": "chinese", "profile": "general"},
     # "jw.zhong.wen.viet.mobile": {"product": "chinese", "profile": "jw"},

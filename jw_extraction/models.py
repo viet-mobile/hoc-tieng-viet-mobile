@@ -17,9 +17,10 @@ class CanonicalSegment:
     segmentType: str  # 'sentence', 'dialogue', 'lyric', 'heading'
     texts: Dict[str, str] = field(default_factory=dict)
     hash: str = ""
+    metadata: Dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
-        return {
+        result = {
             "id": self.id,
             "sourceType": self.sourceType,
             "sourceId": self.sourceId,
@@ -30,6 +31,9 @@ class CanonicalSegment:
             "texts": self.texts,
             "hash": self.hash,
         }
+        if self.metadata:
+            result["metadata"] = self.metadata
+        return result
 
 @dataclass
 class SourceDocument:

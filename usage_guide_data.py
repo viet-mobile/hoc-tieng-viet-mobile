@@ -173,21 +173,20 @@ USAGE_GUIDE_COMMON = [{'name': {'ko': '복습 화면',
            'de': 'Suchleiste',
            'fr': 'Barre de recherche',
            'pl': 'Wyszukiwarka'},
-  'body': {'ko': '어휘 탭, 성경 탭, 문법 > 특강 탭에는 각각의 검색창이 있어서 단어나 표현을 입력하면 지금 보고 있는 소분류 안에서 바로 찾아줘요. 어휘 탭에서 검색어를 입력하면 16주 '
-                 '과정에서 넘어올 때 뜨는 학습 범위 표시는 자동으로 해제돼요.',
-           'zh': '「詞彙」「聖經」「文法 > 專題」分頁各自都有搜尋欄，輸入單字或用語即可在目前所在的小分類中立即找到。若在「詞彙」分頁輸入搜尋字詞，從 16 週課程連結過來時顯示的學習範圍標示會自動解除。',
+  'body': {'ko': '어휘 탭, 성경 탭, 문법 > 특강 탭에는 각각의 검색창이 있어서 단어나 표현을 입력하면 지금 보고 있는 소분류 안에서 바로 찾아줘요. 어휘 탭에서 검색어를 입력하면 '
+                 '학습 과정에서 넘어올 때 뜨는 학습 범위 표시는 자동으로 해제돼요.',
+           'zh': '「詞彙」「聖經」「文法 > 專題」分頁各自都有搜尋欄，輸入單字或用語即可在目前所在的小分類中立即找到。若在「詞彙」分頁輸入搜尋字詞，從學習課程連結過來時顯示的學習範圍標示會自動解除。',
            'en': 'The Vocabulary, Bible, and Grammar > Special topics tabs each have their own search box that filters '
                  "within the subtab you're currently viewing. Typing into the Vocabulary search box automatically "
-                 'clears the "focus range" banner shown when you arrived via a shortcut from the 16-week course.',
+                 'clears the "focus range" banner shown when you arrived via a shortcut from the study course.',
            'ja': '「語彙」「聖書」「文法 > '
-                 '特別講座」の各タブには、それぞれ専用の検索ボックスがあり、単語や表現を入力すると今見ている小分類内ですぐに検索できます。「語彙」タブで検索語を入力すると、16週コースから移動してきた際に表示される学習範囲の表示は自動的に解除されます。',
+                 '特別講座」の各タブには、それぞれ専用の検索ボックスがあり、単語や表現を入力すると今見ている小分類内ですぐに検索できます。「語彙」タブで検索語を入力すると、学習コースから移動してきた際に表示される学習範囲の表示は自動的に解除されます。',
            'de': 'In den Tabs Wortschatz, Bibel und Grammatik > Besondere Themen gibt es jeweils eigene Suchleisten, '
                  'um innerhalb der aktuellen Unterkategorie schnell Wörter oder Ausdrücke zu finden. Die Eingabe eines '
-                 'Suchbegriffs im Tab Wortschatz hebt das Lernbereichs-Banner des 16-Wochen-Kurses automatisch auf.',
+                 'Suchbegriffs im Tab Wortschatz hebt das Lernbereichs-Banner des Lernkurses automatisch auf.',
            'fr': 'Les onglets Vocabulaire, Bible et Grammaire > Cours thématiques disposent chacun d’une barre de '
                  'recherche permettant de filtrer instantanément dans la sous-catégorie affichée. Saisir un mot dans '
-                 'la recherche de Vocabulaire désactive automatiquement la bannière de plage d’étude venue du cours de '
-                 '16 semaines.',
+                 'la recherche de Vocabulaire désactive automatiquement la bannière de plage d’étude venue du cours d’étude.',
            'pl': 'Pole wyszukiwania w prawym górnym rogu pozwala szybko znaleźć potrzebne słowo lub wyrażenie, '
                  'wpisując tekst po wietnamsku lub w swoim języku ojczystym. Wyniki pojawiają się na bieżąco podczas '
                  'pisania.'}},
@@ -198,25 +197,25 @@ USAGE_GUIDE_COMMON = [{'name': {'ko': '복습 화면',
            'de': 'Schaltfläche „Direkt zu“',
            'fr': 'Bouton d’accès direct',
            'pl': 'Losowa kolejność (fiszki)'},
-  'body': {'ko': '16주 과정, 주간 수행 과제 등 곳곳에 있는 바로가기 버튼을 누르면 관련된 탭·소분류로 자동으로 이동하고, 필요하면 해당 항목까지 화면을 스크롤해서 펼쳐 보여줘요.',
-           'zh': '點選 16 週課程、每週學習作業等處的「前往」按鈕，就會自動跳到相關的分頁與小分類，並視需要捲動畫面、展開該項目讓您查看。',
-           'en': 'The "Go" buttons scattered through the 16-week course, weekly assignments, and elsewhere jump '
+  'body': {'ko': '학습 과정, 주간 수행 과제 등 곳곳에 있는 바로가기 버튼을 누르면 관련된 탭·소분류로 자동으로 이동하고, 필요하면 해당 항목까지 화면을 스크롤해서 펼쳐 보여줘요.',
+           'zh': '點選學習課程、每週學習作業等處的「前往」按鈕，就會自動跳到相關的分頁與小分類，並視需要捲動畫面、展開該項目讓您查看。',
+           'en': 'The "Go" buttons scattered through the study course, weekly assignments, and elsewhere jump '
                  'straight to the related tab and subtab, scrolling to and expanding that item if needed.',
-           'ja': '16週コースや週間の課題など、あちこちにある「移動」ボタンを押すと、関連するタブ・小分類へ自動的に移動し、必要に応じてその項目まで画面をスクロールして展開表示します。',
-           'de': 'Die Schaltflächen „Direkt zu“ im 16-Wochen-Kurs, bei den wöchentlichen Aufgaben und an anderen '
+           'ja': '学習コースや週間の課題など、あちこちにある「移動」ボタンを押すと、関連するタブ・小分類へ自動的に移動し、必要に応じてその項目まで画面をスクロールして展開表示します。',
+           'de': 'Die Schaltflächen „Direkt zu“ im Lernkurs, bei den wöchentlichen Aufgaben und an anderen '
                  'Stellen springen direkt zum passenden Tab und Untermenü und scrollen bei Bedarf direkt zum '
                  'entsprechenden Eintrag, um ihn aufzuklappen.',
-           'fr': 'Les boutons d’accès direct disséminés dans le cours de 16 semaines, les devoirs hebdomadaires et '
+           'fr': 'Les boutons d’accès direct disséminés dans le cours d’étude, les devoirs hebdomadaires et '
                  'ailleurs vous redirigent automatiquement vers l’onglet et la sous-catégorie appropriés, en faisant '
                  'défiler l’écran jusqu’à l’élément pour le déplier si nécessaire.',
            'pl': 'W trybie fiszek możesz włączyć opcję losowej kolejności, aby pytania pojawiały się w przypadkowym '
                  'porządku, co zapobiega mechanicznemu zapamiętywaniu sekwencji.'}},
- {'name': {'ko': '16주 과정의 학습 범위 배너',
-           'zh': '16 週課程的學習範圍提示條',
-           'en': '16-week course "focus range" banner',
-           'ja': '16週コースの学習範囲バナー',
-           'de': 'Lernbereichs-Banner des 16-Wochen-Kurses',
-           'fr': 'Bannière de plage d’étude du cours de 16 semaines',
+ {'name': {'ko': '학습 과정의 학습 범위 배너',
+           'zh': '學習課程的學習範圍提示條',
+           'en': 'Study-course "focus range" banner',
+           'ja': '学習コースの学習範囲バナー',
+           'de': 'Lernbereichs-Banner des Lernkurses',
+           'fr': 'Bannière de plage d’étude du cours d’étude',
            'pl': 'Zakres elementów do powtórki'},
   'body': {'ko': '바로가기로 어휘 탭에 들어가면 지금 보고 있는 단어 범위를 알려주는 배너가 뜨고, 학습 범위내 복습 게임 버튼으로 그 범위의 단어만 골라 복습 게임을 할 수 있어요. 배너의 전체 '
                  '보기 버튼을 누르거나 검색창에 검색어를 입력하면 범위가 풀려요.',
@@ -351,33 +350,33 @@ USAGE_GUIDE_TABS = [{'tab_label': {'ko': '교과',
                 'ja': '教科',
                 'de': 'Lehrplan',
                 'fr': 'Programme',
-                'pl': '16-tygodniowy kurs'},
-  'items': [{'name': {'ko': '16주 과정',
-                      'zh': '16 週課程',
-                      'en': '16-Week Course',
-                      'ja': '16週コース',
-                      'de': '16-Wochen-Kurs',
-                      'fr': 'Cours de 16 semaines',
-                      'pl': 'Harmonogram 16 tygodni'},
-             'body': {'ko': '학습반 16주 교과 과정 전체 목차예요. 맨 위 환영 카드를 펼치면 학습반 소개와 4단계(1~16주) 개요를 볼 수 있고, 주차별 카드를 펼치면 그 주에 배울 '
-                            '항목들과 바로가기 버튼, 그리고 그 주의 주간 수행 과제(복습·예습·어휘 범위)를 확인할 수 있어요.',
-                      'zh': '這是學習班 16 週課程的完整目錄。展開最上方的歡迎卡片，可以看到學習班介紹與 4 個階段（第 1~16 '
-                            '週）的概要；展開各週卡片，則能查看該週要學的項目、「前往」按鈕，以及該週的每週學習作業（複習、預習、詞彙範圍）。',
-                      'en': 'The full table of contents for the 16-week class curriculum. Expand the welcome card at '
-                            'the top for an introduction to the class and an overview of its four phases (weeks 1-16); '
-                            'expand any week\'s card to see that week\'s items with "Go" buttons, plus its Weekly '
+                'pl': 'Program nauczania'},
+  'items': [{'name': {'ko': '학습 과정',
+                      'zh': '學習課程',
+                      'en': 'Study Course',
+                      'ja': '学習コース',
+                      'de': 'Lernkurs',
+                      'fr': 'Cours d’étude',
+                      'pl': 'Kurs nauki'},
+             'body': {'ko': '학습반 교과 과정 전체 목차예요. 맨 위 환영 카드를 펼치면 학습반 소개와 단계별 개요를 볼 수 있고, 회차별 카드를 펼치면 그 회차에 배울 '
+                            '항목들과 바로가기 버튼, 그리고 주간 수행 과제(복습·예습·어휘 범위)를 확인할 수 있어요.',
+                      'zh': '這是學習班課程的完整目錄。展開最上方的歡迎卡片，可以看到學習班介紹與各階段的概要；展開各次課的卡片，'
+                            '則能查看該次要學的項目、「前往」按鈕，以及每週學習作業（複習、預習、詞彙範圍）。',
+                      'en': 'The full table of contents for the class curriculum. Expand the welcome card at '
+                            'the top for an introduction to the class and an overview of its phases; '
+                            'expand any session\'s card to see that session\'s items with "Go" buttons, plus its Weekly '
                             'Assignment (review/preview/vocabulary range).',
-                      'ja': '学習コースの16週間の教科課程の全目次です。上部の歓迎カードを開くと、学習コースの紹介と4段階（1〜16週）の概要が見られ、各週のカードを開くと、その週に学ぶ項目や「移動」ボタン、そしてその週の週間の課題（復習・予習・語彙の範囲）を確認できます。',
-                      'de': 'Vollständiges Inhaltsverzeichnis des 16-wöchigen Lehrplans. Klappen Sie die '
-                            'Willkommenskarte oben auf, um eine Einführung in den Kurs und einen Überblick über die 4 '
-                            'Phasen (Woche 1–16) zu sehen. In den einzelnen Wochenkarten finden Sie die jeweiligen '
+                      'ja': '学習コースの教科課程の全目次です。上部の歓迎カードを開くと、学習コースの紹介と各段階の概要が見られ、各回のカードを開くと、その回に学ぶ項目や「移動」ボタン、そして週間の課題（復習・予習・語彙の範囲）を確認できます。',
+                      'de': 'Vollständiges Inhaltsverzeichnis des Lehrplans. Klappen Sie die '
+                            'Willkommenskarte oben auf, um eine Einführung in den Kurs und einen Überblick über die '
+                            'Phasen zu sehen. In den einzelnen Einheiten-Karten finden Sie die jeweiligen '
                             'Lektionen mit „Direkt zu“-Schaltflächen sowie die wöchentlichen Aufgaben (Wiederholung, '
                             'Vorbereitung und Wortschatzbereich).',
-                      'fr': 'Le sommaire complet du programme de 16 semaines. Dépliez la carte de bienvenue en haut '
-                            'pour découvrir la présentation du cours et l’aperçu des 4 phases (semaines 1 à 16) ; '
-                            'dépliez chaque semaine pour voir les leçons avec leurs boutons d’accès direct et les '
+                      'fr': 'Le sommaire complet du programme du cours. Dépliez la carte de bienvenue en haut '
+                            'pour découvrir la présentation du cours et l’aperçu des phases ; '
+                            'dépliez chaque séance pour voir les leçons avec leurs boutons d’accès direct et les '
                             'devoirs hebdomadaires (révisions, préparations, plage de vocabulaire).',
-                      'pl': 'Główny plan nauki rozpisany na 16 tygodni. Każdy tydzień zawiera przydział zadań na '
+                      'pl': 'Główny plan nauki kursu. Każde zajęcia zawierają przydział zadań na '
                             'poszczególne dni, obejmujący wymowę, słownictwo, gramatykę, pieśni i wersety biblijne.'}},
             {'name': {'ko': '문화',
                       'zh': '文化',
@@ -982,18 +981,18 @@ USAGE_GUIDE_TABS = [{'tab_label': {'ko': '교과',
                       'de': '(Tab-übergreifend) Suche & Lernbereich',
                       'fr': '(Commun) Recherche et plage d’étude',
                       'pl': '(Wspólne) Wyszukiwanie i zakres nauki'},
-             'body': {'ko': '어휘 탭 상단의 검색창은 지금 보고 있는 소분류 안에서 바로 검색해 주고, 16주 과정에서 바로가기로 들어오면 학습 범위 배너와 학습 범위내 복습 게임 버튼이 '
+             'body': {'ko': '어휘 탭 상단의 검색창은 지금 보고 있는 소분류 안에서 바로 검색해 주고, 학습 과정에서 바로가기로 들어오면 학습 범위 배너와 학습 범위내 복습 게임 버튼이 '
                             '함께 나타나요.',
-                      'zh': '詞彙分頁上方的搜尋欄可在目前所在的小分類中立即搜尋，若透過 16 週課程的「前往」按鈕進入，畫面上還會同時出現學習範圍提示條與「本範圍複習遊戲」按鈕。',
+                      'zh': '詞彙分頁上方的搜尋欄可在目前所在的小分類中立即搜尋，若透過學習課程的「前往」按鈕進入，畫面上還會同時出現學習範圍提示條與「本範圍複習遊戲」按鈕。',
                       'en': "The search box at the top of the Vocabulary tab searches within whichever subtab you're "
-                            'on, and arriving via a shortcut from the 16-week course also shows the focus-range banner '
+                            'on, and arriving via a shortcut from the study course also shows the focus-range banner '
                             'with its "Review Game (This Range Only)" button.',
-                      'ja': '語彙タブ上部の検索ボックスは、今見ている小分類内をすぐに検索します。16週コースから「移動」で入ってきた場合は、学習範囲バナーと「この範囲だけの復習ゲーム」ボタンも一緒に表示されます。',
+                      'ja': '語彙タブ上部の検索ボックスは、今見ている小分類内をすぐに検索します。学習コースから「移動」で入ってきた場合は、学習範囲バナーと「この範囲だけの復習ゲーム」ボタンも一緒に表示されます。',
                       'de': 'Die Suchleiste oben im Tab Wortschatz sucht direkt in der aktuellen Unterkategorie. Wenn '
-                            'Sie über einen Direktlink aus dem 16-Wochen-Kurs kommen, erscheinen das '
+                            'Sie über einen Direktlink aus dem Lernkurs kommen, erscheinen das '
                             'Lernbereichs-Banner und die Schaltfläche für das bereichsbezogene Wiederholungsspiel.',
                       'fr': 'La barre de recherche en haut filtre directement dans la sous-catégorie en cours. En '
-                            'arrivant via un lien du cours de 16 semaines, la bannière de plage d’étude et le bouton '
+                            'arrivant via un lien du cours d’étude, la bannière de plage d’étude et le bouton '
                             'de révision ciblée s’affichent.',
                       'pl': 'Wyszukiwarka w zakładce Słownictwo pozwala na natychmiastowe przeszukiwanie bieżącej '
                             'podkategorii. Wybierając zakres, można uczyć się słówek partiami.'}}]},

@@ -5,10 +5,28 @@ Separates raw corpus segments from high-value learning sentences and merges dupl
 """
 
 from typing import List, Dict, Any
+import json
 from jw_extraction.models import CanonicalSegment, LearningSentence
 from jw_extraction.normalization import normalize_text, normalize_key, compute_hash
 
 class SentenceSelector:
+    @staticmethod
+    def consolidate_exact(records, prefix):
+        """Source-backed GENERAL policy: full content AND context identity.
+
+        JW's historical vi-only scoring/deduplication below remains unchanged.
+        This policy also supports explicitly defined words and grammar records;
+        no translation from a different sense/context can supplement a record.
+        """
+        grouped = {}
+        for value, source in records:
+            key = json.dumps(value, ensure_ascii=False, sort_keys=True)
+            if key not in grouped:
+                grouped[key] = dict(value, id=prefix + compute_hash(key), sources=[])
+            if source not in grouped[key]["sources"]:
+                grouped[key]["sources"].append(source)
+        return list(grouped.values())
+
     def __init__(self, confirmed_word_keys: set = None, grammar_patterns: dict = None):
         self.confirmed_word_keys = confirmed_word_keys or set()
         self.grammar_patterns = grammar_patterns or {}

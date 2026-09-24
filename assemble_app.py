@@ -105,11 +105,23 @@ def build_site_identity_prelude(site):
     return "\n".join(parts)
 
 
+def strip_marked_block(text, name):
+    """Remove `/* BEGIN <name> ... */ ... /* END <name> */` (both marker lines and everything between)."""
+    begin = text.index(f"/* BEGIN {name}")
+    end_marker = f"/* END {name} */"
+    end = text.index(end_marker, begin) + len(end_marker)
+    return text[:begin] + text[end:]
+
+
 def assemble_site(site):
     tpl = open("template.html", encoding="utf-8").read()
     data_js_path = "data_block.js" if site == "jw" else f"data_block.{site}.js"
     data_js = open(data_js_path, encoding="utf-8").read()
     app_js = open("app_logic.js", encoding="utf-8").read()
+
+    if site not in ("jeonju", "ulsan"):
+        # The regional public site's live-data client (its only network call) exists only in regional builds.
+        app_js = strip_marked_block(app_js, "REGIONAL-HYDRATION")
 
     out = tpl.replace("__DATA_JS__", data_js, 1)
     out = out.replace("__APP_JS__", build_site_identity_prelude(site) + "\n" + app_js, 1)
@@ -137,6 +149,19 @@ def assemble_site(site):
     open(dist_dir / "manifest.webmanifest", "w", encoding="utf-8").write(build_manifest(site))
     shutil.copyfile("_redirects", dist_dir / "_redirects")
 
+    # Physical build isolation: _worker.js is generated ONLY for regional sites (jeonju, ulsan).
+    # general and jw are 100% static sites with 0 admin UI bytes, 0 API routes, and NO _worker.js.
+    worker_path = dist_dir / "_worker.js"
+    if site in ("jeonju", "ulsan"):
+        from regional_admin.bundle_worker import bundle_regional_worker
+        worker_code = bundle_regional_worker(site)
+        with open(worker_path, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(worker_code)
+        print(f"[{site}] regional worker artifact:", worker_path, f"({len(worker_code)} bytes)")
+    else:
+        if worker_path.exists():
+            worker_path.unlink()
+
     print(f"[{site}] app html bytes:", len(out))
     if removal_counts:
         print(f"[{site}] html removals:", removal_counts)
@@ -149,15 +174,15 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--product", choices=list(PRODUCTS.keys()), default="vietnamese",
                          help="Learning-content language/product (only 'vietnamese' is implemented).")
-    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju", "all"], default="all",
-                         help="Content profile to assemble: general | jw | jeonju | all (default: all). --site is kept "
+    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju", "ulsan", "all"], default="all",
+                         help="Content profile to assemble: general | jw | jeonju | ulsan | all (default: all). --site is kept "
                               "as an alias for --profile for backward compatibility.")
     args = parser.parse_args()
     if args.product != "vietnamese":
         raise SystemExit(f"--product {args.product!r} is architecture-ready only; no data/content "
                           f"exists for it in this repo (see site_profiles.PRODUCTS).")
 
-    sites = ["general", "jw", "jeonju"] if args.site == "all" else [args.site]
+    sites = ["general", "jw", "jeonju", "ulsan"] if args.site == "all" else [args.site]
     for s in sites:
         assemble_site(s)
 

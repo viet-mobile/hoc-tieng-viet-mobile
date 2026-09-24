@@ -48,7 +48,8 @@ const EXPECTED_H1 = {
     ko: "JW 베트남어 학습",
     pl: "JW Nauka wietnamskiego",
   },
-  jeonju: "2026-2027 전주 베트남어 학습반"
+  jeonju: "2026-2027 전주 베트남어 학습반",
+  ulsan: "2026-2027 울산 베트남어 학습반"
 };
 
 const EXPECTED_TITLE = {
@@ -80,7 +81,8 @@ const EXPECTED_TITLE = {
     ko: "JW 베트남어 학습",
     pl: "JW Nauka wietnamskiego",
   },
-  jeonju: "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027"
+  jeonju: "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+  ulsan: "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027"
 };
 
 const EXPECTED_BCP47 = {
@@ -98,6 +100,20 @@ const EXPECTED_BCP47 = {
   pl: "pl"
 };
 
+const EXPECTED_DROPDOWN_ORDER = [
+  ['ko', '한국어'],
+  ['ja', '日本語'],
+  ['zh', '繁體中文'],
+  ['zh_cn', '简体中文'],
+  ['cs', 'Čeština'],
+  ['de', 'Deutsch'],
+  ['en', 'English'],
+  ['fr', 'Français'],
+  ['id', 'Indonesia'],
+  ['hu', 'Magyar'],
+  ['pl', 'Polski'],
+  ['vi', 'Tiếng Việt'],
+];
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -176,6 +192,7 @@ async function runTest() {
     '--disable-gpu',
     '--no-first-run',
     '--no-default-browser-check',
+    '--user-data-dir=' + require('path').resolve('scratch', 'pdf-browser-profile-' + process.pid),
     '--window-size=390,844',
   ], { stdio: 'ignore' });
 
@@ -201,6 +218,7 @@ async function runTest() {
     { name: 'GENERAL', path: '/index.html', site: 'general', expectExtractionNull: true },
     { name: 'JW', path: '/jw/index.html', site: 'jw', expectExtractionNull: false },
     { name: 'JEONJU', path: '/jeonju/index.html', site: 'jeonju', expectExtractionNull: false },
+    { name: 'ULSAN', path: '/ulsan/index.html', site: 'ulsan', expectExtractionNull: false },
   ];
 
   let allPassed = true;
@@ -315,40 +333,71 @@ async function runTest() {
       console.log(`  [PASS] Profile isolation verified (expect null = ${prof.expectExtractionNull})`);
     }
 
+    // Verify dropdown display order matches EXPECTED_DROPDOWN_ORDER
+    const dropdownOrderRes = await cdp.send('Runtime.evaluate', {
+      expression: `
+        (function() {
+          var sel = document.querySelector('#lang-select');
+          if (!sel) return { ok: false, error: 'lang_select_missing' };
+          var options = Array.from(sel.options).map(function(o) { return [o.value, o.textContent.trim()]; });
+          return { ok: true, options: options };
+        })()
+      `,
+      returnByValue: true,
+    });
+    const orderData = dropdownOrderRes.result.value;
+    if (!orderData || !orderData.ok) {
+      console.error(`  [FAIL] ${prof.name}: #lang-select is missing!`);
+      pass = false;
+      allPassed = false;
+    } else {
+      const isOrderMatch = JSON.stringify(orderData.options) === JSON.stringify(EXPECTED_DROPDOWN_ORDER);
+      if (!isOrderMatch) {
+        console.error(`  [FAIL] ${prof.name}: Dropdown options display order mismatch!`, orderData.options);
+        pass = false;
+        allPassed = false;
+      } else {
+        console.log(`  [PASS] Language dropdown display order exactly matches 12-language requirement`);
+      }
+    }
+
     // 1 & 2. Comprehensive 12-language Cycle: Select -> Assert -> Reload -> Assert (all 12 languages)
     console.log(`  --- Testing Complete 12-Language Selection & Reload Cycle ---`);
     for (const lang of CANONICAL_LANGS) {
-      const expectedH1 = prof.site === 'jeonju' ? EXPECTED_H1.jeonju : EXPECTED_H1[prof.site][lang];
-      const expectedTitle = prof.site === 'jeonju' ? EXPECTED_TITLE.jeonju : EXPECTED_TITLE[prof.site][lang];
+      const expectedH1 = typeof EXPECTED_H1[prof.site] === 'string' ? EXPECTED_H1[prof.site] : EXPECTED_H1[prof.site][lang];
+      const expectedTitle = typeof EXPECTED_TITLE[prof.site] === 'string' ? EXPECTED_TITLE[prof.site] : EXPECTED_TITLE[prof.site][lang];
       const expectedHtmlLang = EXPECTED_BCP47[lang];
 
-      // 1. Select language
+      // 1. Select language via single dropdown
       const switchRes = await cdp.send('Runtime.evaluate', {
         expression: `
           (function() {
-            var btn = document.querySelector('.lang-btn[data-lang="' + '${lang}' + '"]');
-            if (btn) btn.click();
             var sel = document.querySelector('#lang-select');
             if (sel && sel.value !== '${lang}') {
               sel.value = '${lang}';
               sel.dispatchEvent(new Event('change'));
             }
+            var dropdownCount = document.querySelectorAll('#lang-select').length;
+            var langBtnCount = document.querySelectorAll('.lang-btn').length;
+            var langSwitchBtnCount = document.querySelectorAll('.lang-switch-buttons').length;
             var h1 = document.querySelector('#app-title') ? document.querySelector('#app-title').textContent.trim() : null;
             var title = document.title;
             var htmlLang = document.documentElement.getAttribute('lang');
             var overflow = document.documentElement.scrollWidth > window.innerWidth || document.body.scrollWidth > window.innerWidth;
-            var btns = Array.from(document.querySelectorAll('.lang-btn'));
-            var activeBtns = btns.filter(function(b) { return b.getAttribute('aria-pressed') === 'true'; });
-            var isExactlyOneBtnActive = activeBtns.length === 1 && activeBtns[0].getAttribute('data-lang') === '${lang}';
-            var isSelActive = sel ? sel.value === '${lang}' : true;
+            var isSelActive = sel ? sel.value === '${lang}' : false;
+            var topbarCrossLink = document.querySelector('.topbar #site-cross-link');
+            var oldFooterPresent = document.body.innerText.includes('Built by combining') || document.body.innerText.includes('형제·자매 베트남어 대화 확장훈련');
             return {
               h1: h1,
               title: title,
               htmlLang: htmlLang,
               overflow: overflow,
-              btnActive: isExactlyOneBtnActive,
+              dropdownCount: dropdownCount,
+              langBtnCount: langBtnCount,
+              langSwitchBtnCount: langSwitchBtnCount,
               selActive: isSelActive,
-              activeBtnCount: activeBtns.length
+              topbarCrossLink: !!topbarCrossLink,
+              oldFooterPresent: oldFooterPresent
             };
           })()
         `,
@@ -357,27 +406,42 @@ async function runTest() {
 
       const before = switchRes.result.value;
 
-      // 2. Assert H1 text matches expected profile H1 before reload
+      // Assertions before reload
+      if (before.dropdownCount !== 1) {
+        console.error(`  [FAIL] ${prof.name} lang=${lang} (before reload): Expected exactly 1 #lang-select, got ${before.dropdownCount}`);
+        pass = false;
+        allPassed = false;
+      }
+      if (before.langBtnCount !== 0 || before.langSwitchBtnCount !== 0) {
+        console.error(`  [FAIL] ${prof.name} lang=${lang} (before reload): Stale language button elements found! btns=${before.langBtnCount}, row=${before.langSwitchBtnCount}`);
+        pass = false;
+        allPassed = false;
+      }
+      if (!before.selActive) {
+        console.error(`  [FAIL] ${prof.name} lang=${lang} (before reload): Language dropdown active mismatch!`);
+        pass = false;
+        allPassed = false;
+      }
+      if (before.topbarCrossLink) {
+        console.error(`  [FAIL] ${prof.name} lang=${lang} (before reload): Topbar still contains cross-link!`);
+        pass = false;
+        allPassed = false;
+      }
+      if (before.oldFooterPresent) {
+        console.error(`  [FAIL] ${prof.name} lang=${lang} (before reload): Old footer text still present!`);
+        pass = false;
+        allPassed = false;
+      }
       if (before.h1 !== expectedH1) {
         console.error(`  [FAIL] ${prof.name} lang=${lang} (before reload): H1 mismatch! Got "${before.h1}", expected "${expectedH1}"`);
         pass = false;
         allPassed = false;
       }
-
-      // 3. Assert document.title matches expected profile title before reload
       if (before.title !== expectedTitle) {
         console.error(`  [FAIL] ${prof.name} lang=${lang} (before reload): Title mismatch! Got "${before.title}", expected "${expectedTitle}"`);
         pass = false;
         allPassed = false;
       }
-
-      // Assert active language controls before reload
-      if (!before.btnActive || !before.selActive) {
-        console.error(`  [FAIL] ${prof.name} lang=${lang} (before reload): Active language state mismatch! btnActive=${before.btnActive} (count=${before.activeBtnCount}), selActive=${before.selActive}`);
-        pass = false;
-        allPassed = false;
-      }
-
       if (before.overflow) {
         console.error(`  [FAIL] ${prof.name} lang=${lang}: horizontal overflow at 390px!`);
         pass = false;
@@ -439,16 +503,16 @@ async function runTest() {
                 if (htmlLang !== '${expectedHtmlLang}') {
                   return { ready: false, reason: 'html_lang_mismatch (got ' + htmlLang + ', expected ${expectedHtmlLang})' };
                 }
-                // Exactly one language button active matching ${lang}
-                var btns = Array.from(document.querySelectorAll('.lang-btn'));
-                var activeBtns = btns.filter(function(b) { return b.getAttribute('aria-pressed') === 'true'; });
-                if (activeBtns.length !== 1 || activeBtns[0].getAttribute('data-lang') !== '${lang}') {
-                  return { ready: false, reason: 'lang_btn_active_mismatch (activeCount=' + activeBtns.length + ', activeLang=' + (activeBtns[0] ? activeBtns[0].getAttribute('data-lang') : 'none') + ')' };
-                }
-                // Language select (if present) must match ${lang}
+                // Exactly one language dropdown matching ${lang}
                 var sel = document.querySelector('#lang-select');
-                if (sel && sel.value !== '${lang}') {
+                if (!sel) {
+                  return { ready: false, reason: 'lang_select_missing' };
+                }
+                if (sel.value !== '${lang}') {
                   return { ready: false, reason: 'lang_select_mismatch (got ' + sel.value + ', expected ${lang})' };
+                }
+                if (document.querySelectorAll('.lang-btn').length !== 0) {
+                  return { ready: false, reason: 'stale_lang_btns_present' };
                 }
                 // Expected H1 text must be rendered
                 var h1El = document.querySelector('#app-title');
@@ -492,27 +556,34 @@ async function runTest() {
         expression: `
           (function() {
             var savedLang = localStorage.getItem('vn-app-lang');
-            var btns = Array.from(document.querySelectorAll('.lang-btn'));
-            var activeBtns = btns.filter(function(b) { return b.getAttribute('aria-pressed') === 'true'; });
-            var isExactlyOneBtnActive = activeBtns.length === 1 && activeBtns[0].getAttribute('data-lang') === '${lang}';
+            var dropdownCount = document.querySelectorAll('#lang-select').length;
+            var langBtnCount = document.querySelectorAll('.lang-btn').length;
             var sel = document.querySelector('#lang-select');
-            var isSelActive = sel ? sel.value === '${lang}' : true;
+            var isSelActive = sel ? sel.value === '${lang}' : false;
             var htmlLang = document.documentElement.getAttribute('lang');
             var h1 = document.querySelector('#app-title') ? document.querySelector('#app-title').textContent.trim() : null;
             var title = document.title;
             var crossLink = document.querySelector('#site-cross-link');
+            var crossLinkWrap = document.querySelector('.site-cross-link-wrap');
             var crossLinkHref = crossLink ? crossLink.getAttribute('href') : null;
             var crossLinkText = crossLink ? crossLink.textContent.trim() : null;
+            var topbarCrossLink = document.querySelector('.topbar #site-cross-link');
+            var oldFooterPresent = document.body.innerText.includes('Built by combining') || document.body.innerText.includes('형제·자매 베트남어 대화 확장훈련');
+            var overflow = document.documentElement.scrollWidth > window.innerWidth || document.body.scrollWidth > window.innerWidth;
             return {
               savedLang: savedLang,
-              btnActive: isExactlyOneBtnActive,
+              dropdownCount: dropdownCount,
+              langBtnCount: langBtnCount,
               selActive: isSelActive,
-              activeBtnCount: activeBtns.length,
               htmlLang: htmlLang,
               h1: h1,
               title: title,
+              hasCrossLinkWrap: !!crossLinkWrap,
               crossLinkHref: crossLinkHref,
-              crossLinkText: crossLinkText
+              crossLinkText: crossLinkText,
+              topbarCrossLink: !!topbarCrossLink,
+              oldFooterPresent: oldFooterPresent,
+              overflow: overflow
             };
           })()
         `,
@@ -528,9 +599,40 @@ async function runTest() {
         allPassed = false;
       }
 
-      // Assert exactly one active language button
-      if (!after.btnActive || !after.selActive) {
-        console.error(`  [FAIL] ${prof.name} lang=${lang} (after reload): Active language state mismatch! btnActive=${after.btnActive} (count=${after.activeBtnCount}), selActive=${after.selActive}`);
+      // Assert exactly one dropdown and zero buttons
+      if (after.dropdownCount !== 1) {
+        console.error(`  [FAIL] ${prof.name} lang=${lang} (after reload): Expected 1 #lang-select, got ${after.dropdownCount}`);
+        pass = false;
+        allPassed = false;
+      }
+      if (after.langBtnCount !== 0) {
+        console.error(`  [FAIL] ${prof.name} lang=${lang} (after reload): Stale lang buttons found! count=${after.langBtnCount}`);
+        pass = false;
+        allPassed = false;
+      }
+      if (!after.selActive) {
+        console.error(`  [FAIL] ${prof.name} lang=${lang} (after reload): Language select mismatch!`);
+        pass = false;
+        allPassed = false;
+      }
+
+      // Assert topbar does NOT have cross-link
+      if (after.topbarCrossLink) {
+        console.error(`  [FAIL] ${prof.name} lang=${lang} (after reload): Topbar still contains cross-link!`);
+        pass = false;
+        allPassed = false;
+      }
+
+      // Assert old footer sentence is absent
+      if (after.oldFooterPresent) {
+        console.error(`  [FAIL] ${prof.name} lang=${lang} (after reload): Old footer text still present!`);
+        pass = false;
+        allPassed = false;
+      }
+
+      // Assert horizontal overflow
+      if (after.overflow) {
+        console.error(`  [FAIL] ${prof.name} lang=${lang} (after reload): Horizontal overflow at 390px!`);
         pass = false;
         allPassed = false;
       }
@@ -556,22 +658,22 @@ async function runTest() {
         allPassed = false;
       }
 
-      // Assert profile cross-links
+      // Assert profile cross-links in footer
       if (prof.site === 'general') {
-        if (after.crossLinkHref !== 'https://jw.hoc.tieng.viet.mobile' || after.crossLinkText !== 'JW?') {
-          console.error(`  [FAIL] GENERAL lang=${lang} (after reload): Cross-link mismatch! Got href="${after.crossLinkHref}", text="${after.crossLinkText}"`);
+        if (!after.hasCrossLinkWrap || after.crossLinkHref !== 'https://jw.hoc.tieng.viet.mobile' || after.crossLinkText !== 'JW?') {
+          console.error(`  [FAIL] GENERAL lang=${lang} (after reload): Cross-link mismatch! Got href="${after.crossLinkHref}", text="${after.crossLinkText}", hasWrap=${after.hasCrossLinkWrap}`);
           pass = false;
           allPassed = false;
         }
       } else if (prof.site === 'jw') {
-        if (after.crossLinkHref !== 'https://jeonju.hoc.tieng.viet.mobile' || after.crossLinkText !== '전주 학습반?') {
-          console.error(`  [FAIL] JW lang=${lang} (after reload): Cross-link mismatch! Got href="${after.crossLinkHref}", text="${after.crossLinkText}"`);
+        if (!after.hasCrossLinkWrap || after.crossLinkHref !== 'https://jeonju.hoc.tieng.viet.mobile' || after.crossLinkText !== '전주 학습반?') {
+          console.error(`  [FAIL] JW lang=${lang} (after reload): Cross-link mismatch! Got href="${after.crossLinkHref}", text="${after.crossLinkText}", hasWrap=${after.hasCrossLinkWrap}`);
           pass = false;
           allPassed = false;
         }
-      } else if (prof.site === 'jeonju') {
-        if (after.crossLinkHref !== null || after.crossLinkText !== null) {
-          console.error(`  [FAIL] JEONJU lang=${lang} (after reload): Cross-link must NOT exist! Got href="${after.crossLinkHref}", text="${after.crossLinkText}"`);
+      } else if (prof.site === 'jeonju' || prof.site === 'ulsan') {
+        if (after.hasCrossLinkWrap || after.crossLinkHref !== null || after.crossLinkText !== null) {
+          console.error(`  [FAIL] ${prof.name} lang=${lang} (after reload): Cross-link must NOT exist! Got href="${after.crossLinkHref}", text="${after.crossLinkText}", hasWrap=${after.hasCrossLinkWrap}`);
           pass = false;
           allPassed = false;
         }
@@ -586,15 +688,16 @@ async function runTest() {
             var title = document.title;
             var htmlLang = document.documentElement.getAttribute('lang');
             var savedLang = localStorage.getItem('vn-app-lang');
-            var btns = Array.from(document.querySelectorAll('.lang-btn'));
-            var activeBtns = btns.filter(function(b) { return b.getAttribute('aria-pressed') === 'true'; });
-            var isExactlyOneBtnActive = activeBtns.length === 1 && activeBtns[0].getAttribute('data-lang') === '${lang}';
+            var sel = document.querySelector('#lang-select');
+            var isSelActive = sel ? sel.value === '${lang}' : false;
+            var langBtnCount = document.querySelectorAll('.lang-btn').length;
             return {
               h1: h1,
               title: title,
               htmlLang: htmlLang,
               savedLang: savedLang,
-              btnActive: isExactlyOneBtnActive
+              selActive: isSelActive,
+              langBtnCount: langBtnCount
             };
           })()
         `,
@@ -622,8 +725,8 @@ async function runTest() {
         pass = false;
         allPassed = false;
       }
-      if (!stable.btnActive) {
-        console.error(`  [FAIL] ${prof.name} lang=${lang} (delayed stability): Active language button changed after 1s!`);
+      if (!stable.selActive || stable.langBtnCount !== 0) {
+        console.error(`  [FAIL] ${prof.name} lang=${lang} (delayed stability): Language select state changed after 1s! selActive=${stable.selActive}, langBtnCount=${stable.langBtnCount}`);
         pass = false;
         allPassed = false;
       }
@@ -639,8 +742,6 @@ async function runTest() {
     await cdp.send('Runtime.evaluate', {
       expression: `
         (function() {
-          var btn = document.querySelector('.lang-btn[data-lang="ko"]');
-          if (btn) btn.click();
           var sel = document.querySelector('#lang-select');
           if (sel) { sel.value = 'ko'; sel.dispatchEvent(new Event('change')); }
         })()
@@ -666,7 +767,7 @@ async function runTest() {
     });
     console.log(`  Clicked tabs: ${tabsRes.result.value.join(', ')}`);
 
-    if (prof.name === 'JW' || prof.name === 'JEONJU') {
+    if (prof.name === 'JW' || prof.name === 'JEONJU' || prof.name === 'ULSAN') {
       const neighborRes = await cdp.send('Runtime.evaluate', {
         expression: `
           (function() {
@@ -691,6 +792,211 @@ async function runTest() {
       } else {
         console.log(`  [PASS] Exactly 11 Neighbor conversation cards rendered`);
       }
+    }
+
+    // 4. Word Order [어순 배열] Interaction Verification
+    console.log(`  --- Testing Word Order [어순 배열] Tap-to-Swap & Zero Move Buttons ---`);
+    const wordOrderRes = await cdp.send('Runtime.evaluate', {
+      expression: `
+        (function() {
+          var reviewTab = document.querySelector('.tab-btn[data-tab="review"]');
+          if (!reviewTab) return { ok: true, skipped: 'no review tab' };
+          reviewTab.click();
+
+          var orderModeBtn = document.querySelector('.study-mode-btn[data-mode="order"]');
+          if (orderModeBtn) orderModeBtn.click();
+
+          var moveBtnCount = document.querySelectorAll('.study-chip-move').length;
+          var moveSlotCount = document.querySelectorAll('.study-chip-slot').length;
+
+          // Place two chips from bank into answer area
+          var bankChips = Array.from(document.querySelectorAll('#order-bank .study-chip'));
+          if (bankChips.length >= 2) {
+            bankChips[0].click();
+            var bankChips2 = Array.from(document.querySelectorAll('#order-bank .study-chip'));
+            if (bankChips2.length) bankChips2[0].click();
+          }
+
+          var placedChips = Array.from(document.querySelectorAll('#order-answer .study-chip.placed'));
+          if (placedChips.length < 2) {
+            return { ok: false, error: 'Could not place two chips from bank' };
+          }
+
+          var w0Before = placedChips[0].textContent.trim();
+          var w1Before = placedChips[1].textContent.trim();
+
+          // 1. Click first chip -> must become selected
+          placedChips[0].click();
+          var placedAfterFirst = Array.from(document.querySelectorAll('#order-answer .study-chip.placed'));
+          var isSelected = placedAfterFirst[0].classList.contains('selected');
+          var ariaPressed = placedAfterFirst[0].getAttribute('aria-pressed');
+
+          // 2. Click second chip -> must swap positions and clear selection
+          placedAfterFirst[1].click();
+
+          var placedAfterSwap = Array.from(document.querySelectorAll('#order-answer .study-chip.placed'));
+          var w0After = placedAfterSwap[0].textContent.trim();
+          var w1After = placedAfterSwap[1].textContent.trim();
+          var anySelectedAfter = document.querySelectorAll('#order-answer .study-chip.selected').length;
+
+          var swapped = (w0After === w1Before && w1After === w0Before);
+
+          // 3. Click first chip again and then click itself -> must cancel selection
+          placedAfterSwap[0].click();
+          var placedReselected = Array.from(document.querySelectorAll('#order-answer .study-chip.placed'));
+          var reselected = placedReselected[0].classList.contains('selected');
+          placedReselected[0].click();
+          var placedCancelled = Array.from(document.querySelectorAll('#order-answer .study-chip.placed'));
+          var cancelled = !placedCancelled[0].classList.contains('selected');
+
+          // 4. Test Reset
+          var resetBtn = document.querySelector('#order-reset');
+          if (resetBtn) resetBtn.click();
+          var placedAfterReset = document.querySelectorAll('#order-answer .study-chip').length;
+
+          // 5. Overflow check
+          var overflow = document.documentElement.scrollWidth > window.innerWidth || document.body.scrollWidth > window.innerWidth;
+
+          return {
+            ok: true,
+            moveBtnCount: moveBtnCount,
+            moveSlotCount: moveSlotCount,
+            isSelected: isSelected,
+            ariaPressed: ariaPressed,
+            swapped: swapped,
+            anySelectedAfter: anySelectedAfter,
+            reselected: reselected,
+            cancelled: cancelled,
+            placedAfterReset: placedAfterReset,
+            overflow: overflow
+          };
+        })()
+      `,
+      returnByValue: true,
+    });
+
+    const wo = wordOrderRes.result.value;
+    if (wo && wo.ok && !wo.skipped) {
+      if (wo.moveBtnCount !== 0 || wo.moveSlotCount !== 0) {
+        console.error(`  [FAIL] Expected 0 move buttons, found ${wo.moveBtnCount} buttons and ${wo.moveSlotCount} slots`);
+        pass = false;
+      } else {
+        console.log(`  [PASS] Zero move buttons verified in [어순 배열]`);
+      }
+      if (!wo.isSelected || wo.ariaPressed !== 'true') {
+        console.error(`  [FAIL] First tap did not enter selected state`);
+        pass = false;
+      } else {
+        console.log(`  [PASS] Tap selects word with subtle visual selected state`);
+      }
+      if (!wo.swapped || wo.anySelectedAfter !== 0) {
+        console.error(`  [FAIL] Second tap did not swap words`);
+        pass = false;
+      } else {
+        console.log(`  [PASS] Second tap swaps word positions and clears selection`);
+      }
+      if (!wo.reselected || !wo.cancelled) {
+        console.error(`  [FAIL] Tapping selected word again did not cancel selection`);
+        pass = false;
+      } else {
+        console.log(`  [PASS] Tapping selected word again cancels selection`);
+      }
+      if (wo.placedAfterReset !== 0) {
+        console.error(`  [FAIL] Reset button did not clear placed chips`);
+        pass = false;
+      } else {
+        console.log(`  [PASS] Reset clears placed chips and restores word bank`);
+      }
+      if (wo.overflow) {
+        console.error(`  [FAIL] Horizontal overflow detected in [어순 배열] at 390px`);
+        pass = false;
+      }
+    }
+
+    // 5. [복습] > [문장] 12-Language Regression Verification
+    if (prof.name === 'JW' || prof.name === 'JEONJU' || prof.name === 'ULSAN') {
+      console.log(`  --- Testing [복습] > [문장] Across All 11 Non-VI Languages ---`);
+      const NON_VI_LANGS = ['cs', 'zh_cn', 'zh', 'en', 'fr', 'de', 'hu', 'id', 'ja', 'ko', 'pl'];
+      for (const lang of NON_VI_LANGS) {
+        const sentenceRevRes = await cdp.send('Runtime.evaluate', {
+          expression: `
+            (function() {
+              window.setLang('${lang}');
+              var reviewTab = document.querySelector('.tab-btn[data-tab="review"]');
+              if (reviewTab) reviewTab.click();
+
+              var sentCatBtn = document.querySelector('.subtab-btn[data-review="sentence"]');
+              if (sentCatBtn) sentCatBtn.click();
+
+              var pool = window.reviewScopedPool ? window.reviewScopedPool("sentence", "all") : [];
+              if (!pool || !pool.length) {
+                return { ok: false, error: 'Empty sentence review pool for lang ' + '${lang}' };
+              }
+
+              // Check if any pool items have empty kr
+              var emptyKr = pool.filter(function(it) { return !it.kr || !it.kr.trim(); });
+              if (emptyKr.length > 0) {
+                return { ok: false, error: 'Found ' + emptyKr.length + ' items with empty translation in pool for ' + '${lang}' };
+              }
+
+              // Test Order Mode rendering
+              var orderBtn = document.querySelector('.study-mode-btn[data-mode="order"]');
+              if (orderBtn) orderBtn.click();
+
+              var promptEl = document.querySelector('.study-order-prompt');
+              var promptText = promptEl ? promptEl.textContent.trim() : '';
+              var bankChips = Array.from(document.querySelectorAll('#order-bank .study-chip'));
+              var viTokens = bankChips.map(function(c) { return c.textContent.trim(); }).filter(Boolean);
+
+              // Test Flashcard Mode rendering
+              var flashBtn = document.querySelector('.study-mode-btn[data-mode="flash"]');
+              if (flashBtn) flashBtn.click();
+
+              var flashCard = document.querySelector('#study-body');
+              var flashText = flashCard ? flashCard.textContent.trim() : '';
+
+              return {
+                ok: true,
+                lang: '${lang}',
+                poolSize: pool.length,
+                promptText: promptText,
+                promptNonEmpty: !!promptText,
+                viTokenCount: viTokens.length,
+                viTokensNonEmpty: viTokens.length > 0,
+                flashTextNonEmpty: !!flashText,
+                sampleVi: pool[0].vi,
+                sampleTrans: pool[0].kr
+              };
+            })()
+          `,
+          returnByValue: true,
+        });
+
+        const sr = sentenceRevRes.result.value;
+        if (!sr || !sr.ok) {
+          console.error(`  [FAIL] [복습] > [문장] error in ${lang}:`, sr ? sr.error : 'evaluation failed');
+          pass = false;
+        } else {
+          if (!sr.promptNonEmpty) {
+            console.error(`  [FAIL] ${lang}: Order prompt translation is EMPTY!`);
+            pass = false;
+          } else if (!sr.viTokensNonEmpty) {
+            console.error(`  [FAIL] ${lang}: Vietnamese tokens in bank are EMPTY!`);
+            pass = false;
+          } else {
+            console.log(`  [PASS] [복습] > [문장] ${lang}: pool=${sr.poolSize}, prompt="${sr.promptText.slice(0, 35)}...", sampleTrans="${sr.sampleTrans.slice(0, 30)}..."`);
+          }
+        }
+      }
+      // Restore default language to ko
+      await cdp.send('Runtime.evaluate', { expression: `window.setLang('ko')` });
+    }
+
+    try {
+      await require('./helpers/general_pdf_browser')(cdp, prof.site);
+    } catch (error) {
+      console.error('  [FAIL] PDF content regression:', error.message);
+      pass = false;
     }
 
     if (consoleErrors.length > 0) {
@@ -732,7 +1038,8 @@ async function runTest() {
   }
 }
 
-runTest().catch((err) => {
+module.exports = { CDPClient };
+if (require.main === module) runTest().catch((err) => {
   console.error('[Browser Test Error]', err);
   process.exit(1);
 });

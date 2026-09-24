@@ -38,6 +38,17 @@ class TestProfileCrossLinks(unittest.TestCase):
         self.assertNotIn("cross_link", jeonju_title)
         self.assertEqual(jeonju_title["h1"], "2026-2027 전주 베트남어 학습반")
 
+    def test_ulsan_has_no_cross_link_config(self):
+        ulsan_title = SITE_TITLES["ulsan"]
+        self.assertNotIn("cross_link", ulsan_title)
+        self.assertEqual(ulsan_title["h1"], "2026-2027 울산 베트남어 학습반")
+        self.assertEqual(ulsan_title["title"], "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027")
+        self.assertEqual(ulsan_title["host"], "ulsan.hoc.tieng.viet.mobile")
+        canonical_langs = ["vi", "cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko", "pl"]
+        for lang in canonical_langs:
+            self.assertEqual(ulsan_title["h1_by_lang"][lang], "2026-2027 울산 베트남어 학습반")
+            self.assertEqual(ulsan_title["title_by_lang"][lang], "2026-2027 울산 베트남어 학습반 · Ulsan Vietnamese Class 2026-2027")
+
     def test_built_dist_files_isolation(self):
         root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         with open(os.path.join(root_dir, "dist", "index.html"), encoding="utf-8") as f:
@@ -46,22 +57,91 @@ class TestProfileCrossLinks(unittest.TestCase):
             jw_html = f.read()
         with open(os.path.join(root_dir, "dist", "jeonju", "index.html"), encoding="utf-8") as f:
             jeonju_html = f.read()
+        with open(os.path.join(root_dir, "dist", "ulsan", "index.html"), encoding="utf-8") as f:
+            ulsan_html = f.read()
 
-        # GENERAL check: has cross link to jw with text "JW?", does NOT have link to jeonju
+        for html_text, name in [(general_html, "general"), (jw_html, "jw"), (jeonju_html, "jeonju"), (ulsan_html, "ulsan")]:
+            # Old footer text must be completely absent in all profiles
+            self.assertNotIn("Built by combining extended Vietnamese-dialogue training", html_text)
+            self.assertNotIn("형제·자매 베트남어 대화 확장훈련", html_text)
+            # Topbar must NOT contain the cross-link
+            topbar_chunk = html_text[html_text.find('<div class="topbar">'):html_text.find('<div class="tabbar">')]
+            self.assertNotIn("site-cross-link", topbar_chunk, f"{name} topbar contains site-cross-link")
+            # Exactly one language dropdown, no 12-button row
+            self.assertEqual(html_text.count('id="lang-select"'), 1, f"{name} does not have exactly 1 #lang-select")
+            self.assertNotIn('class="lang-btn"', html_text, f"{name} contains .lang-btn")
+            self.assertNotIn('class="lang-switch-buttons"', html_text, f"{name} contains .lang-switch-buttons")
+
+        # GENERAL check: has cross link to jw with text "JW?", does NOT have link to jeonju or ulsan
         self.assertIn('id="site-cross-link"', general_html)
         self.assertIn('href="https://jw.hoc.tieng.viet.mobile"', general_html)
         self.assertIn('>JW?</a>', general_html)
         self.assertNotIn('href="https://jeonju.hoc.tieng.viet.mobile"', general_html)
+        self.assertNotIn('href="https://ulsan.hoc.tieng.viet.mobile"', general_html)
+        self.assertNotIn("JEONJU_INFO", general_html)
+        self.assertNotIn("JEONJU_WEEKS", general_html)
+        self.assertNotIn("ULSAN_INFO", general_html)
+        self.assertNotIn("ULSAN_WEEKS", general_html)
 
-        # JW check: has cross link to jeonju, does NOT have link to jw
+        # JW check: has cross link to jeonju, does NOT have link to jw or ulsan
         self.assertIn('id="site-cross-link"', jw_html)
         self.assertIn('href="https://jeonju.hoc.tieng.viet.mobile"', jw_html)
         self.assertIn('전주 학습반?', jw_html)
+        self.assertNotIn('href="https://ulsan.hoc.tieng.viet.mobile"', jw_html)
+        self.assertNotIn("JEONJU_INFO", jw_html)
+        self.assertNotIn("JEONJU_WEEKS", jw_html)
+        self.assertNotIn("ULSAN_INFO", jw_html)
+        self.assertNotIn("ULSAN_WEEKS", jw_html)
 
-        # JEONJU check: has NO cross link at all
+        # JEONJU check: has NO cross link at all and no empty visible wrapper
         self.assertNotIn('<a id="site-cross-link"', jeonju_html)
         self.assertNotIn('class="site-cross-link-wrap"', jeonju_html)
         self.assertIn('2026-2027 전주 베트남어 학습반', jeonju_html)
+        self.assertIn("JEONJU_INFO", jeonju_html)
+        self.assertIn("JEONJU_WEEKS", jeonju_html)
+        self.assertNotIn("ULSAN_INFO", jeonju_html)
+        self.assertNotIn("ULSAN_WEEKS", jeonju_html)
+
+        # ULSAN check: has NO cross link at all and no empty visible wrapper
+        self.assertNotIn('<a id="site-cross-link"', ulsan_html)
+        self.assertNotIn('class="site-cross-link-wrap"', ulsan_html)
+        self.assertIn('2026-2027 울산 베트남어 학습반', ulsan_html)
+        self.assertIn("ULSAN_INFO", ulsan_html)
+        self.assertIn("ULSAN_WEEKS", ulsan_html)
+        self.assertNotIn("JEONJU_INFO", ulsan_html)
+        self.assertNotIn("JEONJU_WEEKS", ulsan_html)
+
+    def test_language_dropdown_display_order(self):
+        import re
+        root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        expected_order = [
+            ("ko", "한국어"),
+            ("ja", "日本語"),
+            ("zh", "繁體中文"),
+            ("zh_cn", "简体中文"),
+            ("cs", "Čeština"),
+            ("de", "Deutsch"),
+            ("en", "English"),
+            ("fr", "Français"),
+            ("id", "Indonesia"),
+            ("hu", "Magyar"),
+            ("pl", "Polski"),
+            ("vi", "Tiếng Việt"),
+        ]
+        files_to_check = [
+            os.path.join(root_dir, "template.html"),
+            os.path.join(root_dir, "dist", "index.html"),
+            os.path.join(root_dir, "dist", "jw", "index.html"),
+            os.path.join(root_dir, "dist", "jeonju", "index.html"),
+            os.path.join(root_dir, "dist", "ulsan", "index.html"),
+        ]
+        for fpath in files_to_check:
+            with open(fpath, encoding="utf-8") as f:
+                content = f.read()
+            m = re.search(r'<select id="lang-select"[^>]*>(.*?)</select>', content, re.DOTALL)
+            self.assertIsNotNone(m, f"Could not find #lang-select in {fpath}")
+            opts = re.findall(r'<option value="([^"]+)"[^>]*>([^<]+)</option>', m.group(1))
+            self.assertEqual(opts, expected_order, f"Language dropdown options mismatch in {fpath}")
 
     def test_lff_regression_integrity(self):
         root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

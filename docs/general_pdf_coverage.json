@@ -1,0 +1,3485 @@
+{
+  "words": {
+    "raw": 567,
+    "normalized": 482,
+    "duplicates": 135,
+    "rejected": [
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 19,
+          "line": 11,
+          "quote": "     단어   chào 안녕 | anh 형/오빠 | em 동생 | khoẻ 건강하다 | không ~이니?(문장 끝에서 의문) | vâng 예,"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 19,
+          "line": 11,
+          "quote": "     단어   chào 안녕 | anh 형/오빠 | em 동생 | khoẻ 건강하다 | không ~이니?(문장 끝에서 의문) | vâng 예,"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 33,
+          "line": 13,
+          "quote": "     단어   xin lỗi 실례/미안합니다 | tên 이름 | của ~의 | là ~이다 | gì 무엇, 무슨 | rất 매우 | vui 기쁘다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 33,
+          "line": 13,
+          "quote": "     단어   xin lỗi 실례/미안합니다 | tên 이름 | của ~의 | là ~이다 | gì 무엇, 무슨 | rất 매우 | vui 기쁘다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 33,
+          "line": 13,
+          "quote": "     단어   xin lỗi 실례/미안합니다 | tên 이름 | của ~의 | là ~이다 | gì 무엇, 무슨 | rất 매우 | vui 기쁘다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 48,
+          "line": 26,
+          "quote": "          단어     \u0007người 사람 | nước 나라 | nào 어느, 어떤 | Việt Nam 베트남 | Hàn Quốc 한국 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 50,
+          "line": 17,
+          "quote": "            단어    \u0007nói 말하다 | tiếng 소리 | giỏi 잘하다 | quá 너무 | hay 재미있다 | lắm 매우 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 53,
+          "line": 17,
+          "quote": "     단어   hôm nay 오늘 | giới thiệu 소개하다 | gia đình 가정, 가족 | kĩ sư 엔지니어 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 54,
+          "line": 14,
+          "quote": "              단어    bốn 넷(4) | và 그리고 | anh trai 친형/친오빠 | muốn 원하다 | du lịch 여행하다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 55,
+          "line": 30,
+          "quote": "     단어       \u0007sinh viên 대학생 | năm 년(연도) | thứ ~번째 | khoa (학)과 | tiếng Hàn 한국어 | trường 학교 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 55,
+          "line": 30,
+          "quote": "     단어       \u0007sinh viên 대학생 | năm 년(연도) | thứ ~번째 | khoa (학)과 | tiếng Hàn 한국어 | trường 학교 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 56,
+          "line": 18,
+          "quote": "      단어        n\u0007 ghề 직업 | giáo viên 교사 | kiến trúc sư 건축가 | y tá 간호사 | đọc 읽다 | báo 신문"
+        },
+        "reason": "embedded extraction control character"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 64,
+          "line": 29,
+          "quote": "          단어       \u0007sống 살다 | ở ~에/에서 (있다) | đường 길, 거리 | Hai Bà Trưng 하이바쯩(베트남 위인)"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 66,
+          "line": 20,
+          "quote": "단어   (bởi) vì 왜냐하면 ~하기 때문에 | đang ~하고 있다 | công ti 회사 | tại ~에서 | nên 그래서 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 66,
+          "line": 20,
+          "quote": "단어   (bởi) vì 왜냐하면 ~하기 때문에 | đang ~하고 있다 | công ti 회사 | tại ~에서 | nên 그래서 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 66,
+          "line": 20,
+          "quote": "단어   (bởi) vì 왜냐하면 ~하기 때문에 | đang ~하고 있다 | công ti 회사 | tại ~에서 | nên 그래서 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 66,
+          "line": 20,
+          "quote": "단어   (bởi) vì 왜냐하면 ~하기 때문에 | đang ~하고 있다 | công ti 회사 | tại ~에서 | nên 그래서 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 69,
+          "line": 14,
+          "quote": "     단어   \u0007đấy ~이야(문미에서 강조)"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 70,
+          "line": 35,
+          "quote": "           단어     chị gái 친누나/친언니 | đẹp 아름답다 | buồn 슬프다 | phở 쌀국수 | ngon 맛있다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 82,
+          "line": 15,
+          "quote": "          단어      \u0007tiếng 시간 | sau 뒤, 후 | nhé ~해, ~야(친밀하게 권하거나 통보할 때) | các ~들(복수)"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 82,
+          "line": 15,
+          "quote": "          단어      \u0007tiếng 시간 | sau 뒤, 후 | nhé ~해, ~야(친밀하게 권하거나 통보할 때) | các ~들(복수)"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 85,
+          "line": 14,
+          "quote": "      단어   cuối 끝부분 | định ~하려고 하다/작정하다 | quà 선물"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 101,
+          "line": 26,
+          "quote": "               단어    ai 누구 | hơi 조금/약간 | thông minh 똑똑하다 | khách sạn 호텔 | đỏ 빨갛다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 102,
+          "line": 28,
+          "quote": "                       단어    thông cảm 양해하다/이해하다 | để ~하게 두다 | khám 진찰하다"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 109,
+          "line": 13,
+          "quote": "      단어   ăn 먹다 | cơm 밥 | đói (배)고프다 | bụng 배 | biết 알다 | quán phở 퍼 음식점 | ngon 맛있다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 116,
+          "line": 9,
+          "quote": "                 단어     \u0007thưa 님(윗사람에게 말을 걸 때 예의 바르게 부르기 위해 호칭 앞에 사용하는 말) |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 116,
+          "line": 32,
+          "quote": "           단어     uống 마시다 | trà 차 | cà phê 커피 | biết 알다 | nên ~하는 것이 좋다 | đi 가다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 116,
+          "line": 32,
+          "quote": "           단어     uống 마시다 | trà 차 | cà phê 커피 | biết 알다 | nên ~하는 것이 좋다 | đi 가다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 123,
+          "line": 13,
+          "quote": "      단어   \u0007khi 때 | bằng ~으로(수단) | xe máy 오토바이 | sợ 무섭다 | à ~요(의문), 아(감탄) | phương tiện"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 123,
+          "line": 13,
+          "quote": "      단어   \u0007khi 때 | bằng ~으로(수단) | xe máy 오토바이 | sợ 무섭다 | à ~요(의문), 아(감탄) | phương tiện"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 123,
+          "line": 13,
+          "quote": "      단어   \u0007khi 때 | bằng ~으로(수단) | xe máy 오토바이 | sợ 무섭다 | à ~요(의문), 아(감탄) | phương tiện"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 124,
+          "line": 19,
+          "quote": "            단어     ngủ 자다 | xem 보다 | con gái 딸 | nghe 듣다 | nhạc 음악 | gia đình 가족 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 129,
+          "line": 17,
+          "quote": "      단어      bao giờ chưa ~한 적이       호아"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 131,
+          "line": 13,
+          "quote": "                            단어    nói 말하다 | nữa 더 | quên 잊다 | bài tập 숙제 | nhé ~해(친밀감)"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 131,
+          "line": 28,
+          "quote": "           단어     đưa 데리고 가다, 가지고 가다 | vào 들어가다 | bệnh viện 병원 | sau 뒤 | trường 학교 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 134,
+          "line": 23,
+          "quote": "    단어     thăm 방문하다 | bố mẹ 부모 | mùa 계절 | hè 여름 | tắm biển 해수욕하다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 139,
+          "line": 29,
+          "quote": "                                              단어      nhà hàng 식당 | ở ~에(서) | đâu 어디"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 143,
+          "line": 14,
+          "quote": "      단어   xem 보다 | phim 영화 | hoặc 혹은 | mua sắm 쇼핑하다 | loại 종류 | nhất 가장/제일 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 151,
+          "line": 14,
+          "quote": "      단어      bắt đầu 시작하다 |          여선생님"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 152,
+          "line": 18,
+          "quote": "                      단어    \u0007trả lời 대답하다 | những ~들(복수 표현), câu hỏi 질문, sai 틀리다"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 165,
+          "line": 14,
+          "quote": "      단어   thời tiết 날씨 | nắng 햇빛이 비치다, 쨍쨍하다 | nóng 덥다 | mùa 계절 | thu 가을 | trong 맑다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 170,
+          "line": 14,
+          "quote": "단어      khác 다르다 |           미나"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 184,
+          "line": 15,
+          "quote": "단어       khám 진찰하다 |               의사"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 210,
+          "line": 16,
+          "quote": "     단어                                                                                (2)              Chị làm việc ở đâu                          Chị làm việc ở ngân hàng"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 211,
+          "line": 17,
+          "quote": "     단어                                                                 (2)          họ đang học tiếng Pháp                        Họ đang học tiếng Đức"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 215,
+          "line": 14,
+          "quote": "     단어                                                                                 (1)           dạy tiếng Việt               4 năm"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 219,
+          "line": 13,
+          "quote": "     단어                                              알아두면 유용해요!!                     (1)          Đại học Quốc gia Hà Nội"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 220,
+          "line": 17,
+          "quote": "     단어                                                                        (2)           đi ra ngoài"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 221,
+          "line": 13,
+          "quote": "     단어                                                                                (1)                    Chị gọi sai số rồi"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 222,
+          "line": 25,
+          "quote": "단어        (máy) di động 휴대전화 | mấy lần 몇 번, 몇 차례 | máy 기계(전화)                   Nhân viên văn phòng   \u0007Cô ấy không có ở đây."
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 222,
+          "line": 25,
+          "quote": "단어        (máy) di động 휴대전화 | mấy lần 몇 번, 몇 차례 | máy 기계(전화)                   Nhân viên văn phòng   \u0007Cô ấy không có ở đây."
+        },
+        "reason": "embedded extraction control character"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 226,
+          "line": 15,
+          "quote": "     단어                                                   예전에는 공동 주택을 nhà tập thể라고        (1)         bao nhiêu                   kể cả tiền nước"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 227,
+          "line": 27,
+          "quote": "단어 bao giờ 언제 | ở 살다, 기거하다 | không A cũng không B A하지도 B하지도 않다               A   \u0007Vâng. Anh cho tôi xem nhà được không ạ?"
+        },
+        "reason": "embedded extraction control character"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 229,
+          "line": 17,
+          "quote": "     단어                                                                     (2)       thử chụp bằng cái máy ảnh kia"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 234,
+          "line": 15,
+          "quote": "     단어                                                                            (2)       Hôm nay, bạn gặp ai?"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 235,
+          "line": 14,
+          "quote": "     단어                                                                            (1)         người Việt Nam                rất thân thiện"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 236,
+          "line": 17,
+          "quote": "     단어                                                                      (2)         tuần sau           đi du lịch"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 239,
+          "line": 17,
+          "quote": "     단어                                                                                 (2)           học               phát âm tiếng Anh"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 242,
+          "line": 27,
+          "quote": "단어 tài xế 운전기사 | dừng 세우다, 중지하다 | cửa 문                                       B    \u0007Cho tôi một chiếc taxi đến số 15 Tạ Quang Bửu. À,"
+        },
+        "reason": "embedded extraction control character"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 250,
+          "line": 16,
+          "quote": "  단어                                                                    (2)          không về nhà           không muốn về nhà"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 251,
+          "line": 17,
+          "quote": "  단어                                                                                (2)             xem phim                  muốn làm gì"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 255,
+          "line": 14,
+          "quote": "  단어                                                                      (1)           Hôm nay tỉ giá thế nào?"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 260,
+          "line": 14,
+          "quote": "  단어                                                                                        (1)       Mua quà trước hay ăn cơm trước          Làm"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 261,
+          "line": 18,
+          "quote": "  단어                                                                                   (2)                học xong            hãy đi chơi"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 266,
+          "line": 17,
+          "quote": "  단어                                                                                       (2)       tôi mới nói tiếng Việt giỏi   Chị phải tập nói nhiều thì mới nói giỏi"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 272,
+          "line": 25,
+          "quote": "단어 tiện 편리하다                                                                A   \u0007Em sống ở đây à?"
+        },
+        "reason": "embedded extraction control character"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 1,
+          "line": 11,
+          "quote": "     단어   chào 안녕 | anh 형/오빠 | em 동생 | khoẻ 건강하다 | không ~이니?(문장 끝에서 의문) | vâng 예,"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 1,
+          "line": 11,
+          "quote": "     단어   chào 안녕 | anh 형/오빠 | em 동생 | khoẻ 건강하다 | không ~이니?(문장 끝에서 의문) | vâng 예,"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 2,
+          "line": 13,
+          "quote": "     단어   xin lỗi 실례/미안합니다 | tên 이름 | của ~의 | là ~이다 | gì 무엇, 무슨 | rất 매우 | vui 기쁘다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 2,
+          "line": 13,
+          "quote": "     단어   xin lỗi 실례/미안합니다 | tên 이름 | của ~의 | là ~이다 | gì 무엇, 무슨 | rất 매우 | vui 기쁘다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 2,
+          "line": 13,
+          "quote": "     단어   xin lỗi 실례/미안합니다 | tên 이름 | của ~의 | là ~이다 | gì 무엇, 무슨 | rất 매우 | vui 기쁘다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 6,
+          "line": 14,
+          "quote": "     단어   \u0007đấy ~이야(문미에서 강조)"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 10,
+          "line": 13,
+          "quote": "      단어   ăn 먹다 | cơm 밥 | đói (배)고프다 | bụng 배 | biết 알다 | quán phở 퍼 음식점 | ngon 맛있다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 12,
+          "line": 13,
+          "quote": "      단어   \u0007khi 때 | bằng ~으로(수단) | xe máy 오토바이 | sợ 무섭다 | à ~요(의문), 아(감탄) | phương tiện"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 12,
+          "line": 13,
+          "quote": "      단어   \u0007khi 때 | bằng ~으로(수단) | xe máy 오토바이 | sợ 무섭다 | à ~요(의문), 아(감탄) | phương tiện"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 12,
+          "line": 13,
+          "quote": "      단어   \u0007khi 때 | bằng ~으로(수단) | xe máy 오토바이 | sợ 무섭다 | à ~요(의문), 아(감탄) | phương tiện"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 13,
+          "line": 17,
+          "quote": "      단어      bao giờ chưa ~한 적이       호아"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 15,
+          "line": 14,
+          "quote": "      단어   xem 보다 | phim 영화 | hoặc 혹은 | mua sắm 쇼핑하다 | loại 종류 | nhất 가장/제일 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 16,
+          "line": 14,
+          "quote": "      단어      bắt đầu 시작하다 |          여선생님"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 18,
+          "line": 14,
+          "quote": "      단어   thời tiết 날씨 | nắng 햇빛이 비치다, 쨍쨍하다 | nóng 덥다 | mùa 계절 | thu 가을 | trong 맑다 |"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 19,
+          "line": 14,
+          "quote": "단어      khác 다르다 |           미나"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 21,
+          "line": 15,
+          "quote": "단어       khám 진찰하다 |               의사"
+        },
+        "reason": "ambiguous or wrapped inline gloss"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 24,
+          "line": 27,
+          "quote": "단어 bao giờ 언제 | ở 살다, 기거하다 | không A cũng không B A하지도 B하지도 않다               A   \u0007Vâng. Anh cho tôi xem nhà được không ạ?"
+        },
+        "reason": "embedded extraction control character"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 27,
+          "line": 27,
+          "quote": "단어 tài xế 운전기사 | dừng 세우다, 중지하다 | cửa 문                                       B    \u0007Cho tôi một chiếc taxi đến số 15 Tạ Quang Bửu. À,"
+        },
+        "reason": "embedded extraction control character"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 33,
+          "line": 25,
+          "quote": "단어 tiện 편리하다                                                                A   \u0007Em sống ở đây à?"
+        },
+        "reason": "embedded extraction control character"
+      }
+    ],
+    "documents": {
+      "베트남어 듣기 말하기.pdf": 347,
+      "베트남어 일상 회화.pdf": 70,
+      "베트남어 읽기 B2.pdf": 0,
+      "베트남어 읽기 쓰기 A1.pdf": 0,
+      "베트남어 읽기 쓰기 A2.pdf": 0,
+      "베트남어 읽기 쓰기 B1.pdf": 0
+    },
+    "document_raw": {
+      "베트남어 듣기 말하기.pdf": 477,
+      "베트남어 일상 회화.pdf": 90
+    },
+    "final": 347
+  },
+  "sentences": {
+    "raw": 241,
+    "normalized": 191,
+    "duplicates": 3,
+    "rejected": [
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 20,
+          "line": 23,
+          "quote": "     \u001a    A   Chào bố. 안녕하세요, 아빠.             A   Chào chị. 안녕하세요, 누나/언니."
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 20,
+          "line": 24,
+          "quote": "          B   Chào con. 안녕, 자녀.               B   Chào em. 안녕, 동생."
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 26,
+          "line": 10,
+          "quote": "      \u001a   Chào anh ạ. 안녕하세요, 형/오빠       Em khoẻ ạ. 저(동생)는 건강해요."
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 26,
+          "line": 19,
+          "quote": "      \u001a   A    Cảm ơn anh. 감사해요, 형/오빠   B   Không có gì. 천만에."
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 26,
+          "line": 27,
+          "quote": "      \u001a   Anh đi đâu? 형/오빠 어디 가요?       Em gặp ai? 너(동생) 누구 만나니?"
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 34,
+          "line": 11,
+          "quote": "     \u001a     A   Xin lỗi anh. 실례/미안합니다, 형/오빠    B    Không sao. 괜찮아."
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 35,
+          "line": 15,
+          "quote": "      Tên của em là gì? 너의 이름이 뭐니?           Tên của em là Trang. 저의 이름은 짱이에요."
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 35,
+          "line": 16,
+          "quote": "      Tên em là gì? 네 이름이 뭐니?                Tên em là Trang. 제 이름은 짱이에요."
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 35,
+          "line": 17,
+          "quote": "      Em tên là gì? 너는 이름이 뭐니?               Em tên là Trang. 저는 이름이 짱이에요."
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 40,
+          "line": 10,
+          "quote": "     \u001a    Em ơi. 동생아/얘                           Bạn ơi. 친구야."
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 40,
+          "line": 11,
+          "quote": "          Chị ơi. 누나/언니                          Bố ơi. 아빠."
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 97,
+          "line": 5,
+          "quote": "        A   Một cân cam bao nhiêu tiền? 오렌지 1kg에 얼마예요?"
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 114,
+          "line": 29,
+          "quote": "          Cho tôi một cân táo. 사과 1kg을 주세요."
+        },
+        "reason": "ambiguous parallel columns or incomplete exercise"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 18,
+          "line": 9,
+          "quote": "               Tôi tự đánh máy bài viết này.             나는 이 원고를 직접 타자로 친다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 18,
+          "line": 11,
+          "quote": "               Chị ấy tự nấu cơm.                        그녀는 직접 식사를 준비한다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 18,
+          "line": 13,
+          "quote": "                Anh Park tự học tiếng Việt.              박은 베트남어를 스스로 공부한다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 18,
+          "line": 15,
+          "quote": "               Sinh viên tự giới thiệu về mình.          대학생은 자신에 대해 직접 소개한다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 18,
+          "line": 17,
+          "quote": "               Việc dọn dẹp nhà cửa đều do tôi tự làm.   집 정리하는 일은 모두 내가 스스로 한다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 18,
+          "line": 24,
+          "quote": "               Anh ấy tự đi chợ mua đồ ăn.               그는 직접 시장에 가서 먹거리를 산다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 22,
+          "line": 8,
+          "quote": "               Park học cùng lớp với Lee.           박은 리와 같은 반에서 공부한다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 22,
+          "line": 10,
+          "quote": "               Park và Lee cùng đi thăm Hồ Gươm.    박과 리는 함께 그엄(Gươm) 호수를 방문한다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 22,
+          "line": 12,
+          "quote": "               Họ cùng ngồi xe ô tô.                그들은 자동차에 함께 앉는다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 22,
+          "line": 14,
+          "quote": "               Cả lớp cùng xem phim.                반 전체는 함께 영화를 본다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 22,
+          "line": 16,
+          "quote": "               Họ cùng ăn cơm với nhau.             그들은 함께 식사를 한다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 22,
+          "line": 18,
+          "quote": "               Chúng tôi cùng làm bài.              우리는 함께 숙제를 한다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 22,
+          "line": 26,
+          "quote": "               Gươm.                                원한다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 22,
+          "line": 28,
+          "quote": "               Hai người đều học giỏi tiếng Việt.   두 사람 모두 베트남어 공부를 잘한다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 22,
+          "line": 30,
+          "quote": "               Chúng tôi đều đi bộ đến trường.      우리는 모두 다 걸어서 학교에 간다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 22,
+          "line": 32,
+          "quote": "               Mọi người đều cố gắng học tập.       모두 열심히 공부한다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 47,
+          "line": 13,
+          "quote": "  Dù cho trời mưa rất to, tôi cũng vẫn phải về nhà.   조건 : ‘비가 많이 내리더라도’"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 47,
+          "line": 38,
+          "quote": "  Việt ở Việt Nam.                                    시절을 잊는’ 일은 발생할 수 없다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 56,
+          "line": 40,
+          "quote": "                Tôi đến lớp muộn là do bị nhỡ chuyến xe buýt.           원인 : 버스를 놓쳐서"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 56,
+          "line": 43,
+          "quote": "                Ông ấy phải nhập viện là do bị ốm rất nặng.           원인 : 매우 많이 편찮으셔서"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 63,
+          "line": 32,
+          "quote": "   Tôi tin anh ấy sẽ đến họp.                           예측한 것과 동일한 상황이"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 63,
+          "line": 36,
+          "quote": "   Tôi tin là trời sẽ mưa.                              예측한 것과 동일한 상황이"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 63,
+          "line": 40,
+          "quote": "   Mọi người đều tin là ngày mai trời sẽ nắng.          예측한 것과 동일한 상황이"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 68,
+          "line": 10,
+          "quote": "                được sắp đặt từ kiếp trước.                             사람의 운명은 전생에 이미"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 73,
+          "line": 27,
+          "quote": "   Nghe nói chị ấy làm nghề dạy học.                    정확하지 않지만 전해 들은 정보 :"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 73,
+          "line": 31,
+          "quote": "   đám cưới.                                            정확하지 않지만 전해 들은 정보 :"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 73,
+          "line": 35,
+          "quote": "   Nghe nói ông ấy nói tiếng Việt rất giỏi.             정확하지 않지만 전해 들은 정보 :"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 73,
+          "line": 38,
+          "quote": "   Nghe nói chiều mai chúng ta được nghỉ học.           정확하지 않지만 전해 들은 정보 :"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 91,
+          "line": 9,
+          "quote": "   đi chợ mua một vài cân cam.                       결과 : 응아는 오렌지 몇 킬로그램"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 91,
+          "line": 13,
+          "quote": "   Chợ rất xa, vì thế chúng tôi phải đi bằng taxi.      원인 : 시장이 너무 멀다"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 91,
+          "line": 28,
+          "quote": "   Bốn mươi nghìn một cân thôi!                      청자의 동의를 구하고자 설득하는"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 91,
+          "line": 31,
+          "quote": "   Em bớt ít thôi chứ!                               청자의 동의를 구하고자 설득하는"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 91,
+          "line": 34,
+          "quote": "   Em nói chầm chậm thôi chứ!                        청자의 동의를 구하고자 설득하는"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 91,
+          "line": 37,
+          "quote": "   Chị chỉ đến gặp em vào buổi chiều được thôi!      청자의 동의를 구하고자 설득하는"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 99,
+          "line": 9,
+          "quote": "   Hà Nội.                                         자럼 현’의 소유 범위에 포함된다."
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 140,
+          "line": 13,
+          "quote": "                Nam giới thiệu.                                          베트남 친구가 소개함"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 140,
+          "line": 16,
+          "quote": "                Tôi rất thích cuốn truyện do chị ấy tặng.                 내용 : 이야기 책"
+        },
+        "reason": "parallel-column explanation is not an authoritative sentence translation"
+      }
+    ],
+    "documents": {
+      "베트남어 듣기 말하기.pdf": 188,
+      "베트남어 일상 회화.pdf": 0,
+      "베트남어 읽기 B2.pdf": 0,
+      "베트남어 읽기 쓰기 A1.pdf": 0,
+      "베트남어 읽기 쓰기 A2.pdf": 0,
+      "베트남어 읽기 쓰기 B1.pdf": 0
+    },
+    "document_raw": {
+      "베트남어 듣기 말하기.pdf": 204,
+      "베트남어 읽기 쓰기 B1.pdf": 37
+    },
+    "final": 188
+  },
+  "grammar": {
+    "raw": 557,
+    "normalized": 248,
+    "duplicates": 39,
+    "rejected": [
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 2
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 13
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 22
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 25
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 50
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 56
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 58
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 66
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 69
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 72
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 73
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 75
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 77
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 82
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 88
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 90
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 91
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 102
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 116
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 119
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 126
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 140
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 148
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 160
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 161
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 172
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 175
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 177
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 186
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 188
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 189
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 209
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 210
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 211
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 214
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 215
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 216
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 219
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 220
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 221
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 224
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 225
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 226
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 229
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 230
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 231
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 234
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 235
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 236
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 239
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 240
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 241
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 244
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 245
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 246
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 249
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 250
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 251
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 254
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 255
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 256
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 259
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 260
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 261
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 264
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 265
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 266
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 269
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 270
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 271
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 289
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 294
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 295
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 300
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 301
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 306
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 307
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 312
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 313
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 318
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 319
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 324
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 325
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 330
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 331
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 336
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 337
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 342
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 343
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 348
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 349
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 354
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 355
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 360
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 361
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 366
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 369
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 370
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 371
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 372
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 374
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 375
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 376
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 377
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 378
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 379
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 380
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 381
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 382
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 383
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 듣기 말하기.pdf",
+          "page": 384
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 6
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 34
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 39
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 40
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 45
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 46
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 51
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 52
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 57
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 58
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 63
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 64
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 69
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 70
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 75
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 76
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 81
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 82
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 87
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 88
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 93
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 94
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 99
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 100
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 105
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 106
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 111
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 114
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 115
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 116
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 117
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 119
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 120
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 121
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 122
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 123
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 124
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 125
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 126
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 127
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 128
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 일상 회화.pdf",
+          "page": 129
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 5
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 6
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 7
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 8
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 9
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 13
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 17
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 21
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 27
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 31
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 35
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 41
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 45
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 49
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 55
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 59
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 63
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 69
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 73
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 77
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 81
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 83
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 87
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 91
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 113
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 117
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 121
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 125
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 127
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 131
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 135
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 141
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 146
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 151
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 157
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 161
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 165
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 171
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 175
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 179
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 185
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 189
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 193
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 211
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 212
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 213
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 214
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 215
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 216
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 217
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 218
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 219
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 220
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 221
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 223
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 224
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 225
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 226
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 227
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 228
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 229
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 230
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 231
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 232
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 233
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 236
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 237
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 238
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 239
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 240
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 241
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 242
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 243
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 244
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 245
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 246
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 247
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 248
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 249
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 250
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 251
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 252
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 271
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 278
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 286
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 287
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 288
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A1.pdf",
+          "page": 289
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A2.pdf",
+          "page": 3
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A2.pdf",
+          "page": 4
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A2.pdf",
+          "page": 5
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A2.pdf",
+          "page": 6
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A2.pdf",
+          "page": 7
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A2.pdf",
+          "page": 75
+        },
+        "reason": "profile content filter"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A2.pdf",
+          "page": 103
+        },
+        "reason": "profile content filter"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A2.pdf",
+          "page": 232
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A2.pdf",
+          "page": 253
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A2.pdf",
+          "page": 260
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 A2.pdf",
+          "page": 269
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 4
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 6
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 7
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 8
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 9
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 40
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 64
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 92
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 110
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 118
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 123
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 128
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 136
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 141
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 154
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 159
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 190
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 200
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 208
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 218
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 232
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 238
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 246
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 251
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 269
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 328
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 332
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 340
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 344
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 쓰기 B1.pdf",
+          "page": 351
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 4
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 5
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 6
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 7
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 8
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 10
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 24
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 38
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 52
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 66
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 80
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 94
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 108
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 122
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 136
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 150
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 164
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 178
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 192
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 207
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 208
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 211
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 214
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 217
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 224
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 225
+        },
+        "reason": "no explicit opening grammar heading"
+      },
+      {
+        "source": {
+          "file": "베트남어 읽기 B2.pdf",
+          "page": 258
+        },
+        "reason": "no explicit opening grammar heading"
+      }
+    ],
+    "documents": {
+      "베트남어 듣기 말하기.pdf": 82,
+      "베트남어 일상 회화.pdf": 39,
+      "베트남어 읽기 B2.pdf": 42,
+      "베트남어 읽기 쓰기 A1.pdf": 1,
+      "베트남어 읽기 쓰기 A2.pdf": 40,
+      "베트남어 읽기 쓰기 B1.pdf": 44
+    },
+    "document_raw": {
+      "베트남어 듣기 말하기.pdf": 193,
+      "베트남어 일상 회화.pdf": 81,
+      "베트남어 읽기 쓰기 A1.pdf": 89,
+      "베트남어 읽기 쓰기 A2.pdf": 51,
+      "베트남어 읽기 쓰기 B1.pdf": 74,
+      "베트남어 읽기 B2.pdf": 69
+    },
+    "final": 209
+  },
+  "inventory": {
+    "corpus_pages": {
+      "count": 1702,
+      "documents": {
+        "베트남어 듣기 말하기.pdf": 384,
+        "베트남어 일상 회화.pdf": 129,
+        "베트남어 읽기 쓰기 A1.pdf": 288,
+        "베트남어 읽기 쓰기 A2.pdf": 274,
+        "베트남어 읽기 쓰기 B1.pdf": 353,
+        "베트남어 읽기 B2.pdf": 274
+      }
+    },
+    "grammar_candidate_pages": {
+      "count": 557,
+      "documents": {
+        "베트남어 듣기 말하기.pdf": 193,
+        "베트남어 일상 회화.pdf": 81,
+        "베트남어 읽기 쓰기 A1.pdf": 89,
+        "베트남어 읽기 쓰기 A2.pdf": 51,
+        "베트남어 읽기 쓰기 B1.pdf": 74,
+        "베트남어 읽기 B2.pdf": 69
+      }
+    },
+    "dialogue_candidate_pages": {
+      "count": 115,
+      "documents": {
+        "베트남어 듣기 말하기.pdf": 80,
+        "베트남어 일상 회화.pdf": 13,
+        "베트남어 읽기 쓰기 A1.pdf": 22
+      }
+    },
+    "culture_candidate_pages": {
+      "count": 51,
+      "documents": {
+        "베트남어 듣기 말하기.pdf": 32,
+        "베트남어 일상 회화.pdf": 14,
+        "베트남어 읽기 쓰기 A2.pdf": 2,
+        "베트남어 읽기 B2.pdf": 3
+      }
+    }
+  }
+}

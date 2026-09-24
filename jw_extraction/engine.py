@@ -22,11 +22,16 @@ DATA_DIR = "jw_extraction/data"
 REVIEW_DIR = "jw_extraction/review"
 
 class ExtractionEngine:
-    def __init__(self, data_dir: str = DATA_DIR, review_dir: str = REVIEW_DIR):
+    def __init__(self, data_dir: str = DATA_DIR, review_dir: str = REVIEW_DIR, profile: str = "jw"):
+        if profile not in ("jw", "general"):
+            raise ValueError("Unknown extraction profile: " + profile)
+        self.profile = profile
+        if profile == "general" and data_dir == DATA_DIR:
+            data_dir = os.path.join(DATA_DIR, "general")
         self.data_dir = data_dir
         self.review_dir = review_dir
         self.manifest_mgr = ManifestManager(data_dir=data_dir)
-        self.grammar_registry = GrammarRegistry()
+        self.grammar_registry = GrammarRegistry() if profile == "jw" else None
         self.frequency_engine = FrequencyEngine()
 
     def get_confirmed_words(self) -> List[Dict]:
@@ -54,12 +59,14 @@ class ExtractionEngine:
 
     def extract_all_documents(self) -> List[SourceDocument]:
         docs = []
-        for adapter in get_all_adapters():
+        for adapter in get_all_adapters(self.profile):
             docs.extend(adapter.extract_documents())
         return docs
 
     def run_pipeline(self, mode: str = "rebuild") -> Dict[str, Any]:
         """Runs the extraction pipeline in 'rebuild', 'incremental', or 'dry-run' mode."""
+        if self.profile == "general":
+            return self.run_general_pipeline(mode)
         os.makedirs(self.data_dir, exist_ok=True)
         os.makedirs(self.review_dir, exist_ok=True)
 
@@ -179,6 +186,13 @@ class ExtractionEngine:
 
     def validate(self) -> Dict[str, Any]:
         """Runs validation checks across sources, segments, occurrences, and profiles."""
+        if self.profile == "general":
+            try:
+                with open(os.path.join(self.data_dir, "derived_general_data.json"), encoding="utf-8") as f:
+                    output = json.load(f)
+                return self.validate_general_output(output)
+            except (OSError, ValueError, KeyError, TypeError) as exc:
+                return {"isValid": False, "errors": [str(exc)], "warnings": []}
         errors = []
         warnings = []
 
@@ -236,15 +250,116 @@ class ExtractionEngine:
             "totalSegmentsChecked": len(seg_ids),
         }
 
+    def general_output(self, documents=None):
+        from pathlib import Path
+        from jw_extraction.general_policy import classify_documents
+        from jw_extraction.normalization import compute_hash
+        documents = self.extract_all_documents() if documents is None else documents
+        if any(d.profile != "general" or d.sourceType != "general_vietnamese_pdf" for d in documents):
+            raise ValueError("Non-GENERAL source supplied to GENERAL extraction")
+        data, coverage = classify_documents(documents)
+        code_files = ["engine.py", "models.py", "normalization.py", "sentence_selector.py", "general_policy.py",
+                      "adapters/base.py", "adapters/general_pdf_adapter.py"]
+        code = "".join((Path(__file__).parent / name).read_text(encoding="utf-8") for name in code_files)
+        return {"version": "general-pdf-1", "profile": "general", "pipelineHash": compute_hash(code),
+                "documentHashes": {d.id: d.hash for d in documents},
+                "documentCount": len(documents), "segmentCount": sum(len(d.segments) for d in documents),
+                "segments": [{"id": s.id, "documentId": d.id, "sourceType": s.sourceType,
+                              "sectionId": s.sectionId, "hash": s.hash,
+                              "file": s.metadata["file"], "page": s.metadata["page"]}
+                             for d in documents for s in d.segments],
+                "learningData": data, "coverage": coverage}
+
+    def validate_general_output(self, output, expected=None):
+        """Extend the engine validator with source-backed GENERAL record checks.
+
+        Reconstructing deterministic expected output verifies text, IDs, context,
+        all provenance references and classification, not just schema presence.
+        """
+        errors = []
+        try:
+            expected = self.general_output() if expected is None else expected
+            if output != expected:
+                errors.append("GENERAL output differs from authoritative sources/current extraction policy")
+            if output.get("profile") != "general":
+                errors.append("Invalid GENERAL profile")
+            data = output.get("learningData", {})
+            if set(data) != {"words", "sentences", "grammar"}:
+                errors.append("Invalid learning category")
+            ids = set()
+            segments = {s["id"]: s for s in expected["segments"]}
+            from site_profiles import RELIGIOUS_FILTER_TERMS
+            for kind, rows in data.items():
+                for row in rows:
+                    if row.get("id") in ids:
+                        errors.append("Duplicate learning ID: " + str(row.get("id")))
+                    ids.add(row.get("id"))
+                    if row.get("category") != kind or row.get("profile") != "general":
+                        errors.append("Invalid record category/profile")
+                    if not isinstance(row.get("original" if kind == "grammar" else "vi"), str) or not row.get("original" if kind == "grammar" else "vi", "").strip():
+                        errors.append("Empty required learning text")
+                    if not row.get("sources"):
+                        errors.append("Missing provenance")
+                    for source in row.get("sources", []):
+                        segment = segments.get(source.get("segmentId"))
+                        if not segment or any(source.get(k) != segment.get(k) for k in ("documentId", "sourceType", "file", "page")):
+                            errors.append("Invalid source/segment reference")
+                    text = json.dumps({k: v for k, v in row.items() if k != "sources"}, ensure_ascii=False).casefold()
+                    if any(term.casefold() in text for term in RELIGIOUS_FILTER_TERMS):
+                        errors.append("JW_ONLY/religious content in GENERAL record")
+        except (KeyError, TypeError, ValueError, AttributeError) as exc:
+            errors.append("Malformed GENERAL output: " + str(exc))
+        return {"isValid": not errors, "errors": errors, "warnings": [],
+                "totalDocumentsChecked": expected["documentCount"] if expected else 0,
+                "totalSegmentsChecked": expected["segmentCount"] if expected else 0}
+
+    def load_general_output(self):
+        path = os.path.join(self.data_dir, "derived_general_data.json")
+        with open(path, encoding="utf-8") as f:
+            output = json.load(f)
+        result = self.validate_general_output(output)
+        if not result["isValid"]:
+            raise ValueError("Run python -B -m jw_extraction.engine --profile general --rebuild: " + "; ".join(result["errors"]))
+        return output
+
+    def run_general_pipeline(self, mode):
+        documents = self.extract_all_documents()
+        output = self.general_output(documents)
+        result = self.validate_general_output(output, expected=self.general_output(documents))
+        if not result["isValid"]:
+            raise ValueError("; ".join(result["errors"]))
+        new, changed, unchanged, removed = self.manifest_mgr.diff_documents(documents)
+        summary = {"profile": "general", "mode": mode, "totalDocuments": len(documents),
+                   "totalSegments": output["segmentCount"], "newDocuments": [d.id for d in new],
+                   "changedDocuments": [d.id for d in changed], "unchangedDocuments": len(unchanged),
+                   "removedDocuments": sorted(removed),
+                   "counts": {k: {a: v[a] for a in ("raw", "normalized", "duplicates", "final")} for k, v in output["coverage"].items() if k != "inventory"}}
+        path = os.path.join(self.data_dir, "derived_general_data.json")
+        serialized = json.dumps(output, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
+        from pathlib import Path
+        current = Path(path).read_text(encoding="utf-8") if Path(path).exists() else None
+        summary["outputChanged"] = current != serialized
+        if mode == "dry-run":
+            return summary
+        if mode == "incremental" and current == serialized and not new and not changed and not removed:
+            return summary
+        os.makedirs(self.data_dir, exist_ok=True)
+        Path(path).write_text(serialized, encoding="utf-8")
+        self.manifest_mgr.save_manifest({"engineVersion": output["version"], "profile": "general",
+                                        "pipelineHash": output["pipelineHash"], "documentHashes": output["documentHashes"]})
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        return summary
+
 def main():
     parser = argparse.ArgumentParser(description="JW Learning Extraction Engine CLI")
+    parser.add_argument("--profile", choices=["jw", "general"], default="jw", help="Isolated source/output profile (default: jw)")
     parser.add_argument("--rebuild", action="store_true", help="Perform a full rebuild of all derived indexes")
     parser.add_argument("--incremental", action="store_true", help="Incrementally update new or changed sources")
     parser.add_argument("--dry-run", action="store_true", help="Report what would change without modifying derived data")
     parser.add_argument("--validate", action="store_true", help="Run comprehensive data integrity and profile isolation validation")
     args = parser.parse_args()
 
-    engine = ExtractionEngine()
+    engine = ExtractionEngine(profile=args.profile)
 
     if args.validate:
         res = engine.validate()

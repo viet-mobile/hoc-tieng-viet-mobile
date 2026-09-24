@@ -1,0 +1,57 @@
+{
+  "sources": 6,
+  "total_pages_with_text": 1702,
+  "daily_conversation_pages": 115,
+  "grammar_pages": 557,
+  "culture_pages": 51,
+  "files": {
+    "vietnamese_pdf_corpus.json": {
+      "bytes": 4349616,
+      "sha256": "a3345cbb8c14146a045142b54bf86357c3df98b6a474848809b0bccc751ed78f",
+      "json_valid": true
+    },
+    "daily_conversations.json": {
+      "bytes": 424958,
+      "sha256": "c118a7cb0c87fcbfbe74bdb4b7859e652e876b67769b9bb98955ada5c3f5b284",
+      "json_valid": true
+    },
+    "grammar_from_pdfs.json": {
+      "bytes": 2109085,
+      "sha256": "e565d55bf082a07c09db66b91d67fbd41c0fde49fde4e18a996b2a91e03a3971",
+      "json_valid": true
+    },
+    "vietnam_culture_from_pdfs.json": {
+      "bytes": 187797,
+      "sha256": "e906fd8fe595bb1c7624a0bb150e5cf3759c35e26ef492e406f1ef2a1605277a",
+      "json_valid": true
+    }
+  },
+  "speaker_name_replacement": {
+    "scope": "standalone speaker-label lines only",
+    "mapping": {
+      "Hùng": "Minh",
+      "Se-ho": "Tuấn",
+      "Phong": "Nam",
+      "Nam": "Dũng",
+      "Anh": "Quân",
+      "Bình": "Khánh",
+      "Dũng": "Phúc",
+      "Tuấn": "Đức",
+      "Hoa": "Lan",
+      "Mai": "Hương",
+      "Lan": "Thảo",
+      "Hương": "Ngọc",
+      "Thảo": "Linh",
+      "Ngọc": "Trang",
+      "Linh": "Vy"
+    },
+    "replacement_counts": {
+      "Hùng": 48,
+      "Se-ho": 168,
+      "Hoa": 32,
+      "Mai": 4,
+      "Nam": 4
+    },
+    "total_replacements": 256
+  }
+}

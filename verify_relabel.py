@@ -103,7 +103,7 @@ async def main():
         print("curriculum labels:", curr_labels)
         print("pron labels:", pron_labels)
         print("wizard labels:", wizard_labels)
-        assert curr_labels == ["16주 과정", "문화", "노래·기도", "사용설명"]
+        assert curr_labels == ["학습 과정", "문화", "노래·기도", "사용설명"]
         assert pron_labels == ["설정", "문자", "모음", "자음", "성조", "연속 성조", "남북 발음"]
         assert wizard_labels == ["대화", "호칭", "제공 연설", "이웃 사람과의 대화"]
 

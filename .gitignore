@@ -3,9 +3,11 @@ dist/
 app.html
 app.general.html
 app.jeonju.html
+app.ulsan.html
 data_block.js
 data_block.general.js
 data_block.jeonju.js
+data_block.ulsan.js
 
 # Session temp/scratch directories (one-off scripts and zip-verification extractions)
 .temp/

@@ -196,6 +196,204 @@ def build_watchtower_full(raw):
 love_people_full_data = build_love_people_full(love_people_raw)
 watchtower_full_data = build_watchtower_full(watchtower_study_raw)
 
+def enrich_curated_datasets(lff, lpd, wt, elf_raw, lpd_raw, wt_raw):
+    """Enriches curated publications (LFF_CONVERSATIONS, LPD_LESSONS, WATCHTOWER_VOCAB)
+    with authoritative translations from the Excel raw sources (Enjoy Life Forever(4).xlsx,
+    Love people(3).xlsx, Watchtower Study(3).xlsx) across all 11 target languages:
+    cs, zh_cn, zh, en, fr, de, hu, id, ja, ko, pl.
+    No translations are fabricated, AI-generated, or backfilled from unrelated sources.
+    Only authentic cells from the authoritative publications are attached."""
+    import re
+    target_langs = ["cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko", "pl"]
+
+    def clean_key(s):
+        if not s:
+            return ""
+        s = s.replace('\xa0', ' ').replace('®', '')
+        s = re.sub(r'^\s*\(?\s*(?:[0-9]+|[a-zA-Z])\s*[\.\)]\s*', '', s)
+        s = re.sub(r'^[•\-\–—\*\s\d\.\,\(\)]+\s*', '', s)
+        s = re.sub(r'\b[a-zA-Z]\b', '', s)
+        s = re.sub(r'[\s\.\?!,;:\"\'“”‘’\(\)\[\]\—\-\–]+', ' ', s)
+        return s.strip().lower()
+
+    # 1. Enjoy Life Forever -> LFF_CONVERSATIONS
+    elf_by_sheet = {}
+    elf_global = {}
+    for s in elf_raw.get("sheets", []):
+        sid = str(s.get("sheet", "")).strip()
+        elf_by_sheet[sid] = s.get("rows", [])
+        for r in s.get("rows", []):
+            vi = r.get("vi") or ""
+            ck = clean_key(vi)
+            raw_k = re.sub(r'\s+', ' ', vi.replace('\xa0', ' ')).strip().lower()
+            if ck and ck not in elf_global:
+                elf_global[ck] = r
+            if raw_k and raw_k not in elf_global:
+                elf_global[raw_k] = r
+
+    for conv in lff:
+        sheet_num = str(conv.get("num", "") or "").strip()
+        if conv.get("kind") == "review" and conv.get("part"):
+            sheet_num = "R" + str(conv.get("part"))
+        elif conv.get("kind") == "ready":
+            sheet_num = "Ready"
+        sheet_rows = elf_by_sheet.get(sheet_num, [])
+        sm = {}
+        for r in sheet_rows:
+            vi = r.get("vi") or ""
+            ck = clean_key(vi)
+            raw_k = re.sub(r'\s+', ' ', vi.replace('\xa0', ' ')).strip().lower()
+            if ck:
+                sm[ck] = r
+            if raw_k:
+                sm[raw_k] = r
+
+        # Title
+        if "title" in conv and isinstance(conv["title"], dict):
+            t_vi = clean_key(conv["title"].get("vi", ""))
+            for r in sheet_rows[:6]:
+                if clean_key(r.get("vi", "")) == t_vi:
+                    for lang in target_langs:
+                        if (lang not in conv["title"] or not conv["title"][lang]) and r.get(lang):
+                            conv["title"][lang] = r[lang]
+                    break
+
+        # Lines
+        for line in conv.get("lines", []):
+            vi = line.get("vi") or ""
+            ck = clean_key(vi)
+            raw_k = re.sub(r'\s+', ' ', vi.replace('\xa0', ' ')).strip().lower()
+            row = sm.get(raw_k) or sm.get(ck)
+            if not row:
+                for k, r in sm.items():
+                    if len(k) > 10 and (k in ck or ck in k):
+                        row = r
+                        break
+            if not row:
+                row = elf_global.get(raw_k) or elf_global.get(ck)
+            if not row:
+                for k, r in elf_global.items():
+                    if len(k) > 12 and (k in ck or ck in k):
+                        row = r
+                        break
+            if row:
+                for lang in target_langs:
+                    if (lang not in line or not line[lang]) and row.get(lang):
+                        line[lang] = row[lang]
+
+    # 2. Love People -> LPD_LESSONS
+    lpd_by_sheet = {}
+    lpd_global = {}
+    for s in lpd_raw.get("sheets", []):
+        sid = str(s.get("sheet", "")).strip()
+        lpd_by_sheet[sid] = s.get("rows", [])
+        for r in s.get("rows", []):
+            vi = r.get("vi") or ""
+            ck = clean_key(vi)
+            raw_k = re.sub(r'\s+', ' ', vi.replace('\xa0', ' ')).strip().lower()
+            if ck and ck not in lpd_global:
+                lpd_global[ck] = r
+            if raw_k and raw_k not in lpd_global:
+                lpd_global[raw_k] = r
+
+    for conv in lpd:
+        sheet_num = str(conv.get("num", "") or "").strip()
+        if conv.get("kind") == "appendix":
+            sheet_num = "Appendix " + sheet_num
+        sheet_rows = lpd_by_sheet.get(sheet_num, [])
+        sm = {}
+        for r in sheet_rows:
+            vi = r.get("vi") or ""
+            ck = clean_key(vi)
+            raw_k = re.sub(r'\s+', ' ', vi.replace('\xa0', ' ')).strip().lower()
+            if ck:
+                sm[ck] = r
+            if raw_k:
+                sm[raw_k] = r
+
+        # Title
+        if "title" in conv and isinstance(conv["title"], dict):
+            t_vi = clean_key(conv["title"].get("vi", ""))
+            for r in sheet_rows[:6]:
+                if clean_key(r.get("vi", "")) == t_vi:
+                    for lang in target_langs:
+                        if (lang not in conv["title"] or not conv["title"][lang]) and r.get(lang):
+                            conv["title"][lang] = r[lang]
+                    break
+
+        # Lines
+        for line in conv.get("lines", []):
+            vi = line.get("vi") or ""
+            ck = clean_key(vi)
+            raw_k = re.sub(r'\s+', ' ', vi.replace('\xa0', ' ')).strip().lower()
+            row = sm.get(raw_k) or sm.get(ck)
+            if not row:
+                for k, r in sm.items():
+                    if len(k) > 10 and (k in ck or ck in k):
+                        row = r
+                        break
+            if not row:
+                row = lpd_global.get(raw_k) or lpd_global.get(ck)
+            if not row:
+                for k, r in lpd_global.items():
+                    if len(k) > 12 and (k in ck or ck in k):
+                        row = r
+                        break
+            if row:
+                for lang in target_langs:
+                    if (lang not in line or not line[lang]) and row.get(lang):
+                        line[lang] = row[lang]
+
+    # 3. Watchtower Study -> WATCHTOWER_VOCAB
+    wt_global = {}
+    wt_by_week = {}
+    for s in wt_raw.get("sheets", []):
+        sid = str(s.get("sheet", "")).strip()
+        wt_by_week[sid] = s.get("rows", [])
+        for r in s.get("rows", []):
+            vi = r.get("vi") or ""
+            ck = clean_key(vi)
+            raw_k = re.sub(r'\s+', ' ', vi.replace('\xa0', ' ')).strip().lower()
+            if ck and ck not in wt_global:
+                wt_global[ck] = r
+            if raw_k and raw_k not in wt_global:
+                wt_global[raw_k] = r
+
+    for wk in wt:
+        week_num = str(wk.get("week", "") or "").strip()
+        sheet_rows = wt_by_week.get(week_num, [])
+
+        # Date range
+        if "date_range" in wk and isinstance(wk["date_range"], dict) and sheet_rows:
+            r0 = sheet_rows[0]
+            for lang in target_langs:
+                if (lang not in wk["date_range"] or not wk["date_range"][lang]) and r0.get(lang):
+                    wk["date_range"][lang] = r0[lang]
+
+        # Word example sentences
+        for word in wk.get("words", []):
+            ex = word.get("example") or ""
+            if ex:
+                ck = clean_key(ex)
+                raw_k = re.sub(r'\s+', ' ', ex.replace('\xa0', ' ')).strip().lower()
+                row = wt_global.get(raw_k) or wt_global.get(ck)
+                if not row:
+                    for k, r in wt_global.items():
+                        if len(k) > 10 and (k in ck or ck in k):
+                            row = r
+                            break
+                if row:
+                    em = word.setdefault("example_mean", {})
+                    for lang in target_langs:
+                        if (lang not in em or not em[lang]) and row.get(lang):
+                            em[lang] = row[lang]
+
+# Enrich curated publications with 12-language authoritative Excel translations
+enrich_curated_datasets(
+    LFF_CONVERSATIONS, LPD_LESSONS, WATCHTOWER_VOCAB,
+    enjoy_life_forever_raw, love_people_raw, watchtower_study_raw
+)
+
 jw_extraction_data_path = os.path.join(os.path.dirname(__file__), "jw_extraction", "data", "derived_jw_data.json")
 if os.path.exists(jw_extraction_data_path):
     with open(jw_extraction_data_path, "r", encoding="utf-8") as f:
@@ -317,10 +515,36 @@ def build_data_js(site):
     parts.append(emit("SB_WH_WORDS", SB_WH_WORDS))
     parts.append(emit("SB_COMPLEMENT_NOUNS", SB_COMPLEMENT_NOUNS))
     parts.append(emit("SB_PREPOSITIONS", SB_PREPOSITIONS))
-    parts.append(emit("CURR_WELCOME", WELCOME_TEXT))
-    parts.append(emit("CURR_PHASES", COURSE_PHASES))
-    parts.append(emit("CURR_WEEKS", WEEK16_TOC))
-    parts.append(emit("CURR_ASSIGNMENTS", WEEKLY_ASSIGNMENTS))
+    curr_welcome = WELCOME_TEXT
+    curr_phases = COURSE_PHASES
+    curr_weeks = WEEK16_TOC
+    curr_assignments = WEEKLY_ASSIGNMENTS
+
+    if site == "jeonju":
+        import jeonju_data
+        if getattr(jeonju_data, "JEONJU_CURR_WELCOME", None) is not None:
+            curr_welcome = jeonju_data.JEONJU_CURR_WELCOME
+        if getattr(jeonju_data, "JEONJU_CURR_PHASES", None) is not None:
+            curr_phases = jeonju_data.JEONJU_CURR_PHASES
+        if getattr(jeonju_data, "JEONJU_CURR_WEEKS", None) is not None:
+            curr_weeks = jeonju_data.JEONJU_CURR_WEEKS
+        if getattr(jeonju_data, "JEONJU_CURR_ASSIGNMENTS", None) is not None:
+            curr_assignments = jeonju_data.JEONJU_CURR_ASSIGNMENTS
+    elif site == "ulsan":
+        import ulsan_data
+        if getattr(ulsan_data, "ULSAN_CURR_WELCOME", None) is not None:
+            curr_welcome = ulsan_data.ULSAN_CURR_WELCOME
+        if getattr(ulsan_data, "ULSAN_CURR_PHASES", None) is not None:
+            curr_phases = ulsan_data.ULSAN_CURR_PHASES
+        if getattr(ulsan_data, "ULSAN_CURR_WEEKS", None) is not None:
+            curr_weeks = ulsan_data.ULSAN_CURR_WEEKS
+        if getattr(ulsan_data, "ULSAN_CURR_ASSIGNMENTS", None) is not None:
+            curr_assignments = ulsan_data.ULSAN_CURR_ASSIGNMENTS
+
+    parts.append(emit("CURR_WELCOME", curr_welcome))
+    parts.append(emit("CURR_PHASES", curr_phases))
+    parts.append(emit("CURR_WEEKS", curr_weeks))
+    parts.append(emit("CURR_ASSIGNMENTS", curr_assignments))
     parts.append(emit("CULTURE_ARTICLES", CULTURE_ARTICLES))
     parts.append(emit("USAGE_GUIDE_COMMON", USAGE_GUIDE_COMMON))
     parts.append(emit("USAGE_GUIDE_TABS", USAGE_GUIDE_TABS))
@@ -374,23 +598,58 @@ def build_data_js(site):
         RHYME_GROUPS, WORD_ORDER_REVERSED_EXTRA, vocab_groups, ANTONYM_PAIRS,
         USER_NEW_WORDS, corpus_text, RELIGIOUS_FILTER_TERMS
     )
+    from jw_extraction.engine import ExtractionEngine
+    from general_pdf_data import merge_pdf_words
+    pdf_learning = ExtractionEngine(profile="general").load_general_output()["learningData"]
+    unified_words = merge_pdf_words(unified_words, pdf_learning["words"])
+    parts.append(emit("GENERAL_PDF", pdf_learning))
     parts.append(emit("UNIFIED_WORDS", unified_words))
     parts.append(emit("GRAMMAR_A1_A2_PATTERNS", GRAMMAR_A1_A2_PATTERNS))
     parts.append(emit("GRAMMAR_B1_B2_PATTERNS", GRAMMAR_B1_B2_PATTERNS))
     parts.append(emit("JW_EXTRACTION_DATA", jw_extraction_data))
 
-    if site == "jeonju":
-        from jeonju_data import JEONJU_INFO, JEONJU_WEEKS
-        parts.append(emit("JEONJU_INFO", JEONJU_INFO))
-        parts.append(emit("JEONJU_WEEKS", JEONJU_WEEKS))
+    if site == "jw":
+        parts.append(emit("JW_COURSE_DATE_LABELS", {
+            0: "2026/10/10 - 1주", 1: "2026/10/17 - 2주", 2: "2026/10/24 - 3주", 3: "2026/10/31 - 4주",
+            4: "2026/11/14 - 5주", 5: "2026/11/21 - 6주", 6: "2026/11/28 - 7주", 7: "2026/12/12 - 8주",
+            8: "2026/12/19 - 9주", 9: "2027/1/2 - 10주", 10: "2027/1/9 - 11주", 11: "2027/1/16 - 12주",
+            12: "2027/1/23 - 13주", 13: "2027/1/30 - 14주", 14: "2027/2/6 - 15주", 15: "2027/2/13 - 16주"
+        }))
+        parts.append(emit("JW_COURSE_BREAK_LABELS", {
+            "-1.5": "2026/11/7 방학",
+            "-2.5": "2026/12/5 천안 베트남어 순회대회 파이오니아 모임",
+            "-3.5": "2026/12/26 군산 한국어 순회대회"
+        }))
+    elif site == "jeonju":
+        import jeonju_data
+        parts.append(emit("JEONJU_INFO", jeonju_data.JEONJU_INFO))
+        parts.append(emit("JEONJU_WEEKS", getattr(jeonju_data, "JEONJU_WEEKS", [])))
+        parts.append(emit("REGIONAL_SCHEDULE", {
+            "preliminaryMeetingDate": jeonju_data.JEONJU_PRELIMINARY_DATE,
+            "courseStartDate": jeonju_data.JEONJU_COURSE_START_DATE,
+            "courseEndDate": jeonju_data.JEONJU_COURSE_END_DATE,
+            "intervalDays": jeonju_data.JEONJU_INTERVAL_DAYS,
+            "cancellations": jeonju_data.JEONJU_CANCELLATIONS,
+        }))
+    elif site == "ulsan":
+        import ulsan_data
+        parts.append(emit("ULSAN_INFO", ulsan_data.ULSAN_INFO))
+        parts.append(emit("ULSAN_WEEKS", getattr(ulsan_data, "ULSAN_WEEKS", [])))
+        parts.append(emit("REGIONAL_SCHEDULE", {
+            "preliminaryMeetingDate": ulsan_data.ULSAN_PRELIMINARY_DATE,
+            "courseStartDate": ulsan_data.ULSAN_COURSE_START_DATE,
+            "courseEndDate": ulsan_data.ULSAN_COURSE_END_DATE,
+            "intervalDays": ulsan_data.ULSAN_INTERVAL_DAYS,
+            "cancellations": ulsan_data.ULSAN_CANCELLATIONS,
+        }))
 
     data_js = "".join(parts)
 
     if site == "general":
         data_js += "const SONGS_DATA = [];\nconst SONG_MEANINGS = {};\n"
     else:
-        # jw and jeonju both get the full, identical Kingdom Songs source (same file, same
-        # content) -- jeonju is JW's full data set plus its own event layer, not general+songs.
+        # jw, jeonju, and ulsan get the full, identical Kingdom Songs source (same file, same
+        # content) -- regional profiles are JW's full data set plus their own event layer.
         songs_data_js = open("songs_data.js", encoding="utf-8").read()
         song_meanings_js = open("song_meanings.js", encoding="utf-8").read()
         data_js += "\n" + songs_data_js + "\n" + song_meanings_js + "\n"
@@ -404,20 +663,19 @@ if __name__ == "__main__":
     parser.add_argument("--product", choices=list(PRODUCTS.keys()), default="vietnamese",
                          help="Learning-content language/product (only 'vietnamese' is implemented; "
                               "see site_profiles.PRODUCTS for architecture-ready placeholders).")
-    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju", "all"], default="all",
-                         help="Content profile to build: general | jw | jeonju | all (the vietnamese "
-                              "product's event profile). --site is kept as an alias for --profile "
-                              "for backward compatibility; default all builds all profiles.")
+    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju", "ulsan", "all"], default="all",
+                         help="Content profile to build: general | jw | jeonju | ulsan | all. "
+                              "--site is kept as an alias for --profile for backward compatibility; "
+                              "default all builds all profiles.")
     args = parser.parse_args()
 
     if args.product != "vietnamese":
         raise SystemExit(f"--product {args.product!r} is architecture-ready only; no data/content "
                           f"exists for it in this repo (see site_profiles.PRODUCTS).")
 
-    sites = ["general", "jw", "jeonju"] if args.site == "all" else [args.site]
+    sites = ["general", "jw", "jeonju", "ulsan"] if args.site == "all" else [args.site]
     for s in sites:
         data_js = build_data_js(s)
         out_name = "data_block.js" if s == "jw" else f"data_block.{s}.js"
         open(out_name, "w", encoding="utf-8").write(data_js)
         print(f"[{args.product}/{s}] data block bytes:", len(data_js), "->", out_name)
-

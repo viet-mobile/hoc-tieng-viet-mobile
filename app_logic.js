@@ -140,6 +140,7 @@
   }
   var LANG_CHANGE_LISTENERS = [];
   function onLangChange(fn) { LANG_CHANGE_LISTENERS.push(fn); }
+  window.setLang = setLang; // hook used by tests/test_browser_runtime.js
   function setLang(lang) {
     if (VALID_LANGS.indexOf(lang) < 0) return;
     currentLang = lang;
@@ -164,7 +165,7 @@
   // study mode's own foot-btn row) that didn't exist yet at the previous scan; already-assigned
   // elements are skipped instantly.
   var PASTEL_SLOT_COUNT = 10;
-  var PASTEL_SLOT_SELECTOR = ".tab-btn, .subtab-btn, .lang-btn, .study-mode-btn, .foot-btn";
+  var PASTEL_SLOT_SELECTOR = ".tab-btn, .subtab-btn, .study-mode-btn, .foot-btn";
   var pastelSlotCounter = 0;
   function assignPastelSlots() {
     document.querySelectorAll(PASTEL_SLOT_SELECTOR).forEach(function (el) {
@@ -225,6 +226,7 @@
   "발음": {"vi": "Phát âm", "zh_cn": "发音", "zh": "發音", "en": "Phonics", "fr": "Prononciation", "de": "Aussprache", "id": "Pelafalan", "ja": "発音", "pl": "Wymowa"},
   "성경": {"vi": "Kinh Thánh", "zh_cn": "圣经", "zh": "聖經", "en": "Bible", "fr": "Bible", "de": "Bibel", "id": "Alkitab", "ja": "聖書", "pl": "Biblia"},
   "전주 학습반": {"cs": "Kurz Jeonju", "zh_cn": "全州越南语班", "zh": "全州越南語班", "en": "Jeonju Class", "fr": "Cours de Jeonju", "de": "Jeonju-Kurs", "hu": "Jeonju tanfolyam", "ja": "チョンジュ学習班", "pl": "Kurs w Jeonju"},
+  "울산 학습반": {"vi": "Lớp học Ulsan", "cs": "Kurz Ulsan", "zh_cn": "蔚山越南语班", "zh": "蔚山越南語班", "en": "Ulsan Class", "fr": "Cours d'Ulsan", "de": "Ulsan-Kurs", "hu": "Ulsan tanfolyam", "id": "Kelas Ulsan", "ja": "ウルサン学習班", "ko": "울산 학습반", "pl": "Kurs w Ulsan"},
   "자료 미정": {"cs": "Materiál zatím neurčen", "zh_cn": "教材待定", "zh": "教材待定", "en": "Material TBD", "fr": "Contenu à venir", "de": "Material noch offen", "hu": "Anyag még nincs meghatározva", "ja": "資料未定", "pl": "Materiał nieustalony"},
   "대화": {"vi": "Hội thoại", "zh_cn": "对话", "zh": "對話", "en": "Talks", "fr": "Dialogue", "de": "Dialog", "id": "Percakapan", "ja": "会話", "pl": "Rozmowy"},
   "어휘": {"vi": "Từ vựng", "zh_cn": "词汇", "zh": "詞彙", "en": "Words", "fr": "Vocabulaire", "de": "Wortschatz", "id": "Kosakata", "ja": "語彙", "pl": "Słownictwo"},
@@ -243,7 +245,12 @@
   "전체 보기": {"zh_cn": "查看全部", "zh": "查看全部", "en": "Show all", "fr": "Tout afficher", "de": "Alle anzeigen", "ja": "すべて見る", "pl": "Pokaż wszystko"},
   "학습반 교과 자료": {"zh_cn": "学习班教材资料", "zh": "學習班教材資料", "en": "Class Curriculum Materials", "fr": "Supports du cours de langue", "de": "Unterrichtsmaterialien", "ja": "学習会教材資料", "pl": "Materiały kursu językowego"},
   "16주 과정 목차, 베트남 문화 이야기, 기도와 노래까지 — 학습반 교재의 자료를 모아 뒀어요. 제공 연설은 대화 탭, 성경 인명 사전·기본 단어는 어휘 탭, 범용 언어 생성표·문법 특강은 문법 탭에 있어요.": {"zh_cn": "从16周课程目录、越南文化故事，到祷告与歌曲——这里收集了学习班教材的所有资料。提供见证的内容在「对话」分页，圣经人名辞典和基本词汇在「词汇」分页，通用语言生成表和文法特別课程在「文法」分页。", "zh": "從16週課程目錄、越南文化故事，到禱告與歌曲——這裡收集了學習班教材的所有資料。提供見證的內容在「對話」分頁，聖經人名辭典和基本詞彙在「詞彙」分頁，通用語言生成表和文法特別課程在「文法」分頁。", "en": "From the 16-week course outline and stories about Vietnamese culture to prayers and songs — all the class materials are gathered here. The offer talks are under the Dialogue tab, the Bible name dictionary and basic vocabulary are under the Vocabulary tab, and the general sentence-pattern chart and grammar features are under the Grammar tab.", "fr": "Du programme de cours en 16 semaines aux récits culturels vietnamiens, prières et cantiques : tous les supports pédagogiques sont réunis ici. Les présentations modèles sont sous l'onglet Dialogue, le dictionnaire des noms bibliques et le vocabulaire de base sous Vocabulaire, et le tableau de génération de phrases sous Grammaire.", "de": "Vom Inhaltsverzeichnis des 16-Wochen-Kurses über vietnamesische Kultur bis hin zu Gebeten und Liedern – alle Kursmaterialien sind hier versammelt. Gesprächsvorschläge finden sich im Tab Dialog, das biblische Namenslexikon und Grundwörter im Tab Wortschatz, die Satzbautabelle und Grammatiklektionen im Tab Grammatik.", "ja": "16週間コースの目次、ベトナムの文化についての話、祈りと歌まで――学習会教材の資料がここにまとめられています。提供のことばは「会話」タブに、聖書人名辞典と基本単語は「語彙」タブに、汎用文型表と文法特別レッスンは「文法」タブにあります。", "pl": "Od spisu treści 16-tygodniowego kursu, przez opisy wietnamskiej kultury, po modlitwy i pieśni — zebrano tu wszystkie materiały kursowe. Wzory rozmów znajdują się w zakładce Rozmowy, słownik imion biblijnych i podstawowe słownictwo w Słownictwie, a tabela tworzenia zdań w Gramatyce."},
-  "16주 과정": {"zh_cn": "16周课程", "zh": "16週課程", "en": "16-Week Course", "fr": "Programme de 16 semaines", "de": "16-Wochen-Kurs", "ja": "16週間コース", "pl": "Kurs 16-tygodniowy"},
+  "학습 과정": {"vi": "Khóa học", "cs": "Studijní kurz", "zh_cn": "学习课程", "zh": "學習課程", "en": "Study Course", "fr": "Cours d’étude", "de": "Lernkurs", "hu": "Tanulmányi kurzus", "id": "Kursus belajar", "ja": "学習コース", "pl": "Kurs nauki"},
+  "일정 미정": {"vi": "Chưa xác định lịch", "cs": "Rozvrh dosud nestanoven", "zh_cn": "日程未定", "zh": "日程未定", "en": "Schedule TBD", "fr": "Calendrier à déterminer", "de": "Termin noch offen", "hu": "Időbeosztás még nincs meghatározva", "id": "Jadwal belum ditentukan", "ja": "日程未定", "pl": "Harmonogram do ustalenia"},
+  "자료 미정": {"vi": "Chưa xác định tài liệu", "cs": "Materiál dosud nestanoven", "zh_cn": "教材资料未定", "zh": "教材資料未定", "en": "Material TBD", "fr": "Support à déterminer", "de": "Material noch offen", "hu": "Tananyag még nincs meghatározva", "id": "Materi belum ditentukan", "ja": "資料未定", "pl": "Materiały do ustalenia"},
+  "휴강": {"vi": "Nghỉ học", "cs": "Výuka se nekoná", "zh_cn": "休课", "zh": "停課", "en": "No Class", "fr": "Pas de cours", "de": "Unterrichtsausfall", "hu": "Nincs tanítás", "id": "Libur kelas", "ja": "休講", "pl": "Brak zajęć"},
+  "총복습": {"vi": "Tổng ôn tập", "cs": "Celkové opakování", "zh_cn": "总复习", "zh": "總複習", "en": "Comprehensive Review", "fr": "Révision générale", "de": "Gesamtwiederholung", "hu": "Összefoglaló ismétlés", "id": "Tinjauan menyeluruh", "ja": "総復習", "pl": "Powtórzenie całościowe"},
+  "예비 모임": {"vi": "Buổi gặp mặt chuẩn bị", "cs": "Přípravné setkání", "zh_cn": "预备聚会", "zh": "預備聚會", "en": "Preliminary Meeting", "fr": "Réunion préparatoire", "de": "Vorbereitungstreffen", "hu": "Előkészítő találkozó", "id": "Pertemuan persiapan", "ja": "予備の集まり", "pl": "Spotkanie wstępne"},
   "문화": {"vi": "Văn hóa", "zh_cn": "文化", "zh": "文化", "en": "Culture", "fr": "Culture", "de": "Kultur", "id": "Budaya", "ja": "文化", "pl": "Kultura"},
   "노래": {"vi": "Bài hát", "zh_cn": "诗歌", "zh": "詩歌", "en": "Songs", "fr": "Chants", "de": "Lieder", "id": "Lagu", "ja": "歌", "pl": "Pieśni"},
   "기도": {"zh_cn": "祷告", "zh": "禱告", "en": "Prayer", "fr": "Prière", "de": "Gebet", "ja": "祈り", "pl": "Modlitwa"},
@@ -353,7 +360,6 @@
   "듣기": {"vi": "Nghe", "zh_cn": "听力", "zh": "聽力", "en": "Listening", "fr": "Écoute", "de": "Hören", "id": "Mendengarkan", "ja": "聞き取り", "pl": "Słuchanie"},
   "어순 배열": {"vi": "Sắp xếp từ", "zh_cn": "排列语序", "zh": "排列語序", "en": "Word Order", "fr": "Ordre des mots", "de": "Wortstellung", "id": "Susun Urutan Kata", "ja": "語順並べ替え", "pl": "Szyk wyrazów"},
   "받아쓰기": {"vi": "Chính tả", "zh_cn": "听写", "zh": "聽寫", "en": "Dictation", "fr": "Dictée", "de": "Diktat", "id": "Dikte", "ja": "書き取り", "pl": "Dyktando"},
-  "형제·자매 베트남어 대화 확장훈련(남/북부), 16주 학습반 교과과정, 한자어 어휘 자료를 통합해 만들었습니다.": {"zh_cn": "整合了弟兄姐妹越南语对话延伸训练（南／北部）、16周学习班课程、汉字词汇资料制作而成。", "zh": "整合了弟兄姐妹越南語對話延伸訓練（南／北部）、16週學習班課程、漢字詞彙資料製作而成。", "en": "Built by combining extended Vietnamese-dialogue training for brothers and sisters (North/South), the 16-week class curriculum, and Sino-Vietnamese vocabulary resources.", "fr": "Conçu en intégrant la formation à la conversation pour frères et sœurs (Nord/Sud), le programme du cours en 16 semaines et le vocabulaire sino-vietnamien.", "de": "Erstellt durch Kombination von erweitertem Dialogtraining für Brüder und Schwestern (Nord/Süd), dem Lehrplan des 16-Wochen-Kurses und sino-vietnamesischen Wortschatzquellen.", "ja": "兄弟姉妹のためのベトナム語会話拡張トレーニング（南部／北部）、16週学習班のカリキュラム、漢越語彙資料を統合して作成しました。", "pl": "Opracowano na podstawie kursu konwersacji dla braci i sióstr (Północ/Południe), 16-tygodniowego programu nauczania oraz słownictwa sino-wietnamskiego."},
   "언어 선택 / 選擇語言 / Language": {"zh_cn": "언어 선택 / 选择语言 / Language", "zh": "언어 선택 / 選擇語言 / Language", "en": "언어 선택 / 選擇語言 / Language", "fr": "언어 선택 / 選擇語言 / Language / Sprachauswahl / Choix de langue", "de": "언어 선택 / 選擇語言 / Language / Sprachauswahl", "ja": "언어 선택 / 選擇語言 / Language", "pl": "언어 선택 / 選擇語言 / Language / Sprachauswahl / Choix de langue / Wybór języka"},
   "주요 메뉴": {"vi": "Menu chính", "zh_cn": "主要选单", "zh": "主要選單", "en": "Main Menu", "fr": "Menu principal", "de": "Hauptmenü", "id": "Menu Utama", "ja": "メインメニュー", "pl": "Główne menu"},
   "베트남어 단어나 한국어 뜻으로 검색": {"zh_cn": "用越南语单字或中文意思搜寻", "zh": "用越南語單字或中文意思搜尋", "en": "Search by Vietnamese word or English meaning", "fr": "Rechercher par mot vietnamien ou sens en français", "de": "Nach vietnamesischem Wort oder Bedeutung suchen", "ja": "ベトナム語の単語または日本語の意味で検索", "pl": "Szukaj według wietnamskiego słowa lub znaczenia"},
@@ -918,17 +924,26 @@
     window.addEventListener("resize", syncPrimaryTabLabels);
   })();
 
-  // Header language-switch buttons (ko / zh-TW / en / ja / de / fr / pl). Reflects currentLang (which may already
-  // be zh or en on load, restored from localStorage) both at startup and after every switch, and
-  // is itself just another onLangChange listener so it stays in sync with any future call to
-  // setLang() from elsewhere in the app.
+  // Separate UI display order for language selector dropdown (never derived from canonical data order)
+  var UI_LANG_DISPLAY_ORDER = [
+    { code: "ko", label: "한국어" },
+    { code: "ja", label: "日本語" },
+    { code: "zh", label: "繁體中文" },
+    { code: "zh_cn", label: "简体中文" },
+    { code: "cs", label: "Čeština" },
+    { code: "de", label: "Deutsch" },
+    { code: "en", label: "English" },
+    { code: "fr", label: "Français" },
+    { code: "id", label: "Indonesia" },
+    { code: "hu", label: "Magyar" },
+    { code: "pl", label: "Polski" },
+    { code: "vi", label: "Tiếng Việt" },
+  ];
+  window.UI_LANG_DISPLAY_ORDER = UI_LANG_DISPLAY_ORDER;
+
+  // Language switch dropdown (ko, ja, zh, zh_cn, cs, de, en, fr, id, hu, pl, vi).
+  // Reflects currentLang (restored from localStorage) both at startup and after every switch.
   (function bindLangSwitch() {
-    var root = document.getElementById("lang-switch");
-    if (!root) return;
-    var btns = root.querySelectorAll(".lang-btn");
-    btns.forEach(function (btn) {
-      btn.addEventListener("click", function () { setLang(btn.dataset.lang); });
-    });
     var selectEl = document.getElementById("lang-select");
     if (selectEl) {
       selectEl.addEventListener("change", function () {
@@ -936,7 +951,6 @@
       });
     }
     function sync(lang) {
-      btns.forEach(function (btn) { btn.setAttribute("aria-pressed", btn.dataset.lang === lang ? "true" : "false"); });
       if (selectEl && selectEl.value !== lang) {
         selectEl.value = lang;
       }
@@ -2574,8 +2588,64 @@
   })();
 
   /* ---------------- 문장 subtab (행복한 삶을 영원히 / 사람들을 사랑하고 제자로 / 파수대 / 노래 / 기도 / (전체) 원문 뷰어 3종) ---------------- */
+  // These source-backed views deliberately do not use t()/meaning fallbacks for
+  // learning content. A missing translation stays missing in every UI language.
+  function renderGeneralPdf() {
+    if (typeof GENERAL_PDF === "undefined") return;
+    ["words", "sentences", "grammar"].forEach(function (kind) {
+      var root = document.getElementById("pdf-" + kind + "-root");
+      if (!root) return;
+      root.replaceChildren();
+      var rows = GENERAL_PDF[kind] || [];
+      if (!rows.length) return;
+      var group = document.createElement("details");
+      group.open = true;
+      var title = document.createElement("summary");
+      title.textContent = "PDF · " + rows.length;
+      group.appendChild(title);
+      rows.forEach(function (row) {
+        var card = document.createElement("article");
+        card.className = "curr-card";
+        card.dataset.pdfId = row.id;
+        var text = document.createElement("div");
+        text.className = "pdf-original";
+        text.style.whiteSpace = "pre-wrap";
+        text.style.overflowWrap = "anywhere";
+        text.textContent = row.vi || "";
+        text.lang = "vi";
+        card.appendChild(text);
+        var meaning = document.createElement("p");
+        meaning.className = "pdf-translation";
+        var translated = row.translations && row.translations[currentLang];
+        meaning.dataset.translationAvailable = translated ? "true" : "false";
+        meaning.textContent = translated || (currentLang === "vi" && row.vi ? "" : "Translation unavailable · " + currentLang);
+        if (translated) meaning.lang = currentLang;
+        card.appendChild(meaning);
+        if (row.original) {
+          var original = document.createElement("details");
+          original.open = currentLang === "ko" || currentLang === "vi";
+          var label = document.createElement("summary");
+          label.textContent = "PDF original · vi / ko";
+          original.appendChild(label);
+          text.textContent = row.original;
+          text.removeAttribute("lang");
+          original.appendChild(text);
+          card.appendChild(original);
+        }
+        var source = document.createElement("small");
+        source.className = "pdf-source";
+        source.textContent = row.sources.map(function (s) { return s.file + " · p. " + s.page + (s.line ? " · L" + s.line : ""); }).join("; ");
+        card.appendChild(source);
+        group.appendChild(card);
+      });
+      root.appendChild(group);
+    });
+  }
+  renderGeneralPdf();
+  onLangChange(renderGeneralPdf);
   (function () {
     var panes = {
+      pdf: document.getElementById("sentence-pdf-pane"),
       lff: document.getElementById("sentence-lff-pane"),
       lpd: document.getElementById("sentence-lpd-pane"),
       wt: document.getElementById("sentence-wt-pane"),
@@ -2586,7 +2656,7 @@
       wt2: document.getElementById("sentence-wt2-pane"),
     };
     var btns = document.querySelectorAll(".subtab-btn[data-sentence]");
-    if (!btns.length || !panes.lff) return;
+    if (!btns.length) return;
     btns.forEach(function (btn) {
       btn.addEventListener("click", function () {
         btns.forEach(function (b) { b.setAttribute("aria-selected", "false"); });
@@ -3565,7 +3635,7 @@
     if (filterEl) {
       filterEl.style.display = "";
       var allTags = ["all"];
-      var knownTags = ["기본", "상용", "신권", "인명", "한자음", "어순반대", "동일음", "반의"];
+      var knownTags = ["기본", "상용", "신권", "인명", "한자음", "어순반대", "동일음", "반의", "PDF"];
       var presentTags = {};
       words.forEach(function (w) {
         if (w.tags) w.tags.forEach(function (t) { presentTags[t] = true; });
@@ -3592,6 +3662,7 @@
     function getWordMeaning(w) {
       if (!w) return "";
       var m = w.kr || w.meanings;
+      if (w.pdf_id) return (m && m[currentLang]) || (currentLang === "vi" ? "" : "Translation unavailable · " + currentLang);
       if (typeof m === "string") return m;
       if (m && typeof m === "object") return m[currentLang] || m.ko || m.en || "";
       return "";
@@ -3637,7 +3708,7 @@
             }
           }
         }
-        html += '<div class="bible-item"><div class="bible-body">' +
+        html += '<div class="bible-item"' + (w.pdf_id ? ' data-pdf-id="' + escapeAttr(w.pdf_id) + '"' : '') + '><div class="bible-body">' +
           '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">' +
           '<span class="bible-word vn font-bold">' + escapeHtml(w.vi) + '</span>' +
           (typeof w.frequency === "number" && w.frequency > 0 ? '<span class="word-freq-badge" title="' + TU("등장 빈도") + '">' + TU("빈도: ") + w.frequency + '</span>' : '') +
@@ -3646,6 +3717,7 @@
           (w.tags || []).map(function (t) { return '<span class="word-tag-pill">' + escapeHtml(TU(t)) + '</span>'; }).join('') +
           '</div></div>' +
           '<div class="bible-mean">' + escapeHtml(mean) + '</div>';
+      if (w.pdf_sources) html += '<small class="pdf-source">' + escapeHtml(w.pdf_sources.map(function (s) { return s.file + ' · p. ' + s.page; }).join('; ')) + '</small>';
 
       if (w.antonym) {
         var antMean = getAntonymMeaning(w);
@@ -4648,17 +4720,8 @@
   // 2026–27 class calendar. The first 16 study slots correspond to Watchtower vocabulary
   // collections 6–24; the final cumulative-review card deliberately has no new collection.
   var COURSE_SLOT_ORDER = [0, 1, 2, 3, -1.5, 4, 5, 6, 7, -2.5, 8, 9, -3.5, 10, 11, 12, 13, 14, 15, 16];
-  var COURSE_DATE_LABELS = {
-    0: "2026/10/10 - 1주", 1: "2026/10/17 - 2주", 2: "2026/10/24 - 3주", 3: "2026/10/31 - 4주",
-    4: "2026/11/14 - 5주", 5: "2026/11/21 - 6주", 6: "2026/11/28 - 7주", 7: "2026/12/12 - 8주",
-    8: "2026/12/19 - 9주", 9: "2027/1/2 - 10주", 10: "2027/1/9 - 11주", 11: "2027/1/16 - 12주",
-    12: "2027/1/23 - 13주", 13: "2027/1/30 - 14주", 14: "2027/2/6 - 15주", 15: "2027/2/13 - 16주"
-  };
-  var COURSE_BREAK_LABELS = {
-    "-1.5": "2026/11/7 방학",
-    "-2.5": "2026/12/5 천안 베트남어 순회대회 파이오니아 모임",
-    "-3.5": "2026/12/26 군산 한국어 순회대회"
-  };
+  var COURSE_DATE_LABELS = (typeof JW_COURSE_DATE_LABELS !== "undefined") ? JW_COURSE_DATE_LABELS : {};
+  var COURSE_BREAK_LABELS = (typeof JW_COURSE_BREAK_LABELS !== "undefined") ? JW_COURSE_BREAK_LABELS : {};
   function courseSlotIndex(key) { return COURSE_SLOT_ORDER.indexOf(Number(key)); }
   function courseWatchtowerWeek(key) {
     var index = courseSlotIndex(key);
@@ -4792,104 +4855,489 @@
     });
   }
 
-  function renderCurrWeek16() {
-    var root = document.getElementById("curr-week16-root");
-    if (!root) return;
-    var html = "";
-    // Welcome card: collapsed by default, click the title to expand/collapse the body paragraphs.
-    html += '<div class="curr-card curr-welcome-card" data-open="false">' +
-      '<button class="curr-welcome-toggle" aria-expanded="false"><h3>' + escapeHtml("2026/10/3 " + T(CURR_WELCOME.title)) + '</h3>' + currChev() + '</button>' +
-      '<div class="curr-welcome-body">';
-    CURR_WELCOME.body.forEach(function (p) { html += '<p>' + escapeHtml(T(p)) + '</p>'; });
-    html += '<div class="curr-phase-grid">';
-    CURR_PHASES.forEach(function (ph) {
-      html += '<div class="curr-phase-card"><div class="curr-phase-range">' + escapeHtml(T(ph.range)) + '</div>' +
-        '<div class="curr-phase-title">' + escapeHtml(T(ph.title)) + '</div>';
-      ph.body.forEach(function (p) { html += '<p>' + escapeHtml(T(p)) + '</p>'; });
-      html += '</div>';
+  /* ================= REGIONAL SCHEDULE + DISTRIBUTION ENGINES ================= */
+/* BEGIN SHARED-SCHEDULE-ENGINE (verbatim copy of regional_admin/schedule_engine.js) */
+function addDays(isoDateStr, days) {
+  var d = new Date(isoDateStr + 'T00:00:00Z');
+  d.setUTCDate(d.getUTCDate() + days);
+  var yyyy = d.getUTCFullYear();
+  var mm = String(d.getUTCMonth() + 1).padStart(2, '0');
+  var dd = String(d.getUTCDate()).padStart(2, '0');
+  return yyyy + '-' + mm + '-' + dd;
+}
+
+function getDayOfWeek(isoDateStr) {
+  var d = new Date(isoDateStr + 'T00:00:00Z');
+  return d.getUTCDay(); // 0 = Sun, 1 = Mon, ..., 6 = Sat
+}
+
+/** Real calendar date, YYYY-MM-DD, year 2000-2100 (rejects 2026-02-30, 2026-13-01 ...). */
+function isRealIsoDate(value) {
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  var y = Number(value.slice(0, 4));
+  if (y < 2000 || y > 2100) return false;
+  var d = new Date(value + 'T00:00:00Z');
+  return !isNaN(d.getTime()) && d.toISOString().slice(0, 10) === value;
+}
+
+function daysBetween(fromIso, toIso) {
+  return Math.round((new Date(toIso + 'T00:00:00Z').getTime() - new Date(fromIso + 'T00:00:00Z').getTime()) / 86400000);
+}
+
+/**
+ * Classify a cancellation date against a course period.
+ * Returns 'ok' | 'unconfigured' | 'invalid-period' | 'bad-date' | 'before' | 'after' | 'unaligned'.
+ */
+function classifyCancellationDate(options, date) {
+  var start = options.courseStartDate || null;
+  var end = options.courseEndDate || null;
+  var interval = options.intervalDays === 14 ? 14 : 7;
+  if (!isRealIsoDate(date)) return 'bad-date';
+  if (!start || !end) return 'unconfigured';
+  if (!isRealIsoDate(start) || !isRealIsoDate(end) || end < start) return 'invalid-period';
+  if (date < start) return 'before';
+  if (date > end) return 'after';
+  return daysBetween(start, date) % interval === 0 ? 'ok' : 'unaligned';
+}
+
+function calculateRegionalSchedule(options) {
+  var MAX_OPPORTUNITIES = 200;
+  var preliminaryMeetingDate = options.preliminaryMeetingDate || null;
+  var courseStartDate = options.courseStartDate || null;
+  var courseEndDate = options.courseEndDate || null;
+  var intervalDays = options.intervalDays === 14 ? 14 : 7;
+
+  // Case L: collapse duplicate cancellation dates (first wins), then order by date.
+  var seen = {};
+  var duplicateCount = 0;
+  var cancellations = [];
+  (options.cancellations || []).forEach(function (c) {
+    if (!c || !c.date) return;
+    if (seen[c.date]) { duplicateCount++; return; }
+    seen[c.date] = true;
+    cancellations.push({ date: c.date, reason: c.reason || '휴강' });
+  });
+  cancellations.sort(function (a, b) { return a.date < b.date ? -1 : (a.date > b.date ? 1 : 0); });
+
+  var base = {
+    status: 'unconfigured',
+    errors: [],
+    preliminaryMeeting: preliminaryMeetingDate ? { date: preliminaryMeetingDate, calculatedDate: preliminaryMeetingDate.replace(/-/g, '/'), title: '예비 모임' } : null,
+    courseStartDate: courseStartDate,
+    courseEndDate: courseEndDate,
+    intervalDays: intervalDays,
+    calendarOpportunities: 0,
+    cancellationCount: 0,
+    instructionalSessions: 0,
+    completionDate: null,
+    slots: [],
+    unalignedCancellations: [],
+    preCourseCancellations: [],
+    postCourseCancellations: [],
+    duplicateCancellationsDiscarded: duplicateCount
+  };
+
+  if (!courseStartDate || !courseEndDate) return base;
+
+  if (!isRealIsoDate(courseStartDate) || !isRealIsoDate(courseEndDate)) {
+    base.status = 'invalid';
+    base.errors.push('bad-date');
+    return base;
+  }
+  if (courseEndDate < courseStartDate) {
+    base.status = 'invalid';
+    base.errors.push('end-before-start');
+    return base;
+  }
+  if (Math.floor(daysBetween(courseStartDate, courseEndDate) / intervalDays) + 1 > MAX_OPPORTUNITIES) {
+    base.status = 'invalid';
+    base.errors.push('too-long');
+    return base;
+  }
+
+  var applied = {};
+  cancellations.forEach(function (c) {
+    var kind = classifyCancellationDate({ courseStartDate: courseStartDate, courseEndDate: courseEndDate, intervalDays: intervalDays }, c.date);
+    if (kind === 'ok') applied[c.date] = c.reason;
+    else if (kind === 'before') base.preCourseCancellations.push({ date: c.date, reason: c.reason });
+    else if (kind === 'after') base.postCourseCancellations.push({ date: c.date, reason: c.reason });
+    else base.unalignedCancellations.push({ date: c.date, reason: c.reason });
+  });
+
+  var session = 0;
+  for (var d = courseStartDate; d <= courseEndDate; d = addDays(d, intervalDays)) {
+    base.calendarOpportunities++;
+    if (applied[d] !== undefined) {
+      base.cancellationCount++;
+      base.slots.push({ type: 'cancellation', date: d, calculatedDate: d.replace(/-/g, '/'), reason: applied[d], session: null, week: null });
+    } else {
+      session++;
+      base.completionDate = d;
+      // `week` is a legacy alias of `session` kept for the fixed-16 renderer.
+      base.slots.push({ type: 'instructional', session: session, week: session, date: d, calculatedDate: d.replace(/-/g, '/') });
+    }
+  }
+  base.instructionalSessions = session;
+  base.status = 'configured';
+  return base;
+}
+/* END SHARED-SCHEDULE-ENGINE */
+/* BEGIN SHARED-DISTRIBUTION-ENGINE (verbatim copy of regional_admin/distribution_engine.js) */
+var ASSIGNMENT_DAY_ORDER = ['월', '화', '수', '목', '금'];
+var ASSIGNMENT_CATEGORY_ORDER = ['review', 'preview', 'vocab'];
+
+/** Canonical assignment order inside one unit: day (월..금), category (review, preview, vocab), then sort_order. */
+function orderAssignments(list) {
+  return list.map(function (it, i) { return { it: it, i: i }; }).sort(function (a, b) {
+    var da = ASSIGNMENT_DAY_ORDER.indexOf(a.it.day), db = ASSIGNMENT_DAY_ORDER.indexOf(b.it.day);
+    if (da !== db) return da - db;
+    var ca = ASSIGNMENT_CATEGORY_ORDER.indexOf(a.it.category), cb = ASSIGNMENT_CATEGORY_ORDER.indexOf(b.it.category);
+    if (ca !== cb) return ca - cb;
+    var sa = a.it.sort_order === undefined ? a.i : a.it.sort_order, sb = b.it.sort_order === undefined ? b.i : b.it.sort_order;
+    return sa - sb || a.i - b.i;
+  }).map(function (x) { return x.it; });
+}
+
+function distCeilBound(n, parts, j) {
+  return Math.floor((j * n + parts - 1) / parts);
+}
+
+function distributeCurriculum(options) {
+  var units = options.units || [];
+  var N = Math.floor(Number(options.sessionCount) || 0);
+  var pins = options.pins || {};
+  var M = units.length;
+
+  var result = { status: 'ok', sessionCount: N, unitCount: M, identity: false, sessions: [], clampedPins: [], ignoredPins: [] };
+
+  // Stream order index per uid; duplicate uids would make "exactly once" meaningless, so refuse them.
+  var order = {}, known = {}, count = 0;
+  units.forEach(function (u) {
+    (u.learning || []).concat(u.assignments || []).forEach(function (it) {
+      if (!it || it.uid === undefined || it.uid === null) throw new Error('distribution: every source item needs a uid');
+      if (known[it.uid]) throw new Error('distribution: duplicate item uid ' + it.uid);
+      known[it.uid] = true;
+      order[it.uid] = count++;
     });
-    html += '</div>';
-    // The first week's homework belongs at the bottom of the Oct 3 welcome card.
-    var welcomeAssign = (typeof CURR_ASSIGNMENTS !== "undefined") ? CURR_ASSIGNMENTS.filter(function (a) { return a.week === 0; })[0] : null;
-    welcomeAssign = addCourseReadingAssignments(welcomeAssign, [null, 0], 1);
-    if (welcomeAssign) {
-      html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button><div class="curr-assign-body">';
-      welcomeAssign.days.forEach(function (d) {
-        html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
-        [[d.reviews || [], "review", "복습"], [d.previews || [], "preview", "예습"], [d.vocab || [], "vocab", "어휘"]].forEach(function (group) {
-          group[0].forEach(function (it) {
-            html += '<div class="curr-assign-row"><span class="curr-assign-kind ' + group[1] + '">' + TU(group[2]) + '</span><span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, 0)) + '</div>';
+  });
+
+  if (N < 1) {
+    result.status = 'no-sessions';
+    return result;
+  }
+
+  var pinned = {};
+  Object.keys(pins).forEach(function (uid) {
+    if (known[uid]) pinned[uid] = true; else result.ignoredPins.push(uid);
+  });
+
+  var auto = units.map(function (u) {
+    return {
+      unit: u.unit,
+      learning: (u.learning || []).filter(function (it) { return !pinned[it.uid]; }),
+      assignments: (u.assignments || []).filter(function (it) { return !pinned[it.uid]; })
+    };
+  });
+
+  var sessions = [];
+  for (var s = 0; s < N; s++) sessions.push({ session: s + 1, units: [], learning: [], assignments: [] });
+
+  if (M > 0 && N <= M) {
+    for (var g = 0; g < N; g++) {
+      var from = Math.floor(g * M / N), to = Math.floor((g + 1) * M / N);
+      for (var k = from; k < to; k++) {
+        sessions[g].units.push(auto[k].unit);
+        sessions[g].learning = sessions[g].learning.concat(auto[k].learning);
+        sessions[g].assignments = sessions[g].assignments.concat(auto[k].assignments);
+      }
+    }
+  } else if (M > 0) {
+    var c = auto.map(function () { return 1; });
+    var weight = auto.map(function (u) { return u.learning.length + u.assignments.length; });
+    var cap = auto.map(function (u) { return Math.max(1, u.learning.length, u.assignments.length); });
+    for (var extra = 0; extra < N - M; extra++) {
+      var best = -1, kk;
+      for (kk = 0; kk < M; kk++) {
+        if (c[kk] < cap[kk] && (best < 0 || weight[kk] * c[best] > weight[best] * c[kk])) best = kk;
+      }
+      if (best < 0) {
+        for (kk = 0; kk < M; kk++) {
+          if (best < 0 || weight[kk] * c[best] > weight[best] * c[kk]) best = kk;
+        }
+      }
+      c[best]++;
+    }
+    var next = 0;
+    for (var u = 0; u < M; u++) {
+      for (var j = 0; j < c[u]; j++) {
+        var sess = sessions[next++];
+        sess.units.push(auto[u].unit);
+        sess.learning = auto[u].learning.slice(distCeilBound(auto[u].learning.length, c[u], j), distCeilBound(auto[u].learning.length, c[u], j + 1));
+        sess.assignments = auto[u].assignments.slice(distCeilBound(auto[u].assignments.length, c[u], j), distCeilBound(auto[u].assignments.length, c[u], j + 1));
+      }
+    }
+  }
+
+  // Administrator overrides: place pinned atoms, then restore source order inside each session.
+  var hasPins = false;
+  units.forEach(function (u) {
+    ['learning', 'assignments'].forEach(function (stream) {
+      (u[stream] || []).forEach(function (it) {
+        if (!pinned[it.uid]) return;
+        var target = Math.floor(Number(pins[it.uid]));
+        var clamped = Math.min(Math.max(isNaN(target) ? 1 : target, 1), N);
+        if (clamped !== target) result.clampedPins.push({ uid: it.uid, requested: pins[it.uid], placed: clamped });
+        sessions[clamped - 1][stream].push(it);
+        hasPins = true;
+      });
+    });
+  });
+  if (hasPins) {
+    sessions.forEach(function (sx) {
+      sx.learning.sort(function (a, b) { return order[a.uid] - order[b.uid]; });
+      sx.assignments.sort(function (a, b) { return order[a.uid] - order[b.uid]; });
+    });
+  }
+
+  result.sessions = sessions;
+  result.identity = !hasPins && M > 0 && N === M;
+  return result;
+}
+
+/**
+ * Independent check of a distribution against its source. Returns a list of problems (empty = valid):
+ * missing / duplicated atoms per stream, and order violations among non-pinned atoms.
+ */
+function verifyDistribution(units, dist, pins) {
+  var problems = [];
+  var pinned = pins || {};
+  ['learning', 'assignments'].forEach(function (stream) {
+    var source = [];
+    units.forEach(function (u) { source = source.concat(u[stream] || []); });
+    var placed = [];
+    dist.sessions.forEach(function (s) { placed = placed.concat(s[stream]); });
+    var seen = {};
+    placed.forEach(function (it) {
+      if (seen[it.uid]) problems.push(stream + ': duplicate ' + it.uid);
+      seen[it.uid] = true;
+    });
+    source.forEach(function (it) {
+      if (!seen[it.uid]) problems.push(stream + ': missing ' + it.uid);
+    });
+    if (placed.length !== source.length) problems.push(stream + ': count ' + placed.length + ' != ' + source.length);
+    var srcAuto = source.filter(function (it) { return !pinned[it.uid]; }).map(function (it) { return it.uid; });
+    var placedAuto = placed.filter(function (it) { return !pinned[it.uid]; }).map(function (it) { return it.uid; });
+    if (srcAuto.join('|') !== placedAuto.join('|')) problems.push(stream + ': order differs from source');
+  });
+  return problems;
+}
+/* END SHARED-DISTRIBUTION-ENGINE */
+
+  /* ---- Regional course model: source curriculum -> configuration -> sessions -> distribution ----
+     SOURCE units come from the static build (CURR_WEEKS / CURR_ASSIGNMENTS) or, after hydration, from the regional
+     admin API (merged with the static translations by item uid + unchanged Korean text). The number of sessions is
+     derived from the configured dates; the mapping is the applied plan (live) or the deterministic auto distribution. */
+  var regionalLive = null;
+  var regionalStaticUnitsCache = null;
+  function pad2(n) { return (n < 10 ? "0" : "") + n; }
+  function pad3(n) { return (n < 10 ? "00" : n < 100 ? "0" : "") + n; }
+  function regionalStaticUnits() {
+    if (regionalStaticUnitsCache) return regionalStaticUnitsCache;
+    var weeks = (typeof CURR_WEEKS !== "undefined") ? CURR_WEEKS : [];
+    var assigns = (typeof CURR_ASSIGNMENTS !== "undefined") ? CURR_ASSIGNMENTS : [];
+    var units = [];
+    for (var u = 1; u <= 16; u++) {
+      var w = weeks.filter(function (x) { return x.week === u; })[0] || {};
+      var learning = (w.items || []).map(function (it, i) {
+        return { uid: "L" + pad2(u) + "-" + pad3(i), unit: u, kind: "learning", text: it.text, page: it.page || null, link: it.link || null };
+      });
+      var entry = assigns.filter(function (x) { return x.week === u; })[0];
+      var flat = [], seq = 0;
+      ((entry && entry.days) || []).forEach(function (d) {
+        var day = ((d.day && d.day.ko) || "").replace("요일", "");
+        [["review", d.reviews], ["preview", d.previews], ["vocab", d.vocab]].forEach(function (g) {
+          (g[1] || []).forEach(function (it, i) {
+            flat.push({ uid: "A" + pad2(u) + "-" + pad3(seq++), unit: u, kind: "assignment", day: day, category: g[0], sort_order: i, text: it.text, link: it.link || null });
           });
         });
-        html += '</div>';
       });
-      html += '</div></div>';
+      units.push({ unit: u, title: w.title || null, note: w.note || null, learning: learning, assignments: orderAssignments(flat) });
     }
-    html += '</div></div>';
-
-    var courseWeeks = CURR_WEEKS.slice().sort(function (a, b) { return courseSlotIndex(a.week) - courseSlotIndex(b.week); });
-    courseWeeks.forEach(function (w, wi) {
-      html += '<div class="group-card' + (w.vacation ? " curr-vacation-card" : "") + '" data-open="' + (w.week === 0 ? "true" : "false") + '" data-syl="wk' + w.week + '">' +
-        '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(courseWeekTitle(w)) + '</span>' +
-        (w.note ? '<span class="curr-week-note">' + escapeHtml(T(w.note)) + '</span>' : '') + '</span>' +
-        currChev() + '</button>' +
-        '<div class="group-body"><div class="curr-item-list">';
-      curriculumDisplayItems(w).forEach(function (it) {
-        html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, w.week)) +
-          (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') + '</div>' +
-          currLinkBtn(curriculumLinkForWeek(it.link, w.week)) + '</div>';
-      });
-      html += '</div>';
-      // Homework is shown one calendar slot before the class it prepares for.
-      var previousSlot = courseWeeks[wi - 1];
-      var nextSlot = courseWeeks[wi + 1];
-      var assign = (typeof CURR_ASSIGNMENTS !== "undefined" && nextSlot) ? CURR_ASSIGNMENTS.filter(function (a) { return a.week === nextSlot.week; })[0] : null;
-      if (assign) {
-        // Ensure every weekday explicitly has both a review and a preview. Existing authored
-        // assignments are retained; only an empty category receives a relevant course-item link.
-        assign = Object.assign({}, assign, { days: assign.days.map(function (d, dayIndex) {
-          var copy = Object.assign({}, d);
-          copy.reviews = (d.reviews || []).slice();
-          copy.previews = (d.previews || []).slice();
-          if (!copy.reviews.length && w.items.length) copy.reviews.push(w.items[dayIndex % w.items.length]);
-          if (!copy.previews.length && nextSlot.items.length) copy.previews.push(nextSlot.items[dayIndex % nextSlot.items.length]);
-          if (!copy.reviews.length) copy.reviews.push({ text: { ko: "이번 주 학습 내용 복습", zh: "複習本週學習內容", en: "Review this week’s study", ja: "今週の学習内容を復習" }, link: { tab: "review" } });
-          if (!copy.previews.length) copy.previews.push({ text: { ko: "다음 주 학습 내용 예습", zh: "預習下週學習內容", en: "Preview next week’s study", ja: "来週の学習内容を予習" }, link: { tab: "curriculum" } });
-          return copy;
-        }) });
-        // Week 16 reviews the actual Week 15 material across Mon–Fri rather than repeating one
-        // generic "Week 15 review" instruction each day.
-        if (w.week === 15) {
-          assign.days.forEach(function (d, dayIndex) {
-            d.reviews = w.items.filter(function (_, itemIndex) { return itemIndex % assign.days.length === dayIndex; });
-            if (!d.reviews.length && w.items.length) d.reviews = [w.items[dayIndex % w.items.length]];
+    regionalStaticUnitsCache = units;
+    return units;
+  }
+  function regionalMergeLive(data) {
+    var staticUnits = regionalStaticUnits();
+    var staticByUid = {};
+    staticUnits.forEach(function (u) { u.learning.concat(u.assignments).forEach(function (x) { staticByUid[x.uid] = x; }); });
+    function sameKo(a, b) { return !!a && !!b && a.ko === b.ko; }
+    var units = ((data.source && data.source.units) || []).map(function (u) {
+      var su = staticUnits.filter(function (x) { return x.unit === u.unit; })[0] || {};
+      function atom(x, kind) {
+        var st = staticByUid[x.uid];
+        var out = { uid: x.uid, unit: u.unit, kind: kind, text: (st && sameKo(st.text, x.text)) ? st.text : x.text, link: x.link || null };
+        if (kind === "learning") out.page = x.page || null; else { out.day = x.day; out.category = x.category; }
+        return out;
+      }
+      return {
+        unit: u.unit,
+        title: (su.title && sameKo(su.title, u.title)) ? su.title : (u.title || null),
+        note: (su.note && sameKo(su.note, u.note)) ? su.note : (u.note || null),
+        learning: (u.learning || []).map(function (x) { return atom(x, "learning"); }),
+        assignments: (u.assignments || []).map(function (x) { return atom(x, "assignment"); })
+      };
+    });
+    return { config: data.config, plan: data.plan, units: units };
+  }
+  function regionalConfig() { return regionalLive ? regionalLive.config : REGIONAL_SCHEDULE; }
+  function regionalUnits() { return regionalLive ? regionalLive.units : regionalStaticUnits(); }
+  // Legacy-shaped views of the (possibly live) source, used by the fixed-layout renderer.
+  function regionalCurrWeeks() {
+    if (!regionalLive) return CURR_WEEKS;
+    var byUnit = {};
+    regionalLive.units.forEach(function (u) { byUnit[u.unit] = u; });
+    return CURR_WEEKS.map(function (w) {
+      var u = byUnit[w.week];
+      if (!u) return w;
+      return Object.assign({}, w, { title: u.title, note: u.note, items: u.learning.map(function (x) {
+        var it = { text: x.text };
+        if (x.page) it.page = x.page;
+        if (x.link) it.link = x.link;
+        return it;
+      }) });
+    });
+  }
+  function regionalCurrAssignments() {
+    var base = (typeof CURR_ASSIGNMENTS !== "undefined") ? CURR_ASSIGNMENTS : [];
+    if (!regionalLive) return base;
+    var DAYS = ["월", "화", "수", "목", "금"];
+    var rebuilt = regionalLive.units.filter(function (u) { return u.assignments.length; }).map(function (u) {
+      var st = base.filter(function (a) { return a.week === u.unit; })[0];
+      return { week: u.unit, days: DAYS.map(function (d) {
+        var sd = st && st.days.filter(function (x) { return ((x.day && x.day.ko) || "").replace("요일", "") === d; })[0];
+        function pick(cat) {
+          return u.assignments.filter(function (x) { return x.day === d && x.category === cat; }).map(function (x) {
+            var it = { text: x.text };
+            if (x.link) it.link = x.link;
+            return it;
           });
         }
-        assign = addCourseReadingAssignments(assign, [previousSlot ? previousSlot.week : null, w.week], nextSlot ? nextSlot.week : null);
+        return { day: sd ? sd.day : { ko: d + "요일" }, reviews: pick("review"), previews: pick("preview"), vocab: pick("vocab") };
+      }) };
+    });
+    return base.filter(function (a) { return !(a.week >= 1 && a.week <= 16); }).concat(rebuilt);
+  }
+  // Schedule (dates, session count) + session -> content mapping for the regional site.
+  function regionalPlan() {
+    var sched = calculateRegionalSchedule(regionalConfig());
+    var out = { sched: sched, sessions: [], identity: false };
+    if (sched.status !== "configured" || sched.instructionalSessions < 1) return out;
+    var units = regionalUnits();
+    var live = regionalLive && regionalLive.plan;
+    if (live && live.sessions && live.sessions.length === sched.instructionalSessions) {
+      var byUid = {};
+      units.forEach(function (u) { u.learning.concat(u.assignments).forEach(function (x) { byUid[x.uid] = x; }); });
+      out.sessions = live.sessions.map(function (s) {
+        var learning = s.learning.map(function (uid) { return byUid[uid]; }).filter(Boolean);
+        var assignments = s.assignments.map(function (uid) { return byUid[uid]; }).filter(Boolean);
+        var seen = {}, us = [];
+        learning.concat(assignments).forEach(function (x) { if (!seen[x.unit]) { seen[x.unit] = true; us.push(x.unit); } });
+        return { session: s.session, units: us.sort(function (p, q) { return p - q; }), learning: learning, assignments: assignments };
+      });
+      out.identity = units.length > 0 && out.sessions.length === units.length && out.sessions.every(function (s, i) {
+        var u = units[i];
+        return s.learning.length === u.learning.length && s.assignments.length === u.assignments.length &&
+          s.learning.every(function (x, k) { return x.uid === u.learning[k].uid; }) &&
+          s.assignments.every(function (x, k) { return x.uid === u.assignments[k].uid; });
+      });
+    } else {
+      var dist = distributeCurriculum({ units: units, sessionCount: sched.instructionalSessions });
+      out.sessions = dist.sessions;
+      out.identity = dist.identity;
+    }
+    return out;
+  }
+  // "N회차" -- the ordinal word position differs per language, so this is a per-language format, not a suffix string.
+  var SESSION_BADGE = {
+    ko: function (n) { return n + "회차"; }, ja: function (n) { return "第" + n + "回"; },
+    zh: function (n) { return "第" + n + "次課"; }, zh_cn: function (n) { return "第" + n + "次课"; },
+    cs: function (n) { return "Lekce " + n; }, de: function (n) { return "Einheit " + n; },
+    en: function (n) { return "Session " + n; }, fr: function (n) { return "Séance " + n; },
+    id: function (n) { return "Pertemuan " + n; }, hu: function (n) { return n + ". alkalom"; },
+    pl: function (n) { return "Zajęcia " + n; }, vi: function (n) { return "Buổi " + n; }
+  };
+  function sessionBadge(n) { return (SESSION_BADGE[currentLang] || SESSION_BADGE.ko)(n); }
+  function regionalDayLabel(day) {
+    var base = (typeof CURR_ASSIGNMENTS !== "undefined") ? CURR_ASSIGNMENTS : [];
+    for (var i = 0; i < base.length; i++) {
+      var d = (base[i].days || []).filter(function (x) { return ((x.day && x.day.ko) || "").replace("요일", "") === day; })[0];
+      if (d) return T(d.day);
+    }
+    return day + "요일";
+  }
+  function regionalUnconfiguredCard() {
+    return '<div class="group-card" data-open="true" data-syl="unconfigured">' +
+      '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(TU("일정 미정")) + '</span></span>' + currChev() + '</button>' +
+      '<div class="group-body"><div class="curr-item-list"><div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' +
+      TU("자료 미정") + '</div></div></div></div></div>';
+  }
+  function regionalLearningRow(it, unit) {
+    return '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, unit)) +
+      (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') + '</div>' +
+      currLinkBtn(curriculumLinkForWeek(it.link, unit)) + '</div>';
+  }
+  // Variable-length session cards: one card per generated instructional session (and per cancellation), in date order.
+  function regionalSessionCards(rp) {
+    var html = "";
+    var seenUnit = {};
+    var readingLabels = ["베트남어 출판물 읽기 연습 (행누, 랑제)", "행누책 읽기", "베트남어 읽기 연습"];
+    var bySession = {};
+    rp.sessions.forEach(function (s) { bySession[s.session] = s; });
+    var units = regionalUnits();
+    rp.sched.slots.forEach(function (slot) {
+      if (slot.type === "cancellation") {
+        html += '<div class="group-card curr-vacation-card" data-open="false" data-syl="cancel-' + slot.date + '">' +
+          '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " " + (T(slot.reason) || TU("휴강"))) + '</span></span>' +
+          currChev() + '</button>' +
+          '<div class="group-body"><div class="curr-item-list">' +
+          '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(T(slot.reason)) + '</div></div>' +
+          '</div></div></div>';
+        return;
       }
-      if (assign) {
-        html += '<div class="curr-assign-card" data-open="false">' +
-          '<button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button>' +
-          '<div class="curr-assign-body">';
-        assign.days.forEach(function (d) {
-          html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
-          (d.reviews || []).forEach(function (it) {
-            html += '<div class="curr-assign-row">' +
-              '<span class="curr-assign-kind review">' + TU("복습") + '</span>' +
-              '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
-              currLinkBtn(curriculumLinkForWeek(it.link, nextSlot.week)) + '</div>';
-          });
-          (d.previews || []).forEach(function (it) {
-            html += '<div class="curr-assign-row">' +
-              '<span class="curr-assign-kind preview">' + TU("예습") + '</span>' +
-              '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
-              currLinkBtn(curriculumLinkForWeek(it.link, nextSlot.week)) + '</div>';
-          });
-          (d.vocab || []).forEach(function (it) {
-            html += '<div class="curr-assign-row">' +
-              '<span class="curr-assign-kind vocab">' + TU("어휘") + '</span>' +
-              '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
-              currLinkBtn(curriculumLinkForWeek(it.link, nextSlot.week)) + '</div>';
+      var sess = bySession[slot.session] || { session: slot.session, units: [], learning: [], assignments: [] };
+      var notes = [];
+      sess.units.forEach(function (n) {
+        var u = units.filter(function (x) { return x.unit === n; })[0];
+        if (u && u.note && notes.length < 1) notes.push(u.note);
+      });
+      html += '<div class="group-card" data-open="' + (slot.session === 1 ? "true" : "false") + '" data-syl="s' + slot.session + '">' +
+        '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " - " + sessionBadge(slot.session)) + '</span>' +
+        (notes.length ? '<span class="curr-week-note">' + escapeHtml(T(notes[0])) + '</span>' : '') + '</span>' + currChev() + '</button>' +
+        '<div class="group-body"><div class="curr-item-list">';
+      var rows = "";
+      sess.learning.forEach(function (it) {
+        if (readingLabels.indexOf((it.text || {}).ko) >= 0) return;
+        rows += regionalLearningRow(it, it.unit);
+      });
+      // Display-only course reading items belong to the first session that touches their source unit.
+      sess.units.forEach(function (n) {
+        if (seenUnit[n]) return;
+        seenUnit[n] = true;
+        courseReadingItems(n).forEach(function (it) { rows += regionalLearningRow(it, n); });
+      });
+      html += rows || '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div>';
+      html += '</div>';
+      if (sess.assignments.length) {
+        html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button><div class="curr-assign-body">';
+        ["월", "화", "수", "목", "금"].forEach(function (day) {
+          var dayItems = sess.assignments.filter(function (x) { return x.day === day; });
+          if (!dayItems.length) return;
+          html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(regionalDayLabel(day)) + '</div>';
+          [["review", "복습"], ["preview", "예습"], ["vocab", "어휘"]].forEach(function (g) {
+            dayItems.filter(function (x) { return x.category === g[0]; }).forEach(function (it) {
+              html += '<div class="curr-assign-row"><span class="curr-assign-kind ' + g[0] + '">' + TU(g[1]) + '</span><span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                currLinkBtn(curriculumLinkForWeek(it.link, it.unit)) + '</div>';
+            });
           });
           html += '</div>';
         });
@@ -4897,6 +5345,241 @@
       }
       html += '</div></div>';
     });
+    if (!rp.sessions.length) {
+      html += '<div class="group-card" data-open="true"><button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(TU("일정 미정")) + '</span></span>' + currChev() + '</button><div class="group-body"><div class="curr-item-list"><div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div></div></div></div>';
+    }
+    return html;
+  }
+
+
+  function renderCurrWeek16() {
+    var root = document.getElementById("curr-week16-root");
+    if (!root) return;
+    var html = "";
+
+    var isRegional = (typeof REGIONAL_SCHEDULE !== "undefined");
+    var rp = isRegional ? regionalPlan() : null;
+    var sched = rp ? rp.sched : null;
+    var currAssignments = isRegional ? regionalCurrAssignments() : ((typeof CURR_ASSIGNMENTS !== "undefined") ? CURR_ASSIGNMENTS : []);
+    if (rp && rp.identity) {
+      // Fixed layout (one session per source unit): attach each unit's content to its slot for the classic card renderer.
+      var liveWeeks = regionalCurrWeeks();
+      sched.slots.forEach(function (s) {
+        if (s.type !== "instructional") return;
+        var w = liveWeeks.filter(function (x) { return x.week === s.week; })[0] || {};
+        s.items = w.items || [];
+        s.note = w.note || null;
+        s.title = w.title || null;
+      });
+    }
+
+    // Welcome card
+    var welcomeDatePrefix = "";
+    if (sched) {
+      if (sched.preliminaryMeeting && sched.preliminaryMeeting.calculatedDate) {
+        welcomeDatePrefix = sched.preliminaryMeeting.calculatedDate + " ";
+      }
+    } else {
+      welcomeDatePrefix = "2026/10/3 ";
+    }
+
+    html += '<div class="curr-card curr-welcome-card" data-open="false">' +
+      '<button class="curr-welcome-toggle" aria-expanded="false"><h3>' + escapeHtml(welcomeDatePrefix + T(CURR_WELCOME.title)) + '</h3>' + currChev() + '</button>' +
+      '<div class="curr-welcome-body">';
+    CURR_WELCOME.body.forEach(function (p) { html += '<p>' + escapeHtml(T(p)) + '</p>'; });
+    if (CURR_PHASES && CURR_PHASES.length) {
+      html += '<div class="curr-phase-grid">';
+      CURR_PHASES.forEach(function (ph) {
+        html += '<div class="curr-phase-card"><div class="curr-phase-range">' + escapeHtml(T(ph.range)) + '</div>' +
+          '<div class="curr-phase-title">' + escapeHtml(T(ph.title)) + '</div>';
+        ph.body.forEach(function (p) { html += '<p>' + escapeHtml(T(p)) + '</p>'; });
+        html += '</div>';
+      });
+      html += '</div>';
+    }
+
+    // The first week's homework belongs at the bottom of the welcome card (if configured)
+    if (!sched || sched.status !== "unconfigured") {
+      var welcomeAssign = currAssignments.filter(function (a) { return a.week === 0; })[0] || null;
+      welcomeAssign = addCourseReadingAssignments(welcomeAssign, [null, 0], 1);
+      if (welcomeAssign) {
+        html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button><div class="curr-assign-body">';
+        welcomeAssign.days.forEach(function (d) {
+          html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
+          [[d.reviews || [], "review", "복습"], [d.previews || [], "preview", "예습"], [d.vocab || [], "vocab", "어휘"]].forEach(function (group) {
+            group[0].forEach(function (it) {
+              html += '<div class="curr-assign-row"><span class="curr-assign-kind ' + group[1] + '">' + TU(group[2]) + '</span><span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, 0)) + '</div>';
+            });
+          });
+          html += '</div>';
+        });
+        html += '</div></div>';
+      }
+    }
+    html += '</div></div>';
+
+    // Weeks Rendering: Regional Engine vs JW Default
+    if (sched) {
+      if (sched.status !== "configured") {
+        // 일정 미정 / 자료 미정: one notice, never a fake 16-row table.
+        html += regionalUnconfiguredCard();
+      } else if (!rp.identity) {
+        html += regionalSessionCards(rp);
+      } else {
+        // Configured Regional Schedule (e.g. Jeonju)
+        var instSlots = sched.slots.filter(function (s) { return s.type === 'instructional'; });
+        sched.slots.forEach(function (slot, slotIdx) {
+          if (slot.type === 'cancellation') {
+            html += '<div class="group-card curr-vacation-card" data-open="false" data-syl="cancel-' + slot.date + '">' +
+              '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " " + (T(slot.reason) || TU("휴강"))) + '</span></span>' +
+              currChev() + '</button>' +
+              '<div class="group-body"><div class="curr-item-list">' +
+              '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(T(slot.reason)) + '</div></div>' +
+              '</div></div></div>';
+          } else {
+            var badgeText = slot.week === 16 ?
+              (slot.calculatedDate + " - " + TU("총복습")) :
+              (slot.calculatedDate + " - " + weekBadge(slot.week));
+            html += '<div class="group-card" data-open="' + (slot.week === 1 ? "true" : "false") + '" data-syl="wk' + slot.week + '">' +
+              '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(badgeText) + '</span>' +
+              (slot.note ? '<span class="curr-week-note">' + escapeHtml(T(slot.note)) + '</span>' : '') + '</span>' +
+              currChev() + '</button>' +
+              '<div class="group-body"><div class="curr-item-list">';
+            var displayItems = curriculumDisplayItems({ week: slot.week, items: slot.items || [] });
+            if (!displayItems || displayItems.length === 0) {
+              html += '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div>';
+            } else {
+              displayItems.forEach(function (it) {
+                html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, slot.week)) +
+                  (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') + '</div>' +
+                  currLinkBtn(curriculumLinkForWeek(it.link, slot.week)) + '</div>';
+              });
+            }
+            html += '</div>';
+
+            // Assignments for next instructional week
+            var nextInst = instSlots.find(function (s) { return s.week === slot.week + 1; });
+            var prevInst = instSlots.find(function (s) { return s.week === slot.week - 1; });
+            var assign = nextInst ? currAssignments.filter(function (a) { return a.week === nextInst.week; })[0] : null;
+            if (assign) {
+              assign = Object.assign({}, assign, { days: assign.days.map(function (d, dayIndex) {
+                var copy = Object.assign({}, d);
+                copy.reviews = (d.reviews || []).slice();
+                copy.previews = (d.previews || []).slice();
+                if (!copy.reviews.length && slot.items.length) copy.reviews.push(slot.items[dayIndex % slot.items.length]);
+                if (!copy.previews.length && nextInst.items.length) copy.previews.push(nextInst.items[dayIndex % nextInst.items.length]);
+                if (!copy.reviews.length) copy.reviews.push({ text: { ko: "이번 주 학습 내용 복습", zh: "複習本週學習內容", en: "Review this week’s study", ja: "今週の学習内容を復習" }, link: { tab: "review" } });
+                if (!copy.previews.length) copy.previews.push({ text: { ko: "다음 주 학습 내용 예습", zh: "預習下週學習內容", en: "Preview next week’s study", ja: "来週の学習内容を予習" }, link: { tab: "curriculum" } });
+                return copy;
+              }) });
+              if (slot.week === 15) {
+                assign.days.forEach(function (d, dayIndex) {
+                  d.reviews = slot.items.filter(function (_, itemIndex) { return itemIndex % assign.days.length === dayIndex; });
+                  if (!d.reviews.length && slot.items.length) d.reviews = [slot.items[dayIndex % slot.items.length]];
+                });
+              }
+              assign = addCourseReadingAssignments(assign, [prevInst ? prevInst.week : null, slot.week], nextInst ? nextInst.week : null);
+            }
+            if (assign) {
+              html += '<div class="curr-assign-card" data-open="false">' +
+                '<button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button>' +
+                '<div class="curr-assign-body">';
+              assign.days.forEach(function (d) {
+                html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
+                (d.reviews || []).forEach(function (it) {
+                  html += '<div class="curr-assign-row">' +
+                    '<span class="curr-assign-kind review">' + TU("복습") + '</span>' +
+                    '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                    currLinkBtn(curriculumLinkForWeek(it.link, nextInst.week)) + '</div>';
+                });
+                (d.previews || []).forEach(function (it) {
+                  html += '<div class="curr-assign-row">' +
+                    '<span class="curr-assign-kind preview">' + TU("예습") + '</span>' +
+                    '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                    currLinkBtn(curriculumLinkForWeek(it.link, nextInst.week)) + '</div>';
+                });
+                (d.vocab || []).forEach(function (it) {
+                  html += '<div class="curr-assign-row">' +
+                    '<span class="curr-assign-kind vocab">' + TU("어휘") + '</span>' +
+                    '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                    currLinkBtn(curriculumLinkForWeek(it.link, nextInst.week)) + '</div>';
+                });
+                html += '</div>';
+              });
+              html += '</div></div>';
+            }
+            html += '</div></div>';
+          }
+        });
+      }
+    } else {
+      // Standard JW 16-Week Course
+      var courseWeeks = CURR_WEEKS.slice().sort(function (a, b) { return courseSlotIndex(a.week) - courseSlotIndex(b.week); });
+      courseWeeks.forEach(function (w, wi) {
+        html += '<div class="group-card' + (w.vacation ? " curr-vacation-card" : "") + '" data-open="' + (w.week === 0 ? "true" : "false") + '" data-syl="wk' + w.week + '">' +
+          '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(courseWeekTitle(w)) + '</span>' +
+          (w.note ? '<span class="curr-week-note">' + escapeHtml(T(w.note)) + '</span>' : '') + '</span>' +
+          currChev() + '</button>' +
+          '<div class="group-body"><div class="curr-item-list">';
+        curriculumDisplayItems(w).forEach(function (it) {
+          html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, w.week)) +
+            (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') + '</div>' +
+            currLinkBtn(curriculumLinkForWeek(it.link, w.week)) + '</div>';
+        });
+        html += '</div>';
+        var previousSlot = courseWeeks[wi - 1];
+        var nextSlot = courseWeeks[wi + 1];
+        var assign = (typeof CURR_ASSIGNMENTS !== "undefined" && nextSlot) ? CURR_ASSIGNMENTS.filter(function (a) { return a.week === nextSlot.week; })[0] : null;
+        if (assign) {
+          assign = Object.assign({}, assign, { days: assign.days.map(function (d, dayIndex) {
+            var copy = Object.assign({}, d);
+            copy.reviews = (d.reviews || []).slice();
+            copy.previews = (d.previews || []).slice();
+            if (!copy.reviews.length && w.items.length) copy.reviews.push(w.items[dayIndex % w.items.length]);
+            if (!copy.previews.length && nextSlot.items.length) copy.previews.push(nextSlot.items[dayIndex % nextSlot.items.length]);
+            if (!copy.reviews.length) copy.reviews.push({ text: { ko: "이번 주 학습 내용 복습", zh: "複習本週學習內容", en: "Review this week’s study", ja: "今週の学習内容を復習" }, link: { tab: "review" } });
+            if (!copy.previews.length) copy.previews.push({ text: { ko: "다음 주 학습 내용 예습", zh: "預習下週學習內容", en: "Preview next week’s study", ja: "来週の学習内容を予習" }, link: { tab: "curriculum" } });
+            return copy;
+          }) });
+          if (w.week === 15) {
+            assign.days.forEach(function (d, dayIndex) {
+              d.reviews = w.items.filter(function (_, itemIndex) { return itemIndex % assign.days.length === dayIndex; });
+              if (!d.reviews.length && w.items.length) d.reviews = [w.items[dayIndex % w.items.length]];
+            });
+          }
+          assign = addCourseReadingAssignments(assign, [previousSlot ? previousSlot.week : null, w.week], nextSlot ? nextSlot.week : null);
+        }
+        if (assign) {
+          html += '<div class="curr-assign-card" data-open="false">' +
+            '<button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button>' +
+            '<div class="curr-assign-body">';
+          assign.days.forEach(function (d) {
+            html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
+            (d.reviews || []).forEach(function (it) {
+              html += '<div class="curr-assign-row">' +
+                '<span class="curr-assign-kind review">' + TU("복습") + '</span>' +
+                '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                currLinkBtn(curriculumLinkForWeek(it.link, nextSlot.week)) + '</div>';
+            });
+            (d.previews || []).forEach(function (it) {
+              html += '<div class="curr-assign-row">' +
+                '<span class="curr-assign-kind preview">' + TU("예습") + '</span>' +
+                '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                currLinkBtn(curriculumLinkForWeek(it.link, nextSlot.week)) + '</div>';
+            });
+            (d.vocab || []).forEach(function (it) {
+              html += '<div class="curr-assign-row">' +
+                '<span class="curr-assign-kind vocab">' + TU("어휘") + '</span>' +
+                '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                currLinkBtn(curriculumLinkForWeek(it.link, nextSlot.week)) + '</div>';
+            });
+            html += '</div>';
+          });
+          html += '</div></div>';
+        }
+        html += '</div></div>';
+      });
+    }
 
     root.innerHTML = html;
     var welcomeCard = root.querySelector(".curr-welcome-card");
@@ -5244,7 +5927,7 @@
   }
   function addSentencePairs(target, vietnamese, meaning) {
     sentencePairs(stripReviewListMarker(vietnamese), stripReviewListMarker(meaning)).forEach(function (pair) {
-      if (pair.vi && !isIsolatedJw(pair.vi) && !isIsolatedJw(pair.kr) && !isCitationOnlyLine(pair.vi)) {
+      if (pair.vi && pair.kr && pair.kr.trim() && !isIsolatedJw(pair.vi) && !isIsolatedJw(pair.kr) && !isCitationOnlyLine(pair.vi)) {
         pair.vi = normalizeJwOrg(pair.vi);
         pair.kr = normalizeJwOrg(pair.kr);
         target.push(pair);
@@ -7021,53 +7704,8 @@
   }
 
   (function () {
-    var panes = {
-      week16: document.getElementById("curr-week16-pane"),
-      jeonju_event: document.getElementById("curr-jeonju_event-pane"),
-    };
-    var curriculumBtns = document.querySelectorAll(".subtab-btn[data-curriculum]");
-    if (!curriculumBtns.length) return;
-    // Generic event hook, not Jeonju-specific logic: any profile whose data_block.js defines a
-    // non-empty JEONJU_WEEKS (currently only the jeonju profile) reveals this one extra subtab
-    // button. JW's own data_block.js never defines JEONJU_WEEKS at all, so the button stays
-    // hidden there without any "if profile === jeonju" check in this file.
-    var jeonjuBtn = document.getElementById("curriculum-jeonju-btn");
-    var hasJeonjuEvent = typeof JEONJU_WEEKS !== "undefined" && JEONJU_WEEKS.length > 0;
-    if (jeonjuBtn && hasJeonjuEvent) jeonjuBtn.style.display = "";
-    curriculumBtns.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        curriculumBtns.forEach(function (b) { b.setAttribute("aria-selected", "false"); });
-        btn.setAttribute("aria-selected", "true");
-        Object.keys(panes).forEach(function (k) {
-          if (panes[k]) panes[k].style.display = k === btn.dataset.curriculum ? "" : "none";
-        });
-        if (btn.dataset.curriculum === "jeonju_event") renderJeonjuEvent();
-      });
-    });
-
     renderCurrWeek16();
-    if (hasJeonjuEvent) renderJeonjuEvent();
   })();
-
-  // Generic event-layer renderer: activates purely from JEONJU_INFO/JEONJU_WEEKS existing in
-  // data_block.js (see hasJeonjuEvent above), not from any hardcoded site/profile name, so a
-  // future second event profile only needs its own {EVENT}_INFO/{EVENT}_WEEKS constants and a
-  // renderer like this one -- no changes to the tab-switching wiring above.
-  function renderJeonjuEvent() {
-    var root = document.getElementById("curr-jeonju-root");
-    if (!root || typeof JEONJU_INFO === "undefined" || typeof JEONJU_WEEKS === "undefined") return;
-    var html = '<div class="curr-card"><h3>' + escapeHtml(JEONJU_INFO.name) + '</h3>' +
-      '<p>' + escapeHtml(JEONJU_INFO.startDate) + ' ~ ' + escapeHtml(JEONJU_INFO.endDate) +
-      ' (' + escapeHtml(JEONJU_INFO.schedule) + ', ' + JEONJU_WEEKS.length + TU("주") + ')</p></div>';
-    html += '<div class="ref-table">';
-    JEONJU_WEEKS.forEach(function (w) {
-      html += '<div class="ref-row"><div><div class="rel-label">Week ' + w.week + '</div>' +
-        '<div>' + escapeHtml(w.date) + '</div></div>' +
-        '<div>' + escapeHtml(w.material == null ? TU("자료 미정") : String(w.material)) + '</div></div>';
-    });
-    html += '</div>';
-    root.innerHTML = html;
-  }
 
   /* ================= STUDY GAMES (복습 게임) ================= */
   (function () {
@@ -7280,7 +7918,7 @@
             if (l.vi) {
               if (rec.kind === "appendix" && rec.num === "A") {
                 var u = applyLpdTerms(l);
-                out.push({ vi: u.vi, kr: u.kr });
+                if (u.kr && u.kr.trim()) out.push({ vi: u.vi, kr: u.kr });
               } else {
                 addSentencePairs(out, l.vi, Tstrict(l));
               }
@@ -7405,6 +8043,7 @@
       if (scope !== "all") return TU(REVIEW_SCOPE_LABELS[scope] || scope);
       return currentLang === "zh" ? "全部" : currentLang === "en" ? "All" : currentLang === "ja" ? "すべて" : "전체";
     }
+    window.reviewScopedPool = reviewScopedPool; // read-only hook used by tests/test_browser_runtime.js
     function reviewScopedPool(key, scope) {
       if (!scope || scope === "all") return POOL_BUILDERS[key] ? POOL_BUILDERS[key]() : [];
       var out = [];
@@ -7432,7 +8071,7 @@
           r.lines.forEach(function (l) {
             if (r.kind === "appendix" && r.num === "A") {
               var u = applyLpdTerms(l);
-              out.push({ vi: u.vi, kr: u.kr });
+              if (u.kr && u.kr.trim()) out.push({ vi: u.vi, kr: u.kr });
             } else {
               sentence(l.vi, Tstrict(l));
             }
@@ -8266,6 +8905,7 @@
         if (same) { var tmp = studyState.orderBank[0]; studyState.orderBank[0] = studyState.orderBank[1]; studyState.orderBank[1] = tmp; }
       }
       studyState.orderPlaced = [];
+      studyState.selectedPlacedIndex = null;
       renderOrder();
     }
     function renderOrder() {
@@ -8280,6 +8920,7 @@
       renderOrderChips();
       document.getElementById("order-reset").addEventListener("click", function () {
         studyState.orderPlaced = [];
+        studyState.selectedPlacedIndex = null;
         document.getElementById("order-feedback").innerHTML = "";
         renderOrderChips();
       });
@@ -8300,74 +8941,230 @@
     function renderOrderChips() {
       var bankEl = document.getElementById("order-bank");
       var ansEl = document.getElementById("order-answer");
+      if (!bankEl || !ansEl) return;
       var placedKeys = studyState.orderPlaced.map(function (p) { return p.key; });
       bankEl.innerHTML = "";
       studyState.orderBank.forEach(function (tok) {
         if (placedKeys.indexOf(tok.key) >= 0) return;
         var chip = document.createElement("button");
+        chip.type = "button";
         chip.className = "study-chip vn";
         chip.textContent = tok.t;
+        chip.setAttribute("aria-label", tok.t + " (" + TU("선택하여 문장에 배치") + ")");
         chip.addEventListener("click", function () {
           studyState.orderPlaced.push(tok);
+          studyState.selectedPlacedIndex = null;
           renderOrderChips();
           if (studyState.orderPlaced.length === studyState.orderTokens.length) checkOrder();
         });
         bankEl.appendChild(chip);
       });
+
       ansEl.innerHTML = "";
       studyState.orderPlaced.forEach(function (tok, idx) {
-        var slot = document.createElement("span");
-        slot.className = "study-chip-slot";
-
-        var moveLeft = document.createElement("button");
-        moveLeft.type = "button";
-        moveLeft.className = "study-chip-move";
-        moveLeft.textContent = "◀";
-        moveLeft.setAttribute("aria-label", TU("왼쪽으로 이동"));
-        if (idx === 0) moveLeft.disabled = true;
-        moveLeft.addEventListener("click", function (e) {
-          e.stopPropagation();
-          moveOrderPlaced(idx, -1);
-        });
-
         var chip = document.createElement("button");
-        chip.className = "study-chip placed vn";
+        chip.type = "button";
+        var isSelected = (studyState.selectedPlacedIndex === idx);
+        chip.className = "study-chip placed vn" + (isSelected ? " selected" : "");
         chip.textContent = tok.t;
-        chip.addEventListener("click", function () {
-          studyState.orderPlaced = studyState.orderPlaced.filter(function (p) { return p.key !== tok.key; });
-          document.getElementById("order-feedback").innerHTML = "";
+        chip.setAttribute("data-index", String(idx));
+        chip.setAttribute("aria-pressed", isSelected ? "true" : "false");
+        chip.setAttribute("aria-label", tok.t + (isSelected ? " (" + TU("선택됨. 다른 단어를 눌러 위치 교환") + ")" : ""));
+        chip.setAttribute("draggable", "true");
+
+        // 1. TAP/CLICK TO SWAP
+        chip.addEventListener("click", function (e) {
+          e.preventDefault();
+          var selIdx = studyState.selectedPlacedIndex;
+          if (selIdx === null || selIdx === undefined) {
+            // First tap: select word
+            studyState.selectedPlacedIndex = idx;
+            renderOrderChips();
+          } else if (selIdx === idx) {
+            // Tapping selected word again cancels selection
+            studyState.selectedPlacedIndex = null;
+            renderOrderChips();
+          } else {
+            // Tapping another word swaps the two positions
+            var tmp = studyState.orderPlaced[selIdx];
+            studyState.orderPlaced[selIdx] = studyState.orderPlaced[idx];
+            studyState.orderPlaced[idx] = tmp;
+            studyState.selectedPlacedIndex = null;
+            var fb = document.getElementById("order-feedback");
+            if (fb) fb.innerHTML = "";
+            renderOrderChips();
+            if (studyState.orderPlaced.length === studyState.orderTokens.length) {
+              checkOrder();
+            }
+          }
+        });
+
+        // 2. ACCESSIBILITY: Keyboard Enter/Space
+        chip.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            chip.click();
+          }
+        });
+
+        // 3. DESKTOP HTML5 DRAG & DROP
+        chip.addEventListener("dragstart", function (e) {
+          studyState.selectedPlacedIndex = null;
+          e.dataTransfer.setData("text/plain", String(idx));
+          e.dataTransfer.effectAllowed = "move";
+          chip.classList.add("dragging");
+        });
+
+        chip.addEventListener("dragend", function () {
+          chip.classList.remove("dragging");
+          document.querySelectorAll(".study-chip.placed").forEach(function (c) {
+            c.classList.remove("drop-target-before", "drop-target-after");
+          });
+        });
+
+        chip.addEventListener("dragover", function (e) {
+          e.preventDefault();
+          e.dataTransfer.dropEffect = "move";
+          var rect = chip.getBoundingClientRect();
+          var midX = rect.left + rect.width / 2;
+          chip.classList.remove("drop-target-before", "drop-target-after");
+          if (e.clientX < midX) {
+            chip.classList.add("drop-target-before");
+          } else {
+            chip.classList.add("drop-target-after");
+          }
+        });
+
+        chip.addEventListener("dragleave", function () {
+          chip.classList.remove("drop-target-before", "drop-target-after");
+        });
+
+        chip.addEventListener("drop", function (e) {
+          e.preventDefault();
+          var fromIdx = parseInt(e.dataTransfer.getData("text/plain"), 10);
+          if (isNaN(fromIdx) || fromIdx === idx) return;
+          var rect = chip.getBoundingClientRect();
+          var midX = rect.left + rect.width / 2;
+          var insertBefore = (e.clientX < midX);
+
+          // Move item to target position (not merely swap)
+          var movedItem = studyState.orderPlaced.splice(fromIdx, 1)[0];
+          var destIdx = idx;
+          if (fromIdx < destIdx) {
+            destIdx = insertBefore ? destIdx - 1 : destIdx;
+          } else {
+            destIdx = insertBefore ? destIdx : destIdx + 1;
+          }
+          studyState.orderPlaced.splice(destIdx, 0, movedItem);
+          studyState.selectedPlacedIndex = null;
+          var fb = document.getElementById("order-feedback");
+          if (fb) fb.innerHTML = "";
           renderOrderChips();
+          if (studyState.orderPlaced.length === studyState.orderTokens.length) {
+            checkOrder();
+          }
         });
 
-        var moveRight = document.createElement("button");
-        moveRight.type = "button";
-        moveRight.className = "study-chip-move";
-        moveRight.textContent = "▶";
-        moveRight.setAttribute("aria-label", TU("오른쪽으로 이동"));
-        if (idx === studyState.orderPlaced.length - 1) moveRight.disabled = true;
-        moveRight.addEventListener("click", function (e) {
-          e.stopPropagation();
-          moveOrderPlaced(idx, 1);
+        // 4. TOUCH / MOBILE POINTER DRAG & DROP
+        var touchStartX = 0;
+        var touchStartY = 0;
+        var isDraggingTouch = false;
+        var ghostEl = null;
+
+        chip.addEventListener("pointerdown", function (e) {
+          if (e.pointerType === "mouse") return;
+          touchStartX = e.clientX;
+          touchStartY = e.clientY;
+          isDraggingTouch = false;
+
+          function onPointerMove(moveEvent) {
+            var dx = moveEvent.clientX - touchStartX;
+            var dy = moveEvent.clientY - touchStartY;
+            if (!isDraggingTouch) {
+              if (Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy)) {
+                isDraggingTouch = true;
+                chip.classList.add("dragging");
+                ghostEl = chip.cloneNode(true);
+                ghostEl.className = "study-chip placed vn";
+                ghostEl.style.position = "fixed";
+                ghostEl.style.zIndex = "9999";
+                ghostEl.style.pointerEvents = "none";
+                ghostEl.style.opacity = "0.85";
+                ghostEl.style.transform = "scale(1.05)";
+                ghostEl.style.boxShadow = "0 8px 16px rgba(0,0,0,0.2)";
+                document.body.appendChild(ghostEl);
+                try { chip.setPointerCapture(moveEvent.pointerId); } catch (err) {}
+              }
+            }
+            if (isDraggingTouch && ghostEl) {
+              moveEvent.preventDefault();
+              ghostEl.style.left = (moveEvent.clientX - 25) + "px";
+              ghostEl.style.top = (moveEvent.clientY - 20) + "px";
+
+              var elBelow = document.elementFromPoint(moveEvent.clientX, moveEvent.clientY);
+              var targetChip = elBelow ? elBelow.closest(".study-chip.placed:not([style*='position: fixed'])") : null;
+              document.querySelectorAll(".study-chip.placed").forEach(function (c) {
+                c.classList.remove("drop-target-before", "drop-target-after");
+              });
+              if (targetChip && targetChip !== chip) {
+                var tRect = targetChip.getBoundingClientRect();
+                if (moveEvent.clientX < tRect.left + tRect.width / 2) {
+                  targetChip.classList.add("drop-target-before");
+                } else {
+                  targetChip.classList.add("drop-target-after");
+                }
+              }
+            }
+          }
+
+          function onPointerUp(upEvent) {
+            window.removeEventListener("pointermove", onPointerMove);
+            window.removeEventListener("pointerup", onPointerUp);
+            window.removeEventListener("pointercancel", onPointerUp);
+            if (ghostEl && ghostEl.parentNode) {
+              ghostEl.parentNode.removeChild(ghostEl);
+              ghostEl = null;
+            }
+            chip.classList.remove("dragging");
+            if (isDraggingTouch) {
+              upEvent.preventDefault();
+              var elBelow = document.elementFromPoint(upEvent.clientX, upEvent.clientY);
+              var targetChip = elBelow ? elBelow.closest(".study-chip.placed:not([style*='position: fixed'])") : null;
+              document.querySelectorAll(".study-chip.placed").forEach(function (c) {
+                c.classList.remove("drop-target-before", "drop-target-after");
+              });
+              if (targetChip && targetChip !== chip) {
+                var targetIdx = parseInt(targetChip.getAttribute("data-index"), 10);
+                if (!isNaN(targetIdx)) {
+                  var tRect = targetChip.getBoundingClientRect();
+                  var insertBefore = (upEvent.clientX < tRect.left + tRect.width / 2);
+                  var movedItem = studyState.orderPlaced.splice(idx, 1)[0];
+                  var destIdx = targetIdx;
+                  if (idx < destIdx) {
+                    destIdx = insertBefore ? destIdx - 1 : destIdx;
+                  } else {
+                    destIdx = insertBefore ? destIdx : destIdx + 1;
+                  }
+                  studyState.orderPlaced.splice(destIdx, 0, movedItem);
+                  studyState.selectedPlacedIndex = null;
+                  var fb = document.getElementById("order-feedback");
+                  if (fb) fb.innerHTML = "";
+                  renderOrderChips();
+                  if (studyState.orderPlaced.length === studyState.orderTokens.length) {
+                    checkOrder();
+                  }
+                }
+              }
+            }
+          }
+
+          window.addEventListener("pointermove", onPointerMove);
+          window.addEventListener("pointerup", onPointerUp);
+          window.addEventListener("pointercancel", onPointerUp);
         });
 
-        slot.appendChild(moveLeft);
-        slot.appendChild(chip);
-        slot.appendChild(moveRight);
-        ansEl.appendChild(slot);
+        ansEl.appendChild(chip);
       });
-    }
-    // Swaps the placed word at `index` with its immediate left/right neighbor (direction -1/+1)
-    // so a mid-sentence word can be repositioned directly, instead of having to remove it and
-    // every word placed after it just to re-add them in the new order.
-    function moveOrderPlaced(index, direction) {
-      var arr = studyState.orderPlaced;
-      var target = index + direction;
-      if (target < 0 || target >= arr.length) return;
-      var tmp = arr[index];
-      arr[index] = arr[target];
-      arr[target] = tmp;
-      document.getElementById("order-feedback").innerHTML = "";
-      renderOrderChips();
     }
     function checkOrder() {
       var item = studyState.current;
@@ -10121,5 +10918,27 @@
       }
     } catch (e) { /* no-op */ }
   })();
+
+/* BEGIN REGIONAL-HYDRATION (removed from GENERAL/JW builds by assemble_app.py) */
+  /* ================= REGIONAL SCHEDULE & CURRICULUM SWR HYDRATION =================
+     Static build data renders first; if the regional worker answers, its applied plan (dates, sessions, mapping) and
+     the live source curriculum replace it and the section is re-rendered. Failure/absence changes nothing. */
+  if (typeof window !== "undefined" && typeof fetch !== "undefined" && typeof REGIONAL_SCHEDULE !== "undefined" &&
+      (window.SITE_PROFILE === "jeonju" || window.SITE_PROFILE === "ulsan")) {
+    var regionalHost = window.location && window.location.hostname;
+    var regionalStaticLocal = regionalHost === "127.0.0.1" || regionalHost === "localhost";
+    if (!regionalStaticLocal) {
+      fetch("/api/regional/curriculum", { credentials: "omit" })
+        .then(function (res) { return res.ok ? res.json() : null; })
+        .then(function (data) {
+          if (data && data.config && data.source && Array.isArray(data.source.units)) {
+            regionalLive = regionalMergeLive(data);
+            renderCurrWeek16();
+          }
+        })
+        .catch(function () {});
+    }
+  }
+/* END REGIONAL-HYDRATION */
 
 })();

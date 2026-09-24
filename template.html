@@ -212,15 +212,7 @@
   .brand-logo { width: 56px; height: 56px; object-fit: contain; display: block; flex: none; }
   .brand h1 { font-size: 1.1rem; font-weight: 800; letter-spacing: -0.01em; }
   .lang-switch { display: flex; align-items: center; flex: none; }
-  .lang-switch-buttons { display: flex; flex-wrap: wrap; gap: 3px; background: var(--accent-soft); border-radius: 8px 0 8px 0; padding: 3px; }
-  .lang-btn {
-    border: none; background: transparent; color: var(--ink-soft); font-family: inherit;
-    font-size: 0.64rem; font-weight: 700; padding: 5px 6px; border-radius: 6px 0 6px 0; cursor: pointer;
-    white-space: nowrap; letter-spacing: 0.01em;
-  }
-  .lang-btn[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
-  .lang-btn:hover:not([aria-pressed="true"]) { color: var(--ink); }
-  .lang-select-wrap { display: none; }
+  .lang-select-wrap { display: block; }
   .lang-select {
     min-height: 32px;
     border: 1.5px solid var(--accent);
@@ -231,32 +223,34 @@
     padding: 3px 8px;
     cursor: pointer;
     outline: none;
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow);
   }
-  .lang-select:focus-visible { outline: 2px solid var(--accent); }
-  @media (max-width: 420px) {
-    .lang-btn { font-size: 0.58rem; padding: 4px 4px; }
-  }
-  /* Profile cross-site links (GENERAL -> JW, JW -> JEONJU) */
+  .lang-select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  /* Profile cross-site links (GENERAL -> JW, JW -> JEONJU) in footer */
   .site-cross-link-wrap {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 4px;
-    min-height: 28px;
+    justify-content: center;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    padding: 0 16px;
+    min-height: 32px;
   }
   .site-cross-link {
     color: #1a365d;
     font-family: var(--font-kr), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-weight: 700;
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     line-height: 1.35;
     text-decoration: underline;
     text-underline-offset: 3px;
     display: inline-flex;
     align-items: center;
-    min-height: 28px;
-    padding: 2px 0;
+    justify-content: center;
+    min-height: 32px;
+    padding: 4px 10px;
+    border-radius: 4px;
     transition: color 0.15s ease, opacity 0.15s ease;
   }
   .site-cross-link:hover {
@@ -265,7 +259,6 @@
   .site-cross-link:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
-    border-radius: 2px;
   }
   :root[data-theme="dark"] .site-cross-link {
     color: #8bb4e7;
@@ -945,7 +938,7 @@
      below -- itself assigned in fixed order (자주-분홍-주황-노랑-연두-민트-하늘-파랑-네이비-보라,
      wrapping back to 1 after 10) by assignPastelSlots() in app_logic.js. --pastel-rgb here is
      just the neutral fallback shown for the instant before that JS runs. */
-  .tab-btn, .subtab-btn, .lang-btn, .study-mode-btn, .foot-btn, .study-chip, .read-all-btn {
+  .tab-btn, .subtab-btn, .study-mode-btn, .foot-btn, .study-chip, .read-all-btn {
     --pastel-rgb: 216 220 206;
     background-color: rgb(var(--pastel-rgb) / var(--pastel-fill-a));
     background-image: var(--droplet-gloss);
@@ -963,7 +956,7 @@
      than a plain solid --accent fill, so every one of them reads as the same pastel-droplet
      family as the tabs above them. */
   .tab-btn[aria-selected="true"], .subtab-btn[aria-selected="true"],
-  .lang-btn[aria-pressed="true"], .study-mode-btn[aria-selected="true"], .foot-btn.primary,
+  .study-mode-btn[aria-selected="true"], .foot-btn.primary,
   .study-chip.placed, .read-all-btn[data-playing="true"] {
     background-color: rgb(var(--pastel-rgb) / var(--pastel-selected-a));
     background-image: var(--droplet-gloss);
@@ -1050,25 +1043,27 @@
     min-height: 54px; border: 1.5px dashed var(--border); border-radius: var(--radius-m);
     display: flex; flex-wrap: wrap; gap: 7px; padding: 9px; margin-bottom: 12px; align-content: flex-start;
   }
-  .study-order-bank { display: flex; flex-wrap: wrap; gap: 7px; }
+  .study-order-answer {
+    display: flex; flex-wrap: wrap; gap: 8px; min-height: 52px; padding: 10px;
+    background: var(--surface); border: 1.5px dashed var(--border); border-radius: var(--radius-m);
+    margin-bottom: 14px; align-items: center;
+  }
+  .study-order-bank { display: flex; flex-wrap: wrap; gap: 8px; }
   .study-chip {
-    font-family: var(--font-vn); font-weight: 700; font-size: 0.92rem; background: var(--chip-bg); color: var(--ink);
-    border: 1.5px solid var(--border); border-radius: 8px 0 8px 0; padding: 8px 14px; cursor: pointer;
+    font-family: var(--font-vn); font-weight: 700; font-size: 0.95rem; background: var(--chip-bg); color: var(--ink);
+    border: 1.5px solid var(--border); border-radius: 8px 0 8px 0; padding: 9px 15px; min-height: 40px; cursor: pointer;
+    user-select: none; touch-action: pan-y; display: inline-flex; align-items: center; justify-content: center;
+    transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
   }
   .study-chip.placed { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
-  /* Each placed word in [어순 배열] gets its own slot with ◀/▶ move buttons either side, so a
-     mid-sentence word can be repositioned in place instead of removing it and everything after
-     it. The slot itself (not the individual buttons) is the flex-wrap unit, so a word and its
-     two move buttons always wrap onto a new line together rather than splitting apart. */
-  .study-chip-slot { display: inline-flex; align-items: center; gap: 3px; }
-  .study-chip-move {
-    min-width: 26px; min-height: 26px; padding: 0; display: inline-flex; align-items: center;
-    justify-content: center; font-size: 0.72rem; line-height: 1; font-family: var(--font-vn);
-    background: var(--surface); color: var(--ink-faint); border: 1.5px solid var(--border);
-    border-radius: 999px; cursor: pointer; flex: none;
+  .study-chip.placed.selected {
+    background: var(--surface); border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent), 0 3px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
   }
-  .study-chip-move:disabled { opacity: 0.35; cursor: default; }
-  .study-chip-move:not(:disabled):hover { color: var(--accent); border-color: var(--accent); }
+  .study-chip.placed.dragging { opacity: 0.35; transform: scale(0.96); }
+  .study-chip.placed.drop-target-before { border-left: 3.5px solid var(--accent); padding-left: 12px; }
+  .study-chip.placed.drop-target-after { border-right: 3.5px solid var(--accent); padding-right: 12px; }
   .study-order-feedback { text-align: center; font-weight: 700; font-size: 0.88rem; margin: 12px 0 4px; }
   .study-order-feedback.ok { color: var(--good); }
   .study-order-feedback.no { color: var(--danger); }
@@ -1137,10 +1132,6 @@
   .sb-gloss-title { font-size: 0.78rem; font-weight: 800; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .05em; margin: 4px 0 8px; }
   .sb-notes { font-size: 0.78rem; color: var(--ink-faint); background: var(--chip-bg); border-radius: var(--radius-s); padding: 9px 12px; margin-top: 10px; line-height: 1.55; }
 
-  .footer-note {
-    text-align: center; font-size: 0.74rem; color: var(--ink-faint); margin-top: 30px; line-height: 1.7;
-    padding: 0 10px;
-  }
 
   /* ---------- Curriculum (교과) ---------- */
   .curr-card {
@@ -1979,7 +1970,6 @@
     .topbar { padding-block: 22px 14px; }
     .brand-logo { width: 64px; height: 64px; }
     .brand h1 { font-size: 1.35rem; }
-    .lang-btn { min-height: 38px; font-size: .75rem; padding-inline: 10px; }
     .tabs { justify-content: flex-start; }
     .curr-phase-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .voice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1997,8 +1987,6 @@
     .topbar-row { align-items: center; }
     .brand-logo { width: 44px; height: 44px; }
     .brand h1 { white-space: normal; font-size: 1rem; line-height: 1.3; }
-    .lang-switch { max-width: 100%; }
-    .lang-btn { min-height: 36px; font-size: .69rem; padding: 6px; }
     .tabs, .subtab-row { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
     .tabs { padding: 6px 16px 8px; scroll-padding-inline: 16px; }
     .tabs::-webkit-scrollbar, .subtab-row::-webkit-scrollbar { height: 3px; }
@@ -2013,8 +2001,6 @@
   }
   @media (max-width: 380px) {
     .topbar-row { gap: 6px; }
-    .brand-wrap { flex-basis: 100%; }
-    .lang-switch { margin-left: auto; }
     .choice-row.cols-2 { grid-template-columns: 1fr; }
   }
 
@@ -2067,13 +2053,12 @@
   .auto-advance-group { display: inline-flex; align-items: center; gap: 5px; min-width: 0; }
   @media (max-width: 699px) {
     /* Keep the language selector at the top right in every UI language. */
-    .topbar-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 4px; }
+    .topbar-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 4px; }
     .brand-wrap { flex-basis: auto; min-width: 0; }
     .brand { gap: 5px; min-width: 0; }
     .brand-logo { width: 38px; height: 38px; }
     .brand h1 { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: clamp(.72rem, 2.6vw, .96rem); }
-    .lang-switch { margin: 0; padding: 0; gap: 0; align-self: start; background: transparent; }
-    .lang-switch-buttons { display: none; }
+    .lang-switch { margin: 0; padding: 0; gap: 0; align-self: center; background: transparent; }
     .lang-select-wrap { display: block; }
     .lang-select { min-height: 32px; font-size: 0.78rem; padding: 3px 6px; }
 
@@ -2109,7 +2094,6 @@
   }
   @media (max-width: 380px) {
     .brand-logo { width: 32px; height: 32px; }
-    .lang-btn { padding-inline: 2px; }
     #panel-review .study-auto-row { gap: 2px; padding: 3px 4px; }
     #panel-review .study-auto-row > :not(:last-child) { padding-right: 2px; }
     #panel-review .auto-advance-option, #panel-review .auto-correct-option,
@@ -2595,7 +2579,6 @@
 <div class="app" data-active-tab="review">
   <div class="topbar">
     <div class="topbar-inner">
-      <!-- __SITE_CROSS_LINK__ -->
       <div class="topbar-row">
         <div class="brand-wrap">
           <div class="brand">
@@ -2604,34 +2587,20 @@
           </div>
         </div>
         <div class="lang-switch" id="lang-switch" role="group" aria-label="언어 선택 / 選擇語言 / Language / Sprachauswahl / Choix de langue / Wybór języka / Výběr jazyka / Nyelvválasztás" data-i18n-aria-label="언어 선택 / 選擇語言 / Language">
-          <div class="lang-switch-buttons">
-            <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">Tiếng Việt</button>
-            <button type="button" class="lang-btn" data-lang="cs" aria-pressed="false">Čeština</button>
-            <button type="button" class="lang-btn" data-lang="zh_cn" aria-pressed="false">简体中文</button>
-            <button type="button" class="lang-btn" data-lang="zh" aria-pressed="false">繁體中文</button>
-            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">English</button>
-            <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">Français</button>
-            <button type="button" class="lang-btn" data-lang="de" aria-pressed="false">Deutsch</button>
-            <button type="button" class="lang-btn" data-lang="hu" aria-pressed="false">Magyar</button>
-            <button type="button" class="lang-btn" data-lang="id" aria-pressed="false">Indonesia</button>
-            <button type="button" class="lang-btn" data-lang="ja" aria-pressed="false">日本語</button>
-            <button type="button" class="lang-btn" data-lang="ko" aria-pressed="true" data-i18n="한국어">한국어</button>
-            <button type="button" class="lang-btn" data-lang="pl" aria-pressed="false">Polski</button>
-          </div>
           <div class="lang-select-wrap">
             <select id="lang-select" class="lang-select" aria-label="언어 선택 / 選擇語言 / Language / Sprachauswahl / Choix de langue / Wybór języka / Výběr jazyka / Nyelvválasztás / Pemilihan bahasa">
-              <option value="vi">Tiếng Việt</option>
-              <option value="cs">Čeština</option>
-              <option value="zh_cn">简体中文</option>
+              <option value="ko" selected>한국어</option>
+              <option value="ja">日本語</option>
               <option value="zh">繁體中文</option>
+              <option value="zh_cn">简体中文</option>
+              <option value="cs">Čeština</option>
+              <option value="de">Deutsch</option>
               <option value="en">English</option>
               <option value="fr">Français</option>
-              <option value="de">Deutsch</option>
+              <option value="id">Indonesia</option>
               <option value="hu">Magyar</option>
-              <option value="id">Bahasa Indonesia</option>
-              <option value="ja">日本語</option>
-              <option value="ko" selected>한국어</option>
               <option value="pl">Polski</option>
+              <option value="vi">Tiếng Việt</option>
             </select>
           </div>
         </div>
@@ -2656,12 +2625,10 @@
     <!-- ============ CURRICULUM (교과) ============ -->
     <section class="panel" id="panel-curriculum">
       <div class="subtab-row">
-        <button class="subtab-btn" data-curriculum="week16" aria-selected="true" data-i18n="16주 과정">16주 과정</button>
-        <button class="subtab-btn" id="curriculum-jeonju-btn" data-curriculum="jeonju_event" aria-selected="false" data-i18n="전주 학습반" style="display:none">전주 학습반</button>
+        <button class="subtab-btn" data-curriculum="week16" aria-selected="true" data-i18n="학습 과정">학습 과정</button>
       </div>
 
       <div id="curr-week16-pane"><div id="curr-week16-root"></div></div>
-      <div id="curr-jeonju_event-pane" style="display:none"><div id="curr-jeonju-root"></div></div>
     </section>
 
     <!-- ============ WIZARD ============ -->
@@ -2906,6 +2873,7 @@
     <!-- ============ SENTENCE (행복한 삶을 영원히 · 사람들을 사랑하고 제자로 · 파수대) ============ -->
     <section class="panel" id="panel-sentence">
       <div class="subtab-row">
+        <button class="subtab-btn" data-sentence="pdf" aria-selected="false">PDF</button>
         <button class="subtab-btn" data-sentence="lff" aria-selected="true" data-i18n="행복한 삶을 영원히">행복한 삶을 영원히</button>
         <button class="subtab-btn" data-sentence="lpd" aria-selected="false" data-i18n="사람들을 사랑하고 제자로">사람들을 사랑하고 제자로</button>
         <button class="subtab-btn" data-sentence="wt" aria-selected="false" data-i18n="파수대">파수대</button>
@@ -2916,6 +2884,7 @@
         <button class="subtab-btn" data-sentence="wt2" aria-selected="false" data-i18n="파수대(전체)">파수대(전체)</button>
       </div>
 
+      <div id="sentence-pdf-pane" style="display:none"><div id="pdf-sentences-root"></div></div>
       <div id="sentence-lff-pane">
         <div class="chain-note" data-i18n="&quot;행복한 삶을 영원히 누리십시오!&quot; 성경 공부 과정의 본문 문장이에요. 각 과의 토론 질문과 본문을 실제 발행물 그대로 5개 언어로 대조해 두었어요. 동영상 안내와 &quot;더 찾아보기&quot; 자료는 포함하지 않아요.">"행복한 삶을 영원히 누리십시오!" 성경 공부 과정의 본문 문장이에요. 각 과의 토론 질문과 본문을 실제 발행물 그대로 5개 언어로 대조해 두었어요. 동영상 안내와 "더 찾아보기" 자료는 포함하지 않아요.</div>
         <div class="search-box">
@@ -3033,6 +3002,7 @@
 
     <!-- ============ GRAMMAR & COMPOSITION ============ -->
     <section class="panel" id="panel-grammar">
+      <div id="pdf-grammar-root"></div>
       <div class="subtab-row">
         <button class="subtab-btn" data-grammar="lessons" aria-selected="true" data-i18n="예문">예문</button>
         <button class="subtab-btn" data-grammar="special" aria-selected="false" data-i18n="특강">특강</button>
@@ -3085,7 +3055,7 @@
     </section>
   </main>
 
-  <div class="footer-note" data-i18n="형제·자매 베트남어 대화 확장훈련(남/북부), 16주 학습반 교과과정, 한자어 어휘 자료를 통합해 만들었습니다.">형제·자매 베트남어 대화 확장훈련(남/북부), 16주 학습반 교과과정, 한자어 어휘 자료를 통합해 만들었습니다.</div>
+  <!-- __SITE_CROSS_LINK__ -->
 </div>
 
 <script>

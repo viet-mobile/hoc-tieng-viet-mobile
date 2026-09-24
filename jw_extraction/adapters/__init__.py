@@ -12,7 +12,12 @@ from jw_extraction.adapters.love_people_adapter import LovePeopleAdapter
 from jw_extraction.adapters.neighbor_adapter import NeighborDialogueAdapter
 from jw_extraction.adapters.offer_talks_adapter import OfferTalksAdapter
 
-def get_all_adapters():
+def get_all_adapters(profile="jw"):
+    if profile == "general":
+        from jw_extraction.adapters.general_pdf_adapter import GeneralPdfAdapter
+        return [GeneralPdfAdapter()]
+    if profile != "jw":
+        raise ValueError("Unknown extraction profile: " + profile)
     return [
         WatchtowerAdapter(),
         SongsAdapter(),
