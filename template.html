@@ -2401,15 +2401,24 @@
     color: var(--accent);
     border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
   }
+  /* Word tag pills: every color derives from theme variables (defined for light AND dark), tinted per tag type.
+     --tag-hue is mixed into the surface for the background and into --ink for the text, so contrast follows the theme. */
   .word-tag-pill {
+    --tag-hue: var(--ink-soft);
     display: inline-block;
     font-size: 0.7rem;
+    font-weight: 600;
     padding: 1px 6px;
     border-radius: 4px;
-    background: var(--surface-3, #f1f5f9);
-    color: var(--ink-muted);
-    border: 1px solid var(--border);
+    background: color-mix(in srgb, var(--tag-hue) 16%, var(--surface));
+    color: color-mix(in srgb, var(--tag-hue) 55%, var(--ink));
+    border: 1px solid color-mix(in srgb, var(--tag-hue) 45%, var(--border));
   }
+  .word-tag-pill.tag-freq { --tag-hue: #2F6FD6; }     /* 상용 */
+  .word-tag-pill.tag-sino { --tag-hue: #C27A12; }     /* 한자음 */
+  .word-tag-pill.tag-theo { --tag-hue: #8455D4; }     /* 신권 */
+  .word-tag-pill.tag-reversed { --tag-hue: #0F8C80; } /* 어순반대 */
+  .word-tag-pill.tag-homo { --tag-hue: #D0365E; }     /* 동일음 */
   .word-antonym-box {
     margin-top: 6px;
     padding: 6px 10px;
@@ -2854,10 +2863,10 @@
     <!-- ============ VOCAB (어휘) ============ -->
     <section class="panel" id="panel-vocab">
       <div class="subtab-row">
-        <button class="subtab-btn" data-vocab="words" aria-selected="true" data-i18n="단어">단어</button>
         <button class="subtab-btn" data-vocab="rhyme" aria-selected="false" data-i18n="한자음">한자음</button>
         <button class="subtab-btn" data-vocab="orderrev" aria-selected="false" data-i18n="어순반대">어순반대</button>
         <button class="subtab-btn" data-vocab="groups" aria-selected="false" data-i18n="동일음">동일음</button>
+        <button class="subtab-btn" data-vocab="words" aria-selected="true" data-i18n="단어">단어</button>
         <button class="subtab-btn" data-vocab="antonym" aria-selected="false" data-i18n="반의">반의</button>
         <button class="subtab-btn" data-vocab="chain" aria-selected="false" data-i18n="끝말">끝말</button>
         <button class="subtab-btn" data-vocab="dialect" aria-selected="false" data-i18n="남북 단어">남북 단어</button>

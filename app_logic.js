@@ -229,6 +229,7 @@
   "울산 학습반": {"vi": "Lớp học Ulsan", "cs": "Kurz Ulsan", "zh_cn": "蔚山越南语班", "zh": "蔚山越南語班", "en": "Ulsan Class", "fr": "Cours d'Ulsan", "de": "Ulsan-Kurs", "hu": "Ulsan tanfolyam", "id": "Kelas Ulsan", "ja": "ウルサン学習班", "ko": "울산 학습반", "pl": "Kurs w Ulsan"},
   "자료 미정": {"cs": "Materiál zatím neurčen", "zh_cn": "教材待定", "zh": "教材待定", "en": "Material TBD", "fr": "Contenu à venir", "de": "Material noch offen", "hu": "Anyag még nincs meghatározva", "ja": "資料未定", "pl": "Materiał nieustalony"},
   "대화": {"vi": "Hội thoại", "zh_cn": "对话", "zh": "對話", "en": "Talks", "fr": "Dialogue", "de": "Dialog", "id": "Percakapan", "ja": "会話", "pl": "Rozmowy"},
+  "단어": {"vi": "Từ vựng", "cs": "Slova", "zh_cn": "词汇", "zh": "詞彙", "en": "Words", "fr": "Mots", "de": "Wörter", "hu": "Szavak", "id": "Kata", "ja": "語彙", "pl": "Słowa"},
   "어휘": {"vi": "Từ vựng", "zh_cn": "词汇", "zh": "詞彙", "en": "Words", "fr": "Vocabulaire", "de": "Wortschatz", "id": "Kosakata", "ja": "語彙", "pl": "Słownictwo"},
   "문장": {"vi": "Mẫu câu", "zh_cn": "句子", "zh": "句子", "en": "Clauses", "fr": "Phrases", "de": "Satz", "id": "Kalimat", "ja": "文", "pl": "Zdania"},
   "문법": {"vi": "Ngữ pháp", "zh_cn": "文法", "zh": "文法", "en": "Usage", "fr": "Grammaire", "de": "Grammatik", "id": "Tata Bahasa", "ja": "文法", "pl": "Gramatyka"},
@@ -3629,6 +3630,8 @@
     bindVocabFocusClear(root);
   }
 
+  var wordsSortByFrequency = false;
+  var WORD_TAG_CLASS = { "상용": "tag-freq", "한자음": "tag-sino", "신권": "tag-theo", "어순반대": "tag-reversed", "동일음": "tag-homo" };
   function renderVocabWords(root, q) {
     var words = (typeof UNIFIED_WORDS !== "undefined" && UNIFIED_WORDS) || [];
     var filterEl = document.getElementById("vocab-tag-filters");
@@ -3649,8 +3652,15 @@
         var isActive = activeWordTag === t;
         filterHtml += '<button type="button" class="tag-filter-btn' + (isActive ? ' active' : '') + '" data-tag="' + escapeAttr(t) + '" aria-pressed="' + (isActive ? 'true' : 'false') + '">' + escapeHtml(label) + '</button>';
       });
+      filterHtml += '<button type="button" class="tag-filter-btn word-sort-btn" data-sort="frequency" aria-pressed="' + (wordsSortByFrequency ? 'true' : 'false') + '">' + escapeHtml(TU("빈도가 많은 순")) + '</button>';
       filterEl.innerHTML = filterHtml;
-      filterEl.querySelectorAll(".tag-filter-btn").forEach(function (btn) {
+      var sortBtn = filterEl.querySelector(".word-sort-btn");
+      sortBtn.addEventListener("click", function () {
+        wordsSortByFrequency = !wordsSortByFrequency;
+        wordsDisplayLimit = 80;
+        renderVocabWords(root, document.getElementById("vocab-search").value.trim().toLowerCase());
+      });
+      filterEl.querySelectorAll(".tag-filter-btn[data-tag]").forEach(function (btn) {
         btn.addEventListener("click", function () {
           activeWordTag = btn.dataset.tag;
           wordsDisplayLimit = 80;
@@ -3659,20 +3669,21 @@
       });
     }
 
+    // Meanings are looked up by the canonical language key only. A language the record has no meaning for shows the
+    // existing "unavailable" marker -- never the Korean (or any other language's) meaning in its place.
     function getWordMeaning(w) {
       if (!w) return "";
       var m = w.kr || w.meanings;
-      if (w.pdf_id) return (m && m[currentLang]) || (currentLang === "vi" ? "" : "Translation unavailable · " + currentLang);
-      if (typeof m === "string") return m;
-      if (m && typeof m === "object") return m[currentLang] || m.ko || m.en || "";
-      return "";
+      if (typeof m === "string") m = { ko: m };
+      var v = m && typeof m === "object" ? m[currentLang] : null;
+      if (v) return v;
+      return currentLang === "vi" ? "" : "Translation unavailable · " + currentLang;
     }
     function getAntonymMeaning(w) {
       if (!w || !w.antonymMeaning) return "";
       var m = w.antonymMeaning;
-      if (typeof m === "string") return m;
-      if (m && typeof m === "object") return m[currentLang] || m.ko || m.en || "";
-      return "";
+      if (typeof m === "string") m = { ko: m };
+      return (m && typeof m === "object" && m[currentLang]) || "";
     }
 
     var filtered = words.filter(function (w) {
@@ -3681,6 +3692,15 @@
       var meaningStr = getWordMeaning(w);
       return (w.vi && w.vi.toLowerCase().indexOf(q) >= 0) || meaningStr.toLowerCase().indexOf(q) >= 0;
     });
+
+    if (wordsSortByFrequency) {
+      // Authoritative field: UNIFIED_WORDS[].frequency (set by unified_words_builder.py). 0/missing = no frequency data,
+      // listed after every word that has one. Ties keep the source order (stable, deterministic).
+      var sourceIndex = new Map();
+      words.forEach(function (w, i) { sourceIndex.set(w, i); });
+      var freqOf = function (w) { return typeof w.frequency === "number" && w.frequency > 0 ? w.frequency : -1; };
+      filtered = filtered.slice().sort(function (a, b) { return (freqOf(b) - freqOf(a)) || (sourceIndex.get(a) - sourceIndex.get(b)); });
+    }
 
     if (!filtered.length) {
       root.innerHTML = '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
@@ -3714,7 +3734,7 @@
           (typeof w.frequency === "number" && w.frequency > 0 ? '<span class="word-freq-badge" title="' + TU("등장 빈도") + '">' + TU("빈도: ") + w.frequency + '</span>' : '') +
           jwFreqHtml +
           '<div style="display:inline-flex;gap:4px;flex-wrap:wrap">' +
-          (w.tags || []).map(function (t) { return '<span class="word-tag-pill">' + escapeHtml(TU(t)) + '</span>'; }).join('') +
+          (w.tags || []).map(function (t) { return '<span class="word-tag-pill' + (WORD_TAG_CLASS[t] ? ' ' + WORD_TAG_CLASS[t] : '') + '">' + escapeHtml(TU(t)) + '</span>'; }).join('') +
           '</div></div>' +
           '<div class="bible-mean">' + escapeHtml(mean) + '</div>';
       if (w.pdf_sources) html += '<small class="pdf-source">' + escapeHtml(w.pdf_sources.map(function (s) { return s.file + ' · p. ' + s.page; }).join('; ')) + '</small>';
@@ -4743,8 +4763,11 @@
     return adjusted;
   }
   function courseWeekTitle(w) {
-    if (w.week === 16) return "총복습";
-    return COURSE_BREAK_LABELS[String(w.week)] || COURSE_DATE_LABELS[w.week] || (w.title ? T(w.title) : weekBadge(w.week));
+    if (w.week === 16) return TU("총복습");
+    if (COURSE_BREAK_LABELS[String(w.week)]) return COURSE_BREAK_LABELS[String(w.week)];
+    // Week slots are shown by study number only (localized), never with a date.
+    if (COURSE_DATE_LABELS[w.week]) return weekBadge(Number(w.week) + 1);
+    return w.title ? T(w.title) : weekBadge(w.week);
   }
   function courseStudyNumber(weekKey) {
     return Number(weekKey) >= 0 && Number(weekKey) <= 15 ? Number(weekKey) + 1 : null;
@@ -5379,8 +5402,6 @@ function verifyDistribution(units, dist, pins) {
       if (sched.preliminaryMeeting && sched.preliminaryMeeting.calculatedDate) {
         welcomeDatePrefix = sched.preliminaryMeeting.calculatedDate + " ";
       }
-    } else {
-      welcomeDatePrefix = "2026/10/3 ";
     }
 
     html += '<div class="curr-card curr-welcome-card" data-open="false">' +

@@ -609,16 +609,12 @@ def build_data_js(site):
     parts.append(emit("JW_EXTRACTION_DATA", jw_extraction_data))
 
     if site == "jw":
-        parts.append(emit("JW_COURSE_DATE_LABELS", {
-            0: "2026/10/10 - 1주", 1: "2026/10/17 - 2주", 2: "2026/10/24 - 3주", 3: "2026/10/31 - 4주",
-            4: "2026/11/14 - 5주", 5: "2026/11/21 - 6주", 6: "2026/11/28 - 7주", 7: "2026/12/12 - 8주",
-            8: "2026/12/19 - 9주", 9: "2027/1/2 - 10주", 10: "2027/1/9 - 11주", 11: "2027/1/16 - 12주",
-            12: "2027/1/23 - 13주", 13: "2027/1/30 - 14주", 14: "2027/2/6 - 15주", 15: "2027/2/13 - 16주"
-        }))
+        # JW shows the course content without calendar dates (dates belong to the regional sites).
+        parts.append(emit("JW_COURSE_DATE_LABELS", {k: f"{k + 1}주" for k in range(16)}))
         parts.append(emit("JW_COURSE_BREAK_LABELS", {
-            "-1.5": "2026/11/7 방학",
-            "-2.5": "2026/12/5 천안 베트남어 순회대회 파이오니아 모임",
-            "-3.5": "2026/12/26 군산 한국어 순회대회"
+            "-1.5": "방학",
+            "-2.5": "천안 베트남어 순회대회 파이오니아 모임",
+            "-3.5": "군산 한국어 순회대회"
         }))
     elif site == "jeonju":
         import jeonju_data
