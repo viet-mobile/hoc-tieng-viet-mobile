@@ -672,8 +672,10 @@ async function runTest() {
           allPassed = false;
         }
       } else if (prof.site === 'jeonju' || prof.site === 'ulsan') {
-        if (after.hasCrossLinkWrap || after.crossLinkHref !== null || after.crossLinkText !== null) {
-          console.error(`  [FAIL] ${prof.name} lang=${lang} (after reload): Cross-link must NOT exist! Got href="${after.crossLinkHref}", text="${after.crossLinkText}", hasWrap=${after.hasCrossLinkWrap}`);
+        // Regional sites link only to their OWN admin page.
+        const expectedAdmin = `https://${prof.site}.hoc.tieng.viet.mobile/admin`;
+        if (!after.hasCrossLinkWrap || after.crossLinkHref !== expectedAdmin || after.crossLinkText !== '관리자?') {
+          console.error(`  [FAIL] ${prof.name} lang=${lang} (after reload): Admin footer link mismatch! Got href="${after.crossLinkHref}", text="${after.crossLinkText}", hasWrap=${after.hasCrossLinkWrap}; expected "${expectedAdmin}" / "관리자?"`);
           pass = false;
           allPassed = false;
         }

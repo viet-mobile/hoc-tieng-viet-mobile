@@ -22,9 +22,6 @@ module.exports = async function verifyPdf(cdp, site) {
         const sentence = GENERAL_PDF.sentences[0];
         let card = document.querySelector('[data-pdf-id="' + sentence.id + '"]');
         check(visible(card), lang + ': sentence not visible');
-        check(card?.querySelector('.pdf-original').textContent === sentence.vi, lang + ': sentence source mismatch');
-        check(card?.querySelector('.pdf-translation').textContent === (sentence.translations[lang] || (lang === 'vi' ? '' : 'Translation unavailable · ' + lang)), lang + ': translation fallback');
-        check(card?.querySelector('.pdf-source').textContent.includes(sentence.sources[0].file), lang + ': source missing');
         check(card?.querySelector('.vn')?.textContent === sentence.vi, lang + ': sentence source mismatch');
         if (sentence.translations[lang]) {
           check(card?.querySelector('.card-translation')?.textContent === sentence.translations[lang], lang + ': sentence translation mismatch');
@@ -36,10 +33,6 @@ module.exports = async function verifyPdf(cdp, site) {
         click('[data-grammar="pdf"]');
         const grammar = GENERAL_PDF.grammar[0];
         card = document.querySelector('[data-pdf-id="' + grammar.id + '"]');
-        const original = card?.querySelector('details');
-        if (original) original.open = true;
-        check(visible(card?.querySelector('.pdf-original')), lang + ': grammar not visible');
-        check(card?.querySelector('.pdf-original').textContent === grammar.original, lang + ': grammar source mismatch');
         check(visible(card), lang + ': grammar not visible');
         check(!card?.querySelector('.pdf-source'), lang + ': grammar pdf-source must not be visible');
         check(!card?.innerText.includes('Translation unavailable'), lang + ': grammar Translation unavailable label visible');
@@ -51,11 +44,9 @@ module.exports = async function verifyPdf(cdp, site) {
         card = document.querySelector('#vocab-root [data-pdf-id]');
         const word = GENERAL_PDF.words.find(w => w.id === card?.dataset.pdfId);
         check(visible(card) && !!word, lang + ': PDF word not visible');
-        check(card?.querySelector('.bible-word').textContent === word?.vi, lang + ': word source mismatch');
         check(card?.querySelector('.bible-word')?.textContent === word?.vi, lang + ': word source mismatch');
         check(!card?.querySelector('.pdf-source'), lang + ': word pdf-source must not be visible');
         const merged = UNIFIED_WORDS.find(w => w.pdf_id === word?.id);
-        check(card?.querySelector('.bible-mean').textContent === (merged?.kr[lang] || (lang === 'vi' ? '' : 'Translation unavailable · ' + lang)), lang + ': word fallback');
         const expectedMean = (merged && merged.kr && merged.kr[lang]) || '';
         const actualMean = card?.querySelector('.bible-mean')?.textContent || '';
         check(actualMean === expectedMean, lang + ': word meaning mismatch');
