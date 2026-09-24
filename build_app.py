@@ -13,6 +13,11 @@ from bible_numbers_data import (BIBLE_BOOKS_OT, BIBLE_BOOKS_NT, NUMBERS_BASIC, N
                                  NUMBER_DECIMAL_EXAMPLE)
 from tone_pairs_data import TONE_PAIRS
 from grammar_data import GRAMMAR_INTRO, GRAMMAR_UNITS, GRAMMAR_A1_A2_PATTERNS
+from grammar_a1a2_ai_translations import apply_a1a2_ai_translations
+GRAMMAR_A1_A2_PATTERNS = apply_a1a2_ai_translations(GRAMMAR_A1_A2_PATTERNS)  # adds meaning/tr; source fields untouched
+from grammar_lessons_ai_translations import apply_grammar_lessons_ai_translations
+GRAMMAR_INTRO = apply_grammar_lessons_ai_translations(GRAMMAR_INTRO)  # fills cs/zh_cn/hu/id only where missing
+GRAMMAR_UNITS = apply_grammar_lessons_ai_translations(GRAMMAR_UNITS)
 from user_words_data import USER_NEW_WORDS
 from unified_words_builder import gather_learning_corpus, build_unified_words
 from sentence_builder_data import (SB_PRONOUNS, SB_NOUN_SUBJECTS, SB_INTRANS_VERBS, SB_TRANS_VERBS,
@@ -21,9 +26,16 @@ from sentence_builder_data import (SB_PRONOUNS, SB_NOUN_SUBJECTS, SB_INTRANS_VER
                                     SB_COMPLEMENT_NOUNS, SB_PREPOSITIONS)
 from curriculum_data import WELCOME_TEXT, COURSE_PHASES, WEEK16_TOC
 from culture_data import CULTURE_ARTICLES
+from culture_ai_translations import apply_culture_ai_translations
+CULTURE_ARTICLES = apply_culture_ai_translations(CULTURE_ARTICLES)  # adds *Tr objects; source fields untouched
 from offer_talks_data import OFFER_TALKS, KINGDOM_SONGS, PRAYER_TEMPLATE
 from neighbor_conversations_data import NEIGHBOR_CONVERSATIONS
 from daily_conversations_data import DAILY_CONVERSATIONS
+from daily_conversations_i18n import apply_daily_ai_translations
+# Source keeps vi/ko/zh/en/ja; cs/zh_cn/fr/de/hu/id/pl come from the separate AI-translation layer
+# (each conversation is tagged with the languages it received in `aiLangs`).
+DAILY_CONVERSATIONS = apply_daily_ai_translations(DAILY_CONVERSATIONS)
+from general_pdf_ai_translations import GENERAL_PDF_SENTENCE_AI_TRANSLATIONS
 from lff_data import LFF_CONVERSATIONS
 from lpd_data import LPD_LESSONS
 from bible_names_data import BIBLE_NAMES
@@ -603,6 +615,9 @@ def build_data_js(site):
     pdf_learning = ExtractionEngine(profile="general").load_general_output()["learningData"]
     unified_words = merge_pdf_words(unified_words, pdf_learning["words"])
     parts.append(emit("GENERAL_PDF", pdf_learning))
+    # The PDF source only has vi/ko; GENERAL_PDF stays exactly as extracted. Machine translations of its
+    # sentences (keyed by sentence id, never "ko"/"vi") are a separate constant.
+    parts.append(emit("GENERAL_PDF_AI_TRANSLATIONS", GENERAL_PDF_SENTENCE_AI_TRANSLATIONS))
     parts.append(emit("UNIFIED_WORDS", unified_words))
     parts.append(emit("GRAMMAR_A1_A2_PATTERNS", GRAMMAR_A1_A2_PATTERNS))
     parts.append(emit("GRAMMAR_B1_B2_PATTERNS", GRAMMAR_B1_B2_PATTERNS))

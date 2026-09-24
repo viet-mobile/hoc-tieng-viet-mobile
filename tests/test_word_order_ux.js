@@ -5,7 +5,7 @@
  * 1. Zero visible left/right move buttons (◀/▶ completely removed)
  * 2. Click first word -> selected state
  * 3. Click second word -> swap positions
- * 4. Click selected word again -> cancel selection
+ * 4. Click selected word again -> the word goes back out to the word bank
  * 5. Drag word forward & backward (insertion position move)
  * 6. Answer validation after reorder
  * 7. Reset/retry restores bank
@@ -107,6 +107,7 @@ console.log('--- Running Word Order [어순 배열] UX Test Suite ---');
     if (selIdx === null || selIdx === undefined) {
       studyState.selectedPlacedIndex = idx;
     } else if (selIdx === idx) {
+      studyState.orderPlaced.splice(idx, 1);
       studyState.selectedPlacedIndex = null;
     } else {
       const tmp = studyState.orderPlaced[selIdx];
@@ -123,9 +124,11 @@ console.log('--- Running Word Order [어순 배열] UX Test Suite ---');
   simulateClick(1);
   assert.strictEqual(studyState.selectedPlacedIndex, 1, 'Index 1 must be selected');
 
-  // Tap 1 again -> Deselect (cancel)
+  // Tap 1 again -> "thường" goes back out to the bank
   simulateClick(1);
-  assert.strictEqual(studyState.selectedPlacedIndex, null, 'Clicking selected word again must cancel selection');
+  assert.strictEqual(studyState.selectedPlacedIndex, null, 'Clicking selected word again must clear selection');
+  assert.deepStrictEqual(studyState.orderPlaced.map(p => p.t), ['Tôi', 'đi', 'học'], 'Clicking selected word again must take it out');
+  studyState.orderPlaced.splice(1, 0, { t: 'thường', key: 1 });
 
   // Tap 1 ("thường", index 1), then Tap 2 ("đi", index 2) -> Swap!
   simulateClick(1);

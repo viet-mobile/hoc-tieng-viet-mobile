@@ -843,13 +843,17 @@ async function runTest() {
 
           var swapped = (w0After === w1Before && w1After === w0Before);
 
-          // 3. Click first chip again and then click itself -> must cancel selection
+          // 3. Click first chip again and then click itself -> the word goes back out to the bank
+          var placedCountBefore = placedAfterSwap.length;
+          var returnedWord = placedAfterSwap[0].textContent.trim();
           placedAfterSwap[0].click();
           var placedReselected = Array.from(document.querySelectorAll('#order-answer .study-chip.placed'));
           var reselected = placedReselected[0].classList.contains('selected');
           placedReselected[0].click();
-          var placedCancelled = Array.from(document.querySelectorAll('#order-answer .study-chip.placed'));
-          var cancelled = !placedCancelled[0].classList.contains('selected');
+          var placedAfterReturn = document.querySelectorAll('#order-answer .study-chip.placed').length;
+          var bankWords = Array.from(document.querySelectorAll('#order-bank .study-chip')).map(function (c) { return c.textContent.trim(); });
+          var cancelled = placedAfterReturn === placedCountBefore - 1 && bankWords.indexOf(returnedWord) >= 0 &&
+            document.querySelectorAll('#order-answer .study-chip.selected').length === 0;
 
           // 4. Test Reset
           var resetBtn = document.querySelector('#order-reset');
@@ -898,10 +902,10 @@ async function runTest() {
         console.log(`  [PASS] Second tap swaps word positions and clears selection`);
       }
       if (!wo.reselected || !wo.cancelled) {
-        console.error(`  [FAIL] Tapping selected word again did not cancel selection`);
+        console.error(`  [FAIL] Tapping selected word again did not return it to the word bank`);
         pass = false;
       } else {
-        console.log(`  [PASS] Tapping selected word again cancels selection`);
+        console.log(`  [PASS] Tapping selected word again returns it to the word bank`);
       }
       if (wo.placedAfterReset !== 0) {
         console.error(`  [FAIL] Reset button did not clear placed chips`);
