@@ -103,7 +103,7 @@ GENERAL_CONSTS_NEEDING_ENTRY_FILTER = {
 
 SITE_TITLES = {
     "jw": {
-        "title": "JW 베트남어 학습 · JW越南語學習 · JW Vietnamese Learning · JW ベトナム語学習",
+        "title": "JW 베트남어 학습 · JW學習越南語 · JW Vietnamese Learning · JW ベトナム語学習",
         "h1": "JW 베트남어 학습",
         "host": "jw.hoc.tieng.viet.mobile",
         # h1_by_lang / title_by_lang: consumed by assemble_app.py to inject a small SITE_H1_BY_LANG /
@@ -115,7 +115,7 @@ SITE_TITLES = {
             "vi": "JW Học tiếng Việt",
             "cs": "JW Studium vietnamštiny",
             "zh_cn": "JW 越南语学习",
-            "zh": "JW 越南語學習",
+            "zh": "JW學習越南語",
             "en": "JW Vietnamese Learning",
             "fr": "JW Apprentissage du vietnamien",
             "de": "JW Vietnamesisch lernen",
@@ -129,7 +129,7 @@ SITE_TITLES = {
             "vi": "JW Học tiếng Việt",
             "cs": "JW Studium vietnamštiny",
             "zh_cn": "JW 越南语学习",
-            "zh": "JW 越南語學習",
+            "zh": "JW學習越南語",
             "en": "JW Vietnamese Learning",
             "fr": "JW Apprentissage du vietnamien",
             "de": "JW Vietnamesisch lernen",
