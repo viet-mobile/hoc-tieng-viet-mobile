@@ -618,6 +618,10 @@ def build_data_js(site):
     # The PDF source only has vi/ko; GENERAL_PDF stays exactly as extracted. Machine translations of its
     # sentences (keyed by sentence id, never "ko"/"vi") are a separate constant.
     parts.append(emit("GENERAL_PDF_AI_TRANSLATIONS", GENERAL_PDF_SENTENCE_AI_TRANSLATIONS))
+    # Machine translations of the [일반 문법] sections ("<grammar id>#<section index>" -> lang -> {t, b}); the
+    # Vietnamese inside each text is marked with ⟦ ⟧. Source grammar records stay as extracted.
+    with open("general_pdf_grammar_ai_translations.json", encoding="utf-8") as f:
+        parts.append(emit("GENERAL_PDF_GRAMMAR_AI", json.load(f)))
     parts.append(emit("UNIFIED_WORDS", unified_words))
     parts.append(emit("GRAMMAR_A1_A2_PATTERNS", GRAMMAR_A1_A2_PATTERNS))
     parts.append(emit("GRAMMAR_B1_B2_PATTERNS", GRAMMAR_B1_B2_PATTERNS))
