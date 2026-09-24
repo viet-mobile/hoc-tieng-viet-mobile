@@ -153,6 +153,19 @@
       return v;
     };
     ["words", "sentences", "grammar"].forEach(function (k) { if (GENERAL_PDF[k]) fix(GENERAL_PDF[k]); });
+    // [문장] Korean meanings: one form per address word and no bracketed notes
+    // (형/오빠 -> 형, 누나/언니 -> 언니, 나(형/오빠) -> 형, 나(누나/언니) -> 언니, 저(동생) -> 저, "(...)" removed).
+    var simplifyKo = function (s) {
+      return s
+        .replace(/나\(형\/오빠\)/g, "형").replace(/나\(누나\/언니\)/g, "언니").replace(/저\(동생\)/g, "저")
+        .replace(/형([가-힣]*)\s*\/\s*오빠([가-힣]*)/g, function (m, p1, p2) { return "형" + (p1 || p2); })
+        .replace(/누나[가-힣]*\s*\/\s*언니/g, "언니")
+        .replace(/\s*\([^()]*\)/g, "")
+        .replace(/\s+([?!.,])/g, "$1").trim();
+    };
+    (GENERAL_PDF.sentences || []).forEach(function (r) {
+      if (r.translations && typeof r.translations.ko === "string") r.translations.ko = simplifyKo(r.translations.ko);
+    });
   })();
   function setLang(lang) {
     if (VALID_LANGS.indexOf(lang) < 0) return;
