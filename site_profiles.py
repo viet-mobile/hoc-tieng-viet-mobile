@@ -269,7 +269,9 @@ NON_JW_HTML_REMOVALS = {
     # GRAMMAR_B1_B2_PATTERNS (COMMON), alongside its legacy JW-only content (GX_*, the original
     # GRAMMAR_DICT entries), which is already emptied at the data level for GENERAL via
     # JW_ONLY_CONSTS -- whole-removing this pane would also hide the COMMON B1/B2 material.
-    "tabs": ["curriculum"],
+    # [과정] (curriculum) is kept for GENERAL as its first tab; its course data is JW-only and emitted empty, so
+    # GENERAL shows the "자료 미정" state (app_logic.js renderCurrWeek16).
+    "tabs": [],
     "subtabs": [
         {"attr": "data-sentence", "values": ["lff", "lpd", "wt", "song", "prayer", "lff2", "lpd2", "wt2"]},
         {"attr": "data-wizard", "values": ["main", "talks", "neighbor"]},
