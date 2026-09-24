@@ -494,7 +494,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
              'ko': '성경에는 “아직 이루어지지 않은 일들” 을 미리 알려 주는 예언 a 들이 들어 있습니다. (이사야 46:10) 성경은 많은 역사적인 사건을 그 일이 일어나기 오래 전에 '
                    '정확하게 예언했습니다. 또한 성경은 오늘날의 세상 상태를 놀랄 만큼 구체적으로 예언했습니다. 이 과에서는 성경 예언 몇 가지를 살펴볼 것입니다. 그 예언들은 매우 정확하게 '
                    '성취되었습니다!',
-             'vi': 'Kinh Thánh có những lời tiên tri a báo trước “việc chưa làm”, tức việc chưa xảy ra (Ê-sai '
+             'vi': 'Kinh Thánh có những lời tiên tri báo trước “việc chưa làm”, tức việc chưa xảy ra (Ê-sai '
                    '46:10). Kinh Thánh báo trước chính xác nhiều sự kiện lịch sử mà rất lâu sau mới xảy ra. Sách này '
                    'cũng miêu tả tình trạng thế giới hiện nay với những chi tiết nổi bật. Trong bài này, chúng ta sẽ '
                    'xem xét một số lời tiên tri đáng kinh ngạc.',
@@ -695,7 +695,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    'Đức Giê-hô-va. Ấy là danh ta”. (Đọc Ê-sai 42:5, 8). “Giê-hô-va” được phiên âm từ một tên trong '
                    'tiếng Hê-bơ-rơ, rất có thể nghĩa là “Đấng làm cho trở thành”. Đức Giê-hô-va muốn chúng ta biết '
                    'tên ngài (Xuất Ai Cập 3:15). Điều này được thấy rõ qua việc tên ngài xuất hiện hơn 7.000 lần '
-                   'trong Kinh Thánh! a Đúng vậy, chỉ có một “Đức Chúa Trời thật ở trên trời và dưới đất” và tên '
+                   'trong Kinh Thánh! Đúng vậy, chỉ có một “Đức Chúa Trời thật ở trên trời và dưới đất” và tên '
                    'ngài là Giê-hô-va. — Phục truyền luật lệ 4:39.',
              'zh': '上帝在聖經中向我們介紹他自己說： 「我是耶和華，這是我的名字。」 （請讀 以賽亞書42:5, '
                    '8）「耶和華」這個名字是從希伯來語翻譯過來的。很多學者認為這個名字的意思是「他使……成為」，也就是說，耶和華是「成事者」。耶和華希望我們知道他的名字。（出埃及記3:15）為什麼這麼說呢？因為他讓人在聖經裡記下了他的名字超過7000次！ '
@@ -886,7 +886,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    'hoặc đánh cá, cũng có người là vua. Dù vậy, mọi phần của Kinh Thánh đều hòa hợp. Làm sao có được '
                    'điều này? Vì Tác Giả của Kinh Thánh chính là Đức Chúa Trời. (Đọc 1 Tê-sa-lô-ni-ca 2:13). Những '
                    'người viết không ghi lại ý tưởng riêng nhưng “nói những điều đến từ Đức Chúa Trời khi được thần '
-                   'khí thánh a thúc đẩy” (2 Phi-e-rơ 1:21). Ngài dùng thần khí thánh soi dẫn con người, tức là tác '
+                   'khí thánh thúc đẩy” (2 Phi-e-rơ 1:21). Ngài dùng thần khí thánh soi dẫn con người, tức là tác '
                    'động đến họ, để ghi lại ý tưởng của ngài. — 2 Ti-mô-thê 3:16.',
              'zh': '聖經是由大約40個人寫下來的，寫作時間是從公元前1513年到大約公元98年，總共1600多年。寫聖經的人背景各不相同，但聖經的各卷書都和諧一致。為什麼會這樣呢？因為聖經的信息其實來自上帝，他才是這本書的作者。（請讀 '
                    '帖撒羅尼迦前書2:13）寫聖經的人不是按照自己的想法寫的，而是 「被神聖力量推動，把上帝的話說出來」。 a '
@@ -1081,7 +1081,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
              'vi': '“Nguồn sự sống ở nơi [Đức Chúa Trời]” (Thi thiên 36:9). Bạn có tin điều đó không? Một số người '
                    'tin rằng không ai tạo ra sự sống. Nếu vậy thì chúng ta xuất hiện một cách ngẫu nhiên và đời sống '
                    'thật vô nghĩa. Nhưng nếu Giê-hô-va Đức Chúa Trời là nguồn sự sống thì chắc chắn ngài có một mục '
-                   'đích khi tạo ra chúng ta. a Hãy xem Kinh Thánh tường thuật thế nào về nguồn gốc sự sống và tại '
+                   'đích khi tạo ra chúng ta. Hãy xem Kinh Thánh tường thuật thế nào về nguồn gốc sự sống và tại '
                    'sao lời tường thuật ấy là hợp lý.',
              'zh': '「［上帝］是生命的源頭。」（詩篇36:9）你相信這一點嗎？有些人認為，生命是碰巧產生的。如果這是真的，我們的存在就是個偶然。但如果生命是耶和華上帝創造的，那麼生命就應該有某種意義，對嗎？ a '
                    '來看看聖經說生命怎樣開始，以及為什麼聖經的說法很合理。'},
@@ -3021,7 +3021,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
             {'en': 'Read Revelation 18:4, a and then discuss this question:',
              'ja': '啓示 18章4節 を読んで， a 次のことを考えましょう。',
              'ko': '요한 계시록 18:4 a 을 읽고 다음의 질문에 대답해 보세요.',
-             'vi': 'Đọc Khải huyền 18:4, a rồi thảo luận câu hỏi sau:',
+             'vi': 'Đọc Khải huyền 18:4, rồi thảo luận câu hỏi sau:',
              'zh': '請讀 啟示錄18:4， a 然後討論以下問題：'},
             {'en': 'How does it make you feel to know that God wants to save individuals who have been misled by '
                    'false religion?',
@@ -3167,7 +3167,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
              'vi': 'Sự thờ phượng của chúng ta phải “thánh và đẹp lòng Đức Chúa Trời” (Rô-ma 12:1). Điều này có '
                    'nghĩa là chúng ta cần sống theo tiêu chuẩn của ngài. Chẳng hạn, những ai yêu thương Đức '
                    'Giê-hô-va thì yêu mến và làm theo tiêu chuẩn của ngài về hôn nhân. Họ cũng tránh thói hư tật xấu '
-                   'như hút thuốc, dùng ma túy hoặc lạm dụng rượu. a',
+                   'như hút thuốc, dùng ma túy hoặc lạm dụng rượu.',
              'zh': '我們的崇拜必須 '
                    '「是聖潔的，是上帝接納的」。（羅馬書12:1）這意味著我們要按照上帝的道德標準生活。例如，愛耶和華的人會樂意服從上帝定下的婚姻標準。我們也會避免有害的習慣，比如抽煙、醉酒、嚼檳榔或濫用藥物。 '
                    'a'},
@@ -3396,7 +3396,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
              'vi': 'Khoảng 2.000 năm trước, Đức Giê-hô-va đã làm một phép lạ. Ngài dùng thần khí thánh để chuyển sự '
                    'sống của Chúa Giê-su từ trên trời vào lòng một trinh nữ tên là Ma-ri. Qua cách đó, Chúa Giê-su '
                    'được sinh ra làm người. (Đọc Lu-ca 1:34, 35). Chúa Giê-su xuống trái đất để trở thành Đấng '
-                   'Mê-si, hay Đấng Ki-tô, được hứa trước và giải cứu nhân loại. a Tất cả các lời tiên tri trong '
+                   'Mê-si, hay Đấng Ki-tô, được hứa trước và giải cứu nhân loại. Tất cả các lời tiên tri trong '
                    'Kinh Thánh về Đấng Mê-si đều được ứng nghiệm nơi Chúa Giê-su, nhờ thế người ta có thể nhận diện '
                    'ngài là “Đấng Ki-tô, Con Đức Chúa Trời hằng sống”. — Ma-thi-ơ 16:16.',
              'zh': '大約兩千年前，耶和華用神聖力量施行奇跡，將耶穌的生命從天上轉移到處女馬利亞的腹中。耶穌就這樣降世為人了。（請讀 '
@@ -3613,7 +3613,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    '문제를 해결하실 것이라는 좋은 소식을 전하셨습니다. a 예수께서는 3년 반 동안 그 희망의 소식을 부지런히 전하셨습니다. — 마태복음 9:35.',
              'vi': 'Công việc chính của Chúa Giê-su là “rao truyền tin mừng về Nước Đức Chúa Trời”. (Đọc Lu-ca '
                    '4:43). Ngài rao truyền tin mừng rằng Đức Chúa Trời sẽ lập nên một nước, hay một chính phủ, và '
-                   'chính phủ này sẽ giải quyết tất cả các vấn đề của nhân loại. a Chúa Giê-su nỗ lực hết sức để '
+                   'chính phủ này sẽ giải quyết tất cả các vấn đề của nhân loại. Chúa Giê-su nỗ lực hết sức để '
                    'chia sẻ thông điệp đầy hy vọng này trong ba năm rưỡi. — Ma-thi-ơ 9:35.',
              'zh': '耶穌最重要的工作是 「宣揚上帝王國的好消息」。（請讀 路加福音4:43）這個好消息就是：上帝會建立一個王國，也就是一個政府，解決世上的所有問題。 a '
                    '耶穌用了三年半的時間，勤奮地傳講這個信息，為人帶來安慰。（馬太福音9:35）'},
@@ -4311,7 +4311,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    'hiện đại của chúng tôi. Vào khoảng thập niên 1870, một nhóm học viên Kinh Thánh đã bắt đầu cẩn '
                    'thận xem xét Kinh Thánh. Họ dùng Kinh Thánh làm nền tảng cho niềm tin của mình, ngay cả khi niềm '
                    'tin ấy khác với giáo lý của giáo hội. Sau đó, họ bắt đầu chia sẻ điều mình khám phá được với '
-                   'người khác. a',
+                   'người khác.',
              'zh': '耶穌對上帝說： 「你的話語就是真理。」 '
                    '（約翰福音17:17）跟耶穌一樣，耶和華見證人的信仰總是以聖經為根據。請看看耶和華見證人的近代歷史。在19世紀末，一群懇切尋求真理的人聚集起來，開始仔細查考聖經。他們的信仰以聖經為根據，儘管有時跟教會的主張不同，他們還是堅信聖經的道理。後來，他們就把找到的聖經真理跟別人分享。 '
                    'a'},
@@ -4938,7 +4938,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    '(빌립보서 1:7) 오늘날 여호와의 증인도 그렇게 하고 있습니다. a',
              'vi': 'Vào thế kỷ thứ nhất, những người chống đối cố khiến môn đồ Chúa Giê-su ngưng rao giảng. Những '
                    'tín đồ thời ấy đã bênh vực quyền của mình qua việc “tìm cách hợp pháp hóa quyền rao giảng tin '
-                   'mừng” (Phi-líp 1:7). Ngày nay, Nhân Chứng Giê-hô-va cũng làm thế. a',
+                   'mừng” (Phi-líp 1:7). Ngày nay, Nhân Chứng Giê-hô-va cũng làm thế.',
              'zh': '在1世紀，有些人試圖阻止耶穌的門徒傳道。當時的基督徒採取行動，「通過法律途徑確立傳好消息的權利」。（腓立比書1:7）今天耶和華見證人也這樣做。 a'},
             {'en': 'Read Acts 5:27-42, and then discuss this question:',
              'ja': '使徒 5章27-42節 を読んで， 次のことを考えましょう。',
@@ -5322,7 +5322,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    'thương ngài. Khi đó, hẳn bạn sẽ muốn rao giảng về ngài và sống theo tiêu chuẩn của ngài (2 '
                    'Ti-mô-thê 4:2; 1 Giăng 5:3). Khi một người “sống xứng đáng với Đức Giê-hô-va để làm ngài vui '
                    'lòng trọn vẹn”, rất có thể người ấy sẽ muốn dâng đời sống cho ngài và báp-têm. — Cô-lô-se 1:9, '
-                   '10. a',
+                   '10.',
              'zh': '你學習關於耶和華的知識，培養對他的信心，就能為受浸做好準備。（請讀 '
                    '希伯來書11:6）你學到的知識越多、信心越強，對耶和華的愛也就越深。這樣你就會渴望告訴人關於耶和華的事，並且按照他的標準生活。（提摩太後書4:2； 約翰一書5:3）如果你行事為人 '
                    '「對得起耶和華，事事讓他喜悅」，這時你就可以考慮獻身給上帝並且受浸。（歌羅西書1:9,10） a'},
@@ -5759,7 +5759,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    '21:3，4 を読む。）',
              'ko': '현재 우리의 상황은 그와는 전혀 다릅니다. a 하지만 하느님의 목적은 변하지 않았습니다. (이사야 46:10, 11) 여전히 그분은 자신에게 순종하는 사람들이 완벽한 '
                    '환경에서 영원히 살기를 바라십니다. — 요한 계시록 21:3, 4 을 읽어 보세요.',
-             'vi': 'Dù mọi việc không diễn ra đúng như thế a nhưng ý định của Đức Chúa Trời vẫn không thay đổi '
+             'vi': 'Dù mọi việc không diễn ra đúng như thế nhưng ý định của Đức Chúa Trời vẫn không thay đổi '
                    '(Ê-sai 46:10, 11). Ngài vẫn muốn những người biết vâng lời sống mãi mãi trong tình trạng hoàn '
                    'hảo. —Đọc Khải huyền 21:3, 4.',
              'zh': '然而，現在我們的生活不是這樣 a，但上帝的旨意並沒有改變。（以賽亞書46:10,11）他仍然希望所有順服他的人都能在完美的狀態下永遠活下去。（請讀 啟示錄21:3,4）'},
@@ -6171,7 +6171,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    '있는 권리를 기꺼이 포기하심으로, 우리에게 아담과 하와가 잃어버린 모든 것을 되찾을 수 있는 길을 열어 주셨습니다. 또한 그렇게 하심으로 자신과 여호와께서 우리를 매우 '
                    '사랑하신다는 점을 보여 주셨습니다. 이 과를 살펴보면 예수의 희생에 감사하는 마음이 커지게 될 것입니다.',
              'vi': 'Tội lỗi, đau khổ và sự chết trong nhân loại là do cặp vợ chồng đầu tiên, A-đam và Ê-va, đã cãi '
-                   'lời Đức Chúa Trời. a Nhưng tình cảnh của chúng ta không vô vọng. Đức Giê-hô-va đã cung cấp một '
+                   'lời Đức Chúa Trời. Nhưng tình cảnh của chúng ta không vô vọng. Đức Giê-hô-va đã cung cấp một '
                    'giải pháp để cứu chúng ta khỏi tội lỗi và sự chết qua Con ngài là Chúa Giê-su Ki-tô. Kinh Thánh '
                    'cho biết Chúa Giê-su đã hy sinh mạng sống để làm giá chuộc. Giá chuộc là giá phải trả để giải '
                    'thoát một người. Chúa Giê-su đã trả giá chuộc bằng giá trị mạng sống hoàn hảo của ngài. (Đọc '
@@ -7261,7 +7261,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
             {'en': 'What do you think the world will be like when everyone follows God’s rules of conduct? a',
              'ja': '神が定めたルールをみんなが守れば，世界はどうなると思いますか。 a',
              'ko': '만일 모든 사람이 행실에 관한 하느님의 법을 따른다면 세상이 어떻게 달라질 것 같습니까? a',
-             'vi': 'Bạn nghĩ thế giới sẽ như thế nào khi mọi người đều sống theo những điều luật về đạo đức a của '
+             'vi': 'Bạn nghĩ thế giới sẽ như thế nào khi mọi người đều sống theo những điều luật về đạo đức của '
                    'Đức Chúa Trời?',
              'zh': '如果人人都遵守上帝制定的行為準則，你認為這個世界會是怎樣的？ a'},
             {'en': 'Do you think it is reasonable for Jehovah to expect citizens of the Kingdom to respect these '
@@ -7418,7 +7418,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    '적용된다는 것을 알 수 있습니다. — 다니엘 4:17 을 읽어 보세요. a',
              'vi': 'Đức Chúa Trời khiến vua Nê-bu-cát-nết-xa của nước Ba-by-lôn xưa có giấc mơ mang ý nghĩa tiên '
                    'tri. Giấc mơ ấy cùng lời giải nghĩa của Đa-ni-ên cho thấy giấc mơ nói về cả quyền cai trị của '
-                   'Nê-bu-cát-nết-xa và Nước Trời. — Đọc Đa-ni-ên 4:17. a',
+                   'Nê-bu-cát-nết-xa và Nước Trời. — Đọc Đa-ni-ên 4:17.',
              'zh': '上帝讓古代的巴比倫王尼布甲尼撒做了一個夢，在夢裡透露將來發生的事。我們看看這個夢的內容和但以理的解釋，就會知道這個夢不但跟尼布甲尼撒的統治權有關，也跟上帝的王國有關。 （請讀 '
                    '但以理書4:17） a'},
             {'en': 'Read Daniel 4:20-26, and then use the chart to answer the following questions:',
@@ -9119,7 +9119,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    'Trời soi dẫn, một người thờ phượng ngài là Đa-vít thưa với ngài rằng: “Mắt ngài đã thấy khi con '
                    'mới là phôi thai” (Thi thiên 139:16). Sự sống của bạn rất quý giá với Đức Giê-hô-va. (Đọc '
                    'Ma-thi-ơ 10:29-31). Ngài sẽ vô cùng đau lòng nếu một người cố tình lấy đi mạng sống của người '
-                   'khác, thậm chí của chính mình a (Xuất Ai Cập 20:13). Đức Giê-hô-va cũng sẽ đau lòng nếu chúng ta '
+                   'khác, thậm chí của chính mình (Xuất Ai Cập 20:13). Đức Giê-hô-va cũng sẽ đau lòng nếu chúng ta '
                    'đặt mình vào tình huống nguy hiểm một cách không cần thiết hoặc không thận trọng và gây nguy hại '
                    'cho tính mạng của người khác. Khi giữ gìn sự sống của mình và tôn trọng sự sống của người khác, '
                    'chúng ta cho thấy mình quý trọng món quà kỳ diệu là sự sống.',
@@ -9348,7 +9348,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    'luật pháp Đức Chúa Trời hay không, chẳng hạn như phương pháp sử dụng các chất chiết xuất từ một '
                    'trong bốn thành phần chính của máu hoặc phương pháp dùng chính máu của một người. Khi cân nhắc '
                    'những phương pháp không rõ là có vi phạm luật pháp Đức Chúa Trời hay không, mỗi chúng ta phải tự '
-                   'quyết định. a — Ga-la-ti 6:5.',
+                   'quyết định. — Ga-la-ti 6:5.',
              'zh': '如果是因為醫療的原因使用血又怎樣呢？一些醫療措施很明顯違反了上帝的法律，這包括輸全血或輸入血液的任何一種主要成分（紅細胞、白細胞、血小板、血漿）。 a '
                    '但有些醫療措施我們很難明確判斷是否違反了上帝的法律。例如，一些醫療措施涉及使用血液提取物，也就是從血液主要成分中提取出來的物質；還有一些醫療措施涉及使用病人自己的血液。關於要不要接受這些醫療措施，每個人都必須仔細考慮，然後自己做決定。 '
                    'b （加拉太書6:5）'},
@@ -9851,7 +9851,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    '하는 성행위)이 포함됩니다. 우리가 “성적 부도덕을 멀리”할 때 여호와께서 기뻐하시고 우리 자신도 유익을 얻을 수 있습니다. — 데살로니가 전서 4:3.',
              'vi': 'Kinh Thánh nói rằng “những kẻ gian dâm... sẽ chẳng được thừa hưởng Nước Đức Chúa Trời” (1 '
                    'Cô-rinh-tô 6:9, 10). Những người viết Kinh Thánh trong tiếng Hy Lạp dùng từ por·neiʹa để miêu tả '
-                   'sự gian dâm. Từ này nói đến (1) quan hệ tình dục ngoài vòng hôn nhân, a (2) đồng tính luyến ái '
+                   'sự gian dâm. Từ này nói đến (1) quan hệ tình dục ngoài vòng hôn nhân, (2) đồng tính luyến ái '
                    'và (3) giao cấu với thú vật. Khi “tránh khỏi sự gian dâm”, chúng ta làm vui lòng Đức Giê-hô-va '
                    'và chính mình được lợi ích. — 1 Tê-sa-lô-ni-ca 4:3.',
              'zh': '聖經說， '
@@ -10097,7 +10097,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
              'vi': 'Khi thiết lập hôn nhân đầu tiên, Đức Giê-hô-va phán: “Người nam sẽ rời cha mẹ và gắn bó với vợ '
                    'mình” (Sáng thế 2:24). Đức Giê-hô-va muốn vợ chồng yêu thương và gắn bó với nhau bao lâu họ còn '
                    'sống. Ngài chỉ cho phép ly dị khi một trong hai người phạm tội ngoại tình. Trong trường hợp đó, '
-                   'Đức Giê-hô-va cho người hôn phối vô tội quyền quyết định có ly dị hay không a (Ma-thi-ơ 19:9). '
+                   'Đức Giê-hô-va cho người hôn phối vô tội quyền quyết định có ly dị hay không (Ma-thi-ơ 19:9). '
                    'Đức Giê-hô-va không cho phép tín đồ đạo Đấng Ki-tô có nhiều hơn một người hôn phối. — 1 '
                    'Ti-mô-thê 3:2.',
              'zh': '耶和華在創立婚姻安排時說： 「人要離開父母，與妻子長相廝守。」 '
@@ -10504,7 +10504,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
              'ko': '손을 잘라 버린다는 것은 여호와를 기쁘시게 해 드리기 위해 무언가를 희생하는 것을 의미합니다. 당신이 과음하는 습관을 극복하지 못해 어려움을 겪고 있다면 어떻게 할 수 '
                    '있습니까? a',
              'vi': 'Minh họa về việc chặt tay cho thấy chúng ta cần phải từ bỏ một số điều để làm vui lòng Đức '
-                   'Giê-hô-va. Bạn có thể làm gì nếu đang tranh đấu để thoát khỏi xiềng xích của rượu bia? a',
+                   'Giê-hô-va. Bạn có thể làm gì nếu đang tranh đấu để thoát khỏi xiềng xích của rượu bia?',
              'zh': '經文中砍下一隻手的意思是，為了讓耶和華高興我們要作出一些犧牲。如果你正在努力戒酒，可以怎麼做？ a'},
             {'en': 'Read 1 Corinthians 15:33, and then discuss this question:',
              'ja': 'コリント第一 15章33節 を読んで， 次のことを考えましょう。',
@@ -10585,7 +10585,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    'hoặc bắt nguồn từ ngoại giáo. Chúng có thể dính líu đến tôn giáo sai lầm, liên quan đến ma thuật '
                    'hoặc dựa trên quan niệm về linh hồn bất tử. Một số lễ và dịp ăn mừng thì bắt nguồn từ sự mê tín '
                    'hoặc niềm tin vào vận may (Ê-sai 65:11). Đức Giê-hô-va cảnh báo những người thờ phượng ngài: '
-                   '“[Hãy] tách biệt... đừng động đến đồ ô uế nữa”. — 2 Cô-rinh-tô 6:17. a',
+                   '“[Hãy] tách biệt... đừng động đến đồ ô uế nữa”. — 2 Cô-rinh-tô 6:17.',
              'zh': '你可能沒想過，很多慶祝活動其實違反聖經的道理或源於錯誤的宗教。比如，有些慶祝活動跟通靈有關或基於人有靈魂這個錯誤觀念，有些慶祝活動是為了趨吉避凶，有些則充滿迷信色彩。（以賽亞書65:11）耶和華提醒崇拜他的人， '
                    '「不要再接觸不潔的東西」。（哥林多後書6:17） a'},
             {'en': '2. How does Jehovah feel about celebrations that give undue honor to humans?',
@@ -12245,7 +12245,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
             {'en': 'Why should a parent never discipline his children when he is angry? a',
              'ja': '親が怒りに任せて子供を叱るべきでないのはどうしてですか。',
              'ko': '부모가 화가 난 상태에서 자녀를 징계해서는 안 되는 이유는 무엇입니까? a',
-             'vi': 'Tại sao cha mẹ không bao giờ nên sửa dạy con trong lúc nóng giận? a',
+             'vi': 'Tại sao cha mẹ không bao giờ nên sửa dạy con trong lúc nóng giận?',
              'zh': '為什麼父母絕不該在生氣的時候管教孩子？ a'},
             {'en': '5. Protect your children',
              'ja': '5. 子供を守る',
@@ -13601,7 +13601,7 @@ LFF_CONVERSATIONS = [{'id': '1102021201',
                    'như thế nào? Hãy tìm điểm tốt nơi người khác, chứ không tập trung vào thiếu sót của họ. Đừng chỉ '
                    'kết hợp với những người có cùng sở thích, nhưng cũng hãy làm bạn với những anh chị có gốc gác '
                    'hoặc hoàn cảnh khác với mình. Ngoài ra, chúng ta cũng nên cố gắng loại bỏ bất cứ thành kiến nào '
-                   'mình có trong lòng. —Đọc 1 Phi-e-rơ 2:17. a',
+                   'mình có trong lòng. —Đọc 1 Phi-e-rơ 2:17.',
              'zh': '聖經吩咐我們： 「要從心裡熱切地彼此相愛。」 '
                    '（彼得前書1:22）我們可以怎樣實踐出來呢？要經常想想別人好的地方，不要總盯著別人的缺點。試著盡力認識不同背景的弟兄姐妹，而不是只跟有相同興趣愛好的人在一起。我們也可以努力消除對別人的偏見。（請讀 '
                    '彼得前書2:17） a'},

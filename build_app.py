@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 from site_profiles import (JW_ONLY_CONSTS, STRUCTURED_EMPTY_SHAPES, RELIGIOUS_FILTER_TERMS,
                             GENERAL_CONSTS_NEEDING_ENTRY_FILTER)
 from pronunciation_data import (TONES, ALPHABET, ALPHABET_NOTE, CONSONANTS_SIMPLE,
@@ -47,7 +48,7 @@ vocab_theo = json.load(open("vocab_theo.json", encoding="utf-8"))
 freq_vocab = json.load(open("freq_vocab.json", encoding="utf-8"))
 enjoy_life_forever_raw = json.load(open("enjoy_life_forever_data.json", encoding="utf-8"))
 
-ELF_LANG_ORDER = ["vi", "ko", "zh", "en", "ja", "de", "fr", "pl", "cs", "hu", "zh_cn", "id"]
+ELF_LANG_ORDER = ["vi", "cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko", "pl"]
 
 def build_enjoy_life_forever(raw):
     """Converts the raw Excel-derived {sheet, rows} list into the richer
@@ -103,6 +104,9 @@ def build_enjoy_life_forever(raw):
             "vi": "Tiếng Việt", "ko": "한국어", "zh": "中文繁體", "en": "English", "ja": "日本語",
             "de": "Deutsch", "fr": "Français", "pl": "Polski", "cs": "Čeština", "hu": "Magyar",
             "zh_cn": "中文简体", "id": "Bahasa Indonesia",
+            "vi": "Tiếng Việt", "cs": "Čeština", "zh_cn": "中文简体", "zh": "中文繁體", "en": "English",
+            "fr": "Français", "de": "Deutsch", "hu": "Magyar", "id": "Bahasa Indonesia", "ja": "日本語",
+            "ko": "한국어", "pl": "Polski",
         },
         "unitCount": len(units),
         "alignmentRule": "Excel의 동일 행을 12개 언어의 대응 행으로 그대로 보존합니다. 번역/재작성/외부 자료 추가 없음.",
@@ -118,6 +122,9 @@ ELF_LANGUAGE_NAMES = {
     "vi": "Tiếng Việt", "ko": "한국어", "zh": "中文繁體", "en": "English", "ja": "日本語",
     "de": "Deutsch", "fr": "Français", "pl": "Polski", "cs": "Čeština", "hu": "Magyar",
     "zh_cn": "中文简体", "id": "Bahasa Indonesia",
+    "vi": "Tiếng Việt", "cs": "Čeština", "zh_cn": "中文简体", "zh": "中文繁體", "en": "English",
+    "fr": "Français", "de": "Deutsch", "hu": "Magyar", "id": "Bahasa Indonesia", "ja": "日本語",
+    "ko": "한국어", "pl": "Polski",
 }
 
 def build_love_people_full(raw):
@@ -188,6 +195,13 @@ def build_watchtower_full(raw):
 
 love_people_full_data = build_love_people_full(love_people_raw)
 watchtower_full_data = build_watchtower_full(watchtower_study_raw)
+
+jw_extraction_data_path = os.path.join(os.path.dirname(__file__), "jw_extraction", "data", "derived_jw_data.json")
+if os.path.exists(jw_extraction_data_path):
+    with open(jw_extraction_data_path, "r", encoding="utf-8") as f:
+        jw_extraction_data = json.load(f)
+else:
+    jw_extraction_data = None
 
 def js_json(obj):
     return json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
@@ -363,6 +377,7 @@ def build_data_js(site):
     parts.append(emit("UNIFIED_WORDS", unified_words))
     parts.append(emit("GRAMMAR_A1_A2_PATTERNS", GRAMMAR_A1_A2_PATTERNS))
     parts.append(emit("GRAMMAR_B1_B2_PATTERNS", GRAMMAR_B1_B2_PATTERNS))
+    parts.append(emit("JW_EXTRACTION_DATA", jw_extraction_data))
 
     if site == "jeonju":
         from jeonju_data import JEONJU_INFO, JEONJU_WEEKS
@@ -389,18 +404,20 @@ if __name__ == "__main__":
     parser.add_argument("--product", choices=list(PRODUCTS.keys()), default="vietnamese",
                          help="Learning-content language/product (only 'vietnamese' is implemented; "
                               "see site_profiles.PRODUCTS for architecture-ready placeholders).")
-    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju"], default="jw",
-                         help="Content profile to build: general | jw | jeonju (the vietnamese "
+    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju", "all"], default="all",
+                         help="Content profile to build: general | jw | jeonju | all (the vietnamese "
                               "product's event profile). --site is kept as an alias for --profile "
-                              "for backward compatibility; default jw preserves prior behavior.")
+                              "for backward compatibility; default all builds all profiles.")
     args = parser.parse_args()
 
     if args.product != "vietnamese":
         raise SystemExit(f"--product {args.product!r} is architecture-ready only; no data/content "
                           f"exists for it in this repo (see site_profiles.PRODUCTS).")
 
-    data_js = build_data_js(args.site)
-    out_name = "data_block.js" if args.site == "jw" else f"data_block.{args.site}.js"
-    open(out_name, "w", encoding="utf-8").write(data_js)
-    print(f"[{args.product}/{args.site}] data block bytes:", len(data_js), "->", out_name)
+    sites = ["general", "jw", "jeonju"] if args.site == "all" else [args.site]
+    for s in sites:
+        data_js = build_data_js(s)
+        out_name = "data_block.js" if s == "jw" else f"data_block.{s}.js"
+        open(out_name, "w", encoding="utf-8").write(data_js)
+        print(f"[{args.product}/{s}] data block bytes:", len(data_js), "->", out_name)
 

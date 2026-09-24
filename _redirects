@@ -1,12 +1,17 @@
 # Serve the single-page app for the language entry points, keeping the URL intact
-# (200 = rewrite, not a redirect) so /ko, /en, /zt, /ja load directly into that
+# (200 = rewrite, not a redirect) so language paths load directly into that
 # language mode instead of 404ing. See PATH_LANG_MAP in app_logic.js.
-/ko    /index.html   200
-/en    /index.html   200
-/zt    /index.html   200
-/ja    /index.html   200
-/de    /index.html   200
-/fr    /index.html   200
-/pl    /index.html   200
+/vi    /index.html   200
 /cs    /index.html   200
+/zh_cn /index.html   200
+/cn    /index.html   200
+/zh    /index.html   200
+/zt    /index.html   200
+/en    /index.html   200
+/fr    /index.html   200
+/de    /index.html   200
 /hu    /index.html   200
+/id    /index.html   200
+/ja    /index.html   200
+/ko    /index.html   200
+/pl    /index.html   200

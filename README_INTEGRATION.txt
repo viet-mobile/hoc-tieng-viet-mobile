@@ -10,6 +10,9 @@ Authoritative source files:
 Language mapping:
 A vi, B ko, C zh (Traditional Chinese), D en, E ja, F de,
 G fr, H pl, I cs, J hu, K zh_cn (Simplified Chinese), L id.
+A vi (Vietnamese), B cs (Czech), C zh_cn (Simplified Chinese), D zh (Traditional Chinese),
+E en (English), F fr (French), G de (German), H hu (Hungarian),
+I id (Indonesian), J ja (Japanese), K ko (Korean), L pl (Polish).
 
 Important:
 - Preserve blank cells exactly as supplied; do not auto-fill or translate them.

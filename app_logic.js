@@ -11,7 +11,7 @@
   // No I18N_UI dictionary entries or content-data cs/hu fields have been added yet -- until they
   // are, cs/hu mode falls back to Korean throughout the app via T()/TU()'s existing fallback
   // chains, exactly like a not-yet-translated field does in any other language mode.
-  var VALID_LANGS = ["ko", "zh", "en", "ja", "de", "fr", "pl", "cs", "hu"];
+  var VALID_LANGS = ["vi", "cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko", "pl"];
   // With no saved preference yet (first visit, or localStorage unavailable), use the
   // device/browser's system language: Korean -> ko, Chinese -> zh, Japanese -> ja, German -> de,
   // French -> fr, Polish -> pl, Czech -> cs, Hungarian -> hu, and English plus every other
@@ -22,21 +22,42 @@
         (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage || ""
       ).toLowerCase();
       var languageCode = navLang.split(/[-_]/)[0];
-      if (languageCode === "ko") return "ko";
-      if (languageCode === "zh") return "zh";
-      if (languageCode === "ja") return "ja";
-      if (languageCode === "de") return "de";
-      if (languageCode === "fr") return "fr";
-      if (languageCode === "pl") return "pl";
+      if (languageCode === "vi") return "vi";
       if (languageCode === "cs") return "cs";
+      if (languageCode === "zh") {
+        if (/-(cn|hans|sg)/i.test(navLang)) return "zh_cn";
+        return "zh";
+      }
+      if (languageCode === "en") return "en";
+      if (languageCode === "fr") return "fr";
+      if (languageCode === "de") return "de";
       if (languageCode === "hu") return "hu";
+      if (languageCode === "id") return "id";
+      if (languageCode === "ja") return "ja";
+      if (languageCode === "ko") return "ko";
+      if (languageCode === "pl") return "pl";
     } catch (e) { /* no-op: navigator unavailable */ }
     return "en";
   }
   // A first path segment of /ko, /en, /zt, /ja, /de, /fr, /pl, /cs, or /hu (see _redirects, which
   // rewrites each of these paths to this same page) picks the language mode directly, ahead of
   // any saved preference -- this is what lets hoc.tieng.viet.mobile/ko etc. work as direct entry points.
-  var PATH_LANG_MAP = { ko: "ko", en: "en", zt: "zh", ja: "ja", de: "de", fr: "fr", pl: "pl", cs: "cs", hu: "hu" };
+  var PATH_LANG_MAP = {
+    vi: "vi",
+    cs: "cs",
+    zh_cn: "zh_cn",
+    cn: "zh_cn",
+    zh: "zh",
+    zt: "zh",
+    en: "en",
+    fr: "fr",
+    de: "de",
+    hu: "hu",
+    id: "id",
+    ja: "ja",
+    ko: "ko",
+    pl: "pl"
+  };
   function detectLangFromPath() {
     try {
       var seg = (String(window.location.pathname || "").split("/")[1] || "").toLowerCase();
@@ -58,16 +79,22 @@
   // Browser-tab title per language (same wording as the "베트남어 학습반" I18N_UI entry below) --
   // kept as its own small map, rather than reading I18N_UI, so it's available before I18N_UI is
   // defined and so document.title can be set immediately, before the rest of the app boots.
-  var TITLE_BY_LANG = {
-    ko: "베트남어 학습반",
-    zh: "越南語學習班",
-    en: "Vietnamese Language Course",
-    ja: "ベトナム語訓練コース",
-    de: "Vietnamesisch-Sprachkurs",
-    fr: "Cours de vietnamien",
-    pl: "Kurs języka wietnamskiego",
-    cs: "Kurz vietnamštiny",
-    hu: "Vietnami nyelvtanfolyam"
+  // SITE_TITLE_BY_LANG (assemble_app.py's build_site_identity_prelude, defined just above this
+  // script when present) overrides this per-site -- e.g. JW's own "JW 베트남어 학습" wording --
+  // so the browser-tab title tracks the site actually being served, not just the shared default.
+  var TITLE_BY_LANG = typeof SITE_TITLE_BY_LANG !== "undefined" ? SITE_TITLE_BY_LANG : {
+    vi: "Học tiếng Việt",
+    cs: "Studium vietnamštiny",
+    zh_cn: "越南语学习",
+    zh: "越南語學習",
+    en: "Vietnamese Learning",
+    fr: "Apprentissage du vietnamien",
+    de: "Vietnamesisch lernen",
+    hu: "Vietnami nyelvtanulás",
+    id: "Belajar Bahasa Vietnam",
+    ja: "ベトナム語学習",
+    ko: "베트남어 학습",
+    pl: "Nauka wietnamskiego"
   };
   try { document.title = TITLE_BY_LANG[currentLang] || document.title; } catch (e) { /* no-op */ }
   // Languages added after most curated (non-Excel-full) datasets were authored -- those datasets
@@ -77,7 +104,7 @@
   // missing a single field within an otherwise-covered object, e.g. some LFF_CONVERSATIONS
   // lines), since that gap is a real, isolated content omission rather than "this language was
   // never supported here."
-  var T_EXTENDED_LANGS_NO_FALLBACK = ["de", "fr", "pl", "cs", "hu"];
+  var T_EXTENDED_LANGS_NO_FALLBACK = ["vi", "cs", "zh_cn", "fr", "de", "hu", "id", "pl"];
   function T(field) {
     if (field === null || field === undefined) return field;
     if (typeof field === "string") return field;
@@ -87,7 +114,7 @@
     var v = field[currentLang];
     if (v !== undefined) return v || "";
     if (T_EXTENDED_LANGS_NO_FALLBACK.indexOf(currentLang) >= 0) return "";
-    return field.ko || field.zh || field.en || field.ja || field.de || field.fr || field.pl || field.cs || field.hu || "";
+    return field.ko || field.cs || field.zh_cn || field.zh || field.en || field.fr || field.de || field.hu || field.id || field.ja || field.pl || "";
   }
   // T()'s graceful Korean fallback is exactly right for CONTENT DISPLAY (an untranslated field
   // should still show something rather than go blank), but it's wrong for review pools: a field
@@ -108,7 +135,7 @@
   function Tstrict(field) {
     if (field === null || field === undefined) return null;
     if (typeof field === "string") return currentLang === "ko" ? field : null;
-    if (currentLang === "ko") return field.ko || field.zh || field.en || field.ja || field.de || field.fr || field.pl || field.cs || field.hu || null;
+    if (currentLang === "ko") return field.ko || field.cs || field.zh_cn || field.zh || field.en || field.fr || field.de || field.hu || field.id || field.ja || field.pl || null;
     return field[currentLang] || null;
   }
   var LANG_CHANGE_LISTENERS = [];
@@ -117,7 +144,7 @@
     if (VALID_LANGS.indexOf(lang) < 0) return;
     currentLang = lang;
     try { window.localStorage && window.localStorage.setItem("vn-app-lang", lang); } catch (e) { /* no-op */ }
-    var htmlLang = lang === "ko" ? "ko" : lang === "zh" ? "zh-Hant" : lang === "ja" ? "ja" : lang === "de" ? "de" : lang === "fr" ? "fr" : lang === "pl" ? "pl" : lang === "cs" ? "cs" : lang === "hu" ? "hu" : "en";
+    var htmlLang = lang === "vi" ? "vi" : lang === "cs" ? "cs" : lang === "zh_cn" ? "zh-Hans" : lang === "zh" ? "zh-Hant" : lang === "en" ? "en" : lang === "fr" ? "fr" : lang === "de" ? "de" : lang === "hu" ? "hu" : lang === "id" ? "id" : lang === "ja" ? "ja" : lang === "ko" ? "ko" : lang === "pl" ? "pl" : "en";
     document.documentElement.setAttribute("lang", htmlLang);
     if (document.body) document.body.setAttribute("data-app-lang", lang);
     try { document.title = TITLE_BY_LANG[lang] || document.title; } catch (e) { /* no-op */ }
@@ -167,3459 +194,522 @@
   // back to returning the Korean unchanged, same "never breaks, just shows Korean until
   // translated" philosophy as T() above -- this lets translation coverage grow incrementally.
   var I18N_UI = {
-  "이전 곡": {
-    "zh": "上一首",
-    "en": "Previous Song",
-    "ja": "前の曲",
-    "de": "Vorheriges Lied",
-    "fr": "Chant précédent",
-    "pl": "Poprzednia pieśń"
-  },
-  "다음 곡": {
-    "zh": "下一首",
-    "en": "Next Song",
-    "ja": "次の曲",
-    "de": "Nächstes Lied",
-    "fr": "Chant suivant",
-    "pl": "Następna pieśń"
-  },
-  "방향 전환": {
-    "zh": "切換方向",
-    "en": "Switch Direction",
-    "ja": "方向切替",
-    "de": "Richtung wechseln",
-    "fr": "Inverser la direction",
-    "pl": "Zmień kierunek"
-  },
-  "의미": {"zh":"意思","en":"Meaning","ja":"意味","de":"Bedeutung","fr":"Sens","pl":"Znaczenie"},
-  "눌러서 베트남어 보기": {
-    "zh": "點擊查看越南語",
-    "en": "Tap to see Vietnamese",
-    "ja": "タップしてベトナム語を見る",
-    "de": "Tippen für Vietnamesisch",
-    "fr": "Appuyer pour voir le vietnamien",
-    "pl": "Dotknij, aby zobaczyć wietnamski"
-  },
-  "전체 듣기": {
-    "zh": "全部播放",
-    "en": "Play all",
-    "ja": "すべて再生",
-    "de": "Alles abspielen",
-    "fr": "Tout écouter",
-    "pl": "Odtwórz wszystko"
-  },
-  "정지": {"zh":"停止","en":"Stop","ja":"停止","de":"Stopp","fr":"Arrêter","pl":"Zatrzymaj"},
-  "자동 넘김": {
-    "zh": "自動切換",
-    "en": "Auto-play",
-    "ja": "自動送り",
-    "de": "Automatisch weiter",
-    "fr": "Défilement auto",
-    "pl": "Automatyczne przewijanie"
-  },
-  "정답 시 다음 문제": {
-    "zh": "答對後下一題",
-    "en": "Next question when correct",
-    "ja": "正解で次の問題",
-    "de": "Bei richtiger Antwort weiter",
-    "fr": "Question suivante si correct",
-    "pl": "Następne pytanie po poprawnej odpowiedzi"
-  },
-  "반복 듣기": {
-    "zh": "重複播放",
-    "en": "Repeat",
-    "ja": "繰り返し再生",
-    "de": "Wiederholen",
-    "fr": "Répéter l'écoute",
-    "pl": "Powtarzaj odtwarzanie"
-  },
-  "묵음": {"zh":"靜音","en":"Mute","ja":"ミュート","de":"Stumm","fr":"Muet","pl":"Wyciszenie"},
-  "첫만남": {
-    "zh": "初次見面",
-    "en": "First Meeting",
-    "ja": "初対面",
-    "de": "Erstes Gespräch",
-    "fr": "Premier contact",
-    "pl": "Pierwsza rozmowa"
-  },
-  "다음 문제": {
-    "zh": "下一題",
-    "en": "Next question",
-    "ja": "次の問題",
-    "de": "Nächste Frage",
-    "fr": "Question suivante",
-    "pl": "Następne pytanie"
-  },
-  "파수대 주차 선택": {
-    "zh": "選擇守望台週次",
-    "en": "Select Watchtower Week",
-    "ja": "ものみの塔の週を選択",
-    "de": "Wachtturm-Woche wählen",
-    "fr": "Choisir la semaine de La Tour de Garde",
-    "pl": "Wybierz tydzień Strażnicy"
-  },
-  "주차": {"zh":"週","en":"Week","ja":"週目","fr":"Semaine","pl":"Tydzień"},
-  "초": {"zh":"秒","en":"s","ja":"秒","de":"s","fr":"s","pl":"s"},
-  "회": {"zh":"次","en":"time","ja":"回","de":"Mal","fr":"fois","pl":"razy"},
-  "베트남어 반복 듣기 횟수": {
-    "zh": "越南語重複播放次數",
-    "en": "Vietnamese repeat count",
-    "ja": "ベトナム語の繰り返し再生回数",
-    "de": "Wiederholungen des vietnamesischen Audios",
-    "fr": "Nombre de répétitions audio en vietnamien",
-    "pl": "Liczba powtórzeń nagrania wietnamskiego"
-  },
-  "발음 듣기 버튼을 누르면 베트남어를 몇 번 반복해서 들려줄지 선택하세요.": {
-    "zh": "選擇按下發音按鈕時，越南語要重複播放幾次。",
-    "en": "Choose how many times Vietnamese audio repeats each time you press a listen button.",
-    "ja": "発音を聞くボタンを押したときに、ベトナム語を何回繰り返して再生するか選んでください。",
-    "de": "Wählen Sie, wie oft das vietnamesische Audio beim Tippen auf die Audio-Schaltfläche wiederholt werden soll.",
-    "fr": "Choisissez combien de fois répéter l'audio vietnamien lorsque vous appuyez sur le bouton d'écoute.",
-    "pl": "Wybierz, ile razy ma być powtórzone nagranie wietnamskie po naciśnięciu przycisku odsłuchu."
-  },
-  "베트남어 성조 ↔ 중국어(표준중국어) 성조 대응": {
-    "zh": "越南語聲調 ↔ 中文（普通話）聲調對應",
-    "en": "Vietnamese Tone ↔ Mandarin Chinese Tone Correspondence",
-    "ja": "ベトナム語の声調 ↔ 中国語（普通話）の声調対応",
-    "de": "Vietnamesische Töne ↔ Mandarin-Töne Entsprechung",
-    "fr": "Correspondance des tons : vietnamien ↔ mandarin standard",
-    "pl": "Odpowiedniość tonów: wietnamski ↔ standardowy mandaryński"
-  },
-  "위의 한자음 전체 어휘에서, 베트남어 성조와 그에 대응하는 한자의 표준중국어(보통화) 성조 조합을 추출해 분류했어요. 같은 베트남어 성조라도 한자의 옛 중국어 성모(자음의 청탁)에 따라 표준중국어 성조가 갈리는 경우가 있어요.": {
-    "zh": "從以上漢字音的全部詞彙中，擷取並分類了越南語聲調與對應漢字的標準中文（普通話）聲調組合。即使是相同的越南語聲調，也會因該漢字古漢語聲母的清濁不同，而對應到不同的普通話聲調。",
-    "en": "This extracts and categorizes, from every word in the Sino-Vietnamese readings above, the pairing of each Vietnamese tone with the Standard Mandarin (Putonghua) tone of its corresponding hanzi. Even the same Vietnamese tone can correspond to different Mandarin tones, depending on whether the character's Old Chinese initial consonant was voiced or voiceless.",
-    "ja": "上の漢字音の全語彙から、ベトナム語の声調とそれに対応する漢字の標準中国語（普通話）の声調の組み合わせを抽出し、分類しました。同じベトナム語の声調でも、その漢字の古い中国語の声母（子音の清濁）によって、対応する普通話の声調が異なる場合があります。",
-    "de": "Hier werden aus allen obigen sino-vietnamesischen Wörtern die Kombinationen aus vietnamesischem Ton und dem entsprechenden Mandarin-Ton des Schriftzeichens extrahiert und kategorisiert. Selbst beim gleichen vietnamesischen Ton kann der Mandarin-Ton je nach Stimmhaftigkeit des altchinesischen Anlauts variieren.",
-    "fr": "Cette section extrait et catégorise, à partir de tous les mots sino-vietnamiens ci-dessus, les combinaisons entre chaque ton vietnamien et le ton mandarin correspondant du sinogramme. Pour un même ton vietnamien, le ton mandarin peut varier selon le voisement de la consonne initiale en chinois archaïque.",
-    "pl": "Ta sekcja wyodrębnia i kategoryzuje powiązania między każdym tonem wietnamskim a odpowiadającym mu tonem mandaryńskim ze wszystkich powyższych słów sino-wietnamskich. Nawet przy tym samym tonie wietnamskim ton mandaryński może się różnić w zależności od dźwięczności spółgłoski w języku starochińskim."
-  },
-  "이 어휘 목록에는 해당하는 사례가 아직 없어요.": {
-    "zh": "這份詞彙表中目前還沒有符合的例子。",
-    "en": "There are no matching examples in this word list yet.",
-    "ja": "この語彙リストには、該当する例がまだありません。",
-    "de": "In dieser Wortliste gibt es noch keine passenden Beispiele.",
-    "fr": "Il n'y a pas encore d'exemple correspondant dans cette liste de vocabulaire.",
-    "pl": "Na tej liście słów nie ma jeszcze odpowiednich przykładów."
-  },
-  "개": {"zh":"個","en":"","ja":"個","de":"","fr":"","pl":""},
-  "베트남어 학습반": {
-    "zh": "越南語學習班",
-    "en": "Vietnamese Language Course",
-    "ja": "ベトナム語訓練コース",
-    "de": "Vietnamesisch-Sprachkurs",
-    "fr": "Cours de vietnamien",
-    "pl": "Kurs języka wietnamskiego"
-  },
-  "한국어": {"zh":"한국어","en":"한국어","ja":"한국어","de":"한국어","fr":"한국어","pl":"한국어"},
-  "교과": {"zh":"教材","en":"Curriculum","ja":"教材","de":"Lehrplan","fr":"Cours","pl":"Kurs"},
-  "발음": {
-    "zh": "發音",
-    "en": "Phonics",
-    "ja": "発音",
-    "de": "Aussprache",
-    "fr": "Prononciation",
-    "pl": "Wymowa"
-  },
-  "성경": {"zh":"聖經","en":"Bible","ja":"聖書","de":"Bibel","fr":"Bible","pl":"Biblia"},
-  // GENERAL's own top-level tab label override reuses the "숫자" key just below (already
-  // translated for the data-bible="numbers" subtab button) -- see assemble_app.py's
-  // apply_general_label_overrides(). JW/JEONJU keep the "성경" entry above unchanged.
-  //
-  // Jeonju event-layer UI strings (see renderJeonjuEvent()) -- only ever shown on the jeonju
-  // profile, where JEONJU_INFO/JEONJU_WEEKS exist.
-  "전주 학습반": {"zh":"全州越南語班","en":"Jeonju Class","ja":"チョンジュ学習班","de":"Jeonju-Kurs","fr":"Cours de Jeonju","pl":"Kurs w Jeonju","cs":"Kurz Jeonju","hu":"Jeonju tanfolyam"},
-  "자료 미정": {"zh":"教材待定","en":"Material TBD","ja":"資料未定","de":"Material noch offen","fr":"Contenu à venir","pl":"Materiał nieustalony","cs":"Materiál zatím neurčen","hu":"Anyag még nincs meghatározva"},
-  "대화": {"zh":"對話","en":"Talks","ja":"会話","de":"Dialog","fr":"Dialogue","pl":"Rozmowy"},
-  "어휘": {
-    "zh": "詞彙",
-    "en": "Words",
-    "ja": "語彙",
-    "de": "Wortschatz",
-    "fr": "Vocabulaire",
-    "pl": "Słownictwo"
-  },
-  "문장": {"zh":"句子","en":"Clauses","ja":"文","de":"Satz","fr":"Phrases","pl":"Zdania"},
-  "문법": {"zh":"文法","en":"Usage","ja":"文法","de":"Grammatik","fr":"Grammaire","pl":"Gramatyka"},
-  "복습": {"zh":"複習","en":"Review","ja":"復習","de":"Wiederholung","fr":"Révision","pl":"Powtórka"},
-  "예습": {"zh":"預習","en":"Preview","ja":"予習","de":"Vorschau","fr":"Aperçu","pl":"Zapowiedź"},
-  "주간 수행 과제": {
-    "zh": "每週學習作業",
-    "en": "Weekly Assignment",
-    "ja": "週間の課題",
-    "de": "Wöchentliche Aufgaben",
-    "fr": "Tâche hebdomadaire",
-    "pl": "Zadanie tygodniowe"
-  },
-  "시간": {"zh":"時間","en":"Time","ja":"時間","de":"Uhrzeit","fr":"Heure","pl":"Czas"},
-  "요일, 날짜": {
-    "zh": "星期、日期",
-    "en": "Days, Dates",
-    "ja": "曜日、日付",
-    "de": "Wochentage, Datum",
-    "fr": "Jours et dates",
-    "pl": "Dni i daty"
-  },
-  "달, 계절": {
-    "zh": "月份、季節",
-    "en": "Months, Seasons",
-    "ja": "月、季節",
-    "de": "Monate, Jahreszeiten",
-    "fr": "Mois et saisons",
-    "pl": "Miesiące i pory roku"
-  },
-  "시": {"zh":"點","en":"Hours","ja":"時","de":"Uhr","fr":"Heures","pl":"Godzina"},
-  "시간대": {
-    "zh": "時段",
-    "en": "Times of Day",
-    "ja": "時間帯",
-    "de": "Tageszeiten",
-    "fr": "Moments de la journée",
-    "pl": "Pory dnia"
-  },
-  "시간 표현 예시": {
-    "zh": "時間表達範例",
-    "en": "Time Expression Examples",
-    "ja": "時間表現の例",
-    "de": "Beispiele für Zeitangaben",
-    "fr": "Exemples d'expressions de temps",
-    "pl": "Przykłady określeń czasu"
-  },
-  "오늘 학습할 범위": {
-    "zh": "今天要學習的範圍",
-    "en": "Today's study range",
-    "ja": "今日学習する範囲",
-    "de": "Heutiger Lernbereich",
-    "fr": "Programme d'étude d'aujourd'hui",
-    "pl": "Dzisiejszy zakres nauki"
-  },
-  "전체 보기": {
-    "zh": "查看全部",
-    "en": "Show all",
-    "ja": "すべて見る",
-    "de": "Alle anzeigen",
-    "fr": "Tout afficher",
-    "pl": "Pokaż wszystko"
-  },
-  "학습반 교과 자료": {
-    "zh": "學習班教材資料",
-    "en": "Class Curriculum Materials",
-    "ja": "学習会教材資料",
-    "de": "Unterrichtsmaterialien",
-    "fr": "Supports du cours de langue",
-    "pl": "Materiały kursu językowego"
-  },
-  "16주 과정 목차, 베트남 문화 이야기, 기도와 노래까지 — 학습반 교재의 자료를 모아 뒀어요. 제공 연설은 대화 탭, 성경 인명 사전·기본 단어는 어휘 탭, 범용 언어 생성표·문법 특강은 문법 탭에 있어요.": {
-    "zh": "從16週課程目錄、越南文化故事，到禱告與歌曲——這裡收集了學習班教材的所有資料。提供見證的內容在「對話」分頁，聖經人名辭典和基本詞彙在「詞彙」分頁，通用語言生成表和文法特別課程在「文法」分頁。",
-    "en": "From the 16-week course outline and stories about Vietnamese culture to prayers and songs — all the class materials are gathered here. The offer talks are under the Dialogue tab, the Bible name dictionary and basic vocabulary are under the Vocabulary tab, and the general sentence-pattern chart and grammar features are under the Grammar tab.",
-    "ja": "16週間コースの目次、ベトナムの文化についての話、祈りと歌まで――学習会教材の資料がここにまとめられています。提供のことばは「会話」タブに、聖書人名辞典と基本単語は「語彙」タブに、汎用文型表と文法特別レッスンは「文法」タブにあります。",
-    "de": "Vom Inhaltsverzeichnis des 16-Wochen-Kurses über vietnamesische Kultur bis hin zu Gebeten und Liedern – alle Kursmaterialien sind hier versammelt. Gesprächsvorschläge finden sich im Tab Dialog, das biblische Namenslexikon und Grundwörter im Tab Wortschatz, die Satzbautabelle und Grammatiklektionen im Tab Grammatik.",
-    "fr": "Du programme de cours en 16 semaines aux récits culturels vietnamiens, prières et cantiques : tous les supports pédagogiques sont réunis ici. Les présentations modèles sont sous l'onglet Dialogue, le dictionnaire des noms bibliques et le vocabulaire de base sous Vocabulaire, et le tableau de génération de phrases sous Grammaire.",
-    "pl": "Od spisu treści 16-tygodniowego kursu, przez opisy wietnamskiej kultury, po modlitwy i pieśni — zebrano tu wszystkie materiały kursowe. Wzory rozmów znajdują się w zakładce Rozmowy, słownik imion biblijnych i podstawowe słownictwo w Słownictwie, a tabela tworzenia zdań w Gramatyce."
-  },
-  "16주 과정": {
-    "zh": "16週課程",
-    "en": "16-Week Course",
-    "ja": "16週間コース",
-    "de": "16-Wochen-Kurs",
-    "fr": "Programme de 16 semaines",
-    "pl": "Kurs 16-tygodniowy"
-  },
-  "문화": {"zh":"文化","en":"Culture","ja":"文化","de":"Kultur","fr":"Culture","pl":"Kultura"},
-  "노래": {"zh":"詩歌","en":"Songs","ja":"歌","de":"Lieder","fr":"Chants","pl":"Pieśni"},
-  "기도": {"zh":"禱告","en":"Prayer","ja":"祈り","de":"Gebet","fr":"Prière","pl":"Modlitwa"},
-  "노래·기도": {
-    "zh": "歌曲‧禱告",
-    "en": "Songs & Prayer",
-    "ja": "歌・祈り",
-    "de": "Lieder & Gebet",
-    "fr": "Chants et prières",
-    "pl": "Pieśni i modlitwy"
-  },
-  "사용설명": {
-    "zh": "使用說明",
-    "en": "Usage Guide",
-    "ja": "使い方ガイド",
-    "de": "Anleitung",
-    "fr": "Guide d'utilisation",
-    "pl": "Instrukcja obsługi"
-  },
-  "공통 기능": {
-    "zh": "通用功能",
-    "en": "Common Features",
-    "ja": "共通機能",
-    "de": "Allgemeine Funktionen",
-    "fr": "Fonctions communes",
-    "pl": "Wspólne funkcje"
-  },
-  "베트남 사람을 만났을 때": {
-    "zh": "遇到越南人的時候",
-    "en": "When You Meet a Vietnamese Person",
-    "ja": "ベトナム人に会ったとき",
-    "de": "Wenn Sie einer vietnamesischen Person begegnen",
-    "fr": "Rencontrer une personne vietnamienne",
-    "pl": "Gdy spotkasz osobę z Wietnamu"
-  },
-  "몇 가지만 답하면, 첫인사부터 자기소개·연락처 교환·재방문·집회 초대·성서 연구 사회까지 실제로 쓸 수 있는 베트남어 대화문을 보여 드려요.": {
-    "zh": "只要回答幾個問題，就能看到從打招呼、自我介紹、交換聯絡方式，到重訪、邀請聚會、主持聖經研究都能實際使用的越南語對話。",
-    "en": "Answer just a few questions and you'll get real Vietnamese dialogues you can use — from the first greeting and self-introduction to exchanging contact info, callbacks, meeting invitations, and even conducting a Bible study.",
-    "ja": "いくつか質問に答えるだけで、最初のあいさつから自己紹介・連絡先交換・再訪問・集会への招待・聖書研究の司会まで、実際に使えるベトナム語の会話文をご紹介します。",
-    "de": "Beantworten Sie ein paar kurze Fragen, und Sie erhalten praktische vietnamesische Dialoge – von der Begrüßung und Vorstellung über den Kontakttausch, Rückbesuche und Zusammenkunftseinladungen bis hin zum Leiten eines Bibelstudiums.",
-    "fr": "Répondez simplement à quelques questions pour obtenir des dialogues réels en vietnamien : des premières salutations à la présentation de soi, l'échange de coordonnées, les nouvelles visites, l'invitation aux réunions et la conduite d'un cours biblique.",
-    "pl": "Odpowiedz na kilka pytań, aby otrzymać praktyczne dialogi po wietnamsku — od powitania i przedstawienia się, przez wymianę kontaktów, odwiedziny ponowne i zaproszenie na zebranie, aż po prowadzenie studium biblijnego."
-  },
-  "복습 게임으로 연습하기": {
-    "zh": "用複習遊戲來練習",
-    "en": "Practice with Review Games",
-    "ja": "復習ゲームで練習する",
-    "de": "Mit Wiederholungsspielen üben",
-    "fr": "S'entraîner avec les jeux de révision",
-    "pl": "Ćwicz z grami powtórkowymi"
-  },
-  "전체 범위 복습 게임": {
-    "zh": "全範圍複習遊戲",
-    "en": "Review Game (All Vocabulary)",
-    "ja": "全範囲の復習ゲーム",
-    "de": "Wiederholungsspiel (Gesamter Wortschatz)",
-    "fr": "Jeu de révision (tout le vocabulaire)",
-    "pl": "Gra powtórkowa (całe słownictwo)"
-  },
-  "학습 범위내 복습 게임": {
-    "zh": "本範圍複習遊戲",
-    "en": "Review Game (This Range Only)",
-    "ja": "この範囲だけの復習ゲーム",
-    "de": "Wiederholungsspiel (Nur dieser Bereich)",
-    "fr": "Jeu de révision (cette sélection)",
-    "pl": "Gra powtórkowa (tylko ten zakres)"
-  },
-  "호칭": {
-    "zh": "稱呼",
-    "en": "Terms of Address",
-    "ja": "呼び方",
-    "de": "Anredeformen",
-    "fr": "Termes d'adresse",
-    "pl": "Formy grzecznościowe"
-  },
-  "제공 연설": {
-    "zh": "提供見證",
-    "en": "Offer Talks",
-    "ja": "提供のことば",
-    "de": "Gesprächsvorschläge",
-    "fr": "Présentations modèles",
-    "pl": "Wzory rozmów"
-  },
-  "참여자 정보": {
-    "zh": "參與者資訊",
-    "en": "Participant Info",
-    "ja": "参加者情報",
-    "de": "Teilnehmer-Info",
-    "fr": "Informations sur les interlocuteurs",
-    "pl": "Informacje o rozmówcach"
-  },
-  "(입력하면 대화·제공 연설에 자동 반영돼요)": {
-    "zh": "（輸入後會自動套用到對話與提供見證）",
-    "en": "(Enter these and they'll automatically apply to Dialogue and Offer Talks)",
-    "ja": "（入力すると会話・提供のことばに自動的に反映されます）",
-    "de": "(Wird automatisch in Dialoge und Gesprächsvorschläge übernommen)",
-    "fr": "(Ces informations s'appliquent automatiquement aux dialogues et présentations)",
-    "pl": "(Wprowadzone dane automatycznie dostosują dialogi i wzory rozmów)"
-  },
-  "나": {"zh":"我","en":"Me","ja":"自分","de":"Ich","fr":"Moi","pl":"Ja"},
-  "한국어 이름": {"zh":"中文姓名","en":"Name","ja":"日本語の名前","de":"Name","fr":"Nom","pl":"Imię"},
-  "베트남어 이름": {
-    "zh": "越南語姓名",
-    "en": "Vietnamese Name",
-    "ja": "ベトナム語の名前",
-    "de": "Vietnamesischer Name",
-    "fr": "Nom vietnamien",
-    "pl": "Wietnamskie imię"
-  },
-  "성별": {"zh":"性別","en":"Gender","ja":"性別","de":"Geschlecht","fr":"Genre","pl":"Płeć"},
-  "형제": {"zh":"弟兄","en":"Brother","ja":"兄弟","de":"Bruder","fr":"Frère","pl":"Brat"},
-  "자매": {"zh":"姐妹","en":"Sister","ja":"姉妹","de":"Schwester","fr":"Sœur","pl":"Siostra"},
-  "나이": {"zh":"年齡","en":"Age","ja":"年齢","de":"Alter","fr":"Âge","pl":"Wiek"},
-  "전화번호": {
-    "zh": "電話號碼",
-    "en": "Phone Number",
-    "ja": "電話番号",
-    "de": "Telefonnummer",
-    "fr": "Numéro de téléphone",
-    "pl": "Numer telefonu"
-  },
-  "결혼": {
-    "zh": "婚姻狀況",
-    "en": "Marital Status",
-    "ja": "結婚",
-    "de": "Familienstand",
-    "fr": "État civil",
-    "pl": "Stan cywilny"
-  },
-  "미혼": {"zh":"未婚","en":"Single","ja":"未婚","de":"Ledig","fr":"Célibataire","pl":"Stan wolny"},
-  "기혼": {
-    "zh": "已婚",
-    "en": "Married",
-    "ja": "既婚",
-    "de": "Verheiratet",
-    "fr": "Marié(e)",
-    "pl": "W związku małżeńskim"
-  },
-  "봉사짝": {
-    "zh": "傳道夥伴",
-    "en": "Ministry Companion",
-    "ja": "奉仕の相手",
-    "de": "Dienstpartner",
-    "fr": "Compagnon de prédication",
-    "pl": "Współgłosiciel"
-  },
-  "베트남어를 잘하는 형제·자매": {
-    "zh": "越南語流利的弟兄姐妹",
-    "en": "A brother or sister who speaks Vietnamese well",
-    "ja": "ベトナム語が上手な兄弟姉妹",
-    "de": "Ein Bruder / eine Schwester mit guten Vietnamesischkenntnissen",
-    "fr": "Un frère ou une sœur qui parle bien vietnamien",
-    "pl": "Brat lub siostra dobrze mówiący po wietnamsku"
-  },
-  "상대방의 이름은?": {
-    "zh": "對方的名字是？",
-    "en": "What is the other person's name?",
-    "ja": "相手の名前は？",
-    "de": "Wie heißt die andere Person?",
-    "fr": "Quel est le nom de l'interlocuteur ?",
-    "pl": "Jak ma na imię rozmówca?"
-  },
-  "상대방의 성별은?": {
-    "zh": "對方的性別是？",
-    "en": "What is the other person's gender?",
-    "ja": "相手の性別は？",
-    "de": "Welches Geschlecht hat die andere Person?",
-    "fr": "Quel est le genre de l'interlocuteur ?",
-    "pl": "Jakiej płci jest rozmówca?"
-  },
-  "남성": {"zh":"男性","en":"Male","ja":"男性","de":"Männlich","fr":"Homme","pl":"Mężczyzna"},
-  "여성": {"zh":"女性","en":"Female","ja":"女性","de":"Weiblich","fr":"Femme","pl":"Kobieta"},
-  "상대방의 나이는 나와 비교하면?": {
-    "zh": "對方的年齡跟我相比？",
-    "en": "How does the other person's age compare to yours?",
-    "ja": "相手の年齢は自分と比べてどうですか？",
-    "de": "Wie ist das Alter im Vergleich zu Ihnen?",
-    "fr": "Quel est l'âge de l'interlocuteur par rapport au vôtre ?",
-    "pl": "Ile lat ma rozmówca w porównaniu z Tobą?"
-  },
-  "나보다 어림 — 동생뻘": {
-    "zh": "比我小——像弟妹一樣",
-    "en": "Younger than me — like a younger sibling",
-    "ja": "自分より年下 — 弟や妹のような存在",
-    "de": "Jünger als ich – wie ein jüngeres Geschwister",
-    "fr": "Plus jeune que moi — comme un petit frère/petite sœur",
-    "pl": "Młodszy ode mnie — jak młodszy brat/młodsza siostra"
-  },
-  "나와 비슷함 — 동갑": {
-    "zh": "跟我差不多——同年齡",
-    "en": "About the same as me — peers",
-    "ja": "自分と同じくらい — 同い年",
-    "de": "Etwa mein Alter – gleichaltrig",
-    "fr": "À peu près du même âge — pairs",
-    "pl": "W podobnym wieku — rówieśnik"
-  },
-  "나보다 많음 — 형·오빠·누나·언니뻘": {
-    "zh": "比我大——像哥哥姐姐一樣",
-    "en": "Older than me — like an older sibling",
-    "ja": "自分より年上 — 兄や姉のような存在",
-    "de": "Älter als ich – wie ein älteres Geschwister",
-    "fr": "Plus âgé que moi — comme un grand frère/grande sœur",
-    "pl": "Starszy ode mnie — jak starszy brat/starsza siostra"
-  },
-  "나보다 훨씬 많음 — 삼촌·이모뻘": {
-    "zh": "比我大很多——像叔叔阿姨一樣",
-    "en": "Much older than me — like an aunt or uncle",
-    "ja": "自分よりずっと年上 — おじやおばのような存在",
-    "de": "Viel älter als ich – wie Onkel/Tante",
-    "fr": "Bien plus âgé que moi — de l'âge d'un oncle/d'une tante",
-    "pl": "Dużo starszy ode mnie — jak wujek/ciocia"
-  },
-  "내 부모님보다는 젊은 분": {
-    "zh": "比我父母年輕的長輩",
-    "en": "Younger than my parents",
-    "ja": "自分の両親より若い方",
-    "de": "Jünger als meine Eltern",
-    "fr": "Plus jeune que mes parents",
-    "pl": "Młodszy od moich rodziców"
-  },
-  "내 부모님 또래이거나 더 많음": {
-    "zh": "跟我父母差不多或更年長",
-    "en": "About my parents' age or older",
-    "ja": "自分の両親と同じ世代か、それ以上",
-    "de": "Im Alter meiner Eltern oder älter",
-    "fr": "De l'âge de mes parents ou plus âgé",
-    "pl": "W wieku moich rodziców lub starszy"
-  },
-  "내가 상대방의 삼촌, 이모뻘": {
-    "zh": "我像對方的叔叔、阿姨一樣",
-    "en": "I'm like an aunt or uncle to them",
-    "ja": "自分が相手にとっておじやおばのような存在",
-    "de": "Ich bin im Onkel-/Tanten-Alter der Person",
-    "fr": "Je suis de l'âge d'un oncle ou d'une tante pour lui/elle",
-    "pl": "Jestem w wieku wujka/cioci dla rozmówcy"
-  },
-  "내가 상대보다 훨씬 연장자": {
-    "zh": "我比對方年長很多",
-    "en": "I'm much older than them",
-    "ja": "自分が相手よりずっと年上",
-    "de": "Ich bin viel älter als die Person",
-    "fr": "Je suis bien plus âgé que la personne",
-    "pl": "Jestem znacznie starszy od rozmówcy"
-  },
-  "내가 상대방의 부모보다 나이가 많음": {
-    "zh": "我比對方的父母年長",
-    "en": "I'm older than their parents",
-    "ja": "自分が相手の両親より年上",
-    "de": "Ich bin älter als die Eltern der Person",
-    "fr": "Je suis plus âgé que ses parents",
-    "pl": "Jestem starszy od jego/jej rodziców"
-  },
-  "처음 만나서 나이를 잘 모름": {
-    "zh": "初次見面，不太清楚年齡",
-    "en": "Just met, don't know their age well",
-    "ja": "初対面で、年齢がよくわからない",
-    "de": "Erstes Treffen, Alter unbekannt",
-    "fr": "Premier contact, âge inconnu",
-    "pl": "Pierwsze spotkanie, wiek nieznany"
-  },
-  "아직 친하지 않아 거리를 두고 예의를 차릴 때": {
-    "zh": "還不熟，需要保持距離、有禮貌相待時",
-    "en": "Not close yet, so keeping a polite distance",
-    "ja": "まだ親しくなく、距離を置いて丁寧に接するとき",
-    "de": "Noch distanziert, höflicher Abstand",
-    "fr": "Pas encore familiers, distance polie",
-    "pl": "Jeszcze nie blisko, uprzejmy dystans"
-  },
-  "상대방의 연령대는요?": {
-    "zh": "對方大概是哪個年齡層？",
-    "en": "What's the other person's approximate age range?",
-    "ja": "相手の年齢層は？",
-    "de": "Welche Altersgruppe hat die andere Person?",
-    "fr": "Quelle est la tranche d'âge approximative de l'interlocuteur ?",
-    "pl": "W jakim przybliżonym wieku jest rozmówca?"
-  },
-  "20~30대로 보임": {
-    "zh": "看起來20～30多歲",
-    "en": "Looks to be in their 20s–30s",
-    "ja": "20～30代に見える",
-    "de": "Scheint in den 20ern bis 30ern zu sein",
-    "fr": "Semble avoir entre 20 et 30 ans",
-    "pl": "Wygląda na 20–30 lat"
-  },
-  "40~70대로 보임": {
-    "zh": "看起來40～70多歲",
-    "en": "Looks to be in their 40s–70s",
-    "ja": "40～70代に見える",
-    "de": "Scheint in den 40ern bis 70ern zu sein",
-    "fr": "Semble avoir entre 40 et 70 ans",
-    "pl": "Wygląda na 40–70 lat"
-  },
-  "80대 이상으로 보임": {
-    "zh": "看起來80歲以上",
-    "en": "Looks to be 80 or older",
-    "ja": "80代以上に見える",
-    "de": "Scheint 80 Jahre oder älter zu sein",
-    "fr": "Semble avoir 80 ans ou plus",
-    "pl": "Wygląda na 80 lat lub więcej"
-  },
-  "베트남인은 상대방과 친해질 생각이 전혀 없는 경우가 아니라면 신속히 통성명하고, 나이를 묻고, 상대방과 나의 나이 차이에 따른 호칭을 사용하는 것이 아주 일상적이에요. 계속 \"나\"·\"tôi\"라는 단어를 사용한다면 상대방과 친해지기 어려워요.": {
-    "zh": "越南人只要不是完全不想跟對方熟識，通常都會很快互相報上姓名、詢問年齡，並依照彼此的年齡差距使用相應的稱呼，這是非常普遍的做法。如果一直使用「我」·「tôi」這個字，會很難跟對方拉近距離。",
-    "en": "Unless a Vietnamese person has no interest at all in getting to know someone, it's very common for them to quickly exchange names, ask each other's age, and then use the term of address that fits their age difference. If you keep using the plain word for \"I\" — \"tôi\" — it's hard to grow close to the other person.",
-    "ja": "ベトナムの人は、相手と親しくなるつもりが全くない場合でない限り、すぐに名前を名乗り合い、年齢を尋ね合い、お互いの年齢差に応じた呼び方を使うのがとても一般的です。ずっと「私」・「tôi」という言葉を使い続けると、相手と親しくなりにくくなります。",
-    "de": "Für Vietnamesen ist es ganz alltäglich, sich schnell vorzustellen, nach dem Alter zu fragen und je nach Altersunterschied passende Anredeformen zu verwenden – es sei denn, man möchte überhaupt keinen Kontakt aufbauen. Wenn man stets nur das neutrale „tôi“ (ich) verwendet, ist es schwer, eine herzliche Beziehung aufzubauen.",
-    "fr": "Pour les Vietnamiens, il est très naturel d'échanger rapidement les noms, de demander l'âge et d'utiliser les termes d'adresse adaptés à la différence d'âge — sauf si l'on ne souhaite aucun lien. Continuer à utiliser le pronom neutre « tôi » rend difficile l'établissement d'une relation chaleureuse.",
-    "pl": "Dla Wietnamczyków bardzo naturalne jest szybkie przedstawienie się, zapytanie o wiek i używanie form grzecznościowych dopasowanych do różnicy wieku — chyba że nie chce się nawiązywać kontaktu. Ciągłe używanie neutralnego zaimka „tôi” (ja) utrudnia nawiązanie ciepłych relacji."
-  },
-  "상대방은 베트남 어느 지역 사람인가요?": {
-    "zh": "對方是越南哪個地區的人？",
-    "en": "Which region of Vietnam is the other person from?",
-    "ja": "相手はベトナムのどの地域の方ですか？",
-    "de": "Aus welcher Region Vietnams stammt die Person?",
-    "fr": "De quelle région du Vietnam est l'interlocuteur ?",
-    "pl": "Z jakiego regionu Wietnamu pochodzi rozmówca?"
-  },
-  "북부": {"zh":"北部","en":"North","ja":"北部","de":"Norden","fr":"Nord","pl":"Północ"},
-  "하노이 등": {
-    "zh": "河內等地",
-    "en": "Hanoi, etc.",
-    "ja": "ハノイなど",
-    "de": "Hanoi usw.",
-    "fr": "Hanoï, etc.",
-    "pl": "Hanoi itd."
-  },
-  "(남)": {"zh":"（南部）","en":"(south)","ja":"（南部）","de":"(Süd)","fr":"(Sud)","pl":"(Południe)"},
-  "남부": {"zh":"南部","en":"South","ja":"南部","de":"Süden","fr":"Sud","pl":"Południe"},
-  "호찌민 등": {
-    "zh": "胡志明市等地",
-    "en": "Ho Chi Minh City, etc.",
-    "ja": "ホーチミンなど",
-    "de": "Ho-Chi-Minh-Stadt usw.",
-    "fr": "Hô Chi Minh, etc.",
-    "pl": "Ho Chi Minh itd."
-  },
-  "상황별 호칭을 한눈에 확인할 수 있어요. 굵은 글씨가 상대를 부르는 말, 그 옆이 나를 가리키는 말입니다.": {
-    "zh": "可以一目瞭然地查看各種情境下的稱呼。粗體字是稱呼對方的用語，旁邊是稱呼自己的用語。",
-    "en": "See the terms of address for every situation at a glance. The bold word is what you call the other person; next to it is what you call yourself.",
-    "ja": "状況別の呼び方が一目でわかります。太字が相手を呼ぶ言葉、その横が自分を指す言葉です。",
-    "de": "Hier sehen Sie die Anredeformen für jede Situation auf einen Blick. Fettgedruckt ist die Anrede für das Gegenüber, daneben die Selbstbezeichnung.",
-    "fr": "Visualisez d'un coup d'œil les termes d'adresse selon la situation. En gras le terme pour s'adresser à autrui, à côté celui pour se désigner soi-même.",
-    "pl": "Przejrzyste zestawienie form adresatywnych w zależności od sytuacji. Pogrubione to zwrot do rozmówcy, obok zwrot o sobie."
-  },
-  "아래에서 나와 상대방의 관계를 선택하면, 제공 연설 대화문 속 \"저는(tôi)\"·\"당신은(bạn)\" 표현이 실제 상황에 맞는 호칭으로 자동으로 바뀌어요. 아직 선택하지 않았다면 원문 그대로 tôi·bạn으로 표시돼요.": {
-    "zh": "在下面選擇我和對方的關係後，提供見證對話中的「我(tôi)」·「您(bạn)」用語就會自動換成符合實際情境的稱呼。如果還沒選擇，就會維持原文的 tôi·bạn。",
-    "en": "Choose the relationship between you and the other person below, and the words \"I (tôi)\" and \"you (bạn)\" in the offer-talk dialogue will automatically switch to the terms of address that fit the actual situation. Until you choose, they'll stay as the original tôi and bạn.",
-    "ja": "下で自分と相手の関係を選ぶと、提供トークの会話文にある「私は(tôi)」・「あなたは(bạn)」という表現が、実際の状況に合った呼び方に自動的に変わります。まだ選択していない場合は、原文のまま tôi・bạn と表示されます。",
-    "de": "Wenn Sie unten die Beziehung zwischen Ihnen und der Person auswählen, werden Ausdrücke wie „ich (tôi)“ und „Sie/du (bạn)“ im Gesprächsvorschlag automatisch durch die situationsgerechte Anrede ersetzt. Bis dahin bleibt der Originaltext tôi/bạn.",
-    "fr": "Choisissez la relation entre vous et l'interlocuteur ci-dessous pour que les pronoms « tôi » (je) et « bạn » (vous) dans les présentations modèles s'adaptent automatiquement. Tant qu'aucun choix n'est fait, le texte d'origine tôi/bạn est conservé.",
-    "pl": "Wybierz poniżej relację między Tobą a rozmówcą, aby zaimki „tôi” (ja) i „bạn” (pan/pani) we wzorach rozmów automatycznie dostosowały się do sytuacji. Jeśli nie dokonasz wyboru, pozostaną oryginalne formy tôi i bạn."
-  },
-  "나는 어느 쪽인가요?": {
-    "zh": "我是哪一邊？",
-    "en": "Which side are you on?",
-    "ja": "自分はどちらですか？",
-    "de": "Welche Rolle haben Sie?",
-    "fr": "Quelle est votre situation ?",
-    "pl": "Jaka jest Twoja rola?"
-  },
-  "다시 선택": {
-    "zh": "重新選擇",
-    "en": "Choose Again",
-    "ja": "選び直す",
-    "de": "Erneut auswählen",
-    "fr": "Choisir à nouveau",
-    "pl": "Wybierz ponownie"
-  },
-  "베트남어 어휘": {
-    "zh": "越南語詞彙",
-    "en": "Vietnamese Vocabulary",
-    "ja": "ベトナム語彙",
-    "de": "Vietnamesischer Wortschatz",
-    "fr": "Vocabulaire vietnamien",
-    "pl": "Słownictwo wietnamskie"
-  },
-  "한자어 대응표, 신권 용어, 자주 사용하는 단어까지 어휘 학습 자료를 한곳에 모았어요. 한국 한자음과 대응하는 경우가 많아, 알고 나면 새 단어를 훨씬 쉽게 외울 수 있어요.": {
-    "zh": "從漢字對應表、聖工用語，到常用單字，詞彙學習資料都集中在這裡。",
-    "en": "Hanja-cognate charts, theocratic terms, and common everyday words — all the vocabulary material is gathered in one place.",
-    "ja": "漢字語対応表や神権用語から、よく使う単語まで、語彙学習の資料をここに集めました。日本語の漢字音と対応することが多く、覚えると新しい単語をぐっと覚えやすくなります。",
-    "de": "Entsprechungstabellen, theokratische Begriffe und häufige Wörter des Alltags – alle Wortschatzmaterialien an einem Ort.",
-    "fr": "Tableaux de correspondance sino-vietnamiens, vocabulaire théocratique et mots fréquents du quotidien : toutes les ressources lexicales réunies au même endroit.",
-    "pl": "Tabele odpowiedników sino-wietnamskich, słownictwo teokratyczne i popularne słowa codzienne — wszystkie materiały leksykalne w jednym miejscu."
-  },
-  "한자음": {
-    "zh": "漢字音",
-    "en": "Sino-Vietnamese",
-    "ja": "漢越音",
-    "de": "Sino-Vietnamesisch",
-    "fr": "Sino-vietnamien",
-    "pl": "Sino-wietnamski"
-  },
-  "동일음": {
-    "zh": "同音字",
-    "en": "Same Sound",
-    "ja": "同音",
-    "de": "Gleichlautend",
-    "fr": "Homophones",
-    "pl": "Homofony"
-  },
-  "기본": {"zh":"基本","en":"Base","ja":"基本","de":"Grundlagen","fr":"Bases","pl":"Podstawowe"},
-  "반의": {"zh":"反義","en":"Antonyms","ja":"反意語","de":"Gegenteile","fr":"Antonymes","pl":"Antonimy"},
-  "상용": {"zh":"常用","en":"Frequent","ja":"常用","de":"Häufig","fr":"Fréquent","pl":"Częste"},
-  "신권": {
-    "zh": "屬靈詞彙",
-    "en": "Theocratic",
-    "ja": "神権",
-    "de": "Theokratisch",
-    "fr": "Théocratique",
-    "pl": "Teokratyczne"
-  },
-  "인명": {"zh":"人名","en":"Names","ja":"人名","de":"Namen","fr":"Noms","pl":"Imiona"},
-  "끝말": {
-    "zh": "字尾",
-    "en": "Word Chain",
-    "ja": "しりとり",
-    "de": "Wortketten",
-    "fr": "Chaîne de mots",
-    "pl": "Łańcuch słów"
-  },
-  "남북 단어": {
-    "zh": "南北用詞",
-    "en": "North/South Words",
-    "ja": "南北の単語",
-    "de": "Nord/Süd-Wörter",
-    "fr": "Mots Nord/Sud",
-    "pl": "Północ/Południe"
-  },
-  "파수대": {
-    "zh": "守望台",
-    "en": "Watchtower",
-    "ja": "ものみの塔",
-    "de": "Wachtturm",
-    "fr": "La Tour de Garde",
-    "pl": "Strażnica"
-  },
-  "다운로드 필요": {
-    "zh": "需要下載",
-    "en": "Download needed",
-    "ja": "ダウンロードが必要",
-    "de": "Download erforderlich",
-    "fr": "Téléchargement requis",
-    "pl": "Wymaga pobrania"
-  },
-  "다운로드 필요라고 표시된 음성은 아직 이 기기에 설치돼 있지 않아요. 설정 > 손쉬운 사용 > 읽기 및 말하기(또는 콘텐츠 말하기) > 음성에서 해당 언어를 찾아 다운로드하면 선택할 수 있어요.": {
-    "zh": "標示「需要下載」的語音尚未安裝在此裝置上。請到 設定 > 輔助使用 > 朗讀內容（或內容朗讀）> 語音，找到該語言並下載後即可選用。",
-    "en": "Voices marked \"Download needed\" aren't installed on this device yet. Go to Settings > Accessibility > Spoken Content > Voices, find that language, and download the voice to select it.",
-    "ja": "「ダウンロードが必要」と表示されている音声は、まだこの端末にインストールされていません。設定 > アクセシビリティ > 読み上げコンテンツ（または「コンテンツの読み上げ」）> 声 でその言語を探してダウンロードすると選択できます。",
-    "de": "Stimmen mit dem Hinweis „Download erforderlich“ sind noch nicht auf diesem Gerät installiert. Gehen Sie zu Einstellungen > Bedienungshilfen > Gesprochene Inhalte > Stimmen, suchen Sie die Sprache und laden Sie die Stimme herunter.",
-    "fr": "Les voix marquées « Téléchargement requis » ne sont pas encore installées sur cet appareil. Allez dans Réglages > Accessibilité > Contenu énoncé > Voix, trouvez cette langue et téléchargez la voix pour pouvoir la sélectionner.",
-    "pl": "Głosy oznaczone jako „Wymaga pobrania” nie są jeszcze zainstalowane na tym urządzeniu. Przejdź do Ustawienia > Dostępność > Zawartość mówiona > Głosy, znajdź język i pobierz głos."
-  },
-  "이미 기기에 다운로드한 음성인데도 여기에 보이지 않는다면, 이 브라우저 앱을 완전히 종료했다가 다시 열거나 기기를 재시작해 보세요. 특히 '고품질' 음성은 iOS/사파리에서 바로 인식되지 않는 경우가 있어요.": {
-    "zh": "如果已在裝置上下載的語音卻沒有出現在這裡,請試著完全關閉此瀏覽器 App 後重新開啟,或重新啟動裝置。尤其是「高品質」語音,有時在 iOS／Safari 上不會立即被辨識。",
-    "en": "If a voice you've already downloaded on this device doesn't show up here, try fully quitting and reopening this browser app, or restarting the device. \"Enhanced\"/\"Premium\" voices in particular sometimes aren't recognized right away on iOS/Safari.",
-    "ja": "端末にすでにダウンロード済みの音声がここに表示されない場合は、このブラウザアプリを完全に終了してから開き直すか、端末を再起動してみてください。特に「高品質」の音声は、iOS/Safariですぐには認識されないことがあります。",
-    "de": "Wenn eine bereits heruntergeladene Stimme hier nicht angezeigt wird, schließen Sie den Browser vollständig und öffnen Sie ihn erneut oder starten Sie das Gerät neu. Besonders hochwertige Stimmen werden unter iOS/Safari manchmal nicht sofort erkannt.",
-    "fr": "Si une voix déjà téléchargée n'apparaît pas ici, quittez complètement et rouvrez cette application de navigation, ou redémarrez l'appareil. Les voix de haute qualité ne sont parfois pas reconnues immédiatement sous iOS/Safari.",
-    "pl": "Jeśli pobrany głos nie wyświetla się tutaj, zamknij całkowicie przeglądarkę i otwórz ją ponownie lub zrestartuj urządzenie. Głosy ulepszone/premium w systemie iOS/Safari bywają rozpoznawane z opóźnieniem."
-  },
-  "이웃 사람과의 대화": {
-    "zh": "耶和華見證人是怎樣跟人討論聖經的",
-    "en": "Conversation with a neighbor",
-    "ja": "聖書についての話し合い",
-    "de": "Gespräche über die Bibel",
-    "fr": "Conversations avec le prochain",
-    "pl": "Rozmowy o Biblii z ludźmi"
-  },
-  "여호와의 증인이 이웃집을 방문해 성경에 관해 나누는 실제 대화문 11편이에요. 집주인의 말은 원문 그대로, 전도인의 말 속 성경 인용은 최신 개정판 신세계역과 대조해 두었어요.": {
-    "zh": "這裡收錄了11篇耶和華見證人實際到訪鄰居家中，一起討論聖經的對話。屋主的話都保留原文，而傳道員話中引用的聖經經文，已對照最新修訂版新世界譯本核對過。",
-    "en": "Here are 11 real conversations Jehovah's Witnesses have with a neighbor at the door about the Bible. The householder's own words are kept exactly as published; Bible verses quoted in the publisher's lines have been checked against the current (Revised Edition) New World Translation.",
-    "ja": "エホバの証人が近所の人を訪問して聖書について話し合う、実際の会話11編です。家の人の言葉は原文のまま、伝道者の言葉の中の聖書の引用は最新の改訂版新世界訳と対照してあります。",
-    "de": "Hier sind 11 Gespräche, die Jehovas Zeugen an der Haustür über die Bibel führen. Die Worte des Wohnungsinhabers sind originalgetreu wiedergegeben; Bibelzitate des Verkündigers wurden mit der revidierten Neuen-Welt-Übersetzung abgeglichen.",
-    "fr": "Voici 11 conversations réelles que les Témoins de Jéhovah ont avec un voisin au sujet de la Bible. Les propos de l'interlocuteur sont reproduits fidèlement ; les versets bibliques cités par le proclamateur ont été vérifiés d'après la Traduction du monde nouveau révisée.",
-    "pl": "Oto 11 autentycznych rozmów o Biblii prowadzonych przez Świadków Jehowy przy drzwiach. Słowa domownika zachowano w oryginalnym brzmieniu, a wersety cytowane przez głosiciela zweryfikowano ze zrewidowanym Pismem Świętym w Przekładzie Nowego Świata."
-  },
-  "전도인": {
-    "zh": "傳道員",
-    "en": "Publisher",
-    "ja": "伝道者",
-    "de": "Verkündiger",
-    "fr": "Proclamateur",
-    "pl": "Głosiciel"
-  },
-  "집주인": {
-    "zh": "屋主",
-    "en": "Householder",
-    "ja": "家の人",
-    "de": "Wohnungsinhaber",
-    "fr": "Interlocuteur",
-    "pl": "Domownik"
-  },
-  "북": {"zh":"北","en":"N","ja":"北","de":"N","fr":"N","pl":"Północ"},
-  "남": {"zh":"南","en":"S","ja":"南","de":"S","fr":"S","pl":"Południe"},
-  "이 주의 파수대 연구 기사에서 뽑은 어휘예요. 예문과 예문의 뜻도 함께 보여줘요.": {
-    "zh": "這是從本週守望台研讀文章中挑選的詞彙。也一併顯示例句和例句的意思。",
-    "en": "Vocabulary selected from this week's Watchtower Study article. The example sentence and its meaning are shown together too.",
-    "ja": "今週のものみの塔研究記事から選んだ語彙です。例文と例文の意味も一緒に示します。",
-    "de": "Ausgewählter Wortschatz aus dem Wachtturm-Studienartikel dieser Woche, samt Beispielsatz und Übersetzung.",
-    "fr": "Vocabulaire extrait de l'article d'étude de La Tour de Garde de cette semaine, avec phrases d'exemple et traduction.",
-    "pl": "Słownictwo wybrane z artykułu do studium ze Strażnicy na ten tydzień wraz z przykładowymi zdaniami i ich znaczeniem."
-  },
-  "발음·성조·문자 기초": {
-    "zh": "發音‧聲調‧文字基礎",
-    "en": "Pronunciation, Tone & Alphabet Basics",
-    "ja": "発音・声調・文字の基礎",
-    "de": "Grundlagen zu Aussprache, Tönen und Schrift",
-    "fr": "Bases de prononciation, tons et alphabet",
-    "pl": "Podstawy wymowy, tonów i alfabetu"
-  },
-  "베트남어를 처음 배우는 분을 위한 기초 발음표예요. 16주 학습반 교재를 바탕으로 정리했습니다.": {
-    "zh": "這是為初學越南語的人準備的基礎發音表，根據16週學習班教材整理而成。",
-    "en": "A basic pronunciation chart for those just starting to learn Vietnamese, compiled from the 16-week class materials.",
-    "ja": "ベトナム語を初めて学ぶ方のための基礎発音表です。16週学習班の教材を基に作成しました。",
-    "de": "Eine Ausspracheübersicht für Einsteiger, zusammengestellt auf Grundlage des 16-Wochen-Kurses.",
-    "fr": "Tableau phonétique de base pour les débutants en vietnamien, compilé à partir des manuels du cours de 16 semaines.",
-    "pl": "Podstawowa tabela wymowy dla osób rozpoczynających naukę wietnamskiego, opracowana na podstawie materiałów 16-tygodniowego kursu."
-  },
-  "설정": {
-    "zh": "設定",
-    "en": "Setup",
-    "ja": "設定",
-    "de": "Einstellungen",
-    "fr": "Paramètres",
-    "pl": "Ustawienia"
-  },
-  "문자": {"zh":"文字","en":"Alphabet","ja":"文字","de":"Buchstaben","fr":"Alphabet","pl":"Litery"},
-  "모음": {"zh":"母音","en":"Vowels","ja":"母音","de":"Vokale","fr":"Voyelles","pl":"Samogłoski"},
-  "자음": {
-    "zh": "子音",
-    "en": "Consonants",
-    "ja": "子音",
-    "de": "Konsonanten",
-    "fr": "Consonnes",
-    "pl": "Spółgłoski"
-  },
-  "성조": {"zh":"聲調","en":"Tones","ja":"声調","de":"Töne","fr":"Tons","pl":"Tony"},
-  "연속 성조": {
-    "zh": "聲調組合",
-    "en": "Tone Pairs",
-    "ja": "声調の組み合わせ",
-    "de": "Tonkombinationen",
-    "fr": "Paires de tons",
-    "pl": "Pary tonów"
-  },
-  "남북 발음": {
-    "zh": "南北發音",
-    "en": "North/South Pronunciation",
-    "ja": "南北の発音",
-    "de": "Nord/Süd-Aussprache",
-    "fr": "Prononciation Nord/Sud",
-    "pl": "Wymowa Północ/Południe"
-  },
-  "성경 책 이름 · 숫자 읽기": {
-    "zh": "聖經書卷名稱‧數字讀法",
-    "en": "Bible Book Names & Number Reading",
-    "ja": "聖書の書名・数字の読み方",
-    "de": "Bibelbuchnamen & Zahlen lesen",
-    "fr": "Noms des livres bibliques et lecture des nombres",
-    "pl": "Nazwy ksiąg biblijnych i odczytywanie liczb"
-  },
-  "신세계역 성경의 베트남어와 한국어 책 이름을 나란히 두고 발음을 들어 보세요. 숫자 탭에는 1~100, 1,000~10억까지 숫자 읽는 법이 있어요.": {
-    "zh": "把《新世界譯本》聖經的越南語和中文書卷名稱並列，聽聽看發音。「數字」分頁裡有1～100、1,000～10億的讀法。",
-    "en": "See the Vietnamese and English New World Translation Bible book names side by side and listen to the pronunciation. The Numbers tab covers how to read 1–100 and 1,000 to 1 billion.",
-    "ja": "「新世界訳」聖書のベトナム語と日本語の書名を並べて表示し、発音を聞くことができます。「数字」タブには1～100、1,000～10億までの数字の読み方があります。",
-    "de": "Vergleichen Sie die vietnamesischen und deutschen Bibelbuchnamen der Neuen-Welt-Übersetzung nebeneinander und hören Sie die Aussprache. Im Tab Zahlen lernen Sie Zahlen von 1 bis 100 und von 1.000 bis 1 Milliarde.",
-    "fr": "Comparez les noms des livres bibliques de la Traduction du monde nouveau en vietnamien et en français, et écoutez leur prononciation. L'onglet Nombres explique comment lire de 1 à 100 et de 1 000 à 1 milliard.",
-    "pl": "Zestawienie nazw ksiąg biblijnych z Przekładu Nowego Świata po wietnamsku i polsku z możliwością odsłuchu wymowy. W zakładce Liczby znajduje się odczytywanie od 1 do 100 oraz od 1000 do 1 miliarda."
-  },
-  "숫자": {"zh":"數字","en":"Numbers","ja":"数字","de":"Zahlen","fr":"Nombres","pl":"Liczby"},
-  "달과 요일": {
-    "zh": "月份與星期",
-    "en": "Months & Days",
-    "ja": "月と曜日",
-    "de": "Monate & Wochentage",
-    "fr": "Mois et jours",
-    "pl": "Miesiące i dni"
-  },
-  "문법 및 작문 연습": {
-    "zh": "文法與造句練習",
-    "en": "Grammar & Sentence Practice",
-    "ja": "文法・作文練習",
-    "de": "Grammatik & Satzbau-Übungen",
-    "fr": "Exercices de grammaire et de phrases",
-    "pl": "Ćwiczenia gramatyczne i tworzenie zdań"
-  },
-  "가장 짧은 문장에서 시작해 한 단어씩 늘려 가며, 한국어와 베트남어의 어순 차이를 몸에 익혀요.": {
-    "zh": "從最短的句子開始，一個字一個字地增加，親身體會中文和越南語語序的差異。",
-    "en": "Start with the shortest sentences and add one word at a time, so you get a feel for the word-order differences between your language and Vietnamese.",
-    "ja": "一番短い文から始めて、一語ずつ増やしながら、日本語とベトナム語の語順の違いを体で覚えましょう。",
-    "de": "Beginnen Sie mit kurzen Sätzen und erweitern Sie sie Schritt für Schritt, um ein Gefühl für die vietnamesische Wortstellung zu entwickeln.",
-    "fr": "Commencez par des phrases très courtes et ajoutez un mot à la fois pour vous familiariser avec l'ordre des mots en vietnamien.",
-    "pl": "Zacznij od najkrótszych zdań i dodawaj po jednym słowie, aby oswoić się z wietnamskim szykiem wyrazów."
-  },
-  "예문": {
-    "zh": "例句",
-    "en": "Examples",
-    "ja": "例文",
-    "de": "Beispielsätze",
-    "fr": "Exemples",
-    "pl": "Przykłady"
-  },
-  "특강": {
-    "zh": "特別課程",
-    "en": "Special Topics",
-    "ja": "特別講座",
-    "de": "Besondere Themen",
-    "fr": "Cours spécial",
-    "pl": "Lekcja specjalna"
-  },
-  "범용 언어 생성표": {
-    "zh": "通用語言生成表",
-    "en": "General Sentence Chart",
-    "ja": "汎用文生成表",
-    "de": "Satzbautabelle",
-    "fr": "Tableau de génération de phrases",
-    "pl": "Tabela tworzenia zdań"
-  },
-  "문장 생성기": {
-    "zh": "造句產生器",
-    "en": "Sentence Builder",
-    "ja": "文章ジェネレーター",
-    "de": "Satzgenerator",
-    "fr": "Générateur de phrases",
-    "pl": "Generator zdań"
-  },
-  "단어를 카테고리별로 골라 보세요. 비워 두면(선택 안 함) 그 부분 없이 문장이 만들어져요. 완성을 누르면 한국어 어순에서 베트남어 어순으로 단어가 자동으로 움직이는 걸 볼 수 있어요.": {
-    "zh": "請依類別挑選單字。如果留白（不選）就會做出沒有那個部分的句子。按下完成後，可以看到單字自動從原本的語序移動到越南語語序。",
-    "en": "Pick words by category. Leave a category blank and the sentence is built without that part. Press Done to see the words automatically move from your language's word order into Vietnamese word order.",
-    "ja": "カテゴリーごとに単語を選んでください。空欄のまま（選択しない）にすると、その部分を除いた文が作られます。「完成」を押すと、日本語の語順からベトナム語の語順へ単語が自動的に移動する様子を見ることができます。",
-    "de": "Wählen Sie Wörter nach Kategorien. Wenn Sie eine Kategorie leer lassen, wird der Satz ohne diesen Teil gebildet. Tippen Sie auf Fertig, um zu sehen, wie sich die Wörter automatisch in die vietnamesische Wortstellung bewegen.",
-    "fr": "Sélectionnez des mots par catégorie. Si vous laissez un champ vide, la phrase est formée sans cet élément. Appuyez sur Générer pour voir les mots s'agencer automatiquement dans l'ordre de la syntaxe vietnamienne.",
-    "pl": "Wybierz słowa według kategorii. Pozostawienie pola pustego utworzy zdanie bez tego elementu. Naciśnij Generuj, aby zobaczyć, jak słowa układają się w wietnamskim szyku."
-  },
-  "문장 만들기": {
-    "zh": "造句",
-    "en": "Build a Sentence",
-    "ja": "文章を作る",
-    "de": "Satzbau-Übung",
-    "fr": "Générer la phrase",
-    "pl": "Utwórz zdanie"
-  },
-  "복습 게임": {
-    "zh": "複習遊戲",
-    "en": "Review Games",
-    "ja": "復習ゲーム",
-    "de": "Wiederholungsspiele",
-    "fr": "Jeux de révision",
-    "pl": "Gry powtórkowe"
-  },
-  "플래시카드·보기·듣기·어순 배열·받아쓰기로 배운 내용을 복습하세요. 아래에서 복습할 영역을 먼저 골라 보세요.": {
-    "zh": "透過字卡、閱讀、聽力、排列語序、聽寫來複習所學內容。請先在下面選擇要複習的範圍。",
-    "en": "Review what you've learned with flashcards, reading, listening, word-order arrangement, and dictation. First pick which area to review below.",
-    "ja": "フラッシュカード、読解、聞き取り、語順並べ替え、書き取りで学んだ内容を復習しましょう。まず下から復習する分野を選んでください。",
-    "de": "Wiederholen Sie das Gelernte mit Karteikarten, Lesen, Hören, Wortstellung und Diktat. Wählen Sie unten zuerst den Lernbereich aus.",
-    "fr": "Révisez ce que vous avez appris grâce aux cartes mémoire, à la lecture, à l'écoute, à l'ordonnancement des mots et à la dictée. Choisissez d'abord le domaine à réviser ci-dessous.",
-    "pl": "Powtarzaj materiał za pomocą fiszek, czytania, słuchania, układania szyku i dyktanda. Wybierz poniżej zakres powtórki."
-  },
-  "플래시카드": {
-    "zh": "字卡",
-    "en": "Flashcards",
-    "ja": "フラッシュカード",
-    "de": "Karteikarten",
-    "fr": "Cartes",
-    "pl": "Fiszki"
-  },
-  "보기": {"zh":"閱讀","en":"Reading","ja":"読解","de":"Ansehen","fr":"Voir","pl":"Podgląd"},
-  "듣기": {"zh":"聽力","en":"Listening","ja":"聞き取り","de":"Hören","fr":"Écoute","pl":"Słuchanie"},
-  "어순 배열": {
-    "zh": "排列語序",
-    "en": "Word Order",
-    "ja": "語順並べ替え",
-    "de": "Wortstellung",
-    "fr": "Ordre des mots",
-    "pl": "Szyk wyrazów"
-  },
-  "받아쓰기": {"zh":"聽寫","en":"Dictation","ja":"書き取り","de":"Diktat","fr":"Dictée","pl":"Dyktando"},
-  "형제·자매 베트남어 대화 확장훈련(남/북부), 16주 학습반 교과과정, 한자어 어휘 자료를 통합해 만들었습니다.": {
-    "zh": "整合了弟兄姐妹越南語對話延伸訓練（南／北部）、16週學習班課程、漢字詞彙資料製作而成。",
-    "en": "Built by combining extended Vietnamese-dialogue training for brothers and sisters (North/South), the 16-week class curriculum, and Sino-Vietnamese vocabulary resources.",
-    "ja": "兄弟姉妹のためのベトナム語会話拡張トレーニング（南部／北部）、16週学習班のカリキュラム、漢越語彙資料を統合して作成しました。",
-    "de": "Erstellt durch Kombination von erweitertem Dialogtraining für Brüder und Schwestern (Nord/Süd), dem Lehrplan des 16-Wochen-Kurses und sino-vietnamesischen Wortschatzquellen.",
-    "fr": "Conçu en intégrant la formation à la conversation pour frères et sœurs (Nord/Sud), le programme du cours en 16 semaines et le vocabulaire sino-vietnamien.",
-    "pl": "Opracowano na podstawie kursu konwersacji dla braci i sióstr (Północ/Południe), 16-tygodniowego programu nauczania oraz słownictwa sino-wietnamskiego."
-  },
-  "언어 선택 / 選擇語言 / Language": {
-    "zh": "언어 선택 / 選擇語言 / Language",
-    "en": "언어 선택 / 選擇語言 / Language",
-    "ja": "언어 선택 / 選擇語言 / Language",
-    "de": "언어 선택 / 選擇語言 / Language / Sprachauswahl",
-    "fr": "언어 선택 / 選擇語言 / Language / Sprachauswahl / Choix de langue",
-    "pl": "언어 선택 / 選擇語言 / Language / Sprachauswahl / Choix de langue / Wybór języka"
-  },
-  "주요 메뉴": {
-    "zh": "主要選單",
-    "en": "Main Menu",
-    "ja": "メインメニュー",
-    "de": "Hauptmenü",
-    "fr": "Menu principal",
-    "pl": "Główne menu"
-  },
-  "베트남어 단어나 한국어 뜻으로 검색": {
-    "zh": "用越南語單字或中文意思搜尋",
-    "en": "Search by Vietnamese word or English meaning",
-    "ja": "ベトナム語の単語または日本語の意味で検索",
-    "de": "Nach vietnamesischem Wort oder Bedeutung suchen",
-    "fr": "Rechercher par mot vietnamien ou sens en français",
-    "pl": "Szukaj według wietnamskiego słowa lub znaczenia"
-  },
-  "성경책 이름으로 검색 (베트남어·한국어)": {
-    "zh": "用聖經書卷名稱搜尋（越南語‧中文）",
-    "en": "Search by Bible book name (Vietnamese/English)",
-    "ja": "聖書の書名で検索（ベトナム語・日本語）",
-    "de": "Nach Bibelbuch suchen (Vietnamesisch/Deutsch)",
-    "fr": "Rechercher un livre biblique (vietnamien/français)",
-    "pl": "Szukaj księgi biblijnej (wietnamski/polski)"
-  },
-  "문법 특강 검색 (베트남어·한국어)": {
-    "zh": "搜尋文法特別課程（越南語‧中文）",
-    "en": "Search grammar topics (Vietnamese/English)",
-    "ja": "文法特別講座を検索（ベトナム語・日本語）",
-    "de": "Nach Grammatikthemen suchen",
-    "fr": "Rechercher dans les leçons de grammaire (vietnamien/français)",
-    "pl": "Szukaj w lekcjach gramatyki (wietnamski/polski)"
-  },
-  "예: ": {"zh":"例：","en":"e.g. ","ja":"例：","de":"z. B. ","fr":"ex. : ","pl":"np. "},
-  "예: 예나": {
-    "zh": "例：雅婷",
-    "en": "e.g. Amy",
-    "ja": "例：花子",
-    "de": "z. B. Anna",
-    "fr": "ex. : Sarah",
-    "pl": "np. Anna"
-  },
-  "예: Trang Thanh": {
-    "zh": "例：Trang Thanh",
-    "en": "e.g. Trang Thanh",
-    "ja": "例：Trang Thanh",
-    "de": "z. B. Trang Thanh",
-    "fr": "ex. : Trang Thanh",
-    "pl": "np. Trang Thanh"
-  },
-  "예: 25": {"zh":"例：25","en":"e.g. 25","ja":"例：25","de":"z. B. 25","fr":"ex. : 25","pl":"np. 25"},
-  "예: 민수": {
-    "zh": "例：志豪",
-    "en": "e.g. Michael",
-    "ja": "例：太郎",
-    "de": "z. B. Michael",
-    "fr": "ex. : Thomas",
-    "pl": "np. Michał"
-  },
-  "예: Minh": {
-    "zh": "例：Minh",
-    "en": "e.g. Minh",
-    "ja": "例：Minh",
-    "de": "z. B. Minh",
-    "fr": "ex. : Minh",
-    "pl": "np. Minh"
-  },
-  "예: 30": {"zh":"例：30","en":"e.g. 30","ja":"例：30","de":"z. B. 30","fr":"ex. : 30","pl":"np. 30"},
-  "예: 김철수": {
-    "zh": "例：王大明",
-    "en": "e.g. John Smith",
-    "ja": "例：山田太郎",
-    "de": "z. B. Thomas Weber",
-    "fr": "ex. : Jean Dupont",
-    "pl": "np. Jan Kowalski"
-  },
-  "예: Long": {
-    "zh": "例：Long",
-    "en": "e.g. Long",
-    "ja": "例：Long",
-    "de": "z. B. Long",
-    "fr": "ex. : Long",
-    "pl": "np. Long"
-  },
-  "예: 45": {"zh":"例：45","en":"e.g. 45","ja":"例：45","de":"z. B. 45","fr":"ex. : 45","pl":"np. 45"},
-  "예: 박영희": {
-    "zh": "例：林美惠",
-    "en": "e.g. Sarah Johnson",
-    "ja": "例：山田花子",
-    "de": "z. B. Sarah Müller",
-    "fr": "ex. : Marie Martin",
-    "pl": "np. Maria Nowak"
-  },
-  "예: Hoa": {
-    "zh": "例：Hoa",
-    "en": "e.g. Hoa",
-    "ja": "例：Hoa",
-    "de": "z. B. Hoa",
-    "fr": "ex. : Hoa",
-    "pl": "np. Hoa"
-  },
-  "예: 40": {"zh":"例：40","en":"e.g. 40","ja":"例：40","de":"z. B. 40","fr":"ex. : 40","pl":"np. 40"},
-  "동생뻘": {
-    "zh": "弟妹輩",
-    "en": "like a younger sibling",
-    "ja": "弟・妹くらい",
-    "de": "wie ein jüngeres Geschwister",
-    "fr": "comme un petit frère/petite sœur",
-    "pl": "jak młodsze rodzeństwo"
-  },
-  "동갑": {
-    "zh": "同輩",
-    "en": "peer",
-    "ja": "同い年",
-    "de": "gleichaltrig",
-    "fr": "du même âge (pairs)",
-    "pl": "rówieśnik"
-  },
-  "형·오빠·누나·언니뻘": {
-    "zh": "哥哥姐姐輩",
-    "en": "like an older sibling",
-    "ja": "兄・姉くらい",
-    "de": "wie ein älteres Geschwister",
-    "fr": "comme un grand frère/grande sœur",
-    "pl": "jak starsze rodzeństwo"
-  },
-  "삼촌·이모뻘(상대가 연장자)": {
-    "zh": "叔叔阿姨輩（對方年長）",
-    "en": "like an aunt/uncle (they're older)",
-    "ja": "おじ・おばくらい（相手が年上）",
-    "de": "wie Onkel/Tante (Gegenüber ist älter)",
-    "fr": "comme un oncle/tante (interlocuteur plus âgé)",
-    "pl": "jak wujek/ciocia (rozmówca starszy)"
-  },
-  "부모님 또래 이상(상대가 연장자)": {
-    "zh": "父母輩以上（對方年長）",
-    "en": "parents' age or older (they're older)",
-    "ja": "親世代以上（相手が年上）",
-    "de": "im Alter der Eltern oder älter",
-    "fr": "de l'âge des parents ou plus âgé",
-    "pl": "w wieku rodziców lub starszy"
-  },
-  "삼촌·이모뻘(내가 연장자)": {
-    "zh": "叔叔阿姨輩（我年長）",
-    "en": "like an aunt/uncle (I'm older)",
-    "ja": "おじ・おばくらい（自分が年上）",
-    "de": "wie Onkel/Tante (ich bin älter)",
-    "fr": "comme un oncle/tante (je suis plus âgé)",
-    "pl": "jak wujek/ciocia (ja jestem starszy)"
-  },
-  "부모님뻘(내가 연장자)": {
-    "zh": "父母輩（我年長）",
-    "en": "parents' age (I'm older)",
-    "ja": "親世代くらい（自分が年上）",
-    "de": "im Alter der Eltern (ich bin älter)",
-    "fr": "de l'âge des parents (je suis plus âgé)",
-    "pl": "w wieku rodziców (ja jestem starszy)"
-  },
-  "초면·예의를 갖춤": {
-    "zh": "初次見面‧有禮貌",
-    "en": "first meeting, polite",
-    "ja": "初対面・丁寧に",
-    "de": "Erstes Treffen, höflich",
-    "fr": "premier contact, poli",
-    "pl": "pierwsze spotkanie, uprzejmie"
-  },
-  "형·오빠": {
-    "zh": "哥哥",
-    "en": "older brother",
-    "ja": "兄",
-    "de": "älterer Bruder",
-    "fr": "grand frère",
-    "pl": "starszy brat"
-  },
-  "누나·언니": {
-    "zh": "姐姐",
-    "en": "older sister",
-    "ja": "姉",
-    "de": "ältere Schwester",
-    "fr": "grande sœur",
-    "pl": "starsza siostra"
-  },
-  "조카뻘": {
-    "zh": "晚輩（姪輩）",
-    "en": "like a niece/nephew",
-    "ja": "甥・姪くらい",
-    "de": "wie Nichte/Neffe",
-    "fr": "comme un neveu/une nièce",
-    "pl": "jak bratanek/siostrzenica"
-  },
-  "자녀뻘(남부)": {
-    "zh": "晚輩（南部，子女輩）",
-    "en": "like one's child (South)",
-    "ja": "子どもくらい（南部）",
-    "de": "im Alter eines Kindes (Süden)",
-    "fr": "comme son enfant (Sud)",
-    "pl": "jak dziecko (Południe)"
-  },
-  "삼촌·아저씨뻘": {
-    "zh": "叔叔‧大叔輩",
-    "en": "like an uncle",
-    "ja": "おじさんくらい",
-    "de": "wie ein Onkel / Herr mittleren Alters",
-    "fr": "comme un oncle / homme d'âge mûr",
-    "pl": "jak wujek / pan w średnim wieku"
-  },
-  "이모·고모·아주머니뻘": {
-    "zh": "阿姨‧姑姑輩",
-    "en": "like an aunt",
-    "ja": "おばさんくらい",
-    "de": "wie eine Tante / Dame mittleren Alters",
-    "fr": "comme une tante / femme d'âge mûr",
-    "pl": "jak ciocia / pani w średnim wieku"
-  },
-  "큰아버지·큰어머니뻘 어르신": {
-    "zh": "伯父‧伯母輩長者",
-    "en": "like a respected elder (uncle/aunt)",
-    "ja": "伯父・伯母くらいの年配の方",
-    "de": "wie ein hochgeachteter älterer Onkel / Tante",
-    "fr": "personne âgée très respectée (aîné)",
-    "pl": "starsza osoba darzona szacunkiem"
-  },
-  "나(또래·북부)": {
-    "zh": "我（同輩‧北部）",
-    "en": "I (peer, North)",
-    "ja": "私（同い年・北部）",
-    "de": "ich (gleichaltrig, Norden)",
-    "fr": "moi (pairs, Nord)",
-    "pl": "ja (rówieśnik, Północ)"
-  },
-  "너(또래·북부)": {
-    "zh": "你（同輩‧北部）",
-    "en": "you (peer, North)",
-    "ja": "あなた（同い年・北部）",
-    "de": "du (gleichaltrig, Norden)",
-    "fr": "toi (pairs, Nord)",
-    "pl": "ty (rówieśnik, Północ)"
-  },
-  "나(또래·남부)": {
-    "zh": "我（同輩‧南部）",
-    "en": "I (peer, South)",
-    "ja": "私（同い年・南部）",
-    "de": "ich (gleichaltrig, Süden)",
-    "fr": "moi (pairs, Sud)",
-    "pl": "ja (rówieśnik, Południe)"
-  },
-  "너(또래·남부)": {
-    "zh": "你（同輩‧南部）",
-    "en": "you (peer, South)",
-    "ja": "あなた（同い年・南部）",
-    "de": "du (gleichaltrig, Süden)",
-    "fr": "toi (pairs, Sud)",
-    "pl": "ty (rówieśnik, Południe)"
-  },
-  "나(중립·예의)": {
-    "zh": "我（中立‧禮貌）",
-    "en": "I (neutral, polite)",
-    "ja": "私（中立・丁寧）",
-    "de": "ich (neutral, höflich)",
-    "fr": "moi (neutre, poli)",
-    "pl": "ja (neutralnie, uprzejmie)"
-  },
-  "나보다 어린 사람 — 동생뻘": {
-    "zh": "比我小的人——弟妹輩",
-    "en": "Someone younger than me — like a younger sibling",
-    "ja": "自分より年下の人 — 弟・妹くらい",
-    "de": "Jünger als ich – wie ein jüngeres Geschwister",
-    "fr": "Plus jeune que moi — comme un petit frère/petite sœur",
-    "pl": "Osoba młodsza ode mnie — jak młodsze rodzeństwo"
-  },
-  "나와 동갑 — 원자료에 없어 새로 구성": {
-    "zh": "跟我同輩——原始資料沒有，另行編寫",
-    "en": "My peers — not in the original material, newly composed",
-    "ja": "私と同い年 — 元の資料にないため、新たに作成",
-    "de": "Gleichaltrig mit mir – neu zusammengestellt",
-    "fr": "Du même âge — pairs (adapté pour les apprenants)",
-    "pl": "Rówieśnicy — zestawienie dla uczących się"
-  },
-  "나보다 손위 — 형·오빠·누나·언니뻘": {
-    "zh": "比我年長的人——哥哥姐姐輩",
-    "en": "Someone older than me — like an older sibling",
-    "ja": "私より年上 — 兄や姉にあたる人",
-    "de": "Älter als ich – wie ein älteres Geschwister",
-    "fr": "Plus âgé que moi — comme un grand frère/grande sœur",
-    "pl": "Osoba starsza ode mnie — jak starsze rodzeństwo"
-  },
-  "삼촌·이모뻘 — 내 아버지·어머니보다는 젊은 분(상대가 연장자)": {
-    "zh": "叔叔阿姨輩——比我父母年輕的長輩（對方年長）",
-    "en": "Like an aunt/uncle — younger than my parents (they're older)",
-    "ja": "おじ・おばにあたる方 — 私の父母より若い方（相手が年上）",
-    "de": "Wie Onkel/Tante – jünger als meine Eltern (Gegenüber ist älter)",
-    "fr": "Comme un oncle/une tante — plus jeune que mes parents (interlocuteur plus âgé)",
-    "pl": "W wieku wujka/cioci — młodszy od moich rodziców (rozmówca starszy)"
-  },
-  "부모님 또래이거나 더 많으신 분(상대가 연장자)": {
-    "zh": "跟父母同輩或更年長（對方年長）",
-    "en": "About my parents' age or older (they're older)",
-    "ja": "両親と同世代か、それ以上の方（相手が年上）",
-    "de": "Im Alter meiner Eltern oder älter (Gegenüber ist älter)",
-    "fr": "De l'âge de mes parents ou plus âgé (interlocuteur plus âgé)",
-    "pl": "W wieku moich rodziców lub starszy (rozmówca starszy)"
-  },
-  "삼촌·이모뻘 — 내가 상대방보다 훨씬 연장자": {
-    "zh": "叔叔阿姨輩——我比對方年長很多",
-    "en": "Like an aunt/uncle — I'm much older than them",
-    "ja": "おじ・おばにあたる方 — 私が相手よりずっと年上",
-    "de": "Wie Onkel/Tante – ich bin viel älter als das Gegenüber",
-    "fr": "Comme un oncle/une tante — je suis bien plus âgé",
-    "pl": "W wieku wujka/cioci — jestem znacznie starszy"
-  },
-  "내가 상대방 부모보다 나이가 많음": {
-    "zh": "我比對方的父母年長",
-    "en": "I'm older than their parents",
-    "ja": "私が相手の親より年上",
-    "de": "Ich bin älter als die Eltern der Person",
-    "fr": "Je suis plus âgé que ses parents",
-    "pl": "Jestem starszy od rodziców rozmówcy"
-  },
-  "내가 형제일 때": {
-    "zh": "我是弟兄時",
-    "en": "When I'm a brother",
-    "ja": "私が兄弟の場合",
-    "de": "Wenn ich ein Bruder bin",
-    "fr": "Quand je suis un frère",
-    "pl": "Gdy jestem bratem"
-  },
-  "내가 자매일 때": {
-    "zh": "我是姐妹時",
-    "en": "When I'm a sister",
-    "ja": "私が姉妹の場合",
-    "de": "Wenn ich eine Schwester bin",
-    "fr": "Quand je suis une sœur",
-    "pl": "Gdy jestem siostrą"
-  },
-  "상대가 남성일 때": {
-    "zh": "對方是男性時",
-    "en": "When they're male",
-    "ja": "相手が男性の場合",
-    "de": "Wenn die Person männlich ist",
-    "fr": "Quand l'interlocuteur est un homme",
-    "pl": "Gdy rozmówca jest mężczyzną"
-  },
-  "상대가 여성일 때": {
-    "zh": "對方是女性時",
-    "en": "When they're female",
-    "ja": "相手が女性の場合",
-    "de": "Wenn die Person weiblich ist",
-    "fr": "Quand l'interlocuteur est une femme",
-    "pl": "Gdy rozmówca jest kobietą"
-  },
-  "상대가 남성 · 북부": {
-    "zh": "對方是男性‧北部",
-    "en": "Male, North",
-    "ja": "相手が男性・北部",
-    "de": "Männlich, Norden",
-    "fr": "Homme, Nord",
-    "pl": "Mężczyzna, Północ"
-  },
-  "상대가 남성 · 남부": {
-    "zh": "對方是男性‧南部",
-    "en": "Male, South",
-    "ja": "相手が男性・南部",
-    "de": "Männlich, Süden",
-    "fr": "Homme, Sud",
-    "pl": "Mężczyzna, Południe"
-  },
-  "상대가 여성 · 북부": {
-    "zh": "對方是女性‧北部",
-    "en": "Female, North",
-    "ja": "相手が女性・北部",
-    "de": "Weiblich, Norden",
-    "fr": "Femme, Nord",
-    "pl": "Kobieta, Północ"
-  },
-  "상대가 여성 · 남부": {
-    "zh": "對方是女性‧南部",
-    "en": "Female, South",
-    "ja": "相手が女性・南部",
-    "de": "Weiblich, Süden",
-    "fr": "Femme, Sud",
-    "pl": "Kobieta, Południe"
-  },
-  "내가 남성 · 북부": {
-    "zh": "我是男性‧北部",
-    "en": "I'm male, North",
-    "ja": "私が男性・北部",
-    "de": "Ich bin männlich, Norden",
-    "fr": "Je suis un homme, Nord",
-    "pl": "Jestem mężczyzną, Północ"
-  },
-  "내가 남성 · 남부": {
-    "zh": "我是男性‧南部",
-    "en": "I'm male, South",
-    "ja": "私が男性・南部",
-    "de": "Ich bin männlich, Süden",
-    "fr": "Je suis un homme, Sud",
-    "pl": "Jestem mężczyzną, Południe"
-  },
-  "내가 여성 · 북부": {
-    "zh": "我是女性‧北部",
-    "en": "I'm female, North",
-    "ja": "私が女性・北部",
-    "de": "Ich bin weiblich, Norden",
-    "fr": "Je suis une femme, Nord",
-    "pl": "Jestem kobietą, Północ"
-  },
-  "내가 여성 · 남부": {
-    "zh": "我是女性‧南部",
-    "en": "I'm female, South",
-    "ja": "私が女性・南部",
-    "de": "Ich bin weiblich, Süden",
-    "fr": "Je suis une femme, Sud",
-    "pl": "Jestem kobietą, Południe"
-  },
-  "상대가 20~30대 남성": {
-    "zh": "對方是20～30多歲男性",
-    "en": "Male, 20s–30s",
-    "ja": "相手が20~30代の男性",
-    "de": "Männlich, 20er–30er Jahre",
-    "fr": "Homme, 20–30 ans",
-    "pl": "Mężczyzna, 20–30 lat"
-  },
-  "상대가 20~30대 여성": {
-    "zh": "對方是20～30多歲女性",
-    "en": "Female, 20s–30s",
-    "ja": "相手が20~30代の女性",
-    "de": "Weiblich, 20er–30er Jahre",
-    "fr": "Femme, 20–30 ans",
-    "pl": "Kobieta, 20–30 lat"
-  },
-  "상대가 40~70대 남성": {
-    "zh": "對方是40～70多歲男性",
-    "en": "Male, 40s–70s",
-    "ja": "相手が40~70代の男性",
-    "de": "Männlich, 40er–70er Jahre",
-    "fr": "Homme, 40–70 ans",
-    "pl": "Mężczyzna, 40–70 lat"
-  },
-  "상대가 40~70대 여성": {
-    "zh": "對方是40～70多歲女性",
-    "en": "Female, 40s–70s",
-    "ja": "相手が40~70代の女性",
-    "de": "Weiblich, 40er–70er Jahre",
-    "fr": "Femme, 40–70 ans",
-    "pl": "Kobieta, 40–70 lat"
-  },
-  "상대가 80대 이상": {
-    "zh": "對方是80歲以上",
-    "en": "80 or older",
-    "ja": "相手が80代以上",
-    "de": "80 Jahre oder älter",
-    "fr": "80 ans ou plus",
-    "pl": "80 lat lub więcej"
-  },
-  "상대를 부를 때": {
-    "zh": "稱呼對方時",
-    "en": "When addressing them",
-    "ja": "相手を呼ぶとき",
-    "de": "Anrede für das Gegenüber",
-    "fr": "Pour s'adresser à l'interlocuteur",
-    "pl": "Zwrot do rozmówcy"
-  },
-  "나를 가리킬 때": {
-    "zh": "稱呼自己時",
-    "en": "When referring to yourself",
-    "ja": "自分を指すとき",
-    "de": "Selbstbezeichnung (Ich)",
-    "fr": "Pour se désigner soi-même",
-    "pl": "Określenie siebie"
-  },
-  "문장 끝: ": {
-    "zh": "句尾：",
-    "en": "End of sentence: ",
-    "ja": "文末: ",
-    "de": "Satzende: ",
-    "fr": "Fin de phrase : ",
-    "pl": "Koniec zdania: "
-  },
-  "대답 시작: ": {
-    "zh": "回答開頭：",
-    "en": "Start of reply: ",
-    "ja": "返事の始め: ",
-    "de": "Antwortbeginn: ",
-    "fr": "Début de réponse : ",
-    "pl": "Początek odpowiedzi: "
-  },
-  "<b>ạ</b> (존대)": {
-    "zh": "<b>ạ</b>（敬語）",
-    "en": "<b>ạ</b> (polite)",
-    "ja": "<b>ạ</b>（敬語）",
-    "de": "<b>ạ</b> (höflich)",
-    "fr": "<b>ạ</b> (poli)",
-    "pl": "<b>ạ</b> (uprzejmie)"
-  },
-  "<b>없음</b> (편하게)": {
-    "zh": "<b>沒有</b>（隨意）",
-    "en": "<b>None</b> (casual)",
-    "ja": "<b>なし</b>（気軽に）",
-    "de": "<b>Keine</b> (umgangssprachlich)",
-    "fr": "<b>Aucun</b> (familier)",
-    "pl": "<b>Brak</b> (swobodnie)"
-  },
-  "<b>없음</b>": {
-    "zh": "<b>沒有</b>",
-    "en": "<b>None</b>",
-    "ja": "<b>なし</b>",
-    "de": "<b>Keine</b>",
-    "fr": "<b>Aucun</b>",
-    "pl": "<b>Brak</b>"
-  },
-  "<b>dạ</b> (네)": {
-    "zh": "<b>dạ</b>（是）",
-    "en": "<b>dạ</b> (yes)",
-    "ja": "<b>dạ</b>（はい）",
-    "de": "<b>dạ</b> (ja)",
-    "fr": "<b>dạ</b> (oui)",
-    "pl": "<b>dạ</b> (tak)"
-  },
-  "발음 듣기": {
-    "zh": "播放發音",
-    "en": "Play pronunciation",
-    "ja": "発音を聞く",
-    "de": "Aussprache anhören",
-    "fr": "Écouter la prononciation",
-    "pl": "Odsłuchaj wymowę"
-  },
-  "눌러서 뜻 보기": {
-    "zh": "點一下看意思",
-    "en": "Tap to reveal meaning",
-    "ja": "タップして意味を見る",
-    "de": "Tippen für Bedeutung",
-    "fr": "Appuyer pour afficher le sens",
-    "pl": "Dotknij, aby zobaczyć znaczenie"
-  },
-  "눌러서 가리기": {
-    "zh": "點一下遮住",
-    "en": "Tap to hide",
-    "ja": "タップして隠す",
-    "de": "Tippen zum Verbergen",
-    "fr": "Appuyer pour masquer",
-    "pl": "Dotknij, aby ukryć"
-  },
-  "남성 형제": {"zh":"男性弟兄","en":"a brother","ja":"男性の兄弟","de":"ein Bruder","fr":"un frère","pl":"brat"},
-  "여성 자매": {
-    "zh": "女性姐妹",
-    "en": "a sister",
-    "ja": "女性の姉妹",
-    "de": "eine Schwester",
-    "fr": "une sœur",
-    "pl": "siostra"
-  },
-  "장로 형제": {
-    "zh": "長老弟兄",
-    "en": "Elder Brother",
-    "ja": "長老の兄弟",
-    "de": "ein Ältester",
-    "fr": "un ancien",
-    "pl": "starszy zboru"
-  },
-  "파이오니아 자매": {
-    "zh": "先驅姐妹",
-    "en": "Pioneer Sister",
-    "ja": "開拓者の姉妹",
-    "de": "eine Pionierschwester",
-    "fr": "une pionnière",
-    "pl": "pionierka"
-  },
-  "이성과의 만남이에요. 인사와 소개 후에는 같은 성별의 동료(": {
-    "zh": "這是異性會面。打過招呼、做完自我介紹後，最好把聯絡方式轉交給同性別的同伴（",
-    "en": "This is a meeting with someone of the opposite sex. After greeting and introducing yourself, it's best to hand off contact info to a same-gender companion (",
-    "ja": "異性との面会です。挨拶と自己紹介を済ませたら、同性の奉仕の仲間（",
-    "de": "Dies ist ein Treffen mit einer Person des anderen Geschlechts. Nach der Begrüßung und Vorstellung empfiehlt es sich, die Kontaktdaten an einen gleichgeschlechtlichen Dienstpartner (",
-    "fr": "Il s'agit d'une rencontre avec une personne du sexe opposé. Après les salutations et la présentation, il est préférable de transmettre les coordonnées à un compagnon du même sexe (",
-    "pl": "To spotkanie z osobą przeciwnej płci. Po powitaniu i przedstawieniu się warto przekazać kontakt współpracownikowi tej samej płci ("
-  },
-  ")에게 연락처를 전달하고, 재방문·성서 연구는 그 동료와 함께 진행하는 것이 좋아요.": {
-    "zh": "），並和該同伴一起進行重訪和聖經研究。",
-    "en": ") and have that person join you for the callback and Bible study.",
-    "ja": "）に連絡先を渡し、再訪問・聖書研究はその仲間と一緒に行うとよいでしょう。",
-    "de": ") weiterzugeben und Rückbesuche sowie das Bibelstudium gemeinsam durchzuführen.",
-    "fr": ") et d'effectuer les nouvelles visites et le cours biblique avec ce compagnon.",
-    "pl": ") i prowadzić odwiedziny ponowne oraz studium biblijne razem z nim."
-  },
-  "봉사짝 호칭: ": {
-    "zh": "傳道夥伴稱呼：",
-    "en": "Companion's term of address: ",
-    "ja": "奉仕の仲間の呼び方： ",
-    "de": "Anrede des Dienstpartners: ",
-    "fr": "Terme d'adresse du compagnon : ",
-    "pl": "Forma do współgłosiciela: "
-  },
-  "이전 단계": {
-    "zh": "上一步",
-    "en": "Previous",
-    "ja": "前へ",
-    "de": "Vorheriger Schritt",
-    "fr": "Étape précédente",
-    "pl": "Poprzedni krok"
-  },
-  "다음 단계": {
-    "zh": "下一步",
-    "en": "Next",
-    "ja": "次へ",
-    "de": "Nächster Schritt",
-    "fr": "Étape suivante",
-    "pl": "Następny krok"
-  },
-  "아직 참여자 정보가 입력되지 않았어요. 입력하면 위 대화문의 이름·전화번호·나이·호칭이 자동으로 채워져요.": {
-    "zh": "還沒輸入參與者資訊。輸入後，上面對話中的姓名‧電話號碼‧年齡‧稱呼會自動填入。",
-    "en": "No participant info entered yet. Fill it in and the name, phone number, age, and terms of address in the dialogue above will fill in automatically.",
-    "ja": "まだ参加者情報が入力されていません。入力すると、上の会話文の名前・電話番号・年齢・呼び方が自動的に入力されます。",
-    "de": "Noch keine Teilnehmerdaten eingegeben. Nach der Eingabe werden Name, Telefonnummer, Alter und Anredeformen oben automatisch ausgefüllt.",
-    "fr": "Les informations sur les interlocuteurs n'ont pas encore été saisies. Une fois renseignées, le nom, le numéro de téléphone, l'âge et les formules d'adresse dans les dialogues s'adapteront automatiquement.",
-    "pl": "Nie wprowadzono jeszcze informacji o rozmówcach. Po ich podaniu imię, numer telefonu, wiek i formy grzecznościowe w dialogu uzupełnią się automatycznie."
-  },
-  "대화 탭에서 참여자 정보 입력하기 →": {
-    "zh": "到「對話」分頁輸入參與者資訊 →",
-    "en": "Enter participant info in the Dialogue tab →",
-    "ja": "「会話」タブで参加者情報を入力する →",
-    "de": "Teilnehmerdaten im Tab Dialog eingeben →",
-    "fr": "Saisir les informations sous l'onglet Dialogue →",
-    "pl": "Wprowadź informacje w zakładce Rozmowy →"
-  },
-  "대화 탭에서 참여자 정보 수정하기 →": {
-    "zh": "到「對話」分頁修改參與者資訊 →",
-    "en": "Edit participant info in the Dialogue tab →",
-    "ja": "「会話」タブで参加者情報を編集する →",
-    "de": "Teilnehmerdaten im Tab Dialog bearbeiten →",
-    "fr": "Modifier les informations sous l'onglet Dialogue →",
-    "pl": "Edytuj informacje w zakładce Rozmowy →"
-  },
-  "이름 미입력": {
-    "zh": "尚未輸入姓名",
-    "en": "No name entered",
-    "ja": "名前未入力",
-    "de": "Kein Name eingegeben",
-    "fr": "Nom non renseigné",
-    "pl": "Brak imienia"
-  },
-  "호칭 ": {
-    "zh": "稱呼 ",
-    "en": "Address: ",
-    "ja": "呼び方 ",
-    "de": "Anrede: ",
-    "fr": "Adresse : ",
-    "pl": "Forma: "
-  },
-  "세": {"zh":"歲","en":" y/o","ja":"歳","de":" Jahre","fr":" ans","pl":" lat"},
-  "이전 카드": {
-    "zh": "上一張卡片",
-    "en": "Previous card",
-    "ja": "前のカード",
-    "de": "Vorherige Karte",
-    "fr": "Carte précédente",
-    "pl": "Poprzednia karta"
-  },
-  "다시 듣기": {
-    "zh": "重新播放",
-    "en": "Play again",
-    "ja": "もう一度聞く",
-    "de": "Erneut anhören",
-    "fr": "Réécouter",
-    "pl": "Odtwórz ponownie"
-  },
-  "섞기": {"zh":"洗牌","en":"Shuffle","ja":"シャッフル","de":"Mischen","fr":"Mélanger","pl":"Wymieszaj"},
-  "다음 카드": {
-    "zh": "下一張卡片",
-    "en": "Next card",
-    "ja": "次のカード",
-    "de": "Nächste Karte",
-    "fr": "Carte suivante",
-    "pl": "Następna karta"
-  },
-  "듣고 알맞은 뜻을 고르세요": {
-    "zh": "聽發音，選出正確的意思",
-    "en": "Listen and choose the correct meaning",
-    "ja": "聞いて正しい意味を選んでください",
-    "de": "Hören und die richtige Bedeutung wählen",
-    "fr": "Écoutez et choisissez le bon sens",
-    "pl": "Posłuchaj i wybierz właściwe znaczenie"
-  },
-  "보고 알맞은 뜻을 고르세요": {
-    "zh": "看單字，選出正確的意思",
-    "en": "Look at the word and choose the correct meaning",
-    "ja": "見て正しい意味を選んでください",
-    "de": "Wort ansehen und die richtige Bedeutung wählen",
-    "fr": "Regardez le mot et choisissez le bon sens",
-    "pl": "Spójrz na słowo i wybierz właściwe znaczenie"
-  },
-  "다음 문제 →": {
-    "zh": "下一題 →",
-    "en": "Next →",
-    "ja": "次の問題 →",
-    "de": "Nächste Frage →",
-    "fr": "Question suivante →",
-    "pl": "Następne pytanie →"
-  },
-  "다시 담기": {"zh":"重新排列","en":"Reset","ja":"リセット","de":"Wiederholen","fr":"Remettre","pl":"Powtórz"},
-  "정답이에요! 🎉": {
-    "zh": "答對了！🎉",
-    "en": "Correct! 🎉",
-    "ja": "正解です！🎉",
-    "de": "Richtig! 🎉",
-    "fr": "Bonne réponse ! 🎉",
-    "pl": "Prawidłowo! 🎉"
-  },
-  "순서가 달라요. 다시 시도해 보세요.": {
-    "zh": "順序不對，請再試一次。",
-    "en": "Wrong order — try again.",
-    "ja": "順序が違います。もう一度試してください。",
-    "de": "Falsche Reihenfolge – bitte noch einmal versuchen.",
-    "fr": "L'ordre n'est pas correct. Réessayez.",
-    "pl": "Nieprawidłowa kolejność — spróbuj ponownie."
-  },
-  "정답: ": {
-    "zh": "正確答案：",
-    "en": "Answer: ",
-    "ja": "正解： ",
-    "de": "Richtige Antwort: ",
-    "fr": "Réponse : ",
-    "pl": "Odpowiedź: "
-  },
-  "확인": {"zh":"確認","en":"Check","ja":"確認","de":"Bestätigen","fr":"Vérifier","pl":"Sprawdź"},
-  "다시 확인해 보세요.": {
-    "zh": "請再檢查一次。",
-    "en": "Check again.",
-    "ja": "もう一度確認してください。",
-    "de": "Bitte noch einmal prüfen.",
-    "fr": "Vérifiez à nouveau.",
-    "pl": "Sprawdź ponownie."
-  },
-  "이 탭에는 아직 복습할 자료가 없어요.": {
-    "zh": "這個分頁還沒有可複習的資料。",
-    "en": "There's no material to review in this tab yet.",
-    "ja": "このタブにはまだ復習する内容がありません。",
-    "de": "In diesem Tab gibt es noch kein Material zum Wiederholen.",
-    "fr": "Il n'y a pas encore de contenu à réviser sous cet onglet.",
-    "pl": "W tej zakładce nie ma jeszcze materiałów do powtórki."
-  },
-  "010-0000-0000": {
-    "zh": "0900-000-000",
-    "en": "010-0000-0000",
-    "ja": "0X0-0000-0000",
-    "de": "010-0000-0000",
-    "fr": "010-0000-0000",
-    "pl": "010-0000-0000"
-  },
-  "대화 탭에서 선택한 나와 상대방의 관계에 따라, 제공 연설 대화문 속 \"저는(tôi)\"·\"당신은(bạn)\" 표현이 실제 상황에 맞는 호칭으로 자동으로 바뀌어요. 아직 선택하지 않았다면 원문 그대로 tôi·bạn으로 표시돼요.": {
-    "zh": "「提供演講」對話文中的「我是(tôi)」‧「您是(bạn)」會依照您在〔對話〕分頁中選擇的雙方關係，自動換成符合實際情況的稱呼。若尚未選擇，則會維持原文顯示為 tôi‧bạn。",
-    "en": "Based on the relationship you selected in the [Dialogue] tab, the \"I (tôi)\" / \"you (bạn)\" expressions in the offer-talk dialogue automatically change to the appropriate terms of address for that situation. If nothing has been selected yet, they stay as the original tôi/bạn.",
-    "ja": "「会話」タブで選択した自分と相手の関係に応じて、提供トークの会話文にある「私は(tôi)」・「あなたは(bạn)」という表現が、実際の状況に合った呼び方に自動的に変わります。まだ選択していない場合は、原文のまま tôi・bạn と表示されます。",
-    "de": "Je nach der im Tab [Dialog] gewählten Beziehung zwischen Ihnen und der Person werden die Ausdrücke „ich (tôi)“ und „Sie/du (bạn)“ im Gesprächsvorschlag automatisch an die reale Situation angepasst. Wurde noch nichts ausgewählt, bleibt die Originalanzeige tôi/bạn.",
-    "fr": "Selon la relation choisie sous l'onglet Dialogue, les expressions « tôi » (je) et « bạn » (vous) dans les présentations modèles sont automatiquement remplacées par les termes adaptés. Si aucun choix n'a été fait, les termes originaux tôi et bạn sont conservés.",
-    "pl": "W zależności od relacji wybranej w zakładce Rozmowy, zaimki „tôi” i „bạn” we wzorach rozmów automatycznie zmienią się na właściwe formy grzecznościowe."
-  },
-  "현재 대화문: 상대를 부를 때 “": {
-    "zh": "目前對話文：稱呼對方時用「",
-    "en": "Current dialogue: addressing the other person as \"",
-    "ja": "現在の会話文：相手を呼ぶときは「",
-    "de": "Aktueller Dialog: Anrede für das Gegenüber „",
-    "fr": "Dialogue actuel : s'adresser à l'interlocuteur avec « ",
-    "pl": "Bieżący dialog: zwracanie się do rozmówcy jako „"
-  },
-  "”, 나를 가리킬 때 “": {
-    "zh": "」，稱呼自己時用「",
-    "en": "\", and referring to yourself as \"",
-    "ja": "」、自分を指すときは「",
-    "de": "“, Selbstbezeichnung „",
-    "fr": " », et se désigner soi-même avec « ",
-    "pl": "”, a określanie siebie jako „"
-  },
-  "” 로 표시돼요.": {"zh":"」來顯示。","en":"\".","ja":"」と表示されます。","de":"“.","fr":" ».","pl":"”."},
-  "<p class=\"p-desc\">iOS/iPadOS의 내장 기능을 사용하면 별도의 앱 설치 없이 베트남어 텍스트를 읽게 할 수 있어요.</p><h4>1단계: 베트남어 TTS 음성 다운로드하기</h4><ol><li>설정 앱을 엽니다.</li><li><b>손쉬운 사용</b> 메뉴로 이동합니다.</li><li><b>읽기 및 말하기</b>(또는 iOS 버전에 따라 <b>콘텐츠 말하기</b>)를 선택합니다.</li><li><b>음성</b>을 탭합니다.</li><li>스크롤을 내려 <b>베트남어</b>를 선택합니다.</li><li>원하는 목소리(예: Linh) 옆의 구름 모양(다운로드) 아이콘을 눌러 음성 데이터를 다운로드합니다. ‘고품질’ 버전을 다운로드하면 훨씬 자연스러운 AI 음성으로 들을 수 있어요.</li></ol><h4>2단계: 화면의 베트남어 텍스트 읽히기 (사용 방법)</h4><p class=\"p-desc\">다운로드가 완료되면 다음 두 가지 방법으로 베트남어를 읽게 만들 수 있어요. 동일하게 설정 &gt; 손쉬운 사용 &gt; 콘텐츠 말하기 메뉴에서 활성화할 수 있습니다.</p><h4>방법 A: 선택 항목 말하기 (추천)</h4><ol><li>설정 방법: ‘선택 항목 말하기’ 기능을 켭니다.</li><li>사용 방법: 웹서핑이나 텍스트 앱에서 베트남어 단어·문장을 길게 눌러 블록을 지정한 후, 팝업 메뉴에서 ‘말하기’를 누르면 베트남어로 읽어줘요.</li></ol><h4>방법 B: 화면 말하기</h4><ol><li>설정 방법: ‘화면 말하기’ 기능을 켭니다.</li><li>사용 방법: 베트남어로 된 뉴스나 전자책 화면에서 두 손가락으로 화면 상단에서 아래로 쓸어내리면 화면 전체의 텍스트를 자동으로 인식해 처음부터 끝까지 읽어줘요.</li></ol>": {
-    "zh": "<p class=\"p-desc\">使用 iOS/iPadOS 的內建功能,不需要另外安裝 App,就能讓裝置朗讀越南語文字。</p><h4>步驟一:下載越南語 TTS 語音</h4><ol><li>開啟「設定」App。</li><li>前往<b>輔助使用</b>選單。</li><li>選擇<b>朗讀內容</b>(依 iOS 版本不同,亦可能顯示為<b>講出內容</b>)。</li><li>點一下<b>語音</b>。</li><li>往下捲動並選擇<b>越南語</b>。</li><li>點選想要的語音(例如 Linh)旁邊的雲朵(下載)圖示,即可下載語音資料。若下載「高品質」版本,就能聽到更自然的 AI 語音。</li></ol><h4>步驟二:讓螢幕上的越南語文字被朗讀出來(使用方法)</h4><p class=\"p-desc\">下載完成後,可以透過以下兩種方式讓裝置朗讀越南語。這兩項功能同樣可在「設定 &gt; 輔助使用 &gt; 講出內容」選單中開啟。</p><h4>方法 A:朗讀所選項目(推薦)</h4><ol><li>設定方法:開啟「朗讀所選項目」功能。</li><li>使用方法:在瀏覽網頁或文字 App 時,長按越南語單字或句子以選取範圍,接著在彈出式選單中點選「朗讀」,即可聽到越南語朗讀。</li></ol><h4>方法 B:朗讀螢幕</h4><ol><li>設定方法:開啟「朗讀螢幕」功能。</li><li>使用方法:在顯示越南語新聞或電子書的畫面上,用兩根手指從螢幕頂端向下滑動,系統就會自動辨識整個畫面的文字,並從頭到尾朗讀出來。</li></ol>",
-    "en": "<p class=\"p-desc\">You can use the built-in features of iOS/iPadOS to have Vietnamese text read aloud, without installing a separate app.</p><h4>Step 1: Download a Vietnamese TTS Voice</h4><ol><li>Open the Settings app.</li><li>Go to the <b>Accessibility</b> menu.</li><li>Select <b>Spoken Content</b> (or <b>Speak Screen &amp; Content</b>, depending on your iOS version).</li><li>Tap <b>Voices</b>.</li><li>Scroll down and select <b>Vietnamese</b>.</li><li>Tap the cloud (download) icon next to the voice you want (e.g., Linh) to download the voice data. Downloading the \"Premium\" (high-quality) version gives you a much more natural-sounding AI voice.</li></ol><h4>Step 2: Have On-Screen Vietnamese Text Read Aloud (How to Use)</h4><p class=\"p-desc\">Once the download is complete, there are two ways to have Vietnamese read aloud. Both can also be turned on from Settings &gt; Accessibility &gt; Spoken Content.</p><h4>Method A: Speak Selection (Recommended)</h4><ol><li>Setup: Turn on the \"Speak Selection\" feature.</li><li>How to use: While browsing the web or using a text app, press and hold a Vietnamese word or sentence to select it, then tap \"Speak\" in the pop-up menu to hear it read aloud in Vietnamese.</li></ol><h4>Method B: Speak Screen</h4><ol><li>Setup: Turn on the \"Speak Screen\" feature.</li><li>How to use: On a screen showing Vietnamese news or an e-book, swipe down from the top of the screen with two fingers, and all the text on screen will be automatically recognized and read aloud from start to finish.</li></ol>",
-    "ja": "<p class=\"p-desc\">iOS/iPadOSの内蔵機能を使えば、別途アプリをインストールしなくてもベトナム語のテキストを読み上げさせることができます。</p><h4>ステップ1:ベトナム語のTTS音声をダウンロードする</h4><ol><li>「設定」アプリを開きます。</li><li><b>アクセシビリティ</b>メニューに移動します。</li><li><b>読み上げコンテンツ</b>(iOSのバージョンによっては<b>コンテンツの読み上げ</b>)を選択します。</li><li><b>声</b>をタップします。</li><li>下にスクロールして<b>ベトナム語</b>を選択します。</li><li>使用したい音声(例:Linh)の横にある雲のマーク(ダウンロード)アイコンをタップして音声データをダウンロードします。「高品質」版をダウンロードすると、より自然なAI音声で聞くことができます。</li></ol><h4>ステップ2:画面上のベトナム語テキストを読み上げさせる(使い方)</h4><p class=\"p-desc\">ダウンロードが完了すると、次の2つの方法でベトナム語を読み上げさせることができます。どちらも設定 &gt; アクセシビリティ &gt; 読み上げコンテンツのメニューから有効にできます。</p><h4>方法A:選択項目の読み上げ(おすすめ)</h4><ol><li>設定方法:「選択項目の読み上げ」機能をオンにします。</li><li>使い方:ウェブサイトやテキストアプリでベトナム語の単語や文章を長押しして選択し、ポップアップメニューで「読み上げ」をタップすると、ベトナム語で読み上げてくれます。</li></ol><h4>方法B:画面の読み上げ</h4><ol><li>設定方法:「画面の読み上げ」機能をオンにします。</li><li>使い方:ベトナム語のニュースや電子書籍が表示された画面で、2本指で画面の上端から下へスワイプすると、画面全体のテキストが自動的に認識され、最初から最後まで読み上げられます。</li></ol>",
-    "de": "<p class=\"p-desc\">Mit den integrierten Funktionen von iOS/iPadOS können Sie sich vietnamesischen Text vorlesen lassen, ohne eine separate App zu installieren.</p><h4>Schritt 1: Vietnamesische TTS-Stimme herunterladen</h4><ol><li>Öffnen Sie die App <b>Einstellungen</b>.</li><li>Gehen Sie zum Menü <b>Bedienungshilfen</b>.</li><li>Wählen Sie <b>Gesprochene Inhalte</b>.</li><li>Tippen Sie auf <b>Stimmen</b>.</li><li>Scrollen Sie nach unten und wählen Sie <b>Vietnamesisch</b>.</li><li>Tippen Sie auf das Wolkensymbol (Download) neben der gewünschten Stimme (z. B. Linh), um die Sprachdaten herunterzuladen. Die „Erweiterte“ Version bietet eine besonders natürliche Stimme.</li></ol><h4>Schritt 2: Vietnamesischen Text auf dem Bildschirm vorlesen lassen</h4><p class=\"p-desc\">Nach dem Download gibt es zwei Möglichkeiten zum Vorlesen. Beide lassen sich unter Einstellungen &gt; Bedienungshilfen &gt; Gesprochene Inhalte aktivieren.</p><h4>Methode A: Auswahl vorlesen (Empfohlen)</h4><ol><li>Einrichtung: Aktivieren Sie „Auswahl vorlesen“.</li><li>Verwendung: Halten Sie beim Surfen oder in Text-Apps ein vietnamesisches Wort oder einen Satz gedrückt, um den Text auszuwählen, und tippen Sie im Menü auf „Sprechen“.</li></ol><h4>Methode B: Bildschirminhalt sprechen</h4><ol><li>Einrichtung: Aktivieren Sie „Bildschirminhalt sprechen“.</li><li>Verwendung: Streichen Sie mit zwei Fingern vom oberen Bildschirmrand nach unten, um den gesamten Text auf dem Bildschirm vorlesen zu lassen.</li></ol>",
-    "fr": "<p class=\"p-desc\">Vous pouvez utiliser les fonctionnalités intégrées d'iOS/iPadOS pour faire lire du texte vietnamien à voix haute sans installer d'application tierce.</p><h4>Étape 1 : Télécharger une voix TTS vietnamienne</h4><ol><li>Ouvrez l'application <b>Réglages</b>.</li><li>Allez dans le menu <b>Accessibilité</b>.</li><li>Sélectionnez <b>Contenu énoncé</b>.</li><li>Touchez <b>Voix</b>.</li><li>Faites défiler vers le bas et sélectionnez <b>Vietnamien</b>.</li><li>Touchez l'icône de nuage (téléchargement) à côté de la voix souhaitée (ex. : Linh) pour installer les données vocales. La version de haute qualité offre une voix beaucoup plus naturelle.</li></ol><h4>Étape 2 : Faire lire le texte vietnamien à l'écran</h4><p class=\"p-desc\">Une fois le téléchargement terminé, deux options s'offrent à vous :</p><h4>Méthode A : Énoncer la sélection (Recommandé)</h4><ol><li>Activez « Énoncer la sélection ».</li><li>Sélectionnez un mot ou une phrase en vietnamien sur une page web ou dans une application, puis touchez « Énoncer » dans le menu contextuel.</li></ol><h4>Méthode B : Énoncer le contenu de l'écran</h4><ol><li>Activez « Énoncer le contenu de l'écran ».</li><li>Faites glisser deux doigts depuis le haut de l'écran vers le bas pour lire tout le texte affiché.</li></ol>",
-    "pl": "<p class=\"p-desc\">Dzięki wbudowanym funkcjom iOS/iPadOS możesz słuchać czytanego tekstu wietnamskiego bez instalowania dodatkowych aplikacji.</p><h4>Krok 1: Pobierz głos syntezatora mowy (TTS) dla wietnamskiego</h4><ol><li>Otwórz aplikację <b>Ustawienia</b>.</li><li>Przejdź do menu <b>Dostępność</b>.</li><li>Wybierz <b>Zawartość mówiona</b>.</li><li>Dotknij <b>Głosy</b>.</li><li>Przewiń w dół i wybierz <b>Wietnamski</b>.</li><li>Dotknij ikony chmury (pobieranie) obok wybranego głosu (np. Linh). Wersja ulepszona zapewnia bardziej naturalny głos.</li></ol><h4>Krok 2: Odczytywanie tekstu z ekranu</h4><p class=\"p-desc\">Po pobraniu możesz korzystać z dwóch metod odczytu tekstu:</p><h4>Metoda A: Przeczytaj zaznaczone (Zalecane)</h4><ol><li>Włącz funkcję „Przeczytaj zaznaczone”.</li><li>Zaznacz tekst wietnamski w przeglądarce i dotknij „Mów” w menu podręcznym.</li></ol><h4>Metoda B: Przeczytaj ekran</h4><ol><li>Włącz funkcję „Przeczytaj ekran”.</li><li>Przesuń dwoma palcami od góry ekranu w dół, aby odczytać całą zawartość ekranu.</li></ol>"
-  },
-  "<h4>1. Google 음성 엔진에서 베트남어 추가 (공통)</h4><p class=\"p-desc\">대부분의 안드로이드 기기에 내장된 구글 엔진에 베트남어 음성 팩을 다운로드하는 방법이에요.</p><ol><li>스마트폰 <b>설정</b> 앱을 엽니다.</li><li><b>접근성</b> ➡️ <b>텍스트 음성 변환 출력</b>(또는 ‘글자 읽어주기’) 메뉴로 이동합니다.</li><li>기본 엔진이 <b>Google 음성 인식 및 합성</b>(또는 Speech Services by Google)으로 선택되어 있는지 확인합니다.</li><li>기본 엔진 옆에 있는 <b>설정(톱니바퀴 아이콘)</b>을 누릅니다.</li><li><b>음성 데이터 설치</b>를 선택합니다.</li><li>목록에서 <b>베트남어</b>(또는 Vietnamese)를 찾아 다운로드 버튼을 누릅니다.</li><li>다운로드가 완료되면 뒤로 돌아와 <b>언어</b>를 <b>베트남어</b>로 지정합니다.</li></ol><h4>2. 삼성 갤럭시 기기에서 베트남어 추가</h4><p class=\"p-desc\">삼성 갤럭시 스마트폰을 사용 중이라면 삼성 전용 고품질 베트남어 TTS를 추가할 수 있어요.</p><ol><li>스마트폰 <b>설정</b> 앱을 엽니다.</li><li><b>일반</b> ➡️ <b>글자 읽어주기</b>(또는 텍스트 음성 변환) 메뉴로 이동합니다.</li><li>기본 엔진을 <b>삼성 TTS 엔진</b>으로 설정합니다.</li><li>엔진 옆의 <b>설정(톱니바퀴 아이콘)</b>을 누릅니다.</li><li><b>음성 데이터 설치</b>를 누르고 목록에서 <b>베트남어</b>를 찾아 다운로드합니다.</li></ol><div class=\"tts-tip\">※ 갤럭시 스토어에서 직접 Samsung TTS Vietnamese Voice 팩을 검색해 설치할 수도 있어요.</div>": {
-    "zh": "<h4>1. 在 Google 語音引擎中新增越南語(通用)</h4><p class=\"p-desc\">大多數 Android 裝置內建的 Google 引擎都可以下載越南語語音包,方法如下。</p><ol><li>開啟手機的<b>設定</b> App。</li><li>前往<b>協助工具</b> ➡️ <b>文字轉語音輸出</b>(或稱「讀出文字」)選單。</li><li>確認預設引擎是否為<b>Google 語音辨識與合成</b>(或 Speech Services by Google)。</li><li>點選預設引擎旁的<b>設定(齒輪圖示)</b>。</li><li>選擇<b>安裝語音資料</b>。</li><li>在清單中找到<b>越南語</b>(Vietnamese)並點選下載按鈕。</li><li>下載完成後返回上一頁,將<b>語言</b>設定為<b>越南語</b>。</li></ol><h4>2. 在三星 Galaxy 裝置中新增越南語</h4><p class=\"p-desc\">如果您使用的是三星 Galaxy 手機,可以額外新增三星專屬的高品質越南語 TTS。</p><ol><li>開啟手機的<b>設定</b> App。</li><li>前往<b>一般</b> ➡️ <b>讀出文字</b>(或文字轉語音)選單。</li><li>將預設引擎設定為<b>三星 TTS 引擎</b>。</li><li>點選引擎旁的<b>設定(齒輪圖示)</b>。</li><li>點選<b>安裝語音資料</b>,在清單中找到<b>越南語</b>並下載。</li></ol><div class=\"tts-tip\">※ 您也可以直接在 Galaxy Store 中搜尋 Samsung TTS Vietnamese Voice 語音包並安裝。</div>",
-    "en": "<h4>1. Add Vietnamese in the Google Speech Engine (Common)</h4><p class=\"p-desc\">Here's how to download the Vietnamese voice pack for the Google engine built into most Android devices.</p><ol><li>Open the <b>Settings</b> app on your phone.</li><li>Go to <b>Accessibility</b> ➡️ <b>Text-to-speech output</b> menu.</li><li>Check that the default engine is set to <b>Google Speech Recognition and Synthesis</b> (or Speech Services by Google).</li><li>Tap the <b>Settings (gear icon)</b> next to the default engine.</li><li>Select <b>Install voice data</b>.</li><li>Find <b>Vietnamese</b> in the list and tap the download button.</li><li>Once the download finishes, go back and set the <b>Language</b> to <b>Vietnamese</b>.</li></ol><h4>2. Add Vietnamese on a Samsung Galaxy Device</h4><p class=\"p-desc\">If you're using a Samsung Galaxy phone, you can add Samsung's own high-quality Vietnamese TTS.</p><ol><li>Open the <b>Settings</b> app on your phone.</li><li>Go to <b>General</b> ➡️ <b>Text-to-speech</b> (or Read out text) menu.</li><li>Set the default engine to <b>Samsung TTS engine</b>.</li><li>Tap <b>Settings (gear icon)</b> next to the engine.</li><li>Tap <b>Install voice data</b> and find <b>Vietnamese</b> in the list to download it.</li></ol><div class=\"tts-tip\">※ You can also search for and install the Samsung TTS Vietnamese Voice pack directly from the Galaxy Store.</div>",
-    "ja": "<h4>1. Googleの音声エンジンにベトナム語を追加(共通)</h4><p class=\"p-desc\">ほとんどのAndroid端末に内蔵されているGoogleエンジンにベトナム語の音声パックをダウンロードする方法です。</p><ol><li>スマートフォンの<b>設定</b>アプリを開きます。</li><li><b>ユーザー補助</b> ➡️ <b>テキスト読み上げの出力</b>(または「読み上げ機能」)メニューに移動します。</li><li>デフォルトエンジンが<b>Google音声認識と合成</b>(または Speech Services by Google)に設定されているか確認します。</li><li>デフォルトエンジンの横にある<b>設定(歯車アイコン)</b>をタップします。</li><li><b>音声データのインストール</b>を選択します。</li><li>リストから<b>ベトナム語</b>(Vietnamese)を探してダウンロードボタンをタップします。</li><li>ダウンロードが完了したら戻り、<b>言語</b>を<b>ベトナム語</b>に設定します。</li></ol><h4>2. Samsung Galaxy端末でベトナム語を追加する</h4><p class=\"p-desc\">Samsung Galaxyスマートフォンをお使いの場合、Samsung独自の高品質なベトナム語TTSを追加できます。</p><ol><li>スマートフォンの<b>設定</b>アプリを開きます。</li><li><b>一般</b> ➡️ <b>読み上げ機能</b>(またはテキスト読み上げ)メニューに移動します。</li><li>デフォルトエンジンを<b>Samsung TTSエンジン</b>に設定します。</li><li>エンジンの横にある<b>設定(歯車アイコン)</b>をタップします。</li><li><b>音声データのインストール</b>をタップし、リストから<b>ベトナム語</b>を探してダウンロードします。</li></ol><div class=\"tts-tip\">※ Galaxy Storeで直接Samsung TTS Vietnamese Voiceパックを検索してインストールすることもできます。</div>",
-    "de": "<h4>1. Vietnamesisch zur Google-Sprachausgabe hinzufügen (Allgemein)</h4><p class=\"p-desc\">So laden Sie das vietnamesische Sprachpaket für die Google-Engine auf den meisten Android-Geräten herunter.</p><ol><li>Öffnen Sie die App <b>Einstellungen</b>.</li><li>Gehen Sie zu <b>Bedienungshilfen</b> ➡️ <b>Text-in-Sprache-Ausgabe</b>.</li><li>Stellen Sie sicher, dass als bevorzugte Engine <b>Google Sprachausgabe</b> eingestellt ist.</li><li>Tippen Sie auf das <b>Zahnrad-Symbol</b> neben der Engine.</li><li>Wählen Sie <b>Sprachdaten installieren</b>.</li><li>Suchen Sie in der Liste nach <b>Vietnamesisch</b> und tippen Sie auf Herunterladen.</li><li>Gehen Sie nach dem Download zurück und wählen Sie als Sprache <b>Vietnamesisch</b>.</li></ol><h4>2. Vietnamesisch auf Samsung-Galaxy-Geräten hinzufügen</h4><p class=\"p-desc\">Auf Samsung Galaxy-Smartphones können Sie die hochwertige Samsung-eigene vietnamesische TTS-Stimme hinzufügen.</p><ol><li>Öffnen Sie <b>Einstellungen</b>.</li><li>Gehen Sie zu <b>Allgemeine Verwaltung</b> ➡️ <b>Text-zu-Sprache</b>.</li><li>Wählen Sie als bevorzugte Engine <b>Samsung Text-zu-Sprache-Engine</b>.</li><li>Tippen Sie auf das <b>Zahnrad-Symbol</b> neben der Engine.</li><li>Tippen Sie auf <b>Sprachdaten installieren</b> und laden Sie <b>Vietnamesisch</b> herunter.</li></ol><div class=\"tts-tip\">※ Sie können das Sprachpaket „Samsung TTS Vietnamese Voice“ auch direkt im Galaxy Store suchen und installieren.</div>",
-    "fr": "<h4>1. Ajouter le vietnamien dans le moteur vocal Google (Android en général)</h4><p class=\"p-desc\">Voici comment télécharger le pack vocal vietnamien pour le moteur Google intégré à la plupart des appareils Android.</p><ol><li>Ouvrez l'application <b>Paramètres</b> de votre téléphone.</li><li>Allez dans <b>Accessibilité</b> ➡️ <b>Sortie de synthèse vocale</b>.</li><li>Vérifiez que le moteur préféré est <b>Reconnaissance et synthèse vocales Google</b>.</li><li>Appuyez sur l'icône d'engrenage (paramètres) à côté du moteur.</li><li>Sélectionnez <b>Installer les données vocales</b>.</li><li>Recherchez <b>Vietnamien</b> dans la liste et appuyez sur Télécharger.</li><li>Une fois téléchargé, revenez en arrière et réglez la langue sur <b>Vietnamien</b>.</li></ol><h4>2. Ajouter le vietnamien sur les appareils Samsung Galaxy</h4><p class=\"p-desc\">Si vous utilisez un smartphone Samsung Galaxy, vous pouvez installer la voix TTS vietnamienne haute définition de Samsung.</p><ol><li>Ouvrez <b>Paramètres</b>.</li><li>Allez dans <b>Gestion globale</b> ➡️ <b>Synthèse vocale</b>.</li><li>Définissez le moteur préféré sur <b>Moteur de synthèse vocale Samsung</b>.</li><li>Appuyez sur l'engrenage à côté du moteur.</li><li>Appuyez sur <b>Installer les données vocales</b> et téléchargez le vietnamien.</li></ol>",
-    "pl": "<h4>1. Dodawanie wietnamskiego w syntezatorze mowy Google (Android)</h4><p class=\"p-desc\">Instrukcja pobierania pakietu mowy wietnamskiej dla silnika Google.</p><ol><li>Otwórz <b>Ustawienia</b> w telefonie.</li><li>Przejdź do <b>Ułatwienia dostępu</b> ➡️ <b>Zamiana tekstu na mowę</b>.</li><li>Upewnij się, że preferowanym mechanizmem są <b>Usługi mowy Google</b>.</li><li>Dotknij ikony koła zębatego obok mechanizmu.</li><li>Wybierz <b>Zainstaluj dane głosowe</b>.</li><li>Znajdź <b>Wietnamski</b> i pobierz go.</li></ol><h4>2. Dodawanie wietnamskiego na urządzeniach Samsung Galaxy</h4><p class=\"p-desc\">Na telefonach Samsung Galaxy możesz zainstalować wysokiej jakości głos Samsung.</p><ol><li>Otwórz <b>Ustawienia</b> ➡️ <b>Zarządzanie ogólne</b> ➡️ <b>Zamiana tekstu na mowę</b>.</li><li>Ustaw preferowany mechanizm na <b>Mechanizm zamiany tekstu na mowę Samsung</b>.</li><li>Dotknij koła zębatego i zainstaluj dane głosowe dla języka wietnamskiego.</li></ol>"
-  },
-  "<p class=\"p-desc\">별도의 프로그램 설치 없이 Mac 시스템 설정에서 바로 다운로드할 수 있어요.</p><h4>1단계: 베트남어 TTS 음성 추가하기</h4><ol><li>Mac 화면 왼쪽 상단의 Apple 메뉴( ) &gt; <b>시스템 설정</b>을 선택합니다.</li><li>사이드바에서 <b>손쉬운 사용</b>을 클릭한 뒤, <b>읽기 및 말하기</b>(또는 macOS 버전에 따라 <b>콘텐츠 말하기</b>)를 선택합니다.</li><li>‘시스템 음성’ 오른쪽에 있는 ⓘ(정보) 버튼 또는 팝업 메뉴를 클릭합니다.</li><li>왼쪽 언어 목록에서 <b>베트남어(Vietnamese)</b>를 찾아 선택합니다.</li><li>원하는 음성(예: Linh 등) 옆의 구름 모양 다운로드 아이콘을 클릭하여 설치합니다.</li><li>다운로드가 완료되면 <b>완료</b>(또는 승인)를 누릅니다.</li></ol><h4>2단계: 시스템 말하기 언어 변경하기</h4><ol><li>‘읽기 및 말하기’ 설정 화면으로 돌아와 ‘시스템 말하기 언어’ 팝업 메뉴를 베트남어로 변경합니다.</li><li>‘시스템 음성’ 메뉴에서 방금 다운로드한 베트남어 음성을 지정합니다.</li><li>아래의 ‘선택 항목 말하기’ 토글을 켜서 활성화합니다.</li></ol><h4>3단계: 단축키로 베트남어 텍스트 읽기</h4><ol><li>웹페이지나 문서에서 베트남어 텍스트를 마우스로 드래그하여 블록 지정(선택)합니다.</li><li>키보드 단축키인 <b>Option + Esc</b>를 동시에 누르면 선택한 베트남어가 원어민 발음으로 재생돼요. (중단하고 싶을 때 다시 누르면 멈춰요.)</li></ol>": {
-    "zh": "<p class=\"p-desc\">不需要另外安裝程式，直接在 Mac 的系統設定中即可下載。</p><h4>第1步：新增越南語 TTS 語音</h4><ol><li>點選 Mac 畫面左上角的 Apple 選單( ) &gt; <b>系統設定</b>。</li><li>在側邊欄點選<b>輔助使用</b>，接著選擇<b>朗讀內容</b>(依 macOS 版本不同，可能顯示為<b>語音</b>)。</li><li>點選「系統語音」右側的 ⓘ(資訊)按鈕或彈出式選單。</li><li>在左側語言清單中找到並選擇<b>越南語(Vietnamese)</b>。</li><li>點選想要的語音(例如 Linh 等)旁的雲朵下載圖示進行安裝。</li><li>下載完成後按下<b>完成</b>(或核准)。</li></ol><h4>第2步：變更系統朗讀語言</h4><ol><li>返回「朗讀內容」設定畫面，將「系統朗讀語言」彈出式選單變更為越南語。</li><li>在「系統語音」選單中，指定剛剛下載的越南語語音。</li><li>開啟下方的「朗讀所選範圍」切換開關以啟用此功能。</li></ol><h4>第3步：使用快速鍵朗讀越南語文字</h4><ol><li>在網頁或文件中用滑鼠拖曳選取越南語文字。</li><li>同時按下鍵盤快速鍵<b>Option + Esc</b>，即可以母語發音朗讀所選的越南語文字。(想要停止時再按一次即可停止。)</li></ol>",
-    "en": "<p class=\"p-desc\">No separate app needs to be installed — you can download it directly from Mac System Settings.</p><h4>Step 1: Add a Vietnamese TTS Voice</h4><ol><li>Click the Apple menu ( ) at the top-left of your Mac screen &gt; select <b>System Settings</b>.</li><li>Click <b>Accessibility</b> in the sidebar, then select <b>Spoken Content</b> (or <b>Speech</b>, depending on your macOS version).</li><li>Click the ⓘ (info) button or pop-up menu next to \"System Voice.\"</li><li>Find and select <b>Vietnamese</b> in the language list on the left.</li><li>Click the cloud download icon next to the voice you want (e.g., Linh) to install it.</li><li>Once the download finishes, click <b>Done</b> (or Approve).</li></ol><h4>Step 2: Change the System Speaking Language</h4><ol><li>Return to the Spoken Content settings screen and change the \"System voice\" language pop-up menu to Vietnamese.</li><li>In the \"System Voice\" menu, select the Vietnamese voice you just downloaded.</li><li>Turn on the \"Speak Selection\" toggle below to enable it.</li></ol><h4>Step 3: Use a Keyboard Shortcut to Read Vietnamese Text Aloud</h4><ol><li>Drag with your mouse to select (highlight) Vietnamese text on a webpage or document.</li><li>Press the keyboard shortcut <b>Option + Esc</b> at the same time to hear the selected Vietnamese text read aloud in a native pronunciation. (Press it again to stop.)</li></ol>",
-    "ja": "<p class=\"p-desc\">別途アプリをインストールする必要はなく、Macの「システム設定」から直接ダウンロードできます。</p><h4>ステップ1：ベトナム語のTTS音声を追加する</h4><ol><li>Mac画面左上のAppleメニュー( )&gt;<b>システム設定</b>を選択します。</li><li>サイドバーで<b>アクセシビリティ</b>をクリックし、<b>読み上げコンテンツ</b>(macOSのバージョンによっては<b>スピーチ</b>)を選択します。</li><li>「システムの声」の右にある ⓘ(情報)ボタンまたはポップアップメニューをクリックします。</li><li>左側の言語リストから<b>ベトナム語(Vietnamese)</b>を探して選択します。</li><li>使用したい音声(例：Linhなど)の横にある雲形のダウンロードアイコンをクリックしてインストールします。</li><li>ダウンロードが完了したら<b>完了</b>(または承認)をクリックします。</li></ol><h4>ステップ2：システムの読み上げ言語を変更する</h4><ol><li>「読み上げコンテンツ」の設定画面に戻り、「システムの読み上げ言語」ポップアップメニューをベトナム語に変更します。</li><li>「システムの声」メニューで、先ほどダウンロードしたベトナム語の音声を指定します。</li><li>下にある「選択項目を読み上げる」のトグルをオンにして有効にします。</li></ol><h4>ステップ3：ショートカットキーでベトナム語のテキストを読み上げる</h4><ol><li>Webページや文書でベトナム語のテキストをマウスでドラッグして選択します。</li><li>キーボードショートカット<b>Option + Esc</b>を同時に押すと、選択したベトナム語がネイティブ発音で再生されます。(停止したいときはもう一度押すと止まります。)</li></ol>",
-    "de": "<p class=\"p-desc\">Sie können vietnamesische Stimmen direkt in den Mac-Systemeinstellungen herunterladen, ohne zusätzliche Software zu installieren.</p><h4>Schritt 1: Vietnamesische TTS-Stimme hinzufügen</h4><ol><li>Wählen Sie das Apple-Menü ( ) &gt; <b>Systemeinstellungen</b>.</li><li>Klicken Sie in der Seitenleiste auf <b>Bedienungshilfen</b> und dann auf <b>Gesprochene Inhalte</b>.</li><li>Klicken Sie auf das ⓘ-Symbol oder das Menü neben „Systemstimme“.</li><li>Wählen Sie in der Sprachenliste <b>Vietnamesisch</b> aus.</li><li>Klicken Sie auf das Download-Symbol neben der gewünschten Stimme (z. B. Linh), um sie zu installieren.</li><li>Klicken Sie nach Abschluss auf <b>Fertig</b>.</li></ol><h4>Schritt 2: Sprachausgabe konfigurieren</h4><ol><li>Wählen Sie als Systemstimme die heruntergeladene vietnamesische Stimme aus.</li><li>Aktivieren Sie die Option „Auswahl sprechen“.</li></ol><h4>Schritt 3: Text per Kurzbefehl vorlesen</h4><ol><li>Markieren Sie vietnamesischen Text auf einer Webseite oder in einem Dokument.</li><li>Drücken Sie <b>Wahltaste (Option) + Esc</b>, um den Text anzuhören. Ein erneuter Tastendruck stoppt die Wiedergabe.</li></ol>",
-    "fr": "<p class=\"p-desc\">Vous pouvez télécharger les voix directement dans les Réglages Système de votre Mac sans logiciel tiers.</p><h4>Étape 1 : Ajouter une voix TTS vietnamienne</h4><ol><li>Cliquez sur le menu Apple ( ) &gt; <b>Réglages Système</b>.</li><li>Dans la barre latérale, cliquez sur <b>Accessibilité</b> puis sur <b>Contenu énoncé</b>.</li><li>Cliquez sur le bouton ⓘ ou le menu déroulant à côté de « Voix du système ».</li><li>Sélectionnez <b>Vietnamien</b> dans la liste des langues à gauche.</li><li>Cliquez sur l'icône de nuage à côté de la voix souhaitée (ex. : Linh) pour l'installer.</li><li>Cliquez sur <b>Terminé</b>.</li></ol><h4>Étape 2 : Configurer la voix du système</h4><ol><li>Réglez la voix du système sur la voix vietnamienne téléchargée.</li><li>Activez l'option « Énoncer la sélection ».</li></ol><h4>Étape 3 : Raccourci clavier pour la lecture</h4><ol><li>Sélectionnez du texte vietnamien avec votre souris.</li><li>Appuyez sur <b>Option + Échap</b> pour lancer la lecture vocale. Appuyez à nouveau pour arrêter.</li></ol>",
-    "pl": "<p class=\"p-desc\">Możesz pobrać głosy wietnamskie bezpośrednio w Ustawieniach systemowych komputera Mac.</p><h4>Krok 1: Dodaj głos wietnamski</h4><ol><li>Wybierz menu Apple  &gt; <b>Ustawienia systemowe</b>.</li><li>Kliknij <b>Dostępność</b>, a następnie <b>Zawartość mówiona</b>.</li><li>Wybierz język <b>Wietnamski</b> i pobierz preferowany głos.</li><li>Włącz funkcję „Mów zaznaczone”.</li><li>Zaznacz tekst wietnamski i naciśnij skrót <b>Option + Esc</b>, aby odsłuchać wymowę.</li></ol>"
-  },
-  "<h4>⚙️ Windows 11에서 베트남어 TTS 추가하기</h4><ol><li>설정 열기: 키보드에서 <b>Win + I</b> 단축키를 누릅니다.</li><li>음성 메뉴 이동: 왼쪽 메뉴에서 <b>시간 및 언어</b> ➔ 오른쪽에서 <b>음성</b>을 클릭합니다.</li><li>음성 추가: ‘음성 관리’ 항목에 있는 <b>음성 추가</b> 버튼을 누릅니다.</li><li>베트남어 설치: 검색창에 베트남어를 검색해 선택한 후, <b>추가</b>(또는 설치) 버튼을 누르면 다운로드가 시작돼요.</li><li>기본 음성 설정: 다운로드가 끝나면 상단의 ‘음성 선택’ 드롭다운 메뉴에서 설치된 베트남어 음성을 기본값으로 지정할 수 있어요.</li></ol><h4>⚙️ Windows 10에서 베트남어 TTS 추가하기</h4><ol><li>설정 열기: <b>Win + I</b> 단축키를 누릅니다.</li><li>언어 메뉴 이동: <b>시간 및 언어</b> ➔ 왼쪽의 <b>지역 및 언어</b>(또는 언어) 메뉴를 클릭합니다.</li><li>기본 설정 언어 추가: ‘기본 설정 언어’ 아래의 <b>언어 추가</b>를 클릭합니다.</li><li>베트남어 팩 선택: 베트남어(Tiếng Việt)를 검색하여 선택합니다. 이때 반드시 TTS 아이콘(마이크·말풍선 모양)이 포함되어 있는지 확인하고 ‘다음’을 누릅니다.</li><li>TTS 기능 설치: 기본 기능인 ‘텍스트 음성 변환(TTS)’이 체크된 상태로 <b>설치</b>를 누르면 완료돼요.</li></ol><h4>💡 설치 후 팁 및 확인 사항</h4><div class=\"tts-tip\">설정 반영: 음성 팩 설치를 마친 후에는 사용 중이던 텍스트 리더 프로그램이나 설정 앱을 종료 후 다시 실행해야 베트남어 음성이 정상적으로 표시돼요.</div><div class=\"tts-tip\">간편하게 읽기 실행: 윈도우 기본 돋보기 기능(Win + +)을 켜고 Ctrl + Alt + 마우스 좌클릭을 활용하면 원하는 베트남어 텍스트를 바로 TTS 음성으로 들을 수 있어요. 다만 아쉽게도 윈도우에서 지원하는 “자연스러운 음성” 목록에는 베트남어가 없어서, 윈도우를 사용할 경우 베트남어 TTS 음성이 좀 부자연스럽게 느껴질 수 있어요.</div>": {
-    "zh": "<h4>⚙️ 在 Windows 11 新增越南語 TTS 語音</h4><ol><li>開啟設定：在鍵盤上按下 <b>Win + I</b> 快捷鍵。</li><li>前往語音選單：在左側選單點選 <b>時間與語言</b> ➔ 再於右側點選 <b>語音</b>。</li><li>新增語音：在‘語音管理’項目中按下 <b>新增語音</b> 按鈕。</li><li>安裝越南語：在搜尋欄搜尋越南語並選取後，按下 <b>新增</b>（或安裝）按鈕即可開始下載。</li><li>設定為預設語音：下載完成後，可在上方‘選擇語音’下拉選單中，將已安裝的越南語語音設為預設值。</li></ol><h4>⚙️ 在 Windows 10 新增越南語 TTS 語音</h4><ol><li>開啟設定：按下 <b>Win + I</b> 快捷鍵。</li><li>前往語言選單：點選 <b>時間與語言</b> ➔ 左側的 <b>地區與語言</b>（或語言）選單。</li><li>新增慣用語言：在‘慣用語言’下方點選 <b>新增語言</b>。</li><li>選擇越南語語言套件：搜尋並選取越南語（Tiếng Việt）。此時請務必確認已包含 TTS 圖示（麥克風‧語音框圖案），再按下‘下一步’。</li><li>安裝 TTS 功能：在預設勾選‘文字轉語音（TTS）’功能的狀態下按下 <b>安裝</b> 即完成。</li></ol><h4>💡 安裝後的提示與確認事項</h4><div class=\"tts-tip\">套用設定：完成語音套件安裝後，須先關閉再重新開啟原本使用中的文字閱讀程式或設定應用程式，越南語語音才會正常顯示。</div><div class=\"tts-tip\">輕鬆朗讀：開啟 Windows 內建的放大鏡功能（Win + +），並搭配 Ctrl + Alt + 滑鼠左鍵點擊，即可立即以 TTS 語音朗讀所選的越南語文字。不過可惜的是，Windows 支援的“自然語音”清單中並沒有越南語，因此在 Windows 上使用時，越南語 TTS 語音可能會聽起來略顯不自然。</div>",
-    "en": "<h4>⚙️ Adding Vietnamese TTS Voices in Windows 11</h4><ol><li>Open Settings: Press <b>Win + I</b> on your keyboard.</li><li>Go to the Speech menu: In the left menu, click <b>Time & language</b> ➔ then click <b>Speech</b> on the right.</li><li>Add a voice: Under ‘Manage voices,’ click the <b>Add voices</b> button.</li><li>Install Vietnamese: Search for Vietnamese in the search box, select it, then click <b>Add</b> (or Install) to start the download.</li><li>Set the default voice: Once the download finishes, you can set the installed Vietnamese voice as the default in the ‘Choose a voice’ dropdown menu at the top.</li></ol><h4>⚙️ Adding Vietnamese TTS Voices in Windows 10</h4><ol><li>Open Settings: Press <b>Win + I</b>.</li><li>Go to the language menu: Click <b>Time & language</b> ➔ then <b>Region & language</b> (or Language) on the left.</li><li>Add a preferred language: Under ‘Preferred languages,’ click <b>Add a language</b>.</li><li>Choose the Vietnamese language pack: Search for and select Vietnamese (Tiếng Việt). Make sure the TTS icon (a microphone/speech-bubble icon) is included, then click ‘Next.’</li><li>Install the TTS feature: With the default ‘Text-to-Speech’ feature checked, click <b>Install</b> to finish.</li></ol><h4>💡 Tips and Things to Check After Installation</h4><div class=\"tts-tip\">Apply the settings: After installing a voice pack, close and reopen whatever text-reader program or Settings app you were using — the Vietnamese voice will only show up correctly after that.</div><div class=\"tts-tip\">Quick reading shortcut: Turn on Windows’ built-in Magnifier (Win + +), then hold Ctrl + Alt and left-click your mouse to instantly hear the selected Vietnamese text read aloud in TTS. Unfortunately, Vietnamese isn’t included in the “Natural voices” list Windows supports, so Vietnamese TTS voices on Windows may sound a bit less natural.</div>",
-    "ja": "<h4>⚙️ Windows 11でベトナム語のTTS音声を追加する</h4><ol><li>設定を開く：キーボードで <b>Win + I</b> を押します。</li><li>音声メニューへ移動：左側のメニューで <b>時刻と言語</b> ➔ 右側の <b>音声</b> をクリックします。</li><li>音声を追加：‘音声の管理’項目にある <b>音声の追加</b> ボタンを押します。</li><li>ベトナム語をインストール：検索欄でベトナム語を検索して選択した後、<b>追加</b>（またはインストール）ボタンを押すとダウンロードが始まります。</li><li>既定の音声に設定：ダウンロードが完了したら、上部の‘音声を選択’ドロップダウンメニューでインストールしたベトナム語音声を既定に設定できます。</li></ol><h4>⚙️ Windows 10でベトナム語のTTS音声を追加する</h4><ol><li>設定を開く：<b>Win + I</b> を押します。</li><li>言語メニューへ移動：<b>時刻と言語</b> ➔ 左側の <b>地域と言語</b>（または言語）メニューをクリックします。</li><li>優先する言語を追加：‘優先する言語’の下にある <b>言語を追加する</b> をクリックします。</li><li>ベトナム語パックを選択：ベトナム語（Tiếng Việt）を検索して選択します。この際、必ずTTSアイコン（マイク・吹き出しの形）が含まれていることを確認し、‘次へ’を押します。</li><li>TTS機能をインストール：既定でチェックされている‘音声合成(TTS)’機能をそのままに <b>インストール</b> を押せば完了です。</li></ol><h4>💡 インストール後のヒントと確認事項</h4><div class=\"tts-tip\">設定の反映：音声パックのインストールが完了した後は、使用していたテキスト読み上げプログラムや設定アプリを一度終了して再起動しないと、ベトナム語音声が正しく表示されません。</div><div class=\"tts-tip\">手軽に読み上げる：Windows標準の拡大鏡機能（Win + +）をオンにし、Ctrl + Alt を押しながらマウスで左クリックすると、選択したベトナム語のテキストをすぐにTTS音声で聞くことができます。ただし残念ながら、Windowsがサポートする“自然な音声”リストにはベトナム語が含まれていないため、Windows上ではベトナム語のTTS音声がやや不自然に聞こえることがあります。</div>",
-    "de": "<h4>⚙️ Vietnamesische TTS unter Windows 11 hinzufügen</h4><ol><li>Einstellungen öffnen: Drücken Sie <b>Win + I</b>.</li><li>Zum Sprachmenü: Klicken Sie auf <b>Zeit und Sprache</b> ➔ <b>Sprachausgabe</b>.</li><li>Stimme hinzufügen: Klicken Sie unter „Stimmen verwalten“ auf <b>Stimmen hinzufügen</b>.</li><li>Vietnamesisch installieren: Suchen Sie nach Vietnamesisch und klicken Sie auf <b>Hinzufügen</b>.</li><li>Standardstimme festlegen: Wählen Sie oben die installierte vietnamesische Stimme aus.</li></ol><h4>⚙️ Vietnamesische TTS unter Windows 10 hinzufügen</h4><ol><li>Einstellungen öffnen: Drücken Sie <b>Win + I</b>.</li><li>Klicken Sie auf <b>Zeit und Sprache</b> ➔ <b>Region und Sprache</b>.</li><li>Klicken Sie unter „Bevorzugte Sprachen“ auf <b>Sprache hinzufügen</b>.</li><li>Wählen Sie Vietnamesisch (mit TTS-Symbol) aus und klicken Sie auf <b>Installieren</b>.</li></ol><h4>💡 Hinweise nach der Installation</h4><div class=\"tts-tip\">Einstellungen übernehmen: Starten Sie den Browser oder die Sprach-App nach der Installation neu.</div><div class=\"tts-tip\">Schnellvorlesefunktion: Mit der Windows-Bildschirmlupe (Win + +) und Strg + Alt + Linksklick können Sie markierten Text direkt vorlesen lassen.</div>",
-    "fr": "<h4>⚙️ Ajouter la synthèse vocale vietnamienne sous Windows 11</h4><ol><li>Ouvrez les Paramètres : appuyez sur <b>Win + I</b>.</li><li>Allez dans <b>Heure et langue</b> ➔ <b>Voix</b>.</li><li>Sous « Gérer les voix », cliquez sur <b>Ajouter des voix</b>.</li><li>Recherchez le vietnamien et cliquez sur <b>Ajouter</b>.</li><li>Définissez la voix par défaut dans le menu déroulant en haut.</li></ol><h4>⚙️ Ajouter la synthèse vocale vietnamienne sous Windows 10</h4><ol><li>Appuyez sur <b>Win + I</b>.</li><li>Allez dans <b>Heure et langue</b> ➔ <b>Région et langue</b>.</li><li>Cliquez sur <b>Ajouter une langue</b> sous « Langues préférées ».</li><li>Sélectionnez le vietnamien (avec l'icône TTS) et installez-le.</li></ol>",
-    "pl": "<h4>⚙️ Dodawanie głosu wietnamskiego w systemie Windows</h4><ol><li>Naciśnij <b>Win + I</b>, aby otworzyć Ustawienia.</li><li>Przejdź do <b>Czas i język</b> ➔ <b>Mowa</b>.</li><li>W sekcji „Zarządzaj głosami” kliknij <b>Dodaj głosy</b> i wyszukaj język wietnamski.</li><li>Po zainstalowaniu wybierz pobrany głos jako domyślny.</li></ol>"
-  },
-  "발음 듣기 목소리": {
-    "zh": "發音語音設定",
-    "en": "Pronunciation Playback Voice",
-    "ja": "発音再生の音声",
-    "de": "Stimme für Aussprache",
-    "fr": "Voix pour la prononciation",
-    "pl": "Głos do odtwarzania wymowy"
-  },
-  "베트남어를 읽어줄 목소리를 3종류 중에서 고를 수 있어요: 북부 베트남어, 남부 베트남어, 현재 언어 모드(한국어·中文·English·日本語)의 TTS. 지금 실제로 사용할 지역은 아래 북부/남부 토글로 골라요.": {
-    "zh": "可以從3種語音中選擇朗讀越南語的聲音：北部越南語、南部越南語，以及目前語言模式（한국어·中文·English·日本語）的TTS。實際要使用的地區請在下方的北部/南部切換鈕中選擇。",
-    "en": "You can choose from 3 kinds of voice to read Vietnamese: Northern Vietnamese, Southern Vietnamese, and the TTS of the current language mode (한국어·中文·English·日本語). Pick which region is actually used with the North/South toggle below.",
-    "ja": "ベトナム語を読み上げる声を3種類から選べます：北部ベトナム語、南部ベトナム語、現在の言語モード（한국어·中文·English·日本語）のTTS。実際に使う地域は下の北部/南部トグルで選びます。",
-    "de": "Sie können zwischen 3 Stimmenarten wählen: Nord-Vietnamesisch, Süd-Vietnamesisch und die TTS-Stimme des aktuellen Sprachmodus (Koreanisch/Chinesisch/Englisch/Japanisch/Deutsch). Die aktuell verwendete Region wählen Sie mit dem Nord/Süd-Schalter.",
-    "fr": "Vous pouvez choisir parmi 3 types de voix : vietnamien du Nord, vietnamien du Sud, et la voix TTS de la langue de l'interface. La région active se sélectionne avec le bouton Nord/Sud.",
-    "pl": "Możesz wybrać spośród 3 rodzajów głosów: wietnamski północny, wietnamski południowy oraz syntezator mowy w języku interfejsu. Aktywny region wybiera się przełącznikiem Północ/Południe."
-  },
-  "지금 사용할 지역": {
-    "zh": "目前使用的地區",
-    "en": "Region in use now",
-    "ja": "現在使用する地域",
-    "de": "Aktuell verwendete Region",
-    "fr": "Région actuellement utilisée",
-    "pl": "Aktualnie używany region"
-  },
-  "언어 모드": {
-    "zh": "語言模式",
-    "en": "Language mode",
-    "ja": "言語モード",
-    "de": "Sprachmodus",
-    "fr": "Langue de l'interface",
-    "pl": "Język interfejsu"
-  },
-  "기기별 베트남어 음성(TTS) 추가 방법": {
-    "zh": "各裝置新增越南語語音（TTS）的方法",
-    "en": "How to Add Vietnamese Voices (TTS) by Device",
-    "ja": "機器別ベトナム語音声（TTS）の追加方法",
-    "de": "Vietnamesische Sprachausgabe (TTS) auf Geräten hinzufügen",
-    "fr": "Comment ajouter des voix vietnamiennes (TTS) par appareil",
-    "pl": "Jak dodać głosy wietnamskie (TTS) na urządzeniach"
-  },
-  "이 학습반 화면의 발음 듣기 버튼은 기기·브라우저에 이미 설치된 베트남어 음성을 사용해요. 아래 기기별 안내를 따라 베트남어 음성을 미리 설치해 두면, 이 화면뿐 아니라 휴대폰·컴퓨터의 다른 앱에서도 베트남어 텍스트를 원어민 발음으로 들을 수 있어요. 항목을 눌러 펼쳐 보세요.": {
-    "zh": "本學習班畫面上的發音播放按鈕，使用的是裝置或瀏覽器中已安裝的越南語語音。依照下方各裝置的說明事先安裝越南語語音後，不只在這個畫面，在手機、電腦的其他應用程式中也能以母語人士發音聽到越南語文字。點選項目即可展開查看。",
-    "en": "The pronunciation playback button on this class screen uses a Vietnamese voice already installed on your device or browser. If you install a Vietnamese voice ahead of time by following the device-specific guides below, you'll be able to hear Vietnamese text read in a native voice not only here, but also in other apps on your phone or computer. Tap an item to expand it.",
-    "ja": "この学習会画面の発音再生ボタンは、機器・ブラウザにすでにインストールされているベトナム語の音声を使用します。以下の機器別ガイドに従ってベトナム語の音声を事前にインストールしておくと、この画面だけでなく、スマートフォンやパソコンの他のアプリでもベトナム語のテキストをネイティブの発音で聞くことができます。項目をタップして開いてみてください。",
-    "de": "Die Aussprache-Schaltflächen in diesem Kurs nutzen die auf Ihrem Gerät oder im Browser installierten vietnamesischen Stimmen. Wenn Sie vorab eine vietnamesische Stimme installieren, können Sie vietnamesische Texte überall in natürlicher Aussprache anhören.",
-    "fr": "Les boutons d'écoute utilisent les voix vietnamiennes installées sur votre appareil ou votre navigateur. Suivez les instructions ci-dessous pour installer une voix afin de profiter d'une prononciation naturelle partout.",
-    "pl": "Przyciski odsłuchu korzystają z głosów wietnamskich zainstalowanych na Twoim urządzeniu. Postępuj zgodnie z instrukcjami, aby zainstalować głos i słuchać naturalnej wymowy."
-  },
-  "아이폰 · 아이패드 (iOS/iPadOS)": {
-    "zh": "iPhone・iPad（iOS/iPadOS）",
-    "en": "iPhone / iPad (iOS/iPadOS)",
-    "ja": "iPhone・iPad（iOS/iPadOS）",
-    "de": "iPhone / iPad (iOS/iPadOS)",
-    "fr": "iPhone / iPad (iOS/iPadOS)",
-    "pl": "iPhone / iPad (iOS/iPadOS)"
-  },
-  "안드로이드 (Android)": {
-    "zh": "Android（安卓）",
-    "en": "Android",
-    "ja": "Android（アンドロイド）",
-    "de": "Android",
-    "fr": "Android",
-    "pl": "Android"
-  },
-  "글자를 눌러 발음을 들어 보세요.": {
-    "zh": "點選字母即可聽發音。",
-    "en": "Tap a letter to hear its pronunciation.",
-    "ja": "文字をタップして発音を聞いてみましょう。",
-    "de": "Tippen Sie auf einen Buchstaben, um die Aussprache zu hören.",
-    "fr": "Appuyez sur une lettre pour écouter sa prononciation.",
-    "pl": "Dotknij litery, aby usłyszeć jej wymowę."
-  },
-  "베트남어 문자": {
-    "zh": "越南語文字",
-    "en": "Vietnamese Alphabet",
-    "ja": "ベトナム語の文字",
-    "de": "Vietnamesisches Alphabet",
-    "fr": "Alphabet vietnamien",
-    "pl": "Alfabet wietnamski"
-  },
-  "베트남어 문자의 명칭": {
-    "zh": "越南語文字的名稱",
-    "en": "Names of the Vietnamese Letters",
-    "ja": "ベトナム語の文字の名称",
-    "de": "Bezeichnungen der vietnamesischen Buchstaben",
-    "fr": "Noms des lettres vietnamiennes",
-    "pl": "Nazwy liter wietnamskich"
-  },
-  "자음을 읽을 때는 보통 자음 뒤에 ơ 모음을 붙여서 읽습니다. (예: b → bơ)": {
-    "zh": "唸子音時，通常會在子音後面加上母音 ơ 來唸。（例：b → bơ）",
-    "en": "When reading a consonant aloud, the vowel ơ is usually added after it. (e.g. b → bơ)",
-    "ja": "子音を読むときは、通常子音の後に母音 ơ を付けて読みます。（例：b → bơ）",
-    "de": "Beim Aussprechen von Konsonanten wird üblicherweise der Vokal ơ angehängt (z. B. b → bơ).",
-    "fr": "Pour prononcer une consonne isolée, on ajoute généralement la voyelle ơ après elle (ex. : b → bơ).",
-    "pl": "Czytając pojedynczą spółgłoskę, zazwyczaj dodaje się po niej samogłoskę ơ (np. b → bơ)."
-  },
-  "모음 발음 — 단모음": {
-    "zh": "母音發音——單母音",
-    "en": "Vowel Pronunciation — Single Vowels",
-    "ja": "母音の発音 — 単母音",
-    "de": "Vokalaussprache — Einfache Vokale",
-    "fr": "Prononciation des voyelles — Voyelles simples",
-    "pl": "Wymowa samogłosek — Samogłoski pojedyncze"
-  },
-  "모음 발음 — 복모음": {
-    "zh": "母音發音——複合母音",
-    "en": "Vowel Pronunciation — Diphthongs",
-    "ja": "母音の発音 — 複合母音",
-    "de": "Vokalaussprache — Diphthonge",
-    "fr": "Prononciation des voyelles — Diphtongues",
-    "pl": "Wymowa samogłosek — Dwugłoski"
-  },
-  "자음 발음 — 단자음": {
-    "zh": "子音發音——單子音",
-    "en": "Consonant Pronunciation — Single Consonants",
-    "ja": "子音の発音 — 単子音",
-    "de": "Konsonantenaussprache — Einfache Konsonanten",
-    "fr": "Prononciation des consonnes — Consonnes simples",
-    "pl": "Wymowa spółgłosek — Spółgłoski pojedyncze"
-  },
-  "자음 발음 — 복자음": {
-    "zh": "子音發音——複合子音",
-    "en": "Consonant Pronunciation — Consonant Clusters",
-    "ja": "子音の発音 — 複合子音",
-    "de": "Konsonantenaussprache — Konsonantenverbindungen",
-    "fr": "Prononciation des consonnes — Groupes de consonnes",
-    "pl": "Wymowa spółgłosek — Zbitki spółgłoskowe"
-  },
-  "성조 (6개)": {
-    "zh": "聲調（6個）",
-    "en": "Tones (6)",
-    "ja": "声調（6つ）",
-    "de": "Töne (6)",
-    "fr": "Tons (6)",
-    "pl": "Tony (6)"
-  },
-  "베트남어에는 음의 높낮이를 구별하는 6개의 성조가 있어요. 같은 글자라도 성조에 따라 완전히 다른 단어가 됩니다.": {
-    "zh": "越南語有6個用來區分音高的聲調。就算是同一個字母，依聲調不同也會變成完全不同的單字。",
-    "en": "Vietnamese has six tones that distinguish pitch. Even the same letters can become completely different words depending on the tone.",
-    "ja": "ベトナム語には音の高低を区別する6つの声調があります。同じ文字でも声調によって全く違う単語になります。",
-    "de": "Im Vietnamesischen gibt es 6 Töne, die die Tonhöhe bestimmen. Dieselben Buchstaben ergeben je nach Ton völlig unterschiedliche Wörter.",
-    "fr": "Le vietnamien compte six tons qui distinguent la hauteur musicale. Les mêmes lettres forment des mots entièrement différents selon le ton.",
-    "pl": "W języku wietnamskim występuje 6 tonów różnicujących wysokość głosu. Te same litery tworzą zupełnie inne słowa w zależności od tonu."
-  },
-  "성조 조합 연습 (36가지)": {
-    "zh": "聲調組合練習（36種）",
-    "en": "Tone Combination Practice (36 Combinations)",
-    "ja": "声調の組み合わせ練習（36通り）",
-    "de": "Tonkombinationen üben (36 Paare)",
-    "fr": "Pratique des combinaisons de tons (36 combinaisons)",
-    "pl": "Ćwiczenie kombinacji tonów (36 par)"
-  },
-  "두 음절의 성조를 조합하면 6×6 = 36가지 경우가 나와요. 앞 음절의 성조별로 묶었으니 눌러서 열어 보고, 실생활에서 자주 쓰는 단어로 성조 조합을 듣고 연습해 보세요.": {
-    "zh": "將兩個音節的聲調組合起來，會有6×6＝36種情況。已依前一音節的聲調分組，點選展開查看，並用日常生活中常用的單字聆聽、練習聲調組合吧。",
-    "en": "Combining the tones of two syllables gives you 6×6 = 36 possible pairs. They're grouped by the first syllable's tone — tap to expand each group, and listen to and practice the tone combinations using words commonly used in everyday life.",
-    "ja": "2つの音節の声調を組み合わせると、6×6＝36通りになります。前の音節の声調ごとにまとめてあるので、タップして開き、日常生活でよく使う単語で声調の組み合わせを聞いて練習してみましょう。",
-    "de": "Die Kombination zweier Silbentöne ergibt 6×6 = 36 Möglichkeiten. Sie sind nach dem Ton der ersten Silbe gruppiert – öffnen Sie jede Gruppe und üben Sie mit Wörtern aus dem Alltag.",
-    "fr": "En combinant les tons de deux syllabes, on obtient 6×6 = 36 possibilités. Regroupées par le ton de la première syllabe, ouvrez chaque groupe pour écouter et pratiquer avec des mots de la vie courante.",
-    "pl": "Kombinacja tonów dwóch sylab daje 6×6 = 36 możliwości. Pogrupowano je według tonu pierwszej sylaby — rozwiń grupy, aby słuchać i ćwiczyć popularne słowa z życia codziennego."
-  },
-  "북부 발음과 남부 발음의 차이": {
-    "zh": "北部發音與南部發音的差異",
-    "en": "Differences Between Northern and Southern Pronunciation",
-    "ja": "北部発音と南部発音の違い",
-    "de": "Unterschiede zwischen Nord- und Südaussprache",
-    "fr": "Différences de prononciation entre Nord et Sud",
-    "pl": "Różnice w wymowie między Północą a Południem"
-  },
-  "같은 글자라도 지역에 따라 소리가 달라지는 대표적인 5가지 경우예요. 북부(하노이)와 남부(호찌민)를 비교해 보세요.": {
-    "zh": "這是同一個字母卻因地區不同而發音不同的5個代表性例子。請比較北部（河內）與南部（胡志明市）的發音。",
-    "en": "These are five representative cases where the same letters are pronounced differently depending on the region. Compare the Northern (Hanoi) and Southern (Ho Chi Minh City) pronunciations.",
-    "ja": "同じ文字でも地域によって発音が異なる代表的な5つの例です。北部（ハノイ）と南部（ホーチミン）を比較してみましょう。",
-    "de": "Dies sind fünf typische Fälle, in denen dieselben Buchstaben je nach Region unterschiedlich ausgesprochen werden. Vergleichen Sie Norden (Hanoi) und Süden (Ho-Chi-Minh-Stadt).",
-    "fr": "Voici 5 cas typiques où les mêmes lettres se prononcent différemment selon la région. Comparez le Nord (Hanoï) et le Sud (Hô Chi Minh-Ville).",
-    "pl": "Oto 5 typowych przypadków, gdy te same litery brzmią inaczej w zależności od regionu. Porównaj Północ (Hanoi) i Południe (Ho Chi Minh)."
-  },
-  "바로가기": {"zh":"前往","en":"Go","ja":"移動","de":"Direkt zu","fr":"Accéder","pl":"Przejdź"},
-  "주": {"zh":"週","en":"Week","ja":"週","de":"Woche","fr":"Semaine","pl":"Tydzień"},
-  "모든 대화를 구성하는 기본 단어": {
-    "zh": "構成所有對話的基本單字",
-    "en": "Basic Words That Make Up Every Dialogue",
-    "ja": "すべての会話を構成する基本単語",
-    "de": "Grundlegende Wörter aller Dialoge",
-    "fr": "Mots de base composant chaque dialogue",
-    "pl": "Podstawowe słowa tworzące każdy dialog"
-  },
-  "반의어": {
-    "zh": "反義詞",
-    "en": "Antonyms",
-    "ja": "反意語",
-    "de": "Antonyme (Gegenteile)",
-    "fr": "Antonymes",
-    "pl": "Antonimy"
-  },
-  "주어": {"zh":"主詞","en":"Subjects","ja":"主語","de":"Subjekt","fr":"Sujets","pl":"Podmioty"},
-  "조동사 등": {
-    "zh": "助動詞等",
-    "en": "Modals, etc.",
-    "ja": "助動詞など",
-    "de": "Modalverben usw.",
-    "fr": "Verbes auxiliaires / Modaux",
-    "pl": "Czasowniki posiłkowe i modalne"
-  },
-  "동사": {"zh":"動詞","en":"Verbs","ja":"動詞","de":"Verben","fr":"Verbes","pl":"Czasowniki"},
-  "장소 (ở ~)": {
-    "zh": "地點（ở ~）",
-    "en": "Places (ở ~)",
-    "ja": "場所（ở ~）",
-    "de": "Orte (ở ~)",
-    "fr": "Lieux (ở ~)",
-    "pl": "Miejsca (ở ~)"
-  },
-  "유인물 8단계 구성": {
-    "zh": "講義8階段結構",
-    "en": "8-Stage Handout Structure",
-    "ja": "配布資料の8段階構成",
-    "de": "8-stufiger Aufbau des Handzettels",
-    "fr": "Structure du document en 8 étapes",
-    "pl": "8-etapowa struktura materiałów"
-  },
-  "줄": {"zh":"列","en":" rows","ja":"行","de":" Zeilen","fr":" lignes","pl":" wierszy"},
-  "칸": {"zh":"欄","en":" cols","ja":"マス","de":" Spalten","fr":" colonnes","pl":" kolumn"},
-  "연결사": {
-    "zh": "連接詞",
-    "en": "Connectives",
-    "ja": "接続詞",
-    "de": "Bindewörter (Konjunktionen)",
-    "fr": "Conjonctions",
-    "pl": "Spójniki"
-  },
-  "움직임을 나타내는 동사": {
-    "zh": "表示動作的動詞",
-    "en": "Verbs of Movement",
-    "ja": "動きを表す動詞",
-    "de": "Verben der Bewegung",
-    "fr": "Verbes de mouvement",
-    "pl": "Czasowniki ruchu"
-  },
-  "위치 전치사": {
-    "zh": "位置介系詞",
-    "en": "Location Prepositions",
-    "ja": "位置を表す前置詞",
-    "de": "Präpositionen des Ortes",
-    "fr": "Prépositions de lieu",
-    "pl": "Przyimki miejsca"
-  },
-  "길찾기 대화문": {
-    "zh": "問路對話",
-    "en": "Asking-for-Directions Dialogue",
-    "ja": "道案内の会話文",
-    "de": "Wegbeschreibungs-Dialoge",
-    "fr": "Dialogues pour demander son chemin",
-    "pl": "Dialogi dotyczące pytania o drogę"
-  },
-  "A–Z 문법 사전": {
-    "zh": "A–Z 文法辭典",
-    "en": "A–Z Grammar Dictionary",
-    "ja": "A–Z 文法辞典",
-    "de": "A–Z Grammatiklexikon",
-    "fr": "Dictionnaire de grammaire de A à Z",
-    "pl": "Leksykon gramatyczny od A do Z"
-  },
-  "왕국 노래": {
-    "zh": "王國詩歌",
-    "en": "Kingdom Songs",
-    "ja": "王国の歌",
-    "de": "Königreichslieder",
-    "fr": "Cantiques du Royaume",
-    "pl": "Pieśni Królestwa"
-  },
-  "번": {"zh":"首","en":"","ja":"番","de":"","fr":"","pl":""},
-  "기도 준비하기": {
-    "zh": "準備禱告",
-    "en": "Preparing a Prayer",
-    "ja": "祈りを準備する",
-    "de": "Ein Gebet vorbereiten",
-    "fr": "Préparer une prière",
-    "pl": "Przygotowanie modlitwy"
-  },
-  "맞음": {"zh":"答對","en":"correct","ja":"正解","de":"Richtig","fr":"correct","pl":"Prawidłowo"},
-  "베트남어로 입력하세요": {
-    "zh": "請輸入越南語",
-    "en": "Type it in Vietnamese",
-    "ja": "ベトナム語で入力してください",
-    "de": "Auf Vietnamesisch eingeben",
-    "fr": "Écrivez en vietnamien",
-    "pl": "Wpisz po wietnamsku"
-  },
-  "단어별 뜻": {
-    "zh": "逐字翻譯",
-    "en": "Word-by-Word Meaning",
-    "ja": "単語ごとの意味",
-    "de": "Bedeutung der einzelnen Wörter",
-    "fr": "Sens mot à mot",
-    "pl": "Znaczenie słowo po słowie"
-  },
-  "문장 뜻: ": {
-    "zh": "句子意思：",
-    "en": "Sentence meaning: ",
-    "ja": "文の意味：",
-    "de": "Satzbedeutung: ",
-    "fr": "Sens de la phrase : ",
-    "pl": "Znaczenie zdania: "
-  },
-  "한국어라면 이 순서예요": {
-    "zh": "如果是中文，語序是這樣",
-    "en": "In English, the order would be this",
-    "ja": "日本語ならこの順番です",
-    "de": "In deutscher Wortstellung wäre es so",
-    "fr": "En français, l'ordre serait le suivant",
-    "pl": "W języku polskim szyk wyglądałby tak"
-  },
-  "베트남어는 이 순서로 이동해요!": {
-    "zh": "越南語會變成這個順序！",
-    "en": "In Vietnamese, it moves to this order!",
-    "ja": "ベトナム語ではこの順番に変わります！",
-    "de": "Im Vietnamesischen wechselt es in diese Reihenfolge!",
-    "fr": "En vietnamien, les mots s'agencent dans cet ordre !",
-    "pl": "W wietnamskim słowa przestawiają się w taki szyk!"
-  },
-  "동생": {
-    "zh": "弟妹",
-    "en": "Younger Sibling",
-    "ja": "弟・妹",
-    "de": "Jüngeres Geschwister",
-    "fr": "Petit frère / Petite sœur",
-    "pl": "Młodsze rodzeństwo"
-  },
-  "초면 · 나이를 잘 모르고 아직 친하지 않아 거리를 둘 때": {
-    "zh": "初次見面，不太清楚年齡，還不熟悉，保持一定距離時",
-    "en": "First meeting, don't know their age well, not yet close, keeping a respectful distance",
-    "ja": "初対面で年齢がよく分からず、まだ親しくないため距離を置くとき",
-    "de": "Erstes Treffen, Alter unbekannt, respektvoller Abstand",
-    "fr": "Premier contact, âge inconnu, pas encore familiers, politesse",
-    "pl": "Pierwsze spotkanie, wiek nieznany, uprzejmy dystans"
-  },
-  "검색 결과가 없어요.": {
-    "zh": "沒有搜尋結果。",
-    "en": "No results found.",
-    "ja": "検索結果がありません。",
-    "de": "Keine Suchergebnisse.",
-    "fr": "Aucun résultat trouvé.",
-    "pl": "Brak wyników wyszukiwania."
-  },
-  "사전어순(베트남어 알파벳순)으로 정리했어요. 한자어에서 온 단어는 괄호 안에 한자를 표시했습니다.": {
-    "zh": "依字典順序（越南語字母順序）排列。源自漢字詞的單字，括號內會標示漢字。",
-    "en": "Sorted in dictionary order (Vietnamese alphabetical order). Words derived from Sino-Vietnamese show the Chinese characters in parentheses.",
-    "ja": "辞書順（ベトナム語アルファベット順）に整理しました。漢語由来の単語は括弧内に漢字を表示しています。",
-    "de": "In Wörterbuchreihenfolge (vietnamesisches Alphabet) sortiert. Aus dem Sino-Vietnamesischen stammende Wörter zeigen die Schriftzeichen in Klammern.",
-    "fr": "Classé par ordre alphabétique vietnamien. Les mots d'origine sino-vietnamienne indiquent les sinogrammes entre parenthèses.",
-    "pl": "Uporządkowano w kolejności alfabetycznej języka wietnamskiego. Przy słowach pochodzenia sino-wietnamskiego podano znaki chińskie w nawiasach."
-  },
-  "총 ": {"zh":"共 ","en":"","ja":"全 ","de":"Insgesamt ","fr":"Total : ","pl":"Razem: "},
-  "개 단어 중 ": {"zh":"個單字中，","en":" of ","ja":"語中、","de":" von ","fr":" sur ","pl":" z "},
-  "개 검색됨": {
-    "zh": "個符合搜尋",
-    "en": " matched",
-    "ja": "件ヒット",
-    "de": " Wörter gefunden",
-    "fr": " mots trouvés",
-    "pl": " znalezionych słów"
-  },
-  "4음절 이상 결합어는 그것을 이루는 기본 단어를 먼저 보여준 뒤에 나옵니다.": {
-    "zh": "4音節以上的組合詞，會先顯示組成它的基本單字，然後才出現該組合詞。",
-    "en": "Compound words of four or more syllables are shown after first introducing the basic words that make them up.",
-    "ja": "4音節以上の合成語は、それを構成する基本単語を先に示してから出てきます。",
-    "de": "Zusammengesetzte Wörter ab vier Silben werden nach ihren Grundbestandteilen aufgeführt.",
-    "fr": "Les mots composés de 4 syllabes ou plus sont présentés après avoir introduit leurs termes de base.",
-    "pl": "Słowa złożone z 4 lub więcej sylab są prezentowane po przedstawieniu ich słów składowych."
-  },
-  "결합어": {
-    "zh": "組合詞",
-    "en": "Compound",
-    "ja": "合成語",
-    "de": "Komposita",
-    "fr": "Mots composés",
-    "pl": "Wyrazy złożone"
-  },
-  "개 단어": {"zh":"個單字","en":" words","ja":"語","de":" Wörter","fr":" mots","pl":" słów"},
-  "베트남어 한자어 음절을 받침(끝소리)별로 묶고, 그 받침이 한국 한자음의 어떤 받침과 대응하는지 보여줘요. 안에서 다시 모음별(운) 그룹으로 나누어, 하나의 기본 단어에서 여러 파생 단어의 한국 한자음을 함께 익힐 수 있어요.": {
-    "zh": "依越南語漢字詞音節的收尾音分組，並顯示該收尾音對應到中文漢字音的哪個收尾音。組內再依母音（韻）細分，讓您能從一個基本詞彙一起熟悉多個衍生詞的中文漢字音。",
-    "en": "Groups Sino-Vietnamese syllables by their final sound, and shows which final sound in the Chinese reading it corresponds to. Within each group, they're further divided by vowel (rhyme), so you can learn the Chinese readings of several derived words together from one basic word.",
-    "ja": "ベトナム語の漢語音節を語末音別にまとめ、その語末音が中国語の漢字音のどの語末音に対応するかを示します。中ではさらに母音（韻）別のグループに分け、1つの基本単語から複数の派生語の中国語漢字音をまとめて覚えられます。",
-    "de": "Gruppiert sino-vietnamesische Silben nach Endlauten und zeigt Entsprechungen auf.",
-    "fr": "Regroupe les syllabes sino-vietnamiennes par consonne finale et montre les correspondances phonétiques.",
-    "pl": "Grupuje sylaby sino-wietnamskie według spółgłoski końcowej i pokazuje odpowiedniości fonetyczne."
-  },
-  "[어순반대]": {
-    "zh": "［語序相反］",
-    "en": "[reversed order]",
-    "ja": "［語順が逆］",
-    "de": "[Umgekehrte Wortstellung]",
-    "fr": "[ordre inversé]",
-    "pl": "[odwrócony szyk]"
-  },
-  "어순반대": {
-    "zh": "語序相反",
-    "en": "Reversed Order",
-    "ja": "語順が逆",
-    "de": "Umgekehrte Wortstellung",
-    "fr": "Ordre inversé",
-    "pl": "Odwrócony szyk"
-  },
-  "베트남어 한자어 중, 한국어·중국어·일본어의 한자 어순과 베트남어 어순이 서로 반대인 단어들을 모았어요.": {
-    "zh": "收錄了越南語漢字詞中，韓文·中文·日文的漢字語序與越南語語序相反的單字。",
-    "en": "Collects Sino-Vietnamese words whose Vietnamese syllable order is reversed compared to the hanja/hanzi/kanji order used in Korean, Chinese, and Japanese.",
-    "ja": "ベトナム語の漢語のうち、韓国語・中国語・日本語の漢字語順とベトナム語の語順が逆になっている単語を集めました。",
-    "de": "Sino-vietnamesische Wörter, deren Silbenreihenfolge im Vietnamesischen umgekehrt ist.",
-    "fr": "Rassemble les mots sino-vietnamiens dont l'ordre des syllabes est inversé par rapport au chinois, coréen et japonais.",
-    "pl": "Zbiór słów sino-wietnamskich, w których kolejność sylab jest odwrotna niż w językach chińskim, koreańskim i japońskim."
-  },
-  "구약 (39권)": {
-    "zh": "舊約（39卷）",
-    "en": "Old Testament (39 Books)",
-    "ja": "旧約（39巻）",
-    "de": "Hebräische Schriften (39 Bücher)",
-    "fr": "Écritures hébraïques (39 livres)",
-    "pl": "Pisma Hebrajskie (39 ksiąg)"
-  },
-  "신약 (27권)": {
-    "zh": "新約（27卷）",
-    "en": "New Testament (27 Books)",
-    "ja": "新約（27巻）",
-    "de": "Christliche Griechische Schriften (27 Bücher)",
-    "fr": "Écritures grecques chrétiennes (27 livres)",
-    "pl": "Chrześcijańskie Pisma Greckie (27 ksiąg)"
-  },
-  "숫자 읽기 — 1~10": {
-    "zh": "數字讀法 — 1～10",
-    "en": "Reading Numbers — 1–10",
-    "ja": "数字の読み方 — 1〜10",
-    "de": "Zahlen lesen — 1–10",
-    "fr": "Lecture des nombres — 1–10",
-    "pl": "Odczytywanie liczb — 1–10"
-  },
-  "숫자 읽기 — 11~19": {
-    "zh": "數字讀法 — 11～19",
-    "en": "Reading Numbers — 11–19",
-    "ja": "数字の読み方 — 11〜19",
-    "de": "Zahlen lesen — 11–19",
-    "fr": "Lecture des nombres — 11–19",
-    "pl": "Odczytywanie liczb — 11–19"
-  },
-  "숫자 읽기 — 20~100": {
-    "zh": "數字讀法 — 20～100",
-    "en": "Reading Numbers — 20–100",
-    "ja": "数字の読み方 — 20〜100",
-    "de": "Zahlen lesen — 20–100",
-    "fr": "Lecture des nombres — 20–100",
-    "pl": "Odczytywanie liczb — 20–100"
-  },
-  "숫자 읽기 — 200~900": {
-    "zh": "數字讀法 — 200～900",
-    "en": "Reading Numbers — 200–900",
-    "ja": "数字の読み方 — 200〜900",
-    "de": "Zahlen lesen — 200–900",
-    "fr": "Lecture des nombres — 200–900",
-    "pl": "Odczytywanie liczb — 200–900"
-  },
-  "숫자 읽기 — 1,000 ~ 10억": {
-    "zh": "數字讀法 — 1,000～10億",
-    "en": "Reading Numbers — 1,000–1 Billion",
-    "ja": "数字の読み方 — 1,000〜10億",
-    "de": "Zahlen lesen — 1.000–1 Milliarde",
-    "fr": "Lecture des nombres — 1 000 à 1 milliard",
-    "pl": "Odczytywanie liczb — 1000 do 1 miliarda"
-  },
-  "숫자 표기법 — 마침표와 쉼표": {
-    "zh": "數字書寫方式 — 句點與逗號",
-    "en": "Number Formatting — Periods and Commas",
-    "ja": "数字の表記法 — ピリオドとコンマ",
-    "de": "Zahlenformatierung — Punkt und Komma",
-    "fr": "Notation des nombres — Point et virgule",
-    "pl": "Zapis liczb — Kropka i przecinek"
-  },
-  "월 (달)": {"zh":"月份","en":"Months","ja":"月","de":"Monate","fr":"Mois","pl":"Miesiące"},
-  "요일": {
-    "zh": "星期",
-    "en": "Days of the Week",
-    "ja": "曜日",
-    "de": "Wochentage",
-    "fr": "Jours de la semaine",
-    "pl": "Dni tygodnia"
-  },
-  "날짜": {"zh":"日期","en":"Dates","ja":"日付","de":"Datum","fr":"Date","pl":"Data"},
-  "계절": {"zh":"季節","en":"Seasons","ja":"季節","de":"Jahreszeiten","fr":"Saisons","pl":"Pory roku"},
-  "연도 읽는 법 — lẻ와 không trăm": {
-    "zh": "年份的讀法 — lẻ 和 không trăm",
-    "en": "Reading Years — lẻ and không trăm",
-    "ja": "年の読み方 — lẻ と không trăm",
-    "de": "Jahreszahlen lesen — lẻ und không trăm",
-    "fr": "Lecture des années — lẻ et không trăm",
-    "pl": "Odczytywanie lat — lẻ i không trăm"
-  },
-  "이 경우, 호칭이 북부·남부에 따라 달라져요.": {
-    "zh": "在這種情況下，稱呼會因北部、南部而有所不同。",
-    "en": "In this case, the term of address differs between the North and the South.",
-    "ja": "この場合、呼び方が北部・南部で異なります。",
-    "de": "In diesem Fall unterscheidet sich die Anrede zwischen Norden und Süden.",
-    "fr": "Dans ce cas, la formule d'adresse varie entre le Nord et le Sud.",
-    "pl": "W tym przypadku forma grzecznościowa różni się między Północą a Południem."
-  },
-  "이 브라우저에서는 베트남어 음성을 찾을 수 없어요. 기본 음성으로 재생을 시도합니다.": {
-    "zh": "此瀏覽器找不到越南語語音，將嘗試以預設語音播放。",
-    "en": "No Vietnamese voice was found in this browser. Playback will be attempted with the default voice.",
-    "ja": "このブラウザではベトナム語の音声が見つかりません。デフォルトの音声で再生を試みます。",
-    "de": "In diesem Browser wurde keine vietnamesische Stimme gefunden. Es wird versucht, mit der Standardstimme abzuspielen.",
-    "fr": "Aucune voix vietnamienne n'a été trouvée dans ce navigateur. Tentative de lecture avec la voix par défaut.",
-    "pl": "W tej przeglądarce nie znaleziono wietnamskiego głosu. Nastąpi próba odtworzenia głosem domyślnym."
-  },
-  "발음 듣기에 사용할 목소리를 선택하세요. (기기·브라우저에 설치된 베트남어 음성만 표시돼요)": {
-    "zh": "請選擇用於發音播放的語音。（僅顯示裝置、瀏覽器中已安裝的越南語語音）",
-    "en": "Choose a voice for pronunciation playback. (Only Vietnamese voices installed on your device/browser are shown)",
-    "ja": "発音再生に使う声を選んでください。（機器・ブラウザにインストール済みのベトナム語の声のみ表示されます）",
-    "de": "Wählen Sie eine Stimme für die Aussprache. (Es werden nur installierte vietnamesische Stimmen angezeigt)",
-    "fr": "Choisissez la voix pour la prononciation. (Seules les voix vietnamiennes installées s'affichent)",
-    "pl": "Wybierz głos do odsłuchu wymowy. (Wyświetlane są tylko głosy zainstalowane na urządzeniu)"
-  },
-  "뜻·해석 읽기 목소리": {
-    "zh": "詞義、翻譯朗讀語音",
-    "en": "Meaning/Translation Voice",
-    "ja": "意味・訳読み上げの声",
-    "de": "Stimme für Bedeutung/Übersetzung",
-    "fr": "Voix pour le sens et la traduction",
-    "pl": "Głos do odczytu znaczenia i tłumaczenia"
-  },
-  "전체 듣기에서 단어 뜻이나 문장 해석도 함께 읽어드려요. 아래에서 현재 언어 모드(한국어·中文·English·日本語)로 읽어줄 목소리를 선택하세요.": {
-    "zh": "在「全部朗讀」中，也會一併朗讀詞義或例句翻譯。請在下方選擇要用目前語言模式（韓文・中文・English・日本語）朗讀的語音。",
-    "en": "\"Read All\" also reads the word's meaning or the sentence's translation aloud. Choose below which voice should read it in the current language mode (Korean/Chinese/English/Japanese).",
-    "ja": "「全部読み上げ」では、単語の意味や文の訳も一緒に読み上げます。下で、現在の言語モード（韓国語・中国語・English・日本語）で読み上げる声を選んでください。",
-    "de": "Beim Vorlesen wird auch die Bedeutung oder Übersetzung vorgelesen. Wählen Sie unten eine Stimme im aktuellen Sprachmodus aus.",
-    "fr": "« Tout écouter » lit également le sens du mot ou la traduction de la phrase. Choisissez ci-dessous la voix correspondant à la langue de l'interface.",
-    "pl": "Opcja „Odtwórz wszystko” odczytuje także znaczenie słowa lub tłumaczenie zdania. Wybierz poniżej głos dla bieżącego języka interfejsu."
-  },
-  "이 브라우저에서는 현재 언어 모드의 음성을 찾을 수 없어요. 뜻·해석 읽기는 기본 음성으로 재생을 시도합니다.": {
-    "zh": "此瀏覽器找不到符合目前語言模式的語音，詞義、翻譯朗讀將嘗試以預設語音播放。",
-    "en": "No voice matching the current language mode was found in this browser. Meaning/translation playback will be attempted with the default voice.",
-    "ja": "このブラウザでは現在の言語モードに合う音声が見つかりません。意味・訳の読み上げはデフォルトの音声で再生を試みます。",
-    "de": "In diesem Browser wurde keine Stimme für den aktuellen Sprachmodus gefunden. Die Bedeutung bzw. Übersetzung wird mit der Standardstimme abgespielt.",
-    "fr": "Aucune voix correspondant à la langue de l'interface n'a été trouvée. Lecture de la traduction avec la voix par défaut.",
-    "pl": "W tej przeglądarce nie znaleziono głosu dla bieżącego języka. Tłumaczenie zostanie odczytane głosem domyślnym."
-  },
-  "전체 듣기에서 베트남어 다음에 단어 뜻이나 문장 해석을 읽어줄 때 사용할 목소리를 선택하세요. (기기·브라우저에 설치된, 현재 언어 모드에 맞는 음성만 표시돼요)": {
-    "zh": "請選擇「全部朗讀」中，唸完越南語後接著朗讀詞義或例句翻譯時使用的語音。（僅顯示裝置、瀏覽器中已安裝、符合目前語言模式的語音）",
-    "en": "Choose the voice used to read the word's meaning or the sentence's translation right after the Vietnamese, during \"Read All\". (Only voices installed on your device/browser that match the current language mode are shown)",
-    "ja": "「全部読み上げ」でベトナム語の後に単語の意味や文の訳を読み上げる際に使う声を選んでください。（機器・ブラウザにインストール済みの、現在の言語モードに合う声のみ表示されます）",
-    "de": "Wählen Sie die Stimme, die beim Vorlesen nach dem Vietnamesischen die Bedeutung oder Übersetzung vorliest. (Es werden nur Stimmen angezeigt, die zum aktuellen Sprachmodus passen)",
-    "fr": "Choisissez la voix qui lira la traduction après le vietnamien lors de l'écoute globale.",
-    "pl": "Wybierz głos, który odczyta tłumaczenie po tekście wietnamskim podczas pełnego odtwarzania."
-  },
-  "여성 추정": {
-    "zh": "推測為女性",
-    "en": "likely female",
-    "ja": "女性と推定",
-    "de": "vermutlich weiblich",
-    "fr": "vraisemblablement femme",
-    "pl": "prawdopodobnie kobieta"
-  },
-  "남성 추정": {
-    "zh": "推測為男性",
-    "en": "likely male",
-    "ja": "男性と推定",
-    "de": "vermutlich männlich",
-    "fr": "vraisemblablement homme",
-    "pl": "prawdopodobnie mężczyzna"
-  },
-  "한국어 뜻 가리고 연습하기": {
-    "zh": "遮住中文意思來練習",
-    "en": "Practice with the Meaning Hidden",
-    "ja": "日本語の意味を隠して練習する",
-    "de": "Bedeutung verdecken und üben",
-    "fr": "S'entraîner en masquant la traduction",
-    "pl": "Ćwicz z ukrytym znaczeniem"
-  },
-  "상대": {"zh":"對方","en":"Them","ja":"相手","de":"Gegenüber","fr":"Interlocuteur","pl":"Rozmówca"},
-  "문장 종류": {
-    "zh": "句子種類",
-    "en": "Sentence Type",
-    "ja": "文の種類",
-    "de": "Satzart",
-    "fr": "Type de phrase",
-    "pl": "Typ zdania"
-  },
-  "의문사 선택": {
-    "zh": "選擇疑問詞",
-    "en": "Choose a Wh-word",
-    "ja": "疑問詞を選択",
-    "de": "Fragewort auswählen",
-    "fr": "Choisir un mot interrogatif",
-    "pl": "Wybierz zaimek pytający"
-  },
-  "접속어 (문장 앞에 붙는 연결어)": {
-    "zh": "連接詞（放在句子前面的連接語）",
-    "en": "Connective (linking word before the sentence)",
-    "ja": "接続語（文頭につく接続語）",
-    "de": "Bindewort (vorangestellte Konjunktion)",
-    "fr": "Conjonction (mot de liaison en tête de phrase)",
-    "pl": "Spójnik (słowo łączące na początku zdania)"
-  },
-  "사용 안 함": {
-    "zh": "不使用",
-    "en": "Not used",
-    "ja": "使用しない",
-    "de": "Nicht verwendet",
-    "fr": "Non utilisé",
-    "pl": "Nie używaj"
-  },
-  "예: Sau khi": {
-    "zh": "例：Sau khi",
-    "en": "e.g. Sau khi",
-    "ja": "例：Sau khi",
-    "de": "z. B. Sau khi",
-    "fr": "ex. : Sau khi",
-    "pl": "np. Sau khi"
-  },
-  "예: 그 후에": {
-    "zh": "例：之後",
-    "en": "e.g. after that",
-    "ja": "例：その後に",
-    "de": "z. B. danach",
-    "fr": "ex. : après cela",
-    "pl": "np. potem, po tym"
-  },
-  "주어 (의문사 'ai(누가)'를 쓸 때처럼 주어가 필요 없으면 '사용 안 함')": {
-    "zh": "主語（像使用疑問詞 'ai(誰)' 時那樣不需要主語時，選「不使用」）",
-    "en": "Subject (choose \"Not used\" when no subject is needed, like when using the wh-word 'ai' (who))",
-    "ja": "主語（疑問詞「ai（誰）」を使うときのように主語が要らない場合は「使用しない」）",
-    "de": "Subjekt (wenn kein Subjekt benötigt wird, wählen Sie „Nicht verwendet“)",
-    "fr": "Sujet (choisissez « Non utilisé » si aucun sujet n'est nécessaire, ex. avec « ai » [qui])",
-    "pl": "Podmiot (wybierz „Nie używaj”, gdy podmiot nie jest potrzebny, np. przy zaimku 'ai' [kto])"
-  },
-  "예: học viên mới": {
-    "zh": "例：học viên mới",
-    "en": "e.g. học viên mới",
-    "ja": "例：học viên mới",
-    "de": "z. B. học viên mới",
-    "fr": "ex. : học viên mới",
-    "pl": "np. học viên mới"
-  },
-  "예: 새 학습자": {
-    "zh": "例：新學習者",
-    "en": "e.g. new student",
-    "ja": "例：新しい学習者",
-    "de": "z. B. neuer Bibelschüler",
-    "fr": "ex. : nouvel étudiant de la Bible",
-    "pl": "np. nowy zainteresowany"
-  },
-  "보조동사": {
-    "zh": "輔助動詞",
-    "en": "Auxiliary Verb",
-    "ja": "補助動詞",
-    "de": "Hilfsverb / Modalverb",
-    "fr": "Verbe auxiliaire / Modal",
-    "pl": "Czasownik posiłkowy / modalny"
-  },
-  "직접 입력": {
-    "zh": "手動輸入",
-    "en": "Custom input",
-    "ja": "直接入力",
-    "de": "Eigene Eingabe",
-    "fr": "Saisie personnalisée",
-    "pl": "Wpisz własny"
-  },
-  "예: định": {
-    "zh": "例：định",
-    "en": "e.g. định",
-    "ja": "例：định",
-    "de": "z. B. định",
-    "fr": "ex. : định",
-    "pl": "np. định"
-  },
-  "예: ~할 예정이다": {
-    "zh": "例：打算~",
-    "en": "e.g. plan to ~",
-    "ja": "例：~する予定だ",
-    "de": "z. B. vorhaben zu ~",
-    "fr": "ex. : avoir l'intention de ~",
-    "pl": "np. planować ~"
-  },
-  "뜻 패턴: ~하고 싶다": {
-    "zh": "意思模式：想要~",
-    "en": "Meaning pattern: want to ~",
-    "ja": "意味パターン：~したい",
-    "de": "Bedeutungsmuster: möchten ~",
-    "fr": "Modèle de sens : vouloir ~",
-    "pl": "Wzorzec znaczeniowy: chcieć ~"
-  },
-  "~해야 하다": {
-    "zh": "必須~",
-    "en": "must ~",
-    "ja": "~しなければならない",
-    "de": "müssen ~",
-    "fr": "devoir ~",
-    "pl": "musieć ~"
-  },
-  "~할 수 있다": {
-    "zh": "能~",
-    "en": "can ~",
-    "ja": "~することができる",
-    "de": "können ~",
-    "fr": "pouvoir ~",
-    "pl": "móc / potrafić ~"
-  },
-  "~할 수 없다": {
-    "zh": "不能~",
-    "en": "cannot ~",
-    "ja": "~することができない",
-    "de": "nicht können ~",
-    "fr": "ne pas pouvoir ~",
-    "pl": "nie móc ~"
-  },
-  "~하는 게 좋다": {
-    "zh": "最好~",
-    "en": "should ~",
-    "ja": "~したほうがいい",
-    "de": "sollten ~",
-    "fr": "il vaut mieux ~",
-    "pl": "lepiej zrobić ~"
-  },
-  "~할 것이다(미래)": {
-    "zh": "將要~（未來）",
-    "en": "will ~ (future)",
-    "ja": "~するだろう（未来）",
-    "de": "werden ~ (Zukunft)",
-    "fr": "futur (va ~ / fera ~)",
-    "pl": "czas przyszły (będzie ~)"
-  },
-  "~했다(과거)": {
-    "zh": "~了（過去）",
-    "en": "~ed (past)",
-    "ja": "~した（過去）",
-    "de": "hat ~t (Vergangenheit)",
-    "fr": "passé (a fait ~)",
-    "pl": "czas przeszły (zrobił ~)"
-  },
-  "~하는 중이다": {
-    "zh": "正在~",
-    "en": "be ~ing",
-    "ja": "~している",
-    "de": "gerade dabei sein zu ~",
-    "fr": "en train de ~",
-    "pl": "w trakcie robienia ~"
-  },
-  "~할 필요가 있다": {
-    "zh": "需要~",
-    "en": "need to ~",
-    "ja": "~する必要がある",
-    "de": "brauchen zu ~",
-    "fr": "avoir besoin de ~",
-    "pl": "potrzebować ~"
-  },
-  "~하는 것을 좋아하다": {
-    "zh": "喜歡~",
-    "en": "like to ~",
-    "ja": "~するのが好き",
-    "de": "gerne tun ~",
-    "fr": "aimer ~",
-    "pl": "lubić robić ~"
-  },
-  "~해라(명령)": {
-    "zh": "~吧（命令）",
-    "en": "~! (imperative)",
-    "ja": "~しなさい（命令）",
-    "de": "Mach ~! (Befehl)",
-    "fr": "impératif (fais ~ !)",
-    "pl": "tryb rozkazujący (zrób ~!)"
-  },
-  "가장 뜻이 비슷한 패턴을 골라야 문장이 올바르게 만들어져요.": {
-    "zh": "要選擇意思最相近的模式，句子才會正確生成。",
-    "en": "Pick the pattern closest in meaning so the sentence is generated correctly.",
-    "ja": "意味が一番近いパターンを選ぶと、正しい文が作られます。",
-    "de": "Wählen Sie das Muster mit der ähnlichsten Bedeutung, damit der Satz korrekt gebildet wird.",
-    "fr": "Choisissez le modèle le plus proche du sens souhaité pour que la phrase soit générée correctement.",
-    "pl": "Wybierz wzorzec najbliższy znaczeniowo, aby zdanie zostało utworzone poprawnie."
-  },
-  "동사 (베트남어는 형용사만으로도 문장이 완성돼요. 예: Trời lạnh. 날씨가 춥다.)": {
-    "zh": "動詞（越南語光用形容詞也能完成句子。例：Trời lạnh. 天氣冷。）",
-    "en": "Verb (Vietnamese can form a complete sentence with just an adjective. e.g. Trời lạnh. — It's cold.)",
-    "ja": "動詞（ベトナム語は形容詞だけでも文が完成します。例：Trời lạnh. 天気が寒い。）",
-    "de": "Verb (im Vietnamesischen reicht oft schon ein Adjektiv für einen vollständigen Satz, z. B. Trời lạnh. — Das Wetter ist kalt.)",
-    "fr": "Verbe (en vietnamien, un adjectif suffit souvent à former une phrase complète, ex. : Trời lạnh. — Il fait froid.)",
-    "pl": "Czasownik (w wietnamskim sam przymiotnik może tworzyć pełne zdanie, np. Trời lạnh. — Jest zimno.)"
-  },
-  "사용 안 함 (형용사만으로 문장 완성)": {
-    "zh": "不使用（只用形容詞完成句子）",
-    "en": "Not used (sentence completed with adjective only)",
-    "ja": "使用しない（形容詞だけで文を完成）",
-    "de": "Nicht verwendet (Satz nur mit Adjektiv)",
-    "fr": "Non utilisé (phrase formée avec l'adjectif seul)",
-    "pl": "Nie używaj (zdanie tylko z przymiotnikiem)"
-  },
-  "예: nấu": {
-    "zh": "例：nấu",
-    "en": "e.g. nấu",
-    "ja": "例：nấu",
-    "de": "z. B. nấu",
-    "fr": "ex. : nấu",
-    "pl": "np. nấu"
-  },
-  "사전형, 예: 요리하다": {
-    "zh": "辭典形，例：요리하다",
-    "en": "dictionary form, e.g. 요리하다",
-    "ja": "辞書形、例：요리하다",
-    "de": "Grundform, z. B. kochen",
-    "fr": "forme du dictionnaire, ex. : cuisiner",
-    "pl": "forma słownikowa, np. gotować"
-  },
-  "자동사 (목적어 없음)": {
-    "zh": "不及物動詞（無受詞）",
-    "en": "Intransitive (no object)",
-    "ja": "自動詞（目的語なし）",
-    "de": "Intransitiv (kein Objekt)",
-    "fr": "Intransitif (sans complément d'objet)",
-    "pl": "Nieprzechodni (bez dopełnienia)"
-  },
-  "타동사 (목적어 있음)": {
-    "zh": "及物動詞（有受詞）",
-    "en": "Transitive (has object)",
-    "ja": "他動詞（目的語あり）",
-    "de": "Transitiv (mit Objekt)",
-    "fr": "Transitif (avec complément d'objet)",
-    "pl": "Przechodni (z dopełnieniem)"
-  },
-  "과거형(선택, 비우면 자동생성) 예: 요리했": {
-    "zh": "過去式（可選，留空則自動生成）例：요리했",
-    "en": "past form (optional, auto-generated if left blank) e.g. 요리했",
-    "ja": "過去形（任意、空欄なら自動生成）例：요리했",
-    "de": "Vergangenheitsform (optional), z. B. kochte",
-    "fr": "forme passée (facultatif), ex. : a cuisiné",
-    "pl": "forma przeszła (opcjonalnie), np. gotował"
-  },
-  "목적어 (타동사를 골랐을 때만 적용돼요)": {
-    "zh": "受詞（只有選了及物動詞才會套用）",
-    "en": "Object (applies only when a transitive verb is chosen)",
-    "ja": "目的語（他動詞を選んだときのみ適用）",
-    "de": "Objekt (nur bei transitiven Verben wirksam)",
-    "fr": "Objet (s'applique uniquement avec un verbe transitif)",
-    "pl": "Dopełnienie (dotyczy tylko czasowników przechodnich)"
-  },
-  "예: bức thư": {
-    "zh": "例：bức thư",
-    "en": "e.g. bức thư",
-    "ja": "例：bức thư",
-    "de": "z. B. bức thư",
-    "fr": "ex. : bức thư",
-    "pl": "np. bức thư"
-  },
-  "예: 편지": {
-    "zh": "例：信",
-    "en": "e.g. letter",
-    "ja": "例：手紙",
-    "de": "z. B. Brief",
-    "fr": "ex. : lettre",
-    "pl": "np. list"
-  },
-  "명사 (동사로 'là(이다)'를 골랐을 때, 주어를 설명하는 명사예요: 주어+là+명사)": {
-    "zh": "名詞（選了動詞 'là(是)' 時，用來說明主語的名詞：主語+là+名詞）",
-    "en": "Noun (when the verb 'là' (be) is chosen, this noun describes the subject: subject + là + noun)",
-    "ja": "名詞（動詞「là（だ）」を選んだとき、主語を説明する名詞：主語+là+名詞）",
-    "de": "Nomen (wenn als Verb „là“ (sein) gewählt wurde: Subjekt + là + Nomen)",
-    "fr": "Nom (avec le verbe « là » [être], nom attribut du sujet : sujet + là + nom)",
-    "pl": "Rzeczownik (przy czasowniku „là” [być]: podmiot + là + rzeczownik)"
-  },
-  "예: người tiên phong": {
-    "zh": "例：người tiên phong",
-    "en": "e.g. người tiên phong",
-    "ja": "例：người tiên phong",
-    "de": "z. B. người tiên phong",
-    "fr": "ex. : người tiên phong",
-    "pl": "np. người tiên phong"
-  },
-  "예: 파이오니아": {
-    "zh": "例：先鋒",
-    "en": "e.g. pioneer",
-    "ja": "例：開拓者",
-    "de": "z. B. Pionier",
-    "fr": "ex. : pionnier",
-    "pl": "np. pionier"
-  },
-  "전치사 (với 등)": {
-    "zh": "介係詞（với 等）",
-    "en": "Preposition (với etc.)",
-    "ja": "前置詞（với など）",
-    "de": "Präposition (với usw.)",
-    "fr": "Préposition (với etc.)",
-    "pl": "Przyimek (với itd.)"
-  },
-  "예: với anh trai": {
-    "zh": "例：với anh trai",
-    "en": "e.g. với anh trai",
-    "ja": "例：với anh trai",
-    "de": "z. B. với anh trai",
-    "fr": "ex. : với anh trai",
-    "pl": "np. với anh trai"
-  },
-  "예: 형과": {
-    "zh": "例：跟哥哥",
-    "en": "e.g. with older brother",
-    "ja": "例：兄と",
-    "de": "z. B. mit dem älteren Bruder",
-    "fr": "ex. : avec le grand frère",
-    "pl": "np. ze starszym bratem"
-  },
-  "형용사 (목적어·명사가 있으면 그것을, 없으면 명사 주어를 꾸며요)": {
-    "zh": "形容詞（若有受詞·名詞就修飾它，沒有的話就修飾名詞主語）",
-    "en": "Adjective (modifies the object/noun if present, otherwise the noun subject)",
-    "ja": "形容詞（目的語・名詞があればそれを、なければ名詞主語を修飾）",
-    "de": "Adjektiv (beschreibt das Objekt/Nomen oder das Subjekt)",
-    "fr": "Adjectif (qualifie l'objet/le nom, ou le sujet nominal sinon)",
-    "pl": "Przymiotnik (określa dopełnienie/rzeczownik lub podmiot)"
-  },
-  "예: vui": {
-    "zh": "例：vui",
-    "en": "e.g. vui",
-    "ja": "例：vui",
-    "de": "z. B. vui",
-    "fr": "ex. : vui",
-    "pl": "np. vui"
-  },
-  "사전형, 예: 기쁘다": {
-    "zh": "辭典形，例：기쁘다",
-    "en": "dictionary form, e.g. 기쁘다",
-    "ja": "辞書形、例：기쁘다",
-    "de": "Grundform, z. B. erfreut sein",
-    "fr": "forme du dictionnaire, ex. : être joyeux",
-    "pl": "forma słownikowa, np. radosny"
-  },
-  "관형사형(선택) 예: 기쁜": {
-    "zh": "冠形詞形（可選）例：기쁜",
-    "en": "attributive form (optional) e.g. 기쁜",
-    "ja": "連体形（任意）例：기쁜",
-    "de": "Attributiv (optional), z. B. erfreut",
-    "fr": "forme épithète (facultatif), ex. : joyeux",
-    "pl": "forma przydawkowa (opcjonalnie), np. radosny"
-  },
-  "과거형(선택) 예: 기뻤": {
-    "zh": "過去式（可選）例：기뻤",
-    "en": "past form (optional) e.g. 기뻤",
-    "ja": "過去形（任意）例：기뻤",
-    "de": "Vergangenheit (optional), z. B. war erfreut",
-    "fr": "forme passée (facultatif), ex. : était joyeux",
-    "pl": "forma przeszła (opcjonalnie), np. był radosny"
-  },
-  "상태부사 (어떻게)": {
-    "zh": "狀態副詞（怎麼樣）",
-    "en": "Adverb of manner (how)",
-    "ja": "様態副詞（どのように）",
-    "de": "Modaladverb (wie)",
-    "fr": "Adverbe de manière (comment)",
-    "pl": "Przysłówek sposobu (jak)"
-  },
-  "예: lặng lẽ": {
-    "zh": "例：lặng lẽ",
-    "en": "e.g. lặng lẽ",
-    "ja": "例：lặng lẽ",
-    "de": "z. B. lặng lẽ",
-    "fr": "ex. : lặng lẽ",
-    "pl": "np. lặng lẽ"
-  },
-  "예: 조용히": {
-    "zh": "例：安靜地",
-    "en": "e.g. quietly",
-    "ja": "例：静かに",
-    "de": "z. B. leise",
-    "fr": "ex. : silencieusement",
-    "pl": "np. cicho"
-  },
-  "장소부사 (어디에서·어디로) — 장소 명사만 입력하면 동사에 맞는 ở/đến이 자동으로 붙어요": {
-    "zh": "地點副詞（在哪裡·去哪裡）— 只要輸入地點名詞，系統會依動詞自動加上 ở/đến",
-    "en": "Place adverb (where at / where to) — just enter the place noun; ở/đến is added automatically to match the verb",
-    "ja": "場所副詞（どこで・どこへ）— 場所の名詞だけ入力すれば、動詞に合わせて ở/đến が自動で付きます",
-    "de": "Lokaladverb (wo/wohin) — geben Sie nur das Ortsnomen ein; ở/đến wird passend zum Verb ergänzt",
-    "fr": "Adverbe de lieu (où / vers où) — saisissez seulement le nom de lieu ; ở/đến s'ajoute automatiquement selon le verbe",
-    "pl": "Przysłówek miejsca (gdzie/dokąd) — wpisz tylko nazwę miejsca; ở/đến doda się automatycznie"
-  },
-  "장소 명사만, 예: thư viện": {
-    "zh": "只要地點名詞，例：thư viện",
-    "en": "place noun only, e.g. thư viện",
-    "ja": "場所の名詞だけ、例：thư viện",
-    "de": "Nur das Ortsnomen, z. B. thư viện",
-    "fr": "nom de lieu seul, ex. : thư viện",
-    "pl": "sama nazwa miejsca, np. thư viện"
-  },
-  "예: 도서관": {
-    "zh": "例：圖書館",
-    "en": "e.g. library",
-    "ja": "例：図書館",
-    "de": "z. B. Bibliothek",
-    "fr": "ex. : bibliothèque",
-    "pl": "np. biblioteka"
-  },
-  "시간부사 (언제)": {
-    "zh": "時間副詞（何時）",
-    "en": "Adverb of time (when)",
-    "ja": "時間副詞（いつ）",
-    "de": "Temporaladverb (wann)",
-    "fr": "Adverbe de temps (quand)",
-    "pl": "Przysłówek czasu (kiedy)"
-  },
-  "예: tuần sau": {
-    "zh": "例：tuần sau",
-    "en": "e.g. tuần sau",
-    "ja": "例：tuần sau",
-    "de": "z. B. tuần sau",
-    "fr": "ex. : tuần sau",
-    "pl": "np. tuần sau"
-  },
-  "예: 다음 주": {
-    "zh": "例：下週",
-    "en": "e.g. next week",
-    "ja": "例：来週",
-    "de": "z. B. nächste Woche",
-    "fr": "ex. : la semaine prochaine",
-    "pl": "np. w przyszłym tygodniu"
-  },
-  "자동사": {
-    "zh": "不及物動詞",
-    "en": "Intransitive",
-    "ja": "自動詞",
-    "de": "Intransitiv",
-    "fr": "Intransitif",
-    "pl": "Czasownik nieprzechodni"
-  },
-  "타동사": {
-    "zh": "及物動詞",
-    "en": "Transitive",
-    "ja": "他動詞",
-    "de": "Transitiv",
-    "fr": "Transitif",
-    "pl": "Czasownik przechodni"
-  },
-  "대명사": {"zh":"代名詞","en":"Pronoun","ja":"代名詞","de":"Pronomen","fr":"Pronom","pl":"Zaimek"},
-  "명사": {"zh":"名詞","en":"Noun","ja":"名詞","de":"Nomen","fr":"Nom","pl":"Rzeczownik"},
-  "직접 입력한 동사·형용사·보조동사는 활용이 적용되지 않고, 입력한 뜻 그대로 문장에 표시돼요.": {
-    "zh": "手動輸入的動詞·形容詞·輔助動詞不會套用詞形變化，會直接以您輸入的意思顯示在句子裡。",
-    "en": "Custom verbs, adjectives, and auxiliary verbs are not conjugated — they appear in the sentence exactly as the meaning you typed.",
-    "ja": "直接入力した動詞・形容詞・補助動詞には活用が適用されず、入力した意味がそのまま文に表示されます。",
-    "de": "Selbst eingegebene Verben, Adjektive und Modalverben werden nicht gebeugt, sondern genau wie eingegeben im Satz angezeigt.",
-    "fr": "Les verbes, adjectifs et modaux saisis manuellement ne sont pas fléchis et apparaissent exactement tels que saisis.",
-    "pl": "Wpisane własne czasowniki, przymiotniki i modale nie podlegają odmianie i pojawiają się dokładnie w podanej formie."
-  },
-  "가족 호칭 가계도": {
-    "zh": "家族稱謂家譜圖",
-    "en": "Family Address-Term Tree",
-    "ja": "家族の呼び方系図",
-    "de": "Stammbaum der familiären Anredeformen",
-    "fr": "Arbre généalogique des termes de parenté",
-    "pl": "Drzewo genealogiczne form pokrewieństwa"
-  },
-  "직계 4대(증조부모~증손주)와 혼인으로 맺어지는 사돈 쪽 호칭을 하나의 가계도로 정리했어요.": {
-    "zh": "把直系四代（曾祖父母~曾孫）以及因婚姻而形成的親家稱謂整理成一張家譜圖。",
-    "en": "One family tree covering four direct generations (great-grandparents to great-grandchildren) plus the in-law terms that come with marriage.",
-    "ja": "直系四代（曾祖父母~ひ孫）と、結婚によってできる姻戚の呼び方を一つの家系図にまとめました。",
-    "de": "Ein Stammbaum über 4 Generationen (Urgroßeltern bis Urenkel) samt angeheirateten Verwandten.",
-    "fr": "Un arbre généalogique complet couvrant 4 générations directes (des arrière-grands-parents aux arrière-petits-enfants) ainsi que les liens par alliance.",
-    "pl": "Jedno drzewo genealogiczne obejmujące 4 pokolenia w linii prostej (od pradziadków do prawnuków) oraz powinowatych."
-  },
-  "혼인으로 맺어지는 사돈 쪽 호칭": {
-    "zh": "因婚姻而形成的親家稱謂",
-    "en": "In-law terms formed through marriage",
-    "ja": "結婚で結ばれる姻戚の呼び方",
-    "de": "Angeheiratete Verwandtschaft",
-    "fr": "Termes de parenté par alliance (beaux-parents, belle-famille)",
-    "pl": "Nazwy pokrewieństwa przez małżeństwo (powinowaci)"
-  },
-  "증조부모": {
-    "zh": "曾祖父母",
-    "en": "Great-grandparents",
-    "ja": "曾祖父母",
-    "de": "Urgroßeltern",
-    "fr": "Arrière-grands-parents",
-    "pl": "Pradziadkowie"
-  },
-  "조부모": {
-    "zh": "祖父母",
-    "en": "Grandparents",
-    "ja": "祖父母",
-    "de": "Großeltern",
-    "fr": "Grands-parents",
-    "pl": "Dziadkowie"
-  },
-  "부모": {"zh":"父母","en":"Parents","ja":"両親","de":"Eltern","fr":"Parents","pl":"Rodzice"},
-  "나·형제자매·배우자": {
-    "zh": "我‧兄弟姊妹‧配偶",
-    "en": "Me, siblings & spouse",
-    "ja": "私・兄弟姉妹・配偶者",
-    "de": "Ich, Geschwister & Ehepartner",
-    "fr": "Moi, frères et sœurs, conjoint",
-    "pl": "Ja, rodzeństwo i współmałżonek"
-  },
-  "자녀": {"zh":"子女","en":"Children","ja":"子ども","de":"Kinder","fr":"Enfants","pl":"Dzieci"},
-  "손주": {
-    "zh": "孫子女",
-    "en": "Grandchildren",
-    "ja": "孫",
-    "de": "Enkel",
-    "fr": "Petits-enfants",
-    "pl": "Wnuki"
-  },
-  "증손주": {
-    "zh": "曾孫子女",
-    "en": "Great-grandchildren",
-    "ja": "ひ孫",
-    "de": "Urenkel",
-    "fr": "Arrière-petits-enfants",
-    "pl": "Prawnuki"
-  },
-  "친가(아버지 쪽)": {
-    "zh": "父系（父親那邊）",
-    "en": "Paternal side (father's side)",
-    "ja": "父方（父の実家）",
-    "de": "Väterlicherseits",
-    "fr": "Côté paternel",
-    "pl": "Po mieczu (od strony ojca)"
-  },
-  "외가(어머니 쪽)": {
-    "zh": "母系（母親那邊）",
-    "en": "Maternal side (mother's side)",
-    "ja": "母方（母の実家）",
-    "de": "Mütterlicherseits",
-    "fr": "Côté maternel",
-    "pl": "Po kądzieli (od strony matki)"
-  },
-  "형제자매": {
-    "zh": "兄弟姊妹",
-    "en": "Siblings",
-    "ja": "兄弟姉妹",
-    "de": "Geschwister",
-    "fr": "Frères et sœurs",
-    "pl": "Rodzeństwo"
-  },
-  "배우자": {
-    "zh": "配偶",
-    "en": "Spouse",
-    "ja": "配偶者",
-    "de": "Ehepartner",
-    "fr": "Conjoint",
-    "pl": "Współmałżonek"
-  },
-  "며느리·사위": {
-    "zh": "媳婦‧女婿",
-    "en": "Children's spouses",
-    "ja": "嫁・婿",
-    "de": "Schwiegerkinder",
-    "fr": "Belle-fille / Gendre",
-    "pl": "Synowa / Zięć"
-  },
-  "친손(아들의 자녀)": {
-    "zh": "孫（兒子的子女）",
-    "en": "Grandchildren via son",
-    "ja": "息子の子（内孫）",
-    "de": "Enkel (über den Sohn)",
-    "fr": "Petits-enfants (par le fils)",
-    "pl": "Wnuki (od syna)"
-  },
-  "외손(딸의 자녀)": {
-    "zh": "外孫（女兒的子女）",
-    "en": "Grandchildren via daughter",
-    "ja": "娘の子（外孫）",
-    "de": "Enkel (über die Tochter)",
-    "fr": "Petits-enfants (par la fille)",
-    "pl": "Wnuki (od córki)"
-  },
-  "친증손(아들 쪽 손주의 자녀)": {
-    "zh": "曾孫（兒子那邊孫子女的子女）",
-    "en": "Great-grandchildren via son's line",
-    "ja": "息子側のひ孫",
-    "de": "Urenkel (Linie des Sohnes)",
-    "fr": "Arrière-petits-enfants (lignée du fils)",
-    "pl": "Prawnuki (z linii syna)"
-  },
-  "외증손(딸 쪽 손주의 자녀)": {
-    "zh": "外曾孫（女兒那邊孫子女的子女）",
-    "en": "Great-grandchildren via daughter's line",
-    "ja": "娘側のひ孫",
-    "de": "Urenkel (Linie der Tochter)",
-    "fr": "Arrière-petits-enfants (lignée de la fille)",
-    "pl": "Prawnuki (z linii córki)"
-  },
-  "배우자의 부모님": {
-    "zh": "配偶的父母",
-    "en": "Spouse's parents",
-    "ja": "配偶者の両親",
-    "de": "Schwiegereltern",
-    "fr": "Beaux-parents",
-    "pl": "Teściowie"
-  },
-  "남편의 부모(아내 입장)": {
-    "zh": "丈夫的父母（妻子的立場）",
-    "en": "Husband's parents (from the wife's side)",
-    "ja": "夫の両親（妻の立場）",
-    "de": "Schwiegereltern (aus Sicht der Ehefrau)",
-    "fr": "Parents du mari (du point de vue de l'épouse)",
-    "pl": "Rodzice męża (z punktu widzenia żony)"
-  },
-  "아내의 부모(남편 입장)": {
-    "zh": "妻子的父母（丈夫的立場）",
-    "en": "Wife's parents (from the husband's side)",
-    "ja": "妻の両親（夫の立場）",
-    "de": "Schwiegereltern (aus Sicht des Ehemanns)",
-    "fr": "Parents de l'épouse (du point de vue du mari)",
-    "pl": "Rodzice żony (z punktu widzenia męża)"
-  },
-  "배우자의 형제자매": {
-    "zh": "配偶的兄弟姊妹",
-    "en": "Spouse's siblings",
-    "ja": "配偶者の兄弟姉妹",
-    "de": "Geschwister des Ehepartners",
-    "fr": "Beaux-frères et belles-sœurs",
-    "pl": "Rodzeństwo współmałżonka (szwagrowie/szwagierki)"
-  },
-  "남편의 형제자매(아내 입장)": {
-    "zh": "丈夫的兄弟姊妹（妻子的立場）",
-    "en": "Husband's siblings (from the wife's side)",
-    "ja": "夫の兄弟姉妹（妻の立場）",
-    "de": "Schwäger/Schwägerinnen (aus Sicht der Ehefrau)",
-    "fr": "Frères et sœurs du mari (du point de vue de l'épouse)",
-    "pl": "Rodzeństwo męża (z punktu widzenia żony)"
-  },
-  "아내의 형제자매(남편 입장)": {
-    "zh": "妻子的兄弟姊妹（丈夫的立場）",
-    "en": "Wife's siblings (from the husband's side)",
-    "ja": "妻の兄弟姉妹（夫の立場）",
-    "de": "Schwäger/Schwägerinnen (aus Sicht des Ehemanns)",
-    "fr": "Frères et sœurs de l'épouse (du point de vue du mari)",
-    "pl": "Rodzeństwo żony (z punktu widzenia męża)"
-  },
-  "형제자매의 배우자": {
-    "zh": "兄弟姊妹的配偶",
-    "en": "Siblings' spouses",
-    "ja": "兄弟姉妹の配偶者",
-    "de": "Ehepartner der Geschwister",
-    "fr": "Conjoints des frères et sœurs",
-    "pl": "Współmałżonkowie rodzeństwa"
-  },
-  "오빠·남동생의 아내": {
-    "zh": "哥哥‧弟弟的妻子",
-    "en": "Older/younger brother's wife",
-    "ja": "兄・弟の妻",
-    "de": "Ehefrau des Bruders (Schwägerin)",
-    "fr": "Épouse du frère (belle-sœur)",
-    "pl": "Żona brata (bratowa)"
-  },
-  "언니·여동생의 남편": {
-    "zh": "姊姊‧妹妹的丈夫",
-    "en": "Older/younger sister's husband",
-    "ja": "姉・妹の夫",
-    "de": "Ehemann der Schwester (Schwager)",
-    "fr": "Époux de la sœur (beau-frère)",
-    "pl": "Mąż siostry (szwagier)"
-  },
-  "자녀의 배우자 쪽 부모": {
-    "zh": "子女配偶的父母",
-    "en": "Children's spouses' parents",
-    "ja": "子どもの配偶者の両親",
-    "de": "Eltern des Schwiegerkindes",
-    "fr": "Parents du gendre ou de la belle-fille (co-beaux-parents)",
-    "pl": "Rodzice zięcia lub synowej (współteściowie)"
-  },
-  "사돈": {
-    "zh": "親家",
-    "en": "Co-parents-in-law",
-    "ja": "サドン（子の配偶者の親同士）",
-    "de": "Gegenschwiegereltern",
-    "fr": "Co-beaux-parents",
-    "pl": "Współteściowie"
-  },
-  "증조할아버지": {
-    "zh": "曾祖父",
-    "en": "Great-grandfather (paternal)",
-    "ja": "曾祖父（父方）",
-    "de": "Urgroßvater (väterlicherseits)",
-    "fr": "Arrière-grand-père (paternel)",
-    "pl": "Pradziadek (ze strony ojca)"
-  },
-  "증조할머니": {
-    "zh": "曾祖母",
-    "en": "Great-grandmother (paternal)",
-    "ja": "曾祖母（父方）",
-    "de": "Urgroßmutter (väterlicherseits)",
-    "fr": "Arrière-grand-mère (paternelle)",
-    "pl": "Prababcia (ze strony ojca)"
-  },
-  "외증조할아버지": {
-    "zh": "外曾祖父",
-    "en": "Great-grandfather (maternal)",
-    "ja": "曾祖父（母方）",
-    "de": "Urgroßvater (mütterlicherseits)",
-    "fr": "Arrière-grand-père (maternel)",
-    "pl": "Pradziadek (ze strony matki)"
-  },
-  "외증조할머니": {
-    "zh": "外曾祖母",
-    "en": "Great-grandmother (maternal)",
-    "ja": "曾祖母（母方）",
-    "de": "Urgroßmutter (mütterlicherseits)",
-    "fr": "Arrière-grand-mère (maternelle)",
-    "pl": "Prababcia (ze strony matki)"
-  },
-  "할아버지": {
-    "zh": "爺爺",
-    "en": "Grandfather (paternal)",
-    "ja": "祖父（父方）",
-    "de": "Großvater (väterlicherseits)",
-    "fr": "Grand-père (paternel)",
-    "pl": "Dziadek (ze strony ojca)"
-  },
-  "할머니": {
-    "zh": "奶奶",
-    "en": "Grandmother (paternal)",
-    "ja": "祖母（父方）",
-    "de": "Großmutter (väterlicherseits)",
-    "fr": "Grand-mère (paternelle)",
-    "pl": "Babcia (ze strony ojca)"
-  },
-  "외할아버지": {
-    "zh": "外公",
-    "en": "Grandfather (maternal)",
-    "ja": "祖父（母方）",
-    "de": "Großvater (mütterlicherseits)",
-    "fr": "Grand-père (maternel)",
-    "pl": "Dziadek (ze strony matki)"
-  },
-  "외할머니": {
-    "zh": "外婆",
-    "en": "Grandmother (maternal)",
-    "ja": "祖母（母方）",
-    "de": "Großmutter (mütterlicherseits)",
-    "fr": "Grand-mère (maternelle)",
-    "pl": "Babcia (ze strony matki)"
-  },
-  "아버지": {"zh":"父親","en":"Father","ja":"父","de":"Vater","fr":"Père","pl":"Ojciec"},
-  "어머니": {"zh":"母親","en":"Mother","ja":"母","de":"Mutter","fr":"Mère","pl":"Matka"},
-  "남동생": {
-    "zh": "弟弟",
-    "en": "Younger brother",
-    "ja": "弟",
-    "de": "Jüngerer Bruder",
-    "fr": "Petit frère",
-    "pl": "Młodszy brat"
-  },
-  "여동생": {
-    "zh": "妹妹",
-    "en": "Younger sister",
-    "ja": "妹",
-    "de": "Jüngere Schwester",
-    "fr": "Petite sœur",
-    "pl": "Młodsza siostra"
-  },
-  "남편": {"zh":"丈夫","en":"Husband","ja":"夫","de":"Ehemann","fr":"Mari","pl":"Mąż"},
-  "아내": {"zh":"妻子","en":"Wife","ja":"妻","de":"Ehefrau","fr":"Femme (épouse)","pl":"Żona"},
-  "아들": {"zh":"兒子","en":"Son","ja":"息子","de":"Sohn","fr":"Fils","pl":"Syn"},
-  "딸": {"zh":"女兒","en":"Daughter","ja":"娘","de":"Tochter","fr":"Fille","pl":"Córka"},
-  "며느리": {
-    "zh": "媳婦",
-    "en": "Daughter-in-law",
-    "ja": "嫁（息子の妻）",
-    "de": "Schwiegertochter",
-    "fr": "Belle-fille",
-    "pl": "Synowa"
-  },
-  "사위": {
-    "zh": "女婿",
-    "en": "Son-in-law",
-    "ja": "婿（娘の夫）",
-    "de": "Schwiegersohn",
-    "fr": "Gendre",
-    "pl": "Zięć"
-  },
-  "친손자": {
-    "zh": "孫子",
-    "en": "Grandson (via son)",
-    "ja": "孫息子（内孫）",
-    "de": "Enkelsohn (vom Sohn)",
-    "fr": "Petit-fils (par le fils)",
-    "pl": "Wnuk (od syna)"
-  },
-  "친손녀": {
-    "zh": "孫女",
-    "en": "Granddaughter (via son)",
-    "ja": "孫娘（内孫）",
-    "de": "Enkeltochter (vom Sohn)",
-    "fr": "Petite-fille (par le fils)",
-    "pl": "Wnuczka (od syna)"
-  },
-  "외손자": {
-    "zh": "外孫",
-    "en": "Grandson (via daughter)",
-    "ja": "孫息子（外孫）",
-    "de": "Enkelsohn (von der Tochter)",
-    "fr": "Petit-fils (par la fille)",
-    "pl": "Wnuk (od córki)"
-  },
-  "외손녀": {
-    "zh": "外孫女",
-    "en": "Granddaughter (via daughter)",
-    "ja": "孫娘（外孫）",
-    "de": "Enkeltochter (von der Tochter)",
-    "fr": "Petite-fille (par la fille)",
-    "pl": "Wnuczka (od córki)"
-  },
-  "친증손자": {
-    "zh": "曾孫",
-    "en": "Great-grandson (son's line)",
-    "ja": "ひ孫息子（内系）",
-    "de": "Urenkel (vom Sohn)",
-    "fr": "Arrière-petit-fils (par le fils)",
-    "pl": "Prawnuk (z linii syna)"
-  },
-  "친증손녀": {
-    "zh": "曾孫女",
-    "en": "Great-granddaughter (son's line)",
-    "ja": "ひ孫娘（内系）",
-    "de": "Urenkelin (vom Sohn)",
-    "fr": "Arrière-petite-fille (par le fils)",
-    "pl": "Prawnuczka (z linii syna)"
-  },
-  "외증손자": {
-    "zh": "外曾孫",
-    "en": "Great-grandson (daughter's line)",
-    "ja": "ひ孫息子（外系）",
-    "de": "Urenkel (von der Tochter)",
-    "fr": "Arrière-petit-fils (par la fille)",
-    "pl": "Prawnuk (z linii córki)"
-  },
-  "외증손녀": {
-    "zh": "外曾孫女",
-    "en": "Great-granddaughter (daughter's line)",
-    "ja": "ひ孫娘（外系）",
-    "de": "Urenkelin (von der Tochter)",
-    "fr": "Arrière-petite-fille (par la fille)",
-    "pl": "Prawnuczka (z linii córki)"
-  },
-  "시아버지(남편의 아버지)": {
-    "zh": "公公（丈夫的父親）",
-    "en": "Father-in-law (husband's father)",
-    "ja": "義父（夫の父）",
-    "de": "Schwiegervater (Vater des Ehemanns)",
-    "fr": "Beau-père (père du mari)",
-    "pl": "Teść (ojciec męża)"
-  },
-  "시어머니(남편의 어머니)": {
-    "zh": "婆婆（丈夫的母親）",
-    "en": "Mother-in-law (husband's mother)",
-    "ja": "義母（夫の母）",
-    "de": "Schwiegermutter (Mutter des Ehemanns)",
-    "fr": "Belle-mère (mère du mari)",
-    "pl": "Teściowa (matka męża)"
-  },
-  "장인(아내의 아버지)": {
-    "zh": "岳父（妻子的父親）",
-    "en": "Father-in-law (wife's father)",
-    "ja": "義父（妻の父）",
-    "de": "Schwiegervater (Vater der Ehefrau)",
-    "fr": "Beau-père (père de la femme)",
-    "pl": "Teść (ojciec żony)"
-  },
-  "장모(아내의 어머니)": {
-    "zh": "岳母（妻子的母親）",
-    "en": "Mother-in-law (wife's mother)",
-    "ja": "義母（妻の母）",
-    "de": "Schwiegermutter (Mutter der Ehefrau)",
-    "fr": "Belle-mère (mère de la femme)",
-    "pl": "Teściowa (matka żony)"
-  },
-  "아주버님(남편의 형)": {
-    "zh": "大伯（丈夫的哥哥）",
-    "en": "Husband's older brother",
-    "ja": "夫の兄",
-    "de": "Älterer Bruder des Ehemanns (Schwager)",
-    "fr": "Beau-frère (grand frère du mari)",
-    "pl": "Szwagier (starszy brat męża)"
-  },
-  "손위 시누이(남편의 누나)": {
-    "zh": "大姑（丈夫的姊姊）",
-    "en": "Husband's older sister",
-    "ja": "夫の姉",
-    "de": "Ältere Schwester des Ehemanns (Schwägerin)",
-    "fr": "Belle-sœur (grande sœur du mari)",
-    "pl": "Szwagierka (starsza siostra męża)"
-  },
-  "시동생(남편의 남동생)": {
-    "zh": "小叔（丈夫的弟弟）",
-    "en": "Husband's younger brother",
-    "ja": "夫の弟",
-    "de": "Jüngerer Bruder des Ehemanns (Schwager)",
-    "fr": "Beau-frère (petit frère du mari)",
-    "pl": "Szwagier (młodszy brat męża)"
-  },
-  "손아래 시누이(남편의 여동생)": {
-    "zh": "小姑（丈夫的妹妹）",
-    "en": "Husband's younger sister",
-    "ja": "夫の妹",
-    "de": "Jüngere Schwester des Ehemanns (Schwägerin)",
-    "fr": "Belle-sœur (petite sœur du mari)",
-    "pl": "Szwagierka (młodsza siostra męża)"
-  },
-  "손위 처남(아내의 오빠)": {
-    "zh": "大舅子（妻子的哥哥）",
-    "en": "Wife's older brother",
-    "ja": "妻の兄",
-    "de": "Älterer Bruder der Ehefrau (Schwager)",
-    "fr": "Beau-frère (grand frère de la femme)",
-    "pl": "Szwagier (starszy brat żony)"
-  },
-  "처형(아내의 언니)": {
-    "zh": "大姨子（妻子的姊姊）",
-    "en": "Wife's older sister",
-    "ja": "妻の姉",
-    "de": "Ältere Schwester der Ehefrau (Schwägerin)",
-    "fr": "Belle-sœur (grande sœur de la femme)",
-    "pl": "Szwagierka (starsza siostra żony)"
-  },
-  "손아래 처남(아내의 남동생)": {
-    "zh": "小舅子（妻子的弟弟）",
-    "en": "Wife's younger brother",
-    "ja": "妻の弟",
-    "de": "Jüngerer Bruder der Ehefrau (Schwager)",
-    "fr": "Beau-frère (petit frère de la femme)",
-    "pl": "Szwagier (młodszy brat żony)"
-  },
-  "처제(아내의 여동생)": {
-    "zh": "小姨子（妻子的妹妹）",
-    "en": "Wife's younger sister",
-    "ja": "妻の妹",
-    "de": "Jüngere Schwester der Ehefrau (Schwägerin)",
-    "fr": "Belle-sœur (petite sœur de la femme)",
-    "pl": "Szwagierka (młodsza siostra żony)"
-  },
-  "올케(오빠의 아내)": {
-    "zh": "嫂子（哥哥的妻子）",
-    "en": "Older brother's wife",
-    "ja": "兄の妻",
-    "de": "Ehefrau des älteren Bruders",
-    "fr": "Belle-sœur (épouse du grand frère)",
-    "pl": "Bratowa (żona starszego brata)"
-  },
-  "올케(남동생의 아내)": {
-    "zh": "弟妹（弟弟的妻子）",
-    "en": "Younger brother's wife",
-    "ja": "弟の妻",
-    "de": "Ehefrau des jüngeren Bruders",
-    "fr": "Belle-sœur (épouse du petit frère)",
-    "pl": "Bratowa (żona młodszego brata)"
-  },
-  "형부(언니의 남편)": {
-    "zh": "姊夫（姊姊的丈夫）",
-    "en": "Older sister's husband",
-    "ja": "姉の夫",
-    "de": "Ehemann der älteren Schwester",
-    "fr": "Beau-frère (mari de la grande sœur)",
-    "pl": "Szwagier (mąż starszej siostry)"
-  },
-  "제부(여동생의 남편)": {
-    "zh": "妹夫（妹妹的丈夫）",
-    "en": "Younger sister's husband",
-    "ja": "妹の夫",
-    "de": "Ehemann der jüngeren Schwester",
-    "fr": "Beau-frère (mari de la petite sœur)",
-    "pl": "Szwagier (mąż młodszej siostry)"
-  },
-  "사돈(자녀 배우자의 부모)": {
-    "zh": "親家（子女配偶的父母）",
-    "en": "Co-parents-in-law (child's spouse's parents)",
-    "ja": "サドン（子の配偶者の親）",
-    "de": "Eltern des Schwiegerkindes",
-    "fr": "Co-beaux-parents (parents du conjoint de son enfant)",
-    "pl": "Współteściowie"
-  },
-  "사돈을 맺다": {
-    "zh": "結為親家",
-    "en": "To become co-parents-in-law",
-    "ja": "サドン（姻戚）の関係を結ぶ",
-    "de": "Verschwägert werden",
-    "fr": "S'allier par le mariage de ses enfants",
-    "pl": "Spokrewnić się przez ślub dzieci"
-  },
-  "사돈어른(바깥사돈)": {
-    "zh": "親家公（男方親家）",
-    "en": "Male co-parent-in-law",
-    "ja": "男性側の親家（サドンの夫）",
-    "de": "Schwiegerkindsvater",
-    "fr": "Co-beau-père",
-    "pl": "Współteść"
-  },
-  "안사돈": {
-    "zh": "親家母（女方親家）",
-    "en": "Female co-parent-in-law",
-    "ja": "女性側の親家（サドンの妻）",
-    "de": "Schwiegerkindsmutter",
-    "fr": "Co-belle-mère",
-    "pl": "Współteściowa"
-  },
-  "제3자에게 말할 때": {
-    "zh": "對第三者提起時",
-    "en": "When mentioning them to someone else",
-    "ja": "第三者に話すとき",
-    "de": "Beim Sprechen über Dritte",
-    "fr": "En parlant à un tiers",
-    "pl": "W rozmowie z osobą trzecią"
-  },
-  "직접 호칭할 때": {
-    "zh": "直接稱呼時",
-    "en": "When addressing them directly",
-    "ja": "直接呼びかけるとき",
-    "de": "Bei direkter Anrede",
-    "fr": "En s'adressant directement",
-    "pl": "W bezpośrednim zwrocie"
-  },
-  "행복한 삶을 영원히": {
-    "zh": "永遠享受美好的生命",
-    "en": "Enjoy Life Forever",
-    "ja": "いつまでも幸せに暮らせます",
-    "de": "Glücklich – für immer",
-    "fr": "Vivez pour toujours !",
-    "pl": "Już zawsze ciesz się życiem!"
-  },
-  "\"행복한 삶을 영원히 누리십시오!\" 성경 공부 과정의 본문 문장이에요. 각 과의 토론 질문과 본문을 실제 발행물 그대로 5개 언어로 대조해 두었어요. 동영상 안내와 \"더 찾아보기\" 자료는 포함하지 않아요.": {
-    "zh": "「永遠享受美好的生命！」聖經課程的正文。每一課的討論問題和正文都依照原文，以5種語言對照收錄。不包含影片提示和「更多精彩內容」的資料。",
-    "en": "The body text of the \"Enjoy Life Forever!\" Bible course. Each lesson's discussion questions and text are given exactly as published, aligned across 5 languages. Video cues and the \"Explore\" section are not included.",
-    "ja": "「いつまでも幸せに暮らせます！」聖書研究コースの本文です。各課の話し合いの質問と本文は、実際の出版物どおりに5つの言語で対照してあります。動画の案内と「見てみよう」の資料は含まれていません。",
-    "de": "Der Text des Bibelkurses „Glücklich – für immer!“. Die Diskussionsfragen und Absätze jeder Lektion sind wie in der Publikation in verschiedenen Sprachen gegenübergestellt.",
-    "fr": "Texte principal du cours biblique « Vivez pour toujours ! ». Les questions de discussion et les paragraphes de chaque leçon sont mis en regard en plusieurs langues selon la publication officielle.",
-    "pl": "Tekst główny kursu biblijnego „Już zawsze ciesz się życiem!”. Pytania do dyskusji i akapity każdej lekcji zestawiono w różnych językach zgodnie z oficjalną publikacją."
-  },
-  "부": {"zh":"部分","en":"Part","ja":"部","de":"Teil","fr":"Partie","pl":"Część"},
-  "베트남어 문장이나 뜻으로 검색": {
-    "zh": "用越南語句子或意思搜尋",
-    "en": "Search by Vietnamese sentence or meaning",
-    "ja": "ベトナム語の文や意味で検索",
-    "de": "Nach vietnamesischem Satz oder Bedeutung suchen",
-    "fr": "Rechercher par phrase vietnamienne ou sens",
-    "pl": "Szukaj wietnamskiego zdania lub znaczenia"
-  },
-  "나는 준비가 되었는가?": {
-    "zh": "我準備好了嗎？",
-    "en": "Am I Ready?",
-    "ja": "準備はできていますか",
-    "de": "Bin ich bereit?",
-    "fr": "Suis-je prêt ?",
-    "pl": "Czy jesteś gotowy?"
-  },
-  "사람들을 사랑하고 제자로": {
-    "zh": "用愛心幫助人成為基督徒",
-    "en": "Love People—Make Disciples",
-    "ja": "愛を込めて弟子を育てる",
-    "de": "Menschen lieben – Jünger machen",
-    "fr": "Aimez les gens, faites des disciples",
-    "pl": "Kochaj ludzi — pozyskuj uczniów"
-  },
-  "\"사람들을 사랑하고 제자로 삼으십시오\" 소책자에서 뽑은 과별 대표 예문이에요. 1~12과와 부록 가·나·다에서 각 5~8개씩 골라 5개 언어로 대조해 두었어요. 전체 본문이 아니라 학습용으로 엄선한 예문이에요.": {
-    "zh": "從「用愛心幫助人成為基督徒」小冊子中，每課精選5~8個代表例句，共12課加上附錄A、B、C，以5種語言對照。這不是全文，而是為學習精選的例句。",
-    "en": "A handful of representative example sentences (5-8 per lesson) selected from the \"Love People—Make Disciples\" brochure—Lessons 1-12 plus Appendices A, B, C—aligned across 5 languages. This is a small curated selection for study, not the full text.",
-    "ja": "「愛を込めて弟子を育てる」小冊子から選んだ、各課の代表的な例文です。レッスン1~12と付録a・b・cから5~8個ずつ選び、5つの言語で対照してあります。全文ではなく、学習用に厳選した例文です。",
-    "de": "Ausgewählte Beispielsätze aus der Broschüre „Menschen lieben – Jünger machen“ (Lektionen 1–12 und Anhang A, B, C) in verschiedenen Sprachen.",
-    "fr": "Sélection de phrases d'exemple représentatives de la brochure « Aimez les gens, faites des disciples » (leçons 1 à 12 et annexes A, B, C) en plusieurs langues.",
-    "pl": "Wybrane przykładowe zdania z broszury „Kochaj ludzi — pozyskuj uczniów” (lekcje 1–12 i dodatki A, B, C) w różnych językach."
-  },
-  "부록": {"zh":"附錄","en":"Appendix","ja":"付録","de":"Anhang","fr":"Annexe","pl":"Dodatek"},
-  "노래 선택": {
-    "zh": "選擇詩歌",
-    "en": "Select Song",
-    "ja": "歌の選択",
-    "de": "Lied auswählen",
-    "fr": "Choisir un chant",
-    "pl": "Wybierz pieśń"
-  },
-  "바둑판": {"zh":"網格","en":"Grid","ja":"グリッド","de":"Kacheln","fr":"Grille","pl":"Kafelki"},
-  "목록": {"zh":"列表","en":"List","ja":"一覧","de":"Liste","fr":"Liste","pl":"Lista"},
-  "곡 번호 또는 제목 검색... (예: 12 또는 사랑)": {
-    "zh": "搜尋歌曲編號或標題... (例: 12 或 愛)",
-    "en": "Search song number or title... (e.g. 12 or Love)",
-    "ja": "番号や曲名で検索... (例: 12 または 愛)",
-    "de": "Liednummer oder Titel suchen... (z. B. 12 oder Liebe)",
-    "fr": "Rechercher le numéro ou le titre du chant... (ex. : 12 ou Amour)",
-    "pl": "Szukaj numeru lub tytułu pieśni... (np. 12 lub Miłość)"
-  },
-  "검색 결과가 없습니다.": {
-    "zh": "找不到搜尋結果。",
-    "en": "No results found.",
-    "ja": "検索結果がありません。",
-    "de": "Keine Suchergebnisse.",
-    "fr": "Aucun résultat trouvé.",
-    "pl": "Brak wyników wyszukiwania."
-  },
-  "닫기": {"zh":"關閉","en":"Close","ja":"閉じる","de":"Schließen","fr":"Fermer","pl":"Zamknij"},
-  "전체": {"zh":"全部","en":"All","ja":"すべて","de":"Alle","fr":"Tous","pl":"Wszystkie"},
-  "번역 언어": {"zh":"翻譯語言","en":"Translation language","ja":"翻訳言語","de":"Übersetzungssprache","fr":"Langue de traduction","pl":"Język tłumaczenia"},
-  "이전": {"zh":"上一個","en":"Previous","ja":"前へ","de":"Zurück","fr":"Précédent","pl":"Poprzedni"},
-  "다음": {"zh":"下一個","en":"Next","ja":"次へ","de":"Weiter","fr":"Suivant","pl":"Następny"},
-  "왼쪽으로 이동": {"zh":"向左移動","en":"Move left","ja":"左へ移動","de":"Nach links verschieben","fr":"Déplacer vers la gauche","pl":"Przesuń w lewo"},
-  "오른쪽으로 이동": {"zh":"向右移動","en":"Move right","ja":"右へ移動","de":"Nach rechts verschieben","fr":"Déplacer vers la droite","pl":"Przesuń w prawo"},
-  "\"행복한 삶을 영원히 누리십시오!\" 교재의 엑셀 원본 자료를 그대로 옮긴 콘텐츠예요. 72개 항목(1~60과·부별 복습·미디어 자료·참조 자료 등)을 10개 언어로 대조할 수 있어요. [문장] 탭의 같은 이름 콘텐츠와는 다른, 더 완전한 원문 자료예요.": {
-    "zh": "這是「盡情享受人生！」教材Excel原始資料的完整內容，涵蓋72個項目（第1~60課、各部複習、多媒體資料、參考資料等），可對照10種語言。與[句子]分頁中同名內容不同，這是更完整的原始資料。",
-    "en": "The full Excel source data of the \"Enjoy Life Forever!\" course, covering all 72 items (Lessons 1–60, section reviews, media, endnotes, etc.) aligned across 10 languages. This is a more complete source than the same-named content under the [Sentence] tab.",
-    "ja": "「幸せな人生を永遠に」教材のExcel原本データをそのまま収録したコンテンツです。72項目（1～60課・各部の復習・メディア資料・参照資料など）を10言語で対照できます。［文章］タブの同名コンテンツとは異なる、より完全な原本資料です。",
-    "de": "Die vollständigen Excel-Quelldaten des Kurses „Genieße das Leben für immer!“ mit allen 72 Einheiten (Lektionen 1–60, Teil-Wiederholungen, Medien, Anmerkungen usw.) in 10 Sprachen. Dies ist eine vollständigere Quelle als der gleichnamige Inhalt im Tab [Sätze].",
-    "fr": "Les données source Excel complètes du cours « Jouissez de la vie à jamais ! », couvrant les 72 éléments (leçons 1 à 60, révisions de section, contenus multimédias, notes, etc.) alignés sur 10 langues. Il s'agit d'une source plus complète que le contenu du même nom dans l'onglet [Phrases].",
-    "pl": "Pełne dane źródłowe z arkusza Excel dla kursu „Ciesz się życiem na zawsze!”, obejmujące wszystkie 72 pozycje (lekcje 1–60, powtórki poszczególnych części, materiały multimedialne, przypisy itd.) zestawione w 10 językach. To pełniejsze źródło niż treść o tej samej nazwie w zakładce [Zdania]."
-  }
-};
+  "이전 곡": {"vi": "Bài trước", "zh_cn": "上一首", "zh": "上一首", "en": "Previous Song", "fr": "Chant précédent", "de": "Vorheriges Lied", "id": "Lagu Sebelumnya", "ja": "前の曲", "pl": "Poprzednia pieśń"},
+  "다음 곡": {"vi": "Bài tiếp", "zh_cn": "下一首", "zh": "下一首", "en": "Next Song", "fr": "Chant suivant", "de": "Nächstes Lied", "id": "Lagu Berikutnya", "ja": "次の曲", "pl": "Następna pieśń"},
+  "방향 전환": {"vi": "Đổi chiều", "zh_cn": "切换方向", "zh": "切換方向", "en": "Switch Direction", "fr": "Inverser la direction", "de": "Richtung wechseln", "id": "Tukar Arah", "ja": "方向切替", "pl": "Zmień kierunek"},
+  "의미": {"vi": "Ý nghĩa", "zh_cn": "意思", "zh": "意思", "en": "Meaning", "fr": "Sens", "de": "Bedeutung", "id": "Arti", "ja": "意味", "pl": "Znaczenie"},
+  "눌러서 베트남어 보기": {"vi": "Bấm để xem tiếng Việt", "zh_cn": "点击查看越南语", "zh": "點擊查看越南語", "en": "Tap to see Vietnamese", "fr": "Appuyer pour voir le vietnamien", "de": "Tippen für Vietnamesisch", "id": "Ketuk untuk Bahasa Vietnam", "ja": "タップしてベトナム語を見る", "pl": "Dotknij, aby zobaczyć wietnamski"},
+  "전체 듣기": {"vi": "Nghe tất cả", "zh_cn": "全部播放", "zh": "全部播放", "en": "Play all", "fr": "Tout écouter", "de": "Alles abspielen", "id": "Putar Semua", "ja": "すべて再生", "pl": "Odtwórz wszystko"},
+  "정지": {"vi": "Dừng", "zh_cn": "停止", "zh": "停止", "en": "Stop", "fr": "Arrêter", "de": "Stopp", "id": "Berhenti", "ja": "停止", "pl": "Zatrzymaj"},
+  "자동 넘김": {"vi": "Tự động chuyển", "zh_cn": "自动切换", "zh": "自動切換", "en": "Auto-play", "fr": "Défilement auto", "de": "Automatisch weiter", "id": "Lanjut Otomatis", "ja": "自動送り", "pl": "Automatyczne przewijanie"},
+  "정답 시 다음 문제": {"vi": "Đúng thì qua câu tiếp", "zh_cn": "答对后下一题", "zh": "答對後下一題", "en": "Next question when correct", "fr": "Question suivante si correct", "de": "Bei richtiger Antwort weiter", "id": "Lanjut jika Benar", "ja": "正解で次の問題", "pl": "Następne pytanie po poprawnej odpowiedzi"},
+  "반복 듣기": {"vi": "Nghe lặp lại", "zh_cn": "重复播放", "zh": "重複播放", "en": "Repeat", "fr": "Répéter l'écoute", "de": "Wiederholen", "id": "Ulangi", "ja": "繰り返し再生", "pl": "Powtarzaj odtwarzanie"},
+  "묵음": {"vi": "Tắt tiếng", "zh_cn": "静音", "zh": "靜音", "en": "Mute", "fr": "Muet", "de": "Stumm", "id": "Bisu", "ja": "ミュート", "pl": "Wyciszenie"},
+  "첫만남": {"vi": "Lần gặp đầu", "zh_cn": "初次见面", "zh": "初次見面", "en": "First Meeting", "fr": "Premier contact", "de": "Erstes Gespräch", "id": "Pertemuan Pertama", "ja": "初対面", "pl": "Pierwsza rozmowa"},
+  "다음 문제": {"vi": "Câu tiếp theo", "zh_cn": "下一题", "zh": "下一題", "en": "Next question", "fr": "Question suivante", "de": "Nächste Frage", "id": "Pertanyaan Berikutnya", "ja": "次の問題", "pl": "Następne pytanie"},
+  "파수대 주차 선택": {"zh_cn": "选择守望台周次", "zh": "選擇守望台週次", "en": "Select Watchtower Week", "fr": "Choisir la semaine de La Tour de Garde", "de": "Wachtturm-Woche wählen", "ja": "ものみの塔の週を選択", "pl": "Wybierz tydzień Strażnicy"},
+  "주차": {"zh_cn": "周", "zh": "週", "en": "Week", "fr": "Semaine", "ja": "週目", "pl": "Tydzień"},
+  "초": {"zh_cn": "秒", "zh": "秒", "en": "s", "fr": "s", "de": "s", "ja": "秒", "pl": "s"},
+  "회": {"zh_cn": "次", "zh": "次", "en": "time", "fr": "fois", "de": "Mal", "ja": "回", "pl": "razy"},
+  "베트남어 반복 듣기 횟수": {"zh_cn": "越南语重复播放次数", "zh": "越南語重複播放次數", "en": "Vietnamese repeat count", "fr": "Nombre de répétitions audio en vietnamien", "de": "Wiederholungen des vietnamesischen Audios", "ja": "ベトナム語の繰り返し再生回数", "pl": "Liczba powtórzeń nagrania wietnamskiego"},
+  "발음 듣기 버튼을 누르면 베트남어를 몇 번 반복해서 들려줄지 선택하세요.": {"zh_cn": "选择按下发音按钮时，越南语要重复播放几次。", "zh": "選擇按下發音按鈕時，越南語要重複播放幾次。", "en": "Choose how many times Vietnamese audio repeats each time you press a listen button.", "fr": "Choisissez combien de fois répéter l'audio vietnamien lorsque vous appuyez sur le bouton d'écoute.", "de": "Wählen Sie, wie oft das vietnamesische Audio beim Tippen auf die Audio-Schaltfläche wiederholt werden soll.", "ja": "発音を聞くボタンを押したときに、ベトナム語を何回繰り返して再生するか選んでください。", "pl": "Wybierz, ile razy ma być powtórzone nagranie wietnamskie po naciśnięciu przycisku odsłuchu."},
+  "베트남어 성조 ↔ 중국어(표준중국어) 성조 대응": {"zh_cn": "越南语声调 ↔ 中文（普通话）声调对应", "zh": "越南語聲調 ↔ 中文（普通話）聲調對應", "en": "Vietnamese Tone ↔ Mandarin Chinese Tone Correspondence", "fr": "Correspondance des tons : vietnamien ↔ mandarin standard", "de": "Vietnamesische Töne ↔ Mandarin-Töne Entsprechung", "ja": "ベトナム語の声調 ↔ 中国語（普通話）の声調対応", "pl": "Odpowiedniość tonów: wietnamski ↔ standardowy mandaryński"},
+  "위의 한자음 전체 어휘에서, 베트남어 성조와 그에 대응하는 한자의 표준중국어(보통화) 성조 조합을 추출해 분류했어요. 같은 베트남어 성조라도 한자의 옛 중국어 성모(자음의 청탁)에 따라 표준중국어 성조가 갈리는 경우가 있어요.": {"zh_cn": "从以上汉字音的全部词汇中，撷取并分类了越南语声调与对应汉字的标准中文（普通话）声调组合。即使是相同的越南语声调，也会因该汉字古汉语声母的清浊不同，而对应到不同的普通话声调。", "zh": "從以上漢字音的全部詞彙中，擷取並分類了越南語聲調與對應漢字的標準中文（普通話）聲調組合。即使是相同的越南語聲調，也會因該漢字古漢語聲母的清濁不同，而對應到不同的普通話聲調。", "en": "This extracts and categorizes, from every word in the Sino-Vietnamese readings above, the pairing of each Vietnamese tone with the Standard Mandarin (Putonghua) tone of its corresponding hanzi. Even the same Vietnamese tone can correspond to different Mandarin tones, depending on whether the character's Old Chinese initial consonant was voiced or voiceless.", "fr": "Cette section extrait et catégorise, à partir de tous les mots sino-vietnamiens ci-dessus, les combinaisons entre chaque ton vietnamien et le ton mandarin correspondant du sinogramme. Pour un même ton vietnamien, le ton mandarin peut varier selon le voisement de la consonne initiale en chinois archaïque.", "de": "Hier werden aus allen obigen sino-vietnamesischen Wörtern die Kombinationen aus vietnamesischem Ton und dem entsprechenden Mandarin-Ton des Schriftzeichens extrahiert und kategorisiert. Selbst beim gleichen vietnamesischen Ton kann der Mandarin-Ton je nach Stimmhaftigkeit des altchinesischen Anlauts variieren.", "ja": "上の漢字音の全語彙から、ベトナム語の声調とそれに対応する漢字の標準中国語（普通話）の声調の組み合わせを抽出し、分類しました。同じベトナム語の声調でも、その漢字の古い中国語の声母（子音の清濁）によって、対応する普通話の声調が異なる場合があります。", "pl": "Ta sekcja wyodrębnia i kategoryzuje powiązania między każdym tonem wietnamskim a odpowiadającym mu tonem mandaryńskim ze wszystkich powyższych słów sino-wietnamskich. Nawet przy tym samym tonie wietnamskim ton mandaryński może się różnić w zależności od dźwięczności spółgłoski w języku starochińskim."},
+  "이 어휘 목록에는 해당하는 사례가 아직 없어요.": {"zh_cn": "这份词汇表中目前还没有符合的例子。", "zh": "這份詞彙表中目前還沒有符合的例子。", "en": "There are no matching examples in this word list yet.", "fr": "Il n'y a pas encore d'exemple correspondant dans cette liste de vocabulaire.", "de": "In dieser Wortliste gibt es noch keine passenden Beispiele.", "ja": "この語彙リストには、該当する例がまだありません。", "pl": "Na tej liście słów nie ma jeszcze odpowiednich przykładów."},
+  "개": {"zh_cn": "个", "zh": "個", "en": "", "fr": "", "de": "", "ja": "個", "pl": ""},
+  "베트남어 학습": {"vi": "Học tiếng Việt", "cs": "Studium vietnamštiny", "zh_cn": "越南语学习", "zh": "越南語學習", "en": "Vietnamese Learning", "fr": "Apprentissage du vietnamien", "de": "Vietnamesisch lernen", "hu": "Vietnami nyelvtanulás", "id": "Belajar Bahasa Vietnam", "ja": "ベトナム語学習", "ko": "베트남어 학습", "pl": "Nauka wietnamskiego"},
+  "JW 베트남어 학습": {"vi": "JW Học tiếng Việt", "cs": "JW Studium vietnamštiny", "zh_cn": "JW 越南语学习", "zh": "JW 越南語學習", "en": "JW Vietnamese Learning", "fr": "JW Apprentissage du vietnamien", "de": "JW Vietnamesisch lernen", "hu": "JW Vietnami nyelvtanulás", "id": "JW Belajar Bahasa Vietnam", "ja": "JW 베트남어 학습", "ko": "JW 베트남어 학습", "pl": "JW Nauka wietnamskiego"},
+  "베트남어 학습반": {"vi": "Lớp học tiếng Việt", "zh_cn": "越南语学习班", "zh": "越南語學習班", "en": "Vietnamese Language Course", "fr": "Cours de vietnamien", "de": "Vietnamesisch-Sprachkurs", "id": "Kursus Bahasa Vietnam", "ja": "ベトナム語訓練コース", "pl": "Kurs języka wietnamskiego"},
+  "한국어": {"vi": "Tiếng Hàn", "zh_cn": "한국어", "zh": "한국어", "en": "한국어", "fr": "한국어", "de": "한국어", "id": "Bahasa Korea", "ja": "한국어", "pl": "한국어"},
+  "교과": {"vi": "Giáo trình", "zh_cn": "教材", "zh": "教材", "en": "Curriculum", "fr": "Cours", "de": "Lehrplan", "id": "Kursus", "ja": "教材", "pl": "Kurs"},
+  "발음": {"vi": "Phát âm", "zh_cn": "发音", "zh": "發音", "en": "Phonics", "fr": "Prononciation", "de": "Aussprache", "id": "Pelafalan", "ja": "発音", "pl": "Wymowa"},
+  "성경": {"vi": "Kinh Thánh", "zh_cn": "圣经", "zh": "聖經", "en": "Bible", "fr": "Bible", "de": "Bibel", "id": "Alkitab", "ja": "聖書", "pl": "Biblia"},
+  "전주 학습반": {"cs": "Kurz Jeonju", "zh_cn": "全州越南语班", "zh": "全州越南語班", "en": "Jeonju Class", "fr": "Cours de Jeonju", "de": "Jeonju-Kurs", "hu": "Jeonju tanfolyam", "ja": "チョンジュ学習班", "pl": "Kurs w Jeonju"},
+  "자료 미정": {"cs": "Materiál zatím neurčen", "zh_cn": "教材待定", "zh": "教材待定", "en": "Material TBD", "fr": "Contenu à venir", "de": "Material noch offen", "hu": "Anyag még nincs meghatározva", "ja": "資料未定", "pl": "Materiał nieustalony"},
+  "대화": {"vi": "Hội thoại", "zh_cn": "对话", "zh": "對話", "en": "Talks", "fr": "Dialogue", "de": "Dialog", "id": "Percakapan", "ja": "会話", "pl": "Rozmowy"},
+  "어휘": {"vi": "Từ vựng", "zh_cn": "词汇", "zh": "詞彙", "en": "Words", "fr": "Vocabulaire", "de": "Wortschatz", "id": "Kosakata", "ja": "語彙", "pl": "Słownictwo"},
+  "문장": {"vi": "Mẫu câu", "zh_cn": "句子", "zh": "句子", "en": "Clauses", "fr": "Phrases", "de": "Satz", "id": "Kalimat", "ja": "文", "pl": "Zdania"},
+  "문법": {"vi": "Ngữ pháp", "zh_cn": "文法", "zh": "文法", "en": "Usage", "fr": "Grammaire", "de": "Grammatik", "id": "Tata Bahasa", "ja": "文法", "pl": "Gramatyka"},
+  "복습": {"vi": "Ôn tập", "zh_cn": "复习", "zh": "複習", "en": "Review", "fr": "Révision", "de": "Wiederholung", "id": "Ulasan", "ja": "復習", "pl": "Powtórka"},
+  "예습": {"zh_cn": "预习", "zh": "預習", "en": "Preview", "fr": "Aperçu", "de": "Vorschau", "ja": "予習", "pl": "Zapowiedź"},
+  "주간 수행 과제": {"zh_cn": "每周学习作业", "zh": "每週學習作業", "en": "Weekly Assignment", "fr": "Tâche hebdomadaire", "de": "Wöchentliche Aufgaben", "ja": "週間の課題", "pl": "Zadanie tygodniowe"},
+  "시간": {"zh_cn": "时间", "zh": "時間", "en": "Time", "fr": "Heure", "de": "Uhrzeit", "ja": "時間", "pl": "Czas"},
+  "요일, 날짜": {"zh_cn": "星期、日期", "zh": "星期、日期", "en": "Days, Dates", "fr": "Jours et dates", "de": "Wochentage, Datum", "ja": "曜日、日付", "pl": "Dni i daty"},
+  "달, 계절": {"zh_cn": "月份、季节", "zh": "月份、季節", "en": "Months, Seasons", "fr": "Mois et saisons", "de": "Monate, Jahreszeiten", "ja": "月、季節", "pl": "Miesiące i pory roku"},
+  "시": {"zh_cn": "点", "zh": "點", "en": "Hours", "fr": "Heures", "de": "Uhr", "ja": "時", "pl": "Godzina"},
+  "시간대": {"zh_cn": "时段", "zh": "時段", "en": "Times of Day", "fr": "Moments de la journée", "de": "Tageszeiten", "ja": "時間帯", "pl": "Pory dnia"},
+  "시간 표현 예시": {"zh_cn": "时间表达范例", "zh": "時間表達範例", "en": "Time Expression Examples", "fr": "Exemples d'expressions de temps", "de": "Beispiele für Zeitangaben", "ja": "時間表現の例", "pl": "Przykłady określeń czasu"},
+  "오늘 학습할 범위": {"zh_cn": "今天要学习的范围", "zh": "今天要學習的範圍", "en": "Today's study range", "fr": "Programme d'étude d'aujourd'hui", "de": "Heutiger Lernbereich", "ja": "今日学習する範囲", "pl": "Dzisiejszy zakres nauki"},
+  "전체 보기": {"zh_cn": "查看全部", "zh": "查看全部", "en": "Show all", "fr": "Tout afficher", "de": "Alle anzeigen", "ja": "すべて見る", "pl": "Pokaż wszystko"},
+  "학습반 교과 자료": {"zh_cn": "学习班教材资料", "zh": "學習班教材資料", "en": "Class Curriculum Materials", "fr": "Supports du cours de langue", "de": "Unterrichtsmaterialien", "ja": "学習会教材資料", "pl": "Materiały kursu językowego"},
+  "16주 과정 목차, 베트남 문화 이야기, 기도와 노래까지 — 학습반 교재의 자료를 모아 뒀어요. 제공 연설은 대화 탭, 성경 인명 사전·기본 단어는 어휘 탭, 범용 언어 생성표·문법 특강은 문법 탭에 있어요.": {"zh_cn": "从16周课程目录、越南文化故事，到祷告与歌曲——这里收集了学习班教材的所有资料。提供见证的内容在「对话」分页，圣经人名辞典和基本词汇在「词汇」分页，通用语言生成表和文法特別课程在「文法」分页。", "zh": "從16週課程目錄、越南文化故事，到禱告與歌曲——這裡收集了學習班教材的所有資料。提供見證的內容在「對話」分頁，聖經人名辭典和基本詞彙在「詞彙」分頁，通用語言生成表和文法特別課程在「文法」分頁。", "en": "From the 16-week course outline and stories about Vietnamese culture to prayers and songs — all the class materials are gathered here. The offer talks are under the Dialogue tab, the Bible name dictionary and basic vocabulary are under the Vocabulary tab, and the general sentence-pattern chart and grammar features are under the Grammar tab.", "fr": "Du programme de cours en 16 semaines aux récits culturels vietnamiens, prières et cantiques : tous les supports pédagogiques sont réunis ici. Les présentations modèles sont sous l'onglet Dialogue, le dictionnaire des noms bibliques et le vocabulaire de base sous Vocabulaire, et le tableau de génération de phrases sous Grammaire.", "de": "Vom Inhaltsverzeichnis des 16-Wochen-Kurses über vietnamesische Kultur bis hin zu Gebeten und Liedern – alle Kursmaterialien sind hier versammelt. Gesprächsvorschläge finden sich im Tab Dialog, das biblische Namenslexikon und Grundwörter im Tab Wortschatz, die Satzbautabelle und Grammatiklektionen im Tab Grammatik.", "ja": "16週間コースの目次、ベトナムの文化についての話、祈りと歌まで――学習会教材の資料がここにまとめられています。提供のことばは「会話」タブに、聖書人名辞典と基本単語は「語彙」タブに、汎用文型表と文法特別レッスンは「文法」タブにあります。", "pl": "Od spisu treści 16-tygodniowego kursu, przez opisy wietnamskiej kultury, po modlitwy i pieśni — zebrano tu wszystkie materiały kursowe. Wzory rozmów znajdują się w zakładce Rozmowy, słownik imion biblijnych i podstawowe słownictwo w Słownictwie, a tabela tworzenia zdań w Gramatyce."},
+  "16주 과정": {"zh_cn": "16周课程", "zh": "16週課程", "en": "16-Week Course", "fr": "Programme de 16 semaines", "de": "16-Wochen-Kurs", "ja": "16週間コース", "pl": "Kurs 16-tygodniowy"},
+  "문화": {"vi": "Văn hóa", "zh_cn": "文化", "zh": "文化", "en": "Culture", "fr": "Culture", "de": "Kultur", "id": "Budaya", "ja": "文化", "pl": "Kultura"},
+  "노래": {"vi": "Bài hát", "zh_cn": "诗歌", "zh": "詩歌", "en": "Songs", "fr": "Chants", "de": "Lieder", "id": "Lagu", "ja": "歌", "pl": "Pieśni"},
+  "기도": {"zh_cn": "祷告", "zh": "禱告", "en": "Prayer", "fr": "Prière", "de": "Gebet", "ja": "祈り", "pl": "Modlitwa"},
+  "노래·기도": {"zh_cn": "歌曲‧祷告", "zh": "歌曲‧禱告", "en": "Songs & Prayer", "fr": "Chants et prières", "de": "Lieder & Gebet", "ja": "歌・祈り", "pl": "Pieśni i modlitwy"},
+  "사용설명": {"zh_cn": "使用说明", "zh": "使用說明", "en": "Usage Guide", "fr": "Guide d'utilisation", "de": "Anleitung", "ja": "使い方ガイド", "pl": "Instrukcja obsługi"},
+  "공통 기능": {"zh_cn": "通用功能", "zh": "通用功能", "en": "Common Features", "fr": "Fonctions communes", "de": "Allgemeine Funktionen", "ja": "共通機能", "pl": "Wspólne funkcje"},
+  "베트남 사람을 만났을 때": {"zh_cn": "遇到越南人的时候", "zh": "遇到越南人的時候", "en": "When You Meet a Vietnamese Person", "fr": "Rencontrer une personne vietnamienne", "de": "Wenn Sie einer vietnamesischen Person begegnen", "ja": "ベトナム人に会ったとき", "pl": "Gdy spotkasz osobę z Wietnamu"},
+  "몇 가지만 답하면, 첫인사부터 자기소개·연락처 교환·재방문·집회 초대·성서 연구 사회까지 실제로 쓸 수 있는 베트남어 대화문을 보여 드려요.": {"zh_cn": "只要回答几个问题，就能看到从打招呼、自我介绍、交换联络方式，到重访、邀请聚会、主持圣经研究都能实际使用的越南语对话。", "zh": "只要回答幾個問題，就能看到從打招呼、自我介紹、交換聯絡方式，到重訪、邀請聚會、主持聖經研究都能實際使用的越南語對話。", "en": "Answer just a few questions and you'll get real Vietnamese dialogues you can use — from the first greeting and self-introduction to exchanging contact info, callbacks, meeting invitations, and even conducting a Bible study.", "fr": "Répondez simplement à quelques questions pour obtenir des dialogues réels en vietnamien : des premières salutations à la présentation de soi, l'échange de coordonnées, les nouvelles visites, l'invitation aux réunions et la conduite d'un cours biblique.", "de": "Beantworten Sie ein paar kurze Fragen, und Sie erhalten praktische vietnamesische Dialoge – von der Begrüßung und Vorstellung über den Kontakttausch, Rückbesuche und Zusammenkunftseinladungen bis hin zum Leiten eines Bibelstudiums.", "ja": "いくつか質問に答えるだけで、最初のあいさつから自己紹介・連絡先交換・再訪問・集会への招待・聖書研究の司会まで、実際に使えるベトナム語の会話文をご紹介します。", "pl": "Odpowiedz na kilka pytań, aby otrzymać praktyczne dialogi po wietnamsku — od powitania i przedstawienia się, przez wymianę kontaktów, odwiedziny ponowne i zaproszenie na zebranie, aż po prowadzenie studium biblijnego."},
+  "복습 게임으로 연습하기": {"zh_cn": "用复习游戏来练习", "zh": "用複習遊戲來練習", "en": "Practice with Review Games", "fr": "S'entraîner avec les jeux de révision", "de": "Mit Wiederholungsspielen üben", "ja": "復習ゲームで練習する", "pl": "Ćwicz z grami powtórkowymi"},
+  "전체 범위 복습 게임": {"zh_cn": "全范围复习游戏", "zh": "全範圍複習遊戲", "en": "Review Game (All Vocabulary)", "fr": "Jeu de révision (tout le vocabulaire)", "de": "Wiederholungsspiel (Gesamter Wortschatz)", "ja": "全範囲の復習ゲーム", "pl": "Gra powtórkowa (całe słownictwo)"},
+  "학습 범위내 복습 게임": {"zh_cn": "本范围复习游戏", "zh": "本範圍複習遊戲", "en": "Review Game (This Range Only)", "fr": "Jeu de révision (cette sélection)", "de": "Wiederholungsspiel (Nur dieser Bereich)", "ja": "この範囲だけの復習ゲーム", "pl": "Gra powtórkowa (tylko ten zakres)"},
+  "호칭": {"zh_cn": "称呼", "zh": "稱呼", "en": "Terms of Address", "fr": "Termes d'adresse", "de": "Anredeformen", "ja": "呼び方", "pl": "Formy grzecznościowe"},
+  "제공 연설": {"vi": "Bài giảng mẫu", "zh_cn": "提供见证", "zh": "提供見證", "en": "Offer Talks", "fr": "Présentations modèles", "de": "Gesprächsvorschläge", "id": "Khotbah Contoh", "ja": "提供のことば", "pl": "Wzory rozmów"},
+  "참여자 정보": {"zh_cn": "参与者资讯", "zh": "參與者資訊", "en": "Participant Info", "fr": "Informations sur les interlocuteurs", "de": "Teilnehmer-Info", "ja": "参加者情報", "pl": "Informacje o rozmówcach"},
+  "(입력하면 대화·제공 연설에 자동 반영돼요)": {"zh_cn": "（输入后会自动套用到对话与提供见证）", "zh": "（輸入後會自動套用到對話與提供見證）", "en": "(Enter these and they'll automatically apply to Dialogue and Offer Talks)", "fr": "(Ces informations s'appliquent automatiquement aux dialogues et présentations)", "de": "(Wird automatisch in Dialoge und Gesprächsvorschläge übernommen)", "ja": "（入力すると会話・提供のことばに自動的に反映されます）", "pl": "(Wprowadzone dane automatycznie dostosują dialogi i wzory rozmów)"},
+  "나": {"zh_cn": "我", "zh": "我", "en": "Me", "fr": "Moi", "de": "Ich", "ja": "自分", "pl": "Ja"},
+  "한국어 이름": {"zh_cn": "中文姓名", "zh": "中文姓名", "en": "Name", "fr": "Nom", "de": "Name", "ja": "日本語の名前", "pl": "Imię"},
+  "베트남어 이름": {"zh_cn": "越南语姓名", "zh": "越南語姓名", "en": "Vietnamese Name", "fr": "Nom vietnamien", "de": "Vietnamesischer Name", "ja": "ベトナム語の名前", "pl": "Wietnamskie imię"},
+  "성별": {"zh_cn": "性別", "zh": "性別", "en": "Gender", "fr": "Genre", "de": "Geschlecht", "ja": "性別", "pl": "Płeć"},
+  "형제": {"zh_cn": "弟兄", "zh": "弟兄", "en": "Brother", "fr": "Frère", "de": "Bruder", "ja": "兄弟", "pl": "Brat"},
+  "자매": {"zh_cn": "姐妹", "zh": "姐妹", "en": "Sister", "fr": "Sœur", "de": "Schwester", "ja": "姉妹", "pl": "Siostra"},
+  "나이": {"zh_cn": "年龄", "zh": "年齡", "en": "Age", "fr": "Âge", "de": "Alter", "ja": "年齢", "pl": "Wiek"},
+  "전화번호": {"zh_cn": "电话号碼", "zh": "電話號碼", "en": "Phone Number", "fr": "Numéro de téléphone", "de": "Telefonnummer", "ja": "電話番号", "pl": "Numer telefonu"},
+  "결혼": {"zh_cn": "婚姻状况", "zh": "婚姻狀況", "en": "Marital Status", "fr": "État civil", "de": "Familienstand", "ja": "結婚", "pl": "Stan cywilny"},
+  "미혼": {"zh_cn": "未婚", "zh": "未婚", "en": "Single", "fr": "Célibataire", "de": "Ledig", "ja": "未婚", "pl": "Stan wolny"},
+  "기혼": {"zh_cn": "已婚", "zh": "已婚", "en": "Married", "fr": "Marié(e)", "de": "Verheiratet", "ja": "既婚", "pl": "W związku małżeńskim"},
+  "봉사짝": {"zh_cn": "传道夥伴", "zh": "傳道夥伴", "en": "Ministry Companion", "fr": "Compagnon de prédication", "de": "Dienstpartner", "ja": "奉仕の相手", "pl": "Współgłosiciel"},
+  "베트남어를 잘하는 형제·자매": {"zh_cn": "越南语流利的弟兄姐妹", "zh": "越南語流利的弟兄姐妹", "en": "A brother or sister who speaks Vietnamese well", "fr": "Un frère ou une sœur qui parle bien vietnamien", "de": "Ein Bruder / eine Schwester mit guten Vietnamesischkenntnissen", "ja": "ベトナム語が上手な兄弟姉妹", "pl": "Brat lub siostra dobrze mówiący po wietnamsku"},
+  "상대방의 이름은?": {"zh_cn": "对方的名字是？", "zh": "對方的名字是？", "en": "What is the other person's name?", "fr": "Quel est le nom de l'interlocuteur ?", "de": "Wie heißt die andere Person?", "ja": "相手の名前は？", "pl": "Jak ma na imię rozmówca?"},
+  "상대방의 성별은?": {"zh_cn": "对方的性別是？", "zh": "對方的性別是？", "en": "What is the other person's gender?", "fr": "Quel est le genre de l'interlocuteur ?", "de": "Welches Geschlecht hat die andere Person?", "ja": "相手の性別は？", "pl": "Jakiej płci jest rozmówca?"},
+  "남성": {"zh_cn": "男性", "zh": "男性", "en": "Male", "fr": "Homme", "de": "Männlich", "ja": "男性", "pl": "Mężczyzna"},
+  "여성": {"zh_cn": "女性", "zh": "女性", "en": "Female", "fr": "Femme", "de": "Weiblich", "ja": "女性", "pl": "Kobieta"},
+  "상대방의 나이는 나와 비교하면?": {"zh_cn": "对方的年龄跟我相比？", "zh": "對方的年齡跟我相比？", "en": "How does the other person's age compare to yours?", "fr": "Quel est l'âge de l'interlocuteur par rapport au vôtre ?", "de": "Wie ist das Alter im Vergleich zu Ihnen?", "ja": "相手の年齢は自分と比べてどうですか？", "pl": "Ile lat ma rozmówca w porównaniu z Tobą?"},
+  "나보다 어림 — 동생뻘": {"zh_cn": "比我小——像弟妹一样", "zh": "比我小——像弟妹一樣", "en": "Younger than me — like a younger sibling", "fr": "Plus jeune que moi — comme un petit frère/petite sœur", "de": "Jünger als ich – wie ein jüngeres Geschwister", "ja": "自分より年下 — 弟や妹のような存在", "pl": "Młodszy ode mnie — jak młodszy brat/młodsza siostra"},
+  "나와 비슷함 — 동갑": {"zh_cn": "跟我差不多——同年龄", "zh": "跟我差不多——同年齡", "en": "About the same as me — peers", "fr": "À peu près du même âge — pairs", "de": "Etwa mein Alter – gleichaltrig", "ja": "自分と同じくらい — 同い年", "pl": "W podobnym wieku — rówieśnik"},
+  "나보다 많음 — 형·오빠·누나·언니뻘": {"zh_cn": "比我大——像哥哥姐姐一样", "zh": "比我大——像哥哥姐姐一樣", "en": "Older than me — like an older sibling", "fr": "Plus âgé que moi — comme un grand frère/grande sœur", "de": "Älter als ich – wie ein älteres Geschwister", "ja": "自分より年上 — 兄や姉のような存在", "pl": "Starszy ode mnie — jak starszy brat/starsza siostra"},
+  "나보다 훨씬 많음 — 삼촌·이모뻘": {"zh_cn": "比我大很多——像叔叔阿姨一样", "zh": "比我大很多——像叔叔阿姨一樣", "en": "Much older than me — like an aunt or uncle", "fr": "Bien plus âgé que moi — de l'âge d'un oncle/d'une tante", "de": "Viel älter als ich – wie Onkel/Tante", "ja": "自分よりずっと年上 — おじやおばのような存在", "pl": "Dużo starszy ode mnie — jak wujek/ciocia"},
+  "내 부모님보다는 젊은 분": {"zh_cn": "比我父母年轻的长辈", "zh": "比我父母年輕的長輩", "en": "Younger than my parents", "fr": "Plus jeune que mes parents", "de": "Jünger als meine Eltern", "ja": "自分の両親より若い方", "pl": "Młodszy od moich rodziców"},
+  "내 부모님 또래이거나 더 많음": {"zh_cn": "跟我父母差不多或更年长", "zh": "跟我父母差不多或更年長", "en": "About my parents' age or older", "fr": "De l'âge de mes parents ou plus âgé", "de": "Im Alter meiner Eltern oder älter", "ja": "自分の両親と同じ世代か、それ以上", "pl": "W wieku moich rodziców lub starszy"},
+  "내가 상대방의 삼촌, 이모뻘": {"zh_cn": "我像对方的叔叔、阿姨一样", "zh": "我像對方的叔叔、阿姨一樣", "en": "I'm like an aunt or uncle to them", "fr": "Je suis de l'âge d'un oncle ou d'une tante pour lui/elle", "de": "Ich bin im Onkel-/Tanten-Alter der Person", "ja": "自分が相手にとっておじやおばのような存在", "pl": "Jestem w wieku wujka/cioci dla rozmówcy"},
+  "내가 상대보다 훨씬 연장자": {"zh_cn": "我比对方年长很多", "zh": "我比對方年長很多", "en": "I'm much older than them", "fr": "Je suis bien plus âgé que la personne", "de": "Ich bin viel älter als die Person", "ja": "自分が相手よりずっと年上", "pl": "Jestem znacznie starszy od rozmówcy"},
+  "내가 상대방의 부모보다 나이가 많음": {"zh_cn": "我比对方的父母年长", "zh": "我比對方的父母年長", "en": "I'm older than their parents", "fr": "Je suis plus âgé que ses parents", "de": "Ich bin älter als die Eltern der Person", "ja": "自分が相手の両親より年上", "pl": "Jestem starszy od jego/jej rodziców"},
+  "처음 만나서 나이를 잘 모름": {"zh_cn": "初次见面，不太清楚年龄", "zh": "初次見面，不太清楚年齡", "en": "Just met, don't know their age well", "fr": "Premier contact, âge inconnu", "de": "Erstes Treffen, Alter unbekannt", "ja": "初対面で、年齢がよくわからない", "pl": "Pierwsze spotkanie, wiek nieznany"},
+  "아직 친하지 않아 거리를 두고 예의를 차릴 때": {"zh_cn": "还不熟，需要保持距离、有礼貌相待时", "zh": "還不熟，需要保持距離、有禮貌相待時", "en": "Not close yet, so keeping a polite distance", "fr": "Pas encore familiers, distance polie", "de": "Noch distanziert, höflicher Abstand", "ja": "まだ親しくなく、距離を置いて丁寧に接するとき", "pl": "Jeszcze nie blisko, uprzejmy dystans"},
+  "상대방의 연령대는요?": {"zh_cn": "对方大概是哪个年龄层？", "zh": "對方大概是哪個年齡層？", "en": "What's the other person's approximate age range?", "fr": "Quelle est la tranche d'âge approximative de l'interlocuteur ?", "de": "Welche Altersgruppe hat die andere Person?", "ja": "相手の年齢層は？", "pl": "W jakim przybliżonym wieku jest rozmówca?"},
+  "20~30대로 보임": {"zh_cn": "看起来20～30多岁", "zh": "看起來20～30多歲", "en": "Looks to be in their 20s–30s", "fr": "Semble avoir entre 20 et 30 ans", "de": "Scheint in den 20ern bis 30ern zu sein", "ja": "20～30代に見える", "pl": "Wygląda na 20–30 lat"},
+  "40~70대로 보임": {"zh_cn": "看起来40～70多岁", "zh": "看起來40～70多歲", "en": "Looks to be in their 40s–70s", "fr": "Semble avoir entre 40 et 70 ans", "de": "Scheint in den 40ern bis 70ern zu sein", "ja": "40～70代に見える", "pl": "Wygląda na 40–70 lat"},
+  "80대 이상으로 보임": {"zh_cn": "看起来80岁以上", "zh": "看起來80歲以上", "en": "Looks to be 80 or older", "fr": "Semble avoir 80 ans ou plus", "de": "Scheint 80 Jahre oder älter zu sein", "ja": "80代以上に見える", "pl": "Wygląda na 80 lat lub więcej"},
+  "베트남인은 상대방과 친해질 생각이 전혀 없는 경우가 아니라면 신속히 통성명하고, 나이를 묻고, 상대방과 나의 나이 차이에 따른 호칭을 사용하는 것이 아주 일상적이에요. 계속 \"나\"·\"tôi\"라는 단어를 사용한다면 상대방과 친해지기 어려워요.": {"zh_cn": "越南人只要不是完全不想跟对方熟识，通常都会很快互相报上姓名、询问年龄，并依照彼此的年龄差距使用相应的称呼，这是非常普遍的做法。如果一直使用「我」·「tôi」这个字，会很难跟对方拉近距离。", "zh": "越南人只要不是完全不想跟對方熟識，通常都會很快互相報上姓名、詢問年齡，並依照彼此的年齡差距使用相應的稱呼，這是非常普遍的做法。如果一直使用「我」·「tôi」這個字，會很難跟對方拉近距離。", "en": "Unless a Vietnamese person has no interest at all in getting to know someone, it's very common for them to quickly exchange names, ask each other's age, and then use the term of address that fits their age difference. If you keep using the plain word for \"I\" — \"tôi\" — it's hard to grow close to the other person.", "fr": "Pour les Vietnamiens, il est très naturel d'échanger rapidement les noms, de demander l'âge et d'utiliser les termes d'adresse adaptés à la différence d'âge — sauf si l'on ne souhaite aucun lien. Continuer à utiliser le pronom neutre « tôi » rend difficile l'établissement d'une relation chaleureuse.", "de": "Für Vietnamesen ist es ganz alltäglich, sich schnell vorzustellen, nach dem Alter zu fragen und je nach Altersunterschied passende Anredeformen zu verwenden – es sei denn, man möchte überhaupt keinen Kontakt aufbauen. Wenn man stets nur das neutrale „tôi“ (ich) verwendet, ist es schwer, eine herzliche Beziehung aufzubauen.", "ja": "ベトナムの人は、相手と親しくなるつもりが全くない場合でない限り、すぐに名前を名乗り合い、年齢を尋ね合い、お互いの年齢差に応じた呼び方を使うのがとても一般的です。ずっと「私」・「tôi」という言葉を使い続けると、相手と親しくなりにくくなります。", "pl": "Dla Wietnamczyków bardzo naturalne jest szybkie przedstawienie się, zapytanie o wiek i używanie form grzecznościowych dopasowanych do różnicy wieku — chyba że nie chce się nawiązywać kontaktu. Ciągłe używanie neutralnego zaimka „tôi” (ja) utrudnia nawiązanie ciepłych relacji."},
+  "상대방은 베트남 어느 지역 사람인가요?": {"zh_cn": "对方是越南哪个地区的人？", "zh": "對方是越南哪個地區的人？", "en": "Which region of Vietnam is the other person from?", "fr": "De quelle région du Vietnam est l'interlocuteur ?", "de": "Aus welcher Region Vietnams stammt die Person?", "ja": "相手はベトナムのどの地域の方ですか？", "pl": "Z jakiego regionu Wietnamu pochodzi rozmówca?"},
+  "북부": {"vi": "Miền Bắc", "zh_cn": "北部", "zh": "北部", "en": "North", "fr": "Nord", "de": "Norden", "id": "Utara", "ja": "北部", "pl": "Północ"},
+  "하노이 등": {"zh_cn": "河内等地", "zh": "河內等地", "en": "Hanoi, etc.", "fr": "Hanoï, etc.", "de": "Hanoi usw.", "ja": "ハノイなど", "pl": "Hanoi itd."},
+  "(남)": {"zh_cn": "（南部）", "zh": "（南部）", "en": "(south)", "fr": "(Sud)", "de": "(Süd)", "ja": "（南部）", "pl": "(Południe)"},
+  "남부": {"vi": "Miền Nam", "zh_cn": "南部", "zh": "南部", "en": "South", "fr": "Sud", "de": "Süden", "id": "Selatan", "ja": "南部", "pl": "Południe"},
+  "호찌민 등": {"zh_cn": "胡志明市等地", "zh": "胡志明市等地", "en": "Ho Chi Minh City, etc.", "fr": "Hô Chi Minh, etc.", "de": "Ho-Chi-Minh-Stadt usw.", "ja": "ホーチミンなど", "pl": "Ho Chi Minh itd."},
+  "상황별 호칭을 한눈에 확인할 수 있어요. 굵은 글씨가 상대를 부르는 말, 그 옆이 나를 가리키는 말입니다.": {"zh_cn": "可以一目瞭然地查看各种情境下的称呼。粗体字是称呼对方的用语，旁边是称呼自己的用语。", "zh": "可以一目瞭然地查看各種情境下的稱呼。粗體字是稱呼對方的用語，旁邊是稱呼自己的用語。", "en": "See the terms of address for every situation at a glance. The bold word is what you call the other person; next to it is what you call yourself.", "fr": "Visualisez d'un coup d'œil les termes d'adresse selon la situation. En gras le terme pour s'adresser à autrui, à côté celui pour se désigner soi-même.", "de": "Hier sehen Sie die Anredeformen für jede Situation auf einen Blick. Fettgedruckt ist die Anrede für das Gegenüber, daneben die Selbstbezeichnung.", "ja": "状況別の呼び方が一目でわかります。太字が相手を呼ぶ言葉、その横が自分を指す言葉です。", "pl": "Przejrzyste zestawienie form adresatywnych w zależności od sytuacji. Pogrubione to zwrot do rozmówcy, obok zwrot o sobie."},
+  "아래에서 나와 상대방의 관계를 선택하면, 제공 연설 대화문 속 \"저는(tôi)\"·\"당신은(bạn)\" 표현이 실제 상황에 맞는 호칭으로 자동으로 바뀌어요. 아직 선택하지 않았다면 원문 그대로 tôi·bạn으로 표시돼요.": {"zh_cn": "在下面选择我和对方的关系后，提供见证对话中的「我(tôi)」·「您(bạn)」用语就会自动换成符合实际情境的称呼。如果还没选择，就会维持原文的 tôi·bạn。", "zh": "在下面選擇我和對方的關係後，提供見證對話中的「我(tôi)」·「您(bạn)」用語就會自動換成符合實際情境的稱呼。如果還沒選擇，就會維持原文的 tôi·bạn。", "en": "Choose the relationship between you and the other person below, and the words \"I (tôi)\" and \"you (bạn)\" in the offer-talk dialogue will automatically switch to the terms of address that fit the actual situation. Until you choose, they'll stay as the original tôi and bạn.", "fr": "Choisissez la relation entre vous et l'interlocuteur ci-dessous pour que les pronoms « tôi » (je) et « bạn » (vous) dans les présentations modèles s'adaptent automatiquement. Tant qu'aucun choix n'est fait, le texte d'origine tôi/bạn est conservé.", "de": "Wenn Sie unten die Beziehung zwischen Ihnen und der Person auswählen, werden Ausdrücke wie „ich (tôi)“ und „Sie/du (bạn)“ im Gesprächsvorschlag automatisch durch die situationsgerechte Anrede ersetzt. Bis dahin bleibt der Originaltext tôi/bạn.", "ja": "下で自分と相手の関係を選ぶと、提供トークの会話文にある「私は(tôi)」・「あなたは(bạn)」という表現が、実際の状況に合った呼び方に自動的に変わります。まだ選択していない場合は、原文のまま tôi・bạn と表示されます。", "pl": "Wybierz poniżej relację między Tobą a rozmówcą, aby zaimki „tôi” (ja) i „bạn” (pan/pani) we wzorach rozmów automatycznie dostosowały się do sytuacji. Jeśli nie dokonasz wyboru, pozostaną oryginalne formy tôi i bạn."},
+  "나는 어느 쪽인가요?": {"zh_cn": "我是哪一边？", "zh": "我是哪一邊？", "en": "Which side are you on?", "fr": "Quelle est votre situation ?", "de": "Welche Rolle haben Sie?", "ja": "自分はどちらですか？", "pl": "Jaka jest Twoja rola?"},
+  "다시 선택": {"zh_cn": "重新选择", "zh": "重新選擇", "en": "Choose Again", "fr": "Choisir à nouveau", "de": "Erneut auswählen", "ja": "選び直す", "pl": "Wybierz ponownie"},
+  "베트남어 어휘": {"zh_cn": "越南语词汇", "zh": "越南語詞彙", "en": "Vietnamese Vocabulary", "fr": "Vocabulaire vietnamien", "de": "Vietnamesischer Wortschatz", "ja": "ベトナム語彙", "pl": "Słownictwo wietnamskie"},
+  "한자어 대응표, 신권 용어, 자주 사용하는 단어까지 어휘 학습 자료를 한곳에 모았어요. 한국 한자음과 대응하는 경우가 많아, 알고 나면 새 단어를 훨씬 쉽게 외울 수 있어요.": {"zh_cn": "从汉字对应表、圣工用语，到常用单字，词汇学习资料都集中在这里。", "zh": "從漢字對應表、聖工用語，到常用單字，詞彙學習資料都集中在這裡。", "en": "Hanja-cognate charts, theocratic terms, and common everyday words — all the vocabulary material is gathered in one place.", "fr": "Tableaux de correspondance sino-vietnamiens, vocabulaire théocratique et mots fréquents du quotidien : toutes les ressources lexicales réunies au même endroit.", "de": "Entsprechungstabellen, theokratische Begriffe und häufige Wörter des Alltags – alle Wortschatzmaterialien an einem Ort.", "ja": "漢字語対応表や神権用語から、よく使う単語まで、語彙学習の資料をここに集めました。日本語の漢字音と対応することが多く、覚えると新しい単語をぐっと覚えやすくなります。", "pl": "Tabele odpowiedników sino-wietnamskich, słownictwo teokratyczne i popularne słowa codzienne — wszystkie materiały leksykalne w jednym miejscu."},
+  "한자음": {"zh_cn": "汉字音", "zh": "漢字音", "en": "Sino-Vietnamese", "fr": "Sino-vietnamien", "de": "Sino-Vietnamesisch", "ja": "漢越音", "pl": "Sino-wietnamski"},
+  "동일음": {"zh_cn": "同音字", "zh": "同音字", "en": "Same Sound", "fr": "Homophones", "de": "Gleichlautend", "ja": "同音", "pl": "Homofony"},
+  "기본": {"zh_cn": "基本", "zh": "基本", "en": "Base", "fr": "Bases", "de": "Grundlagen", "ja": "基本", "pl": "Podstawowe"},
+  "반의": {"zh_cn": "反义", "zh": "反義", "en": "Antonyms", "fr": "Antonymes", "de": "Gegenteile", "ja": "反意語", "pl": "Antonimy"},
+  "상용": {"zh_cn": "常用", "zh": "常用", "en": "Frequent", "fr": "Fréquent", "de": "Häufig", "ja": "常用", "pl": "Częste"},
+  "신권": {"zh_cn": "属灵词汇", "zh": "屬靈詞彙", "en": "Theocratic", "fr": "Théocratique", "de": "Theokratisch", "ja": "神権", "pl": "Teokratyczne"},
+  "인명": {"zh_cn": "人名", "zh": "人名", "en": "Names", "fr": "Noms", "de": "Namen", "ja": "人名", "pl": "Imiona"},
+  "끝말": {"zh_cn": "字尾", "zh": "字尾", "en": "Word Chain", "fr": "Chaîne de mots", "de": "Wortketten", "ja": "しりとり", "pl": "Łańcuch słów"},
+  "남북 단어": {"zh_cn": "南北用词", "zh": "南北用詞", "en": "North/South Words", "fr": "Mots Nord/Sud", "de": "Nord/Süd-Wörter", "ja": "南北の単語", "pl": "Północ/Południe"},
+  "파수대": {"zh_cn": "守望台", "zh": "守望台", "en": "Watchtower", "fr": "La Tour de Garde", "de": "Wachtturm", "ja": "ものみの塔", "pl": "Strażnica"},
+  "다운로드 필요": {"zh_cn": "需要下载", "zh": "需要下載", "en": "Download needed", "fr": "Téléchargement requis", "de": "Download erforderlich", "ja": "ダウンロードが必要", "pl": "Wymaga pobrania"},
+  "다운로드 필요라고 표시된 음성은 아직 이 기기에 설치돼 있지 않아요. 설정 > 손쉬운 사용 > 읽기 및 말하기(또는 콘텐츠 말하기) > 음성에서 해당 언어를 찾아 다운로드하면 선택할 수 있어요.": {"zh_cn": "标示「需要下载」的语音尚未安装在此装置上。请到 设定 > 辅助使用 > 朗读内容（或内容朗读）> 语音，找到该语言并下载后即可选用。", "zh": "標示「需要下載」的語音尚未安裝在此裝置上。請到 設定 > 輔助使用 > 朗讀內容（或內容朗讀）> 語音，找到該語言並下載後即可選用。", "en": "Voices marked \"Download needed\" aren't installed on this device yet. Go to Settings > Accessibility > Spoken Content > Voices, find that language, and download the voice to select it.", "fr": "Les voix marquées « Téléchargement requis » ne sont pas encore installées sur cet appareil. Allez dans Réglages > Accessibilité > Contenu énoncé > Voix, trouvez cette langue et téléchargez la voix pour pouvoir la sélectionner.", "de": "Stimmen mit dem Hinweis „Download erforderlich“ sind noch nicht auf diesem Gerät installiert. Gehen Sie zu Einstellungen > Bedienungshilfen > Gesprochene Inhalte > Stimmen, suchen Sie die Sprache und laden Sie die Stimme herunter.", "ja": "「ダウンロードが必要」と表示されている音声は、まだこの端末にインストールされていません。設定 > アクセシビリティ > 読み上げコンテンツ（または「コンテンツの読み上げ」）> 声 でその言語を探してダウンロードすると選択できます。", "pl": "Głosy oznaczone jako „Wymaga pobrania” nie są jeszcze zainstalowane na tym urządzeniu. Przejdź do Ustawienia > Dostępność > Zawartość mówiona > Głosy, znajdź język i pobierz głos."},
+  "이미 기기에 다운로드한 음성인데도 여기에 보이지 않는다면, 이 브라우저 앱을 완전히 종료했다가 다시 열거나 기기를 재시작해 보세요. 특히 '고품질' 음성은 iOS/사파리에서 바로 인식되지 않는 경우가 있어요.": {"zh_cn": "如果已在装置上下载的语音却没有出现在这里,请试着完全关闭此浏览器 App 后重新开启,或重新启动装置。尤其是「高品质」语音,有时在 iOS／Safari 上不会立即被辨识。", "zh": "如果已在裝置上下載的語音卻沒有出現在這裡,請試著完全關閉此瀏覽器 App 後重新開啟,或重新啟動裝置。尤其是「高品質」語音,有時在 iOS／Safari 上不會立即被辨識。", "en": "If a voice you've already downloaded on this device doesn't show up here, try fully quitting and reopening this browser app, or restarting the device. \"Enhanced\"/\"Premium\" voices in particular sometimes aren't recognized right away on iOS/Safari.", "fr": "Si une voix déjà téléchargée n'apparaît pas ici, quittez complètement et rouvrez cette application de navigation, ou redémarrez l'appareil. Les voix de haute qualité ne sont parfois pas reconnues immédiatement sous iOS/Safari.", "de": "Wenn eine bereits heruntergeladene Stimme hier nicht angezeigt wird, schließen Sie den Browser vollständig und öffnen Sie ihn erneut oder starten Sie das Gerät neu. Besonders hochwertige Stimmen werden unter iOS/Safari manchmal nicht sofort erkannt.", "ja": "端末にすでにダウンロード済みの音声がここに表示されない場合は、このブラウザアプリを完全に終了してから開き直すか、端末を再起動してみてください。特に「高品質」の音声は、iOS/Safariですぐには認識されないことがあります。", "pl": "Jeśli pobrany głos nie wyświetla się tutaj, zamknij całkowicie przeglądarkę i otwórz ją ponownie lub zrestartuj urządzenie. Głosy ulepszone/premium w systemie iOS/Safari bywają rozpoznawane z opóźnieniem."},
+  "이웃 사람과의 대화": {"vi": "Trò chuyện với người lân cận", "zh_cn": "耶和华见证人是怎样跟人讨论圣经的", "zh": "耶和華見證人是怎樣跟人討論聖經的", "en": "Conversation with a neighbor", "fr": "Conversations avec le prochain", "de": "Gespräche über die Bibel", "id": "Percakapan dengan Tetangga", "ja": "聖書についての話し合い", "pl": "Rozmowy o Biblii z ludźmi"},
+  "여호와의 증인이 이웃집을 방문해 성경에 관해 나누는 실제 대화문 11편이에요. 집주인의 말은 원문 그대로, 전도인의 말 속 성경 인용은 최신 개정판 신세계역과 대조해 두었어요.": {"zh_cn": "这里收录了11篇耶和华见证人实际到访邻居家中，一起讨论圣经的对话。屋主的话都保留原文，而传道员话中引用的圣经经文，已对照最新修訂版新世界译本核对过。", "zh": "這裡收錄了11篇耶和華見證人實際到訪鄰居家中，一起討論聖經的對話。屋主的話都保留原文，而傳道員話中引用的聖經經文，已對照最新修訂版新世界譯本核對過。", "en": "Here are 11 real conversations Jehovah's Witnesses have with a neighbor at the door about the Bible. The householder's own words are kept exactly as published; Bible verses quoted in the publisher's lines have been checked against the current (Revised Edition) New World Translation.", "fr": "Voici 11 conversations réelles que les Témoins de Jéhovah ont avec un voisin au sujet de la Bible. Les propos de l'interlocuteur sont reproduits fidèlement ; les versets bibliques cités par le proclamateur ont été vérifiés d'après la Traduction du monde nouveau révisée.", "de": "Hier sind 11 Gespräche, die Jehovas Zeugen an der Haustür über die Bibel führen. Die Worte des Wohnungsinhabers sind originalgetreu wiedergegeben; Bibelzitate des Verkündigers wurden mit der revidierten Neuen-Welt-Übersetzung abgeglichen.", "ja": "エホバの証人が近所の人を訪問して聖書について話し合う、実際の会話11編です。家の人の言葉は原文のまま、伝道者の言葉の中の聖書の引用は最新の改訂版新世界訳と対照してあります。", "pl": "Oto 11 autentycznych rozmów o Biblii prowadzonych przez Świadków Jehowy przy drzwiach. Słowa domownika zachowano w oryginalnym brzmieniu, a wersety cytowane przez głosiciela zweryfikowano ze zrewidowanym Pismem Świętym w Przekładzie Nowego Świata."},
+  "전도인": {"zh_cn": "传道员", "zh": "傳道員", "en": "Publisher", "fr": "Proclamateur", "de": "Verkündiger", "ja": "伝道者", "pl": "Głosiciel"},
+  "집주인": {"zh_cn": "屋主", "zh": "屋主", "en": "Householder", "fr": "Interlocuteur", "de": "Wohnungsinhaber", "ja": "家の人", "pl": "Domownik"},
+  "북": {"zh_cn": "北", "zh": "北", "en": "N", "fr": "N", "de": "N", "ja": "北", "pl": "Północ"},
+  "남": {"zh_cn": "南", "zh": "南", "en": "S", "fr": "S", "de": "S", "ja": "南", "pl": "Południe"},
+  "이 주의 파수대 연구 기사에서 뽑은 어휘예요. 예문과 예문의 뜻도 함께 보여줘요.": {"zh_cn": "这是从本周守望台研读文章中挑选的词汇。也一并显示例句和例句的意思。", "zh": "這是從本週守望台研讀文章中挑選的詞彙。也一併顯示例句和例句的意思。", "en": "Vocabulary selected from this week's Watchtower Study article. The example sentence and its meaning are shown together too.", "fr": "Vocabulaire extrait de l'article d'étude de La Tour de Garde de cette semaine, avec phrases d'exemple et traduction.", "de": "Ausgewählter Wortschatz aus dem Wachtturm-Studienartikel dieser Woche, samt Beispielsatz und Übersetzung.", "ja": "今週のものみの塔研究記事から選んだ語彙です。例文と例文の意味も一緒に示します。", "pl": "Słownictwo wybrane z artykułu do studium ze Strażnicy na ten tydzień wraz z przykładowymi zdaniami i ich znaczeniem."},
+  "발음·성조·문자 기초": {"zh_cn": "发音‧声调‧文字基础", "zh": "發音‧聲調‧文字基礎", "en": "Pronunciation, Tone & Alphabet Basics", "fr": "Bases de prononciation, tons et alphabet", "de": "Grundlagen zu Aussprache, Tönen und Schrift", "ja": "発音・声調・文字の基礎", "pl": "Podstawy wymowy, tonów i alfabetu"},
+  "베트남어를 처음 배우는 분을 위한 기초 발음표예요. 16주 학습반 교재를 바탕으로 정리했습니다.": {"zh_cn": "这是为初学越南语的人准备的基础发音表，根据16周学习班教材整理而成。", "zh": "這是為初學越南語的人準備的基礎發音表，根據16週學習班教材整理而成。", "en": "A basic pronunciation chart for those just starting to learn Vietnamese, compiled from the 16-week class materials.", "fr": "Tableau phonétique de base pour les débutants en vietnamien, compilé à partir des manuels du cours de 16 semaines.", "de": "Eine Ausspracheübersicht für Einsteiger, zusammengestellt auf Grundlage des 16-Wochen-Kurses.", "ja": "ベトナム語を初めて学ぶ方のための基礎発音表です。16週学習班の教材を基に作成しました。", "pl": "Podstawowa tabela wymowy dla osób rozpoczynających naukę wietnamskiego, opracowana na podstawie materiałów 16-tygodniowego kursu."},
+  "설정": {"vi": "Cài đặt", "zh_cn": "设定", "zh": "設定", "en": "Setup", "fr": "Paramètres", "de": "Einstellungen", "id": "Pengaturan", "ja": "設定", "pl": "Ustawienia"},
+  "문자": {"zh_cn": "文字", "zh": "文字", "en": "Alphabet", "fr": "Alphabet", "de": "Buchstaben", "ja": "文字", "pl": "Litery"},
+  "모음": {"zh_cn": "母音", "zh": "母音", "en": "Vowels", "fr": "Voyelles", "de": "Vokale", "ja": "母音", "pl": "Samogłoski"},
+  "자음": {"zh_cn": "子音", "zh": "子音", "en": "Consonants", "fr": "Consonnes", "de": "Konsonanten", "ja": "子音", "pl": "Spółgłoski"},
+  "성조": {"vi": "Thanh điệu", "zh_cn": "声调", "zh": "聲調", "en": "Tones", "fr": "Tons", "de": "Töne", "id": "Nada", "ja": "声調", "pl": "Tony"},
+  "연속 성조": {"zh_cn": "声调组合", "zh": "聲調組合", "en": "Tone Pairs", "fr": "Paires de tons", "de": "Tonkombinationen", "ja": "声調の組み合わせ", "pl": "Pary tonów"},
+  "남북 발음": {"zh_cn": "南北发音", "zh": "南北發音", "en": "North/South Pronunciation", "fr": "Prononciation Nord/Sud", "de": "Nord/Süd-Aussprache", "ja": "南北の発音", "pl": "Wymowa Północ/Południe"},
+  "성경 책 이름 · 숫자 읽기": {"zh_cn": "圣经书卷名称‧数字读法", "zh": "聖經書卷名稱‧數字讀法", "en": "Bible Book Names & Number Reading", "fr": "Noms des livres bibliques et lecture des nombres", "de": "Bibelbuchnamen & Zahlen lesen", "ja": "聖書の書名・数字の読み方", "pl": "Nazwy ksiąg biblijnych i odczytywanie liczb"},
+  "신세계역 성경의 베트남어와 한국어 책 이름을 나란히 두고 발음을 들어 보세요. 숫자 탭에는 1~100, 1,000~10억까지 숫자 읽는 법이 있어요.": {"zh_cn": "把《新世界译本》圣经的越南语和中文书卷名称并列，听听看发音。「数字」分页里有1～100、1,000～10亿的读法。", "zh": "把《新世界譯本》聖經的越南語和中文書卷名稱並列，聽聽看發音。「數字」分頁裡有1～100、1,000～10億的讀法。", "en": "See the Vietnamese and English New World Translation Bible book names side by side and listen to the pronunciation. The Numbers tab covers how to read 1–100 and 1,000 to 1 billion.", "fr": "Comparez les noms des livres bibliques de la Traduction du monde nouveau en vietnamien et en français, et écoutez leur prononciation. L'onglet Nombres explique comment lire de 1 à 100 et de 1 000 à 1 milliard.", "de": "Vergleichen Sie die vietnamesischen und deutschen Bibelbuchnamen der Neuen-Welt-Übersetzung nebeneinander und hören Sie die Aussprache. Im Tab Zahlen lernen Sie Zahlen von 1 bis 100 und von 1.000 bis 1 Milliarde.", "ja": "「新世界訳」聖書のベトナム語と日本語の書名を並べて表示し、発音を聞くことができます。「数字」タブには1～100、1,000～10億までの数字の読み方があります。", "pl": "Zestawienie nazw ksiąg biblijnych z Przekładu Nowego Świata po wietnamsku i polsku z możliwością odsłuchu wymowy. W zakładce Liczby znajduje się odczytywanie od 1 do 100 oraz od 1000 do 1 miliarda."},
+  "숫자": {"vi": "Chữ số", "zh_cn": "数字", "zh": "數字", "en": "Numbers", "fr": "Nombres", "de": "Zahlen", "id": "Angka", "ja": "数字", "pl": "Liczby"},
+  "달과 요일": {"zh_cn": "月份与星期", "zh": "月份與星期", "en": "Months & Days", "fr": "Mois et jours", "de": "Monate & Wochentage", "ja": "月と曜日", "pl": "Miesiące i dni"},
+  "문법 및 작문 연습": {"zh_cn": "文法与造句练习", "zh": "文法與造句練習", "en": "Grammar & Sentence Practice", "fr": "Exercices de grammaire et de phrases", "de": "Grammatik & Satzbau-Übungen", "ja": "文法・作文練習", "pl": "Ćwiczenia gramatyczne i tworzenie zdań"},
+  "가장 짧은 문장에서 시작해 한 단어씩 늘려 가며, 한국어와 베트남어의 어순 차이를 몸에 익혀요.": {"zh_cn": "从最短的句子开始，一个字一个字地增加，亲身体会中文和越南语语序的差异。", "zh": "從最短的句子開始，一個字一個字地增加，親身體會中文和越南語語序的差異。", "en": "Start with the shortest sentences and add one word at a time, so you get a feel for the word-order differences between your language and Vietnamese.", "fr": "Commencez par des phrases très courtes et ajoutez un mot à la fois pour vous familiariser avec l'ordre des mots en vietnamien.", "de": "Beginnen Sie mit kurzen Sätzen und erweitern Sie sie Schritt für Schritt, um ein Gefühl für die vietnamesische Wortstellung zu entwickeln.", "ja": "一番短い文から始めて、一語ずつ増やしながら、日本語とベトナム語の語順の違いを体で覚えましょう。", "pl": "Zacznij od najkrótszych zdań i dodawaj po jednym słowie, aby oswoić się z wietnamskim szykiem wyrazów."},
+  "예문": {"vi": "Câu ví dụ", "zh_cn": "例句", "zh": "例句", "en": "Examples", "fr": "Exemples", "de": "Beispielsätze", "id": "Contoh Kalimat", "ja": "例文", "pl": "Przykłady"},
+  "특강": {"vi": "Chuyên đề", "zh_cn": "特別课程", "zh": "特別課程", "en": "Special Topics", "fr": "Cours spécial", "de": "Besondere Themen", "id": "Kuliah Khusus", "ja": "特別講座", "pl": "Lekcja specjalna"},
+  "범용 언어 생성표": {"zh_cn": "通用语言生成表", "zh": "通用語言生成表", "en": "General Sentence Chart", "fr": "Tableau de génération de phrases", "de": "Satzbautabelle", "ja": "汎用文生成表", "pl": "Tabela tworzenia zdań"},
+  "문장 생성기": {"zh_cn": "造句產生器", "zh": "造句產生器", "en": "Sentence Builder", "fr": "Générateur de phrases", "de": "Satzgenerator", "ja": "文章ジェネレーター", "pl": "Generator zdań"},
+  "단어를 카테고리별로 골라 보세요. 비워 두면(선택 안 함) 그 부분 없이 문장이 만들어져요. 완성을 누르면 한국어 어순에서 베트남어 어순으로 단어가 자동으로 움직이는 걸 볼 수 있어요.": {"zh_cn": "请依类別挑选单字。如果留白（不选）就会做出没有那个部分的句子。按下完成后，可以看到单字自动从原本的语序移动到越南语语序。", "zh": "請依類別挑選單字。如果留白（不選）就會做出沒有那個部分的句子。按下完成後，可以看到單字自動從原本的語序移動到越南語語序。", "en": "Pick words by category. Leave a category blank and the sentence is built without that part. Press Done to see the words automatically move from your language's word order into Vietnamese word order.", "fr": "Sélectionnez des mots par catégorie. Si vous laissez un champ vide, la phrase est formée sans cet élément. Appuyez sur Générer pour voir les mots s'agencer automatiquement dans l'ordre de la syntaxe vietnamienne.", "de": "Wählen Sie Wörter nach Kategorien. Wenn Sie eine Kategorie leer lassen, wird der Satz ohne diesen Teil gebildet. Tippen Sie auf Fertig, um zu sehen, wie sich die Wörter automatisch in die vietnamesische Wortstellung bewegen.", "ja": "カテゴリーごとに単語を選んでください。空欄のまま（選択しない）にすると、その部分を除いた文が作られます。「完成」を押すと、日本語の語順からベトナム語の語順へ単語が自動的に移動する様子を見ることができます。", "pl": "Wybierz słowa według kategorii. Pozostawienie pola pustego utworzy zdanie bez tego elementu. Naciśnij Generuj, aby zobaczyć, jak słowa układają się w wietnamskim szyku."},
+  "문장 만들기": {"zh_cn": "造句", "zh": "造句", "en": "Build a Sentence", "fr": "Générer la phrase", "de": "Satzbau-Übung", "ja": "文章を作る", "pl": "Utwórz zdanie"},
+  "복습 게임": {"zh_cn": "复习游戏", "zh": "複習遊戲", "en": "Review Games", "fr": "Jeux de révision", "de": "Wiederholungsspiele", "ja": "復習ゲーム", "pl": "Gry powtórkowe"},
+  "플래시카드·보기·듣기·어순 배열·받아쓰기로 배운 내용을 복습하세요. 아래에서 복습할 영역을 먼저 골라 보세요.": {"zh_cn": "透过字卡、阅读、听力、排列语序、听写来复习所学内容。请先在下面选择要复习的范围。", "zh": "透過字卡、閱讀、聽力、排列語序、聽寫來複習所學內容。請先在下面選擇要複習的範圍。", "en": "Review what you've learned with flashcards, reading, listening, word-order arrangement, and dictation. First pick which area to review below.", "fr": "Révisez ce que vous avez appris grâce aux cartes mémoire, à la lecture, à l'écoute, à l'ordonnancement des mots et à la dictée. Choisissez d'abord le domaine à réviser ci-dessous.", "de": "Wiederholen Sie das Gelernte mit Karteikarten, Lesen, Hören, Wortstellung und Diktat. Wählen Sie unten zuerst den Lernbereich aus.", "ja": "フラッシュカード、読解、聞き取り、語順並べ替え、書き取りで学んだ内容を復習しましょう。まず下から復習する分野を選んでください。", "pl": "Powtarzaj materiał za pomocą fiszek, czytania, słuchania, układania szyku i dyktanda. Wybierz poniżej zakres powtórki."},
+  "플래시카드": {"vi": "Thẻ ghi nhớ", "zh_cn": "字卡", "zh": "字卡", "en": "Flashcards", "fr": "Cartes", "de": "Karteikarten", "id": "Kartu Kilas", "ja": "フラッシュカード", "pl": "Fiszki"},
+  "보기": {"vi": "Lựa chọn", "zh_cn": "阅读", "zh": "閱讀", "en": "Reading", "fr": "Voir", "de": "Ansehen", "id": "Pilihan", "ja": "読解", "pl": "Podgląd"},
+  "듣기": {"vi": "Nghe", "zh_cn": "听力", "zh": "聽力", "en": "Listening", "fr": "Écoute", "de": "Hören", "id": "Mendengarkan", "ja": "聞き取り", "pl": "Słuchanie"},
+  "어순 배열": {"vi": "Sắp xếp từ", "zh_cn": "排列语序", "zh": "排列語序", "en": "Word Order", "fr": "Ordre des mots", "de": "Wortstellung", "id": "Susun Urutan Kata", "ja": "語順並べ替え", "pl": "Szyk wyrazów"},
+  "받아쓰기": {"vi": "Chính tả", "zh_cn": "听写", "zh": "聽寫", "en": "Dictation", "fr": "Dictée", "de": "Diktat", "id": "Dikte", "ja": "書き取り", "pl": "Dyktando"},
+  "형제·자매 베트남어 대화 확장훈련(남/북부), 16주 학습반 교과과정, 한자어 어휘 자료를 통합해 만들었습니다.": {"zh_cn": "整合了弟兄姐妹越南语对话延伸训练（南／北部）、16周学习班课程、汉字词汇资料制作而成。", "zh": "整合了弟兄姐妹越南語對話延伸訓練（南／北部）、16週學習班課程、漢字詞彙資料製作而成。", "en": "Built by combining extended Vietnamese-dialogue training for brothers and sisters (North/South), the 16-week class curriculum, and Sino-Vietnamese vocabulary resources.", "fr": "Conçu en intégrant la formation à la conversation pour frères et sœurs (Nord/Sud), le programme du cours en 16 semaines et le vocabulaire sino-vietnamien.", "de": "Erstellt durch Kombination von erweitertem Dialogtraining für Brüder und Schwestern (Nord/Süd), dem Lehrplan des 16-Wochen-Kurses und sino-vietnamesischen Wortschatzquellen.", "ja": "兄弟姉妹のためのベトナム語会話拡張トレーニング（南部／北部）、16週学習班のカリキュラム、漢越語彙資料を統合して作成しました。", "pl": "Opracowano na podstawie kursu konwersacji dla braci i sióstr (Północ/Południe), 16-tygodniowego programu nauczania oraz słownictwa sino-wietnamskiego."},
+  "언어 선택 / 選擇語言 / Language": {"zh_cn": "언어 선택 / 选择语言 / Language", "zh": "언어 선택 / 選擇語言 / Language", "en": "언어 선택 / 選擇語言 / Language", "fr": "언어 선택 / 選擇語言 / Language / Sprachauswahl / Choix de langue", "de": "언어 선택 / 選擇語言 / Language / Sprachauswahl", "ja": "언어 선택 / 選擇語言 / Language", "pl": "언어 선택 / 選擇語言 / Language / Sprachauswahl / Choix de langue / Wybór języka"},
+  "주요 메뉴": {"vi": "Menu chính", "zh_cn": "主要选单", "zh": "主要選單", "en": "Main Menu", "fr": "Menu principal", "de": "Hauptmenü", "id": "Menu Utama", "ja": "メインメニュー", "pl": "Główne menu"},
+  "베트남어 단어나 한국어 뜻으로 검색": {"zh_cn": "用越南语单字或中文意思搜寻", "zh": "用越南語單字或中文意思搜尋", "en": "Search by Vietnamese word or English meaning", "fr": "Rechercher par mot vietnamien ou sens en français", "de": "Nach vietnamesischem Wort oder Bedeutung suchen", "ja": "ベトナム語の単語または日本語の意味で検索", "pl": "Szukaj według wietnamskiego słowa lub znaczenia"},
+  "성경책 이름으로 검색 (베트남어·한국어)": {"zh_cn": "用圣经书卷名称搜寻（越南语‧中文）", "zh": "用聖經書卷名稱搜尋（越南語‧中文）", "en": "Search by Bible book name (Vietnamese/English)", "fr": "Rechercher un livre biblique (vietnamien/français)", "de": "Nach Bibelbuch suchen (Vietnamesisch/Deutsch)", "ja": "聖書の書名で検索（ベトナム語・日本語）", "pl": "Szukaj księgi biblijnej (wietnamski/polski)"},
+  "문법 특강 검색 (베트남어·한국어)": {"zh_cn": "搜寻文法特別课程（越南语‧中文）", "zh": "搜尋文法特別課程（越南語‧中文）", "en": "Search grammar topics (Vietnamese/English)", "fr": "Rechercher dans les leçons de grammaire (vietnamien/français)", "de": "Nach Grammatikthemen suchen", "ja": "文法特別講座を検索（ベトナム語・日本語）", "pl": "Szukaj w lekcjach gramatyki (wietnamski/polski)"},
+  "예: ": {"zh_cn": "例：", "zh": "例：", "en": "e.g. ", "fr": "ex. : ", "de": "z. B. ", "ja": "例：", "pl": "np. "},
+  "예: 예나": {"zh_cn": "例：雅婷", "zh": "例：雅婷", "en": "e.g. Amy", "fr": "ex. : Sarah", "de": "z. B. Anna", "ja": "例：花子", "pl": "np. Anna"},
+  "예: Trang Thanh": {"zh_cn": "例：Trang Thanh", "zh": "例：Trang Thanh", "en": "e.g. Trang Thanh", "fr": "ex. : Trang Thanh", "de": "z. B. Trang Thanh", "ja": "例：Trang Thanh", "pl": "np. Trang Thanh"},
+  "예: 25": {"zh_cn": "例：25", "zh": "例：25", "en": "e.g. 25", "fr": "ex. : 25", "de": "z. B. 25", "ja": "例：25", "pl": "np. 25"},
+  "예: 민수": {"zh_cn": "例：志豪", "zh": "例：志豪", "en": "e.g. Michael", "fr": "ex. : Thomas", "de": "z. B. Michael", "ja": "例：太郎", "pl": "np. Michał"},
+  "예: Minh": {"zh_cn": "例：Minh", "zh": "例：Minh", "en": "e.g. Minh", "fr": "ex. : Minh", "de": "z. B. Minh", "ja": "例：Minh", "pl": "np. Minh"},
+  "예: 30": {"zh_cn": "例：30", "zh": "例：30", "en": "e.g. 30", "fr": "ex. : 30", "de": "z. B. 30", "ja": "例：30", "pl": "np. 30"},
+  "예: 김철수": {"zh_cn": "例：王大明", "zh": "例：王大明", "en": "e.g. John Smith", "fr": "ex. : Jean Dupont", "de": "z. B. Thomas Weber", "ja": "例：山田太郎", "pl": "np. Jan Kowalski"},
+  "예: Long": {"zh_cn": "例：Long", "zh": "例：Long", "en": "e.g. Long", "fr": "ex. : Long", "de": "z. B. Long", "ja": "例：Long", "pl": "np. Long"},
+  "예: 45": {"zh_cn": "例：45", "zh": "例：45", "en": "e.g. 45", "fr": "ex. : 45", "de": "z. B. 45", "ja": "例：45", "pl": "np. 45"},
+  "예: 박영희": {"zh_cn": "例：林美惠", "zh": "例：林美惠", "en": "e.g. Sarah Johnson", "fr": "ex. : Marie Martin", "de": "z. B. Sarah Müller", "ja": "例：山田花子", "pl": "np. Maria Nowak"},
+  "예: Hoa": {"zh_cn": "例：Hoa", "zh": "例：Hoa", "en": "e.g. Hoa", "fr": "ex. : Hoa", "de": "z. B. Hoa", "ja": "例：Hoa", "pl": "np. Hoa"},
+  "예: 40": {"zh_cn": "例：40", "zh": "例：40", "en": "e.g. 40", "fr": "ex. : 40", "de": "z. B. 40", "ja": "例：40", "pl": "np. 40"},
+  "동생뻘": {"zh_cn": "弟妹辈", "zh": "弟妹輩", "en": "like a younger sibling", "fr": "comme un petit frère/petite sœur", "de": "wie ein jüngeres Geschwister", "ja": "弟・妹くらい", "pl": "jak młodsze rodzeństwo"},
+  "동갑": {"zh_cn": "同辈", "zh": "同輩", "en": "peer", "fr": "du même âge (pairs)", "de": "gleichaltrig", "ja": "同い年", "pl": "rówieśnik"},
+  "형·오빠·누나·언니뻘": {"zh_cn": "哥哥姐姐辈", "zh": "哥哥姐姐輩", "en": "like an older sibling", "fr": "comme un grand frère/grande sœur", "de": "wie ein älteres Geschwister", "ja": "兄・姉くらい", "pl": "jak starsze rodzeństwo"},
+  "삼촌·이모뻘(상대가 연장자)": {"zh_cn": "叔叔阿姨辈（对方年长）", "zh": "叔叔阿姨輩（對方年長）", "en": "like an aunt/uncle (they're older)", "fr": "comme un oncle/tante (interlocuteur plus âgé)", "de": "wie Onkel/Tante (Gegenüber ist älter)", "ja": "おじ・おばくらい（相手が年上）", "pl": "jak wujek/ciocia (rozmówca starszy)"},
+  "부모님 또래 이상(상대가 연장자)": {"zh_cn": "父母辈以上（对方年长）", "zh": "父母輩以上（對方年長）", "en": "parents' age or older (they're older)", "fr": "de l'âge des parents ou plus âgé", "de": "im Alter der Eltern oder älter", "ja": "親世代以上（相手が年上）", "pl": "w wieku rodziców lub starszy"},
+  "삼촌·이모뻘(내가 연장자)": {"zh_cn": "叔叔阿姨辈（我年长）", "zh": "叔叔阿姨輩（我年長）", "en": "like an aunt/uncle (I'm older)", "fr": "comme un oncle/tante (je suis plus âgé)", "de": "wie Onkel/Tante (ich bin älter)", "ja": "おじ・おばくらい（自分が年上）", "pl": "jak wujek/ciocia (ja jestem starszy)"},
+  "부모님뻘(내가 연장자)": {"zh_cn": "父母辈（我年长）", "zh": "父母輩（我年長）", "en": "parents' age (I'm older)", "fr": "de l'âge des parents (je suis plus âgé)", "de": "im Alter der Eltern (ich bin älter)", "ja": "親世代くらい（自分が年上）", "pl": "w wieku rodziców (ja jestem starszy)"},
+  "초면·예의를 갖춤": {"zh_cn": "初次见面‧有礼貌", "zh": "初次見面‧有禮貌", "en": "first meeting, polite", "fr": "premier contact, poli", "de": "Erstes Treffen, höflich", "ja": "初対面・丁寧に", "pl": "pierwsze spotkanie, uprzejmie"},
+  "형·오빠": {"zh_cn": "哥哥", "zh": "哥哥", "en": "older brother", "fr": "grand frère", "de": "älterer Bruder", "ja": "兄", "pl": "starszy brat"},
+  "누나·언니": {"zh_cn": "姐姐", "zh": "姐姐", "en": "older sister", "fr": "grande sœur", "de": "ältere Schwester", "ja": "姉", "pl": "starsza siostra"},
+  "조카뻘": {"zh_cn": "晚辈（侄辈）", "zh": "晚輩（姪輩）", "en": "like a niece/nephew", "fr": "comme un neveu/une nièce", "de": "wie Nichte/Neffe", "ja": "甥・姪くらい", "pl": "jak bratanek/siostrzenica"},
+  "자녀뻘(남부)": {"zh_cn": "晚辈（南部，子女辈）", "zh": "晚輩（南部，子女輩）", "en": "like one's child (South)", "fr": "comme son enfant (Sud)", "de": "im Alter eines Kindes (Süden)", "ja": "子どもくらい（南部）", "pl": "jak dziecko (Południe)"},
+  "삼촌·아저씨뻘": {"zh_cn": "叔叔‧大叔辈", "zh": "叔叔‧大叔輩", "en": "like an uncle", "fr": "comme un oncle / homme d'âge mûr", "de": "wie ein Onkel / Herr mittleren Alters", "ja": "おじさんくらい", "pl": "jak wujek / pan w średnim wieku"},
+  "이모·고모·아주머니뻘": {"zh_cn": "阿姨‧姑姑辈", "zh": "阿姨‧姑姑輩", "en": "like an aunt", "fr": "comme une tante / femme d'âge mûr", "de": "wie eine Tante / Dame mittleren Alters", "ja": "おばさんくらい", "pl": "jak ciocia / pani w średnim wieku"},
+  "큰아버지·큰어머니뻘 어르신": {"zh_cn": "伯父‧伯母辈长者", "zh": "伯父‧伯母輩長者", "en": "like a respected elder (uncle/aunt)", "fr": "personne âgée très respectée (aîné)", "de": "wie ein hochgeachteter älterer Onkel / Tante", "ja": "伯父・伯母くらいの年配の方", "pl": "starsza osoba darzona szacunkiem"},
+  "나(또래·북부)": {"zh_cn": "我（同辈‧北部）", "zh": "我（同輩‧北部）", "en": "I (peer, North)", "fr": "moi (pairs, Nord)", "de": "ich (gleichaltrig, Norden)", "ja": "私（同い年・北部）", "pl": "ja (rówieśnik, Północ)"},
+  "너(또래·북부)": {"zh_cn": "你（同辈‧北部）", "zh": "你（同輩‧北部）", "en": "you (peer, North)", "fr": "toi (pairs, Nord)", "de": "du (gleichaltrig, Norden)", "ja": "あなた（同い年・北部）", "pl": "ty (rówieśnik, Północ)"},
+  "나(또래·남부)": {"zh_cn": "我（同辈‧南部）", "zh": "我（同輩‧南部）", "en": "I (peer, South)", "fr": "moi (pairs, Sud)", "de": "ich (gleichaltrig, Süden)", "ja": "私（同い年・南部）", "pl": "ja (rówieśnik, Południe)"},
+  "너(또래·남부)": {"zh_cn": "你（同辈‧南部）", "zh": "你（同輩‧南部）", "en": "you (peer, South)", "fr": "toi (pairs, Sud)", "de": "du (gleichaltrig, Süden)", "ja": "あなた（同い年・南部）", "pl": "ty (rówieśnik, Południe)"},
+  "나(중립·예의)": {"zh_cn": "我（中立‧礼貌）", "zh": "我（中立‧禮貌）", "en": "I (neutral, polite)", "fr": "moi (neutre, poli)", "de": "ich (neutral, höflich)", "ja": "私（中立・丁寧）", "pl": "ja (neutralnie, uprzejmie)"},
+  "나보다 어린 사람 — 동생뻘": {"zh_cn": "比我小的人——弟妹辈", "zh": "比我小的人——弟妹輩", "en": "Someone younger than me — like a younger sibling", "fr": "Plus jeune que moi — comme un petit frère/petite sœur", "de": "Jünger als ich – wie ein jüngeres Geschwister", "ja": "自分より年下の人 — 弟・妹くらい", "pl": "Osoba młodsza ode mnie — jak młodsze rodzeństwo"},
+  "나와 동갑 — 원자료에 없어 새로 구성": {"zh_cn": "跟我同辈——原始资料没有，另行编写", "zh": "跟我同輩——原始資料沒有，另行編寫", "en": "My peers — not in the original material, newly composed", "fr": "Du même âge — pairs (adapté pour les apprenants)", "de": "Gleichaltrig mit mir – neu zusammengestellt", "ja": "私と同い年 — 元の資料にないため、新たに作成", "pl": "Rówieśnicy — zestawienie dla uczących się"},
+  "나보다 손위 — 형·오빠·누나·언니뻘": {"zh_cn": "比我年长的人——哥哥姐姐辈", "zh": "比我年長的人——哥哥姐姐輩", "en": "Someone older than me — like an older sibling", "fr": "Plus âgé que moi — comme un grand frère/grande sœur", "de": "Älter als ich – wie ein älteres Geschwister", "ja": "私より年上 — 兄や姉にあたる人", "pl": "Osoba starsza ode mnie — jak starsze rodzeństwo"},
+  "삼촌·이모뻘 — 내 아버지·어머니보다는 젊은 분(상대가 연장자)": {"zh_cn": "叔叔阿姨辈——比我父母年轻的长辈（对方年长）", "zh": "叔叔阿姨輩——比我父母年輕的長輩（對方年長）", "en": "Like an aunt/uncle — younger than my parents (they're older)", "fr": "Comme un oncle/une tante — plus jeune que mes parents (interlocuteur plus âgé)", "de": "Wie Onkel/Tante – jünger als meine Eltern (Gegenüber ist älter)", "ja": "おじ・おばにあたる方 — 私の父母より若い方（相手が年上）", "pl": "W wieku wujka/cioci — młodszy od moich rodziców (rozmówca starszy)"},
+  "부모님 또래이거나 더 많으신 분(상대가 연장자)": {"zh_cn": "跟父母同辈或更年长（对方年长）", "zh": "跟父母同輩或更年長（對方年長）", "en": "About my parents' age or older (they're older)", "fr": "De l'âge de mes parents ou plus âgé (interlocuteur plus âgé)", "de": "Im Alter meiner Eltern oder älter (Gegenüber ist älter)", "ja": "両親と同世代か、それ以上の方（相手が年上）", "pl": "W wieku moich rodziców lub starszy (rozmówca starszy)"},
+  "삼촌·이모뻘 — 내가 상대방보다 훨씬 연장자": {"zh_cn": "叔叔阿姨辈——我比对方年长很多", "zh": "叔叔阿姨輩——我比對方年長很多", "en": "Like an aunt/uncle — I'm much older than them", "fr": "Comme un oncle/une tante — je suis bien plus âgé", "de": "Wie Onkel/Tante – ich bin viel älter als das Gegenüber", "ja": "おじ・おばにあたる方 — 私が相手よりずっと年上", "pl": "W wieku wujka/cioci — jestem znacznie starszy"},
+  "내가 상대방 부모보다 나이가 많음": {"zh_cn": "我比对方的父母年长", "zh": "我比對方的父母年長", "en": "I'm older than their parents", "fr": "Je suis plus âgé que ses parents", "de": "Ich bin älter als die Eltern der Person", "ja": "私が相手の親より年上", "pl": "Jestem starszy od rodziców rozmówcy"},
+  "내가 형제일 때": {"zh_cn": "我是弟兄时", "zh": "我是弟兄時", "en": "When I'm a brother", "fr": "Quand je suis un frère", "de": "Wenn ich ein Bruder bin", "ja": "私が兄弟の場合", "pl": "Gdy jestem bratem"},
+  "내가 자매일 때": {"zh_cn": "我是姐妹时", "zh": "我是姐妹時", "en": "When I'm a sister", "fr": "Quand je suis une sœur", "de": "Wenn ich eine Schwester bin", "ja": "私が姉妹の場合", "pl": "Gdy jestem siostrą"},
+  "상대가 남성일 때": {"zh_cn": "对方是男性时", "zh": "對方是男性時", "en": "When they're male", "fr": "Quand l'interlocuteur est un homme", "de": "Wenn die Person männlich ist", "ja": "相手が男性の場合", "pl": "Gdy rozmówca jest mężczyzną"},
+  "상대가 여성일 때": {"zh_cn": "对方是女性时", "zh": "對方是女性時", "en": "When they're female", "fr": "Quand l'interlocuteur est une femme", "de": "Wenn die Person weiblich ist", "ja": "相手が女性の場合", "pl": "Gdy rozmówca jest kobietą"},
+  "상대가 남성 · 북부": {"zh_cn": "对方是男性‧北部", "zh": "對方是男性‧北部", "en": "Male, North", "fr": "Homme, Nord", "de": "Männlich, Norden", "ja": "相手が男性・北部", "pl": "Mężczyzna, Północ"},
+  "상대가 남성 · 남부": {"zh_cn": "对方是男性‧南部", "zh": "對方是男性‧南部", "en": "Male, South", "fr": "Homme, Sud", "de": "Männlich, Süden", "ja": "相手が男性・南部", "pl": "Mężczyzna, Południe"},
+  "상대가 여성 · 북부": {"zh_cn": "对方是女性‧北部", "zh": "對方是女性‧北部", "en": "Female, North", "fr": "Femme, Nord", "de": "Weiblich, Norden", "ja": "相手が女性・北部", "pl": "Kobieta, Północ"},
+  "상대가 여성 · 남부": {"zh_cn": "对方是女性‧南部", "zh": "對方是女性‧南部", "en": "Female, South", "fr": "Femme, Sud", "de": "Weiblich, Süden", "ja": "相手が女性・南部", "pl": "Kobieta, Południe"},
+  "내가 남성 · 북부": {"zh_cn": "我是男性‧北部", "zh": "我是男性‧北部", "en": "I'm male, North", "fr": "Je suis un homme, Nord", "de": "Ich bin männlich, Norden", "ja": "私が男性・北部", "pl": "Jestem mężczyzną, Północ"},
+  "내가 남성 · 남부": {"zh_cn": "我是男性‧南部", "zh": "我是男性‧南部", "en": "I'm male, South", "fr": "Je suis un homme, Sud", "de": "Ich bin männlich, Süden", "ja": "私が男性・南部", "pl": "Jestem mężczyzną, Południe"},
+  "내가 여성 · 북부": {"zh_cn": "我是女性‧北部", "zh": "我是女性‧北部", "en": "I'm female, North", "fr": "Je suis une femme, Nord", "de": "Ich bin weiblich, Norden", "ja": "私が女性・北部", "pl": "Jestem kobietą, Północ"},
+  "내가 여성 · 남부": {"zh_cn": "我是女性‧南部", "zh": "我是女性‧南部", "en": "I'm female, South", "fr": "Je suis une femme, Sud", "de": "Ich bin weiblich, Süden", "ja": "私が女性・南部", "pl": "Jestem kobietą, Południe"},
+  "상대가 20~30대 남성": {"zh_cn": "对方是20～30多岁男性", "zh": "對方是20～30多歲男性", "en": "Male, 20s–30s", "fr": "Homme, 20–30 ans", "de": "Männlich, 20er–30er Jahre", "ja": "相手が20~30代の男性", "pl": "Mężczyzna, 20–30 lat"},
+  "상대가 20~30대 여성": {"zh_cn": "对方是20～30多岁女性", "zh": "對方是20～30多歲女性", "en": "Female, 20s–30s", "fr": "Femme, 20–30 ans", "de": "Weiblich, 20er–30er Jahre", "ja": "相手が20~30代の女性", "pl": "Kobieta, 20–30 lat"},
+  "상대가 40~70대 남성": {"zh_cn": "对方是40～70多岁男性", "zh": "對方是40～70多歲男性", "en": "Male, 40s–70s", "fr": "Homme, 40–70 ans", "de": "Männlich, 40er–70er Jahre", "ja": "相手が40~70代の男性", "pl": "Mężczyzna, 40–70 lat"},
+  "상대가 40~70대 여성": {"zh_cn": "对方是40～70多岁女性", "zh": "對方是40～70多歲女性", "en": "Female, 40s–70s", "fr": "Femme, 40–70 ans", "de": "Weiblich, 40er–70er Jahre", "ja": "相手が40~70代の女性", "pl": "Kobieta, 40–70 lat"},
+  "상대가 80대 이상": {"zh_cn": "对方是80岁以上", "zh": "對方是80歲以上", "en": "80 or older", "fr": "80 ans ou plus", "de": "80 Jahre oder älter", "ja": "相手が80代以上", "pl": "80 lat lub więcej"},
+  "상대를 부를 때": {"zh_cn": "称呼对方时", "zh": "稱呼對方時", "en": "When addressing them", "fr": "Pour s'adresser à l'interlocuteur", "de": "Anrede für das Gegenüber", "ja": "相手を呼ぶとき", "pl": "Zwrot do rozmówcy"},
+  "나를 가리킬 때": {"zh_cn": "称呼自己时", "zh": "稱呼自己時", "en": "When referring to yourself", "fr": "Pour se désigner soi-même", "de": "Selbstbezeichnung (Ich)", "ja": "自分を指すとき", "pl": "Określenie siebie"},
+  "문장 끝: ": {"zh_cn": "句尾：", "zh": "句尾：", "en": "End of sentence: ", "fr": "Fin de phrase : ", "de": "Satzende: ", "ja": "文末: ", "pl": "Koniec zdania: "},
+  "대답 시작: ": {"zh_cn": "回答开头：", "zh": "回答開頭：", "en": "Start of reply: ", "fr": "Début de réponse : ", "de": "Antwortbeginn: ", "ja": "返事の始め: ", "pl": "Początek odpowiedzi: "},
+  "<b>ạ</b> (존대)": {"zh_cn": "<b>ạ</b>（敬语）", "zh": "<b>ạ</b>（敬語）", "en": "<b>ạ</b> (polite)", "fr": "<b>ạ</b> (poli)", "de": "<b>ạ</b> (höflich)", "ja": "<b>ạ</b>（敬語）", "pl": "<b>ạ</b> (uprzejmie)"},
+  "<b>없음</b> (편하게)": {"zh_cn": "<b>没有</b>（随意）", "zh": "<b>沒有</b>（隨意）", "en": "<b>None</b> (casual)", "fr": "<b>Aucun</b> (familier)", "de": "<b>Keine</b> (umgangssprachlich)", "ja": "<b>なし</b>（気軽に）", "pl": "<b>Brak</b> (swobodnie)"},
+  "<b>없음</b>": {"zh_cn": "<b>没有</b>", "zh": "<b>沒有</b>", "en": "<b>None</b>", "fr": "<b>Aucun</b>", "de": "<b>Keine</b>", "ja": "<b>なし</b>", "pl": "<b>Brak</b>"},
+  "<b>dạ</b> (네)": {"zh_cn": "<b>dạ</b>（是）", "zh": "<b>dạ</b>（是）", "en": "<b>dạ</b> (yes)", "fr": "<b>dạ</b> (oui)", "de": "<b>dạ</b> (ja)", "ja": "<b>dạ</b>（はい）", "pl": "<b>dạ</b> (tak)"},
+  "발음 듣기": {"vi": "Nghe phát âm", "zh_cn": "播放发音", "zh": "播放發音", "en": "Play pronunciation", "fr": "Écouter la prononciation", "de": "Aussprache anhören", "id": "Dengar Lafal", "ja": "発音を聞く", "pl": "Odsłuchaj wymowę"},
+  "눌러서 뜻 보기": {"zh_cn": "点一下看意思", "zh": "點一下看意思", "en": "Tap to reveal meaning", "fr": "Appuyer pour afficher le sens", "de": "Tippen für Bedeutung", "ja": "タップして意味を見る", "pl": "Dotknij, aby zobaczyć znaczenie"},
+  "눌러서 가리기": {"zh_cn": "点一下遮住", "zh": "點一下遮住", "en": "Tap to hide", "fr": "Appuyer pour masquer", "de": "Tippen zum Verbergen", "ja": "タップして隠す", "pl": "Dotknij, aby ukryć"},
+  "남성 형제": {"zh_cn": "男性弟兄", "zh": "男性弟兄", "en": "a brother", "fr": "un frère", "de": "ein Bruder", "ja": "男性の兄弟", "pl": "brat"},
+  "여성 자매": {"zh_cn": "女性姐妹", "zh": "女性姐妹", "en": "a sister", "fr": "une sœur", "de": "eine Schwester", "ja": "女性の姉妹", "pl": "siostra"},
+  "장로 형제": {"zh_cn": "长老弟兄", "zh": "長老弟兄", "en": "Elder Brother", "fr": "un ancien", "de": "ein Ältester", "ja": "長老の兄弟", "pl": "starszy zboru"},
+  "파이오니아 자매": {"zh_cn": "先驱姐妹", "zh": "先驅姐妹", "en": "Pioneer Sister", "fr": "une pionnière", "de": "eine Pionierschwester", "ja": "開拓者の姉妹", "pl": "pionierka"},
+  "이성과의 만남이에요. 인사와 소개 후에는 같은 성별의 동료(": {"zh_cn": "这是异性会面。打过招呼、做完自我介绍后，最好把联络方式转交给同性別的同伴（", "zh": "這是異性會面。打過招呼、做完自我介紹後，最好把聯絡方式轉交給同性別的同伴（", "en": "This is a meeting with someone of the opposite sex. After greeting and introducing yourself, it's best to hand off contact info to a same-gender companion (", "fr": "Il s'agit d'une rencontre avec une personne du sexe opposé. Après les salutations et la présentation, il est préférable de transmettre les coordonnées à un compagnon du même sexe (", "de": "Dies ist ein Treffen mit einer Person des anderen Geschlechts. Nach der Begrüßung und Vorstellung empfiehlt es sich, die Kontaktdaten an einen gleichgeschlechtlichen Dienstpartner (", "ja": "異性との面会です。挨拶と自己紹介を済ませたら、同性の奉仕の仲間（", "pl": "To spotkanie z osobą przeciwnej płci. Po powitaniu i przedstawieniu się warto przekazać kontakt współpracownikowi tej samej płci ("},
+  ")에게 연락처를 전달하고, 재방문·성서 연구는 그 동료와 함께 진행하는 것이 좋아요.": {"zh_cn": "），并和该同伴一起进行重访和圣经研究。", "zh": "），並和該同伴一起進行重訪和聖經研究。", "en": ") and have that person join you for the callback and Bible study.", "fr": ") et d'effectuer les nouvelles visites et le cours biblique avec ce compagnon.", "de": ") weiterzugeben und Rückbesuche sowie das Bibelstudium gemeinsam durchzuführen.", "ja": "）に連絡先を渡し、再訪問・聖書研究はその仲間と一緒に行うとよいでしょう。", "pl": ") i prowadzić odwiedziny ponowne oraz studium biblijne razem z nim."},
+  "봉사짝 호칭: ": {"zh_cn": "传道夥伴称呼：", "zh": "傳道夥伴稱呼：", "en": "Companion's term of address: ", "fr": "Terme d'adresse du compagnon : ", "de": "Anrede des Dienstpartners: ", "ja": "奉仕の仲間の呼び方： ", "pl": "Forma do współgłosiciela: "},
+  "이전 단계": {"zh_cn": "上一步", "zh": "上一步", "en": "Previous", "fr": "Étape précédente", "de": "Vorheriger Schritt", "ja": "前へ", "pl": "Poprzedni krok"},
+  "다음 단계": {"zh_cn": "下一步", "zh": "下一步", "en": "Next", "fr": "Étape suivante", "de": "Nächster Schritt", "ja": "次へ", "pl": "Następny krok"},
+  "아직 참여자 정보가 입력되지 않았어요. 입력하면 위 대화문의 이름·전화번호·나이·호칭이 자동으로 채워져요.": {"zh_cn": "还没输入参与者资讯。输入后，上面对话中的姓名‧电话号碼‧年龄‧称呼会自动填入。", "zh": "還沒輸入參與者資訊。輸入後，上面對話中的姓名‧電話號碼‧年齡‧稱呼會自動填入。", "en": "No participant info entered yet. Fill it in and the name, phone number, age, and terms of address in the dialogue above will fill in automatically.", "fr": "Les informations sur les interlocuteurs n'ont pas encore été saisies. Une fois renseignées, le nom, le numéro de téléphone, l'âge et les formules d'adresse dans les dialogues s'adapteront automatiquement.", "de": "Noch keine Teilnehmerdaten eingegeben. Nach der Eingabe werden Name, Telefonnummer, Alter und Anredeformen oben automatisch ausgefüllt.", "ja": "まだ参加者情報が入力されていません。入力すると、上の会話文の名前・電話番号・年齢・呼び方が自動的に入力されます。", "pl": "Nie wprowadzono jeszcze informacji o rozmówcach. Po ich podaniu imię, numer telefonu, wiek i formy grzecznościowe w dialogu uzupełnią się automatycznie."},
+  "대화 탭에서 참여자 정보 입력하기 →": {"zh_cn": "到「对话」分页输入参与者资讯 →", "zh": "到「對話」分頁輸入參與者資訊 →", "en": "Enter participant info in the Dialogue tab →", "fr": "Saisir les informations sous l'onglet Dialogue →", "de": "Teilnehmerdaten im Tab Dialog eingeben →", "ja": "「会話」タブで参加者情報を入力する →", "pl": "Wprowadź informacje w zakładce Rozmowy →"},
+  "대화 탭에서 참여자 정보 수정하기 →": {"zh_cn": "到「对话」分页修改参与者资讯 →", "zh": "到「對話」分頁修改參與者資訊 →", "en": "Edit participant info in the Dialogue tab →", "fr": "Modifier les informations sous l'onglet Dialogue →", "de": "Teilnehmerdaten im Tab Dialog bearbeiten →", "ja": "「会話」タブで参加者情報を編集する →", "pl": "Edytuj informacje w zakładce Rozmowy →"},
+  "이름 미입력": {"zh_cn": "尚未输入姓名", "zh": "尚未輸入姓名", "en": "No name entered", "fr": "Nom non renseigné", "de": "Kein Name eingegeben", "ja": "名前未入力", "pl": "Brak imienia"},
+  "호칭 ": {"zh_cn": "称呼 ", "zh": "稱呼 ", "en": "Address: ", "fr": "Adresse : ", "de": "Anrede: ", "ja": "呼び方 ", "pl": "Forma: "},
+  "세": {"zh_cn": "岁", "zh": "歲", "en": " y/o", "fr": " ans", "de": " Jahre", "ja": "歳", "pl": " lat"},
+  "이전 카드": {"zh_cn": "上一张卡片", "zh": "上一張卡片", "en": "Previous card", "fr": "Carte précédente", "de": "Vorherige Karte", "ja": "前のカード", "pl": "Poprzednia karta"},
+  "다시 듣기": {"zh_cn": "重新播放", "zh": "重新播放", "en": "Play again", "fr": "Réécouter", "de": "Erneut anhören", "ja": "もう一度聞く", "pl": "Odtwórz ponownie"},
+  "섞기": {"zh_cn": "洗牌", "zh": "洗牌", "en": "Shuffle", "fr": "Mélanger", "de": "Mischen", "ja": "シャッフル", "pl": "Wymieszaj"},
+  "다음 카드": {"zh_cn": "下一张卡片", "zh": "下一張卡片", "en": "Next card", "fr": "Carte suivante", "de": "Nächste Karte", "ja": "次のカード", "pl": "Następna karta"},
+  "듣고 알맞은 뜻을 고르세요": {"zh_cn": "听发音，选出正确的意思", "zh": "聽發音，選出正確的意思", "en": "Listen and choose the correct meaning", "fr": "Écoutez et choisissez le bon sens", "de": "Hören und die richtige Bedeutung wählen", "ja": "聞いて正しい意味を選んでください", "pl": "Posłuchaj i wybierz właściwe znaczenie"},
+  "보고 알맞은 뜻을 고르세요": {"zh_cn": "看单字，选出正确的意思", "zh": "看單字，選出正確的意思", "en": "Look at the word and choose the correct meaning", "fr": "Regardez le mot et choisissez le bon sens", "de": "Wort ansehen und die richtige Bedeutung wählen", "ja": "見て正しい意味を選んでください", "pl": "Spójrz na słowo i wybierz właściwe znaczenie"},
+  "다음 문제 →": {"zh_cn": "下一题 →", "zh": "下一題 →", "en": "Next →", "fr": "Question suivante →", "de": "Nächste Frage →", "ja": "次の問題 →", "pl": "Następne pytanie →"},
+  "다시 담기": {"vi": "Thêm lại", "zh_cn": "重新排列", "zh": "重新排列", "en": "Reset", "fr": "Remettre", "de": "Wiederholen", "id": "Simpan Lagi", "ja": "リセット", "pl": "Powtórz"},
+  "정답이에요! 🎉": {"zh_cn": "答对了！🎉", "zh": "答對了！🎉", "en": "Correct! 🎉", "fr": "Bonne réponse ! 🎉", "de": "Richtig! 🎉", "ja": "正解です！🎉", "pl": "Prawidłowo! 🎉"},
+  "순서가 달라요. 다시 시도해 보세요.": {"zh_cn": "顺序不对，请再试一次。", "zh": "順序不對，請再試一次。", "en": "Wrong order — try again.", "fr": "L'ordre n'est pas correct. Réessayez.", "de": "Falsche Reihenfolge – bitte noch einmal versuchen.", "ja": "順序が違います。もう一度試してください。", "pl": "Nieprawidłowa kolejność — spróbuj ponownie."},
+  "정답: ": {"zh_cn": "正确答案：", "zh": "正確答案：", "en": "Answer: ", "fr": "Réponse : ", "de": "Richtige Antwort: ", "ja": "正解： ", "pl": "Odpowiedź: "},
+  "확인": {"vi": "Xác nhận", "zh_cn": "确认", "zh": "確認", "en": "Check", "fr": "Vérifier", "de": "Bestätigen", "id": "Konfirmasi", "ja": "確認", "pl": "Sprawdź"},
+  "다시 확인해 보세요.": {"zh_cn": "请再检查一次。", "zh": "請再檢查一次。", "en": "Check again.", "fr": "Vérifiez à nouveau.", "de": "Bitte noch einmal prüfen.", "ja": "もう一度確認してください。", "pl": "Sprawdź ponownie."},
+  "이 탭에는 아직 복습할 자료가 없어요.": {"zh_cn": "这个分页还没有可复习的资料。", "zh": "這個分頁還沒有可複習的資料。", "en": "There's no material to review in this tab yet.", "fr": "Il n'y a pas encore de contenu à réviser sous cet onglet.", "de": "In diesem Tab gibt es noch kein Material zum Wiederholen.", "ja": "このタブにはまだ復習する内容がありません。", "pl": "W tej zakładce nie ma jeszcze materiałów do powtórki."},
+  "010-0000-0000": {"zh_cn": "0900-000-000", "zh": "0900-000-000", "en": "010-0000-0000", "fr": "010-0000-0000", "de": "010-0000-0000", "ja": "0X0-0000-0000", "pl": "010-0000-0000"},
+  "대화 탭에서 선택한 나와 상대방의 관계에 따라, 제공 연설 대화문 속 \"저는(tôi)\"·\"당신은(bạn)\" 표현이 실제 상황에 맞는 호칭으로 자동으로 바뀌어요. 아직 선택하지 않았다면 원문 그대로 tôi·bạn으로 표시돼요.": {"zh_cn": "「提供演讲」对话文中的「我是(tôi)」‧「您是(bạn)」会依照您在〔对话〕分页中选择的双方关系，自动换成符合实际情况的称呼。若尚未选择，则会维持原文显示为 tôi‧bạn。", "zh": "「提供演講」對話文中的「我是(tôi)」‧「您是(bạn)」會依照您在〔對話〕分頁中選擇的雙方關係，自動換成符合實際情況的稱呼。若尚未選擇，則會維持原文顯示為 tôi‧bạn。", "en": "Based on the relationship you selected in the [Dialogue] tab, the \"I (tôi)\" / \"you (bạn)\" expressions in the offer-talk dialogue automatically change to the appropriate terms of address for that situation. If nothing has been selected yet, they stay as the original tôi/bạn.", "fr": "Selon la relation choisie sous l'onglet Dialogue, les expressions « tôi » (je) et « bạn » (vous) dans les présentations modèles sont automatiquement remplacées par les termes adaptés. Si aucun choix n'a été fait, les termes originaux tôi et bạn sont conservés.", "de": "Je nach der im Tab [Dialog] gewählten Beziehung zwischen Ihnen und der Person werden die Ausdrücke „ich (tôi)“ und „Sie/du (bạn)“ im Gesprächsvorschlag automatisch an die reale Situation angepasst. Wurde noch nichts ausgewählt, bleibt die Originalanzeige tôi/bạn.", "ja": "「会話」タブで選択した自分と相手の関係に応じて、提供トークの会話文にある「私は(tôi)」・「あなたは(bạn)」という表現が、実際の状況に合った呼び方に自動的に変わります。まだ選択していない場合は、原文のまま tôi・bạn と表示されます。", "pl": "W zależności od relacji wybranej w zakładce Rozmowy, zaimki „tôi” i „bạn” we wzorach rozmów automatycznie zmienią się na właściwe formy grzecznościowe."},
+  "현재 대화문: 상대를 부를 때 “": {"zh_cn": "目前对话文：称呼对方时用「", "zh": "目前對話文：稱呼對方時用「", "en": "Current dialogue: addressing the other person as \"", "fr": "Dialogue actuel : s'adresser à l'interlocuteur avec « ", "de": "Aktueller Dialog: Anrede für das Gegenüber „", "ja": "現在の会話文：相手を呼ぶときは「", "pl": "Bieżący dialog: zwracanie się do rozmówcy jako „"},
+  "”, 나를 가리킬 때 “": {"zh_cn": "」，称呼自己时用「", "zh": "」，稱呼自己時用「", "en": "\", and referring to yourself as \"", "fr": " », et se désigner soi-même avec « ", "de": "“, Selbstbezeichnung „", "ja": "」、自分を指すときは「", "pl": "”, a określanie siebie jako „"},
+  "” 로 표시돼요.": {"zh_cn": "」来显示。", "zh": "」來顯示。", "en": "\".", "fr": " ».", "de": "“.", "ja": "」と表示されます。", "pl": "”."},
+  "<p class=\"p-desc\">iOS/iPadOS의 내장 기능을 사용하면 별도의 앱 설치 없이 베트남어 텍스트를 읽게 할 수 있어요.</p><h4>1단계: 베트남어 TTS 음성 다운로드하기</h4><ol><li>설정 앱을 엽니다.</li><li><b>손쉬운 사용</b> 메뉴로 이동합니다.</li><li><b>읽기 및 말하기</b>(또는 iOS 버전에 따라 <b>콘텐츠 말하기</b>)를 선택합니다.</li><li><b>음성</b>을 탭합니다.</li><li>스크롤을 내려 <b>베트남어</b>를 선택합니다.</li><li>원하는 목소리(예: Linh) 옆의 구름 모양(다운로드) 아이콘을 눌러 음성 데이터를 다운로드합니다. ‘고품질’ 버전을 다운로드하면 훨씬 자연스러운 AI 음성으로 들을 수 있어요.</li></ol><h4>2단계: 화면의 베트남어 텍스트 읽히기 (사용 방법)</h4><p class=\"p-desc\">다운로드가 완료되면 다음 두 가지 방법으로 베트남어를 읽게 만들 수 있어요. 동일하게 설정 &gt; 손쉬운 사용 &gt; 콘텐츠 말하기 메뉴에서 활성화할 수 있습니다.</p><h4>방법 A: 선택 항목 말하기 (추천)</h4><ol><li>설정 방법: ‘선택 항목 말하기’ 기능을 켭니다.</li><li>사용 방법: 웹서핑이나 텍스트 앱에서 베트남어 단어·문장을 길게 눌러 블록을 지정한 후, 팝업 메뉴에서 ‘말하기’를 누르면 베트남어로 읽어줘요.</li></ol><h4>방법 B: 화면 말하기</h4><ol><li>설정 방법: ‘화면 말하기’ 기능을 켭니다.</li><li>사용 방법: 베트남어로 된 뉴스나 전자책 화면에서 두 손가락으로 화면 상단에서 아래로 쓸어내리면 화면 전체의 텍스트를 자동으로 인식해 처음부터 끝까지 읽어줘요.</li></ol>": {"zh_cn": "<p class=\"p-desc\">使用 iOS/iPadOS 的内建功能,不需要另外安装 App,就能让装置朗读越南语文字。</p><h4>步驟一:下载越南语 TTS 语音</h4><ol><li>开启「设定」App。</li><li>前往<b>辅助使用</b>选单。</li><li>选择<b>朗读内容</b>(依 iOS 版本不同,亦可能显示为<b>讲出内容</b>)。</li><li>点一下<b>语音</b>。</li><li>往下捲动并选择<b>越南语</b>。</li><li>点选想要的语音(例如 Linh)旁边的雲朵(下载)图示,即可下载语音资料。若下载「高品质」版本,就能听到更自然的 AI 语音。</li></ol><h4>步驟二:让螢幕上的越南语文字被朗读出来(使用方法)</h4><p class=\"p-desc\">下载完成后,可以透过以下两种方式让装置朗读越南语。这两项功能同样可在「设定 &gt; 辅助使用 &gt; 讲出内容」选单中开启。</p><h4>方法 A:朗读所选项目(推薦)</h4><ol><li>设定方法:开启「朗读所选项目」功能。</li><li>使用方法:在浏览网页或文字 App 时,长按越南语单字或句子以选取范围,接着在彈出式选单中点选「朗读」,即可听到越南语朗读。</li></ol><h4>方法 B:朗读螢幕</h4><ol><li>设定方法:开启「朗读螢幕」功能。</li><li>使用方法:在显示越南语新聞或电子书的画面上,用两根手指从螢幕頂端向下滑动,系统就会自动辨识整个画面的文字,并从头到尾朗读出来。</li></ol>", "zh": "<p class=\"p-desc\">使用 iOS/iPadOS 的內建功能,不需要另外安裝 App,就能讓裝置朗讀越南語文字。</p><h4>步驟一:下載越南語 TTS 語音</h4><ol><li>開啟「設定」App。</li><li>前往<b>輔助使用</b>選單。</li><li>選擇<b>朗讀內容</b>(依 iOS 版本不同,亦可能顯示為<b>講出內容</b>)。</li><li>點一下<b>語音</b>。</li><li>往下捲動並選擇<b>越南語</b>。</li><li>點選想要的語音(例如 Linh)旁邊的雲朵(下載)圖示,即可下載語音資料。若下載「高品質」版本,就能聽到更自然的 AI 語音。</li></ol><h4>步驟二:讓螢幕上的越南語文字被朗讀出來(使用方法)</h4><p class=\"p-desc\">下載完成後,可以透過以下兩種方式讓裝置朗讀越南語。這兩項功能同樣可在「設定 &gt; 輔助使用 &gt; 講出內容」選單中開啟。</p><h4>方法 A:朗讀所選項目(推薦)</h4><ol><li>設定方法:開啟「朗讀所選項目」功能。</li><li>使用方法:在瀏覽網頁或文字 App 時,長按越南語單字或句子以選取範圍,接著在彈出式選單中點選「朗讀」,即可聽到越南語朗讀。</li></ol><h4>方法 B:朗讀螢幕</h4><ol><li>設定方法:開啟「朗讀螢幕」功能。</li><li>使用方法:在顯示越南語新聞或電子書的畫面上,用兩根手指從螢幕頂端向下滑動,系統就會自動辨識整個畫面的文字,並從頭到尾朗讀出來。</li></ol>", "en": "<p class=\"p-desc\">You can use the built-in features of iOS/iPadOS to have Vietnamese text read aloud, without installing a separate app.</p><h4>Step 1: Download a Vietnamese TTS Voice</h4><ol><li>Open the Settings app.</li><li>Go to the <b>Accessibility</b> menu.</li><li>Select <b>Spoken Content</b> (or <b>Speak Screen &amp; Content</b>, depending on your iOS version).</li><li>Tap <b>Voices</b>.</li><li>Scroll down and select <b>Vietnamese</b>.</li><li>Tap the cloud (download) icon next to the voice you want (e.g., Linh) to download the voice data. Downloading the \"Premium\" (high-quality) version gives you a much more natural-sounding AI voice.</li></ol><h4>Step 2: Have On-Screen Vietnamese Text Read Aloud (How to Use)</h4><p class=\"p-desc\">Once the download is complete, there are two ways to have Vietnamese read aloud. Both can also be turned on from Settings &gt; Accessibility &gt; Spoken Content.</p><h4>Method A: Speak Selection (Recommended)</h4><ol><li>Setup: Turn on the \"Speak Selection\" feature.</li><li>How to use: While browsing the web or using a text app, press and hold a Vietnamese word or sentence to select it, then tap \"Speak\" in the pop-up menu to hear it read aloud in Vietnamese.</li></ol><h4>Method B: Speak Screen</h4><ol><li>Setup: Turn on the \"Speak Screen\" feature.</li><li>How to use: On a screen showing Vietnamese news or an e-book, swipe down from the top of the screen with two fingers, and all the text on screen will be automatically recognized and read aloud from start to finish.</li></ol>", "fr": "<p class=\"p-desc\">Vous pouvez utiliser les fonctionnalités intégrées d'iOS/iPadOS pour faire lire du texte vietnamien à voix haute sans installer d'application tierce.</p><h4>Étape 1 : Télécharger une voix TTS vietnamienne</h4><ol><li>Ouvrez l'application <b>Réglages</b>.</li><li>Allez dans le menu <b>Accessibilité</b>.</li><li>Sélectionnez <b>Contenu énoncé</b>.</li><li>Touchez <b>Voix</b>.</li><li>Faites défiler vers le bas et sélectionnez <b>Vietnamien</b>.</li><li>Touchez l'icône de nuage (téléchargement) à côté de la voix souhaitée (ex. : Linh) pour installer les données vocales. La version de haute qualité offre une voix beaucoup plus naturelle.</li></ol><h4>Étape 2 : Faire lire le texte vietnamien à l'écran</h4><p class=\"p-desc\">Une fois le téléchargement terminé, deux options s'offrent à vous :</p><h4>Méthode A : Énoncer la sélection (Recommandé)</h4><ol><li>Activez « Énoncer la sélection ».</li><li>Sélectionnez un mot ou une phrase en vietnamien sur une page web ou dans une application, puis touchez « Énoncer » dans le menu contextuel.</li></ol><h4>Méthode B : Énoncer le contenu de l'écran</h4><ol><li>Activez « Énoncer le contenu de l'écran ».</li><li>Faites glisser deux doigts depuis le haut de l'écran vers le bas pour lire tout le texte affiché.</li></ol>", "de": "<p class=\"p-desc\">Mit den integrierten Funktionen von iOS/iPadOS können Sie sich vietnamesischen Text vorlesen lassen, ohne eine separate App zu installieren.</p><h4>Schritt 1: Vietnamesische TTS-Stimme herunterladen</h4><ol><li>Öffnen Sie die App <b>Einstellungen</b>.</li><li>Gehen Sie zum Menü <b>Bedienungshilfen</b>.</li><li>Wählen Sie <b>Gesprochene Inhalte</b>.</li><li>Tippen Sie auf <b>Stimmen</b>.</li><li>Scrollen Sie nach unten und wählen Sie <b>Vietnamesisch</b>.</li><li>Tippen Sie auf das Wolkensymbol (Download) neben der gewünschten Stimme (z. B. Linh), um die Sprachdaten herunterzuladen. Die „Erweiterte“ Version bietet eine besonders natürliche Stimme.</li></ol><h4>Schritt 2: Vietnamesischen Text auf dem Bildschirm vorlesen lassen</h4><p class=\"p-desc\">Nach dem Download gibt es zwei Möglichkeiten zum Vorlesen. Beide lassen sich unter Einstellungen &gt; Bedienungshilfen &gt; Gesprochene Inhalte aktivieren.</p><h4>Methode A: Auswahl vorlesen (Empfohlen)</h4><ol><li>Einrichtung: Aktivieren Sie „Auswahl vorlesen“.</li><li>Verwendung: Halten Sie beim Surfen oder in Text-Apps ein vietnamesisches Wort oder einen Satz gedrückt, um den Text auszuwählen, und tippen Sie im Menü auf „Sprechen“.</li></ol><h4>Methode B: Bildschirminhalt sprechen</h4><ol><li>Einrichtung: Aktivieren Sie „Bildschirminhalt sprechen“.</li><li>Verwendung: Streichen Sie mit zwei Fingern vom oberen Bildschirmrand nach unten, um den gesamten Text auf dem Bildschirm vorlesen zu lassen.</li></ol>", "ja": "<p class=\"p-desc\">iOS/iPadOSの内蔵機能を使えば、別途アプリをインストールしなくてもベトナム語のテキストを読み上げさせることができます。</p><h4>ステップ1:ベトナム語のTTS音声をダウンロードする</h4><ol><li>「設定」アプリを開きます。</li><li><b>アクセシビリティ</b>メニューに移動します。</li><li><b>読み上げコンテンツ</b>(iOSのバージョンによっては<b>コンテンツの読み上げ</b>)を選択します。</li><li><b>声</b>をタップします。</li><li>下にスクロールして<b>ベトナム語</b>を選択します。</li><li>使用したい音声(例:Linh)の横にある雲のマーク(ダウンロード)アイコンをタップして音声データをダウンロードします。「高品質」版をダウンロードすると、より自然なAI音声で聞くことができます。</li></ol><h4>ステップ2:画面上のベトナム語テキストを読み上げさせる(使い方)</h4><p class=\"p-desc\">ダウンロードが完了すると、次の2つの方法でベトナム語を読み上げさせることができます。どちらも設定 &gt; アクセシビリティ &gt; 読み上げコンテンツのメニューから有効にできます。</p><h4>方法A:選択項目の読み上げ(おすすめ)</h4><ol><li>設定方法:「選択項目の読み上げ」機能をオンにします。</li><li>使い方:ウェブサイトやテキストアプリでベトナム語の単語や文章を長押しして選択し、ポップアップメニューで「読み上げ」をタップすると、ベトナム語で読み上げてくれます。</li></ol><h4>方法B:画面の読み上げ</h4><ol><li>設定方法:「画面の読み上げ」機能をオンにします。</li><li>使い方:ベトナム語のニュースや電子書籍が表示された画面で、2本指で画面の上端から下へスワイプすると、画面全体のテキストが自動的に認識され、最初から最後まで読み上げられます。</li></ol>", "pl": "<p class=\"p-desc\">Dzięki wbudowanym funkcjom iOS/iPadOS możesz słuchać czytanego tekstu wietnamskiego bez instalowania dodatkowych aplikacji.</p><h4>Krok 1: Pobierz głos syntezatora mowy (TTS) dla wietnamskiego</h4><ol><li>Otwórz aplikację <b>Ustawienia</b>.</li><li>Przejdź do menu <b>Dostępność</b>.</li><li>Wybierz <b>Zawartość mówiona</b>.</li><li>Dotknij <b>Głosy</b>.</li><li>Przewiń w dół i wybierz <b>Wietnamski</b>.</li><li>Dotknij ikony chmury (pobieranie) obok wybranego głosu (np. Linh). Wersja ulepszona zapewnia bardziej naturalny głos.</li></ol><h4>Krok 2: Odczytywanie tekstu z ekranu</h4><p class=\"p-desc\">Po pobraniu możesz korzystać z dwóch metod odczytu tekstu:</p><h4>Metoda A: Przeczytaj zaznaczone (Zalecane)</h4><ol><li>Włącz funkcję „Przeczytaj zaznaczone”.</li><li>Zaznacz tekst wietnamski w przeglądarce i dotknij „Mów” w menu podręcznym.</li></ol><h4>Metoda B: Przeczytaj ekran</h4><ol><li>Włącz funkcję „Przeczytaj ekran”.</li><li>Przesuń dwoma palcami od góry ekranu w dół, aby odczytać całą zawartość ekranu.</li></ol>"},
+  "<h4>1. Google 음성 엔진에서 베트남어 추가 (공통)</h4><p class=\"p-desc\">대부분의 안드로이드 기기에 내장된 구글 엔진에 베트남어 음성 팩을 다운로드하는 방법이에요.</p><ol><li>스마트폰 <b>설정</b> 앱을 엽니다.</li><li><b>접근성</b> ➡️ <b>텍스트 음성 변환 출력</b>(또는 ‘글자 읽어주기’) 메뉴로 이동합니다.</li><li>기본 엔진이 <b>Google 음성 인식 및 합성</b>(또는 Speech Services by Google)으로 선택되어 있는지 확인합니다.</li><li>기본 엔진 옆에 있는 <b>설정(톱니바퀴 아이콘)</b>을 누릅니다.</li><li><b>음성 데이터 설치</b>를 선택합니다.</li><li>목록에서 <b>베트남어</b>(또는 Vietnamese)를 찾아 다운로드 버튼을 누릅니다.</li><li>다운로드가 완료되면 뒤로 돌아와 <b>언어</b>를 <b>베트남어</b>로 지정합니다.</li></ol><h4>2. 삼성 갤럭시 기기에서 베트남어 추가</h4><p class=\"p-desc\">삼성 갤럭시 스마트폰을 사용 중이라면 삼성 전용 고품질 베트남어 TTS를 추가할 수 있어요.</p><ol><li>스마트폰 <b>설정</b> 앱을 엽니다.</li><li><b>일반</b> ➡️ <b>글자 읽어주기</b>(또는 텍스트 음성 변환) 메뉴로 이동합니다.</li><li>기본 엔진을 <b>삼성 TTS 엔진</b>으로 설정합니다.</li><li>엔진 옆의 <b>설정(톱니바퀴 아이콘)</b>을 누릅니다.</li><li><b>음성 데이터 설치</b>를 누르고 목록에서 <b>베트남어</b>를 찾아 다운로드합니다.</li></ol><div class=\"tts-tip\">※ 갤럭시 스토어에서 직접 Samsung TTS Vietnamese Voice 팩을 검색해 설치할 수도 있어요.</div>": {"zh_cn": "<h4>1. 在 Google 语音引擎中新增越南语(通用)</h4><p class=\"p-desc\">大多数 Android 装置内建的 Google 引擎都可以下载越南语语音包,方法如下。</p><ol><li>开启手机的<b>设定</b> App。</li><li>前往<b>協助工具</b> ➡️ <b>文字转语音输出</b>(或称「读出文字」)选单。</li><li>确认预设引擎是否为<b>Google 语音辨识与合成</b>(或 Speech Services by Google)。</li><li>点选预设引擎旁的<b>设定(齒輪图示)</b>。</li><li>选择<b>安装语音资料</b>。</li><li>在清单中找到<b>越南语</b>(Vietnamese)并点选下载按钮。</li><li>下载完成后返回上一页,将<b>语言</b>设定为<b>越南语</b>。</li></ol><h4>2. 在三星 Galaxy 装置中新增越南语</h4><p class=\"p-desc\">如果您使用的是三星 Galaxy 手机,可以額外新增三星專属的高品质越南语 TTS。</p><ol><li>开启手机的<b>设定</b> App。</li><li>前往<b>一般</b> ➡️ <b>读出文字</b>(或文字转语音)选单。</li><li>将预设引擎设定为<b>三星 TTS 引擎</b>。</li><li>点选引擎旁的<b>设定(齒輪图示)</b>。</li><li>点选<b>安装语音资料</b>,在清单中找到<b>越南语</b>并下载。</li></ol><div class=\"tts-tip\">※ 您也可以直接在 Galaxy Store 中搜寻 Samsung TTS Vietnamese Voice 语音包并安装。</div>", "zh": "<h4>1. 在 Google 語音引擎中新增越南語(通用)</h4><p class=\"p-desc\">大多數 Android 裝置內建的 Google 引擎都可以下載越南語語音包,方法如下。</p><ol><li>開啟手機的<b>設定</b> App。</li><li>前往<b>協助工具</b> ➡️ <b>文字轉語音輸出</b>(或稱「讀出文字」)選單。</li><li>確認預設引擎是否為<b>Google 語音辨識與合成</b>(或 Speech Services by Google)。</li><li>點選預設引擎旁的<b>設定(齒輪圖示)</b>。</li><li>選擇<b>安裝語音資料</b>。</li><li>在清單中找到<b>越南語</b>(Vietnamese)並點選下載按鈕。</li><li>下載完成後返回上一頁,將<b>語言</b>設定為<b>越南語</b>。</li></ol><h4>2. 在三星 Galaxy 裝置中新增越南語</h4><p class=\"p-desc\">如果您使用的是三星 Galaxy 手機,可以額外新增三星專屬的高品質越南語 TTS。</p><ol><li>開啟手機的<b>設定</b> App。</li><li>前往<b>一般</b> ➡️ <b>讀出文字</b>(或文字轉語音)選單。</li><li>將預設引擎設定為<b>三星 TTS 引擎</b>。</li><li>點選引擎旁的<b>設定(齒輪圖示)</b>。</li><li>點選<b>安裝語音資料</b>,在清單中找到<b>越南語</b>並下載。</li></ol><div class=\"tts-tip\">※ 您也可以直接在 Galaxy Store 中搜尋 Samsung TTS Vietnamese Voice 語音包並安裝。</div>", "en": "<h4>1. Add Vietnamese in the Google Speech Engine (Common)</h4><p class=\"p-desc\">Here's how to download the Vietnamese voice pack for the Google engine built into most Android devices.</p><ol><li>Open the <b>Settings</b> app on your phone.</li><li>Go to <b>Accessibility</b> ➡️ <b>Text-to-speech output</b> menu.</li><li>Check that the default engine is set to <b>Google Speech Recognition and Synthesis</b> (or Speech Services by Google).</li><li>Tap the <b>Settings (gear icon)</b> next to the default engine.</li><li>Select <b>Install voice data</b>.</li><li>Find <b>Vietnamese</b> in the list and tap the download button.</li><li>Once the download finishes, go back and set the <b>Language</b> to <b>Vietnamese</b>.</li></ol><h4>2. Add Vietnamese on a Samsung Galaxy Device</h4><p class=\"p-desc\">If you're using a Samsung Galaxy phone, you can add Samsung's own high-quality Vietnamese TTS.</p><ol><li>Open the <b>Settings</b> app on your phone.</li><li>Go to <b>General</b> ➡️ <b>Text-to-speech</b> (or Read out text) menu.</li><li>Set the default engine to <b>Samsung TTS engine</b>.</li><li>Tap <b>Settings (gear icon)</b> next to the engine.</li><li>Tap <b>Install voice data</b> and find <b>Vietnamese</b> in the list to download it.</li></ol><div class=\"tts-tip\">※ You can also search for and install the Samsung TTS Vietnamese Voice pack directly from the Galaxy Store.</div>", "fr": "<h4>1. Ajouter le vietnamien dans le moteur vocal Google (Android en général)</h4><p class=\"p-desc\">Voici comment télécharger le pack vocal vietnamien pour le moteur Google intégré à la plupart des appareils Android.</p><ol><li>Ouvrez l'application <b>Paramètres</b> de votre téléphone.</li><li>Allez dans <b>Accessibilité</b> ➡️ <b>Sortie de synthèse vocale</b>.</li><li>Vérifiez que le moteur préféré est <b>Reconnaissance et synthèse vocales Google</b>.</li><li>Appuyez sur l'icône d'engrenage (paramètres) à côté du moteur.</li><li>Sélectionnez <b>Installer les données vocales</b>.</li><li>Recherchez <b>Vietnamien</b> dans la liste et appuyez sur Télécharger.</li><li>Une fois téléchargé, revenez en arrière et réglez la langue sur <b>Vietnamien</b>.</li></ol><h4>2. Ajouter le vietnamien sur les appareils Samsung Galaxy</h4><p class=\"p-desc\">Si vous utilisez un smartphone Samsung Galaxy, vous pouvez installer la voix TTS vietnamienne haute définition de Samsung.</p><ol><li>Ouvrez <b>Paramètres</b>.</li><li>Allez dans <b>Gestion globale</b> ➡️ <b>Synthèse vocale</b>.</li><li>Définissez le moteur préféré sur <b>Moteur de synthèse vocale Samsung</b>.</li><li>Appuyez sur l'engrenage à côté du moteur.</li><li>Appuyez sur <b>Installer les données vocales</b> et téléchargez le vietnamien.</li></ol>", "de": "<h4>1. Vietnamesisch zur Google-Sprachausgabe hinzufügen (Allgemein)</h4><p class=\"p-desc\">So laden Sie das vietnamesische Sprachpaket für die Google-Engine auf den meisten Android-Geräten herunter.</p><ol><li>Öffnen Sie die App <b>Einstellungen</b>.</li><li>Gehen Sie zu <b>Bedienungshilfen</b> ➡️ <b>Text-in-Sprache-Ausgabe</b>.</li><li>Stellen Sie sicher, dass als bevorzugte Engine <b>Google Sprachausgabe</b> eingestellt ist.</li><li>Tippen Sie auf das <b>Zahnrad-Symbol</b> neben der Engine.</li><li>Wählen Sie <b>Sprachdaten installieren</b>.</li><li>Suchen Sie in der Liste nach <b>Vietnamesisch</b> und tippen Sie auf Herunterladen.</li><li>Gehen Sie nach dem Download zurück und wählen Sie als Sprache <b>Vietnamesisch</b>.</li></ol><h4>2. Vietnamesisch auf Samsung-Galaxy-Geräten hinzufügen</h4><p class=\"p-desc\">Auf Samsung Galaxy-Smartphones können Sie die hochwertige Samsung-eigene vietnamesische TTS-Stimme hinzufügen.</p><ol><li>Öffnen Sie <b>Einstellungen</b>.</li><li>Gehen Sie zu <b>Allgemeine Verwaltung</b> ➡️ <b>Text-zu-Sprache</b>.</li><li>Wählen Sie als bevorzugte Engine <b>Samsung Text-zu-Sprache-Engine</b>.</li><li>Tippen Sie auf das <b>Zahnrad-Symbol</b> neben der Engine.</li><li>Tippen Sie auf <b>Sprachdaten installieren</b> und laden Sie <b>Vietnamesisch</b> herunter.</li></ol><div class=\"tts-tip\">※ Sie können das Sprachpaket „Samsung TTS Vietnamese Voice“ auch direkt im Galaxy Store suchen und installieren.</div>", "ja": "<h4>1. Googleの音声エンジンにベトナム語を追加(共通)</h4><p class=\"p-desc\">ほとんどのAndroid端末に内蔵されているGoogleエンジンにベトナム語の音声パックをダウンロードする方法です。</p><ol><li>スマートフォンの<b>設定</b>アプリを開きます。</li><li><b>ユーザー補助</b> ➡️ <b>テキスト読み上げの出力</b>(または「読み上げ機能」)メニューに移動します。</li><li>デフォルトエンジンが<b>Google音声認識と合成</b>(または Speech Services by Google)に設定されているか確認します。</li><li>デフォルトエンジンの横にある<b>設定(歯車アイコン)</b>をタップします。</li><li><b>音声データのインストール</b>を選択します。</li><li>リストから<b>ベトナム語</b>(Vietnamese)を探してダウンロードボタンをタップします。</li><li>ダウンロードが完了したら戻り、<b>言語</b>を<b>ベトナム語</b>に設定します。</li></ol><h4>2. Samsung Galaxy端末でベトナム語を追加する</h4><p class=\"p-desc\">Samsung Galaxyスマートフォンをお使いの場合、Samsung独自の高品質なベトナム語TTSを追加できます。</p><ol><li>スマートフォンの<b>設定</b>アプリを開きます。</li><li><b>一般</b> ➡️ <b>読み上げ機能</b>(またはテキスト読み上げ)メニューに移動します。</li><li>デフォルトエンジンを<b>Samsung TTSエンジン</b>に設定します。</li><li>エンジンの横にある<b>設定(歯車アイコン)</b>をタップします。</li><li><b>音声データのインストール</b>をタップし、リストから<b>ベトナム語</b>を探してダウンロードします。</li></ol><div class=\"tts-tip\">※ Galaxy Storeで直接Samsung TTS Vietnamese Voiceパックを検索してインストールすることもできます。</div>", "pl": "<h4>1. Dodawanie wietnamskiego w syntezatorze mowy Google (Android)</h4><p class=\"p-desc\">Instrukcja pobierania pakietu mowy wietnamskiej dla silnika Google.</p><ol><li>Otwórz <b>Ustawienia</b> w telefonie.</li><li>Przejdź do <b>Ułatwienia dostępu</b> ➡️ <b>Zamiana tekstu na mowę</b>.</li><li>Upewnij się, że preferowanym mechanizmem są <b>Usługi mowy Google</b>.</li><li>Dotknij ikony koła zębatego obok mechanizmu.</li><li>Wybierz <b>Zainstaluj dane głosowe</b>.</li><li>Znajdź <b>Wietnamski</b> i pobierz go.</li></ol><h4>2. Dodawanie wietnamskiego na urządzeniach Samsung Galaxy</h4><p class=\"p-desc\">Na telefonach Samsung Galaxy możesz zainstalować wysokiej jakości głos Samsung.</p><ol><li>Otwórz <b>Ustawienia</b> ➡️ <b>Zarządzanie ogólne</b> ➡️ <b>Zamiana tekstu na mowę</b>.</li><li>Ustaw preferowany mechanizm na <b>Mechanizm zamiany tekstu na mowę Samsung</b>.</li><li>Dotknij koła zębatego i zainstaluj dane głosowe dla języka wietnamskiego.</li></ol>"},
+  "<p class=\"p-desc\">별도의 프로그램 설치 없이 Mac 시스템 설정에서 바로 다운로드할 수 있어요.</p><h4>1단계: 베트남어 TTS 음성 추가하기</h4><ol><li>Mac 화면 왼쪽 상단의 Apple 메뉴( ) &gt; <b>시스템 설정</b>을 선택합니다.</li><li>사이드바에서 <b>손쉬운 사용</b>을 클릭한 뒤, <b>읽기 및 말하기</b>(또는 macOS 버전에 따라 <b>콘텐츠 말하기</b>)를 선택합니다.</li><li>‘시스템 음성’ 오른쪽에 있는 ⓘ(정보) 버튼 또는 팝업 메뉴를 클릭합니다.</li><li>왼쪽 언어 목록에서 <b>베트남어(Vietnamese)</b>를 찾아 선택합니다.</li><li>원하는 음성(예: Linh 등) 옆의 구름 모양 다운로드 아이콘을 클릭하여 설치합니다.</li><li>다운로드가 완료되면 <b>완료</b>(또는 승인)를 누릅니다.</li></ol><h4>2단계: 시스템 말하기 언어 변경하기</h4><ol><li>‘읽기 및 말하기’ 설정 화면으로 돌아와 ‘시스템 말하기 언어’ 팝업 메뉴를 베트남어로 변경합니다.</li><li>‘시스템 음성’ 메뉴에서 방금 다운로드한 베트남어 음성을 지정합니다.</li><li>아래의 ‘선택 항목 말하기’ 토글을 켜서 활성화합니다.</li></ol><h4>3단계: 단축키로 베트남어 텍스트 읽기</h4><ol><li>웹페이지나 문서에서 베트남어 텍스트를 마우스로 드래그하여 블록 지정(선택)합니다.</li><li>키보드 단축키인 <b>Option + Esc</b>를 동시에 누르면 선택한 베트남어가 원어민 발음으로 재생돼요. (중단하고 싶을 때 다시 누르면 멈춰요.)</li></ol>": {"zh_cn": "<p class=\"p-desc\">不需要另外安装程式，直接在 Mac 的系统设定中即可下载。</p><h4>第1步：新增越南语 TTS 语音</h4><ol><li>点选 Mac 画面左上角的 Apple 选单( ) &gt; <b>系统设定</b>。</li><li>在側边栏点选<b>辅助使用</b>，接着选择<b>朗读内容</b>(依 macOS 版本不同，可能显示为<b>语音</b>)。</li><li>点选「系统语音」右側的 ⓘ(资讯)按钮或彈出式选单。</li><li>在左側语言清单中找到并选择<b>越南语(Vietnamese)</b>。</li><li>点选想要的语音(例如 Linh 等)旁的雲朵下载图示进行安装。</li><li>下载完成后按下<b>完成</b>(或核准)。</li></ol><h4>第2步：变更系统朗读语言</h4><ol><li>返回「朗读内容」设定画面，将「系统朗读语言」彈出式选单变更为越南语。</li><li>在「系统语音」选单中，指定剛剛下载的越南语语音。</li><li>开启下方的「朗读所选范围」切换开关以启用此功能。</li></ol><h4>第3步：使用快速键朗读越南语文字</h4><ol><li>在网页或文件中用滑鼠拖曳选取越南语文字。</li><li>同时按下键盘快速键<b>Option + Esc</b>，即可以母语发音朗读所选的越南语文字。(想要停止时再按一次即可停止。)</li></ol>", "zh": "<p class=\"p-desc\">不需要另外安裝程式，直接在 Mac 的系統設定中即可下載。</p><h4>第1步：新增越南語 TTS 語音</h4><ol><li>點選 Mac 畫面左上角的 Apple 選單( ) &gt; <b>系統設定</b>。</li><li>在側邊欄點選<b>輔助使用</b>，接著選擇<b>朗讀內容</b>(依 macOS 版本不同，可能顯示為<b>語音</b>)。</li><li>點選「系統語音」右側的 ⓘ(資訊)按鈕或彈出式選單。</li><li>在左側語言清單中找到並選擇<b>越南語(Vietnamese)</b>。</li><li>點選想要的語音(例如 Linh 等)旁的雲朵下載圖示進行安裝。</li><li>下載完成後按下<b>完成</b>(或核准)。</li></ol><h4>第2步：變更系統朗讀語言</h4><ol><li>返回「朗讀內容」設定畫面，將「系統朗讀語言」彈出式選單變更為越南語。</li><li>在「系統語音」選單中，指定剛剛下載的越南語語音。</li><li>開啟下方的「朗讀所選範圍」切換開關以啟用此功能。</li></ol><h4>第3步：使用快速鍵朗讀越南語文字</h4><ol><li>在網頁或文件中用滑鼠拖曳選取越南語文字。</li><li>同時按下鍵盤快速鍵<b>Option + Esc</b>，即可以母語發音朗讀所選的越南語文字。(想要停止時再按一次即可停止。)</li></ol>", "en": "<p class=\"p-desc\">No separate app needs to be installed — you can download it directly from Mac System Settings.</p><h4>Step 1: Add a Vietnamese TTS Voice</h4><ol><li>Click the Apple menu ( ) at the top-left of your Mac screen &gt; select <b>System Settings</b>.</li><li>Click <b>Accessibility</b> in the sidebar, then select <b>Spoken Content</b> (or <b>Speech</b>, depending on your macOS version).</li><li>Click the ⓘ (info) button or pop-up menu next to \"System Voice.\"</li><li>Find and select <b>Vietnamese</b> in the language list on the left.</li><li>Click the cloud download icon next to the voice you want (e.g., Linh) to install it.</li><li>Once the download finishes, click <b>Done</b> (or Approve).</li></ol><h4>Step 2: Change the System Speaking Language</h4><ol><li>Return to the Spoken Content settings screen and change the \"System voice\" language pop-up menu to Vietnamese.</li><li>In the \"System Voice\" menu, select the Vietnamese voice you just downloaded.</li><li>Turn on the \"Speak Selection\" toggle below to enable it.</li></ol><h4>Step 3: Use a Keyboard Shortcut to Read Vietnamese Text Aloud</h4><ol><li>Drag with your mouse to select (highlight) Vietnamese text on a webpage or document.</li><li>Press the keyboard shortcut <b>Option + Esc</b> at the same time to hear the selected Vietnamese text read aloud in a native pronunciation. (Press it again to stop.)</li></ol>", "fr": "<p class=\"p-desc\">Vous pouvez télécharger les voix directement dans les Réglages Système de votre Mac sans logiciel tiers.</p><h4>Étape 1 : Ajouter une voix TTS vietnamienne</h4><ol><li>Cliquez sur le menu Apple ( ) &gt; <b>Réglages Système</b>.</li><li>Dans la barre latérale, cliquez sur <b>Accessibilité</b> puis sur <b>Contenu énoncé</b>.</li><li>Cliquez sur le bouton ⓘ ou le menu déroulant à côté de « Voix du système ».</li><li>Sélectionnez <b>Vietnamien</b> dans la liste des langues à gauche.</li><li>Cliquez sur l'icône de nuage à côté de la voix souhaitée (ex. : Linh) pour l'installer.</li><li>Cliquez sur <b>Terminé</b>.</li></ol><h4>Étape 2 : Configurer la voix du système</h4><ol><li>Réglez la voix du système sur la voix vietnamienne téléchargée.</li><li>Activez l'option « Énoncer la sélection ».</li></ol><h4>Étape 3 : Raccourci clavier pour la lecture</h4><ol><li>Sélectionnez du texte vietnamien avec votre souris.</li><li>Appuyez sur <b>Option + Échap</b> pour lancer la lecture vocale. Appuyez à nouveau pour arrêter.</li></ol>", "de": "<p class=\"p-desc\">Sie können vietnamesische Stimmen direkt in den Mac-Systemeinstellungen herunterladen, ohne zusätzliche Software zu installieren.</p><h4>Schritt 1: Vietnamesische TTS-Stimme hinzufügen</h4><ol><li>Wählen Sie das Apple-Menü ( ) &gt; <b>Systemeinstellungen</b>.</li><li>Klicken Sie in der Seitenleiste auf <b>Bedienungshilfen</b> und dann auf <b>Gesprochene Inhalte</b>.</li><li>Klicken Sie auf das ⓘ-Symbol oder das Menü neben „Systemstimme“.</li><li>Wählen Sie in der Sprachenliste <b>Vietnamesisch</b> aus.</li><li>Klicken Sie auf das Download-Symbol neben der gewünschten Stimme (z. B. Linh), um sie zu installieren.</li><li>Klicken Sie nach Abschluss auf <b>Fertig</b>.</li></ol><h4>Schritt 2: Sprachausgabe konfigurieren</h4><ol><li>Wählen Sie als Systemstimme die heruntergeladene vietnamesische Stimme aus.</li><li>Aktivieren Sie die Option „Auswahl sprechen“.</li></ol><h4>Schritt 3: Text per Kurzbefehl vorlesen</h4><ol><li>Markieren Sie vietnamesischen Text auf einer Webseite oder in einem Dokument.</li><li>Drücken Sie <b>Wahltaste (Option) + Esc</b>, um den Text anzuhören. Ein erneuter Tastendruck stoppt die Wiedergabe.</li></ol>", "ja": "<p class=\"p-desc\">別途アプリをインストールする必要はなく、Macの「システム設定」から直接ダウンロードできます。</p><h4>ステップ1：ベトナム語のTTS音声を追加する</h4><ol><li>Mac画面左上のAppleメニュー( )&gt;<b>システム設定</b>を選択します。</li><li>サイドバーで<b>アクセシビリティ</b>をクリックし、<b>読み上げコンテンツ</b>(macOSのバージョンによっては<b>スピーチ</b>)を選択します。</li><li>「システムの声」の右にある ⓘ(情報)ボタンまたはポップアップメニューをクリックします。</li><li>左側の言語リストから<b>ベトナム語(Vietnamese)</b>を探して選択します。</li><li>使用したい音声(例：Linhなど)の横にある雲形のダウンロードアイコンをクリックしてインストールします。</li><li>ダウンロードが完了したら<b>完了</b>(または承認)をクリックします。</li></ol><h4>ステップ2：システムの読み上げ言語を変更する</h4><ol><li>「読み上げコンテンツ」の設定画面に戻り、「システムの読み上げ言語」ポップアップメニューをベトナム語に変更します。</li><li>「システムの声」メニューで、先ほどダウンロードしたベトナム語の音声を指定します。</li><li>下にある「選択項目を読み上げる」のトグルをオンにして有効にします。</li></ol><h4>ステップ3：ショートカットキーでベトナム語のテキストを読み上げる</h4><ol><li>Webページや文書でベトナム語のテキストをマウスでドラッグして選択します。</li><li>キーボードショートカット<b>Option + Esc</b>を同時に押すと、選択したベトナム語がネイティブ発音で再生されます。(停止したいときはもう一度押すと止まります。)</li></ol>", "pl": "<p class=\"p-desc\">Możesz pobrać głosy wietnamskie bezpośrednio w Ustawieniach systemowych komputera Mac.</p><h4>Krok 1: Dodaj głos wietnamski</h4><ol><li>Wybierz menu Apple  &gt; <b>Ustawienia systemowe</b>.</li><li>Kliknij <b>Dostępność</b>, a następnie <b>Zawartość mówiona</b>.</li><li>Wybierz język <b>Wietnamski</b> i pobierz preferowany głos.</li><li>Włącz funkcję „Mów zaznaczone”.</li><li>Zaznacz tekst wietnamski i naciśnij skrót <b>Option + Esc</b>, aby odsłuchać wymowę.</li></ol>"},
+  "<h4>⚙️ Windows 11에서 베트남어 TTS 추가하기</h4><ol><li>설정 열기: 키보드에서 <b>Win + I</b> 단축키를 누릅니다.</li><li>음성 메뉴 이동: 왼쪽 메뉴에서 <b>시간 및 언어</b> ➔ 오른쪽에서 <b>음성</b>을 클릭합니다.</li><li>음성 추가: ‘음성 관리’ 항목에 있는 <b>음성 추가</b> 버튼을 누릅니다.</li><li>베트남어 설치: 검색창에 베트남어를 검색해 선택한 후, <b>추가</b>(또는 설치) 버튼을 누르면 다운로드가 시작돼요.</li><li>기본 음성 설정: 다운로드가 끝나면 상단의 ‘음성 선택’ 드롭다운 메뉴에서 설치된 베트남어 음성을 기본값으로 지정할 수 있어요.</li></ol><h4>⚙️ Windows 10에서 베트남어 TTS 추가하기</h4><ol><li>설정 열기: <b>Win + I</b> 단축키를 누릅니다.</li><li>언어 메뉴 이동: <b>시간 및 언어</b> ➔ 왼쪽의 <b>지역 및 언어</b>(또는 언어) 메뉴를 클릭합니다.</li><li>기본 설정 언어 추가: ‘기본 설정 언어’ 아래의 <b>언어 추가</b>를 클릭합니다.</li><li>베트남어 팩 선택: 베트남어(Tiếng Việt)를 검색하여 선택합니다. 이때 반드시 TTS 아이콘(마이크·말풍선 모양)이 포함되어 있는지 확인하고 ‘다음’을 누릅니다.</li><li>TTS 기능 설치: 기본 기능인 ‘텍스트 음성 변환(TTS)’이 체크된 상태로 <b>설치</b>를 누르면 완료돼요.</li></ol><h4>💡 설치 후 팁 및 확인 사항</h4><div class=\"tts-tip\">설정 반영: 음성 팩 설치를 마친 후에는 사용 중이던 텍스트 리더 프로그램이나 설정 앱을 종료 후 다시 실행해야 베트남어 음성이 정상적으로 표시돼요.</div><div class=\"tts-tip\">간편하게 읽기 실행: 윈도우 기본 돋보기 기능(Win + +)을 켜고 Ctrl + Alt + 마우스 좌클릭을 활용하면 원하는 베트남어 텍스트를 바로 TTS 음성으로 들을 수 있어요. 다만 아쉽게도 윈도우에서 지원하는 “자연스러운 음성” 목록에는 베트남어가 없어서, 윈도우를 사용할 경우 베트남어 TTS 음성이 좀 부자연스럽게 느껴질 수 있어요.</div>": {"zh_cn": "<h4>⚙️ 在 Windows 11 新增越南语 TTS 语音</h4><ol><li>开启设定：在键盘上按下 <b>Win + I</b> 快捷键。</li><li>前往语音选单：在左側选单点选 <b>时间与语言</b> ➔ 再于右側点选 <b>语音</b>。</li><li>新增语音：在‘语音管理’项目中按下 <b>新增语音</b> 按钮。</li><li>安装越南语：在搜寻栏搜寻越南语并选取后，按下 <b>新增</b>（或安装）按钮即可开始下载。</li><li>设定为预设语音：下载完成后，可在上方‘选择语音’下拉选单中，将已安装的越南语语音设为预设值。</li></ol><h4>⚙️ 在 Windows 10 新增越南语 TTS 语音</h4><ol><li>开启设定：按下 <b>Win + I</b> 快捷键。</li><li>前往语言选单：点选 <b>时间与语言</b> ➔ 左側的 <b>地区与语言</b>（或语言）选单。</li><li>新增惯用语言：在‘惯用语言’下方点选 <b>新增语言</b>。</li><li>选择越南语语言套件：搜寻并选取越南语（Tiếng Việt）。此时请务必确认已包含 TTS 图示（麥克风‧语音框图案），再按下‘下一步’。</li><li>安装 TTS 功能：在预设勾选‘文字转语音（TTS）’功能的状态下按下 <b>安装</b> 即完成。</li></ol><h4>💡 安装后的提示与确认事项</h4><div class=\"tts-tip\">套用设定：完成语音套件安装后，须先关闭再重新开启原本使用中的文字阅读程式或设定应用程式，越南语语音才会正常显示。</div><div class=\"tts-tip\">轻鬆朗读：开启 Windows 内建的放大鏡功能（Win + +），并搭配 Ctrl + Alt + 滑鼠左键点击，即可立即以 TTS 语音朗读所选的越南语文字。不过可惜的是，Windows 支援的“自然语音”清单中并没有越南语，因此在 Windows 上使用时，越南语 TTS 语音可能会听起来略显不自然。</div>", "zh": "<h4>⚙️ 在 Windows 11 新增越南語 TTS 語音</h4><ol><li>開啟設定：在鍵盤上按下 <b>Win + I</b> 快捷鍵。</li><li>前往語音選單：在左側選單點選 <b>時間與語言</b> ➔ 再於右側點選 <b>語音</b>。</li><li>新增語音：在‘語音管理’項目中按下 <b>新增語音</b> 按鈕。</li><li>安裝越南語：在搜尋欄搜尋越南語並選取後，按下 <b>新增</b>（或安裝）按鈕即可開始下載。</li><li>設定為預設語音：下載完成後，可在上方‘選擇語音’下拉選單中，將已安裝的越南語語音設為預設值。</li></ol><h4>⚙️ 在 Windows 10 新增越南語 TTS 語音</h4><ol><li>開啟設定：按下 <b>Win + I</b> 快捷鍵。</li><li>前往語言選單：點選 <b>時間與語言</b> ➔ 左側的 <b>地區與語言</b>（或語言）選單。</li><li>新增慣用語言：在‘慣用語言’下方點選 <b>新增語言</b>。</li><li>選擇越南語語言套件：搜尋並選取越南語（Tiếng Việt）。此時請務必確認已包含 TTS 圖示（麥克風‧語音框圖案），再按下‘下一步’。</li><li>安裝 TTS 功能：在預設勾選‘文字轉語音（TTS）’功能的狀態下按下 <b>安裝</b> 即完成。</li></ol><h4>💡 安裝後的提示與確認事項</h4><div class=\"tts-tip\">套用設定：完成語音套件安裝後，須先關閉再重新開啟原本使用中的文字閱讀程式或設定應用程式，越南語語音才會正常顯示。</div><div class=\"tts-tip\">輕鬆朗讀：開啟 Windows 內建的放大鏡功能（Win + +），並搭配 Ctrl + Alt + 滑鼠左鍵點擊，即可立即以 TTS 語音朗讀所選的越南語文字。不過可惜的是，Windows 支援的“自然語音”清單中並沒有越南語，因此在 Windows 上使用時，越南語 TTS 語音可能會聽起來略顯不自然。</div>", "en": "<h4>⚙️ Adding Vietnamese TTS Voices in Windows 11</h4><ol><li>Open Settings: Press <b>Win + I</b> on your keyboard.</li><li>Go to the Speech menu: In the left menu, click <b>Time & language</b> ➔ then click <b>Speech</b> on the right.</li><li>Add a voice: Under ‘Manage voices,’ click the <b>Add voices</b> button.</li><li>Install Vietnamese: Search for Vietnamese in the search box, select it, then click <b>Add</b> (or Install) to start the download.</li><li>Set the default voice: Once the download finishes, you can set the installed Vietnamese voice as the default in the ‘Choose a voice’ dropdown menu at the top.</li></ol><h4>⚙️ Adding Vietnamese TTS Voices in Windows 10</h4><ol><li>Open Settings: Press <b>Win + I</b>.</li><li>Go to the language menu: Click <b>Time & language</b> ➔ then <b>Region & language</b> (or Language) on the left.</li><li>Add a preferred language: Under ‘Preferred languages,’ click <b>Add a language</b>.</li><li>Choose the Vietnamese language pack: Search for and select Vietnamese (Tiếng Việt). Make sure the TTS icon (a microphone/speech-bubble icon) is included, then click ‘Next.’</li><li>Install the TTS feature: With the default ‘Text-to-Speech’ feature checked, click <b>Install</b> to finish.</li></ol><h4>💡 Tips and Things to Check After Installation</h4><div class=\"tts-tip\">Apply the settings: After installing a voice pack, close and reopen whatever text-reader program or Settings app you were using — the Vietnamese voice will only show up correctly after that.</div><div class=\"tts-tip\">Quick reading shortcut: Turn on Windows’ built-in Magnifier (Win + +), then hold Ctrl + Alt and left-click your mouse to instantly hear the selected Vietnamese text read aloud in TTS. Unfortunately, Vietnamese isn’t included in the “Natural voices” list Windows supports, so Vietnamese TTS voices on Windows may sound a bit less natural.</div>", "fr": "<h4>⚙️ Ajouter la synthèse vocale vietnamienne sous Windows 11</h4><ol><li>Ouvrez les Paramètres : appuyez sur <b>Win + I</b>.</li><li>Allez dans <b>Heure et langue</b> ➔ <b>Voix</b>.</li><li>Sous « Gérer les voix », cliquez sur <b>Ajouter des voix</b>.</li><li>Recherchez le vietnamien et cliquez sur <b>Ajouter</b>.</li><li>Définissez la voix par défaut dans le menu déroulant en haut.</li></ol><h4>⚙️ Ajouter la synthèse vocale vietnamienne sous Windows 10</h4><ol><li>Appuyez sur <b>Win + I</b>.</li><li>Allez dans <b>Heure et langue</b> ➔ <b>Région et langue</b>.</li><li>Cliquez sur <b>Ajouter une langue</b> sous « Langues préférées ».</li><li>Sélectionnez le vietnamien (avec l'icône TTS) et installez-le.</li></ol>", "de": "<h4>⚙️ Vietnamesische TTS unter Windows 11 hinzufügen</h4><ol><li>Einstellungen öffnen: Drücken Sie <b>Win + I</b>.</li><li>Zum Sprachmenü: Klicken Sie auf <b>Zeit und Sprache</b> ➔ <b>Sprachausgabe</b>.</li><li>Stimme hinzufügen: Klicken Sie unter „Stimmen verwalten“ auf <b>Stimmen hinzufügen</b>.</li><li>Vietnamesisch installieren: Suchen Sie nach Vietnamesisch und klicken Sie auf <b>Hinzufügen</b>.</li><li>Standardstimme festlegen: Wählen Sie oben die installierte vietnamesische Stimme aus.</li></ol><h4>⚙️ Vietnamesische TTS unter Windows 10 hinzufügen</h4><ol><li>Einstellungen öffnen: Drücken Sie <b>Win + I</b>.</li><li>Klicken Sie auf <b>Zeit und Sprache</b> ➔ <b>Region und Sprache</b>.</li><li>Klicken Sie unter „Bevorzugte Sprachen“ auf <b>Sprache hinzufügen</b>.</li><li>Wählen Sie Vietnamesisch (mit TTS-Symbol) aus und klicken Sie auf <b>Installieren</b>.</li></ol><h4>💡 Hinweise nach der Installation</h4><div class=\"tts-tip\">Einstellungen übernehmen: Starten Sie den Browser oder die Sprach-App nach der Installation neu.</div><div class=\"tts-tip\">Schnellvorlesefunktion: Mit der Windows-Bildschirmlupe (Win + +) und Strg + Alt + Linksklick können Sie markierten Text direkt vorlesen lassen.</div>", "ja": "<h4>⚙️ Windows 11でベトナム語のTTS音声を追加する</h4><ol><li>設定を開く：キーボードで <b>Win + I</b> を押します。</li><li>音声メニューへ移動：左側のメニューで <b>時刻と言語</b> ➔ 右側の <b>音声</b> をクリックします。</li><li>音声を追加：‘音声の管理’項目にある <b>音声の追加</b> ボタンを押します。</li><li>ベトナム語をインストール：検索欄でベトナム語を検索して選択した後、<b>追加</b>（またはインストール）ボタンを押すとダウンロードが始まります。</li><li>既定の音声に設定：ダウンロードが完了したら、上部の‘音声を選択’ドロップダウンメニューでインストールしたベトナム語音声を既定に設定できます。</li></ol><h4>⚙️ Windows 10でベトナム語のTTS音声を追加する</h4><ol><li>設定を開く：<b>Win + I</b> を押します。</li><li>言語メニューへ移動：<b>時刻と言語</b> ➔ 左側の <b>地域と言語</b>（または言語）メニューをクリックします。</li><li>優先する言語を追加：‘優先する言語’の下にある <b>言語を追加する</b> をクリックします。</li><li>ベトナム語パックを選択：ベトナム語（Tiếng Việt）を検索して選択します。この際、必ずTTSアイコン（マイク・吹き出しの形）が含まれていることを確認し、‘次へ’を押します。</li><li>TTS機能をインストール：既定でチェックされている‘音声合成(TTS)’機能をそのままに <b>インストール</b> を押せば完了です。</li></ol><h4>💡 インストール後のヒントと確認事項</h4><div class=\"tts-tip\">設定の反映：音声パックのインストールが完了した後は、使用していたテキスト読み上げプログラムや設定アプリを一度終了して再起動しないと、ベトナム語音声が正しく表示されません。</div><div class=\"tts-tip\">手軽に読み上げる：Windows標準の拡大鏡機能（Win + +）をオンにし、Ctrl + Alt を押しながらマウスで左クリックすると、選択したベトナム語のテキストをすぐにTTS音声で聞くことができます。ただし残念ながら、Windowsがサポートする“自然な音声”リストにはベトナム語が含まれていないため、Windows上ではベトナム語のTTS音声がやや不自然に聞こえることがあります。</div>", "pl": "<h4>⚙️ Dodawanie głosu wietnamskiego w systemie Windows</h4><ol><li>Naciśnij <b>Win + I</b>, aby otworzyć Ustawienia.</li><li>Przejdź do <b>Czas i język</b> ➔ <b>Mowa</b>.</li><li>W sekcji „Zarządzaj głosami” kliknij <b>Dodaj głosy</b> i wyszukaj język wietnamski.</li><li>Po zainstalowaniu wybierz pobrany głos jako domyślny.</li></ol>"},
+  "발음 듣기 목소리": {"zh_cn": "发音语音设定", "zh": "發音語音設定", "en": "Pronunciation Playback Voice", "fr": "Voix pour la prononciation", "de": "Stimme für Aussprache", "ja": "発音再生の音声", "pl": "Głos do odtwarzania wymowy"},
+  "베트남어를 읽어줄 목소리를 3종류 중에서 고를 수 있어요: 북부 베트남어, 남부 베트남어, 현재 언어 모드(한국어·中文·English·日本語)의 TTS. 지금 실제로 사용할 지역은 아래 북부/남부 토글로 골라요.": {"zh_cn": "可以从3种语音中选择朗读越南语的声音：北部越南语、南部越南语，以及目前语言模式（한국어·中文·English·日本语）的TTS。实际要使用的地区请在下方的北部/南部切换钮中选择。", "zh": "可以從3種語音中選擇朗讀越南語的聲音：北部越南語、南部越南語，以及目前語言模式（한국어·中文·English·日本語）的TTS。實際要使用的地區請在下方的北部/南部切換鈕中選擇。", "en": "You can choose from 3 kinds of voice to read Vietnamese: Northern Vietnamese, Southern Vietnamese, and the TTS of the current language mode (한국어·中文·English·日本語). Pick which region is actually used with the North/South toggle below.", "fr": "Vous pouvez choisir parmi 3 types de voix : vietnamien du Nord, vietnamien du Sud, et la voix TTS de la langue de l'interface. La région active se sélectionne avec le bouton Nord/Sud.", "de": "Sie können zwischen 3 Stimmenarten wählen: Nord-Vietnamesisch, Süd-Vietnamesisch und die TTS-Stimme des aktuellen Sprachmodus (Koreanisch/Chinesisch/Englisch/Japanisch/Deutsch). Die aktuell verwendete Region wählen Sie mit dem Nord/Süd-Schalter.", "ja": "ベトナム語を読み上げる声を3種類から選べます：北部ベトナム語、南部ベトナム語、現在の言語モード（한국어·中文·English·日本語）のTTS。実際に使う地域は下の北部/南部トグルで選びます。", "pl": "Możesz wybrać spośród 3 rodzajów głosów: wietnamski północny, wietnamski południowy oraz syntezator mowy w języku interfejsu. Aktywny region wybiera się przełącznikiem Północ/Południe."},
+  "지금 사용할 지역": {"zh_cn": "目前使用的地区", "zh": "目前使用的地區", "en": "Region in use now", "fr": "Région actuellement utilisée", "de": "Aktuell verwendete Region", "ja": "現在使用する地域", "pl": "Aktualnie używany region"},
+  "언어 모드": {"zh_cn": "语言模式", "zh": "語言模式", "en": "Language mode", "fr": "Langue de l'interface", "de": "Sprachmodus", "ja": "言語モード", "pl": "Język interfejsu"},
+  "기기별 베트남어 음성(TTS) 추가 방법": {"zh_cn": "各装置新增越南语语音（TTS）的方法", "zh": "各裝置新增越南語語音（TTS）的方法", "en": "How to Add Vietnamese Voices (TTS) by Device", "fr": "Comment ajouter des voix vietnamiennes (TTS) par appareil", "de": "Vietnamesische Sprachausgabe (TTS) auf Geräten hinzufügen", "ja": "機器別ベトナム語音声（TTS）の追加方法", "pl": "Jak dodać głosy wietnamskie (TTS) na urządzeniach"},
+  "이 학습반 화면의 발음 듣기 버튼은 기기·브라우저에 이미 설치된 베트남어 음성을 사용해요. 아래 기기별 안내를 따라 베트남어 음성을 미리 설치해 두면, 이 화면뿐 아니라 휴대폰·컴퓨터의 다른 앱에서도 베트남어 텍스트를 원어민 발음으로 들을 수 있어요. 항목을 눌러 펼쳐 보세요.": {"zh_cn": "本学习班画面上的发音播放按钮，使用的是装置或浏览器中已安装的越南语语音。依照下方各装置的说明事先安装越南语语音后，不只在这个画面，在手机、电脑的其他应用程式中也能以母语人士发音听到越南语文字。点选项目即可展开查看。", "zh": "本學習班畫面上的發音播放按鈕，使用的是裝置或瀏覽器中已安裝的越南語語音。依照下方各裝置的說明事先安裝越南語語音後，不只在這個畫面，在手機、電腦的其他應用程式中也能以母語人士發音聽到越南語文字。點選項目即可展開查看。", "en": "The pronunciation playback button on this class screen uses a Vietnamese voice already installed on your device or browser. If you install a Vietnamese voice ahead of time by following the device-specific guides below, you'll be able to hear Vietnamese text read in a native voice not only here, but also in other apps on your phone or computer. Tap an item to expand it.", "fr": "Les boutons d'écoute utilisent les voix vietnamiennes installées sur votre appareil ou votre navigateur. Suivez les instructions ci-dessous pour installer une voix afin de profiter d'une prononciation naturelle partout.", "de": "Die Aussprache-Schaltflächen in diesem Kurs nutzen die auf Ihrem Gerät oder im Browser installierten vietnamesischen Stimmen. Wenn Sie vorab eine vietnamesische Stimme installieren, können Sie vietnamesische Texte überall in natürlicher Aussprache anhören.", "ja": "この学習会画面の発音再生ボタンは、機器・ブラウザにすでにインストールされているベトナム語の音声を使用します。以下の機器別ガイドに従ってベトナム語の音声を事前にインストールしておくと、この画面だけでなく、スマートフォンやパソコンの他のアプリでもベトナム語のテキストをネイティブの発音で聞くことができます。項目をタップして開いてみてください。", "pl": "Przyciski odsłuchu korzystają z głosów wietnamskich zainstalowanych na Twoim urządzeniu. Postępuj zgodnie z instrukcjami, aby zainstalować głos i słuchać naturalnej wymowy."},
+  "아이폰 · 아이패드 (iOS/iPadOS)": {"zh_cn": "iPhone・iPad（iOS/iPadOS）", "zh": "iPhone・iPad（iOS/iPadOS）", "en": "iPhone / iPad (iOS/iPadOS)", "fr": "iPhone / iPad (iOS/iPadOS)", "de": "iPhone / iPad (iOS/iPadOS)", "ja": "iPhone・iPad（iOS/iPadOS）", "pl": "iPhone / iPad (iOS/iPadOS)"},
+  "안드로이드 (Android)": {"zh_cn": "Android（安卓）", "zh": "Android（安卓）", "en": "Android", "fr": "Android", "de": "Android", "ja": "Android（アンドロイド）", "pl": "Android"},
+  "글자를 눌러 발음을 들어 보세요.": {"zh_cn": "点选字母即可听发音。", "zh": "點選字母即可聽發音。", "en": "Tap a letter to hear its pronunciation.", "fr": "Appuyez sur une lettre pour écouter sa prononciation.", "de": "Tippen Sie auf einen Buchstaben, um die Aussprache zu hören.", "ja": "文字をタップして発音を聞いてみましょう。", "pl": "Dotknij litery, aby usłyszeć jej wymowę."},
+  "베트남어 문자": {"zh_cn": "越南语文字", "zh": "越南語文字", "en": "Vietnamese Alphabet", "fr": "Alphabet vietnamien", "de": "Vietnamesisches Alphabet", "ja": "ベトナム語の文字", "pl": "Alfabet wietnamski"},
+  "베트남어 문자의 명칭": {"zh_cn": "越南语文字的名称", "zh": "越南語文字的名稱", "en": "Names of the Vietnamese Letters", "fr": "Noms des lettres vietnamiennes", "de": "Bezeichnungen der vietnamesischen Buchstaben", "ja": "ベトナム語の文字の名称", "pl": "Nazwy liter wietnamskich"},
+  "자음을 읽을 때는 보통 자음 뒤에 ơ 모음을 붙여서 읽습니다. (예: b → bơ)": {"zh_cn": "念子音时，通常会在子音后面加上母音 ơ 来念。（例：b → bơ）", "zh": "唸子音時，通常會在子音後面加上母音 ơ 來唸。（例：b → bơ）", "en": "When reading a consonant aloud, the vowel ơ is usually added after it. (e.g. b → bơ)", "fr": "Pour prononcer une consonne isolée, on ajoute généralement la voyelle ơ après elle (ex. : b → bơ).", "de": "Beim Aussprechen von Konsonanten wird üblicherweise der Vokal ơ angehängt (z. B. b → bơ).", "ja": "子音を読むときは、通常子音の後に母音 ơ を付けて読みます。（例：b → bơ）", "pl": "Czytając pojedynczą spółgłoskę, zazwyczaj dodaje się po niej samogłoskę ơ (np. b → bơ)."},
+  "모음 발음 — 단모음": {"zh_cn": "母音发音——单母音", "zh": "母音發音——單母音", "en": "Vowel Pronunciation — Single Vowels", "fr": "Prononciation des voyelles — Voyelles simples", "de": "Vokalaussprache — Einfache Vokale", "ja": "母音の発音 — 単母音", "pl": "Wymowa samogłosek — Samogłoski pojedyncze"},
+  "모음 발음 — 복모음": {"zh_cn": "母音发音——复合母音", "zh": "母音發音——複合母音", "en": "Vowel Pronunciation — Diphthongs", "fr": "Prononciation des voyelles — Diphtongues", "de": "Vokalaussprache — Diphthonge", "ja": "母音の発音 — 複合母音", "pl": "Wymowa samogłosek — Dwugłoski"},
+  "자음 발음 — 단자음": {"zh_cn": "子音发音——单子音", "zh": "子音發音——單子音", "en": "Consonant Pronunciation — Single Consonants", "fr": "Prononciation des consonnes — Consonnes simples", "de": "Konsonantenaussprache — Einfache Konsonanten", "ja": "子音の発音 — 単子音", "pl": "Wymowa spółgłosek — Spółgłoski pojedyncze"},
+  "자음 발음 — 복자음": {"zh_cn": "子音发音——复合子音", "zh": "子音發音——複合子音", "en": "Consonant Pronunciation — Consonant Clusters", "fr": "Prononciation des consonnes — Groupes de consonnes", "de": "Konsonantenaussprache — Konsonantenverbindungen", "ja": "子音の発音 — 複合子音", "pl": "Wymowa spółgłosek — Zbitki spółgłoskowe"},
+  "성조 (6개)": {"zh_cn": "声调（6个）", "zh": "聲調（6個）", "en": "Tones (6)", "fr": "Tons (6)", "de": "Töne (6)", "ja": "声調（6つ）", "pl": "Tony (6)"},
+  "베트남어에는 음의 높낮이를 구별하는 6개의 성조가 있어요. 같은 글자라도 성조에 따라 완전히 다른 단어가 됩니다.": {"zh_cn": "越南语有6个用来区分音高的声调。就算是同一个字母，依声调不同也会变成完全不同的单字。", "zh": "越南語有6個用來區分音高的聲調。就算是同一個字母，依聲調不同也會變成完全不同的單字。", "en": "Vietnamese has six tones that distinguish pitch. Even the same letters can become completely different words depending on the tone.", "fr": "Le vietnamien compte six tons qui distinguent la hauteur musicale. Les mêmes lettres forment des mots entièrement différents selon le ton.", "de": "Im Vietnamesischen gibt es 6 Töne, die die Tonhöhe bestimmen. Dieselben Buchstaben ergeben je nach Ton völlig unterschiedliche Wörter.", "ja": "ベトナム語には音の高低を区別する6つの声調があります。同じ文字でも声調によって全く違う単語になります。", "pl": "W języku wietnamskim występuje 6 tonów różnicujących wysokość głosu. Te same litery tworzą zupełnie inne słowa w zależności od tonu."},
+  "성조 조합 연습 (36가지)": {"zh_cn": "声调组合练习（36种）", "zh": "聲調組合練習（36種）", "en": "Tone Combination Practice (36 Combinations)", "fr": "Pratique des combinaisons de tons (36 combinaisons)", "de": "Tonkombinationen üben (36 Paare)", "ja": "声調の組み合わせ練習（36通り）", "pl": "Ćwiczenie kombinacji tonów (36 par)"},
+  "두 음절의 성조를 조합하면 6×6 = 36가지 경우가 나와요. 앞 음절의 성조별로 묶었으니 눌러서 열어 보고, 실생활에서 자주 쓰는 단어로 성조 조합을 듣고 연습해 보세요.": {"zh_cn": "将两个音节的声调组合起来，会有6×6＝36种情况。已依前一音节的声调分组，点选展开查看，并用日常生活中常用的单字聆听、练习声调组合吧。", "zh": "將兩個音節的聲調組合起來，會有6×6＝36種情況。已依前一音節的聲調分組，點選展開查看，並用日常生活中常用的單字聆聽、練習聲調組合吧。", "en": "Combining the tones of two syllables gives you 6×6 = 36 possible pairs. They're grouped by the first syllable's tone — tap to expand each group, and listen to and practice the tone combinations using words commonly used in everyday life.", "fr": "En combinant les tons de deux syllabes, on obtient 6×6 = 36 possibilités. Regroupées par le ton de la première syllabe, ouvrez chaque groupe pour écouter et pratiquer avec des mots de la vie courante.", "de": "Die Kombination zweier Silbentöne ergibt 6×6 = 36 Möglichkeiten. Sie sind nach dem Ton der ersten Silbe gruppiert – öffnen Sie jede Gruppe und üben Sie mit Wörtern aus dem Alltag.", "ja": "2つの音節の声調を組み合わせると、6×6＝36通りになります。前の音節の声調ごとにまとめてあるので、タップして開き、日常生活でよく使う単語で声調の組み合わせを聞いて練習してみましょう。", "pl": "Kombinacja tonów dwóch sylab daje 6×6 = 36 możliwości. Pogrupowano je według tonu pierwszej sylaby — rozwiń grupy, aby słuchać i ćwiczyć popularne słowa z życia codziennego."},
+  "북부 발음과 남부 발음의 차이": {"zh_cn": "北部发音与南部发音的差异", "zh": "北部發音與南部發音的差異", "en": "Differences Between Northern and Southern Pronunciation", "fr": "Différences de prononciation entre Nord et Sud", "de": "Unterschiede zwischen Nord- und Südaussprache", "ja": "北部発音と南部発音の違い", "pl": "Różnice w wymowie między Północą a Południem"},
+  "같은 글자라도 지역에 따라 소리가 달라지는 대표적인 5가지 경우예요. 북부(하노이)와 남부(호찌민)를 비교해 보세요.": {"zh_cn": "这是同一个字母却因地区不同而发音不同的5个代表性例子。请比较北部（河内）与南部（胡志明市）的发音。", "zh": "這是同一個字母卻因地區不同而發音不同的5個代表性例子。請比較北部（河內）與南部（胡志明市）的發音。", "en": "These are five representative cases where the same letters are pronounced differently depending on the region. Compare the Northern (Hanoi) and Southern (Ho Chi Minh City) pronunciations.", "fr": "Voici 5 cas typiques où les mêmes lettres se prononcent différemment selon la région. Comparez le Nord (Hanoï) et le Sud (Hô Chi Minh-Ville).", "de": "Dies sind fünf typische Fälle, in denen dieselben Buchstaben je nach Region unterschiedlich ausgesprochen werden. Vergleichen Sie Norden (Hanoi) und Süden (Ho-Chi-Minh-Stadt).", "ja": "同じ文字でも地域によって発音が異なる代表的な5つの例です。北部（ハノイ）と南部（ホーチミン）を比較してみましょう。", "pl": "Oto 5 typowych przypadków, gdy te same litery brzmią inaczej w zależności od regionu. Porównaj Północ (Hanoi) i Południe (Ho Chi Minh)."},
+  "바로가기": {"zh_cn": "前往", "zh": "前往", "en": "Go", "fr": "Accéder", "de": "Direkt zu", "ja": "移動", "pl": "Przejdź"},
+  "주": {"zh_cn": "周", "zh": "週", "en": "Week", "fr": "Semaine", "de": "Woche", "ja": "週", "pl": "Tydzień"},
+  "모든 대화를 구성하는 기본 단어": {"zh_cn": "构成所有对话的基本单字", "zh": "構成所有對話的基本單字", "en": "Basic Words That Make Up Every Dialogue", "fr": "Mots de base composant chaque dialogue", "de": "Grundlegende Wörter aller Dialoge", "ja": "すべての会話を構成する基本単語", "pl": "Podstawowe słowa tworzące każdy dialog"},
+  "반의어": {"zh_cn": "反义词", "zh": "反義詞", "en": "Antonyms", "fr": "Antonymes", "de": "Antonyme (Gegenteile)", "ja": "反意語", "pl": "Antonimy"},
+  "주어": {"zh_cn": "主词", "zh": "主詞", "en": "Subjects", "fr": "Sujets", "de": "Subjekt", "ja": "主語", "pl": "Podmioty"},
+  "조동사 등": {"zh_cn": "助动词等", "zh": "助動詞等", "en": "Modals, etc.", "fr": "Verbes auxiliaires / Modaux", "de": "Modalverben usw.", "ja": "助動詞など", "pl": "Czasowniki posiłkowe i modalne"},
+  "동사": {"zh_cn": "动词", "zh": "動詞", "en": "Verbs", "fr": "Verbes", "de": "Verben", "ja": "動詞", "pl": "Czasowniki"},
+  "장소 (ở ~)": {"zh_cn": "地点（ở ~）", "zh": "地點（ở ~）", "en": "Places (ở ~)", "fr": "Lieux (ở ~)", "de": "Orte (ở ~)", "ja": "場所（ở ~）", "pl": "Miejsca (ở ~)"},
+  "유인물 8단계 구성": {"zh_cn": "讲义8阶段结构", "zh": "講義8階段結構", "en": "8-Stage Handout Structure", "fr": "Structure du document en 8 étapes", "de": "8-stufiger Aufbau des Handzettels", "ja": "配布資料の8段階構成", "pl": "8-etapowa struktura materiałów"},
+  "줄": {"zh_cn": "列", "zh": "列", "en": " rows", "fr": " lignes", "de": " Zeilen", "ja": "行", "pl": " wierszy"},
+  "칸": {"zh_cn": "栏", "zh": "欄", "en": " cols", "fr": " colonnes", "de": " Spalten", "ja": "マス", "pl": " kolumn"},
+  "연결사": {"zh_cn": "连接词", "zh": "連接詞", "en": "Connectives", "fr": "Conjonctions", "de": "Bindewörter (Konjunktionen)", "ja": "接続詞", "pl": "Spójniki"},
+  "움직임을 나타내는 동사": {"zh_cn": "表示动作的动词", "zh": "表示動作的動詞", "en": "Verbs of Movement", "fr": "Verbes de mouvement", "de": "Verben der Bewegung", "ja": "動きを表す動詞", "pl": "Czasowniki ruchu"},
+  "위치 전치사": {"zh_cn": "位置介系词", "zh": "位置介系詞", "en": "Location Prepositions", "fr": "Prépositions de lieu", "de": "Präpositionen des Ortes", "ja": "位置を表す前置詞", "pl": "Przyimki miejsca"},
+  "길찾기 대화문": {"zh_cn": "问路对话", "zh": "問路對話", "en": "Asking-for-Directions Dialogue", "fr": "Dialogues pour demander son chemin", "de": "Wegbeschreibungs-Dialoge", "ja": "道案内の会話文", "pl": "Dialogi dotyczące pytania o drogę"},
+  "A–Z 문법 사전": {"zh_cn": "A–Z 文法辞典", "zh": "A–Z 文法辭典", "en": "A–Z Grammar Dictionary", "fr": "Dictionnaire de grammaire de A à Z", "de": "A–Z Grammatiklexikon", "ja": "A–Z 文法辞典", "pl": "Leksykon gramatyczny od A do Z"},
+  "왕국 노래": {"zh_cn": "王国诗歌", "zh": "王國詩歌", "en": "Kingdom Songs", "fr": "Cantiques du Royaume", "de": "Königreichslieder", "ja": "王国の歌", "pl": "Pieśni Królestwa"},
+  "번": {"zh_cn": "首", "zh": "首", "en": "", "fr": "", "de": "", "ja": "番", "pl": ""},
+  "기도 준비하기": {"zh_cn": "准备祷告", "zh": "準備禱告", "en": "Preparing a Prayer", "fr": "Préparer une prière", "de": "Ein Gebet vorbereiten", "ja": "祈りを準備する", "pl": "Przygotowanie modlitwy"},
+  "맞음": {"zh_cn": "答对", "zh": "答對", "en": "correct", "fr": "correct", "de": "Richtig", "ja": "正解", "pl": "Prawidłowo"},
+  "베트남어로 입력하세요": {"zh_cn": "请输入越南语", "zh": "請輸入越南語", "en": "Type it in Vietnamese", "fr": "Écrivez en vietnamien", "de": "Auf Vietnamesisch eingeben", "ja": "ベトナム語で入力してください", "pl": "Wpisz po wietnamsku"},
+  "단어별 뜻": {"zh_cn": "逐字翻译", "zh": "逐字翻譯", "en": "Word-by-Word Meaning", "fr": "Sens mot à mot", "de": "Bedeutung der einzelnen Wörter", "ja": "単語ごとの意味", "pl": "Znaczenie słowo po słowie"},
+  "문장 뜻: ": {"zh_cn": "句子意思：", "zh": "句子意思：", "en": "Sentence meaning: ", "fr": "Sens de la phrase : ", "de": "Satzbedeutung: ", "ja": "文の意味：", "pl": "Znaczenie zdania: "},
+  "한국어라면 이 순서예요": {"zh_cn": "如果是中文，语序是这样", "zh": "如果是中文，語序是這樣", "en": "In English, the order would be this", "fr": "En français, l'ordre serait le suivant", "de": "In deutscher Wortstellung wäre es so", "ja": "日本語ならこの順番です", "pl": "W języku polskim szyk wyglądałby tak"},
+  "베트남어는 이 순서로 이동해요!": {"zh_cn": "越南语会变成这个顺序！", "zh": "越南語會變成這個順序！", "en": "In Vietnamese, it moves to this order!", "fr": "En vietnamien, les mots s'agencent dans cet ordre !", "de": "Im Vietnamesischen wechselt es in diese Reihenfolge!", "ja": "ベトナム語ではこの順番に変わります！", "pl": "W wietnamskim słowa przestawiają się w taki szyk!"},
+  "동생": {"zh_cn": "弟妹", "zh": "弟妹", "en": "Younger Sibling", "fr": "Petit frère / Petite sœur", "de": "Jüngeres Geschwister", "ja": "弟・妹", "pl": "Młodsze rodzeństwo"},
+  "초면 · 나이를 잘 모르고 아직 친하지 않아 거리를 둘 때": {"zh_cn": "初次见面，不太清楚年龄，还不熟悉，保持一定距离时", "zh": "初次見面，不太清楚年齡，還不熟悉，保持一定距離時", "en": "First meeting, don't know their age well, not yet close, keeping a respectful distance", "fr": "Premier contact, âge inconnu, pas encore familiers, politesse", "de": "Erstes Treffen, Alter unbekannt, respektvoller Abstand", "ja": "初対面で年齢がよく分からず、まだ親しくないため距離を置くとき", "pl": "Pierwsze spotkanie, wiek nieznany, uprzejmy dystans"},
+  "검색 결과가 없어요.": {"zh_cn": "没有搜寻结果。", "zh": "沒有搜尋結果。", "en": "No results found.", "fr": "Aucun résultat trouvé.", "de": "Keine Suchergebnisse.", "ja": "検索結果がありません。", "pl": "Brak wyników wyszukiwania."},
+  "사전어순(베트남어 알파벳순)으로 정리했어요. 한자어에서 온 단어는 괄호 안에 한자를 표시했습니다.": {"zh_cn": "依字典顺序（越南语字母顺序）排列。源自汉字词的单字，括号内会标示汉字。", "zh": "依字典順序（越南語字母順序）排列。源自漢字詞的單字，括號內會標示漢字。", "en": "Sorted in dictionary order (Vietnamese alphabetical order). Words derived from Sino-Vietnamese show the Chinese characters in parentheses.", "fr": "Classé par ordre alphabétique vietnamien. Les mots d'origine sino-vietnamienne indiquent les sinogrammes entre parenthèses.", "de": "In Wörterbuchreihenfolge (vietnamesisches Alphabet) sortiert. Aus dem Sino-Vietnamesischen stammende Wörter zeigen die Schriftzeichen in Klammern.", "ja": "辞書順（ベトナム語アルファベット順）に整理しました。漢語由来の単語は括弧内に漢字を表示しています。", "pl": "Uporządkowano w kolejności alfabetycznej języka wietnamskiego. Przy słowach pochodzenia sino-wietnamskiego podano znaki chińskie w nawiasach."},
+  "총 ": {"zh_cn": "共 ", "zh": "共 ", "en": "", "fr": "Total : ", "de": "Insgesamt ", "ja": "全 ", "pl": "Razem: "},
+  "개 단어 중 ": {"zh_cn": "个单字中，", "zh": "個單字中，", "en": " of ", "fr": " sur ", "de": " von ", "ja": "語中、", "pl": " z "},
+  "개 검색됨": {"zh_cn": "个符合搜寻", "zh": "個符合搜尋", "en": " matched", "fr": " mots trouvés", "de": " Wörter gefunden", "ja": "件ヒット", "pl": " znalezionych słów"},
+  "4음절 이상 결합어는 그것을 이루는 기본 단어를 먼저 보여준 뒤에 나옵니다.": {"zh_cn": "4音节以上的组合词，会先显示组成它的基本单字，然后才出现该组合词。", "zh": "4音節以上的組合詞，會先顯示組成它的基本單字，然後才出現該組合詞。", "en": "Compound words of four or more syllables are shown after first introducing the basic words that make them up.", "fr": "Les mots composés de 4 syllabes ou plus sont présentés après avoir introduit leurs termes de base.", "de": "Zusammengesetzte Wörter ab vier Silben werden nach ihren Grundbestandteilen aufgeführt.", "ja": "4音節以上の合成語は、それを構成する基本単語を先に示してから出てきます。", "pl": "Słowa złożone z 4 lub więcej sylab są prezentowane po przedstawieniu ich słów składowych."},
+  "결합어": {"zh_cn": "组合词", "zh": "組合詞", "en": "Compound", "fr": "Mots composés", "de": "Komposita", "ja": "合成語", "pl": "Wyrazy złożone"},
+  "개 단어": {"zh_cn": "个单字", "zh": "個單字", "en": " words", "fr": " mots", "de": " Wörter", "ja": "語", "pl": " słów"},
+  "베트남어 한자어 음절을 받침(끝소리)별로 묶고, 그 받침이 한국 한자음의 어떤 받침과 대응하는지 보여줘요. 안에서 다시 모음별(운) 그룹으로 나누어, 하나의 기본 단어에서 여러 파생 단어의 한국 한자음을 함께 익힐 수 있어요.": {"zh_cn": "依越南语汉字词音节的收尾音分组，并显示该收尾音对应到中文汉字音的哪个收尾音。组内再依母音（韵）细分，让您能从一个基本词汇一起熟悉多个衍生词的中文汉字音。", "zh": "依越南語漢字詞音節的收尾音分組，並顯示該收尾音對應到中文漢字音的哪個收尾音。組內再依母音（韻）細分，讓您能從一個基本詞彙一起熟悉多個衍生詞的中文漢字音。", "en": "Groups Sino-Vietnamese syllables by their final sound, and shows which final sound in the Chinese reading it corresponds to. Within each group, they're further divided by vowel (rhyme), so you can learn the Chinese readings of several derived words together from one basic word.", "fr": "Regroupe les syllabes sino-vietnamiennes par consonne finale et montre les correspondances phonétiques.", "de": "Gruppiert sino-vietnamesische Silben nach Endlauten und zeigt Entsprechungen auf.", "ja": "ベトナム語の漢語音節を語末音別にまとめ、その語末音が中国語の漢字音のどの語末音に対応するかを示します。中ではさらに母音（韻）別のグループに分け、1つの基本単語から複数の派生語の中国語漢字音をまとめて覚えられます。", "pl": "Grupuje sylaby sino-wietnamskie według spółgłoski końcowej i pokazuje odpowiedniości fonetyczne."},
+  "[어순반대]": {"zh_cn": "［语序相反］", "zh": "［語序相反］", "en": "[reversed order]", "fr": "[ordre inversé]", "de": "[Umgekehrte Wortstellung]", "ja": "［語順が逆］", "pl": "[odwrócony szyk]"},
+  "어순반대": {"zh_cn": "语序相反", "zh": "語序相反", "en": "Reversed Order", "fr": "Ordre inversé", "de": "Umgekehrte Wortstellung", "ja": "語順が逆", "pl": "Odwrócony szyk"},
+  "베트남어 한자어 중, 한국어·중국어·일본어의 한자 어순과 베트남어 어순이 서로 반대인 단어들을 모았어요.": {"zh_cn": "收录了越南语汉字词中，韩文·中文·日文的汉字语序与越南语语序相反的单字。", "zh": "收錄了越南語漢字詞中，韓文·中文·日文的漢字語序與越南語語序相反的單字。", "en": "Collects Sino-Vietnamese words whose Vietnamese syllable order is reversed compared to the hanja/hanzi/kanji order used in Korean, Chinese, and Japanese.", "fr": "Rassemble les mots sino-vietnamiens dont l'ordre des syllabes est inversé par rapport au chinois, coréen et japonais.", "de": "Sino-vietnamesische Wörter, deren Silbenreihenfolge im Vietnamesischen umgekehrt ist.", "ja": "ベトナム語の漢語のうち、韓国語・中国語・日本語の漢字語順とベトナム語の語順が逆になっている単語を集めました。", "pl": "Zbiór słów sino-wietnamskich, w których kolejność sylab jest odwrotna niż w językach chińskim, koreańskim i japońskim."},
+  "구약 (39권)": {"zh_cn": "旧约（39卷）", "zh": "舊約（39卷）", "en": "Old Testament (39 Books)", "fr": "Écritures hébraïques (39 livres)", "de": "Hebräische Schriften (39 Bücher)", "ja": "旧約（39巻）", "pl": "Pisma Hebrajskie (39 ksiąg)"},
+  "신약 (27권)": {"zh_cn": "新约（27卷）", "zh": "新約（27卷）", "en": "New Testament (27 Books)", "fr": "Écritures grecques chrétiennes (27 livres)", "de": "Christliche Griechische Schriften (27 Bücher)", "ja": "新約（27巻）", "pl": "Chrześcijańskie Pisma Greckie (27 ksiąg)"},
+  "숫자 읽기 — 1~10": {"zh_cn": "数字读法 — 1～10", "zh": "數字讀法 — 1～10", "en": "Reading Numbers — 1–10", "fr": "Lecture des nombres — 1–10", "de": "Zahlen lesen — 1–10", "ja": "数字の読み方 — 1〜10", "pl": "Odczytywanie liczb — 1–10"},
+  "숫자 읽기 — 11~19": {"zh_cn": "数字读法 — 11～19", "zh": "數字讀法 — 11～19", "en": "Reading Numbers — 11–19", "fr": "Lecture des nombres — 11–19", "de": "Zahlen lesen — 11–19", "ja": "数字の読み方 — 11〜19", "pl": "Odczytywanie liczb — 11–19"},
+  "숫자 읽기 — 20~100": {"zh_cn": "数字读法 — 20～100", "zh": "數字讀法 — 20～100", "en": "Reading Numbers — 20–100", "fr": "Lecture des nombres — 20–100", "de": "Zahlen lesen — 20–100", "ja": "数字の読み方 — 20〜100", "pl": "Odczytywanie liczb — 20–100"},
+  "숫자 읽기 — 200~900": {"zh_cn": "数字读法 — 200～900", "zh": "數字讀法 — 200～900", "en": "Reading Numbers — 200–900", "fr": "Lecture des nombres — 200–900", "de": "Zahlen lesen — 200–900", "ja": "数字の読み方 — 200〜900", "pl": "Odczytywanie liczb — 200–900"},
+  "숫자 읽기 — 1,000 ~ 10억": {"zh_cn": "数字读法 — 1,000～10亿", "zh": "數字讀法 — 1,000～10億", "en": "Reading Numbers — 1,000–1 Billion", "fr": "Lecture des nombres — 1 000 à 1 milliard", "de": "Zahlen lesen — 1.000–1 Milliarde", "ja": "数字の読み方 — 1,000〜10億", "pl": "Odczytywanie liczb — 1000 do 1 miliarda"},
+  "숫자 표기법 — 마침표와 쉼표": {"zh_cn": "数字书写方式 — 句点与逗号", "zh": "數字書寫方式 — 句點與逗號", "en": "Number Formatting — Periods and Commas", "fr": "Notation des nombres — Point et virgule", "de": "Zahlenformatierung — Punkt und Komma", "ja": "数字の表記法 — ピリオドとコンマ", "pl": "Zapis liczb — Kropka i przecinek"},
+  "월 (달)": {"zh_cn": "月份", "zh": "月份", "en": "Months", "fr": "Mois", "de": "Monate", "ja": "月", "pl": "Miesiące"},
+  "요일": {"zh_cn": "星期", "zh": "星期", "en": "Days of the Week", "fr": "Jours de la semaine", "de": "Wochentage", "ja": "曜日", "pl": "Dni tygodnia"},
+  "날짜": {"zh_cn": "日期", "zh": "日期", "en": "Dates", "fr": "Date", "de": "Datum", "ja": "日付", "pl": "Data"},
+  "계절": {"zh_cn": "季节", "zh": "季節", "en": "Seasons", "fr": "Saisons", "de": "Jahreszeiten", "ja": "季節", "pl": "Pory roku"},
+  "연도 읽는 법 — lẻ와 không trăm": {"zh_cn": "年份的读法 — lẻ 和 không trăm", "zh": "年份的讀法 — lẻ 和 không trăm", "en": "Reading Years — lẻ and không trăm", "fr": "Lecture des années — lẻ et không trăm", "de": "Jahreszahlen lesen — lẻ und không trăm", "ja": "年の読み方 — lẻ と không trăm", "pl": "Odczytywanie lat — lẻ i không trăm"},
+  "이 경우, 호칭이 북부·남부에 따라 달라져요.": {"zh_cn": "在这种情况下，称呼会因北部、南部而有所不同。", "zh": "在這種情況下，稱呼會因北部、南部而有所不同。", "en": "In this case, the term of address differs between the North and the South.", "fr": "Dans ce cas, la formule d'adresse varie entre le Nord et le Sud.", "de": "In diesem Fall unterscheidet sich die Anrede zwischen Norden und Süden.", "ja": "この場合、呼び方が北部・南部で異なります。", "pl": "W tym przypadku forma grzecznościowa różni się między Północą a Południem."},
+  "이 브라우저에서는 베트남어 음성을 찾을 수 없어요. 기본 음성으로 재생을 시도합니다.": {"zh_cn": "此浏览器找不到越南语语音，将尝试以预设语音播放。", "zh": "此瀏覽器找不到越南語語音，將嘗試以預設語音播放。", "en": "No Vietnamese voice was found in this browser. Playback will be attempted with the default voice.", "fr": "Aucune voix vietnamienne n'a été trouvée dans ce navigateur. Tentative de lecture avec la voix par défaut.", "de": "In diesem Browser wurde keine vietnamesische Stimme gefunden. Es wird versucht, mit der Standardstimme abzuspielen.", "ja": "このブラウザではベトナム語の音声が見つかりません。デフォルトの音声で再生を試みます。", "pl": "W tej przeglądarce nie znaleziono wietnamskiego głosu. Nastąpi próba odtworzenia głosem domyślnym."},
+  "발음 듣기에 사용할 목소리를 선택하세요. (기기·브라우저에 설치된 베트남어 음성만 표시돼요)": {"zh_cn": "请选择用于发音播放的语音。（仅显示装置、浏览器中已安装的越南语语音）", "zh": "請選擇用於發音播放的語音。（僅顯示裝置、瀏覽器中已安裝的越南語語音）", "en": "Choose a voice for pronunciation playback. (Only Vietnamese voices installed on your device/browser are shown)", "fr": "Choisissez la voix pour la prononciation. (Seules les voix vietnamiennes installées s'affichent)", "de": "Wählen Sie eine Stimme für die Aussprache. (Es werden nur installierte vietnamesische Stimmen angezeigt)", "ja": "発音再生に使う声を選んでください。（機器・ブラウザにインストール済みのベトナム語の声のみ表示されます）", "pl": "Wybierz głos do odsłuchu wymowy. (Wyświetlane są tylko głosy zainstalowane na urządzeniu)"},
+  "뜻·해석 읽기 목소리": {"zh_cn": "词义、翻译朗读语音", "zh": "詞義、翻譯朗讀語音", "en": "Meaning/Translation Voice", "fr": "Voix pour le sens et la traduction", "de": "Stimme für Bedeutung/Übersetzung", "ja": "意味・訳読み上げの声", "pl": "Głos do odczytu znaczenia i tłumaczenia"},
+  "전체 듣기에서 단어 뜻이나 문장 해석도 함께 읽어드려요. 아래에서 현재 언어 모드(한국어·中文·English·日本語)로 읽어줄 목소리를 선택하세요.": {"zh_cn": "在「全部朗读」中，也会一并朗读词义或例句翻译。请在下方选择要用目前语言模式（韩文・中文・English・日本语）朗读的语音。", "zh": "在「全部朗讀」中，也會一併朗讀詞義或例句翻譯。請在下方選擇要用目前語言模式（韓文・中文・English・日本語）朗讀的語音。", "en": "\"Read All\" also reads the word's meaning or the sentence's translation aloud. Choose below which voice should read it in the current language mode (Korean/Chinese/English/Japanese).", "fr": "« Tout écouter » lit également le sens du mot ou la traduction de la phrase. Choisissez ci-dessous la voix correspondant à la langue de l'interface.", "de": "Beim Vorlesen wird auch die Bedeutung oder Übersetzung vorgelesen. Wählen Sie unten eine Stimme im aktuellen Sprachmodus aus.", "ja": "「全部読み上げ」では、単語の意味や文の訳も一緒に読み上げます。下で、現在の言語モード（韓国語・中国語・English・日本語）で読み上げる声を選んでください。", "pl": "Opcja „Odtwórz wszystko” odczytuje także znaczenie słowa lub tłumaczenie zdania. Wybierz poniżej głos dla bieżącego języka interfejsu."},
+  "이 브라우저에서는 현재 언어 모드의 음성을 찾을 수 없어요. 뜻·해석 읽기는 기본 음성으로 재생을 시도합니다.": {"zh_cn": "此浏览器找不到符合目前语言模式的语音，词义、翻译朗读将尝试以预设语音播放。", "zh": "此瀏覽器找不到符合目前語言模式的語音，詞義、翻譯朗讀將嘗試以預設語音播放。", "en": "No voice matching the current language mode was found in this browser. Meaning/translation playback will be attempted with the default voice.", "fr": "Aucune voix correspondant à la langue de l'interface n'a été trouvée. Lecture de la traduction avec la voix par défaut.", "de": "In diesem Browser wurde keine Stimme für den aktuellen Sprachmodus gefunden. Die Bedeutung bzw. Übersetzung wird mit der Standardstimme abgespielt.", "ja": "このブラウザでは現在の言語モードに合う音声が見つかりません。意味・訳の読み上げはデフォルトの音声で再生を試みます。", "pl": "W tej przeglądarce nie znaleziono głosu dla bieżącego języka. Tłumaczenie zostanie odczytane głosem domyślnym."},
+  "전체 듣기에서 베트남어 다음에 단어 뜻이나 문장 해석을 읽어줄 때 사용할 목소리를 선택하세요. (기기·브라우저에 설치된, 현재 언어 모드에 맞는 음성만 표시돼요)": {"zh_cn": "请选择「全部朗读」中，念完越南语后接着朗读词义或例句翻译时使用的语音。（仅显示装置、浏览器中已安装、符合目前语言模式的语音）", "zh": "請選擇「全部朗讀」中，唸完越南語後接著朗讀詞義或例句翻譯時使用的語音。（僅顯示裝置、瀏覽器中已安裝、符合目前語言模式的語音）", "en": "Choose the voice used to read the word's meaning or the sentence's translation right after the Vietnamese, during \"Read All\". (Only voices installed on your device/browser that match the current language mode are shown)", "fr": "Choisissez la voix qui lira la traduction après le vietnamien lors de l'écoute globale.", "de": "Wählen Sie die Stimme, die beim Vorlesen nach dem Vietnamesischen die Bedeutung oder Übersetzung vorliest. (Es werden nur Stimmen angezeigt, die zum aktuellen Sprachmodus passen)", "ja": "「全部読み上げ」でベトナム語の後に単語の意味や文の訳を読み上げる際に使う声を選んでください。（機器・ブラウザにインストール済みの、現在の言語モードに合う声のみ表示されます）", "pl": "Wybierz głos, który odczyta tłumaczenie po tekście wietnamskim podczas pełnego odtwarzania."},
+  "여성 추정": {"zh_cn": "推测为女性", "zh": "推測為女性", "en": "likely female", "fr": "vraisemblablement femme", "de": "vermutlich weiblich", "ja": "女性と推定", "pl": "prawdopodobnie kobieta"},
+  "남성 추정": {"zh_cn": "推测为男性", "zh": "推測為男性", "en": "likely male", "fr": "vraisemblablement homme", "de": "vermutlich männlich", "ja": "男性と推定", "pl": "prawdopodobnie mężczyzna"},
+  "한국어 뜻 가리고 연습하기": {"zh_cn": "遮住中文意思来练习", "zh": "遮住中文意思來練習", "en": "Practice with the Meaning Hidden", "fr": "S'entraîner en masquant la traduction", "de": "Bedeutung verdecken und üben", "ja": "日本語の意味を隠して練習する", "pl": "Ćwicz z ukrytym znaczeniem"},
+  "상대": {"zh_cn": "对方", "zh": "對方", "en": "Them", "fr": "Interlocuteur", "de": "Gegenüber", "ja": "相手", "pl": "Rozmówca"},
+  "문장 종류": {"zh_cn": "句子种类", "zh": "句子種類", "en": "Sentence Type", "fr": "Type de phrase", "de": "Satzart", "ja": "文の種類", "pl": "Typ zdania"},
+  "의문사 선택": {"zh_cn": "选择疑问词", "zh": "選擇疑問詞", "en": "Choose a Wh-word", "fr": "Choisir un mot interrogatif", "de": "Fragewort auswählen", "ja": "疑問詞を選択", "pl": "Wybierz zaimek pytający"},
+  "접속어 (문장 앞에 붙는 연결어)": {"zh_cn": "连接词（放在句子前面的连接语）", "zh": "連接詞（放在句子前面的連接語）", "en": "Connective (linking word before the sentence)", "fr": "Conjonction (mot de liaison en tête de phrase)", "de": "Bindewort (vorangestellte Konjunktion)", "ja": "接続語（文頭につく接続語）", "pl": "Spójnik (słowo łączące na początku zdania)"},
+  "사용 안 함": {"zh_cn": "不使用", "zh": "不使用", "en": "Not used", "fr": "Non utilisé", "de": "Nicht verwendet", "ja": "使用しない", "pl": "Nie używaj"},
+  "예: Sau khi": {"zh_cn": "例：Sau khi", "zh": "例：Sau khi", "en": "e.g. Sau khi", "fr": "ex. : Sau khi", "de": "z. B. Sau khi", "ja": "例：Sau khi", "pl": "np. Sau khi"},
+  "예: 그 후에": {"zh_cn": "例：之后", "zh": "例：之後", "en": "e.g. after that", "fr": "ex. : après cela", "de": "z. B. danach", "ja": "例：その後に", "pl": "np. potem, po tym"},
+  "주어 (의문사 'ai(누가)'를 쓸 때처럼 주어가 필요 없으면 '사용 안 함')": {"zh_cn": "主语（像使用疑问词 'ai(谁)' 时那样不需要主语时，选「不使用」）", "zh": "主語（像使用疑問詞 'ai(誰)' 時那樣不需要主語時，選「不使用」）", "en": "Subject (choose \"Not used\" when no subject is needed, like when using the wh-word 'ai' (who))", "fr": "Sujet (choisissez « Non utilisé » si aucun sujet n'est nécessaire, ex. avec « ai » [qui])", "de": "Subjekt (wenn kein Subjekt benötigt wird, wählen Sie „Nicht verwendet“)", "ja": "主語（疑問詞「ai（誰）」を使うときのように主語が要らない場合は「使用しない」）", "pl": "Podmiot (wybierz „Nie używaj”, gdy podmiot nie jest potrzebny, np. przy zaimku 'ai' [kto])"},
+  "예: học viên mới": {"zh_cn": "例：học viên mới", "zh": "例：học viên mới", "en": "e.g. học viên mới", "fr": "ex. : học viên mới", "de": "z. B. học viên mới", "ja": "例：học viên mới", "pl": "np. học viên mới"},
+  "예: 새 학습자": {"zh_cn": "例：新学习者", "zh": "例：新學習者", "en": "e.g. new student", "fr": "ex. : nouvel étudiant de la Bible", "de": "z. B. neuer Bibelschüler", "ja": "例：新しい学習者", "pl": "np. nowy zainteresowany"},
+  "보조동사": {"zh_cn": "辅助动词", "zh": "輔助動詞", "en": "Auxiliary Verb", "fr": "Verbe auxiliaire / Modal", "de": "Hilfsverb / Modalverb", "ja": "補助動詞", "pl": "Czasownik posiłkowy / modalny"},
+  "직접 입력": {"zh_cn": "手动输入", "zh": "手動輸入", "en": "Custom input", "fr": "Saisie personnalisée", "de": "Eigene Eingabe", "ja": "直接入力", "pl": "Wpisz własny"},
+  "예: định": {"zh_cn": "例：định", "zh": "例：định", "en": "e.g. định", "fr": "ex. : định", "de": "z. B. định", "ja": "例：định", "pl": "np. định"},
+  "예: ~할 예정이다": {"zh_cn": "例：打算~", "zh": "例：打算~", "en": "e.g. plan to ~", "fr": "ex. : avoir l'intention de ~", "de": "z. B. vorhaben zu ~", "ja": "例：~する予定だ", "pl": "np. planować ~"},
+  "뜻 패턴: ~하고 싶다": {"zh_cn": "意思模式：想要~", "zh": "意思模式：想要~", "en": "Meaning pattern: want to ~", "fr": "Modèle de sens : vouloir ~", "de": "Bedeutungsmuster: möchten ~", "ja": "意味パターン：~したい", "pl": "Wzorzec znaczeniowy: chcieć ~"},
+  "~해야 하다": {"zh_cn": "必须~", "zh": "必須~", "en": "must ~", "fr": "devoir ~", "de": "müssen ~", "ja": "~しなければならない", "pl": "musieć ~"},
+  "~할 수 있다": {"zh_cn": "能~", "zh": "能~", "en": "can ~", "fr": "pouvoir ~", "de": "können ~", "ja": "~することができる", "pl": "móc / potrafić ~"},
+  "~할 수 없다": {"zh_cn": "不能~", "zh": "不能~", "en": "cannot ~", "fr": "ne pas pouvoir ~", "de": "nicht können ~", "ja": "~することができない", "pl": "nie móc ~"},
+  "~하는 게 좋다": {"zh_cn": "最好~", "zh": "最好~", "en": "should ~", "fr": "il vaut mieux ~", "de": "sollten ~", "ja": "~したほうがいい", "pl": "lepiej zrobić ~"},
+  "~할 것이다(미래)": {"zh_cn": "将要~（未来）", "zh": "將要~（未來）", "en": "will ~ (future)", "fr": "futur (va ~ / fera ~)", "de": "werden ~ (Zukunft)", "ja": "~するだろう（未来）", "pl": "czas przyszły (będzie ~)"},
+  "~했다(과거)": {"zh_cn": "~了（过去）", "zh": "~了（過去）", "en": "~ed (past)", "fr": "passé (a fait ~)", "de": "hat ~t (Vergangenheit)", "ja": "~した（過去）", "pl": "czas przeszły (zrobił ~)"},
+  "~하는 중이다": {"zh_cn": "正在~", "zh": "正在~", "en": "be ~ing", "fr": "en train de ~", "de": "gerade dabei sein zu ~", "ja": "~している", "pl": "w trakcie robienia ~"},
+  "~할 필요가 있다": {"zh_cn": "需要~", "zh": "需要~", "en": "need to ~", "fr": "avoir besoin de ~", "de": "brauchen zu ~", "ja": "~する必要がある", "pl": "potrzebować ~"},
+  "~하는 것을 좋아하다": {"zh_cn": "喜欢~", "zh": "喜歡~", "en": "like to ~", "fr": "aimer ~", "de": "gerne tun ~", "ja": "~するのが好き", "pl": "lubić robić ~"},
+  "~해라(명령)": {"zh_cn": "~吧（命令）", "zh": "~吧（命令）", "en": "~! (imperative)", "fr": "impératif (fais ~ !)", "de": "Mach ~! (Befehl)", "ja": "~しなさい（命令）", "pl": "tryb rozkazujący (zrób ~!)"},
+  "가장 뜻이 비슷한 패턴을 골라야 문장이 올바르게 만들어져요.": {"zh_cn": "要选择意思最相近的模式，句子才会正确生成。", "zh": "要選擇意思最相近的模式，句子才會正確生成。", "en": "Pick the pattern closest in meaning so the sentence is generated correctly.", "fr": "Choisissez le modèle le plus proche du sens souhaité pour que la phrase soit générée correctement.", "de": "Wählen Sie das Muster mit der ähnlichsten Bedeutung, damit der Satz korrekt gebildet wird.", "ja": "意味が一番近いパターンを選ぶと、正しい文が作られます。", "pl": "Wybierz wzorzec najbliższy znaczeniowo, aby zdanie zostało utworzone poprawnie."},
+  "동사 (베트남어는 형용사만으로도 문장이 완성돼요. 예: Trời lạnh. 날씨가 춥다.)": {"zh_cn": "动词（越南语光用形容词也能完成句子。例：Trời lạnh. 天气冷。）", "zh": "動詞（越南語光用形容詞也能完成句子。例：Trời lạnh. 天氣冷。）", "en": "Verb (Vietnamese can form a complete sentence with just an adjective. e.g. Trời lạnh. — It's cold.)", "fr": "Verbe (en vietnamien, un adjectif suffit souvent à former une phrase complète, ex. : Trời lạnh. — Il fait froid.)", "de": "Verb (im Vietnamesischen reicht oft schon ein Adjektiv für einen vollständigen Satz, z. B. Trời lạnh. — Das Wetter ist kalt.)", "ja": "動詞（ベトナム語は形容詞だけでも文が完成します。例：Trời lạnh. 天気が寒い。）", "pl": "Czasownik (w wietnamskim sam przymiotnik może tworzyć pełne zdanie, np. Trời lạnh. — Jest zimno.)"},
+  "사용 안 함 (형용사만으로 문장 완성)": {"zh_cn": "不使用（只用形容词完成句子）", "zh": "不使用（只用形容詞完成句子）", "en": "Not used (sentence completed with adjective only)", "fr": "Non utilisé (phrase formée avec l'adjectif seul)", "de": "Nicht verwendet (Satz nur mit Adjektiv)", "ja": "使用しない（形容詞だけで文を完成）", "pl": "Nie używaj (zdanie tylko z przymiotnikiem)"},
+  "예: nấu": {"zh_cn": "例：nấu", "zh": "例：nấu", "en": "e.g. nấu", "fr": "ex. : nấu", "de": "z. B. nấu", "ja": "例：nấu", "pl": "np. nấu"},
+  "사전형, 예: 요리하다": {"zh_cn": "辞典形，例：요리하다", "zh": "辭典形，例：요리하다", "en": "dictionary form, e.g. 요리하다", "fr": "forme du dictionnaire, ex. : cuisiner", "de": "Grundform, z. B. kochen", "ja": "辞書形、例：요리하다", "pl": "forma słownikowa, np. gotować"},
+  "자동사 (목적어 없음)": {"zh_cn": "不及物动词（无受词）", "zh": "不及物動詞（無受詞）", "en": "Intransitive (no object)", "fr": "Intransitif (sans complément d'objet)", "de": "Intransitiv (kein Objekt)", "ja": "自動詞（目的語なし）", "pl": "Nieprzechodni (bez dopełnienia)"},
+  "타동사 (목적어 있음)": {"zh_cn": "及物动词（有受词）", "zh": "及物動詞（有受詞）", "en": "Transitive (has object)", "fr": "Transitif (avec complément d'objet)", "de": "Transitiv (mit Objekt)", "ja": "他動詞（目的語あり）", "pl": "Przechodni (z dopełnieniem)"},
+  "과거형(선택, 비우면 자동생성) 예: 요리했": {"zh_cn": "过去式（可选，留空则自动生成）例：요리했", "zh": "過去式（可選，留空則自動生成）例：요리했", "en": "past form (optional, auto-generated if left blank) e.g. 요리했", "fr": "forme passée (facultatif), ex. : a cuisiné", "de": "Vergangenheitsform (optional), z. B. kochte", "ja": "過去形（任意、空欄なら自動生成）例：요리했", "pl": "forma przeszła (opcjonalnie), np. gotował"},
+  "목적어 (타동사를 골랐을 때만 적용돼요)": {"zh_cn": "受词（只有选了及物动词才会套用）", "zh": "受詞（只有選了及物動詞才會套用）", "en": "Object (applies only when a transitive verb is chosen)", "fr": "Objet (s'applique uniquement avec un verbe transitif)", "de": "Objekt (nur bei transitiven Verben wirksam)", "ja": "目的語（他動詞を選んだときのみ適用）", "pl": "Dopełnienie (dotyczy tylko czasowników przechodnich)"},
+  "예: bức thư": {"zh_cn": "例：bức thư", "zh": "例：bức thư", "en": "e.g. bức thư", "fr": "ex. : bức thư", "de": "z. B. bức thư", "ja": "例：bức thư", "pl": "np. bức thư"},
+  "예: 편지": {"zh_cn": "例：信", "zh": "例：信", "en": "e.g. letter", "fr": "ex. : lettre", "de": "z. B. Brief", "ja": "例：手紙", "pl": "np. list"},
+  "명사 (동사로 'là(이다)'를 골랐을 때, 주어를 설명하는 명사예요: 주어+là+명사)": {"zh_cn": "名词（选了动词 'là(是)' 时，用来说明主语的名词：主语+là+名词）", "zh": "名詞（選了動詞 'là(是)' 時，用來說明主語的名詞：主語+là+名詞）", "en": "Noun (when the verb 'là' (be) is chosen, this noun describes the subject: subject + là + noun)", "fr": "Nom (avec le verbe « là » [être], nom attribut du sujet : sujet + là + nom)", "de": "Nomen (wenn als Verb „là“ (sein) gewählt wurde: Subjekt + là + Nomen)", "ja": "名詞（動詞「là（だ）」を選んだとき、主語を説明する名詞：主語+là+名詞）", "pl": "Rzeczownik (przy czasowniku „là” [być]: podmiot + là + rzeczownik)"},
+  "예: người tiên phong": {"zh_cn": "例：người tiên phong", "zh": "例：người tiên phong", "en": "e.g. người tiên phong", "fr": "ex. : người tiên phong", "de": "z. B. người tiên phong", "ja": "例：người tiên phong", "pl": "np. người tiên phong"},
+  "예: 파이오니아": {"zh_cn": "例：先锋", "zh": "例：先鋒", "en": "e.g. pioneer", "fr": "ex. : pionnier", "de": "z. B. Pionier", "ja": "例：開拓者", "pl": "np. pionier"},
+  "전치사 (với 등)": {"zh_cn": "介系词（với 等）", "zh": "介係詞（với 等）", "en": "Preposition (với etc.)", "fr": "Préposition (với etc.)", "de": "Präposition (với usw.)", "ja": "前置詞（với など）", "pl": "Przyimek (với itd.)"},
+  "예: với anh trai": {"zh_cn": "例：với anh trai", "zh": "例：với anh trai", "en": "e.g. với anh trai", "fr": "ex. : với anh trai", "de": "z. B. với anh trai", "ja": "例：với anh trai", "pl": "np. với anh trai"},
+  "예: 형과": {"zh_cn": "例：跟哥哥", "zh": "例：跟哥哥", "en": "e.g. with older brother", "fr": "ex. : avec le grand frère", "de": "z. B. mit dem älteren Bruder", "ja": "例：兄と", "pl": "np. ze starszym bratem"},
+  "형용사 (목적어·명사가 있으면 그것을, 없으면 명사 주어를 꾸며요)": {"zh_cn": "形容词（若有受词·名词就修饰它，没有的话就修饰名词主语）", "zh": "形容詞（若有受詞·名詞就修飾它，沒有的話就修飾名詞主語）", "en": "Adjective (modifies the object/noun if present, otherwise the noun subject)", "fr": "Adjectif (qualifie l'objet/le nom, ou le sujet nominal sinon)", "de": "Adjektiv (beschreibt das Objekt/Nomen oder das Subjekt)", "ja": "形容詞（目的語・名詞があればそれを、なければ名詞主語を修飾）", "pl": "Przymiotnik (określa dopełnienie/rzeczownik lub podmiot)"},
+  "예: vui": {"zh_cn": "例：vui", "zh": "例：vui", "en": "e.g. vui", "fr": "ex. : vui", "de": "z. B. vui", "ja": "例：vui", "pl": "np. vui"},
+  "사전형, 예: 기쁘다": {"zh_cn": "辞典形，例：기쁘다", "zh": "辭典形，例：기쁘다", "en": "dictionary form, e.g. 기쁘다", "fr": "forme du dictionnaire, ex. : être joyeux", "de": "Grundform, z. B. erfreut sein", "ja": "辞書形、例：기쁘다", "pl": "forma słownikowa, np. radosny"},
+  "관형사형(선택) 예: 기쁜": {"zh_cn": "冠形词形（可选）例：기쁜", "zh": "冠形詞形（可選）例：기쁜", "en": "attributive form (optional) e.g. 기쁜", "fr": "forme épithète (facultatif), ex. : joyeux", "de": "Attributiv (optional), z. B. erfreut", "ja": "連体形（任意）例：기쁜", "pl": "forma przydawkowa (opcjonalnie), np. radosny"},
+  "과거형(선택) 예: 기뻤": {"zh_cn": "过去式（可选）例：기뻤", "zh": "過去式（可選）例：기뻤", "en": "past form (optional) e.g. 기뻤", "fr": "forme passée (facultatif), ex. : était joyeux", "de": "Vergangenheit (optional), z. B. war erfreut", "ja": "過去形（任意）例：기뻤", "pl": "forma przeszła (opcjonalnie), np. był radosny"},
+  "상태부사 (어떻게)": {"zh_cn": "状态副词（怎么样）", "zh": "狀態副詞（怎麼樣）", "en": "Adverb of manner (how)", "fr": "Adverbe de manière (comment)", "de": "Modaladverb (wie)", "ja": "様態副詞（どのように）", "pl": "Przysłówek sposobu (jak)"},
+  "예: lặng lẽ": {"zh_cn": "例：lặng lẽ", "zh": "例：lặng lẽ", "en": "e.g. lặng lẽ", "fr": "ex. : lặng lẽ", "de": "z. B. lặng lẽ", "ja": "例：lặng lẽ", "pl": "np. lặng lẽ"},
+  "예: 조용히": {"zh_cn": "例：安静地", "zh": "例：安靜地", "en": "e.g. quietly", "fr": "ex. : silencieusement", "de": "z. B. leise", "ja": "例：静かに", "pl": "np. cicho"},
+  "장소부사 (어디에서·어디로) — 장소 명사만 입력하면 동사에 맞는 ở/đến이 자동으로 붙어요": {"zh_cn": "地点副词（在哪里·去哪里）— 只要输入地点名词，系统会依动词自动加上 ở/đến", "zh": "地點副詞（在哪裡·去哪裡）— 只要輸入地點名詞，系統會依動詞自動加上 ở/đến", "en": "Place adverb (where at / where to) — just enter the place noun; ở/đến is added automatically to match the verb", "fr": "Adverbe de lieu (où / vers où) — saisissez seulement le nom de lieu ; ở/đến s'ajoute automatiquement selon le verbe", "de": "Lokaladverb (wo/wohin) — geben Sie nur das Ortsnomen ein; ở/đến wird passend zum Verb ergänzt", "ja": "場所副詞（どこで・どこへ）— 場所の名詞だけ入力すれば、動詞に合わせて ở/đến が自動で付きます", "pl": "Przysłówek miejsca (gdzie/dokąd) — wpisz tylko nazwę miejsca; ở/đến doda się automatycznie"},
+  "장소 명사만, 예: thư viện": {"zh_cn": "只要地点名词，例：thư viện", "zh": "只要地點名詞，例：thư viện", "en": "place noun only, e.g. thư viện", "fr": "nom de lieu seul, ex. : thư viện", "de": "Nur das Ortsnomen, z. B. thư viện", "ja": "場所の名詞だけ、例：thư viện", "pl": "sama nazwa miejsca, np. thư viện"},
+  "예: 도서관": {"zh_cn": "例：图书馆", "zh": "例：圖書館", "en": "e.g. library", "fr": "ex. : bibliothèque", "de": "z. B. Bibliothek", "ja": "例：図書館", "pl": "np. biblioteka"},
+  "시간부사 (언제)": {"zh_cn": "时间副词（何时）", "zh": "時間副詞（何時）", "en": "Adverb of time (when)", "fr": "Adverbe de temps (quand)", "de": "Temporaladverb (wann)", "ja": "時間副詞（いつ）", "pl": "Przysłówek czasu (kiedy)"},
+  "예: tuần sau": {"zh_cn": "例：tuần sau", "zh": "例：tuần sau", "en": "e.g. tuần sau", "fr": "ex. : tuần sau", "de": "z. B. tuần sau", "ja": "例：tuần sau", "pl": "np. tuần sau"},
+  "예: 다음 주": {"zh_cn": "例：下周", "zh": "例：下週", "en": "e.g. next week", "fr": "ex. : la semaine prochaine", "de": "z. B. nächste Woche", "ja": "例：来週", "pl": "np. w przyszłym tygodniu"},
+  "자동사": {"zh_cn": "不及物动词", "zh": "不及物動詞", "en": "Intransitive", "fr": "Intransitif", "de": "Intransitiv", "ja": "自動詞", "pl": "Czasownik nieprzechodni"},
+  "타동사": {"zh_cn": "及物动词", "zh": "及物動詞", "en": "Transitive", "fr": "Transitif", "de": "Transitiv", "ja": "他動詞", "pl": "Czasownik przechodni"},
+  "대명사": {"zh_cn": "代名词", "zh": "代名詞", "en": "Pronoun", "fr": "Pronom", "de": "Pronomen", "ja": "代名詞", "pl": "Zaimek"},
+  "명사": {"zh_cn": "名词", "zh": "名詞", "en": "Noun", "fr": "Nom", "de": "Nomen", "ja": "名詞", "pl": "Rzeczownik"},
+  "직접 입력한 동사·형용사·보조동사는 활용이 적용되지 않고, 입력한 뜻 그대로 문장에 표시돼요.": {"zh_cn": "手动输入的动词·形容词·辅助动词不会套用词形变化，会直接以您输入的意思显示在句子里。", "zh": "手動輸入的動詞·形容詞·輔助動詞不會套用詞形變化，會直接以您輸入的意思顯示在句子裡。", "en": "Custom verbs, adjectives, and auxiliary verbs are not conjugated — they appear in the sentence exactly as the meaning you typed.", "fr": "Les verbes, adjectifs et modaux saisis manuellement ne sont pas fléchis et apparaissent exactement tels que saisis.", "de": "Selbst eingegebene Verben, Adjektive und Modalverben werden nicht gebeugt, sondern genau wie eingegeben im Satz angezeigt.", "ja": "直接入力した動詞・形容詞・補助動詞には活用が適用されず、入力した意味がそのまま文に表示されます。", "pl": "Wpisane własne czasowniki, przymiotniki i modale nie podlegają odmianie i pojawiają się dokładnie w podanej formie."},
+  "가족 호칭 가계도": {"zh_cn": "家族称谓家谱图", "zh": "家族稱謂家譜圖", "en": "Family Address-Term Tree", "fr": "Arbre généalogique des termes de parenté", "de": "Stammbaum der familiären Anredeformen", "ja": "家族の呼び方系図", "pl": "Drzewo genealogiczne form pokrewieństwa"},
+  "직계 4대(증조부모~증손주)와 혼인으로 맺어지는 사돈 쪽 호칭을 하나의 가계도로 정리했어요.": {"zh_cn": "把直系四代（曾祖父母~曾孙）以及因婚姻而形成的亲家称谓整理成一张家谱图。", "zh": "把直系四代（曾祖父母~曾孫）以及因婚姻而形成的親家稱謂整理成一張家譜圖。", "en": "One family tree covering four direct generations (great-grandparents to great-grandchildren) plus the in-law terms that come with marriage.", "fr": "Un arbre généalogique complet couvrant 4 générations directes (des arrière-grands-parents aux arrière-petits-enfants) ainsi que les liens par alliance.", "de": "Ein Stammbaum über 4 Generationen (Urgroßeltern bis Urenkel) samt angeheirateten Verwandten.", "ja": "直系四代（曾祖父母~ひ孫）と、結婚によってできる姻戚の呼び方を一つの家系図にまとめました。", "pl": "Jedno drzewo genealogiczne obejmujące 4 pokolenia w linii prostej (od pradziadków do prawnuków) oraz powinowatych."},
+  "혼인으로 맺어지는 사돈 쪽 호칭": {"zh_cn": "因婚姻而形成的亲家称谓", "zh": "因婚姻而形成的親家稱謂", "en": "In-law terms formed through marriage", "fr": "Termes de parenté par alliance (beaux-parents, belle-famille)", "de": "Angeheiratete Verwandtschaft", "ja": "結婚で結ばれる姻戚の呼び方", "pl": "Nazwy pokrewieństwa przez małżeństwo (powinowaci)"},
+  "증조부모": {"zh_cn": "曾祖父母", "zh": "曾祖父母", "en": "Great-grandparents", "fr": "Arrière-grands-parents", "de": "Urgroßeltern", "ja": "曾祖父母", "pl": "Pradziadkowie"},
+  "조부모": {"zh_cn": "祖父母", "zh": "祖父母", "en": "Grandparents", "fr": "Grands-parents", "de": "Großeltern", "ja": "祖父母", "pl": "Dziadkowie"},
+  "부모": {"zh_cn": "父母", "zh": "父母", "en": "Parents", "fr": "Parents", "de": "Eltern", "ja": "両親", "pl": "Rodzice"},
+  "나·형제자매·배우자": {"zh_cn": "我‧兄弟姊妹‧配偶", "zh": "我‧兄弟姊妹‧配偶", "en": "Me, siblings & spouse", "fr": "Moi, frères et sœurs, conjoint", "de": "Ich, Geschwister & Ehepartner", "ja": "私・兄弟姉妹・配偶者", "pl": "Ja, rodzeństwo i współmałżonek"},
+  "자녀": {"zh_cn": "子女", "zh": "子女", "en": "Children", "fr": "Enfants", "de": "Kinder", "ja": "子ども", "pl": "Dzieci"},
+  "손주": {"zh_cn": "孙子女", "zh": "孫子女", "en": "Grandchildren", "fr": "Petits-enfants", "de": "Enkel", "ja": "孫", "pl": "Wnuki"},
+  "증손주": {"zh_cn": "曾孙子女", "zh": "曾孫子女", "en": "Great-grandchildren", "fr": "Arrière-petits-enfants", "de": "Urenkel", "ja": "ひ孫", "pl": "Prawnuki"},
+  "친가(아버지 쪽)": {"zh_cn": "父系（父亲那边）", "zh": "父系（父親那邊）", "en": "Paternal side (father's side)", "fr": "Côté paternel", "de": "Väterlicherseits", "ja": "父方（父の実家）", "pl": "Po mieczu (od strony ojca)"},
+  "외가(어머니 쪽)": {"zh_cn": "母系（母亲那边）", "zh": "母系（母親那邊）", "en": "Maternal side (mother's side)", "fr": "Côté maternel", "de": "Mütterlicherseits", "ja": "母方（母の実家）", "pl": "Po kądzieli (od strony matki)"},
+  "형제자매": {"zh_cn": "兄弟姊妹", "zh": "兄弟姊妹", "en": "Siblings", "fr": "Frères et sœurs", "de": "Geschwister", "ja": "兄弟姉妹", "pl": "Rodzeństwo"},
+  "배우자": {"zh_cn": "配偶", "zh": "配偶", "en": "Spouse", "fr": "Conjoint", "de": "Ehepartner", "ja": "配偶者", "pl": "Współmałżonek"},
+  "며느리·사위": {"zh_cn": "媳妇‧女婿", "zh": "媳婦‧女婿", "en": "Children's spouses", "fr": "Belle-fille / Gendre", "de": "Schwiegerkinder", "ja": "嫁・婿", "pl": "Synowa / Zięć"},
+  "친손(아들의 자녀)": {"zh_cn": "孙（儿子的子女）", "zh": "孫（兒子的子女）", "en": "Grandchildren via son", "fr": "Petits-enfants (par le fils)", "de": "Enkel (über den Sohn)", "ja": "息子の子（内孫）", "pl": "Wnuki (od syna)"},
+  "외손(딸의 자녀)": {"zh_cn": "外孙（女儿的子女）", "zh": "外孫（女兒的子女）", "en": "Grandchildren via daughter", "fr": "Petits-enfants (par la fille)", "de": "Enkel (über die Tochter)", "ja": "娘の子（外孫）", "pl": "Wnuki (od córki)"},
+  "친증손(아들 쪽 손주의 자녀)": {"zh_cn": "曾孙（儿子那边孙子女的子女）", "zh": "曾孫（兒子那邊孫子女的子女）", "en": "Great-grandchildren via son's line", "fr": "Arrière-petits-enfants (lignée du fils)", "de": "Urenkel (Linie des Sohnes)", "ja": "息子側のひ孫", "pl": "Prawnuki (z linii syna)"},
+  "외증손(딸 쪽 손주의 자녀)": {"zh_cn": "外曾孙（女儿那边孙子女的子女）", "zh": "外曾孫（女兒那邊孫子女的子女）", "en": "Great-grandchildren via daughter's line", "fr": "Arrière-petits-enfants (lignée de la fille)", "de": "Urenkel (Linie der Tochter)", "ja": "娘側のひ孫", "pl": "Prawnuki (z linii córki)"},
+  "배우자의 부모님": {"zh_cn": "配偶的父母", "zh": "配偶的父母", "en": "Spouse's parents", "fr": "Beaux-parents", "de": "Schwiegereltern", "ja": "配偶者の両親", "pl": "Teściowie"},
+  "남편의 부모(아내 입장)": {"zh_cn": "丈夫的父母（妻子的立场）", "zh": "丈夫的父母（妻子的立場）", "en": "Husband's parents (from the wife's side)", "fr": "Parents du mari (du point de vue de l'épouse)", "de": "Schwiegereltern (aus Sicht der Ehefrau)", "ja": "夫の両親（妻の立場）", "pl": "Rodzice męża (z punktu widzenia żony)"},
+  "아내의 부모(남편 입장)": {"zh_cn": "妻子的父母（丈夫的立场）", "zh": "妻子的父母（丈夫的立場）", "en": "Wife's parents (from the husband's side)", "fr": "Parents de l'épouse (du point de vue du mari)", "de": "Schwiegereltern (aus Sicht des Ehemanns)", "ja": "妻の両親（夫の立場）", "pl": "Rodzice żony (z punktu widzenia męża)"},
+  "배우자의 형제자매": {"zh_cn": "配偶的兄弟姊妹", "zh": "配偶的兄弟姊妹", "en": "Spouse's siblings", "fr": "Beaux-frères et belles-sœurs", "de": "Geschwister des Ehepartners", "ja": "配偶者の兄弟姉妹", "pl": "Rodzeństwo współmałżonka (szwagrowie/szwagierki)"},
+  "남편의 형제자매(아내 입장)": {"zh_cn": "丈夫的兄弟姊妹（妻子的立场）", "zh": "丈夫的兄弟姊妹（妻子的立場）", "en": "Husband's siblings (from the wife's side)", "fr": "Frères et sœurs du mari (du point de vue de l'épouse)", "de": "Schwäger/Schwägerinnen (aus Sicht der Ehefrau)", "ja": "夫の兄弟姉妹（妻の立場）", "pl": "Rodzeństwo męża (z punktu widzenia żony)"},
+  "아내의 형제자매(남편 입장)": {"zh_cn": "妻子的兄弟姊妹（丈夫的立场）", "zh": "妻子的兄弟姊妹（丈夫的立場）", "en": "Wife's siblings (from the husband's side)", "fr": "Frères et sœurs de l'épouse (du point de vue du mari)", "de": "Schwäger/Schwägerinnen (aus Sicht des Ehemanns)", "ja": "妻の兄弟姉妹（夫の立場）", "pl": "Rodzeństwo żony (z punktu widzenia męża)"},
+  "형제자매의 배우자": {"zh_cn": "兄弟姊妹的配偶", "zh": "兄弟姊妹的配偶", "en": "Siblings' spouses", "fr": "Conjoints des frères et sœurs", "de": "Ehepartner der Geschwister", "ja": "兄弟姉妹の配偶者", "pl": "Współmałżonkowie rodzeństwa"},
+  "오빠·남동생의 아내": {"zh_cn": "哥哥‧弟弟的妻子", "zh": "哥哥‧弟弟的妻子", "en": "Older/younger brother's wife", "fr": "Épouse du frère (belle-sœur)", "de": "Ehefrau des Bruders (Schwägerin)", "ja": "兄・弟の妻", "pl": "Żona brata (bratowa)"},
+  "언니·여동생의 남편": {"zh_cn": "姊姊‧妹妹的丈夫", "zh": "姊姊‧妹妹的丈夫", "en": "Older/younger sister's husband", "fr": "Époux de la sœur (beau-frère)", "de": "Ehemann der Schwester (Schwager)", "ja": "姉・妹の夫", "pl": "Mąż siostry (szwagier)"},
+  "자녀의 배우자 쪽 부모": {"zh_cn": "子女配偶的父母", "zh": "子女配偶的父母", "en": "Children's spouses' parents", "fr": "Parents du gendre ou de la belle-fille (co-beaux-parents)", "de": "Eltern des Schwiegerkindes", "ja": "子どもの配偶者の両親", "pl": "Rodzice zięcia lub synowej (współteściowie)"},
+  "사돈": {"zh_cn": "亲家", "zh": "親家", "en": "Co-parents-in-law", "fr": "Co-beaux-parents", "de": "Gegenschwiegereltern", "ja": "サドン（子の配偶者の親同士）", "pl": "Współteściowie"},
+  "증조할아버지": {"zh_cn": "曾祖父", "zh": "曾祖父", "en": "Great-grandfather (paternal)", "fr": "Arrière-grand-père (paternel)", "de": "Urgroßvater (väterlicherseits)", "ja": "曾祖父（父方）", "pl": "Pradziadek (ze strony ojca)"},
+  "증조할머니": {"zh_cn": "曾祖母", "zh": "曾祖母", "en": "Great-grandmother (paternal)", "fr": "Arrière-grand-mère (paternelle)", "de": "Urgroßmutter (väterlicherseits)", "ja": "曾祖母（父方）", "pl": "Prababcia (ze strony ojca)"},
+  "외증조할아버지": {"zh_cn": "外曾祖父", "zh": "外曾祖父", "en": "Great-grandfather (maternal)", "fr": "Arrière-grand-père (maternel)", "de": "Urgroßvater (mütterlicherseits)", "ja": "曾祖父（母方）", "pl": "Pradziadek (ze strony matki)"},
+  "외증조할머니": {"zh_cn": "外曾祖母", "zh": "外曾祖母", "en": "Great-grandmother (maternal)", "fr": "Arrière-grand-mère (maternelle)", "de": "Urgroßmutter (mütterlicherseits)", "ja": "曾祖母（母方）", "pl": "Prababcia (ze strony matki)"},
+  "할아버지": {"zh_cn": "爷爷", "zh": "爺爺", "en": "Grandfather (paternal)", "fr": "Grand-père (paternel)", "de": "Großvater (väterlicherseits)", "ja": "祖父（父方）", "pl": "Dziadek (ze strony ojca)"},
+  "할머니": {"zh_cn": "奶奶", "zh": "奶奶", "en": "Grandmother (paternal)", "fr": "Grand-mère (paternelle)", "de": "Großmutter (väterlicherseits)", "ja": "祖母（父方）", "pl": "Babcia (ze strony ojca)"},
+  "외할아버지": {"zh_cn": "外公", "zh": "外公", "en": "Grandfather (maternal)", "fr": "Grand-père (maternel)", "de": "Großvater (mütterlicherseits)", "ja": "祖父（母方）", "pl": "Dziadek (ze strony matki)"},
+  "외할머니": {"zh_cn": "外婆", "zh": "外婆", "en": "Grandmother (maternal)", "fr": "Grand-mère (maternelle)", "de": "Großmutter (mütterlicherseits)", "ja": "祖母（母方）", "pl": "Babcia (ze strony matki)"},
+  "아버지": {"zh_cn": "父亲", "zh": "父親", "en": "Father", "fr": "Père", "de": "Vater", "ja": "父", "pl": "Ojciec"},
+  "어머니": {"zh_cn": "母亲", "zh": "母親", "en": "Mother", "fr": "Mère", "de": "Mutter", "ja": "母", "pl": "Matka"},
+  "남동생": {"zh_cn": "弟弟", "zh": "弟弟", "en": "Younger brother", "fr": "Petit frère", "de": "Jüngerer Bruder", "ja": "弟", "pl": "Młodszy brat"},
+  "여동생": {"zh_cn": "妹妹", "zh": "妹妹", "en": "Younger sister", "fr": "Petite sœur", "de": "Jüngere Schwester", "ja": "妹", "pl": "Młodsza siostra"},
+  "남편": {"zh_cn": "丈夫", "zh": "丈夫", "en": "Husband", "fr": "Mari", "de": "Ehemann", "ja": "夫", "pl": "Mąż"},
+  "아내": {"zh_cn": "妻子", "zh": "妻子", "en": "Wife", "fr": "Femme (épouse)", "de": "Ehefrau", "ja": "妻", "pl": "Żona"},
+  "아들": {"zh_cn": "儿子", "zh": "兒子", "en": "Son", "fr": "Fils", "de": "Sohn", "ja": "息子", "pl": "Syn"},
+  "딸": {"zh_cn": "女儿", "zh": "女兒", "en": "Daughter", "fr": "Fille", "de": "Tochter", "ja": "娘", "pl": "Córka"},
+  "며느리": {"zh_cn": "媳妇", "zh": "媳婦", "en": "Daughter-in-law", "fr": "Belle-fille", "de": "Schwiegertochter", "ja": "嫁（息子の妻）", "pl": "Synowa"},
+  "사위": {"zh_cn": "女婿", "zh": "女婿", "en": "Son-in-law", "fr": "Gendre", "de": "Schwiegersohn", "ja": "婿（娘の夫）", "pl": "Zięć"},
+  "친손자": {"zh_cn": "孙子", "zh": "孫子", "en": "Grandson (via son)", "fr": "Petit-fils (par le fils)", "de": "Enkelsohn (vom Sohn)", "ja": "孫息子（内孫）", "pl": "Wnuk (od syna)"},
+  "친손녀": {"zh_cn": "孙女", "zh": "孫女", "en": "Granddaughter (via son)", "fr": "Petite-fille (par le fils)", "de": "Enkeltochter (vom Sohn)", "ja": "孫娘（内孫）", "pl": "Wnuczka (od syna)"},
+  "외손자": {"zh_cn": "外孙", "zh": "外孫", "en": "Grandson (via daughter)", "fr": "Petit-fils (par la fille)", "de": "Enkelsohn (von der Tochter)", "ja": "孫息子（外孫）", "pl": "Wnuk (od córki)"},
+  "외손녀": {"zh_cn": "外孙女", "zh": "外孫女", "en": "Granddaughter (via daughter)", "fr": "Petite-fille (par la fille)", "de": "Enkeltochter (von der Tochter)", "ja": "孫娘（外孫）", "pl": "Wnuczka (od córki)"},
+  "친증손자": {"zh_cn": "曾孙", "zh": "曾孫", "en": "Great-grandson (son's line)", "fr": "Arrière-petit-fils (par le fils)", "de": "Urenkel (vom Sohn)", "ja": "ひ孫息子（内系）", "pl": "Prawnuk (z linii syna)"},
+  "친증손녀": {"zh_cn": "曾孙女", "zh": "曾孫女", "en": "Great-granddaughter (son's line)", "fr": "Arrière-petite-fille (par le fils)", "de": "Urenkelin (vom Sohn)", "ja": "ひ孫娘（内系）", "pl": "Prawnuczka (z linii syna)"},
+  "외증손자": {"zh_cn": "外曾孙", "zh": "外曾孫", "en": "Great-grandson (daughter's line)", "fr": "Arrière-petit-fils (par la fille)", "de": "Urenkel (von der Tochter)", "ja": "ひ孫息子（外系）", "pl": "Prawnuk (z linii córki)"},
+  "외증손녀": {"zh_cn": "外曾孙女", "zh": "外曾孫女", "en": "Great-granddaughter (daughter's line)", "fr": "Arrière-petite-fille (par la fille)", "de": "Urenkelin (von der Tochter)", "ja": "ひ孫娘（外系）", "pl": "Prawnuczka (z linii córki)"},
+  "시아버지(남편의 아버지)": {"zh_cn": "公公（丈夫的父亲）", "zh": "公公（丈夫的父親）", "en": "Father-in-law (husband's father)", "fr": "Beau-père (père du mari)", "de": "Schwiegervater (Vater des Ehemanns)", "ja": "義父（夫の父）", "pl": "Teść (ojciec męża)"},
+  "시어머니(남편의 어머니)": {"zh_cn": "婆婆（丈夫的母亲）", "zh": "婆婆（丈夫的母親）", "en": "Mother-in-law (husband's mother)", "fr": "Belle-mère (mère du mari)", "de": "Schwiegermutter (Mutter des Ehemanns)", "ja": "義母（夫の母）", "pl": "Teściowa (matka męża)"},
+  "장인(아내의 아버지)": {"zh_cn": "岳父（妻子的父亲）", "zh": "岳父（妻子的父親）", "en": "Father-in-law (wife's father)", "fr": "Beau-père (père de la femme)", "de": "Schwiegervater (Vater der Ehefrau)", "ja": "義父（妻の父）", "pl": "Teść (ojciec żony)"},
+  "장모(아내의 어머니)": {"zh_cn": "岳母（妻子的母亲）", "zh": "岳母（妻子的母親）", "en": "Mother-in-law (wife's mother)", "fr": "Belle-mère (mère de la femme)", "de": "Schwiegermutter (Mutter der Ehefrau)", "ja": "義母（妻の母）", "pl": "Teściowa (matka żony)"},
+  "아주버님(남편의 형)": {"zh_cn": "大伯（丈夫的哥哥）", "zh": "大伯（丈夫的哥哥）", "en": "Husband's older brother", "fr": "Beau-frère (grand frère du mari)", "de": "Älterer Bruder des Ehemanns (Schwager)", "ja": "夫の兄", "pl": "Szwagier (starszy brat męża)"},
+  "손위 시누이(남편의 누나)": {"zh_cn": "大姑（丈夫的姊姊）", "zh": "大姑（丈夫的姊姊）", "en": "Husband's older sister", "fr": "Belle-sœur (grande sœur du mari)", "de": "Ältere Schwester des Ehemanns (Schwägerin)", "ja": "夫の姉", "pl": "Szwagierka (starsza siostra męża)"},
+  "시동생(남편의 남동생)": {"zh_cn": "小叔（丈夫的弟弟）", "zh": "小叔（丈夫的弟弟）", "en": "Husband's younger brother", "fr": "Beau-frère (petit frère du mari)", "de": "Jüngerer Bruder des Ehemanns (Schwager)", "ja": "夫の弟", "pl": "Szwagier (młodszy brat męża)"},
+  "손아래 시누이(남편의 여동생)": {"zh_cn": "小姑（丈夫的妹妹）", "zh": "小姑（丈夫的妹妹）", "en": "Husband's younger sister", "fr": "Belle-sœur (petite sœur du mari)", "de": "Jüngere Schwester des Ehemanns (Schwägerin)", "ja": "夫の妹", "pl": "Szwagierka (młodsza siostra męża)"},
+  "손위 처남(아내의 오빠)": {"zh_cn": "大舅子（妻子的哥哥）", "zh": "大舅子（妻子的哥哥）", "en": "Wife's older brother", "fr": "Beau-frère (grand frère de la femme)", "de": "Älterer Bruder der Ehefrau (Schwager)", "ja": "妻の兄", "pl": "Szwagier (starszy brat żony)"},
+  "처형(아내의 언니)": {"zh_cn": "大姨子（妻子的姊姊）", "zh": "大姨子（妻子的姊姊）", "en": "Wife's older sister", "fr": "Belle-sœur (grande sœur de la femme)", "de": "Ältere Schwester der Ehefrau (Schwägerin)", "ja": "妻の姉", "pl": "Szwagierka (starsza siostra żony)"},
+  "손아래 처남(아내의 남동생)": {"zh_cn": "小舅子（妻子的弟弟）", "zh": "小舅子（妻子的弟弟）", "en": "Wife's younger brother", "fr": "Beau-frère (petit frère de la femme)", "de": "Jüngerer Bruder der Ehefrau (Schwager)", "ja": "妻の弟", "pl": "Szwagier (młodszy brat żony)"},
+  "처제(아내의 여동생)": {"zh_cn": "小姨子（妻子的妹妹）", "zh": "小姨子（妻子的妹妹）", "en": "Wife's younger sister", "fr": "Belle-sœur (petite sœur de la femme)", "de": "Jüngere Schwester der Ehefrau (Schwägerin)", "ja": "妻の妹", "pl": "Szwagierka (młodsza siostra żony)"},
+  "올케(오빠의 아내)": {"zh_cn": "嫂子（哥哥的妻子）", "zh": "嫂子（哥哥的妻子）", "en": "Older brother's wife", "fr": "Belle-sœur (épouse du grand frère)", "de": "Ehefrau des älteren Bruders", "ja": "兄の妻", "pl": "Bratowa (żona starszego brata)"},
+  "올케(남동생의 아내)": {"zh_cn": "弟妹（弟弟的妻子）", "zh": "弟妹（弟弟的妻子）", "en": "Younger brother's wife", "fr": "Belle-sœur (épouse du petit frère)", "de": "Ehefrau des jüngeren Bruders", "ja": "弟の妻", "pl": "Bratowa (żona młodszego brata)"},
+  "형부(언니의 남편)": {"zh_cn": "姊夫（姊姊的丈夫）", "zh": "姊夫（姊姊的丈夫）", "en": "Older sister's husband", "fr": "Beau-frère (mari de la grande sœur)", "de": "Ehemann der älteren Schwester", "ja": "姉の夫", "pl": "Szwagier (mąż starszej siostry)"},
+  "제부(여동생의 남편)": {"zh_cn": "妹夫（妹妹的丈夫）", "zh": "妹夫（妹妹的丈夫）", "en": "Younger sister's husband", "fr": "Beau-frère (mari de la petite sœur)", "de": "Ehemann der jüngeren Schwester", "ja": "妹の夫", "pl": "Szwagier (mąż młodszej siostry)"},
+  "사돈(자녀 배우자의 부모)": {"zh_cn": "亲家（子女配偶的父母）", "zh": "親家（子女配偶的父母）", "en": "Co-parents-in-law (child's spouse's parents)", "fr": "Co-beaux-parents (parents du conjoint de son enfant)", "de": "Eltern des Schwiegerkindes", "ja": "サドン（子の配偶者の親）", "pl": "Współteściowie"},
+  "사돈을 맺다": {"zh_cn": "结为亲家", "zh": "結為親家", "en": "To become co-parents-in-law", "fr": "S'allier par le mariage de ses enfants", "de": "Verschwägert werden", "ja": "サドン（姻戚）の関係を結ぶ", "pl": "Spokrewnić się przez ślub dzieci"},
+  "사돈어른(바깥사돈)": {"zh_cn": "亲家公（男方亲家）", "zh": "親家公（男方親家）", "en": "Male co-parent-in-law", "fr": "Co-beau-père", "de": "Schwiegerkindsvater", "ja": "男性側の親家（サドンの夫）", "pl": "Współteść"},
+  "안사돈": {"zh_cn": "亲家母（女方亲家）", "zh": "親家母（女方親家）", "en": "Female co-parent-in-law", "fr": "Co-belle-mère", "de": "Schwiegerkindsmutter", "ja": "女性側の親家（サドンの妻）", "pl": "Współteściowa"},
+  "제3자에게 말할 때": {"zh_cn": "对第三者提起时", "zh": "對第三者提起時", "en": "When mentioning them to someone else", "fr": "En parlant à un tiers", "de": "Beim Sprechen über Dritte", "ja": "第三者に話すとき", "pl": "W rozmowie z osobą trzecią"},
+  "직접 호칭할 때": {"zh_cn": "直接称呼时", "zh": "直接稱呼時", "en": "When addressing them directly", "fr": "En s'adressant directement", "de": "Bei direkter Anrede", "ja": "直接呼びかけるとき", "pl": "W bezpośrednim zwrocie"},
+  "행복한 삶을 영원히": {"zh_cn": "永远享受美好的生命", "zh": "永遠享受美好的生命", "en": "Enjoy Life Forever", "fr": "Vivez pour toujours !", "de": "Glücklich – für immer", "ja": "いつまでも幸せに暮らせます", "pl": "Już zawsze ciesz się życiem!"},
+  "\"행복한 삶을 영원히 누리십시오!\" 성경 공부 과정의 본문 문장이에요. 각 과의 토론 질문과 본문을 실제 발행물 그대로 5개 언어로 대조해 두었어요. 동영상 안내와 \"더 찾아보기\" 자료는 포함하지 않아요.": {"zh_cn": "「永远享受美好的生命！」圣经课程的正文。每一课的讨论问题和正文都依照原文，以5种语言对照收录。不包含影片提示和「更多精彩内容」的资料。", "zh": "「永遠享受美好的生命！」聖經課程的正文。每一課的討論問題和正文都依照原文，以5種語言對照收錄。不包含影片提示和「更多精彩內容」的資料。", "en": "The body text of the \"Enjoy Life Forever!\" Bible course. Each lesson's discussion questions and text are given exactly as published, aligned across 5 languages. Video cues and the \"Explore\" section are not included.", "fr": "Texte principal du cours biblique « Vivez pour toujours ! ». Les questions de discussion et les paragraphes de chaque leçon sont mis en regard en plusieurs langues selon la publication officielle.", "de": "Der Text des Bibelkurses „Glücklich – für immer!“. Die Diskussionsfragen und Absätze jeder Lektion sind wie in der Publikation in verschiedenen Sprachen gegenübergestellt.", "ja": "「いつまでも幸せに暮らせます！」聖書研究コースの本文です。各課の話し合いの質問と本文は、実際の出版物どおりに5つの言語で対照してあります。動画の案内と「見てみよう」の資料は含まれていません。", "pl": "Tekst główny kursu biblijnego „Już zawsze ciesz się życiem!”. Pytania do dyskusji i akapity każdej lekcji zestawiono w różnych językach zgodnie z oficjalną publikacją."},
+  "부": {"zh_cn": "部分", "zh": "部分", "en": "Part", "fr": "Partie", "de": "Teil", "ja": "部", "pl": "Część"},
+  "베트남어 문장이나 뜻으로 검색": {"zh_cn": "用越南语句子或意思搜寻", "zh": "用越南語句子或意思搜尋", "en": "Search by Vietnamese sentence or meaning", "fr": "Rechercher par phrase vietnamienne ou sens", "de": "Nach vietnamesischem Satz oder Bedeutung suchen", "ja": "ベトナム語の文や意味で検索", "pl": "Szukaj wietnamskiego zdania lub znaczenia"},
+  "나는 준비가 되었는가?": {"zh_cn": "我准备好了嗎？", "zh": "我準備好了嗎？", "en": "Am I Ready?", "fr": "Suis-je prêt ?", "de": "Bin ich bereit?", "ja": "準備はできていますか", "pl": "Czy jesteś gotowy?"},
+  "사람들을 사랑하고 제자로": {"zh_cn": "用愛心帮助人成为基督徒", "zh": "用愛心幫助人成為基督徒", "en": "Love People—Make Disciples", "fr": "Aimez les gens, faites des disciples", "de": "Menschen lieben – Jünger machen", "ja": "愛を込めて弟子を育てる", "pl": "Kochaj ludzi — pozyskuj uczniów"},
+  "\"사람들을 사랑하고 제자로 삼으십시오\" 소책자에서 뽑은 과별 대표 예문이에요. 1~12과와 부록 가·나·다에서 각 5~8개씩 골라 5개 언어로 대조해 두었어요. 전체 본문이 아니라 학습용으로 엄선한 예문이에요.": {"zh_cn": "从「用愛心帮助人成为基督徒」小册子中，每课精选5~8个代表例句，共12课加上附录A、B、C，以5种语言对照。这不是全文，而是为学习精选的例句。", "zh": "從「用愛心幫助人成為基督徒」小冊子中，每課精選5~8個代表例句，共12課加上附錄A、B、C，以5種語言對照。這不是全文，而是為學習精選的例句。", "en": "A handful of representative example sentences (5-8 per lesson) selected from the \"Love People—Make Disciples\" brochure—Lessons 1-12 plus Appendices A, B, C—aligned across 5 languages. This is a small curated selection for study, not the full text.", "fr": "Sélection de phrases d'exemple représentatives de la brochure « Aimez les gens, faites des disciples » (leçons 1 à 12 et annexes A, B, C) en plusieurs langues.", "de": "Ausgewählte Beispielsätze aus der Broschüre „Menschen lieben – Jünger machen“ (Lektionen 1–12 und Anhang A, B, C) in verschiedenen Sprachen.", "ja": "「愛を込めて弟子を育てる」小冊子から選んだ、各課の代表的な例文です。レッスン1~12と付録a・b・cから5~8個ずつ選び、5つの言語で対照してあります。全文ではなく、学習用に厳選した例文です。", "pl": "Wybrane przykładowe zdania z broszury „Kochaj ludzi — pozyskuj uczniów” (lekcje 1–12 i dodatki A, B, C) w różnych językach."},
+  "부록": {"zh_cn": "附录", "zh": "附錄", "en": "Appendix", "fr": "Annexe", "de": "Anhang", "ja": "付録", "pl": "Dodatek"},
+  "노래 선택": {"zh_cn": "选择诗歌", "zh": "選擇詩歌", "en": "Select Song", "fr": "Choisir un chant", "de": "Lied auswählen", "ja": "歌の選択", "pl": "Wybierz pieśń"},
+  "바둑판": {"zh_cn": "网格", "zh": "網格", "en": "Grid", "fr": "Grille", "de": "Kacheln", "ja": "グリッド", "pl": "Kafelki"},
+  "목록": {"zh_cn": "列表", "zh": "列表", "en": "List", "fr": "Liste", "de": "Liste", "ja": "一覧", "pl": "Lista"},
+  "곡 번호 또는 제목 검색... (예: 12 또는 사랑)": {"zh_cn": "搜寻歌曲编号或标题... (例: 12 或 愛)", "zh": "搜尋歌曲編號或標題... (例: 12 或 愛)", "en": "Search song number or title... (e.g. 12 or Love)", "fr": "Rechercher le numéro ou le titre du chant... (ex. : 12 ou Amour)", "de": "Liednummer oder Titel suchen... (z. B. 12 oder Liebe)", "ja": "番号や曲名で検索... (例: 12 または 愛)", "pl": "Szukaj numeru lub tytułu pieśni... (np. 12 lub Miłość)"},
+  "검색 결과가 없습니다.": {"zh_cn": "找不到搜寻结果。", "zh": "找不到搜尋結果。", "en": "No results found.", "fr": "Aucun résultat trouvé.", "de": "Keine Suchergebnisse.", "ja": "検索結果がありません。", "pl": "Brak wyników wyszukiwania."},
+  "닫기": {"vi": "Đóng", "zh_cn": "关闭", "zh": "關閉", "en": "Close", "fr": "Fermer", "de": "Schließen", "id": "Tutup", "ja": "閉じる", "pl": "Zamknij"},
+  "전체": {"zh_cn": "全部", "zh": "全部", "en": "All", "fr": "Tous", "de": "Alle", "ja": "すべて", "pl": "Wszystkie"},
+  "번역 언어": {"vi": "Ngôn ngữ dịch", "zh_cn": "翻译语言", "zh": "翻譯語言", "en": "Translation language", "fr": "Langue de traduction", "de": "Übersetzungssprache", "id": "Bahasa Terjemahan", "ja": "翻訳言語", "pl": "Język tłumaczenia"},
+  "이전": {"zh_cn": "上一个", "zh": "上一個", "en": "Previous", "fr": "Précédent", "de": "Zurück", "ja": "前へ", "pl": "Poprzedni"},
+  "다음": {"zh_cn": "下一个", "zh": "下一個", "en": "Next", "fr": "Suivant", "de": "Weiter", "ja": "次へ", "pl": "Następny"},
+  "왼쪽으로 이동": {"zh_cn": "向左移动", "zh": "向左移動", "en": "Move left", "fr": "Déplacer vers la gauche", "de": "Nach links verschieben", "ja": "左へ移動", "pl": "Przesuń w lewo"},
+  "오른쪽으로 이동": {"zh_cn": "向右移动", "zh": "向右移動", "en": "Move right", "fr": "Déplacer vers la droite", "de": "Nach rechts verschieben", "ja": "右へ移動", "pl": "Przesuń w prawo"},
+  "\"행복한 삶을 영원히 누리십시오!\" 교재의 엑셀 원본 자료를 그대로 옮긴 콘텐츠예요. 72개 항목(1~60과·부별 복습·미디어 자료·참조 자료 등)을 10개 언어로 대조할 수 있어요. [문장] 탭의 같은 이름 콘텐츠와는 다른, 더 완전한 원문 자료예요.": {"zh_cn": "这是「尽情享受人生！」教材Excel原始资料的完整内容，涵蓋72个项目（第1~60课、各部复习、多媒体资料、参考资料等），可对照10种语言。与[句子]分页中同名内容不同，这是更完整的原始资料。", "zh": "這是「盡情享受人生！」教材Excel原始資料的完整內容，涵蓋72個項目（第1~60課、各部複習、多媒體資料、參考資料等），可對照10種語言。與[句子]分頁中同名內容不同，這是更完整的原始資料。", "en": "The full Excel source data of the \"Enjoy Life Forever!\" course, covering all 72 items (Lessons 1–60, section reviews, media, endnotes, etc.) aligned across 10 languages. This is a more complete source than the same-named content under the [Sentence] tab.", "fr": "Les données source Excel complètes du cours « Jouissez de la vie à jamais ! », couvrant les 72 éléments (leçons 1 à 60, révisions de section, contenus multimédias, notes, etc.) alignés sur 10 langues. Il s'agit d'une source plus complète que le contenu du même nom dans l'onglet [Phrases].", "de": "Die vollständigen Excel-Quelldaten des Kurses „Genieße das Leben für immer!“ mit allen 72 Einheiten (Lektionen 1–60, Teil-Wiederholungen, Medien, Anmerkungen usw.) in 10 Sprachen. Dies ist eine vollständigere Quelle als der gleichnamige Inhalt im Tab [Sätze].", "ja": "「幸せな人生を永遠に」教材のExcel原本データをそのまま収録したコンテンツです。72項目（1～60課・各部の復習・メディア資料・参照資料など）を10言語で対照できます。［文章］タブの同名コンテンツとは異なる、より完全な原本資料です。", "pl": "Pełne dane źródłowe z arkusza Excel dla kursu „Ciesz się życiem na zawsze!”, obejmujące wszystkie 72 pozycje (lekcje 1–60, powtórki poszczególnych części, materiały multimedialne, przypisy itd.) zestawione w 10 językach. To pełniejsze źródło niż treść o tej samej nazwie w zakładce [Zdania]."}
+  };
   function TU(ko) {
     if (!ko) return ko;
     // I18N_UI entries store only {zh, en} -- the dictionary KEY itself is the Korean text, so
@@ -3737,6 +827,37 @@
   applyStaticI18n();
   onLangChange(applyStaticI18n);
 
+  // Site-specific header override: SITE_H1_BY_LANG (assemble_app.py's build_site_identity_prelude,
+  // defined before this script runs, when this site has a per-language header) must win over
+  // applyStaticI18n()'s generic data-i18n lookup above, both at boot and on every later language
+  // switch -- registered right after applyStaticI18n so it always runs last. Sites with no
+  // per-language header (e.g. jeonju) leave SITE_H1_BY_LANG undefined, so this is a no-op there
+  // and #app-title just keeps whatever apply_site_identity() already set in the static HTML.
+  function applySiteH1Override() {
+    if (typeof SITE_H1_BY_LANG === "undefined") return;
+    var h1El = document.getElementById("app-title");
+    if (!h1El) return;
+    h1El.textContent = SITE_H1_BY_LANG[currentLang] || SITE_H1_BY_LANG.ko || h1El.textContent;
+  }
+  applySiteH1Override();
+  onLangChange(applySiteH1Override);
+
+  // Profile cross-link dynamic text override: GENERAL profile cross-link switches across all 12
+  // languages, while JW profile cross-link stays fixed in Korean, and JEONJU profile has none.
+  function applySiteCrossLink() {
+    if (typeof SITE_CROSS_LINK === "undefined" || !SITE_CROSS_LINK) return;
+    var crossLinkEl = document.getElementById("site-cross-link");
+    if (!crossLinkEl) return;
+    if (SITE_CROSS_LINK.url) crossLinkEl.href = SITE_CROSS_LINK.url;
+    if (SITE_CROSS_LINK.text_by_lang) {
+      crossLinkEl.textContent = SITE_CROSS_LINK.text_by_lang[currentLang] || SITE_CROSS_LINK.text_by_lang.ko || crossLinkEl.textContent;
+    } else if (SITE_CROSS_LINK.text) {
+      crossLinkEl.textContent = SITE_CROSS_LINK.text;
+    }
+  }
+  applySiteCrossLink();
+  onLangChange(applySiteCrossLink);
+
   // Use short, readable English, German, French, and Polish names when primary tabs share a narrow row.
   // The full translation remains available to assistive technology and on wider screens.
   (function () {
@@ -3750,7 +871,9 @@
       // aggressively than cs/de/pl here so the 8-tab row still fits without horizontal scroll
       // at 320-390px (verified with Playwright; en's own long words needed a dedicated
       // body[data-app-lang="en"] font-size override elsewhere to fit, which this avoids).
-      hu: { curriculum: "Kurzus", pron: "Kiejt.", bible: "Biblia", wizard: "Beszéd", vocab: "Szavak", sentence: "Mondat", grammar: "Nytan", review: "Ism." }
+      hu: { curriculum: "Kurzus", pron: "Kiejt.", bible: "Biblia", wizard: "Beszéd", vocab: "Szavak", sentence: "Mondat", grammar: "Nytan", review: "Ism." },
+      id: { curriculum: "Kursus", pron: "Lafal", bible: "Alkitab", wizard: "Dialog", vocab: "Kata", sentence: "Kalimat", grammar: "Tata B.", review: "Ulas" },
+      vi: { curriculum: "Bài học", pron: "Phát âm", bible: "K.Thánh", wizard: "H.Thoại", vocab: "Từ vựng", sentence: "Mẫu câu", grammar: "Ngữ pháp", review: "Ôn tập" }
     };
     var shortReviewByLang = {
       en: { song: "Songs", pron: "Phonics", bible: "Bible", wizard: "Talks", vocab: "Words", sentence: "Clauses", grammar: "Usage" },
@@ -3758,7 +881,9 @@
       fr: { song: "Chants", pron: "Sons", bible: "Bible", wizard: "Dialog", vocab: "Mots", sentence: "Phrase", grammar: "Gramm." },
       pl: { song: "Pieśni", pron: "Wymowa", bible: "Biblia", wizard: "Rozm.", vocab: "Słowa", sentence: "Zdanie", grammar: "Gram." },
       cs: { song: "Písně", pron: "Výsl.", bible: "Bible", wizard: "Dialog", vocab: "Slova", sentence: "Věta", grammar: "Gram." },
-      hu: { song: "Dalok", pron: "Kiejt.", bible: "Biblia", wizard: "Beszéd", vocab: "Szavak", sentence: "Mondat", grammar: "Nytan" }
+      hu: { song: "Dalok", pron: "Kiejt.", bible: "Biblia", wizard: "Beszéd", vocab: "Szavak", sentence: "Mondat", grammar: "Nytan" },
+      id: { song: "Lagu", pron: "Lafal", bible: "Alkitab", wizard: "Dialog", vocab: "Kata", sentence: "Kalimat", grammar: "Tata B." },
+      vi: { song: "Bài hát", pron: "Phát âm", bible: "K.Thánh", wizard: "H.Thoại", vocab: "Từ vựng", sentence: "Mẫu câu", grammar: "Ngữ pháp" }
     };
     // shortNamesByLang/shortReviewByLang below are keyed by tab id ("bible", "curriculum", ...),
     // not by the button's current data-i18n text, and assume each id always carries its
@@ -3770,7 +895,7 @@
     // silently re-injecting the stale hardcoded short label.
     var ORIGINAL_I18N_KEY = { bible: "성경", curriculum: "교과" };
     function syncPrimaryTabLabels() {
-      var compact = (currentLang === "en" || currentLang === "de" || currentLang === "fr" || currentLang === "pl" || currentLang === "cs" || currentLang === "hu") && window.innerWidth < 1000;
+      var compact = (currentLang === "en" || currentLang === "de" || currentLang === "fr" || currentLang === "pl" || currentLang === "cs" || currentLang === "hu" || currentLang === "id" || currentLang === "vi") && window.innerWidth < 1000;
       var shortMap = shortNamesByLang[currentLang] || {};
       document.querySelectorAll(".tabs .tab-btn").forEach(function (btn) {
         var fullName = TU(btn.getAttribute("data-i18n"));
@@ -3819,7 +944,7 @@
     sync(currentLang);
     document.documentElement.setAttribute(
       "lang",
-      currentLang === "ko" ? "ko" : currentLang === "zh" ? "zh-Hant" : currentLang === "ja" ? "ja" : currentLang === "de" ? "de" : currentLang === "fr" ? "fr" : currentLang === "pl" ? "pl" : currentLang === "cs" ? "cs" : currentLang === "hu" ? "hu" : "en"
+      currentLang === "vi" ? "vi" : currentLang === "cs" ? "cs" : currentLang === "zh_cn" ? "zh-Hans" : currentLang === "zh" ? "zh-Hant" : currentLang === "en" ? "en" : currentLang === "fr" ? "fr" : currentLang === "de" ? "de" : currentLang === "hu" ? "hu" : currentLang === "id" ? "id" : currentLang === "ja" ? "ja" : currentLang === "ko" ? "ko" : currentLang === "pl" ? "pl" : "en"
     );
     if (document.body) document.body.setAttribute("data-app-lang", currentLang);
     onLangChange(sync);
@@ -4371,7 +1496,7 @@
   // behavior.
   var selectedLangVoiceURI = {};
   var availableLangVoices = [];
-  var LANG_BCP47_PREFIX = { ko: "ko", zh: "zh", en: "en", ja: "ja" };
+  var LANG_BCP47_PREFIX = { vi: "vi", cs: "cs", zh_cn: "zh", zh: "zh", en: "en", fr: "fr", de: "de", hu: "hu", id: "id", ja: "ja", ko: "ko", pl: "pl" };
 
   // Apple's iOS/macOS "novelty" voices (Eddy, Flo, Grandma, Grandpa, Reed, Rocko, Sandy, Shelley)
   // apply cartoonish pitch/rate effects that make them unsuitable for reading study content aloud,
@@ -4966,7 +2091,7 @@
     try { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); } catch (e) { /* no-op */ }
   }
 
-  var READALL_LANG_TAG = { ko: "ko-KR", zh: "zh-TW", en: "en-US", ja: "ja-JP" };
+  var READALL_LANG_TAG = { vi: "vi-VN", cs: "cs-CZ", zh_cn: "zh-CN", zh: "zh-TW", en: "en-US", fr: "fr-FR", de: "de-DE", hu: "hu-HU", id: "id-ID", ja: "ja-JP", ko: "ko-KR", pl: "pl-PL" };
 
   function playReadAllNext(token) {
     if (token !== readAllState.token) return; // a newer sequence (or a stop) superseded this one
@@ -6500,14 +3625,27 @@
     html += '<div class="theo-list">';
     slice.forEach(function (w) {
       var mean = getWordMeaning(w);
-      html += '<div class="bible-item"><div class="bible-body">' +
-        '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">' +
-        '<span class="bible-word vn font-bold">' + escapeHtml(w.vi) + '</span>' +
-        (typeof w.frequency === "number" && w.frequency > 0 ? '<span class="word-freq-badge" title="' + TU("등장 빈도") + '">' + TU("빈도: ") + w.frequency + '</span>' : '') +
-        '<div style="display:inline-flex;gap:4px;flex-wrap:wrap">' +
-        (w.tags || []).map(function (t) { return '<span class="word-tag-pill">' + escapeHtml(TU(t)) + '</span>'; }).join('') +
-        '</div></div>' +
-        '<div class="bible-mean">' + escapeHtml(mean) + '</div>';
+        var jwFreqHtml = '';
+        if (typeof JW_EXTRACTION_DATA !== "undefined" && JW_EXTRACTION_DATA && JW_EXTRACTION_DATA.vocabFrequencies) {
+          var jf = JW_EXTRACTION_DATA.vocabFrequencies[w.vi.toLowerCase()] || JW_EXTRACTION_DATA.vocabFrequencies[w.vi];
+          if (jf && jf.totalOccurrences > 0) {
+            jwFreqHtml += '<span class="jw-freq-badge" title="' + TU("JW 출처 빈도") + '">JW ' + jf.totalOccurrences + '회</span>';
+            if (jf.bySourceType) {
+              if (jf.bySourceType.watchtower) jwFreqHtml += '<span class="source-pill source-pill-wt" title="' + TU("파수대") + '">WT ' + jf.bySourceType.watchtower + '</span>';
+              if (jf.bySourceType.songs) jwFreqHtml += '<span class="source-pill source-pill-song" title="' + TU("노래") + '">노래 ' + jf.bySourceType.songs + '</span>';
+              if (jf.bySourceType.enjoyLifeForever) jwFreqHtml += '<span class="source-pill source-pill-elf" title="' + TU("영원히") + '">영원히 ' + jf.bySourceType.enjoyLifeForever + '</span>';
+            }
+          }
+        }
+        html += '<div class="bible-item"><div class="bible-body">' +
+          '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">' +
+          '<span class="bible-word vn font-bold">' + escapeHtml(w.vi) + '</span>' +
+          (typeof w.frequency === "number" && w.frequency > 0 ? '<span class="word-freq-badge" title="' + TU("등장 빈도") + '">' + TU("빈도: ") + w.frequency + '</span>' : '') +
+          jwFreqHtml +
+          '<div style="display:inline-flex;gap:4px;flex-wrap:wrap">' +
+          (w.tags || []).map(function (t) { return '<span class="word-tag-pill">' + escapeHtml(TU(t)) + '</span>'; }).join('') +
+          '</div></div>' +
+          '<div class="bible-mean">' + escapeHtml(mean) + '</div>';
 
       if (w.antonym) {
         var antMean = getAntonymMeaning(w);
@@ -7046,6 +4184,26 @@
         });
         if (pat.source) {
           a1a2Html += '<div class="culture-source" style="margin-top:6px;font-size:0.78rem;color:var(--ink-muted);">' + escapeHtml(pat.source.file) + ' p.' + pat.source.page + '</div>';
+        }
+        if (typeof JW_EXTRACTION_DATA !== "undefined" && JW_EXTRACTION_DATA && JW_EXTRACTION_DATA.grammarExamples) {
+          var jwExs = JW_EXTRACTION_DATA.grammarExamples[pat.pattern] || (pat.id && JW_EXTRACTION_DATA.grammarExamples[pat.id]);
+          if (jwExs && jwExs.length) {
+            a1a2Html += '<div class="jw-grammar-ex-section"><div class="jw-grammar-ex-title">' +
+              '<span class="source-pill source-pill-wt">JW</span> ' + TU("실제 출처 예문") + ' (' + jwExs.length + ')' +
+              '</div>';
+            jwExs.slice(0, 3).forEach(function (jwe) {
+              var trText = jwe.translations ? (jwe.translations[currentLang] || jwe.translations.ko || jwe.translations.en || '') : '';
+              var srcLabel = jwe.sourceLabel || jwe.sourceType || '';
+              a1a2Html += '<div class="jw-grammar-ex-row">' +
+                '<div style="display:flex;align-items:center;justify-content:space-between;gap:6px;">' +
+                '<span class="jw-grammar-ex-vi vn font-bold">' + escapeHtml(jwe.vi) + '</span>' +
+                '<span class="source-pill" style="font-size:0.65rem;">' + escapeHtml(srcLabel) + '</span>' +
+                '</div>' +
+                (trText ? '<div class="jw-grammar-ex-trans">' + escapeHtml(trText) + '</div>' : '') +
+                '</div>';
+            });
+            a1a2Html += '</div>';
+          }
         }
         a1a2Html += '</div></div></div>';
       });
@@ -8229,7 +5387,7 @@
   // (no cs/hu/zh_cn/id), so translation language here is a separate, panel-local selector/localStorage
   // key rather than reusing currentLang -- UI chrome (buttons, empty-state text) still follows the
   // site-wide currentLang via TU(), only the row content follows this local picker.
-  var LFF2_LANGS = ["ko", "zh", "en", "ja", "de", "fr", "pl", "cs", "hu", "zh_cn", "id"];
+  var LFF2_LANGS = ["cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko", "pl"];
   var LFF2_STORAGE_KEY = "vn-app-lff2-v1";
   var lff2State = { lang: null, unitId: null };
   (function loadLff2State() {
@@ -8256,17 +5414,18 @@
     { part: 4, startId: 54, endId: 72 }
   ];
   var LFF2_PART_LABEL_FN = {
-    ko: function (n) { return "제" + n + "부"; },
+    vi: function (n) { return "Phần " + n; },
+    cs: function (n) { return "Část " + n; },
+    zh_cn: function (n) { return "第" + n + "部"; },
     zh: function (n) { return "第" + n + "部"; },
     en: function (n) { return "Part " + n; },
-    ja: function (n) { return "第" + n + "部"; },
-    de: function (n) { return "Teil " + n; },
     fr: function (n) { return "Partie " + n; },
-    pl: function (n) { return "Część " + n; },
-    cs: function (n) { return "Část " + n; },
+    de: function (n) { return "Teil " + n; },
     hu: function (n) { return n + ". rész"; },
-    zh_cn: function (n) { return "第" + n + "部"; },
-    id: function (n) { return "Bagian " + n; }
+    id: function (n) { return "Bagian " + n; },
+    ja: function (n) { return "第" + n + "部"; },
+    ko: function (n) { return "제" + n + "부"; },
+    pl: function (n) { return "Część " + n; }
   };
   function lff2PartLabel(n) {
     return (LFF2_PART_LABEL_FN[lff2State.lang] || LFF2_PART_LABEL_FN.ko)(n);
@@ -8678,7 +5837,7 @@
           { vi: '(Đọc Lu-ca 1:1, 3; 3:1, 2).', ko: '(누가복음 1:3; 3:1, 2 을 읽어 보세요.)', zh: '（請讀路加福音1:1，3；3:1，2。）', en: '(Read Luke 1:1, 3; 3:1, 2.)', ja: '（ルカ1:1，3；3:1，2を読む。）' },
           { vi: 'Nhiều sử gia và nhà khảo cổ đã xác nhận rằng những ngày tháng, nhân vật, nơi chốn và sự kiện quan trọng được ghi lại trong Kinh Thánh là chính xác.', ko: '많은 역사가들과 고고학자들은 성경에 나오는 중요한 날짜, 인물, 장소, 사건이 정확하다는 것을 확증해 줍니다.', zh: '許多歷史家和考古學家都證實，聖經記載的重要年代、人物、地點和事件都很準確。', en: 'Many historians and archaeologists have confirmed that the important dates, people, places, and events recorded in the Bible are accurate.', ja: '聖書に記されている年代，人物，場所，出来事が正確だということを，多くの歴史家や考古学者が認めています。' }
         );
-      } else if (line.vi.indexOf('Kinh Thánh có những lời tiên tri a báo trước') === 0) {
+      } else if (line.vi.indexOf('Kinh Thánh có những lời tiên tri báo trước') === 0) {
         out.push(
           { vi: 'Kinh Thánh có những lời tiên tri báo trước “việc chưa làm”, tức việc chưa xảy ra.', ko: '성경에는 “아직 이루어지지 않은 일들” 을 미리 알려 주는 예언들이 들어 있습니다.', zh: '聖經有預言能預先說明「未來還沒有發生的事」。', en: 'The Bible contains prophecies that foretell “things not yet done,” that is, things that have not yet happened.', ja: '聖書には，まだ起きていない「将来の事柄」を前もって伝える預言があります。' },
           { vi: '(Ê-sai 46:10)', ko: '(이사야 46:10)', zh: '（以賽亞書46:10）', en: '(Isaiah 46:10)', ja: '（イザヤ46:10）' },
@@ -9348,6 +6507,26 @@
       g.examples.forEach(function (e) {
         html += '<div class="curr-ex-row"><span class="vi">' + escapeHtml(e.vi) + '</span><span class="kr">' + escapeHtml(T(e.kr)) + '</span></div>';
       });
+      if (typeof JW_EXTRACTION_DATA !== "undefined" && JW_EXTRACTION_DATA && JW_EXTRACTION_DATA.grammarExamples) {
+        var jwExs = JW_EXTRACTION_DATA.grammarExamples[g.headword];
+        if (jwExs && jwExs.length) {
+          html += '<div class="jw-grammar-ex-section"><div class="jw-grammar-ex-title">' +
+            '<span class="source-pill source-pill-wt">JW</span> ' + TU("실제 출처 예문") + ' (' + jwExs.length + ')' +
+            '</div>';
+          jwExs.slice(0, 3).forEach(function (jwe) {
+            var trText = jwe.translations ? (jwe.translations[currentLang] || jwe.translations.ko || jwe.translations.en || '') : '';
+            var srcLabel = jwe.sourceLabel || jwe.sourceType || '';
+            html += '<div class="jw-grammar-ex-row">' +
+              '<div style="display:flex;align-items:center;justify-content:space-between;gap:6px;">' +
+              '<span class="jw-grammar-ex-vi vn font-bold">' + escapeHtml(jwe.vi) + '</span>' +
+              '<span class="source-pill" style="font-size:0.65rem;">' + escapeHtml(srcLabel) + '</span>' +
+              '</div>' +
+              (trText ? '<div class="jw-grammar-ex-trans">' + escapeHtml(trText) + '</div>' : '') +
+              '</div>';
+          });
+          html += '</div>';
+        }
+      }
       html += '</div></div>';
     });
     html += '</div>';

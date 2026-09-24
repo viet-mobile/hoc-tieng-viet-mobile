@@ -1,6 +1,6 @@
 // Regenerated 2026-09-23 from Songs(7).xlsx (hoc_tieng_viet_mobile_excel_json_2026-09-23.zip,
 // songs_data.json, sha256 verified against its own manifest.json). All 12 languages
-// (vi, ko, zh, en, ja, de, fr, pl, cs, hu, zh_cn, id) now come directly from this single
+// (vi, cs, zh_cn, zh, en, fr, de, hu, id, ja, ko, pl) now come directly from this single
 // source, row-aligned -- ja is no longer treated as a special hand-post-processed case; the
 // corrected Excel already carries ja row-for-row with the other 11 languages.
 // Build-time cleanup (source JSON itself left untouched): sheet 76 had a fully-blank trailing row (row 44) dropped before slicing label/title/scripture/lines/reference, so the real reference line

@@ -47,23 +47,31 @@ def apply_site_identity(html_text, site):
         f'<h1 id="app-title" data-i18n="{info["h1"]}">{info["h1"]}</h1>',
         1,
     )
-    # A small marker + post-load override: app_logic.js's own TITLE_BY_LANG (shared across all
-    # three sites) sets document.title per UI language independently of the static <title> above
-    # -- rather than forking that large shared file per site, restore this site's own title/h1
-    # right after app_logic.js runs, and expose SITE_PROFILE for any future per-site JS behavior.
-    marker = (
-        f'<script>window.SITE_PROFILE = "{site}"; window.SITE_HOST = "{info["host"]}";'
-        f'document.title = {json.dumps(info["title"])};'
-        f'var __h1 = document.getElementById("app-title"); if (__h1) __h1.textContent = {json.dumps(info["h1"])};'
-        f'</script>'
-    )
-    # Appended at the very end of the document (rather than spliced in right after
-    # __APP_JS__'s own <script> tag) because by the time this runs, __APP_JS__ has already been
-    # substituted with the real app_logic.js text, so that placeholder string no longer exists to
-    # anchor on. Scripts execute in document order, so appending last still guarantees this runs
-    # after app_logic.js's own boot-time `document.title = TITLE_BY_LANG[currentLang]` call, which
-    # is what makes this override effective.
-    return out + "\n" + marker + "\n"
+    # The static <meta ...content="..."> variants share the same baseline placeholder text as
+    # <title> in the template; keep them in sync with this site's own title instead of leaving
+    # every profile showing the generic (JW-baseline) description.
+    baseline_meta = "베트남어 학습반 · 越南語學習班 · Vietnamese Language Course · ベトナム語訓練コース"
+    for meta_tag in (
+        f'<meta name="description" content="{baseline_meta}">',
+        f'<meta property="og:description" content="{baseline_meta}">',
+        f'<meta name="twitter:description" content="{baseline_meta}">',
+    ):
+        out = out.replace(meta_tag, meta_tag.replace(baseline_meta, info["title"]), 1)
+    # Cross-site profile link (GENERAL -> JW, JW -> JEONJU; omitted for JEONJU)
+    if info.get("cross_link"):
+        link_info = info["cross_link"]
+        url = link_info["url"]
+        initial_text = link_info["text_by_lang"]["ko"] if "text_by_lang" in link_info else link_info["text"]
+        cross_link_markup = (
+            f'<div class="site-cross-link-wrap">'
+            f'<a id="site-cross-link" class="site-cross-link" href="{url}">{initial_text}</a>'
+            f'</div>'
+        )
+        out = out.replace("<!-- __SITE_CROSS_LINK__ -->", cross_link_markup, 1)
+    else:
+        out = out.replace("<!-- __SITE_CROSS_LINK__ -->", "", 1)
+    return out
+
 
 
 def build_manifest(site):
@@ -75,28 +83,36 @@ def build_manifest(site):
     return json.dumps(base, ensure_ascii=False, indent=2)
 
 
-def main():
-    from site_profiles import PRODUCTS
+def build_site_identity_prelude(site):
+    """Small standalone script inserted right before app_logic.js runs (inside the same <script>
+    tag as __APP_JS__, so it executes first), exposing this site's own per-language header/title
+    text -- if any -- as SITE_H1_BY_LANG / SITE_TITLE_BY_LANG globals. app_logic.js's TITLE_BY_LANG
+    and applySiteH1Override() prefer these when present and fall back to their own built-in
+    defaults otherwise (e.g. jeonju, which has no per-language variant and keeps a fixed header),
+    so the header and browser-tab title track the user's current UI language instead of reverting
+    to Korean after a language switch."""
+    info = SITE_TITLES[site]
+    parts = [
+        f'window.SITE_PROFILE = "{site}";',
+        f'window.SITE_HOST = "{info["host"]}";',
+    ]
+    if info.get("h1_by_lang"):
+        parts.append(f"var SITE_H1_BY_LANG = {json.dumps(info['h1_by_lang'], ensure_ascii=False)};")
+    if info.get("title_by_lang"):
+        parts.append(f"var SITE_TITLE_BY_LANG = {json.dumps(info['title_by_lang'], ensure_ascii=False)};")
+    if info.get("cross_link"):
+        parts.append(f"var SITE_CROSS_LINK = {json.dumps(info['cross_link'], ensure_ascii=False)};")
+    return "\n".join(parts)
 
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--product", choices=list(PRODUCTS.keys()), default="vietnamese",
-                         help="Learning-content language/product (only 'vietnamese' is implemented).")
-    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju"], default="jw",
-                         help="Content profile to assemble: general | jw | jeonju. --site is kept "
-                              "as an alias for --profile for backward compatibility.")
-    args = parser.parse_args()
-    if args.product != "vietnamese":
-        raise SystemExit(f"--product {args.product!r} is architecture-ready only; no data/content "
-                          f"exists for it in this repo (see site_profiles.PRODUCTS).")
-    site = args.site
 
+def assemble_site(site):
     tpl = open("template.html", encoding="utf-8").read()
     data_js_path = "data_block.js" if site == "jw" else f"data_block.{site}.js"
     data_js = open(data_js_path, encoding="utf-8").read()
     app_js = open("app_logic.js", encoding="utf-8").read()
 
     out = tpl.replace("__DATA_JS__", data_js, 1)
-    out = out.replace("__APP_JS__", app_js, 1)
+    out = out.replace("__APP_JS__", build_site_identity_prelude(site) + "\n" + app_js, 1)
 
     # GENERAL is the only slim profile -- JW and JEONJU both keep the full JW-profile HTML
     # (JEONJU = JW's complete feature set + its own event layer, not general + event).
@@ -125,6 +141,25 @@ def main():
     if removal_counts:
         print(f"[{site}] html removals:", removal_counts)
     print(f"[{site}] deployment artifact:", dist_dir / "index.html")
+
+
+def main():
+    from site_profiles import PRODUCTS
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--product", choices=list(PRODUCTS.keys()), default="vietnamese",
+                         help="Learning-content language/product (only 'vietnamese' is implemented).")
+    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju", "all"], default="all",
+                         help="Content profile to assemble: general | jw | jeonju | all (default: all). --site is kept "
+                              "as an alias for --profile for backward compatibility.")
+    args = parser.parse_args()
+    if args.product != "vietnamese":
+        raise SystemExit(f"--product {args.product!r} is architecture-ready only; no data/content "
+                          f"exists for it in this repo (see site_profiles.PRODUCTS).")
+
+    sites = ["general", "jw", "jeonju"] if args.site == "all" else [args.site]
+    for s in sites:
+        assemble_site(s)
 
 
 if __name__ == "__main__":

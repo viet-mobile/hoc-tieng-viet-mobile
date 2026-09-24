@@ -212,7 +212,7 @@
   .brand-logo { width: 56px; height: 56px; object-fit: contain; display: block; flex: none; }
   .brand h1 { font-size: 1.1rem; font-weight: 800; letter-spacing: -0.01em; }
   .lang-switch { display: flex; align-items: center; flex: none; }
-  .lang-switch-buttons { display: flex; gap: 3px; background: var(--accent-soft); border-radius: 8px 0 8px 0; padding: 3px; }
+  .lang-switch-buttons { display: flex; flex-wrap: wrap; gap: 3px; background: var(--accent-soft); border-radius: 8px 0 8px 0; padding: 3px; }
   .lang-btn {
     border: none; background: transparent; color: var(--ink-soft); font-family: inherit;
     font-size: 0.64rem; font-weight: 700; padding: 5px 6px; border-radius: 6px 0 6px 0; cursor: pointer;
@@ -236,6 +236,44 @@
   .lang-select:focus-visible { outline: 2px solid var(--accent); }
   @media (max-width: 420px) {
     .lang-btn { font-size: 0.58rem; padding: 4px 4px; }
+  }
+  /* Profile cross-site links (GENERAL -> JW, JW -> JEONJU) */
+  .site-cross-link-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 4px;
+    min-height: 28px;
+  }
+  .site-cross-link {
+    color: #1a365d;
+    font-family: var(--font-kr), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 0.82rem;
+    line-height: 1.35;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    padding: 2px 0;
+    transition: color 0.15s ease, opacity 0.15s ease;
+  }
+  .site-cross-link:hover {
+    color: #0d213f;
+  }
+  .site-cross-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  :root[data-theme="dark"] .site-cross-link {
+    color: #8bb4e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .site-cross-link {
+      color: #8bb4e7;
+    }
   }
 
   .tabbar {
@@ -2402,6 +2440,75 @@
     color: var(--accent);
     margin-right: 4px;
   }
+  .jw-freq-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.70rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 9999px;
+    background: #0284c7;
+    color: #ffffff;
+    gap: 3px;
+  }
+  .source-pill {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.68rem;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-weight: 500;
+    background: var(--surface-3, #f1f5f9);
+    color: var(--ink-muted);
+    border: 1px solid var(--border);
+  }
+  .source-pill-wt {
+    background: color-mix(in srgb, #0284c7 15%, var(--surface));
+    color: #0369a1;
+    border-color: #bae6fd;
+  }
+  .source-pill-song {
+    background: color-mix(in srgb, #d97706 15%, var(--surface));
+    color: #b45309;
+    border-color: #fde68a;
+  }
+  .source-pill-elf {
+    background: color-mix(in srgb, #16a34a 15%, var(--surface));
+    color: #15803d;
+    border-color: #bbf7d0;
+  }
+  .jw-grammar-ex-section {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-left: 3px solid #0284c7;
+    background: color-mix(in srgb, #0284c7 6%, var(--surface));
+    border-radius: 0 6px 6px 0;
+  }
+  .jw-grammar-ex-title {
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: #0284c7;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .jw-grammar-ex-row {
+    padding: 4px 0;
+    border-bottom: 1px dashed var(--border);
+    font-size: 0.85rem;
+  }
+  .jw-grammar-ex-row:last-child {
+    border-bottom: none;
+  }
+  .jw-grammar-ex-vi {
+    color: var(--ink);
+  }
+  .jw-grammar-ex-trans {
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+    margin-top: 2px;
+  }
 
   /* Culture compact cards */
   .culture-category-badge {
@@ -2488,6 +2595,7 @@
 <div class="app" data-active-tab="review">
   <div class="topbar">
     <div class="topbar-inner">
+      <!-- __SITE_CROSS_LINK__ -->
       <div class="topbar-row">
         <div class="brand-wrap">
           <div class="brand">
@@ -2497,27 +2605,33 @@
         </div>
         <div class="lang-switch" id="lang-switch" role="group" aria-label="언어 선택 / 選擇語言 / Language / Sprachauswahl / Choix de langue / Wybór języka / Výběr jazyka / Nyelvválasztás" data-i18n-aria-label="언어 선택 / 選擇語言 / Language">
           <div class="lang-switch-buttons">
-            <button type="button" class="lang-btn" data-lang="ko" aria-pressed="true" data-i18n="한국어">한국어</button>
+            <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">Tiếng Việt</button>
+            <button type="button" class="lang-btn" data-lang="cs" aria-pressed="false">Čeština</button>
+            <button type="button" class="lang-btn" data-lang="zh_cn" aria-pressed="false">简体中文</button>
             <button type="button" class="lang-btn" data-lang="zh" aria-pressed="false">繁體中文</button>
             <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">English</button>
-            <button type="button" class="lang-btn" data-lang="ja" aria-pressed="false">日本語</button>
-            <button type="button" class="lang-btn" data-lang="de" aria-pressed="false">Deutsch</button>
             <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">Français</button>
-            <button type="button" class="lang-btn" data-lang="pl" aria-pressed="false">Polski</button>
-            <button type="button" class="lang-btn" data-lang="cs" aria-pressed="false">Čeština</button>
+            <button type="button" class="lang-btn" data-lang="de" aria-pressed="false">Deutsch</button>
             <button type="button" class="lang-btn" data-lang="hu" aria-pressed="false">Magyar</button>
+            <button type="button" class="lang-btn" data-lang="id" aria-pressed="false">Indonesia</button>
+            <button type="button" class="lang-btn" data-lang="ja" aria-pressed="false">日本語</button>
+            <button type="button" class="lang-btn" data-lang="ko" aria-pressed="true" data-i18n="한국어">한국어</button>
+            <button type="button" class="lang-btn" data-lang="pl" aria-pressed="false">Polski</button>
           </div>
           <div class="lang-select-wrap">
-            <select id="lang-select" class="lang-select" aria-label="언어 선택 / 選擇語言 / Language / Sprachauswahl / Choix de langue / Wybór języka / Výběr jazyka / Nyelvválasztás">
-              <option value="ko">한국어</option>
+            <select id="lang-select" class="lang-select" aria-label="언어 선택 / 選擇語言 / Language / Sprachauswahl / Choix de langue / Wybór języka / Výběr jazyka / Nyelvválasztás / Pemilihan bahasa">
+              <option value="vi">Tiếng Việt</option>
+              <option value="cs">Čeština</option>
+              <option value="zh_cn">简体中文</option>
               <option value="zh">繁體中文</option>
               <option value="en">English</option>
-              <option value="ja">日本語</option>
-              <option value="de">Deutsch</option>
               <option value="fr">Français</option>
-              <option value="pl">Polski</option>
-              <option value="cs">Čeština</option>
+              <option value="de">Deutsch</option>
               <option value="hu">Magyar</option>
+              <option value="id">Bahasa Indonesia</option>
+              <option value="ja">日本語</option>
+              <option value="ko" selected>한국어</option>
+              <option value="pl">Polski</option>
             </select>
           </div>
         </div>

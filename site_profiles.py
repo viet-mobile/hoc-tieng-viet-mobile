@@ -48,6 +48,7 @@ JW_ONLY_CONSTS = {
                                  # for the 16-week ministry class (see CURR_ASSIGNMENTS)
     "WATCHTOWER_VOCAB",          # Watchtower Study article vocabulary
     "ENJOY_LIFE_FOREVER", "LOVE_PEOPLE_FULL", "WATCHTOWER_FULL",  # full 12-lang Excel data
+    "JW_EXTRACTION_DATA",        # JW learning extraction engine derived data (vocab frequencies, grammar examples, learning sentences)
 }
 
 # JW-only constants that are Python dict/list objects built earlier in build_app.py and always
@@ -60,6 +61,7 @@ STRUCTURED_EMPTY_SHAPES = {
     "ENJOY_LIFE_FOREVER": {"unitCount": 0, "languageOrder": [], "languages": {}, "units": []},
     "LOVE_PEOPLE_FULL": {"unitCount": 0, "languageOrder": [], "languages": {}, "units": []},
     "WATCHTOWER_FULL": {"unitCount": 0, "languageOrder": [], "languages": {}, "units": [], "skippedEmptySheets": 0},
+    "JW_EXTRACTION_DATA": None,
     # PRAYER_TEMPLATE is a dict, not a list, so empty_like()'s generic {} would still crash
     # POOL_BUILDERS.wizard's unconditional `PRAYER_TEMPLATE.lines.forEach(...)` (that pool
     # builder has no DOM-existence guard the way render functions do) -- found via an actual
@@ -101,19 +103,116 @@ GENERAL_CONSTS_NEEDING_ENTRY_FILTER = {
 
 SITE_TITLES = {
     "jw": {
-        "title": "베트남어 학습반 · 越南語學習班 · Vietnamese Language Course · ベトナム語訓練コース",
-        "h1": "베트남어 학습반",
+        "title": "JW 베트남어 학습 · JW越南語學習 · JW Vietnamese Learning · JW ベトナム語学習",
+        "h1": "JW 베트남어 학습",
         "host": "jw.hoc.tieng.viet.mobile",
+        # h1_by_lang / title_by_lang: consumed by assemble_app.py to inject a small SITE_H1_BY_LANG /
+        # SITE_TITLE_BY_LANG script before app_logic.js runs, so the header text and browser-tab
+        # title track the user's currently selected UI language (see app_logic.js's TITLE_BY_LANG
+        # override and applySiteH1Override) instead of staying fixed in Korean after a language
+        # switch. Keys match VALID_LANGS (the 12 supported UI display languages).
+        "h1_by_lang": {
+            "vi": "JW Học tiếng Việt",
+            "cs": "JW Studium vietnamštiny",
+            "zh_cn": "JW 越南语学习",
+            "zh": "JW 越南語學習",
+            "en": "JW Vietnamese Learning",
+            "fr": "JW Apprentissage du vietnamien",
+            "de": "JW Vietnamesisch lernen",
+            "hu": "JW Vietnami nyelvtanulás",
+            "id": "JW Belajar Bahasa Vietnam",
+            "ja": "JW ベトナム語学習",
+            "ko": "JW 베트남어 학습",
+            "pl": "JW Nauka wietnamskiego",
+        },
+        "title_by_lang": {
+            "vi": "JW Học tiếng Việt",
+            "cs": "JW Studium vietnamštiny",
+            "zh_cn": "JW 越南语学习",
+            "zh": "JW 越南語學習",
+            "en": "JW Vietnamese Learning",
+            "fr": "JW Apprentissage du vietnamien",
+            "de": "JW Vietnamesisch lernen",
+            "hu": "JW Vietnami nyelvtanulás",
+            "id": "JW Belajar Bahasa Vietnam",
+            "ja": "JW ベトナム語学習",
+            "ko": "JW 베트남어 학습",
+            "pl": "JW Nauka wietnamskiego",
+        },
+        "cross_link": {
+            "url": "https://jeonju.hoc.tieng.viet.mobile",
+            "text": "전주 학습반?",
+        },
     },
     "general": {
-        "title": "베트남어 공부 · 學習越南語 · Learn Vietnamese · ベトナム語学習",
-        "h1": "베트남어 공부",
+        "title": "베트남어 학습 · 越南語學習 · Learn Vietnamese · ベトナム語学習",
+        "h1": "베트남어 학습",
         "host": "hoc.tieng.viet.mobile",
+        "h1_by_lang": {
+            "vi": "Học tiếng Việt",
+            "cs": "Studium vietnamštiny",
+            "zh_cn": "越南语学习",
+            "zh": "越南語學習",
+            "en": "Vietnamese Learning",
+            "fr": "Apprentissage du vietnamien",
+            "de": "Vietnamesisch lernen",
+            "hu": "Vietnami nyelvtanulás",
+            "id": "Belajar Bahasa Vietnam",
+            "ja": "ベトナム語学習",
+            "ko": "베트남어 학습",
+            "pl": "Nauka wietnamskiego",
+        },
+        "title_by_lang": {
+            "vi": "Học tiếng Việt",
+            "cs": "Studium vietnamštiny",
+            "zh_cn": "越南语学习",
+            "zh": "越南語學習",
+            "en": "Vietnamese Learning",
+            "fr": "Apprentissage du vietnamien",
+            "de": "Vietnamesisch lernen",
+            "hu": "Vietnami nyelvtanulás",
+            "id": "Belajar Bahasa Vietnam",
+            "ja": "ベトナム語学習",
+            "ko": "베트남어 학습",
+            "pl": "Nauka wietnamskiego",
+        },
+        "cross_link": {
+            "url": "https://jw.hoc.tieng.viet.mobile",
+            "text": "JW?",
+        },
     },
     "jeonju": {
-        "title": "전주 베트남어 학습반 · Jeonju Vietnamese Class",
-        "h1": "전주 베트남어 학습반",
+        "title": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+        "h1": "2026-2027 전주 베트남어 학습반",
         "host": "jeonju.hoc.tieng.viet.mobile",
+        "h1_by_lang": {
+            "vi": "2026-2027 전주 베트남어 학습반",
+            "cs": "2026-2027 전주 베트남어 학습반",
+            "zh_cn": "2026-2027 전주 베트남어 학습반",
+            "zh": "2026-2027 전주 베트남어 학습반",
+            "en": "2026-2027 전주 베트남어 학습반",
+            "fr": "2026-2027 전주 베트남어 학습반",
+            "de": "2026-2027 전주 베트남어 학습반",
+            "hu": "2026-2027 전주 베트남어 학습반",
+            "id": "2026-2027 전주 베트남어 학습반",
+            "ja": "2026-2027 전주 베트남어 학습반",
+            "ko": "2026-2027 전주 베트남어 학습반",
+            "pl": "2026-2027 전주 베트남어 학습반",
+        },
+        "title_by_lang": {
+            "vi": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+            "cs": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+            "zh_cn": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+            "zh": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+            "en": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+            "fr": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+            "de": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+            "hu": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+            "id": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+            "ja": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+            "ko": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+            "pl": "2026-2027 전주 베트남어 학습반 · Jeonju Vietnamese Class 2026-2027",
+        },
     },
 }
 
