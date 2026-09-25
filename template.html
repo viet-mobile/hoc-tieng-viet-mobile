@@ -2224,6 +2224,35 @@
     display: inline-flex; align-items: center; justify-content: center;
   }
   html[data-site="general"] body #panel-bible > .subtab-row .subtab-btn { min-width: 0; padding-inline: 2px; font-size: clamp(.62rem, 3vw, .85rem); white-space: normal; word-break: keep-all; }
+  /* [성경][대화][어휘][문장][문법]: every visible subtab on ONE row, each 1/N of the row width (like [발음]/[복습]),
+     whatever N the profile/language leaves -- grid-auto-flow column gives one equal track per visible button.
+     Doubled class + html/body so this wins over the per-panel repeat(n)/auto-fill rules above (all profiles, all languages). */
+  html body #panel-bible > .subtab-row.subtab-row,
+  html body #panel-wizard > .subtab-row.subtab-row,
+  html body #panel-vocab > .subtab-row.subtab-row,
+  html body #panel-sentence > .subtab-row.subtab-row,
+  html body #panel-grammar > .subtab-row.subtab-row {
+    display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr);
+    flex-wrap: nowrap; overflow: visible; gap: 3px;
+  }
+  html body #panel-bible > .subtab-row.subtab-row .subtab-btn,
+  html body #panel-wizard > .subtab-row.subtab-row .subtab-btn,
+  html body #panel-vocab > .subtab-row.subtab-row .subtab-btn,
+  html body #panel-sentence > .subtab-row.subtab-row .subtab-btn,
+  html body #panel-grammar > .subtab-row.subtab-row .subtab-btn {
+    min-width: 0; width: 100%; height: auto; padding: 4px 2px;
+    line-height: 1.15; letter-spacing: -0.02em; white-space: normal; word-break: keep-all; overflow-wrap: anywhere;
+    text-align: center; display: inline-flex; align-items: center; justify-content: center;
+  }
+  @media (max-width: 699px) {
+    html body #panel-bible > .subtab-row.subtab-row .subtab-btn,
+    html body #panel-wizard > .subtab-row.subtab-row .subtab-btn,
+    html body #panel-vocab > .subtab-row.subtab-row .subtab-btn,
+    html body #panel-sentence > .subtab-row.subtab-row .subtab-btn,
+    html body #panel-grammar > .subtab-row.subtab-row .subtab-btn {
+      min-height: 34px; padding: 3px 1px; font-size: clamp(.5rem, 2.4vw, .78rem);
+    }
+  }
   /* Review Subscope Row (e.g. Watchtower week selector) */
   .review-subscope-row {
     display: flex;

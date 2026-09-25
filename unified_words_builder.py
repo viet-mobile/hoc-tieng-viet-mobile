@@ -10,6 +10,18 @@ VN_LETTERS = "a-zA-Zàáảãạăằắẳẵặâầấẩẫậèéẻẽẹ�
 BOUNDARY_PREFIX = r'(?<![' + VN_LETTERS + r'])'
 BOUNDARY_SUFFIX = r'(?![' + VN_LETTERS + r'])'
 
+# "<훈> <음>" optionally followed by one parenthetical note, e.g. "밝을 명", "모 방(방향)".
+HUN_EUM_RE = re.compile(r'^([가-힣]+(?:\s[가-힣]+)*)\s([가-힣])(\s*\([^()]*\))?$')
+
+# [단어] meanings corrected by hand (merged over whichever source supplied the word first).
+WORD_MEANING_OVERRIDES = {
+    "anh": {"ko": "꽃부리 영(英), 맏 형(兄)"},
+    "đi": {"ko": "가다", "zh": "去", "en": "to go", "ja": "行く"},
+    "có": {"ko": "(가지고) 있다"},
+    "thánh": {"ko": "거룩할 성(聖)"},
+    "minh": {"ko": "밝은 명(明)"},
+}
+
 def vi_sort_key(word):
     # Vietnamese diacritic-aware sort key
     order = "aàáảãạăằắẳẵặâầấẩẫậbcdđeèéẻẽẹêềếểễệghiìíỉĩịklmnoòóỏõọôồốổỗộơờớởỡợpqrstuùúủũụưừứửữựvxyỳýỷỹỵ"
@@ -203,6 +215,32 @@ def build_unified_words(site, basic_word_groups, freq_vocab, vocab_theo, bible_n
         if r:
             for t in w.get("tags", []):
                 r["tags"].add(t)
+
+    # 10. [단어] meaning fixes. Copy the kr dict first: get_or_create shares it with the source dataset
+    # (e.g. a RHYME_GROUPS gloss), whose own tabs must stay unchanged.
+    for vi, fix in WORD_MEANING_OVERRIDES.items():
+        rec = words_map.get(vi)
+        if rec:
+            rec["kr"] = dict(rec["kr"], **fix)
+
+    # 11. Hanja-reading meanings ("꽃부리 영", "모 방(방향)") always show their hanja: "꽃부리 영(英)", "모 방(方, 방향)".
+    # Only when the reading syllable is confirmed by the 한자음 source for that exact word + hanja.
+    rhyme_readings = set()
+    for rg in (rhyme_groups or []):
+        for fam in rg.get("families", []):
+            for w in fam.get("words", []):
+                if w.get("word") and w.get("hanja") and isinstance(w.get("kr"), str):
+                    rhyme_readings.add((w["word"].strip().lower(), w["hanja"], w["kr"]))
+    for key, rec in words_map.items():
+        ko = rec["kr"].get("ko")
+        m = isinstance(ko, str) and HUN_EUM_RE.match(ko)
+        if not m or not rec["hanja"] or (key, rec["hanja"], m.group(2)) not in rhyme_readings:
+            continue
+        rest = m.group(3)
+        if rest and re.search(r'[㐀-鿿]', rest):
+            continue
+        suffix = "(" + rec["hanja"] + (", " + rest.strip()[1:-1] if rest else "") + ")"
+        rec["kr"] = dict(rec["kr"], ko=m.group(1) + " " + m.group(2) + suffix)
 
     # Compile word records
     result = []
