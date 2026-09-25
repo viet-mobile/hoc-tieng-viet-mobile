@@ -2048,6 +2048,8 @@
     if (!text) return text;
     var t = expandScriptureVersesForSpeech(stripHanjaParensForSpeech(stripSlashForSpeech(String(text).trim())));
     if (currentLang === "ko") {
+      // Force the correct 된소리 reading for 영적 in Korean TTS; the displayed text remains unchanged.
+      t = t.replace(/영적/g, "영쩍");
       // Age/generation counters ("10대", "20대" etc.) are read Sino-Korean ("십대", "이십대"),
       // not native-Korean ("열 대").
       t = t.replace(/(\d+)대/g, function (m, n) { return sinoKoreanNumber(n) + "대"; });
@@ -4330,7 +4332,7 @@
   }
 
   var wordsSortByFrequency = false;
-  var WORD_TAG_CLASS = { "상용": "tag-freq", "한자음": "tag-sino", "신권": "tag-theo", "어순반대": "tag-reversed", "동일음": "tag-homo" };
+  var WORD_TAG_CLASS = { "기본": "tag-base", "상용": "tag-freq", "한자음": "tag-sino", "신권": "tag-theo", "어순반대": "tag-reversed", "동일음": "tag-homo", "반의": "tag-antonym", "PDF": "tag-pdf" };
   // The internal "PDF" tag (words from the everyday-conversation PDF books) is shown as [일상회화].
   function wordTagLabel(t) { return TU(t === "PDF" ? "일상회화" : t); }
   function renderVocabWords(root, q) {
@@ -8483,6 +8485,11 @@ function verifyDistribution(units, dist, pins) {
       if (lessonMatch) {
         return (lessonMatch[1] === "lff" ? "행누 " : "랑제 ") + lessonMatch[2] + (currentLang === "en" ? "" : "과");
       }
+      var lffPartMatch = scope && scope.match(/^lffpart:(\d)$/);
+      if (lffPartMatch) {
+        var ranges = { "1": "제1부:1~12과", "2": "제2부:13~33과", "3": "제3부:34~47과", "4": "제4부:48~60과" };
+        return currentLang === "en" ? "Part " + lffPartMatch[1] : ranges[lffPartMatch[1]];
+      }
       var m = scope && scope.match(/^(\d+)-(\d+)$/);
       if (m) {
         var s1 = m[1], s2 = m[2];
@@ -8886,8 +8893,8 @@ function verifyDistribution(units, dist, pins) {
     function renderReviewSubscope(key, selectedScope) {
       if (!reviewSubscopeEl) return;
       var isWt = (key === "sentence" && (selectedScope === "wt" || (selectedScope && selectedScope.indexOf("wt:") === 0)));
-      var isLff = (key === "sentence" && selectedScope === "lff");
-      var isLpd = (key === "sentence" && selectedScope === "lpd");
+      var isLff = (key === "sentence" && (selectedScope === "lff" || (selectedScope && selectedScope.indexOf("lffpart:") === 0)));
+      var isLpd = (key === "sentence" && (selectedScope === "lpd" || (selectedScope && selectedScope.indexOf("lpd:") === 0)));
       if (!isWt && !isLff && !isLpd) {
         reviewSubscopeEl.style.display = "none";
         reviewSubscopeEl.innerHTML = "";
@@ -8897,7 +8904,7 @@ function verifyDistribution(units, dist, pins) {
         var activePart = selectedScope && selectedScope.indexOf("lffpart:") === 0 ? parseInt(selectedScope.slice(8), 10) : 0;
         var lffOptions = '<option value="lff"' + (activePart === 0 ? ' selected' : '') + '>' + escapeHtml(TU("전체")) + '</option>';
         [1, 2, 3, 4].forEach(function (part) {
-          lffOptions += '<option value="lffpart:' + part + '"' + (activePart === part ? ' selected' : '') + '>' + escapeHtml((currentLang === "en" ? "Part " : "제") + part + (currentLang === "en" ? "" : "부")) + '</option>';
+          lffOptions += '<option value="lffpart:' + part + '"' + (activePart === part ? ' selected' : '') + '>' + escapeHtml(reviewScopeLabel("lffpart:" + part)) + '</option>';
         });
         reviewSubscopeEl.style.display = "flex";
         reviewSubscopeEl.innerHTML = '<select id="review-lff-part-select" class="review-subscope-select" aria-label="' + TU("행누 책 부 선택") + '">' + lffOptions + '</select>';
@@ -8978,7 +8985,7 @@ function verifyDistribution(units, dist, pins) {
       // forking REVIEW_SCOPES per profile: a scope only appears if its own subtab button still
       // exists somewhere in the document (or it's the always-present "all").
       scopes = scopes.filter(function (s) {
-        return s === "all" || s === "wt" || s.indexOf("lff:") === 0 || s.indexOf("lpd:") === 0 || /^\d+$/.test(s) || !!document.querySelector('[data-' + key + '="' + s + '"]');
+        return s === "all" || s === "wt" || s.indexOf("lff:") === 0 || s.indexOf("lpd:") === 0 || /^\d+(?:-\d+)?$/.test(s) || !!document.querySelector('[data-' + key + '="' + s + '"]');
       });
       reviewScopeEl.dataset.scopeCategory = key;
       if (key === "song") {
@@ -8992,7 +8999,8 @@ function verifyDistribution(units, dist, pins) {
         renderReviewSubscope(key, selectedScope);
         return;
       }
-      var selectedScopes = Array.isArray(selectedScope) ? selectedScope : [selectedScope || "all"];
+      var categoryScope = selectedScope && selectedScope.indexOf("lffpart:") === 0 ? "lff" : (selectedScope && selectedScope.indexOf("lpd:") === 0 ? "lpd" : selectedScope);
+      var selectedScopes = Array.isArray(categoryScope) ? categoryScope : [categoryScope || "all"];
       reviewScopeEl.innerHTML = scopes.map(function (scope) {
         var isSelected = selectedScopes.indexOf(scope) >= 0 || (scope === "wt" && selectedScopes.some(function (s) { return s && s.indexOf("wt:") === 0; }));
         return '<button type="button" class="subtab-btn" data-review-scope="' + escapeAttr(scope) +
