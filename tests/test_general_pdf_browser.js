@@ -26,6 +26,9 @@ async function main() {
     await cdp.send('Emulation.setDeviceMetricsOverride', {width: 390, height: 844, deviceScaleFactor: 1, mobile: true});
     const errors = [];
     cdp.on('Runtime.exceptionThrown', e => errors.push(e.exceptionDetails.text));
+    cdp.on('Runtime.consoleAPICalled', e => {
+      if (e.type === 'error') errors.push(e.args.map(a => a.value || a.description).join(' '));
+    });
     for (const site of ['general', 'jw', 'jeonju', 'ulsan']) {
       await cdp.send('Page.navigate', {url: 'http://127.0.0.1:8093/' + (site === 'general' ? '' : site + '/') + 'index.html'});
       let ready = false;
@@ -37,6 +40,7 @@ async function main() {
       assert(ready, site + ': page did not initialize');
       console.log(site);
       await verify(cdp, site);
+      await require('./helpers/localization_handoff_browser')(cdp, site);
     }
     assert.deepStrictEqual(errors, []);
   } finally {

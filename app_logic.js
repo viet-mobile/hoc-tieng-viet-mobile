@@ -1,16 +1,10 @@
 (function () {
   "use strict";
 
-  /* ---------------- language switching (ko / zh-TW / en / ja / de / fr / pl / cs / hu) ---------------- */
-  // currentLang drives which translation is shown for any {ko,zh,en,ja,de,fr,pl,cs,hu}-shaped
-  // content field. Content not yet converted to that shape is left as a plain string, and T()
-  // below returns it unchanged in every language -- this lets the multi-language rollout happen
-  // field-by-field across the app without ever breaking anything not yet converted.
-  // NOTE: cs/hu are common-infrastructure-only for now (this switch, the UI dictionary fallback
-  // chain, html lang, system-language detection, path entry points, compact mobile tab labels).
-  // No I18N_UI dictionary entries or content-data cs/hu fields have been added yet -- until they
-  // are, cs/hu mode falls back to Korean throughout the app via T()/TU()'s existing fallback
-  // chains, exactly like a not-yet-translated field does in any other language mode.
+  /* ---------------- 12-language switching ---------------- */
+  // currentLang selects the exact language key of multilingual learning fields.
+  // T() preserves plain source strings/annotations; Tstrict() excludes unlocalized
+  // plain-string meanings from non-Korean review pools.
   var VALID_LANGS = ["vi", "cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko", "pl"];
   // With no saved preference yet (first visit, or localStorage unavailable), use the
   // device/browser's system language: Korean -> ko, Chinese -> zh, Japanese -> ja, German -> de,
@@ -97,14 +91,9 @@
     pl: "Nauka wietnamskiego"
   };
   try { document.title = TITLE_BY_LANG[currentLang] || document.title; } catch (e) { /* no-op */ }
-  // Languages added after most curated (non-Excel-full) datasets were authored -- those datasets
-  // only ever have ko/vi/zh/en/ja fields, so a plain field[currentLang] lookup always misses for
-  // these 5 and used to fall through to field.ko, silently showing Korean as if it were the
-  // selected language's translation. T() still falls back to ko for the *original* 4 (zh/en/ja
-  // missing a single field within an otherwise-covered object, e.g. some LFF_CONVERSATIONS
-  // lines), since that gap is a real, isolated content omission rather than "this language was
-  // never supported here."
-  var T_EXTENDED_LANGS_NO_FALLBACK = ["vi", "cs", "zh_cn", "fr", "de", "hu", "id", "pl"];
+  // Missing learning translations stay empty in every non-Korean language.
+  // Traditional and Simplified Chinese never substitute for each other.
+  // Plain strings may be source text or pronunciation annotations; preserve them here.
   function T(field) {
     if (field === null || field === undefined) return field;
     if (typeof field === "string") return field;
@@ -113,17 +102,9 @@
     // raw null through. Only a genuinely *missing* key (undefined) falls through below.
     var v = field[currentLang];
     if (v !== undefined) return v || "";
-    if (T_EXTENDED_LANGS_NO_FALLBACK.indexOf(currentLang) >= 0) return "";
+    if (currentLang !== "ko") return "";
     return field.ko || field.cs || field.zh_cn || field.zh || field.en || field.fr || field.de || field.hu || field.id || field.ja || field.pl || "";
   }
-  // T()'s graceful Korean fallback is exactly right for CONTENT DISPLAY (an untranslated field
-  // should still show something rather than go blank), but it's wrong for review pools: a field
-  // that has no zh/en/ja/de/fr/pl/cs/hu entry yet (e.g. some LFF_CONVERSATIONS lines are missing
-  // 'zh' entirely) would otherwise offer a Korean-language flashcard/multiple-choice option while
-  // the UI is in a non-Korean mode. Tstrict() returns null instead of silently falling back to a
-  // different language, so review-pool builders can skip that item in this language rather than
-  // leak it. ko itself is always "available" (either field.ko or, for not-yet-multilingual
-  // content, the plain string IS the Korean text).
   // Shared by the "group-card" title header markup (LFF/daily/neighbor conversations): the
   // "· <translation>" suffix after the Vietnamese title. Now that T() can return "" for a
   // language a curated (non-Excel-full) dataset never covers, this keeps that gap from showing
@@ -133,6 +114,7 @@
     return tr ? ' <span class="lff-title-translation">· ' + escapeHtml(tr) + '</span>' : '';
   }
   function Tstrict(field) {
+    // Review also rejects unlocalized plain-string meanings outside Korean.
     if (field === null || field === undefined) return null;
     if (typeof field === "string") return currentLang === "ko" ? field : null;
     // A present-but-empty "ko" means "no Korean translation" (never substitute another language for it).
@@ -6632,8 +6614,8 @@ function verifyDistribution(units, dist, pins) {
 
   // "대화 > 일상 회화" -- DAILY_CONVERSATIONS holds 21 real dialogues from "베트남어 일상 회화"
   // (lessons 1-13), vi/ko verbatim from the textbook (both languages are printed side by side in
-  // the source) with zh/en/ja added as natural conversational translations. Only 5 languages (no
-  // de/fr/pl/cs/hu yet).
+  // the source) with zh/en/ja added as natural conversational translations.
+  // Missing languages are filled by the separately tagged AI layer.
   //
   // "who" is just another T()-shaped field, no special-casing needed: role titles ("Bác sĩ",
   // "Người phục vụ", ...) have real ko/zh/en/ja translations that a plain lookup returns
@@ -6660,7 +6642,7 @@ function verifyDistribution(units, dist, pins) {
     var html = "";
     // In Vietnamese mode a record's own `vi` is the sentence itself, not a translation of it -- show no meaning line
     // (the pronoun-adapted Vietnamese above it is the text) rather than repeating the unadapted source sentence.
-    function dailyMeaning(field) { return currentLang === "vi" ? "" : T(field); }
+    function dailyMeaning(field) { return currentLang === "vi" ? "" : (Tstrict(field) || ""); }
     DAILY_CONVERSATIONS.forEach(function (conv, ci) {
       var turns = conv.turns.map(function (t) { return { who: t.who, vi: applyDailyPronouns(conv, t), kr: dailyMeaning(t) }; });
       var vocab = (conv.vocab || []).map(function (v) { return { vi: v.vi, kr: dailyMeaning(v) }; });
@@ -6695,7 +6677,7 @@ function verifyDistribution(units, dist, pins) {
             '<span class="m">' + escapeHtml(v.kr) + '</span></div>';
         });
       }
-      html += '</div></div>';
+      html += '</div></div></div>';
     });
     if (q && !html) html = '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
     root.innerHTML = html;
@@ -8488,7 +8470,7 @@ function verifyDistribution(units, dist, pins) {
         });
         // 일상 회화 (21 general dialogues, shared by all profiles) contributes its lines too.
         DAILY_CONVERSATIONS.forEach(function (conv) {
-          conv.turns.forEach(function (t) { if (t.vi) addSentencePairs(out, t.vi, Tstrict(t)); });
+          conv.turns.forEach(function (t) { if (t.vi) addSentencePairs(out, applyDailyPronouns(conv, t), Tstrict(t)); });
         });
         return dedupeByVi(out);
       },
