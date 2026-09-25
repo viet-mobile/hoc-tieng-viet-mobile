@@ -8445,16 +8445,12 @@ function verifyDistribution(units, dist, pins) {
       songs.forEach(function (s) { if (s.number > maxNum) maxNum = s.number; });
       if (!maxNum) maxNum = songs.length || 163;
       var scopes = ["all"];
-      for (var number = 1; number <= maxNum; number++) scopes.push(String(number));
+      for (var start = 1; start <= maxNum; start += 20) scopes.push(start + "-" + Math.min(start + 19, maxNum));
       return scopes;
     }
 
     function getSentenceReviewScopes() {
-      var scopes = ["all"];
-      (LFF_CONVERSATIONS || []).forEach(function (rec) { if (rec.num) scopes.push("lff:" + rec.num); });
-      (LPD_LESSONS || []).forEach(function (rec) { if (rec.num) scopes.push("lpd:" + rec.num); });
-      scopes.push("wt");
-      return scopes;
+      return ["all", "lff", "lpd", "wt"];
     }
 
     // The review panel mirrors the learnable subtabs of each main section.  Utility/settings
@@ -8472,11 +8468,17 @@ function verifyDistribution(units, dist, pins) {
     var REVIEW_SCOPE_LABELS = {
       all: "전체", alphabet: "문자", tones: "성조", tonepairs: "연속 성조", nsdiff: "남북 발음",
       books: "성경", numbers: "숫자", time: "시간", days: "요일, 날짜", months: "달, 계절",
-      main: "첫만남", reftable: "호칭", talks: "제공 연설", neighbor: "이웃 사람과의 대화", daily: "일상 회화", lff: "행복한 삶을 영원히", lpd: "사람들을 사랑하고 제자로",
+      main: "첫만남", reftable: "호칭", talks: "제공 연설", neighbor: "이웃 사람과의 대화", daily: "일상 회화", lff: "행복한 삶을 영원히", lpd: "사람들을 사랑하고",
       rhyme: "한자음", orderrev: "어순반대", groups: "동일음", basic: "기본", antonym: "반의", freq: "상용", theo: "신권", names: "인명", chain: "끝말", dialect: "남북 단어", wt: "파수대",
       lessons: "예문", special: "특강", sentences: "범용 언어 생성표"
     };
     function reviewScopeLabel(scope) {
+      var lpdAppendixMatch = scope && scope.match(/^lpd:([ABC])$/);
+      if (lpdAppendixMatch) {
+        var appendixKo = { A: "부록 가", B: "부록 나", C: "부록 다" }[lpdAppendixMatch[1]];
+        if (currentLang === "en") return "Appendix " + lpdAppendixMatch[1];
+        return appendixKo;
+      }
       var lessonMatch = scope && scope.match(/^(lff|lpd):(\d+)$/);
       if (lessonMatch) {
         return (lessonMatch[1] === "lff" ? "행누 " : "랑제 ") + lessonMatch[2] + (currentLang === "en" ? "" : "과");
@@ -8528,7 +8530,10 @@ function verifyDistribution(units, dist, pins) {
       } else if (key === "sentence") {
         var lffScope = scope === "lff" ? 0 : (scope && scope.indexOf("lff:") === 0 ? parseInt(scope.slice(4), 10) : -1);
         var lpdScope = scope === "lpd" ? 0 : (scope && scope.indexOf("lpd:") === 0 ? parseInt(scope.slice(4), 10) : -1);
-        if (lffScope >= 0) LFF_CONVERSATIONS.forEach(function (r) { if (!lffScope || r.num === lffScope) lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
+        var lffPartScope = scope && scope.indexOf("lffpart:") === 0 ? parseInt(scope.slice(8), 10) : -1;
+        var lpdPartScope = scope && scope.indexOf("lpd:") === 0 && isNaN(parseInt(scope.slice(4), 10)) ? scope.slice(4) : "";
+        if (lffPartScope >= 0) LFF_CONVERSATIONS.forEach(function (r) { if (r.part === lffPartScope) lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
+        else if (lffScope >= 0) LFF_CONVERSATIONS.forEach(function (r) { if (!lffScope || r.num === lffScope) lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
         else if (lpdScope >= 0) LPD_LESSONS.forEach(function (r) {
           if (lpdScope && r.num !== lpdScope) return;
           r.lines.forEach(function (l) {
@@ -8540,6 +8545,7 @@ function verifyDistribution(units, dist, pins) {
             }
           });
         });
+        else if (lpdPartScope) LPD_LESSONS.forEach(function (r) { if (String(r.num) === lpdPartScope) r.lines.forEach(function (l) { sentence(l.vi, Tstrict(l)); }); });
         else if (scope === "wt" || (scope && scope.indexOf("wt:") === 0)) {
           var targetWeek = (scope && scope.indexOf("wt:") === 0) ? parseInt(scope.slice(3), 10) : 0;
           WATCHTOWER_VOCAB.forEach(function (wk) {
@@ -8880,9 +8886,34 @@ function verifyDistribution(units, dist, pins) {
     function renderReviewSubscope(key, selectedScope) {
       if (!reviewSubscopeEl) return;
       var isWt = (key === "sentence" && (selectedScope === "wt" || (selectedScope && selectedScope.indexOf("wt:") === 0)));
-      if (!isWt) {
+      var isLff = (key === "sentence" && selectedScope === "lff");
+      var isLpd = (key === "sentence" && selectedScope === "lpd");
+      if (!isWt && !isLff && !isLpd) {
         reviewSubscopeEl.style.display = "none";
         reviewSubscopeEl.innerHTML = "";
+        return;
+      }
+      if (isLff) {
+        var activePart = selectedScope && selectedScope.indexOf("lffpart:") === 0 ? parseInt(selectedScope.slice(8), 10) : 0;
+        var lffOptions = '<option value="lff"' + (activePart === 0 ? ' selected' : '') + '>' + escapeHtml(TU("전체")) + '</option>';
+        [1, 2, 3, 4].forEach(function (part) {
+          lffOptions += '<option value="lffpart:' + part + '"' + (activePart === part ? ' selected' : '') + '>' + escapeHtml((currentLang === "en" ? "Part " : "제") + part + (currentLang === "en" ? "" : "부")) + '</option>';
+        });
+        reviewSubscopeEl.style.display = "flex";
+        reviewSubscopeEl.innerHTML = '<select id="review-lff-part-select" class="review-subscope-select" aria-label="' + TU("행누 책 부 선택") + '">' + lffOptions + '</select>';
+        var lffSelect = document.getElementById("review-lff-part-select");
+        if (lffSelect) lffSelect.addEventListener("change", function () { selectCategory("sentence", lffSelect.value); });
+        return;
+      }
+      if (isLpd) {
+        var activePamphlet = selectedScope && selectedScope.indexOf("lpd:") === 0 ? selectedScope.slice(4) : "";
+        var lpdOptions = '<option value="lpd"' + (!activePamphlet ? ' selected' : '') + '>' + escapeHtml(TU("전체")) + '</option>';
+        for (var lesson = 1; lesson <= 12; lesson++) lpdOptions += '<option value="lpd:' + lesson + '"' + (activePamphlet === String(lesson) ? ' selected' : '') + '>' + escapeHtml(lesson + (currentLang === "en" ? "" : "과")) + '</option>';
+        ["A", "B", "C"].forEach(function (appendix) { lpdOptions += '<option value="lpd:' + appendix + '"' + (activePamphlet === appendix ? ' selected' : '') + '>' + escapeHtml(reviewScopeLabel("lpd:" + appendix)) + '</option>'; });
+        reviewSubscopeEl.style.display = "flex";
+        reviewSubscopeEl.innerHTML = '<select id="review-lpd-lesson-select" class="review-subscope-select" aria-label="' + TU("랑제 팜플렛 과 선택") + '">' + lpdOptions + '</select>';
+        var lpdSelect = document.getElementById("review-lpd-lesson-select");
+        if (lpdSelect) lpdSelect.addEventListener("change", function () { selectCategory("sentence", lpdSelect.value); });
         return;
       }
       reviewSubscopeEl.style.display = "flex";
@@ -8950,6 +8981,17 @@ function verifyDistribution(units, dist, pins) {
         return s === "all" || s === "wt" || s.indexOf("lff:") === 0 || s.indexOf("lpd:") === 0 || /^\d+$/.test(s) || !!document.querySelector('[data-' + key + '="' + s + '"]');
       });
       reviewScopeEl.dataset.scopeCategory = key;
+      if (key === "song") {
+        var songOptions = scopes.map(function (scope) {
+          return '<option value="' + escapeAttr(scope) + '"' + (scope === (selectedScope || "all") ? ' selected' : '') + '>' + escapeHtml(reviewScopeLabel(scope)) + '</option>';
+        }).join("");
+        reviewScopeEl.innerHTML = '<select id="review-song-range-select" class="review-subscope-select" aria-label="' + TU("노래 번호 범위 선택") + '">' + songOptions + '</select>';
+        reviewScopeEl.style.display = "flex";
+        var songSelect = document.getElementById("review-song-range-select");
+        if (songSelect) songSelect.addEventListener("change", function () { selectCategory("song", songSelect.value); });
+        renderReviewSubscope(key, selectedScope);
+        return;
+      }
       var selectedScopes = Array.isArray(selectedScope) ? selectedScope : [selectedScope || "all"];
       reviewScopeEl.innerHTML = scopes.map(function (scope) {
         var isSelected = selectedScopes.indexOf(scope) >= 0 || (scope === "wt" && selectedScopes.some(function (s) { return s && s.indexOf("wt:") === 0; }));
