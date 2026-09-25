@@ -1,0 +1,202 @@
+@@ pdf-grammar-e51b78e8b091e5d9#0
+=cs
+Gramatický výklad
+⟦với⟧, ⟦cùng với⟧: „s, spolu s, díky“ – uvádí podmínku, metodu či způsob přímo související s danou činností.
+⟦Cùng với bao biến cố thăng trầm của lịch sử, phố cổ Hội An vẫn giữ những nét đẹp xưa cổ trầm mặc rêu phong.⟧ → Navzdory všem dějinným zvratům si staré město Hội An zachovalo svou dávnou, tichou, mechem porostlou krásu. · ⟦Với sự giúp đỡ nhiệt tình của bạn bè và nhiều người quen biết khác, anh ấy đã tìm được việc làm.⟧ → S ochotnou pomocí přátel a mnoha dalších známých si našel práci.
+⟦gần như⟧: „téměř, skoro“ – vyjadřuje stav, kterému jen nepatrně něco chybí.
+⟦Đám cháy lớn đêm qua đã làm hư hỏng gần như toàn bộ số xe đạp, xe máy có trong kho hàng.⟧ → Velký požár včera v noci poškodil téměř všechna kola a motorky ve skladu. · ⟦Lần đi Việt Nam này, gần như các bạn sinh viên đều đăng kí đi hết.⟧ → Na tuto cestu do Vietnamu se přihlásili téměř všichni studenti.
+⟦bởi⟧: „protože, neboť“ – uvádí důvod či příčinu zmíněné události.
+⟦Việt nam có sức thu hút lớn về du lịch bởi nơi đây có nhiều cảnh đẹp và người dân hết sức thân thiện.⟧ → Vietnam je turisticky velmi přitažlivý, protože má mnoho krásných míst a nesmírně přátelské obyvatele. · ⟦Phần lớn khách du lịch đến Việt Nam đều mua chiếc nón lá hay bộ áo dài nhiều màu sắc bởi đó là những món quà mang đậm chất Việt Nam.⟧ → Většina turistů ve Vietnamu si koupí kuželovitý klobouk nebo barevné áo dài, neboť jsou to dárky typicky vietnamské.
+⟦phổ biến nhất⟧: „nejrozšířenější, nejběžnější“ – označuje situaci, se kterou se setkáváme nejčastěji.
+⟦Loài cây phổ biến nhất ở Việt Nam cây lúa.⟧ → Nejrozšířenější rostlinou ve Vietnamu je rýže. · ⟦Trước kia, kiểu nhà phổ biến nhất ở nhiều vùng nông thôn Việt Nam là kiểu nhà lợp rơm rạ.⟧ → Dříve byl v mnoha venkovských oblastech Vietnamu nejběžnějším typem domu dům se slaměnou střechou.
+=zh_cn
+语法解说
+⟦với⟧、⟦cùng với⟧：意为“随着、凭借、在……下”，传达与所述活动直接相关的条件、方法或方式。
+⟦Cùng với bao biến cố thăng trầm của lịch sử, phố cổ Hội An vẫn giữ những nét đẹp xưa cổ trầm mặc rêu phong.⟧ → 历经历史的沧桑变迁，会安古城依然保留着古朴、静谧、苔痕斑驳的美。 · ⟦Với sự giúp đỡ nhiệt tình của bạn bè và nhiều người quen biết khác, anh ấy đã tìm được việc làm.⟧ → 在朋友和许多熟人的热心帮助下，他找到了工作。
+⟦gần như⟧：意为“几乎、差不多”，表示略有不足的状态。
+⟦Đám cháy lớn đêm qua đã làm hư hỏng gần như toàn bộ số xe đạp, xe máy có trong kho hàng.⟧ → 昨夜的大火几乎烧坏了仓库里所有的自行车和摩托车。 · ⟦Lần đi Việt Nam này, gần như các bạn sinh viên đều đăng kí đi hết.⟧ → 这次去越南，几乎所有学生都报名了。
+⟦bởi⟧：意为“因为、由于”，用于提出所述事件的理由或原因。
+⟦Việt nam có sức thu hút lớn về du lịch bởi nơi đây có nhiều cảnh đẹp và người dân hết sức thân thiện.⟧ → 越南对游客有很大吸引力，因为这里风景优美，人民非常友善。 · ⟦Phần lớn khách du lịch đến Việt Nam đều mua chiếc nón lá hay bộ áo dài nhiều màu sắc bởi đó là những món quà mang đậm chất Việt Nam.⟧ → 大多数来越南的游客都会买斗笠或彩色奥黛，因为那是富有越南特色的礼物。
+⟦phổ biến nhất⟧：意为“最普遍、最常见”，表示最常发生或遇到的情况。
+⟦Loài cây phổ biến nhất ở Việt Nam cây lúa.⟧ → 越南最普遍的作物是水稻。 · ⟦Trước kia, kiểu nhà phổ biến nhất ở nhiều vùng nông thôn Việt Nam là kiểu nhà lợp rơm rạ.⟧ → 从前，越南许多农村地区最常见的房屋是茅草顶的房子。
+=zh
+文法解說
+⟦với⟧、⟦cùng với⟧：意為「隨著、憑藉、在……下」，傳達與所述活動直接相關的條件、方法或方式。
+⟦Cùng với bao biến cố thăng trầm của lịch sử, phố cổ Hội An vẫn giữ những nét đẹp xưa cổ trầm mặc rêu phong.⟧ → 歷經歷史的滄桑變遷，會安古城依然保留著古樸、靜謐、苔痕斑駁的美。 · ⟦Với sự giúp đỡ nhiệt tình của bạn bè và nhiều người quen biết khác, anh ấy đã tìm được việc làm.⟧ → 在朋友和許多熟人的熱心幫助下，他找到了工作。
+⟦gần như⟧：意為「幾乎、差不多」，表示略有不足的狀態。
+⟦Đám cháy lớn đêm qua đã làm hư hỏng gần như toàn bộ số xe đạp, xe máy có trong kho hàng.⟧ → 昨夜的大火幾乎燒壞了倉庫裡所有的腳踏車和機車。 · ⟦Lần đi Việt Nam này, gần như các bạn sinh viên đều đăng kí đi hết.⟧ → 這次去越南，幾乎所有學生都報名了。
+⟦bởi⟧：意為「因為、由於」，用於提出所述事件的理由或原因。
+⟦Việt nam có sức thu hút lớn về du lịch bởi nơi đây có nhiều cảnh đẹp và người dân hết sức thân thiện.⟧ → 越南對遊客很有吸引力，因為這裡風景優美，人民非常友善。 · ⟦Phần lớn khách du lịch đến Việt Nam đều mua chiếc nón lá hay bộ áo dài nhiều màu sắc bởi đó là những món quà mang đậm chất Việt Nam.⟧ → 大多數來越南的遊客都會買斗笠或彩色奧黛，因為那是富有越南特色的禮物。
+⟦phổ biến nhất⟧：意為「最普遍、最常見」，表示最常發生或遇到的情況。
+⟦Loài cây phổ biến nhất ở Việt Nam cây lúa.⟧ → 越南最普遍的作物是稻子。 · ⟦Trước kia, kiểu nhà phổ biến nhất ở nhiều vùng nông thôn Việt Nam là kiểu nhà lợp rơm rạ.⟧ → 從前，越南許多農村地區最常見的房屋是茅草頂的房子。
+=en
+Grammar notes
+⟦với⟧, ⟦cùng với⟧: "with, along with, thanks to" – convey a condition, method or manner directly linked to the activity.
+⟦Cùng với bao biến cố thăng trầm của lịch sử, phố cổ Hội An vẫn giữ những nét đẹp xưa cổ trầm mặc rêu phong.⟧ → Through all the ups and downs of history, Hội An's old town has kept its ancient, quiet, moss-covered beauty. · ⟦Với sự giúp đỡ nhiệt tình của bạn bè và nhiều người quen biết khác, anh ấy đã tìm được việc làm.⟧ → With the enthusiastic help of friends and many acquaintances, he found a job.
+⟦gần như⟧: "almost, nearly" – expresses a state that falls just slightly short.
+⟦Đám cháy lớn đêm qua đã làm hư hỏng gần như toàn bộ số xe đạp, xe máy có trong kho hàng.⟧ → Last night's big fire damaged almost all the bicycles and motorbikes in the warehouse. · ⟦Lần đi Việt Nam này, gần như các bạn sinh viên đều đăng kí đi hết.⟧ → For this trip to Vietnam, nearly all the students signed up.
+⟦bởi⟧: "because, since" – gives the reason or cause of the event mentioned.
+⟦Việt nam có sức thu hút lớn về du lịch bởi nơi đây có nhiều cảnh đẹp và người dân hết sức thân thiện.⟧ → Vietnam is very attractive to tourists because it has many beautiful sights and extremely friendly people. · ⟦Phần lớn khách du lịch đến Việt Nam đều mua chiếc nón lá hay bộ áo dài nhiều màu sắc bởi đó là những món quà mang đậm chất Việt Nam.⟧ → Most tourists in Vietnam buy a conical hat or a colourful áo dài, since these are gifts with a strongly Vietnamese character.
+⟦phổ biến nhất⟧: "most common, most widespread" – describes the situation one encounters most often.
+⟦Loài cây phổ biến nhất ở Việt Nam cây lúa.⟧ → The most common plant in Vietnam is rice. · ⟦Trước kia, kiểu nhà phổ biến nhất ở nhiều vùng nông thôn Việt Nam là kiểu nhà lợp rơm rạ.⟧ → In the past, the most common type of house in many rural areas of Vietnam was the thatched-roof house.
+=fr
+Notes de grammaire
+⟦với⟧, ⟦cùng với⟧ : « avec, grâce à » – indiquent une condition, une méthode ou une manière directement liées à l'activité.
+⟦Cùng với bao biến cố thăng trầm của lịch sử, phố cổ Hội An vẫn giữ những nét đẹp xưa cổ trầm mặc rêu phong.⟧ → Malgré toutes les vicissitudes de l'histoire, la vieille ville de Hội An a gardé sa beauté ancienne, silencieuse et moussue. · ⟦Với sự giúp đỡ nhiệt tình của bạn bè và nhiều người quen biết khác, anh ấy đã tìm được việc làm.⟧ → Avec l'aide chaleureuse de ses amis et de nombreuses connaissances, il a trouvé un emploi.
+⟦gần như⟧ : « presque, quasiment » – exprime un état auquel il manque très peu.
+⟦Đám cháy lớn đêm qua đã làm hư hỏng gần như toàn bộ số xe đạp, xe máy có trong kho hàng.⟧ → Le grand incendie d'hier soir a endommagé presque tous les vélos et motos de l'entrepôt. · ⟦Lần đi Việt Nam này, gần như các bạn sinh viên đều đăng kí đi hết.⟧ → Pour ce voyage au Vietnam, presque tous les étudiants se sont inscrits.
+⟦bởi⟧ : « car, parce que » – donne la raison ou la cause de l'événement évoqué.
+⟦Việt nam có sức thu hút lớn về du lịch bởi nơi đây có nhiều cảnh đẹp và người dân hết sức thân thiện.⟧ → Le Vietnam attire beaucoup de touristes car il offre de nombreux beaux paysages et des habitants très aimables. · ⟦Phần lớn khách du lịch đến Việt Nam đều mua chiếc nón lá hay bộ áo dài nhiều màu sắc bởi đó là những món quà mang đậm chất Việt Nam.⟧ → La plupart des touristes au Vietnam achètent un chapeau conique ou un áo dài coloré, car ce sont des cadeaux typiquement vietnamiens.
+⟦phổ biến nhất⟧ : « le plus répandu, le plus courant » – décrit la situation la plus fréquente.
+⟦Loài cây phổ biến nhất ở Việt Nam cây lúa.⟧ → La plante la plus répandue au Vietnam est le riz. · ⟦Trước kia, kiểu nhà phổ biến nhất ở nhiều vùng nông thôn Việt Nam là kiểu nhà lợp rơm rạ.⟧ → Autrefois, le type de maison le plus courant dans de nombreuses campagnes vietnamiennes était la maison au toit de chaume.
+=de
+Grammatikerläuterungen
+⟦với⟧, ⟦cùng với⟧: „mit, zusammen mit, dank“ – nennen eine Bedingung, Methode oder Weise, die direkt mit der Tätigkeit zusammenhängt.
+⟦Cùng với bao biến cố thăng trầm của lịch sử, phố cổ Hội An vẫn giữ những nét đẹp xưa cổ trầm mặc rêu phong.⟧ → Trotz aller Höhen und Tiefen der Geschichte hat die Altstadt von Hội An ihre alte, stille, moosbewachsene Schönheit bewahrt. · ⟦Với sự giúp đỡ nhiệt tình của bạn bè và nhiều người quen biết khác, anh ấy đã tìm được việc làm.⟧ → Mit der tatkräftigen Hilfe von Freunden und vielen Bekannten hat er eine Arbeit gefunden.
+⟦gần như⟧: „fast, beinahe“ – drückt einen Zustand aus, dem nur wenig fehlt.
+⟦Đám cháy lớn đêm qua đã làm hư hỏng gần như toàn bộ số xe đạp, xe máy có trong kho hàng.⟧ → Der Großbrand letzte Nacht beschädigte fast alle Fahrräder und Motorräder im Lager. · ⟦Lần đi Việt Nam này, gần như các bạn sinh viên đều đăng kí đi hết.⟧ → Für diese Vietnamreise haben sich fast alle Studenten angemeldet.
+⟦bởi⟧: „weil, da, denn“ – nennt den Grund oder die Ursache des Ereignisses.
+⟦Việt nam có sức thu hút lớn về du lịch bởi nơi đây có nhiều cảnh đẹp và người dân hết sức thân thiện.⟧ → Vietnam ist touristisch sehr attraktiv, weil es viele schöne Landschaften und äußerst freundliche Menschen hat. · ⟦Phần lớn khách du lịch đến Việt Nam đều mua chiếc nón lá hay bộ áo dài nhiều màu sắc bởi đó là những món quà mang đậm chất Việt Nam.⟧ → Die meisten Touristen in Vietnam kaufen einen Kegelhut oder ein farbenfrohes Áo dài, denn das sind typisch vietnamesische Geschenke.
+⟦phổ biến nhất⟧: „am weitesten verbreitet, am häufigsten“ – beschreibt die am häufigsten vorkommende Situation.
+⟦Loài cây phổ biến nhất ở Việt Nam cây lúa.⟧ → Die am weitesten verbreitete Pflanze in Vietnam ist Reis. · ⟦Trước kia, kiểu nhà phổ biến nhất ở nhiều vùng nông thôn Việt Nam là kiểu nhà lợp rơm rạ.⟧ → Früher war in vielen ländlichen Gegenden Vietnams das strohgedeckte Haus der häufigste Haustyp.
+=hu
+Nyelvtani magyarázat
+⟦với⟧, ⟦cùng với⟧: „-val/-vel, együtt, révén” – a tevékenységgel közvetlenül összefüggő feltételt, módszert vagy módot közvetítenek.
+⟦Cùng với bao biến cố thăng trầm của lịch sử, phố cổ Hội An vẫn giữ những nét đẹp xưa cổ trầm mặc rêu phong.⟧ → A történelem minden viszontagsága ellenére Hội An óvárosa megőrizte ősi, csendes, mohos szépségét. · ⟦Với sự giúp đỡ nhiệt tình của bạn bè và nhiều người quen biết khác, anh ấy đã tìm được việc làm.⟧ → Barátai és sok ismerőse lelkes segítségével talált munkát.
+⟦gần như⟧: „majdnem, szinte” – olyan állapotot fejez ki, amelyhez csak kevés hiányzik.
+⟦Đám cháy lớn đêm qua đã làm hư hỏng gần như toàn bộ số xe đạp, xe máy có trong kho hàng.⟧ → A tegnap éjjeli nagy tűz szinte az összes kerékpárt és motort megrongálta a raktárban. · ⟦Lần đi Việt Nam này, gần như các bạn sinh viên đều đăng kí đi hết.⟧ → Erre a vietnámi útra szinte minden diák jelentkezett.
+⟦bởi⟧: „mert, mivel” – az említett esemény okát adja meg.
+⟦Việt nam có sức thu hút lớn về du lịch bởi nơi đây có nhiều cảnh đẹp và người dân hết sức thân thiện.⟧ → Vietnám nagyon vonzó a turisták számára, mert sok szép tája van, és az emberek rendkívül barátságosak. · ⟦Phần lớn khách du lịch đến Việt Nam đều mua chiếc nón lá hay bộ áo dài nhiều màu sắc bởi đó là những món quà mang đậm chất Việt Nam.⟧ → A Vietnámba érkező turisták többsége kúpos kalapot vagy színes áo dàit vesz, mert ezek jellegzetesen vietnámi ajándékok.
+⟦phổ biến nhất⟧: „legelterjedtebb, leggyakoribb” – a leggyakrabban előforduló helyzetet írja le.
+⟦Loài cây phổ biến nhất ở Việt Nam cây lúa.⟧ → Vietnám legelterjedtebb növénye a rizs. · ⟦Trước kia, kiểu nhà phổ biến nhất ở nhiều vùng nông thôn Việt Nam là kiểu nhà lợp rơm rạ.⟧ → Régen Vietnám sok vidéki területén a zsúpfedeles ház volt a leggyakoribb háztípus.
+=id
+Penjelasan tata bahasa
+⟦với⟧, ⟦cùng với⟧: "dengan, bersama dengan, berkat" – menyampaikan syarat, cara, atau metode yang berkaitan langsung dengan kegiatan.
+⟦Cùng với bao biến cố thăng trầm của lịch sử, phố cổ Hội An vẫn giữ những nét đẹp xưa cổ trầm mặc rêu phong.⟧ → Melewati pasang surut sejarah, kota tua Hội An tetap mempertahankan keindahan kunonya yang hening dan berlumut. · ⟦Với sự giúp đỡ nhiệt tình của bạn bè và nhiều người quen biết khác, anh ấy đã tìm được việc làm.⟧ → Dengan bantuan tulus teman-teman dan banyak kenalan, dia berhasil mendapat pekerjaan.
+⟦gần như⟧: "hampir" – menyatakan keadaan yang kurang sedikit.
+⟦Đám cháy lớn đêm qua đã làm hư hỏng gần như toàn bộ số xe đạp, xe máy có trong kho hàng.⟧ → Kebakaran besar tadi malam merusak hampir semua sepeda dan sepeda motor di gudang. · ⟦Lần đi Việt Nam này, gần như các bạn sinh viên đều đăng kí đi hết.⟧ → Untuk perjalanan ke Vietnam kali ini, hampir semua mahasiswa mendaftar.
+⟦bởi⟧: "karena, sebab" – menyatakan alasan atau penyebab suatu peristiwa.
+⟦Việt nam có sức thu hút lớn về du lịch bởi nơi đây có nhiều cảnh đẹp và người dân hết sức thân thiện.⟧ → Vietnam sangat menarik bagi wisatawan karena di sini banyak pemandangan indah dan penduduknya sangat ramah. · ⟦Phần lớn khách du lịch đến Việt Nam đều mua chiếc nón lá hay bộ áo dài nhiều màu sắc bởi đó là những món quà mang đậm chất Việt Nam.⟧ → Sebagian besar wisatawan di Vietnam membeli topi caping atau áo dài berwarna-warni karena itu oleh-oleh yang sangat khas Vietnam.
+⟦phổ biến nhất⟧: "paling umum, paling lazim" – menyatakan situasi yang paling sering terjadi atau dijumpai.
+⟦Loài cây phổ biến nhất ở Việt Nam cây lúa.⟧ → Tanaman yang paling umum di Vietnam adalah padi. · ⟦Trước kia, kiểu nhà phổ biến nhất ở nhiều vùng nông thôn Việt Nam là kiểu nhà lợp rơm rạ.⟧ → Dahulu, jenis rumah paling umum di banyak pedesaan Vietnam adalah rumah beratap jerami.
+=ja
+文法解説
+⟦với⟧、⟦cùng với⟧：これから示す活動と直接関わる条件・方法・方式を伝えるために使います（「～とともに、～によって」）。
+⟦Cùng với bao biến cố thăng trầm của lịch sử, phố cổ Hội An vẫn giữ những nét đẹp xưa cổ trầm mặc rêu phong.⟧ → 歴史の数々の浮き沈みを経ても、ホイアン旧市街は古びて静かな苔むした美しさを保っている。 · ⟦Với sự giúp đỡ nhiệt tình của bạn bè và nhiều người quen biết khác, anh ấy đã tìm được việc làm.⟧ → 友人や多くの知人の熱心な助けによって、彼は仕事を見つけた。
+⟦gần như⟧：わずかに足りない状態を表したいときに使います（「ほとんど、ほぼ」）。
+⟦Đám cháy lớn đêm qua đã làm hư hỏng gần như toàn bộ số xe đạp, xe máy có trong kho hàng.⟧ → 昨夜の大火事で、倉庫にあった自転車やバイクのほぼすべてが損傷した。 · ⟦Lần đi Việt Nam này, gần như các bạn sinh viên đều đăng kí đi hết.⟧ → 今回のベトナム行きには、ほぼすべての学生が申し込んだ。
+⟦bởi⟧：述べた出来事の理由や原因を示すために「～のため」という意味で使われます。
+⟦Việt nam có sức thu hút lớn về du lịch bởi nơi đây có nhiều cảnh đẹp và người dân hết sức thân thiện.⟧ → ベトナムは観光地として大きな魅力がある。美しい景色が多く、人々がとても親切だからだ。 · ⟦Phần lớn khách du lịch đến Việt Nam đều mua chiếc nón lá hay bộ áo dài nhiều màu sắc bởi đó là những món quà mang đậm chất Việt Nam.⟧ → ベトナムを訪れる観光客の大半はノンラーや色とりどりのアオザイを買う。それらがベトナムらしさあふれる贈り物だからだ。
+⟦phổ biến nhất⟧：よく起こる、よく出会う状況を表すために使います（「最も一般的な」）。
+⟦Loài cây phổ biến nhất ở Việt Nam cây lúa.⟧ → ベトナムで最も一般的な植物は稲だ。 · ⟦Trước kia, kiểu nhà phổ biến nhất ở nhiều vùng nông thôn Việt Nam là kiểu nhà lợp rơm rạ.⟧ → かつて、ベトナムの多くの農村で最も一般的な家は藁ぶき屋根の家だった。
+=pl
+Objaśnienia gramatyczne
+⟦với⟧, ⟦cùng với⟧: „z, wraz z, dzięki” – przekazują warunek, metodę lub sposób bezpośrednio związany z czynnością.
+⟦Cùng với bao biến cố thăng trầm của lịch sử, phố cổ Hội An vẫn giữ những nét đẹp xưa cổ trầm mặc rêu phong.⟧ → Mimo wszelkich zawirowań historii stare miasto Hội An zachowało swoje dawne, ciche, omszałe piękno. · ⟦Với sự giúp đỡ nhiệt tình của bạn bè và nhiều người quen biết khác, anh ấy đã tìm được việc làm.⟧ → Dzięki serdecznej pomocy przyjaciół i wielu znajomych znalazł pracę.
+⟦gần như⟧: „prawie, niemal” – wyraża stan, któremu brakuje niewiele.
+⟦Đám cháy lớn đêm qua đã làm hư hỏng gần như toàn bộ số xe đạp, xe máy có trong kho hàng.⟧ → Wczorajszy wielki pożar uszkodził niemal wszystkie rowery i motocykle w magazynie. · ⟦Lần đi Việt Nam này, gần như các bạn sinh viên đều đăng kí đi hết.⟧ → Na ten wyjazd do Wietnamu zapisali się prawie wszyscy studenci.
+⟦bởi⟧: „bo, ponieważ” – podaje powód lub przyczynę zdarzenia.
+⟦Việt nam có sức thu hút lớn về du lịch bởi nơi đây có nhiều cảnh đẹp và người dân hết sức thân thiện.⟧ → Wietnam bardzo przyciąga turystów, bo ma wiele pięknych miejsc i niezwykle przyjaznych mieszkańców. · ⟦Phần lớn khách du lịch đến Việt Nam đều mua chiếc nón lá hay bộ áo dài nhiều màu sắc bởi đó là những món quà mang đậm chất Việt Nam.⟧ → Większość turystów w Wietnamie kupuje stożkowy kapelusz lub kolorowe áo dài, bo to upominki o wybitnie wietnamskim charakterze.
+⟦phổ biến nhất⟧: „najpowszechniejszy, najczęstszy” – opisuje sytuację spotykaną najczęściej.
+⟦Loài cây phổ biến nhất ở Việt Nam cây lúa.⟧ → Najpowszechniejszą rośliną w Wietnamie jest ryż. · ⟦Trước kia, kiểu nhà phổ biến nhất ở nhiều vùng nông thôn Việt Nam là kiểu nhà lợp rơm rạ.⟧ → Dawniej najczęstszym typem domu na wielu wietnamskich wsiach był dom kryty strzechą.
+@@ pdf-grammar-c9a698105e95cb2a#0
+=cs
+Gramatický výklad
+⟦lắm⟧ + (podstatné jméno): „mnoho, spousta“ – hovorově vyjadřuje velké, nepřesné množství.
+⟦Nếu anh lắm tiền thì đi máy bay.⟧ → Jestli máš hodně peněz, leť letadlem. · ⟦Còn nếu anh chỉ lắm chữ thì anh đi tàu hỏa sẽ đỡ tốn kém hơn.⟧ → Ale jestli máš jen hodně vzdělání (a málo peněz), jeď vlakem, vyjde to levněji. · ⟦Nhà ấy lắm đồ đạc thế!⟧ → Ten dům je ale plný nábytku! · ⟦Nhà này lắm phòng thật!⟧ → Tenhle dům má opravdu spoustu pokojů!
+⟦làm gì mà⟧: hovorově uvádí, že následující věc neodpovídá obvyklé situaci nebo je jí opačná („kdepak, jakpak by, proč tak“).
+⟦Ôi, chị cứ nói thế. Tôi làm gì mà lắm tiền.⟧ → Ale no tak, co to říkáš. Kdepak já mám hodně peněz. · ⟦Lương tháng ít ỏi thế này thì làm gì mà mua được nhà.⟧ → S takhle mizerným platem si přece dům nekoupíš. · ⟦Nó làm gì mà mua nhiều điện thoại thế!⟧ → Proč proboha kupuje tolik telefonů! · ⟦Anh làm gì mà thức khuya vậy.⟧ → Co děláš, že jsi vzhůru tak pozdě?
+⟦nhẵn túi⟧: „mít prázdnou kapsu“ – vyjadřuje, že člověku nezbyla ani koruna.
+⟦Lúc nào cũng nhẵn túi chị ạ!⟧ → Pořád mám prázdnou kapsu! · ⟦Tôi mua nhiều thứ quá nên nhẵn túi rồi.⟧ → Nakoupil jsem tolik věcí, že jsem úplně na mizině. · ⟦Cứ đến cuối tháng là nó nhẵn túi.⟧ → Na konci měsíce je vždycky bez peněz. · ⟦Tôi không đi siêu thị đâu vì nhẵn túi rồi.⟧ → Do supermarketu nejdu, jsem bez peněz.
+⟦nói gì thì nói⟧: „ať se říká cokoli“ – vyjadřuje, že skutečnost se tak či onak nezmění.
+⟦Chị ơi, tôi là sinh viên cho nên chị có nói gì thì nói chứ tôi làm gì có nhiều tiền đâu!⟧ → Paní, jsem student, takže říkejte si co chcete, ale hodně peněz nemám! · ⟦Anh muốn nói gì thì nói, tôi vẫn không tin là chị ấy sẽ đi tham quan phố cổ Hội An vào thời điểm này.⟧ → Říkej si co chceš, pořád nevěřím, že by teď jela do starého Hội An. · ⟦Mọi người nói gì thì nói, thằng bé vẫn không chịu nghe lời.⟧ → Ať mu kdo říká cokoli, ten kluk stejně neposlechne.
+=zh_cn
+语法解说
+⟦lắm⟧ +（名词）：主要用于口语，表示不确切的大数量（“很多……”）。
+⟦Nếu anh lắm tiền thì đi máy bay.⟧ → 你要是钱多就坐飞机。 · ⟦Còn nếu anh chỉ lắm chữ thì anh đi tàu hỏa sẽ đỡ tốn kém hơn.⟧ → 要是你只是学问多（钱不多），那就坐火车，省钱些。 · ⟦Nhà ấy lắm đồ đạc thế!⟧ → 那家东西真多！ · ⟦Nhà này lắm phòng thật!⟧ → 这房子房间真多！
+⟦làm gì mà⟧：主要用于口语，表示接下来的内容与一般情况不符或相反（“哪里……、怎么……”）。
+⟦Ôi, chị cứ nói thế. Tôi làm gì mà lắm tiền.⟧ → 哎，你别这么说。我哪有什么钱。 · ⟦Lương tháng ít ỏi thế này thì làm gì mà mua được nhà.⟧ → 月薪这么少，哪买得起房子。 · ⟦Nó làm gì mà mua nhiều điện thoại thế!⟧ → 他干吗买那么多手机！ · ⟦Anh làm gì mà thức khuya vậy.⟧ → 你干什么熬这么晚。
+⟦nhẵn túi⟧：意为“口袋空空”，表示钱包完全见底、一分不剩。
+⟦Lúc nào cũng nhẵn túi chị ạ!⟧ → 我总是囊中空空啊！ · ⟦Tôi mua nhiều thứ quá nên nhẵn túi rồi.⟧ → 我买了太多东西，钱都花光了。 · ⟦Cứ đến cuối tháng là nó nhẵn túi.⟧ → 一到月底他就身无分文。 · ⟦Tôi không đi siêu thị đâu vì nhẵn túi rồi.⟧ → 我不去超市了，因为没钱了。
+⟦nói gì thì nói⟧：意为“不管怎么说”，表示事实无论如何都不会改变。
+⟦Chị ơi, tôi là sinh viên cho nên chị có nói gì thì nói chứ tôi làm gì có nhiều tiền đâu!⟧ → 大姐，我是学生，不管你怎么说，我哪有那么多钱啊！ · ⟦Anh muốn nói gì thì nói, tôi vẫn không tin là chị ấy sẽ đi tham quan phố cổ Hội An vào thời điểm này.⟧ → 随你怎么说，我还是不信她会在这个时候去会安古城参观。 · ⟦Mọi người nói gì thì nói, thằng bé vẫn không chịu nghe lời.⟧ → 不管大家怎么说，那小子就是不听话。
+=zh
+文法解說
+⟦lắm⟧ +（名詞）：主要用於口語，表示不確切的大數量（「很多……」）。
+⟦Nếu anh lắm tiền thì đi máy bay.⟧ → 你要是錢多就搭飛機。 · ⟦Còn nếu anh chỉ lắm chữ thì anh đi tàu hỏa sẽ đỡ tốn kém hơn.⟧ → 要是你只是學問多（錢不多），那就搭火車，省錢些。 · ⟦Nhà ấy lắm đồ đạc thế!⟧ → 那家東西真多！ · ⟦Nhà này lắm phòng thật!⟧ → 這房子房間真多！
+⟦làm gì mà⟧：主要用於口語，表示接下來的內容與一般情況不符或相反（「哪裡……、怎麼……」）。
+⟦Ôi, chị cứ nói thế. Tôi làm gì mà lắm tiền.⟧ → 唉，你別這麼說。我哪有什麼錢。 · ⟦Lương tháng ít ỏi thế này thì làm gì mà mua được nhà.⟧ → 月薪這麼少，哪買得起房子。 · ⟦Nó làm gì mà mua nhiều điện thoại thế!⟧ → 他幹嘛買那麼多手機！ · ⟦Anh làm gì mà thức khuya vậy.⟧ → 你在做什麼熬這麼晚。
+⟦nhẵn túi⟧：意為「口袋空空」，表示錢包完全見底、一毛不剩。
+⟦Lúc nào cũng nhẵn túi chị ạ!⟧ → 我總是口袋空空啊！ · ⟦Tôi mua nhiều thứ quá nên nhẵn túi rồi.⟧ → 我買了太多東西，錢都花光了。 · ⟦Cứ đến cuối tháng là nó nhẵn túi.⟧ → 一到月底他就身無分文。 · ⟦Tôi không đi siêu thị đâu vì nhẵn túi rồi.⟧ → 我不去超市了，因為沒錢了。
+⟦nói gì thì nói⟧：意為「不管怎麼說」，表示事實無論如何都不會改變。
+⟦Chị ơi, tôi là sinh viên cho nên chị có nói gì thì nói chứ tôi làm gì có nhiều tiền đâu!⟧ → 大姐，我是學生，不管你怎麼說，我哪有那麼多錢啊！ · ⟦Anh muốn nói gì thì nói, tôi vẫn không tin là chị ấy sẽ đi tham quan phố cổ Hội An vào thời điểm này.⟧ → 隨你怎麼說，我還是不信她會在這個時候去會安古城參觀。 · ⟦Mọi người nói gì thì nói, thằng bé vẫn không chịu nghe lời.⟧ → 不管大家怎麼說，那小子就是不聽話。
+=en
+Grammar notes
+⟦lắm⟧ + (noun): mainly colloquial; expresses a large but imprecise quantity ("lots of").
+⟦Nếu anh lắm tiền thì đi máy bay.⟧ → If you've got lots of money, fly. · ⟦Còn nếu anh chỉ lắm chữ thì anh đi tàu hỏa sẽ đỡ tốn kém hơn.⟧ → But if all you've got is lots of learning (and little money), take the train – it's cheaper. · ⟦Nhà ấy lắm đồ đạc thế!⟧ → That house has so much stuff! · ⟦Nhà này lắm phòng thật!⟧ → This house really has a lot of rooms!
+⟦làm gì mà⟧: mainly colloquial; indicates that what follows does not match, or runs counter to, the usual situation ("how on earth, no way").
+⟦Ôi, chị cứ nói thế. Tôi làm gì mà lắm tiền.⟧ → Oh, come on. Me, rich? No way. · ⟦Lương tháng ít ỏi thế này thì làm gì mà mua được nhà.⟧ → With such a meagre salary, how on earth could you buy a house? · ⟦Nó làm gì mà mua nhiều điện thoại thế!⟧ → What's he up to, buying so many phones! · ⟦Anh làm gì mà thức khuya vậy.⟧ → What are you doing up so late?
+⟦nhẵn túi⟧: "broke, with empty pockets" – describes having run completely out of money.
+⟦Lúc nào cũng nhẵn túi chị ạ!⟧ → I'm always broke! · ⟦Tôi mua nhiều thứ quá nên nhẵn túi rồi.⟧ → I bought so much that I'm flat broke now. · ⟦Cứ đến cuối tháng là nó nhẵn túi.⟧ → He's always skint by the end of the month. · ⟦Tôi không đi siêu thị đâu vì nhẵn túi rồi.⟧ → I'm not going to the supermarket – I'm broke.
+⟦nói gì thì nói⟧: "say what you will, whatever anyone says" – expresses that the fact remains unchanged regardless.
+⟦Chị ơi, tôi là sinh viên cho nên chị có nói gì thì nói chứ tôi làm gì có nhiều tiền đâu!⟧ → Madam, I'm a student, so say what you like – I really don't have much money! · ⟦Anh muốn nói gì thì nói, tôi vẫn không tin là chị ấy sẽ đi tham quan phố cổ Hội An vào thời điểm này.⟧ → Say whatever you want, I still don't believe she'll visit Hội An old town at this time. · ⟦Mọi người nói gì thì nói, thằng bé vẫn không chịu nghe lời.⟧ → Whatever anyone says, the boy still won't listen.
+=fr
+Notes de grammaire
+⟦lắm⟧ + (nom) : surtout oral ; exprime une grande quantité imprécise (« plein de, beaucoup de »).
+⟦Nếu anh lắm tiền thì đi máy bay.⟧ → Si tu as plein d'argent, prends l'avion. · ⟦Còn nếu anh chỉ lắm chữ thì anh đi tàu hỏa sẽ đỡ tốn kém hơn.⟧ → Mais si tu n'as que beaucoup d'instruction (et peu d'argent), prends le train, ça coûtera moins cher. · ⟦Nhà ấy lắm đồ đạc thế!⟧ → Qu'est-ce qu'il y a comme meubles dans cette maison ! · ⟦Nhà này lắm phòng thật!⟧ → Cette maison a vraiment beaucoup de pièces !
+⟦làm gì mà⟧ : surtout oral ; indique que ce qui suit ne correspond pas à la situation habituelle ou lui est contraire (« tu parles, comment veux-tu que »).
+⟦Ôi, chị cứ nói thế. Tôi làm gì mà lắm tiền.⟧ → Oh, arrête. Moi, riche ? Tu parles. · ⟦Lương tháng ít ỏi thế này thì làm gì mà mua được nhà.⟧ → Avec un salaire aussi maigre, comment veux-tu acheter une maison ? · ⟦Nó làm gì mà mua nhiều điện thoại thế!⟧ → Qu'est-ce qui lui prend d'acheter autant de téléphones ! · ⟦Anh làm gì mà thức khuya vậy.⟧ → Qu'est-ce que tu fais à veiller si tard ?
+⟦nhẵn túi⟧ : « fauché, les poches vides » – exprime qu'il ne reste plus un sou.
+⟦Lúc nào cũng nhẵn túi chị ạ!⟧ → Je suis toujours fauché ! · ⟦Tôi mua nhiều thứ quá nên nhẵn túi rồi.⟧ → J'ai acheté trop de choses, je suis à sec. · ⟦Cứ đến cuối tháng là nó nhẵn túi.⟧ → À chaque fin de mois, il est fauché. · ⟦Tôi không đi siêu thị đâu vì nhẵn túi rồi.⟧ → Je ne vais pas au supermarché, je n'ai plus un sou.
+⟦nói gì thì nói⟧ : « quoi qu'on dise » – exprime que, de toute façon, les faits restent inchangés.
+⟦Chị ơi, tôi là sinh viên cho nên chị có nói gì thì nói chứ tôi làm gì có nhiều tiền đâu!⟧ → Madame, je suis étudiant, alors vous pouvez dire ce que vous voulez, je n'ai pas beaucoup d'argent ! · ⟦Anh muốn nói gì thì nói, tôi vẫn không tin là chị ấy sẽ đi tham quan phố cổ Hội An vào thời điểm này.⟧ → Dis ce que tu veux, je ne crois toujours pas qu'elle visitera Hội An en ce moment. · ⟦Mọi người nói gì thì nói, thằng bé vẫn không chịu nghe lời.⟧ → Quoi qu'on lui dise, le garçon refuse toujours d'obéir.
+=de
+Grammatikerläuterungen
+⟦lắm⟧ + (Substantiv): vorwiegend umgangssprachlich; drückt eine große, ungenaue Menge aus („jede Menge“).
+⟦Nếu anh lắm tiền thì đi máy bay.⟧ → Wenn du viel Geld hast, flieg. · ⟦Còn nếu anh chỉ lắm chữ thì anh đi tàu hỏa sẽ đỡ tốn kém hơn.⟧ → Hast du aber nur viel Bildung (und wenig Geld), nimm den Zug – das ist billiger. · ⟦Nhà ấy lắm đồ đạc thế!⟧ → In dem Haus ist aber viel Kram! · ⟦Nhà này lắm phòng thật!⟧ → Dieses Haus hat wirklich viele Zimmer!
+⟦làm gì mà⟧: vorwiegend umgangssprachlich; zeigt, dass das Folgende nicht der üblichen Lage entspricht oder ihr widerspricht („von wegen, wie soll denn“).
+⟦Ôi, chị cứ nói thế. Tôi làm gì mà lắm tiền.⟧ → Ach, was du immer sagst. Ich und viel Geld? Von wegen. · ⟦Lương tháng ít ỏi thế này thì làm gì mà mua được nhà.⟧ → Mit so einem mickrigen Gehalt, wie soll man da ein Haus kaufen? · ⟦Nó làm gì mà mua nhiều điện thoại thế!⟧ → Was will der mit so vielen Handys! · ⟦Anh làm gì mà thức khuya vậy.⟧ → Was machst du, dass du so spät noch wach bist?
+⟦nhẵn túi⟧: „pleite, blank“ – drückt aus, dass man keinen Cent mehr hat.
+⟦Lúc nào cũng nhẵn túi chị ạ!⟧ → Ich bin immer pleite! · ⟦Tôi mua nhiều thứ quá nên nhẵn túi rồi.⟧ → Ich habe so viel gekauft, dass ich jetzt blank bin. · ⟦Cứ đến cuối tháng là nó nhẵn túi.⟧ → Am Monatsende ist er immer pleite. · ⟦Tôi không đi siêu thị đâu vì nhẵn túi rồi.⟧ → Ich gehe nicht in den Supermarkt, ich bin pleite.
+⟦nói gì thì nói⟧: „was man auch sagt“ – drückt aus, dass die Tatsache so oder so unverändert bleibt.
+⟦Chị ơi, tôi là sinh viên cho nên chị có nói gì thì nói chứ tôi làm gì có nhiều tiền đâu!⟧ → Hören Sie, ich bin Student – sagen Sie, was Sie wollen, ich habe wirklich nicht viel Geld! · ⟦Anh muốn nói gì thì nói, tôi vẫn không tin là chị ấy sẽ đi tham quan phố cổ Hội An vào thời điểm này.⟧ → Sag, was du willst, ich glaube trotzdem nicht, dass sie jetzt die Altstadt von Hội An besucht. · ⟦Mọi người nói gì thì nói, thằng bé vẫn không chịu nghe lời.⟧ → Was man ihm auch sagt, der Junge will einfach nicht hören.
+=hu
+Nyelvtani magyarázat
+⟦lắm⟧ + (főnév): főleg beszélt nyelvben; nagy, pontatlan mennyiséget fejez ki („rengeteg”).
+⟦Nếu anh lắm tiền thì đi máy bay.⟧ → Ha sok pénzed van, repülj. · ⟦Còn nếu anh chỉ lắm chữ thì anh đi tàu hỏa sẽ đỡ tốn kém hơn.⟧ → Ha viszont csak tudásod van sok (pénzed kevés), menj vonattal, olcsóbb. · ⟦Nhà ấy lắm đồ đạc thế!⟧ → De sok holmi van abban a házban! · ⟦Nhà này lắm phòng thật!⟧ → Ennek a háznak tényleg rengeteg szobája van!
+⟦làm gì mà⟧: főleg beszélt nyelvben; azt jelzi, hogy a következő nem felel meg a szokásos helyzetnek, vagy ellentétes vele („ugyan már, hogy lehetne”).
+⟦Ôi, chị cứ nói thế. Tôi làm gì mà lắm tiền.⟧ → Ó, ugyan már. Nekem ugyan honnan lenne sok pénzem. · ⟦Lương tháng ít ỏi thế này thì làm gì mà mua được nhà.⟧ → Ilyen csekély fizetésből hogy lehetne házat venni? · ⟦Nó làm gì mà mua nhiều điện thoại thế!⟧ → Minek vesz ennyi telefont! · ⟦Anh làm gì mà thức khuya vậy.⟧ → Mit csinálsz, hogy ilyen későn is fent vagy?
+⟦nhẵn túi⟧: „üres a zseb, le van égve” – azt fejezi ki, hogy egy fillér sem maradt.
+⟦Lúc nào cũng nhẵn túi chị ạ!⟧ → Mindig le vagyok égve! · ⟦Tôi mua nhiều thứ quá nên nhẵn túi rồi.⟧ → Túl sok mindent vettem, teljesen leégtem. · ⟦Cứ đến cuối tháng là nó nhẵn túi.⟧ → A hónap végére mindig üres a zsebe. · ⟦Tôi không đi siêu thị đâu vì nhẵn túi rồi.⟧ → Nem megyek a szupermarketbe, elfogyott a pénzem.
+⟦nói gì thì nói⟧: „akármit mondanak” – azt fejezi ki, hogy a tény mindenképp változatlan marad.
+⟦Chị ơi, tôi là sinh viên cho nên chị có nói gì thì nói chứ tôi làm gì có nhiều tiền đâu!⟧ → Hölgyem, diák vagyok, mondjon akármit, nincs sok pénzem! · ⟦Anh muốn nói gì thì nói, tôi vẫn không tin là chị ấy sẽ đi tham quan phố cổ Hội An vào thời điểm này.⟧ → Mondhatsz akármit, akkor sem hiszem, hogy most elmegy megnézni Hội An óvárosát. · ⟦Mọi người nói gì thì nói, thằng bé vẫn không chịu nghe lời.⟧ → Akármit mondanak neki, a fiú akkor sem hallgat senkire.
+=id
+Penjelasan tata bahasa
+⟦lắm⟧ + (nomina): terutama lisan; menyatakan jumlah besar yang tidak pasti ("banyak").
+⟦Nếu anh lắm tiền thì đi máy bay.⟧ → Kalau kamu banyak uang, naik pesawat saja. · ⟦Còn nếu anh chỉ lắm chữ thì anh đi tàu hỏa sẽ đỡ tốn kém hơn.⟧ → Tapi kalau kamu cuma banyak ilmu (uangnya sedikit), naik kereta lebih hemat. · ⟦Nhà ấy lắm đồ đạc thế!⟧ → Rumah itu banyak sekali barangnya! · ⟦Nhà này lắm phòng thật!⟧ → Rumah ini benar-benar banyak kamarnya!
+⟦làm gì mà⟧: terutama lisan; menunjukkan bahwa hal berikutnya tidak sesuai atau berlawanan dengan keadaan biasa ("mana mungkin, kok").
+⟦Ôi, chị cứ nói thế. Tôi làm gì mà lắm tiền.⟧ → Aduh, Kakak ini. Mana mungkin saya banyak uang. · ⟦Lương tháng ít ỏi thế này thì làm gì mà mua được nhà.⟧ → Gaji sekecil ini mana mungkin bisa beli rumah. · ⟦Nó làm gì mà mua nhiều điện thoại thế!⟧ → Buat apa dia beli telepon sebanyak itu! · ⟦Anh làm gì mà thức khuya vậy.⟧ → Kamu sedang apa kok begadang begitu?
+⟦nhẵn túi⟧: "kantong kering, bokek" – menyatakan uang sudah habis sama sekali.
+⟦Lúc nào cũng nhẵn túi chị ạ!⟧ → Saya selalu bokek, Kak! · ⟦Tôi mua nhiều thứ quá nên nhẵn túi rồi.⟧ → Saya belanja terlalu banyak sampai kantong kering. · ⟦Cứ đến cuối tháng là nó nhẵn túi.⟧ → Setiap akhir bulan dia pasti bokek. · ⟦Tôi không đi siêu thị đâu vì nhẵn túi rồi.⟧ → Saya tidak ke supermarket karena sudah tidak punya uang.
+⟦nói gì thì nói⟧: "apa pun katanya" – menyatakan bahwa kenyataan tetap tidak berubah.
+⟦Chị ơi, tôi là sinh viên cho nên chị có nói gì thì nói chứ tôi làm gì có nhiều tiền đâu!⟧ → Kak, saya mahasiswa, jadi apa pun kata Kakak, saya tidak punya banyak uang! · ⟦Anh muốn nói gì thì nói, tôi vẫn không tin là chị ấy sẽ đi tham quan phố cổ Hội An vào thời điểm này.⟧ → Kamu mau bilang apa pun, saya tetap tidak percaya dia akan berkunjung ke kota tua Hội An saat ini. · ⟦Mọi người nói gì thì nói, thằng bé vẫn không chịu nghe lời.⟧ → Apa pun kata orang-orang, anak itu tetap tidak mau menurut.
+=ja
+文法解説
+⟦lắm⟧ +（名詞）：主に口語で使われ、正確ではない大きな数量を表します（「たくさんの」）。
+⟦Nếu anh lắm tiền thì đi máy bay.⟧ → お金がたくさんあるなら飛行機で行きなさい。 · ⟦Còn nếu anh chỉ lắm chữ thì anh đi tàu hỏa sẽ đỡ tốn kém hơn.⟧ → でも学問ばかりたくさんあって（お金がないなら）、列車で行くほうが安上がりだ。 · ⟦Nhà ấy lắm đồ đạc thế!⟧ → あの家は家財道具がすごく多いね！ · ⟦Nhà này lắm phòng thật!⟧ → この家は本当に部屋が多い！
+⟦làm gì mà⟧：主に口語で使われ、これから示す事柄が一般的な状況に合わない、または反対の状況であることを表します（「どうして～なものか」）。
+⟦Ôi, chị cứ nói thế. Tôi làm gì mà lắm tiền.⟧ → もう、そんなこと言って。私がお金持ちなわけないでしょ。 · ⟦Lương tháng ít ỏi thế này thì làm gì mà mua được nhà.⟧ → こんなわずかな月給で家なんて買えるわけがない。 · ⟦Nó làm gì mà mua nhiều điện thoại thế!⟧ → あいつ、何のためにそんなに電話を買うんだ！ · ⟦Anh làm gì mà thức khuya vậy.⟧ → 何をしてこんなに夜更かししているの？
+⟦nhẵn túi⟧：財布が完全に空になり、一銭も残っていない状況を表します（「すっからかん」）。
+⟦Lúc nào cũng nhẵn túi chị ạ!⟧ → いつもすっからかんですよ！ · ⟦Tôi mua nhiều thứ quá nên nhẵn túi rồi.⟧ → いろいろ買いすぎて、すっからかんになった。 · ⟦Cứ đến cuối tháng là nó nhẵn túi.⟧ → 月末になると、あの子はいつも文無しだ。 · ⟦Tôi không đi siêu thị đâu vì nhẵn túi rồi.⟧ → お金がないからスーパーには行かないよ。
+⟦nói gì thì nói⟧：結局のところ、どうしようと事実は変わらないことを表します（「何と言おうと」）。
+⟦Chị ơi, tôi là sinh viên cho nên chị có nói gì thì nói chứ tôi làm gì có nhiều tiền đâu!⟧ → お姉さん、私は学生だから、何と言われてもお金なんてそんなにないですよ！ · ⟦Anh muốn nói gì thì nói, tôi vẫn không tin là chị ấy sẽ đi tham quan phố cổ Hội An vào thời điểm này.⟧ → あなたが何と言おうと、彼女がこの時期にホイアン旧市街を見物に行くとは信じられない。 · ⟦Mọi người nói gì thì nói, thằng bé vẫn không chịu nghe lời.⟧ → 皆が何と言おうと、その子は言うことを聞かない。
+=pl
+Objaśnienia gramatyczne
+⟦lắm⟧ + (rzeczownik): głównie potoczne; wyraża dużą, nieokreśloną ilość („mnóstwo”).
+⟦Nếu anh lắm tiền thì đi máy bay.⟧ → Jak masz dużo pieniędzy, leć samolotem. · ⟦Còn nếu anh chỉ lắm chữ thì anh đi tàu hỏa sẽ đỡ tốn kém hơn.⟧ → A jak masz tylko dużo wiedzy (a mało pieniędzy), jedź pociągiem – wyjdzie taniej. · ⟦Nhà ấy lắm đồ đạc thế!⟧ → Ale w tym domu jest mnóstwo rzeczy! · ⟦Nhà này lắm phòng thật!⟧ → Ten dom ma naprawdę mnóstwo pokoi!
+⟦làm gì mà⟧: głównie potoczne; wskazuje, że to, co następuje, nie pasuje do zwykłej sytuacji lub jej przeczy („gdzie tam, skąd niby”).
+⟦Ôi, chị cứ nói thế. Tôi làm gì mà lắm tiền.⟧ → Ech, co pani mówi. Skąd niby ja mam dużo pieniędzy. · ⟦Lương tháng ít ỏi thế này thì làm gì mà mua được nhà.⟧ → Z taką marną pensją skąd kupić dom? · ⟦Nó làm gì mà mua nhiều điện thoại thế!⟧ → Po co on kupuje tyle telefonów! · ⟦Anh làm gì mà thức khuya vậy.⟧ → Co robisz, że siedzisz tak późno?
+⟦nhẵn túi⟧: „spłukany, z pustą kieszenią” – wyraża, że nie został ani grosz.
+⟦Lúc nào cũng nhẵn túi chị ạ!⟧ → Zawsze jestem spłukany! · ⟦Tôi mua nhiều thứ quá nên nhẵn túi rồi.⟧ → Kupiłem tyle rzeczy, że jestem spłukany. · ⟦Cứ đến cuối tháng là nó nhẵn túi.⟧ → Pod koniec miesiąca zawsze jest bez grosza. · ⟦Tôi không đi siêu thị đâu vì nhẵn túi rồi.⟧ → Nie idę do supermarketu, bo nie mam pieniędzy.
+⟦nói gì thì nói⟧: „mów, co chcesz; co by nie mówić” – wyraża, że fakt i tak pozostaje niezmieniony.
+⟦Chị ơi, tôi là sinh viên cho nên chị có nói gì thì nói chứ tôi làm gì có nhiều tiền đâu!⟧ → Proszę pani, jestem studentem, więc niech pani mówi, co chce, ale ja naprawdę nie mam dużo pieniędzy! · ⟦Anh muốn nói gì thì nói, tôi vẫn không tin là chị ấy sẽ đi tham quan phố cổ Hội An vào thời điểm này.⟧ → Mów, co chcesz, i tak nie wierzę, że ona teraz pojedzie zwiedzać Hội An. · ⟦Mọi người nói gì thì nói, thằng bé vẫn không chịu nghe lời.⟧ → Co by kto nie mówił, chłopak i tak nie słucha.
