@@ -1,0 +1,182 @@
+@@ pdf-grammar-475996212a7c04f7#0
+=cs
+Gramatický výklad
+⟦vẫn⟧: „stále, pořád, přesto“ – zdůrazňuje, že situace trvá beze změny, i když okolnosti nejsou obvyklé.
+⟦Bao năm qua nó vẫn hòa với nhịp sống của thành phố, chia sẽ niềm vui nỗi buồn với người dân thành phố.⟧ → Po celá ta léta stále splývá s rytmem města a sdílí radosti i strasti jeho obyvatel. · ⟦Đường Sài Gòn xưa vẫn còn hằn sâu trong kí ức của nhiều người.⟧ → Ulice starého Saigonu jsou stále hluboko vryté do paměti mnoha lidí.
+⟦có lẽ vì thế⟧: „možná proto“ – velmi opatrně odhaduje výsledek v příčinném vztahu.
+⟦Sài Gòn mang vẻ đẹp độc đáo, lộng lẫy, kiêu sa của một thời có lẽ vì thế mà du khách đến Việt Nam đều muốn ghé thăm Sài Gòn.⟧ → Saigon nese jedinečnou, nádhernou a vznešenou krásu dávných časů – možná proto chce každý turista ve Vietnamu Saigon navštívit. · ⟦Sài Gòn chẳng có lấy một cái hồ tự nhiên với bóng cây tỏa mát có lẽ vì thế mà người dân Sài Gòn đã tạo nên một công viên Đầm Sen để thay thế.⟧ → Saigon nemá jediné přírodní jezero se stinnými stromy – možná proto si Saigonci vytvořili náhradou park Đầm Sen.
+⟦chẳng có lấy⟧: „ani jeden, vůbec žádný“ – hovorově důrazně zdůrazňuje, že nic takového není.
+⟦Trong tủ lạnh chẳng có lấy một chai nước nào.⟧ → V lednici není ani jedna lahev vody. · ⟦Quanh đây chẳng có lấy một cái chợ nào.⟧ → Tady v okolí není ani jeden trh. · ⟦Ở đây thật vắng vẻ, vừa tối mà đã chẳng có lấy một bóng người.⟧ → Je tu opravdu pusto – sotva se setmí, není tu ani živáčka.
+⟦vinh danh là⟧: „být oceněn jako, vyhlášen za“ – vyjadřuje, že něco získalo určitou čest či slávu.
+⟦Hà Nội đã từng được thế giới vinh danh là “Thành phố hòa bình”.⟧ → Hanoj byla světem oceněna jako „Město míru“. · ⟦Đà Nẵng đã được nhiều người vinh danh là “Thành phố đáng sống nhất Việt Nam”.⟧ → Mnozí vyhlásili Đà Nẵng za „nejlepší město k životu ve Vietnamu“.
+=zh_cn
+语法解说
+⟦vẫn⟧：意为“仍然、依旧”，用于强调即使情况不寻常，一切也将毫无变动地持续下去。
+⟦Bao năm qua nó vẫn hòa với nhịp sống của thành phố, chia sẽ niềm vui nỗi buồn với người dân thành phố.⟧ → 这么多年来，它依然融入城市的生活节奏，与市民同甘共苦。 · ⟦Đường Sài Gòn xưa vẫn còn hằn sâu trong kí ức của nhiều người.⟧ → 旧日西贡的街道依然深深印在许多人的记忆中。
+⟦có lẽ vì thế⟧：意为“也许正因如此”，在因果关系中非常谨慎地推测结果。
+⟦Sài Gòn mang vẻ đẹp độc đáo, lộng lẫy, kiêu sa của một thời có lẽ vì thế mà du khách đến Việt Nam đều muốn ghé thăm Sài Gòn.⟧ → 西贡带着一个时代独特、华丽、高雅的美，也许正因如此，来越南的游客都想去西贡看看。 · ⟦Sài Gòn chẳng có lấy một cái hồ tự nhiên với bóng cây tỏa mát có lẽ vì thế mà người dân Sài Gòn đã tạo nên một công viên Đầm Sen để thay thế.⟧ → 西贡连一个绿树成荫的天然湖都没有，也许正因如此，西贡人建造了莲潭公园来代替。
+⟦chẳng có lấy⟧：意为“连一个……都没有”，主要用于口语，强烈强调什么都没有。
+⟦Trong tủ lạnh chẳng có lấy một chai nước nào.⟧ → 冰箱里连一瓶水都没有。 · ⟦Quanh đây chẳng có lấy một cái chợ nào.⟧ → 这附近连一个市场都没有。 · ⟦Ở đây thật vắng vẻ, vừa tối mà đã chẳng có lấy một bóng người.⟧ → 这里真冷清，天刚黑就连个人影都没有了。
+⟦vinh danh là⟧：意为“被誉为”，表示获得了某种荣誉或荣耀。
+⟦Hà Nội đã từng được thế giới vinh danh là “Thành phố hòa bình”.⟧ → 河内曾被世界誉为“和平之城”。 · ⟦Đà Nẵng đã được nhiều người vinh danh là “Thành phố đáng sống nhất Việt Nam”.⟧ → 岘港被许多人誉为“越南最宜居的城市”。
+=zh
+文法解說
+⟦vẫn⟧：意為「仍然、依舊」，用於強調即使情況不尋常，一切也將毫無變動地持續下去。
+⟦Bao năm qua nó vẫn hòa với nhịp sống của thành phố, chia sẽ niềm vui nỗi buồn với người dân thành phố.⟧ → 這麼多年來，它依然融入城市的生活節奏，與市民同甘共苦。 · ⟦Đường Sài Gòn xưa vẫn còn hằn sâu trong kí ức của nhiều người.⟧ → 舊日西貢的街道依然深深印在許多人的記憶中。
+⟦có lẽ vì thế⟧：意為「也許正因如此」，在因果關係中非常謹慎地推測結果。
+⟦Sài Gòn mang vẻ đẹp độc đáo, lộng lẫy, kiêu sa của một thời có lẽ vì thế mà du khách đến Việt Nam đều muốn ghé thăm Sài Gòn.⟧ → 西貢帶著一個時代獨特、華麗、高雅的美，也許正因如此，來越南的遊客都想去西貢看看。 · ⟦Sài Gòn chẳng có lấy một cái hồ tự nhiên với bóng cây tỏa mát có lẽ vì thế mà người dân Sài Gòn đã tạo nên một công viên Đầm Sen để thay thế.⟧ → 西貢連一個綠樹成蔭的天然湖都沒有，也許正因如此，西貢人建造了蓮潭公園來代替。
+⟦chẳng có lấy⟧：意為「連一個……都沒有」，主要用於口語，強烈強調什麼都沒有。
+⟦Trong tủ lạnh chẳng có lấy một chai nước nào.⟧ → 冰箱裡連一瓶水都沒有。 · ⟦Quanh đây chẳng có lấy một cái chợ nào.⟧ → 這附近連一個市場都沒有。 · ⟦Ở đây thật vắng vẻ, vừa tối mà đã chẳng có lấy một bóng người.⟧ → 這裡真冷清，天剛黑就連個人影都沒有了。
+⟦vinh danh là⟧：意為「被譽為」，表示獲得了某種榮譽或榮耀。
+⟦Hà Nội đã từng được thế giới vinh danh là “Thành phố hòa bình”.⟧ → 河內曾被世界譽為「和平之城」。 · ⟦Đà Nẵng đã được nhiều người vinh danh là “Thành phố đáng sống nhất Việt Nam”.⟧ → 峴港被許多人譽為「越南最宜居的城市」。
+=en
+Grammar notes
+⟦vẫn⟧: "still" – emphasizes that everything continues unchanged even if circumstances are unusual.
+⟦Bao năm qua nó vẫn hòa với nhịp sống của thành phố, chia sẽ niềm vui nỗi buồn với người dân thành phố.⟧ → Over all these years it has still blended with the rhythm of the city, sharing its people's joys and sorrows. · ⟦Đường Sài Gòn xưa vẫn còn hằn sâu trong kí ức của nhiều người.⟧ → The streets of old Saigon are still etched deep in many people's memories.
+⟦có lẽ vì thế⟧: "perhaps that's why" – very cautiously infers a result in a cause-and-effect relationship.
+⟦Sài Gòn mang vẻ đẹp độc đáo, lộng lẫy, kiêu sa của một thời có lẽ vì thế mà du khách đến Việt Nam đều muốn ghé thăm Sài Gòn.⟧ → Saigon carries the unique, splendid, elegant beauty of a bygone era – perhaps that's why every visitor to Vietnam wants to stop in Saigon. · ⟦Sài Gòn chẳng có lấy một cái hồ tự nhiên với bóng cây tỏa mát có lẽ vì thế mà người dân Sài Gòn đã tạo nên một công viên Đầm Sen để thay thế.⟧ → Saigon doesn't have a single natural lake shaded by trees – perhaps that's why Saigonese created Đầm Sen Park instead.
+⟦chẳng có lấy⟧: "not even one" – mainly colloquial; strongly emphasizes that there is nothing at all.
+⟦Trong tủ lạnh chẳng có lấy một chai nước nào.⟧ → There isn't even a single bottle of water in the fridge. · ⟦Quanh đây chẳng có lấy một cái chợ nào.⟧ → There's not even one market around here. · ⟦Ở đây thật vắng vẻ, vừa tối mà đã chẳng có lấy một bóng người.⟧ → It's really deserted here – it's barely dark and there's not a soul in sight.
+⟦vinh danh là⟧: "to be honoured as, hailed as" – conveys that something has received an honour or distinction.
+⟦Hà Nội đã từng được thế giới vinh danh là “Thành phố hòa bình”.⟧ → Hanoi was once honoured by the world as the "City for Peace". · ⟦Đà Nẵng đã được nhiều người vinh danh là “Thành phố đáng sống nhất Việt Nam”.⟧ → Đà Nẵng has been hailed by many as "the most liveable city in Vietnam".
+=fr
+Notes de grammaire
+⟦vẫn⟧ : « toujours, encore » – souligne que tout se poursuit sans changement, même si les circonstances sont inhabituelles.
+⟦Bao năm qua nó vẫn hòa với nhịp sống của thành phố, chia sẽ niềm vui nỗi buồn với người dân thành phố.⟧ → Depuis tant d'années, elle vit toujours au rythme de la ville et partage les joies et les peines de ses habitants. · ⟦Đường Sài Gòn xưa vẫn còn hằn sâu trong kí ức của nhiều người.⟧ → Les rues du vieux Saïgon restent gravées dans la mémoire de beaucoup.
+⟦có lẽ vì thế⟧ : « c'est peut-être pour cela que » – suppose très prudemment un résultat dans une relation de cause à effet.
+⟦Sài Gòn mang vẻ đẹp độc đáo, lộng lẫy, kiêu sa của một thời có lẽ vì thế mà du khách đến Việt Nam đều muốn ghé thăm Sài Gòn.⟧ → Saïgon porte la beauté unique, somptueuse et altière d'une époque ; c'est peut-être pour cela que tous les visiteurs du Vietnam veulent y faire étape. · ⟦Sài Gòn chẳng có lấy một cái hồ tự nhiên với bóng cây tỏa mát có lẽ vì thế mà người dân Sài Gòn đã tạo nên một công viên Đầm Sen để thay thế.⟧ → Saïgon n'a pas un seul lac naturel ombragé ; c'est peut-être pour cela que ses habitants ont créé le parc Đầm Sen pour le remplacer.
+⟦chẳng có lấy⟧ : « pas même un » – surtout oral ; souligne fortement qu'il n'y a rien du tout.
+⟦Trong tủ lạnh chẳng có lấy một chai nước nào.⟧ → Il n'y a pas même une bouteille d'eau dans le frigo. · ⟦Quanh đây chẳng có lấy một cái chợ nào.⟧ → Il n'y a pas un seul marché dans le coin. · ⟦Ở đây thật vắng vẻ, vừa tối mà đã chẳng có lấy một bóng người.⟧ → C'est vraiment désert ici : à peine la nuit tombée, il n'y a plus âme qui vive.
+⟦vinh danh là⟧ : « être honoré comme, être sacré » – exprime qu'on a reçu un honneur ou une distinction.
+⟦Hà Nội đã từng được thế giới vinh danh là “Thành phố hòa bình”.⟧ → Hanoï a été honorée par le monde comme « Ville pour la paix ». · ⟦Đà Nẵng đã được nhiều người vinh danh là “Thành phố đáng sống nhất Việt Nam”.⟧ → Đà Nẵng a été sacrée par beaucoup « ville la plus agréable à vivre du Vietnam ».
+=de
+Grammatikerläuterungen
+⟦vẫn⟧: „immer noch, dennoch“ – betont, dass alles unverändert andauert, auch unter ungewöhnlichen Umständen.
+⟦Bao năm qua nó vẫn hòa với nhịp sống của thành phố, chia sẽ niềm vui nỗi buồn với người dân thành phố.⟧ → All die Jahre ist sie immer noch eins mit dem Rhythmus der Stadt und teilt Freud und Leid ihrer Bewohner. · ⟦Đường Sài Gòn xưa vẫn còn hằn sâu trong kí ức của nhiều người.⟧ → Die Straßen des alten Saigon sind vielen Menschen immer noch tief ins Gedächtnis eingeprägt.
+⟦có lẽ vì thế⟧: „vielleicht deshalb“ – schließt sehr vorsichtig auf ein Ergebnis in einem Ursache-Wirkungs-Verhältnis.
+⟦Sài Gòn mang vẻ đẹp độc đáo, lộng lẫy, kiêu sa của một thời có lẽ vì thế mà du khách đến Việt Nam đều muốn ghé thăm Sài Gòn.⟧ → Saigon trägt die einzigartige, prächtige und stolze Schönheit einer vergangenen Zeit – vielleicht wollen deshalb alle Vietnambesucher in Saigon Station machen. · ⟦Sài Gòn chẳng có lấy một cái hồ tự nhiên với bóng cây tỏa mát có lẽ vì thế mà người dân Sài Gòn đã tạo nên một công viên Đầm Sen để thay thế.⟧ → Saigon hat keinen einzigen natürlichen See mit schattigen Bäumen – vielleicht haben die Saigoner deshalb als Ersatz den Đầm-Sen-Park angelegt.
+⟦chẳng có lấy⟧: „nicht ein einziger“ – vorwiegend umgangssprachlich; betont stark, dass es gar nichts gibt.
+⟦Trong tủ lạnh chẳng có lấy một chai nước nào.⟧ → Im Kühlschrank ist nicht eine einzige Flasche Wasser. · ⟦Quanh đây chẳng có lấy một cái chợ nào.⟧ → Hier in der Nähe gibt es keinen einzigen Markt. · ⟦Ở đây thật vắng vẻ, vừa tối mà đã chẳng có lấy một bóng người.⟧ → Hier ist es wirklich öde – kaum wird es dunkel, ist keine Menschenseele mehr zu sehen.
+⟦vinh danh là⟧: „geehrt werden als, gekürt werden zu“ – drückt aus, dass etwas eine Ehre oder Auszeichnung erhalten hat.
+⟦Hà Nội đã từng được thế giới vinh danh là “Thành phố hòa bình”.⟧ → Hanoi wurde von der Welt als „Stadt des Friedens“ geehrt. · ⟦Đà Nẵng đã được nhiều người vinh danh là “Thành phố đáng sống nhất Việt Nam”.⟧ → Đà Nẵng wurde von vielen zur „lebenswertesten Stadt Vietnams“ gekürt.
+=hu
+Nyelvtani magyarázat
+⟦vẫn⟧: „még mindig, mégis” – azt hangsúlyozza, hogy minden változatlanul folytatódik, még ha a körülmények nem is szokványosak.
+⟦Bao năm qua nó vẫn hòa với nhịp sống của thành phố, chia sẽ niềm vui nỗi buồn với người dân thành phố.⟧ → Ennyi év alatt még mindig együtt lüktet a város ritmusával, osztozva lakói örömében és bánatában. · ⟦Đường Sài Gòn xưa vẫn còn hằn sâu trong kí ức của nhiều người.⟧ → A régi Saigon utcái még mindig mélyen bevésődtek sokak emlékezetébe.
+⟦có lẽ vì thế⟧: „talán ezért” – ok-okozati viszonyban nagyon óvatosan következtet az eredményre.
+⟦Sài Gòn mang vẻ đẹp độc đáo, lộng lẫy, kiêu sa của một thời có lẽ vì thế mà du khách đến Việt Nam đều muốn ghé thăm Sài Gòn.⟧ → Saigon egy letűnt kor egyedi, pompás, büszke szépségét hordozza – talán ezért akar minden Vietnámba érkező turista Saigonba is ellátogatni. · ⟦Sài Gòn chẳng có lấy một cái hồ tự nhiên với bóng cây tỏa mát có lẽ vì thế mà người dân Sài Gòn đã tạo nên một công viên Đầm Sen để thay thế.⟧ → Saigonban egyetlen árnyas fákkal övezett természetes tó sincs – talán ezért hozták létre helyette a saigoniak a Đầm Sen parkot.
+⟦chẳng có lấy⟧: „egyetlen ~ sincs” – főleg beszélt nyelvben erősen hangsúlyozza, hogy semmi sincs.
+⟦Trong tủ lạnh chẳng có lấy một chai nước nào.⟧ → A hűtőben egyetlen üveg víz sincs. · ⟦Quanh đây chẳng có lấy một cái chợ nào.⟧ → Errefelé egyetlen piac sincs. · ⟦Ở đây thật vắng vẻ, vừa tối mà đã chẳng có lấy một bóng người.⟧ → Itt tényleg kihalt minden – alig sötétedik, és már egy lélek sincs.
+⟦vinh danh là⟧: „~nak választották, ~ címet kapta” – azt fejezi ki, hogy valami valamilyen megtiszteltetésben részesült.
+⟦Hà Nội đã từng được thế giới vinh danh là “Thành phố hòa bình”.⟧ → Hanoi egykor elnyerte a világtól „A béke városa” címet. · ⟦Đà Nẵng đã được nhiều người vinh danh là “Thành phố đáng sống nhất Việt Nam”.⟧ → Sokan Đà Nẵngot „Vietnám legélhetőbb városának” nevezték.
+=id
+Penjelasan tata bahasa
+⟦vẫn⟧: "tetap, masih" – menegaskan bahwa semuanya berlanjut tanpa perubahan meski keadaannya tidak biasa.
+⟦Bao năm qua nó vẫn hòa với nhịp sống của thành phố, chia sẽ niềm vui nỗi buồn với người dân thành phố.⟧ → Selama bertahun-tahun ia tetap menyatu dengan irama kehidupan kota, berbagi suka duka dengan warganya. · ⟦Đường Sài Gòn xưa vẫn còn hằn sâu trong kí ức của nhiều người.⟧ → Jalan-jalan Saigon tempo dulu masih terpatri dalam ingatan banyak orang.
+⟦có lẽ vì thế⟧: "barangkali karena itulah" – memperkirakan akibat dengan sangat hati-hati dalam hubungan sebab-akibat.
+⟦Sài Gòn mang vẻ đẹp độc đáo, lộng lẫy, kiêu sa của một thời có lẽ vì thế mà du khách đến Việt Nam đều muốn ghé thăm Sài Gòn.⟧ → Saigon menyimpan keindahan unik, megah, dan anggun dari masa lalu; barangkali karena itulah semua wisatawan ke Vietnam ingin mampir ke Saigon. · ⟦Sài Gòn chẳng có lấy một cái hồ tự nhiên với bóng cây tỏa mát có lẽ vì thế mà người dân Sài Gòn đã tạo nên một công viên Đầm Sen để thay thế.⟧ → Saigon tidak punya satu pun danau alami yang teduh; barangkali karena itulah warga Saigon membangun Taman Đầm Sen sebagai gantinya.
+⟦chẳng có lấy⟧: "tak ada satu pun" – terutama lisan; menegaskan dengan kuat bahwa tidak ada apa-apa.
+⟦Trong tủ lạnh chẳng có lấy một chai nước nào.⟧ → Di kulkas tidak ada satu botol air pun. · ⟦Quanh đây chẳng có lấy một cái chợ nào.⟧ → Di sekitar sini tidak ada satu pasar pun. · ⟦Ở đây thật vắng vẻ, vừa tối mà đã chẳng có lấy một bóng người.⟧ → Di sini sungguh sepi, baru gelap sudah tak ada satu orang pun.
+⟦vinh danh là⟧: "dianugerahi gelar, dinobatkan sebagai" – menyatakan bahwa sesuatu memperoleh kehormatan.
+⟦Hà Nội đã từng được thế giới vinh danh là “Thành phố hòa bình”.⟧ → Hanoi pernah dinobatkan dunia sebagai "Kota Perdamaian". · ⟦Đà Nẵng đã được nhiều người vinh danh là “Thành phố đáng sống nhất Việt Nam”.⟧ → Đà Nẵng dinobatkan banyak orang sebagai "kota paling layak huni di Vietnam".
+=ja
+文法解説
+⟦vẫn⟧：たとえ一般的な状況でなくても、すべての状況が何の変化もなく続くことを強調するために使います（「依然として、それでも」）。
+⟦Bao năm qua nó vẫn hòa với nhịp sống của thành phố, chia sẽ niềm vui nỗi buồn với người dân thành phố.⟧ → 長年にわたり、それは今も都市の生活のリズムに溶け込み、市民と喜びや悲しみを分かち合っている。 · ⟦Đường Sài Gòn xưa vẫn còn hằn sâu trong kí ức của nhiều người.⟧ → 昔のサイゴンの通りは、今も多くの人の記憶に深く刻まれている。
+⟦có lẽ vì thế⟧：因果関係においてきわめて慎重に結果を推測するために使います（「おそらくそのために」）。
+⟦Sài Gòn mang vẻ đẹp độc đáo, lộng lẫy, kiêu sa của một thời có lẽ vì thế mà du khách đến Việt Nam đều muốn ghé thăm Sài Gòn.⟧ → サイゴンにはかつての独特で華やか、気高い美しさがある。おそらくそのため、ベトナムを訪れる旅行者は皆サイゴンに立ち寄りたがる。 · ⟦Sài Gòn chẳng có lấy một cái hồ tự nhiên với bóng cây tỏa mát có lẽ vì thế mà người dân Sài Gòn đã tạo nên một công viên Đầm Sen để thay thế.⟧ → サイゴンには木陰の涼しい天然の湖が一つもない。おそらくそのため、サイゴンの人々は代わりにダムセン公園を造った。
+⟦chẳng có lấy⟧：何一つないことを強く強調するため、主に口語で使います（「一つもない」）。
+⟦Trong tủ lạnh chẳng có lấy một chai nước nào.⟧ → 冷蔵庫には水が一本もない。 · ⟦Quanh đây chẳng có lấy một cái chợ nào.⟧ → この辺りには市場が一つもない。 · ⟦Ở đây thật vắng vẻ, vừa tối mà đã chẳng có lấy một bóng người.⟧ → ここは本当に寂しく、暗くなったばかりなのにもう人影一つない。
+⟦vinh danh là⟧：ある名誉や栄光を得たという意味を伝えるために使われます（「～と称えられる」）。
+⟦Hà Nội đã từng được thế giới vinh danh là “Thành phố hòa bình”.⟧ → ハノイはかつて世界から「平和の都市」と称えられた。 · ⟦Đà Nẵng đã được nhiều người vinh danh là “Thành phố đáng sống nhất Việt Nam”.⟧ → ダナンは多くの人に「ベトナムで最も住みやすい都市」と称えられている。
+=pl
+Objaśnienia gramatyczne
+⟦vẫn⟧: „wciąż, nadal, mimo to” – podkreśla, że wszystko trwa bez zmian, nawet w nietypowych okolicznościach.
+⟦Bao năm qua nó vẫn hòa với nhịp sống của thành phố, chia sẽ niềm vui nỗi buồn với người dân thành phố.⟧ → Przez te wszystkie lata wciąż współgra z rytmem miasta, dzieląc radości i smutki jego mieszkańców. · ⟦Đường Sài Gòn xưa vẫn còn hằn sâu trong kí ức của nhiều người.⟧ → Ulice dawnego Sajgonu wciąż są głęboko wyryte w pamięci wielu ludzi.
+⟦có lẽ vì thế⟧: „może właśnie dlatego” – bardzo ostrożnie wnioskuje o skutku w związku przyczynowo-skutkowym.
+⟦Sài Gòn mang vẻ đẹp độc đáo, lộng lẫy, kiêu sa của một thời có lẽ vì thế mà du khách đến Việt Nam đều muốn ghé thăm Sài Gòn.⟧ → Sajgon nosi niepowtarzalne, wspaniałe i dumne piękno minionej epoki – może dlatego każdy turysta w Wietnamie chce go odwiedzić. · ⟦Sài Gòn chẳng có lấy một cái hồ tự nhiên với bóng cây tỏa mát có lẽ vì thế mà người dân Sài Gòn đã tạo nên một công viên Đầm Sen để thay thế.⟧ → Sajgon nie ma ani jednego naturalnego jeziora ocienionego drzewami – może dlatego jego mieszkańcy stworzyli w zamian park Đầm Sen.
+⟦chẳng có lấy⟧: „ani jednego” – głównie potoczne; mocno podkreśla, że niczego nie ma.
+⟦Trong tủ lạnh chẳng có lấy một chai nước nào.⟧ → W lodówce nie ma ani jednej butelki wody. · ⟦Quanh đây chẳng có lấy một cái chợ nào.⟧ → W okolicy nie ma ani jednego targu. · ⟦Ở đây thật vắng vẻ, vừa tối mà đã chẳng có lấy một bóng người.⟧ → Tu jest naprawdę pusto – ledwie zapadł zmrok, a już nie ma żywej duszy.
+⟦vinh danh là⟧: „zostać uhonorowanym jako, okrzyknięty” – wyraża, że coś otrzymało zaszczyt lub wyróżnienie.
+⟦Hà Nội đã từng được thế giới vinh danh là “Thành phố hòa bình”.⟧ → Hanoi zostało uhonorowane przez świat tytułem „Miasta Pokoju”. · ⟦Đà Nẵng đã được nhiều người vinh danh là “Thành phố đáng sống nhất Việt Nam”.⟧ → Đà Nẵng przez wielu zostało okrzyknięte „najlepszym miastem do życia w Wietnamie”.
+@@ pdf-grammar-528eccf07ef879a6#0
+=cs
+Gramatický výklad
+⟦ngay⟧: „přímo, hned (u)“ – zdůrazňuje výraznou polohu předmětu vzhledem k uvedenému místu nebo jeho neobvyklost.
+⟦Phố đi bộ Nguyễn Huệ nằm ngay ở quận 1 thuộc trung tâm thành phố.⟧ → Pěší zóna Nguyễn Huệ leží přímo v 1. obvodu v centru města. · ⟦Nhà tôi nằm ngay cạnh bờ sông.⟧ → Můj dům stojí hned u řeky. · ⟦Trường đại học ở ngay cạnh bến xe điện ngầm.⟧ → Univerzita je hned vedle stanice metra. · ⟦Chiếc ô tô đỗ ngay giữa sân trường.⟧ → Auto parkuje přímo uprostřed školního dvora.
+⟦hàng trăm hàng nghìn⟧: „stovky a tisíce“ – vyjadřuje velké, nepřesné množství.
+⟦Hàng trăm hàng nghìn bông hoa đua nở và ngan ngát tỏa hương.⟧ → Stovky a tisíce květů o překot rozkvétají a šíří omamnou vůni. · ⟦Mùa xuân đón hàng trăm hàng nghìn con chim sáo từ đâu bay về.⟧ → Jaro vítá stovky a tisíce špačků, kteří odněkud přilétají. · ⟦Hàng trăm hàng nghìn người đã đổ xuống đường tham gia lễ hội.⟧ → Stovky a tisíce lidí se vyhrnuly do ulic na slavnost. · ⟦Vào dịp Tết, ngày nào cũng có đến hàng trăm hàng nghìn người đến thăm đường hoa Nguyễn Huệ.⟧ → O Tếtu navštíví květinovou ulici Nguyễn Huệ každý den stovky a tisíce lidí.
+⟦vào⟧, ⟦về⟧ + (podmět–přísudek): stojí na začátku věty a uvádí časový bod či dobu, k níž se událost vztahuje („v, o, k“).
+⟦Vào mỗi dịp Tết, nơi đây có hàng trăm hàng nghìn bó hoa, cây cảnh từ các nơi đổ về.⟧ → Každý Tết se sem sjíždějí stovky a tisíce kytic a okrasných rostlin z celé země. · ⟦Về đêm, phố đi bộ lung linh ánh điện, rất thích hợp cho mọi người ngắm cảnh, vui chơi và thưởng thức ẩm thực.⟧ → V noci se pěší zóna třpytí světly a je jako stvořená k procházkám, zábavě a ochutnávání jídel. · ⟦Vào đêm giao thừa, nhà nào cũng thức để đón thời điểm chuyển giao giữa năm cũ và năm mới.⟧ → O silvestrovské noci bdí každá rodina, aby přivítala přelom starého a nového roku. · ⟦Về chiều, nắng dịu dần nhưng thời tiết vẫn còn rất nóng.⟧ → K večeru slunce slábne, ale je stále velké horko.
+=zh_cn
+语法解说
+⟦ngay⟧：意为“就在、正好”，强调与所述地点相关的对象的显著特点，或其某种不寻常之处。
+⟦Phố đi bộ Nguyễn Huệ nằm ngay ở quận 1 thuộc trung tâm thành phố.⟧ → 阮惠步行街就在市中心的第一郡。 · ⟦Nhà tôi nằm ngay cạnh bờ sông.⟧ → 我家就在河边。 · ⟦Trường đại học ở ngay cạnh bến xe điện ngầm.⟧ → 大学就在地铁站旁边。 · ⟦Chiếc ô tô đỗ ngay giữa sân trường.⟧ → 汽车就停在校园正中间。
+⟦hàng trăm hàng nghìn⟧：意为“成百上千”，表示不确切的大数量。
+⟦Hàng trăm hàng nghìn bông hoa đua nở và ngan ngát tỏa hương.⟧ → 成百上千朵花竞相开放，香气四溢。 · ⟦Mùa xuân đón hàng trăm hàng nghìn con chim sáo từ đâu bay về.⟧ → 春天迎来了不知从哪里飞来的成百上千只八哥。 · ⟦Hàng trăm hàng nghìn người đã đổ xuống đường tham gia lễ hội.⟧ → 成百上千的人涌上街头参加节庆。 · ⟦Vào dịp Tết, ngày nào cũng có đến hàng trăm hàng nghìn người đến thăm đường hoa Nguyễn Huệ.⟧ → 春节期间，每天都有成百上千的人来参观阮惠花街。
+⟦vào⟧、⟦về⟧ +（主–谓）：用于句首，表示与句中事件、情况相关的时间点或时段（“在……、到了……”）。
+⟦Vào mỗi dịp Tết, nơi đây có hàng trăm hàng nghìn bó hoa, cây cảnh từ các nơi đổ về.⟧ → 每逢春节，这里都有成百上千束鲜花和盆景从各地汇集而来。 · ⟦Về đêm, phố đi bộ lung linh ánh điện, rất thích hợp cho mọi người ngắm cảnh, vui chơi và thưởng thức ẩm thực.⟧ → 到了夜晚，步行街灯火璀璨，非常适合大家观景、游玩和品尝美食。 · ⟦Vào đêm giao thừa, nhà nào cũng thức để đón thời điểm chuyển giao giữa năm cũ và năm mới.⟧ → 除夕夜，家家户户都守岁，迎接新旧年交替的时刻。 · ⟦Về chiều, nắng dịu dần nhưng thời tiết vẫn còn rất nóng.⟧ → 傍晚时分，阳光渐渐柔和，但天气依然很热。
+=zh
+文法解說
+⟦ngay⟧：意為「就在、正好」，強調與所述地點相關的對象的顯著特點，或其某種不尋常之處。
+⟦Phố đi bộ Nguyễn Huệ nằm ngay ở quận 1 thuộc trung tâm thành phố.⟧ → 阮惠徒步街就在市中心的第一郡。 · ⟦Nhà tôi nằm ngay cạnh bờ sông.⟧ → 我家就在河邊。 · ⟦Trường đại học ở ngay cạnh bến xe điện ngầm.⟧ → 大學就在捷運站旁邊。 · ⟦Chiếc ô tô đỗ ngay giữa sân trường.⟧ → 汽車就停在校園正中間。
+⟦hàng trăm hàng nghìn⟧：意為「成百上千」，表示不確切的大數量。
+⟦Hàng trăm hàng nghìn bông hoa đua nở và ngan ngát tỏa hương.⟧ → 成百上千朵花競相開放，香氣四溢。 · ⟦Mùa xuân đón hàng trăm hàng nghìn con chim sáo từ đâu bay về.⟧ → 春天迎來了不知從哪裡飛來的成百上千隻八哥。 · ⟦Hàng trăm hàng nghìn người đã đổ xuống đường tham gia lễ hội.⟧ → 成百上千的人湧上街頭參加節慶。 · ⟦Vào dịp Tết, ngày nào cũng có đến hàng trăm hàng nghìn người đến thăm đường hoa Nguyễn Huệ.⟧ → 過年期間，每天都有成百上千的人來參觀阮惠花街。
+⟦vào⟧、⟦về⟧ +（主–謂）：用於句首，表示與句中事件、情況相關的時間點或時段（「在……、到了……」）。
+⟦Vào mỗi dịp Tết, nơi đây có hàng trăm hàng nghìn bó hoa, cây cảnh từ các nơi đổ về.⟧ → 每逢過年，這裡都有成百上千束鮮花和盆景從各地匯集而來。 · ⟦Về đêm, phố đi bộ lung linh ánh điện, rất thích hợp cho mọi người ngắm cảnh, vui chơi và thưởng thức ẩm thực.⟧ → 到了夜晚，徒步街燈火璀璨，非常適合大家賞景、遊玩和品嚐美食。 · ⟦Vào đêm giao thừa, nhà nào cũng thức để đón thời điểm chuyển giao giữa năm cũ và năm mới.⟧ → 除夕夜，家家戶戶都守歲，迎接新舊年交替的時刻。 · ⟦Về chiều, nắng dịu dần nhưng thời tiết vẫn còn rất nóng.⟧ → 傍晚時分，陽光漸漸柔和，但天氣依然很熱。
+=en
+Grammar notes
+⟦ngay⟧: "right (in/next to)" – emphasizes the notable position of something in relation to the place mentioned, or something unusual about it.
+⟦Phố đi bộ Nguyễn Huệ nằm ngay ở quận 1 thuộc trung tâm thành phố.⟧ → Nguyễn Huệ walking street is right in District 1, in the city centre. · ⟦Nhà tôi nằm ngay cạnh bờ sông.⟧ → My house is right by the river. · ⟦Trường đại học ở ngay cạnh bến xe điện ngầm.⟧ → The university is right next to the metro station. · ⟦Chiếc ô tô đỗ ngay giữa sân trường.⟧ → The car is parked right in the middle of the schoolyard.
+⟦hàng trăm hàng nghìn⟧: "hundreds and thousands" – expresses a large, imprecise number.
+⟦Hàng trăm hàng nghìn bông hoa đua nở và ngan ngát tỏa hương.⟧ → Hundreds and thousands of flowers bloom and spread their sweet fragrance. · ⟦Mùa xuân đón hàng trăm hàng nghìn con chim sáo từ đâu bay về.⟧ → Spring welcomes hundreds and thousands of mynas flying back from who knows where. · ⟦Hàng trăm hàng nghìn người đã đổ xuống đường tham gia lễ hội.⟧ → Hundreds and thousands of people poured onto the streets for the festival. · ⟦Vào dịp Tết, ngày nào cũng có đến hàng trăm hàng nghìn người đến thăm đường hoa Nguyễn Huệ.⟧ → At Tết, hundreds and thousands of people visit the Nguyễn Huệ flower street every day.
+⟦vào⟧, ⟦về⟧ + (subject–predicate): used at the start of a sentence to indicate the point or period of time related to the event ("at, in, towards").
+⟦Vào mỗi dịp Tết, nơi đây có hàng trăm hàng nghìn bó hoa, cây cảnh từ các nơi đổ về.⟧ → Every Tết, hundreds and thousands of bouquets and ornamental plants pour in here from everywhere. · ⟦Về đêm, phố đi bộ lung linh ánh điện, rất thích hợp cho mọi người ngắm cảnh, vui chơi và thưởng thức ẩm thực.⟧ → At night, the walking street sparkles with lights, perfect for sightseeing, having fun and enjoying food. · ⟦Vào đêm giao thừa, nhà nào cũng thức để đón thời điểm chuyển giao giữa năm cũ và năm mới.⟧ → On New Year's Eve, every family stays up to welcome the moment the old year turns into the new. · ⟦Về chiều, nắng dịu dần nhưng thời tiết vẫn còn rất nóng.⟧ → Towards evening the sun softens, but it's still very hot.
+=fr
+Notes de grammaire
+⟦ngay⟧ : « juste, en plein, tout près de » – souligne la position remarquable d'un objet par rapport au lieu mentionné, ou son caractère inhabituel.
+⟦Phố đi bộ Nguyễn Huệ nằm ngay ở quận 1 thuộc trung tâm thành phố.⟧ → La rue piétonne Nguyễn Huệ se trouve en plein 1er arrondissement, au centre-ville. · ⟦Nhà tôi nằm ngay cạnh bờ sông.⟧ → Ma maison est juste au bord de la rivière. · ⟦Trường đại học ở ngay cạnh bến xe điện ngầm.⟧ → L'université est juste à côté de la station de métro. · ⟦Chiếc ô tô đỗ ngay giữa sân trường.⟧ → La voiture est garée en plein milieu de la cour de l'école.
+⟦hàng trăm hàng nghìn⟧ : « des centaines et des milliers » – exprime une grande quantité imprécise.
+⟦Hàng trăm hàng nghìn bông hoa đua nở và ngan ngát tỏa hương.⟧ → Des centaines et des milliers de fleurs s'épanouissent à l'envi et embaument l'air. · ⟦Mùa xuân đón hàng trăm hàng nghìn con chim sáo từ đâu bay về.⟧ → Le printemps accueille des centaines et des milliers de mainates venus d'on ne sait où. · ⟦Hàng trăm hàng nghìn người đã đổ xuống đường tham gia lễ hội.⟧ → Des centaines et des milliers de personnes ont envahi les rues pour la fête. · ⟦Vào dịp Tết, ngày nào cũng có đến hàng trăm hàng nghìn người đến thăm đường hoa Nguyễn Huệ.⟧ → Pendant le Têt, des centaines et des milliers de personnes visitent chaque jour la rue fleurie Nguyễn Huệ.
+⟦vào⟧, ⟦về⟧ + (sujet–prédicat) : en début de phrase, indiquent le moment ou la période liés à l'événement (« à, en, vers »).
+⟦Vào mỗi dịp Tết, nơi đây có hàng trăm hàng nghìn bó hoa, cây cảnh từ các nơi đổ về.⟧ → À chaque Têt, des centaines et des milliers de bouquets et de plantes ornementales affluent ici de partout. · ⟦Về đêm, phố đi bộ lung linh ánh điện, rất thích hợp cho mọi người ngắm cảnh, vui chơi và thưởng thức ẩm thực.⟧ → La nuit, la rue piétonne scintille de lumières, idéale pour flâner, s'amuser et goûter la cuisine. · ⟦Vào đêm giao thừa, nhà nào cũng thức để đón thời điểm chuyển giao giữa năm cũ và năm mới.⟧ → La nuit du réveillon, chaque famille veille pour accueillir le passage de l'ancienne à la nouvelle année. · ⟦Về chiều, nắng dịu dần nhưng thời tiết vẫn còn rất nóng.⟧ → Vers le soir, le soleil s'adoucit mais il fait encore très chaud.
+=de
+Grammatikerläuterungen
+⟦ngay⟧: „direkt, genau, gleich (neben)“ – betont die auffällige Lage eines Gegenstands in Bezug auf den genannten Ort oder etwas Ungewöhnliches daran.
+⟦Phố đi bộ Nguyễn Huệ nằm ngay ở quận 1 thuộc trung tâm thành phố.⟧ → Die Fußgängerzone Nguyễn Huệ liegt direkt im 1. Bezirk im Stadtzentrum. · ⟦Nhà tôi nằm ngay cạnh bờ sông.⟧ → Mein Haus liegt direkt am Fluss. · ⟦Trường đại học ở ngay cạnh bến xe điện ngầm.⟧ → Die Universität ist gleich neben der U-Bahn-Station. · ⟦Chiếc ô tô đỗ ngay giữa sân trường.⟧ → Das Auto parkt genau in der Mitte des Schulhofs.
+⟦hàng trăm hàng nghìn⟧: „Hunderte und Tausende“ – drückt eine große, ungenaue Menge aus.
+⟦Hàng trăm hàng nghìn bông hoa đua nở và ngan ngát tỏa hương.⟧ → Hunderte und Tausende Blumen blühen um die Wette und verströmen ihren Duft. · ⟦Mùa xuân đón hàng trăm hàng nghìn con chim sáo từ đâu bay về.⟧ → Der Frühling empfängt Hunderte und Tausende Stare, die von irgendwoher zurückfliegen. · ⟦Hàng trăm hàng nghìn người đã đổ xuống đường tham gia lễ hội.⟧ → Hunderte und Tausende Menschen strömten auf die Straßen zum Fest. · ⟦Vào dịp Tết, ngày nào cũng có đến hàng trăm hàng nghìn người đến thăm đường hoa Nguyễn Huệ.⟧ → An Tết besuchen täglich Hunderte und Tausende Menschen die Blumenstraße Nguyễn Huệ.
+⟦vào⟧, ⟦về⟧ + (Subjekt–Prädikat): stehen am Satzanfang und nennen den Zeitpunkt oder Zeitraum des Geschehens („an, in, gegen“).
+⟦Vào mỗi dịp Tết, nơi đây có hàng trăm hàng nghìn bó hoa, cây cảnh từ các nơi đổ về.⟧ → Zu jedem Tết strömen Hunderte und Tausende Blumensträuße und Zierpflanzen von überall hierher. · ⟦Về đêm, phố đi bộ lung linh ánh điện, rất thích hợp cho mọi người ngắm cảnh, vui chơi và thưởng thức ẩm thực.⟧ → Nachts glitzert die Fußgängerzone im Lichterglanz – ideal zum Bummeln, Vergnügen und Schlemmen. · ⟦Vào đêm giao thừa, nhà nào cũng thức để đón thời điểm chuyển giao giữa năm cũ và năm mới.⟧ → In der Silvesternacht bleibt jede Familie wach, um den Übergang vom alten ins neue Jahr zu begrüßen. · ⟦Về chiều, nắng dịu dần nhưng thời tiết vẫn còn rất nóng.⟧ → Gegen Abend wird die Sonne milder, aber es ist immer noch sehr heiß.
+=hu
+Nyelvtani magyarázat
+⟦ngay⟧: „pont, közvetlenül, épp” – egy tárgy feltűnő helyzetét hangsúlyozza az említett helyhez képest, vagy valami szokatlant.
+⟦Phố đi bộ Nguyễn Huệ nằm ngay ở quận 1 thuộc trung tâm thành phố.⟧ → A Nguyễn Huệ sétálóutca pont az 1. kerületben, a belvárosban van. · ⟦Nhà tôi nằm ngay cạnh bờ sông.⟧ → A házam közvetlenül a folyóparton áll. · ⟦Trường đại học ở ngay cạnh bến xe điện ngầm.⟧ → Az egyetem közvetlenül a metrómegálló mellett van. · ⟦Chiếc ô tô đỗ ngay giữa sân trường.⟧ → Az autó épp az iskolaudvar közepén parkol.
+⟦hàng trăm hàng nghìn⟧: „több száz, több ezer” – nagy, pontatlan mennyiséget fejez ki.
+⟦Hàng trăm hàng nghìn bông hoa đua nở và ngan ngát tỏa hương.⟧ → Több száz, több ezer virág nyílik versengve, és árasztja illatát. · ⟦Mùa xuân đón hàng trăm hàng nghìn con chim sáo từ đâu bay về.⟧ → A tavasz több száz, több ezer valahonnan visszatérő seregélyt fogad. · ⟦Hàng trăm hàng nghìn người đã đổ xuống đường tham gia lễ hội.⟧ → Több száz, több ezer ember özönlött az utcákra az ünnepségre. · ⟦Vào dịp Tết, ngày nào cũng có đến hàng trăm hàng nghìn người đến thăm đường hoa Nguyễn Huệ.⟧ → Tếtkor naponta több száz, több ezer ember látogat el a Nguyễn Huệ virágutcába.
+⟦vào⟧, ⟦về⟧ + (alany–állítmány): a mondat elején állva az eseményhez kapcsolódó időpontot, időszakot jelölik („-kor, -ban/-ben, ~ felé”).
+⟦Vào mỗi dịp Tết, nơi đây có hàng trăm hàng nghìn bó hoa, cây cảnh từ các nơi đổ về.⟧ → Minden Tếtkor több száz, több ezer virágcsokor és dísznövény érkezik ide mindenfelől. · ⟦Về đêm, phố đi bộ lung linh ánh điện, rất thích hợp cho mọi người ngắm cảnh, vui chơi và thưởng thức ẩm thực.⟧ → Éjszaka a sétálóutca fényárban úszik, ideális nézelődésre, szórakozásra és ételkóstolásra. · ⟦Vào đêm giao thừa, nhà nào cũng thức để đón thời điểm chuyển giao giữa năm cũ và năm mới.⟧ → Szilveszter éjjelén minden család fennmarad, hogy köszöntse az óév és az újév fordulóját. · ⟦Về chiều, nắng dịu dần nhưng thời tiết vẫn còn rất nóng.⟧ → Estefelé enyhül a napsütés, de még mindig nagyon meleg van.
+=id
+Penjelasan tata bahasa
+⟦ngay⟧: "tepat, persis" – menegaskan ciri menonjol suatu objek terkait tempat yang disebut, atau sesuatu yang tidak lazim.
+⟦Phố đi bộ Nguyễn Huệ nằm ngay ở quận 1 thuộc trung tâm thành phố.⟧ → Jalan pejalan kaki Nguyễn Huệ terletak tepat di Distrik 1, pusat kota. · ⟦Nhà tôi nằm ngay cạnh bờ sông.⟧ → Rumah saya tepat di tepi sungai. · ⟦Trường đại học ở ngay cạnh bến xe điện ngầm.⟧ → Universitas itu persis di sebelah stasiun kereta bawah tanah. · ⟦Chiếc ô tô đỗ ngay giữa sân trường.⟧ → Mobil itu parkir tepat di tengah halaman sekolah.
+⟦hàng trăm hàng nghìn⟧: "ratusan hingga ribuan" – menyatakan jumlah besar yang tidak pasti.
+⟦Hàng trăm hàng nghìn bông hoa đua nở và ngan ngát tỏa hương.⟧ → Ratusan hingga ribuan bunga bermekaran dan menebar harum. · ⟦Mùa xuân đón hàng trăm hàng nghìn con chim sáo từ đâu bay về.⟧ → Musim semi menyambut ratusan hingga ribuan burung jalak yang entah dari mana terbang kembali. · ⟦Hàng trăm hàng nghìn người đã đổ xuống đường tham gia lễ hội.⟧ → Ratusan hingga ribuan orang tumpah ke jalan mengikuti perayaan. · ⟦Vào dịp Tết, ngày nào cũng có đến hàng trăm hàng nghìn người đến thăm đường hoa Nguyễn Huệ.⟧ → Saat Tết, setiap hari ratusan hingga ribuan orang mengunjungi jalan bunga Nguyễn Huệ.
+⟦vào⟧, ⟦về⟧ + (subjek–predikat): dipakai di awal kalimat untuk menunjukkan titik atau rentang waktu terkait peristiwa ("pada, menjelang").
+⟦Vào mỗi dịp Tết, nơi đây có hàng trăm hàng nghìn bó hoa, cây cảnh từ các nơi đổ về.⟧ → Setiap Tết, ratusan hingga ribuan buket bunga dan tanaman hias dari berbagai daerah berdatangan ke sini. · ⟦Về đêm, phố đi bộ lung linh ánh điện, rất thích hợp cho mọi người ngắm cảnh, vui chơi và thưởng thức ẩm thực.⟧ → Pada malam hari, jalan pejalan kaki gemerlap cahaya lampu, sangat cocok untuk menikmati pemandangan, bersenang-senang, dan kuliner. · ⟦Vào đêm giao thừa, nhà nào cũng thức để đón thời điểm chuyển giao giữa năm cũ và năm mới.⟧ → Pada malam pergantian tahun, setiap keluarga begadang menyambut saat peralihan tahun lama ke tahun baru. · ⟦Về chiều, nắng dịu dần nhưng thời tiết vẫn còn rất nóng.⟧ → Menjelang sore, terik matahari mereda, tetapi cuaca masih sangat panas.
+=ja
+文法解説
+⟦ngay⟧：言及した地点と関連する対象の際立った特徴や、ある程度一般的でない点を強調するために使います（「すぐ、まさに」）。
+⟦Phố đi bộ Nguyễn Huệ nằm ngay ở quận 1 thuộc trung tâm thành phố.⟧ → グエンフエ歩行者天国は、市の中心部の1区にある。 · ⟦Nhà tôi nằm ngay cạnh bờ sông.⟧ → 私の家は川岸のすぐそばにある。 · ⟦Trường đại học ở ngay cạnh bến xe điện ngầm.⟧ → 大学は地下鉄の駅のすぐ隣にある。 · ⟦Chiếc ô tô đỗ ngay giữa sân trường.⟧ → 車が校庭のど真ん中に止まっている。
+⟦hàng trăm hàng nghìn⟧：正確でない大きな数量を表すために使います（「何百何千もの」）。
+⟦Hàng trăm hàng nghìn bông hoa đua nở và ngan ngát tỏa hương.⟧ → 何百何千もの花が競うように咲き、香りを漂わせている。 · ⟦Mùa xuân đón hàng trăm hàng nghìn con chim sáo từ đâu bay về.⟧ → 春はどこからか飛んで戻ってくる何百何千羽ものハッカチョウを迎える。 · ⟦Hàng trăm hàng nghìn người đã đổ xuống đường tham gia lễ hội.⟧ → 何百何千もの人々が祭りに参加するため通りにあふれた。 · ⟦Vào dịp Tết, ngày nào cũng có đến hàng trăm hàng nghìn người đến thăm đường hoa Nguyễn Huệ.⟧ → テトの時期には、毎日何百何千もの人がグエンフエの花通りを訪れる。
+⟦vào⟧、⟦về⟧ +（主語–述語）：主語–述語の文で示された出来事・状況に関わる時点や時間を示すため、文の冒頭に使われます（「～に」）。
+⟦Vào mỗi dịp Tết, nơi đây có hàng trăm hàng nghìn bó hoa, cây cảnh từ các nơi đổ về.⟧ → テトのたびに、ここには各地から何百何千もの花束や盆栽が集まってくる。 · ⟦Về đêm, phố đi bộ lung linh ánh điện, rất thích hợp cho mọi người ngắm cảnh, vui chơi và thưởng thức ẩm thực.⟧ → 夜になると歩行者天国は明かりにきらめき、景色を眺めたり遊んだりグルメを楽しんだりするのにぴったりだ。 · ⟦Vào đêm giao thừa, nhà nào cũng thức để đón thời điểm chuyển giao giữa năm cũ và năm mới.⟧ → 大みそかの夜には、どの家も起きていて旧年から新年へ移る時を迎える。 · ⟦Về chiều, nắng dịu dần nhưng thời tiết vẫn còn rất nóng.⟧ → 夕方になると日差しは次第に和らぐが、まだとても暑い。
+=pl
+Objaśnienia gramatyczne
+⟦ngay⟧: „tuż, dokładnie, zaraz (przy)” – podkreśla wyraźne położenie obiektu względem wspomnianego miejsca lub coś nietypowego.
+⟦Phố đi bộ Nguyễn Huệ nằm ngay ở quận 1 thuộc trung tâm thành phố.⟧ → Deptak Nguyễn Huệ leży w samym 1. dystrykcie, w centrum miasta. · ⟦Nhà tôi nằm ngay cạnh bờ sông.⟧ → Mój dom stoi tuż nad rzeką. · ⟦Trường đại học ở ngay cạnh bến xe điện ngầm.⟧ → Uczelnia jest tuż obok stacji metra. · ⟦Chiếc ô tô đỗ ngay giữa sân trường.⟧ → Samochód stoi na samym środku szkolnego dziedzińca.
+⟦hàng trăm hàng nghìn⟧: „setki i tysiące” – wyraża dużą, nieokreśloną liczbę.
+⟦Hàng trăm hàng nghìn bông hoa đua nở và ngan ngát tỏa hương.⟧ → Setki i tysiące kwiatów rozkwitają na wyścigi i roztaczają woń. · ⟦Mùa xuân đón hàng trăm hàng nghìn con chim sáo từ đâu bay về.⟧ → Wiosna wita setki i tysiące szpaków, które skądś wracają. · ⟦Hàng trăm hàng nghìn người đã đổ xuống đường tham gia lễ hội.⟧ → Setki i tysiące ludzi wylały się na ulice, by świętować. · ⟦Vào dịp Tết, ngày nào cũng có đến hàng trăm hàng nghìn người đến thăm đường hoa Nguyễn Huệ.⟧ → W czasie Tết setki i tysiące ludzi codziennie odwiedzają kwiatową ulicę Nguyễn Huệ.
+⟦vào⟧, ⟦về⟧ + (podmiot–orzeczenie): stoją na początku zdania i wskazują moment lub okres związany ze zdarzeniem („w, o, pod”).
+⟦Vào mỗi dịp Tết, nơi đây có hàng trăm hàng nghìn bó hoa, cây cảnh từ các nơi đổ về.⟧ → Na każdy Tết zjeżdżają tu setki i tysiące bukietów i roślin ozdobnych z całego kraju. · ⟦Về đêm, phố đi bộ lung linh ánh điện, rất thích hợp cho mọi người ngắm cảnh, vui chơi và thưởng thức ẩm thực.⟧ → Nocą deptak mieni się światłami – idealny do spacerów, zabawy i kosztowania potraw. · ⟦Vào đêm giao thừa, nhà nào cũng thức để đón thời điểm chuyển giao giữa năm cũ và năm mới.⟧ → W noc sylwestrową każda rodzina czuwa, by powitać przełom starego i nowego roku. · ⟦Về chiều, nắng dịu dần nhưng thời tiết vẫn còn rất nóng.⟧ → Pod wieczór słońce łagodnieje, ale wciąż jest bardzo gorąco.
