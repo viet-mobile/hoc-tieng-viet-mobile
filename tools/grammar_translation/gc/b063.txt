@@ -1,0 +1,244 @@
+@@ pdf-grammar-e559565668b6e8cb#0
+=cs
+Gramatický výklad
+Za ⟦vì vậy⟧ následuje výsledek toho, co bylo řečeno předtím: „proto, a tak“.
+⟦Anh Nam bận học vì vậy không đi chơi.⟧ → Nam měl hodně učení, proto nešel ven. · ⟦Thợ may ở Huế khéo tay lắm, vì vậy họ may áo dài rất đẹp.⟧ → Krejčí v Huế jsou velmi zruční, proto šijí nádherné áo dài.
+⟦hễ A là B⟧ tvoří podmínku a výsledek: „kdykoli A, (vždy) B“.
+⟦Hễ có ngày nghỉ là họ đi du lịch.⟧ → Kdykoli mají volno, jedou na výlet. · ⟦Hễ đến Huế là tôi và các bạn của tôi đi may áo dài.⟧ → Kdykoli přijedeme do Huế, jdeme si s přáteli nechat ušít áo dài.
+=zh_cn
+语法解说
+⟦vì vậy⟧ 后面接前面所述内容的结果，意为“因此、所以”。
+⟦Anh Nam bận học vì vậy không đi chơi.⟧ → 阿南忙于学习，所以没去玩。 · ⟦Thợ may ở Huế khéo tay lắm, vì vậy họ may áo dài rất đẹp.⟧ → 顺化的裁缝手很巧，所以他们做的奥黛非常漂亮。
+⟦hễ A là B⟧ 构成条件和结果，意为“只要A就（一定）B”。
+⟦Hễ có ngày nghỉ là họ đi du lịch.⟧ → 只要有假期，他们就去旅行。 · ⟦Hễ đến Huế là tôi và các bạn của tôi đi may áo dài.⟧ → 每次一到顺化，我和朋友们就去定做奥黛。
+=zh
+文法解說
+⟦vì vậy⟧ 後面接前面所述內容的結果，意為「因此、所以」。
+⟦Anh Nam bận học vì vậy không đi chơi.⟧ → 阿南忙著讀書，所以沒去玩。 · ⟦Thợ may ở Huế khéo tay lắm, vì vậy họ may áo dài rất đẹp.⟧ → 順化的裁縫手很巧，所以他們做的奧黛非常漂亮。
+⟦hễ A là B⟧ 構成條件和結果，意為「只要A就（一定）B」。
+⟦Hễ có ngày nghỉ là họ đi du lịch.⟧ → 只要有假，他們就去旅行。 · ⟦Hễ đến Huế là tôi và các bạn của tôi đi may áo dài.⟧ → 每次一到順化，我和朋友們就去訂做奧黛。
+=en
+Grammar notes
+⟦vì vậy⟧ is followed by the result of what was said before: "therefore, so".
+⟦Anh Nam bận học vì vậy không đi chơi.⟧ → Nam was busy studying, so he didn't go out. · ⟦Thợ may ở Huế khéo tay lắm, vì vậy họ may áo dài rất đẹp.⟧ → Tailors in Huế are very skilful, so they make beautiful áo dài.
+⟦hễ A là B⟧ forms a condition and result: "whenever A, (always) B".
+⟦Hễ có ngày nghỉ là họ đi du lịch.⟧ → Whenever they have a day off, they go travelling. · ⟦Hễ đến Huế là tôi và các bạn của tôi đi may áo dài.⟧ → Whenever we go to Huế, my friends and I get áo dài made.
+=fr
+Notes de grammaire
+⟦vì vậy⟧ est suivi de la conséquence de ce qui précède : « c'est pourquoi, donc ».
+⟦Anh Nam bận học vì vậy không đi chơi.⟧ → Nam était occupé à étudier, c'est pourquoi il n'est pas sorti. · ⟦Thợ may ở Huế khéo tay lắm, vì vậy họ may áo dài rất đẹp.⟧ → Les tailleurs de Huế sont très habiles, c'est pourquoi ils confectionnent de très beaux áo dài.
+⟦hễ A là B⟧ forme une condition et un résultat : « chaque fois que A, (toujours) B ».
+⟦Hễ có ngày nghỉ là họ đi du lịch.⟧ → Chaque fois qu'ils ont un jour de congé, ils partent en voyage. · ⟦Hễ đến Huế là tôi và các bạn của tôi đi may áo dài.⟧ → Chaque fois que nous allons à Huế, mes amis et moi nous faisons faire des áo dài.
+=de
+Grammatikerläuterungen
+Nach ⟦vì vậy⟧ folgt die Folge des zuvor Gesagten: „deshalb, daher“.
+⟦Anh Nam bận học vì vậy không đi chơi.⟧ → Nam musste viel lernen, deshalb ging er nicht aus. · ⟦Thợ may ở Huế khéo tay lắm, vì vậy họ may áo dài rất đẹp.⟧ → Die Schneider in Huế sind sehr geschickt, deshalb nähen sie wunderschöne Áo dài.
+⟦hễ A là B⟧ bildet Bedingung und Folge: „immer wenn A, (dann) B“.
+⟦Hễ có ngày nghỉ là họ đi du lịch.⟧ → Immer wenn sie frei haben, verreisen sie. · ⟦Hễ đến Huế là tôi và các bạn của tôi đi may áo dài.⟧ → Immer wenn wir nach Huế kommen, lassen meine Freunde und ich uns Áo dài schneidern.
+=hu
+Nyelvtani magyarázat
+A ⟦vì vậy⟧ után az előbb elmondottak következménye áll: „ezért, emiatt”.
+⟦Anh Nam bận học vì vậy không đi chơi.⟧ → Nam el volt foglalva a tanulással, ezért nem ment el szórakozni. · ⟦Thợ may ở Huế khéo tay lắm, vì vậy họ may áo dài rất đẹp.⟧ → A huếi szabók nagyon ügyesek, ezért nagyon szép áo dàit varrnak.
+A ⟦hễ A là B⟧ feltételt és eredményt alkot: „valahányszor A, (mindig) B”.
+⟦Hễ có ngày nghỉ là họ đi du lịch.⟧ → Valahányszor szabadnapjuk van, elutaznak. · ⟦Hễ đến Huế là tôi và các bạn của tôi đi may áo dài.⟧ → Valahányszor Huếba megyünk, a barátaimmal áo dàit csináltatunk.
+=id
+Penjelasan tata bahasa
+Setelah ⟦vì vậy⟧ muncul akibat dari hal yang disebut sebelumnya: "oleh karena itu, jadi".
+⟦Anh Nam bận học vì vậy không đi chơi.⟧ → Nam sibuk belajar, oleh karena itu tidak pergi bermain. · ⟦Thợ may ở Huế khéo tay lắm, vì vậy họ may áo dài rất đẹp.⟧ → Penjahit di Huế sangat terampil, oleh karena itu mereka menjahit áo dài yang sangat indah.
+⟦hễ A là B⟧ membentuk syarat dan akibat: "setiap kali A, (pasti) B".
+⟦Hễ có ngày nghỉ là họ đi du lịch.⟧ → Setiap kali ada hari libur, mereka pergi berwisata. · ⟦Hễ đến Huế là tôi và các bạn của tôi đi may áo dài.⟧ → Setiap kali ke Huế, saya dan teman-teman menjahitkan áo dài.
+=ja
+文法解説
+⟦vì vậy⟧ の後には前で述べた内容の結果が来て、「そのため」「だから」という意味で使われます。
+⟦Anh Nam bận học vì vậy không đi chơi.⟧ → ナムさんは勉強で忙しかったので、遊びに行かなかった。 · ⟦Thợ may ở Huế khéo tay lắm, vì vậy họ may áo dài rất đẹp.⟧ → フエの仕立て屋はとても手先が器用なので、アオザイをとても美しく仕立てる。
+⟦hễ A là B⟧ の形で条件・結果節を作り、「Aしさえすれば（必ず）Bする」という意味で使われます。
+⟦Hễ có ngày nghỉ là họ đi du lịch.⟧ → 休みの日があるといつも、彼らは旅行に行く。 · ⟦Hễ đến Huế là tôi và các bạn của tôi đi may áo dài.⟧ → フエに行くといつも、私と友人たちはアオザイを仕立てに行く。
+=pl
+Objaśnienia gramatyczne
+Po ⟦vì vậy⟧ następuje skutek tego, co powiedziano wcześniej: „dlatego, więc”.
+⟦Anh Nam bận học vì vậy không đi chơi.⟧ → Nam był zajęty nauką, dlatego nie wyszedł. · ⟦Thợ may ở Huế khéo tay lắm, vì vậy họ may áo dài rất đẹp.⟧ → Krawcy w Huế są bardzo zręczni, dlatego szyją piękne áo dài.
+⟦hễ A là B⟧ tworzy warunek i skutek: „ilekroć A, (zawsze) B”.
+⟦Hễ có ngày nghỉ là họ đi du lịch.⟧ → Ilekroć mają wolny dzień, wyjeżdżają w podróż. · ⟦Hễ đến Huế là tôi và các bạn của tôi đi may áo dài.⟧ → Ilekroć jedziemy do Huế, ja i moi przyjaciele zamawiamy uszycie áo dài.
+@@ pdf-grammar-61e6271d9ac9e2b3#0
+=cs
+Gramatický výklad
+⟦cái⟧ a ⟦con⟧ jsou klasifikátory. ⟦cái⟧ se obvykle používá před neživými předměty, ⟦con⟧ před živými tvory.
+⟦Cái bàn, cái ghế, cái áo dài, cái tivi, cái điện thoại, v,v..⟧ → stůl, židle, áo dài, televize, telefon atd. · ⟦Con chó, con mèo, con cá, con gà, con tôm, con chim, v,v..⟧ → pes, kočka, ryba, kuře, kreveta, pták atd.
+⟦nào cũng⟧ se používá ve tvaru podstatné jméno + ⟦nào cũng⟧ + přísudek ve významu „každý (podstatné jméno) ~“.
+⟦Mẹ tôi nấu món nào cũng ngon.⟧ → Každé jídlo, které maminka uvaří, je chutné. · ⟦Sinh viên nào cũng biết sử dụng vi tính.⟧ → Každý student umí pracovat s počítačem.
+=zh_cn
+语法解说
+⟦cái⟧、⟦con⟧ 是量词（类别词）。⟦cái⟧ 一般用于无生命的事物前，⟦con⟧ 用于有生命的动物前。
+⟦Cái bàn, cái ghế, cái áo dài, cái tivi, cái điện thoại, v,v..⟧ → 桌子、椅子、奥黛、电视、电话等。 · ⟦Con chó, con mèo, con cá, con gà, con tôm, con chim, v,v..⟧ → 狗、猫、鱼、鸡、虾、鸟等。
+⟦nào cũng⟧ 以“名词 + ⟦nào cũng⟧ + 谓语”的形式表示“每个（名词）都……”。
+⟦Mẹ tôi nấu món nào cũng ngon.⟧ → 我妈妈做的每道菜都好吃。 · ⟦Sinh viên nào cũng biết sử dụng vi tính.⟧ → 每个学生都会用电脑。
+=zh
+文法解說
+⟦cái⟧、⟦con⟧ 是量詞（類別詞）。⟦cái⟧ 一般用於無生命的事物前，⟦con⟧ 用於有生命的動物前。
+⟦Cái bàn, cái ghế, cái áo dài, cái tivi, cái điện thoại, v,v..⟧ → 桌子、椅子、奧黛、電視、電話等。 · ⟦Con chó, con mèo, con cá, con gà, con tôm, con chim, v,v..⟧ → 狗、貓、魚、雞、蝦、鳥等。
+⟦nào cũng⟧ 以「名詞 + ⟦nào cũng⟧ + 謂語」的形式表示「每個（名詞）都……」。
+⟦Mẹ tôi nấu món nào cũng ngon.⟧ → 我媽媽煮的每道菜都好吃。 · ⟦Sinh viên nào cũng biết sử dụng vi tính.⟧ → 每個學生都會用電腦。
+=en
+Grammar notes
+⟦cái⟧ and ⟦con⟧ are classifiers. ⟦cái⟧ is generally used before inanimate objects, ⟦con⟧ before living creatures.
+⟦Cái bàn, cái ghế, cái áo dài, cái tivi, cái điện thoại, v,v..⟧ → table, chair, áo dài, TV, telephone, etc. · ⟦Con chó, con mèo, con cá, con gà, con tôm, con chim, v,v..⟧ → dog, cat, fish, chicken, shrimp, bird, etc.
+⟦nào cũng⟧ is used in the form noun + ⟦nào cũng⟧ + predicate to mean "every (noun) ~".
+⟦Mẹ tôi nấu món nào cũng ngon.⟧ → Every dish my mother cooks is delicious. · ⟦Sinh viên nào cũng biết sử dụng vi tính.⟧ → Every student knows how to use a computer.
+=fr
+Notes de grammaire
+⟦cái⟧ et ⟦con⟧ sont des classificateurs. ⟦cái⟧ s'emploie généralement devant les objets inanimés, ⟦con⟧ devant les êtres vivants.
+⟦Cái bàn, cái ghế, cái áo dài, cái tivi, cái điện thoại, v,v..⟧ → table, chaise, áo dài, télévision, téléphone, etc. · ⟦Con chó, con mèo, con cá, con gà, con tôm, con chim, v,v..⟧ → chien, chat, poisson, poulet, crevette, oiseau, etc.
+⟦nào cũng⟧ s'emploie sous la forme nom + ⟦nào cũng⟧ + prédicat au sens de « chaque (nom) ~ ».
+⟦Mẹ tôi nấu món nào cũng ngon.⟧ → Tous les plats que cuisine ma mère sont délicieux. · ⟦Sinh viên nào cũng biết sử dụng vi tính.⟧ → Chaque étudiant sait se servir d'un ordinateur.
+=de
+Grammatikerläuterungen
+⟦cái⟧ und ⟦con⟧ sind Klassifikatoren. ⟦cái⟧ steht meist vor unbelebten Dingen, ⟦con⟧ vor Lebewesen.
+⟦Cái bàn, cái ghế, cái áo dài, cái tivi, cái điện thoại, v,v..⟧ → Tisch, Stuhl, Áo dài, Fernseher, Telefon usw. · ⟦Con chó, con mèo, con cá, con gà, con tôm, con chim, v,v..⟧ → Hund, Katze, Fisch, Huhn, Garnele, Vogel usw.
+⟦nào cũng⟧ wird in der Form Nomen + ⟦nào cũng⟧ + Prädikat verwendet und bedeutet „jede(r/s) (Nomen) ~“.
+⟦Mẹ tôi nấu món nào cũng ngon.⟧ → Jedes Gericht, das meine Mutter kocht, ist lecker. · ⟦Sinh viên nào cũng biết sử dụng vi tính.⟧ → Jeder Student kann mit dem Computer umgehen.
+=hu
+Nyelvtani magyarázat
+A ⟦cái⟧ és a ⟦con⟧ osztályozószavak. A ⟦cái⟧ általában élettelen tárgyak, a ⟦con⟧ élőlények előtt áll.
+⟦Cái bàn, cái ghế, cái áo dài, cái tivi, cái điện thoại, v,v..⟧ → asztal, szék, áo dài, tévé, telefon stb. · ⟦Con chó, con mèo, con cá, con gà, con tôm, con chim, v,v..⟧ → kutya, macska, hal, csirke, garnéla, madár stb.
+A ⟦nào cũng⟧ a főnév + ⟦nào cũng⟧ + állítmány formában „minden (főnév) ~” jelentésű.
+⟦Mẹ tôi nấu món nào cũng ngon.⟧ → Anyám minden ételt finomra főz. · ⟦Sinh viên nào cũng biết sử dụng vi tính.⟧ → Minden diák tud számítógépet használni.
+=id
+Penjelasan tata bahasa
+⟦cái⟧ dan ⟦con⟧ adalah kata penggolong. ⟦cái⟧ umumnya dipakai sebelum benda mati, ⟦con⟧ sebelum makhluk hidup.
+⟦Cái bàn, cái ghế, cái áo dài, cái tivi, cái điện thoại, v,v..⟧ → meja, kursi, áo dài, TV, telepon, dll. · ⟦Con chó, con mèo, con cá, con gà, con tôm, con chim, v,v..⟧ → anjing, kucing, ikan, ayam, udang, burung, dll.
+⟦nào cũng⟧ dipakai dalam bentuk nomina + ⟦nào cũng⟧ + predikat dengan arti "setiap (nomina) ~".
+⟦Mẹ tôi nấu món nào cũng ngon.⟧ → Setiap masakan ibu saya enak. · ⟦Sinh viên nào cũng biết sử dụng vi tính.⟧ → Setiap mahasiswa bisa menggunakan komputer.
+=ja
+文法解説
+⟦cái⟧、⟦con⟧ は類別詞です。⟦cái⟧ は一般に無生物の前に、⟦con⟧ は生物の前に使います。
+⟦Cái bàn, cái ghế, cái áo dài, cái tivi, cái điện thoại, v,v..⟧ → テーブル、椅子、アオザイ、テレビ、電話など。 · ⟦Con chó, con mèo, con cá, con gà, con tôm, con chim, v,v..⟧ → 犬、猫、魚、鶏、エビ、鳥など。
+⟦nào cũng⟧ は「名詞 + ⟦nào cũng⟧ + 述語」の形で使い、「どの（名詞）も～だ」という意味で使われます。
+⟦Mẹ tôi nấu món nào cũng ngon.⟧ → 母が作る料理はどれもおいしい。 · ⟦Sinh viên nào cũng biết sử dụng vi tính.⟧ → どの学生もパソコンの使い方を知っている。
+=pl
+Objaśnienia gramatyczne
+⟦cái⟧ i ⟦con⟧ to klasyfikatory. ⟦cái⟧ stosuje się zwykle przed przedmiotami nieożywionymi, a ⟦con⟧ przed istotami żywymi.
+⟦Cái bàn, cái ghế, cái áo dài, cái tivi, cái điện thoại, v,v..⟧ → stół, krzesło, áo dài, telewizor, telefon itd. · ⟦Con chó, con mèo, con cá, con gà, con tôm, con chim, v,v..⟧ → pies, kot, ryba, kurczak, krewetka, ptak itd.
+⟦nào cũng⟧ występuje w formie rzeczownik + ⟦nào cũng⟧ + orzeczenie w znaczeniu „każdy (rzeczownik) ~”.
+⟦Mẹ tôi nấu món nào cũng ngon.⟧ → Każda potrawa, którą gotuje moja mama, jest smaczna. · ⟦Sinh viên nào cũng biết sử dụng vi tính.⟧ → Każdy student umie obsługiwać komputer.
+@@ pdf-grammar-3fbfd0d095259a1a#0
+=cs
+Gramatický výklad
+⟦có A không?⟧ tvoří otázku. Kladná odpověď je ⟦có⟧, záporná ⟦không⟧.
+⟦Khi đi chợ, chị có mặc cả không?⟧ → Smlouváš, když jdeš na trh? · ⟦Chị có muốn mặc thử áo dài không?⟧ → Chtěla by sis vyzkoušet áo dài?
+=zh_cn
+语法解说
+⟦có A không?⟧ 构成疑问句。肯定回答是 ⟦có⟧，否定回答是 ⟦không⟧。
+⟦Khi đi chợ, chị có mặc cả không?⟧ → 去市场时你会讨价还价吗？ · ⟦Chị có muốn mặc thử áo dài không?⟧ → 你想试穿奥黛吗？
+=zh
+文法解說
+⟦có A không?⟧ 構成疑問句。肯定回答是 ⟦có⟧，否定回答是 ⟦không⟧。
+⟦Khi đi chợ, chị có mặc cả không?⟧ → 去市場時妳會殺價嗎？ · ⟦Chị có muốn mặc thử áo dài không?⟧ → 妳想試穿奧黛嗎？
+=en
+Grammar notes
+⟦có A không?⟧ forms a question. The affirmative answer is ⟦có⟧ and the negative is ⟦không⟧.
+⟦Khi đi chợ, chị có mặc cả không?⟧ → Do you haggle when you go to the market? · ⟦Chị có muốn mặc thử áo dài không?⟧ → Would you like to try on an áo dài?
+=fr
+Notes de grammaire
+⟦có A không?⟧ forme une question. La réponse affirmative est ⟦có⟧, la négative ⟦không⟧.
+⟦Khi đi chợ, chị có mặc cả không?⟧ → Tu marchandes quand tu vas au marché ? · ⟦Chị có muốn mặc thử áo dài không?⟧ → Voulez-vous essayer un áo dài ?
+=de
+Grammatikerläuterungen
+⟦có A không?⟧ bildet eine Frage. Die bejahende Antwort ist ⟦có⟧, die verneinende ⟦không⟧.
+⟦Khi đi chợ, chị có mặc cả không?⟧ → Feilschst du, wenn du auf den Markt gehst? · ⟦Chị có muốn mặc thử áo dài không?⟧ → Möchtest du ein Áo dài anprobieren?
+=hu
+Nyelvtani magyarázat
+A ⟦có A không?⟧ kérdő mondatot alkot. Az igenlő válasz ⟦có⟧, a tagadó ⟦không⟧.
+⟦Khi đi chợ, chị có mặc cả không?⟧ → Alkudozol, amikor piacra mész? · ⟦Chị có muốn mặc thử áo dài không?⟧ → Szeretnéd felpróbálni az áo dàit?
+=id
+Penjelasan tata bahasa
+⟦có A không?⟧ membentuk kalimat tanya. Jawaban positifnya ⟦có⟧, jawaban negatifnya ⟦không⟧.
+⟦Khi đi chợ, chị có mặc cả không?⟧ → Kalau ke pasar, Kakak menawar tidak? · ⟦Chị có muốn mặc thử áo dài không?⟧ → Kakak mau mencoba áo dài?
+=ja
+文法解説
+⟦có A không?⟧ の形で疑問文を作ります。肯定の答えは ⟦có⟧、否定の答えは ⟦không⟧ です。
+⟦Khi đi chợ, chị có mặc cả không?⟧ → 市場で値切りますか。 · ⟦Chị có muốn mặc thử áo dài không?⟧ → アオザイを着てみたいですか。
+=pl
+Objaśnienia gramatyczne
+⟦có A không?⟧ tworzy pytanie. Odpowiedź twierdząca to ⟦có⟧, przecząca ⟦không⟧.
+⟦Khi đi chợ, chị có mặc cả không?⟧ → Targujesz się, kiedy chodzisz na targ? · ⟦Chị có muốn mặc thử áo dài không?⟧ → Chciałabyś przymierzyć áo dài?
+@@ pdf-grammar-41da38231488b4d5#0
+=cs
+Gramatický výklad
+⟦không những A mà còn B⟧ znamená „nejen A, ale i B“.
+⟦Chị Lan không những thông minh mà còn chăm chỉ.⟧ → Lan je nejen chytrá, ale i pilná. · ⟦Đi lại bằng máy bay không những tiện mà còn tiết kiệm được thời gian.⟧ → Cestování letadlem je nejen pohodlné, ale ušetří i čas.
+⟦cả A lẫn B⟧ znamená „A i B, jak A, tak B“.
+⟦Ông giám đốc muốn gặp cả anh lẫn tôi.⟧ → Ředitel chce mluvit s tebou i se mnou. · ⟦Đôi vợ chồng trẻ được bố mẹ tặng cả nhà lẫn xe.⟧ → Mladý pár dostal od rodičů dům i auto.
+⟦A trước⟧ a ⟦A sau⟧ znamenají „před A“ a „po A“.
+⟦Xin anh đến trước giờ khởi hành 60 phút ạ.⟧ → Přijďte prosím 60 minut před odjezdem.
+=zh_cn
+语法解说
+⟦không những A mà còn B⟧ 意为“不但A，而且B”。
+⟦Chị Lan không những thông minh mà còn chăm chỉ.⟧ → 兰姐不但聪明，而且勤奋。 · ⟦Đi lại bằng máy bay không những tiện mà còn tiết kiệm được thời gian.⟧ → 坐飞机出行不但方便，还能节省时间。
+⟦cả A lẫn B⟧ 意为“A和B都”。
+⟦Ông giám đốc muốn gặp cả anh lẫn tôi.⟧ → 经理想见你和我两个人。 · ⟦Đôi vợ chồng trẻ được bố mẹ tặng cả nhà lẫn xe.⟧ → 父母送给这对小夫妻房子和车子。
+⟦A trước⟧、⟦A sau⟧ 分别表示“A之前”“A之后”。
+⟦Xin anh đến trước giờ khởi hành 60 phút ạ.⟧ → 请在出发时间前60分钟到达。
+=zh
+文法解說
+⟦không những A mà còn B⟧ 意為「不但A，而且B」。
+⟦Chị Lan không những thông minh mà còn chăm chỉ.⟧ → 蘭姊不但聰明，而且勤奮。 · ⟦Đi lại bằng máy bay không những tiện mà còn tiết kiệm được thời gian.⟧ → 搭飛機往來不但方便，還能節省時間。
+⟦cả A lẫn B⟧ 意為「A和B都」。
+⟦Ông giám đốc muốn gặp cả anh lẫn tôi.⟧ → 經理想見你和我兩個人。 · ⟦Đôi vợ chồng trẻ được bố mẹ tặng cả nhà lẫn xe.⟧ → 父母送給這對年輕夫妻房子和車子。
+⟦A trước⟧、⟦A sau⟧ 分別表示「A之前」「A之後」。
+⟦Xin anh đến trước giờ khởi hành 60 phút ạ.⟧ → 請在出發時間前60分鐘抵達。
+=en
+Grammar notes
+⟦không những A mà còn B⟧ means "not only A but also B".
+⟦Chị Lan không những thông minh mà còn chăm chỉ.⟧ → Lan is not only clever but also hard-working. · ⟦Đi lại bằng máy bay không những tiện mà còn tiết kiệm được thời gian.⟧ → Travelling by plane is not only convenient but also saves time.
+⟦cả A lẫn B⟧ means "both A and B".
+⟦Ông giám đốc muốn gặp cả anh lẫn tôi.⟧ → The director wants to see both you and me. · ⟦Đôi vợ chồng trẻ được bố mẹ tặng cả nhà lẫn xe.⟧ → The young couple were given both a house and a car by their parents.
+⟦A trước⟧ and ⟦A sau⟧ mean "before A" and "after A".
+⟦Xin anh đến trước giờ khởi hành 60 phút ạ.⟧ → Please arrive 60 minutes before departure.
+=fr
+Notes de grammaire
+⟦không những A mà còn B⟧ signifie « non seulement A, mais aussi B ».
+⟦Chị Lan không những thông minh mà còn chăm chỉ.⟧ → Lan est non seulement intelligente, mais aussi travailleuse. · ⟦Đi lại bằng máy bay không những tiện mà còn tiết kiệm được thời gian.⟧ → Voyager en avion est non seulement pratique, mais fait aussi gagner du temps.
+⟦cả A lẫn B⟧ signifie « et A et B, A comme B ».
+⟦Ông giám đốc muốn gặp cả anh lẫn tôi.⟧ → Le directeur veut nous voir, toi et moi. · ⟦Đôi vợ chồng trẻ được bố mẹ tặng cả nhà lẫn xe.⟧ → Le jeune couple a reçu de ses parents une maison et une voiture.
+⟦A trước⟧ et ⟦A sau⟧ signifient « avant A » et « après A ».
+⟦Xin anh đến trước giờ khởi hành 60 phút ạ.⟧ → Veuillez arriver 60 minutes avant le départ.
+=de
+Grammatikerläuterungen
+⟦không những A mà còn B⟧ bedeutet „nicht nur A, sondern auch B“.
+⟦Chị Lan không những thông minh mà còn chăm chỉ.⟧ → Lan ist nicht nur klug, sondern auch fleißig. · ⟦Đi lại bằng máy bay không những tiện mà còn tiết kiệm được thời gian.⟧ → Fliegen ist nicht nur bequem, sondern spart auch Zeit.
+⟦cả A lẫn B⟧ bedeutet „sowohl A als auch B“.
+⟦Ông giám đốc muốn gặp cả anh lẫn tôi.⟧ → Der Direktor möchte sowohl dich als auch mich sprechen. · ⟦Đôi vợ chồng trẻ được bố mẹ tặng cả nhà lẫn xe.⟧ → Das junge Paar bekam von den Eltern sowohl ein Haus als auch ein Auto geschenkt.
+⟦A trước⟧ und ⟦A sau⟧ bedeuten „vor A“ und „nach A“.
+⟦Xin anh đến trước giờ khởi hành 60 phút ạ.⟧ → Bitte kommen Sie 60 Minuten vor Abfahrt.
+=hu
+Nyelvtani magyarázat
+A ⟦không những A mà còn B⟧ jelentése „nemcsak A, hanem B is”.
+⟦Chị Lan không những thông minh mà còn chăm chỉ.⟧ → Lan nemcsak okos, hanem szorgalmas is. · ⟦Đi lại bằng máy bay không những tiện mà còn tiết kiệm được thời gian.⟧ → A repülés nemcsak kényelmes, hanem időt is takarít meg.
+A ⟦cả A lẫn B⟧ jelentése „A is, B is”.
+⟦Ông giám đốc muốn gặp cả anh lẫn tôi.⟧ → Az igazgató téged is, engem is látni akar. · ⟦Đôi vợ chồng trẻ được bố mẹ tặng cả nhà lẫn xe.⟧ → A fiatal pár a szüleitől házat is, autót is kapott.
+Az ⟦A trước⟧ és ⟦A sau⟧ jelentése „A előtt” és „A után”.
+⟦Xin anh đến trước giờ khởi hành 60 phút ạ.⟧ → Kérem, érkezzen 60 perccel indulás előtt.
+=id
+Penjelasan tata bahasa
+⟦không những A mà còn B⟧ berarti "tidak hanya A, tetapi juga B".
+⟦Chị Lan không những thông minh mà còn chăm chỉ.⟧ → Kak Lan tidak hanya pintar, tetapi juga rajin. · ⟦Đi lại bằng máy bay không những tiện mà còn tiết kiệm được thời gian.⟧ → Bepergian dengan pesawat tidak hanya praktis, tetapi juga menghemat waktu.
+⟦cả A lẫn B⟧ berarti "baik A maupun B".
+⟦Ông giám đốc muốn gặp cả anh lẫn tôi.⟧ → Pak direktur ingin bertemu baik Kakak maupun saya. · ⟦Đôi vợ chồng trẻ được bố mẹ tặng cả nhà lẫn xe.⟧ → Pasangan muda itu diberi rumah sekaligus mobil oleh orang tua mereka.
+⟦A trước⟧ dan ⟦A sau⟧ berarti "sebelum A" dan "sesudah A".
+⟦Xin anh đến trước giờ khởi hành 60 phút ạ.⟧ → Mohon datang 60 menit sebelum waktu keberangkatan.
+=ja
+文法解説
+⟦không những A mà còn B⟧ の形で「Aだけでなく Bも」という意味で使われます。
+⟦Chị Lan không những thông minh mà còn chăm chỉ.⟧ → ランさんは頭がいいだけでなく、勤勉でもある。 · ⟦Đi lại bằng máy bay không những tiện mà còn tiết kiệm được thời gian.⟧ → 飛行機での移動は便利なだけでなく、時間も節約できる。
+⟦cả A lẫn B⟧ の形で「AもBも」という意味で使われます。
+⟦Ông giám đốc muốn gặp cả anh lẫn tôi.⟧ → 社長はあなたにも私にも会いたがっている。 · ⟦Đôi vợ chồng trẻ được bố mẹ tặng cả nhà lẫn xe.⟧ → 若い夫婦は両親から家も車も贈られた。
+⟦A trước⟧、⟦A sau⟧ の形でそれぞれ「Aの前に」「Aの後に」という意味で使われます。
+⟦Xin anh đến trước giờ khởi hành 60 phút ạ.⟧ → 出発時間の60分前にお越しください。
+=pl
+Objaśnienia gramatyczne
+⟦không những A mà còn B⟧ znaczy „nie tylko A, ale i B”.
+⟦Chị Lan không những thông minh mà còn chăm chỉ.⟧ → Lan jest nie tylko mądra, ale i pracowita. · ⟦Đi lại bằng máy bay không những tiện mà còn tiết kiệm được thời gian.⟧ → Podróżowanie samolotem jest nie tylko wygodne, ale też oszczędza czas.
+⟦cả A lẫn B⟧ znaczy „zarówno A, jak i B”.
+⟦Ông giám đốc muốn gặp cả anh lẫn tôi.⟧ → Dyrektor chce się spotkać zarówno z tobą, jak i ze mną. · ⟦Đôi vợ chồng trẻ được bố mẹ tặng cả nhà lẫn xe.⟧ → Młoda para dostała od rodziców zarówno dom, jak i samochód.
+⟦A trước⟧ i ⟦A sau⟧ znaczą „przed A” i „po A”.
+⟦Xin anh đến trước giờ khởi hành 60 phút ạ.⟧ → Proszę przyjść 60 minut przed odjazdem.

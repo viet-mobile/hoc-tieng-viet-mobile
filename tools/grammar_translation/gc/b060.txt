@@ -1,0 +1,142 @@
+@@ pdf-grammar-cfd03c8c6afdd07c#0
+=cs
+Gramatický výklad
+⟦hình như A thì phải⟧ vyjadřuje domněnku mluvčího, o které je přesvědčen, že je správná: „asi A, zdá se, že A“.
+⟦Hình như ngoài trời lạnh lắm thì phải!⟧ → Venku je asi hrozná zima! · ⟦Hình như cậu có hai cái áo rét thì phải!⟧ → Ty máš myslím dvě zimní bundy, ne? · ⟦Hình như cậu không thích đi xem phim thì phải!⟧ → Zdá se, že nechodíš rád do kina! · ⟦Hình như cậu mới đi học về thì phải!⟧ → Ty ses asi zrovna vrátil ze školy! · ⟦Hình như chị vừa đi chợ về thì phải!⟧ → Ty ses asi zrovna vrátila z trhu!
+⟦không phải (là) A mà là B⟧ znamená „ne A, ale B“.
+⟦Không phải là trời lạnh mà là rét đấy.⟧ → Není chladno, je přímo mráz. · ⟦Không phải là nắng mà là mưa.⟧ → Nesvítí slunce, ale prší. · ⟦Không phải là mưa mà là bão.⟧ → To není déšť, to je tajfun. · ⟦Không phải là tôi đi chậm mà là đi rất nhanh đấy.⟧ → Nejdu pomalu, jdu naopak velmi rychle. · ⟦Không phải là ô tô chạy chậm mà là chạy rất nhanh.⟧ → Auto nejede pomalu, ale velmi rychle.
+=zh_cn
+语法解说
+⟦hình như A thì phải⟧ 表示说话人认为自己的推测是对的，意为“好像A吧、大概A”。
+⟦Hình như ngoài trời lạnh lắm thì phải!⟧ → 外面好像很冷吧！ · ⟦Hình như cậu có hai cái áo rét thì phải!⟧ → 你好像有两件冬衣吧！ · ⟦Hình như cậu không thích đi xem phim thì phải!⟧ → 你好像不喜欢去看电影！ · ⟦Hình như cậu mới đi học về thì phải!⟧ → 你好像刚放学回来吧！ · ⟦Hình như chị vừa đi chợ về thì phải!⟧ → 你好像刚从市场回来吧。
+⟦không phải (là) A mà là B⟧ 意为“不是A，而是B”。
+⟦Không phải là trời lạnh mà là rét đấy.⟧ → 天气不是凉，而是冷。 · ⟦Không phải là nắng mà là mưa.⟧ → 不是晴天，而是下雨。 · ⟦Không phải là mưa mà là bão.⟧ → 不是下雨，而是台风。 · ⟦Không phải là tôi đi chậm mà là đi rất nhanh đấy.⟧ → 我不是走得慢，而是走得很快。 · ⟦Không phải là ô tô chạy chậm mà là chạy rất nhanh.⟧ → 汽车不是开得慢，而是开得很快。
+=zh
+文法解說
+⟦hình như A thì phải⟧ 表示說話者認為自己的推測是對的，意為「好像A吧、大概A」。
+⟦Hình như ngoài trời lạnh lắm thì phải!⟧ → 外面好像很冷吧！ · ⟦Hình như cậu có hai cái áo rét thì phải!⟧ → 你好像有兩件冬衣吧！ · ⟦Hình như cậu không thích đi xem phim thì phải!⟧ → 你好像不喜歡去看電影！ · ⟦Hình như cậu mới đi học về thì phải!⟧ → 你好像剛放學回來吧！ · ⟦Hình như chị vừa đi chợ về thì phải!⟧ → 妳好像剛從市場回來吧。
+⟦không phải (là) A mà là B⟧ 意為「不是A，而是B」。
+⟦Không phải là trời lạnh mà là rét đấy.⟧ → 天氣不是涼，而是冷。 · ⟦Không phải là nắng mà là mưa.⟧ → 不是晴天，而是下雨。 · ⟦Không phải là mưa mà là bão.⟧ → 不是下雨，而是颱風。 · ⟦Không phải là tôi đi chậm mà là đi rất nhanh đấy.⟧ → 我不是走得慢，而是走得很快。 · ⟦Không phải là ô tô chạy chậm mà là chạy rất nhanh.⟧ → 汽車不是開得慢，而是開得很快。
+=en
+Grammar notes
+⟦hình như A thì phải⟧ expresses the speaker's guess, which they believe to be right: "it seems A, A, I think".
+⟦Hình như ngoài trời lạnh lắm thì phải!⟧ → It must be very cold outside! · ⟦Hình như cậu có hai cái áo rét thì phải!⟧ → You've got two winter coats, haven't you? · ⟦Hình như cậu không thích đi xem phim thì phải!⟧ → You don't seem to like going to the cinema! · ⟦Hình như cậu mới đi học về thì phải!⟧ → You've just got back from school, haven't you? · ⟦Hình như chị vừa đi chợ về thì phải!⟧ → Looks like you've just come back from the market!
+⟦không phải (là) A mà là B⟧ means "not A but B".
+⟦Không phải là trời lạnh mà là rét đấy.⟧ → It's not just cool, it's freezing. · ⟦Không phải là nắng mà là mưa.⟧ → It's not sunny, it's raining. · ⟦Không phải là mưa mà là bão.⟧ → It's not rain, it's a typhoon. · ⟦Không phải là tôi đi chậm mà là đi rất nhanh đấy.⟧ → I'm not walking slowly – I'm walking very fast. · ⟦Không phải là ô tô chạy chậm mà là chạy rất nhanh.⟧ → The car isn't going slowly, it's going very fast.
+=fr
+Notes de grammaire
+⟦hình như A thì phải⟧ exprime une supposition du locuteur, qu'il pense juste : « on dirait que A, A, je crois ».
+⟦Hình như ngoài trời lạnh lắm thì phải!⟧ → On dirait qu'il fait très froid dehors ! · ⟦Hình như cậu có hai cái áo rét thì phải!⟧ → Tu as deux manteaux d'hiver, je crois ! · ⟦Hình như cậu không thích đi xem phim thì phải!⟧ → On dirait que tu n'aimes pas aller au cinéma ! · ⟦Hình như cậu mới đi học về thì phải!⟧ → Tu rentres tout juste de l'école, on dirait ! · ⟦Hình như chị vừa đi chợ về thì phải!⟧ → On dirait que tu reviens du marché !
+⟦không phải (là) A mà là B⟧ signifie « ce n'est pas A, mais B ».
+⟦Không phải là trời lạnh mà là rét đấy.⟧ → Il ne fait pas frais, il fait vraiment froid. · ⟦Không phải là nắng mà là mưa.⟧ → Ce n'est pas du soleil, c'est de la pluie. · ⟦Không phải là mưa mà là bão.⟧ → Ce n'est pas de la pluie, c'est un typhon. · ⟦Không phải là tôi đi chậm mà là đi rất nhanh đấy.⟧ → Je ne marche pas lentement, au contraire, je vais très vite. · ⟦Không phải là ô tô chạy chậm mà là chạy rất nhanh.⟧ → La voiture ne roule pas lentement, elle roule très vite.
+=de
+Grammatikerläuterungen
+⟦hình như A thì phải⟧ drückt eine Vermutung des Sprechers aus, die er für zutreffend hält: „anscheinend A, A, glaube ich“.
+⟦Hình như ngoài trời lạnh lắm thì phải!⟧ → Draußen ist es anscheinend sehr kalt! · ⟦Hình như cậu có hai cái áo rét thì phải!⟧ → Du hast doch zwei Wintermäntel, oder? · ⟦Hình như cậu không thích đi xem phim thì phải!⟧ → Du gehst anscheinend nicht gern ins Kino! · ⟦Hình như cậu mới đi học về thì phải!⟧ → Du kommst wohl gerade von der Schule! · ⟦Hình như chị vừa đi chợ về thì phải!⟧ → Du kommst wohl gerade vom Markt!
+⟦không phải (là) A mà là B⟧ bedeutet „nicht A, sondern B“.
+⟦Không phải là trời lạnh mà là rét đấy.⟧ → Es ist nicht kühl, sondern eisig. · ⟦Không phải là nắng mà là mưa.⟧ → Es ist nicht sonnig, sondern es regnet. · ⟦Không phải là mưa mà là bão.⟧ → Das ist kein Regen, sondern ein Taifun. · ⟦Không phải là tôi đi chậm mà là đi rất nhanh đấy.⟧ → Ich gehe nicht langsam, sondern sehr schnell. · ⟦Không phải là ô tô chạy chậm mà là chạy rất nhanh.⟧ → Das Auto fährt nicht langsam, sondern sehr schnell.
+=hu
+Nyelvtani magyarázat
+A ⟦hình như A thì phải⟧ a beszélő feltevését fejezi ki, amelyről úgy gondolja, hogy helyes: „úgy tűnik, A; alighanem A”.
+⟦Hình như ngoài trời lạnh lắm thì phải!⟧ → Úgy tűnik, kint nagyon hideg van! · ⟦Hình như cậu có hai cái áo rét thì phải!⟧ → Neked alighanem két télikabátod van! · ⟦Hình như cậu không thích đi xem phim thì phải!⟧ → Úgy tűnik, nem szeretsz moziba járni! · ⟦Hình như cậu mới đi học về thì phải!⟧ → Te alighanem most jöttél haza az iskolából! · ⟦Hình như chị vừa đi chợ về thì phải!⟧ → Úgy tűnik, most jöttél vissza a piacról!
+A ⟦không phải (là) A mà là B⟧ jelentése „nem A, hanem B”.
+⟦Không phải là trời lạnh mà là rét đấy.⟧ → Nem hűvös van, hanem kifejezetten hideg. · ⟦Không phải là nắng mà là mưa.⟧ → Nem süt a nap, hanem esik. · ⟦Không phải là mưa mà là bão.⟧ → Ez nem eső, hanem tájfun. · ⟦Không phải là tôi đi chậm mà là đi rất nhanh đấy.⟧ → Nem lassan megyek, hanem nagyon gyorsan. · ⟦Không phải là ô tô chạy chậm mà là chạy rất nhanh.⟧ → Az autó nem lassan megy, hanem nagyon gyorsan.
+=id
+Penjelasan tata bahasa
+⟦hình như A thì phải⟧ menyatakan dugaan pembicara yang ia yakini benar: "sepertinya A".
+⟦Hình như ngoài trời lạnh lắm thì phải!⟧ → Sepertinya di luar dingin sekali! · ⟦Hình như cậu có hai cái áo rét thì phải!⟧ → Sepertinya kamu punya dua mantel musim dingin! · ⟦Hình như cậu không thích đi xem phim thì phải!⟧ → Sepertinya kamu tidak suka menonton film! · ⟦Hình như cậu mới đi học về thì phải!⟧ → Sepertinya kamu baru pulang sekolah! · ⟦Hình như chị vừa đi chợ về thì phải!⟧ → Sepertinya Kakak baru pulang dari pasar.
+⟦không phải (là) A mà là B⟧ berarti "bukan A, melainkan B".
+⟦Không phải là trời lạnh mà là rét đấy.⟧ → Bukan sejuk, melainkan dingin sekali. · ⟦Không phải là nắng mà là mưa.⟧ → Bukan cerah, melainkan hujan. · ⟦Không phải là mưa mà là bão.⟧ → Bukan hujan, melainkan badai. · ⟦Không phải là tôi đi chậm mà là đi rất nhanh đấy.⟧ → Saya bukan berjalan lambat, melainkan sangat cepat. · ⟦Không phải là ô tô chạy chậm mà là chạy rất nhanh.⟧ → Mobilnya bukan melaju pelan, melainkan sangat kencang.
+=ja
+文法解説
+⟦hình như A thì phải⟧ の形で、話し手の推測が正しいだろうという意味で使われ、「たぶんAだろう」と訳されます。
+⟦Hình như ngoài trời lạnh lắm thì phải!⟧ → たぶん外はとても寒いんだろうね！ · ⟦Hình như cậu có hai cái áo rét thì phải!⟧ → 君、冬服を2着持っているよね！ · ⟦Hình như cậu không thích đi xem phim thì phải!⟧ → 君は映画を見に行くのが好きじゃないみたいだね！ · ⟦Hình như cậu mới đi học về thì phải!⟧ → 君、学校から帰ってきたところだろう！ · ⟦Hình như chị vừa đi chợ về thì phải!⟧ → お姉さんはさっき市場から帰ってきたところでしょう。
+⟦không phải (là) A mà là B⟧ の形で「AではなくB」という意味で使われます。
+⟦Không phải là trời lạnh mà là rét đấy.⟧ → 肌寒いのではなく、寒いのだ。 · ⟦Không phải là nắng mà là mưa.⟧ → 晴れているのではなく、雨が降っている。 · ⟦Không phải là mưa mà là bão.⟧ → 雨ではなく、台風だ。 · ⟦Không phải là tôi đi chậm mà là đi rất nhanh đấy.⟧ → 私はゆっくり歩いているのではなく、とても速く歩いているよ。 · ⟦Không phải là ô tô chạy chậm mà là chạy rất nhanh.⟧ → 車はゆっくり走っているのではなく、とても速く走っている。
+=pl
+Objaśnienia gramatyczne
+⟦hình như A thì phải⟧ wyraża przypuszczenie mówiącego, które uważa za trafne: „chyba A, zdaje się, że A”.
+⟦Hình như ngoài trời lạnh lắm thì phải!⟧ → Na dworze chyba jest bardzo zimno! · ⟦Hình như cậu có hai cái áo rét thì phải!⟧ → Ty chyba masz dwie zimowe kurtki! · ⟦Hình như cậu không thích đi xem phim thì phải!⟧ → Zdaje się, że nie lubisz chodzić do kina! · ⟦Hình như cậu mới đi học về thì phải!⟧ → Ty chyba właśnie wróciłeś ze szkoły! · ⟦Hình như chị vừa đi chợ về thì phải!⟧ → Zdaje się, że właśnie wróciłaś z targu!
+⟦không phải (là) A mà là B⟧ znaczy „nie A, lecz B”.
+⟦Không phải là trời lạnh mà là rét đấy.⟧ → Nie jest chłodno, tylko mroźno. · ⟦Không phải là nắng mà là mưa.⟧ → Nie świeci słońce, tylko pada. · ⟦Không phải là mưa mà là bão.⟧ → To nie deszcz, tylko tajfun. · ⟦Không phải là tôi đi chậm mà là đi rất nhanh đấy.⟧ → Wcale nie idę wolno, idę bardzo szybko. · ⟦Không phải là ô tô chạy chậm mà là chạy rất nhanh.⟧ → Samochód nie jedzie wolno, lecz bardzo szybko.
+@@ pdf-grammar-61b80adb89a99021#0
+=cs
+Gramatický výklad
+⟦nhau⟧ vyjadřuje vzájemný vztah dvou stran: „navzájem, spolu, se sebou“.
+⟦Đi đâu họ cũng đi cùng nhau.⟧ → Kamkoli jdou, jdou spolu. · ⟦Họ vừa đi vừa trò chuyện với nhau.⟧ → Cestou si spolu povídali. · ⟦Chúng tôi học cùng lớp với nhau.⟧ → Chodili jsme spolu do stejné třídy.
+⟦mời⟧ vyjadřuje pozvání či vybídnutí; ve tvaru ⟦mời⟧ + (osoba) + sloveso znamená „pozvat / vybídnout někoho, aby ~“.
+⟦Tối nay, Phương mời Lan đi xem phim.⟧ → Dnes večer Phương pozval Lan do kina. · ⟦Lan mời Phương ăn cơm.⟧ → Lan pozvala Phươnga na jídlo. · ⟦Tôi mời chị ấy uống nước.⟧ → Nabídl jsem jí něco k pití.
+⟦đi⟧ na konci věty vyjadřuje pobídku, lehké vybídnutí nebo rozkaz.
+⟦Hôm nay chúng mình xem phim kinh dị đi!⟧ → Pojďme se dnes podívat na horor! · ⟦Cậu vào mua vé đi!⟧ → Jdi dovnitř koupit lístky! · ⟦Chúng mình vào rạp đi!⟧ → Pojďme do kina! · ⟦Cậu cứ vào rạp trước đi!⟧ → Jdi klidně do kina napřed!
+=zh_cn
+语法解说
+⟦nhau⟧ 表示相互影响的双方或彼此之间的关系，意为“互相、彼此、一起”。
+⟦Đi đâu họ cũng đi cùng nhau.⟧ → 去哪儿他们都一起去。 · ⟦Họ vừa đi vừa trò chuyện với nhau.⟧ → 他们边走边互相聊天。 · ⟦Chúng tôi học cùng lớp với nhau.⟧ → 我们是同班同学。
+⟦mời⟧ 表示邀请或劝请，以 ⟦mời⟧ +（对象）+ 动词 的形式表示“请（对象）做某事”。
+⟦Tối nay, Phương mời Lan đi xem phim.⟧ → 今晚阿芳请阿兰去看电影。 · ⟦Lan mời Phương ăn cơm.⟧ → 阿兰请阿芳吃饭。 · ⟦Tôi mời chị ấy uống nước.⟧ → 我请她喝水。
+⟦đi⟧ 用在句末时，表示催促、轻微的劝请或命令。
+⟦Hôm nay chúng mình xem phim kinh dị đi!⟧ → 今天我们看恐怖片吧！ · ⟦Cậu vào mua vé đi!⟧ → 你进去买票吧！ · ⟦Chúng mình vào rạp đi!⟧ → 我们进电影院吧！ · ⟦Cậu cứ vào rạp trước đi!⟧ → 你先进电影院吧！
+=zh
+文法解說
+⟦nhau⟧ 表示相互影響的雙方或彼此之間的關係，意為「互相、彼此、一起」。
+⟦Đi đâu họ cũng đi cùng nhau.⟧ → 去哪裡他們都一起去。 · ⟦Họ vừa đi vừa trò chuyện với nhau.⟧ → 他們邊走邊互相聊天。 · ⟦Chúng tôi học cùng lớp với nhau.⟧ → 我們是同班同學。
+⟦mời⟧ 表示邀請或勸請，以 ⟦mời⟧ +（對象）+ 動詞 的形式表示「請（對象）做某事」。
+⟦Tối nay, Phương mời Lan đi xem phim.⟧ → 今晚阿芳約阿蘭去看電影。 · ⟦Lan mời Phương ăn cơm.⟧ → 阿蘭請阿芳吃飯。 · ⟦Tôi mời chị ấy uống nước.⟧ → 我請她喝水。
+⟦đi⟧ 用在句尾時，表示催促、輕微的勸請或命令。
+⟦Hôm nay chúng mình xem phim kinh dị đi!⟧ → 今天我們看恐怖片吧！ · ⟦Cậu vào mua vé đi!⟧ → 你進去買票吧！ · ⟦Chúng mình vào rạp đi!⟧ → 我們進電影院吧！ · ⟦Cậu cứ vào rạp trước đi!⟧ → 你先進電影院吧！
+=en
+Grammar notes
+⟦nhau⟧ expresses a mutual relationship between two sides: "each other, one another, together".
+⟦Đi đâu họ cũng đi cùng nhau.⟧ → Wherever they go, they go together. · ⟦Họ vừa đi vừa trò chuyện với nhau.⟧ → They chatted with each other as they walked. · ⟦Chúng tôi học cùng lớp với nhau.⟧ → We were in the same class together.
+⟦mời⟧ expresses an invitation or offer; ⟦mời⟧ + (person) + verb means "to invite / ask someone to ~".
+⟦Tối nay, Phương mời Lan đi xem phim.⟧ → Tonight Phương invited Lan to the cinema. · ⟦Lan mời Phương ăn cơm.⟧ → Lan invited Phương to eat. · ⟦Tôi mời chị ấy uống nước.⟧ → I offered her something to drink.
+⟦đi⟧ at the end of a sentence expresses urging, a gentle suggestion or a command.
+⟦Hôm nay chúng mình xem phim kinh dị đi!⟧ → Let's watch a horror film today! · ⟦Cậu vào mua vé đi!⟧ → Go in and buy the tickets! · ⟦Chúng mình vào rạp đi!⟧ → Let's go into the cinema! · ⟦Cậu cứ vào rạp trước đi!⟧ → Go on into the cinema first!
+=fr
+Notes de grammaire
+⟦nhau⟧ exprime une relation réciproque entre deux parties : « l'un l'autre, mutuellement, ensemble ».
+⟦Đi đâu họ cũng đi cùng nhau.⟧ → Où qu'ils aillent, ils y vont ensemble. · ⟦Họ vừa đi vừa trò chuyện với nhau.⟧ → Ils bavardaient ensemble en marchant. · ⟦Chúng tôi học cùng lớp với nhau.⟧ → Nous étions dans la même classe.
+⟦mời⟧ exprime une invitation ; ⟦mời⟧ + (personne) + verbe signifie « inviter quelqu'un à ~ ».
+⟦Tối nay, Phương mời Lan đi xem phim.⟧ → Ce soir, Phương a invité Lan au cinéma. · ⟦Lan mời Phương ăn cơm.⟧ → Lan a invité Phương à manger. · ⟦Tôi mời chị ấy uống nước.⟧ → Je lui ai offert à boire.
+⟦đi⟧ en fin de phrase exprime une incitation, une suggestion amicale ou un ordre.
+⟦Hôm nay chúng mình xem phim kinh dị đi!⟧ → Regardons un film d'horreur aujourd'hui ! · ⟦Cậu vào mua vé đi!⟧ → Entre acheter les billets ! · ⟦Chúng mình vào rạp đi!⟧ → Entrons dans le cinéma ! · ⟦Cậu cứ vào rạp trước đi!⟧ → Vas-y, entre d'abord dans la salle !
+=de
+Grammatikerläuterungen
+⟦nhau⟧ drückt eine wechselseitige Beziehung aus: „einander, gegenseitig, miteinander“.
+⟦Đi đâu họ cũng đi cùng nhau.⟧ → Wohin sie auch gehen, sie gehen zusammen. · ⟦Họ vừa đi vừa trò chuyện với nhau.⟧ → Sie unterhielten sich miteinander, während sie gingen. · ⟦Chúng tôi học cùng lớp với nhau.⟧ → Wir waren zusammen in einer Klasse.
+⟦mời⟧ drückt eine Einladung oder Aufforderung aus; ⟦mời⟧ + (Person) + Verb bedeutet „jemanden einladen / bitten, ~ zu tun“.
+⟦Tối nay, Phương mời Lan đi xem phim.⟧ → Heute Abend hat Phương Lan ins Kino eingeladen. · ⟦Lan mời Phương ăn cơm.⟧ → Lan hat Phương zum Essen eingeladen. · ⟦Tôi mời chị ấy uống nước.⟧ → Ich habe ihr etwas zu trinken angeboten.
+⟦đi⟧ am Satzende drückt Drängen, eine freundliche Aufforderung oder einen Befehl aus.
+⟦Hôm nay chúng mình xem phim kinh dị đi!⟧ → Lass uns heute einen Horrorfilm schauen! · ⟦Cậu vào mua vé đi!⟧ → Geh rein und kauf die Karten! · ⟦Chúng mình vào rạp đi!⟧ → Lass uns ins Kino gehen! · ⟦Cậu cứ vào rạp trước đi!⟧ → Geh ruhig schon mal ins Kino!
+=hu
+Nyelvtani magyarázat
+A ⟦nhau⟧ a két fél közötti kölcsönös viszonyt fejezi ki: „egymás, egymással, együtt”.
+⟦Đi đâu họ cũng đi cùng nhau.⟧ → Bárhová mennek, együtt mennek. · ⟦Họ vừa đi vừa trò chuyện với nhau.⟧ → Menet közben beszélgettek egymással. · ⟦Chúng tôi học cùng lớp với nhau.⟧ → Egy osztályba jártunk.
+A ⟦mời⟧ meghívást, kínálást fejez ki; a ⟦mời⟧ + (személy) + ige jelentése „meghívni / megkérni valakit, hogy ~”.
+⟦Tối nay, Phương mời Lan đi xem phim.⟧ → Ma este Phương moziba hívta Lant. · ⟦Lan mời Phương ăn cơm.⟧ → Lan meghívta Phươngot enni. · ⟦Tôi mời chị ấy uống nước.⟧ → Megkínáltam egy itallal.
+Az ⟦đi⟧ a mondat végén sürgetést, enyhe biztatást vagy felszólítást fejez ki.
+⟦Hôm nay chúng mình xem phim kinh dị đi!⟧ → Nézzünk ma horrorfilmet! · ⟦Cậu vào mua vé đi!⟧ → Menj be, és vedd meg a jegyeket! · ⟦Chúng mình vào rạp đi!⟧ → Menjünk be a moziba! · ⟦Cậu cứ vào rạp trước đi!⟧ → Menj csak be előre a moziba!
+=id
+Penjelasan tata bahasa
+⟦nhau⟧ menyatakan hubungan timbal balik antara dua pihak: "saling, satu sama lain, bersama".
+⟦Đi đâu họ cũng đi cùng nhau.⟧ → Ke mana pun mereka pergi, selalu bersama. · ⟦Họ vừa đi vừa trò chuyện với nhau.⟧ → Mereka mengobrol sambil berjalan. · ⟦Chúng tôi học cùng lớp với nhau.⟧ → Kami satu kelas.
+⟦mời⟧ menyatakan undangan atau ajakan; dalam pola ⟦mời⟧ + (orang) + verba berarti "mengajak / mempersilakan seseorang untuk ~".
+⟦Tối nay, Phương mời Lan đi xem phim.⟧ → Malam ini Phương mengajak Lan menonton film. · ⟦Lan mời Phương ăn cơm.⟧ → Lan mengajak Phương makan. · ⟦Tôi mời chị ấy uống nước.⟧ → Saya mempersilakan dia minum.
+⟦đi⟧ di akhir kalimat menyatakan desakan, ajakan ringan, atau perintah.
+⟦Hôm nay chúng mình xem phim kinh dị đi!⟧ → Hari ini kita nonton film horor, yuk! · ⟦Cậu vào mua vé đi!⟧ → Masuk dan beli tiketnya, sana! · ⟦Chúng mình vào rạp đi!⟧ → Ayo kita masuk bioskop! · ⟦Cậu cứ vào rạp trước đi!⟧ → Kamu masuk bioskop duluan saja!
+=ja
+文法解説
+⟦nhau⟧ は影響を及ぼし合う両者、あるいは相互の関係を表し、「互いに」という意味で使われます。
+⟦Đi đâu họ cũng đi cùng nhau.⟧ → どこへ行くにも彼らは一緒に行く。 · ⟦Họ vừa đi vừa trò chuyện với nhau.⟧ → 彼らは歩きながら互いに話をした。 · ⟦Chúng tôi học cùng lớp với nhau.⟧ → 私たちは同じクラスで勉強した。
+⟦mời⟧ は勧誘や招待の意味を表し、⟦mời⟧ +（相手）+ 動詞の形で「相手が～するよう頼む（招く、勧める）」という意味で使われます。
+⟦Tối nay, Phương mời Lan đi xem phim.⟧ → 今晩、フオンはランを映画に誘った。 · ⟦Lan mời Phương ăn cơm.⟧ → ランはフオンを食事に招待した。 · ⟦Tôi mời chị ấy uống nước.⟧ → 私は彼女に飲み物を勧めた。
+⟦đi⟧ が文末に使われると、催促、軽い勧誘、命令の意味を表します。
+⟦Hôm nay chúng mình xem phim kinh dị đi!⟧ → 今日はホラー映画を見に行こうよ！ · ⟦Cậu vào mua vé đi!⟧ → 中に入ってチケットを買ってきて！ · ⟦Chúng mình vào rạp đi!⟧ → 映画館に入ろう！ · ⟦Cậu cứ vào rạp trước đi!⟧ → 先に映画館に入っていて！
+=pl
+Objaśnienia gramatyczne
+⟦nhau⟧ wyraża wzajemną relację dwóch stron: „nawzajem, siebie, razem”.
+⟦Đi đâu họ cũng đi cùng nhau.⟧ → Dokądkolwiek idą, idą razem. · ⟦Họ vừa đi vừa trò chuyện với nhau.⟧ → Rozmawiali ze sobą, idąc. · ⟦Chúng tôi học cùng lớp với nhau.⟧ → Chodziliśmy razem do jednej klasy.
+⟦mời⟧ wyraża zaproszenie lub zachętę; w konstrukcji ⟦mời⟧ + (osoba) + czasownik znaczy „zaprosić / poprosić kogoś, by ~”.
+⟦Tối nay, Phương mời Lan đi xem phim.⟧ → Dziś wieczorem Phương zaprosił Lan do kina. · ⟦Lan mời Phương ăn cơm.⟧ → Lan zaprosiła Phươnga na posiłek. · ⟦Tôi mời chị ấy uống nước.⟧ → Poczęstowałem ją czymś do picia.
+⟦đi⟧ na końcu zdania wyraża ponaglenie, lekką zachętę lub polecenie.
+⟦Hôm nay chúng mình xem phim kinh dị đi!⟧ → Obejrzyjmy dziś horror! · ⟦Cậu vào mua vé đi!⟧ → Wejdź i kup bilety! · ⟦Chúng mình vào rạp đi!⟧ → Wejdźmy do kina! · ⟦Cậu cứ vào rạp trước đi!⟧ → Wejdź śmiało do kina pierwszy!

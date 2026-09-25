@@ -1,0 +1,152 @@
+@@ pdf-grammar-d4e3657181d34332#0
+=cs
+Gramatický výklad
+⟦dù cho⟧: „i kdyby, přestože“ – uvádí neobvyklou či nepříznivou podmínku, aby se zdůraznilo, že uvedená věc přesto nastane.
+⟦Dù cho đi đâu ở đâu, người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Ať jdou kamkoli a žijí kdekoli, Vietnamci nikdy nezapomenou jazyk svého národa. (podmínka: ať jdou kamkoli, žijí kdekoli · zdůrazněno: nikdy nezapomenou mateřský jazyk)
+⟦Dù cho trời mưa rất to, tôi cũng vẫn phải về nhà.⟧ → I když hodně prší, stejně musím jít domů. (podmínka: i když hodně prší · zdůrazněno: musím jít domů)
+⟦Chị Lee vẫn đi du lịch cùng với lớp, dù cho chị ấy vẫn đang ốm.⟧ → Lee pojede se třídou na výlet, přestože je stále nemocná. (podmínka: přestože je nemocná · zdůrazněno: pojede na výlet)
+⟦Anh ấy nhất định mua chiếc điện thoại ấy, dù cho mọi người đã ra sức can ngăn.⟧ → Ten telefon si rozhodně koupí, i když ho všichni usilovně odrazují. (podmínka: i když ho všichni odrazují · zdůrazněno: rozhodně si ho koupí)
+⟦không bao giờ⟧: „nikdy, vůbec ne“ – důrazně a rozhodně vyjadřuje, že to, co je uvedeno ve druhé části věty, nemůže nastat.
+⟦Người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Vietnamci nikdy nezapomenou jazyk svého národa. („zapomenout mateřský jazyk“ nemůže nastat) · ⟦Tôi không bao giờ quên những ngày học tiếng Việt ở Việt Nam.⟧ → Nikdy nezapomenu na dny, kdy jsem se učil vietnamsky ve Vietnamu. („zapomenout na ty dny“ nemůže nastat) · ⟦Chị ấy không bao giờ đi học muộn.⟧ → Nikdy nechodí do školy pozdě. („přijít pozdě“ nemůže nastat) · ⟦Anh Park không bao giờ ngủ trước 23 giờ.⟧ → Park nikdy nechodí spát před 23. hodinou. („jít spát před 23:00“ nemůže nastat)
+=zh_cn
+语法解说
+⟦dù cho⟧：意为“即使……、哪怕……”，通过提出不寻常、不利的条件，来主张或强调所说的事仍然会发生。
+⟦Dù cho đi đâu ở đâu, người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → 无论走到哪里、住在哪里，越南人都绝不会忘记自己民族的语言。（条件：无论去哪、住哪 · 强调：绝不会忘记本民族语言）
+⟦Dù cho trời mưa rất to, tôi cũng vẫn phải về nhà.⟧ → 即使雨下得很大，我也得回家。（条件：即使雨很大 · 强调：我得回家）
+⟦Chị Lee vẫn đi du lịch cùng với lớp, dù cho chị ấy vẫn đang ốm.⟧ → 李还是会和同学一起去旅行，尽管她还在生病。（条件：尽管她在生病 · 强调：会和同学去旅行）
+⟦Anh ấy nhất định mua chiếc điện thoại ấy, dù cho mọi người đã ra sức can ngăn.⟧ → 哪怕大家极力劝阻，他也一定要买那部手机。（条件：哪怕大家极力劝阻 · 强调：一定要买那部手机）
+⟦không bao giờ⟧：意为“绝不、从不”，用于强烈而坚决地表示句子后半部分所说的事不可能发生。
+⟦Người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → 越南人绝不会忘记自己民族的语言。（“忘记本民族语言”不可能发生） · ⟦Tôi không bao giờ quên những ngày học tiếng Việt ở Việt Nam.⟧ → 我永远不会忘记在越南学越南语的日子。（“忘记那些日子”不可能发生） · ⟦Chị ấy không bao giờ đi học muộn.⟧ → 她上学从不迟到。（“上学迟到”不可能发生） · ⟦Anh Park không bao giờ ngủ trước 23 giờ.⟧ → 朴从不在23点前睡觉。（“23点前睡觉”不可能发生）
+=zh
+文法解說
+⟦dù cho⟧：意為「即使……、哪怕……」，透過提出不尋常、不利的條件，來主張或強調所說的事仍然會發生。
+⟦Dù cho đi đâu ở đâu, người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → 無論走到哪裡、住在哪裡，越南人都絕不會忘記自己民族的語言。（條件：無論去哪、住哪 · 強調：絕不會忘記本民族語言）
+⟦Dù cho trời mưa rất to, tôi cũng vẫn phải về nhà.⟧ → 即使雨下得很大，我也得回家。（條件：即使雨很大 · 強調：我得回家）
+⟦Chị Lee vẫn đi du lịch cùng với lớp, dù cho chị ấy vẫn đang ốm.⟧ → 李還是會和同學一起去旅行，儘管她還在生病。（條件：儘管她在生病 · 強調：會和同學去旅行）
+⟦Anh ấy nhất định mua chiếc điện thoại ấy, dù cho mọi người đã ra sức can ngăn.⟧ → 哪怕大家極力勸阻，他也一定要買那支手機。（條件：哪怕大家極力勸阻 · 強調：一定要買那支手機）
+⟦không bao giờ⟧：意為「絕不、從不」，用於強烈而堅決地表示句子後半部分所說的事不可能發生。
+⟦Người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → 越南人絕不會忘記自己民族的語言。（「忘記本民族語言」不可能發生） · ⟦Tôi không bao giờ quên những ngày học tiếng Việt ở Việt Nam.⟧ → 我永遠不會忘記在越南學越南語的日子。（「忘記那些日子」不可能發生） · ⟦Chị ấy không bao giờ đi học muộn.⟧ → 她上學從不遲到。（「上學遲到」不可能發生） · ⟦Anh Park không bao giờ ngủ trước 23 giờ.⟧ → 朴從不在23點前睡覺。（「23點前睡覺」不可能發生）
+=en
+Grammar notes
+⟦dù cho⟧: "even if, even though" – sets out an unusual or unfavourable condition in order to assert or emphasize that what is mentioned will still happen.
+⟦Dù cho đi đâu ở đâu, người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Wherever they go and wherever they live, Vietnamese people never forget the language of their nation. (condition: wherever they go or live · emphasized: they never forget their national language)
+⟦Dù cho trời mưa rất to, tôi cũng vẫn phải về nhà.⟧ → Even if it rains very hard, I still have to go home. (condition: even if it rains hard · emphasized: I have to go home)
+⟦Chị Lee vẫn đi du lịch cùng với lớp, dù cho chị ấy vẫn đang ốm.⟧ → Lee is still going on the trip with her class, even though she is still ill. (condition: even though she is ill · emphasized: she will go on the trip)
+⟦Anh ấy nhất định mua chiếc điện thoại ấy, dù cho mọi người đã ra sức can ngăn.⟧ → He is determined to buy that phone, even though everyone has tried hard to stop him. (condition: even though everyone tried to stop him · emphasized: he will definitely buy it)
+⟦không bao giờ⟧: "never, not at all" – expresses strongly and firmly that what is stated in the second half of the sentence cannot happen.
+⟦Người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Vietnamese people never forget the language of their nation. ("forgetting their national language" cannot happen) · ⟦Tôi không bao giờ quên những ngày học tiếng Việt ở Việt Nam.⟧ → I will never forget the days I spent learning Vietnamese in Vietnam. ("forgetting those days" cannot happen) · ⟦Chị ấy không bao giờ đi học muộn.⟧ → She is never late for school. ("being late for school" cannot happen) · ⟦Anh Park không bao giờ ngủ trước 23 giờ.⟧ → Park never goes to sleep before 11 p.m. ("sleeping before 11 p.m." cannot happen)
+=fr
+Notes de grammaire
+⟦dù cho⟧ : « même si, bien que » – pose une condition inhabituelle ou défavorable pour affirmer ou souligner que ce qui est dit se produira malgré tout.
+⟦Dù cho đi đâu ở đâu, người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Où qu'ils aillent et où qu'ils vivent, les Vietnamiens n'oublient jamais la langue de leur peuple. (condition : où qu'ils aillent ou vivent · mis en relief : ils n'oublient jamais leur langue)
+⟦Dù cho trời mưa rất to, tôi cũng vẫn phải về nhà.⟧ → Même s'il pleut très fort, je dois quand même rentrer. (condition : même s'il pleut fort · mis en relief : je dois rentrer)
+⟦Chị Lee vẫn đi du lịch cùng với lớp, dù cho chị ấy vẫn đang ốm.⟧ → Lee part quand même en voyage avec la classe, bien qu'elle soit encore malade. (condition : bien qu'elle soit malade · mis en relief : elle part en voyage)
+⟦Anh ấy nhất định mua chiếc điện thoại ấy, dù cho mọi người đã ra sức can ngăn.⟧ → Il achètera ce téléphone coûte que coûte, même si tout le monde a tout fait pour l'en dissuader. (condition : même si tous l'en dissuadent · mis en relief : il l'achètera)
+⟦không bao giờ⟧ : « jamais, pas du tout » – exprime avec force et fermeté que ce qui est indiqué dans la seconde partie de la phrase ne peut pas se produire.
+⟦Người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Les Vietnamiens n'oublient jamais la langue de leur peuple. (« oublier sa langue » ne peut pas arriver) · ⟦Tôi không bao giờ quên những ngày học tiếng Việt ở Việt Nam.⟧ → Je n'oublierai jamais les jours où j'apprenais le vietnamien au Vietnam. (« oublier ces jours » ne peut pas arriver) · ⟦Chị ấy không bao giờ đi học muộn.⟧ → Elle n'arrive jamais en retard à l'école. (« être en retard » ne peut pas arriver) · ⟦Anh Park không bao giờ ngủ trước 23 giờ.⟧ → Park ne se couche jamais avant 23 heures. (« se coucher avant 23 h » ne peut pas arriver)
+=de
+Grammatikerläuterungen
+⟦dù cho⟧: „selbst wenn, obwohl“ – nennt eine ungewöhnliche oder ungünstige Bedingung, um zu behaupten oder zu betonen, dass das Genannte trotzdem eintritt.
+⟦Dù cho đi đâu ở đâu, người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Wohin sie auch gehen und wo sie auch leben, Vietnamesen vergessen nie die Sprache ihres Volkes. (Bedingung: wohin sie gehen, wo sie leben · betont: sie vergessen nie ihre Sprache)
+⟦Dù cho trời mưa rất to, tôi cũng vẫn phải về nhà.⟧ → Selbst wenn es sehr stark regnet, muss ich trotzdem nach Hause. (Bedingung: auch bei starkem Regen · betont: ich muss nach Hause)
+⟦Chị Lee vẫn đi du lịch cùng với lớp, dù cho chị ấy vẫn đang ốm.⟧ → Lee fährt trotzdem mit der Klasse auf Reisen, obwohl sie noch krank ist. (Bedingung: obwohl sie krank ist · betont: sie fährt mit)
+⟦Anh ấy nhất định mua chiếc điện thoại ấy, dù cho mọi người đã ra sức can ngăn.⟧ → Er kauft das Handy auf jeden Fall, selbst wenn alle ihn mit aller Kraft davon abhalten wollen. (Bedingung: auch wenn alle ihn abhalten · betont: er kauft es bestimmt)
+⟦không bao giờ⟧: „nie, niemals, überhaupt nicht“ – drückt stark und entschieden aus, dass das in der zweiten Satzhälfte Genannte nicht eintreten kann.
+⟦Người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Vietnamesen vergessen nie die Sprache ihres Volkes. („die eigene Sprache vergessen“ kann nicht eintreten) · ⟦Tôi không bao giờ quên những ngày học tiếng Việt ở Việt Nam.⟧ → Ich werde die Tage, an denen ich in Vietnam Vietnamesisch lernte, nie vergessen. („diese Tage vergessen“ kann nicht eintreten) · ⟦Chị ấy không bao giờ đi học muộn.⟧ → Sie kommt nie zu spät zur Schule. („zu spät kommen“ kann nicht eintreten) · ⟦Anh Park không bao giờ ngủ trước 23 giờ.⟧ → Park geht nie vor 23 Uhr schlafen. („vor 23 Uhr schlafen“ kann nicht eintreten)
+=hu
+Nyelvtani magyarázat
+⟦dù cho⟧: „még ha, habár” – szokatlan vagy kedvezőtlen feltételt állít fel, hogy kijelentse vagy hangsúlyozza: az említett dolog ennek ellenére is bekövetkezik.
+⟦Dù cho đi đâu ở đâu, người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Bárhová mennek és bárhol élnek, a vietnámiak soha nem felejtik el népük nyelvét. (feltétel: bárhová mennek, bárhol élnek · hangsúly: sosem felejtik el anyanyelvüket)
+⟦Dù cho trời mưa rất to, tôi cũng vẫn phải về nhà.⟧ → Még ha nagyon esik is, akkor is haza kell mennem. (feltétel: ha nagyon esik is · hangsúly: haza kell mennem)
+⟦Chị Lee vẫn đi du lịch cùng với lớp, dù cho chị ấy vẫn đang ốm.⟧ → Lee mégis elmegy kirándulni az osztállyal, pedig még beteg. (feltétel: pedig még beteg · hangsúly: elmegy kirándulni)
+⟦Anh ấy nhất định mua chiếc điện thoại ấy, dù cho mọi người đã ra sức can ngăn.⟧ → Mindenképp megveszi azt a telefont, még ha mindenki erősen le is akarja beszélni. (feltétel: bár mindenki lebeszélné · hangsúly: mindenképp megveszi)
+⟦không bao giờ⟧: „soha, egyáltalán nem” – erősen és határozottan kifejezi, hogy a mondat második felében említett dolog nem következhet be.
+⟦Người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → A vietnámiak soha nem felejtik el népük nyelvét. (az „anyanyelv elfelejtése” nem következhet be) · ⟦Tôi không bao giờ quên những ngày học tiếng Việt ở Việt Nam.⟧ → Soha nem felejtem el azokat a napokat, amikor Vietnámban vietnámiul tanultam. (a „napok elfelejtése” nem következhet be) · ⟦Chị ấy không bao giờ đi học muộn.⟧ → Soha nem késik el az iskolából. (a „késés” nem következhet be) · ⟦Anh Park không bao giờ ngủ trước 23 giờ.⟧ → Park soha nem fekszik le 23 óra előtt. (a „23 óra előtti alvás” nem következhet be)
+=id
+Penjelasan tata bahasa
+⟦dù cho⟧: "meskipun, sekalipun" – mengajukan syarat yang tidak biasa atau tidak menguntungkan untuk menegaskan bahwa hal yang disebutkan tetap akan terjadi.
+⟦Dù cho đi đâu ở đâu, người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Ke mana pun pergi dan di mana pun tinggal, orang Vietnam tidak pernah melupakan bahasa bangsanya. (syarat: ke mana pun pergi, di mana pun tinggal · ditegaskan: tidak pernah melupakan bahasa bangsanya)
+⟦Dù cho trời mưa rất to, tôi cũng vẫn phải về nhà.⟧ → Meskipun hujan sangat deras, saya tetap harus pulang. (syarat: meskipun hujan deras · ditegaskan: saya harus pulang)
+⟦Chị Lee vẫn đi du lịch cùng với lớp, dù cho chị ấy vẫn đang ốm.⟧ → Lee tetap pergi berwisata bersama kelas, meskipun dia masih sakit. (syarat: meskipun masih sakit · ditegaskan: tetap pergi berwisata)
+⟦Anh ấy nhất định mua chiếc điện thoại ấy, dù cho mọi người đã ra sức can ngăn.⟧ → Dia pasti membeli ponsel itu, sekalipun semua orang sudah berusaha keras mencegahnya. (syarat: sekalipun semua orang mencegah · ditegaskan: pasti membelinya)
+⟦không bao giờ⟧: "tidak pernah, sama sekali tidak" – menyatakan dengan kuat dan tegas bahwa hal yang disebut di bagian akhir kalimat tidak mungkin terjadi.
+⟦Người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Orang Vietnam tidak pernah melupakan bahasa bangsanya. ("melupakan bahasa bangsa" tidak mungkin terjadi) · ⟦Tôi không bao giờ quên những ngày học tiếng Việt ở Việt Nam.⟧ → Saya tidak akan pernah melupakan hari-hari belajar bahasa Vietnam di Vietnam. ("melupakan hari-hari itu" tidak mungkin terjadi) · ⟦Chị ấy không bao giờ đi học muộn.⟧ → Dia tidak pernah terlambat ke sekolah. ("terlambat ke sekolah" tidak mungkin terjadi) · ⟦Anh Park không bao giờ ngủ trước 23 giờ.⟧ → Park tidak pernah tidur sebelum pukul 23.00. ("tidur sebelum pukul 23" tidak mungkin terjadi)
+=ja
+文法解説
+⟦dù cho⟧：「たとえ～でも、～であろうとも」という意味で、述べた事柄が依然として起こることを主張・強調するために、通常でない不都合な条件を掲げるときに使います。
+⟦Dù cho đi đâu ở đâu, người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → どこへ行こうと、どこに住もうと、ベトナム人はみな自民族の言葉を決して忘れない。（条件：どこへ行こうと、どこに住もうと · 強調：自民族の言葉を決して忘れない）
+⟦Dù cho trời mưa rất to, tôi cũng vẫn phải về nhà.⟧ → たとえ大雨でも、私は家に帰らなければならない。（条件：たとえ大雨でも · 強調：家に帰らなければならない）
+⟦Chị Lee vẫn đi du lịch cùng với lớp, dù cho chị ấy vẫn đang ốm.⟧ → リーはクラスメートと旅行に行く、たとえ今は体調が悪くても。（条件：今は体調が悪くても · 強調：クラスメートと旅行に行く）
+⟦Anh ấy nhất định mua chiếc điện thoại ấy, dù cho mọi người đã ra sức can ngăn.⟧ → 彼は必ずその携帯電話を買うだろう、皆が必死に止めようとしても。（条件：皆が止めようとしても · 強調：必ずその携帯を買う）
+⟦không bao giờ⟧：「決して／まったく～ない」という意味で、文の後半に示された事柄が起こりえないことを強く断固として表すために使います。
+⟦Người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → ベトナム人はみな自民族の言葉を決して忘れない。（「自民族の言葉を忘れる」ことは起こりえない） · ⟦Tôi không bao giờ quên những ngày học tiếng Việt ở Việt Nam.⟧ → 私はベトナムでベトナム語を学んだ日々を決して忘れない。（「その日々を忘れる」ことは起こりえない） · ⟦Chị ấy không bao giờ đi học muộn.⟧ → 彼女は決して学校に遅刻しない。（「遅刻する」ことは起こりえない） · ⟦Anh Park không bao giờ ngủ trước 23 giờ.⟧ → パクは23時前に寝ることがまったくない。（「23時前に寝る」ことは起こりえない）
+=pl
+Objaśnienia gramatyczne
+⟦dù cho⟧: „nawet jeśli, choćby” – wprowadza nietypowy lub niekorzystny warunek, by stwierdzić lub podkreślić, że wspomniana rzecz i tak nastąpi.
+⟦Dù cho đi đâu ở đâu, người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Dokądkolwiek pójdą i gdziekolwiek mieszkają, Wietnamczycy nigdy nie zapominają języka swojego narodu. (warunek: dokądkolwiek pójdą, gdziekolwiek mieszkają · podkreślenie: nigdy nie zapominają ojczystego języka)
+⟦Dù cho trời mưa rất to, tôi cũng vẫn phải về nhà.⟧ → Nawet jeśli bardzo pada, i tak muszę wrócić do domu. (warunek: nawet przy ulewie · podkreślenie: muszę wrócić do domu)
+⟦Chị Lee vẫn đi du lịch cùng với lớp, dù cho chị ấy vẫn đang ốm.⟧ → Lee i tak pojedzie z klasą na wycieczkę, choć wciąż jest chora. (warunek: choć jest chora · podkreślenie: pojedzie na wycieczkę)
+⟦Anh ấy nhất định mua chiếc điện thoại ấy, dù cho mọi người đã ra sức can ngăn.⟧ → On na pewno kupi ten telefon, choćby wszyscy usilnie go odwodzili. (warunek: choćby wszyscy go odwodzili · podkreślenie: na pewno go kupi)
+⟦không bao giờ⟧: „nigdy, wcale nie” – mocno i stanowczo wyraża, że to, co podano w drugiej części zdania, nie może nastąpić.
+⟦Người Việt Nam đều không bao giờ quên tiếng nói của dân tộc mình.⟧ → Wietnamczycy nigdy nie zapominają języka swojego narodu. („zapomnienie ojczystego języka” nie może nastąpić) · ⟦Tôi không bao giờ quên những ngày học tiếng Việt ở Việt Nam.⟧ → Nigdy nie zapomnę dni, gdy uczyłem się wietnamskiego w Wietnamie. („zapomnienie tych dni” nie może nastąpić) · ⟦Chị ấy không bao giờ đi học muộn.⟧ → Ona nigdy nie spóźnia się do szkoły. („spóźnienie” nie może nastąpić) · ⟦Anh Park không bao giờ ngủ trước 23 giờ.⟧ → Park nigdy nie kładzie się spać przed 23:00. („spanie przed 23:00” nie może nastąpić)
+@@ pdf-grammar-f92231d9e8b7c12f#0
+=cs
+Gramatický výklad
+⟦vì... nên⟧: „protože ~, proto ~“ – vyjadřuje příčinný vztah.
+⟦Vì chưa nói được nhiều nên Sang-min không dám giao tiếp với bạn bè Việt Nam.⟧ → Protože ještě moc neumí mluvit, Sang-min se neodváží bavit s vietnamskými přáteli. · ⟦Vì Sang-min mới sang Việt Nam nên chưa nói tiếng Việt được nhiều.⟧ → Protože Sang-min do Vietnamu teprve přijel, ještě moc vietnamsky nemluví. · ⟦Vì Sang-min nhớ được nhiều từ ngữ hơn nên nói được nhiều câu hơn.⟧ → Protože si Sang-min pamatuje víc slov, dokáže říct víc vět. · ⟦Vì Sang-min mạnh dạn hơn nên có nhiều bạn Việt Nam hơn.⟧ → Protože je Sang-min smělejší, má víc vietnamských přátel. · ⟦Vì Sang-min chịu khó học tập nên kết quả học tập rất tốt.⟧ → Protože se Sang-min pilně učí, má velmi dobré výsledky.
+⟦mới⟧: „teprve, právě, nedávno“ – vyjadřuje, že se věc stala nedlouho před okamžikem promluvy.
+⟦Mới đến Việt Nam học tiếng Việt, nên Sang-min nói tiếng Việt rất khó khăn.⟧ → Sang-min přijel do Vietnamu studovat vietnamštinu teprve nedávno, proto mluví vietnamsky jen s velkými obtížemi. · ⟦Tôi mới học tiếng Việt được một năm thôi.⟧ → Učím se vietnamsky teprve rok. · ⟦Tôi mới làm bài tập.⟧ → Teprve teď dělám úkoly. · ⟦Chị ấy mới đọc cuốn sách này.⟧ → Tuto knihu teprve teď čte. · ⟦Sang-min mới mua cuốn Từ điển Tiếng Việt.⟧ → Sang-min si právě koupil vietnamský slovník.
+=zh_cn
+语法解说
+⟦vì... nên⟧：意为“因为……所以……”，用于表示因果关系。
+⟦Vì chưa nói được nhiều nên Sang-min không dám giao tiếp với bạn bè Việt Nam.⟧ → 因为还说不了多少，所以相敏不敢和越南朋友交流。 · ⟦Vì Sang-min mới sang Việt Nam nên chưa nói tiếng Việt được nhiều.⟧ → 因为相敏刚来越南，所以越南语还说不了多少。 · ⟦Vì Sang-min nhớ được nhiều từ ngữ hơn nên nói được nhiều câu hơn.⟧ → 因为相敏记住的词汇更多，所以能说更多的句子。 · ⟦Vì Sang-min mạnh dạn hơn nên có nhiều bạn Việt Nam hơn.⟧ → 因为相敏更大胆，所以有更多越南朋友。 · ⟦Vì Sang-min chịu khó học tập nên kết quả học tập rất tốt.⟧ → 因为相敏刻苦学习，所以学习成绩很好。
+⟦mới⟧：意为“刚、才”，表示事情发生在离说话时不久之前。
+⟦Mới đến Việt Nam học tiếng Việt, nên Sang-min nói tiếng Việt rất khó khăn.⟧ → 相敏刚来越南学越南语，所以说越南语很吃力。 · ⟦Tôi mới học tiếng Việt được một năm thôi.⟧ → 我学越南语才一年而已。 · ⟦Tôi mới làm bài tập.⟧ → 我才开始做作业。 · ⟦Chị ấy mới đọc cuốn sách này.⟧ → 她才开始读这本书。 · ⟦Sang-min mới mua cuốn Từ điển Tiếng Việt.⟧ → 相敏刚买了越南语词典。
+=zh
+文法解說
+⟦vì... nên⟧：意為「因為……所以……」，用於表示因果關係。
+⟦Vì chưa nói được nhiều nên Sang-min không dám giao tiếp với bạn bè Việt Nam.⟧ → 因為還說不了多少，所以相敏不敢和越南朋友交流。 · ⟦Vì Sang-min mới sang Việt Nam nên chưa nói tiếng Việt được nhiều.⟧ → 因為相敏剛來越南，所以越南語還說不了多少。 · ⟦Vì Sang-min nhớ được nhiều từ ngữ hơn nên nói được nhiều câu hơn.⟧ → 因為相敏記住的詞彙更多，所以能說更多的句子。 · ⟦Vì Sang-min mạnh dạn hơn nên có nhiều bạn Việt Nam hơn.⟧ → 因為相敏更大膽，所以有更多越南朋友。 · ⟦Vì Sang-min chịu khó học tập nên kết quả học tập rất tốt.⟧ → 因為相敏用功讀書，所以學習成績很好。
+⟦mới⟧：意為「剛、才」，表示事情發生在離說話時不久之前。
+⟦Mới đến Việt Nam học tiếng Việt, nên Sang-min nói tiếng Việt rất khó khăn.⟧ → 相敏剛來越南學越南語，所以說越南語很吃力。 · ⟦Tôi mới học tiếng Việt được một năm thôi.⟧ → 我學越南語才一年而已。 · ⟦Tôi mới làm bài tập.⟧ → 我才開始寫作業。 · ⟦Chị ấy mới đọc cuốn sách này.⟧ → 她才開始讀這本書。 · ⟦Sang-min mới mua cuốn Từ điển Tiếng Việt.⟧ → 相敏剛買了越南語詞典。
+=en
+Grammar notes
+⟦vì... nên⟧: "because ~, so ~" – expresses a cause-and-effect relationship.
+⟦Vì chưa nói được nhiều nên Sang-min không dám giao tiếp với bạn bè Việt Nam.⟧ → Because he can't say much yet, Sang-min doesn't dare to talk with his Vietnamese friends. · ⟦Vì Sang-min mới sang Việt Nam nên chưa nói tiếng Việt được nhiều.⟧ → Because Sang-min has only just come to Vietnam, he can't speak much Vietnamese yet. · ⟦Vì Sang-min nhớ được nhiều từ ngữ hơn nên nói được nhiều câu hơn.⟧ → Because Sang-min remembers more words, he can say more sentences. · ⟦Vì Sang-min mạnh dạn hơn nên có nhiều bạn Việt Nam hơn.⟧ → Because Sang-min is bolder, he has more Vietnamese friends. · ⟦Vì Sang-min chịu khó học tập nên kết quả học tập rất tốt.⟧ → Because Sang-min studies hard, his results are very good.
+⟦mới⟧: "just, only just, only now" – expresses that something happened not long before the moment of speaking.
+⟦Mới đến Việt Nam học tiếng Việt, nên Sang-min nói tiếng Việt rất khó khăn.⟧ → Sang-min has only just come to Vietnam to study Vietnamese, so he finds speaking it very hard. · ⟦Tôi mới học tiếng Việt được một năm thôi.⟧ → I've only been learning Vietnamese for a year. · ⟦Tôi mới làm bài tập.⟧ → I'm only just doing my homework now. · ⟦Chị ấy mới đọc cuốn sách này.⟧ → She is only now reading this book. · ⟦Sang-min mới mua cuốn Từ điển Tiếng Việt.⟧ → Sang-min has just bought a Vietnamese dictionary.
+=fr
+Notes de grammaire
+⟦vì... nên⟧ : « parce que ~, donc ~ » – exprime une relation de cause à effet.
+⟦Vì chưa nói được nhiều nên Sang-min không dám giao tiếp với bạn bè Việt Nam.⟧ → Comme il ne parle pas encore beaucoup, Sang-min n'ose pas échanger avec ses amis vietnamiens. · ⟦Vì Sang-min mới sang Việt Nam nên chưa nói tiếng Việt được nhiều.⟧ → Comme Sang-min vient d'arriver au Vietnam, il ne parle pas encore beaucoup vietnamien. · ⟦Vì Sang-min nhớ được nhiều từ ngữ hơn nên nói được nhiều câu hơn.⟧ → Comme Sang-min retient plus de mots, il peut dire plus de phrases. · ⟦Vì Sang-min mạnh dạn hơn nên có nhiều bạn Việt Nam hơn.⟧ → Comme Sang-min est plus audacieux, il a plus d'amis vietnamiens. · ⟦Vì Sang-min chịu khó học tập nên kết quả học tập rất tốt.⟧ → Comme Sang-min étudie avec assiduité, ses résultats sont très bons.
+⟦mới⟧ : « venir de, seulement, ne … que depuis » – indique qu'une chose s'est produite peu de temps avant le moment où l'on parle.
+⟦Mới đến Việt Nam học tiếng Việt, nên Sang-min nói tiếng Việt rất khó khăn.⟧ → Sang-min vient d'arriver au Vietnam pour étudier le vietnamien, il a donc beaucoup de mal à le parler. · ⟦Tôi mới học tiếng Việt được một năm thôi.⟧ → Je n'apprends le vietnamien que depuis un an. · ⟦Tôi mới làm bài tập.⟧ → Je ne fais mes devoirs que maintenant. · ⟦Chị ấy mới đọc cuốn sách này.⟧ → Elle ne lit ce livre que maintenant. · ⟦Sang-min mới mua cuốn Từ điển Tiếng Việt.⟧ → Sang-min vient d'acheter un dictionnaire vietnamien.
+=de
+Grammatikerläuterungen
+⟦vì... nên⟧: „weil ~, deshalb ~“ – drückt ein Ursache-Wirkungs-Verhältnis aus.
+⟦Vì chưa nói được nhiều nên Sang-min không dám giao tiếp với bạn bè Việt Nam.⟧ → Weil er noch nicht viel sprechen kann, traut sich Sang-min nicht, sich mit vietnamesischen Freunden zu unterhalten. · ⟦Vì Sang-min mới sang Việt Nam nên chưa nói tiếng Việt được nhiều.⟧ → Weil Sang-min gerade erst nach Vietnam gekommen ist, spricht er noch nicht viel Vietnamesisch. · ⟦Vì Sang-min nhớ được nhiều từ ngữ hơn nên nói được nhiều câu hơn.⟧ → Weil Sang-min sich mehr Wörter merken kann, kann er mehr Sätze sagen. · ⟦Vì Sang-min mạnh dạn hơn nên có nhiều bạn Việt Nam hơn.⟧ → Weil Sang-min mutiger ist, hat er mehr vietnamesische Freunde. · ⟦Vì Sang-min chịu khó học tập nên kết quả học tập rất tốt.⟧ → Weil Sang-min fleißig lernt, sind seine Ergebnisse sehr gut.
+⟦mới⟧: „erst, gerade erst, eben“ – drückt aus, dass etwas kurz vor dem Sprechzeitpunkt geschehen ist.
+⟦Mới đến Việt Nam học tiếng Việt, nên Sang-min nói tiếng Việt rất khó khăn.⟧ → Sang-min ist gerade erst nach Vietnam gekommen, um Vietnamesisch zu lernen, deshalb fällt ihm das Sprechen sehr schwer. · ⟦Tôi mới học tiếng Việt được một năm thôi.⟧ → Ich lerne erst seit einem Jahr Vietnamesisch. · ⟦Tôi mới làm bài tập.⟧ → Ich mache erst jetzt meine Hausaufgaben. · ⟦Chị ấy mới đọc cuốn sách này.⟧ → Sie liest dieses Buch erst jetzt. · ⟦Sang-min mới mua cuốn Từ điển Tiếng Việt.⟧ → Sang-min hat gerade ein vietnamesisches Wörterbuch gekauft.
+=hu
+Nyelvtani magyarázat
+⟦vì... nên⟧: „mivel ~, ezért ~” – ok-okozati viszonyt fejez ki.
+⟦Vì chưa nói được nhiều nên Sang-min không dám giao tiếp với bạn bè Việt Nam.⟧ → Mivel még nem tud sokat mondani, Sang-min nem mer beszélgetni vietnámi barátaival. · ⟦Vì Sang-min mới sang Việt Nam nên chưa nói tiếng Việt được nhiều.⟧ → Mivel Sang-min csak most jött Vietnámba, még nem beszél sokat vietnámiul. · ⟦Vì Sang-min nhớ được nhiều từ ngữ hơn nên nói được nhiều câu hơn.⟧ → Mivel Sang-min több szót jegyez meg, több mondatot tud mondani. · ⟦Vì Sang-min mạnh dạn hơn nên có nhiều bạn Việt Nam hơn.⟧ → Mivel Sang-min bátrabb, több vietnámi barátja van. · ⟦Vì Sang-min chịu khó học tập nên kết quả học tập rất tốt.⟧ → Mivel Sang-min szorgalmasan tanul, nagyon jók az eredményei.
+⟦mới⟧: „csak most, épp, csupán” – azt fejezi ki, hogy valami nem sokkal a beszéd időpontja előtt történt.
+⟦Mới đến Việt Nam học tiếng Việt, nên Sang-min nói tiếng Việt rất khó khăn.⟧ → Sang-min csak most érkezett Vietnámba vietnámit tanulni, ezért nagyon nehezen beszél. · ⟦Tôi mới học tiếng Việt được một năm thôi.⟧ → Csak egy éve tanulok vietnámiul. · ⟦Tôi mới làm bài tập.⟧ → Csak most írom a leckét. · ⟦Chị ấy mới đọc cuốn sách này.⟧ → Csak most olvassa ezt a könyvet. · ⟦Sang-min mới mua cuốn Từ điển Tiếng Việt.⟧ → Sang-min épp most vett egy vietnámi szótárt.
+=id
+Penjelasan tata bahasa
+⟦vì... nên⟧: "karena ~, maka ~" – menyatakan hubungan sebab-akibat.
+⟦Vì chưa nói được nhiều nên Sang-min không dám giao tiếp với bạn bè Việt Nam.⟧ → Karena belum bisa banyak bicara, Sang-min tidak berani bercakap dengan teman-teman Vietnam. · ⟦Vì Sang-min mới sang Việt Nam nên chưa nói tiếng Việt được nhiều.⟧ → Karena Sang-min baru datang ke Vietnam, dia belum bisa banyak berbahasa Vietnam. · ⟦Vì Sang-min nhớ được nhiều từ ngữ hơn nên nói được nhiều câu hơn.⟧ → Karena Sang-min mengingat lebih banyak kosakata, dia bisa mengucapkan lebih banyak kalimat. · ⟦Vì Sang-min mạnh dạn hơn nên có nhiều bạn Việt Nam hơn.⟧ → Karena Sang-min lebih berani, dia punya lebih banyak teman Vietnam. · ⟦Vì Sang-min chịu khó học tập nên kết quả học tập rất tốt.⟧ → Karena Sang-min rajin belajar, hasil belajarnya sangat baik.
+⟦mới⟧: "baru, baru saja" – menyatakan bahwa sesuatu terjadi tidak lama sebelum saat berbicara.
+⟦Mới đến Việt Nam học tiếng Việt, nên Sang-min nói tiếng Việt rất khó khăn.⟧ → Sang-min baru datang ke Vietnam untuk belajar bahasa Vietnam, jadi dia masih sangat kesulitan berbicara. · ⟦Tôi mới học tiếng Việt được một năm thôi.⟧ → Saya baru belajar bahasa Vietnam satu tahun saja. · ⟦Tôi mới làm bài tập.⟧ → Saya baru mengerjakan PR sekarang. · ⟦Chị ấy mới đọc cuốn sách này.⟧ → Dia baru sekarang membaca buku ini. · ⟦Sang-min mới mua cuốn Từ điển Tiếng Việt.⟧ → Sang-min baru saja membeli kamus bahasa Vietnam.
+=ja
+文法解説
+⟦vì... nên⟧：「～なので、だから～」という意味で、因果関係を表すために使います。
+⟦Vì chưa nói được nhiều nên Sang-min không dám giao tiếp với bạn bè Việt Nam.⟧ → まだあまり話せないので、サンミンはベトナム人の友達と気軽に交流できない。 · ⟦Vì Sang-min mới sang Việt Nam nên chưa nói tiếng Việt được nhiều.⟧ → サンミンはベトナムに来たばかりなので、まだベトナム語をあまり話せない。 · ⟦Vì Sang-min nhớ được nhiều từ ngữ hơn nên nói được nhiều câu hơn.⟧ → サンミンは語彙をより多く覚えているので、より多くの文を話せる。 · ⟦Vì Sang-min mạnh dạn hơn nên có nhiều bạn Việt Nam hơn.⟧ → サンミンはより度胸があるので、ベトナム人の友達がより多い。 · ⟦Vì Sang-min chịu khó học tập nên kết quả học tập rất tốt.⟧ → サンミンは熱心に勉強するので、成績がとても良い。
+⟦mới⟧：「～したばかり、ようやく～する」という意味で、話す時点からそれほど経っていない時点に起きたことを表すために使います。
+⟦Mới đến Việt Nam học tiếng Việt, nên Sang-min nói tiếng Việt rất khó khăn.⟧ → ベトナム語を学びにベトナムに来たばかりなので、サンミンはベトナム語を話すのにとても苦労している。 · ⟦Tôi mới học tiếng Việt được một năm thôi.⟧ → 私はベトナム語を学び始めてまだ1年しか経っていない。 · ⟦Tôi mới làm bài tập.⟧ → 私は今ようやく宿題をしている。 · ⟦Chị ấy mới đọc cuốn sách này.⟧ → 彼女は今になってやっとこの本を読んでいる。 · ⟦Sang-min mới mua cuốn Từ điển Tiếng Việt.⟧ → サンミンはベトナム語辞典を買ったばかりだ。
+=pl
+Objaśnienia gramatyczne
+⟦vì... nên⟧: „ponieważ ~, więc ~” – wyraża związek przyczynowo-skutkowy.
+⟦Vì chưa nói được nhiều nên Sang-min không dám giao tiếp với bạn bè Việt Nam.⟧ → Ponieważ jeszcze niewiele umie powiedzieć, Sang-min nie ma odwagi rozmawiać z wietnamskimi przyjaciółmi. · ⟦Vì Sang-min mới sang Việt Nam nên chưa nói tiếng Việt được nhiều.⟧ → Ponieważ Sang-min dopiero przyjechał do Wietnamu, jeszcze niewiele mówi po wietnamsku. · ⟦Vì Sang-min nhớ được nhiều từ ngữ hơn nên nói được nhiều câu hơn.⟧ → Ponieważ Sang-min pamięta więcej słów, potrafi powiedzieć więcej zdań. · ⟦Vì Sang-min mạnh dạn hơn nên có nhiều bạn Việt Nam hơn.⟧ → Ponieważ Sang-min jest śmielszy, ma więcej wietnamskich przyjaciół. · ⟦Vì Sang-min chịu khó học tập nên kết quả học tập rất tốt.⟧ → Ponieważ Sang-min pilnie się uczy, ma bardzo dobre wyniki.
+⟦mới⟧: „dopiero, właśnie, niedawno” – wyraża, że coś wydarzyło się niedługo przed chwilą mówienia.
+⟦Mới đến Việt Nam học tiếng Việt, nên Sang-min nói tiếng Việt rất khó khăn.⟧ → Sang-min dopiero przyjechał do Wietnamu uczyć się wietnamskiego, więc mówienie przychodzi mu z wielkim trudem. · ⟦Tôi mới học tiếng Việt được một năm thôi.⟧ → Uczę się wietnamskiego dopiero od roku. · ⟦Tôi mới làm bài tập.⟧ → Dopiero teraz odrabiam lekcje. · ⟦Chị ấy mới đọc cuốn sách này.⟧ → Ona dopiero teraz czyta tę książkę. · ⟦Sang-min mới mua cuốn Từ điển Tiếng Việt.⟧ → Sang-min właśnie kupił słownik wietnamski.

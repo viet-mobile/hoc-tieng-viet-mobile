@@ -1,0 +1,192 @@
+@@ pdf-grammar-cac335335d611b1b#0
+=cs
+Gramatický výklad
+⟦khi A thì B⟧ znamená „když A, (tak) B“ a vyjadřuje situaci, kdy dva děje nebo události nastávají současně.
+⟦Khi Lan vừa dứt lời thì Thanh đi tới.⟧ → Sotva Lan domluvila, přišel Thanh. (Lan dokončila řeč a Thanh přišel ve stejný okamžik.)
+⟦Khi bạn vào tham quan vườn thú thì bạn phải mua vé.⟧ → Když jdeš do zoo, musíš si koupit vstupenku. (Vstup do zoo a koupě vstupenky probíhají současně.)
+⟦Khi tiếng chuông vang lên thì giờ làm bài thi bắt đầu.⟧ → Když zazní zvonek, začíná zkouška. (Zazvonění a začátek zkoušky nastávají současně.)
+⟦Khi nào thì⟧ znamená „kdy“ a používá se k otázce, v jakém okamžiku nastane nějaký děj či událost.
+⟦Khi nào thì Vườn thú Hà Nội lại mở cửa?⟧ → Kdy hanojská zoo znovu otevře? (ptáme se na okamžik otevření)
+⟦Khi nào thì anh sẽ bắt đầu học tiếng Việt?⟧ → Kdy se začneš učit vietnamsky? (ptáme se na začátek studia)
+⟦Khi nào thì anh về Hàn Quốc?⟧ → Kdy se vracíš do Koreje? (ptáme se na okamžik návratu)
+=zh_cn
+语法解说
+⟦khi A thì B⟧ 意为“A的时候就B”，表示两个行为或事情同时发生的情况。
+⟦Khi Lan vừa dứt lời thì Thanh đi tới.⟧ → 阿兰刚说完，阿青就到了。（阿兰说完话和阿青到达同时发生）
+⟦Khi bạn vào tham quan vườn thú thì bạn phải mua vé.⟧ → 进动物园参观时你必须买票。（进动物园和买票同时发生）
+⟦Khi tiếng chuông vang lên thì giờ làm bài thi bắt đầu.⟧ → 铃声一响，考试时间就开始。（铃声响起和考试开始同时发生）
+⟦Khi nào thì⟧ 意为“什么时候”，用来询问某个行为或事情将在什么时间发生。
+⟦Khi nào thì Vườn thú Hà Nội lại mở cửa?⟧ → 河内动物园什么时候重新开放？（询问开放的时间）
+⟦Khi nào thì anh sẽ bắt đầu học tiếng Việt?⟧ → 你什么时候开始学越南语？（询问开始学习的时间）
+⟦Khi nào thì anh về Hàn Quốc?⟧ → 你什么时候回韩国？（询问回国的时间）
+=zh
+文法解說
+⟦khi A thì B⟧ 意為「A的時候就B」，表示兩個行為或事情同時發生的情況。
+⟦Khi Lan vừa dứt lời thì Thanh đi tới.⟧ → 阿蘭剛說完，阿青就到了。（阿蘭說完話和阿青到達同時發生）
+⟦Khi bạn vào tham quan vườn thú thì bạn phải mua vé.⟧ → 進動物園參觀時你必須買票。（進動物園和買票同時發生）
+⟦Khi tiếng chuông vang lên thì giờ làm bài thi bắt đầu.⟧ → 鈴聲一響，考試時間就開始。（鈴聲響起和考試開始同時發生）
+⟦Khi nào thì⟧ 意為「什麼時候」，用來詢問某個行為或事情將在什麼時間發生。
+⟦Khi nào thì Vườn thú Hà Nội lại mở cửa?⟧ → 河內動物園什麼時候重新開放？（詢問開放的時間）
+⟦Khi nào thì anh sẽ bắt đầu học tiếng Việt?⟧ → 你什麼時候開始學越南語？（詢問開始學習的時間）
+⟦Khi nào thì anh về Hàn Quốc?⟧ → 你什麼時候回韓國？（詢問回國的時間）
+=en
+Grammar notes
+⟦khi A thì B⟧ means "when A, (then) B" and describes two actions or events happening at the same time.
+⟦Khi Lan vừa dứt lời thì Thanh đi tới.⟧ → Just as Lan finished speaking, Thanh arrived. (Lan finishing and Thanh arriving happen at the same moment.)
+⟦Khi bạn vào tham quan vườn thú thì bạn phải mua vé.⟧ → When you visit the zoo, you have to buy a ticket. (Entering the zoo and buying a ticket happen together.)
+⟦Khi tiếng chuông vang lên thì giờ làm bài thi bắt đầu.⟧ → When the bell rings, the exam begins. (The bell and the start of the exam coincide.)
+⟦Khi nào thì⟧ means "when" and is used to ask at what point an action or event will happen.
+⟦Khi nào thì Vườn thú Hà Nội lại mở cửa?⟧ → When will Hanoi Zoo open again? (asking when it opens)
+⟦Khi nào thì anh sẽ bắt đầu học tiếng Việt?⟧ → When will you start learning Vietnamese? (asking when the studies start)
+⟦Khi nào thì anh về Hàn Quốc?⟧ → When are you going back to Korea? (asking when he returns)
+=fr
+Notes de grammaire
+⟦khi A thì B⟧ signifie « quand A, (alors) B » et exprime deux actions ou événements simultanés.
+⟦Khi Lan vừa dứt lời thì Thanh đi tới.⟧ → Lan venait à peine de finir de parler que Thanh est arrivé. (Les deux faits se produisent au même moment.)
+⟦Khi bạn vào tham quan vườn thú thì bạn phải mua vé.⟧ → Quand tu visites le zoo, tu dois acheter un billet. (Entrer au zoo et acheter le billet vont ensemble.)
+⟦Khi tiếng chuông vang lên thì giờ làm bài thi bắt đầu.⟧ → Quand la sonnerie retentit, l'examen commence. (La sonnerie et le début de l'examen coïncident.)
+⟦Khi nào thì⟧ signifie « quand » et sert à demander à quel moment une action ou un événement aura lieu.
+⟦Khi nào thì Vườn thú Hà Nội lại mở cửa?⟧ → Quand le zoo de Hanoï rouvrira-t-il ? (on demande le moment de la réouverture)
+⟦Khi nào thì anh sẽ bắt đầu học tiếng Việt?⟧ → Quand vas-tu commencer à apprendre le vietnamien ? (on demande quand commence l'apprentissage)
+⟦Khi nào thì anh về Hàn Quốc?⟧ → Quand rentres-tu en Corée ? (on demande le moment du retour)
+=de
+Grammatikerläuterungen
+⟦khi A thì B⟧ bedeutet „wenn / als A, (dann) B“ und beschreibt zwei gleichzeitig stattfindende Handlungen oder Ereignisse.
+⟦Khi Lan vừa dứt lời thì Thanh đi tới.⟧ → Kaum hatte Lan ausgesprochen, kam Thanh. (Beides geschieht im selben Moment.)
+⟦Khi bạn vào tham quan vườn thú thì bạn phải mua vé.⟧ → Wenn du den Zoo besuchst, musst du eine Eintrittskarte kaufen. (Eintritt und Kartenkauf gehören zusammen.)
+⟦Khi tiếng chuông vang lên thì giờ làm bài thi bắt đầu.⟧ → Wenn die Glocke läutet, beginnt die Prüfung. (Läuten und Prüfungsbeginn fallen zusammen.)
+⟦Khi nào thì⟧ bedeutet „wann“ und dient der Frage, zu welchem Zeitpunkt eine Handlung oder ein Ereignis stattfindet.
+⟦Khi nào thì Vườn thú Hà Nội lại mở cửa?⟧ → Wann öffnet der Hanoier Zoo wieder? (Frage nach dem Zeitpunkt der Öffnung)
+⟦Khi nào thì anh sẽ bắt đầu học tiếng Việt?⟧ → Wann fängst du an, Vietnamesisch zu lernen? (Frage nach dem Beginn)
+⟦Khi nào thì anh về Hàn Quốc?⟧ → Wann fliegst du zurück nach Korea? (Frage nach dem Zeitpunkt der Rückkehr)
+=hu
+Nyelvtani magyarázat
+A ⟦khi A thì B⟧ jelentése „amikor A, (akkor) B”; két egyszerre bekövetkező cselekvést vagy eseményt fejez ki.
+⟦Khi Lan vừa dứt lời thì Thanh đi tới.⟧ → Alighogy Lan befejezte a mondandóját, megérkezett Thanh. (A kettő egy időben történik.)
+⟦Khi bạn vào tham quan vườn thú thì bạn phải mua vé.⟧ → Amikor bemész az állatkertbe, jegyet kell venned. (A belépés és a jegyvásárlás egyszerre történik.)
+⟦Khi tiếng chuông vang lên thì giờ làm bài thi bắt đầu.⟧ → Amikor megszólal a csengő, kezdődik a vizsga. (A csengetés és a vizsga kezdete egybeesik.)
+A ⟦Khi nào thì⟧ jelentése „mikor”; arra kérdezünk vele, milyen időpontban történik meg egy cselekvés vagy esemény.
+⟦Khi nào thì Vườn thú Hà Nội lại mở cửa?⟧ → Mikor nyit ki újra a hanoi állatkert? (a nyitás időpontjára kérdez)
+⟦Khi nào thì anh sẽ bắt đầu học tiếng Việt?⟧ → Mikor kezdesz el vietnamiul tanulni? (a tanulás kezdetére kérdez)
+⟦Khi nào thì anh về Hàn Quốc?⟧ → Mikor mész haza Koreába? (a hazautazás idejére kérdez)
+=id
+Penjelasan tata bahasa
+⟦khi A thì B⟧ berarti "ketika A, maka B" dan menyatakan dua tindakan atau kejadian yang terjadi bersamaan.
+⟦Khi Lan vừa dứt lời thì Thanh đi tới.⟧ → Begitu Lan selesai bicara, Thanh datang. (Keduanya terjadi pada saat yang sama.)
+⟦Khi bạn vào tham quan vườn thú thì bạn phải mua vé.⟧ → Ketika masuk kebun binatang, kamu harus membeli tiket. (Masuk kebun binatang dan membeli tiket terjadi bersamaan.)
+⟦Khi tiếng chuông vang lên thì giờ làm bài thi bắt đầu.⟧ → Ketika bel berbunyi, waktu ujian dimulai. (Bunyi bel dan dimulainya ujian terjadi bersamaan.)
+⟦Khi nào thì⟧ berarti "kapan" dan dipakai untuk menanyakan kapan suatu tindakan atau kejadian akan terjadi.
+⟦Khi nào thì Vườn thú Hà Nội lại mở cửa?⟧ → Kapan Kebun Binatang Hanoi buka lagi? (menanyakan waktu dibuka)
+⟦Khi nào thì anh sẽ bắt đầu học tiếng Việt?⟧ → Kapan Kakak mulai belajar bahasa Vietnam? (menanyakan waktu mulai belajar)
+⟦Khi nào thì anh về Hàn Quốc?⟧ → Kapan Kakak pulang ke Korea? (menanyakan waktu pulang)
+=ja
+文法解説
+⟦khi A thì B⟧ の形で使われ、「Aするとき B する」という意味を表します。この構文は、二つの行動や事柄が同時に起こる状況を表します。
+⟦Khi Lan vừa dứt lời thì Thanh đi tới.⟧ → ランが話し終えるやいなや、タインが到着した。（ランが話し終えることとタインの到着が同時に起こる）
+⟦Khi bạn vào tham quan vườn thú thì bạn phải mua vé.⟧ → 動物園に入場するときは、必ずチケットを買わなければならない。（入場とチケット購入が同時に起こる）
+⟦Khi tiếng chuông vang lên thì giờ làm bài thi bắt đầu.⟧ → ベルが鳴り響くと、試験時間が始まる。（ベルが鳴ることと試験開始が同時に起こる）
+⟦Khi nào thì⟧ は「いつ」という意味で、ある行動や事柄がどの時点で起こるかを尋ねるときに使います。
+⟦Khi nào thì Vườn thú Hà Nội lại mở cửa?⟧ → ハノイ動物園はいつまた開園しますか。（開園の時点を尋ねる）
+⟦Khi nào thì anh sẽ bắt đầu học tiếng Việt?⟧ → いつベトナム語の勉強を始めるんですか。（勉強を始める時点を尋ねる）
+⟦Khi nào thì anh về Hàn Quốc?⟧ → いつ韓国に帰るんですか。（帰国の時点を尋ねる）
+=pl
+Objaśnienia gramatyczne
+⟦khi A thì B⟧ znaczy „kiedy A, (to) B” i wyraża sytuację, w której dwie czynności lub zdarzenia zachodzą jednocześnie.
+⟦Khi Lan vừa dứt lời thì Thanh đi tới.⟧ → Ledwie Lan skończyła mówić, przyszedł Thanh. (Oba zdarzenia następują w tej samej chwili.)
+⟦Khi bạn vào tham quan vườn thú thì bạn phải mua vé.⟧ → Kiedy wchodzisz do zoo, musisz kupić bilet. (Wejście i zakup biletu odbywają się jednocześnie.)
+⟦Khi tiếng chuông vang lên thì giờ làm bài thi bắt đầu.⟧ → Kiedy zadzwoni dzwonek, zaczyna się egzamin. (Dzwonek i początek egzaminu zbiegają się w czasie.)
+⟦Khi nào thì⟧ znaczy „kiedy” i służy do pytania, w jakim momencie nastąpi dana czynność lub zdarzenie.
+⟦Khi nào thì Vườn thú Hà Nội lại mở cửa?⟧ → Kiedy hanojskie zoo znów zostanie otwarte? (pytanie o moment otwarcia)
+⟦Khi nào thì anh sẽ bắt đầu học tiếng Việt?⟧ → Kiedy zaczniesz uczyć się wietnamskiego? (pytanie o początek nauki)
+⟦Khi nào thì anh về Hàn Quốc?⟧ → Kiedy wracasz do Korei? (pytanie o moment powrotu)
+@@ pdf-grammar-2d80d70912c65ca4#0
+=cs
+Gramatický výklad
+⟦dù A (předpoklad) thì B (výsledek)⟧ znamená „i kdyby A, stejně B“.
+⟦Dù lúc đó bạn đi bằng ô tô hay xe máy thì bạn cũng không thể di chuyển nhanh được.⟧ → I kdybys tehdy jel autem nebo na motorce, stejně by ses rychle nepřesunul. (⟦dù lúc đó bạn đi bằng ô tô hay xe máy⟧: předpoklad; ⟦thì bạn cũng không thể di chuyển nhanh được⟧: výsledek)
+⟦Dù bạn đi bằng ô tô thì bạn cũng vẫn bị trễ hẹn.⟧ → I kdybys jel autem, stejně bys přišel na schůzku pozdě. (⟦dù bạn đi bằng ô tô⟧: předpoklad; ⟦thì bạn cũng vẫn bị trễ hẹn⟧: výsledek)
+⟦định⟧ + sloveso znamená „mít v plánu ~, chystat se ~“.
+⟦Nếu bạn định đi ra phố, bạn cần tránh giờ cao điểm.⟧ → Jestli se chystáš do města, měl by ses vyhnout špičce. (plánovaná věc: jít do města)
+⟦Anh ấy định đi du lịch vào mùa hè này.⟧ → Letos v létě se chystá na cesty. (plánovaná věc: letní výlet)
+⟦Tôi định về quê bằng xe máy.⟧ → Plánuji jet domů do rodného kraje na motorce. (plánovaná věc: cesta domů na motorce)
+=zh_cn
+语法解说
+⟦dù A（假设）thì B（结果）⟧ 意为“即使A，也B”。
+⟦Dù lúc đó bạn đi bằng ô tô hay xe máy thì bạn cũng không thể di chuyển nhanh được.⟧ → 那时不管你坐汽车还是骑摩托车，都不可能快速移动。（⟦dù lúc đó bạn đi bằng ô tô hay xe máy⟧：假设；⟦thì bạn cũng không thể di chuyển nhanh được⟧：结果）
+⟦Dù bạn đi bằng ô tô thì bạn cũng vẫn bị trễ hẹn.⟧ → 即使你坐汽车去，也还是会迟到。（⟦dù bạn đi bằng ô tô⟧：假设；⟦thì bạn cũng vẫn bị trễ hẹn⟧：结果）
+⟦định⟧ + 动词表示“打算……”。
+⟦Nếu bạn định đi ra phố, bạn cần tránh giờ cao điểm.⟧ → 如果你打算上街，需要避开高峰时间。（打算的事：上街）
+⟦Anh ấy định đi du lịch vào mùa hè này.⟧ → 他打算今年夏天去旅行。（打算的事：今年夏天旅行）
+⟦Tôi định về quê bằng xe máy.⟧ → 我打算骑摩托车回老家。（打算的事：骑摩托车回老家）
+=zh
+文法解說
+⟦dù A（假設）thì B（結果）⟧ 意為「即使A，也B」。
+⟦Dù lúc đó bạn đi bằng ô tô hay xe máy thì bạn cũng không thể di chuyển nhanh được.⟧ → 那時不管你開車還是騎機車，都不可能快速移動。（⟦dù lúc đó bạn đi bằng ô tô hay xe máy⟧：假設；⟦thì bạn cũng không thể di chuyển nhanh được⟧：結果）
+⟦Dù bạn đi bằng ô tô thì bạn cũng vẫn bị trễ hẹn.⟧ → 即使你開車去，還是會遲到。（⟦dù bạn đi bằng ô tô⟧：假設；⟦thì bạn cũng vẫn bị trễ hẹn⟧：結果）
+⟦định⟧ + 動詞表示「打算……」。
+⟦Nếu bạn định đi ra phố, bạn cần tránh giờ cao điểm.⟧ → 如果你打算上街，需要避開尖峰時間。（打算的事：上街）
+⟦Anh ấy định đi du lịch vào mùa hè này.⟧ → 他打算今年夏天去旅行。（打算的事：今年夏天旅行）
+⟦Tôi định về quê bằng xe máy.⟧ → 我打算騎機車回老家。（打算的事：騎機車回老家）
+=en
+Grammar notes
+⟦dù A (supposition) thì B (result)⟧ means "even if A, B (still)".
+⟦Dù lúc đó bạn đi bằng ô tô hay xe máy thì bạn cũng không thể di chuyển nhanh được.⟧ → Even if you had gone by car or by motorbike then, you still couldn't have got there quickly. (⟦dù lúc đó bạn đi bằng ô tô hay xe máy⟧: supposition; ⟦thì bạn cũng không thể di chuyển nhanh được⟧: result)
+⟦Dù bạn đi bằng ô tô thì bạn cũng vẫn bị trễ hẹn.⟧ → Even if you had gone by car, you would still have been late. (⟦dù bạn đi bằng ô tô⟧: supposition; ⟦thì bạn cũng vẫn bị trễ hẹn⟧: result)
+⟦định⟧ + verb means "to plan to ~, to intend to ~".
+⟦Nếu bạn định đi ra phố, bạn cần tránh giờ cao điểm.⟧ → If you plan to go into town, you should avoid the rush hour. (planned: going into town)
+⟦Anh ấy định đi du lịch vào mùa hè này.⟧ → He plans to travel this summer. (planned: a trip this summer)
+⟦Tôi định về quê bằng xe máy.⟧ → I plan to go back to my home town by motorbike. (planned: going home by motorbike)
+=fr
+Notes de grammaire
+⟦dù A (hypothèse) thì B (résultat)⟧ signifie « même si A, B quand même ».
+⟦Dù lúc đó bạn đi bằng ô tô hay xe máy thì bạn cũng không thể di chuyển nhanh được.⟧ → Même si tu avais pris la voiture ou la moto à ce moment-là, tu n'aurais pas pu te déplacer vite. (⟦dù lúc đó bạn đi bằng ô tô hay xe máy⟧ : hypothèse ; ⟦thì bạn cũng không thể di chuyển nhanh được⟧ : résultat)
+⟦Dù bạn đi bằng ô tô thì bạn cũng vẫn bị trễ hẹn.⟧ → Même en voiture, tu aurais quand même été en retard au rendez-vous. (⟦dù bạn đi bằng ô tô⟧ : hypothèse ; ⟦thì bạn cũng vẫn bị trễ hẹn⟧ : résultat)
+⟦định⟧ + verbe signifie « avoir l'intention de ~, prévoir de ~ ».
+⟦Nếu bạn định đi ra phố, bạn cần tránh giờ cao điểm.⟧ → Si tu comptes aller en ville, évite les heures de pointe. (projet : aller en ville)
+⟦Anh ấy định đi du lịch vào mùa hè này.⟧ → Il prévoit de voyager cet été. (projet : voyage cet été)
+⟦Tôi định về quê bằng xe máy.⟧ → Je compte rentrer dans mon village natal à moto. (projet : rentrer à moto)
+=de
+Grammatikerläuterungen
+⟦dù A (Annahme) thì B (Folge)⟧ bedeutet „selbst wenn A, (dann) trotzdem B“.
+⟦Dù lúc đó bạn đi bằng ô tô hay xe máy thì bạn cũng không thể di chuyển nhanh được.⟧ → Selbst wenn du damals mit dem Auto oder dem Motorrad gefahren wärst, hättest du nicht schnell vorankommen können. (⟦dù lúc đó bạn đi bằng ô tô hay xe máy⟧: Annahme; ⟦thì bạn cũng không thể di chuyển nhanh được⟧: Folge)
+⟦Dù bạn đi bằng ô tô thì bạn cũng vẫn bị trễ hẹn.⟧ → Selbst mit dem Auto wärst du trotzdem zu spät zum Termin gekommen. (⟦dù bạn đi bằng ô tô⟧: Annahme; ⟦thì bạn cũng vẫn bị trễ hẹn⟧: Folge)
+⟦định⟧ + Verb bedeutet „vorhaben, ~ zu tun“.
+⟦Nếu bạn định đi ra phố, bạn cần tránh giờ cao điểm.⟧ → Wenn du vorhast, in die Stadt zu gehen, solltest du die Stoßzeit meiden. (Vorhaben: in die Stadt gehen)
+⟦Anh ấy định đi du lịch vào mùa hè này.⟧ → Er hat vor, diesen Sommer zu verreisen. (Vorhaben: Sommerreise)
+⟦Tôi định về quê bằng xe máy.⟧ → Ich habe vor, mit dem Motorrad in meine Heimat zu fahren. (Vorhaben: mit dem Motorrad nach Hause fahren)
+=hu
+Nyelvtani magyarázat
+A ⟦dù A (feltevés) thì B (eredmény)⟧ jelentése „még ha A, akkor is B”.
+⟦Dù lúc đó bạn đi bằng ô tô hay xe máy thì bạn cũng không thể di chuyển nhanh được.⟧ → Még ha akkor autóval vagy motorral mentél volna is, akkor sem tudtál volna gyorsan haladni. (⟦dù lúc đó bạn đi bằng ô tô hay xe máy⟧: feltevés; ⟦thì bạn cũng không thể di chuyển nhanh được⟧: eredmény)
+⟦Dù bạn đi bằng ô tô thì bạn cũng vẫn bị trễ hẹn.⟧ → Még ha autóval mentél volna is, akkor is elkéstél volna a találkozóról. (⟦dù bạn đi bằng ô tô⟧: feltevés; ⟦thì bạn cũng vẫn bị trễ hẹn⟧: eredmény)
+A ⟦định⟧ + ige jelentése „tervez ~, szándékozik ~”.
+⟦Nếu bạn định đi ra phố, bạn cần tránh giờ cao điểm.⟧ → Ha be akarsz menni a városba, kerüld el a csúcsidőt. (terv: bemenni a városba)
+⟦Anh ấy định đi du lịch vào mùa hè này.⟧ → Idén nyáron utazni tervez. (terv: nyári utazás)
+⟦Tôi định về quê bằng xe máy.⟧ → Motorral tervezek hazamenni a szülőfalumba. (terv: motorral hazamenni)
+=id
+Penjelasan tata bahasa
+⟦dù A (pengandaian) thì B (akibat)⟧ berarti "meskipun A, tetap B".
+⟦Dù lúc đó bạn đi bằng ô tô hay xe máy thì bạn cũng không thể di chuyển nhanh được.⟧ → Meskipun saat itu kamu naik mobil atau sepeda motor, kamu tetap tidak bisa bergerak cepat. (⟦dù lúc đó bạn đi bằng ô tô hay xe máy⟧: pengandaian; ⟦thì bạn cũng không thể di chuyển nhanh được⟧: akibat)
+⟦Dù bạn đi bằng ô tô thì bạn cũng vẫn bị trễ hẹn.⟧ → Meskipun kamu naik mobil, kamu tetap akan terlambat. (⟦dù bạn đi bằng ô tô⟧: pengandaian; ⟦thì bạn cũng vẫn bị trễ hẹn⟧: akibat)
+⟦định⟧ + verba berarti "berencana ~, bermaksud ~".
+⟦Nếu bạn định đi ra phố, bạn cần tránh giờ cao điểm.⟧ → Kalau kamu berencana ke kota, sebaiknya hindari jam sibuk. (rencana: pergi ke kota)
+⟦Anh ấy định đi du lịch vào mùa hè này.⟧ → Dia berencana berwisata musim panas ini. (rencana: wisata musim panas)
+⟦Tôi định về quê bằng xe máy.⟧ → Saya berencana pulang kampung naik sepeda motor. (rencana: pulang kampung naik motor)
+=ja
+文法解説
+⟦dù A（仮定）thì B（結果）⟧ の形で「たとえAであってもBになる」という意味で使われます。
+⟦Dù lúc đó bạn đi bằng ô tô hay xe máy thì bạn cũng không thể di chuyển nhanh được.⟧ → あのとき車で行ってもバイクで行っても、速く移動することはできなかっただろう。（⟦dù lúc đó bạn đi bằng ô tô hay xe máy⟧：仮定、⟦thì bạn cũng không thể di chuyển nhanh được⟧：結果）
+⟦Dù bạn đi bằng ô tô thì bạn cũng vẫn bị trễ hẹn.⟧ → たとえ車で行っても、約束には遅れただろう。（⟦dù bạn đi bằng ô tô⟧：仮定、⟦thì bạn cũng vẫn bị trễ hẹn⟧：結果）
+⟦định⟧ + 動詞の形で「～する予定だ、～するつもりだ」という意味で使われます。
+⟦Nếu bạn định đi ra phố, bạn cần tránh giờ cao điểm.⟧ → 街に出るつもりなら、ラッシュアワーを避けたほうがいい。（予定：街に出ること）
+⟦Anh ấy định đi du lịch vào mùa hè này.⟧ → 彼はこの夏、旅行に行く予定だ。（予定：この夏の旅行）
+⟦Tôi định về quê bằng xe máy.⟧ → 私はバイクで故郷に帰る予定だ。（予定：バイクで帰郷すること）
+=pl
+Objaśnienia gramatyczne
+⟦dù A (założenie) thì B (skutek)⟧ znaczy „nawet gdyby A, to i tak B”.
+⟦Dù lúc đó bạn đi bằng ô tô hay xe máy thì bạn cũng không thể di chuyển nhanh được.⟧ → Nawet gdybyś wtedy pojechał samochodem czy motocyklem, i tak nie przemieściłbyś się szybko. (⟦dù lúc đó bạn đi bằng ô tô hay xe máy⟧: założenie; ⟦thì bạn cũng không thể di chuyển nhanh được⟧: skutek)
+⟦Dù bạn đi bằng ô tô thì bạn cũng vẫn bị trễ hẹn.⟧ → Nawet gdybyś pojechał samochodem, i tak spóźniłbyś się na spotkanie. (⟦dù bạn đi bằng ô tô⟧: założenie; ⟦thì bạn cũng vẫn bị trễ hẹn⟧: skutek)
+⟦định⟧ + czasownik znaczy „zamierzać ~, planować ~”.
+⟦Nếu bạn định đi ra phố, bạn cần tránh giờ cao điểm.⟧ → Jeśli zamierzasz wyjść do miasta, unikaj godzin szczytu. (plan: wyjście do miasta)
+⟦Anh ấy định đi du lịch vào mùa hè này.⟧ → Tego lata zamierza wyjechać w podróż. (plan: letnia podróż)
+⟦Tôi định về quê bằng xe máy.⟧ → Zamierzam pojechać w rodzinne strony motocyklem. (plan: powrót do domu motocyklem)

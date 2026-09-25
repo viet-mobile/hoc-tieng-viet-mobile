@@ -1,0 +1,172 @@
+@@ pdf-grammar-e192071b9ae0b908#0
+=cs
+Gramatický výklad
+⟦đông⟧ znamená „přeplněný, rušný“ a ⟦vắng⟧ „řídký, prázdný“; vyjadřují, zda je lidí hodně, nebo málo.
+⟦Sáng nay, đông người đến xem triển lãm.⟧ → Dnes ráno přišlo na výstavu hodně lidí. · ⟦Đường phố vào lúc này rất đông người.⟧ → Ulice jsou teď přeplněné lidmi. · ⟦Nhà hàng rất đông khách.⟧ → Restaurace je plná hostů. · ⟦Đường phố vắng người qua lại.⟧ → Na ulici skoro nikdo neprochází.
+⟦luôn luôn⟧ je příslovce frekvence ve významu „vždy“.
+⟦Đây là một khu phố luôn luôn đông người⟧ → Tohle je čtvrť, kde je vždy plno lidí. · ⟦Tên gọi phố cổ trước đây luôn luôn có chữ “hàng” đứng trước.⟧ → Názvy ulic ve starém městě dříve vždy začínaly slovem „hàng“.
+⟦chỉ khi A thì B⟧ znamená „jen když A, (teprve) B“.
+⟦Chỉ khi đêm khuya thì khu vực này mới vắng khách.⟧ → Teprve pozdě v noci se tahle oblast vyprázdní. (určitá doba: pozdní noc; co nastane: oblast se vyprázdní)
+⟦Chỉ khi trời mưa thì cửa hàng mới vắng khách.⟧ → Jen když prší, je v obchodě málo zákazníků. (určitá doba: déšť; co nastane: ubude zákazníků)
+=zh_cn
+语法解说
+⟦đông⟧ 意为“拥挤的”，⟦vắng⟧ 意为“稀少的、空的”，用来表示人数的多少。
+⟦Sáng nay, đông người đến xem triển lãm.⟧ → 今天早上很多人来看展览。 · ⟦Đường phố vào lúc này rất đông người.⟧ → 这时候街上人很多。 · ⟦Nhà hàng rất đông khách.⟧ → 餐厅里客人很多。 · ⟦Đường phố vắng người qua lại.⟧ → 街上几乎没有行人。
+⟦luôn luôn⟧ 是频率副词，意为“总是”。
+⟦Đây là một khu phố luôn luôn đông người⟧ → 这里是一个总是人很多的街区。 · ⟦Tên gọi phố cổ trước đây luôn luôn có chữ “hàng” đứng trước.⟧ → 古街的名称以前前面总有“hàng”这个字。
+⟦chỉ khi A thì B⟧ 意为“只有A的时候才B”。
+⟦Chỉ khi đêm khuya thì khu vực này mới vắng khách.⟧ → 只有到了深夜，这一带才人少。（特定时间：深夜；发生的事：这一带才人少）
+⟦Chỉ khi trời mưa thì cửa hàng mới vắng khách.⟧ → 只有下雨时，店里的客人才少。（特定时间：下雨时；发生的事：客人才变少）
+=zh
+文法解說
+⟦đông⟧ 意為「擁擠的」，⟦vắng⟧ 意為「稀少的、空的」，用來表示人數的多寡。
+⟦Sáng nay, đông người đến xem triển lãm.⟧ → 今天早上很多人來看展覽。 · ⟦Đường phố vào lúc này rất đông người.⟧ → 這時候街上人很多。 · ⟦Nhà hàng rất đông khách.⟧ → 餐廳裡客人很多。 · ⟦Đường phố vắng người qua lại.⟧ → 街上幾乎沒有行人。
+⟦luôn luôn⟧ 是頻率副詞，意為「總是」。
+⟦Đây là một khu phố luôn luôn đông người⟧ → 這裡是一個總是人潮擁擠的街區。 · ⟦Tên gọi phố cổ trước đây luôn luôn có chữ “hàng” đứng trước.⟧ → 古街的名稱以前前面總有「hàng」這個字。
+⟦chỉ khi A thì B⟧ 意為「只有A的時候才B」。
+⟦Chỉ khi đêm khuya thì khu vực này mới vắng khách.⟧ → 只有到了深夜，這一帶才人少。（特定時間：深夜；發生的事：這一帶才人少）
+⟦Chỉ khi trời mưa thì cửa hàng mới vắng khách.⟧ → 只有下雨時，店裡的客人才少。（特定時間：下雨時；發生的事：客人才變少）
+=en
+Grammar notes
+⟦đông⟧ means "crowded" and ⟦vắng⟧ "sparse, empty"; they describe whether there are many or few people.
+⟦Sáng nay, đông người đến xem triển lãm.⟧ → Lots of people came to see the exhibition this morning. · ⟦Đường phố vào lúc này rất đông người.⟧ → The streets are very crowded at this time. · ⟦Nhà hàng rất đông khách.⟧ → The restaurant is packed with customers. · ⟦Đường phố vắng người qua lại.⟧ → Hardly anyone is passing along the street.
+⟦luôn luôn⟧ is an adverb of frequency meaning "always".
+⟦Đây là một khu phố luôn luôn đông người⟧ → This is a neighbourhood that is always crowded. · ⟦Tên gọi phố cổ trước đây luôn luôn có chữ “hàng” đứng trước.⟧ → Street names in the Old Quarter used to always begin with the word "hàng".
+⟦chỉ khi A thì B⟧ means "only when A (does) B".
+⟦Chỉ khi đêm khuya thì khu vực này mới vắng khách.⟧ → Only late at night does this area empty out. (specific time: late at night; what happens: the area empties)
+⟦Chỉ khi trời mưa thì cửa hàng mới vắng khách.⟧ → Only when it rains are there few customers in the shop. (specific time: when it rains; what happens: fewer customers)
+=fr
+Notes de grammaire
+⟦đông⟧ signifie « bondé, animé » et ⟦vắng⟧ « clairsemé, désert » ; ils expriment le nombre de personnes, élevé ou faible.
+⟦Sáng nay, đông người đến xem triển lãm.⟧ → Ce matin, beaucoup de monde est venu voir l'exposition. · ⟦Đường phố vào lúc này rất đông người.⟧ → À cette heure-ci, les rues sont bondées. · ⟦Nhà hàng rất đông khách.⟧ → Le restaurant est plein de clients. · ⟦Đường phố vắng người qua lại.⟧ → Il n'y a presque personne dans la rue.
+⟦luôn luôn⟧ est un adverbe de fréquence signifiant « toujours ».
+⟦Đây là một khu phố luôn luôn đông người⟧ → C'est un quartier toujours très animé. · ⟦Tên gọi phố cổ trước đây luôn luôn có chữ “hàng” đứng trước.⟧ → Autrefois, les noms de rues du vieux quartier commençaient toujours par le mot « hàng ».
+⟦chỉ khi A thì B⟧ signifie « ce n'est que lorsque A que B ».
+⟦Chỉ khi đêm khuya thì khu vực này mới vắng khách.⟧ → Ce n'est que tard dans la nuit que ce quartier se vide. (moment : tard la nuit ; ce qui se passe : le quartier se vide)
+⟦Chỉ khi trời mưa thì cửa hàng mới vắng khách.⟧ → Ce n'est que quand il pleut que la boutique a peu de clients. (moment : quand il pleut ; ce qui se passe : moins de clients)
+=de
+Grammatikerläuterungen
+⟦đông⟧ bedeutet „voll, belebt“ und ⟦vắng⟧ „spärlich, leer“; sie drücken aus, ob viele oder wenige Menschen da sind.
+⟦Sáng nay, đông người đến xem triển lãm.⟧ → Heute Morgen kamen viele Leute zur Ausstellung. · ⟦Đường phố vào lúc này rất đông người.⟧ → Die Straßen sind um diese Zeit sehr voll. · ⟦Nhà hàng rất đông khách.⟧ → Das Restaurant ist voller Gäste. · ⟦Đường phố vắng người qua lại.⟧ → Auf der Straße ist kaum jemand unterwegs.
+⟦luôn luôn⟧ ist ein Häufigkeitsadverb mit der Bedeutung „immer“.
+⟦Đây là một khu phố luôn luôn đông người⟧ → Das ist ein Viertel, in dem immer viel los ist. · ⟦Tên gọi phố cổ trước đây luôn luôn có chữ “hàng” đứng trước.⟧ → Die Straßennamen der Altstadt begannen früher immer mit dem Wort „hàng“.
+⟦chỉ khi A thì B⟧ bedeutet „nur wenn A, (erst dann) B“.
+⟦Chỉ khi đêm khuya thì khu vực này mới vắng khách.⟧ → Erst spät in der Nacht wird es in dieser Gegend leer. (Zeitpunkt: späte Nacht; was geschieht: die Gegend leert sich)
+⟦Chỉ khi trời mưa thì cửa hàng mới vắng khách.⟧ → Nur wenn es regnet, hat der Laden wenig Kundschaft. (Zeitpunkt: bei Regen; was geschieht: weniger Kunden)
+=hu
+Nyelvtani magyarázat
+A ⟦đông⟧ jelentése „zsúfolt, forgalmas”, a ⟦vắng⟧ jelentése „gyér, üres”; azt fejezik ki, sok vagy kevés ember van-e valahol.
+⟦Sáng nay, đông người đến xem triển lãm.⟧ → Ma reggel sokan jöttek megnézni a kiállítást. · ⟦Đường phố vào lúc này rất đông người.⟧ → Ilyenkor nagyon zsúfoltak az utcák. · ⟦Nhà hàng rất đông khách.⟧ → Az étterem tele van vendégekkel. · ⟦Đường phố vắng người qua lại.⟧ → Alig jár valaki az utcán.
+A ⟦luôn luôn⟧ gyakoriságot jelölő határozószó, jelentése „mindig”.
+⟦Đây là một khu phố luôn luôn đông người⟧ → Ez egy mindig zsúfolt negyed. · ⟦Tên gọi phố cổ trước đây luôn luôn có chữ “hàng” đứng trước.⟧ → Az óváros utcanevei régen mindig a „hàng” szóval kezdődtek.
+A ⟦chỉ khi A thì B⟧ jelentése „csak amikor A, (csak akkor) B”.
+⟦Chỉ khi đêm khuya thì khu vực này mới vắng khách.⟧ → Csak késő éjjel néptelenedik el ez a környék. (időpont: késő éjjel; ami történik: kiürül a környék)
+⟦Chỉ khi trời mưa thì cửa hàng mới vắng khách.⟧ → Csak amikor esik, akkor kevés a vevő a boltban. (időpont: eső; ami történik: kevesebb vevő)
+=id
+Penjelasan tata bahasa
+⟦đông⟧ berarti "ramai, padat" dan ⟦vắng⟧ "sepi, kosong"; keduanya menyatakan banyak sedikitnya orang.
+⟦Sáng nay, đông người đến xem triển lãm.⟧ → Pagi ini banyak orang datang melihat pameran. · ⟦Đường phố vào lúc này rất đông người.⟧ → Jalanan saat ini sangat ramai. · ⟦Nhà hàng rất đông khách.⟧ → Restoran itu ramai sekali pengunjungnya. · ⟦Đường phố vắng người qua lại.⟧ → Jalanan sepi, hampir tidak ada orang lewat.
+⟦luôn luôn⟧ adalah adverbia frekuensi yang berarti "selalu".
+⟦Đây là một khu phố luôn luôn đông người⟧ → Ini kawasan yang selalu ramai. · ⟦Tên gọi phố cổ trước đây luôn luôn có chữ “hàng” đứng trước.⟧ → Dulu nama-nama jalan di kota tua selalu diawali kata "hàng".
+⟦chỉ khi A thì B⟧ berarti "hanya ketika A barulah B".
+⟦Chỉ khi đêm khuya thì khu vực này mới vắng khách.⟧ → Hanya ketika larut malam barulah kawasan ini sepi. (waktu tertentu: larut malam; yang terjadi: kawasan menjadi sepi)
+⟦Chỉ khi trời mưa thì cửa hàng mới vắng khách.⟧ → Hanya saat hujan barulah toko itu sepi pembeli. (waktu tertentu: saat hujan; yang terjadi: pembeli berkurang)
+=ja
+文法解説
+⟦đông⟧ は「混んでいる」、⟦vắng⟧ は「まばらな、空いている」という意味で、人の数の多少を表します。
+⟦Sáng nay, đông người đến xem triển lãm.⟧ → 今朝は展示会を見に来た人で混雑していた。 · ⟦Đường phố vào lúc này rất đông người.⟧ → 今の時間、通りは人でとても混んでいる。 · ⟦Nhà hàng rất đông khách.⟧ → レストランは客で混んでいる。 · ⟦Đường phố vắng người qua lại.⟧ → 通りには行き交う人がほとんどいない。
+⟦luôn luôn⟧ は頻度の副詞で「いつも」という意味です。
+⟦Đây là một khu phố luôn luôn đông người⟧ → ここはいつも人で混雑している界隈だ。 · ⟦Tên gọi phố cổ trước đây luôn luôn có chữ “hàng” đứng trước.⟧ → 旧市街の通りの名前には、以前はいつも前に「hàng」という語が付いていた。
+⟦chỉ khi A thì B⟧ の形で「Aのときにだけ B する」という意味で使われます。
+⟦Chỉ khi đêm khuya thì khu vực này mới vắng khách.⟧ → 深夜になってようやくこの一帯は人が少なくなる。（特定の時間：深夜、起こること：人が少なくなる）
+⟦Chỉ khi trời mưa thì cửa hàng mới vắng khách.⟧ → 雨が降るときだけ、店の客がようやく少なくなる。（特定の時間：雨のとき、起こること：客が少なくなる）
+=pl
+Objaśnienia gramatyczne
+⟦đông⟧ znaczy „zatłoczony, tłoczny”, a ⟦vắng⟧ „rzadki, pusty”; wyrażają, czy ludzi jest dużo, czy mało.
+⟦Sáng nay, đông người đến xem triển lãm.⟧ → Dziś rano na wystawę przyszło wielu ludzi. · ⟦Đường phố vào lúc này rất đông người.⟧ → O tej porze ulice są bardzo zatłoczone. · ⟦Nhà hàng rất đông khách.⟧ → Restauracja jest pełna gości. · ⟦Đường phố vắng người qua lại.⟧ → Na ulicy prawie nikt nie przechodzi.
+⟦luôn luôn⟧ to przysłówek częstotliwości znaczący „zawsze”.
+⟦Đây là một khu phố luôn luôn đông người⟧ → To dzielnica, w której zawsze jest tłoczno. · ⟦Tên gọi phố cổ trước đây luôn luôn có chữ “hàng” đứng trước.⟧ → Dawniej nazwy ulic starego miasta zawsze zaczynały się od słowa „hàng”.
+⟦chỉ khi A thì B⟧ znaczy „tylko gdy A, (dopiero wtedy) B”.
+⟦Chỉ khi đêm khuya thì khu vực này mới vắng khách.⟧ → Dopiero późną nocą ta okolica pustoszeje. (określony czas: późna noc; co się dzieje: okolica pustoszeje)
+⟦Chỉ khi trời mưa thì cửa hàng mới vắng khách.⟧ → Tylko gdy pada, w sklepie jest mało klientów. (określony czas: deszcz; co się dzieje: mniej klientów)
+@@ pdf-grammar-2245b4d7f29bbaf6#0
+=cs
+Gramatický výklad
+⟦giống như⟧, ⟦như⟧ a ⟦giống⟧ znamenají „podobný ~, jako ~, připomínající ~“.
+⟦Đà Lạt giống như một khu vườn lớn.⟧ → Đà Lạt je jako jedna velká zahrada. · ⟦Những thân cây nghiêng mình như soi bóng xuống dòng nước.⟧ → Kmeny stromů se sklánějí, jako by se zrcadlily ve vodě. · ⟦Thời tiết ở Đà Lạt lúc nào cũng giống thời tiết của mùa thu.⟧ → Počasí v Đà Lạtu je vždycky jako na podzim.
+⟦cái gì cũng⟧ + přísudek (sloveso, přídavné jméno) znamená „všechno je ~“.
+⟦Ở đây, xà lách, bắp cải, su hào, cái gì cũng mơn mởn.⟧ → Salát, zelí i kedlubny – všechno je tu svěží a šťavnaté. · ⟦Quần áo, chăn màn, giày dép ở chợ này, cái gì cũng rẻ.⟧ → Oblečení, lůžkoviny i obuv – všechno je na tomhle trhu levné.
+⟦nếu A thì B⟧ znamená „jestliže A, (pak) B“.
+⟦Nếu xe cộ phải dừng lại ở lưng chừng chờ đèn thì sẽ rất nguy hiểm cho mọi người.⟧ → Kdyby vozidla musela zastavovat v půli cesty a čekat na semafor, bylo by to pro všechny velmi nebezpečné. · ⟦Nếu trời không mưa thì tôi nhất định sẽ đi leo núi.⟧ → Jestli nebude pršet, určitě půjdu na horu.
+=zh_cn
+语法解说
+⟦giống như⟧、⟦như⟧、⟦giống⟧ 分别表示“像……一样”“如同……”“与……相似”。
+⟦Đà Lạt giống như một khu vườn lớn.⟧ → 大叻就像一座大花园。 · ⟦Những thân cây nghiêng mình như soi bóng xuống dòng nước.⟧ → 树干倾斜着，仿佛在水面上照着自己的倒影。 · ⟦Thời tiết ở Đà Lạt lúc nào cũng giống thời tiết của mùa thu.⟧ → 大叻的天气总像秋天的天气。
+⟦cái gì cũng⟧ + 谓语（动词、形容词）表示“什么都……、全都……”。
+⟦Ở đây, xà lách, bắp cải, su hào, cái gì cũng mơn mởn.⟧ → 这里的生菜、卷心菜、苤蓝，样样都很鲜嫩。 · ⟦Quần áo, chăn màn, giày dép ở chợ này, cái gì cũng rẻ.⟧ → 这个市场的衣服、被褥、鞋子，什么都便宜。
+⟦nếu A thì B⟧ 意为“如果A就B”。
+⟦Nếu xe cộ phải dừng lại ở lưng chừng chờ đèn thì sẽ rất nguy hiểm cho mọi người.⟧ → 如果车辆不得不在半路停下来等红绿灯，对大家都会很危险。 · ⟦Nếu trời không mưa thì tôi nhất định sẽ đi leo núi.⟧ → 如果不下雨，我一定去爬山。
+=zh
+文法解說
+⟦giống như⟧、⟦như⟧、⟦giống⟧ 分別表示「像……一樣」「如同……」「與……相似」。
+⟦Đà Lạt giống như một khu vườn lớn.⟧ → 大叻就像一座大花園。 · ⟦Những thân cây nghiêng mình như soi bóng xuống dòng nước.⟧ → 樹幹傾斜著，彷彿在水面上照著自己的倒影。 · ⟦Thời tiết ở Đà Lạt lúc nào cũng giống thời tiết của mùa thu.⟧ → 大叻的天氣總像秋天的天氣。
+⟦cái gì cũng⟧ + 謂語（動詞、形容詞）表示「什麼都……、全都……」。
+⟦Ở đây, xà lách, bắp cải, su hào, cái gì cũng mơn mởn.⟧ → 這裡的萵苣、高麗菜、大頭菜，樣樣都很鮮嫩。 · ⟦Quần áo, chăn màn, giày dép ở chợ này, cái gì cũng rẻ.⟧ → 這個市場的衣服、寢具、鞋子，什麼都便宜。
+⟦nếu A thì B⟧ 意為「如果A就B」。
+⟦Nếu xe cộ phải dừng lại ở lưng chừng chờ đèn thì sẽ rất nguy hiểm cho mọi người.⟧ → 如果車輛得在半路停下來等紅綠燈，對大家都會很危險。 · ⟦Nếu trời không mưa thì tôi nhất định sẽ đi leo núi.⟧ → 如果不下雨，我一定去爬山。
+=en
+Grammar notes
+⟦giống như⟧, ⟦như⟧ and ⟦giống⟧ mean "similar to ~", "like ~" and "resembling ~" respectively.
+⟦Đà Lạt giống như một khu vườn lớn.⟧ → Đà Lạt is like one big garden. · ⟦Những thân cây nghiêng mình như soi bóng xuống dòng nước.⟧ → The tree trunks lean over as if admiring their reflection in the water. · ⟦Thời tiết ở Đà Lạt lúc nào cũng giống thời tiết của mùa thu.⟧ → The weather in Đà Lạt is always like autumn weather.
+⟦cái gì cũng⟧ + predicate (verb, adjective) means "everything is ~".
+⟦Ở đây, xà lách, bắp cải, su hào, cái gì cũng mơn mởn.⟧ → Here the lettuce, cabbage, kohlrabi – everything is lush and fresh. · ⟦Quần áo, chăn màn, giày dép ở chợ này, cái gì cũng rẻ.⟧ → Clothes, bedding, shoes – everything at this market is cheap.
+⟦nếu A thì B⟧ means "if A, (then) B".
+⟦Nếu xe cộ phải dừng lại ở lưng chừng chờ đèn thì sẽ rất nguy hiểm cho mọi người.⟧ → If vehicles had to stop halfway and wait for the lights, it would be very dangerous for everyone. · ⟦Nếu trời không mưa thì tôi nhất định sẽ đi leo núi.⟧ → If it doesn't rain, I'll definitely go climbing.
+=fr
+Notes de grammaire
+⟦giống như⟧, ⟦như⟧ et ⟦giống⟧ signifient respectivement « semblable à ~ », « comme ~ » et « ressembler à ~ ».
+⟦Đà Lạt giống như một khu vườn lớn.⟧ → Đà Lạt est comme un grand jardin. · ⟦Những thân cây nghiêng mình như soi bóng xuống dòng nước.⟧ → Les troncs se penchent comme pour se mirer dans l'eau. · ⟦Thời tiết ở Đà Lạt lúc nào cũng giống thời tiết của mùa thu.⟧ → À Đà Lạt, il fait toujours un temps d'automne.
+⟦cái gì cũng⟧ + prédicat (verbe, adjectif) signifie « tout est ~ ».
+⟦Ở đây, xà lách, bắp cải, su hào, cái gì cũng mơn mởn.⟧ → Ici, laitue, chou, chou-rave, tout est bien frais. · ⟦Quần áo, chăn màn, giày dép ở chợ này, cái gì cũng rẻ.⟧ → Vêtements, literie, chaussures : tout est bon marché sur ce marché.
+⟦nếu A thì B⟧ signifie « si A, (alors) B ».
+⟦Nếu xe cộ phải dừng lại ở lưng chừng chờ đèn thì sẽ rất nguy hiểm cho mọi người.⟧ → Si les véhicules devaient s'arrêter à mi-chemin pour attendre le feu, ce serait très dangereux pour tout le monde. · ⟦Nếu trời không mưa thì tôi nhất định sẽ đi leo núi.⟧ → S'il ne pleut pas, j'irai sans faute faire de la randonnée en montagne.
+=de
+Grammatikerläuterungen
+⟦giống như⟧, ⟦như⟧ und ⟦giống⟧ bedeuten „ähnlich wie ~“, „wie ~“ bzw. „~ gleichen“.
+⟦Đà Lạt giống như một khu vườn lớn.⟧ → Đà Lạt ist wie ein großer Garten. · ⟦Những thân cây nghiêng mình như soi bóng xuống dòng nước.⟧ → Die Baumstämme neigen sich, als spiegelten sie sich im Wasser. · ⟦Thời tiết ở Đà Lạt lúc nào cũng giống thời tiết của mùa thu.⟧ → In Đà Lạt ist das Wetter immer wie im Herbst.
+⟦cái gì cũng⟧ + Prädikat (Verb, Adjektiv) bedeutet „alles ist ~“.
+⟦Ở đây, xà lách, bắp cải, su hào, cái gì cũng mơn mởn.⟧ → Salat, Kohl, Kohlrabi – hier ist alles frisch und saftig. · ⟦Quần áo, chăn màn, giày dép ở chợ này, cái gì cũng rẻ.⟧ → Kleidung, Bettzeug, Schuhe – auf diesem Markt ist alles billig.
+⟦nếu A thì B⟧ bedeutet „wenn A, (dann) B“.
+⟦Nếu xe cộ phải dừng lại ở lưng chừng chờ đèn thì sẽ rất nguy hiểm cho mọi người.⟧ → Wenn Fahrzeuge auf halber Strecke anhalten und auf die Ampel warten müssten, wäre das für alle sehr gefährlich. · ⟦Nếu trời không mưa thì tôi nhất định sẽ đi leo núi.⟧ → Wenn es nicht regnet, gehe ich auf jeden Fall wandern.
+=hu
+Nyelvtani magyarázat
+A ⟦giống như⟧, ⟦như⟧ és ⟦giống⟧ jelentése sorrendben „hasonló ~hoz”, „mint ~”, „~ra hasonlít”.
+⟦Đà Lạt giống như một khu vườn lớn.⟧ → Đà Lạt olyan, mint egy nagy kert. · ⟦Những thân cây nghiêng mình như soi bóng xuống dòng nước.⟧ → A fatörzsek meghajolnak, mintha a vízben tükröznék magukat. · ⟦Thời tiết ở Đà Lạt lúc nào cũng giống thời tiết của mùa thu.⟧ → Đà Lạtban mindig őszies az idő.
+A ⟦cái gì cũng⟧ + állítmány (ige, melléknév) jelentése „minden ~”.
+⟦Ở đây, xà lách, bắp cải, su hào, cái gì cũng mơn mởn.⟧ → Itt a saláta, a káposzta, a karalábé – minden friss és zsenge. · ⟦Quần áo, chăn màn, giày dép ở chợ này, cái gì cũng rẻ.⟧ → Ruha, ágynemű, cipő – ezen a piacon minden olcsó.
+A ⟦nếu A thì B⟧ jelentése „ha A, (akkor) B”.
+⟦Nếu xe cộ phải dừng lại ở lưng chừng chờ đèn thì sẽ rất nguy hiểm cho mọi người.⟧ → Ha a járműveknek félúton kellene megállniuk a lámpára várva, az mindenkire nézve nagyon veszélyes lenne. · ⟦Nếu trời không mưa thì tôi nhất định sẽ đi leo núi.⟧ → Ha nem esik, mindenképp elmegyek hegyet mászni.
+=id
+Penjelasan tata bahasa
+⟦giống như⟧, ⟦như⟧, dan ⟦giống⟧ masing-masing berarti "mirip ~", "seperti ~", dan "menyerupai ~".
+⟦Đà Lạt giống như một khu vườn lớn.⟧ → Đà Lạt seperti sebuah taman besar. · ⟦Những thân cây nghiêng mình như soi bóng xuống dòng nước.⟧ → Batang-batang pohon condong seolah bercermin di air. · ⟦Thời tiết ở Đà Lạt lúc nào cũng giống thời tiết của mùa thu.⟧ → Cuaca di Đà Lạt selalu seperti cuaca musim gugur.
+⟦cái gì cũng⟧ + predikat (verba, adjektiva) berarti "semuanya ~".
+⟦Ở đây, xà lách, bắp cải, su hào, cái gì cũng mơn mởn.⟧ → Di sini selada, kubis, kohlrabi, semuanya segar. · ⟦Quần áo, chăn màn, giày dép ở chợ này, cái gì cũng rẻ.⟧ → Pakaian, perlengkapan tidur, alas kaki di pasar ini, semuanya murah.
+⟦nếu A thì B⟧ berarti "jika A, maka B".
+⟦Nếu xe cộ phải dừng lại ở lưng chừng chờ đèn thì sẽ rất nguy hiểm cho mọi người.⟧ → Jika kendaraan harus berhenti di tengah jalan menunggu lampu, itu akan sangat berbahaya bagi semua orang. · ⟦Nếu trời không mưa thì tôi nhất định sẽ đi leo núi.⟧ → Jika tidak hujan, saya pasti akan mendaki gunung.
+=ja
+文法解説
+⟦giống như⟧、⟦như⟧、⟦giống⟧ はそれぞれ「～と似ている」「～のようだ」「～に類似している」という意味で使われます。
+⟦Đà Lạt giống như một khu vườn lớn.⟧ → ダラットはまるで大きな庭園のようだ。 · ⟦Những thân cây nghiêng mình như soi bóng xuống dòng nước.⟧ → 木々が幹を傾け、まるで水面に自分の姿を映しているようだ。 · ⟦Thời tiết ở Đà Lạt lúc nào cũng giống thời tiết của mùa thu.⟧ → ダラットの天気はいつも秋のようだ。
+⟦cái gì cũng⟧ + 述語（動詞・形容詞）の形で「どれも～だ」という意味で使われます。
+⟦Ở đây, xà lách, bắp cải, su hào, cái gì cũng mơn mởn.⟧ → ここのレタス、キャベツ、コールラビはどれもみずみずしい。 · ⟦Quần áo, chăn màn, giày dép ở chợ này, cái gì cũng rẻ.⟧ → この市場の服、寝具、履物はどれも安い。
+⟦nếu A thì B⟧ の形で「もしAならBする」という意味で使われます。
+⟦Nếu xe cộ phải dừng lại ở lưng chừng chờ đèn thì sẽ rất nguy hiểm cho mọi người.⟧ → もし車両が中途半端な所で止まって信号を待たなければならないとしたら、みんなにとってとても危険だ。 · ⟦Nếu trời không mưa thì tôi nhất định sẽ đi leo núi.⟧ → もし雨が降らなければ、私は必ず山に登る。
+=pl
+Objaśnienia gramatyczne
+⟦giống như⟧, ⟦như⟧ i ⟦giống⟧ znaczą kolejno „podobny do ~”, „jak ~” i „przypominać ~”.
+⟦Đà Lạt giống như một khu vườn lớn.⟧ → Đà Lạt jest jak jeden wielki ogród. · ⟦Những thân cây nghiêng mình như soi bóng xuống dòng nước.⟧ → Pnie drzew pochylają się, jakby przeglądały się w wodzie. · ⟦Thời tiết ở Đà Lạt lúc nào cũng giống thời tiết của mùa thu.⟧ → Pogoda w Đà Lạt jest zawsze jak jesienią.
+⟦cái gì cũng⟧ + orzeczenie (czasownik, przymiotnik) znaczy „wszystko jest ~”.
+⟦Ở đây, xà lách, bắp cải, su hào, cái gì cũng mơn mởn.⟧ → Sałata, kapusta, kalarepa – wszystko jest tu świeże i soczyste. · ⟦Quần áo, chăn màn, giày dép ở chợ này, cái gì cũng rẻ.⟧ → Ubrania, pościel, buty – na tym targu wszystko jest tanie.
+⟦nếu A thì B⟧ znaczy „jeśli A, to B”.
+⟦Nếu xe cộ phải dừng lại ở lưng chừng chờ đèn thì sẽ rất nguy hiểm cho mọi người.⟧ → Gdyby pojazdy musiały zatrzymywać się w połowie drogi i czekać na światła, byłoby to bardzo niebezpieczne dla wszystkich. · ⟦Nếu trời không mưa thì tôi nhất định sẽ đi leo núi.⟧ → Jeśli nie będzie padać, na pewno pójdę w góry.

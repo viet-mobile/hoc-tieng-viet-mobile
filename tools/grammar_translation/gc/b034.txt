@@ -1,0 +1,181 @@
+@@ pdf-grammar-ec4d02554e83d90f#0
+=cs
+Klíčový výraz: ⟦thà ~ còn hơn⟧
+⟦thà + A + còn hơn + B⟧ znamená „raději A než B, lepší je A než B“ a používá se, když volíme o něco menší zlo (A), abychom se vyhnuli horšímu (B). V rozhovoru s jasným kontextem lze B vynechat. Protože výraz vyjadřuje osobní volbu, podmětem bývá většinou ⟦tôi⟧, někdy i ⟦chúng tôi⟧.
+❶ ⟦Thà chết còn hơn sống mà không có tự do.⟧ — Raději zemřít než žít bez svobody.
+❷ ⟦Thà làm kẻ ăn mày khoẻ mạnh còn hơn làm ông vua đau yếu.⟧ — Raději být zdravým žebrákem než nemocným králem.
+❸ ⟦Tôi thà sống một mình còn hơn kết hôn với một người đàn ông gia trưởng.⟧ — Raději budu žít sama, než abych si vzala patriarchálního muže.
+Výrazy k různým způsobům blahopřání: ⟦bó hoa⟧ kytice | ⟦lời chúc⟧ přání | ⟦món quà⟧ dárek | ⟦tiền mừng⟧ peníze jako dar (ke svatbě apod.) | ⟦thiệp chúc mừng⟧ blahopřání (přáníčko)
+Procvičování 1 — spojte vhodné části a veďte rozhovor podle vzoru: ① ⟦đi taxi⟧ (jet taxíkem) – Ⓒ ⟦tắc đường⟧ (zácpa) – ① ⟦cứ đi bộ⟧ (radši jít pěšky) | ② ⟦ăn mì tôm⟧ (jíst instantní nudle) – Ⓐ ⟦chán⟧ (už mě nebaví) – ② ⟦nhịn đói⟧ (radši hladovět) | ③ ⟦ra ngoài chơi⟧ (jít se ven bavit) – Ⓑ ⟦trời lạnh⟧ (je zima) – ③ ⟦ở nhà ngủ⟧ (radši zůstat doma a spát)
+Vzor (①–Ⓒ–①): Ⓐ ⟦Chúng ta đi taxi nhé?⟧ — Pojedeme taxíkem? Ⓑ ⟦Tắc đường quá! Tôi thà cứ đi bộ còn hơn (đi taxi).⟧ — Je strašná zácpa! To radši půjdu pěšky, než abych jel taxíkem.
+Rozhovor: Min-ho a Trang si povídají o účasti na Hiềnině svatbě.
+Trang: ⟦Anh ơi, cuối tuần này anh sẽ đi dự lễ cưới của chị Hiền, phải không?⟧ — Tento víkend jdeš na Hiềninu svatbu, že?
+Min-ho: ⟦Ừ. Em cũng đi cùng anh chứ?⟧ — Jo. Půjdeš taky se mnou?
+Trang: ⟦Em chưa biết có đến được hay không, vì hôm đó em phải đi công tác.⟧ — Ještě nevím, jestli to stihnu, protože ten den musím na služební cestu.
+Min-ho: ⟦Nếu có thể thì em cứ đến nhé. Thà đến muộn còn hơn không đến mà.⟧ — Jestli to půjde, přijď. Lepší přijít pozdě než vůbec.
+Trang: ⟦Vâng, em sẽ cố gắng. Nhưng nếu em không đến được thì anh có thể chuyển tiền mừng và lời chúc cho chị ấy giúp em được không?⟧ — Dobře, budu se snažit. Ale kdybych nemohla přijít, mohl bys jí ode mě předat svatební dar a přání?
+Min-ho: ⟦Được chứ!⟧ — Jasně!
+Procvičování — jaká oslava: ⟦lễ cưới⟧ (svatba) / ⟦lễ thôi nôi em bé⟧ (oslava prvních narozenin miminka); proč nemůže přijít: ⟦phải đi công tác⟧ (musí na služební cestu) / ⟦có hẹn với khách hàng⟧ (má schůzku se zákazníkem); co předat: ⟦tiền mừng và lời chúc⟧ (peněžní dar a přání) / ⟦quà và thiệp chúc mừng⟧ (dárek a přáníčko).
+Nová slovíčka: ⟦tự do⟧ svoboda | ⟦kẻ⟧ člověk, ten kdo | ⟦ăn mày⟧ žebrat | ⟦đàn ông⟧ muž | ⟦gia trưởng⟧ patriarchální | ⟦nhịn⟧ vydržet, zdržet se | ⟦bó⟧ svazek, kytice; svázat | ⟦thiệp⟧ přání, pohlednice | ⟦chuyển⟧ předat, přenést
+=zh_cn
+核心表达：⟦thà ~ còn hơn⟧
+⟦thà + A + còn hơn + B⟧ 意为“与其B，不如A / 宁可A也不B”，用于为了避免更糟的情况（B）而选择稍好一点的（A）。在有上下文的对话中，B可以省略。这个表达带有很强的“个人选择”意味，所以主语通常是 ⟦tôi⟧，偶尔也会用 ⟦chúng tôi⟧。
+❶ ⟦Thà chết còn hơn sống mà không có tự do.⟧ —— 与其没有自由地活着，不如死去。
+❷ ⟦Thà làm kẻ ăn mày khoẻ mạnh còn hơn làm ông vua đau yếu.⟧ —— 与其做一个病弱的国王，不如做一个健康的乞丐。
+❸ ⟦Tôi thà sống một mình còn hơn kết hôn với một người đàn ông gia trưởng.⟧ —— 我宁可一个人生活，也不嫁给大男子主义的男人。
+与各种祝贺方式相关的表达：⟦bó hoa⟧ 花束 | ⟦lời chúc⟧ 祝福语 | ⟦món quà⟧ 礼物 | ⟦tiền mừng⟧ 礼金 | ⟦thiệp chúc mừng⟧ 贺卡
+句型练习1 —— 找出相应内容连线，然后仿照范例对话：① ⟦đi taxi⟧（坐出租车）– Ⓒ ⟦tắc đường⟧（堵车）– ① ⟦cứ đi bộ⟧（干脆走路）| ② ⟦ăn mì tôm⟧（吃方便面）– Ⓐ ⟦chán⟧（吃腻了）– ② ⟦nhịn đói⟧（饿着）| ③ ⟦ra ngoài chơi⟧（出去玩）– Ⓑ ⟦trời lạnh⟧（天冷）– ③ ⟦ở nhà ngủ⟧（在家睡觉）
+范例（①–Ⓒ–①）：Ⓐ ⟦Chúng ta đi taxi nhé?⟧ —— 我们坐出租车吧？ Ⓑ ⟦Tắc đường quá! Tôi thà cứ đi bộ còn hơn (đi taxi).⟧ —— 太堵了！与其坐出租车，我宁可走路。
+对话：敏浩和庄在聊参加贤的婚礼的事。
+庄：⟦Anh ơi, cuối tuần này anh sẽ đi dự lễ cưới của chị Hiền, phải không?⟧ —— 哥，这个周末你要去参加贤姐的婚礼，对吧？
+敏浩：⟦Ừ. Em cũng đi cùng anh chứ?⟧ —— 嗯。你也和我一起去吧？
+庄：⟦Em chưa biết có đến được hay không, vì hôm đó em phải đi công tác.⟧ —— 我还不知道能不能去，因为那天我得出差。
+敏浩：⟦Nếu có thể thì em cứ đến nhé. Thà đến muộn còn hơn không đến mà.⟧ —— 能去的话你就来吧。晚到总比不到好嘛。
+庄：⟦Vâng, em sẽ cố gắng. Nhưng nếu em không đến được thì anh có thể chuyển tiền mừng và lời chúc cho chị ấy giúp em được không?⟧ —— 好，我会尽量。不过如果我去不了，你能帮我把礼金和祝福转交给她吗？
+敏浩：⟦Được chứ!⟧ —— 当然可以！
+句型练习 —— 什么典礼：⟦lễ cưới⟧（婚礼）/ ⟦lễ thôi nôi em bé⟧（宝宝周岁宴）；不能参加的理由：⟦phải đi công tác⟧（得出差）/ ⟦có hẹn với khách hàng⟧（和客户有约）；托转交什么：⟦tiền mừng và lời chúc⟧（礼金和祝福）/ ⟦quà và thiệp chúc mừng⟧（礼物和贺卡）。
+新单词：⟦tự do⟧ 自由 | ⟦kẻ⟧ 人、……者 | ⟦ăn mày⟧ 乞讨 | ⟦đàn ông⟧（成年）男人 | ⟦gia trưởng⟧ 大男子主义、家长式的 | ⟦nhịn⟧ 忍耐、忍住 | ⟦bó⟧ 束、捆；捆扎 | ⟦thiệp⟧ 卡片、明信片 | ⟦chuyển⟧ 转交、传递、搬
+=zh
+核心表達：⟦thà ~ còn hơn⟧
+⟦thà + A + còn hơn + B⟧ 意為「與其B，不如A / 寧可A也不B」，用於為了避免更糟的情況（B）而選擇稍好一點的（A）。在有上下文的對話中，B可以省略。這個表達帶有很強的「個人選擇」意味，所以主詞通常是 ⟦tôi⟧，偶爾也會用 ⟦chúng tôi⟧。
+❶ ⟦Thà chết còn hơn sống mà không có tự do.⟧ —— 與其沒有自由地活著，不如死去。
+❷ ⟦Thà làm kẻ ăn mày khoẻ mạnh còn hơn làm ông vua đau yếu.⟧ —— 與其做一個病弱的國王，不如做一個健康的乞丐。
+❸ ⟦Tôi thà sống một mình còn hơn kết hôn với một người đàn ông gia trưởng.⟧ —— 我寧可一個人生活，也不嫁給大男人主義的男人。
+與各種祝賀方式相關的表達：⟦bó hoa⟧ 花束 | ⟦lời chúc⟧ 祝福語 | ⟦món quà⟧ 禮物 | ⟦tiền mừng⟧ 禮金 | ⟦thiệp chúc mừng⟧ 賀卡
+句型練習1 —— 找出相應內容連線，然後仿照範例對話：① ⟦đi taxi⟧（搭計程車）– Ⓒ ⟦tắc đường⟧（塞車）– ① ⟦cứ đi bộ⟧（乾脆走路）| ② ⟦ăn mì tôm⟧（吃泡麵）– Ⓐ ⟦chán⟧（吃膩了）– ② ⟦nhịn đói⟧（餓著）| ③ ⟦ra ngoài chơi⟧（出去玩）– Ⓑ ⟦trời lạnh⟧（天冷）– ③ ⟦ở nhà ngủ⟧（在家睡覺）
+範例（①–Ⓒ–①）：Ⓐ ⟦Chúng ta đi taxi nhé?⟧ —— 我們搭計程車吧？ Ⓑ ⟦Tắc đường quá! Tôi thà cứ đi bộ còn hơn (đi taxi).⟧ —— 太塞了！與其搭計程車，我寧可走路。
+對話：敏浩和莊在聊參加賢的婚禮的事。
+莊：⟦Anh ơi, cuối tuần này anh sẽ đi dự lễ cưới của chị Hiền, phải không?⟧ —— 哥，這個週末你要去參加賢姊的婚禮，對吧？
+敏浩：⟦Ừ. Em cũng đi cùng anh chứ?⟧ —— 嗯。妳也和我一起去吧？
+莊：⟦Em chưa biết có đến được hay không, vì hôm đó em phải đi công tác.⟧ —— 我還不知道能不能去，因為那天我得出差。
+敏浩：⟦Nếu có thể thì em cứ đến nhé. Thà đến muộn còn hơn không đến mà.⟧ —— 能去的話妳就來吧。晚到總比不到好嘛。
+莊：⟦Vâng, em sẽ cố gắng. Nhưng nếu em không đến được thì anh có thể chuyển tiền mừng và lời chúc cho chị ấy giúp em được không?⟧ —— 好，我會盡量。不過如果我去不了，你能幫我把禮金和祝福轉交給她嗎？
+敏浩：⟦Được chứ!⟧ —— 當然可以！
+句型練習 —— 什麼典禮：⟦lễ cưới⟧（婚禮）/ ⟦lễ thôi nôi em bé⟧（寶寶週歲宴）；不能參加的理由：⟦phải đi công tác⟧（得出差）/ ⟦có hẹn với khách hàng⟧（和客戶有約）；託轉交什麼：⟦tiền mừng và lời chúc⟧（禮金和祝福）/ ⟦quà và thiệp chúc mừng⟧（禮物和賀卡）。
+新單字：⟦tự do⟧ 自由 | ⟦kẻ⟧ 人、……者 | ⟦ăn mày⟧ 乞討 | ⟦đàn ông⟧（成年）男人 | ⟦gia trưởng⟧ 大男人主義、家長式的 | ⟦nhịn⟧ 忍耐、忍住 | ⟦bó⟧ 束、捆；綁 | ⟦thiệp⟧ 卡片、明信片 | ⟦chuyển⟧ 轉交、傳遞、搬
+=en
+Key expression: ⟦thà ~ còn hơn⟧
+⟦thà + A + còn hơn + B⟧ means "would rather A than B / better A than B". It is used when choosing the lesser evil (A) to avoid something worse (B). In a dialogue with clear context, B can be left out. Because it strongly implies a personal choice, the subject is usually ⟦tôi⟧, occasionally ⟦chúng tôi⟧.
+❶ ⟦Thà chết còn hơn sống mà không có tự do.⟧ — Better to die than to live without freedom.
+❷ ⟦Thà làm kẻ ăn mày khoẻ mạnh còn hơn làm ông vua đau yếu.⟧ — Better to be a healthy beggar than a sickly king.
+❸ ⟦Tôi thà sống một mình còn hơn kết hôn với một người đàn ông gia trưởng.⟧ — I'd rather live alone than marry a domineering, patriarchal man.
+Expressions for different ways of congratulating: ⟦bó hoa⟧ bouquet | ⟦lời chúc⟧ good wishes | ⟦món quà⟧ gift | ⟦tiền mừng⟧ gift money | ⟦thiệp chúc mừng⟧ greeting card
+Pattern practice 1 — match the parts, then talk as in the model: ① ⟦đi taxi⟧ (take a taxi) – Ⓒ ⟦tắc đường⟧ (traffic jam) – ① ⟦cứ đi bộ⟧ (just walk) | ② ⟦ăn mì tôm⟧ (eat instant noodles) – Ⓐ ⟦chán⟧ (fed up) – ② ⟦nhịn đói⟧ (go hungry) | ③ ⟦ra ngoài chơi⟧ (go out) – Ⓑ ⟦trời lạnh⟧ (it's cold) – ③ ⟦ở nhà ngủ⟧ (stay home and sleep)
+Model (①–Ⓒ–①): Ⓐ ⟦Chúng ta đi taxi nhé?⟧ — Shall we take a taxi? Ⓑ ⟦Tắc đường quá! Tôi thà cứ đi bộ còn hơn (đi taxi).⟧ — The traffic's terrible! I'd rather just walk (than take a taxi).
+Dialogue: Min-ho and Trang are talking about going to Hiền's wedding.
+Trang: ⟦Anh ơi, cuối tuần này anh sẽ đi dự lễ cưới của chị Hiền, phải không?⟧ — You're going to Hiền's wedding this weekend, right?
+Min-ho: ⟦Ừ. Em cũng đi cùng anh chứ?⟧ — Yes. You're coming with me too, aren't you?
+Trang: ⟦Em chưa biết có đến được hay không, vì hôm đó em phải đi công tác.⟧ — I don't know yet whether I can make it, because I have a business trip that day.
+Min-ho: ⟦Nếu có thể thì em cứ đến nhé. Thà đến muộn còn hơn không đến mà.⟧ — Come if you can. Better late than never.
+Trang: ⟦Vâng, em sẽ cố gắng. Nhưng nếu em không đến được thì anh có thể chuyển tiền mừng và lời chúc cho chị ấy giúp em được không?⟧ — OK, I'll try. But if I can't come, could you pass on my gift money and good wishes to her?
+Min-ho: ⟦Được chứ!⟧ — Of course!
+Pattern practice — what occasion: ⟦lễ cưới⟧ (wedding) / ⟦lễ thôi nôi em bé⟧ (baby's first-birthday party); reason for not attending: ⟦phải đi công tác⟧ (business trip) / ⟦có hẹn với khách hàng⟧ (appointment with a client); what to pass on: ⟦tiền mừng và lời chúc⟧ (gift money and wishes) / ⟦quà và thiệp chúc mừng⟧ (a present and a card).
+New words: ⟦tự do⟧ freedom | ⟦kẻ⟧ person, one who | ⟦ăn mày⟧ to beg | ⟦đàn ông⟧ man | ⟦gia trưởng⟧ patriarchal, domineering | ⟦nhịn⟧ to hold back, endure | ⟦bó⟧ bunch, bundle; to tie | ⟦thiệp⟧ card, postcard | ⟦chuyển⟧ to pass on, transfer, move
+=fr
+Expression clé : ⟦thà ~ còn hơn⟧
+⟦thà + A + còn hơn + B⟧ signifie « plutôt A que B / mieux vaut A que B ». On l'emploie quand on choisit un moindre mal (A) pour éviter pire (B). Dans un dialogue au contexte clair, B peut être omis. L'expression traduisant surtout un choix personnel, le sujet est le plus souvent ⟦tôi⟧, parfois ⟦chúng tôi⟧.
+❶ ⟦Thà chết còn hơn sống mà không có tự do.⟧ — Plutôt mourir que vivre sans liberté.
+❷ ⟦Thà làm kẻ ăn mày khoẻ mạnh còn hơn làm ông vua đau yếu.⟧ — Mieux vaut être un mendiant en bonne santé qu'un roi malade.
+❸ ⟦Tôi thà sống một mình còn hơn kết hôn với một người đàn ông gia trưởng.⟧ — Je préfère vivre seule plutôt qu'épouser un homme patriarcal.
+Expressions sur les différentes façons de féliciter : ⟦bó hoa⟧ bouquet | ⟦lời chúc⟧ vœux | ⟦món quà⟧ cadeau | ⟦tiền mừng⟧ argent offert | ⟦thiệp chúc mừng⟧ carte de vœux
+Exercice 1 — reliez les éléments, puis dialoguez comme dans le modèle : ① ⟦đi taxi⟧ (prendre un taxi) – Ⓒ ⟦tắc đường⟧ (embouteillage) – ① ⟦cứ đi bộ⟧ (y aller à pied) | ② ⟦ăn mì tôm⟧ (manger des nouilles instantanées) – Ⓐ ⟦chán⟧ (en avoir assez) – ② ⟦nhịn đói⟧ (rester le ventre vide) | ③ ⟦ra ngoài chơi⟧ (sortir s'amuser) – Ⓑ ⟦trời lạnh⟧ (il fait froid) – ③ ⟦ở nhà ngủ⟧ (rester dormir à la maison)
+Modèle (①–Ⓒ–①) : Ⓐ ⟦Chúng ta đi taxi nhé?⟧ — On prend un taxi ? Ⓑ ⟦Tắc đường quá! Tôi thà cứ đi bộ còn hơn (đi taxi).⟧ — Quels bouchons ! Je préfère encore marcher (plutôt que prendre un taxi).
+Dialogue : Min-ho et Trang parlent d'aller au mariage de Hiền.
+Trang : ⟦Anh ơi, cuối tuần này anh sẽ đi dự lễ cưới của chị Hiền, phải không?⟧ — Tu vas au mariage de Hiền ce week-end, c'est ça ?
+Min-ho : ⟦Ừ. Em cũng đi cùng anh chứ?⟧ — Oui. Tu viens avec moi, n'est-ce pas ?
+Trang : ⟦Em chưa biết có đến được hay không, vì hôm đó em phải đi công tác.⟧ — Je ne sais pas encore si je pourrai venir, car ce jour-là je dois partir en déplacement.
+Min-ho : ⟦Nếu có thể thì em cứ đến nhé. Thà đến muộn còn hơn không đến mà.⟧ — Si tu peux, viens quand même. Mieux vaut tard que jamais.
+Trang : ⟦Vâng, em sẽ cố gắng. Nhưng nếu em không đến được thì anh có thể chuyển tiền mừng và lời chúc cho chị ấy giúp em được không?⟧ — D'accord, je vais essayer. Mais si je ne peux pas venir, pourrais-tu lui transmettre de ma part l'argent offert et mes vœux ?
+Min-ho : ⟦Được chứ!⟧ — Bien sûr !
+Exercices — quelle fête : ⟦lễ cưới⟧ (mariage) / ⟦lễ thôi nôi em bé⟧ (fête du premier anniversaire du bébé) ; raison de l'absence : ⟦phải đi công tác⟧ (déplacement professionnel) / ⟦có hẹn với khách hàng⟧ (rendez-vous avec un client) ; quoi transmettre : ⟦tiền mừng và lời chúc⟧ (argent offert et vœux) / ⟦quà và thiệp chúc mừng⟧ (cadeau et carte de vœux).
+Nouveaux mots : ⟦tự do⟧ liberté | ⟦kẻ⟧ personne, celui qui | ⟦ăn mày⟧ mendier | ⟦đàn ông⟧ homme | ⟦gia trưởng⟧ patriarcal | ⟦nhịn⟧ se retenir, endurer | ⟦bó⟧ botte, bouquet ; lier | ⟦thiệp⟧ carte | ⟦chuyển⟧ transmettre, transférer, déplacer
+=de
+Schlüsselausdruck: ⟦thà ~ còn hơn⟧
+⟦thà + A + còn hơn + B⟧ bedeutet „lieber A als B / besser A als B“ und wird verwendet, wenn man das kleinere Übel (A) wählt, um etwas Schlimmeres (B) zu vermeiden. In einem Dialog mit klarem Kontext kann B wegfallen. Da der Ausdruck stark eine persönliche Wahl ausdrückt, ist das Subjekt meist ⟦tôi⟧, manchmal ⟦chúng tôi⟧.
+❶ ⟦Thà chết còn hơn sống mà không có tự do.⟧ — Lieber sterben als ohne Freiheit leben.
+❷ ⟦Thà làm kẻ ăn mày khoẻ mạnh còn hơn làm ông vua đau yếu.⟧ — Besser ein gesunder Bettler als ein kranker König.
+❸ ⟦Tôi thà sống một mình còn hơn kết hôn với một người đàn ông gia trưởng.⟧ — Ich lebe lieber allein, als einen patriarchalischen Mann zu heiraten.
+Ausdrücke zu verschiedenen Arten des Gratulierens: ⟦bó hoa⟧ Blumenstrauß | ⟦lời chúc⟧ Glückwünsche | ⟦món quà⟧ Geschenk | ⟦tiền mừng⟧ Geldgeschenk | ⟦thiệp chúc mừng⟧ Glückwunschkarte
+Übung 1 — passende Teile verbinden, dann wie im Muster sprechen: ① ⟦đi taxi⟧ (Taxi nehmen) – Ⓒ ⟦tắc đường⟧ (Stau) – ① ⟦cứ đi bộ⟧ (einfach zu Fuß gehen) | ② ⟦ăn mì tôm⟧ (Instantnudeln essen) – Ⓐ ⟦chán⟧ (satt haben) – ② ⟦nhịn đói⟧ (hungern) | ③ ⟦ra ngoài chơi⟧ (ausgehen) – Ⓑ ⟦trời lạnh⟧ (es ist kalt) – ③ ⟦ở nhà ngủ⟧ (zu Hause schlafen)
+Muster (①–Ⓒ–①): Ⓐ ⟦Chúng ta đi taxi nhé?⟧ — Nehmen wir ein Taxi? Ⓑ ⟦Tắc đường quá! Tôi thà cứ đi bộ còn hơn (đi taxi).⟧ — So ein Stau! Da gehe ich lieber zu Fuß (als Taxi zu fahren).
+Dialog: Min-ho und Trang sprechen über die Teilnahme an Hiềns Hochzeit.
+Trang: ⟦Anh ơi, cuối tuần này anh sẽ đi dự lễ cưới của chị Hiền, phải không?⟧ — Du gehst dieses Wochenende zu Hiềns Hochzeit, oder?
+Min-ho: ⟦Ừ. Em cũng đi cùng anh chứ?⟧ — Ja. Du kommst doch auch mit?
+Trang: ⟦Em chưa biết có đến được hay không, vì hôm đó em phải đi công tác.⟧ — Ich weiß noch nicht, ob ich kommen kann, weil ich an dem Tag auf Dienstreise muss.
+Min-ho: ⟦Nếu có thể thì em cứ đến nhé. Thà đến muộn còn hơn không đến mà.⟧ — Wenn es geht, komm einfach. Besser spät als nie.
+Trang: ⟦Vâng, em sẽ cố gắng. Nhưng nếu em không đến được thì anh có thể chuyển tiền mừng và lời chúc cho chị ấy giúp em được không?⟧ — Okay, ich versuche es. Aber falls ich nicht kommen kann, könntest du ihr mein Geldgeschenk und meine Glückwünsche überbringen?
+Min-ho: ⟦Được chứ!⟧ — Klar!
+Satzmusterübung — welche Feier: ⟦lễ cưới⟧ (Hochzeit) / ⟦lễ thôi nôi em bé⟧ (Feier zum ersten Geburtstag des Babys); Grund fürs Fehlen: ⟦phải đi công tác⟧ (Dienstreise) / ⟦có hẹn với khách hàng⟧ (Kundentermin); was überbringen: ⟦tiền mừng và lời chúc⟧ (Geldgeschenk und Glückwünsche) / ⟦quà và thiệp chúc mừng⟧ (Geschenk und Glückwunschkarte).
+Neue Wörter: ⟦tự do⟧ Freiheit | ⟦kẻ⟧ Mensch, jemand, der ~ | ⟦ăn mày⟧ betteln | ⟦đàn ông⟧ Mann | ⟦gia trưởng⟧ patriarchalisch | ⟦nhịn⟧ sich zurückhalten, aushalten | ⟦bó⟧ Bund, Strauß; bündeln | ⟦thiệp⟧ Karte | ⟦chuyển⟧ übergeben, weiterleiten, verlegen
+=hu
+Kulcskifejezés: ⟦thà ~ còn hơn⟧
+A ⟦thà + A + còn hơn + B⟧ jelentése „inkább A, mint B / jobb A, mint B”. Akkor használjuk, amikor a kisebbik rosszat (A) választjuk, hogy elkerüljük a nagyobbat (B). Világos kontextusú párbeszédben B elhagyható. Mivel erősen személyes választást fejez ki, az alany többnyire ⟦tôi⟧, néha ⟦chúng tôi⟧.
+❶ ⟦Thà chết còn hơn sống mà không có tự do.⟧ — Inkább halál, mint szabadság nélküli élet.
+❷ ⟦Thà làm kẻ ăn mày khoẻ mạnh còn hơn làm ông vua đau yếu.⟧ — Jobb egészséges koldusnak lenni, mint beteges királynak.
+❸ ⟦Tôi thà sống một mình còn hơn kết hôn với một người đàn ông gia trưởng.⟧ — Inkább egyedül élek, mint hogy egy patriarchális férfihoz menjek feleségül.
+A különféle gratulációs módokkal kapcsolatos kifejezések: ⟦bó hoa⟧ virágcsokor | ⟦lời chúc⟧ jókívánság | ⟦món quà⟧ ajándék | ⟦tiền mừng⟧ pénzajándék | ⟦thiệp chúc mừng⟧ üdvözlőkártya
+1. gyakorlat — kösse össze a megfelelő részeket, majd beszélgessen a minta szerint: ① ⟦đi taxi⟧ (taxizni) – Ⓒ ⟦tắc đường⟧ (dugó) – ① ⟦cứ đi bộ⟧ (inkább gyalogolni) | ② ⟦ăn mì tôm⟧ (instant tésztát enni) – Ⓐ ⟦chán⟧ (elege van) – ② ⟦nhịn đói⟧ (éhezni) | ③ ⟦ra ngoài chơi⟧ (kimenni szórakozni) – Ⓑ ⟦trời lạnh⟧ (hideg van) – ③ ⟦ở nhà ngủ⟧ (otthon aludni)
+Minta (①–Ⓒ–①): Ⓐ ⟦Chúng ta đi taxi nhé?⟧ — Menjünk taxival? Ⓑ ⟦Tắc đường quá! Tôi thà cứ đi bộ còn hơn (đi taxi).⟧ — Óriási a dugó! Inkább gyalog megyek (mint taxival).
+Párbeszéd: Min-ho és Trang Hiền esküvőjére való elmenetelről beszélgetnek.
+Trang: ⟦Anh ơi, cuối tuần này anh sẽ đi dự lễ cưới của chị Hiền, phải không?⟧ — Ugye a hétvégén elmész Hiền esküvőjére?
+Min-ho: ⟦Ừ. Em cũng đi cùng anh chứ?⟧ — Igen. Ugye te is jössz velem?
+Trang: ⟦Em chưa biết có đến được hay không, vì hôm đó em phải đi công tác.⟧ — Még nem tudom, el tudok-e menni, mert aznap üzleti útra kell mennem.
+Min-ho: ⟦Nếu có thể thì em cứ đến nhé. Thà đến muộn còn hơn không đến mà.⟧ — Ha tudsz, gyere el. Jobb későn, mint soha.
+Trang: ⟦Vâng, em sẽ cố gắng. Nhưng nếu em không đến được thì anh có thể chuyển tiền mừng và lời chúc cho chị ấy giúp em được không?⟧ — Jó, igyekszem. De ha nem tudok menni, átadnád neki helyettem a pénzajándékot és a jókívánságaimat?
+Min-ho: ⟦Được chứ!⟧ — Persze!
+Mintagyakorlat — milyen ünnep: ⟦lễ cưới⟧ (esküvő) / ⟦lễ thôi nôi em bé⟧ (a baba első születésnapja); miért nem tud elmenni: ⟦phải đi công tác⟧ (üzleti út) / ⟦có hẹn với khách hàng⟧ (ügyféltalálkozó); mit adjon át: ⟦tiền mừng và lời chúc⟧ (pénzajándék és jókívánság) / ⟦quà và thiệp chúc mừng⟧ (ajándék és üdvözlőkártya).
+Új szavak: ⟦tự do⟧ szabadság | ⟦kẻ⟧ ember, aki ~ | ⟦ăn mày⟧ koldulni | ⟦đàn ông⟧ férfi | ⟦gia trưởng⟧ patriarchális | ⟦nhịn⟧ visszafogni magát, kibírni | ⟦bó⟧ csokor, köteg; megkötni | ⟦thiệp⟧ kártya, képeslap | ⟦chuyển⟧ átadni, továbbítani, áthelyezni
+=id
+Ungkapan kunci: ⟦thà ~ còn hơn⟧
+⟦thà + A + còn hơn + B⟧ berarti "lebih baik A daripada B". Dipakai saat memilih yang sedikit kurang buruk (A) untuk menghindari yang lebih buruk (B). Dalam percakapan yang konteksnya jelas, B boleh dihilangkan. Karena sangat bernuansa pilihan pribadi, subjeknya biasanya ⟦tôi⟧, kadang ⟦chúng tôi⟧.
+❶ ⟦Thà chết còn hơn sống mà không có tự do.⟧ — Lebih baik mati daripada hidup tanpa kebebasan.
+❷ ⟦Thà làm kẻ ăn mày khoẻ mạnh còn hơn làm ông vua đau yếu.⟧ — Lebih baik menjadi pengemis yang sehat daripada raja yang sakit-sakitan.
+❸ ⟦Tôi thà sống một mình còn hơn kết hôn với một người đàn ông gia trưởng.⟧ — Saya lebih baik hidup sendiri daripada menikah dengan pria yang patriarkal.
+Ungkapan tentang berbagai cara memberi ucapan selamat: ⟦bó hoa⟧ buket bunga | ⟦lời chúc⟧ ucapan | ⟦món quà⟧ hadiah | ⟦tiền mừng⟧ uang hadiah (angpau) | ⟦thiệp chúc mừng⟧ kartu ucapan
+Latihan pola 1 — hubungkan bagian yang cocok, lalu bercakaplah seperti contoh: ① ⟦đi taxi⟧ (naik taksi) – Ⓒ ⟦tắc đường⟧ (macet) – ① ⟦cứ đi bộ⟧ (jalan kaki saja) | ② ⟦ăn mì tôm⟧ (makan mi instan) – Ⓐ ⟦chán⟧ (bosan) – ② ⟦nhịn đói⟧ (menahan lapar) | ③ ⟦ra ngoài chơi⟧ (keluar bermain) – Ⓑ ⟦trời lạnh⟧ (cuaca dingin) – ③ ⟦ở nhà ngủ⟧ (tidur di rumah)
+Contoh (①–Ⓒ–①): Ⓐ ⟦Chúng ta đi taxi nhé?⟧ — Kita naik taksi, yuk? Ⓑ ⟦Tắc đường quá! Tôi thà cứ đi bộ còn hơn (đi taxi).⟧ — Macet sekali! Saya lebih baik jalan kaki saja (daripada naik taksi).
+Percakapan: Min-ho dan Trang berbicara tentang menghadiri pernikahan Hiền.
+Trang: ⟦Anh ơi, cuối tuần này anh sẽ đi dự lễ cưới của chị Hiền, phải không?⟧ — Kak, akhir pekan ini Kakak akan datang ke pernikahan Kak Hiền, kan?
+Min-ho: ⟦Ừ. Em cũng đi cùng anh chứ?⟧ — Iya. Kamu ikut juga, kan?
+Trang: ⟦Em chưa biết có đến được hay không, vì hôm đó em phải đi công tác.⟧ — Aku belum tahu bisa datang atau tidak, soalnya hari itu aku harus dinas.
+Min-ho: ⟦Nếu có thể thì em cứ đến nhé. Thà đến muộn còn hơn không đến mà.⟧ — Kalau bisa, datang saja. Lebih baik terlambat daripada tidak datang.
+Trang: ⟦Vâng, em sẽ cố gắng. Nhưng nếu em không đến được thì anh có thể chuyển tiền mừng và lời chúc cho chị ấy giúp em được không?⟧ — Iya, aku usahakan. Tapi kalau aku tidak bisa datang, bisakah Kakak menyampaikan uang hadiah dan ucapanku kepadanya?
+Min-ho: ⟦Được chứ!⟧ — Tentu bisa!
+Latihan pola — acara apa: ⟦lễ cưới⟧ (pernikahan) / ⟦lễ thôi nôi em bé⟧ (syukuran ulang tahun pertama bayi); alasan tidak hadir: ⟦phải đi công tác⟧ (harus dinas) / ⟦có hẹn với khách hàng⟧ (ada janji dengan pelanggan); titip apa: ⟦tiền mừng và lời chúc⟧ (uang hadiah dan ucapan) / ⟦quà và thiệp chúc mừng⟧ (hadiah dan kartu ucapan).
+Kosakata baru: ⟦tự do⟧ kebebasan | ⟦kẻ⟧ orang, si ~ | ⟦ăn mày⟧ mengemis | ⟦đàn ông⟧ pria | ⟦gia trưởng⟧ patriarkal | ⟦nhịn⟧ menahan | ⟦bó⟧ ikat, buket; mengikat | ⟦thiệp⟧ kartu | ⟦chuyển⟧ menyampaikan, memindahkan
+=ja
+核心表現：⟦thà ~ còn hơn⟧
+⟦thà + A + còn hơn + B⟧ は「BするよりはむしろAする方がましだ / Bするくらいならむしろ Aする方がいい」という意味で、より悪いこと（B）を避けるために少しましな方（A）を選ぶときに使う表現です。文脈のある会話ではBを省略することもあります。「個人的な選択」の意味合いが強い表現なので、主語は ⟦tôi⟧ であることが多く、まれに ⟦chúng tôi⟧ が主語になることもあります。
+❶ ⟦Thà chết còn hơn sống mà không có tự do.⟧ — 自由なしに生きるくらいなら、むしろ死んだ方がましだ。
+❷ ⟦Thà làm kẻ ăn mày khoẻ mạnh còn hơn làm ông vua đau yếu.⟧ — 病弱な王になるくらいなら、むしろ健康な乞食になる方がいい。
+❸ ⟦Tôi thà sống một mình còn hơn kết hôn với một người đàn ông gia trưởng.⟧ — 家父長的な男性と結婚するくらいなら、私はむしろ一人で生きる。
+さまざまなお祝いの方法に関する表現：⟦bó hoa⟧ 花束 | ⟦lời chúc⟧ 祝いの言葉 | ⟦món quà⟧ プレゼント | ⟦tiền mừng⟧ ご祝儀 | ⟦thiệp chúc mừng⟧ お祝いカード
+文型練習1 — 適切な内容を結び、例のように会話してみましょう：① ⟦đi taxi⟧（タクシーで行く）– Ⓒ ⟦tắc đường⟧（渋滞）– ① ⟦cứ đi bộ⟧（歩いて行く）| ② ⟦ăn mì tôm⟧（インスタントラーメンを食べる）– Ⓐ ⟦chán⟧（飽きた）– ② ⟦nhịn đói⟧（空腹を我慢する）| ③ ⟦ra ngoài chơi⟧（外に遊びに行く）– Ⓑ ⟦trời lạnh⟧（寒い）– ③ ⟦ở nhà ngủ⟧（家で寝る）
+例（①–Ⓒ–①）：Ⓐ ⟦Chúng ta đi taxi nhé?⟧ — タクシーで行きましょうか。 Ⓑ ⟦Tắc đường quá! Tôi thà cứ đi bộ còn hơn (đi taxi).⟧ — ひどい渋滞です！（タクシーに乗るより）むしろ歩いた方がましです。
+会話：ミンホとチャンがヒエンの結婚式に出席することについて話しています。
+チャン：⟦Anh ơi, cuối tuần này anh sẽ đi dự lễ cưới của chị Hiền, phải không?⟧ — 今週末、ヒエンさんの結婚式に出席するんですよね。
+ミンホ：⟦Ừ. Em cũng đi cùng anh chứ?⟧ — うん。君も一緒に行くよね？
+チャン：⟦Em chưa biết có đến được hay không, vì hôm đó em phải đi công tác.⟧ — その日は出張しなければならないので、行けるかどうかまだわかりません。
+ミンホ：⟦Nếu có thể thì em cứ đến nhé. Thà đến muộn còn hơn không đến mà.⟧ — できれば来てよ。来ないよりは遅れてでも来た方がいいんだから。
+チャン：⟦Vâng, em sẽ cố gắng. Nhưng nếu em không đến được thì anh có thể chuyển tiền mừng và lời chúc cho chị ấy giúp em được không?⟧ — はい、がんばります。でももし行けなかったら、ご祝儀とお祝いの言葉を彼女に渡してもらえますか。
+ミンホ：⟦Được chứ!⟧ — もちろん！
+文型練習 — 何のお祝い：⟦lễ cưới⟧（結婚式）/ ⟦lễ thôi nôi em bé⟧（赤ちゃんの一歳のお祝い）；出席できない理由：⟦phải đi công tác⟧（出張に行かなければならない）/ ⟦có hẹn với khách hàng⟧（顧客と約束がある）；何を渡してもらう：⟦tiền mừng và lời chúc⟧（ご祝儀とお祝いの言葉）/ ⟦quà và thiệp chúc mừng⟧（プレゼントとお祝いカード）。
+新出単語：⟦tự do⟧ 自由 | ⟦kẻ⟧ 人、～者 | ⟦ăn mày⟧ 物乞いをする | ⟦đàn ông⟧ （成人の）男性 | ⟦gia trưởng⟧ 家父長的だ | ⟦nhịn⟧ 我慢する、耐える | ⟦bó⟧ 束、束ねる | ⟦thiệp⟧ カード、はがき | ⟦chuyển⟧ 渡す、伝える、移す
+=pl
+Kluczowe wyrażenie: ⟦thà ~ còn hơn⟧
+⟦thà + A + còn hơn + B⟧ znaczy „raczej A niż B / lepiej A niż B”. Używa się go, gdy wybieramy mniejsze zło (A), by uniknąć czegoś gorszego (B). W dialogu o jasnym kontekście B można pominąć. Ponieważ wyrażenie niesie silny odcień osobistego wyboru, podmiotem jest zwykle ⟦tôi⟧, czasem ⟦chúng tôi⟧.
+❶ ⟦Thà chết còn hơn sống mà không có tự do.⟧ — Lepiej umrzeć, niż żyć bez wolności.
+❷ ⟦Thà làm kẻ ăn mày khoẻ mạnh còn hơn làm ông vua đau yếu.⟧ — Lepiej być zdrowym żebrakiem niż chorowitym królem.
+❸ ⟦Tôi thà sống một mình còn hơn kết hôn với một người đàn ông gia trưởng.⟧ — Wolę żyć sama, niż poślubić patriarchalnego mężczyznę.
+Wyrażenia dotyczące różnych sposobów składania gratulacji: ⟦bó hoa⟧ bukiet | ⟦lời chúc⟧ życzenia | ⟦món quà⟧ prezent | ⟦tiền mừng⟧ pieniądze w prezencie | ⟦thiệp chúc mừng⟧ kartka z życzeniami
+Ćwiczenie 1 — połącz pasujące elementy i rozmawiaj jak we wzorze: ① ⟦đi taxi⟧ (jechać taksówką) – Ⓒ ⟦tắc đường⟧ (korek) – ① ⟦cứ đi bộ⟧ (po prostu iść pieszo) | ② ⟦ăn mì tôm⟧ (jeść zupkę instant) – Ⓐ ⟦chán⟧ (mieć dość) – ② ⟦nhịn đói⟧ (głodować) | ③ ⟦ra ngoài chơi⟧ (wyjść się zabawić) – Ⓑ ⟦trời lạnh⟧ (jest zimno) – ③ ⟦ở nhà ngủ⟧ (zostać w domu i spać)
+Wzór (①–Ⓒ–①): Ⓐ ⟦Chúng ta đi taxi nhé?⟧ — Pojedziemy taksówką? Ⓑ ⟦Tắc đường quá! Tôi thà cứ đi bộ còn hơn (đi taxi).⟧ — Ale korki! Wolę już iść pieszo (niż jechać taksówką).
+Dialog: Min-ho i Trang rozmawiają o pójściu na ślub Hiền.
+Trang: ⟦Anh ơi, cuối tuần này anh sẽ đi dự lễ cưới của chị Hiền, phải không?⟧ — W ten weekend idziesz na ślub Hiền, prawda?
+Min-ho: ⟦Ừ. Em cũng đi cùng anh chứ?⟧ — Tak. Pójdziesz ze mną, prawda?
+Trang: ⟦Em chưa biết có đến được hay không, vì hôm đó em phải đi công tác.⟧ — Jeszcze nie wiem, czy dam radę, bo tego dnia muszę jechać w delegację.
+Min-ho: ⟦Nếu có thể thì em cứ đến nhé. Thà đến muộn còn hơn không đến mà.⟧ — Jeśli możesz, przyjdź. Lepiej późno niż wcale.
+Trang: ⟦Vâng, em sẽ cố gắng. Nhưng nếu em không đến được thì anh có thể chuyển tiền mừng và lời chúc cho chị ấy giúp em được không?⟧ — Dobrze, postaram się. Ale jeśli nie dam rady, czy mógłbyś przekazać jej ode mnie prezent pieniężny i życzenia?
+Min-ho: ⟦Được chứ!⟧ — Jasne!
+Ćwiczenie wzorców — jaka uroczystość: ⟦lễ cưới⟧ (ślub) / ⟦lễ thôi nôi em bé⟧ (roczek dziecka); powód nieobecności: ⟦phải đi công tác⟧ (delegacja) / ⟦có hẹn với khách hàng⟧ (spotkanie z klientem); co przekazać: ⟦tiền mừng và lời chúc⟧ (pieniądze w prezencie i życzenia) / ⟦quà và thiệp chúc mừng⟧ (prezent i kartkę z życzeniami).
+Nowe słówka: ⟦tự do⟧ wolność | ⟦kẻ⟧ człowiek, ten, kto | ⟦ăn mày⟧ żebrać | ⟦đàn ông⟧ mężczyzna | ⟦gia trưởng⟧ patriarchalny | ⟦nhịn⟧ powstrzymywać się, znosić | ⟦bó⟧ wiązka, bukiet; wiązać | ⟦thiệp⟧ kartka | ⟦chuyển⟧ przekazać, przenieść

@@ -1,0 +1,151 @@
+@@ pdf-grammar-e72ea8dc6b9ecc09#0
+=cs
+Klíčové výrazy: ⟦nhân dịp⟧ / ⟦có một không hai⟧
+⟦nhân dịp A⟧ nebo ⟦nhân A⟧ se používá se slovy označujícími čas, příležitost či událost a znamená „u příležitosti A, při A, na oslavu A“.
+❶ Ⓐ ⟦Cuối tuần này, anh có đi đâu không?⟧ — Jedeš tento víkend někam? Ⓑ ⟦Anh định đưa bố mẹ anh đi du lịch nhân dịp kỉ niệm 30 năm ngày kết hôn của bố mẹ.⟧ — U příležitosti 30. výročí svatby rodičů je chci vzít na výlet.
+❷ ⟦Nhân cơ hội này, tôi muốn gửi lời cảm ơn tới tất cả anh chị em đồng nghiệp.⟧ — Při této příležitosti bych chtěl poděkovat všem kolegům.
+⟦có một không hai⟧ vzniklo spojením ⟦có một⟧ (je jeden) a ⟦không hai⟧ (není druhý) a znamená „jedinečný, jediný svého druhu, nemá obdoby“.
+❶ ⟦Đây là con đường tuyết có một không hai trên thế giới.⟧ — Tohle je sněhová cesta, jaká nemá na světě obdoby.
+❷ Ⓐ ⟦Em đã quyết định chuyển công ti à?⟧ — Rozhodl ses změnit firmu? Ⓑ ⟦Vâng. Vì em đã suy nghĩ kĩ và thấy đây sẽ là cơ hội có một không hai trong đời em.⟧ — Ano. Dobře jsem to promyslel a myslím, že je to jedinečná příležitost mého života.
+Procvičování 3 — spojte vhodné části a veďte rozhovor podle vzoru: ① ⟦nghỉ hè⟧ (letní prázdniny) → Ⓑ ⟦cả nhà mình đi du lịch Nha Trang⟧ (celá rodina pojede do Nha Trangu) | ② ⟦sinh nhật mẹ⟧ (maminčiny narozeniny) → Ⓒ ⟦chị và em làm bánh sinh nhật cho mẹ⟧ (upečeme mamince narozeninový dort) | ③ ⟦tết Nguyên đán⟧ (lunární Nový rok) → Ⓐ ⟦chúng ta đi chúc Tết thầy Sơn⟧ (půjdeme popřát panu učiteli Sơnovi k Novému roku)
+Vzor (②–Ⓒ): Ⓐ ⟦Tuần sau là sinh nhật mẹ.⟧ — Příští týden má maminka narozeniny. Ⓑ ⟦Nhân dịp sinh nhật mẹ, chị và em làm bánh sinh nhật cho mẹ nhé.⟧ — K maminčiným narozeninám jí spolu upečeme dort, ano?
+Procvičování 4 — doplňte ⟦có một không hai⟧ podle vzoru a veďte rozhovor.
+Vzor: Ⓐ ⟦Dạo này, em đang học làm nhẫn đấy.⟧ — Teď se učím vyrábět prsteny. Ⓑ ⟦Em học cách làm nhẫn để làm gì?⟧ — K čemu se to učíš? Ⓐ ⟦Bởi vì em muốn tặng chiếc nhẫn có một không hai cho bạn gái em.⟧ — Protože chci své přítelkyni darovat jedinečný prsten.
+❶ Ⓐ ⟦Anh nên đi ăn thử mì Ý ở nhà hàng Vongole.⟧ — Měl bys ochutnat těstoviny v restauraci Vongole. Ⓑ ⟦Vì sao? Mì Ý ở nhà hàng đó ngon à?⟧ — Proč? Jsou tam dobré? Ⓐ ⟦Vâng. Ở đó, anh sẽ được ăn món mì Ý có một không hai trên thế giới đấy.⟧ — Ano. Dostaneš tam těstoviny, jaké nemají na světě obdoby.
+❷ Ⓐ ⟦Chị biết không? Mỗi lần hẹn hò, bạn trai của Trang đều tặng hoa cho Trang đấy.⟧ — Víš co? Trangin přítel jí na každé rande přinese květiny. Ⓑ ⟦Ôi, người lãng mạn nhỉ!⟧ — Ó, to je romantik! Ⓐ ⟦Vâng. Em thấy bạn trai Trang là người lãng mạn có một không hai.⟧ — Ano. Myslím, že Trangin přítel je romantik, jakých je málo.
+Nová slovíčka: ⟦quyết định⟧ rozhodnout | ⟦đời⟧ život | ⟦suy nghĩ⟧ přemýšlet | ⟦kĩ⟧ důkladně, pečlivě | ⟦nhẫn⟧ prsten | ⟦lãng mạn⟧ romantický
+=zh_cn
+核心表达：⟦nhân dịp⟧ / ⟦có một không hai⟧
+⟦nhân dịp A⟧ 或 ⟦nhân A⟧ 与表示时间、机会、事件等的词一起使用，意为“值A之际、趁A、为纪念A”等。
+❶ Ⓐ ⟦Cuối tuần này, anh có đi đâu không?⟧ —— 这个周末你去哪儿吗？ Ⓑ ⟦Anh định đưa bố mẹ anh đi du lịch nhân dịp kỉ niệm 30 năm ngày kết hôn của bố mẹ.⟧ —— 值父母结婚30周年之际，我打算带他们去旅行。
+❷ ⟦Nhân cơ hội này, tôi muốn gửi lời cảm ơn tới tất cả anh chị em đồng nghiệp.⟧ —— 借此机会，我想向所有同事表示感谢。
+⟦có một không hai⟧ 由 ⟦có một⟧（有一个）和 ⟦không hai⟧（没有第二个）组合而成，意为“独一无二、绝无仅有”。
+❶ ⟦Đây là con đường tuyết có một không hai trên thế giới.⟧ —— 这是世界上独一无二的雪路。
+❷ Ⓐ ⟦Em đã quyết định chuyển công ti à?⟧ —— 你决定跳槽了？ Ⓑ ⟦Vâng. Vì em đã suy nghĩ kĩ và thấy đây sẽ là cơ hội có một không hai trong đời em.⟧ —— 是的。我仔细考虑过，觉得这会是我人生中独一无二的机会。
+句型练习3 —— 找出相应内容连线，然后仿照范例对话：① ⟦nghỉ hè⟧（暑假）→ Ⓑ ⟦cả nhà mình đi du lịch Nha Trang⟧（全家去芽庄旅行）| ② ⟦sinh nhật mẹ⟧（妈妈生日）→ Ⓒ ⟦chị và em làm bánh sinh nhật cho mẹ⟧（我们给妈妈做生日蛋糕）| ③ ⟦tết Nguyên đán⟧（春节）→ Ⓐ ⟦chúng ta đi chúc Tết thầy Sơn⟧（我们去给山老师拜年）
+范例（②–Ⓒ）：Ⓐ ⟦Tuần sau là sinh nhật mẹ.⟧ —— 下周是妈妈的生日。 Ⓑ ⟦Nhân dịp sinh nhật mẹ, chị và em làm bánh sinh nhật cho mẹ nhé.⟧ —— 趁妈妈生日，我们俩给妈妈做个生日蛋糕吧。
+句型练习4 —— 仿照范例用 ⟦có một không hai⟧ 填空后进行对话。
+范例：Ⓐ ⟦Dạo này, em đang học làm nhẫn đấy.⟧ —— 最近我在学做戒指。 Ⓑ ⟦Em học cách làm nhẫn để làm gì?⟧ —— 你学做戒指干什么？ Ⓐ ⟦Bởi vì em muốn tặng chiếc nhẫn có một không hai cho bạn gái em.⟧ —— 因为我想送女朋友一枚独一无二的戒指。
+❶ Ⓐ ⟦Anh nên đi ăn thử mì Ý ở nhà hàng Vongole.⟧ —— 你应该去Vongole餐厅尝尝意大利面。 Ⓑ ⟦Vì sao? Mì Ý ở nhà hàng đó ngon à?⟧ —— 为什么？那家的意大利面好吃吗？ Ⓐ ⟦Vâng. Ở đó, anh sẽ được ăn món mì Ý có một không hai trên thế giới đấy.⟧ —— 是的。在那儿你能吃到世界上独一无二的意大利面。
+❷ Ⓐ ⟦Chị biết không? Mỗi lần hẹn hò, bạn trai của Trang đều tặng hoa cho Trang đấy.⟧ —— 姐你知道吗？每次约会，庄的男朋友都会送她花。 Ⓑ ⟦Ôi, người lãng mạn nhỉ!⟧ —— 哇，真浪漫啊！ Ⓐ ⟦Vâng. Em thấy bạn trai Trang là người lãng mạn có một không hai.⟧ —— 是啊。我觉得庄的男朋友是个独一无二的浪漫的人。
+新单词：⟦quyết định⟧ 决定 | ⟦đời⟧ 人生 | ⟦suy nghĩ⟧ 思考 | ⟦kĩ⟧ 仔细、慎重 | ⟦nhẫn⟧ 戒指 | ⟦lãng mạn⟧ 浪漫
+=zh
+核心表達：⟦nhân dịp⟧ / ⟦có một không hai⟧
+⟦nhân dịp A⟧ 或 ⟦nhân A⟧ 與表示時間、機會、事件等的詞一起使用，意為「值A之際、趁A、為紀念A」等。
+❶ Ⓐ ⟦Cuối tuần này, anh có đi đâu không?⟧ —— 這個週末你要去哪裡嗎？ Ⓑ ⟦Anh định đưa bố mẹ anh đi du lịch nhân dịp kỉ niệm 30 năm ngày kết hôn của bố mẹ.⟧ —— 值父母結婚30週年之際，我打算帶他們去旅行。
+❷ ⟦Nhân cơ hội này, tôi muốn gửi lời cảm ơn tới tất cả anh chị em đồng nghiệp.⟧ —— 藉此機會，我想向所有同事表達感謝。
+⟦có một không hai⟧ 由 ⟦có một⟧（有一個）和 ⟦không hai⟧（沒有第二個）組合而成，意為「獨一無二、絕無僅有」。
+❶ ⟦Đây là con đường tuyết có một không hai trên thế giới.⟧ —— 這是世界上獨一無二的雪路。
+❷ Ⓐ ⟦Em đã quyết định chuyển công ti à?⟧ —— 你決定換公司了？ Ⓑ ⟦Vâng. Vì em đã suy nghĩ kĩ và thấy đây sẽ là cơ hội có một không hai trong đời em.⟧ —— 是的。我仔細考慮過，覺得這會是我人生中獨一無二的機會。
+句型練習3 —— 找出相應內容連線，然後仿照範例對話：① ⟦nghỉ hè⟧（暑假）→ Ⓑ ⟦cả nhà mình đi du lịch Nha Trang⟧（全家去芽莊旅行）| ② ⟦sinh nhật mẹ⟧（媽媽生日）→ Ⓒ ⟦chị và em làm bánh sinh nhật cho mẹ⟧（我們幫媽媽做生日蛋糕）| ③ ⟦tết Nguyên đán⟧（農曆新年）→ Ⓐ ⟦chúng ta đi chúc Tết thầy Sơn⟧（我們去向山老師拜年）
+範例（②–Ⓒ）：Ⓐ ⟦Tuần sau là sinh nhật mẹ.⟧ —— 下週是媽媽的生日。 Ⓑ ⟦Nhân dịp sinh nhật mẹ, chị và em làm bánh sinh nhật cho mẹ nhé.⟧ —— 趁媽媽生日，我們倆幫媽媽做個生日蛋糕吧。
+句型練習4 —— 仿照範例用 ⟦có một không hai⟧ 填空後進行對話。
+範例：Ⓐ ⟦Dạo này, em đang học làm nhẫn đấy.⟧ —— 最近我在學做戒指。 Ⓑ ⟦Em học cách làm nhẫn để làm gì?⟧ —— 你學做戒指做什麼？ Ⓐ ⟦Bởi vì em muốn tặng chiếc nhẫn có một không hai cho bạn gái em.⟧ —— 因為我想送女朋友一枚獨一無二的戒指。
+❶ Ⓐ ⟦Anh nên đi ăn thử mì Ý ở nhà hàng Vongole.⟧ —— 你應該去Vongole餐廳嚐嚐義大利麵。 Ⓑ ⟦Vì sao? Mì Ý ở nhà hàng đó ngon à?⟧ —— 為什麼？那家的義大利麵好吃嗎？ Ⓐ ⟦Vâng. Ở đó, anh sẽ được ăn món mì Ý có một không hai trên thế giới đấy.⟧ —— 是的。在那裡你能吃到世界上獨一無二的義大利麵。
+❷ Ⓐ ⟦Chị biết không? Mỗi lần hẹn hò, bạn trai của Trang đều tặng hoa cho Trang đấy.⟧ —— 姊，妳知道嗎？每次約會，莊的男朋友都會送她花。 Ⓑ ⟦Ôi, người lãng mạn nhỉ!⟧ —— 哇，真浪漫啊！ Ⓐ ⟦Vâng. Em thấy bạn trai Trang là người lãng mạn có một không hai.⟧ —— 是啊。我覺得莊的男朋友是個獨一無二的浪漫的人。
+新單字：⟦quyết định⟧ 決定 | ⟦đời⟧ 人生 | ⟦suy nghĩ⟧ 思考 | ⟦kĩ⟧ 仔細、慎重 | ⟦nhẫn⟧ 戒指 | ⟦lãng mạn⟧ 浪漫
+=en
+Key expressions: ⟦nhân dịp⟧ / ⟦có một không hai⟧
+⟦nhân dịp A⟧ or ⟦nhân A⟧ is used with words for times, opportunities or events and means "on the occasion of A, marking A, to celebrate A".
+❶ Ⓐ ⟦Cuối tuần này, anh có đi đâu không?⟧ — Are you going anywhere this weekend? Ⓑ ⟦Anh định đưa bố mẹ anh đi du lịch nhân dịp kỉ niệm 30 năm ngày kết hôn của bố mẹ.⟧ — I'm planning to take my parents on a trip to mark their 30th wedding anniversary.
+❷ ⟦Nhân cơ hội này, tôi muốn gửi lời cảm ơn tới tất cả anh chị em đồng nghiệp.⟧ — I'd like to take this opportunity to thank all my colleagues.
+⟦có một không hai⟧ combines ⟦có một⟧ (there is one) and ⟦không hai⟧ (there is no second) to mean "one of a kind, unique, unparalleled".
+❶ ⟦Đây là con đường tuyết có một không hai trên thế giới.⟧ — This is a snow road like no other in the world.
+❷ Ⓐ ⟦Em đã quyết định chuyển công ti à?⟧ — Have you decided to change companies? Ⓑ ⟦Vâng. Vì em đã suy nghĩ kĩ và thấy đây sẽ là cơ hội có một không hai trong đời em.⟧ — Yes. I thought it over carefully and I feel this is a once-in-a-lifetime opportunity.
+Pattern practice 3 — match the parts, then talk as in the model: ① ⟦nghỉ hè⟧ (summer holidays) → Ⓑ ⟦cả nhà mình đi du lịch Nha Trang⟧ (the whole family goes to Nha Trang) | ② ⟦sinh nhật mẹ⟧ (Mum's birthday) → Ⓒ ⟦chị và em làm bánh sinh nhật cho mẹ⟧ (we make Mum a birthday cake) | ③ ⟦tết Nguyên đán⟧ (Lunar New Year) → Ⓐ ⟦chúng ta đi chúc Tết thầy Sơn⟧ (we visit teacher Sơn to wish him a happy New Year)
+Model (②–Ⓒ): Ⓐ ⟦Tuần sau là sinh nhật mẹ.⟧ — Next week is Mum's birthday. Ⓑ ⟦Nhân dịp sinh nhật mẹ, chị và em làm bánh sinh nhật cho mẹ nhé.⟧ — For Mum's birthday, let's make her a birthday cake together.
+Pattern practice 4 — fill in the blanks with ⟦có một không hai⟧ as in the model, then talk.
+Model: Ⓐ ⟦Dạo này, em đang học làm nhẫn đấy.⟧ — I'm learning to make rings these days. Ⓑ ⟦Em học cách làm nhẫn để làm gì?⟧ — What are you learning to make rings for? Ⓐ ⟦Bởi vì em muốn tặng chiếc nhẫn có một không hai cho bạn gái em.⟧ — Because I want to give my girlfriend a one-of-a-kind ring.
+❶ Ⓐ ⟦Anh nên đi ăn thử mì Ý ở nhà hàng Vongole.⟧ — You should try the pasta at the Vongole restaurant. Ⓑ ⟦Vì sao? Mì Ý ở nhà hàng đó ngon à?⟧ — Why? Is the pasta good there? Ⓐ ⟦Vâng. Ở đó, anh sẽ được ăn món mì Ý có một không hai trên thế giới đấy.⟧ — Yes. You'll get pasta like nowhere else in the world.
+❷ Ⓐ ⟦Chị biết không? Mỗi lần hẹn hò, bạn trai của Trang đều tặng hoa cho Trang đấy.⟧ — You know what? Every time they go on a date, Trang's boyfriend gives her flowers. Ⓑ ⟦Ôi, người lãng mạn nhỉ!⟧ — Oh, what a romantic! Ⓐ ⟦Vâng. Em thấy bạn trai Trang là người lãng mạn có một không hai.⟧ — Yes. I think Trang's boyfriend is a romantic like no other.
+New words: ⟦quyết định⟧ to decide | ⟦đời⟧ life | ⟦suy nghĩ⟧ to think | ⟦kĩ⟧ carefully, thoroughly | ⟦nhẫn⟧ ring | ⟦lãng mạn⟧ romantic
+=fr
+Expressions clés : ⟦nhân dịp⟧ / ⟦có một không hai⟧
+⟦nhân dịp A⟧ ou ⟦nhân A⟧ s'emploie avec des mots désignant un moment, une occasion ou un événement et signifie « à l'occasion de A, pour célébrer A ».
+❶ Ⓐ ⟦Cuối tuần này, anh có đi đâu không?⟧ — Tu pars quelque part ce week-end ? Ⓑ ⟦Anh định đưa bố mẹ anh đi du lịch nhân dịp kỉ niệm 30 năm ngày kết hôn của bố mẹ.⟧ — Je compte emmener mes parents en voyage à l'occasion de leurs 30 ans de mariage.
+❷ ⟦Nhân cơ hội này, tôi muốn gửi lời cảm ơn tới tất cả anh chị em đồng nghiệp.⟧ — Je profite de cette occasion pour remercier tous mes collègues.
+⟦có một không hai⟧ réunit ⟦có một⟧ (il y en a un) et ⟦không hai⟧ (il n'y en a pas deux) et signifie « unique, sans pareil ».
+❶ ⟦Đây là con đường tuyết có một không hai trên thế giới.⟧ — C'est une route enneigée unique au monde.
+❷ Ⓐ ⟦Em đã quyết định chuyển công ti à?⟧ — Tu as décidé de changer d'entreprise ? Ⓑ ⟦Vâng. Vì em đã suy nghĩ kĩ và thấy đây sẽ là cơ hội có một không hai trong đời em.⟧ — Oui. J'y ai bien réfléchi et je pense que c'est une occasion unique dans ma vie.
+Exercice 3 — reliez les éléments, puis dialoguez comme dans le modèle : ① ⟦nghỉ hè⟧ (vacances d'été) → Ⓑ ⟦cả nhà mình đi du lịch Nha Trang⟧ (toute la famille part à Nha Trang) | ② ⟦sinh nhật mẹ⟧ (anniversaire de maman) → Ⓒ ⟦chị và em làm bánh sinh nhật cho mẹ⟧ (on fait un gâteau d'anniversaire pour maman) | ③ ⟦tết Nguyên đán⟧ (Nouvel An lunaire) → Ⓐ ⟦chúng ta đi chúc Tết thầy Sơn⟧ (on va présenter nos vœux au professeur Sơn)
+Modèle (②–Ⓒ) : Ⓐ ⟦Tuần sau là sinh nhật mẹ.⟧ — La semaine prochaine, c'est l'anniversaire de maman. Ⓑ ⟦Nhân dịp sinh nhật mẹ, chị và em làm bánh sinh nhật cho mẹ nhé.⟧ — Pour l'anniversaire de maman, faisons-lui un gâteau toutes les deux.
+Exercice 4 — complétez avec ⟦có một không hai⟧ comme dans le modèle, puis dialoguez.
+Modèle : Ⓐ ⟦Dạo này, em đang học làm nhẫn đấy.⟧ — En ce moment, j'apprends à fabriquer des bagues. Ⓑ ⟦Em học cách làm nhẫn để làm gì?⟧ — Pourquoi apprends-tu à faire des bagues ? Ⓐ ⟦Bởi vì em muốn tặng chiếc nhẫn có một không hai cho bạn gái em.⟧ — Parce que je veux offrir une bague unique à ma petite amie.
+❶ Ⓐ ⟦Anh nên đi ăn thử mì Ý ở nhà hàng Vongole.⟧ — Tu devrais goûter les pâtes du restaurant Vongole. Ⓑ ⟦Vì sao? Mì Ý ở nhà hàng đó ngon à?⟧ — Pourquoi ? Elles sont bonnes là-bas ? Ⓐ ⟦Vâng. Ở đó, anh sẽ được ăn món mì Ý có một không hai trên thế giới đấy.⟧ — Oui. Tu y mangeras des pâtes uniques au monde.
+❷ Ⓐ ⟦Chị biết không? Mỗi lần hẹn hò, bạn trai của Trang đều tặng hoa cho Trang đấy.⟧ — Tu sais quoi ? À chaque rendez-vous, le petit ami de Trang lui offre des fleurs. Ⓑ ⟦Ôi, người lãng mạn nhỉ!⟧ — Oh, quel romantique ! Ⓐ ⟦Vâng. Em thấy bạn trai Trang là người lãng mạn có một không hai.⟧ — Oui. Je trouve que le petit ami de Trang est un romantique sans pareil.
+Nouveaux mots : ⟦quyết định⟧ décider | ⟦đời⟧ vie | ⟦suy nghĩ⟧ réfléchir | ⟦kĩ⟧ soigneusement | ⟦nhẫn⟧ bague | ⟦lãng mạn⟧ romantique
+=de
+Schlüsselausdrücke: ⟦nhân dịp⟧ / ⟦có một không hai⟧
+⟦nhân dịp A⟧ oder ⟦nhân A⟧ steht mit Wörtern für Zeitpunkte, Gelegenheiten oder Ereignisse und bedeutet „anlässlich A, zu A, zur Feier von A“.
+❶ Ⓐ ⟦Cuối tuần này, anh có đi đâu không?⟧ — Fährst du dieses Wochenende irgendwohin? Ⓑ ⟦Anh định đưa bố mẹ anh đi du lịch nhân dịp kỉ niệm 30 năm ngày kết hôn của bố mẹ.⟧ — Ich will meine Eltern anlässlich ihres 30. Hochzeitstags auf eine Reise mitnehmen.
+❷ ⟦Nhân cơ hội này, tôi muốn gửi lời cảm ơn tới tất cả anh chị em đồng nghiệp.⟧ — Bei dieser Gelegenheit möchte ich allen Kolleginnen und Kollegen danken.
+⟦có một không hai⟧ setzt sich aus ⟦có một⟧ (es gibt eins) und ⟦không hai⟧ (es gibt kein zweites) zusammen und bedeutet „einzigartig, einmalig“.
+❶ ⟦Đây là con đường tuyết có một không hai trên thế giới.⟧ — Das ist ein weltweit einzigartiger Schneeweg.
+❷ Ⓐ ⟦Em đã quyết định chuyển công ti à?⟧ — Hast du dich entschieden, die Firma zu wechseln? Ⓑ ⟦Vâng. Vì em đã suy nghĩ kĩ và thấy đây sẽ là cơ hội có một không hai trong đời em.⟧ — Ja. Ich habe es mir gut überlegt und finde, das ist eine einmalige Chance in meinem Leben.
+Übung 3 — passende Teile verbinden, dann wie im Muster sprechen: ① ⟦nghỉ hè⟧ (Sommerferien) → Ⓑ ⟦cả nhà mình đi du lịch Nha Trang⟧ (die ganze Familie fährt nach Nha Trang) | ② ⟦sinh nhật mẹ⟧ (Mamas Geburtstag) → Ⓒ ⟦chị và em làm bánh sinh nhật cho mẹ⟧ (wir backen Mama einen Geburtstagskuchen) | ③ ⟦tết Nguyên đán⟧ (Mondneujahr) → Ⓐ ⟦chúng ta đi chúc Tết thầy Sơn⟧ (wir wünschen Lehrer Sơn ein frohes neues Jahr)
+Muster (②–Ⓒ): Ⓐ ⟦Tuần sau là sinh nhật mẹ.⟧ — Nächste Woche hat Mama Geburtstag. Ⓑ ⟦Nhân dịp sinh nhật mẹ, chị và em làm bánh sinh nhật cho mẹ nhé.⟧ — Zu Mamas Geburtstag backen wir ihr zusammen einen Kuchen, ja?
+Übung 4 — mit ⟦có một không hai⟧ wie im Muster ergänzen, dann sprechen.
+Muster: Ⓐ ⟦Dạo này, em đang học làm nhẫn đấy.⟧ — Zurzeit lerne ich, Ringe zu machen. Ⓑ ⟦Em học cách làm nhẫn để làm gì?⟧ — Wozu lernst du das? Ⓐ ⟦Bởi vì em muốn tặng chiếc nhẫn có một không hai cho bạn gái em.⟧ — Weil ich meiner Freundin einen einzigartigen Ring schenken möchte.
+❶ Ⓐ ⟦Anh nên đi ăn thử mì Ý ở nhà hàng Vongole.⟧ — Du solltest mal die Pasta im Restaurant Vongole probieren. Ⓑ ⟦Vì sao? Mì Ý ở nhà hàng đó ngon à?⟧ — Warum? Ist die Pasta dort gut? Ⓐ ⟦Vâng. Ở đó, anh sẽ được ăn món mì Ý có một không hai trên thế giới đấy.⟧ — Ja. Dort bekommst du Pasta, die auf der Welt einzigartig ist.
+❷ Ⓐ ⟦Chị biết không? Mỗi lần hẹn hò, bạn trai của Trang đều tặng hoa cho Trang đấy.⟧ — Weißt du was? Trangs Freund schenkt ihr bei jedem Date Blumen. Ⓑ ⟦Ôi, người lãng mạn nhỉ!⟧ — Oh, wie romantisch! Ⓐ ⟦Vâng. Em thấy bạn trai Trang là người lãng mạn có một không hai.⟧ — Ja. Ich finde, Trangs Freund ist ein einzigartiger Romantiker.
+Neue Wörter: ⟦quyết định⟧ entscheiden | ⟦đời⟧ Leben | ⟦suy nghĩ⟧ nachdenken | ⟦kĩ⟧ gründlich, sorgfältig | ⟦nhẫn⟧ Ring | ⟦lãng mạn⟧ romantisch
+=hu
+Kulcskifejezések: ⟦nhân dịp⟧ / ⟦có một không hai⟧
+A ⟦nhân dịp A⟧ vagy ⟦nhân A⟧ időt, alkalmat, eseményt jelölő szavakkal állva „A alkalmából, A-ra emlékezve” jelentésű.
+❶ Ⓐ ⟦Cuối tuần này, anh có đi đâu không?⟧ — Mész valahová a hétvégén? Ⓑ ⟦Anh định đưa bố mẹ anh đi du lịch nhân dịp kỉ niệm 30 năm ngày kết hôn của bố mẹ.⟧ — A szüleim 30. házassági évfordulója alkalmából el akarom vinni őket egy utazásra.
+❷ ⟦Nhân cơ hội này, tôi muốn gửi lời cảm ơn tới tất cả anh chị em đồng nghiệp.⟧ — Ez alkalomból szeretnék köszönetet mondani minden kollégámnak.
+A ⟦có một không hai⟧ a ⟦có một⟧ (van egy) és ⟦không hai⟧ (nincs második) összetételéből jön, jelentése „egyedülálló, páratlan, egyetlen”.
+❶ ⟦Đây là con đường tuyết có một không hai trên thế giới.⟧ — Ez egy a világon páratlan havas út.
+❷ Ⓐ ⟦Em đã quyết định chuyển công ti à?⟧ — Elhatároztad, hogy céget váltasz? Ⓑ ⟦Vâng. Vì em đã suy nghĩ kĩ và thấy đây sẽ là cơ hội có một không hai trong đời em.⟧ — Igen. Alaposan átgondoltam, és úgy érzem, ez életem egyedülálló lehetősége.
+3. gyakorlat — kösse össze a megfelelő részeket, majd beszélgessen a minta szerint: ① ⟦nghỉ hè⟧ (nyári szünet) → Ⓑ ⟦cả nhà mình đi du lịch Nha Trang⟧ (az egész család Nha Trangba utazik) | ② ⟦sinh nhật mẹ⟧ (anya születésnapja) → Ⓒ ⟦chị và em làm bánh sinh nhật cho mẹ⟧ (sütünk anyának születésnapi tortát) | ③ ⟦tết Nguyên đán⟧ (holdújév) → Ⓐ ⟦chúng ta đi chúc Tết thầy Sơn⟧ (elmegyünk boldog újévet kívánni Sơn tanár úrnak)
+Minta (②–Ⓒ): Ⓐ ⟦Tuần sau là sinh nhật mẹ.⟧ — Jövő héten lesz anya születésnapja. Ⓑ ⟦Nhân dịp sinh nhật mẹ, chị và em làm bánh sinh nhật cho mẹ nhé.⟧ — Anya születésnapja alkalmából süssünk neki tortát, jó?
+4. gyakorlat — töltse ki a ⟦có một không hai⟧ kifejezéssel a minta szerint, majd beszélgessen.
+Minta: Ⓐ ⟦Dạo này, em đang học làm nhẫn đấy.⟧ — Mostanában gyűrűkészítést tanulok. Ⓑ ⟦Em học cách làm nhẫn để làm gì?⟧ — Minek tanulod? Ⓐ ⟦Bởi vì em muốn tặng chiếc nhẫn có một không hai cho bạn gái em.⟧ — Mert egy egyedülálló gyűrűt szeretnék ajándékozni a barátnőmnek.
+❶ Ⓐ ⟦Anh nên đi ăn thử mì Ý ở nhà hàng Vongole.⟧ — Meg kellene kóstolnod a tésztát a Vongole étteremben. Ⓑ ⟦Vì sao? Mì Ý ở nhà hàng đó ngon à?⟧ — Miért? Finom ott a tészta? Ⓐ ⟦Vâng. Ở đó, anh sẽ được ăn món mì Ý có một không hai trên thế giới đấy.⟧ — Igen. Ott a világon páratlan tésztát ehetsz.
+❷ Ⓐ ⟦Chị biết không? Mỗi lần hẹn hò, bạn trai của Trang đều tặng hoa cho Trang đấy.⟧ — Tudod mit? Trang barátja minden randin virágot ad neki. Ⓑ ⟦Ôi, người lãng mạn nhỉ!⟧ — Ó, milyen romantikus! Ⓐ ⟦Vâng. Em thấy bạn trai Trang là người lãng mạn có một không hai.⟧ — Igen. Szerintem Trang barátja páratlanul romantikus ember.
+Új szavak: ⟦quyết định⟧ dönteni | ⟦đời⟧ élet | ⟦suy nghĩ⟧ gondolkodni | ⟦kĩ⟧ alaposan | ⟦nhẫn⟧ gyűrű | ⟦lãng mạn⟧ romantikus
+=id
+Ungkapan kunci: ⟦nhân dịp⟧ / ⟦có một không hai⟧
+⟦nhân dịp A⟧ atau ⟦nhân A⟧ dipakai bersama kata yang menyatakan waktu, kesempatan, atau peristiwa dan berarti "dalam rangka A, bertepatan dengan A, untuk memperingati A".
+❶ Ⓐ ⟦Cuối tuần này, anh có đi đâu không?⟧ — Akhir pekan ini Kakak pergi ke mana? Ⓑ ⟦Anh định đưa bố mẹ anh đi du lịch nhân dịp kỉ niệm 30 năm ngày kết hôn của bố mẹ.⟧ — Aku berencana mengajak orang tuaku berwisata dalam rangka ulang tahun pernikahan mereka yang ke-30.
+❷ ⟦Nhân cơ hội này, tôi muốn gửi lời cảm ơn tới tất cả anh chị em đồng nghiệp.⟧ — Pada kesempatan ini, saya ingin menyampaikan terima kasih kepada semua rekan kerja.
+⟦có một không hai⟧ gabungan ⟦có một⟧ (ada satu) dan ⟦không hai⟧ (tidak ada dua) yang berarti "satu-satunya, tiada duanya".
+❶ ⟦Đây là con đường tuyết có một không hai trên thế giới.⟧ — Ini adalah jalan bersalju yang tiada duanya di dunia.
+❷ Ⓐ ⟦Em đã quyết định chuyển công ti à?⟧ — Kamu sudah memutuskan pindah perusahaan? Ⓑ ⟦Vâng. Vì em đã suy nghĩ kĩ và thấy đây sẽ là cơ hội có một không hai trong đời em.⟧ — Iya. Saya sudah memikirkannya matang-matang dan merasa ini kesempatan yang tiada duanya dalam hidup saya.
+Latihan pola 3 — hubungkan bagian yang cocok, lalu bercakaplah seperti contoh: ① ⟦nghỉ hè⟧ (libur musim panas) → Ⓑ ⟦cả nhà mình đi du lịch Nha Trang⟧ (sekeluarga berwisata ke Nha Trang) | ② ⟦sinh nhật mẹ⟧ (ulang tahun ibu) → Ⓒ ⟦chị và em làm bánh sinh nhật cho mẹ⟧ (kita membuat kue ulang tahun untuk ibu) | ③ ⟦tết Nguyên đán⟧ (Tahun Baru Imlek) → Ⓐ ⟦chúng ta đi chúc Tết thầy Sơn⟧ (kita berkunjung mengucapkan selamat Tahun Baru kepada Pak Sơn)
+Contoh (②–Ⓒ): Ⓐ ⟦Tuần sau là sinh nhật mẹ.⟧ — Minggu depan ulang tahun Ibu. Ⓑ ⟦Nhân dịp sinh nhật mẹ, chị và em làm bánh sinh nhật cho mẹ nhé.⟧ — Dalam rangka ulang tahun Ibu, ayo kita berdua membuat kue ulang tahun untuk Ibu.
+Latihan pola 4 — isi dengan ⟦có một không hai⟧ seperti contoh, lalu bercakaplah.
+Contoh: Ⓐ ⟦Dạo này, em đang học làm nhẫn đấy.⟧ — Akhir-akhir ini saya sedang belajar membuat cincin. Ⓑ ⟦Em học cách làm nhẫn để làm gì?⟧ — Belajar membuat cincin untuk apa? Ⓐ ⟦Bởi vì em muốn tặng chiếc nhẫn có một không hai cho bạn gái em.⟧ — Karena saya ingin menghadiahkan cincin yang tiada duanya untuk pacar saya.
+❶ Ⓐ ⟦Anh nên đi ăn thử mì Ý ở nhà hàng Vongole.⟧ — Kakak sebaiknya mencoba pasta di restoran Vongole. Ⓑ ⟦Vì sao? Mì Ý ở nhà hàng đó ngon à?⟧ — Kenapa? Pasta di sana enak? Ⓐ ⟦Vâng. Ở đó, anh sẽ được ăn món mì Ý có một không hai trên thế giới đấy.⟧ — Iya. Di sana Kakak bisa makan pasta yang tiada duanya di dunia.
+❷ Ⓐ ⟦Chị biết không? Mỗi lần hẹn hò, bạn trai của Trang đều tặng hoa cho Trang đấy.⟧ — Kakak tahu tidak? Setiap kencan, pacar Trang selalu memberinya bunga. Ⓑ ⟦Ôi, người lãng mạn nhỉ!⟧ — Wah, romantis sekali! Ⓐ ⟦Vâng. Em thấy bạn trai Trang là người lãng mạn có một không hai.⟧ — Iya. Menurutku pacar Trang orang romantis yang tiada duanya.
+Kosakata baru: ⟦quyết định⟧ memutuskan | ⟦đời⟧ hidup | ⟦suy nghĩ⟧ berpikir | ⟦kĩ⟧ matang, teliti | ⟦nhẫn⟧ cincin | ⟦lãng mạn⟧ romantis
+=ja
+核心表現：⟦nhân dịp⟧ / ⟦có một không hai⟧
+⟦nhân dịp A⟧ または ⟦nhân A⟧ は、時・機会・出来事などを表す言葉と一緒に使われ、「Aを迎えて、Aに際して、Aを記念して」などの意味を表します。
+❶ Ⓐ ⟦Cuối tuần này, anh có đi đâu không?⟧ — 今週末、どこか行きますか。 Ⓑ ⟦Anh định đưa bố mẹ anh đi du lịch nhân dịp kỉ niệm 30 năm ngày kết hôn của bố mẹ.⟧ — 両親の結婚30周年を記念して、両親を旅行に連れて行こうと思っているんだ。
+❷ ⟦Nhân cơ hội này, tôi muốn gửi lời cảm ơn tới tất cả anh chị em đồng nghiệp.⟧ — この機会をお借りして、同僚の皆さん全員に感謝の言葉をお伝えしたいと思います。
+⟦có một không hai⟧ は ⟦có một⟧（一つある）と ⟦không hai⟧（二つはない）が合わさって、「唯一無二の、二つとない、一つしかない」という意味を表します。
+❶ ⟦Đây là con đường tuyết có một không hai trên thế giới.⟧ — ここは世界に一つしかない雪の道です。
+❷ Ⓐ ⟦Em đã quyết định chuyển công ti à?⟧ — 転職することに決めたの？ Ⓑ ⟦Vâng. Vì em đã suy nghĩ kĩ và thấy đây sẽ là cơ hội có một không hai trong đời em.⟧ — はい。よく考えて、これが私の人生で二つとないチャンスだと思ったんです。
+文型練習3 — 適切な内容を結び、例のように会話してみましょう：① ⟦nghỉ hè⟧（夏休み）→ Ⓑ ⟦cả nhà mình đi du lịch Nha Trang⟧（家族みんなでニャチャンへ旅行）| ② ⟦sinh nhật mẹ⟧（母の誕生日）→ Ⓒ ⟦chị và em làm bánh sinh nhật cho mẹ⟧（二人で母に誕生日ケーキを作る）| ③ ⟦tết Nguyên đán⟧（旧正月）→ Ⓐ ⟦chúng ta đi chúc Tết thầy Sơn⟧（ソン先生に新年のあいさつに行く）
+例（②–Ⓒ）：Ⓐ ⟦Tuần sau là sinh nhật mẹ.⟧ — 来週はお母さんの誕生日だね。 Ⓑ ⟦Nhân dịp sinh nhật mẹ, chị và em làm bánh sinh nhật cho mẹ nhé.⟧ — お母さんの誕生日に合わせて、二人で誕生日ケーキを作ろうね。
+文型練習4 — 例のように ⟦có một không hai⟧ を使って空欄を埋め、会話してみましょう。
+例：Ⓐ ⟦Dạo này, em đang học làm nhẫn đấy.⟧ — 最近、指輪作りを習っているんです。 Ⓑ ⟦Em học cách làm nhẫn để làm gì?⟧ — 何のために指輪の作り方を習っているの？ Ⓐ ⟦Bởi vì em muốn tặng chiếc nhẫn có một không hai cho bạn gái em.⟧ — 彼女に世界に一つだけの指輪を贈りたいからです。
+❶ Ⓐ ⟦Anh nên đi ăn thử mì Ý ở nhà hàng Vongole.⟧ — ボンゴレというレストランのパスタを食べてみるといいですよ。 Ⓑ ⟦Vì sao? Mì Ý ở nhà hàng đó ngon à?⟧ — どうして？そこのパスタはおいしいの？ Ⓐ ⟦Vâng. Ở đó, anh sẽ được ăn món mì Ý có một không hai trên thế giới đấy.⟧ — はい。そこでは世界に二つとないパスタが食べられますよ。
+❷ Ⓐ ⟦Chị biết không? Mỗi lần hẹn hò, bạn trai của Trang đều tặng hoa cho Trang đấy.⟧ — 知ってますか。チャンの彼氏はデートのたびにチャンに花を贈るんですよ。 Ⓑ ⟦Ôi, người lãng mạn nhỉ!⟧ — まあ、ロマンチックな人ね！ Ⓐ ⟦Vâng. Em thấy bạn trai Trang là người lãng mạn có một không hai.⟧ — はい。チャンの彼氏は二人といないロマンチストだと思います。
+新出単語：⟦quyết định⟧ 決定する | ⟦đời⟧ 人生 | ⟦suy nghĩ⟧ 考える | ⟦kĩ⟧ よく、慎重に | ⟦nhẫn⟧ 指輪 | ⟦lãng mạn⟧ ロマンチックだ
+=pl
+Kluczowe wyrażenia: ⟦nhân dịp⟧ / ⟦có một không hai⟧
+⟦nhân dịp A⟧ lub ⟦nhân A⟧ występuje ze słowami oznaczającymi czas, okazję lub wydarzenie i znaczy „z okazji A, przy okazji A, dla uczczenia A”.
+❶ Ⓐ ⟦Cuối tuần này, anh có đi đâu không?⟧ — Wybierasz się gdzieś w ten weekend? Ⓑ ⟦Anh định đưa bố mẹ anh đi du lịch nhân dịp kỉ niệm 30 năm ngày kết hôn của bố mẹ.⟧ — Z okazji 30. rocznicy ślubu rodziców chcę ich zabrać w podróż.
+❷ ⟦Nhân cơ hội này, tôi muốn gửi lời cảm ơn tới tất cả anh chị em đồng nghiệp.⟧ — Korzystając z okazji, chciałbym podziękować wszystkim koleżankom i kolegom.
+⟦có một không hai⟧ powstało z połączenia ⟦có một⟧ (jest jeden) i ⟦không hai⟧ (nie ma drugiego) i znaczy „jedyny w swoim rodzaju, niepowtarzalny”.
+❶ ⟦Đây là con đường tuyết có một không hai trên thế giới.⟧ — To jedyna taka śnieżna droga na świecie.
+❷ Ⓐ ⟦Em đã quyết định chuyển công ti à?⟧ — Zdecydowałeś się zmienić firmę? Ⓑ ⟦Vâng. Vì em đã suy nghĩ kĩ và thấy đây sẽ là cơ hội có một không hai trong đời em.⟧ — Tak. Dobrze to przemyślałem i uważam, że to niepowtarzalna szansa w moim życiu.
+Ćwiczenie 3 — połącz pasujące elementy i rozmawiaj jak we wzorze: ① ⟦nghỉ hè⟧ (wakacje letnie) → Ⓑ ⟦cả nhà mình đi du lịch Nha Trang⟧ (cała rodzina jedzie do Nha Trang) | ② ⟦sinh nhật mẹ⟧ (urodziny mamy) → Ⓒ ⟦chị và em làm bánh sinh nhật cho mẹ⟧ (upieczemy mamie tort urodzinowy) | ③ ⟦tết Nguyên đán⟧ (Nowy Rok księżycowy) → Ⓐ ⟦chúng ta đi chúc Tết thầy Sơn⟧ (pójdziemy złożyć noworoczne życzenia nauczycielowi Sơnowi)
+Wzór (②–Ⓒ): Ⓐ ⟦Tuần sau là sinh nhật mẹ.⟧ — W przyszłym tygodniu są urodziny mamy. Ⓑ ⟦Nhân dịp sinh nhật mẹ, chị và em làm bánh sinh nhật cho mẹ nhé.⟧ — Z okazji urodzin mamy upieczmy jej razem tort.
+Ćwiczenie 4 — uzupełnij za pomocą ⟦có một không hai⟧ jak we wzorze, potem rozmawiaj.
+Wzór: Ⓐ ⟦Dạo này, em đang học làm nhẫn đấy.⟧ — Ostatnio uczę się robić pierścionki. Ⓑ ⟦Em học cách làm nhẫn để làm gì?⟧ — Po co się tego uczysz? Ⓐ ⟦Bởi vì em muốn tặng chiếc nhẫn có một không hai cho bạn gái em.⟧ — Bo chcę podarować dziewczynie jedyny w swoim rodzaju pierścionek.
+❶ Ⓐ ⟦Anh nên đi ăn thử mì Ý ở nhà hàng Vongole.⟧ — Powinieneś spróbować makaronu w restauracji Vongole. Ⓑ ⟦Vì sao? Mì Ý ở nhà hàng đó ngon à?⟧ — Dlaczego? Mają tam dobry makaron? Ⓐ ⟦Vâng. Ở đó, anh sẽ được ăn món mì Ý có một không hai trên thế giới đấy.⟧ — Tak. Zjesz tam makaron, jakiego nie ma nigdzie indziej na świecie.
+❷ Ⓐ ⟦Chị biết không? Mỗi lần hẹn hò, bạn trai của Trang đều tặng hoa cho Trang đấy.⟧ — Wiesz co? Chłopak Trang na każdej randce daje jej kwiaty. Ⓑ ⟦Ôi, người lãng mạn nhỉ!⟧ — Och, co za romantyk! Ⓐ ⟦Vâng. Em thấy bạn trai Trang là người lãng mạn có một không hai.⟧ — Tak. Uważam, że chłopak Trang to romantyk jakich mało.
+Nowe słówka: ⟦quyết định⟧ zdecydować | ⟦đời⟧ życie | ⟦suy nghĩ⟧ myśleć | ⟦kĩ⟧ dokładnie, starannie | ⟦nhẫn⟧ pierścionek | ⟦lãng mạn⟧ romantyczny

@@ -1,0 +1,161 @@
+@@ pdf-grammar-ae627ba2aba51847#0
+=cs
+Klíčové výrazy: ⟦đã ~ lại càng thêm ~⟧ / ⟦hết ~ đến ~⟧
+⟦đã + A + lại càng (thêm) + A + (hơn nữa)⟧ znamená „už tak A, a ještě víc A“; na obou místech A stojí totéž přídavné jméno.
+❶ Ⓐ ⟦Chị cắt tóc rồi à? Trông chị đã trẻ lại càng thêm trẻ đấy!⟧ — Ty ses nechala ostříhat? Už tak vypadáš mladě, a teď ještě mladší! Ⓑ ⟦Thế à? Cảm ơn em.⟧ — Opravdu? Děkuju.
+❷ ⟦Sau khi đồng nghiệp nghỉ việc, anh ấy đã vất vả lại càng vất vả hơn.⟧ — Od té doby, co kolega odešel, má to už tak těžké a teď ještě těžší.
+⟦hết + A + đến + B⟧ vyjadřuje návaznost dvou věcí, činností či stavů: „dokončit A a hned na to B“. Na místě A a B může stát podstatné jméno, sloveso nebo přídavné jméno.
+❶ ⟦Tuần sau thi rất nhiều môn nên tôi phải học hết môn này đến môn kia.⟧ — Příští týden mám zkoušky z mnoha předmětů, takže se musím učit jeden předmět za druhým.
+❷ ⟦Anh ấy hết rửa bát lại đến lau nhà.⟧ — Když domyl nádobí, hned vytřel podlahu.
+❸ ⟦Cái đèn này đẹp lắm. Bật điện thì đèn hết đỏ đến xanh, đổi màu liên tục đấy.⟧ — Tahle lampa je moc hezká. Když ji rozsvítíš, je chvíli červená, chvíli modrá a pořád mění barvy.
+Procvičování 3 — spojte vhodné části a veďte rozhovor podle vzoru: ① ⟦thức ăn đắt⟧ (jídlo je drahé) → Ⓒ ⟦giá nguyên liệu tăng lên⟧ (ceny surovin stouply) | ② ⟦trời mưa nhiều⟧ (hodně prší) → Ⓐ ⟦có bão⟧ (je tajfun) | ③ ⟦trông chị ấy đẹp⟧ (vypadá krásně) → Ⓑ ⟦mới có bạn trai⟧ (má nového přítele)
+Vzor (②–Ⓐ): Ⓐ ⟦Dạo này trời mưa nhiều quá nhỉ?⟧ — Poslední dobou hrozně prší, co? Ⓑ ⟦Vì có bão nên trời đã mưa nhiều lại càng mưa nhiều hơn nữa.⟧ — Kvůli tajfunu prší už tak hodně a teď ještě víc.
+Procvičování 4 — veďte rozhovor s daným výrazem podle vzoru.
+Vzor (⟦phải làm nhiều việc⟧ muset udělat hodně práce): Ⓐ ⟦Cuối tuần trước em có nhiều việc lắm à?⟧ — Měla jsi minulý víkend hodně práce? Ⓑ ⟦Vâng, nhiều lắm ạ. Em phải làm hết việc này đến việc khác.⟧ — Ano, strašně moc. Musela jsem dělat jednu věc za druhou.
+❶ (⟦đọc nhiều sách⟧ číst hodně knih) Ⓐ ⟦Bình thường khi rỗi, cậu làm gì?⟧ — Co obvykle děláš ve volném čase? Ⓑ ⟦Tớ thường đọc sách. Cứ đọc hết cuốn này đến cuốn khác cả ngày.⟧ — Obvykle čtu. Celý den čtu jednu knihu za druhou.
+❷ (⟦nấu nhiều món⟧ vařit hodně jídel) Ⓐ ⟦Sao em nấu hết món này đến món khác như vậy?⟧ — Proč vaříš jedno jídlo za druhým? Ⓑ ⟦Tại vì tối nay em sẽ mở tiệc sinh nhật cho con gái. Nhưng em vẫn chưa biết là nấu thế này thì đã đủ hay chưa.⟧ — Protože dnes večer pořádám dceři narozeninovou oslavu. Ale pořád nevím, jestli to bude stačit.
+Nová slovíčka: ⟦lau⟧ utírat, vytírat | ⟦bật⟧ zapnout, rozsvítit
+=zh_cn
+核心表达：⟦đã ~ lại càng thêm ~⟧ / ⟦hết ~ đến ~⟧
+⟦đã + A + lại càng (thêm) + A + (hơn nữa)⟧ 意为“本来就A，又更加A”，两处A使用相同的形容词。
+❶ Ⓐ ⟦Chị cắt tóc rồi à? Trông chị đã trẻ lại càng thêm trẻ đấy!⟧ —— 姐姐剪头发了？你本来就显年轻，现在更年轻了！ Ⓑ ⟦Thế à? Cảm ơn em.⟧ —— 是吗？谢谢你。
+❷ ⟦Sau khi đồng nghiệp nghỉ việc, anh ấy đã vất vả lại càng vất vả hơn.⟧ —— 同事辞职以后，他本来就辛苦，现在更辛苦了。
+⟦hết + A + đến + B⟧ 表示“两种事物、行为、状态等的连续”，意为“做完A接着又做B”。A和B的位置可以放名词、动词或形容词。
+❶ ⟦Tuần sau thi rất nhiều môn nên tôi phải học hết môn này đến môn kia.⟧ —— 下周要考很多科目，所以我得学完这门接着学那门。
+❷ ⟦Anh ấy hết rửa bát lại đến lau nhà.⟧ —— 他洗完碗接着就拖地。
+❸ ⟦Cái đèn này đẹp lắm. Bật điện thì đèn hết đỏ đến xanh, đổi màu liên tục đấy.⟧ —— 这盏灯很漂亮。一开灯就一会儿红一会儿蓝，不停地变色呢。
+句型练习3 —— 找出相应内容连线，然后仿照范例对话：① ⟦thức ăn đắt⟧（食物贵）→ Ⓒ ⟦giá nguyên liệu tăng lên⟧（原料价格上涨）| ② ⟦trời mưa nhiều⟧（雨下得多）→ Ⓐ ⟦có bão⟧（有台风）| ③ ⟦trông chị ấy đẹp⟧（她看起来漂亮）→ Ⓑ ⟦mới có bạn trai⟧（刚交了男朋友）
+范例（②–Ⓐ）：Ⓐ ⟦Dạo này trời mưa nhiều quá nhỉ?⟧ —— 最近雨下得真多啊？ Ⓑ ⟦Vì có bão nên trời đã mưa nhiều lại càng mưa nhiều hơn nữa.⟧ —— 因为有台风，本来雨就多，现在下得更多了。
+句型练习4 —— 仿照范例用所给表达对话。
+范例（⟦phải làm nhiều việc⟧ 要做很多事）：Ⓐ ⟦Cuối tuần trước em có nhiều việc lắm à?⟧ —— 上周末你事情很多吗？ Ⓑ ⟦Vâng, nhiều lắm ạ. Em phải làm hết việc này đến việc khác.⟧ —— 是的，很多。我得做完一件又做一件。
+❶（⟦đọc nhiều sách⟧ 读很多书）Ⓐ ⟦Bình thường khi rỗi, cậu làm gì?⟧ —— 平时有空的时候你做什么？ Ⓑ ⟦Tớ thường đọc sách. Cứ đọc hết cuốn này đến cuốn khác cả ngày.⟧ —— 我通常看书。一整天看完一本接着看另一本。
+❷（⟦nấu nhiều món⟧ 做很多菜）Ⓐ ⟦Sao em nấu hết món này đến món khác như vậy?⟧ —— 你怎么做完一道菜又做一道菜？ Ⓑ ⟦Tại vì tối nay em sẽ mở tiệc sinh nhật cho con gái. Nhưng em vẫn chưa biết là nấu thế này thì đã đủ hay chưa.⟧ —— 因为今晚我要给女儿办生日派对。可我还不知道做这么多够不够。
+新单词：⟦lau⟧ 擦 | ⟦bật⟧ 打开（开关）
+=zh
+核心表達：⟦đã ~ lại càng thêm ~⟧ / ⟦hết ~ đến ~⟧
+⟦đã + A + lại càng (thêm) + A + (hơn nữa)⟧ 意為「本來就A，又更加A」，兩處A使用相同的形容詞。
+❶ Ⓐ ⟦Chị cắt tóc rồi à? Trông chị đã trẻ lại càng thêm trẻ đấy!⟧ —— 姊姊剪頭髮了？妳本來就顯年輕，現在更年輕了！ Ⓑ ⟦Thế à? Cảm ơn em.⟧ —— 是嗎？謝謝妳。
+❷ ⟦Sau khi đồng nghiệp nghỉ việc, anh ấy đã vất vả lại càng vất vả hơn.⟧ —— 同事離職以後，他本來就辛苦，現在更辛苦了。
+⟦hết + A + đến + B⟧ 表示「兩種事物、行為、狀態等的連續」，意為「做完A接著又做B」。A和B的位置可以放名詞、動詞或形容詞。
+❶ ⟦Tuần sau thi rất nhiều môn nên tôi phải học hết môn này đến môn kia.⟧ —— 下週要考很多科目，所以我得讀完這科接著讀那科。
+❷ ⟦Anh ấy hết rửa bát lại đến lau nhà.⟧ —— 他洗完碗接著就拖地。
+❸ ⟦Cái đèn này đẹp lắm. Bật điện thì đèn hết đỏ đến xanh, đổi màu liên tục đấy.⟧ —— 這盞燈很漂亮。一開燈就一下紅一下藍，不停地變色呢。
+句型練習3 —— 找出相應內容連線，然後仿照範例對話：① ⟦thức ăn đắt⟧（食物貴）→ Ⓒ ⟦giá nguyên liệu tăng lên⟧（原料價格上漲）| ② ⟦trời mưa nhiều⟧（雨下得多）→ Ⓐ ⟦có bão⟧（有颱風）| ③ ⟦trông chị ấy đẹp⟧（她看起來漂亮）→ Ⓑ ⟦mới có bạn trai⟧（剛交了男朋友）
+範例（②–Ⓐ）：Ⓐ ⟦Dạo này trời mưa nhiều quá nhỉ?⟧ —— 最近雨下得真多啊？ Ⓑ ⟦Vì có bão nên trời đã mưa nhiều lại càng mưa nhiều hơn nữa.⟧ —— 因為有颱風，本來雨就多，現在下得更多了。
+句型練習4 —— 仿照範例用所給表達對話。
+範例（⟦phải làm nhiều việc⟧ 要做很多事）：Ⓐ ⟦Cuối tuần trước em có nhiều việc lắm à?⟧ —— 上週末妳事情很多嗎？ Ⓑ ⟦Vâng, nhiều lắm ạ. Em phải làm hết việc này đến việc khác.⟧ —— 是的，很多。我得做完一件又做一件。
+❶（⟦đọc nhiều sách⟧ 讀很多書）Ⓐ ⟦Bình thường khi rỗi, cậu làm gì?⟧ —— 平常有空的時候你做什麼？ Ⓑ ⟦Tớ thường đọc sách. Cứ đọc hết cuốn này đến cuốn khác cả ngày.⟧ —— 我通常看書。一整天看完一本接著看另一本。
+❷（⟦nấu nhiều món⟧ 煮很多菜）Ⓐ ⟦Sao em nấu hết món này đến món khác như vậy?⟧ —— 妳怎麼煮完一道菜又煮一道菜？ Ⓑ ⟦Tại vì tối nay em sẽ mở tiệc sinh nhật cho con gái. Nhưng em vẫn chưa biết là nấu thế này thì đã đủ hay chưa.⟧ —— 因為今晚我要幫女兒辦生日派對。可是我還不知道煮這麼多夠不夠。
+新單字：⟦lau⟧ 擦 | ⟦bật⟧ 打開（開關）
+=en
+Key expressions: ⟦đã ~ lại càng thêm ~⟧ / ⟦hết ~ đến ~⟧
+⟦đã + A + lại càng (thêm) + A + (hơn nữa)⟧ means "already A, and now even more A"; the same adjective is used in both A positions.
+❶ Ⓐ ⟦Chị cắt tóc rồi à? Trông chị đã trẻ lại càng thêm trẻ đấy!⟧ — Did you get a haircut? You already looked young, and now you look even younger! Ⓑ ⟦Thế à? Cảm ơn em.⟧ — Really? Thank you.
+❷ ⟦Sau khi đồng nghiệp nghỉ việc, anh ấy đã vất vả lại càng vất vả hơn.⟧ — Since his colleague quit, his already hard job has become even harder.
+⟦hết + A + đến + B⟧ expresses a succession of two things, actions or states: "finish A and then go straight on to B". Nouns, verbs or adjectives can fill the A and B slots.
+❶ ⟦Tuần sau thi rất nhiều môn nên tôi phải học hết môn này đến môn kia.⟧ — I have exams in lots of subjects next week, so I have to study one subject after another.
+❷ ⟦Anh ấy hết rửa bát lại đến lau nhà.⟧ — As soon as he'd finished the washing-up, he mopped the floor.
+❸ ⟦Cái đèn này đẹp lắm. Bật điện thì đèn hết đỏ đến xanh, đổi màu liên tục đấy.⟧ — This lamp is really pretty. When you switch it on, it goes red, then blue, changing colour all the time.
+Pattern practice 3 — match the parts, then talk as in the model: ① ⟦thức ăn đắt⟧ (food is expensive) → Ⓒ ⟦giá nguyên liệu tăng lên⟧ (ingredient prices have risen) | ② ⟦trời mưa nhiều⟧ (it rains a lot) → Ⓐ ⟦có bão⟧ (there's a typhoon) | ③ ⟦trông chị ấy đẹp⟧ (she looks beautiful) → Ⓑ ⟦mới có bạn trai⟧ (has a new boyfriend)
+Model (②–Ⓐ): Ⓐ ⟦Dạo này trời mưa nhiều quá nhỉ?⟧ — It's been raining so much lately, hasn't it? Ⓑ ⟦Vì có bão nên trời đã mưa nhiều lại càng mưa nhiều hơn nữa.⟧ — Because of the typhoon, it was already rainy and now it's raining even more.
+Pattern practice 4 — talk as in the model using the given expression.
+Model (⟦phải làm nhiều việc⟧ have a lot to do): Ⓐ ⟦Cuối tuần trước em có nhiều việc lắm à?⟧ — Did you have a lot to do last weekend? Ⓑ ⟦Vâng, nhiều lắm ạ. Em phải làm hết việc này đến việc khác.⟧ — Yes, loads. I had to do one thing after another.
+❶ (⟦đọc nhiều sách⟧ read many books) Ⓐ ⟦Bình thường khi rỗi, cậu làm gì?⟧ — What do you usually do in your free time? Ⓑ ⟦Tớ thường đọc sách. Cứ đọc hết cuốn này đến cuốn khác cả ngày.⟧ — I usually read. I read one book after another all day.
+❷ (⟦nấu nhiều món⟧ cook many dishes) Ⓐ ⟦Sao em nấu hết món này đến món khác như vậy?⟧ — Why are you cooking one dish after another like that? Ⓑ ⟦Tại vì tối nay em sẽ mở tiệc sinh nhật cho con gái. Nhưng em vẫn chưa biết là nấu thế này thì đã đủ hay chưa.⟧ — Because I'm throwing a birthday party for my daughter tonight. But I still don't know whether this will be enough.
+New words: ⟦lau⟧ to wipe, mop | ⟦bật⟧ to switch on
+=fr
+Expressions clés : ⟦đã ~ lại càng thêm ~⟧ / ⟦hết ~ đến ~⟧
+⟦đã + A + lại càng (thêm) + A + (hơn nữa)⟧ signifie « déjà A, et encore plus A » ; le même adjectif figure aux deux places de A.
+❶ Ⓐ ⟦Chị cắt tóc rồi à? Trông chị đã trẻ lại càng thêm trẻ đấy!⟧ — Tu t'es fait couper les cheveux ? Tu faisais déjà jeune, et maintenant encore plus ! Ⓑ ⟦Thế à? Cảm ơn em.⟧ — Ah bon ? Merci.
+❷ ⟦Sau khi đồng nghiệp nghỉ việc, anh ấy đã vất vả lại càng vất vả hơn.⟧ — Depuis que son collègue a démissionné, son travail déjà pénible l'est devenu encore plus.
+⟦hết + A + đến + B⟧ exprime l'enchaînement de deux choses, actions ou états : « finir A puis enchaîner sur B ». A et B peuvent être des noms, des verbes ou des adjectifs.
+❶ ⟦Tuần sau thi rất nhiều môn nên tôi phải học hết môn này đến môn kia.⟧ — La semaine prochaine j'ai des examens dans beaucoup de matières, donc je dois réviser une matière après l'autre.
+❷ ⟦Anh ấy hết rửa bát lại đến lau nhà.⟧ — Après avoir fait la vaisselle, il a aussitôt passé la serpillière.
+❸ ⟦Cái đèn này đẹp lắm. Bật điện thì đèn hết đỏ đến xanh, đổi màu liên tục đấy.⟧ — Cette lampe est très jolie. Quand on l'allume, elle passe du rouge au bleu et change sans cesse de couleur.
+Exercice 3 — reliez les éléments, puis dialoguez comme dans le modèle : ① ⟦thức ăn đắt⟧ (la nourriture est chère) → Ⓒ ⟦giá nguyên liệu tăng lên⟧ (le prix des matières premières a augmenté) | ② ⟦trời mưa nhiều⟧ (il pleut beaucoup) → Ⓐ ⟦có bão⟧ (il y a un typhon) | ③ ⟦trông chị ấy đẹp⟧ (elle est belle) → Ⓑ ⟦mới có bạn trai⟧ (elle a un nouveau petit ami)
+Modèle (②–Ⓐ) : Ⓐ ⟦Dạo này trời mưa nhiều quá nhỉ?⟧ — Il pleut beaucoup ces temps-ci, non ? Ⓑ ⟦Vì có bão nên trời đã mưa nhiều lại càng mưa nhiều hơn nữa.⟧ — À cause du typhon, il pleuvait déjà beaucoup et maintenant il pleut encore plus.
+Exercice 4 — dialoguez comme dans le modèle avec l'expression donnée.
+Modèle (⟦phải làm nhiều việc⟧ avoir beaucoup à faire) : Ⓐ ⟦Cuối tuần trước em có nhiều việc lắm à?⟧ — Tu as eu beaucoup à faire le week-end dernier ? Ⓑ ⟦Vâng, nhiều lắm ạ. Em phải làm hết việc này đến việc khác.⟧ — Oui, énormément. J'ai dû enchaîner une tâche après l'autre.
+❶ (⟦đọc nhiều sách⟧ lire beaucoup de livres) Ⓐ ⟦Bình thường khi rỗi, cậu làm gì?⟧ — Que fais-tu d'habitude pendant ton temps libre ? Ⓑ ⟦Tớ thường đọc sách. Cứ đọc hết cuốn này đến cuốn khác cả ngày.⟧ — Je lis, en général. Je lis un livre après l'autre toute la journée.
+❷ (⟦nấu nhiều món⟧ cuisiner beaucoup de plats) Ⓐ ⟦Sao em nấu hết món này đến món khác như vậy?⟧ — Pourquoi enchaînes-tu les plats comme ça ? Ⓑ ⟦Tại vì tối nay em sẽ mở tiệc sinh nhật cho con gái. Nhưng em vẫn chưa biết là nấu thế này thì đã đủ hay chưa.⟧ — Parce que ce soir j'organise l'anniversaire de ma fille. Mais je ne sais toujours pas si ce sera suffisant.
+Nouveaux mots : ⟦lau⟧ essuyer, nettoyer | ⟦bật⟧ allumer
+=de
+Schlüsselausdrücke: ⟦đã ~ lại càng thêm ~⟧ / ⟦hết ~ đến ~⟧
+⟦đã + A + lại càng (thêm) + A + (hơn nữa)⟧ bedeutet „schon A, und jetzt noch mehr A“; an beiden A-Stellen steht dasselbe Adjektiv.
+❶ Ⓐ ⟦Chị cắt tóc rồi à? Trông chị đã trẻ lại càng thêm trẻ đấy!⟧ — Warst du beim Friseur? Du sahst schon jung aus, jetzt noch jünger! Ⓑ ⟦Thế à? Cảm ơn em.⟧ — Wirklich? Danke.
+❷ ⟦Sau khi đồng nghiệp nghỉ việc, anh ấy đã vất vả lại càng vất vả hơn.⟧ — Seit sein Kollege gekündigt hat, ist seine ohnehin anstrengende Arbeit noch anstrengender geworden.
+⟦hết + A + đến + B⟧ drückt die Abfolge zweier Dinge, Handlungen oder Zustände aus: „A fertig machen und gleich danach B“. An den Stellen A und B können Nomen, Verben oder Adjektive stehen.
+❶ ⟦Tuần sau thi rất nhiều môn nên tôi phải học hết môn này đến môn kia.⟧ — Nächste Woche habe ich Prüfungen in vielen Fächern, also muss ich ein Fach nach dem anderen lernen.
+❷ ⟦Anh ấy hết rửa bát lại đến lau nhà.⟧ — Kaum hatte er abgewaschen, wischte er den Boden.
+❸ ⟦Cái đèn này đẹp lắm. Bật điện thì đèn hết đỏ đến xanh, đổi màu liên tục đấy.⟧ — Diese Lampe ist sehr schön. Wenn man sie einschaltet, wird sie mal rot, mal blau und wechselt ständig die Farbe.
+Übung 3 — passende Teile verbinden, dann wie im Muster sprechen: ① ⟦thức ăn đắt⟧ (Essen ist teuer) → Ⓒ ⟦giá nguyên liệu tăng lên⟧ (Rohstoffpreise sind gestiegen) | ② ⟦trời mưa nhiều⟧ (es regnet viel) → Ⓐ ⟦có bão⟧ (es gibt einen Taifun) | ③ ⟦trông chị ấy đẹp⟧ (sie sieht schön aus) → Ⓑ ⟦mới có bạn trai⟧ (hat einen neuen Freund)
+Muster (②–Ⓐ): Ⓐ ⟦Dạo này trời mưa nhiều quá nhỉ?⟧ — In letzter Zeit regnet es ganz schön viel, oder? Ⓑ ⟦Vì có bão nên trời đã mưa nhiều lại càng mưa nhiều hơn nữa.⟧ — Wegen des Taifuns hat es schon viel geregnet, und jetzt regnet es noch mehr.
+Übung 4 — wie im Muster mit dem vorgegebenen Ausdruck sprechen.
+Muster (⟦phải làm nhiều việc⟧ viel zu tun haben): Ⓐ ⟦Cuối tuần trước em có nhiều việc lắm à?⟧ — Hattest du letztes Wochenende viel zu tun? Ⓑ ⟦Vâng, nhiều lắm ạ. Em phải làm hết việc này đến việc khác.⟧ — Ja, sehr viel. Ich musste eine Sache nach der anderen erledigen.
+❶ (⟦đọc nhiều sách⟧ viele Bücher lesen) Ⓐ ⟦Bình thường khi rỗi, cậu làm gì?⟧ — Was machst du normalerweise in deiner Freizeit? Ⓑ ⟦Tớ thường đọc sách. Cứ đọc hết cuốn này đến cuốn khác cả ngày.⟧ — Ich lese meistens. Den ganzen Tag ein Buch nach dem anderen.
+❷ (⟦nấu nhiều món⟧ viele Gerichte kochen) Ⓐ ⟦Sao em nấu hết món này đến món khác như vậy?⟧ — Warum kochst du ein Gericht nach dem anderen? Ⓑ ⟦Tại vì tối nay em sẽ mở tiệc sinh nhật cho con gái. Nhưng em vẫn chưa biết là nấu thế này thì đã đủ hay chưa.⟧ — Weil ich heute Abend eine Geburtstagsfeier für meine Tochter gebe. Aber ich weiß immer noch nicht, ob das reicht.
+Neue Wörter: ⟦lau⟧ wischen, putzen | ⟦bật⟧ einschalten
+=hu
+Kulcskifejezések: ⟦đã ~ lại càng thêm ~⟧ / ⟦hết ~ đến ~⟧
+A ⟦đã + A + lại càng (thêm) + A + (hơn nữa)⟧ jelentése „már eleve A, és még inkább A”; mindkét A helyén ugyanaz a melléknév áll.
+❶ Ⓐ ⟦Chị cắt tóc rồi à? Trông chị đã trẻ lại càng thêm trẻ đấy!⟧ — Levágattad a hajad? Eddig is fiatalnak látszottál, most még fiatalabbnak! Ⓑ ⟦Thế à? Cảm ơn em.⟧ — Tényleg? Köszönöm.
+❷ ⟦Sau khi đồng nghiệp nghỉ việc, anh ấy đã vất vả lại càng vất vả hơn.⟧ — Mióta a kollégája felmondott, az eddig is nehéz munkája még nehezebb lett.
+A ⟦hết + A + đến + B⟧ két dolog, cselekvés vagy állapot egymásutániságát fejezi ki: „befejezni A-t, és rögtön utána B”. Az A és B helyén főnév, ige vagy melléknév állhat.
+❶ ⟦Tuần sau thi rất nhiều môn nên tôi phải học hết môn này đến môn kia.⟧ — Jövő héten sok tárgyból vizsgázom, ezért egyik tárgyat a másik után kell tanulnom.
+❷ ⟦Anh ấy hết rửa bát lại đến lau nhà.⟧ — Miután elmosogatott, rögtön felmosta a padlót.
+❸ ⟦Cái đèn này đẹp lắm. Bật điện thì đèn hết đỏ đến xanh, đổi màu liên tục đấy.⟧ — Ez a lámpa nagyon szép. Ha felkapcsolod, hol piros, hol kék, folyton változtatja a színét.
+3. gyakorlat — kösse össze a megfelelő részeket, majd beszélgessen a minta szerint: ① ⟦thức ăn đắt⟧ (drága az étel) → Ⓒ ⟦giá nguyên liệu tăng lên⟧ (nőttek az alapanyagárak) | ② ⟦trời mưa nhiều⟧ (sokat esik) → Ⓐ ⟦có bão⟧ (tájfun van) | ③ ⟦trông chị ấy đẹp⟧ (szépnek látszik) → Ⓑ ⟦mới có bạn trai⟧ (új barátja van)
+Minta (②–Ⓐ): Ⓐ ⟦Dạo này trời mưa nhiều quá nhỉ?⟧ — Mostanában nagyon sokat esik, ugye? Ⓑ ⟦Vì có bão nên trời đã mưa nhiều lại càng mưa nhiều hơn nữa.⟧ — A tájfun miatt eddig is sokat esett, most pedig még többet.
+4. gyakorlat — beszélgessen a minta szerint a megadott kifejezéssel.
+Minta (⟦phải làm nhiều việc⟧ sok dolga van): Ⓐ ⟦Cuối tuần trước em có nhiều việc lắm à?⟧ — Sok dolgod volt a múlt hétvégén? Ⓑ ⟦Vâng, nhiều lắm ạ. Em phải làm hết việc này đến việc khác.⟧ — Igen, nagyon sok. Egyik dolgot a másik után kellett csinálnom.
+❶ (⟦đọc nhiều sách⟧ sok könyvet olvasni) Ⓐ ⟦Bình thường khi rỗi, cậu làm gì?⟧ — Mit szoktál csinálni szabadidődben? Ⓑ ⟦Tớ thường đọc sách. Cứ đọc hết cuốn này đến cuốn khác cả ngày.⟧ — Általában olvasok. Egész nap egyik könyvet a másik után.
+❷ (⟦nấu nhiều món⟧ sok ételt főzni) Ⓐ ⟦Sao em nấu hết món này đến món khác như vậy?⟧ — Miért főzöl egyik ételt a másik után? Ⓑ ⟦Tại vì tối nay em sẽ mở tiệc sinh nhật cho con gái. Nhưng em vẫn chưa biết là nấu thế này thì đã đủ hay chưa.⟧ — Mert ma este születésnapi bulit tartok a lányomnak. De még mindig nem tudom, elég lesz-e ennyi.
+Új szavak: ⟦lau⟧ törölni, felmosni | ⟦bật⟧ bekapcsolni, felkapcsolni
+=id
+Ungkapan kunci: ⟦đã ~ lại càng thêm ~⟧ / ⟦hết ~ đến ~⟧
+⟦đã + A + lại càng (thêm) + A + (hơn nữa)⟧ berarti "sudah A, ditambah lagi makin A"; pada kedua posisi A dipakai adjektiva yang sama.
+❶ Ⓐ ⟦Chị cắt tóc rồi à? Trông chị đã trẻ lại càng thêm trẻ đấy!⟧ — Kakak potong rambut, ya? Kakak sudah kelihatan muda, sekarang makin muda! Ⓑ ⟦Thế à? Cảm ơn em.⟧ — Oh ya? Terima kasih.
+❷ ⟦Sau khi đồng nghiệp nghỉ việc, anh ấy đã vất vả lại càng vất vả hơn.⟧ — Sejak rekan kerjanya berhenti, dia yang sudah repot jadi makin repot.
+⟦hết + A + đến + B⟧ menyatakan urutan dua benda, tindakan, atau keadaan: "selesai A lalu langsung B". Posisi A dan B dapat diisi nomina, verba, atau adjektiva.
+❶ ⟦Tuần sau thi rất nhiều môn nên tôi phải học hết môn này đến môn kia.⟧ — Minggu depan ujian banyak mata pelajaran, jadi saya harus belajar satu pelajaran lalu pelajaran lainnya.
+❷ ⟦Anh ấy hết rửa bát lại đến lau nhà.⟧ — Selesai mencuci piring, dia langsung mengepel lantai.
+❸ ⟦Cái đèn này đẹp lắm. Bật điện thì đèn hết đỏ đến xanh, đổi màu liên tục đấy.⟧ — Lampu ini cantik sekali. Kalau dinyalakan, sebentar merah sebentar biru, terus berganti warna.
+Latihan pola 3 — hubungkan bagian yang cocok, lalu bercakaplah seperti contoh: ① ⟦thức ăn đắt⟧ (makanan mahal) → Ⓒ ⟦giá nguyên liệu tăng lên⟧ (harga bahan baku naik) | ② ⟦trời mưa nhiều⟧ (sering hujan) → Ⓐ ⟦có bão⟧ (ada badai) | ③ ⟦trông chị ấy đẹp⟧ (dia kelihatan cantik) → Ⓑ ⟦mới có bạn trai⟧ (baru punya pacar)
+Contoh (②–Ⓐ): Ⓐ ⟦Dạo này trời mưa nhiều quá nhỉ?⟧ — Akhir-akhir ini sering sekali hujan, ya? Ⓑ ⟦Vì có bão nên trời đã mưa nhiều lại càng mưa nhiều hơn nữa.⟧ — Karena ada badai, yang sudah sering hujan jadi makin sering hujan.
+Latihan pola 4 — bercakaplah seperti contoh dengan ungkapan yang diberikan.
+Contoh (⟦phải làm nhiều việc⟧ harus mengerjakan banyak hal): Ⓐ ⟦Cuối tuần trước em có nhiều việc lắm à?⟧ — Akhir pekan lalu kamu banyak kerjaan, ya? Ⓑ ⟦Vâng, nhiều lắm ạ. Em phải làm hết việc này đến việc khác.⟧ — Iya, banyak sekali. Saya harus mengerjakan satu hal lalu hal lain.
+❶ (⟦đọc nhiều sách⟧ membaca banyak buku) Ⓐ ⟦Bình thường khi rỗi, cậu làm gì?⟧ — Biasanya kalau senggang kamu ngapain? Ⓑ ⟦Tớ thường đọc sách. Cứ đọc hết cuốn này đến cuốn khác cả ngày.⟧ — Aku biasanya membaca. Seharian membaca satu buku lalu buku lainnya.
+❷ (⟦nấu nhiều món⟧ memasak banyak hidangan) Ⓐ ⟦Sao em nấu hết món này đến món khác như vậy?⟧ — Kenapa kamu memasak satu hidangan lalu hidangan lain begitu? Ⓑ ⟦Tại vì tối nay em sẽ mở tiệc sinh nhật cho con gái. Nhưng em vẫn chưa biết là nấu thế này thì đã đủ hay chưa.⟧ — Karena malam ini saya mengadakan pesta ulang tahun untuk putri saya. Tapi saya masih belum tahu masakan sebanyak ini sudah cukup atau belum.
+Kosakata baru: ⟦lau⟧ mengelap, mengepel | ⟦bật⟧ menyalakan
+=ja
+核心表現：⟦đã ~ lại càng thêm ~⟧ / ⟦hết ~ đến ~⟧
+⟦đã + A + lại càng (thêm) + A + (hơn nữa)⟧ は「～なのに、さらにいっそう～だ」という意味で、二か所のAには同じ形容詞を使います。
+❶ Ⓐ ⟦Chị cắt tóc rồi à? Trông chị đã trẻ lại càng thêm trẻ đấy!⟧ — 髪を切ったんですか。（もともと）若く見えるのに、さらに若く見えますね！ Ⓑ ⟦Thế à? Cảm ơn em.⟧ — そう？ありがとう。
+❷ ⟦Sau khi đồng nghiệp nghỉ việc, anh ấy đã vất vả lại càng vất vả hơn.⟧ — 同僚が仕事を辞めてから、彼は（もともと）大変だったのに、さらに大変になった。
+⟦hết + A + đến + B⟧ は「二つの事物・行動・状態などの連続」を表す言葉で、「Aをすべて～してから、続けてBを～する」という意味です。AとBには名詞・動詞・形容詞が入ります。
+❶ ⟦Tuần sau thi rất nhiều môn nên tôi phải học hết môn này đến môn kia.⟧ — 来週はとても多くの科目の試験があるので、この科目を勉強し終えたら（すぐに）あの科目を勉強しなければならない。
+❷ ⟦Anh ấy hết rửa bát lại đến lau nhà.⟧ — 彼は皿洗いを終えると（すぐに）床を拭いた。
+❸ ⟦Cái đèn này đẹp lắm. Bật điện thì đèn hết đỏ đến xanh, đổi màu liên tục đấy.⟧ — このライト、すごくきれい。電気をつけると赤くなったり青くなったり、ずっと色が変わるんだよ。
+文型練習3 — 適切な内容を結び、例のように会話してみましょう：① ⟦thức ăn đắt⟧（食べ物が高い）→ Ⓒ ⟦giá nguyên liệu tăng lên⟧（原料価格が上がった）| ② ⟦trời mưa nhiều⟧（雨が多い）→ Ⓐ ⟦có bão⟧（台風が来た）| ③ ⟦trông chị ấy đẹp⟧（彼女がきれいに見える）→ Ⓑ ⟦mới có bạn trai⟧（彼氏ができたばかり）
+例（②–Ⓐ）：Ⓐ ⟦Dạo này trời mưa nhiều quá nhỉ?⟧ — 最近、雨がすごく多いですね。 Ⓑ ⟦Vì có bão nên trời đã mưa nhiều lại càng mưa nhiều hơn nữa.⟧ — 台風のせいで、もともと雨が多いのに、さらに多くなりました。
+文型練習4 — 例のように与えられた表現を使って会話してみましょう。
+例（⟦phải làm nhiều việc⟧ たくさん仕事をしなければならない）：Ⓐ ⟦Cuối tuần trước em có nhiều việc lắm à?⟧ — 先週末は用事がたくさんあったの？ Ⓑ ⟦Vâng, nhiều lắm ạ. Em phải làm hết việc này đến việc khác.⟧ — はい、とても多かったです。次から次へと用事を片付けなければなりませんでした。
+❶（⟦đọc nhiều sách⟧ 本をたくさん読む）Ⓐ ⟦Bình thường khi rỗi, cậu làm gì?⟧ — ふだん暇なとき何してる？ Ⓑ ⟦Tớ thường đọc sách. Cứ đọc hết cuốn này đến cuốn khác cả ngày.⟧ — たいてい本を読んでる。一日中、次から次へと読むんだ。
+❷（⟦nấu nhiều món⟧ 料理をたくさん作る）Ⓐ ⟦Sao em nấu hết món này đến món khác như vậy?⟧ — どうしてそんなに次から次へと料理を作っているの？ Ⓑ ⟦Tại vì tối nay em sẽ mở tiệc sinh nhật cho con gái. Nhưng em vẫn chưa biết là nấu thế này thì đã đủ hay chưa.⟧ — 今夜、娘の誕生日パーティーを開くからです。でも、これで足りるかどうかまだわかりません。
+新出単語：⟦lau⟧ 拭く | ⟦bật⟧ （電気を）つける
+=pl
+Kluczowe wyrażenia: ⟦đã ~ lại càng thêm ~⟧ / ⟦hết ~ đến ~⟧
+⟦đã + A + lại càng (thêm) + A + (hơn nữa)⟧ znaczy „już i tak A, a teraz jeszcze bardziej A”; w obu miejscach A stoi ten sam przymiotnik.
+❶ Ⓐ ⟦Chị cắt tóc rồi à? Trông chị đã trẻ lại càng thêm trẻ đấy!⟧ — Ścięłaś włosy? Już i tak wyglądałaś młodo, a teraz jeszcze młodziej! Ⓑ ⟦Thế à? Cảm ơn em.⟧ — Naprawdę? Dziękuję.
+❷ ⟦Sau khi đồng nghiệp nghỉ việc, anh ấy đã vất vả lại càng vất vả hơn.⟧ — Odkąd kolega odszedł z pracy, jego i tak ciężka praca stała się jeszcze cięższa.
+⟦hết + A + đến + B⟧ wyraża następstwo dwóch rzeczy, czynności lub stanów: „skończyć A i zaraz potem B”. Na miejscu A i B może stać rzeczownik, czasownik lub przymiotnik.
+❶ ⟦Tuần sau thi rất nhiều môn nên tôi phải học hết môn này đến môn kia.⟧ — W przyszłym tygodniu mam egzaminy z wielu przedmiotów, więc muszę uczyć się jednego przedmiotu po drugim.
+❷ ⟦Anh ấy hết rửa bát lại đến lau nhà.⟧ — Skończył zmywać naczynia i od razu umył podłogę.
+❸ ⟦Cái đèn này đẹp lắm. Bật điện thì đèn hết đỏ đến xanh, đổi màu liên tục đấy.⟧ — Ta lampa jest bardzo ładna. Po włączeniu robi się to czerwona, to niebieska i ciągle zmienia kolory.
+Ćwiczenie 3 — połącz pasujące elementy i rozmawiaj jak we wzorze: ① ⟦thức ăn đắt⟧ (jedzenie jest drogie) → Ⓒ ⟦giá nguyên liệu tăng lên⟧ (wzrosły ceny surowców) | ② ⟦trời mưa nhiều⟧ (dużo pada) → Ⓐ ⟦có bão⟧ (jest tajfun) | ③ ⟦trông chị ấy đẹp⟧ (ona pięknie wygląda) → Ⓑ ⟦mới có bạn trai⟧ (ma nowego chłopaka)
+Wzór (②–Ⓐ): Ⓐ ⟦Dạo này trời mưa nhiều quá nhỉ?⟧ — Ostatnio strasznie dużo pada, prawda? Ⓑ ⟦Vì có bão nên trời đã mưa nhiều lại càng mưa nhiều hơn nữa.⟧ — Przez tajfun i tak dużo padało, a teraz pada jeszcze więcej.
+Ćwiczenie 4 — rozmawiaj jak we wzorze, używając podanego wyrażenia.
+Wzór (⟦phải làm nhiều việc⟧ mieć dużo do zrobienia): Ⓐ ⟦Cuối tuần trước em có nhiều việc lắm à?⟧ — Miałaś dużo do zrobienia w zeszły weekend? Ⓑ ⟦Vâng, nhiều lắm ạ. Em phải làm hết việc này đến việc khác.⟧ — Tak, bardzo dużo. Musiałam robić jedną rzecz po drugiej.
+❶ (⟦đọc nhiều sách⟧ czytać dużo książek) Ⓐ ⟦Bình thường khi rỗi, cậu làm gì?⟧ — Co zwykle robisz w wolnym czasie? Ⓑ ⟦Tớ thường đọc sách. Cứ đọc hết cuốn này đến cuốn khác cả ngày.⟧ — Zwykle czytam. Cały dzień jedną książkę po drugiej.
+❷ (⟦nấu nhiều món⟧ gotować dużo potraw) Ⓐ ⟦Sao em nấu hết món này đến món khác như vậy?⟧ — Czemu gotujesz jedno danie po drugim? Ⓑ ⟦Tại vì tối nay em sẽ mở tiệc sinh nhật cho con gái. Nhưng em vẫn chưa biết là nấu thế này thì đã đủ hay chưa.⟧ — Bo dziś wieczorem urządzam córce przyjęcie urodzinowe. Ale wciąż nie wiem, czy tyle wystarczy.
+Nowe słówka: ⟦lau⟧ wycierać, myć (podłogę) | ⟦bật⟧ włączyć

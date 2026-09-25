@@ -1,0 +1,124 @@
+@@ pdf-grammar-f53d9eb3a9bcce79#0
+=cs
+Gramatický výklad
+⟦hóa ra⟧: „tak to je ~, ukázalo se, že ~“ – vyjadřuje, že to, co následuje, mluvčí právě nově zjistil; je to poněkud nečekané a v rozporu s tím, co si předtím myslel.
+⟦Em cứ tưởng đám cưới tổ chức buổi trưa, hóa ra là buổi chiều.⟧ → Pořád jsem si myslel, že svatba je v poledne, a ono je to odpoledne. (nově zjištěno: je odpoledne · předchozí představa: svatba v poledne)
+⟦Tôi nghĩ đám cưới thì phải ăn cơm, hóa ra có thể chỉ là uống nước.⟧ → Myslel jsem, že na svatbě se musí jíst, a ono se může jen pít čaj. (nově zjištěno: jen se pije · předchozí představa: musí se jíst)
+⟦Tôi nghĩ ai có giấy mời mới đến nghe nói chuyện, hóa ra ai đến nghe cũng được.⟧ → Myslel jsem, že přednášku si můžou přijít poslechnout jen ti s pozvánkou, a ono může přijít kdokoli. (nově zjištěno: může přijít kdokoli · předchozí představa: jen s pozvánkou)
+⟦Nghe nói⟧: „prý, slyšel jsem, že“ – předává informaci z doslechu, která nemusí být přesná.
+⟦Nghe nói chị ấy làm nghề dạy học.⟧ → Prý pracuje jako učitelka. · ⟦Nghe nói hôm nay anh Park cũng đi dự đám cưới.⟧ → Prý dnes jde na svatbu i Park. · ⟦Nghe nói ông ấy nói tiếng Việt rất giỏi.⟧ → Prý mluví vietnamsky velmi dobře. · ⟦Nghe nói chiều mai chúng ta được nghỉ học.⟧ → Prý máme zítra odpoledne volno.
+=zh_cn
+语法解说
+⟦hóa ra⟧：意为“原来……啊”，表示句子后半部分所说的事是刚刚新认识到的，有些突然，且与之前所想的情况相反。
+⟦Em cứ tưởng đám cưới tổ chức buổi trưa, hóa ra là buổi chiều.⟧ → 我一直以为婚礼在中午举行，原来是下午啊。（新认识到：是下午 · 与之前所想相反：婚礼在中午） · ⟦Tôi nghĩ đám cưới thì phải ăn cơm, hóa ra có thể chỉ là uống nước.⟧ → 我以为婚礼一定要吃饭，原来也可以只喝茶。（新认识到：只喝茶 · 之前所想：一定要吃饭） · ⟦Tôi nghĩ ai có giấy mời mới đến nghe nói chuyện, hóa ra ai đến nghe cũng được.⟧ → 我以为有请柬才能去听讲座，原来谁都可以去听。（新认识到：谁都可以去 · 之前所想：有请柬才能去）
+⟦Nghe nói⟧：意为“听说”，用于转述不一定准确的传闻信息。
+⟦Nghe nói chị ấy làm nghề dạy học.⟧ → 听说她是当老师的。 · ⟦Nghe nói hôm nay anh Park cũng đi dự đám cưới.⟧ → 听说今天朴也去参加婚礼。 · ⟦Nghe nói ông ấy nói tiếng Việt rất giỏi.⟧ → 听说他越南语说得很好。 · ⟦Nghe nói chiều mai chúng ta được nghỉ học.⟧ → 听说明天下午我们不用上课。
+=zh
+文法解說
+⟦hóa ra⟧：意為「原來……啊」，表示句子後半部分所說的事是剛剛新認識到的，有些突然，且與之前所想的情況相反。
+⟦Em cứ tưởng đám cưới tổ chức buổi trưa, hóa ra là buổi chiều.⟧ → 我一直以為婚禮在中午舉行，原來是下午啊。（新認識到：是下午 · 與之前所想相反：婚禮在中午） · ⟦Tôi nghĩ đám cưới thì phải ăn cơm, hóa ra có thể chỉ là uống nước.⟧ → 我以為婚禮一定要吃飯，原來也可以只喝茶。（新認識到：只喝茶 · 之前所想：一定要吃飯） · ⟦Tôi nghĩ ai có giấy mời mới đến nghe nói chuyện, hóa ra ai đến nghe cũng được.⟧ → 我以為有邀請函才能去聽講座，原來誰都可以去聽。（新認識到：誰都可以去 · 之前所想：有邀請函才能去）
+⟦Nghe nói⟧：意為「聽說」，用於轉述不一定準確的傳聞資訊。
+⟦Nghe nói chị ấy làm nghề dạy học.⟧ → 聽說她是當老師的。 · ⟦Nghe nói hôm nay anh Park cũng đi dự đám cưới.⟧ → 聽說今天朴也去參加婚禮。 · ⟦Nghe nói ông ấy nói tiếng Việt rất giỏi.⟧ → 聽說他越南語說得很好。 · ⟦Nghe nói chiều mai chúng ta được nghỉ học.⟧ → 聽說明天下午我們不用上課。
+=en
+Grammar notes
+⟦hóa ra⟧: "so it turns out ~, oh, so ~" – shows that what follows has just been newly realized; it is somewhat sudden and contrary to what one thought before.
+⟦Em cứ tưởng đám cưới tổ chức buổi trưa, hóa ra là buổi chiều.⟧ → I kept thinking the wedding was at noon, but it turns out it's in the afternoon. (new realization: it's in the afternoon · previous belief: at noon) · ⟦Tôi nghĩ đám cưới thì phải ăn cơm, hóa ra có thể chỉ là uống nước.⟧ → I thought you had to have a meal at a wedding, but it turns out you can just have tea. (new realization: just tea · previous belief: a meal is a must) · ⟦Tôi nghĩ ai có giấy mời mới đến nghe nói chuyện, hóa ra ai đến nghe cũng được.⟧ → I thought only people with invitations could come to the talk, but it turns out anyone can. (new realization: anyone can come · previous belief: invitation only)
+⟦Nghe nói⟧: "I hear that, they say" – passes on second-hand information that may not be accurate.
+⟦Nghe nói chị ấy làm nghề dạy học.⟧ → I hear she works as a teacher. · ⟦Nghe nói hôm nay anh Park cũng đi dự đám cưới.⟧ → I hear Park is going to the wedding today too. · ⟦Nghe nói ông ấy nói tiếng Việt rất giỏi.⟧ → They say he speaks Vietnamese very well. · ⟦Nghe nói chiều mai chúng ta được nghỉ học.⟧ → I hear we have tomorrow afternoon off.
+=fr
+Notes de grammaire
+⟦hóa ra⟧ : « en fait ~, ah, c'était donc ~ » – indique que ce qui suit vient d'être découvert ; c'est assez soudain et contraire à ce qu'on pensait auparavant.
+⟦Em cứ tưởng đám cưới tổ chức buổi trưa, hóa ra là buổi chiều.⟧ → Je croyais que le mariage avait lieu à midi, mais en fait c'est l'après-midi. (découverte : c'est l'après-midi · idée antérieure : à midi) · ⟦Tôi nghĩ đám cưới thì phải ăn cơm, hóa ra có thể chỉ là uống nước.⟧ → Je pensais qu'à un mariage il fallait manger, mais en fait on peut juste boire le thé. (découverte : juste boire · idée antérieure : il faut manger) · ⟦Tôi nghĩ ai có giấy mời mới đến nghe nói chuyện, hóa ra ai đến nghe cũng được.⟧ → Je pensais qu'il fallait une invitation pour assister à la conférence, mais en fait tout le monde peut venir. (découverte : tout le monde peut venir · idée antérieure : sur invitation)
+⟦Nghe nói⟧ : « il paraît que, j'ai entendu dire que » – transmet une information rapportée, pas forcément exacte.
+⟦Nghe nói chị ấy làm nghề dạy học.⟧ → Il paraît qu'elle est enseignante. · ⟦Nghe nói hôm nay anh Park cũng đi dự đám cưới.⟧ → Il paraît que Park va aussi au mariage aujourd'hui. · ⟦Nghe nói ông ấy nói tiếng Việt rất giỏi.⟧ → Il paraît qu'il parle très bien vietnamien. · ⟦Nghe nói chiều mai chúng ta được nghỉ học.⟧ → Il paraît qu'on n'a pas cours demain après-midi.
+=de
+Grammatikerläuterungen
+⟦hóa ra⟧: „es stellt sich heraus, dass ~; ach so, ~“ – zeigt, dass man das Folgende gerade erst erkannt hat; es kommt etwas plötzlich und widerspricht dem, was man vorher dachte.
+⟦Em cứ tưởng đám cưới tổ chức buổi trưa, hóa ra là buổi chiều.⟧ → Ich dachte die ganze Zeit, die Hochzeit sei mittags, dabei ist sie ja nachmittags. (neu erkannt: nachmittags · vorherige Annahme: mittags) · ⟦Tôi nghĩ đám cưới thì phải ăn cơm, hóa ra có thể chỉ là uống nước.⟧ → Ich dachte, bei einer Hochzeit muss man essen, dabei kann man auch nur Tee trinken. (neu erkannt: nur Tee · vorherige Annahme: Essen ist Pflicht) · ⟦Tôi nghĩ ai có giấy mời mới đến nghe nói chuyện, hóa ra ai đến nghe cũng được.⟧ → Ich dachte, nur mit Einladung dürfe man zum Vortrag, dabei darf jeder kommen. (neu erkannt: jeder darf kommen · vorherige Annahme: nur mit Einladung)
+⟦Nghe nói⟧: „angeblich, ich habe gehört, dass“ – gibt Informationen vom Hörensagen weiter, die nicht unbedingt genau sind.
+⟦Nghe nói chị ấy làm nghề dạy học.⟧ → Angeblich arbeitet sie als Lehrerin. · ⟦Nghe nói hôm nay anh Park cũng đi dự đám cưới.⟧ → Ich habe gehört, Park geht heute auch zur Hochzeit. · ⟦Nghe nói ông ấy nói tiếng Việt rất giỏi.⟧ → Angeblich spricht er sehr gut Vietnamesisch. · ⟦Nghe nói chiều mai chúng ta được nghỉ học.⟧ → Ich habe gehört, wir haben morgen Nachmittag frei.
+=hu
+Nyelvtani magyarázat
+⟦hóa ra⟧: „kiderült, hogy ~; szóval ~” – azt jelzi, hogy a mondat második felében szereplő dolgot a beszélő épp most ismerte fel; ez kissé váratlan, és ellentmond annak, amit korábban gondolt.
+⟦Em cứ tưởng đám cưới tổ chức buổi trưa, hóa ra là buổi chiều.⟧ → Végig azt hittem, délben lesz az esküvő, de kiderült, hogy délután. (új felismerés: délután · korábbi feltevés: délben) · ⟦Tôi nghĩ đám cưới thì phải ăn cơm, hóa ra có thể chỉ là uống nước.⟧ → Azt hittem, esküvőn enni kell, de kiderült, hogy lehet csak teázni is. (új felismerés: csak teázás · korábbi feltevés: kötelező enni) · ⟦Tôi nghĩ ai có giấy mời mới đến nghe nói chuyện, hóa ra ai đến nghe cũng được.⟧ → Azt hittem, csak meghívóval lehet elmenni az előadásra, de kiderült, hogy bárki mehet. (új felismerés: bárki mehet · korábbi feltevés: csak meghívóval)
+⟦Nghe nói⟧: „állítólag, úgy hallottam” – nem feltétlenül pontos, hallomásból származó információt ad tovább.
+⟦Nghe nói chị ấy làm nghề dạy học.⟧ → Állítólag tanárnő. · ⟦Nghe nói hôm nay anh Park cũng đi dự đám cưới.⟧ → Úgy hallottam, ma Park is megy az esküvőre. · ⟦Nghe nói ông ấy nói tiếng Việt rất giỏi.⟧ → Állítólag nagyon jól beszél vietnámiul. · ⟦Nghe nói chiều mai chúng ta được nghỉ học.⟧ → Úgy hallottam, holnap délután nincs óránk.
+=id
+Penjelasan tata bahasa
+⟦hóa ra⟧: "ternyata ~" – menunjukkan bahwa hal yang disebut di akhir kalimat baru saja disadari; agak mendadak dan berlawanan dengan yang dipikirkan sebelumnya.
+⟦Em cứ tưởng đám cưới tổ chức buổi trưa, hóa ra là buổi chiều.⟧ → Saya kira pernikahannya siang hari, ternyata sore. (baru disadari: sore · anggapan sebelumnya: siang) · ⟦Tôi nghĩ đám cưới thì phải ăn cơm, hóa ra có thể chỉ là uống nước.⟧ → Saya kira di pernikahan harus makan, ternyata bisa hanya minum teh. (baru disadari: hanya minum · anggapan sebelumnya: harus makan) · ⟦Tôi nghĩ ai có giấy mời mới đến nghe nói chuyện, hóa ra ai đến nghe cũng được.⟧ → Saya kira hanya yang punya undangan yang boleh datang mendengarkan ceramah, ternyata siapa pun boleh. (baru disadari: siapa pun boleh · anggapan sebelumnya: harus punya undangan)
+⟦Nghe nói⟧: "katanya, kabarnya" – menyampaikan informasi dari orang lain yang belum tentu akurat.
+⟦Nghe nói chị ấy làm nghề dạy học.⟧ → Katanya dia bekerja sebagai guru. · ⟦Nghe nói hôm nay anh Park cũng đi dự đám cưới.⟧ → Katanya hari ini Park juga menghadiri pernikahan. · ⟦Nghe nói ông ấy nói tiếng Việt rất giỏi.⟧ → Kabarnya beliau sangat fasih berbahasa Vietnam. · ⟦Nghe nói chiều mai chúng ta được nghỉ học.⟧ → Katanya besok sore kita libur.
+=ja
+文法解説
+⟦hóa ra⟧：「～なんだ、～だったのか」という意味で、文の後半で述べる事柄がたった今新たに認識したことであり、いくぶん突然で、以前考えていたことと反対の状況であることを表すために使います。
+⟦Em cứ tưởng đám cưới tổ chức buổi trưa, hóa ra là buổi chiều.⟧ → 結婚式はずっとお昼だと思っていたけど、午後だったんですね。（新たに認識したこと：午後だった · 以前の考え：結婚式はお昼） · ⟦Tôi nghĩ đám cưới thì phải ăn cơm, hóa ra có thể chỉ là uống nước.⟧ → 結婚式では必ずご飯を食べると思っていたけど、お茶だけのこともあるんですね。（新たに認識したこと：お茶だけ · 以前の考え：必ずご飯を食べる） · ⟦Tôi nghĩ ai có giấy mời mới đến nghe nói chuyện, hóa ra ai đến nghe cũng được.⟧ → 招待状がないと講演を聞きに行けないと思っていたけど、誰でも聞きに行けるんですね。（新たに認識したこと：誰でも行ける · 以前の考え：招待状が必要）
+⟦Nghe nói⟧：「聞くところによると、～だそうだ」という意味で、正確ではないが伝え聞いた情報を伝えるために使います。
+⟦Nghe nói chị ấy làm nghề dạy học.⟧ → 聞くところによると、彼女は教師をしているそうです。 · ⟦Nghe nói hôm nay anh Park cũng đi dự đám cưới.⟧ → 聞くところによると、今日パクも結婚式に出席するそうです。 · ⟦Nghe nói ông ấy nói tiếng Việt rất giỏi.⟧ → 聞くところによると、その方はベトナム語がとても上手だそうです。 · ⟦Nghe nói chiều mai chúng ta được nghỉ học.⟧ → 聞くところによると、明日の午後は授業が休みだって。
+=pl
+Objaśnienia gramatyczne
+⟦hóa ra⟧: „okazuje się, że ~; a więc ~” – wskazuje, że to, co następuje, mówiący dopiero co sobie uświadomił; jest to dość nagłe i sprzeczne z tym, co wcześniej sądził.
+⟦Em cứ tưởng đám cưới tổ chức buổi trưa, hóa ra là buổi chiều.⟧ → Cały czas myślałem, że ślub jest w południe, a okazuje się, że po południu. (nowo uświadomione: po południu · wcześniejsze przekonanie: w południe) · ⟦Tôi nghĩ đám cưới thì phải ăn cơm, hóa ra có thể chỉ là uống nước.⟧ → Myślałem, że na weselu trzeba zjeść posiłek, a okazuje się, że można tylko napić się herbaty. (nowo uświadomione: tylko herbata · wcześniejsze przekonanie: trzeba jeść) · ⟦Tôi nghĩ ai có giấy mời mới đến nghe nói chuyện, hóa ra ai đến nghe cũng được.⟧ → Myślałem, że na wykład można przyjść tylko z zaproszeniem, a okazuje się, że każdy może. (nowo uświadomione: każdy może przyjść · wcześniejsze przekonanie: tylko z zaproszeniem)
+⟦Nghe nói⟧: „podobno, słyszałem, że” – przekazuje zasłyszaną informację, która może nie być dokładna.
+⟦Nghe nói chị ấy làm nghề dạy học.⟧ → Podobno pracuje jako nauczycielka. · ⟦Nghe nói hôm nay anh Park cũng đi dự đám cưới.⟧ → Podobno Park też idzie dziś na ślub. · ⟦Nghe nói ông ấy nói tiếng Việt rất giỏi.⟧ → Podobno bardzo dobrze mówi po wietnamsku. · ⟦Nghe nói chiều mai chúng ta được nghỉ học.⟧ → Podobno jutro po południu nie mamy zajęć.
+@@ pdf-grammar-5b3f1fbcd4ef6c3e#0
+=cs
+Gramatický výklad
+⟦dăm ba⟧, ⟦mấy⟧, ⟦vài⟧: „několik, pár, tři čtyři“ – označují nepřesné a nevelké množství.
+⟦Có những người đến chợ chỉ bán dăm ba quả bưởi, mấy nải chuối hoặc vài cái chổi.⟧ → Jsou lidé, kteří na trh přijdou prodat jen pár pomel, několik trsů banánů nebo pár košťat. · ⟦Trong lớp có mấy người biết nói tiếng Anh.⟧ → Ve třídě je několik lidí, kteří umějí anglicky. · ⟦Trong thư viện có vài sinh viên đang đọc báo.⟧ → V knihovně je pár studentů, kteří čtou noviny. · ⟦Nhà tôi trồng dăm ba cây bưởi.⟧ → U nás doma jsme zasadili několik stromů pomela. · ⟦Tôi đã cho vào trong cặp mấy quyển sách.⟧ → Dal jsem do tašky pár knih.
+⟦mà⟧: „a přitom, ale, a (navíc)“ – stojí před slovesem či přídavným jménem a uvádí, že to, co následuje, doplňuje a rozvádí předchozí obsah.
+⟦Có chợ khoảng 8 giờ sáng mà đã vắng bóng người.⟧ → Jsou trhy, kde už kolem osmé ráno není ani živáčka. · ⟦Họ có thể sẵn sàng biếu nhau mớ rau, túm quả mà không lấy tiền.⟧ → Klidně si navzájem darují svazek zeleniny či hrst ovoce, a nevezmou za to peníze. · ⟦Hôm nay trời nắng mà không nóng.⟧ → Dnes je slunečno, a přitom není horko. · ⟦Chợ có nhiều hoa quả ngon mà lại rẻ.⟧ → Na trhu je spousta chutného a navíc levného ovoce. · ⟦Chợ quê đều họp sớm mà tan cũng sớm.⟧ → Venkovské trhy začínají brzy a také brzy končí.
+=zh_cn
+语法解说
+⟦dăm ba⟧、⟦mấy⟧、⟦vài⟧：意为“几个、三五个”，用于表示不确切且不多的数量。
+⟦Có những người đến chợ chỉ bán dăm ba quả bưởi, mấy nải chuối hoặc vài cái chổi.⟧ → 有些人来市场只卖三五个柚子、几串香蕉或几把扫帚。 · ⟦Trong lớp có mấy người biết nói tiếng Anh.⟧ → 班里有几个人会说英语。 · ⟦Trong thư viện có vài sinh viên đang đọc báo.⟧ → 图书馆里有几个大学生在看报。 · ⟦Nhà tôi trồng dăm ba cây bưởi.⟧ → 我家种了几棵柚子树。 · ⟦Tôi đã cho vào trong cặp mấy quyển sách.⟧ → 我往书包里放了几本书。
+⟦mà⟧：意为“却、而且”，位于动词、形容词之前，表示接下来的内容是对前面所说内容的补充说明。
+⟦Có chợ khoảng 8 giờ sáng mà đã vắng bóng người.⟧ → 有的市场早上八点左右就已经没什么人了。 · ⟦Họ có thể sẵn sàng biếu nhau mớ rau, túm quả mà không lấy tiền.⟧ → 他们可以互相送一把菜、一捧水果而不收钱。 · ⟦Hôm nay trời nắng mà không nóng.⟧ → 今天天气晴朗却不热。 · ⟦Chợ có nhiều hoa quả ngon mà lại rẻ.⟧ → 市场上有很多好吃而且便宜的水果。 · ⟦Chợ quê đều họp sớm mà tan cũng sớm.⟧ → 乡村集市都开得早，散得也早。
+=zh
+文法解說
+⟦dăm ba⟧、⟦mấy⟧、⟦vài⟧：意為「幾個、三五個」，用於表示不確切且不多的數量。
+⟦Có những người đến chợ chỉ bán dăm ba quả bưởi, mấy nải chuối hoặc vài cái chổi.⟧ → 有些人來市場只賣三五顆柚子、幾串香蕉或幾把掃帚。 · ⟦Trong lớp có mấy người biết nói tiếng Anh.⟧ → 班上有幾個人會說英語。 · ⟦Trong thư viện có vài sinh viên đang đọc báo.⟧ → 圖書館裡有幾個大學生在看報。 · ⟦Nhà tôi trồng dăm ba cây bưởi.⟧ → 我家種了幾棵柚子樹。 · ⟦Tôi đã cho vào trong cặp mấy quyển sách.⟧ → 我往書包裡放了幾本書。
+⟦mà⟧：意為「卻、而且」，位於動詞、形容詞之前，表示接下來的內容是對前面所說內容的補充說明。
+⟦Có chợ khoảng 8 giờ sáng mà đã vắng bóng người.⟧ → 有的市場早上八點左右就已經沒什麼人了。 · ⟦Họ có thể sẵn sàng biếu nhau mớ rau, túm quả mà không lấy tiền.⟧ → 他們可以互相送一把菜、一捧水果而不收錢。 · ⟦Hôm nay trời nắng mà không nóng.⟧ → 今天天氣晴朗卻不熱。 · ⟦Chợ có nhiều hoa quả ngon mà lại rẻ.⟧ → 市場上有很多好吃又便宜的水果。 · ⟦Chợ quê đều họp sớm mà tan cũng sớm.⟧ → 鄉村市集都開得早，散得也早。
+=en
+Grammar notes
+⟦dăm ba⟧, ⟦mấy⟧, ⟦vài⟧: "a few, several, three or four" – indicate an imprecise, small quantity.
+⟦Có những người đến chợ chỉ bán dăm ba quả bưởi, mấy nải chuối hoặc vài cái chổi.⟧ → Some people come to the market to sell just a few pomelos, a few hands of bananas or a couple of brooms. · ⟦Trong lớp có mấy người biết nói tiếng Anh.⟧ → There are a few people in the class who can speak English. · ⟦Trong thư viện có vài sinh viên đang đọc báo.⟧ → There are a few students reading newspapers in the library. · ⟦Nhà tôi trồng dăm ba cây bưởi.⟧ → We've planted a few pomelo trees at home. · ⟦Tôi đã cho vào trong cặp mấy quyển sách.⟧ → I put a few books in my bag.
+⟦mà⟧: "yet, and (also), but" – placed before a verb or adjective to show that what follows adds to or elaborates on what was said before.
+⟦Có chợ khoảng 8 giờ sáng mà đã vắng bóng người.⟧ → Some markets are already deserted by around 8 a.m. · ⟦Họ có thể sẵn sàng biếu nhau mớ rau, túm quả mà không lấy tiền.⟧ → They readily give each other a bunch of vegetables or a handful of fruit without taking any money. · ⟦Hôm nay trời nắng mà không nóng.⟧ → Today is sunny yet not hot. · ⟦Chợ có nhiều hoa quả ngon mà lại rẻ.⟧ → The market has lots of fruit that is tasty and cheap as well. · ⟦Chợ quê đều họp sớm mà tan cũng sớm.⟧ → Country markets all open early and close early too.
+=fr
+Notes de grammaire
+⟦dăm ba⟧, ⟦mấy⟧, ⟦vài⟧ : « quelques, trois ou quatre » – désignent une quantité imprécise et faible.
+⟦Có những người đến chợ chỉ bán dăm ba quả bưởi, mấy nải chuối hoặc vài cái chổi.⟧ → Certains viennent au marché pour ne vendre que trois ou quatre pomelos, quelques régimes de bananes ou quelques balais. · ⟦Trong lớp có mấy người biết nói tiếng Anh.⟧ → Dans la classe, quelques personnes savent parler anglais. · ⟦Trong thư viện có vài sinh viên đang đọc báo.⟧ → À la bibliothèque, quelques étudiants lisent le journal. · ⟦Nhà tôi trồng dăm ba cây bưởi.⟧ → Chez nous, on a planté quelques pomelos. · ⟦Tôi đã cho vào trong cặp mấy quyển sách.⟧ → J'ai mis quelques livres dans mon sac.
+⟦mà⟧ : « pourtant, et (en plus), mais » – placé devant un verbe ou un adjectif, indique que ce qui suit complète ou développe ce qui a été dit.
+⟦Có chợ khoảng 8 giờ sáng mà đã vắng bóng người.⟧ → Certains marchés sont déjà déserts vers 8 heures du matin. · ⟦Họ có thể sẵn sàng biếu nhau mớ rau, túm quả mà không lấy tiền.⟧ → Ils peuvent volontiers s'offrir une botte de légumes, une poignée de fruits sans rien faire payer. · ⟦Hôm nay trời nắng mà không nóng.⟧ → Aujourd'hui il fait beau, et pourtant il ne fait pas chaud. · ⟦Chợ có nhiều hoa quả ngon mà lại rẻ.⟧ → Le marché a beaucoup de fruits délicieux et en plus bon marché. · ⟦Chợ quê đều họp sớm mà tan cũng sớm.⟧ → Les marchés de campagne ouvrent tôt et ferment tôt aussi.
+=de
+Grammatikerläuterungen
+⟦dăm ba⟧, ⟦mấy⟧, ⟦vài⟧: „einige, ein paar, drei, vier“ – bezeichnen eine ungenaue, geringe Menge.
+⟦Có những người đến chợ chỉ bán dăm ba quả bưởi, mấy nải chuối hoặc vài cái chổi.⟧ → Manche kommen auf den Markt, um nur ein paar Pomelos, einige Bananenstauden oder ein paar Besen zu verkaufen. · ⟦Trong lớp có mấy người biết nói tiếng Anh.⟧ → In der Klasse gibt es einige, die Englisch sprechen können. · ⟦Trong thư viện có vài sinh viên đang đọc báo.⟧ → In der Bibliothek lesen ein paar Studenten Zeitung. · ⟦Nhà tôi trồng dăm ba cây bưởi.⟧ → Bei uns zu Hause haben wir ein paar Pomelobäume gepflanzt. · ⟦Tôi đã cho vào trong cặp mấy quyển sách.⟧ → Ich habe ein paar Bücher in die Tasche gesteckt.
+⟦mà⟧: „aber, und dabei, und zudem“ – steht vor Verb oder Adjektiv und zeigt, dass das Folgende das zuvor Gesagte ergänzt bzw. näher erläutert.
+⟦Có chợ khoảng 8 giờ sáng mà đã vắng bóng người.⟧ → Manche Märkte sind schon gegen 8 Uhr morgens menschenleer. · ⟦Họ có thể sẵn sàng biếu nhau mớ rau, túm quả mà không lấy tiền.⟧ → Sie schenken einander bereitwillig ein Bund Gemüse oder eine Handvoll Obst, ohne Geld zu nehmen. · ⟦Hôm nay trời nắng mà không nóng.⟧ → Heute ist es sonnig und dabei nicht heiß. · ⟦Chợ có nhiều hoa quả ngon mà lại rẻ.⟧ → Auf dem Markt gibt es viel leckeres und zudem billiges Obst. · ⟦Chợ quê đều họp sớm mà tan cũng sớm.⟧ → Dorfmärkte öffnen früh und schließen auch früh.
+=hu
+Nyelvtani magyarázat
+⟦dăm ba⟧, ⟦mấy⟧, ⟦vài⟧: „néhány, pár, három-négy” – pontatlan és nem nagy mennyiséget jelölnek.
+⟦Có những người đến chợ chỉ bán dăm ba quả bưởi, mấy nải chuối hoặc vài cái chổi.⟧ → Vannak, akik csak pár pomelót, néhány fürt banánt vagy pár seprűt jönnek eladni a piacra. · ⟦Trong lớp có mấy người biết nói tiếng Anh.⟧ → Az osztályban néhányan tudnak angolul. · ⟦Trong thư viện có vài sinh viên đang đọc báo.⟧ → A könyvtárban néhány diák újságot olvas. · ⟦Nhà tôi trồng dăm ba cây bưởi.⟧ → Otthon ültettünk néhány pomelófát. · ⟦Tôi đã cho vào trong cặp mấy quyển sách.⟧ → Betettem néhány könyvet a táskámba.
+⟦mà⟧: „mégis, ráadásul, és” – ige vagy melléknév előtt állva azt jelzi, hogy a következő rész kiegészíti, kifejti az előbb mondottakat.
+⟦Có chợ khoảng 8 giờ sáng mà đã vắng bóng người.⟧ → Van olyan piac, ahol reggel nyolc körül már egy lélek sincs. · ⟦Họ có thể sẵn sàng biếu nhau mớ rau, túm quả mà không lấy tiền.⟧ → Szívesen adnak egymásnak egy csokor zöldséget, egy marék gyümölcsöt, pénzt se kérve érte. · ⟦Hôm nay trời nắng mà không nóng.⟧ → Ma napos idő van, mégsem meleg. · ⟦Chợ có nhiều hoa quả ngon mà lại rẻ.⟧ → A piacon sok finom, ráadásul olcsó gyümölcs van. · ⟦Chợ quê đều họp sớm mà tan cũng sớm.⟧ → A falusi piacok korán nyitnak és korán is zárnak.
+=id
+Penjelasan tata bahasa
+⟦dăm ba⟧, ⟦mấy⟧, ⟦vài⟧: "beberapa, tiga-empat" – menunjukkan jumlah yang tidak tepat dan tidak banyak.
+⟦Có những người đến chợ chỉ bán dăm ba quả bưởi, mấy nải chuối hoặc vài cái chổi.⟧ → Ada orang yang datang ke pasar hanya menjual tiga-empat buah jeruk bali, beberapa sisir pisang, atau beberapa sapu. · ⟦Trong lớp có mấy người biết nói tiếng Anh.⟧ → Di kelas ada beberapa orang yang bisa berbahasa Inggris. · ⟦Trong thư viện có vài sinh viên đang đọc báo.⟧ → Di perpustakaan ada beberapa mahasiswa yang sedang membaca koran. · ⟦Nhà tôi trồng dăm ba cây bưởi.⟧ → Di rumah kami menanam beberapa pohon jeruk bali. · ⟦Tôi đã cho vào trong cặp mấy quyển sách.⟧ → Saya memasukkan beberapa buku ke dalam tas.
+⟦mà⟧: "tetapi, padahal, dan juga" – terletak sebelum verba atau adjektiva untuk menunjukkan bahwa hal berikutnya melengkapi penjelasan sebelumnya.
+⟦Có chợ khoảng 8 giờ sáng mà đã vắng bóng người.⟧ → Ada pasar yang sekitar pukul 8 pagi sudah sepi orang. · ⟦Họ có thể sẵn sàng biếu nhau mớ rau, túm quả mà không lấy tiền.⟧ → Mereka bisa saling memberi seikat sayur atau segenggam buah tanpa menerima uang. · ⟦Hôm nay trời nắng mà không nóng.⟧ → Hari ini cerah tetapi tidak panas. · ⟦Chợ có nhiều hoa quả ngon mà lại rẻ.⟧ → Di pasar banyak buah yang enak dan juga murah. · ⟦Chợ quê đều họp sớm mà tan cũng sớm.⟧ → Pasar desa buka pagi-pagi dan tutup pun cepat.
+=ja
+文法解説
+⟦dăm ba⟧、⟦mấy⟧、⟦vài⟧：「いくつかの、三つ四つの」という意味で、不正確で多くない数量を表すために使います。
+⟦Có những người đến chợ chỉ bán dăm ba quả bưởi, mấy nải chuối hoặc vài cái chổi.⟧ → 市場に来て、ザボンを三つ四つ、バナナを数房、あるいはほうきを数本だけ売る人もいる。 · ⟦Trong lớp có mấy người biết nói tiếng Anh.⟧ → クラスには英語を話せる人が何人かいる。 · ⟦Trong thư viện có vài sinh viên đang đọc báo.⟧ → 図書館には新聞を読んでいる大学生が何人かいる。 · ⟦Nhà tôi trồng dăm ba cây bưởi.⟧ → わが家ではザボンの木を何本か植えた。 · ⟦Tôi đã cho vào trong cặp mấy quyển sách.⟧ → 私はかばんに本を何冊か入れた。
+⟦mà⟧：「～だが、～なのに、しかも」という意味で、動詞・形容詞の前に置き、これから示す事柄が前に述べた内容を補足説明するものであることを表すために使います。
+⟦Có chợ khoảng 8 giờ sáng mà đã vắng bóng người.⟧ → 朝8時ごろにはもう人影もない市場もある。 · ⟦Họ có thể sẵn sàng biếu nhau mớ rau, túm quả mà không lấy tiền.⟧ → 彼らはお金を受け取らずに、野菜の束や果物ひとつかみを気前よく贈り合う。 · ⟦Hôm nay trời nắng mà không nóng.⟧ → 今日は晴れているのに暑くない。 · ⟦Chợ có nhiều hoa quả ngon mà lại rẻ.⟧ → 市場にはおいしくて、しかも安い果物がたくさんある。 · ⟦Chợ quê đều họp sớm mà tan cũng sớm.⟧ → 田舎の市場はどこも早く開き、また早く終わる。
+=pl
+Objaśnienia gramatyczne
+⟦dăm ba⟧, ⟦mấy⟧, ⟦vài⟧: „kilka, parę, trzy-cztery” – oznaczają nieokreśloną i niewielką ilość.
+⟦Có những người đến chợ chỉ bán dăm ba quả bưởi, mấy nải chuối hoặc vài cái chổi.⟧ → Są ludzie, którzy przychodzą na targ sprzedać tylko parę pomelo, kilka kiści bananów albo kilka mioteł. · ⟦Trong lớp có mấy người biết nói tiếng Anh.⟧ → W klasie jest kilka osób, które mówią po angielsku. · ⟦Trong thư viện có vài sinh viên đang đọc báo.⟧ → W bibliotece kilku studentów czyta gazety. · ⟦Nhà tôi trồng dăm ba cây bưởi.⟧ → U nas w domu posadziliśmy kilka drzewek pomelo. · ⟦Tôi đã cho vào trong cặp mấy quyển sách.⟧ → Włożyłem do torby kilka książek.
+⟦mà⟧: „a przy tym, lecz, a do tego” – stoi przed czasownikiem lub przymiotnikiem i wskazuje, że to, co następuje, uzupełnia i rozwija wcześniejszą treść.
+⟦Có chợ khoảng 8 giờ sáng mà đã vắng bóng người.⟧ → Są targi, na których około 8 rano nie ma już żywej duszy. · ⟦Họ có thể sẵn sàng biếu nhau mớ rau, túm quả mà không lấy tiền.⟧ → Chętnie dają sobie nawzajem pęczek warzyw czy garść owoców, nie biorąc pieniędzy. · ⟦Hôm nay trời nắng mà không nóng.⟧ → Dziś jest słonecznie, a przy tym nie jest gorąco. · ⟦Chợ có nhiều hoa quả ngon mà lại rẻ.⟧ → Na targu jest dużo smacznych, a do tego tanich owoców. · ⟦Chợ quê đều họp sớm mà tan cũng sớm.⟧ → Wiejskie targi zaczynają się wcześnie i wcześnie się kończą.

@@ -1,0 +1,201 @@
+@@ pdf-grammar-7cb287f64974a0fa#0
+=cs
+Klíčový výraz: ⟦liệu⟧
+⟦liệu⟧ stojí na začátku otázky typu ⟦có ~ không?⟧ a používá se, když se ptáme s pochybností, zda se něco může uskutečnit: „jestlipak ~, zda vůbec ~“.
+❶ ⟦Liệu chúng ta có thể hoàn thành nhiệm vụ trong tháng này được không?⟧ — Zvládneme vůbec úkol splnit ještě tento měsíc?
+❷ Ⓐ ⟦Liệu cô ấy có đến kịp không?⟧ — Stihne ona vůbec přijít včas? Ⓑ ⟦Chờ thêm một chút đã. 30 phút sau, nếu cô ấy vẫn chưa đến thì chúng ta sẽ đi trước.⟧ — Nejdřív chvíli počkáme. Jestli do 30 minut nepřijde, půjdeme napřed.
+Výrazy k diagnostice nemocí: ⟦đo huyết áp⟧ změřit krevní tlak | ⟦chụp X-quang⟧ udělat rentgen | ⟦thực hiện siêu âm /nội soi⟧ provést ultrazvuk / endoskopii | ⟦xét nghiệm máu /nước tiểu⟧ vyšetření krve / moči | ⟦quan sát bằng mắt thường⟧ pozorovat pouhým okem
+Procvičování 2 — procvičte rozhovor podle vzoru.
+Vzor (⟦Thời hạn nộp bài: thứ 6 tuần sau⟧ termín odevzdání: příští pátek): Ⓐ ⟦Liệu chúng ta có làm kịp không?⟧ — Stihneme to vůbec? Ⓑ ⟦Tớ cũng không biết nữa. Chúng ta cứ cố gắng hết sức nhé.⟧ — To nevím. Prostě se budeme snažit ze všech sil.
+❶ (⟦Dự báo thời tiết hôm nay⟧ dnešní předpověď počasí) Ⓐ ⟦Liệu hôm nay trời có mưa không nhỉ?⟧ — Jestlipak dnes bude pršet? Ⓑ ⟦Có thể lắm! Dạo này trời cứ mưa suốt.⟧ — Docela možná! Poslední dobou pořád prší.
+❷ (⟦Thông báo về việc đăng kí tham gia Cuộc thi Toán Quốc tế...⟧ oznámení o přihláškách do Mezinárodní matematické soutěže) Ⓐ ⟦Liệu lớp mình có bạn nào đăng kí tham gia không nhỉ?⟧ — Přihlásí se asi někdo z naší třídy? Ⓑ ⟦Chắc là có. Tại vì lớp mình có mấy bạn rất giỏi môn Toán.⟧ — Určitě ano. V naší třídě je pár spolužáků, kteří jsou v matematice moc dobří.
+Rozhovor: Min-ho přišel nějakou dobu po ošetření na pohotovosti na ambulantní kontrolu.
+Lékař: ⟦Anh thấy sao rồi?⟧ — Jak se cítíte?
+Min-ho: ⟦Tôi thấy đã đỡ hơn nhiều nhờ việc uống thuốc và thường xuyên tập thể dục.⟧ — Díky lékům a pravidelnému cvičení je mi mnohem lépe.
+Lékař: ⟦Thế, bây giờ anh hãy đi siêu âm và làm một vài xét nghiệm trước nhé. Y tá sẽ hướng dẫn anh.⟧ — Tak teď nejdřív zajděte na ultrazvuk a pár vyšetření. Sestra vás navede.
+(Po vyšetřeních)
+Min-ho: ⟦Thế nào bác sĩ? Liệu tuần sau tôi có thể đi công tác xa được không?⟧ — Jak to vypadá, pane doktore? Budu moct příští týden jet na dalekou služební cestu?
+Lékař: ⟦Đã tốt hơn nhiều rồi. Nếu anh tiếp tục uống thuốc và theo dõi sức khoẻ liên tục thì có lẽ sẽ không có vấn đề gì.⟧ — Je to mnohem lepší. Když budete dál brát léky a průběžně sledovat svůj zdravotní stav, asi to nebude problém.
+Min-ho: ⟦Vâng. Cảm ơn bác sĩ.⟧ — Dobře. Děkuji, pane doktore.
+Procvičování — způsob léčby: ⟦uống thuốc và thường xuyên tập thể dục⟧ (brát léky a pravidelně cvičit) / ⟦uống thuốc và ngừng làm việc trong một khoảng thời gian⟧ (brát léky a na čas přestat pracovat); vyšetření: ⟦siêu âm⟧ (ultrazvuk) / ⟦chụp X-quang⟧ (rentgen); plán: ⟦tuần sau tôi có thể đi công tác xa⟧ (příští týden jet na dalekou služební cestu) / ⟦sắp tới tôi có thể đi du lịch⟧ (brzy jet na dovolenou); na co dávat pozor: ⟦tiếp tục uống thuốc⟧ (dál brát léky) / ⟦tránh vận động mạnh⟧ (vyhýbat se namáhavé námaze).
+Nová slovíčka: ⟦đo⟧ měřit | ⟦huyết áp⟧ krevní tlak | ⟦X-quang⟧ rentgen | ⟦thực hiện⟧ provést | ⟦siêu âm⟧ ultrazvuk | ⟦nội soi⟧ endoskopie | ⟦nhiệm vụ⟧ úkol | ⟦kịp⟧ včas, stihnout | ⟦thời hạn⟧ lhůta | ⟦nước tiểu⟧ moč | ⟦quan sát⟧ pozorovat | ⟦hướng dẫn⟧ navést, poradit | ⟦thông báo⟧ oznámení, oznámit | ⟦theo dõi⟧ sledovat
+=zh_cn
+核心表达：⟦liệu⟧
+⟦liệu⟧ 位于 ⟦có ~ không?⟧ 疑问句的句首，用于对某事能否实现心存疑虑地提问：“……能……吗？”
+❶ ⟦Liệu chúng ta có thể hoàn thành nhiệm vụ trong tháng này được không?⟧ —— 我们这个月内能完成任务吗？
+❷ Ⓐ ⟦Liệu cô ấy có đến kịp không?⟧ —— 她能按时到吗？ Ⓑ ⟦Chờ thêm một chút đã. 30 phút sau, nếu cô ấy vẫn chưa đến thì chúng ta sẽ đi trước.⟧ —— 先再等一会儿。30分钟后她要是还没到，我们就先走。
+与疾病诊断相关的表达：⟦đo huyết áp⟧ 量血压 | ⟦chụp X-quang⟧ 拍X光 | ⟦thực hiện siêu âm /nội soi⟧ 做B超 / 内窥镜 | ⟦xét nghiệm máu /nước tiểu⟧ 验血 / 验尿 | ⟦quan sát bằng mắt thường⟧ 肉眼观察
+句型练习2 —— 仿照范例练习对话。
+范例（⟦Thời hạn nộp bài: thứ 6 tuần sau⟧ 交作业期限：下周五）：Ⓐ ⟦Liệu chúng ta có làm kịp không?⟧ —— 我们能来得及做完吗？ Ⓑ ⟦Tớ cũng không biết nữa. Chúng ta cứ cố gắng hết sức nhé.⟧ —— 我也不知道。我们就尽全力吧。
+❶（⟦Dự báo thời tiết hôm nay⟧ 今日天气预报）Ⓐ ⟦Liệu hôm nay trời có mưa không nhỉ?⟧ —— 今天会下雨吗？ Ⓑ ⟦Có thể lắm! Dạo này trời cứ mưa suốt.⟧ —— 很有可能！最近总是下雨。
+❷（⟦Thông báo về việc đăng kí tham gia Cuộc thi Toán Quốc tế...⟧ 关于报名参加国际数学竞赛的通知）Ⓐ ⟦Liệu lớp mình có bạn nào đăng kí tham gia không nhỉ?⟧ —— 我们班会有同学报名参加吗？ Ⓑ ⟦Chắc là có. Tại vì lớp mình có mấy bạn rất giỏi môn Toán.⟧ —— 应该会有。因为我们班有几个同学数学很好。
+对话：敏浩在急诊治疗后过了一段时间来门诊复诊。
+医生：⟦Anh thấy sao rồi?⟧ —— 你感觉怎么样了？
+敏浩：⟦Tôi thấy đã đỡ hơn nhiều nhờ việc uống thuốc và thường xuyên tập thể dục.⟧ —— 多亏吃药和经常锻炼，我感觉好多了。
+医生：⟦Thế, bây giờ anh hãy đi siêu âm và làm một vài xét nghiệm trước nhé. Y tá sẽ hướng dẫn anh.⟧ —— 那现在你先去做个B超和几项检查吧。护士会给你指引。
+（检查完后）
+敏浩：⟦Thế nào bác sĩ? Liệu tuần sau tôi có thể đi công tác xa được không?⟧ —— 怎么样，医生？我下周能去外地出差吗？
+医生：⟦Đã tốt hơn nhiều rồi. Nếu anh tiếp tục uống thuốc và theo dõi sức khoẻ liên tục thì có lẽ sẽ không có vấn đề gì.⟧ —— 已经好多了。如果你继续吃药并持续关注身体状况，大概不会有什么问题。
+敏浩：⟦Vâng. Cảm ơn bác sĩ.⟧ —— 好的。谢谢医生。
+句型练习 —— 治疗方法：⟦uống thuốc và thường xuyên tập thể dục⟧（吃药并经常锻炼）/ ⟦uống thuốc và ngừng làm việc trong một khoảng thời gian⟧（吃药并暂停工作一段时间）；检查方式：⟦siêu âm⟧（B超）/ ⟦chụp X-quang⟧（X光）；计划：⟦tuần sau tôi có thể đi công tác xa⟧（下周去外地出差）/ ⟦sắp tới tôi có thể đi du lịch⟧（最近去旅行）；注意事项：⟦tiếp tục uống thuốc⟧（继续吃药）/ ⟦tránh vận động mạnh⟧（避免剧烈运动）。
+新单词：⟦đo⟧ 测量 | ⟦huyết áp⟧ 血压 | ⟦X-quang⟧ X光 | ⟦thực hiện⟧ 实施、执行 | ⟦siêu âm⟧ 超声波 | ⟦nội soi⟧ 内窥镜 | ⟦nhiệm vụ⟧ 任务 | ⟦kịp⟧ 及时、来得及 | ⟦thời hạn⟧ 期限 | ⟦nước tiểu⟧ 尿 | ⟦quan sát⟧ 观察 | ⟦hướng dẫn⟧ 指引、引导 | ⟦thông báo⟧ 通知 | ⟦theo dõi⟧ 跟踪、观察
+=zh
+核心表達：⟦liệu⟧
+⟦liệu⟧ 位於 ⟦có ~ không?⟧ 疑問句的句首，用於對某事能否實現心存疑慮地提問：「……能……嗎？」
+❶ ⟦Liệu chúng ta có thể hoàn thành nhiệm vụ trong tháng này được không?⟧ —— 我們這個月內能完成任務嗎？
+❷ Ⓐ ⟦Liệu cô ấy có đến kịp không?⟧ —— 她能準時到嗎？ Ⓑ ⟦Chờ thêm một chút đã. 30 phút sau, nếu cô ấy vẫn chưa đến thì chúng ta sẽ đi trước.⟧ —— 先再等一下。30分鐘後她要是還沒到，我們就先走。
+與疾病診斷相關的表達：⟦đo huyết áp⟧ 量血壓 | ⟦chụp X-quang⟧ 照X光 | ⟦thực hiện siêu âm /nội soi⟧ 做超音波 / 內視鏡 | ⟦xét nghiệm máu /nước tiểu⟧ 驗血 / 驗尿 | ⟦quan sát bằng mắt thường⟧ 肉眼觀察
+句型練習2 —— 仿照範例練習對話。
+範例（⟦Thời hạn nộp bài: thứ 6 tuần sau⟧ 交作業期限：下週五）：Ⓐ ⟦Liệu chúng ta có làm kịp không?⟧ —— 我們來得及做完嗎？ Ⓑ ⟦Tớ cũng không biết nữa. Chúng ta cứ cố gắng hết sức nhé.⟧ —— 我也不知道。我們就盡全力吧。
+❶（⟦Dự báo thời tiết hôm nay⟧ 今日天氣預報）Ⓐ ⟦Liệu hôm nay trời có mưa không nhỉ?⟧ —— 今天會下雨嗎？ Ⓑ ⟦Có thể lắm! Dạo này trời cứ mưa suốt.⟧ —— 很有可能！最近一直下雨。
+❷（⟦Thông báo về việc đăng kí tham gia Cuộc thi Toán Quốc tế...⟧ 關於報名參加國際數學競賽的通知）Ⓐ ⟦Liệu lớp mình có bạn nào đăng kí tham gia không nhỉ?⟧ —— 我們班會有同學報名參加嗎？ Ⓑ ⟦Chắc là có. Tại vì lớp mình có mấy bạn rất giỏi môn Toán.⟧ —— 應該會有。因為我們班有幾個同學數學很好。
+對話：敏浩在急診治療後過了一段時間來門診回診。
+醫生：⟦Anh thấy sao rồi?⟧ —— 你覺得怎麼樣了？
+敏浩：⟦Tôi thấy đã đỡ hơn nhiều nhờ việc uống thuốc và thường xuyên tập thể dục.⟧ —— 多虧吃藥和經常運動，我覺得好多了。
+醫生：⟦Thế, bây giờ anh hãy đi siêu âm và làm một vài xét nghiệm trước nhé. Y tá sẽ hướng dẫn anh.⟧ —— 那現在你先去照個超音波和做幾項檢查吧。護理師會為你引導。
+（檢查完後）
+敏浩：⟦Thế nào bác sĩ? Liệu tuần sau tôi có thể đi công tác xa được không?⟧ —— 怎麼樣，醫生？我下週能去外地出差嗎？
+醫生：⟦Đã tốt hơn nhiều rồi. Nếu anh tiếp tục uống thuốc và theo dõi sức khoẻ liên tục thì có lẽ sẽ không có vấn đề gì.⟧ —— 已經好多了。如果你繼續吃藥並持續留意身體狀況，大概不會有什麼問題。
+敏浩：⟦Vâng. Cảm ơn bác sĩ.⟧ —— 好的。謝謝醫生。
+句型練習 —— 治療方法：⟦uống thuốc và thường xuyên tập thể dục⟧（吃藥並經常運動）/ ⟦uống thuốc và ngừng làm việc trong một khoảng thời gian⟧（吃藥並暫停工作一段時間）；檢查方式：⟦siêu âm⟧（超音波）/ ⟦chụp X-quang⟧（X光）；計畫：⟦tuần sau tôi có thể đi công tác xa⟧（下週去外地出差）/ ⟦sắp tới tôi có thể đi du lịch⟧（近期去旅行）；注意事項：⟦tiếp tục uống thuốc⟧（繼續吃藥）/ ⟦tránh vận động mạnh⟧（避免劇烈運動）。
+新單字：⟦đo⟧ 測量 | ⟦huyết áp⟧ 血壓 | ⟦X-quang⟧ X光 | ⟦thực hiện⟧ 實施、執行 | ⟦siêu âm⟧ 超音波 | ⟦nội soi⟧ 內視鏡 | ⟦nhiệm vụ⟧ 任務 | ⟦kịp⟧ 及時、來得及 | ⟦thời hạn⟧ 期限 | ⟦nước tiểu⟧ 尿 | ⟦quan sát⟧ 觀察 | ⟦hướng dẫn⟧ 引導 | ⟦thông báo⟧ 通知 | ⟦theo dõi⟧ 追蹤、觀察
+=en
+Key expression: ⟦liệu⟧
+⟦liệu⟧ is placed at the start of a ⟦có ~ không?⟧ question to ask, with some doubt, whether something can happen: "I wonder if ~, will ~ really ~?"
+❶ ⟦Liệu chúng ta có thể hoàn thành nhiệm vụ trong tháng này được không?⟧ — Will we really be able to finish the task this month?
+❷ Ⓐ ⟦Liệu cô ấy có đến kịp không?⟧ — Do you think she'll make it in time? Ⓑ ⟦Chờ thêm một chút đã. 30 phút sau, nếu cô ấy vẫn chưa đến thì chúng ta sẽ đi trước.⟧ — Let's wait a little longer first. If she still isn't here in 30 minutes, we'll go ahead.
+Expressions about diagnosing illness: ⟦đo huyết áp⟧ to take blood pressure | ⟦chụp X-quang⟧ to have an X-ray | ⟦thực hiện siêu âm /nội soi⟧ to do an ultrasound / endoscopy | ⟦xét nghiệm máu /nước tiểu⟧ blood / urine test | ⟦quan sát bằng mắt thường⟧ to observe with the naked eye
+Pattern practice 2 — practise the dialogue as in the model.
+Model (⟦Thời hạn nộp bài: thứ 6 tuần sau⟧ deadline: next Friday): Ⓐ ⟦Liệu chúng ta có làm kịp không?⟧ — Will we make it in time? Ⓑ ⟦Tớ cũng không biết nữa. Chúng ta cứ cố gắng hết sức nhé.⟧ — I don't know either. Let's just do our best.
+❶ (⟦Dự báo thời tiết hôm nay⟧ today's weather forecast) Ⓐ ⟦Liệu hôm nay trời có mưa không nhỉ?⟧ — I wonder if it'll rain today. Ⓑ ⟦Có thể lắm! Dạo này trời cứ mưa suốt.⟧ — Quite possibly! It's been raining non-stop lately.
+❷ (⟦Thông báo về việc đăng kí tham gia Cuộc thi Toán Quốc tế...⟧ notice about registering for the International Maths Competition) Ⓐ ⟦Liệu lớp mình có bạn nào đăng kí tham gia không nhỉ?⟧ — I wonder if anyone in our class will sign up. Ⓑ ⟦Chắc là có. Tại vì lớp mình có mấy bạn rất giỏi môn Toán.⟧ — Probably. There are a few people in our class who are very good at maths.
+Dialogue: Some time after his emergency treatment, Min-ho has come for an outpatient check-up.
+Doctor: ⟦Anh thấy sao rồi?⟧ — How are you feeling?
+Min-ho: ⟦Tôi thấy đã đỡ hơn nhiều nhờ việc uống thuốc và thường xuyên tập thể dục.⟧ — I feel much better thanks to the medicine and regular exercise.
+Doctor: ⟦Thế, bây giờ anh hãy đi siêu âm và làm một vài xét nghiệm trước nhé. Y tá sẽ hướng dẫn anh.⟧ — Right, first go and have an ultrasound and a few tests. The nurse will show you where.
+(After the tests)
+Min-ho: ⟦Thế nào bác sĩ? Liệu tuần sau tôi có thể đi công tác xa được không?⟧ — How is it, doctor? Will I be able to go on a long business trip next week?
+Doctor: ⟦Đã tốt hơn nhiều rồi. Nếu anh tiếp tục uống thuốc và theo dõi sức khoẻ liên tục thì có lẽ sẽ không có vấn đề gì.⟧ — It's much better. If you keep taking the medicine and keep monitoring your health, it probably won't be a problem.
+Min-ho: ⟦Vâng. Cảm ơn bác sĩ.⟧ — OK. Thank you, doctor.
+Pattern practice — treatment: ⟦uống thuốc và thường xuyên tập thể dục⟧ (medicine and regular exercise) / ⟦uống thuốc và ngừng làm việc trong một khoảng thời gian⟧ (medicine and stopping work for a while); test: ⟦siêu âm⟧ (ultrasound) / ⟦chụp X-quang⟧ (X-ray); plan: ⟦tuần sau tôi có thể đi công tác xa⟧ (a long business trip next week) / ⟦sắp tới tôi có thể đi du lịch⟧ (a holiday soon); caution: ⟦tiếp tục uống thuốc⟧ (keep taking medicine) / ⟦tránh vận động mạnh⟧ (avoid strenuous activity).
+New words: ⟦đo⟧ to measure | ⟦huyết áp⟧ blood pressure | ⟦X-quang⟧ X-ray | ⟦thực hiện⟧ to carry out | ⟦siêu âm⟧ ultrasound | ⟦nội soi⟧ endoscopy | ⟦nhiệm vụ⟧ task, mission | ⟦kịp⟧ in time | ⟦thời hạn⟧ deadline | ⟦nước tiểu⟧ urine | ⟦quan sát⟧ to observe | ⟦hướng dẫn⟧ to guide | ⟦thông báo⟧ notice, to announce | ⟦theo dõi⟧ to follow, monitor
+=fr
+Expression clé : ⟦liệu⟧
+⟦liệu⟧ se place en tête d'une question en ⟦có ~ không?⟧ pour demander, avec un certain doute, si quelque chose peut se réaliser : « est-ce que ~ vraiment ~ ? je me demande si ~ ».
+❶ ⟦Liệu chúng ta có thể hoàn thành nhiệm vụ trong tháng này được không?⟧ — Arriverons-nous vraiment à accomplir la mission ce mois-ci ?
+❷ Ⓐ ⟦Liệu cô ấy có đến kịp không?⟧ — Tu crois qu'elle arrivera à temps ? Ⓑ ⟦Chờ thêm một chút đã. 30 phút sau, nếu cô ấy vẫn chưa đến thì chúng ta sẽ đi trước.⟧ — Attendons encore un peu. Si dans 30 minutes elle n'est toujours pas là, nous partirons devant.
+Expressions liées au diagnostic : ⟦đo huyết áp⟧ prendre la tension | ⟦chụp X-quang⟧ passer une radio | ⟦thực hiện siêu âm /nội soi⟧ faire une échographie / une endoscopie | ⟦xét nghiệm máu /nước tiểu⟧ analyse de sang / d'urine | ⟦quan sát bằng mắt thường⟧ observer à l'œil nu
+Exercice 2 — pratiquez le dialogue comme dans le modèle.
+Modèle (⟦Thời hạn nộp bài: thứ 6 tuần sau⟧ date limite : vendredi prochain) : Ⓐ ⟦Liệu chúng ta có làm kịp không?⟧ — On arrivera à finir à temps ? Ⓑ ⟦Tớ cũng không biết nữa. Chúng ta cứ cố gắng hết sức nhé.⟧ — Je ne sais pas non plus. Faisons de notre mieux.
+❶ (⟦Dự báo thời tiết hôm nay⟧ météo du jour) Ⓐ ⟦Liệu hôm nay trời có mưa không nhỉ?⟧ — Je me demande s'il va pleuvoir aujourd'hui. Ⓑ ⟦Có thể lắm! Dạo này trời cứ mưa suốt.⟧ — C'est bien possible ! Il pleut sans arrêt ces temps-ci.
+❷ (⟦Thông báo về việc đăng kí tham gia Cuộc thi Toán Quốc tế...⟧ avis concernant les inscriptions au Concours international de mathématiques) Ⓐ ⟦Liệu lớp mình có bạn nào đăng kí tham gia không nhỉ?⟧ — Je me demande si quelqu'un de notre classe va s'inscrire. Ⓑ ⟦Chắc là có. Tại vì lớp mình có mấy bạn rất giỏi môn Toán.⟧ — Sûrement. Il y a quelques élèves très forts en maths dans notre classe.
+Dialogue : quelque temps après son passage aux urgences, Min-ho vient en consultation externe.
+Médecin : ⟦Anh thấy sao rồi?⟧ — Comment vous sentez-vous ?
+Min-ho : ⟦Tôi thấy đã đỡ hơn nhiều nhờ việc uống thuốc và thường xuyên tập thể dục.⟧ — Je me sens beaucoup mieux grâce aux médicaments et à l'exercice régulier.
+Médecin : ⟦Thế, bây giờ anh hãy đi siêu âm và làm một vài xét nghiệm trước nhé. Y tá sẽ hướng dẫn anh.⟧ — Bien, allez d'abord faire une échographie et quelques analyses. L'infirmière va vous guider.
+(Après les examens)
+Min-ho : ⟦Thế nào bác sĩ? Liệu tuần sau tôi có thể đi công tác xa được không?⟧ — Alors, docteur ? Est-ce que je pourrai partir en long déplacement la semaine prochaine ?
+Médecin : ⟦Đã tốt hơn nhiều rồi. Nếu anh tiếp tục uống thuốc và theo dõi sức khoẻ liên tục thì có lẽ sẽ không có vấn đề gì.⟧ — C'est beaucoup mieux. Si vous continuez le traitement et surveillez régulièrement votre santé, il ne devrait pas y avoir de problème.
+Min-ho : ⟦Vâng. Cảm ơn bác sĩ.⟧ — D'accord. Merci, docteur.
+Exercices — traitement : ⟦uống thuốc và thường xuyên tập thể dục⟧ (médicaments et exercice régulier) / ⟦uống thuốc và ngừng làm việc trong một khoảng thời gian⟧ (médicaments et arrêt de travail pendant un temps) ; examen : ⟦siêu âm⟧ (échographie) / ⟦chụp X-quang⟧ (radio) ; projet : ⟦tuần sau tôi có thể đi công tác xa⟧ (long déplacement la semaine prochaine) / ⟦sắp tới tôi có thể đi du lịch⟧ (voyage prochainement) ; précautions : ⟦tiếp tục uống thuốc⟧ (continuer le traitement) / ⟦tránh vận động mạnh⟧ (éviter les efforts intenses).
+Nouveaux mots : ⟦đo⟧ mesurer | ⟦huyết áp⟧ tension artérielle | ⟦X-quang⟧ radiographie | ⟦thực hiện⟧ réaliser, effectuer | ⟦siêu âm⟧ échographie | ⟦nội soi⟧ endoscopie | ⟦nhiệm vụ⟧ mission, tâche | ⟦kịp⟧ à temps | ⟦thời hạn⟧ délai | ⟦nước tiểu⟧ urine | ⟦quan sát⟧ observer | ⟦hướng dẫn⟧ guider | ⟦thông báo⟧ avis, annoncer | ⟦theo dõi⟧ suivre, surveiller
+=de
+Schlüsselausdruck: ⟦liệu⟧
+⟦liệu⟧ steht am Anfang einer Frage mit ⟦có ~ không?⟧ und wird verwendet, wenn man zweifelnd fragt, ob sich etwas verwirklichen lässt: „ob ~ wohl ~?“
+❶ ⟦Liệu chúng ta có thể hoàn thành nhiệm vụ trong tháng này được không?⟧ — Ob wir die Aufgabe diesen Monat wohl schaffen?
+❷ Ⓐ ⟦Liệu cô ấy có đến kịp không?⟧ — Ob sie wohl rechtzeitig kommt? Ⓑ ⟦Chờ thêm một chút đã. 30 phút sau, nếu cô ấy vẫn chưa đến thì chúng ta sẽ đi trước.⟧ — Warten wir erst noch ein bisschen. Wenn sie in 30 Minuten nicht da ist, gehen wir vor.
+Ausdrücke zur Diagnose von Krankheiten: ⟦đo huyết áp⟧ Blutdruck messen | ⟦chụp X-quang⟧ röntgen | ⟦thực hiện siêu âm /nội soi⟧ Ultraschall / Endoskopie durchführen | ⟦xét nghiệm máu /nước tiểu⟧ Blut- / Urinuntersuchung | ⟦quan sát bằng mắt thường⟧ mit bloßem Auge beobachten
+Übung 2 — den Dialog wie im Muster üben.
+Muster (⟦Thời hạn nộp bài: thứ 6 tuần sau⟧ Abgabefrist: nächster Freitag): Ⓐ ⟦Liệu chúng ta có làm kịp không?⟧ — Ob wir das rechtzeitig schaffen? Ⓑ ⟦Tớ cũng không biết nữa. Chúng ta cứ cố gắng hết sức nhé.⟧ — Ich weiß es auch nicht. Geben wir einfach unser Bestes.
+❶ (⟦Dự báo thời tiết hôm nay⟧ heutige Wettervorhersage) Ⓐ ⟦Liệu hôm nay trời có mưa không nhỉ?⟧ — Ob es heute wohl regnet? Ⓑ ⟦Có thể lắm! Dạo này trời cứ mưa suốt.⟧ — Gut möglich! In letzter Zeit regnet es ständig.
+❷ (⟦Thông báo về việc đăng kí tham gia Cuộc thi Toán Quốc tế...⟧ Bekanntmachung zur Anmeldung für den Internationalen Mathematikwettbewerb) Ⓐ ⟦Liệu lớp mình có bạn nào đăng kí tham gia không nhỉ?⟧ — Ob sich wohl jemand aus unserer Klasse anmeldet? Ⓑ ⟦Chắc là có. Tại vì lớp mình có mấy bạn rất giỏi môn Toán.⟧ — Bestimmt. In unserer Klasse gibt es ein paar, die sehr gut in Mathe sind.
+Dialog: Einige Zeit nach der Notfallbehandlung kommt Min-ho zur ambulanten Kontrolle.
+Arzt: ⟦Anh thấy sao rồi?⟧ — Wie fühlen Sie sich?
+Min-ho: ⟦Tôi thấy đã đỡ hơn nhiều nhờ việc uống thuốc và thường xuyên tập thể dục.⟧ — Dank der Medikamente und regelmäßiger Bewegung geht es mir viel besser.
+Arzt: ⟦Thế, bây giờ anh hãy đi siêu âm và làm một vài xét nghiệm trước nhé. Y tá sẽ hướng dẫn anh.⟧ — Gut, dann gehen Sie jetzt zuerst zum Ultraschall und zu ein paar Untersuchungen. Die Schwester zeigt Ihnen den Weg.
+(Nach den Untersuchungen)
+Min-ho: ⟦Thế nào bác sĩ? Liệu tuần sau tôi có thể đi công tác xa được không?⟧ — Und, Herr Doktor? Kann ich nächste Woche wohl auf eine weite Dienstreise gehen?
+Arzt: ⟦Đã tốt hơn nhiều rồi. Nếu anh tiếp tục uống thuốc và theo dõi sức khoẻ liên tục thì có lẽ sẽ không có vấn đề gì.⟧ — Es ist schon viel besser. Wenn Sie weiter die Medikamente nehmen und Ihre Gesundheit laufend im Auge behalten, dürfte es kein Problem sein.
+Min-ho: ⟦Vâng. Cảm ơn bác sĩ.⟧ — Gut. Danke, Herr Doktor.
+Satzmusterübung — Behandlung: ⟦uống thuốc và thường xuyên tập thể dục⟧ (Medikamente und regelmäßig Sport) / ⟦uống thuốc và ngừng làm việc trong một khoảng thời gian⟧ (Medikamente und eine Zeit lang nicht arbeiten); Untersuchung: ⟦siêu âm⟧ (Ultraschall) / ⟦chụp X-quang⟧ (Röntgen); Vorhaben: ⟦tuần sau tôi có thể đi công tác xa⟧ (nächste Woche weite Dienstreise) / ⟦sắp tới tôi có thể đi du lịch⟧ (bald verreisen); worauf achten: ⟦tiếp tục uống thuốc⟧ (weiter Medikamente nehmen) / ⟦tránh vận động mạnh⟧ (starke Anstrengung vermeiden).
+Neue Wörter: ⟦đo⟧ messen | ⟦huyết áp⟧ Blutdruck | ⟦X-quang⟧ Röntgen | ⟦thực hiện⟧ durchführen | ⟦siêu âm⟧ Ultraschall | ⟦nội soi⟧ Endoskopie | ⟦nhiệm vụ⟧ Aufgabe, Auftrag | ⟦kịp⟧ rechtzeitig | ⟦thời hạn⟧ Frist | ⟦nước tiểu⟧ Urin | ⟦quan sát⟧ beobachten | ⟦hướng dẫn⟧ anleiten, führen | ⟦thông báo⟧ Bekanntmachung, mitteilen | ⟦theo dõi⟧ verfolgen, überwachen
+=hu
+Kulcskifejezés: ⟦liệu⟧
+A ⟦liệu⟧ a ⟦có ~ không?⟧ típusú kérdés elején áll, és akkor használjuk, ha kételkedve kérdezünk rá, megvalósulhat-e valami: „vajon ~?”
+❶ ⟦Liệu chúng ta có thể hoàn thành nhiệm vụ trong tháng này được không?⟧ — Vajon be tudjuk fejezni a feladatot ebben a hónapban?
+❷ Ⓐ ⟦Liệu cô ấy có đến kịp không?⟧ — Vajon ideér időben? Ⓑ ⟦Chờ thêm một chút đã. 30 phút sau, nếu cô ấy vẫn chưa đến thì chúng ta sẽ đi trước.⟧ — Várjunk még egy kicsit. Ha 30 perc múlva sem jön, előremegyünk.
+Betegségek diagnosztizálásával kapcsolatos kifejezések: ⟦đo huyết áp⟧ vérnyomást mérni | ⟦chụp X-quang⟧ röntgent csinálni | ⟦thực hiện siêu âm /nội soi⟧ ultrahangot / endoszkópiát végezni | ⟦xét nghiệm máu /nước tiểu⟧ vér- / vizeletvizsgálat | ⟦quan sát bằng mắt thường⟧ szabad szemmel megfigyelni
+2. gyakorlat — gyakorolja a párbeszédet a minta szerint.
+Minta (⟦Thời hạn nộp bài: thứ 6 tuần sau⟧ beadási határidő: jövő péntek): Ⓐ ⟦Liệu chúng ta có làm kịp không?⟧ — Vajon elkészülünk időben? Ⓑ ⟦Tớ cũng không biết nữa. Chúng ta cứ cố gắng hết sức nhé.⟧ — Én sem tudom. Tegyünk meg minden tőlünk telhetőt.
+❶ (⟦Dự báo thời tiết hôm nay⟧ mai időjárás-előrejelzés) Ⓐ ⟦Liệu hôm nay trời có mưa không nhỉ?⟧ — Vajon esni fog ma? Ⓑ ⟦Có thể lắm! Dạo này trời cứ mưa suốt.⟧ — Nagyon is lehet! Mostanában folyton esik.
+❷ (⟦Thông báo về việc đăng kí tham gia Cuộc thi Toán Quốc tế...⟧ értesítés a Nemzetközi Matematikaversenyre való jelentkezésről) Ⓐ ⟦Liệu lớp mình có bạn nào đăng kí tham gia không nhỉ?⟧ — Vajon jelentkezik valaki az osztályunkból? Ⓑ ⟦Chắc là có. Tại vì lớp mình có mấy bạn rất giỏi môn Toán.⟧ — Biztosan. Az osztályunkban van néhány nagyon jó matekos.
+Párbeszéd: Min-ho a sürgősségi ellátás után egy idővel ambuláns kontrollra jött.
+Orvos: ⟦Anh thấy sao rồi?⟧ — Hogy érzi magát?
+Min-ho: ⟦Tôi thấy đã đỡ hơn nhiều nhờ việc uống thuốc và thường xuyên tập thể dục.⟧ — A gyógyszereknek és a rendszeres mozgásnak köszönhetően sokkal jobban vagyok.
+Orvos: ⟦Thế, bây giờ anh hãy đi siêu âm và làm một vài xét nghiệm trước nhé. Y tá sẽ hướng dẫn anh.⟧ — Akkor most előbb menjen el ultrahangra és néhány vizsgálatra. A nővér majd eligazítja.
+(A vizsgálatok után)
+Min-ho: ⟦Thế nào bác sĩ? Liệu tuần sau tôi có thể đi công tác xa được không?⟧ — Na, doktor úr? Vajon mehetek jövő héten hosszú üzleti útra?
+Orvos: ⟦Đã tốt hơn nhiều rồi. Nếu anh tiếp tục uống thuốc và theo dõi sức khoẻ liên tục thì có lẽ sẽ không có vấn đề gì.⟧ — Már sokkal jobb. Ha továbbra is szedi a gyógyszert és folyamatosan figyeli az egészségét, valószínűleg nem lesz gond.
+Min-ho: ⟦Vâng. Cảm ơn bác sĩ.⟧ — Rendben. Köszönöm, doktor úr.
+Mintagyakorlat — kezelés: ⟦uống thuốc và thường xuyên tập thể dục⟧ (gyógyszer és rendszeres mozgás) / ⟦uống thuốc và ngừng làm việc trong một khoảng thời gian⟧ (gyógyszer és egy ideig munkaszünet); vizsgálat: ⟦siêu âm⟧ (ultrahang) / ⟦chụp X-quang⟧ (röntgen); terv: ⟦tuần sau tôi có thể đi công tác xa⟧ (jövő héten hosszú üzleti út) / ⟦sắp tới tôi có thể đi du lịch⟧ (hamarosan utazás); mire figyeljen: ⟦tiếp tục uống thuốc⟧ (tovább szedni a gyógyszert) / ⟦tránh vận động mạnh⟧ (kerülni a megerőltető mozgást).
+Új szavak: ⟦đo⟧ mérni | ⟦huyết áp⟧ vérnyomás | ⟦X-quang⟧ röntgen | ⟦thực hiện⟧ végrehajtani, elvégezni | ⟦siêu âm⟧ ultrahang | ⟦nội soi⟧ endoszkópia | ⟦nhiệm vụ⟧ feladat | ⟦kịp⟧ időben | ⟦thời hạn⟧ határidő | ⟦nước tiểu⟧ vizelet | ⟦quan sát⟧ megfigyelni | ⟦hướng dẫn⟧ útbaigazítani | ⟦thông báo⟧ értesítés, értesíteni | ⟦theo dõi⟧ követni, figyelni
+=id
+Ungkapan kunci: ⟦liệu⟧
+⟦liệu⟧ diletakkan di awal kalimat tanya ⟦có ~ không?⟧ untuk bertanya dengan ragu apakah sesuatu dapat terwujud: "kira-kira ~ bisa ~ tidak?"
+❶ ⟦Liệu chúng ta có thể hoàn thành nhiệm vụ trong tháng này được không?⟧ — Kira-kira kita bisa menyelesaikan tugas ini bulan ini tidak?
+❷ Ⓐ ⟦Liệu cô ấy có đến kịp không?⟧ — Kira-kira dia datang tepat waktu tidak? Ⓑ ⟦Chờ thêm một chút đã. 30 phút sau, nếu cô ấy vẫn chưa đến thì chúng ta sẽ đi trước.⟧ — Tunggu sebentar lagi. Kalau 30 menit lagi dia belum datang, kita berangkat duluan.
+Ungkapan tentang diagnosis penyakit: ⟦đo huyết áp⟧ mengukur tekanan darah | ⟦chụp X-quang⟧ rontgen | ⟦thực hiện siêu âm /nội soi⟧ melakukan USG / endoskopi | ⟦xét nghiệm máu /nước tiểu⟧ tes darah / urine | ⟦quan sát bằng mắt thường⟧ mengamati dengan mata telanjang
+Latihan pola 2 — latih percakapan seperti contoh.
+Contoh (⟦Thời hạn nộp bài: thứ 6 tuần sau⟧ batas waktu pengumpulan: Jumat depan): Ⓐ ⟦Liệu chúng ta có làm kịp không?⟧ — Kira-kira kita sempat menyelesaikannya tidak? Ⓑ ⟦Tớ cũng không biết nữa. Chúng ta cứ cố gắng hết sức nhé.⟧ — Aku juga tidak tahu. Kita berusaha sekuat tenaga saja.
+❶ (⟦Dự báo thời tiết hôm nay⟧ prakiraan cuaca hari ini) Ⓐ ⟦Liệu hôm nay trời có mưa không nhỉ?⟧ — Kira-kira hari ini hujan tidak, ya? Ⓑ ⟦Có thể lắm! Dạo này trời cứ mưa suốt.⟧ — Mungkin sekali! Akhir-akhir ini hujan terus.
+❷ (⟦Thông báo về việc đăng kí tham gia Cuộc thi Toán Quốc tế...⟧ pengumuman pendaftaran Olimpiade Matematika Internasional) Ⓐ ⟦Liệu lớp mình có bạn nào đăng kí tham gia không nhỉ?⟧ — Kira-kira ada teman sekelas kita yang mendaftar tidak, ya? Ⓑ ⟦Chắc là có. Tại vì lớp mình có mấy bạn rất giỏi môn Toán.⟧ — Pasti ada. Soalnya di kelas kita ada beberapa teman yang jago Matematika.
+Percakapan: Beberapa waktu setelah perawatan di IGD, Min-ho datang untuk kontrol rawat jalan.
+Dokter: ⟦Anh thấy sao rồi?⟧ — Bagaimana keadaan Anda?
+Min-ho: ⟦Tôi thấy đã đỡ hơn nhiều nhờ việc uống thuốc và thường xuyên tập thể dục.⟧ — Saya merasa jauh lebih baik berkat minum obat dan rutin berolahraga.
+Dokter: ⟦Thế, bây giờ anh hãy đi siêu âm và làm một vài xét nghiệm trước nhé. Y tá sẽ hướng dẫn anh.⟧ — Baik, sekarang silakan USG dan beberapa pemeriksaan dulu. Perawat akan mengantar Anda.
+(Setelah pemeriksaan selesai)
+Min-ho: ⟦Thế nào bác sĩ? Liệu tuần sau tôi có thể đi công tác xa được không?⟧ — Bagaimana, Dok? Kira-kira minggu depan saya bisa dinas ke luar kota tidak?
+Dokter: ⟦Đã tốt hơn nhiều rồi. Nếu anh tiếp tục uống thuốc và theo dõi sức khoẻ liên tục thì có lẽ sẽ không có vấn đề gì.⟧ — Sudah jauh membaik. Kalau Anda terus minum obat dan memantau kesehatan secara berkala, mungkin tidak ada masalah.
+Min-ho: ⟦Vâng. Cảm ơn bác sĩ.⟧ — Baik. Terima kasih, Dok.
+Latihan pola — cara pengobatan: ⟦uống thuốc và thường xuyên tập thể dục⟧ (minum obat dan rutin berolahraga) / ⟦uống thuốc và ngừng làm việc trong một khoảng thời gian⟧ (minum obat dan berhenti bekerja untuk sementara); pemeriksaan: ⟦siêu âm⟧ (USG) / ⟦chụp X-quang⟧ (rontgen); rencana: ⟦tuần sau tôi có thể đi công tác xa⟧ (dinas jauh minggu depan) / ⟦sắp tới tôi có thể đi du lịch⟧ (segera berwisata); yang perlu diperhatikan: ⟦tiếp tục uống thuốc⟧ (terus minum obat) / ⟦tránh vận động mạnh⟧ (menghindari aktivitas berat).
+Kosakata baru: ⟦đo⟧ mengukur | ⟦huyết áp⟧ tekanan darah | ⟦X-quang⟧ rontgen | ⟦thực hiện⟧ melaksanakan | ⟦siêu âm⟧ USG | ⟦nội soi⟧ endoskopi | ⟦nhiệm vụ⟧ tugas | ⟦kịp⟧ tepat waktu, sempat | ⟦thời hạn⟧ batas waktu | ⟦nước tiểu⟧ urine | ⟦quan sát⟧ mengamati | ⟦hướng dẫn⟧ memandu | ⟦thông báo⟧ pengumuman, mengumumkan | ⟦theo dõi⟧ mengikuti, memantau
+=ja
+核心表現：⟦liệu⟧
+⟦liệu⟧ は ⟦có ~ không?⟧ 疑問文の文頭に置かれ、ある事の実現可能性に疑いを抱きながら質問するときに使う表現です（「はたして～だろうか」）。
+❶ ⟦Liệu chúng ta có thể hoàn thành nhiệm vụ trong tháng này được không?⟧ — 私たちは今月中に任務を完了できるだろうか。
+❷ Ⓐ ⟦Liệu cô ấy có đến kịp không?⟧ — 彼女は間に合うかな。 Ⓑ ⟦Chờ thêm một chút đã. 30 phút sau, nếu cô ấy vẫn chưa đến thì chúng ta sẽ đi trước.⟧ — まずもう少し待ってみよう。30分たっても来なかったら、私たちは先に行こう。
+病気の診断に関する表現：⟦đo huyết áp⟧ 血圧を測る | ⟦chụp X-quang⟧ レントゲンを撮る | ⟦thực hiện siêu âm /nội soi⟧ 超音波検査 / 内視鏡検査をする | ⟦xét nghiệm máu /nước tiểu⟧ 血液検査 / 尿検査 | ⟦quan sát bằng mắt thường⟧ 肉眼で観察する
+文型練習2 — 例のように会話を練習してみましょう。
+例（⟦Thời hạn nộp bài: thứ 6 tuần sau⟧ 提出期限：来週金曜日）：Ⓐ ⟦Liệu chúng ta có làm kịp không?⟧ — 私たち、間に合うかな。 Ⓑ ⟦Tớ cũng không biết nữa. Chúng ta cứ cố gắng hết sức nhé.⟧ — 私もわからない。とにかく全力でがんばろう。
+❶（⟦Dự báo thời tiết hôm nay⟧ 今日の天気予報）Ⓐ ⟦Liệu hôm nay trời có mưa không nhỉ?⟧ — 今日は雨が降るかな。 Ⓑ ⟦Có thể lắm! Dạo này trời cứ mưa suốt.⟧ — 十分ありうるね！最近ずっと雨ばかりだから。
+❷（⟦Thông báo về việc đăng kí tham gia Cuộc thi Toán Quốc tế...⟧ 国際数学コンテスト参加申し込みのお知らせ）Ⓐ ⟦Liệu lớp mình có bạn nào đăng kí tham gia không nhỉ?⟧ — うちのクラスで申し込む人はいるかな。 Ⓑ ⟦Chắc là có. Tại vì lớp mình có mấy bạn rất giỏi môn Toán.⟧ — きっといるよ。うちのクラスには数学がすごく得意な子が何人かいるから。
+会話：ミンホが救急治療を受けてからしばらくして外来診療に来ました。
+医師：⟦Anh thấy sao rồi?⟧ — 具合はどうですか。
+ミンホ：⟦Tôi thấy đã đỡ hơn nhiều nhờ việc uống thuốc và thường xuyên tập thể dục.⟧ — 薬を飲んで、定期的に運動しているおかげで、ずいぶん良くなりました。
+医師：⟦Thế, bây giờ anh hãy đi siêu âm và làm một vài xét nghiệm trước nhé. Y tá sẽ hướng dẫn anh.⟧ — では、まず超音波検査といくつかの検査を受けてください。看護師がご案内します。
+（検査を終えた後）
+ミンホ：⟦Thế nào bác sĩ? Liệu tuần sau tôi có thể đi công tác xa được không?⟧ — どうでしょうか、先生。来週、遠くへ出張に行けるでしょうか。
+医師：⟦Đã tốt hơn nhiều rồi. Nếu anh tiếp tục uống thuốc và theo dõi sức khoẻ liên tục thì có lẽ sẽ không có vấn đề gì.⟧ — かなり良くなりました。薬を飲み続けて健康状態を継続的に見ていけば、おそらく問題ないでしょう。
+ミンホ：⟦Vâng. Cảm ơn bác sĩ.⟧ — はい。ありがとうございます、先生。
+文型練習 — 治療方法：⟦uống thuốc và thường xuyên tập thể dục⟧（薬を飲み定期的に運動する）/ ⟦uống thuốc và ngừng làm việc trong một khoảng thời gian⟧（薬を飲みしばらく仕事を休む）；検査方法：⟦siêu âm⟧（超音波）/ ⟦chụp X-quang⟧（レントゲン）；予定：⟦tuần sau tôi có thể đi công tác xa⟧（来週遠くへ出張）/ ⟦sắp tới tôi có thể đi du lịch⟧（近いうちに旅行）；注意点：⟦tiếp tục uống thuốc⟧（薬を飲み続ける）/ ⟦tránh vận động mạnh⟧（激しい運動を避ける）。
+新出単語：⟦đo⟧ 測定する | ⟦huyết áp⟧ 血圧 | ⟦X-quang⟧ レントゲン | ⟦thực hiện⟧ 実施する | ⟦siêu âm⟧ 超音波 | ⟦nội soi⟧ 内視鏡 | ⟦nhiệm vụ⟧ 任務 | ⟦kịp⟧ 間に合う | ⟦thời hạn⟧ 期限 | ⟦nước tiểu⟧ 尿 | ⟦quan sát⟧ 観察する | ⟦hướng dẫn⟧ 案内する | ⟦thông báo⟧ 通知、通知する | ⟦theo dõi⟧ 見守る、追跡する
+=pl
+Kluczowe wyrażenie: ⟦liệu⟧
+⟦liệu⟧ stoi na początku pytania typu ⟦có ~ không?⟧ i używa się go, gdy pytamy z powątpiewaniem, czy coś może się urzeczywistnić: „czy aby ~?, ciekawe, czy ~”.
+❶ ⟦Liệu chúng ta có thể hoàn thành nhiệm vụ trong tháng này được không?⟧ — Czy aby zdołamy wykonać zadanie w tym miesiącu?
+❷ Ⓐ ⟦Liệu cô ấy có đến kịp không?⟧ — Ciekawe, czy zdąży przyjść. Ⓑ ⟦Chờ thêm một chút đã. 30 phút sau, nếu cô ấy vẫn chưa đến thì chúng ta sẽ đi trước.⟧ — Poczekajmy jeszcze chwilę. Jeśli za 30 minut jej nie będzie, pójdziemy pierwsi.
+Wyrażenia związane z diagnozowaniem chorób: ⟦đo huyết áp⟧ zmierzyć ciśnienie | ⟦chụp X-quang⟧ zrobić prześwietlenie | ⟦thực hiện siêu âm /nội soi⟧ wykonać USG / endoskopię | ⟦xét nghiệm máu /nước tiểu⟧ badanie krwi / moczu | ⟦quan sát bằng mắt thường⟧ obserwować gołym okiem
+Ćwiczenie 2 — ćwicz dialog jak we wzorze.
+Wzór (⟦Thời hạn nộp bài: thứ 6 tuần sau⟧ termin oddania: przyszły piątek): Ⓐ ⟦Liệu chúng ta có làm kịp không?⟧ — Czy aby zdążymy? Ⓑ ⟦Tớ cũng không biết nữa. Chúng ta cứ cố gắng hết sức nhé.⟧ — Też nie wiem. Po prostu starajmy się z całych sił.
+❶ (⟦Dự báo thời tiết hôm nay⟧ dzisiejsza prognoza pogody) Ⓐ ⟦Liệu hôm nay trời có mưa không nhỉ?⟧ — Ciekawe, czy dziś będzie padać. Ⓑ ⟦Có thể lắm! Dạo này trời cứ mưa suốt.⟧ — Bardzo możliwe! Ostatnio ciągle pada.
+❷ (⟦Thông báo về việc đăng kí tham gia Cuộc thi Toán Quốc tế...⟧ ogłoszenie o zapisach na Międzynarodowy Konkurs Matematyczny) Ⓐ ⟦Liệu lớp mình có bạn nào đăng kí tham gia không nhỉ?⟧ — Ciekawe, czy ktoś z naszej klasy się zapisze. Ⓑ ⟦Chắc là có. Tại vì lớp mình có mấy bạn rất giỏi môn Toán.⟧ — Na pewno. W naszej klasie jest kilka osób bardzo dobrych z matematyki.
+Dialog: Jakiś czas po leczeniu na izbie przyjęć Min-ho przyszedł na wizytę kontrolną.
+Lekarz: ⟦Anh thấy sao rồi?⟧ — Jak się pan czuje?
+Min-ho: ⟦Tôi thấy đã đỡ hơn nhiều nhờ việc uống thuốc và thường xuyên tập thể dục.⟧ — Dzięki lekom i regularnym ćwiczeniom czuję się dużo lepiej.
+Lekarz: ⟦Thế, bây giờ anh hãy đi siêu âm và làm một vài xét nghiệm trước nhé. Y tá sẽ hướng dẫn anh.⟧ — Dobrze, to teraz najpierw proszę iść na USG i kilka badań. Pielęgniarka pana pokieruje.
+(Po badaniach)
+Min-ho: ⟦Thế nào bác sĩ? Liệu tuần sau tôi có thể đi công tác xa được không?⟧ — I jak, panie doktorze? Czy aby będę mógł w przyszłym tygodniu pojechać w daleką delegację?
+Lekarz: ⟦Đã tốt hơn nhiều rồi. Nếu anh tiếp tục uống thuốc và theo dõi sức khoẻ liên tục thì có lẽ sẽ không có vấn đề gì.⟧ — Jest dużo lepiej. Jeśli będzie pan dalej brał leki i stale monitorował zdrowie, to chyba nie będzie problemu.
+Min-ho: ⟦Vâng. Cảm ơn bác sĩ.⟧ — Dobrze. Dziękuję, panie doktorze.
+Ćwiczenie wzorców — leczenie: ⟦uống thuốc và thường xuyên tập thể dục⟧ (leki i regularne ćwiczenia) / ⟦uống thuốc và ngừng làm việc trong một khoảng thời gian⟧ (leki i przerwa w pracy na jakiś czas); badanie: ⟦siêu âm⟧ (USG) / ⟦chụp X-quang⟧ (prześwietlenie); plan: ⟦tuần sau tôi có thể đi công tác xa⟧ (daleka delegacja w przyszłym tygodniu) / ⟦sắp tới tôi có thể đi du lịch⟧ (wkrótce podróż); na co uważać: ⟦tiếp tục uống thuốc⟧ (dalej brać leki) / ⟦tránh vận động mạnh⟧ (unikać dużego wysiłku).
+Nowe słówka: ⟦đo⟧ mierzyć | ⟦huyết áp⟧ ciśnienie krwi | ⟦X-quang⟧ prześwietlenie | ⟦thực hiện⟧ wykonać | ⟦siêu âm⟧ USG | ⟦nội soi⟧ endoskopia | ⟦nhiệm vụ⟧ zadanie | ⟦kịp⟧ zdążyć, na czas | ⟦thời hạn⟧ termin | ⟦nước tiểu⟧ mocz | ⟦quan sát⟧ obserwować | ⟦hướng dẫn⟧ pokierować | ⟦thông báo⟧ ogłoszenie, ogłosić | ⟦theo dõi⟧ śledzić, monitorować

@@ -1,0 +1,211 @@
+@@ pdf-grammar-b6b17be338a8c391#0
+=cs
+Klíčový výraz: ⟦lẽ ra⟧
+⟦lẽ ra⟧ se používá, když mluvíme o něčem, co jsme chtěli udělat, ale z nějakého důvodu jsme to neudělali: „měl jsem ~, chtěl jsem ~“. Ve stejném významu se používá i ⟦đáng ra⟧ nebo ⟦đáng lẽ (ra)⟧. Když mluvčí lituje něčeho, co se už stalo, nebo to hodnotí jako nesprávné („měl bych býval ~“), přidá se za ⟦lẽ ra⟧ či ⟦đáng ra⟧ ještě ⟦nên⟧ nebo ⟦phải⟧.
+❶ ⟦Lẽ ra hôm qua tôi đã đến bệnh viện thăm chị ấy nhưng đột xuất có việc rất gấp nên không thể đến được.⟧ — Včera jsem ji měl jít navštívit do nemocnice, ale nečekaně se objevila velmi naléhavá záležitost, takže jsem nemohl.
+❷ ⟦Lẽ ra anh phải chú ý đến điều ấy...⟧ — Měl jsem si toho všimnout…
+❸ ⟦Hôm đó, lẽ ra em không nên nói với chị ấy như vậy...⟧ — Ten den jsem jí to neměla takhle říkat…
+Výrazy k akutním příznakům: ⟦sốt cao⟧ vysoká horečka | ⟦khó thở⟧ dušnost | ⟦gãy xương⟧ zlomenina | ⟦ho ra máu⟧ vykašlávání krve | ⟦rối loạn nhận thức⟧ porucha vědomí
+Procvičování 1 — veďte rozhovor podle vzoru s danými výrazy.
+Vzor (⟦tốt nghiệp năm này⟧ absolvovat letos; ⟦do bị tai nạn giao thông, phải nghỉ học một năm⟧ kvůli dopravní nehodě musel rok vynechat): Ⓐ ⟦Em ấy đã tốt nghiệp chưa?⟧ — Už dostudoval? Ⓑ ⟦Chưa. Lẽ ra em ấy đã tốt nghiệp năm nay nhưng do bị tai nạn giao thông, phải nghỉ học một năm nên em ấy vẫn chưa tốt nghiệp.⟧ — Ne. Letos měl dostudovat, ale kvůli dopravní nehodě musel rok vynechat, takže ještě nedostudoval.
+❶ (⟦đi công tác⟧ jet služebně; ⟦tự nhiên bị ốm suốt mấy ngày⟧ nečekaně byl několik dní nemocný) Ⓐ ⟦Cô ấy đi đâu rồi?⟧ — Kam odjela? Ⓑ ⟦Cô ấy đi công tác rồi. Lẽ ra anh đi công tác nhưng tự nhiên bị ốm suốt mấy ngày nên cô ấy đã đi công tác thay cho anh.⟧ — Odjela služebně. Měl jsem jet já, ale nečekaně jsem byl několik dní nemocný, tak jela místo mě.
+❷ (⟦không nên ngủ muộn⟧ neměl jít spát pozdě; ⟦tối qua chơi game vui quá⟧ včera večer byla hra moc zábavná) Ⓐ ⟦Sao anh đến muộn thế?⟧ — Proč jdeš tak pozdě? Ⓑ ⟦Lẽ ra anh không nên ngủ muộn nhưng tối qua chơi game vui quá nên anh chơi tới 3 giờ sáng mới đi ngủ rồi sáng nay thức dậy muộn.⟧ — Neměl jsem chodit spát pozdě, ale včera večer mě hra tak bavila, že jsem hrál až do tří do rána, a pak jsem ráno zaspal.
+Rozhovor: Min-ho přišel v noci na pohotovost.
+Lékař: ⟦Anh bị đau chỗ nào?⟧ — Kde vás to bolí?
+Min-ho: ⟦Tôi thấy đau ngực và khó thở.⟧ — Bolí mě na hrudi a špatně se mi dýchá.
+Lékař: ⟦Để tôi xem.⟧ — Ukažte, podívám se. (Po krátkém vyšetření)
+Lékař: ⟦Có vẻ anh có vấn đề về tim.⟧ — Vypadá to, že máte potíže se srdcem.
+Min-ho: ⟦Thế, tôi phải làm sao, bác sĩ?⟧ — Co mám tedy dělat, pane doktore?
+Lékař: ⟦Trước tiên, anh hãy truyền nước và nghỉ ngơi ở đây, sau đó chúng ta sẽ làm thêm một vài xét nghiệm chuyên sâu nữa nhé.⟧ — Nejdřív dostanete infuzi a odpočinete si tady, potom uděláme ještě několik podrobnějších vyšetření.
+Min-ho: ⟦Lẽ ra tôi phải đến bệnh viện sớm hơn... Vâng, tôi biết rồi. Tôi sẽ làm theo lời bác sĩ.⟧ — Měl jsem do nemocnice přijít dřív… Dobře, rozumím. Udělám, co říkáte.
+Procvičování — co se stalo: ⟦thấy đau ngực và khó thở⟧ (bolest na hrudi a dušnost) / ⟦bị sốt cao hơn 39 độ⟧ (horečka přes 39 stupňů); jaký orgán: ⟦tim⟧ (srdce) / ⟦phổi⟧ (plíce); první pomoc: ⟦truyền nước và nghỉ ngơi ở đây⟧ (infuze a odpočinek tady) / ⟦uống thuốc hạ sốt⟧ (vzít lék na snížení horečky); co si uvědomil: ⟦phải đến bệnh viện sớm hơn⟧ (měl přijít do nemocnice dřív) / ⟦phải tự chăm sóc sức khoẻ bản thân mình tốt hơn⟧ (musí se o své zdraví starat lépe).
+Nová slovíčka: ⟦thở⟧ dýchat | ⟦gãy⟧ zlomit se | ⟦rối loạn⟧ porucha, zmatený | ⟦nhận thức⟧ vnímání, vědomí | ⟦truyền nước⟧ dostat infuzi | ⟦xét nghiệm⟧ (klinické) vyšetření | ⟦chuyên⟧ odborný | ⟦đột xuất⟧ nečekaný, náhlý
+=zh_cn
+核心表达：⟦lẽ ra⟧
+⟦lẽ ra⟧ 用于谈论本打算做、却因某种原因没能做的事，意为“本来要……/本该……”。同样的意思也可以用 ⟦đáng ra⟧ 或 ⟦đáng lẽ (ra)⟧。当说话人对已发生的事感到后悔或认为那样做不对时（“本该……/早知道就……”），在 ⟦lẽ ra⟧ 或 ⟦đáng ra⟧ 后面加上 ⟦nên⟧ 或 ⟦phải⟧。
+❶ ⟦Lẽ ra hôm qua tôi đã đến bệnh viện thăm chị ấy nhưng đột xuất có việc rất gấp nên không thể đến được.⟧ —— 昨天我本该去医院探望她，但突然有很急的事，所以没能去。
+❷ ⟦Lẽ ra anh phải chú ý đến điều ấy...⟧ —— 我本该注意到那一点的……
+❸ ⟦Hôm đó, lẽ ra em không nên nói với chị ấy như vậy...⟧ —— 那天，我本不该那样跟她说的……
+急症症状相关表达：⟦sốt cao⟧ 高烧 | ⟦khó thở⟧ 呼吸困难 | ⟦gãy xương⟧ 骨折 | ⟦ho ra máu⟧ 咳血 | ⟦rối loạn nhận thức⟧ 意识障碍
+句型练习1 —— 仿照范例用所给表达对话。
+范例（⟦tốt nghiệp năm này⟧ 今年毕业；⟦do bị tai nạn giao thông, phải nghỉ học một năm⟧ 因车祸休学一年）：Ⓐ ⟦Em ấy đã tốt nghiệp chưa?⟧ —— 他毕业了吗？ Ⓑ ⟦Chưa. Lẽ ra em ấy đã tốt nghiệp năm nay nhưng do bị tai nạn giao thông, phải nghỉ học một năm nên em ấy vẫn chưa tốt nghiệp.⟧ —— 还没有。他本该今年毕业，但因为出了车祸休学一年，所以还没毕业。
+❶（⟦đi công tác⟧ 出差；⟦tự nhiên bị ốm suốt mấy ngày⟧ 突然病了好几天）Ⓐ ⟦Cô ấy đi đâu rồi?⟧ —— 她去哪儿了？ Ⓑ ⟦Cô ấy đi công tác rồi. Lẽ ra anh đi công tác nhưng tự nhiên bị ốm suốt mấy ngày nên cô ấy đã đi công tác thay cho anh.⟧ —— 她出差去了。本来该我去出差，但我突然病了好几天，所以她替我去了。
+❷（⟦không nên ngủ muộn⟧ 不该晚睡；⟦tối qua chơi game vui quá⟧ 昨晚游戏玩得太开心）Ⓐ ⟦Sao anh đến muộn thế?⟧ —— 你怎么来得这么晚？ Ⓑ ⟦Lẽ ra anh không nên ngủ muộn nhưng tối qua chơi game vui quá nên anh chơi tới 3 giờ sáng mới đi ngủ rồi sáng nay thức dậy muộn.⟧ —— 我本不该晚睡，但昨晚游戏太好玩了，我玩到凌晨3点才睡，结果今早起晚了。
+对话：敏浩半夜来到急诊室。
+医生：⟦Anh bị đau chỗ nào?⟧ —— 你哪里不舒服？
+敏浩：⟦Tôi thấy đau ngực và khó thở.⟧ —— 我胸口疼，呼吸困难。
+医生：⟦Để tôi xem.⟧ —— 我来看看。（简单检查后）
+医生：⟦Có vẻ anh có vấn đề về tim.⟧ —— 看起来你的心脏有问题。
+敏浩：⟦Thế, tôi phải làm sao, bác sĩ?⟧ —— 那我该怎么办，医生？
+医生：⟦Trước tiên, anh hãy truyền nước và nghỉ ngơi ở đây, sau đó chúng ta sẽ làm thêm một vài xét nghiệm chuyên sâu nữa nhé.⟧ —— 首先你先在这里输液休息，之后我们再做几项深入检查。
+敏浩：⟦Lẽ ra tôi phải đến bệnh viện sớm hơn... Vâng, tôi biết rồi. Tôi sẽ làm theo lời bác sĩ.⟧ —— 我本该早点来医院的……好的，我知道了。我会听医生的。
+句型练习 —— 怎么了：⟦thấy đau ngực và khó thở⟧（胸痛、呼吸困难）/ ⟦bị sốt cao hơn 39 độ⟧（发烧超过39度）；哪里有问题：⟦tim⟧（心脏）/ ⟦phổi⟧（肺）；怎么急救：⟦truyền nước và nghỉ ngơi ở đây⟧（在这里输液休息）/ ⟦uống thuốc hạ sốt⟧（吃退烧药）；意识到什么：⟦phải đến bệnh viện sớm hơn⟧（该早点来医院）/ ⟦phải tự chăm sóc sức khoẻ bản thân mình tốt hơn⟧（该更好地照顾自己的健康）。
+新单词：⟦thở⟧ 呼吸 | ⟦gãy⟧ 折断 | ⟦rối loạn⟧ 障碍、紊乱 | ⟦nhận thức⟧ 认知、意识 | ⟦truyền nước⟧ 输液 | ⟦xét nghiệm⟧（临床）检查 | ⟦chuyên⟧ 专门 | ⟦đột xuất⟧ 突然的
+=zh
+核心表達：⟦lẽ ra⟧
+⟦lẽ ra⟧ 用於談論本打算做、卻因某種原因沒能做的事，意為「本來要……/本該……」。同樣的意思也可以用 ⟦đáng ra⟧ 或 ⟦đáng lẽ (ra)⟧。當說話人對已發生的事感到後悔或認為那樣做不對時（「本該……/早知道就……」），在 ⟦lẽ ra⟧ 或 ⟦đáng ra⟧ 後面加上 ⟦nên⟧ 或 ⟦phải⟧。
+❶ ⟦Lẽ ra hôm qua tôi đã đến bệnh viện thăm chị ấy nhưng đột xuất có việc rất gấp nên không thể đến được.⟧ —— 昨天我本該去醫院探望她，但突然有很急的事，所以沒能去。
+❷ ⟦Lẽ ra anh phải chú ý đến điều ấy...⟧ —— 我本該注意到那一點的……
+❸ ⟦Hôm đó, lẽ ra em không nên nói với chị ấy như vậy...⟧ —— 那天，我本不該那樣跟她說的……
+急症症狀相關表達：⟦sốt cao⟧ 高燒 | ⟦khó thở⟧ 呼吸困難 | ⟦gãy xương⟧ 骨折 | ⟦ho ra máu⟧ 咳血 | ⟦rối loạn nhận thức⟧ 意識障礙
+句型練習1 —— 仿照範例用所給表達對話。
+範例（⟦tốt nghiệp năm này⟧ 今年畢業；⟦do bị tai nạn giao thông, phải nghỉ học một năm⟧ 因車禍休學一年）：Ⓐ ⟦Em ấy đã tốt nghiệp chưa?⟧ —— 他畢業了嗎？ Ⓑ ⟦Chưa. Lẽ ra em ấy đã tốt nghiệp năm nay nhưng do bị tai nạn giao thông, phải nghỉ học một năm nên em ấy vẫn chưa tốt nghiệp.⟧ —— 還沒有。他本該今年畢業，但因為出了車禍休學一年，所以還沒畢業。
+❶（⟦đi công tác⟧ 出差；⟦tự nhiên bị ốm suốt mấy ngày⟧ 突然病了好幾天）Ⓐ ⟦Cô ấy đi đâu rồi?⟧ —— 她去哪裡了？ Ⓑ ⟦Cô ấy đi công tác rồi. Lẽ ra anh đi công tác nhưng tự nhiên bị ốm suốt mấy ngày nên cô ấy đã đi công tác thay cho anh.⟧ —— 她出差去了。本來該我去出差，但我突然病了好幾天，所以她替我去了。
+❷（⟦không nên ngủ muộn⟧ 不該晚睡；⟦tối qua chơi game vui quá⟧ 昨晚遊戲玩得太開心）Ⓐ ⟦Sao anh đến muộn thế?⟧ —— 你怎麼來得這麼晚？ Ⓑ ⟦Lẽ ra anh không nên ngủ muộn nhưng tối qua chơi game vui quá nên anh chơi tới 3 giờ sáng mới đi ngủ rồi sáng nay thức dậy muộn.⟧ —— 我本不該晚睡，但昨晚遊戲太好玩了，我玩到凌晨3點才睡，結果今早起晚了。
+對話：敏浩半夜來到急診室。
+醫生：⟦Anh bị đau chỗ nào?⟧ —— 你哪裡不舒服？
+敏浩：⟦Tôi thấy đau ngực và khó thở.⟧ —— 我胸口痛，呼吸困難。
+醫生：⟦Để tôi xem.⟧ —— 我來看看。（簡單檢查後）
+醫生：⟦Có vẻ anh có vấn đề về tim.⟧ —— 看起來你的心臟有問題。
+敏浩：⟦Thế, tôi phải làm sao, bác sĩ?⟧ —— 那我該怎麼辦，醫生？
+醫生：⟦Trước tiên, anh hãy truyền nước và nghỉ ngơi ở đây, sau đó chúng ta sẽ làm thêm một vài xét nghiệm chuyên sâu nữa nhé.⟧ —— 首先你先在這裡打點滴休息，之後我們再做幾項深入檢查。
+敏浩：⟦Lẽ ra tôi phải đến bệnh viện sớm hơn... Vâng, tôi biết rồi. Tôi sẽ làm theo lời bác sĩ.⟧ —— 我本該早點來醫院的……好的，我知道了。我會聽醫生的。
+句型練習 —— 怎麼了：⟦thấy đau ngực và khó thở⟧（胸痛、呼吸困難）/ ⟦bị sốt cao hơn 39 độ⟧（發燒超過39度）；哪裡有問題：⟦tim⟧（心臟）/ ⟦phổi⟧（肺）；怎麼急救：⟦truyền nước và nghỉ ngơi ở đây⟧（在這裡打點滴休息）/ ⟦uống thuốc hạ sốt⟧（吃退燒藥）；意識到什麼：⟦phải đến bệnh viện sớm hơn⟧（該早點來醫院）/ ⟦phải tự chăm sóc sức khoẻ bản thân mình tốt hơn⟧（該更好地照顧自己的健康）。
+新單字：⟦thở⟧ 呼吸 | ⟦gãy⟧ 折斷 | ⟦rối loạn⟧ 障礙、紊亂 | ⟦nhận thức⟧ 認知、意識 | ⟦truyền nước⟧ 打點滴 | ⟦xét nghiệm⟧（臨床）檢查 | ⟦chuyên⟧ 專門 | ⟦đột xuất⟧ 突然的
+=en
+Key expression: ⟦lẽ ra⟧
+⟦lẽ ra⟧ is used to talk about something you intended to do but couldn't for some reason: "was supposed to ~, should have ~". ⟦đáng ra⟧ or ⟦đáng lẽ (ra)⟧ are also used with the same meaning. When the speaker regrets something that has already happened or judges it wrong ("I should have ~ / I wish I had ~"), ⟦nên⟧ or ⟦phải⟧ is added after ⟦lẽ ra⟧ or ⟦đáng ra⟧.
+❶ ⟦Lẽ ra hôm qua tôi đã đến bệnh viện thăm chị ấy nhưng đột xuất có việc rất gấp nên không thể đến được.⟧ — I was supposed to visit her in hospital yesterday, but something very urgent suddenly came up, so I couldn't go.
+❷ ⟦Lẽ ra anh phải chú ý đến điều ấy...⟧ — I should have paid attention to that…
+❸ ⟦Hôm đó, lẽ ra em không nên nói với chị ấy như vậy...⟧ — That day, I shouldn't have spoken to her like that…
+Expressions for emergency symptoms: ⟦sốt cao⟧ high fever | ⟦khó thở⟧ difficulty breathing | ⟦gãy xương⟧ broken bone | ⟦ho ra máu⟧ coughing up blood | ⟦rối loạn nhận thức⟧ impaired consciousness
+Pattern practice 1 — talk as in the model using the given expressions.
+Model (⟦tốt nghiệp năm này⟧ graduate this year; ⟦do bị tai nạn giao thông, phải nghỉ học một năm⟧ had to take a year off because of a traffic accident): Ⓐ ⟦Em ấy đã tốt nghiệp chưa?⟧ — Has he graduated yet? Ⓑ ⟦Chưa. Lẽ ra em ấy đã tốt nghiệp năm nay nhưng do bị tai nạn giao thông, phải nghỉ học một năm nên em ấy vẫn chưa tốt nghiệp.⟧ — No. He was supposed to graduate this year, but he had a traffic accident and had to take a year off, so he hasn't graduated yet.
+❶ (⟦đi công tác⟧ go on a business trip; ⟦tự nhiên bị ốm suốt mấy ngày⟧ suddenly fell ill for several days) Ⓐ ⟦Cô ấy đi đâu rồi?⟧ — Where has she gone? Ⓑ ⟦Cô ấy đi công tác rồi. Lẽ ra anh đi công tác nhưng tự nhiên bị ốm suốt mấy ngày nên cô ấy đã đi công tác thay cho anh.⟧ — She's gone on a business trip. I was supposed to go, but I suddenly fell ill for several days, so she went in my place.
+❷ (⟦không nên ngủ muộn⟧ shouldn't have gone to bed late; ⟦tối qua chơi game vui quá⟧ the game was so much fun last night) Ⓐ ⟦Sao anh đến muộn thế?⟧ — Why are you so late? Ⓑ ⟦Lẽ ra anh không nên ngủ muộn nhưng tối qua chơi game vui quá nên anh chơi tới 3 giờ sáng mới đi ngủ rồi sáng nay thức dậy muộn.⟧ — I shouldn't have gone to bed late, but the game was so much fun last night that I played until 3 a.m., and then I overslept this morning.
+Dialogue: Min-ho has come to the emergency room in the middle of the night.
+Doctor: ⟦Anh bị đau chỗ nào?⟧ — Where does it hurt?
+Min-ho: ⟦Tôi thấy đau ngực và khó thở.⟧ — I have chest pain and I'm finding it hard to breathe.
+Doctor: ⟦Để tôi xem.⟧ — Let me have a look. (After a brief examination)
+Doctor: ⟦Có vẻ anh có vấn đề về tim.⟧ — It looks like you have a heart problem.
+Min-ho: ⟦Thế, tôi phải làm sao, bác sĩ?⟧ — So what should I do, doctor?
+Doctor: ⟦Trước tiên, anh hãy truyền nước và nghỉ ngơi ở đây, sau đó chúng ta sẽ làm thêm một vài xét nghiệm chuyên sâu nữa nhé.⟧ — First, you'll have a drip and rest here, and then we'll do a few more in-depth tests.
+Min-ho: ⟦Lẽ ra tôi phải đến bệnh viện sớm hơn... Vâng, tôi biết rồi. Tôi sẽ làm theo lời bác sĩ.⟧ — I should have come to the hospital sooner… OK, I understand. I'll do as you say.
+Pattern practice — what's wrong: ⟦thấy đau ngực và khó thở⟧ (chest pain and difficulty breathing) / ⟦bị sốt cao hơn 39 độ⟧ (a fever over 39 degrees); which organ: ⟦tim⟧ (heart) / ⟦phổi⟧ (lungs); first aid: ⟦truyền nước và nghỉ ngơi ở đây⟧ (a drip and rest here) / ⟦uống thuốc hạ sốt⟧ (take fever medicine); what he realised: ⟦phải đến bệnh viện sớm hơn⟧ (should have come to hospital sooner) / ⟦phải tự chăm sóc sức khoẻ bản thân mình tốt hơn⟧ (must take better care of his own health).
+New words: ⟦thở⟧ to breathe | ⟦gãy⟧ to break (bone) | ⟦rối loạn⟧ disorder, confused | ⟦nhận thức⟧ perception, awareness | ⟦truyền nước⟧ to have a drip | ⟦xét nghiệm⟧ (clinical) test | ⟦chuyên⟧ specialised | ⟦đột xuất⟧ sudden, unexpected
+=fr
+Expression clé : ⟦lẽ ra⟧
+⟦lẽ ra⟧ s'emploie pour parler de ce qu'on comptait faire mais qu'on n'a pas pu faire pour une raison quelconque : « j'aurais dû ~, je devais ~ ». On emploie aussi ⟦đáng ra⟧ ou ⟦đáng lẽ (ra)⟧ dans le même sens. Quand le locuteur regrette un fait déjà survenu ou le juge incorrect (« j'aurais dû ~ »), on ajoute ⟦nên⟧ ou ⟦phải⟧ après ⟦lẽ ra⟧ ou ⟦đáng ra⟧.
+❶ ⟦Lẽ ra hôm qua tôi đã đến bệnh viện thăm chị ấy nhưng đột xuất có việc rất gấp nên không thể đến được.⟧ — Hier, je devais aller lui rendre visite à l'hôpital, mais une affaire très urgente est soudain survenue et je n'ai pas pu y aller.
+❷ ⟦Lẽ ra anh phải chú ý đến điều ấy...⟧ — J'aurais dû faire attention à cela…
+❸ ⟦Hôm đó, lẽ ra em không nên nói với chị ấy như vậy...⟧ — Ce jour-là, je n'aurais pas dû lui parler ainsi…
+Expressions sur les symptômes d'urgence : ⟦sốt cao⟧ forte fièvre | ⟦khó thở⟧ difficulté à respirer | ⟦gãy xương⟧ fracture | ⟦ho ra máu⟧ cracher du sang en toussant | ⟦rối loạn nhận thức⟧ troubles de la conscience
+Exercice 1 — dialoguez comme dans le modèle avec les expressions données.
+Modèle (⟦tốt nghiệp năm này⟧ obtenir son diplôme cette année ; ⟦do bị tai nạn giao thông, phải nghỉ học một năm⟧ a dû interrompre ses études un an à cause d'un accident de la route) : Ⓐ ⟦Em ấy đã tốt nghiệp chưa?⟧ — Il a obtenu son diplôme ? Ⓑ ⟦Chưa. Lẽ ra em ấy đã tốt nghiệp năm nay nhưng do bị tai nạn giao thông, phải nghỉ học một năm nên em ấy vẫn chưa tốt nghiệp.⟧ — Non. Il aurait dû l'obtenir cette année, mais à cause d'un accident de la route il a dû interrompre ses études un an, donc il n'est pas encore diplômé.
+❶ (⟦đi công tác⟧ partir en déplacement ; ⟦tự nhiên bị ốm suốt mấy ngày⟧ soudain malade plusieurs jours) Ⓐ ⟦Cô ấy đi đâu rồi?⟧ — Où est-elle partie ? Ⓑ ⟦Cô ấy đi công tác rồi. Lẽ ra anh đi công tác nhưng tự nhiên bị ốm suốt mấy ngày nên cô ấy đã đi công tác thay cho anh.⟧ — Elle est partie en déplacement. C'est moi qui devais y aller, mais je suis soudain tombé malade plusieurs jours, alors elle y est allée à ma place.
+❷ (⟦không nên ngủ muộn⟧ n'aurait pas dû se coucher tard ; ⟦tối qua chơi game vui quá⟧ le jeu était trop amusant hier soir) Ⓐ ⟦Sao anh đến muộn thế?⟧ — Pourquoi arrives-tu si tard ? Ⓑ ⟦Lẽ ra anh không nên ngủ muộn nhưng tối qua chơi game vui quá nên anh chơi tới 3 giờ sáng mới đi ngủ rồi sáng nay thức dậy muộn.⟧ — Je n'aurais pas dû me coucher tard, mais hier soir le jeu était si amusant que j'ai joué jusqu'à 3 h du matin, et ce matin je me suis réveillé en retard.
+Dialogue : Min-ho arrive aux urgences en pleine nuit.
+Médecin : ⟦Anh bị đau chỗ nào?⟧ — Où avez-vous mal ?
+Min-ho : ⟦Tôi thấy đau ngực và khó thở.⟧ — J'ai mal à la poitrine et du mal à respirer.
+Médecin : ⟦Để tôi xem.⟧ — Laissez-moi voir. (Après un bref examen)
+Médecin : ⟦Có vẻ anh có vấn đề về tim.⟧ — On dirait que vous avez un problème cardiaque.
+Min-ho : ⟦Thế, tôi phải làm sao, bác sĩ?⟧ — Alors, que dois-je faire, docteur ?
+Médecin : ⟦Trước tiên, anh hãy truyền nước và nghỉ ngơi ở đây, sau đó chúng ta sẽ làm thêm một vài xét nghiệm chuyên sâu nữa nhé.⟧ — D'abord, on vous met sous perfusion et vous vous reposez ici, puis nous ferons quelques examens approfondis.
+Min-ho : ⟦Lẽ ra tôi phải đến bệnh viện sớm hơn... Vâng, tôi biết rồi. Tôi sẽ làm theo lời bác sĩ.⟧ — J'aurais dû venir à l'hôpital plus tôt… D'accord, j'ai compris. Je ferai ce que vous dites.
+Exercices — ce qui ne va pas : ⟦thấy đau ngực và khó thở⟧ (douleur thoracique et difficulté à respirer) / ⟦bị sốt cao hơn 39 độ⟧ (fièvre de plus de 39 degrés) ; quel organe : ⟦tim⟧ (cœur) / ⟦phổi⟧ (poumons) ; premiers soins : ⟦truyền nước và nghỉ ngơi ở đây⟧ (perfusion et repos ici) / ⟦uống thuốc hạ sốt⟧ (prendre un antipyrétique) ; ce qu'il a compris : ⟦phải đến bệnh viện sớm hơn⟧ (aurait dû venir plus tôt) / ⟦phải tự chăm sóc sức khoẻ bản thân mình tốt hơn⟧ (doit mieux prendre soin de sa santé).
+Nouveaux mots : ⟦thở⟧ respirer | ⟦gãy⟧ se casser | ⟦rối loạn⟧ trouble, désordonné | ⟦nhận thức⟧ perception, conscience | ⟦truyền nước⟧ être sous perfusion | ⟦xét nghiệm⟧ examen (clinique) | ⟦chuyên⟧ spécialisé | ⟦đột xuất⟧ soudain, imprévu
+=de
+Schlüsselausdruck: ⟦lẽ ra⟧
+⟦lẽ ra⟧ wird verwendet, wenn man über etwas spricht, das man tun wollte, aber aus irgendeinem Grund nicht getan hat: „eigentlich hätte ich ~, ich sollte ~“. Mit gleicher Bedeutung werden auch ⟦đáng ra⟧ oder ⟦đáng lẽ (ra)⟧ gebraucht. Bedauert der Sprecher etwas bereits Geschehenes oder bewertet es als falsch („ich hätte ~ sollen“), folgt auf ⟦lẽ ra⟧ oder ⟦đáng ra⟧ noch ⟦nên⟧ oder ⟦phải⟧.
+❶ ⟦Lẽ ra hôm qua tôi đã đến bệnh viện thăm chị ấy nhưng đột xuất có việc rất gấp nên không thể đến được.⟧ — Eigentlich wollte ich sie gestern im Krankenhaus besuchen, aber plötzlich kam etwas sehr Dringendes dazwischen, sodass ich nicht kommen konnte.
+❷ ⟦Lẽ ra anh phải chú ý đến điều ấy...⟧ — Darauf hätte ich achten sollen…
+❸ ⟦Hôm đó, lẽ ra em không nên nói với chị ấy như vậy...⟧ — An dem Tag hätte ich so nicht mit ihr reden sollen…
+Ausdrücke zu Notfallsymptomen: ⟦sốt cao⟧ hohes Fieber | ⟦khó thở⟧ Atemnot | ⟦gãy xương⟧ Knochenbruch | ⟦ho ra máu⟧ Blut husten | ⟦rối loạn nhận thức⟧ Bewusstseinsstörung
+Übung 1 — wie im Muster mit den vorgegebenen Ausdrücken sprechen.
+Muster (⟦tốt nghiệp năm này⟧ dieses Jahr abschließen; ⟦do bị tai nạn giao thông, phải nghỉ học một năm⟧ wegen eines Verkehrsunfalls ein Jahr pausieren müssen): Ⓐ ⟦Em ấy đã tốt nghiệp chưa?⟧ — Hat er seinen Abschluss schon? Ⓑ ⟦Chưa. Lẽ ra em ấy đã tốt nghiệp năm nay nhưng do bị tai nạn giao thông, phải nghỉ học một năm nên em ấy vẫn chưa tốt nghiệp.⟧ — Nein. Eigentlich hätte er dieses Jahr abgeschlossen, aber wegen eines Verkehrsunfalls musste er ein Jahr pausieren, deshalb hat er noch keinen Abschluss.
+❶ (⟦đi công tác⟧ auf Dienstreise gehen; ⟦tự nhiên bị ốm suốt mấy ngày⟧ plötzlich mehrere Tage krank) Ⓐ ⟦Cô ấy đi đâu rồi?⟧ — Wo ist sie hin? Ⓑ ⟦Cô ấy đi công tác rồi. Lẽ ra anh đi công tác nhưng tự nhiên bị ốm suốt mấy ngày nên cô ấy đã đi công tác thay cho anh.⟧ — Sie ist auf Dienstreise. Eigentlich hätte ich fahren sollen, aber ich war plötzlich mehrere Tage krank, also ist sie für mich gefahren.
+❷ (⟦không nên ngủ muộn⟧ nicht spät schlafen gehen sollen; ⟦tối qua chơi game vui quá⟧ gestern Abend war das Spiel so lustig) Ⓐ ⟦Sao anh đến muộn thế?⟧ — Warum kommst du so spät? Ⓑ ⟦Lẽ ra anh không nên ngủ muộn nhưng tối qua chơi game vui quá nên anh chơi tới 3 giờ sáng mới đi ngủ rồi sáng nay thức dậy muộn.⟧ — Ich hätte nicht so spät ins Bett gehen sollen, aber gestern Abend hat das Spiel so viel Spaß gemacht, dass ich bis 3 Uhr morgens gespielt und heute früh verschlafen habe.
+Dialog: Min-ho ist mitten in der Nacht in die Notaufnahme gekommen.
+Arzt: ⟦Anh bị đau chỗ nào?⟧ — Wo tut es Ihnen weh?
+Min-ho: ⟦Tôi thấy đau ngực và khó thở.⟧ — Ich habe Brustschmerzen und Atemnot.
+Arzt: ⟦Để tôi xem.⟧ — Lassen Sie mich sehen. (Nach einer kurzen Untersuchung)
+Arzt: ⟦Có vẻ anh có vấn đề về tim.⟧ — Es sieht so aus, als hätten Sie ein Herzproblem.
+Min-ho: ⟦Thế, tôi phải làm sao, bác sĩ?⟧ — Was soll ich dann tun, Herr Doktor?
+Arzt: ⟦Trước tiên, anh hãy truyền nước và nghỉ ngơi ở đây, sau đó chúng ta sẽ làm thêm một vài xét nghiệm chuyên sâu nữa nhé.⟧ — Zuerst bekommen Sie eine Infusion und ruhen sich hier aus, danach machen wir noch ein paar genauere Untersuchungen.
+Min-ho: ⟦Lẽ ra tôi phải đến bệnh viện sớm hơn... Vâng, tôi biết rồi. Tôi sẽ làm theo lời bác sĩ.⟧ — Ich hätte früher ins Krankenhaus kommen sollen… Gut, verstanden. Ich mache, was Sie sagen.
+Satzmusterübung — was fehlt: ⟦thấy đau ngực và khó thở⟧ (Brustschmerzen und Atemnot) / ⟦bị sốt cao hơn 39 độ⟧ (Fieber über 39 Grad); welches Organ: ⟦tim⟧ (Herz) / ⟦phổi⟧ (Lunge); Erstversorgung: ⟦truyền nước và nghỉ ngơi ở đây⟧ (Infusion und Ruhe hier) / ⟦uống thuốc hạ sốt⟧ (fiebersenkendes Mittel nehmen); Erkenntnis: ⟦phải đến bệnh viện sớm hơn⟧ (hätte früher ins Krankenhaus kommen sollen) / ⟦phải tự chăm sóc sức khoẻ bản thân mình tốt hơn⟧ (muss besser auf seine Gesundheit achten).
+Neue Wörter: ⟦thở⟧ atmen | ⟦gãy⟧ brechen | ⟦rối loạn⟧ Störung, durcheinander | ⟦nhận thức⟧ Wahrnehmung, Bewusstsein | ⟦truyền nước⟧ eine Infusion bekommen | ⟦xét nghiệm⟧ (klinische) Untersuchung | ⟦chuyên⟧ fachlich, spezialisiert | ⟦đột xuất⟧ plötzlich, unerwartet
+=hu
+Kulcskifejezés: ⟦lẽ ra⟧
+A ⟦lẽ ra⟧ akkor használatos, amikor olyasmiről beszélünk, amit meg akartunk tenni, de valamilyen okból nem tettük meg: „~ kellett volna, úgy volt, hogy ~”. Ugyanebben a jelentésben a ⟦đáng ra⟧ vagy ⟦đáng lẽ (ra)⟧ is használatos. Ha a beszélő megbán valamit, ami már megtörtént, vagy helytelennek ítéli („~ kellett volna”), a ⟦lẽ ra⟧ vagy ⟦đáng ra⟧ után ⟦nên⟧ vagy ⟦phải⟧ áll.
+❶ ⟦Lẽ ra hôm qua tôi đã đến bệnh viện thăm chị ấy nhưng đột xuất có việc rất gấp nên không thể đến được.⟧ — Tegnap meg kellett volna látogatnom őt a kórházban, de váratlanul nagyon sürgős dolgom akadt, így nem tudtam elmenni.
+❷ ⟦Lẽ ra anh phải chú ý đến điều ấy...⟧ — Oda kellett volna figyelnem erre…
+❸ ⟦Hôm đó, lẽ ra em không nên nói với chị ấy như vậy...⟧ — Aznap nem kellett volna így beszélnem vele…
+Sürgősségi tünetek kifejezései: ⟦sốt cao⟧ magas láz | ⟦khó thở⟧ nehézlégzés | ⟦gãy xương⟧ csonttörés | ⟦ho ra máu⟧ vért köhög | ⟦rối loạn nhận thức⟧ tudatzavar
+1. gyakorlat — beszélgessen a minta szerint a megadott kifejezésekkel.
+Minta (⟦tốt nghiệp năm này⟧ idén végez; ⟦do bị tai nạn giao thông, phải nghỉ học một năm⟧ közlekedési baleset miatt egy évet ki kellett hagynia): Ⓐ ⟦Em ấy đã tốt nghiệp chưa?⟧ — Végzett már? Ⓑ ⟦Chưa. Lẽ ra em ấy đã tốt nghiệp năm nay nhưng do bị tai nạn giao thông, phải nghỉ học một năm nên em ấy vẫn chưa tốt nghiệp.⟧ — Még nem. Idén kellett volna végeznie, de egy közlekedési baleset miatt egy évet ki kellett hagynia, így még nem végzett.
+❶ (⟦đi công tác⟧ üzleti útra menni; ⟦tự nhiên bị ốm suốt mấy ngày⟧ váratlanul napokig beteg volt) Ⓐ ⟦Cô ấy đi đâu rồi?⟧ — Hová ment? Ⓑ ⟦Cô ấy đi công tác rồi. Lẽ ra anh đi công tác nhưng tự nhiên bị ốm suốt mấy ngày nên cô ấy đã đi công tác thay cho anh.⟧ — Üzleti útra ment. Nekem kellett volna mennem, de váratlanul napokig beteg voltam, így ő ment helyettem.
+❷ (⟦không nên ngủ muộn⟧ nem kellett volna későn lefeküdni; ⟦tối qua chơi game vui quá⟧ tegnap este nagyon jó volt a játék) Ⓐ ⟦Sao anh đến muộn thế?⟧ — Miért jöttél ilyen későn? Ⓑ ⟦Lẽ ra anh không nên ngủ muộn nhưng tối qua chơi game vui quá nên anh chơi tới 3 giờ sáng mới đi ngủ rồi sáng nay thức dậy muộn.⟧ — Nem kellett volna későn lefeküdnöm, de tegnap este annyira jó volt a játék, hogy hajnali 3-ig játszottam, és ma reggel elaludtam.
+Párbeszéd: Min-ho éjszaka bement a sürgősségire.
+Orvos: ⟦Anh bị đau chỗ nào?⟧ — Hol fáj?
+Min-ho: ⟦Tôi thấy đau ngực và khó thở.⟧ — Fáj a mellkasom, és nehezen kapok levegőt.
+Orvos: ⟦Để tôi xem.⟧ — Hadd nézzem meg. (Rövid vizsgálat után)
+Orvos: ⟦Có vẻ anh có vấn đề về tim.⟧ — Úgy tűnik, szívproblémája van.
+Min-ho: ⟦Thế, tôi phải làm sao, bác sĩ?⟧ — Akkor mit tegyek, doktor úr?
+Orvos: ⟦Trước tiên, anh hãy truyền nước và nghỉ ngơi ở đây, sau đó chúng ta sẽ làm thêm một vài xét nghiệm chuyên sâu nữa nhé.⟧ — Először kap egy infúziót és pihen itt, utána még néhány alaposabb vizsgálatot végzünk.
+Min-ho: ⟦Lẽ ra tôi phải đến bệnh viện sớm hơn... Vâng, tôi biết rồi. Tôi sẽ làm theo lời bác sĩ.⟧ — Korábban kellett volna kórházba jönnöm… Rendben, értem. Azt teszem, amit mond.
+Mintagyakorlat — mi a baj: ⟦thấy đau ngực và khó thở⟧ (mellkasi fájdalom és nehézlégzés) / ⟦bị sốt cao hơn 39 độ⟧ (39 fok feletti láz); melyik szerv: ⟦tim⟧ (szív) / ⟦phổi⟧ (tüdő); elsősegély: ⟦truyền nước và nghỉ ngơi ở đây⟧ (infúzió és pihenés itt) / ⟦uống thuốc hạ sốt⟧ (lázcsillapító bevétele); mire jött rá: ⟦phải đến bệnh viện sớm hơn⟧ (korábban kellett volna kórházba jönnie) / ⟦phải tự chăm sóc sức khoẻ bản thân mình tốt hơn⟧ (jobban kell vigyáznia az egészségére).
+Új szavak: ⟦thở⟧ lélegezni | ⟦gãy⟧ eltörik | ⟦rối loạn⟧ zavar, zavaros | ⟦nhận thức⟧ észlelés, tudat | ⟦truyền nước⟧ infúziót kap | ⟦xét nghiệm⟧ (klinikai) vizsgálat | ⟦chuyên⟧ szak-, szakosodott | ⟦đột xuất⟧ váratlan, hirtelen
+=id
+Ungkapan kunci: ⟦lẽ ra⟧
+⟦lẽ ra⟧ dipakai saat membicarakan hal yang ingin dilakukan tetapi tidak jadi karena suatu alasan: "seharusnya ~, tadinya mau ~". ⟦đáng ra⟧ atau ⟦đáng lẽ (ra)⟧ juga dipakai dengan makna yang sama. Ketika pembicara menyesali hal yang sudah terjadi atau menilainya tidak benar ("seharusnya aku ~"), ⟦nên⟧ atau ⟦phải⟧ ditambahkan setelah ⟦lẽ ra⟧ atau ⟦đáng ra⟧.
+❶ ⟦Lẽ ra hôm qua tôi đã đến bệnh viện thăm chị ấy nhưng đột xuất có việc rất gấp nên không thể đến được.⟧ — Seharusnya kemarin saya menjenguknya di rumah sakit, tetapi mendadak ada urusan sangat mendesak sehingga tidak bisa datang.
+❷ ⟦Lẽ ra anh phải chú ý đến điều ấy...⟧ — Seharusnya aku memperhatikan hal itu…
+❸ ⟦Hôm đó, lẽ ra em không nên nói với chị ấy như vậy...⟧ — Hari itu, seharusnya aku tidak berkata begitu kepadanya…
+Ungkapan tentang gejala darurat: ⟦sốt cao⟧ demam tinggi | ⟦khó thở⟧ sesak napas | ⟦gãy xương⟧ patah tulang | ⟦ho ra máu⟧ batuk darah | ⟦rối loạn nhận thức⟧ gangguan kesadaran
+Latihan pola 1 — bercakaplah seperti contoh dengan ungkapan yang diberikan.
+Contoh (⟦tốt nghiệp năm này⟧ lulus tahun ini; ⟦do bị tai nạn giao thông, phải nghỉ học một năm⟧ harus cuti setahun karena kecelakaan lalu lintas): Ⓐ ⟦Em ấy đã tốt nghiệp chưa?⟧ — Dia sudah lulus? Ⓑ ⟦Chưa. Lẽ ra em ấy đã tốt nghiệp năm nay nhưng do bị tai nạn giao thông, phải nghỉ học một năm nên em ấy vẫn chưa tốt nghiệp.⟧ — Belum. Seharusnya dia lulus tahun ini, tetapi karena kecelakaan lalu lintas dia harus cuti setahun, jadi belum lulus.
+❶ (⟦đi công tác⟧ dinas; ⟦tự nhiên bị ốm suốt mấy ngày⟧ tiba-tiba sakit beberapa hari) Ⓐ ⟦Cô ấy đi đâu rồi?⟧ — Dia pergi ke mana? Ⓑ ⟦Cô ấy đi công tác rồi. Lẽ ra anh đi công tác nhưng tự nhiên bị ốm suốt mấy ngày nên cô ấy đã đi công tác thay cho anh.⟧ — Dia pergi dinas. Seharusnya aku yang pergi, tetapi tiba-tiba aku sakit beberapa hari, jadi dia menggantikanku.
+❷ (⟦không nên ngủ muộn⟧ seharusnya tidak tidur larut; ⟦tối qua chơi game vui quá⟧ semalam main game seru sekali) Ⓐ ⟦Sao anh đến muộn thế?⟧ — Kenapa datang terlambat sekali? Ⓑ ⟦Lẽ ra anh không nên ngủ muộn nhưng tối qua chơi game vui quá nên anh chơi tới 3 giờ sáng mới đi ngủ rồi sáng nay thức dậy muộn.⟧ — Seharusnya aku tidak tidur larut, tetapi semalam main game seru sekali sampai jam 3 pagi baru tidur, lalu pagi ini bangun kesiangan.
+Percakapan: Min-ho datang ke IGD pada malam hari.
+Dokter: ⟦Anh bị đau chỗ nào?⟧ — Bagian mana yang sakit?
+Min-ho: ⟦Tôi thấy đau ngực và khó thở.⟧ — Dada saya sakit dan sesak napas.
+Dokter: ⟦Để tôi xem.⟧ — Coba saya periksa. (Setelah pemeriksaan singkat)
+Dokter: ⟦Có vẻ anh có vấn đề về tim.⟧ — Sepertinya ada masalah dengan jantung Anda.
+Min-ho: ⟦Thế, tôi phải làm sao, bác sĩ?⟧ — Lalu saya harus bagaimana, Dok?
+Dokter: ⟦Trước tiên, anh hãy truyền nước và nghỉ ngơi ở đây, sau đó chúng ta sẽ làm thêm một vài xét nghiệm chuyên sâu nữa nhé.⟧ — Pertama, Anda diinfus dan beristirahat di sini dulu, setelah itu kita lakukan beberapa pemeriksaan lanjutan.
+Min-ho: ⟦Lẽ ra tôi phải đến bệnh viện sớm hơn... Vâng, tôi biết rồi. Tôi sẽ làm theo lời bác sĩ.⟧ — Seharusnya saya datang ke rumah sakit lebih awal… Baik, saya mengerti. Saya akan mengikuti saran Dokter.
+Latihan pola — keluhan: ⟦thấy đau ngực và khó thở⟧ (nyeri dada dan sesak napas) / ⟦bị sốt cao hơn 39 độ⟧ (demam lebih dari 39 derajat); organ mana: ⟦tim⟧ (jantung) / ⟦phổi⟧ (paru-paru); pertolongan pertama: ⟦truyền nước và nghỉ ngơi ở đây⟧ (diinfus dan beristirahat di sini) / ⟦uống thuốc hạ sốt⟧ (minum obat penurun demam); yang disadari: ⟦phải đến bệnh viện sớm hơn⟧ (seharusnya ke rumah sakit lebih awal) / ⟦phải tự chăm sóc sức khoẻ bản thân mình tốt hơn⟧ (harus menjaga kesehatan sendiri lebih baik).
+Kosakata baru: ⟦thở⟧ bernapas | ⟦gãy⟧ patah | ⟦rối loạn⟧ gangguan, kacau | ⟦nhận thức⟧ persepsi, kesadaran | ⟦truyền nước⟧ diinfus | ⟦xét nghiệm⟧ pemeriksaan (klinis) | ⟦chuyên⟧ khusus, spesialis | ⟦đột xuất⟧ mendadak
+=ja
+核心表現：⟦lẽ ra⟧
+⟦lẽ ra⟧ は、しようとしたが何らかの理由でできなかったことについて話すときに使う表現で、「～しようとしたのに / ～するはずだったのに」という意味です。同じ意味で ⟦đáng ra⟧ や ⟦đáng lẽ (ra)⟧ も使います。また、話し手がすでに起きたことを後悔したり正しくなかったと評価したりするとき（「～すべきだったのに / ～すればよかった」）は、⟦lẽ ra⟧ や ⟦đáng ra⟧ の後に ⟦nên⟧ または ⟦phải⟧ を付けて言います。
+❶ ⟦Lẽ ra hôm qua tôi đã đến bệnh viện thăm chị ấy nhưng đột xuất có việc rất gấp nên không thể đến được.⟧ — 昨日病院へ彼女のお見舞いに行くはずだったのに、急にとても急ぎの用事ができて行けませんでした。
+❷ ⟦Lẽ ra anh phải chú ý đến điều ấy...⟧ — その点に注意すべきだったのに……
+❸ ⟦Hôm đó, lẽ ra em không nên nói với chị ấy như vậy...⟧ — あの日、彼女にあんなふうに言うべきではなかったのに……
+救急症状に関する表現：⟦sốt cao⟧ 高熱 | ⟦khó thở⟧ 呼吸困難 | ⟦gãy xương⟧ 骨折 | ⟦ho ra máu⟧ 喀血 | ⟦rối loạn nhận thức⟧ 意識障害
+文型練習1 — 例のように与えられた表現を使って会話してみましょう。
+例（⟦tốt nghiệp năm này⟧ 今年卒業；⟦do bị tai nạn giao thông, phải nghỉ học một năm⟧ 交通事故で1年休学）：Ⓐ ⟦Em ấy đã tốt nghiệp chưa?⟧ — 彼はもう卒業しましたか。 Ⓑ ⟦Chưa. Lẽ ra em ấy đã tốt nghiệp năm nay nhưng do bị tai nạn giao thông, phải nghỉ học một năm nên em ấy vẫn chưa tốt nghiệp.⟧ — いいえ。今年卒業するはずでしたが、交通事故で1年休学しなければならなかったので、まだ卒業していません。
+❶（⟦đi công tác⟧ 出張に行く；⟦tự nhiên bị ốm suốt mấy ngày⟧ 急に何日も病気になった）Ⓐ ⟦Cô ấy đi đâu rồi?⟧ — 彼女はどこへ行きましたか。 Ⓑ ⟦Cô ấy đi công tác rồi. Lẽ ra anh đi công tác nhưng tự nhiên bị ốm suốt mấy ngày nên cô ấy đã đi công tác thay cho anh.⟧ — 出張に行きました。本当は僕が出張に行くはずだったんですが、急に何日も病気になったので、彼女が代わりに行ってくれました。
+❷（⟦không nên ngủ muộn⟧ 遅く寝るべきではない；⟦tối qua chơi game vui quá⟧ 昨夜ゲームが楽しすぎた）Ⓐ ⟦Sao anh đến muộn thế?⟧ — どうしてそんなに遅れたんですか。 Ⓑ ⟦Lẽ ra anh không nên ngủ muộn nhưng tối qua chơi game vui quá nên anh chơi tới 3 giờ sáng mới đi ngủ rồi sáng nay thức dậy muộn.⟧ — 遅く寝るべきじゃなかったんだけど、昨夜ゲームが楽しすぎて朝3時まで遊んでから寝たので、今朝寝坊しちゃったんだ。
+会話：ミンホが夜中に救急室に来ました。
+医師：⟦Anh bị đau chỗ nào?⟧ — どこが痛みますか。
+ミンホ：⟦Tôi thấy đau ngực và khó thở.⟧ — 胸が痛くて、息が苦しいです。
+医師：⟦Để tôi xem.⟧ — 診てみましょう。（簡単な検査の後）
+医師：⟦Có vẻ anh có vấn đề về tim.⟧ — 心臓に問題があるようです。
+ミンホ：⟦Thế, tôi phải làm sao, bác sĩ?⟧ — では、どうすればいいですか、先生。
+医師：⟦Trước tiên, anh hãy truyền nước và nghỉ ngơi ở đây, sau đó chúng ta sẽ làm thêm một vài xét nghiệm chuyên sâu nữa nhé.⟧ — まずここで点滴を受けて休んでください。その後、いくつか詳しい検査をしましょう。
+ミンホ：⟦Lẽ ra tôi phải đến bệnh viện sớm hơn... Vâng, tôi biết rồi. Tôi sẽ làm theo lời bác sĩ.⟧ — もっと早く病院に来るべきでした……はい、わかりました。先生のおっしゃる通りにします。
+文型練習 — どうしたか：⟦thấy đau ngực và khó thở⟧（胸の痛みと呼吸困難）/ ⟦bị sốt cao hơn 39 độ⟧（39度以上の高熱）；どこに問題：⟦tim⟧（心臓）/ ⟦phổi⟧（肺）；応急処置：⟦truyền nước và nghỉ ngơi ở đây⟧（ここで点滴を受けて休む）/ ⟦uống thuốc hạ sốt⟧（解熱剤を飲む）；気づいたこと：⟦phải đến bệnh viện sớm hơn⟧（もっと早く病院に来るべきだった）/ ⟦phải tự chăm sóc sức khoẻ bản thân mình tốt hơn⟧（自分の健康をもっと大事にすべきだ）。
+新出単語：⟦thở⟧ 呼吸する、息をする | ⟦gãy⟧ 折れる | ⟦rối loạn⟧ 障害、混乱した | ⟦nhận thức⟧ 認識、認識する | ⟦truyền nước⟧ 点滴を受ける | ⟦xét nghiệm⟧ （臨床）検査する | ⟦chuyên⟧ 専門 | ⟦đột xuất⟧ 突然の
+=pl
+Kluczowe wyrażenie: ⟦lẽ ra⟧
+⟦lẽ ra⟧ używa się, mówiąc o czymś, co zamierzaliśmy zrobić, ale z jakiegoś powodu nie zrobiliśmy: „miałem ~, powinienem był ~”. W tym samym znaczeniu używa się też ⟦đáng ra⟧ lub ⟦đáng lẽ (ra)⟧. Gdy mówiący żałuje czegoś, co już się stało, lub ocenia to jako niewłaściwe („powinienem był ~”), po ⟦lẽ ra⟧ lub ⟦đáng ra⟧ dodaje się ⟦nên⟧ albo ⟦phải⟧.
+❶ ⟦Lẽ ra hôm qua tôi đã đến bệnh viện thăm chị ấy nhưng đột xuất có việc rất gấp nên không thể đến được.⟧ — Wczoraj miałem ją odwiedzić w szpitalu, ale nagle wypadła mi bardzo pilna sprawa i nie mogłem przyjść.
+❷ ⟦Lẽ ra anh phải chú ý đến điều ấy...⟧ — Powinienem był na to uważać…
+❸ ⟦Hôm đó, lẽ ra em không nên nói với chị ấy như vậy...⟧ — Tamtego dnia nie powinnam była tak do niej mówić…
+Wyrażenia dotyczące objawów nagłych: ⟦sốt cao⟧ wysoka gorączka | ⟦khó thở⟧ duszność | ⟦gãy xương⟧ złamanie kości | ⟦ho ra máu⟧ krwioplucie | ⟦rối loạn nhận thức⟧ zaburzenia świadomości
+Ćwiczenie 1 — rozmawiaj jak we wzorze, używając podanych wyrażeń.
+Wzór (⟦tốt nghiệp năm này⟧ skończyć szkołę w tym roku; ⟦do bị tai nạn giao thông, phải nghỉ học một năm⟧ z powodu wypadku musiał zrobić rok przerwy): Ⓐ ⟦Em ấy đã tốt nghiệp chưa?⟧ — Już skończył szkołę? Ⓑ ⟦Chưa. Lẽ ra em ấy đã tốt nghiệp năm nay nhưng do bị tai nạn giao thông, phải nghỉ học một năm nên em ấy vẫn chưa tốt nghiệp.⟧ — Nie. Miał skończyć w tym roku, ale przez wypadek drogowy musiał zrobić rok przerwy, więc jeszcze nie skończył.
+❶ (⟦đi công tác⟧ jechać w delegację; ⟦tự nhiên bị ốm suốt mấy ngày⟧ nagle chorował kilka dni) Ⓐ ⟦Cô ấy đi đâu rồi?⟧ — Dokąd pojechała? Ⓑ ⟦Cô ấy đi công tác rồi. Lẽ ra anh đi công tác nhưng tự nhiên bị ốm suốt mấy ngày nên cô ấy đã đi công tác thay cho anh.⟧ — Pojechała w delegację. To ja miałem jechać, ale nagle chorowałem przez kilka dni, więc pojechała za mnie.
+❷ (⟦không nên ngủ muộn⟧ nie powinien był kłaść się późno; ⟦tối qua chơi game vui quá⟧ wczoraj gra była bardzo wciągająca) Ⓐ ⟦Sao anh đến muộn thế?⟧ — Czemu tak się spóźniłeś? Ⓑ ⟦Lẽ ra anh không nên ngủ muộn nhưng tối qua chơi game vui quá nên anh chơi tới 3 giờ sáng mới đi ngủ rồi sáng nay thức dậy muộn.⟧ — Nie powinienem był kłaść się tak późno, ale wczoraj gra tak mnie wciągnęła, że grałem do trzeciej w nocy, a rano zaspałem.
+Dialog: Min-ho przyszedł w nocy na izbę przyjęć.
+Lekarz: ⟦Anh bị đau chỗ nào?⟧ — Gdzie pana boli?
+Min-ho: ⟦Tôi thấy đau ngực và khó thở.⟧ — Boli mnie w klatce piersiowej i trudno mi oddychać.
+Lekarz: ⟦Để tôi xem.⟧ — Proszę pokazać. (Po krótkim badaniu)
+Lekarz: ⟦Có vẻ anh có vấn đề về tim.⟧ — Wygląda na to, że ma pan problem z sercem.
+Min-ho: ⟦Thế, tôi phải làm sao, bác sĩ?⟧ — To co mam robić, panie doktorze?
+Lekarz: ⟦Trước tiên, anh hãy truyền nước và nghỉ ngơi ở đây, sau đó chúng ta sẽ làm thêm một vài xét nghiệm chuyên sâu nữa nhé.⟧ — Najpierw dostanie pan kroplówkę i odpocznie tutaj, a potem zrobimy jeszcze kilka szczegółowych badań.
+Min-ho: ⟦Lẽ ra tôi phải đến bệnh viện sớm hơn... Vâng, tôi biết rồi. Tôi sẽ làm theo lời bác sĩ.⟧ — Powinienem był przyjść do szpitala wcześniej… Dobrze, rozumiem. Zrobię, jak pan mówi.
+Ćwiczenie wzorców — co się dzieje: ⟦thấy đau ngực và khó thở⟧ (ból w klatce i duszność) / ⟦bị sốt cao hơn 39 độ⟧ (gorączka powyżej 39 stopni); który narząd: ⟦tim⟧ (serce) / ⟦phổi⟧ (płuca); pierwsza pomoc: ⟦truyền nước và nghỉ ngơi ở đây⟧ (kroplówka i odpoczynek tutaj) / ⟦uống thuốc hạ sốt⟧ (lek przeciwgorączkowy); co sobie uświadomił: ⟦phải đến bệnh viện sớm hơn⟧ (powinien był przyjść wcześniej) / ⟦phải tự chăm sóc sức khoẻ bản thân mình tốt hơn⟧ (musi lepiej dbać o swoje zdrowie).
+Nowe słówka: ⟦thở⟧ oddychać | ⟦gãy⟧ złamać się | ⟦rối loạn⟧ zaburzenie, chaotyczny | ⟦nhận thức⟧ percepcja, świadomość | ⟦truyền nước⟧ dostać kroplówkę | ⟦xét nghiệm⟧ badanie (kliniczne) | ⟦chuyên⟧ specjalistyczny | ⟦đột xuất⟧ nagły, nieoczekiwany

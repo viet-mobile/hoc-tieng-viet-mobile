@@ -1,0 +1,53 @@
+@@ pdf-grammar-1654eb602402692f#1
+~t 2. Škola a ročník|2. 学校与年级的表达|2. 學校與年級的表達|2. School and year|2. École et année d'études|2. Schule und Jahrgang|2. Iskola és évfolyam|2. Sekolah dan tingkat kelas|2. 学校・学年の表現|2. Szkoła i rok nauki
+=cs
+⟦Tôi là sinh viên năm thứ hai Khoa Tiếng Hàn, Trường Đại học Hà Nội.⟧ — Jsem student druhého ročníku oboru korejština na Hanojské univerzitě.
+Nejprve se podívejte na vietnamské číslovky.
+=zh_cn
+⟦Tôi là sinh viên năm thứ hai Khoa Tiếng Hàn, Trường Đại học Hà Nội.⟧ —— 我是河内大学韩语系二年级的学生。
+首先，请看越南语的数字。
+=zh
+⟦Tôi là sinh viên năm thứ hai Khoa Tiếng Hàn, Trường Đại học Hà Nội.⟧ —— 我是河內大學韓語系二年級的學生。
+首先，請看越南語的數字。
+=en
+⟦Tôi là sinh viên năm thứ hai Khoa Tiếng Hàn, Trường Đại học Hà Nội.⟧ — I'm a second-year student in the Korean Department at Hanoi University.
+First, take a look at the Vietnamese numbers.
+=fr
+⟦Tôi là sinh viên năm thứ hai Khoa Tiếng Hàn, Trường Đại học Hà Nội.⟧ — Je suis étudiant en deuxième année au département de coréen de l'université de Hanoï.
+Voyons d'abord les nombres en vietnamien.
+=de
+⟦Tôi là sinh viên năm thứ hai Khoa Tiếng Hàn, Trường Đại học Hà Nội.⟧ — Ich bin Student im zweiten Jahr an der Koreanisch-Fakultät der Universität Hanoi.
+Sehen Sie sich zuerst die vietnamesischen Zahlen an.
+=hu
+⟦Tôi là sinh viên năm thứ hai Khoa Tiếng Hàn, Trường Đại học Hà Nội.⟧ — A Hanoi Egyetem koreai szakának másodéves hallgatója vagyok.
+Először nézzük meg a vietnámi számokat.
+=id
+⟦Tôi là sinh viên năm thứ hai Khoa Tiếng Hàn, Trường Đại học Hà Nội.⟧ — Saya mahasiswa tahun kedua Jurusan Bahasa Korea, Universitas Hanoi.
+Pertama, lihatlah angka-angka dalam bahasa Vietnam.
+=ja
+⟦Tôi là sinh viên năm thứ hai Khoa Tiếng Hàn, Trường Đại học Hà Nội.⟧ — 私はハノイ大学韓国語学科の2年生です。
+まず、ベトナム語の数字を見てみましょう。
+=pl
+⟦Tôi là sinh viên năm thứ hai Khoa Tiếng Hàn, Trường Đại học Hà Nội.⟧ — Jestem studentem drugiego roku koreanistyki na Uniwersytecie Hanojskim.
+Najpierw przyjrzyj się wietnamskim liczebnikom.
+@@ pdf-grammar-1654eb602402692f#6
+=cs
+Ve Vietnamu se vysokoškolský student nazývá ⟦sinh viên⟧ a žák základní či střední školy ⟦học sinh⟧. Ročníky od 1. třídy základní školy po 3. ročník střední školy se označují jako 1. až 12. ročník.
+=zh_cn
+在越南，大学生称为 ⟦sinh viên⟧，中小学生称为 ⟦học sinh⟧；从小学一年级到高中三年级，用一年级到十二年级来表示。
+=zh
+在越南，大學生稱為 ⟦sinh viên⟧，中小學生稱為 ⟦học sinh⟧；從小學一年級到高中三年級，用一年級到十二年級來表示。
+=en
+In Vietnam, a university student is ⟦sinh viên⟧ and a primary or secondary school pupil is ⟦học sinh⟧; school years from the first year of primary school to the last year of high school are counted as grades 1 to 12.
+=fr
+Au Viêt Nam, un étudiant est appelé ⟦sinh viên⟧ et un élève du primaire ou du secondaire ⟦học sinh⟧ ; les années, de la première année du primaire à la dernière du lycée, sont numérotées de la 1re à la 12e.
+=de
+In Vietnam heißt ein Student ⟦sinh viên⟧ und ein Schüler der Grund- oder Oberschule ⟦học sinh⟧; die Schuljahre von der ersten Grundschulklasse bis zur letzten Oberschulklasse werden als 1. bis 12. Klasse gezählt.
+=hu
+Vietnámban az egyetemi hallgató ⟦sinh viên⟧, az általános és középiskolai tanuló ⟦học sinh⟧; az általános iskola első osztályától a középiskola utolsó évéig az évfolyamokat 1-től 12-ig számozzák.
+=id
+Di Vietnam, mahasiswa disebut ⟦sinh viên⟧ dan siswa SD hingga SMA disebut ⟦học sinh⟧; tingkat dari kelas 1 SD sampai kelas 3 SMA disebut kelas 1 sampai kelas 12.
+=ja
+ベトナムでは大学生を ⟦sinh viên⟧、小・中・高校の生徒を ⟦học sinh⟧ と区別し、小学1年生から高校3年生までを1年生から12年生と表します。
+=pl
+W Wietnamie student to ⟦sinh viên⟧, a uczeń szkoły podstawowej lub średniej to ⟦học sinh⟧; lata nauki od pierwszej klasy podstawówki do ostatniej klasy liceum liczy się jako klasy od 1 do 12.

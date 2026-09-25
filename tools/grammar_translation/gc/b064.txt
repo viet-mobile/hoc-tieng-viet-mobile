@@ -1,0 +1,183 @@
+@@ pdf-grammar-31a85a1483e2be74#0
+=cs
+Gramatický výklad
+⟦trước khi A⟧ a ⟦sau khi A⟧ znamenají „předtím, než A“ a „poté, co A“; na místě A stojí věta.
+⟦Bạn phải tắt điện thoại trước khi máy bay cất cánh.⟧ → Před vzletem letadla musíte vypnout telefon. · ⟦Bạn nên suy nghĩ kỹ trước khi trả lời.⟧ → Než odpovíte, měli byste si to dobře rozmyslet. · ⟦Không nên lái xe sau khi uống rượu bia.⟧ → Po požití alkoholu se nemá řídit.
+=zh_cn
+语法解说
+⟦trước khi A⟧、⟦sau khi A⟧ 分别表示“在A之前”“在A之后”，A为句子（分句）。
+⟦Bạn phải tắt điện thoại trước khi máy bay cất cánh.⟧ → 飞机起飞前你必须关掉手机。 · ⟦Bạn nên suy nghĩ kỹ trước khi trả lời.⟧ → 回答之前最好仔细想想。 · ⟦Không nên lái xe sau khi uống rượu bia.⟧ → 喝酒后不应开车。
+=zh
+文法解說
+⟦trước khi A⟧、⟦sau khi A⟧ 分別表示「在A之前」「在A之後」，A為句子（子句）。
+⟦Bạn phải tắt điện thoại trước khi máy bay cất cánh.⟧ → 飛機起飛前你必須關掉手機。 · ⟦Bạn nên suy nghĩ kỹ trước khi trả lời.⟧ → 回答之前最好仔細想想。 · ⟦Không nên lái xe sau khi uống rượu bia.⟧ → 喝酒後不應開車。
+=en
+Grammar notes
+⟦trước khi A⟧ and ⟦sau khi A⟧ mean "before A" and "after A"; A is a clause.
+⟦Bạn phải tắt điện thoại trước khi máy bay cất cánh.⟧ → You must switch off your phone before the plane takes off. · ⟦Bạn nên suy nghĩ kỹ trước khi trả lời.⟧ → You should think carefully before answering. · ⟦Không nên lái xe sau khi uống rượu bia.⟧ → You shouldn't drive after drinking alcohol.
+=fr
+Notes de grammaire
+⟦trước khi A⟧ et ⟦sau khi A⟧ signifient « avant que / avant de A » et « après que / après avoir A » ; A est une proposition.
+⟦Bạn phải tắt điện thoại trước khi máy bay cất cánh.⟧ → Vous devez éteindre votre téléphone avant le décollage de l'avion. · ⟦Bạn nên suy nghĩ kỹ trước khi trả lời.⟧ → Vous devriez bien réfléchir avant de répondre. · ⟦Không nên lái xe sau khi uống rượu bia.⟧ → Il ne faut pas conduire après avoir bu de l'alcool.
+=de
+Grammatikerläuterungen
+⟦trước khi A⟧ und ⟦sau khi A⟧ bedeuten „bevor A“ und „nachdem A“; A ist ein Satz.
+⟦Bạn phải tắt điện thoại trước khi máy bay cất cánh.⟧ → Sie müssen Ihr Telefon ausschalten, bevor das Flugzeug startet. · ⟦Bạn nên suy nghĩ kỹ trước khi trả lời.⟧ → Sie sollten gründlich nachdenken, bevor Sie antworten. · ⟦Không nên lái xe sau khi uống rượu bia.⟧ → Nach Alkoholgenuss sollte man nicht Auto fahren.
+=hu
+Nyelvtani magyarázat
+A ⟦trước khi A⟧ és ⟦sau khi A⟧ jelentése „mielőtt A” és „miután A”; A helyén mellékmondat áll.
+⟦Bạn phải tắt điện thoại trước khi máy bay cất cánh.⟧ → Mielőtt a gép felszáll, ki kell kapcsolnia a telefonját. · ⟦Bạn nên suy nghĩ kỹ trước khi trả lời.⟧ → Mielőtt válaszol, gondolja át alaposan. · ⟦Không nên lái xe sau khi uống rượu bia.⟧ → Miután alkoholt ivott, ne vezessen.
+=id
+Penjelasan tata bahasa
+⟦trước khi A⟧ dan ⟦sau khi A⟧ berarti "sebelum A" dan "sesudah A"; A berupa klausa.
+⟦Bạn phải tắt điện thoại trước khi máy bay cất cánh.⟧ → Anda harus mematikan telepon sebelum pesawat lepas landas. · ⟦Bạn nên suy nghĩ kỹ trước khi trả lời.⟧ → Sebaiknya Anda berpikir matang sebelum menjawab. · ⟦Không nên lái xe sau khi uống rượu bia.⟧ → Jangan menyetir sesudah minum minuman beralkohol.
+=ja
+文法解説
+⟦trước khi A⟧、⟦sau khi A⟧ の形でそれぞれ「Aする前に」「Aした後に」という意味で使われ、Aには文（節）が来ます。
+⟦Bạn phải tắt điện thoại trước khi máy bay cất cánh.⟧ → 飛行機が離陸する前に電話の電源を切らなければなりません。 · ⟦Bạn nên suy nghĩ kỹ trước khi trả lời.⟧ → 答える前によく考えたほうがいいです。 · ⟦Không nên lái xe sau khi uống rượu bia.⟧ → 飲酒後は運転してはいけない。
+=pl
+Objaśnienia gramatyczne
+⟦trước khi A⟧ i ⟦sau khi A⟧ znaczą „zanim A” i „po tym, jak A”; na miejscu A stoi zdanie.
+⟦Bạn phải tắt điện thoại trước khi máy bay cất cánh.⟧ → Zanim samolot wystartuje, musisz wyłączyć telefon. · ⟦Bạn nên suy nghĩ kỹ trước khi trả lời.⟧ → Zanim odpowiesz, dobrze się zastanów. · ⟦Không nên lái xe sau khi uống rượu bia.⟧ → Po wypiciu alkoholu nie należy prowadzić.
+@@ pdf-grammar-78e9a3e5484eebb1#0
+=cs
+Gramatický výklad
+⟦thứ nhất⟧, ⟦thứ hai⟧, ⟦thứ ba⟧, ... ⟦cuối cùng⟧ znamenají „zaprvé, zadruhé, zatřetí… nakonec“ a používají se při výčtu obsahu či činností.
+⟦Thứ nhất, phải đi học đúng giờ.⟧ → Zaprvé, chodit do školy včas. · ⟦Thứ hai, phải làm bài tập đầy đủ.⟧ → Zadruhé, dělat důkladně úkoly. · ⟦Thứ ba, phải thực hành nghe nhiều.⟧ → Zatřetí, hodně trénovat poslech. · ⟦Và cuối cùng là phải giao tiếp với người bản ngữ.⟧ → A nakonec komunikovat s rodilými mluvčími.
+⟦có⟧ znamená „mít, je (někde)“; opakem je ⟦không có⟧.
+⟦Nhà anh Nam có hai con chó.⟧ → Nam má doma dva psy. · ⟦Hà có nhiều bạn bè ở Hà Nội.⟧ → Hà má v Hanoji hodně přátel.
+⟦còn⟧ znamená, že něco „ještě zbývá“; opakem je ⟦hết⟧.
+⟦Khách sạn còn 2 phòng đơn.⟧ → Hotel má ještě 2 volné jednolůžkové pokoje. · ⟦Tôi sắp hết tiền rồi. Tôi chỉ còn 20 ngàn đồng.⟧ → Brzy mi dojdou peníze. Zbývá mi jen 20 tisíc dongů.
+=zh_cn
+语法解说
+⟦thứ nhất⟧、⟦thứ hai⟧、⟦thứ ba⟧……⟦cuối cùng⟧ 意为“第一、第二、第三……最后”，用于列举内容或行为。
+⟦Thứ nhất, phải đi học đúng giờ.⟧ → 第一，要准时上课。 · ⟦Thứ hai, phải làm bài tập đầy đủ.⟧ → 第二，要认真完成作业。 · ⟦Thứ ba, phải thực hành nghe nhiều.⟧ → 第三，要多练听力。 · ⟦Và cuối cùng là phải giao tiếp với người bản ngữ.⟧ → 最后，要和母语者交流。
+⟦có⟧ 意为“有”，相反的意思是 ⟦không có⟧。
+⟦Nhà anh Nam có hai con chó.⟧ → 阿南家有两只狗。 · ⟦Hà có nhiều bạn bè ở Hà Nội.⟧ → 阿河在河内有很多朋友。
+⟦còn⟧ 表示某物没有用完、“还剩”，相反的意思是 ⟦hết⟧。
+⟦Khách sạn còn 2 phòng đơn.⟧ → 酒店还剩2间单人房。 · ⟦Tôi sắp hết tiền rồi. Tôi chỉ còn 20 ngàn đồng.⟧ → 我快没钱了。只剩2万越盾了。
+=zh
+文法解說
+⟦thứ nhất⟧、⟦thứ hai⟧、⟦thứ ba⟧……⟦cuối cùng⟧ 意為「第一、第二、第三……最後」，用於列舉內容或行為。
+⟦Thứ nhất, phải đi học đúng giờ.⟧ → 第一，要準時上課。 · ⟦Thứ hai, phải làm bài tập đầy đủ.⟧ → 第二，要確實完成作業。 · ⟦Thứ ba, phải thực hành nghe nhiều.⟧ → 第三，要多練聽力。 · ⟦Và cuối cùng là phải giao tiếp với người bản ngữ.⟧ → 最後，要和母語人士交流。
+⟦có⟧ 意為「有」，相反的意思是 ⟦không có⟧。
+⟦Nhà anh Nam có hai con chó.⟧ → 阿南家有兩隻狗。 · ⟦Hà có nhiều bạn bè ở Hà Nội.⟧ → 阿河在河內有很多朋友。
+⟦còn⟧ 表示某物沒有用完、「還剩」，相反的意思是 ⟦hết⟧。
+⟦Khách sạn còn 2 phòng đơn.⟧ → 飯店還剩2間單人房。 · ⟦Tôi sắp hết tiền rồi. Tôi chỉ còn 20 ngàn đồng.⟧ → 我快沒錢了。只剩2萬越南盾了。
+=en
+Grammar notes
+⟦thứ nhất⟧, ⟦thứ hai⟧, ⟦thứ ba⟧, ... ⟦cuối cùng⟧ mean "first, second, third ... finally" and are used to list points or actions.
+⟦Thứ nhất, phải đi học đúng giờ.⟧ → First, go to class on time. · ⟦Thứ hai, phải làm bài tập đầy đủ.⟧ → Second, do all your homework thoroughly. · ⟦Thứ ba, phải thực hành nghe nhiều.⟧ → Third, practise listening a lot. · ⟦Và cuối cùng là phải giao tiếp với người bản ngữ.⟧ → And finally, communicate with native speakers.
+⟦có⟧ means "to have, there is"; the opposite is ⟦không có⟧.
+⟦Nhà anh Nam có hai con chó.⟧ → Nam's family has two dogs. · ⟦Hà có nhiều bạn bè ở Hà Nội.⟧ → Hà has lots of friends in Hanoi.
+⟦còn⟧ means something "is still left"; the opposite is ⟦hết⟧.
+⟦Khách sạn còn 2 phòng đơn.⟧ → The hotel still has 2 single rooms left. · ⟦Tôi sắp hết tiền rồi. Tôi chỉ còn 20 ngàn đồng.⟧ → I'm about to run out of money. I only have 20,000 dong left.
+=fr
+Notes de grammaire
+⟦thứ nhất⟧, ⟦thứ hai⟧, ⟦thứ ba⟧, ... ⟦cuối cùng⟧ signifient « premièrement, deuxièmement, troisièmement… enfin » et servent à énumérer des points ou des actions.
+⟦Thứ nhất, phải đi học đúng giờ.⟧ → Premièrement, aller en cours à l'heure. · ⟦Thứ hai, phải làm bài tập đầy đủ.⟧ → Deuxièmement, faire tous ses devoirs. · ⟦Thứ ba, phải thực hành nghe nhiều.⟧ → Troisièmement, beaucoup s'entraîner à l'écoute. · ⟦Và cuối cùng là phải giao tiếp với người bản ngữ.⟧ → Et enfin, communiquer avec des locuteurs natifs.
+⟦có⟧ signifie « avoir, il y a » ; le contraire est ⟦không có⟧.
+⟦Nhà anh Nam có hai con chó.⟧ → Chez Nam, il y a deux chiens. · ⟦Hà có nhiều bạn bè ở Hà Nội.⟧ → Hà a beaucoup d'amis à Hanoï.
+⟦còn⟧ signifie qu'il « reste » encore quelque chose ; le contraire est ⟦hết⟧.
+⟦Khách sạn còn 2 phòng đơn.⟧ → L'hôtel a encore 2 chambres simples. · ⟦Tôi sắp hết tiền rồi. Tôi chỉ còn 20 ngàn đồng.⟧ → Je vais bientôt être à court d'argent. Il ne me reste que 20 000 dongs.
+=de
+Grammatikerläuterungen
+⟦thứ nhất⟧, ⟦thứ hai⟧, ⟦thứ ba⟧, ... ⟦cuối cùng⟧ bedeuten „erstens, zweitens, drittens … schließlich“ und dienen der Aufzählung von Inhalten oder Handlungen.
+⟦Thứ nhất, phải đi học đúng giờ.⟧ → Erstens pünktlich zum Unterricht gehen. · ⟦Thứ hai, phải làm bài tập đầy đủ.⟧ → Zweitens alle Hausaufgaben gründlich machen. · ⟦Thứ ba, phải thực hành nghe nhiều.⟧ → Drittens viel Hören üben. · ⟦Và cuối cùng là phải giao tiếp với người bản ngữ.⟧ → Und schließlich mit Muttersprachlern kommunizieren.
+⟦có⟧ bedeutet „haben, es gibt“; das Gegenteil ist ⟦không có⟧.
+⟦Nhà anh Nam có hai con chó.⟧ → Nams Familie hat zwei Hunde. · ⟦Hà có nhiều bạn bè ở Hà Nội.⟧ → Hà hat viele Freunde in Hanoi.
+⟦còn⟧ bedeutet, dass etwas „noch übrig“ ist; das Gegenteil ist ⟦hết⟧.
+⟦Khách sạn còn 2 phòng đơn.⟧ → Das Hotel hat noch 2 Einzelzimmer frei. · ⟦Tôi sắp hết tiền rồi. Tôi chỉ còn 20 ngàn đồng.⟧ → Mir geht bald das Geld aus. Ich habe nur noch 20.000 Dong.
+=hu
+Nyelvtani magyarázat
+A ⟦thứ nhất⟧, ⟦thứ hai⟧, ⟦thứ ba⟧, ... ⟦cuối cùng⟧ jelentése „először, másodszor, harmadszor… végül”; tartalmak vagy teendők felsorolására szolgál.
+⟦Thứ nhất, phải đi học đúng giờ.⟧ → Először is pontosan járj órára. · ⟦Thứ hai, phải làm bài tập đầy đủ.⟧ → Másodszor, végezd el rendesen a házi feladatot. · ⟦Thứ ba, phải thực hành nghe nhiều.⟧ → Harmadszor, gyakorold sokat a hallás utáni értést. · ⟦Và cuối cùng là phải giao tiếp với người bản ngữ.⟧ → És végül beszélgess anyanyelvi beszélőkkel.
+A ⟦có⟧ jelentése „van valamije, van”; ellentéte ⟦không có⟧.
+⟦Nhà anh Nam có hai con chó.⟧ → Namék házában két kutya van. · ⟦Hà có nhiều bạn bè ở Hà Nội.⟧ → Hànak sok barátja van Hanoiban.
+A ⟦còn⟧ azt jelenti, hogy valami „még megmaradt”; ellentéte ⟦hết⟧.
+⟦Khách sạn còn 2 phòng đơn.⟧ → A szállodában még 2 egyágyas szoba szabad. · ⟦Tôi sắp hết tiền rồi. Tôi chỉ còn 20 ngàn đồng.⟧ → Mindjárt elfogy a pénzem. Már csak 20 ezer dongom maradt.
+=id
+Penjelasan tata bahasa
+⟦thứ nhất⟧, ⟦thứ hai⟧, ⟦thứ ba⟧, ... ⟦cuối cùng⟧ berarti "pertama, kedua, ketiga … terakhir" dan dipakai untuk menyebutkan isi atau tindakan secara berurutan.
+⟦Thứ nhất, phải đi học đúng giờ.⟧ → Pertama, harus masuk kelas tepat waktu. · ⟦Thứ hai, phải làm bài tập đầy đủ.⟧ → Kedua, harus mengerjakan PR dengan lengkap. · ⟦Thứ ba, phải thực hành nghe nhiều.⟧ → Ketiga, harus banyak berlatih mendengar. · ⟦Và cuối cùng là phải giao tiếp với người bản ngữ.⟧ → Dan terakhir, harus berkomunikasi dengan penutur asli.
+⟦có⟧ berarti "punya, ada"; lawannya ⟦không có⟧.
+⟦Nhà anh Nam có hai con chó.⟧ → Di rumah Mas Nam ada dua ekor anjing. · ⟦Hà có nhiều bạn bè ở Hà Nội.⟧ → Hà punya banyak teman di Hanoi.
+⟦còn⟧ berarti sesuatu "masih tersisa"; lawannya ⟦hết⟧.
+⟦Khách sạn còn 2 phòng đơn.⟧ → Hotel masih punya 2 kamar single. · ⟦Tôi sắp hết tiền rồi. Tôi chỉ còn 20 ngàn đồng.⟧ → Uang saya hampir habis. Hanya tersisa 20 ribu dong.
+=ja
+文法解説
+⟦thứ nhất⟧、⟦thứ hai⟧、⟦thứ ba⟧、...⟦cuối cùng⟧ は「一つ目」「二つ目」「三つ目」…「最後に」という意味で、ある内容や行動を列挙するときに使います。
+⟦Thứ nhất, phải đi học đúng giờ.⟧ → 一つ目、時間通りに授業に行くこと。 · ⟦Thứ hai, phải làm bài tập đầy đủ.⟧ → 二つ目、宿題をきちんとすること。 · ⟦Thứ ba, phải thực hành nghe nhiều.⟧ → 三つ目、聞き取りの練習をたくさんすること。 · ⟦Và cuối cùng là phải giao tiếp với người bản ngữ.⟧ → そして最後に、ネイティブスピーカーと交流すること。
+⟦có⟧ は「～がある / いる」という意味で使われ、反対の意味は ⟦không có⟧ です。
+⟦Nhà anh Nam có hai con chó.⟧ → ナムさんの家には犬が2匹いる。 · ⟦Hà có nhiều bạn bè ở Hà Nội.⟧ → ハーにはハノイに友達がたくさんいる。
+⟦còn⟧ は何かがなくならずに「残っている」という意味で使われ、反対の意味は ⟦hết⟧ です。
+⟦Khách sạn còn 2 phòng đơn.⟧ → ホテルにはシングルルームが2室残っている。 · ⟦Tôi sắp hết tiền rồi. Tôi chỉ còn 20 ngàn đồng.⟧ → もうすぐお金がなくなります。2万ドンしか残っていません。
+=pl
+Objaśnienia gramatyczne
+⟦thứ nhất⟧, ⟦thứ hai⟧, ⟦thứ ba⟧, ... ⟦cuối cùng⟧ znaczą „po pierwsze, po drugie, po trzecie… na koniec” i służą do wyliczania treści lub czynności.
+⟦Thứ nhất, phải đi học đúng giờ.⟧ → Po pierwsze, przychodzić na zajęcia punktualnie. · ⟦Thứ hai, phải làm bài tập đầy đủ.⟧ → Po drugie, starannie odrabiać zadania. · ⟦Thứ ba, phải thực hành nghe nhiều.⟧ → Po trzecie, dużo ćwiczyć słuchanie. · ⟦Và cuối cùng là phải giao tiếp với người bản ngữ.⟧ → I na koniec, rozmawiać z rodzimymi użytkownikami języka.
+⟦có⟧ znaczy „mieć, jest”; przeciwieństwem jest ⟦không có⟧.
+⟦Nhà anh Nam có hai con chó.⟧ → Nam ma w domu dwa psy. · ⟦Hà có nhiều bạn bè ở Hà Nội.⟧ → Hà ma wielu przyjaciół w Hanoi.
+⟦còn⟧ znaczy, że czegoś „jeszcze zostało”; przeciwieństwem jest ⟦hết⟧.
+⟦Khách sạn còn 2 phòng đơn.⟧ → W hotelu zostały jeszcze 2 pokoje jednoosobowe. · ⟦Tôi sắp hết tiền rồi. Tôi chỉ còn 20 ngàn đồng.⟧ → Zaraz skończą mi się pieniądze. Zostało mi tylko 20 tysięcy dongów.
+@@ pdf-grammar-7a2884c209322462#0
+=cs
+Gramatický výklad
+⟦nếu A thì B⟧ znamená „jestliže A, (pak) B“.
+⟦Nếu có tiền thì tôi sẽ mua nhà đẹp.⟧ → Kdybych měl peníze, koupil bych si hezký dům. · ⟦Nếu cô ấy yêu tôi thì tôi sẽ rất hạnh phúc.⟧ → Kdyby mě milovala, byl bych moc šťastný. · ⟦Nếu đi bằng máy bay thì mất khoảng 2 tiếng.⟧ → Letadlem to trvá asi 2 hodiny.
+Sloveso + ⟦giùm⟧ A znamená „udělat něco pro A, vypomoci A tím, že ~“.
+⟦Em mua giùm anh cốc cà phê nhé.⟧ → Kup mi prosím kávu. · ⟦Xin thầy giải thích giùm em câu này ạ.⟧ → Pane učiteli, vysvětlete mi prosím tuto větu. · ⟦Thỉnh thoảng cô ấy viết giùm cho khách hàng.⟧ → Občas píše za zákazníky.
+=zh_cn
+语法解说
+⟦nếu A thì B⟧ 意为“如果A，就B”。
+⟦Nếu có tiền thì tôi sẽ mua nhà đẹp.⟧ → 如果有钱，我就会买漂亮的房子。 · ⟦Nếu cô ấy yêu tôi thì tôi sẽ rất hạnh phúc.⟧ → 如果她爱我，我会非常幸福。 · ⟦Nếu đi bằng máy bay thì mất khoảng 2 tiếng.⟧ → 如果坐飞机去，大约要2个小时。
+动词 + ⟦giùm⟧ A 表示“帮A做某事、替A做某事”。
+⟦Em mua giùm anh cốc cà phê nhé.⟧ → 帮我买杯咖啡吧。 · ⟦Xin thầy giải thích giùm em câu này ạ.⟧ → 老师，请帮我解释一下这个句子。 · ⟦Thỉnh thoảng cô ấy viết giùm cho khách hàng.⟧ → 她有时替客人代写。
+=zh
+文法解說
+⟦nếu A thì B⟧ 意為「如果A，就B」。
+⟦Nếu có tiền thì tôi sẽ mua nhà đẹp.⟧ → 如果有錢，我就會買漂亮的房子。 · ⟦Nếu cô ấy yêu tôi thì tôi sẽ rất hạnh phúc.⟧ → 如果她愛我，我會非常幸福。 · ⟦Nếu đi bằng máy bay thì mất khoảng 2 tiếng.⟧ → 如果搭飛機去，大約要2個小時。
+動詞 + ⟦giùm⟧ A 表示「幫A做某事、替A做某事」。
+⟦Em mua giùm anh cốc cà phê nhé.⟧ → 幫我買杯咖啡吧。 · ⟦Xin thầy giải thích giùm em câu này ạ.⟧ → 老師，請幫我解釋一下這個句子。 · ⟦Thỉnh thoảng cô ấy viết giùm cho khách hàng.⟧ → 她有時替客人代寫。
+=en
+Grammar notes
+⟦nếu A thì B⟧ means "if A, (then) B".
+⟦Nếu có tiền thì tôi sẽ mua nhà đẹp.⟧ → If I had money, I would buy a nice house. · ⟦Nếu cô ấy yêu tôi thì tôi sẽ rất hạnh phúc.⟧ → If she loved me, I would be very happy. · ⟦Nếu đi bằng máy bay thì mất khoảng 2 tiếng.⟧ → If you go by plane, it takes about 2 hours.
+Verb + ⟦giùm⟧ A means "to do something for A, to help A by ~ing".
+⟦Em mua giùm anh cốc cà phê nhé.⟧ → Could you buy me a coffee? · ⟦Xin thầy giải thích giùm em câu này ạ.⟧ → Sir, could you please explain this sentence for me? · ⟦Thỉnh thoảng cô ấy viết giùm cho khách hàng.⟧ → Sometimes she writes things for her customers.
+=fr
+Notes de grammaire
+⟦nếu A thì B⟧ signifie « si A, (alors) B ».
+⟦Nếu có tiền thì tôi sẽ mua nhà đẹp.⟧ → Si j'avais de l'argent, j'achèterais une belle maison. · ⟦Nếu cô ấy yêu tôi thì tôi sẽ rất hạnh phúc.⟧ → Si elle m'aimait, je serais très heureux. · ⟦Nếu đi bằng máy bay thì mất khoảng 2 tiếng.⟧ → En avion, il faut environ 2 heures.
+Verbe + ⟦giùm⟧ A signifie « faire quelque chose pour A, rendre service à A en ~ ».
+⟦Em mua giùm anh cốc cà phê nhé.⟧ → Tu peux m'acheter un café ? · ⟦Xin thầy giải thích giùm em câu này ạ.⟧ → Monsieur, pourriez-vous m'expliquer cette phrase ? · ⟦Thỉnh thoảng cô ấy viết giùm cho khách hàng.⟧ → Parfois, elle écrit à la place de ses clients.
+=de
+Grammatikerläuterungen
+⟦nếu A thì B⟧ bedeutet „wenn A, (dann) B“.
+⟦Nếu có tiền thì tôi sẽ mua nhà đẹp.⟧ → Wenn ich Geld hätte, würde ich ein schönes Haus kaufen. · ⟦Nếu cô ấy yêu tôi thì tôi sẽ rất hạnh phúc.⟧ → Wenn sie mich lieben würde, wäre ich sehr glücklich. · ⟦Nếu đi bằng máy bay thì mất khoảng 2 tiếng.⟧ → Mit dem Flugzeug dauert es etwa 2 Stunden.
+Verb + ⟦giùm⟧ A bedeutet „etwas für A tun, A helfen, indem man ~“.
+⟦Em mua giùm anh cốc cà phê nhé.⟧ → Kaufst du mir bitte einen Kaffee? · ⟦Xin thầy giải thích giùm em câu này ạ.⟧ → Herr Lehrer, könnten Sie mir bitte diesen Satz erklären? · ⟦Thỉnh thoảng cô ấy viết giùm cho khách hàng.⟧ → Manchmal schreibt sie für ihre Kunden.
+=hu
+Nyelvtani magyarázat
+A ⟦nếu A thì B⟧ jelentése „ha A, (akkor) B”.
+⟦Nếu có tiền thì tôi sẽ mua nhà đẹp.⟧ → Ha lenne pénzem, vennék egy szép házat. · ⟦Nếu cô ấy yêu tôi thì tôi sẽ rất hạnh phúc.⟧ → Ha szeretne engem, nagyon boldog lennék. · ⟦Nếu đi bằng máy bay thì mất khoảng 2 tiếng.⟧ → Repülővel körülbelül 2 óra.
+Az ige + ⟦giùm⟧ A jelentése „megtenni valamit A helyett / A-nak, segíteni A-nak azzal, hogy ~”.
+⟦Em mua giùm anh cốc cà phê nhé.⟧ → Vennél nekem egy kávét? · ⟦Xin thầy giải thích giùm em câu này ạ.⟧ → Tanár úr, kérem, magyarázza el nekem ezt a mondatot. · ⟦Thỉnh thoảng cô ấy viết giùm cho khách hàng.⟧ → Néha az ügyfelek helyett ír.
+=id
+Penjelasan tata bahasa
+⟦nếu A thì B⟧ berarti "jika A, maka B".
+⟦Nếu có tiền thì tôi sẽ mua nhà đẹp.⟧ → Jika punya uang, saya akan membeli rumah yang bagus. · ⟦Nếu cô ấy yêu tôi thì tôi sẽ rất hạnh phúc.⟧ → Jika dia mencintai saya, saya akan sangat bahagia. · ⟦Nếu đi bằng máy bay thì mất khoảng 2 tiếng.⟧ → Jika naik pesawat, butuh sekitar 2 jam.
+Verba + ⟦giùm⟧ A berarti "melakukan sesuatu untuk A, membantu A dengan ~".
+⟦Em mua giùm anh cốc cà phê nhé.⟧ → Tolong belikan aku secangkir kopi, ya. · ⟦Xin thầy giải thích giùm em câu này ạ.⟧ → Pak, tolong jelaskan kalimat ini untuk saya. · ⟦Thỉnh thoảng cô ấy viết giùm cho khách hàng.⟧ → Kadang-kadang dia menuliskan sesuatu untuk pelanggan.
+=ja
+文法解説
+⟦nếu A thì B⟧ の形で「もしAならBする」という意味で使われます。
+⟦Nếu có tiền thì tôi sẽ mua nhà đẹp.⟧ → もしお金があったら、すてきな家を買うだろう。 · ⟦Nếu cô ấy yêu tôi thì tôi sẽ rất hạnh phúc.⟧ → もし彼女が私を愛してくれたら、本当に幸せだろう。 · ⟦Nếu đi bằng máy bay thì mất khoảng 2 tiếng.⟧ → 飛行機で行けば2時間ほどかかる。
+動詞 + ⟦giùm⟧ A の形で「Aを助けて～してあげる / Aの代わりに～する」という意味で使われます。
+⟦Em mua giùm anh cốc cà phê nhé.⟧ → 僕の代わりにコーヒーを一杯買ってきてね。 · ⟦Xin thầy giải thích giùm em câu này ạ.⟧ → 先生、この文を説明していただけますか。 · ⟦Thỉnh thoảng cô ấy viết giùm cho khách hàng.⟧ → 彼女は時々、客の代わりに字を書いてあげる。
+=pl
+Objaśnienia gramatyczne
+⟦nếu A thì B⟧ znaczy „jeśli A, to B”.
+⟦Nếu có tiền thì tôi sẽ mua nhà đẹp.⟧ → Gdybym miał pieniądze, kupiłbym ładny dom. · ⟦Nếu cô ấy yêu tôi thì tôi sẽ rất hạnh phúc.⟧ → Gdyby mnie kochała, byłbym bardzo szczęśliwy. · ⟦Nếu đi bằng máy bay thì mất khoảng 2 tiếng.⟧ → Samolotem zajmuje to około 2 godzin.
+Czasownik + ⟦giùm⟧ A znaczy „zrobić coś za A / dla A, pomóc A, robiąc ~”.
+⟦Em mua giùm anh cốc cà phê nhé.⟧ → Kup mi, proszę, kawę. · ⟦Xin thầy giải thích giùm em câu này ạ.⟧ → Proszę mi wyjaśnić to zdanie, panie profesorze. · ⟦Thỉnh thoảng cô ấy viết giùm cho khách hàng.⟧ → Czasem pisze za klientów.

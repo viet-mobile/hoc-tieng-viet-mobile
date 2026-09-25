@@ -1,0 +1,243 @@
+@@ pdf-grammar-a491c2f2018080d7#0
+=cs
+Gramatický výklad
+⟦bao giờ cũng⟧: „vždy“ – používá se ve tvaru ⟦bao giờ cũng⟧ + sloveso.
+⟦Bữa cơm bao giờ cũng bắt đầu từ lời mời cơm của con cháu dành cho ông bà, và những người bề trên.⟧ → Jídlo vždy začíná tím, že děti a vnoučata zvou k jídlu prarodiče a starší. · ⟦Trước giờ học, lớp tôi bao giờ cũng hát một bài.⟧ → Před vyučováním si naše třída vždy zazpívá jednu píseň. · ⟦Mỗi khi về thăm quê, tôi bao giờ cũng chuẩn bị một chút quà biếu ông bà và một ít bánh kẹo cho các cháu.⟧ → Kdykoli jedu domů, vždy připravím malý dárek pro prarodiče a nějaké sladkosti pro děti.
+⟦nhường A cho B⟧: „přenechat A (komu) B“ – A je to, co se přenechává, B ten, kdo to dostane.
+⟦Còn ông bà, cha mẹ thì cũng thường nhường phần ngon ngọt cho con cháu, nhất là những trẻ nhỏ trong nhà.⟧ → A prarodiče a rodiče zase obvykle přenechávají ty nejlepší kousky dětem a vnoučatům, zvláště těm nejmenším. · ⟦Tôi đã nhường chỗ ngồi ở dãy bàn đầu cho chị ấy, vì chị ấy bị cận.⟧ → Přenechal jsem jí místo v první lavici, protože je krátkozraká. · ⟦Vì cửa hàng đã hết hàng nên chị Lan đã nhường suất ăn sáng cho anh Dũng.⟧ → Protože v obchodě už nic nebylo, přenechala Lan svou porci snídaně Dũngovi.
+⟦với nhau⟧: ve tvaru sloveso + ⟦với nhau⟧ znamená „navzájem, spolu“.
+⟦Vì những lẽ đó, bữa cơm gia đình khiến người Việt luôn gắn bó với nhau.⟧ → Z těchto důvodů rodinné jídlo Vietnamce vždy navzájem sbližuje. · ⟦Dọc đường từ nhà đến trường, tôi và chị ấy luôn luôn trò chuyện với nhau.⟧ → Cestou z domu do školy si spolu vždycky povídáme. · ⟦Dũng, Nga và tôi học cùng lớp với nhau suốt cả thời gian ở trường tiểu học.⟧ → Dũng, Nga a já jsme spolu chodili do stejné třídy po celou dobu základní školy.
+=zh_cn
+语法解说
+⟦bao giờ cũng⟧：意为“总是”，以 ⟦bao giờ cũng⟧ + 动词 的形式使用。
+⟦Bữa cơm bao giờ cũng bắt đầu từ lời mời cơm của con cháu dành cho ông bà, và những người bề trên.⟧ → 吃饭总是从子孙请爷爷奶奶和长辈们用餐开始。 · ⟦Trước giờ học, lớp tôi bao giờ cũng hát một bài.⟧ → 上课前，我们班总要唱一首歌。 · ⟦Mỗi khi về thăm quê, tôi bao giờ cũng chuẩn bị một chút quà biếu ông bà và một ít bánh kẹo cho các cháu.⟧ → 每次回老家，我总会准备一点礼物孝敬爷爷奶奶，还有一些糖果给孩子们。
+⟦nhường A cho B⟧：意为“把A让给B”，A是让出的东西，B是接受者。
+⟦Còn ông bà, cha mẹ thì cũng thường nhường phần ngon ngọt cho con cháu, nhất là những trẻ nhỏ trong nhà.⟧ → 而爷爷奶奶、父母也常把好吃的让给子孙，尤其是家里的小孩。 · ⟦Tôi đã nhường chỗ ngồi ở dãy bàn đầu cho chị ấy, vì chị ấy bị cận.⟧ → 我把第一排的座位让给了她，因为她近视。 · ⟦Vì cửa hàng đã hết hàng nên chị Lan đã nhường suất ăn sáng cho anh Dũng.⟧ → 因为店里卖完了，阿兰把自己那份早餐让给了阿勇。
+⟦với nhau⟧：以 动词 + ⟦với nhau⟧ 的形式，表示“互相、彼此”。
+⟦Vì những lẽ đó, bữa cơm gia đình khiến người Việt luôn gắn bó với nhau.⟧ → 由于这些原因，家庭聚餐使越南人总是彼此紧密相连。 · ⟦Dọc đường từ nhà đến trường, tôi và chị ấy luôn luôn trò chuyện với nhau.⟧ → 从家到学校的路上，我和她总是互相聊天。 · ⟦Dũng, Nga và tôi học cùng lớp với nhau suốt cả thời gian ở trường tiểu học.⟧ → 阿勇、阿娥和我整个小学期间都在同一个班。
+=zh
+文法解說
+⟦bao giờ cũng⟧：意為「總是」，以 ⟦bao giờ cũng⟧ + 動詞 的形式使用。
+⟦Bữa cơm bao giờ cũng bắt đầu từ lời mời cơm của con cháu dành cho ông bà, và những người bề trên.⟧ → 吃飯總是從子孫請爺爺奶奶和長輩們用餐開始。 · ⟦Trước giờ học, lớp tôi bao giờ cũng hát một bài.⟧ → 上課前，我們班總要唱一首歌。 · ⟦Mỗi khi về thăm quê, tôi bao giờ cũng chuẩn bị một chút quà biếu ông bà và một ít bánh kẹo cho các cháu.⟧ → 每次回老家，我總會準備一點禮物孝敬爺爺奶奶，還有一些糖果給孩子們。
+⟦nhường A cho B⟧：意為「把A讓給B」，A是讓出的東西，B是接受者。
+⟦Còn ông bà, cha mẹ thì cũng thường nhường phần ngon ngọt cho con cháu, nhất là những trẻ nhỏ trong nhà.⟧ → 而爺爺奶奶、父母也常把好吃的讓給子孫，尤其是家裡的小孩。 · ⟦Tôi đã nhường chỗ ngồi ở dãy bàn đầu cho chị ấy, vì chị ấy bị cận.⟧ → 我把第一排的座位讓給了她，因為她近視。 · ⟦Vì cửa hàng đã hết hàng nên chị Lan đã nhường suất ăn sáng cho anh Dũng.⟧ → 因為店裡賣完了，阿蘭把自己那份早餐讓給了阿勇。
+⟦với nhau⟧：以 動詞 + ⟦với nhau⟧ 的形式，表示「互相、彼此」。
+⟦Vì những lẽ đó, bữa cơm gia đình khiến người Việt luôn gắn bó với nhau.⟧ → 由於這些原因，家庭聚餐使越南人總是彼此緊密相連。 · ⟦Dọc đường từ nhà đến trường, tôi và chị ấy luôn luôn trò chuyện với nhau.⟧ → 從家到學校的路上，我和她總是互相聊天。 · ⟦Dũng, Nga và tôi học cùng lớp với nhau suốt cả thời gian ở trường tiểu học.⟧ → 阿勇、阿娥和我整個小學期間都在同一班。
+=en
+Grammar notes
+⟦bao giờ cũng⟧: "always" – used in the form ⟦bao giờ cũng⟧ + verb.
+⟦Bữa cơm bao giờ cũng bắt đầu từ lời mời cơm của con cháu dành cho ông bà, và những người bề trên.⟧ → A meal always begins with the children and grandchildren inviting the grandparents and elders to eat. · ⟦Trước giờ học, lớp tôi bao giờ cũng hát một bài.⟧ → Before lessons, my class always sings a song. · ⟦Mỗi khi về thăm quê, tôi bao giờ cũng chuẩn bị một chút quà biếu ông bà và một ít bánh kẹo cho các cháu.⟧ → Whenever I go back home, I always prepare a little gift for my grandparents and some sweets for the children.
+⟦nhường A cho B⟧: "to give up A for B, let B have A" – A is what is yielded, B is the one who receives it.
+⟦Còn ông bà, cha mẹ thì cũng thường nhường phần ngon ngọt cho con cháu, nhất là những trẻ nhỏ trong nhà.⟧ → Grandparents and parents, for their part, usually leave the tastiest bits for the children and grandchildren, especially the little ones. · ⟦Tôi đã nhường chỗ ngồi ở dãy bàn đầu cho chị ấy, vì chị ấy bị cận.⟧ → I gave her my seat in the front row because she's short-sighted. · ⟦Vì cửa hàng đã hết hàng nên chị Lan đã nhường suất ăn sáng cho anh Dũng.⟧ → Because the shop had sold out, Lan let Dũng have her breakfast.
+⟦với nhau⟧: in the form verb + ⟦với nhau⟧, means "with each other, together".
+⟦Vì những lẽ đó, bữa cơm gia đình khiến người Việt luôn gắn bó với nhau.⟧ → For these reasons, family meals always keep Vietnamese people close to one another. · ⟦Dọc đường từ nhà đến trường, tôi và chị ấy luôn luôn trò chuyện với nhau.⟧ → All the way from home to school, she and I always chat with each other. · ⟦Dũng, Nga và tôi học cùng lớp với nhau suốt cả thời gian ở trường tiểu học.⟧ → Dũng, Nga and I were in the same class together throughout primary school.
+=fr
+Notes de grammaire
+⟦bao giờ cũng⟧ : « toujours » – s'emploie sous la forme ⟦bao giờ cũng⟧ + verbe.
+⟦Bữa cơm bao giờ cũng bắt đầu từ lời mời cơm của con cháu dành cho ông bà, và những người bề trên.⟧ → Le repas commence toujours par l'invitation des enfants et petits-enfants adressée aux grands-parents et aux aînés. · ⟦Trước giờ học, lớp tôi bao giờ cũng hát một bài.⟧ → Avant le cours, ma classe chante toujours une chanson. · ⟦Mỗi khi về thăm quê, tôi bao giờ cũng chuẩn bị một chút quà biếu ông bà và một ít bánh kẹo cho các cháu.⟧ → Chaque fois que je rentre au pays, je prépare toujours un petit cadeau pour mes grands-parents et quelques friandises pour les enfants.
+⟦nhường A cho B⟧ : « céder A à B » – A est ce qu'on cède, B celui qui le reçoit.
+⟦Còn ông bà, cha mẹ thì cũng thường nhường phần ngon ngọt cho con cháu, nhất là những trẻ nhỏ trong nhà.⟧ → Quant aux grands-parents et aux parents, ils laissent souvent les meilleurs morceaux aux enfants et petits-enfants, surtout aux plus petits. · ⟦Tôi đã nhường chỗ ngồi ở dãy bàn đầu cho chị ấy, vì chị ấy bị cận.⟧ → Je lui ai cédé ma place au premier rang parce qu'elle est myope. · ⟦Vì cửa hàng đã hết hàng nên chị Lan đã nhường suất ăn sáng cho anh Dũng.⟧ → Comme la boutique n'avait plus rien, Lan a cédé sa part de petit-déjeuner à Dũng.
+⟦với nhau⟧ : sous la forme verbe + ⟦với nhau⟧, signifie « l'un avec l'autre, ensemble ».
+⟦Vì những lẽ đó, bữa cơm gia đình khiến người Việt luôn gắn bó với nhau.⟧ → Pour ces raisons, le repas familial maintient toujours les Vietnamiens liés les uns aux autres. · ⟦Dọc đường từ nhà đến trường, tôi và chị ấy luôn luôn trò chuyện với nhau.⟧ → Sur le chemin de l'école, elle et moi bavardons toujours ensemble. · ⟦Dũng, Nga và tôi học cùng lớp với nhau suốt cả thời gian ở trường tiểu học.⟧ → Dũng, Nga et moi avons été dans la même classe pendant toute l'école primaire.
+=de
+Grammatikerläuterungen
+⟦bao giờ cũng⟧: „immer“ – wird in der Form ⟦bao giờ cũng⟧ + Verb verwendet.
+⟦Bữa cơm bao giờ cũng bắt đầu từ lời mời cơm của con cháu dành cho ông bà, và những người bề trên.⟧ → Eine Mahlzeit beginnt immer damit, dass Kinder und Enkel die Großeltern und Älteren zum Essen einladen. · ⟦Trước giờ học, lớp tôi bao giờ cũng hát một bài.⟧ → Vor dem Unterricht singt meine Klasse immer ein Lied. · ⟦Mỗi khi về thăm quê, tôi bao giờ cũng chuẩn bị một chút quà biếu ông bà và một ít bánh kẹo cho các cháu.⟧ → Immer wenn ich in die Heimat fahre, bereite ich ein kleines Geschenk für die Großeltern und etwas Süßes für die Kinder vor.
+⟦nhường A cho B⟧: „A an B abtreten, B A überlassen“ – A ist das Überlassene, B der Empfänger.
+⟦Còn ông bà, cha mẹ thì cũng thường nhường phần ngon ngọt cho con cháu, nhất là những trẻ nhỏ trong nhà.⟧ → Großeltern und Eltern wiederum überlassen die besten Bissen meist den Kindern und Enkeln, besonders den Kleinsten. · ⟦Tôi đã nhường chỗ ngồi ở dãy bàn đầu cho chị ấy, vì chị ấy bị cận.⟧ → Ich habe ihr meinen Platz in der ersten Reihe überlassen, weil sie kurzsichtig ist. · ⟦Vì cửa hàng đã hết hàng nên chị Lan đã nhường suất ăn sáng cho anh Dũng.⟧ → Weil der Laden ausverkauft war, überließ Lan ihr Frühstück Dũng.
+⟦với nhau⟧: in der Form Verb + ⟦với nhau⟧ bedeutet es „miteinander, gegenseitig“.
+⟦Vì những lẽ đó, bữa cơm gia đình khiến người Việt luôn gắn bó với nhau.⟧ → Aus diesen Gründen verbindet das Familienessen die Vietnamesen stets miteinander. · ⟦Dọc đường từ nhà đến trường, tôi và chị ấy luôn luôn trò chuyện với nhau.⟧ → Auf dem Weg von zu Hause zur Schule unterhalten sie und ich uns immer miteinander. · ⟦Dũng, Nga và tôi học cùng lớp với nhau suốt cả thời gian ở trường tiểu học.⟧ → Dũng, Nga und ich waren die ganze Grundschulzeit über zusammen in einer Klasse.
+=hu
+Nyelvtani magyarázat
+⟦bao giờ cũng⟧: „mindig” – ⟦bao giờ cũng⟧ + ige alakban használatos.
+⟦Bữa cơm bao giờ cũng bắt đầu từ lời mời cơm của con cháu dành cho ông bà, và những người bề trên.⟧ → Az étkezés mindig azzal kezdődik, hogy a gyerekek és unokák asztalhoz invitálják a nagyszülőket és az időseket. · ⟦Trước giờ học, lớp tôi bao giờ cũng hát một bài.⟧ → Óra előtt az osztályunk mindig elénekel egy dalt. · ⟦Mỗi khi về thăm quê, tôi bao giờ cũng chuẩn bị một chút quà biếu ông bà và một ít bánh kẹo cho các cháu.⟧ → Valahányszor hazalátogatok, mindig készítek egy kis ajándékot a nagyszülőknek és némi édességet a gyerekeknek.
+⟦nhường A cho B⟧: „átengedi A-t B-nek” – A az átengedett dolog, B a kedvezményezett.
+⟦Còn ông bà, cha mẹ thì cũng thường nhường phần ngon ngọt cho con cháu, nhất là những trẻ nhỏ trong nhà.⟧ → A nagyszülők és a szülők pedig általában a legfinomabb falatokat hagyják a gyerekeknek és unokáknak, főleg a legkisebbeknek. · ⟦Tôi đã nhường chỗ ngồi ở dãy bàn đầu cho chị ấy, vì chị ấy bị cận.⟧ → Átadtam neki a helyemet az első padsorban, mert rövidlátó. · ⟦Vì cửa hàng đã hết hàng nên chị Lan đã nhường suất ăn sáng cho anh Dũng.⟧ → Mivel a boltban elfogyott az áru, Lan átengedte a reggelijét Dũngnak.
+⟦với nhau⟧: ige + ⟦với nhau⟧ alakban jelentése „egymással, együtt”.
+⟦Vì những lẽ đó, bữa cơm gia đình khiến người Việt luôn gắn bó với nhau.⟧ → Ezen okokból a családi étkezés a vietnámiakat mindig szorosan összeköti egymással. · ⟦Dọc đường từ nhà đến trường, tôi và chị ấy luôn luôn trò chuyện với nhau.⟧ → Az iskolába vezető úton mindig beszélgetünk egymással. · ⟦Dũng, Nga và tôi học cùng lớp với nhau suốt cả thời gian ở trường tiểu học.⟧ → Dũng, Nga és én az egész általános iskola alatt együtt jártunk egy osztályba.
+=id
+Penjelasan tata bahasa
+⟦bao giờ cũng⟧: "selalu" – dipakai dalam bentuk ⟦bao giờ cũng⟧ + verba.
+⟦Bữa cơm bao giờ cũng bắt đầu từ lời mời cơm của con cháu dành cho ông bà, và những người bề trên.⟧ → Makan bersama selalu diawali dengan anak cucu mempersilakan kakek-nenek dan orang yang lebih tua untuk makan. · ⟦Trước giờ học, lớp tôi bao giờ cũng hát một bài.⟧ → Sebelum pelajaran, kelas saya selalu menyanyikan satu lagu. · ⟦Mỗi khi về thăm quê, tôi bao giờ cũng chuẩn bị một chút quà biếu ông bà và một ít bánh kẹo cho các cháu.⟧ → Setiap kali pulang kampung, saya selalu menyiapkan sedikit oleh-oleh untuk kakek-nenek dan sedikit permen untuk anak-anak.
+⟦nhường A cho B⟧: "mengalah memberikan A kepada B" – A adalah yang diberikan, B adalah penerimanya.
+⟦Còn ông bà, cha mẹ thì cũng thường nhường phần ngon ngọt cho con cháu, nhất là những trẻ nhỏ trong nhà.⟧ → Sementara kakek-nenek dan orang tua biasanya mengalah memberikan bagian yang enak kepada anak cucu, terutama anak-anak kecil di rumah. · ⟦Tôi đã nhường chỗ ngồi ở dãy bàn đầu cho chị ấy, vì chị ấy bị cận.⟧ → Saya memberikan tempat duduk di barisan depan kepadanya karena dia rabun jauh. · ⟦Vì cửa hàng đã hết hàng nên chị Lan đã nhường suất ăn sáng cho anh Dũng.⟧ → Karena tokonya sudah kehabisan barang, Lan memberikan jatah sarapannya kepada Dũng.
+⟦với nhau⟧: dalam bentuk verba + ⟦với nhau⟧ berarti "satu sama lain, bersama-sama".
+⟦Vì những lẽ đó, bữa cơm gia đình khiến người Việt luôn gắn bó với nhau.⟧ → Karena alasan-alasan itu, makan bersama keluarga membuat orang Vietnam selalu terikat erat satu sama lain. · ⟦Dọc đường từ nhà đến trường, tôi và chị ấy luôn luôn trò chuyện với nhau.⟧ → Sepanjang jalan dari rumah ke sekolah, saya dan dia selalu mengobrol bersama. · ⟦Dũng, Nga và tôi học cùng lớp với nhau suốt cả thời gian ở trường tiểu học.⟧ → Dũng, Nga, dan saya sekelas bersama selama masa sekolah dasar.
+=ja
+文法解説
+⟦bao giờ cũng⟧：「いつも」という意味で、⟦bao giờ cũng⟧ + 動詞 の形で使われます。
+⟦Bữa cơm bao giờ cũng bắt đầu từ lời mời cơm của con cháu dành cho ông bà, và những người bề trên.⟧ → 食事はいつも、子や孫が祖父母や目上の人に食事を勧める言葉から始まる。 · ⟦Trước giờ học, lớp tôi bao giờ cũng hát một bài.⟧ → 授業の前に、私のクラスはいつも一曲歌う。 · ⟦Mỗi khi về thăm quê, tôi bao giờ cũng chuẩn bị một chút quà biếu ông bà và một ít bánh kẹo cho các cháu.⟧ → 故郷に帰るたびに、私はいつも祖父母へのちょっとした贈り物と子どもたちへのお菓子を用意する。
+⟦nhường A cho B⟧：「AをBに譲る」という意味で、Aには譲る内容、Bには譲られる対象が来ます。
+⟦Còn ông bà, cha mẹ thì cũng thường nhường phần ngon ngọt cho con cháu, nhất là những trẻ nhỏ trong nhà.⟧ → 一方、祖父母や両親はたいていおいしい部分を子や孫、特に家の小さな子どもたちに譲る。 · ⟦Tôi đã nhường chỗ ngồi ở dãy bàn đầu cho chị ấy, vì chị ấy bị cận.⟧ → 彼女は近視なので、私は最前列の席を彼女に譲った。 · ⟦Vì cửa hàng đã hết hàng nên chị Lan đã nhường suất ăn sáng cho anh Dũng.⟧ → 店が品切れだったので、ランさんは自分の朝食をズンさんに譲った。
+⟦với nhau⟧：動詞 + ⟦với nhau⟧ の形で「互いに」という意味で使われます。
+⟦Vì những lẽ đó, bữa cơm gia đình khiến người Việt luôn gắn bó với nhau.⟧ → こうした理由から、家族の食事はベトナム人を常に互いに結びつけている。 · ⟦Dọc đường từ nhà đến trường, tôi và chị ấy luôn luôn trò chuyện với nhau.⟧ → 家から学校までの道中、私と彼女はいつも互いに話をする。 · ⟦Dũng, Nga và tôi học cùng lớp với nhau suốt cả thời gian ở trường tiểu học.⟧ → ズン、ガーと私は小学校の間ずっと同じクラスだった。
+=pl
+Objaśnienia gramatyczne
+⟦bao giờ cũng⟧: „zawsze” – używa się w formie ⟦bao giờ cũng⟧ + czasownik.
+⟦Bữa cơm bao giờ cũng bắt đầu từ lời mời cơm của con cháu dành cho ông bà, và những người bề trên.⟧ → Posiłek zawsze zaczyna się od tego, że dzieci i wnuki zapraszają do jedzenia dziadków i starszych. · ⟦Trước giờ học, lớp tôi bao giờ cũng hát một bài.⟧ → Przed lekcją moja klasa zawsze śpiewa piosenkę. · ⟦Mỗi khi về thăm quê, tôi bao giờ cũng chuẩn bị một chút quà biếu ông bà và một ít bánh kẹo cho các cháu.⟧ → Za każdym razem, gdy jadę w rodzinne strony, zawsze przygotowuję mały prezent dla dziadków i trochę słodyczy dla dzieci.
+⟦nhường A cho B⟧: „ustąpić A komuś B, oddać A B” – A to to, co się oddaje, B to odbiorca.
+⟦Còn ông bà, cha mẹ thì cũng thường nhường phần ngon ngọt cho con cháu, nhất là những trẻ nhỏ trong nhà.⟧ → Dziadkowie i rodzice z kolei zwykle oddają najsmaczniejsze kąski dzieciom i wnukom, zwłaszcza najmłodszym. · ⟦Tôi đã nhường chỗ ngồi ở dãy bàn đầu cho chị ấy, vì chị ấy bị cận.⟧ → Ustąpiłem jej miejsca w pierwszej ławce, bo jest krótkowidzem. · ⟦Vì cửa hàng đã hết hàng nên chị Lan đã nhường suất ăn sáng cho anh Dũng.⟧ → Ponieważ w sklepie wszystko się skończyło, Lan oddała swoje śniadanie Dũngowi.
+⟦với nhau⟧: w formie czasownik + ⟦với nhau⟧ znaczy „ze sobą, wzajemnie”.
+⟦Vì những lẽ đó, bữa cơm gia đình khiến người Việt luôn gắn bó với nhau.⟧ → Z tych powodów rodzinny posiłek zawsze zbliża Wietnamczyków do siebie. · ⟦Dọc đường từ nhà đến trường, tôi và chị ấy luôn luôn trò chuyện với nhau.⟧ → W drodze z domu do szkoły ona i ja zawsze ze sobą rozmawiamy. · ⟦Dũng, Nga và tôi học cùng lớp với nhau suốt cả thời gian ở trường tiểu học.⟧ → Dũng, Nga i ja chodziliśmy razem do jednej klasy przez całą podstawówkę.
+@@ pdf-grammar-5e4cc8b1c93bc981#0
+=cs
+Gramatický výklad
+⟦được⟧ + (sloveso): používá se, když je sdělovaný obsah pro podmět prospěšný nebo pozitivní („dostat možnost, smět, být ~n“).
+⟦được mời ăn cơm⟧ → být pozván na jídlo · ⟦được khen thưởng⟧ → být pochválen a odměněn · ⟦được ăn uống no nê⟧ → dosyta se najíst a napít · ⟦được ra viện sớm⟧ → být brzy propuštěn z nemocnice · ⟦được về thăm gia đình⟧ → smět jet navštívit rodinu
+⟦nếu ... thì⟧: ve tvaru ⟦Nếu A thì B⟧ vyjadřuje podmínku a výsledek – „jestliže A, pak B“.
+⟦Nếu bạn là người nước ngoài được mời ăn cơm cùng với chủ nhà người Việt thì bạn cần chú ý một số điều.⟧ → Pokud jste cizinec pozvaný na jídlo k vietnamskému hostiteli, měli byste dbát na několik věcí. · ⟦Nếu bạn là người nước ngoài lần đầu đến Việt Nam thì bạn cần có một tấm bản đồ chỉ dẫn đường phố.⟧ → Pokud jste cizinec a jste ve Vietnamu poprvé, potřebujete mapu ulic.
+⟦từ ... đến (lên, xuống, vào...)⟧: ve tvaru ⟦từ A đến B⟧ znamená „od A do B“; lze jej použít pro čas i prostor.
+⟦Trước hết bạn phải mời từ người lớn tuổi nhất trong mâm rồi sau đó mời đến những người khác.⟧ → Nejprve musíte k jídlu vyzvat nejstaršího u stolu a teprve potom ostatní. · ⟦Bạn phải gắp lần lượt từ trên xuống dưới.⟧ → Jídlo musíte brát postupně shora dolů. · ⟦Từ chân núi lên tới đỉnh phải cao đến hàng nghìn mét.⟧ → Od úpatí k vrcholu je to převýšení až několik tisíc metrů.
+=zh_cn
+语法解说
+⟦được⟧ +（动词）：所要表达的内容对主语有利或积极时，使用 ⟦được⟧ + 动词 的形式（“得以、被、能够”）。
+⟦được mời ăn cơm⟧ → 被请吃饭 · ⟦được khen thưởng⟧ → 受到表彰奖励 · ⟦được ăn uống no nê⟧ → 能吃饱喝足 · ⟦được ra viện sớm⟧ → 能提早出院 · ⟦được về thăm gia đình⟧ → 能回家探亲
+⟦nếu ... thì⟧：以 ⟦Nếu A thì B⟧ 的形式表示条件和结果，意为“如果……就……”。
+⟦Nếu bạn là người nước ngoài được mời ăn cơm cùng với chủ nhà người Việt thì bạn cần chú ý một số điều.⟧ → 如果你是受越南主人邀请吃饭的外国人，就需要注意一些事项。 · ⟦Nếu bạn là người nước ngoài lần đầu đến Việt Nam thì bạn cần có một tấm bản đồ chỉ dẫn đường phố.⟧ → 如果你是第一次来越南的外国人，就需要一张街道指南地图。
+⟦từ ... đến (lên, xuống, vào...)⟧：以 ⟦từ A đến B⟧ 的形式表示“从A到B”，时间和空间都可以使用。
+⟦Trước hết bạn phải mời từ người lớn tuổi nhất trong mâm rồi sau đó mời đến những người khác.⟧ → 首先要从桌上年纪最大的人请起，然后再请其他人。 · ⟦Bạn phải gắp lần lượt từ trên xuống dưới.⟧ → 你要从上往下依次夹菜。 · ⟦Từ chân núi lên tới đỉnh phải cao đến hàng nghìn mét.⟧ → 从山脚到山顶高达数千米。
+=zh
+文法解說
+⟦được⟧ +（動詞）：所要表達的內容對主語有利或正面時，使用 ⟦được⟧ + 動詞 的形式（「得以、被、能夠」）。
+⟦được mời ăn cơm⟧ → 被請吃飯 · ⟦được khen thưởng⟧ → 受到表揚獎勵 · ⟦được ăn uống no nê⟧ → 能吃飽喝足 · ⟦được ra viện sớm⟧ → 能提早出院 · ⟦được về thăm gia đình⟧ → 能回家探親
+⟦nếu ... thì⟧：以 ⟦Nếu A thì B⟧ 的形式表示條件和結果，意為「如果……就……」。
+⟦Nếu bạn là người nước ngoài được mời ăn cơm cùng với chủ nhà người Việt thì bạn cần chú ý một số điều.⟧ → 如果你是受越南主人邀請吃飯的外國人，就需要注意一些事項。 · ⟦Nếu bạn là người nước ngoài lần đầu đến Việt Nam thì bạn cần có một tấm bản đồ chỉ dẫn đường phố.⟧ → 如果你是第一次來越南的外國人，就需要一張街道導覽地圖。
+⟦từ ... đến (lên, xuống, vào...)⟧：以 ⟦từ A đến B⟧ 的形式表示「從A到B」，時間和空間都可以使用。
+⟦Trước hết bạn phải mời từ người lớn tuổi nhất trong mâm rồi sau đó mời đến những người khác.⟧ → 首先要從桌上年紀最大的人請起，然後再請其他人。 · ⟦Bạn phải gắp lần lượt từ trên xuống dưới.⟧ → 你要從上往下依序夾菜。 · ⟦Từ chân núi lên tới đỉnh phải cao đến hàng nghìn mét.⟧ → 從山腳到山頂高達數千公尺。
+=en
+Grammar notes
+⟦được⟧ + (verb): used when what is being said is beneficial or positive for the subject ("get to, be allowed to, be ~ed").
+⟦được mời ăn cơm⟧ → be invited to a meal · ⟦được khen thưởng⟧ → be commended and rewarded · ⟦được ăn uống no nê⟧ → get to eat and drink one's fill · ⟦được ra viện sớm⟧ → be discharged from hospital early · ⟦được về thăm gia đình⟧ → get to go home to visit family
+⟦nếu ... thì⟧: in the form ⟦Nếu A thì B⟧, expresses condition and result – "if A, then B".
+⟦Nếu bạn là người nước ngoài được mời ăn cơm cùng với chủ nhà người Việt thì bạn cần chú ý một số điều.⟧ → If you're a foreigner invited to eat with a Vietnamese host, you should pay attention to a few things. · ⟦Nếu bạn là người nước ngoài lần đầu đến Việt Nam thì bạn cần có một tấm bản đồ chỉ dẫn đường phố.⟧ → If you're a foreigner coming to Vietnam for the first time, you need a street map.
+⟦từ ... đến (lên, xuống, vào...)⟧: in the form ⟦từ A đến B⟧, means "from A to B"; it can be used for both time and space.
+⟦Trước hết bạn phải mời từ người lớn tuổi nhất trong mâm rồi sau đó mời đến những người khác.⟧ → First you must invite the eldest person at the table to eat, and then the others. · ⟦Bạn phải gắp lần lượt từ trên xuống dưới.⟧ → You must take food in turn, from top to bottom. · ⟦Từ chân núi lên tới đỉnh phải cao đến hàng nghìn mét.⟧ → From the foot of the mountain to the summit is thousands of metres.
+=fr
+Notes de grammaire
+⟦được⟧ + (verbe) : s'emploie quand ce qui est exprimé est bénéfique ou positif pour le sujet (« avoir la chance de, pouvoir, être ~ »).
+⟦được mời ăn cơm⟧ → être invité à manger · ⟦được khen thưởng⟧ → être félicité et récompensé · ⟦được ăn uống no nê⟧ → pouvoir manger et boire à satiété · ⟦được ra viện sớm⟧ → pouvoir sortir tôt de l'hôpital · ⟦được về thăm gia đình⟧ → pouvoir rentrer voir sa famille
+⟦nếu ... thì⟧ : sous la forme ⟦Nếu A thì B⟧, exprime condition et conséquence – « si A, alors B ».
+⟦Nếu bạn là người nước ngoài được mời ăn cơm cùng với chủ nhà người Việt thì bạn cần chú ý một số điều.⟧ → Si vous êtes un étranger invité à manger chez un hôte vietnamien, vous devez faire attention à certaines choses. · ⟦Nếu bạn là người nước ngoài lần đầu đến Việt Nam thì bạn cần có một tấm bản đồ chỉ dẫn đường phố.⟧ → Si vous êtes un étranger venu au Vietnam pour la première fois, il vous faut un plan des rues.
+⟦từ ... đến (lên, xuống, vào...)⟧ : sous la forme ⟦từ A đến B⟧, signifie « de A à B » ; s'emploie pour le temps comme pour l'espace.
+⟦Trước hết bạn phải mời từ người lớn tuổi nhất trong mâm rồi sau đó mời đến những người khác.⟧ → D'abord, vous devez inviter à manger la personne la plus âgée de la table, puis les autres. · ⟦Bạn phải gắp lần lượt từ trên xuống dưới.⟧ → Vous devez vous servir à tour de rôle, de haut en bas. · ⟦Từ chân núi lên tới đỉnh phải cao đến hàng nghìn mét.⟧ → Du pied de la montagne au sommet, il y a des milliers de mètres.
+=de
+Grammatikerläuterungen
+⟦được⟧ + (Verb): wird verwendet, wenn das Mitgeteilte für das Subjekt vorteilhaft oder positiv ist („dürfen, bekommen, ~ werden“).
+⟦được mời ăn cơm⟧ → zum Essen eingeladen werden · ⟦được khen thưởng⟧ → gelobt und belohnt werden · ⟦được ăn uống no nê⟧ → sich satt essen und trinken dürfen · ⟦được ra viện sớm⟧ → früh aus dem Krankenhaus entlassen werden · ⟦được về thăm gia đình⟧ → nach Hause fahren und die Familie besuchen dürfen
+⟦nếu ... thì⟧: in der Form ⟦Nếu A thì B⟧ drückt es Bedingung und Folge aus – „wenn A, dann B“.
+⟦Nếu bạn là người nước ngoài được mời ăn cơm cùng với chủ nhà người Việt thì bạn cần chú ý một số điều.⟧ → Wenn Sie als Ausländer von einem vietnamesischen Gastgeber zum Essen eingeladen werden, sollten Sie auf einige Dinge achten. · ⟦Nếu bạn là người nước ngoài lần đầu đến Việt Nam thì bạn cần có một tấm bản đồ chỉ dẫn đường phố.⟧ → Wenn Sie als Ausländer zum ersten Mal nach Vietnam kommen, brauchen Sie einen Stadtplan.
+⟦từ ... đến (lên, xuống, vào...)⟧: in der Form ⟦từ A đến B⟧ bedeutet es „von A bis B“; für Zeit und Raum verwendbar.
+⟦Trước hết bạn phải mời từ người lớn tuổi nhất trong mâm rồi sau đó mời đến những người khác.⟧ → Zuerst müssen Sie den Ältesten am Tisch zum Essen auffordern, danach die anderen. · ⟦Bạn phải gắp lần lượt từ trên xuống dưới.⟧ → Sie müssen der Reihe nach von oben nach unten zugreifen. · ⟦Từ chân núi lên tới đỉnh phải cao đến hàng nghìn mét.⟧ → Vom Fuß des Berges bis zum Gipfel sind es Tausende Meter.
+=hu
+Nyelvtani magyarázat
+⟦được⟧ + (ige): akkor használják, ha a közölt tartalom az alany számára előnyös vagy pozitív („lehetősége van, szabad, ~va lenni”).
+⟦được mời ăn cơm⟧ → meghívást kap ebédre/vacsorára · ⟦được khen thưởng⟧ → dicséretben és jutalomban részesül · ⟦được ăn uống no nê⟧ → jóllakhat · ⟦được ra viện sớm⟧ → korán kiengedik a kórházból · ⟦được về thăm gia đình⟧ → hazamehet meglátogatni a családját
+⟦nếu ... thì⟧: ⟦Nếu A thì B⟧ alakban feltételt és következményt fejez ki – „ha A, akkor B”.
+⟦Nếu bạn là người nước ngoài được mời ăn cơm cùng với chủ nhà người Việt thì bạn cần chú ý một số điều.⟧ → Ha külföldiként vietnámi házigazda hív meg étkezni, néhány dologra figyelnie kell. · ⟦Nếu bạn là người nước ngoài lần đầu đến Việt Nam thì bạn cần có một tấm bản đồ chỉ dẫn đường phố.⟧ → Ha külföldiként először jár Vietnámban, szüksége van egy utcatérképre.
+⟦từ ... đến (lên, xuống, vào...)⟧: ⟦từ A đến B⟧ alakban jelentése „A-tól B-ig”; időre és térre egyaránt használható.
+⟦Trước hết bạn phải mời từ người lớn tuổi nhất trong mâm rồi sau đó mời đến những người khác.⟧ → Először az asztalnál ülő legidősebbet kell enni hívnia, csak azután a többieket. · ⟦Bạn phải gắp lần lượt từ trên xuống dưới.⟧ → Sorban, fentről lefelé kell szednie. · ⟦Từ chân núi lên tới đỉnh phải cao đến hàng nghìn mét.⟧ → A hegy lábától a csúcsig több ezer méter a magasság.
+=id
+Penjelasan tata bahasa
+⟦được⟧ + (verba): digunakan bila isi yang disampaikan menguntungkan atau positif bagi subjek ("mendapat, boleh, di~").
+⟦được mời ăn cơm⟧ → diundang makan · ⟦được khen thưởng⟧ → mendapat pujian dan penghargaan · ⟦được ăn uống no nê⟧ → bisa makan minum sampai kenyang · ⟦được ra viện sớm⟧ → boleh keluar dari rumah sakit lebih cepat · ⟦được về thăm gia đình⟧ → boleh pulang menjenguk keluarga
+⟦nếu ... thì⟧: dalam bentuk ⟦Nếu A thì B⟧ menyatakan syarat dan hasil – "jika A, maka B".
+⟦Nếu bạn là người nước ngoài được mời ăn cơm cùng với chủ nhà người Việt thì bạn cần chú ý một số điều.⟧ → Jika Anda orang asing yang diundang makan oleh tuan rumah orang Vietnam, Anda perlu memperhatikan beberapa hal. · ⟦Nếu bạn là người nước ngoài lần đầu đến Việt Nam thì bạn cần có một tấm bản đồ chỉ dẫn đường phố.⟧ → Jika Anda orang asing yang pertama kali datang ke Vietnam, Anda perlu memiliki peta petunjuk jalan.
+⟦từ ... đến (lên, xuống, vào...)⟧: dalam bentuk ⟦từ A đến B⟧ berarti "dari A sampai B"; dapat dipakai untuk waktu maupun ruang.
+⟦Trước hết bạn phải mời từ người lớn tuổi nhất trong mâm rồi sau đó mời đến những người khác.⟧ → Pertama-tama Anda harus mempersilakan orang tertua di meja makan, baru kemudian yang lain. · ⟦Bạn phải gắp lần lượt từ trên xuống dưới.⟧ → Anda harus mengambil makanan bergiliran dari atas ke bawah. · ⟦Từ chân núi lên tới đỉnh phải cao đến hàng nghìn mét.⟧ → Dari kaki gunung sampai puncak tingginya ribuan meter.
+=ja
+文法解説
+⟦được⟧ +（動詞）：伝えたい内容が主語にとって利益になる、または肯定的な場合に ⟦được⟧ + 動詞 の形で使います（「～してもらえる、～できる、～される」）。
+⟦được mời ăn cơm⟧ → 食事に招かれる · ⟦được khen thưởng⟧ → 表彰される · ⟦được ăn uống no nê⟧ → お腹いっぱい飲み食いできる · ⟦được ra viện sớm⟧ → 早く退院できる · ⟦được về thăm gia đình⟧ → 家族に会いに帰れる
+⟦nếu ... thì⟧：⟦Nếu A thì B⟧ の形で条件と結果を表し、「（もし）～なら～だ」という意味で使います。
+⟦Nếu bạn là người nước ngoài được mời ăn cơm cùng với chủ nhà người Việt thì bạn cần chú ý một số điều.⟧ → もしあなたがベトナム人の家の主人に食事に招かれた外国人なら、いくつかのことに注意する必要があります。 · ⟦Nếu bạn là người nước ngoài lần đầu đến Việt Nam thì bạn cần có một tấm bản đồ chỉ dẫn đường phố.⟧ → もしあなたが初めてベトナムに来た外国人なら、街路案内の地図が必要です。
+⟦từ ... đến (lên, xuống, vào...)⟧：⟦từ A đến B⟧ の形で「AからBまで」という意味で使われ、時間と空間を表す表現のどちらにも使えます。
+⟦Trước hết bạn phải mời từ người lớn tuổi nhất trong mâm rồi sau đó mời đến những người khác.⟧ → まず食卓で最も年長の人から勧め、その後で他の人に勧めなければならない。 · ⟦Bạn phải gắp lần lượt từ trên xuống dưới.⟧ → 上から下へ順番に料理を取らなければならない。 · ⟦Từ chân núi lên tới đỉnh phải cao đến hàng nghìn mét.⟧ → ふもとから頂上までは数千メートルの高さがある。
+=pl
+Objaśnienia gramatyczne
+⟦được⟧ + (czasownik): używa się, gdy przekazywana treść jest dla podmiotu korzystna lub pozytywna („móc, dostać, zostać ~”).
+⟦được mời ăn cơm⟧ → zostać zaproszonym na posiłek · ⟦được khen thưởng⟧ → zostać pochwalonym i nagrodzonym · ⟦được ăn uống no nê⟧ → móc się najeść i napić do syta · ⟦được ra viện sớm⟧ → wcześnie wyjść ze szpitala · ⟦được về thăm gia đình⟧ → móc pojechać odwiedzić rodzinę
+⟦nếu ... thì⟧: w formie ⟦Nếu A thì B⟧ wyraża warunek i skutek – „jeśli A, to B”.
+⟦Nếu bạn là người nước ngoài được mời ăn cơm cùng với chủ nhà người Việt thì bạn cần chú ý một số điều.⟧ → Jeśli jesteś obcokrajowcem zaproszonym na posiłek przez wietnamskiego gospodarza, musisz zwrócić uwagę na kilka rzeczy. · ⟦Nếu bạn là người nước ngoài lần đầu đến Việt Nam thì bạn cần có một tấm bản đồ chỉ dẫn đường phố.⟧ → Jeśli jesteś obcokrajowcem po raz pierwszy w Wietnamie, potrzebujesz planu ulic.
+⟦từ ... đến (lên, xuống, vào...)⟧: w formie ⟦từ A đến B⟧ znaczy „od A do B”; można go użyć zarówno w odniesieniu do czasu, jak i przestrzeni.
+⟦Trước hết bạn phải mời từ người lớn tuổi nhất trong mâm rồi sau đó mời đến những người khác.⟧ → Najpierw trzeba zaprosić do jedzenia najstarszą osobę przy stole, a dopiero potem pozostałych. · ⟦Bạn phải gắp lần lượt từ trên xuống dưới.⟧ → Trzeba nakładać po kolei, od góry do dołu. · ⟦Từ chân núi lên tới đỉnh phải cao đến hàng nghìn mét.⟧ → Od podnóża do szczytu góry jest tysiące metrów.
+@@ pdf-grammar-6f426440a36f3575#0
+=cs
+Gramatický výklad
+(přídavné jméno) + ⟦dần⟧: „postupně ~“ – vyjadřuje, že stav či vlastnost vyjádřená přídavným jménem postupně mizí nebo slábne.
+⟦việc giao lưu, gặp gỡ ngày một thưa dần⟧ → setkávání a styky jsou den ode dne řidší · ⟦khách ăn uống ít dần⟧ → hosté jedí a pijí postupně méně · ⟦nước trong lọ vơi dần⟧ → vody ve váze postupně ubývá · ⟦khách du lịch vắng dần⟧ → turistů postupně ubývá · ⟦sự chia sẻ, cảm thông nhạt nhòa dần⟧ → sdílení a vzájemné porozumění postupně blednou
+(přídavné jméno) + ⟦hơn⟧: „čím dál ~, ~ více“ – bez výslovného srovnání vyjadřuje, že stav či vlastnost postupně sílí nebo roste.
+⟦Bữa ăn cũng đơn giản hơn.⟧ → I jídlo je jednodušší. · ⟦Cuộc sống khiến con người độc lập hơn, bận rộn và gấp gáp hơn.⟧ → Život činí lidi samostatnějšími, vytíženějšími a uspěchanějšími. · ⟦Về chiều, thời tiết ở đây trở nên mát mẻ hơn.⟧ → K večeru je tu počasí příjemně chladnější. · ⟦Cuộc sống ngày một khó khăn hơn.⟧ → Život je den ode dne těžší. · ⟦Ô nhiễm môi trường ngày một nghiêm trọng hơn.⟧ → Znečištění životního prostředí je den ode dne vážnější.
+⟦không chỉ ... mà còn⟧: ve tvaru ⟦không chỉ A mà còn B⟧ znamená „nejen A, ale i B“.
+⟦Những bữa cơm gia đình không chỉ nhằm xây dựng thói quen sinh hoạt mà còn là một cách duy trì, phát huy những giá trị văn hóa truyền thống tốt đẹp của dân tộc Việt Nam.⟧ → Rodinná jídla neslouží jen k budování životních návyků, ale jsou i způsobem, jak udržovat a rozvíjet krásné tradiční kulturní hodnoty vietnamského národa. · ⟦Đại dịch covid không chỉ gây khó khăn cho nền kinh tế của một quốc gia mà còn gây khó khăn cho nền kinh tế của toàn thế giới.⟧ → Pandemie covidu způsobila potíže nejen ekonomice jedné země, ale i ekonomice celého světa.
+=zh_cn
+语法解说
+（形容词）+ ⟦dần⟧：意为“逐渐……”，用于表示形容词所表达的状态、性质逐渐消失或减弱。
+⟦việc giao lưu, gặp gỡ ngày một thưa dần⟧ → 交往、见面一天天逐渐稀少 · ⟦khách ăn uống ít dần⟧ → 客人吃喝得越来越少 · ⟦nước trong lọ vơi dần⟧ → 瓶里的水逐渐减少 · ⟦khách du lịch vắng dần⟧ → 游客逐渐稀少 · ⟦sự chia sẻ, cảm thông nhạt nhòa dần⟧ → 分享与理解逐渐淡漠
+（形容词）+ ⟦hơn⟧：在没有比较对象的情况下，表示形容词所表达的状态、性质逐渐增强或增加，意为“变得更……”。
+⟦Bữa ăn cũng đơn giản hơn.⟧ → 饭菜也更简单了。 · ⟦Cuộc sống khiến con người độc lập hơn, bận rộn và gấp gáp hơn.⟧ → 生活使人变得更独立，更忙碌、更匆忙。 · ⟦Về chiều, thời tiết ở đây trở nên mát mẻ hơn.⟧ → 傍晚时分，这里的天气变得凉爽些了。 · ⟦Cuộc sống ngày một khó khăn hơn.⟧ → 生活一天比一天艰难。 · ⟦Ô nhiễm môi trường ngày một nghiêm trọng hơn.⟧ → 环境污染一天比一天严重。
+⟦không chỉ ... mà còn⟧：以 ⟦không chỉ A mà còn B⟧ 的形式，表示“不仅A，而且B”。
+⟦Những bữa cơm gia đình không chỉ nhằm xây dựng thói quen sinh hoạt mà còn là một cách duy trì, phát huy những giá trị văn hóa truyền thống tốt đẹp của dân tộc Việt Nam.⟧ → 家庭聚餐不仅是为了养成生活习惯，也是维护、发扬越南民族美好传统文化价值的一种方式。 · ⟦Đại dịch covid không chỉ gây khó khăn cho nền kinh tế của một quốc gia mà còn gây khó khăn cho nền kinh tế của toàn thế giới.⟧ → 新冠疫情不仅给一个国家的经济带来困难，也给全世界的经济带来困难。
+=zh
+文法解說
+（形容詞）+ ⟦dần⟧：意為「逐漸……」，用於表示形容詞所表達的狀態、性質逐漸消失或減弱。
+⟦việc giao lưu, gặp gỡ ngày một thưa dần⟧ → 交往、見面一天天逐漸稀少 · ⟦khách ăn uống ít dần⟧ → 客人吃喝得越來越少 · ⟦nước trong lọ vơi dần⟧ → 瓶裡的水逐漸減少 · ⟦khách du lịch vắng dần⟧ → 遊客逐漸稀少 · ⟦sự chia sẻ, cảm thông nhạt nhòa dần⟧ → 分享與體諒逐漸淡薄
+（形容詞）+ ⟦hơn⟧：在沒有比較對象的情況下，表示形容詞所表達的狀態、性質逐漸增強或增加，意為「變得更……」。
+⟦Bữa ăn cũng đơn giản hơn.⟧ → 飯菜也更簡單了。 · ⟦Cuộc sống khiến con người độc lập hơn, bận rộn và gấp gáp hơn.⟧ → 生活使人變得更獨立，更忙碌、更匆忙。 · ⟦Về chiều, thời tiết ở đây trở nên mát mẻ hơn.⟧ → 傍晚時分，這裡的天氣變得涼爽些了。 · ⟦Cuộc sống ngày một khó khăn hơn.⟧ → 生活一天比一天艱難。 · ⟦Ô nhiễm môi trường ngày một nghiêm trọng hơn.⟧ → 環境汙染一天比一天嚴重。
+⟦không chỉ ... mà còn⟧：以 ⟦không chỉ A mà còn B⟧ 的形式，表示「不僅A，而且B」。
+⟦Những bữa cơm gia đình không chỉ nhằm xây dựng thói quen sinh hoạt mà còn là một cách duy trì, phát huy những giá trị văn hóa truyền thống tốt đẹp của dân tộc Việt Nam.⟧ → 家庭聚餐不僅是為了養成生活習慣，也是維護、發揚越南民族美好傳統文化價值的一種方式。 · ⟦Đại dịch covid không chỉ gây khó khăn cho nền kinh tế của một quốc gia mà còn gây khó khăn cho nền kinh tế của toàn thế giới.⟧ → 新冠疫情不僅給一個國家的經濟帶來困難，也給全世界的經濟帶來困難。
+=en
+Grammar notes
+(adjective) + ⟦dần⟧: "gradually ~" – used when the state or quality expressed by the adjective gradually disappears or weakens.
+⟦việc giao lưu, gặp gỡ ngày một thưa dần⟧ → contacts and get-togethers become rarer by the day · ⟦khách ăn uống ít dần⟧ → the guests gradually eat and drink less · ⟦nước trong lọ vơi dần⟧ → the water in the vase gradually goes down · ⟦khách du lịch vắng dần⟧ → tourists gradually become fewer · ⟦sự chia sẻ, cảm thông nhạt nhòa dần⟧ → sharing and empathy gradually fade
+(adjective) + ⟦hơn⟧: without an explicit comparison, expresses that the state or quality gradually strengthens or increases – "more ~, ~er".
+⟦Bữa ăn cũng đơn giản hơn.⟧ → Meals are simpler too. · ⟦Cuộc sống khiến con người độc lập hơn, bận rộn và gấp gáp hơn.⟧ → Life makes people more independent, busier and more rushed. · ⟦Về chiều, thời tiết ở đây trở nên mát mẻ hơn.⟧ → Towards evening, the weather here becomes cooler. · ⟦Cuộc sống ngày một khó khăn hơn.⟧ → Life is getting harder day by day. · ⟦Ô nhiễm môi trường ngày một nghiêm trọng hơn.⟧ → Environmental pollution is getting more serious by the day.
+⟦không chỉ ... mà còn⟧: in the form ⟦không chỉ A mà còn B⟧, means "not only A but also B".
+⟦Những bữa cơm gia đình không chỉ nhằm xây dựng thói quen sinh hoạt mà còn là một cách duy trì, phát huy những giá trị văn hóa truyền thống tốt đẹp của dân tộc Việt Nam.⟧ → Family meals are not only meant to build daily habits but are also a way of preserving and promoting the fine traditional cultural values of the Vietnamese people. · ⟦Đại dịch covid không chỉ gây khó khăn cho nền kinh tế của một quốc gia mà còn gây khó khăn cho nền kinh tế của toàn thế giới.⟧ → The Covid pandemic caused difficulties not only for one country's economy but for the economy of the whole world.
+=fr
+Notes de grammaire
+(adjectif) + ⟦dần⟧ : « peu à peu, progressivement » – exprime que l'état ou la qualité rendus par l'adjectif disparaissent ou s'affaiblissent progressivement.
+⟦việc giao lưu, gặp gỡ ngày một thưa dần⟧ → les échanges et les rencontres se raréfient de jour en jour · ⟦khách ăn uống ít dần⟧ → les invités mangent et boivent de moins en moins · ⟦nước trong lọ vơi dần⟧ → l'eau du vase baisse peu à peu · ⟦khách du lịch vắng dần⟧ → les touristes se font de plus en plus rares · ⟦sự chia sẻ, cảm thông nhạt nhòa dần⟧ → le partage et la compréhension mutuelle s'estompent peu à peu
+(adjectif) + ⟦hơn⟧ : sans objet de comparaison explicite, exprime que l'état ou la qualité se renforcent ou augmentent progressivement – « plus ~ ».
+⟦Bữa ăn cũng đơn giản hơn.⟧ → Les repas sont aussi plus simples. · ⟦Cuộc sống khiến con người độc lập hơn, bận rộn và gấp gáp hơn.⟧ → La vie rend les gens plus indépendants, plus occupés et plus pressés. · ⟦Về chiều, thời tiết ở đây trở nên mát mẻ hơn.⟧ → En fin de journée, il fait plus frais ici. · ⟦Cuộc sống ngày một khó khăn hơn.⟧ → La vie devient de plus en plus difficile. · ⟦Ô nhiễm môi trường ngày một nghiêm trọng hơn.⟧ → La pollution de l'environnement s'aggrave de jour en jour.
+⟦không chỉ ... mà còn⟧ : sous la forme ⟦không chỉ A mà còn B⟧, signifie « non seulement A, mais aussi B ».
+⟦Những bữa cơm gia đình không chỉ nhằm xây dựng thói quen sinh hoạt mà còn là một cách duy trì, phát huy những giá trị văn hóa truyền thống tốt đẹp của dân tộc Việt Nam.⟧ → Les repas en famille ne visent pas seulement à instaurer des habitudes de vie, ils sont aussi un moyen de préserver et de valoriser les belles valeurs culturelles traditionnelles du peuple vietnamien. · ⟦Đại dịch covid không chỉ gây khó khăn cho nền kinh tế của một quốc gia mà còn gây khó khăn cho nền kinh tế của toàn thế giới.⟧ → La pandémie de Covid a mis en difficulté non seulement l'économie d'un pays, mais aussi celle du monde entier.
+=de
+Grammatikerläuterungen
+(Adjektiv) + ⟦dần⟧: „allmählich ~“ – drückt aus, dass der vom Adjektiv bezeichnete Zustand bzw. die Eigenschaft nach und nach verschwindet oder schwächer wird.
+⟦việc giao lưu, gặp gỡ ngày một thưa dần⟧ → Kontakte und Treffen werden von Tag zu Tag seltener · ⟦khách ăn uống ít dần⟧ → die Gäste essen und trinken allmählich weniger · ⟦nước trong lọ vơi dần⟧ → das Wasser in der Vase nimmt allmählich ab · ⟦khách du lịch vắng dần⟧ → die Touristen bleiben allmählich aus · ⟦sự chia sẻ, cảm thông nhạt nhòa dần⟧ → Anteilnahme und Mitgefühl verblassen allmählich
+(Adjektiv) + ⟦hơn⟧: ohne ausdrückliches Vergleichsobjekt drückt es aus, dass der Zustand oder die Eigenschaft allmählich stärker wird bzw. zunimmt – „~er werden“.
+⟦Bữa ăn cũng đơn giản hơn.⟧ → Auch die Mahlzeiten sind einfacher. · ⟦Cuộc sống khiến con người độc lập hơn, bận rộn và gấp gáp hơn.⟧ → Das Leben macht die Menschen unabhängiger, beschäftigter und hektischer. · ⟦Về chiều, thời tiết ở đây trở nên mát mẻ hơn.⟧ → Gegen Abend wird das Wetter hier kühler. · ⟦Cuộc sống ngày một khó khăn hơn.⟧ → Das Leben wird von Tag zu Tag schwieriger. · ⟦Ô nhiễm môi trường ngày một nghiêm trọng hơn.⟧ → Die Umweltverschmutzung wird von Tag zu Tag gravierender.
+⟦không chỉ ... mà còn⟧: in der Form ⟦không chỉ A mà còn B⟧ bedeutet es „nicht nur A, sondern auch B“.
+⟦Những bữa cơm gia đình không chỉ nhằm xây dựng thói quen sinh hoạt mà còn là một cách duy trì, phát huy những giá trị văn hóa truyền thống tốt đẹp của dân tộc Việt Nam.⟧ → Familienmahlzeiten dienen nicht nur dazu, Lebensgewohnheiten aufzubauen, sondern sind auch ein Weg, die schönen traditionellen Kulturwerte des vietnamesischen Volkes zu bewahren und zu fördern. · ⟦Đại dịch covid không chỉ gây khó khăn cho nền kinh tế của một quốc gia mà còn gây khó khăn cho nền kinh tế của toàn thế giới.⟧ → Die Covid-Pandemie brachte nicht nur der Wirtschaft eines Landes Schwierigkeiten, sondern der Wirtschaft der ganzen Welt.
+=hu
+Nyelvtani magyarázat
+(melléknév) + ⟦dần⟧: „fokozatosan ~” – azt fejezi ki, hogy a melléknév által jelölt állapot vagy tulajdonság fokozatosan eltűnik vagy gyengül.
+⟦việc giao lưu, gặp gỡ ngày một thưa dần⟧ → a kapcsolattartás és a találkozások napról napra ritkulnak · ⟦khách ăn uống ít dần⟧ → a vendégek fokozatosan kevesebbet esznek-isznak · ⟦nước trong lọ vơi dần⟧ → a vázában fokozatosan fogy a víz · ⟦khách du lịch vắng dần⟧ → a turisták fokozatosan elmaradnak · ⟦sự chia sẻ, cảm thông nhạt nhòa dần⟧ → az együttérzés és a megértés fokozatosan elhalványul
+(melléknév) + ⟦hơn⟧: kifejezett összehasonlítás nélkül azt fejezi ki, hogy az állapot vagy tulajdonság fokozatosan erősödik, nő – „egyre ~bb”.
+⟦Bữa ăn cũng đơn giản hơn.⟧ → Az étkezések is egyszerűbbek. · ⟦Cuộc sống khiến con người độc lập hơn, bận rộn và gấp gáp hơn.⟧ → Az élet önállóbbá, elfoglaltabbá és kapkodóbbá teszi az embereket. · ⟦Về chiều, thời tiết ở đây trở nên mát mẻ hơn.⟧ → Estefelé itt hűvösebb lesz az idő. · ⟦Cuộc sống ngày một khó khăn hơn.⟧ → Az élet napról napra nehezebb. · ⟦Ô nhiễm môi trường ngày một nghiêm trọng hơn.⟧ → A környezetszennyezés napról napra súlyosabb.
+⟦không chỉ ... mà còn⟧: ⟦không chỉ A mà còn B⟧ alakban jelentése „nemcsak A, hanem B is”.
+⟦Những bữa cơm gia đình không chỉ nhằm xây dựng thói quen sinh hoạt mà còn là một cách duy trì, phát huy những giá trị văn hóa truyền thống tốt đẹp của dân tộc Việt Nam.⟧ → A családi étkezések nemcsak az életvitel szokásainak kialakítását szolgálják, hanem a vietnámi nép szép hagyományos kulturális értékeinek megőrzését és ápolását is. · ⟦Đại dịch covid không chỉ gây khó khăn cho nền kinh tế của một quốc gia mà còn gây khó khăn cho nền kinh tế của toàn thế giới.⟧ → A Covid-járvány nemcsak egy ország gazdaságának okozott nehézségeket, hanem az egész világgazdaságnak is.
+=id
+Penjelasan tata bahasa
+(adjektiva) + ⟦dần⟧: "makin lama makin ~, berangsur-angsur" – digunakan untuk menyatakan keadaan atau sifat adjektiva yang berangsur hilang atau melemah.
+⟦việc giao lưu, gặp gỡ ngày một thưa dần⟧ → pergaulan dan pertemuan makin hari makin jarang · ⟦khách ăn uống ít dần⟧ → tamu makin lama makin sedikit makan-minumnya · ⟦nước trong lọ vơi dần⟧ → air dalam vas berangsur berkurang · ⟦khách du lịch vắng dần⟧ → wisatawan makin lama makin sepi · ⟦sự chia sẻ, cảm thông nhạt nhòa dần⟧ → rasa berbagi dan empati makin lama makin pudar
+(adjektiva) + ⟦hơn⟧: tanpa pembanding tersurat, menyatakan keadaan atau sifat yang berangsur menguat atau bertambah – "menjadi lebih ~".
+⟦Bữa ăn cũng đơn giản hơn.⟧ → Makanannya juga lebih sederhana. · ⟦Cuộc sống khiến con người độc lập hơn, bận rộn và gấp gáp hơn.⟧ → Kehidupan membuat manusia lebih mandiri, lebih sibuk, dan lebih tergesa-gesa. · ⟦Về chiều, thời tiết ở đây trở nên mát mẻ hơn.⟧ → Menjelang sore, cuaca di sini menjadi lebih sejuk. · ⟦Cuộc sống ngày một khó khăn hơn.⟧ → Kehidupan makin hari makin sulit. · ⟦Ô nhiễm môi trường ngày một nghiêm trọng hơn.⟧ → Pencemaran lingkungan makin hari makin parah.
+⟦không chỉ ... mà còn⟧: dalam bentuk ⟦không chỉ A mà còn B⟧ berarti "bukan hanya A tetapi juga B".
+⟦Những bữa cơm gia đình không chỉ nhằm xây dựng thói quen sinh hoạt mà còn là một cách duy trì, phát huy những giá trị văn hóa truyền thống tốt đẹp của dân tộc Việt Nam.⟧ → Makan bersama keluarga bukan hanya untuk membangun kebiasaan hidup, tetapi juga cara menjaga dan mengembangkan nilai-nilai budaya tradisional bangsa Vietnam yang luhur. · ⟦Đại dịch covid không chỉ gây khó khăn cho nền kinh tế của một quốc gia mà còn gây khó khăn cho nền kinh tế của toàn thế giới.⟧ → Pandemi Covid bukan hanya menyulitkan ekonomi satu negara, tetapi juga ekonomi seluruh dunia.
+=ja
+文法解説
+（形容詞）+ ⟦dần⟧：形容詞が表す状態・性質の意味が徐々に消えたり弱まったりする状況を表したいときに、「次第に～する」という意味で使われます。
+⟦việc giao lưu, gặp gỡ ngày một thưa dần⟧ → 交流や会う機会が日に日に少なくなる · ⟦khách ăn uống ít dần⟧ → 客の飲み食いが次第に少なくなる · ⟦nước trong lọ vơi dần⟧ → 瓶の水が次第に減る · ⟦khách du lịch vắng dần⟧ → 観光客が次第にまばらになる · ⟦sự chia sẻ, cảm thông nhạt nhòa dần⟧ → 分かち合いや思いやりが次第に薄れる
+（形容詞）+ ⟦hơn⟧：形容詞が表す状態・性質が徐々に強まったり増したりする状況で、比較対象なしに「次第にもっと～になる」という意味で使われます。
+⟦Bữa ăn cũng đơn giản hơn.⟧ → 食事もより簡単になった。 · ⟦Cuộc sống khiến con người độc lập hơn, bận rộn và gấp gáp hơn.⟧ → 暮らしは人をより自立させ、より忙しく慌ただしくする。 · ⟦Về chiều, thời tiết ở đây trở nên mát mẻ hơn.⟧ → 夕方になると、ここの天気はより涼しくなる。 · ⟦Cuộc sống ngày một khó khăn hơn.⟧ → 暮らしは日に日に厳しくなる。 · ⟦Ô nhiễm môi trường ngày một nghiêm trọng hơn.⟧ → 環境汚染は日に日に深刻になる。
+⟦không chỉ ... mà còn⟧：⟦không chỉ A mà còn B⟧ の形で「Aだけでなく Bも」という意味で使われます。
+⟦Những bữa cơm gia đình không chỉ nhằm xây dựng thói quen sinh hoạt mà còn là một cách duy trì, phát huy những giá trị văn hóa truyền thống tốt đẹp của dân tộc Việt Nam.⟧ → 家族の食事は生活習慣を築くためだけでなく、ベトナム民族の美しい伝統文化の価値を守り発展させる方法でもある。 · ⟦Đại dịch covid không chỉ gây khó khăn cho nền kinh tế của một quốc gia mà còn gây khó khăn cho nền kinh tế của toàn thế giới.⟧ → 新型コロナの大流行は一国の経済だけでなく、世界全体の経済にも困難をもたらした。
+=pl
+Objaśnienia gramatyczne
+(przymiotnik) + ⟦dần⟧: „stopniowo ~” – wyraża, że stan lub cecha wyrażona przymiotnikiem stopniowo zanika lub słabnie.
+⟦việc giao lưu, gặp gỡ ngày một thưa dần⟧ → kontakty i spotkania z dnia na dzień stają się rzadsze · ⟦khách ăn uống ít dần⟧ → goście stopniowo jedzą i piją coraz mniej · ⟦nước trong lọ vơi dần⟧ → woda w wazonie stopniowo ubywa · ⟦khách du lịch vắng dần⟧ → turystów stopniowo ubywa · ⟦sự chia sẻ, cảm thông nhạt nhòa dần⟧ → dzielenie się i współczucie stopniowo bledną
+(przymiotnik) + ⟦hơn⟧: bez wyraźnego obiektu porównania wyraża, że stan lub cecha stopniowo się nasila bądź rośnie – „coraz bardziej ~”.
+⟦Bữa ăn cũng đơn giản hơn.⟧ → Posiłki też są prostsze. · ⟦Cuộc sống khiến con người độc lập hơn, bận rộn và gấp gáp hơn.⟧ → Życie czyni ludzi bardziej niezależnymi, zajętymi i zabieganymi. · ⟦Về chiều, thời tiết ở đây trở nên mát mẻ hơn.⟧ → Pod wieczór pogoda robi się tu chłodniejsza. · ⟦Cuộc sống ngày một khó khăn hơn.⟧ → Życie z dnia na dzień jest trudniejsze. · ⟦Ô nhiễm môi trường ngày một nghiêm trọng hơn.⟧ → Zanieczyszczenie środowiska z dnia na dzień jest poważniejsze.
+⟦không chỉ ... mà còn⟧: w formie ⟦không chỉ A mà còn B⟧ znaczy „nie tylko A, lecz także B”.
+⟦Những bữa cơm gia đình không chỉ nhằm xây dựng thói quen sinh hoạt mà còn là một cách duy trì, phát huy những giá trị văn hóa truyền thống tốt đẹp của dân tộc Việt Nam.⟧ → Rodzinne posiłki służą nie tylko budowaniu nawyków życiowych, lecz są także sposobem na zachowanie i pielęgnowanie pięknych tradycyjnych wartości kulturowych narodu wietnamskiego. · ⟦Đại dịch covid không chỉ gây khó khăn cho nền kinh tế của một quốc gia mà còn gây khó khăn cho nền kinh tế của toàn thế giới.⟧ → Pandemia Covid przysporzyła trudności nie tylko gospodarce jednego kraju, lecz także gospodarce całego świata.

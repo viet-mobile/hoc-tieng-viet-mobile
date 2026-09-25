@@ -1,0 +1,151 @@
+@@ pdf-grammar-b2c7d452eead0e25#0
+=cs
+Klíčové výrazy: ⟦gây ra ~⟧ / ⟦không chỉ ~ mà cả ~⟧
+⟦gây ra ~⟧ znamená „způsobit ~“. Za ⟦gây ra⟧ obvykle následuje slovo se záporným významem.
+❶ ⟦Cơn bão số 3 với sức gió mạnh cấp 9 đã gây ra nhiều thiệt hại cho nông nghiệp.⟧ — Tajfun č. 3 o síle větru 9. stupně způsobil zemědělství mnoho škod.
+❷ Ⓐ ⟦Nghe nói miền Trung lại bị mưa lũ, đúng không?⟧ — Prý jsou ve středním Vietnamu zase povodně, je to pravda? Ⓑ ⟦Đúng rồi. Người ta rất lo vì lần mưa lũ này gây ra vấn đề lớn cho cuộc sống của họ.⟧ — Ano. Lidé se velmi obávají, protože tyto povodně jim způsobily velké problémy v životě.
+⟦không chỉ ~ mà cả ~⟧ znamená „nejen ~, ale i ~“ a vyjadřuje přidání dalšího prvku.
+❶ ⟦Không chỉ mẹ mà cả bố cũng phản đối kế hoạch con sẽ nghỉ học để đi làm.⟧ — Nejen maminka, ale i tatínek je proti mému plánu přerušit studium a jít pracovat.
+❷ Ⓐ ⟦Chương trình này chỉ dành cho các sinh viên Khoa Tiếng Việt thôi à?⟧ — Je tento program jen pro studenty katedry vietnamštiny? Ⓑ ⟦Không chỉ sinh viên của Khoa Tiếng Việt mà cả những sinh viên của các khoa khác cũng tham gia được.⟧ — Mohou se zúčastnit nejen studenti katedry vietnamštiny, ale i studenti jiných kateder.
+Procvičování 3 — spojte příčinu a následek a veďte rozhovor podle vzoru: ① ⟦mưa to⟧ (silný déšť) → Ⓐ ⟦ngập lụt ở nhiều nơi⟧ (záplavy na mnoha místech) | ② ⟦không khí khô⟧ (suchý vzduch) → Ⓑ ⟦cháy rừng nghiêm trọng⟧ (vážné lesní požáry) | ③ ⟦phương án mới để phòng dịch bệnh⟧ (nová opatření proti epidemii) → Ⓒ ⟦bất tiện cho sinh hoạt hằng ngày⟧ (nepohodlí v každodenním životě)
+Vzor: Ⓐ ⟦Tuần sau ở khu vực miền Trung sẽ có mưa to.⟧ — Příští týden bude ve středním Vietnamu silně pršet. Ⓑ ⟦Người ta lo lắng là mưa to sẽ có thể gây ra ngập lụt ở nhiều nơi.⟧ — Lidé se bojí, že silný déšť může na mnoha místech způsobit záplavy.
+Procvičování 4 — doplňte ⟦không chỉ ~ mà cả ~⟧ podle vzoru a veďte rozhovor.
+Vzor: Ⓐ ⟦Anh là người thích hoạt động.⟧ — Jsem člověk, který má rád pohyb. Ⓑ ⟦Thế thì chắc là anh thích chơi bóng đá, đúng không ạ?⟧ — Tak to asi rád hraješ fotbal, že? Ⓐ ⟦Đúng. Anh thích chơi không chỉ bóng đá mà cả bóng rổ.⟧ — Ano. Hraju rád nejen fotbal, ale i basketbal.
+❶ Ⓐ ⟦Sở thích của chị là nấu ăn.⟧ — Mým koníčkem je vaření. Ⓑ ⟦Chị có biết cách nấu món ăn Ý không?⟧ — Umíš vařit italská jídla? Ⓐ ⟦Có chứ. Chị biết nấu … món ăn Việt.⟧ — Jasně. Umím vařit … vietnamská jídla.
+❷ Ⓐ ⟦Hiện nay, vấn đề ô nhiễm môi trường càng ngày càng nghiêm trọng.⟧ — Problém znečištění životního prostředí je dnes čím dál vážnější. Ⓑ ⟦Các đoàn thể đang có nhiều hoạt động để bảo vệ môi trường mà?⟧ — Ale organizace přece dělají hodně pro ochranu životního prostředí, ne? Ⓐ ⟦Đúng. Nhưng theo tôi … người dân thường cũng phải quan tâm đến vấn đề này.⟧ — Ano. Ale podle mě se tímto problémem musí zabývat … i obyčejní lidé.
+Nová slovíčka: ⟦cơn⟧ klasifikátor (u přírodních jevů jako déšť, vítr) | ⟦cấp⟧ stupeň | ⟦thiệt hại⟧ škoda | ⟦nông nghiệp⟧ zemědělství | ⟦mưa lũ⟧ povodeň | ⟦cuộc sống⟧ život | ⟦sinh hoạt⟧ každodenní život | ⟦phương án⟧ opatření, plán | ⟦ngập lụt⟧ zaplavit | ⟦cháy rừng⟧ lesní požár | ⟦phản đối⟧ nesouhlasit | ⟦tham gia⟧ zúčastnit se | ⟦ô nhiễm⟧ znečistit | ⟦môi trường⟧ životní prostředí | ⟦nghiêm trọng⟧ vážný | ⟦đoàn thể⟧ organizace | ⟦bảo vệ⟧ chránit | ⟦quan tâm⟧ zajímat se
+=zh_cn
+核心表达：⟦gây ra ~⟧ / ⟦không chỉ ~ mà cả ~⟧
+⟦gây ra ~⟧ 意为“引起、造成……”。⟦gây ra⟧ 后面一般接带有负面意义的词。
+❶ ⟦Cơn bão số 3 với sức gió mạnh cấp 9 đã gây ra nhiều thiệt hại cho nông nghiệp.⟧ —— 风力达9级的3号台风给农业造成了很多损失。
+❷ Ⓐ ⟦Nghe nói miền Trung lại bị mưa lũ, đúng không?⟧ —— 听说中部又发洪水了，是吗？ Ⓑ ⟦Đúng rồi. Người ta rất lo vì lần mưa lũ này gây ra vấn đề lớn cho cuộc sống của họ.⟧ —— 是的。人们很担心，因为这次洪水给他们的生活带来了大问题。
+⟦không chỉ ~ mà cả ~⟧ 意为“不仅……而且连……也”，表示追加的意思。
+❶ ⟦Không chỉ mẹ mà cả bố cũng phản đối kế hoạch con sẽ nghỉ học để đi làm.⟧ —— 不仅妈妈，连爸爸也反对我休学去工作的计划。
+❷ Ⓐ ⟦Chương trình này chỉ dành cho các sinh viên Khoa Tiếng Việt thôi à?⟧ —— 这个项目只有越南语系的学生能参加吗？ Ⓑ ⟦Không chỉ sinh viên của Khoa Tiếng Việt mà cả những sinh viên của các khoa khác cũng tham gia được.⟧ —— 不仅越南语系的学生，其他系的学生也可以参加。
+句型练习3 —— 找出相应内容连线，然后仿照范例对话：① ⟦mưa to⟧（大雨）→ Ⓐ ⟦ngập lụt ở nhiều nơi⟧（多地被淹）| ② ⟦không khí khô⟧（空气干燥）→ Ⓑ ⟦cháy rừng nghiêm trọng⟧（严重的山火）| ③ ⟦phương án mới để phòng dịch bệnh⟧（新的防疫方案）→ Ⓒ ⟦bất tiện cho sinh hoạt hằng ngày⟧（给日常生活带来不便）
+范例：Ⓐ ⟦Tuần sau ở khu vực miền Trung sẽ có mưa to.⟧ —— 下周中部地区将有大雨。 Ⓑ ⟦Người ta lo lắng là mưa to sẽ có thể gây ra ngập lụt ở nhiều nơi.⟧ —— 人们担心大雨可能会造成多地被淹。
+句型练习4 —— 仿照范例用 ⟦không chỉ ~ mà cả ~⟧ 填空后进行对话。
+范例：Ⓐ ⟦Anh là người thích hoạt động.⟧ —— 我是个喜欢运动的人。 Ⓑ ⟦Thế thì chắc là anh thích chơi bóng đá, đúng không ạ?⟧ —— 那你一定喜欢踢足球吧？ Ⓐ ⟦Đúng. Anh thích chơi không chỉ bóng đá mà cả bóng rổ.⟧ —— 对。我不仅喜欢踢足球，还喜欢打篮球。
+❶ Ⓐ ⟦Sở thích của chị là nấu ăn.⟧ —— 我的爱好是做饭。 Ⓑ ⟦Chị có biết cách nấu món ăn Ý không?⟧ —— 你会做意大利菜吗？ Ⓐ ⟦Có chứ. Chị biết nấu … món ăn Việt.⟧ —— 当然会。我会做……越南菜。
+❷ Ⓐ ⟦Hiện nay, vấn đề ô nhiễm môi trường càng ngày càng nghiêm trọng.⟧ —— 如今环境污染问题越来越严重。 Ⓑ ⟦Các đoàn thể đang có nhiều hoạt động để bảo vệ môi trường mà?⟧ —— 各团体不是正在开展很多保护环境的活动吗？ Ⓐ ⟦Đúng. Nhưng theo tôi … người dân thường cũng phải quan tâm đến vấn đề này.⟧ —— 是的。但我认为……普通民众也应该关心这个问题。
+新单词：⟦cơn⟧ 量词（用于雨、风等自然现象）| ⟦cấp⟧ 级 | ⟦thiệt hại⟧ 损失 | ⟦nông nghiệp⟧ 农业 | ⟦mưa lũ⟧ 洪水 | ⟦cuộc sống⟧ 生活 | ⟦sinh hoạt⟧ 日常生活 | ⟦phương án⟧ 方案 | ⟦ngập lụt⟧ 被淹 | ⟦cháy rừng⟧ 山火 | ⟦phản đối⟧ 反对 | ⟦tham gia⟧ 参加 | ⟦ô nhiễm⟧ 污染 | ⟦môi trường⟧ 环境 | ⟦nghiêm trọng⟧ 严重 | ⟦đoàn thể⟧ 团体 | ⟦bảo vệ⟧ 保护 | ⟦quan tâm⟧ 关心
+=zh
+核心表達：⟦gây ra ~⟧ / ⟦không chỉ ~ mà cả ~⟧
+⟦gây ra ~⟧ 意為「引起、造成……」。⟦gây ra⟧ 後面一般接帶有負面意義的詞。
+❶ ⟦Cơn bão số 3 với sức gió mạnh cấp 9 đã gây ra nhiều thiệt hại cho nông nghiệp.⟧ —— 風力達9級的3號颱風給農業造成了很多損失。
+❷ Ⓐ ⟦Nghe nói miền Trung lại bị mưa lũ, đúng không?⟧ —— 聽說中部又發生洪水了，是嗎？ Ⓑ ⟦Đúng rồi. Người ta rất lo vì lần mưa lũ này gây ra vấn đề lớn cho cuộc sống của họ.⟧ —— 是的。人們很擔心，因為這次洪水給他們的生活帶來了大問題。
+⟦không chỉ ~ mà cả ~⟧ 意為「不僅……而且連……也」，表示追加的意思。
+❶ ⟦Không chỉ mẹ mà cả bố cũng phản đối kế hoạch con sẽ nghỉ học để đi làm.⟧ —— 不僅媽媽，連爸爸也反對我休學去工作的計畫。
+❷ Ⓐ ⟦Chương trình này chỉ dành cho các sinh viên Khoa Tiếng Việt thôi à?⟧ —— 這個計畫只有越南語系的學生能參加嗎？ Ⓑ ⟦Không chỉ sinh viên của Khoa Tiếng Việt mà cả những sinh viên của các khoa khác cũng tham gia được.⟧ —— 不僅越南語系的學生，其他系的學生也可以參加。
+句型練習3 —— 找出相應內容連線，然後仿照範例對話：① ⟦mưa to⟧（大雨）→ Ⓐ ⟦ngập lụt ở nhiều nơi⟧（多處淹水）| ② ⟦không khí khô⟧（空氣乾燥）→ Ⓑ ⟦cháy rừng nghiêm trọng⟧（嚴重的森林火災）| ③ ⟦phương án mới để phòng dịch bệnh⟧（新的防疫方案）→ Ⓒ ⟦bất tiện cho sinh hoạt hằng ngày⟧（造成日常生活不便）
+範例：Ⓐ ⟦Tuần sau ở khu vực miền Trung sẽ có mưa to.⟧ —— 下週中部地區將有大雨。 Ⓑ ⟦Người ta lo lắng là mưa to sẽ có thể gây ra ngập lụt ở nhiều nơi.⟧ —— 人們擔心大雨可能會造成多處淹水。
+句型練習4 —— 仿照範例用 ⟦không chỉ ~ mà cả ~⟧ 填空後進行對話。
+範例：Ⓐ ⟦Anh là người thích hoạt động.⟧ —— 我是個喜歡運動的人。 Ⓑ ⟦Thế thì chắc là anh thích chơi bóng đá, đúng không ạ?⟧ —— 那你一定喜歡踢足球吧？ Ⓐ ⟦Đúng. Anh thích chơi không chỉ bóng đá mà cả bóng rổ.⟧ —— 對。我不僅喜歡踢足球，還喜歡打籃球。
+❶ Ⓐ ⟦Sở thích của chị là nấu ăn.⟧ —— 我的嗜好是做菜。 Ⓑ ⟦Chị có biết cách nấu món ăn Ý không?⟧ —— 妳會做義大利菜嗎？ Ⓐ ⟦Có chứ. Chị biết nấu … món ăn Việt.⟧ —— 當然會。我會做……越南菜。
+❷ Ⓐ ⟦Hiện nay, vấn đề ô nhiễm môi trường càng ngày càng nghiêm trọng.⟧ —— 如今環境污染問題越來越嚴重。 Ⓑ ⟦Các đoàn thể đang có nhiều hoạt động để bảo vệ môi trường mà?⟧ —— 各團體不是正在推動很多保護環境的活動嗎？ Ⓐ ⟦Đúng. Nhưng theo tôi … người dân thường cũng phải quan tâm đến vấn đề này.⟧ —— 是的。但我認為……一般民眾也應該關心這個問題。
+新單字：⟦cơn⟧ 量詞（用於雨、風等自然現象）| ⟦cấp⟧ 級 | ⟦thiệt hại⟧ 損失 | ⟦nông nghiệp⟧ 農業 | ⟦mưa lũ⟧ 洪水 | ⟦cuộc sống⟧ 生活 | ⟦sinh hoạt⟧ 日常生活 | ⟦phương án⟧ 方案 | ⟦ngập lụt⟧ 淹水 | ⟦cháy rừng⟧ 森林火災 | ⟦phản đối⟧ 反對 | ⟦tham gia⟧ 參加 | ⟦ô nhiễm⟧ 污染 | ⟦môi trường⟧ 環境 | ⟦nghiêm trọng⟧ 嚴重 | ⟦đoàn thể⟧ 團體 | ⟦bảo vệ⟧ 保護 | ⟦quan tâm⟧ 關心
+=en
+Key expressions: ⟦gây ra ~⟧ / ⟦không chỉ ~ mà cả ~⟧
+⟦gây ra ~⟧ means "to cause ~". It is usually followed by a word with a negative meaning.
+❶ ⟦Cơn bão số 3 với sức gió mạnh cấp 9 đã gây ra nhiều thiệt hại cho nông nghiệp.⟧ — Typhoon No. 3, with force-9 winds, caused a lot of damage to agriculture.
+❷ Ⓐ ⟦Nghe nói miền Trung lại bị mưa lũ, đúng không?⟧ — I hear central Vietnam has been hit by floods again, is that right? Ⓑ ⟦Đúng rồi. Người ta rất lo vì lần mưa lũ này gây ra vấn đề lớn cho cuộc sống của họ.⟧ — That's right. People are very worried because these floods have caused big problems for their lives.
+⟦không chỉ ~ mà cả ~⟧ means "not only ~ but also ~" and adds something further.
+❶ ⟦Không chỉ mẹ mà cả bố cũng phản đối kế hoạch con sẽ nghỉ học để đi làm.⟧ — Not only my mother but also my father is against my plan to take time off school to work.
+❷ Ⓐ ⟦Chương trình này chỉ dành cho các sinh viên Khoa Tiếng Việt thôi à?⟧ — Is this programme only for students of the Vietnamese department? Ⓑ ⟦Không chỉ sinh viên của Khoa Tiếng Việt mà cả những sinh viên của các khoa khác cũng tham gia được.⟧ — Not only students of the Vietnamese department but students of other departments can take part too.
+Pattern practice 3 — match cause and effect, then talk as in the model: ① ⟦mưa to⟧ (heavy rain) → Ⓐ ⟦ngập lụt ở nhiều nơi⟧ (flooding in many places) | ② ⟦không khí khô⟧ (dry air) → Ⓑ ⟦cháy rừng nghiêm trọng⟧ (serious forest fires) | ③ ⟦phương án mới để phòng dịch bệnh⟧ (new epidemic-prevention measures) → Ⓒ ⟦bất tiện cho sinh hoạt hằng ngày⟧ (inconvenience in daily life)
+Model: Ⓐ ⟦Tuần sau ở khu vực miền Trung sẽ có mưa to.⟧ — Next week there will be heavy rain in central Vietnam. Ⓑ ⟦Người ta lo lắng là mưa to sẽ có thể gây ra ngập lụt ở nhiều nơi.⟧ — People are worried that the heavy rain may cause flooding in many places.
+Pattern practice 4 — fill in the blanks with ⟦không chỉ ~ mà cả ~⟧ as in the model, then talk.
+Model: Ⓐ ⟦Anh là người thích hoạt động.⟧ — I'm an active person. Ⓑ ⟦Thế thì chắc là anh thích chơi bóng đá, đúng không ạ?⟧ — Then you must like playing football, right? Ⓐ ⟦Đúng. Anh thích chơi không chỉ bóng đá mà cả bóng rổ.⟧ — Right. I like playing not only football but also basketball.
+❶ Ⓐ ⟦Sở thích của chị là nấu ăn.⟧ — My hobby is cooking. Ⓑ ⟦Chị có biết cách nấu món ăn Ý không?⟧ — Can you cook Italian food? Ⓐ ⟦Có chứ. Chị biết nấu … món ăn Việt.⟧ — Of course. I can cook … Vietnamese food.
+❷ Ⓐ ⟦Hiện nay, vấn đề ô nhiễm môi trường càng ngày càng nghiêm trọng.⟧ — Environmental pollution is becoming more and more serious these days. Ⓑ ⟦Các đoàn thể đang có nhiều hoạt động để bảo vệ môi trường mà?⟧ — But organisations are doing a lot to protect the environment, aren't they? Ⓐ ⟦Đúng. Nhưng theo tôi … người dân thường cũng phải quan tâm đến vấn đề này.⟧ — True. But in my view … ordinary people must also care about this issue.
+New words: ⟦cơn⟧ classifier (for natural phenomena such as rain or wind) | ⟦cấp⟧ level, grade | ⟦thiệt hại⟧ damage | ⟦nông nghiệp⟧ agriculture | ⟦mưa lũ⟧ flood | ⟦cuộc sống⟧ life | ⟦sinh hoạt⟧ daily life | ⟦phương án⟧ plan, measure | ⟦ngập lụt⟧ to be flooded | ⟦cháy rừng⟧ forest fire | ⟦phản đối⟧ to oppose | ⟦tham gia⟧ to take part | ⟦ô nhiễm⟧ to pollute | ⟦môi trường⟧ environment | ⟦nghiêm trọng⟧ serious | ⟦đoàn thể⟧ organisation | ⟦bảo vệ⟧ to protect | ⟦quan tâm⟧ to care about
+=fr
+Expressions clés : ⟦gây ra ~⟧ / ⟦không chỉ ~ mà cả ~⟧
+⟦gây ra ~⟧ signifie « causer, provoquer ~ ». Il est généralement suivi d'un mot de sens négatif.
+❶ ⟦Cơn bão số 3 với sức gió mạnh cấp 9 đã gây ra nhiều thiệt hại cho nông nghiệp.⟧ — Le typhon n° 3, avec des vents de force 9, a causé de nombreux dégâts à l'agriculture.
+❷ Ⓐ ⟦Nghe nói miền Trung lại bị mưa lũ, đúng không?⟧ — Il paraît que le Centre est de nouveau inondé, c'est vrai ? Ⓑ ⟦Đúng rồi. Người ta rất lo vì lần mưa lũ này gây ra vấn đề lớn cho cuộc sống của họ.⟧ — Oui. Les gens sont très inquiets, car ces inondations ont causé de gros problèmes dans leur vie.
+⟦không chỉ ~ mà cả ~⟧ signifie « non seulement ~ mais aussi ~ » et ajoute un élément supplémentaire.
+❶ ⟦Không chỉ mẹ mà cả bố cũng phản đối kế hoạch con sẽ nghỉ học để đi làm.⟧ — Non seulement ma mère mais aussi mon père s'opposent à mon projet d'interrompre mes études pour travailler.
+❷ Ⓐ ⟦Chương trình này chỉ dành cho các sinh viên Khoa Tiếng Việt thôi à?⟧ — Ce programme est-il réservé aux étudiants du département de vietnamien ? Ⓑ ⟦Không chỉ sinh viên của Khoa Tiếng Việt mà cả những sinh viên của các khoa khác cũng tham gia được.⟧ — Non seulement les étudiants du département de vietnamien mais aussi ceux des autres départements peuvent participer.
+Exercice 3 — reliez cause et conséquence, puis dialoguez comme dans le modèle : ① ⟦mưa to⟧ (forte pluie) → Ⓐ ⟦ngập lụt ở nhiều nơi⟧ (inondations en de nombreux endroits) | ② ⟦không khí khô⟧ (air sec) → Ⓑ ⟦cháy rừng nghiêm trọng⟧ (graves feux de forêt) | ③ ⟦phương án mới để phòng dịch bệnh⟧ (nouvelles mesures contre l'épidémie) → Ⓒ ⟦bất tiện cho sinh hoạt hằng ngày⟧ (gêne dans la vie quotidienne)
+Modèle : Ⓐ ⟦Tuần sau ở khu vực miền Trung sẽ có mưa to.⟧ — La semaine prochaine, il y aura de fortes pluies dans le Centre. Ⓑ ⟦Người ta lo lắng là mưa to sẽ có thể gây ra ngập lụt ở nhiều nơi.⟧ — Les gens craignent que les fortes pluies provoquent des inondations en de nombreux endroits.
+Exercice 4 — complétez avec ⟦không chỉ ~ mà cả ~⟧ comme dans le modèle, puis dialoguez.
+Modèle : Ⓐ ⟦Anh là người thích hoạt động.⟧ — Je suis quelqu'un d'actif. Ⓑ ⟦Thế thì chắc là anh thích chơi bóng đá, đúng không ạ?⟧ — Alors tu dois aimer jouer au football, non ? Ⓐ ⟦Đúng. Anh thích chơi không chỉ bóng đá mà cả bóng rổ.⟧ — Oui. J'aime jouer non seulement au football mais aussi au basket.
+❶ Ⓐ ⟦Sở thích của chị là nấu ăn.⟧ — Mon passe-temps, c'est la cuisine. Ⓑ ⟦Chị có biết cách nấu món ăn Ý không?⟧ — Tu sais cuisiner italien ? Ⓐ ⟦Có chứ. Chị biết nấu … món ăn Việt.⟧ — Bien sûr. Je sais cuisiner … des plats vietnamiens.
+❷ Ⓐ ⟦Hiện nay, vấn đề ô nhiễm môi trường càng ngày càng nghiêm trọng.⟧ — Aujourd'hui, la pollution de l'environnement devient de plus en plus grave. Ⓑ ⟦Các đoàn thể đang có nhiều hoạt động để bảo vệ môi trường mà?⟧ — Mais les associations font beaucoup pour protéger l'environnement, non ? Ⓐ ⟦Đúng. Nhưng theo tôi … người dân thường cũng phải quan tâm đến vấn đề này.⟧ — C'est vrai. Mais à mon avis … les simples citoyens doivent aussi s'en préoccuper.
+Nouveaux mots : ⟦cơn⟧ classificateur (phénomènes naturels : pluie, vent…) | ⟦cấp⟧ degré, niveau | ⟦thiệt hại⟧ dégâts | ⟦nông nghiệp⟧ agriculture | ⟦mưa lũ⟧ inondation | ⟦cuộc sống⟧ vie | ⟦sinh hoạt⟧ vie quotidienne | ⟦phương án⟧ mesure, plan | ⟦ngập lụt⟧ être inondé | ⟦cháy rừng⟧ feu de forêt | ⟦phản đối⟧ s'opposer | ⟦tham gia⟧ participer | ⟦ô nhiễm⟧ polluer | ⟦môi trường⟧ environnement | ⟦nghiêm trọng⟧ grave | ⟦đoàn thể⟧ association, organisation | ⟦bảo vệ⟧ protéger | ⟦quan tâm⟧ se préoccuper de
+=de
+Schlüsselausdrücke: ⟦gây ra ~⟧ / ⟦không chỉ ~ mà cả ~⟧
+⟦gây ra ~⟧ bedeutet „~ verursachen“. Danach folgt meist ein Wort mit negativer Bedeutung.
+❶ ⟦Cơn bão số 3 với sức gió mạnh cấp 9 đã gây ra nhiều thiệt hại cho nông nghiệp.⟧ — Taifun Nr. 3 mit Windstärke 9 hat in der Landwirtschaft große Schäden verursacht.
+❷ Ⓐ ⟦Nghe nói miền Trung lại bị mưa lũ, đúng không?⟧ — Zentralvietnam soll wieder Hochwasser haben, stimmt das? Ⓑ ⟦Đúng rồi. Người ta rất lo vì lần mưa lũ này gây ra vấn đề lớn cho cuộc sống của họ.⟧ — Ja. Die Leute sind sehr besorgt, weil dieses Hochwasser große Probleme für ihr Leben verursacht hat.
+⟦không chỉ ~ mà cả ~⟧ bedeutet „nicht nur ~, sondern auch ~“ und fügt etwas hinzu.
+❶ ⟦Không chỉ mẹ mà cả bố cũng phản đối kế hoạch con sẽ nghỉ học để đi làm.⟧ — Nicht nur meine Mutter, sondern auch mein Vater ist gegen meinen Plan, das Studium zu unterbrechen und arbeiten zu gehen.
+❷ Ⓐ ⟦Chương trình này chỉ dành cho các sinh viên Khoa Tiếng Việt thôi à?⟧ — Ist dieses Programm nur für Studierende der Vietnamistik? Ⓑ ⟦Không chỉ sinh viên của Khoa Tiếng Việt mà cả những sinh viên của các khoa khác cũng tham gia được.⟧ — Nicht nur Studierende der Vietnamistik, sondern auch Studierende anderer Fachbereiche können teilnehmen.
+Übung 3 — Ursache und Folge verbinden, dann wie im Muster sprechen: ① ⟦mưa to⟧ (starker Regen) → Ⓐ ⟦ngập lụt ở nhiều nơi⟧ (Überschwemmungen an vielen Orten) | ② ⟦không khí khô⟧ (trockene Luft) → Ⓑ ⟦cháy rừng nghiêm trọng⟧ (schwere Waldbrände) | ③ ⟦phương án mới để phòng dịch bệnh⟧ (neue Maßnahmen gegen die Epidemie) → Ⓒ ⟦bất tiện cho sinh hoạt hằng ngày⟧ (Unannehmlichkeiten im Alltag)
+Muster: Ⓐ ⟦Tuần sau ở khu vực miền Trung sẽ có mưa to.⟧ — Nächste Woche gibt es in Zentralvietnam starken Regen. Ⓑ ⟦Người ta lo lắng là mưa to sẽ có thể gây ra ngập lụt ở nhiều nơi.⟧ — Man befürchtet, dass der starke Regen an vielen Orten Überschwemmungen verursachen könnte.
+Übung 4 — mit ⟦không chỉ ~ mà cả ~⟧ wie im Muster ergänzen, dann sprechen.
+Muster: Ⓐ ⟦Anh là người thích hoạt động.⟧ — Ich bin ein aktiver Mensch. Ⓑ ⟦Thế thì chắc là anh thích chơi bóng đá, đúng không ạ?⟧ — Dann spielst du sicher gern Fußball, oder? Ⓐ ⟦Đúng. Anh thích chơi không chỉ bóng đá mà cả bóng rổ.⟧ — Genau. Ich spiele nicht nur gern Fußball, sondern auch Basketball.
+❶ Ⓐ ⟦Sở thích của chị là nấu ăn.⟧ — Mein Hobby ist Kochen. Ⓑ ⟦Chị có biết cách nấu món ăn Ý không?⟧ — Kannst du italienisch kochen? Ⓐ ⟦Có chứ. Chị biết nấu … món ăn Việt.⟧ — Na klar. Ich kann … vietnamesisch kochen.
+❷ Ⓐ ⟦Hiện nay, vấn đề ô nhiễm môi trường càng ngày càng nghiêm trọng.⟧ — Die Umweltverschmutzung wird heute immer schlimmer. Ⓑ ⟦Các đoàn thể đang có nhiều hoạt động để bảo vệ môi trường mà?⟧ — Aber Organisationen tun doch viel für den Umweltschutz? Ⓐ ⟦Đúng. Nhưng theo tôi … người dân thường cũng phải quan tâm đến vấn đề này.⟧ — Stimmt. Aber meiner Meinung nach … müssen sich auch normale Bürger um dieses Problem kümmern.
+Neue Wörter: ⟦cơn⟧ Klassifikator (für Naturphänomene wie Regen, Wind) | ⟦cấp⟧ Stufe | ⟦thiệt hại⟧ Schaden | ⟦nông nghiệp⟧ Landwirtschaft | ⟦mưa lũ⟧ Hochwasser | ⟦cuộc sống⟧ Leben | ⟦sinh hoạt⟧ Alltag | ⟦phương án⟧ Maßnahme, Plan | ⟦ngập lụt⟧ überschwemmt werden | ⟦cháy rừng⟧ Waldbrand | ⟦phản đối⟧ ablehnen | ⟦tham gia⟧ teilnehmen | ⟦ô nhiễm⟧ verschmutzen | ⟦môi trường⟧ Umwelt | ⟦nghiêm trọng⟧ ernst, schwer | ⟦đoàn thể⟧ Organisation | ⟦bảo vệ⟧ schützen | ⟦quan tâm⟧ sich kümmern um
+=hu
+Kulcskifejezések: ⟦gây ra ~⟧ / ⟦không chỉ ~ mà cả ~⟧
+A ⟦gây ra ~⟧ jelentése „~t okoz”. Utána általában negatív jelentésű szó áll.
+❶ ⟦Cơn bão số 3 với sức gió mạnh cấp 9 đã gây ra nhiều thiệt hại cho nông nghiệp.⟧ — A 9-es erősségű széllel érkező 3-as tájfun sok kárt okozott a mezőgazdaságnak.
+❷ Ⓐ ⟦Nghe nói miền Trung lại bị mưa lũ, đúng không?⟧ — Azt hallom, Közép-Vietnamban megint árvíz van, igaz? Ⓑ ⟦Đúng rồi. Người ta rất lo vì lần mưa lũ này gây ra vấn đề lớn cho cuộc sống của họ.⟧ — Igen. Az emberek nagyon aggódnak, mert ez az árvíz nagy gondokat okozott az életükben.
+A ⟦không chỉ ~ mà cả ~⟧ jelentése „nemcsak ~, hanem ~ is”, kiegészítő jelentést hordoz.
+❶ ⟦Không chỉ mẹ mà cả bố cũng phản đối kế hoạch con sẽ nghỉ học để đi làm.⟧ — Nemcsak anyám, hanem apám is ellenzi a tervemet, hogy halasszak és dolgozni menjek.
+❷ Ⓐ ⟦Chương trình này chỉ dành cho các sinh viên Khoa Tiếng Việt thôi à?⟧ — Ez a program csak a vietnami tanszék hallgatóinak szól? Ⓑ ⟦Không chỉ sinh viên của Khoa Tiếng Việt mà cả những sinh viên của các khoa khác cũng tham gia được.⟧ — Nemcsak a vietnami tanszék hallgatói, hanem más tanszékek hallgatói is részt vehetnek.
+3. gyakorlat — kösse össze az okot és a következményt, majd beszélgessen a minta szerint: ① ⟦mưa to⟧ (erős eső) → Ⓐ ⟦ngập lụt ở nhiều nơi⟧ (sok helyen áradás) | ② ⟦không khí khô⟧ (száraz levegő) → Ⓑ ⟦cháy rừng nghiêm trọng⟧ (súlyos erdőtüzek) | ③ ⟦phương án mới để phòng dịch bệnh⟧ (új járványmegelőzési intézkedések) → Ⓒ ⟦bất tiện cho sinh hoạt hằng ngày⟧ (kényelmetlenség a mindennapokban)
+Minta: Ⓐ ⟦Tuần sau ở khu vực miền Trung sẽ có mưa to.⟧ — Jövő héten Közép-Vietnamban erős eső lesz. Ⓑ ⟦Người ta lo lắng là mưa to sẽ có thể gây ra ngập lụt ở nhiều nơi.⟧ — Az emberek attól tartanak, hogy az erős eső sok helyen áradást okozhat.
+4. gyakorlat — töltse ki a ⟦không chỉ ~ mà cả ~⟧ szerkezettel a minta szerint, majd beszélgessen.
+Minta: Ⓐ ⟦Anh là người thích hoạt động.⟧ — Mozgékony ember vagyok. Ⓑ ⟦Thế thì chắc là anh thích chơi bóng đá, đúng không ạ?⟧ — Akkor biztos szeretsz focizni, igaz? Ⓐ ⟦Đúng. Anh thích chơi không chỉ bóng đá mà cả bóng rổ.⟧ — Igen. Nemcsak focizni szeretek, hanem kosarazni is.
+❶ Ⓐ ⟦Sở thích của chị là nấu ăn.⟧ — A hobbim a főzés. Ⓑ ⟦Chị có biết cách nấu món ăn Ý không?⟧ — Tudsz olasz ételeket főzni? Ⓐ ⟦Có chứ. Chị biết nấu … món ăn Việt.⟧ — Persze. Tudok főzni … vietnami ételeket.
+❷ Ⓐ ⟦Hiện nay, vấn đề ô nhiễm môi trường càng ngày càng nghiêm trọng.⟧ — Manapság a környezetszennyezés egyre súlyosabb. Ⓑ ⟦Các đoàn thể đang có nhiều hoạt động để bảo vệ môi trường mà?⟧ — De hát a szervezetek sokat tesznek a környezetvédelemért, nem? Ⓐ ⟦Đúng. Nhưng theo tôi … người dân thường cũng phải quan tâm đến vấn đề này.⟧ — Igaz. De szerintem … az egyszerű embereknek is foglalkozniuk kell ezzel a kérdéssel.
+Új szavak: ⟦cơn⟧ osztályozószó (természeti jelenségekhez: eső, szél) | ⟦cấp⟧ fokozat | ⟦thiệt hại⟧ kár | ⟦nông nghiệp⟧ mezőgazdaság | ⟦mưa lũ⟧ árvíz | ⟦cuộc sống⟧ élet | ⟦sinh hoạt⟧ mindennapi élet | ⟦phương án⟧ intézkedés, terv | ⟦ngập lụt⟧ elárasztva lenni | ⟦cháy rừng⟧ erdőtűz | ⟦phản đối⟧ ellenezni | ⟦tham gia⟧ részt venni | ⟦ô nhiễm⟧ szennyezni | ⟦môi trường⟧ környezet | ⟦nghiêm trọng⟧ súlyos | ⟦đoàn thể⟧ szervezet | ⟦bảo vệ⟧ védeni | ⟦quan tâm⟧ törődni vele
+=id
+Ungkapan kunci: ⟦gây ra ~⟧ / ⟦không chỉ ~ mà cả ~⟧
+⟦gây ra ~⟧ berarti "menyebabkan ~". Biasanya diikuti kata yang bermakna negatif.
+❶ ⟦Cơn bão số 3 với sức gió mạnh cấp 9 đã gây ra nhiều thiệt hại cho nông nghiệp.⟧ — Badai No. 3 dengan kekuatan angin tingkat 9 telah menyebabkan banyak kerugian bagi pertanian.
+❷ Ⓐ ⟦Nghe nói miền Trung lại bị mưa lũ, đúng không?⟧ — Katanya Vietnam Tengah dilanda banjir lagi, ya? Ⓑ ⟦Đúng rồi. Người ta rất lo vì lần mưa lũ này gây ra vấn đề lớn cho cuộc sống của họ.⟧ — Betul. Orang-orang sangat khawatir karena banjir kali ini menimbulkan masalah besar bagi kehidupan mereka.
+⟦không chỉ ~ mà cả ~⟧ berarti "tidak hanya ~ tetapi juga ~" dan menambahkan hal lain.
+❶ ⟦Không chỉ mẹ mà cả bố cũng phản đối kế hoạch con sẽ nghỉ học để đi làm.⟧ — Tidak hanya ibu, tetapi juga ayah menentang rencanaku cuti kuliah untuk bekerja.
+❷ Ⓐ ⟦Chương trình này chỉ dành cho các sinh viên Khoa Tiếng Việt thôi à?⟧ — Apakah program ini hanya untuk mahasiswa Jurusan Bahasa Vietnam? Ⓑ ⟦Không chỉ sinh viên của Khoa Tiếng Việt mà cả những sinh viên của các khoa khác cũng tham gia được.⟧ — Tidak hanya mahasiswa Jurusan Bahasa Vietnam, tetapi juga mahasiswa jurusan lain bisa ikut.
+Latihan pola 3 — hubungkan sebab dan akibat, lalu bercakaplah seperti contoh: ① ⟦mưa to⟧ (hujan deras) → Ⓐ ⟦ngập lụt ở nhiều nơi⟧ (banjir di banyak tempat) | ② ⟦không khí khô⟧ (udara kering) → Ⓑ ⟦cháy rừng nghiêm trọng⟧ (kebakaran hutan parah) | ③ ⟦phương án mới để phòng dịch bệnh⟧ (langkah baru pencegahan wabah) → Ⓒ ⟦bất tiện cho sinh hoạt hằng ngày⟧ (ketidaknyamanan dalam kehidupan sehari-hari)
+Contoh: Ⓐ ⟦Tuần sau ở khu vực miền Trung sẽ có mưa to.⟧ — Minggu depan akan turun hujan deras di wilayah Vietnam Tengah. Ⓑ ⟦Người ta lo lắng là mưa to sẽ có thể gây ra ngập lụt ở nhiều nơi.⟧ — Orang-orang khawatir hujan deras bisa menyebabkan banjir di banyak tempat.
+Latihan pola 4 — isi dengan ⟦không chỉ ~ mà cả ~⟧ seperti contoh, lalu bercakaplah.
+Contoh: Ⓐ ⟦Anh là người thích hoạt động.⟧ — Saya orang yang suka beraktivitas. Ⓑ ⟦Thế thì chắc là anh thích chơi bóng đá, đúng không ạ?⟧ — Kalau begitu pasti Anda suka main sepak bola, kan? Ⓐ ⟦Đúng. Anh thích chơi không chỉ bóng đá mà cả bóng rổ.⟧ — Betul. Saya suka main tidak hanya sepak bola tetapi juga bola basket.
+❶ Ⓐ ⟦Sở thích của chị là nấu ăn.⟧ — Hobi saya memasak. Ⓑ ⟦Chị có biết cách nấu món ăn Ý không?⟧ — Kakak bisa masak masakan Italia? Ⓐ ⟦Có chứ. Chị biết nấu … món ăn Việt.⟧ — Tentu. Saya bisa masak … masakan Vietnam.
+❷ Ⓐ ⟦Hiện nay, vấn đề ô nhiễm môi trường càng ngày càng nghiêm trọng.⟧ — Sekarang masalah pencemaran lingkungan makin lama makin serius. Ⓑ ⟦Các đoàn thể đang có nhiều hoạt động để bảo vệ môi trường mà?⟧ — Bukankah banyak organisasi sedang giat melindungi lingkungan? Ⓐ ⟦Đúng. Nhưng theo tôi … người dân thường cũng phải quan tâm đến vấn đề này.⟧ — Betul. Tetapi menurut saya … masyarakat biasa juga harus peduli pada masalah ini.
+Kosakata baru: ⟦cơn⟧ kata penggolong (untuk fenomena alam seperti hujan, angin) | ⟦cấp⟧ tingkat | ⟦thiệt hại⟧ kerugian | ⟦nông nghiệp⟧ pertanian | ⟦mưa lũ⟧ banjir | ⟦cuộc sống⟧ kehidupan | ⟦sinh hoạt⟧ kehidupan sehari-hari | ⟦phương án⟧ langkah, rencana | ⟦ngập lụt⟧ kebanjiran | ⟦cháy rừng⟧ kebakaran hutan | ⟦phản đối⟧ menentang | ⟦tham gia⟧ ikut serta | ⟦ô nhiễm⟧ mencemari | ⟦môi trường⟧ lingkungan | ⟦nghiêm trọng⟧ serius | ⟦đoàn thể⟧ organisasi | ⟦bảo vệ⟧ melindungi | ⟦quan tâm⟧ peduli
+=ja
+核心表現：⟦gây ra ~⟧ / ⟦không chỉ ~ mà cả ~⟧
+⟦gây ra ~⟧ は「～を引き起こす」という意味です。⟦gây ra⟧ の後には一般的に否定的な意味の語が来ます。
+❶ ⟦Cơn bão số 3 với sức gió mạnh cấp 9 đã gây ra nhiều thiệt hại cho nông nghiệp.⟧ — 風力9級の強い台風3号は、農業に多くの被害をもたらしました。
+❷ Ⓐ ⟦Nghe nói miền Trung lại bị mưa lũ, đúng không?⟧ — 中部でまた洪水があったそうですね。 Ⓑ ⟦Đúng rồi. Người ta rất lo vì lần mưa lũ này gây ra vấn đề lớn cho cuộc sống của họ.⟧ — そうです。今回の洪水が生活に大きな問題を引き起こしたので、人々はとても心配しています。
+⟦không chỉ ~ mà cả ~⟧ は「～だけでなく～まで」という意味で、追加の意味を持つ表現です。
+❶ ⟦Không chỉ mẹ mà cả bố cũng phản đối kế hoạch con sẽ nghỉ học để đi làm.⟧ — 母だけでなく父までも、私が休学して働く計画に反対しています。
+❷ Ⓐ ⟦Chương trình này chỉ dành cho các sinh viên Khoa Tiếng Việt thôi à?⟧ — このプログラムはベトナム語学科の学生だけが参加できるんですか。 Ⓑ ⟦Không chỉ sinh viên của Khoa Tiếng Việt mà cả những sinh viên của các khoa khác cũng tham gia được.⟧ — ベトナム語学科の学生だけでなく、他学科の学生も参加できます。
+文型練習3 — 適切な内容を結び、例のように会話してみましょう：① ⟦mưa to⟧（大雨）→ Ⓐ ⟦ngập lụt ở nhiều nơi⟧（各地で浸水）| ② ⟦không khí khô⟧（乾燥した空気）→ Ⓑ ⟦cháy rừng nghiêm trọng⟧（深刻な山火事）| ③ ⟦phương án mới để phòng dịch bệnh⟧（新しい防疫対策）→ Ⓒ ⟦bất tiện cho sinh hoạt hằng ngày⟧（日常生活の不便）
+例：Ⓐ ⟦Tuần sau ở khu vực miền Trung sẽ có mưa to.⟧ — 来週、中部地域では大雨が降ります。 Ⓑ ⟦Người ta lo lắng là mưa to sẽ có thể gây ra ngập lụt ở nhiều nơi.⟧ — 大雨が各地で浸水を引き起こすのではと人々は心配しています。
+文型練習4 — 例のように ⟦không chỉ ~ mà cả ~⟧ を使って空欄を埋め、会話してみましょう。
+例：Ⓐ ⟦Anh là người thích hoạt động.⟧ — 私は活動的な人です。 Ⓑ ⟦Thế thì chắc là anh thích chơi bóng đá, đúng không ạ?⟧ — それならきっとサッカーが好きなんでしょう？ Ⓐ ⟦Đúng. Anh thích chơi không chỉ bóng đá mà cả bóng rổ.⟧ — そうです。サッカーだけでなくバスケットボールも好きです。
+❶ Ⓐ ⟦Sở thích của chị là nấu ăn.⟧ — 私の趣味は料理です。 Ⓑ ⟦Chị có biết cách nấu món ăn Ý không?⟧ — イタリア料理は作れますか。 Ⓐ ⟦Có chứ. Chị biết nấu … món ăn Việt.⟧ — もちろん。…ベトナム料理も作れます。
+❷ Ⓐ ⟦Hiện nay, vấn đề ô nhiễm môi trường càng ngày càng nghiêm trọng.⟧ — 現在、環境汚染の問題はますます深刻になっています。 Ⓑ ⟦Các đoàn thể đang có nhiều hoạt động để bảo vệ môi trường mà?⟧ — 団体が環境保護のためにいろいろな活動をしているじゃないですか。 Ⓐ ⟦Đúng. Nhưng theo tôi … người dân thường cũng phải quan tâm đến vấn đề này.⟧ — そうです。でも私は…一般の人々もこの問題に関心を持つべきだと思います。
+新出単語：⟦cơn⟧ 類別詞（雨・風など自然現象を表す名詞に使う）| ⟦cấp⟧ 級 | ⟦thiệt hại⟧ 被害 | ⟦nông nghiệp⟧ 農業 | ⟦mưa lũ⟧ 洪水 | ⟦cuộc sống⟧ 暮らし、生活 | ⟦sinh hoạt⟧ 生活 | ⟦phương án⟧ 方策 | ⟦ngập lụt⟧ 浸水する | ⟦cháy rừng⟧ 山火事 | ⟦phản đối⟧ 反対する | ⟦tham gia⟧ 参加する | ⟦ô nhiễm⟧ 汚染する | ⟦môi trường⟧ 環境 | ⟦nghiêm trọng⟧ 深刻な | ⟦đoàn thể⟧ 団体 | ⟦bảo vệ⟧ 保護する | ⟦quan tâm⟧ 関心を持つ
+=pl
+Kluczowe wyrażenia: ⟦gây ra ~⟧ / ⟦không chỉ ~ mà cả ~⟧
+⟦gây ra ~⟧ znaczy „spowodować ~”. Zwykle następuje po nim słowo o znaczeniu negatywnym.
+❶ ⟦Cơn bão số 3 với sức gió mạnh cấp 9 đã gây ra nhiều thiệt hại cho nông nghiệp.⟧ — Tajfun nr 3 o sile wiatru 9 stopni wyrządził rolnictwu wiele szkód.
+❷ Ⓐ ⟦Nghe nói miền Trung lại bị mưa lũ, đúng không?⟧ — Podobno środkowy Wietnam znowu zalała powódź, prawda? Ⓑ ⟦Đúng rồi. Người ta rất lo vì lần mưa lũ này gây ra vấn đề lớn cho cuộc sống của họ.⟧ — Tak. Ludzie bardzo się martwią, bo ta powódź spowodowała wielkie problemy w ich życiu.
+⟦không chỉ ~ mà cả ~⟧ znaczy „nie tylko ~, ale także ~” i dodaje kolejny element.
+❶ ⟦Không chỉ mẹ mà cả bố cũng phản đối kế hoạch con sẽ nghỉ học để đi làm.⟧ — Nie tylko mama, ale i tata sprzeciwia się mojemu planowi przerwania studiów, żeby pójść do pracy.
+❷ Ⓐ ⟦Chương trình này chỉ dành cho các sinh viên Khoa Tiếng Việt thôi à?⟧ — Czy ten program jest tylko dla studentów wietnamistyki? Ⓑ ⟦Không chỉ sinh viên của Khoa Tiếng Việt mà cả những sinh viên của các khoa khác cũng tham gia được.⟧ — Mogą wziąć udział nie tylko studenci wietnamistyki, ale także studenci innych kierunków.
+Ćwiczenie 3 — połącz przyczynę ze skutkiem i rozmawiaj jak we wzorze: ① ⟦mưa to⟧ (ulewa) → Ⓐ ⟦ngập lụt ở nhiều nơi⟧ (powodzie w wielu miejscach) | ② ⟦không khí khô⟧ (suche powietrze) → Ⓑ ⟦cháy rừng nghiêm trọng⟧ (poważne pożary lasów) | ③ ⟦phương án mới để phòng dịch bệnh⟧ (nowe środki zapobiegania epidemii) → Ⓒ ⟦bất tiện cho sinh hoạt hằng ngày⟧ (utrudnienia w codziennym życiu)
+Wzór: Ⓐ ⟦Tuần sau ở khu vực miền Trung sẽ có mưa to.⟧ — W przyszłym tygodniu w środkowym Wietnamie będą ulewy. Ⓑ ⟦Người ta lo lắng là mưa to sẽ có thể gây ra ngập lụt ở nhiều nơi.⟧ — Ludzie obawiają się, że ulewy mogą spowodować powodzie w wielu miejscach.
+Ćwiczenie 4 — uzupełnij za pomocą ⟦không chỉ ~ mà cả ~⟧ jak we wzorze, potem rozmawiaj.
+Wzór: Ⓐ ⟦Anh là người thích hoạt động.⟧ — Jestem aktywnym człowiekiem. Ⓑ ⟦Thế thì chắc là anh thích chơi bóng đá, đúng không ạ?⟧ — To pewnie lubisz grać w piłkę nożną, prawda? Ⓐ ⟦Đúng. Anh thích chơi không chỉ bóng đá mà cả bóng rổ.⟧ — Tak. Lubię grać nie tylko w piłkę nożną, ale też w koszykówkę.
+❶ Ⓐ ⟦Sở thích của chị là nấu ăn.⟧ — Moje hobby to gotowanie. Ⓑ ⟦Chị có biết cách nấu món ăn Ý không?⟧ — Umiesz gotować dania włoskie? Ⓐ ⟦Có chứ. Chị biết nấu … món ăn Việt.⟧ — Jasne. Umiem gotować … dania wietnamskie.
+❷ Ⓐ ⟦Hiện nay, vấn đề ô nhiễm môi trường càng ngày càng nghiêm trọng.⟧ — Obecnie zanieczyszczenie środowiska jest coraz poważniejsze. Ⓑ ⟦Các đoàn thể đang có nhiều hoạt động để bảo vệ môi trường mà?⟧ — Przecież organizacje dużo robią dla ochrony środowiska? Ⓐ ⟦Đúng. Nhưng theo tôi … người dân thường cũng phải quan tâm đến vấn đề này.⟧ — To prawda. Ale moim zdaniem … zwykli ludzie też muszą się tym problemem interesować.
+Nowe słówka: ⟦cơn⟧ klasyfikator (dla zjawisk przyrody: deszcz, wiatr) | ⟦cấp⟧ stopień | ⟦thiệt hại⟧ szkoda | ⟦nông nghiệp⟧ rolnictwo | ⟦mưa lũ⟧ powódź | ⟦cuộc sống⟧ życie | ⟦sinh hoạt⟧ życie codzienne | ⟦phương án⟧ środek, plan | ⟦ngập lụt⟧ zostać zalanym | ⟦cháy rừng⟧ pożar lasu | ⟦phản đối⟧ sprzeciwiać się | ⟦tham gia⟧ uczestniczyć | ⟦ô nhiễm⟧ zanieczyszczać | ⟦môi trường⟧ środowisko | ⟦nghiêm trọng⟧ poważny | ⟦đoàn thể⟧ organizacja | ⟦bảo vệ⟧ chronić | ⟦quan tâm⟧ interesować się

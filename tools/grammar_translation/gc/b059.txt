@@ -1,0 +1,142 @@
+@@ pdf-grammar-21e3d692d0ed53d1#0
+=cs
+Gramatický výklad
+⟦từ A đến / tới B⟧ se používá pro čas i prostor ve významu „od A do B“.
+⟦Mùa xuân bắt đầu từ tháng giêng đến hết tháng ba âm lịch.⟧ → Jaro trvá od 1. do konce 3. lunárního měsíce. · ⟦Mùa hạ từ tháng tư tới hết tháng sáu.⟧ → Léto trvá od 4. do konce 6. měsíce. · ⟦Mùa thu từ tháng bẩy tới hết tháng chín.⟧ → Podzim trvá od 7. do konce 9. měsíce. · ⟦Còn mùa đông từ tháng mười đến cuối tháng chạp.⟧ → A zima od 10. do konce 12. měsíce.
+⟦bởi⟧ uvádí příčinu toho, co bylo ve větě řečeno: „protože, neboť“.
+⟦Người Việt Nam thích nhất mùa thu bởi mùa thu mát mẻ, bầu trời trong xanh.⟧ → Vietnamci mají nejraději podzim, protože je chladivý a obloha je jasná. · ⟦Thời tiết các tỉnh phía Bắc hết sức đa dạng bởi các tỉnh phía Bắc có đủ bốn mùa: xuân, hạ, thu, đông.⟧ → Počasí v severních provinciích je velmi rozmanité, protože tam jsou všechna čtyři roční období: jaro, léto, podzim a zima.
+=zh_cn
+语法解说
+⟦từ A đến / tới B⟧ 可用于时间和空间，意为“从A到B”。
+⟦Mùa xuân bắt đầu từ tháng giêng đến hết tháng ba âm lịch.⟧ → 春季从农历正月到三月底。 · ⟦Mùa hạ từ tháng tư tới hết tháng sáu.⟧ → 夏季从四月到六月底。 · ⟦Mùa thu từ tháng bẩy tới hết tháng chín.⟧ → 秋季从七月到九月底。 · ⟦Còn mùa đông từ tháng mười đến cuối tháng chạp.⟧ → 冬季则从十月到腊月底。
+⟦bởi⟧ 用来说明句中所述内容的原因，意为“因为”。
+⟦Người Việt Nam thích nhất mùa thu bởi mùa thu mát mẻ, bầu trời trong xanh.⟧ → 越南人最喜欢秋天，因为秋天凉爽，天空晴朗。 · ⟦Thời tiết các tỉnh phía Bắc hết sức đa dạng bởi các tỉnh phía Bắc có đủ bốn mùa: xuân, hạ, thu, đông.⟧ → 北方各省的天气非常多样，因为北方各省春夏秋冬四季分明。
+=zh
+文法解說
+⟦từ A đến / tới B⟧ 可用於時間和空間，意為「從A到B」。
+⟦Mùa xuân bắt đầu từ tháng giêng đến hết tháng ba âm lịch.⟧ → 春季從農曆正月到三月底。 · ⟦Mùa hạ từ tháng tư tới hết tháng sáu.⟧ → 夏季從四月到六月底。 · ⟦Mùa thu từ tháng bẩy tới hết tháng chín.⟧ → 秋季從七月到九月底。 · ⟦Còn mùa đông từ tháng mười đến cuối tháng chạp.⟧ → 冬季則從十月到臘月底。
+⟦bởi⟧ 用來說明句中所述內容的原因，意為「因為」。
+⟦Người Việt Nam thích nhất mùa thu bởi mùa thu mát mẻ, bầu trời trong xanh.⟧ → 越南人最喜歡秋天，因為秋天涼爽，天空晴朗。 · ⟦Thời tiết các tỉnh phía Bắc hết sức đa dạng bởi các tỉnh phía Bắc có đủ bốn mùa: xuân, hạ, thu, đông.⟧ → 北部各省的天氣非常多樣，因為北部各省春夏秋冬四季分明。
+=en
+Grammar notes
+⟦từ A đến / tới B⟧ is used for both time and space, meaning "from A to B".
+⟦Mùa xuân bắt đầu từ tháng giêng đến hết tháng ba âm lịch.⟧ → Spring runs from the 1st to the end of the 3rd lunar month. · ⟦Mùa hạ từ tháng tư tới hết tháng sáu.⟧ → Summer runs from the 4th to the end of the 6th month. · ⟦Mùa thu từ tháng bẩy tới hết tháng chín.⟧ → Autumn runs from the 7th to the end of the 9th month. · ⟦Còn mùa đông từ tháng mười đến cuối tháng chạp.⟧ → And winter from the 10th to the end of the 12th month.
+⟦bởi⟧ is used to give the reason for what is said in the sentence: "because".
+⟦Người Việt Nam thích nhất mùa thu bởi mùa thu mát mẻ, bầu trời trong xanh.⟧ → Vietnamese people like autumn best because it is cool and the sky is clear. · ⟦Thời tiết các tỉnh phía Bắc hết sức đa dạng bởi các tỉnh phía Bắc có đủ bốn mùa: xuân, hạ, thu, đông.⟧ → The weather in the northern provinces is extremely varied because they have all four seasons: spring, summer, autumn and winter.
+=fr
+Notes de grammaire
+⟦từ A đến / tới B⟧ s'emploie pour le temps comme pour l'espace, au sens de « de A à B ».
+⟦Mùa xuân bắt đầu từ tháng giêng đến hết tháng ba âm lịch.⟧ → Le printemps va du 1er à la fin du 3e mois lunaire. · ⟦Mùa hạ từ tháng tư tới hết tháng sáu.⟧ → L'été va du 4e à la fin du 6e mois. · ⟦Mùa thu từ tháng bẩy tới hết tháng chín.⟧ → L'automne va du 7e à la fin du 9e mois. · ⟦Còn mùa đông từ tháng mười đến cuối tháng chạp.⟧ → Et l'hiver du 10e à la fin du 12e mois.
+⟦bởi⟧ sert à indiquer la cause de ce qui est dit dans la phrase : « parce que, car ».
+⟦Người Việt Nam thích nhất mùa thu bởi mùa thu mát mẻ, bầu trời trong xanh.⟧ → Les Vietnamiens préfèrent l'automne parce qu'il fait frais et que le ciel est clair. · ⟦Thời tiết các tỉnh phía Bắc hết sức đa dạng bởi các tỉnh phía Bắc có đủ bốn mùa: xuân, hạ, thu, đông.⟧ → Le climat des provinces du Nord est très varié car elles connaissent les quatre saisons : printemps, été, automne, hiver.
+=de
+Grammatikerläuterungen
+⟦từ A đến / tới B⟧ wird für Zeit und Raum verwendet und bedeutet „von A bis B“.
+⟦Mùa xuân bắt đầu từ tháng giêng đến hết tháng ba âm lịch.⟧ → Der Frühling dauert vom 1. bis Ende des 3. Mondmonats. · ⟦Mùa hạ từ tháng tư tới hết tháng sáu.⟧ → Der Sommer dauert vom 4. bis Ende des 6. Monats. · ⟦Mùa thu từ tháng bẩy tới hết tháng chín.⟧ → Der Herbst dauert vom 7. bis Ende des 9. Monats. · ⟦Còn mùa đông từ tháng mười đến cuối tháng chạp.⟧ → Und der Winter vom 10. bis Ende des 12. Monats.
+⟦bởi⟧ gibt den Grund für das im Satz Gesagte an: „weil, denn“.
+⟦Người Việt Nam thích nhất mùa thu bởi mùa thu mát mẻ, bầu trời trong xanh.⟧ → Die Vietnamesen mögen den Herbst am liebsten, weil er kühl und der Himmel klar ist. · ⟦Thời tiết các tỉnh phía Bắc hết sức đa dạng bởi các tỉnh phía Bắc có đủ bốn mùa: xuân, hạ, thu, đông.⟧ → Das Wetter in den Nordprovinzen ist äußerst vielfältig, weil es dort alle vier Jahreszeiten gibt: Frühling, Sommer, Herbst und Winter.
+=hu
+Nyelvtani magyarázat
+A ⟦từ A đến / tới B⟧ időre és térre egyaránt használatos, jelentése „A-tól B-ig”.
+⟦Mùa xuân bắt đầu từ tháng giêng đến hết tháng ba âm lịch.⟧ → A tavasz az 1. holdhónaptól a 3. végéig tart. · ⟦Mùa hạ từ tháng tư tới hết tháng sáu.⟧ → A nyár a 4. hónaptól a 6. végéig tart. · ⟦Mùa thu từ tháng bẩy tới hết tháng chín.⟧ → Az ősz a 7. hónaptól a 9. végéig tart. · ⟦Còn mùa đông từ tháng mười đến cuối tháng chạp.⟧ → A tél pedig a 10. hónaptól a 12. végéig.
+A ⟦bởi⟧ a mondatban elmondottak okát jelöli: „mert”.
+⟦Người Việt Nam thích nhất mùa thu bởi mùa thu mát mẻ, bầu trời trong xanh.⟧ → A vietnamiak az őszt szeretik a legjobban, mert hűvös és tiszta az ég. · ⟦Thời tiết các tỉnh phía Bắc hết sức đa dạng bởi các tỉnh phía Bắc có đủ bốn mùa: xuân, hạ, thu, đông.⟧ → Az északi tartományok időjárása rendkívül változatos, mert ott mind a négy évszak megvan: tavasz, nyár, ősz és tél.
+=id
+Penjelasan tata bahasa
+⟦từ A đến / tới B⟧ dipakai untuk waktu maupun tempat dengan arti "dari A sampai B".
+⟦Mùa xuân bắt đầu từ tháng giêng đến hết tháng ba âm lịch.⟧ → Musim semi berlangsung dari bulan 1 sampai akhir bulan 3 kalender lunar. · ⟦Mùa hạ từ tháng tư tới hết tháng sáu.⟧ → Musim panas dari bulan 4 sampai akhir bulan 6. · ⟦Mùa thu từ tháng bẩy tới hết tháng chín.⟧ → Musim gugur dari bulan 7 sampai akhir bulan 9. · ⟦Còn mùa đông từ tháng mười đến cuối tháng chạp.⟧ → Sedangkan musim dingin dari bulan 10 sampai akhir bulan 12.
+⟦bởi⟧ dipakai untuk menjelaskan sebab dari isi kalimat: "karena".
+⟦Người Việt Nam thích nhất mùa thu bởi mùa thu mát mẻ, bầu trời trong xanh.⟧ → Orang Vietnam paling menyukai musim gugur karena udaranya sejuk dan langitnya cerah. · ⟦Thời tiết các tỉnh phía Bắc hết sức đa dạng bởi các tỉnh phía Bắc có đủ bốn mùa: xuân, hạ, thu, đông.⟧ → Cuaca di provinsi-provinsi utara sangat beragam karena di sana ada empat musim: semi, panas, gugur, dan dingin.
+=ja
+文法解説
+⟦từ A đến / tới B⟧ の形で時間と空間の両方に使い、「AからBまで」という意味で使われます。
+⟦Mùa xuân bắt đầu từ tháng giêng đến hết tháng ba âm lịch.⟧ → 春は旧暦1月から3月末までだ。 · ⟦Mùa hạ từ tháng tư tới hết tháng sáu.⟧ → 夏は4月から6月末までだ。 · ⟦Mùa thu từ tháng bẩy tới hết tháng chín.⟧ → 秋は7月から9月末までだ。 · ⟦Còn mùa đông từ tháng mười đến cuối tháng chạp.⟧ → そして冬は10月から12月末までだ。
+⟦bởi⟧ は文中で述べた内容の原因を明らかにするために使い、「～なので」という意味です。
+⟦Người Việt Nam thích nhất mùa thu bởi mùa thu mát mẻ, bầu trời trong xanh.⟧ → 秋は涼しくて空が澄んでいるので、ベトナム人は秋が一番好きだ。 · ⟦Thời tiết các tỉnh phía Bắc hết sức đa dạng bởi các tỉnh phía Bắc có đủ bốn mùa: xuân, hạ, thu, đông.⟧ → 北部の各省には春夏秋冬の四季がそろっているので、天気が非常に多様だ。
+=pl
+Objaśnienia gramatyczne
+⟦từ A đến / tới B⟧ używa się zarówno dla czasu, jak i przestrzeni w znaczeniu „od A do B”.
+⟦Mùa xuân bắt đầu từ tháng giêng đến hết tháng ba âm lịch.⟧ → Wiosna trwa od 1. do końca 3. miesiąca księżycowego. · ⟦Mùa hạ từ tháng tư tới hết tháng sáu.⟧ → Lato trwa od 4. do końca 6. miesiąca. · ⟦Mùa thu từ tháng bẩy tới hết tháng chín.⟧ → Jesień trwa od 7. do końca 9. miesiąca. · ⟦Còn mùa đông từ tháng mười đến cuối tháng chạp.⟧ → A zima od 10. do końca 12. miesiąca.
+⟦bởi⟧ wskazuje przyczynę tego, co powiedziano w zdaniu: „ponieważ, bo”.
+⟦Người Việt Nam thích nhất mùa thu bởi mùa thu mát mẻ, bầu trời trong xanh.⟧ → Wietnamczycy najbardziej lubią jesień, bo jest chłodna, a niebo czyste. · ⟦Thời tiết các tỉnh phía Bắc hết sức đa dạng bởi các tỉnh phía Bắc có đủ bốn mùa: xuân, hạ, thu, đông.⟧ → Pogoda w prowincjach północnych jest bardzo zróżnicowana, ponieważ występują tam wszystkie cztery pory roku: wiosna, lato, jesień i zima.
+@@ pdf-grammar-c9a4238bbe6f0933#0
+=cs
+Gramatický výklad
+⟦khoảng⟧ se používá k vyjádření přibližného počtu: „asi, přibližně“.
+⟦Trung bình hàng năm, Việt Nam có khoảng 5 - 6 cơn bão.⟧ → Vietnam zasáhne v průměru asi 5–6 tajfunů ročně. · ⟦Tốc độ gió mạnh nhất khoảng vài chục kilomet / giờ.⟧ → Nejsilnější vítr dosahuje rychlosti přibližně několika desítek kilometrů za hodinu. · ⟦Ngày nào cũng có khoảng 3-4 cơn mưa rào.⟧ → Každý den přijdou asi 3–4 přeháňky.
+⟦vừa A vừa B⟧ vyjadřuje, že děje A a B probíhají současně: „zároveň A i B“.
+⟦Bão vừa gây ra các cơn gió mạnh vừa gây ra các cơn mưa lớn.⟧ → Tajfun přináší silný vítr a zároveň prudké lijáky. · ⟦Bão vừa gây thiệt hại về đời sống kinh tế vừa gây tổn thất về tính mạng con người.⟧ → Tajfun způsobuje hospodářské škody a zároveň ztráty na lidských životech. · ⟦Bão vừa làm đổ nhà cửa vừa làm đổ cây cối, cột điện.⟧ → Tajfun boří domy a zároveň vyvrací stromy a elektrické sloupy.
+⟦càng A càng B⟧ znamená „čím víc A, tím víc B“.
+⟦Càng gần tâm bão, gió càng mạnh.⟧ → Čím blíž ke středu tajfunu, tím silnější vítr. · ⟦Càng về đêm, trời càng rét.⟧ → Čím pokročilejší noc, tím větší zima. · ⟦Bão càng lớn, tác hại càng nhiều.⟧ → Čím silnější tajfun, tím větší škody. · ⟦Gió càng to, cây cối đổ càng nhiều.⟧ → Čím silnější vítr, tím víc padlých stromů.
+=zh_cn
+语法解说
+⟦khoảng⟧ 用于表示不精确的大概数目，意为“大约、左右”。
+⟦Trung bình hàng năm, Việt Nam có khoảng 5 - 6 cơn bão.⟧ → 越南平均每年大约有5～6次台风。 · ⟦Tốc độ gió mạnh nhất khoảng vài chục kilomet / giờ.⟧ → 最强风速大约每小时几十公里。 · ⟦Ngày nào cũng có khoảng 3-4 cơn mưa rào.⟧ → 每天大约有3～4场阵雨。
+⟦vừa A vừa B⟧ 表示A和B的行为同时发生，意为“一边A一边B、既A又B”。
+⟦Bão vừa gây ra các cơn gió mạnh vừa gây ra các cơn mưa lớn.⟧ → 台风既带来强风又带来暴雨。 · ⟦Bão vừa gây thiệt hại về đời sống kinh tế vừa gây tổn thất về tính mạng con người.⟧ → 台风既对经济生活造成损害，又造成人员伤亡。 · ⟦Bão vừa làm đổ nhà cửa vừa làm đổ cây cối, cột điện.⟧ → 台风既刮倒房屋，又刮倒树木和电线杆。
+⟦càng A càng B⟧ 意为“越A越B”。
+⟦Càng gần tâm bão, gió càng mạnh.⟧ → 越靠近台风中心，风越大。 · ⟦Càng về đêm, trời càng rét.⟧ → 夜越深，天越冷。 · ⟦Bão càng lớn, tác hại càng nhiều.⟧ → 台风越大，危害越多。 · ⟦Gió càng to, cây cối đổ càng nhiều.⟧ → 风越大，倒下的树越多。
+=zh
+文法解說
+⟦khoảng⟧ 用於表示不精確的大概數目，意為「大約、左右」。
+⟦Trung bình hàng năm, Việt Nam có khoảng 5 - 6 cơn bão.⟧ → 越南平均每年大約有5～6個颱風。 · ⟦Tốc độ gió mạnh nhất khoảng vài chục kilomet / giờ.⟧ → 最強風速大約每小時幾十公里。 · ⟦Ngày nào cũng có khoảng 3-4 cơn mưa rào.⟧ → 每天大約有3～4場陣雨。
+⟦vừa A vừa B⟧ 表示A和B的行為同時發生，意為「一邊A一邊B、既A又B」。
+⟦Bão vừa gây ra các cơn gió mạnh vừa gây ra các cơn mưa lớn.⟧ → 颱風既帶來強風又帶來豪雨。 · ⟦Bão vừa gây thiệt hại về đời sống kinh tế vừa gây tổn thất về tính mạng con người.⟧ → 颱風既對經濟生活造成損害，又造成人命傷亡。 · ⟦Bão vừa làm đổ nhà cửa vừa làm đổ cây cối, cột điện.⟧ → 颱風既吹倒房屋，又吹倒樹木和電線桿。
+⟦càng A càng B⟧ 意為「越A越B」。
+⟦Càng gần tâm bão, gió càng mạnh.⟧ → 越靠近颱風中心，風越大。 · ⟦Càng về đêm, trời càng rét.⟧ → 夜越深，天越冷。 · ⟦Bão càng lớn, tác hại càng nhiều.⟧ → 颱風越大，危害越多。 · ⟦Gió càng to, cây cối đổ càng nhiều.⟧ → 風越大，倒下的樹越多。
+=en
+Grammar notes
+⟦khoảng⟧ is used for an approximate number: "about, around".
+⟦Trung bình hàng năm, Việt Nam có khoảng 5 - 6 cơn bão.⟧ → On average Vietnam has about 5–6 typhoons a year. · ⟦Tốc độ gió mạnh nhất khoảng vài chục kilomet / giờ.⟧ → The strongest winds reach around several dozen kilometres per hour. · ⟦Ngày nào cũng có khoảng 3-4 cơn mưa rào.⟧ → Every day there are about 3–4 showers.
+⟦vừa A vừa B⟧ shows that A and B happen at the same time: "both A and B, A while B".
+⟦Bão vừa gây ra các cơn gió mạnh vừa gây ra các cơn mưa lớn.⟧ → Typhoons bring both strong winds and heavy rain. · ⟦Bão vừa gây thiệt hại về đời sống kinh tế vừa gây tổn thất về tính mạng con người.⟧ → Typhoons both damage economic life and cost human lives. · ⟦Bão vừa làm đổ nhà cửa vừa làm đổ cây cối, cột điện.⟧ → Typhoons both knock down houses and bring down trees and power poles.
+⟦càng A càng B⟧ means "the more A, the more B".
+⟦Càng gần tâm bão, gió càng mạnh.⟧ → The closer to the eye of the storm, the stronger the wind. · ⟦Càng về đêm, trời càng rét.⟧ → The later the night, the colder it gets. · ⟦Bão càng lớn, tác hại càng nhiều.⟧ → The bigger the typhoon, the greater the damage. · ⟦Gió càng to, cây cối đổ càng nhiều.⟧ → The stronger the wind, the more trees fall.
+=fr
+Notes de grammaire
+⟦khoảng⟧ s'emploie pour un nombre approximatif : « environ, à peu près ».
+⟦Trung bình hàng năm, Việt Nam có khoảng 5 - 6 cơn bão.⟧ → En moyenne, le Vietnam connaît environ 5 à 6 typhons par an. · ⟦Tốc độ gió mạnh nhất khoảng vài chục kilomet / giờ.⟧ → Les vents les plus forts atteignent environ plusieurs dizaines de kilomètres à l'heure. · ⟦Ngày nào cũng có khoảng 3-4 cơn mưa rào.⟧ → Chaque jour, il y a environ 3 ou 4 averses.
+⟦vừa A vừa B⟧ exprime la simultanéité de A et B : « à la fois A et B ».
+⟦Bão vừa gây ra các cơn gió mạnh vừa gây ra các cơn mưa lớn.⟧ → Les typhons provoquent à la fois des vents violents et de fortes pluies. · ⟦Bão vừa gây thiệt hại về đời sống kinh tế vừa gây tổn thất về tính mạng con người.⟧ → Les typhons causent à la fois des dégâts économiques et des pertes en vies humaines. · ⟦Bão vừa làm đổ nhà cửa vừa làm đổ cây cối, cột điện.⟧ → Les typhons abattent à la fois des maisons, des arbres et des poteaux électriques.
+⟦càng A càng B⟧ signifie « plus A, plus B ».
+⟦Càng gần tâm bão, gió càng mạnh.⟧ → Plus on s'approche de l'œil du typhon, plus le vent est fort. · ⟦Càng về đêm, trời càng rét.⟧ → Plus la nuit avance, plus il fait froid. · ⟦Bão càng lớn, tác hại càng nhiều.⟧ → Plus le typhon est fort, plus les dégâts sont importants. · ⟦Gió càng to, cây cối đổ càng nhiều.⟧ → Plus le vent est fort, plus il y a d'arbres abattus.
+=de
+Grammatikerläuterungen
+⟦khoảng⟧ wird für ungefähre Zahlen verwendet: „etwa, ungefähr“.
+⟦Trung bình hàng năm, Việt Nam có khoảng 5 - 6 cơn bão.⟧ → Vietnam wird durchschnittlich von etwa 5–6 Taifunen im Jahr heimgesucht. · ⟦Tốc độ gió mạnh nhất khoảng vài chục kilomet / giờ.⟧ → Die stärksten Winde erreichen etwa einige Dutzend Kilometer pro Stunde. · ⟦Ngày nào cũng có khoảng 3-4 cơn mưa rào.⟧ → Jeden Tag gibt es etwa 3–4 Regenschauer.
+⟦vừa A vừa B⟧ drückt aus, dass A und B gleichzeitig geschehen: „sowohl A als auch B, A und zugleich B“.
+⟦Bão vừa gây ra các cơn gió mạnh vừa gây ra các cơn mưa lớn.⟧ → Taifune bringen sowohl starken Wind als auch heftigen Regen. · ⟦Bão vừa gây thiệt hại về đời sống kinh tế vừa gây tổn thất về tính mạng con người.⟧ → Taifune verursachen sowohl wirtschaftliche Schäden als auch Verluste an Menschenleben. · ⟦Bão vừa làm đổ nhà cửa vừa làm đổ cây cối, cột điện.⟧ → Taifune bringen sowohl Häuser als auch Bäume und Strommasten zum Einsturz.
+⟦càng A càng B⟧ bedeutet „je mehr A, desto mehr B“.
+⟦Càng gần tâm bão, gió càng mạnh.⟧ → Je näher am Zentrum des Taifuns, desto stärker der Wind. · ⟦Càng về đêm, trời càng rét.⟧ → Je später die Nacht, desto kälter wird es. · ⟦Bão càng lớn, tác hại càng nhiều.⟧ → Je größer der Taifun, desto größer der Schaden. · ⟦Gió càng to, cây cối đổ càng nhiều.⟧ → Je stärker der Wind, desto mehr Bäume stürzen um.
+=hu
+Nyelvtani magyarázat
+A ⟦khoảng⟧ közelítő szám kifejezésére szolgál: „körülbelül, mintegy”.
+⟦Trung bình hàng năm, Việt Nam có khoảng 5 - 6 cơn bão.⟧ → Vietnamot évente átlagosan körülbelül 5–6 tájfun éri. · ⟦Tốc độ gió mạnh nhất khoảng vài chục kilomet / giờ.⟧ → A legerősebb szél sebessége mintegy néhány tíz kilométer óránként. · ⟦Ngày nào cũng có khoảng 3-4 cơn mưa rào.⟧ → Naponta körülbelül 3–4 zápor van.
+A ⟦vừa A vừa B⟧ azt fejezi ki, hogy A és B egyszerre történik: „egyrészt A, másrészt B; is… is…”.
+⟦Bão vừa gây ra các cơn gió mạnh vừa gây ra các cơn mưa lớn.⟧ → A tájfun erős szelet és nagy esőt is hoz. · ⟦Bão vừa gây thiệt hại về đời sống kinh tế vừa gây tổn thất về tính mạng con người.⟧ → A tájfun gazdasági károkat és emberéletben is veszteséget okoz. · ⟦Bão vừa làm đổ nhà cửa vừa làm đổ cây cối, cột điện.⟧ → A tájfun házakat is dönt, fákat és villanyoszlopokat is.
+A ⟦càng A càng B⟧ jelentése „minél A, annál B”.
+⟦Càng gần tâm bão, gió càng mạnh.⟧ → Minél közelebb a tájfun középpontjához, annál erősebb a szél. · ⟦Càng về đêm, trời càng rét.⟧ → Minél későbbre jár az éjszaka, annál hidegebb van. · ⟦Bão càng lớn, tác hại càng nhiều.⟧ → Minél nagyobb a tájfun, annál nagyobb a kár. · ⟦Gió càng to, cây cối đổ càng nhiều.⟧ → Minél erősebb a szél, annál több fa dől ki.
+=id
+Penjelasan tata bahasa
+⟦khoảng⟧ dipakai untuk menyatakan jumlah perkiraan: "sekitar, kira-kira".
+⟦Trung bình hàng năm, Việt Nam có khoảng 5 - 6 cơn bão.⟧ → Rata-rata setiap tahun Vietnam dilanda sekitar 5–6 badai. · ⟦Tốc độ gió mạnh nhất khoảng vài chục kilomet / giờ.⟧ → Kecepatan angin terkuat sekitar beberapa puluh kilometer per jam. · ⟦Ngày nào cũng có khoảng 3-4 cơn mưa rào.⟧ → Setiap hari ada sekitar 3–4 kali hujan deras sesaat.
+⟦vừa A vừa B⟧ menyatakan bahwa A dan B terjadi bersamaan: "sekaligus A dan B".
+⟦Bão vừa gây ra các cơn gió mạnh vừa gây ra các cơn mưa lớn.⟧ → Badai sekaligus membawa angin kencang dan hujan lebat. · ⟦Bão vừa gây thiệt hại về đời sống kinh tế vừa gây tổn thất về tính mạng con người.⟧ → Badai sekaligus merugikan kehidupan ekonomi dan merenggut nyawa manusia. · ⟦Bão vừa làm đổ nhà cửa vừa làm đổ cây cối, cột điện.⟧ → Badai sekaligus merobohkan rumah, pohon, dan tiang listrik.
+⟦càng A càng B⟧ berarti "makin A makin B".
+⟦Càng gần tâm bão, gió càng mạnh.⟧ → Makin dekat ke pusat badai, makin kencang anginnya. · ⟦Càng về đêm, trời càng rét.⟧ → Makin larut malam, makin dingin udaranya. · ⟦Bão càng lớn, tác hại càng nhiều.⟧ → Makin besar badainya, makin besar kerusakannya. · ⟦Gió càng to, cây cối đổ càng nhiều.⟧ → Makin kencang anginnya, makin banyak pohon yang tumbang.
+=ja
+文法解説
+⟦khoảng⟧ は正確でない大まかな数を表すときに使い、「約、およそ」という意味です。
+⟦Trung bình hàng năm, Việt Nam có khoảng 5 - 6 cơn bão.⟧ → ベトナムには毎年平均して約5～6個の台風が来る。 · ⟦Tốc độ gió mạnh nhất khoảng vài chục kilomet / giờ.⟧ → 最も強い風の速さはおよそ時速数十キロに達する。 · ⟦Ngày nào cũng có khoảng 3-4 cơn mưa rào.⟧ → 毎日およそ3～4回のにわか雨が降る。
+⟦vừa A vừa B⟧ の形で、AとBの行為が同時に起きていることを表し、「Aしながら（同時に）Bする」という意味です。
+⟦Bão vừa gây ra các cơn gió mạnh vừa gây ra các cơn mưa lớn.⟧ → 台風は強い風を吹かせると同時に大雨を降らせる。 · ⟦Bão vừa gây thiệt hại về đời sống kinh tế vừa gây tổn thất về tính mạng con người.⟧ → 台風は経済生活に被害を与えると同時に人命を奪う。 · ⟦Bão vừa làm đổ nhà cửa vừa làm đổ cây cối, cột điện.⟧ → 台風は家を倒すと同時に木や電柱も倒す。
+⟦càng A càng B⟧ の形で「Aすればするほど、もっとBする」という意味で使われます。
+⟦Càng gần tâm bão, gió càng mạnh.⟧ → 台風の中心に近づくほど、風はますます強くなる。 · ⟦Càng về đêm, trời càng rét.⟧ → 夜が更けるほど、ますます寒くなる。 · ⟦Bão càng lớn, tác hại càng nhiều.⟧ → 台風が大きいほど、被害はますます大きくなる。 · ⟦Gió càng to, cây cối đổ càng nhiều.⟧ → 風が強いほど、倒れる木が多くなる。
+=pl
+Objaśnienia gramatyczne
+⟦khoảng⟧ używa się do wyrażenia przybliżonej liczby: „około, mniej więcej”.
+⟦Trung bình hàng năm, Việt Nam có khoảng 5 - 6 cơn bão.⟧ → Wietnam nawiedza średnio około 5–6 tajfunów rocznie. · ⟦Tốc độ gió mạnh nhất khoảng vài chục kilomet / giờ.⟧ → Najsilniejszy wiatr osiąga prędkość około kilkudziesięciu kilometrów na godzinę. · ⟦Ngày nào cũng có khoảng 3-4 cơn mưa rào.⟧ → Każdego dnia są mniej więcej 3–4 ulewy.
+⟦vừa A vừa B⟧ wyraża, że A i B zachodzą jednocześnie: „zarówno A, jak i B; A i zarazem B”.
+⟦Bão vừa gây ra các cơn gió mạnh vừa gây ra các cơn mưa lớn.⟧ → Tajfun przynosi zarówno silny wiatr, jak i ulewne deszcze. · ⟦Bão vừa gây thiệt hại về đời sống kinh tế vừa gây tổn thất về tính mạng con người.⟧ → Tajfun wyrządza zarówno szkody gospodarcze, jak i straty w ludziach. · ⟦Bão vừa làm đổ nhà cửa vừa làm đổ cây cối, cột điện.⟧ → Tajfun burzy domy, a zarazem przewraca drzewa i słupy energetyczne.
+⟦càng A càng B⟧ znaczy „im bardziej A, tym bardziej B”.
+⟦Càng gần tâm bão, gió càng mạnh.⟧ → Im bliżej oka tajfunu, tym silniejszy wiatr. · ⟦Càng về đêm, trời càng rét.⟧ → Im później w nocy, tym zimniej. · ⟦Bão càng lớn, tác hại càng nhiều.⟧ → Im silniejszy tajfun, tym większe szkody. · ⟦Gió càng to, cây cối đổ càng nhiều.⟧ → Im silniejszy wiatr, tym więcej przewróconych drzew.

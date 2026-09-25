@@ -1,0 +1,191 @@
+@@ pdf-grammar-42dca2667c6ea2f0#0
+=cs
+Klíčový výraz: ⟦phải ~ mới được⟧
+⟦phải + sloveso + mới được⟧ vyjadřuje nutnost nebo povinnost: „musí se ~, je třeba ~“. Je-li podmětem 1. osoba jednotného čísla (já), vyjadřuje, že mluvčí sám tu potřebu cítí, takže jde o rozhodnutí: „musím ~, to budu muset ~“.
+❶ Ⓐ ⟦Anh định làm như thế này, em thấy thế nào?⟧ — Chci to udělat takhle, co myslíš? Ⓑ ⟦Dạ, em thì không sao. Nhưng chúng ta phải hỏi ý kiến của giám đốc trước mới được!⟧ — Mně to nevadí. Ale nejdřív se musíme zeptat ředitele na názor!
+❷ ⟦Để giữ gìn sức khoẻ, mình phải điều chỉnh chế độ ăn uống và tập thể dục đều đặn hơn mới được!⟧ — Abych si udržel zdraví, musím upravit jídelníček a cvičit pravidelněji!
+Výrazy k filmovému průmyslu: ⟦phòng vé⟧ pokladna | ⟦số lượng khán giả⟧ počet diváků | ⟦công nghiệp điện ảnh⟧ filmový průmysl | ⟦kịch bản hay/ kịch bản hấp dẫn⟧ dobrý / poutavý scénář | ⟦phim điện ảnh có doanh thu cao⟧ film s vysokými tržbami
+Procvičování 2 — veďte rozhovor podle vzoru s daným výrazem.
+Vzor (⟦uống thuốc đúng giờ⟧ brát léky včas): Ⓐ ⟦Con không thích uống thuốc, mẹ ơi!⟧ — Mami, nechci brát léky! Ⓑ ⟦Để nhanh khỏi bệnh, con phải uống thuốc đúng giờ mới được!⟧ — Abys byl brzy zdravý, musíš brát léky včas!
+❶ (⟦xuất trình giấy phép⟧ předložit povolení) Ⓐ ⟦Anh làm ơn cho tôi vào đi!⟧ — Pusťte mě prosím dovnitř! Ⓑ ⟦Không được đâu. Anh phải xuất trình giấy phép mới được.⟧ — To nejde. Musíte předložit povolení.
+❷ (⟦bắt đầu làm ngay từ bây giờ⟧ začít hned teď) Ⓐ ⟦Tuần này cô giáo cho nhiều bài tập quá!⟧ — Učitelka nám tento týden dala strašně moc úkolů! Ⓑ ⟦Đúng rồi. Chúng ta phải bắt đầu làm ngay từ bây giờ mới được.⟧ — Přesně. Musíme začít hned teď.
+Rozhovor: Min-ho a Trang si po zhlédnutí vietnamského filmu povídají.
+Trang: ⟦Vừa rồi là một bộ phim Việt Nam đã nhận được giải thưởng điện ảnh quốc tế đấy. Anh thấy phim này thế nào?⟧ — To byl vietnamský film, který získal mezinárodní filmovou cenu. Jak se ti líbil?
+Min-ho: ⟦Hay lắm! Anh chưa bao giờ nghĩ rằng phim Việt Nam sẽ thú vị như vậy!⟧ — Moc! Nikdy by mě nenapadlo, že vietnamské filmy jsou tak zajímavé!
+Trang: ⟦Ngành phim Việt Nam ngày càng phát triển mạnh hơn, vì vậy, hằng năm có rất nhiều phim mới với đề tài đa dạng.⟧ — Vietnamský film se rozvíjí čím dál rychleji, takže každý rok vzniká spousta nových filmů s různorodými tématy.
+Min-ho: ⟦Sau này anh phải quan tâm đến phim Việt Nam mới được!⟧ — Odteď se budu muset o vietnamské filmy zajímat!
+Trang: ⟦Thế thì em sẽ giới thiệu cho anh mỗi tuần một bộ phim Việt Nam hay nhé.⟧ — Tak ti každý týden doporučím jeden dobrý vietnamský film.
+Min-ho: ⟦Tốt quá! Cảm ơn em!⟧ — Skvělé! Děkuju!
+Procvičování — dojem z filmu: ⟦thú vị⟧ (zajímavý) / ⟦tuyệt vời⟧ (skvělý); situace vietnamského filmu: ⟦phát triển mạnh hơn⟧ (rozvíjí se rychleji) / ⟦xuất hiện nhiều kịch bản hay và diễn viên có tài⟧ (objevuje se mnoho dobrých scénářů a talentovaných herců); plán: ⟦quan tâm đến⟧ (zajímat se o) / ⟦thường xuyên xem⟧ (pravidelně sledovat); kolik filmů doporučí: ⟦mỗi tuần một⟧ (jeden týdně) / ⟦nhiều⟧ (hodně).
+Nová slovíčka: ⟦số lượng⟧ počet, množství | ⟦công nghiệp⟧ průmysl | ⟦điện ảnh⟧ film, kinematografie | ⟦bộ⟧ sada; klasifikátor pro díla | ⟦giải thưởng⟧ cena | ⟦hằng năm⟧ každoročně | ⟦giữ gìn⟧ udržovat, chránit | ⟦điều chỉnh⟧ upravit | ⟦chế độ⟧ režim, systém | ⟦đa dạng⟧ rozmanitý | ⟦đều đặn⟧ pravidelně | ⟦xuất trình⟧ předložit
+=zh_cn
+核心表达：⟦phải ~ mới được⟧
+⟦phải + 动词 + mới được⟧ 表示必须如此的必要性或义务，意为“必须……才行”。当行为主体是第一人称单数（我）时，表示自己感到有必要，因此可理解为“决心”的意思：“我得……了”。
+❶ Ⓐ ⟦Anh định làm như thế này, em thấy thế nào?⟧ —— 我打算这样做，你觉得怎么样？ Ⓑ ⟦Dạ, em thì không sao. Nhưng chúng ta phải hỏi ý kiến của giám đốc trước mới được!⟧ —— 我没问题。但我们得先问问经理的意见才行！
+❷ ⟦Để giữ gìn sức khoẻ, mình phải điều chỉnh chế độ ăn uống và tập thể dục đều đặn hơn mới được!⟧ —— 为了保持健康，我得调整饮食，更规律地运动才行！
+与电影产业相关的表达：⟦phòng vé⟧ 票房 | ⟦số lượng khán giả⟧ 观众人数 | ⟦công nghiệp điện ảnh⟧ 电影产业 | ⟦kịch bản hay/ kịch bản hấp dẫn⟧ 好剧本 / 引人入胜的剧本 | ⟦phim điện ảnh có doanh thu cao⟧ 高票房电影
+句型练习2 —— 用所给表达仿照范例对话。
+范例（⟦uống thuốc đúng giờ⟧ 按时吃药）：Ⓐ ⟦Con không thích uống thuốc, mẹ ơi!⟧ —— 妈妈，我不想吃药！ Ⓑ ⟦Để nhanh khỏi bệnh, con phải uống thuốc đúng giờ mới được!⟧ —— 想快点好起来，你得按时吃药才行！
+❶（⟦xuất trình giấy phép⟧ 出示许可证）Ⓐ ⟦Anh làm ơn cho tôi vào đi!⟧ —— 请让我进去吧！ Ⓑ ⟦Không được đâu. Anh phải xuất trình giấy phép mới được.⟧ —— 不行。你得出示许可证才行。
+❷（⟦bắt đầu làm ngay từ bây giờ⟧ 从现在就开始做）Ⓐ ⟦Tuần này cô giáo cho nhiều bài tập quá!⟧ —— 这周老师布置的作业太多了！ Ⓑ ⟦Đúng rồi. Chúng ta phải bắt đầu làm ngay từ bây giờ mới được.⟧ —— 是啊。我们得从现在就开始做才行。
+对话：敏浩和庄看完越南电影后在聊天。
+庄：⟦Vừa rồi là một bộ phim Việt Nam đã nhận được giải thưởng điện ảnh quốc tế đấy. Anh thấy phim này thế nào?⟧ —— 刚才那部是获得过国际电影奖的越南电影哦。你觉得这部电影怎么样？
+敏浩：⟦Hay lắm! Anh chưa bao giờ nghĩ rằng phim Việt Nam sẽ thú vị như vậy!⟧ —— 太好看了！我从没想过越南电影会这么有意思！
+庄：⟦Ngành phim Việt Nam ngày càng phát triển mạnh hơn, vì vậy, hằng năm có rất nhiều phim mới với đề tài đa dạng.⟧ —— 越南电影业发展得越来越快，所以每年都有很多题材多样的新片。
+敏浩：⟦Sau này anh phải quan tâm đến phim Việt Nam mới được!⟧ —— 以后我得多关注越南电影才行！
+庄：⟦Thế thì em sẽ giới thiệu cho anh mỗi tuần một bộ phim Việt Nam hay nhé.⟧ —— 那我每周给你推荐一部好看的越南电影吧。
+敏浩：⟦Tốt quá! Cảm ơn em!⟧ —— 太好了！谢谢你！
+句型练习 —— 观影感受：⟦thú vị⟧（有意思）/ ⟦tuyệt vời⟧（太棒了）；越南电影业情况：⟦phát triển mạnh hơn⟧（发展更快）/ ⟦xuất hiện nhiều kịch bản hay và diễn viên có tài⟧（出现许多好剧本和有才华的演员）；打算：⟦quan tâm đến⟧（关注）/ ⟦thường xuyên xem⟧（经常看）；推荐多少部：⟦mỗi tuần một⟧（每周一部）/ ⟦nhiều⟧（很多）。
+新单词：⟦số lượng⟧ 数量 | ⟦công nghiệp⟧ 工业、产业 | ⟦điện ảnh⟧ 电影 | ⟦bộ⟧ 套；部（作品量词）| ⟦giải thưởng⟧ 奖项 | ⟦hằng năm⟧ 每年 | ⟦giữ gìn⟧ 保持、维护 | ⟦điều chỉnh⟧ 调节、调整 | ⟦chế độ⟧ 制度 | ⟦đa dạng⟧ 多样 | ⟦đều đặn⟧ 规律地、整齐 | ⟦xuất trình⟧ 出示
+=zh
+核心表達：⟦phải ~ mới được⟧
+⟦phải + 動詞 + mới được⟧ 表示必須如此的必要性或義務，意為「必須……才行」。當行為主體是第一人稱單數（我）時，表示自己感到有必要，因此可理解為「決心」的意思：「我得……了」。
+❶ Ⓐ ⟦Anh định làm như thế này, em thấy thế nào?⟧ —— 我打算這樣做，妳覺得怎麼樣？ Ⓑ ⟦Dạ, em thì không sao. Nhưng chúng ta phải hỏi ý kiến của giám đốc trước mới được!⟧ —— 我沒問題。但我們得先問問經理的意見才行！
+❷ ⟦Để giữ gìn sức khoẻ, mình phải điều chỉnh chế độ ăn uống và tập thể dục đều đặn hơn mới được!⟧ —— 為了保持健康，我得調整飲食，更規律地運動才行！
+與電影產業相關的表達：⟦phòng vé⟧ 票房 | ⟦số lượng khán giả⟧ 觀眾人數 | ⟦công nghiệp điện ảnh⟧ 電影產業 | ⟦kịch bản hay/ kịch bản hấp dẫn⟧ 好劇本 / 引人入勝的劇本 | ⟦phim điện ảnh có doanh thu cao⟧ 高票房電影
+句型練習2 —— 用所給表達仿照範例對話。
+範例（⟦uống thuốc đúng giờ⟧ 按時吃藥）：Ⓐ ⟦Con không thích uống thuốc, mẹ ơi!⟧ —— 媽媽，我不想吃藥！ Ⓑ ⟦Để nhanh khỏi bệnh, con phải uống thuốc đúng giờ mới được!⟧ —— 想快點好起來，你得按時吃藥才行！
+❶（⟦xuất trình giấy phép⟧ 出示許可證）Ⓐ ⟦Anh làm ơn cho tôi vào đi!⟧ —— 請讓我進去吧！ Ⓑ ⟦Không được đâu. Anh phải xuất trình giấy phép mới được.⟧ —— 不行。你得出示許可證才行。
+❷（⟦bắt đầu làm ngay từ bây giờ⟧ 從現在就開始做）Ⓐ ⟦Tuần này cô giáo cho nhiều bài tập quá!⟧ —— 這週老師出的作業太多了！ Ⓑ ⟦Đúng rồi. Chúng ta phải bắt đầu làm ngay từ bây giờ mới được.⟧ —— 是啊。我們得從現在就開始寫才行。
+對話：敏浩和莊看完越南電影後在聊天。
+莊：⟦Vừa rồi là một bộ phim Việt Nam đã nhận được giải thưởng điện ảnh quốc tế đấy. Anh thấy phim này thế nào?⟧ —— 剛才那部是得過國際電影獎的越南電影喔。你覺得這部電影怎麼樣？
+敏浩：⟦Hay lắm! Anh chưa bao giờ nghĩ rằng phim Việt Nam sẽ thú vị như vậy!⟧ —— 太好看了！我從沒想過越南電影會這麼有意思！
+莊：⟦Ngành phim Việt Nam ngày càng phát triển mạnh hơn, vì vậy, hằng năm có rất nhiều phim mới với đề tài đa dạng.⟧ —— 越南電影業發展得越來越快，所以每年都有很多題材多樣的新片。
+敏浩：⟦Sau này anh phải quan tâm đến phim Việt Nam mới được!⟧ —— 以後我得多關注越南電影才行！
+莊：⟦Thế thì em sẽ giới thiệu cho anh mỗi tuần một bộ phim Việt Nam hay nhé.⟧ —— 那我每週推薦你一部好看的越南電影吧。
+敏浩：⟦Tốt quá! Cảm ơn em!⟧ —— 太好了！謝謝妳！
+句型練習 —— 觀影感受：⟦thú vị⟧（有意思）/ ⟦tuyệt vời⟧（太棒了）；越南電影業情況：⟦phát triển mạnh hơn⟧（發展更快）/ ⟦xuất hiện nhiều kịch bản hay và diễn viên có tài⟧（出現許多好劇本和有才華的演員）；打算：⟦quan tâm đến⟧（關注）/ ⟦thường xuyên xem⟧（經常看）；推薦多少部：⟦mỗi tuần một⟧（每週一部）/ ⟦nhiều⟧（很多）。
+新單字：⟦số lượng⟧ 數量 | ⟦công nghiệp⟧ 工業、產業 | ⟦điện ảnh⟧ 電影 | ⟦bộ⟧ 套；部（作品量詞）| ⟦giải thưởng⟧ 獎項 | ⟦hằng năm⟧ 每年 | ⟦giữ gìn⟧ 保持、維護 | ⟦điều chỉnh⟧ 調節、調整 | ⟦chế độ⟧ 制度 | ⟦đa dạng⟧ 多樣 | ⟦đều đặn⟧ 規律地、整齊 | ⟦xuất trình⟧ 出示
+=en
+Key expression: ⟦phải ~ mới được⟧
+⟦phải + verb + mới được⟧ expresses necessity or obligation: "must ~, have to ~". When the subject is the first person singular (I), it shows that the speaker personally feels the need, so it can be read as a resolution: "I really must ~ / I'd better ~".
+❶ Ⓐ ⟦Anh định làm như thế này, em thấy thế nào?⟧ — I'm planning to do it like this. What do you think? Ⓑ ⟦Dạ, em thì không sao. Nhưng chúng ta phải hỏi ý kiến của giám đốc trước mới được!⟧ — It's fine with me. But we have to ask the director's opinion first!
+❷ ⟦Để giữ gìn sức khoẻ, mình phải điều chỉnh chế độ ăn uống và tập thể dục đều đặn hơn mới được!⟧ — To stay healthy, I really must adjust my diet and exercise more regularly!
+Expressions about the film industry: ⟦phòng vé⟧ box office | ⟦số lượng khán giả⟧ number of viewers | ⟦công nghiệp điện ảnh⟧ film industry | ⟦kịch bản hay/ kịch bản hấp dẫn⟧ good / gripping script | ⟦phim điện ảnh có doanh thu cao⟧ high-grossing film
+Pattern practice 2 — talk as in the model using the given expression.
+Model (⟦uống thuốc đúng giờ⟧ take medicine on time): Ⓐ ⟦Con không thích uống thuốc, mẹ ơi!⟧ — Mum, I don't want to take my medicine! Ⓑ ⟦Để nhanh khỏi bệnh, con phải uống thuốc đúng giờ mới được!⟧ — If you want to get better quickly, you have to take it on time!
+❶ (⟦xuất trình giấy phép⟧ show a permit) Ⓐ ⟦Anh làm ơn cho tôi vào đi!⟧ — Please let me in! Ⓑ ⟦Không được đâu. Anh phải xuất trình giấy phép mới được.⟧ — I can't. You have to show a permit.
+❷ (⟦bắt đầu làm ngay từ bây giờ⟧ start right now) Ⓐ ⟦Tuần này cô giáo cho nhiều bài tập quá!⟧ — The teacher gave us so much homework this week! Ⓑ ⟦Đúng rồi. Chúng ta phải bắt đầu làm ngay từ bây giờ mới được.⟧ — That's right. We'd better start right now.
+Dialogue: Min-ho and Trang are talking after watching a Vietnamese film.
+Trang: ⟦Vừa rồi là một bộ phim Việt Nam đã nhận được giải thưởng điện ảnh quốc tế đấy. Anh thấy phim này thế nào?⟧ — That was a Vietnamese film that won an international film award. What did you think of it?
+Min-ho: ⟦Hay lắm! Anh chưa bao giờ nghĩ rằng phim Việt Nam sẽ thú vị như vậy!⟧ — It was great! I never thought Vietnamese films would be so interesting!
+Trang: ⟦Ngành phim Việt Nam ngày càng phát triển mạnh hơn, vì vậy, hằng năm có rất nhiều phim mới với đề tài đa dạng.⟧ — Vietnamese cinema is developing more and more strongly, so every year there are lots of new films on all kinds of subjects.
+Min-ho: ⟦Sau này anh phải quan tâm đến phim Việt Nam mới được!⟧ — From now on I really must pay attention to Vietnamese films!
+Trang: ⟦Thế thì em sẽ giới thiệu cho anh mỗi tuần một bộ phim Việt Nam hay nhé.⟧ — Then I'll recommend you a good Vietnamese film every week.
+Min-ho: ⟦Tốt quá! Cảm ơn em!⟧ — Great! Thank you!
+Pattern practice — impression of the film: ⟦thú vị⟧ (interesting) / ⟦tuyệt vời⟧ (wonderful); state of Vietnamese cinema: ⟦phát triển mạnh hơn⟧ (developing more strongly) / ⟦xuất hiện nhiều kịch bản hay và diễn viên có tài⟧ (many good scripts and talented actors appearing); plan: ⟦quan tâm đến⟧ (pay attention to) / ⟦thường xuyên xem⟧ (watch regularly); number of films to recommend: ⟦mỗi tuần một⟧ (one a week) / ⟦nhiều⟧ (many).
+New words: ⟦số lượng⟧ number, quantity | ⟦công nghiệp⟧ industry | ⟦điện ảnh⟧ cinema, film | ⟦bộ⟧ set; classifier for works | ⟦giải thưởng⟧ award, prize | ⟦hằng năm⟧ every year | ⟦giữ gìn⟧ to maintain, preserve | ⟦điều chỉnh⟧ to adjust | ⟦chế độ⟧ regime, system | ⟦đa dạng⟧ diverse | ⟦đều đặn⟧ regularly, evenly | ⟦xuất trình⟧ to present, show
+=fr
+Expression clé : ⟦phải ~ mới được⟧
+⟦phải + verbe + mới được⟧ exprime une nécessité ou une obligation : « il faut ~, on doit ~ ». Quand le sujet est la 1re personne du singulier (je), il exprime que le locuteur en ressent lui-même le besoin, d'où un sens de résolution : « il faut vraiment que je ~ ».
+❶ Ⓐ ⟦Anh định làm như thế này, em thấy thế nào?⟧ — Je compte faire comme ça, qu'en penses-tu ? Ⓑ ⟦Dạ, em thì không sao. Nhưng chúng ta phải hỏi ý kiến của giám đốc trước mới được!⟧ — Pour moi, ça va. Mais il faut d'abord demander l'avis du directeur !
+❷ ⟦Để giữ gìn sức khoẻ, mình phải điều chỉnh chế độ ăn uống và tập thể dục đều đặn hơn mới được!⟧ — Pour rester en bonne santé, il faut vraiment que je revoie mon alimentation et que je fasse du sport plus régulièrement !
+Expressions liées à l'industrie du cinéma : ⟦phòng vé⟧ guichet, box-office | ⟦số lượng khán giả⟧ nombre de spectateurs | ⟦công nghiệp điện ảnh⟧ industrie cinématographique | ⟦kịch bản hay/ kịch bản hấp dẫn⟧ bon scénario / scénario captivant | ⟦phim điện ảnh có doanh thu cao⟧ film à grosses recettes
+Exercice 2 — dialoguez comme dans le modèle avec l'expression donnée.
+Modèle (⟦uống thuốc đúng giờ⟧ prendre ses médicaments à l'heure) : Ⓐ ⟦Con không thích uống thuốc, mẹ ơi!⟧ — Maman, je ne veux pas prendre mes médicaments ! Ⓑ ⟦Để nhanh khỏi bệnh, con phải uống thuốc đúng giờ mới được!⟧ — Pour guérir vite, tu dois les prendre à l'heure !
+❶ (⟦xuất trình giấy phép⟧ présenter une autorisation) Ⓐ ⟦Anh làm ơn cho tôi vào đi!⟧ — Laissez-moi entrer, s'il vous plaît ! Ⓑ ⟦Không được đâu. Anh phải xuất trình giấy phép mới được.⟧ — Impossible. Vous devez présenter une autorisation.
+❷ (⟦bắt đầu làm ngay từ bây giờ⟧ commencer dès maintenant) Ⓐ ⟦Tuần này cô giáo cho nhiều bài tập quá!⟧ — La maîtresse nous a donné beaucoup trop de devoirs cette semaine ! Ⓑ ⟦Đúng rồi. Chúng ta phải bắt đầu làm ngay từ bây giờ mới được.⟧ — C'est vrai. Il faut qu'on commence dès maintenant.
+Dialogue : Min-ho et Trang discutent après avoir vu un film vietnamien.
+Trang : ⟦Vừa rồi là một bộ phim Việt Nam đã nhận được giải thưởng điện ảnh quốc tế đấy. Anh thấy phim này thế nào?⟧ — C'était un film vietnamien primé dans un festival international. Tu l'as trouvé comment ?
+Min-ho : ⟦Hay lắm! Anh chưa bao giờ nghĩ rằng phim Việt Nam sẽ thú vị như vậy!⟧ — Excellent ! Je n'aurais jamais cru que le cinéma vietnamien était aussi intéressant !
+Trang : ⟦Ngành phim Việt Nam ngày càng phát triển mạnh hơn, vì vậy, hằng năm có rất nhiều phim mới với đề tài đa dạng.⟧ — Le cinéma vietnamien se développe de plus en plus, donc chaque année il y a beaucoup de nouveaux films aux sujets variés.
+Min-ho : ⟦Sau này anh phải quan tâm đến phim Việt Nam mới được!⟧ — Désormais, il faut vraiment que je m'intéresse au cinéma vietnamien !
+Trang : ⟦Thế thì em sẽ giới thiệu cho anh mỗi tuần một bộ phim Việt Nam hay nhé.⟧ — Alors je te recommanderai un bon film vietnamien chaque semaine.
+Min-ho : ⟦Tốt quá! Cảm ơn em!⟧ — Super ! Merci !
+Exercices — impression : ⟦thú vị⟧ (intéressant) / ⟦tuyệt vời⟧ (formidable) ; état du cinéma vietnamien : ⟦phát triển mạnh hơn⟧ (se développe davantage) / ⟦xuất hiện nhiều kịch bản hay và diễn viên có tài⟧ (beaucoup de bons scénarios et d'acteurs talentueux) ; projet : ⟦quan tâm đến⟧ (s'intéresser à) / ⟦thường xuyên xem⟧ (regarder régulièrement) ; nombre de films recommandés : ⟦mỗi tuần một⟧ (un par semaine) / ⟦nhiều⟧ (beaucoup).
+Nouveaux mots : ⟦số lượng⟧ nombre, quantité | ⟦công nghiệp⟧ industrie | ⟦điện ảnh⟧ cinéma | ⟦bộ⟧ ensemble ; classificateur des œuvres | ⟦giải thưởng⟧ prix, récompense | ⟦hằng năm⟧ chaque année | ⟦giữ gìn⟧ préserver | ⟦điều chỉnh⟧ ajuster | ⟦chế độ⟧ régime, système | ⟦đa dạng⟧ varié | ⟦đều đặn⟧ régulièrement | ⟦xuất trình⟧ présenter (un document)
+=de
+Schlüsselausdruck: ⟦phải ~ mới được⟧
+⟦phải + Verb + mới được⟧ drückt Notwendigkeit oder Pflicht aus: „man muss ~“. Ist das Subjekt die 1. Person Singular (ich), zeigt es, dass der Sprecher selbst die Notwendigkeit spürt – also eine Art Entschluss: „ich muss unbedingt ~“.
+❶ Ⓐ ⟦Anh định làm như thế này, em thấy thế nào?⟧ — Ich will es so machen, was meinst du? Ⓑ ⟦Dạ, em thì không sao. Nhưng chúng ta phải hỏi ý kiến của giám đốc trước mới được!⟧ — Für mich ist das okay. Aber wir müssen zuerst den Direktor fragen!
+❷ ⟦Để giữ gìn sức khoẻ, mình phải điều chỉnh chế độ ăn uống và tập thể dục đều đặn hơn mới được!⟧ — Um gesund zu bleiben, muss ich unbedingt meine Ernährung umstellen und regelmäßiger Sport treiben!
+Ausdrücke zur Filmindustrie: ⟦phòng vé⟧ Kinokasse | ⟦số lượng khán giả⟧ Zuschauerzahl | ⟦công nghiệp điện ảnh⟧ Filmindustrie | ⟦kịch bản hay/ kịch bản hấp dẫn⟧ gutes / fesselndes Drehbuch | ⟦phim điện ảnh có doanh thu cao⟧ Kassenschlager
+Übung 2 — wie im Muster mit dem vorgegebenen Ausdruck sprechen.
+Muster (⟦uống thuốc đúng giờ⟧ Medizin pünktlich nehmen): Ⓐ ⟦Con không thích uống thuốc, mẹ ơi!⟧ — Mama, ich will die Medizin nicht nehmen! Ⓑ ⟦Để nhanh khỏi bệnh, con phải uống thuốc đúng giờ mới được!⟧ — Damit du schnell gesund wirst, musst du sie pünktlich nehmen!
+❶ (⟦xuất trình giấy phép⟧ Genehmigung vorzeigen) Ⓐ ⟦Anh làm ơn cho tôi vào đi!⟧ — Lassen Sie mich bitte rein! Ⓑ ⟦Không được đâu. Anh phải xuất trình giấy phép mới được.⟧ — Das geht nicht. Sie müssen eine Genehmigung vorzeigen.
+❷ (⟦bắt đầu làm ngay từ bây giờ⟧ sofort anfangen) Ⓐ ⟦Tuần này cô giáo cho nhiều bài tập quá!⟧ — Die Lehrerin hat uns diese Woche so viele Hausaufgaben gegeben! Ⓑ ⟦Đúng rồi. Chúng ta phải bắt đầu làm ngay từ bây giờ mới được.⟧ — Stimmt. Wir müssen gleich jetzt anfangen.
+Dialog: Min-ho und Trang unterhalten sich, nachdem sie einen vietnamesischen Film gesehen haben.
+Trang: ⟦Vừa rồi là một bộ phim Việt Nam đã nhận được giải thưởng điện ảnh quốc tế đấy. Anh thấy phim này thế nào?⟧ — Das war ein vietnamesischer Film, der einen internationalen Filmpreis gewonnen hat. Wie fandest du ihn?
+Min-ho: ⟦Hay lắm! Anh chưa bao giờ nghĩ rằng phim Việt Nam sẽ thú vị như vậy!⟧ — Sehr gut! Ich hätte nie gedacht, dass vietnamesische Filme so spannend sind!
+Trang: ⟦Ngành phim Việt Nam ngày càng phát triển mạnh hơn, vì vậy, hằng năm có rất nhiều phim mới với đề tài đa dạng.⟧ — Der vietnamesische Film entwickelt sich immer stärker, deshalb gibt es jedes Jahr viele neue Filme mit vielfältigen Themen.
+Min-ho: ⟦Sau này anh phải quan tâm đến phim Việt Nam mới được!⟧ — Ab jetzt muss ich mich unbedingt für vietnamesische Filme interessieren!
+Trang: ⟦Thế thì em sẽ giới thiệu cho anh mỗi tuần một bộ phim Việt Nam hay nhé.⟧ — Dann empfehle ich dir jede Woche einen guten vietnamesischen Film.
+Min-ho: ⟦Tốt quá! Cảm ơn em!⟧ — Super! Danke!
+Satzmusterübung — Eindruck: ⟦thú vị⟧ (interessant) / ⟦tuyệt vời⟧ (großartig); Lage des vietnamesischen Films: ⟦phát triển mạnh hơn⟧ (entwickelt sich stärker) / ⟦xuất hiện nhiều kịch bản hay và diễn viên có tài⟧ (viele gute Drehbücher und talentierte Schauspieler); Vorhaben: ⟦quan tâm đến⟧ (sich interessieren für) / ⟦thường xuyên xem⟧ (regelmäßig schauen); Zahl der Empfehlungen: ⟦mỗi tuần một⟧ (einen pro Woche) / ⟦nhiều⟧ (viele).
+Neue Wörter: ⟦số lượng⟧ Anzahl, Menge | ⟦công nghiệp⟧ Industrie | ⟦điện ảnh⟧ Film, Kino | ⟦bộ⟧ Satz; Klassifikator für Werke | ⟦giải thưởng⟧ Preis, Auszeichnung | ⟦hằng năm⟧ jährlich | ⟦giữ gìn⟧ bewahren, erhalten | ⟦điều chỉnh⟧ anpassen, regulieren | ⟦chế độ⟧ System, Regime | ⟦đa dạng⟧ vielfältig | ⟦đều đặn⟧ regelmäßig | ⟦xuất trình⟧ vorzeigen
+=hu
+Kulcskifejezés: ⟦phải ~ mới được⟧
+A ⟦phải + ige + mới được⟧ szükségességet vagy kötelességet fejez ki: „~ kell, muszáj ~”. Ha az alany egyes szám első személy (én), azt jelzi, hogy a beszélő maga érzi ennek szükségét, így elhatározásként értelmezhető: „muszáj lesz ~”.
+❶ Ⓐ ⟦Anh định làm như thế này, em thấy thế nào?⟧ — Így akarom csinálni, mit szólsz hozzá? Ⓑ ⟦Dạ, em thì không sao. Nhưng chúng ta phải hỏi ý kiến của giám đốc trước mới được!⟧ — Nekem rendben van. De előbb meg kell kérdeznünk az igazgató véleményét!
+❷ ⟦Để giữ gìn sức khoẻ, mình phải điều chỉnh chế độ ăn uống và tập thể dục đều đặn hơn mới được!⟧ — Hogy egészséges maradjak, muszáj átállítanom az étrendemet és rendszeresebben sportolnom!
+Filmiparral kapcsolatos kifejezések: ⟦phòng vé⟧ jegypénztár | ⟦số lượng khán giả⟧ nézőszám | ⟦công nghiệp điện ảnh⟧ filmipar | ⟦kịch bản hay/ kịch bản hấp dẫn⟧ jó / lebilincselő forgatókönyv | ⟦phim điện ảnh có doanh thu cao⟧ nagy bevételű film
+2. gyakorlat — beszélgessen a minta szerint a megadott kifejezéssel.
+Minta (⟦uống thuốc đúng giờ⟧ időben bevenni a gyógyszert): Ⓐ ⟦Con không thích uống thuốc, mẹ ơi!⟧ — Anya, nem akarom bevenni a gyógyszert! Ⓑ ⟦Để nhanh khỏi bệnh, con phải uống thuốc đúng giờ mới được!⟧ — Ha hamar meg akarsz gyógyulni, időben be kell venned!
+❶ (⟦xuất trình giấy phép⟧ engedélyt felmutatni) Ⓐ ⟦Anh làm ơn cho tôi vào đi!⟧ — Kérem, engedjen be! Ⓑ ⟦Không được đâu. Anh phải xuất trình giấy phép mới được.⟧ — Nem lehet. Fel kell mutatnia az engedélyt.
+❷ (⟦bắt đầu làm ngay từ bây giờ⟧ azonnal elkezdeni) Ⓐ ⟦Tuần này cô giáo cho nhiều bài tập quá!⟧ — A tanárnő nagyon sok házit adott a héten! Ⓑ ⟦Đúng rồi. Chúng ta phải bắt đầu làm ngay từ bây giờ mới được.⟧ — Így van. Muszáj most rögtön elkezdenünk.
+Párbeszéd: Min-ho és Trang egy vietnami film megnézése után beszélgetnek.
+Trang: ⟦Vừa rồi là một bộ phim Việt Nam đã nhận được giải thưởng điện ảnh quốc tế đấy. Anh thấy phim này thế nào?⟧ — Ez egy nemzetközi filmdíjat nyert vietnami film volt. Hogy tetszett?
+Min-ho: ⟦Hay lắm! Anh chưa bao giờ nghĩ rằng phim Việt Nam sẽ thú vị như vậy!⟧ — Nagyon jó volt! Sosem gondoltam volna, hogy a vietnami filmek ilyen érdekesek!
+Trang: ⟦Ngành phim Việt Nam ngày càng phát triển mạnh hơn, vì vậy, hằng năm có rất nhiều phim mới với đề tài đa dạng.⟧ — A vietnami filmipar egyre erőteljesebben fejlődik, ezért minden évben sok új, sokféle témájú film készül.
+Min-ho: ⟦Sau này anh phải quan tâm đến phim Việt Nam mới được!⟧ — Ezentúl muszáj lesz jobban figyelnem a vietnami filmekre!
+Trang: ⟦Thế thì em sẽ giới thiệu cho anh mỗi tuần một bộ phim Việt Nam hay nhé.⟧ — Akkor minden héten ajánlok neked egy jó vietnami filmet.
+Min-ho: ⟦Tốt quá! Cảm ơn em!⟧ — Nagyszerű! Köszönöm!
+Mintagyakorlat — benyomás: ⟦thú vị⟧ (érdekes) / ⟦tuyệt vời⟧ (nagyszerű); a vietnami film helyzete: ⟦phát triển mạnh hơn⟧ (erőteljesebben fejlődik) / ⟦xuất hiện nhiều kịch bản hay và diễn viên có tài⟧ (sok jó forgatókönyv és tehetséges színész jelenik meg); terv: ⟦quan tâm đến⟧ (érdeklődni iránta) / ⟦thường xuyên xem⟧ (rendszeresen nézni); hány filmet ajánl: ⟦mỗi tuần một⟧ (hetente egyet) / ⟦nhiều⟧ (sokat).
+Új szavak: ⟦số lượng⟧ szám, mennyiség | ⟦công nghiệp⟧ ipar | ⟦điện ảnh⟧ film, filmművészet | ⟦bộ⟧ készlet; művek osztályozószava | ⟦giải thưởng⟧ díj | ⟦hằng năm⟧ évente | ⟦giữ gìn⟧ megőrizni | ⟦điều chỉnh⟧ szabályozni, módosítani | ⟦chế độ⟧ rendszer, rend | ⟦đa dạng⟧ sokféle | ⟦đều đặn⟧ rendszeresen | ⟦xuất trình⟧ felmutatni
+=id
+Ungkapan kunci: ⟦phải ~ mới được⟧
+⟦phải + verba + mới được⟧ menyatakan keharusan atau kewajiban: "harus ~ baru bisa". Jika pelakunya orang pertama tunggal (saya), ungkapan ini menunjukkan bahwa pembicara sendiri merasa perlu, sehingga bermakna tekad: "saya harus ~".
+❶ Ⓐ ⟦Anh định làm như thế này, em thấy thế nào?⟧ — Aku berencana melakukannya seperti ini, bagaimana menurutmu? Ⓑ ⟦Dạ, em thì không sao. Nhưng chúng ta phải hỏi ý kiến của giám đốc trước mới được!⟧ — Bagi saya tidak apa-apa. Tetapi kita harus menanyakan pendapat direktur dulu!
+❷ ⟦Để giữ gìn sức khoẻ, mình phải điều chỉnh chế độ ăn uống và tập thể dục đều đặn hơn mới được!⟧ — Untuk menjaga kesehatan, aku harus mengatur pola makan dan berolahraga lebih teratur!
+Ungkapan tentang industri film: ⟦phòng vé⟧ loket tiket | ⟦số lượng khán giả⟧ jumlah penonton | ⟦công nghiệp điện ảnh⟧ industri perfilman | ⟦kịch bản hay/ kịch bản hấp dẫn⟧ naskah bagus / naskah menarik | ⟦phim điện ảnh có doanh thu cao⟧ film dengan pendapatan tinggi
+Latihan pola 2 — bercakaplah seperti contoh dengan ungkapan yang diberikan.
+Contoh (⟦uống thuốc đúng giờ⟧ minum obat tepat waktu): Ⓐ ⟦Con không thích uống thuốc, mẹ ơi!⟧ — Ibu, aku tidak mau minum obat! Ⓑ ⟦Để nhanh khỏi bệnh, con phải uống thuốc đúng giờ mới được!⟧ — Supaya cepat sembuh, kamu harus minum obat tepat waktu!
+❶ (⟦xuất trình giấy phép⟧ menunjukkan izin) Ⓐ ⟦Anh làm ơn cho tôi vào đi!⟧ — Tolong biarkan saya masuk! Ⓑ ⟦Không được đâu. Anh phải xuất trình giấy phép mới được.⟧ — Tidak bisa. Anda harus menunjukkan surat izin.
+❷ (⟦bắt đầu làm ngay từ bây giờ⟧ mulai mengerjakan sekarang juga) Ⓐ ⟦Tuần này cô giáo cho nhiều bài tập quá!⟧ — Minggu ini guru memberi banyak sekali PR! Ⓑ ⟦Đúng rồi. Chúng ta phải bắt đầu làm ngay từ bây giờ mới được.⟧ — Betul. Kita harus mulai mengerjakannya sekarang juga.
+Percakapan: Min-ho dan Trang mengobrol setelah menonton film Vietnam.
+Trang: ⟦Vừa rồi là một bộ phim Việt Nam đã nhận được giải thưởng điện ảnh quốc tế đấy. Anh thấy phim này thế nào?⟧ — Tadi itu film Vietnam yang pernah meraih penghargaan film internasional, lho. Bagaimana menurut Kakak?
+Min-ho: ⟦Hay lắm! Anh chưa bao giờ nghĩ rằng phim Việt Nam sẽ thú vị như vậy!⟧ — Bagus sekali! Aku tidak pernah menyangka film Vietnam semenarik itu!
+Trang: ⟦Ngành phim Việt Nam ngày càng phát triển mạnh hơn, vì vậy, hằng năm có rất nhiều phim mới với đề tài đa dạng.⟧ — Perfilman Vietnam makin berkembang pesat, jadi setiap tahun ada banyak film baru dengan tema yang beragam.
+Min-ho: ⟦Sau này anh phải quan tâm đến phim Việt Nam mới được!⟧ — Mulai sekarang aku harus lebih memperhatikan film Vietnam!
+Trang: ⟦Thế thì em sẽ giới thiệu cho anh mỗi tuần một bộ phim Việt Nam hay nhé.⟧ — Kalau begitu, setiap minggu aku akan merekomendasikan satu film Vietnam yang bagus.
+Min-ho: ⟦Tốt quá! Cảm ơn em!⟧ — Bagus sekali! Terima kasih!
+Latihan pola — kesan menonton: ⟦thú vị⟧ (menarik) / ⟦tuyệt vời⟧ (luar biasa); keadaan perfilman Vietnam: ⟦phát triển mạnh hơn⟧ (berkembang lebih pesat) / ⟦xuất hiện nhiều kịch bản hay và diễn viên có tài⟧ (muncul banyak naskah bagus dan aktor berbakat); rencana: ⟦quan tâm đến⟧ (memperhatikan) / ⟦thường xuyên xem⟧ (sering menonton); jumlah film yang direkomendasikan: ⟦mỗi tuần một⟧ (satu per minggu) / ⟦nhiều⟧ (banyak).
+Kosakata baru: ⟦số lượng⟧ jumlah | ⟦công nghiệp⟧ industri | ⟦điện ảnh⟧ perfilman | ⟦bộ⟧ set; kata penggolong untuk karya | ⟦giải thưởng⟧ penghargaan, hadiah | ⟦hằng năm⟧ setiap tahun | ⟦giữ gìn⟧ menjaga | ⟦điều chỉnh⟧ mengatur, menyesuaikan | ⟦chế độ⟧ sistem, pola | ⟦đa dạng⟧ beragam | ⟦đều đặn⟧ teratur | ⟦xuất trình⟧ menunjukkan
+=ja
+核心表現：⟦phải ~ mới được⟧
+⟦phải + 動詞 + mới được⟧ は必ずそうする必要や義務があることを表し、「～しなければならない」という意味です。行為の主体が一人称単数（私）のときは「自らその必要性を感じている」ことを表すため、「～しなくちゃ / ～しよう」という「決心」の意味にもなります。
+❶ Ⓐ ⟦Anh định làm như thế này, em thấy thế nào?⟧ — こうしようと思うんだけど、君はどう思う？ Ⓑ ⟦Dạ, em thì không sao. Nhưng chúng ta phải hỏi ý kiến của giám đốc trước mới được!⟧ — 私は構いません。でも、まず社長の意見を聞かなければなりません！
+❷ ⟦Để giữ gìn sức khoẻ, mình phải điều chỉnh chế độ ăn uống và tập thể dục đều đặn hơn mới được!⟧ — 健康を守るために、食生活を調整して、もっと規則的に運動しなくちゃ！
+映画産業に関する表現：⟦phòng vé⟧ チケット売り場、興行 | ⟦số lượng khán giả⟧ 観客数 | ⟦công nghiệp điện ảnh⟧ 映画産業 | ⟦kịch bản hay/ kịch bản hấp dẫn⟧ 良い脚本 / 魅力的な脚本 | ⟦phim điện ảnh có doanh thu cao⟧ 興行収入の高い映画
+文型練習2 — 与えられた表現を使って例のように会話してみましょう。
+例（⟦uống thuốc đúng giờ⟧ 時間通りに薬を飲む）：Ⓐ ⟦Con không thích uống thuốc, mẹ ơi!⟧ — お母さん、薬を飲みたくない！ Ⓑ ⟦Để nhanh khỏi bệnh, con phải uống thuốc đúng giờ mới được!⟧ — 早く治るには、時間通りに薬を飲まなきゃだめよ！
+❶（⟦xuất trình giấy phép⟧ 許可証を提示する）Ⓐ ⟦Anh làm ơn cho tôi vào đi!⟧ — どうか中に入れてください！ Ⓑ ⟦Không được đâu. Anh phải xuất trình giấy phép mới được.⟧ — だめです。許可証を提示しなければなりません。
+❷（⟦bắt đầu làm ngay từ bây giờ⟧ 今すぐ始める）Ⓐ ⟦Tuần này cô giáo cho nhiều bài tập quá!⟧ — 今週は先生が宿題をたくさん出しすぎ！ Ⓑ ⟦Đúng rồi. Chúng ta phải bắt đầu làm ngay từ bây giờ mới được.⟧ — そうだね。今すぐ始めなきゃ。
+会話：ミンホとチャンがベトナム映画を見た後で話しています。
+チャン：⟦Vừa rồi là một bộ phim Việt Nam đã nhận được giải thưởng điện ảnh quốc tế đấy. Anh thấy phim này thế nào?⟧ — 今のは国際映画賞を受賞したベトナム映画なんですよ。この映画、どうでしたか。
+ミンホ：⟦Hay lắm! Anh chưa bao giờ nghĩ rằng phim Việt Nam sẽ thú vị như vậy!⟧ — すごく良かった！ベトナム映画がこんなに面白いなんて思ってもみなかったよ！
+チャン：⟦Ngành phim Việt Nam ngày càng phát triển mạnh hơn, vì vậy, hằng năm có rất nhiều phim mới với đề tài đa dạng.⟧ — ベトナムの映画界はますます発展していて、毎年さまざまなテーマの新作がたくさん出ています。
+ミンホ：⟦Sau này anh phải quan tâm đến phim Việt Nam mới được!⟧ — これからはベトナム映画に関心を持たなくちゃ！
+チャン：⟦Thế thì em sẽ giới thiệu cho anh mỗi tuần một bộ phim Việt Nam hay nhé.⟧ — じゃあ、毎週一本ずつ面白いベトナム映画を紹介しますね。
+ミンホ：⟦Tốt quá! Cảm ơn em!⟧ — いいね！ありがとう！
+文型練習 — 映画の感想：⟦thú vị⟧（面白い）/ ⟦tuyệt vời⟧（素晴らしい）；ベトナム映画界の状況：⟦phát triển mạnh hơn⟧（さらに発展している）/ ⟦xuất hiện nhiều kịch bản hay và diễn viên có tài⟧（良い脚本と才能ある俳優が多く登場）；予定：⟦quan tâm đến⟧（関心を持つ）/ ⟦thường xuyên xem⟧（よく見る）；紹介する本数：⟦mỗi tuần một⟧（毎週一本）/ ⟦nhiều⟧（たくさん）。
+新出単語：⟦số lượng⟧ 数、数量 | ⟦công nghiệp⟧ 産業 | ⟦điện ảnh⟧ 映画 | ⟦bộ⟧ セット；（作品の）編 | ⟦giải thưởng⟧ 賞 | ⟦hằng năm⟧ 毎年 | ⟦giữ gìn⟧ 守る、維持する | ⟦điều chỉnh⟧ 調節する、調整する | ⟦chế độ⟧ 制度 | ⟦đa dạng⟧ 多様だ | ⟦đều đặn⟧ 規則的に | ⟦xuất trình⟧ 提示する
+=pl
+Kluczowe wyrażenie: ⟦phải ~ mới được⟧
+⟦phải + czasownik + mới được⟧ wyraża konieczność lub obowiązek: „trzeba ~, musi się ~”. Gdy podmiotem jest 1. osoba liczby pojedynczej (ja), oznacza, że mówiący sam odczuwa tę potrzebę, więc można to rozumieć jako postanowienie: „muszę koniecznie ~”.
+❶ Ⓐ ⟦Anh định làm như thế này, em thấy thế nào?⟧ — Chcę to zrobić tak, co o tym myślisz? Ⓑ ⟦Dạ, em thì không sao. Nhưng chúng ta phải hỏi ý kiến của giám đốc trước mới được!⟧ — Mnie to nie przeszkadza. Ale najpierw musimy zapytać dyrektora o zdanie!
+❷ ⟦Để giữ gìn sức khoẻ, mình phải điều chỉnh chế độ ăn uống và tập thể dục đều đặn hơn mới được!⟧ — Żeby dbać o zdrowie, muszę koniecznie zmienić dietę i ćwiczyć regularniej!
+Wyrażenia związane z przemysłem filmowym: ⟦phòng vé⟧ kasa biletowa | ⟦số lượng khán giả⟧ liczba widzów | ⟦công nghiệp điện ảnh⟧ przemysł filmowy | ⟦kịch bản hay/ kịch bản hấp dẫn⟧ dobry / wciągający scenariusz | ⟦phim điện ảnh có doanh thu cao⟧ film o wysokich wpływach
+Ćwiczenie 2 — rozmawiaj jak we wzorze, używając podanego wyrażenia.
+Wzór (⟦uống thuốc đúng giờ⟧ brać leki o czasie): Ⓐ ⟦Con không thích uống thuốc, mẹ ơi!⟧ — Mamo, nie chcę brać leków! Ⓑ ⟦Để nhanh khỏi bệnh, con phải uống thuốc đúng giờ mới được!⟧ — Żeby szybko wyzdrowieć, musisz brać je o czasie!
+❶ (⟦xuất trình giấy phép⟧ okazać zezwolenie) Ⓐ ⟦Anh làm ơn cho tôi vào đi!⟧ — Proszę mnie wpuścić! Ⓑ ⟦Không được đâu. Anh phải xuất trình giấy phép mới được.⟧ — Nie można. Musi pan okazać zezwolenie.
+❷ (⟦bắt đầu làm ngay từ bây giờ⟧ zacząć od razu) Ⓐ ⟦Tuần này cô giáo cho nhiều bài tập quá!⟧ — Pani zadała nam w tym tygodniu strasznie dużo! Ⓑ ⟦Đúng rồi. Chúng ta phải bắt đầu làm ngay từ bây giờ mới được.⟧ — No właśnie. Musimy zacząć od razu.
+Dialog: Min-ho i Trang rozmawiają po obejrzeniu wietnamskiego filmu.
+Trang: ⟦Vừa rồi là một bộ phim Việt Nam đã nhận được giải thưởng điện ảnh quốc tế đấy. Anh thấy phim này thế nào?⟧ — To był wietnamski film nagrodzony na międzynarodowym festiwalu. Jak ci się podobał?
+Min-ho: ⟦Hay lắm! Anh chưa bao giờ nghĩ rằng phim Việt Nam sẽ thú vị như vậy!⟧ — Bardzo! Nigdy bym nie pomyślał, że wietnamskie filmy są takie ciekawe!
+Trang: ⟦Ngành phim Việt Nam ngày càng phát triển mạnh hơn, vì vậy, hằng năm có rất nhiều phim mới với đề tài đa dạng.⟧ — Wietnamska kinematografia rozwija się coraz prężniej, więc co roku powstaje wiele nowych filmów o różnorodnej tematyce.
+Min-ho: ⟦Sau này anh phải quan tâm đến phim Việt Nam mới được!⟧ — Od teraz muszę koniecznie interesować się wietnamskim kinem!
+Trang: ⟦Thế thì em sẽ giới thiệu cho anh mỗi tuần một bộ phim Việt Nam hay nhé.⟧ — To co tydzień polecę ci jeden dobry wietnamski film.
+Min-ho: ⟦Tốt quá! Cảm ơn em!⟧ — Świetnie! Dziękuję!
+Ćwiczenie wzorców — wrażenie: ⟦thú vị⟧ (ciekawy) / ⟦tuyệt vời⟧ (wspaniały); sytuacja kina wietnamskiego: ⟦phát triển mạnh hơn⟧ (rozwija się prężniej) / ⟦xuất hiện nhiều kịch bản hay và diễn viên có tài⟧ (pojawia się wiele dobrych scenariuszy i utalentowanych aktorów); plan: ⟦quan tâm đến⟧ (interesować się) / ⟦thường xuyên xem⟧ (regularnie oglądać); ile filmów polecić: ⟦mỗi tuần một⟧ (jeden tygodniowo) / ⟦nhiều⟧ (dużo).
+Nowe słówka: ⟦số lượng⟧ liczba, ilość | ⟦công nghiệp⟧ przemysł | ⟦điện ảnh⟧ kinematografia | ⟦bộ⟧ komplet; klasyfikator dzieł | ⟦giải thưởng⟧ nagroda | ⟦hằng năm⟧ co roku | ⟦giữ gìn⟧ dbać, chronić | ⟦điều chỉnh⟧ dostosować, regulować | ⟦chế độ⟧ system, reżim | ⟦đa dạng⟧ różnorodny | ⟦đều đặn⟧ regularnie | ⟦xuất trình⟧ okazać

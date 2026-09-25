@@ -1,0 +1,183 @@
+@@ pdf-grammar-d31e6abd452b45cf#0
+=cs
+Gramatický výklad
+⟦không gì⟧ + přísudek + ⟦bằng A⟧, ⟦không ai⟧ + přísudek + ⟦bằng A⟧, ⟦không đâu⟧ + přísudek + ⟦bằng A⟧ znamenají „nic není tak ~ jako A“, „nikdo není tak ~ jako A“, „nikde není tak ~ jako A“.
+⟦Không gì quan trọng bằng việc học.⟧ → Nic není tak důležité jako studium. · ⟦Không đâu thoải mái bằng ở nhà của mình.⟧ → Nikde není tak pohodlně jako doma. · ⟦Không ai yêu quý con cái bằng bố mẹ.⟧ → Nikdo nemiluje děti tak jako rodiče.
+⟦nhân dịp⟧ ~ znamená „u příležitosti ~, při ~“.
+⟦Nhân dịp khai giảng năm học mới, thầy gửi lời chúc sức khỏe đến tất cả các em và gia đình.⟧ → U příležitosti zahájení nového školního roku posílá učitel všem žákům a jejich rodinám přání pevného zdraví. · ⟦Nhân dịp thăm nhà máy, giám đốc Kim đã tặng quà cho các công nhân.⟧ → Při návštěvě továrny předal ředitel Kim dělníkům dárky.
+=zh_cn
+语法解说
+⟦không gì⟧ + 谓语 + ⟦bằng A⟧、⟦không ai⟧ + 谓语 + ⟦bằng A⟧、⟦không đâu⟧ + 谓语 + ⟦bằng A⟧，分别表示“没有什么比A更……”“没有谁比A更……”“没有哪里比A更……”。
+⟦Không gì quan trọng bằng việc học.⟧ → 没有什么比学习更重要。 · ⟦Không đâu thoải mái bằng ở nhà của mình.⟧ → 哪里都不如自己家舒服。 · ⟦Không ai yêu quý con cái bằng bố mẹ.⟧ → 没有人比父母更爱孩子。
+⟦nhân dịp⟧~ 意为“值……之际、趁……”。
+⟦Nhân dịp khai giảng năm học mới, thầy gửi lời chúc sức khỏe đến tất cả các em và gia đình.⟧ → 值新学年开学之际，老师向全体同学及家人致以健康的祝福。 · ⟦Nhân dịp thăm nhà máy, giám đốc Kim đã tặng quà cho các công nhân.⟧ → 趁视察工厂之际，金经理给工人们送了礼物。
+=zh
+文法解說
+⟦không gì⟧ + 謂語 + ⟦bằng A⟧、⟦không ai⟧ + 謂語 + ⟦bằng A⟧、⟦không đâu⟧ + 謂語 + ⟦bằng A⟧，分別表示「沒有什麼比A更……」「沒有誰比A更……」「沒有哪裡比A更……」。
+⟦Không gì quan trọng bằng việc học.⟧ → 沒有什麼比讀書更重要。 · ⟦Không đâu thoải mái bằng ở nhà của mình.⟧ → 哪裡都不如自己家舒服。 · ⟦Không ai yêu quý con cái bằng bố mẹ.⟧ → 沒有人比父母更愛孩子。
+⟦nhân dịp⟧~ 意為「值……之際、趁……」。
+⟦Nhân dịp khai giảng năm học mới, thầy gửi lời chúc sức khỏe đến tất cả các em và gia đình.⟧ → 值新學年開學之際，老師向全體同學及家人致上健康的祝福。 · ⟦Nhân dịp thăm nhà máy, giám đốc Kim đã tặng quà cho các công nhân.⟧ → 趁參觀工廠之際，金經理送禮物給工人們。
+=en
+Grammar notes
+⟦không gì⟧ + predicate + ⟦bằng A⟧, ⟦không ai⟧ + predicate + ⟦bằng A⟧ and ⟦không đâu⟧ + predicate + ⟦bằng A⟧ mean "nothing is as ~ as A", "nobody is as ~ as A" and "nowhere is as ~ as A".
+⟦Không gì quan trọng bằng việc học.⟧ → Nothing is as important as studying. · ⟦Không đâu thoải mái bằng ở nhà của mình.⟧ → There's no place as comfortable as your own home. · ⟦Không ai yêu quý con cái bằng bố mẹ.⟧ → No one loves children as much as their parents do.
+⟦nhân dịp⟧ ~ means "on the occasion of ~, while ~".
+⟦Nhân dịp khai giảng năm học mới, thầy gửi lời chúc sức khỏe đến tất cả các em và gia đình.⟧ → On the occasion of the new school year, the teacher sends good wishes for health to all the pupils and their families. · ⟦Nhân dịp thăm nhà máy, giám đốc Kim đã tặng quà cho các công nhân.⟧ → On his visit to the factory, Director Kim gave presents to the workers.
+=fr
+Notes de grammaire
+⟦không gì⟧ + prédicat + ⟦bằng A⟧, ⟦không ai⟧ + prédicat + ⟦bằng A⟧, ⟦không đâu⟧ + prédicat + ⟦bằng A⟧ signifient « rien n'est aussi ~ que A », « personne n'est aussi ~ que A », « nulle part on n'est aussi ~ que A ».
+⟦Không gì quan trọng bằng việc học.⟧ → Rien n'est aussi important que les études. · ⟦Không đâu thoải mái bằng ở nhà của mình.⟧ → On n'est nulle part aussi bien que chez soi. · ⟦Không ai yêu quý con cái bằng bố mẹ.⟧ → Personne n'aime les enfants autant que leurs parents.
+⟦nhân dịp⟧ ~ signifie « à l'occasion de ~ ».
+⟦Nhân dịp khai giảng năm học mới, thầy gửi lời chúc sức khỏe đến tất cả các em và gia đình.⟧ → À l'occasion de la rentrée, le professeur adresse ses vœux de bonne santé à tous les élèves et à leurs familles. · ⟦Nhân dịp thăm nhà máy, giám đốc Kim đã tặng quà cho các công nhân.⟧ → À l'occasion de sa visite de l'usine, le directeur Kim a offert des cadeaux aux ouvriers.
+=de
+Grammatikerläuterungen
+⟦không gì⟧ + Prädikat + ⟦bằng A⟧, ⟦không ai⟧ + Prädikat + ⟦bằng A⟧ und ⟦không đâu⟧ + Prädikat + ⟦bằng A⟧ bedeuten „nichts ist so ~ wie A“, „niemand ist so ~ wie A“, „nirgends ist es so ~ wie A“.
+⟦Không gì quan trọng bằng việc học.⟧ → Nichts ist so wichtig wie das Lernen. · ⟦Không đâu thoải mái bằng ở nhà của mình.⟧ → Nirgends ist es so gemütlich wie zu Hause. · ⟦Không ai yêu quý con cái bằng bố mẹ.⟧ → Niemand liebt Kinder so sehr wie ihre Eltern.
+⟦nhân dịp⟧ ~ bedeutet „anlässlich ~, bei Gelegenheit ~“.
+⟦Nhân dịp khai giảng năm học mới, thầy gửi lời chúc sức khỏe đến tất cả các em và gia đình.⟧ → Anlässlich des neuen Schuljahres wünscht der Lehrer allen Schülern und ihren Familien Gesundheit. · ⟦Nhân dịp thăm nhà máy, giám đốc Kim đã tặng quà cho các công nhân.⟧ → Beim Besuch der Fabrik überreichte Direktor Kim den Arbeitern Geschenke.
+=hu
+Nyelvtani magyarázat
+A ⟦không gì⟧ + állítmány + ⟦bằng A⟧, ⟦không ai⟧ + állítmány + ⟦bằng A⟧, ⟦không đâu⟧ + állítmány + ⟦bằng A⟧ jelentése „semmi sem olyan ~, mint A”, „senki sem olyan ~, mint A”, „sehol sem olyan ~, mint A”.
+⟦Không gì quan trọng bằng việc học.⟧ → Semmi sem olyan fontos, mint a tanulás. · ⟦Không đâu thoải mái bằng ở nhà của mình.⟧ → Sehol sem olyan kényelmes, mint otthon. · ⟦Không ai yêu quý con cái bằng bố mẹ.⟧ → Senki sem szereti úgy a gyerekeket, mint a szüleik.
+A ⟦nhân dịp⟧ ~ jelentése „~ alkalmából”.
+⟦Nhân dịp khai giảng năm học mới, thầy gửi lời chúc sức khỏe đến tất cả các em và gia đình.⟧ → Az új tanév kezdete alkalmából a tanár jó egészséget kíván minden diáknak és családjának. · ⟦Nhân dịp thăm nhà máy, giám đốc Kim đã tặng quà cho các công nhân.⟧ → A gyárlátogatás alkalmából Kim igazgató ajándékot adott a munkásoknak.
+=id
+Penjelasan tata bahasa
+⟦không gì⟧ + predikat + ⟦bằng A⟧, ⟦không ai⟧ + predikat + ⟦bằng A⟧, ⟦không đâu⟧ + predikat + ⟦bằng A⟧ berarti "tidak ada yang se~ A", "tidak ada orang yang se~ A", "tidak ada tempat yang se~ A".
+⟦Không gì quan trọng bằng việc học.⟧ → Tidak ada yang sepenting belajar. · ⟦Không đâu thoải mái bằng ở nhà của mình.⟧ → Tidak ada tempat senyaman rumah sendiri. · ⟦Không ai yêu quý con cái bằng bố mẹ.⟧ → Tidak ada yang menyayangi anak seperti orang tua.
+⟦nhân dịp⟧ ~ berarti "dalam rangka ~, pada kesempatan ~".
+⟦Nhân dịp khai giảng năm học mới, thầy gửi lời chúc sức khỏe đến tất cả các em và gia đình.⟧ → Dalam rangka pembukaan tahun ajaran baru, guru menyampaikan doa kesehatan kepada seluruh murid dan keluarganya. · ⟦Nhân dịp thăm nhà máy, giám đốc Kim đã tặng quà cho các công nhân.⟧ → Pada kesempatan mengunjungi pabrik, Direktur Kim memberikan hadiah kepada para pekerja.
+=ja
+文法解説
+⟦không gì⟧ + 述語 + ⟦bằng A⟧、⟦không ai⟧ + 述語 + ⟦bằng A⟧、⟦không đâu⟧ + 述語 + ⟦bằng A⟧ の形で使われ、「Aほど～なものはない」「Aほど～な人はいない」「Aほど～な所はない」という意味です。
+⟦Không gì quan trọng bằng việc học.⟧ → 勉強ほど大切なものはない。 · ⟦Không đâu thoải mái bằng ở nhà của mình.⟧ → わが家ほど気楽な所はない。 · ⟦Không ai yêu quý con cái bằng bố mẹ.⟧ → 親ほど子どもを愛する人はいない。
+⟦nhân dịp⟧～ は「～を迎えて、～に際して、～の折に」という意味で使われます。
+⟦Nhân dịp khai giảng năm học mới, thầy gửi lời chúc sức khỏe đến tất cả các em và gia đình.⟧ → 新学期の始業に際し、先生は生徒全員とその家族に健康を祈る言葉を送った。 · ⟦Nhân dịp thăm nhà máy, giám đốc Kim đã tặng quà cho các công nhân.⟧ → 工場訪問の折に、キム社長は従業員たちにプレゼントを贈った。
+=pl
+Objaśnienia gramatyczne
+⟦không gì⟧ + orzeczenie + ⟦bằng A⟧, ⟦không ai⟧ + orzeczenie + ⟦bằng A⟧, ⟦không đâu⟧ + orzeczenie + ⟦bằng A⟧ znaczą „nic nie jest tak ~ jak A”, „nikt nie jest tak ~ jak A”, „nigdzie nie jest tak ~ jak A”.
+⟦Không gì quan trọng bằng việc học.⟧ → Nic nie jest tak ważne jak nauka. · ⟦Không đâu thoải mái bằng ở nhà của mình.⟧ → Nigdzie nie jest tak wygodnie jak we własnym domu. · ⟦Không ai yêu quý con cái bằng bố mẹ.⟧ → Nikt nie kocha dzieci tak jak rodzice.
+⟦nhân dịp⟧ ~ znaczy „z okazji ~, przy okazji ~”.
+⟦Nhân dịp khai giảng năm học mới, thầy gửi lời chúc sức khỏe đến tất cả các em và gia đình.⟧ → Z okazji rozpoczęcia nowego roku szkolnego nauczyciel życzy wszystkim uczniom i ich rodzinom zdrowia. · ⟦Nhân dịp thăm nhà máy, giám đốc Kim đã tặng quà cho các công nhân.⟧ → Przy okazji wizyty w fabryce dyrektor Kim wręczył robotnikom prezenty.
+@@ pdf-grammar-4000cee0aaf1f1b1#0
+=cs
+Gramatický výklad
+⟦tiếc là⟧ znamená „škoda, že ~; bohužel ~“.
+⟦Tiếc là em không về dự lễ cưới của anh chị được.⟧ → Bohužel nemohu přijet na vaši svatbu. · ⟦Hôm qua tôi đến thăm thầy, tiếc là thầy không có ở nhà.⟧ → Včera jsem šel navštívit pana učitele, bohužel nebyl doma. · ⟦Món hải sản trông ngon quá, tiếc là tôi đang ăn kiêng nên không ăn được.⟧ → Mořské plody vypadaly moc lákavě, škoda, že držím dietu a nemohl jsem je jíst.
+⟦nghe nói⟧ ~ se používá, když říkáme něco nejistého: „slyšel jsem, že ~; prý ~“.
+⟦Nghe nói vợ chồng chị Lan sẽ hưởng tuần trăng mật ở Hàn Quốc.⟧ → Prý stráví Lan s manželem líbánky v Koreji. · ⟦Nghe nói ông Ba lại cưới vợ nữa hả?⟧ → Prý se pan Ba znovu oženil, je to pravda? · ⟦Tôi nghe nói giáo viên sắp được tăng lương.⟧ → Slyšel jsem, že učitelům brzy zvýší platy.
+=zh_cn
+语法解说
+⟦tiếc là⟧ 意为“遗憾的是……、可惜……”。
+⟦Tiếc là em không về dự lễ cưới của anh chị được.⟧ → 很遗憾我不能回去参加你们的婚礼。 · ⟦Hôm qua tôi đến thăm thầy, tiếc là thầy không có ở nhà.⟧ → 昨天我去拜访老师，可惜老师不在家。 · ⟦Món hải sản trông ngon quá, tiếc là tôi đang ăn kiêng nên không ăn được.⟧ → 海鲜看起来很好吃，可惜我在节食，没法吃。
+⟦nghe nói⟧~ 用于讲述不确定的内容，意为“听说……”。
+⟦Nghe nói vợ chồng chị Lan sẽ hưởng tuần trăng mật ở Hàn Quốc.⟧ → 听说兰姐夫妇要去韩国度蜜月。 · ⟦Nghe nói ông Ba lại cưới vợ nữa hả?⟧ → 听说巴先生又结婚了，是吗？ · ⟦Tôi nghe nói giáo viên sắp được tăng lương.⟧ → 我听说老师们快要涨工资了。
+=zh
+文法解說
+⟦tiếc là⟧ 意為「遺憾的是……、可惜……」。
+⟦Tiếc là em không về dự lễ cưới của anh chị được.⟧ → 很遺憾我不能回去參加你們的婚禮。 · ⟦Hôm qua tôi đến thăm thầy, tiếc là thầy không có ở nhà.⟧ → 昨天我去拜訪老師，可惜老師不在家。 · ⟦Món hải sản trông ngon quá, tiếc là tôi đang ăn kiêng nên không ăn được.⟧ → 海鮮看起來好好吃，可惜我正在節食，沒辦法吃。
+⟦nghe nói⟧~ 用於講述不確定的內容，意為「聽說……」。
+⟦Nghe nói vợ chồng chị Lan sẽ hưởng tuần trăng mật ở Hàn Quốc.⟧ → 聽說蘭姊夫婦要去韓國度蜜月。 · ⟦Nghe nói ông Ba lại cưới vợ nữa hả?⟧ → 聽說巴先生又結婚了，是嗎？ · ⟦Tôi nghe nói giáo viên sắp được tăng lương.⟧ → 我聽說老師們快要加薪了。
+=en
+Grammar notes
+⟦tiếc là⟧ means "it's a pity that ~, unfortunately ~".
+⟦Tiếc là em không về dự lễ cưới của anh chị được.⟧ → Unfortunately I can't come to your wedding. · ⟦Hôm qua tôi đến thăm thầy, tiếc là thầy không có ở nhà.⟧ → Yesterday I went to visit my teacher, but unfortunately he wasn't at home. · ⟦Món hải sản trông ngon quá, tiếc là tôi đang ăn kiêng nên không ăn được.⟧ → The seafood looked delicious, but sadly I'm on a diet, so I couldn't eat it.
+⟦nghe nói⟧ ~ is used to report something uncertain: "I hear that ~, apparently ~".
+⟦Nghe nói vợ chồng chị Lan sẽ hưởng tuần trăng mật ở Hàn Quốc.⟧ → I hear Lan and her husband are going to Korea for their honeymoon. · ⟦Nghe nói ông Ba lại cưới vợ nữa hả?⟧ → I hear Mr Ba has got married again – is that true? · ⟦Tôi nghe nói giáo viên sắp được tăng lương.⟧ → I've heard teachers are about to get a pay rise.
+=fr
+Notes de grammaire
+⟦tiếc là⟧ signifie « dommage que ~, malheureusement ~ ».
+⟦Tiếc là em không về dự lễ cưới của anh chị được.⟧ → Malheureusement, je ne pourrai pas venir à votre mariage. · ⟦Hôm qua tôi đến thăm thầy, tiếc là thầy không có ở nhà.⟧ → Hier je suis allé rendre visite à mon professeur, malheureusement il n'était pas chez lui. · ⟦Món hải sản trông ngon quá, tiếc là tôi đang ăn kiêng nên không ăn được.⟧ → Les fruits de mer avaient l'air délicieux, dommage que je sois au régime et que je n'aie pas pu en manger.
+⟦nghe nói⟧ ~ sert à rapporter une information incertaine : « j'ai entendu dire que ~, il paraît que ~ ».
+⟦Nghe nói vợ chồng chị Lan sẽ hưởng tuần trăng mật ở Hàn Quốc.⟧ → Il paraît que Lan et son mari vont passer leur lune de miel en Corée. · ⟦Nghe nói ông Ba lại cưới vợ nữa hả?⟧ → Il paraît que M. Ba s'est remarié, c'est vrai ? · ⟦Tôi nghe nói giáo viên sắp được tăng lương.⟧ → J'ai entendu dire que les enseignants allaient bientôt être augmentés.
+=de
+Grammatikerläuterungen
+⟦tiếc là⟧ bedeutet „schade, dass ~; leider ~“.
+⟦Tiếc là em không về dự lễ cưới của anh chị được.⟧ → Leider kann ich nicht zu eurer Hochzeit kommen. · ⟦Hôm qua tôi đến thăm thầy, tiếc là thầy không có ở nhà.⟧ → Gestern wollte ich meinen Lehrer besuchen, leider war er nicht zu Hause. · ⟦Món hải sản trông ngon quá, tiếc là tôi đang ăn kiêng nên không ăn được.⟧ → Die Meeresfrüchte sahen köstlich aus, schade, dass ich auf Diät bin und nichts essen konnte.
+⟦nghe nói⟧ ~ wird verwendet, um Unsicheres wiederzugeben: „ich habe gehört, dass ~; angeblich ~“.
+⟦Nghe nói vợ chồng chị Lan sẽ hưởng tuần trăng mật ở Hàn Quốc.⟧ → Angeblich verbringen Lan und ihr Mann ihre Flitterwochen in Korea. · ⟦Nghe nói ông Ba lại cưới vợ nữa hả?⟧ → Ich habe gehört, Herr Ba hat wieder geheiratet – stimmt das? · ⟦Tôi nghe nói giáo viên sắp được tăng lương.⟧ → Ich habe gehört, dass die Lehrer bald mehr Gehalt bekommen.
+=hu
+Nyelvtani magyarázat
+A ⟦tiếc là⟧ jelentése „kár, hogy ~; sajnos ~”.
+⟦Tiếc là em không về dự lễ cưới của anh chị được.⟧ → Sajnos nem tudok elmenni az esküvőtökre. · ⟦Hôm qua tôi đến thăm thầy, tiếc là thầy không có ở nhà.⟧ → Tegnap meglátogattam a tanáromat, sajnos nem volt otthon. · ⟦Món hải sản trông ngon quá, tiếc là tôi đang ăn kiêng nên không ăn được.⟧ → A tenger gyümölcsei nagyon finomnak tűntek, kár, hogy diétázom, így nem ehettem belőle.
+A ⟦nghe nói⟧ ~ bizonytalan információ közlésére szolgál: „azt hallottam, hogy ~; állítólag ~”.
+⟦Nghe nói vợ chồng chị Lan sẽ hưởng tuần trăng mật ở Hàn Quốc.⟧ → Állítólag Lan és a férje Koreában töltik a nászútjukat. · ⟦Nghe nói ông Ba lại cưới vợ nữa hả?⟧ → Azt hallottam, Ba úr újra megnősült, igaz? · ⟦Tôi nghe nói giáo viên sắp được tăng lương.⟧ → Azt hallottam, hogy a tanárok hamarosan fizetésemelést kapnak.
+=id
+Penjelasan tata bahasa
+⟦tiếc là⟧ berarti "sayang sekali ~, sayangnya ~".
+⟦Tiếc là em không về dự lễ cưới của anh chị được.⟧ → Sayang sekali saya tidak bisa pulang menghadiri pernikahan kalian. · ⟦Hôm qua tôi đến thăm thầy, tiếc là thầy không có ở nhà.⟧ → Kemarin saya berkunjung ke rumah guru, sayangnya beliau tidak ada di rumah. · ⟦Món hải sản trông ngon quá, tiếc là tôi đang ăn kiêng nên không ăn được.⟧ → Hidangan laut itu kelihatan enak sekali, sayangnya saya sedang diet jadi tidak bisa makan.
+⟦nghe nói⟧ ~ dipakai untuk menyampaikan hal yang belum pasti: "kabarnya ~, katanya ~".
+⟦Nghe nói vợ chồng chị Lan sẽ hưởng tuần trăng mật ở Hàn Quốc.⟧ → Kabarnya Kak Lan dan suaminya akan berbulan madu di Korea. · ⟦Nghe nói ông Ba lại cưới vợ nữa hả?⟧ → Katanya Pak Ba menikah lagi, ya? · ⟦Tôi nghe nói giáo viên sắp được tăng lương.⟧ → Saya dengar gaji guru akan segera naik.
+=ja
+文法解説
+⟦tiếc là⟧ は「～は残念だ」「～が惜しい」という意味で使われます。
+⟦Tiếc là em không về dự lễ cưới của anh chị được.⟧ → お二人の結婚式に出席できなくて残念です。 · ⟦Hôm qua tôi đến thăm thầy, tiếc là thầy không có ở nhà.⟧ → 昨日先生を訪ねたが、残念ながら先生はお留守だった。 · ⟦Món hải sản trông ngon quá, tiếc là tôi đang ăn kiêng nên không ăn được.⟧ → 海鮮料理がとてもおいしそうだったが、残念ながらダイエット中で食べられなかった。
+⟦nghe nói⟧～ の形で、確かではない内容を話すときに使い、「聞くところによると」「～だと聞いた」という意味です。
+⟦Nghe nói vợ chồng chị Lan sẽ hưởng tuần trăng mật ở Hàn Quốc.⟧ → ランさん夫婦は韓国へ新婚旅行に行くと聞いた。 · ⟦Nghe nói ông Ba lại cưới vợ nữa hả?⟧ → バーさんがまた結婚したって聞いたけど、本当？ · ⟦Tôi nghe nói giáo viên sắp được tăng lương.⟧ → 先生たちの給料がもうすぐ上がると聞きました。
+=pl
+Objaśnienia gramatyczne
+⟦tiếc là⟧ znaczy „szkoda, że ~; niestety ~”.
+⟦Tiếc là em không về dự lễ cưới của anh chị được.⟧ → Niestety nie mogę przyjechać na wasz ślub. · ⟦Hôm qua tôi đến thăm thầy, tiếc là thầy không có ở nhà.⟧ → Wczoraj poszedłem odwiedzić nauczyciela, niestety nie było go w domu. · ⟦Món hải sản trông ngon quá, tiếc là tôi đang ăn kiêng nên không ăn được.⟧ → Owoce morza wyglądały pysznie, szkoda, że jestem na diecie i nie mogłem ich jeść.
+⟦nghe nói⟧ ~ służy do przekazywania niepewnych informacji: „słyszałem, że ~; podobno ~”.
+⟦Nghe nói vợ chồng chị Lan sẽ hưởng tuần trăng mật ở Hàn Quốc.⟧ → Podobno Lan z mężem spędzą miesiąc miodowy w Korei. · ⟦Nghe nói ông Ba lại cưới vợ nữa hả?⟧ → Słyszałem, że pan Ba znowu się ożenił, to prawda? · ⟦Tôi nghe nói giáo viên sắp được tăng lương.⟧ → Słyszałem, że nauczyciele wkrótce dostaną podwyżkę.
+@@ pdf-grammar-ee57d90cc71cb280#0
+=cs
+Gramatický výklad
+⟦bị⟧ se používá, když mluvčí nebo podmět utrpí negativní či nepříznivý vliv.
+⟦Người không ăn sáng có thể bị nhức đầu, chóng mặt.⟧ → Kdo nesnídá, může mít bolesti hlavy a závratě. · ⟦Người hút thuốc lá có thể bị ho và nhiều bệnh nguy hiểm khác.⟧ → Kuřáci mohou trpět kašlem a mnoha dalšími nebezpečnými nemocemi.
+⟦được⟧ se používá, když mluvčí nebo podmět zažívá pozitivní či příznivý vliv.
+⟦Lan Anh được khen là thông minh và xinh đẹp.⟧ → Lan Anh dostává pochvaly, že je chytrá a hezká. · ⟦Học sinh được ăn sáng đầy đủ sẽ hiểu bài nhanh hơn.⟧ → Žáci, kteří se pořádně nasnídají, rychleji chápou látku.
+=zh_cn
+语法解说
+⟦bị⟧ 用于说话人或主语受到负面、不利影响的情况。
+⟦Người không ăn sáng có thể bị nhức đầu, chóng mặt.⟧ → 不吃早饭的人可能会头痛、头晕。 · ⟦Người hút thuốc lá có thể bị ho và nhiều bệnh nguy hiểm khác.⟧ → 吸烟者可能会咳嗽并患上许多其他危险疾病。
+⟦được⟧ 用于说话人或主语受到正面、有利影响的情况。
+⟦Lan Anh được khen là thông minh và xinh đẹp.⟧ → 兰英被夸聪明又漂亮。 · ⟦Học sinh được ăn sáng đầy đủ sẽ hiểu bài nhanh hơn.⟧ → 早饭吃得好的学生理解课文更快。
+=zh
+文法解說
+⟦bị⟧ 用於說話者或主詞受到負面、不利影響的情況。
+⟦Người không ăn sáng có thể bị nhức đầu, chóng mặt.⟧ → 不吃早餐的人可能會頭痛、頭暈。 · ⟦Người hút thuốc lá có thể bị ho và nhiều bệnh nguy hiểm khác.⟧ → 吸菸者可能會咳嗽並罹患許多其他危險疾病。
+⟦được⟧ 用於說話者或主詞受到正面、有利影響的情況。
+⟦Lan Anh được khen là thông minh và xinh đẹp.⟧ → 蘭英被稱讚聰明又漂亮。 · ⟦Học sinh được ăn sáng đầy đủ sẽ hiểu bài nhanh hơn.⟧ → 早餐吃得好的學生理解課程更快。
+=en
+Grammar notes
+⟦bị⟧ is used when the speaker or subject suffers a negative or unfavourable effect.
+⟦Người không ăn sáng có thể bị nhức đầu, chóng mặt.⟧ → People who skip breakfast may suffer headaches and dizziness. · ⟦Người hút thuốc lá có thể bị ho và nhiều bệnh nguy hiểm khác.⟧ → Smokers may suffer from coughs and many other dangerous diseases.
+⟦được⟧ is used when the speaker or subject receives a positive or favourable effect.
+⟦Lan Anh được khen là thông minh và xinh đẹp.⟧ → Lan Anh is praised for being clever and pretty. · ⟦Học sinh được ăn sáng đầy đủ sẽ hiểu bài nhanh hơn.⟧ → Pupils who get a proper breakfast understand lessons faster.
+=fr
+Notes de grammaire
+⟦bị⟧ s'emploie quand le locuteur ou le sujet subit un effet négatif ou défavorable.
+⟦Người không ăn sáng có thể bị nhức đầu, chóng mặt.⟧ → Les personnes qui ne prennent pas de petit-déjeuner peuvent souffrir de maux de tête et de vertiges. · ⟦Người hút thuốc lá có thể bị ho và nhiều bệnh nguy hiểm khác.⟧ → Les fumeurs peuvent souffrir de toux et de bien d'autres maladies graves.
+⟦được⟧ s'emploie quand le locuteur ou le sujet bénéficie d'un effet positif ou favorable.
+⟦Lan Anh được khen là thông minh và xinh đẹp.⟧ → On complimente Lan Anh pour son intelligence et sa beauté. · ⟦Học sinh được ăn sáng đầy đủ sẽ hiểu bài nhanh hơn.⟧ → Les élèves qui prennent un bon petit-déjeuner comprennent plus vite.
+=de
+Grammatikerläuterungen
+⟦bị⟧ wird verwendet, wenn Sprecher oder Subjekt eine negative oder nachteilige Wirkung erfahren.
+⟦Người không ăn sáng có thể bị nhức đầu, chóng mặt.⟧ → Wer nicht frühstückt, kann Kopfschmerzen und Schwindel bekommen. · ⟦Người hút thuốc lá có thể bị ho và nhiều bệnh nguy hiểm khác.⟧ → Raucher können Husten und viele andere gefährliche Krankheiten bekommen.
+⟦được⟧ wird verwendet, wenn Sprecher oder Subjekt eine positive oder vorteilhafte Wirkung erfahren.
+⟦Lan Anh được khen là thông minh và xinh đẹp.⟧ → Lan Anh wird als klug und hübsch gelobt. · ⟦Học sinh được ăn sáng đầy đủ sẽ hiểu bài nhanh hơn.⟧ → Schüler, die ordentlich frühstücken, verstehen den Stoff schneller.
+=hu
+Nyelvtani magyarázat
+A ⟦bị⟧ akkor használatos, ha a beszélőt vagy az alanyt negatív, kedvezőtlen hatás éri.
+⟦Người không ăn sáng có thể bị nhức đầu, chóng mặt.⟧ → Aki nem reggelizik, fejfájást és szédülést kaphat. · ⟦Người hút thuốc lá có thể bị ho và nhiều bệnh nguy hiểm khác.⟧ → A dohányosok köhöghetnek, és sok más veszélyes betegséget kaphatnak.
+A ⟦được⟧ akkor használatos, ha a beszélőt vagy az alanyt pozitív, kedvező hatás éri.
+⟦Lan Anh được khen là thông minh và xinh đẹp.⟧ → Lan Anh-t okosnak és csinosnak dicsérik. · ⟦Học sinh được ăn sáng đầy đủ sẽ hiểu bài nhanh hơn.⟧ → Azok a diákok, akik rendesen reggeliznek, gyorsabban megértik az anyagot.
+=id
+Penjelasan tata bahasa
+⟦bị⟧ dipakai ketika pembicara atau subjek terkena pengaruh negatif atau merugikan.
+⟦Người không ăn sáng có thể bị nhức đầu, chóng mặt.⟧ → Orang yang tidak sarapan bisa sakit kepala dan pusing. · ⟦Người hút thuốc lá có thể bị ho và nhiều bệnh nguy hiểm khác.⟧ → Perokok bisa terkena batuk dan banyak penyakit berbahaya lainnya.
+⟦được⟧ dipakai ketika pembicara atau subjek mendapat pengaruh positif atau menguntungkan.
+⟦Lan Anh được khen là thông minh và xinh đẹp.⟧ → Lan Anh dipuji pintar dan cantik. · ⟦Học sinh được ăn sáng đầy đủ sẽ hiểu bài nhanh hơn.⟧ → Siswa yang sarapan dengan cukup akan lebih cepat memahami pelajaran.
+=ja
+文法解説
+⟦bị⟧ は話し手または主語が否定的・不利な影響を受ける場合に使います。
+⟦Người không ăn sáng có thể bị nhức đầu, chóng mặt.⟧ → 朝食を抜く人は頭痛やめまいを起こすことがある。 · ⟦Người hút thuốc lá có thể bị ho và nhiều bệnh nguy hiểm khác.⟧ → 喫煙者はせきや様々な危険な病気にかかることがある。
+⟦được⟧ は話し手または主語が肯定的・有利な影響を受ける場合に使います。
+⟦Lan Anh được khen là thông minh và xinh đẹp.⟧ → ラン・アインは頭がよくてきれいだとほめられた。 · ⟦Học sinh được ăn sáng đầy đủ sẽ hiểu bài nhanh hơn.⟧ → 朝食を十分にとった生徒のほうが授業の理解が早い。
+=pl
+Objaśnienia gramatyczne
+⟦bị⟧ używa się, gdy mówiący lub podmiot doznaje negatywnego, niekorzystnego wpływu.
+⟦Người không ăn sáng có thể bị nhức đầu, chóng mặt.⟧ → Kto nie je śniadania, może mieć bóle i zawroty głowy. · ⟦Người hút thuốc lá có thể bị ho và nhiều bệnh nguy hiểm khác.⟧ → Palacze mogą cierpieć na kaszel i wiele innych groźnych chorób.
+⟦được⟧ używa się, gdy mówiący lub podmiot doznaje pozytywnego, korzystnego wpływu.
+⟦Lan Anh được khen là thông minh và xinh đẹp.⟧ → Lan Anh jest chwalona za to, że jest mądra i ładna. · ⟦Học sinh được ăn sáng đầy đủ sẽ hiểu bài nhanh hơn.⟧ → Uczniowie, którzy zjedzą porządne śniadanie, szybciej rozumieją lekcję.

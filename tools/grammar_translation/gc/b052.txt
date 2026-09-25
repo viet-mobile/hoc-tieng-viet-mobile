@@ -1,0 +1,283 @@
+@@ pdf-grammar-e8f406d23d0c84c0#2
+=cs
+⟦chào⟧
+Základní vzor pozdravu ve vietnamštině má podobu „podmět (mluvčí) + ⟦chào⟧ + oslovený“ a lze ho použít při setkání i při loučení. Nemění se ani podle denní doby (ráno, poledne, večer).
+* Vzor pozdravu: (zdvořilostní slovo) – zájmeno 1. osoby – ⟦chào⟧ – zájmeno 2. osoby – (zdvořilostní slovo)
+⟦Chào bạn / cậu⟧ — Ahoj (kamarádovi).
+⟦(Em) chào anh / chị⟧ — Dobrý den (staršímu muži / starší ženě).
+⟦(Em) chào anh / thầy / cô ạ.⟧ — Dobrý den (zdvořile).
+⟦Xin chào anh / thầy / cô⟧ — Dobrý den (formálně).
+⟦Xin chào anh / thầy / cô ạ.⟧ — Dobrý den (velmi zdvořile).
+- Vietnamština nemá zvláštní zdvořilostní tvary, proto se úcta a zdvořilost vyjadřují volbou osobních zájmen podle věku a postavení mluvčího a posluchače nebo slovy jako ⟦xin⟧ na začátku věty a ⟦ạ⟧ na jejím konci.
+⟦đấy⟧
+⟦đấy?⟧ na konci otázky s tázacím slovem vyjadřuje důvěrnost mluvčího vůči posluchači; ⟦đấy!⟧ na konci oznamovací věty slouží k tomu, aby mluvčí posluchači něco sdělil nebo zdůraznil.
+Např. ⟦Các bạn làm gì đấy?⟧ — Co to děláte? · ⟦Ngày mai có mưa to đấy!⟧ — Zítra bude silně pršet!
+⟦ạ⟧
+Stojí na konci věty a vyjadřuje úctu a zdvořilost vůči posluchači.
+Např. ⟦Thầy có khỏe không ạ?⟧ — Máte se dobře, pane učiteli? · ⟦Em là sinh viên ạ.⟧ — Jsem student.
+=zh_cn
+⟦chào⟧
+越南语问候的基本句型为“主语（自己）+ ⟦chào⟧ + 对方”，见面和分别时都可以使用，也不会因早上、中午、晚上等时间而改变形式。
+* 问候句型：（敬语）– 第一人称代词 – ⟦chào⟧ – 第二人称代词 –（敬语）
+⟦Chào bạn / cậu⟧ —— 你好（对朋友）。
+⟦(Em) chào anh / chị⟧ —— 您好（对哥哥 / 姐姐辈）。
+⟦(Em) chào anh / thầy / cô ạ.⟧ —— 您好（礼貌）。
+⟦Xin chào anh / thầy / cô⟧ —— 您好（正式）。
+⟦Xin chào anh / thầy / cô ạ.⟧ —— 您好（非常礼貌）。
+- 越南语没有专门的敬语形式，因此通过选用与双方年龄、地位相符的人称代词，或在句首加 ⟦xin⟧、句尾加 ⟦ạ⟧ 等词来表达尊敬和礼貌。
+⟦đấy⟧
+与疑问词一起用在句末的 ⟦đấy?⟧ 表示说话人对听话人的亲切感；用在陈述句句末的 ⟦đấy!⟧ 表示说话人向听话人告知或强调某事。
+例：⟦Các bạn làm gì đấy?⟧ —— 你们在干什么呀？ · ⟦Ngày mai có mưa to đấy!⟧ —— 明天有大雨哦！
+⟦ạ⟧
+用在句末，表示对对方的尊敬和礼貌。
+例：⟦Thầy có khỏe không ạ?⟧ —— 老师您身体好吗？ · ⟦Em là sinh viên ạ.⟧ —— 我是大学生。
+=zh
+⟦chào⟧
+越南語問候的基本句型為「主詞（自己）+ ⟦chào⟧ + 對方」，見面和道別時都可以使用，也不會因早上、中午、晚上等時段而改變形式。
+* 問候句型：（敬語）– 第一人稱代名詞 – ⟦chào⟧ – 第二人稱代名詞 –（敬語）
+⟦Chào bạn / cậu⟧ —— 你好（對朋友）。
+⟦(Em) chào anh / chị⟧ —— 您好（對哥哥 / 姊姊輩）。
+⟦(Em) chào anh / thầy / cô ạ.⟧ —— 您好（禮貌）。
+⟦Xin chào anh / thầy / cô⟧ —— 您好（正式）。
+⟦Xin chào anh / thầy / cô ạ.⟧ —— 您好（非常禮貌）。
+- 越南語沒有專門的敬語形式，因此透過選用與雙方年齡、地位相符的人稱代名詞，或在句首加 ⟦xin⟧、句尾加 ⟦ạ⟧ 等詞來表達尊敬和禮貌。
+⟦đấy⟧
+與疑問詞一起用在句尾的 ⟦đấy?⟧ 表示說話者對聽話者的親切感；用在直述句句尾的 ⟦đấy!⟧ 表示說話者向聽話者告知或強調某事。
+例：⟦Các bạn làm gì đấy?⟧ —— 你們在做什麼呀？ · ⟦Ngày mai có mưa to đấy!⟧ —— 明天會下大雨喔！
+⟦ạ⟧
+用在句尾，表示對對方的尊敬和禮貌。
+例：⟦Thầy có khỏe không ạ?⟧ —— 老師您身體好嗎？ · ⟦Em là sinh viên ạ.⟧ —— 我是大學生。
+=en
+⟦chào⟧
+In Vietnamese the basic greeting pattern is "subject (speaker) + ⟦chào⟧ + the person addressed". It is used both when meeting and when parting, and it does not change with the time of day (morning, noon, evening).
+* Greeting pattern: (polite word) – 1st-person pronoun – ⟦chào⟧ – 2nd-person pronoun – (polite word)
+⟦Chào bạn / cậu⟧ — Hi (to a friend).
+⟦(Em) chào anh / chị⟧ — Hello (to an older man / woman).
+⟦(Em) chào anh / thầy / cô ạ.⟧ — Hello (politely).
+⟦Xin chào anh / thầy / cô⟧ — Hello (formally).
+⟦Xin chào anh / thầy / cô ạ.⟧ — Hello (very politely).
+- Vietnamese has no separate honorific forms, so respect and politeness are shown by choosing personal pronouns that fit the speakers' ages and status, or by adding words such as ⟦xin⟧ at the start and ⟦ạ⟧ at the end of a sentence.
+⟦đấy⟧
+⟦đấy?⟧ at the end of a question with a question word shows the speaker's friendliness towards the listener; ⟦đấy!⟧ at the end of a statement is used when the speaker tells the listener something or emphasises it.
+E.g. ⟦Các bạn làm gì đấy?⟧ — What are you all doing? · ⟦Ngày mai có mưa to đấy!⟧ — It's going to rain heavily tomorrow!
+⟦ạ⟧
+Placed at the end of a sentence to show respect and politeness towards the listener.
+E.g. ⟦Thầy có khỏe không ạ?⟧ — Are you well, sir? · ⟦Em là sinh viên ạ.⟧ — I'm a student.
+=fr
+⟦chào⟧
+En vietnamien, la formule de salutation de base est « sujet (locuteur) + ⟦chào⟧ + interlocuteur ». Elle s'emploie aussi bien pour se saluer que pour se quitter, et ne change pas selon le moment de la journée (matin, midi, soir).
+* Structure : (mot de politesse) – pronom de 1re personne – ⟦chào⟧ – pronom de 2e personne – (mot de politesse)
+⟦Chào bạn / cậu⟧ — Salut (à un ami).
+⟦(Em) chào anh / chị⟧ — Bonjour (à un homme / une femme plus âgé·e).
+⟦(Em) chào anh / thầy / cô ạ.⟧ — Bonjour (poliment).
+⟦Xin chào anh / thầy / cô⟧ — Bonjour (formel).
+⟦Xin chào anh / thầy / cô ạ.⟧ — Bonjour (très poli).
+- Le vietnamien n'ayant pas de formes honorifiques à part, le respect s'exprime par le choix des pronoms personnels selon l'âge et le statut de chacun, ou par des mots comme ⟦xin⟧ en début de phrase et ⟦ạ⟧ en fin de phrase.
+⟦đấy⟧
+⟦đấy?⟧ en fin de question avec un mot interrogatif marque la familiarité du locuteur envers l'interlocuteur ; ⟦đấy!⟧ en fin de phrase affirmative sert à annoncer ou à souligner une information.
+Ex. ⟦Các bạn làm gì đấy?⟧ — Qu'est-ce que vous faites ? · ⟦Ngày mai có mưa to đấy!⟧ — Demain, il va pleuvoir très fort !
+⟦ạ⟧
+Placé en fin de phrase, il exprime le respect et la politesse envers l'interlocuteur.
+Ex. ⟦Thầy có khỏe không ạ?⟧ — Vous allez bien, monsieur le professeur ? · ⟦Em là sinh viên ạ.⟧ — Je suis étudiant.
+=de
+⟦chào⟧
+Das grundlegende Grußmuster im Vietnamesischen lautet „Subjekt (Sprecher) + ⟦chào⟧ + Angesprochener“. Es wird sowohl zur Begrüßung als auch zum Abschied verwendet und ändert sich nicht nach der Tageszeit (morgens, mittags, abends).
+* Grußmuster: (Höflichkeitswort) – Pronomen 1. Person – ⟦chào⟧ – Pronomen 2. Person – (Höflichkeitswort)
+⟦Chào bạn / cậu⟧ — Hallo (zu einem Freund).
+⟦(Em) chào anh / chị⟧ — Guten Tag (zu einem älteren Mann / einer älteren Frau).
+⟦(Em) chào anh / thầy / cô ạ.⟧ — Guten Tag (höflich).
+⟦Xin chào anh / thầy / cô⟧ — Guten Tag (förmlich).
+⟦Xin chào anh / thầy / cô ạ.⟧ — Guten Tag (sehr höflich).
+- Da das Vietnamesische keine eigenen Höflichkeitsformen hat, drückt man Respekt durch die Wahl der Personalpronomen nach Alter und Stellung aus oder durch Wörter wie ⟦xin⟧ am Satzanfang und ⟦ạ⟧ am Satzende.
+⟦đấy⟧
+⟦đấy?⟧ am Ende einer Frage mit Fragewort drückt Vertrautheit des Sprechers mit dem Hörer aus; ⟦đấy!⟧ am Ende eines Aussagesatzes dient dazu, dem Hörer etwas mitzuteilen oder es zu betonen.
+Z. B. ⟦Các bạn làm gì đấy?⟧ — Was macht ihr denn da? · ⟦Ngày mai có mưa to đấy!⟧ — Morgen regnet es stark!
+⟦ạ⟧
+Steht am Satzende und drückt Respekt und Höflichkeit gegenüber dem Gesprächspartner aus.
+Z. B. ⟦Thầy có khỏe không ạ?⟧ — Geht es Ihnen gut, Herr Lehrer? · ⟦Em là sinh viên ạ.⟧ — Ich bin Student.
+=hu
+⟦chào⟧
+A vietnami köszönés alapmintája „alany (beszélő) + ⟦chào⟧ + megszólított”. Találkozáskor és búcsúzáskor egyaránt használható, és nem változik a napszak (reggel, dél, este) szerint.
+* Köszönési minta: (udvariassági szó) – 1. személyű névmás – ⟦chào⟧ – 2. személyű névmás – (udvariassági szó)
+⟦Chào bạn / cậu⟧ — Szia (barátnak).
+⟦(Em) chào anh / chị⟧ — Jó napot (idősebb férfinak / nőnek).
+⟦(Em) chào anh / thầy / cô ạ.⟧ — Jó napot (udvariasan).
+⟦Xin chào anh / thầy / cô⟧ — Jó napot (hivatalosan).
+⟦Xin chào anh / thầy / cô ạ.⟧ — Jó napot (nagyon udvariasan).
+- Mivel a vietnamiban nincs külön tiszteleti nyelvi forma, a tiszteletet a beszélők korához és rangjához illő személyes névmásokkal, illetve a mondat elején álló ⟦xin⟧ és a végén álló ⟦ạ⟧ szavakkal fejezik ki.
+⟦đấy⟧
+A kérdőszós kérdés végén álló ⟦đấy?⟧ a beszélő közvetlenségét fejezi ki a hallgató iránt; a kijelentő mondat végén álló ⟦đấy!⟧ azt jelzi, hogy a beszélő közöl vagy kiemel valamit.
+Pl. ⟦Các bạn làm gì đấy?⟧ — Mit csináltok? · ⟦Ngày mai có mưa to đấy!⟧ — Holnap nagy eső lesz ám!
+⟦ạ⟧
+A mondat végén áll, és a hallgató iránti tiszteletet, udvariasságot fejezi ki.
+Pl. ⟦Thầy có khỏe không ạ?⟧ — Jól van, tanár úr? · ⟦Em là sinh viên ạ.⟧ — Egyetemista vagyok.
+=id
+⟦chào⟧
+Pola dasar salam dalam bahasa Vietnam adalah "subjek (pembicara) + ⟦chào⟧ + lawan bicara". Pola ini dipakai saat bertemu maupun berpisah dan tidak berubah menurut waktu (pagi, siang, malam).
+* Pola salam: (kata hormat) – pronomina orang pertama – ⟦chào⟧ – pronomina orang kedua – (kata hormat)
+⟦Chào bạn / cậu⟧ — Halo (kepada teman).
+⟦(Em) chào anh / chị⟧ — Halo, Kak (kepada pria / wanita yang lebih tua).
+⟦(Em) chào anh / thầy / cô ạ.⟧ — Selamat pagi/siang (dengan sopan).
+⟦Xin chào anh / thầy / cô⟧ — Selamat pagi/siang (resmi).
+⟦Xin chào anh / thầy / cô ạ.⟧ — Selamat pagi/siang (sangat sopan).
+- Bahasa Vietnam tidak memiliki bentuk hormat tersendiri, sehingga rasa hormat dan kesopanan diungkapkan dengan memilih pronomina yang sesuai usia dan kedudukan, atau dengan kata seperti ⟦xin⟧ di awal kalimat dan ⟦ạ⟧ di akhir kalimat.
+⟦đấy⟧
+⟦đấy?⟧ di akhir kalimat tanya yang memakai kata tanya menunjukkan keakraban pembicara kepada pendengar; ⟦đấy!⟧ di akhir kalimat berita dipakai untuk memberi tahu atau menekankan sesuatu.
+Contoh: ⟦Các bạn làm gì đấy?⟧ — Kalian sedang apa? · ⟦Ngày mai có mưa to đấy!⟧ — Besok akan hujan deras, lho!
+⟦ạ⟧
+Diletakkan di akhir kalimat untuk menyatakan hormat dan sopan santun kepada lawan bicara.
+Contoh: ⟦Thầy có khỏe không ạ?⟧ — Apakah Bapak sehat? · ⟦Em là sinh viên ạ.⟧ — Saya mahasiswa.
+=ja
+⟦chào⟧
+ベトナム語のあいさつの基本文型は「主語（自分）+ ⟦chào⟧ + 相手」の形で、会うときにも別れるときにも使えます。また、朝・昼・夜などの時間帯によって形が変わることはありません。
+* あいさつの文型：（尊敬語）– 一人称代名詞 – ⟦chào⟧ – 二人称代名詞 –（尊敬語）
+⟦Chào bạn / cậu⟧ — やあ（友達に）。
+⟦(Em) chào anh / chị⟧ — こんにちは（年上の男性 / 女性に）。
+⟦(Em) chào anh / thầy / cô ạ.⟧ — こんにちは（丁寧に）。
+⟦Xin chào anh / thầy / cô⟧ — こんにちは（改まって）。
+⟦Xin chào anh / thầy / cô ạ.⟧ — こんにちは（とても丁寧に）。
+- ベトナム語には敬語が別にないため、自分と相手の年齢・地位に合った人称代名詞を使ったり、文頭に ⟦xin⟧、文末に ⟦ạ⟧ などの語を使ったりして、敬意や丁寧さを表します。
+⟦đấy⟧
+疑問詞と一緒に文末に置かれる ⟦đấy?⟧ は話し手の聞き手に対する親しみを表し、平叙文の文末に置かれる ⟦đấy!⟧ は話し手が聞き手に何かを知らせたり強調したりするときに使います。
+例：⟦Các bạn làm gì đấy?⟧ — みんな何してるの？ · ⟦Ngày mai có mưa to đấy!⟧ — 明日は大雨だってよ！
+⟦ạ⟧
+文末に置いて、相手に対する尊敬や丁寧さを表します。
+例：⟦Thầy có khỏe không ạ?⟧ — 先生、お元気ですか。 · ⟦Em là sinh viên ạ.⟧ — 私は大学生です。
+=pl
+⟦chào⟧
+Podstawowy wzór powitania w języku wietnamskim to „podmiot (mówiący) + ⟦chào⟧ + osoba, do której się zwracamy”. Używa się go zarówno przy spotkaniu, jak i pożegnaniu, i nie zmienia się w zależności od pory dnia (rano, w południe, wieczorem).
+* Wzór powitania: (słowo grzecznościowe) – zaimek 1. osoby – ⟦chào⟧ – zaimek 2. osoby – (słowo grzecznościowe)
+⟦Chào bạn / cậu⟧ — Cześć (do przyjaciela).
+⟦(Em) chào anh / chị⟧ — Dzień dobry (do starszego mężczyzny / kobiety).
+⟦(Em) chào anh / thầy / cô ạ.⟧ — Dzień dobry (grzecznie).
+⟦Xin chào anh / thầy / cô⟧ — Dzień dobry (oficjalnie).
+⟦Xin chào anh / thầy / cô ạ.⟧ — Dzień dobry (bardzo grzecznie).
+- Język wietnamski nie ma osobnych form grzecznościowych, więc szacunek wyraża się doborem zaimków osobowych stosownych do wieku i pozycji rozmówców albo słowami takimi jak ⟦xin⟧ na początku i ⟦ạ⟧ na końcu zdania.
+⟦đấy⟧
+⟦đấy?⟧ na końcu pytania z zaimkiem pytającym wyraża serdeczność mówiącego wobec słuchacza; ⟦đấy!⟧ na końcu zdania oznajmującego służy do przekazania lub podkreślenia informacji.
+Np. ⟦Các bạn làm gì đấy?⟧ — Co robicie? · ⟦Ngày mai có mưa to đấy!⟧ — Jutro będzie mocno padać!
+⟦ạ⟧
+Stoi na końcu zdania i wyraża szacunek i uprzejmość wobec rozmówcy.
+Np. ⟦Thầy có khỏe không ạ?⟧ — Czy pan profesor dobrze się czuje? · ⟦Em là sinh viên ạ.⟧ — Jestem studentem.
+@@ pdf-grammar-6fe0211e2e1d3823#0
+=cs
+Gramatický výklad
+⟦cần phải⟧ (⟦cần⟧, ⟦phải⟧) + sloveso znamená „je třeba ~“ nebo „musí se ~“.
+⟦cần phải mặc cả⟧ (⟦mặc cả⟧ smlouvat) → je třeba smlouvat. · ⟦cần phải đi chợ⟧ (⟦đi chợ⟧ jít na trh) → musí se jít na trh. · ⟦cần phải im lặng⟧ (⟦im lặng⟧ být zticha) → je třeba být zticha. · ⟦cần phải uống nước⟧ (⟦uống nước⟧ pít vodu) → je třeba pít vodu. · ⟦cần phải viết thư⟧ (⟦viết thư⟧ psát dopis) → musí se napsat dopis. · ⟦cần phải uống thuốc⟧ (⟦uống thuốc⟧ brát lék) → musí se vzít lék. · ⟦cần làm bài tập⟧ (⟦làm bài tập⟧ dělat úkol) → musí se udělat úkol. · ⟦phải mua nhà⟧ (⟦mua nhà⟧ koupit dům) → je třeba koupit dům. · ⟦phải đi thư viện⟧ (⟦đi thư viện⟧ jít do knihovny) → musí se jít do knihovny.
+⟦đừng⟧ + sloveso znamená „ne~!“ nebo „nesmí se ~“.
+⟦đừng mua ngay⟧ (⟦mua ngay⟧ koupit hned) → nekupuj to hned. · ⟦đừng uống nước⟧ (⟦uống nước⟧ pít vodu) → nepij vodu. · ⟦đừng đi chợ⟧ (⟦đi chợ⟧ jít na trh) → nechoď na trh. · ⟦đừng cười đùa⟧ (⟦cười đùa⟧ smát se a vtipkovat) → nesmí se smát a vtipkovat. · ⟦đừng về quê⟧ (⟦về quê⟧ jet domů do rodného kraje) → nejezdi domů. · ⟦đừng đi ô tô⟧ (⟦đi ô tô⟧ jet autem) → nejezdi autem. · ⟦đừng du lịch⟧ (⟦du lịch⟧ cestovat) → necestuj.
+=zh_cn
+语法解说
+⟦cần phải⟧（⟦cần⟧、⟦phải⟧）+ 动词，表示“需要……”或“必须……”。
+⟦cần phải mặc cả⟧（⟦mặc cả⟧ 讨价还价）→ 需要讨价还价。 · ⟦cần phải đi chợ⟧（⟦đi chợ⟧ 去市场）→ 得去市场。 · ⟦cần phải im lặng⟧（⟦im lặng⟧ 安静）→ 必须保持安静。 · ⟦cần phải uống nước⟧（⟦uống nước⟧ 喝水）→ 需要喝水。 · ⟦cần phải viết thư⟧（⟦viết thư⟧ 写信）→ 得写信。 · ⟦cần phải uống thuốc⟧（⟦uống thuốc⟧ 吃药）→ 必须吃药。 · ⟦cần làm bài tập⟧（⟦làm bài tập⟧ 做作业）→ 得做作业。 · ⟦phải mua nhà⟧（⟦mua nhà⟧ 买房）→ 需要买房。 · ⟦phải đi thư viện⟧（⟦đi thư viện⟧ 去图书馆）→ 得去图书馆。
+⟦đừng⟧ + 动词，表示“别……”或“不要……、不能……”。
+⟦đừng mua ngay⟧（⟦mua ngay⟧ 马上买）→ 别马上买。 · ⟦đừng uống nước⟧（⟦uống nước⟧ 喝水）→ 不要喝水。 · ⟦đừng đi chợ⟧（⟦đi chợ⟧ 去市场）→ 别去市场。 · ⟦đừng cười đùa⟧（⟦cười đùa⟧ 嬉笑）→ 不要嬉笑。 · ⟦đừng về quê⟧（⟦về quê⟧ 回老家）→ 别回老家。 · ⟦đừng đi ô tô⟧（⟦đi ô tô⟧ 坐汽车去）→ 别坐汽车去。 · ⟦đừng du lịch⟧（⟦du lịch⟧ 旅行）→ 别去旅行。
+=zh
+文法解說
+⟦cần phải⟧（⟦cần⟧、⟦phải⟧）+ 動詞，表示「需要……」或「必須……」。
+⟦cần phải mặc cả⟧（⟦mặc cả⟧ 討價還價）→ 需要殺價。 · ⟦cần phải đi chợ⟧（⟦đi chợ⟧ 去市場）→ 得去市場。 · ⟦cần phải im lặng⟧（⟦im lặng⟧ 安靜）→ 必須保持安靜。 · ⟦cần phải uống nước⟧（⟦uống nước⟧ 喝水）→ 需要喝水。 · ⟦cần phải viết thư⟧（⟦viết thư⟧ 寫信）→ 得寫信。 · ⟦cần phải uống thuốc⟧（⟦uống thuốc⟧ 吃藥）→ 必須吃藥。 · ⟦cần làm bài tập⟧（⟦làm bài tập⟧ 寫作業）→ 得寫作業。 · ⟦phải mua nhà⟧（⟦mua nhà⟧ 買房子）→ 需要買房子。 · ⟦phải đi thư viện⟧（⟦đi thư viện⟧ 去圖書館）→ 得去圖書館。
+⟦đừng⟧ + 動詞，表示「別……」或「不要……、不能……」。
+⟦đừng mua ngay⟧（⟦mua ngay⟧ 馬上買）→ 別馬上買。 · ⟦đừng uống nước⟧（⟦uống nước⟧ 喝水）→ 不要喝水。 · ⟦đừng đi chợ⟧（⟦đi chợ⟧ 去市場）→ 別去市場。 · ⟦đừng cười đùa⟧（⟦cười đùa⟧ 嬉笑）→ 不要嬉笑。 · ⟦đừng về quê⟧（⟦về quê⟧ 回老家）→ 別回老家。 · ⟦đừng đi ô tô⟧（⟦đi ô tô⟧ 開車去）→ 別開車去。 · ⟦đừng du lịch⟧（⟦du lịch⟧ 旅行）→ 別去旅行。
+=en
+Grammar notes
+⟦cần phải⟧ (⟦cần⟧, ⟦phải⟧) + verb means "need to ~" or "must ~".
+⟦cần phải mặc cả⟧ (⟦mặc cả⟧ to haggle) → you need to haggle. · ⟦cần phải đi chợ⟧ (⟦đi chợ⟧ to go to the market) → you have to go to the market. · ⟦cần phải im lặng⟧ (⟦im lặng⟧ to be quiet) → you must be quiet. · ⟦cần phải uống nước⟧ (⟦uống nước⟧ to drink water) → you need to drink water. · ⟦cần phải viết thư⟧ (⟦viết thư⟧ to write a letter) → you have to write a letter. · ⟦cần phải uống thuốc⟧ (⟦uống thuốc⟧ to take medicine) → you must take your medicine. · ⟦cần làm bài tập⟧ (⟦làm bài tập⟧ to do homework) → you need to do your homework. · ⟦phải mua nhà⟧ (⟦mua nhà⟧ to buy a house) → you need to buy a house. · ⟦phải đi thư viện⟧ (⟦đi thư viện⟧ to go to the library) → you have to go to the library.
+⟦đừng⟧ + verb means "don't ~" or "must not ~".
+⟦đừng mua ngay⟧ (⟦mua ngay⟧ to buy straight away) → don't buy it straight away. · ⟦đừng uống nước⟧ (⟦uống nước⟧ to drink water) → don't drink the water. · ⟦đừng đi chợ⟧ (⟦đi chợ⟧ to go to the market) → don't go to the market. · ⟦đừng cười đùa⟧ (⟦cười đùa⟧ to laugh and joke) → no laughing and joking. · ⟦đừng về quê⟧ (⟦về quê⟧ to go back to one's home town) → don't go back home. · ⟦đừng đi ô tô⟧ (⟦đi ô tô⟧ to go by car) → don't go by car. · ⟦đừng du lịch⟧ (⟦du lịch⟧ to travel) → don't travel.
+=fr
+Notes de grammaire
+⟦cần phải⟧ (⟦cần⟧, ⟦phải⟧) + verbe signifie « il faut ~ » ou « devoir ~ ».
+⟦cần phải mặc cả⟧ (⟦mặc cả⟧ marchander) → il faut marchander. · ⟦cần phải đi chợ⟧ (⟦đi chợ⟧ aller au marché) → il faut aller au marché. · ⟦cần phải im lặng⟧ (⟦im lặng⟧ se taire) → il faut se taire. · ⟦cần phải uống nước⟧ (⟦uống nước⟧ boire de l'eau) → il faut boire de l'eau. · ⟦cần phải viết thư⟧ (⟦viết thư⟧ écrire une lettre) → il faut écrire une lettre. · ⟦cần phải uống thuốc⟧ (⟦uống thuốc⟧ prendre un médicament) → il faut prendre son médicament. · ⟦cần làm bài tập⟧ (⟦làm bài tập⟧ faire ses devoirs) → il faut faire ses devoirs. · ⟦phải mua nhà⟧ (⟦mua nhà⟧ acheter une maison) → il faut acheter une maison. · ⟦phải đi thư viện⟧ (⟦đi thư viện⟧ aller à la bibliothèque) → il faut aller à la bibliothèque.
+⟦đừng⟧ + verbe signifie « ne ~ pas » ou « il ne faut pas ~ ».
+⟦đừng mua ngay⟧ (⟦mua ngay⟧ acheter tout de suite) → n'achète pas tout de suite. · ⟦đừng uống nước⟧ (⟦uống nước⟧ boire de l'eau) → ne bois pas d'eau. · ⟦đừng đi chợ⟧ (⟦đi chợ⟧ aller au marché) → ne va pas au marché. · ⟦đừng cười đùa⟧ (⟦cười đùa⟧ rire et plaisanter) → il ne faut pas rire ni plaisanter. · ⟦đừng về quê⟧ (⟦về quê⟧ rentrer au pays natal) → ne rentre pas au pays. · ⟦đừng đi ô tô⟧ (⟦đi ô tô⟧ aller en voiture) → ne prends pas la voiture. · ⟦đừng du lịch⟧ (⟦du lịch⟧ voyager) → ne voyage pas.
+=de
+Grammatikerläuterungen
+⟦cần phải⟧ (⟦cần⟧, ⟦phải⟧) + Verb bedeutet „man muss ~“ oder „es ist nötig, zu ~“.
+⟦cần phải mặc cả⟧ (⟦mặc cả⟧ feilschen) → man muss feilschen. · ⟦cần phải đi chợ⟧ (⟦đi chợ⟧ auf den Markt gehen) → man muss auf den Markt gehen. · ⟦cần phải im lặng⟧ (⟦im lặng⟧ still sein) → man muss still sein. · ⟦cần phải uống nước⟧ (⟦uống nước⟧ Wasser trinken) → man muss Wasser trinken. · ⟦cần phải viết thư⟧ (⟦viết thư⟧ einen Brief schreiben) → man muss einen Brief schreiben. · ⟦cần phải uống thuốc⟧ (⟦uống thuốc⟧ Medizin nehmen) → man muss die Medizin nehmen. · ⟦cần làm bài tập⟧ (⟦làm bài tập⟧ Hausaufgaben machen) → man muss die Hausaufgaben machen. · ⟦phải mua nhà⟧ (⟦mua nhà⟧ ein Haus kaufen) → man muss ein Haus kaufen. · ⟦phải đi thư viện⟧ (⟦đi thư viện⟧ in die Bibliothek gehen) → man muss in die Bibliothek gehen.
+⟦đừng⟧ + Verb bedeutet „~ nicht!“ oder „man darf nicht ~“.
+⟦đừng mua ngay⟧ (⟦mua ngay⟧ sofort kaufen) → kauf nicht sofort. · ⟦đừng uống nước⟧ (⟦uống nước⟧ Wasser trinken) → trink kein Wasser. · ⟦đừng đi chợ⟧ (⟦đi chợ⟧ auf den Markt gehen) → geh nicht auf den Markt. · ⟦đừng cười đùa⟧ (⟦cười đùa⟧ lachen und scherzen) → nicht lachen und scherzen. · ⟦đừng về quê⟧ (⟦về quê⟧ in die Heimat fahren) → fahr nicht in die Heimat. · ⟦đừng đi ô tô⟧ (⟦đi ô tô⟧ mit dem Auto fahren) → fahr nicht mit dem Auto. · ⟦đừng du lịch⟧ (⟦du lịch⟧ reisen) → verreise nicht.
+=hu
+Nyelvtani magyarázat
+A ⟦cần phải⟧ (⟦cần⟧, ⟦phải⟧) + ige jelentése „szükséges ~” vagy „~ kell”.
+⟦cần phải mặc cả⟧ (⟦mặc cả⟧ alkudni) → alkudni kell. · ⟦cần phải đi chợ⟧ (⟦đi chợ⟧ piacra menni) → piacra kell menni. · ⟦cần phải im lặng⟧ (⟦im lặng⟧ csendben lenni) → csendben kell lenni. · ⟦cần phải uống nước⟧ (⟦uống nước⟧ vizet inni) → vizet kell inni. · ⟦cần phải viết thư⟧ (⟦viết thư⟧ levelet írni) → levelet kell írni. · ⟦cần phải uống thuốc⟧ (⟦uống thuốc⟧ gyógyszert bevenni) → be kell venni a gyógyszert. · ⟦cần làm bài tập⟧ (⟦làm bài tập⟧ leckét írni) → meg kell írni a leckét. · ⟦phải mua nhà⟧ (⟦mua nhà⟧ házat venni) → házat kell venni. · ⟦phải đi thư viện⟧ (⟦đi thư viện⟧ könyvtárba menni) → könyvtárba kell menni.
+A ⟦đừng⟧ + ige jelentése „ne ~!” vagy „nem szabad ~”.
+⟦đừng mua ngay⟧ (⟦mua ngay⟧ azonnal megvenni) → ne vedd meg azonnal. · ⟦đừng uống nước⟧ (⟦uống nước⟧ vizet inni) → ne igyál vizet. · ⟦đừng đi chợ⟧ (⟦đi chợ⟧ piacra menni) → ne menj piacra. · ⟦đừng cười đùa⟧ (⟦cười đùa⟧ nevetgélni, tréfálkozni) → nem szabad nevetgélni. · ⟦đừng về quê⟧ (⟦về quê⟧ hazautazni szülőföldre) → ne utazz haza. · ⟦đừng đi ô tô⟧ (⟦đi ô tô⟧ autóval menni) → ne menj autóval. · ⟦đừng du lịch⟧ (⟦du lịch⟧ utazni) → ne utazz.
+=id
+Penjelasan tata bahasa
+⟦cần phải⟧ (⟦cần⟧, ⟦phải⟧) + verba berarti "perlu ~" atau "harus ~".
+⟦cần phải mặc cả⟧ (⟦mặc cả⟧ menawar) → perlu menawar. · ⟦cần phải đi chợ⟧ (⟦đi chợ⟧ pergi ke pasar) → harus pergi ke pasar. · ⟦cần phải im lặng⟧ (⟦im lặng⟧ diam) → harus diam. · ⟦cần phải uống nước⟧ (⟦uống nước⟧ minum air) → perlu minum air. · ⟦cần phải viết thư⟧ (⟦viết thư⟧ menulis surat) → harus menulis surat. · ⟦cần phải uống thuốc⟧ (⟦uống thuốc⟧ minum obat) → harus minum obat. · ⟦cần làm bài tập⟧ (⟦làm bài tập⟧ mengerjakan PR) → harus mengerjakan PR. · ⟦phải mua nhà⟧ (⟦mua nhà⟧ membeli rumah) → perlu membeli rumah. · ⟦phải đi thư viện⟧ (⟦đi thư viện⟧ pergi ke perpustakaan) → harus pergi ke perpustakaan.
+⟦đừng⟧ + verba berarti "jangan ~" atau "tidak boleh ~".
+⟦đừng mua ngay⟧ (⟦mua ngay⟧ langsung membeli) → jangan langsung membeli. · ⟦đừng uống nước⟧ (⟦uống nước⟧ minum air) → jangan minum air. · ⟦đừng đi chợ⟧ (⟦đi chợ⟧ pergi ke pasar) → jangan pergi ke pasar. · ⟦đừng cười đùa⟧ (⟦cười đùa⟧ bercanda tertawa) → tidak boleh bercanda. · ⟦đừng về quê⟧ (⟦về quê⟧ pulang kampung) → jangan pulang kampung. · ⟦đừng đi ô tô⟧ (⟦đi ô tô⟧ naik mobil) → jangan naik mobil. · ⟦đừng du lịch⟧ (⟦du lịch⟧ bepergian) → jangan bepergian.
+=ja
+文法解説
+⟦cần phải⟧（⟦cần⟧、⟦phải⟧）+ 動詞の形で「～する必要がある」または「～しなければならない」という意味で使われます。
+⟦cần phải mặc cả⟧（⟦mặc cả⟧ 値切る）→ 値切る必要がある。 · ⟦cần phải đi chợ⟧（⟦đi chợ⟧ 市場に行く）→ 市場に行かなければならない。 · ⟦cần phải im lặng⟧（⟦im lặng⟧ 静かにする）→ 静かにしなければならない。 · ⟦cần phải uống nước⟧（⟦uống nước⟧ 水を飲む）→ 水を飲む必要がある。 · ⟦cần phải viết thư⟧（⟦viết thư⟧ 手紙を書く）→ 手紙を書かなければならない。 · ⟦cần phải uống thuốc⟧（⟦uống thuốc⟧ 薬を飲む）→ 薬を飲まなければならない。 · ⟦cần làm bài tập⟧（⟦làm bài tập⟧ 宿題をする）→ 宿題をしなければならない。 · ⟦phải mua nhà⟧（⟦mua nhà⟧ 家を買う）→ 家を買う必要がある。 · ⟦phải đi thư viện⟧（⟦đi thư viện⟧ 図書館に行く）→ 図書館に行かなければならない。
+⟦đừng⟧ + 動詞の形で「～するな」または「～してはいけない」という意味で使われます。
+⟦đừng mua ngay⟧（⟦mua ngay⟧ すぐに買う）→ すぐに買うな。 · ⟦đừng uống nước⟧（⟦uống nước⟧ 水を飲む）→ 水を飲んではいけない。 · ⟦đừng đi chợ⟧（⟦đi chợ⟧ 市場に行く）→ 市場に行くな。 · ⟦đừng cười đùa⟧（⟦cười đùa⟧ ふざけて笑う）→ ふざけて笑ってはいけない。 · ⟦đừng về quê⟧（⟦về quê⟧ 故郷に帰る）→ 故郷に帰るな。 · ⟦đừng đi ô tô⟧（⟦đi ô tô⟧ 車で行く）→ 車で行くな。 · ⟦đừng du lịch⟧（⟦du lịch⟧ 旅行する）→ 旅行するな。
+=pl
+Objaśnienia gramatyczne
+⟦cần phải⟧ (⟦cần⟧, ⟦phải⟧) + czasownik znaczy „trzeba ~” lub „należy ~”.
+⟦cần phải mặc cả⟧ (⟦mặc cả⟧ targować się) → trzeba się targować. · ⟦cần phải đi chợ⟧ (⟦đi chợ⟧ iść na targ) → trzeba iść na targ. · ⟦cần phải im lặng⟧ (⟦im lặng⟧ być cicho) → trzeba być cicho. · ⟦cần phải uống nước⟧ (⟦uống nước⟧ pić wodę) → trzeba pić wodę. · ⟦cần phải viết thư⟧ (⟦viết thư⟧ pisać list) → trzeba napisać list. · ⟦cần phải uống thuốc⟧ (⟦uống thuốc⟧ brać lekarstwo) → trzeba wziąć lekarstwo. · ⟦cần làm bài tập⟧ (⟦làm bài tập⟧ odrabiać lekcje) → trzeba odrobić lekcje. · ⟦phải mua nhà⟧ (⟦mua nhà⟧ kupić dom) → trzeba kupić dom. · ⟦phải đi thư viện⟧ (⟦đi thư viện⟧ iść do biblioteki) → trzeba iść do biblioteki.
+⟦đừng⟧ + czasownik znaczy „nie ~!” lub „nie wolno ~”.
+⟦đừng mua ngay⟧ (⟦mua ngay⟧ kupić od razu) → nie kupuj od razu. · ⟦đừng uống nước⟧ (⟦uống nước⟧ pić wodę) → nie pij wody. · ⟦đừng đi chợ⟧ (⟦đi chợ⟧ iść na targ) → nie idź na targ. · ⟦đừng cười đùa⟧ (⟦cười đùa⟧ śmiać się i żartować) → nie wolno się śmiać i żartować. · ⟦đừng về quê⟧ (⟦về quê⟧ jechać w rodzinne strony) → nie jedź w rodzinne strony. · ⟦đừng đi ô tô⟧ (⟦đi ô tô⟧ jechać samochodem) → nie jedź samochodem. · ⟦đừng du lịch⟧ (⟦du lịch⟧ podróżować) → nie podróżuj.
+@@ pdf-grammar-6ce281dae680fddf#0
+=cs
+Gramatický výklad
+⟦cấm⟧ + sloveso vyjadřuje zákaz: „zakazuje se ~, je zakázáno ~“.
+⟦cấm săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ lovit divokou zvěř) → lov divoké zvěře zakázán. · ⟦cấm leo núi⟧ (⟦leo núi⟧ lézt na horu) → výstup na horu zakázán. · ⟦cấm bật đèn⟧ (⟦bật đèn⟧ rozsvítit) → rozsvěcet zakázáno. · ⟦cấm mang theo chất nổ⟧ (⟦mang theo chất nổ⟧ nosit u sebe výbušniny) → zákaz nošení výbušnin. · ⟦cấm sưu tầm mẫu vật⟧ (⟦sưu tầm mẫu vật⟧ sbírat vzorky) → sběr vzorků zakázán.
+⟦không được⟧ (⟦không⟧) + sloveso znamená „nesmí se ~“; význam je podobný jako u ⟦cấm⟧ + sloveso.
+⟦không được săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ lovit divokou zvěř) → lov divoké zvěře zakázán. · ⟦không được uống nước⟧ (⟦uống nước⟧ pít vodu) → pití vody zakázáno. · ⟦không leo núi khi trời mưa⟧ (⟦leo núi khi trời mưa⟧ lézt na horu za deště) → za deště výstup na horu zakázán. · ⟦không bật ti vi trong giờ làm việc⟧ (⟦bật ti vi trong giờ làm việc⟧ zapínat televizi v pracovní době) → v pracovní době zákaz zapínání televize. · ⟦không được mang xe máy vào vườn thú⟧ (⟦mang xe máy vào vườn thú⟧ vjíždět s motorkou do zoo) → vjezd motocyklů do zoo zakázán.
+=zh_cn
+语法解说
+⟦cấm⟧ + 动词表示禁止，意为“禁止……、不许……”。
+⟦cấm săn bắn thú rừng⟧（⟦săn bắn thú rừng⟧ 猎捕野生动物）→ 禁止猎捕野生动物。 · ⟦cấm leo núi⟧（⟦leo núi⟧ 登山）→ 禁止登山。 · ⟦cấm bật đèn⟧（⟦bật đèn⟧ 开灯）→ 禁止开灯。 · ⟦cấm mang theo chất nổ⟧（⟦mang theo chất nổ⟧ 携带爆炸物）→ 禁止携带爆炸物。 · ⟦cấm sưu tầm mẫu vật⟧（⟦sưu tầm mẫu vật⟧ 采集标本）→ 禁止采集标本。
+⟦không được⟧（⟦không⟧）+ 动词表示“不得……”，与 ⟦cấm⟧ + 动词意思相近。
+⟦không được săn bắn thú rừng⟧（⟦săn bắn thú rừng⟧ 猎捕野生动物）→ 禁止猎捕野生动物。 · ⟦không được uống nước⟧（⟦uống nước⟧ 喝水）→ 禁止饮水。 · ⟦không leo núi khi trời mưa⟧（⟦leo núi khi trời mưa⟧ 下雨时登山）→ 雨天禁止登山。 · ⟦không bật ti vi trong giờ làm việc⟧（⟦bật ti vi trong giờ làm việc⟧ 工作时间开电视）→ 工作时间禁止开电视。 · ⟦không được mang xe máy vào vườn thú⟧（⟦mang xe máy vào vườn thú⟧ 把摩托车带进动物园）→ 禁止摩托车进入动物园。
+=zh
+文法解說
+⟦cấm⟧ + 動詞表示禁止，意為「禁止……、不准……」。
+⟦cấm săn bắn thú rừng⟧（⟦săn bắn thú rừng⟧ 獵捕野生動物）→ 禁止獵捕野生動物。 · ⟦cấm leo núi⟧（⟦leo núi⟧ 登山）→ 禁止登山。 · ⟦cấm bật đèn⟧（⟦bật đèn⟧ 開燈）→ 禁止開燈。 · ⟦cấm mang theo chất nổ⟧（⟦mang theo chất nổ⟧ 攜帶爆裂物）→ 禁止攜帶爆裂物。 · ⟦cấm sưu tầm mẫu vật⟧（⟦sưu tầm mẫu vật⟧ 採集標本）→ 禁止採集標本。
+⟦không được⟧（⟦không⟧）+ 動詞表示「不得……」，與 ⟦cấm⟧ + 動詞意思相近。
+⟦không được săn bắn thú rừng⟧（⟦săn bắn thú rừng⟧ 獵捕野生動物）→ 禁止獵捕野生動物。 · ⟦không được uống nước⟧（⟦uống nước⟧ 喝水）→ 禁止飲水。 · ⟦không leo núi khi trời mưa⟧（⟦leo núi khi trời mưa⟧ 下雨時登山）→ 雨天禁止登山。 · ⟦không bật ti vi trong giờ làm việc⟧（⟦bật ti vi trong giờ làm việc⟧ 上班時間開電視）→ 上班時間禁止開電視。 · ⟦không được mang xe máy vào vườn thú⟧（⟦mang xe máy vào vườn thú⟧ 把機車帶進動物園）→ 禁止機車進入動物園。
+=en
+Grammar notes
+⟦cấm⟧ + verb expresses prohibition: "~ is prohibited, no ~".
+⟦cấm săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ to hunt wild animals) → hunting wild animals is prohibited. · ⟦cấm leo núi⟧ (⟦leo núi⟧ to climb mountains) → no climbing. · ⟦cấm bật đèn⟧ (⟦bật đèn⟧ to switch on the lights) → switching on the lights is prohibited. · ⟦cấm mang theo chất nổ⟧ (⟦mang theo chất nổ⟧ to carry explosives) → carrying explosives is prohibited. · ⟦cấm sưu tầm mẫu vật⟧ (⟦sưu tầm mẫu vật⟧ to collect specimens) → no collecting specimens.
+⟦không được⟧ (⟦không⟧) + verb means "must not ~"; it is used much like ⟦cấm⟧ + verb.
+⟦không được săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ to hunt wild animals) → hunting wild animals is prohibited. · ⟦không được uống nước⟧ (⟦uống nước⟧ to drink water) → drinking water is prohibited. · ⟦không leo núi khi trời mưa⟧ (⟦leo núi khi trời mưa⟧ to climb when it rains) → no climbing in the rain. · ⟦không bật ti vi trong giờ làm việc⟧ (⟦bật ti vi trong giờ làm việc⟧ to turn on the TV during working hours) → no TV during working hours. · ⟦không được mang xe máy vào vườn thú⟧ (⟦mang xe máy vào vườn thú⟧ to bring motorbikes into the zoo) → no motorbikes in the zoo.
+=fr
+Notes de grammaire
+⟦cấm⟧ + verbe exprime l'interdiction : « interdit de ~, défense de ~ ».
+⟦cấm săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ chasser les animaux sauvages) → chasse aux animaux sauvages interdite. · ⟦cấm leo núi⟧ (⟦leo núi⟧ faire de l'escalade) → escalade interdite. · ⟦cấm bật đèn⟧ (⟦bật đèn⟧ allumer la lumière) → interdit d'allumer. · ⟦cấm mang theo chất nổ⟧ (⟦mang theo chất nổ⟧ transporter des explosifs) → explosifs interdits. · ⟦cấm sưu tầm mẫu vật⟧ (⟦sưu tầm mẫu vật⟧ collecter des spécimens) → collecte de spécimens interdite.
+⟦không được⟧ (⟦không⟧) + verbe signifie « il ne faut pas ~, défense de ~ » ; sens proche de ⟦cấm⟧ + verbe.
+⟦không được săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ chasser les animaux sauvages) → chasse aux animaux sauvages interdite. · ⟦không được uống nước⟧ (⟦uống nước⟧ boire de l'eau) → eau non potable / interdit de boire. · ⟦không leo núi khi trời mưa⟧ (⟦leo núi khi trời mưa⟧ grimper par temps de pluie) → escalade interdite par temps de pluie. · ⟦không bật ti vi trong giờ làm việc⟧ (⟦bật ti vi trong giờ làm việc⟧ allumer la télé pendant les heures de travail) → télévision interdite pendant les heures de travail. · ⟦không được mang xe máy vào vườn thú⟧ (⟦mang xe máy vào vườn thú⟧ entrer au zoo avec une moto) → motos interdites dans le zoo.
+=de
+Grammatikerläuterungen
+⟦cấm⟧ + Verb drückt ein Verbot aus: „~ verboten“.
+⟦cấm săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ Wildtiere jagen) → Jagen von Wildtieren verboten. · ⟦cấm leo núi⟧ (⟦leo núi⟧ bergsteigen) → Bergsteigen verboten. · ⟦cấm bật đèn⟧ (⟦bật đèn⟧ Licht einschalten) → Licht einschalten verboten. · ⟦cấm mang theo chất nổ⟧ (⟦mang theo chất nổ⟧ Sprengstoff mitführen) → Mitführen von Sprengstoff verboten. · ⟦cấm sưu tầm mẫu vật⟧ (⟦sưu tầm mẫu vật⟧ Proben sammeln) → Sammeln von Proben verboten.
+⟦không được⟧ (⟦không⟧) + Verb bedeutet „man darf nicht ~“; es wird ähnlich wie ⟦cấm⟧ + Verb verwendet.
+⟦không được săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ Wildtiere jagen) → Jagen von Wildtieren verboten. · ⟦không được uống nước⟧ (⟦uống nước⟧ Wasser trinken) → kein Trinkwasser / Trinken verboten. · ⟦không leo núi khi trời mưa⟧ (⟦leo núi khi trời mưa⟧ bei Regen bergsteigen) → bei Regen Bergsteigen verboten. · ⟦không bật ti vi trong giờ làm việc⟧ (⟦bật ti vi trong giờ làm việc⟧ während der Arbeitszeit fernsehen) → Fernsehen während der Arbeitszeit verboten. · ⟦không được mang xe máy vào vườn thú⟧ (⟦mang xe máy vào vườn thú⟧ mit dem Motorrad in den Zoo fahren) → Motorräder im Zoo verboten.
+=hu
+Nyelvtani magyarázat
+A ⟦cấm⟧ + ige tiltást fejez ki: „tilos ~”.
+⟦cấm săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ vadállatokra vadászni) → vadászni tilos. · ⟦cấm leo núi⟧ (⟦leo núi⟧ hegyet mászni) → hegymászás tilos. · ⟦cấm bật đèn⟧ (⟦bật đèn⟧ villanyt kapcsolni) → villanyt kapcsolni tilos. · ⟦cấm mang theo chất nổ⟧ (⟦mang theo chất nổ⟧ robbanóanyagot magánál tartani) → robbanóanyag bevitele tilos. · ⟦cấm sưu tầm mẫu vật⟧ (⟦sưu tầm mẫu vật⟧ mintákat gyűjteni) → mintagyűjtés tilos.
+A ⟦không được⟧ (⟦không⟧) + ige jelentése „nem szabad ~”; a ⟦cấm⟧ + igéhez hasonló értelemben használatos.
+⟦không được săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ vadállatokra vadászni) → vadászni tilos. · ⟦không được uống nước⟧ (⟦uống nước⟧ vizet inni) → nem ivóvíz / inni tilos. · ⟦không leo núi khi trời mưa⟧ (⟦leo núi khi trời mưa⟧ esőben hegyet mászni) → esőben hegymászás tilos. · ⟦không bật ti vi trong giờ làm việc⟧ (⟦bật ti vi trong giờ làm việc⟧ munkaidőben tévét bekapcsolni) → munkaidőben tévézni tilos. · ⟦không được mang xe máy vào vườn thú⟧ (⟦mang xe máy vào vườn thú⟧ motort bevinni az állatkertbe) → motorral az állatkertbe behajtani tilos.
+=id
+Penjelasan tata bahasa
+⟦cấm⟧ + verba menyatakan larangan: "dilarang ~".
+⟦cấm săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ berburu satwa liar) → dilarang berburu satwa liar. · ⟦cấm leo núi⟧ (⟦leo núi⟧ mendaki gunung) → dilarang mendaki. · ⟦cấm bật đèn⟧ (⟦bật đèn⟧ menyalakan lampu) → dilarang menyalakan lampu. · ⟦cấm mang theo chất nổ⟧ (⟦mang theo chất nổ⟧ membawa bahan peledak) → dilarang membawa bahan peledak. · ⟦cấm sưu tầm mẫu vật⟧ (⟦sưu tầm mẫu vật⟧ mengumpulkan spesimen) → dilarang mengumpulkan spesimen.
+⟦không được⟧ (⟦không⟧) + verba berarti "tidak boleh ~"; maknanya mirip dengan ⟦cấm⟧ + verba.
+⟦không được săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ berburu satwa liar) → dilarang berburu satwa liar. · ⟦không được uống nước⟧ (⟦uống nước⟧ minum air) → air tidak untuk diminum / dilarang minum. · ⟦không leo núi khi trời mưa⟧ (⟦leo núi khi trời mưa⟧ mendaki saat hujan) → dilarang mendaki saat hujan. · ⟦không bật ti vi trong giờ làm việc⟧ (⟦bật ti vi trong giờ làm việc⟧ menyalakan TV saat jam kerja) → dilarang menyalakan TV saat jam kerja. · ⟦không được mang xe máy vào vườn thú⟧ (⟦mang xe máy vào vườn thú⟧ membawa sepeda motor ke kebun binatang) → sepeda motor dilarang masuk kebun binatang.
+=ja
+文法解説
+⟦cấm⟧ + 動詞の形で使われ、「～を禁止する」または「～してはいけない」という禁止の意味を表します。
+⟦cấm săn bắn thú rừng⟧（⟦săn bắn thú rừng⟧ 野生動物を狩る）→ 野生動物の狩猟禁止。 · ⟦cấm leo núi⟧（⟦leo núi⟧ 登山する）→ 登山禁止。 · ⟦cấm bật đèn⟧（⟦bật đèn⟧ 点灯する）→ 点灯禁止。 · ⟦cấm mang theo chất nổ⟧（⟦mang theo chất nổ⟧ 爆発物を所持する）→ 爆発物の持ち込み禁止。 · ⟦cấm sưu tầm mẫu vật⟧（⟦sưu tầm mẫu vật⟧ 標本を採集する）→ 標本採集禁止。
+⟦không được⟧（⟦không⟧）+ 動詞の形で使われ、「～してはいけない」という意味を表します。⟦cấm⟧ + 動詞（～を禁止する）と似た意味で使われます。
+⟦không được săn bắn thú rừng⟧（⟦săn bắn thú rừng⟧ 野生動物を狩る）→ 野生動物の狩猟禁止。 · ⟦không được uống nước⟧（⟦uống nước⟧ 水を飲む）→ 飲用禁止。 · ⟦không leo núi khi trời mưa⟧（⟦leo núi khi trời mưa⟧ 雨天時に登山する）→ 雨天時の登山禁止。 · ⟦không bật ti vi trong giờ làm việc⟧（⟦bật ti vi trong giờ làm việc⟧ 勤務中にテレビをつける）→ 勤務中のテレビ視聴禁止。 · ⟦không được mang xe máy vào vườn thú⟧（⟦mang xe máy vào vườn thú⟧ 動物園にバイクを持ち込む）→ 動物園へのバイク乗り入れ禁止。
+=pl
+Objaśnienia gramatyczne
+⟦cấm⟧ + czasownik wyraża zakaz: „zakaz ~, zabrania się ~”.
+⟦cấm săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ polować na dzikie zwierzęta) → zakaz polowania na dzikie zwierzęta. · ⟦cấm leo núi⟧ (⟦leo núi⟧ wspinać się) → zakaz wspinaczki. · ⟦cấm bật đèn⟧ (⟦bật đèn⟧ włączać światło) → zakaz włączania światła. · ⟦cấm mang theo chất nổ⟧ (⟦mang theo chất nổ⟧ mieć przy sobie materiały wybuchowe) → zakaz wnoszenia materiałów wybuchowych. · ⟦cấm sưu tầm mẫu vật⟧ (⟦sưu tầm mẫu vật⟧ zbierać okazy) → zakaz zbierania okazów.
+⟦không được⟧ (⟦không⟧) + czasownik znaczy „nie wolno ~”; używa się go podobnie jak ⟦cấm⟧ + czasownik.
+⟦không được săn bắn thú rừng⟧ (⟦săn bắn thú rừng⟧ polować na dzikie zwierzęta) → zakaz polowania na dzikie zwierzęta. · ⟦không được uống nước⟧ (⟦uống nước⟧ pić wodę) → woda niezdatna do picia / zakaz picia. · ⟦không leo núi khi trời mưa⟧ (⟦leo núi khi trời mưa⟧ wspinać się w deszczu) → zakaz wspinaczki w czasie deszczu. · ⟦không bật ti vi trong giờ làm việc⟧ (⟦bật ti vi trong giờ làm việc⟧ włączać telewizor w godzinach pracy) → zakaz oglądania telewizji w godzinach pracy. · ⟦không được mang xe máy vào vườn thú⟧ (⟦mang xe máy vào vườn thú⟧ wjeżdżać motocyklem do zoo) → zakaz wjazdu motocykli do zoo.

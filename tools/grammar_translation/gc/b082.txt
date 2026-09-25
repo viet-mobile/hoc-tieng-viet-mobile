@@ -1,0 +1,122 @@
+@@ pdf-grammar-223f7f2da9455129#0
+=cs
+Gramatický výklad
+⟦cơ mà⟧: „vždyť ~, přece ~“ – výraz převážně hovorový, používá se, když chceme zdůraznit jistotu zmíněné informace.
+⟦Trước đây cậu thích bơi lắm cơ mà.⟧ → Vždyť jsi dřív tak rád plaval. · ⟦Sao bảo đồ ăn ở đây rẻ lắm cơ mà.⟧ → Vždyť jsi říkal, že jídlo je tady levné. · ⟦Cậu thích ăn thịt gà lắm cơ mà.⟧ → Vždyť máš tak rád kuřecí maso. · ⟦Nghe nói anh ấy không thích leo núi cơ mà.⟧ → Vždyť jsem slyšel, že nerad chodí po horách. · ⟦Sao mọi người nói anh đi Hà Nội cơ mà.⟧ → Vždyť všichni říkali, že jedeš do Hanoje.
+⟦ngót⟧: vyjadřuje přibližný počet či množství – „skoro, téměř, kolem“.
+⟦Ngót một triệu một cái đấy.⟧ → Jeden kus stojí skoro milion (dongů). · ⟦Phải đến ngót trăm người đến xem.⟧ → Přišlo se podívat skoro sto lidí. · ⟦Có thể giá vé đi du thuyền phải đến ngót một triệu.⟧ → Lístek na výletní loď může stát skoro milion. · ⟦Cái túi này ngót năm trăm đấy.⟧ → Tahle taška stojí skoro pět set (tisíc dongů). · ⟦Có ngót 100 cái ghế trong hội trường.⟧ → V sále je téměř 100 židlí.
+=zh_cn
+语法解说
+⟦cơ mà⟧：意为“……不是吗、明明……嘛”，主要用于口语，强调所说信息的确定性。
+⟦Trước đây cậu thích bơi lắm cơ mà.⟧ → 你以前明明很喜欢游泳嘛。 · ⟦Sao bảo đồ ăn ở đây rẻ lắm cơ mà.⟧ → 不是说这里的饭菜很便宜吗。 · ⟦Cậu thích ăn thịt gà lắm cơ mà.⟧ → 你不是很爱吃鸡肉嘛。 · ⟦Nghe nói anh ấy không thích leo núi cơ mà.⟧ → 不是听说他不喜欢爬山嘛。 · ⟦Sao mọi người nói anh đi Hà Nội cơ mà.⟧ → 大家不是都说你去河内了嘛。
+⟦ngót⟧：表示大概的数目、数量，意为“将近、差不多”。
+⟦Ngót một triệu một cái đấy.⟧ → 一个将近一百万盾呢。 · ⟦Phải đến ngót trăm người đến xem.⟧ → 来看的人差不多有一百个。 · ⟦Có thể giá vé đi du thuyền phải đến ngót một triệu.⟧ → 游船票价可能要将近一百万盾。 · ⟦Cái túi này ngót năm trăm đấy.⟧ → 这个包将近五十万盾呢。 · ⟦Có ngót 100 cái ghế trong hội trường.⟧ → 会场里有将近100把椅子。
+=zh
+文法解說
+⟦cơ mà⟧：意為「……不是嗎、明明……嘛」，主要用於口語，強調所說資訊的確定性。
+⟦Trước đây cậu thích bơi lắm cơ mà.⟧ → 你以前明明很喜歡游泳嘛。 · ⟦Sao bảo đồ ăn ở đây rẻ lắm cơ mà.⟧ → 不是說這裡的東西很便宜嗎。 · ⟦Cậu thích ăn thịt gà lắm cơ mà.⟧ → 你不是很愛吃雞肉嘛。 · ⟦Nghe nói anh ấy không thích leo núi cơ mà.⟧ → 不是聽說他不喜歡爬山嘛。 · ⟦Sao mọi người nói anh đi Hà Nội cơ mà.⟧ → 大家不是都說你去河內了嘛。
+⟦ngót⟧：表示大概的數目、數量，意為「將近、差不多」。
+⟦Ngót một triệu một cái đấy.⟧ → 一個將近一百萬盾呢。 · ⟦Phải đến ngót trăm người đến xem.⟧ → 來看的人差不多有一百個。 · ⟦Có thể giá vé đi du thuyền phải đến ngót một triệu.⟧ → 遊船票價可能要將近一百萬盾。 · ⟦Cái túi này ngót năm trăm đấy.⟧ → 這個包包將近五十萬盾呢。 · ⟦Có ngót 100 cái ghế trong hội trường.⟧ → 會場裡有將近100張椅子。
+=en
+Grammar notes
+⟦cơ mà⟧: "but ~, didn't you say ~" – a mainly colloquial expression used to stress the certainty of some information.
+⟦Trước đây cậu thích bơi lắm cơ mà.⟧ → But you used to love swimming. · ⟦Sao bảo đồ ăn ở đây rẻ lắm cơ mà.⟧ → But you said the food here was really cheap. · ⟦Cậu thích ăn thịt gà lắm cơ mà.⟧ → But you love chicken. · ⟦Nghe nói anh ấy không thích leo núi cơ mà.⟧ → But I heard he doesn't like mountain climbing. · ⟦Sao mọi người nói anh đi Hà Nội cơ mà.⟧ → But everyone said you'd gone to Hanoi.
+⟦ngót⟧: expresses an approximate number or amount – "nearly, almost, about".
+⟦Ngót một triệu một cái đấy.⟧ → It's nearly a million (dong) each. · ⟦Phải đến ngót trăm người đến xem.⟧ → Nearly a hundred people came to watch. · ⟦Có thể giá vé đi du thuyền phải đến ngót một triệu.⟧ → A cruise ticket might cost nearly a million. · ⟦Cái túi này ngót năm trăm đấy.⟧ → This bag costs nearly five hundred (thousand dong). · ⟦Có ngót 100 cái ghế trong hội trường.⟧ → There are nearly 100 chairs in the hall.
+=fr
+Notes de grammaire
+⟦cơ mà⟧ : « pourtant ~, tu disais bien que ~ » – expression surtout orale servant à souligner la certitude d'une information.
+⟦Trước đây cậu thích bơi lắm cơ mà.⟧ → Pourtant, avant, tu adorais nager. · ⟦Sao bảo đồ ăn ở đây rẻ lắm cơ mà.⟧ → Tu disais bien que la nourriture ici était très bon marché. · ⟦Cậu thích ăn thịt gà lắm cơ mà.⟧ → Pourtant tu adores le poulet. · ⟦Nghe nói anh ấy không thích leo núi cơ mà.⟧ → Pourtant, j'ai entendu dire qu'il n'aimait pas la montagne. · ⟦Sao mọi người nói anh đi Hà Nội cơ mà.⟧ → Tout le monde disait pourtant que tu étais parti à Hanoï.
+⟦ngót⟧ : exprime un nombre ou une quantité approximatifs – « près de, presque, environ ».
+⟦Ngót một triệu một cái đấy.⟧ → C'est près d'un million (de dongs) pièce. · ⟦Phải đến ngót trăm người đến xem.⟧ → Près d'une centaine de personnes sont venues voir. · ⟦Có thể giá vé đi du thuyền phải đến ngót một triệu.⟧ → Le billet de croisière peut coûter près d'un million. · ⟦Cái túi này ngót năm trăm đấy.⟧ → Ce sac coûte près de cinq cents (mille dongs). · ⟦Có ngót 100 cái ghế trong hội trường.⟧ → Il y a près de 100 chaises dans la salle.
+=de
+Grammatikerläuterungen
+⟦cơ mà⟧: „doch ~, du hast doch gesagt ~“ – vorwiegend umgangssprachlich, um die Gewissheit einer Information zu betonen.
+⟦Trước đây cậu thích bơi lắm cơ mà.⟧ → Früher bist du doch so gern geschwommen. · ⟦Sao bảo đồ ăn ở đây rẻ lắm cơ mà.⟧ → Du hast doch gesagt, das Essen hier sei sehr billig. · ⟦Cậu thích ăn thịt gà lắm cơ mà.⟧ → Du isst doch so gern Hähnchen. · ⟦Nghe nói anh ấy không thích leo núi cơ mà.⟧ → Ich habe doch gehört, dass er nicht gern bergsteigt. · ⟦Sao mọi người nói anh đi Hà Nội cơ mà.⟧ → Alle haben doch gesagt, du seist nach Hanoi gefahren.
+⟦ngót⟧: drückt eine ungefähre Zahl oder Menge aus – „fast, beinahe, knapp“.
+⟦Ngót một triệu một cái đấy.⟧ → Das Stück kostet fast eine Million (Dong). · ⟦Phải đến ngót trăm người đến xem.⟧ → Fast hundert Leute kamen zum Zuschauen. · ⟦Có thể giá vé đi du thuyền phải đến ngót một triệu.⟧ → Eine Kreuzfahrtkarte kann knapp eine Million kosten. · ⟦Cái túi này ngót năm trăm đấy.⟧ → Diese Tasche kostet fast fünfhundert (tausend Dong). · ⟦Có ngót 100 cái ghế trong hội trường.⟧ → Im Saal stehen knapp 100 Stühle.
+=hu
+Nyelvtani magyarázat
+⟦cơ mà⟧: „hiszen ~, pedig ~” – főleg beszélt nyelvi kifejezés, egy információ bizonyosságának hangsúlyozására.
+⟦Trước đây cậu thích bơi lắm cơ mà.⟧ → Hiszen régen nagyon szerettél úszni. · ⟦Sao bảo đồ ăn ở đây rẻ lắm cơ mà.⟧ → Hiszen azt mondtad, itt nagyon olcsó az étel. · ⟦Cậu thích ăn thịt gà lắm cơ mà.⟧ → Hiszen annyira szereted a csirkehúst. · ⟦Nghe nói anh ấy không thích leo núi cơ mà.⟧ → Pedig úgy hallottam, nem szeret hegyet mászni. · ⟦Sao mọi người nói anh đi Hà Nội cơ mà.⟧ → Pedig mindenki azt mondta, hogy Hanoiba mentél.
+⟦ngót⟧: hozzávetőleges számot vagy mennyiséget fejez ki – „majdnem, csaknem, közel”.
+⟦Ngót một triệu một cái đấy.⟧ → Darabja majdnem egymillió (dong). · ⟦Phải đến ngót trăm người đến xem.⟧ → Csaknem száz ember jött megnézni. · ⟦Có thể giá vé đi du thuyền phải đến ngót một triệu.⟧ → A sétahajó jegye akár közel egymillió is lehet. · ⟦Cái túi này ngót năm trăm đấy.⟧ → Ez a táska majdnem ötszáz(ezer dong). · ⟦Có ngót 100 cái ghế trong hội trường.⟧ → A teremben közel 100 szék van.
+=id
+Penjelasan tata bahasa
+⟦cơ mà⟧: "kan ~, padahal ~" – ungkapan yang terutama dipakai dalam bahasa lisan untuk menegaskan kepastian suatu informasi.
+⟦Trước đây cậu thích bơi lắm cơ mà.⟧ → Dulu kamu kan suka sekali berenang. · ⟦Sao bảo đồ ăn ở đây rẻ lắm cơ mà.⟧ → Katanya makanan di sini murah sekali, kan. · ⟦Cậu thích ăn thịt gà lắm cơ mà.⟧ → Kamu kan suka sekali daging ayam. · ⟦Nghe nói anh ấy không thích leo núi cơ mà.⟧ → Katanya dia kan tidak suka mendaki gunung. · ⟦Sao mọi người nói anh đi Hà Nội cơ mà.⟧ → Padahal semua orang bilang kamu pergi ke Hanoi.
+⟦ngót⟧: menyatakan jumlah atau kuantitas perkiraan – "hampir, sekitar, kurang lebih".
+⟦Ngót một triệu một cái đấy.⟧ → Satunya hampir satu juta (dong), lho. · ⟦Phải đến ngót trăm người đến xem.⟧ → Hampir seratus orang datang menonton. · ⟦Có thể giá vé đi du thuyền phải đến ngót một triệu.⟧ → Harga tiket kapal pesiar mungkin hampir satu juta. · ⟦Cái túi này ngót năm trăm đấy.⟧ → Tas ini hampir lima ratus (ribu dong), lho. · ⟦Có ngót 100 cái ghế trong hội trường.⟧ → Ada hampir 100 kursi di aula.
+=ja
+文法解説
+⟦cơ mà⟧：「～じゃない、～したでしょう」などの意味で、主に口語で使われ、述べる情報の確実性を強調して話したい場合に使います。
+⟦Trước đây cậu thích bơi lắm cơ mà.⟧ → 君、前は水泳がすごく好きだったじゃない。 · ⟦Sao bảo đồ ăn ở đây rẻ lắm cơ mà.⟧ → ここの料理は安いって言ってたじゃない。 · ⟦Cậu thích ăn thịt gà lắm cơ mà.⟧ → 君は鶏肉が大好きじゃない。 · ⟦Nghe nói anh ấy không thích leo núi cơ mà.⟧ → 彼は登山が嫌いだって聞いたじゃない。 · ⟦Sao mọi người nói anh đi Hà Nội cơ mà.⟧ → みんな、あなたはハノイに行ったって言ってたじゃない。
+⟦ngót⟧：おおよその数・量を表し、「約、ほど、近く」などの意味で使われます。
+⟦Ngót một triệu một cái đấy.⟧ → 一つ100万ドン近くするよ。 · ⟦Phải đến ngót trăm người đến xem.⟧ → 100人近くが見に来た。 · ⟦Có thể giá vé đi du thuyền phải đến ngót một triệu.⟧ → 遊覧船のチケットは100万ドン近くするかもしれない。 · ⟦Cái túi này ngót năm trăm đấy.⟧ → このかばんは50万ドン近くする。 · ⟦Có ngót 100 cái ghế trong hội trường.⟧ → 会場には100脚近くの椅子がある。
+=pl
+Objaśnienia gramatyczne
+⟦cơ mà⟧: „przecież ~, mówiłeś przecież, że ~” – wyrażenie głównie potoczne, podkreślające pewność danej informacji.
+⟦Trước đây cậu thích bơi lắm cơ mà.⟧ → Przecież dawniej tak lubiłeś pływać. · ⟦Sao bảo đồ ăn ở đây rẻ lắm cơ mà.⟧ → Mówiłeś przecież, że jedzenie tu jest bardzo tanie. · ⟦Cậu thích ăn thịt gà lắm cơ mà.⟧ → Przecież tak lubisz kurczaka. · ⟦Nghe nói anh ấy không thích leo núi cơ mà.⟧ → Przecież słyszałem, że on nie lubi chodzić po górach. · ⟦Sao mọi người nói anh đi Hà Nội cơ mà.⟧ → Przecież wszyscy mówili, że pojechałeś do Hanoi.
+⟦ngót⟧: wyraża przybliżoną liczbę lub ilość – „prawie, niemal, około”.
+⟦Ngót một triệu một cái đấy.⟧ → Sztuka kosztuje prawie milion (dongów). · ⟦Phải đến ngót trăm người đến xem.⟧ → Przyszło popatrzeć niemal sto osób. · ⟦Có thể giá vé đi du thuyền phải đến ngót một triệu.⟧ → Bilet na rejs może kosztować prawie milion. · ⟦Cái túi này ngót năm trăm đấy.⟧ → Ta torba kosztuje prawie pięćset (tysięcy dongów). · ⟦Có ngót 100 cái ghế trong hội trường.⟧ → W sali jest prawie 100 krzeseł.
+@@ pdf-grammar-c2251af628bc3df3#0
+=cs
+Gramatický výklad
+⟦hàng⟧: ve tvaru ⟦hàng⟧ + den, týden, měsíc, rok… znamená „každý den, každý týden, každý měsíc, každý rok“.
+⟦Hàng ngày đã có rất nhiều người tương tác với các doanh nghiệp dịch vụ.⟧ → Každý den je se servisními firmami v kontaktu velmi mnoho lidí. · ⟦Chúng tôi theo dõi chuyện kinh doanh của công ti hàng ngày.⟧ → Obchodní činnost firmy sledujeme denně. · ⟦Hàng ngày, hàng giờ tôi mong chờ tin tức của anh ấy.⟧ → Každý den a každou hodinu čekám na zprávy od něj. · ⟦Cửa hàng này đóng cửa vào chủ nhật hàng tuần.⟧ → Tento obchod je každou neděli zavřený. · ⟦Hàng năm cứ đến mùa hè là tôi lại về thăm quê.⟧ → Každý rok v létě jezdím domů do rodného kraje.
+⟦nói riêng ... nói chung⟧: ve tvaru ⟦A nói riêng B nói chung⟧ zdůrazňuje zároveň část i celek: „A zvlášť, B obecně / A a potažmo celé B“.
+⟦Nhu cầu của cá nhân nói riêng, nhu cầu của con người nói chung đang đòi hỏi phải có những dịch vụ tốt nhất, chuyên nghiệp và năng động cao.⟧ → Potřeby jednotlivce zvlášť a lidí obecně vyžadují ty nejlepší, profesionální a vysoce flexibilní služby. · ⟦Kinh doanh du lịch nói riêng, kinh doanh dịch vụ nói chung đã gặp rất nhiều khó khăn vì đại dịch Covid 19.⟧ → Cestovní ruch zvlášť a služby obecně se kvůli pandemii covidu-19 potýkaly s mnoha obtížemi. · ⟦Năm nay, lớp ta nói riêng, trường ta nói chung đều có nhiều tiến bộ trong học tập.⟧ → Letos udělala naše třída zvlášť i naše škola jako celek velký pokrok ve studiu.
+=zh_cn
+语法解说
+⟦hàng⟧：以 ⟦hàng⟧ + 日、周、月、年…… 的形式，表示“每天、每周、每月、每年”。
+⟦Hàng ngày đã có rất nhiều người tương tác với các doanh nghiệp dịch vụ.⟧ → 每天都有很多人与服务企业打交道。 · ⟦Chúng tôi theo dõi chuyện kinh doanh của công ti hàng ngày.⟧ → 我们每天关注公司的经营情况。 · ⟦Hàng ngày, hàng giờ tôi mong chờ tin tức của anh ấy.⟧ → 我每天每时都在盼着他的消息。 · ⟦Cửa hàng này đóng cửa vào chủ nhật hàng tuần.⟧ → 这家店每周日关门。 · ⟦Hàng năm cứ đến mùa hè là tôi lại về thăm quê.⟧ → 每年一到夏天我就回老家。
+⟦nói riêng ... nói chung⟧：以 ⟦A nói riêng B nói chung⟧ 的形式，同时强调部分和整体，意为“具体来说A，总体来说B”。
+⟦Nhu cầu của cá nhân nói riêng, nhu cầu của con người nói chung đang đòi hỏi phải có những dịch vụ tốt nhất, chuyên nghiệp và năng động cao.⟧ → 具体到个人的需求，乃至人们的普遍需求，都要求有最好、专业且高度灵活的服务。 · ⟦Kinh doanh du lịch nói riêng, kinh doanh dịch vụ nói chung đã gặp rất nhiều khó khăn vì đại dịch Covid 19.⟧ → 具体到旅游业，乃至整个服务业，都因新冠疫情遭遇了很多困难。 · ⟦Năm nay, lớp ta nói riêng, trường ta nói chung đều có nhiều tiến bộ trong học tập.⟧ → 今年，具体到我们班，乃至我们全校，学习上都有很大进步。
+=zh
+文法解說
+⟦hàng⟧：以 ⟦hàng⟧ + 日、週、月、年…… 的形式，表示「每天、每週、每月、每年」。
+⟦Hàng ngày đã có rất nhiều người tương tác với các doanh nghiệp dịch vụ.⟧ → 每天都有很多人與服務業者打交道。 · ⟦Chúng tôi theo dõi chuyện kinh doanh của công ti hàng ngày.⟧ → 我們每天關注公司的經營狀況。 · ⟦Hàng ngày, hàng giờ tôi mong chờ tin tức của anh ấy.⟧ → 我每天每時都在盼著他的消息。 · ⟦Cửa hàng này đóng cửa vào chủ nhật hàng tuần.⟧ → 這家店每週日公休。 · ⟦Hàng năm cứ đến mùa hè là tôi lại về thăm quê.⟧ → 每年一到夏天我就回老家。
+⟦nói riêng ... nói chung⟧：以 ⟦A nói riêng B nói chung⟧ 的形式，同時強調部分和整體，意為「具體來說A，整體來說B」。
+⟦Nhu cầu của cá nhân nói riêng, nhu cầu của con người nói chung đang đòi hỏi phải có những dịch vụ tốt nhất, chuyên nghiệp và năng động cao.⟧ → 具體到個人的需求，乃至人們的普遍需求，都要求有最好、專業且高度靈活的服務。 · ⟦Kinh doanh du lịch nói riêng, kinh doanh dịch vụ nói chung đã gặp rất nhiều khó khăn vì đại dịch Covid 19.⟧ → 具體到旅遊業，乃至整個服務業，都因新冠疫情遭遇了很多困難。 · ⟦Năm nay, lớp ta nói riêng, trường ta nói chung đều có nhiều tiến bộ trong học tập.⟧ → 今年，具體到我們班，乃至我們全校，學業上都有很大進步。
+=en
+Grammar notes
+⟦hàng⟧: in the form ⟦hàng⟧ + day, week, month, year…, means "every day, every week, every month, every year".
+⟦Hàng ngày đã có rất nhiều người tương tác với các doanh nghiệp dịch vụ.⟧ → Every day, a great many people interact with service businesses. · ⟦Chúng tôi theo dõi chuyện kinh doanh của công ti hàng ngày.⟧ → We follow the company's business daily. · ⟦Hàng ngày, hàng giờ tôi mong chờ tin tức của anh ấy.⟧ → Every day, every hour, I wait for news from him. · ⟦Cửa hàng này đóng cửa vào chủ nhật hàng tuần.⟧ → This shop is closed every Sunday. · ⟦Hàng năm cứ đến mùa hè là tôi lại về thăm quê.⟧ → Every year, when summer comes, I go back to my hometown.
+⟦nói riêng ... nói chung⟧: in the form ⟦A nói riêng B nói chung⟧, emphasizes both the part and the whole: "A in particular, and B in general".
+⟦Nhu cầu của cá nhân nói riêng, nhu cầu của con người nói chung đang đòi hỏi phải có những dịch vụ tốt nhất, chuyên nghiệp và năng động cao.⟧ → Individual needs in particular, and human needs in general, demand the best, most professional and highly dynamic services. · ⟦Kinh doanh du lịch nói riêng, kinh doanh dịch vụ nói chung đã gặp rất nhiều khó khăn vì đại dịch Covid 19.⟧ → The tourism business in particular, and the service business in general, faced many difficulties because of the Covid-19 pandemic. · ⟦Năm nay, lớp ta nói riêng, trường ta nói chung đều có nhiều tiến bộ trong học tập.⟧ → This year, our class in particular and our school in general have made great progress in their studies.
+=fr
+Notes de grammaire
+⟦hàng⟧ : sous la forme ⟦hàng⟧ + jour, semaine, mois, année…, signifie « chaque jour, chaque semaine, chaque mois, chaque année ».
+⟦Hàng ngày đã có rất nhiều người tương tác với các doanh nghiệp dịch vụ.⟧ → Chaque jour, de très nombreuses personnes sont en contact avec des entreprises de services. · ⟦Chúng tôi theo dõi chuyện kinh doanh của công ti hàng ngày.⟧ → Nous suivons quotidiennement les affaires de l'entreprise. · ⟦Hàng ngày, hàng giờ tôi mong chờ tin tức của anh ấy.⟧ → Chaque jour, à chaque heure, j'attends de ses nouvelles. · ⟦Cửa hàng này đóng cửa vào chủ nhật hàng tuần.⟧ → Ce magasin ferme tous les dimanches. · ⟦Hàng năm cứ đến mùa hè là tôi lại về thăm quê.⟧ → Chaque année, dès l'été, je retourne dans mon village natal.
+⟦nói riêng ... nói chung⟧ : sous la forme ⟦A nói riêng B nói chung⟧, met en relief à la fois la partie et le tout : « A en particulier, et B en général ».
+⟦Nhu cầu của cá nhân nói riêng, nhu cầu của con người nói chung đang đòi hỏi phải có những dịch vụ tốt nhất, chuyên nghiệp và năng động cao.⟧ → Les besoins de l'individu en particulier, et ceux de l'être humain en général, exigent les meilleurs services, professionnels et très dynamiques. · ⟦Kinh doanh du lịch nói riêng, kinh doanh dịch vụ nói chung đã gặp rất nhiều khó khăn vì đại dịch Covid 19.⟧ → Le tourisme en particulier, et les services en général, ont connu de grandes difficultés à cause de la pandémie de Covid-19. · ⟦Năm nay, lớp ta nói riêng, trường ta nói chung đều có nhiều tiến bộ trong học tập.⟧ → Cette année, notre classe en particulier et notre école en général ont fait de grands progrès.
+=de
+Grammatikerläuterungen
+⟦hàng⟧: in der Form ⟦hàng⟧ + Tag, Woche, Monat, Jahr … bedeutet es „täglich, wöchentlich, monatlich, jährlich“.
+⟦Hàng ngày đã có rất nhiều người tương tác với các doanh nghiệp dịch vụ.⟧ → Täglich haben sehr viele Menschen mit Dienstleistungsunternehmen zu tun. · ⟦Chúng tôi theo dõi chuyện kinh doanh của công ti hàng ngày.⟧ → Wir verfolgen die Geschäfte der Firma täglich. · ⟦Hàng ngày, hàng giờ tôi mong chờ tin tức của anh ấy.⟧ → Jeden Tag, jede Stunde warte ich auf Nachricht von ihm. · ⟦Cửa hàng này đóng cửa vào chủ nhật hàng tuần.⟧ → Dieser Laden ist jeden Sonntag geschlossen. · ⟦Hàng năm cứ đến mùa hè là tôi lại về thăm quê.⟧ → Jedes Jahr im Sommer fahre ich in meine Heimat.
+⟦nói riêng ... nói chung⟧: in der Form ⟦A nói riêng B nói chung⟧ betont es zugleich den Teil und das Ganze: „A im Besonderen, B im Allgemeinen“.
+⟦Nhu cầu của cá nhân nói riêng, nhu cầu của con người nói chung đang đòi hỏi phải có những dịch vụ tốt nhất, chuyên nghiệp và năng động cao.⟧ → Die Bedürfnisse des Einzelnen im Besonderen und der Menschen im Allgemeinen verlangen nach besten, professionellen und hochdynamischen Dienstleistungen. · ⟦Kinh doanh du lịch nói riêng, kinh doanh dịch vụ nói chung đã gặp rất nhiều khó khăn vì đại dịch Covid 19.⟧ → Die Tourismusbranche im Besonderen und die Dienstleistungsbranche im Allgemeinen hatten wegen der Covid-19-Pandemie große Schwierigkeiten. · ⟦Năm nay, lớp ta nói riêng, trường ta nói chung đều có nhiều tiến bộ trong học tập.⟧ → Dieses Jahr haben unsere Klasse im Besonderen und unsere Schule im Allgemeinen große Lernfortschritte gemacht.
+=hu
+Nyelvtani magyarázat
+⟦hàng⟧: ⟦hàng⟧ + nap, hét, hónap, év… alakban jelentése „minden nap, minden héten, minden hónapban, minden évben”.
+⟦Hàng ngày đã có rất nhiều người tương tác với các doanh nghiệp dịch vụ.⟧ → Naponta nagyon sokan kerülnek kapcsolatba szolgáltató cégekkel. · ⟦Chúng tôi theo dõi chuyện kinh doanh của công ti hàng ngày.⟧ → Naponta figyelemmel kísérjük a cég üzleti ügyeit. · ⟦Hàng ngày, hàng giờ tôi mong chờ tin tức của anh ấy.⟧ → Minden nap, minden órában várom a híreit. · ⟦Cửa hàng này đóng cửa vào chủ nhật hàng tuần.⟧ → Ez az üzlet minden vasárnap zárva van. · ⟦Hàng năm cứ đến mùa hè là tôi lại về thăm quê.⟧ → Minden évben, amikor jön a nyár, hazalátogatok.
+⟦nói riêng ... nói chung⟧: ⟦A nói riêng B nói chung⟧ alakban egyszerre hangsúlyozza a részt és az egészet: „különösen A, általában véve B”.
+⟦Nhu cầu của cá nhân nói riêng, nhu cầu của con người nói chung đang đòi hỏi phải có những dịch vụ tốt nhất, chuyên nghiệp và năng động cao.⟧ → Különösen az egyén, általában véve pedig az emberek igényei a legjobb, professzionális és rendkívül rugalmas szolgáltatásokat követelik meg. · ⟦Kinh doanh du lịch nói riêng, kinh doanh dịch vụ nói chung đã gặp rất nhiều khó khăn vì đại dịch Covid 19.⟧ → Különösen a turizmus, általában véve pedig a szolgáltatóipar sok nehézséggel küzdött a Covid–19-járvány miatt. · ⟦Năm nay, lớp ta nói riêng, trường ta nói chung đều có nhiều tiến bộ trong học tập.⟧ → Idén különösen az osztályunk, de általában az egész iskolánk sokat fejlődött a tanulásban.
+=id
+Penjelasan tata bahasa
+⟦hàng⟧: dalam bentuk ⟦hàng⟧ + hari, minggu, bulan, tahun… berarti "setiap hari, setiap minggu, setiap bulan, setiap tahun".
+⟦Hàng ngày đã có rất nhiều người tương tác với các doanh nghiệp dịch vụ.⟧ → Setiap hari sangat banyak orang berinteraksi dengan perusahaan jasa. · ⟦Chúng tôi theo dõi chuyện kinh doanh của công ti hàng ngày.⟧ → Kami memantau urusan bisnis perusahaan setiap hari. · ⟦Hàng ngày, hàng giờ tôi mong chờ tin tức của anh ấy.⟧ → Setiap hari, setiap jam saya menantikan kabar darinya. · ⟦Cửa hàng này đóng cửa vào chủ nhật hàng tuần.⟧ → Toko ini tutup setiap hari Minggu. · ⟦Hàng năm cứ đến mùa hè là tôi lại về thăm quê.⟧ → Setiap tahun, begitu musim panas tiba, saya pulang kampung.
+⟦nói riêng ... nói chung⟧: dalam bentuk ⟦A nói riêng B nói chung⟧, menegaskan bagian sekaligus keseluruhan: "A khususnya, B pada umumnya".
+⟦Nhu cầu của cá nhân nói riêng, nhu cầu của con người nói chung đang đòi hỏi phải có những dịch vụ tốt nhất, chuyên nghiệp và năng động cao.⟧ → Kebutuhan individu khususnya, dan kebutuhan manusia pada umumnya, menuntut layanan terbaik, profesional, dan sangat dinamis. · ⟦Kinh doanh du lịch nói riêng, kinh doanh dịch vụ nói chung đã gặp rất nhiều khó khăn vì đại dịch Covid 19.⟧ → Bisnis pariwisata khususnya, dan bisnis jasa pada umumnya, mengalami banyak kesulitan akibat pandemi Covid-19. · ⟦Năm nay, lớp ta nói riêng, trường ta nói chung đều có nhiều tiến bộ trong học tập.⟧ → Tahun ini, kelas kita khususnya dan sekolah kita pada umumnya mengalami banyak kemajuan dalam belajar.
+=ja
+文法解説
+⟦hàng⟧：⟦hàng⟧ + 日、週、月、年… の形で、「毎日、毎週、毎月、毎年」などの意味で使われます。
+⟦Hàng ngày đã có rất nhiều người tương tác với các doanh nghiệp dịch vụ.⟧ → 毎日多くの人がサービス企業とやり取りをしている。 · ⟦Chúng tôi theo dõi chuyện kinh doanh của công ti hàng ngày.⟧ → 私たちは毎日会社の経営に注意を払っている。 · ⟦Hàng ngày, hàng giờ tôi mong chờ tin tức của anh ấy.⟧ → 毎日、毎時間、私は彼の知らせを待っている。 · ⟦Cửa hàng này đóng cửa vào chủ nhật hàng tuần.⟧ → この店は毎週日曜日に閉まる。 · ⟦Hàng năm cứ đến mùa hè là tôi lại về thăm quê.⟧ → 毎年夏が来ると、私は故郷に帰る。
+⟦nói riêng ... nói chung⟧：⟦A nói riêng B nói chung⟧ の形で全体と一部の両方を共に強調したいときに使い、「個別には（特に）A、全体的には（一般に）B」という意味です。
+⟦Nhu cầu của cá nhân nói riêng, nhu cầu của con người nói chung đang đòi hỏi phải có những dịch vụ tốt nhất, chuyên nghiệp và năng động cao.⟧ → 特に個人の、そして人々全般のサービスへの要求は、最高で専門的かつ非常に能動的なサービスの提供を求めている。 · ⟦Kinh doanh du lịch nói riêng, kinh doanh dịch vụ nói chung đã gặp rất nhiều khó khăn vì đại dịch Covid 19.⟧ → 特に旅行業、そしてサービス業全般が新型コロナの大流行で多くの困難に直面した。 · ⟦Năm nay, lớp ta nói riêng, trường ta nói chung đều có nhiều tiến bộ trong học tập.⟧ → 今年は特に私たちのクラス、そして学校全体が学業で大きく進歩した。
+=pl
+Objaśnienia gramatyczne
+⟦hàng⟧: w formie ⟦hàng⟧ + dzień, tydzień, miesiąc, rok… znaczy „codziennie, co tydzień, co miesiąc, co roku”.
+⟦Hàng ngày đã có rất nhiều người tương tác với các doanh nghiệp dịch vụ.⟧ → Codziennie bardzo wiele osób ma kontakt z firmami usługowymi. · ⟦Chúng tôi theo dõi chuyện kinh doanh của công ti hàng ngày.⟧ → Codziennie śledzimy działalność firmy. · ⟦Hàng ngày, hàng giờ tôi mong chờ tin tức của anh ấy.⟧ → Codziennie, co godzinę czekam na wieści od niego. · ⟦Cửa hàng này đóng cửa vào chủ nhật hàng tuần.⟧ → Ten sklep jest zamknięty w każdą niedzielę. · ⟦Hàng năm cứ đến mùa hè là tôi lại về thăm quê.⟧ → Co roku, gdy przychodzi lato, jeżdżę w rodzinne strony.
+⟦nói riêng ... nói chung⟧: w formie ⟦A nói riêng B nói chung⟧ podkreśla zarazem część i całość: „w szczególności A, a w ogóle B”.
+⟦Nhu cầu của cá nhân nói riêng, nhu cầu của con người nói chung đang đòi hỏi phải có những dịch vụ tốt nhất, chuyên nghiệp và năng động cao.⟧ → Potrzeby jednostki w szczególności, a ludzi w ogóle, wymagają najlepszych, profesjonalnych i bardzo elastycznych usług. · ⟦Kinh doanh du lịch nói riêng, kinh doanh dịch vụ nói chung đã gặp rất nhiều khó khăn vì đại dịch Covid 19.⟧ → Branża turystyczna w szczególności, a usługowa w ogóle, napotkała wiele trudności z powodu pandemii Covid-19. · ⟦Năm nay, lớp ta nói riêng, trường ta nói chung đều có nhiều tiến bộ trong học tập.⟧ → W tym roku nasza klasa w szczególności, a nasza szkoła w ogóle, zrobiła duże postępy w nauce.

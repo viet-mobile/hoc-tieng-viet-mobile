@@ -1,0 +1,122 @@
+@@ pdf-grammar-ddb22f958a24d376#0
+=cs
+Gramatický výklad
+⟦định⟧: ve tvaru ⟦định⟧ + sloveso znamená „mít v úmyslu, plánovat ~“.
+⟦Bác định cho thuê bao nhiêu tiền một tháng?⟧ → Za kolik měsíčně to chcete pronajímat? · ⟦Min-su định thuê một căn hộ đầy đủ tiện nghi.⟧ → Min-su si hodlá pronajmout plně vybavený byt. · ⟦Min-su định thuê căn hộ trong suốt cả năm.⟧ → Min-su si chce byt pronajmout na celý rok. · ⟦Min-su định trả tiền nhà vào chiều nay.⟧ → Min-su plánuje zaplatit nájem dnes odpoledne. · ⟦Min-su định sáng mai sẽ chuyển đến căn hộ mới thuê.⟧ → Min-su se zítra ráno chystá přestěhovat do nově pronajatého bytu. · ⟦Min-su định chiều mai sẽ tổ chức liên hoan mừng dọn về nhà mới.⟧ → Min-su chce zítra odpoledne uspořádat kolaudační večírek.
+⟦có (đủ) cả⟧: vyjadřuje, že určité věci jsou k dispozici úplně, nic nechybí („je tu všechno“).
+⟦Nhà có ti vi, điều hòa, bình nóng lạnh. Có đủ cả đấy.⟧ → V bytě je televize, klimatizace, ohřívač vody. Je tu úplně všechno. · ⟦Nhà còn có cả máy giặt nữa.⟧ → V bytě je dokonce i pračka. · ⟦Anh ấy mua sắm rất nhiều thứ: bàn ghế, ti vi, tủ lạnh, tủ áo. Mọi thứ đủ cả.⟧ → Nakoupil spoustu věcí: stoly a židle, televizi, lednici, šatník. Má všechno, co je potřeba.
+=zh_cn
+语法解说
+⟦định⟧：以 ⟦định⟧ + 动词 的形式，表示“打算……、准备……”。
+⟦Bác định cho thuê bao nhiêu tiền một tháng?⟧ → 大伯，您打算一个月租多少钱？ · ⟦Min-su định thuê một căn hộ đầy đủ tiện nghi.⟧ → 民秀打算租一套设施齐全的房子。 · ⟦Min-su định thuê căn hộ trong suốt cả năm.⟧ → 民秀打算租一整年。 · ⟦Min-su định trả tiền nhà vào chiều nay.⟧ → 民秀打算今天下午交房租。 · ⟦Min-su định sáng mai sẽ chuyển đến căn hộ mới thuê.⟧ → 民秀打算明天早上搬进新租的房子。 · ⟦Min-su định chiều mai sẽ tổ chức liên hoan mừng dọn về nhà mới.⟧ → 民秀打算明天下午办乔迁聚会。
+⟦có (đủ) cả⟧：用于表示“某些东西一样不缺、全都有”。
+⟦Nhà có ti vi, điều hòa, bình nóng lạnh. Có đủ cả đấy.⟧ → 房子里有电视、空调、热水器，什么都有。 · ⟦Nhà còn có cả máy giặt nữa.⟧ → 房子里连洗衣机都有。 · ⟦Anh ấy mua sắm rất nhiều thứ: bàn ghế, ti vi, tủ lạnh, tủ áo. Mọi thứ đủ cả.⟧ → 他买了很多东西：桌椅、电视、冰箱、衣柜，样样齐全。
+=zh
+文法解說
+⟦định⟧：以 ⟦định⟧ + 動詞 的形式，表示「打算……、準備……」。
+⟦Bác định cho thuê bao nhiêu tiền một tháng?⟧ → 伯伯，您打算一個月租多少錢？ · ⟦Min-su định thuê một căn hộ đầy đủ tiện nghi.⟧ → 民秀打算租一間設備齊全的房子。 · ⟦Min-su định thuê căn hộ trong suốt cả năm.⟧ → 民秀打算租一整年。 · ⟦Min-su định trả tiền nhà vào chiều nay.⟧ → 民秀打算今天下午繳房租。 · ⟦Min-su định sáng mai sẽ chuyển đến căn hộ mới thuê.⟧ → 民秀打算明天早上搬進新租的房子。 · ⟦Min-su định chiều mai sẽ tổ chức liên hoan mừng dọn về nhà mới.⟧ → 民秀打算明天下午辦喬遷派對。
+⟦có (đủ) cả⟧：用於表示「某些東西一樣不缺、全都有」。
+⟦Nhà có ti vi, điều hòa, bình nóng lạnh. Có đủ cả đấy.⟧ → 房子裡有電視、冷氣、熱水器，什麼都有。 · ⟦Nhà còn có cả máy giặt nữa.⟧ → 房子裡連洗衣機都有。 · ⟦Anh ấy mua sắm rất nhiều thứ: bàn ghế, ti vi, tủ lạnh, tủ áo. Mọi thứ đủ cả.⟧ → 他買了很多東西：桌椅、電視、冰箱、衣櫃，樣樣齊全。
+=en
+Grammar notes
+⟦định⟧: in the form ⟦định⟧ + verb, means "to plan to, intend to ~".
+⟦Bác định cho thuê bao nhiêu tiền một tháng?⟧ → How much are you planning to charge in rent per month? · ⟦Min-su định thuê một căn hộ đầy đủ tiện nghi.⟧ → Min-su plans to rent a fully furnished flat. · ⟦Min-su định thuê căn hộ trong suốt cả năm.⟧ → Min-su plans to rent the flat for a whole year. · ⟦Min-su định trả tiền nhà vào chiều nay.⟧ → Min-su plans to pay the rent this afternoon. · ⟦Min-su định sáng mai sẽ chuyển đến căn hộ mới thuê.⟧ → Min-su plans to move into his newly rented flat tomorrow morning. · ⟦Min-su định chiều mai sẽ tổ chức liên hoan mừng dọn về nhà mới.⟧ → Min-su plans to throw a housewarming party tomorrow afternoon.
+⟦có (đủ) cả⟧: expresses that certain things are all there, with nothing missing.
+⟦Nhà có ti vi, điều hòa, bình nóng lạnh. Có đủ cả đấy.⟧ → The flat has a TV, air conditioning and a water heater. It's got everything. · ⟦Nhà còn có cả máy giặt nữa.⟧ → The flat even has a washing machine. · ⟦Anh ấy mua sắm rất nhiều thứ: bàn ghế, ti vi, tủ lạnh, tủ áo. Mọi thứ đủ cả.⟧ → He bought lots of things: a table and chairs, a TV, a fridge, a wardrobe. He's got everything.
+=fr
+Notes de grammaire
+⟦định⟧ : sous la forme ⟦định⟧ + verbe, signifie « avoir l'intention de, compter ~ ».
+⟦Bác định cho thuê bao nhiêu tiền một tháng?⟧ → Combien comptez-vous demander de loyer par mois ? · ⟦Min-su định thuê một căn hộ đầy đủ tiện nghi.⟧ → Min-su compte louer un appartement tout équipé. · ⟦Min-su định thuê căn hộ trong suốt cả năm.⟧ → Min-su compte louer l'appartement pour toute l'année. · ⟦Min-su định trả tiền nhà vào chiều nay.⟧ → Min-su compte payer le loyer cet après-midi. · ⟦Min-su định sáng mai sẽ chuyển đến căn hộ mới thuê.⟧ → Min-su compte emménager demain matin dans l'appartement qu'il vient de louer. · ⟦Min-su định chiều mai sẽ tổ chức liên hoan mừng dọn về nhà mới.⟧ → Min-su compte organiser une crémaillère demain après-midi.
+⟦có (đủ) cả⟧ : exprime que certaines choses sont toutes présentes, sans rien qui manque.
+⟦Nhà có ti vi, điều hòa, bình nóng lạnh. Có đủ cả đấy.⟧ → L'appartement a une télé, la climatisation, un chauffe-eau. Il y a tout. · ⟦Nhà còn có cả máy giặt nữa.⟧ → Il y a même un lave-linge. · ⟦Anh ấy mua sắm rất nhiều thứ: bàn ghế, ti vi, tủ lạnh, tủ áo. Mọi thứ đủ cả.⟧ → Il a acheté beaucoup de choses : table et chaises, télé, réfrigérateur, armoire. Il ne manque rien.
+=de
+Grammatikerläuterungen
+⟦định⟧: in der Form ⟦định⟧ + Verb bedeutet es „vorhaben, planen ~ zu“.
+⟦Bác định cho thuê bao nhiêu tiền một tháng?⟧ → Wie viel Miete wollen Sie pro Monat verlangen? · ⟦Min-su định thuê một căn hộ đầy đủ tiện nghi.⟧ → Min-su hat vor, eine voll ausgestattete Wohnung zu mieten. · ⟦Min-su định thuê căn hộ trong suốt cả năm.⟧ → Min-su will die Wohnung für ein ganzes Jahr mieten. · ⟦Min-su định trả tiền nhà vào chiều nay.⟧ → Min-su will heute Nachmittag die Miete zahlen. · ⟦Min-su định sáng mai sẽ chuyển đến căn hộ mới thuê.⟧ → Min-su will morgen früh in die neu gemietete Wohnung ziehen. · ⟦Min-su định chiều mai sẽ tổ chức liên hoan mừng dọn về nhà mới.⟧ → Min-su plant, morgen Nachmittag eine Einweihungsparty zu geben.
+⟦có (đủ) cả⟧: drückt aus, dass bestimmte Dinge vollständig vorhanden sind und nichts fehlt.
+⟦Nhà có ti vi, điều hòa, bình nóng lạnh. Có đủ cả đấy.⟧ → Die Wohnung hat Fernseher, Klimaanlage und Warmwasserboiler. Es ist alles da. · ⟦Nhà còn có cả máy giặt nữa.⟧ → Die Wohnung hat sogar eine Waschmaschine. · ⟦Anh ấy mua sắm rất nhiều thứ: bàn ghế, ti vi, tủ lạnh, tủ áo. Mọi thứ đủ cả.⟧ → Er hat viele Dinge gekauft: Tisch und Stühle, Fernseher, Kühlschrank, Kleiderschrank. Es ist alles vorhanden.
+=hu
+Nyelvtani magyarázat
+⟦định⟧: ⟦định⟧ + ige alakban jelentése „szándékozik, tervez ~ni”.
+⟦Bác định cho thuê bao nhiêu tiền một tháng?⟧ → Mennyiért szándékozik havonta kiadni? · ⟦Min-su định thuê một căn hộ đầy đủ tiện nghi.⟧ → Min-su egy teljesen felszerelt lakást akar bérelni. · ⟦Min-su định thuê căn hộ trong suốt cả năm.⟧ → Min-su egész évre akarja bérelni a lakást. · ⟦Min-su định trả tiền nhà vào chiều nay.⟧ → Min-su ma délután tervezi kifizetni a lakbért. · ⟦Min-su định sáng mai sẽ chuyển đến căn hộ mới thuê.⟧ → Min-su holnap reggel tervez beköltözni az újonnan bérelt lakásba. · ⟦Min-su định chiều mai sẽ tổ chức liên hoan mừng dọn về nhà mới.⟧ → Min-su holnap délután lakásavató bulit tervez.
+⟦có (đủ) cả⟧: azt fejezi ki, hogy bizonyos dolgok hiánytalanul megvannak.
+⟦Nhà có ti vi, điều hòa, bình nóng lạnh. Có đủ cả đấy.⟧ → A lakásban van tévé, légkondi, vízmelegítő. Minden megvan. · ⟦Nhà còn có cả máy giặt nữa.⟧ → Még mosógép is van. · ⟦Anh ấy mua sắm rất nhiều thứ: bàn ghế, ti vi, tủ lạnh, tủ áo. Mọi thứ đủ cả.⟧ → Rengeteg mindent vett: asztalt, székeket, tévét, hűtőt, ruhásszekrényt. Minden megvan.
+=id
+Penjelasan tata bahasa
+⟦định⟧: dalam bentuk ⟦định⟧ + verba berarti "berencana, bermaksud ~".
+⟦Bác định cho thuê bao nhiêu tiền một tháng?⟧ → Bapak berencana menyewakannya berapa per bulan? · ⟦Min-su định thuê một căn hộ đầy đủ tiện nghi.⟧ → Min-su berencana menyewa apartemen yang fasilitasnya lengkap. · ⟦Min-su định thuê căn hộ trong suốt cả năm.⟧ → Min-su berencana menyewa apartemen selama setahun penuh. · ⟦Min-su định trả tiền nhà vào chiều nay.⟧ → Min-su berencana membayar sewa sore ini. · ⟦Min-su định sáng mai sẽ chuyển đến căn hộ mới thuê.⟧ → Min-su berencana pindah ke apartemen yang baru disewanya besok pagi. · ⟦Min-su định chiều mai sẽ tổ chức liên hoan mừng dọn về nhà mới.⟧ → Min-su berencana mengadakan syukuran rumah baru besok sore.
+⟦có (đủ) cả⟧: menyatakan bahwa barang-barang tertentu tersedia lengkap tanpa ada yang kurang.
+⟦Nhà có ti vi, điều hòa, bình nóng lạnh. Có đủ cả đấy.⟧ → Rumahnya ada TV, AC, pemanas air. Semuanya lengkap. · ⟦Nhà còn có cả máy giặt nữa.⟧ → Rumahnya bahkan ada mesin cuci. · ⟦Anh ấy mua sắm rất nhiều thứ: bàn ghế, ti vi, tủ lạnh, tủ áo. Mọi thứ đủ cả.⟧ → Dia membeli banyak barang: meja kursi, TV, kulkas, lemari pakaian. Semuanya lengkap.
+=ja
+文法解説
+⟦định⟧：⟦định⟧ + 動詞 の形で「～する予定だ、～するつもりだ」という意味で使われます。
+⟦Bác định cho thuê bao nhiêu tiền một tháng?⟧ → おじさん、一か月の家賃はいくらにするつもりですか。 · ⟦Min-su định thuê một căn hộ đầy đủ tiện nghi.⟧ → ミンスは設備が整った部屋を借りる予定だ。 · ⟦Min-su định thuê căn hộ trong suốt cả năm.⟧ → ミンスは1年間部屋を借りる予定だ。 · ⟦Min-su định trả tiền nhà vào chiều nay.⟧ → ミンスは今日の午後に家賃を払う予定だ。 · ⟦Min-su định sáng mai sẽ chuyển đến căn hộ mới thuê.⟧ → ミンスは明日の朝、新しく借りた部屋に引っ越す予定だ。 · ⟦Min-su định chiều mai sẽ tổ chức liên hoan mừng dọn về nhà mới.⟧ → ミンスは明日の午後、引っ越し祝いをする予定だ。
+⟦có (đủ) cả⟧：「ある物が漏れなく十分にそろっている」という意味を表すときに使います。
+⟦Nhà có ti vi, điều hòa, bình nóng lạnh. Có đủ cả đấy.⟧ → テレビ、エアコン、給湯器がそろっているよ。何もかも全部あるんだ。 · ⟦Nhà còn có cả máy giặt nữa.⟧ → 家には洗濯機まである。 · ⟦Anh ấy mua sắm rất nhiều thứ: bàn ghế, ti vi, tủ lạnh, tủ áo. Mọi thứ đủ cả.⟧ → 彼は机や椅子、テレビ、冷蔵庫、洋服だんすなど多くの物を買った。すべてそろった。
+=pl
+Objaśnienia gramatyczne
+⟦định⟧: w formie ⟦định⟧ + czasownik znaczy „zamierzać, planować ~”.
+⟦Bác định cho thuê bao nhiêu tiền một tháng?⟧ → Za ile miesięcznie zamierza pan wynająć? · ⟦Min-su định thuê một căn hộ đầy đủ tiện nghi.⟧ → Min-su zamierza wynająć w pełni wyposażone mieszkanie. · ⟦Min-su định thuê căn hộ trong suốt cả năm.⟧ → Min-su zamierza wynająć mieszkanie na cały rok. · ⟦Min-su định trả tiền nhà vào chiều nay.⟧ → Min-su planuje zapłacić czynsz dziś po południu. · ⟦Min-su định sáng mai sẽ chuyển đến căn hộ mới thuê.⟧ → Min-su planuje jutro rano przeprowadzić się do nowo wynajętego mieszkania. · ⟦Min-su định chiều mai sẽ tổ chức liên hoan mừng dọn về nhà mới.⟧ → Min-su planuje jutro po południu zorganizować parapetówkę.
+⟦có (đủ) cả⟧: wyraża, że określone rzeczy są w komplecie i niczego nie brakuje.
+⟦Nhà có ti vi, điều hòa, bình nóng lạnh. Có đủ cả đấy.⟧ → W mieszkaniu jest telewizor, klimatyzacja, podgrzewacz wody. Jest wszystko. · ⟦Nhà còn có cả máy giặt nữa.⟧ → Jest nawet pralka. · ⟦Anh ấy mua sắm rất nhiều thứ: bàn ghế, ti vi, tủ lạnh, tủ áo. Mọi thứ đủ cả.⟧ → Kupił mnóstwo rzeczy: stół i krzesła, telewizor, lodówkę, szafę. Ma wszystko.
+@@ pdf-grammar-b2b587d0bf942dce#0
+=cs
+Gramatický výklad
+⟦mới chỉ⟧: „teprve, jen“ – vyjadřuje časově velmi brzký nebo množstevně velmi malý stupeň.
+⟦Bố tôi mới chỉ 55 tuổi.⟧ → Mému otci je teprve 55 let. · ⟦Bây giờ mới chỉ là 5 giờ sáng.⟧ → Je teprve pět hodin ráno. · ⟦Em tôi mới chỉ học lớp 11.⟧ → Můj mladší sourozenec chodí teprve do 11. třídy. · ⟦Tôi mới chỉ là sinh viên năm thứ nhất.⟧ → Jsem teprve student prvního ročníku. · ⟦Ông tôi năm nay mới chỉ ngoài 65 tuổi.⟧ → Mému dědečkovi je letos teprve něco přes 65.
+⟦sao mà⟧: „jak jen, proč tak“ – vyjadřuje obdiv či údiv nad příčinou toho, že se něco stalo.
+⟦Bữa cơm gia đình sao mà nhớ da diết thế!⟧ → Jak jen se mi tak palčivě stýská po rodinném jídle! · ⟦Mẹ tôi nấu nướng sao mà ngon thế!⟧ → Jak to, že maminka vaří tak dobře! · ⟦Mái ấm gia đình sao mà hạnh phúc thế!⟧ → Jak šťastný je rodinný krb! · ⟦Sao mà tôi lại muốn về thăm nhà đến thế!⟧ → Proč jen se mi tolik chce domů! · ⟦Sao mà quên được những ngày tháng sống cùng bố mẹ.⟧ → Jak bych mohl zapomenout na dny, kdy jsem žil s rodiči!
+=zh_cn
+语法解说
+⟦mới chỉ⟧：意为“才、仅仅”，用于表示时间上太早或数量上很少的程度。
+⟦Bố tôi mới chỉ 55 tuổi.⟧ → 我父亲才55岁。 · ⟦Bây giờ mới chỉ là 5 giờ sáng.⟧ → 现在才凌晨5点。 · ⟦Em tôi mới chỉ học lớp 11.⟧ → 我弟弟／妹妹才上11年级（高二）。 · ⟦Tôi mới chỉ là sinh viên năm thứ nhất.⟧ → 我才是大一学生。 · ⟦Ông tôi năm nay mới chỉ ngoài 65 tuổi.⟧ → 我爷爷今年才65岁出头。
+⟦sao mà⟧：意为“怎么那么、为什么这么”，用于对某事发生的原因表示感叹、惊讶。
+⟦Bữa cơm gia đình sao mà nhớ da diết thế!⟧ → 家里的饭菜怎么让人这么魂牵梦萦啊！ · ⟦Mẹ tôi nấu nướng sao mà ngon thế!⟧ → 妈妈做的饭怎么这么好吃！ · ⟦Mái ấm gia đình sao mà hạnh phúc thế!⟧ → 家这个温暖的窝怎么这么幸福！ · ⟦Sao mà tôi lại muốn về thăm nhà đến thế!⟧ → 我怎么这么想回家啊！ · ⟦Sao mà quên được những ngày tháng sống cùng bố mẹ.⟧ → 怎么能忘记和父母一起生活的日子！
+=zh
+文法解說
+⟦mới chỉ⟧：意為「才、僅僅」，用於表示時間上太早或數量上很少的程度。
+⟦Bố tôi mới chỉ 55 tuổi.⟧ → 我父親才55歲。 · ⟦Bây giờ mới chỉ là 5 giờ sáng.⟧ → 現在才清晨5點。 · ⟦Em tôi mới chỉ học lớp 11.⟧ → 我弟弟／妹妹才讀11年級（高二）。 · ⟦Tôi mới chỉ là sinh viên năm thứ nhất.⟧ → 我才是大一學生。 · ⟦Ông tôi năm nay mới chỉ ngoài 65 tuổi.⟧ → 我爺爺今年才65歲出頭。
+⟦sao mà⟧：意為「怎麼那麼、為什麼這麼」，用於對某事發生的原因表示感嘆、驚訝。
+⟦Bữa cơm gia đình sao mà nhớ da diết thế!⟧ → 家裡的飯菜怎麼讓人這麼魂牽夢縈啊！ · ⟦Mẹ tôi nấu nướng sao mà ngon thế!⟧ → 媽媽做的菜怎麼這麼好吃！ · ⟦Mái ấm gia đình sao mà hạnh phúc thế!⟧ → 家這個溫暖的窩怎麼這麼幸福！ · ⟦Sao mà tôi lại muốn về thăm nhà đến thế!⟧ → 我怎麼這麼想回家啊！ · ⟦Sao mà quên được những ngày tháng sống cùng bố mẹ.⟧ → 怎麼能忘記和父母一起生活的日子！
+=en
+Grammar notes
+⟦mới chỉ⟧: "only just, only" – expresses that something is very early in time or very small in quantity.
+⟦Bố tôi mới chỉ 55 tuổi.⟧ → My father is only 55. · ⟦Bây giờ mới chỉ là 5 giờ sáng.⟧ → It's only 5 a.m. now. · ⟦Em tôi mới chỉ học lớp 11.⟧ → My younger sibling is only in 11th grade. · ⟦Tôi mới chỉ là sinh viên năm thứ nhất.⟧ → I'm only a first-year student. · ⟦Ông tôi năm nay mới chỉ ngoài 65 tuổi.⟧ → My grandfather is only just over 65 this year.
+⟦sao mà⟧: "how so ~, why so ~" – expresses admiration or surprise at the reason why something happens.
+⟦Bữa cơm gia đình sao mà nhớ da diết thế!⟧ → How achingly I miss family meals! · ⟦Mẹ tôi nấu nướng sao mà ngon thế!⟧ → How is Mum's cooking so delicious! · ⟦Mái ấm gia đình sao mà hạnh phúc thế!⟧ → How happy a warm family home is! · ⟦Sao mà tôi lại muốn về thăm nhà đến thế!⟧ → Why do I want to go home so much! · ⟦Sao mà quên được những ngày tháng sống cùng bố mẹ.⟧ → How could I ever forget the days I lived with my parents!
+=fr
+Notes de grammaire
+⟦mới chỉ⟧ : « seulement, ne … que » – exprime un degré très précoce dans le temps ou très faible en quantité.
+⟦Bố tôi mới chỉ 55 tuổi.⟧ → Mon père n'a que 55 ans. · ⟦Bây giờ mới chỉ là 5 giờ sáng.⟧ → Il n'est que 5 heures du matin. · ⟦Em tôi mới chỉ học lớp 11.⟧ → Mon petit frère (ma petite sœur) n'est qu'en 11e année (première). · ⟦Tôi mới chỉ là sinh viên năm thứ nhất.⟧ → Je ne suis qu'en première année d'université. · ⟦Ông tôi năm nay mới chỉ ngoài 65 tuổi.⟧ → Mon grand-père a tout juste un peu plus de 65 ans cette année.
+⟦sao mà⟧ : « comme, pourquoi tant » – exprime l'admiration ou l'étonnement quant à la raison pour laquelle une chose se produit.
+⟦Bữa cơm gia đình sao mà nhớ da diết thế!⟧ → Comme les repas en famille me manquent cruellement ! · ⟦Mẹ tôi nấu nướng sao mà ngon thế!⟧ → Comme la cuisine de maman est délicieuse ! · ⟦Mái ấm gia đình sao mà hạnh phúc thế!⟧ → Comme le foyer familial est heureux ! · ⟦Sao mà tôi lại muốn về thăm nhà đến thế!⟧ → Pourquoi ai-je tellement envie de rentrer à la maison ! · ⟦Sao mà quên được những ngày tháng sống cùng bố mẹ.⟧ → Comment oublier les jours passés à vivre avec mes parents !
+=de
+Grammatikerläuterungen
+⟦mới chỉ⟧: „erst, nur“ – drückt einen zeitlich sehr frühen oder mengenmäßig sehr geringen Grad aus.
+⟦Bố tôi mới chỉ 55 tuổi.⟧ → Mein Vater ist erst 55. · ⟦Bây giờ mới chỉ là 5 giờ sáng.⟧ → Es ist erst 5 Uhr morgens. · ⟦Em tôi mới chỉ học lớp 11.⟧ → Mein jüngeres Geschwister ist erst in der 11. Klasse. · ⟦Tôi mới chỉ là sinh viên năm thứ nhất.⟧ → Ich bin erst Student im ersten Jahr. · ⟦Ông tôi năm nay mới chỉ ngoài 65 tuổi.⟧ → Mein Großvater ist dieses Jahr erst etwas über 65.
+⟦sao mà⟧: „wie nur, warum so“ – drückt Bewunderung oder Erstaunen über den Grund aus, warum etwas geschieht.
+⟦Bữa cơm gia đình sao mà nhớ da diết thế!⟧ → Wie schmerzlich ich die Familienmahlzeiten vermisse! · ⟦Mẹ tôi nấu nướng sao mà ngon thế!⟧ → Wie kann Mama nur so lecker kochen! · ⟦Mái ấm gia đình sao mà hạnh phúc thế!⟧ → Wie glücklich das warme Familienheim ist! · ⟦Sao mà tôi lại muốn về thăm nhà đến thế!⟧ → Warum möchte ich nur so sehr nach Hause! · ⟦Sao mà quên được những ngày tháng sống cùng bố mẹ.⟧ → Wie könnte ich die Tage vergessen, die ich mit meinen Eltern verbracht habe!
+=hu
+Nyelvtani magyarázat
+⟦mới chỉ⟧: „még csak, csupán” – időben nagyon korai vagy mennyiségben nagyon csekély mértéket fejez ki.
+⟦Bố tôi mới chỉ 55 tuổi.⟧ → Apám még csak 55 éves. · ⟦Bây giờ mới chỉ là 5 giờ sáng.⟧ → Még csak hajnali 5 óra van. · ⟦Em tôi mới chỉ học lớp 11.⟧ → A kistestvérem még csak 11. osztályos. · ⟦Tôi mới chỉ là sinh viên năm thứ nhất.⟧ → Még csak elsőéves egyetemista vagyok. · ⟦Ông tôi năm nay mới chỉ ngoài 65 tuổi.⟧ → Nagyapám idén még csak valamivel több mint 65 éves.
+⟦sao mà⟧: „hogy lehet, hogy ilyen; miért ennyire” – csodálatot vagy meglepetést fejez ki valami bekövetkezésének oka miatt.
+⟦Bữa cơm gia đình sao mà nhớ da diết thế!⟧ → Mennyire fájón hiányoznak a családi étkezések! · ⟦Mẹ tôi nấu nướng sao mà ngon thế!⟧ → Hogy tud anyám ilyen finomat főzni! · ⟦Mái ấm gia đình sao mà hạnh phúc thế!⟧ → Milyen boldog a meleg családi fészek! · ⟦Sao mà tôi lại muốn về thăm nhà đến thế!⟧ → Miért vágyom ennyire haza! · ⟦Sao mà quên được những ngày tháng sống cùng bố mẹ.⟧ → Hogy is felejthetném el a szüleimmel töltött napokat!
+=id
+Penjelasan tata bahasa
+⟦mới chỉ⟧: "baru, hanya" – menyatakan tingkat yang terlalu awal dari segi waktu atau sangat sedikit dari segi jumlah.
+⟦Bố tôi mới chỉ 55 tuổi.⟧ → Ayah saya baru 55 tahun. · ⟦Bây giờ mới chỉ là 5 giờ sáng.⟧ → Sekarang baru pukul 5 pagi. · ⟦Em tôi mới chỉ học lớp 11.⟧ → Adik saya baru kelas 11. · ⟦Tôi mới chỉ là sinh viên năm thứ nhất.⟧ → Saya baru mahasiswa tahun pertama. · ⟦Ông tôi năm nay mới chỉ ngoài 65 tuổi.⟧ → Kakek saya tahun ini baru sedikit di atas 65 tahun.
+⟦sao mà⟧: "kenapa bisa begitu, betapa" – menyatakan kekaguman atau keheranan atas penyebab terjadinya sesuatu.
+⟦Bữa cơm gia đình sao mà nhớ da diết thế!⟧ → Betapa rindunya aku pada makan bersama keluarga! · ⟦Mẹ tôi nấu nướng sao mà ngon thế!⟧ → Kenapa masakan ibu bisa seenak itu! · ⟦Mái ấm gia đình sao mà hạnh phúc thế!⟧ → Betapa bahagianya kehangatan rumah keluarga! · ⟦Sao mà tôi lại muốn về thăm nhà đến thế!⟧ → Kenapa aku begitu ingin pulang ke rumah! · ⟦Sao mà quên được những ngày tháng sống cùng bố mẹ.⟧ → Bagaimana mungkin melupakan hari-hari tinggal bersama orang tua!
+=ja
+文法解説
+⟦mới chỉ⟧：「まだ（やっと）～」という意味で、時間的に早すぎる、または量的にとても少ない程度を表すときに使います。
+⟦Bố tôi mới chỉ 55 tuổi.⟧ → 父はまだ55歳だ。 · ⟦Bây giờ mới chỉ là 5 giờ sáng.⟧ → 今はまだ朝の5時だ。 · ⟦Em tôi mới chỉ học lớp 11.⟧ → 私の弟（妹）はまだ11年生（高校2年生）だ。 · ⟦Tôi mới chỉ là sinh viên năm thứ nhất.⟧ → 私はまだ大学1年生だ。 · ⟦Ông tôi năm nay mới chỉ ngoài 65 tuổi.⟧ → 今年、祖父はまだ65歳を少し過ぎたばかりだ。
+⟦sao mà⟧：「なぜ、どうして、そんなに」などの意味で、ある事が起きた原因について感嘆や驚きを表すときに使います。
+⟦Bữa cơm gia đình sao mà nhớ da diết thế!⟧ → 家族との食事はどうしてこんなに切なく恋しいのだろう！ · ⟦Mẹ tôi nấu nướng sao mà ngon thế!⟧ → 母の料理はどうしてあんなにおいしいのだろう！ · ⟦Mái ấm gia đình sao mà hạnh phúc thế!⟧ → 家族という温かい巣はどうしてこんなに幸せなのだろう！ · ⟦Sao mà tôi lại muốn về thăm nhà đến thế!⟧ → どうして私はこんなに家に帰りたいのだろう！ · ⟦Sao mà quên được những ngày tháng sống cùng bố mẹ.⟧ → 両親と一緒に暮らした日々をどうして忘れられようか！
+=pl
+Objaśnienia gramatyczne
+⟦mới chỉ⟧: „dopiero, zaledwie” – wyraża stopień bardzo wczesny w czasie lub bardzo mały pod względem ilości.
+⟦Bố tôi mới chỉ 55 tuổi.⟧ → Mój ojciec ma dopiero 55 lat. · ⟦Bây giờ mới chỉ là 5 giờ sáng.⟧ → Jest dopiero piąta rano. · ⟦Em tôi mới chỉ học lớp 11.⟧ → Moje młodsze rodzeństwo jest dopiero w 11. klasie. · ⟦Tôi mới chỉ là sinh viên năm thứ nhất.⟧ → Jestem dopiero studentem pierwszego roku. · ⟦Ông tôi năm nay mới chỉ ngoài 65 tuổi.⟧ → Mój dziadek ma w tym roku zaledwie nieco ponad 65 lat.
+⟦sao mà⟧: „jakże, dlaczego tak” – wyraża podziw lub zdziwienie przyczyną, dla której coś się dzieje.
+⟦Bữa cơm gia đình sao mà nhớ da diết thế!⟧ → Jakże boleśnie tęsknię za rodzinnymi posiłkami! · ⟦Mẹ tôi nấu nướng sao mà ngon thế!⟧ → Jak mama może tak pysznie gotować! · ⟦Mái ấm gia đình sao mà hạnh phúc thế!⟧ → Jakże szczęśliwe jest ciepło rodzinnego domu! · ⟦Sao mà tôi lại muốn về thăm nhà đến thế!⟧ → Dlaczego tak bardzo chcę wrócić do domu! · ⟦Sao mà quên được những ngày tháng sống cùng bố mẹ.⟧ → Jakże zapomnieć dni spędzone z rodzicami!

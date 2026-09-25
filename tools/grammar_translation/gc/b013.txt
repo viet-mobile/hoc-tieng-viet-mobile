@@ -1,0 +1,404 @@
+@@ pdf-grammar-74141ab034b1b0a0#1
+~t 4. Přání a blahopřání|4. 祝愿与祝贺的表达|4. 祝願與祝賀的表達|4. Wishes and congratulations|4. Vœux et félicitations|4. Wünsche und Glückwünsche|4. Jókívánságok és gratuláció|4. Ungkapan harapan dan ucapan selamat|4. 祈願・お祝いの表現|4. Życzenia i gratulacje
+=cs
+⟦Chúc anh khỏi bệnh.⟧ — Brzy se uzdrav.
+⟦chúc⟧ znamená „přát (někomu něco)“.
+⟦Chúc sức khoẻ.⟧ — Hodně zdraví. / Na zdraví!
+⟦Chúc em ăn ngon.⟧ — Dobrou chuť.
+=zh_cn
+⟦Chúc anh khỏi bệnh.⟧ —— 祝你早日康复。
+⟦chúc⟧ 意为“祝愿、希望……”。
+⟦Chúc sức khoẻ.⟧ —— 祝身体健康。/ 为健康干杯！
+⟦Chúc em ăn ngon.⟧ —— 祝你吃得开心（请慢用）。
+=zh
+⟦Chúc anh khỏi bệnh.⟧ —— 祝你早日康復。
+⟦chúc⟧ 意為「祝願、希望……」。
+⟦Chúc sức khoẻ.⟧ —— 祝身體健康。/ 為健康乾杯！
+⟦Chúc em ăn ngon.⟧ —— 祝你吃得開心（請慢用）。
+=en
+⟦Chúc anh khỏi bệnh.⟧ — Get well soon.
+⟦chúc⟧ means "to wish (someone something)".
+⟦Chúc sức khoẻ.⟧ — Wishing you good health. / Cheers!
+⟦Chúc em ăn ngon.⟧ — Enjoy your meal.
+=fr
+⟦Chúc anh khỏi bệnh.⟧ — Bon rétablissement.
+⟦chúc⟧ signifie « souhaiter (quelque chose à quelqu'un) ».
+⟦Chúc sức khoẻ.⟧ — Bonne santé ! / À ta santé !
+⟦Chúc em ăn ngon.⟧ — Bon appétit.
+=de
+⟦Chúc anh khỏi bệnh.⟧ — Gute Besserung.
+⟦chúc⟧ bedeutet „(jemandem etwas) wünschen“.
+⟦Chúc sức khoẻ.⟧ — Viel Gesundheit! / Zum Wohl!
+⟦Chúc em ăn ngon.⟧ — Guten Appetit.
+=hu
+⟦Chúc anh khỏi bệnh.⟧ — Jobbulást!
+A ⟦chúc⟧ jelentése „kívánni (valakinek valamit)”.
+⟦Chúc sức khoẻ.⟧ — Jó egészséget! / Egészségére!
+⟦Chúc em ăn ngon.⟧ — Jó étvágyat.
+=id
+⟦Chúc anh khỏi bệnh.⟧ — Semoga lekas sembuh.
+⟦chúc⟧ berarti "mendoakan, mengharapkan (sesuatu untuk seseorang)".
+⟦Chúc sức khoẻ.⟧ — Semoga sehat selalu. / Bersulang!
+⟦Chúc em ăn ngon.⟧ — Selamat makan.
+=ja
+⟦Chúc anh khỏi bệnh.⟧ — 早く良くなりますように。
+⟦chúc⟧ は「祈る、～を願う」という意味です。
+⟦Chúc sức khoẻ.⟧ — 健康を祈ります。／健康に乾杯。
+⟦Chúc em ăn ngon.⟧ — おいしく召し上がれ。
+=pl
+⟦Chúc anh khỏi bệnh.⟧ — Szybkiego powrotu do zdrowia.
+⟦chúc⟧ znaczy „życzyć (komuś czegoś)”.
+⟦Chúc sức khoẻ.⟧ — Dużo zdrowia! / Na zdrowie!
+⟦Chúc em ăn ngon.⟧ — Smacznego.
+@@ pdf-grammar-b43eda6e50d23953#0
+=cs
+1. Výraz để
+⟦Để tôi khám bệnh cho.⟧ — Nechte mě, abych vás vyšetřil.
+⟦để⟧ má více významů, např. „položit, nechat“ a „aby, za účelem“.
+⟦Mình để sách trên bàn.⟧ — Položil jsem knihu na stůl.
+⟦Bạn học tiếng Việt để làm gì?⟧ — Proč (za jakým účelem) se učíš vietnamsky?
+„để + osoba + sloveso“ znamená „nechat osobu něco udělat“. Je-li osobou první osoba, znamená „nech mě …, udělám to já“.
+⟦Để tôi đi một mình.⟧ — Nech mě jít samotného.
+⟦Để em mời chị ăn cơm nhé.⟧ — Dovol, abych tě pozval na jídlo, sestro.
+Slovíčko: ⟦mời⟧ pozvat
+=zh_cn
+1. để 的表达
+⟦Để tôi khám bệnh cho.⟧ —— 我来给你看看病吧。
+⟦để⟧ 有“放置”“为了……”等多种意思。
+⟦Mình để sách trên bàn.⟧ —— 我把书放在桌子上了。
+⟦Bạn học tiếng Việt để làm gì?⟧ —— 你学越南语是为了做什么？
+这里“để + 对象 + 动词”意为“让对象做……”。对象是第一人称时，表示“让我来……、我来……吧”。
+⟦Để tôi đi một mình.⟧ —— 让我一个人去吧。
+⟦Để em mời chị ăn cơm nhé.⟧ —— 让我请姐姐吃饭吧。
+单词：⟦mời⟧ 邀请
+=zh
+1. để 的表達
+⟦Để tôi khám bệnh cho.⟧ —— 我來幫你看看病吧。
+⟦để⟧ 有「放置」「為了……」等多種意思。
+⟦Mình để sách trên bàn.⟧ —— 我把書放在桌子上了。
+⟦Bạn học tiếng Việt để làm gì?⟧ —— 你學越南語是為了做什麼？
+這裡「để + 對象 + 動詞」意為「讓對象做……」。對象是第一人稱時，表示「讓我來……、我來……吧」。
+⟦Để tôi đi một mình.⟧ —— 讓我一個人去吧。
+⟦Để em mời chị ăn cơm nhé.⟧ —— 讓我請姐姐吃飯吧。
+單字：⟦mời⟧ 邀請
+=en
+1. The word để
+⟦Để tôi khám bệnh cho.⟧ — Let me examine you.
+⟦để⟧ has several meanings, such as "to put, to leave" and "in order to".
+⟦Mình để sách trên bàn.⟧ — I put the book on the desk.
+⟦Bạn học tiếng Việt để làm gì?⟧ — What are you studying Vietnamese for?
+Here "để + person + verb" means "to let the person do something". When the person is the first person, it means "let me …, I'll …".
+⟦Để tôi đi một mình.⟧ — Let me go alone.
+⟦Để em mời chị ăn cơm nhé.⟧ — Let me treat you to a meal, sister.
+Word: ⟦mời⟧ to invite, to treat
+=fr
+1. L'expression để
+⟦Để tôi khám bệnh cho.⟧ — Laissez-moi vous examiner.
+⟦để⟧ a plusieurs sens, comme « poser, laisser » et « pour, afin de ».
+⟦Mình để sách trên bàn.⟧ — J'ai posé le livre sur la table.
+⟦Bạn học tiếng Việt để làm gì?⟧ — Pourquoi (dans quel but) apprends-tu le vietnamien ?
+Ici, « để + personne + verbe » signifie « laisser la personne faire quelque chose ». Si la personne est la 1re personne, cela signifie « laisse-moi …, je vais … ».
+⟦Để tôi đi một mình.⟧ — Laisse-moi y aller seul.
+⟦Để em mời chị ăn cơm nhé.⟧ — Laisse-moi t'inviter à manger, grande sœur.
+Mot : ⟦mời⟧ inviter
+=de
+1. Der Ausdruck để
+⟦Để tôi khám bệnh cho.⟧ — Lassen Sie mich Sie untersuchen.
+⟦để⟧ hat mehrere Bedeutungen, z. B. „legen, lassen“ und „um zu“.
+⟦Mình để sách trên bàn.⟧ — Ich habe das Buch auf den Tisch gelegt.
+⟦Bạn học tiếng Việt để làm gì?⟧ — Wozu lernst du Vietnamesisch?
+„để + Person + Verb“ bedeutet hier „die Person etwas tun lassen“. Ist die Person die 1. Person, bedeutet es „lass mich …, ich mache das“.
+⟦Để tôi đi một mình.⟧ — Lass mich allein gehen.
+⟦Để em mời chị ăn cơm nhé.⟧ — Lass mich dich zum Essen einladen, große Schwester.
+Wort: ⟦mời⟧ einladen
+=hu
+1. A để kifejezés
+⟦Để tôi khám bệnh cho.⟧ — Hadd vizsgáljam meg.
+A ⟦để⟧ többféle jelentésű, pl. „tenni, hagyni” és „azért, hogy”.
+⟦Mình để sách trên bàn.⟧ — Letettem a könyvet az asztalra.
+⟦Bạn học tiếng Việt để làm gì?⟧ — Minek (mi célból) tanulsz vietnámiul?
+Itt a „để + személy + ige” jelentése „hagyni, hogy valaki megtegyen valamit”. Ha a személy első személy, jelentése „hadd …, majd én …”.
+⟦Để tôi đi một mình.⟧ — Hadd menjek egyedül.
+⟦Để em mời chị ăn cơm nhé.⟧ — Hadd hívjalak meg ebédre, nővérem.
+Szó: ⟦mời⟧ meghívni
+=id
+1. Ungkapan để
+⟦Để tôi khám bệnh cho.⟧ — Biar saya periksakan.
+⟦để⟧ dipakai dengan berbagai makna, seperti "meletakkan, membiarkan" dan "untuk, supaya".
+⟦Mình để sách trên bàn.⟧ — Aku meletakkan buku di atas meja.
+⟦Bạn học tiếng Việt để làm gì?⟧ — Kamu belajar bahasa Vietnam untuk apa?
+Di sini "để + orang + kata kerja" berarti "membiarkan orang itu melakukan sesuatu". Jika orangnya orang pertama, artinya "biar saya …, saya saja yang …".
+⟦Để tôi đi một mình.⟧ — Biarkan saya pergi sendiri.
+⟦Để em mời chị ăn cơm nhé.⟧ — Biar saya yang mentraktir Kakak makan, ya.
+Kosakata: ⟦mời⟧ mengundang, mentraktir
+=ja
+1. để の表現
+⟦Để tôi khám bệnh cho.⟧ — 私が診察してみましょう。
+⟦để⟧ は「置く」「～するために」などいろいろな意味で使われます。
+⟦Mình để sách trên bàn.⟧ — 私は本を机の上に置いた。
+⟦Bạn học tiếng Việt để làm gì?⟧ — 君は何のためにベトナム語を勉強しているの？
+ここで「để ＋ 対象 ＋ 動詞」は「対象に～させておく」の意味です。対象が一人称の場合は「私に～させてください、私が～します」という意味で使われます。
+⟦Để tôi đi một mình.⟧ — 私一人で行かせて。
+⟦Để em mời chị ăn cơm nhé.⟧ — お姉さんに食事をごちそうさせてくださいね。
+単語：⟦mời⟧ 招待する
+=pl
+1. Wyrażenie để
+⟦Để tôi khám bệnh cho.⟧ — Pozwól, że cię zbadam.
+⟦để⟧ ma kilka znaczeń, np. „położyć, zostawić” i „żeby, aby”.
+⟦Mình để sách trên bàn.⟧ — Położyłem książkę na stole.
+⟦Bạn học tiếng Việt để làm gì?⟧ — Po co uczysz się wietnamskiego?
+Tutaj „để + osoba + czasownik” znaczy „pozwolić komuś coś zrobić”. Gdy osobą jest 1. osoba, znaczy „pozwól, że …, ja to zrobię”.
+⟦Để tôi đi một mình.⟧ — Pozwól mi iść samemu.
+⟦Để em mời chị ăn cơm nhé.⟧ — Pozwól, że zaproszę cię na obiad, siostro.
+Słówko: ⟦mời⟧ zapraszać
+@@ pdf-grammar-3df92357853564ca#0
+=cs
+Klíčový výraz: ⟦sao lại không⟧
+⟦sao (A) lại không ~ ?⟧ znamená „proč (A) (zase) ne~?“ a používá se, když někdo nedělá to, co by měl.
+Příklady:
+❶ ⟦Sao con lại không ăn cơm?⟧ — Proč nejíš?
+❷ Ⓐ ⟦Sao lại không gửi được tin nhắn nhỉ?⟧ — Proč se ta zpráva neodesílá?
+Ⓑ ⟦Bạn phải bấm vào biểu tượng này trước chứ!⟧ — Musíš nejdřív kliknout na tuhle ikonu!
+Různé pozdravy, když se lidé dlouho neviděli:
+⟦Lâu rồi mới gặp.⟧ — Dlouho jsme se neviděli.
+⟦Lâu lắm rồi không gặp.⟧ — Strašně dlouho jsme se neviděli.
+⟦Rất vui được gặp lại em.⟧ — Moc rád tě zase vidím.
+⟦Bao lâu rồi mới gặp nhau nhỉ?⟧ — Jak dlouho jsme se to neviděli?
+⟦Bao lâu rồi mình không gặp nhau?⟧ — Jak dlouho jsme se neviděli?
+Rozhovor: Min-ho, který přijel do Vietnamu na služební cestu, se na letišti setkává s vietnamskou kolegyní Trang, která ho vyzvedla.
+Min-ho: ⟦Trang à! Lâu rồi mới gặp em.⟧ — Trang! Dlouho jsme se neviděli.
+Trang: ⟦Chào anh Min-ho. Trông anh vẫn khoẻ nên em rất mừng! Bao lâu rồi mình không gặp nhau?⟧ — Dobrý den, Min-ho. Jsem moc ráda, že vypadáte pořád dobře! Jak dlouho jsme se neviděli?
+Min-ho: ⟦Hình như đã được gần một năm rồi. Em có gì mới không?⟧ — Asi už skoro rok. Co je u tebe nového?
+Trang: ⟦Em không có gì mới cả, anh ạ.⟧ — Nic nového.
+Min-ho: ⟦Sao lại không có?⟧ — Jak to, že nic?
+Trang: ⟦Ha ha. Anh Min-ho đến rồi thì chắc là em sắp có gì mới rồi đây!⟧ — Haha. Když už jste přijel, určitě u mě brzy něco nového bude!
+Procvičování vzorců — pozdrav po dlouhé době: ⟦Lâu rồi mới gặp em.⟧ / ⟦Lâu lắm rồi không gặp.⟧; otázka: ⟦Bao lâu rồi mình không gặp nhau?⟧ / ⟦Bao lâu rồi mới gặp nhau nhỉ?⟧; jak dlouho se neviděli: ⟦gần một năm⟧ (skoro rok), ⟦hơn nửa năm⟧ (přes půl roku).
+Vzor: Ⓐ ⟦Hôm nay là thứ Bảy mà sao em lại không đi gặp bạn trai?⟧ — Vždyť je sobota, proč nejdeš za přítelem? Ⓑ ⟦Bạn trai em đi công tác nước ngoài rồi ạ.⟧ — Můj přítel odjel na služební cestu do zahraničí.
+❶ Ⓐ ⟦Tuần sau, con thi mà sao con lại không ôn thi?⟧ — Příští týden máš zkoušku, proč se neučíš? Ⓑ ⟦Con đã ôn thi ở trường rồi mẹ ạ.⟧ — Už jsem se učil ve škole, mami.
+❷ Ⓐ ⟦Hôm nay là sinh nhật em mà sao em lại không có quà?⟧ — Dnes mám narozeniny, tak proč nemám dárek? Ⓑ ⟦Ha ha. Anh đã chuẩn bị quà cho em rồi.⟧ — Haha. Dárek pro tebe už mám připravený.
+Nová slovíčka: ⟦bấm⟧ zmáčknout | ⟦biểu tượng⟧ ikona, symbol | ⟦mình⟧ my | ⟦mừng⟧ radovat se, blahopřát
+=zh_cn
+核心表达：⟦sao lại không⟧
+⟦sao (A) lại không ~ ?⟧ 意为“（A）为什么（又）不……？”，用于对方没做理应做的事时。
+例句：
+❶ ⟦Sao con lại không ăn cơm?⟧ —— 你怎么不吃饭？
+❷ Ⓐ ⟦Sao lại không gửi được tin nhắn nhỉ?⟧ —— 短信怎么发不出去呢？
+Ⓑ ⟦Bạn phải bấm vào biểu tượng này trước chứ!⟧ —— 你得先点这个图标啊！
+久别重逢时的各种问候：
+⟦Lâu rồi mới gặp.⟧ —— 好久不见。
+⟦Lâu lắm rồi không gặp.⟧ —— 好久好久没见了。
+⟦Rất vui được gặp lại em.⟧ —— 很高兴再次见到你。
+⟦Bao lâu rồi mới gặp nhau nhỉ?⟧ —— 我们多久没见了呀？
+⟦Bao lâu rồi mình không gặp nhau?⟧ —— 我们有多久没见面了？
+对话：来越南出差的敏浩在机场与来接机的越南职员庄见面。
+敏浩：⟦Trang à! Lâu rồi mới gặp em.⟧ —— 庄！好久不见。
+庄：⟦Chào anh Min-ho. Trông anh vẫn khoẻ nên em rất mừng! Bao lâu rồi mình không gặp nhau?⟧ —— 敏浩哥好。看到你还是这么健康，我很高兴！我们多久没见了？
+敏浩：⟦Hình như đã được gần một năm rồi. Em có gì mới không?⟧ —— 好像快一年了。你有什么新鲜事吗？
+庄：⟦Em không có gì mới cả, anh ạ.⟧ —— 我没什么新鲜事。
+敏浩：⟦Sao lại không có?⟧ —— 怎么会没有呢？
+庄：⟦Ha ha. Anh Min-ho đến rồi thì chắc là em sắp có gì mới rồi đây!⟧ —— 哈哈，敏浩哥来了，我应该很快就会有新鲜事了！
+句型练习 —— 久别后的问候：⟦Lâu rồi mới gặp em.⟧ / ⟦Lâu lắm rồi không gặp.⟧；提问：⟦Bao lâu rồi mình không gặp nhau?⟧ / ⟦Bao lâu rồi mới gặp nhau nhỉ?⟧；没见的时间：⟦gần một năm⟧（快一年）、⟦hơn nửa năm⟧（半年多）。
+范例：Ⓐ ⟦Hôm nay là thứ Bảy mà sao em lại không đi gặp bạn trai?⟧ —— 今天是星期六，你怎么不去见男朋友？ Ⓑ ⟦Bạn trai em đi công tác nước ngoài rồi ạ.⟧ —— 我男朋友去国外出差了。
+❶ Ⓐ ⟦Tuần sau, con thi mà sao con lại không ôn thi?⟧ —— 下周你就要考试了，怎么不复习？ Ⓑ ⟦Con đã ôn thi ở trường rồi mẹ ạ.⟧ —— 妈，我已经在学校复习过了。
+❷ Ⓐ ⟦Hôm nay là sinh nhật em mà sao em lại không có quà?⟧ —— 今天是我生日，我怎么没有礼物？ Ⓑ ⟦Ha ha. Anh đã chuẩn bị quà cho em rồi.⟧ —— 哈哈，我已经为你准备好礼物了。
+新单词：⟦bấm⟧ 按 | ⟦biểu tượng⟧ 图标，象征 | ⟦mình⟧ 我们 | ⟦mừng⟧ 高兴，祝贺
+=zh
+核心表達：⟦sao lại không⟧
+⟦sao (A) lại không ~ ?⟧ 意為「（A）為什麼（又）不……？」，用於對方沒做理應做的事時。
+例句：
+❶ ⟦Sao con lại không ăn cơm?⟧ —— 你怎麼不吃飯？
+❷ Ⓐ ⟦Sao lại không gửi được tin nhắn nhỉ?⟧ —— 簡訊怎麼傳不出去呢？
+Ⓑ ⟦Bạn phải bấm vào biểu tượng này trước chứ!⟧ —— 你得先點這個圖示啊！
+久別重逢時的各種問候：
+⟦Lâu rồi mới gặp.⟧ —— 好久不見。
+⟦Lâu lắm rồi không gặp.⟧ —— 好久好久沒見了。
+⟦Rất vui được gặp lại em.⟧ —— 很高興再次見到你。
+⟦Bao lâu rồi mới gặp nhau nhỉ?⟧ —— 我們多久沒見了呀？
+⟦Bao lâu rồi mình không gặp nhau?⟧ —— 我們有多久沒見面了？
+對話：來越南出差的敏浩在機場與來接機的越南職員莊見面。
+敏浩：⟦Trang à! Lâu rồi mới gặp em.⟧ —— 莊！好久不見。
+莊：⟦Chào anh Min-ho. Trông anh vẫn khoẻ nên em rất mừng! Bao lâu rồi mình không gặp nhau?⟧ —— 敏浩哥好。看到你還是這麼健康，我很高興！我們多久沒見了？
+敏浩：⟦Hình như đã được gần một năm rồi. Em có gì mới không?⟧ —— 好像快一年了。你有什麼新鮮事嗎？
+莊：⟦Em không có gì mới cả, anh ạ.⟧ —— 我沒什麼新鮮事。
+敏浩：⟦Sao lại không có?⟧ —— 怎麼會沒有呢？
+莊：⟦Ha ha. Anh Min-ho đến rồi thì chắc là em sắp có gì mới rồi đây!⟧ —— 哈哈，敏浩哥來了，我應該很快就會有新鮮事了！
+句型練習 —— 久別後的問候：⟦Lâu rồi mới gặp em.⟧ / ⟦Lâu lắm rồi không gặp.⟧；提問：⟦Bao lâu rồi mình không gặp nhau?⟧ / ⟦Bao lâu rồi mới gặp nhau nhỉ?⟧；沒見的時間：⟦gần một năm⟧（快一年）、⟦hơn nửa năm⟧（半年多）。
+範例：Ⓐ ⟦Hôm nay là thứ Bảy mà sao em lại không đi gặp bạn trai?⟧ —— 今天是星期六，你怎麼不去見男朋友？ Ⓑ ⟦Bạn trai em đi công tác nước ngoài rồi ạ.⟧ —— 我男朋友去國外出差了。
+❶ Ⓐ ⟦Tuần sau, con thi mà sao con lại không ôn thi?⟧ —— 下週你就要考試了，怎麼不複習？ Ⓑ ⟦Con đã ôn thi ở trường rồi mẹ ạ.⟧ —— 媽，我已經在學校複習過了。
+❷ Ⓐ ⟦Hôm nay là sinh nhật em mà sao em lại không có quà?⟧ —— 今天是我生日，我怎麼沒有禮物？ Ⓑ ⟦Ha ha. Anh đã chuẩn bị quà cho em rồi.⟧ —— 哈哈，我已經為你準備好禮物了。
+新單字：⟦bấm⟧ 按 | ⟦biểu tượng⟧ 圖示，象徵 | ⟦mình⟧ 我們 | ⟦mừng⟧ 高興，祝賀
+=en
+Key expression: ⟦sao lại không⟧
+⟦sao (A) lại không ~ ?⟧ means "why (doesn't A) … (again)?" and is used when someone isn't doing what they should.
+Examples:
+❶ ⟦Sao con lại không ăn cơm?⟧ — Why aren't you eating?
+❷ Ⓐ ⟦Sao lại không gửi được tin nhắn nhỉ?⟧ — Why won't the message send?
+Ⓑ ⟦Bạn phải bấm vào biểu tượng này trước chứ!⟧ — You have to tap this icon first!
+Various greetings when meeting again after a long time:
+⟦Lâu rồi mới gặp.⟧ — Long time no see.
+⟦Lâu lắm rồi không gặp.⟧ — It's been ages since we met.
+⟦Rất vui được gặp lại em.⟧ — So glad to see you again.
+⟦Bao lâu rồi mới gặp nhau nhỉ?⟧ — How long has it been since we saw each other?
+⟦Bao lâu rồi mình không gặp nhau?⟧ — How long haven't we seen each other?
+Dialogue: Min-ho, on a business trip to Vietnam, meets Trang, a Vietnamese colleague who has come to pick him up at the airport.
+Min-ho: ⟦Trang à! Lâu rồi mới gặp em.⟧ — Trang! Long time no see.
+Trang: ⟦Chào anh Min-ho. Trông anh vẫn khoẻ nên em rất mừng! Bao lâu rồi mình không gặp nhau?⟧ — Hello, Min-ho. I'm so glad you still look well! How long has it been?
+Min-ho: ⟦Hình như đã được gần một năm rồi. Em có gì mới không?⟧ — It seems it's been almost a year. Anything new with you?
+Trang: ⟦Em không có gì mới cả, anh ạ.⟧ — Nothing new at all.
+Min-ho: ⟦Sao lại không có?⟧ — How come nothing?
+Trang: ⟦Ha ha. Anh Min-ho đến rồi thì chắc là em sắp có gì mới rồi đây!⟧ — Ha ha. Now that you're here, I'm sure something new will happen soon!
+Pattern practice — greeting after a long time: ⟦Lâu rồi mới gặp em.⟧ / ⟦Lâu lắm rồi không gặp.⟧; question: ⟦Bao lâu rồi mình không gặp nhau?⟧ / ⟦Bao lâu rồi mới gặp nhau nhỉ?⟧; time apart: ⟦gần một năm⟧ (almost a year), ⟦hơn nửa năm⟧ (more than half a year).
+Model: Ⓐ ⟦Hôm nay là thứ Bảy mà sao em lại không đi gặp bạn trai?⟧ — It's Saturday, so why aren't you going to see your boyfriend? Ⓑ ⟦Bạn trai em đi công tác nước ngoài rồi ạ.⟧ — My boyfriend has gone abroad on business.
+❶ Ⓐ ⟦Tuần sau, con thi mà sao con lại không ôn thi?⟧ — You have an exam next week, so why aren't you studying? Ⓑ ⟦Con đã ôn thi ở trường rồi mẹ ạ.⟧ — I already studied at school, Mom.
+❷ Ⓐ ⟦Hôm nay là sinh nhật em mà sao em lại không có quà?⟧ — It's my birthday today, so why don't I have a present? Ⓑ ⟦Ha ha. Anh đã chuẩn bị quà cho em rồi.⟧ — Ha ha. I've already got a present ready for you.
+New words: ⟦bấm⟧ to press, tap | ⟦biểu tượng⟧ icon, symbol | ⟦mình⟧ we, us | ⟦mừng⟧ to be glad, to congratulate
+=fr
+Expression clé : ⟦sao lại không⟧
+⟦sao (A) lại không ~ ?⟧ signifie « pourquoi (A) ne … (donc) pas ? » et s'emploie quand quelqu'un ne fait pas ce qu'il devrait.
+Exemples :
+❶ ⟦Sao con lại không ăn cơm?⟧ — Pourquoi tu ne manges pas ?
+❷ Ⓐ ⟦Sao lại không gửi được tin nhắn nhỉ?⟧ — Pourquoi le message ne part-il pas ?
+Ⓑ ⟦Bạn phải bấm vào biểu tượng này trước chứ!⟧ — Il faut d'abord appuyer sur cette icône !
+Différentes salutations quand on se revoit après longtemps :
+⟦Lâu rồi mới gặp.⟧ — Ça fait longtemps !
+⟦Lâu lắm rồi không gặp.⟧ — Ça fait une éternité qu'on ne s'est pas vus.
+⟦Rất vui được gặp lại em.⟧ — Très content de te revoir.
+⟦Bao lâu rồi mới gặp nhau nhỉ?⟧ — Ça fait combien de temps qu'on ne s'est pas vus ?
+⟦Bao lâu rồi mình không gặp nhau?⟧ — Depuis combien de temps ne s'est-on pas vus ?
+Dialogue : Min-ho, en voyage d'affaires au Viêt Nam, retrouve Trang, une collègue vietnamienne venue le chercher à l'aéroport.
+Min-ho : ⟦Trang à! Lâu rồi mới gặp em.⟧ — Trang ! Ça fait longtemps.
+Trang : ⟦Chào anh Min-ho. Trông anh vẫn khoẻ nên em rất mừng! Bao lâu rồi mình không gặp nhau?⟧ — Bonjour, Min-ho. Je suis ravie de voir que tu as toujours bonne mine ! Ça fait combien de temps ?
+Min-ho : ⟦Hình như đã được gần một năm rồi. Em có gì mới không?⟧ — Presque un an, il me semble. Quoi de neuf ?
+Trang : ⟦Em không có gì mới cả, anh ạ.⟧ — Rien de neuf du tout.
+Min-ho : ⟦Sao lại không có?⟧ — Comment ça, rien ?
+Trang : ⟦Ha ha. Anh Min-ho đến rồi thì chắc là em sắp có gì mới rồi đây!⟧ — Ha ha. Maintenant que tu es là, il va sûrement y avoir du nouveau !
+Exercices — salutation après longtemps : ⟦Lâu rồi mới gặp em.⟧ / ⟦Lâu lắm rồi không gặp.⟧ ; question : ⟦Bao lâu rồi mình không gặp nhau?⟧ / ⟦Bao lâu rồi mới gặp nhau nhỉ?⟧ ; durée : ⟦gần một năm⟧ (près d'un an), ⟦hơn nửa năm⟧ (plus de six mois).
+Modèle : Ⓐ ⟦Hôm nay là thứ Bảy mà sao em lại không đi gặp bạn trai?⟧ — C'est samedi, pourquoi tu ne vas pas voir ton petit ami ? Ⓑ ⟦Bạn trai em đi công tác nước ngoài rồi ạ.⟧ — Mon petit ami est parti en voyage d'affaires à l'étranger.
+❶ Ⓐ ⟦Tuần sau, con thi mà sao con lại không ôn thi?⟧ — Tu as un examen la semaine prochaine, pourquoi tu ne révises pas ? Ⓑ ⟦Con đã ôn thi ở trường rồi mẹ ạ.⟧ — J'ai déjà révisé à l'école, maman.
+❷ Ⓐ ⟦Hôm nay là sinh nhật em mà sao em lại không có quà?⟧ — C'est mon anniversaire, pourquoi je n'ai pas de cadeau ? Ⓑ ⟦Ha ha. Anh đã chuẩn bị quà cho em rồi.⟧ — Ha ha. Je t'ai déjà préparé un cadeau.
+Nouveaux mots : ⟦bấm⟧ appuyer | ⟦biểu tượng⟧ icône, symbole | ⟦mình⟧ nous | ⟦mừng⟧ se réjouir, féliciter
+=de
+Schlüsselausdruck: ⟦sao lại không⟧
+⟦sao (A) lại không ~ ?⟧ bedeutet „warum (tut A) denn nicht …?“ und wird verwendet, wenn jemand nicht tut, was er eigentlich tun sollte.
+Beispiele:
+❶ ⟦Sao con lại không ăn cơm?⟧ — Warum isst du denn nicht?
+❷ Ⓐ ⟦Sao lại không gửi được tin nhắn nhỉ?⟧ — Warum lässt sich die Nachricht nicht senden?
+Ⓑ ⟦Bạn phải bấm vào biểu tượng này trước chứ!⟧ — Du musst zuerst auf dieses Symbol tippen!
+Verschiedene Begrüßungen nach langer Zeit:
+⟦Lâu rồi mới gặp.⟧ — Lange nicht gesehen.
+⟦Lâu lắm rồi không gặp.⟧ — Wir haben uns ewig nicht gesehen.
+⟦Rất vui được gặp lại em.⟧ — Schön, dich wiederzusehen.
+⟦Bao lâu rồi mới gặp nhau nhỉ?⟧ — Wie lange haben wir uns eigentlich nicht gesehen?
+⟦Bao lâu rồi mình không gặp nhau?⟧ — Wie lange haben wir uns nicht gesehen?
+Dialog: Min-ho, der geschäftlich in Vietnam ist, trifft am Flughafen seine vietnamesische Kollegin Trang, die ihn abholt.
+Min-ho: ⟦Trang à! Lâu rồi mới gặp em.⟧ — Trang! Lange nicht gesehen.
+Trang: ⟦Chào anh Min-ho. Trông anh vẫn khoẻ nên em rất mừng! Bao lâu rồi mình không gặp nhau?⟧ — Hallo, Min-ho. Schön, dass du immer noch so gesund aussiehst! Wie lange ist es her?
+Min-ho: ⟦Hình như đã được gần một năm rồi. Em có gì mới không?⟧ — Fast ein Jahr, glaube ich. Gibt's was Neues bei dir?
+Trang: ⟦Em không có gì mới cả, anh ạ.⟧ — Gar nichts Neues.
+Min-ho: ⟦Sao lại không có?⟧ — Wieso denn nichts?
+Trang: ⟦Ha ha. Anh Min-ho đến rồi thì chắc là em sắp có gì mới rồi đây!⟧ — Haha. Jetzt, wo du da bist, gibt es sicher bald etwas Neues!
+Satzmusterübung — Begrüßung nach langer Zeit: ⟦Lâu rồi mới gặp em.⟧ / ⟦Lâu lắm rồi không gặp.⟧; Frage: ⟦Bao lâu rồi mình không gặp nhau?⟧ / ⟦Bao lâu rồi mới gặp nhau nhỉ?⟧; Dauer: ⟦gần một năm⟧ (fast ein Jahr), ⟦hơn nửa năm⟧ (über ein halbes Jahr).
+Muster: Ⓐ ⟦Hôm nay là thứ Bảy mà sao em lại không đi gặp bạn trai?⟧ — Heute ist doch Samstag, warum triffst du nicht deinen Freund? Ⓑ ⟦Bạn trai em đi công tác nước ngoài rồi ạ.⟧ — Mein Freund ist auf Geschäftsreise im Ausland.
+❶ Ⓐ ⟦Tuần sau, con thi mà sao con lại không ôn thi?⟧ — Du hast nächste Woche eine Prüfung, warum lernst du nicht? Ⓑ ⟦Con đã ôn thi ở trường rồi mẹ ạ.⟧ — Ich habe schon in der Schule gelernt, Mama.
+❷ Ⓐ ⟦Hôm nay là sinh nhật em mà sao em lại không có quà?⟧ — Heute ist mein Geburtstag, warum bekomme ich kein Geschenk? Ⓑ ⟦Ha ha. Anh đã chuẩn bị quà cho em rồi.⟧ — Haha. Ich habe schon ein Geschenk für dich vorbereitet.
+Neue Wörter: ⟦bấm⟧ drücken, tippen | ⟦biểu tượng⟧ Symbol, Icon | ⟦mình⟧ wir | ⟦mừng⟧ sich freuen, gratulieren
+=hu
+Kulcskifejezés: ⟦sao lại không⟧
+A ⟦sao (A) lại không ~ ?⟧ jelentése „miért nem … (A) (már megint)?”, akkor használjuk, ha valaki nem teszi meg, amit kellene.
+Példák:
+❶ ⟦Sao con lại không ăn cơm?⟧ — Miért nem eszel?
+❷ Ⓐ ⟦Sao lại không gửi được tin nhắn nhỉ?⟧ — Miért nem megy el az üzenet?
+Ⓑ ⟦Bạn phải bấm vào biểu tượng này trước chứ!⟧ — Előbb erre az ikonra kell rányomnod!
+Különféle köszönések hosszú idő utáni találkozáskor:
+⟦Lâu rồi mới gặp.⟧ — Rég láttalak.
+⟦Lâu lắm rồi không gặp.⟧ — Ezer éve nem láttalak.
+⟦Rất vui được gặp lại em.⟧ — Nagyon örülök, hogy újra látlak.
+⟦Bao lâu rồi mới gặp nhau nhỉ?⟧ — Mennyi ideje is nem találkoztunk?
+⟦Bao lâu rồi mình không gặp nhau?⟧ — Mióta nem láttuk egymást?
+Párbeszéd: Min-ho, aki üzleti útra érkezett Vietnámba, a repülőtéren találkozik Trang vietnámi kolléganőjével, aki elé jött.
+Min-ho: ⟦Trang à! Lâu rồi mới gặp em.⟧ — Trang! Rég láttalak.
+Trang: ⟦Chào anh Min-ho. Trông anh vẫn khoẻ nên em rất mừng! Bao lâu rồi mình không gặp nhau?⟧ — Szia, Min-ho. Nagyon örülök, hogy még mindig jól nézel ki! Mióta nem láttuk egymást?
+Min-ho: ⟦Hình như đã được gần một năm rồi. Em có gì mới không?⟧ — Úgy tűnik, majdnem egy éve. Mi újság veled?
+Trang: ⟦Em không có gì mới cả, anh ạ.⟧ — Semmi új.
+Min-ho: ⟦Sao lại không có?⟧ — Hogyhogy semmi?
+Trang: ⟦Ha ha. Anh Min-ho đến rồi thì chắc là em sắp có gì mới rồi đây!⟧ — Haha. Most, hogy megjöttél, biztosan hamarosan lesz valami újdonság!
+Mintagyakorlat — köszönés hosszú idő után: ⟦Lâu rồi mới gặp em.⟧ / ⟦Lâu lắm rồi không gặp.⟧; kérdés: ⟦Bao lâu rồi mình không gặp nhau?⟧ / ⟦Bao lâu rồi mới gặp nhau nhỉ?⟧; mennyi ideje: ⟦gần một năm⟧ (majdnem egy éve), ⟦hơn nửa năm⟧ (több mint fél éve).
+Minta: Ⓐ ⟦Hôm nay là thứ Bảy mà sao em lại không đi gặp bạn trai?⟧ — Hiszen szombat van, miért nem mész a barátodhoz? Ⓑ ⟦Bạn trai em đi công tác nước ngoài rồi ạ.⟧ — A barátom külföldi üzleti úton van.
+❶ Ⓐ ⟦Tuần sau, con thi mà sao con lại không ôn thi?⟧ — Jövő héten vizsgázol, miért nem tanulsz? Ⓑ ⟦Con đã ôn thi ở trường rồi mẹ ạ.⟧ — Már tanultam az iskolában, anya.
+❷ Ⓐ ⟦Hôm nay là sinh nhật em mà sao em lại không có quà?⟧ — Ma van a születésnapom, miért nincs ajándékom? Ⓑ ⟦Ha ha. Anh đã chuẩn bị quà cho em rồi.⟧ — Haha. Már előkészítettem neked az ajándékot.
+Új szavak: ⟦bấm⟧ megnyomni | ⟦biểu tượng⟧ ikon, jelkép | ⟦mình⟧ mi | ⟦mừng⟧ örülni, gratulálni
+=id
+Ungkapan kunci: ⟦sao lại không⟧
+⟦sao (A) lại không ~ ?⟧ berarti "kenapa (A) (malah) tidak …?", dipakai ketika seseorang tidak melakukan hal yang seharusnya.
+Contoh:
+❶ ⟦Sao con lại không ăn cơm?⟧ — Kenapa kamu tidak makan?
+❷ Ⓐ ⟦Sao lại không gửi được tin nhắn nhỉ?⟧ — Kenapa pesannya tidak terkirim, ya?
+Ⓑ ⟦Bạn phải bấm vào biểu tượng này trước chứ!⟧ — Kamu harus menekan ikon ini dulu dong!
+Berbagai salam saat bertemu kembali setelah lama:
+⟦Lâu rồi mới gặp.⟧ — Lama tidak bertemu.
+⟦Lâu lắm rồi không gặp.⟧ — Sudah lama sekali tidak bertemu.
+⟦Rất vui được gặp lại em.⟧ — Senang sekali bertemu kamu lagi.
+⟦Bao lâu rồi mới gặp nhau nhỉ?⟧ — Sudah berapa lama ya kita tidak bertemu?
+⟦Bao lâu rồi mình không gặp nhau?⟧ — Sudah berapa lama kita tidak bertemu?
+Percakapan: Min-ho yang datang ke Vietnam untuk perjalanan dinas bertemu Trang, karyawan Vietnam yang menjemputnya di bandara.
+Min-ho: ⟦Trang à! Lâu rồi mới gặp em.⟧ — Trang! Lama tidak bertemu.
+Trang: ⟦Chào anh Min-ho. Trông anh vẫn khoẻ nên em rất mừng! Bao lâu rồi mình không gặp nhau?⟧ — Halo, Kak Min-ho. Saya senang Kakak tetap terlihat sehat! Sudah berapa lama kita tidak bertemu?
+Min-ho: ⟦Hình như đã được gần một năm rồi. Em có gì mới không?⟧ — Sepertinya sudah hampir setahun. Ada kabar baru?
+Trang: ⟦Em không có gì mới cả, anh ạ.⟧ — Tidak ada yang baru, Kak.
+Min-ho: ⟦Sao lại không có?⟧ — Kok tidak ada?
+Trang: ⟦Ha ha. Anh Min-ho đến rồi thì chắc là em sắp có gì mới rồi đây!⟧ — Haha. Karena Kak Min-ho sudah datang, pasti sebentar lagi ada yang baru!
+Latihan pola — salam setelah lama: ⟦Lâu rồi mới gặp em.⟧ / ⟦Lâu lắm rồi không gặp.⟧; pertanyaan: ⟦Bao lâu rồi mình không gặp nhau?⟧ / ⟦Bao lâu rồi mới gặp nhau nhỉ?⟧; lama tidak bertemu: ⟦gần một năm⟧ (hampir setahun), ⟦hơn nửa năm⟧ (lebih dari setengah tahun).
+Contoh: Ⓐ ⟦Hôm nay là thứ Bảy mà sao em lại không đi gặp bạn trai?⟧ — Hari ini kan Sabtu, kenapa kamu tidak pergi menemui pacarmu? Ⓑ ⟦Bạn trai em đi công tác nước ngoài rồi ạ.⟧ — Pacar saya sedang dinas ke luar negeri.
+❶ Ⓐ ⟦Tuần sau, con thi mà sao con lại không ôn thi?⟧ — Minggu depan kamu ujian, kenapa tidak belajar? Ⓑ ⟦Con đã ôn thi ở trường rồi mẹ ạ.⟧ — Saya sudah belajar di sekolah, Bu.
+❷ Ⓐ ⟦Hôm nay là sinh nhật em mà sao em lại không có quà?⟧ — Hari ini ulang tahunku, kenapa aku tidak dapat hadiah? Ⓑ ⟦Ha ha. Anh đã chuẩn bị quà cho em rồi.⟧ — Haha. Kakak sudah menyiapkan hadiah untukmu.
+Kosakata baru: ⟦bấm⟧ menekan | ⟦biểu tượng⟧ ikon, simbol | ⟦mình⟧ kita | ⟦mừng⟧ senang, memberi selamat
+=ja
+核心表現：⟦sao lại không⟧
+⟦sao (A) lại không ~ ?⟧ は「（Aは）どうして（また）～しないの？」という意味で、当然すべきことをしないときに使います。
+例：
+❶ ⟦Sao con lại không ăn cơm?⟧ — どうしてご飯を食べないの？
+❷ Ⓐ ⟦Sao lại không gửi được tin nhắn nhỉ?⟧ — どうしてメッセージが送れないんだろう？
+Ⓑ ⟦Bạn phải bấm vào biểu tượng này trước chứ!⟧ — まずこのアイコンを押さなきゃ！
+久しぶりに会ったときのいろいろなあいさつ：
+⟦Lâu rồi mới gặp.⟧ — 久しぶり。
+⟦Lâu lắm rồi không gặp.⟧ — 本当に久しぶりだね。
+⟦Rất vui được gặp lại em.⟧ — また会えてとてもうれしい。
+⟦Bao lâu rồi mới gặp nhau nhỉ?⟧ — どのくらいぶりに会ったかな？
+⟦Bao lâu rồi mình không gặp nhau?⟧ — 私たち、どのくらい会っていなかったっけ？
+会話：ベトナムに出張したミンホが、空港に迎えに来たベトナム人社員チャンと会いました。
+ミンホ：⟦Trang à! Lâu rồi mới gặp em.⟧ — チャン！久しぶり。
+チャン：⟦Chào anh Min-ho. Trông anh vẫn khoẻ nên em rất mừng! Bao lâu rồi mình không gặp nhau?⟧ — ミンホさん、こんにちは。お元気そうでとてもうれしいです！どのくらいぶりでしょう？
+ミンホ：⟦Hình như đã được gần một năm rồi. Em có gì mới không?⟧ — もう1年近くになるみたいだね。何か変わったことある？
+チャン：⟦Em không có gì mới cả, anh ạ.⟧ — 何もないですよ。
+ミンホ：⟦Sao lại không có?⟧ — どうしてないの？
+チャン：⟦Ha ha. Anh Min-ho đến rồi thì chắc là em sắp có gì mới rồi đây!⟧ — ハハ。ミンホさんが来たから、きっともうすぐ何か新しいことがありますね！
+文型練習 — 久しぶりのあいさつ：⟦Lâu rồi mới gặp em.⟧ / ⟦Lâu lắm rồi không gặp.⟧；質問：⟦Bao lâu rồi mình không gặp nhau?⟧ / ⟦Bao lâu rồi mới gặp nhau nhỉ?⟧；会わなかった期間：⟦gần một năm⟧（1年近く）、⟦hơn nửa năm⟧（半年以上）。
+例：Ⓐ ⟦Hôm nay là thứ Bảy mà sao em lại không đi gặp bạn trai?⟧ — 今日は土曜日なのに、どうして彼氏に会いに行かないの？ Ⓑ ⟦Bạn trai em đi công tác nước ngoài rồi ạ.⟧ — 彼は海外出張に行ったんです。
+❶ Ⓐ ⟦Tuần sau, con thi mà sao con lại không ôn thi?⟧ — 来週試験なのに、どうして試験勉強しないの？ Ⓑ ⟦Con đã ôn thi ở trường rồi mẹ ạ.⟧ — 学校でもう勉強したよ、お母さん。
+❷ Ⓐ ⟦Hôm nay là sinh nhật em mà sao em lại không có quà?⟧ — 今日は私の誕生日なのに、どうしてプレゼントがないの？ Ⓑ ⟦Ha ha. Anh đã chuẩn bị quà cho em rồi.⟧ — ハハ。もうプレゼントを用意してあるよ。
+新出単語：⟦bấm⟧ 押す | ⟦biểu tượng⟧ アイコン、シンボル | ⟦mình⟧ 私たち | ⟦mừng⟧ 喜ぶ、祝う
+=pl
+Kluczowe wyrażenie: ⟦sao lại không⟧
+⟦sao (A) lại không ~ ?⟧ znaczy „dlaczego (A) znowu nie …?” i używa się go, gdy ktoś nie robi tego, co powinien.
+Przykłady:
+❶ ⟦Sao con lại không ăn cơm?⟧ — Dlaczego nie jesz?
+❷ Ⓐ ⟦Sao lại không gửi được tin nhắn nhỉ?⟧ — Dlaczego ta wiadomość się nie wysyła?
+Ⓑ ⟦Bạn phải bấm vào biểu tượng này trước chứ!⟧ — Najpierw musisz kliknąć tę ikonę!
+Różne powitania po długiej rozłące:
+⟦Lâu rồi mới gặp.⟧ — Dawno się nie widzieliśmy.
+⟦Lâu lắm rồi không gặp.⟧ — Kopę lat!
+⟦Rất vui được gặp lại em.⟧ — Bardzo się cieszę, że znów cię widzę.
+⟦Bao lâu rồi mới gặp nhau nhỉ?⟧ — Ile to już czasu się nie widzieliśmy?
+⟦Bao lâu rồi mình không gặp nhau?⟧ — Jak długo się nie widzieliśmy?
+Dialog: Min-ho, który przyjechał do Wietnamu w podróż służbową, spotyka na lotnisku wietnamską koleżankę z pracy Trang, która po niego wyjechała.
+Min-ho: ⟦Trang à! Lâu rồi mới gặp em.⟧ — Trang! Dawno się nie widzieliśmy.
+Trang: ⟦Chào anh Min-ho. Trông anh vẫn khoẻ nên em rất mừng! Bao lâu rồi mình không gặp nhau?⟧ — Dzień dobry, Min-ho. Bardzo się cieszę, że nadal dobrze wyglądasz! Jak długo się nie widzieliśmy?
+Min-ho: ⟦Hình như đã được gần một năm rồi. Em có gì mới không?⟧ — Chyba już prawie rok. Co u ciebie nowego?
+Trang: ⟦Em không có gì mới cả, anh ạ.⟧ — Nic nowego.
+Min-ho: ⟦Sao lại không có?⟧ — Jak to nic?
+Trang: ⟦Ha ha. Anh Min-ho đến rồi thì chắc là em sắp có gì mới rồi đây!⟧ — Haha. Skoro przyjechałeś, to pewnie wkrótce będzie coś nowego!
+Ćwiczenie wzorców — powitanie po długim czasie: ⟦Lâu rồi mới gặp em.⟧ / ⟦Lâu lắm rồi không gặp.⟧; pytanie: ⟦Bao lâu rồi mình không gặp nhau?⟧ / ⟦Bao lâu rồi mới gặp nhau nhỉ?⟧; jak długo: ⟦gần một năm⟧ (prawie rok), ⟦hơn nửa năm⟧ (ponad pół roku).
+Wzór: Ⓐ ⟦Hôm nay là thứ Bảy mà sao em lại không đi gặp bạn trai?⟧ — Przecież jest sobota, czemu nie idziesz do chłopaka? Ⓑ ⟦Bạn trai em đi công tác nước ngoài rồi ạ.⟧ — Mój chłopak wyjechał w delegację za granicę.
+❶ Ⓐ ⟦Tuần sau, con thi mà sao con lại không ôn thi?⟧ — W przyszłym tygodniu masz egzamin, czemu się nie uczysz? Ⓑ ⟦Con đã ôn thi ở trường rồi mẹ ạ.⟧ — Już się uczyłem w szkole, mamo.
+❷ Ⓐ ⟦Hôm nay là sinh nhật em mà sao em lại không có quà?⟧ — Dziś są moje urodziny, czemu nie mam prezentu? Ⓑ ⟦Ha ha. Anh đã chuẩn bị quà cho em rồi.⟧ — Haha. Już przygotowałem dla ciebie prezent.
+Nowe słówka: ⟦bấm⟧ naciskać | ⟦biểu tượng⟧ ikona, symbol | ⟦mình⟧ my | ⟦mừng⟧ cieszyć się, gratulować

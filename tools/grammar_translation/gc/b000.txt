@@ -1,0 +1,491 @@
+@@ pdf-grammar-5fe43f5b82a00ffc#0
+~t 1. Pozdravy|1. 问候语|1. 問候語|1. Greetings|1. Salutations|1. Begrüßungen|1. Köszönések|1. Salam|1. あいさつの表現|1. Powitania
+=cs
+A: ⟦Chào anh.⟧ — Dobrý den, bratře. (staršímu muži)
+B: ⟦Chào em.⟧ — Ahoj. (mladšímu)
+⟦Chào⟧ je pozdrav, který se používá bez ohledu na denní dobu (ráno, odpoledne, večer) i na to, zda se lidé setkávají, nebo loučí. Obvykle se zdraví ve tvaru „Chào + oslovení druhé osoby“.
+⟦Chào chị.⟧ — Dobrý den, sestro. / Na shledanou, sestro. (starší ženě)
+Slovíčko: ⟦chị⟧ starší sestra
+Oslovení se volí podle věku a vztahu mluvčího a posluchače, takže už ze samotného pozdravu poznáte, v jakém vztahu ti dva jsou.
+A: ⟦Chào bố.⟧ — Dobrý den, tati. B: ⟦Chào con.⟧ — Ahoj, dítě. (otec a dítě)
+A: ⟦Chào chị.⟧ — Dobrý den, sestro. B: ⟦Chào em.⟧ — Ahoj. (starší sestra a mladší sourozenec)
+Slovíčka: ⟦bố⟧ otec | ⟦con⟧ dítě
+Vietnamština nemá koncovky sloves; zdvořilost a důvěrnost se přirozeně vyjadřuje osloveními.
+A: ⟦Chào chị.⟧ — Dobrý den, sestro. B: ⟦Chào em.⟧ — Ahoj.
+Pozdrav jen „Dobrý den“ zní jinak než „Dobrý den, bratře“. Vietnamci taková oslovení běžně používají nejen v rodině, ale i ve škole a v práci, a vyjadřují jimi blízkost.
+=zh_cn
+A：⟦Chào anh.⟧ —— 你好，哥。
+B：⟦Chào em.⟧ —— 你好。（对弟弟妹妹）
+⟦Chào⟧ 是不分早上、下午、晚上，也不分见面或分别都可以使用的问候语。通常用“Chào + 对方的称呼”来打招呼。
+⟦Chào chị.⟧ —— 你好，姐。/ 再见，姐。
+单词：⟦chị⟧ 姐姐
+称呼是根据说话者和听话者的年龄与关系来决定的，所以只听问候语就能知道两人之间的关系。
+A：⟦Chào bố.⟧ —— 爸爸好。 B：⟦Chào con.⟧ —— 孩子你好。（父亲与子女）
+A：⟦Chào chị.⟧ —— 姐姐好。 B：⟦Chào em.⟧ —— 你好。（姐姐与弟弟妹妹）
+单词：⟦bố⟧ 父亲 | ⟦con⟧ 子女
+越南语没有词尾变化，通过称呼自然地区分敬语和平语。
+A：⟦Chào chị.⟧ —— 姐姐好。 B：⟦Chào em.⟧ —— 你好。
+只说“你好”和说“你好，哥”感觉不一样。越南人不仅在家里，在学校和职场也广泛使用这类称呼来表达亲切感。
+=zh
+A：⟦Chào anh.⟧ —— 你好，哥。
+B：⟦Chào em.⟧ —— 你好。（對弟弟妹妹）
+⟦Chào⟧ 是不分早上、下午、晚上，也不分見面或分別都可以使用的問候語。通常用「Chào + 對方的稱呼」來打招呼。
+⟦Chào chị.⟧ —— 你好，姐。/ 再見，姐。
+單字：⟦chị⟧ 姐姐
+稱呼是根據說話者和聽話者的年齡與關係來決定的，所以只聽問候語就能知道兩人之間的關係。
+A：⟦Chào bố.⟧ —— 爸爸好。 B：⟦Chào con.⟧ —— 孩子你好。（父親與子女）
+A：⟦Chào chị.⟧ —— 姐姐好。 B：⟦Chào em.⟧ —— 你好。（姐姐與弟弟妹妹）
+單字：⟦bố⟧ 父親 | ⟦con⟧ 子女
+越南語沒有詞尾變化，透過稱呼自然地區分敬語和平語。
+A：⟦Chào chị.⟧ —— 姐姐好。 B：⟦Chào em.⟧ —— 你好。
+只說「你好」和說「你好，哥」感覺不一樣。越南人不僅在家裡，在學校和職場也廣泛使用這類稱呼來表達親切感。
+=en
+A: ⟦Chào anh.⟧ — Hello, brother. (to an older man)
+B: ⟦Chào em.⟧ — Hi. (to a younger person)
+⟦Chào⟧ is a greeting used regardless of the time of day (morning, afternoon, evening) and whether people are meeting or parting. You usually greet with "Chào + the way you address the other person".
+⟦Chào chị.⟧ — Hello, sister. / Goodbye, sister. (to an older woman)
+Word: ⟦chị⟧ older sister
+Forms of address depend on the age and relationship of speaker and listener, so the greeting alone tells you how the two people are related.
+A: ⟦Chào bố.⟧ — Hello, Dad. B: ⟦Chào con.⟧ — Hello, child. (father and child)
+A: ⟦Chào chị.⟧ — Hello, sister. B: ⟦Chào em.⟧ — Hi. (older sister and younger sibling)
+Words: ⟦bố⟧ father | ⟦con⟧ child
+Vietnamese has no verb endings; politeness and familiarity are expressed naturally through forms of address.
+A: ⟦Chào chị.⟧ — Hello, sister. B: ⟦Chào em.⟧ — Hi.
+Just "Hello" feels different from "Hello, brother". Vietnamese people use such forms of address widely — not only at home but also at school and at work — to express warmth.
+=fr
+A : ⟦Chào anh.⟧ — Bonjour, grand frère. (à un homme plus âgé)
+B : ⟦Chào em.⟧ — Salut. (à un cadet)
+⟦Chào⟧ est une salutation qui s'emploie quel que soit le moment de la journée (matin, après-midi, soir) et qu'on se rencontre ou qu'on se quitte. On salue généralement sous la forme « Chào + terme d'adresse ».
+⟦Chào chị.⟧ — Bonjour, grande sœur. / Au revoir, grande sœur. (à une femme plus âgée)
+Mot : ⟦chị⟧ grande sœur
+Les termes d'adresse dépendent de l'âge et de la relation entre celui qui parle et celui qui écoute ; la salutation suffit donc à révéler la relation entre les deux personnes.
+A : ⟦Chào bố.⟧ — Bonjour, papa. B : ⟦Chào con.⟧ — Bonjour, mon enfant. (père et enfant)
+A : ⟦Chào chị.⟧ — Bonjour, grande sœur. B : ⟦Chào em.⟧ — Salut. (grande sœur et cadet)
+Mots : ⟦bố⟧ père | ⟦con⟧ enfant
+Le vietnamien n'a pas de terminaisons verbales ; la politesse et la familiarité se marquent naturellement par les termes d'adresse.
+A : ⟦Chào chị.⟧ — Bonjour, grande sœur. B : ⟦Chào em.⟧ — Salut.
+Dire seulement « Bonjour » n'a pas la même nuance que « Bonjour, grand frère ». Les Vietnamiens emploient largement ces termes d'adresse, à la maison mais aussi à l'école et au travail, pour exprimer de l'affection.
+=de
+A: ⟦Chào anh.⟧ — Hallo, großer Bruder. (zu einem älteren Mann)
+B: ⟦Chào em.⟧ — Hallo. (zu einer jüngeren Person)
+⟦Chào⟧ ist ein Gruß, den man unabhängig von der Tageszeit (morgens, nachmittags, abends) und sowohl beim Treffen als auch beim Abschied verwendet. Man grüßt meist mit „Chào + Anrede des Gegenübers“.
+⟦Chào chị.⟧ — Hallo, große Schwester. / Auf Wiedersehen, große Schwester. (zu einer älteren Frau)
+Wort: ⟦chị⟧ ältere Schwester
+Die Anrede richtet sich nach Alter und Beziehung von Sprecher und Hörer; schon am Gruß erkennt man also, in welcher Beziehung die beiden zueinander stehen.
+A: ⟦Chào bố.⟧ — Hallo, Papa. B: ⟦Chào con.⟧ — Hallo, mein Kind. (Vater und Kind)
+A: ⟦Chào chị.⟧ — Hallo, große Schwester. B: ⟦Chào em.⟧ — Hallo. (ältere Schwester und jüngeres Geschwister)
+Wörter: ⟦bố⟧ Vater | ⟦con⟧ Kind
+Das Vietnamesische hat keine Verbendungen; Höflichkeit und Vertrautheit werden ganz natürlich durch die Anrede ausgedrückt.
+A: ⟦Chào chị.⟧ — Hallo, große Schwester. B: ⟦Chào em.⟧ — Hallo.
+Nur „Hallo“ klingt anders als „Hallo, großer Bruder“. Vietnamesen verwenden solche Anreden nicht nur in der Familie, sondern auch in Schule und Beruf, um Nähe auszudrücken.
+=hu
+A: ⟦Chào anh.⟧ — Szia, bátyám. (idősebb férfinak)
+B: ⟦Chào em.⟧ — Szia. (fiatalabbnak)
+A ⟦Chào⟧ olyan köszönés, amelyet a napszaktól (reggel, délután, este) függetlenül, találkozáskor és búcsúzáskor egyaránt használnak. Általában „Chào + a másik fél megszólítása” formában köszönnek.
+⟦Chào chị.⟧ — Szia, nővérem. / Viszlát, nővérem. (idősebb nőnek)
+Szó: ⟦chị⟧ nővér (idősebb lánytestvér)
+A megszólítást a beszélő és a hallgató kora és kapcsolata határozza meg, így már a köszönésből kiderül, milyen viszonyban van egymással a két ember.
+A: ⟦Chào bố.⟧ — Szia, apa. B: ⟦Chào con.⟧ — Szia, gyermekem. (apa és gyermeke)
+A: ⟦Chào chị.⟧ — Szia, nővérem. B: ⟦Chào em.⟧ — Szia. (nővér és kisebb testvér)
+Szavak: ⟦bố⟧ apa | ⟦con⟧ gyermek
+A vietnámiban nincsenek igevégződések; az udvariasságot és a bizalmasságot természetes módon a megszólítás fejezi ki.
+A: ⟦Chào chị.⟧ — Szia, nővérem. B: ⟦Chào em.⟧ — Szia.
+A puszta „Szia” másként hangzik, mint a „Szia, bátyám”. A vietnámiak nemcsak otthon, hanem az iskolában és a munkahelyen is széles körben használják ezeket a megszólításokat, hogy kifejezzék a közelséget.
+=id
+A: ⟦Chào anh.⟧ — Halo, Kak. (kepada pria yang lebih tua)
+B: ⟦Chào em.⟧ — Halo, Dik. (kepada yang lebih muda)
+⟦Chào⟧ adalah salam yang dipakai tanpa membedakan waktu (pagi, siang, malam) maupun saat bertemu atau berpisah. Biasanya salam diucapkan dengan pola "Chào + sapaan untuk lawan bicara".
+⟦Chào chị.⟧ — Halo, Kak. / Sampai jumpa, Kak. (kepada wanita yang lebih tua)
+Kosakata: ⟦chị⟧ kakak perempuan
+Sapaan ditentukan oleh usia dan hubungan antara pembicara dan pendengar, sehingga dari salamnya saja kita bisa tahu hubungan kedua orang itu.
+A: ⟦Chào bố.⟧ — Halo, Ayah. B: ⟦Chào con.⟧ — Halo, Nak. (ayah dan anak)
+A: ⟦Chào chị.⟧ — Halo, Kak. B: ⟦Chào em.⟧ — Halo, Dik. (kakak perempuan dan adik)
+Kosakata: ⟦bố⟧ ayah | ⟦con⟧ anak
+Bahasa Vietnam tidak memiliki perubahan akhiran kata kerja; tingkat hormat dan keakraban dibedakan secara alami melalui sapaan.
+A: ⟦Chào chị.⟧ — Halo, Kak. B: ⟦Chào em.⟧ — Halo, Dik.
+Sekadar "Halo" terasa berbeda dengan "Halo, Kak". Orang Vietnam memakai sapaan seperti ini secara luas, tidak hanya di rumah tetapi juga di sekolah dan tempat kerja, untuk menunjukkan keakraban.
+=ja
+A：⟦Chào anh.⟧ — こんにちは、お兄さん。
+B：⟦Chào em.⟧ — やあ。（年下に対して）
+⟦Chào⟧ は朝・昼・夜といった時間や、会うとき・別れるときを区別せずに使うあいさつです。ふつうは「Chào ＋ 相手の呼び方」の形であいさつします。
+⟦Chào chị.⟧ — こんにちは、お姉さん。／さようなら、お姉さん。
+単語：⟦chị⟧ 姉
+呼び方は話し手と聞き手の年齢や関係によって決まるので、あいさつを聞くだけで二人の関係が分かります。
+A：⟦Chào bố.⟧ — お父さん、こんにちは。 B：⟦Chào con.⟧ — やあ、おまえ。（父と子）
+A：⟦Chào chị.⟧ — お姉さん、こんにちは。 B：⟦Chào em.⟧ — やあ。（姉と年下のきょうだい）
+単語：⟦bố⟧ 父 | ⟦con⟧ 子ども
+ベトナム語には語尾の変化がなく、呼び方によって敬語とくだけた言い方が自然に区別されます。
+A：⟦Chào chị.⟧ — お姉さん、こんにちは。 B：⟦Chào em.⟧ — やあ。
+「こんにちは」だけと「こんにちは、お兄さん」とでは響きが違いますね。ベトナムの人々はこうした呼び方を家庭だけでなく学校や職場でも幅広く使い、親しみを表します。
+=pl
+A: ⟦Chào anh.⟧ — Dzień dobry, bracie. (do starszego mężczyzny)
+B: ⟦Chào em.⟧ — Cześć. (do młodszej osoby)
+⟦Chào⟧ to powitanie używane niezależnie od pory dnia (rano, po południu, wieczorem) oraz zarówno przy spotkaniu, jak i przy pożegnaniu. Zwykle wita się w formie „Chào + forma zwracania się do rozmówcy”.
+⟦Chào chị.⟧ — Dzień dobry, siostro. / Do widzenia, siostro. (do starszej kobiety)
+Słówko: ⟦chị⟧ starsza siostra
+Formy zwracania się zależą od wieku i relacji mówiącego i słuchającego, więc już z samego powitania widać, w jakiej relacji są te dwie osoby.
+A: ⟦Chào bố.⟧ — Dzień dobry, tato. B: ⟦Chào con.⟧ — Cześć, dziecko. (ojciec i dziecko)
+A: ⟦Chào chị.⟧ — Dzień dobry, siostro. B: ⟦Chào em.⟧ — Cześć. (starsza siostra i młodsze rodzeństwo)
+Słówka: ⟦bố⟧ ojciec | ⟦con⟧ dziecko
+Wietnamski nie ma końcówek czasownikowych; uprzejmość i poufałość wyraża się naturalnie za pomocą form zwracania się.
+A: ⟦Chào chị.⟧ — Dzień dobry, siostro. B: ⟦Chào em.⟧ — Cześć.
+Samo „Dzień dobry” brzmi inaczej niż „Dzień dobry, bracie”. Wietnamczycy szeroko używają takich form nie tylko w domu, ale też w szkole i w pracy, wyrażając w ten sposób serdeczność.
+@@ pdf-grammar-c1e38c7be6a724e4#0
+~t 2. Ptát se, jak se kdo má, a odpovídat|2. 问候近况与回答|2. 問候近況與回答|2. Asking and answering how someone is|2. Demander des nouvelles et y répondre|2. Nach dem Befinden fragen und antworten|2. Hogylét kérdezése és válasz|2. Menanyakan dan menjawab kabar|2. 近況を尋ねて答える表現|2. Pytanie o samopoczucie i odpowiedź
+=cs
+A: ⟦Em khoẻ không?⟧ — Máš se dobře? (k mladšímu)
+B: ⟦Vâng. Em khoẻ.⟧ — Ano. Mám se dobře.
+Podle vztahu se určuje nejen oslovení druhé osoby, ale i to, jak mluvčí označuje sám sebe. Starší A oslovuje mladšího B ⟦em⟧ (mladší sourozenec) a B se před A také sám označuje jako ⟦em⟧. Starší (⟦anh⟧, ⟦chị⟧) se v rozhovoru s mladším také sami označují jako ⟦anh⟧, ⟦chị⟧.
+A: ⟦Chị khoẻ không?⟧ — Máte se dobře, sestro?
+B: ⟦Ừ. Chị khoẻ.⟧ — Jo. Mám se dobře.
+Oznamovací věta má pořadí „podmět + sloveso / přídavné jméno“. Na rozdíl od angličtiny („podmět + be + přídavné jméno“) se přídavné jméno klade hned za podmět. Opravdu snadné.
+⟦Em đi.⟧ — Jdu. (mluví mladší)
+⟦Anh khoẻ.⟧ — Bratr se má dobře.
+Slovíčko: ⟦đi⟧ jít
+Tázací věta má pořadí „podmět + (có) + sloveso / přídavné jméno + không?“ („Je/dělá podmět …?“). ⟦có⟧ znamená „mít, být (existovat)“, ale v otázkách s ⟦không⟧ stojí před slovesem či přídavným jménem jako prvek tvořící otázku a lze ho vynechat.
+⟦Chị có tiền không?⟧ — Máš peníze, sestro? (có = mít)
+⟦Em (có) đi không?⟧ — Půjdeš? (có tvoří otázku)
+⟦Anh (có) khoẻ không?⟧ — Máš se dobře, bratře? (có tvoří otázku)
+Slovíčka: ⟦có⟧ mít, být; tázací prvek | ⟦tiền⟧ peníze
+=zh_cn
+A：⟦Em khoẻ không?⟧ —— 你（弟弟妹妹）身体好吗？
+B：⟦Vâng. Em khoẻ.⟧ —— 是的，我很好。
+根据关系，不仅决定对方的称呼，也决定自己的自称。年长的 A 称年幼的 B 为 ⟦em⟧（弟弟妹妹），B 在 A 面前也自称 ⟦em⟧。年长者（⟦anh⟧、⟦chị⟧）在与年幼者（⟦em⟧）说话时，也自称 ⟦anh⟧、⟦chị⟧。
+A：⟦Chị khoẻ không?⟧ —— 姐姐身体好吗？
+B：⟦Ừ. Chị khoẻ.⟧ —— 嗯，我（姐姐）很好。
+陈述句的语序是“主语 + 动词 / 形容词”。和英语“主语 + be 动词 + 形容词”不同，越南语在主语后直接接形容词就能成句。很简单吧。
+⟦Em đi.⟧ —— 我（弟弟妹妹）走了。
+⟦Anh khoẻ.⟧ —— 哥哥很好。
+单词：⟦đi⟧ 去，走
+疑问句的语序是“主语 + (có) + 动词 / 形容词 + không?（主语……吗？）”。⟦có⟧ 的意思是“有、拥有”，但在带 ⟦không⟧ 的疑问句中放在动词/形容词前面，作为构成疑问的成分，也可以省略。
+⟦Chị có tiền không?⟧ —— 姐姐有钱吗？（có＝有）
+⟦Em (có) đi không?⟧ —— 你去吗？（có 为疑问成分）
+⟦Anh (có) khoẻ không?⟧ —— 哥哥身体好吗？（có 为疑问成分）
+单词：⟦có⟧ 有，拥有；疑问成分 | ⟦tiền⟧ 钱
+=zh
+A：⟦Em khoẻ không?⟧ —— 你（弟弟妹妹）身體好嗎？
+B：⟦Vâng. Em khoẻ.⟧ —— 是的，我很好。
+根據關係，不僅決定對方的稱呼，也決定自己的自稱。年長的 A 稱年幼的 B 為 ⟦em⟧（弟弟妹妹），B 在 A 面前也自稱 ⟦em⟧。年長者（⟦anh⟧、⟦chị⟧）在與年幼者（⟦em⟧）說話時，也自稱 ⟦anh⟧、⟦chị⟧。
+A：⟦Chị khoẻ không?⟧ —— 姐姐身體好嗎？
+B：⟦Ừ. Chị khoẻ.⟧ —— 嗯，我（姐姐）很好。
+陳述句的語序是「主語 + 動詞 / 形容詞」。和英語「主語 + be 動詞 + 形容詞」不同，越南語在主語後直接接形容詞就能成句。很簡單吧。
+⟦Em đi.⟧ —— 我（弟弟妹妹）走了。
+⟦Anh khoẻ.⟧ —— 哥哥很好。
+單字：⟦đi⟧ 去，走
+疑問句的語序是「主語 + (có) + 動詞 / 形容詞 + không?（主語……嗎？）」。⟦có⟧ 的意思是「有、擁有」，但在帶 ⟦không⟧ 的疑問句中放在動詞/形容詞前面，作為構成疑問的成分，也可以省略。
+⟦Chị có tiền không?⟧ —— 姐姐有錢嗎？（có＝有）
+⟦Em (có) đi không?⟧ —— 你去嗎？（có 為疑問成分）
+⟦Anh (có) khoẻ không?⟧ —— 哥哥身體好嗎？（có 為疑問成分）
+單字：⟦có⟧ 有，擁有；疑問成分 | ⟦tiền⟧ 錢
+=en
+A: ⟦Em khoẻ không?⟧ — Are you well? (to a younger person)
+B: ⟦Vâng. Em khoẻ.⟧ — Yes. I'm well.
+The relationship decides not only how you address the other person but also how you refer to yourself. The older A calls the younger B ⟦em⟧ (younger sibling), and B also calls themself ⟦em⟧ when speaking to A. Older speakers (⟦anh⟧, ⟦chị⟧) likewise refer to themselves as ⟦anh⟧, ⟦chị⟧ when talking with a younger person (⟦em⟧).
+A: ⟦Chị khoẻ không?⟧ — Are you well, sister?
+B: ⟦Ừ. Chị khoẻ.⟧ — Yeah. I'm well.
+Statements follow the order "subject + verb / adjective". Unlike English ("subject + be + adjective"), the adjective comes straight after the subject to form a sentence. Really easy.
+⟦Em đi.⟧ — I'm going. (said by the younger person)
+⟦Anh khoẻ.⟧ — I'm (your older brother is) well.
+Word: ⟦đi⟧ to go
+Questions follow the order "subject + (có) + verb / adjective + không?" ("Is/does the subject …?"). ⟦có⟧ means "to have, there is", but in questions with ⟦không⟧ it comes before the verb or adjective as a question-forming element and can be left out.
+⟦Chị có tiền không?⟧ — Do you have money, sister? (có = to have)
+⟦Em (có) đi không?⟧ — Are you going? (có forms the question)
+⟦Anh (có) khoẻ không?⟧ — Are you well, brother? (có forms the question)
+Words: ⟦có⟧ to have, there is; question element | ⟦tiền⟧ money
+=fr
+A : ⟦Em khoẻ không?⟧ — Tu vas bien ? (à un cadet)
+B : ⟦Vâng. Em khoẻ.⟧ — Oui. Je vais bien.
+La relation détermine non seulement la façon d'appeler l'autre, mais aussi la façon de se désigner soi-même. L'aîné A appelle le cadet B ⟦em⟧ (cadet), et B se désigne lui aussi comme ⟦em⟧ devant A. Les aînés (⟦anh⟧, ⟦chị⟧) se désignent eux-mêmes par ⟦anh⟧, ⟦chị⟧ lorsqu'ils parlent à un cadet (⟦em⟧).
+A : ⟦Chị khoẻ không?⟧ — Tu vas bien, grande sœur ?
+B : ⟦Ừ. Chị khoẻ.⟧ — Ouais. Je vais bien.
+La phrase affirmative suit l'ordre « sujet + verbe / adjectif ». Contrairement à l'anglais (« sujet + be + adjectif »), l'adjectif se place directement après le sujet. Vraiment simple.
+⟦Em đi.⟧ — J'y vais. (dit par le cadet)
+⟦Anh khoẻ.⟧ — Je (ton grand frère) vais bien.
+Mot : ⟦đi⟧ aller
+La phrase interrogative suit l'ordre « sujet + (có) + verbe / adjectif + không? » (« Est-ce que le sujet … ? »). ⟦có⟧ signifie « avoir, il y a », mais dans les questions avec ⟦không⟧ il se place devant le verbe ou l'adjectif comme élément interrogatif et peut être omis.
+⟦Chị có tiền không?⟧ — Tu as de l'argent, grande sœur ? (có = avoir)
+⟦Em (có) đi không?⟧ — Tu y vas ? (có forme la question)
+⟦Anh (có) khoẻ không?⟧ — Tu vas bien, grand frère ? (có forme la question)
+Mots : ⟦có⟧ avoir, il y a ; élément interrogatif | ⟦tiền⟧ argent
+=de
+A: ⟦Em khoẻ không?⟧ — Geht es dir gut? (zu einer jüngeren Person)
+B: ⟦Vâng. Em khoẻ.⟧ — Ja. Mir geht es gut.
+Die Beziehung bestimmt nicht nur die Anrede des Gegenübers, sondern auch, wie man sich selbst bezeichnet. Der ältere A nennt den jüngeren B ⟦em⟧ (jüngeres Geschwister), und B bezeichnet sich vor A ebenfalls als ⟦em⟧. Ältere (⟦anh⟧, ⟦chị⟧) nennen sich im Gespräch mit Jüngeren (⟦em⟧) selbst ⟦anh⟧ bzw. ⟦chị⟧.
+A: ⟦Chị khoẻ không?⟧ — Geht es dir gut, große Schwester?
+B: ⟦Ừ. Chị khoẻ.⟧ — Ja. Mir geht es gut.
+Aussagesätze folgen der Reihenfolge „Subjekt + Verb / Adjektiv“. Anders als im Englischen („Subjekt + be + Adjektiv“) steht das Adjektiv direkt nach dem Subjekt. Ganz einfach.
+⟦Em đi.⟧ — Ich gehe. (sagt die jüngere Person)
+⟦Anh khoẻ.⟧ — Mir (dem großen Bruder) geht es gut.
+Wort: ⟦đi⟧ gehen
+Fragesätze folgen der Reihenfolge „Subjekt + (có) + Verb / Adjektiv + không?“ („Ist/tut das Subjekt …?“). ⟦có⟧ bedeutet „haben, es gibt“, steht aber in Fragen mit ⟦không⟧ als fragebildendes Element vor Verb oder Adjektiv und kann weggelassen werden.
+⟦Chị có tiền không?⟧ — Hast du Geld, große Schwester? (có = haben)
+⟦Em (có) đi không?⟧ — Gehst du? (có bildet die Frage)
+⟦Anh (có) khoẻ không?⟧ — Geht es dir gut, großer Bruder? (có bildet die Frage)
+Wörter: ⟦có⟧ haben, es gibt; Fragepartikel | ⟦tiền⟧ Geld
+=hu
+A: ⟦Em khoẻ không?⟧ — Jól vagy? (fiatalabbhoz)
+B: ⟦Vâng. Em khoẻ.⟧ — Igen. Jól vagyok.
+A kapcsolat nemcsak azt határozza meg, hogyan szólítjuk a másikat, hanem azt is, hogyan nevezzük magunkat. Az idősebb A ⟦em⟧-nek (kisebb testvér) szólítja a fiatalabb B-t, és B is ⟦em⟧-nek nevezi magát A előtt. Az idősebbek (⟦anh⟧, ⟦chị⟧) a fiatalabbakkal (⟦em⟧) beszélve szintén ⟦anh⟧-nak, ⟦chị⟧-nek nevezik magukat.
+A: ⟦Chị khoẻ không?⟧ — Jól vagy, nővérem?
+B: ⟦Ừ. Chị khoẻ.⟧ — Aha. Jól vagyok.
+A kijelentő mondat sorrendje „alany + ige / melléknév”. Az angollal („alany + be + melléknév”) ellentétben a melléknév közvetlenül az alany után áll. Igazán egyszerű.
+⟦Em đi.⟧ — Megyek. (a fiatalabb mondja)
+⟦Anh khoẻ.⟧ — Én (a bátyád) jól vagyok.
+Szó: ⟦đi⟧ menni
+A kérdő mondat sorrendje „alany + (có) + ige / melléknév + không?” („…-e az alany?”). A ⟦có⟧ jelentése „van, birtokol”, de a ⟦không⟧-os kérdésekben az ige vagy melléknév előtt kérdést képző elemként áll, és el is hagyható.
+⟦Chị có tiền không?⟧ — Van pénzed, nővérem? (có = birtokolni)
+⟦Em (có) đi không?⟧ — Mész? (a có kérdést képez)
+⟦Anh (có) khoẻ không?⟧ — Jól vagy, bátyám? (a có kérdést képez)
+Szavak: ⟦có⟧ van, birtokol; kérdő elem | ⟦tiền⟧ pénz
+=id
+A: ⟦Em khoẻ không?⟧ — Apa kabarmu baik? (kepada yang lebih muda)
+B: ⟦Vâng. Em khoẻ.⟧ — Ya. Saya baik-baik saja.
+Hubungan menentukan bukan hanya sapaan untuk lawan bicara, tetapi juga sebutan untuk diri sendiri. A yang lebih tua memanggil B yang lebih muda ⟦em⟧ (adik), dan B juga menyebut dirinya ⟦em⟧ di depan A. Orang yang lebih tua (⟦anh⟧, ⟦chị⟧) juga menyebut dirinya ⟦anh⟧, ⟦chị⟧ saat berbicara dengan yang lebih muda (⟦em⟧).
+A: ⟦Chị khoẻ không?⟧ — Kakak baik-baik saja?
+B: ⟦Ừ. Chị khoẻ.⟧ — Ya. Kakak baik-baik saja.
+Kalimat pernyataan berurutan "subjek + kata kerja / kata sifat". Berbeda dengan bahasa Inggris ("subjek + be + kata sifat"), kata sifat langsung diletakkan setelah subjek. Mudah sekali.
+⟦Em đi.⟧ — Saya pergi. (diucapkan yang lebih muda)
+⟦Anh khoẻ.⟧ — Kakak (laki-laki) baik-baik saja.
+Kosakata: ⟦đi⟧ pergi
+Kalimat tanya berurutan "subjek + (có) + kata kerja / kata sifat + không?" ("Apakah subjek …?"). ⟦có⟧ berarti "punya, ada", tetapi dalam pertanyaan dengan ⟦không⟧ ia diletakkan sebelum kata kerja/kata sifat sebagai unsur pembentuk pertanyaan dan boleh dihilangkan.
+⟦Chị có tiền không?⟧ — Kakak punya uang? (có = punya)
+⟦Em (có) đi không?⟧ — Kamu pergi? (có membentuk pertanyaan)
+⟦Anh (có) khoẻ không?⟧ — Kakak sehat? (có membentuk pertanyaan)
+Kosakata: ⟦có⟧ punya, ada; unsur tanya | ⟦tiền⟧ uang
+=ja
+A：⟦Em khoẻ không?⟧ — 元気？（年下に）
+B：⟦Vâng. Em khoẻ.⟧ — はい。元気です。
+関係によって、相手の呼び方だけでなく自分の呼び方も決まります。年上の A は年下の B を ⟦em⟧（弟・妹）と呼び、B も A の前では自分を ⟦em⟧ と呼びます。年上（⟦anh⟧、⟦chị⟧）も、年下（⟦em⟧）との会話では自分のことを ⟦anh⟧、⟦chị⟧ と呼びます。
+A：⟦Chị khoẻ không?⟧ — お姉さん、お元気ですか。
+B：⟦Ừ. Chị khoẻ.⟧ — うん。元気よ。
+平叙文の語順は「主語 ＋ 動詞／形容詞」です。「主語 ＋ be動詞 ＋ 形容詞」の英語と違い、主語のすぐ後に形容詞を置いて文を作ります。とても簡単ですね。
+⟦Em đi.⟧ — 行きます。（年下が言う）
+⟦Anh khoẻ.⟧ — お兄さん（僕）は元気だよ。
+単語：⟦đi⟧ 行く
+疑問文の語順は「主語 ＋ (có) ＋ 動詞／形容詞 ＋ không?（主語は～ですか）」です。⟦có⟧ は「持つ、ある」の意味ですが、⟦không⟧ を使う疑問文では動詞・形容詞の前に置かれて疑問文を作る要素として使われ、省略することもできます。
+⟦Chị có tiền không?⟧ — お姉さん、お金ある？（có＝持つ）
+⟦Em (có) đi không?⟧ — 行く？（có は疑問の要素）
+⟦Anh (có) khoẻ không?⟧ — お兄さん、お元気ですか。（có は疑問の要素）
+単語：⟦có⟧ 持つ、ある、疑問の要素 | ⟦tiền⟧ お金
+=pl
+A: ⟦Em khoẻ không?⟧ — Dobrze się czujesz? (do młodszej osoby)
+B: ⟦Vâng. Em khoẻ.⟧ — Tak. Czuję się dobrze.
+Relacja decyduje nie tylko o tym, jak zwracamy się do rozmówcy, ale też o tym, jak mówimy o sobie. Starszy A nazywa młodszego B ⟦em⟧ (młodsze rodzeństwo), a B także nazywa siebie ⟦em⟧ przy A. Starsi (⟦anh⟧, ⟦chị⟧) również mówią o sobie ⟦anh⟧, ⟦chị⟧ w rozmowie z młodszymi (⟦em⟧).
+A: ⟦Chị khoẻ không?⟧ — Dobrze się czujesz, siostro?
+B: ⟦Ừ. Chị khoẻ.⟧ — No. Czuję się dobrze.
+Zdanie oznajmujące ma szyk „podmiot + czasownik / przymiotnik”. W przeciwieństwie do angielskiego („podmiot + be + przymiotnik”) przymiotnik stoi bezpośrednio po podmiocie. Naprawdę proste.
+⟦Em đi.⟧ — Idę. (mówi młodsza osoba)
+⟦Anh khoẻ.⟧ — Ja (twój starszy brat) czuję się dobrze.
+Słówko: ⟦đi⟧ iść
+Zdanie pytające ma szyk „podmiot + (có) + czasownik / przymiotnik + không?” („Czy podmiot …?”). ⟦có⟧ znaczy „mieć, jest (istnieje)”, ale w pytaniach z ⟦không⟧ stoi przed czasownikiem lub przymiotnikiem jako element tworzący pytanie i można go pominąć.
+⟦Chị có tiền không?⟧ — Masz pieniądze, siostro? (có = mieć)
+⟦Em (có) đi không?⟧ — Idziesz? (có tworzy pytanie)
+⟦Anh (có) khoẻ không?⟧ — Dobrze się czujesz, bracie? (có tworzy pytanie)
+Słówka: ⟦có⟧ mieć, jest; element pytający | ⟦tiền⟧ pieniądze
+@@ pdf-grammar-bbe44e7564ee38d5#0
+~t 1. Zdvořilé vyjádření|1. 表示礼貌的表达|1. 表示禮貌的表達|1. Expressing politeness|1. Exprimer la politesse|1. Höflichkeit ausdrücken|1. Az udvariasság kifejezése|1. Ungkapan sopan|1. 丁寧さを表す表現|1. Wyrażanie uprzejmości
+=cs
+⟦Chị có khoẻ không ạ?⟧ — Máte se dobře, sestro?
+⟦ạ⟧ na konci věty vyjadřuje zdvořilost.
+⟦Chào anh ạ.⟧ — Dobrý den, bratře. ⟦Em khoẻ ạ.⟧ — Mám se dobře.
+=zh_cn
+⟦Chị có khoẻ không ạ?⟧ —— 姐姐您身体好吗？
+⟦ạ⟧ 放在句末表示礼貌。
+⟦Chào anh ạ.⟧ —— 哥哥好。 ⟦Em khoẻ ạ.⟧ —— 我很好。
+=zh
+⟦Chị có khoẻ không ạ?⟧ —— 姐姐您身體好嗎？
+⟦ạ⟧ 放在句末表示禮貌。
+⟦Chào anh ạ.⟧ —— 哥哥好。 ⟦Em khoẻ ạ.⟧ —— 我很好。
+=en
+⟦Chị có khoẻ không ạ?⟧ — Are you well, sister?
+⟦ạ⟧ at the end of a sentence expresses politeness.
+⟦Chào anh ạ.⟧ — Hello, brother. ⟦Em khoẻ ạ.⟧ — I'm well.
+=fr
+⟦Chị có khoẻ không ạ?⟧ — Vous allez bien, grande sœur ?
+⟦ạ⟧ en fin de phrase exprime la politesse.
+⟦Chào anh ạ.⟧ — Bonjour, grand frère. ⟦Em khoẻ ạ.⟧ — Je vais bien.
+=de
+⟦Chị có khoẻ không ạ?⟧ — Geht es Ihnen gut, große Schwester?
+⟦ạ⟧ am Satzende drückt Höflichkeit aus.
+⟦Chào anh ạ.⟧ — Guten Tag, großer Bruder. ⟦Em khoẻ ạ.⟧ — Mir geht es gut.
+=hu
+⟦Chị có khoẻ không ạ?⟧ — Jól van, nővérem?
+A mondat végi ⟦ạ⟧ udvariasságot fejez ki.
+⟦Chào anh ạ.⟧ — Jó napot, bátyám. ⟦Em khoẻ ạ.⟧ — Jól vagyok.
+=id
+⟦Chị có khoẻ không ạ?⟧ — Apakah Kakak sehat?
+⟦ạ⟧ di akhir kalimat menyatakan kesopanan.
+⟦Chào anh ạ.⟧ — Halo, Kak. ⟦Em khoẻ ạ.⟧ — Saya baik-baik saja.
+=ja
+⟦Chị có khoẻ không ạ?⟧ — お姉さん、お元気ですか。
+⟦ạ⟧ は文末で丁寧さを表します。
+⟦Chào anh ạ.⟧ — お兄さん、こんにちは。 ⟦Em khoẻ ạ.⟧ — 元気です。
+=pl
+⟦Chị có khoẻ không ạ?⟧ — Czy dobrze się pani czuje, siostro?
+⟦ạ⟧ na końcu zdania wyraża uprzejmość.
+⟦Chào anh ạ.⟧ — Dzień dobry, bracie. ⟦Em khoẻ ạ.⟧ — Czuję się dobrze.
+@@ pdf-grammar-bbe44e7564ee38d5#1
+~t 2. Poděkování|2. 感谢的表达|2. 感謝的表達|2. Saying thank you|2. Remercier|2. Sich bedanken|2. Köszönetnyilvánítás|2. Ungkapan terima kasih|2. 感謝の表現|2. Dziękowanie
+=cs
+⟦Cảm ơn em.⟧ — Díky.
+Poděkování má tvar „cảm ơn + oslovení druhé osoby“ a jako odpověď lze použít ⟦không có gì⟧ (není zač).
+A: ⟦Cảm ơn anh.⟧ — Děkuji, bratře. B: ⟦Không có gì.⟧ — Není zač.
+=zh_cn
+⟦Cảm ơn em.⟧ —— 谢谢你。
+感谢用“cảm ơn + 对方的称呼”来表达，回应时可以说 ⟦không có gì⟧（不客气）。
+A：⟦Cảm ơn anh.⟧ —— 谢谢哥。 B：⟦Không có gì.⟧ —— 不客气。
+=zh
+⟦Cảm ơn em.⟧ —— 謝謝你。
+感謝用「cảm ơn + 對方的稱呼」來表達，回應時可以說 ⟦không có gì⟧（不客氣）。
+A：⟦Cảm ơn anh.⟧ —— 謝謝哥。 B：⟦Không có gì.⟧ —— 不客氣。
+=en
+⟦Cảm ơn em.⟧ — Thanks.
+Thanks are expressed as "cảm ơn + the way you address the other person", and ⟦không có gì⟧ (you're welcome) can be used in reply.
+A: ⟦Cảm ơn anh.⟧ — Thank you, brother. B: ⟦Không có gì.⟧ — You're welcome.
+=fr
+⟦Cảm ơn em.⟧ — Merci.
+On remercie avec « cảm ơn + terme d'adresse », et l'on peut répondre ⟦không có gì⟧ (de rien).
+A : ⟦Cảm ơn anh.⟧ — Merci, grand frère. B : ⟦Không có gì.⟧ — De rien.
+=de
+⟦Cảm ơn em.⟧ — Danke.
+Man bedankt sich mit „cảm ơn + Anrede des Gegenübers“; als Antwort kann man ⟦không có gì⟧ (gern geschehen) sagen.
+A: ⟦Cảm ơn anh.⟧ — Danke, großer Bruder. B: ⟦Không có gì.⟧ — Gern geschehen.
+=hu
+⟦Cảm ơn em.⟧ — Köszi.
+A köszönet formája „cảm ơn + a másik fél megszólítása”, válaszként pedig a ⟦không có gì⟧ (nincs mit) használható.
+A: ⟦Cảm ơn anh.⟧ — Köszönöm, bátyám. B: ⟦Không có gì.⟧ — Nincs mit.
+=id
+⟦Cảm ơn em.⟧ — Terima kasih, Dik.
+Ucapan terima kasih memakai pola "cảm ơn + sapaan lawan bicara", dan sebagai jawaban bisa dipakai ⟦không có gì⟧ (sama-sama).
+A: ⟦Cảm ơn anh.⟧ — Terima kasih, Kak. B: ⟦Không có gì.⟧ — Sama-sama.
+=ja
+⟦Cảm ơn em.⟧ — ありがとう。
+感謝は「cảm ơn ＋ 相手の呼び方」で表し、その返事として ⟦không có gì⟧（どういたしまして）が使えます。
+A：⟦Cảm ơn anh.⟧ — ありがとう、お兄さん。 B：⟦Không có gì.⟧ — どういたしまして。
+=pl
+⟦Cảm ơn em.⟧ — Dzięki.
+Podziękowanie ma formę „cảm ơn + forma zwracania się do rozmówcy”, a w odpowiedzi można użyć ⟦không có gì⟧ (nie ma za co).
+A: ⟦Cảm ơn anh.⟧ — Dziękuję, bracie. B: ⟦Không có gì.⟧ — Nie ma za co.
+@@ pdf-grammar-bbe44e7564ee38d5#2
+~t 3. Tázací slova|3. 疑问词的表达|3. 疑問詞的表達|3. Question words|3. Les mots interrogatifs|3. Fragewörter|3. Kérdőszavak|3. Kata tanya|3. 疑問詞の表現|3. Słowa pytające
+=cs
+⟦Còn em thế nào?⟧ — A jak se máš ty?
+Když použijete tázací slovo, věta se stane otázkou přirozeně, bez ⟦không⟧ na konci.
+⟦Anh đi đâu?⟧ — Kam jdeš, bratře? ⟦Em gặp ai?⟧ — S kým se setkáváš?
+Slovíčka: ⟦đâu⟧ kde, kam (tázací slovo) | ⟦ai⟧ kdo (tázací slovo)
+=zh_cn
+⟦Còn em thế nào?⟧ —— 那你呢？怎么样？
+使用疑问词时，句末不需要 ⟦không⟧，自然就成为疑问句。
+⟦Anh đi đâu?⟧ —— 哥哥去哪里？ ⟦Em gặp ai?⟧ —— 你见谁？
+单词：⟦đâu⟧ 哪里（疑问词） | ⟦ai⟧ 谁（疑问词）
+=zh
+⟦Còn em thế nào?⟧ —— 那你呢？怎麼樣？
+使用疑問詞時，句末不需要 ⟦không⟧，自然就成為疑問句。
+⟦Anh đi đâu?⟧ —— 哥哥去哪裡？ ⟦Em gặp ai?⟧ —— 你見誰？
+單字：⟦đâu⟧ 哪裡（疑問詞） | ⟦ai⟧ 誰（疑問詞）
+=en
+⟦Còn em thế nào?⟧ — And how about you?
+When you use a question word, the sentence naturally becomes a question without ⟦không⟧ at the end.
+⟦Anh đi đâu?⟧ — Where are you going, brother? ⟦Em gặp ai?⟧ — Who are you meeting?
+Words: ⟦đâu⟧ where (question word) | ⟦ai⟧ who (question word)
+=fr
+⟦Còn em thế nào?⟧ — Et toi, comment ça va ?
+Avec un mot interrogatif, la phrase devient naturellement une question, sans ⟦không⟧ à la fin.
+⟦Anh đi đâu?⟧ — Où vas-tu, grand frère ? ⟦Em gặp ai?⟧ — Qui vas-tu voir ?
+Mots : ⟦đâu⟧ où (interrogatif) | ⟦ai⟧ qui (interrogatif)
+=de
+⟦Còn em thế nào?⟧ — Und wie geht es dir?
+Mit einem Fragewort wird der Satz ganz natürlich zur Frage – ohne ⟦không⟧ am Ende.
+⟦Anh đi đâu?⟧ — Wohin gehst du, großer Bruder? ⟦Em gặp ai?⟧ — Wen triffst du?
+Wörter: ⟦đâu⟧ wo, wohin (Fragewort) | ⟦ai⟧ wer (Fragewort)
+=hu
+⟦Còn em thế nào?⟧ — És te hogy vagy?
+Kérdőszó használatakor a mondat ⟦không⟧ nélkül, magától kérdéssé válik.
+⟦Anh đi đâu?⟧ — Hová mész, bátyám? ⟦Em gặp ai?⟧ — Kivel találkozol?
+Szavak: ⟦đâu⟧ hol, hová (kérdőszó) | ⟦ai⟧ ki (kérdőszó)
+=id
+⟦Còn em thế nào?⟧ — Lalu kamu bagaimana?
+Jika memakai kata tanya, kalimat otomatis menjadi pertanyaan tanpa ⟦không⟧ di akhir.
+⟦Anh đi đâu?⟧ — Kakak pergi ke mana? ⟦Em gặp ai?⟧ — Kamu bertemu siapa?
+Kosakata: ⟦đâu⟧ di mana, ke mana (kata tanya) | ⟦ai⟧ siapa (kata tanya)
+=ja
+⟦Còn em thế nào?⟧ — ところで、君はどう？
+疑問詞を使うときは、文末に ⟦không⟧ がなくても自然に疑問文になります。
+⟦Anh đi đâu?⟧ — お兄さん、どこへ行くの？ ⟦Em gặp ai?⟧ — 誰に会うの？
+単語：⟦đâu⟧ どこ（疑問詞） | ⟦ai⟧ 誰（疑問詞）
+=pl
+⟦Còn em thế nào?⟧ — A jak ty się masz?
+Z pytajnikiem zdanie naturalnie staje się pytaniem, bez ⟦không⟧ na końcu.
+⟦Anh đi đâu?⟧ — Dokąd idziesz, bracie? ⟦Em gặp ai?⟧ — Z kim się spotykasz?
+Słówka: ⟦đâu⟧ gdzie, dokąd (słowo pytające) | ⟦ai⟧ kto (słowo pytające)
+@@ pdf-grammar-3246114656ba6ecb#0
+=cs
+Ve vietnamštině se přídavná jména používají i jako příslovce.
+⟦Em thế nào?⟧ — Jak se máš?
+⟦Em đi thế nào?⟧ — Jak (čím) pojedeš?
+⟦Anh khoẻ.⟧ — Bratr je zdravý.
+⟦Anh ăn khoẻ.⟧ — Bratr jí s chutí (hodně).
+Slovíčko: ⟦ăn⟧ jíst
+=zh_cn
+越南语中，形容词有时也可以像副词一样使用。
+⟦Em thế nào?⟧ —— 你怎么样？
+⟦Em đi thế nào?⟧ —— 你怎么去？
+⟦Anh khoẻ.⟧ —— 哥哥很健康。
+⟦Anh ăn khoẻ.⟧ —— 哥哥吃得很香（胃口好）。
+单词：⟦ăn⟧ 吃
+=zh
+越南語中，形容詞有時也可以像副詞一樣使用。
+⟦Em thế nào?⟧ —— 你怎麼樣？
+⟦Em đi thế nào?⟧ —— 你怎麼去？
+⟦Anh khoẻ.⟧ —— 哥哥很健康。
+⟦Anh ăn khoẻ.⟧ —— 哥哥吃得很香（胃口好）。
+單字：⟦ăn⟧ 吃
+=en
+In Vietnamese, adjectives are also used like adverbs.
+⟦Em thế nào?⟧ — How are you?
+⟦Em đi thế nào?⟧ — How are you getting there?
+⟦Anh khoẻ.⟧ — Brother is healthy.
+⟦Anh ăn khoẻ.⟧ — Brother eats heartily.
+Word: ⟦ăn⟧ to eat
+=fr
+En vietnamien, les adjectifs s'emploient aussi comme des adverbes.
+⟦Em thế nào?⟧ — Comment vas-tu ?
+⟦Em đi thế nào?⟧ — Comment y vas-tu ?
+⟦Anh khoẻ.⟧ — Grand frère est en bonne santé.
+⟦Anh ăn khoẻ.⟧ — Grand frère mange de bon appétit.
+Mot : ⟦ăn⟧ manger
+=de
+Im Vietnamesischen werden Adjektive auch wie Adverbien verwendet.
+⟦Em thế nào?⟧ — Wie geht es dir?
+⟦Em đi thế nào?⟧ — Wie kommst du dorthin?
+⟦Anh khoẻ.⟧ — Der große Bruder ist gesund.
+⟦Anh ăn khoẻ.⟧ — Der große Bruder isst mit gutem Appetit.
+Wort: ⟦ăn⟧ essen
+=hu
+A vietnámiban a melléknevek határozószóként is használhatók.
+⟦Em thế nào?⟧ — Hogy vagy?
+⟦Em đi thế nào?⟧ — Hogyan (mivel) mész?
+⟦Anh khoẻ.⟧ — A bátyám egészséges.
+⟦Anh ăn khoẻ.⟧ — A bátyám jó étvággyal eszik.
+Szó: ⟦ăn⟧ enni
+=id
+Dalam bahasa Vietnam, kata sifat juga dapat dipakai seperti kata keterangan.
+⟦Em thế nào?⟧ — Bagaimana kabarmu?
+⟦Em đi thế nào?⟧ — Kamu pergi naik apa?
+⟦Anh khoẻ.⟧ — Kakak sehat.
+⟦Anh ăn khoẻ.⟧ — Kakak makan dengan lahap.
+Kosakata: ⟦ăn⟧ makan
+=ja
+ベトナム語では、形容詞が副詞のように使われることもあります。
+⟦Em thế nào?⟧ — 君はどう？
+⟦Em đi thế nào?⟧ — どうやって行くの？
+⟦Anh khoẻ.⟧ — お兄さんは元気だ。
+⟦Anh ăn khoẻ.⟧ — お兄さんはよく（元気に）食べる。
+単語：⟦ăn⟧ 食べる
+=pl
+W wietnamskim przymiotniki bywają używane jak przysłówki.
+⟦Em thế nào?⟧ — Jak się masz?
+⟦Em đi thế nào?⟧ — Jak (czym) pojedziesz?
+⟦Anh khoẻ.⟧ — Starszy brat jest zdrowy.
+⟦Anh ăn khoẻ.⟧ — Starszy brat je z apetytem.
+Słówko: ⟦ăn⟧ jeść

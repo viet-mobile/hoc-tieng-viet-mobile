@@ -1,0 +1,144 @@
+@@ pdf-grammar-b881ab4f774b28e9#0
+=cs
+Gramatický výklad
+⟦ngoài⟧: „přes, po, za“ – vyjadřuje, že je překročeno číslo, časový bod či rozsah uvedený jako měřítko.
+⟦Ông tôi năm nay đã ngoài 70 tuổi.⟧ → Mému dědečkovi je letos přes 70. (měřítko: 70 let)
+=zh_cn
+语法解说
+⟦ngoài⟧：意为“超过、过了”，用于表示超出作为基准的数字、时间点或范围。
+⟦Ông tôi năm nay đã ngoài 70 tuổi.⟧ → 我爷爷今年已经70多岁了。（基准数字：70岁）
+=zh
+文法解說
+⟦ngoài⟧：意為「超過、過了」，用於表示超出作為基準的數字、時間點或範圍。
+⟦Ông tôi năm nay đã ngoài 70 tuổi.⟧ → 我爺爺今年已經70多歲了。（基準數字：70歲）
+=en
+Grammar notes
+⟦ngoài⟧: "over, past, beyond" – expresses going beyond a number, point in time or range given as a benchmark.
+⟦Ông tôi năm nay đã ngoài 70 tuổi.⟧ → My grandfather is over 70 this year. (benchmark: 70 years)
+=fr
+Notes de grammaire
+⟦ngoài⟧ : « plus de, passé, au-delà de » – exprime le dépassement d'un nombre, d'un moment ou d'une limite pris comme référence.
+⟦Ông tôi năm nay đã ngoài 70 tuổi.⟧ → Mon grand-père a plus de 70 ans cette année. (référence : 70 ans)
+=de
+Grammatikerläuterungen
+⟦ngoài⟧: „über, nach, jenseits“ – drückt aus, dass eine als Maßstab genannte Zahl, ein Zeitpunkt oder Bereich überschritten wird.
+⟦Ông tôi năm nay đã ngoài 70 tuổi.⟧ → Mein Großvater ist dieses Jahr schon über 70. (Maßstab: 70 Jahre)
+=hu
+Nyelvtani magyarázat
+⟦ngoài⟧: „több mint, túl, elmúlt” – azt fejezi ki, hogy a viszonyítási alapként megadott számot, időpontot vagy tartományt túllépik.
+⟦Ông tôi năm nay đã ngoài 70 tuổi.⟧ → Nagyapám idén már elmúlt 70. (viszonyítási alap: 70 év)
+=id
+Penjelasan tata bahasa
+⟦ngoài⟧: "lewat, lebih dari" – menyatakan melampaui angka, titik waktu, atau cakupan yang dijadikan patokan.
+⟦Ông tôi năm nay đã ngoài 70 tuổi.⟧ → Kakek saya tahun ini sudah lewat 70 tahun. (angka patokan: 70 tahun)
+=ja
+文法解説
+⟦ngoài⟧：「～を超えた、～を過ぎた」という意味で、基準として示される数字や時点、範囲などを過ぎる・超えるという意味を表すときに使います。
+⟦Ông tôi năm nay đã ngoài 70 tuổi.⟧ → 祖父は今年70歳を超えた。（基準となる数字：70歳）
+=pl
+Objaśnienia gramatyczne
+⟦ngoài⟧: „ponad, po, powyżej” – wyraża przekroczenie liczby, momentu lub zakresu podanego jako punkt odniesienia.
+⟦Ông tôi năm nay đã ngoài 70 tuổi.⟧ → Mój dziadek ma w tym roku już ponad 70 lat. (punkt odniesienia: 70 lat)
+@@ pdf-grammar-b881ab4f774b28e9#1
+~t 50 tuổi. — referenční číslo: 50 let|50 tuổi. — 基准数字：50岁|50 tuổi. — 基準數字：50歲|50 tuổi. — benchmark: 50 years|50 tuổi. — référence : 50 ans|50 tuổi. — Maßstab: 50 Jahre|50 tuổi. — viszonyítási alap: 50 év|50 tuổi. — angka patokan: 50 tahun|50 tuổi. — 基準となる数字：50歳|50 tuổi. — punkt odniesienia: 50 lat
+=cs
+⟦Bố tôi ngoài 50 tuổi còn mẹ tôi mới chỉ gần 50 tuổi.⟧ → Otci je přes 50 a matce teprve skoro 50. (měřítko: 50 let) · ⟦Tôi cho rằng chị ấy mới ngoài 20 tuổi.⟧ → Myslím, že je jí teprve něco přes 20. (měřítko: 20 let) · ⟦Ngoài tết tôi sẽ đi Việt Nam⟧ → Po Tếtu (lunárním Novém roce) pojedu do Vietnamu. (časový bod: Tết) · ⟦Phải ngoài ngày rằm chị ấy mới đi công tác.⟧ → Na služební cestu pojede až po úplňku. (časový bod: úplněk)
+⟦còn⟧: „ještě, stále“ – vyjadřuje, že určitá činnost nebo stav trvá či pokračuje.
+⟦Ông không còn khỏe mạnh và nhanh nhẹn như trước nữa.⟧ → Dědeček už není tak zdravý a čilý jako dřív. · ⟦Ông tôi còn minh mẫn và sáng suốt lắm.⟧ → Můj dědeček je stále velmi duševně svěží a bystrý. · ⟦Khi nào còn chưa buồn ngủ thì tôi còn đọc sách.⟧ → Dokud nejsem ospalý, pořád čtu.
+=zh_cn
+⟦Bố tôi ngoài 50 tuổi còn mẹ tôi mới chỉ gần 50 tuổi.⟧ → 我父亲50多岁了，母亲才快50岁。（基准数字：50岁） · ⟦Tôi cho rằng chị ấy mới ngoài 20 tuổi.⟧ → 我觉得她才20出头。（基准数字：20岁） · ⟦Ngoài tết tôi sẽ đi Việt Nam⟧ → 过了春节我要去越南。（基准时间：春节） · ⟦Phải ngoài ngày rằm chị ấy mới đi công tác.⟧ → 要过了十五她才去出差。（基准时间：农历十五）
+⟦còn⟧：意为“还、仍然”，用于表示某一行为、状态持续、继续。
+⟦Ông không còn khỏe mạnh và nhanh nhẹn như trước nữa.⟧ → 爷爷已经不像以前那样健康、敏捷了。 · ⟦Ông tôi còn minh mẫn và sáng suốt lắm.⟧ → 我爷爷头脑还很清醒、很明智。 · ⟦Khi nào còn chưa buồn ngủ thì tôi còn đọc sách.⟧ → 只要还不困，我就继续看书。
+=zh
+⟦Bố tôi ngoài 50 tuổi còn mẹ tôi mới chỉ gần 50 tuổi.⟧ → 我父親50多歲了，母親才快50歲。（基準數字：50歲） · ⟦Tôi cho rằng chị ấy mới ngoài 20 tuổi.⟧ → 我覺得她才20出頭。（基準數字：20歲） · ⟦Ngoài tết tôi sẽ đi Việt Nam⟧ → 過了農曆年我要去越南。（基準時間：農曆新年） · ⟦Phải ngoài ngày rằm chị ấy mới đi công tác.⟧ → 要過了十五她才去出差。（基準時間：農曆十五）
+⟦còn⟧：意為「還、仍然」，用於表示某一行為、狀態持續、繼續。
+⟦Ông không còn khỏe mạnh và nhanh nhẹn như trước nữa.⟧ → 爺爺已經不像以前那樣健康、敏捷了。 · ⟦Ông tôi còn minh mẫn và sáng suốt lắm.⟧ → 我爺爺頭腦還很清醒、很明智。 · ⟦Khi nào còn chưa buồn ngủ thì tôi còn đọc sách.⟧ → 只要還不睏，我就繼續看書。
+=en
+⟦Bố tôi ngoài 50 tuổi còn mẹ tôi mới chỉ gần 50 tuổi.⟧ → My father is over 50, while my mother is only nearly 50. (benchmark: 50 years) · ⟦Tôi cho rằng chị ấy mới ngoài 20 tuổi.⟧ → I think she's only just over 20. (benchmark: 20 years) · ⟦Ngoài tết tôi sẽ đi Việt Nam⟧ → After Tết (Lunar New Year) I'll go to Vietnam. (point in time: Tết) · ⟦Phải ngoài ngày rằm chị ấy mới đi công tác.⟧ → She won't go on her business trip until after the full-moon day. (point in time: the full moon)
+⟦còn⟧: "still, yet" – expresses that an action or state continues.
+⟦Ông không còn khỏe mạnh và nhanh nhẹn như trước nữa.⟧ → Grandpa is no longer as healthy and agile as before. · ⟦Ông tôi còn minh mẫn và sáng suốt lắm.⟧ → My grandfather is still very lucid and sharp. · ⟦Khi nào còn chưa buồn ngủ thì tôi còn đọc sách.⟧ → As long as I'm not sleepy yet, I keep reading.
+=fr
+⟦Bố tôi ngoài 50 tuổi còn mẹ tôi mới chỉ gần 50 tuổi.⟧ → Mon père a plus de 50 ans, alors que ma mère n'a que presque 50 ans. (référence : 50 ans) · ⟦Tôi cho rằng chị ấy mới ngoài 20 tuổi.⟧ → Je pense qu'elle a tout juste un peu plus de 20 ans. (référence : 20 ans) · ⟦Ngoài tết tôi sẽ đi Việt Nam⟧ → Après le Têt (Nouvel An lunaire), j'irai au Vietnam. (moment de référence : le Têt) · ⟦Phải ngoài ngày rằm chị ấy mới đi công tác.⟧ → Elle ne partira en mission qu'après le jour de la pleine lune. (moment de référence : la pleine lune)
+⟦còn⟧ : « encore, toujours » – exprime qu'une action ou un état se poursuit.
+⟦Ông không còn khỏe mạnh và nhanh nhẹn như trước nữa.⟧ → Grand-père n'est plus aussi robuste et alerte qu'avant. · ⟦Ông tôi còn minh mẫn và sáng suốt lắm.⟧ → Mon grand-père a encore toute sa tête et beaucoup de discernement. · ⟦Khi nào còn chưa buồn ngủ thì tôi còn đọc sách.⟧ → Tant que je n'ai pas sommeil, je continue à lire.
+=de
+⟦Bố tôi ngoài 50 tuổi còn mẹ tôi mới chỉ gần 50 tuổi.⟧ → Mein Vater ist über 50, meine Mutter erst fast 50. (Maßstab: 50 Jahre) · ⟦Tôi cho rằng chị ấy mới ngoài 20 tuổi.⟧ → Ich glaube, sie ist gerade erst über 20. (Maßstab: 20 Jahre) · ⟦Ngoài tết tôi sẽ đi Việt Nam⟧ → Nach Tết (dem Mondneujahr) fahre ich nach Vietnam. (Zeitpunkt: Tết) · ⟦Phải ngoài ngày rằm chị ấy mới đi công tác.⟧ → Erst nach dem Vollmondtag geht sie auf Dienstreise. (Zeitpunkt: Vollmond)
+⟦còn⟧: „noch, immer noch“ – drückt aus, dass eine Handlung oder ein Zustand andauert.
+⟦Ông không còn khỏe mạnh và nhanh nhẹn như trước nữa.⟧ → Opa ist nicht mehr so gesund und flink wie früher. · ⟦Ông tôi còn minh mẫn và sáng suốt lắm.⟧ → Mein Großvater ist noch sehr klar im Kopf und scharfsinnig. · ⟦Khi nào còn chưa buồn ngủ thì tôi còn đọc sách.⟧ → Solange ich noch nicht müde bin, lese ich weiter.
+=hu
+⟦Bố tôi ngoài 50 tuổi còn mẹ tôi mới chỉ gần 50 tuổi.⟧ → Apám elmúlt 50, anyám viszont még csak majdnem 50. (viszonyítási alap: 50 év) · ⟦Tôi cho rằng chị ấy mới ngoài 20 tuổi.⟧ → Szerintem még csak alig múlt 20. (viszonyítási alap: 20 év) · ⟦Ngoài tết tôi sẽ đi Việt Nam⟧ → Tết (a holdújév) után Vietnámba megyek. (időpont: Tết) · ⟦Phải ngoài ngày rằm chị ấy mới đi công tác.⟧ → Csak telihold napja után megy üzleti útra. (időpont: telihold)
+⟦còn⟧: „még, továbbra is” – azt fejezi ki, hogy egy cselekvés vagy állapot tart, folytatódik.
+⟦Ông không còn khỏe mạnh và nhanh nhẹn như trước nữa.⟧ → Nagyapa már nem olyan egészséges és fürge, mint régen. · ⟦Ông tôi còn minh mẫn và sáng suốt lắm.⟧ → Nagyapám még mindig nagyon tiszta fejű és éles eszű. · ⟦Khi nào còn chưa buồn ngủ thì tôi còn đọc sách.⟧ → Amíg nem vagyok álmos, tovább olvasok.
+=id
+⟦Bố tôi ngoài 50 tuổi còn mẹ tôi mới chỉ gần 50 tuổi.⟧ → Ayah saya sudah lewat 50 tahun, sedangkan ibu saya baru hampir 50 tahun. (angka patokan: 50 tahun) · ⟦Tôi cho rằng chị ấy mới ngoài 20 tuổi.⟧ → Saya kira dia baru sedikit lewat 20 tahun. (angka patokan: 20 tahun) · ⟦Ngoài tết tôi sẽ đi Việt Nam⟧ → Lewat Tết (Tahun Baru Imlek) saya akan pergi ke Vietnam. (titik waktu: Tết) · ⟦Phải ngoài ngày rằm chị ấy mới đi công tác.⟧ → Harus lewat hari bulan purnama barulah dia pergi dinas. (titik waktu: bulan purnama)
+⟦còn⟧: "masih, tetap" – menyatakan bahwa suatu tindakan atau keadaan terus berlangsung.
+⟦Ông không còn khỏe mạnh và nhanh nhẹn như trước nữa.⟧ → Kakek sudah tidak sesehat dan secekatan dulu lagi. · ⟦Ông tôi còn minh mẫn và sáng suốt lắm.⟧ → Kakek saya masih sangat jernih pikirannya dan bijak. · ⟦Khi nào còn chưa buồn ngủ thì tôi còn đọc sách.⟧ → Selama belum mengantuk, saya masih terus membaca.
+=ja
+⟦Bố tôi ngoài 50 tuổi còn mẹ tôi mới chỉ gần 50 tuổi.⟧ → 父は50歳を超えていて、母はやっと50歳に近づいたところだ。（基準となる数字：50歳） · ⟦Tôi cho rằng chị ấy mới ngoài 20 tuổi.⟧ → 私は彼女がやっと20歳を過ぎたところだと思う。（基準となる数字：20歳） · ⟦Ngoài tết tôi sẽ đi Việt Nam⟧ → テト（旧正月）が過ぎたら、私はベトナムに行くつもりだ。（基準となる時点：テト） · ⟦Phải ngoài ngày rằm chị ấy mới đi công tác.⟧ → 満月の日（旧暦15日）を過ぎてから、彼女は出張に行く。（基準となる時点：満月の日）
+⟦còn⟧：「まだ、依然として」という意味で、ある行動や状態が持続・継続する場合を表すために使います。
+⟦Ông không còn khỏe mạnh và nhanh nhẹn như trước nữa.⟧ → 祖父はもう以前のように元気で機敏ではない。 · ⟦Ông tôi còn minh mẫn và sáng suốt lắm.⟧ → 祖父はまだとても頭がはっきりしていて聡明だ。 · ⟦Khi nào còn chưa buồn ngủ thì tôi còn đọc sách.⟧ → まだ眠くない間は、私は本を読み続ける。
+=pl
+⟦Bố tôi ngoài 50 tuổi còn mẹ tôi mới chỉ gần 50 tuổi.⟧ → Mój ojciec ma ponad 50 lat, a mama dopiero prawie 50. (punkt odniesienia: 50 lat) · ⟦Tôi cho rằng chị ấy mới ngoài 20 tuổi.⟧ → Myślę, że ona ma zaledwie trochę ponad 20 lat. (punkt odniesienia: 20 lat) · ⟦Ngoài tết tôi sẽ đi Việt Nam⟧ → Po Tết (Nowym Roku Księżycowym) pojadę do Wietnamu. (moment odniesienia: Tết) · ⟦Phải ngoài ngày rằm chị ấy mới đi công tác.⟧ → W delegację pojedzie dopiero po dniu pełni. (moment odniesienia: pełnia)
+⟦còn⟧: „jeszcze, nadal” – wyraża, że jakaś czynność lub stan trwa nadal.
+⟦Ông không còn khỏe mạnh và nhanh nhẹn như trước nữa.⟧ → Dziadek nie jest już tak zdrowy i sprawny jak dawniej. · ⟦Ông tôi còn minh mẫn và sáng suốt lắm.⟧ → Mój dziadek jest jeszcze bardzo przytomny i bystry. · ⟦Khi nào còn chưa buồn ngủ thì tôi còn đọc sách.⟧ → Dopóki nie jestem senny, dalej czytam.
+@@ pdf-grammar-5222f48fd285161a#0
+=cs
+Gramatický výklad
+⟦chắc hẳn⟧, ⟦hẳn là⟧, ⟦chắc là⟧: „jistě, určitě, asi“ – používají se, když chceme určitou skutečnost potvrdit.
+⟦Chắc hẳn, bố mẹ cậu còn trẻ lắm nhỉ.⟧ → Tví rodiče jsou jistě ještě hodně mladí, že? · ⟦Hẳn là Lan nhớ nhà lắm nhỉ.⟧ → Lan se jistě hodně stýská po domově, viď? · ⟦Chắc hẳn lâu rồi cậu chưa về nhà phải không?⟧ → Určitě jsi už dlouho nebyl doma, že? · ⟦Chắc là chị ấy có điều gì không vui.⟧ → Asi ji něco trápí. · ⟦Hẳn là anh vừa ở thư viện về?⟧ → Určitě ses právě vrátil z knihovny, že?
+⟦cả hai⟧: „oba, obě“ – ve tvaru ⟦cả⟧ + číslovka se používá, když chceme zmínit všechny z více objektů.
+⟦Cả hai ông bà đã ngoài 70 rồi.⟧ → Dědečkovi i babičce je oběma přes 70. · ⟦Ừ, cả hai còn trẻ lắm, mới ngoài 50 thôi.⟧ → Jo, oba jsou ještě mladí, je jim teprve něco přes 50. · ⟦Cả hai chúng tôi đều đến lớp đúng giờ.⟧ → Oba jsme přišli na hodinu včas. · ⟦Chiếc ô tô này và chiếc ô tô kia, cả hai đều bị chết máy.⟧ → Tohle i tamto auto – oběma chcípl motor. · ⟦Anh và tôi, cả hai đều đã từng sống ở Hà Nội.⟧ → Ty i já jsme oba kdysi žili v Hanoji.
+=zh_cn
+语法解说
+⟦chắc hẳn⟧、⟦hẳn là⟧、⟦chắc là⟧：意为“一定、肯定、想必”，用于确认某一事实。
+⟦Chắc hẳn, bố mẹ cậu còn trẻ lắm nhỉ.⟧ → 你父母想必还很年轻吧。 · ⟦Hẳn là Lan nhớ nhà lắm nhỉ.⟧ → 阿兰一定很想家吧。 · ⟦Chắc hẳn lâu rồi cậu chưa về nhà phải không?⟧ → 你一定很久没回家了，是不是？ · ⟦Chắc là chị ấy có điều gì không vui.⟧ → 她大概有什么不开心的事。 · ⟦Hẳn là anh vừa ở thư viện về?⟧ → 你一定是刚从图书馆回来吧？
+⟦cả hai⟧：意为“两个都”，以 ⟦cả⟧ + 数词 的形式用于提及全部多个对象。
+⟦Cả hai ông bà đã ngoài 70 rồi.⟧ → 爷爷奶奶两位都70多岁了。 · ⟦Ừ, cả hai còn trẻ lắm, mới ngoài 50 thôi.⟧ → 是啊，两位都还很年轻，才50出头。 · ⟦Cả hai chúng tôi đều đến lớp đúng giờ.⟧ → 我们俩都准时来上课了。 · ⟦Chiếc ô tô này và chiếc ô tô kia, cả hai đều bị chết máy.⟧ → 这辆车和那辆车，两辆都熄火了。 · ⟦Anh và tôi, cả hai đều đã từng sống ở Hà Nội.⟧ → 你和我，两个人都曾在河内生活过。
+=zh
+文法解說
+⟦chắc hẳn⟧、⟦hẳn là⟧、⟦chắc là⟧：意為「一定、肯定、想必」，用於確認某一事實。
+⟦Chắc hẳn, bố mẹ cậu còn trẻ lắm nhỉ.⟧ → 你父母想必還很年輕吧。 · ⟦Hẳn là Lan nhớ nhà lắm nhỉ.⟧ → 阿蘭一定很想家吧。 · ⟦Chắc hẳn lâu rồi cậu chưa về nhà phải không?⟧ → 你一定很久沒回家了，是不是？ · ⟦Chắc là chị ấy có điều gì không vui.⟧ → 她大概有什麼不開心的事。 · ⟦Hẳn là anh vừa ở thư viện về?⟧ → 你一定是剛從圖書館回來吧？
+⟦cả hai⟧：意為「兩個都」，以 ⟦cả⟧ + 數詞 的形式用於提及全部多個對象。
+⟦Cả hai ông bà đã ngoài 70 rồi.⟧ → 爺爺奶奶兩位都70多歲了。 · ⟦Ừ, cả hai còn trẻ lắm, mới ngoài 50 thôi.⟧ → 是啊，兩位都還很年輕，才50出頭。 · ⟦Cả hai chúng tôi đều đến lớp đúng giờ.⟧ → 我們倆都準時來上課了。 · ⟦Chiếc ô tô này và chiếc ô tô kia, cả hai đều bị chết máy.⟧ → 這輛車和那輛車，兩輛都熄火了。 · ⟦Anh và tôi, cả hai đều đã từng sống ở Hà Nội.⟧ → 你和我，兩個人都曾在河內住過。
+=en
+Grammar notes
+⟦chắc hẳn⟧, ⟦hẳn là⟧, ⟦chắc là⟧: "surely, certainly, must be, probably" – used to affirm a fact.
+⟦Chắc hẳn, bố mẹ cậu còn trẻ lắm nhỉ.⟧ → Your parents must still be very young, then. · ⟦Hẳn là Lan nhớ nhà lắm nhỉ.⟧ → You must miss home a lot, Lan. · ⟦Chắc hẳn lâu rồi cậu chưa về nhà phải không?⟧ → You surely haven't been home for a long time, have you? · ⟦Chắc là chị ấy có điều gì không vui.⟧ → Something must be bothering her. · ⟦Hẳn là anh vừa ở thư viện về?⟧ → You've just come back from the library, surely?
+⟦cả hai⟧: "both" – in the form ⟦cả⟧ + number, used to refer to all of several objects.
+⟦Cả hai ông bà đã ngoài 70 rồi.⟧ → Grandpa and Grandma are both over 70. · ⟦Ừ, cả hai còn trẻ lắm, mới ngoài 50 thôi.⟧ → Yes, they're both still young – only just over 50. · ⟦Cả hai chúng tôi đều đến lớp đúng giờ.⟧ → We both arrived at class on time. · ⟦Chiếc ô tô này và chiếc ô tô kia, cả hai đều bị chết máy.⟧ → This car and that car – both of them have broken down. · ⟦Anh và tôi, cả hai đều đã từng sống ở Hà Nội.⟧ → You and I have both lived in Hanoi.
+=fr
+Notes de grammaire
+⟦chắc hẳn⟧, ⟦hẳn là⟧, ⟦chắc là⟧ : « sûrement, certainement, sans doute » – servent à affirmer un fait.
+⟦Chắc hẳn, bố mẹ cậu còn trẻ lắm nhỉ.⟧ → Tes parents sont sûrement encore très jeunes, hein. · ⟦Hẳn là Lan nhớ nhà lắm nhỉ.⟧ → Tu dois avoir beaucoup le mal du pays, Lan. · ⟦Chắc hẳn lâu rồi cậu chưa về nhà phải không?⟧ → Ça fait sûrement longtemps que tu n'es pas rentré chez toi, non ? · ⟦Chắc là chị ấy có điều gì không vui.⟧ → Elle a sans doute quelque chose qui la chagrine. · ⟦Hẳn là anh vừa ở thư viện về?⟧ → Tu reviens sûrement de la bibliothèque ?
+⟦cả hai⟧ : « tous les deux » – sous la forme ⟦cả⟧ + nombre, sert à mentionner la totalité de plusieurs objets.
+⟦Cả hai ông bà đã ngoài 70 rồi.⟧ → Grand-père et grand-mère ont tous les deux plus de 70 ans. · ⟦Ừ, cả hai còn trẻ lắm, mới ngoài 50 thôi.⟧ → Oui, ils sont tous les deux encore jeunes, ils ont à peine plus de 50 ans. · ⟦Cả hai chúng tôi đều đến lớp đúng giờ.⟧ → Nous sommes arrivés tous les deux à l'heure en cours. · ⟦Chiếc ô tô này và chiếc ô tô kia, cả hai đều bị chết máy.⟧ → Cette voiture-ci et cette voiture-là sont toutes les deux tombées en panne. · ⟦Anh và tôi, cả hai đều đã từng sống ở Hà Nội.⟧ → Toi et moi, nous avons tous les deux vécu à Hanoï.
+=de
+Grammatikerläuterungen
+⟦chắc hẳn⟧, ⟦hẳn là⟧, ⟦chắc là⟧: „sicher, bestimmt, wohl“ – werden verwendet, um eine Tatsache zu bekräftigen.
+⟦Chắc hẳn, bố mẹ cậu còn trẻ lắm nhỉ.⟧ → Deine Eltern sind sicher noch sehr jung, oder? · ⟦Hẳn là Lan nhớ nhà lắm nhỉ.⟧ → Du hast bestimmt großes Heimweh, Lan. · ⟦Chắc hẳn lâu rồi cậu chưa về nhà phải không?⟧ → Du warst sicher schon lange nicht mehr zu Hause, oder? · ⟦Chắc là chị ấy có điều gì không vui.⟧ → Sie hat wohl irgendeinen Kummer. · ⟦Hẳn là anh vừa ở thư viện về?⟧ → Du kommst bestimmt gerade aus der Bibliothek?
+⟦cả hai⟧: „beide“ – in der Form ⟦cả⟧ + Zahl, um alle von mehreren Objekten zu nennen.
+⟦Cả hai ông bà đã ngoài 70 rồi.⟧ → Opa und Oma sind beide schon über 70. · ⟦Ừ, cả hai còn trẻ lắm, mới ngoài 50 thôi.⟧ → Ja, beide sind noch sehr jung, gerade erst über 50. · ⟦Cả hai chúng tôi đều đến lớp đúng giờ.⟧ → Wir beide kamen pünktlich zum Unterricht. · ⟦Chiếc ô tô này và chiếc ô tô kia, cả hai đều bị chết máy.⟧ → Dieses Auto und jenes Auto – beide haben eine Panne. · ⟦Anh và tôi, cả hai đều đã từng sống ở Hà Nội.⟧ → Du und ich, wir haben beide schon in Hanoi gelebt.
+=hu
+Nyelvtani magyarázat
+⟦chắc hẳn⟧, ⟦hẳn là⟧, ⟦chắc là⟧: „biztosan, bizonyára, alighanem” – egy tény megerősítésére szolgálnak.
+⟦Chắc hẳn, bố mẹ cậu còn trẻ lắm nhỉ.⟧ → A szüleid bizonyára még nagyon fiatalok, ugye? · ⟦Hẳn là Lan nhớ nhà lắm nhỉ.⟧ → Biztosan nagyon hiányzik az otthonod, Lan. · ⟦Chắc hẳn lâu rồi cậu chưa về nhà phải không?⟧ → Biztosan régóta nem voltál otthon, igaz? · ⟦Chắc là chị ấy có điều gì không vui.⟧ → Alighanem valami bántja. · ⟦Hẳn là anh vừa ở thư viện về?⟧ → Biztosan most jöttél a könyvtárból?
+⟦cả hai⟧: „mindkettő” – ⟦cả⟧ + számnév alakban több dolog mindegyikére utal.
+⟦Cả hai ông bà đã ngoài 70 rồi.⟧ → Nagyapa és nagymama is elmúlt már 70. · ⟦Ừ, cả hai còn trẻ lắm, mới ngoài 50 thôi.⟧ → Igen, mindketten még fiatalok, épp csak elmúltak 50. · ⟦Cả hai chúng tôi đều đến lớp đúng giờ.⟧ → Mindketten pontosan érkeztünk az órára. · ⟦Chiếc ô tô này và chiếc ô tô kia, cả hai đều bị chết máy.⟧ → Ez az autó és az az autó – mindkettő lerobbant. · ⟦Anh và tôi, cả hai đều đã từng sống ở Hà Nội.⟧ → Te is, én is éltünk már Hanoiban.
+=id
+Penjelasan tata bahasa
+⟦chắc hẳn⟧, ⟦hẳn là⟧, ⟦chắc là⟧: "pasti, tentu, mungkin" – digunakan untuk memastikan suatu fakta.
+⟦Chắc hẳn, bố mẹ cậu còn trẻ lắm nhỉ.⟧ → Orang tuamu pasti masih muda sekali, ya. · ⟦Hẳn là Lan nhớ nhà lắm nhỉ.⟧ → Lan pasti sangat rindu rumah, ya. · ⟦Chắc hẳn lâu rồi cậu chưa về nhà phải không?⟧ → Kamu pasti sudah lama tidak pulang, kan? · ⟦Chắc là chị ấy có điều gì không vui.⟧ → Mungkin dia sedang ada masalah. · ⟦Hẳn là anh vừa ở thư viện về?⟧ → Kamu pasti baru pulang dari perpustakaan?
+⟦cả hai⟧: "keduanya" – dalam bentuk ⟦cả⟧ + bilangan, digunakan untuk menyebut semua dari beberapa objek.
+⟦Cả hai ông bà đã ngoài 70 rồi.⟧ → Kakek dan nenek keduanya sudah lewat 70 tahun. · ⟦Ừ, cả hai còn trẻ lắm, mới ngoài 50 thôi.⟧ → Ya, keduanya masih muda, baru lewat 50 tahun. · ⟦Cả hai chúng tôi đều đến lớp đúng giờ.⟧ → Kami berdua datang ke kelas tepat waktu. · ⟦Chiếc ô tô này và chiếc ô tô kia, cả hai đều bị chết máy.⟧ → Mobil ini dan mobil itu, keduanya mogok. · ⟦Anh và tôi, cả hai đều đã từng sống ở Hà Nội.⟧ → Kamu dan saya, kita berdua pernah tinggal di Hanoi.
+=ja
+文法解説
+⟦chắc hẳn⟧、⟦hẳn là⟧、⟦chắc là⟧：「確かに、きっと、本当に」という意味で、ある事実を確定させたいときに使います。
+⟦Chắc hẳn, bố mẹ cậu còn trẻ lắm nhỉ.⟧ → 君のご両親はきっとまだお若いんだね。 · ⟦Hẳn là Lan nhớ nhà lắm nhỉ.⟧ → ランはきっと家が恋しいんだね。 · ⟦Chắc hẳn lâu rồi cậu chưa về nhà phải không?⟧ → 家に帰ってからきっと長いこと経つんだね、そうでしょう？ · ⟦Chắc là chị ấy có điều gì không vui.⟧ → 彼女はきっと何か嫌なことがあったようだ。 · ⟦Hẳn là anh vừa ở thư viện về?⟧ → きっと図書館から戻ってきたところでしょう？
+⟦cả hai⟧：「二つとも」という意味で、複数の対象をすべて言及したいときに ⟦cả⟧ + 数字 の形で使います。
+⟦Cả hai ông bà đã ngoài 70 rồi.⟧ → 祖父と祖母は二人とも70歳を超えている。 · ⟦Ừ, cả hai còn trẻ lắm, mới ngoài 50 thôi.⟧ → うん、二人ともまだ若くて、50歳を過ぎたばかりだよ。 · ⟦Cả hai chúng tôi đều đến lớp đúng giờ.⟧ → 私たち二人とも時間どおりに授業に出た。 · ⟦Chiếc ô tô này và chiếc ô tô kia, cả hai đều bị chết máy.⟧ → この車とあの車、二台ともエンストした。 · ⟦Anh và tôi, cả hai đều đã từng sống ở Hà Nội.⟧ → あなたと私、二人ともハノイに住んだことがある。
+=pl
+Objaśnienia gramatyczne
+⟦chắc hẳn⟧, ⟦hẳn là⟧, ⟦chắc là⟧: „na pewno, z pewnością, pewnie” – używa się ich, by potwierdzić jakiś fakt.
+⟦Chắc hẳn, bố mẹ cậu còn trẻ lắm nhỉ.⟧ → Twoi rodzice na pewno są jeszcze bardzo młodzi, co? · ⟦Hẳn là Lan nhớ nhà lắm nhỉ.⟧ → Na pewno bardzo tęsknisz za domem, Lan. · ⟦Chắc hẳn lâu rồi cậu chưa về nhà phải không?⟧ → Na pewno dawno nie byłeś w domu, prawda? · ⟦Chắc là chị ấy có điều gì không vui.⟧ → Pewnie coś ją martwi. · ⟦Hẳn là anh vừa ở thư viện về?⟧ → Na pewno właśnie wróciłeś z biblioteki?
+⟦cả hai⟧: „obaj, oboje, obie” – w formie ⟦cả⟧ + liczebnik służy do wymienienia wszystkich z kilku obiektów.
+⟦Cả hai ông bà đã ngoài 70 rồi.⟧ → Dziadek i babcia mają oboje ponad 70 lat. · ⟦Ừ, cả hai còn trẻ lắm, mới ngoài 50 thôi.⟧ → Tak, oboje są jeszcze młodzi, mają ledwie ponad 50. · ⟦Cả hai chúng tôi đều đến lớp đúng giờ.⟧ → Obaj przyszliśmy na zajęcia punktualnie. · ⟦Chiếc ô tô này và chiếc ô tô kia, cả hai đều bị chết máy.⟧ → Ten samochód i tamten – oba się zepsuły. · ⟦Anh và tôi, cả hai đều đã từng sống ở Hà Nội.⟧ → Ty i ja – oboje mieszkaliśmy kiedyś w Hanoi.

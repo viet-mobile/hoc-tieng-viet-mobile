@@ -1,0 +1,213 @@
+@@ pdf-grammar-72829f8493d688c3#0
+=cs
+Gramatický výklad
+Zástupná slova ⟦này⟧, ⟦kia⟧, ⟦đó⟧, ⟦đây⟧, ⟦ấy⟧: „tento, tamten, ten, zde, onen“ – nahrazují objekt či obsah zmíněný v předchozí části textu.
+⟦Trước đây Lee đã được nghe về bảo tàng này.⟧ → Lee už dříve slyšel o tomto muzeu. (⟦này⟧ nahrazuje „Vietnamské vojenské muzeum“)
+⟦Lee không thể ngờ được những chiếc máy bay nhỏ bé kia lại có thể bắn rơi được những chiếc máy bay khổng lồ như B52.⟧ → Lee nemohl uvěřit, že tamta malá letadla dokázala sestřelit obrovské letouny jako B52. (⟦kia⟧ nahrazuje „letadla MiG-19, MiG-21“)
+⟦Điều đó khiến Lee vô cùng kinh ngạc.⟧ → To Leeho nesmírně ohromilo. (⟦đó⟧ nahrazuje „to, že tamta malá letadla dokázala sestřelit obří letouny jako B52 či moderní stíhačky F-4 Phantom II a F-105 Thunderchief“)
+⟦Tại đây, Lee còn được trực tiếp quan sát các loại ra đa, tên lửa và nhiều loại súng phòng không khác.⟧ → Zde si Lee mohl také přímo prohlédnout radary, rakety a mnoho dalších druhů protiletadlových zbraní. (⟦đây⟧ nahrazuje „Vietnamské vojenské muzeum“)
+⟦Chỉ với những vũ khí thô sơ ấy, Việt Nam đã lập nên những kì tích, khiến cả thế giới phải kính phục.⟧ → Jen s těmito primitivními zbraněmi dokázal Vietnam divy, které si získaly obdiv celého světa. (⟦ấy⟧ nahrazuje „radary, rakety a mnoho druhů protiletadlových zbraní“)
+⟦chỉ⟧: „jen, pouze“ – zdůrazňuje, že mimo vymezený rozsah či vlastnost žádný jiný neexistuje.
+=zh_cn
+语法解说
+替代词 ⟦này⟧、⟦kia⟧、⟦đó⟧、⟦đây⟧、⟦ấy⟧：分别意为“这、那、那、这里、那（个）”，用于替代句子前半部分提到的对象或内容。
+⟦Trước đây Lee đã được nghe về bảo tàng này.⟧ → 以前李听说过这座博物馆。（⟦này⟧ 替代“越南军事博物馆”）
+⟦Lee không thể ngờ được những chiếc máy bay nhỏ bé kia lại có thể bắn rơi được những chiếc máy bay khổng lồ như B52.⟧ → 李难以相信那些小小的飞机竟能击落像B52那样的庞大飞机。（⟦kia⟧ 替代“米格-19、米格-21飞机”）
+⟦Điều đó khiến Lee vô cùng kinh ngạc.⟧ → 这一点让李非常惊讶。（⟦đó⟧ 替代“那些小飞机能击落B52那样的庞大飞机或F-4“鬼怪II”、F-105“雷公”等现代战斗机”）
+⟦Tại đây, Lee còn được trực tiếp quan sát các loại ra đa, tên lửa và nhiều loại súng phòng không khác.⟧ → 在这里，李还能亲眼观察各种雷达、导弹以及许多其他防空武器。（⟦đây⟧ 替代“越南军事博物馆”）
+⟦Chỉ với những vũ khí thô sơ ấy, Việt Nam đã lập nên những kì tích, khiến cả thế giới phải kính phục.⟧ → 仅凭那些简陋的武器，越南就创造了令全世界钦佩的奇迹。（⟦ấy⟧ 替代“雷达、导弹和多种防空武器”）
+⟦chỉ⟧：意为“只、仅仅”，用于强调除限定的范围、性质之外没有其他范围或性质。
+=zh
+文法解說
+替代詞 ⟦này⟧、⟦kia⟧、⟦đó⟧、⟦đây⟧、⟦ấy⟧：分別意為「這、那、那、這裡、那（個）」，用於替代句子前半部分提到的對象或內容。
+⟦Trước đây Lee đã được nghe về bảo tàng này.⟧ → 以前李聽說過這座博物館。（⟦này⟧ 替代「越南軍事博物館」）
+⟦Lee không thể ngờ được những chiếc máy bay nhỏ bé kia lại có thể bắn rơi được những chiếc máy bay khổng lồ như B52.⟧ → 李難以相信那些小小的飛機竟能擊落像B52那樣的龐大飛機。（⟦kia⟧ 替代「米格-19、米格-21飛機」）
+⟦Điều đó khiến Lee vô cùng kinh ngạc.⟧ → 這一點讓李非常驚訝。（⟦đó⟧ 替代「那些小飛機能擊落B52那樣的龐大飛機或F-4「幽靈II」、F-105「雷公」等現代戰鬥機」）
+⟦Tại đây, Lee còn được trực tiếp quan sát các loại ra đa, tên lửa và nhiều loại súng phòng không khác.⟧ → 在這裡，李還能親眼觀察各種雷達、飛彈以及許多其他防空武器。（⟦đây⟧ 替代「越南軍事博物館」）
+⟦Chỉ với những vũ khí thô sơ ấy, Việt Nam đã lập nên những kì tích, khiến cả thế giới phải kính phục.⟧ → 僅憑那些簡陋的武器，越南就創造了令全世界欽佩的奇蹟。（⟦ấy⟧ 替代「雷達、飛彈和多種防空武器」）
+⟦chỉ⟧：意為「只、僅僅」，用於強調除限定的範圍、性質之外沒有其他範圍或性質。
+=en
+Grammar notes
+Substitute words ⟦này⟧, ⟦kia⟧, ⟦đó⟧, ⟦đây⟧, ⟦ấy⟧: "this, that (over there), that, here, that (one)" – used to replace an object or content mentioned earlier.
+⟦Trước đây Lee đã được nghe về bảo tàng này.⟧ → Lee had heard about this museum before. (⟦này⟧ stands for "the Vietnam Military History Museum")
+⟦Lee không thể ngờ được những chiếc máy bay nhỏ bé kia lại có thể bắn rơi được những chiếc máy bay khổng lồ như B52.⟧ → Lee couldn't believe that those little planes over there could shoot down giant aircraft like the B-52. (⟦kia⟧ stands for "the MiG-19 and MiG-21 aircraft")
+⟦Điều đó khiến Lee vô cùng kinh ngạc.⟧ → That amazed Lee enormously. (⟦đó⟧ stands for "the fact that those small planes could shoot down giant aircraft like the B-52, or modern fighters such as the F-4 Phantom II and F-105 Thunderchief")
+⟦Tại đây, Lee còn được trực tiếp quan sát các loại ra đa, tên lửa và nhiều loại súng phòng không khác.⟧ → Here, Lee could also see radars, missiles and many other kinds of anti-aircraft guns first-hand. (⟦đây⟧ stands for "the Vietnam Military History Museum")
+⟦Chỉ với những vũ khí thô sơ ấy, Việt Nam đã lập nên những kì tích, khiến cả thế giới phải kính phục.⟧ → With just those rudimentary weapons, Vietnam achieved feats that earned the admiration of the whole world. (⟦ấy⟧ stands for "radars, missiles and many kinds of anti-aircraft weapons")
+⟦chỉ⟧: "only, just" – emphasizes that there is no other scope or quality beyond the limited one stated.
+=fr
+Notes de grammaire
+Mots de substitution ⟦này⟧, ⟦kia⟧, ⟦đó⟧, ⟦đây⟧, ⟦ấy⟧ : « ce…-ci, ce…-là (là-bas), cela, ici, ce…-là » – remplacent un objet ou un contenu mentionné auparavant.
+⟦Trước đây Lee đã được nghe về bảo tàng này.⟧ → Lee avait déjà entendu parler de ce musée. (⟦này⟧ remplace « le musée militaire du Vietnam »)
+⟦Lee không thể ngờ được những chiếc máy bay nhỏ bé kia lại có thể bắn rơi được những chiếc máy bay khổng lồ như B52.⟧ → Lee n'en revenait pas que ces petits avions-là aient pu abattre des appareils géants comme le B-52. (⟦kia⟧ remplace « les MiG-19 et MiG-21 »)
+⟦Điều đó khiến Lee vô cùng kinh ngạc.⟧ → Cela a énormément surpris Lee. (⟦đó⟧ remplace « le fait que ces petits avions aient pu abattre des appareils géants comme le B-52 ou des chasseurs modernes comme le F-4 Phantom II et le F-105 Thunderchief »)
+⟦Tại đây, Lee còn được trực tiếp quan sát các loại ra đa, tên lửa và nhiều loại súng phòng không khác.⟧ → Ici, Lee a aussi pu observer directement des radars, des missiles et de nombreux autres canons antiaériens. (⟦đây⟧ remplace « le musée militaire du Vietnam »)
+⟦Chỉ với những vũ khí thô sơ ấy, Việt Nam đã lập nên những kì tích, khiến cả thế giới phải kính phục.⟧ → Avec ces seules armes rudimentaires, le Vietnam a accompli des exploits qui ont forcé l'admiration du monde entier. (⟦ấy⟧ remplace « radars, missiles et nombreuses armes antiaériennes »)
+⟦chỉ⟧ : « seulement, ne… que » – souligne qu'il n'existe pas d'autre étendue ou qualité en dehors de celle qui est délimitée.
+=de
+Grammatikerläuterungen
+Ersatzwörter ⟦này⟧, ⟦kia⟧, ⟦đó⟧, ⟦đây⟧, ⟦ấy⟧: „dieser, jener (dort), das, hier, jener“ – ersetzen einen zuvor genannten Gegenstand oder Inhalt.
+⟦Trước đây Lee đã được nghe về bảo tàng này.⟧ → Lee hatte schon früher von diesem Museum gehört. (⟦này⟧ ersetzt „das vietnamesische Militärmuseum“)
+⟦Lee không thể ngờ được những chiếc máy bay nhỏ bé kia lại có thể bắn rơi được những chiếc máy bay khổng lồ như B52.⟧ → Lee konnte nicht fassen, dass jene kleinen Flugzeuge dort riesige Maschinen wie die B-52 abschießen konnten. (⟦kia⟧ ersetzt „die MiG-19 und MiG-21“)
+⟦Điều đó khiến Lee vô cùng kinh ngạc.⟧ → Das erstaunte Lee außerordentlich. (⟦đó⟧ ersetzt „dass jene kleinen Flugzeuge riesige Maschinen wie die B-52 oder moderne Kampfjets wie die F-4 Phantom II und F-105 Thunderchief abschießen konnten“)
+⟦Tại đây, Lee còn được trực tiếp quan sát các loại ra đa, tên lửa và nhiều loại súng phòng không khác.⟧ → Hier konnte Lee auch Radaranlagen, Raketen und viele andere Flugabwehrwaffen direkt betrachten. (⟦đây⟧ ersetzt „das vietnamesische Militärmuseum“)
+⟦Chỉ với những vũ khí thô sơ ấy, Việt Nam đã lập nên những kì tích, khiến cả thế giới phải kính phục.⟧ → Allein mit jenen einfachen Waffen vollbrachte Vietnam Wundertaten, die die ganze Welt in Bewunderung versetzten. (⟦ấy⟧ ersetzt „Radaranlagen, Raketen und viele Flugabwehrwaffen“)
+⟦chỉ⟧: „nur, bloß“ – betont, dass es außer dem begrenzten Bereich oder der genannten Eigenschaft keinen anderen gibt.
+=hu
+Nyelvtani magyarázat
+Helyettesítő szavak: ⟦này⟧, ⟦kia⟧, ⟦đó⟧, ⟦đây⟧, ⟦ấy⟧ – „ez, az (ott), az, itt, az” – a korábban említett tárgyat vagy tartalmat helyettesítik.
+⟦Trước đây Lee đã được nghe về bảo tàng này.⟧ → Lee korábban már hallott erről a múzeumról. (a ⟦này⟧ a „Vietnámi Hadtörténeti Múzeumot” helyettesíti)
+⟦Lee không thể ngờ được những chiếc máy bay nhỏ bé kia lại có thể bắn rơi được những chiếc máy bay khổng lồ như B52.⟧ → Lee el sem tudta hinni, hogy azok az apró gépek ott le tudtak lőni olyan óriási repülőgépeket, mint a B-52. (a ⟦kia⟧ a „MiG-19 és MiG-21 gépeket” helyettesíti)
+⟦Điều đó khiến Lee vô cùng kinh ngạc.⟧ → Ez rendkívül meglepte Lee-t. (a ⟦đó⟧ azt helyettesíti, hogy „azok a kis gépek le tudtak lőni B-52-höz hasonló óriásgépeket vagy F-4 Phantom II és F-105 Thunderchief típusú modern vadászgépeket”)
+⟦Tại đây, Lee còn được trực tiếp quan sát các loại ra đa, tên lửa và nhiều loại súng phòng không khác.⟧ → Itt Lee közvetlenül megnézhetett radarokat, rakétákat és sokféle légvédelmi fegyvert is. (a ⟦đây⟧ a „Vietnámi Hadtörténeti Múzeumot” helyettesíti)
+⟦Chỉ với những vũ khí thô sơ ấy, Việt Nam đã lập nên những kì tích, khiến cả thế giới phải kính phục.⟧ → Pusztán azokkal a kezdetleges fegyverekkel Vietnám csodás tetteket vitt véghez, amelyek az egész világ csodálatát kivívták. (az ⟦ấy⟧ a „radarokat, rakétákat és sokféle légvédelmi fegyvert” helyettesíti)
+⟦chỉ⟧: „csak, csupán” – hangsúlyozza, hogy a behatárolt körön vagy tulajdonságon kívül nincs más.
+=id
+Penjelasan tata bahasa
+Kata pengganti ⟦này⟧, ⟦kia⟧, ⟦đó⟧, ⟦đây⟧, ⟦ấy⟧: "ini, itu (di sana), itu, sini, itu" – menggantikan objek atau isi yang disebut di bagian awal kalimat.
+⟦Trước đây Lee đã được nghe về bảo tàng này.⟧ → Sebelumnya Lee sudah mendengar tentang museum ini. (⟦này⟧ menggantikan "Museum Militer Vietnam")
+⟦Lee không thể ngờ được những chiếc máy bay nhỏ bé kia lại có thể bắn rơi được những chiếc máy bay khổng lồ như B52.⟧ → Lee tidak menyangka pesawat-pesawat kecil itu bisa menembak jatuh pesawat raksasa seperti B-52. (⟦kia⟧ menggantikan "pesawat MiG-19, MiG-21")
+⟦Điều đó khiến Lee vô cùng kinh ngạc.⟧ → Hal itu membuat Lee sangat takjub. (⟦đó⟧ menggantikan "bahwa pesawat kecil itu bisa menembak jatuh pesawat raksasa seperti B-52 atau pesawat tempur modern seperti F-4 Phantom II dan F-105 Thunderchief")
+⟦Tại đây, Lee còn được trực tiếp quan sát các loại ra đa, tên lửa và nhiều loại súng phòng không khác.⟧ → Di sini Lee juga bisa melihat langsung berbagai radar, rudal, dan banyak jenis senjata antipesawat lainnya. (⟦đây⟧ menggantikan "Museum Militer Vietnam")
+⟦Chỉ với những vũ khí thô sơ ấy, Việt Nam đã lập nên những kì tích, khiến cả thế giới phải kính phục.⟧ → Hanya dengan senjata sederhana itu, Vietnam mencetak prestasi luar biasa yang membuat seluruh dunia kagum. (⟦ấy⟧ menggantikan "radar, rudal, dan berbagai senjata antipesawat")
+⟦chỉ⟧: "hanya, cuma" – menegaskan bahwa tidak ada lingkup atau sifat lain di luar yang dibatasi.
+=ja
+文法解説
+代替語 ⟦này⟧、⟦kia⟧、⟦đó⟧、⟦đây⟧、⟦ấy⟧：それぞれ「この、あの、その、ここ、その／あの」という意味で、文の前半で述べた対象や内容を置き換えるために使われます。
+⟦Trước đây Lee đã được nghe về bảo tàng này.⟧ → 以前リーはこの博物館について聞いたことがあった。（⟦này⟧：「ベトナム軍事博物館」を指す）
+⟦Lee không thể ngờ được những chiếc máy bay nhỏ bé kia lại có thể bắn rơi được những chiếc máy bay khổng lồ như B52.⟧ → リーはあの小さな飛行機がB52のような巨大な航空機を撃墜できたとは信じられなかった。（⟦kia⟧：「MiG-19、MiG-21機」を指す）
+⟦Điều đó khiến Lee vô cùng kinh ngạc.⟧ → そのことがリーをとても驚かせた。（⟦đó⟧：「あの小さな飛行機がB52のような巨大機や、F-4ファントムII、F-105サンダーチーフのような近代的戦闘機を撃墜できたこと」を指す）
+⟦Tại đây, Lee còn được trực tiếp quan sát các loại ra đa, tên lửa và nhiều loại súng phòng không khác.⟧ → ここでリーはさらに、レーダーやミサイル、多くの種類の対空火器を直接見ることができた。（⟦đây⟧：「ベトナム軍事博物館」を指す）
+⟦Chỉ với những vũ khí thô sơ ấy, Việt Nam đã lập nên những kì tích, khiến cả thế giới phải kính phục.⟧ → そのような粗末な武器だけで、ベトナムは奇跡を成し遂げ、全世界を感服させた。（⟦ấy⟧：「レーダー、ミサイルと多くの種類の対空火器」を指す）
+⟦chỉ⟧：「ただ、単に」という意味で、限定された範囲・性質以外に他の範囲や性質がないことを強調するために使います。
+=pl
+Objaśnienia gramatyczne
+Słowa zastępcze ⟦này⟧, ⟦kia⟧, ⟦đó⟧, ⟦đây⟧, ⟦ấy⟧: „ten, tamten, to, tu, ów” – zastępują wcześniej wspomniany obiekt lub treść.
+⟦Trước đây Lee đã được nghe về bảo tàng này.⟧ → Lee już wcześniej słyszał o tym muzeum. (⟦này⟧ zastępuje „Wietnamskie Muzeum Wojskowe”)
+⟦Lee không thể ngờ được những chiếc máy bay nhỏ bé kia lại có thể bắn rơi được những chiếc máy bay khổng lồ như B52.⟧ → Lee nie mógł uwierzyć, że tamte małe samoloty mogły zestrzelić olbrzymie maszyny takie jak B-52. (⟦kia⟧ zastępuje „samoloty MiG-19, MiG-21”)
+⟦Điều đó khiến Lee vô cùng kinh ngạc.⟧ → To niezmiernie zdumiało Lee. (⟦đó⟧ zastępuje „to, że tamte małe samoloty mogły zestrzelić olbrzymie maszyny jak B-52 lub nowoczesne myśliwce F-4 Phantom II i F-105 Thunderchief”)
+⟦Tại đây, Lee còn được trực tiếp quan sát các loại ra đa, tên lửa và nhiều loại súng phòng không khác.⟧ → Tu Lee mógł też bezpośrednio obejrzeć radary, rakiety i wiele innych rodzajów broni przeciwlotniczej. (⟦đây⟧ zastępuje „Wietnamskie Muzeum Wojskowe”)
+⟦Chỉ với những vũ khí thô sơ ấy, Việt Nam đã lập nên những kì tích, khiến cả thế giới phải kính phục.⟧ → Jedynie z tą prymitywną bronią Wietnam dokonał cudów, które wzbudziły podziw całego świata. (⟦ấy⟧ zastępuje „radary, rakiety i wiele rodzajów broni przeciwlotniczej”)
+⟦chỉ⟧: „tylko, jedynie” – podkreśla, że poza ograniczonym zakresem lub cechą nie ma żadnego innego.
+@@ pdf-grammar-e3ec6171ffc295ac#0
+=cs
+Gramatický výklad
+⟦không (có) ... thì không (có)⟧: „bez ~ není ani ~; když není ~, není ani ~“ – vyjadřuje příčinný vztah a zdůrazňuje, že bez jednoho není ani druhé.
+⟦Không có hiện vật thì không có bảo tàng⟧ → Bez exponátů není muzeum. · ⟦Không có lửa thì không có khói.⟧ → Bez ohně není kouře. · ⟦Không có học sinh thì không có thầy giáo.⟧ → Bez žáků nejsou učitelé. · ⟦Không đi chợ thì không có cái ăn.⟧ → Když nejdeš na trh, nemáš co jíst. · ⟦Không đi làm thì không có tiền.⟧ → Když nechodíš do práce, nemáš peníze.
+⟦càng ... thì càng⟧: „čím ~, tím ~“ – vyjadřuje, že míra obou stránek roste společně.
+⟦Hiện vật càng phong phú thì càng có điều kiện để lựa chọn hiện vật phục vụ cho việc đổi mới trưng bày.⟧ → Čím bohatší jsou exponáty, tím větší je možnost vybrat si ty, které poslouží k obnově expozice. · ⟦Càng nhiều bảo tàng thì càng có điều kiện lựa chọn nơi tham quan.⟧ → Čím víc je muzeí, tím víc je možností, kam se vydat. · ⟦Bảo tàng càng nhiều hiện vật thì càng thu hút nhiều người đến thăm.⟧ → Čím víc exponátů muzeum má, tím víc návštěvníků přiláká.
+=zh_cn
+语法解说
+⟦không (có) ... thì không (có)⟧：意为“没有……就没有……、不……就没有……”，是表示因果关系的说法，用于强调、主张没有这个就没有那个。
+⟦Không có hiện vật thì không có bảo tàng⟧ → 没有文物就没有博物馆。 · ⟦Không có lửa thì không có khói.⟧ → 没有火就没有烟。 · ⟦Không có học sinh thì không có thầy giáo.⟧ → 没有学生就没有老师。 · ⟦Không đi chợ thì không có cái ăn.⟧ → 不去市场就没有吃的。 · ⟦Không đi làm thì không có tiền.⟧ → 不去上班就没有钱。
+⟦càng ... thì càng⟧：意为“越……越……”，表示程度一同上升。
+⟦Hiện vật càng phong phú thì càng có điều kiện để lựa chọn hiện vật phục vụ cho việc đổi mới trưng bày.⟧ → 文物越丰富，就越有条件挑选用于更新展览的文物。 · ⟦Càng nhiều bảo tàng thì càng có điều kiện lựa chọn nơi tham quan.⟧ → 博物馆越多，就越有条件选择参观的地方。 · ⟦Bảo tàng càng nhiều hiện vật thì càng thu hút nhiều người đến thăm.⟧ → 博物馆的文物越多，就越能吸引更多人来参观。
+=zh
+文法解說
+⟦không (có) ... thì không (có)⟧：意為「沒有……就沒有……、不……就沒有……」，是表示因果關係的說法，用於強調、主張沒有這個就沒有那個。
+⟦Không có hiện vật thì không có bảo tàng⟧ → 沒有文物就沒有博物館。 · ⟦Không có lửa thì không có khói.⟧ → 沒有火就沒有煙。 · ⟦Không có học sinh thì không có thầy giáo.⟧ → 沒有學生就沒有老師。 · ⟦Không đi chợ thì không có cái ăn.⟧ → 不去市場就沒有吃的。 · ⟦Không đi làm thì không có tiền.⟧ → 不去上班就沒有錢。
+⟦càng ... thì càng⟧：意為「越……越……」，表示程度一同上升。
+⟦Hiện vật càng phong phú thì càng có điều kiện để lựa chọn hiện vật phục vụ cho việc đổi mới trưng bày.⟧ → 文物越豐富，就越有條件挑選用於更新展覽的文物。 · ⟦Càng nhiều bảo tàng thì càng có điều kiện lựa chọn nơi tham quan.⟧ → 博物館越多，就越有條件選擇參觀的地方。 · ⟦Bảo tàng càng nhiều hiện vật thì càng thu hút nhiều người đến thăm.⟧ → 博物館的文物越多，就越能吸引更多人來參觀。
+=en
+Grammar notes
+⟦không (có) ... thì không (có)⟧: "without ~ there is no ~; if not ~, then no ~" – a cause-and-effect expression used to assert and emphasize that without one thing there is no other.
+⟦Không có hiện vật thì không có bảo tàng⟧ → Without artefacts there is no museum. · ⟦Không có lửa thì không có khói.⟧ → There's no smoke without fire. · ⟦Không có học sinh thì không có thầy giáo.⟧ → Without students there are no teachers. · ⟦Không đi chợ thì không có cái ăn.⟧ → If you don't go to the market, there's nothing to eat. · ⟦Không đi làm thì không có tiền.⟧ → If you don't go to work, there's no money.
+⟦càng ... thì càng⟧: "the more ~, the more ~" – shows that the intensity rises together.
+⟦Hiện vật càng phong phú thì càng có điều kiện để lựa chọn hiện vật phục vụ cho việc đổi mới trưng bày.⟧ → The richer the collection, the more scope there is to choose artefacts for renewing the exhibition. · ⟦Càng nhiều bảo tàng thì càng có điều kiện lựa chọn nơi tham quan.⟧ → The more museums there are, the more choice of places to visit. · ⟦Bảo tàng càng nhiều hiện vật thì càng thu hút nhiều người đến thăm.⟧ → The more artefacts a museum has, the more visitors it attracts.
+=fr
+Notes de grammaire
+⟦không (có) ... thì không (có)⟧ : « sans ~, pas de ~ ; si l'on ne ~ pas, pas de ~ » – expression de cause à effet servant à affirmer et souligner que sans l'un, il n'y a pas l'autre.
+⟦Không có hiện vật thì không có bảo tàng⟧ → Sans objets, pas de musée. · ⟦Không có lửa thì không có khói.⟧ → Il n'y a pas de fumée sans feu. · ⟦Không có học sinh thì không có thầy giáo.⟧ → Sans élèves, pas d'enseignants. · ⟦Không đi chợ thì không có cái ăn.⟧ → Si l'on ne va pas au marché, on n'a rien à manger. · ⟦Không đi làm thì không có tiền.⟧ → Si l'on ne va pas travailler, on n'a pas d'argent.
+⟦càng ... thì càng⟧ : « plus ~, plus ~ » – indique que l'intensité augmente conjointement.
+⟦Hiện vật càng phong phú thì càng có điều kiện để lựa chọn hiện vật phục vụ cho việc đổi mới trưng bày.⟧ → Plus les collections sont riches, plus on a de choix pour renouveler l'exposition. · ⟦Càng nhiều bảo tàng thì càng có điều kiện lựa chọn nơi tham quan.⟧ → Plus il y a de musées, plus on a le choix des lieux à visiter. · ⟦Bảo tàng càng nhiều hiện vật thì càng thu hút nhiều người đến thăm.⟧ → Plus un musée a d'objets, plus il attire de visiteurs.
+=de
+Grammatikerläuterungen
+⟦không (có) ... thì không (có)⟧: „ohne ~ kein ~; wenn nicht ~, dann kein ~“ – ein Ausdruck des Ursache-Wirkungs-Verhältnisses, der betont, dass es ohne das eine auch das andere nicht gibt.
+⟦Không có hiện vật thì không có bảo tàng⟧ → Ohne Exponate kein Museum. · ⟦Không có lửa thì không có khói.⟧ → Wo kein Feuer ist, ist auch kein Rauch. · ⟦Không có học sinh thì không có thầy giáo.⟧ → Ohne Schüler keine Lehrer. · ⟦Không đi chợ thì không có cái ăn.⟧ → Wer nicht auf den Markt geht, hat nichts zu essen. · ⟦Không đi làm thì không có tiền.⟧ → Wer nicht arbeiten geht, hat kein Geld.
+⟦càng ... thì càng⟧: „je ~, desto ~“ – zeigt, dass die Intensität gemeinsam steigt.
+⟦Hiện vật càng phong phú thì càng có điều kiện để lựa chọn hiện vật phục vụ cho việc đổi mới trưng bày.⟧ → Je reicher die Sammlung, desto mehr Auswahl hat man, um Exponate für die Neugestaltung der Ausstellung zu wählen. · ⟦Càng nhiều bảo tàng thì càng có điều kiện lựa chọn nơi tham quan.⟧ → Je mehr Museen es gibt, desto größer ist die Auswahl an Besuchszielen. · ⟦Bảo tàng càng nhiều hiện vật thì càng thu hút nhiều người đến thăm.⟧ → Je mehr Exponate ein Museum hat, desto mehr Besucher zieht es an.
+=hu
+Nyelvtani magyarázat
+⟦không (có) ... thì không (có)⟧: „~ nélkül nincs ~; ha nincs ~, nincs ~ sem” – ok-okozati kifejezés, amely azt állítja és hangsúlyozza, hogy az egyik nélkül a másik sincs.
+⟦Không có hiện vật thì không có bảo tàng⟧ → Tárgyak nélkül nincs múzeum. · ⟦Không có lửa thì không có khói.⟧ → Nincs füst tűz nélkül. · ⟦Không có học sinh thì không có thầy giáo.⟧ → Diákok nélkül nincsenek tanárok. · ⟦Không đi chợ thì không có cái ăn.⟧ → Ha nem mész piacra, nincs mit enni. · ⟦Không đi làm thì không có tiền.⟧ → Ha nem jársz dolgozni, nincs pénzed.
+⟦càng ... thì càng⟧: „minél ~, annál ~” – azt jelzi, hogy az intenzitás együtt nő.
+⟦Hiện vật càng phong phú thì càng có điều kiện để lựa chọn hiện vật phục vụ cho việc đổi mới trưng bày.⟧ → Minél gazdagabb a gyűjtemény, annál több lehetőség van tárgyakat választani a kiállítás megújításához. · ⟦Càng nhiều bảo tàng thì càng có điều kiện lựa chọn nơi tham quan.⟧ → Minél több a múzeum, annál többféle helyet lehet választani. · ⟦Bảo tàng càng nhiều hiện vật thì càng thu hút nhiều người đến thăm.⟧ → Minél több tárgya van egy múzeumnak, annál több látogatót vonz.
+=id
+Penjelasan tata bahasa
+⟦không (có) ... thì không (có)⟧: "tanpa ~ tidak ada ~; kalau tidak ~, tidak ada ~" – ungkapan sebab-akibat untuk menegaskan bahwa tanpa yang satu, yang lain pun tidak ada.
+⟦Không có hiện vật thì không có bảo tàng⟧ → Tanpa artefak tidak ada museum. · ⟦Không có lửa thì không có khói.⟧ → Tidak ada asap tanpa api. · ⟦Không có học sinh thì không có thầy giáo.⟧ → Tanpa murid tidak ada guru. · ⟦Không đi chợ thì không có cái ăn.⟧ → Kalau tidak ke pasar, tidak ada makanan. · ⟦Không đi làm thì không có tiền.⟧ → Kalau tidak bekerja, tidak ada uang.
+⟦càng ... thì càng⟧: "makin ~ makin ~" – menunjukkan bahwa intensitasnya meningkat bersama-sama.
+⟦Hiện vật càng phong phú thì càng có điều kiện để lựa chọn hiện vật phục vụ cho việc đổi mới trưng bày.⟧ → Makin kaya koleksinya, makin banyak peluang memilih artefak untuk memperbarui pameran. · ⟦Càng nhiều bảo tàng thì càng có điều kiện lựa chọn nơi tham quan.⟧ → Makin banyak museum, makin banyak pilihan tempat untuk dikunjungi. · ⟦Bảo tàng càng nhiều hiện vật thì càng thu hút nhiều người đến thăm.⟧ → Makin banyak artefak sebuah museum, makin banyak pengunjung yang tertarik datang.
+=ja
+文法解説
+⟦không (có) ... thì không (có)⟧：「～がなければ／～しなければ～もない」という意味の因果関係を表す表現で、これがなければあれもないという点を強調・主張するために使います。
+⟦Không có hiện vật thì không có bảo tàng⟧ → 遺物がなければ博物館もない。 · ⟦Không có lửa thì không có khói.⟧ → 火のない所に煙は立たない。 · ⟦Không có học sinh thì không có thầy giáo.⟧ → 生徒がいなければ先生もいない。 · ⟦Không đi chợ thì không có cái ăn.⟧ → 市場に行かなければ食べ物もない。 · ⟦Không đi làm thì không có tiền.⟧ → 働きに行かなければお金もない。
+⟦càng ... thì càng⟧：「～すればするほど～」という意味で、程度が共に上昇していることを表すために使います。
+⟦Hiện vật càng phong phú thì càng có điều kiện để lựa chọn hiện vật phục vụ cho việc đổi mới trưng bày.⟧ → 博物館の遺物が豊富であるほど、展示を一新するために活用する遺物を選ぶ幅が広がる。 · ⟦Càng nhiều bảo tàng thì càng có điều kiện lựa chọn nơi tham quan.⟧ → 博物館が多ければ多いほど、見学する場所を選ぶ余地が増える。 · ⟦Bảo tàng càng nhiều hiện vật thì càng thu hút nhiều người đến thăm.⟧ → 博物館が多くの遺物を所蔵しているほど、より多くの来館者を呼び込める。
+=pl
+Objaśnienia gramatyczne
+⟦không (có) ... thì không (có)⟧: „bez ~ nie ma ~; jeśli nie ~, to nie ma ~” – wyrażenie przyczynowo-skutkowe, które podkreśla i dowodzi, że bez jednego nie ma drugiego.
+⟦Không có hiện vật thì không có bảo tàng⟧ → Bez eksponatów nie ma muzeum. · ⟦Không có lửa thì không có khói.⟧ → Nie ma dymu bez ognia. · ⟦Không có học sinh thì không có thầy giáo.⟧ → Bez uczniów nie ma nauczycieli. · ⟦Không đi chợ thì không có cái ăn.⟧ → Jak nie pójdziesz na targ, nie będzie co jeść. · ⟦Không đi làm thì không có tiền.⟧ → Jak nie chodzisz do pracy, nie masz pieniędzy.
+⟦càng ... thì càng⟧: „im ~, tym ~” – wskazuje, że natężenie rośnie równocześnie.
+⟦Hiện vật càng phong phú thì càng có điều kiện để lựa chọn hiện vật phục vụ cho việc đổi mới trưng bày.⟧ → Im bogatsze zbiory, tym większe możliwości wyboru eksponatów do odnowienia wystawy. · ⟦Càng nhiều bảo tàng thì càng có điều kiện lựa chọn nơi tham quan.⟧ → Im więcej muzeów, tym większy wybór miejsc do zwiedzania. · ⟦Bảo tàng càng nhiều hiện vật thì càng thu hút nhiều người đến thăm.⟧ → Im więcej eksponatów ma muzeum, tym więcej przyciąga zwiedzających.
+@@ pdf-grammar-60bd8e0e1bd31b1a#0
+=cs
+Gramatický výklad
+⟦coi ... như (là)⟧: „považovat ~ za ~, brát ~ jako ~“ – hodnotí nebo zdůrazňuje, že určitá osoba či věc je podobná tomu, co je uvedeno.
+⟦Anh coi em như là một nhà bảo tàng học.⟧ → Považuji tě za muzeologa. · ⟦Chúng tôi coi nhau như anh em trong gia đình.⟧ → Bereme se navzájem jako sourozenci v jedné rodině. · ⟦Tôi coi cô ấy như em ruột của mình.⟧ → Beru ji jako svou vlastní mladší sestru. · ⟦Chị ấy coi Việt Nam như quê hương thứ hai của mình.⟧ → Považuje Vietnam za svou druhou vlast. · ⟦Tôi coi dòng sông này như là dòng sông tuổi thơ của mình.⟧ → Tuto řeku beru jako řeku svého dětství.
+⟦nào⟧: „který, jaký; no tak“ – na konci věty ještě více zdůrazňuje předchozí obsah.
+⟦Anh không biết ở Hà Nội có những bảo tàng lớn nào.⟧ → Neví, jaká velká muzea v Hanoji jsou. · ⟦Ở đây nhiều lối đi quá, tôi chẳng biết phải đi lối nào.⟧ → Je tu tolik cest, že vůbec nevím, kudy jít. · ⟦Ai mà biết anh ấy đi thăm viện bảo tàng khi nào.⟧ → Kdo ví, kdy byl v muzeu. · ⟦Chờ chị ấy thêm một chút nữa đã nào.⟧ → Tak na ni ještě chvilku počkejme.
+=zh_cn
+语法解说
+⟦coi ... như (là)⟧：意为“把……看作……、当作……”，用于评价或强调某人或某物与所说的相似。
+⟦Anh coi em như là một nhà bảo tàng học.⟧ → 我把你当作博物馆学学者。 · ⟦Chúng tôi coi nhau như anh em trong gia đình.⟧ → 我们彼此就像一家的兄弟。 · ⟦Tôi coi cô ấy như em ruột của mình.⟧ → 我把她当作亲妹妹。 · ⟦Chị ấy coi Việt Nam như quê hương thứ hai của mình.⟧ → 她把越南当作自己的第二故乡。 · ⟦Tôi coi dòng sông này như là dòng sông tuổi thơ của mình.⟧ → 我把这条河当作自己童年的河。
+⟦nào⟧：意为“哪、什么；吧”，位于句末，用于进一步强调前面所说的内容。
+⟦Anh không biết ở Hà Nội có những bảo tàng lớn nào.⟧ → 他不知道河内有哪些大型博物馆。 · ⟦Ở đây nhiều lối đi quá, tôi chẳng biết phải đi lối nào.⟧ → 这里的路太多了，我根本不知道该走哪条。 · ⟦Ai mà biết anh ấy đi thăm viện bảo tàng khi nào.⟧ → 谁知道他什么时候去参观了博物馆。 · ⟦Chờ chị ấy thêm một chút nữa đã nào.⟧ → 我们再等她一会儿吧。
+=zh
+文法解說
+⟦coi ... như (là)⟧：意為「把……看作……、當作……」，用於評價或強調某人或某物與所說的相似。
+⟦Anh coi em như là một nhà bảo tàng học.⟧ → 我把你當作博物館學學者。 · ⟦Chúng tôi coi nhau như anh em trong gia đình.⟧ → 我們彼此就像一家的兄弟。 · ⟦Tôi coi cô ấy như em ruột của mình.⟧ → 我把她當作親妹妹。 · ⟦Chị ấy coi Việt Nam như quê hương thứ hai của mình.⟧ → 她把越南當作自己的第二故鄉。 · ⟦Tôi coi dòng sông này như là dòng sông tuổi thơ của mình.⟧ → 我把這條河當作自己童年的河。
+⟦nào⟧：意為「哪、什麼；吧」，位於句尾，用於進一步強調前面所說的內容。
+⟦Anh không biết ở Hà Nội có những bảo tàng lớn nào.⟧ → 他不知道河內有哪些大型博物館。 · ⟦Ở đây nhiều lối đi quá, tôi chẳng biết phải đi lối nào.⟧ → 這裡的路太多了，我根本不知道該走哪條。 · ⟦Ai mà biết anh ấy đi thăm viện bảo tàng khi nào.⟧ → 誰知道他什麼時候去參觀了博物館。 · ⟦Chờ chị ấy thêm một chút nữa đã nào.⟧ → 我們再等她一下吧。
+=en
+Grammar notes
+⟦coi ... như (là)⟧: "to regard ~ as ~, treat ~ like ~" – used to judge or emphasize that a person or thing is similar to what is stated.
+⟦Anh coi em như là một nhà bảo tàng học.⟧ → I regard you as a museologist. · ⟦Chúng tôi coi nhau như anh em trong gia đình.⟧ → We treat each other like brothers in one family. · ⟦Tôi coi cô ấy như em ruột của mình.⟧ → I think of her as my own little sister. · ⟦Chị ấy coi Việt Nam như quê hương thứ hai của mình.⟧ → She considers Vietnam her second home. · ⟦Tôi coi dòng sông này như là dòng sông tuổi thơ của mình.⟧ → I think of this river as the river of my childhood.
+⟦nào⟧: "which, what; come on" – at the end of a sentence, adds further emphasis to what was said.
+⟦Anh không biết ở Hà Nội có những bảo tàng lớn nào.⟧ → He doesn't know which big museums there are in Hanoi. · ⟦Ở đây nhiều lối đi quá, tôi chẳng biết phải đi lối nào.⟧ → There are so many paths here, I have no idea which way to go. · ⟦Ai mà biết anh ấy đi thăm viện bảo tàng khi nào.⟧ → Who knows when he visited the museum. · ⟦Chờ chị ấy thêm một chút nữa đã nào.⟧ → Come on, let's wait for her a little longer.
+=fr
+Notes de grammaire
+⟦coi ... như (là)⟧ : « considérer ~ comme ~ » – sert à juger ou souligner qu'une personne ou une chose ressemble à ce qui est indiqué.
+⟦Anh coi em như là một nhà bảo tàng học.⟧ → Je te considère comme un muséologue. · ⟦Chúng tôi coi nhau như anh em trong gia đình.⟧ → Nous nous considérons comme des frères d'une même famille. · ⟦Tôi coi cô ấy như em ruột của mình.⟧ → Je la considère comme ma propre petite sœur. · ⟦Chị ấy coi Việt Nam như quê hương thứ hai của mình.⟧ → Elle considère le Vietnam comme sa seconde patrie. · ⟦Tôi coi dòng sông này như là dòng sông tuổi thơ của mình.⟧ → Je considère cette rivière comme la rivière de mon enfance.
+⟦nào⟧ : « quel, lequel ; allez » – en fin de phrase, renforce davantage ce qui a été dit.
+⟦Anh không biết ở Hà Nội có những bảo tàng lớn nào.⟧ → Il ne sait pas quels grands musées il y a à Hanoï. · ⟦Ở đây nhiều lối đi quá, tôi chẳng biết phải đi lối nào.⟧ → Il y a tant de chemins ici que je ne sais pas du tout lequel prendre. · ⟦Ai mà biết anh ấy đi thăm viện bảo tàng khi nào.⟧ → Qui sait quand il a visité le musée. · ⟦Chờ chị ấy thêm một chút nữa đã nào.⟧ → Allez, attendons-la encore un peu.
+=de
+Grammatikerläuterungen
+⟦coi ... như (là)⟧: „~ als ~ betrachten, ~ wie ~ ansehen“ – bewertet oder betont, dass eine Person oder Sache dem Genannten ähnlich ist.
+⟦Anh coi em như là một nhà bảo tàng học.⟧ → Ich betrachte dich als Museologen. · ⟦Chúng tôi coi nhau như anh em trong gia đình.⟧ → Wir sehen einander wie Geschwister in einer Familie. · ⟦Tôi coi cô ấy như em ruột của mình.⟧ → Ich betrachte sie wie meine leibliche jüngere Schwester. · ⟦Chị ấy coi Việt Nam như quê hương thứ hai của mình.⟧ → Sie betrachtet Vietnam als ihre zweite Heimat. · ⟦Tôi coi dòng sông này như là dòng sông tuổi thơ của mình.⟧ → Diesen Fluss betrachte ich als den Fluss meiner Kindheit.
+⟦nào⟧: „welcher; na, komm“ – am Satzende verstärkt es das zuvor Gesagte noch.
+⟦Anh không biết ở Hà Nội có những bảo tàng lớn nào.⟧ → Er weiß nicht, welche großen Museen es in Hanoi gibt. · ⟦Ở đây nhiều lối đi quá, tôi chẳng biết phải đi lối nào.⟧ → Hier gibt es so viele Wege, ich weiß überhaupt nicht, welchen ich nehmen soll. · ⟦Ai mà biết anh ấy đi thăm viện bảo tàng khi nào.⟧ → Wer weiß schon, wann er das Museum besucht hat. · ⟦Chờ chị ấy thêm một chút nữa đã nào.⟧ → Na komm, warten wir noch ein bisschen auf sie.
+=hu
+Nyelvtani magyarázat
+⟦coi ... như (là)⟧: „~t ~nak tekinteni, úgy tekinteni, mint ~” – azt értékeli vagy hangsúlyozza, hogy egy személy vagy dolog hasonló az említetthez.
+⟦Anh coi em như là một nhà bảo tàng học.⟧ → Muzeológusnak tartalak. · ⟦Chúng tôi coi nhau như anh em trong gia đình.⟧ → Úgy tekintünk egymásra, mint egy család testvérei. · ⟦Tôi coi cô ấy như em ruột của mình.⟧ → Úgy tekintek rá, mint a saját húgomra. · ⟦Chị ấy coi Việt Nam như quê hương thứ hai của mình.⟧ → Vietnámot második hazájának tekinti. · ⟦Tôi coi dòng sông này như là dòng sông tuổi thơ của mình.⟧ → Ezt a folyót gyerekkorom folyójának tekintem.
+⟦nào⟧: „melyik, milyen; na” – a mondat végén még jobban kiemeli az előbb mondottakat.
+⟦Anh không biết ở Hà Nội có những bảo tàng lớn nào.⟧ → Nem tudja, milyen nagy múzeumok vannak Hanoiban. · ⟦Ở đây nhiều lối đi quá, tôi chẳng biết phải đi lối nào.⟧ → Olyan sok út van itt, hogy fogalmam sincs, merre menjek. · ⟦Ai mà biết anh ấy đi thăm viện bảo tàng khi nào.⟧ → Ki tudja, mikor járt a múzeumban. · ⟦Chờ chị ấy thêm một chút nữa đã nào.⟧ → Na, várjunk rá még egy kicsit.
+=id
+Penjelasan tata bahasa
+⟦coi ... như (là)⟧: "menganggap ~ seperti ~" – menilai atau menegaskan bahwa seseorang atau sesuatu mirip dengan yang disebutkan.
+⟦Anh coi em như là một nhà bảo tàng học.⟧ → Aku menganggapmu seperti seorang ahli museologi. · ⟦Chúng tôi coi nhau như anh em trong gia đình.⟧ → Kami saling menganggap seperti saudara dalam satu keluarga. · ⟦Tôi coi cô ấy như em ruột của mình.⟧ → Saya menganggapnya seperti adik kandung saya. · ⟦Chị ấy coi Việt Nam như quê hương thứ hai của mình.⟧ → Dia menganggap Vietnam sebagai kampung halaman keduanya. · ⟦Tôi coi dòng sông này như là dòng sông tuổi thơ của mình.⟧ → Saya menganggap sungai ini seperti sungai masa kecil saya.
+⟦nào⟧: "mana, apa; ayo" – di akhir kalimat, lebih menegaskan hal yang disebut sebelumnya.
+⟦Anh không biết ở Hà Nội có những bảo tàng lớn nào.⟧ → Dia tidak tahu museum besar apa saja yang ada di Hanoi. · ⟦Ở đây nhiều lối đi quá, tôi chẳng biết phải đi lối nào.⟧ → Di sini terlalu banyak jalan, saya sama sekali tidak tahu harus lewat jalan mana. · ⟦Ai mà biết anh ấy đi thăm viện bảo tàng khi nào.⟧ → Siapa yang tahu kapan dia mengunjungi museum. · ⟦Chờ chị ấy thêm một chút nữa đã nào.⟧ → Ayo, kita tunggu dia sebentar lagi.
+=ja
+文法解説
+⟦coi ... như (là)⟧：「～のようにみなす／思う」という意味で、ある人や物が前に示したものと似ていると評価したり強調したりするために使います。
+⟦Anh coi em như là một nhà bảo tàng học.⟧ → 私は君を博物館学の学者だと思っている。 · ⟦Chúng tôi coi nhau như anh em trong gia đình.⟧ → 私たちはお互いを一つの家族の兄弟のように思っている。 · ⟦Tôi coi cô ấy như em ruột của mình.⟧ → 私は彼女を実の妹のように思っている。 · ⟦Chị ấy coi Việt Nam như quê hương thứ hai của mình.⟧ → 彼女はベトナムを自分の第二の故郷だと思っている。 · ⟦Tôi coi dòng sông này như là dòng sông tuổi thơ của mình.⟧ → 私はこの川を自分の幼少期の川のように思っている。
+⟦nào⟧：「どの、どんな」という意味で、文末に置いて前に述べた事柄をいっそう強調するために使います。
+⟦Anh không biết ở Hà Nội có những bảo tàng lớn nào.⟧ → 彼はハノイにどんな大きな博物館があるのか知らない。 · ⟦Ở đây nhiều lối đi quá, tôi chẳng biết phải đi lối nào.⟧ → ここには道が多すぎて、どの道を行けばいいのかまったくわからない。 · ⟦Ai mà biết anh ấy đi thăm viện bảo tàng khi nào.⟧ → 彼がいつ博物館を訪れたのか、誰にわかるだろうか。 · ⟦Chờ chị ấy thêm một chút nữa đã nào.⟧ → ひとまず、彼女をもう少し待ってみましょう。
+=pl
+Objaśnienia gramatyczne
+⟦coi ... như (là)⟧: „uważać ~ za ~, traktować ~ jak ~” – służy do oceny lub podkreślenia, że dana osoba lub rzecz jest podobna do wskazanej.
+⟦Anh coi em như là một nhà bảo tàng học.⟧ → Uważam cię za muzeologa. · ⟦Chúng tôi coi nhau như anh em trong gia đình.⟧ → Traktujemy się nawzajem jak rodzeństwo w jednej rodzinie. · ⟦Tôi coi cô ấy như em ruột của mình.⟧ → Traktuję ją jak własną młodszą siostrę. · ⟦Chị ấy coi Việt Nam như quê hương thứ hai của mình.⟧ → Uważa Wietnam za swoją drugą ojczyznę. · ⟦Tôi coi dòng sông này như là dòng sông tuổi thơ của mình.⟧ → Uważam tę rzekę za rzekę mojego dzieciństwa.
+⟦nào⟧: „który, jaki; no” – na końcu zdania jeszcze mocniej podkreśla wcześniejszą treść.
+⟦Anh không biết ở Hà Nội có những bảo tàng lớn nào.⟧ → Nie wie, jakie duże muzea są w Hanoi. · ⟦Ở đây nhiều lối đi quá, tôi chẳng biết phải đi lối nào.⟧ → Jest tu tyle dróg, że zupełnie nie wiem, którędy iść. · ⟦Ai mà biết anh ấy đi thăm viện bảo tàng khi nào.⟧ → Kto wie, kiedy był w muzeum. · ⟦Chờ chị ấy thêm một chút nữa đã nào.⟧ → No, poczekajmy na nią jeszcze chwilkę.

@@ -1,0 +1,152 @@
+@@ pdf-grammar-2fd6d91b05562d1e#0
+=cs
+Gramatický výklad
+Podstatné jméno + ⟦nào cũng⟧ + sloveso / přídavné jméno znamená „každý ~ je / dělá ~“. Lze to převést na tvar ⟦Tất cả (mọi)⟧ + podstatné jméno + ⟦đều⟧ + sloveso / přídavné jméno.
+⟦Phố nào cũng có các nhà hàng, quán ăn.⟧ → V každé ulici jsou restaurace a jídelny. (= ⟦Tất cả các phố đều có các nhà hàng, quán ăn.⟧)
+⟦Ở đây, nhà nào cũng có vườn.⟧ → Tady má každý dům zahradu. (= ⟦Ở đây, tất cả các nhà đều có vườn.⟧)
+⟦Ở nhà hàng này, món ăn nào cũng ngon.⟧ → V téhle restauraci je každé jídlo chutné. (= ⟦Ở nhà hàng này, tất cả các món ăn đều ngon.⟧)
+⟦Ở Đà Lạt, cây nào cũng xanh tốt.⟧ → V Đà Lạtu je každý strom svěže zelený. (= ⟦Ở Đà Lạt, tất cả các loại cây đều xanh tốt.⟧)
+⟦vì A nên B⟧ vyjadřuje příčinu a následek: „protože A, (proto) B“.
+⟦Vì bán giá rẻ nên cơm bụi thường không được ngon miệng lắm.⟧ → Protože se prodává levně, nebývá „cơm bụi“ (lidová jídelna) moc chutný. · ⟦Vì mọi con đường đều dốc nên ở Đà Lạt không có đèn xanh đèn đỏ.⟧ → Protože jsou všechny silnice ve svahu, v Đà Lạtu nejsou semafory. · ⟦Vì mọi phố đều có các nhà hàng, quán ăn nên bạn không sợ đói.⟧ → Protože v každé ulici jsou restaurace a jídelny, nemusíte se bát hladu. · ⟦Vì thành phố có đủ loại cửa hàng nên bạn thoải mái lựa chọn.⟧ → Protože ve městě jsou obchody všeho druhu, můžete si vybírat, jak chcete.
+=zh_cn
+语法解说
+名词 + ⟦nào cũng⟧ + 动词/形容词，表示“每个（名词）都……”。可以转换为 ⟦Tất cả (mọi)⟧ + 名词 + ⟦đều⟧ + 动词/形容词 的形式。
+⟦Phố nào cũng có các nhà hàng, quán ăn.⟧ → 每条街都有餐厅和饭馆。（= ⟦Tất cả các phố đều có các nhà hàng, quán ăn.⟧）
+⟦Ở đây, nhà nào cũng có vườn.⟧ → 这里每家都有花园。（= ⟦Ở đây, tất cả các nhà đều có vườn.⟧）
+⟦Ở nhà hàng này, món ăn nào cũng ngon.⟧ → 这家餐厅每道菜都好吃。（= ⟦Ở nhà hàng này, tất cả các món ăn đều ngon.⟧）
+⟦Ở Đà Lạt, cây nào cũng xanh tốt.⟧ → 在大叻，每棵树都郁郁葱葱。（= ⟦Ở Đà Lạt, tất cả các loại cây đều xanh tốt.⟧）
+⟦vì A nên B⟧ 表示原因和结果，意为“因为A，所以B”。
+⟦Vì bán giá rẻ nên cơm bụi thường không được ngon miệng lắm.⟧ → 因为卖得便宜，所以“大排档饭”（路边饭摊）通常不太好吃。 · ⟦Vì mọi con đường đều dốc nên ở Đà Lạt không có đèn xanh đèn đỏ.⟧ → 因为所有道路都是坡路，所以大叻没有红绿灯。 · ⟦Vì mọi phố đều có các nhà hàng, quán ăn nên bạn không sợ đói.⟧ → 因为每条街都有餐厅和饭馆，所以你不用担心挨饿。 · ⟦Vì thành phố có đủ loại cửa hàng nên bạn thoải mái lựa chọn.⟧ → 因为城里各种商店都有，所以你可以随意挑选。
+=zh
+文法解說
+名詞 + ⟦nào cũng⟧ + 動詞/形容詞，表示「每個（名詞）都……」。可以轉換為 ⟦Tất cả (mọi)⟧ + 名詞 + ⟦đều⟧ + 動詞/形容詞 的形式。
+⟦Phố nào cũng có các nhà hàng, quán ăn.⟧ → 每條街都有餐廳和小吃店。（= ⟦Tất cả các phố đều có các nhà hàng, quán ăn.⟧）
+⟦Ở đây, nhà nào cũng có vườn.⟧ → 這裡每戶都有花園。（= ⟦Ở đây, tất cả các nhà đều có vườn.⟧）
+⟦Ở nhà hàng này, món ăn nào cũng ngon.⟧ → 這家餐廳每道菜都好吃。（= ⟦Ở nhà hàng này, tất cả các món ăn đều ngon.⟧）
+⟦Ở Đà Lạt, cây nào cũng xanh tốt.⟧ → 在大叻，每棵樹都綠意盎然。（= ⟦Ở Đà Lạt, tất cả các loại cây đều xanh tốt.⟧）
+⟦vì A nên B⟧ 表示原因和結果，意為「因為A，所以B」。
+⟦Vì bán giá rẻ nên cơm bụi thường không được ngon miệng lắm.⟧ → 因為賣得便宜，所以「路邊飯攤」通常不太好吃。 · ⟦Vì mọi con đường đều dốc nên ở Đà Lạt không có đèn xanh đèn đỏ.⟧ → 因為所有道路都是坡道，所以大叻沒有紅綠燈。 · ⟦Vì mọi phố đều có các nhà hàng, quán ăn nên bạn không sợ đói.⟧ → 因為每條街都有餐廳和小吃店，所以你不用怕餓肚子。 · ⟦Vì thành phố có đủ loại cửa hàng nên bạn thoải mái lựa chọn.⟧ → 因為城裡各種商店都有，所以你可以隨意挑選。
+=en
+Grammar notes
+Noun + ⟦nào cũng⟧ + verb / adjective means "every (noun) ~". It can be rewritten as ⟦Tất cả (mọi)⟧ + noun + ⟦đều⟧ + verb / adjective.
+⟦Phố nào cũng có các nhà hàng, quán ăn.⟧ → Every street has restaurants and eateries. (= ⟦Tất cả các phố đều có các nhà hàng, quán ăn.⟧)
+⟦Ở đây, nhà nào cũng có vườn.⟧ → Here every house has a garden. (= ⟦Ở đây, tất cả các nhà đều có vườn.⟧)
+⟦Ở nhà hàng này, món ăn nào cũng ngon.⟧ → At this restaurant every dish is delicious. (= ⟦Ở nhà hàng này, tất cả các món ăn đều ngon.⟧)
+⟦Ở Đà Lạt, cây nào cũng xanh tốt.⟧ → In Đà Lạt every tree is lush and green. (= ⟦Ở Đà Lạt, tất cả các loại cây đều xanh tốt.⟧)
+⟦vì A nên B⟧ expresses cause and effect: "because A, (so) B".
+⟦Vì bán giá rẻ nên cơm bụi thường không được ngon miệng lắm.⟧ → Because it's sold cheaply, "cơm bụi" (street rice stalls) food usually isn't very tasty. · ⟦Vì mọi con đường đều dốc nên ở Đà Lạt không có đèn xanh đèn đỏ.⟧ → Because all the roads are on slopes, there are no traffic lights in Đà Lạt. · ⟦Vì mọi phố đều có các nhà hàng, quán ăn nên bạn không sợ đói.⟧ → Because every street has restaurants and eateries, you needn't fear going hungry. · ⟦Vì thành phố có đủ loại cửa hàng nên bạn thoải mái lựa chọn.⟧ → Because the city has all kinds of shops, you can choose freely.
+=fr
+Notes de grammaire
+Nom + ⟦nào cũng⟧ + verbe / adjectif signifie « chaque (nom) ~ ». On peut le transformer en ⟦Tất cả (mọi)⟧ + nom + ⟦đều⟧ + verbe / adjectif.
+⟦Phố nào cũng có các nhà hàng, quán ăn.⟧ → Chaque rue a des restaurants et des gargotes. (= ⟦Tất cả các phố đều có các nhà hàng, quán ăn.⟧)
+⟦Ở đây, nhà nào cũng có vườn.⟧ → Ici, chaque maison a un jardin. (= ⟦Ở đây, tất cả các nhà đều có vườn.⟧)
+⟦Ở nhà hàng này, món ăn nào cũng ngon.⟧ → Dans ce restaurant, chaque plat est délicieux. (= ⟦Ở nhà hàng này, tất cả các món ăn đều ngon.⟧)
+⟦Ở Đà Lạt, cây nào cũng xanh tốt.⟧ → À Đà Lạt, chaque arbre est d'un vert luxuriant. (= ⟦Ở Đà Lạt, tất cả các loại cây đều xanh tốt.⟧)
+⟦vì A nên B⟧ exprime la cause et la conséquence : « comme A, (donc) B ».
+⟦Vì bán giá rẻ nên cơm bụi thường không được ngon miệng lắm.⟧ → Comme c'est vendu bon marché, le « cơm bụi » (riz des gargotes de rue) n'est souvent pas très bon. · ⟦Vì mọi con đường đều dốc nên ở Đà Lạt không có đèn xanh đèn đỏ.⟧ → Comme toutes les rues sont en pente, il n'y a pas de feux à Đà Lạt. · ⟦Vì mọi phố đều có các nhà hàng, quán ăn nên bạn không sợ đói.⟧ → Comme chaque rue a des restaurants et des gargotes, vous ne risquez pas d'avoir faim. · ⟦Vì thành phố có đủ loại cửa hàng nên bạn thoải mái lựa chọn.⟧ → Comme la ville a toutes sortes de boutiques, vous pouvez choisir librement.
+=de
+Grammatikerläuterungen
+Nomen + ⟦nào cũng⟧ + Verb / Adjektiv bedeutet „jede(r/s) (Nomen) ~“. Es lässt sich umformen zu ⟦Tất cả (mọi)⟧ + Nomen + ⟦đều⟧ + Verb / Adjektiv.
+⟦Phố nào cũng có các nhà hàng, quán ăn.⟧ → In jeder Straße gibt es Restaurants und Imbisse. (= ⟦Tất cả các phố đều có các nhà hàng, quán ăn.⟧)
+⟦Ở đây, nhà nào cũng có vườn.⟧ → Hier hat jedes Haus einen Garten. (= ⟦Ở đây, tất cả các nhà đều có vườn.⟧)
+⟦Ở nhà hàng này, món ăn nào cũng ngon.⟧ → In diesem Restaurant ist jedes Gericht lecker. (= ⟦Ở nhà hàng này, tất cả các món ăn đều ngon.⟧)
+⟦Ở Đà Lạt, cây nào cũng xanh tốt.⟧ → In Đà Lạt ist jeder Baum sattgrün. (= ⟦Ở Đà Lạt, tất cả các loại cây đều xanh tốt.⟧)
+⟦vì A nên B⟧ drückt Ursache und Folge aus: „weil A, (deshalb) B“.
+⟦Vì bán giá rẻ nên cơm bụi thường không được ngon miệng lắm.⟧ → Weil es billig verkauft wird, ist „cơm bụi“ (Reis von Straßenständen) meist nicht besonders lecker. · ⟦Vì mọi con đường đều dốc nên ở Đà Lạt không có đèn xanh đèn đỏ.⟧ → Weil alle Straßen steil sind, gibt es in Đà Lạt keine Ampeln. · ⟦Vì mọi phố đều có các nhà hàng, quán ăn nên bạn không sợ đói.⟧ → Weil es in jeder Straße Restaurants und Imbisse gibt, müssen Sie keinen Hunger fürchten. · ⟦Vì thành phố có đủ loại cửa hàng nên bạn thoải mái lựa chọn.⟧ → Weil es in der Stadt Geschäfte aller Art gibt, können Sie nach Belieben auswählen.
+=hu
+Nyelvtani magyarázat
+A főnév + ⟦nào cũng⟧ + ige / melléknév jelentése „minden (főnév) ~”. Átalakítható a ⟦Tất cả (mọi)⟧ + főnév + ⟦đều⟧ + ige / melléknév formára.
+⟦Phố nào cũng có các nhà hàng, quán ăn.⟧ → Minden utcában vannak éttermek és kifőzdék. (= ⟦Tất cả các phố đều có các nhà hàng, quán ăn.⟧)
+⟦Ở đây, nhà nào cũng có vườn.⟧ → Itt minden háznak van kertje. (= ⟦Ở đây, tất cả các nhà đều có vườn.⟧)
+⟦Ở nhà hàng này, món ăn nào cũng ngon.⟧ → Ebben az étteremben minden étel finom. (= ⟦Ở nhà hàng này, tất cả các món ăn đều ngon.⟧)
+⟦Ở Đà Lạt, cây nào cũng xanh tốt.⟧ → Đà Lạtban minden fa dúsan zöldell. (= ⟦Ở Đà Lạt, tất cả các loại cây đều xanh tốt.⟧)
+A ⟦vì A nên B⟧ okot és okozatot fejez ki: „mivel A, (ezért) B”.
+⟦Vì bán giá rẻ nên cơm bụi thường không được ngon miệng lắm.⟧ → Mivel olcsón árulják, a „cơm bụi” (utcai rizsételek) általában nem túl ízletes. · ⟦Vì mọi con đường đều dốc nên ở Đà Lạt không có đèn xanh đèn đỏ.⟧ → Mivel minden út lejtős, Đà Lạtban nincsenek közlekedési lámpák. · ⟦Vì mọi phố đều có các nhà hàng, quán ăn nên bạn không sợ đói.⟧ → Mivel minden utcában van étterem és kifőzde, nem kell félni az éhezéstől. · ⟦Vì thành phố có đủ loại cửa hàng nên bạn thoải mái lựa chọn.⟧ → Mivel a városban mindenféle bolt van, kedvedre válogathatsz.
+=id
+Penjelasan tata bahasa
+Nomina + ⟦nào cũng⟧ + verba / adjektiva berarti "setiap (nomina) ~". Pola ini dapat diubah menjadi ⟦Tất cả (mọi)⟧ + nomina + ⟦đều⟧ + verba / adjektiva.
+⟦Phố nào cũng có các nhà hàng, quán ăn.⟧ → Setiap jalan ada restoran dan warung makan. (= ⟦Tất cả các phố đều có các nhà hàng, quán ăn.⟧)
+⟦Ở đây, nhà nào cũng có vườn.⟧ → Di sini setiap rumah punya kebun. (= ⟦Ở đây, tất cả các nhà đều có vườn.⟧)
+⟦Ở nhà hàng này, món ăn nào cũng ngon.⟧ → Di restoran ini setiap masakan enak. (= ⟦Ở nhà hàng này, tất cả các món ăn đều ngon.⟧)
+⟦Ở Đà Lạt, cây nào cũng xanh tốt.⟧ → Di Đà Lạt setiap pohon hijau subur. (= ⟦Ở Đà Lạt, tất cả các loại cây đều xanh tốt.⟧)
+⟦vì A nên B⟧ menyatakan sebab dan akibat: "karena A, maka B".
+⟦Vì bán giá rẻ nên cơm bụi thường không được ngon miệng lắm.⟧ → Karena dijual murah, "cơm bụi" (nasi warung pinggir jalan) biasanya tidak terlalu enak. · ⟦Vì mọi con đường đều dốc nên ở Đà Lạt không có đèn xanh đèn đỏ.⟧ → Karena semua jalan menanjak, di Đà Lạt tidak ada lampu lalu lintas. · ⟦Vì mọi phố đều có các nhà hàng, quán ăn nên bạn không sợ đói.⟧ → Karena setiap jalan ada restoran dan warung makan, Anda tidak perlu takut kelaparan. · ⟦Vì thành phố có đủ loại cửa hàng nên bạn thoải mái lựa chọn.⟧ → Karena kota ini punya berbagai jenis toko, Anda bebas memilih.
+=ja
+文法解説
+名詞 + ⟦nào cũng⟧ + 動詞/形容詞の形で「すべての（名詞）は～する / ～だ」という意味を表します。これは ⟦Tất cả (mọi)⟧ + 名詞 + ⟦đều⟧ + 動詞/形容詞 の形に言い換えることができます。
+⟦Phố nào cũng có các nhà hàng, quán ăn.⟧ → どの通りにもレストランや食堂がある。（= ⟦Tất cả các phố đều có các nhà hàng, quán ăn.⟧）
+⟦Ở đây, nhà nào cũng có vườn.⟧ → ここの家はどれも庭がある。（= ⟦Ở đây, tất cả các nhà đều có vườn.⟧）
+⟦Ở nhà hàng này, món ăn nào cũng ngon.⟧ → このレストランはどの料理もおいしい。（= ⟦Ở nhà hàng này, tất cả các món ăn đều ngon.⟧）
+⟦Ở Đà Lạt, cây nào cũng xanh tốt.⟧ → ダラットではどの木も青々と茂っている。（= ⟦Ở Đà Lạt, tất cả các loại cây đều xanh tốt.⟧）
+⟦vì A nên B⟧ の形で使われ、「Aなので Bだ」という原因と結果を表す構文になります。
+⟦Vì bán giá rẻ nên cơm bụi thường không được ngon miệng lắm.⟧ → 安く売っているので、「コムブイ（大衆食堂）」はたいていそれほどおいしくない。 · ⟦Vì mọi con đường đều dốc nên ở Đà Lạt không có đèn xanh đèn đỏ.⟧ → すべての道が坂道なので、ダラットには信号がない。 · ⟦Vì mọi phố đều có các nhà hàng, quán ăn nên bạn không sợ đói.⟧ → どの通りにもレストランや食堂があるので、お腹をすかせる心配はない。 · ⟦Vì thành phố có đủ loại cửa hàng nên bạn thoải mái lựa chọn.⟧ → 町にはあらゆる種類の店があるので、自由に選べる。
+=pl
+Objaśnienia gramatyczne
+Rzeczownik + ⟦nào cũng⟧ + czasownik / przymiotnik znaczy „każdy (rzeczownik) ~”. Można to przekształcić w ⟦Tất cả (mọi)⟧ + rzeczownik + ⟦đều⟧ + czasownik / przymiotnik.
+⟦Phố nào cũng có các nhà hàng, quán ăn.⟧ → Na każdej ulicy są restauracje i jadłodajnie. (= ⟦Tất cả các phố đều có các nhà hàng, quán ăn.⟧)
+⟦Ở đây, nhà nào cũng có vườn.⟧ → Tu każdy dom ma ogród. (= ⟦Ở đây, tất cả các nhà đều có vườn.⟧)
+⟦Ở nhà hàng này, món ăn nào cũng ngon.⟧ → W tej restauracji każde danie jest smaczne. (= ⟦Ở nhà hàng này, tất cả các món ăn đều ngon.⟧)
+⟦Ở Đà Lạt, cây nào cũng xanh tốt.⟧ → W Đà Lạt każde drzewo jest bujnie zielone. (= ⟦Ở Đà Lạt, tất cả các loại cây đều xanh tốt.⟧)
+⟦vì A nên B⟧ wyraża przyczynę i skutek: „ponieważ A, (więc) B”.
+⟦Vì bán giá rẻ nên cơm bụi thường không được ngon miệng lắm.⟧ → Ponieważ sprzedaje się je tanio, „cơm bụi” (ryż z ulicznych jadłodajni) zwykle nie jest zbyt smaczny. · ⟦Vì mọi con đường đều dốc nên ở Đà Lạt không có đèn xanh đèn đỏ.⟧ → Ponieważ wszystkie drogi są strome, w Đà Lạt nie ma sygnalizacji świetlnej. · ⟦Vì mọi phố đều có các nhà hàng, quán ăn nên bạn không sợ đói.⟧ → Ponieważ na każdej ulicy są restauracje i jadłodajnie, nie trzeba się bać głodu. · ⟦Vì thành phố có đủ loại cửa hàng nên bạn thoải mái lựa chọn.⟧ → Ponieważ w mieście są sklepy wszelkiego rodzaju, można swobodnie wybierać.
+@@ pdf-grammar-a42a0c1ebe06d9fb#0
+=cs
+Gramatický výklad
+⟦bao giờ chưa?⟧ se používá, když se ptáme na zkušenost: „už jsi někdy ~?“
+⟦Nam uống cà phê trứng bao giờ chưa?⟧ → Name, pil jsi už někdy vaječnou kávu? · ⟦Anh ăn cơm bụi bao giờ chưa?⟧ → Jedl jsi už někdy v lidové jídelně „cơm bụi“? · ⟦Chị thuê nhà ở thành phố bao giờ chưa?⟧ → Pronajímala sis už někdy byt ve městě? · ⟦Chị uống cà phê ở quán vỉa hè bao giờ chưa?⟧ → Pila jsi už někdy kávu v pouliční kavárně?
+⟦chắc là A⟧ znamená „asi, pravděpodobně A“.
+⟦Uống cà phê trứng chắc là ngon lắm.⟧ → Vaječná káva bude asi moc dobrá. · ⟦Chắc là mỗi loại cà phê có một mùi vị khác nhau.⟧ → Každý druh kávy má asi jinou chuť. · ⟦Chắc là chị ấy đi chợ.⟧ → Asi šla na trh. · ⟦Chắc là mùa đông năm nay sẽ rét hơn năm ngoái.⟧ → Letošní zima bude asi chladnější než loňská. · ⟦Đi nghỉ mát ở bãi biển chắc là thích lắm.⟧ → Dovolená u moře bude asi moc příjemná.
+=zh_cn
+语法解说
+⟦bao giờ chưa?⟧ 用于询问经历，意为“曾经……过吗？”
+⟦Nam uống cà phê trứng bao giờ chưa?⟧ → 阿南，你喝过鸡蛋咖啡吗？ · ⟦Anh ăn cơm bụi bao giờ chưa?⟧ → 你吃过“大排档饭”（路边饭摊）吗？ · ⟦Chị thuê nhà ở thành phố bao giờ chưa?⟧ → 你在城里租过房子吗？ · ⟦Chị uống cà phê ở quán vỉa hè bao giờ chưa?⟧ → 你在路边咖啡摊喝过咖啡吗？
+⟦chắc là A⟧ 意为“大概A、可能A”。
+⟦Uống cà phê trứng chắc là ngon lắm.⟧ → 鸡蛋咖啡大概很好喝。 · ⟦Chắc là mỗi loại cà phê có một mùi vị khác nhau.⟧ → 大概每种咖啡的味道都不一样。 · ⟦Chắc là chị ấy đi chợ.⟧ → 她大概去市场了。 · ⟦Chắc là mùa đông năm nay sẽ rét hơn năm ngoái.⟧ → 今年冬天大概会比去年更冷。 · ⟦Đi nghỉ mát ở bãi biển chắc là thích lắm.⟧ → 去海边度假大概会很惬意。
+=zh
+文法解說
+⟦bao giờ chưa?⟧ 用於詢問經驗，意為「曾經……過嗎？」
+⟦Nam uống cà phê trứng bao giờ chưa?⟧ → 阿南，你喝過蛋咖啡嗎？ · ⟦Anh ăn cơm bụi bao giờ chưa?⟧ → 你吃過「路邊飯攤」嗎？ · ⟦Chị thuê nhà ở thành phố bao giờ chưa?⟧ → 妳在城裡租過房子嗎？ · ⟦Chị uống cà phê ở quán vỉa hè bao giờ chưa?⟧ → 妳在路邊咖啡攤喝過咖啡嗎？
+⟦chắc là A⟧ 意為「大概A、可能A」。
+⟦Uống cà phê trứng chắc là ngon lắm.⟧ → 蛋咖啡大概很好喝。 · ⟦Chắc là mỗi loại cà phê có một mùi vị khác nhau.⟧ → 大概每種咖啡的味道都不一樣。 · ⟦Chắc là chị ấy đi chợ.⟧ → 她大概去市場了。 · ⟦Chắc là mùa đông năm nay sẽ rét hơn năm ngoái.⟧ → 今年冬天大概會比去年更冷。 · ⟦Đi nghỉ mát ở bãi biển chắc là thích lắm.⟧ → 去海邊度假大概會很愜意。
+=en
+Grammar notes
+⟦bao giờ chưa?⟧ is used to ask about experience: "have you ever ~?"
+⟦Nam uống cà phê trứng bao giờ chưa?⟧ → Nam, have you ever had egg coffee? · ⟦Anh ăn cơm bụi bao giờ chưa?⟧ → Have you ever eaten at a "cơm bụi" street rice stall? · ⟦Chị thuê nhà ở thành phố bao giờ chưa?⟧ → Have you ever rented a place in the city? · ⟦Chị uống cà phê ở quán vỉa hè bao giờ chưa?⟧ → Have you ever had coffee at a pavement café?
+⟦chắc là A⟧ means "probably A, A is likely".
+⟦Uống cà phê trứng chắc là ngon lắm.⟧ → Egg coffee must be really good. · ⟦Chắc là mỗi loại cà phê có một mùi vị khác nhau.⟧ → Each kind of coffee probably tastes different. · ⟦Chắc là chị ấy đi chợ.⟧ → She's probably gone to the market. · ⟦Chắc là mùa đông năm nay sẽ rét hơn năm ngoái.⟧ → This winter will probably be colder than last year. · ⟦Đi nghỉ mát ở bãi biển chắc là thích lắm.⟧ → A beach holiday would probably be lovely.
+=fr
+Notes de grammaire
+⟦bao giờ chưa?⟧ sert à interroger sur une expérience : « as-tu déjà ~ ? »
+⟦Nam uống cà phê trứng bao giờ chưa?⟧ → Nam, tu as déjà bu du café à l'œuf ? · ⟦Anh ăn cơm bụi bao giờ chưa?⟧ → Tu as déjà mangé dans une gargote « cơm bụi » ? · ⟦Chị thuê nhà ở thành phố bao giờ chưa?⟧ → Tu as déjà loué un logement en ville ? · ⟦Chị uống cà phê ở quán vỉa hè bao giờ chưa?⟧ → Tu as déjà pris un café à une terrasse de trottoir ?
+⟦chắc là A⟧ signifie « sans doute A, probablement A ».
+⟦Uống cà phê trứng chắc là ngon lắm.⟧ → Le café à l'œuf doit être délicieux. · ⟦Chắc là mỗi loại cà phê có một mùi vị khác nhau.⟧ → Chaque café a sans doute un goût différent. · ⟦Chắc là chị ấy đi chợ.⟧ → Elle est sans doute allée au marché. · ⟦Chắc là mùa đông năm nay sẽ rét hơn năm ngoái.⟧ → Cet hiver sera probablement plus froid que l'an dernier. · ⟦Đi nghỉ mát ở bãi biển chắc là thích lắm.⟧ → Des vacances à la plage, ce doit être très agréable.
+=de
+Grammatikerläuterungen
+⟦bao giờ chưa?⟧ wird verwendet, um nach Erfahrungen zu fragen: „hast du schon einmal ~?“
+⟦Nam uống cà phê trứng bao giờ chưa?⟧ → Nam, hast du schon mal Eierkaffee getrunken? · ⟦Anh ăn cơm bụi bao giờ chưa?⟧ → Hast du schon mal in einer „cơm bụi“-Garküche gegessen? · ⟦Chị thuê nhà ở thành phố bao giờ chưa?⟧ → Hast du schon mal eine Wohnung in der Stadt gemietet? · ⟦Chị uống cà phê ở quán vỉa hè bao giờ chưa?⟧ → Hast du schon mal Kaffee in einem Straßencafé getrunken?
+⟦chắc là A⟧ bedeutet „wahrscheinlich A, bestimmt A“.
+⟦Uống cà phê trứng chắc là ngon lắm.⟧ → Eierkaffee ist bestimmt sehr lecker. · ⟦Chắc là mỗi loại cà phê có một mùi vị khác nhau.⟧ → Jede Kaffeesorte schmeckt wohl anders. · ⟦Chắc là chị ấy đi chợ.⟧ → Sie ist wahrscheinlich auf den Markt gegangen. · ⟦Chắc là mùa đông năm nay sẽ rét hơn năm ngoái.⟧ → Dieser Winter wird wohl kälter als der letzte. · ⟦Đi nghỉ mát ở bãi biển chắc là thích lắm.⟧ → Urlaub am Strand ist bestimmt herrlich.
+=hu
+Nyelvtani magyarázat
+A ⟦bao giờ chưa?⟧ a tapasztalatra kérdez rá: „~tál már valaha?”
+⟦Nam uống cà phê trứng bao giờ chưa?⟧ → Nam, ittál már tojásos kávét? · ⟦Anh ăn cơm bụi bao giờ chưa?⟧ → Ettél már „cơm bụi” utcai kifőzdében? · ⟦Chị thuê nhà ở thành phố bao giờ chưa?⟧ → Béreltél már lakást a városban? · ⟦Chị uống cà phê ở quán vỉa hè bao giờ chưa?⟧ → Ittál már kávét járdaszéli kávézóban?
+A ⟦chắc là A⟧ jelentése „valószínűleg A, bizonyára A”.
+⟦Uống cà phê trứng chắc là ngon lắm.⟧ → A tojásos kávé bizonyára nagyon finom. · ⟦Chắc là mỗi loại cà phê có một mùi vị khác nhau.⟧ → Valószínűleg minden kávéfajtának más az íze. · ⟦Chắc là chị ấy đi chợ.⟧ → Valószínűleg piacra ment. · ⟦Chắc là mùa đông năm nay sẽ rét hơn năm ngoái.⟧ → Az idei tél valószínűleg hidegebb lesz a tavalyinál. · ⟦Đi nghỉ mát ở bãi biển chắc là thích lắm.⟧ → A tengerparti nyaralás biztosan nagyon kellemes.
+=id
+Penjelasan tata bahasa
+⟦bao giờ chưa?⟧ dipakai untuk menanyakan pengalaman: "pernahkah ~?"
+⟦Nam uống cà phê trứng bao giờ chưa?⟧ → Nam, pernah minum kopi telur? · ⟦Anh ăn cơm bụi bao giờ chưa?⟧ → Kakak pernah makan di warung "cơm bụi"? · ⟦Chị thuê nhà ở thành phố bao giờ chưa?⟧ → Kakak pernah menyewa rumah di kota? · ⟦Chị uống cà phê ở quán vỉa hè bao giờ chưa?⟧ → Kakak pernah minum kopi di kedai kopi pinggir jalan?
+⟦chắc là A⟧ berarti "mungkin A, pasti A".
+⟦Uống cà phê trứng chắc là ngon lắm.⟧ → Kopi telur pasti enak sekali. · ⟦Chắc là mỗi loại cà phê có một mùi vị khác nhau.⟧ → Mungkin setiap jenis kopi rasanya berbeda. · ⟦Chắc là chị ấy đi chợ.⟧ → Mungkin dia pergi ke pasar. · ⟦Chắc là mùa đông năm nay sẽ rét hơn năm ngoái.⟧ → Mungkin musim dingin tahun ini lebih dingin daripada tahun lalu. · ⟦Đi nghỉ mát ở bãi biển chắc là thích lắm.⟧ → Berlibur ke pantai pasti menyenangkan sekali.
+=ja
+文法解説
+⟦bao giờ chưa?⟧ は相手の経験を尋ねるときに「～したことがありますか」という意味で使われます。
+⟦Nam uống cà phê trứng bao giờ chưa?⟧ → ナム、エッグコーヒーを飲んだことある？ · ⟦Anh ăn cơm bụi bao giờ chưa?⟧ → 「コムブイ（大衆食堂）」で食べたことがありますか。 · ⟦Chị thuê nhà ở thành phố bao giờ chưa?⟧ → 都市で家を借りたことがありますか。 · ⟦Chị uống cà phê ở quán vỉa hè bao giờ chưa?⟧ → 路上カフェでコーヒーを飲んだことがありますか。
+⟦chắc là A⟧ の形で「たぶん～だろう」という意味で使われます。
+⟦Uống cà phê trứng chắc là ngon lắm.⟧ → エッグコーヒーはたぶんとてもおいしいだろう。 · ⟦Chắc là mỗi loại cà phê có một mùi vị khác nhau.⟧ → たぶんコーヒーは種類ごとに味が違うのだろう。 · ⟦Chắc là chị ấy đi chợ.⟧ → たぶん彼女は市場に行ったのだろう。 · ⟦Chắc là mùa đông năm nay sẽ rét hơn năm ngoái.⟧ → たぶん今年の冬は去年より寒いだろう。 · ⟦Đi nghỉ mát ở bãi biển chắc là thích lắm.⟧ → 海辺で休暇を過ごすのはたぶんとても楽しいだろう。
+=pl
+Objaśnienia gramatyczne
+⟦bao giờ chưa?⟧ używa się, pytając o doświadczenie: „czy kiedyś już ~?”
+⟦Nam uống cà phê trứng bao giờ chưa?⟧ → Nam, piłeś kiedyś kawę z jajkiem? · ⟦Anh ăn cơm bụi bao giờ chưa?⟧ → Jadłeś kiedyś w ulicznej jadłodajni „cơm bụi”? · ⟦Chị thuê nhà ở thành phố bao giờ chưa?⟧ → Wynajmowałaś kiedyś mieszkanie w mieście? · ⟦Chị uống cà phê ở quán vỉa hè bao giờ chưa?⟧ → Piłaś kiedyś kawę w ulicznej kawiarni?
+⟦chắc là A⟧ znaczy „pewnie A, prawdopodobnie A”.
+⟦Uống cà phê trứng chắc là ngon lắm.⟧ → Kawa z jajkiem jest pewnie bardzo smaczna. · ⟦Chắc là mỗi loại cà phê có một mùi vị khác nhau.⟧ → Każdy rodzaj kawy ma pewnie inny smak. · ⟦Chắc là chị ấy đi chợ.⟧ → Pewnie poszła na targ. · ⟦Chắc là mùa đông năm nay sẽ rét hơn năm ngoái.⟧ → Tegoroczna zima będzie pewnie mroźniejsza niż zeszłoroczna. · ⟦Đi nghỉ mát ở bãi biển chắc là thích lắm.⟧ → Wakacje nad morzem są pewnie bardzo przyjemne.

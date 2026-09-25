@@ -1,0 +1,171 @@
+@@ pdf-grammar-2be6906ea0eae5ff#0
+=cs
+Klíčový výraz: ⟦ơi là⟧
+⟦A ơi là A⟧ je hovorový výraz s významem „strašně, hrozně A“. Opakováním téhož A se zdůrazňuje velmi vysoká míra.
+❶ ⟦Anh ấy nói nhiều ơi là nhiều, tôi không thể nhớ hết được.⟧ — Mluví strašně moc, nemůžu si všechno zapamatovat.
+❷ Ⓐ ⟦Dạo này giá xăng đắt ơi là đắt.⟧ — Benzín je teď strašně drahý. Ⓑ ⟦Ừ, mấy hôm nay mình cũng không đi xe máy mà đi xe buýt.⟧ — Jo, já taky poslední dny nejezdím na motorce, ale autobusem.
+Výrazy k taxi ve Vietnamu: ⟦dịch vụ taxi⟧ taxislužba | ⟦bấm ứng dụng taxi⟧ ťuknout na taxi aplikaci | ⟦xe ôm đặt qua ứng dụng⟧ motorkové taxi objednané přes aplikaci | ⟦thời gian để taxi đến chỗ mình⟧ čas, za který taxi přijede | ⟦tải ứng dụng vào điện thoại di động⟧ stáhnout aplikaci do mobilu
+Rozhovor: Min-ho a Trang mluví o tom, jak používat mobilní aplikaci na objednání taxi.
+Trang: ⟦Anh bấm ứng dụng thì một trong những taxi đang có ở xung quanh sẽ đến. Anh còn có thể biết thời gian cần thiết để taxi đó đến chỗ anh.⟧ — Když ťuknete na aplikaci, přijede jedno z taxi, která jsou poblíž. A také uvidíte, jak dlouho bude taxi k vám jet.
+Min-ho: ⟦Ồ, có dịch vụ taxi như thế à!⟧ — Páni, taková taxislužba existuje!
+Trang: ⟦Có cả xe ôm đặt qua ứng dụng nữa cơ. Nguyên lí thì giống nhau. Tiện ơi là tiện!⟧ — A přes aplikaci se dá objednat i motorkové taxi. Princip je stejný. Strašně praktické!
+Min-ho: ⟦Em tải giúp ứng dụng đó vào điện thoại di dộng cho anh nhé.⟧ — Stáhni mi prosím tu aplikaci do mobilu.
+Trang: ⟦Vâng, ngay bây giờ em sẽ tải cho anh. Xe sắp đến đây rồi.⟧ — Ano, hned vám ji stáhnu. Auto už tu bude.
+Procvičování — které taxi přijede: ⟦một trong những taxi đang có ở xung quanh⟧ (jedno z taxi poblíž) / ⟦taxi có thể đến nhanh nhất⟧ (to, které přijede nejrychleji); co Min-ha ohromilo: ⟦dịch vụ taxi⟧ / ⟦ứng dụng taxi⟧; co mají taxi a motorkové taxi přes aplikaci společné: ⟦nguyên lí⟧ (princip) / ⟦cách dùng⟧ (způsob použití); kdy Trang aplikaci stáhne: ⟦ngay bây giờ⟧ (hned teď) / ⟦lát nữa trong taxi⟧ (za chvíli v taxíku).
+Vzor: Ⓐ ⟦Trông chị vui thế. Chị có chuyện gì vui à?⟧ — Vypadáš tak šťastně. Stalo se něco hezkého? Ⓑ ⟦Con chị thi đỗ đại học rồi. Vui ơi là vui.⟧ — Moje dítě udělalo přijímačky na vysokou. Jsem strašně šťastná.
+❶ ⟦được giải văn học năm nay⟧: Ⓐ ⟦Anh đang đọc tiểu thuyết gì mà say mê thế? Hay lắm à?⟧ — Jaký román čteš, že tě tak pohltil? Je moc dobrý? Ⓑ ⟦Cuốn này được giải văn học năm nay. Hay ơi là hay.⟧ — Letos získal literární cenu. Je strašně dobrý.
+❷ ⟦có trận đấu bóng đá⟧: Ⓐ ⟦Sao hôm nay đường tắc lâu thế nhỉ?⟧ — Proč je dnes tak dlouhá zácpa? Ⓑ ⟦Hôm nay có trận đấu bóng đá. Ai cũng ra đường, đông ơi là đông.⟧ — Dnes je fotbalový zápas. Všichni jsou venku, je tam strašně moc lidí.
+Nová slovíčka: ⟦xăng⟧ benzín | ⟦đỗ⟧ zastavit; uspět (u zkoušky) | ⟦giải⟧ cena | ⟦văn học⟧ literatura | ⟦say mê⟧ být zaujatý, pohlcený | ⟦trận đấu⟧ zápas | ⟦cơ⟧ (zdůrazňovací částice) | ⟦nguyên lí⟧ princip | ⟦tắc⟧ ucpaný
+=zh_cn
+核心表达：⟦ơi là⟧
+⟦A ơi là A⟧ 是口语表达，意为“非常非常A”。重复同一个A，表示A的程度非常高。
+❶ ⟦Anh ấy nói nhiều ơi là nhiều, tôi không thể nhớ hết được.⟧ —— 他话多得不得了，我记不全。
+❷ Ⓐ ⟦Dạo này giá xăng đắt ơi là đắt.⟧ —— 最近汽油贵得要命。 Ⓑ ⟦Ừ, mấy hôm nay mình cũng không đi xe máy mà đi xe buýt.⟧ —— 是啊，这几天我也不骑摩托车，改坐公交车了。
+与越南出租车相关的表达：⟦dịch vụ taxi⟧ 出租车服务 | ⟦bấm ứng dụng taxi⟧ 点叫车应用 | ⟦xe ôm đặt qua ứng dụng⟧ 通过应用预约的摩的 | ⟦thời gian để taxi đến chỗ mình⟧ 出租车到达的时间 | ⟦tải ứng dụng vào điện thoại di động⟧ 把应用下载到手机
+对话：敏浩和庄在谈论使用手机叫车应用的方法。
+庄：⟦Anh bấm ứng dụng thì một trong những taxi đang có ở xung quanh sẽ đến. Anh còn có thể biết thời gian cần thiết để taxi đó đến chỗ anh.⟧ —— 你一点应用，附近的出租车中就会有一辆过来。你还能知道那辆车到你这儿需要多少时间。
+敏浩：⟦Ồ, có dịch vụ taxi như thế à!⟧ —— 哇，还有这样的出租车服务啊！
+庄：⟦Có cả xe ôm đặt qua ứng dụng nữa cơ. Nguyên lí thì giống nhau. Tiện ơi là tiện!⟧ —— 还有通过应用叫的摩的呢。原理是一样的。方便得不得了！
+敏浩：⟦Em tải giúp ứng dụng đó vào điện thoại di dộng cho anh nhé.⟧ —— 你帮我把那个应用下载到手机里吧。
+庄：⟦Vâng, ngay bây giờ em sẽ tải cho anh. Xe sắp đến đây rồi.⟧ —— 好的，我现在就帮你下载。车快到了。
+句型练习 —— 哪辆出租车会来：⟦một trong những taxi đang có ở xung quanh⟧（附近的出租车之一）/ ⟦taxi có thể đến nhanh nhất⟧（能最快到达的出租车）；敏浩惊叹于什么：⟦dịch vụ taxi⟧ / ⟦ứng dụng taxi⟧；应用出租车和摩的有什么相同：⟦nguyên lí⟧（原理）/ ⟦cách dùng⟧（用法）；庄什么时候帮敏浩下载：⟦ngay bây giờ⟧（现在马上）/ ⟦lát nữa trong taxi⟧（待会儿在车上）。
+范例：Ⓐ ⟦Trông chị vui thế. Chị có chuyện gì vui à?⟧ —— 你看起来真开心。有什么好事吗？ Ⓑ ⟦Con chị thi đỗ đại học rồi. Vui ơi là vui.⟧ —— 我孩子考上大学了。开心得不得了。
+❶ ⟦được giải văn học năm nay⟧：Ⓐ ⟦Anh đang đọc tiểu thuyết gì mà say mê thế? Hay lắm à?⟧ —— 你在看什么小说，这么入迷？很好看吗？ Ⓑ ⟦Cuốn này được giải văn học năm nay. Hay ơi là hay.⟧ —— 这本获得了今年的文学奖。好看得不得了。
+❷ ⟦có trận đấu bóng đá⟧：Ⓐ ⟦Sao hôm nay đường tắc lâu thế nhỉ?⟧ —— 今天路上怎么堵这么久？ Ⓑ ⟦Hôm nay có trận đấu bóng đá. Ai cũng ra đường, đông ơi là đông.⟧ —— 今天有足球比赛。大家都上街了，人多得不得了。
+新单词：⟦xăng⟧ 汽油 | ⟦đỗ⟧ 停；考上 | ⟦giải⟧ 奖 | ⟦văn học⟧ 文学 | ⟦say mê⟧ 入迷 | ⟦trận đấu⟧ 比赛 | ⟦cơ⟧ （强调语气词） | ⟦nguyên lí⟧ 原理 | ⟦tắc⟧ 堵塞
+=zh
+核心表達：⟦ơi là⟧
+⟦A ơi là A⟧ 是口語表達，意為「非常非常A」。重複同一個A，表示A的程度非常高。
+❶ ⟦Anh ấy nói nhiều ơi là nhiều, tôi không thể nhớ hết được.⟧ —— 他話多得不得了，我記不全。
+❷ Ⓐ ⟦Dạo này giá xăng đắt ơi là đắt.⟧ —— 最近汽油貴得要命。 Ⓑ ⟦Ừ, mấy hôm nay mình cũng không đi xe máy mà đi xe buýt.⟧ —— 是啊，這幾天我也不騎機車，改搭公車了。
+與越南計程車相關的表達：⟦dịch vụ taxi⟧ 計程車服務 | ⟦bấm ứng dụng taxi⟧ 點叫車App | ⟦xe ôm đặt qua ứng dụng⟧ 透過App預約的機車計程車 | ⟦thời gian để taxi đến chỗ mình⟧ 計程車抵達的時間 | ⟦tải ứng dụng vào điện thoại di động⟧ 把App下載到手機
+對話：敏浩和莊在談論使用手機叫車App的方法。
+莊：⟦Anh bấm ứng dụng thì một trong những taxi đang có ở xung quanh sẽ đến. Anh còn có thể biết thời gian cần thiết để taxi đó đến chỗ anh.⟧ —— 你一點App，附近的計程車中就會有一輛過來。你還能知道那輛車到你這裡需要多少時間。
+敏浩：⟦Ồ, có dịch vụ taxi như thế à!⟧ —— 哇，還有這樣的計程車服務啊！
+莊：⟦Có cả xe ôm đặt qua ứng dụng nữa cơ. Nguyên lí thì giống nhau. Tiện ơi là tiện!⟧ —— 還有透過App叫的機車計程車呢。原理是一樣的。方便得不得了！
+敏浩：⟦Em tải giúp ứng dụng đó vào điện thoại di dộng cho anh nhé.⟧ —— 你幫我把那個App下載到手機裡吧。
+莊：⟦Vâng, ngay bây giờ em sẽ tải cho anh. Xe sắp đến đây rồi.⟧ —— 好的，我現在就幫你下載。車快到了。
+句型練習 —— 哪輛計程車會來：⟦một trong những taxi đang có ở xung quanh⟧（附近的計程車之一）/ ⟦taxi có thể đến nhanh nhất⟧（能最快抵達的計程車）；敏浩驚嘆於什麼：⟦dịch vụ taxi⟧ / ⟦ứng dụng taxi⟧；App計程車和機車計程車有什麼相同：⟦nguyên lí⟧（原理）/ ⟦cách dùng⟧（用法）；莊什麼時候幫敏浩下載：⟦ngay bây giờ⟧（現在馬上）/ ⟦lát nữa trong taxi⟧（待會兒在車上）。
+範例：Ⓐ ⟦Trông chị vui thế. Chị có chuyện gì vui à?⟧ —— 你看起來真開心。有什麼好事嗎？ Ⓑ ⟦Con chị thi đỗ đại học rồi. Vui ơi là vui.⟧ —— 我孩子考上大學了。開心得不得了。
+❶ ⟦được giải văn học năm nay⟧：Ⓐ ⟦Anh đang đọc tiểu thuyết gì mà say mê thế? Hay lắm à?⟧ —— 你在看什麼小說，這麼入迷？很好看嗎？ Ⓑ ⟦Cuốn này được giải văn học năm nay. Hay ơi là hay.⟧ —— 這本得了今年的文學獎。好看得不得了。
+❷ ⟦có trận đấu bóng đá⟧：Ⓐ ⟦Sao hôm nay đường tắc lâu thế nhỉ?⟧ —— 今天路上怎麼塞這麼久？ Ⓑ ⟦Hôm nay có trận đấu bóng đá. Ai cũng ra đường, đông ơi là đông.⟧ —— 今天有足球比賽。大家都上街了，人多得不得了。
+新單字：⟦xăng⟧ 汽油 | ⟦đỗ⟧ 停；考上 | ⟦giải⟧ 獎 | ⟦văn học⟧ 文學 | ⟦say mê⟧ 入迷 | ⟦trận đấu⟧ 比賽 | ⟦cơ⟧ （強調語氣詞） | ⟦nguyên lí⟧ 原理 | ⟦tắc⟧ 塞車
+=en
+Key expression: ⟦ơi là⟧
+⟦A ơi là A⟧ is a colloquial expression meaning "incredibly A, so very A". Repeating the same A stresses how extreme A is.
+❶ ⟦Anh ấy nói nhiều ơi là nhiều, tôi không thể nhớ hết được.⟧ — He talks so, so much that I can't remember it all.
+❷ Ⓐ ⟦Dạo này giá xăng đắt ơi là đắt.⟧ — Petrol is incredibly expensive these days. Ⓑ ⟦Ừ, mấy hôm nay mình cũng không đi xe máy mà đi xe buýt.⟧ — Yeah, the last few days I haven't ridden my motorbike either — I've taken the bus.
+Taxi expressions in Vietnam: ⟦dịch vụ taxi⟧ taxi service | ⟦bấm ứng dụng taxi⟧ tap the taxi app | ⟦xe ôm đặt qua ứng dụng⟧ motorbike taxi booked by app | ⟦thời gian để taxi đến chỗ mình⟧ time for the taxi to reach you | ⟦tải ứng dụng vào điện thoại di động⟧ download an app to your phone
+Dialogue: Min-ho and Trang talk about how to use a taxi-booking phone app.
+Trang: ⟦Anh bấm ứng dụng thì một trong những taxi đang có ở xung quanh sẽ đến. Anh còn có thể biết thời gian cần thiết để taxi đó đến chỗ anh.⟧ — When you tap the app, one of the taxis around you will come. You can even see how long it'll take that taxi to reach you.
+Min-ho: ⟦Ồ, có dịch vụ taxi như thế à!⟧ — Wow, there's a taxi service like that!
+Trang: ⟦Có cả xe ôm đặt qua ứng dụng nữa cơ. Nguyên lí thì giống nhau. Tiện ơi là tiện!⟧ — There are even motorbike taxis you book by app. The principle is the same. Super convenient!
+Min-ho: ⟦Em tải giúp ứng dụng đó vào điện thoại di dộng cho anh nhé.⟧ — Could you download that app to my phone for me?
+Trang: ⟦Vâng, ngay bây giờ em sẽ tải cho anh. Xe sắp đến đây rồi.⟧ — Sure, I'll download it for you right now. The car's almost here.
+Pattern practice — which taxi comes: ⟦một trong những taxi đang có ở xung quanh⟧ (one of the taxis nearby) / ⟦taxi có thể đến nhanh nhất⟧ (the taxi that can arrive fastest); what amazes Min-ho: ⟦dịch vụ taxi⟧ / ⟦ứng dụng taxi⟧; what app taxis and app motorbike taxis have in common: ⟦nguyên lí⟧ (the principle) / ⟦cách dùng⟧ (how to use them); when Trang downloads the app: ⟦ngay bây giờ⟧ (right now) / ⟦lát nữa trong taxi⟧ (in a moment in the taxi).
+Model: Ⓐ ⟦Trông chị vui thế. Chị có chuyện gì vui à?⟧ — You look so happy. Did something good happen? Ⓑ ⟦Con chị thi đỗ đại học rồi. Vui ơi là vui.⟧ — My child passed the university entrance exam. I'm so, so happy.
+❶ ⟦được giải văn học năm nay⟧: Ⓐ ⟦Anh đang đọc tiểu thuyết gì mà say mê thế? Hay lắm à?⟧ — What novel are you reading that's got you so absorbed? Is it that good? Ⓑ ⟦Cuốn này được giải văn học năm nay. Hay ơi là hay.⟧ — It won this year's literary prize. It's incredibly good.
+❷ ⟦có trận đấu bóng đá⟧: Ⓐ ⟦Sao hôm nay đường tắc lâu thế nhỉ?⟧ — Why is the traffic jammed for so long today? Ⓑ ⟦Hôm nay có trận đấu bóng đá. Ai cũng ra đường, đông ơi là đông.⟧ — There's a football match today. Everyone's out on the streets — it's incredibly crowded.
+New words: ⟦xăng⟧ petrol | ⟦đỗ⟧ to stop; to pass (an exam) | ⟦giải⟧ prize | ⟦văn học⟧ literature | ⟦say mê⟧ to be absorbed in | ⟦trận đấu⟧ match | ⟦cơ⟧ (emphatic particle) | ⟦nguyên lí⟧ principle | ⟦tắc⟧ jammed
+=fr
+Expression clé : ⟦ơi là⟧
+⟦A ơi là A⟧ est une expression familière signifiant « extrêmement A ». La répétition du même A souligne l'intensité.
+❶ ⟦Anh ấy nói nhiều ơi là nhiều, tôi không thể nhớ hết được.⟧ — Il parle tellement, tellement que je ne peux pas tout retenir.
+❷ Ⓐ ⟦Dạo này giá xăng đắt ơi là đắt.⟧ — L'essence est hors de prix ces temps-ci. Ⓑ ⟦Ừ, mấy hôm nay mình cũng không đi xe máy mà đi xe buýt.⟧ — Oui, ces jours-ci je ne prends plus le scooter non plus, je prends le bus.
+Expressions liées aux taxis au Viêt Nam : ⟦dịch vụ taxi⟧ service de taxi | ⟦bấm ứng dụng taxi⟧ appuyer sur l'appli de taxi | ⟦xe ôm đặt qua ứng dụng⟧ moto-taxi réservé par appli | ⟦thời gian để taxi đến chỗ mình⟧ temps d'arrivée du taxi | ⟦tải ứng dụng vào điện thoại di động⟧ télécharger une appli sur son portable
+Dialogue : Min-ho et Trang parlent de l'utilisation d'une appli mobile de réservation de taxi.
+Trang : ⟦Anh bấm ứng dụng thì một trong những taxi đang có ở xung quanh sẽ đến. Anh còn có thể biết thời gian cần thiết để taxi đó đến chỗ anh.⟧ — Tu appuies sur l'appli et l'un des taxis des environs vient te chercher. Tu peux même savoir combien de temps il lui faudra pour arriver.
+Min-ho : ⟦Ồ, có dịch vụ taxi như thế à!⟧ — Oh, il existe un tel service de taxi !
+Trang : ⟦Có cả xe ôm đặt qua ứng dụng nữa cơ. Nguyên lí thì giống nhau. Tiện ơi là tiện!⟧ — Il y a même des moto-taxis réservables par appli. C'est le même principe. Super pratique !
+Min-ho : ⟦Em tải giúp ứng dụng đó vào điện thoại di dộng cho anh nhé.⟧ — Tu peux me télécharger cette appli sur mon portable ?
+Trang : ⟦Vâng, ngay bây giờ em sẽ tải cho anh. Xe sắp đến đây rồi.⟧ — Oui, je te la télécharge tout de suite. La voiture arrive bientôt.
+Exercices — quel taxi vient : ⟦một trong những taxi đang có ở xung quanh⟧ (un des taxis alentour) / ⟦taxi có thể đến nhanh nhất⟧ (celui qui peut arriver le plus vite) ; ce qui impressionne Min-ho : ⟦dịch vụ taxi⟧ / ⟦ứng dụng taxi⟧ ; point commun entre taxi et moto-taxi par appli : ⟦nguyên lí⟧ (le principe) / ⟦cách dùng⟧ (l'utilisation) ; quand Trang télécharge l'appli : ⟦ngay bây giờ⟧ (tout de suite) / ⟦lát nữa trong taxi⟧ (tout à l'heure dans le taxi).
+Modèle : Ⓐ ⟦Trông chị vui thế. Chị có chuyện gì vui à?⟧ — Tu as l'air si contente. Il t'est arrivé quelque chose de bien ? Ⓑ ⟦Con chị thi đỗ đại học rồi. Vui ơi là vui.⟧ — Mon enfant a réussi l'examen d'entrée à l'université. Je suis tellement contente.
+❶ ⟦được giải văn học năm nay⟧ : Ⓐ ⟦Anh đang đọc tiểu thuyết gì mà say mê thế? Hay lắm à?⟧ — Quel roman lis-tu pour être aussi absorbé ? Il est si bien ? Ⓑ ⟦Cuốn này được giải văn học năm nay. Hay ơi là hay.⟧ — Il a reçu le prix littéraire cette année. Il est vraiment excellent.
+❷ ⟦có trận đấu bóng đá⟧ : Ⓐ ⟦Sao hôm nay đường tắc lâu thế nhỉ?⟧ — Pourquoi les bouchons durent-ils autant aujourd'hui ? Ⓑ ⟦Hôm nay có trận đấu bóng đá. Ai cũng ra đường, đông ơi là đông.⟧ — Il y a un match de foot aujourd'hui. Tout le monde est dehors, il y a un monde fou.
+Nouveaux mots : ⟦xăng⟧ essence | ⟦đỗ⟧ s'arrêter ; réussir (un examen) | ⟦giải⟧ prix | ⟦văn học⟧ littérature | ⟦say mê⟧ être passionné, absorbé | ⟦trận đấu⟧ match | ⟦cơ⟧ (particule d'insistance) | ⟦nguyên lí⟧ principe | ⟦tắc⟧ embouteillé
+=de
+Schlüsselausdruck: ⟦ơi là⟧
+⟦A ơi là A⟧ ist umgangssprachlich und bedeutet „unglaublich A“. Die Wiederholung desselben A betont, wie stark A ist.
+❶ ⟦Anh ấy nói nhiều ơi là nhiều, tôi không thể nhớ hết được.⟧ — Er redet unglaublich viel, ich kann mir nicht alles merken.
+❷ Ⓐ ⟦Dạo này giá xăng đắt ơi là đắt.⟧ — Benzin ist zurzeit unglaublich teuer. Ⓑ ⟦Ừ, mấy hôm nay mình cũng không đi xe máy mà đi xe buýt.⟧ — Ja, ich fahre die letzten Tage auch nicht mit dem Motorroller, sondern mit dem Bus.
+Taxi-Ausdrücke in Vietnam: ⟦dịch vụ taxi⟧ Taxidienst | ⟦bấm ứng dụng taxi⟧ die Taxi-App antippen | ⟦xe ôm đặt qua ứng dụng⟧ per App bestelltes Motorradtaxi | ⟦thời gian để taxi đến chỗ mình⟧ Anfahrtszeit des Taxis | ⟦tải ứng dụng vào điện thoại di động⟧ eine App aufs Handy laden
+Dialog: Min-ho und Trang sprechen darüber, wie man eine Taxi-App benutzt.
+Trang: ⟦Anh bấm ứng dụng thì một trong những taxi đang có ở xung quanh sẽ đến. Anh còn có thể biết thời gian cần thiết để taxi đó đến chỗ anh.⟧ — Wenn du die App antippst, kommt eines der Taxis in der Nähe. Du siehst sogar, wie lange es bis zu dir braucht.
+Min-ho: ⟦Ồ, có dịch vụ taxi như thế à!⟧ — Oh, so einen Taxidienst gibt es!
+Trang: ⟦Có cả xe ôm đặt qua ứng dụng nữa cơ. Nguyên lí thì giống nhau. Tiện ơi là tiện!⟧ — Es gibt sogar Motorradtaxis per App. Das Prinzip ist dasselbe. Unglaublich praktisch!
+Min-ho: ⟦Em tải giúp ứng dụng đó vào điện thoại di dộng cho anh nhé.⟧ — Lädst du mir die App bitte aufs Handy?
+Trang: ⟦Vâng, ngay bây giờ em sẽ tải cho anh. Xe sắp đến đây rồi.⟧ — Klar, ich lade sie dir sofort herunter. Das Auto ist gleich da.
+Satzmusterübung — welches Taxi kommt: ⟦một trong những taxi đang có ở xung quanh⟧ (eines der Taxis in der Nähe) / ⟦taxi có thể đến nhanh nhất⟧ (das schnellstmögliche); was Min-ho beeindruckt: ⟦dịch vụ taxi⟧ / ⟦ứng dụng taxi⟧; was App-Taxi und App-Motorradtaxi gemeinsam haben: ⟦nguyên lí⟧ (Prinzip) / ⟦cách dùng⟧ (Bedienung); wann Trang die App lädt: ⟦ngay bây giờ⟧ (sofort) / ⟦lát nữa trong taxi⟧ (gleich im Taxi).
+Muster: Ⓐ ⟦Trông chị vui thế. Chị có chuyện gì vui à?⟧ — Du siehst so fröhlich aus. Ist etwas Schönes passiert? Ⓑ ⟦Con chị thi đỗ đại học rồi. Vui ơi là vui.⟧ — Mein Kind hat die Uni-Aufnahmeprüfung bestanden. Ich bin überglücklich.
+❶ ⟦được giải văn học năm nay⟧: Ⓐ ⟦Anh đang đọc tiểu thuyết gì mà say mê thế? Hay lắm à?⟧ — Was für einen Roman liest du, dass du so vertieft bist? Ist er so gut? Ⓑ ⟦Cuốn này được giải văn học năm nay. Hay ơi là hay.⟧ — Er hat dieses Jahr den Literaturpreis bekommen. Er ist unglaublich gut.
+❷ ⟦có trận đấu bóng đá⟧: Ⓐ ⟦Sao hôm nay đường tắc lâu thế nhỉ?⟧ — Warum ist heute so lange Stau? Ⓑ ⟦Hôm nay có trận đấu bóng đá. Ai cũng ra đường, đông ơi là đông.⟧ — Heute ist ein Fußballspiel. Alle sind unterwegs, es ist unglaublich voll.
+Neue Wörter: ⟦xăng⟧ Benzin | ⟦đỗ⟧ anhalten; (eine Prüfung) bestehen | ⟦giải⟧ Preis | ⟦văn học⟧ Literatur | ⟦say mê⟧ vertieft sein | ⟦trận đấu⟧ Spiel, Wettkampf | ⟦cơ⟧ (Betonungspartikel) | ⟦nguyên lí⟧ Prinzip | ⟦tắc⟧ verstopft
+=hu
+Kulcskifejezés: ⟦ơi là⟧
+Az ⟦A ơi là A⟧ beszélt nyelvi kifejezés, jelentése „rettentően A”. Ugyanazt az A-t megismételve azt hangsúlyozzuk, milyen nagy mértékű.
+❶ ⟦Anh ấy nói nhiều ơi là nhiều, tôi không thể nhớ hết được.⟧ — Rettentően sokat beszél, nem tudok mindent megjegyezni.
+❷ Ⓐ ⟦Dạo này giá xăng đắt ơi là đắt.⟧ — Mostanában rettentően drága a benzin. Ⓑ ⟦Ừ, mấy hôm nay mình cũng không đi xe máy mà đi xe buýt.⟧ — Igen, én is pár napja nem motorral, hanem busszal járok.
+Taxival kapcsolatos kifejezések Vietnámban: ⟦dịch vụ taxi⟧ taxiszolgáltatás | ⟦bấm ứng dụng taxi⟧ megnyomni a taxialkalmazást | ⟦xe ôm đặt qua ứng dụng⟧ alkalmazással rendelt motoros taxi | ⟦thời gian để taxi đến chỗ mình⟧ amennyi idő alatt a taxi odaér | ⟦tải ứng dụng vào điện thoại di động⟧ alkalmazást letölteni a mobilra
+Párbeszéd: Min-ho és Trang a taxirendelő mobilalkalmazás használatáról beszélgetnek.
+Trang: ⟦Anh bấm ứng dụng thì một trong những taxi đang có ở xung quanh sẽ đến. Anh còn có thể biết thời gian cần thiết để taxi đó đến chỗ anh.⟧ — Ha megnyomod az alkalmazást, a közelben lévő taxik egyike jön érted. Még azt is láthatod, mennyi idő alatt ér oda hozzád.
+Min-ho: ⟦Ồ, có dịch vụ taxi như thế à!⟧ — Hű, van ilyen taxiszolgáltatás!
+Trang: ⟦Có cả xe ôm đặt qua ứng dụng nữa cơ. Nguyên lí thì giống nhau. Tiện ơi là tiện!⟧ — Még motoros taxit is lehet alkalmazással rendelni. Az elv ugyanaz. Rettentően kényelmes!
+Min-ho: ⟦Em tải giúp ứng dụng đó vào điện thoại di dộng cho anh nhé.⟧ — Letöltenéd nekem azt az alkalmazást a telefonomra?
+Trang: ⟦Vâng, ngay bây giờ em sẽ tải cho anh. Xe sắp đến đây rồi.⟧ — Persze, most rögtön letöltöm. Mindjárt itt az autó.
+Mintagyakorlat — melyik taxi jön: ⟦một trong những taxi đang có ở xung quanh⟧ (a közelben lévők egyike) / ⟦taxi có thể đến nhanh nhất⟧ (amelyik a leggyorsabban odaér); min csodálkozik Min-ho: ⟦dịch vụ taxi⟧ / ⟦ứng dụng taxi⟧; miben hasonlít az alkalmazásos taxi és motoros taxi: ⟦nguyên lí⟧ (elv) / ⟦cách dùng⟧ (használat); mikor tölti le Trang: ⟦ngay bây giờ⟧ (azonnal) / ⟦lát nữa trong taxi⟧ (mindjárt a taxiban).
+Minta: Ⓐ ⟦Trông chị vui thế. Chị có chuyện gì vui à?⟧ — Milyen vidámnak látszol. Történt valami jó? Ⓑ ⟦Con chị thi đỗ đại học rồi. Vui ơi là vui.⟧ — A gyerekem felvételizett az egyetemre. Rettentően boldog vagyok.
+❶ ⟦được giải văn học năm nay⟧: Ⓐ ⟦Anh đang đọc tiểu thuyết gì mà say mê thế? Hay lắm à?⟧ — Milyen regényt olvasol, hogy ennyire belemerültél? Ennyire jó? Ⓑ ⟦Cuốn này được giải văn học năm nay. Hay ơi là hay.⟧ — Idén irodalmi díjat kapott. Rettentően jó.
+❷ ⟦có trận đấu bóng đá⟧: Ⓐ ⟦Sao hôm nay đường tắc lâu thế nhỉ?⟧ — Miért van ma ilyen sokáig dugó? Ⓑ ⟦Hôm nay có trận đấu bóng đá. Ai cũng ra đường, đông ơi là đông.⟧ — Ma focimeccs van. Mindenki az utcán van, rettentően nagy a tömeg.
+Új szavak: ⟦xăng⟧ benzin | ⟦đỗ⟧ megállni; sikeresen vizsgázni | ⟦giải⟧ díj | ⟦văn học⟧ irodalom | ⟦say mê⟧ belemerülni | ⟦trận đấu⟧ mérkőzés | ⟦cơ⟧ (nyomatékosító partikula) | ⟦nguyên lí⟧ elv | ⟦tắc⟧ dugó, torlódás
+=id
+Ungkapan kunci: ⟦ơi là⟧
+⟦A ơi là A⟧ adalah ungkapan lisan yang berarti "A sekali, luar biasa A". Pengulangan A yang sama menegaskan tingkat A yang sangat tinggi.
+❶ ⟦Anh ấy nói nhiều ơi là nhiều, tôi không thể nhớ hết được.⟧ — Dia banyak bicara sekali, saya tidak bisa mengingat semuanya.
+❷ Ⓐ ⟦Dạo này giá xăng đắt ơi là đắt.⟧ — Akhir-akhir ini harga bensin mahal sekali. Ⓑ ⟦Ừ, mấy hôm nay mình cũng không đi xe máy mà đi xe buýt.⟧ — Iya, beberapa hari ini aku juga tidak naik motor, tetapi naik bus.
+Ungkapan tentang taksi di Vietnam: ⟦dịch vụ taxi⟧ layanan taksi | ⟦bấm ứng dụng taxi⟧ menekan aplikasi taksi | ⟦xe ôm đặt qua ứng dụng⟧ ojek yang dipesan lewat aplikasi | ⟦thời gian để taxi đến chỗ mình⟧ waktu taksi sampai ke tempat kita | ⟦tải ứng dụng vào điện thoại di động⟧ mengunduh aplikasi ke ponsel
+Percakapan: Min-ho dan Trang membicarakan cara memakai aplikasi pemesanan taksi di ponsel.
+Trang: ⟦Anh bấm ứng dụng thì một trong những taxi đang có ở xung quanh sẽ đến. Anh còn có thể biết thời gian cần thiết để taxi đó đến chỗ anh.⟧ — Kalau Kakak menekan aplikasinya, salah satu taksi di sekitar akan datang. Kakak juga bisa tahu berapa lama taksi itu sampai ke tempat Kakak.
+Min-ho: ⟦Ồ, có dịch vụ taxi như thế à!⟧ — Wah, ada layanan taksi seperti itu!
+Trang: ⟦Có cả xe ôm đặt qua ứng dụng nữa cơ. Nguyên lí thì giống nhau. Tiện ơi là tiện!⟧ — Bahkan ada ojek yang bisa dipesan lewat aplikasi. Prinsipnya sama. Praktis sekali!
+Min-ho: ⟦Em tải giúp ứng dụng đó vào điện thoại di dộng cho anh nhé.⟧ — Tolong unduhkan aplikasi itu ke ponsel Kakak, ya.
+Trang: ⟦Vâng, ngay bây giờ em sẽ tải cho anh. Xe sắp đến đây rồi.⟧ — Baik, saya unduhkan sekarang juga. Mobilnya sebentar lagi datang.
+Latihan pola — taksi mana yang datang: ⟦một trong những taxi đang có ở xung quanh⟧ (salah satu taksi di sekitar) / ⟦taxi có thể đến nhanh nhất⟧ (taksi yang paling cepat datang); yang membuat Min-ho kagum: ⟦dịch vụ taxi⟧ / ⟦ứng dụng taxi⟧; kesamaan taksi dan ojek aplikasi: ⟦nguyên lí⟧ (prinsip) / ⟦cách dùng⟧ (cara pakai); kapan Trang mengunduh aplikasi: ⟦ngay bây giờ⟧ (sekarang juga) / ⟦lát nữa trong taxi⟧ (nanti di dalam taksi).
+Contoh: Ⓐ ⟦Trông chị vui thế. Chị có chuyện gì vui à?⟧ — Kakak kelihatan senang sekali. Ada kabar gembira? Ⓑ ⟦Con chị thi đỗ đại học rồi. Vui ơi là vui.⟧ — Anak Kakak lulus ujian masuk universitas. Senang sekali.
+❶ ⟦được giải văn học năm nay⟧: Ⓐ ⟦Anh đang đọc tiểu thuyết gì mà say mê thế? Hay lắm à?⟧ — Kakak sedang membaca novel apa sampai asyik begitu? Bagus sekali, ya? Ⓑ ⟦Cuốn này được giải văn học năm nay. Hay ơi là hay.⟧ — Novel ini memenangi penghargaan sastra tahun ini. Bagus sekali.
+❷ ⟦có trận đấu bóng đá⟧: Ⓐ ⟦Sao hôm nay đường tắc lâu thế nhỉ?⟧ — Kenapa hari ini macetnya lama sekali, ya? Ⓑ ⟦Hôm nay có trận đấu bóng đá. Ai cũng ra đường, đông ơi là đông.⟧ — Hari ini ada pertandingan sepak bola. Semua orang keluar, ramai sekali.
+Kosakata baru: ⟦xăng⟧ bensin | ⟦đỗ⟧ berhenti; lulus (ujian) | ⟦giải⟧ hadiah, penghargaan | ⟦văn học⟧ sastra | ⟦say mê⟧ asyik, tenggelam | ⟦trận đấu⟧ pertandingan | ⟦cơ⟧ (partikel penegas) | ⟦nguyên lí⟧ prinsip | ⟦tắc⟧ macet
+=ja
+核心表現：⟦ơi là⟧
+⟦A ơi là A⟧ は会話体の表現で「ものすごくAだ」という意味です。同じAを繰り返して、Aの程度が非常に甚だしいことを表します。
+❶ ⟦Anh ấy nói nhiều ơi là nhiều, tôi không thể nhớ hết được.⟧ — 彼はものすごくおしゃべりで、全部は覚えられません。
+❷ Ⓐ ⟦Dạo này giá xăng đắt ơi là đắt.⟧ — 最近ガソリン代がものすごく高い。 Ⓑ ⟦Ừ, mấy hôm nay mình cũng không đi xe máy mà đi xe buýt.⟧ — うん、ここ数日私もバイクに乗らずにバスに乗ったよ。
+ベトナムのタクシーに関する表現：⟦dịch vụ taxi⟧ タクシーサービス | ⟦bấm ứng dụng taxi⟧ タクシーアプリを押す | ⟦xe ôm đặt qua ứng dụng⟧ アプリで予約するバイクタクシー | ⟦thời gian để taxi đến chỗ mình⟧ タクシーが自分の所に来るまでの時間 | ⟦tải ứng dụng vào điện thoại di động⟧ 携帯電話にアプリをダウンロードする
+会話：ミンホとチャンがタクシー予約アプリの使い方について話しています。
+チャン：⟦Anh bấm ứng dụng thì một trong những taxi đang có ở xung quanh sẽ đến. Anh còn có thể biết thời gian cần thiết để taxi đó đến chỗ anh.⟧ — アプリを押すと、近くにいるタクシーの1台が来ます。そのタクシーが来るまでにかかる時間も分かりますよ。
+ミンホ：⟦Ồ, có dịch vụ taxi như thế à!⟧ — へえ、そんなタクシーサービスがあるんだ！
+チャン：⟦Có cả xe ôm đặt qua ứng dụng nữa cơ. Nguyên lí thì giống nhau. Tiện ơi là tiện!⟧ — アプリで予約するバイクタクシーまであるんですよ。仕組みは同じです。ものすごく便利！
+ミンホ：⟦Em tải giúp ứng dụng đó vào điện thoại di dộng cho anh nhé.⟧ — そのアプリを僕の携帯にダウンロードしてくれる？
+チャン：⟦Vâng, ngay bây giờ em sẽ tải cho anh. Xe sắp đến đây rồi.⟧ — はい、今すぐダウンロードしますね。車ももうすぐ来ます。
+文型練習 — どのタクシーが来るか：⟦một trong những taxi đang có ở xung quanh⟧（近くにいるタクシーの1台）/ ⟦taxi có thể đến nhanh nhất⟧（いちばん早く来られるタクシー）；ミンホが感心したこと：⟦dịch vụ taxi⟧ / ⟦ứng dụng taxi⟧；アプリのタクシーとバイクタクシーの共通点：⟦nguyên lí⟧（仕組み）/ ⟦cách dùng⟧（使い方）；いつダウンロードするか：⟦ngay bây giờ⟧（今すぐ）/ ⟦lát nữa trong taxi⟧（後でタクシーの中で）。
+例：Ⓐ ⟦Trông chị vui thế. Chị có chuyện gì vui à?⟧ — うれしそうですね。何かいいことあったんですか。 Ⓑ ⟦Con chị thi đỗ đại học rồi. Vui ơi là vui.⟧ — 子どもが大学に合格したの。ものすごくうれしい。
+❶ ⟦được giải văn học năm nay⟧：Ⓐ ⟦Anh đang đọc tiểu thuyết gì mà say mê thế? Hay lắm à?⟧ — 何の小説をそんなに夢中で読んでいるの？すごく面白い？ Ⓑ ⟦Cuốn này được giải văn học năm nay. Hay ơi là hay.⟧ — これは今年の文学賞を取ったんだ。ものすごく面白いよ。
+❷ ⟦có trận đấu bóng đá⟧：Ⓐ ⟦Sao hôm nay đường tắc lâu thế nhỉ?⟧ — どうして今日はこんなに渋滞が長いんだろう？ Ⓑ ⟦Hôm nay có trận đấu bóng đá. Ai cũng ra đường, đông ơi là đông.⟧ — 今日はサッカーの試合があるんだ。みんな外に出ていて、ものすごく混んでいる。
+新出単語：⟦xăng⟧ ガソリン | ⟦đỗ⟧ 止まる、合格する | ⟦giải⟧ 賞 | ⟦văn học⟧ 文学 | ⟦say mê⟧ 夢中になる | ⟦trận đấu⟧ 試合 | ⟦cơ⟧ ～よ（強調） | ⟦nguyên lí⟧ 原理 | ⟦tắc⟧ 渋滞する
+=pl
+Kluczowe wyrażenie: ⟦ơi là⟧
+⟦A ơi là A⟧ to wyrażenie potoczne znaczące „strasznie, niesamowicie A”. Powtórzenie tego samego A podkreśla bardzo wysoki stopień.
+❶ ⟦Anh ấy nói nhiều ơi là nhiều, tôi không thể nhớ hết được.⟧ — On strasznie dużo mówi, nie jestem w stanie wszystkiego zapamiętać.
+❷ Ⓐ ⟦Dạo này giá xăng đắt ơi là đắt.⟧ — Benzyna jest ostatnio strasznie droga. Ⓑ ⟦Ừ, mấy hôm nay mình cũng không đi xe máy mà đi xe buýt.⟧ — No, ja też od kilku dni nie jeżdżę skuterem, tylko autobusem.
+Wyrażenia związane z taksówkami w Wietnamie: ⟦dịch vụ taxi⟧ usługa taksówkowa | ⟦bấm ứng dụng taxi⟧ kliknąć aplikację taksówkową | ⟦xe ôm đặt qua ứng dụng⟧ mototaksówka zamawiana przez aplikację | ⟦thời gian để taxi đến chỗ mình⟧ czas dojazdu taksówki | ⟦tải ứng dụng vào điện thoại di động⟧ pobrać aplikację na telefon
+Dialog: Min-ho i Trang rozmawiają o tym, jak korzystać z aplikacji do zamawiania taksówek.
+Trang: ⟦Anh bấm ứng dụng thì một trong những taxi đang có ở xung quanh sẽ đến. Anh còn có thể biết thời gian cần thiết để taxi đó đến chỗ anh.⟧ — Klikasz w aplikację i przyjeżdża jedna z taksówek z okolicy. Możesz nawet sprawdzić, ile czasu zajmie jej dojazd do ciebie.
+Min-ho: ⟦Ồ, có dịch vụ taxi như thế à!⟧ — O, jest taka usługa taksówkowa!
+Trang: ⟦Có cả xe ôm đặt qua ứng dụng nữa cơ. Nguyên lí thì giống nhau. Tiện ơi là tiện!⟧ — Są nawet mototaksówki zamawiane przez aplikację. Zasada jest ta sama. Strasznie wygodne!
+Min-ho: ⟦Em tải giúp ứng dụng đó vào điện thoại di dộng cho anh nhé.⟧ — Pobierzesz mi tę aplikację na telefon?
+Trang: ⟦Vâng, ngay bây giờ em sẽ tải cho anh. Xe sắp đến đây rồi.⟧ — Jasne, zaraz ci ją pobiorę. Samochód zaraz tu będzie.
+Ćwiczenie wzorców — która taksówka przyjedzie: ⟦một trong những taxi đang có ở xung quanh⟧ (jedna z pobliskich taksówek) / ⟦taxi có thể đến nhanh nhất⟧ (ta, która przyjedzie najszybciej); co zachwyciło Min-ho: ⟦dịch vụ taxi⟧ / ⟦ứng dụng taxi⟧; co łączy taksówkę i mototaksówkę z aplikacji: ⟦nguyên lí⟧ (zasada) / ⟦cách dùng⟧ (sposób użycia); kiedy Trang pobierze aplikację: ⟦ngay bây giờ⟧ (od razu) / ⟦lát nữa trong taxi⟧ (za chwilę w taksówce).
+Wzór: Ⓐ ⟦Trông chị vui thế. Chị có chuyện gì vui à?⟧ — Wyglądasz na taką szczęśliwą. Stało się coś miłego? Ⓑ ⟦Con chị thi đỗ đại học rồi. Vui ơi là vui.⟧ — Moje dziecko dostało się na studia. Strasznie się cieszę.
+❶ ⟦được giải văn học năm nay⟧: Ⓐ ⟦Anh đang đọc tiểu thuyết gì mà say mê thế? Hay lắm à?⟧ — Jaką powieść czytasz, że tak cię wciągnęła? Taka dobra? Ⓑ ⟦Cuốn này được giải văn học năm nay. Hay ơi là hay.⟧ — Dostała w tym roku nagrodę literacką. Jest niesamowicie dobra.
+❷ ⟦có trận đấu bóng đá⟧: Ⓐ ⟦Sao hôm nay đường tắc lâu thế nhỉ?⟧ — Czemu dziś tak długo stoimy w korku? Ⓑ ⟦Hôm nay có trận đấu bóng đá. Ai cũng ra đường, đông ơi là đông.⟧ — Dziś jest mecz piłki nożnej. Wszyscy wyszli na ulice, jest strasznie tłoczno.
+Nowe słówka: ⟦xăng⟧ benzyna | ⟦đỗ⟧ zatrzymać się; zdać (egzamin) | ⟦giải⟧ nagroda | ⟦văn học⟧ literatura | ⟦say mê⟧ być pochłoniętym | ⟦trận đấu⟧ mecz | ⟦cơ⟧ (partykuła wzmacniająca) | ⟦nguyên lí⟧ zasada | ⟦tắc⟧ zakorkowany

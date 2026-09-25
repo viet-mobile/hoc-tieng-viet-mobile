@@ -1,0 +1,202 @@
+@@ pdf-grammar-aa277c1e9fd50caa#0
+=cs
+Gramatický výklad
+⟦chính là⟧: ve tvaru ⟦chính là A⟧ zdůrazňuje, že obsah A je jistý – „právě, přímo, to je právě“.
+⟦Hiếu thảo chính là gốc của đạo đức gia đình.⟧ → Synovská úcta je právě základem rodinné morálky. · ⟦Cốm Vòng chính là một đặc sản tiêu biểu của mùa thu Hà Nội.⟧ → Cốm z Vòng je právě typickou specialitou hanojského podzimu.
+⟦hơn bao giờ hết⟧: „víc než kdykoli jindy“ – zdůrazňuje, že nyní je pro danou věc nejdůležitější okamžik; může stát na začátku, uprostřed i na konci věty.
+⟦Vì vậy, hơn bao giờ hết, hai ngày đầu tiên của năm mới, người Việt đã chọn để tưởng nhớ công ơn sinh thành, dưỡng dục của cha mẹ hai gia đình nội, ngoại.⟧ → Proto si Vietnamci víc než kdy jindy vybrali první dva dny nového roku k uctění památky za to, že je rodiče z otcovy i matčiny strany zplodili a vychovali. · ⟦Đây là thời điểm thuận lợi hơn bao giờ hết để xây dựng cuộc sống mới trên mảnh đất này.⟧ → Teď je víc než kdy jindy příhodná doba k budování nového života na této zemi.
+⟦cùng (nhau)⟧ + (sloveso): ve tvaru ⟦cùng nhau⟧ + sloveso znamená „společně ~“.
+⟦Tới ngày mùng ba là lúc để mọi người cùng nhau tới thăm và chúc Tết thầy cô giáo.⟧ → Třetí den je chvíle, kdy všichni společně navštěvují učitele a přejí jim k Tếtu. · ⟦Chúng tôi đã bàn bạc và nhất trí là ngày mùng 3 Tết sẽ cùng nhau đến thăm thầy cô giáo cũ.⟧ → Domluvili jsme se, že třetí den Tếtu společně navštívíme naše bývalé učitele.
+⟦mang (đem)… tới (đến)…⟧: ve tvaru ⟦mang (đem) A tới (đến) B⟧ znamená „přinést, donést, dopravit A k B“.
+⟦Chị ấy đã giúp tôi mang chiếc máy tính đến cho em trai đang sống ở quê nhà.⟧ → Pomohla mi donést počítač mému mladšímu bratrovi, který žije v rodném kraji. · ⟦Bưu điện luôn mang những bức thư, những gói bưu phẩm và những tin tốt lành tới cho chúng tôi.⟧ → Pošta nám vždy přináší dopisy, balíčky a dobré zprávy.
+=zh_cn
+语法解说
+⟦chính là⟧：以 ⟦chính là A⟧ 的形式，强调A的内容确实无误，意为“正是、就是”。
+⟦Hiếu thảo chính là gốc của đạo đức gia đình.⟧ → 孝顺正是家庭道德的根本。 · ⟦Cốm Vòng chính là một đặc sản tiêu biểu của mùa thu Hà Nội.⟧ → 环村扁米正是河内秋天的代表性特产。
+⟦hơn bao giờ hết⟧：用于强调现在是做某事最重要的时刻，意为“比任何时候都更……”，可用于句首、句中、句末。
+⟦Vì vậy, hơn bao giờ hết, hai ngày đầu tiên của năm mới, người Việt đã chọn để tưởng nhớ công ơn sinh thành, dưỡng dục của cha mẹ hai gia đình nội, ngoại.⟧ → 因此，越南人比任何时候都更看重新年的头两天，用来缅怀父系、母系双方父母的生养之恩。 · ⟦Đây là thời điểm thuận lợi hơn bao giờ hết để xây dựng cuộc sống mới trên mảnh đất này.⟧ → 现在是比以往任何时候都更有利于在这片土地上建设新生活的时机。
+⟦cùng (nhau)⟧ +（动词）：以 ⟦cùng nhau⟧ + 动词 的形式，表示“一起……”。
+⟦Tới ngày mùng ba là lúc để mọi người cùng nhau tới thăm và chúc Tết thầy cô giáo.⟧ → 到了初三，就是大家一起去看望老师、给老师拜年的时候。 · ⟦Chúng tôi đã bàn bạc và nhất trí là ngày mùng 3 Tết sẽ cùng nhau đến thăm thầy cô giáo cũ.⟧ → 我们商量好了，大年初三一起去看望以前的老师。
+⟦mang (đem)… tới (đến)…⟧：以 ⟦mang (đem) A tới (đến) B⟧ 的形式，表示“把A带到／送到B”。
+⟦Chị ấy đã giúp tôi mang chiếc máy tính đến cho em trai đang sống ở quê nhà.⟧ → 她帮我把电脑带给住在老家的弟弟。 · ⟦Bưu điện luôn mang những bức thư, những gói bưu phẩm và những tin tốt lành tới cho chúng tôi.⟧ → 邮局总是给我们送来信件、包裹和好消息。
+=zh
+文法解說
+⟦chính là⟧：以 ⟦chính là A⟧ 的形式，強調A的內容確實無誤，意為「正是、就是」。
+⟦Hiếu thảo chính là gốc của đạo đức gia đình.⟧ → 孝順正是家庭道德的根本。 · ⟦Cốm Vòng chính là một đặc sản tiêu biểu của mùa thu Hà Nội.⟧ → 環村扁米正是河內秋天的代表性特產。
+⟦hơn bao giờ hết⟧：用於強調現在是做某事最重要的時刻，意為「比任何時候都更……」，可用於句首、句中、句尾。
+⟦Vì vậy, hơn bao giờ hết, hai ngày đầu tiên của năm mới, người Việt đã chọn để tưởng nhớ công ơn sinh thành, dưỡng dục của cha mẹ hai gia đình nội, ngoại.⟧ → 因此，越南人比任何時候都更看重新年的頭兩天，用來緬懷父系、母系雙方父母的生養之恩。 · ⟦Đây là thời điểm thuận lợi hơn bao giờ hết để xây dựng cuộc sống mới trên mảnh đất này.⟧ → 現在是比以往任何時候都更有利於在這片土地上建設新生活的時機。
+⟦cùng (nhau)⟧ +（動詞）：以 ⟦cùng nhau⟧ + 動詞 的形式，表示「一起……」。
+⟦Tới ngày mùng ba là lúc để mọi người cùng nhau tới thăm và chúc Tết thầy cô giáo.⟧ → 到了初三，就是大家一起去探望老師、向老師拜年的時候。 · ⟦Chúng tôi đã bàn bạc và nhất trí là ngày mùng 3 Tết sẽ cùng nhau đến thăm thầy cô giáo cũ.⟧ → 我們商量好了，大年初三一起去探望以前的老師。
+⟦mang (đem)… tới (đến)…⟧：以 ⟦mang (đem) A tới (đến) B⟧ 的形式，表示「把A帶到／送到B」。
+⟦Chị ấy đã giúp tôi mang chiếc máy tính đến cho em trai đang sống ở quê nhà.⟧ → 她幫我把電腦帶給住在老家的弟弟。 · ⟦Bưu điện luôn mang những bức thư, những gói bưu phẩm và những tin tốt lành tới cho chúng tôi.⟧ → 郵局總是為我們送來信件、包裹和好消息。
+=en
+Grammar notes
+⟦chính là⟧: in the form ⟦chính là A⟧, emphasizes that A is certainly so – "is precisely, is none other than".
+⟦Hiếu thảo chính là gốc của đạo đức gia đình.⟧ → Filial piety is the very root of family morality. · ⟦Cốm Vòng chính là một đặc sản tiêu biểu của mùa thu Hà Nội.⟧ → Vòng cốm is precisely a typical speciality of Hanoi's autumn.
+⟦hơn bao giờ hết⟧: "more than ever" – emphasizes that now is the most important moment to do something; it can come at the start, in the middle or at the end of a sentence.
+⟦Vì vậy, hơn bao giờ hết, hai ngày đầu tiên của năm mới, người Việt đã chọn để tưởng nhớ công ơn sinh thành, dưỡng dục của cha mẹ hai gia đình nội, ngoại.⟧ → So, more than at any other time, Vietnamese people have chosen the first two days of the new year to honour the parents on both the father's and mother's side for giving them life and raising them. · ⟦Đây là thời điểm thuận lợi hơn bao giờ hết để xây dựng cuộc sống mới trên mảnh đất này.⟧ → Now is the most favourable time ever to build a new life on this land.
+⟦cùng (nhau)⟧ + (verb): in the form ⟦cùng nhau⟧ + verb, means "to ~ together".
+⟦Tới ngày mùng ba là lúc để mọi người cùng nhau tới thăm và chúc Tết thầy cô giáo.⟧ → The third day is when everyone goes together to visit their teachers and wish them a happy Tết. · ⟦Chúng tôi đã bàn bạc và nhất trí là ngày mùng 3 Tết sẽ cùng nhau đến thăm thầy cô giáo cũ.⟧ → We discussed it and agreed to visit our former teachers together on the third day of Tết.
+⟦mang (đem)… tới (đến)…⟧: in the form ⟦mang (đem) A tới (đến) B⟧, means "to bring/take A to B".
+⟦Chị ấy đã giúp tôi mang chiếc máy tính đến cho em trai đang sống ở quê nhà.⟧ → She helped me take the computer to my younger brother who lives back home. · ⟦Bưu điện luôn mang những bức thư, những gói bưu phẩm và những tin tốt lành tới cho chúng tôi.⟧ → The post office always brings us letters, parcels and good news.
+=fr
+Notes de grammaire
+⟦chính là⟧ : sous la forme ⟦chính là A⟧, souligne que A est bien le cas – « c'est précisément, c'est justement ».
+⟦Hiếu thảo chính là gốc của đạo đức gia đình.⟧ → La piété filiale est précisément la racine de la morale familiale. · ⟦Cốm Vòng chính là một đặc sản tiêu biểu của mùa thu Hà Nội.⟧ → Le cốm de Vòng est justement une spécialité typique de l'automne hanoïen.
+⟦hơn bao giờ hết⟧ : « plus que jamais » – souligne que c'est le moment le plus important pour faire quelque chose ; peut se placer en début, au milieu ou en fin de phrase.
+⟦Vì vậy, hơn bao giờ hết, hai ngày đầu tiên của năm mới, người Việt đã chọn để tưởng nhớ công ơn sinh thành, dưỡng dục của cha mẹ hai gia đình nội, ngoại.⟧ → C'est pourquoi, plus que jamais, les Vietnamiens ont choisi les deux premiers jours de l'année pour honorer les parents des deux côtés, paternel et maternel, qui leur ont donné la vie et les ont élevés. · ⟦Đây là thời điểm thuận lợi hơn bao giờ hết để xây dựng cuộc sống mới trên mảnh đất này.⟧ → C'est le moment plus que jamais propice pour bâtir une vie nouvelle sur cette terre.
+⟦cùng (nhau)⟧ + (verbe) : sous la forme ⟦cùng nhau⟧ + verbe, signifie « ~ ensemble ».
+⟦Tới ngày mùng ba là lúc để mọi người cùng nhau tới thăm và chúc Tết thầy cô giáo.⟧ → Le troisième jour, tout le monde va ensemble rendre visite aux enseignants pour leur présenter ses vœux du Têt. · ⟦Chúng tôi đã bàn bạc và nhất trí là ngày mùng 3 Tết sẽ cùng nhau đến thăm thầy cô giáo cũ.⟧ → Nous nous sommes mis d'accord pour aller ensemble voir nos anciens professeurs le troisième jour du Têt.
+⟦mang (đem)… tới (đến)…⟧ : sous la forme ⟦mang (đem) A tới (đến) B⟧, signifie « apporter/emporter A jusqu'à B ».
+⟦Chị ấy đã giúp tôi mang chiếc máy tính đến cho em trai đang sống ở quê nhà.⟧ → Elle m'a aidé à apporter l'ordinateur à mon petit frère qui vit au pays. · ⟦Bưu điện luôn mang những bức thư, những gói bưu phẩm và những tin tốt lành tới cho chúng tôi.⟧ → La poste nous apporte toujours lettres, colis et bonnes nouvelles.
+=de
+Grammatikerläuterungen
+⟦chính là⟧: in der Form ⟦chính là A⟧ betont es, dass A mit Sicherheit zutrifft – „genau, eben, gerade“.
+⟦Hiếu thảo chính là gốc của đạo đức gia đình.⟧ → Kindliche Pietät ist genau die Wurzel der Familienmoral. · ⟦Cốm Vòng chính là một đặc sản tiêu biểu của mùa thu Hà Nội.⟧ → Cốm aus Vòng ist eben eine typische Spezialität des Hanoier Herbstes.
+⟦hơn bao giờ hết⟧: „mehr denn je“ – betont, dass jetzt der wichtigste Zeitpunkt für etwas ist; kann am Anfang, in der Mitte oder am Ende des Satzes stehen.
+⟦Vì vậy, hơn bao giờ hết, hai ngày đầu tiên của năm mới, người Việt đã chọn để tưởng nhớ công ơn sinh thành, dưỡng dục của cha mẹ hai gia đình nội, ngoại.⟧ → Deshalb haben die Vietnamesen mehr denn je die ersten beiden Tage des neuen Jahres gewählt, um der Eltern beider Familien – väterlicher- und mütterlicherseits – für Geburt und Erziehung zu gedenken. · ⟦Đây là thời điểm thuận lợi hơn bao giờ hết để xây dựng cuộc sống mới trên mảnh đất này.⟧ → Dies ist der günstigste Zeitpunkt überhaupt, um auf diesem Land ein neues Leben aufzubauen.
+⟦cùng (nhau)⟧ + (Verb): in der Form ⟦cùng nhau⟧ + Verb bedeutet es „gemeinsam ~“.
+⟦Tới ngày mùng ba là lúc để mọi người cùng nhau tới thăm và chúc Tết thầy cô giáo.⟧ → Der dritte Tag ist die Zeit, an der alle gemeinsam ihre Lehrer besuchen und ihnen zum Tết gratulieren. · ⟦Chúng tôi đã bàn bạc và nhất trí là ngày mùng 3 Tết sẽ cùng nhau đến thăm thầy cô giáo cũ.⟧ → Wir haben vereinbart, am dritten Tết-Tag gemeinsam unsere früheren Lehrer zu besuchen.
+⟦mang (đem)… tới (đến)…⟧: in der Form ⟦mang (đem) A tới (đến) B⟧ bedeutet es „A zu B bringen“.
+⟦Chị ấy đã giúp tôi mang chiếc máy tính đến cho em trai đang sống ở quê nhà.⟧ → Sie hat mir geholfen, den Computer zu meinem jüngeren Bruder in der Heimat zu bringen. · ⟦Bưu điện luôn mang những bức thư, những gói bưu phẩm và những tin tốt lành tới cho chúng tôi.⟧ → Die Post bringt uns immer Briefe, Pakete und gute Nachrichten.
+=hu
+Nyelvtani magyarázat
+⟦chính là⟧: ⟦chính là A⟧ alakban azt hangsúlyozza, hogy A biztosan így van – „éppen, pontosan, nem más, mint”.
+⟦Hiếu thảo chính là gốc của đạo đức gia đình.⟧ → A gyermeki tisztelet éppen a családi erkölcs alapja. · ⟦Cốm Vòng chính là một đặc sản tiêu biểu của mùa thu Hà Nội.⟧ → A vòngi cốm éppen a hanoi ősz jellegzetes különlegessége.
+⟦hơn bao giờ hết⟧: „minden eddiginél jobban” – azt hangsúlyozza, hogy most van a legfontosabb pillanat valaminek a megtételére; a mondat elején, közepén és végén is állhat.
+⟦Vì vậy, hơn bao giờ hết, hai ngày đầu tiên của năm mới, người Việt đã chọn để tưởng nhớ công ơn sinh thành, dưỡng dục của cha mẹ hai gia đình nội, ngoại.⟧ → Ezért a vietnámiak minden másnál inkább az új év első két napját választották arra, hogy megemlékezzenek az apai és anyai ági szülők nemzéséért és felneveléséért járó háláról. · ⟦Đây là thời điểm thuận lợi hơn bao giờ hết để xây dựng cuộc sống mới trên mảnh đất này.⟧ → Most minden eddiginél kedvezőbb az idő arra, hogy új életet építsünk ezen a földön.
+⟦cùng (nhau)⟧ + (ige): ⟦cùng nhau⟧ + ige alakban jelentése „együtt ~”.
+⟦Tới ngày mùng ba là lúc để mọi người cùng nhau tới thăm và chúc Tết thầy cô giáo.⟧ → A harmadik nap az, amikor mindenki együtt látogatja meg a tanárait, és boldog Tếtet kíván nekik. · ⟦Chúng tôi đã bàn bạc và nhất trí là ngày mùng 3 Tết sẽ cùng nhau đến thăm thầy cô giáo cũ.⟧ → Megbeszéltük, hogy Tết harmadik napján együtt meglátogatjuk régi tanárainkat.
+⟦mang (đem)… tới (đến)…⟧: ⟦mang (đem) A tới (đến) B⟧ alakban jelentése „A-t elviszi / elhozza B-hez”.
+⟦Chị ấy đã giúp tôi mang chiếc máy tính đến cho em trai đang sống ở quê nhà.⟧ → Segített elvinni a számítógépet az öcsémnek, aki otthon él. · ⟦Bưu điện luôn mang những bức thư, những gói bưu phẩm và những tin tốt lành tới cho chúng tôi.⟧ → A posta mindig leveleket, csomagokat és jó híreket hoz nekünk.
+=id
+Penjelasan tata bahasa
+⟦chính là⟧: dalam bentuk ⟦chính là A⟧ menegaskan bahwa isi A memang benar – "justru, tepatnya, tak lain adalah".
+⟦Hiếu thảo chính là gốc của đạo đức gia đình.⟧ → Bakti kepada orang tua justru merupakan akar moral keluarga. · ⟦Cốm Vòng chính là một đặc sản tiêu biểu của mùa thu Hà Nội.⟧ → Cốm Vòng tak lain adalah makanan khas musim gugur Hanoi.
+⟦hơn bao giờ hết⟧: "lebih dari kapan pun" – menegaskan bahwa inilah saat terpenting untuk melakukan sesuatu; dapat di awal, tengah, maupun akhir kalimat.
+⟦Vì vậy, hơn bao giờ hết, hai ngày đầu tiên của năm mới, người Việt đã chọn để tưởng nhớ công ơn sinh thành, dưỡng dục của cha mẹ hai gia đình nội, ngoại.⟧ → Karena itu, lebih dari kapan pun, orang Vietnam memilih dua hari pertama tahun baru untuk mengenang jasa orang tua dari pihak ayah dan ibu yang telah melahirkan dan membesarkan. · ⟦Đây là thời điểm thuận lợi hơn bao giờ hết để xây dựng cuộc sống mới trên mảnh đất này.⟧ → Inilah saat yang lebih tepat dari kapan pun untuk membangun kehidupan baru di tanah ini.
+⟦cùng (nhau)⟧ + (verba): dalam bentuk ⟦cùng nhau⟧ + verba berarti "bersama-sama ~".
+⟦Tới ngày mùng ba là lúc để mọi người cùng nhau tới thăm và chúc Tết thầy cô giáo.⟧ → Hari ketiga adalah saat semua orang bersama-sama mengunjungi dan mengucapkan selamat Tết kepada guru. · ⟦Chúng tôi đã bàn bạc và nhất trí là ngày mùng 3 Tết sẽ cùng nhau đến thăm thầy cô giáo cũ.⟧ → Kami sudah berunding dan sepakat bahwa pada hari ketiga Tết akan bersama-sama mengunjungi guru-guru lama.
+⟦mang (đem)… tới (đến)…⟧: dalam bentuk ⟦mang (đem) A tới (đến) B⟧ berarti "membawa A ke B".
+⟦Chị ấy đã giúp tôi mang chiếc máy tính đến cho em trai đang sống ở quê nhà.⟧ → Dia membantu saya membawa komputer kepada adik laki-laki saya yang tinggal di kampung. · ⟦Bưu điện luôn mang những bức thư, những gói bưu phẩm và những tin tốt lành tới cho chúng tôi.⟧ → Kantor pos selalu membawakan surat, paket, dan kabar baik kepada kami.
+=ja
+文法解説
+⟦chính là⟧：⟦chính là A⟧ の形で、Aの内容が確かであることを強調するために使われ、「まさに（すなわち）～だ」という意味です。
+⟦Hiếu thảo chính là gốc của đạo đức gia đình.⟧ → 孝行こそが家庭道徳の根本だ。 · ⟦Cốm Vòng chính là một đặc sản tiêu biểu của mùa thu Hà Nội.⟧ → ヴォン村のコムはまさにハノイの秋を代表する名産だ。
+⟦hơn bao giờ hết⟧：あることを行う・実践するのに最も重要な時点であることを強調するために使われ、「これまでのどんな時よりも」「ほかの日ではなく（今、現時点で）」という意味で、文の前・中・後ろのいずれでも使えます。
+⟦Vì vậy, hơn bao giờ hết, hai ngày đầu tiên của năm mới, người Việt đã chọn để tưởng nhớ công ơn sinh thành, dưỡng dục của cha mẹ hai gia đình nội, ngoại.⟧ → そのためベトナム人は、何よりも新年の最初の二日間を、父方・母方両家の親の生み育てた恩をしのぶ日として選んだ。 · ⟦Đây là thời điểm thuận lợi hơn bao giờ hết để xây dựng cuộc sống mới trên mảnh đất này.⟧ → 今こそ、この土地で新しい暮らしを築くのに、これまでにないほど好都合な時期だ。
+⟦cùng (nhau)⟧ +（動詞）：⟦cùng nhau⟧ + 動詞 の形で「一緒に～する」という意味で使われます。
+⟦Tới ngày mùng ba là lúc để mọi người cùng nhau tới thăm và chúc Tết thầy cô giáo.⟧ → 3日目は、皆で一緒に先生を訪ね、新年のあいさつをする日だ。 · ⟦Chúng tôi đã bàn bạc và nhất trí là ngày mùng 3 Tết sẽ cùng nhau đến thăm thầy cô giáo cũ.⟧ → 私たちは話し合って、テトの3日目に一緒に恩師を訪ねることにした。
+⟦mang (đem)… tới (đến)…⟧：⟦mang (đem) A tới (đến) B⟧ の形で「AをBに運ぶ、持って行く、届ける」などの意味で使われます。
+⟦Chị ấy đã giúp tôi mang chiếc máy tính đến cho em trai đang sống ở quê nhà.⟧ → 彼女は故郷に住む私の弟にパソコンを届けるのを手伝ってくれた。 · ⟦Bưu điện luôn mang những bức thư, những gói bưu phẩm và những tin tốt lành tới cho chúng tôi.⟧ → 郵便局はいつも手紙や小包、そして良い知らせを私たちに届けてくれる。
+=pl
+Objaśnienia gramatyczne
+⟦chính là⟧: w formie ⟦chính là A⟧ podkreśla, że A z pewnością tak jest – „właśnie, to właśnie”.
+⟦Hiếu thảo chính là gốc của đạo đức gia đình.⟧ → Synowska cześć jest właśnie korzeniem moralności rodzinnej. · ⟦Cốm Vòng chính là một đặc sản tiêu biểu của mùa thu Hà Nội.⟧ → Cốm z Vòng to właśnie typowy przysmak hanojskiej jesieni.
+⟦hơn bao giờ hết⟧: „bardziej niż kiedykolwiek” – podkreśla, że teraz jest najważniejszy moment na zrobienie czegoś; może stać na początku, w środku lub na końcu zdania.
+⟦Vì vậy, hơn bao giờ hết, hai ngày đầu tiên của năm mới, người Việt đã chọn để tưởng nhớ công ơn sinh thành, dưỡng dục của cha mẹ hai gia đình nội, ngoại.⟧ → Dlatego Wietnamczycy, bardziej niż kiedykolwiek, wybrali pierwsze dwa dni nowego roku, by uczcić rodziców z obu stron – ojca i matki – za dar życia i wychowanie. · ⟦Đây là thời điểm thuận lợi hơn bao giờ hết để xây dựng cuộc sống mới trên mảnh đất này.⟧ → To najdogodniejszy jak nigdy dotąd moment, by budować nowe życie na tej ziemi.
+⟦cùng (nhau)⟧ + (czasownik): w formie ⟦cùng nhau⟧ + czasownik znaczy „razem ~”.
+⟦Tới ngày mùng ba là lúc để mọi người cùng nhau tới thăm và chúc Tết thầy cô giáo.⟧ → Trzeci dzień to czas, gdy wszyscy razem odwiedzają nauczycieli i składają im życzenia noworoczne. · ⟦Chúng tôi đã bàn bạc và nhất trí là ngày mùng 3 Tết sẽ cùng nhau đến thăm thầy cô giáo cũ.⟧ → Uzgodniliśmy, że trzeciego dnia Tết razem odwiedzimy dawnych nauczycieli.
+⟦mang (đem)… tới (đến)…⟧: w formie ⟦mang (đem) A tới (đến) B⟧ znaczy „zanieść, przynieść A do B”.
+⟦Chị ấy đã giúp tôi mang chiếc máy tính đến cho em trai đang sống ở quê nhà.⟧ → Pomogła mi zanieść komputer młodszemu bratu, który mieszka w rodzinnych stronach. · ⟦Bưu điện luôn mang những bức thư, những gói bưu phẩm và những tin tốt lành tới cho chúng tôi.⟧ → Poczta zawsze przynosi nam listy, paczki i dobre wiadomości.
+@@ pdf-grammar-14ac9e2144d0d8b5#0
+=cs
+Gramatický výklad
+⟦còn gì⟧: „vždyť ~, no ne“ – stojí na konci věty a zdůrazňuje předchozí obsah.
+⟦Hôm nay đã là hai mươi chín Tết rồi còn gì!⟧ → Vždyť je dneska už dvacátého devátého před Tếtem! · ⟦Anh cũng biết điều đó còn gì!⟧ → Vždyť to taky víš! · ⟦Giờ này bọn mình mà đến thì mọi người về hết còn gì!⟧ → Když tam přijdeme teď, všichni už budou pryč, no ne! · ⟦Tôi đã nói với anh về việc chị ấy về quê rồi còn gì!⟧ → Vždyť jsem ti říkal, že odjela domů!
+⟦sao mà⟧ + (přídavné jméno): vyjadřuje údiv mluvčího – „jak jen ~, tak strašně ~“.
+⟦Thảo nào, đường phố ngày Tết có khác, sao mà đông thế!⟧ → No jasně, ulice o Tếtu jsou jiné – je tu tolik lidí! · ⟦Ngày vui sao mà ngắn ngủi thế!⟧ → Jak jsou šťastné dny krátké! · ⟦Tôi cảm thấy anh ấy sao mà dữ dằn thế!⟧ → Připadá mi strašně drsný! · ⟦Cô ấy không phải là ca sĩ sao mà hát hay thế!⟧ → Není zpěvačka, a přitom zpívá tak krásně!
+⟦~ cũng nên⟧: stojí na konci věty a vyjadřuje domněnku mluvčího – „možná, třeba“.
+⟦Thời tiết thế này thì Tết năm nay nắng nóng cũng nên.⟧ → Při takovém počasí bude letos o Tếtu možná slunečno a horko. · ⟦Chị ấy đi chợ cũng nên.⟧ → Možná šla na trh. · ⟦Anh ấy về quê rồi cũng nên.⟧ → Možná už odjel domů. · ⟦Chủ nhật này cô ấy đến thăm tôi cũng nên.⟧ → Možná mě tuto neděli navštíví.
+(sloveso) + ⟦mất⟧: vyjadřuje lítost nad nepříznivou věcí či situací, která může nastat.
+⟦Nếu trời cứ mưa mãi thế này thì các thứ sẽ thiu mất.⟧ → Jestli bude pořád takhle pršet, všechno se zkazí. · ⟦Cứ làm việc nhiều thế này thì ốm mất.⟧ → Když budeš takhle pořád pracovat, onemocníš. · ⟦Cái túi ấy cửa hàng đã bán mất.⟧ → Tu tašku už obchod bohužel prodal. · ⟦Trong cuộc thi này, có thể anh ấy sẽ thua cuộc mất.⟧ → V této soutěži možná bohužel prohraje.
+=zh_cn
+语法解说
+⟦còn gì⟧：意为“……嘛、不是吗”，用于句末，强调前面的内容。
+⟦Hôm nay đã là hai mươi chín Tết rồi còn gì!⟧ → 今天都已经腊月二十九了嘛！ · ⟦Anh cũng biết điều đó còn gì!⟧ → 你也知道这件事嘛！ · ⟦Giờ này bọn mình mà đến thì mọi người về hết còn gì!⟧ → 这个时候我们去，大家早就都走了嘛！ · ⟦Tôi đã nói với anh về việc chị ấy về quê rồi còn gì!⟧ → 我不是跟你说过她回老家了嘛！
+⟦sao mà⟧ +（形容词）：表示说话人的惊讶，意为“怎么那么……、多么……”。
+⟦Thảo nào, đường phố ngày Tết có khác, sao mà đông thế!⟧ → 难怪，春节的街道就是不一样，人怎么这么多！ · ⟦Ngày vui sao mà ngắn ngủi thế!⟧ → 快乐的日子怎么这么短暂！ · ⟦Tôi cảm thấy anh ấy sao mà dữ dằn thế!⟧ → 我觉得他怎么这么凶！ · ⟦Cô ấy không phải là ca sĩ sao mà hát hay thế!⟧ → 她又不是歌手，怎么唱得这么好！
+⟦~ cũng nên⟧：用于句末，意为“也许、说不定”，表示说话人对前面内容的推测。
+⟦Thời tiết thế này thì Tết năm nay nắng nóng cũng nên.⟧ → 天气这样，今年春节说不定会很热。 · ⟦Chị ấy đi chợ cũng nên.⟧ → 她说不定去市场了。 · ⟦Anh ấy về quê rồi cũng nên.⟧ → 他也许已经回老家了。 · ⟦Chủ nhật này cô ấy đến thăm tôi cũng nên.⟧ → 这个星期天她说不定会来看我。
+（动词）+ ⟦mất⟧：用于表达对将来可能发生的不好的事或情况的惋惜。
+⟦Nếu trời cứ mưa mãi thế này thì các thứ sẽ thiu mất.⟧ → 要是一直这样下雨，东西都要馊掉了。 · ⟦Cứ làm việc nhiều thế này thì ốm mất.⟧ → 老这么拼命工作，会累病的。 · ⟦Cái túi ấy cửa hàng đã bán mất.⟧ → 那个包店里已经卖掉了。 · ⟦Trong cuộc thi này, có thể anh ấy sẽ thua cuộc mất.⟧ → 这次比赛，他恐怕要输了。
+=zh
+文法解說
+⟦còn gì⟧：意為「……嘛、不是嗎」，用於句尾，強調前面的內容。
+⟦Hôm nay đã là hai mươi chín Tết rồi còn gì!⟧ → 今天都已經臘月二十九了嘛！ · ⟦Anh cũng biết điều đó còn gì!⟧ → 你也知道這件事嘛！ · ⟦Giờ này bọn mình mà đến thì mọi người về hết còn gì!⟧ → 這個時候我們去，大家早就都走了嘛！ · ⟦Tôi đã nói với anh về việc chị ấy về quê rồi còn gì!⟧ → 我不是跟你說過她回老家了嘛！
+⟦sao mà⟧ +（形容詞）：表示說話者的驚訝，意為「怎麼那麼……、多麼……」。
+⟦Thảo nào, đường phố ngày Tết có khác, sao mà đông thế!⟧ → 難怪，過年的街道就是不一樣，人怎麼這麼多！ · ⟦Ngày vui sao mà ngắn ngủi thế!⟧ → 快樂的日子怎麼這麼短暫！ · ⟦Tôi cảm thấy anh ấy sao mà dữ dằn thế!⟧ → 我覺得他怎麼這麼兇！ · ⟦Cô ấy không phải là ca sĩ sao mà hát hay thế!⟧ → 她又不是歌手，怎麼唱得這麼好！
+⟦~ cũng nên⟧：用於句尾，意為「也許、說不定」，表示說話者對前面內容的推測。
+⟦Thời tiết thế này thì Tết năm nay nắng nóng cũng nên.⟧ → 天氣這樣，今年過年說不定會很熱。 · ⟦Chị ấy đi chợ cũng nên.⟧ → 她說不定去市場了。 · ⟦Anh ấy về quê rồi cũng nên.⟧ → 他也許已經回老家了。 · ⟦Chủ nhật này cô ấy đến thăm tôi cũng nên.⟧ → 這個星期天她說不定會來看我。
+（動詞）+ ⟦mất⟧：用於表達對將來可能發生的不好的事或情況的惋惜。
+⟦Nếu trời cứ mưa mãi thế này thì các thứ sẽ thiu mất.⟧ → 要是一直這樣下雨，東西都要餿掉了。 · ⟦Cứ làm việc nhiều thế này thì ốm mất.⟧ → 老是這麼拚命工作，會累出病的。 · ⟦Cái túi ấy cửa hàng đã bán mất.⟧ → 那個包包店裡已經賣掉了。 · ⟦Trong cuộc thi này, có thể anh ấy sẽ thua cuộc mất.⟧ → 這次比賽，他恐怕要輸了。
+=en
+Grammar notes
+⟦còn gì⟧: "…, you know! / after all!" – placed at the end of a sentence to emphasize what came before.
+⟦Hôm nay đã là hai mươi chín Tết rồi còn gì!⟧ → It's already the 29th, just before Tết, you know! · ⟦Anh cũng biết điều đó còn gì!⟧ → You know that too, after all! · ⟦Giờ này bọn mình mà đến thì mọi người về hết còn gì!⟧ → If we turn up at this hour, everyone will have left, you know! · ⟦Tôi đã nói với anh về việc chị ấy về quê rồi còn gì!⟧ → I told you she'd gone home, didn't I!
+⟦sao mà⟧ + (adjective): expresses the speaker's surprise – "how ~!, so ~!".
+⟦Thảo nào, đường phố ngày Tết có khác, sao mà đông thế!⟧ → No wonder – the streets are different at Tết, so crowded! · ⟦Ngày vui sao mà ngắn ngủi thế!⟧ → How short happy days are! · ⟦Tôi cảm thấy anh ấy sao mà dữ dằn thế!⟧ → He seems so fierce to me! · ⟦Cô ấy không phải là ca sĩ sao mà hát hay thế!⟧ → She's not a singer, yet she sings so beautifully!
+⟦~ cũng nên⟧: placed at the end of a sentence, expresses the speaker's guess – "maybe, perhaps".
+⟦Thời tiết thế này thì Tết năm nay nắng nóng cũng nên.⟧ → With weather like this, maybe Tết will be hot and sunny this year. · ⟦Chị ấy đi chợ cũng nên.⟧ → Maybe she's gone to the market. · ⟦Anh ấy về quê rồi cũng nên.⟧ → Perhaps he's already gone back home. · ⟦Chủ nhật này cô ấy đến thăm tôi cũng nên.⟧ → Maybe she'll come and visit me this Sunday.
+(verb) + ⟦mất⟧: a pattern expressing regret about something bad that might happen.
+⟦Nếu trời cứ mưa mãi thế này thì các thứ sẽ thiu mất.⟧ → If it keeps raining like this, everything will go off. · ⟦Cứ làm việc nhiều thế này thì ốm mất.⟧ → If you keep working this hard, you'll fall ill. · ⟦Cái túi ấy cửa hàng đã bán mất.⟧ → The shop has already sold that bag, unfortunately. · ⟦Trong cuộc thi này, có thể anh ấy sẽ thua cuộc mất.⟧ → He may well lose in this competition, I'm afraid.
+=fr
+Notes de grammaire
+⟦còn gì⟧ : « …, voyons ! / quand même ! » – en fin de phrase, met en relief ce qui précède.
+⟦Hôm nay đã là hai mươi chín Tết rồi còn gì!⟧ → On est déjà le 29, juste avant le Têt, voyons ! · ⟦Anh cũng biết điều đó còn gì!⟧ → Tu le sais bien, toi aussi ! · ⟦Giờ này bọn mình mà đến thì mọi người về hết còn gì!⟧ → Si on arrive à cette heure-ci, tout le monde sera parti, voyons ! · ⟦Tôi đã nói với anh về việc chị ấy về quê rồi còn gì!⟧ → Je t'ai bien dit qu'elle était rentrée au pays !
+⟦sao mà⟧ + (adjectif) : exprime l'étonnement du locuteur – « comme ~ ! qu'est-ce que ~ ! ».
+⟦Thảo nào, đường phố ngày Tết có khác, sao mà đông thế!⟧ → Pas étonnant, les rues pendant le Têt, ce n'est pas pareil : qu'est-ce qu'il y a du monde ! · ⟦Ngày vui sao mà ngắn ngủi thế!⟧ → Comme les jours heureux sont courts ! · ⟦Tôi cảm thấy anh ấy sao mà dữ dằn thế!⟧ → Je le trouve tellement dur ! · ⟦Cô ấy không phải là ca sĩ sao mà hát hay thế!⟧ → Elle n'est pas chanteuse, et pourtant qu'est-ce qu'elle chante bien !
+⟦~ cũng nên⟧ : en fin de phrase, exprime une supposition du locuteur – « peut-être, il se peut que ».
+⟦Thời tiết thế này thì Tết năm nay nắng nóng cũng nên.⟧ → Avec ce temps, le Têt sera peut-être chaud et ensoleillé cette année. · ⟦Chị ấy đi chợ cũng nên.⟧ → Elle est peut-être allée au marché. · ⟦Anh ấy về quê rồi cũng nên.⟧ → Il est peut-être déjà rentré au pays. · ⟦Chủ nhật này cô ấy đến thăm tôi cũng nên.⟧ → Il se peut qu'elle vienne me voir ce dimanche.
+(verbe) + ⟦mất⟧ : tournure exprimant le regret face à une chose ou situation fâcheuse qui risque d'arriver.
+⟦Nếu trời cứ mưa mãi thế này thì các thứ sẽ thiu mất.⟧ → S'il continue à pleuvoir comme ça, tout va se gâter. · ⟦Cứ làm việc nhiều thế này thì ốm mất.⟧ → À travailler autant, tu vas tomber malade. · ⟦Cái túi ấy cửa hàng đã bán mất.⟧ → Le magasin a malheureusement déjà vendu ce sac. · ⟦Trong cuộc thi này, có thể anh ấy sẽ thua cuộc mất.⟧ → Dans ce concours, il risque malheureusement de perdre.
+=de
+Grammatikerläuterungen
+⟦còn gì⟧: „…, doch! / …, ja wohl!“ – steht am Satzende und verstärkt das Vorangehende.
+⟦Hôm nay đã là hai mươi chín Tết rồi còn gì!⟧ → Heute ist doch schon der 29., kurz vor Tết! · ⟦Anh cũng biết điều đó còn gì!⟧ → Das weißt du doch auch! · ⟦Giờ này bọn mình mà đến thì mọi người về hết còn gì!⟧ → Wenn wir jetzt noch hingehen, sind doch alle schon weg! · ⟦Tôi đã nói với anh về việc chị ấy về quê rồi còn gì!⟧ → Ich habe dir doch gesagt, dass sie in die Heimat gefahren ist!
+⟦sao mà⟧ + (Adjektiv): drückt das Erstaunen des Sprechers aus – „wie ~!, so ~!“.
+⟦Thảo nào, đường phố ngày Tết có khác, sao mà đông thế!⟧ → Kein Wunder – die Straßen an Tết sind anders, so voller Menschen! · ⟦Ngày vui sao mà ngắn ngủi thế!⟧ → Wie kurz glückliche Tage sind! · ⟦Tôi cảm thấy anh ấy sao mà dữ dằn thế!⟧ → Er kommt mir so grimmig vor! · ⟦Cô ấy không phải là ca sĩ sao mà hát hay thế!⟧ → Sie ist keine Sängerin und singt doch so schön!
+⟦~ cũng nên⟧: steht am Satzende und drückt eine Vermutung des Sprechers aus – „vielleicht, womöglich“.
+⟦Thời tiết thế này thì Tết năm nay nắng nóng cũng nên.⟧ → Bei diesem Wetter wird Tết dieses Jahr womöglich sonnig und heiß. · ⟦Chị ấy đi chợ cũng nên.⟧ → Vielleicht ist sie auf den Markt gegangen. · ⟦Anh ấy về quê rồi cũng nên.⟧ → Vielleicht ist er schon in die Heimat gefahren. · ⟦Chủ nhật này cô ấy đến thăm tôi cũng nên.⟧ → Vielleicht besucht sie mich diesen Sonntag.
+(Verb) + ⟦mất⟧: Muster, das Bedauern über etwas Ungünstiges ausdrückt, das eintreten könnte.
+⟦Nếu trời cứ mưa mãi thế này thì các thứ sẽ thiu mất.⟧ → Wenn es weiter so regnet, verdirbt alles. · ⟦Cứ làm việc nhiều thế này thì ốm mất.⟧ → Wenn du so viel arbeitest, wirst du noch krank. · ⟦Cái túi ấy cửa hàng đã bán mất.⟧ → Die Tasche hat der Laden leider schon verkauft. · ⟦Trong cuộc thi này, có thể anh ấy sẽ thua cuộc mất.⟧ → In diesem Wettbewerb wird er womöglich leider verlieren.
+=hu
+Nyelvtani magyarázat
+⟦còn gì⟧: „…, hiszen!, …, ugye!” – a mondat végén az előzményt hangsúlyozza.
+⟦Hôm nay đã là hai mươi chín Tết rồi còn gì!⟧ → Hiszen ma már huszonkilencedike van, Tết előtt! · ⟦Anh cũng biết điều đó còn gì!⟧ → Hiszen te is tudod! · ⟦Giờ này bọn mình mà đến thì mọi người về hết còn gì!⟧ → Ha most megyünk, hiszen már mindenki hazament! · ⟦Tôi đã nói với anh về việc chị ấy về quê rồi còn gì!⟧ → Hiszen mondtam, hogy hazautazott!
+⟦sao mà⟧ + (melléknév): a beszélő meglepetését fejezi ki – „de ~!, milyen ~!”.
+⟦Thảo nào, đường phố ngày Tết có khác, sao mà đông thế!⟧ → Nem csoda, Tếtkor mások az utcák – de sokan vannak! · ⟦Ngày vui sao mà ngắn ngủi thế!⟧ → Milyen rövidek a boldog napok! · ⟦Tôi cảm thấy anh ấy sao mà dữ dằn thế!⟧ → De ijesztőnek tűnik nekem! · ⟦Cô ấy không phải là ca sĩ sao mà hát hay thế!⟧ → Nem is énekesnő, mégis milyen szépen énekel!
+⟦~ cũng nên⟧: a mondat végén a beszélő feltételezését fejezi ki – „talán, lehet, hogy”.
+⟦Thời tiết thế này thì Tết năm nay nắng nóng cũng nên.⟧ → Ilyen időben lehet, hogy idén Tếtkor napos és meleg lesz. · ⟦Chị ấy đi chợ cũng nên.⟧ → Talán piacra ment. · ⟦Anh ấy về quê rồi cũng nên.⟧ → Lehet, hogy már hazautazott. · ⟦Chủ nhật này cô ấy đến thăm tôi cũng nên.⟧ → Lehet, hogy ezen a vasárnapon meglátogat.
+(ige) + ⟦mất⟧: olyan szerkezet, amely sajnálatot fejez ki egy esetleg bekövetkező kedvezőtlen dolog miatt.
+⟦Nếu trời cứ mưa mãi thế này thì các thứ sẽ thiu mất.⟧ → Ha így esik tovább, minden megromlik. · ⟦Cứ làm việc nhiều thế này thì ốm mất.⟧ → Ha így dolgozol, még beteg leszel. · ⟦Cái túi ấy cửa hàng đã bán mất.⟧ → Azt a táskát sajnos már eladta a bolt. · ⟦Trong cuộc thi này, có thể anh ấy sẽ thua cuộc mất.⟧ → Ezen a versenyen sajnos lehet, hogy veszíteni fog.
+=id
+Penjelasan tata bahasa
+⟦còn gì⟧: "~ kan!, ~ lho!" – diletakkan di akhir kalimat untuk menegaskan isi sebelumnya.
+⟦Hôm nay đã là hai mươi chín Tết rồi còn gì!⟧ → Hari ini kan sudah tanggal 29 menjelang Tết! · ⟦Anh cũng biết điều đó còn gì!⟧ → Kamu kan juga tahu hal itu! · ⟦Giờ này bọn mình mà đến thì mọi người về hết còn gì!⟧ → Kalau kita datang jam segini, semua orang kan sudah pulang! · ⟦Tôi đã nói với anh về việc chị ấy về quê rồi còn gì!⟧ → Saya kan sudah bilang kepadamu bahwa dia pulang kampung!
+⟦sao mà⟧ + (adjektiva): menyatakan keheranan pembicara – "betapa ~!, kok ~ sekali!".
+⟦Thảo nào, đường phố ngày Tết có khác, sao mà đông thế!⟧ → Pantas saja, jalanan saat Tết memang lain, ramai sekali! · ⟦Ngày vui sao mà ngắn ngủi thế!⟧ → Betapa singkatnya hari-hari bahagia! · ⟦Tôi cảm thấy anh ấy sao mà dữ dằn thế!⟧ → Menurut saya dia kok galak sekali! · ⟦Cô ấy không phải là ca sĩ sao mà hát hay thế!⟧ → Dia bukan penyanyi, kok nyanyinya bagus sekali!
+⟦~ cũng nên⟧: diletakkan di akhir kalimat untuk menyatakan dugaan pembicara – "mungkin, barangkali".
+⟦Thời tiết thế này thì Tết năm nay nắng nóng cũng nên.⟧ → Dengan cuaca seperti ini, barangkali Tết tahun ini akan panas terik. · ⟦Chị ấy đi chợ cũng nên.⟧ → Mungkin dia pergi ke pasar. · ⟦Anh ấy về quê rồi cũng nên.⟧ → Barangkali dia sudah pulang kampung. · ⟦Chủ nhật này cô ấy đến thăm tôi cũng nên.⟧ → Mungkin hari Minggu ini dia datang menjenguk saya.
+(verba) + ⟦mất⟧: pola kalimat untuk menyatakan penyesalan atas hal atau situasi buruk yang mungkin terjadi.
+⟦Nếu trời cứ mưa mãi thế này thì các thứ sẽ thiu mất.⟧ → Kalau hujan terus begini, semuanya bisa basi. · ⟦Cứ làm việc nhiều thế này thì ốm mất.⟧ → Kalau terus bekerja sebanyak ini, bisa-bisa jatuh sakit. · ⟦Cái túi ấy cửa hàng đã bán mất.⟧ → Sayang, tas itu sudah terjual oleh toko. · ⟦Trong cuộc thi này, có thể anh ấy sẽ thua cuộc mất.⟧ → Dalam lomba ini, sayangnya mungkin dia akan kalah.
+=ja
+文法解説
+⟦còn gì⟧：「～じゃない」という意味で文末に使い、前の内容を強調する役割をします。
+⟦Hôm nay đã là hai mươi chín Tết rồi còn gì!⟧ → 今日はもうテト前の29日じゃない！ · ⟦Anh cũng biết điều đó còn gì!⟧ → あなたもそのことは知ってるじゃない！ · ⟦Giờ này bọn mình mà đến thì mọi người về hết còn gì!⟧ → 今ごろ行ったら、みんなもう帰っちゃってるじゃない！ · ⟦Tôi đã nói với anh về việc chị ấy về quê rồi còn gì!⟧ → 彼女が故郷に帰ったことは話したじゃない！
+⟦sao mà⟧ +（形容詞）：話し手の驚きを表し、「なんと～なことか」という意味で使われます。
+⟦Thảo nào, đường phố ngày Tết có khác, sao mà đông thế!⟧ → どうりで、テトの通りはやっぱり違う、なんて人が多いんだろう！ · ⟦Ngày vui sao mà ngắn ngủi thế!⟧ → 楽しい日はなんて短いんだろう！ · ⟦Tôi cảm thấy anh ấy sao mà dữ dằn thế!⟧ → 彼はなんて荒っぽいんだろうと感じる！ · ⟦Cô ấy không phải là ca sĩ sao mà hát hay thế!⟧ → 彼女は歌手でもないのに、なんて歌がうまいんだろう！
+⟦~ cũng nên⟧：文末に使われ、「たぶん」という意味で前の内容についての話し手の推測を表します。
+⟦Thời tiết thế này thì Tết năm nay nắng nóng cũng nên.⟧ → この天気なら、今年のテトは暑いかもしれない。 · ⟦Chị ấy đi chợ cũng nên.⟧ → 彼女は市場に行ったのかもしれない。 · ⟦Anh ấy về quê rồi cũng nên.⟧ → 彼はもう故郷に帰ったのかもしれない。 · ⟦Chủ nhật này cô ấy đến thăm tôi cũng nên.⟧ → 今度の日曜日、彼女が私を訪ねてくるかもしれない。
+（動詞）+ ⟦mất⟧：未来に起こりうる良くないことや状況に対する残念な気持ちを表したいときに使う文型です。
+⟦Nếu trời cứ mưa mãi thế này thì các thứ sẽ thiu mất.⟧ → このまま雨が降り続いたら、いろいろな物が腐ってしまう。 · ⟦Cứ làm việc nhiều thế này thì ốm mất.⟧ → こんなに働いてばかりいたら病気になってしまう。 · ⟦Cái túi ấy cửa hàng đã bán mất.⟧ → あのかばんは店がもう売ってしまった。 · ⟦Trong cuộc thi này, có thể anh ấy sẽ thua cuộc mất.⟧ → この大会で、彼は負けてしまうかもしれない。
+=pl
+Objaśnienia gramatyczne
+⟦còn gì⟧: „…, przecież!, …, no nie!” – stoi na końcu zdania i podkreśla wcześniejszą treść.
+⟦Hôm nay đã là hai mươi chín Tết rồi còn gì!⟧ → Przecież dziś już dwudziesty dziewiąty, tuż przed Tết! · ⟦Anh cũng biết điều đó còn gì!⟧ → Przecież ty też o tym wiesz! · ⟦Giờ này bọn mình mà đến thì mọi người về hết còn gì!⟧ → Jak teraz pójdziemy, to przecież wszyscy już wyjdą! · ⟦Tôi đã nói với anh về việc chị ấy về quê rồi còn gì!⟧ → Przecież mówiłem ci, że wyjechała w rodzinne strony!
+⟦sao mà⟧ + (przymiotnik): wyraża zdziwienie mówiącego – „ale ~!, jakże ~!”.
+⟦Thảo nào, đường phố ngày Tết có khác, sao mà đông thế!⟧ → Nic dziwnego, ulice w czasie Tết są inne – ale tłok! · ⟦Ngày vui sao mà ngắn ngủi thế!⟧ → Jakże krótkie są szczęśliwe dni! · ⟦Tôi cảm thấy anh ấy sao mà dữ dằn thế!⟧ → Wydaje mi się taki groźny! · ⟦Cô ấy không phải là ca sĩ sao mà hát hay thế!⟧ → Nie jest piosenkarką, a jak pięknie śpiewa!
+⟦~ cũng nên⟧: stoi na końcu zdania i wyraża przypuszczenie mówiącego – „może, pewnie”.
+⟦Thời tiết thế này thì Tết năm nay nắng nóng cũng nên.⟧ → Przy takiej pogodzie Tết w tym roku może być upalny. · ⟦Chị ấy đi chợ cũng nên.⟧ → Może poszła na targ. · ⟦Anh ấy về quê rồi cũng nên.⟧ → Może już wyjechał w rodzinne strony. · ⟦Chủ nhật này cô ấy đến thăm tôi cũng nên.⟧ → Może w tę niedzielę mnie odwiedzi.
+(czasownik) + ⟦mất⟧: konstrukcja wyrażająca żal z powodu niekorzystnej rzeczy lub sytuacji, która może nastąpić.
+⟦Nếu trời cứ mưa mãi thế này thì các thứ sẽ thiu mất.⟧ → Jeśli będzie tak ciągle padać, wszystko się zepsuje. · ⟦Cứ làm việc nhiều thế này thì ốm mất.⟧ → Jak będziesz tyle pracować, to się rozchorujesz. · ⟦Cái túi ấy cửa hàng đã bán mất.⟧ → Tę torbę sklep niestety już sprzedał. · ⟦Trong cuộc thi này, có thể anh ấy sẽ thua cuộc mất.⟧ → W tym konkursie może niestety przegrać.

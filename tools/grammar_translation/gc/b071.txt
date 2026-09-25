@@ -1,0 +1,193 @@
+@@ pdf-grammar-af94959701782f77#0
+=cs
+Gramatický výklad
+⟦qua⟧: „prostřednictvím, přes“ – označuje, že věc či činnost, která následuje, je prostředníkem nebo prostředkem dříve zmíněné činnosti.
+⟦Họ thường chỉ nói chuyện và hỏi thăm nhau qua điện thoại.⟧ → Obvykle spolu mluví a ptají se, jak se mají, jen po telefonu. (činnost: mluví spolu a ptají se na zdraví · prostředek: telefon)
+⟦Tôi biết được chuyện ấy qua thông tin trên báo.⟧ → O té věci jsem se dozvěděl z novin. (činnost: dozvědět se o věci · prostředek: novinový článek)
+⟦Thông báo này đã được chuyển qua đường bưu điện.⟧ → Toto oznámení bylo doručeno poštou. (činnost: doručení oznámení · prostředek: pošta)
+⟦Tôi học nói tiếng Việt qua sự chỉ dẫn của các bạn Việt Nam.⟧ → Učím se mluvit vietnamsky s pomocí vietnamských přátel. (činnost: učit se mluvit vietnamsky · prostředek: vedení vietnamských přátel)
+⟦Qua lời kể của chị ấy, tôi biết bố mẹ tôi vẫn khỏe mạnh⟧ → Z jejího vyprávění jsem se dozvěděl, že moji rodiče jsou stále zdraví. (činnost: dozvědět se, že rodiče jsou zdraví · prostředek: její vyprávění)
+=zh_cn
+语法解说
+⟦qua⟧：意为“通过”，表示后面提出的事物或行为是前面所说活动的媒介或手段。
+⟦Họ thường chỉ nói chuyện và hỏi thăm nhau qua điện thoại.⟧ → 他们通常只通过电话聊天、互相问候。（活动：聊天、互相问候 · 手段：通过电话）
+⟦Tôi biết được chuyện ấy qua thông tin trên báo.⟧ → 我是通过报纸上的消息知道那件事的。（活动：得知那件事 · 手段：通过报纸报道）
+⟦Thông báo này đã được chuyển qua đường bưu điện.⟧ → 这份通知是通过邮局寄送的。（活动：通知被送达 · 手段：通过邮政）
+⟦Tôi học nói tiếng Việt qua sự chỉ dẫn của các bạn Việt Nam.⟧ → 我通过越南朋友的指导学说越南语。（活动：学说越南语 · 手段：通过越南朋友的指导）
+⟦Qua lời kể của chị ấy, tôi biết bố mẹ tôi vẫn khỏe mạnh⟧ → 通过她的讲述，我得知父母依然健康。（活动：得知父母依然健康 · 手段：通过她的讲述）
+=zh
+文法解說
+⟦qua⟧：意為「透過、通過」，表示後面提出的事物或行為是前面所說活動的媒介或手段。
+⟦Họ thường chỉ nói chuyện và hỏi thăm nhau qua điện thoại.⟧ → 他們通常只透過電話聊天、互相問候。（活動：聊天、互相問候 · 手段：透過電話）
+⟦Tôi biết được chuyện ấy qua thông tin trên báo.⟧ → 我是透過報紙上的消息知道那件事的。（活動：得知那件事 · 手段：透過報紙報導）
+⟦Thông báo này đã được chuyển qua đường bưu điện.⟧ → 這份通知是透過郵局寄送的。（活動：通知被送達 · 手段：透過郵政）
+⟦Tôi học nói tiếng Việt qua sự chỉ dẫn của các bạn Việt Nam.⟧ → 我透過越南朋友的指導學說越南語。（活動：學說越南語 · 手段：透過越南朋友的指導）
+⟦Qua lời kể của chị ấy, tôi biết bố mẹ tôi vẫn khỏe mạnh⟧ → 透過她的敘述，我得知父母依然健康。（活動：得知父母依然健康 · 手段：透過她的敘述）
+=en
+Grammar notes
+⟦qua⟧: "through, via, by" – indicates that the thing or action that follows is the medium or means of the activity mentioned before.
+⟦Họ thường chỉ nói chuyện và hỏi thăm nhau qua điện thoại.⟧ → They usually only talk and ask after each other by phone. (activity: talking and asking after each other · means: by phone)
+⟦Tôi biết được chuyện ấy qua thông tin trên báo.⟧ → I learned about that through the newspaper. (activity: learning about it · means: through the newspaper report)
+⟦Thông báo này đã được chuyển qua đường bưu điện.⟧ → This notice was delivered by post. (activity: the notice being delivered · means: by post)
+⟦Tôi học nói tiếng Việt qua sự chỉ dẫn của các bạn Việt Nam.⟧ → I learn to speak Vietnamese through the guidance of Vietnamese friends. (activity: learning to speak Vietnamese · means: through Vietnamese friends' guidance)
+⟦Qua lời kể của chị ấy, tôi biết bố mẹ tôi vẫn khỏe mạnh⟧ → From what she told me, I learned that my parents are still in good health. (activity: learning that my parents are well · means: through her account)
+=fr
+Notes de grammaire
+⟦qua⟧ : « par, par l'intermédiaire de, à travers » – indique que la chose ou l'action qui suit est l'intermédiaire ou le moyen de l'activité mentionnée auparavant.
+⟦Họ thường chỉ nói chuyện và hỏi thăm nhau qua điện thoại.⟧ → Ils ne se parlent et ne prennent des nouvelles l'un de l'autre que par téléphone. (activité : se parler, prendre des nouvelles · moyen : par téléphone)
+⟦Tôi biết được chuyện ấy qua thông tin trên báo.⟧ → J'ai appris cette affaire par le journal. (activité : apprendre l'affaire · moyen : par un article de journal)
+⟦Thông báo này đã được chuyển qua đường bưu điện.⟧ → Cet avis a été transmis par la poste. (activité : transmission de l'avis · moyen : par la poste)
+⟦Tôi học nói tiếng Việt qua sự chỉ dẫn của các bạn Việt Nam.⟧ → J'apprends à parler vietnamien grâce aux conseils d'amis vietnamiens. (activité : apprendre à parler vietnamien · moyen : les conseils d'amis vietnamiens)
+⟦Qua lời kể của chị ấy, tôi biết bố mẹ tôi vẫn khỏe mạnh⟧ → Par son récit, j'ai appris que mes parents sont toujours en bonne santé. (activité : apprendre que mes parents vont bien · moyen : par son récit)
+=de
+Grammatikerläuterungen
+⟦qua⟧: „über, durch, per“ – zeigt, dass die folgende Sache oder Handlung Vermittler oder Mittel der zuvor genannten Tätigkeit ist.
+⟦Họ thường chỉ nói chuyện và hỏi thăm nhau qua điện thoại.⟧ → Sie unterhalten sich und fragen nacheinander meist nur per Telefon. (Tätigkeit: sich unterhalten, nacheinander fragen · Mittel: per Telefon)
+⟦Tôi biết được chuyện ấy qua thông tin trên báo.⟧ → Ich habe davon aus der Zeitung erfahren. (Tätigkeit: davon erfahren · Mittel: durch einen Zeitungsartikel)
+⟦Thông báo này đã được chuyển qua đường bưu điện.⟧ → Diese Mitteilung wurde per Post zugestellt. (Tätigkeit: Zustellung der Mitteilung · Mittel: per Post)
+⟦Tôi học nói tiếng Việt qua sự chỉ dẫn của các bạn Việt Nam.⟧ → Ich lerne Vietnamesisch sprechen durch die Anleitung vietnamesischer Freunde. (Tätigkeit: Vietnamesisch sprechen lernen · Mittel: Anleitung vietnamesischer Freunde)
+⟦Qua lời kể của chị ấy, tôi biết bố mẹ tôi vẫn khỏe mạnh⟧ → Durch ihre Erzählung habe ich erfahren, dass meine Eltern noch gesund sind. (Tätigkeit: erfahren, dass die Eltern gesund sind · Mittel: durch ihre Erzählung)
+=hu
+Nyelvtani magyarázat
+⟦qua⟧: „révén, keresztül, útján” – azt jelzi, hogy az ezután következő dolog vagy cselekvés a korábban említett tevékenység közvetítője vagy eszköze.
+⟦Họ thường chỉ nói chuyện và hỏi thăm nhau qua điện thoại.⟧ → Többnyire csak telefonon beszélgetnek és érdeklődnek egymás felől. (tevékenység: beszélgetés, érdeklődés · eszköz: telefonon)
+⟦Tôi biết được chuyện ấy qua thông tin trên báo.⟧ → Az újságból tudtam meg azt az ügyet. (tevékenység: megtudni az ügyet · eszköz: újságcikk révén)
+⟦Thông báo này đã được chuyển qua đường bưu điện.⟧ → Ezt az értesítést postán küldték. (tevékenység: az értesítés továbbítása · eszköz: posta útján)
+⟦Tôi học nói tiếng Việt qua sự chỉ dẫn của các bạn Việt Nam.⟧ → Vietnámi barátaim útmutatásával tanulok vietnámiul beszélni. (tevékenység: vietnámi beszéd tanulása · eszköz: vietnámi barátok útmutatása)
+⟦Qua lời kể của chị ấy, tôi biết bố mẹ tôi vẫn khỏe mạnh⟧ → Az ő elbeszéléséből tudtam meg, hogy a szüleim még mindig egészségesek. (tevékenység: megtudni, hogy a szülők egészségesek · eszköz: az ő elbeszélése)
+=id
+Penjelasan tata bahasa
+⟦qua⟧: "melalui, lewat" – menunjukkan bahwa benda atau kegiatan yang disebut sesudahnya adalah perantara atau sarana dari kegiatan yang disebut sebelumnya.
+⟦Họ thường chỉ nói chuyện và hỏi thăm nhau qua điện thoại.⟧ → Mereka biasanya hanya mengobrol dan saling menanyakan kabar lewat telepon. (kegiatan: mengobrol, menanyakan kabar · sarana: lewat telepon)
+⟦Tôi biết được chuyện ấy qua thông tin trên báo.⟧ → Saya mengetahui hal itu melalui berita di koran. (kegiatan: mengetahui hal itu · sarana: melalui berita koran)
+⟦Thông báo này đã được chuyển qua đường bưu điện.⟧ → Pemberitahuan ini dikirim melalui pos. (kegiatan: pemberitahuan dikirim · sarana: melalui pos)
+⟦Tôi học nói tiếng Việt qua sự chỉ dẫn của các bạn Việt Nam.⟧ → Saya belajar berbicara bahasa Vietnam melalui bimbingan teman-teman Vietnam. (kegiatan: belajar berbicara bahasa Vietnam · sarana: bimbingan teman Vietnam)
+⟦Qua lời kể của chị ấy, tôi biết bố mẹ tôi vẫn khỏe mạnh⟧ → Melalui ceritanya, saya tahu orang tua saya masih sehat. (kegiatan: mengetahui orang tua masih sehat · sarana: melalui ceritanya)
+=ja
+文法解説
+⟦qua⟧：「～を通して」という意味で、後に示す事物や行為が、前に述べた活動の媒体または手段であることを表します。
+⟦Họ thường chỉ nói chuyện và hỏi thăm nhau qua điện thoại.⟧ → 彼らは主に電話を通して話をし、互いの安否を尋ね合う。（活動：話をし安否を尋ね合う · 手段：電話を通して）
+⟦Tôi biết được chuyện ấy qua thông tin trên báo.⟧ → 私は新聞記事を通してそのことを知った。（活動：そのことを知る · 手段：新聞記事を通して）
+⟦Thông báo này đã được chuyển qua đường bưu điện.⟧ → この通知は郵便で届けられた。（活動：通知が届けられる · 手段：郵便を通して）
+⟦Tôi học nói tiếng Việt qua sự chỉ dẫn của các bạn Việt Nam.⟧ → 私はベトナム人の友達の指導を通してベトナム語会話を学んでいる。（活動：ベトナム語会話を学ぶ · 手段：ベトナム人の友達の指導を通して）
+⟦Qua lời kể của chị ấy, tôi biết bố mẹ tôi vẫn khỏe mạnh⟧ → 彼女の話を通して、私は両親が相変わらず元気だと知った。（活動：両親が元気だと知る · 手段：彼女の話を通して）
+=pl
+Objaśnienia gramatyczne
+⟦qua⟧: „przez, za pośrednictwem” – wskazuje, że rzecz lub czynność, która następuje, jest pośrednikiem lub środkiem wcześniej wspomnianej czynności.
+⟦Họ thường chỉ nói chuyện và hỏi thăm nhau qua điện thoại.⟧ → Zazwyczaj rozmawiają i pytają się nawzajem o zdrowie tylko przez telefon. (czynność: rozmowa, pytanie o zdrowie · środek: przez telefon)
+⟦Tôi biết được chuyện ấy qua thông tin trên báo.⟧ → Dowiedziałem się o tym z gazety. (czynność: dowiedzieć się o sprawie · środek: artykuł w gazecie)
+⟦Thông báo này đã được chuyển qua đường bưu điện.⟧ → To zawiadomienie zostało dostarczone pocztą. (czynność: dostarczenie zawiadomienia · środek: poczta)
+⟦Tôi học nói tiếng Việt qua sự chỉ dẫn của các bạn Việt Nam.⟧ → Uczę się mówić po wietnamsku dzięki wskazówkom wietnamskich przyjaciół. (czynność: nauka mówienia po wietnamsku · środek: wskazówki wietnamskich przyjaciół)
+⟦Qua lời kể của chị ấy, tôi biết bố mẹ tôi vẫn khỏe mạnh⟧ → Z jej opowieści dowiedziałem się, że moi rodzice wciąż są zdrowi. (czynność: dowiedzieć się, że rodzice są zdrowi · środek: jej opowieść)
+@@ pdf-grammar-ef6f0fccea760112#0
+=cs
+Gramatický výklad
+Sloveso + ⟦được⟧ / ⟦thấy⟧ / ⟦ra⟧: zdůrazňuje výsledek činnosti vyjádřené slovesem nebo potvrzuje jeho jistotu.
+⟦Sinh viên thi được điểm tốt.⟧ → Student dostal u zkoušky dobrou známku. · ⟦Họ đã tìm được lớp học rồi.⟧ → Už našli učebnu. · ⟦Lee đã gọi được chiếc taxi.⟧ → Lee se podařilo zavolat taxi. · ⟦Lee nhìn thấy Lan ra mở cửa.⟧ → Lee viděl, jak Lan jde otevřít dveře. · ⟦Tôi vừa nghe thấy tiếng chị ấy nói trong phòng.⟧ → Právě jsem slyšel, jak v pokoji mluví. · ⟦Tôi đã tìm thấy cái bút.⟧ → Našel jsem pero. · ⟦Lee nhớ ra là mình đã hẹn gặp Lan.⟧ → Lee si vzpomněl, že má domluvenou schůzku s Lan. · ⟦Tôi không nhận ra chị ấy là người học cùng trường.⟧ → Nepoznal jsem, že chodí do stejné školy. · ⟦Chị ấy tìm ra chiếc điện thoại rồi.⟧ → Našla telefon.
+Sloveso + ⟦tận⟧: vyjadřuje, že činnost vyjádřená slovesem dosahuje až ke své krajní hranici („až do, až k“).
+=zh_cn
+语法解说
+动词 + ⟦được⟧ / ⟦thấy⟧ / ⟦ra⟧：用来强调动词所表示活动的结果，或肯定其确定性。
+⟦Sinh viên thi được điểm tốt.⟧ → 大学生考试取得了好成绩。 · ⟦Họ đã tìm được lớp học rồi.⟧ → 他们已经找到教室了。 · ⟦Lee đã gọi được chiếc taxi.⟧ → 李叫到了出租车。 · ⟦Lee nhìn thấy Lan ra mở cửa.⟧ → 李看见阿兰出来开门。 · ⟦Tôi vừa nghe thấy tiếng chị ấy nói trong phòng.⟧ → 我刚听见她在房间里说话的声音。 · ⟦Tôi đã tìm thấy cái bút.⟧ → 我找到笔了。 · ⟦Lee nhớ ra là mình đã hẹn gặp Lan.⟧ → 李想起自己和阿兰约好了见面。 · ⟦Tôi không nhận ra chị ấy là người học cùng trường.⟧ → 我没认出她是同校的同学。 · ⟦Chị ấy tìm ra chiếc điện thoại rồi.⟧ → 她找到手机了。
+动词 + ⟦tận⟧：用来表示动词所表示的活动所能达到的最终界限（“一直到……”）。
+=zh
+文法解說
+動詞 + ⟦được⟧ / ⟦thấy⟧ / ⟦ra⟧：用來強調動詞所表示活動的結果，或肯定其確定性。
+⟦Sinh viên thi được điểm tốt.⟧ → 大學生考試取得了好成績。 · ⟦Họ đã tìm được lớp học rồi.⟧ → 他們已經找到教室了。 · ⟦Lee đã gọi được chiếc taxi.⟧ → 李叫到了計程車。 · ⟦Lee nhìn thấy Lan ra mở cửa.⟧ → 李看見阿蘭出來開門。 · ⟦Tôi vừa nghe thấy tiếng chị ấy nói trong phòng.⟧ → 我剛聽見她在房間裡說話的聲音。 · ⟦Tôi đã tìm thấy cái bút.⟧ → 我找到筆了。 · ⟦Lee nhớ ra là mình đã hẹn gặp Lan.⟧ → 李想起自己和阿蘭約好了見面。 · ⟦Tôi không nhận ra chị ấy là người học cùng trường.⟧ → 我沒認出她是同校的同學。 · ⟦Chị ấy tìm ra chiếc điện thoại rồi.⟧ → 她找到手機了。
+動詞 + ⟦tận⟧：用來表示動詞所表示的活動所能達到的最終界限（「一直到……」）。
+=en
+Grammar notes
+Verb + ⟦được⟧ / ⟦thấy⟧ / ⟦ra⟧: emphasizes the result of the action expressed by the verb, or asserts that it is certain.
+⟦Sinh viên thi được điểm tốt.⟧ → The student got a good mark in the exam. · ⟦Họ đã tìm được lớp học rồi.⟧ → They have found the classroom. · ⟦Lee đã gọi được chiếc taxi.⟧ → Lee managed to get a taxi. · ⟦Lee nhìn thấy Lan ra mở cửa.⟧ → Lee saw Lan come to open the door. · ⟦Tôi vừa nghe thấy tiếng chị ấy nói trong phòng.⟧ → I just heard her voice talking in the room. · ⟦Tôi đã tìm thấy cái bút.⟧ → I found the pen. · ⟦Lee nhớ ra là mình đã hẹn gặp Lan.⟧ → Lee remembered that he had arranged to meet Lan. · ⟦Tôi không nhận ra chị ấy là người học cùng trường.⟧ → I didn't recognize that she goes to the same school. · ⟦Chị ấy tìm ra chiếc điện thoại rồi.⟧ → She has found the phone.
+Verb + ⟦tận⟧: shows that the action expressed by the verb reaches its furthest possible limit ("all the way to").
+=fr
+Notes de grammaire
+Verbe + ⟦được⟧ / ⟦thấy⟧ / ⟦ra⟧ : met en relief le résultat de l'action exprimée par le verbe ou en affirme la certitude.
+⟦Sinh viên thi được điểm tốt.⟧ → L'étudiant a obtenu une bonne note à l'examen. · ⟦Họ đã tìm được lớp học rồi.⟧ → Ils ont trouvé la salle de classe. · ⟦Lee đã gọi được chiếc taxi.⟧ → Lee a réussi à appeler un taxi. · ⟦Lee nhìn thấy Lan ra mở cửa.⟧ → Lee a vu Lan venir ouvrir la porte. · ⟦Tôi vừa nghe thấy tiếng chị ấy nói trong phòng.⟧ → Je viens d'entendre sa voix dans la pièce. · ⟦Tôi đã tìm thấy cái bút.⟧ → J'ai trouvé le stylo. · ⟦Lee nhớ ra là mình đã hẹn gặp Lan.⟧ → Lee s'est souvenu qu'il avait rendez-vous avec Lan. · ⟦Tôi không nhận ra chị ấy là người học cùng trường.⟧ → Je n'ai pas reconnu qu'elle étudiait dans la même école. · ⟦Chị ấy tìm ra chiếc điện thoại rồi.⟧ → Elle a retrouvé le téléphone.
+Verbe + ⟦tận⟧ : indique que l'action exprimée par le verbe atteint sa limite ultime (« jusqu'à »).
+=de
+Grammatikerläuterungen
+Verb + ⟦được⟧ / ⟦thấy⟧ / ⟦ra⟧: betont das Ergebnis der vom Verb ausgedrückten Handlung oder bekräftigt dessen Gewissheit.
+⟦Sinh viên thi được điểm tốt.⟧ → Der Student hat in der Prüfung eine gute Note bekommen. · ⟦Họ đã tìm được lớp học rồi.⟧ → Sie haben das Klassenzimmer gefunden. · ⟦Lee đã gọi được chiếc taxi.⟧ → Lee hat ein Taxi bekommen. · ⟦Lee nhìn thấy Lan ra mở cửa.⟧ → Lee sah Lan die Tür öffnen kommen. · ⟦Tôi vừa nghe thấy tiếng chị ấy nói trong phòng.⟧ → Ich habe gerade ihre Stimme im Zimmer gehört. · ⟦Tôi đã tìm thấy cái bút.⟧ → Ich habe den Stift gefunden. · ⟦Lee nhớ ra là mình đã hẹn gặp Lan.⟧ → Lee fiel ein, dass er mit Lan verabredet war. · ⟦Tôi không nhận ra chị ấy là người học cùng trường.⟧ → Ich habe nicht erkannt, dass sie an derselben Schule lernt. · ⟦Chị ấy tìm ra chiếc điện thoại rồi.⟧ → Sie hat das Telefon gefunden.
+Verb + ⟦tận⟧: zeigt, dass die vom Verb ausgedrückte Handlung bis an ihre äußerste Grenze reicht („bis ganz zu“).
+=hu
+Nyelvtani magyarázat
+Ige + ⟦được⟧ / ⟦thấy⟧ / ⟦ra⟧: az ige által kifejezett cselekvés eredményét hangsúlyozza, vagy annak biztos voltát állítja.
+⟦Sinh viên thi được điểm tốt.⟧ → A diák jó jegyet kapott a vizsgán. · ⟦Họ đã tìm được lớp học rồi.⟧ → Megtalálták a tantermet. · ⟦Lee đã gọi được chiếc taxi.⟧ → Lee-nek sikerült taxit hívnia. · ⟦Lee nhìn thấy Lan ra mở cửa.⟧ → Lee látta, hogy Lan kijön ajtót nyitni. · ⟦Tôi vừa nghe thấy tiếng chị ấy nói trong phòng.⟧ → Épp hallottam a hangját a szobában. · ⟦Tôi đã tìm thấy cái bút.⟧ → Megtaláltam a tollat. · ⟦Lee nhớ ra là mình đã hẹn gặp Lan.⟧ → Lee-nek eszébe jutott, hogy megbeszélte, hogy találkozik Lannal. · ⟦Tôi không nhận ra chị ấy là người học cùng trường.⟧ → Nem ismertem fel, hogy ugyanabba az iskolába jár. · ⟦Chị ấy tìm ra chiếc điện thoại rồi.⟧ → Megtalálta a telefont.
+Ige + ⟦tận⟧: azt jelzi, hogy az ige által kifejezett cselekvés eléri a legvégső határát („egészen ~ig”).
+=id
+Penjelasan tata bahasa
+Verba + ⟦được⟧ / ⟦thấy⟧ / ⟦ra⟧: menekankan hasil dari kegiatan yang dinyatakan verba, atau menegaskan kepastiannya.
+⟦Sinh viên thi được điểm tốt.⟧ → Mahasiswa itu mendapat nilai bagus dalam ujian. · ⟦Họ đã tìm được lớp học rồi.⟧ → Mereka sudah menemukan ruang kelas. · ⟦Lee đã gọi được chiếc taxi.⟧ → Lee berhasil memanggil taksi. · ⟦Lee nhìn thấy Lan ra mở cửa.⟧ → Lee melihat Lan keluar membuka pintu. · ⟦Tôi vừa nghe thấy tiếng chị ấy nói trong phòng.⟧ → Saya baru saja mendengar suaranya berbicara di kamar. · ⟦Tôi đã tìm thấy cái bút.⟧ → Saya sudah menemukan pulpen. · ⟦Lee nhớ ra là mình đã hẹn gặp Lan.⟧ → Lee teringat bahwa dia sudah berjanji bertemu Lan. · ⟦Tôi không nhận ra chị ấy là người học cùng trường.⟧ → Saya tidak menyadari bahwa dia satu sekolah dengan saya. · ⟦Chị ấy tìm ra chiếc điện thoại rồi.⟧ → Dia sudah menemukan teleponnya.
+Verba + ⟦tận⟧: menunjukkan bahwa kegiatan yang dinyatakan verba mencapai batas terakhirnya ("sampai ke").
+=ja
+文法解説
+動詞 + ⟦được⟧ / ⟦thấy⟧ / ⟦ra⟧：動詞が表す活動の結果を強調したり、その確実性を主張したりするために使います。
+⟦Sinh viên thi được điểm tốt.⟧ → 大学生は試験で良い成績を収めた。 · ⟦Họ đã tìm được lớp học rồi.⟧ → 彼らは教室を見つけ出した。 · ⟦Lee đã gọi được chiếc taxi.⟧ → リーはタクシーをつかまえた。 · ⟦Lee nhìn thấy Lan ra mở cửa.⟧ → リーはランがドアを開けに出てくるのを見た。 · ⟦Tôi vừa nghe thấy tiếng chị ấy nói trong phòng.⟧ → 私は部屋で彼女が話す声を聞いた。 · ⟦Tôi đã tìm thấy cái bút.⟧ → 私はペンを見つけた。 · ⟦Lee nhớ ra là mình đã hẹn gặp Lan.⟧ → リーはランと会う約束をしていたことを思い出した。 · ⟦Tôi không nhận ra chị ấy là người học cùng trường.⟧ → 私は彼女が同じ学校で学んでいる人だと気づかなかった。 · ⟦Chị ấy tìm ra chiếc điện thoại rồi.⟧ → 彼女は電話を見つけ出した。
+動詞 + ⟦tận⟧：動詞が表す活動が到達しうる最後の限界であることを表すために使います（「～まで」）。
+=pl
+Objaśnienia gramatyczne
+Czasownik + ⟦được⟧ / ⟦thấy⟧ / ⟦ra⟧: podkreśla rezultat czynności wyrażonej czasownikiem lub potwierdza jego pewność.
+⟦Sinh viên thi được điểm tốt.⟧ → Student dostał na egzaminie dobrą ocenę. · ⟦Họ đã tìm được lớp học rồi.⟧ → Znaleźli już salę. · ⟦Lee đã gọi được chiếc taxi.⟧ → Lee udało się złapać taksówkę. · ⟦Lee nhìn thấy Lan ra mở cửa.⟧ → Lee zobaczył, jak Lan wychodzi otworzyć drzwi. · ⟦Tôi vừa nghe thấy tiếng chị ấy nói trong phòng.⟧ → Właśnie usłyszałem jej głos w pokoju. · ⟦Tôi đã tìm thấy cái bút.⟧ → Znalazłem długopis. · ⟦Lee nhớ ra là mình đã hẹn gặp Lan.⟧ → Lee przypomniał sobie, że umówił się z Lan. · ⟦Tôi không nhận ra chị ấy là người học cùng trường.⟧ → Nie zorientowałem się, że chodzi do tej samej szkoły. · ⟦Chị ấy tìm ra chiếc điện thoại rồi.⟧ → Znalazła telefon.
+Czasownik + ⟦tận⟧: wskazuje, że czynność wyrażona czasownikiem sięga swojej ostatecznej granicy („aż do”).
+@@ pdf-grammar-65e309d236ec1661#0
+=cs
+Gramatický výklad
+⟦gọi là⟧: vyjadřuje, že věc či stav sice existuje, ale jen v malém, nepatrném množství („jen tak symbolicky, trošku“).
+⟦Làm gì mà nhiều, chỉ có chút quà gọi là thăm cậu thôi!⟧ → Ale co, to není moc, jen taková drobnost, když jsem tě přišel navštívit! · ⟦Chúng tôi chỉ mua chút hoa quả gọi là.⟧ → Koupili jsme jen trošku ovoce. · ⟦Anh ấy đã ngủ một chút gọi là.⟧ → Jen si na chvilku zdřímnul. · ⟦Tôi cũng ăn một chút gọi là.⟧ → Taky jsem jen trošku pojedl. · ⟦Tôi chỉ dành dụm được một ít tiền gọi là.⟧ → Našetřil jsem si jen úplně malou částku. · ⟦Tôi cũng xem qua một chút gọi là.⟧ → Taky jsem se na to jen zběžně podíval.
+⟦càng ngày càng⟧: „čím dál, den ode dne“ – vyjadřuje, že míra činnosti, stavu či vlastnosti s časem postupně roste.
+⟦Trời càng ngày càng lạnh hơn.⟧ → Je čím dál chladněji. · ⟦Mưa càng ngày càng to hơn.⟧ → Prší čím dál víc. · ⟦Thời gian càng ngày càng ít đi.⟧ → Času je čím dál méně. · ⟦Nạn ô nhiễm môi trường càng ngày càng trầm trọng.⟧ → Znečištění životního prostředí je den ode dne vážnější. · ⟦Nguồn nước càng ngày càng bị ô nhiễm.⟧ → Vodní zdroje jsou čím dál znečištěnější.
+=zh_cn
+语法解说
+⟦gọi là⟧：表示事物或状态虽然存在，但数量很少、微不足道（“一点点、意思意思”）。
+⟦Làm gì mà nhiều, chỉ có chút quà gọi là thăm cậu thôi!⟧ → 哪里多了，只是来看你带的一点小礼物而已！ · ⟦Chúng tôi chỉ mua chút hoa quả gọi là.⟧ → 我们只买了一点点水果。 · ⟦Anh ấy đã ngủ một chút gọi là.⟧ → 他只睡了一小会儿。 · ⟦Tôi cũng ăn một chút gọi là.⟧ → 我也只吃了一点点。 · ⟦Tôi chỉ dành dụm được một ít tiền gọi là.⟧ → 我只攒了很少一点钱。 · ⟦Tôi cũng xem qua một chút gọi là.⟧ → 我也只是大致看了一下。
+⟦càng ngày càng⟧：意为“越来越、日益”，表示行为、状态及性质的程度随时间推移逐渐提高。
+⟦Trời càng ngày càng lạnh hơn.⟧ → 天气越来越冷。 · ⟦Mưa càng ngày càng to hơn.⟧ → 雨越下越大。 · ⟦Thời gian càng ngày càng ít đi.⟧ → 时间越来越少。 · ⟦Nạn ô nhiễm môi trường càng ngày càng trầm trọng.⟧ → 环境污染问题日益严重。 · ⟦Nguồn nước càng ngày càng bị ô nhiễm.⟧ → 水源越来越受到污染。
+=zh
+文法解說
+⟦gọi là⟧：表示事物或狀態雖然存在，但數量很少、微不足道（「一點點、意思意思」）。
+⟦Làm gì mà nhiều, chỉ có chút quà gọi là thăm cậu thôi!⟧ → 哪裡多了，只是來看你帶的一點小禮物而已！ · ⟦Chúng tôi chỉ mua chút hoa quả gọi là.⟧ → 我們只買了一點點水果。 · ⟦Anh ấy đã ngủ một chút gọi là.⟧ → 他只睡了一下子。 · ⟦Tôi cũng ăn một chút gọi là.⟧ → 我也只吃了一點點。 · ⟦Tôi chỉ dành dụm được một ít tiền gọi là.⟧ → 我只存了很少一點錢。 · ⟦Tôi cũng xem qua một chút gọi là.⟧ → 我也只是大致看了一下。
+⟦càng ngày càng⟧：意為「越來越、日益」，表示行為、狀態及性質的程度隨時間推移逐漸提高。
+⟦Trời càng ngày càng lạnh hơn.⟧ → 天氣越來越冷。 · ⟦Mưa càng ngày càng to hơn.⟧ → 雨越下越大。 · ⟦Thời gian càng ngày càng ít đi.⟧ → 時間越來越少。 · ⟦Nạn ô nhiễm môi trường càng ngày càng trầm trọng.⟧ → 環境汙染問題日益嚴重。 · ⟦Nguồn nước càng ngày càng bị ô nhiễm.⟧ → 水源越來越受到汙染。
+=en
+Grammar notes
+⟦gọi là⟧: shows that a thing or state exists, but only in a small, insignificant amount ("just a little, just a token").
+⟦Làm gì mà nhiều, chỉ có chút quà gọi là thăm cậu thôi!⟧ → It's nothing much – just a little gift since I came to see you! · ⟦Chúng tôi chỉ mua chút hoa quả gọi là.⟧ → We only bought a little bit of fruit. · ⟦Anh ấy đã ngủ một chút gọi là.⟧ → He only slept for a little while. · ⟦Tôi cũng ăn một chút gọi là.⟧ → I only ate a tiny bit too. · ⟦Tôi chỉ dành dụm được một ít tiền gọi là.⟧ → I've only managed to save a very small amount of money. · ⟦Tôi cũng xem qua một chút gọi là.⟧ → I only had a quick look at it too.
+⟦càng ngày càng⟧: "more and more, day by day" – shows that the degree of an action, state or quality gradually increases over time.
+⟦Trời càng ngày càng lạnh hơn.⟧ → It's getting colder and colder. · ⟦Mưa càng ngày càng to hơn.⟧ → The rain is getting heavier and heavier. · ⟦Thời gian càng ngày càng ít đi.⟧ → There's less and less time. · ⟦Nạn ô nhiễm môi trường càng ngày càng trầm trọng.⟧ → Environmental pollution is getting more serious by the day. · ⟦Nguồn nước càng ngày càng bị ô nhiễm.⟧ → Water sources are becoming more and more polluted.
+=fr
+Notes de grammaire
+⟦gọi là⟧ : indique qu'une chose ou un état existe, mais en quantité infime, insignifiante (« juste un peu, symboliquement »).
+⟦Làm gì mà nhiều, chỉ có chút quà gọi là thăm cậu thôi!⟧ → Mais non, ce n'est pas grand-chose, juste un petit cadeau pour te rendre visite ! · ⟦Chúng tôi chỉ mua chút hoa quả gọi là.⟧ → Nous n'avons acheté qu'un tout petit peu de fruits. · ⟦Anh ấy đã ngủ một chút gọi là.⟧ → Il n'a dormi qu'un tout petit moment. · ⟦Tôi cũng ăn một chút gọi là.⟧ → Moi aussi, je n'ai mangé qu'un tout petit peu. · ⟦Tôi chỉ dành dụm được một ít tiền gọi là.⟧ → Je n'ai réussi à mettre de côté qu'une toute petite somme. · ⟦Tôi cũng xem qua một chút gọi là.⟧ → Moi aussi, j'y ai juste jeté un coup d'œil.
+⟦càng ngày càng⟧ : « de plus en plus, de jour en jour » – indique que le degré d'une action, d'un état ou d'une qualité augmente progressivement avec le temps.
+⟦Trời càng ngày càng lạnh hơn.⟧ → Il fait de plus en plus froid. · ⟦Mưa càng ngày càng to hơn.⟧ → La pluie est de plus en plus forte. · ⟦Thời gian càng ngày càng ít đi.⟧ → Il reste de moins en moins de temps. · ⟦Nạn ô nhiễm môi trường càng ngày càng trầm trọng.⟧ → La pollution de l'environnement s'aggrave de jour en jour. · ⟦Nguồn nước càng ngày càng bị ô nhiễm.⟧ → Les sources d'eau sont de plus en plus polluées.
+=de
+Grammatikerläuterungen
+⟦gọi là⟧: zeigt, dass eine Sache oder ein Zustand zwar existiert, aber nur in kleiner, unbedeutender Menge („nur ein bisschen, nur symbolisch“).
+⟦Làm gì mà nhiều, chỉ có chút quà gọi là thăm cậu thôi!⟧ → Ach was, das ist nicht viel, nur ein kleines Geschenk zum Besuch! · ⟦Chúng tôi chỉ mua chút hoa quả gọi là.⟧ → Wir haben nur ein bisschen Obst gekauft. · ⟦Anh ấy đã ngủ một chút gọi là.⟧ → Er hat nur ganz kurz geschlafen. · ⟦Tôi cũng ăn một chút gọi là.⟧ → Ich habe auch nur ein kleines bisschen gegessen. · ⟦Tôi chỉ dành dụm được một ít tiền gọi là.⟧ → Ich habe nur ganz wenig Geld gespart. · ⟦Tôi cũng xem qua một chút gọi là.⟧ → Ich habe es mir auch nur kurz angesehen.
+⟦càng ngày càng⟧: „immer mehr, von Tag zu Tag“ – zeigt, dass der Grad einer Handlung, eines Zustands oder einer Eigenschaft mit der Zeit allmählich zunimmt.
+⟦Trời càng ngày càng lạnh hơn.⟧ → Es wird immer kälter. · ⟦Mưa càng ngày càng to hơn.⟧ → Der Regen wird immer stärker. · ⟦Thời gian càng ngày càng ít đi.⟧ → Die Zeit wird immer knapper. · ⟦Nạn ô nhiễm môi trường càng ngày càng trầm trọng.⟧ → Die Umweltverschmutzung wird von Tag zu Tag gravierender. · ⟦Nguồn nước càng ngày càng bị ô nhiễm.⟧ → Die Wasserquellen werden immer stärker verschmutzt.
+=hu
+Nyelvtani magyarázat
+⟦gọi là⟧: azt jelzi, hogy egy dolog vagy állapot létezik ugyan, de csak csekély, jelentéktelen mértékben („csak egy kicsit, jelképesen”).
+⟦Làm gì mà nhiều, chỉ có chút quà gọi là thăm cậu thôi!⟧ → Ugyan, nem sok, csak egy apró ajándék, ha már meglátogattalak! · ⟦Chúng tôi chỉ mua chút hoa quả gọi là.⟧ → Csak egy kevés gyümölcsöt vettünk. · ⟦Anh ấy đã ngủ một chút gọi là.⟧ → Csak egy kicsit aludt. · ⟦Tôi cũng ăn một chút gọi là.⟧ → Én is csak egy keveset ettem. · ⟦Tôi chỉ dành dụm được một ít tiền gọi là.⟧ → Csak nagyon kevés pénzt tudtam félretenni. · ⟦Tôi cũng xem qua một chút gọi là.⟧ → Én is csak futólag néztem át.
+⟦càng ngày càng⟧: „egyre inkább, napról napra” – azt jelzi, hogy egy cselekvés, állapot vagy tulajdonság mértéke az idő múlásával fokozatosan nő.
+⟦Trời càng ngày càng lạnh hơn.⟧ → Egyre hidegebb van. · ⟦Mưa càng ngày càng to hơn.⟧ → Egyre jobban esik. · ⟦Thời gian càng ngày càng ít đi.⟧ → Egyre kevesebb az idő. · ⟦Nạn ô nhiễm môi trường càng ngày càng trầm trọng.⟧ → A környezetszennyezés napról napra súlyosabb. · ⟦Nguồn nước càng ngày càng bị ô nhiễm.⟧ → A vízforrások egyre szennyezettebbek.
+=id
+Penjelasan tata bahasa
+⟦gọi là⟧: menunjukkan bahwa suatu benda atau keadaan memang ada, tetapi hanya sedikit dan tidak berarti ("sekadarnya, ala kadarnya").
+⟦Làm gì mà nhiều, chỉ có chút quà gọi là thăm cậu thôi!⟧ → Banyak apanya, cuma sedikit oleh-oleh sekadar menjengukmu! · ⟦Chúng tôi chỉ mua chút hoa quả gọi là.⟧ → Kami hanya membeli sedikit buah ala kadarnya. · ⟦Anh ấy đã ngủ một chút gọi là.⟧ → Dia hanya tidur sebentar. · ⟦Tôi cũng ăn một chút gọi là.⟧ → Saya juga hanya makan sedikit. · ⟦Tôi chỉ dành dụm được một ít tiền gọi là.⟧ → Saya hanya bisa menabung sedikit sekali uang. · ⟦Tôi cũng xem qua một chút gọi là.⟧ → Saya juga hanya melihat-lihat sebentar.
+⟦càng ngày càng⟧: "makin lama makin, makin hari makin" – menunjukkan bahwa tingkat kegiatan, keadaan, atau sifat makin meningkat seiring waktu.
+⟦Trời càng ngày càng lạnh hơn.⟧ → Cuaca makin hari makin dingin. · ⟦Mưa càng ngày càng to hơn.⟧ → Hujan makin lama makin deras. · ⟦Thời gian càng ngày càng ít đi.⟧ → Waktu makin lama makin sedikit. · ⟦Nạn ô nhiễm môi trường càng ngày càng trầm trọng.⟧ → Masalah pencemaran lingkungan makin hari makin parah. · ⟦Nguồn nước càng ngày càng bị ô nhiễm.⟧ → Sumber air makin lama makin tercemar.
+=ja
+文法解説
+⟦gọi là⟧：存在はするものの、少量で取るに足らない事物や状態であることを表すために使います（「ほんの少し、形ばかり」）。
+⟦Làm gì mà nhiều, chỉ có chút quà gọi là thăm cậu thôi!⟧ → 多いなんてとんでもない、君に会いに来るのに用意したささやかな贈り物だよ！ · ⟦Chúng tôi chỉ mua chút hoa quả gọi là.⟧ → 私たちは果物をほんの少しだけ買った。 · ⟦Anh ấy đã ngủ một chút gọi là.⟧ → 彼はほんの少しの間だけ眠った。 · ⟦Tôi cũng ăn một chút gọi là.⟧ → 私もほんの少しだけ食べた。 · ⟦Tôi chỉ dành dụm được một ít tiền gọi là.⟧ → 私はごくわずかなお金しか貯めていない。 · ⟦Tôi cũng xem qua một chút gọi là.⟧ → 私もほんのちょっと目を通しただけだ。
+⟦càng ngày càng⟧：「だんだん、日に日に」という意味で、活動・状態・性質の程度が時間の経過とともに次第に高まることを表すために使います。
+⟦Trời càng ngày càng lạnh hơn.⟧ → 日に日に寒くなる。 · ⟦Mưa càng ngày càng to hơn.⟧ → 雨がだんだん強くなる。 · ⟦Thời gian càng ngày càng ít đi.⟧ → 時間がだんだん少なくなる。 · ⟦Nạn ô nhiễm môi trường càng ngày càng trầm trọng.⟧ → 環境汚染問題は日に日に深刻になる。 · ⟦Nguồn nước càng ngày càng bị ô nhiễm.⟧ → 水源がだんだん汚染されている。
+=pl
+Objaśnienia gramatyczne
+⟦gọi là⟧: wskazuje, że rzecz lub stan wprawdzie istnieje, ale w niewielkiej, znikomej ilości („tylko troszkę, symbolicznie”).
+⟦Làm gì mà nhiều, chỉ có chút quà gọi là thăm cậu thôi!⟧ → Gdzie tam dużo, to tylko drobny prezent, skoro przyszedłem cię odwiedzić! · ⟦Chúng tôi chỉ mua chút hoa quả gọi là.⟧ → Kupiliśmy tylko troszkę owoców. · ⟦Anh ấy đã ngủ một chút gọi là.⟧ → Przespał się tylko chwilkę. · ⟦Tôi cũng ăn một chút gọi là.⟧ → Ja też zjadłem tylko troszeczkę. · ⟦Tôi chỉ dành dụm được một ít tiền gọi là.⟧ → Udało mi się odłożyć tylko bardzo niewiele pieniędzy. · ⟦Tôi cũng xem qua một chút gọi là.⟧ → Ja też tylko pobieżnie przejrzałem.
+⟦càng ngày càng⟧: „coraz bardziej, z dnia na dzień” – wskazuje, że stopień czynności, stanu lub cechy stopniowo rośnie z upływem czasu.
+⟦Trời càng ngày càng lạnh hơn.⟧ → Robi się coraz zimniej. · ⟦Mưa càng ngày càng to hơn.⟧ → Deszcz jest coraz silniejszy. · ⟦Thời gian càng ngày càng ít đi.⟧ → Czasu jest coraz mniej. · ⟦Nạn ô nhiễm môi trường càng ngày càng trầm trọng.⟧ → Zanieczyszczenie środowiska jest z dnia na dzień poważniejsze. · ⟦Nguồn nước càng ngày càng bị ô nhiễm.⟧ → Źródła wody są coraz bardziej zanieczyszczone.

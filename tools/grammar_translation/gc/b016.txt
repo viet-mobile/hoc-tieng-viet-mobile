@@ -1,0 +1,191 @@
+@@ pdf-grammar-1be6cb2a8e084cfa#0
+=cs
+Klíčový výraz: ⟦mà⟧
+⟦mà⟧ se používá ve tvaru „podstatné jméno + mà“ (právě ~ / a přitom je to ~) a zdůrazňuje dané podstatné jméno.
+❶ ⟦Nhân viên nhà hàng mà không biết cách thanh toán bằng thẻ tín dụng thì không được.⟧ — Zaměstnanec restaurace, který neumí zúčtovat platbu kreditní kartou, to nejde.
+❷ Ⓐ ⟦Nghe nói ngày mai trời sẽ lạnh đấy.⟧ — Prý bude zítra zima. Ⓑ ⟦Tháng 10 mà trời đã lạnh rồi à? Mùa thu đi nhanh quá!⟧ — Je teprve říjen, a už je zima? Podzim utíká moc rychle!
+Různá vietnamská jídla a jednotky: ⟦cà phê phin⟧ káva z filtru phin | ⟦nước dừa tươi⟧ čerstvá kokosová voda | ⟦hai bát bún chả⟧ dvě misky bún chả | ⟦một đĩa gỏi cuốn⟧ talíř čerstvých závitků | ⟦một đĩa gà nướng⟧ talíř grilovaného kuřete | ⟦hai suất bò tùng xẻo⟧ dvě porce bò tùng xẻo (grilované marinované hovězí)
+Rozhovor: Trang a Min-ho si objednávají ve vietnamské restauraci.
+Trang: ⟦Anh Min-ho biết không? Nhà hàng này quy mô nhỏ nhưng hương vị thì ngon tuyệt.⟧ — Víte co, Min-ho? Tahle restaurace je malá, ale chutná úžasně.
+Min-ho: ⟦Nhà hàng này mà ngon thế à? OK. Em gọi đi. Để anh ăn thử xem nào.⟧ — Tahle restaurace že je tak dobrá? Dobře. Objednej. Ochutnám.
+Trang: ⟦Anh thích thịt bò và hải sản, đúng không?⟧ — Máte rád hovězí a mořské plody, že?
+Min-ho: ⟦Ừ, đúng rồi. Em nhớ tốt nhỉ?⟧ — Jo, přesně. Ty si ale pamatuješ!
+Trang: ⟦Nhớ chứ! Thế em gọi nhé. Em ơi, cho hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt. Còn đồ uống thì...⟧ — Jasně! Tak objednám. Prosím vás, dvě porce bò tùng xẻo a talíř závitků s krevetami a masem. A k pití…
+Min-ho: ⟦Trang ơi, đồ uống trên bàn bên cạnh là gì?⟧ — Trang, co to pijí u vedlejšího stolu?
+Trang: ⟦À, đó là nước dừa tươi. Anh thử nhé.⟧ — Aha, to je čerstvá kokosová voda. Ochutnejte.
+Procvičování — co má Min-ho rád: ⟦thịt bò và hải sản⟧ / ⟦thịt gà và bún chả⟧; co Trang objedná: ⟦hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt⟧ / ⟦một đĩa gà nướng và hai bát bún chả⟧; kde Min-ho viděl nápoj: ⟦trên bàn bên cạnh⟧ (na vedlejším stole) / ⟦trong thực đơn này⟧ (v tomto lístku); jaký je to nápoj: ⟦nước dừa tươi⟧ / ⟦cà phê phin⟧.
+Vzor: ⟦Người đẹp mà⟧ — Ⓐ ⟦Cô ấy đẹp nhưng tính cách thì không tốt.⟧ — Je hezká, ale povahu nemá dobrou. Ⓑ ⟦Người đẹp mà xấu tính thế à?⟧ — Tak hezká, a přitom tak nepříjemná povaha?
+❶ ⟦Công ti lớn mà⟧ — Ⓐ ⟦Công ti này lớn nhưng lương của nhân viên thì không cao.⟧ — Tahle firma je velká, ale platy zaměstnanců nejsou vysoké. Ⓑ ⟦Công ti lớn mà lương không cao à?⟧ — Tak velká firma, a platy nízké?
+❷ ⟦Nhà hàng đông khách mà⟧ — Ⓐ ⟦Nhà hàng ấy đông khách nhưng chỗ đỗ xe thì không có.⟧ — Ta restaurace má hodně hostů, ale nemá parkoviště. Ⓑ ⟦Nhà hàng đông khách mà không có chỗ đỗ xe à?⟧ — Restaurace plná hostů, a nemá kde parkovat?
+Nová slovíčka: ⟦thẻ⟧ karta | ⟦tín dụng⟧ úvěr | ⟦tính cách⟧ povaha | ⟦xấu tính⟧ nepříjemné povahy | ⟦quy mô⟧ rozsah, velikost | ⟦hương⟧ vůně | ⟦vị⟧ chuť | ⟦tuyệt⟧ skvělý | ⟦mà⟧ (zdůraznění) a přitom | ⟦hải sản⟧ mořské plody | ⟦suất⟧ porce | ⟦bò tùng xẻo⟧ grilované marinované hovězí | ⟦gỏi cuốn⟧ čerstvé závitky
+=zh_cn
+核心表达：⟦mà⟧
+⟦mà⟧ 以“名词 + mà”（明明是……/ 作为……却）的形式使用，表示特别指出并强调该名词。
+❶ ⟦Nhân viên nhà hàng mà không biết cách thanh toán bằng thẻ tín dụng thì không được.⟧ —— 身为餐厅员工却不会用信用卡结账，这可不行。
+❷ Ⓐ ⟦Nghe nói ngày mai trời sẽ lạnh đấy.⟧ —— 听说明天会冷哦。 Ⓑ ⟦Tháng 10 mà trời đã lạnh rồi à? Mùa thu đi nhanh quá!⟧ —— 才十月就冷了？秋天过得太快了！
+各种越南菜与量词：⟦cà phê phin⟧ 滴滤咖啡 | ⟦nước dừa tươi⟧ 新鲜椰子水 | ⟦hai bát bún chả⟧ 两碗烤肉米线 | ⟦một đĩa gỏi cuốn⟧ 一盘越南生春卷 | ⟦một đĩa gà nướng⟧ 一盘烤鸡 | ⟦hai suất bò tùng xẻo⟧ 两份越式腌烤牛肉
+对话：庄和敏浩在越南餐厅点菜。
+庄：⟦Anh Min-ho biết không? Nhà hàng này quy mô nhỏ nhưng hương vị thì ngon tuyệt.⟧ —— 敏浩哥知道吗？这家餐厅规模小，但味道好极了。
+敏浩：⟦Nhà hàng này mà ngon thế à? OK. Em gọi đi. Để anh ăn thử xem nào.⟧ —— 这家餐厅居然这么好吃？好，你点吧。我来尝尝。
+庄：⟦Anh thích thịt bò và hải sản, đúng không?⟧ —— 你喜欢牛肉和海鲜，对吧？
+敏浩：⟦Ừ, đúng rồi. Em nhớ tốt nhỉ?⟧ —— 嗯，对。你记性真好啊！
+庄：⟦Nhớ chứ! Thế em gọi nhé. Em ơi, cho hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt. Còn đồ uống thì...⟧ —— 当然记得！那我点了。服务员，来两份腌烤牛肉和一盘虾肉生春卷。饮料的话……
+敏浩：⟦Trang ơi, đồ uống trên bàn bên cạnh là gì?⟧ —— 庄，旁边桌上的饮料是什么？
+庄：⟦À, đó là nước dừa tươi. Anh thử nhé.⟧ —— 啊，那是新鲜椰子水。你尝尝吧。
+句型练习 —— 敏浩喜欢什么：⟦thịt bò và hải sản⟧ / ⟦thịt gà và bún chả⟧；庄点什么：⟦hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt⟧ / ⟦một đĩa gà nướng và hai bát bún chả⟧；敏浩在哪里看到饮料：⟦trên bàn bên cạnh⟧（旁边桌上）/ ⟦trong thực đơn này⟧（这份菜单上）；那是什么饮料：⟦nước dừa tươi⟧ / ⟦cà phê phin⟧。
+范例：⟦Người đẹp mà⟧ —— Ⓐ ⟦Cô ấy đẹp nhưng tính cách thì không tốt.⟧ —— 她很漂亮，但性格不好。 Ⓑ ⟦Người đẹp mà xấu tính thế à?⟧ —— 长得那么漂亮，性格却那么差？
+❶ ⟦Công ti lớn mà⟧ —— Ⓐ ⟦Công ti này lớn nhưng lương của nhân viên thì không cao.⟧ —— 这家公司很大，但员工工资不高。 Ⓑ ⟦Công ti lớn mà lương không cao à?⟧ —— 那么大的公司，工资却不高？
+❷ ⟦Nhà hàng đông khách mà⟧ —— Ⓐ ⟦Nhà hàng ấy đông khách nhưng chỗ đỗ xe thì không có.⟧ —— 那家餐厅客人很多，但没有停车位。 Ⓑ ⟦Nhà hàng đông khách mà không có chỗ đỗ xe à?⟧ —— 客人那么多的餐厅，却没有停车位？
+新单词：⟦thẻ⟧ 卡 | ⟦tín dụng⟧ 信用 | ⟦tính cách⟧ 性格 | ⟦xấu tính⟧ 性格不好 | ⟦quy mô⟧ 规模 | ⟦hương⟧ 香气 | ⟦vị⟧ 味道 | ⟦tuyệt⟧ 极好 | ⟦mà⟧ （强调）……却 | ⟦hải sản⟧ 海鲜 | ⟦suất⟧ 份 | ⟦bò tùng xẻo⟧ 越式腌烤牛肉 | ⟦gỏi cuốn⟧ 越南生春卷
+=zh
+核心表達：⟦mà⟧
+⟦mà⟧ 以「名詞 + mà」（明明是……/ 作為……卻）的形式使用，表示特別指出並強調該名詞。
+❶ ⟦Nhân viên nhà hàng mà không biết cách thanh toán bằng thẻ tín dụng thì không được.⟧ —— 身為餐廳員工卻不會用信用卡結帳，這可不行。
+❷ Ⓐ ⟦Nghe nói ngày mai trời sẽ lạnh đấy.⟧ —— 聽說明天會冷喔。 Ⓑ ⟦Tháng 10 mà trời đã lạnh rồi à? Mùa thu đi nhanh quá!⟧ —— 才十月就冷了？秋天過得太快了！
+各種越南菜與量詞：⟦cà phê phin⟧ 滴濾咖啡 | ⟦nước dừa tươi⟧ 新鮮椰子水 | ⟦hai bát bún chả⟧ 兩碗烤肉米線 | ⟦một đĩa gỏi cuốn⟧ 一盤越南生春捲 | ⟦một đĩa gà nướng⟧ 一盤烤雞 | ⟦hai suất bò tùng xẻo⟧ 兩份越式醃烤牛肉
+對話：莊和敏浩在越南餐廳點菜。
+莊：⟦Anh Min-ho biết không? Nhà hàng này quy mô nhỏ nhưng hương vị thì ngon tuyệt.⟧ —— 敏浩哥知道嗎？這家餐廳規模小，但味道好極了。
+敏浩：⟦Nhà hàng này mà ngon thế à? OK. Em gọi đi. Để anh ăn thử xem nào.⟧ —— 這家餐廳居然這麼好吃？好，你點吧。我來嚐嚐。
+莊：⟦Anh thích thịt bò và hải sản, đúng không?⟧ —— 你喜歡牛肉和海鮮，對吧？
+敏浩：⟦Ừ, đúng rồi. Em nhớ tốt nhỉ?⟧ —— 嗯，對。你記性真好啊！
+莊：⟦Nhớ chứ! Thế em gọi nhé. Em ơi, cho hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt. Còn đồ uống thì...⟧ —— 當然記得！那我點了。服務生，來兩份醃烤牛肉和一盤蝦肉生春捲。飲料的話……
+敏浩：⟦Trang ơi, đồ uống trên bàn bên cạnh là gì?⟧ —— 莊，旁邊桌上的飲料是什麼？
+莊：⟦À, đó là nước dừa tươi. Anh thử nhé.⟧ —— 啊，那是新鮮椰子水。你嚐嚐吧。
+句型練習 —— 敏浩喜歡什麼：⟦thịt bò và hải sản⟧ / ⟦thịt gà và bún chả⟧；莊點什麼：⟦hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt⟧ / ⟦một đĩa gà nướng và hai bát bún chả⟧；敏浩在哪裡看到飲料：⟦trên bàn bên cạnh⟧（旁邊桌上）/ ⟦trong thực đơn này⟧（這份菜單上）；那是什麼飲料：⟦nước dừa tươi⟧ / ⟦cà phê phin⟧。
+範例：⟦Người đẹp mà⟧ —— Ⓐ ⟦Cô ấy đẹp nhưng tính cách thì không tốt.⟧ —— 她很漂亮，但個性不好。 Ⓑ ⟦Người đẹp mà xấu tính thế à?⟧ —— 長得那麼漂亮，個性卻那麼差？
+❶ ⟦Công ti lớn mà⟧ —— Ⓐ ⟦Công ti này lớn nhưng lương của nhân viên thì không cao.⟧ —— 這家公司很大，但員工薪水不高。 Ⓑ ⟦Công ti lớn mà lương không cao à?⟧ —— 那麼大的公司，薪水卻不高？
+❷ ⟦Nhà hàng đông khách mà⟧ —— Ⓐ ⟦Nhà hàng ấy đông khách nhưng chỗ đỗ xe thì không có.⟧ —— 那家餐廳客人很多，但沒有停車位。 Ⓑ ⟦Nhà hàng đông khách mà không có chỗ đỗ xe à?⟧ —— 客人那麼多的餐廳，卻沒有停車位？
+新單字：⟦thẻ⟧ 卡 | ⟦tín dụng⟧ 信用 | ⟦tính cách⟧ 個性 | ⟦xấu tính⟧ 個性不好 | ⟦quy mô⟧ 規模 | ⟦hương⟧ 香氣 | ⟦vị⟧ 味道 | ⟦tuyệt⟧ 極好 | ⟦mà⟧ （強調）……卻 | ⟦hải sản⟧ 海鮮 | ⟦suất⟧ 份 | ⟦bò tùng xẻo⟧ 越式醃烤牛肉 | ⟦gỏi cuốn⟧ 越南生春捲
+=en
+Key expression: ⟦mà⟧
+⟦mà⟧ is used in the form "noun + mà" (being a ~ / for a ~) to single out and emphasize the noun.
+❶ ⟦Nhân viên nhà hàng mà không biết cách thanh toán bằng thẻ tín dụng thì không được.⟧ — A restaurant employee who doesn't know how to process a credit-card payment just won't do.
+❷ Ⓐ ⟦Nghe nói ngày mai trời sẽ lạnh đấy.⟧ — I hear it'll be cold tomorrow. Ⓑ ⟦Tháng 10 mà trời đã lạnh rồi à? Mùa thu đi nhanh quá!⟧ — It's only October and it's already cold? Autumn is going by so fast!
+Various Vietnamese dishes and units: ⟦cà phê phin⟧ phin-filter coffee | ⟦nước dừa tươi⟧ fresh coconut water | ⟦hai bát bún chả⟧ two bowls of bún chả | ⟦một đĩa gỏi cuốn⟧ a plate of fresh spring rolls | ⟦một đĩa gà nướng⟧ a plate of grilled chicken | ⟦hai suất bò tùng xẻo⟧ two portions of bò tùng xẻo (marinated grilled beef)
+Dialogue: Trang and Min-ho order food at a Vietnamese restaurant.
+Trang: ⟦Anh Min-ho biết không? Nhà hàng này quy mô nhỏ nhưng hương vị thì ngon tuyệt.⟧ — You know what, Min-ho? This restaurant is small, but the food tastes amazing.
+Min-ho: ⟦Nhà hàng này mà ngon thế à? OK. Em gọi đi. Để anh ăn thử xem nào.⟧ — This place is that good? OK. You order. Let me give it a try.
+Trang: ⟦Anh thích thịt bò và hải sản, đúng không?⟧ — You like beef and seafood, right?
+Min-ho: ⟦Ừ, đúng rồi. Em nhớ tốt nhỉ?⟧ — Yeah, that's right. You've got a good memory!
+Trang: ⟦Nhớ chứ! Thế em gọi nhé. Em ơi, cho hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt. Còn đồ uống thì...⟧ — Of course I remember! I'll order then. Excuse me, two portions of bò tùng xẻo and a plate of shrimp-and-pork fresh rolls. And to drink…
+Min-ho: ⟦Trang ơi, đồ uống trên bàn bên cạnh là gì?⟧ — Trang, what's that drink on the next table?
+Trang: ⟦À, đó là nước dừa tươi. Anh thử nhé.⟧ — Ah, that's fresh coconut water. Give it a try.
+Pattern practice — what Min-ho likes: ⟦thịt bò và hải sản⟧ / ⟦thịt gà và bún chả⟧; what Trang orders: ⟦hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt⟧ / ⟦một đĩa gà nướng và hai bát bún chả⟧; where Min-ho saw the drink: ⟦trên bàn bên cạnh⟧ (on the next table) / ⟦trong thực đơn này⟧ (on this menu); what the drink is: ⟦nước dừa tươi⟧ / ⟦cà phê phin⟧.
+Model: ⟦Người đẹp mà⟧ — Ⓐ ⟦Cô ấy đẹp nhưng tính cách thì không tốt.⟧ — She's pretty, but her personality isn't good. Ⓑ ⟦Người đẹp mà xấu tính thế à?⟧ — So pretty and yet so mean?
+❶ ⟦Công ti lớn mà⟧ — Ⓐ ⟦Công ti này lớn nhưng lương của nhân viên thì không cao.⟧ — This company is big, but the employees' pay isn't high. Ⓑ ⟦Công ti lớn mà lương không cao à?⟧ — Such a big company and the pay isn't high?
+❷ ⟦Nhà hàng đông khách mà⟧ — Ⓐ ⟦Nhà hàng ấy đông khách nhưng chỗ đỗ xe thì không có.⟧ — That restaurant has lots of customers, but there's no parking. Ⓑ ⟦Nhà hàng đông khách mà không có chỗ đỗ xe à?⟧ — A restaurant that busy and no parking?
+New words: ⟦thẻ⟧ card | ⟦tín dụng⟧ credit | ⟦tính cách⟧ personality | ⟦xấu tính⟧ ill-natured | ⟦quy mô⟧ scale, size | ⟦hương⟧ aroma | ⟦vị⟧ taste | ⟦tuyệt⟧ wonderful | ⟦mà⟧ (emphasis) and yet | ⟦hải sản⟧ seafood | ⟦suất⟧ portion | ⟦bò tùng xẻo⟧ marinated grilled beef | ⟦gỏi cuốn⟧ fresh spring rolls
+=fr
+Expression clé : ⟦mà⟧
+⟦mà⟧ s'emploie sous la forme « nom + mà » (pour un ~, alors qu'on est ~) pour désigner et mettre en relief ce nom.
+❶ ⟦Nhân viên nhà hàng mà không biết cách thanh toán bằng thẻ tín dụng thì không được.⟧ — Un employé de restaurant qui ne sait pas encaisser par carte de crédit, ça ne va pas.
+❷ Ⓐ ⟦Nghe nói ngày mai trời sẽ lạnh đấy.⟧ — Il paraît qu'il fera froid demain. Ⓑ ⟦Tháng 10 mà trời đã lạnh rồi à? Mùa thu đi nhanh quá!⟧ — On n'est qu'en octobre et il fait déjà froid ? L'automne passe si vite !
+Plats vietnamiens et unités : ⟦cà phê phin⟧ café au filtre phin | ⟦nước dừa tươi⟧ eau de coco fraîche | ⟦hai bát bún chả⟧ deux bols de bún chả | ⟦một đĩa gỏi cuốn⟧ une assiette de rouleaux de printemps | ⟦một đĩa gà nướng⟧ une assiette de poulet grillé | ⟦hai suất bò tùng xẻo⟧ deux portions de bò tùng xẻo (bœuf mariné grillé)
+Dialogue : Trang et Min-ho commandent dans un restaurant vietnamien.
+Trang : ⟦Anh Min-ho biết không? Nhà hàng này quy mô nhỏ nhưng hương vị thì ngon tuyệt.⟧ — Tu sais, Min-ho ? Ce restaurant est petit, mais c'est délicieux.
+Min-ho : ⟦Nhà hàng này mà ngon thế à? OK. Em gọi đi. Để anh ăn thử xem nào.⟧ — Ce restaurant-là est si bon ? D'accord. Commande. Je vais goûter.
+Trang : ⟦Anh thích thịt bò và hải sản, đúng không?⟧ — Tu aimes le bœuf et les fruits de mer, c'est ça ?
+Min-ho : ⟦Ừ, đúng rồi. Em nhớ tốt nhỉ?⟧ — Oui, c'est ça. Tu as bonne mémoire !
+Trang : ⟦Nhớ chứ! Thế em gọi nhé. Em ơi, cho hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt. Còn đồ uống thì...⟧ — Bien sûr ! Je commande alors. S'il vous plaît, deux portions de bò tùng xẻo et une assiette de rouleaux crevettes-porc. Et comme boisson…
+Min-ho : ⟦Trang ơi, đồ uống trên bàn bên cạnh là gì?⟧ — Trang, c'est quoi la boisson sur la table d'à côté ?
+Trang : ⟦À, đó là nước dừa tươi. Anh thử nhé.⟧ — Ah, c'est de l'eau de coco fraîche. Goûte.
+Exercices — ce que Min-ho aime : ⟦thịt bò và hải sản⟧ / ⟦thịt gà và bún chả⟧ ; ce que Trang commande : ⟦hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt⟧ / ⟦một đĩa gà nướng và hai bát bún chả⟧ ; où Min-ho a vu la boisson : ⟦trên bàn bên cạnh⟧ (sur la table voisine) / ⟦trong thực đơn này⟧ (sur ce menu) ; quelle boisson : ⟦nước dừa tươi⟧ / ⟦cà phê phin⟧.
+Modèle : ⟦Người đẹp mà⟧ — Ⓐ ⟦Cô ấy đẹp nhưng tính cách thì không tốt.⟧ — Elle est jolie, mais elle a mauvais caractère. Ⓑ ⟦Người đẹp mà xấu tính thế à?⟧ — Si jolie et si mauvais caractère ?
+❶ ⟦Công ti lớn mà⟧ — Ⓐ ⟦Công ti này lớn nhưng lương của nhân viên thì không cao.⟧ — Cette entreprise est grande, mais les salaires ne sont pas élevés. Ⓑ ⟦Công ti lớn mà lương không cao à?⟧ — Une si grande entreprise et des salaires bas ?
+❷ ⟦Nhà hàng đông khách mà⟧ — Ⓐ ⟦Nhà hàng ấy đông khách nhưng chỗ đỗ xe thì không có.⟧ — Ce restaurant a beaucoup de clients, mais pas de parking. Ⓑ ⟦Nhà hàng đông khách mà không có chỗ đỗ xe à?⟧ — Un restaurant si fréquenté et pas de parking ?
+Nouveaux mots : ⟦thẻ⟧ carte | ⟦tín dụng⟧ crédit | ⟦tính cách⟧ caractère | ⟦xấu tính⟧ de mauvais caractère | ⟦quy mô⟧ taille, envergure | ⟦hương⟧ arôme | ⟦vị⟧ goût | ⟦tuyệt⟧ excellent | ⟦mà⟧ (insistance) et pourtant | ⟦hải sản⟧ fruits de mer | ⟦suất⟧ portion | ⟦bò tùng xẻo⟧ bœuf mariné grillé | ⟦gỏi cuốn⟧ rouleaux de printemps
+=de
+Schlüsselausdruck: ⟦mà⟧
+⟦mà⟧ steht in der Form „Substantiv + mà“ (für einen ~ / obwohl es ein ~ ist) und hebt das Substantiv hervor.
+❶ ⟦Nhân viên nhà hàng mà không biết cách thanh toán bằng thẻ tín dụng thì không được.⟧ — Ein Restaurantmitarbeiter, der nicht weiß, wie man mit Kreditkarte abrechnet – das geht nicht.
+❷ Ⓐ ⟦Nghe nói ngày mai trời sẽ lạnh đấy.⟧ — Morgen soll es kalt werden. Ⓑ ⟦Tháng 10 mà trời đã lạnh rồi à? Mùa thu đi nhanh quá!⟧ — Es ist erst Oktober und schon kalt? Der Herbst vergeht so schnell!
+Vietnamesische Gerichte und Mengenangaben: ⟦cà phê phin⟧ Phin-Filterkaffee | ⟦nước dừa tươi⟧ frisches Kokoswasser | ⟦hai bát bún chả⟧ zwei Schüsseln Bún chả | ⟦một đĩa gỏi cuốn⟧ ein Teller Sommerrollen | ⟦một đĩa gà nướng⟧ ein Teller gegrilltes Hähnchen | ⟦hai suất bò tùng xẻo⟧ zwei Portionen Bò tùng xẻo (mariniertes gegrilltes Rindfleisch)
+Dialog: Trang und Min-ho bestellen in einem vietnamesischen Restaurant.
+Trang: ⟦Anh Min-ho biết không? Nhà hàng này quy mô nhỏ nhưng hương vị thì ngon tuyệt.⟧ — Weißt du was, Min-ho? Das Restaurant ist klein, aber es schmeckt fantastisch.
+Min-ho: ⟦Nhà hàng này mà ngon thế à? OK. Em gọi đi. Để anh ăn thử xem nào.⟧ — Dieses Restaurant ist so gut? Okay. Bestell du. Ich probiere mal.
+Trang: ⟦Anh thích thịt bò và hải sản, đúng không?⟧ — Du magst Rindfleisch und Meeresfrüchte, oder?
+Min-ho: ⟦Ừ, đúng rồi. Em nhớ tốt nhỉ?⟧ — Ja, genau. Du hast ja ein gutes Gedächtnis!
+Trang: ⟦Nhớ chứ! Thế em gọi nhé. Em ơi, cho hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt. Còn đồ uống thì...⟧ — Klar! Dann bestelle ich. Entschuldigung, zwei Portionen Bò tùng xẻo und einen Teller Sommerrollen mit Garnelen und Fleisch. Und zu trinken …
+Min-ho: ⟦Trang ơi, đồ uống trên bàn bên cạnh là gì?⟧ — Trang, was ist das für ein Getränk am Nebentisch?
+Trang: ⟦À, đó là nước dừa tươi. Anh thử nhé.⟧ — Ah, das ist frisches Kokoswasser. Probier mal.
+Satzmusterübung — was Min-ho mag: ⟦thịt bò và hải sản⟧ / ⟦thịt gà và bún chả⟧; was Trang bestellt: ⟦hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt⟧ / ⟦một đĩa gà nướng và hai bát bún chả⟧; wo Min-ho das Getränk sah: ⟦trên bàn bên cạnh⟧ (am Nebentisch) / ⟦trong thực đơn này⟧ (auf dieser Karte); welches Getränk: ⟦nước dừa tươi⟧ / ⟦cà phê phin⟧.
+Muster: ⟦Người đẹp mà⟧ — Ⓐ ⟦Cô ấy đẹp nhưng tính cách thì không tốt.⟧ — Sie ist hübsch, hat aber keinen guten Charakter. Ⓑ ⟦Người đẹp mà xấu tính thế à?⟧ — So hübsch und so einen schlechten Charakter?
+❶ ⟦Công ti lớn mà⟧ — Ⓐ ⟦Công ti này lớn nhưng lương của nhân viên thì không cao.⟧ — Die Firma ist groß, aber die Gehälter sind nicht hoch. Ⓑ ⟦Công ti lớn mà lương không cao à?⟧ — So eine große Firma und niedrige Gehälter?
+❷ ⟦Nhà hàng đông khách mà⟧ — Ⓐ ⟦Nhà hàng ấy đông khách nhưng chỗ đỗ xe thì không có.⟧ — Das Restaurant hat viele Gäste, aber keine Parkplätze. Ⓑ ⟦Nhà hàng đông khách mà không có chỗ đỗ xe à?⟧ — So ein gut besuchtes Restaurant und keine Parkplätze?
+Neue Wörter: ⟦thẻ⟧ Karte | ⟦tín dụng⟧ Kredit | ⟦tính cách⟧ Charakter | ⟦xấu tính⟧ unfreundlich, launisch | ⟦quy mô⟧ Größe, Umfang | ⟦hương⟧ Duft | ⟦vị⟧ Geschmack | ⟦tuyệt⟧ großartig | ⟦mà⟧ (Betonung) und doch | ⟦hải sản⟧ Meeresfrüchte | ⟦suất⟧ Portion | ⟦bò tùng xẻo⟧ mariniertes gegrilltes Rindfleisch | ⟦gỏi cuốn⟧ Sommerrollen
+=hu
+Kulcskifejezés: ⟦mà⟧
+A ⟦mà⟧ „főnév + mà” (létére, ráadásul …) formában kiemeli és hangsúlyozza a főnevet.
+❶ ⟦Nhân viên nhà hàng mà không biết cách thanh toán bằng thẻ tín dụng thì không được.⟧ — Éttermi alkalmazott létére nem tudja, hogyan kell bankkártyával fizettetni – ez így nem megy.
+❷ Ⓐ ⟦Nghe nói ngày mai trời sẽ lạnh đấy.⟧ — Azt mondják, holnap hideg lesz. Ⓑ ⟦Tháng 10 mà trời đã lạnh rồi à? Mùa thu đi nhanh quá!⟧ — Még csak október van, és máris hideg? Nagyon gyorsan elmegy az ősz!
+Vietnámi ételek és mértékegységek: ⟦cà phê phin⟧ phin szűrős kávé | ⟦nước dừa tươi⟧ friss kókuszvíz | ⟦hai bát bún chả⟧ két tál bún chả | ⟦một đĩa gỏi cuốn⟧ egy tányér friss tavaszi tekercs | ⟦một đĩa gà nướng⟧ egy tányér grillcsirke | ⟦hai suất bò tùng xẻo⟧ két adag bò tùng xẻo (pácolt, grillezett marhahús)
+Párbeszéd: Trang és Min-ho egy vietnámi étteremben rendelnek.
+Trang: ⟦Anh Min-ho biết không? Nhà hàng này quy mô nhỏ nhưng hương vị thì ngon tuyệt.⟧ — Tudod, Min-ho? Ez az étterem kicsi, de az ételek íze fantasztikus.
+Min-ho: ⟦Nhà hàng này mà ngon thế à? OK. Em gọi đi. Để anh ăn thử xem nào.⟧ — Ez az étterem ilyen jó? Oké. Rendelj te. Hadd kóstoljam meg.
+Trang: ⟦Anh thích thịt bò và hải sản, đúng không?⟧ — A marhahúst és a tenger gyümölcseit szereted, ugye?
+Min-ho: ⟦Ừ, đúng rồi. Em nhớ tốt nhỉ?⟧ — Igen, pontosan. Jó a memóriád!
+Trang: ⟦Nhớ chứ! Thế em gọi nhé. Em ơi, cho hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt. Còn đồ uống thì...⟧ — Persze! Akkor rendelek. Kérünk két adag bò tùng xẻót és egy tányér garnélás-húsos tekercset. Inni pedig…
+Min-ho: ⟦Trang ơi, đồ uống trên bàn bên cạnh là gì?⟧ — Trang, mi az az ital a szomszéd asztalon?
+Trang: ⟦À, đó là nước dừa tươi. Anh thử nhé.⟧ — Ja, az friss kókuszvíz. Kóstold meg.
+Mintagyakorlat — mit szeret Min-ho: ⟦thịt bò và hải sản⟧ / ⟦thịt gà và bún chả⟧; mit rendel Trang: ⟦hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt⟧ / ⟦một đĩa gà nướng và hai bát bún chả⟧; hol látta Min-ho az italt: ⟦trên bàn bên cạnh⟧ (a szomszéd asztalon) / ⟦trong thực đơn này⟧ (ezen az étlapon); milyen ital: ⟦nước dừa tươi⟧ / ⟦cà phê phin⟧.
+Minta: ⟦Người đẹp mà⟧ — Ⓐ ⟦Cô ấy đẹp nhưng tính cách thì không tốt.⟧ — Szép, de a természete nem jó. Ⓑ ⟦Người đẹp mà xấu tính thế à?⟧ — Ilyen szép létére ilyen rossz természetű?
+❶ ⟦Công ti lớn mà⟧ — Ⓐ ⟦Công ti này lớn nhưng lương của nhân viên thì không cao.⟧ — Ez a cég nagy, de az alkalmazottak fizetése nem magas. Ⓑ ⟦Công ti lớn mà lương không cao à?⟧ — Ilyen nagy cég létére nem magas a fizetés?
+❷ ⟦Nhà hàng đông khách mà⟧ — Ⓐ ⟦Nhà hàng ấy đông khách nhưng chỗ đỗ xe thì không có.⟧ — Abban az étteremben sok a vendég, de nincs parkoló. Ⓑ ⟦Nhà hàng đông khách mà không có chỗ đỗ xe à?⟧ — Ilyen forgalmas étterem létére nincs parkoló?
+Új szavak: ⟦thẻ⟧ kártya | ⟦tín dụng⟧ hitel | ⟦tính cách⟧ jellem | ⟦xấu tính⟧ rossz természetű | ⟦quy mô⟧ méret, lépték | ⟦hương⟧ illat | ⟦vị⟧ íz | ⟦tuyệt⟧ nagyszerű | ⟦mà⟧ (hangsúly) létére | ⟦hải sản⟧ tenger gyümölcsei | ⟦suất⟧ adag | ⟦bò tùng xẻo⟧ pácolt grillezett marhahús | ⟦gỏi cuốn⟧ friss tavaszi tekercs
+=id
+Ungkapan kunci: ⟦mà⟧
+⟦mà⟧ dipakai dalam bentuk "kata benda + mà" (sebagai ~, padahal ~) untuk menunjuk dan menegaskan kata benda itu.
+❶ ⟦Nhân viên nhà hàng mà không biết cách thanh toán bằng thẻ tín dụng thì không được.⟧ — Karyawan restoran kok tidak tahu cara pembayaran dengan kartu kredit, itu tidak boleh.
+❷ Ⓐ ⟦Nghe nói ngày mai trời sẽ lạnh đấy.⟧ — Katanya besok akan dingin, lho. Ⓑ ⟦Tháng 10 mà trời đã lạnh rồi à? Mùa thu đi nhanh quá!⟧ — Baru bulan Oktober sudah dingin? Musim gugur cepat sekali berlalu!
+Berbagai masakan Vietnam dan satuannya: ⟦cà phê phin⟧ kopi saring phin | ⟦nước dừa tươi⟧ air kelapa segar | ⟦hai bát bún chả⟧ dua mangkuk bún chả | ⟦một đĩa gỏi cuốn⟧ sepiring lumpia segar | ⟦một đĩa gà nướng⟧ sepiring ayam panggang | ⟦hai suất bò tùng xẻo⟧ dua porsi bò tùng xẻo (daging sapi bakar berbumbu)
+Percakapan: Trang dan Min-ho memesan makanan di restoran Vietnam.
+Trang: ⟦Anh Min-ho biết không? Nhà hàng này quy mô nhỏ nhưng hương vị thì ngon tuyệt.⟧ — Kak Min-ho tahu? Restoran ini kecil, tetapi rasanya luar biasa enak.
+Min-ho: ⟦Nhà hàng này mà ngon thế à? OK. Em gọi đi. Để anh ăn thử xem nào.⟧ — Restoran ini seenak itu? Oke. Kamu yang pesan. Biar Kakak coba.
+Trang: ⟦Anh thích thịt bò và hải sản, đúng không?⟧ — Kakak suka daging sapi dan makanan laut, kan?
+Min-ho: ⟦Ừ, đúng rồi. Em nhớ tốt nhỉ?⟧ — Ya, betul. Ingatanmu bagus, ya!
+Trang: ⟦Nhớ chứ! Thế em gọi nhé. Em ơi, cho hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt. Còn đồ uống thì...⟧ — Tentu ingat! Kalau begitu saya pesan, ya. Mas, dua porsi bò tùng xẻo dan sepiring lumpia segar udang dan daging. Minumnya…
+Min-ho: ⟦Trang ơi, đồ uống trên bàn bên cạnh là gì?⟧ — Trang, minuman di meja sebelah itu apa?
+Trang: ⟦À, đó là nước dừa tươi. Anh thử nhé.⟧ — Oh, itu air kelapa segar. Coba, ya.
+Latihan pola — yang disukai Min-ho: ⟦thịt bò và hải sản⟧ / ⟦thịt gà và bún chả⟧; yang dipesan Trang: ⟦hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt⟧ / ⟦một đĩa gà nướng và hai bát bún chả⟧; di mana Min-ho melihat minumannya: ⟦trên bàn bên cạnh⟧ (di meja sebelah) / ⟦trong thực đơn này⟧ (di menu ini); minuman apa: ⟦nước dừa tươi⟧ / ⟦cà phê phin⟧.
+Contoh: ⟦Người đẹp mà⟧ — Ⓐ ⟦Cô ấy đẹp nhưng tính cách thì không tốt.⟧ — Dia cantik, tetapi sifatnya tidak baik. Ⓑ ⟦Người đẹp mà xấu tính thế à?⟧ — Cantik kok sifatnya jelek begitu?
+❶ ⟦Công ti lớn mà⟧ — Ⓐ ⟦Công ti này lớn nhưng lương của nhân viên thì không cao.⟧ — Perusahaan ini besar, tetapi gaji karyawannya tidak tinggi. Ⓑ ⟦Công ti lớn mà lương không cao à?⟧ — Perusahaan besar kok gajinya tidak tinggi?
+❷ ⟦Nhà hàng đông khách mà⟧ — Ⓐ ⟦Nhà hàng ấy đông khách nhưng chỗ đỗ xe thì không có.⟧ — Restoran itu ramai pengunjung, tetapi tidak ada tempat parkir. Ⓑ ⟦Nhà hàng đông khách mà không có chỗ đỗ xe à?⟧ — Restoran seramai itu kok tidak ada tempat parkir?
+Kosakata baru: ⟦thẻ⟧ kartu | ⟦tín dụng⟧ kredit | ⟦tính cách⟧ sifat, watak | ⟦xấu tính⟧ berwatak buruk | ⟦quy mô⟧ skala, ukuran | ⟦hương⟧ aroma | ⟦vị⟧ rasa | ⟦tuyệt⟧ luar biasa | ⟦mà⟧ (penegas) padahal | ⟦hải sản⟧ makanan laut | ⟦suất⟧ porsi | ⟦bò tùng xẻo⟧ daging sapi bakar berbumbu | ⟦gỏi cuốn⟧ lumpia segar
+=ja
+核心表現：⟦mà⟧
+⟦mà⟧ は「名詞 ＋ mà」（名詞が／名詞なのに）の形で使われ、名詞を指定して強調する意味を表します。
+❶ ⟦Nhân viên nhà hàng mà không biết cách thanh toán bằng thẻ tín dụng thì không được.⟧ — 食堂の店員がクレジットカードで会計する方法を知らないなんてだめだ。
+❷ Ⓐ ⟦Nghe nói ngày mai trời sẽ lạnh đấy.⟧ — 明日は寒いらしいよ。 Ⓑ ⟦Tháng 10 mà trời đã lạnh rồi à? Mùa thu đi nhanh quá!⟧ — 10月なのにもう寒いの？秋が過ぎるのが早すぎる！
+いろいろなベトナム料理と単位：⟦cà phê phin⟧ フィンコーヒー | ⟦nước dừa tươi⟧ 生ココナッツジュース | ⟦hai bát bún chả⟧ ブンチャー2杯 | ⟦một đĩa gỏi cuốn⟧ 生春巻き1皿 | ⟦một đĩa gà nướng⟧ 焼き鳥（グリルチキン）1皿 | ⟦hai suất bò tùng xẻo⟧ ボー・トゥン・セオ（ベトナム風牛肉の味付け焼き）2人前
+会話：チャンとミンホがベトナム料理店で料理を注文します。
+チャン：⟦Anh Min-ho biết không? Nhà hàng này quy mô nhỏ nhưng hương vị thì ngon tuyệt.⟧ — ミンホさん、知っていますか。このお店は小さいけれど、味は最高なんです。
+ミンホ：⟦Nhà hàng này mà ngon thế à? OK. Em gọi đi. Để anh ăn thử xem nào.⟧ — この店がそんなにおいしいの？OK、注文して。食べてみるよ。
+チャン：⟦Anh thích thịt bò và hải sản, đúng không?⟧ — 牛肉と海鮮が好きでしたよね？
+ミンホ：⟦Ừ, đúng rồi. Em nhớ tốt nhỉ?⟧ — うん、そうだよ。よく覚えてるね。
+チャン：⟦Nhớ chứ! Thế em gọi nhé. Em ơi, cho hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt. Còn đồ uống thì...⟧ — 覚えてますよ！じゃあ注文しますね。すみません、ボー・トゥン・セオ2人前とエビと豚肉の生春巻き1皿ください。飲み物は……
+ミンホ：⟦Trang ơi, đồ uống trên bàn bên cạnh là gì?⟧ — チャン、隣のテーブルの飲み物は何？
+チャン：⟦À, đó là nước dừa tươi. Anh thử nhé.⟧ — ああ、あれは生ココナッツジュースです。飲んでみてください。
+文型練習 — ミンホの好きなもの：⟦thịt bò và hải sản⟧ / ⟦thịt gà và bún chả⟧；チャンの注文：⟦hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt⟧ / ⟦một đĩa gà nướng và hai bát bún chả⟧；ミンホが飲み物を見た場所：⟦trên bàn bên cạnh⟧（隣のテーブル）/ ⟦trong thực đơn này⟧（このメニュー）；その飲み物：⟦nước dừa tươi⟧ / ⟦cà phê phin⟧。
+例：⟦Người đẹp mà⟧ — Ⓐ ⟦Cô ấy đẹp nhưng tính cách thì không tốt.⟧ — 彼女はきれいだけど性格はよくない。 Ⓑ ⟦Người đẹp mà xấu tính thế à?⟧ — 美人なのにそんなに性格が悪いの？
+❶ ⟦Công ti lớn mà⟧ — Ⓐ ⟦Công ti này lớn nhưng lương của nhân viên thì không cao.⟧ — この会社は大きいけれど社員の給料は高くない。 Ⓑ ⟦Công ti lớn mà lương không cao à?⟧ — 大企業なのに給料が高くないの？
+❷ ⟦Nhà hàng đông khách mà⟧ — Ⓐ ⟦Nhà hàng ấy đông khách nhưng chỗ đỗ xe thì không có.⟧ — あの店は客が多いけれど駐車場がない。 Ⓑ ⟦Nhà hàng đông khách mà không có chỗ đỗ xe à?⟧ — 客が多い店なのに駐車場がないの？
+新出単語：⟦thẻ⟧ カード | ⟦tín dụng⟧ 信用 | ⟦tính cách⟧ 性格 | ⟦xấu tính⟧ 性格が悪い | ⟦quy mô⟧ 規模 | ⟦hương⟧ 香り | ⟦vị⟧ 味 | ⟦tuyệt⟧ すばらしい | ⟦mà⟧ ～なのに（強調） | ⟦hải sản⟧ 海産物 | ⟦suất⟧ 人前、分量 | ⟦bò tùng xẻo⟧ ベトナム風牛肉の味付け焼き | ⟦gỏi cuốn⟧ 生春巻き
+=pl
+Kluczowe wyrażenie: ⟦mà⟧
+⟦mà⟧ występuje w formie „rzeczownik + mà” (jako ~, a przecież ~) i wyróżnia oraz podkreśla dany rzeczownik.
+❶ ⟦Nhân viên nhà hàng mà không biết cách thanh toán bằng thẻ tín dụng thì không được.⟧ — Pracownik restauracji, który nie umie przyjąć płatności kartą kredytową? Tak nie może być.
+❷ Ⓐ ⟦Nghe nói ngày mai trời sẽ lạnh đấy.⟧ — Podobno jutro będzie zimno. Ⓑ ⟦Tháng 10 mà trời đã lạnh rồi à? Mùa thu đi nhanh quá!⟧ — Dopiero październik, a już zimno? Jesień tak szybko mija!
+Wietnamskie dania i jednostki: ⟦cà phê phin⟧ kawa z filtra phin | ⟦nước dừa tươi⟧ świeża woda kokosowa | ⟦hai bát bún chả⟧ dwie miski bún chả | ⟦một đĩa gỏi cuốn⟧ talerz świeżych sajgonek | ⟦một đĩa gà nướng⟧ talerz grillowanego kurczaka | ⟦hai suất bò tùng xẻo⟧ dwie porcje bò tùng xẻo (marynowana grillowana wołowina)
+Dialog: Trang i Min-ho zamawiają jedzenie w wietnamskiej restauracji.
+Trang: ⟦Anh Min-ho biết không? Nhà hàng này quy mô nhỏ nhưng hương vị thì ngon tuyệt.⟧ — Wiesz, Min-ho? Ta restauracja jest mała, ale jedzenie jest przepyszne.
+Min-ho: ⟦Nhà hàng này mà ngon thế à? OK. Em gọi đi. Để anh ăn thử xem nào.⟧ — Ta restauracja jest aż tak dobra? Dobrze. Zamawiaj. Spróbuję.
+Trang: ⟦Anh thích thịt bò và hải sản, đúng không?⟧ — Lubisz wołowinę i owoce morza, prawda?
+Min-ho: ⟦Ừ, đúng rồi. Em nhớ tốt nhỉ?⟧ — Tak, zgadza się. Ale masz pamięć!
+Trang: ⟦Nhớ chứ! Thế em gọi nhé. Em ơi, cho hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt. Còn đồ uống thì...⟧ — Jasne, że pamiętam! To zamawiam. Proszę dwie porcje bò tùng xẻo i talerz sajgonek z krewetkami i mięsem. A do picia…
+Min-ho: ⟦Trang ơi, đồ uống trên bàn bên cạnh là gì?⟧ — Trang, co to za napój na sąsiednim stoliku?
+Trang: ⟦À, đó là nước dừa tươi. Anh thử nhé.⟧ — A, to świeża woda kokosowa. Spróbuj.
+Ćwiczenie wzorców — co lubi Min-ho: ⟦thịt bò và hải sản⟧ / ⟦thịt gà và bún chả⟧; co zamawia Trang: ⟦hai suất bò tùng xẻo và một đĩa gỏi cuốn tôm thịt⟧ / ⟦một đĩa gà nướng và hai bát bún chả⟧; gdzie Min-ho zobaczył napój: ⟦trên bàn bên cạnh⟧ (na sąsiednim stoliku) / ⟦trong thực đơn này⟧ (w tym menu); co to za napój: ⟦nước dừa tươi⟧ / ⟦cà phê phin⟧.
+Wzór: ⟦Người đẹp mà⟧ — Ⓐ ⟦Cô ấy đẹp nhưng tính cách thì không tốt.⟧ — Jest ładna, ale ma niedobry charakter. Ⓑ ⟦Người đẹp mà xấu tính thế à?⟧ — Taka ładna, a taka złośliwa?
+❶ ⟦Công ti lớn mà⟧ — Ⓐ ⟦Công ti này lớn nhưng lương của nhân viên thì không cao.⟧ — Ta firma jest duża, ale pensje pracowników nie są wysokie. Ⓑ ⟦Công ti lớn mà lương không cao à?⟧ — Taka duża firma, a pensje niskie?
+❷ ⟦Nhà hàng đông khách mà⟧ — Ⓐ ⟦Nhà hàng ấy đông khách nhưng chỗ đỗ xe thì không có.⟧ — Ta restauracja ma wielu gości, ale nie ma parkingu. Ⓑ ⟦Nhà hàng đông khách mà không có chỗ đỗ xe à?⟧ — Tak oblegana restauracja, a nie ma parkingu?
+Nowe słówka: ⟦thẻ⟧ karta | ⟦tín dụng⟧ kredyt | ⟦tính cách⟧ charakter | ⟦xấu tính⟧ o złym charakterze | ⟦quy mô⟧ skala, rozmiar | ⟦hương⟧ aromat | ⟦vị⟧ smak | ⟦tuyệt⟧ wspaniały | ⟦mà⟧ (podkreślenie) a przecież | ⟦hải sản⟧ owoce morza | ⟦suất⟧ porcja | ⟦bò tùng xẻo⟧ marynowana grillowana wołowina | ⟦gỏi cuốn⟧ świeże sajgonki

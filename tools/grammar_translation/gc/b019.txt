@@ -1,0 +1,181 @@
+@@ pdf-grammar-4dc9ac81ce9359e0#0
+=cs
+Klíčový výraz: ⟦thì ra⟧
+⟦thì ra ~⟧ znamená „(jak se ukázalo) ~, aha, takže ~“.
+❶ ⟦Thì ra cô ấy là giáo viên. Trông cô ấy trẻ quá nên tôi tưởng cô ấy là sinh viên.⟧ — Takže ona je učitelka. Vypadá tak mladě, že jsem si myslel, že je studentka.
+❷ Ⓐ ⟦Thì ra không phải hôm nay là ngày có hẹn phỏng vấn.⟧ — Takže pohovor není dnes. Ⓑ ⟦Vâng, ngày mai anh ạ.⟧ — Ano, je zítra.
+Výrazy k taxi ve Vietnamu: ⟦tải ứng dụng đặt taxi⟧ stáhnout aplikaci na objednání taxi | ⟦số tiền taxi ước lượng⟧ odhadovaná cena taxi | ⟦tài xế không chạy vòng mà đi thẳng⟧ řidič nejezdí oklikou, ale jede přímo | ⟦đặt taxi qua ứng dụng trên điện thoại di động⟧ objednat taxi přes aplikaci v mobilu
+Rozhovor: Trang a Min-ho se po večeři chystají domů.
+Min-ho: ⟦Trang ơi, mình gọi taxi đi. Anh tiễn em về nhà rồi về khách sạn nhé. Đã muộn rồi mà để phụ nữ về nhà một mình thì không lịch sự mà.⟧ — Trang, zavoláme taxi. Doprovodím tě domů a pak pojedu do hotelu. Už je pozdě a nechat ženu jet domů samotnou není slušné.
+Trang: ⟦Anh xã giao thế!⟧ — Vy jste ale galantní!
+Min-ho: ⟦Ha ha. Em gọi taxi giúp anh nhé. Anh không nhớ được số điện thoại gọi taxi.⟧ — Haha. Zavolej mi prosím taxi. Nepamatuji si číslo na taxi.
+Trang: ⟦Ơ, anh không biết cách đặt taxi qua ứng dụng trên điện thoại di động à?⟧ — Cože, vy nevíte, jak si objednat taxi přes aplikaci v mobilu?
+Min-ho: ⟦Ồ, thì ra dạo này có thể đặt taxi qua ứng dụng.⟧ — Aha, takže dnes už se dá taxi objednat přes aplikaci.
+Trang: ⟦Vâng, anh có thể tải ứng dụng đặt taxi vào điện thoại di động để gọi taxi. Anh không cần lo về tiền taxi vì có thể biết trước được số tiền ước lượng từ chỗ anh bắt đầu đi đến nơi anh đến.⟧ — Ano, můžete si do mobilu stáhnout aplikaci a přes ni taxi zavolat. O cenu se nemusíte bát, protože předem uvidíte odhadovanou částku z místa, odkud jedete, až do cíle.
+Procvičování — jak Trang hodnotí Min-ha: ⟦xã giao⟧ (společenský, zdvořilý) / ⟦ga lăng⟧ (galantní); pamatuje si číslo na taxi?: ⟦không nhớ được⟧ (nemůže si vzpomenout) / ⟦quên mất⟧ (zapomněl); přes jaký telefon: ⟦điện thoại di động⟧ / ⟦điện thoại thông minh⟧ (chytrý telefon); proč se nemusí bát ceny: ⟦biết trước được số tiền ước lượng⟧ (zná předem odhad) / ⟦tài xế không chạy vòng mà đi thẳng⟧ (řidič jede přímo).
+Vzor: Ⓐ ⟦Nghe nói anh ấy sinh ra ở Mỹ nhưng bố mẹ là người Việt Nam.⟧ — Prý se narodil v Americe, ale rodiče má Vietnamce. Ⓑ ⟦Thì ra anh ấy là người Mỹ gốc Việt Nam.⟧ — Takže je to Američan vietnamského původu.
+❶ ⟦nghỉ hưu⟧: Ⓐ ⟦Anh nói là muốn gặp ông Nam ạ? Xin lỗi, ông ấy đã nghỉ hưu được 2 tháng rồi.⟧ — Chcete mluvit s panem Namem? Promiňte, je už dva měsíce v důchodu. Ⓑ ⟦Thế à? Thì ra ông ấy đã nghỉ hưu.⟧ — Opravdu? Takže už je v důchodu.
+❷ ⟦bức tranh vũ trụ⟧: Ⓐ ⟦Ở giữa bức tranh là trái đất, còn xung quanh là các ngôi sao đấy.⟧ — Uprostřed obrazu je Země a kolem hvězdy. Ⓑ ⟦À, thì ra đây là bức tranh vũ trụ.⟧ — Aha, takže je to obraz vesmíru.
+Nová slovíčka: ⟦tưởng⟧ myslet si (mylně) | ⟦gốc⟧ původ, kořen | ⟦nghỉ hưu⟧ odejít do důchodu | ⟦bức tranh⟧ obraz | ⟦vũ trụ⟧ vesmír | ⟦trái đất⟧ Země | ⟦ngôi sao⟧ hvězda | ⟦đánh giá⟧ hodnotit | ⟦tiễn⟧ doprovodit | ⟦xã giao⟧ společenský | ⟦ứng dụng⟧ aplikace | ⟦tải⟧ stáhnout | ⟦ước lượng⟧ odhadnout
+=zh_cn
+核心表达：⟦thì ra⟧
+⟦thì ra ~⟧ 意为“（原来）……啊、原来是……”。
+❶ ⟦Thì ra cô ấy là giáo viên. Trông cô ấy trẻ quá nên tôi tưởng cô ấy là sinh viên.⟧ —— 原来她是老师。她看起来太年轻了，我还以为她是大学生。
+❷ Ⓐ ⟦Thì ra không phải hôm nay là ngày có hẹn phỏng vấn.⟧ —— 原来面试不是今天。 Ⓑ ⟦Vâng, ngày mai anh ạ.⟧ —— 是的，是明天。
+与越南出租车相关的表达：⟦tải ứng dụng đặt taxi⟧ 下载叫车应用 | ⟦số tiền taxi ước lượng⟧ 预估车费 | ⟦tài xế không chạy vòng mà đi thẳng⟧ 司机不绕路，直接开过去 | ⟦đặt taxi qua ứng dụng trên điện thoại di động⟧ 用手机应用叫出租车
+对话：庄和敏浩吃完晚饭准备回家。
+敏浩：⟦Trang ơi, mình gọi taxi đi. Anh tiễn em về nhà rồi về khách sạn nhé. Đã muộn rồi mà để phụ nữ về nhà một mình thì không lịch sự mà.⟧ —— 庄，我们叫出租车吧。我先送你回家再回酒店。这么晚了，让女士一个人回家不礼貌。
+庄：⟦Anh xã giao thế!⟧ —— 你真有绅士风度！
+敏浩：⟦Ha ha. Em gọi taxi giúp anh nhé. Anh không nhớ được số điện thoại gọi taxi.⟧ —— 哈哈。你帮我叫一下出租车吧。我记不住叫车电话。
+庄：⟦Ơ, anh không biết cách đặt taxi qua ứng dụng trên điện thoại di động à?⟧ —— 咦，你不知道用手机应用叫车吗？
+敏浩：⟦Ồ, thì ra dạo này có thể đặt taxi qua ứng dụng.⟧ —— 哦，原来现在可以用应用叫车了。
+庄：⟦Vâng, anh có thể tải ứng dụng đặt taxi vào điện thoại di động để gọi taxi. Anh không cần lo về tiền taxi vì có thể biết trước được số tiền ước lượng từ chỗ anh bắt đầu đi đến nơi anh đến.⟧ —— 是的，你可以把叫车应用下载到手机上叫车。不用担心车费，因为可以事先知道从出发地到目的地的预估金额。
+句型练习 —— 庄如何评价敏浩：⟦xã giao⟧（善于社交）/ ⟦ga lăng⟧（有绅士风度）；敏浩记得叫车电话吗：⟦không nhớ được⟧（记不住）/ ⟦quên mất⟧（忘了）；用什么手机叫车：⟦điện thoại di động⟧ / ⟦điện thoại thông minh⟧（智能手机）；为什么不用担心车费：⟦biết trước được số tiền ước lượng⟧（能预先知道预估金额）/ ⟦tài xế không chạy vòng mà đi thẳng⟧（司机不绕路）。
+范例：Ⓐ ⟦Nghe nói anh ấy sinh ra ở Mỹ nhưng bố mẹ là người Việt Nam.⟧ —— 听说他出生在美国，但父母是越南人。 Ⓑ ⟦Thì ra anh ấy là người Mỹ gốc Việt Nam.⟧ —— 原来他是越南裔美国人。
+❶ ⟦nghỉ hưu⟧：Ⓐ ⟦Anh nói là muốn gặp ông Nam ạ? Xin lỗi, ông ấy đã nghỉ hưu được 2 tháng rồi.⟧ —— 您说想见南先生吗？抱歉，他已经退休两个月了。 Ⓑ ⟦Thế à? Thì ra ông ấy đã nghỉ hưu.⟧ —— 是吗？原来他已经退休了。
+❷ ⟦bức tranh vũ trụ⟧：Ⓐ ⟦Ở giữa bức tranh là trái đất, còn xung quanh là các ngôi sao đấy.⟧ —— 画的中间是地球，周围是星星。 Ⓑ ⟦À, thì ra đây là bức tranh vũ trụ.⟧ —— 啊，原来这是一幅宇宙画。
+新单词：⟦tưởng⟧ 以为 | ⟦gốc⟧ 根源，原籍 | ⟦nghỉ hưu⟧ 退休 | ⟦bức tranh⟧ 画 | ⟦vũ trụ⟧ 宇宙 | ⟦trái đất⟧ 地球 | ⟦ngôi sao⟧ 星星 | ⟦đánh giá⟧ 评价 | ⟦tiễn⟧ 送行 | ⟦xã giao⟧ 善于社交 | ⟦ứng dụng⟧ 应用程序 | ⟦tải⟧ 下载 | ⟦ước lượng⟧ 估计
+=zh
+核心表達：⟦thì ra⟧
+⟦thì ra ~⟧ 意為「（原來）……啊、原來是……」。
+❶ ⟦Thì ra cô ấy là giáo viên. Trông cô ấy trẻ quá nên tôi tưởng cô ấy là sinh viên.⟧ —— 原來她是老師。她看起來太年輕了，我還以為她是大學生。
+❷ Ⓐ ⟦Thì ra không phải hôm nay là ngày có hẹn phỏng vấn.⟧ —— 原來面試不是今天。 Ⓑ ⟦Vâng, ngày mai anh ạ.⟧ —— 是的，是明天。
+與越南計程車相關的表達：⟦tải ứng dụng đặt taxi⟧ 下載叫車App | ⟦số tiền taxi ước lượng⟧ 預估車資 | ⟦tài xế không chạy vòng mà đi thẳng⟧ 司機不繞路，直接開過去 | ⟦đặt taxi qua ứng dụng trên điện thoại di động⟧ 用手機App叫計程車
+對話：莊和敏浩吃完晚餐準備回家。
+敏浩：⟦Trang ơi, mình gọi taxi đi. Anh tiễn em về nhà rồi về khách sạn nhé. Đã muộn rồi mà để phụ nữ về nhà một mình thì không lịch sự mà.⟧ —— 莊，我們叫計程車吧。我先送你回家再回飯店。這麼晚了，讓女士一個人回家不禮貌。
+莊：⟦Anh xã giao thế!⟧ —— 你真有紳士風度！
+敏浩：⟦Ha ha. Em gọi taxi giúp anh nhé. Anh không nhớ được số điện thoại gọi taxi.⟧ —— 哈哈。你幫我叫一下計程車吧。我記不住叫車電話。
+莊：⟦Ơ, anh không biết cách đặt taxi qua ứng dụng trên điện thoại di động à?⟧ —— 咦，你不知道用手機App叫車嗎？
+敏浩：⟦Ồ, thì ra dạo này có thể đặt taxi qua ứng dụng.⟧ —— 喔，原來現在可以用App叫車了。
+莊：⟦Vâng, anh có thể tải ứng dụng đặt taxi vào điện thoại di động để gọi taxi. Anh không cần lo về tiền taxi vì có thể biết trước được số tiền ước lượng từ chỗ anh bắt đầu đi đến nơi anh đến.⟧ —— 是的，你可以把叫車App下載到手機上叫車。不用擔心車資，因為可以事先知道從出發地到目的地的預估金額。
+句型練習 —— 莊如何評價敏浩：⟦xã giao⟧（善於社交）/ ⟦ga lăng⟧（有紳士風度）；敏浩記得叫車電話嗎：⟦không nhớ được⟧（記不住）/ ⟦quên mất⟧（忘了）；用什麼手機叫車：⟦điện thoại di động⟧ / ⟦điện thoại thông minh⟧（智慧型手機）；為什麼不用擔心車資：⟦biết trước được số tiền ước lượng⟧（能預先知道預估金額）/ ⟦tài xế không chạy vòng mà đi thẳng⟧（司機不繞路）。
+範例：Ⓐ ⟦Nghe nói anh ấy sinh ra ở Mỹ nhưng bố mẹ là người Việt Nam.⟧ —— 聽說他出生在美國，但父母是越南人。 Ⓑ ⟦Thì ra anh ấy là người Mỹ gốc Việt Nam.⟧ —— 原來他是越南裔美國人。
+❶ ⟦nghỉ hưu⟧：Ⓐ ⟦Anh nói là muốn gặp ông Nam ạ? Xin lỗi, ông ấy đã nghỉ hưu được 2 tháng rồi.⟧ —— 您說想見南先生嗎？抱歉，他已經退休兩個月了。 Ⓑ ⟦Thế à? Thì ra ông ấy đã nghỉ hưu.⟧ —— 是嗎？原來他已經退休了。
+❷ ⟦bức tranh vũ trụ⟧：Ⓐ ⟦Ở giữa bức tranh là trái đất, còn xung quanh là các ngôi sao đấy.⟧ —— 畫的中間是地球，周圍是星星。 Ⓑ ⟦À, thì ra đây là bức tranh vũ trụ.⟧ —— 啊，原來這是一幅宇宙畫。
+新單字：⟦tưởng⟧ 以為 | ⟦gốc⟧ 根源，原籍 | ⟦nghỉ hưu⟧ 退休 | ⟦bức tranh⟧ 畫 | ⟦vũ trụ⟧ 宇宙 | ⟦trái đất⟧ 地球 | ⟦ngôi sao⟧ 星星 | ⟦đánh giá⟧ 評價 | ⟦tiễn⟧ 送行 | ⟦xã giao⟧ 善於社交 | ⟦ứng dụng⟧ 應用程式 | ⟦tải⟧ 下載 | ⟦ước lượng⟧ 估計
+=en
+Key expression: ⟦thì ra⟧
+⟦thì ra ~⟧ means "(it turns out that) ~, so that's why ~".
+❶ ⟦Thì ra cô ấy là giáo viên. Trông cô ấy trẻ quá nên tôi tưởng cô ấy là sinh viên.⟧ — So she's a teacher. She looks so young that I thought she was a student.
+❷ Ⓐ ⟦Thì ra không phải hôm nay là ngày có hẹn phỏng vấn.⟧ — So the interview isn't today after all. Ⓑ ⟦Vâng, ngày mai anh ạ.⟧ — That's right, it's tomorrow.
+Taxi expressions in Vietnam: ⟦tải ứng dụng đặt taxi⟧ download a taxi-booking app | ⟦số tiền taxi ước lượng⟧ estimated taxi fare | ⟦tài xế không chạy vòng mà đi thẳng⟧ the driver doesn't take detours but goes straight there | ⟦đặt taxi qua ứng dụng trên điện thoại di động⟧ book a taxi through a phone app
+Dialogue: Trang and Min-ho get ready to go home after dinner.
+Min-ho: ⟦Trang ơi, mình gọi taxi đi. Anh tiễn em về nhà rồi về khách sạn nhé. Đã muộn rồi mà để phụ nữ về nhà một mình thì không lịch sự mà.⟧ — Trang, let's call a taxi. I'll see you home and then go back to the hotel. It's late, and letting a woman go home alone wouldn't be polite.
+Trang: ⟦Anh xã giao thế!⟧ — What a gentleman!
+Min-ho: ⟦Ha ha. Em gọi taxi giúp anh nhé. Anh không nhớ được số điện thoại gọi taxi.⟧ — Ha ha. Could you call a taxi for me? I can't remember the taxi number.
+Trang: ⟦Ơ, anh không biết cách đặt taxi qua ứng dụng trên điện thoại di động à?⟧ — Oh, you don't know how to book a taxi with a phone app?
+Min-ho: ⟦Ồ, thì ra dạo này có thể đặt taxi qua ứng dụng.⟧ — Oh, so these days you can book a taxi through an app.
+Trang: ⟦Vâng, anh có thể tải ứng dụng đặt taxi vào điện thoại di động để gọi taxi. Anh không cần lo về tiền taxi vì có thể biết trước được số tiền ước lượng từ chỗ anh bắt đầu đi đến nơi anh đến.⟧ — Yes, you can download a taxi app to your phone to call one. You don't need to worry about the fare, because you can see the estimated amount from where you start to your destination in advance.
+Pattern practice — how Trang sees Min-ho: ⟦xã giao⟧ (sociable, courteous) / ⟦ga lăng⟧ (gallant); does he remember the taxi number?: ⟦không nhớ được⟧ (can't remember) / ⟦quên mất⟧ (forgot); booking on what phone: ⟦điện thoại di động⟧ / ⟦điện thoại thông minh⟧ (smartphone); why not worry about the fare: ⟦biết trước được số tiền ước lượng⟧ (can know the estimate in advance) / ⟦tài xế không chạy vòng mà đi thẳng⟧ (the driver goes straight there).
+Model: Ⓐ ⟦Nghe nói anh ấy sinh ra ở Mỹ nhưng bố mẹ là người Việt Nam.⟧ — I hear he was born in America but his parents are Vietnamese. Ⓑ ⟦Thì ra anh ấy là người Mỹ gốc Việt Nam.⟧ — So he's a Vietnamese American.
+❶ ⟦nghỉ hưu⟧: Ⓐ ⟦Anh nói là muốn gặp ông Nam ạ? Xin lỗi, ông ấy đã nghỉ hưu được 2 tháng rồi.⟧ — You'd like to see Mr. Nam? I'm sorry, he retired two months ago. Ⓑ ⟦Thế à? Thì ra ông ấy đã nghỉ hưu.⟧ — Really? So he's retired.
+❷ ⟦bức tranh vũ trụ⟧: Ⓐ ⟦Ở giữa bức tranh là trái đất, còn xung quanh là các ngôi sao đấy.⟧ — In the middle of the picture is the Earth, and around it are the stars. Ⓑ ⟦À, thì ra đây là bức tranh vũ trụ.⟧ — Ah, so it's a picture of the universe.
+New words: ⟦tưởng⟧ to think (mistakenly) | ⟦gốc⟧ origin, root | ⟦nghỉ hưu⟧ to retire | ⟦bức tranh⟧ picture, painting | ⟦vũ trụ⟧ universe | ⟦trái đất⟧ the Earth | ⟦ngôi sao⟧ star | ⟦đánh giá⟧ to evaluate | ⟦tiễn⟧ to see off | ⟦xã giao⟧ sociable | ⟦ứng dụng⟧ app | ⟦tải⟧ to download | ⟦ước lượng⟧ to estimate
+=fr
+Expression clé : ⟦thì ra⟧
+⟦thì ra ~⟧ signifie « (en fait) ~, ah, c'est donc ~ ».
+❶ ⟦Thì ra cô ấy là giáo viên. Trông cô ấy trẻ quá nên tôi tưởng cô ấy là sinh viên.⟧ — Elle est donc enseignante. Elle a l'air si jeune que je la croyais étudiante.
+❷ Ⓐ ⟦Thì ra không phải hôm nay là ngày có hẹn phỏng vấn.⟧ — L'entretien n'est donc pas aujourd'hui. Ⓑ ⟦Vâng, ngày mai anh ạ.⟧ — Oui, c'est demain.
+Expressions liées aux taxis au Viêt Nam : ⟦tải ứng dụng đặt taxi⟧ télécharger une appli de taxi | ⟦số tiền taxi ước lượng⟧ tarif estimé | ⟦tài xế không chạy vòng mà đi thẳng⟧ le chauffeur ne fait pas de détour et va droit au but | ⟦đặt taxi qua ứng dụng trên điện thoại di động⟧ réserver un taxi via une appli mobile
+Dialogue : Trang et Min-ho s'apprêtent à rentrer après le dîner.
+Min-ho : ⟦Trang ơi, mình gọi taxi đi. Anh tiễn em về nhà rồi về khách sạn nhé. Đã muộn rồi mà để phụ nữ về nhà một mình thì không lịch sự mà.⟧ — Trang, appelons un taxi. Je te raccompagne chez toi, puis je rentre à l'hôtel. Il est tard, et laisser une femme rentrer seule, ce ne serait pas poli.
+Trang : ⟦Anh xã giao thế!⟧ — Quel gentleman !
+Min-ho : ⟦Ha ha. Em gọi taxi giúp anh nhé. Anh không nhớ được số điện thoại gọi taxi.⟧ — Ha ha. Tu peux m'appeler un taxi ? Je ne me souviens pas du numéro.
+Trang : ⟦Ơ, anh không biết cách đặt taxi qua ứng dụng trên điện thoại di động à?⟧ — Ah, tu ne sais pas réserver un taxi avec une appli sur ton portable ?
+Min-ho : ⟦Ồ, thì ra dạo này có thể đặt taxi qua ứng dụng.⟧ — Oh, alors maintenant on peut réserver un taxi par appli.
+Trang : ⟦Vâng, anh có thể tải ứng dụng đặt taxi vào điện thoại di động để gọi taxi. Anh không cần lo về tiền taxi vì có thể biết trước được số tiền ước lượng từ chỗ anh bắt đầu đi đến nơi anh đến.⟧ — Oui, tu peux télécharger l'appli sur ton portable pour appeler un taxi. Pas besoin de t'inquiéter du prix : tu connais à l'avance le montant estimé entre ton point de départ et ta destination.
+Exercices — comment Trang juge Min-ho : ⟦xã giao⟧ (courtois) / ⟦ga lăng⟧ (galant) ; se souvient-il du numéro ? : ⟦không nhớ được⟧ (il n'arrive pas à s'en souvenir) / ⟦quên mất⟧ (il l'a oublié) ; sur quel téléphone : ⟦điện thoại di động⟧ / ⟦điện thoại thông minh⟧ (smartphone) ; pourquoi ne pas s'inquiéter du prix : ⟦biết trước được số tiền ước lượng⟧ (on connaît l'estimation) / ⟦tài xế không chạy vòng mà đi thẳng⟧ (le chauffeur va tout droit).
+Modèle : Ⓐ ⟦Nghe nói anh ấy sinh ra ở Mỹ nhưng bố mẹ là người Việt Nam.⟧ — Il paraît qu'il est né aux États-Unis, mais que ses parents sont vietnamiens. Ⓑ ⟦Thì ra anh ấy là người Mỹ gốc Việt Nam.⟧ — C'est donc un Américain d'origine vietnamienne.
+❶ ⟦nghỉ hưu⟧ : Ⓐ ⟦Anh nói là muốn gặp ông Nam ạ? Xin lỗi, ông ấy đã nghỉ hưu được 2 tháng rồi.⟧ — Vous voulez voir M. Nam ? Désolé, il est à la retraite depuis deux mois. Ⓑ ⟦Thế à? Thì ra ông ấy đã nghỉ hưu.⟧ — Ah bon ? Il est donc à la retraite.
+❷ ⟦bức tranh vũ trụ⟧ : Ⓐ ⟦Ở giữa bức tranh là trái đất, còn xung quanh là các ngôi sao đấy.⟧ — Au centre du tableau, il y a la Terre, et autour, les étoiles. Ⓑ ⟦À, thì ra đây là bức tranh vũ trụ.⟧ — Ah, c'est donc un tableau de l'univers.
+Nouveaux mots : ⟦tưởng⟧ croire (à tort) | ⟦gốc⟧ origine, racine | ⟦nghỉ hưu⟧ prendre sa retraite | ⟦bức tranh⟧ tableau | ⟦vũ trụ⟧ univers | ⟦trái đất⟧ la Terre | ⟦ngôi sao⟧ étoile | ⟦đánh giá⟧ évaluer | ⟦tiễn⟧ raccompagner | ⟦xã giao⟧ sociable | ⟦ứng dụng⟧ application | ⟦tải⟧ télécharger | ⟦ước lượng⟧ estimer
+=de
+Schlüsselausdruck: ⟦thì ra⟧
+⟦thì ra ~⟧ bedeutet „(wie sich herausstellt) ~, ach so, also ~“.
+❶ ⟦Thì ra cô ấy là giáo viên. Trông cô ấy trẻ quá nên tôi tưởng cô ấy là sinh viên.⟧ — Sie ist also Lehrerin. Sie sieht so jung aus, dass ich dachte, sie sei Studentin.
+❷ Ⓐ ⟦Thì ra không phải hôm nay là ngày có hẹn phỏng vấn.⟧ — Das Vorstellungsgespräch ist also nicht heute. Ⓑ ⟦Vâng, ngày mai anh ạ.⟧ — Genau, morgen.
+Ausdrücke rund ums Taxi in Vietnam: ⟦tải ứng dụng đặt taxi⟧ eine Taxi-App herunterladen | ⟦số tiền taxi ước lượng⟧ geschätzter Fahrpreis | ⟦tài xế không chạy vòng mà đi thẳng⟧ der Fahrer fährt keine Umwege, sondern direkt | ⟦đặt taxi qua ứng dụng trên điện thoại di động⟧ ein Taxi per Handy-App bestellen
+Dialog: Trang und Min-ho machen sich nach dem Abendessen auf den Heimweg.
+Min-ho: ⟦Trang ơi, mình gọi taxi đi. Anh tiễn em về nhà rồi về khách sạn nhé. Đã muộn rồi mà để phụ nữ về nhà một mình thì không lịch sự mà.⟧ — Trang, lass uns ein Taxi rufen. Ich bringe dich nach Hause und fahre dann ins Hotel. Es ist schon spät, und eine Frau allein nach Hause fahren zu lassen, wäre unhöflich.
+Trang: ⟦Anh xã giao thế!⟧ — Wie galant!
+Min-ho: ⟦Ha ha. Em gọi taxi giúp anh nhé. Anh không nhớ được số điện thoại gọi taxi.⟧ — Haha. Ruf mir bitte ein Taxi. Ich weiß die Taxinummer nicht mehr.
+Trang: ⟦Ơ, anh không biết cách đặt taxi qua ứng dụng trên điện thoại di động à?⟧ — Nanu, weißt du nicht, wie man ein Taxi per Handy-App bestellt?
+Min-ho: ⟦Ồ, thì ra dạo này có thể đặt taxi qua ứng dụng.⟧ — Ach so, heutzutage kann man also Taxis per App bestellen.
+Trang: ⟦Vâng, anh có thể tải ứng dụng đặt taxi vào điện thoại di động để gọi taxi. Anh không cần lo về tiền taxi vì có thể biết trước được số tiền ước lượng từ chỗ anh bắt đầu đi đến nơi anh đến.⟧ — Ja, du kannst dir die Taxi-App aufs Handy laden und darüber ein Taxi rufen. Um den Preis musst du dir keine Sorgen machen, denn du siehst vorher den geschätzten Betrag vom Start bis zum Ziel.
+Satzmusterübung — wie Trang Min-ho einschätzt: ⟦xã giao⟧ (höflich, gesellig) / ⟦ga lăng⟧ (galant); erinnert er sich an die Taxinummer?: ⟦không nhớ được⟧ (kann sich nicht erinnern) / ⟦quên mất⟧ (hat sie vergessen); über welches Telefon: ⟦điện thoại di động⟧ / ⟦điện thoại thông minh⟧ (Smartphone); warum keine Sorge um den Preis: ⟦biết trước được số tiền ước lượng⟧ (Schätzpreis vorab bekannt) / ⟦tài xế không chạy vòng mà đi thẳng⟧ (der Fahrer fährt direkt).
+Muster: Ⓐ ⟦Nghe nói anh ấy sinh ra ở Mỹ nhưng bố mẹ là người Việt Nam.⟧ — Er soll in Amerika geboren sein, aber seine Eltern sind Vietnamesen. Ⓑ ⟦Thì ra anh ấy là người Mỹ gốc Việt Nam.⟧ — Er ist also Amerikaner vietnamesischer Herkunft.
+❶ ⟦nghỉ hưu⟧: Ⓐ ⟦Anh nói là muốn gặp ông Nam ạ? Xin lỗi, ông ấy đã nghỉ hưu được 2 tháng rồi.⟧ — Sie möchten Herrn Nam sprechen? Tut mir leid, er ist seit zwei Monaten im Ruhestand. Ⓑ ⟦Thế à? Thì ra ông ấy đã nghỉ hưu.⟧ — Ach wirklich? Er ist also in Rente.
+❷ ⟦bức tranh vũ trụ⟧: Ⓐ ⟦Ở giữa bức tranh là trái đất, còn xung quanh là các ngôi sao đấy.⟧ — In der Mitte des Bildes ist die Erde, und rundherum sind die Sterne. Ⓑ ⟦À, thì ra đây là bức tranh vũ trụ.⟧ — Ach so, das ist also ein Bild vom Weltall.
+Neue Wörter: ⟦tưởng⟧ (irrtümlich) glauben | ⟦gốc⟧ Herkunft, Wurzel | ⟦nghỉ hưu⟧ in Rente gehen | ⟦bức tranh⟧ Bild | ⟦vũ trụ⟧ Weltall | ⟦trái đất⟧ Erde | ⟦ngôi sao⟧ Stern | ⟦đánh giá⟧ bewerten | ⟦tiễn⟧ begleiten | ⟦xã giao⟧ gesellig | ⟦ứng dụng⟧ App | ⟦tải⟧ herunterladen | ⟦ước lượng⟧ schätzen
+=hu
+Kulcskifejezés: ⟦thì ra⟧
+A ⟦thì ra ~⟧ jelentése „(mint kiderült) ~, szóval ~”.
+❶ ⟦Thì ra cô ấy là giáo viên. Trông cô ấy trẻ quá nên tôi tưởng cô ấy là sinh viên.⟧ — Szóval tanárnő. Olyan fiatalnak látszik, hogy azt hittem, egyetemista.
+❷ Ⓐ ⟦Thì ra không phải hôm nay là ngày có hẹn phỏng vấn.⟧ — Szóval nem ma van az interjú. Ⓑ ⟦Vâng, ngày mai anh ạ.⟧ — Igen, holnap.
+Taxival kapcsolatos kifejezések Vietnámban: ⟦tải ứng dụng đặt taxi⟧ taxirendelő alkalmazást letölteni | ⟦số tiền taxi ước lượng⟧ becsült viteldíj | ⟦tài xế không chạy vòng mà đi thẳng⟧ a sofőr nem kerül, hanem egyenesen megy | ⟦đặt taxi qua ứng dụng trên điện thoại di động⟧ taxit rendelni mobilalkalmazáson keresztül
+Párbeszéd: Trang és Min-ho vacsora után hazaindulni készülnek.
+Min-ho: ⟦Trang ơi, mình gọi taxi đi. Anh tiễn em về nhà rồi về khách sạn nhé. Đã muộn rồi mà để phụ nữ về nhà một mình thì không lịch sự mà.⟧ — Trang, hívjunk taxit. Hazakísérlek, aztán megyek a szállodába. Késő van, és nem illik egy nőt egyedül hazaengedni.
+Trang: ⟦Anh xã giao thế!⟧ — Milyen udvarias vagy!
+Min-ho: ⟦Ha ha. Em gọi taxi giúp anh nhé. Anh không nhớ được số điện thoại gọi taxi.⟧ — Haha. Hívnál nekem taxit? Nem emlékszem a taxi számára.
+Trang: ⟦Ơ, anh không biết cách đặt taxi qua ứng dụng trên điện thoại di động à?⟧ — Nahát, nem tudod, hogyan kell mobilalkalmazással taxit rendelni?
+Min-ho: ⟦Ồ, thì ra dạo này có thể đặt taxi qua ứng dụng.⟧ — Ó, szóval manapság már alkalmazással is lehet taxit rendelni.
+Trang: ⟦Vâng, anh có thể tải ứng dụng đặt taxi vào điện thoại di động để gọi taxi. Anh không cần lo về tiền taxi vì có thể biết trước được số tiền ước lượng từ chỗ anh bắt đầu đi đến nơi anh đến.⟧ — Igen, letöltheted a taxirendelő alkalmazást a telefonodra, és azzal hívhatsz taxit. A viteldíj miatt sem kell aggódnod, mert előre láthatod a becsült összeget az indulási helytől a célig.
+Mintagyakorlat — milyennek tartja Trang Min-hót: ⟦xã giao⟧ (udvarias, társasági) / ⟦ga lăng⟧ (gavalléros); emlékszik-e a taxi számára: ⟦không nhớ được⟧ (nem tud visszaemlékezni) / ⟦quên mất⟧ (elfelejtette); milyen telefonon rendel: ⟦điện thoại di động⟧ / ⟦điện thoại thông minh⟧ (okostelefon); miért nem kell aggódni a díj miatt: ⟦biết trước được số tiền ước lượng⟧ (előre tudja a becslést) / ⟦tài xế không chạy vòng mà đi thẳng⟧ (a sofőr egyenesen megy).
+Minta: Ⓐ ⟦Nghe nói anh ấy sinh ra ở Mỹ nhưng bố mẹ là người Việt Nam.⟧ — Azt mondják, Amerikában született, de a szülei vietnámiak. Ⓑ ⟦Thì ra anh ấy là người Mỹ gốc Việt Nam.⟧ — Szóval vietnámi származású amerikai.
+❶ ⟦nghỉ hưu⟧: Ⓐ ⟦Anh nói là muốn gặp ông Nam ạ? Xin lỗi, ông ấy đã nghỉ hưu được 2 tháng rồi.⟧ — Nam úrral szeretne beszélni? Sajnálom, ő már két hónapja nyugdíjas. Ⓑ ⟦Thế à? Thì ra ông ấy đã nghỉ hưu.⟧ — Tényleg? Szóval már nyugdíjba ment.
+❷ ⟦bức tranh vũ trụ⟧: Ⓐ ⟦Ở giữa bức tranh là trái đất, còn xung quanh là các ngôi sao đấy.⟧ — A kép közepén a Föld van, körülötte pedig a csillagok. Ⓑ ⟦À, thì ra đây là bức tranh vũ trụ.⟧ — Ó, szóval ez egy kép a világegyetemről.
+Új szavak: ⟦tưởng⟧ (tévesen) hinni | ⟦gốc⟧ származás, gyökér | ⟦nghỉ hưu⟧ nyugdíjba menni | ⟦bức tranh⟧ kép, festmény | ⟦vũ trụ⟧ világegyetem | ⟦trái đất⟧ a Föld | ⟦ngôi sao⟧ csillag | ⟦đánh giá⟧ értékelni | ⟦tiễn⟧ elkísérni | ⟦xã giao⟧ társasági, udvarias | ⟦ứng dụng⟧ alkalmazás | ⟦tải⟧ letölteni | ⟦ước lượng⟧ becsülni
+=id
+Ungkapan kunci: ⟦thì ra⟧
+⟦thì ra ~⟧ berarti "(ternyata) ~, oh begitu ~".
+❶ ⟦Thì ra cô ấy là giáo viên. Trông cô ấy trẻ quá nên tôi tưởng cô ấy là sinh viên.⟧ — Ternyata dia guru. Dia kelihatan muda sekali sampai saya kira dia mahasiswa.
+❷ Ⓐ ⟦Thì ra không phải hôm nay là ngày có hẹn phỏng vấn.⟧ — Ternyata wawancaranya bukan hari ini. Ⓑ ⟦Vâng, ngày mai anh ạ.⟧ — Ya, besok.
+Ungkapan tentang taksi di Vietnam: ⟦tải ứng dụng đặt taxi⟧ mengunduh aplikasi pemesanan taksi | ⟦số tiền taxi ước lượng⟧ perkiraan ongkos taksi | ⟦tài xế không chạy vòng mà đi thẳng⟧ sopir tidak berputar-putar, tetapi langsung | ⟦đặt taxi qua ứng dụng trên điện thoại di động⟧ memesan taksi lewat aplikasi di ponsel
+Percakapan: Trang dan Min-ho bersiap pulang setelah makan malam.
+Min-ho: ⟦Trang ơi, mình gọi taxi đi. Anh tiễn em về nhà rồi về khách sạn nhé. Đã muộn rồi mà để phụ nữ về nhà một mình thì không lịch sự mà.⟧ — Trang, ayo kita panggil taksi. Kakak antar kamu pulang dulu, lalu ke hotel. Sudah malam, membiarkan perempuan pulang sendirian itu tidak sopan.
+Trang: ⟦Anh xã giao thế!⟧ — Kakak sopan sekali!
+Min-ho: ⟦Ha ha. Em gọi taxi giúp anh nhé. Anh không nhớ được số điện thoại gọi taxi.⟧ — Haha. Tolong panggilkan taksi, ya. Kakak tidak ingat nomor telepon taksi.
+Trang: ⟦Ơ, anh không biết cách đặt taxi qua ứng dụng trên điện thoại di động à?⟧ — Lho, Kakak tidak tahu cara memesan taksi lewat aplikasi di ponsel?
+Min-ho: ⟦Ồ, thì ra dạo này có thể đặt taxi qua ứng dụng.⟧ — Oh, ternyata sekarang bisa pesan taksi lewat aplikasi.
+Trang: ⟦Vâng, anh có thể tải ứng dụng đặt taxi vào điện thoại di động để gọi taxi. Anh không cần lo về tiền taxi vì có thể biết trước được số tiền ước lượng từ chỗ anh bắt đầu đi đến nơi anh đến.⟧ — Ya, Kakak bisa mengunduh aplikasi pemesanan taksi ke ponsel untuk memanggil taksi. Tidak perlu khawatir soal ongkos karena perkiraan biaya dari tempat berangkat sampai tujuan bisa diketahui sebelumnya.
+Latihan pola — penilaian Trang terhadap Min-ho: ⟦xã giao⟧ (pandai bergaul, sopan) / ⟦ga lăng⟧ (gentleman); apakah ingat nomor taksi: ⟦không nhớ được⟧ (tidak bisa ingat) / ⟦quên mất⟧ (lupa); lewat ponsel apa: ⟦điện thoại di động⟧ / ⟦điện thoại thông minh⟧ (ponsel pintar); mengapa tidak perlu khawatir ongkos: ⟦biết trước được số tiền ước lượng⟧ (bisa tahu perkiraannya dulu) / ⟦tài xế không chạy vòng mà đi thẳng⟧ (sopir langsung ke tujuan).
+Contoh: Ⓐ ⟦Nghe nói anh ấy sinh ra ở Mỹ nhưng bố mẹ là người Việt Nam.⟧ — Katanya dia lahir di Amerika, tetapi orang tuanya orang Vietnam. Ⓑ ⟦Thì ra anh ấy là người Mỹ gốc Việt Nam.⟧ — Ternyata dia orang Amerika keturunan Vietnam.
+❶ ⟦nghỉ hưu⟧: Ⓐ ⟦Anh nói là muốn gặp ông Nam ạ? Xin lỗi, ông ấy đã nghỉ hưu được 2 tháng rồi.⟧ — Anda ingin bertemu Pak Nam? Maaf, beliau sudah pensiun dua bulan. Ⓑ ⟦Thế à? Thì ra ông ấy đã nghỉ hưu.⟧ — Oh ya? Ternyata beliau sudah pensiun.
+❷ ⟦bức tranh vũ trụ⟧: Ⓐ ⟦Ở giữa bức tranh là trái đất, còn xung quanh là các ngôi sao đấy.⟧ — Di tengah lukisan ada bumi, di sekelilingnya bintang-bintang. Ⓑ ⟦À, thì ra đây là bức tranh vũ trụ.⟧ — Oh, ternyata ini lukisan alam semesta.
+Kosakata baru: ⟦tưởng⟧ mengira | ⟦gốc⟧ asal, akar | ⟦nghỉ hưu⟧ pensiun | ⟦bức tranh⟧ lukisan | ⟦vũ trụ⟧ alam semesta | ⟦trái đất⟧ bumi | ⟦ngôi sao⟧ bintang | ⟦đánh giá⟧ menilai | ⟦tiễn⟧ mengantar | ⟦xã giao⟧ pandai bergaul | ⟦ứng dụng⟧ aplikasi | ⟦tải⟧ mengunduh | ⟦ước lượng⟧ memperkirakan
+=ja
+核心表現：⟦thì ra⟧
+⟦thì ra ~⟧ は「（なんと）～だったのか」という意味を表します。
+❶ ⟦Thì ra cô ấy là giáo viên. Trông cô ấy trẻ quá nên tôi tưởng cô ấy là sinh viên.⟧ — 彼女は先生だったんだ。若く見えるから大学生だと思っていた。
+❷ Ⓐ ⟦Thì ra không phải hôm nay là ngày có hẹn phỏng vấn.⟧ — 面接は今日じゃなかったんだ。 Ⓑ ⟦Vâng, ngày mai anh ạ.⟧ — そうです、明日です。
+ベトナムのタクシーに関する表現：⟦tải ứng dụng đặt taxi⟧ タクシー配車アプリをダウンロードする | ⟦số tiền taxi ước lượng⟧ タクシー料金の概算 | ⟦tài xế không chạy vòng mà đi thẳng⟧ 運転手が遠回りせずにまっすぐ行く | ⟦đặt taxi qua ứng dụng trên điện thoại di động⟧ 携帯電話のアプリでタクシーを予約する
+会話：チャンとミンホが夕食後、帰り支度をしています。
+ミンホ：⟦Trang ơi, mình gọi taxi đi. Anh tiễn em về nhà rồi về khách sạn nhé. Đã muộn rồi mà để phụ nữ về nhà một mình thì không lịch sự mà.⟧ — チャン、タクシーを呼ぼう。君を家まで送ってからホテルに帰るよ。もう遅いのに女性を一人で帰すのは失礼だからね。
+チャン：⟦Anh xã giao thế!⟧ — 紳士的ですね！
+ミンホ：⟦Ha ha. Em gọi taxi giúp anh nhé. Anh không nhớ được số điện thoại gọi taxi.⟧ — ハハ。タクシーを呼んでくれる？タクシー会社の電話番号を覚えていないんだ。
+チャン：⟦Ơ, anh không biết cách đặt taxi qua ứng dụng trên điện thoại di động à?⟧ — あれ、携帯のアプリでタクシーを予約する方法を知らないんですか。
+ミンホ：⟦Ồ, thì ra dạo này có thể đặt taxi qua ứng dụng.⟧ — へえ、最近はアプリでタクシーを予約できるんだ。
+チャン：⟦Vâng, anh có thể tải ứng dụng đặt taxi vào điện thoại di động để gọi taxi. Anh không cần lo về tiền taxi vì có thể biết trước được số tiền ước lượng từ chỗ anh bắt đầu đi đến nơi anh đến.⟧ — はい、配車アプリを携帯にダウンロードすればタクシーを呼べます。出発地から目的地までの概算料金が前もって分かるので、料金の心配もいりません。
+文型練習 — チャンのミンホへの評価：⟦xã giao⟧（社交的だ）/ ⟦ga lăng⟧（紳士的だ）；タクシーの番号を覚えているか：⟦không nhớ được⟧（思い出せない）/ ⟦quên mất⟧（忘れてしまった）；どの電話で予約するか：⟦điện thoại di động⟧ / ⟦điện thoại thông minh⟧（スマートフォン）；料金を心配しなくていい理由：⟦biết trước được số tiền ước lượng⟧（概算が前もって分かる）/ ⟦tài xế không chạy vòng mà đi thẳng⟧（運転手が遠回りしない）。
+例：Ⓐ ⟦Nghe nói anh ấy sinh ra ở Mỹ nhưng bố mẹ là người Việt Nam.⟧ — 彼はアメリカ生まれだけど、両親はベトナム人だそうだ。 Ⓑ ⟦Thì ra anh ấy là người Mỹ gốc Việt Nam.⟧ — ベトナム系アメリカ人だったのか。
+❶ ⟦nghỉ hưu⟧：Ⓐ ⟦Anh nói là muốn gặp ông Nam ạ? Xin lỗi, ông ấy đã nghỉ hưu được 2 tháng rồi.⟧ — ナムさんに会いたいとおっしゃるんですか。すみません、2か月前に退職しました。 Ⓑ ⟦Thế à? Thì ra ông ấy đã nghỉ hưu.⟧ — そうですか。退職されていたんですね。
+❷ ⟦bức tranh vũ trụ⟧：Ⓐ ⟦Ở giữa bức tranh là trái đất, còn xung quanh là các ngôi sao đấy.⟧ — 絵の真ん中は地球で、周りは星だよ。 Ⓑ ⟦À, thì ra đây là bức tranh vũ trụ.⟧ — ああ、宇宙の絵だったんだ。
+新出単語：⟦tưởng⟧ ～だと思い込む | ⟦gốc⟧ 根、ルーツ | ⟦nghỉ hưu⟧ 引退する | ⟦bức tranh⟧ 絵 | ⟦vũ trụ⟧ 宇宙 | ⟦trái đất⟧ 地球 | ⟦ngôi sao⟧ 星 | ⟦đánh giá⟧ 評価する | ⟦tiễn⟧ 見送る | ⟦xã giao⟧ 社交的だ | ⟦ứng dụng⟧ アプリ | ⟦tải⟧ ダウンロードする | ⟦ước lượng⟧ 見積もる
+=pl
+Kluczowe wyrażenie: ⟦thì ra⟧
+⟦thì ra ~⟧ znaczy „(okazuje się, że) ~, a więc ~”.
+❶ ⟦Thì ra cô ấy là giáo viên. Trông cô ấy trẻ quá nên tôi tưởng cô ấy là sinh viên.⟧ — A więc jest nauczycielką. Wygląda tak młodo, że myślałem, że jest studentką.
+❷ Ⓐ ⟦Thì ra không phải hôm nay là ngày có hẹn phỏng vấn.⟧ — A więc rozmowa kwalifikacyjna nie jest dzisiaj. Ⓑ ⟦Vâng, ngày mai anh ạ.⟧ — Tak, jutro.
+Wyrażenia związane z taksówkami w Wietnamie: ⟦tải ứng dụng đặt taxi⟧ pobrać aplikację do zamawiania taksówek | ⟦số tiền taxi ước lượng⟧ szacunkowa cena przejazdu | ⟦tài xế không chạy vòng mà đi thẳng⟧ kierowca nie jedzie naokoło, tylko prosto | ⟦đặt taxi qua ứng dụng trên điện thoại di động⟧ zamówić taksówkę przez aplikację w telefonie
+Dialog: Trang i Min-ho po kolacji zbierają się do domu.
+Min-ho: ⟦Trang ơi, mình gọi taxi đi. Anh tiễn em về nhà rồi về khách sạn nhé. Đã muộn rồi mà để phụ nữ về nhà một mình thì không lịch sự mà.⟧ — Trang, zamówmy taksówkę. Odprowadzę cię do domu, a potem pojadę do hotelu. Jest już późno, a puszczanie kobiety samej do domu byłoby nieuprzejme.
+Trang: ⟦Anh xã giao thế!⟧ — Ale z ciebie dżentelmen!
+Min-ho: ⟦Ha ha. Em gọi taxi giúp anh nhé. Anh không nhớ được số điện thoại gọi taxi.⟧ — Haha. Zamów mi, proszę, taksówkę. Nie pamiętam numeru.
+Trang: ⟦Ơ, anh không biết cách đặt taxi qua ứng dụng trên điện thoại di động à?⟧ — O, nie wiesz, jak zamówić taksówkę przez aplikację w telefonie?
+Min-ho: ⟦Ồ, thì ra dạo này có thể đặt taxi qua ứng dụng.⟧ — Aha, więc teraz można zamawiać taksówki przez aplikację.
+Trang: ⟦Vâng, anh có thể tải ứng dụng đặt taxi vào điện thoại di động để gọi taxi. Anh không cần lo về tiền taxi vì có thể biết trước được số tiền ước lượng từ chỗ anh bắt đầu đi đến nơi anh đến.⟧ — Tak, możesz pobrać aplikację na telefon i przez nią wezwać taksówkę. Nie musisz się martwić o cenę, bo z góry znasz szacunkową kwotę od miejsca startu do celu.
+Ćwiczenie wzorców — jak Trang ocenia Min-ho: ⟦xã giao⟧ (towarzyski, uprzejmy) / ⟦ga lăng⟧ (szarmancki); czy pamięta numer taksówki: ⟦không nhớ được⟧ (nie może sobie przypomnieć) / ⟦quên mất⟧ (zapomniał); przez jaki telefon: ⟦điện thoại di động⟧ / ⟦điện thoại thông minh⟧ (smartfon); dlaczego nie martwić się o cenę: ⟦biết trước được số tiền ước lượng⟧ (zna się szacunek z góry) / ⟦tài xế không chạy vòng mà đi thẳng⟧ (kierowca jedzie prosto).
+Wzór: Ⓐ ⟦Nghe nói anh ấy sinh ra ở Mỹ nhưng bố mẹ là người Việt Nam.⟧ — Podobno urodził się w Ameryce, ale jego rodzice są Wietnamczykami. Ⓑ ⟦Thì ra anh ấy là người Mỹ gốc Việt Nam.⟧ — A więc jest Amerykaninem wietnamskiego pochodzenia.
+❶ ⟦nghỉ hưu⟧: Ⓐ ⟦Anh nói là muốn gặp ông Nam ạ? Xin lỗi, ông ấy đã nghỉ hưu được 2 tháng rồi.⟧ — Chce pan się spotkać z panem Namem? Przykro mi, jest na emeryturze od dwóch miesięcy. Ⓑ ⟦Thế à? Thì ra ông ấy đã nghỉ hưu.⟧ — Naprawdę? A więc przeszedł na emeryturę.
+❷ ⟦bức tranh vũ trụ⟧: Ⓐ ⟦Ở giữa bức tranh là trái đất, còn xung quanh là các ngôi sao đấy.⟧ — Pośrodku obrazu jest Ziemia, a dookoła gwiazdy. Ⓑ ⟦À, thì ra đây là bức tranh vũ trụ.⟧ — Aha, więc to obraz wszechświata.
+Nowe słówka: ⟦tưởng⟧ (błędnie) sądzić | ⟦gốc⟧ pochodzenie, korzeń | ⟦nghỉ hưu⟧ przejść na emeryturę | ⟦bức tranh⟧ obraz | ⟦vũ trụ⟧ wszechświat | ⟦trái đất⟧ Ziemia | ⟦ngôi sao⟧ gwiazda | ⟦đánh giá⟧ oceniać | ⟦tiễn⟧ odprowadzać | ⟦xã giao⟧ towarzyski | ⟦ứng dụng⟧ aplikacja | ⟦tải⟧ pobrać | ⟦ước lượng⟧ szacować

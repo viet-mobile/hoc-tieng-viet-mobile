@@ -1,0 +1,186 @@
+@@ pdf-grammar-9e90b4ff72fa12a5#0
+=cs
+Gramatický výklad
+⟦ai cũng⟧: „každý, kdokoli“ – označuje všechny lidi či mnoho lidí; odpovídá výrazu ⟦mọi người đều⟧.
+⟦ai cũng nói⟧ = ⟦mọi người đều nói⟧ → každý říká · ⟦ai cũng nghĩ⟧ = ⟦mọi người đều nghĩ⟧ → každý si myslí · ⟦ai cũng muốn uống nước⟧ = ⟦mọi người đều muốn uống nước⟧ → každý se chce napít · ⟦ai cũng nhớ nhà⟧ = ⟦mọi người đều nhớ nhà⟧ → každému se stýská po domově · ⟦ai cũng muốn đi du lịch⟧ = ⟦mọi người đều muốn đi du lịch⟧ → každý chce cestovat
+⟦là do⟧: „je to kvůli, je to proto, že“ – zdůrazňuje příčinu, která vedla k určitému výsledku.
+⟦Người phụ nữ ngắt lời người khác là do họ sợ quên điều muốn nói.⟧ → Ženy skáčou druhým do řeči proto, že se bojí, že zapomenou, co chtějí říct. (příčina: strach, že zapomenou · výsledek: skočí do řeči)
+⟦Nam giới lại thường ngắt lời người khác là do họ muốn thể hiện sức mạnh.⟧ → Muži zase obvykle skáčou do řeči proto, že chtějí ukázat svou sílu. (příčina: chtějí ukázat sílu · výsledek: skočí do řeči)
+⟦Tôi đến lớp muộn là do bị nhỡ chuyến xe buýt.⟧ → Přišel jsem na hodinu pozdě, protože mi ujel autobus. (příčina: ujel autobus · výsledek: pozdní příchod)
+⟦Ông ấy phải nhập viện là do bị ốm rất nặng.⟧ → Musí do nemocnice, protože je velmi vážně nemocný. (příčina: vážná nemoc · výsledek: hospitalizace)
+=zh_cn
+语法解说
+⟦ai cũng⟧：意为“谁都、无论谁”，用于指所有人、很多人，相当于 ⟦mọi người đều⟧。
+⟦ai cũng nói⟧ = ⟦mọi người đều nói⟧ → 谁都说／大家都说 · ⟦ai cũng nghĩ⟧ = ⟦mọi người đều nghĩ⟧ → 谁都认为／大家都认为 · ⟦ai cũng muốn uống nước⟧ = ⟦mọi người đều muốn uống nước⟧ → 谁都想喝水 · ⟦ai cũng nhớ nhà⟧ = ⟦mọi người đều nhớ nhà⟧ → 谁都想家 · ⟦ai cũng muốn đi du lịch⟧ = ⟦mọi người đều muốn đi du lịch⟧ → 谁都想去旅行
+⟦là do⟧：意为“是由于、是因为”，用于强调导致某一结果的原因。
+⟦Người phụ nữ ngắt lời người khác là do họ sợ quên điều muốn nói.⟧ → 女性打断别人说话，是因为怕忘了自己想说的话。（原因：怕忘了想说的话 · 结果：打断别人） · ⟦Nam giới lại thường ngắt lời người khác là do họ muốn thể hiện sức mạnh.⟧ → 男性打断别人说话，则通常是因为想显示自己的强势。（原因：想显示力量 · 结果：打断别人） · ⟦Tôi đến lớp muộn là do bị nhỡ chuyến xe buýt.⟧ → 我上课迟到是因为没赶上公交车。（原因：没赶上公交车 · 结果：上课迟到） · ⟦Ông ấy phải nhập viện là do bị ốm rất nặng.⟧ → 他必须住院，是因为病得很重。（原因：病得很重 · 结果：必须住院）
+=zh
+文法解說
+⟦ai cũng⟧：意為「誰都、無論誰」，用於指所有人、很多人，相當於 ⟦mọi người đều⟧。
+⟦ai cũng nói⟧ = ⟦mọi người đều nói⟧ → 誰都說／大家都說 · ⟦ai cũng nghĩ⟧ = ⟦mọi người đều nghĩ⟧ → 誰都認為／大家都認為 · ⟦ai cũng muốn uống nước⟧ = ⟦mọi người đều muốn uống nước⟧ → 誰都想喝水 · ⟦ai cũng nhớ nhà⟧ = ⟦mọi người đều nhớ nhà⟧ → 誰都想家 · ⟦ai cũng muốn đi du lịch⟧ = ⟦mọi người đều muốn đi du lịch⟧ → 誰都想去旅行
+⟦là do⟧：意為「是由於、是因為」，用於強調導致某一結果的原因。
+⟦Người phụ nữ ngắt lời người khác là do họ sợ quên điều muốn nói.⟧ → 女性打斷別人說話，是因為怕忘了自己想說的話。（原因：怕忘了想說的話 · 結果：打斷別人） · ⟦Nam giới lại thường ngắt lời người khác là do họ muốn thể hiện sức mạnh.⟧ → 男性打斷別人說話，則通常是因為想顯示自己的強勢。（原因：想顯示力量 · 結果：打斷別人） · ⟦Tôi đến lớp muộn là do bị nhỡ chuyến xe buýt.⟧ → 我上課遲到是因為沒趕上公車。（原因：沒趕上公車 · 結果：上課遲到） · ⟦Ông ấy phải nhập viện là do bị ốm rất nặng.⟧ → 他必須住院，是因為病得很重。（原因：病得很重 · 結果：必須住院）
+=en
+Grammar notes
+⟦ai cũng⟧: "everyone, anyone" – refers to all people or many people; equivalent to ⟦mọi người đều⟧.
+⟦ai cũng nói⟧ = ⟦mọi người đều nói⟧ → everyone says · ⟦ai cũng nghĩ⟧ = ⟦mọi người đều nghĩ⟧ → everyone thinks · ⟦ai cũng muốn uống nước⟧ = ⟦mọi người đều muốn uống nước⟧ → everyone wants a drink of water · ⟦ai cũng nhớ nhà⟧ = ⟦mọi người đều nhớ nhà⟧ → everyone misses home · ⟦ai cũng muốn đi du lịch⟧ = ⟦mọi người đều muốn đi du lịch⟧ → everyone wants to travel
+⟦là do⟧: "is due to, is because of" – emphasizes the cause that led to a certain result.
+⟦Người phụ nữ ngắt lời người khác là do họ sợ quên điều muốn nói.⟧ → Women interrupt others because they are afraid of forgetting what they want to say. (cause: fear of forgetting · result: interrupting) · ⟦Nam giới lại thường ngắt lời người khác là do họ muốn thể hiện sức mạnh.⟧ → Men, on the other hand, usually interrupt others because they want to show their strength. (cause: wanting to show strength · result: interrupting) · ⟦Tôi đến lớp muộn là do bị nhỡ chuyến xe buýt.⟧ → I was late for class because I missed the bus. (cause: missing the bus · result: being late) · ⟦Ông ấy phải nhập viện là do bị ốm rất nặng.⟧ → He has to be hospitalized because he is very seriously ill. (cause: serious illness · result: hospitalization)
+=fr
+Notes de grammaire
+⟦ai cũng⟧ : « tout le monde, n'importe qui » – désigne tous les gens ou beaucoup de gens ; équivaut à ⟦mọi người đều⟧.
+⟦ai cũng nói⟧ = ⟦mọi người đều nói⟧ → tout le monde dit · ⟦ai cũng nghĩ⟧ = ⟦mọi người đều nghĩ⟧ → tout le monde pense · ⟦ai cũng muốn uống nước⟧ = ⟦mọi người đều muốn uống nước⟧ → tout le monde veut boire de l'eau · ⟦ai cũng nhớ nhà⟧ = ⟦mọi người đều nhớ nhà⟧ → tout le monde a le mal du pays · ⟦ai cũng muốn đi du lịch⟧ = ⟦mọi người đều muốn đi du lịch⟧ → tout le monde veut voyager
+⟦là do⟧ : « c'est dû à, c'est parce que » – met en relief la cause qui a entraîné un résultat.
+⟦Người phụ nữ ngắt lời người khác là do họ sợ quên điều muốn nói.⟧ → Les femmes coupent la parole aux autres parce qu'elles ont peur d'oublier ce qu'elles veulent dire. (cause : peur d'oublier · résultat : couper la parole) · ⟦Nam giới lại thường ngắt lời người khác là do họ muốn thể hiện sức mạnh.⟧ → Les hommes, eux, coupent généralement la parole parce qu'ils veulent montrer leur force. (cause : vouloir montrer sa force · résultat : couper la parole) · ⟦Tôi đến lớp muộn là do bị nhỡ chuyến xe buýt.⟧ → Je suis arrivé en retard en cours parce que j'ai raté le bus. (cause : bus raté · résultat : retard) · ⟦Ông ấy phải nhập viện là do bị ốm rất nặng.⟧ → Il doit être hospitalisé parce qu'il est très gravement malade. (cause : maladie grave · résultat : hospitalisation)
+=de
+Grammatikerläuterungen
+⟦ai cũng⟧: „jeder, wer auch immer“ – bezeichnet alle Menschen oder viele Menschen; entspricht ⟦mọi người đều⟧.
+⟦ai cũng nói⟧ = ⟦mọi người đều nói⟧ → jeder sagt · ⟦ai cũng nghĩ⟧ = ⟦mọi người đều nghĩ⟧ → jeder denkt · ⟦ai cũng muốn uống nước⟧ = ⟦mọi người đều muốn uống nước⟧ → jeder möchte Wasser trinken · ⟦ai cũng nhớ nhà⟧ = ⟦mọi người đều nhớ nhà⟧ → jeder hat Heimweh · ⟦ai cũng muốn đi du lịch⟧ = ⟦mọi người đều muốn đi du lịch⟧ → jeder möchte reisen
+⟦là do⟧: „liegt daran, dass; ist bedingt durch“ – betont die Ursache, die zu einem bestimmten Ergebnis geführt hat.
+⟦Người phụ nữ ngắt lời người khác là do họ sợ quên điều muốn nói.⟧ → Frauen unterbrechen andere, weil sie fürchten, zu vergessen, was sie sagen wollen. (Ursache: Angst, es zu vergessen · Ergebnis: unterbrechen) · ⟦Nam giới lại thường ngắt lời người khác là do họ muốn thể hiện sức mạnh.⟧ → Männer dagegen unterbrechen andere meist, weil sie Stärke zeigen wollen. (Ursache: Stärke zeigen wollen · Ergebnis: unterbrechen) · ⟦Tôi đến lớp muộn là do bị nhỡ chuyến xe buýt.⟧ → Ich kam zu spät zum Unterricht, weil ich den Bus verpasst habe. (Ursache: Bus verpasst · Ergebnis: Verspätung) · ⟦Ông ấy phải nhập viện là do bị ốm rất nặng.⟧ → Er muss ins Krankenhaus, weil er sehr schwer krank ist. (Ursache: schwere Krankheit · Ergebnis: Krankenhausaufenthalt)
+=hu
+Nyelvtani magyarázat
+⟦ai cũng⟧: „mindenki, bárki” – az összes vagy sok emberre utal; megfelel a ⟦mọi người đều⟧ kifejezésnek.
+⟦ai cũng nói⟧ = ⟦mọi người đều nói⟧ → mindenki mondja · ⟦ai cũng nghĩ⟧ = ⟦mọi người đều nghĩ⟧ → mindenki gondolja · ⟦ai cũng muốn uống nước⟧ = ⟦mọi người đều muốn uống nước⟧ → mindenki vizet akar inni · ⟦ai cũng nhớ nhà⟧ = ⟦mọi người đều nhớ nhà⟧ → mindenkinek honvágya van · ⟦ai cũng muốn đi du lịch⟧ = ⟦mọi người đều muốn đi du lịch⟧ → mindenki utazni akar
+⟦là do⟧: „azért, mert; annak köszönhető, hogy” – egy adott eredményt előidéző okot hangsúlyozza.
+⟦Người phụ nữ ngắt lời người khác là do họ sợ quên điều muốn nói.⟧ → A nők azért vágnak mások szavába, mert félnek, hogy elfelejtik, amit mondani akarnak. (ok: félelem a felejtéstől · eredmény: közbevágás) · ⟦Nam giới lại thường ngắt lời người khác là do họ muốn thể hiện sức mạnh.⟧ → A férfiak viszont általában azért vágnak közbe, mert erőt akarnak mutatni. (ok: erőt akarnak mutatni · eredmény: közbevágás) · ⟦Tôi đến lớp muộn là do bị nhỡ chuyến xe buýt.⟧ → Azért késtem el az óráról, mert lekéstem a buszt. (ok: lekésett busz · eredmény: késés) · ⟦Ông ấy phải nhập viện là do bị ốm rất nặng.⟧ → Azért kell kórházba mennie, mert nagyon súlyos beteg. (ok: súlyos betegség · eredmény: kórházi felvétel)
+=id
+Penjelasan tata bahasa
+⟦ai cũng⟧: "siapa pun, semua orang" – merujuk pada semua orang atau banyak orang; sepadan dengan ⟦mọi người đều⟧.
+⟦ai cũng nói⟧ = ⟦mọi người đều nói⟧ → semua orang berkata · ⟦ai cũng nghĩ⟧ = ⟦mọi người đều nghĩ⟧ → semua orang berpikir · ⟦ai cũng muốn uống nước⟧ = ⟦mọi người đều muốn uống nước⟧ → semua orang ingin minum air · ⟦ai cũng nhớ nhà⟧ = ⟦mọi người đều nhớ nhà⟧ → semua orang rindu rumah · ⟦ai cũng muốn đi du lịch⟧ = ⟦mọi người đều muốn đi du lịch⟧ → semua orang ingin berwisata
+⟦là do⟧: "disebabkan oleh, karena" – menekankan penyebab yang menimbulkan suatu hasil.
+⟦Người phụ nữ ngắt lời người khác là do họ sợ quên điều muốn nói.⟧ → Perempuan memotong pembicaraan orang lain karena takut lupa apa yang ingin dikatakan. (sebab: takut lupa · akibat: memotong pembicaraan) · ⟦Nam giới lại thường ngắt lời người khác là do họ muốn thể hiện sức mạnh.⟧ → Laki-laki biasanya memotong pembicaraan orang lain karena ingin menunjukkan kekuatan. (sebab: ingin menunjukkan kekuatan · akibat: memotong pembicaraan) · ⟦Tôi đến lớp muộn là do bị nhỡ chuyến xe buýt.⟧ → Saya terlambat masuk kelas karena ketinggalan bus. (sebab: ketinggalan bus · akibat: terlambat) · ⟦Ông ấy phải nhập viện là do bị ốm rất nặng.⟧ → Beliau harus dirawat di rumah sakit karena sakit sangat parah. (sebab: sakit parah · akibat: dirawat inap)
+=ja
+文法解説
+⟦ai cũng⟧：「誰でも、誰もが」という意味で、すべての人・多くの人を指すために使います。⟦mọi người đều⟧ と同じ意味です。
+⟦ai cũng nói⟧ = ⟦mọi người đều nói⟧ → 誰もが言う · ⟦ai cũng nghĩ⟧ = ⟦mọi người đều nghĩ⟧ → 誰もが考える · ⟦ai cũng muốn uống nước⟧ = ⟦mọi người đều muốn uống nước⟧ → 誰もが水を飲みたがる · ⟦ai cũng nhớ nhà⟧ = ⟦mọi người đều nhớ nhà⟧ → 誰もが家を恋しがる · ⟦ai cũng muốn đi du lịch⟧ = ⟦mọi người đều muốn đi du lịch⟧ → 誰もが旅行に行きたがる
+⟦là do⟧：「～によって、～のせいで」という意味で、ある結果をもたらした原因を強調するために使います。
+⟦Người phụ nữ ngắt lời người khác là do họ sợ quên điều muốn nói.⟧ → 女性が相手の話をさえぎるのは、言いたいことを忘れるのが怖いからだ。（原因：言いたいことを忘れるのが怖い · 結果：相手の話をさえぎる） · ⟦Nam giới lại thường ngắt lời người khác là do họ muốn thể hiện sức mạnh.⟧ → 男性が相手の話をさえぎるのは、普通、強さを誇示したいからだ。（原因：強さを誇示したい · 結果：相手の話をさえぎる） · ⟦Tôi đến lớp muộn là do bị nhỡ chuyến xe buýt.⟧ → 授業に遅れたのはバスに乗り遅れたからだ。（原因：バスに乗り遅れた · 結果：授業に遅れる） · ⟦Ông ấy phải nhập viện là do bị ốm rất nặng.⟧ → その方が入院しなければならないのは、病気がとても重いからだ。（原因：病気が重い · 結果：入院しなければならない）
+=pl
+Objaśnienia gramatyczne
+⟦ai cũng⟧: „każdy, ktokolwiek” – odnosi się do wszystkich lub wielu ludzi; odpowiada wyrażeniu ⟦mọi người đều⟧.
+⟦ai cũng nói⟧ = ⟦mọi người đều nói⟧ → każdy mówi · ⟦ai cũng nghĩ⟧ = ⟦mọi người đều nghĩ⟧ → każdy myśli · ⟦ai cũng muốn uống nước⟧ = ⟦mọi người đều muốn uống nước⟧ → każdy chce się napić wody · ⟦ai cũng nhớ nhà⟧ = ⟦mọi người đều nhớ nhà⟧ → każdy tęskni za domem · ⟦ai cũng muốn đi du lịch⟧ = ⟦mọi người đều muốn đi du lịch⟧ → każdy chce podróżować
+⟦là do⟧: „to z powodu, to dlatego, że” – podkreśla przyczynę, która doprowadziła do danego skutku.
+⟦Người phụ nữ ngắt lời người khác là do họ sợ quên điều muốn nói.⟧ → Kobiety przerywają innym dlatego, że boją się zapomnieć, co chcą powiedzieć. (przyczyna: strach przed zapomnieniem · skutek: przerywanie) · ⟦Nam giới lại thường ngắt lời người khác là do họ muốn thể hiện sức mạnh.⟧ → Mężczyźni zaś zwykle przerywają, bo chcą pokazać swoją siłę. (przyczyna: chęć pokazania siły · skutek: przerywanie) · ⟦Tôi đến lớp muộn là do bị nhỡ chuyến xe buýt.⟧ → Spóźniłem się na zajęcia, bo uciekł mi autobus. (przyczyna: spóźniony autobus · skutek: spóźnienie) · ⟦Ông ấy phải nhập viện là do bị ốm rất nặng.⟧ → Musi iść do szpitala, bo jest bardzo ciężko chory. (przyczyna: ciężka choroba · skutek: hospitalizacja)
+@@ pdf-grammar-c4e8fd897c4dd309#0
+=cs
+Gramatický výklad
+⟦nào là... nào là⟧: „jednak ~, jednak ~; i ~, i ~, a ještě ~“ – výčtem věcí, úkolů či jevů zdůrazňuje jejich velké množství.
+⟦Nào là phải xem ngày tốt, nào là phải gửi thiếp mời, nào là phải đặt phòng cưới.⟧ → Musí se vybrat šťastný den, rozeslat pozvánky, zamluvit sál na svatbu. · ⟦Anh ấy mang theo rất nhiều đồ: nào là máy tính, nào là bếp ga, nào là ổ điện.⟧ → Nosí s sebou spoustu věcí: počítač, plynový vařič, a dokonce i prodlužovačku. · ⟦Nào là bút, nào là vở, nào là sách, biết bao nhiêu thứ cần phải chuẩn bị.⟧ → Pera, sešity, knihy – kolik jen věcí je potřeba připravit! · ⟦Chị ấy mua nào là thịt, nào là cá, nào là rau.⟧ → Nakoupila maso, ryby i zeleninu. · ⟦Trong cặp chị ấy có đủ mọi thứ, nào là bút, nào là thước, nào là sách vở.⟧ → V tašce má úplně všechno: pera, pravítko, knihy i sešity.
+⟦tin⟧ / ⟦tin rằng⟧ / ⟦tin là⟧: „věřit (že)“ – zdůrazňuje, že určitá věc jistě nastane.
+⟦Tôi tin anh ấy sẽ đến họp.⟧ → Věřím, že na schůzi přijde. (zdůrazněno, že nastane očekávané: přijde na schůzi) · ⟦Tôi tin là trời sẽ mưa.⟧ → Věřím, že bude pršet. (zdůrazněno: bude pršet) · ⟦Mọi người đều tin là ngày mai trời sẽ nắng.⟧ → Všichni věří, že zítra bude slunečno. (zdůrazněno: zítra bude slunečno)
+=zh_cn
+语法解说
+⟦nào là... nào là⟧：意为“又是……又是……”，通过列举事物、事情、现象来表示其数量之多。
+⟦Nào là phải xem ngày tốt, nào là phải gửi thiếp mời, nào là phải đặt phòng cưới.⟧ → 又要选吉日，又要发请帖，又要预订婚礼场地。 · ⟦Anh ấy mang theo rất nhiều đồ: nào là máy tính, nào là bếp ga, nào là ổ điện.⟧ → 他带着很多东西：又是电脑，又是燃气炉，还有插线板。 · ⟦Nào là bút, nào là vở, nào là sách, biết bao nhiêu thứ cần phải chuẩn bị.⟧ → 又是笔、又是本子、又是书，要准备的东西不知有多少。 · ⟦Chị ấy mua nào là thịt, nào là cá, nào là rau.⟧ → 她买了肉、鱼，还有蔬菜。 · ⟦Trong cặp chị ấy có đủ mọi thứ, nào là bút, nào là thước, nào là sách vở.⟧ → 她书包里什么都有：笔、尺子、书和本子。
+⟦tin⟧ / ⟦tin rằng⟧ / ⟦tin là⟧：意为“相信（……）”，用于强调某事一定会发生。
+⟦Tôi tin anh ấy sẽ đến họp.⟧ → 我相信他会来开会。（强调预测的情况会发生：他会来开会） · ⟦Tôi tin là trời sẽ mưa.⟧ → 我相信会下雨。（强调：会下雨） · ⟦Mọi người đều tin là ngày mai trời sẽ nắng.⟧ → 大家都相信明天会是晴天。（强调：明天会晴）
+=zh
+文法解說
+⟦nào là... nào là⟧：意為「又是……又是……」，透過列舉事物、事情、現象來表示其數量之多。
+⟦Nào là phải xem ngày tốt, nào là phải gửi thiếp mời, nào là phải đặt phòng cưới.⟧ → 又要選吉日，又要發喜帖，又要預訂婚宴場地。 · ⟦Anh ấy mang theo rất nhiều đồ: nào là máy tính, nào là bếp ga, nào là ổ điện.⟧ → 他帶著很多東西：又是電腦，又是瓦斯爐，還有延長線。 · ⟦Nào là bút, nào là vở, nào là sách, biết bao nhiêu thứ cần phải chuẩn bị.⟧ → 又是筆、又是筆記本、又是書，要準備的東西不知有多少。 · ⟦Chị ấy mua nào là thịt, nào là cá, nào là rau.⟧ → 她買了肉、魚，還有蔬菜。 · ⟦Trong cặp chị ấy có đủ mọi thứ, nào là bút, nào là thước, nào là sách vở.⟧ → 她書包裡什麼都有：筆、尺、書和筆記本。
+⟦tin⟧ / ⟦tin rằng⟧ / ⟦tin là⟧：意為「相信（……）」，用於強調某事一定會發生。
+⟦Tôi tin anh ấy sẽ đến họp.⟧ → 我相信他會來開會。（強調預測的情況會發生：他會來開會） · ⟦Tôi tin là trời sẽ mưa.⟧ → 我相信會下雨。（強調：會下雨） · ⟦Mọi người đều tin là ngày mai trời sẽ nắng.⟧ → 大家都相信明天會是晴天。（強調：明天會放晴）
+=en
+Grammar notes
+⟦nào là... nào là⟧: "what with ~ and ~; ~ and ~ and ~" – lists things, tasks or phenomena to show how many there are.
+⟦Nào là phải xem ngày tốt, nào là phải gửi thiếp mời, nào là phải đặt phòng cưới.⟧ → There's choosing an auspicious day, sending out invitations, booking the wedding hall… · ⟦Anh ấy mang theo rất nhiều đồ: nào là máy tính, nào là bếp ga, nào là ổ điện.⟧ → He carries loads of stuff around: a computer, a gas stove, even a power strip. · ⟦Nào là bút, nào là vở, nào là sách, biết bao nhiêu thứ cần phải chuẩn bị.⟧ → Pens, notebooks, books – so many things to get ready! · ⟦Chị ấy mua nào là thịt, nào là cá, nào là rau.⟧ → She bought meat, fish and vegetables too. · ⟦Trong cặp chị ấy có đủ mọi thứ, nào là bút, nào là thước, nào là sách vở.⟧ → Her bag has everything in it: pens, a ruler, books and notebooks.
+⟦tin⟧ / ⟦tin rằng⟧ / ⟦tin là⟧: "to believe (that)" – emphasizes that something will certainly happen.
+⟦Tôi tin anh ấy sẽ đến họp.⟧ → I believe he will come to the meeting. (emphasizes that what is expected will happen: he will come) · ⟦Tôi tin là trời sẽ mưa.⟧ → I believe it will rain. (emphasized: it will rain) · ⟦Mọi người đều tin là ngày mai trời sẽ nắng.⟧ → Everyone believes it will be sunny tomorrow. (emphasized: tomorrow will be sunny)
+=fr
+Notes de grammaire
+⟦nào là... nào là⟧ : « entre ~ et ~ ; et ~, et ~, et ~ » – énumère des choses, des tâches ou des phénomènes pour en souligner le grand nombre.
+⟦Nào là phải xem ngày tốt, nào là phải gửi thiếp mời, nào là phải đặt phòng cưới.⟧ → Il faut choisir un jour faste, envoyer les faire-part, réserver la salle de mariage… · ⟦Anh ấy mang theo rất nhiều đồ: nào là máy tính, nào là bếp ga, nào là ổ điện.⟧ → Il emporte énormément de choses : un ordinateur, un réchaud à gaz, et même une multiprise. · ⟦Nào là bút, nào là vở, nào là sách, biết bao nhiêu thứ cần phải chuẩn bị.⟧ → Des stylos, des cahiers, des livres… que de choses à préparer ! · ⟦Chị ấy mua nào là thịt, nào là cá, nào là rau.⟧ → Elle a acheté de la viande, du poisson et même des légumes. · ⟦Trong cặp chị ấy có đủ mọi thứ, nào là bút, nào là thước, nào là sách vở.⟧ → Dans son cartable, il y a de tout : des stylos, une règle, des livres et des cahiers.
+⟦tin⟧ / ⟦tin rằng⟧ / ⟦tin là⟧ : « croire (que) » – souligne qu'une chose va certainement se produire.
+⟦Tôi tin anh ấy sẽ đến họp.⟧ → Je crois qu'il viendra à la réunion. (souligne que ce qui est prévu arrivera : il viendra) · ⟦Tôi tin là trời sẽ mưa.⟧ → Je crois qu'il va pleuvoir. (mis en relief : il pleuvra) · ⟦Mọi người đều tin là ngày mai trời sẽ nắng.⟧ → Tout le monde croit qu'il fera beau demain. (mis en relief : il fera beau demain)
+=de
+Grammatikerläuterungen
+⟦nào là... nào là⟧: „mal ~, mal ~; ~ und ~ und dazu noch ~“ – zählt Dinge, Aufgaben oder Erscheinungen auf, um ihre große Menge zu betonen.
+⟦Nào là phải xem ngày tốt, nào là phải gửi thiếp mời, nào là phải đặt phòng cưới.⟧ → Man muss einen glücklichen Tag wählen, Einladungen verschicken, den Hochzeitssaal buchen … · ⟦Anh ấy mang theo rất nhiều đồ: nào là máy tính, nào là bếp ga, nào là ổ điện.⟧ → Er trägt viele Sachen mit sich: einen Computer, einen Gaskocher, sogar eine Steckdosenleiste. · ⟦Nào là bút, nào là vở, nào là sách, biết bao nhiêu thứ cần phải chuẩn bị.⟧ → Stifte, Hefte, Bücher – wie viele Dinge man vorbereiten muss! · ⟦Chị ấy mua nào là thịt, nào là cá, nào là rau.⟧ → Sie kaufte Fleisch, Fisch und auch Gemüse. · ⟦Trong cặp chị ấy có đủ mọi thứ, nào là bút, nào là thước, nào là sách vở.⟧ → In ihrer Tasche ist alles: Stifte, ein Lineal, Bücher und Hefte.
+⟦tin⟧ / ⟦tin rằng⟧ / ⟦tin là⟧: „glauben (dass)“ – betont, dass etwas sicher eintreten wird.
+⟦Tôi tin anh ấy sẽ đến họp.⟧ → Ich glaube, dass er zur Sitzung kommt. (betont, dass das Erwartete eintritt: er kommt) · ⟦Tôi tin là trời sẽ mưa.⟧ → Ich glaube, dass es regnen wird. (betont: es wird regnen) · ⟦Mọi người đều tin là ngày mai trời sẽ nắng.⟧ → Alle glauben, dass morgen die Sonne scheint. (betont: morgen wird es sonnig)
+=hu
+Nyelvtani magyarázat
+⟦nào là... nào là⟧: „hol ~, hol ~; ~ is, ~ is, meg ~ is” – dolgok, teendők vagy jelenségek felsorolásával azok nagy számát hangsúlyozza.
+⟦Nào là phải xem ngày tốt, nào là phải gửi thiếp mời, nào là phải đặt phòng cưới.⟧ → Ki kell választani egy szerencsés napot, el kell küldeni a meghívókat, le kell foglalni az esküvői termet… · ⟦Anh ấy mang theo rất nhiều đồ: nào là máy tính, nào là bếp ga, nào là ổ điện.⟧ → Rengeteg dolgot hord magával: számítógépet, gázfőzőt, sőt elosztót is. · ⟦Nào là bút, nào là vở, nào là sách, biết bao nhiêu thứ cần phải chuẩn bị.⟧ → Toll, füzet, könyv – mennyi mindent kell előkészíteni! · ⟦Chị ấy mua nào là thịt, nào là cá, nào là rau.⟧ → Vett húst, halat és zöldséget is. · ⟦Trong cặp chị ấy có đủ mọi thứ, nào là bút, nào là thước, nào là sách vở.⟧ → A táskájában minden van: toll, vonalzó, könyvek és füzetek.
+⟦tin⟧ / ⟦tin rằng⟧ / ⟦tin là⟧: „hinni (hogy)” – azt hangsúlyozza, hogy valami biztosan be fog következni.
+⟦Tôi tin anh ấy sẽ đến họp.⟧ → Hiszem, hogy eljön a megbeszélésre. (hangsúly: a várt dolog bekövetkezik – eljön) · ⟦Tôi tin là trời sẽ mưa.⟧ → Hiszem, hogy esni fog. (hangsúly: esni fog) · ⟦Mọi người đều tin là ngày mai trời sẽ nắng.⟧ → Mindenki hiszi, hogy holnap napos idő lesz. (hangsúly: holnap napos lesz)
+=id
+Penjelasan tata bahasa
+⟦nào là... nào là⟧: "ada ~, ada ~; ~, ~, sampai ~" – menyebutkan benda, urusan, atau fenomena satu per satu untuk menunjukkan banyaknya jumlahnya.
+⟦Nào là phải xem ngày tốt, nào là phải gửi thiếp mời, nào là phải đặt phòng cưới.⟧ → Harus memilih hari baik, harus mengirim undangan, harus memesan gedung pernikahan. · ⟦Anh ấy mang theo rất nhiều đồ: nào là máy tính, nào là bếp ga, nào là ổ điện.⟧ → Dia membawa banyak sekali barang: komputer, kompor gas, sampai stopkontak. · ⟦Nào là bút, nào là vở, nào là sách, biết bao nhiêu thứ cần phải chuẩn bị.⟧ → Ada pulpen, buku tulis, buku bacaan – entah berapa banyak yang harus disiapkan. · ⟦Chị ấy mua nào là thịt, nào là cá, nào là rau.⟧ → Dia membeli daging, ikan, sampai sayur. · ⟦Trong cặp chị ấy có đủ mọi thứ, nào là bút, nào là thước, nào là sách vở.⟧ → Di tasnya ada segala macam: pulpen, penggaris, buku, dan buku tulis.
+⟦tin⟧ / ⟦tin rằng⟧ / ⟦tin là⟧: "percaya (bahwa)" – menegaskan bahwa suatu hal pasti akan terjadi.
+⟦Tôi tin anh ấy sẽ đến họp.⟧ → Saya percaya dia akan datang ke rapat. (menegaskan hal yang diperkirakan akan terjadi: dia datang) · ⟦Tôi tin là trời sẽ mưa.⟧ → Saya percaya akan turun hujan. (ditegaskan: akan hujan) · ⟦Mọi người đều tin là ngày mai trời sẽ nắng.⟧ → Semua orang percaya besok akan cerah. (ditegaskan: besok cerah)
+=ja
+文法解説
+⟦nào là... nào là⟧：「～に～に、～やら～やら」などの意味で、事物・事柄・現象を列挙することで、その数が多いことを表すために使います。
+⟦Nào là phải xem ngày tốt, nào là phải gửi thiếp mời, nào là phải đặt phòng cưới.⟧ → 吉日を選ばなければならないし、招待状も送らなければならないし、結婚式場も予約しなければならない。 · ⟦Anh ấy mang theo rất nhiều đồ: nào là máy tính, nào là bếp ga, nào là ổ điện.⟧ → 彼はとても多くの物を持ち歩いている：パソコンに、コンロに、電源タップまで。 · ⟦Nào là bút, nào là vở, nào là sách, biết bao nhiêu thứ cần phải chuẩn bị.⟧ → ペンやら、ノートやら、本やら、準備しなければならない物がいくつあるかわからない。 · ⟦Chị ấy mua nào là thịt, nào là cá, nào là rau.⟧ → 彼女は肉に、魚に、野菜まで買った。 · ⟦Trong cặp chị ấy có đủ mọi thứ, nào là bút, nào là thước, nào là sách vở.⟧ → 彼女のかばんにはペンに、定規に、本やノートまで、あらゆる物が入っている。
+⟦tin⟧ / ⟦tin rằng⟧ / ⟦tin là⟧：「（～と）信じる」という意味で、ある事柄が確実に起こることを強調するために使います。
+⟦Tôi tin anh ấy sẽ đến họp.⟧ → 私は彼が会合に来ると信じている。（予測どおりの状況が起こることを強調：彼が会合に来る） · ⟦Tôi tin là trời sẽ mưa.⟧ → 私は雨が降ると信じている。（強調：雨が降る） · ⟦Mọi người đều tin là ngày mai trời sẽ nắng.⟧ → 皆、明日は晴れると信じている。（強調：明日は晴れる）
+=pl
+Objaśnienia gramatyczne
+⟦nào là... nào là⟧: „a to ~, a to ~; i ~, i ~, i jeszcze ~” – wyliczając rzeczy, sprawy lub zjawiska, podkreśla ich dużą liczbę.
+⟦Nào là phải xem ngày tốt, nào là phải gửi thiếp mời, nào là phải đặt phòng cưới.⟧ → A to trzeba wybrać pomyślny dzień, a to rozesłać zaproszenia, a to zarezerwować salę weselną. · ⟦Anh ấy mang theo rất nhiều đồ: nào là máy tính, nào là bếp ga, nào là ổ điện.⟧ → Nosi ze sobą mnóstwo rzeczy: komputer, kuchenkę gazową, a nawet przedłużacz. · ⟦Nào là bút, nào là vở, nào là sách, biết bao nhiêu thứ cần phải chuẩn bị.⟧ → Długopisy, zeszyty, książki – ile to rzeczy trzeba przygotować! · ⟦Chị ấy mua nào là thịt, nào là cá, nào là rau.⟧ → Kupiła i mięso, i ryby, i warzywa. · ⟦Trong cặp chị ấy có đủ mọi thứ, nào là bút, nào là thước, nào là sách vở.⟧ → W jej torbie jest wszystko: długopisy, linijka, książki i zeszyty.
+⟦tin⟧ / ⟦tin rằng⟧ / ⟦tin là⟧: „wierzyć (że)” – podkreśla, że coś na pewno nastąpi.
+⟦Tôi tin anh ấy sẽ đến họp.⟧ → Wierzę, że przyjdzie na zebranie. (podkreślenie, że przewidywane nastąpi: przyjdzie) · ⟦Tôi tin là trời sẽ mưa.⟧ → Wierzę, że będzie padać. (podkreślenie: będzie padać) · ⟦Mọi người đều tin là ngày mai trời sẽ nắng.⟧ → Wszyscy wierzą, że jutro będzie słonecznie. (podkreślenie: jutro będzie słonecznie)
+@@ pdf-grammar-3c938958a56fba92#0
+=cs
+Gramatický výklad
+⟦rằng⟧: „že“ – uvádí doplňující vysvětlení k předtím zmíněné věci.
+⟦Họ cho rằng vận mệnh của con người đã được sắp đặt từ kiếp trước.⟧ → Domnívají se, že osud člověka je určen už v minulém životě. (vysvětlovaný obsah: osud je určen v minulém životě) · ⟦Họ hiểu rằng hạnh phúc của một cặp vợ chồng chủ yếu là hợp tính⟧ → Chápou, že štěstí manželského páru spočívá hlavně ve slučitelnosti povah. (vysvětlovaný obsah: štěstí pochází ze slučitelnosti povah) · ⟦Sân bay đã thông tin rằng chuyến bay của tôi sẽ cất cánh chậm 15 phút.⟧ → Letiště oznámilo, že můj let odletí o 15 minut později. (vysvětlovaný obsah: odlet se zpozdí o 15 minut)
+⟦không phải chỉ (là) ... mà còn (là)⟧: „nejen ~, ale také ~“ – vyjadřuje či zdůrazňuje stupňovací vztah při výčtu.
+⟦Hạnh phúc của một cặp vợ chồng không phải chỉ là vì hợp tuổi mà còn là vì hợp tính.⟧ → Štěstí manželského páru nezávisí jen na tom, že se k sobě hodí věkem (podle horoskopu), ale i na tom, že si rozumí povahou. · ⟦Ngày cưới không phải chỉ là ngày vui riêng của đôi bạn trẻ mà còn là ngày vui của cả hai gia đình⟧ → Svatební den není radostným dnem jen pro mladý pár, ale i pro obě rodiny. · ⟦Người dân Việt Nam không phải chỉ hiền lành mà còn rất thân thiện, mến khách.⟧ → Vietnamci jsou nejen mírní, ale také velmi přátelští a pohostinní. · ⟦Anh ấy không phải chỉ là người chơi đàn giỏi mà còn là người hát rất hay.⟧ → Nejenže dobře hraje na nástroj, ale také velmi pěkně zpívá.
+=zh_cn
+语法解说
+⟦rằng⟧：意为“说……、认为……”，用于对前面提到的事项进行补充说明。
+⟦Họ cho rằng vận mệnh của con người đã được sắp đặt từ kiếp trước.⟧ → 他们认为人的命运前世就已注定。（说明内容：命运前世已注定） · ⟦Họ hiểu rằng hạnh phúc của một cặp vợ chồng chủ yếu là hợp tính⟧ → 他们明白，一对夫妻的幸福主要在于性格相合。（说明内容：夫妻幸福主要来自性格相合） · ⟦Sân bay đã thông tin rằng chuyến bay của tôi sẽ cất cánh chậm 15 phút.⟧ → 机场通知说，我的航班将推迟15分钟起飞。（说明内容：起飞推迟15分钟）
+⟦không phải chỉ (là) ... mà còn (là)⟧：意为“不仅……而且……”，用于在列举中表达或强调递进关系。
+⟦Hạnh phúc của một cặp vợ chồng không phải chỉ là vì hợp tuổi mà còn là vì hợp tính.⟧ → 一对夫妻的幸福不仅因为八字相合，还因为性格相合。 · ⟦Ngày cưới không phải chỉ là ngày vui riêng của đôi bạn trẻ mà còn là ngày vui của cả hai gia đình⟧ → 婚礼不仅是年轻新人的喜日，也是双方家庭的喜日。 · ⟦Người dân Việt Nam không phải chỉ hiền lành mà còn rất thân thiện, mến khách.⟧ → 越南人不仅善良，而且非常友好、好客。 · ⟦Anh ấy không phải chỉ là người chơi đàn giỏi mà còn là người hát rất hay.⟧ → 他不仅乐器弹得好，歌也唱得很好。
+=zh
+文法解說
+⟦rằng⟧：意為「說……、認為……」，用於對前面提到的事項進行補充說明。
+⟦Họ cho rằng vận mệnh của con người đã được sắp đặt từ kiếp trước.⟧ → 他們認為人的命運前世就已注定。（說明內容：命運前世已注定） · ⟦Họ hiểu rằng hạnh phúc của một cặp vợ chồng chủ yếu là hợp tính⟧ → 他們明白，一對夫妻的幸福主要在於個性相合。（說明內容：夫妻幸福主要來自個性相合） · ⟦Sân bay đã thông tin rằng chuyến bay của tôi sẽ cất cánh chậm 15 phút.⟧ → 機場通知說，我的班機將延後15分鐘起飛。（說明內容：起飛延後15分鐘）
+⟦không phải chỉ (là) ... mà còn (là)⟧：意為「不僅……而且……」，用於在列舉中表達或強調遞進關係。
+⟦Hạnh phúc của một cặp vợ chồng không phải chỉ là vì hợp tuổi mà còn là vì hợp tính.⟧ → 一對夫妻的幸福不僅因為八字相合，還因為個性相合。 · ⟦Ngày cưới không phải chỉ là ngày vui riêng của đôi bạn trẻ mà còn là ngày vui của cả hai gia đình⟧ → 婚禮不僅是年輕新人的喜日，也是雙方家庭的喜日。 · ⟦Người dân Việt Nam không phải chỉ hiền lành mà còn rất thân thiện, mến khách.⟧ → 越南人不僅善良，而且非常友善、好客。 · ⟦Anh ấy không phải chỉ là người chơi đàn giỏi mà còn là người hát rất hay.⟧ → 他不僅樂器彈得好，歌也唱得很好。
+=en
+Grammar notes
+⟦rằng⟧: "that" – introduces additional explanation of something just mentioned.
+⟦Họ cho rằng vận mệnh của con người đã được sắp đặt từ kiếp trước.⟧ → They believe that a person's fate was already decided in a previous life. (explained content: fate is fixed in a past life) · ⟦Họ hiểu rằng hạnh phúc của một cặp vợ chồng chủ yếu là hợp tính⟧ → They understand that a couple's happiness mainly comes from compatible personalities. (explained content: happiness comes from compatible personalities) · ⟦Sân bay đã thông tin rằng chuyến bay của tôi sẽ cất cánh chậm 15 phút.⟧ → The airport announced that my flight would take off 15 minutes late. (explained content: departure delayed 15 minutes)
+⟦không phải chỉ (là) ... mà còn (là)⟧: "not only ~ but also ~" – expresses or emphasizes a cumulative relationship in a list.
+⟦Hạnh phúc của một cặp vợ chồng không phải chỉ là vì hợp tuổi mà còn là vì hợp tính.⟧ → A couple's happiness is not only because their ages (horoscopes) match but also because their personalities match. · ⟦Ngày cưới không phải chỉ là ngày vui riêng của đôi bạn trẻ mà còn là ngày vui của cả hai gia đình⟧ → The wedding day is not only a happy day for the young couple but also for both families. · ⟦Người dân Việt Nam không phải chỉ hiền lành mà còn rất thân thiện, mến khách.⟧ → Vietnamese people are not only gentle but also very friendly and hospitable. · ⟦Anh ấy không phải chỉ là người chơi đàn giỏi mà còn là người hát rất hay.⟧ → He is not only a good instrument player but also a very good singer.
+=fr
+Notes de grammaire
+⟦rằng⟧ : « que » – introduit une explication complémentaire sur ce qui vient d'être mentionné.
+⟦Họ cho rằng vận mệnh của con người đã được sắp đặt từ kiếp trước.⟧ → Ils estiment que le destin de l'homme est déjà fixé dans une vie antérieure. (contenu expliqué : le destin est fixé dans une vie antérieure) · ⟦Họ hiểu rằng hạnh phúc của một cặp vợ chồng chủ yếu là hợp tính⟧ → Ils comprennent que le bonheur d'un couple tient surtout à la compatibilité des caractères. (contenu expliqué : le bonheur vient de la compatibilité des caractères) · ⟦Sân bay đã thông tin rằng chuyến bay của tôi sẽ cất cánh chậm 15 phút.⟧ → L'aéroport a annoncé que mon vol décollerait avec 15 minutes de retard. (contenu expliqué : décollage retardé de 15 minutes)
+⟦không phải chỉ (là) ... mà còn (là)⟧ : « non seulement ~ mais aussi ~ » – exprime ou souligne une gradation dans une énumération.
+⟦Hạnh phúc của một cặp vợ chồng không phải chỉ là vì hợp tuổi mà còn là vì hợp tính.⟧ → Le bonheur d'un couple ne tient pas seulement à la compatibilité des âges (horoscopes), mais aussi à celle des caractères. · ⟦Ngày cưới không phải chỉ là ngày vui riêng của đôi bạn trẻ mà còn là ngày vui của cả hai gia đình⟧ → Le jour du mariage n'est pas seulement un jour de joie pour les jeunes mariés, mais aussi pour les deux familles. · ⟦Người dân Việt Nam không phải chỉ hiền lành mà còn rất thân thiện, mến khách.⟧ → Les Vietnamiens sont non seulement doux, mais aussi très aimables et accueillants. · ⟦Anh ấy không phải chỉ là người chơi đàn giỏi mà còn là người hát rất hay.⟧ → Il n'est pas seulement un bon musicien, il chante aussi très bien.
+=de
+Grammatikerläuterungen
+⟦rằng⟧: „dass“ – leitet eine ergänzende Erklärung zu etwas zuvor Genanntem ein.
+⟦Họ cho rằng vận mệnh của con người đã được sắp đặt từ kiếp trước.⟧ → Sie meinen, dass das Schicksal des Menschen schon im früheren Leben festgelegt wurde. (erklärter Inhalt: Schicksal im früheren Leben festgelegt) · ⟦Họ hiểu rằng hạnh phúc của một cặp vợ chồng chủ yếu là hợp tính⟧ → Sie verstehen, dass das Glück eines Ehepaares vor allem von passenden Charakteren abhängt. (erklärter Inhalt: Glück durch passende Charaktere) · ⟦Sân bay đã thông tin rằng chuyến bay của tôi sẽ cất cánh chậm 15 phút.⟧ → Der Flughafen hat mitgeteilt, dass mein Flug 15 Minuten später startet. (erklärter Inhalt: Abflug 15 Minuten verspätet)
+⟦không phải chỉ (là) ... mà còn (là)⟧: „nicht nur ~, sondern auch ~“ – drückt eine Steigerung in einer Aufzählung aus oder hebt sie hervor.
+⟦Hạnh phúc của một cặp vợ chồng không phải chỉ là vì hợp tuổi mà còn là vì hợp tính.⟧ → Das Glück eines Ehepaares beruht nicht nur darauf, dass die Geburtsjahre (Horoskope) zusammenpassen, sondern auch die Charaktere. · ⟦Ngày cưới không phải chỉ là ngày vui riêng của đôi bạn trẻ mà còn là ngày vui của cả hai gia đình⟧ → Der Hochzeitstag ist nicht nur ein Freudentag für das junge Paar, sondern auch für beide Familien. · ⟦Người dân Việt Nam không phải chỉ hiền lành mà còn rất thân thiện, mến khách.⟧ → Die Vietnamesen sind nicht nur sanftmütig, sondern auch sehr freundlich und gastfreundlich. · ⟦Anh ấy không phải chỉ là người chơi đàn giỏi mà còn là người hát rất hay.⟧ → Er spielt nicht nur gut ein Instrument, sondern singt auch sehr schön.
+=hu
+Nyelvtani magyarázat
+⟦rằng⟧: „hogy” – kiegészítő magyarázatot vezet be egy korábban említett dologhoz.
+⟦Họ cho rằng vận mệnh của con người đã được sắp đặt từ kiếp trước.⟧ → Úgy vélik, hogy az ember sorsa már az előző életében eldőlt. (magyarázott tartalom: a sors az előző életben eldőlt) · ⟦Họ hiểu rằng hạnh phúc của một cặp vợ chồng chủ yếu là hợp tính⟧ → Megértik, hogy egy házaspár boldogsága főként az összeillő természeten múlik. (magyarázott tartalom: a boldogság az összeillő természetből fakad) · ⟦Sân bay đã thông tin rằng chuyến bay của tôi sẽ cất cánh chậm 15 phút.⟧ → A repülőtér közölte, hogy a járatom 15 perc késéssel száll fel. (magyarázott tartalom: 15 perces késés)
+⟦không phải chỉ (là) ... mà còn (là)⟧: „nemcsak ~, hanem ~ is” – felsorolásban fokozó viszonyt fejez ki vagy hangsúlyoz.
+⟦Hạnh phúc của một cặp vợ chồng không phải chỉ là vì hợp tuổi mà còn là vì hợp tính.⟧ → Egy házaspár boldogsága nemcsak azon múlik, hogy születési évük (horoszkópjuk) összeillik, hanem azon is, hogy a természetük. · ⟦Ngày cưới không phải chỉ là ngày vui riêng của đôi bạn trẻ mà còn là ngày vui của cả hai gia đình⟧ → Az esküvő napja nemcsak a fiatal pár, hanem mindkét család örömnapja. · ⟦Người dân Việt Nam không phải chỉ hiền lành mà còn rất thân thiện, mến khách.⟧ → A vietnámiak nemcsak szelídek, hanem nagyon barátságosak és vendégszeretők is. · ⟦Anh ấy không phải chỉ là người chơi đàn giỏi mà còn là người hát rất hay.⟧ → Nemcsak jól játszik hangszeren, hanem nagyon szépen is énekel.
+=id
+Penjelasan tata bahasa
+⟦rằng⟧: "bahwa" – digunakan untuk memberi penjelasan tambahan tentang hal yang disebut sebelumnya.
+⟦Họ cho rằng vận mệnh của con người đã được sắp đặt từ kiếp trước.⟧ → Mereka menganggap bahwa nasib manusia sudah ditentukan sejak kehidupan sebelumnya. (isi penjelasan: nasib sudah ditentukan di kehidupan sebelumnya) · ⟦Họ hiểu rằng hạnh phúc của một cặp vợ chồng chủ yếu là hợp tính⟧ → Mereka memahami bahwa kebahagiaan pasangan suami istri terutama berasal dari kecocokan watak. (isi penjelasan: kebahagiaan dari kecocokan watak) · ⟦Sân bay đã thông tin rằng chuyến bay của tôi sẽ cất cánh chậm 15 phút.⟧ → Bandara mengumumkan bahwa penerbangan saya akan terlambat lepas landas 15 menit. (isi penjelasan: keberangkatan tertunda 15 menit)
+⟦không phải chỉ (là) ... mà còn (là)⟧: "bukan hanya ~ tetapi juga ~" – menyatakan atau menegaskan hubungan peningkatan dalam suatu penyebutan.
+⟦Hạnh phúc của một cặp vợ chồng không phải chỉ là vì hợp tuổi mà còn là vì hợp tính.⟧ → Kebahagiaan pasangan suami istri bukan hanya karena cocok usianya (menurut perhitungan), tetapi juga karena cocok wataknya. · ⟦Ngày cưới không phải chỉ là ngày vui riêng của đôi bạn trẻ mà còn là ngày vui của cả hai gia đình⟧ → Hari pernikahan bukan hanya hari bahagia pasangan muda, tetapi juga hari bahagia kedua keluarga. · ⟦Người dân Việt Nam không phải chỉ hiền lành mà còn rất thân thiện, mến khách.⟧ → Orang Vietnam bukan hanya lembut, tetapi juga sangat ramah dan suka menjamu tamu. · ⟦Anh ấy không phải chỉ là người chơi đàn giỏi mà còn là người hát rất hay.⟧ → Dia bukan hanya pandai bermain alat musik, tetapi juga pandai bernyanyi.
+=ja
+文法解説
+⟦rằng⟧：「～と／～という」という意味で、前に述べた事柄について補足説明をするために使います。
+⟦Họ cho rằng vận mệnh của con người đã được sắp đặt từ kiếp trước.⟧ → 彼らは、人の運命は前世ですでに決まっていると考えている。（説明内容：運命は前世ですでに決まっている） · ⟦Họ hiểu rằng hạnh phúc của một cặp vợ chồng chủ yếu là hợp tính⟧ → 彼らは、夫婦の幸せは主に性格が合うことから来ると理解している。（説明内容：夫婦の幸せは性格の相性から来る） · ⟦Sân bay đã thông tin rằng chuyến bay của tôi sẽ cất cánh chậm 15 phút.⟧ → 空港側は私の乗る便の離陸が15分遅れると通知した。（説明内容：離陸が15分遅れる）
+⟦không phải chỉ (là) ... mà còn (là)⟧：「～だけでなく～でもある」という意味で、列挙の過程で累加の関係を表現・強調するために使います。
+⟦Hạnh phúc của một cặp vợ chồng không phải chỉ là vì hợp tuổi mà còn là vì hợp tính.⟧ → 夫婦の幸せは相性（生まれ年）が合うからだけでなく、性格が合うからでもある。 · ⟦Ngày cưới không phải chỉ là ngày vui riêng của đôi bạn trẻ mà còn là ngày vui của cả hai gia đình⟧ → 結婚式は若いカップルだけの喜びの日ではなく、両家にとっても喜びの日だ。 · ⟦Người dân Việt Nam không phải chỉ hiền lành mà còn rất thân thiện, mến khách.⟧ → ベトナムの人々は善良なだけでなく、とても親しみやすく客を大切にする。 · ⟦Anh ấy không phải chỉ là người chơi đàn giỏi mà còn là người hát rất hay.⟧ → 彼は楽器が上手なだけでなく、歌もとても上手だ。
+=pl
+Objaśnienia gramatyczne
+⟦rằng⟧: „że” – wprowadza dodatkowe wyjaśnienie do wcześniej wspomnianej rzeczy.
+⟦Họ cho rằng vận mệnh của con người đã được sắp đặt từ kiếp trước.⟧ → Uważają, że los człowieka został ustalony już w poprzednim życiu. (wyjaśniana treść: los ustalony w poprzednim życiu) · ⟦Họ hiểu rằng hạnh phúc của một cặp vợ chồng chủ yếu là hợp tính⟧ → Rozumieją, że szczęście małżeństwa zależy głównie od zgodności charakterów. (wyjaśniana treść: szczęście ze zgodności charakterów) · ⟦Sân bay đã thông tin rằng chuyến bay của tôi sẽ cất cánh chậm 15 phút.⟧ → Lotnisko poinformowało, że mój lot wystartuje z 15-minutowym opóźnieniem. (wyjaśniana treść: opóźnienie o 15 minut)
+⟦không phải chỉ (là) ... mà còn (là)⟧: „nie tylko ~, lecz także ~” – wyraża lub podkreśla stopniowanie w wyliczeniu.
+⟦Hạnh phúc của một cặp vợ chồng không phải chỉ là vì hợp tuổi mà còn là vì hợp tính.⟧ → Szczęście małżeństwa wynika nie tylko ze zgodności lat urodzenia (horoskopów), lecz także charakterów. · ⟦Ngày cưới không phải chỉ là ngày vui riêng của đôi bạn trẻ mà còn là ngày vui của cả hai gia đình⟧ → Dzień ślubu to radosny dzień nie tylko dla młodej pary, lecz także dla obu rodzin. · ⟦Người dân Việt Nam không phải chỉ hiền lành mà còn rất thân thiện, mến khách.⟧ → Wietnamczycy są nie tylko łagodni, lecz także bardzo przyjaźni i gościnni. · ⟦Anh ấy không phải chỉ là người chơi đàn giỏi mà còn là người hát rất hay.⟧ → On nie tylko dobrze gra na instrumencie, lecz także bardzo ładnie śpiewa.

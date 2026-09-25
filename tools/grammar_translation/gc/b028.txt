@@ -1,0 +1,211 @@
+@@ pdf-grammar-d4488409ffd55839#0
+=cs
+Klíčový výraz: ⟦cứ ~ là ~⟧
+⟦cứ + sloveso / časové podstatné jméno + là⟧ znamená „kdykoli ~, vždy ~“ a vyjadřuje vztah podmínka–výsledek u pravidelně se opakujících událostí.
+❶ ⟦Cứ đến mùa xuân là cô ấy đi du lịch.⟧ — Každé jaro jezdí na výlety.
+❷ ⟦Anh ấy cứ ăn trưa xong là nghỉ ít nhất 15 phút.⟧ — Po obědě si vždycky dá aspoň 15 minut pauzu.
+❸ ⟦Không phải học sinh cứ tham gia thi tốt nghiệp là được tốt nghiệp đâu.⟧ — Neplatí, že každý žák, který jde k závěrečné zkoušce, automaticky školu dokončí.
+Výrazy k různým důvodům, proč se dívat na filmy: ⟦hẹn hò⟧ jít na rande | ⟦giải trí⟧ pobavit se | ⟦nghiên cứu (ngành) phim⟧ studovat film | ⟦kinh nghiệm cuộc sống của người khác⟧ poznat životní zkušenosti druhých | ⟦giảm bớt căng thẳng/giải toả căng thẳng⟧ zmírnit / uvolnit stres
+Procvičování 1 — veďte rozhovor podle vzoru s daným výrazem.
+Vzor (⟦đi vắng⟧ být pryč): Ⓐ ⟦Cậu gặp anh ấy chưa?⟧ — Už ses s ním viděl? Ⓑ ⟦Chưa. Tớ cứ đến nhà là anh ấy lại đi vắng.⟧ — Ještě ne. Kdykoli k němu přijdu, není doma.
+❶ (⟦bị ngập⟧ být zaplavený) Ⓐ ⟦Trời mưa to quá! Hôm nay anh có đi xe máy không?⟧ — Strašně prší! Pojedeš dnes na motorce? Ⓑ ⟦Không. Tại vì cứ mưa to là đường bị ngập.⟧ — Ne. Protože kdykoli silně prší, silnice je zaplavená.
+❷ (⟦đỏ mặt⟧ zčervenat) Ⓐ ⟦Tại sao em không uống rượu vậy?⟧ — Proč nepiješ alkohol? Ⓑ ⟦Tại vì em cứ uống rượu là đỏ mặt.⟧ — Protože kdykoli se napiju, zčervenám.
+Rozhovor: Min-ho mluví s Trang o sledování filmů.
+Trang: ⟦Khi rỗi, em thường xem phim. Còn anh thì sao?⟧ — Když mám volno, obvykle se dívám na filmy. A ty?
+Min-ho: ⟦Anh cũng vậy. Thường thường, cứ nghe tin có phim hay là anh xem ngay. Xem phim luôn giúp cho anh giảm bớt căng thẳng.⟧ — Já taky. Obvykle, kdykoli slyším o dobrém filmu, hned se na něj podívám. Filmy mi vždycky pomáhají od stresu.
+Trang: ⟦Thế, anh đã từng đi xem ở rạp chiếu phim Việt Nam bao giờ chưa?⟧ — A byl jsi už někdy ve vietnamském kině?
+Min-ho: ⟦Chưa. Anh thường xem phim online trên mạng.⟧ — Ještě ne. Obvykle se dívám na filmy online.
+Trang: ⟦Thế à? Gần nhà anh cũng có một rạp chiếu phim đẹp mà! Cuối tuần này mình cùng đi xem nhé?⟧ — Opravdu? Vždyť blízko tebe je hezké kino! Nepůjdeme tam spolu tento víkend?
+Min-ho: ⟦Ừ! Mình xem phim hành động nhé!⟧ — Jo! Podíváme se na akční film!
+Trang: ⟦Vâng, tuỳ anh.⟧ — Dobře, jak chceš.
+Procvičování — kdy se dívat: ⟦khi rỗi⟧ (ve volném čase) / ⟦khi thấy buồn⟧ (když je smutno); proč: ⟦giảm bớt căng thẳng⟧ (zmírnit stres) / ⟦cảm thấy vui vẻ hơn⟧ (cítit se veseleji); kde: ⟦xem phim online trên mạng⟧ (online na internetu) / ⟦xem phim trên TV⟧ (v televizi); jaký žánr: ⟦phim hành động⟧ (akční film) / ⟦phim hài⟧ (komedie).
+Nová slovíčka: ⟦hẹn hò⟧ randit | ⟦giải toả⟧ uvolnit, zbavit se | ⟦rạp chiếu phim⟧ kino | ⟦vắng⟧ nepřítomný, prázdný | ⟦ngập⟧ zaplavit | ⟦chiếu⟧ svítit, promítat | ⟦mạng⟧ síť, internet | ⟦hành động⟧ akce, jednat
+=zh_cn
+核心表达：⟦cứ ~ là ~⟧
+⟦cứ + 动词 / 时间名词 + là⟧ 意为“只要……就总是……”，表示规律性发生之事的“条件—结果”关系。
+❶ ⟦Cứ đến mùa xuân là cô ấy đi du lịch.⟧ —— 每到春天她就去旅行。
+❷ ⟦Anh ấy cứ ăn trưa xong là nghỉ ít nhất 15 phút.⟧ —— 他每次吃完午饭都至少休息15分钟。
+❸ ⟦Không phải học sinh cứ tham gia thi tốt nghiệp là được tốt nghiệp đâu.⟧ —— 并不是学生只要参加毕业考试就一定能毕业。
+看电影的各种理由的表达：⟦hẹn hò⟧ 约会 | ⟦giải trí⟧ 娱乐 | ⟦nghiên cứu (ngành) phim⟧ 研究电影 | ⟦kinh nghiệm cuộc sống của người khác⟧ 体验他人的人生 | ⟦giảm bớt căng thẳng/giải toả căng thẳng⟧ 减轻压力 / 缓解压力
+句型练习1 —— 用所给表达仿照范例对话。
+范例（⟦đi vắng⟧ 不在）：Ⓐ ⟦Cậu gặp anh ấy chưa?⟧ —— 你见到他了吗？ Ⓑ ⟦Chưa. Tớ cứ đến nhà là anh ấy lại đi vắng.⟧ —— 还没。我每次去他家他都不在。
+❶（⟦bị ngập⟧ 被淹）Ⓐ ⟦Trời mưa to quá! Hôm nay anh có đi xe máy không?⟧ —— 雨下得好大！你今天骑摩托车吗？ Ⓑ ⟦Không. Tại vì cứ mưa to là đường bị ngập.⟧ —— 不骑。因为一下大雨路就被淹。
+❷（⟦đỏ mặt⟧ 脸红）Ⓐ ⟦Tại sao em không uống rượu vậy?⟧ —— 你为什么不喝酒呢？ Ⓑ ⟦Tại vì em cứ uống rượu là đỏ mặt.⟧ —— 因为我一喝酒就脸红。
+对话：敏浩和庄在聊看电影的事。
+庄：⟦Khi rỗi, em thường xem phim. Còn anh thì sao?⟧ —— 有空的时候我常看电影。你呢？
+敏浩：⟦Anh cũng vậy. Thường thường, cứ nghe tin có phim hay là anh xem ngay. Xem phim luôn giúp cho anh giảm bớt căng thẳng.⟧ —— 我也是。通常只要听说有好电影我就马上看。看电影总能帮我减轻压力。
+庄：⟦Thế, anh đã từng đi xem ở rạp chiếu phim Việt Nam bao giờ chưa?⟧ —— 那你去过越南的电影院看电影吗？
+敏浩：⟦Chưa. Anh thường xem phim online trên mạng.⟧ —— 还没有。我通常在网上看电影。
+庄：⟦Thế à? Gần nhà anh cũng có một rạp chiếu phim đẹp mà! Cuối tuần này mình cùng đi xem nhé?⟧ —— 是吗？你家附近就有一家很漂亮的电影院啊！这个周末我们一起去看吧？
+敏浩：⟦Ừ! Mình xem phim hành động nhé!⟧ —— 好！我们看动作片吧！
+庄：⟦Vâng, tuỳ anh.⟧ —— 好，随你。
+句型练习 —— 什么时候看电影：⟦khi rỗi⟧（有空时）/ ⟦khi thấy buồn⟧（难过时）；看电影为了什么：⟦giảm bớt căng thẳng⟧（减轻压力）/ ⟦cảm thấy vui vẻ hơn⟧（心情更愉快）；在哪里看：⟦xem phim online trên mạng⟧（在网上看）/ ⟦xem phim trên TV⟧（在电视上看）；看什么类型：⟦phim hành động⟧（动作片）/ ⟦phim hài⟧（喜剧片）。
+新单词：⟦hẹn hò⟧ 约会 | ⟦giải toả⟧ 缓解、消除 | ⟦rạp chiếu phim⟧ 电影院 | ⟦vắng⟧ 不在、没人 | ⟦ngập⟧ 淹没 | ⟦chiếu⟧ 照射、放映 | ⟦mạng⟧ 网络 | ⟦hành động⟧ 动作、行动
+=zh
+核心表達：⟦cứ ~ là ~⟧
+⟦cứ + 動詞 / 時間名詞 + là⟧ 意為「只要……就總是……」，表示規律性發生之事的「條件—結果」關係。
+❶ ⟦Cứ đến mùa xuân là cô ấy đi du lịch.⟧ —— 每到春天她就去旅行。
+❷ ⟦Anh ấy cứ ăn trưa xong là nghỉ ít nhất 15 phút.⟧ —— 他每次吃完午餐都至少休息15分鐘。
+❸ ⟦Không phải học sinh cứ tham gia thi tốt nghiệp là được tốt nghiệp đâu.⟧ —— 並不是學生只要參加畢業考就一定能畢業。
+看電影的各種理由的表達：⟦hẹn hò⟧ 約會 | ⟦giải trí⟧ 娛樂 | ⟦nghiên cứu (ngành) phim⟧ 研究電影 | ⟦kinh nghiệm cuộc sống của người khác⟧ 體驗他人的人生 | ⟦giảm bớt căng thẳng/giải toả căng thẳng⟧ 減輕壓力 / 紓解壓力
+句型練習1 —— 用所給表達仿照範例對話。
+範例（⟦đi vắng⟧ 不在）：Ⓐ ⟦Cậu gặp anh ấy chưa?⟧ —— 你見到他了嗎？ Ⓑ ⟦Chưa. Tớ cứ đến nhà là anh ấy lại đi vắng.⟧ —— 還沒。我每次去他家他都不在。
+❶（⟦bị ngập⟧ 淹水）Ⓐ ⟦Trời mưa to quá! Hôm nay anh có đi xe máy không?⟧ —— 雨下得好大！你今天騎機車嗎？ Ⓑ ⟦Không. Tại vì cứ mưa to là đường bị ngập.⟧ —— 不騎。因為一下大雨路就淹水。
+❷（⟦đỏ mặt⟧ 臉紅）Ⓐ ⟦Tại sao em không uống rượu vậy?⟧ —— 妳為什麼不喝酒呢？ Ⓑ ⟦Tại vì em cứ uống rượu là đỏ mặt.⟧ —— 因為我一喝酒就臉紅。
+對話：敏浩和莊在聊看電影的事。
+莊：⟦Khi rỗi, em thường xem phim. Còn anh thì sao?⟧ —— 有空的時候我常看電影。你呢？
+敏浩：⟦Anh cũng vậy. Thường thường, cứ nghe tin có phim hay là anh xem ngay. Xem phim luôn giúp cho anh giảm bớt căng thẳng.⟧ —— 我也是。通常只要聽說有好電影我就馬上看。看電影總能幫我減輕壓力。
+莊：⟦Thế, anh đã từng đi xem ở rạp chiếu phim Việt Nam bao giờ chưa?⟧ —— 那你去過越南的電影院看電影嗎？
+敏浩：⟦Chưa. Anh thường xem phim online trên mạng.⟧ —— 還沒有。我通常在網路上看電影。
+莊：⟦Thế à? Gần nhà anh cũng có một rạp chiếu phim đẹp mà! Cuối tuần này mình cùng đi xem nhé?⟧ —— 是嗎？你家附近就有一家很漂亮的電影院啊！這個週末我們一起去看吧？
+敏浩：⟦Ừ! Mình xem phim hành động nhé!⟧ —— 好！我們看動作片吧！
+莊：⟦Vâng, tuỳ anh.⟧ —— 好，隨你。
+句型練習 —— 什麼時候看電影：⟦khi rỗi⟧（有空時）/ ⟦khi thấy buồn⟧（難過時）；看電影為了什麼：⟦giảm bớt căng thẳng⟧（減輕壓力）/ ⟦cảm thấy vui vẻ hơn⟧（心情更愉快）；在哪裡看：⟦xem phim online trên mạng⟧（在網路上看）/ ⟦xem phim trên TV⟧（在電視上看）；看什麼類型：⟦phim hành động⟧（動作片）/ ⟦phim hài⟧（喜劇片）。
+新單字：⟦hẹn hò⟧ 約會 | ⟦giải toả⟧ 紓解、消除 | ⟦rạp chiếu phim⟧ 電影院 | ⟦vắng⟧ 不在、沒人 | ⟦ngập⟧ 淹沒 | ⟦chiếu⟧ 照射、放映 | ⟦mạng⟧ 網路 | ⟦hành động⟧ 動作、行動
+=en
+Key expression: ⟦cứ ~ là ~⟧
+⟦cứ + verb / time noun + là⟧ means "whenever ~, always ~" and expresses a condition–result relationship for things that happen regularly.
+❶ ⟦Cứ đến mùa xuân là cô ấy đi du lịch.⟧ — Every spring she goes travelling.
+❷ ⟦Anh ấy cứ ăn trưa xong là nghỉ ít nhất 15 phút.⟧ — Whenever he finishes lunch, he rests for at least 15 minutes.
+❸ ⟦Không phải học sinh cứ tham gia thi tốt nghiệp là được tốt nghiệp đâu.⟧ — It is by no means true that every student who sits the final exam will graduate.
+Expressions for different reasons to watch films: ⟦hẹn hò⟧ to go on a date | ⟦giải trí⟧ entertainment | ⟦nghiên cứu (ngành) phim⟧ to study film | ⟦kinh nghiệm cuộc sống của người khác⟧ to experience other people's lives | ⟦giảm bớt căng thẳng/giải toả căng thẳng⟧ to reduce / relieve stress
+Pattern practice 1 — talk as in the model using the given expression.
+Model (⟦đi vắng⟧ be out): Ⓐ ⟦Cậu gặp anh ấy chưa?⟧ — Have you met him yet? Ⓑ ⟦Chưa. Tớ cứ đến nhà là anh ấy lại đi vắng.⟧ — Not yet. Every time I go to his house, he's out.
+❶ (⟦bị ngập⟧ be flooded) Ⓐ ⟦Trời mưa to quá! Hôm nay anh có đi xe máy không?⟧ — It's pouring! Are you going by motorbike today? Ⓑ ⟦Không. Tại vì cứ mưa to là đường bị ngập.⟧ — No. Because whenever it rains hard, the roads flood.
+❷ (⟦đỏ mặt⟧ go red) Ⓐ ⟦Tại sao em không uống rượu vậy?⟧ — Why don't you drink alcohol? Ⓑ ⟦Tại vì em cứ uống rượu là đỏ mặt.⟧ — Because whenever I drink, my face goes red.
+Dialogue: Min-ho and Trang are talking about watching films.
+Trang: ⟦Khi rỗi, em thường xem phim. Còn anh thì sao?⟧ — When I'm free, I usually watch films. What about you?
+Min-ho: ⟦Anh cũng vậy. Thường thường, cứ nghe tin có phim hay là anh xem ngay. Xem phim luôn giúp cho anh giảm bớt căng thẳng.⟧ — Me too. Usually, whenever I hear there's a good film, I watch it straight away. Films always help me relieve stress.
+Trang: ⟦Thế, anh đã từng đi xem ở rạp chiếu phim Việt Nam bao giờ chưa?⟧ — So have you ever been to a Vietnamese cinema?
+Min-ho: ⟦Chưa. Anh thường xem phim online trên mạng.⟧ — Not yet. I usually watch films online.
+Trang: ⟦Thế à? Gần nhà anh cũng có một rạp chiếu phim đẹp mà! Cuối tuần này mình cùng đi xem nhé?⟧ — Really? There's a nice cinema near your place! Shall we go together this weekend?
+Min-ho: ⟦Ừ! Mình xem phim hành động nhé!⟧ — Sure! Let's watch an action film!
+Trang: ⟦Vâng, tuỳ anh.⟧ — OK, it's up to you.
+Pattern practice — when: ⟦khi rỗi⟧ (when free) / ⟦khi thấy buồn⟧ (when feeling down); why: ⟦giảm bớt căng thẳng⟧ (to reduce stress) / ⟦cảm thấy vui vẻ hơn⟧ (to feel happier); where: ⟦xem phim online trên mạng⟧ (online) / ⟦xem phim trên TV⟧ (on TV); what kind: ⟦phim hành động⟧ (action film) / ⟦phim hài⟧ (comedy).
+New words: ⟦hẹn hò⟧ to date | ⟦giải toả⟧ to relieve, release | ⟦rạp chiếu phim⟧ cinema | ⟦vắng⟧ absent, empty | ⟦ngập⟧ to flood | ⟦chiếu⟧ to shine, to screen | ⟦mạng⟧ network, internet | ⟦hành động⟧ action, to act
+=fr
+Expression clé : ⟦cứ ~ là ~⟧
+⟦cứ + verbe / nom de temps + là⟧ signifie « dès que ~, toujours ~ » et exprime une relation condition–résultat pour des faits qui se produisent régulièrement.
+❶ ⟦Cứ đến mùa xuân là cô ấy đi du lịch.⟧ — Chaque printemps, elle part en voyage.
+❷ ⟦Anh ấy cứ ăn trưa xong là nghỉ ít nhất 15 phút.⟧ — Dès qu'il a fini de déjeuner, il se repose au moins 15 minutes.
+❸ ⟦Không phải học sinh cứ tham gia thi tốt nghiệp là được tốt nghiệp đâu.⟧ — Il ne suffit pas qu'un élève passe l'examen final pour obtenir son diplôme.
+Expressions sur les différentes raisons de regarder des films : ⟦hẹn hò⟧ avoir un rendez-vous amoureux | ⟦giải trí⟧ se divertir | ⟦nghiên cứu (ngành) phim⟧ étudier le cinéma | ⟦kinh nghiệm cuộc sống của người khác⟧ découvrir la vie des autres | ⟦giảm bớt căng thẳng/giải toả căng thẳng⟧ réduire / évacuer le stress
+Exercice 1 — dialoguez comme dans le modèle avec l'expression donnée.
+Modèle (⟦đi vắng⟧ être absent) : Ⓐ ⟦Cậu gặp anh ấy chưa?⟧ — Tu l'as déjà vu ? Ⓑ ⟦Chưa. Tớ cứ đến nhà là anh ấy lại đi vắng.⟧ — Pas encore. Chaque fois que je passe chez lui, il est absent.
+❶ (⟦bị ngập⟧ être inondé) Ⓐ ⟦Trời mưa to quá! Hôm nay anh có đi xe máy không?⟧ — Il pleut à verse ! Tu prends la moto aujourd'hui ? Ⓑ ⟦Không. Tại vì cứ mưa to là đường bị ngập.⟧ — Non. Parce que dès qu'il pleut fort, les rues sont inondées.
+❷ (⟦đỏ mặt⟧ rougir) Ⓐ ⟦Tại sao em không uống rượu vậy?⟧ — Pourquoi tu ne bois pas d'alcool ? Ⓑ ⟦Tại vì em cứ uống rượu là đỏ mặt.⟧ — Parce que dès que je bois, je deviens tout rouge.
+Dialogue : Min-ho et Trang parlent de cinéma.
+Trang : ⟦Khi rỗi, em thường xem phim. Còn anh thì sao?⟧ — Quand j'ai du temps libre, je regarde souvent des films. Et toi ?
+Min-ho : ⟦Anh cũng vậy. Thường thường, cứ nghe tin có phim hay là anh xem ngay. Xem phim luôn giúp cho anh giảm bớt căng thẳng.⟧ — Moi aussi. En général, dès que j'entends parler d'un bon film, je le regarde tout de suite. Les films m'aident toujours à décompresser.
+Trang : ⟦Thế, anh đã từng đi xem ở rạp chiếu phim Việt Nam bao giờ chưa?⟧ — Et tu es déjà allé dans un cinéma vietnamien ?
+Min-ho : ⟦Chưa. Anh thường xem phim online trên mạng.⟧ — Pas encore. Je regarde surtout des films en ligne.
+Trang : ⟦Thế à? Gần nhà anh cũng có một rạp chiếu phim đẹp mà! Cuối tuần này mình cùng đi xem nhé?⟧ — Ah bon ? Il y a pourtant un beau cinéma près de chez toi ! On y va ensemble ce week-end ?
+Min-ho : ⟦Ừ! Mình xem phim hành động nhé!⟧ — D'accord ! On regarde un film d'action !
+Trang : ⟦Vâng, tuỳ anh.⟧ — Oui, comme tu veux.
+Exercices — quand : ⟦khi rỗi⟧ (pendant le temps libre) / ⟦khi thấy buồn⟧ (quand on est triste) ; pourquoi : ⟦giảm bớt căng thẳng⟧ (réduire le stress) / ⟦cảm thấy vui vẻ hơn⟧ (se sentir plus joyeux) ; où : ⟦xem phim online trên mạng⟧ (en ligne) / ⟦xem phim trên TV⟧ (à la télé) ; quel genre : ⟦phim hành động⟧ (film d'action) / ⟦phim hài⟧ (comédie).
+Nouveaux mots : ⟦hẹn hò⟧ sortir ensemble | ⟦giải toả⟧ libérer, évacuer | ⟦rạp chiếu phim⟧ cinéma | ⟦vắng⟧ absent, vide | ⟦ngập⟧ inonder | ⟦chiếu⟧ éclairer, projeter | ⟦mạng⟧ réseau, internet | ⟦hành động⟧ action, agir
+=de
+Schlüsselausdruck: ⟦cứ ~ là ~⟧
+⟦cứ + Verb / Zeitnomen + là⟧ bedeutet „immer wenn ~, (dann) ~“ und drückt eine Bedingung-Folge-Beziehung bei regelmäßig auftretenden Ereignissen aus.
+❶ ⟦Cứ đến mùa xuân là cô ấy đi du lịch.⟧ — Jeden Frühling verreist sie.
+❷ ⟦Anh ấy cứ ăn trưa xong là nghỉ ít nhất 15 phút.⟧ — Immer nach dem Mittagessen ruht er sich mindestens 15 Minuten aus.
+❸ ⟦Không phải học sinh cứ tham gia thi tốt nghiệp là được tốt nghiệp đâu.⟧ — Es ist keineswegs so, dass jeder Schüler, der die Abschlussprüfung ablegt, auch den Abschluss bekommt.
+Ausdrücke zu verschiedenen Gründen, Filme zu schauen: ⟦hẹn hò⟧ ein Date haben | ⟦giải trí⟧ Unterhaltung | ⟦nghiên cứu (ngành) phim⟧ Film studieren | ⟦kinh nghiệm cuộc sống của người khác⟧ das Leben anderer miterleben | ⟦giảm bớt căng thẳng/giải toả căng thẳng⟧ Stress abbauen / lösen
+Übung 1 — wie im Muster mit dem vorgegebenen Ausdruck sprechen.
+Muster (⟦đi vắng⟧ nicht da sein): Ⓐ ⟦Cậu gặp anh ấy chưa?⟧ — Hast du ihn schon getroffen? Ⓑ ⟦Chưa. Tớ cứ đến nhà là anh ấy lại đi vắng.⟧ — Noch nicht. Immer wenn ich zu ihm komme, ist er nicht da.
+❶ (⟦bị ngập⟧ überflutet sein) Ⓐ ⟦Trời mưa to quá! Hôm nay anh có đi xe máy không?⟧ — Es gießt in Strömen! Fährst du heute Motorrad? Ⓑ ⟦Không. Tại vì cứ mưa to là đường bị ngập.⟧ — Nein. Denn immer wenn es stark regnet, sind die Straßen überflutet.
+❷ (⟦đỏ mặt⟧ rot werden) Ⓐ ⟦Tại sao em không uống rượu vậy?⟧ — Warum trinkst du keinen Alkohol? Ⓑ ⟦Tại vì em cứ uống rượu là đỏ mặt.⟧ — Weil ich immer rot werde, wenn ich trinke.
+Dialog: Min-ho und Trang sprechen übers Filmeschauen.
+Trang: ⟦Khi rỗi, em thường xem phim. Còn anh thì sao?⟧ — Wenn ich frei habe, schaue ich oft Filme. Und du?
+Min-ho: ⟦Anh cũng vậy. Thường thường, cứ nghe tin có phim hay là anh xem ngay. Xem phim luôn giúp cho anh giảm bớt căng thẳng.⟧ — Ich auch. Normalerweise schaue ich einen guten Film sofort, sobald ich davon höre. Filme helfen mir immer, Stress abzubauen.
+Trang: ⟦Thế, anh đã từng đi xem ở rạp chiếu phim Việt Nam bao giờ chưa?⟧ — Warst du schon mal in einem vietnamesischen Kino?
+Min-ho: ⟦Chưa. Anh thường xem phim online trên mạng.⟧ — Noch nicht. Ich schaue Filme meistens online.
+Trang: ⟦Thế à? Gần nhà anh cũng có một rạp chiếu phim đẹp mà! Cuối tuần này mình cùng đi xem nhé?⟧ — Echt? In deiner Nähe gibt es doch ein schönes Kino! Gehen wir dieses Wochenende zusammen hin?
+Min-ho: ⟦Ừ! Mình xem phim hành động nhé!⟧ — Ja! Lass uns einen Actionfilm schauen!
+Trang: ⟦Vâng, tuỳ anh.⟧ — Okay, wie du willst.
+Satzmusterübung — wann: ⟦khi rỗi⟧ (in der Freizeit) / ⟦khi thấy buồn⟧ (wenn man traurig ist); wozu: ⟦giảm bớt căng thẳng⟧ (Stress abbauen) / ⟦cảm thấy vui vẻ hơn⟧ (sich fröhlicher fühlen); wo: ⟦xem phim online trên mạng⟧ (online) / ⟦xem phim trên TV⟧ (im Fernsehen); welches Genre: ⟦phim hành động⟧ (Actionfilm) / ⟦phim hài⟧ (Komödie).
+Neue Wörter: ⟦hẹn hò⟧ sich verabreden, daten | ⟦giải toả⟧ lösen, abbauen | ⟦rạp chiếu phim⟧ Kino | ⟦vắng⟧ abwesend, leer | ⟦ngập⟧ überfluten | ⟦chiếu⟧ scheinen, vorführen | ⟦mạng⟧ Netz, Internet | ⟦hành động⟧ Action, handeln
+=hu
+Kulcskifejezés: ⟦cứ ~ là ~⟧
+A ⟦cứ + ige / időt jelentő főnév + là⟧ jelentése „valahányszor ~, mindig ~”, rendszeresen bekövetkező események feltétel–eredmény viszonyát fejezi ki.
+❶ ⟦Cứ đến mùa xuân là cô ấy đi du lịch.⟧ — Minden tavasszal utazni megy.
+❷ ⟦Anh ấy cứ ăn trưa xong là nghỉ ít nhất 15 phút.⟧ — Ebéd után mindig legalább 15 percet pihen.
+❸ ⟦Không phải học sinh cứ tham gia thi tốt nghiệp là được tốt nghiệp đâu.⟧ — Egyáltalán nem igaz, hogy aki elmegy a záróvizsgára, az mind le is végez.
+Kifejezések a filmnézés különféle okaira: ⟦hẹn hò⟧ randevúzni | ⟦giải trí⟧ szórakozás | ⟦nghiên cứu (ngành) phim⟧ filmet tanulmányozni | ⟦kinh nghiệm cuộc sống của người khác⟧ mások életét megtapasztalni | ⟦giảm bớt căng thẳng/giải toả căng thẳng⟧ stresszt csökkenteni / oldani
+1. gyakorlat — beszélgessen a minta szerint a megadott kifejezéssel.
+Minta (⟦đi vắng⟧ nincs otthon): Ⓐ ⟦Cậu gặp anh ấy chưa?⟧ — Találkoztál már vele? Ⓑ ⟦Chưa. Tớ cứ đến nhà là anh ấy lại đi vắng.⟧ — Még nem. Valahányszor elmegyek hozzá, sosincs otthon.
+❶ (⟦bị ngập⟧ víz alá kerül) Ⓐ ⟦Trời mưa to quá! Hôm nay anh có đi xe máy không?⟧ — Nagyon esik! Motorral mész ma? Ⓑ ⟦Không. Tại vì cứ mưa to là đường bị ngập.⟧ — Nem. Mert valahányszor erősen esik, az utak víz alá kerülnek.
+❷ (⟦đỏ mặt⟧ elvörösödik) Ⓐ ⟦Tại sao em không uống rượu vậy?⟧ — Miért nem iszol alkoholt? Ⓑ ⟦Tại vì em cứ uống rượu là đỏ mặt.⟧ — Mert valahányszor iszom, elvörösödik az arcom.
+Párbeszéd: Min-ho és Trang a filmnézésről beszélgetnek.
+Trang: ⟦Khi rỗi, em thường xem phim. Còn anh thì sao?⟧ — Ha ráérek, általában filmet nézek. És te?
+Min-ho: ⟦Anh cũng vậy. Thường thường, cứ nghe tin có phim hay là anh xem ngay. Xem phim luôn giúp cho anh giảm bớt căng thẳng.⟧ — Én is. Általában, ha hallok egy jó filmről, azonnal megnézem. A filmnézés mindig segít oldani a stresszt.
+Trang: ⟦Thế, anh đã từng đi xem ở rạp chiếu phim Việt Nam bao giờ chưa?⟧ — És voltál már vietnami moziban?
+Min-ho: ⟦Chưa. Anh thường xem phim online trên mạng.⟧ — Még nem. Általában online nézek filmet.
+Trang: ⟦Thế à? Gần nhà anh cũng có một rạp chiếu phim đẹp mà! Cuối tuần này mình cùng đi xem nhé?⟧ — Tényleg? Pedig a közeledben van egy szép mozi! Elmegyünk együtt a hétvégén?
+Min-ho: ⟦Ừ! Mình xem phim hành động nhé!⟧ — Persze! Nézzünk akciófilmet!
+Trang: ⟦Vâng, tuỳ anh.⟧ — Rendben, ahogy szeretnéd.
+Mintagyakorlat — mikor: ⟦khi rỗi⟧ (szabadidőben) / ⟦khi thấy buồn⟧ (ha szomorú); miért: ⟦giảm bớt căng thẳng⟧ (stresszcsökkentés) / ⟦cảm thấy vui vẻ hơn⟧ (hogy vidámabb legyen); hol: ⟦xem phim online trên mạng⟧ (online) / ⟦xem phim trên TV⟧ (a tévében); milyen műfaj: ⟦phim hành động⟧ (akciófilm) / ⟦phim hài⟧ (vígjáték).
+Új szavak: ⟦hẹn hò⟧ randevúzni | ⟦giải toả⟧ oldani, feloldani | ⟦rạp chiếu phim⟧ mozi | ⟦vắng⟧ távol lévő, üres | ⟦ngập⟧ elárasztani | ⟦chiếu⟧ világítani, vetíteni | ⟦mạng⟧ hálózat, internet | ⟦hành động⟧ akció, cselekedni
+=id
+Ungkapan kunci: ⟦cứ ~ là ~⟧
+⟦cứ + verba / nomina waktu + là⟧ berarti "setiap kali ~, pasti ~" dan menyatakan hubungan syarat–akibat untuk hal yang terjadi secara teratur.
+❶ ⟦Cứ đến mùa xuân là cô ấy đi du lịch.⟧ — Setiap musim semi tiba, dia pergi berwisata.
+❷ ⟦Anh ấy cứ ăn trưa xong là nghỉ ít nhất 15 phút.⟧ — Setiap selesai makan siang, dia beristirahat paling sedikit 15 menit.
+❸ ⟦Không phải học sinh cứ tham gia thi tốt nghiệp là được tốt nghiệp đâu.⟧ — Tidak benar bahwa siswa yang ikut ujian kelulusan pasti lulus.
+Ungkapan tentang berbagai alasan menonton film: ⟦hẹn hò⟧ berkencan | ⟦giải trí⟧ hiburan | ⟦nghiên cứu (ngành) phim⟧ meneliti film | ⟦kinh nghiệm cuộc sống của người khác⟧ merasakan pengalaman hidup orang lain | ⟦giảm bớt căng thẳng/giải toả căng thẳng⟧ mengurangi / melepas stres
+Latihan pola 1 — bercakaplah seperti contoh dengan ungkapan yang diberikan.
+Contoh (⟦đi vắng⟧ sedang pergi): Ⓐ ⟦Cậu gặp anh ấy chưa?⟧ — Sudah ketemu dia? Ⓑ ⟦Chưa. Tớ cứ đến nhà là anh ấy lại đi vắng.⟧ — Belum. Setiap kali aku ke rumahnya, dia selalu sedang pergi.
+❶ (⟦bị ngập⟧ kebanjiran) Ⓐ ⟦Trời mưa to quá! Hôm nay anh có đi xe máy không?⟧ — Hujan deras sekali! Hari ini naik motor? Ⓑ ⟦Không. Tại vì cứ mưa to là đường bị ngập.⟧ — Tidak. Karena setiap hujan deras, jalan kebanjiran.
+❷ (⟦đỏ mặt⟧ wajah memerah) Ⓐ ⟦Tại sao em không uống rượu vậy?⟧ — Kenapa kamu tidak minum alkohol? Ⓑ ⟦Tại vì em cứ uống rượu là đỏ mặt.⟧ — Karena setiap minum alkohol, wajah saya memerah.
+Percakapan: Min-ho dan Trang berbicara tentang menonton film.
+Trang: ⟦Khi rỗi, em thường xem phim. Còn anh thì sao?⟧ — Kalau ada waktu luang, saya biasanya menonton film. Kalau Kakak?
+Min-ho: ⟦Anh cũng vậy. Thường thường, cứ nghe tin có phim hay là anh xem ngay. Xem phim luôn giúp cho anh giảm bớt căng thẳng.⟧ — Sama. Biasanya, setiap dengar ada film bagus, aku langsung menontonnya. Menonton film selalu membantuku mengurangi stres.
+Trang: ⟦Thế, anh đã từng đi xem ở rạp chiếu phim Việt Nam bao giờ chưa?⟧ — Kalau begitu, Kakak pernah menonton di bioskop Vietnam?
+Min-ho: ⟦Chưa. Anh thường xem phim online trên mạng.⟧ — Belum. Aku biasanya nonton film online.
+Trang: ⟦Thế à? Gần nhà anh cũng có một rạp chiếu phim đẹp mà! Cuối tuần này mình cùng đi xem nhé?⟧ — Oh ya? Dekat rumah Kakak kan ada bioskop bagus! Akhir pekan ini kita nonton bareng, yuk?
+Min-ho: ⟦Ừ! Mình xem phim hành động nhé!⟧ — Oke! Kita nonton film laga, ya!
+Trang: ⟦Vâng, tuỳ anh.⟧ — Iya, terserah Kakak.
+Latihan pola — kapan: ⟦khi rỗi⟧ (saat senggang) / ⟦khi thấy buồn⟧ (saat sedih); untuk apa: ⟦giảm bớt căng thẳng⟧ (mengurangi stres) / ⟦cảm thấy vui vẻ hơn⟧ (merasa lebih gembira); di mana: ⟦xem phim online trên mạng⟧ (online) / ⟦xem phim trên TV⟧ (di TV); jenis apa: ⟦phim hành động⟧ (film laga) / ⟦phim hài⟧ (film komedi).
+Kosakata baru: ⟦hẹn hò⟧ berkencan | ⟦giải toả⟧ melepaskan, meredakan | ⟦rạp chiếu phim⟧ bioskop | ⟦vắng⟧ tidak ada, sepi | ⟦ngập⟧ terendam | ⟦chiếu⟧ menyinari, menayangkan | ⟦mạng⟧ jaringan, internet | ⟦hành động⟧ aksi, bertindak
+=ja
+核心表現：⟦cứ ~ là ~⟧
+⟦cứ + 動詞 / 時間名詞 + là⟧ は「～しさえすれば / ～になるといつも～する」という意味で、規則的に起こる事柄の「条件―結果」の関係を表します。
+❶ ⟦Cứ đến mùa xuân là cô ấy đi du lịch.⟧ — 春が来るといつも、彼女は旅行に行きます。
+❷ ⟦Anh ấy cứ ăn trưa xong là nghỉ ít nhất 15 phút.⟧ — 彼は昼食を食べ終わるといつも、少なくとも15分は休憩します。
+❸ ⟦Không phải học sinh cứ tham gia thi tốt nghiệp là được tốt nghiệp đâu.⟧ — 学生が卒業試験を受けさえすれば卒業できるというわけでは決してありません。
+映画を見るさまざまな理由の表現：⟦hẹn hò⟧ デートする | ⟦giải trí⟧ 娯楽 | ⟦nghiên cứu (ngành) phim⟧ 映画を研究する | ⟦kinh nghiệm cuộc sống của người khác⟧ 他人の人生を経験する | ⟦giảm bớt căng thẳng/giải toả căng thẳng⟧ ストレスを減らす / 解消する
+文型練習1 — 与えられた表現を使って例のように会話してみましょう。
+例（⟦đi vắng⟧ 留守にする）：Ⓐ ⟦Cậu gặp anh ấy chưa?⟧ — 彼に会った？ Ⓑ ⟦Chưa. Tớ cứ đến nhà là anh ấy lại đi vắng.⟧ — まだ。家に行くといつも彼は留守なんだ。
+❶（⟦bị ngập⟧ 冠水する）Ⓐ ⟦Trời mưa to quá! Hôm nay anh có đi xe máy không?⟧ — ひどい雨ですね！今日はバイクで行きますか。 Ⓑ ⟦Không. Tại vì cứ mưa to là đường bị ngập.⟧ — いいえ。大雨が降るといつも道が冠水するからです。
+❷（⟦đỏ mặt⟧ 顔が赤くなる）Ⓐ ⟦Tại sao em không uống rượu vậy?⟧ — どうしてお酒を飲まないの？ Ⓑ ⟦Tại vì em cứ uống rượu là đỏ mặt.⟧ — お酒を飲むといつも顔が赤くなるからです。
+会話：ミンホとチャンが映画鑑賞について話しています。
+チャン：⟦Khi rỗi, em thường xem phim. Còn anh thì sao?⟧ — 暇なとき、私はよく映画を見ます。ミンホさんは？
+ミンホ：⟦Anh cũng vậy. Thường thường, cứ nghe tin có phim hay là anh xem ngay. Xem phim luôn giúp cho anh giảm bớt căng thẳng.⟧ — 僕もだよ。たいてい、いい映画があると聞くとすぐに見るんだ。映画はいつもストレス解消になるよ。
+チャン：⟦Thế, anh đã từng đi xem ở rạp chiếu phim Việt Nam bao giờ chưa?⟧ — じゃあ、ベトナムの映画館に行ったことはありますか。
+ミンホ：⟦Chưa. Anh thường xem phim online trên mạng.⟧ — まだない。たいていネットで映画を見ているんだ。
+チャン：⟦Thế à? Gần nhà anh cũng có một rạp chiếu phim đẹp mà! Cuối tuần này mình cùng đi xem nhé?⟧ — そうなんですか。家の近くにきれいな映画館があるじゃないですか！今週末一緒に見に行きましょうか。
+ミンホ：⟦Ừ! Mình xem phim hành động nhé!⟧ — うん！アクション映画を見よう！
+チャン：⟦Vâng, tuỳ anh.⟧ — はい、お任せします。
+文型練習 — いつ見る：⟦khi rỗi⟧（暇なとき）/ ⟦khi thấy buồn⟧（悲しいとき）；何のため：⟦giảm bớt căng thẳng⟧（ストレスを減らす）/ ⟦cảm thấy vui vẻ hơn⟧（楽しい気分になる）；どこで：⟦xem phim online trên mạng⟧（ネットで）/ ⟦xem phim trên TV⟧（テレビで）；どんなジャンル：⟦phim hành động⟧（アクション映画）/ ⟦phim hài⟧（コメディー）。
+新出単語：⟦hẹn hò⟧ デートする | ⟦giải toả⟧ 解消する | ⟦rạp chiếu phim⟧ 映画館 | ⟦vắng⟧ 不在だ、人がいない | ⟦ngập⟧ 浸かる、冠水する | ⟦chiếu⟧ 照らす、上映する | ⟦mạng⟧ ネットワーク | ⟦hành động⟧ アクション、行動する
+=pl
+Kluczowe wyrażenie: ⟦cứ ~ là ~⟧
+⟦cứ + czasownik / rzeczownik czasu + là⟧ znaczy „ilekroć ~, zawsze ~” i wyraża relację warunek–skutek dla zdarzeń powtarzających się regularnie.
+❶ ⟦Cứ đến mùa xuân là cô ấy đi du lịch.⟧ — Co wiosnę wyjeżdża w podróż.
+❷ ⟦Anh ấy cứ ăn trưa xong là nghỉ ít nhất 15 phút.⟧ — Po każdym obiedzie odpoczywa co najmniej 15 minut.
+❸ ⟦Không phải học sinh cứ tham gia thi tốt nghiệp là được tốt nghiệp đâu.⟧ — Wcale nie jest tak, że każdy uczeń, który przystąpi do egzaminu końcowego, ukończy szkołę.
+Wyrażenia o różnych powodach oglądania filmów: ⟦hẹn hò⟧ iść na randkę | ⟦giải trí⟧ rozrywka | ⟦nghiên cứu (ngành) phim⟧ studiować film | ⟦kinh nghiệm cuộc sống của người khác⟧ poznać życie innych ludzi | ⟦giảm bớt căng thẳng/giải toả căng thẳng⟧ zmniejszyć / rozładować stres
+Ćwiczenie 1 — rozmawiaj jak we wzorze, używając podanego wyrażenia.
+Wzór (⟦đi vắng⟧ być nieobecnym): Ⓐ ⟦Cậu gặp anh ấy chưa?⟧ — Spotkałeś go już? Ⓑ ⟦Chưa. Tớ cứ đến nhà là anh ấy lại đi vắng.⟧ — Jeszcze nie. Ilekroć do niego przychodzę, nie ma go w domu.
+❶ (⟦bị ngập⟧ być zalanym) Ⓐ ⟦Trời mưa to quá! Hôm nay anh có đi xe máy không?⟧ — Strasznie leje! Jedziesz dziś motocyklem? Ⓑ ⟦Không. Tại vì cứ mưa to là đường bị ngập.⟧ — Nie. Bo ilekroć mocno pada, ulice są zalane.
+❷ (⟦đỏ mặt⟧ czerwienieć) Ⓐ ⟦Tại sao em không uống rượu vậy?⟧ — Dlaczego nie pijesz alkoholu? Ⓑ ⟦Tại vì em cứ uống rượu là đỏ mặt.⟧ — Bo ilekroć się napiję, robię się czerwona.
+Dialog: Min-ho i Trang rozmawiają o oglądaniu filmów.
+Trang: ⟦Khi rỗi, em thường xem phim. Còn anh thì sao?⟧ — W wolnym czasie zwykle oglądam filmy. A ty?
+Min-ho: ⟦Anh cũng vậy. Thường thường, cứ nghe tin có phim hay là anh xem ngay. Xem phim luôn giúp cho anh giảm bớt căng thẳng.⟧ — Ja też. Zwykle, ilekroć usłyszę o dobrym filmie, od razu go oglądam. Filmy zawsze pomagają mi się odstresować.
+Trang: ⟦Thế, anh đã từng đi xem ở rạp chiếu phim Việt Nam bao giờ chưa?⟧ — A byłeś kiedyś w wietnamskim kinie?
+Min-ho: ⟦Chưa. Anh thường xem phim online trên mạng.⟧ — Jeszcze nie. Zwykle oglądam filmy online.
+Trang: ⟦Thế à? Gần nhà anh cũng có một rạp chiếu phim đẹp mà! Cuối tuần này mình cùng đi xem nhé?⟧ — Naprawdę? Przecież niedaleko ciebie jest ładne kino! Pójdziemy razem w ten weekend?
+Min-ho: ⟦Ừ! Mình xem phim hành động nhé!⟧ — Jasne! Obejrzyjmy film akcji!
+Trang: ⟦Vâng, tuỳ anh.⟧ — Dobrze, jak chcesz.
+Ćwiczenie wzorców — kiedy: ⟦khi rỗi⟧ (w wolnym czasie) / ⟦khi thấy buồn⟧ (gdy jest smutno); po co: ⟦giảm bớt căng thẳng⟧ (zmniejszyć stres) / ⟦cảm thấy vui vẻ hơn⟧ (poczuć się weselej); gdzie: ⟦xem phim online trên mạng⟧ (online) / ⟦xem phim trên TV⟧ (w telewizji); jaki gatunek: ⟦phim hành động⟧ (film akcji) / ⟦phim hài⟧ (komedia).
+Nowe słówka: ⟦hẹn hò⟧ randkować | ⟦giải toả⟧ rozładować, uwolnić | ⟦rạp chiếu phim⟧ kino | ⟦vắng⟧ nieobecny, pusty | ⟦ngập⟧ zalać | ⟦chiếu⟧ świecić, wyświetlać | ⟦mạng⟧ sieć, internet | ⟦hành động⟧ akcja, działać

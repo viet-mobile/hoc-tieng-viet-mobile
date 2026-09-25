@@ -1,0 +1,191 @@
+@@ pdf-grammar-76387c56a46a3c7d#0
+=cs
+Klíčový výraz: ⟦là phải (rồi)⟧
+⟦~ là phải (rồi)⟧ znamená „není divu, že ~ / to dává smysl“ — závěr vyvozený z nějakého důvodu.
+❶ ⟦Hôm nào em cũng ngủ muộn thế thì không dậy sớm được là phải rồi.⟧ — Když chodíš každý den tak pozdě spát, není divu, že nemůžeš brzy vstát.
+❷ Ⓐ ⟦Dạo này giá hoa quả lên cao quá. Nho cũng đắt, táo cũng đắt...⟧ — Ovoce teď strašně zdražilo. Hrozny jsou drahé, jablka taky… Ⓑ ⟦Tháng trước trời mưa liên tục, hoa quả rụng nhiều nên đắt là phải.⟧ — Minulý měsíc pořád pršelo a hodně ovoce opadalo, takže není divu, že je drahé.
+Výrazy o jídle: ⟦dẻo, mềm, dai⟧ lepkavý, měkký, tuhý | ⟦đồ tráng miệng⟧ dezert | ⟦hợp với khẩu vị⟧ vyhovovat chuti | ⟦hoa quả nhiệt đới, kem⟧ tropické ovoce, zmrzlina | ⟦măng cụt, thanh long, kem socola⟧ mangostan, pitahaya, čokoládová zmrzlina
+Rozhovor: Min-ho a Trang spolu jedí a mluví o jídle a dezertech.
+Trang: ⟦Món ăn ở đây có hợp với khẩu vị của anh không?⟧ — Chutná vám zdejší jídlo?
+Min-ho: ⟦Ừ, ngon lắm. Anh chưa từng được ăn món nào ngon như thế này ở Việt Nam.⟧ — Jo, moc. Ve Vietnamu jsem ještě nic tak dobrého nejedl.
+Trang: ⟦Thịt ở nhà hàng này mềm và không ngọt lắm.⟧ — Maso je v téhle restauraci měkké a ne moc sladké.
+Min-ho: ⟦Nhà hàng này nổi tiếng là phải.⟧ — Není divu, že je tahle restaurace slavná.
+Trang: ⟦Anh ăn đồ tráng miệng gì?⟧ — Jaký dezert si dáte?
+Min-ho: ⟦Anh thích hoa quả nhiệt đới. Ăn măng cụt và thanh long, được không?⟧ — Mám rád tropické ovoce. Můžeme si dát mangostan a pitahayu?
+Trang: ⟦Được chứ.⟧ — Jasně.
+Procvičování — jaké je maso: ⟦mềm và không ngọt lắm⟧ / ⟦tươi và không dai⟧ (čerstvé a netuhé); proč „není divu“: ⟦nổi tiếng⟧ (je slavná) / ⟦đông khách⟧ (má hodně hostů); jaký dezert má Min-ho rád: ⟦hoa quả nhiệt đới⟧ / ⟦kem⟧; co si chce objednat: ⟦măng cụt và thanh long⟧ / ⟦kem socola⟧.
+Vzor: Ⓐ ⟦Anh Kim nói tiếng Việt giỏi là phải.⟧ — Není divu, že Kim mluví vietnamsky tak dobře. Ⓑ ⟦Ừ. Anh Kim không chỉ có nhiều bạn Việt Nam mà còn đọc báo Việt Nam hằng ngày.⟧ — Jo. Má nejen hodně vietnamských přátel, ale i každý den čte vietnamské noviny.
+❶ ⟦bị trưởng phòng mắng⟧: Ⓐ ⟦Anh Nam bị trưởng phòng mắng là phải.⟧ — Není divu, že Nam dostal od vedoucího vynadáno. Ⓑ ⟦Ừ. Anh Nam không chỉ đến muộn mà còn không nộp báo cáo cuối tháng.⟧ — Jo. Nejenže chodí pozdě, ale ani neodevzdal měsíční zprávu.
+❷ ⟦cần nhiều nhân viên⟧: Ⓐ ⟦Nhà hàng này cần nhiều nhân viên là phải.⟧ — Není divu, že tahle restaurace potřebuje hodně zaměstnanců. Ⓑ ⟦Ừ. Nhà hàng này không chỉ đông khách đến ăn mà còn có dịch vụ giao đồ ăn.⟧ — Jo. Nejen že tam chodí hodně hostů, ale mají i rozvoz jídla.
+Nová slovíčka: ⟦liên tục⟧ nepřetržitě | ⟦rụng⟧ opadat | ⟦mắng⟧ vynadat | ⟦nộp⟧ odevzdat, zaplatit | ⟦hằng ngày⟧ každý den | ⟦giao⟧ doručit | ⟦khẩu vị⟧ chuť | ⟦đồ tráng miệng⟧ dezert
+=zh_cn
+核心表达：⟦là phải (rồi)⟧
+⟦~ là phải (rồi)⟧ 表示根据某种理由看来“……是理所当然的、难怪”。
+❶ ⟦Hôm nào em cũng ngủ muộn thế thì không dậy sớm được là phải rồi.⟧ —— 你每天都睡那么晚，起不来当然正常。
+❷ Ⓐ ⟦Dạo này giá hoa quả lên cao quá. Nho cũng đắt, táo cũng đắt...⟧ —— 最近水果价格涨得太厉害了，葡萄也贵，苹果也贵…… Ⓑ ⟦Tháng trước trời mưa liên tục, hoa quả rụng nhiều nên đắt là phải.⟧ —— 上个月一直下雨，掉了很多水果，贵是理所当然的。
+与食物相关的表达：⟦dẻo, mềm, dai⟧ 软糯、柔软、有嚼劲（韧） | ⟦đồ tráng miệng⟧ 甜点 | ⟦hợp với khẩu vị⟧ 合口味 | ⟦hoa quả nhiệt đới, kem⟧ 热带水果、冰淇淋 | ⟦măng cụt, thanh long, kem socola⟧ 山竹、火龙果、巧克力冰淇淋
+对话：敏浩和庄一起吃饭，谈论菜肴和甜点。
+庄：⟦Món ăn ở đây có hợp với khẩu vị của anh không?⟧ —— 这里的菜合你口味吗？
+敏浩：⟦Ừ, ngon lắm. Anh chưa từng được ăn món nào ngon như thế này ở Việt Nam.⟧ —— 嗯，很好吃。我在越南还没吃过这么好吃的菜。
+庄：⟦Thịt ở nhà hàng này mềm và không ngọt lắm.⟧ —— 这家餐厅的肉很嫩，而且不太甜。
+敏浩：⟦Nhà hàng này nổi tiếng là phải.⟧ —— 难怪这家餐厅这么有名。
+庄：⟦Anh ăn đồ tráng miệng gì?⟧ —— 你吃什么甜点？
+敏浩：⟦Anh thích hoa quả nhiệt đới. Ăn măng cụt và thanh long, được không?⟧ —— 我喜欢热带水果。吃山竹和火龙果可以吗？
+庄：⟦Được chứ.⟧ —— 当然可以。
+句型练习 —— 肉怎么样：⟦mềm và không ngọt lắm⟧ / ⟦tươi và không dai⟧（新鲜不韧）；为什么“难怪”：⟦nổi tiếng⟧（有名）/ ⟦đông khách⟧（客人多）；敏浩喜欢什么甜点：⟦hoa quả nhiệt đới⟧ / ⟦kem⟧；想点什么甜点：⟦măng cụt và thanh long⟧ / ⟦kem socola⟧。
+范例：Ⓐ ⟦Anh Kim nói tiếng Việt giỏi là phải.⟧ —— 难怪金先生越南语说得这么好。 Ⓑ ⟦Ừ. Anh Kim không chỉ có nhiều bạn Việt Nam mà còn đọc báo Việt Nam hằng ngày.⟧ —— 是啊。他不仅有很多越南朋友，还每天看越南报纸。
+❶ ⟦bị trưởng phòng mắng⟧：Ⓐ ⟦Anh Nam bị trưởng phòng mắng là phải.⟧ —— 难怪阿南挨了科长的骂。 Ⓑ ⟦Ừ. Anh Nam không chỉ đến muộn mà còn không nộp báo cáo cuối tháng.⟧ —— 是啊。他不仅迟到，还没交月底报告。
+❷ ⟦cần nhiều nhân viên⟧：Ⓐ ⟦Nhà hàng này cần nhiều nhân viên là phải.⟧ —— 难怪这家餐厅需要很多员工。 Ⓑ ⟦Ừ. Nhà hàng này không chỉ đông khách đến ăn mà còn có dịch vụ giao đồ ăn.⟧ —— 是啊。这家店不仅来吃的客人多，还有外卖服务。
+新单词：⟦liên tục⟧ 连续 | ⟦rụng⟧ 掉落 | ⟦mắng⟧ 责骂 | ⟦nộp⟧ 提交，缴纳 | ⟦hằng ngày⟧ 每天 | ⟦giao⟧ 配送，交付 | ⟦khẩu vị⟧ 口味 | ⟦đồ tráng miệng⟧ 甜点
+=zh
+核心表達：⟦là phải (rồi)⟧
+⟦~ là phải (rồi)⟧ 表示根據某種理由看來「……是理所當然的、難怪」。
+❶ ⟦Hôm nào em cũng ngủ muộn thế thì không dậy sớm được là phải rồi.⟧ —— 你每天都睡那麼晚，起不來當然正常。
+❷ Ⓐ ⟦Dạo này giá hoa quả lên cao quá. Nho cũng đắt, táo cũng đắt...⟧ —— 最近水果價格漲得太厲害了，葡萄也貴，蘋果也貴…… Ⓑ ⟦Tháng trước trời mưa liên tục, hoa quả rụng nhiều nên đắt là phải.⟧ —— 上個月一直下雨，掉了很多水果，貴是理所當然的。
+與食物相關的表達：⟦dẻo, mềm, dai⟧ 軟糯、柔軟、有嚼勁（韌） | ⟦đồ tráng miệng⟧ 甜點 | ⟦hợp với khẩu vị⟧ 合口味 | ⟦hoa quả nhiệt đới, kem⟧ 熱帶水果、冰淇淋 | ⟦măng cụt, thanh long, kem socola⟧ 山竹、火龍果、巧克力冰淇淋
+對話：敏浩和莊一起吃飯，談論菜餚和甜點。
+莊：⟦Món ăn ở đây có hợp với khẩu vị của anh không?⟧ —— 這裡的菜合你口味嗎？
+敏浩：⟦Ừ, ngon lắm. Anh chưa từng được ăn món nào ngon như thế này ở Việt Nam.⟧ —— 嗯，很好吃。我在越南還沒吃過這麼好吃的菜。
+莊：⟦Thịt ở nhà hàng này mềm và không ngọt lắm.⟧ —— 這家餐廳的肉很嫩，而且不太甜。
+敏浩：⟦Nhà hàng này nổi tiếng là phải.⟧ —— 難怪這家餐廳這麼有名。
+莊：⟦Anh ăn đồ tráng miệng gì?⟧ —— 你吃什麼甜點？
+敏浩：⟦Anh thích hoa quả nhiệt đới. Ăn măng cụt và thanh long, được không?⟧ —— 我喜歡熱帶水果。吃山竹和火龍果可以嗎？
+莊：⟦Được chứ.⟧ —— 當然可以。
+句型練習 —— 肉怎麼樣：⟦mềm và không ngọt lắm⟧ / ⟦tươi và không dai⟧（新鮮不韌）；為什麼「難怪」：⟦nổi tiếng⟧（有名）/ ⟦đông khách⟧（客人多）；敏浩喜歡什麼甜點：⟦hoa quả nhiệt đới⟧ / ⟦kem⟧；想點什麼甜點：⟦măng cụt và thanh long⟧ / ⟦kem socola⟧。
+範例：Ⓐ ⟦Anh Kim nói tiếng Việt giỏi là phải.⟧ —— 難怪金先生越南語說得這麼好。 Ⓑ ⟦Ừ. Anh Kim không chỉ có nhiều bạn Việt Nam mà còn đọc báo Việt Nam hằng ngày.⟧ —— 是啊。他不僅有很多越南朋友，還每天看越南報紙。
+❶ ⟦bị trưởng phòng mắng⟧：Ⓐ ⟦Anh Nam bị trưởng phòng mắng là phải.⟧ —— 難怪阿南挨了科長的罵。 Ⓑ ⟦Ừ. Anh Nam không chỉ đến muộn mà còn không nộp báo cáo cuối tháng.⟧ —— 是啊。他不僅遲到，還沒交月底報告。
+❷ ⟦cần nhiều nhân viên⟧：Ⓐ ⟦Nhà hàng này cần nhiều nhân viên là phải.⟧ —— 難怪這家餐廳需要很多員工。 Ⓑ ⟦Ừ. Nhà hàng này không chỉ đông khách đến ăn mà còn có dịch vụ giao đồ ăn.⟧ —— 是啊。這家店不僅來吃的客人多，還有外送服務。
+新單字：⟦liên tục⟧ 連續 | ⟦rụng⟧ 掉落 | ⟦mắng⟧ 責罵 | ⟦nộp⟧ 提交，繳納 | ⟦hằng ngày⟧ 每天 | ⟦giao⟧ 配送，交付 | ⟦khẩu vị⟧ 口味 | ⟦đồ tráng miệng⟧ 甜點
+=en
+Key expression: ⟦là phải (rồi)⟧
+⟦~ là phải (rồi)⟧ means "no wonder ~ / it makes sense that ~", a conclusion drawn from some evidence.
+❶ ⟦Hôm nào em cũng ngủ muộn thế thì không dậy sớm được là phải rồi.⟧ — If you go to bed that late every day, no wonder you can't get up early.
+❷ Ⓐ ⟦Dạo này giá hoa quả lên cao quá. Nho cũng đắt, táo cũng đắt...⟧ — Fruit prices have gone up so much lately. Grapes are expensive, apples are expensive… Ⓑ ⟦Tháng trước trời mưa liên tục, hoa quả rụng nhiều nên đắt là phải.⟧ — It rained non-stop last month and a lot of fruit fell, so no wonder it's expensive.
+Food-related expressions: ⟦dẻo, mềm, dai⟧ sticky, soft, chewy | ⟦đồ tráng miệng⟧ dessert | ⟦hợp với khẩu vị⟧ to suit one's taste | ⟦hoa quả nhiệt đới, kem⟧ tropical fruit, ice cream | ⟦măng cụt, thanh long, kem socola⟧ mangosteen, dragon fruit, chocolate ice cream
+Dialogue: Min-ho and Trang are eating together and talking about food and desserts.
+Trang: ⟦Món ăn ở đây có hợp với khẩu vị của anh không?⟧ — Does the food here suit your taste?
+Min-ho: ⟦Ừ, ngon lắm. Anh chưa từng được ăn món nào ngon như thế này ở Việt Nam.⟧ — Yes, it's delicious. I've never eaten anything this good in Vietnam.
+Trang: ⟦Thịt ở nhà hàng này mềm và không ngọt lắm.⟧ — The meat at this restaurant is tender and not too sweet.
+Min-ho: ⟦Nhà hàng này nổi tiếng là phải.⟧ — No wonder this restaurant is famous.
+Trang: ⟦Anh ăn đồ tráng miệng gì?⟧ — What would you like for dessert?
+Min-ho: ⟦Anh thích hoa quả nhiệt đới. Ăn măng cụt và thanh long, được không?⟧ — I like tropical fruit. Can we have mangosteen and dragon fruit?
+Trang: ⟦Được chứ.⟧ — Of course.
+Pattern practice — how the meat is: ⟦mềm và không ngọt lắm⟧ / ⟦tươi và không dai⟧ (fresh and not chewy); why "no wonder": ⟦nổi tiếng⟧ (it's famous) / ⟦đông khách⟧ (it's busy); dessert Min-ho likes: ⟦hoa quả nhiệt đới⟧ / ⟦kem⟧; dessert he wants to order: ⟦măng cụt và thanh long⟧ / ⟦kem socola⟧.
+Model: Ⓐ ⟦Anh Kim nói tiếng Việt giỏi là phải.⟧ — No wonder Mr. Kim speaks Vietnamese so well. Ⓑ ⟦Ừ. Anh Kim không chỉ có nhiều bạn Việt Nam mà còn đọc báo Việt Nam hằng ngày.⟧ — Yeah. He not only has lots of Vietnamese friends but also reads Vietnamese newspapers every day.
+❶ ⟦bị trưởng phòng mắng⟧: Ⓐ ⟦Anh Nam bị trưởng phòng mắng là phải.⟧ — No wonder Nam got scolded by the manager. Ⓑ ⟦Ừ. Anh Nam không chỉ đến muộn mà còn không nộp báo cáo cuối tháng.⟧ — Yeah. He not only came late but also didn't hand in the end-of-month report.
+❷ ⟦cần nhiều nhân viên⟧: Ⓐ ⟦Nhà hàng này cần nhiều nhân viên là phải.⟧ — No wonder this restaurant needs a lot of staff. Ⓑ ⟦Ừ. Nhà hàng này không chỉ đông khách đến ăn mà còn có dịch vụ giao đồ ăn.⟧ — Yeah. It not only has lots of diners but also offers food delivery.
+New words: ⟦liên tục⟧ continuously | ⟦rụng⟧ to fall (off) | ⟦mắng⟧ to scold | ⟦nộp⟧ to submit, pay | ⟦hằng ngày⟧ every day | ⟦giao⟧ to deliver | ⟦khẩu vị⟧ taste, palate | ⟦đồ tráng miệng⟧ dessert
+=fr
+Expression clé : ⟦là phải (rồi)⟧
+⟦~ là phải (rồi)⟧ signifie « pas étonnant que ~ / c'est normal que ~ », conclusion tirée d'un indice.
+❶ ⟦Hôm nào em cũng ngủ muộn thế thì không dậy sớm được là phải rồi.⟧ — Si tu te couches si tard tous les jours, pas étonnant que tu n'arrives pas à te lever tôt.
+❷ Ⓐ ⟦Dạo này giá hoa quả lên cao quá. Nho cũng đắt, táo cũng đắt...⟧ — Les fruits ont beaucoup augmenté ces temps-ci. Le raisin est cher, les pommes aussi… Ⓑ ⟦Tháng trước trời mưa liên tục, hoa quả rụng nhiều nên đắt là phải.⟧ — Il a plu sans arrêt le mois dernier et beaucoup de fruits sont tombés, alors c'est normal qu'ils soient chers.
+Expressions liées à la nourriture : ⟦dẻo, mềm, dai⟧ collant, tendre, ferme (caoutchouteux) | ⟦đồ tráng miệng⟧ dessert | ⟦hợp với khẩu vị⟧ plaire au palais | ⟦hoa quả nhiệt đới, kem⟧ fruits tropicaux, glace | ⟦măng cụt, thanh long, kem socola⟧ mangoustan, fruit du dragon, glace au chocolat
+Dialogue : Min-ho et Trang mangent ensemble et parlent de plats et de desserts.
+Trang : ⟦Món ăn ở đây có hợp với khẩu vị của anh không?⟧ — La cuisine d'ici te plaît ?
+Min-ho : ⟦Ừ, ngon lắm. Anh chưa từng được ăn món nào ngon như thế này ở Việt Nam.⟧ — Oui, c'est délicieux. Je n'ai jamais rien mangé d'aussi bon au Viêt Nam.
+Trang : ⟦Thịt ở nhà hàng này mềm và không ngọt lắm.⟧ — La viande ici est tendre et pas trop sucrée.
+Min-ho : ⟦Nhà hàng này nổi tiếng là phải.⟧ — Pas étonnant que ce restaurant soit célèbre.
+Trang : ⟦Anh ăn đồ tráng miệng gì?⟧ — Qu'est-ce que tu prends comme dessert ?
+Min-ho : ⟦Anh thích hoa quả nhiệt đới. Ăn măng cụt và thanh long, được không?⟧ — J'aime les fruits tropicaux. On peut prendre du mangoustan et du fruit du dragon ?
+Trang : ⟦Được chứ.⟧ — Bien sûr.
+Exercices — la viande : ⟦mềm và không ngọt lắm⟧ / ⟦tươi và không dai⟧ (fraîche et pas caoutchouteuse) ; pourquoi « pas étonnant » : ⟦nổi tiếng⟧ (célèbre) / ⟦đông khách⟧ (très fréquenté) ; dessert préféré : ⟦hoa quả nhiệt đới⟧ / ⟦kem⟧ ; dessert commandé : ⟦măng cụt và thanh long⟧ / ⟦kem socola⟧.
+Modèle : Ⓐ ⟦Anh Kim nói tiếng Việt giỏi là phải.⟧ — Pas étonnant que M. Kim parle si bien vietnamien. Ⓑ ⟦Ừ. Anh Kim không chỉ có nhiều bạn Việt Nam mà còn đọc báo Việt Nam hằng ngày.⟧ — Oui. Il a non seulement beaucoup d'amis vietnamiens, mais il lit aussi la presse vietnamienne tous les jours.
+❶ ⟦bị trưởng phòng mắng⟧ : Ⓐ ⟦Anh Nam bị trưởng phòng mắng là phải.⟧ — Pas étonnant que Nam se soit fait gronder par le chef de service. Ⓑ ⟦Ừ. Anh Nam không chỉ đến muộn mà còn không nộp báo cáo cuối tháng.⟧ — Oui. Non seulement il est arrivé en retard, mais il n'a pas rendu le rapport de fin de mois.
+❷ ⟦cần nhiều nhân viên⟧ : Ⓐ ⟦Nhà hàng này cần nhiều nhân viên là phải.⟧ — Pas étonnant que ce restaurant ait besoin de beaucoup de personnel. Ⓑ ⟦Ừ. Nhà hàng này không chỉ đông khách đến ăn mà còn có dịch vụ giao đồ ăn.⟧ — Oui. Il a non seulement beaucoup de clients sur place, mais aussi un service de livraison.
+Nouveaux mots : ⟦liên tục⟧ sans interruption | ⟦rụng⟧ tomber | ⟦mắng⟧ gronder | ⟦nộp⟧ remettre, payer | ⟦hằng ngày⟧ chaque jour | ⟦giao⟧ livrer | ⟦khẩu vị⟧ goût, palais | ⟦đồ tráng miệng⟧ dessert
+=de
+Schlüsselausdruck: ⟦là phải (rồi)⟧
+⟦~ là phải (rồi)⟧ bedeutet „kein Wunder, dass ~ / es ist klar, dass ~“ – eine Folgerung aus einem Anhaltspunkt.
+❶ ⟦Hôm nào em cũng ngủ muộn thế thì không dậy sớm được là phải rồi.⟧ — Wenn du jeden Tag so spät schlafen gehst, ist es kein Wunder, dass du nicht früh aufstehen kannst.
+❷ Ⓐ ⟦Dạo này giá hoa quả lên cao quá. Nho cũng đắt, táo cũng đắt...⟧ — Obst ist in letzter Zeit so teuer geworden. Trauben sind teuer, Äpfel auch … Ⓑ ⟦Tháng trước trời mưa liên tục, hoa quả rụng nhiều nên đắt là phải.⟧ — Letzten Monat hat es ununterbrochen geregnet und viel Obst ist heruntergefallen, kein Wunder, dass es teuer ist.
+Ausdrücke rund ums Essen: ⟦dẻo, mềm, dai⟧ klebrig, weich, zäh | ⟦đồ tráng miệng⟧ Nachtisch | ⟦hợp với khẩu vị⟧ dem Geschmack entsprechen | ⟦hoa quả nhiệt đới, kem⟧ tropisches Obst, Eis | ⟦măng cụt, thanh long, kem socola⟧ Mangostan, Drachenfrucht, Schokoladeneis
+Dialog: Min-ho und Trang essen zusammen und sprechen über Gerichte und Nachtisch.
+Trang: ⟦Món ăn ở đây có hợp với khẩu vị của anh không?⟧ — Schmeckt dir das Essen hier?
+Min-ho: ⟦Ừ, ngon lắm. Anh chưa từng được ăn món nào ngon như thế này ở Việt Nam.⟧ — Ja, sehr lecker. So etwas Gutes habe ich in Vietnam noch nie gegessen.
+Trang: ⟦Thịt ở nhà hàng này mềm và không ngọt lắm.⟧ — Das Fleisch hier ist zart und nicht zu süß.
+Min-ho: ⟦Nhà hàng này nổi tiếng là phải.⟧ — Kein Wunder, dass das Restaurant berühmt ist.
+Trang: ⟦Anh ăn đồ tráng miệng gì?⟧ — Was möchtest du als Nachtisch?
+Min-ho: ⟦Anh thích hoa quả nhiệt đới. Ăn măng cụt và thanh long, được không?⟧ — Ich mag tropisches Obst. Können wir Mangostan und Drachenfrucht nehmen?
+Trang: ⟦Được chứ.⟧ — Klar.
+Satzmusterübung — wie das Fleisch ist: ⟦mềm và không ngọt lắm⟧ / ⟦tươi và không dai⟧ (frisch und nicht zäh); warum „kein Wunder“: ⟦nổi tiếng⟧ (berühmt) / ⟦đông khách⟧ (gut besucht); Lieblingsnachtisch: ⟦hoa quả nhiệt đới⟧ / ⟦kem⟧; was er bestellen will: ⟦măng cụt và thanh long⟧ / ⟦kem socola⟧.
+Muster: Ⓐ ⟦Anh Kim nói tiếng Việt giỏi là phải.⟧ — Kein Wunder, dass Herr Kim so gut Vietnamesisch spricht. Ⓑ ⟦Ừ. Anh Kim không chỉ có nhiều bạn Việt Nam mà còn đọc báo Việt Nam hằng ngày.⟧ — Ja. Er hat nicht nur viele vietnamesische Freunde, sondern liest auch täglich vietnamesische Zeitungen.
+❶ ⟦bị trưởng phòng mắng⟧: Ⓐ ⟦Anh Nam bị trưởng phòng mắng là phải.⟧ — Kein Wunder, dass Nam vom Abteilungsleiter ausgeschimpft wurde. Ⓑ ⟦Ừ. Anh Nam không chỉ đến muộn mà còn không nộp báo cáo cuối tháng.⟧ — Ja. Er kam nicht nur zu spät, sondern hat auch den Monatsbericht nicht abgegeben.
+❷ ⟦cần nhiều nhân viên⟧: Ⓐ ⟦Nhà hàng này cần nhiều nhân viên là phải.⟧ — Kein Wunder, dass das Restaurant viel Personal braucht. Ⓑ ⟦Ừ. Nhà hàng này không chỉ đông khách đến ăn mà còn có dịch vụ giao đồ ăn.⟧ — Ja. Es hat nicht nur viele Gäste, sondern auch einen Lieferservice.
+Neue Wörter: ⟦liên tục⟧ ununterbrochen | ⟦rụng⟧ herunterfallen | ⟦mắng⟧ ausschimpfen | ⟦nộp⟧ abgeben, zahlen | ⟦hằng ngày⟧ täglich | ⟦giao⟧ liefern | ⟦khẩu vị⟧ Geschmack | ⟦đồ tráng miệng⟧ Nachtisch
+=hu
+Kulcskifejezés: ⟦là phải (rồi)⟧
+A ⟦~ là phải (rồi)⟧ jelentése „nem csoda, hogy ~ / érthető, hogy ~” – valamilyen okból levont következtetés.
+❶ ⟦Hôm nào em cũng ngủ muộn thế thì không dậy sớm được là phải rồi.⟧ — Ha minden nap ilyen későn fekszel, nem csoda, hogy nem tudsz korán kelni.
+❷ Ⓐ ⟦Dạo này giá hoa quả lên cao quá. Nho cũng đắt, táo cũng đắt...⟧ — Mostanában nagyon felment a gyümölcs ára. Drága a szőlő, drága az alma… Ⓑ ⟦Tháng trước trời mưa liên tục, hoa quả rụng nhiều nên đắt là phải.⟧ — Múlt hónapban folyton esett, sok gyümölcs lehullott, nem csoda, hogy drága.
+Ételekkel kapcsolatos kifejezések: ⟦dẻo, mềm, dai⟧ ragacsos, puha, rágós | ⟦đồ tráng miệng⟧ desszert | ⟦hợp với khẩu vị⟧ ízlik | ⟦hoa quả nhiệt đới, kem⟧ trópusi gyümölcs, fagylalt | ⟦măng cụt, thanh long, kem socola⟧ mangosztán, sárkánygyümölcs, csokoládéfagylalt
+Párbeszéd: Min-ho és Trang együtt esznek, és az ételekről, desszertekről beszélgetnek.
+Trang: ⟦Món ăn ở đây có hợp với khẩu vị của anh không?⟧ — Ízlik az itteni étel?
+Min-ho: ⟦Ừ, ngon lắm. Anh chưa từng được ăn món nào ngon như thế này ở Việt Nam.⟧ — Igen, nagyon finom. Vietnámban még nem ettem ilyen jót.
+Trang: ⟦Thịt ở nhà hàng này mềm và không ngọt lắm.⟧ — Ebben az étteremben a hús puha és nem túl édes.
+Min-ho: ⟦Nhà hàng này nổi tiếng là phải.⟧ — Nem csoda, hogy híres ez az étterem.
+Trang: ⟦Anh ăn đồ tráng miệng gì?⟧ — Milyen desszertet kérsz?
+Min-ho: ⟦Anh thích hoa quả nhiệt đới. Ăn măng cụt và thanh long, được không?⟧ — Szeretem a trópusi gyümölcsöt. Kérhetünk mangosztánt és sárkánygyümölcsöt?
+Trang: ⟦Được chứ.⟧ — Persze.
+Mintagyakorlat — milyen a hús: ⟦mềm và không ngọt lắm⟧ / ⟦tươi và không dai⟧ (friss és nem rágós); miért „nem csoda”: ⟦nổi tiếng⟧ (híres) / ⟦đông khách⟧ (sok a vendég); kedvenc desszert: ⟦hoa quả nhiệt đới⟧ / ⟦kem⟧; mit rendelne: ⟦măng cụt và thanh long⟧ / ⟦kem socola⟧.
+Minta: Ⓐ ⟦Anh Kim nói tiếng Việt giỏi là phải.⟧ — Nem csoda, hogy Kim ilyen jól beszél vietnámiul. Ⓑ ⟦Ừ. Anh Kim không chỉ có nhiều bạn Việt Nam mà còn đọc báo Việt Nam hằng ngày.⟧ — Igen. Nemcsak sok vietnámi barátja van, hanem naponta vietnámi újságot is olvas.
+❶ ⟦bị trưởng phòng mắng⟧: Ⓐ ⟦Anh Nam bị trưởng phòng mắng là phải.⟧ — Nem csoda, hogy Namot leszidta az osztályvezető. Ⓑ ⟦Ừ. Anh Nam không chỉ đến muộn mà còn không nộp báo cáo cuối tháng.⟧ — Igen. Nemcsak elkésett, hanem a havi jelentést sem adta le.
+❷ ⟦cần nhiều nhân viên⟧: Ⓐ ⟦Nhà hàng này cần nhiều nhân viên là phải.⟧ — Nem csoda, hogy ennek az étteremnek sok alkalmazott kell. Ⓑ ⟦Ừ. Nhà hàng này không chỉ đông khách đến ăn mà còn có dịch vụ giao đồ ăn.⟧ — Igen. Nemcsak sok vendég jön ide enni, hanem házhoz szállítás is van.
+Új szavak: ⟦liên tục⟧ folyamatosan | ⟦rụng⟧ lehullik | ⟦mắng⟧ leszidni | ⟦nộp⟧ leadni, befizetni | ⟦hằng ngày⟧ naponta | ⟦giao⟧ kiszállítani | ⟦khẩu vị⟧ ízlés | ⟦đồ tráng miệng⟧ desszert
+=id
+Ungkapan kunci: ⟦là phải (rồi)⟧
+⟦~ là phải (rồi)⟧ berarti "pantas saja ~ / wajar kalau ~", kesimpulan dari suatu alasan.
+❶ ⟦Hôm nào em cũng ngủ muộn thế thì không dậy sớm được là phải rồi.⟧ — Kalau setiap hari tidur selarut itu, wajar saja kamu tidak bisa bangun pagi.
+❷ Ⓐ ⟦Dạo này giá hoa quả lên cao quá. Nho cũng đắt, táo cũng đắt...⟧ — Akhir-akhir ini harga buah naik sekali. Anggur mahal, apel juga mahal… Ⓑ ⟦Tháng trước trời mưa liên tục, hoa quả rụng nhiều nên đắt là phải.⟧ — Bulan lalu hujan terus-menerus dan banyak buah berjatuhan, jadi wajar kalau mahal.
+Ungkapan tentang makanan: ⟦dẻo, mềm, dai⟧ pulen/lengket, lembut, alot | ⟦đồ tráng miệng⟧ hidangan penutup | ⟦hợp với khẩu vị⟧ cocok dengan selera | ⟦hoa quả nhiệt đới, kem⟧ buah tropis, es krim | ⟦măng cụt, thanh long, kem socola⟧ manggis, buah naga, es krim cokelat
+Percakapan: Min-ho dan Trang makan bersama sambil membicarakan makanan dan hidangan penutup.
+Trang: ⟦Món ăn ở đây có hợp với khẩu vị của anh không?⟧ — Apakah makanan di sini cocok dengan selera Kakak?
+Min-ho: ⟦Ừ, ngon lắm. Anh chưa từng được ăn món nào ngon như thế này ở Việt Nam.⟧ — Ya, enak sekali. Kakak belum pernah makan yang seenak ini di Vietnam.
+Trang: ⟦Thịt ở nhà hàng này mềm và không ngọt lắm.⟧ — Daging di restoran ini empuk dan tidak terlalu manis.
+Min-ho: ⟦Nhà hàng này nổi tiếng là phải.⟧ — Pantas saja restoran ini terkenal.
+Trang: ⟦Anh ăn đồ tráng miệng gì?⟧ — Kakak mau hidangan penutup apa?
+Min-ho: ⟦Anh thích hoa quả nhiệt đới. Ăn măng cụt và thanh long, được không?⟧ — Kakak suka buah tropis. Bagaimana kalau manggis dan buah naga?
+Trang: ⟦Được chứ.⟧ — Tentu boleh.
+Latihan pola — dagingnya: ⟦mềm và không ngọt lắm⟧ / ⟦tươi và không dai⟧ (segar dan tidak alot); mengapa "pantas saja": ⟦nổi tiếng⟧ (terkenal) / ⟦đông khách⟧ (ramai pengunjung); hidangan penutup kesukaan: ⟦hoa quả nhiệt đới⟧ / ⟦kem⟧; yang ingin dipesan: ⟦măng cụt và thanh long⟧ / ⟦kem socola⟧.
+Contoh: Ⓐ ⟦Anh Kim nói tiếng Việt giỏi là phải.⟧ — Pantas saja Pak Kim pandai berbahasa Vietnam. Ⓑ ⟦Ừ. Anh Kim không chỉ có nhiều bạn Việt Nam mà còn đọc báo Việt Nam hằng ngày.⟧ — Ya. Dia bukan hanya punya banyak teman Vietnam, tetapi juga membaca koran Vietnam setiap hari.
+❶ ⟦bị trưởng phòng mắng⟧: Ⓐ ⟦Anh Nam bị trưởng phòng mắng là phải.⟧ — Pantas saja Nam dimarahi kepala bagian. Ⓑ ⟦Ừ. Anh Nam không chỉ đến muộn mà còn không nộp báo cáo cuối tháng.⟧ — Ya. Dia bukan hanya datang terlambat, tetapi juga tidak menyerahkan laporan akhir bulan.
+❷ ⟦cần nhiều nhân viên⟧: Ⓐ ⟦Nhà hàng này cần nhiều nhân viên là phải.⟧ — Pantas saja restoran ini butuh banyak karyawan. Ⓑ ⟦Ừ. Nhà hàng này không chỉ đông khách đến ăn mà còn có dịch vụ giao đồ ăn.⟧ — Ya. Restoran ini bukan hanya ramai pengunjung, tetapi juga punya layanan antar makanan.
+Kosakata baru: ⟦liên tục⟧ terus-menerus | ⟦rụng⟧ jatuh, rontok | ⟦mắng⟧ memarahi | ⟦nộp⟧ menyerahkan, membayar | ⟦hằng ngày⟧ setiap hari | ⟦giao⟧ mengantar | ⟦khẩu vị⟧ selera | ⟦đồ tráng miệng⟧ hidangan penutup
+=ja
+核心表現：⟦là phải (rồi)⟧
+⟦~ là phải (rồi)⟧ は、ある根拠から見て「～なのも当然だ、もっともだ」という意味を表します。
+❶ ⟦Hôm nào em cũng ngủ muộn thế thì không dậy sớm được là phải rồi.⟧ — 毎日そんなに遅く寝たら、早く起きられないのも当然だよ。
+❷ Ⓐ ⟦Dạo này giá hoa quả lên cao quá. Nho cũng đắt, táo cũng đắt...⟧ — 最近果物の値段が上がりすぎだ。ぶどうも高いし、りんごも高いし…… Ⓑ ⟦Tháng trước trời mưa liên tục, hoa quả rụng nhiều nên đắt là phải.⟧ — 先月雨が続いて果物がたくさん落ちたから、高いのも当然だよ。
+食べ物に関する表現：⟦dẻo, mềm, dai⟧ もちもちした、柔らかい、歯ごたえがある | ⟦đồ tráng miệng⟧ デザート | ⟦hợp với khẩu vị⟧ 口に合う | ⟦hoa quả nhiệt đới, kem⟧ 熱帯の果物、アイスクリーム | ⟦măng cụt, thanh long, kem socola⟧ マンゴスチン、ドラゴンフルーツ、チョコアイス
+会話：ミンホとチャンが一緒に食事をしながら、料理とデザートについて話しています。
+チャン：⟦Món ăn ở đây có hợp với khẩu vị của anh không?⟧ — ここの料理はお口に合いますか。
+ミンホ：⟦Ừ, ngon lắm. Anh chưa từng được ăn món nào ngon như thế này ở Việt Nam.⟧ — うん、すごくおいしい。ベトナムでこんなにおいしい料理は食べたことがないよ。
+チャン：⟦Thịt ở nhà hàng này mềm và không ngọt lắm.⟧ — このお店の肉は柔らかくて、あまり甘くないんです。
+ミンホ：⟦Nhà hàng này nổi tiếng là phải.⟧ — この店が有名なのも当然だね。
+チャン：⟦Anh ăn đồ tráng miệng gì?⟧ — デザートは何にしますか。
+ミンホ：⟦Anh thích hoa quả nhiệt đới. Ăn măng cụt và thanh long, được không?⟧ — 熱帯の果物が好きなんだ。マンゴスチンとドラゴンフルーツでもいい？
+チャン：⟦Được chứ.⟧ — もちろんです。
+文型練習 — 肉の具合：⟦mềm và không ngọt lắm⟧ / ⟦tươi và không dai⟧（新鮮で固くない）；「当然だ」の理由：⟦nổi tiếng⟧（有名だ）/ ⟦đông khách⟧（客が多い）；好きなデザート：⟦hoa quả nhiệt đới⟧ / ⟦kem⟧；注文したいデザート：⟦măng cụt và thanh long⟧ / ⟦kem socola⟧。
+例：Ⓐ ⟦Anh Kim nói tiếng Việt giỏi là phải.⟧ — キムさんがベトナム語が上手なのも当然だ。 Ⓑ ⟦Ừ. Anh Kim không chỉ có nhiều bạn Việt Nam mà còn đọc báo Việt Nam hằng ngày.⟧ — うん。ベトナム人の友達が多いだけでなく、毎日ベトナムの新聞も読んでいるからね。
+❶ ⟦bị trưởng phòng mắng⟧：Ⓐ ⟦Anh Nam bị trưởng phòng mắng là phải.⟧ — ナムさんが部長に叱られたのも当然だ。 Ⓑ ⟦Ừ. Anh Nam không chỉ đến muộn mà còn không nộp báo cáo cuối tháng.⟧ — うん。遅刻しただけでなく、月末の報告書も出さなかったからね。
+❷ ⟦cần nhiều nhân viên⟧：Ⓐ ⟦Nhà hàng này cần nhiều nhân viên là phải.⟧ — この店が店員をたくさん必要とするのも当然だ。 Ⓑ ⟦Ừ. Nhà hàng này không chỉ đông khách đến ăn mà còn có dịch vụ giao đồ ăn.⟧ — うん。食べに来る客が多いだけでなく、出前サービスもあるからね。
+新出単語：⟦liên tục⟧ 連続して | ⟦rụng⟧ 落ちる | ⟦mắng⟧ 叱る | ⟦nộp⟧ 提出する、納める | ⟦hằng ngày⟧ 毎日 | ⟦giao⟧ 配達する | ⟦khẩu vị⟧ 好み、口 | ⟦đồ tráng miệng⟧ デザート
+=pl
+Kluczowe wyrażenie: ⟦là phải (rồi)⟧
+⟦~ là phải (rồi)⟧ znaczy „nic dziwnego, że ~ / to zrozumiałe, że ~” — wniosek wyciągnięty z jakiejś przesłanki.
+❶ ⟦Hôm nào em cũng ngủ muộn thế thì không dậy sớm được là phải rồi.⟧ — Skoro codziennie kładziesz się tak późno, nic dziwnego, że nie możesz wstać wcześnie.
+❷ Ⓐ ⟦Dạo này giá hoa quả lên cao quá. Nho cũng đắt, táo cũng đắt...⟧ — Ostatnio owoce strasznie podrożały. Winogrona drogie, jabłka też… Ⓑ ⟦Tháng trước trời mưa liên tục, hoa quả rụng nhiều nên đắt là phải.⟧ — W zeszłym miesiącu ciągle padało i dużo owoców pospadało, więc nic dziwnego, że są drogie.
+Wyrażenia związane z jedzeniem: ⟦dẻo, mềm, dai⟧ kleisty, miękki, gumowaty | ⟦đồ tráng miệng⟧ deser | ⟦hợp với khẩu vị⟧ pasować do gustu | ⟦hoa quả nhiệt đới, kem⟧ owoce tropikalne, lody | ⟦măng cụt, thanh long, kem socola⟧ mangostan, pitaja, lody czekoladowe
+Dialog: Min-ho i Trang jedzą razem i rozmawiają o daniach i deserach.
+Trang: ⟦Món ăn ở đây có hợp với khẩu vị của anh không?⟧ — Smakuje ci tutejsze jedzenie?
+Min-ho: ⟦Ừ, ngon lắm. Anh chưa từng được ăn món nào ngon như thế này ở Việt Nam.⟧ — Tak, bardzo. W Wietnamie nie jadłem jeszcze nic tak dobrego.
+Trang: ⟦Thịt ở nhà hàng này mềm và không ngọt lắm.⟧ — Mięso w tej restauracji jest miękkie i niezbyt słodkie.
+Min-ho: ⟦Nhà hàng này nổi tiếng là phải.⟧ — Nic dziwnego, że ta restauracja jest sławna.
+Trang: ⟦Anh ăn đồ tráng miệng gì?⟧ — Jaki deser zjesz?
+Min-ho: ⟦Anh thích hoa quả nhiệt đới. Ăn măng cụt và thanh long, được không?⟧ — Lubię owoce tropikalne. Może mangostan i pitaję?
+Trang: ⟦Được chứ.⟧ — Jasne.
+Ćwiczenie wzorców — jakie jest mięso: ⟦mềm và không ngọt lắm⟧ / ⟦tươi và không dai⟧ (świeże i niegumowate); dlaczego „nic dziwnego”: ⟦nổi tiếng⟧ (sławna) / ⟦đông khách⟧ (oblegana); ulubiony deser: ⟦hoa quả nhiệt đới⟧ / ⟦kem⟧; co chce zamówić: ⟦măng cụt và thanh long⟧ / ⟦kem socola⟧.
+Wzór: Ⓐ ⟦Anh Kim nói tiếng Việt giỏi là phải.⟧ — Nic dziwnego, że pan Kim tak dobrze mówi po wietnamsku. Ⓑ ⟦Ừ. Anh Kim không chỉ có nhiều bạn Việt Nam mà còn đọc báo Việt Nam hằng ngày.⟧ — No tak. Nie tylko ma wielu wietnamskich przyjaciół, ale też codziennie czyta wietnamskie gazety.
+❶ ⟦bị trưởng phòng mắng⟧: Ⓐ ⟦Anh Nam bị trưởng phòng mắng là phải.⟧ — Nic dziwnego, że Nam dostał burę od kierownika. Ⓑ ⟦Ừ. Anh Nam không chỉ đến muộn mà còn không nộp báo cáo cuối tháng.⟧ — No tak. Nie dość, że się spóźnił, to jeszcze nie oddał raportu na koniec miesiąca.
+❷ ⟦cần nhiều nhân viên⟧: Ⓐ ⟦Nhà hàng này cần nhiều nhân viên là phải.⟧ — Nic dziwnego, że ta restauracja potrzebuje wielu pracowników. Ⓑ ⟦Ừ. Nhà hàng này không chỉ đông khách đến ăn mà còn có dịch vụ giao đồ ăn.⟧ — No tak. Nie tylko ma wielu gości na miejscu, ale też prowadzi dostawy jedzenia.
+Nowe słówka: ⟦liên tục⟧ nieprzerwanie | ⟦rụng⟧ spadać, opadać | ⟦mắng⟧ skarcić | ⟦nộp⟧ oddać, wpłacić | ⟦hằng ngày⟧ codziennie | ⟦giao⟧ dostarczać | ⟦khẩu vị⟧ gust, smak | ⟦đồ tráng miệng⟧ deser

@@ -1,0 +1,201 @@
+@@ pdf-grammar-be4c3ea3d3a58569#0
+=cs
+Klíčový výraz: ⟦đây là lần đầu tiên⟧
+⟦đầu tiên⟧ znamená „první“ a ⟦lần đầu tiên⟧ „poprvé“, takže ⟦đây là lần đầu tiên⟧ znamená „tohle je poprvé“. ⟦đây là lần đầu tiên + podmět + A⟧ tedy vyjadřuje „podmět dělá A poprvé“.
+❶ Ⓐ ⟦Em đến Hà Nội mấy lần rồi?⟧ — Kolikrát už jsi byl v Hanoji? Ⓑ ⟦Đây là lần đầu tiên em đến Hà Nội ạ.⟧ — V Hanoji jsem poprvé.
+❷ Ⓐ ⟦Đây là lần thứ mấy anh mở triển lãm ảnh riêng?⟧ — Kolikátou samostatnou fotografickou výstavu pořádáš? Ⓑ ⟦Đây là lần đầu tiên anh mở triển lãm riêng của anh.⟧ — Samostatnou výstavu pořádám poprvé.
+Výrazy k požadavkům na cíl cesty: ⟦yên tĩnh⟧ klidné | ⟦phong cảnh đẹp⟧ krásná krajina | ⟦nhiều di tích lịch sử⟧ hodně historických památek | ⟦ít được du khách biết đến⟧ málo známé turistům | ⟦có nhiều chương trình trải nghiệm⟧ hodně zážitkových programů
+Procvičování 1 — doplňte ⟦đây là lần đầu tiên⟧ podle vzoru a veďte rozhovor.
+Vzor: Ⓐ ⟦Anh đến Sa Pa mấy lần rồi? / Đây là lần thứ mấy anh đến Sa Pa?⟧ — Kolikrát už jsi byl v Sa Pa? / Kolikrát už jsi v Sa Pa? Ⓑ ⟦Đây là lần đầu tiên anh đến Sa Pa.⟧ — V Sa Pa jsem poprvé.
+❶ Ⓐ ⟦Chị lái xe ô tô mấy lần rồi?⟧ — Kolikrát už jsi řídila auto? Ⓑ ⟦Đây là lần đầu tiên chị lái xe ô tô.⟧ — Auto řídím poprvé.
+❷ Ⓐ ⟦Đây là lần thứ mấy em ăn món ăn Việt Nam?⟧ — Kolikrát už jsi jedl vietnamské jídlo? Ⓑ ⟦Đây là lần đầu tiên em ăn món ăn Việt Nam.⟧ — Vietnamské jídlo jím poprvé.
+Rozhovor: Min-ho si povídá s Trang o místě, kam by chtěl jet na dovolenou.
+Min-ho: ⟦Nghỉ hè năm nay anh định đi đây đó ở Việt Nam. Theo em thì anh nên đi đâu?⟧ — O letošních prázdninách chci jezdit po Vietnamu. Kam bych měl podle tebe jet?
+Trang: ⟦Anh muốn đi điểm du lịch thế nào?⟧ — Jaké místo bys chtěl navštívit?
+Min-ho: ⟦Giới thiệu cho anh nơi nào có phong cảnh đẹp và yên tĩnh, được không?⟧ — Mohla bys mi doporučit nějaké místo s krásnou krajinou, kde je klid?
+Trang: ⟦Thế thì anh thử đi Tràng An đi.⟧ — Tak zkus jet do Tràng An.
+Min-ho: ⟦Đây là lần đầu tiên anh nghe nói về nơi này.⟧ — O tom místě slyším poprvé.
+Trang: ⟦Ở đó có biển, hang động, đền, chùa và nổi tiếng là địa điểm quay nhiều phim nước ngoài đấy.⟧ — Je tam moře, jeskyně, svatyně i pagody a je to známé místo natáčení mnoha zahraničních filmů.
+Min-ho: ⟦Ồ hay quá! Vậy lần này anh sẽ đi nghỉ hè ở đó. Cảm ơn Trang nhé!⟧ — To je super! Tak letos pojedu na prázdniny tam. Díky, Trang!
+Procvičování — jaké místo: ⟦phong cảnh đẹp và yên tĩnh⟧ (krásná krajina a klid) / ⟦nhiều di tích lịch sử⟧ (hodně historických památek); doporučené místo: ⟦Tràng An⟧ / ⟦khu di tích Chăm Mỹ Sơn⟧ (čamský památkový komplex Mỹ Sơn); co tam je: ⟦biển, hang động, đền, chùa⟧ (moře, jeskyně, svatyně, pagody) / ⟦đền và tháp tiêu biểu cho kiến trúc tôn giáo Chăm-pa⟧ (svatyně a věže typické pro náboženskou architekturu Čampy); čím je známé: ⟦địa điểm quay nhiều phim nước ngoài⟧ (místo natáčení mnoha zahraničních filmů) / ⟦di sản văn hoá thế giới được UNESCO công nhận⟧ (světové kulturní dědictví uznané UNESCO).
+Nová slovíčka: ⟦trải nghiệm⟧ zažít, vyzkoušet | ⟦hang động⟧ jeskyně | ⟦đền⟧ svatyně, chrám | ⟦tháp⟧ věž
+=zh_cn
+核心表达：⟦đây là lần đầu tiên⟧
+⟦đầu tiên⟧ 意为“第一、最初”，⟦lần đầu tiên⟧ 意为“第一次”，所以 ⟦đây là lần đầu tiên⟧ 就是“这是第一次”。因此 ⟦đây là lần đầu tiên + 主语 + A⟧ 表示“这是主语第一次做A”“主语这次是第一次A”。
+❶ Ⓐ ⟦Em đến Hà Nội mấy lần rồi?⟧ —— 你来过河内几次了？ Ⓑ ⟦Đây là lần đầu tiên em đến Hà Nội ạ.⟧ —— 这是我第一次来河内。
+❷ Ⓐ ⟦Đây là lần thứ mấy anh mở triển lãm ảnh riêng?⟧ —— 这是你第几次举办个人摄影展？ Ⓑ ⟦Đây là lần đầu tiên anh mở triển lãm riêng của anh.⟧ —— 这是我第一次举办个人展览。
+表示对理想旅行地的条件的表达：⟦yên tĩnh⟧ 安静 | ⟦phong cảnh đẹp⟧ 风景美 | ⟦nhiều di tích lịch sử⟧ 历史遗迹多 | ⟦ít được du khách biết đến⟧ 游客知道的不多 | ⟦có nhiều chương trình trải nghiệm⟧ 体验项目多
+句型练习1 —— 仿照范例用 ⟦đây là lần đầu tiên⟧ 填空后进行对话。
+范例：Ⓐ ⟦Anh đến Sa Pa mấy lần rồi? / Đây là lần thứ mấy anh đến Sa Pa?⟧ —— 你来过沙坝几次了？/ 这是你第几次来沙坝？ Ⓑ ⟦Đây là lần đầu tiên anh đến Sa Pa.⟧ —— 这是我第一次来沙坝。
+❶ Ⓐ ⟦Chị lái xe ô tô mấy lần rồi?⟧ —— 你开过几次车了？ Ⓑ ⟦Đây là lần đầu tiên chị lái xe ô tô.⟧ —— 这是我第一次开车。
+❷ Ⓐ ⟦Đây là lần thứ mấy em ăn món ăn Việt Nam?⟧ —— 这是你第几次吃越南菜？ Ⓑ ⟦Đây là lần đầu tiên em ăn món ăn Việt Nam.⟧ —— 这是我第一次吃越南菜。
+对话：敏浩在和庄聊假期想去的旅行地。
+敏浩：⟦Nghỉ hè năm nay anh định đi đây đó ở Việt Nam. Theo em thì anh nên đi đâu?⟧ —— 今年暑假我打算在越南各地走走。你觉得我应该去哪儿？
+庄：⟦Anh muốn đi điểm du lịch thế nào?⟧ —— 你想去什么样的景点？
+敏浩：⟦Giới thiệu cho anh nơi nào có phong cảnh đẹp và yên tĩnh, được không?⟧ —— 能给我介绍一个风景美又安静的地方吗？
+庄：⟦Thế thì anh thử đi Tràng An đi.⟧ —— 那你去长安看看吧。
+敏浩：⟦Đây là lần đầu tiên anh nghe nói về nơi này.⟧ —— 我第一次听说这个地方。
+庄：⟦Ở đó có biển, hang động, đền, chùa và nổi tiếng là địa điểm quay nhiều phim nước ngoài đấy.⟧ —— 那里有海、洞穴、神庙、寺庙，还是很多外国电影的著名拍摄地呢。
+敏浩：⟦Ồ hay quá! Vậy lần này anh sẽ đi nghỉ hè ở đó. Cảm ơn Trang nhé!⟧ —— 哦，太棒了！那这次暑假我就去那里。谢谢你，庄！
+句型练习 —— 想去什么样的景点：⟦phong cảnh đẹp và yên tĩnh⟧（风景美又安静）/ ⟦nhiều di tích lịch sử⟧（历史遗迹多）；推荐去哪儿：⟦Tràng An⟧（长安）/ ⟦khu di tích Chăm Mỹ Sơn⟧（占族美山遗迹区）；那里有什么：⟦biển, hang động, đền, chùa⟧（海、洞穴、神庙、寺庙）/ ⟦đền và tháp tiêu biểu cho kiến trúc tôn giáo Chăm-pa⟧（代表占婆宗教建筑的神庙和塔）；以什么闻名：⟦địa điểm quay nhiều phim nước ngoài⟧（许多外国电影的拍摄地）/ ⟦di sản văn hoá thế giới được UNESCO công nhận⟧（联合国教科文组织认定的世界文化遗产）。
+新单词：⟦trải nghiệm⟧ 体验 | ⟦hang động⟧ 洞穴 | ⟦đền⟧ 神庙、祠 | ⟦tháp⟧ 塔
+=zh
+核心表達：⟦đây là lần đầu tiên⟧
+⟦đầu tiên⟧ 意為「第一、最初」，⟦lần đầu tiên⟧ 意為「第一次」，所以 ⟦đây là lần đầu tiên⟧ 就是「這是第一次」。因此 ⟦đây là lần đầu tiên + 主詞 + A⟧ 表示「這是主詞第一次做A」「主詞這次是第一次A」。
+❶ Ⓐ ⟦Em đến Hà Nội mấy lần rồi?⟧ —— 你來過河內幾次了？ Ⓑ ⟦Đây là lần đầu tiên em đến Hà Nội ạ.⟧ —— 這是我第一次來河內。
+❷ Ⓐ ⟦Đây là lần thứ mấy anh mở triển lãm ảnh riêng?⟧ —— 這是你第幾次舉辦個人攝影展？ Ⓑ ⟦Đây là lần đầu tiên anh mở triển lãm riêng của anh.⟧ —— 這是我第一次舉辦個人展覽。
+表示對理想旅遊地條件的表達：⟦yên tĩnh⟧ 安靜 | ⟦phong cảnh đẹp⟧ 風景美 | ⟦nhiều di tích lịch sử⟧ 歷史遺跡多 | ⟦ít được du khách biết đến⟧ 遊客知道的不多 | ⟦có nhiều chương trình trải nghiệm⟧ 體驗活動多
+句型練習1 —— 仿照範例用 ⟦đây là lần đầu tiên⟧ 填空後進行對話。
+範例：Ⓐ ⟦Anh đến Sa Pa mấy lần rồi? / Đây là lần thứ mấy anh đến Sa Pa?⟧ —— 你來過沙壩幾次了？/ 這是你第幾次來沙壩？ Ⓑ ⟦Đây là lần đầu tiên anh đến Sa Pa.⟧ —— 這是我第一次來沙壩。
+❶ Ⓐ ⟦Chị lái xe ô tô mấy lần rồi?⟧ —— 妳開過幾次車了？ Ⓑ ⟦Đây là lần đầu tiên chị lái xe ô tô.⟧ —— 這是我第一次開車。
+❷ Ⓐ ⟦Đây là lần thứ mấy em ăn món ăn Việt Nam?⟧ —— 這是你第幾次吃越南菜？ Ⓑ ⟦Đây là lần đầu tiên em ăn món ăn Việt Nam.⟧ —— 這是我第一次吃越南菜。
+對話：敏浩在和莊聊假期想去的旅遊地。
+敏浩：⟦Nghỉ hè năm nay anh định đi đây đó ở Việt Nam. Theo em thì anh nên đi đâu?⟧ —— 今年暑假我打算在越南四處走走。妳覺得我應該去哪裡？
+莊：⟦Anh muốn đi điểm du lịch thế nào?⟧ —— 你想去什麼樣的景點？
+敏浩：⟦Giới thiệu cho anh nơi nào có phong cảnh đẹp và yên tĩnh, được không?⟧ —— 能幫我介紹一個風景美又安靜的地方嗎？
+莊：⟦Thế thì anh thử đi Tràng An đi.⟧ —— 那你去長安看看吧。
+敏浩：⟦Đây là lần đầu tiên anh nghe nói về nơi này.⟧ —— 我第一次聽說這個地方。
+莊：⟦Ở đó có biển, hang động, đền, chùa và nổi tiếng là địa điểm quay nhiều phim nước ngoài đấy.⟧ —— 那裡有海、洞穴、神廟、寺廟，還是許多外國電影的知名拍攝地喔。
+敏浩：⟦Ồ hay quá! Vậy lần này anh sẽ đi nghỉ hè ở đó. Cảm ơn Trang nhé!⟧ —— 哦，太棒了！那這次暑假我就去那裡。謝謝妳，莊！
+句型練習 —— 想去什麼樣的景點：⟦phong cảnh đẹp và yên tĩnh⟧（風景美又安靜）/ ⟦nhiều di tích lịch sử⟧（歷史遺跡多）；推薦去哪裡：⟦Tràng An⟧（長安）/ ⟦khu di tích Chăm Mỹ Sơn⟧（占族美山遺跡區）；那裡有什麼：⟦biển, hang động, đền, chùa⟧（海、洞穴、神廟、寺廟）/ ⟦đền và tháp tiêu biểu cho kiến trúc tôn giáo Chăm-pa⟧（代表占婆宗教建築的神廟和塔）；以什麼聞名：⟦địa điểm quay nhiều phim nước ngoài⟧（許多外國電影的拍攝地）/ ⟦di sản văn hoá thế giới được UNESCO công nhận⟧（聯合國教科文組織認定的世界文化遺產）。
+新單字：⟦trải nghiệm⟧ 體驗 | ⟦hang động⟧ 洞穴 | ⟦đền⟧ 神廟、祠 | ⟦tháp⟧ 塔
+=en
+Key expression: ⟦đây là lần đầu tiên⟧
+⟦đầu tiên⟧ means "first" and ⟦lần đầu tiên⟧ "the first time", so ⟦đây là lần đầu tiên⟧ means "this is the first time". ⟦đây là lần đầu tiên + subject + A⟧ therefore means "this is the first time (subject) has done A".
+❶ Ⓐ ⟦Em đến Hà Nội mấy lần rồi?⟧ — How many times have you been to Hanoi? Ⓑ ⟦Đây là lần đầu tiên em đến Hà Nội ạ.⟧ — This is my first time in Hanoi.
+❷ Ⓐ ⟦Đây là lần thứ mấy anh mở triển lãm ảnh riêng?⟧ — How many solo photo exhibitions have you held? Ⓑ ⟦Đây là lần đầu tiên anh mở triển lãm riêng của anh.⟧ — This is the first time I've held a solo exhibition.
+Expressions for what you want in a destination: ⟦yên tĩnh⟧ quiet | ⟦phong cảnh đẹp⟧ beautiful scenery | ⟦nhiều di tích lịch sử⟧ many historic sites | ⟦ít được du khách biết đến⟧ little known to tourists | ⟦có nhiều chương trình trải nghiệm⟧ lots of hands-on activities
+Pattern practice 1 — fill in the blanks with ⟦đây là lần đầu tiên⟧ as in the model, then talk.
+Model: Ⓐ ⟦Anh đến Sa Pa mấy lần rồi? / Đây là lần thứ mấy anh đến Sa Pa?⟧ — How many times have you been to Sa Pa? / Which visit to Sa Pa is this? Ⓑ ⟦Đây là lần đầu tiên anh đến Sa Pa.⟧ — This is my first time in Sa Pa.
+❶ Ⓐ ⟦Chị lái xe ô tô mấy lần rồi?⟧ — How many times have you driven a car? Ⓑ ⟦Đây là lần đầu tiên chị lái xe ô tô.⟧ — This is my first time driving a car.
+❷ Ⓐ ⟦Đây là lần thứ mấy em ăn món ăn Việt Nam?⟧ — How many times have you had Vietnamese food? Ⓑ ⟦Đây là lần đầu tiên em ăn món ăn Việt Nam.⟧ — This is my first time eating Vietnamese food.
+Dialogue: Min-ho is talking with Trang about where he'd like to go on holiday.
+Min-ho: ⟦Nghỉ hè năm nay anh định đi đây đó ở Việt Nam. Theo em thì anh nên đi đâu?⟧ — This summer I'm planning to travel around Vietnam. Where do you think I should go?
+Trang: ⟦Anh muốn đi điểm du lịch thế nào?⟧ — What kind of place would you like to visit?
+Min-ho: ⟦Giới thiệu cho anh nơi nào có phong cảnh đẹp và yên tĩnh, được không?⟧ — Could you recommend somewhere with beautiful scenery that's quiet?
+Trang: ⟦Thế thì anh thử đi Tràng An đi.⟧ — Then try Tràng An.
+Min-ho: ⟦Đây là lần đầu tiên anh nghe nói về nơi này.⟧ — This is the first time I've heard of it.
+Trang: ⟦Ở đó có biển, hang động, đền, chùa và nổi tiếng là địa điểm quay nhiều phim nước ngoài đấy.⟧ — There's sea, caves, temples and pagodas, and it's famous as a location for many foreign films.
+Min-ho: ⟦Ồ hay quá! Vậy lần này anh sẽ đi nghỉ hè ở đó. Cảm ơn Trang nhé!⟧ — Oh, great! Then I'll spend my summer holiday there. Thanks, Trang!
+Pattern practice — what kind of place: ⟦phong cảnh đẹp và yên tĩnh⟧ (beautiful and quiet) / ⟦nhiều di tích lịch sử⟧ (lots of historic sites); recommended place: ⟦Tràng An⟧ / ⟦khu di tích Chăm Mỹ Sơn⟧ (the Chăm Mỹ Sơn sanctuary); what's there: ⟦biển, hang động, đền, chùa⟧ (sea, caves, temples, pagodas) / ⟦đền và tháp tiêu biểu cho kiến trúc tôn giáo Chăm-pa⟧ (temples and towers typical of Champa religious architecture); famous for: ⟦địa điểm quay nhiều phim nước ngoài⟧ (a location for many foreign films) / ⟦di sản văn hoá thế giới được UNESCO công nhận⟧ (a UNESCO World Cultural Heritage site).
+New words: ⟦trải nghiệm⟧ to experience | ⟦hang động⟧ cave | ⟦đền⟧ temple, shrine | ⟦tháp⟧ tower
+=fr
+Expression clé : ⟦đây là lần đầu tiên⟧
+⟦đầu tiên⟧ signifie « premier » et ⟦lần đầu tiên⟧ « la première fois » ; ⟦đây là lần đầu tiên⟧ signifie donc « c'est la première fois ». Ainsi, ⟦đây là lần đầu tiên + sujet + A⟧ signifie « c'est la première fois que (sujet) fait A ».
+❶ Ⓐ ⟦Em đến Hà Nội mấy lần rồi?⟧ — Combien de fois es-tu venu à Hanoï ? Ⓑ ⟦Đây là lần đầu tiên em đến Hà Nội ạ.⟧ — C'est la première fois que je viens à Hanoï.
+❷ Ⓐ ⟦Đây là lần thứ mấy anh mở triển lãm ảnh riêng?⟧ — C'est ta combientième exposition photo personnelle ? Ⓑ ⟦Đây là lần đầu tiên anh mở triển lãm riêng của anh.⟧ — C'est la première fois que j'organise une exposition personnelle.
+Expressions sur les critères d'une destination : ⟦yên tĩnh⟧ calme | ⟦phong cảnh đẹp⟧ beaux paysages | ⟦nhiều di tích lịch sử⟧ nombreux sites historiques | ⟦ít được du khách biết đến⟧ peu connu des touristes | ⟦có nhiều chương trình trải nghiệm⟧ nombreuses activités de découverte
+Exercice 1 — complétez avec ⟦đây là lần đầu tiên⟧ comme dans le modèle, puis dialoguez.
+Modèle : Ⓐ ⟦Anh đến Sa Pa mấy lần rồi? / Đây là lần thứ mấy anh đến Sa Pa?⟧ — Combien de fois es-tu allé à Sa Pa ? / C'est ta combientième visite à Sa Pa ? Ⓑ ⟦Đây là lần đầu tiên anh đến Sa Pa.⟧ — C'est la première fois que je viens à Sa Pa.
+❶ Ⓐ ⟦Chị lái xe ô tô mấy lần rồi?⟧ — Combien de fois as-tu conduit une voiture ? Ⓑ ⟦Đây là lần đầu tiên chị lái xe ô tô.⟧ — C'est la première fois que je conduis une voiture.
+❷ Ⓐ ⟦Đây là lần thứ mấy em ăn món ăn Việt Nam?⟧ — Combien de fois as-tu mangé vietnamien ? Ⓑ ⟦Đây là lần đầu tiên em ăn món ăn Việt Nam.⟧ — C'est la première fois que je mange de la cuisine vietnamienne.
+Dialogue : Min-ho parle avec Trang de l'endroit où il aimerait passer ses vacances.
+Min-ho : ⟦Nghỉ hè năm nay anh định đi đây đó ở Việt Nam. Theo em thì anh nên đi đâu?⟧ — Cet été, je compte voyager un peu partout au Vietnam. Selon toi, où devrais-je aller ?
+Trang : ⟦Anh muốn đi điểm du lịch thế nào?⟧ — Quel genre d'endroit veux-tu visiter ?
+Min-ho : ⟦Giới thiệu cho anh nơi nào có phong cảnh đẹp và yên tĩnh, được không?⟧ — Tu pourrais me conseiller un endroit calme avec de beaux paysages ?
+Trang : ⟦Thế thì anh thử đi Tràng An đi.⟧ — Alors essaie Tràng An.
+Min-ho : ⟦Đây là lần đầu tiên anh nghe nói về nơi này.⟧ — C'est la première fois que j'en entends parler.
+Trang : ⟦Ở đó có biển, hang động, đền, chùa và nổi tiếng là địa điểm quay nhiều phim nước ngoài đấy.⟧ — Il y a la mer, des grottes, des temples et des pagodes, et c'est un lieu de tournage célèbre pour de nombreux films étrangers.
+Min-ho : ⟦Ồ hay quá! Vậy lần này anh sẽ đi nghỉ hè ở đó. Cảm ơn Trang nhé!⟧ — Oh, génial ! Alors cette fois, je passerai mes vacances là-bas. Merci, Trang !
+Exercices — quel type d'endroit : ⟦phong cảnh đẹp và yên tĩnh⟧ (beau et calme) / ⟦nhiều di tích lịch sử⟧ (beaucoup de sites historiques) ; lieu conseillé : ⟦Tràng An⟧ / ⟦khu di tích Chăm Mỹ Sơn⟧ (le sanctuaire cham de Mỹ Sơn) ; ce qu'on y trouve : ⟦biển, hang động, đền, chùa⟧ (mer, grottes, temples, pagodes) / ⟦đền và tháp tiêu biểu cho kiến trúc tôn giáo Chăm-pa⟧ (temples et tours typiques de l'architecture religieuse du Champa) ; célèbre pour : ⟦địa điểm quay nhiều phim nước ngoài⟧ (lieu de tournage de nombreux films étrangers) / ⟦di sản văn hoá thế giới được UNESCO công nhận⟧ (patrimoine culturel mondial reconnu par l'UNESCO).
+Nouveaux mots : ⟦trải nghiệm⟧ faire l'expérience | ⟦hang động⟧ grotte | ⟦đền⟧ temple | ⟦tháp⟧ tour
+=de
+Schlüsselausdruck: ⟦đây là lần đầu tiên⟧
+⟦đầu tiên⟧ bedeutet „erste(r)“, ⟦lần đầu tiên⟧ „das erste Mal“, also heißt ⟦đây là lần đầu tiên⟧ „das ist das erste Mal“. ⟦đây là lần đầu tiên + Subjekt + A⟧ bedeutet somit „(Subjekt) tut A zum ersten Mal“.
+❶ Ⓐ ⟦Em đến Hà Nội mấy lần rồi?⟧ — Wie oft warst du schon in Hanoi? Ⓑ ⟦Đây là lần đầu tiên em đến Hà Nội ạ.⟧ — Ich bin zum ersten Mal in Hanoi.
+❷ Ⓐ ⟦Đây là lần thứ mấy anh mở triển lãm ảnh riêng?⟧ — Die wievielte eigene Fotoausstellung ist das? Ⓑ ⟦Đây là lần đầu tiên anh mở triển lãm riêng của anh.⟧ — Das ist meine erste Einzelausstellung.
+Ausdrücke zu Wünschen an ein Reiseziel: ⟦yên tĩnh⟧ ruhig | ⟦phong cảnh đẹp⟧ schöne Landschaft | ⟦nhiều di tích lịch sử⟧ viele historische Stätten | ⟦ít được du khách biết đến⟧ bei Touristen wenig bekannt | ⟦có nhiều chương trình trải nghiệm⟧ viele Erlebnisangebote
+Übung 1 — mit ⟦đây là lần đầu tiên⟧ wie im Muster ergänzen, dann sprechen.
+Muster: Ⓐ ⟦Anh đến Sa Pa mấy lần rồi? / Đây là lần thứ mấy anh đến Sa Pa?⟧ — Wie oft warst du schon in Sa Pa? / Zum wievielten Mal bist du in Sa Pa? Ⓑ ⟦Đây là lần đầu tiên anh đến Sa Pa.⟧ — Ich bin zum ersten Mal in Sa Pa.
+❶ Ⓐ ⟦Chị lái xe ô tô mấy lần rồi?⟧ — Wie oft bist du schon Auto gefahren? Ⓑ ⟦Đây là lần đầu tiên chị lái xe ô tô.⟧ — Ich fahre zum ersten Mal Auto.
+❷ Ⓐ ⟦Đây là lần thứ mấy em ăn món ăn Việt Nam?⟧ — Zum wievielten Mal isst du vietnamesisch? Ⓑ ⟦Đây là lần đầu tiên em ăn món ăn Việt Nam.⟧ — Ich esse zum ersten Mal vietnamesisches Essen.
+Dialog: Min-ho spricht mit Trang über ein Reiseziel für seinen Urlaub.
+Min-ho: ⟦Nghỉ hè năm nay anh định đi đây đó ở Việt Nam. Theo em thì anh nên đi đâu?⟧ — In den Sommerferien will ich durch Vietnam reisen. Wohin sollte ich deiner Meinung nach?
+Trang: ⟦Anh muốn đi điểm du lịch thế nào?⟧ — Was für einen Ort möchtest du besuchen?
+Min-ho: ⟦Giới thiệu cho anh nơi nào có phong cảnh đẹp và yên tĩnh, được không?⟧ — Kannst du mir einen ruhigen Ort mit schöner Landschaft empfehlen?
+Trang: ⟦Thế thì anh thử đi Tràng An đi.⟧ — Dann probier doch mal Tràng An.
+Min-ho: ⟦Đây là lần đầu tiên anh nghe nói về nơi này.⟧ — Von dem Ort höre ich zum ersten Mal.
+Trang: ⟦Ở đó có biển, hang động, đền, chùa và nổi tiếng là địa điểm quay nhiều phim nước ngoài đấy.⟧ — Dort gibt es Meer, Höhlen, Tempel und Pagoden, und es ist als Drehort vieler ausländischer Filme bekannt.
+Min-ho: ⟦Ồ hay quá! Vậy lần này anh sẽ đi nghỉ hè ở đó. Cảm ơn Trang nhé!⟧ — Oh, toll! Dann verbringe ich meinen Sommerurlaub dort. Danke, Trang!
+Satzmusterübung — was für ein Ort: ⟦phong cảnh đẹp và yên tĩnh⟧ (schön und ruhig) / ⟦nhiều di tích lịch sử⟧ (viele historische Stätten); Empfehlung: ⟦Tràng An⟧ / ⟦khu di tích Chăm Mỹ Sơn⟧ (Cham-Tempelanlage Mỹ Sơn); was es dort gibt: ⟦biển, hang động, đền, chùa⟧ (Meer, Höhlen, Tempel, Pagoden) / ⟦đền và tháp tiêu biểu cho kiến trúc tôn giáo Chăm-pa⟧ (für die religiöse Architektur Champas typische Tempel und Türme); bekannt für: ⟦địa điểm quay nhiều phim nước ngoài⟧ (Drehort vieler ausländischer Filme) / ⟦di sản văn hoá thế giới được UNESCO công nhận⟧ (von der UNESCO anerkanntes Weltkulturerbe).
+Neue Wörter: ⟦trải nghiệm⟧ erleben, ausprobieren | ⟦hang động⟧ Höhle | ⟦đền⟧ Tempel, Schrein | ⟦tháp⟧ Turm
+=hu
+Kulcskifejezés: ⟦đây là lần đầu tiên⟧
+A ⟦đầu tiên⟧ jelentése „első”, a ⟦lần đầu tiên⟧ „először”, így ⟦đây là lần đầu tiên⟧ = „ez az első alkalom”. A ⟦đây là lần đầu tiên + alany + A⟧ tehát azt jelenti: „(az alany) most először A”.
+❶ Ⓐ ⟦Em đến Hà Nội mấy lần rồi?⟧ — Hányszor voltál már Hanoiban? Ⓑ ⟦Đây là lần đầu tiên em đến Hà Nội ạ.⟧ — Most vagyok először Hanoiban.
+❷ Ⓐ ⟦Đây là lần thứ mấy anh mở triển lãm ảnh riêng?⟧ — Hányadik önálló fotókiállításod ez? Ⓑ ⟦Đây là lần đầu tiên anh mở triển lãm riêng của anh.⟧ — Most rendezek először önálló kiállítást.
+Az úti céllal szembeni elvárások kifejezései: ⟦yên tĩnh⟧ csendes | ⟦phong cảnh đẹp⟧ szép táj | ⟦nhiều di tích lịch sử⟧ sok történelmi emlékhely | ⟦ít được du khách biết đến⟧ kevéssé ismert a turisták körében | ⟦có nhiều chương trình trải nghiệm⟧ sok élményprogram
+1. gyakorlat — töltse ki a ⟦đây là lần đầu tiên⟧ kifejezéssel a minta szerint, majd beszélgessen.
+Minta: Ⓐ ⟦Anh đến Sa Pa mấy lần rồi? / Đây là lần thứ mấy anh đến Sa Pa?⟧ — Hányszor voltál már Sa Pában? / Hányadszor vagy Sa Pában? Ⓑ ⟦Đây là lần đầu tiên anh đến Sa Pa.⟧ — Most vagyok először Sa Pában.
+❶ Ⓐ ⟦Chị lái xe ô tô mấy lần rồi?⟧ — Hányszor vezettél már autót? Ⓑ ⟦Đây là lần đầu tiên chị lái xe ô tô.⟧ — Most vezetek először autót.
+❷ Ⓐ ⟦Đây là lần thứ mấy em ăn món ăn Việt Nam?⟧ — Hányadszor eszel vietnami ételt? Ⓑ ⟦Đây là lần đầu tiên em ăn món ăn Việt Nam.⟧ — Most eszem először vietnami ételt.
+Párbeszéd: Min-ho Tranggal beszélget arról, hová szeretne menni szabadsága alatt.
+Min-ho: ⟦Nghỉ hè năm nay anh định đi đây đó ở Việt Nam. Theo em thì anh nên đi đâu?⟧ — Idén nyáron bejárnám Vietnamot. Szerinted hová menjek?
+Trang: ⟦Anh muốn đi điểm du lịch thế nào?⟧ — Milyen helyre szeretnél menni?
+Min-ho: ⟦Giới thiệu cho anh nơi nào có phong cảnh đẹp và yên tĩnh, được không?⟧ — Tudnál ajánlani egy szép tájú, csendes helyet?
+Trang: ⟦Thế thì anh thử đi Tràng An đi.⟧ — Akkor próbáld ki Tràng Ant.
+Min-ho: ⟦Đây là lần đầu tiên anh nghe nói về nơi này.⟧ — Most hallok először erről a helyről.
+Trang: ⟦Ở đó có biển, hang động, đền, chùa và nổi tiếng là địa điểm quay nhiều phim nước ngoài đấy.⟧ — Van ott tenger, barlangok, szentélyek, pagodák, és sok külföldi film forgatási helyszíneként is híres.
+Min-ho: ⟦Ồ hay quá! Vậy lần này anh sẽ đi nghỉ hè ở đó. Cảm ơn Trang nhé!⟧ — Ó, remek! Akkor idén ott töltöm a nyári szabadságomat. Köszönöm, Trang!
+Mintagyakorlat — milyen hely: ⟦phong cảnh đẹp và yên tĩnh⟧ (szép és csendes) / ⟦nhiều di tích lịch sử⟧ (sok történelmi emlékhely); ajánlott hely: ⟦Tràng An⟧ / ⟦khu di tích Chăm Mỹ Sơn⟧ (a Mỹ Sơn-i csam templomegyüttes); mi van ott: ⟦biển, hang động, đền, chùa⟧ (tenger, barlangok, szentélyek, pagodák) / ⟦đền và tháp tiêu biểu cho kiến trúc tôn giáo Chăm-pa⟧ (a Csampa vallási építészetére jellemző szentélyek és tornyok); miről híres: ⟦địa điểm quay nhiều phim nước ngoài⟧ (sok külföldi film forgatási helyszíne) / ⟦di sản văn hoá thế giới được UNESCO công nhận⟧ (az UNESCO által elismert kulturális világörökség).
+Új szavak: ⟦trải nghiệm⟧ kipróbálni, megtapasztalni | ⟦hang động⟧ barlang | ⟦đền⟧ szentély, templom | ⟦tháp⟧ torony
+=id
+Ungkapan kunci: ⟦đây là lần đầu tiên⟧
+⟦đầu tiên⟧ berarti "pertama" dan ⟦lần đầu tiên⟧ "pertama kali", jadi ⟦đây là lần đầu tiên⟧ berarti "ini yang pertama kali". Maka ⟦đây là lần đầu tiên + subjek + A⟧ berarti "ini pertama kalinya (subjek) melakukan A".
+❶ Ⓐ ⟦Em đến Hà Nội mấy lần rồi?⟧ — Sudah berapa kali kamu datang ke Hanoi? Ⓑ ⟦Đây là lần đầu tiên em đến Hà Nội ạ.⟧ — Ini pertama kalinya saya datang ke Hanoi.
+❷ Ⓐ ⟦Đây là lần thứ mấy anh mở triển lãm ảnh riêng?⟧ — Ini pameran foto tunggal Kakak yang keberapa? Ⓑ ⟦Đây là lần đầu tiên anh mở triển lãm riêng của anh.⟧ — Ini pertama kalinya aku mengadakan pameran tunggal.
+Ungkapan tentang syarat tempat wisata yang diinginkan: ⟦yên tĩnh⟧ tenang | ⟦phong cảnh đẹp⟧ pemandangan indah | ⟦nhiều di tích lịch sử⟧ banyak situs bersejarah | ⟦ít được du khách biết đến⟧ jarang dikenal wisatawan | ⟦có nhiều chương trình trải nghiệm⟧ banyak program pengalaman
+Latihan pola 1 — isi dengan ⟦đây là lần đầu tiên⟧ seperti contoh, lalu bercakaplah.
+Contoh: Ⓐ ⟦Anh đến Sa Pa mấy lần rồi? / Đây là lần thứ mấy anh đến Sa Pa?⟧ — Sudah berapa kali Kakak ke Sa Pa? / Ini kunjungan Kakak ke Sa Pa yang keberapa? Ⓑ ⟦Đây là lần đầu tiên anh đến Sa Pa.⟧ — Ini pertama kalinya aku ke Sa Pa.
+❶ Ⓐ ⟦Chị lái xe ô tô mấy lần rồi?⟧ — Sudah berapa kali Kakak menyetir mobil? Ⓑ ⟦Đây là lần đầu tiên chị lái xe ô tô.⟧ — Ini pertama kalinya aku menyetir mobil.
+❷ Ⓐ ⟦Đây là lần thứ mấy em ăn món ăn Việt Nam?⟧ — Ini yang keberapa kalinya kamu makan masakan Vietnam? Ⓑ ⟦Đây là lần đầu tiên em ăn món ăn Việt Nam.⟧ — Ini pertama kalinya saya makan masakan Vietnam.
+Percakapan: Min-ho berbicara dengan Trang tentang tempat wisata yang ingin dikunjunginya saat liburan.
+Min-ho: ⟦Nghỉ hè năm nay anh định đi đây đó ở Việt Nam. Theo em thì anh nên đi đâu?⟧ — Libur musim panas tahun ini aku berencana jalan-jalan keliling Vietnam. Menurutmu aku sebaiknya ke mana?
+Trang: ⟦Anh muốn đi điểm du lịch thế nào?⟧ — Kakak ingin ke tempat wisata yang seperti apa?
+Min-ho: ⟦Giới thiệu cho anh nơi nào có phong cảnh đẹp và yên tĩnh, được không?⟧ — Bisa rekomendasikan tempat yang pemandangannya indah dan tenang?
+Trang: ⟦Thế thì anh thử đi Tràng An đi.⟧ — Kalau begitu, coba ke Tràng An.
+Min-ho: ⟦Đây là lần đầu tiên anh nghe nói về nơi này.⟧ — Ini pertama kalinya aku mendengar tentang tempat itu.
+Trang: ⟦Ở đó có biển, hang động, đền, chùa và nổi tiếng là địa điểm quay nhiều phim nước ngoài đấy.⟧ — Di sana ada laut, gua, kuil, pagoda, dan terkenal sebagai lokasi syuting banyak film asing.
+Min-ho: ⟦Ồ hay quá! Vậy lần này anh sẽ đi nghỉ hè ở đó. Cảm ơn Trang nhé!⟧ — Wah, menarik sekali! Kalau begitu liburan kali ini aku ke sana. Terima kasih, Trang!
+Latihan pola — tempat seperti apa: ⟦phong cảnh đẹp và yên tĩnh⟧ (indah dan tenang) / ⟦nhiều di tích lịch sử⟧ (banyak situs bersejarah); rekomendasi: ⟦Tràng An⟧ / ⟦khu di tích Chăm Mỹ Sơn⟧ (kompleks situs Cham Mỹ Sơn); ada apa di sana: ⟦biển, hang động, đền, chùa⟧ (laut, gua, kuil, pagoda) / ⟦đền và tháp tiêu biểu cho kiến trúc tôn giáo Chăm-pa⟧ (kuil dan menara khas arsitektur keagamaan Champa); terkenal karena: ⟦địa điểm quay nhiều phim nước ngoài⟧ (lokasi syuting banyak film asing) / ⟦di sản văn hoá thế giới được UNESCO công nhận⟧ (warisan budaya dunia yang diakui UNESCO).
+Kosakata baru: ⟦trải nghiệm⟧ mengalami, mencoba | ⟦hang động⟧ gua | ⟦đền⟧ kuil | ⟦tháp⟧ menara
+=ja
+核心表現：⟦đây là lần đầu tiên⟧
+⟦đầu tiên⟧ は「最初の、初めて」、⟦lần đầu tiên⟧ は「一回目、初めて」という意味なので、⟦đây là lần đầu tiên⟧ は「今回が初めてだ」となります。したがって ⟦đây là lần đầu tiên + 主語 + A⟧ は「主語がAするのは今回が初めてだ」「主語が今回初めてAする」という意味を表します。
+❶ Ⓐ ⟦Em đến Hà Nội mấy lần rồi?⟧ — ハノイには何回来たことがある？ Ⓑ ⟦Đây là lần đầu tiên em đến Hà Nội ạ.⟧ — ハノイに来たのは今回が初めてです。
+❷ Ⓐ ⟦Đây là lần thứ mấy anh mở triển lãm ảnh riêng?⟧ — 個人写真展を開くのは今回で何回目ですか。 Ⓑ ⟦Đây là lần đầu tiên anh mở triển lãm riêng của anh.⟧ — 今回初めて個展を開くんだ。
+希望する旅行先の条件を表す表現：⟦yên tĩnh⟧ 静かだ | ⟦phong cảnh đẹp⟧ 景色がきれい | ⟦nhiều di tích lịch sử⟧ 史跡が多い | ⟦ít được du khách biết đến⟧ 観光客にあまり知られていない | ⟦có nhiều chương trình trải nghiệm⟧ 体験プログラムが多い
+文型練習1 — 例のように ⟦đây là lần đầu tiên⟧ を使って空欄を埋め、会話してみましょう。
+例：Ⓐ ⟦Anh đến Sa Pa mấy lần rồi? / Đây là lần thứ mấy anh đến Sa Pa?⟧ — サパには何回来ましたか。/ サパに来るのは何回目ですか。 Ⓑ ⟦Đây là lần đầu tiên anh đến Sa Pa.⟧ — サパに来たのは今回が初めてです。
+❶ Ⓐ ⟦Chị lái xe ô tô mấy lần rồi?⟧ — 車を何回運転したことがありますか。 Ⓑ ⟦Đây là lần đầu tiên chị lái xe ô tô.⟧ — 車を運転するのは今回が初めてです。
+❷ Ⓐ ⟦Đây là lần thứ mấy em ăn món ăn Việt Nam?⟧ — ベトナム料理を食べるのは何回目？ Ⓑ ⟦Đây là lần đầu tiên em ăn món ăn Việt Nam.⟧ — ベトナム料理を食べるのは今回が初めてです。
+会話：ミンホが休暇に行きたい旅行先についてチャンと話しています。
+ミンホ：⟦Nghỉ hè năm nay anh định đi đây đó ở Việt Nam. Theo em thì anh nên đi đâu?⟧ — 今年の夏休みはベトナムのあちこちを回ろうと思っているんだ。どこに行くといいと思う？
+チャン：⟦Anh muốn đi điểm du lịch thế nào?⟧ — どんな観光地に行きたいですか。
+ミンホ：⟦Giới thiệu cho anh nơi nào có phong cảnh đẹp và yên tĩnh, được không?⟧ — 景色がきれいで静かな所を紹介してくれない？
+チャン：⟦Thế thì anh thử đi Tràng An đi.⟧ — それならチャンアンに行ってみてください。
+ミンホ：⟦Đây là lần đầu tiên anh nghe nói về nơi này.⟧ — その場所のことは初めて聞いたよ。
+チャン：⟦Ở đó có biển, hang động, đền, chùa và nổi tiếng là địa điểm quay nhiều phim nước ngoài đấy.⟧ — そこには海や洞窟、祠、寺があって、多くの外国映画のロケ地としても有名なんですよ。
+ミンホ：⟦Ồ hay quá! Vậy lần này anh sẽ đi nghỉ hè ở đó. Cảm ơn Trang nhé!⟧ — おお、いいね！じゃあ今回の夏休みはそこに行くよ。ありがとう、チャン！
+文型練習 — どんな観光地：⟦phong cảnh đẹp và yên tĩnh⟧（景色がきれいで静か）/ ⟦nhiều di tích lịch sử⟧（史跡が多い）；紹介された場所：⟦Tràng An⟧（チャンアン）/ ⟦khu di tích Chăm Mỹ Sơn⟧（チャム族のミーソン遺跡）；何があるか：⟦biển, hang động, đền, chùa⟧（海、洞窟、祠、寺）/ ⟦đền và tháp tiêu biểu cho kiến trúc tôn giáo Chăm-pa⟧（チャンパの宗教建築を代表する祠と塔）；何で有名か：⟦địa điểm quay nhiều phim nước ngoài⟧（多くの外国映画のロケ地）/ ⟦di sản văn hoá thế giới được UNESCO công nhận⟧（ユネスコに認定された世界文化遺産）。
+新出単語：⟦trải nghiệm⟧ 体験する | ⟦hang động⟧ 洞窟 | ⟦đền⟧ 祠、寺院 | ⟦tháp⟧ 塔
+=pl
+Kluczowe wyrażenie: ⟦đây là lần đầu tiên⟧
+⟦đầu tiên⟧ znaczy „pierwszy”, a ⟦lần đầu tiên⟧ „po raz pierwszy”, więc ⟦đây là lần đầu tiên⟧ to „to pierwszy raz”. ⟦đây là lần đầu tiên + podmiot + A⟧ znaczy zatem „(podmiot) robi A po raz pierwszy”.
+❶ Ⓐ ⟦Em đến Hà Nội mấy lần rồi?⟧ — Ile razy byłeś już w Hanoi? Ⓑ ⟦Đây là lần đầu tiên em đến Hà Nội ạ.⟧ — Jestem w Hanoi po raz pierwszy.
+❷ Ⓐ ⟦Đây là lần thứ mấy anh mở triển lãm ảnh riêng?⟧ — Którą już indywidualną wystawę fotografii organizujesz? Ⓑ ⟦Đây là lần đầu tiên anh mở triển lãm riêng của anh.⟧ — Organizuję indywidualną wystawę po raz pierwszy.
+Wyrażenia opisujące oczekiwania wobec celu podróży: ⟦yên tĩnh⟧ spokojny | ⟦phong cảnh đẹp⟧ piękne krajobrazy | ⟦nhiều di tích lịch sử⟧ wiele zabytków | ⟦ít được du khách biết đến⟧ mało znany turystom | ⟦có nhiều chương trình trải nghiệm⟧ wiele programów, w których można czegoś doświadczyć
+Ćwiczenie 1 — uzupełnij za pomocą ⟦đây là lần đầu tiên⟧ jak we wzorze, potem rozmawiaj.
+Wzór: Ⓐ ⟦Anh đến Sa Pa mấy lần rồi? / Đây là lần thứ mấy anh đến Sa Pa?⟧ — Ile razy byłeś w Sa Pa? / Który raz jesteś w Sa Pa? Ⓑ ⟦Đây là lần đầu tiên anh đến Sa Pa.⟧ — Jestem w Sa Pa po raz pierwszy.
+❶ Ⓐ ⟦Chị lái xe ô tô mấy lần rồi?⟧ — Ile razy prowadziłaś już samochód? Ⓑ ⟦Đây là lần đầu tiên chị lái xe ô tô.⟧ — Prowadzę samochód po raz pierwszy.
+❷ Ⓐ ⟦Đây là lần thứ mấy em ăn món ăn Việt Nam?⟧ — Który raz jesz wietnamskie jedzenie? Ⓑ ⟦Đây là lần đầu tiên em ăn món ăn Việt Nam.⟧ — Jem wietnamskie jedzenie po raz pierwszy.
+Dialog: Min-ho rozmawia z Trang o miejscu, dokąd chciałby pojechać na urlop.
+Min-ho: ⟦Nghỉ hè năm nay anh định đi đây đó ở Việt Nam. Theo em thì anh nên đi đâu?⟧ — W te wakacje chcę pojeździć po Wietnamie. Jak myślisz, dokąd powinienem pojechać?
+Trang: ⟦Anh muốn đi điểm du lịch thế nào?⟧ — Jakie miejsce chciałbyś odwiedzić?
+Min-ho: ⟦Giới thiệu cho anh nơi nào có phong cảnh đẹp và yên tĩnh, được không?⟧ — Możesz mi polecić jakieś spokojne miejsce z pięknymi krajobrazami?
+Trang: ⟦Thế thì anh thử đi Tràng An đi.⟧ — To spróbuj pojechać do Tràng An.
+Min-ho: ⟦Đây là lần đầu tiên anh nghe nói về nơi này.⟧ — Pierwszy raz słyszę o tym miejscu.
+Trang: ⟦Ở đó có biển, hang động, đền, chùa và nổi tiếng là địa điểm quay nhiều phim nước ngoài đấy.⟧ — Jest tam morze, jaskinie, świątynie i pagody, a do tego to znane miejsce kręcenia wielu zagranicznych filmów.
+Min-ho: ⟦Ồ hay quá! Vậy lần này anh sẽ đi nghỉ hè ở đó. Cảm ơn Trang nhé!⟧ — O, super! To w te wakacje pojadę właśnie tam. Dzięki, Trang!
+Ćwiczenie wzorców — jakie miejsce: ⟦phong cảnh đẹp và yên tĩnh⟧ (piękne i spokojne) / ⟦nhiều di tích lịch sử⟧ (dużo zabytków); polecone miejsce: ⟦Tràng An⟧ / ⟦khu di tích Chăm Mỹ Sơn⟧ (kompleks świątyń Czamów Mỹ Sơn); co tam jest: ⟦biển, hang động, đền, chùa⟧ (morze, jaskinie, świątynie, pagody) / ⟦đền và tháp tiêu biểu cho kiến trúc tôn giáo Chăm-pa⟧ (świątynie i wieże typowe dla architektury sakralnej Czampy); z czego słynie: ⟦địa điểm quay nhiều phim nước ngoài⟧ (miejsce kręcenia wielu zagranicznych filmów) / ⟦di sản văn hoá thế giới được UNESCO công nhận⟧ (światowe dziedzictwo kulturowe uznane przez UNESCO).
+Nowe słówka: ⟦trải nghiệm⟧ doświadczyć, przeżyć | ⟦hang động⟧ jaskinia | ⟦đền⟧ świątynia | ⟦tháp⟧ wieża

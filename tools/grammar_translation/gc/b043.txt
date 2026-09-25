@@ -1,0 +1,181 @@
+@@ pdf-grammar-bf40b8263d384b4b#0
+=cs
+Klíčový výraz: ⟦chớ⟧
+⟦chớ + sloveso⟧ se používá, když někomu radíme, aby něco nedělal: „ne~, nedělej ~“.
+❶ ⟦Chớ thức khuya như vậy, không tốt cho sức khoẻ của em đâu.⟧ — Neponocuj takhle, pro tvé zdraví to není dobré.
+❷ Ⓐ ⟦Mẹ ơi, con đói quá! Con ăn miếng bánh chưng này, được không?⟧ — Mami, mám hrozný hlad! Můžu si vzít kousek bánh chưng? Ⓑ ⟦Sắp đến giờ ăn trưa rồi. Con chớ ăn bây giờ, phải đợi cả nhà cùng ăn trưa chứ!⟧ — Za chvíli je oběd. Teď nejez, musíš počkat, až bude obědvat celá rodina!
+Výrazy k plánům na sváteční volno: ⟦nghỉ ở nhà⟧ odpočívat doma | ⟦đi chúc Tết⟧ chodit přát k Novému roku | ⟦về thăm quê⟧ jet navštívit rodný kraj | ⟦xem các bộ phim truyền hình chưa xem⟧ dívat se na seriály, které jsem ještě neviděl | ⟦đi du lịch trong nước /đi du lịch nước ngoài⟧ cestovat po zemi / do zahraničí
+Procvičování 1 — spojte vhodné části a veďte rozhovor podle vzoru: ① ⟦mắng nó⟧ (vynadat mu) → Ⓒ ⟦Nó không có lỗi gì⟧ (není nic vinen) | ② ⟦đá bóng ở đây⟧ (hrát tady fotbal) → Ⓐ ⟦Nguy hiểm lắm⟧ (je to velmi nebezpečné) | ③ ⟦ăn thêm hoa quả nữa⟧ (jíst ještě další ovoce) → Ⓑ ⟦Dễ đau bụng đấy⟧ (snadno tě rozbolí břicho)
+Vzor (①–Ⓒ): Ⓐ ⟦Em chớ mắng nó nhé.⟧ — Nenadávej mu. Ⓑ ⟦Tại sao ạ?⟧ — Proč? Ⓐ ⟦Nó không có lỗi gì.⟧ — Není nic vinen.
+Rozhovor: Min-ho si povídá s Trang o plánech na Tết.
+Min-ho: ⟦Sắp Tết âm lịch rồi đấy. Em có kế hoạch gì đặc biệt trong kì nghỉ này không?⟧ — Brzy je lunární Nový rok. Máš na tyhle svátky nějaké zvláštní plány?
+Trang: ⟦Em định sẽ đi thăm và chúc Tết họ hàng, bạn bè. Còn anh?⟧ — Chci navštívit příbuzné a přátele a popřát jim k Novému roku. A ty?
+Min-ho: ⟦Năm nay anh định không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam.⟧ — Letos nepojedu do Koreje, ale zůstanu slavit Tết ve Vietnamu.
+Trang: ⟦À, thế à? Nhưng khi đó, phần lớn các cửa hàng đều đóng cửa. Vì thế anh chớ quên mua các đồ cần thiết trước nhé.⟧ — Aha, opravdu? Jenže v té době má většina obchodů zavřeno. Tak nezapomeň si potřebné věci koupit dopředu.
+Min-ho: ⟦Vậy à? Cảm ơn em đã cho anh biết.⟧ — Vážně? Díky, že jsi mi to řekla.
+Trang: ⟦Em sẽ mang bánh chưng và mấy món ăn Tết khác đến cho anh nhé.⟧ — Přinesu ti bánh chưng a pár dalších novoročních jídel.
+Min-ho: ⟦Thật à? Nhờ Trang mà anh sẽ có thể nghỉ thoải mái trong kì nghỉ này rồi.⟧ — Opravdu? Díky tobě si ty svátky budu moct v klidu užít.
+Procvičování — svátek: ⟦Tết âm lịch⟧ (lunární Nový rok) / ⟦30/4 và 1/5⟧ (30. dubna a 1. května); plány Trang a Min-ho: ⟦đi thăm và chúc Tết họ hàng, bạn bè, không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam⟧ (navštívit a popřát příbuzným a přátelům; nejet do Koreje a slavit Tết ve Vietnamu) / ⟦ở nhà xem các bộ phim truyền hình chưa xem, dành thời gian bay đi du lịch Nha Trang⟧ (doma sledovat neviděné seriály; najít si čas a letět do Nha Trangu); co je třeba vědět a udělat: ⟦phần lớn các cửa hàng đều đóng cửa, mua các đồ cần thiết trước⟧ (většina obchodů má zavřeno, koupit potřebné věci předem) / ⟦có nhiều người đi du lịch, đặt vé máy bay và đặt phòng khách sạn trước⟧ (hodně lidí cestuje, zarezervovat letenky a hotel předem); s čím pomůže: ⟦mang bánh chưng và mấy món ăn Tết khác đến⟧ (přinese bánh chưng a další novoroční jídla) / ⟦nhờ bạn đang làm ở công ti du lịch tìm thông tin⟧ (požádá kamaráda z cestovní kanceláře o informace).
+Nová slovíčka: ⟦miếng⟧ kousek, plátek
+=zh_cn
+核心表达：⟦chớ⟧
+⟦chớ + 动词⟧ 用于劝告对方不要做某事，意为“别……、不要……”。
+❶ ⟦Chớ thức khuya như vậy, không tốt cho sức khoẻ của em đâu.⟧ —— 别这样熬夜，对你的健康不好。
+❷ Ⓐ ⟦Mẹ ơi, con đói quá! Con ăn miếng bánh chưng này, được không?⟧ —— 妈妈，我好饿！我吃一块粽子可以吗？ Ⓑ ⟦Sắp đến giờ ăn trưa rồi. Con chớ ăn bây giờ, phải đợi cả nhà cùng ăn trưa chứ!⟧ —— 快到午饭时间了。现在别吃，要等全家一起吃午饭！
+表示节日假期计划的表达：⟦nghỉ ở nhà⟧ 在家休息 | ⟦đi chúc Tết⟧ 去拜年 | ⟦về thăm quê⟧ 回老家 | ⟦xem các bộ phim truyền hình chưa xem⟧ 看还没看的电视剧 | ⟦đi du lịch trong nước /đi du lịch nước ngoài⟧ 国内游 / 出国游
+句型练习1 —— 找出相应内容连线，然后仿照范例对话：① ⟦mắng nó⟧（骂他）→ Ⓒ ⟦Nó không có lỗi gì⟧（他没有任何错）| ② ⟦đá bóng ở đây⟧（在这里踢球）→ Ⓐ ⟦Nguy hiểm lắm⟧（很危险）| ③ ⟦ăn thêm hoa quả nữa⟧（再多吃水果）→ Ⓑ ⟦Dễ đau bụng đấy⟧（容易肚子疼）
+范例（①–Ⓒ）：Ⓐ ⟦Em chớ mắng nó nhé.⟧ —— 你别骂他啊。 Ⓑ ⟦Tại sao ạ?⟧ —— 为什么？ Ⓐ ⟦Nó không có lỗi gì.⟧ —— 他没有任何错。
+对话：敏浩在和庄聊春节计划。
+敏浩：⟦Sắp Tết âm lịch rồi đấy. Em có kế hoạch gì đặc biệt trong kì nghỉ này không?⟧ —— 快到春节了。这个假期你有什么特别的计划吗？
+庄：⟦Em định sẽ đi thăm và chúc Tết họ hàng, bạn bè. Còn anh?⟧ —— 我打算去看望亲戚朋友、给他们拜年。你呢？
+敏浩：⟦Năm nay anh định không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam.⟧ —— 今年我打算不回韩国，留在越南过年。
+庄：⟦À, thế à? Nhưng khi đó, phần lớn các cửa hàng đều đóng cửa. Vì thế anh chớ quên mua các đồ cần thiết trước nhé.⟧ —— 啊，是吗？不过那时大部分商店都关门。所以你别忘了提前买好需要的东西。
+敏浩：⟦Vậy à? Cảm ơn em đã cho anh biết.⟧ —— 是吗？谢谢你告诉我。
+庄：⟦Em sẽ mang bánh chưng và mấy món ăn Tết khác đến cho anh nhé.⟧ —— 我会给你带粽子和其他几样年菜过去。
+敏浩：⟦Thật à? Nhờ Trang mà anh sẽ có thể nghỉ thoải mái trong kì nghỉ này rồi.⟧ —— 真的吗？多亏了你，这个假期我可以舒舒服服地休息了。
+句型练习 —— 节日：⟦Tết âm lịch⟧（春节）/ ⟦30/4 và 1/5⟧（4月30日和5月1日）；庄和敏浩的计划：⟦đi thăm và chúc Tết họ hàng, bạn bè, không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam⟧（看望亲友拜年；不回韩国，留在越南过年）/ ⟦ở nhà xem các bộ phim truyền hình chưa xem, dành thời gian bay đi du lịch Nha Trang⟧（在家看没看的电视剧；抽时间飞去芽庄旅游）；须知和要做的事：⟦phần lớn các cửa hàng đều đóng cửa, mua các đồ cần thiết trước⟧（大部分商店关门，提前买好必需品）/ ⟦có nhiều người đi du lịch, đặt vé máy bay và đặt phòng khách sạn trước⟧（出游的人多，提前订机票和酒店）；会帮忙做的事：⟦mang bánh chưng và mấy món ăn Tết khác đến⟧（带粽子和其他年菜来）/ ⟦nhờ bạn đang làm ở công ti du lịch tìm thông tin⟧（请在旅行社工作的朋友查信息）。
+新单词：⟦miếng⟧ 块、片
+=zh
+核心表達：⟦chớ⟧
+⟦chớ + 動詞⟧ 用於勸告對方不要做某事，意為「別……、不要……」。
+❶ ⟦Chớ thức khuya như vậy, không tốt cho sức khoẻ của em đâu.⟧ —— 別這樣熬夜，對妳的健康不好。
+❷ Ⓐ ⟦Mẹ ơi, con đói quá! Con ăn miếng bánh chưng này, được không?⟧ —— 媽媽，我好餓！我吃一塊粽子可以嗎？ Ⓑ ⟦Sắp đến giờ ăn trưa rồi. Con chớ ăn bây giờ, phải đợi cả nhà cùng ăn trưa chứ!⟧ —— 快到午餐時間了。現在別吃，要等全家一起吃午餐！
+表示節日連假計畫的表達：⟦nghỉ ở nhà⟧ 在家休息 | ⟦đi chúc Tết⟧ 去拜年 | ⟦về thăm quê⟧ 回老家 | ⟦xem các bộ phim truyền hình chưa xem⟧ 看還沒看的電視劇 | ⟦đi du lịch trong nước /đi du lịch nước ngoài⟧ 國內旅遊 / 出國旅遊
+句型練習1 —— 找出相應內容連線，然後仿照範例對話：① ⟦mắng nó⟧（罵他）→ Ⓒ ⟦Nó không có lỗi gì⟧（他沒有任何錯）| ② ⟦đá bóng ở đây⟧（在這裡踢球）→ Ⓐ ⟦Nguy hiểm lắm⟧（很危險）| ③ ⟦ăn thêm hoa quả nữa⟧（再多吃水果）→ Ⓑ ⟦Dễ đau bụng đấy⟧（容易肚子痛）
+範例（①–Ⓒ）：Ⓐ ⟦Em chớ mắng nó nhé.⟧ —— 妳別罵他喔。 Ⓑ ⟦Tại sao ạ?⟧ —— 為什麼？ Ⓐ ⟦Nó không có lỗi gì.⟧ —— 他沒有任何錯。
+對話：敏浩在和莊聊春節計畫。
+敏浩：⟦Sắp Tết âm lịch rồi đấy. Em có kế hoạch gì đặc biệt trong kì nghỉ này không?⟧ —— 快過年了。這個連假妳有什麼特別的計畫嗎？
+莊：⟦Em định sẽ đi thăm và chúc Tết họ hàng, bạn bè. Còn anh?⟧ —— 我打算去探望親戚朋友、向他們拜年。你呢？
+敏浩：⟦Năm nay anh định không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam.⟧ —— 今年我打算不回韓國，留在越南過年。
+莊：⟦À, thế à? Nhưng khi đó, phần lớn các cửa hàng đều đóng cửa. Vì thế anh chớ quên mua các đồ cần thiết trước nhé.⟧ —— 啊，是嗎？不過那時大部分商店都關門。所以你別忘了先買好需要的東西。
+敏浩：⟦Vậy à? Cảm ơn em đã cho anh biết.⟧ —— 是嗎？謝謝妳告訴我。
+莊：⟦Em sẽ mang bánh chưng và mấy món ăn Tết khác đến cho anh nhé.⟧ —— 我會帶粽子和其他幾樣年菜過去給你。
+敏浩：⟦Thật à? Nhờ Trang mà anh sẽ có thể nghỉ thoải mái trong kì nghỉ này rồi.⟧ —— 真的嗎？多虧了妳，這個連假我可以舒舒服服地休息了。
+句型練習 —— 節日：⟦Tết âm lịch⟧（農曆新年）/ ⟦30/4 và 1/5⟧（4月30日和5月1日）；莊和敏浩的計畫：⟦đi thăm và chúc Tết họ hàng, bạn bè, không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam⟧（探望親友拜年；不回韓國，留在越南過年）/ ⟦ở nhà xem các bộ phim truyền hình chưa xem, dành thời gian bay đi du lịch Nha Trang⟧（在家看沒看的電視劇；抽空飛去芽莊旅遊）；須知和要做的事：⟦phần lớn các cửa hàng đều đóng cửa, mua các đồ cần thiết trước⟧（大部分商店關門，先買好必需品）/ ⟦có nhiều người đi du lịch, đặt vé máy bay và đặt phòng khách sạn trước⟧（出遊的人多，先訂機票和飯店）；會幫忙做的事：⟦mang bánh chưng và mấy món ăn Tết khác đến⟧（帶粽子和其他年菜來）/ ⟦nhờ bạn đang làm ở công ti du lịch tìm thông tin⟧（請在旅行社工作的朋友找資訊）。
+新單字：⟦miếng⟧ 塊、片
+=en
+Key expression: ⟦chớ⟧
+⟦chớ + verb⟧ is used to advise someone not to do something: "don't ~".
+❶ ⟦Chớ thức khuya như vậy, không tốt cho sức khoẻ của em đâu.⟧ — Don't stay up so late – it's bad for your health.
+❷ Ⓐ ⟦Mẹ ơi, con đói quá! Con ăn miếng bánh chưng này, được không?⟧ — Mum, I'm starving! Can I have a piece of this bánh chưng? Ⓑ ⟦Sắp đến giờ ăn trưa rồi. Con chớ ăn bây giờ, phải đợi cả nhà cùng ăn trưa chứ!⟧ — It's nearly lunchtime. Don't eat now – you have to wait and have lunch with the whole family!
+Expressions for holiday plans: ⟦nghỉ ở nhà⟧ rest at home | ⟦đi chúc Tết⟧ go round giving New Year greetings | ⟦về thăm quê⟧ go back to one's home town | ⟦xem các bộ phim truyền hình chưa xem⟧ watch TV series one hasn't seen yet | ⟦đi du lịch trong nước /đi du lịch nước ngoài⟧ travel at home / abroad
+Pattern practice 1 — match the parts, then talk as in the model: ① ⟦mắng nó⟧ (scold him) → Ⓒ ⟦Nó không có lỗi gì⟧ (he hasn't done anything wrong) | ② ⟦đá bóng ở đây⟧ (play football here) → Ⓐ ⟦Nguy hiểm lắm⟧ (it's very dangerous) | ③ ⟦ăn thêm hoa quả nữa⟧ (eat more fruit) → Ⓑ ⟦Dễ đau bụng đấy⟧ (you'll easily get a stomach ache)
+Model (①–Ⓒ): Ⓐ ⟦Em chớ mắng nó nhé.⟧ — Don't scold him. Ⓑ ⟦Tại sao ạ?⟧ — Why not? Ⓐ ⟦Nó không có lỗi gì.⟧ — He hasn't done anything wrong.
+Dialogue: Min-ho is talking with Trang about his Tết plans.
+Min-ho: ⟦Sắp Tết âm lịch rồi đấy. Em có kế hoạch gì đặc biệt trong kì nghỉ này không?⟧ — Lunar New Year is coming up. Do you have any special plans for the holiday?
+Trang: ⟦Em định sẽ đi thăm và chúc Tết họ hàng, bạn bè. Còn anh?⟧ — I'm going to visit relatives and friends and wish them a happy New Year. And you?
+Min-ho: ⟦Năm nay anh định không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam.⟧ — This year I'm not going back to Korea – I'll stay and celebrate Tết in Vietnam.
+Trang: ⟦À, thế à? Nhưng khi đó, phần lớn các cửa hàng đều đóng cửa. Vì thế anh chớ quên mua các đồ cần thiết trước nhé.⟧ — Oh, really? But most shops close then, so don't forget to buy what you need in advance.
+Min-ho: ⟦Vậy à? Cảm ơn em đã cho anh biết.⟧ — Is that so? Thanks for telling me.
+Trang: ⟦Em sẽ mang bánh chưng và mấy món ăn Tết khác đến cho anh nhé.⟧ — I'll bring you some bánh chưng and a few other Tết dishes.
+Min-ho: ⟦Thật à? Nhờ Trang mà anh sẽ có thể nghỉ thoải mái trong kì nghỉ này rồi.⟧ — Really? Thanks to you, I'll be able to relax properly over the holiday.
+Pattern practice — the holiday: ⟦Tết âm lịch⟧ (Lunar New Year) / ⟦30/4 và 1/5⟧ (30 April and 1 May); Trang's and Min-ho's plans: ⟦đi thăm và chúc Tết họ hàng, bạn bè, không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam⟧ (visit relatives and friends with New Year wishes; stay in Vietnam for Tết instead of going to Korea) / ⟦ở nhà xem các bộ phim truyền hình chưa xem, dành thời gian bay đi du lịch Nha Trang⟧ (watch unseen TV series at home; make time to fly to Nha Trang); what to know and do: ⟦phần lớn các cửa hàng đều đóng cửa, mua các đồ cần thiết trước⟧ (most shops close, buy essentials in advance) / ⟦có nhiều người đi du lịch, đặt vé máy bay và đặt phòng khách sạn trước⟧ (many people travel, book flights and hotels early); how she'll help: ⟦mang bánh chưng và mấy món ăn Tết khác đến⟧ (bring bánh chưng and other Tết dishes) / ⟦nhờ bạn đang làm ở công ti du lịch tìm thông tin⟧ (ask a friend at a travel agency to find information).
+New words: ⟦miếng⟧ piece, slice
+=fr
+Expression clé : ⟦chớ⟧
+⟦chớ + verbe⟧ s'emploie pour conseiller à quelqu'un de ne pas faire quelque chose : « ne ~ pas ».
+❶ ⟦Chớ thức khuya như vậy, không tốt cho sức khoẻ của em đâu.⟧ — Ne veille pas si tard, ce n'est pas bon pour ta santé.
+❷ Ⓐ ⟦Mẹ ơi, con đói quá! Con ăn miếng bánh chưng này, được không?⟧ — Maman, j'ai trop faim ! Je peux manger un morceau de bánh chưng ? Ⓑ ⟦Sắp đến giờ ăn trưa rồi. Con chớ ăn bây giờ, phải đợi cả nhà cùng ăn trưa chứ!⟧ — C'est bientôt l'heure du déjeuner. Ne mange pas maintenant, il faut attendre de déjeuner avec toute la famille !
+Expressions pour les projets de congés : ⟦nghỉ ở nhà⟧ se reposer à la maison | ⟦đi chúc Tết⟧ aller présenter ses vœux du Tết | ⟦về thăm quê⟧ retourner au pays natal | ⟦xem các bộ phim truyền hình chưa xem⟧ regarder les séries pas encore vues | ⟦đi du lịch trong nước /đi du lịch nước ngoài⟧ voyager dans le pays / à l'étranger
+Exercice 1 — reliez les éléments, puis dialoguez comme dans le modèle : ① ⟦mắng nó⟧ (le gronder) → Ⓒ ⟦Nó không có lỗi gì⟧ (il n'a rien fait de mal) | ② ⟦đá bóng ở đây⟧ (jouer au foot ici) → Ⓐ ⟦Nguy hiểm lắm⟧ (c'est très dangereux) | ③ ⟦ăn thêm hoa quả nữa⟧ (manger encore des fruits) → Ⓑ ⟦Dễ đau bụng đấy⟧ (on attrape vite mal au ventre)
+Modèle (①–Ⓒ) : Ⓐ ⟦Em chớ mắng nó nhé.⟧ — Ne le gronde pas. Ⓑ ⟦Tại sao ạ?⟧ — Pourquoi ? Ⓐ ⟦Nó không có lỗi gì.⟧ — Il n'a rien fait de mal.
+Dialogue : Min-ho parle avec Trang de ses projets pour le Tết.
+Min-ho : ⟦Sắp Tết âm lịch rồi đấy. Em có kế hoạch gì đặc biệt trong kì nghỉ này không?⟧ — Le Nouvel An lunaire approche. Tu as des projets particuliers pour ces congés ?
+Trang : ⟦Em định sẽ đi thăm và chúc Tết họ hàng, bạn bè. Còn anh?⟧ — Je compte rendre visite à ma famille et à mes amis pour leur présenter mes vœux. Et toi ?
+Min-ho : ⟦Năm nay anh định không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam.⟧ — Cette année, je ne rentre pas en Corée, je reste fêter le Tết au Vietnam.
+Trang : ⟦À, thế à? Nhưng khi đó, phần lớn các cửa hàng đều đóng cửa. Vì thế anh chớ quên mua các đồ cần thiết trước nhé.⟧ — Ah bon ? Mais à ce moment-là, la plupart des magasins sont fermés. N'oublie pas d'acheter ce qu'il te faut à l'avance.
+Min-ho : ⟦Vậy à? Cảm ơn em đã cho anh biết.⟧ — Ah oui ? Merci de me prévenir.
+Trang : ⟦Em sẽ mang bánh chưng và mấy món ăn Tết khác đến cho anh nhé.⟧ — Je t'apporterai du bánh chưng et quelques autres plats du Tết.
+Min-ho : ⟦Thật à? Nhờ Trang mà anh sẽ có thể nghỉ thoải mái trong kì nghỉ này rồi.⟧ — C'est vrai ? Grâce à toi, je vais pouvoir me reposer tranquillement pendant ces congés.
+Exercices — la fête : ⟦Tết âm lịch⟧ (Nouvel An lunaire) / ⟦30/4 và 1/5⟧ (30 avril et 1er mai) ; projets de Trang et Min-ho : ⟦đi thăm và chúc Tết họ hàng, bạn bè, không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam⟧ (rendre visite à la famille et aux amis ; ne pas rentrer en Corée et fêter le Tết au Vietnam) / ⟦ở nhà xem các bộ phim truyền hình chưa xem, dành thời gian bay đi du lịch Nha Trang⟧ (regarder chez soi les séries pas encore vues ; prendre l'avion pour Nha Trang) ; à savoir et à faire : ⟦phần lớn các cửa hàng đều đóng cửa, mua các đồ cần thiết trước⟧ (la plupart des magasins ferment, acheter l'essentiel à l'avance) / ⟦có nhiều người đi du lịch, đặt vé máy bay và đặt phòng khách sạn trước⟧ (beaucoup de gens voyagent, réserver avion et hôtel à l'avance) ; l'aide proposée : ⟦mang bánh chưng và mấy món ăn Tết khác đến⟧ (apporter du bánh chưng et d'autres plats du Tết) / ⟦nhờ bạn đang làm ở công ti du lịch tìm thông tin⟧ (demander des infos à une amie qui travaille dans une agence de voyages).
+Nouveaux mots : ⟦miếng⟧ morceau, tranche
+=de
+Schlüsselausdruck: ⟦chớ⟧
+⟦chớ + Verb⟧ wird verwendet, um jemandem von etwas abzuraten: „~ nicht!“
+❶ ⟦Chớ thức khuya như vậy, không tốt cho sức khoẻ của em đâu.⟧ — Bleib nicht so lange auf, das ist nicht gut für deine Gesundheit.
+❷ Ⓐ ⟦Mẹ ơi, con đói quá! Con ăn miếng bánh chưng này, được không?⟧ — Mama, ich habe solchen Hunger! Darf ich ein Stück Bánh chưng essen? Ⓑ ⟦Sắp đến giờ ăn trưa rồi. Con chớ ăn bây giờ, phải đợi cả nhà cùng ăn trưa chứ!⟧ — Gleich gibt es Mittagessen. Iss jetzt nichts, du musst warten, bis die ganze Familie zusammen isst!
+Ausdrücke für Feiertagspläne: ⟦nghỉ ở nhà⟧ zu Hause ausruhen | ⟦đi chúc Tết⟧ Neujahrsbesuche machen | ⟦về thăm quê⟧ in die Heimat fahren | ⟦xem các bộ phim truyền hình chưa xem⟧ noch nicht gesehene Serien schauen | ⟦đi du lịch trong nước /đi du lịch nước ngoài⟧ im Inland / ins Ausland reisen
+Übung 1 — passende Teile verbinden, dann wie im Muster sprechen: ① ⟦mắng nó⟧ (ihn ausschimpfen) → Ⓒ ⟦Nó không có lỗi gì⟧ (er hat nichts falsch gemacht) | ② ⟦đá bóng ở đây⟧ (hier Fußball spielen) → Ⓐ ⟦Nguy hiểm lắm⟧ (sehr gefährlich) | ③ ⟦ăn thêm hoa quả nữa⟧ (noch mehr Obst essen) → Ⓑ ⟦Dễ đau bụng đấy⟧ (man bekommt leicht Bauchweh)
+Muster (①–Ⓒ): Ⓐ ⟦Em chớ mắng nó nhé.⟧ — Schimpf ihn nicht aus. Ⓑ ⟦Tại sao ạ?⟧ — Warum nicht? Ⓐ ⟦Nó không có lỗi gì.⟧ — Er hat nichts falsch gemacht.
+Dialog: Min-ho spricht mit Trang über seine Tết-Pläne.
+Min-ho: ⟦Sắp Tết âm lịch rồi đấy. Em có kế hoạch gì đặc biệt trong kì nghỉ này không?⟧ — Bald ist Mondneujahr. Hast du für die Feiertage besondere Pläne?
+Trang: ⟦Em định sẽ đi thăm và chúc Tết họ hàng, bạn bè. Còn anh?⟧ — Ich will Verwandte und Freunde besuchen und ihnen ein frohes neues Jahr wünschen. Und du?
+Min-ho: ⟦Năm nay anh định không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam.⟧ — Dieses Jahr fliege ich nicht nach Korea, sondern feiere Tết in Vietnam.
+Trang: ⟦À, thế à? Nhưng khi đó, phần lớn các cửa hàng đều đóng cửa. Vì thế anh chớ quên mua các đồ cần thiết trước nhé.⟧ — Ach so? Aber dann haben die meisten Geschäfte geschlossen. Vergiss also nicht, das Nötige vorher einzukaufen.
+Min-ho: ⟦Vậy à? Cảm ơn em đã cho anh biết.⟧ — Wirklich? Danke für den Hinweis.
+Trang: ⟦Em sẽ mang bánh chưng và mấy món ăn Tết khác đến cho anh nhé.⟧ — Ich bringe dir Bánh chưng und ein paar andere Tết-Gerichte vorbei.
+Min-ho: ⟦Thật à? Nhờ Trang mà anh sẽ có thể nghỉ thoải mái trong kì nghỉ này rồi.⟧ — Echt? Dank dir kann ich die Feiertage entspannt genießen.
+Satzmusterübung — Feiertag: ⟦Tết âm lịch⟧ (Mondneujahr) / ⟦30/4 và 1/5⟧ (30. April und 1. Mai); Pläne von Trang und Min-ho: ⟦đi thăm và chúc Tết họ hàng, bạn bè, không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam⟧ (Verwandte und Freunde besuchen; nicht nach Korea, sondern Tết in Vietnam feiern) / ⟦ở nhà xem các bộ phim truyền hình chưa xem, dành thời gian bay đi du lịch Nha Trang⟧ (zu Hause ungesehene Serien schauen; nach Nha Trang fliegen); was man wissen und tun muss: ⟦phần lớn các cửa hàng đều đóng cửa, mua các đồ cần thiết trước⟧ (die meisten Läden schließen, Nötiges vorher kaufen) / ⟦có nhiều người đi du lịch, đặt vé máy bay và đặt phòng khách sạn trước⟧ (viele verreisen, Flug und Hotel früh buchen); wobei sie hilft: ⟦mang bánh chưng và mấy món ăn Tết khác đến⟧ (Bánh chưng und andere Tết-Gerichte bringen) / ⟦nhờ bạn đang làm ở công ti du lịch tìm thông tin⟧ (eine Freundin im Reisebüro nach Infos fragen).
+Neue Wörter: ⟦miếng⟧ Stück, Scheibe
+=hu
+Kulcskifejezés: ⟦chớ⟧
+A ⟦chớ + ige⟧ akkor használatos, amikor valakinek azt tanácsoljuk, hogy ne tegyen valamit: „ne ~!”
+❶ ⟦Chớ thức khuya như vậy, không tốt cho sức khoẻ của em đâu.⟧ — Ne virrassz ilyen sokáig, nem tesz jót az egészségednek.
+❷ Ⓐ ⟦Mẹ ơi, con đói quá! Con ăn miếng bánh chưng này, được không?⟧ — Anya, nagyon éhes vagyok! Ehetek egy szelet bánh chưng-ot? Ⓑ ⟦Sắp đến giờ ăn trưa rồi. Con chớ ăn bây giờ, phải đợi cả nhà cùng ăn trưa chứ!⟧ — Mindjárt ebéd. Most ne egyél, meg kell várnod, hogy az egész család együtt ebédeljen!
+Az ünnepi szabadság terveivel kapcsolatos kifejezések: ⟦nghỉ ở nhà⟧ otthon pihenni | ⟦đi chúc Tết⟧ újévi jókívánságokat vinni | ⟦về thăm quê⟧ hazalátogatni szülőföldre | ⟦xem các bộ phim truyền hình chưa xem⟧ még nem látott sorozatokat nézni | ⟦đi du lịch trong nước /đi du lịch nước ngoài⟧ belföldön / külföldön utazni
+1. gyakorlat — kösse össze a megfelelő részeket, majd beszélgessen a minta szerint: ① ⟦mắng nó⟧ (leszidni őt) → Ⓒ ⟦Nó không có lỗi gì⟧ (semmiről sem tehet) | ② ⟦đá bóng ở đây⟧ (itt focizni) → Ⓐ ⟦Nguy hiểm lắm⟧ (nagyon veszélyes) | ③ ⟦ăn thêm hoa quả nữa⟧ (még több gyümölcsöt enni) → Ⓑ ⟦Dễ đau bụng đấy⟧ (könnyen megfájdul a hasad)
+Minta (①–Ⓒ): Ⓐ ⟦Em chớ mắng nó nhé.⟧ — Ne szidd le. Ⓑ ⟦Tại sao ạ?⟧ — Miért? Ⓐ ⟦Nó không có lỗi gì.⟧ — Semmiről sem tehet.
+Párbeszéd: Min-ho Tranggal a Tết-tervekről beszélget.
+Min-ho: ⟦Sắp Tết âm lịch rồi đấy. Em có kế hoạch gì đặc biệt trong kì nghỉ này không?⟧ — Közeleg a holdújév. Van valami különleges terved az ünnepekre?
+Trang: ⟦Em định sẽ đi thăm và chúc Tết họ hàng, bạn bè. Còn anh?⟧ — Meglátogatom a rokonokat és barátokat, és boldog újévet kívánok nekik. És te?
+Min-ho: ⟦Năm nay anh định không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam.⟧ — Idén nem megyek haza Koreába, hanem Vietnamban ünneplem a Tết-et.
+Trang: ⟦À, thế à? Nhưng khi đó, phần lớn các cửa hàng đều đóng cửa. Vì thế anh chớ quên mua các đồ cần thiết trước nhé.⟧ — Á, tényleg? De akkor a legtöbb bolt zárva van. Ezért ne felejtsd el előre megvenni, ami kell.
+Min-ho: ⟦Vậy à? Cảm ơn em đã cho anh biết.⟧ — Tényleg? Köszönöm, hogy szóltál.
+Trang: ⟦Em sẽ mang bánh chưng và mấy món ăn Tết khác đến cho anh nhé.⟧ — Viszek neked bánh chưng-ot és néhány más újévi ételt.
+Min-ho: ⟦Thật à? Nhờ Trang mà anh sẽ có thể nghỉ thoải mái trong kì nghỉ này rồi.⟧ — Tényleg? Neked köszönhetően kényelmesen pihenhetek az ünnepek alatt.
+Mintagyakorlat — ünnep: ⟦Tết âm lịch⟧ (holdújév) / ⟦30/4 và 1/5⟧ (április 30. és május 1.); Trang és Min-ho tervei: ⟦đi thăm và chúc Tết họ hàng, bạn bè, không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam⟧ (rokonok, barátok meglátogatása; nem hazautazni Koreába, hanem Vietnamban ünnepelni) / ⟦ở nhà xem các bộ phim truyền hình chưa xem, dành thời gian bay đi du lịch Nha Trang⟧ (otthon meg nem nézett sorozatokat nézni; elrepülni Nha Trangba); tudnivalók és teendők: ⟦phần lớn các cửa hàng đều đóng cửa, mua các đồ cần thiết trước⟧ (a legtöbb bolt zárva, előre bevásárolni) / ⟦có nhiều người đi du lịch, đặt vé máy bay và đặt phòng khách sạn trước⟧ (sokan utaznak, előre repülőjegyet és szállodát foglalni); miben segít: ⟦mang bánh chưng và mấy món ăn Tết khác đến⟧ (bánh chưng-ot és más újévi ételt visz) / ⟦nhờ bạn đang làm ở công ti du lịch tìm thông tin⟧ (egy utazási irodában dolgozó barátot kér meg, hogy nézzen utána).
+Új szavak: ⟦miếng⟧ darab, szelet
+=id
+Ungkapan kunci: ⟦chớ⟧
+⟦chớ + verba⟧ dipakai untuk menasihati seseorang agar tidak melakukan sesuatu: "jangan ~".
+❶ ⟦Chớ thức khuya như vậy, không tốt cho sức khoẻ của em đâu.⟧ — Jangan begadang seperti itu, tidak baik untuk kesehatanmu.
+❷ Ⓐ ⟦Mẹ ơi, con đói quá! Con ăn miếng bánh chưng này, được không?⟧ — Bu, aku lapar sekali! Boleh aku makan sepotong bánh chưng ini? Ⓑ ⟦Sắp đến giờ ăn trưa rồi. Con chớ ăn bây giờ, phải đợi cả nhà cùng ăn trưa chứ!⟧ — Sebentar lagi waktunya makan siang. Jangan makan sekarang, tunggu seluruh keluarga makan siang bersama!
+Ungkapan tentang rencana libur hari raya: ⟦nghỉ ở nhà⟧ beristirahat di rumah | ⟦đi chúc Tết⟧ berkunjung mengucapkan selamat Tết | ⟦về thăm quê⟧ pulang kampung | ⟦xem các bộ phim truyền hình chưa xem⟧ menonton serial TV yang belum ditonton | ⟦đi du lịch trong nước /đi du lịch nước ngoài⟧ wisata dalam negeri / luar negeri
+Latihan pola 1 — hubungkan bagian yang cocok, lalu bercakaplah seperti contoh: ① ⟦mắng nó⟧ (memarahinya) → Ⓒ ⟦Nó không có lỗi gì⟧ (dia tidak bersalah apa-apa) | ② ⟦đá bóng ở đây⟧ (main bola di sini) → Ⓐ ⟦Nguy hiểm lắm⟧ (berbahaya sekali) | ③ ⟦ăn thêm hoa quả nữa⟧ (makan buah lagi) → Ⓑ ⟦Dễ đau bụng đấy⟧ (gampang sakit perut)
+Contoh (①–Ⓒ): Ⓐ ⟦Em chớ mắng nó nhé.⟧ — Jangan memarahinya, ya. Ⓑ ⟦Tại sao ạ?⟧ — Kenapa? Ⓐ ⟦Nó không có lỗi gì.⟧ — Dia tidak bersalah apa-apa.
+Percakapan: Min-ho berbicara dengan Trang tentang rencana Tết.
+Min-ho: ⟦Sắp Tết âm lịch rồi đấy. Em có kế hoạch gì đặc biệt trong kì nghỉ này không?⟧ — Sebentar lagi Tahun Baru Imlek. Kamu punya rencana khusus untuk liburan ini?
+Trang: ⟦Em định sẽ đi thăm và chúc Tết họ hàng, bạn bè. Còn anh?⟧ — Aku berencana mengunjungi kerabat dan teman untuk mengucapkan selamat Tết. Kalau Kakak?
+Min-ho: ⟦Năm nay anh định không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam.⟧ — Tahun ini aku tidak pulang ke Korea, tetapi merayakan Tết di Vietnam.
+Trang: ⟦À, thế à? Nhưng khi đó, phần lớn các cửa hàng đều đóng cửa. Vì thế anh chớ quên mua các đồ cần thiết trước nhé.⟧ — Oh, begitu? Tapi saat itu sebagian besar toko tutup. Jadi jangan lupa membeli barang-barang yang diperlukan sebelumnya, ya.
+Min-ho: ⟦Vậy à? Cảm ơn em đã cho anh biết.⟧ — Oh ya? Terima kasih sudah memberi tahu.
+Trang: ⟦Em sẽ mang bánh chưng và mấy món ăn Tết khác đến cho anh nhé.⟧ — Nanti aku bawakan bánh chưng dan beberapa hidangan Tết lainnya untuk Kakak.
+Min-ho: ⟦Thật à? Nhờ Trang mà anh sẽ có thể nghỉ thoải mái trong kì nghỉ này rồi.⟧ — Sungguh? Berkat Trang, aku bisa beristirahat dengan nyaman selama liburan ini.
+Latihan pola — hari libur: ⟦Tết âm lịch⟧ (Tahun Baru Imlek) / ⟦30/4 và 1/5⟧ (30 April dan 1 Mei); rencana Trang dan Min-ho: ⟦đi thăm và chúc Tết họ hàng, bạn bè, không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam⟧ (berkunjung ke kerabat dan teman; tidak pulang ke Korea tetapi merayakan Tết di Vietnam) / ⟦ở nhà xem các bộ phim truyền hình chưa xem, dành thời gian bay đi du lịch Nha Trang⟧ (menonton serial di rumah; menyempatkan terbang ke Nha Trang); yang perlu diketahui dan dilakukan: ⟦phần lớn các cửa hàng đều đóng cửa, mua các đồ cần thiết trước⟧ (kebanyakan toko tutup, membeli kebutuhan lebih dulu) / ⟦có nhiều người đi du lịch, đặt vé máy bay và đặt phòng khách sạn trước⟧ (banyak orang bepergian, pesan tiket pesawat dan hotel lebih dulu); bantuan yang diberikan: ⟦mang bánh chưng và mấy món ăn Tết khác đến⟧ (membawakan bánh chưng dan hidangan Tết lain) / ⟦nhờ bạn đang làm ở công ti du lịch tìm thông tin⟧ (minta teman yang bekerja di agen perjalanan mencarikan informasi).
+Kosakata baru: ⟦miếng⟧ potong, iris
+=ja
+核心表現：⟦chớ⟧
+⟦chớ + 動詞⟧ はある行動をしないよう忠告するときに使う表現で、「～するな」という意味を表します。
+❶ ⟦Chớ thức khuya như vậy, không tốt cho sức khoẻ của em đâu.⟧ — そんなに夜更かしするな。健康に良くないよ。
+❷ Ⓐ ⟦Mẹ ơi, con đói quá! Con ăn miếng bánh chưng này, được không?⟧ — お母さん、すごくお腹すいた！このバインチュン、一切れ食べてもいい？ Ⓑ ⟦Sắp đến giờ ăn trưa rồi. Con chớ ăn bây giờ, phải đợi cả nhà cùng ăn trưa chứ!⟧ — もうすぐお昼よ。今は食べないで、家族みんなで一緒にお昼を食べるまで待たなくちゃ！
+祝日連休の計画を表す表現：⟦nghỉ ở nhà⟧ 家で休む | ⟦đi chúc Tết⟧ 年始のあいさつに行く | ⟦về thăm quê⟧ 帰省する | ⟦xem các bộ phim truyền hình chưa xem⟧ まだ見ていないドラマを見る | ⟦đi du lịch trong nước /đi du lịch nước ngoài⟧ 国内旅行 / 海外旅行に行く
+文型練習1 — 適切な内容を結び、例のように会話してみましょう：① ⟦mắng nó⟧（その子を叱る）→ Ⓒ ⟦Nó không có lỗi gì⟧（あの子は何も悪くない）| ② ⟦đá bóng ở đây⟧（ここでサッカーをする）→ Ⓐ ⟦Nguy hiểm lắm⟧（とても危ない）| ③ ⟦ăn thêm hoa quả nữa⟧（果物をもっと食べる）→ Ⓑ ⟦Dễ đau bụng đấy⟧（お腹を壊しやすい）
+例（①–Ⓒ）：Ⓐ ⟦Em chớ mắng nó nhé.⟧ — あの子を叱らないでね。 Ⓑ ⟦Tại sao ạ?⟧ — どうしてですか。 Ⓐ ⟦Nó không có lỗi gì.⟧ — あの子は何も悪くないから。
+会話：ミンホがテトの計画についてチャンと話しています。
+ミンホ：⟦Sắp Tết âm lịch rồi đấy. Em có kế hoạch gì đặc biệt trong kì nghỉ này không?⟧ — もうすぐ旧正月だね。この休みに何か特別な計画はある？
+チャン：⟦Em định sẽ đi thăm và chúc Tết họ hàng, bạn bè. Còn anh?⟧ — 親戚や友達を訪ねて新年のあいさつをするつもりです。ミンホさんは？
+ミンホ：⟦Năm nay anh định không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam.⟧ — 今年は韓国に帰らずに、ベトナムに残ってテトを過ごすつもりなんだ。
+チャン：⟦À, thế à? Nhưng khi đó, phần lớn các cửa hàng đều đóng cửa. Vì thế anh chớ quên mua các đồ cần thiết trước nhé.⟧ — あ、そうなんですか。でもその時期はほとんどのお店が閉まります。だから、必要なものを前もって買うのを忘れないでくださいね。
+ミンホ：⟦Vậy à? Cảm ơn em đã cho anh biết.⟧ — そうなの？教えてくれてありがとう。
+チャン：⟦Em sẽ mang bánh chưng và mấy món ăn Tết khác đến cho anh nhé.⟧ — バインチュンとほかのテト料理をいくつか持って行きますね。
+ミンホ：⟦Thật à? Nhờ Trang mà anh sẽ có thể nghỉ thoải mái trong kì nghỉ này rồi.⟧ — 本当？チャンのおかげで、この休みはゆっくり過ごせそうだよ。
+文型練習 — 祝日：⟦Tết âm lịch⟧（旧正月）/ ⟦30/4 và 1/5⟧（4月30日と5月1日）；チャンとミンホの計画：⟦đi thăm và chúc Tết họ hàng, bạn bè, không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam⟧（親戚や友達を訪ねてあいさつ；韓国に帰らずベトナムでテトを過ごす）/ ⟦ở nhà xem các bộ phim truyền hình chưa xem, dành thời gian bay đi du lịch Nha Trang⟧（家でまだ見ていないドラマを見る；時間を作ってニャチャンへ飛ぶ）；知っておくべきこととすべきこと：⟦phần lớn các cửa hàng đều đóng cửa, mua các đồ cần thiết trước⟧（ほとんどの店が閉まる、必要なものを前もって買う）/ ⟦có nhiều người đi du lịch, đặt vé máy bay và đặt phòng khách sạn trước⟧（旅行者が多い、航空券とホテルを前もって予約）；手伝ってくれること：⟦mang bánh chưng và mấy món ăn Tết khác đến⟧（バインチュンやテト料理を持ってくる）/ ⟦nhờ bạn đang làm ở công ti du lịch tìm thông tin⟧（旅行会社で働く友達に情報を探してもらう）。
+新出単語：⟦miếng⟧ 一切れ、かけら
+=pl
+Kluczowe wyrażenie: ⟦chớ⟧
+⟦chớ + czasownik⟧ używa się, gdy radzimy komuś, by czegoś nie robił: „nie ~!”
+❶ ⟦Chớ thức khuya như vậy, không tốt cho sức khoẻ của em đâu.⟧ — Nie siedź tak do późna, to szkodzi twojemu zdrowiu.
+❷ Ⓐ ⟦Mẹ ơi, con đói quá! Con ăn miếng bánh chưng này, được không?⟧ — Mamo, jestem strasznie głodny! Mogę zjeść kawałek bánh chưng? Ⓑ ⟦Sắp đến giờ ăn trưa rồi. Con chớ ăn bây giờ, phải đợi cả nhà cùng ăn trưa chứ!⟧ — Zaraz obiad. Nie jedz teraz, musisz poczekać, aż cała rodzina usiądzie do obiadu!
+Wyrażenia dotyczące planów na wolne dni świąteczne: ⟦nghỉ ở nhà⟧ odpoczywać w domu | ⟦đi chúc Tết⟧ chodzić z życzeniami noworocznymi | ⟦về thăm quê⟧ odwiedzić rodzinne strony | ⟦xem các bộ phim truyền hình chưa xem⟧ oglądać seriale, których jeszcze nie widziałem | ⟦đi du lịch trong nước /đi du lịch nước ngoài⟧ podróżować po kraju / za granicę
+Ćwiczenie 1 — połącz pasujące elementy i rozmawiaj jak we wzorze: ① ⟦mắng nó⟧ (skrzyczeć go) → Ⓒ ⟦Nó không có lỗi gì⟧ (on nic nie zawinił) | ② ⟦đá bóng ở đây⟧ (grać tu w piłkę) → Ⓐ ⟦Nguy hiểm lắm⟧ (to bardzo niebezpieczne) | ③ ⟦ăn thêm hoa quả nữa⟧ (jeść jeszcze więcej owoców) → Ⓑ ⟦Dễ đau bụng đấy⟧ (łatwo rozboli cię brzuch)
+Wzór (①–Ⓒ): Ⓐ ⟦Em chớ mắng nó nhé.⟧ — Nie krzycz na niego. Ⓑ ⟦Tại sao ạ?⟧ — Dlaczego? Ⓐ ⟦Nó không có lỗi gì.⟧ — On nic nie zawinił.
+Dialog: Min-ho rozmawia z Trang o planach na Tết.
+Min-ho: ⟦Sắp Tết âm lịch rồi đấy. Em có kế hoạch gì đặc biệt trong kì nghỉ này không?⟧ — Zbliża się Nowy Rok księżycowy. Masz jakieś szczególne plany na te święta?
+Trang: ⟦Em định sẽ đi thăm và chúc Tết họ hàng, bạn bè. Còn anh?⟧ — Zamierzam odwiedzić krewnych i przyjaciół i złożyć im życzenia. A ty?
+Min-ho: ⟦Năm nay anh định không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam.⟧ — W tym roku nie jadę do Korei, zostaję na Tết w Wietnamie.
+Trang: ⟦À, thế à? Nhưng khi đó, phần lớn các cửa hàng đều đóng cửa. Vì thế anh chớ quên mua các đồ cần thiết trước nhé.⟧ — Ach tak? Ale wtedy większość sklepów jest zamknięta. Nie zapomnij więc kupić wcześniej tego, czego potrzebujesz.
+Min-ho: ⟦Vậy à? Cảm ơn em đã cho anh biết.⟧ — Naprawdę? Dzięki, że mi powiedziałaś.
+Trang: ⟦Em sẽ mang bánh chưng và mấy món ăn Tết khác đến cho anh nhé.⟧ — Przyniosę ci bánh chưng i kilka innych noworocznych potraw.
+Min-ho: ⟦Thật à? Nhờ Trang mà anh sẽ có thể nghỉ thoải mái trong kì nghỉ này rồi.⟧ — Naprawdę? Dzięki tobie będę mógł spokojnie odpocząć w te święta.
+Ćwiczenie wzorców — święto: ⟦Tết âm lịch⟧ (Nowy Rok księżycowy) / ⟦30/4 và 1/5⟧ (30 kwietnia i 1 maja); plany Trang i Min-ho: ⟦đi thăm và chúc Tết họ hàng, bạn bè, không về Hàn Quốc mà ở lại ăn Tết ở Việt Nam⟧ (odwiedzić krewnych i przyjaciół; nie jechać do Korei, tylko świętować w Wietnamie) / ⟦ở nhà xem các bộ phim truyền hình chưa xem, dành thời gian bay đi du lịch Nha Trang⟧ (oglądać w domu nieobejrzane seriale; polecieć do Nha Trang); co trzeba wiedzieć i zrobić: ⟦phần lớn các cửa hàng đều đóng cửa, mua các đồ cần thiết trước⟧ (większość sklepów jest zamknięta, kupić potrzebne rzeczy wcześniej) / ⟦có nhiều người đi du lịch, đặt vé máy bay và đặt phòng khách sạn trước⟧ (wielu ludzi podróżuje, zarezerwować wcześniej bilety i hotel); w czym pomoże: ⟦mang bánh chưng và mấy món ăn Tết khác đến⟧ (przyniesie bánh chưng i inne noworoczne potrawy) / ⟦nhờ bạn đang làm ở công ti du lịch tìm thông tin⟧ (poprosi znajomą z biura podróży o informacje).
+Nowe słówka: ⟦miếng⟧ kawałek, plaster

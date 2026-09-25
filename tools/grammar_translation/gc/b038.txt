@@ -1,0 +1,181 @@
+@@ pdf-grammar-051ea76dfc566a7a#0
+=cs
+Klíčový výraz: ⟦hơn so với⟧
+⟦so⟧ je sloveso „srovnávat“; ⟦A + přídavné jméno + hơn so với + B⟧ znamená „A je ve srovnání s B ~ější“.
+❶ ⟦Thời tiết hôm nay đẹp hơn so với hôm qua.⟧ — Dnes je ve srovnání se včerejškem hezčí počasí.
+❷ Ⓐ ⟦Vì sao em muốn thuê nhà ở khu vực này?⟧ — Proč si chceš pronajmout byt právě v téhle oblasti? Ⓑ ⟦Bởi vì giá thuê nhà ở đây rẻ hơn so với nơi khác ạ.⟧ — Protože nájem je tu levnější než jinde.
+Výrazy k různým důvodům výměny: ⟦không hợp⟧ nesedí, nehodí se | ⟦tay áo ngắn⟧ krátké rukávy | ⟦màu hơi đậm⟧ barva je trochu tmavá | ⟦màu hơi sáng⟧ barva je trochu světlá | ⟦nhỏ/chật, to/rộng⟧ malý/těsný, velký/volný
+Procvičování 2 — veďte rozhovor s daným výrazem podle vzoru.
+Vzor (⟦đơn giản⟧ jednoduchý): Ⓐ ⟦Ngữ pháp trong tiếng Việt và tiếng Hàn khác nhau thế nào?⟧ — Jak se liší vietnamská a korejská gramatika? Ⓑ ⟦Ngữ pháp trong tiếng Việt đơn giản hơn so với tiếng Hàn.⟧ — Vietnamská gramatika je ve srovnání s korejskou jednodušší.
+❶ (⟦hấp dẫn⟧ poutavý) Ⓐ ⟦Bản báo cáo của anh Tuấn và của chị Hiền khác nhau thế nào?⟧ — Jak se liší zpráva Tuấna a zpráva Hiền? Ⓑ ⟦Bản báo cáo của chị Hiền hấp dẫn hơn so với của anh Tuấn.⟧ — Zpráva Hiền je ve srovnání s Tuấnovou poutavější.
+❷ (⟦thuận tiện⟧ pohodlný, výhodný) Ⓐ ⟦Điều kiện làm việc ở công ti mới và công ti cũ khác nhau thế nào?⟧ — Jak se liší pracovní podmínky v nové a staré firmě? Ⓑ ⟦Điều kiện làm việc ở công ti mới thuận tiện hơn so với công ti cũ.⟧ — Pracovní podmínky v nové firmě jsou ve srovnání se starou výhodnější.
+Rozhovor: Min-ho mluví s prodavačkou, protože chce vyměnit nově koupenou čepici.
+Min-ho: ⟦Chào chị. Tôi đã mua mũ này ở đây nhưng muốn đổi.⟧ — Dobrý den. Koupil jsem tady tuhle čepici, ale chtěl bych ji vyměnit.
+Prodavačka: ⟦Sao anh muốn đổi? Có vấn đề gì à?⟧ — Proč ji chcete vyměnit? Je s ní nějaký problém?
+Min-ho: ⟦Không phải thế mà là vì mũ này hơi to với tôi.⟧ — To ne, jen je mi trochu velká.
+Prodavačka: ⟦Nhưng đây là cỡ nhỏ nhất đấy. Hay là anh đổi lấy kiểu khác nhé. Cái này thế nào?⟧ — Ale tohle je nejmenší velikost. Co kdybyste si vzal jiný model? Co tahle?
+Min-ho: ⟦Cái này cũng đẹp và trông nhỏ hơn so với cái cũ. Tôi đổi lấy cái này nhé.⟧ — Tahle je taky hezká a vypadá menší než ta původní. Vyměním ji za tuhle.
+Procvičování — co vyměnit: ⟦mũ⟧ (čepice) / ⟦áo khoác⟧ (bunda); proč: ⟦hơi to với tôi⟧ (je mi trochu velká) / ⟦tay áo hơi ngắn⟧ (rukávy jsou trochu krátké); proč nejde vyměnit: ⟦đây là cỡ nhỏ nhất đấy⟧ (tohle je nejmenší velikost) / ⟦kiểu này tay áo đều ngắn⟧ (u tohoto modelu mají všechny krátké rukávy); jak vypadá nová: ⟦nhỏ⟧ (menší) / ⟦tay áo dài⟧ (s delšími rukávy).
+Nová slovíčka: ⟦đậm⟧ tmavý, sytý | ⟦áo khoác⟧ bunda, kabát | ⟦kiểu⟧ styl, model
+=zh_cn
+核心表达：⟦hơn so với⟧
+⟦so⟧ 是动词“比较”；⟦A + 形容词 + hơn so với + B⟧ 意为“A比起B更……”。
+❶ ⟦Thời tiết hôm nay đẹp hơn so với hôm qua.⟧ —— 今天的天气比昨天好。
+❷ Ⓐ ⟦Vì sao em muốn thuê nhà ở khu vực này?⟧ —— 你为什么想在这个地区租房？ Ⓑ ⟦Bởi vì giá thuê nhà ở đây rẻ hơn so với nơi khác ạ.⟧ —— 因为这里的房租比别处便宜。
+想要换货的各种理由的表达：⟦không hợp⟧ 不合适 | ⟦tay áo ngắn⟧ 袖子短 | ⟦màu hơi đậm⟧ 颜色有点深 | ⟦màu hơi sáng⟧ 颜色有点浅 | ⟦nhỏ/chật, to/rộng⟧ 小/紧，大/宽
+句型练习2 —— 用所给表达仿照范例对话。
+范例（⟦đơn giản⟧ 简单）：Ⓐ ⟦Ngữ pháp trong tiếng Việt và tiếng Hàn khác nhau thế nào?⟧ —— 越南语和韩语的语法有什么不同？ Ⓑ ⟦Ngữ pháp trong tiếng Việt đơn giản hơn so với tiếng Hàn.⟧ —— 越南语语法比韩语简单。
+❶（⟦hấp dẫn⟧ 吸引人）Ⓐ ⟦Bản báo cáo của anh Tuấn và của chị Hiền khác nhau thế nào?⟧ —— 俊哥和贤姐的报告有什么不同？ Ⓑ ⟦Bản báo cáo của chị Hiền hấp dẫn hơn so với của anh Tuấn.⟧ —— 贤姐的报告比俊哥的更吸引人。
+❷（⟦thuận tiện⟧ 方便）Ⓐ ⟦Điều kiện làm việc ở công ti mới và công ti cũ khác nhau thế nào?⟧ —— 新公司和旧公司的工作条件有什么不同？ Ⓑ ⟦Điều kiện làm việc ở công ti mới thuận tiện hơn so với công ti cũ.⟧ —— 新公司的工作条件比旧公司更便利。
+对话：敏浩为了换新买的帽子，正在和店员交谈。
+敏浩：⟦Chào chị. Tôi đã mua mũ này ở đây nhưng muốn đổi.⟧ —— 你好。我在这里买了这顶帽子，但想换一下。
+店员：⟦Sao anh muốn đổi? Có vấn đề gì à?⟧ —— 为什么想换？有什么问题吗？
+敏浩：⟦Không phải thế mà là vì mũ này hơi to với tôi.⟧ —— 不是，只是这顶帽子我戴着有点大。
+店员：⟦Nhưng đây là cỡ nhỏ nhất đấy. Hay là anh đổi lấy kiểu khác nhé. Cái này thế nào?⟧ —— 可这已经是最小号了。要不您换个款式吧。这顶怎么样？
+敏浩：⟦Cái này cũng đẹp và trông nhỏ hơn so với cái cũ. Tôi đổi lấy cái này nhé.⟧ —— 这顶也好看，而且看起来比原来那顶小。我就换这顶吧。
+句型练习 —— 换什么：⟦mũ⟧（帽子）/ ⟦áo khoác⟧（外套）；为什么换：⟦hơi to với tôi⟧（我戴/穿有点大）/ ⟦tay áo hơi ngắn⟧（袖子有点短）；为什么换不了：⟦đây là cỡ nhỏ nhất đấy⟧（这是最小号）/ ⟦kiểu này tay áo đều ngắn⟧（这个款式袖子都短）；看起来怎么样：⟦nhỏ⟧（小一些）/ ⟦tay áo dài⟧（袖子长）。
+新单词：⟦đậm⟧ 深、浓 | ⟦áo khoác⟧ 外套 | ⟦kiểu⟧ 款式、样式
+=zh
+核心表達：⟦hơn so với⟧
+⟦so⟧ 是動詞「比較」；⟦A + 形容詞 + hơn so với + B⟧ 意為「A比起B更……」。
+❶ ⟦Thời tiết hôm nay đẹp hơn so với hôm qua.⟧ —— 今天的天氣比昨天好。
+❷ Ⓐ ⟦Vì sao em muốn thuê nhà ở khu vực này?⟧ —— 妳為什麼想在這一區租房子？ Ⓑ ⟦Bởi vì giá thuê nhà ở đây rẻ hơn so với nơi khác ạ.⟧ —— 因為這裡的房租比別的地方便宜。
+想要換貨的各種理由的表達：⟦không hợp⟧ 不合適 | ⟦tay áo ngắn⟧ 袖子短 | ⟦màu hơi đậm⟧ 顏色有點深 | ⟦màu hơi sáng⟧ 顏色有點淺 | ⟦nhỏ/chật, to/rộng⟧ 小/緊，大/寬
+句型練習2 —— 用所給表達仿照範例對話。
+範例（⟦đơn giản⟧ 簡單）：Ⓐ ⟦Ngữ pháp trong tiếng Việt và tiếng Hàn khác nhau thế nào?⟧ —— 越南語和韓語的文法有什麼不同？ Ⓑ ⟦Ngữ pháp trong tiếng Việt đơn giản hơn so với tiếng Hàn.⟧ —— 越南語文法比韓語簡單。
+❶（⟦hấp dẫn⟧ 吸引人）Ⓐ ⟦Bản báo cáo của anh Tuấn và của chị Hiền khác nhau thế nào?⟧ —— 俊哥和賢姊的報告有什麼不同？ Ⓑ ⟦Bản báo cáo của chị Hiền hấp dẫn hơn so với của anh Tuấn.⟧ —— 賢姊的報告比俊哥的更吸引人。
+❷（⟦thuận tiện⟧ 方便）Ⓐ ⟦Điều kiện làm việc ở công ti mới và công ti cũ khác nhau thế nào?⟧ —— 新公司和舊公司的工作條件有什麼不同？ Ⓑ ⟦Điều kiện làm việc ở công ti mới thuận tiện hơn so với công ti cũ.⟧ —— 新公司的工作條件比舊公司更便利。
+對話：敏浩為了換新買的帽子，正在和店員交談。
+敏浩：⟦Chào chị. Tôi đã mua mũ này ở đây nhưng muốn đổi.⟧ —— 妳好。我在這裡買了這頂帽子，但想換一下。
+店員：⟦Sao anh muốn đổi? Có vấn đề gì à?⟧ —— 為什麼想換？有什麼問題嗎？
+敏浩：⟦Không phải thế mà là vì mũ này hơi to với tôi.⟧ —— 不是，只是這頂帽子我戴起來有點大。
+店員：⟦Nhưng đây là cỡ nhỏ nhất đấy. Hay là anh đổi lấy kiểu khác nhé. Cái này thế nào?⟧ —— 可是這已經是最小號了。要不您換個款式吧。這頂怎麼樣？
+敏浩：⟦Cái này cũng đẹp và trông nhỏ hơn so với cái cũ. Tôi đổi lấy cái này nhé.⟧ —— 這頂也好看，而且看起來比原來那頂小。我就換這頂吧。
+句型練習 —— 換什麼：⟦mũ⟧（帽子）/ ⟦áo khoác⟧（外套）；為什麼換：⟦hơi to với tôi⟧（我戴/穿有點大）/ ⟦tay áo hơi ngắn⟧（袖子有點短）；為什麼換不了：⟦đây là cỡ nhỏ nhất đấy⟧（這是最小號）/ ⟦kiểu này tay áo đều ngắn⟧（這個款式袖子都短）；看起來怎麼樣：⟦nhỏ⟧（小一些）/ ⟦tay áo dài⟧（袖子長）。
+新單字：⟦đậm⟧ 深、濃 | ⟦áo khoác⟧ 外套 | ⟦kiểu⟧ 款式、樣式
+=en
+Key expression: ⟦hơn so với⟧
+⟦so⟧ is a verb meaning "to compare"; ⟦A + adjective + hơn so với + B⟧ means "A is more ~ compared with B".
+❶ ⟦Thời tiết hôm nay đẹp hơn so với hôm qua.⟧ — The weather is nicer today compared with yesterday.
+❷ Ⓐ ⟦Vì sao em muốn thuê nhà ở khu vực này?⟧ — Why do you want to rent a place in this area? Ⓑ ⟦Bởi vì giá thuê nhà ở đây rẻ hơn so với nơi khác ạ.⟧ — Because the rent here is cheaper compared with other places.
+Expressions for different reasons to exchange something: ⟦không hợp⟧ doesn't suit | ⟦tay áo ngắn⟧ the sleeves are short | ⟦màu hơi đậm⟧ the colour is a bit dark | ⟦màu hơi sáng⟧ the colour is a bit light | ⟦nhỏ/chật, to/rộng⟧ small/tight, big/loose
+Pattern practice 2 — talk as in the model using the given word.
+Model (⟦đơn giản⟧ simple): Ⓐ ⟦Ngữ pháp trong tiếng Việt và tiếng Hàn khác nhau thế nào?⟧ — How is Vietnamese grammar different from Korean grammar? Ⓑ ⟦Ngữ pháp trong tiếng Việt đơn giản hơn so với tiếng Hàn.⟧ — Vietnamese grammar is simpler compared with Korean.
+❶ (⟦hấp dẫn⟧ engaging) Ⓐ ⟦Bản báo cáo của anh Tuấn và của chị Hiền khác nhau thế nào?⟧ — How are Tuấn's and Hiền's reports different? Ⓑ ⟦Bản báo cáo của chị Hiền hấp dẫn hơn so với của anh Tuấn.⟧ — Hiền's report is more engaging compared with Tuấn's.
+❷ (⟦thuận tiện⟧ convenient) Ⓐ ⟦Điều kiện làm việc ở công ti mới và công ti cũ khác nhau thế nào?⟧ — How are the working conditions at the new company different from the old one? Ⓑ ⟦Điều kiện làm việc ở công ti mới thuận tiện hơn so với công ti cũ.⟧ — The working conditions at the new company are more convenient compared with the old one.
+Dialogue: Min-ho is talking to a sales assistant about exchanging a hat he just bought.
+Min-ho: ⟦Chào chị. Tôi đã mua mũ này ở đây nhưng muốn đổi.⟧ — Hello. I bought this hat here, but I'd like to exchange it.
+Sales assistant: ⟦Sao anh muốn đổi? Có vấn đề gì à?⟧ — Why do you want to exchange it? Is there a problem?
+Min-ho: ⟦Không phải thế mà là vì mũ này hơi to với tôi.⟧ — Not really – it's just a bit big for me.
+Sales assistant: ⟦Nhưng đây là cỡ nhỏ nhất đấy. Hay là anh đổi lấy kiểu khác nhé. Cái này thế nào?⟧ — But this is the smallest size. How about a different style? What about this one?
+Min-ho: ⟦Cái này cũng đẹp và trông nhỏ hơn so với cái cũ. Tôi đổi lấy cái này nhé.⟧ — This one's nice too, and it looks smaller than the old one. I'll take this one instead.
+Pattern practice — what to exchange: ⟦mũ⟧ (hat) / ⟦áo khoác⟧ (jacket); why: ⟦hơi to với tôi⟧ (a bit big for me) / ⟦tay áo hơi ngắn⟧ (the sleeves are a bit short); why it can't be swapped: ⟦đây là cỡ nhỏ nhất đấy⟧ (this is the smallest size) / ⟦kiểu này tay áo đều ngắn⟧ (this style always has short sleeves); what the new one is like: ⟦nhỏ⟧ (smaller) / ⟦tay áo dài⟧ (longer sleeves).
+New words: ⟦đậm⟧ dark, deep (colour) | ⟦áo khoác⟧ jacket, coat | ⟦kiểu⟧ style
+=fr
+Expression clé : ⟦hơn so với⟧
+⟦so⟧ est un verbe signifiant « comparer » ; ⟦A + adjectif + hơn so với + B⟧ signifie « A est plus ~ par rapport à B ».
+❶ ⟦Thời tiết hôm nay đẹp hơn so với hôm qua.⟧ — Il fait plus beau aujourd'hui par rapport à hier.
+❷ Ⓐ ⟦Vì sao em muốn thuê nhà ở khu vực này?⟧ — Pourquoi veux-tu louer un logement dans ce quartier ? Ⓑ ⟦Bởi vì giá thuê nhà ở đây rẻ hơn so với nơi khác ạ.⟧ — Parce que les loyers ici sont moins chers qu'ailleurs.
+Expressions sur les différentes raisons d'un échange : ⟦không hợp⟧ ne va pas | ⟦tay áo ngắn⟧ manches courtes | ⟦màu hơi đậm⟧ couleur un peu foncée | ⟦màu hơi sáng⟧ couleur un peu claire | ⟦nhỏ/chật, to/rộng⟧ petit/serré, grand/large
+Exercice 2 — dialoguez comme dans le modèle avec le mot donné.
+Modèle (⟦đơn giản⟧ simple) : Ⓐ ⟦Ngữ pháp trong tiếng Việt và tiếng Hàn khác nhau thế nào?⟧ — En quoi la grammaire vietnamienne diffère-t-elle de la coréenne ? Ⓑ ⟦Ngữ pháp trong tiếng Việt đơn giản hơn so với tiếng Hàn.⟧ — La grammaire vietnamienne est plus simple que la coréenne.
+❶ (⟦hấp dẫn⟧ captivant) Ⓐ ⟦Bản báo cáo của anh Tuấn và của chị Hiền khác nhau thế nào?⟧ — En quoi les rapports de Tuấn et de Hiền diffèrent-ils ? Ⓑ ⟦Bản báo cáo của chị Hiền hấp dẫn hơn so với của anh Tuấn.⟧ — Le rapport de Hiền est plus captivant que celui de Tuấn.
+❷ (⟦thuận tiện⟧ commode) Ⓐ ⟦Điều kiện làm việc ở công ti mới và công ti cũ khác nhau thế nào?⟧ — En quoi les conditions de travail diffèrent-elles entre la nouvelle et l'ancienne entreprise ? Ⓑ ⟦Điều kiện làm việc ở công ti mới thuận tiện hơn so với công ti cũ.⟧ — Les conditions de travail dans la nouvelle entreprise sont plus commodes que dans l'ancienne.
+Dialogue : Min-ho parle avec une vendeuse pour échanger un chapeau qu'il vient d'acheter.
+Min-ho : ⟦Chào chị. Tôi đã mua mũ này ở đây nhưng muốn đổi.⟧ — Bonjour. J'ai acheté ce chapeau ici, mais j'aimerais l'échanger.
+Vendeuse : ⟦Sao anh muốn đổi? Có vấn đề gì à?⟧ — Pourquoi voulez-vous l'échanger ? Il y a un problème ?
+Min-ho : ⟦Không phải thế mà là vì mũ này hơi to với tôi.⟧ — Pas vraiment, il est juste un peu grand pour moi.
+Vendeuse : ⟦Nhưng đây là cỡ nhỏ nhất đấy. Hay là anh đổi lấy kiểu khác nhé. Cái này thế nào?⟧ — Mais c'est la plus petite taille. Et si vous preniez un autre modèle ? Que pensez-vous de celui-ci ?
+Min-ho : ⟦Cái này cũng đẹp và trông nhỏ hơn so với cái cũ. Tôi đổi lấy cái này nhé.⟧ — Celui-ci est joli aussi et paraît plus petit que l'ancien. Je le prends à la place.
+Exercices — quoi échanger : ⟦mũ⟧ (chapeau) / ⟦áo khoác⟧ (veste) ; pourquoi : ⟦hơi to với tôi⟧ (un peu grand pour moi) / ⟦tay áo hơi ngắn⟧ (manches un peu courtes) ; pourquoi l'échange est impossible : ⟦đây là cỡ nhỏ nhất đấy⟧ (c'est la plus petite taille) / ⟦kiểu này tay áo đều ngắn⟧ (ce modèle a toujours des manches courtes) ; à quoi ressemble le nouveau : ⟦nhỏ⟧ (plus petit) / ⟦tay áo dài⟧ (manches plus longues).
+Nouveaux mots : ⟦đậm⟧ foncé, intense | ⟦áo khoác⟧ veste, manteau | ⟦kiểu⟧ style, modèle
+=de
+Schlüsselausdruck: ⟦hơn so với⟧
+⟦so⟧ ist ein Verb mit der Bedeutung „vergleichen“; ⟦A + Adjektiv + hơn so với + B⟧ bedeutet „A ist im Vergleich zu B ~er“.
+❶ ⟦Thời tiết hôm nay đẹp hơn so với hôm qua.⟧ — Das Wetter ist heute im Vergleich zu gestern schöner.
+❷ Ⓐ ⟦Vì sao em muốn thuê nhà ở khu vực này?⟧ — Warum willst du in dieser Gegend eine Wohnung mieten? Ⓑ ⟦Bởi vì giá thuê nhà ở đây rẻ hơn so với nơi khác ạ.⟧ — Weil die Miete hier im Vergleich zu anderswo günstiger ist.
+Ausdrücke zu verschiedenen Umtauschgründen: ⟦không hợp⟧ passt nicht | ⟦tay áo ngắn⟧ kurze Ärmel | ⟦màu hơi đậm⟧ Farbe etwas dunkel | ⟦màu hơi sáng⟧ Farbe etwas hell | ⟦nhỏ/chật, to/rộng⟧ klein/eng, groß/weit
+Übung 2 — wie im Muster mit dem vorgegebenen Wort sprechen.
+Muster (⟦đơn giản⟧ einfach): Ⓐ ⟦Ngữ pháp trong tiếng Việt và tiếng Hàn khác nhau thế nào?⟧ — Wie unterscheidet sich die vietnamesische Grammatik von der koreanischen? Ⓑ ⟦Ngữ pháp trong tiếng Việt đơn giản hơn so với tiếng Hàn.⟧ — Die vietnamesische Grammatik ist im Vergleich zur koreanischen einfacher.
+❶ (⟦hấp dẫn⟧ ansprechend) Ⓐ ⟦Bản báo cáo của anh Tuấn và của chị Hiền khác nhau thế nào?⟧ — Wie unterscheiden sich die Berichte von Tuấn und Hiền? Ⓑ ⟦Bản báo cáo của chị Hiền hấp dẫn hơn so với của anh Tuấn.⟧ — Hiềns Bericht ist im Vergleich zu Tuấns ansprechender.
+❷ (⟦thuận tiện⟧ günstig, bequem) Ⓐ ⟦Điều kiện làm việc ở công ti mới và công ti cũ khác nhau thế nào?⟧ — Wie unterscheiden sich die Arbeitsbedingungen in der neuen und der alten Firma? Ⓑ ⟦Điều kiện làm việc ở công ti mới thuận tiện hơn so với công ti cũ.⟧ — Die Arbeitsbedingungen in der neuen Firma sind im Vergleich zur alten günstiger.
+Dialog: Min-ho spricht mit einer Verkäuferin, um eine neu gekaufte Mütze umzutauschen.
+Min-ho: ⟦Chào chị. Tôi đã mua mũ này ở đây nhưng muốn đổi.⟧ — Guten Tag. Ich habe diese Mütze hier gekauft, möchte sie aber umtauschen.
+Verkäuferin: ⟦Sao anh muốn đổi? Có vấn đề gì à?⟧ — Warum möchten Sie sie umtauschen? Gibt es ein Problem?
+Min-ho: ⟦Không phải thế mà là vì mũ này hơi to với tôi.⟧ — Nicht direkt – sie ist mir nur etwas zu groß.
+Verkäuferin: ⟦Nhưng đây là cỡ nhỏ nhất đấy. Hay là anh đổi lấy kiểu khác nhé. Cái này thế nào?⟧ — Aber das ist schon die kleinste Größe. Wie wäre es mit einem anderen Modell? Was halten Sie von dieser hier?
+Min-ho: ⟦Cái này cũng đẹp và trông nhỏ hơn so với cái cũ. Tôi đổi lấy cái này nhé.⟧ — Die ist auch schön und wirkt kleiner als die alte. Ich tausche gegen diese.
+Satzmusterübung — was umtauschen: ⟦mũ⟧ (Mütze) / ⟦áo khoác⟧ (Jacke); warum: ⟦hơi to với tôi⟧ (mir etwas zu groß) / ⟦tay áo hơi ngắn⟧ (Ärmel etwas kurz); warum kein Tausch möglich: ⟦đây là cỡ nhỏ nhất đấy⟧ (das ist die kleinste Größe) / ⟦kiểu này tay áo đều ngắn⟧ (bei diesem Modell sind alle Ärmel kurz); wie das neue aussieht: ⟦nhỏ⟧ (kleiner) / ⟦tay áo dài⟧ (längere Ärmel).
+Neue Wörter: ⟦đậm⟧ dunkel, kräftig (Farbe) | ⟦áo khoác⟧ Jacke, Mantel | ⟦kiểu⟧ Stil, Modell
+=hu
+Kulcskifejezés: ⟦hơn so với⟧
+A ⟦so⟧ ige jelentése „összehasonlítani”; az ⟦A + melléknév + hơn so với + B⟧ jelentése „A B-hez képest ~abb”.
+❶ ⟦Thời tiết hôm nay đẹp hơn so với hôm qua.⟧ — Ma a tegnaphoz képest szebb az idő.
+❷ Ⓐ ⟦Vì sao em muốn thuê nhà ở khu vực này?⟧ — Miért akarsz éppen ezen a környéken lakást bérelni? Ⓑ ⟦Bởi vì giá thuê nhà ở đây rẻ hơn so với nơi khác ạ.⟧ — Mert itt a bérleti díj más helyekhez képest olcsóbb.
+A csere különféle okait kifejező kifejezések: ⟦không hợp⟧ nem illik | ⟦tay áo ngắn⟧ rövid ujj | ⟦màu hơi đậm⟧ kissé sötét szín | ⟦màu hơi sáng⟧ kissé világos szín | ⟦nhỏ/chật, to/rộng⟧ kicsi/szűk, nagy/bő
+2. gyakorlat — beszélgessen a minta szerint a megadott szóval.
+Minta (⟦đơn giản⟧ egyszerű): Ⓐ ⟦Ngữ pháp trong tiếng Việt và tiếng Hàn khác nhau thế nào?⟧ — Miben különbözik a vietnami és a koreai nyelvtan? Ⓑ ⟦Ngữ pháp trong tiếng Việt đơn giản hơn so với tiếng Hàn.⟧ — A vietnami nyelvtan a koreaihoz képest egyszerűbb.
+❶ (⟦hấp dẫn⟧ érdekes, vonzó) Ⓐ ⟦Bản báo cáo của anh Tuấn và của chị Hiền khác nhau thế nào?⟧ — Miben különbözik Tuấn és Hiền beszámolója? Ⓑ ⟦Bản báo cáo của chị Hiền hấp dẫn hơn so với của anh Tuấn.⟧ — Hiền beszámolója Tuấnéhoz képest érdekesebb.
+❷ (⟦thuận tiện⟧ kényelmes, előnyös) Ⓐ ⟦Điều kiện làm việc ở công ti mới và công ti cũ khác nhau thế nào?⟧ — Miben különböznek a munkakörülmények az új és a régi cégnél? Ⓑ ⟦Điều kiện làm việc ở công ti mới thuận tiện hơn so với công ti cũ.⟧ — Az új cégnél a régihez képest kedvezőbbek a munkakörülmények.
+Párbeszéd: Min-ho az eladóval beszél, mert ki akarja cserélni az újonnan vett sapkáját.
+Min-ho: ⟦Chào chị. Tôi đã mua mũ này ở đây nhưng muốn đổi.⟧ — Jó napot. Itt vettem ezt a sapkát, de szeretném kicserélni.
+Eladó: ⟦Sao anh muốn đổi? Có vấn đề gì à?⟧ — Miért szeretné kicserélni? Valami gond van vele?
+Min-ho: ⟦Không phải thế mà là vì mũ này hơi to với tôi.⟧ — Nem igazán, csak kicsit nagy rám.
+Eladó: ⟦Nhưng đây là cỡ nhỏ nhất đấy. Hay là anh đổi lấy kiểu khác nhé. Cái này thế nào?⟧ — De ez már a legkisebb méret. Mi lenne, ha másik fazonra cserélné? Mit szól ehhez?
+Min-ho: ⟦Cái này cũng đẹp và trông nhỏ hơn so với cái cũ. Tôi đổi lấy cái này nhé.⟧ — Ez is szép, és kisebbnek tűnik a régihez képest. Erre cserélem.
+Mintagyakorlat — mit cserél: ⟦mũ⟧ (sapka) / ⟦áo khoác⟧ (kabát); miért: ⟦hơi to với tôi⟧ (kicsit nagy rám) / ⟦tay áo hơi ngắn⟧ (kicsit rövid az ujja); miért nem cserélhető: ⟦đây là cỡ nhỏ nhất đấy⟧ (ez a legkisebb méret) / ⟦kiểu này tay áo đều ngắn⟧ (ennél a fazonnál mind rövid ujjú); milyen az új: ⟦nhỏ⟧ (kisebb) / ⟦tay áo dài⟧ (hosszabb ujjú).
+Új szavak: ⟦đậm⟧ sötét, erős (szín) | ⟦áo khoác⟧ kabát, dzseki | ⟦kiểu⟧ stílus, fazon
+=id
+Ungkapan kunci: ⟦hơn so với⟧
+⟦so⟧ adalah verba "membandingkan"; ⟦A + adjektiva + hơn so với + B⟧ berarti "A lebih ~ dibandingkan dengan B".
+❶ ⟦Thời tiết hôm nay đẹp hơn so với hôm qua.⟧ — Cuaca hari ini lebih cerah dibandingkan kemarin.
+❷ Ⓐ ⟦Vì sao em muốn thuê nhà ở khu vực này?⟧ — Kenapa kamu ingin menyewa rumah di daerah ini? Ⓑ ⟦Bởi vì giá thuê nhà ở đây rẻ hơn so với nơi khác ạ.⟧ — Karena harga sewa di sini lebih murah dibandingkan tempat lain.
+Ungkapan tentang berbagai alasan menukar barang: ⟦không hợp⟧ tidak cocok | ⟦tay áo ngắn⟧ lengan pendek | ⟦màu hơi đậm⟧ warnanya agak gelap | ⟦màu hơi sáng⟧ warnanya agak terang | ⟦nhỏ/chật, to/rộng⟧ kecil/sempit, besar/longgar
+Latihan pola 2 — bercakaplah seperti contoh dengan kata yang diberikan.
+Contoh (⟦đơn giản⟧ sederhana): Ⓐ ⟦Ngữ pháp trong tiếng Việt và tiếng Hàn khác nhau thế nào?⟧ — Apa bedanya tata bahasa Vietnam dan Korea? Ⓑ ⟦Ngữ pháp trong tiếng Việt đơn giản hơn so với tiếng Hàn.⟧ — Tata bahasa Vietnam lebih sederhana dibandingkan bahasa Korea.
+❶ (⟦hấp dẫn⟧ menarik) Ⓐ ⟦Bản báo cáo của anh Tuấn và của chị Hiền khác nhau thế nào?⟧ — Apa bedanya laporan Mas Tuấn dan Mbak Hiền? Ⓑ ⟦Bản báo cáo của chị Hiền hấp dẫn hơn so với của anh Tuấn.⟧ — Laporan Mbak Hiền lebih menarik dibandingkan laporan Mas Tuấn.
+❷ (⟦thuận tiện⟧ nyaman, praktis) Ⓐ ⟦Điều kiện làm việc ở công ti mới và công ti cũ khác nhau thế nào?⟧ — Apa bedanya kondisi kerja di perusahaan baru dan lama? Ⓑ ⟦Điều kiện làm việc ở công ti mới thuận tiện hơn so với công ti cũ.⟧ — Kondisi kerja di perusahaan baru lebih nyaman dibandingkan perusahaan lama.
+Percakapan: Min-ho berbicara dengan pramuniaga untuk menukar topi yang baru dibelinya.
+Min-ho: ⟦Chào chị. Tôi đã mua mũ này ở đây nhưng muốn đổi.⟧ — Halo, Mbak. Saya membeli topi ini di sini, tetapi ingin menukarnya.
+Pramuniaga: ⟦Sao anh muốn đổi? Có vấn đề gì à?⟧ — Kenapa mau ditukar? Ada masalah?
+Min-ho: ⟦Không phải thế mà là vì mũ này hơi to với tôi.⟧ — Bukan begitu, hanya saja topi ini agak besar untuk saya.
+Pramuniaga: ⟦Nhưng đây là cỡ nhỏ nhất đấy. Hay là anh đổi lấy kiểu khác nhé. Cái này thế nào?⟧ — Tapi ini sudah ukuran paling kecil. Bagaimana kalau ditukar dengan model lain? Yang ini bagaimana?
+Min-ho: ⟦Cái này cũng đẹp và trông nhỏ hơn so với cái cũ. Tôi đổi lấy cái này nhé.⟧ — Yang ini juga bagus dan kelihatan lebih kecil dibandingkan yang lama. Saya tukar dengan yang ini, ya.
+Latihan pola — tukar apa: ⟦mũ⟧ (topi) / ⟦áo khoác⟧ (jaket); kenapa: ⟦hơi to với tôi⟧ (agak besar untuk saya) / ⟦tay áo hơi ngắn⟧ (lengannya agak pendek); kenapa tidak bisa ditukar: ⟦đây là cỡ nhỏ nhất đấy⟧ (ini ukuran paling kecil) / ⟦kiểu này tay áo đều ngắn⟧ (model ini lengannya pendek semua); seperti apa yang baru: ⟦nhỏ⟧ (lebih kecil) / ⟦tay áo dài⟧ (lengan lebih panjang).
+Kosakata baru: ⟦đậm⟧ gelap, pekat | ⟦áo khoác⟧ jaket, mantel | ⟦kiểu⟧ gaya, model
+=ja
+核心表現：⟦hơn so với⟧
+⟦so⟧ は「比較する」という意味の動詞で、⟦A + 形容詞 + hơn so với + B⟧ は「AがBに比べてより～だ」という意味を表します。
+❶ ⟦Thời tiết hôm nay đẹp hơn so với hôm qua.⟧ — 今日の天気は昨日に比べていいです。
+❷ Ⓐ ⟦Vì sao em muốn thuê nhà ở khu vực này?⟧ — どうしてこの地域で部屋を借りたいの？ Ⓑ ⟦Bởi vì giá thuê nhà ở đây rẻ hơn so với nơi khác ạ.⟧ — ここの家賃がほかの所に比べて安いからです。
+交換したいさまざまな理由の表現：⟦không hợp⟧ 合わない | ⟦tay áo ngắn⟧ 袖が短い | ⟦màu hơi đậm⟧ 色が少し濃い | ⟦màu hơi sáng⟧ 色が少し明るい | ⟦nhỏ/chật, to/rộng⟧ 小さい/きつい、大きい/ゆるい
+文型練習2 — 与えられた表現を使って例のように会話してみましょう。
+例（⟦đơn giản⟧ 簡単だ）：Ⓐ ⟦Ngữ pháp trong tiếng Việt và tiếng Hàn khác nhau thế nào?⟧ — ベトナム語と韓国語の文法はどう違いますか。 Ⓑ ⟦Ngữ pháp trong tiếng Việt đơn giản hơn so với tiếng Hàn.⟧ — ベトナム語の文法は韓国語に比べて簡単です。
+❶（⟦hấp dẫn⟧ 魅力的だ）Ⓐ ⟦Bản báo cáo của anh Tuấn và của chị Hiền khác nhau thế nào?⟧ — トゥアンさんとヒエンさんの報告書はどう違いますか。 Ⓑ ⟦Bản báo cáo của chị Hiền hấp dẫn hơn so với của anh Tuấn.⟧ — ヒエンさんの報告書はトゥアンさんのに比べて魅力的です。
+❷（⟦thuận tiện⟧ 便利だ）Ⓐ ⟦Điều kiện làm việc ở công ti mới và công ti cũ khác nhau thế nào?⟧ — 新しい会社と前の会社では、労働条件はどう違いますか。 Ⓑ ⟦Điều kiện làm việc ở công ti mới thuận tiện hơn so với công ti cũ.⟧ — 新しい会社の労働条件は前の会社に比べて便利です。
+会話：ミンホが新しく買った帽子を交換するため、販売員と話しています。
+ミンホ：⟦Chào chị. Tôi đã mua mũ này ở đây nhưng muốn đổi.⟧ — こんにちは。ここでこの帽子を買ったのですが、交換したいです。
+販売員：⟦Sao anh muốn đổi? Có vấn đề gì à?⟧ — どうして交換したいのですか。何か問題がありましたか。
+ミンホ：⟦Không phải thế mà là vì mũ này hơi to với tôi.⟧ — そうではなく、この帽子が私には少し大きいんです。
+販売員：⟦Nhưng đây là cỡ nhỏ nhất đấy. Hay là anh đổi lấy kiểu khác nhé. Cái này thế nào?⟧ — でも、これが一番小さいサイズなんです。別のデザインと交換されてはいかがですか。こちらはどうでしょう。
+ミンホ：⟦Cái này cũng đẹp và trông nhỏ hơn so với cái cũ. Tôi đổi lấy cái này nhé.⟧ — これもすてきだし、前のより小さく見えますね。これと交換します。
+文型練習 — 何を交換：⟦mũ⟧（帽子）/ ⟦áo khoác⟧（上着）；理由：⟦hơi to với tôi⟧（私には少し大きい）/ ⟦tay áo hơi ngắn⟧（袖が少し短い）；交換できない理由：⟦đây là cỡ nhỏ nhất đấy⟧（これが一番小さいサイズ）/ ⟦kiểu này tay áo đều ngắn⟧（このデザインは袖がみんな短い）；見た目：⟦nhỏ⟧（小さい）/ ⟦tay áo dài⟧（袖が長い）。
+新出単語：⟦đậm⟧ 濃い | ⟦áo khoác⟧ 上着、コート | ⟦kiểu⟧ スタイル、デザイン
+=pl
+Kluczowe wyrażenie: ⟦hơn so với⟧
+⟦so⟧ to czasownik „porównywać”; ⟦A + przymiotnik + hơn so với + B⟧ znaczy „A jest bardziej ~ w porównaniu z B”.
+❶ ⟦Thời tiết hôm nay đẹp hơn so với hôm qua.⟧ — Pogoda jest dziś ładniejsza w porównaniu z wczorajszą.
+❷ Ⓐ ⟦Vì sao em muốn thuê nhà ở khu vực này?⟧ — Dlaczego chcesz wynająć mieszkanie w tej okolicy? Ⓑ ⟦Bởi vì giá thuê nhà ở đây rẻ hơn so với nơi khác ạ.⟧ — Bo czynsz jest tu niższy w porównaniu z innymi miejscami.
+Wyrażenia dotyczące różnych powodów wymiany: ⟦không hợp⟧ nie pasuje | ⟦tay áo ngắn⟧ krótkie rękawy | ⟦màu hơi đậm⟧ kolor trochę za ciemny | ⟦màu hơi sáng⟧ kolor trochę za jasny | ⟦nhỏ/chật, to/rộng⟧ mały/ciasny, duży/luźny
+Ćwiczenie 2 — rozmawiaj jak we wzorze, używając podanego słowa.
+Wzór (⟦đơn giản⟧ prosty): Ⓐ ⟦Ngữ pháp trong tiếng Việt và tiếng Hàn khác nhau thế nào?⟧ — Czym różni się gramatyka wietnamska od koreańskiej? Ⓑ ⟦Ngữ pháp trong tiếng Việt đơn giản hơn so với tiếng Hàn.⟧ — Gramatyka wietnamska jest prostsza w porównaniu z koreańską.
+❶ (⟦hấp dẫn⟧ ciekawy, atrakcyjny) Ⓐ ⟦Bản báo cáo của anh Tuấn và của chị Hiền khác nhau thế nào?⟧ — Czym różnią się raporty Tuấna i Hiền? Ⓑ ⟦Bản báo cáo của chị Hiền hấp dẫn hơn so với của anh Tuấn.⟧ — Raport Hiền jest ciekawszy w porównaniu z raportem Tuấna.
+❷ (⟦thuận tiện⟧ dogodny) Ⓐ ⟦Điều kiện làm việc ở công ti mới và công ti cũ khác nhau thế nào?⟧ — Czym różnią się warunki pracy w nowej i starej firmie? Ⓑ ⟦Điều kiện làm việc ở công ti mới thuận tiện hơn so với công ti cũ.⟧ — Warunki pracy w nowej firmie są dogodniejsze w porównaniu ze starą.
+Dialog: Min-ho rozmawia ze sprzedawczynią, bo chce wymienić nowo kupioną czapkę.
+Min-ho: ⟦Chào chị. Tôi đã mua mũ này ở đây nhưng muốn đổi.⟧ — Dzień dobry. Kupiłem tu tę czapkę, ale chciałbym ją wymienić.
+Sprzedawczyni: ⟦Sao anh muốn đổi? Có vấn đề gì à?⟧ — Dlaczego chce pan ją wymienić? Jest jakiś problem?
+Min-ho: ⟦Không phải thế mà là vì mũ này hơi to với tôi.⟧ — Nie, po prostu jest na mnie trochę za duża.
+Sprzedawczyni: ⟦Nhưng đây là cỡ nhỏ nhất đấy. Hay là anh đổi lấy kiểu khác nhé. Cái này thế nào?⟧ — Ale to już najmniejszy rozmiar. A może wymieni pan na inny model? Co pan powie na tę?
+Min-ho: ⟦Cái này cũng đẹp và trông nhỏ hơn so với cái cũ. Tôi đổi lấy cái này nhé.⟧ — Ta też jest ładna i wygląda na mniejszą w porównaniu z poprzednią. Wymienię na tę.
+Ćwiczenie wzorców — co wymienić: ⟦mũ⟧ (czapka) / ⟦áo khoác⟧ (kurtka); dlaczego: ⟦hơi to với tôi⟧ (trochę za duża na mnie) / ⟦tay áo hơi ngắn⟧ (rękawy trochę za krótkie); dlaczego nie można wymienić: ⟦đây là cỡ nhỏ nhất đấy⟧ (to najmniejszy rozmiar) / ⟦kiểu này tay áo đều ngắn⟧ (w tym modelu wszystkie mają krótkie rękawy); jak wygląda nowa: ⟦nhỏ⟧ (mniejsza) / ⟦tay áo dài⟧ (dłuższe rękawy).
+Nowe słówka: ⟦đậm⟧ ciemny, intensywny | ⟦áo khoác⟧ kurtka, płaszcz | ⟦kiểu⟧ styl, model

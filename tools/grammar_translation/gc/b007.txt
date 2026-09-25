@@ -1,0 +1,420 @@
+@@ pdf-grammar-beac8ddb82f8458e#0
+~t 2. Ptát se na cenu a odpovídat|2. 询问与回答价格|2. 詢問與回答價格|2. Asking and giving prices|2. Demander et donner un prix|2. Nach dem Preis fragen und antworten|2. Ár kérdezése és megadása|2. Menanyakan dan menjawab harga|2. 値段を尋ねて答える表現|2. Pytanie o cenę i odpowiedź
+=cs
+A: ⟦Một cân cam bao nhiêu tiền?⟧ — Kolik stojí kilo pomerančů?
+B: ⟦60 nghìn đồng.⟧ — 60 tisíc dongů.
+Na cenu se ptáme pomocí ⟦bao nhiêu⟧ (kolik), ⟦tiền⟧ (peníze), ⟦giá⟧ (cena): ⟦bao nhiêu (tiền)?⟧ (kolik to stojí?) nebo ⟦giá bao nhiêu?⟧ (jaká je cena?). Při udávání ceny se připojuje vietnamská měna ⟦đồng⟧, kterou lze vynechat.
+A: ⟦Anh ơi, cái áo này bao nhiêu (tiền)?⟧ — Pane, kolik stojí tohle tričko?
+B: ⟦500 nghìn (đồng).⟧ — 500 tisíc (dongů).
+Slovíčka: ⟦áo⟧ oblečení (vrchní díl) | ⟦nghìn⟧ tisíc
+=zh_cn
+A：⟦Một cân cam bao nhiêu tiền?⟧ —— 橙子一公斤多少钱？
+B：⟦60 nghìn đồng.⟧ —— 6万越南盾。
+询问价格时，利用 ⟦bao nhiêu⟧（几、多少）、⟦tiền⟧（钱）、⟦giá⟧（价格）说 ⟦bao nhiêu (tiền)?⟧（多少钱？）或 ⟦giá bao nhiêu?⟧（价格是多少？）。说价格时在数目后加上越南货币单位 ⟦đồng⟧（盾），单位可以省略。
+A：⟦Anh ơi, cái áo này bao nhiêu (tiền)?⟧ —— 大哥，这件衣服多少钱？
+B：⟦500 nghìn (đồng).⟧ —— 50万（盾）。
+单词：⟦áo⟧ 衣服 | ⟦nghìn⟧ 千
+=zh
+A：⟦Một cân cam bao nhiêu tiền?⟧ —— 柳橙一公斤多少錢？
+B：⟦60 nghìn đồng.⟧ —— 6萬越南盾。
+詢問價格時，利用 ⟦bao nhiêu⟧（幾、多少）、⟦tiền⟧（錢）、⟦giá⟧（價格）說 ⟦bao nhiêu (tiền)?⟧（多少錢？）或 ⟦giá bao nhiêu?⟧（價格是多少？）。說價格時在數目後加上越南貨幣單位 ⟦đồng⟧（盾），單位可以省略。
+A：⟦Anh ơi, cái áo này bao nhiêu (tiền)?⟧ —— 大哥，這件衣服多少錢？
+B：⟦500 nghìn (đồng).⟧ —— 50萬（盾）。
+單字：⟦áo⟧ 衣服 | ⟦nghìn⟧ 千
+=en
+A: ⟦Một cân cam bao nhiêu tiền?⟧ — How much is a kilo of oranges?
+B: ⟦60 nghìn đồng.⟧ — 60,000 dong.
+To ask a price, use ⟦bao nhiêu⟧ (how much), ⟦tiền⟧ (money) and ⟦giá⟧ (price): ⟦bao nhiêu (tiền)?⟧ (how much?) or ⟦giá bao nhiêu?⟧ (what's the price?). When giving a price, add the Vietnamese currency ⟦đồng⟧, which can be omitted.
+A: ⟦Anh ơi, cái áo này bao nhiêu (tiền)?⟧ — Excuse me, how much is this shirt?
+B: ⟦500 nghìn (đồng).⟧ — 500,000 (dong).
+Words: ⟦áo⟧ clothing, top | ⟦nghìn⟧ thousand
+=fr
+A : ⟦Một cân cam bao nhiêu tiền?⟧ — Combien coûte un kilo d'oranges ?
+B : ⟦60 nghìn đồng.⟧ — 60 000 dongs.
+Pour demander un prix, on utilise ⟦bao nhiêu⟧ (combien), ⟦tiền⟧ (argent) et ⟦giá⟧ (prix) : ⟦bao nhiêu (tiền)?⟧ (combien ?) ou ⟦giá bao nhiêu?⟧ (quel est le prix ?). Pour indiquer un prix, on ajoute la monnaie vietnamienne ⟦đồng⟧, qui peut être omise.
+A : ⟦Anh ơi, cái áo này bao nhiêu (tiền)?⟧ — Monsieur, combien coûte ce haut ?
+B : ⟦500 nghìn (đồng).⟧ — 500 000 (dongs).
+Mots : ⟦áo⟧ vêtement (haut) | ⟦nghìn⟧ mille
+=de
+A: ⟦Một cân cam bao nhiêu tiền?⟧ — Was kostet ein Kilo Orangen?
+B: ⟦60 nghìn đồng.⟧ — 60.000 Dong.
+Nach dem Preis fragt man mit ⟦bao nhiêu⟧ (wie viel), ⟦tiền⟧ (Geld) und ⟦giá⟧ (Preis): ⟦bao nhiêu (tiền)?⟧ (wie viel kostet es?) oder ⟦giá bao nhiêu?⟧ (wie hoch ist der Preis?). Bei der Preisangabe fügt man die vietnamesische Währung ⟦đồng⟧ an, die auch entfallen kann.
+A: ⟦Anh ơi, cái áo này bao nhiêu (tiền)?⟧ — Entschuldigung, was kostet dieses Oberteil?
+B: ⟦500 nghìn (đồng).⟧ — 500.000 (Dong).
+Wörter: ⟦áo⟧ Kleidung (Oberteil) | ⟦nghìn⟧ tausend
+=hu
+A: ⟦Một cân cam bao nhiêu tiền?⟧ — Mennyibe kerül egy kiló narancs?
+B: ⟦60 nghìn đồng.⟧ — 60 ezer dong.
+Az árat a ⟦bao nhiêu⟧ (mennyi), ⟦tiền⟧ (pénz) és ⟦giá⟧ (ár) szavakkal kérdezzük: ⟦bao nhiêu (tiền)?⟧ (mennyibe kerül?) vagy ⟦giá bao nhiêu?⟧ (mennyi az ára?). Az ár megadásakor a vietnámi pénznemet, a ⟦đồng⟧-ot tesszük utána, amely elhagyható.
+A: ⟦Anh ơi, cái áo này bao nhiêu (tiền)?⟧ — Elnézést, mennyibe kerül ez a felső?
+B: ⟦500 nghìn (đồng).⟧ — 500 ezer (dong).
+Szavak: ⟦áo⟧ ruha (felső) | ⟦nghìn⟧ ezer
+=id
+A: ⟦Một cân cam bao nhiêu tiền?⟧ — Sekilo jeruk berapa harganya?
+B: ⟦60 nghìn đồng.⟧ — 60 ribu dong.
+Untuk menanyakan harga dipakai ⟦bao nhiêu⟧ (berapa), ⟦tiền⟧ (uang), ⟦giá⟧ (harga): ⟦bao nhiêu (tiền)?⟧ (berapa?) atau ⟦giá bao nhiêu?⟧ (harganya berapa?). Saat menyebut harga, ditambahkan satuan mata uang Vietnam ⟦đồng⟧, yang boleh dihilangkan.
+A: ⟦Anh ơi, cái áo này bao nhiêu (tiền)?⟧ — Mas, baju ini berapa?
+B: ⟦500 nghìn (đồng).⟧ — 500 ribu (dong).
+Kosakata: ⟦áo⟧ baju | ⟦nghìn⟧ ribu
+=ja
+A：⟦Một cân cam bao nhiêu tiền?⟧ — オレンジ1キロいくらですか。
+B：⟦60 nghìn đồng.⟧ — 6万ドンです。
+値段を尋ねるときは ⟦bao nhiêu⟧（いくつ、いくら）、⟦tiền⟧（お金）、⟦giá⟧（値段）を使って ⟦bao nhiêu (tiền)?⟧（いくらですか）または ⟦giá bao nhiêu?⟧（値段はいくらですか）と言います。値段を言うときはベトナムの通貨単位 ⟦đồng⟧ をつけますが、単位は省略できます。
+A：⟦Anh ơi, cái áo này bao nhiêu (tiền)?⟧ — お兄さん、この服いくらですか。
+B：⟦500 nghìn (đồng).⟧ — 50万ドンだよ。
+単語：⟦áo⟧ 服 | ⟦nghìn⟧ 千
+=pl
+A: ⟦Một cân cam bao nhiêu tiền?⟧ — Ile kosztuje kilogram pomarańczy?
+B: ⟦60 nghìn đồng.⟧ — 60 tysięcy dongów.
+O cenę pytamy za pomocą ⟦bao nhiêu⟧ (ile), ⟦tiền⟧ (pieniądze), ⟦giá⟧ (cena): ⟦bao nhiêu (tiền)?⟧ (ile kosztuje?) lub ⟦giá bao nhiêu?⟧ (jaka jest cena?). Podając cenę, dodaje się wietnamską walutę ⟦đồng⟧, którą można pominąć.
+A: ⟦Anh ơi, cái áo này bao nhiêu (tiền)?⟧ — Przepraszam, ile kosztuje ta bluzka?
+B: ⟦500 nghìn (đồng).⟧ — 500 tysięcy (dongów).
+Słówka: ⟦áo⟧ ubranie (góra) | ⟦nghìn⟧ tysiąc
+@@ pdf-grammar-beac8ddb82f8458e#1
+~t 3. Ptát se na důvod|3. 询问原因|3. 詢問原因|3. Asking why|3. Demander la raison|3. Nach dem Grund fragen|3. Az ok kérdezése|3. Menanyakan alasan|3. 理由を尋ねる表現|3. Pytanie o powód
+=cs
+⟦Sao đắt thế?⟧ — Proč je to tak drahé?
+⟦sao⟧ se používá při otázce na důvod a znamená „proč“. Lze se ptát i ⟦vì sao⟧ nebo ⟦tại sao⟧. „sao + přídavné jméno + thế“ znamená „proč je to tak …?“.
+⟦Sao chị không ăn cơm?⟧ — Proč nejíš, sestro?
+= ⟦Vì sao chị không ăn cơm?⟧ — Proč nejíš, sestro?
+= ⟦Tại sao chị không ăn cơm?⟧ — Proč nejíš, sestro?
+⟦Sao lâu thế?⟧ — Proč to trvá tak dlouho?
+Slovíčko: ⟦lâu⟧ dlouho
+=zh_cn
+⟦Sao đắt thế?⟧ —— 怎么这么贵？
+⟦sao⟧ 用于询问原因，意为“为什么”。也可以用 ⟦vì sao⟧、⟦tại sao⟧ 来问。“sao + 形容词 + thế”意为“怎么这么……？”。
+⟦Sao chị không ăn cơm?⟧ —— 姐姐为什么不吃饭？
+= ⟦Vì sao chị không ăn cơm?⟧ —— 姐姐为什么不吃饭？
+= ⟦Tại sao chị không ăn cơm?⟧ —— 姐姐为什么不吃饭？
+⟦Sao lâu thế?⟧ —— 怎么这么久？
+单词：⟦lâu⟧ 久
+=zh
+⟦Sao đắt thế?⟧ —— 怎麼這麼貴？
+⟦sao⟧ 用於詢問原因，意為「為什麼」。也可以用 ⟦vì sao⟧、⟦tại sao⟧ 來問。「sao + 形容詞 + thế」意為「怎麼這麼……？」。
+⟦Sao chị không ăn cơm?⟧ —— 姐姐為什麼不吃飯？
+= ⟦Vì sao chị không ăn cơm?⟧ —— 姐姐為什麼不吃飯？
+= ⟦Tại sao chị không ăn cơm?⟧ —— 姐姐為什麼不吃飯？
+⟦Sao lâu thế?⟧ —— 怎麼這麼久？
+單字：⟦lâu⟧ 久
+=en
+⟦Sao đắt thế?⟧ — Why is it so expensive?
+⟦sao⟧ is used to ask for a reason and means "why". You can also ask with ⟦vì sao⟧ or ⟦tại sao⟧. "sao + adjective + thế" means "why is it so …?".
+⟦Sao chị không ăn cơm?⟧ — Why aren't you eating, sister?
+= ⟦Vì sao chị không ăn cơm?⟧ — Why aren't you eating, sister?
+= ⟦Tại sao chị không ăn cơm?⟧ — Why aren't you eating, sister?
+⟦Sao lâu thế?⟧ — Why is it taking so long?
+Word: ⟦lâu⟧ long (time)
+=fr
+⟦Sao đắt thế?⟧ — Pourquoi c'est si cher ?
+⟦sao⟧ sert à demander la raison et signifie « pourquoi ». On peut aussi demander avec ⟦vì sao⟧ ou ⟦tại sao⟧. « sao + adjectif + thế » signifie « pourquoi est-ce si … ? ».
+⟦Sao chị không ăn cơm?⟧ — Pourquoi tu ne manges pas, grande sœur ?
+= ⟦Vì sao chị không ăn cơm?⟧ — Pourquoi tu ne manges pas, grande sœur ?
+= ⟦Tại sao chị không ăn cơm?⟧ — Pourquoi tu ne manges pas, grande sœur ?
+⟦Sao lâu thế?⟧ — Pourquoi c'est si long ?
+Mot : ⟦lâu⟧ longtemps
+=de
+⟦Sao đắt thế?⟧ — Warum ist das so teuer?
+⟦sao⟧ dient zur Frage nach dem Grund und bedeutet „warum“. Man kann auch mit ⟦vì sao⟧ oder ⟦tại sao⟧ fragen. „sao + Adjektiv + thế“ bedeutet „warum ist es so …?“.
+⟦Sao chị không ăn cơm?⟧ — Warum isst du nicht, große Schwester?
+= ⟦Vì sao chị không ăn cơm?⟧ — Warum isst du nicht, große Schwester?
+= ⟦Tại sao chị không ăn cơm?⟧ — Warum isst du nicht, große Schwester?
+⟦Sao lâu thế?⟧ — Warum dauert das so lange?
+Wort: ⟦lâu⟧ lange
+=hu
+⟦Sao đắt thế?⟧ — Miért ilyen drága?
+A ⟦sao⟧ az ok kérdezésére szolgál, jelentése „miért”. Kérdezhetünk ⟦vì sao⟧ vagy ⟦tại sao⟧ formában is. A „sao + melléknév + thế” jelentése „miért ilyen …?”.
+⟦Sao chị không ăn cơm?⟧ — Miért nem eszel, nővérem?
+= ⟦Vì sao chị không ăn cơm?⟧ — Miért nem eszel, nővérem?
+= ⟦Tại sao chị không ăn cơm?⟧ — Miért nem eszel, nővérem?
+⟦Sao lâu thế?⟧ — Miért tart ilyen sokáig?
+Szó: ⟦lâu⟧ sokáig
+=id
+⟦Sao đắt thế?⟧ — Kenapa mahal sekali?
+⟦sao⟧ dipakai untuk menanyakan alasan dan berarti "kenapa". Bisa juga bertanya dengan ⟦vì sao⟧ atau ⟦tại sao⟧. "sao + kata sifat + thế" berarti "kenapa begitu …?".
+⟦Sao chị không ăn cơm?⟧ — Kenapa Kakak tidak makan?
+= ⟦Vì sao chị không ăn cơm?⟧ — Mengapa Kakak tidak makan?
+= ⟦Tại sao chị không ăn cơm?⟧ — Mengapa Kakak tidak makan?
+⟦Sao lâu thế?⟧ — Kenapa lama sekali?
+Kosakata: ⟦lâu⟧ lama
+=ja
+⟦Sao đắt thế?⟧ — どうしてそんなに高いんですか。
+⟦sao⟧ は理由を尋ねるときに使う語で「なぜ」という意味です。⟦vì sao⟧、⟦tại sao⟧ でも尋ねられます。「sao ＋ 形容詞 ＋ thế」は「どうしてそんなに～なの？」の意味になります。
+⟦Sao chị không ăn cơm?⟧ — お姉さんはどうしてご飯を食べないの？
+= ⟦Vì sao chị không ăn cơm?⟧ — お姉さんはなぜご飯を食べないの？
+= ⟦Tại sao chị không ăn cơm?⟧ — お姉さんはなぜご飯を食べないの？
+⟦Sao lâu thế?⟧ — どうしてそんなに時間がかかるの？
+単語：⟦lâu⟧ 長く（時間）
+=pl
+⟦Sao đắt thế?⟧ — Dlaczego to takie drogie?
+⟦sao⟧ służy do pytania o powód i znaczy „dlaczego”. Można też zapytać ⟦vì sao⟧ lub ⟦tại sao⟧. „sao + przymiotnik + thế” znaczy „dlaczego tak …?”.
+⟦Sao chị không ăn cơm?⟧ — Dlaczego nie jesz, siostro?
+= ⟦Vì sao chị không ăn cơm?⟧ — Dlaczego nie jesz, siostro?
+= ⟦Tại sao chị không ăn cơm?⟧ — Dlaczego nie jesz, siostro?
+⟦Sao lâu thế?⟧ — Dlaczego to tak długo trwa?
+Słówko: ⟦lâu⟧ długo
+@@ pdf-grammar-d0c65190ff01db99#0
+~t 1. Ukazovací přívlastky|1. 指示形容词|1. 指示形容詞|1. Demonstratives|1. Les adjectifs démonstratifs|1. Demonstrativa|1. Mutató jelzők|1. Kata penunjuk|1. 指示形容詞の表現|1. Zaimki wskazujące
+=cs
+Slova, kterými ukazujeme na osoby, věci nebo místa; spolu s podstatným jménem znamená ⟦này⟧ „tento“, ⟦kia⟧ „tamten“ a ⟦ấy⟧ / ⟦đó⟧ „ten“.
+⟦Anh này là ai?⟧ — Kdo je tento muž?
+⟦Cái bàn kia hơi cũ.⟧ — Tamten stůl je trochu starý.
+⟦Anh ấy rất thông minh.⟧ — Ten muž je velmi chytrý.
+⟦Tôi không biết khách sạn đó.⟧ — Ten hotel neznám.
+Pořadí slov s ukazovacím přívlastkem, klasifikátorem a podstatným jménem je následující:
+klasifikátor ⟦Cái⟧ + podstatné jméno ⟦mũ⟧ (klobouk) + barva ⟦màu xanh⟧ (modrá) + ukazovací slovo ⟦này⟧ (tento) + přísudek ⟦đẹp⟧ (hezký)
+⟦Cái mũ màu xanh này đẹp.⟧ — Tento modrý klobouk je hezký.
+⟦Cái bút màu đỏ kia tốt.⟧ — Tamto červené pero je dobré.
+⟦Chiếc xe máy màu đen đó rất đắt.⟧ — Ta černá motorka je velmi drahá.
+Slovíčka: ⟦ai⟧ kdo | ⟦hơi⟧ trochu | ⟦thông minh⟧ chytrý | ⟦khách sạn⟧ hotel | ⟦đỏ⟧ červený | ⟦tốt⟧ dobrý | ⟦xe máy⟧ motorka | ⟦đắt⟧ drahý
+=zh_cn
+这是指称人、事物或地点时用的词，与名词（短语）结合使用时，⟦này⟧ 意为“这”，⟦kia⟧ 意为“那（远处）”，⟦ấy⟧/⟦đó⟧ 意为“那”。
+⟦Anh này là ai?⟧ —— 这位哥哥是谁？
+⟦Cái bàn kia hơi cũ.⟧ —— 那张桌子有点旧。
+⟦Anh ấy rất thông minh.⟧ —— 那位哥哥非常聪明。
+⟦Tôi không biết khách sạn đó.⟧ —— 我不知道那家酒店。
+指示形容词与分类词、名词等一起使用时，语序如下：
+分类词 ⟦Cái⟧ + 名词 ⟦mũ⟧（帽子）+ 颜色 ⟦màu xanh⟧（蓝色）+ 指示形容词 ⟦này⟧（这）+ 谓语 ⟦đẹp⟧（漂亮）
+⟦Cái mũ màu xanh này đẹp.⟧ —— 这顶蓝色的帽子很漂亮。
+⟦Cái bút màu đỏ kia tốt.⟧ —— 那支红色的笔很好。
+⟦Chiếc xe máy màu đen đó rất đắt.⟧ —— 那辆黑色摩托车非常贵。
+单词：⟦ai⟧ 谁 | ⟦hơi⟧ 有点 | ⟦thông minh⟧ 聪明 | ⟦khách sạn⟧ 酒店 | ⟦đỏ⟧ 红 | ⟦tốt⟧ 好 | ⟦xe máy⟧ 摩托车 | ⟦đắt⟧ 贵
+=zh
+這是指稱人、事物或地點時用的詞，與名詞（片語）結合使用時，⟦này⟧ 意為「這」，⟦kia⟧ 意為「那（遠處）」，⟦ấy⟧/⟦đó⟧ 意為「那」。
+⟦Anh này là ai?⟧ —— 這位哥哥是誰？
+⟦Cái bàn kia hơi cũ.⟧ —— 那張桌子有點舊。
+⟦Anh ấy rất thông minh.⟧ —— 那位哥哥非常聰明。
+⟦Tôi không biết khách sạn đó.⟧ —— 我不知道那家飯店。
+指示形容詞與分類詞、名詞等一起使用時，語序如下：
+分類詞 ⟦Cái⟧ + 名詞 ⟦mũ⟧（帽子）+ 顏色 ⟦màu xanh⟧（藍色）+ 指示形容詞 ⟦này⟧（這）+ 謂語 ⟦đẹp⟧（漂亮）
+⟦Cái mũ màu xanh này đẹp.⟧ —— 這頂藍色的帽子很漂亮。
+⟦Cái bút màu đỏ kia tốt.⟧ —— 那支紅色的筆很好。
+⟦Chiếc xe máy màu đen đó rất đắt.⟧ —— 那輛黑色機車非常貴。
+單字：⟦ai⟧ 誰 | ⟦hơi⟧ 有點 | ⟦thông minh⟧ 聰明 | ⟦khách sạn⟧ 飯店 | ⟦đỏ⟧ 紅 | ⟦tốt⟧ 好 | ⟦xe máy⟧ 機車 | ⟦đắt⟧ 貴
+=en
+These words point to people, things or places; used with a noun (phrase), ⟦này⟧ means "this", ⟦kia⟧ "that (over there)" and ⟦ấy⟧ / ⟦đó⟧ "that".
+⟦Anh này là ai?⟧ — Who is this man?
+⟦Cái bàn kia hơi cũ.⟧ — That table over there is a little old.
+⟦Anh ấy rất thông minh.⟧ — That man is very smart.
+⟦Tôi không biết khách sạn đó.⟧ — I don't know that hotel.
+When a demonstrative is used with a classifier and a noun, the word order is:
+classifier ⟦Cái⟧ + noun ⟦mũ⟧ (hat) + color ⟦màu xanh⟧ (blue) + demonstrative ⟦này⟧ (this) + predicate ⟦đẹp⟧ (pretty)
+⟦Cái mũ màu xanh này đẹp.⟧ — This blue hat is pretty.
+⟦Cái bút màu đỏ kia tốt.⟧ — That red pen over there is good.
+⟦Chiếc xe máy màu đen đó rất đắt.⟧ — That black motorbike is very expensive.
+Words: ⟦ai⟧ who | ⟦hơi⟧ a little | ⟦thông minh⟧ smart | ⟦khách sạn⟧ hotel | ⟦đỏ⟧ red | ⟦tốt⟧ good | ⟦xe máy⟧ motorbike | ⟦đắt⟧ expensive
+=fr
+Ces mots désignent des personnes, des choses ou des lieux ; avec un nom (groupe nominal), ⟦này⟧ signifie « ce …-ci », ⟦kia⟧ « ce …-là (là-bas) » et ⟦ấy⟧ / ⟦đó⟧ « ce …-là ».
+⟦Anh này là ai?⟧ — Qui est cet homme ?
+⟦Cái bàn kia hơi cũ.⟧ — Cette table là-bas est un peu vieille.
+⟦Anh ấy rất thông minh.⟧ — Cet homme est très intelligent.
+⟦Tôi không biết khách sạn đó.⟧ — Je ne connais pas cet hôtel.
+Avec un classificateur et un nom, l'ordre des mots est le suivant :
+classificateur ⟦Cái⟧ + nom ⟦mũ⟧ (chapeau) + couleur ⟦màu xanh⟧ (bleu) + démonstratif ⟦này⟧ (ce) + prédicat ⟦đẹp⟧ (joli)
+⟦Cái mũ màu xanh này đẹp.⟧ — Ce chapeau bleu est joli.
+⟦Cái bút màu đỏ kia tốt.⟧ — Ce stylo rouge là-bas est bien.
+⟦Chiếc xe máy màu đen đó rất đắt.⟧ — Ce scooter noir est très cher.
+Mots : ⟦ai⟧ qui | ⟦hơi⟧ un peu | ⟦thông minh⟧ intelligent | ⟦khách sạn⟧ hôtel | ⟦đỏ⟧ rouge | ⟦tốt⟧ bon | ⟦xe máy⟧ scooter | ⟦đắt⟧ cher
+=de
+Diese Wörter verweisen auf Personen, Dinge oder Orte; mit einem Substantiv bedeutet ⟦này⟧ „dieser“, ⟦kia⟧ „jener (dort drüben)“ und ⟦ấy⟧ / ⟦đó⟧ „der/jener“.
+⟦Anh này là ai?⟧ — Wer ist dieser Mann?
+⟦Cái bàn kia hơi cũ.⟧ — Der Tisch dort drüben ist etwas alt.
+⟦Anh ấy rất thông minh.⟧ — Der Mann ist sehr klug.
+⟦Tôi không biết khách sạn đó.⟧ — Ich kenne das Hotel nicht.
+Mit Klassifikator und Substantiv gilt folgende Wortstellung:
+Klassifikator ⟦Cái⟧ + Substantiv ⟦mũ⟧ (Hut) + Farbe ⟦màu xanh⟧ (blau) + Demonstrativ ⟦này⟧ (dieser) + Prädikat ⟦đẹp⟧ (schön)
+⟦Cái mũ màu xanh này đẹp.⟧ — Dieser blaue Hut ist schön.
+⟦Cái bút màu đỏ kia tốt.⟧ — Der rote Stift dort drüben ist gut.
+⟦Chiếc xe máy màu đen đó rất đắt.⟧ — Der schwarze Motorroller ist sehr teuer.
+Wörter: ⟦ai⟧ wer | ⟦hơi⟧ etwas | ⟦thông minh⟧ klug | ⟦khách sạn⟧ Hotel | ⟦đỏ⟧ rot | ⟦tốt⟧ gut | ⟦xe máy⟧ Motorroller | ⟦đắt⟧ teuer
+=hu
+Ezekkel a szavakkal személyekre, tárgyakra vagy helyekre mutatunk; főnévvel együtt a ⟦này⟧ jelentése „ez”, a ⟦kia⟧ „az (ott)”, az ⟦ấy⟧ / ⟦đó⟧ „az”.
+⟦Anh này là ai?⟧ — Ki ez a férfi?
+⟦Cái bàn kia hơi cũ.⟧ — Az ott az asztal kissé régi.
+⟦Anh ấy rất thông minh.⟧ — Az a férfi nagyon okos.
+⟦Tôi không biết khách sạn đó.⟧ — Nem ismerem azt a szállodát.
+Osztályozó szóval és főnévvel együtt a szórend a következő:
+osztályozó ⟦Cái⟧ + főnév ⟦mũ⟧ (kalap) + szín ⟦màu xanh⟧ (kék) + mutató szó ⟦này⟧ (ez) + állítmány ⟦đẹp⟧ (szép)
+⟦Cái mũ màu xanh này đẹp.⟧ — Ez a kék kalap szép.
+⟦Cái bút màu đỏ kia tốt.⟧ — Az a piros toll ott jó.
+⟦Chiếc xe máy màu đen đó rất đắt.⟧ — Az a fekete motor nagyon drága.
+Szavak: ⟦ai⟧ ki | ⟦hơi⟧ kissé | ⟦thông minh⟧ okos | ⟦khách sạn⟧ szálloda | ⟦đỏ⟧ piros | ⟦tốt⟧ jó | ⟦xe máy⟧ motor | ⟦đắt⟧ drága
+=id
+Kata-kata ini dipakai untuk menunjuk orang, benda, atau tempat; bersama kata benda, ⟦này⟧ berarti "ini", ⟦kia⟧ "itu (di sana)", dan ⟦ấy⟧ / ⟦đó⟧ "itu".
+⟦Anh này là ai?⟧ — Pria ini siapa?
+⟦Cái bàn kia hơi cũ.⟧ — Meja di sana agak tua.
+⟦Anh ấy rất thông minh.⟧ — Pria itu sangat pintar.
+⟦Tôi không biết khách sạn đó.⟧ — Saya tidak tahu hotel itu.
+Jika kata penunjuk dipakai bersama kata penggolong dan kata benda, urutannya sebagai berikut:
+kata penggolong ⟦Cái⟧ + kata benda ⟦mũ⟧ (topi) + warna ⟦màu xanh⟧ (biru) + penunjuk ⟦này⟧ (ini) + predikat ⟦đẹp⟧ (bagus)
+⟦Cái mũ màu xanh này đẹp.⟧ — Topi biru ini bagus.
+⟦Cái bút màu đỏ kia tốt.⟧ — Pulpen merah di sana bagus.
+⟦Chiếc xe máy màu đen đó rất đắt.⟧ — Sepeda motor hitam itu sangat mahal.
+Kosakata: ⟦ai⟧ siapa | ⟦hơi⟧ agak | ⟦thông minh⟧ pintar | ⟦khách sạn⟧ hotel | ⟦đỏ⟧ merah | ⟦tốt⟧ baik, bagus | ⟦xe máy⟧ sepeda motor | ⟦đắt⟧ mahal
+=ja
+人・物・場所などを指すときに使う語で、名詞（句）と一緒に使うと ⟦này⟧ は「この」、⟦kia⟧ は「あの」、⟦ấy⟧/⟦đó⟧ は「その」の意味になります。
+⟦Anh này là ai?⟧ — この人は誰ですか。
+⟦Cái bàn kia hơi cũ.⟧ — あのテーブルは少し古い。
+⟦Anh ấy rất thông minh.⟧ — その人はとても頭がいい。
+⟦Tôi không biết khách sạn đó.⟧ — 私はそのホテルを知りません。
+指示形容詞が類別詞や名詞などと一緒に使われるときの語順は次のとおりです。
+類別詞 ⟦Cái⟧ ＋ 名詞 ⟦mũ⟧（帽子）＋ 色 ⟦màu xanh⟧（青）＋ 指示形容詞 ⟦này⟧（この）＋ 述語 ⟦đẹp⟧（きれいだ）
+⟦Cái mũ màu xanh này đẹp.⟧ — この青い帽子はきれいです。
+⟦Cái bút màu đỏ kia tốt.⟧ — あの赤いペンはいいです。
+⟦Chiếc xe máy màu đen đó rất đắt.⟧ — その黒いバイクはとても高いです。
+単語：⟦ai⟧ 誰 | ⟦hơi⟧ 少し | ⟦thông minh⟧ 頭がいい | ⟦khách sạn⟧ ホテル | ⟦đỏ⟧ 赤い | ⟦tốt⟧ よい | ⟦xe máy⟧ バイク | ⟦đắt⟧ 高い
+=pl
+Tymi słowami wskazuje się osoby, rzeczy lub miejsca; z rzeczownikiem ⟦này⟧ znaczy „ten (tutaj)”, ⟦kia⟧ „tamten (tam)”, a ⟦ấy⟧ / ⟦đó⟧ „ten (o którym mowa)”.
+⟦Anh này là ai?⟧ — Kim jest ten mężczyzna?
+⟦Cái bàn kia hơi cũ.⟧ — Tamten stół jest trochę stary.
+⟦Anh ấy rất thông minh.⟧ — Ten mężczyzna jest bardzo mądry.
+⟦Tôi không biết khách sạn đó.⟧ — Nie znam tego hotelu.
+Z klasyfikatorem i rzeczownikiem szyk jest następujący:
+klasyfikator ⟦Cái⟧ + rzeczownik ⟦mũ⟧ (kapelusz) + kolor ⟦màu xanh⟧ (niebieski) + zaimek wskazujący ⟦này⟧ (ten) + orzeczenie ⟦đẹp⟧ (ładny)
+⟦Cái mũ màu xanh này đẹp.⟧ — Ten niebieski kapelusz jest ładny.
+⟦Cái bút màu đỏ kia tốt.⟧ — Tamten czerwony długopis jest dobry.
+⟦Chiếc xe máy màu đen đó rất đắt.⟧ — Ten czarny skuter jest bardzo drogi.
+Słówka: ⟦ai⟧ kto | ⟦hơi⟧ trochę | ⟦thông minh⟧ mądry | ⟦khách sạn⟧ hotel | ⟦đỏ⟧ czerwony | ⟦tốt⟧ dobry | ⟦xe máy⟧ skuter | ⟦đắt⟧ drogi
+@@ pdf-grammar-0bb27836d9d3218b#0
+~t 1. Dokončený děj (minulost)|1. 过去完成时的表达|1. 過去完成時的表達|1. Completed actions (past)|1. L'action accomplie (passé)|1. Abgeschlossene Handlungen (Vergangenheit)|1. Befejezett cselekvés (múlt)|1. Tindakan yang sudah selesai (lampau)|1. 過去完了の表現|1. Czynność zakończona (przeszłość)
+=cs
+A: ⟦Chị đã ăn cơm chưa?⟧ — Už jsi jedla, sestro?
+B: ⟦Chưa. Chị đói bụng quá!⟧ — Ještě ne. Mám strašný hlad!
+Na to, zda už byl děj dokončen, se ptáme tvarem „podmět + (đã) + sloveso + chưa?“ (už …?); ⟦đã⟧ lze vynechat. Kladná odpověď: „Rồi, podmět + (đã) + sloveso + rồi“ (ano, už …), záporná: „Chưa, podmět + chưa + sloveso“ (ne / ještě ne, ještě jsem ne…).
+A: ⟦Anh (đã) lập gia đình chưa?⟧ — Jste už ženatý?
+B: ⟦Rồi. Tôi (đã) lập gia đình rồi.⟧ — Ano. Už jsem ženatý.
+B: ⟦Chưa. Tôi chưa lập gia đình.⟧ — Ne. Ještě nejsem ženatý.
+Slovíčko: ⟦lập gia đình⟧ založit rodinu, oženit se / vdát se
+=zh_cn
+A：⟦Chị đã ăn cơm chưa?⟧ —— 姐姐吃饭了吗？
+B：⟦Chưa. Chị đói bụng quá!⟧ —— 还没。我饿死了！
+询问行为是否完成时，用“主语 + (đã) + 动词 + chưa?”（主语……了吗？），⟦đã⟧ 可以省略。肯定回答说“Rồi, 主语 + (đã) + 动词 + rồi”（是的，主语……了），否定回答说“Chưa, 主语 + chưa + 动词”（不/还没，主语还没……）。
+A：⟦Anh (đã) lập gia đình chưa?⟧ —— 您结婚了吗？
+B：⟦Rồi. Tôi (đã) lập gia đình rồi.⟧ —— 是的，我结婚了。
+B：⟦Chưa. Tôi chưa lập gia đình.⟧ —— 没有，我还没结婚。
+单词：⟦lập gia đình⟧ 成家，结婚
+=zh
+A：⟦Chị đã ăn cơm chưa?⟧ —— 姐姐吃飯了嗎？
+B：⟦Chưa. Chị đói bụng quá!⟧ —— 還沒。我餓死了！
+詢問行為是否完成時，用「主語 + (đã) + 動詞 + chưa?」（主語……了嗎？），⟦đã⟧ 可以省略。肯定回答說「Rồi, 主語 + (đã) + 動詞 + rồi」（是的，主語……了），否定回答說「Chưa, 主語 + chưa + 動詞」（不/還沒，主語還沒……）。
+A：⟦Anh (đã) lập gia đình chưa?⟧ —— 您結婚了嗎？
+B：⟦Rồi. Tôi (đã) lập gia đình rồi.⟧ —— 是的，我結婚了。
+B：⟦Chưa. Tôi chưa lập gia đình.⟧ —— 沒有，我還沒結婚。
+單字：⟦lập gia đình⟧ 成家，結婚
+=en
+A: ⟦Chị đã ăn cơm chưa?⟧ — Have you eaten yet, sister?
+B: ⟦Chưa. Chị đói bụng quá!⟧ — Not yet. I'm so hungry!
+To ask whether an action has been completed, use "subject + (đã) + verb + chưa?" (has the subject … yet?); ⟦đã⟧ can be omitted. A positive answer is "Rồi, subject + (đã) + verb + rồi" (yes, the subject has …), a negative one "Chưa, subject + chưa + verb" (no / not yet, the subject hasn't … yet).
+A: ⟦Anh (đã) lập gia đình chưa?⟧ — Are you married?
+B: ⟦Rồi. Tôi (đã) lập gia đình rồi.⟧ — Yes. I'm married.
+B: ⟦Chưa. Tôi chưa lập gia đình.⟧ — No. I'm not married yet.
+Word: ⟦lập gia đình⟧ to start a family, to get married
+=fr
+A : ⟦Chị đã ăn cơm chưa?⟧ — Tu as déjà mangé, grande sœur ?
+B : ⟦Chưa. Chị đói bụng quá!⟧ — Pas encore. J'ai tellement faim !
+Pour demander si une action est accomplie, on utilise « sujet + (đã) + verbe + chưa? » (le sujet a-t-il déjà … ?) ; ⟦đã⟧ peut être omis. Réponse affirmative : « Rồi, sujet + (đã) + verbe + rồi » (oui, le sujet a déjà …) ; réponse négative : « Chưa, sujet + chưa + verbe » (non / pas encore, le sujet n'a pas encore …).
+A : ⟦Anh (đã) lập gia đình chưa?⟧ — Vous êtes marié ?
+B : ⟦Rồi. Tôi (đã) lập gia đình rồi.⟧ — Oui. Je suis marié.
+B : ⟦Chưa. Tôi chưa lập gia đình.⟧ — Non. Je ne suis pas encore marié.
+Mot : ⟦lập gia đình⟧ fonder une famille, se marier
+=de
+A: ⟦Chị đã ăn cơm chưa?⟧ — Hast du schon gegessen, große Schwester?
+B: ⟦Chưa. Chị đói bụng quá!⟧ — Noch nicht. Ich habe riesigen Hunger!
+Ob eine Handlung abgeschlossen ist, fragt man mit „Subjekt + (đã) + Verb + chưa?“ (hat das Subjekt schon …?); ⟦đã⟧ kann entfallen. Bejahend: „Rồi, Subjekt + (đã) + Verb + rồi“ (ja, schon …), verneinend: „Chưa, Subjekt + chưa + Verb“ (nein / noch nicht).
+A: ⟦Anh (đã) lập gia đình chưa?⟧ — Sind Sie verheiratet?
+B: ⟦Rồi. Tôi (đã) lập gia đình rồi.⟧ — Ja. Ich bin verheiratet.
+B: ⟦Chưa. Tôi chưa lập gia đình.⟧ — Nein. Ich bin noch nicht verheiratet.
+Wort: ⟦lập gia đình⟧ eine Familie gründen, heiraten
+=hu
+A: ⟦Chị đã ăn cơm chưa?⟧ — Ettél már, nővérem?
+B: ⟦Chưa. Chị đói bụng quá!⟧ — Még nem. Nagyon éhes vagyok!
+Hogy egy cselekvés megtörtént-e már, „alany + (đã) + ige + chưa?” (…-e már?) formában kérdezzük; a ⟦đã⟧ elhagyható. Igenlő válasz: „Rồi, alany + (đã) + ige + rồi” (igen, már …), nemleges: „Chưa, alany + chưa + ige” (nem / még nem).
+A: ⟦Anh (đã) lập gia đình chưa?⟧ — Nős már?
+B: ⟦Rồi. Tôi (đã) lập gia đình rồi.⟧ — Igen. Már nős vagyok.
+B: ⟦Chưa. Tôi chưa lập gia đình.⟧ — Nem. Még nem vagyok nős.
+Szó: ⟦lập gia đình⟧ családot alapítani, megházasodni
+=id
+A: ⟦Chị đã ăn cơm chưa?⟧ — Kakak sudah makan?
+B: ⟦Chưa. Chị đói bụng quá!⟧ — Belum. Kakak lapar sekali!
+Untuk menanyakan apakah suatu tindakan sudah selesai, dipakai "subjek + (đã) + kata kerja + chưa?" (sudahkah …?); ⟦đã⟧ boleh dihilangkan. Jawaban positif: "Rồi, subjek + (đã) + kata kerja + rồi" (ya, sudah …), jawaban negatif: "Chưa, subjek + chưa + kata kerja" (belum).
+A: ⟦Anh (đã) lập gia đình chưa?⟧ — Anda sudah menikah?
+B: ⟦Rồi. Tôi (đã) lập gia đình rồi.⟧ — Sudah. Saya sudah menikah.
+B: ⟦Chưa. Tôi chưa lập gia đình.⟧ — Belum. Saya belum menikah.
+Kosakata: ⟦lập gia đình⟧ berkeluarga, menikah
+=ja
+A：⟦Chị đã ăn cơm chưa?⟧ — お姉さん、ご飯食べましたか。
+B：⟦Chưa. Chị đói bụng quá!⟧ — まだ。すごくお腹すいた！
+行為が完了したかどうかを尋ねるときは「主語 ＋ (đã) ＋ 動詞 ＋ chưa?」（主語は～しましたか）で表し、⟦đã⟧ は省略できます。肯定の答えは「Rồi, 主語 ＋ (đã) ＋ 動詞 ＋ rồi」（はい、主語は～しました）、否定の答えは「Chưa, 主語 ＋ chưa ＋ 動詞」（いいえ・まだです。主語はまだ～していません）と言います。
+A：⟦Anh (đã) lập gia đình chưa?⟧ — あなたは結婚していますか。
+B：⟦Rồi. Tôi (đã) lập gia đình rồi.⟧ — はい。結婚しています。
+B：⟦Chưa. Tôi chưa lập gia đình.⟧ — いいえ。まだ結婚していません。
+単語：⟦lập gia đình⟧ 家庭を持つ、結婚する
+=pl
+A: ⟦Chị đã ăn cơm chưa?⟧ — Jadłaś już, siostro?
+B: ⟦Chưa. Chị đói bụng quá!⟧ — Jeszcze nie. Jestem strasznie głodna!
+O to, czy czynność została już wykonana, pytamy formą „podmiot + (đã) + czasownik + chưa?” (czy już …?); ⟦đã⟧ można pominąć. Odpowiedź twierdząca: „Rồi, podmiot + (đã) + czasownik + rồi” (tak, już …), przecząca: „Chưa, podmiot + chưa + czasownik” (nie / jeszcze nie).
+A: ⟦Anh (đã) lập gia đình chưa?⟧ — Czy jest pan żonaty?
+B: ⟦Rồi. Tôi (đã) lập gia đình rồi.⟧ — Tak. Jestem żonaty.
+B: ⟦Chưa. Tôi chưa lập gia đình.⟧ — Nie. Jeszcze nie jestem żonaty.
+Słówko: ⟦lập gia đình⟧ założyć rodzinę, wziąć ślub
+@@ pdf-grammar-0bb27836d9d3218b#1
+~t 2. Pozvání|2. 邀请的表达|2. 邀請的表達|2. Invitations|2. Inviter|2. Einladungen|2. Meghívás|2. Ungkapan mengundang|2. 招待の表現|2. Zaproszenia
+=cs
+⟦Hôm nay em mời chị đi ăn phở nhé.⟧ — Dnes tě zvu na phở, sestro.
+⟦mời⟧ znamená „pozvat, nabídnout“ a používá se ve tvaru „podmět + mời + adresát + sloveso“ (podmět zve adresáta, aby …) nebo „mời + adresát + sloveso“ (prosím, …).
+⟦Em muốn mời chị đến dự tiệc sinh nhật của em.⟧ — Chci tě pozvat na svou narozeninovou oslavu, sestro.
+⟦Mời anh xem thực đơn.⟧ — Prosím, tady je jídelní lístek.
+Slovíčka: ⟦dự⟧ zúčastnit se | ⟦tiệc⟧ oslava, hostina | ⟦sinh nhật⟧ narozeniny | ⟦xem⟧ dívat se | ⟦thực đơn⟧ jídelní lístek
+=zh_cn
+⟦Hôm nay em mời chị đi ăn phở nhé.⟧ —— 今天我请姐姐去吃河粉吧。
+⟦mời⟧ 意为“邀请、请”，用“主语 + mời + 对象 + 动词”（主语邀请对象做……）或“mời + 对象 + 动词”（请对象……）。
+⟦Em muốn mời chị đến dự tiệc sinh nhật của em.⟧ —— 我想邀请姐姐来参加我的生日派对。
+⟦Mời anh xem thực đơn.⟧ —— 哥，请看菜单。
+单词：⟦dự⟧ 参加 | ⟦tiệc⟧ 宴会，派对 | ⟦sinh nhật⟧ 生日 | ⟦xem⟧ 看 | ⟦thực đơn⟧ 菜单
+=zh
+⟦Hôm nay em mời chị đi ăn phở nhé.⟧ —— 今天我請姐姐去吃河粉吧。
+⟦mời⟧ 意為「邀請、請」，用「主語 + mời + 對象 + 動詞」（主語邀請對象做……）或「mời + 對象 + 動詞」（請對象……）。
+⟦Em muốn mời chị đến dự tiệc sinh nhật của em.⟧ —— 我想邀請姐姐來參加我的生日派對。
+⟦Mời anh xem thực đơn.⟧ —— 哥，請看菜單。
+單字：⟦dự⟧ 參加 | ⟦tiệc⟧ 宴會，派對 | ⟦sinh nhật⟧ 生日 | ⟦xem⟧ 看 | ⟦thực đơn⟧ 菜單
+=en
+⟦Hôm nay em mời chị đi ăn phở nhé.⟧ — Today I'm treating you to phở, sister.
+⟦mời⟧ means "to invite, to offer" and is used as "subject + mời + person + verb" (the subject invites the person to …) or "mời + person + verb" (please …).
+⟦Em muốn mời chị đến dự tiệc sinh nhật của em.⟧ — I'd like to invite you to my birthday party, sister.
+⟦Mời anh xem thực đơn.⟧ — Here's the menu, sir. (Please have a look at the menu.)
+Words: ⟦dự⟧ to attend | ⟦tiệc⟧ party, banquet | ⟦sinh nhật⟧ birthday | ⟦xem⟧ to look at | ⟦thực đơn⟧ menu
+=fr
+⟦Hôm nay em mời chị đi ăn phở nhé.⟧ — Aujourd'hui, je t'invite à manger un phở, grande sœur.
+⟦mời⟧ signifie « inviter, offrir » et s'emploie sous la forme « sujet + mời + personne + verbe » (le sujet invite la personne à …) ou « mời + personne + verbe » (je vous en prie, …).
+⟦Em muốn mời chị đến dự tiệc sinh nhật của em.⟧ — Je voudrais t'inviter à ma fête d'anniversaire, grande sœur.
+⟦Mời anh xem thực đơn.⟧ — Voici le menu, monsieur.
+Mots : ⟦dự⟧ assister à | ⟦tiệc⟧ fête, banquet | ⟦sinh nhật⟧ anniversaire | ⟦xem⟧ regarder | ⟦thực đơn⟧ menu
+=de
+⟦Hôm nay em mời chị đi ăn phở nhé.⟧ — Heute lade ich dich zum Phở-Essen ein, große Schwester.
+⟦mời⟧ bedeutet „einladen, anbieten“ und steht als „Subjekt + mời + Person + Verb“ (das Subjekt lädt die Person ein, … zu tun) oder „mời + Person + Verb“ (bitte …).
+⟦Em muốn mời chị đến dự tiệc sinh nhật của em.⟧ — Ich möchte dich zu meiner Geburtstagsfeier einladen, große Schwester.
+⟦Mời anh xem thực đơn.⟧ — Bitte, hier ist die Speisekarte.
+Wörter: ⟦dự⟧ teilnehmen | ⟦tiệc⟧ Feier, Party | ⟦sinh nhật⟧ Geburtstag | ⟦xem⟧ ansehen | ⟦thực đơn⟧ Speisekarte
+=hu
+⟦Hôm nay em mời chị đi ăn phở nhé.⟧ — Ma meghívlak egy phởra, nővérem.
+A ⟦mời⟧ jelentése „meghívni, kínálni”, és „alany + mời + személy + ige” (az alany meghívja a személyt, hogy …) vagy „mời + személy + ige” (kérem, …) formában használjuk.
+⟦Em muốn mời chị đến dự tiệc sinh nhật của em.⟧ — Szeretnélek meghívni a születésnapi bulimra, nővérem.
+⟦Mời anh xem thực đơn.⟧ — Tessék, itt az étlap.
+Szavak: ⟦dự⟧ részt venni | ⟦tiệc⟧ buli, lakoma | ⟦sinh nhật⟧ születésnap | ⟦xem⟧ nézni | ⟦thực đơn⟧ étlap
+=id
+⟦Hôm nay em mời chị đi ăn phở nhé.⟧ — Hari ini saya traktir Kakak makan phở, ya.
+⟦mời⟧ berarti "mengundang, mempersilakan" dan dipakai dengan pola "subjek + mời + orang + kata kerja" (subjek mengundang orang itu untuk …) atau "mời + orang + kata kerja" (silakan …).
+⟦Em muốn mời chị đến dự tiệc sinh nhật của em.⟧ — Saya ingin mengundang Kakak ke pesta ulang tahun saya.
+⟦Mời anh xem thực đơn.⟧ — Silakan lihat menunya, Mas.
+Kosakata: ⟦dự⟧ menghadiri | ⟦tiệc⟧ pesta | ⟦sinh nhật⟧ ulang tahun | ⟦xem⟧ melihat | ⟦thực đơn⟧ menu
+=ja
+⟦Hôm nay em mời chị đi ăn phở nhé.⟧ — 今日は私がお姉さんをフォーに招待しますね。
+⟦mời⟧ は「招待する、勧める」という意味で、「主語 ＋ mời ＋ 相手 ＋ 動詞」（主語が相手に～するよう招待する）または「mời ＋ 相手 ＋ 動詞」（どうぞ～してください）の形で使います。
+⟦Em muốn mời chị đến dự tiệc sinh nhật của em.⟧ — お姉さんを私の誕生日パーティーに招待したいです。
+⟦Mời anh xem thực đơn.⟧ — どうぞメニューをご覧ください。
+単語：⟦dự⟧ 参加する | ⟦tiệc⟧ パーティー、宴 | ⟦sinh nhật⟧ 誕生日 | ⟦xem⟧ 見る | ⟦thực đơn⟧ メニュー
+=pl
+⟦Hôm nay em mời chị đi ăn phở nhé.⟧ — Dziś zapraszam cię na phở, siostro.
+⟦mời⟧ znaczy „zapraszać, częstować” i występuje w formie „podmiot + mời + osoba + czasownik” (podmiot zaprasza osobę, by …) lub „mời + osoba + czasownik” (proszę …).
+⟦Em muốn mời chị đến dự tiệc sinh nhật của em.⟧ — Chcę zaprosić cię na moje przyjęcie urodzinowe, siostro.
+⟦Mời anh xem thực đơn.⟧ — Proszę, oto menu.
+Słówka: ⟦dự⟧ uczestniczyć | ⟦tiệc⟧ przyjęcie | ⟦sinh nhật⟧ urodziny | ⟦xem⟧ oglądać | ⟦thực đơn⟧ menu

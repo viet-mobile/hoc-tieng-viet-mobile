@@ -1,0 +1,201 @@
+@@ pdf-grammar-d70745fc12fa7d84#0
+=cs
+Klíčový výraz: ⟦đến mức⟧
+⟦sloveso / přídavné jméno + đến mức A⟧ znamená „~ natolik, že A; tak ~, že A“.
+❶ ⟦Hôm qua em có nhiều việc đến mức phải bỏ cả cơm tối.⟧ — Včera jsem měla tolik práce, že jsem musela vynechat i večeři.
+❷ Ⓐ ⟦Anh lại gọi phở à?⟧ — Zase sis objednal phở? Ⓑ ⟦Ừ, anh thích phở đến mức sáng nào anh cũng ăn.⟧ — Jo, mám phở tak rád, že ho jím každé ráno.
+Výrazy k tělesnému cvičení: ⟦đạp xe⟧ jezdit na kole | ⟦chạy bộ⟧ běhat | ⟦tập Yoga⟧ cvičit jógu | ⟦đánh cầu lông⟧ hrát badminton | ⟦rèn luyện tại phòng Gym⟧ posilovat v posilovně
+Procvičování 2 — veďte rozhovor s daným výrazem podle vzoru.
+Vzor (⟦bị ốm nặng, không đi làm được⟧ vážně nemocná, nemůže do práce): Ⓐ ⟦Vì sao hôm nay không thấy chị Hương nhỉ?⟧ — Proč tu dnes není Hương? Ⓑ ⟦Chị ấy bị ốm nặng đến mức không đi làm được.⟧ — Je tak vážně nemocná, že nemůže přijít do práce.
+❶ (⟦đẹp ra nhiều, không ai nhận ra cô ấy⟧ velmi zkrásněla, nikdo ji nepoznal) Ⓐ ⟦Có phải kia là cô Lan không?⟧ — Není tamto Lan? Ⓑ ⟦Phải. Cô ấy đẹp ra nhiều đến mức không ai nhận ra cô ấy.⟧ — Ano. Zkrásněla natolik, že ji nikdo nepoznal.
+❷ (⟦học tiếng Việt chăm chỉ, trong mơ cũng nói bằng tiếng Việt⟧ pilně se učí vietnamsky, i ve snu mluví vietnamsky) Ⓐ ⟦Nghe nói dạo này em học tiếng Việt cả ngày, đúng không?⟧ — Prý se teď celý den učíš vietnamsky, je to tak? Ⓑ ⟦Đúng rồi. Em học tiếng Việt chăm chỉ đến mức trong mơ cũng nói bằng tiếng Việt.⟧ — Přesně tak. Učím se tak pilně, že i ve snu mluvím vietnamsky.
+Rozhovor: Min-ho mluví o cvičení s Trang, která jde po práci na hodinu jógy.
+Trang: ⟦Em về trước nhé. Em đi tập Yoga đây.⟧ — Já už půjdu. Jdu na jógu.
+Min-ho: ⟦Thảo nào, dạo này trông em khoẻ đẹp hơn so với trước.⟧ — Tak proto teď vypadáš zdravěji a hezčí než dřív.
+Trang: ⟦Thế à? Cảm ơn anh.⟧ — Opravdu? Děkuju.
+Min-ho: ⟦Anh không thích tập thể dục lắm. Quyết tâm mấy cũng không quá 3 ngày.⟧ — Já moc rád necvičím. Ať si předsevezmu cokoli, nevydržím víc než tři dny.
+Trang: ⟦Trước đây em cũng thế. Đã quyết tâm nhưng được ba bảy hai mốt ngày là thôi. Nhưng lần này thì khác. Chắc Yoga là môn thể thao phù hợp với em. Em thích Yoga đến mức muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp.⟧ — Dřív jsem byla stejná. Předsevzala jsem si to, ale po pár týdnech byl konec. Tentokrát je to ale jinak. Jóga je asi sport, který mi sedí. Baví mě natolik, že bych si chtěla udělat profesionální kurz pro instruktory jógy.
+Min-ho: ⟦À, vậy à! Hay là nhân dịp năm mới, anh cũng bắt đầu tập thể dục lại nhỉ?⟧ — Aha! Co kdybych s příchodem nového roku taky znovu začal cvičit?
+Trang: ⟦Nếu tìm được môn phù hợp với anh thì anh sẽ không thấy chán nên sẽ có thể tập chăm hơn. Có chí thì nên. Anh cố lên nhé!⟧ — Když najdeš sport, který ti sedí, nebude tě to nudit a budeš cvičit pilněji. Kde je vůle, tam je cesta. Drž se!
+Procvičování — jaký sport: ⟦tập Yoga⟧ (jóga) / ⟦đánh cầu lông⟧ (badminton); jak vypadá: ⟦khoẻ đẹp⟧ (zdravě a hezky) / ⟦tràn đầy sức sống⟧ (plná života); jaký sport sedí: ⟦Yoga⟧ (jóga) / ⟦cầu lông⟧ (badminton); jak moc ho má ráda: ⟦muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp⟧ (chce si udělat profesionální kurz pro instruktory jógy) / ⟦sáng và tối nào em cũng đánh cầu lông⟧ (hraje badminton každé ráno i večer).
+Nová slovíčka: ⟦chạy bộ⟧ běh, jogging | ⟦cầu lông⟧ badminton | ⟦rèn luyện⟧ trénovat, posilovat | ⟦sức sống⟧ vitalita, energie | ⟦khoá⟧ kurz; zamknout | ⟦đào tạo⟧ vzdělávat, školit | ⟦chuyên nghiệp⟧ profesionální | ⟦thảo nào⟧ tak proto, není divu | ⟦quyết tâm⟧ předsevzít si | ⟦chí⟧ vůle
+=zh_cn
+核心表达：⟦đến mức⟧
+⟦动词 / 形容词 + đến mức A⟧ 意为“……到A的程度、……得以至于A”。
+❶ ⟦Hôm qua em có nhiều việc đến mức phải bỏ cả cơm tối.⟧ —— 昨天我事情多到连晚饭都没吃。
+❷ Ⓐ ⟦Anh lại gọi phở à?⟧ —— 你又点河粉了？ Ⓑ ⟦Ừ, anh thích phở đến mức sáng nào anh cũng ăn.⟧ —— 嗯，我喜欢河粉喜欢到每天早上都吃。
+与锻炼身体方法相关的表达：⟦đạp xe⟧ 骑自行车 | ⟦chạy bộ⟧ 跑步 | ⟦tập Yoga⟧ 练瑜伽 | ⟦đánh cầu lông⟧ 打羽毛球 | ⟦rèn luyện tại phòng Gym⟧ 在健身房锻炼
+句型练习2 —— 用所给表达仿照范例对话。
+范例（⟦bị ốm nặng, không đi làm được⟧ 病得很重，不能上班）：Ⓐ ⟦Vì sao hôm nay không thấy chị Hương nhỉ?⟧ —— 今天怎么没看见香姐？ Ⓑ ⟦Chị ấy bị ốm nặng đến mức không đi làm được.⟧ —— 她病得重到没法上班。
+❶（⟦đẹp ra nhiều, không ai nhận ra cô ấy⟧ 变漂亮了很多，没人认出她）Ⓐ ⟦Có phải kia là cô Lan không?⟧ —— 那是兰小姐吗？ Ⓑ ⟦Phải. Cô ấy đẹp ra nhiều đến mức không ai nhận ra cô ấy.⟧ —— 是的。她变漂亮到没人认得出来了。
+❷（⟦học tiếng Việt chăm chỉ, trong mơ cũng nói bằng tiếng Việt⟧ 努力学越南语，连做梦都说越南语）Ⓐ ⟦Nghe nói dạo này em học tiếng Việt cả ngày, đúng không?⟧ —— 听说你最近整天学越南语，是吗？ Ⓑ ⟦Đúng rồi. Em học tiếng Việt chăm chỉ đến mức trong mơ cũng nói bằng tiếng Việt.⟧ —— 对。我学越南语学到连做梦都说越南语。
+对话：敏浩和下班后去上瑜伽课的庄聊运动。
+庄：⟦Em về trước nhé. Em đi tập Yoga đây.⟧ —— 我先走了。我去练瑜伽了。
+敏浩：⟦Thảo nào, dạo này trông em khoẻ đẹp hơn so với trước.⟧ —— 难怪你最近看起来比以前更健康漂亮。
+庄：⟦Thế à? Cảm ơn anh.⟧ —— 是吗？谢谢你。
+敏浩：⟦Anh không thích tập thể dục lắm. Quyết tâm mấy cũng không quá 3 ngày.⟧ —— 我不太喜欢运动。不管下多大决心都坚持不过三天。
+庄：⟦Trước đây em cũng thế. Đã quyết tâm nhưng được ba bảy hai mốt ngày là thôi. Nhưng lần này thì khác. Chắc Yoga là môn thể thao phù hợp với em. Em thích Yoga đến mức muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp.⟧ —— 我以前也这样。下了决心，可没过几个礼拜就放弃了。不过这次不一样。瑜伽大概是适合我的运动。我喜欢瑜伽喜欢到想去上专业瑜伽教练培训课。
+敏浩：⟦À, vậy à! Hay là nhân dịp năm mới, anh cũng bắt đầu tập thể dục lại nhỉ?⟧ —— 啊，这样啊！要不趁新年，我也重新开始运动吧？
+庄：⟦Nếu tìm được môn phù hợp với anh thì anh sẽ không thấy chán nên sẽ có thể tập chăm hơn. Có chí thì nên. Anh cố lên nhé!⟧ —— 如果找到适合你的运动，你就不会觉得腻，就能更勤快地练了。有志者事竟成。加油哦！
+句型练习 —— 练什么运动：⟦tập Yoga⟧（练瑜伽）/ ⟦đánh cầu lông⟧（打羽毛球）；看起来怎样：⟦khoẻ đẹp⟧（健康漂亮）/ ⟦tràn đầy sức sống⟧（充满活力）；适合的运动：⟦Yoga⟧（瑜伽）/ ⟦cầu lông⟧（羽毛球）；喜欢到什么程度：⟦muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp⟧（想上专业瑜伽教练培训课）/ ⟦sáng và tối nào em cũng đánh cầu lông⟧（每天早晚都打羽毛球）。
+新单词：⟦chạy bộ⟧ 跑步、慢跑 | ⟦cầu lông⟧ 羽毛球 | ⟦rèn luyện⟧ 锻炼 | ⟦sức sống⟧ 活力、生机 | ⟦khoá⟧ 课程；锁 | ⟦đào tạo⟧ 培养、培训 | ⟦chuyên nghiệp⟧ 专业的、职业的 | ⟦thảo nào⟧ 难怪 | ⟦quyết tâm⟧ 下决心 | ⟦chí⟧ 意志
+=zh
+核心表達：⟦đến mức⟧
+⟦動詞 / 形容詞 + đến mức A⟧ 意為「……到A的程度、……得以至於A」。
+❶ ⟦Hôm qua em có nhiều việc đến mức phải bỏ cả cơm tối.⟧ —— 昨天我事情多到連晚餐都沒吃。
+❷ Ⓐ ⟦Anh lại gọi phở à?⟧ —— 你又點河粉了？ Ⓑ ⟦Ừ, anh thích phở đến mức sáng nào anh cũng ăn.⟧ —— 嗯，我喜歡河粉喜歡到每天早上都吃。
+與鍛鍊身體方法相關的表達：⟦đạp xe⟧ 騎腳踏車 | ⟦chạy bộ⟧ 跑步 | ⟦tập Yoga⟧ 練瑜伽 | ⟦đánh cầu lông⟧ 打羽毛球 | ⟦rèn luyện tại phòng Gym⟧ 在健身房鍛鍊
+句型練習2 —— 用所給表達仿照範例對話。
+範例（⟦bị ốm nặng, không đi làm được⟧ 病得很重，不能上班）：Ⓐ ⟦Vì sao hôm nay không thấy chị Hương nhỉ?⟧ —— 今天怎麼沒看到香姊？ Ⓑ ⟦Chị ấy bị ốm nặng đến mức không đi làm được.⟧ —— 她病得重到沒辦法上班。
+❶（⟦đẹp ra nhiều, không ai nhận ra cô ấy⟧ 變漂亮很多，沒人認出她）Ⓐ ⟦Có phải kia là cô Lan không?⟧ —— 那是蘭小姐嗎？ Ⓑ ⟦Phải. Cô ấy đẹp ra nhiều đến mức không ai nhận ra cô ấy.⟧ —— 是的。她變漂亮到沒人認得出來了。
+❷（⟦học tiếng Việt chăm chỉ, trong mơ cũng nói bằng tiếng Việt⟧ 認真學越南語，連做夢都說越南語）Ⓐ ⟦Nghe nói dạo này em học tiếng Việt cả ngày, đúng không?⟧ —— 聽說你最近整天學越南語，是嗎？ Ⓑ ⟦Đúng rồi. Em học tiếng Việt chăm chỉ đến mức trong mơ cũng nói bằng tiếng Việt.⟧ —— 對。我學越南語學到連做夢都說越南語。
+對話：敏浩和下班後要去上瑜伽課的莊聊運動。
+莊：⟦Em về trước nhé. Em đi tập Yoga đây.⟧ —— 我先走囉。我去練瑜伽了。
+敏浩：⟦Thảo nào, dạo này trông em khoẻ đẹp hơn so với trước.⟧ —— 難怪妳最近看起來比以前更健康漂亮。
+莊：⟦Thế à? Cảm ơn anh.⟧ —— 是嗎？謝謝你。
+敏浩：⟦Anh không thích tập thể dục lắm. Quyết tâm mấy cũng không quá 3 ngày.⟧ —— 我不太喜歡運動。不管下多大決心都撐不過三天。
+莊：⟦Trước đây em cũng thế. Đã quyết tâm nhưng được ba bảy hai mốt ngày là thôi. Nhưng lần này thì khác. Chắc Yoga là môn thể thao phù hợp với em. Em thích Yoga đến mức muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp.⟧ —— 我以前也是這樣。下了決心，可是沒過幾個禮拜就放棄了。不過這次不一樣。瑜伽大概是適合我的運動。我喜歡瑜伽喜歡到想去上專業瑜伽老師培訓課程。
+敏浩：⟦À, vậy à! Hay là nhân dịp năm mới, anh cũng bắt đầu tập thể dục lại nhỉ?⟧ —— 啊，這樣啊！要不趁新年，我也重新開始運動吧？
+莊：⟦Nếu tìm được môn phù hợp với anh thì anh sẽ không thấy chán nên sẽ có thể tập chăm hơn. Có chí thì nên. Anh cố lên nhé!⟧ —— 如果找到適合你的運動，你就不會覺得膩，就能更勤快地練了。有志者事竟成。加油喔！
+句型練習 —— 練什麼運動：⟦tập Yoga⟧（練瑜伽）/ ⟦đánh cầu lông⟧（打羽毛球）；看起來怎樣：⟦khoẻ đẹp⟧（健康漂亮）/ ⟦tràn đầy sức sống⟧（充滿活力）；適合的運動：⟦Yoga⟧（瑜伽）/ ⟦cầu lông⟧（羽毛球）；喜歡到什麼程度：⟦muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp⟧（想上專業瑜伽老師培訓課程）/ ⟦sáng và tối nào em cũng đánh cầu lông⟧（每天早晚都打羽毛球）。
+新單字：⟦chạy bộ⟧ 跑步、慢跑 | ⟦cầu lông⟧ 羽毛球 | ⟦rèn luyện⟧ 鍛鍊 | ⟦sức sống⟧ 活力、生氣 | ⟦khoá⟧ 課程；鎖 | ⟦đào tạo⟧ 培養、培訓 | ⟦chuyên nghiệp⟧ 專業的、職業的 | ⟦thảo nào⟧ 難怪 | ⟦quyết tâm⟧ 下決心 | ⟦chí⟧ 意志
+=en
+Key expression: ⟦đến mức⟧
+⟦verb / adjective + đến mức A⟧ means "so ~ that A, ~ to the point of A".
+❶ ⟦Hôm qua em có nhiều việc đến mức phải bỏ cả cơm tối.⟧ — Yesterday I had so much work that I even had to skip dinner.
+❷ Ⓐ ⟦Anh lại gọi phở à?⟧ — Phở again? Ⓑ ⟦Ừ, anh thích phở đến mức sáng nào anh cũng ăn.⟧ — Yes, I like phở so much that I eat it every morning.
+Expressions about ways of keeping fit: ⟦đạp xe⟧ cycling | ⟦chạy bộ⟧ running | ⟦tập Yoga⟧ doing yoga | ⟦đánh cầu lông⟧ playing badminton | ⟦rèn luyện tại phòng Gym⟧ working out at the gym
+Pattern practice 2 — talk as in the model using the given expression.
+Model (⟦bị ốm nặng, không đi làm được⟧ seriously ill, can't come to work): Ⓐ ⟦Vì sao hôm nay không thấy chị Hương nhỉ?⟧ — Why isn't Hương here today? Ⓑ ⟦Chị ấy bị ốm nặng đến mức không đi làm được.⟧ — She's so ill that she can't come to work.
+❶ (⟦đẹp ra nhiều, không ai nhận ra cô ấy⟧ has become much prettier, nobody recognised her) Ⓐ ⟦Có phải kia là cô Lan không?⟧ — Is that Lan over there? Ⓑ ⟦Phải. Cô ấy đẹp ra nhiều đến mức không ai nhận ra cô ấy.⟧ — Yes. She's become so much prettier that nobody recognised her.
+❷ (⟦học tiếng Việt chăm chỉ, trong mơ cũng nói bằng tiếng Việt⟧ study Vietnamese hard, even speak Vietnamese in dreams) Ⓐ ⟦Nghe nói dạo này em học tiếng Việt cả ngày, đúng không?⟧ — I hear you're studying Vietnamese all day these days, right? Ⓑ ⟦Đúng rồi. Em học tiếng Việt chăm chỉ đến mức trong mơ cũng nói bằng tiếng Việt.⟧ — That's right. I'm studying so hard that I even speak Vietnamese in my dreams.
+Dialogue: Min-ho is talking about exercise with Trang, who is going to a yoga class after work.
+Trang: ⟦Em về trước nhé. Em đi tập Yoga đây.⟧ — I'm heading off now. I'm going to yoga.
+Min-ho: ⟦Thảo nào, dạo này trông em khoẻ đẹp hơn so với trước.⟧ — No wonder you look healthier and prettier than before.
+Trang: ⟦Thế à? Cảm ơn anh.⟧ — Really? Thank you.
+Min-ho: ⟦Anh không thích tập thể dục lắm. Quyết tâm mấy cũng không quá 3 ngày.⟧ — I don't really like exercise. However determined I am, it never lasts more than three days.
+Trang: ⟦Trước đây em cũng thế. Đã quyết tâm nhưng được ba bảy hai mốt ngày là thôi. Nhưng lần này thì khác. Chắc Yoga là môn thể thao phù hợp với em. Em thích Yoga đến mức muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp.⟧ — I used to be the same. I'd make up my mind, but after a few weeks that was it. This time is different, though. Yoga must be the right sport for me. I like it so much that I want to take a professional yoga-teacher training course.
+Min-ho: ⟦À, vậy à! Hay là nhân dịp năm mới, anh cũng bắt đầu tập thể dục lại nhỉ?⟧ — Oh, really! Maybe I should start exercising again for the New Year?
+Trang: ⟦Nếu tìm được môn phù hợp với anh thì anh sẽ không thấy chán nên sẽ có thể tập chăm hơn. Có chí thì nên. Anh cố lên nhé!⟧ — If you find a sport that suits you, you won't get bored, so you'll be able to train more regularly. Where there's a will, there's a way. Go for it!
+Pattern practice — which sport: ⟦tập Yoga⟧ (yoga) / ⟦đánh cầu lông⟧ (badminton); how she looks: ⟦khoẻ đẹp⟧ (healthy and pretty) / ⟦tràn đầy sức sống⟧ (full of life); suitable sport: ⟦Yoga⟧ (yoga) / ⟦cầu lông⟧ (badminton); how much she likes it: ⟦muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp⟧ (wants to take a professional yoga-teacher course) / ⟦sáng và tối nào em cũng đánh cầu lông⟧ (plays badminton every morning and evening).
+New words: ⟦chạy bộ⟧ running, jogging | ⟦cầu lông⟧ badminton | ⟦rèn luyện⟧ to train | ⟦sức sống⟧ vitality | ⟦khoá⟧ course; to lock | ⟦đào tạo⟧ to train, educate | ⟦chuyên nghiệp⟧ professional | ⟦thảo nào⟧ no wonder | ⟦quyết tâm⟧ to be determined | ⟦chí⟧ will
+=fr
+Expression clé : ⟦đến mức⟧
+⟦verbe / adjectif + đến mức A⟧ signifie « ~ au point de A, si ~ que A ».
+❶ ⟦Hôm qua em có nhiều việc đến mức phải bỏ cả cơm tối.⟧ — Hier, j'avais tellement de travail que j'ai même dû sauter le dîner.
+❷ Ⓐ ⟦Anh lại gọi phở à?⟧ — Tu commandes encore un phở ? Ⓑ ⟦Ừ, anh thích phở đến mức sáng nào anh cũng ăn.⟧ — Oui, j'aime tellement le phở que j'en mange tous les matins.
+Expressions sur les façons de s'entretenir physiquement : ⟦đạp xe⟧ faire du vélo | ⟦chạy bộ⟧ courir | ⟦tập Yoga⟧ faire du yoga | ⟦đánh cầu lông⟧ jouer au badminton | ⟦rèn luyện tại phòng Gym⟧ s'entraîner en salle de sport
+Exercice 2 — dialoguez comme dans le modèle avec l'expression donnée.
+Modèle (⟦bị ốm nặng, không đi làm được⟧ gravement malade, ne peut pas venir travailler) : Ⓐ ⟦Vì sao hôm nay không thấy chị Hương nhỉ?⟧ — Pourquoi Hương n'est-elle pas là aujourd'hui ? Ⓑ ⟦Chị ấy bị ốm nặng đến mức không đi làm được.⟧ — Elle est si malade qu'elle ne peut pas venir travailler.
+❶ (⟦đẹp ra nhiều, không ai nhận ra cô ấy⟧ a beaucoup embelli, personne ne l'a reconnue) Ⓐ ⟦Có phải kia là cô Lan không?⟧ — C'est Lan, là-bas ? Ⓑ ⟦Phải. Cô ấy đẹp ra nhiều đến mức không ai nhận ra cô ấy.⟧ — Oui. Elle a tellement embelli que personne ne l'a reconnue.
+❷ (⟦học tiếng Việt chăm chỉ, trong mơ cũng nói bằng tiếng Việt⟧ étudier le vietnamien avec assiduité, parler vietnamien même en rêve) Ⓐ ⟦Nghe nói dạo này em học tiếng Việt cả ngày, đúng không?⟧ — Il paraît que tu étudies le vietnamien toute la journée ces temps-ci ? Ⓑ ⟦Đúng rồi. Em học tiếng Việt chăm chỉ đến mức trong mơ cũng nói bằng tiếng Việt.⟧ — Exact. J'étudie tellement que je parle vietnamien même en rêve.
+Dialogue : Min-ho parle de sport avec Trang, qui va à son cours de yoga après le travail.
+Trang : ⟦Em về trước nhé. Em đi tập Yoga đây.⟧ — J'y vais. Je pars au yoga.
+Min-ho : ⟦Thảo nào, dạo này trông em khoẻ đẹp hơn so với trước.⟧ — Pas étonnant que tu aies l'air en meilleure forme et plus belle qu'avant.
+Trang : ⟦Thế à? Cảm ơn anh.⟧ — Ah bon ? Merci.
+Min-ho : ⟦Anh không thích tập thể dục lắm. Quyết tâm mấy cũng không quá 3 ngày.⟧ — Moi, je n'aime pas trop le sport. Même avec la meilleure résolution, je ne tiens pas plus de trois jours.
+Trang : ⟦Trước đây em cũng thế. Đã quyết tâm nhưng được ba bảy hai mốt ngày là thôi. Nhưng lần này thì khác. Chắc Yoga là môn thể thao phù hợp với em. Em thích Yoga đến mức muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp.⟧ — Moi aussi avant. Je prenais de bonnes résolutions, puis au bout de quelques semaines, c'était fini. Mais cette fois, c'est différent. Le yoga doit être le sport qui me convient. Je l'aime au point de vouloir suivre une formation professionnelle de professeur de yoga.
+Min-ho : ⟦À, vậy à! Hay là nhân dịp năm mới, anh cũng bắt đầu tập thể dục lại nhỉ?⟧ — Ah bon ! Et si, pour la nouvelle année, je me remettais moi aussi au sport ?
+Trang : ⟦Nếu tìm được môn phù hợp với anh thì anh sẽ không thấy chán nên sẽ có thể tập chăm hơn. Có chí thì nên. Anh cố lên nhé!⟧ — Si tu trouves un sport qui te convient, tu ne t'ennuieras pas et tu pourras t'entraîner plus assidûment. Quand on veut, on peut. Courage !
+Exercices — quel sport : ⟦tập Yoga⟧ (yoga) / ⟦đánh cầu lông⟧ (badminton) ; son apparence : ⟦khoẻ đẹp⟧ (en forme et belle) / ⟦tràn đầy sức sống⟧ (pleine de vitalité) ; sport adapté : ⟦Yoga⟧ / ⟦cầu lông⟧ (badminton) ; jusqu'à quel point elle l'aime : ⟦muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp⟧ (vouloir suivre une formation de professeur de yoga) / ⟦sáng và tối nào em cũng đánh cầu lông⟧ (jouer au badminton matin et soir).
+Nouveaux mots : ⟦chạy bộ⟧ course à pied, jogging | ⟦cầu lông⟧ badminton | ⟦rèn luyện⟧ s'entraîner | ⟦sức sống⟧ vitalité | ⟦khoá⟧ formation, cours ; fermer à clé | ⟦đào tạo⟧ former | ⟦chuyên nghiệp⟧ professionnel | ⟦thảo nào⟧ pas étonnant que | ⟦quyết tâm⟧ être résolu | ⟦chí⟧ volonté
+=de
+Schlüsselausdruck: ⟦đến mức⟧
+⟦Verb / Adjektiv + đến mức A⟧ bedeutet „so ~, dass A; ~ bis zu dem Grad, dass A“.
+❶ ⟦Hôm qua em có nhiều việc đến mức phải bỏ cả cơm tối.⟧ — Gestern hatte ich so viel zu tun, dass ich sogar das Abendessen ausfallen lassen musste.
+❷ Ⓐ ⟦Anh lại gọi phở à?⟧ — Bestellst du schon wieder Phở? Ⓑ ⟦Ừ, anh thích phở đến mức sáng nào anh cũng ăn.⟧ — Ja, ich mag Phở so sehr, dass ich es jeden Morgen esse.
+Ausdrücke zu Arten der körperlichen Ertüchtigung: ⟦đạp xe⟧ Rad fahren | ⟦chạy bộ⟧ joggen | ⟦tập Yoga⟧ Yoga machen | ⟦đánh cầu lông⟧ Badminton spielen | ⟦rèn luyện tại phòng Gym⟧ im Fitnessstudio trainieren
+Übung 2 — wie im Muster mit dem vorgegebenen Ausdruck sprechen.
+Muster (⟦bị ốm nặng, không đi làm được⟧ schwer krank, kann nicht arbeiten): Ⓐ ⟦Vì sao hôm nay không thấy chị Hương nhỉ?⟧ — Warum ist Hương heute nicht da? Ⓑ ⟦Chị ấy bị ốm nặng đến mức không đi làm được.⟧ — Sie ist so krank, dass sie nicht zur Arbeit kommen kann.
+❶ (⟦đẹp ra nhiều, không ai nhận ra cô ấy⟧ ist viel hübscher geworden, niemand hat sie erkannt) Ⓐ ⟦Có phải kia là cô Lan không?⟧ — Ist das dort Lan? Ⓑ ⟦Phải. Cô ấy đẹp ra nhiều đến mức không ai nhận ra cô ấy.⟧ — Ja. Sie ist so viel hübscher geworden, dass niemand sie erkannt hat.
+❷ (⟦học tiếng Việt chăm chỉ, trong mơ cũng nói bằng tiếng Việt⟧ fleißig Vietnamesisch lernen, sogar im Traum Vietnamesisch sprechen) Ⓐ ⟦Nghe nói dạo này em học tiếng Việt cả ngày, đúng không?⟧ — Du lernst zurzeit den ganzen Tag Vietnamesisch, stimmt's? Ⓑ ⟦Đúng rồi. Em học tiếng Việt chăm chỉ đến mức trong mơ cũng nói bằng tiếng Việt.⟧ — Genau. Ich lerne so fleißig, dass ich sogar im Traum Vietnamesisch spreche.
+Dialog: Min-ho spricht mit Trang, die nach der Arbeit zum Yogakurs geht, über Sport.
+Trang: ⟦Em về trước nhé. Em đi tập Yoga đây.⟧ — Ich gehe schon mal. Ich muss zum Yoga.
+Min-ho: ⟦Thảo nào, dạo này trông em khoẻ đẹp hơn so với trước.⟧ — Kein Wunder, dass du in letzter Zeit gesünder und hübscher aussiehst als früher.
+Trang: ⟦Thế à? Cảm ơn anh.⟧ — Wirklich? Danke.
+Min-ho: ⟦Anh không thích tập thể dục lắm. Quyết tâm mấy cũng không quá 3 ngày.⟧ — Ich mag Sport nicht besonders. Egal wie fest ich es mir vornehme, ich halte keine drei Tage durch.
+Trang: ⟦Trước đây em cũng thế. Đã quyết tâm nhưng được ba bảy hai mốt ngày là thôi. Nhưng lần này thì khác. Chắc Yoga là môn thể thao phù hợp với em. Em thích Yoga đến mức muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp.⟧ — Früher war ich genauso. Ich hatte gute Vorsätze, aber nach ein paar Wochen war Schluss. Diesmal ist es anders. Yoga ist wohl der richtige Sport für mich. Ich mag es so sehr, dass ich eine professionelle Yogalehrer-Ausbildung machen möchte.
+Min-ho: ⟦À, vậy à! Hay là nhân dịp năm mới, anh cũng bắt đầu tập thể dục lại nhỉ?⟧ — Ach so! Vielleicht fange ich zum neuen Jahr auch wieder mit Sport an?
+Trang: ⟦Nếu tìm được môn phù hợp với anh thì anh sẽ không thấy chán nên sẽ có thể tập chăm hơn. Có chí thì nên. Anh cố lên nhé!⟧ — Wenn du einen Sport findest, der zu dir passt, wird es dir nicht langweilig und du trainierst fleißiger. Wo ein Wille ist, ist auch ein Weg. Du schaffst das!
+Satzmusterübung — welche Sportart: ⟦tập Yoga⟧ (Yoga) / ⟦đánh cầu lông⟧ (Badminton); wie sie aussieht: ⟦khoẻ đẹp⟧ (gesund und hübsch) / ⟦tràn đầy sức sống⟧ (voller Lebenskraft); passende Sportart: ⟦Yoga⟧ / ⟦cầu lông⟧ (Badminton); wie sehr sie es mag: ⟦muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp⟧ (will eine professionelle Yogalehrer-Ausbildung machen) / ⟦sáng và tối nào em cũng đánh cầu lông⟧ (spielt jeden Morgen und Abend Badminton).
+Neue Wörter: ⟦chạy bộ⟧ Laufen, Joggen | ⟦cầu lông⟧ Badminton | ⟦rèn luyện⟧ trainieren | ⟦sức sống⟧ Vitalität | ⟦khoá⟧ Kurs; abschließen | ⟦đào tạo⟧ ausbilden | ⟦chuyên nghiệp⟧ professionell | ⟦thảo nào⟧ kein Wunder | ⟦quyết tâm⟧ sich fest vornehmen | ⟦chí⟧ Wille
+=hu
+Kulcskifejezés: ⟦đến mức⟧
+Az ⟦ige / melléknév + đến mức A⟧ jelentése „annyira ~, hogy A; olyan mértékben ~, hogy A”.
+❶ ⟦Hôm qua em có nhiều việc đến mức phải bỏ cả cơm tối.⟧ — Tegnap annyi dolgom volt, hogy még a vacsorát is ki kellett hagynom.
+❷ Ⓐ ⟦Anh lại gọi phở à?⟧ — Megint phởt rendeltél? Ⓑ ⟦Ừ, anh thích phở đến mức sáng nào anh cũng ăn.⟧ — Igen, annyira szeretem a phởt, hogy minden reggel azt eszem.
+A testedzés módjaival kapcsolatos kifejezések: ⟦đạp xe⟧ biciklizni | ⟦chạy bộ⟧ futni | ⟦tập Yoga⟧ jógázni | ⟦đánh cầu lông⟧ tollaslabdázni | ⟦rèn luyện tại phòng Gym⟧ edzőteremben edzeni
+2. gyakorlat — beszélgessen a minta szerint a megadott kifejezéssel.
+Minta (⟦bị ốm nặng, không đi làm được⟧ súlyos beteg, nem tud dolgozni jönni): Ⓐ ⟦Vì sao hôm nay không thấy chị Hương nhỉ?⟧ — Miért nincs itt ma Hương? Ⓑ ⟦Chị ấy bị ốm nặng đến mức không đi làm được.⟧ — Annyira beteg, hogy nem tud bejönni dolgozni.
+❶ (⟦đẹp ra nhiều, không ai nhận ra cô ấy⟧ sokat szépült, senki sem ismerte fel) Ⓐ ⟦Có phải kia là cô Lan không?⟧ — Az ott nem Lan? Ⓑ ⟦Phải. Cô ấy đẹp ra nhiều đến mức không ai nhận ra cô ấy.⟧ — De igen. Annyit szépült, hogy senki sem ismerte fel.
+❷ (⟦học tiếng Việt chăm chỉ, trong mơ cũng nói bằng tiếng Việt⟧ szorgalmasan tanul vietnamiul, még álmában is vietnamiul beszél) Ⓐ ⟦Nghe nói dạo này em học tiếng Việt cả ngày, đúng không?⟧ — Azt hallom, mostanában egész nap vietnamiul tanulsz, igaz? Ⓑ ⟦Đúng rồi. Em học tiếng Việt chăm chỉ đến mức trong mơ cũng nói bằng tiếng Việt.⟧ — Igen. Olyan szorgalmasan tanulok, hogy még álmomban is vietnamiul beszélek.
+Párbeszéd: Min-ho a sportról beszélget Tranggal, aki munka után jógaórára megy.
+Trang: ⟦Em về trước nhé. Em đi tập Yoga đây.⟧ — Én megyek is. Jógázni megyek.
+Min-ho: ⟦Thảo nào, dạo này trông em khoẻ đẹp hơn so với trước.⟧ — Nem csoda, hogy mostanában egészségesebbnek és szebbnek látszol, mint korábban.
+Trang: ⟦Thế à? Cảm ơn anh.⟧ — Tényleg? Köszönöm.
+Min-ho: ⟦Anh không thích tập thể dục lắm. Quyết tâm mấy cũng không quá 3 ngày.⟧ — Én nem nagyon szeretek sportolni. Akármennyire elhatározom, három napnál tovább nem bírom.
+Trang: ⟦Trước đây em cũng thế. Đã quyết tâm nhưng được ba bảy hai mốt ngày là thôi. Nhưng lần này thì khác. Chắc Yoga là môn thể thao phù hợp với em. Em thích Yoga đến mức muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp.⟧ — Én is ilyen voltam. Elhatároztam, de pár hét múlva vége lett. De most más a helyzet. A jóga biztos az én sportom. Annyira szeretem, hogy el akarom végezni a profi jógaoktatói képzést.
+Min-ho: ⟦À, vậy à! Hay là nhân dịp năm mới, anh cũng bắt đầu tập thể dục lại nhỉ?⟧ — Á, értem! Mi lenne, ha az új év alkalmából én is újra elkezdenék sportolni?
+Trang: ⟦Nếu tìm được môn phù hợp với anh thì anh sẽ không thấy chán nên sẽ có thể tập chăm hơn. Có chí thì nên. Anh cố lên nhé!⟧ — Ha találsz egy hozzád illő sportot, nem fogod megunni, és szorgalmasabban tudsz edzeni. Akarat van, út is van. Hajrá!
+Mintagyakorlat — milyen sport: ⟦tập Yoga⟧ (jóga) / ⟦đánh cầu lông⟧ (tollaslabda); hogyan néz ki: ⟦khoẻ đẹp⟧ (egészséges és szép) / ⟦tràn đầy sức sống⟧ (életerővel teli); illő sport: ⟦Yoga⟧ (jóga) / ⟦cầu lông⟧ (tollaslabda); mennyire szereti: ⟦muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp⟧ (profi jógaoktatói képzést akar végezni) / ⟦sáng và tối nào em cũng đánh cầu lông⟧ (minden reggel és este tollaslabdázik).
+Új szavak: ⟦chạy bộ⟧ futás, kocogás | ⟦cầu lông⟧ tollaslabda | ⟦rèn luyện⟧ edzeni | ⟦sức sống⟧ életerő | ⟦khoá⟧ tanfolyam; bezárni | ⟦đào tạo⟧ képezni | ⟦chuyên nghiệp⟧ profi, szakmai | ⟦thảo nào⟧ nem csoda | ⟦quyết tâm⟧ elhatározni | ⟦chí⟧ akarat
+=id
+Ungkapan kunci: ⟦đến mức⟧
+⟦verba / adjektiva + đến mức A⟧ berarti "~ sampai A, sedemikian ~ sehingga A".
+❶ ⟦Hôm qua em có nhiều việc đến mức phải bỏ cả cơm tối.⟧ — Kemarin pekerjaanku banyak sekali sampai harus melewatkan makan malam.
+❷ Ⓐ ⟦Anh lại gọi phở à?⟧ — Kakak pesan phở lagi? Ⓑ ⟦Ừ, anh thích phở đến mức sáng nào anh cũng ăn.⟧ — Iya, aku suka phở sampai setiap pagi makan phở.
+Ungkapan tentang cara melatih tubuh: ⟦đạp xe⟧ bersepeda | ⟦chạy bộ⟧ lari | ⟦tập Yoga⟧ yoga | ⟦đánh cầu lông⟧ main bulu tangkis | ⟦rèn luyện tại phòng Gym⟧ latihan di gym
+Latihan pola 2 — bercakaplah seperti contoh dengan ungkapan yang diberikan.
+Contoh (⟦bị ốm nặng, không đi làm được⟧ sakit parah, tidak bisa bekerja): Ⓐ ⟦Vì sao hôm nay không thấy chị Hương nhỉ?⟧ — Kenapa hari ini Kak Hương tidak kelihatan? Ⓑ ⟦Chị ấy bị ốm nặng đến mức không đi làm được.⟧ — Dia sakit parah sampai tidak bisa masuk kerja.
+❶ (⟦đẹp ra nhiều, không ai nhận ra cô ấy⟧ jadi jauh lebih cantik, tidak ada yang mengenalinya) Ⓐ ⟦Có phải kia là cô Lan không?⟧ — Apakah itu Nona Lan? Ⓑ ⟦Phải. Cô ấy đẹp ra nhiều đến mức không ai nhận ra cô ấy.⟧ — Betul. Dia jadi jauh lebih cantik sampai tidak ada yang mengenalinya.
+❷ (⟦học tiếng Việt chăm chỉ, trong mơ cũng nói bằng tiếng Việt⟧ rajin belajar bahasa Vietnam, sampai mimpi pun berbahasa Vietnam) Ⓐ ⟦Nghe nói dạo này em học tiếng Việt cả ngày, đúng không?⟧ — Katanya akhir-akhir ini kamu belajar bahasa Vietnam seharian, benar? Ⓑ ⟦Đúng rồi. Em học tiếng Việt chăm chỉ đến mức trong mơ cũng nói bằng tiếng Việt.⟧ — Benar. Aku rajin belajar bahasa Vietnam sampai di dalam mimpi pun berbicara bahasa Vietnam.
+Percakapan: Min-ho berbicara tentang olahraga dengan Trang yang pergi ke kelas yoga sepulang kerja.
+Trang: ⟦Em về trước nhé. Em đi tập Yoga đây.⟧ — Aku pulang duluan, ya. Aku mau latihan yoga.
+Min-ho: ⟦Thảo nào, dạo này trông em khoẻ đẹp hơn so với trước.⟧ — Pantas saja akhir-akhir ini kamu kelihatan lebih sehat dan cantik dibanding dulu.
+Trang: ⟦Thế à? Cảm ơn anh.⟧ — Oh ya? Terima kasih.
+Min-ho: ⟦Anh không thích tập thể dục lắm. Quyết tâm mấy cũng không quá 3 ngày.⟧ — Aku tidak terlalu suka olahraga. Sekuat apa pun tekadku, tidak pernah lebih dari 3 hari.
+Trang: ⟦Trước đây em cũng thế. Đã quyết tâm nhưng được ba bảy hai mốt ngày là thôi. Nhưng lần này thì khác. Chắc Yoga là môn thể thao phù hợp với em. Em thích Yoga đến mức muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp.⟧ — Dulu aku juga begitu. Sudah bertekad, tapi beberapa minggu kemudian berhenti. Tapi kali ini berbeda. Sepertinya yoga olahraga yang cocok untukku. Aku suka yoga sampai ingin ikut kursus pelatihan instruktur yoga profesional.
+Min-ho: ⟦À, vậy à! Hay là nhân dịp năm mới, anh cũng bắt đầu tập thể dục lại nhỉ?⟧ — Oh, begitu! Bagaimana kalau dalam rangka tahun baru aku juga mulai berolahraga lagi?
+Trang: ⟦Nếu tìm được môn phù hợp với anh thì anh sẽ không thấy chán nên sẽ có thể tập chăm hơn. Có chí thì nên. Anh cố lên nhé!⟧ — Kalau Kakak menemukan olahraga yang cocok, Kakak tidak akan bosan sehingga bisa berlatih lebih rajin. Di mana ada kemauan, di situ ada jalan. Semangat, ya!
+Latihan pola — olahraga apa: ⟦tập Yoga⟧ (yoga) / ⟦đánh cầu lông⟧ (bulu tangkis); kelihatan seperti apa: ⟦khoẻ đẹp⟧ (sehat dan cantik) / ⟦tràn đầy sức sống⟧ (penuh semangat hidup); olahraga yang cocok: ⟦Yoga⟧ / ⟦cầu lông⟧ (bulu tangkis); sesuka apa: ⟦muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp⟧ (ingin ikut kursus instruktur yoga profesional) / ⟦sáng và tối nào em cũng đánh cầu lông⟧ (setiap pagi dan malam main bulu tangkis).
+Kosakata baru: ⟦chạy bộ⟧ lari, jogging | ⟦cầu lông⟧ bulu tangkis | ⟦rèn luyện⟧ melatih | ⟦sức sống⟧ semangat hidup, vitalitas | ⟦khoá⟧ kursus; mengunci | ⟦đào tạo⟧ melatih, mendidik | ⟦chuyên nghiệp⟧ profesional | ⟦thảo nào⟧ pantas saja | ⟦quyết tâm⟧ bertekad | ⟦chí⟧ kemauan
+=ja
+核心表現：⟦đến mức⟧
+⟦動詞 / 形容詞 + đến mức A⟧ は「Aするほど～だ」という意味を表します。
+❶ ⟦Hôm qua em có nhiều việc đến mức phải bỏ cả cơm tối.⟧ — 昨日は夕食も抜かなければならないほど仕事が多かったです。
+❷ Ⓐ ⟦Anh lại gọi phở à?⟧ — またフォーを頼んだんですか。 Ⓑ ⟦Ừ, anh thích phở đến mức sáng nào anh cũng ăn.⟧ — うん、毎朝食べるほどフォーが好きなんだ。
+体を鍛える方法に関する表現：⟦đạp xe⟧ 自転車に乗る | ⟦chạy bộ⟧ ジョギング | ⟦tập Yoga⟧ ヨガをする | ⟦đánh cầu lông⟧ バドミントンをする | ⟦rèn luyện tại phòng Gym⟧ ジムで鍛える
+文型練習2 — 与えられた表現を使って例のように会話してみましょう。
+例（⟦bị ốm nặng, không đi làm được⟧ 重い病気で、出勤できない）：Ⓐ ⟦Vì sao hôm nay không thấy chị Hương nhỉ?⟧ — 今日はどうしてフオンさんを見かけないんでしょう。 Ⓑ ⟦Chị ấy bị ốm nặng đến mức không đi làm được.⟧ — 出勤できないほど重い病気なんです。
+❶（⟦đẹp ra nhiều, không ai nhận ra cô ấy⟧ ずいぶんきれいになって、誰も彼女だとわからない）Ⓐ ⟦Có phải kia là cô Lan không?⟧ — あれはランさんじゃないですか。 Ⓑ ⟦Phải. Cô ấy đẹp ra nhiều đến mức không ai nhận ra cô ấy.⟧ — そうです。誰も気づかないほどきれいになりましたね。
+❷（⟦học tiếng Việt chăm chỉ, trong mơ cũng nói bằng tiếng Việt⟧ ベトナム語を熱心に勉強する、夢でもベトナム語を話す）Ⓐ ⟦Nghe nói dạo này em học tiếng Việt cả ngày, đúng không?⟧ — 最近一日中ベトナム語を勉強しているそうだね。 Ⓑ ⟦Đúng rồi. Em học tiếng Việt chăm chỉ đến mức trong mơ cũng nói bằng tiếng Việt.⟧ — そうなんです。夢の中でもベトナム語を話すほど熱心に勉強しています。
+会話：ミンホが、仕事の後にヨガ教室に行くチャンと運動について話しています。
+チャン：⟦Em về trước nhé. Em đi tập Yoga đây.⟧ — お先に失礼します。ヨガに行ってきます。
+ミンホ：⟦Thảo nào, dạo này trông em khoẻ đẹp hơn so với trước.⟧ — どうりで、最近前より健康的できれいに見えるわけだ。
+チャン：⟦Thế à? Cảm ơn anh.⟧ — そうですか。ありがとうございます。
+ミンホ：⟦Anh không thích tập thể dục lắm. Quyết tâm mấy cũng không quá 3 ngày.⟧ — 僕は運動があまり好きじゃないんだ。どんなに決心しても三日坊主で。
+チャン：⟦Trước đây em cũng thế. Đã quyết tâm nhưng được ba bảy hai mốt ngày là thôi. Nhưng lần này thì khác. Chắc Yoga là môn thể thao phù hợp với em. Em thích Yoga đến mức muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp.⟧ — 私も前はそうでした。決心しても数週間でやめてしまって。でも今回は違います。ヨガはきっと私に合ったスポーツなんです。プロのヨガ講師養成講座を受けたいと思うほど好きなんです。
+ミンホ：⟦À, vậy à! Hay là nhân dịp năm mới, anh cũng bắt đầu tập thể dục lại nhỉ?⟧ — へえ、そうなんだ！じゃあ新年を機に、僕もまた運動を始めようかな。
+チャン：⟦Nếu tìm được môn phù hợp với anh thì anh sẽ không thấy chán nên sẽ có thể tập chăm hơn. Có chí thì nên. Anh cố lên nhé!⟧ — 自分に合うスポーツが見つかれば飽きないので、もっと熱心に続けられますよ。意志あるところに道は開けます。がんばってくださいね！
+文型練習 — どんなスポーツ：⟦tập Yoga⟧（ヨガ）/ ⟦đánh cầu lông⟧（バドミントン）；どう見えるか：⟦khoẻ đẹp⟧（健康的できれい）/ ⟦tràn đầy sức sống⟧（生き生きとしている）；合うスポーツ：⟦Yoga⟧（ヨガ）/ ⟦cầu lông⟧（バドミントン）；どのくらい好きか：⟦muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp⟧（プロのヨガ講師養成講座を受けたい）/ ⟦sáng và tối nào em cũng đánh cầu lông⟧（毎朝毎晩バドミントンをする）。
+新出単語：⟦chạy bộ⟧ ランニング、ジョギング | ⟦cầu lông⟧ バドミントン | ⟦rèn luyện⟧ 鍛える | ⟦sức sống⟧ 生気、活気 | ⟦khoá⟧ 課程、講座；鍵をかける | ⟦đào tạo⟧ 養成する | ⟦chuyên nghiệp⟧ 専門の、プロの | ⟦thảo nào⟧ どうりで | ⟦quyết tâm⟧ 決心する | ⟦chí⟧ 意志
+=pl
+Kluczowe wyrażenie: ⟦đến mức⟧
+⟦czasownik / przymiotnik + đến mức A⟧ znaczy „~ do tego stopnia, że A; tak ~, że A”.
+❶ ⟦Hôm qua em có nhiều việc đến mức phải bỏ cả cơm tối.⟧ — Wczoraj miałam tyle pracy, że musiałam nawet opuścić kolację.
+❷ Ⓐ ⟦Anh lại gọi phở à?⟧ — Znowu zamówiłeś phở? Ⓑ ⟦Ừ, anh thích phở đến mức sáng nào anh cũng ăn.⟧ — Tak, tak lubię phở, że jem je każdego ranka.
+Wyrażenia dotyczące sposobów ćwiczenia ciała: ⟦đạp xe⟧ jeździć na rowerze | ⟦chạy bộ⟧ biegać | ⟦tập Yoga⟧ ćwiczyć jogę | ⟦đánh cầu lông⟧ grać w badmintona | ⟦rèn luyện tại phòng Gym⟧ trenować na siłowni
+Ćwiczenie 2 — rozmawiaj jak we wzorze, używając podanego wyrażenia.
+Wzór (⟦bị ốm nặng, không đi làm được⟧ ciężko chora, nie może przyjść do pracy): Ⓐ ⟦Vì sao hôm nay không thấy chị Hương nhỉ?⟧ — Czemu nie ma dziś Hương? Ⓑ ⟦Chị ấy bị ốm nặng đến mức không đi làm được.⟧ — Jest tak chora, że nie może przyjść do pracy.
+❶ (⟦đẹp ra nhiều, không ai nhận ra cô ấy⟧ bardzo wyładniała, nikt jej nie poznał) Ⓐ ⟦Có phải kia là cô Lan không?⟧ — Czy to tam nie Lan? Ⓑ ⟦Phải. Cô ấy đẹp ra nhiều đến mức không ai nhận ra cô ấy.⟧ — Tak. Wyładniała tak bardzo, że nikt jej nie poznał.
+❷ (⟦học tiếng Việt chăm chỉ, trong mơ cũng nói bằng tiếng Việt⟧ pilnie uczyć się wietnamskiego, nawet we śnie mówić po wietnamsku) Ⓐ ⟦Nghe nói dạo này em học tiếng Việt cả ngày, đúng không?⟧ — Podobno ostatnio całymi dniami uczysz się wietnamskiego, prawda? Ⓑ ⟦Đúng rồi. Em học tiếng Việt chăm chỉ đến mức trong mơ cũng nói bằng tiếng Việt.⟧ — Zgadza się. Uczę się tak pilnie, że nawet we śnie mówię po wietnamsku.
+Dialog: Min-ho rozmawia o sporcie z Trang, która po pracy idzie na zajęcia jogi.
+Trang: ⟦Em về trước nhé. Em đi tập Yoga đây.⟧ — Ja już idę. Idę na jogę.
+Min-ho: ⟦Thảo nào, dạo này trông em khoẻ đẹp hơn so với trước.⟧ — Nic dziwnego, że ostatnio wyglądasz zdrowiej i ładniej niż kiedyś.
+Trang: ⟦Thế à? Cảm ơn anh.⟧ — Naprawdę? Dziękuję.
+Min-ho: ⟦Anh không thích tập thể dục lắm. Quyết tâm mấy cũng không quá 3 ngày.⟧ — Ja niezbyt lubię ćwiczyć. Choćbym nie wiem jak postanowił, nie wytrzymuję dłużej niż trzy dni.
+Trang: ⟦Trước đây em cũng thế. Đã quyết tâm nhưng được ba bảy hai mốt ngày là thôi. Nhưng lần này thì khác. Chắc Yoga là môn thể thao phù hợp với em. Em thích Yoga đến mức muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp.⟧ — Ja też tak miałam. Postanawiałam, ale po paru tygodniach był koniec. Tym razem jest inaczej. Joga to chyba sport dla mnie. Lubię ją do tego stopnia, że chcę zrobić profesjonalny kurs instruktora jogi.
+Min-ho: ⟦À, vậy à! Hay là nhân dịp năm mới, anh cũng bắt đầu tập thể dục lại nhỉ?⟧ — Ach tak! A może z okazji nowego roku też znowu zacznę ćwiczyć?
+Trang: ⟦Nếu tìm được môn phù hợp với anh thì anh sẽ không thấy chán nên sẽ có thể tập chăm hơn. Có chí thì nên. Anh cố lên nhé!⟧ — Jeśli znajdziesz sport, który ci pasuje, nie znudzi ci się i będziesz ćwiczyć regularniej. Dla chcącego nic trudnego. Powodzenia!
+Ćwiczenie wzorców — jaki sport: ⟦tập Yoga⟧ (joga) / ⟦đánh cầu lông⟧ (badminton); jak wygląda: ⟦khoẻ đẹp⟧ (zdrowo i ładnie) / ⟦tràn đầy sức sống⟧ (pełna energii); odpowiedni sport: ⟦Yoga⟧ (joga) / ⟦cầu lông⟧ (badminton); jak bardzo lubi: ⟦muốn học khoá đào tạo giáo viên Yoga chuyên nghiệp⟧ (chce zrobić profesjonalny kurs instruktora jogi) / ⟦sáng và tối nào em cũng đánh cầu lông⟧ (gra w badmintona co rano i co wieczór).
+Nowe słówka: ⟦chạy bộ⟧ bieganie, jogging | ⟦cầu lông⟧ badminton | ⟦rèn luyện⟧ trenować | ⟦sức sống⟧ witalność | ⟦khoá⟧ kurs; zamknąć na klucz | ⟦đào tạo⟧ szkolić | ⟦chuyên nghiệp⟧ profesjonalny | ⟦thảo nào⟧ nic dziwnego | ⟦quyết tâm⟧ postanowić | ⟦chí⟧ wola

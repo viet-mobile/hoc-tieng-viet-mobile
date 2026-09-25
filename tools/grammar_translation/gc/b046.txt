@@ -1,0 +1,201 @@
+@@ pdf-grammar-44336a2816fd63a8#0
+=cs
+Klíčový výraz: ⟦~ đi ~ lại⟧
+⟦sloveso + đi + sloveso + lại⟧ vyjadřuje opakování děje: „~ znovu a znovu, pořád dokola“.
+❶ ⟦Ngày mai em thi, em ôn đi ôn lại rồi mà vẫn thấy lo quá.⟧ — Zítra mám zkoušku; opakovala jsem si to znovu a znovu, a pořád mám strach.
+❷ Ⓐ ⟦Anh có chuyện gì à?⟧ — Stalo se něco? Ⓑ ⟦Anh đã giải thích đi giải thích lại rồi mà em ấy vẫn làm sai.⟧ — Vysvětloval jsem to pořád dokola, a on to stejně dělá špatně.
+Výrazy ke způsobům studia cizích jazyků: ⟦học ở trung tâm ngoại ngữ⟧ studovat v jazykové škole | ⟦học riêng với thầy cô ở nhà⟧ mít doma soukromé hodiny s učitelem | ⟦tự học qua sách, phim ảnh, bài hát⟧ učit se sám z knih, filmů a písní | ⟦học lớp học online hoặc qua ứng dụng ngoại ngữ⟧ učit se v online kurzech nebo přes jazykové aplikace
+Procvičování 1 — veďte rozhovor s daným výrazem podle vzoru.
+Vzor (⟦nghe bài hát, thấy rất ngọt ngào⟧ poslouchat píseň, připadá mi moc sladká): Ⓐ ⟦Chị lại nghe bài hát ấy à?⟧ — Zase posloucháš tu písničku? Ⓑ ⟦Ừ, quá hay. Chị nghe đi nghe lại mà vẫn thấy rất ngọt ngào.⟧ — Jo, je úžasná. Poslouchám ji pořád dokola a pořád mi připadá tak sladká.
+❶ (⟦xem bộ phim, không thấy chán⟧ dívat se na film, neomrzí se) Ⓐ ⟦Em lại xem bộ phim ấy à?⟧ — Zase se díváš na ten film? Ⓑ ⟦Vâng, hay lắm anh ạ. Em xem đi xem lại mà vẫn không thấy chán.⟧ — Ano, je moc dobrý. Dívám se na něj znovu a znovu a pořád mě neomrzí.
+❷ (⟦đọc tiểu thuyết, thấy rất cảm động⟧ číst román, velmi dojímavý) Ⓐ ⟦Bạn lại đọc cuốn tiểu thuyết ấy à?⟧ — Zase čteš ten román? Ⓑ ⟦Ừ, thú vị lắm. Mình đọc đi đọc lại mà vẫn thấy rất cảm động.⟧ — Jo, je moc zajímavý. Čtu ho pořád dokola a pořád mě dojímá.
+Rozhovor: Min-ho mluví s Trang o studiu vietnamštiny.
+Min-ho: ⟦Trang ơi, làm thế nào để có thể học tiếng Việt thú vị nhỉ?⟧ — Trang, jak se dá vietnamština učit zábavně?
+Trang: ⟦Sao ạ? Anh định học thêm tiếng Việt nữa à?⟧ — Proč? Chceš se učit vietnamštinu ještě víc?
+Min-ho: ⟦Ừ. Dạo này, anh thấy khả năng tiếng Việt của mình ngày càng kém đi.⟧ — Jo. Poslední dobou mám pocit, že se moje vietnamština zhoršuje.
+Trang: ⟦Trời, anh giỏi rồi mà.⟧ — Ale no tak, vždyť už mluvíš dobře.
+Min-ho: ⟦Trước đây anh cũng tưởng thế. Nhưng gần đây, có lần anh đọc đi đọc lại một bài báo mấy lần mà vẫn không hiểu rõ nội dung.⟧ — Dřív jsem si to taky myslel. Ale nedávno jsem četl jeden článek pořád dokola a stejně jsem pořádně nepochopil, o čem je.
+Trang: ⟦Vậy thì anh đăng kí học ở trung tâm dạy tiếng Việt đi. Hay là anh học qua phim ảnh? Nếu học qua những bộ phim Việt Nam được làm lại từ phim Hàn Quốc thì chắc là anh sẽ học hiệu quả hơn mà không bị căng thẳng.⟧ — Tak se přihlas do kurzu vietnamštiny. Nebo se uč z filmů? Kdyby ses učil z vietnamských remaků korejských filmů, šlo by ti to asi efektivněji a bez stresu.
+Min-ho: ⟦Cách này hay đấy. Anh sẽ thử ngay. Cảm ơn em.⟧ — To je dobrý nápad. Hned to zkusím. Díky.
+Procvičování — jak se chce učit: ⟦thú vị⟧ (zábavně) / ⟦có hiệu quả⟧ (efektivně); jak se snažil: ⟦đọc đi đọc lại một bài báo⟧ (četl článek pořád dokola) / ⟦xem đi xem lại một bộ phim truyền hình Việt⟧ (díval se znovu a znovu na vietnamský seriál); jak se učit: ⟦học ở trung tâm dạy tiếng Việt⟧ (v kurzu vietnamštiny) / ⟦học lớp học online⟧ (v online kurzu).
+Nová slovíčka: ⟦ngọt ngào⟧ sladký, líbezný | ⟦cảm động⟧ dojatý, dojemný | ⟦khả năng⟧ schopnost, možnost
+=zh_cn
+核心表达：⟦~ đi ~ lại⟧
+⟦动词 + đi + 动词 + lại⟧ 表示行为的反复，意为“……了又……、反复……”。
+❶ ⟦Ngày mai em thi, em ôn đi ôn lại rồi mà vẫn thấy lo quá.⟧ —— 明天我要考试，复习了一遍又一遍，还是很担心。
+❷ Ⓐ ⟦Anh có chuyện gì à?⟧ —— 你有什么事吗？ Ⓑ ⟦Anh đã giải thích đi giải thích lại rồi mà em ấy vẫn làm sai.⟧ —— 我解释了一遍又一遍，他还是做错了。
+与外语学习方法相关的表达：⟦học ở trung tâm ngoại ngữ⟧ 在外语中心学习 | ⟦học riêng với thầy cô ở nhà⟧ 在家请老师单独辅导 | ⟦tự học qua sách, phim ảnh, bài hát⟧ 通过书、影视、歌曲自学 | ⟦học lớp học online hoặc qua ứng dụng ngoại ngữ⟧ 上网课或用外语应用学习
+句型练习1 —— 用所给表达仿照范例对话。
+范例（⟦nghe bài hát, thấy rất ngọt ngào⟧ 听歌，觉得很甜美）：Ⓐ ⟦Chị lại nghe bài hát ấy à?⟧ —— 你又在听那首歌？ Ⓑ ⟦Ừ, quá hay. Chị nghe đi nghe lại mà vẫn thấy rất ngọt ngào.⟧ —— 嗯，太好听了。我听了一遍又一遍，还是觉得很甜美。
+❶（⟦xem bộ phim, không thấy chán⟧ 看电影，不觉得腻）Ⓐ ⟦Em lại xem bộ phim ấy à?⟧ —— 你又在看那部电影？ Ⓑ ⟦Vâng, hay lắm anh ạ. Em xem đi xem lại mà vẫn không thấy chán.⟧ —— 是的，很好看。我看了一遍又一遍还是不腻。
+❷（⟦đọc tiểu thuyết, thấy rất cảm động⟧ 读小说，觉得很感动）Ⓐ ⟦Bạn lại đọc cuốn tiểu thuyết ấy à?⟧ —— 你又在读那本小说？ Ⓑ ⟦Ừ, thú vị lắm. Mình đọc đi đọc lại mà vẫn thấy rất cảm động.⟧ —— 嗯，很有意思。我读了一遍又一遍，还是很感动。
+对话：敏浩在和庄聊学越南语的事。
+敏浩：⟦Trang ơi, làm thế nào để có thể học tiếng Việt thú vị nhỉ?⟧ —— 庄，怎样才能有趣地学越南语呢？
+庄：⟦Sao ạ? Anh định học thêm tiếng Việt nữa à?⟧ —— 怎么了？你打算再多学越南语吗？
+敏浩：⟦Ừ. Dạo này, anh thấy khả năng tiếng Việt của mình ngày càng kém đi.⟧ —— 嗯。最近我觉得自己的越南语水平越来越差了。
+庄：⟦Trời, anh giỏi rồi mà.⟧ —— 天哪，你已经很厉害了呀。
+敏浩：⟦Trước đây anh cũng tưởng thế. Nhưng gần đây, có lần anh đọc đi đọc lại một bài báo mấy lần mà vẫn không hiểu rõ nội dung.⟧ —— 以前我也这么以为。可最近有一次，我把一篇报道读了好几遍还是没弄懂内容。
+庄：⟦Vậy thì anh đăng kí học ở trung tâm dạy tiếng Việt đi. Hay là anh học qua phim ảnh? Nếu học qua những bộ phim Việt Nam được làm lại từ phim Hàn Quốc thì chắc là anh sẽ học hiệu quả hơn mà không bị căng thẳng.⟧ —— 那你去越南语培训中心报名吧。或者通过影视学？如果看那些翻拍自韩国电影的越南电影来学，你应该能学得更有效又没压力。
+敏浩：⟦Cách này hay đấy. Anh sẽ thử ngay. Cảm ơn em.⟧ —— 这个方法好。我马上试试。谢谢你。
+句型练习 —— 想怎样学：⟦thú vị⟧（有趣地）/ ⟦có hiệu quả⟧（有效地）；做过什么努力：⟦đọc đi đọc lại một bài báo⟧（把一篇报道读了又读）/ ⟦xem đi xem lại một bộ phim truyền hình Việt⟧（把一部越南电视剧看了又看）；学习方法：⟦học ở trung tâm dạy tiếng Việt⟧（在越南语培训中心学）/ ⟦học lớp học online⟧（上网课）。
+新单词：⟦ngọt ngào⟧ 甜美 | ⟦cảm động⟧ 感动 | ⟦khả năng⟧ 能力、可能性
+=zh
+核心表達：⟦~ đi ~ lại⟧
+⟦動詞 + đi + 動詞 + lại⟧ 表示行為的反覆，意為「……了又……、反覆……」。
+❶ ⟦Ngày mai em thi, em ôn đi ôn lại rồi mà vẫn thấy lo quá.⟧ —— 明天我要考試，複習了一遍又一遍，還是很擔心。
+❷ Ⓐ ⟦Anh có chuyện gì à?⟧ —— 你有什麼事嗎？ Ⓑ ⟦Anh đã giải thích đi giải thích lại rồi mà em ấy vẫn làm sai.⟧ —— 我解釋了一遍又一遍，他還是做錯了。
+與外語學習方法相關的表達：⟦học ở trung tâm ngoại ngữ⟧ 在外語中心學習 | ⟦học riêng với thầy cô ở nhà⟧ 在家請老師個別指導 | ⟦tự học qua sách, phim ảnh, bài hát⟧ 透過書、影視、歌曲自學 | ⟦học lớp học online hoặc qua ứng dụng ngoại ngữ⟧ 上線上課程或用外語App學習
+句型練習1 —— 用所給表達仿照範例對話。
+範例（⟦nghe bài hát, thấy rất ngọt ngào⟧ 聽歌，覺得很甜美）：Ⓐ ⟦Chị lại nghe bài hát ấy à?⟧ —— 妳又在聽那首歌？ Ⓑ ⟦Ừ, quá hay. Chị nghe đi nghe lại mà vẫn thấy rất ngọt ngào.⟧ —— 嗯，太好聽了。我聽了一遍又一遍，還是覺得很甜美。
+❶（⟦xem bộ phim, không thấy chán⟧ 看電影，不覺得膩）Ⓐ ⟦Em lại xem bộ phim ấy à?⟧ —— 妳又在看那部電影？ Ⓑ ⟦Vâng, hay lắm anh ạ. Em xem đi xem lại mà vẫn không thấy chán.⟧ —— 是的，很好看。我看了一遍又一遍還是不膩。
+❷（⟦đọc tiểu thuyết, thấy rất cảm động⟧ 讀小說，覺得很感動）Ⓐ ⟦Bạn lại đọc cuốn tiểu thuyết ấy à?⟧ —— 你又在讀那本小說？ Ⓑ ⟦Ừ, thú vị lắm. Mình đọc đi đọc lại mà vẫn thấy rất cảm động.⟧ —— 嗯，很有意思。我讀了一遍又一遍，還是很感動。
+對話：敏浩在和莊聊學越南語的事。
+敏浩：⟦Trang ơi, làm thế nào để có thể học tiếng Việt thú vị nhỉ?⟧ —— 莊，怎樣才能有趣地學越南語呢？
+莊：⟦Sao ạ? Anh định học thêm tiếng Việt nữa à?⟧ —— 怎麼了？你打算再多學越南語嗎？
+敏浩：⟦Ừ. Dạo này, anh thấy khả năng tiếng Việt của mình ngày càng kém đi.⟧ —— 嗯。最近我覺得自己的越南語能力越來越差了。
+莊：⟦Trời, anh giỏi rồi mà.⟧ —— 天啊，你已經很厲害了呀。
+敏浩：⟦Trước đây anh cũng tưởng thế. Nhưng gần đây, có lần anh đọc đi đọc lại một bài báo mấy lần mà vẫn không hiểu rõ nội dung.⟧ —— 以前我也這麼以為。可是最近有一次，我把一篇報導讀了好幾遍還是沒搞懂內容。
+莊：⟦Vậy thì anh đăng kí học ở trung tâm dạy tiếng Việt đi. Hay là anh học qua phim ảnh? Nếu học qua những bộ phim Việt Nam được làm lại từ phim Hàn Quốc thì chắc là anh sẽ học hiệu quả hơn mà không bị căng thẳng.⟧ —— 那你去越南語補習班報名吧。或者透過影視學？如果看那些翻拍自韓國電影的越南電影來學，你應該能學得更有效又沒壓力。
+敏浩：⟦Cách này hay đấy. Anh sẽ thử ngay. Cảm ơn em.⟧ —— 這個方法好。我馬上試試。謝謝妳。
+句型練習 —— 想怎樣學：⟦thú vị⟧（有趣地）/ ⟦có hiệu quả⟧（有效地）；做過什麼努力：⟦đọc đi đọc lại một bài báo⟧（把一篇報導讀了又讀）/ ⟦xem đi xem lại một bộ phim truyền hình Việt⟧（把一部越南電視劇看了又看）；學習方法：⟦học ở trung tâm dạy tiếng Việt⟧（在越南語補習班學）/ ⟦học lớp học online⟧（上線上課程）。
+新單字：⟦ngọt ngào⟧ 甜美 | ⟦cảm động⟧ 感動 | ⟦khả năng⟧ 能力、可能性
+=en
+Key expression: ⟦~ đi ~ lại⟧
+⟦verb + đi + verb + lại⟧ expresses repetition of an action: "~ over and over, again and again".
+❶ ⟦Ngày mai em thi, em ôn đi ôn lại rồi mà vẫn thấy lo quá.⟧ — I have an exam tomorrow. I've revised over and over, but I'm still really worried.
+❷ Ⓐ ⟦Anh có chuyện gì à?⟧ — Is something wrong? Ⓑ ⟦Anh đã giải thích đi giải thích lại rồi mà em ấy vẫn làm sai.⟧ — I've explained it again and again, and he still gets it wrong.
+Expressions about ways of learning a foreign language: ⟦học ở trung tâm ngoại ngữ⟧ study at a language centre | ⟦học riêng với thầy cô ở nhà⟧ have private lessons at home | ⟦tự học qua sách, phim ảnh, bài hát⟧ teach yourself with books, films and songs | ⟦học lớp học online hoặc qua ứng dụng ngoại ngữ⟧ take online classes or use language apps
+Pattern practice 1 — talk as in the model using the given expression.
+Model (⟦nghe bài hát, thấy rất ngọt ngào⟧ listen to the song, find it very sweet): Ⓐ ⟦Chị lại nghe bài hát ấy à?⟧ — Are you listening to that song again? Ⓑ ⟦Ừ, quá hay. Chị nghe đi nghe lại mà vẫn thấy rất ngọt ngào.⟧ — Yes, it's wonderful. I listen to it over and over and it still sounds so sweet.
+❶ (⟦xem bộ phim, không thấy chán⟧ watch the film, never get bored) Ⓐ ⟦Em lại xem bộ phim ấy à?⟧ — Are you watching that film again? Ⓑ ⟦Vâng, hay lắm anh ạ. Em xem đi xem lại mà vẫn không thấy chán.⟧ — Yes, it's really good. I watch it again and again and never get bored.
+❷ (⟦đọc tiểu thuyết, thấy rất cảm động⟧ read the novel, find it very moving) Ⓐ ⟦Bạn lại đọc cuốn tiểu thuyết ấy à?⟧ — Are you reading that novel again? Ⓑ ⟦Ừ, thú vị lắm. Mình đọc đi đọc lại mà vẫn thấy rất cảm động.⟧ — Yes, it's really interesting. I read it over and over and still find it very moving.
+Dialogue: Min-ho is talking with Trang about learning Vietnamese.
+Min-ho: ⟦Trang ơi, làm thế nào để có thể học tiếng Việt thú vị nhỉ?⟧ — Trang, how can I make learning Vietnamese fun?
+Trang: ⟦Sao ạ? Anh định học thêm tiếng Việt nữa à?⟧ — Why? Are you planning to study more Vietnamese?
+Min-ho: ⟦Ừ. Dạo này, anh thấy khả năng tiếng Việt của mình ngày càng kém đi.⟧ — Yes. Lately I feel my Vietnamese is getting worse and worse.
+Trang: ⟦Trời, anh giỏi rồi mà.⟧ — Oh come on, you're already good.
+Min-ho: ⟦Trước đây anh cũng tưởng thế. Nhưng gần đây, có lần anh đọc đi đọc lại một bài báo mấy lần mà vẫn không hiểu rõ nội dung.⟧ — I used to think so too. But recently I read a newspaper article over and over several times and still didn't really understand it.
+Trang: ⟦Vậy thì anh đăng kí học ở trung tâm dạy tiếng Việt đi. Hay là anh học qua phim ảnh? Nếu học qua những bộ phim Việt Nam được làm lại từ phim Hàn Quốc thì chắc là anh sẽ học hiệu quả hơn mà không bị căng thẳng.⟧ — Then sign up at a Vietnamese language centre. Or how about learning through films? If you learn with Vietnamese remakes of Korean films, you'll probably learn more effectively without getting stressed.
+Min-ho: ⟦Cách này hay đấy. Anh sẽ thử ngay. Cảm ơn em.⟧ — That's a good idea. I'll try it right away. Thanks.
+Pattern practice — how he wants to learn: ⟦thú vị⟧ (in a fun way) / ⟦có hiệu quả⟧ (effectively); what he tried: ⟦đọc đi đọc lại một bài báo⟧ (read an article over and over) / ⟦xem đi xem lại một bộ phim truyền hình Việt⟧ (watched a Vietnamese TV drama again and again); way to learn: ⟦học ở trung tâm dạy tiếng Việt⟧ (at a Vietnamese language centre) / ⟦học lớp học online⟧ (in an online class).
+New words: ⟦ngọt ngào⟧ sweet, tender | ⟦cảm động⟧ moved, moving | ⟦khả năng⟧ ability, possibility
+=fr
+Expression clé : ⟦~ đi ~ lại⟧
+⟦verbe + đi + verbe + lại⟧ exprime la répétition d'une action : « ~ encore et encore, sans cesse ».
+❶ ⟦Ngày mai em thi, em ôn đi ôn lại rồi mà vẫn thấy lo quá.⟧ — J'ai un examen demain ; j'ai révisé encore et encore, mais je suis toujours très inquiète.
+❷ Ⓐ ⟦Anh có chuyện gì à?⟧ — Il y a un problème ? Ⓑ ⟦Anh đã giải thích đi giải thích lại rồi mà em ấy vẫn làm sai.⟧ — Je lui ai expliqué et réexpliqué, et il se trompe toujours.
+Expressions sur les méthodes d'apprentissage d'une langue : ⟦học ở trung tâm ngoại ngữ⟧ étudier dans un centre de langues | ⟦học riêng với thầy cô ở nhà⟧ prendre des cours particuliers à domicile | ⟦tự học qua sách, phim ảnh, bài hát⟧ apprendre seul avec des livres, des films et des chansons | ⟦học lớp học online hoặc qua ứng dụng ngoại ngữ⟧ suivre des cours en ligne ou utiliser des applications
+Exercice 1 — dialoguez comme dans le modèle avec l'expression donnée.
+Modèle (⟦nghe bài hát, thấy rất ngọt ngào⟧ écouter la chanson, la trouver très douce) : Ⓐ ⟦Chị lại nghe bài hát ấy à?⟧ — Tu écoutes encore cette chanson ? Ⓑ ⟦Ừ, quá hay. Chị nghe đi nghe lại mà vẫn thấy rất ngọt ngào.⟧ — Oui, elle est géniale. Je l'écoute en boucle et je la trouve toujours aussi douce.
+❶ (⟦xem bộ phim, không thấy chán⟧ regarder le film, sans s'en lasser) Ⓐ ⟦Em lại xem bộ phim ấy à?⟧ — Tu regardes encore ce film ? Ⓑ ⟦Vâng, hay lắm anh ạ. Em xem đi xem lại mà vẫn không thấy chán.⟧ — Oui, il est très bien. Je le regarde encore et encore sans m'en lasser.
+❷ (⟦đọc tiểu thuyết, thấy rất cảm động⟧ lire le roman, le trouver très émouvant) Ⓐ ⟦Bạn lại đọc cuốn tiểu thuyết ấy à?⟧ — Tu relis ce roman ? Ⓑ ⟦Ừ, thú vị lắm. Mình đọc đi đọc lại mà vẫn thấy rất cảm động.⟧ — Oui, il est passionnant. Je le relis sans cesse et il m'émeut toujours autant.
+Dialogue : Min-ho parle avec Trang de l'apprentissage du vietnamien.
+Min-ho : ⟦Trang ơi, làm thế nào để có thể học tiếng Việt thú vị nhỉ?⟧ — Trang, comment apprendre le vietnamien de façon amusante ?
+Trang : ⟦Sao ạ? Anh định học thêm tiếng Việt nữa à?⟧ — Pourquoi ? Tu comptes étudier encore plus le vietnamien ?
+Min-ho : ⟦Ừ. Dạo này, anh thấy khả năng tiếng Việt của mình ngày càng kém đi.⟧ — Oui. Ces derniers temps, j'ai l'impression que mon vietnamien se dégrade.
+Trang : ⟦Trời, anh giỏi rồi mà.⟧ — Allons, tu parles déjà bien !
+Min-ho : ⟦Trước đây anh cũng tưởng thế. Nhưng gần đây, có lần anh đọc đi đọc lại một bài báo mấy lần mà vẫn không hiểu rõ nội dung.⟧ — Je le croyais aussi. Mais récemment, j'ai lu et relu un article plusieurs fois sans vraiment le comprendre.
+Trang : ⟦Vậy thì anh đăng kí học ở trung tâm dạy tiếng Việt đi. Hay là anh học qua phim ảnh? Nếu học qua những bộ phim Việt Nam được làm lại từ phim Hàn Quốc thì chắc là anh sẽ học hiệu quả hơn mà không bị căng thẳng.⟧ — Alors inscris-toi dans un centre de vietnamien. Ou bien apprends avec des films ? Avec des remakes vietnamiens de films coréens, tu apprendrais sûrement plus efficacement et sans stress.
+Min-ho : ⟦Cách này hay đấy. Anh sẽ thử ngay. Cảm ơn em.⟧ — Bonne idée. Je vais essayer tout de suite. Merci.
+Exercices — comment apprendre : ⟦thú vị⟧ (de façon amusante) / ⟦có hiệu quả⟧ (efficacement) ; efforts faits : ⟦đọc đi đọc lại một bài báo⟧ (lire et relire un article) / ⟦xem đi xem lại một bộ phim truyền hình Việt⟧ (regarder encore et encore une série vietnamienne) ; méthode : ⟦học ở trung tâm dạy tiếng Việt⟧ (dans un centre de vietnamien) / ⟦học lớp học online⟧ (en cours en ligne).
+Nouveaux mots : ⟦ngọt ngào⟧ doux, suave | ⟦cảm động⟧ ému, émouvant | ⟦khả năng⟧ capacité, possibilité
+=de
+Schlüsselausdruck: ⟦~ đi ~ lại⟧
+⟦Verb + đi + Verb + lại⟧ drückt die Wiederholung einer Handlung aus: „immer wieder ~“.
+❶ ⟦Ngày mai em thi, em ôn đi ôn lại rồi mà vẫn thấy lo quá.⟧ — Morgen habe ich eine Prüfung; ich habe immer wieder wiederholt und mache mir trotzdem große Sorgen.
+❷ Ⓐ ⟦Anh có chuyện gì à?⟧ — Ist etwas los? Ⓑ ⟦Anh đã giải thích đi giải thích lại rồi mà em ấy vẫn làm sai.⟧ — Ich habe es ihm immer wieder erklärt, und er macht es trotzdem falsch.
+Ausdrücke zu Methoden des Fremdsprachenlernens: ⟦học ở trung tâm ngoại ngữ⟧ in einer Sprachschule lernen | ⟦học riêng với thầy cô ở nhà⟧ zu Hause Privatunterricht nehmen | ⟦tự học qua sách, phim ảnh, bài hát⟧ selbst mit Büchern, Filmen und Liedern lernen | ⟦học lớp học online hoặc qua ứng dụng ngoại ngữ⟧ Online-Kurse besuchen oder mit Sprach-Apps lernen
+Übung 1 — wie im Muster mit dem vorgegebenen Ausdruck sprechen.
+Muster (⟦nghe bài hát, thấy rất ngọt ngào⟧ das Lied hören, es sehr lieblich finden): Ⓐ ⟦Chị lại nghe bài hát ấy à?⟧ — Hörst du schon wieder das Lied? Ⓑ ⟦Ừ, quá hay. Chị nghe đi nghe lại mà vẫn thấy rất ngọt ngào.⟧ — Ja, es ist toll. Ich höre es immer wieder und finde es immer noch so lieblich.
+❶ (⟦xem bộ phim, không thấy chán⟧ den Film schauen, ohne dass er langweilig wird) Ⓐ ⟦Em lại xem bộ phim ấy à?⟧ — Schaust du schon wieder den Film? Ⓑ ⟦Vâng, hay lắm anh ạ. Em xem đi xem lại mà vẫn không thấy chán.⟧ — Ja, er ist sehr gut. Ich schaue ihn immer wieder und er wird mir nicht langweilig.
+❷ (⟦đọc tiểu thuyết, thấy rất cảm động⟧ den Roman lesen, ihn sehr berührend finden) Ⓐ ⟦Bạn lại đọc cuốn tiểu thuyết ấy à?⟧ — Liest du schon wieder den Roman? Ⓑ ⟦Ừ, thú vị lắm. Mình đọc đi đọc lại mà vẫn thấy rất cảm động.⟧ — Ja, er ist sehr spannend. Ich lese ihn immer wieder und bin immer noch tief berührt.
+Dialog: Min-ho spricht mit Trang über das Vietnamesischlernen.
+Min-ho: ⟦Trang ơi, làm thế nào để có thể học tiếng Việt thú vị nhỉ?⟧ — Trang, wie kann man Vietnamesisch auf unterhaltsame Weise lernen?
+Trang: ⟦Sao ạ? Anh định học thêm tiếng Việt nữa à?⟧ — Warum? Willst du noch mehr Vietnamesisch lernen?
+Min-ho: ⟦Ừ. Dạo này, anh thấy khả năng tiếng Việt của mình ngày càng kém đi.⟧ — Ja. In letzter Zeit habe ich das Gefühl, mein Vietnamesisch wird immer schlechter.
+Trang: ⟦Trời, anh giỏi rồi mà.⟧ — Ach was, du bist doch schon gut.
+Min-ho: ⟦Trước đây anh cũng tưởng thế. Nhưng gần đây, có lần anh đọc đi đọc lại một bài báo mấy lần mà vẫn không hiểu rõ nội dung.⟧ — Das dachte ich früher auch. Aber neulich habe ich einen Zeitungsartikel mehrmals gelesen und trotzdem nicht richtig verstanden.
+Trang: ⟦Vậy thì anh đăng kí học ở trung tâm dạy tiếng Việt đi. Hay là anh học qua phim ảnh? Nếu học qua những bộ phim Việt Nam được làm lại từ phim Hàn Quốc thì chắc là anh sẽ học hiệu quả hơn mà không bị căng thẳng.⟧ — Dann melde dich doch bei einer Vietnamesisch-Sprachschule an. Oder lern mit Filmen? Mit vietnamesischen Remakes koreanischer Filme lernst du bestimmt effektiver und ohne Stress.
+Min-ho: ⟦Cách này hay đấy. Anh sẽ thử ngay. Cảm ơn em.⟧ — Gute Idee. Das probiere ich gleich aus. Danke.
+Satzmusterübung — wie lernen: ⟦thú vị⟧ (unterhaltsam) / ⟦có hiệu quả⟧ (effektiv); wie bemüht: ⟦đọc đi đọc lại một bài báo⟧ (einen Artikel immer wieder gelesen) / ⟦xem đi xem lại một bộ phim truyền hình Việt⟧ (eine vietnamesische Serie immer wieder geschaut); Lernweg: ⟦học ở trung tâm dạy tiếng Việt⟧ (in einer Vietnamesisch-Sprachschule) / ⟦học lớp học online⟧ (in einem Online-Kurs).
+Neue Wörter: ⟦ngọt ngào⟧ süß, lieblich | ⟦cảm động⟧ gerührt, rührend | ⟦khả năng⟧ Fähigkeit, Möglichkeit
+=hu
+Kulcskifejezés: ⟦~ đi ~ lại⟧
+Az ⟦ige + đi + ige + lại⟧ a cselekvés ismétlődését fejezi ki: „újra meg újra ~, ~ és ~”.
+❶ ⟦Ngày mai em thi, em ôn đi ôn lại rồi mà vẫn thấy lo quá.⟧ — Holnap vizsgázom; újra meg újra átismételtem, mégis nagyon izgulok.
+❷ Ⓐ ⟦Anh có chuyện gì à?⟧ — Valami baj van? Ⓑ ⟦Anh đã giải thích đi giải thích lại rồi mà em ấy vẫn làm sai.⟧ — Újra meg újra elmagyaráztam, és még mindig rosszul csinálja.
+Az idegennyelv-tanulás módszereivel kapcsolatos kifejezések: ⟦học ở trung tâm ngoại ngữ⟧ nyelviskolában tanulni | ⟦học riêng với thầy cô ở nhà⟧ otthon magánórákat venni | ⟦tự học qua sách, phim ảnh, bài hát⟧ könyvekből, filmekből, dalokból önállóan tanulni | ⟦học lớp học online hoặc qua ứng dụng ngoại ngữ⟧ online kurzuson vagy nyelvtanuló alkalmazással tanulni
+1. gyakorlat — beszélgessen a minta szerint a megadott kifejezéssel.
+Minta (⟦nghe bài hát, thấy rất ngọt ngào⟧ hallgatni a dalt, nagyon édesnek érezni): Ⓐ ⟦Chị lại nghe bài hát ấy à?⟧ — Megint azt a dalt hallgatod? Ⓑ ⟦Ừ, quá hay. Chị nghe đi nghe lại mà vẫn thấy rất ngọt ngào.⟧ — Igen, nagyon jó. Újra meg újra meghallgatom, és még mindig olyan édes.
+❶ (⟦xem bộ phim, không thấy chán⟧ nézni a filmet, nem unni meg) Ⓐ ⟦Em lại xem bộ phim ấy à?⟧ — Megint azt a filmet nézed? Ⓑ ⟦Vâng, hay lắm anh ạ. Em xem đi xem lại mà vẫn không thấy chán.⟧ — Igen, nagyon jó. Újra meg újra megnézem, és még mindig nem unom.
+❷ (⟦đọc tiểu thuyết, thấy rất cảm động⟧ olvasni a regényt, nagyon megindítónak találni) Ⓐ ⟦Bạn lại đọc cuốn tiểu thuyết ấy à?⟧ — Megint azt a regényt olvasod? Ⓑ ⟦Ừ, thú vị lắm. Mình đọc đi đọc lại mà vẫn thấy rất cảm động.⟧ — Igen, nagyon érdekes. Újra meg újra elolvasom, és még mindig meghat.
+Párbeszéd: Min-ho Tranggal a vietnami nyelvtanulásról beszélget.
+Min-ho: ⟦Trang ơi, làm thế nào để có thể học tiếng Việt thú vị nhỉ?⟧ — Trang, hogyan lehet szórakoztatóan tanulni a vietnamit?
+Trang: ⟦Sao ạ? Anh định học thêm tiếng Việt nữa à?⟧ — Miért? Még többet akarsz tanulni vietnamiul?
+Min-ho: ⟦Ừ. Dạo này, anh thấy khả năng tiếng Việt của mình ngày càng kém đi.⟧ — Igen. Mostanában úgy érzem, egyre gyengébb a vietnami tudásom.
+Trang: ⟦Trời, anh giỏi rồi mà.⟧ — Ugyan, hiszen már jól beszélsz.
+Min-ho: ⟦Trước đây anh cũng tưởng thế. Nhưng gần đây, có lần anh đọc đi đọc lại một bài báo mấy lần mà vẫn không hiểu rõ nội dung.⟧ — Korábban én is azt hittem. De nemrég egy újságcikket újra meg újra elolvastam többször is, és mégsem értettem meg igazán.
+Trang: ⟦Vậy thì anh đăng kí học ở trung tâm dạy tiếng Việt đi. Hay là anh học qua phim ảnh? Nếu học qua những bộ phim Việt Nam được làm lại từ phim Hàn Quốc thì chắc là anh sẽ học hiệu quả hơn mà không bị căng thẳng.⟧ — Akkor iratkozz be egy vietnami nyelviskolába. Vagy tanulj filmekből? Ha koreai filmek vietnami remake-jeiből tanulsz, biztosan hatékonyabban és stressz nélkül fogsz haladni.
+Min-ho: ⟦Cách này hay đấy. Anh sẽ thử ngay. Cảm ơn em.⟧ — Ez jó ötlet. Rögtön kipróbálom. Köszönöm.
+Mintagyakorlat — hogyan akar tanulni: ⟦thú vị⟧ (szórakoztatóan) / ⟦có hiệu quả⟧ (hatékonyan); mivel próbálkozott: ⟦đọc đi đọc lại một bài báo⟧ (egy cikket újra meg újra elolvasott) / ⟦xem đi xem lại một bộ phim truyền hình Việt⟧ (egy vietnami sorozatot újra meg újra megnézett); tanulási mód: ⟦học ở trung tâm dạy tiếng Việt⟧ (vietnami nyelviskolában) / ⟦học lớp học online⟧ (online kurzuson).
+Új szavak: ⟦ngọt ngào⟧ édes, kedves | ⟦cảm động⟧ meghatott, megható | ⟦khả năng⟧ képesség, lehetőség
+=id
+Ungkapan kunci: ⟦~ đi ~ lại⟧
+⟦verba + đi + verba + lại⟧ menyatakan pengulangan tindakan: "~ berulang-ulang, ~ lagi dan lagi".
+❶ ⟦Ngày mai em thi, em ôn đi ôn lại rồi mà vẫn thấy lo quá.⟧ — Besok aku ujian; aku sudah mengulang pelajaran berulang-ulang, tetapi masih sangat cemas.
+❷ Ⓐ ⟦Anh có chuyện gì à?⟧ — Ada apa, Kak? Ⓑ ⟦Anh đã giải thích đi giải thích lại rồi mà em ấy vẫn làm sai.⟧ — Aku sudah menjelaskan berkali-kali, tetapi dia tetap salah.
+Ungkapan tentang metode belajar bahasa asing: ⟦học ở trung tâm ngoại ngữ⟧ belajar di lembaga kursus bahasa | ⟦học riêng với thầy cô ở nhà⟧ les privat dengan guru di rumah | ⟦tự học qua sách, phim ảnh, bài hát⟧ belajar sendiri lewat buku, film, lagu | ⟦học lớp học online hoặc qua ứng dụng ngoại ngữ⟧ belajar di kelas daring atau lewat aplikasi bahasa
+Latihan pola 1 — bercakaplah seperti contoh dengan ungkapan yang diberikan.
+Contoh (⟦nghe bài hát, thấy rất ngọt ngào⟧ mendengarkan lagu, terasa sangat merdu): Ⓐ ⟦Chị lại nghe bài hát ấy à?⟧ — Kakak mendengarkan lagu itu lagi? Ⓑ ⟦Ừ, quá hay. Chị nghe đi nghe lại mà vẫn thấy rất ngọt ngào.⟧ — Iya, bagus sekali. Kakak dengar berulang-ulang tetapi tetap terasa merdu.
+❶ (⟦xem bộ phim, không thấy chán⟧ menonton film, tidak bosan) Ⓐ ⟦Em lại xem bộ phim ấy à?⟧ — Kamu menonton film itu lagi? Ⓑ ⟦Vâng, hay lắm anh ạ. Em xem đi xem lại mà vẫn không thấy chán.⟧ — Iya, bagus sekali, Kak. Aku menontonnya berulang-ulang tetapi tetap tidak bosan.
+❷ (⟦đọc tiểu thuyết, thấy rất cảm động⟧ membaca novel, terasa sangat mengharukan) Ⓐ ⟦Bạn lại đọc cuốn tiểu thuyết ấy à?⟧ — Kamu membaca novel itu lagi? Ⓑ ⟦Ừ, thú vị lắm. Mình đọc đi đọc lại mà vẫn thấy rất cảm động.⟧ — Iya, menarik sekali. Aku membacanya berulang-ulang tetapi tetap merasa sangat terharu.
+Percakapan: Min-ho berbicara dengan Trang tentang belajar bahasa Vietnam.
+Min-ho: ⟦Trang ơi, làm thế nào để có thể học tiếng Việt thú vị nhỉ?⟧ — Trang, bagaimana caranya belajar bahasa Vietnam dengan menyenangkan?
+Trang: ⟦Sao ạ? Anh định học thêm tiếng Việt nữa à?⟧ — Kenapa? Kakak mau belajar bahasa Vietnam lagi?
+Min-ho: ⟦Ừ. Dạo này, anh thấy khả năng tiếng Việt của mình ngày càng kém đi.⟧ — Iya. Akhir-akhir ini aku merasa kemampuan bahasa Vietnamku makin menurun.
+Trang: ⟦Trời, anh giỏi rồi mà.⟧ — Ya ampun, Kakak kan sudah pintar.
+Min-ho: ⟦Trước đây anh cũng tưởng thế. Nhưng gần đây, có lần anh đọc đi đọc lại một bài báo mấy lần mà vẫn không hiểu rõ nội dung.⟧ — Dulu aku juga mengira begitu. Tapi baru-baru ini aku membaca sebuah artikel berulang kali dan tetap tidak memahami isinya dengan jelas.
+Trang: ⟦Vậy thì anh đăng kí học ở trung tâm dạy tiếng Việt đi. Hay là anh học qua phim ảnh? Nếu học qua những bộ phim Việt Nam được làm lại từ phim Hàn Quốc thì chắc là anh sẽ học hiệu quả hơn mà không bị căng thẳng.⟧ — Kalau begitu daftar saja di lembaga kursus bahasa Vietnam. Atau belajar lewat film? Kalau belajar lewat film Vietnam yang dibuat ulang dari film Korea, pasti Kakak bisa belajar lebih efektif tanpa stres.
+Min-ho: ⟦Cách này hay đấy. Anh sẽ thử ngay. Cảm ơn em.⟧ — Cara ini bagus. Aku coba sekarang juga. Terima kasih.
+Latihan pola — ingin belajar dengan cara apa: ⟦thú vị⟧ (menyenangkan) / ⟦có hiệu quả⟧ (efektif); usaha yang sudah dilakukan: ⟦đọc đi đọc lại một bài báo⟧ (membaca artikel berulang-ulang) / ⟦xem đi xem lại một bộ phim truyền hình Việt⟧ (menonton serial Vietnam berulang-ulang); metode belajar: ⟦học ở trung tâm dạy tiếng Việt⟧ (di lembaga kursus bahasa Vietnam) / ⟦học lớp học online⟧ (di kelas daring).
+Kosakata baru: ⟦ngọt ngào⟧ merdu, manis | ⟦cảm động⟧ terharu, mengharukan | ⟦khả năng⟧ kemampuan, kemungkinan
+=ja
+核心表現：⟦~ đi ~ lại⟧
+⟦動詞 + đi + 動詞 + lại⟧ は行動の反復を表す表現で、「～しては～する、何度も～する」という意味です。
+❶ ⟦Ngày mai em thi, em ôn đi ôn lại rồi mà vẫn thấy lo quá.⟧ — 明日試験があって、何度も復習したのに、まだとても心配です。
+❷ Ⓐ ⟦Anh có chuyện gì à?⟧ — 何かあったんですか。 Ⓑ ⟦Anh đã giải thích đi giải thích lại rồi mà em ấy vẫn làm sai.⟧ — 何度も説明したのに、あの子はまだ間違えるんだ。
+外国語の学習方法に関する表現：⟦học ở trung tâm ngoại ngữ⟧ 語学センターで学ぶ | ⟦học riêng với thầy cô ở nhà⟧ 家で先生と個人レッスンをする | ⟦tự học qua sách, phim ảnh, bài hát⟧ 本や映像、歌で独学する | ⟦học lớp học online hoặc qua ứng dụng ngoại ngữ⟧ オンライン授業や語学アプリで学ぶ
+文型練習1 — 与えられた表現を使って例のように会話してみましょう。
+例（⟦nghe bài hát, thấy rất ngọt ngào⟧ 歌を聴く、とても甘く感じる）：Ⓐ ⟦Chị lại nghe bài hát ấy à?⟧ — またあの歌を聴いているんですか。 Ⓑ ⟦Ừ, quá hay. Chị nghe đi nghe lại mà vẫn thấy rất ngọt ngào.⟧ — うん、すごくいいの。何度も聴いているのに、やっぱりとても甘い感じがする。
+❶（⟦xem bộ phim, không thấy chán⟧ 映画を見る、飽きない）Ⓐ ⟦Em lại xem bộ phim ấy à?⟧ — またあの映画を見ているの？ Ⓑ ⟦Vâng, hay lắm anh ạ. Em xem đi xem lại mà vẫn không thấy chán.⟧ — はい、とても面白いんです。何度見ても飽きません。
+❷（⟦đọc tiểu thuyết, thấy rất cảm động⟧ 小説を読む、とても感動する）Ⓐ ⟦Bạn lại đọc cuốn tiểu thuyết ấy à?⟧ — またあの小説を読んでいるの？ Ⓑ ⟦Ừ, thú vị lắm. Mình đọc đi đọc lại mà vẫn thấy rất cảm động.⟧ — うん、すごく面白いの。何度読んでもとても感動するんだ。
+会話：ミンホがベトナム語の学習についてチャンと話しています。
+ミンホ：⟦Trang ơi, làm thế nào để có thể học tiếng Việt thú vị nhỉ?⟧ — チャン、どうすれば楽しくベトナム語を勉強できるかな。
+チャン：⟦Sao ạ? Anh định học thêm tiếng Việt nữa à?⟧ — どうしたんですか。もっとベトナム語を勉強するつもりなんですか。
+ミンホ：⟦Ừ. Dạo này, anh thấy khả năng tiếng Việt của mình ngày càng kém đi.⟧ — うん。最近、自分のベトナム語の力がどんどん落ちている気がするんだ。
+チャン：⟦Trời, anh giỏi rồi mà.⟧ — まあ、もう上手じゃないですか。
+ミンホ：⟦Trước đây anh cũng tưởng thế. Nhưng gần đây, có lần anh đọc đi đọc lại một bài báo mấy lần mà vẫn không hiểu rõ nội dung.⟧ — 前は僕もそう思っていたよ。でも最近、ある新聞記事を何度も読み返したのに、内容がよくわからなかったことがあってね。
+チャン：⟦Vậy thì anh đăng kí học ở trung tâm dạy tiếng Việt đi. Hay là anh học qua phim ảnh? Nếu học qua những bộ phim Việt Nam được làm lại từ phim Hàn Quốc thì chắc là anh sẽ học hiệu quả hơn mà không bị căng thẳng.⟧ — それならベトナム語教室に申し込んだらどうですか。それとも映像で勉強するとか。韓国映画をリメイクしたベトナム映画で勉強すれば、ストレスなくもっと効果的に学べると思いますよ。
+ミンホ：⟦Cách này hay đấy. Anh sẽ thử ngay. Cảm ơn em.⟧ — その方法はいいね。すぐやってみるよ。ありがとう。
+文型練習 — どう勉強したいか：⟦thú vị⟧（楽しく）/ ⟦có hiệu quả⟧（効果的に）；どんな努力をしたか：⟦đọc đi đọc lại một bài báo⟧（新聞記事を何度も読み返した）/ ⟦xem đi xem lại một bộ phim truyền hình Việt⟧（ベトナムのドラマを何度も見返した）；学習方法：⟦học ở trung tâm dạy tiếng Việt⟧（ベトナム語教室で学ぶ）/ ⟦học lớp học online⟧（オンライン授業で学ぶ）。
+新出単語：⟦ngọt ngào⟧ 甘美だ | ⟦cảm động⟧ 感動する | ⟦khả năng⟧ 能力、可能性
+=pl
+Kluczowe wyrażenie: ⟦~ đi ~ lại⟧
+⟦czasownik + đi + czasownik + lại⟧ wyraża powtarzanie czynności: „~ w kółko, raz po raz”.
+❶ ⟦Ngày mai em thi, em ôn đi ôn lại rồi mà vẫn thấy lo quá.⟧ — Jutro mam egzamin; powtarzałam materiał w kółko, a i tak bardzo się denerwuję.
+❷ Ⓐ ⟦Anh có chuyện gì à?⟧ — Coś się stało? Ⓑ ⟦Anh đã giải thích đi giải thích lại rồi mà em ấy vẫn làm sai.⟧ — Tłumaczyłem mu to raz po raz, a on wciąż robi to źle.
+Wyrażenia dotyczące metod nauki języków obcych: ⟦học ở trung tâm ngoại ngữ⟧ uczyć się w szkole językowej | ⟦học riêng với thầy cô ở nhà⟧ brać lekcje prywatne w domu | ⟦tự học qua sách, phim ảnh, bài hát⟧ uczyć się samemu z książek, filmów i piosenek | ⟦học lớp học online hoặc qua ứng dụng ngoại ngữ⟧ uczyć się na kursie online lub przez aplikacje językowe
+Ćwiczenie 1 — rozmawiaj jak we wzorze, używając podanego wyrażenia.
+Wzór (⟦nghe bài hát, thấy rất ngọt ngào⟧ słuchać piosenki, wydaje się bardzo słodka): Ⓐ ⟦Chị lại nghe bài hát ấy à?⟧ — Znowu słuchasz tej piosenki? Ⓑ ⟦Ừ, quá hay. Chị nghe đi nghe lại mà vẫn thấy rất ngọt ngào.⟧ — Tak, jest świetna. Słucham jej w kółko i wciąż wydaje mi się taka słodka.
+❶ (⟦xem bộ phim, không thấy chán⟧ oglądać film, nie nudzi się) Ⓐ ⟦Em lại xem bộ phim ấy à?⟧ — Znowu oglądasz ten film? Ⓑ ⟦Vâng, hay lắm anh ạ. Em xem đi xem lại mà vẫn không thấy chán.⟧ — Tak, jest bardzo dobry. Oglądam go raz po raz i wciąż mi się nie nudzi.
+❷ (⟦đọc tiểu thuyết, thấy rất cảm động⟧ czytać powieść, jest bardzo wzruszająca) Ⓐ ⟦Bạn lại đọc cuốn tiểu thuyết ấy à?⟧ — Znowu czytasz tę powieść? Ⓑ ⟦Ừ, thú vị lắm. Mình đọc đi đọc lại mà vẫn thấy rất cảm động.⟧ — Tak, jest bardzo ciekawa. Czytam ją w kółko i wciąż mnie wzrusza.
+Dialog: Min-ho rozmawia z Trang o nauce wietnamskiego.
+Min-ho: ⟦Trang ơi, làm thế nào để có thể học tiếng Việt thú vị nhỉ?⟧ — Trang, jak uczyć się wietnamskiego w ciekawy sposób?
+Trang: ⟦Sao ạ? Anh định học thêm tiếng Việt nữa à?⟧ — Dlaczego pytasz? Chcesz się jeszcze więcej uczyć wietnamskiego?
+Min-ho: ⟦Ừ. Dạo này, anh thấy khả năng tiếng Việt của mình ngày càng kém đi.⟧ — Tak. Ostatnio mam wrażenie, że mój wietnamski coraz bardziej się pogarsza.
+Trang: ⟦Trời, anh giỏi rồi mà.⟧ — No coś ty, przecież już dobrze mówisz.
+Min-ho: ⟦Trước đây anh cũng tưởng thế. Nhưng gần đây, có lần anh đọc đi đọc lại một bài báo mấy lần mà vẫn không hiểu rõ nội dung.⟧ — Kiedyś też tak myślałem. Ale niedawno czytałem jeden artykuł kilka razy w kółko i wciąż nie zrozumiałem dobrze treści.
+Trang: ⟦Vậy thì anh đăng kí học ở trung tâm dạy tiếng Việt đi. Hay là anh học qua phim ảnh? Nếu học qua những bộ phim Việt Nam được làm lại từ phim Hàn Quốc thì chắc là anh sẽ học hiệu quả hơn mà không bị căng thẳng.⟧ — To zapisz się do szkoły wietnamskiego. A może ucz się z filmów? Jeśli będziesz się uczył z wietnamskich remake'ów koreańskich filmów, pewnie nauczysz się skuteczniej i bez stresu.
+Min-ho: ⟦Cách này hay đấy. Anh sẽ thử ngay. Cảm ơn em.⟧ — Dobry pomysł. Zaraz spróbuję. Dzięki.
+Ćwiczenie wzorców — jak chce się uczyć: ⟦thú vị⟧ (ciekawie) / ⟦có hiệu quả⟧ (skutecznie); co próbował: ⟦đọc đi đọc lại một bài báo⟧ (czytał artykuł w kółko) / ⟦xem đi xem lại một bộ phim truyền hình Việt⟧ (oglądał raz po raz wietnamski serial); sposób nauki: ⟦học ở trung tâm dạy tiếng Việt⟧ (w szkole wietnamskiego) / ⟦học lớp học online⟧ (na kursie online).
+Nowe słówka: ⟦ngọt ngào⟧ słodki, czuły | ⟦cảm động⟧ wzruszony, wzruszający | ⟦khả năng⟧ umiejętność, możliwość

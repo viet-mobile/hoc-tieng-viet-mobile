@@ -1,0 +1,142 @@
+@@ pdf-grammar-dc861fc2858a1e2c#0
+=cs
+Gramatický výklad
+⟦cùng⟧: „spolu, společně, stejný“ – vyjadřuje, že činnost, vlastnost či stav jsou pro více podmětů společné.
+⟦Park học cùng lớp với Lee.⟧ → Park chodí do stejné třídy jako Lee. · ⟦Park và Lee cùng đi thăm Hồ Gươm.⟧ → Park a Lee spolu navštíví jezero Hoàn Kiếm (Hồ Gươm). · ⟦Họ cùng ngồi xe ô tô.⟧ → Sedí spolu v autě. · ⟦Cả lớp cùng xem phim.⟧ → Celá třída se spolu dívá na film. · ⟦Họ cùng ăn cơm với nhau.⟧ → Jedí spolu. · ⟦Chúng tôi cùng làm bài.⟧ → Děláme úkoly společně.
+⟦đều⟧: „všichni, všechno, stejně“ – vyjadřuje, že činnosti, stavy či vlastnosti různých podmětů jsou podobné nebo stejné.
+⟦Họ đều là người Hàn Quốc⟧ → Všichni jsou Korejci. · ⟦Park và Lee đều muốn đi thăm Hồ Gươm.⟧ → Park i Lee chtějí oba navštívit jezero Hoàn Kiếm. · ⟦Hai người đều học giỏi tiếng Việt.⟧ → Oba jsou dobří ve vietnamštině. · ⟦Chúng tôi đều đi bộ đến trường.⟧ → Všichni chodíme do školy pěšky. · ⟦Mọi người đều cố gắng học tập.⟧ → Všichni se pilně učí.
+⟦cho⟧: „aby, tak aby“ – označuje, že to, co následuje po ⟦cho⟧, je účelem předtím zmíněné činnosti.
+⟦Đi xe buýt cho rẻ.⟧ → Jedu autobusem, aby to bylo levné. (účel jízdy autobusem: „levně“) · ⟦Đi nhanh cho kịp giờ học.⟧ → Jdu rychle, abych stihl vyučování. (účel rychlé chůze: „stihnout hodinu“) · ⟦Tập đi bộ cho dẻo chân.⟧ → Cvičím chůzi, aby nohy byly pružné. (účel chůze: „pružné nohy“) · ⟦Học hỏi nhiều cho có kiến thức.⟧ → Hodně se učím, abych získal znalosti. (účel učení: „znalosti“) · ⟦Nghỉ một chút cho đỡ mệt.⟧ → Chvíli si odpočinu, abych nebyl tak unavený. (účel odpočinku: „méně únavy“)
+=zh_cn
+语法解说
+⟦cùng⟧：意为“一起、共同、同一”，表示主体与行为、性质、状态之间是相同的关系。
+⟦Park học cùng lớp với Lee.⟧ → 朴和李在同一个班学习。 · ⟦Park và Lee cùng đi thăm Hồ Gươm.⟧ → 朴和李一起去参观还剑湖（Hồ Gươm）。 · ⟦Họ cùng ngồi xe ô tô.⟧ → 他们一起坐汽车。 · ⟦Cả lớp cùng xem phim.⟧ → 全班一起看电影。 · ⟦Họ cùng ăn cơm với nhau.⟧ → 他们一起吃饭。 · ⟦Chúng tôi cùng làm bài.⟧ → 我们一起做作业。
+⟦đều⟧：意为“都、全部、均匀”，表示不同对象的行为、状态、性质相似或相同。
+⟦Họ đều là người Hàn Quốc⟧ → 他们都是韩国人。 · ⟦Park và Lee đều muốn đi thăm Hồ Gươm.⟧ → 朴和李都想去参观还剑湖。 · ⟦Hai người đều học giỏi tiếng Việt.⟧ → 两个人的越南语都学得很好。 · ⟦Chúng tôi đều đi bộ đến trường.⟧ → 我们都走路去学校。 · ⟦Mọi người đều cố gắng học tập.⟧ → 大家都努力学习。
+⟦cho⟧：意为“以便、好让”，表示 ⟦cho⟧ 后面的内容是前面所说行为的目的。
+⟦Đi xe buýt cho rẻ.⟧ → 坐公交车，好便宜些。（“便宜”是“坐公交车”的目的） · ⟦Đi nhanh cho kịp giờ học.⟧ → 走快点，好赶上上课。（“赶上上课”是“走快”的目的） · ⟦Tập đi bộ cho dẻo chân.⟧ → 练习走路，让腿脚灵活。（“腿脚灵活”是“练走路”的目的） · ⟦Học hỏi nhiều cho có kiến thức.⟧ → 多学习，以便增长知识。（“有知识”是“多学习”的目的） · ⟦Nghỉ một chút cho đỡ mệt.⟧ → 休息一下，好不那么累。（“减轻疲劳”是“休息”的目的）
+=zh
+文法解說
+⟦cùng⟧：意為「一起、共同、同一」，表示主體與行為、性質、狀態之間是相同的關係。
+⟦Park học cùng lớp với Lee.⟧ → 朴和李在同一個班上課。 · ⟦Park và Lee cùng đi thăm Hồ Gươm.⟧ → 朴和李一起去參觀還劍湖（Hồ Gươm）。 · ⟦Họ cùng ngồi xe ô tô.⟧ → 他們一起坐汽車。 · ⟦Cả lớp cùng xem phim.⟧ → 全班一起看電影。 · ⟦Họ cùng ăn cơm với nhau.⟧ → 他們一起吃飯。 · ⟦Chúng tôi cùng làm bài.⟧ → 我們一起寫作業。
+⟦đều⟧：意為「都、全部、均勻」，表示不同對象的行為、狀態、性質相似或相同。
+⟦Họ đều là người Hàn Quốc⟧ → 他們都是韓國人。 · ⟦Park và Lee đều muốn đi thăm Hồ Gươm.⟧ → 朴和李都想去參觀還劍湖。 · ⟦Hai người đều học giỏi tiếng Việt.⟧ → 兩個人的越南語都學得很好。 · ⟦Chúng tôi đều đi bộ đến trường.⟧ → 我們都走路上學。 · ⟦Mọi người đều cố gắng học tập.⟧ → 大家都努力學習。
+⟦cho⟧：意為「以便、好讓」，表示 ⟦cho⟧ 後面的內容是前面所說行為的目的。
+⟦Đi xe buýt cho rẻ.⟧ → 搭公車，比較便宜。（「便宜」是「搭公車」的目的） · ⟦Đi nhanh cho kịp giờ học.⟧ → 走快點，好趕上上課。（「趕上上課」是「走快」的目的） · ⟦Tập đi bộ cho dẻo chân.⟧ → 練習走路，讓腿腳靈活。（「腿腳靈活」是「練走路」的目的） · ⟦Học hỏi nhiều cho có kiến thức.⟧ → 多學習，以便增長知識。（「有知識」是「多學習」的目的） · ⟦Nghỉ một chút cho đỡ mệt.⟧ → 休息一下，好不那麼累。（「減輕疲勞」是「休息」的目的）
+=en
+Grammar notes
+⟦cùng⟧: "together, the same" – shows that the subjects share the same action, quality or state.
+⟦Park học cùng lớp với Lee.⟧ → Park is in the same class as Lee. · ⟦Park và Lee cùng đi thăm Hồ Gươm.⟧ → Park and Lee visit Hoan Kiem Lake (Hồ Gươm) together. · ⟦Họ cùng ngồi xe ô tô.⟧ → They ride in the car together. · ⟦Cả lớp cùng xem phim.⟧ → The whole class watches a film together. · ⟦Họ cùng ăn cơm với nhau.⟧ → They eat together. · ⟦Chúng tôi cùng làm bài.⟧ → We do our homework together.
+⟦đều⟧: "all, both, equally" – shows that the actions, states or qualities of different subjects are similar or identical.
+⟦Họ đều là người Hàn Quốc⟧ → They are all Korean. · ⟦Park và Lee đều muốn đi thăm Hồ Gươm.⟧ → Park and Lee both want to visit Hoan Kiem Lake. · ⟦Hai người đều học giỏi tiếng Việt.⟧ → Both of them are good at Vietnamese. · ⟦Chúng tôi đều đi bộ đến trường.⟧ → We all walk to school. · ⟦Mọi người đều cố gắng học tập.⟧ → Everyone studies hard.
+⟦cho⟧: "so that, in order to" – marks what follows ⟦cho⟧ as the purpose of the action mentioned before.
+⟦Đi xe buýt cho rẻ.⟧ → Take the bus to save money. ("cheap" is the purpose of "taking the bus") · ⟦Đi nhanh cho kịp giờ học.⟧ → Walk fast so as to be on time for class. ("being on time" is the purpose of "walking fast") · ⟦Tập đi bộ cho dẻo chân.⟧ → Practise walking to keep your legs supple. ("supple legs" is the purpose of "walking") · ⟦Học hỏi nhiều cho có kiến thức.⟧ → Study a lot so as to gain knowledge. ("knowledge" is the purpose of "studying") · ⟦Nghỉ một chút cho đỡ mệt.⟧ → Rest a little so you're less tired. ("less tired" is the purpose of "resting")
+=fr
+Notes de grammaire
+⟦cùng⟧ : « ensemble, le même » – indique que les sujets partagent la même action, qualité ou état.
+⟦Park học cùng lớp với Lee.⟧ → Park est dans la même classe que Lee. · ⟦Park và Lee cùng đi thăm Hồ Gươm.⟧ → Park et Lee visitent ensemble le lac Hoan Kiem (Hồ Gươm). · ⟦Họ cùng ngồi xe ô tô.⟧ → Ils sont ensemble en voiture. · ⟦Cả lớp cùng xem phim.⟧ → Toute la classe regarde un film ensemble. · ⟦Họ cùng ăn cơm với nhau.⟧ → Ils mangent ensemble. · ⟦Chúng tôi cùng làm bài.⟧ → Nous faisons nos devoirs ensemble.
+⟦đều⟧ : « tous, tous les deux, également » – indique que les actions, états ou qualités de sujets différents sont semblables ou identiques.
+⟦Họ đều là người Hàn Quốc⟧ → Ils sont tous coréens. · ⟦Park và Lee đều muốn đi thăm Hồ Gươm.⟧ → Park et Lee veulent tous les deux visiter le lac Hoan Kiem. · ⟦Hai người đều học giỏi tiếng Việt.⟧ → Tous les deux sont bons en vietnamien. · ⟦Chúng tôi đều đi bộ đến trường.⟧ → Nous allons tous à l'école à pied. · ⟦Mọi người đều cố gắng học tập.⟧ → Tout le monde étudie avec application.
+⟦cho⟧ : « pour, afin de » – indique que ce qui suit ⟦cho⟧ est le but de l'action mentionnée auparavant.
+⟦Đi xe buýt cho rẻ.⟧ → Prendre le bus pour payer moins cher. (« bon marché » est le but de « prendre le bus ») · ⟦Đi nhanh cho kịp giờ học.⟧ → Marcher vite pour arriver à l'heure au cours. (« être à l'heure » est le but de « marcher vite ») · ⟦Tập đi bộ cho dẻo chân.⟧ → S'exercer à marcher pour avoir des jambes souples. (« jambes souples » est le but de « marcher ») · ⟦Học hỏi nhiều cho có kiến thức.⟧ → Beaucoup étudier pour acquérir des connaissances. (« connaissances » est le but d'« étudier ») · ⟦Nghỉ một chút cho đỡ mệt.⟧ → Se reposer un peu pour être moins fatigué. (« moins de fatigue » est le but du « repos »)
+=de
+Grammatikerläuterungen
+⟦cùng⟧: „zusammen, gemeinsam, derselbe“ – zeigt, dass die Subjekte dieselbe Handlung, Eigenschaft oder denselben Zustand teilen.
+⟦Park học cùng lớp với Lee.⟧ → Park ist in derselben Klasse wie Lee. · ⟦Park và Lee cùng đi thăm Hồ Gươm.⟧ → Park und Lee besuchen zusammen den Hoan-Kiem-See (Hồ Gươm). · ⟦Họ cùng ngồi xe ô tô.⟧ → Sie fahren zusammen im Auto. · ⟦Cả lớp cùng xem phim.⟧ → Die ganze Klasse sieht zusammen einen Film. · ⟦Họ cùng ăn cơm với nhau.⟧ → Sie essen zusammen. · ⟦Chúng tôi cùng làm bài.⟧ → Wir machen die Aufgaben gemeinsam.
+⟦đều⟧: „alle, beide, gleichermaßen“ – zeigt, dass Handlungen, Zustände oder Eigenschaften verschiedener Subjekte ähnlich oder gleich sind.
+⟦Họ đều là người Hàn Quốc⟧ → Sie sind alle Koreaner. · ⟦Park và Lee đều muốn đi thăm Hồ Gươm.⟧ → Park und Lee wollen beide den Hoan-Kiem-See besuchen. · ⟦Hai người đều học giỏi tiếng Việt.⟧ → Beide sind gut in Vietnamesisch. · ⟦Chúng tôi đều đi bộ đến trường.⟧ → Wir gehen alle zu Fuß zur Schule. · ⟦Mọi người đều cố gắng học tập.⟧ → Alle lernen fleißig.
+⟦cho⟧: „damit, um … zu“ – kennzeichnet das nach ⟦cho⟧ Genannte als Zweck der zuvor genannten Handlung.
+⟦Đi xe buýt cho rẻ.⟧ → Mit dem Bus fahren, damit es billig ist. („billig“ ist der Zweck von „Bus fahren“) · ⟦Đi nhanh cho kịp giờ học.⟧ → Schnell gehen, um rechtzeitig zum Unterricht zu kommen. („pünktlich sein“ ist der Zweck von „schnell gehen“) · ⟦Tập đi bộ cho dẻo chân.⟧ → Gehen üben, damit die Beine geschmeidig bleiben. („geschmeidige Beine“ ist der Zweck des „Gehens“) · ⟦Học hỏi nhiều cho có kiến thức.⟧ → Viel lernen, um Wissen zu erwerben. („Wissen“ ist der Zweck des „Lernens“) · ⟦Nghỉ một chút cho đỡ mệt.⟧ → Ein wenig ausruhen, um weniger müde zu sein. („weniger müde“ ist der Zweck des „Ausruhens“)
+=hu
+Nyelvtani magyarázat
+⟦cùng⟧: „együtt, közösen, ugyanaz” – azt jelzi, hogy a cselekvés, tulajdonság vagy állapot több alany számára közös.
+⟦Park học cùng lớp với Lee.⟧ → Park egy osztályba jár Lee-vel. · ⟦Park và Lee cùng đi thăm Hồ Gươm.⟧ → Park és Lee együtt meglátogatják a Hoan Kiem-tavat (Hồ Gươm). · ⟦Họ cùng ngồi xe ô tô.⟧ → Együtt ülnek az autóban. · ⟦Cả lớp cùng xem phim.⟧ → Az egész osztály együtt néz filmet. · ⟦Họ cùng ăn cơm với nhau.⟧ → Együtt esznek. · ⟦Chúng tôi cùng làm bài.⟧ → Együtt írjuk a leckét.
+⟦đều⟧: „mind, mindkettő, egyaránt” – azt jelzi, hogy különböző alanyok cselekvése, állapota vagy tulajdonsága hasonló vagy azonos.
+⟦Họ đều là người Hàn Quốc⟧ → Mindannyian koreaiak. · ⟦Park và Lee đều muốn đi thăm Hồ Gươm.⟧ → Park és Lee is meg akarja látogatni a Hoan Kiem-tavat. · ⟦Hai người đều học giỏi tiếng Việt.⟧ → Mindketten jól tanulnak vietnámiul. · ⟦Chúng tôi đều đi bộ đến trường.⟧ → Mindannyian gyalog járunk iskolába. · ⟦Mọi người đều cố gắng học tập.⟧ → Mindenki szorgalmasan tanul.
+⟦cho⟧: „hogy, azért, hogy” – azt jelzi, hogy a ⟦cho⟧ után álló dolog a korábban említett cselekvés célja.
+⟦Đi xe buýt cho rẻ.⟧ → Busszal megyek, hogy olcsó legyen. (az „olcsóság” a „buszozás” célja) · ⟦Đi nhanh cho kịp giờ học.⟧ → Gyorsan megyek, hogy odaérjek az órára. (az „odaérés” a „gyors menés” célja) · ⟦Tập đi bộ cho dẻo chân.⟧ → Gyaloglást gyakorlok, hogy hajlékony legyen a lábam. (a „hajlékony láb” a „gyaloglás” célja) · ⟦Học hỏi nhiều cho có kiến thức.⟧ → Sokat tanulok, hogy tudásra tegyek szert. (a „tudás” a „tanulás” célja) · ⟦Nghỉ một chút cho đỡ mệt.⟧ → Pihenek egy kicsit, hogy kevésbé legyek fáradt. (a „kisebb fáradtság” a „pihenés” célja)
+=id
+Penjelasan tata bahasa
+⟦cùng⟧: "bersama, sama" – menunjukkan bahwa subjek-subjek memiliki kegiatan, sifat, atau keadaan yang sama.
+⟦Park học cùng lớp với Lee.⟧ → Park sekelas dengan Lee. · ⟦Park và Lee cùng đi thăm Hồ Gươm.⟧ → Park dan Lee bersama-sama mengunjungi Danau Hoan Kiem (Hồ Gươm). · ⟦Họ cùng ngồi xe ô tô.⟧ → Mereka naik mobil bersama. · ⟦Cả lớp cùng xem phim.⟧ → Seluruh kelas menonton film bersama. · ⟦Họ cùng ăn cơm với nhau.⟧ → Mereka makan bersama. · ⟦Chúng tôi cùng làm bài.⟧ → Kami mengerjakan tugas bersama.
+⟦đều⟧: "semua, sama-sama, merata" – menunjukkan bahwa kegiatan, keadaan, atau sifat dari subjek yang berbeda itu mirip atau sama.
+⟦Họ đều là người Hàn Quốc⟧ → Mereka semua orang Korea. · ⟦Park và Lee đều muốn đi thăm Hồ Gươm.⟧ → Park dan Lee sama-sama ingin mengunjungi Danau Hoan Kiem. · ⟦Hai người đều học giỏi tiếng Việt.⟧ → Keduanya pandai berbahasa Vietnam. · ⟦Chúng tôi đều đi bộ đến trường.⟧ → Kami semua berjalan kaki ke sekolah. · ⟦Mọi người đều cố gắng học tập.⟧ → Semua orang belajar dengan giat.
+⟦cho⟧: "supaya, agar" – menandakan bahwa hal setelah ⟦cho⟧ adalah tujuan dari kegiatan yang disebut sebelumnya.
+⟦Đi xe buýt cho rẻ.⟧ → Naik bus supaya murah. ("murah" adalah tujuan dari "naik bus") · ⟦Đi nhanh cho kịp giờ học.⟧ → Jalan cepat agar tepat waktu masuk kelas. ("tepat waktu" adalah tujuan dari "jalan cepat") · ⟦Tập đi bộ cho dẻo chân.⟧ → Berlatih jalan kaki agar kaki lentur. ("kaki lentur" adalah tujuan dari "jalan kaki") · ⟦Học hỏi nhiều cho có kiến thức.⟧ → Banyak belajar agar berpengetahuan. ("pengetahuan" adalah tujuan dari "belajar") · ⟦Nghỉ một chút cho đỡ mệt.⟧ → Istirahat sebentar supaya tidak terlalu lelah. ("kurang lelah" adalah tujuan dari "istirahat")
+=ja
+文法解説
+⟦cùng⟧：「一緒に、共に、同じ」という意味で、主体と行動・性質・状態が同一の関係にあることを表すために使います。
+⟦Park học cùng lớp với Lee.⟧ → パクはリーと同じクラスで勉強している。 · ⟦Park và Lee cùng đi thăm Hồ Gươm.⟧ → パクとリーは一緒にホアンキエム湖（Hồ Gươm）を訪れる。 · ⟦Họ cùng ngồi xe ô tô.⟧ → 彼らは一緒に車に乗る。 · ⟦Cả lớp cùng xem phim.⟧ → クラス全員で一緒に映画を見る。 · ⟦Họ cùng ăn cơm với nhau.⟧ → 彼らは一緒に食事をする。 · ⟦Chúng tôi cùng làm bài.⟧ → 私たちは一緒に宿題をする。
+⟦đều⟧：「みな、すべて、等しく」という意味で、異なる対象の活動・状態・性質が類似または同一であることを表すために使います。
+⟦Họ đều là người Hàn Quốc⟧ → 彼らはみな韓国人だ。 · ⟦Park và Lee đều muốn đi thăm Hồ Gươm.⟧ → パクもリーもホアンキエム湖を訪れたがっている。 · ⟦Hai người đều học giỏi tiếng Việt.⟧ → 二人ともベトナム語がよくできる。 · ⟦Chúng tôi đều đi bộ đến trường.⟧ → 私たちはみな歩いて学校に行く。 · ⟦Mọi người đều cố gắng học tập.⟧ → みな一生懸命勉強する。
+⟦cho⟧：「～ように、～するために」という意味で、⟦cho⟧ の後に示される事柄が前に述べた行為の目的であることを表すために使います。
+⟦Đi xe buýt cho rẻ.⟧ → 安く済むようにバスで行く。（「安さ」が「バスで行く」行為の目的） · ⟦Đi nhanh cho kịp giờ học.⟧ → 授業に間に合うように速く行く。（「授業に間に合う」ことが「速く行く」行為の目的） · ⟦Tập đi bộ cho dẻo chân.⟧ → 足腰を丈夫にするためにウォーキングをする。（「丈夫な足」が「歩く」行為の目的） · ⟦Học hỏi nhiều cho có kiến thức.⟧ → 見識を積めるようにたくさん勉強する。（「見識」が「勉強する」行為の目的） · ⟦Nghỉ một chút cho đỡ mệt.⟧ → 疲れが和らぐように少し休む。（「疲れを減らす」ことが「休む」行為の目的）
+=pl
+Objaśnienia gramatyczne
+⟦cùng⟧: „razem, wspólnie, ten sam” – wskazuje, że czynność, cecha lub stan są wspólne dla kilku podmiotów.
+⟦Park học cùng lớp với Lee.⟧ → Park chodzi do tej samej klasy co Lee. · ⟦Park và Lee cùng đi thăm Hồ Gươm.⟧ → Park i Lee razem zwiedzają jezioro Hoan Kiem (Hồ Gươm). · ⟦Họ cùng ngồi xe ô tô.⟧ → Jadą razem samochodem. · ⟦Cả lớp cùng xem phim.⟧ → Cała klasa ogląda razem film. · ⟦Họ cùng ăn cơm với nhau.⟧ → Jedzą razem. · ⟦Chúng tôi cùng làm bài.⟧ → Odrabiamy lekcje razem.
+⟦đều⟧: „wszyscy, obaj, jednakowo” – wskazuje, że czynności, stany lub cechy różnych podmiotów są podobne lub takie same.
+⟦Họ đều là người Hàn Quốc⟧ → Oni wszyscy są Koreańczykami. · ⟦Park và Lee đều muốn đi thăm Hồ Gươm.⟧ → Park i Lee obaj chcą zwiedzić jezioro Hoan Kiem. · ⟦Hai người đều học giỏi tiếng Việt.⟧ → Oboje dobrze radzą sobie z wietnamskim. · ⟦Chúng tôi đều đi bộ đến trường.⟧ → Wszyscy chodzimy do szkoły pieszo. · ⟦Mọi người đều cố gắng học tập.⟧ → Wszyscy pilnie się uczą.
+⟦cho⟧: „żeby, aby” – wskazuje, że to, co następuje po ⟦cho⟧, jest celem wcześniej wspomnianej czynności.
+⟦Đi xe buýt cho rẻ.⟧ → Jadę autobusem, żeby było tanio. („tanio” to cel „jazdy autobusem”) · ⟦Đi nhanh cho kịp giờ học.⟧ → Idę szybko, żeby zdążyć na lekcję. („zdążyć” to cel „szybkiego chodu”) · ⟦Tập đi bộ cho dẻo chân.⟧ → Ćwiczę chodzenie, żeby nogi były sprawne. („sprawne nogi” to cel „chodzenia”) · ⟦Học hỏi nhiều cho có kiến thức.⟧ → Dużo się uczę, żeby zdobyć wiedzę. („wiedza” to cel „nauki”) · ⟦Nghỉ một chút cho đỡ mệt.⟧ → Odpoczywam chwilę, żeby być mniej zmęczonym. („mniejsze zmęczenie” to cel „odpoczynku”)
+@@ pdf-grammar-d8971fb36a79ee62#0
+=cs
+Gramatický výklad
+Přídavné jméno + ⟦ra⟧ / ⟦lên⟧: vyjadřuje, že vlastnost vyjádřená přídavným jménem den ode dne roste či se zlepšuje.
+⟦Ồ, mình khỏe và có vẻ béo ra đấy.⟧ → No, mám se dobře a asi jsem i přibral. · ⟦Cái cây này mỗi ngày một to ra.⟧ → Tento strom je den ode dne větší. · ⟦Chị ấy ngày một xinh ra.⟧ → Je den ode dne hezčí. · ⟦Dạo này mình có vẻ béo lên.⟧ → Poslední dobou jako bych přibíral. · ⟦Lee ngày một đẹp lên.⟧ → Lee je den ode dne krásnější. · ⟦Cuộc sống của chúng ta ngày một tốt lên.⟧ → Náš život je den ode dne lepší.
+Přídavné jméno + ⟦đi⟧: vyjadřuje, že vlastnost vyjádřená přídavným jménem oproti původnímu stavu den ode dne ubývá či upadá.
+⟦Môi trường sống ngày một xấu đi.⟧ → Životní prostředí se den ode dne zhoršuje. · ⟦Chị ấy có vẻ gầy đi.⟧ → Zdá se, že zhubla. · ⟦Sức khỏe của ông ấy ngày một yếu đi.⟧ → Dědečkovo zdraví den ode dne slábne. · ⟦Lương thực thế giới ngày một ít đi.⟧ → Světových potravin je den ode dne méně. · ⟦Chiếc ô tô chạy càng ngày càng chậm đi.⟧ → Auto jede čím dál pomaleji. · ⟦Gió thổi mỗi ngày một yếu đi.⟧ → Vítr den ode dne slábne.
+=zh_cn
+语法解说
+形容词 + ⟦ra⟧ / ⟦lên⟧：用来明确表示形容词所表达的性质或特点日益增加或提高。
+⟦Ồ, mình khỏe và có vẻ béo ra đấy.⟧ → 哦，我挺好的，好像还胖了。 · ⟦Cái cây này mỗi ngày một to ra.⟧ → 这棵树一天比一天大。 · ⟦Chị ấy ngày một xinh ra.⟧ → 她一天比一天漂亮。 · ⟦Dạo này mình có vẻ béo lên.⟧ → 最近我好像胖了。 · ⟦Lee ngày một đẹp lên.⟧ → 李一天比一天美。 · ⟦Cuộc sống của chúng ta ngày một tốt lên.⟧ → 我们的生活一天比一天好。
+形容词 + ⟦đi⟧：用来明确表示形容词所表达的性质或特点比原来日益减少或衰退。
+⟦Môi trường sống ngày một xấu đi.⟧ → 生活环境一天比一天差。 · ⟦Chị ấy có vẻ gầy đi.⟧ → 她好像瘦了。 · ⟦Sức khỏe của ông ấy ngày một yếu đi.⟧ → 爷爷的身体一天比一天差。 · ⟦Lương thực thế giới ngày một ít đi.⟧ → 世界粮食一天比一天少。 · ⟦Chiếc ô tô chạy càng ngày càng chậm đi.⟧ → 汽车开得越来越慢。 · ⟦Gió thổi mỗi ngày một yếu đi.⟧ → 风一天比一天弱。
+=zh
+文法解說
+形容詞 + ⟦ra⟧ / ⟦lên⟧：用來明確表示形容詞所表達的性質或特點日益增加或提高。
+⟦Ồ, mình khỏe và có vẻ béo ra đấy.⟧ → 喔，我很好，好像還胖了。 · ⟦Cái cây này mỗi ngày một to ra.⟧ → 這棵樹一天比一天大。 · ⟦Chị ấy ngày một xinh ra.⟧ → 她一天比一天漂亮。 · ⟦Dạo này mình có vẻ béo lên.⟧ → 最近我好像變胖了。 · ⟦Lee ngày một đẹp lên.⟧ → 李一天比一天美。 · ⟦Cuộc sống của chúng ta ngày một tốt lên.⟧ → 我們的生活一天比一天好。
+形容詞 + ⟦đi⟧：用來明確表示形容詞所表達的性質或特點比原來日益減少或衰退。
+⟦Môi trường sống ngày một xấu đi.⟧ → 生活環境一天比一天差。 · ⟦Chị ấy có vẻ gầy đi.⟧ → 她好像瘦了。 · ⟦Sức khỏe của ông ấy ngày một yếu đi.⟧ → 爺爺的身體一天比一天差。 · ⟦Lương thực thế giới ngày một ít đi.⟧ → 世界糧食一天比一天少。 · ⟦Chiếc ô tô chạy càng ngày càng chậm đi.⟧ → 汽車開得越來越慢。 · ⟦Gió thổi mỗi ngày một yếu đi.⟧ → 風一天比一天弱。
+=en
+Grammar notes
+Adjective + ⟦ra⟧ / ⟦lên⟧: makes clear that the quality expressed by the adjective is increasing or improving day by day.
+⟦Ồ, mình khỏe và có vẻ béo ra đấy.⟧ → Oh, I'm well, and I seem to have put on weight. · ⟦Cái cây này mỗi ngày một to ra.⟧ → This tree gets bigger every day. · ⟦Chị ấy ngày một xinh ra.⟧ → She gets prettier by the day. · ⟦Dạo này mình có vẻ béo lên.⟧ → I seem to be putting on weight lately. · ⟦Lee ngày một đẹp lên.⟧ → Lee is getting more beautiful day by day. · ⟦Cuộc sống của chúng ta ngày một tốt lên.⟧ → Our life is getting better day by day.
+Adjective + ⟦đi⟧: makes clear that the quality expressed by the adjective is decreasing or declining compared with before.
+⟦Môi trường sống ngày một xấu đi.⟧ → The living environment is getting worse by the day. · ⟦Chị ấy có vẻ gầy đi.⟧ → She seems to have lost weight. · ⟦Sức khỏe của ông ấy ngày một yếu đi.⟧ → Grandpa's health is getting weaker day by day. · ⟦Lương thực thế giới ngày một ít đi.⟧ → The world's food supply is shrinking day by day. · ⟦Chiếc ô tô chạy càng ngày càng chậm đi.⟧ → The car is going slower and slower. · ⟦Gió thổi mỗi ngày một yếu đi.⟧ → The wind is getting weaker every day.
+=fr
+Notes de grammaire
+Adjectif + ⟦ra⟧ / ⟦lên⟧ : indique clairement que la qualité exprimée par l'adjectif augmente ou s'améliore de jour en jour.
+⟦Ồ, mình khỏe và có vẻ béo ra đấy.⟧ → Oh, je vais bien, et j'ai l'air d'avoir pris du poids. · ⟦Cái cây này mỗi ngày một to ra.⟧ → Cet arbre grandit de jour en jour. · ⟦Chị ấy ngày một xinh ra.⟧ → Elle est de plus en plus jolie. · ⟦Dạo này mình có vẻ béo lên.⟧ → Ces temps-ci, on dirait que je grossis. · ⟦Lee ngày một đẹp lên.⟧ → Lee embellit de jour en jour. · ⟦Cuộc sống của chúng ta ngày một tốt lên.⟧ → Notre vie s'améliore de jour en jour.
+Adjectif + ⟦đi⟧ : indique clairement que la qualité exprimée par l'adjectif diminue ou décline par rapport à avant.
+⟦Môi trường sống ngày một xấu đi.⟧ → Le cadre de vie se dégrade de jour en jour. · ⟦Chị ấy có vẻ gầy đi.⟧ → Elle semble avoir maigri. · ⟦Sức khỏe của ông ấy ngày một yếu đi.⟧ → La santé de grand-père s'affaiblit de jour en jour. · ⟦Lương thực thế giới ngày một ít đi.⟧ → Les réserves alimentaires mondiales diminuent de jour en jour. · ⟦Chiếc ô tô chạy càng ngày càng chậm đi.⟧ → La voiture roule de plus en plus lentement. · ⟦Gió thổi mỗi ngày một yếu đi.⟧ → Le vent faiblit de jour en jour.
+=de
+Grammatikerläuterungen
+Adjektiv + ⟦ra⟧ / ⟦lên⟧: macht deutlich, dass die vom Adjektiv ausgedrückte Eigenschaft von Tag zu Tag zunimmt oder sich verbessert.
+⟦Ồ, mình khỏe và có vẻ béo ra đấy.⟧ → Oh, mir geht's gut, und ich habe wohl zugenommen. · ⟦Cái cây này mỗi ngày một to ra.⟧ → Dieser Baum wird jeden Tag größer. · ⟦Chị ấy ngày một xinh ra.⟧ → Sie wird von Tag zu Tag hübscher. · ⟦Dạo này mình có vẻ béo lên.⟧ → In letzter Zeit scheine ich zuzunehmen. · ⟦Lee ngày một đẹp lên.⟧ → Lee wird von Tag zu Tag schöner. · ⟦Cuộc sống của chúng ta ngày một tốt lên.⟧ → Unser Leben wird von Tag zu Tag besser.
+Adjektiv + ⟦đi⟧: macht deutlich, dass die vom Adjektiv ausgedrückte Eigenschaft im Vergleich zu früher von Tag zu Tag abnimmt oder nachlässt.
+⟦Môi trường sống ngày một xấu đi.⟧ → Die Lebensumwelt wird von Tag zu Tag schlechter. · ⟦Chị ấy có vẻ gầy đi.⟧ → Sie scheint abgenommen zu haben. · ⟦Sức khỏe của ông ấy ngày một yếu đi.⟧ → Opas Gesundheit wird von Tag zu Tag schwächer. · ⟦Lương thực thế giới ngày một ít đi.⟧ → Die Nahrungsmittel der Welt werden von Tag zu Tag knapper. · ⟦Chiếc ô tô chạy càng ngày càng chậm đi.⟧ → Das Auto fährt immer langsamer. · ⟦Gió thổi mỗi ngày một yếu đi.⟧ → Der Wind wird jeden Tag schwächer.
+=hu
+Nyelvtani magyarázat
+Melléknév + ⟦ra⟧ / ⟦lên⟧: egyértelművé teszi, hogy a melléknév által kifejezett tulajdonság napról napra nő vagy javul.
+⟦Ồ, mình khỏe và có vẻ béo ra đấy.⟧ → Ó, jól vagyok, és úgy tűnik, híztam is. · ⟦Cái cây này mỗi ngày một to ra.⟧ → Ez a fa napról napra nagyobb. · ⟦Chị ấy ngày một xinh ra.⟧ → Napról napra csinosabb. · ⟦Dạo này mình có vẻ béo lên.⟧ → Mostanában mintha híznék. · ⟦Lee ngày một đẹp lên.⟧ → Lee napról napra szebb. · ⟦Cuộc sống của chúng ta ngày một tốt lên.⟧ → Életünk napról napra jobb.
+Melléknév + ⟦đi⟧: egyértelművé teszi, hogy a melléknév által kifejezett tulajdonság a korábbihoz képest napról napra csökken vagy hanyatlik.
+⟦Môi trường sống ngày một xấu đi.⟧ → Az életkörnyezet napról napra romlik. · ⟦Chị ấy có vẻ gầy đi.⟧ → Úgy tűnik, lefogyott. · ⟦Sức khỏe của ông ấy ngày một yếu đi.⟧ → Nagyapa egészsége napról napra gyengül. · ⟦Lương thực thế giới ngày một ít đi.⟧ → A világ élelmiszerkészlete napról napra fogy. · ⟦Chiếc ô tô chạy càng ngày càng chậm đi.⟧ → Az autó egyre lassabban megy. · ⟦Gió thổi mỗi ngày một yếu đi.⟧ → A szél napról napra gyengül.
+=id
+Penjelasan tata bahasa
+Adjektiva + ⟦ra⟧ / ⟦lên⟧: menegaskan bahwa sifat yang dinyatakan adjektiva makin hari makin bertambah atau meningkat.
+⟦Ồ, mình khỏe và có vẻ béo ra đấy.⟧ → Oh, aku baik-baik saja, dan sepertinya jadi gemuk. · ⟦Cái cây này mỗi ngày một to ra.⟧ → Pohon ini makin hari makin besar. · ⟦Chị ấy ngày một xinh ra.⟧ → Dia makin hari makin cantik. · ⟦Dạo này mình có vẻ béo lên.⟧ → Akhir-akhir ini sepertinya aku makin gemuk. · ⟦Lee ngày một đẹp lên.⟧ → Lee makin hari makin cantik. · ⟦Cuộc sống của chúng ta ngày một tốt lên.⟧ → Kehidupan kita makin hari makin baik.
+Adjektiva + ⟦đi⟧: menegaskan bahwa sifat yang dinyatakan adjektiva makin hari makin berkurang atau menurun dibandingkan semula.
+⟦Môi trường sống ngày một xấu đi.⟧ → Lingkungan hidup makin hari makin buruk. · ⟦Chị ấy có vẻ gầy đi.⟧ → Dia sepertinya jadi kurus. · ⟦Sức khỏe của ông ấy ngày một yếu đi.⟧ → Kesehatan kakek makin hari makin lemah. · ⟦Lương thực thế giới ngày một ít đi.⟧ → Pangan dunia makin hari makin sedikit. · ⟦Chiếc ô tô chạy càng ngày càng chậm đi.⟧ → Mobil itu berjalan makin lama makin pelan. · ⟦Gió thổi mỗi ngày một yếu đi.⟧ → Angin makin hari makin lemah.
+=ja
+文法解説
+形容詞 + ⟦ra⟧ / ⟦lên⟧：形容詞で表される性質や特性が日に日に増加・向上していることをはっきり示すために使います。
+⟦Ồ, mình khỏe và có vẻ béo ra đấy.⟧ → うん、元気だよ、それに太ったみたい。 · ⟦Cái cây này mỗi ngày một to ra.⟧ → この木は日に日に大きくなる。 · ⟦Chị ấy ngày một xinh ra.⟧ → 彼女は日に日にきれいになる。 · ⟦Dạo này mình có vẻ béo lên.⟧ → 最近、太ってきたみたい。 · ⟦Lee ngày một đẹp lên.⟧ → リーは日に日に美しくなる。 · ⟦Cuộc sống của chúng ta ngày một tốt lên.⟧ → 私たちの暮らしは日増しに良くなっている。
+形容詞 + ⟦đi⟧：形容詞で表される性質や特性が本来と比べて日に日に減少・衰退していることをはっきり示すために使います。
+⟦Môi trường sống ngày một xấu đi.⟧ → 生活環境が日に日に悪くなる。 · ⟦Chị ấy có vẻ gầy đi.⟧ → 彼女はやせたようだ。 · ⟦Sức khỏe của ông ấy ngày một yếu đi.⟧ → おじいさんの健康が日に日に衰えている。 · ⟦Lương thực thế giới ngày một ít đi.⟧ → 世界の食糧が日増しに少なくなっている。 · ⟦Chiếc ô tô chạy càng ngày càng chậm đi.⟧ → 車の走りがだんだん遅くなる。 · ⟦Gió thổi mỗi ngày một yếu đi.⟧ → 風が日に日に弱まっている。
+=pl
+Objaśnienia gramatyczne
+Przymiotnik + ⟦ra⟧ / ⟦lên⟧: wyraźnie wskazuje, że cecha wyrażona przymiotnikiem z dnia na dzień rośnie lub się poprawia.
+⟦Ồ, mình khỏe và có vẻ béo ra đấy.⟧ → Och, mam się dobrze i chyba przytyłem. · ⟦Cái cây này mỗi ngày một to ra.⟧ → To drzewo z każdym dniem jest większe. · ⟦Chị ấy ngày một xinh ra.⟧ → Z dnia na dzień jest ładniejsza. · ⟦Dạo này mình có vẻ béo lên.⟧ → Ostatnio chyba tyję. · ⟦Lee ngày một đẹp lên.⟧ → Lee z dnia na dzień pięknieje. · ⟦Cuộc sống của chúng ta ngày một tốt lên.⟧ → Nasze życie z dnia na dzień jest lepsze.
+Przymiotnik + ⟦đi⟧: wyraźnie wskazuje, że cecha wyrażona przymiotnikiem w porównaniu z pierwotną z dnia na dzień maleje lub słabnie.
+⟦Môi trường sống ngày một xấu đi.⟧ → Środowisko życia z dnia na dzień się pogarsza. · ⟦Chị ấy có vẻ gầy đi.⟧ → Chyba schudła. · ⟦Sức khỏe của ông ấy ngày một yếu đi.⟧ → Zdrowie dziadka z dnia na dzień słabnie. · ⟦Lương thực thế giới ngày một ít đi.⟧ → Światowych zasobów żywności z dnia na dzień ubywa. · ⟦Chiếc ô tô chạy càng ngày càng chậm đi.⟧ → Samochód jedzie coraz wolniej. · ⟦Gió thổi mỗi ngày một yếu đi.⟧ → Wiatr z każdym dniem słabnie.

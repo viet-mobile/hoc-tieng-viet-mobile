@@ -1,0 +1,396 @@
+@@ pdf-grammar-0a7f768e951a4a03#0
+~t 1. Datum|1. 日期的表达|1. 日期的表達|1. Dates|1. Les dates|1. Datumsangaben|1. Dátum|1. Tanggal|1. 日付の表現|1. Daty
+=cs
+⟦Hôm nay là ngày 13 tháng 5.⟧ — Dnes je 13. května.
+Datum se udává v pořadí ⟦ngày⟧ (den), ⟦tháng⟧ (měsíc), ⟦năm⟧ (rok) jako „ngày + číslo“, „tháng + číslo“, „năm + číslo“. Ptáme se ⟦ngày bao nhiêu⟧ (kolikátého), ⟦tháng mấy⟧ (který měsíc), ⟦năm bao nhiêu⟧ (který rok) nebo ⟦năm nào⟧ (v kterém roce).
+A: ⟦Hôm nay là ngày bao nhiêu?⟧ — Kolikátého je dnes?
+B: ⟦Hôm nay là ngày 15.⟧ — Dnes je patnáctého.
+A: ⟦Tháng này là tháng mấy?⟧ — Který je teď měsíc?
+B: ⟦Tháng này là tháng 7.⟧ — Teď je červenec.
+A: ⟦Em đã đi du lịch Việt Nam vào năm bao nhiêu?⟧ — V kterém roce jsi cestoval do Vietnamu?
+B: ⟦Vào năm 2018 ạ.⟧ — V roce 2018.
+Slovíčko: ⟦vào⟧ vejít; v (čas)
+„ngày + číslo“ označuje datum proto, že číslo za slovem přirozeně získává význam pořadí. Například 20. den je dvacátý den z 31 dnů v měsíci, proto se řekne ⟦ngày 20⟧ (dvacátý den). Pokud se pořadí změní na „číslo + ngày“, znamená to dobu trvání („kolik dní“): ⟦20 ngày⟧ je doba dvaceti dní. Totéž platí pro roky, měsíce i dny.
+A: ⟦Hôm nay là ngày bao nhiêu?⟧ — Kolikátého je dnes?
+B: ⟦Hôm nay là ngày 20.⟧ — Dnes je dvacátého.
+A: ⟦Em đã đi du lịch Việt Nam bao nhiêu ngày?⟧ — Na kolik dní jsi jel do Vietnamu?
+B: ⟦Em đã đi du lịch Việt Nam 20 ngày.⟧ — Cestoval jsem po Vietnamu 20 dní.
+=zh_cn
+⟦Hôm nay là ngày 13 tháng 5.⟧ —— 今天是5月13日。
+日期按 ⟦ngày⟧（日）、⟦tháng⟧（月）、⟦năm⟧（年）的顺序，用“ngày + 数字”“tháng + 数字”“năm + 数字”表示。询问时用 ⟦ngày bao nhiêu⟧（几号）、⟦tháng mấy⟧（几月）、⟦năm bao nhiêu⟧（哪一年）或 ⟦năm nào⟧（哪年）。
+A：⟦Hôm nay là ngày bao nhiêu?⟧ —— 今天几号？
+B：⟦Hôm nay là ngày 15.⟧ —— 今天15号。
+A：⟦Tháng này là tháng mấy?⟧ —— 这个月是几月？
+B：⟦Tháng này là tháng 7.⟧ —— 这个月是7月。
+A：⟦Em đã đi du lịch Việt Nam vào năm bao nhiêu?⟧ —— 你是哪一年去越南旅行的？
+B：⟦Vào năm 2018 ạ.⟧ —— 2018年。
+单词：⟦vào⟧ 进入；在（时间）
+“ngày + 数字”表示日期，是因为数字放在后面时自然带有序数的意思。例如20号是一个月31天中的第20天，所以说 ⟦ngày 20⟧（第20天）。如果语序变成“数字 + ngày”，就表示“几天”的期间，⟦20 ngày⟧ 指20天的期间。年、月、日都是如此。
+A：⟦Hôm nay là ngày bao nhiêu?⟧ —— 今天几号？
+B：⟦Hôm nay là ngày 20.⟧ —— 今天20号。
+A：⟦Em đã đi du lịch Việt Nam bao nhiêu ngày?⟧ —— 你去越南旅行了几天？
+B：⟦Em đã đi du lịch Việt Nam 20 ngày.⟧ —— 我去越南旅行了20天。
+=zh
+⟦Hôm nay là ngày 13 tháng 5.⟧ —— 今天是5月13日。
+日期按 ⟦ngày⟧（日）、⟦tháng⟧（月）、⟦năm⟧（年）的順序，用「ngày + 數字」「tháng + 數字」「năm + 數字」表示。詢問時用 ⟦ngày bao nhiêu⟧（幾號）、⟦tháng mấy⟧（幾月）、⟦năm bao nhiêu⟧（哪一年）或 ⟦năm nào⟧（哪年）。
+A：⟦Hôm nay là ngày bao nhiêu?⟧ —— 今天幾號？
+B：⟦Hôm nay là ngày 15.⟧ —— 今天15號。
+A：⟦Tháng này là tháng mấy?⟧ —— 這個月是幾月？
+B：⟦Tháng này là tháng 7.⟧ —— 這個月是7月。
+A：⟦Em đã đi du lịch Việt Nam vào năm bao nhiêu?⟧ —— 你是哪一年去越南旅行的？
+B：⟦Vào năm 2018 ạ.⟧ —— 2018年。
+單字：⟦vào⟧ 進入；在（時間）
+「ngày + 數字」表示日期，是因為數字放在後面時自然帶有序數的意思。例如20號是一個月31天中的第20天，所以說 ⟦ngày 20⟧（第20天）。如果語序變成「數字 + ngày」，就表示「幾天」的期間，⟦20 ngày⟧ 指20天的期間。年、月、日都是如此。
+A：⟦Hôm nay là ngày bao nhiêu?⟧ —— 今天幾號？
+B：⟦Hôm nay là ngày 20.⟧ —— 今天20號。
+A：⟦Em đã đi du lịch Việt Nam bao nhiêu ngày?⟧ —— 你去越南旅行了幾天？
+B：⟦Em đã đi du lịch Việt Nam 20 ngày.⟧ —— 我去越南旅行了20天。
+=en
+⟦Hôm nay là ngày 13 tháng 5.⟧ — Today is May 13th.
+Dates follow the order ⟦ngày⟧ (day), ⟦tháng⟧ (month), ⟦năm⟧ (year), as "ngày + number", "tháng + number", "năm + number". To ask, use ⟦ngày bao nhiêu⟧ (what date), ⟦tháng mấy⟧ (which month), ⟦năm bao nhiêu⟧ (what year) or ⟦năm nào⟧ (which year).
+A: ⟦Hôm nay là ngày bao nhiêu?⟧ — What's the date today?
+B: ⟦Hôm nay là ngày 15.⟧ — Today is the 15th.
+A: ⟦Tháng này là tháng mấy?⟧ — What month is it?
+B: ⟦Tháng này là tháng 7.⟧ — It's July.
+A: ⟦Em đã đi du lịch Việt Nam vào năm bao nhiêu?⟧ — In what year did you travel to Vietnam?
+B: ⟦Vào năm 2018 ạ.⟧ — In 2018.
+Word: ⟦vào⟧ to enter; in, at (time)
+"ngày + number" means a date because a number placed after the noun naturally takes on an ordinal meaning. For example, the 20th is the twentieth day of a 31-day month, so it is ⟦ngày 20⟧ (the twentieth day). If the order becomes "number + ngày", it means a length of time ("for how many days"): ⟦20 ngày⟧ is a period of 20 days. The same applies to years, months and days.
+A: ⟦Hôm nay là ngày bao nhiêu?⟧ — What's the date today?
+B: ⟦Hôm nay là ngày 20.⟧ — Today is the 20th.
+A: ⟦Em đã đi du lịch Việt Nam bao nhiêu ngày?⟧ — How many days did you travel in Vietnam?
+B: ⟦Em đã đi du lịch Việt Nam 20 ngày.⟧ — I traveled in Vietnam for 20 days.
+=fr
+⟦Hôm nay là ngày 13 tháng 5.⟧ — Aujourd'hui, nous sommes le 13 mai.
+La date suit l'ordre ⟦ngày⟧ (jour), ⟦tháng⟧ (mois), ⟦năm⟧ (année) : « ngày + nombre », « tháng + nombre », « năm + nombre ». Pour demander, on dit ⟦ngày bao nhiêu⟧ (le combien), ⟦tháng mấy⟧ (quel mois), ⟦năm bao nhiêu⟧ (quelle année) ou ⟦năm nào⟧ (quelle année).
+A : ⟦Hôm nay là ngày bao nhiêu?⟧ — Le combien sommes-nous ?
+B : ⟦Hôm nay là ngày 15.⟧ — Nous sommes le 15.
+A : ⟦Tháng này là tháng mấy?⟧ — En quel mois sommes-nous ?
+B : ⟦Tháng này là tháng 7.⟧ — En juillet.
+A : ⟦Em đã đi du lịch Việt Nam vào năm bao nhiêu?⟧ — En quelle année es-tu allé au Viêt Nam ?
+B : ⟦Vào năm 2018 ạ.⟧ — En 2018.
+Mot : ⟦vào⟧ entrer ; en, à (temps)
+« ngày + nombre » désigne une date parce qu'un nombre placé après le nom prend naturellement un sens ordinal. Par exemple, le 20 est le vingtième jour d'un mois de 31 jours, d'où ⟦ngày 20⟧ (le vingtième jour). Si l'ordre devient « nombre + ngày », cela exprime une durée (« pendant combien de jours ») : ⟦20 ngày⟧ désigne une période de 20 jours. Il en va de même pour les années, les mois et les jours.
+A : ⟦Hôm nay là ngày bao nhiêu?⟧ — Le combien sommes-nous ?
+B : ⟦Hôm nay là ngày 20.⟧ — Nous sommes le 20.
+A : ⟦Em đã đi du lịch Việt Nam bao nhiêu ngày?⟧ — Combien de jours as-tu voyagé au Viêt Nam ?
+B : ⟦Em đã đi du lịch Việt Nam 20 ngày.⟧ — J'ai voyagé 20 jours au Viêt Nam.
+=de
+⟦Hôm nay là ngày 13 tháng 5.⟧ — Heute ist der 13. Mai.
+Datumsangaben folgen der Reihenfolge ⟦ngày⟧ (Tag), ⟦tháng⟧ (Monat), ⟦năm⟧ (Jahr) als „ngày + Zahl“, „tháng + Zahl“, „năm + Zahl“. Man fragt mit ⟦ngày bao nhiêu⟧ (der Wievielte), ⟦tháng mấy⟧ (welcher Monat), ⟦năm bao nhiêu⟧ (welches Jahr) oder ⟦năm nào⟧ (in welchem Jahr).
+A: ⟦Hôm nay là ngày bao nhiêu?⟧ — Der Wievielte ist heute?
+B: ⟦Hôm nay là ngày 15.⟧ — Heute ist der 15.
+A: ⟦Tháng này là tháng mấy?⟧ — Welcher Monat ist jetzt?
+B: ⟦Tháng này là tháng 7.⟧ — Jetzt ist Juli.
+A: ⟦Em đã đi du lịch Việt Nam vào năm bao nhiêu?⟧ — In welchem Jahr bist du nach Vietnam gereist?
+B: ⟦Vào năm 2018 ạ.⟧ — Im Jahr 2018.
+Wort: ⟦vào⟧ hineingehen; in, um (Zeit)
+„ngày + Zahl“ bezeichnet ein Datum, weil eine nachgestellte Zahl ganz natürlich Ordinalbedeutung bekommt. Der 20. ist zum Beispiel der zwanzigste Tag eines 31-tägigen Monats, daher ⟦ngày 20⟧ (der zwanzigste Tag). Ändert sich die Reihenfolge zu „Zahl + ngày“, bezeichnet es eine Zeitdauer („wie viele Tage lang“): ⟦20 ngày⟧ ist ein Zeitraum von 20 Tagen. Das gilt für Jahre, Monate und Tage gleichermaßen.
+A: ⟦Hôm nay là ngày bao nhiêu?⟧ — Der Wievielte ist heute?
+B: ⟦Hôm nay là ngày 20.⟧ — Heute ist der 20.
+A: ⟦Em đã đi du lịch Việt Nam bao nhiêu ngày?⟧ — Wie viele Tage warst du in Vietnam auf Reisen?
+B: ⟦Em đã đi du lịch Việt Nam 20 ngày.⟧ — Ich war 20 Tage in Vietnam auf Reisen.
+=hu
+⟦Hôm nay là ngày 13 tháng 5.⟧ — Ma május 13. van.
+A dátum sorrendje ⟦ngày⟧ (nap), ⟦tháng⟧ (hónap), ⟦năm⟧ (év), „ngày + szám”, „tháng + szám”, „năm + szám” formában. Kérdezni a ⟦ngày bao nhiêu⟧ (hányadika), ⟦tháng mấy⟧ (hányadik hónap), ⟦năm bao nhiêu⟧ (melyik év) vagy ⟦năm nào⟧ (melyik évben) kifejezéssel lehet.
+A: ⟦Hôm nay là ngày bao nhiêu?⟧ — Hányadika van ma?
+B: ⟦Hôm nay là ngày 15.⟧ — Ma 15-e van.
+A: ⟦Tháng này là tháng mấy?⟧ — Milyen hónap van most?
+B: ⟦Tháng này là tháng 7.⟧ — Most július van.
+A: ⟦Em đã đi du lịch Việt Nam vào năm bao nhiêu?⟧ — Melyik évben utaztál Vietnámba?
+B: ⟦Vào năm 2018 ạ.⟧ — 2018-ban.
+Szó: ⟦vào⟧ bemenni; -kor, -ban (idő)
+A „ngày + szám” azért jelent dátumot, mert a szó után álló szám természetes módon sorszámnévi jelentést kap. A 20-a például egy 31 napos hónap huszadik napja, ezért ⟦ngày 20⟧ (a huszadik nap). Ha a sorrend „szám + ngày”-ra változik, időtartamot jelent („hány napig”): a ⟦20 ngày⟧ húsznapos időszak. Ez évre, hónapra és napra egyaránt érvényes.
+A: ⟦Hôm nay là ngày bao nhiêu?⟧ — Hányadika van ma?
+B: ⟦Hôm nay là ngày 20.⟧ — Ma 20-a van.
+A: ⟦Em đã đi du lịch Việt Nam bao nhiêu ngày?⟧ — Hány napig utaztál Vietnámban?
+B: ⟦Em đã đi du lịch Việt Nam 20 ngày.⟧ — 20 napig utaztam Vietnámban.
+=id
+⟦Hôm nay là ngày 13 tháng 5.⟧ — Hari ini tanggal 13 Mei.
+Tanggal disusun dengan urutan ⟦ngày⟧ (tanggal), ⟦tháng⟧ (bulan), ⟦năm⟧ (tahun) sebagai "ngày + angka", "tháng + angka", "năm + angka". Untuk bertanya dipakai ⟦ngày bao nhiêu⟧ (tanggal berapa), ⟦tháng mấy⟧ (bulan apa), ⟦năm bao nhiêu⟧ (tahun berapa) atau ⟦năm nào⟧ (tahun mana).
+A: ⟦Hôm nay là ngày bao nhiêu?⟧ — Hari ini tanggal berapa?
+B: ⟦Hôm nay là ngày 15.⟧ — Hari ini tanggal 15.
+A: ⟦Tháng này là tháng mấy?⟧ — Bulan ini bulan apa?
+B: ⟦Tháng này là tháng 7.⟧ — Bulan ini bulan Juli.
+A: ⟦Em đã đi du lịch Việt Nam vào năm bao nhiêu?⟧ — Tahun berapa kamu berwisata ke Vietnam?
+B: ⟦Vào năm 2018 ạ.⟧ — Tahun 2018.
+Kosakata: ⟦vào⟧ masuk; pada (waktu)
+"ngày + angka" berarti tanggal karena angka yang diletakkan di belakang secara alami bermakna urutan. Misalnya tanggal 20 adalah hari ke-20 dari 31 hari dalam sebulan, sehingga disebut ⟦ngày 20⟧ (hari ke-20). Jika urutannya menjadi "angka + ngày", artinya lamanya waktu ("selama berapa hari"): ⟦20 ngày⟧ berarti selama 20 hari. Hal yang sama berlaku untuk tahun, bulan, dan hari.
+A: ⟦Hôm nay là ngày bao nhiêu?⟧ — Hari ini tanggal berapa?
+B: ⟦Hôm nay là ngày 20.⟧ — Hari ini tanggal 20.
+A: ⟦Em đã đi du lịch Việt Nam bao nhiêu ngày?⟧ — Berapa hari kamu berwisata di Vietnam?
+B: ⟦Em đã đi du lịch Việt Nam 20 ngày.⟧ — Saya berwisata di Vietnam selama 20 hari.
+=ja
+⟦Hôm nay là ngày 13 tháng 5.⟧ — 今日は5月13日です。
+日付は ⟦ngày⟧（日）、⟦tháng⟧（月）、⟦năm⟧（年）の順で、「ngày ＋ 数字」「tháng ＋ 数字」「năm ＋ 数字」を使います。尋ねるときは ⟦ngày bao nhiêu⟧（何日）、⟦tháng mấy⟧（何月）、⟦năm bao nhiêu⟧（何年）または ⟦năm nào⟧（どの年）で表します。
+A：⟦Hôm nay là ngày bao nhiêu?⟧ — 今日は何日？
+B：⟦Hôm nay là ngày 15.⟧ — 今日は15日だよ。
+A：⟦Tháng này là tháng mấy?⟧ — 今月は何月？
+B：⟦Tháng này là tháng 7.⟧ — 今月は7月だよ。
+A：⟦Em đã đi du lịch Việt Nam vào năm bao nhiêu?⟧ — 君は何年にベトナム旅行に行ったの？
+B：⟦Vào năm 2018 ạ.⟧ — 2018年です。
+単語：⟦vào⟧ 入る、～に（時間）
+「ngày ＋ 数字」が日付を表すのは、数字が後ろに来ると自然に序数の意味を持つからです。例えば20日は1か月31日のうち20番目の日なので ⟦ngày 20⟧（20番目の日）と表します。語順が「数字 ＋ ngày」に変わると「何日間」という期間を意味し、⟦20 ngày⟧ は20日間の期間を表します。これは年・月・日すべて同じです。
+A：⟦Hôm nay là ngày bao nhiêu?⟧ — 今日は何日？
+B：⟦Hôm nay là ngày 20.⟧ — 今日は20日だよ。
+A：⟦Em đã đi du lịch Việt Nam bao nhiêu ngày?⟧ — 君は何日間ベトナムを旅行したの？
+B：⟦Em đã đi du lịch Việt Nam 20 ngày.⟧ — 20日間ベトナムを旅行しました。
+=pl
+⟦Hôm nay là ngày 13 tháng 5.⟧ — Dziś jest 13 maja.
+Data ma kolejność ⟦ngày⟧ (dzień), ⟦tháng⟧ (miesiąc), ⟦năm⟧ (rok) w formie „ngày + liczba”, „tháng + liczba”, „năm + liczba”. Pytamy ⟦ngày bao nhiêu⟧ (którego), ⟦tháng mấy⟧ (który miesiąc), ⟦năm bao nhiêu⟧ (który rok) lub ⟦năm nào⟧ (w którym roku).
+A: ⟦Hôm nay là ngày bao nhiêu?⟧ — Którego dziś jest?
+B: ⟦Hôm nay là ngày 15.⟧ — Dziś jest piętnasty.
+A: ⟦Tháng này là tháng mấy?⟧ — Jaki jest teraz miesiąc?
+B: ⟦Tháng này là tháng 7.⟧ — Teraz jest lipiec.
+A: ⟦Em đã đi du lịch Việt Nam vào năm bao nhiêu?⟧ — W którym roku pojechałeś do Wietnamu?
+B: ⟦Vào năm 2018 ạ.⟧ — W 2018 roku.
+Słówko: ⟦vào⟧ wejść; w (czas)
+„ngày + liczba” oznacza datę, bo liczba stojąca po rzeczowniku naturalnie nabiera znaczenia porządkowego. Na przykład 20. to dwudziesty dzień 31-dniowego miesiąca, dlatego mówi się ⟦ngày 20⟧ (dwudziesty dzień). Jeśli szyk zmieni się na „liczba + ngày”, oznacza to czas trwania („przez ile dni”): ⟦20 ngày⟧ to okres 20 dni. Tak samo jest z latami, miesiącami i dniami.
+A: ⟦Hôm nay là ngày bao nhiêu?⟧ — Którego dziś jest?
+B: ⟦Hôm nay là ngày 20.⟧ — Dziś jest dwudziesty.
+A: ⟦Em đã đi du lịch Việt Nam bao nhiêu ngày?⟧ — Ile dni podróżowałeś po Wietnamie?
+B: ⟦Em đã đi du lịch Việt Nam 20 ngày.⟧ — Podróżowałem po Wietnamie 20 dni.
+@@ pdf-grammar-48b5cba20fa1f036#0
+~t 2. Dny v týdnu|2. 星期的表达|2. 星期的表達|2. Days of the week|2. Les jours de la semaine|2. Wochentage|2. A hét napjai|2. Nama hari|2. 曜日の表現|2. Dni tygodnia
+=cs
+⟦Thứ sáu tuần sau đó là sinh nhật của bố tôi.⟧ — Pátek následujícího týdne jsou narozeniny mého otce.
+Na den v týdnu se ptáme ⟦thứ mấy⟧ (kolikátý / jaký den), kde ⟦thứ⟧ vyjadřuje pořadí a ⟦mấy⟧ znamená „kolik“. Neděle je ⟦chủ nhật⟧ (den Páně) a pondělí až sobota se vyjadřují jako druhý až sedmý den.
+neděle ⟦chủ nhật⟧ | pondělí ⟦thứ 2 (hai)⟧ | úterý ⟦thứ 3 (ba)⟧ | středa ⟦thứ 4 (tư)⟧ | čtvrtek ⟦thứ 5 (năm)⟧ | pátek ⟦thứ 6 (sáu)⟧ | sobota ⟦thứ 7 (bảy)⟧
+A: ⟦Ngày 15 là thứ mấy?⟧ — Jaký den je patnáctého?
+B: ⟦Ngày 15 là thứ 6.⟧ — Patnáctého je pátek.
+Slovíčko: ⟦sinh nhật⟧ narozeniny
+=zh_cn
+⟦Thứ sáu tuần sau đó là sinh nhật của bố tôi.⟧ —— 再下一周的星期五是我父亲的生日。
+星期用表示顺序的 ⟦thứ⟧（第……）加上 ⟦mấy⟧（几）组成 ⟦thứ mấy⟧（星期几）来询问；星期日用 ⟦chủ nhật⟧（主日），星期一到星期六用表示“第二”到“第七”的说法。
+星期日 ⟦chủ nhật⟧ | 星期一 ⟦thứ 2 (hai)⟧ | 星期二 ⟦thứ 3 (ba)⟧ | 星期三 ⟦thứ 4 (tư)⟧ | 星期四 ⟦thứ 5 (năm)⟧ | 星期五 ⟦thứ 6 (sáu)⟧ | 星期六 ⟦thứ 7 (bảy)⟧
+A：⟦Ngày 15 là thứ mấy?⟧ —— 15号是星期几？
+B：⟦Ngày 15 là thứ 6.⟧ —— 15号是星期五。
+单词：⟦sinh nhật⟧ 生日
+=zh
+⟦Thứ sáu tuần sau đó là sinh nhật của bố tôi.⟧ —— 再下一週的星期五是我父親的生日。
+星期用表示順序的 ⟦thứ⟧（第……）加上 ⟦mấy⟧（幾）組成 ⟦thứ mấy⟧（星期幾）來詢問；星期日用 ⟦chủ nhật⟧（主日），星期一到星期六用表示「第二」到「第七」的說法。
+星期日 ⟦chủ nhật⟧ | 星期一 ⟦thứ 2 (hai)⟧ | 星期二 ⟦thứ 3 (ba)⟧ | 星期三 ⟦thứ 4 (tư)⟧ | 星期四 ⟦thứ 5 (năm)⟧ | 星期五 ⟦thứ 6 (sáu)⟧ | 星期六 ⟦thứ 7 (bảy)⟧
+A：⟦Ngày 15 là thứ mấy?⟧ —— 15號是星期幾？
+B：⟦Ngày 15 là thứ 6.⟧ —— 15號是星期五。
+單字：⟦sinh nhật⟧ 生日
+=en
+⟦Thứ sáu tuần sau đó là sinh nhật của bố tôi.⟧ — Friday of the following week is my father's birthday.
+To ask the day of the week, add ⟦mấy⟧ (how many) to ⟦thứ⟧ (the -th, ordinal) to form ⟦thứ mấy⟧ (which day). Sunday is ⟦chủ nhật⟧ (the Lord's day), and Monday to Saturday are expressed as the second to the seventh day.
+Sunday ⟦chủ nhật⟧ | Monday ⟦thứ 2 (hai)⟧ | Tuesday ⟦thứ 3 (ba)⟧ | Wednesday ⟦thứ 4 (tư)⟧ | Thursday ⟦thứ 5 (năm)⟧ | Friday ⟦thứ 6 (sáu)⟧ | Saturday ⟦thứ 7 (bảy)⟧
+A: ⟦Ngày 15 là thứ mấy?⟧ — What day of the week is the 15th?
+B: ⟦Ngày 15 là thứ 6.⟧ — The 15th is a Friday.
+Word: ⟦sinh nhật⟧ birthday
+=fr
+⟦Thứ sáu tuần sau đó là sinh nhật của bố tôi.⟧ — Le vendredi de la semaine suivante, c'est l'anniversaire de mon père.
+Pour demander le jour de la semaine, on ajoute ⟦mấy⟧ (combien) à ⟦thứ⟧ (-ième, ordinal) : ⟦thứ mấy⟧ (quel jour). Le dimanche est ⟦chủ nhật⟧ (jour du Seigneur), et du lundi au samedi on dit « deuxième » à « septième » jour.
+dimanche ⟦chủ nhật⟧ | lundi ⟦thứ 2 (hai)⟧ | mardi ⟦thứ 3 (ba)⟧ | mercredi ⟦thứ 4 (tư)⟧ | jeudi ⟦thứ 5 (năm)⟧ | vendredi ⟦thứ 6 (sáu)⟧ | samedi ⟦thứ 7 (bảy)⟧
+A : ⟦Ngày 15 là thứ mấy?⟧ — Quel jour de la semaine tombe le 15 ?
+B : ⟦Ngày 15 là thứ 6.⟧ — Le 15, c'est un vendredi.
+Mot : ⟦sinh nhật⟧ anniversaire
+=de
+⟦Thứ sáu tuần sau đó là sinh nhật của bố tôi.⟧ — Am Freitag der darauffolgenden Woche hat mein Vater Geburtstag.
+Nach dem Wochentag fragt man mit ⟦thứ mấy⟧ (welcher Tag), gebildet aus ⟦thứ⟧ (der -te, Ordinalzahl) und ⟦mấy⟧ (wie viel). Sonntag heißt ⟦chủ nhật⟧ (Tag des Herrn), Montag bis Samstag werden als zweiter bis siebter Tag bezeichnet.
+Sonntag ⟦chủ nhật⟧ | Montag ⟦thứ 2 (hai)⟧ | Dienstag ⟦thứ 3 (ba)⟧ | Mittwoch ⟦thứ 4 (tư)⟧ | Donnerstag ⟦thứ 5 (năm)⟧ | Freitag ⟦thứ 6 (sáu)⟧ | Samstag ⟦thứ 7 (bảy)⟧
+A: ⟦Ngày 15 là thứ mấy?⟧ — Welcher Wochentag ist der 15.?
+B: ⟦Ngày 15 là thứ 6.⟧ — Der 15. ist ein Freitag.
+Wort: ⟦sinh nhật⟧ Geburtstag
+=hu
+⟦Thứ sáu tuần sau đó là sinh nhật của bố tôi.⟧ — Az azt követő hét péntekén van az apám születésnapja.
+A hét napját a sorrendet jelölő ⟦thứ⟧ (-ik) és a ⟦mấy⟧ (hány) összekapcsolásával, ⟦thứ mấy⟧ (milyen nap) formában kérdezzük. A vasárnap ⟦chủ nhật⟧ (az Úr napja), hétfőtől szombatig pedig a „második”–„hetedik” nap kifejezéseket használjuk.
+vasárnap ⟦chủ nhật⟧ | hétfő ⟦thứ 2 (hai)⟧ | kedd ⟦thứ 3 (ba)⟧ | szerda ⟦thứ 4 (tư)⟧ | csütörtök ⟦thứ 5 (năm)⟧ | péntek ⟦thứ 6 (sáu)⟧ | szombat ⟦thứ 7 (bảy)⟧
+A: ⟦Ngày 15 là thứ mấy?⟧ — Milyen napra esik 15-e?
+B: ⟦Ngày 15 là thứ 6.⟧ — 15-e péntek.
+Szó: ⟦sinh nhật⟧ születésnap
+=id
+⟦Thứ sáu tuần sau đó là sinh nhật của bố tôi.⟧ — Hari Jumat minggu berikutnya adalah ulang tahun ayah saya.
+Nama hari ditanyakan dengan ⟦thứ mấy⟧ (hari apa), gabungan ⟦thứ⟧ (ke-, urutan) dan ⟦mấy⟧ (berapa). Hari Minggu disebut ⟦chủ nhật⟧ (hari Tuhan), sedangkan Senin sampai Sabtu dinyatakan sebagai hari kedua sampai ketujuh.
+Minggu ⟦chủ nhật⟧ | Senin ⟦thứ 2 (hai)⟧ | Selasa ⟦thứ 3 (ba)⟧ | Rabu ⟦thứ 4 (tư)⟧ | Kamis ⟦thứ 5 (năm)⟧ | Jumat ⟦thứ 6 (sáu)⟧ | Sabtu ⟦thứ 7 (bảy)⟧
+A: ⟦Ngày 15 là thứ mấy?⟧ — Tanggal 15 hari apa?
+B: ⟦Ngày 15 là thứ 6.⟧ — Tanggal 15 hari Jumat.
+Kosakata: ⟦sinh nhật⟧ ulang tahun
+=ja
+⟦Thứ sáu tuần sau đó là sinh nhật của bố tôi.⟧ — その次の週の金曜日が父の誕生日です。
+曜日は順序を表す ⟦thứ⟧（～番目）に ⟦mấy⟧（いくつ）をつけた ⟦thứ mấy⟧（何番目・何曜日）で尋ね、日曜日は ⟦chủ nhật⟧（主日）、月曜日から土曜日までは2番目から7番目を意味する表現を使います。
+日曜日 ⟦chủ nhật⟧ | 月曜日 ⟦thứ 2 (hai)⟧ | 火曜日 ⟦thứ 3 (ba)⟧ | 水曜日 ⟦thứ 4 (tư)⟧ | 木曜日 ⟦thứ 5 (năm)⟧ | 金曜日 ⟦thứ 6 (sáu)⟧ | 土曜日 ⟦thứ 7 (bảy)⟧
+A：⟦Ngày 15 là thứ mấy?⟧ — 15日は何曜日？
+B：⟦Ngày 15 là thứ 6.⟧ — 15日は金曜日だよ。
+単語：⟦sinh nhật⟧ 誕生日
+=pl
+⟦Thứ sáu tuần sau đó là sinh nhật của bố tôi.⟧ — W piątek następnego tygodnia są urodziny mojego ojca.
+O dzień tygodnia pytamy ⟦thứ mấy⟧ (który dzień), łącząc ⟦thứ⟧ (-ty, porządkowy) z ⟦mấy⟧ (ile). Niedziela to ⟦chủ nhật⟧ (dzień Pański), a od poniedziałku do soboty mówi się „drugi”–„siódmy” dzień.
+niedziela ⟦chủ nhật⟧ | poniedziałek ⟦thứ 2 (hai)⟧ | wtorek ⟦thứ 3 (ba)⟧ | środa ⟦thứ 4 (tư)⟧ | czwartek ⟦thứ 5 (năm)⟧ | piątek ⟦thứ 6 (sáu)⟧ | sobota ⟦thứ 7 (bảy)⟧
+A: ⟦Ngày 15 là thứ mấy?⟧ — Jaki dzień tygodnia jest piętnastego?
+B: ⟦Ngày 15 là thứ 6.⟧ — Piętnastego jest piątek.
+Słówko: ⟦sinh nhật⟧ urodziny
+@@ pdf-grammar-2ab05d24181d4756#0
+~t 1. Klasifikátory|1. 量词（分类词）|1. 量詞（分類詞）|1. Classifiers|1. Les classificateurs|1. Klassifikatoren|1. Osztályozó szavak|1. Kata penggolong|1. 類別詞の表現|1. Klasyfikatory
+=cs
+A: ⟦Quả này là quả gì?⟧ — Co je to za ovoce?
+B: ⟦Quả này là quả cam.⟧ — To je pomeranč.
+⟦quả⟧ je jedním z klasifikátorů. Klasifikátor stojí před podstatným jménem a označuje, jakého druhu je. Často používané klasifikátory:
+Zvířata — ⟦con⟧: ⟦con chó⟧ pes, ⟦con mèo⟧ kočka
+Běžné věci — ⟦cái⟧: ⟦cái mũ⟧ klobouk, ⟦cái bàn⟧ stůl
+Papírové věci — ⟦tờ⟧: ⟦tờ báo⟧ noviny, ⟦tờ giấy⟧ list papíru
+Knihy — ⟦quyển⟧: ⟦quyển sách⟧ kniha, ⟦quyển từ điển⟧ slovník
+Ovoce, kulaté předměty — ⟦quả⟧: ⟦quả cam⟧ pomeranč, ⟦quả bóng⟧ míč
+Stroje, jeden kus z páru — ⟦chiếc⟧: ⟦chiếc xe đạp⟧ kolo, ⟦chiếc giày⟧ jedna bota
+Aby se podstatné jméno neopakovalo, lze použít „klasifikátor + ukazovací slovo (này/kia/ấy/đó)“ ve významu „tento / tamten / ten“.
+A: ⟦Cái mũ này thế nào?⟧ — Jak se ti líbí tento klobouk?
+B: ⟦Cái này rất đẹp.⟧ — Tenhle je moc hezký.
+Ve spojení s číslovkou funguje klasifikátor jako počítací jednotka, v pořadí „číslovka + klasifikátor + podstatné jméno“.
+⟦Tôi muốn mua 3 quả bóng.⟧ — Chci koupit 3 míče.
+⟦Tôi có 3 quyển sách tiếng Việt.⟧ — Mám 3 vietnamské knihy.
+Slovíčka: ⟦mũ⟧ klobouk | ⟦đẹp⟧ hezký | ⟦muốn⟧ chtít
+=zh_cn
+A：⟦Quả này là quả gì?⟧ —— 这是什么水果？
+B：⟦Quả này là quả cam.⟧ —— 这是橙子。
+⟦quả⟧ 是量词（分类词）的一种。分类词放在名词前，表示该名词的种类。常用的分类词如下：
+动物 —— ⟦con⟧：⟦con chó⟧ 狗，⟦con mèo⟧ 猫
+一般物品 —— ⟦cái⟧：⟦cái mũ⟧ 帽子，⟦cái bàn⟧ 桌子
+纸类 —— ⟦tờ⟧：⟦tờ báo⟧ 报纸，⟦tờ giấy⟧ 纸
+书类 —— ⟦quyển⟧：⟦quyển sách⟧ 书，⟦quyển từ điển⟧ 词典
+水果、圆形物品 —— ⟦quả⟧：⟦quả cam⟧ 橙子，⟦quả bóng⟧ 球
+机器类、（成对物品中的）一只 —— ⟦chiếc⟧：⟦chiếc xe đạp⟧ 自行车，⟦chiếc giày⟧ 一只鞋
+不重复前面出现的名词，而用“分类词 + 指示词（này/kia/ấy/đó）”，就表示“这个/那个/那个”。
+A：⟦Cái mũ này thế nào?⟧ —— 这顶帽子怎么样？
+B：⟦Cái này rất đẹp.⟧ —— 这个非常漂亮。
+分类词和表示数量的词结合时，起单位名词的作用，按“数量词 + 分类词 + 名词”的顺序使用。
+⟦Tôi muốn mua 3 quả bóng.⟧ —— 我想买3个球。
+⟦Tôi có 3 quyển sách tiếng Việt.⟧ —— 我有3本越南语书。
+单词：⟦mũ⟧ 帽子 | ⟦đẹp⟧ 漂亮 | ⟦muốn⟧ 想要
+=zh
+A：⟦Quả này là quả gì?⟧ —— 這是什麼水果？
+B：⟦Quả này là quả cam.⟧ —— 這是柳橙。
+⟦quả⟧ 是量詞（分類詞）的一種。分類詞放在名詞前，表示該名詞的種類。常用的分類詞如下：
+動物 —— ⟦con⟧：⟦con chó⟧ 狗，⟦con mèo⟧ 貓
+一般物品 —— ⟦cái⟧：⟦cái mũ⟧ 帽子，⟦cái bàn⟧ 桌子
+紙類 —— ⟦tờ⟧：⟦tờ báo⟧ 報紙，⟦tờ giấy⟧ 紙
+書類 —— ⟦quyển⟧：⟦quyển sách⟧ 書，⟦quyển từ điển⟧ 詞典
+水果、圓形物品 —— ⟦quả⟧：⟦quả cam⟧ 柳橙，⟦quả bóng⟧ 球
+機器類、（成對物品中的）一隻 —— ⟦chiếc⟧：⟦chiếc xe đạp⟧ 腳踏車，⟦chiếc giày⟧ 一隻鞋
+不重複前面出現的名詞，而用「分類詞 + 指示詞（này/kia/ấy/đó）」，就表示「這個/那個/那個」。
+A：⟦Cái mũ này thế nào?⟧ —— 這頂帽子怎麼樣？
+B：⟦Cái này rất đẹp.⟧ —— 這個非常漂亮。
+分類詞和表示數量的詞結合時，起單位名詞的作用，按「數量詞 + 分類詞 + 名詞」的順序使用。
+⟦Tôi muốn mua 3 quả bóng.⟧ —— 我想買3個球。
+⟦Tôi có 3 quyển sách tiếng Việt.⟧ —— 我有3本越南語書。
+單字：⟦mũ⟧ 帽子 | ⟦đẹp⟧ 漂亮 | ⟦muốn⟧ 想要
+=en
+A: ⟦Quả này là quả gì?⟧ — What fruit is this?
+B: ⟦Quả này là quả cam.⟧ — This is an orange.
+⟦quả⟧ is one kind of classifier. A classifier comes before a noun and indicates what kind of thing the noun is. Commonly used classifiers:
+Animals — ⟦con⟧: ⟦con chó⟧ dog, ⟦con mèo⟧ cat
+General objects — ⟦cái⟧: ⟦cái mũ⟧ hat, ⟦cái bàn⟧ table
+Paper items — ⟦tờ⟧: ⟦tờ báo⟧ newspaper, ⟦tờ giấy⟧ sheet of paper
+Books — ⟦quyển⟧: ⟦quyển sách⟧ book, ⟦quyển từ điển⟧ dictionary
+Fruit, round objects — ⟦quả⟧: ⟦quả cam⟧ orange, ⟦quả bóng⟧ ball
+Machines, one of a pair — ⟦chiếc⟧: ⟦chiếc xe đạp⟧ bicycle, ⟦chiếc giày⟧ one shoe
+Instead of repeating a noun already mentioned, "classifier + demonstrative (này/kia/ấy/đó)" means "this one / that one / that one".
+A: ⟦Cái mũ này thế nào?⟧ — How about this hat?
+B: ⟦Cái này rất đẹp.⟧ — This one is very pretty.
+Combined with a number, a classifier works as a counting unit, in the order "number + classifier + noun".
+⟦Tôi muốn mua 3 quả bóng.⟧ — I want to buy 3 balls.
+⟦Tôi có 3 quyển sách tiếng Việt.⟧ — I have 3 Vietnamese books.
+Words: ⟦mũ⟧ hat | ⟦đẹp⟧ pretty | ⟦muốn⟧ to want
+=fr
+A : ⟦Quả này là quả gì?⟧ — Quel est ce fruit ?
+B : ⟦Quả này là quả cam.⟧ — C'est une orange.
+⟦quả⟧ est un classificateur. Le classificateur se place devant le nom et indique à quelle catégorie il appartient. Classificateurs courants :
+Animaux — ⟦con⟧ : ⟦con chó⟧ chien, ⟦con mèo⟧ chat
+Objets en général — ⟦cái⟧ : ⟦cái mũ⟧ chapeau, ⟦cái bàn⟧ table
+Papiers — ⟦tờ⟧ : ⟦tờ báo⟧ journal, ⟦tờ giấy⟧ feuille de papier
+Livres — ⟦quyển⟧ : ⟦quyển sách⟧ livre, ⟦quyển từ điển⟧ dictionnaire
+Fruits, objets ronds — ⟦quả⟧ : ⟦quả cam⟧ orange, ⟦quả bóng⟧ ballon
+Machines, élément d'une paire — ⟦chiếc⟧ : ⟦chiếc xe đạp⟧ vélo, ⟦chiếc giày⟧ une chaussure
+Pour ne pas répéter un nom déjà mentionné, « classificateur + démonstratif (này/kia/ấy/đó) » signifie « celui-ci / celui-là / celui-là ».
+A : ⟦Cái mũ này thế nào?⟧ — Que penses-tu de ce chapeau ?
+B : ⟦Cái này rất đẹp.⟧ — Celui-ci est très joli.
+Avec un nombre, le classificateur sert d'unité de compte, dans l'ordre « nombre + classificateur + nom ».
+⟦Tôi muốn mua 3 quả bóng.⟧ — Je veux acheter 3 ballons.
+⟦Tôi có 3 quyển sách tiếng Việt.⟧ — J'ai 3 livres de vietnamien.
+Mots : ⟦mũ⟧ chapeau | ⟦đẹp⟧ joli | ⟦muốn⟧ vouloir
+=de
+A: ⟦Quả này là quả gì?⟧ — Was für eine Frucht ist das?
+B: ⟦Quả này là quả cam.⟧ — Das ist eine Orange.
+⟦quả⟧ ist ein Klassifikator. Ein Klassifikator steht vor dem Substantiv und zeigt an, zu welcher Art es gehört. Häufige Klassifikatoren:
+Tiere — ⟦con⟧: ⟦con chó⟧ Hund, ⟦con mèo⟧ Katze
+Allgemeine Gegenstände — ⟦cái⟧: ⟦cái mũ⟧ Hut, ⟦cái bàn⟧ Tisch
+Papier — ⟦tờ⟧: ⟦tờ báo⟧ Zeitung, ⟦tờ giấy⟧ Blatt Papier
+Bücher — ⟦quyển⟧: ⟦quyển sách⟧ Buch, ⟦quyển từ điển⟧ Wörterbuch
+Obst, runde Dinge — ⟦quả⟧: ⟦quả cam⟧ Orange, ⟦quả bóng⟧ Ball
+Maschinen, ein Teil eines Paares — ⟦chiếc⟧: ⟦chiếc xe đạp⟧ Fahrrad, ⟦chiếc giày⟧ ein Schuh
+Um ein bereits genanntes Substantiv nicht zu wiederholen, bedeutet „Klassifikator + Demonstrativ (này/kia/ấy/đó)“ „dieser / jener / der“.
+A: ⟦Cái mũ này thế nào?⟧ — Wie findest du diesen Hut?
+B: ⟦Cái này rất đẹp.⟧ — Der hier ist sehr schön.
+Mit einer Zahl dient der Klassifikator als Zähleinheit, in der Reihenfolge „Zahl + Klassifikator + Substantiv“.
+⟦Tôi muốn mua 3 quả bóng.⟧ — Ich möchte 3 Bälle kaufen.
+⟦Tôi có 3 quyển sách tiếng Việt.⟧ — Ich habe 3 vietnamische Bücher.
+Wörter: ⟦mũ⟧ Hut | ⟦đẹp⟧ schön | ⟦muốn⟧ wollen
+=hu
+A: ⟦Quả này là quả gì?⟧ — Milyen gyümölcs ez?
+B: ⟦Quả này là quả cam.⟧ — Ez narancs.
+A ⟦quả⟧ egy osztályozó szó. Az osztályozó szó a főnév előtt áll, és jelzi, milyen fajtájú a főnév. Gyakori osztályozó szavak:
+Állatok — ⟦con⟧: ⟦con chó⟧ kutya, ⟦con mèo⟧ macska
+Általános tárgyak — ⟦cái⟧: ⟦cái mũ⟧ kalap, ⟦cái bàn⟧ asztal
+Papírfélék — ⟦tờ⟧: ⟦tờ báo⟧ újság, ⟦tờ giấy⟧ papírlap
+Könyvek — ⟦quyển⟧: ⟦quyển sách⟧ könyv, ⟦quyển từ điển⟧ szótár
+Gyümölcsök, kerek tárgyak — ⟦quả⟧: ⟦quả cam⟧ narancs, ⟦quả bóng⟧ labda
+Gépek, pár egyik darabja — ⟦chiếc⟧: ⟦chiếc xe đạp⟧ kerékpár, ⟦chiếc giày⟧ egy cipő (fél pár)
+Hogy ne ismételjük a már említett főnevet, az „osztályozó + mutató szó (này/kia/ấy/đó)” jelentése „ez / az ott / az”.
+A: ⟦Cái mũ này thế nào?⟧ — Milyen ez a kalap?
+B: ⟦Cái này rất đẹp.⟧ — Ez nagyon szép.
+Számnévvel együtt az osztályozó szó mértékegységként működik, „számnév + osztályozó + főnév” sorrendben.
+⟦Tôi muốn mua 3 quả bóng.⟧ — 3 labdát szeretnék venni.
+⟦Tôi có 3 quyển sách tiếng Việt.⟧ — Van 3 vietnámi könyvem.
+Szavak: ⟦mũ⟧ kalap | ⟦đẹp⟧ szép | ⟦muốn⟧ akarni
+=id
+A: ⟦Quả này là quả gì?⟧ — Ini buah apa?
+B: ⟦Quả này là quả cam.⟧ — Ini jeruk.
+⟦quả⟧ adalah salah satu kata penggolong. Kata penggolong diletakkan sebelum kata benda dan menunjukkan jenis kata benda itu. Kata penggolong yang sering dipakai:
+Hewan — ⟦con⟧: ⟦con chó⟧ anjing, ⟦con mèo⟧ kucing
+Benda umum — ⟦cái⟧: ⟦cái mũ⟧ topi, ⟦cái bàn⟧ meja
+Kertas — ⟦tờ⟧: ⟦tờ báo⟧ koran, ⟦tờ giấy⟧ lembar kertas
+Buku — ⟦quyển⟧: ⟦quyển sách⟧ buku, ⟦quyển từ điển⟧ kamus
+Buah, benda bulat — ⟦quả⟧: ⟦quả cam⟧ jeruk, ⟦quả bóng⟧ bola
+Mesin, satu dari sepasang — ⟦chiếc⟧: ⟦chiếc xe đạp⟧ sepeda, ⟦chiếc giày⟧ sebelah sepatu
+Agar kata benda yang sudah disebut tidak diulang, "kata penggolong + penunjuk (này/kia/ấy/đó)" berarti "yang ini / yang itu / yang itu".
+A: ⟦Cái mũ này thế nào?⟧ — Bagaimana topi ini?
+B: ⟦Cái này rất đẹp.⟧ — Yang ini bagus sekali.
+Jika digabung dengan bilangan, kata penggolong berfungsi sebagai satuan, dengan urutan "bilangan + kata penggolong + kata benda".
+⟦Tôi muốn mua 3 quả bóng.⟧ — Saya ingin membeli 3 bola.
+⟦Tôi có 3 quyển sách tiếng Việt.⟧ — Saya punya 3 buku bahasa Vietnam.
+Kosakata: ⟦mũ⟧ topi | ⟦đẹp⟧ indah, bagus | ⟦muốn⟧ ingin
+=ja
+A：⟦Quả này là quả gì?⟧ — これは何の果物ですか。
+B：⟦Quả này là quả cam.⟧ — これはオレンジです。
+⟦quả⟧ は類別詞の一つで、類別詞は名詞の前に置かれてその名詞の種類を表す語です。よく使う類別詞は次のとおりです。
+動物 — ⟦con⟧：⟦con chó⟧ 犬、⟦con mèo⟧ 猫
+一般の物 — ⟦cái⟧：⟦cái mũ⟧ 帽子、⟦cái bàn⟧ テーブル
+紙類 — ⟦tờ⟧：⟦tờ báo⟧ 新聞、⟦tờ giấy⟧ 紙
+本類 — ⟦quyển⟧：⟦quyển sách⟧ 本、⟦quyển từ điển⟧ 辞書
+果物・丸い物 — ⟦quả⟧：⟦quả cam⟧ オレンジ、⟦quả bóng⟧ ボール
+機械類・（一対のうちの）片方 — ⟦chiếc⟧：⟦chiếc xe đạp⟧ 自転車、⟦chiếc giày⟧ 靴の片方
+前に出た名詞を繰り返さず「類別詞 ＋ 指示詞（này/kia/ấy/đó）」とすると「これ／あれ／それ」の意味になります。
+A：⟦Cái mũ này thế nào?⟧ — この帽子はどうですか。
+B：⟦Cái này rất đẹp.⟧ — これはとてもきれいです。
+類別詞は数量を表す語と結びつくと単位名詞の役割をします。その場合、「数量 ＋ 類別詞 ＋ 名詞」の順で使います。
+⟦Tôi muốn mua 3 quả bóng.⟧ — ボールを3個買いたい。
+⟦Tôi có 3 quyển sách tiếng Việt.⟧ — ベトナム語の本を3冊持っている。
+単語：⟦mũ⟧ 帽子 | ⟦đẹp⟧ きれいだ | ⟦muốn⟧ 望む、～したい
+=pl
+A: ⟦Quả này là quả gì?⟧ — Co to za owoc?
+B: ⟦Quả này là quả cam.⟧ — To pomarańcza.
+⟦quả⟧ jest jednym z klasyfikatorów. Klasyfikator stoi przed rzeczownikiem i wskazuje, do jakiej kategorii on należy. Często używane klasyfikatory:
+Zwierzęta — ⟦con⟧: ⟦con chó⟧ pies, ⟦con mèo⟧ kot
+Przedmioty ogólnie — ⟦cái⟧: ⟦cái mũ⟧ kapelusz, ⟦cái bàn⟧ stół
+Papiery — ⟦tờ⟧: ⟦tờ báo⟧ gazeta, ⟦tờ giấy⟧ kartka papieru
+Książki — ⟦quyển⟧: ⟦quyển sách⟧ książka, ⟦quyển từ điển⟧ słownik
+Owoce, okrągłe przedmioty — ⟦quả⟧: ⟦quả cam⟧ pomarańcza, ⟦quả bóng⟧ piłka
+Maszyny, jedna sztuka z pary — ⟦chiếc⟧: ⟦chiếc xe đạp⟧ rower, ⟦chiếc giày⟧ jeden but
+Aby nie powtarzać wspomnianego już rzeczownika, „klasyfikator + zaimek wskazujący (này/kia/ấy/đó)” znaczy „ten / tamten / to”.
+A: ⟦Cái mũ này thế nào?⟧ — Jak ci się podoba ten kapelusz?
+B: ⟦Cái này rất đẹp.⟧ — Ten jest bardzo ładny.
+W połączeniu z liczebnikiem klasyfikator pełni rolę jednostki liczenia, w kolejności „liczebnik + klasyfikator + rzeczownik”.
+⟦Tôi muốn mua 3 quả bóng.⟧ — Chcę kupić 3 piłki.
+⟦Tôi có 3 quyển sách tiếng Việt.⟧ — Mam 3 książki po wietnamsku.
+Słówka: ⟦mũ⟧ kapelusz | ⟦đẹp⟧ ładny | ⟦muốn⟧ chcieć

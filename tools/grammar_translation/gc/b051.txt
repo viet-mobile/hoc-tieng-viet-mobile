@@ -1,0 +1,192 @@
+@@ pdf-grammar-932c58c6189e70d8#0
+=cs
+Klíčové výrazy: ⟦A bao nhiêu B bấy nhiêu⟧ / ⟦kẻo⟧
+⟦A bao nhiêu B bấy nhiêu⟧ vyjadřuje vzájemnou úměrnost: „kolik A, tolik B“.
+❶ ⟦Anh em tôi đều rất thích ăn nem, mẹ tôi rán bao nhiêu anh em tôi ăn hết bấy nhiêu.⟧ — My sourozenci máme všichni moc rádi nem; kolik jich maminka usmaží, tolik jich sníme.
+❷ Ⓐ ⟦Cô ơi, em có thể mượn mấy quyển sách một lần ạ?⟧ — Paní učitelko, kolik knih si můžu najednou půjčit? Ⓑ ⟦Bây giờ đang là nghỉ hè, ít người đến thư viện đọc sách và mượn sách. Vì thế em muốn mượn bao nhiêu cô cho em mượn bấy nhiêu.⟧ — Teď jsou prázdniny a do knihovny chodí číst a půjčovat si málo lidí. Takže kolik si chceš půjčit, tolik ti půjčím.
+⟦kẻo⟧ vyjadřuje vztah mezi podmínkou a nepříjemným následkem a obvykle se používá při radách a varováních: ⟦A kẻo B⟧ znamená „udělej A, jinak B; udělej A, než B; udělej A, aby ne-B“.
+❶ ⟦Nếu thích nhà này thì anh nên kí hợp đồng ngay kẻo có người khác đến thuê mất.⟧ — Jestli se vám ten dům líbí, měl byste hned podepsat smlouvu, jinak si ho pronajme někdo jiný.
+❷ Ⓐ ⟦Hôm nay chúng ta có hẹn với giám đốc công ti đối tác lúc 10 giờ sáng.⟧ — Dnes máme v 10 dopoledne schůzku s ředitelem partnerské firmy. Ⓑ ⟦Thế thì bây giờ chúng ta phải đi ngay kẻo muộn. Giờ này hay tắc đường lắm.⟧ — Tak musíme hned vyrazit, jinak přijdeme pozdě. V tuhle dobu bývají zácpy.
+Procvičování 3 — veďte rozhovor s danými výrazy a ⟦~ bao nhiêu ~ bấy nhiêu⟧ podle vzoru.
+Vzor (⟦em muốn vay⟧ kolik si chceš půjčit; ⟦chị cho vay⟧ tolik ti půjčím): Ⓐ ⟦Xin lỗi chị. Em có việc gấp, chị cho em vay tiền, được không ạ?⟧ — Promiň. Mám naléhavou záležitost, mohla bys mi půjčit peníze? Ⓑ ⟦Được. Em muốn vay bao nhiêu chị cho vay bấy nhiêu. Cứ nói thoải mái đi.⟧ — Jasně. Kolik si chceš půjčit, tolik ti půjčím. Klidně řekni.
+❶ (⟦thầy cho⟧ kolik učitel zadá; ⟦em ấy làm⟧ tolik udělá) Ⓐ ⟦Em Linh học chăm chỉ lắm, luôn làm hết bài tập thầy cho.⟧ — Linh se učí velmi pilně, vždycky udělá všechny úkoly, které učitel zadá. Ⓑ ⟦Vâng. Thầy cho bao nhiêu em ấy làm bấy nhiêu.⟧ — Ano. Kolik jí učitel zadá, tolik jich udělá.
+❷ (⟦anh ấy kiếm⟧ kolik vydělá; ⟦tiêu hết⟧ tolik utratí) Ⓐ ⟦Anh ấy không tiết kiệm tiền à?⟧ — On nešetří peníze? Ⓑ ⟦Anh ấy kiếm bao nhiêu tiêu hết bấy nhiêu. Làm sao mà để dành được.⟧ — Kolik vydělá, tolik utratí. Jak by mohl něco ušetřit?
+Procvičování 4 — spojte vhodné části a veďte rozhovor podle vzoru: ① ⟦trời rất nắng⟧ (silně svítí slunce) – Ⓐ ⟦đội mũ⟧ (nasadit si klobouk) – ② ⟦đau đầu lắm⟧ (rozbolí tě hlava) | ② ⟦trời đang mưa⟧ (prší) – Ⓒ ⟦mặc áo mưa⟧ (vzít si pláštěnku) – ① ⟦bị ướt hết⟧ (celý zmokneš) | ③ ⟦là giờ cao điểm⟧ (je dopravní špička) – Ⓑ ⟦đi xe ôm⟧ (jet motorkovým taxi) – ③ ⟦về nhà muộn lắm⟧ (přijdeš domů hodně pozdě)
+Vzor (①–Ⓐ–②): Ⓐ ⟦Bây giờ trời rất nắng, chị nên đội mũ kẻo đau đầu lắm.⟧ — Teď hodně pálí slunce, měla by sis nasadit klobouk, jinak tě rozbolí hlava. Ⓑ ⟦Ừ, chị biết rồi. Cảm ơn em.⟧ — Jo, rozumím. Díky.
+Nová slovíčka: ⟦rán⟧ smažit | ⟦tiêu⟧ utrácet | ⟦để dành⟧ šetřit, spořit | ⟦giờ cao điểm⟧ dopravní špička
+=zh_cn
+核心表达：⟦A bao nhiêu B bấy nhiêu⟧ / ⟦kẻo⟧
+⟦A bao nhiêu B bấy nhiêu⟧ 表示相应关系，意为“A多少，B就多少”。
+❶ ⟦Anh em tôi đều rất thích ăn nem, mẹ tôi rán bao nhiêu anh em tôi ăn hết bấy nhiêu.⟧ —— 我们兄弟姐妹都很爱吃春卷，妈妈炸多少我们就吃多少。
+❷ Ⓐ ⟦Cô ơi, em có thể mượn mấy quyển sách một lần ạ?⟧ —— 老师，我一次可以借几本书？ Ⓑ ⟦Bây giờ đang là nghỉ hè, ít người đến thư viện đọc sách và mượn sách. Vì thế em muốn mượn bao nhiêu cô cho em mượn bấy nhiêu.⟧ —— 现在是暑假，来图书馆看书借书的人少。所以你想借多少我就借给你多少。
+⟦kẻo⟧ 表示条件与不良结果之间的关系，通常用于劝告或建议。⟦A kẻo B⟧ 意为“A吧，不然会B / 在B之前A / 为了不B而A”。
+❶ ⟦Nếu thích nhà này thì anh nên kí hợp đồng ngay kẻo có người khác đến thuê mất.⟧ —— 如果喜欢这房子，你最好马上签合同，免得被别人租走了。
+❷ Ⓐ ⟦Hôm nay chúng ta có hẹn với giám đốc công ti đối tác lúc 10 giờ sáng.⟧ —— 今天上午10点我们和合作公司的经理有约。 Ⓑ ⟦Thế thì bây giờ chúng ta phải đi ngay kẻo muộn. Giờ này hay tắc đường lắm.⟧ —— 那我们现在就得走，不然会迟到。这个时间经常堵车。
+句型练习3 —— 仿照范例用所给表达和 ⟦~ bao nhiêu ~ bấy nhiêu⟧ 对话。
+范例（⟦em muốn vay⟧ 你想借；⟦chị cho vay⟧ 我借给你）：Ⓐ ⟦Xin lỗi chị. Em có việc gấp, chị cho em vay tiền, được không ạ?⟧ —— 不好意思，姐。我有急事，能借我点钱吗？ Ⓑ ⟦Được. Em muốn vay bao nhiêu chị cho vay bấy nhiêu. Cứ nói thoải mái đi.⟧ —— 可以。你想借多少我就借你多少。尽管说。
+❶（⟦thầy cho⟧ 老师布置；⟦em ấy làm⟧ 她做）Ⓐ ⟦Em Linh học chăm chỉ lắm, luôn làm hết bài tập thầy cho.⟧ —— 阿玲学习很用功，总是把老师布置的作业全做完。 Ⓑ ⟦Vâng. Thầy cho bao nhiêu em ấy làm bấy nhiêu.⟧ —— 是的。老师布置多少她就做多少。
+❷（⟦anh ấy kiếm⟧ 他赚；⟦tiêu hết⟧ 花光）Ⓐ ⟦Anh ấy không tiết kiệm tiền à?⟧ —— 他不存钱吗？ Ⓑ ⟦Anh ấy kiếm bao nhiêu tiêu hết bấy nhiêu. Làm sao mà để dành được.⟧ —— 他赚多少花多少。怎么存得下来。
+句型练习4 —— 找出相应内容连线，然后仿照范例对话：① ⟦trời rất nắng⟧（太阳很晒）– Ⓐ ⟦đội mũ⟧（戴帽子）– ② ⟦đau đầu lắm⟧（会很头疼）| ② ⟦trời đang mưa⟧（正在下雨）– Ⓒ ⟦mặc áo mưa⟧（穿雨衣）– ① ⟦bị ướt hết⟧（会全身湿透）| ③ ⟦là giờ cao điểm⟧（是高峰时间）– Ⓑ ⟦đi xe ôm⟧（坐摩的）– ③ ⟦về nhà muộn lắm⟧（会很晚到家）
+范例（①–Ⓐ–②）：Ⓐ ⟦Bây giờ trời rất nắng, chị nên đội mũ kẻo đau đầu lắm.⟧ —— 现在太阳很晒，你最好戴顶帽子，不然会很头疼。 Ⓑ ⟦Ừ, chị biết rồi. Cảm ơn em.⟧ —— 嗯，知道了。谢谢你。
+新单词：⟦rán⟧ 炸、煎 | ⟦tiêu⟧ 花（钱）、消费 | ⟦để dành⟧ 存钱、积攒 | ⟦giờ cao điểm⟧ 高峰时间
+=zh
+核心表達：⟦A bao nhiêu B bấy nhiêu⟧ / ⟦kẻo⟧
+⟦A bao nhiêu B bấy nhiêu⟧ 表示相應關係，意為「A多少，B就多少」。
+❶ ⟦Anh em tôi đều rất thích ăn nem, mẹ tôi rán bao nhiêu anh em tôi ăn hết bấy nhiêu.⟧ —— 我們兄弟姊妹都很愛吃春捲，媽媽炸多少我們就吃多少。
+❷ Ⓐ ⟦Cô ơi, em có thể mượn mấy quyển sách một lần ạ?⟧ —— 老師，我一次可以借幾本書？ Ⓑ ⟦Bây giờ đang là nghỉ hè, ít người đến thư viện đọc sách và mượn sách. Vì thế em muốn mượn bao nhiêu cô cho em mượn bấy nhiêu.⟧ —— 現在是暑假，來圖書館看書借書的人少。所以你想借多少我就借給你多少。
+⟦kẻo⟧ 表示條件與不良結果之間的關係，通常用於勸告或建議。⟦A kẻo B⟧ 意為「A吧，不然會B / 在B之前A / 為了不B而A」。
+❶ ⟦Nếu thích nhà này thì anh nên kí hợp đồng ngay kẻo có người khác đến thuê mất.⟧ —— 如果喜歡這房子，你最好馬上簽約，免得被別人租走了。
+❷ Ⓐ ⟦Hôm nay chúng ta có hẹn với giám đốc công ti đối tác lúc 10 giờ sáng.⟧ —— 今天上午10點我們和合作公司的經理有約。 Ⓑ ⟦Thế thì bây giờ chúng ta phải đi ngay kẻo muộn. Giờ này hay tắc đường lắm.⟧ —— 那我們現在就得走，不然會遲到。這個時間常塞車。
+句型練習3 —— 仿照範例用所給表達和 ⟦~ bao nhiêu ~ bấy nhiêu⟧ 對話。
+範例（⟦em muốn vay⟧ 妳想借；⟦chị cho vay⟧ 我借給妳）：Ⓐ ⟦Xin lỗi chị. Em có việc gấp, chị cho em vay tiền, được không ạ?⟧ —— 不好意思，姊。我有急事，能借我一點錢嗎？ Ⓑ ⟦Được. Em muốn vay bao nhiêu chị cho vay bấy nhiêu. Cứ nói thoải mái đi.⟧ —— 可以。妳想借多少我就借妳多少。儘管說。
+❶（⟦thầy cho⟧ 老師出；⟦em ấy làm⟧ 她做）Ⓐ ⟦Em Linh học chăm chỉ lắm, luôn làm hết bài tập thầy cho.⟧ —— 阿玲讀書很用功，總是把老師出的作業全寫完。 Ⓑ ⟦Vâng. Thầy cho bao nhiêu em ấy làm bấy nhiêu.⟧ —— 是的。老師出多少她就寫多少。
+❷（⟦anh ấy kiếm⟧ 他賺；⟦tiêu hết⟧ 花光）Ⓐ ⟦Anh ấy không tiết kiệm tiền à?⟧ —— 他不存錢嗎？ Ⓑ ⟦Anh ấy kiếm bao nhiêu tiêu hết bấy nhiêu. Làm sao mà để dành được.⟧ —— 他賺多少花多少。怎麼存得下來。
+句型練習4 —— 找出相應內容連線，然後仿照範例對話：① ⟦trời rất nắng⟧（太陽很大）– Ⓐ ⟦đội mũ⟧（戴帽子）– ② ⟦đau đầu lắm⟧（會很頭痛）| ② ⟦trời đang mưa⟧（正在下雨）– Ⓒ ⟦mặc áo mưa⟧（穿雨衣）– ① ⟦bị ướt hết⟧（會全身濕透）| ③ ⟦là giờ cao điểm⟧（是尖峰時間）– Ⓑ ⟦đi xe ôm⟧（搭機車計程車）– ③ ⟦về nhà muộn lắm⟧（會很晚到家）
+範例（①–Ⓐ–②）：Ⓐ ⟦Bây giờ trời rất nắng, chị nên đội mũ kẻo đau đầu lắm.⟧ —— 現在太陽很大，妳最好戴頂帽子，不然會很頭痛。 Ⓑ ⟦Ừ, chị biết rồi. Cảm ơn em.⟧ —— 嗯，知道了。謝謝妳。
+新單字：⟦rán⟧ 炸、煎 | ⟦tiêu⟧ 花（錢）、消費 | ⟦để dành⟧ 存錢、積攢 | ⟦giờ cao điểm⟧ 尖峰時間
+=en
+Key expressions: ⟦A bao nhiêu B bấy nhiêu⟧ / ⟦kẻo⟧
+⟦A bao nhiêu B bấy nhiêu⟧ expresses a correlation: "as much/many as A, so much/many B".
+❶ ⟦Anh em tôi đều rất thích ăn nem, mẹ tôi rán bao nhiêu anh em tôi ăn hết bấy nhiêu.⟧ — My siblings and I all love nem: however many my mum fries, we eat them all.
+❷ Ⓐ ⟦Cô ơi, em có thể mượn mấy quyển sách một lần ạ?⟧ — Miss, how many books can I borrow at once? Ⓑ ⟦Bây giờ đang là nghỉ hè, ít người đến thư viện đọc sách và mượn sách. Vì thế em muốn mượn bao nhiêu cô cho em mượn bấy nhiêu.⟧ — It's the summer holidays, so few people come to the library to read and borrow books. You can borrow as many as you like.
+⟦kẻo⟧ expresses the link between a condition and an unwanted result, and is usually used for advice or warnings: ⟦A kẻo B⟧ means "do A, or else B; do A before B; do A so that B doesn't happen".
+❶ ⟦Nếu thích nhà này thì anh nên kí hợp đồng ngay kẻo có người khác đến thuê mất.⟧ — If you like this house, you'd better sign the contract right away, or someone else will rent it.
+❷ Ⓐ ⟦Hôm nay chúng ta có hẹn với giám đốc công ti đối tác lúc 10 giờ sáng.⟧ — Today we have an appointment with the director of our partner company at 10 a.m. Ⓑ ⟦Thế thì bây giờ chúng ta phải đi ngay kẻo muộn. Giờ này hay tắc đường lắm.⟧ — Then we have to leave now or we'll be late. There are often traffic jams at this time.
+Pattern practice 3 — talk as in the model using the given expressions and ⟦~ bao nhiêu ~ bấy nhiêu⟧.
+Model (⟦em muốn vay⟧ you want to borrow; ⟦chị cho vay⟧ I'll lend): Ⓐ ⟦Xin lỗi chị. Em có việc gấp, chị cho em vay tiền, được không ạ?⟧ — Sorry to ask – something urgent has come up. Could you lend me some money? Ⓑ ⟦Được. Em muốn vay bao nhiêu chị cho vay bấy nhiêu. Cứ nói thoải mái đi.⟧ — Sure. I'll lend you as much as you want. Just say.
+❶ (⟦thầy cho⟧ the teacher gives; ⟦em ấy làm⟧ she does) Ⓐ ⟦Em Linh học chăm chỉ lắm, luôn làm hết bài tập thầy cho.⟧ — Linh is very hard-working; she always does all the homework the teacher sets. Ⓑ ⟦Vâng. Thầy cho bao nhiêu em ấy làm bấy nhiêu.⟧ — Yes. However much the teacher gives, she does it all.
+❷ (⟦anh ấy kiếm⟧ he earns; ⟦tiêu hết⟧ spends it all) Ⓐ ⟦Anh ấy không tiết kiệm tiền à?⟧ — Doesn't he save money? Ⓑ ⟦Anh ấy kiếm bao nhiêu tiêu hết bấy nhiêu. Làm sao mà để dành được.⟧ — He spends every penny he earns. How could he save anything?
+Pattern practice 4 — match the parts, then talk as in the model: ① ⟦trời rất nắng⟧ (it's very sunny) – Ⓐ ⟦đội mũ⟧ (wear a hat) – ② ⟦đau đầu lắm⟧ (you'll get a bad headache) | ② ⟦trời đang mưa⟧ (it's raining) – Ⓒ ⟦mặc áo mưa⟧ (wear a raincoat) – ① ⟦bị ướt hết⟧ (you'll get soaked) | ③ ⟦là giờ cao điểm⟧ (it's rush hour) – Ⓑ ⟦đi xe ôm⟧ (take a motorbike taxi) – ③ ⟦về nhà muộn lắm⟧ (you'll get home very late)
+Model (①–Ⓐ–②): Ⓐ ⟦Bây giờ trời rất nắng, chị nên đội mũ kẻo đau đầu lắm.⟧ — It's very sunny now – you should wear a hat or you'll get a bad headache. Ⓑ ⟦Ừ, chị biết rồi. Cảm ơn em.⟧ — OK, got it. Thanks.
+New words: ⟦rán⟧ to fry | ⟦tiêu⟧ to spend | ⟦để dành⟧ to save (up) | ⟦giờ cao điểm⟧ rush hour
+=fr
+Expressions clés : ⟦A bao nhiêu B bấy nhiêu⟧ / ⟦kẻo⟧
+⟦A bao nhiêu B bấy nhiêu⟧ exprime une correspondance : « autant de A, autant de B ».
+❶ ⟦Anh em tôi đều rất thích ăn nem, mẹ tôi rán bao nhiêu anh em tôi ăn hết bấy nhiêu.⟧ — Mes frères et sœurs et moi adorons les nems : autant ma mère en fait frire, autant nous en mangeons.
+❷ Ⓐ ⟦Cô ơi, em có thể mượn mấy quyển sách một lần ạ?⟧ — Madame, combien de livres puis-je emprunter à la fois ? Ⓑ ⟦Bây giờ đang là nghỉ hè, ít người đến thư viện đọc sách và mượn sách. Vì thế em muốn mượn bao nhiêu cô cho em mượn bấy nhiêu.⟧ — C'est les vacances d'été, peu de gens viennent lire ou emprunter. Tu peux donc en emprunter autant que tu veux.
+⟦kẻo⟧ exprime le lien entre une condition et une conséquence fâcheuse ; on l'emploie surtout pour conseiller ou avertir : ⟦A kẻo B⟧ signifie « fais A, sinon B ; fais A avant que B ; fais A pour ne pas B ».
+❶ ⟦Nếu thích nhà này thì anh nên kí hợp đồng ngay kẻo có người khác đến thuê mất.⟧ — Si cette maison vous plaît, signez le bail tout de suite, sinon quelqu'un d'autre la louera.
+❷ Ⓐ ⟦Hôm nay chúng ta có hẹn với giám đốc công ti đối tác lúc 10 giờ sáng.⟧ — Aujourd'hui nous avons rendez-vous à 10 h avec le directeur de l'entreprise partenaire. Ⓑ ⟦Thế thì bây giờ chúng ta phải đi ngay kẻo muộn. Giờ này hay tắc đường lắm.⟧ — Alors il faut partir tout de suite, sinon nous serons en retard. À cette heure-ci, il y a souvent des bouchons.
+Exercice 3 — dialoguez comme dans le modèle avec les expressions données et ⟦~ bao nhiêu ~ bấy nhiêu⟧.
+Modèle (⟦em muốn vay⟧ ce que tu veux emprunter ; ⟦chị cho vay⟧ je te prête) : Ⓐ ⟦Xin lỗi chị. Em có việc gấp, chị cho em vay tiền, được không ạ?⟧ — Excuse-moi. J'ai une urgence, tu pourrais me prêter de l'argent ? Ⓑ ⟦Được. Em muốn vay bao nhiêu chị cho vay bấy nhiêu. Cứ nói thoải mái đi.⟧ — Bien sûr. Je te prête autant que tu veux. Dis-le sans gêne.
+❶ (⟦thầy cho⟧ ce que le professeur donne ; ⟦em ấy làm⟧ ce qu'elle fait) Ⓐ ⟦Em Linh học chăm chỉ lắm, luôn làm hết bài tập thầy cho.⟧ — Linh travaille très dur, elle fait toujours tous les exercices du professeur. Ⓑ ⟦Vâng. Thầy cho bao nhiêu em ấy làm bấy nhiêu.⟧ — Oui. Autant le professeur en donne, autant elle en fait.
+❷ (⟦anh ấy kiếm⟧ ce qu'il gagne ; ⟦tiêu hết⟧ tout dépenser) Ⓐ ⟦Anh ấy không tiết kiệm tiền à?⟧ — Il n'économise pas ? Ⓑ ⟦Anh ấy kiếm bao nhiêu tiêu hết bấy nhiêu. Làm sao mà để dành được.⟧ — Il dépense tout ce qu'il gagne. Comment pourrait-il mettre de côté ?
+Exercice 4 — reliez les éléments, puis dialoguez comme dans le modèle : ① ⟦trời rất nắng⟧ (il fait un grand soleil) – Ⓐ ⟦đội mũ⟧ (mettre un chapeau) – ② ⟦đau đầu lắm⟧ (avoir très mal à la tête) | ② ⟦trời đang mưa⟧ (il pleut) – Ⓒ ⟦mặc áo mưa⟧ (mettre un imperméable) – ① ⟦bị ướt hết⟧ (être trempé) | ③ ⟦là giờ cao điểm⟧ (c'est l'heure de pointe) – Ⓑ ⟦đi xe ôm⟧ (prendre une moto-taxi) – ③ ⟦về nhà muộn lắm⟧ (rentrer très tard)
+Modèle (①–Ⓐ–②) : Ⓐ ⟦Bây giờ trời rất nắng, chị nên đội mũ kẻo đau đầu lắm.⟧ — Il fait un grand soleil, tu devrais mettre un chapeau, sinon tu auras très mal à la tête. Ⓑ ⟦Ừ, chị biết rồi. Cảm ơn em.⟧ — D'accord, compris. Merci.
+Nouveaux mots : ⟦rán⟧ frire | ⟦tiêu⟧ dépenser | ⟦để dành⟧ économiser, mettre de côté | ⟦giờ cao điểm⟧ heure de pointe
+=de
+Schlüsselausdrücke: ⟦A bao nhiêu B bấy nhiêu⟧ / ⟦kẻo⟧
+⟦A bao nhiêu B bấy nhiêu⟧ drückt eine Entsprechung aus: „so viel A, so viel B“.
+❶ ⟦Anh em tôi đều rất thích ăn nem, mẹ tôi rán bao nhiêu anh em tôi ăn hết bấy nhiêu.⟧ — Wir Geschwister lieben alle Nem: So viele Mama frittiert, so viele essen wir auch.
+❷ Ⓐ ⟦Cô ơi, em có thể mượn mấy quyển sách một lần ạ?⟧ — Frau Lehrerin, wie viele Bücher darf ich auf einmal ausleihen? Ⓑ ⟦Bây giờ đang là nghỉ hè, ít người đến thư viện đọc sách và mượn sách. Vì thế em muốn mượn bao nhiêu cô cho em mượn bấy nhiêu.⟧ — Es sind Sommerferien, kaum jemand kommt zum Lesen oder Ausleihen. Du darfst also so viele ausleihen, wie du willst.
+⟦kẻo⟧ drückt das Verhältnis zwischen einer Bedingung und einer unerwünschten Folge aus und wird meist bei Ratschlägen oder Warnungen verwendet: ⟦A kẻo B⟧ bedeutet „tu A, sonst B; tu A, bevor B; tu A, damit nicht B“.
+❶ ⟦Nếu thích nhà này thì anh nên kí hợp đồng ngay kẻo có người khác đến thuê mất.⟧ — Wenn Ihnen das Haus gefällt, sollten Sie gleich unterschreiben, sonst mietet es jemand anderes.
+❷ Ⓐ ⟦Hôm nay chúng ta có hẹn với giám đốc công ti đối tác lúc 10 giờ sáng.⟧ — Heute um 10 Uhr haben wir einen Termin mit dem Direktor der Partnerfirma. Ⓑ ⟦Thế thì bây giờ chúng ta phải đi ngay kẻo muộn. Giờ này hay tắc đường lắm.⟧ — Dann müssen wir sofort los, sonst kommen wir zu spät. Um diese Zeit gibt es oft Stau.
+Übung 3 — wie im Muster mit den vorgegebenen Ausdrücken und ⟦~ bao nhiêu ~ bấy nhiêu⟧ sprechen.
+Muster (⟦em muốn vay⟧ so viel du leihen willst; ⟦chị cho vay⟧ so viel leihe ich dir): Ⓐ ⟦Xin lỗi chị. Em có việc gấp, chị cho em vay tiền, được không ạ?⟧ — Entschuldige. Ich habe etwas Dringendes, könntest du mir Geld leihen? Ⓑ ⟦Được. Em muốn vay bao nhiêu chị cho vay bấy nhiêu. Cứ nói thoải mái đi.⟧ — Klar. So viel du willst, so viel leihe ich dir. Sag einfach.
+❶ (⟦thầy cho⟧ was der Lehrer aufgibt; ⟦em ấy làm⟧ was sie macht) Ⓐ ⟦Em Linh học chăm chỉ lắm, luôn làm hết bài tập thầy cho.⟧ — Linh lernt sehr fleißig und macht immer alle Aufgaben, die der Lehrer aufgibt. Ⓑ ⟦Vâng. Thầy cho bao nhiêu em ấy làm bấy nhiêu.⟧ — Ja. So viel der Lehrer aufgibt, so viel macht sie.
+❷ (⟦anh ấy kiếm⟧ was er verdient; ⟦tiêu hết⟧ gibt alles aus) Ⓐ ⟦Anh ấy không tiết kiệm tiền à?⟧ — Spart er denn kein Geld? Ⓑ ⟦Anh ấy kiếm bao nhiêu tiêu hết bấy nhiêu. Làm sao mà để dành được.⟧ — Was er verdient, gibt er auch gleich wieder aus. Wie soll er da etwas zurücklegen?
+Übung 4 — passende Teile verbinden, dann wie im Muster sprechen: ① ⟦trời rất nắng⟧ (die Sonne brennt) – Ⓐ ⟦đội mũ⟧ (einen Hut aufsetzen) – ② ⟦đau đầu lắm⟧ (starke Kopfschmerzen bekommen) | ② ⟦trời đang mưa⟧ (es regnet) – Ⓒ ⟦mặc áo mưa⟧ (Regenmantel anziehen) – ① ⟦bị ướt hết⟧ (klatschnass werden) | ③ ⟦là giờ cao điểm⟧ (es ist Stoßzeit) – Ⓑ ⟦đi xe ôm⟧ (Motorradtaxi nehmen) – ③ ⟦về nhà muộn lắm⟧ (sehr spät nach Hause kommen)
+Muster (①–Ⓐ–②): Ⓐ ⟦Bây giờ trời rất nắng, chị nên đội mũ kẻo đau đầu lắm.⟧ — Die Sonne brennt gerade, setz lieber einen Hut auf, sonst bekommst du starke Kopfschmerzen. Ⓑ ⟦Ừ, chị biết rồi. Cảm ơn em.⟧ — Ja, alles klar. Danke.
+Neue Wörter: ⟦rán⟧ frittieren, braten | ⟦tiêu⟧ ausgeben | ⟦để dành⟧ sparen, zurücklegen | ⟦giờ cao điểm⟧ Stoßzeit, Rushhour
+=hu
+Kulcskifejezések: ⟦A bao nhiêu B bấy nhiêu⟧ / ⟦kẻo⟧
+Az ⟦A bao nhiêu B bấy nhiêu⟧ megfelelési viszonyt fejez ki: „amennyi A, annyi B”.
+❶ ⟦Anh em tôi đều rất thích ăn nem, mẹ tôi rán bao nhiêu anh em tôi ăn hết bấy nhiêu.⟧ — Mi testvérek mind imádjuk a nemet: amennyit anya kisüt, annyit meg is eszünk.
+❷ Ⓐ ⟦Cô ơi, em có thể mượn mấy quyển sách một lần ạ?⟧ — Tanárnő, hány könyvet kölcsönözhetek ki egyszerre? Ⓑ ⟦Bây giờ đang là nghỉ hè, ít người đến thư viện đọc sách và mượn sách. Vì thế em muốn mượn bao nhiêu cô cho em mượn bấy nhiêu.⟧ — Most nyári szünet van, kevesen jönnek a könyvtárba olvasni és kölcsönözni. Így amennyit akarsz, annyit kölcsönadok.
+A ⟦kẻo⟧ feltétel és kedvezőtlen következmény viszonyát fejezi ki, általában tanácsadáskor, figyelmeztetéskor használjuk: az ⟦A kẻo B⟧ jelentése „tedd A-t, különben B; tedd A-t, mielőtt B; tedd A-t, nehogy B”.
+❶ ⟦Nếu thích nhà này thì anh nên kí hợp đồng ngay kẻo có người khác đến thuê mất.⟧ — Ha tetszik ez a ház, jobb, ha azonnal aláírja a szerződést, különben valaki más veszi ki.
+❷ Ⓐ ⟦Hôm nay chúng ta có hẹn với giám đốc công ti đối tác lúc 10 giờ sáng.⟧ — Ma délelőtt 10-kor találkozónk van a partnercég igazgatójával. Ⓑ ⟦Thế thì bây giờ chúng ta phải đi ngay kẻo muộn. Giờ này hay tắc đường lắm.⟧ — Akkor azonnal indulnunk kell, különben elkésünk. Ilyenkor gyakran van dugó.
+3. gyakorlat — beszélgessen a minta szerint a megadott kifejezésekkel és a ⟦~ bao nhiêu ~ bấy nhiêu⟧ szerkezettel.
+Minta (⟦em muốn vay⟧ amennyit kölcsön akarsz kérni; ⟦chị cho vay⟧ annyit adok kölcsön): Ⓐ ⟦Xin lỗi chị. Em có việc gấp, chị cho em vay tiền, được không ạ?⟧ — Elnézést. Sürgős ügyem van, tudnál kölcsönadni pénzt? Ⓑ ⟦Được. Em muốn vay bao nhiêu chị cho vay bấy nhiêu. Cứ nói thoải mái đi.⟧ — Persze. Amennyit kérsz, annyit adok. Csak mondd nyugodtan.
+❶ (⟦thầy cho⟧ amennyit a tanár felad; ⟦em ấy làm⟧ annyit megcsinál) Ⓐ ⟦Em Linh học chăm chỉ lắm, luôn làm hết bài tập thầy cho.⟧ — Linh nagyon szorgalmas, mindig megcsinálja az összes házit, amit a tanár felad. Ⓑ ⟦Vâng. Thầy cho bao nhiêu em ấy làm bấy nhiêu.⟧ — Igen. Amennyit a tanár felad, annyit megcsinál.
+❷ (⟦anh ấy kiếm⟧ amennyit keres; ⟦tiêu hết⟧ mind elkölti) Ⓐ ⟦Anh ấy không tiết kiệm tiền à?⟧ — Nem spórol? Ⓑ ⟦Anh ấy kiếm bao nhiêu tiêu hết bấy nhiêu. Làm sao mà để dành được.⟧ — Amennyit keres, annyit el is költ. Hogy tudna félretenni?
+4. gyakorlat — kösse össze a megfelelő részeket, majd beszélgessen a minta szerint: ① ⟦trời rất nắng⟧ (nagyon süt a nap) – Ⓐ ⟦đội mũ⟧ (kalapot felvenni) – ② ⟦đau đầu lắm⟧ (nagyon megfájdul a fejed) | ② ⟦trời đang mưa⟧ (esik az eső) – Ⓒ ⟦mặc áo mưa⟧ (esőkabátot felvenni) – ① ⟦bị ướt hết⟧ (bőrig ázol) | ③ ⟦là giờ cao điểm⟧ (csúcsidő van) – Ⓑ ⟦đi xe ôm⟧ (motoros taxival menni) – ③ ⟦về nhà muộn lắm⟧ (nagyon későn érsz haza)
+Minta (①–Ⓐ–②): Ⓐ ⟦Bây giờ trời rất nắng, chị nên đội mũ kẻo đau đầu lắm.⟧ — Most nagyon tűz a nap, jobb, ha kalapot veszel, különben nagyon megfájdul a fejed. Ⓑ ⟦Ừ, chị biết rồi. Cảm ơn em.⟧ — Jó, értem. Köszönöm.
+Új szavak: ⟦rán⟧ sütni (olajban) | ⟦tiêu⟧ költeni | ⟦để dành⟧ félretenni, spórolni | ⟦giờ cao điểm⟧ csúcsidő
+=id
+Ungkapan kunci: ⟦A bao nhiêu B bấy nhiêu⟧ / ⟦kẻo⟧
+⟦A bao nhiêu B bấy nhiêu⟧ menyatakan hubungan sebanding: "sebanyak A, sebanyak itu pula B".
+❶ ⟦Anh em tôi đều rất thích ăn nem, mẹ tôi rán bao nhiêu anh em tôi ăn hết bấy nhiêu.⟧ — Kami bersaudara sangat suka lumpia; sebanyak apa pun yang digoreng ibu, sebanyak itu pula kami habiskan.
+❷ Ⓐ ⟦Cô ơi, em có thể mượn mấy quyển sách một lần ạ?⟧ — Bu, sekali pinjam saya boleh pinjam berapa buku? Ⓑ ⟦Bây giờ đang là nghỉ hè, ít người đến thư viện đọc sách và mượn sách. Vì thế em muốn mượn bao nhiêu cô cho em mượn bấy nhiêu.⟧ — Sekarang libur musim panas, sedikit orang datang ke perpustakaan untuk membaca dan meminjam buku. Jadi berapa pun yang ingin kamu pinjam, Ibu pinjamkan.
+⟦kẻo⟧ menyatakan hubungan antara syarat dan akibat buruk, biasanya dipakai saat menasihati atau memberi saran: ⟦A kẻo B⟧ berarti "lakukan A, nanti B; lakukan A sebelum B; lakukan A agar tidak B".
+❶ ⟦Nếu thích nhà này thì anh nên kí hợp đồng ngay kẻo có người khác đến thuê mất.⟧ — Kalau suka rumah ini, sebaiknya Anda segera tanda tangan kontrak, nanti keburu disewa orang lain.
+❷ Ⓐ ⟦Hôm nay chúng ta có hẹn với giám đốc công ti đối tác lúc 10 giờ sáng.⟧ — Hari ini kita ada janji dengan direktur perusahaan mitra pukul 10 pagi. Ⓑ ⟦Thế thì bây giờ chúng ta phải đi ngay kẻo muộn. Giờ này hay tắc đường lắm.⟧ — Kalau begitu kita harus berangkat sekarang, nanti terlambat. Jam segini sering macet.
+Latihan pola 3 — bercakaplah seperti contoh dengan ungkapan yang diberikan dan ⟦~ bao nhiêu ~ bấy nhiêu⟧.
+Contoh (⟦em muốn vay⟧ yang ingin kamu pinjam; ⟦chị cho vay⟧ Kakak pinjamkan): Ⓐ ⟦Xin lỗi chị. Em có việc gấp, chị cho em vay tiền, được không ạ?⟧ — Maaf, Kak. Aku ada keperluan mendesak, boleh pinjam uang? Ⓑ ⟦Được. Em muốn vay bao nhiêu chị cho vay bấy nhiêu. Cứ nói thoải mái đi.⟧ — Boleh. Berapa pun yang ingin kamu pinjam, Kakak pinjamkan. Bilang saja.
+❶ (⟦thầy cho⟧ yang diberikan guru; ⟦em ấy làm⟧ yang dia kerjakan) Ⓐ ⟦Em Linh học chăm chỉ lắm, luôn làm hết bài tập thầy cho.⟧ — Linh rajin sekali, selalu mengerjakan semua PR dari guru. Ⓑ ⟦Vâng. Thầy cho bao nhiêu em ấy làm bấy nhiêu.⟧ — Iya. Berapa pun yang diberikan guru, sebanyak itu yang dia kerjakan.
+❷ (⟦anh ấy kiếm⟧ yang dia hasilkan; ⟦tiêu hết⟧ dihabiskan) Ⓐ ⟦Anh ấy không tiết kiệm tiền à?⟧ — Dia tidak menabung? Ⓑ ⟦Anh ấy kiếm bao nhiêu tiêu hết bấy nhiêu. Làm sao mà để dành được.⟧ — Berapa pun yang dia hasilkan, habis dibelanjakan. Bagaimana bisa menabung.
+Latihan pola 4 — hubungkan bagian yang cocok, lalu bercakaplah seperti contoh: ① ⟦trời rất nắng⟧ (cuaca sangat terik) – Ⓐ ⟦đội mũ⟧ (memakai topi) – ② ⟦đau đầu lắm⟧ (sakit kepala sekali) | ② ⟦trời đang mưa⟧ (sedang hujan) – Ⓒ ⟦mặc áo mưa⟧ (memakai jas hujan) – ① ⟦bị ướt hết⟧ (basah kuyup) | ③ ⟦là giờ cao điểm⟧ (jam sibuk) – Ⓑ ⟦đi xe ôm⟧ (naik ojek) – ③ ⟦về nhà muộn lắm⟧ (pulang sangat terlambat)
+Contoh (①–Ⓐ–②): Ⓐ ⟦Bây giờ trời rất nắng, chị nên đội mũ kẻo đau đầu lắm.⟧ — Sekarang terik sekali, sebaiknya Kakak pakai topi, nanti sakit kepala. Ⓑ ⟦Ừ, chị biết rồi. Cảm ơn em.⟧ — Iya, Kakak mengerti. Terima kasih.
+Kosakata baru: ⟦rán⟧ menggoreng | ⟦tiêu⟧ membelanjakan | ⟦để dành⟧ menabung | ⟦giờ cao điểm⟧ jam sibuk
+=ja
+核心表現：⟦A bao nhiêu B bấy nhiêu⟧ / ⟦kẻo⟧
+⟦A bao nhiêu B bấy nhiêu⟧ は相応関係を表す表現で、「Aする分だけBする」という意味です。
+❶ ⟦Anh em tôi đều rất thích ăn nem, mẹ tôi rán bao nhiêu anh em tôi ăn hết bấy nhiêu.⟧ — 私たち兄弟はみんな揚げ春巻きが大好きで、母が揚げた分だけ全部食べてしまいます。
+❷ Ⓐ ⟦Cô ơi, em có thể mượn mấy quyển sách một lần ạ?⟧ — 先生、本は一度に何冊借りられますか。 Ⓑ ⟦Bây giờ đang là nghỉ hè, ít người đến thư viện đọc sách và mượn sách. Vì thế em muốn mượn bao nhiêu cô cho em mượn bấy nhiêu.⟧ — 今は夏休みで、図書館に本を読みに来たり借りに来たりする人が少ないの。だから借りたいだけ貸してあげるわ。
+⟦kẻo⟧ は条件と否定的な結果の関係を表す表現で、普通、忠告や助言をするときに使います。⟦A kẻo B⟧ は「Aしなさい、でないとBするよ」「Bする前にAしなさい」「Bしないように Aしなさい」などの意味を表します。
+❶ ⟦Nếu thích nhà này thì anh nên kí hợp đồng ngay kẻo có người khác đến thuê mất.⟧ — この家が気に入ったなら、ほかの人に借りられないうちにすぐ契約したほうがいいですよ。
+❷ Ⓐ ⟦Hôm nay chúng ta có hẹn với giám đốc công ti đối tác lúc 10 giờ sáng.⟧ — 今日は午前10時に取引先の社長と約束があります。 Ⓑ ⟦Thế thì bây giờ chúng ta phải đi ngay kẻo muộn. Giờ này hay tắc đường lắm.⟧ — それなら今すぐ出ないと遅れます。この時間はよく道が混むんです。
+文型練習3 — 与えられた表現と ⟦~ bao nhiêu ~ bấy nhiêu⟧ を使って例のように会話してみましょう。
+例（⟦em muốn vay⟧ 借りたい分；⟦chị cho vay⟧ 貸してあげる）：Ⓐ ⟦Xin lỗi chị. Em có việc gấp, chị cho em vay tiền, được không ạ?⟧ — すみません。急用ができたので、お金を貸してもらえませんか。 Ⓑ ⟦Được. Em muốn vay bao nhiêu chị cho vay bấy nhiêu. Cứ nói thoải mái đi.⟧ — いいわよ。借りたいだけ貸してあげる。遠慮なく言って。
+❶（⟦thầy cho⟧ 先生が出す分；⟦em ấy làm⟧ 彼女がやる）Ⓐ ⟦Em Linh học chăm chỉ lắm, luôn làm hết bài tập thầy cho.⟧ — リンさんはとてもまじめで、先生が出した宿題をいつも全部やります。 Ⓑ ⟦Vâng. Thầy cho bao nhiêu em ấy làm bấy nhiêu.⟧ — ええ。先生が出した分だけ全部やりますね。
+❷（⟦anh ấy kiếm⟧ 彼が稼ぐ分；⟦tiêu hết⟧ 使い切る）Ⓐ ⟦Anh ấy không tiết kiệm tiền à?⟧ — 彼は貯金しないの？ Ⓑ ⟦Anh ấy kiếm bao nhiêu tiêu hết bấy nhiêu. Làm sao mà để dành được.⟧ — 稼いだ分だけ全部使ってしまうんだ。貯金なんてできっこないよ。
+文型練習4 — 適切な内容を結び、例のように会話してみましょう：① ⟦trời rất nắng⟧（日差しがとても強い）– Ⓐ ⟦đội mũ⟧（帽子をかぶる）– ② ⟦đau đầu lắm⟧（ひどく頭が痛くなる）| ② ⟦trời đang mưa⟧（雨が降っている）– Ⓒ ⟦mặc áo mưa⟧（レインコートを着る）– ① ⟦bị ướt hết⟧（びしょ濡れになる）| ③ ⟦là giờ cao điểm⟧（ラッシュアワーだ）– Ⓑ ⟦đi xe ôm⟧（バイクタクシーに乗る）– ③ ⟦về nhà muộn lắm⟧（帰宅がとても遅くなる）
+例（①–Ⓐ–②）：Ⓐ ⟦Bây giờ trời rất nắng, chị nên đội mũ kẻo đau đầu lắm.⟧ — 今は日差しがとても強いから、帽子をかぶったほうがいいですよ。でないとひどく頭が痛くなりますよ。 Ⓑ ⟦Ừ, chị biết rồi. Cảm ơn em.⟧ — うん、わかった。ありがとう。
+新出単語：⟦rán⟧ 揚げる | ⟦tiêu⟧ 使う、消費する | ⟦để dành⟧ 貯金する | ⟦giờ cao điểm⟧ ラッシュアワー
+=pl
+Kluczowe wyrażenia: ⟦A bao nhiêu B bấy nhiêu⟧ / ⟦kẻo⟧
+⟦A bao nhiêu B bấy nhiêu⟧ wyraża zależność: „ile A, tyle B”.
+❶ ⟦Anh em tôi đều rất thích ăn nem, mẹ tôi rán bao nhiêu anh em tôi ăn hết bấy nhiêu.⟧ — My, rodzeństwo, uwielbiamy nemy: ile mama usmaży, tyle zjadamy.
+❷ Ⓐ ⟦Cô ơi, em có thể mượn mấy quyển sách một lần ạ?⟧ — Proszę pani, ile książek mogę wypożyczyć naraz? Ⓑ ⟦Bây giờ đang là nghỉ hè, ít người đến thư viện đọc sách và mượn sách. Vì thế em muốn mượn bao nhiêu cô cho em mượn bấy nhiêu.⟧ — Są wakacje, mało kto przychodzi do biblioteki czytać i wypożyczać. Ile chcesz, tyle ci wypożyczę.
+⟦kẻo⟧ wyraża związek między warunkiem a niepożądanym skutkiem; używa się go zwykle przy radach i ostrzeżeniach: ⟦A kẻo B⟧ znaczy „zrób A, bo inaczej B; zrób A, zanim B; zrób A, żeby nie B”.
+❶ ⟦Nếu thích nhà này thì anh nên kí hợp đồng ngay kẻo có người khác đến thuê mất.⟧ — Jeśli podoba się panu ten dom, lepiej od razu podpisać umowę, bo wynajmie go ktoś inny.
+❷ Ⓐ ⟦Hôm nay chúng ta có hẹn với giám đốc công ti đối tác lúc 10 giờ sáng.⟧ — Dziś o 10 rano mamy spotkanie z dyrektorem firmy partnerskiej. Ⓑ ⟦Thế thì bây giờ chúng ta phải đi ngay kẻo muộn. Giờ này hay tắc đường lắm.⟧ — To musimy wyjść od razu, bo się spóźnimy. O tej porze często są korki.
+Ćwiczenie 3 — rozmawiaj jak we wzorze, używając podanych wyrażeń i ⟦~ bao nhiêu ~ bấy nhiêu⟧.
+Wzór (⟦em muốn vay⟧ ile chcesz pożyczyć; ⟦chị cho vay⟧ tyle pożyczę): Ⓐ ⟦Xin lỗi chị. Em có việc gấp, chị cho em vay tiền, được không ạ?⟧ — Przepraszam. Mam pilną sprawę, mogłabyś pożyczyć mi pieniądze? Ⓑ ⟦Được. Em muốn vay bao nhiêu chị cho vay bấy nhiêu. Cứ nói thoải mái đi.⟧ — Jasne. Ile chcesz, tyle ci pożyczę. Mów śmiało.
+❶ (⟦thầy cho⟧ ile zada nauczyciel; ⟦em ấy làm⟧ tyle zrobi) Ⓐ ⟦Em Linh học chăm chỉ lắm, luôn làm hết bài tập thầy cho.⟧ — Linh bardzo pilnie się uczy, zawsze robi wszystkie zadania od nauczyciela. Ⓑ ⟦Vâng. Thầy cho bao nhiêu em ấy làm bấy nhiêu.⟧ — Tak. Ile nauczyciel zada, tyle zrobi.
+❷ (⟦anh ấy kiếm⟧ ile zarobi; ⟦tiêu hết⟧ tyle wyda) Ⓐ ⟦Anh ấy không tiết kiệm tiền à?⟧ — On nie oszczędza? Ⓑ ⟦Anh ấy kiếm bao nhiêu tiêu hết bấy nhiêu. Làm sao mà để dành được.⟧ — Ile zarobi, tyle wyda. Jak miałby coś odłożyć?
+Ćwiczenie 4 — połącz pasujące elementy i rozmawiaj jak we wzorze: ① ⟦trời rất nắng⟧ (bardzo mocno świeci słońce) – Ⓐ ⟦đội mũ⟧ (założyć kapelusz) – ② ⟦đau đầu lắm⟧ (bardzo rozboli cię głowa) | ② ⟦trời đang mưa⟧ (pada deszcz) – Ⓒ ⟦mặc áo mưa⟧ (założyć płaszcz przeciwdeszczowy) – ① ⟦bị ướt hết⟧ (przemokniesz do suchej nitki) | ③ ⟦là giờ cao điểm⟧ (są godziny szczytu) – Ⓑ ⟦đi xe ôm⟧ (pojechać mototaksówką) – ③ ⟦về nhà muộn lắm⟧ (wrócisz do domu bardzo późno)
+Wzór (①–Ⓐ–②): Ⓐ ⟦Bây giờ trời rất nắng, chị nên đội mũ kẻo đau đầu lắm.⟧ — Teraz bardzo praży słońce, lepiej załóż kapelusz, bo rozboli cię głowa. Ⓑ ⟦Ừ, chị biết rồi. Cảm ơn em.⟧ — Dobrze, rozumiem. Dzięki.
+Nowe słówka: ⟦rán⟧ smażyć | ⟦tiêu⟧ wydawać | ⟦để dành⟧ oszczędzać, odkładać | ⟦giờ cao điểm⟧ godziny szczytu
+@@ pdf-grammar-e8f406d23d0c84c0#0
+=cs
+Gramatický výklad
+⟦BÀI 1 CHÀO HỎI VÀ LÀM QUEN⟧ — Lekce 1: Pozdravy a seznamování
+⟦BÀI ĐỌC 1⟧ — Čtení 1 · ⟦MẪU CÂU⟧ — Větné vzory
+=zh_cn
+语法解说
+⟦BÀI 1 CHÀO HỎI VÀ LÀM QUEN⟧ —— 第1课：问候与结识
+⟦BÀI ĐỌC 1⟧ —— 阅读1 · ⟦MẪU CÂU⟧ —— 句型
+=zh
+文法解說
+⟦BÀI 1 CHÀO HỎI VÀ LÀM QUEN⟧ —— 第1課：問候與結識
+⟦BÀI ĐỌC 1⟧ —— 閱讀1 · ⟦MẪU CÂU⟧ —— 句型
+=en
+Grammar notes
+⟦BÀI 1 CHÀO HỎI VÀ LÀM QUEN⟧ — Lesson 1: Greetings and getting acquainted
+⟦BÀI ĐỌC 1⟧ — Reading 1 · ⟦MẪU CÂU⟧ — Sentence patterns
+=fr
+Notes de grammaire
+⟦BÀI 1 CHÀO HỎI VÀ LÀM QUEN⟧ — Leçon 1 : Salutations et présentations
+⟦BÀI ĐỌC 1⟧ — Lecture 1 · ⟦MẪU CÂU⟧ — Structures de phrases
+=de
+Grammatikerläuterungen
+⟦BÀI 1 CHÀO HỎI VÀ LÀM QUEN⟧ — Lektion 1: Begrüßen und Kennenlernen
+⟦BÀI ĐỌC 1⟧ — Lesetext 1 · ⟦MẪU CÂU⟧ — Satzmuster
+=hu
+Nyelvtani magyarázat
+⟦BÀI 1 CHÀO HỎI VÀ LÀM QUEN⟧ — 1. lecke: Köszönés és ismerkedés
+⟦BÀI ĐỌC 1⟧ — 1. olvasmány · ⟦MẪU CÂU⟧ — Mondatminták
+=id
+Penjelasan tata bahasa
+⟦BÀI 1 CHÀO HỎI VÀ LÀM QUEN⟧ — Pelajaran 1: Salam dan berkenalan
+⟦BÀI ĐỌC 1⟧ — Bacaan 1 · ⟦MẪU CÂU⟧ — Pola kalimat
+=ja
+文法解説
+⟦BÀI 1 CHÀO HỎI VÀ LÀM QUEN⟧ — 第1課：あいさつと知り合うこと
+⟦BÀI ĐỌC 1⟧ — 読み物1 · ⟦MẪU CÂU⟧ — 文型
+=pl
+Objaśnienia gramatyczne
+⟦BÀI 1 CHÀO HỎI VÀ LÀM QUEN⟧ — Lekcja 1: Powitania i zawieranie znajomości
+⟦BÀI ĐỌC 1⟧ — Czytanka 1 · ⟦MẪU CÂU⟧ — Wzory zdań

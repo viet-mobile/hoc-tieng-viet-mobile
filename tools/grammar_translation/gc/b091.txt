@@ -1,0 +1,162 @@
+@@ pdf-grammar-4c63ccab467f29fa#0
+=cs
+Gramatický výklad
+⟦xem như⟧: „jako by, to je jako, lze považovat za“. Podobný význam mají ⟦Được coi là⟧ a ⟦được cho là⟧.
+⟦Mua quà Hà Nội mà không mua cốm thì xem như chưa từng tới Hà Nội.⟧ → Kdo kupuje dárky z Hanoje a nekoupí cốm (zelenou rýži), jako by v Hanoji nikdy nebyl. · ⟦Anh ấy ăn khỏe vì thế chỉ ăn một bát phở thì xem như anh ấy chưa ăn gì.⟧ → Má velkou chuť k jídlu, takže jedna miska phở je pro něj jako by nic nejedl. · ⟦Đến Hạ Long của Việt Nam mà không đi du thuyền thăm vịnh thì xem như là chưa đến.⟧ → Přijet do vietnamského Hạ Longu a nepodniknout plavbu po zálivu je jako tam vůbec nebýt. · ⟦Chị Lan lái xe được hơn chục cây số như vậy thì có thể xem như chị ấy đã biết lái ô tô.⟧ → Když Lan takhle ujela přes deset kilometrů, dá se říct, že už umí řídit auto.
+⟦vốn là⟧: ve tvaru ⟦vốn là⟧ + věta znamená „původně byl/bylo ~“.
+⟦Làng Vòng vốn là nơi làm cốm nổi tiếng nhất đất Thăng Long xưa.⟧ → Vesnice Vòng byla původně nejslavnějším místem výroby cốm ve starém Thăng Longu. · ⟦Nhà tôi đang ở, trước đây vốn là một ngôi nhà gỗ.⟧ → Dům, ve kterém bydlím, byl dříve původně dřevěný. · ⟦Anh Park vốn là người thành phố.⟧ → Park pochází původně z města. · ⟦Nơi đây vốn là một bãi đất hoang.⟧ → Toto místo bylo původně pustým pozemkem.
+⟦chính là⟧: „právě, přesně“ – stojí před obsahem, který chceme zdůraznit.
+⟦Gửi tặng cốm Vòng đến với người thân chính là gửi hương vị mùa thu Hà Nội đến với họ.⟧ → Poslat blízkým cốm z Vòng znamená poslat jim právě chuť hanojského podzimu. · ⟦Cốm Vòng chính là một trong những đặc sản của Hà Nội.⟧ → Cốm z Vòng je právě jednou ze specialit Hanoje. · ⟦Nơi đây chính là nơi tôi đã từng sống nhiều năm.⟧ → Právě tady jsem mnoho let žil. · ⟦Chị Lee chính là người đến lớp sớm nhất.⟧ → Právě Lee chodí na hodinu nejdřív.
+=zh_cn
+语法解说
+⟦xem như⟧：意为“就像……、等于……、可以看作……”，意思相近的还有 ⟦Được coi là⟧、⟦được cho là⟧。
+⟦Mua quà Hà Nội mà không mua cốm thì xem như chưa từng tới Hà Nội.⟧ → 买河内的伴手礼却不买扁米（cốm），就等于没来过河内。 · ⟦Anh ấy ăn khỏe vì thế chỉ ăn một bát phở thì xem như anh ấy chưa ăn gì.⟧ → 他饭量大，所以只吃一碗河粉就等于什么也没吃。 · ⟦Đến Hạ Long của Việt Nam mà không đi du thuyền thăm vịnh thì xem như là chưa đến.⟧ → 来到越南下龙却不乘游船游览海湾，就等于没来过。 · ⟦Chị Lan lái xe được hơn chục cây số như vậy thì có thể xem như chị ấy đã biết lái ô tô.⟧ → 阿兰能这样开十几公里，就可以算她会开车了。
+⟦vốn là⟧：以 ⟦vốn là⟧ + 句子 的形式，表示“原本是……”。
+⟦Làng Vòng vốn là nơi làm cốm nổi tiếng nhất đất Thăng Long xưa.⟧ → 环村原本是古升龙地区最有名的扁米产地。 · ⟦Nhà tôi đang ở, trước đây vốn là một ngôi nhà gỗ.⟧ → 我现在住的房子，以前原本是一座木屋。 · ⟦Anh Park vốn là người thành phố.⟧ → 朴原本是城里人。 · ⟦Nơi đây vốn là một bãi đất hoang.⟧ → 这里原本是一片荒地。
+⟦chính là⟧：意为“正是、就是”，放在想要强调的内容之前。
+⟦Gửi tặng cốm Vòng đến với người thân chính là gửi hương vị mùa thu Hà Nội đến với họ.⟧ → 把环村扁米寄给亲人，就是把河内秋天的味道寄给他们。 · ⟦Cốm Vòng chính là một trong những đặc sản của Hà Nội.⟧ → 环村扁米正是河内的特产之一。 · ⟦Nơi đây chính là nơi tôi đã từng sống nhiều năm.⟧ → 这里正是我曾经生活多年的地方。 · ⟦Chị Lee chính là người đến lớp sớm nhất.⟧ → 李正是最早到教室的人。
+=zh
+文法解說
+⟦xem như⟧：意為「就像……、等於……、可以看作……」，意思相近的還有 ⟦Được coi là⟧、⟦được cho là⟧。
+⟦Mua quà Hà Nội mà không mua cốm thì xem như chưa từng tới Hà Nội.⟧ → 買河內的伴手禮卻不買扁米（cốm），就等於沒來過河內。 · ⟦Anh ấy ăn khỏe vì thế chỉ ăn một bát phở thì xem như anh ấy chưa ăn gì.⟧ → 他食量大，所以只吃一碗河粉就等於什麼也沒吃。 · ⟦Đến Hạ Long của Việt Nam mà không đi du thuyền thăm vịnh thì xem như là chưa đến.⟧ → 來到越南下龍卻不搭遊船遊覽海灣，就等於沒來過。 · ⟦Chị Lan lái xe được hơn chục cây số như vậy thì có thể xem như chị ấy đã biết lái ô tô.⟧ → 阿蘭能這樣開十幾公里，就可以算她會開車了。
+⟦vốn là⟧：以 ⟦vốn là⟧ + 句子 的形式，表示「原本是……」。
+⟦Làng Vòng vốn là nơi làm cốm nổi tiếng nhất đất Thăng Long xưa.⟧ → 環村原本是古昇龍地區最有名的扁米產地。 · ⟦Nhà tôi đang ở, trước đây vốn là một ngôi nhà gỗ.⟧ → 我現在住的房子，以前原本是一棟木屋。 · ⟦Anh Park vốn là người thành phố.⟧ → 朴原本是城市人。 · ⟦Nơi đây vốn là một bãi đất hoang.⟧ → 這裡原本是一片荒地。
+⟦chính là⟧：意為「正是、就是」，放在想要強調的內容之前。
+⟦Gửi tặng cốm Vòng đến với người thân chính là gửi hương vị mùa thu Hà Nội đến với họ.⟧ → 把環村扁米寄給親人，就是把河內秋天的味道寄給他們。 · ⟦Cốm Vòng chính là một trong những đặc sản của Hà Nội.⟧ → 環村扁米正是河內的特產之一。 · ⟦Nơi đây chính là nơi tôi đã từng sống nhiều năm.⟧ → 這裡正是我曾經住了多年的地方。 · ⟦Chị Lee chính là người đến lớp sớm nhất.⟧ → 李正是最早到教室的人。
+=en
+Grammar notes
+⟦xem như⟧: "as good as, it's as if, can be regarded as". Similar expressions are ⟦Được coi là⟧ and ⟦được cho là⟧.
+⟦Mua quà Hà Nội mà không mua cốm thì xem như chưa từng tới Hà Nội.⟧ → Buying gifts from Hanoi without buying cốm (young green rice) is as good as never having been to Hanoi. · ⟦Anh ấy ăn khỏe vì thế chỉ ăn một bát phở thì xem như anh ấy chưa ăn gì.⟧ → He's a big eater, so one bowl of phở is as good as nothing for him. · ⟦Đến Hạ Long của Việt Nam mà không đi du thuyền thăm vịnh thì xem như là chưa đến.⟧ → Coming to Vietnam's Hạ Long without taking a boat trip around the bay is as if you hadn't come at all. · ⟦Chị Lan lái xe được hơn chục cây số như vậy thì có thể xem như chị ấy đã biết lái ô tô.⟧ → If Lan can drive over ten kilometres like that, you can consider that she knows how to drive a car.
+⟦vốn là⟧: in the form ⟦vốn là⟧ + clause, means "was originally ~".
+⟦Làng Vòng vốn là nơi làm cốm nổi tiếng nhất đất Thăng Long xưa.⟧ → Vòng village was originally the most famous place for making cốm in old Thăng Long. · ⟦Nhà tôi đang ở, trước đây vốn là một ngôi nhà gỗ.⟧ → The house I live in was originally a wooden house. · ⟦Anh Park vốn là người thành phố.⟧ → Park is originally a city person. · ⟦Nơi đây vốn là một bãi đất hoang.⟧ → This place was originally a piece of wasteland.
+⟦chính là⟧: "precisely, exactly, none other than" – placed before the content to be emphasized.
+⟦Gửi tặng cốm Vòng đến với người thân chính là gửi hương vị mùa thu Hà Nội đến với họ.⟧ → Sending Vòng cốm to loved ones is precisely sending them the taste of Hanoi's autumn. · ⟦Cốm Vòng chính là một trong những đặc sản của Hà Nội.⟧ → Vòng cốm is indeed one of Hanoi's specialities. · ⟦Nơi đây chính là nơi tôi đã từng sống nhiều năm.⟧ → This is exactly the place where I lived for many years. · ⟦Chị Lee chính là người đến lớp sớm nhất.⟧ → Lee is the one who gets to class earliest.
+=fr
+Notes de grammaire
+⟦xem như⟧ : « c'est comme si, autant dire que, on peut considérer que ». Des expressions voisines sont ⟦Được coi là⟧ et ⟦được cho là⟧.
+⟦Mua quà Hà Nội mà không mua cốm thì xem như chưa từng tới Hà Nội.⟧ → Acheter des cadeaux de Hanoï sans acheter de cốm (riz vert), c'est comme n'être jamais venu à Hanoï. · ⟦Anh ấy ăn khỏe vì thế chỉ ăn một bát phở thì xem như anh ấy chưa ăn gì.⟧ → Il a un gros appétit, alors un seul bol de phở, c'est comme s'il n'avait rien mangé. · ⟦Đến Hạ Long của Việt Nam mà không đi du thuyền thăm vịnh thì xem như là chưa đến.⟧ → Venir à Hạ Long au Vietnam sans faire une croisière dans la baie, c'est comme ne pas être venu. · ⟦Chị Lan lái xe được hơn chục cây số như vậy thì có thể xem như chị ấy đã biết lái ô tô.⟧ → Si Lan a pu conduire plus d'une dizaine de kilomètres ainsi, on peut considérer qu'elle sait conduire.
+⟦vốn là⟧ : sous la forme ⟦vốn là⟧ + proposition, signifie « était à l'origine ~ ».
+⟦Làng Vòng vốn là nơi làm cốm nổi tiếng nhất đất Thăng Long xưa.⟧ → Le village de Vòng était à l'origine le lieu de fabrication de cốm le plus célèbre de l'ancien Thăng Long. · ⟦Nhà tôi đang ở, trước đây vốn là một ngôi nhà gỗ.⟧ → La maison où j'habite était à l'origine une maison en bois. · ⟦Anh Park vốn là người thành phố.⟧ → Park est à l'origine un citadin. · ⟦Nơi đây vốn là một bãi đất hoang.⟧ → Cet endroit était à l'origine un terrain vague.
+⟦chính là⟧ : « précisément, justement, c'est bien » – se place devant le contenu à mettre en relief.
+⟦Gửi tặng cốm Vòng đến với người thân chính là gửi hương vị mùa thu Hà Nội đến với họ.⟧ → Offrir du cốm de Vòng à ses proches, c'est précisément leur envoyer la saveur de l'automne hanoïen. · ⟦Cốm Vòng chính là một trong những đặc sản của Hà Nội.⟧ → Le cốm de Vòng est justement l'une des spécialités de Hanoï. · ⟦Nơi đây chính là nơi tôi đã từng sống nhiều năm.⟧ → C'est précisément ici que j'ai vécu de nombreuses années. · ⟦Chị Lee chính là người đến lớp sớm nhất.⟧ → C'est justement Lee qui arrive la première en cours.
+=de
+Grammatikerläuterungen
+⟦xem như⟧: „so gut wie, als ob, kann als ~ gelten“. Ähnlich sind ⟦Được coi là⟧ und ⟦được cho là⟧.
+⟦Mua quà Hà Nội mà không mua cốm thì xem như chưa từng tới Hà Nội.⟧ → Wer Mitbringsel aus Hanoi kauft, aber kein cốm (grünen jungen Reis), ist so gut wie nie in Hanoi gewesen. · ⟦Anh ấy ăn khỏe vì thế chỉ ăn một bát phở thì xem như anh ấy chưa ăn gì.⟧ → Er isst viel, deshalb ist eine einzige Schale Phở für ihn so gut wie nichts. · ⟦Đến Hạ Long của Việt Nam mà không đi du thuyền thăm vịnh thì xem như là chưa đến.⟧ → Nach Hạ Long in Vietnam zu kommen, ohne eine Bootsfahrt in der Bucht zu machen, ist, als wäre man nicht dort gewesen. · ⟦Chị Lan lái xe được hơn chục cây số như vậy thì có thể xem như chị ấy đã biết lái ô tô.⟧ → Wenn Lan so über zehn Kilometer fahren kann, kann man sagen, dass sie Auto fahren kann.
+⟦vốn là⟧: in der Form ⟦vốn là⟧ + Satz bedeutet es „war ursprünglich ~“.
+⟦Làng Vòng vốn là nơi làm cốm nổi tiếng nhất đất Thăng Long xưa.⟧ → Das Dorf Vòng war ursprünglich der berühmteste Ort für die Herstellung von cốm im alten Thăng Long. · ⟦Nhà tôi đang ở, trước đây vốn là một ngôi nhà gỗ.⟧ → Das Haus, in dem ich wohne, war ursprünglich ein Holzhaus. · ⟦Anh Park vốn là người thành phố.⟧ → Park stammt ursprünglich aus der Stadt. · ⟦Nơi đây vốn là một bãi đất hoang.⟧ → Dieser Ort war ursprünglich ein brachliegendes Grundstück.
+⟦chính là⟧: „genau, eben, gerade“ – steht vor dem Inhalt, den man hervorheben will.
+⟦Gửi tặng cốm Vòng đến với người thân chính là gửi hương vị mùa thu Hà Nội đến với họ.⟧ → Angehörigen cốm aus Vòng zu schicken heißt genau, ihnen den Geschmack des Hanoier Herbstes zu schicken. · ⟦Cốm Vòng chính là một trong những đặc sản của Hà Nội.⟧ → Cốm aus Vòng ist eben eine der Spezialitäten Hanois. · ⟦Nơi đây chính là nơi tôi đã từng sống nhiều năm.⟧ → Genau hier habe ich viele Jahre gelebt. · ⟦Chị Lee chính là người đến lớp sớm nhất.⟧ → Gerade Lee ist diejenige, die am frühesten zum Unterricht kommt.
+=hu
+Nyelvtani magyarázat
+⟦xem như⟧: „olyan, mintha; ~nak tekinthető”. Hasonló jelentésű a ⟦Được coi là⟧ és a ⟦được cho là⟧.
+⟦Mua quà Hà Nội mà không mua cốm thì xem như chưa từng tới Hà Nội.⟧ → Aki hanoi ajándékot vesz, de cốmot (zöld fiatal rizst) nem, olyan, mintha sosem járt volna Hanoiban. · ⟦Anh ấy ăn khỏe vì thế chỉ ăn một bát phở thì xem như anh ấy chưa ăn gì.⟧ → Nagyétkű, ezért egy tál phở neki olyan, mintha semmit sem evett volna. · ⟦Đến Hạ Long của Việt Nam mà không đi du thuyền thăm vịnh thì xem như là chưa đến.⟧ → Aki eljön a vietnámi Hạ Longba, de nem hajózik az öbölben, az olyan, mintha ott sem lett volna. · ⟦Chị Lan lái xe được hơn chục cây số như vậy thì có thể xem như chị ấy đã biết lái ô tô.⟧ → Ha Lan így több mint tíz kilométert tud vezetni, akkor mondhatjuk, hogy már tud autót vezetni.
+⟦vốn là⟧: ⟦vốn là⟧ + mondat alakban jelentése „eredetileg ~ volt”.
+⟦Làng Vòng vốn là nơi làm cốm nổi tiếng nhất đất Thăng Long xưa.⟧ → Vòng falu eredetileg a régi Thăng Long leghíresebb cốmkészítő helye volt. · ⟦Nhà tôi đang ở, trước đây vốn là một ngôi nhà gỗ.⟧ → A ház, amelyben lakom, eredetileg faház volt. · ⟦Anh Park vốn là người thành phố.⟧ → Park eredetileg városi ember. · ⟦Nơi đây vốn là một bãi đất hoang.⟧ → Ez a hely eredetileg parlagon heverő telek volt.
+⟦chính là⟧: „éppen, pontosan, nem más, mint” – a kiemelni kívánt tartalom előtt áll.
+⟦Gửi tặng cốm Vòng đến với người thân chính là gửi hương vị mùa thu Hà Nội đến với họ.⟧ → Vòngi cốmot küldeni a szeretteinknek nem más, mint elküldeni nekik a hanoi ősz ízét. · ⟦Cốm Vòng chính là một trong những đặc sản của Hà Nội.⟧ → A vòngi cốm éppen Hanoi egyik különlegessége. · ⟦Nơi đây chính là nơi tôi đã từng sống nhiều năm.⟧ → Éppen itt éltem sok évig. · ⟦Chị Lee chính là người đến lớp sớm nhất.⟧ → Éppen Lee az, aki a legkorábban érkezik az órára.
+=id
+Penjelasan tata bahasa
+⟦xem như⟧: "sama saja dengan, dapat dianggap". Ungkapan serupa adalah ⟦Được coi là⟧ dan ⟦được cho là⟧.
+⟦Mua quà Hà Nội mà không mua cốm thì xem như chưa từng tới Hà Nội.⟧ → Membeli oleh-oleh Hanoi tanpa membeli cốm (beras muda hijau) sama saja dengan belum pernah ke Hanoi. · ⟦Anh ấy ăn khỏe vì thế chỉ ăn một bát phở thì xem như anh ấy chưa ăn gì.⟧ → Dia makannya banyak, jadi semangkuk phở saja sama dengan belum makan apa-apa. · ⟦Đến Hạ Long của Việt Nam mà không đi du thuyền thăm vịnh thì xem như là chưa đến.⟧ → Datang ke Hạ Long di Vietnam tanpa naik kapal pesiar mengelilingi teluk sama saja dengan belum datang. · ⟦Chị Lan lái xe được hơn chục cây số như vậy thì có thể xem như chị ấy đã biết lái ô tô.⟧ → Kalau Lan bisa menyetir lebih dari sepuluh kilometer seperti itu, dia bisa dianggap sudah bisa menyetir mobil.
+⟦vốn là⟧: dalam bentuk ⟦vốn là⟧ + kalimat berarti "semula adalah, aslinya ~".
+⟦Làng Vòng vốn là nơi làm cốm nổi tiếng nhất đất Thăng Long xưa.⟧ → Desa Vòng semula adalah tempat pembuatan cốm paling terkenal di Thăng Long zaman dulu. · ⟦Nhà tôi đang ở, trước đây vốn là một ngôi nhà gỗ.⟧ → Rumah yang saya tinggali dulunya adalah rumah kayu. · ⟦Anh Park vốn là người thành phố.⟧ → Park aslinya orang kota. · ⟦Nơi đây vốn là một bãi đất hoang.⟧ → Tempat ini semula adalah sebidang tanah kosong.
+⟦chính là⟧: "justru, tepatnya, tak lain adalah" – diletakkan sebelum isi yang ingin ditekankan.
+⟦Gửi tặng cốm Vòng đến với người thân chính là gửi hương vị mùa thu Hà Nội đến với họ.⟧ → Mengirim cốm Vòng kepada kerabat tak lain adalah mengirim cita rasa musim gugur Hanoi kepada mereka. · ⟦Cốm Vòng chính là một trong những đặc sản của Hà Nội.⟧ → Cốm Vòng justru merupakan salah satu makanan khas Hanoi. · ⟦Nơi đây chính là nơi tôi đã từng sống nhiều năm.⟧ → Di sinilah tempat saya pernah tinggal bertahun-tahun. · ⟦Chị Lee chính là người đến lớp sớm nhất.⟧ → Lee-lah orang yang paling awal datang ke kelas.
+=ja
+文法解説
+⟦xem như⟧：「～と同じだ、～と変わらない、～と見なせる」という意味で使われます。似た意味に ⟦Được coi là⟧、⟦được cho là⟧ があります。
+⟦Mua quà Hà Nội mà không mua cốm thì xem như chưa từng tới Hà Nội.⟧ → ハノイのお土産を買うのにコム（青米）を買わなければ、ハノイに来たことがないのと同じだ。 · ⟦Anh ấy ăn khỏe vì thế chỉ ăn một bát phở thì xem như anh ấy chưa ăn gì.⟧ → 彼は大食いなので、フォー一杯だけでは何も食べていないのと同じだ。 · ⟦Đến Hạ Long của Việt Nam mà không đi du thuyền thăm vịnh thì xem như là chưa đến.⟧ → ベトナムのハロンに来て湾内クルーズをしなければ、来ていないのと同じだ。 · ⟦Chị Lan lái xe được hơn chục cây số như vậy thì có thể xem như chị ấy đã biết lái ô tô.⟧ → ランさんがそのように十数キロ運転できたなら、もう車の運転ができると見なしてよい。
+⟦vốn là⟧：⟦vốn là⟧ + 文 の形で「もともとは～だ」という意味で使われます。
+⟦Làng Vòng vốn là nơi làm cốm nổi tiếng nhất đất Thăng Long xưa.⟧ → ヴォン村はもともと昔のタンロンで最も有名なコムの産地だった。 · ⟦Nhà tôi đang ở, trước đây vốn là một ngôi nhà gỗ.⟧ → 私が住んでいる家は、もともと木造の家だった。 · ⟦Anh Park vốn là người thành phố.⟧ → パクさんはもともと都会の人だ。 · ⟦Nơi đây vốn là một bãi đất hoang.⟧ → ここはもともと荒れ地だった。
+⟦chính là⟧：「まさに～、すなわち～」という意味で、ある内容を強調するときに強調したい内容の前に使います。
+⟦Gửi tặng cốm Vòng đến với người thân chính là gửi hương vị mùa thu Hà Nội đến với họ.⟧ → ヴォン村のコムを身内に贈ることは、まさにハノイの秋の味を届けることだ。 · ⟦Cốm Vòng chính là một trong những đặc sản của Hà Nội.⟧ → ヴォン村のコムはまさにハノイの名産の一つだ。 · ⟦Nơi đây chính là nơi tôi đã từng sống nhiều năm.⟧ → ここがまさに私が長年住んでいた場所だ。 · ⟦Chị Lee chính là người đến lớp sớm nhất.⟧ → リーさんこそが一番早く教室に来る人だ。
+=pl
+Objaśnienia gramatyczne
+⟦xem như⟧: „to tak, jakby; można uznać za”. Podobne znaczenie mają ⟦Được coi là⟧ i ⟦được cho là⟧.
+⟦Mua quà Hà Nội mà không mua cốm thì xem như chưa từng tới Hà Nội.⟧ → Kupować upominki z Hanoi i nie kupić cốm (zielonego młodego ryżu) – to tak, jakby się w Hanoi nigdy nie było. · ⟦Anh ấy ăn khỏe vì thế chỉ ăn một bát phở thì xem như anh ấy chưa ăn gì.⟧ → On dużo je, więc jedna miska phở to dla niego tak, jakby nic nie zjadł. · ⟦Đến Hạ Long của Việt Nam mà không đi du thuyền thăm vịnh thì xem như là chưa đến.⟧ → Przyjechać do wietnamskiego Hạ Long i nie popłynąć po zatoce – to tak, jakby się tam nie było. · ⟦Chị Lan lái xe được hơn chục cây số như vậy thì có thể xem như chị ấy đã biết lái ô tô.⟧ → Skoro Lan przejechała tak ponad dziesięć kilometrów, można uznać, że umie już prowadzić samochód.
+⟦vốn là⟧: w formie ⟦vốn là⟧ + zdanie znaczy „pierwotnie był/było ~”.
+⟦Làng Vòng vốn là nơi làm cốm nổi tiếng nhất đất Thăng Long xưa.⟧ → Wieś Vòng była pierwotnie najsłynniejszym miejscem wyrobu cốm w dawnym Thăng Long. · ⟦Nhà tôi đang ở, trước đây vốn là một ngôi nhà gỗ.⟧ → Dom, w którym mieszkam, był pierwotnie drewniany. · ⟦Anh Park vốn là người thành phố.⟧ → Park pochodzi z miasta. · ⟦Nơi đây vốn là một bãi đất hoang.⟧ → To miejsce było pierwotnie nieużytkiem.
+⟦chính là⟧: „właśnie, dokładnie, nie kto inny jak” – stoi przed treścią, którą chcemy podkreślić.
+⟦Gửi tặng cốm Vòng đến với người thân chính là gửi hương vị mùa thu Hà Nội đến với họ.⟧ → Wysłać bliskim cốm z Vòng to właśnie wysłać im smak hanojskiej jesieni. · ⟦Cốm Vòng chính là một trong những đặc sản của Hà Nội.⟧ → Cốm z Vòng to właśnie jeden z przysmaków Hanoi. · ⟦Nơi đây chính là nơi tôi đã từng sống nhiều năm.⟧ → Właśnie tu mieszkałem przez wiele lat. · ⟦Chị Lee chính là người đến lớp sớm nhất.⟧ → To właśnie Lee przychodzi na zajęcia najwcześniej.
+@@ pdf-grammar-b7c402bb47445202#0
+=cs
+Gramatický výklad
+⟦vậy mà⟧: ve tvaru „A ⟦vậy mà⟧ B“ spojuje protikladné obsahy A a B; stojí před B – „a přesto, ale“.
+⟦Cây sầu riêng khẳng khiu, cao vút, cành thẳng; thiếu cái dáng cong, dáng nghiêng; lá nhỏ xanh vàng, hơi khép lại như lá héo. Vậy mà khi trái chín, hương tỏa ngạt ngào, vị ngọt đến đam mê.⟧ → Durianový strom je hubený a vysoký, s rovnými větvemi; chybí mu ladné ohnutí a náklon; listy jsou malé, žlutozelené, trochu svinuté jako zvadlé. A přesto, když plody dozrají, šíří omamnou vůni a jejich sladkost je vášnivá. · ⟦Trời hôm nay không có nắng vậy mà lại rất nóng.⟧ → Dnes nesvítí slunce, a přesto je velké horko. · ⟦Ông ấy nhiều tiền vậy mà chẳng bao giờ dám đi ăn đặc sản.⟧ → Má spoustu peněz, a přesto si nikdy nedopřeje speciality.
+⟦phát⟧ + (sloveso/přídavné jméno): vyjadřuje, že se projeví, dostaví stav vyjádřený slovesem či přídavným jménem („až ~, začít ~“).
+⟦Hương vị quyến rũ của nó khiến ai nghĩ đến cũng phát thèm.⟧ → Jeho svůdná chuť způsobí, že každý, kdo si na něj vzpomene, dostane chuť. · ⟦Ăn thịt mãi cũng phát chán.⟧ → Jíst pořád maso už omrzí. · ⟦Chẳng có việc gì làm cũng phát buồn.⟧ → Když nemáš co dělat, začneš se nudit. · ⟦Đi đêm một mình trong rừng thấy phát sợ.⟧ → Jít v noci sám lesem – to až nahání strach.
+⟦mỗi ... một⟧: ve tvaru ⟦mỗi A một B⟧ znamená „na každé A jedno B“.
+⟦Mỗi cuống hoa ra một trái.⟧ → Z každé stopky květu vyroste jeden plod. · ⟦Mỗi người được sử dụng một máy tính.⟧ → Každý může používat jeden počítač. · ⟦Mỗi người ngồi một bàn.⟧ → Každý sedí u jednoho stolu. · ⟦Mỗi tuần đi chợ một lần.⟧ → Jednou týdně chodím na trh.
+=zh_cn
+语法解说
+⟦vậy mà⟧：以“A ⟦vậy mà⟧ B”的形式连接相反的内容A和B，放在与A相反的B之前，意为“……却……、但是”。
+⟦Cây sầu riêng khẳng khiu, cao vút, cành thẳng; thiếu cái dáng cong, dáng nghiêng; lá nhỏ xanh vàng, hơi khép lại như lá héo. Vậy mà khi trái chín, hương tỏa ngạt ngào, vị ngọt đến đam mê.⟧ → 榴莲树瘦长高耸，枝干笔直，缺少弯曲、倾斜的姿态；叶子小而黄绿，微微合拢，像枯叶一样。可是果实成熟时，香气浓郁四溢，甜得令人着迷。 · ⟦Trời hôm nay không có nắng vậy mà lại rất nóng.⟧ → 今天没有太阳，却非常热。 · ⟦Ông ấy nhiều tiền vậy mà chẳng bao giờ dám đi ăn đặc sản.⟧ → 他那么有钱，却从来舍不得去吃特色菜。
+⟦phát⟧ +（动词／形容词）：以 ⟦phát⟧ + 动词／形容词 的形式，表示“动词／形容词所表达的状态出现、显露出来”。
+⟦Hương vị quyến rũ của nó khiến ai nghĩ đến cũng phát thèm.⟧ → 它诱人的味道让人一想到就馋。 · ⟦Ăn thịt mãi cũng phát chán.⟧ → 老吃肉也会吃腻。 · ⟦Chẳng có việc gì làm cũng phát buồn.⟧ → 没事可做也会闷得慌。 · ⟦Đi đêm một mình trong rừng thấy phát sợ.⟧ → 夜里一个人走在树林里，让人害怕。
+⟦mỗi ... một⟧：以 ⟦mỗi A một B⟧ 的形式，表示“每一个A，一个B”。
+⟦Mỗi cuống hoa ra một trái.⟧ → 每个花柄结一个果。 · ⟦Mỗi người được sử dụng một máy tính.⟧ → 每人可以使用一台电脑。 · ⟦Mỗi người ngồi một bàn.⟧ → 每人坐一张桌子。 · ⟦Mỗi tuần đi chợ một lần.⟧ → 每周去一次市场。
+=zh
+文法解說
+⟦vậy mà⟧：以「A ⟦vậy mà⟧ B」的形式連接相反的內容A和B，放在與A相反的B之前，意為「……卻……、但是」。
+⟦Cây sầu riêng khẳng khiu, cao vút, cành thẳng; thiếu cái dáng cong, dáng nghiêng; lá nhỏ xanh vàng, hơi khép lại như lá héo. Vậy mà khi trái chín, hương tỏa ngạt ngào, vị ngọt đến đam mê.⟧ → 榴槤樹瘦長高聳，枝幹筆直，缺少彎曲、傾斜的姿態；葉子小而黃綠，微微合攏，像枯葉一樣。可是果實成熟時，香氣濃郁四溢，甜得令人著迷。 · ⟦Trời hôm nay không có nắng vậy mà lại rất nóng.⟧ → 今天沒有太陽，卻非常熱。 · ⟦Ông ấy nhiều tiền vậy mà chẳng bao giờ dám đi ăn đặc sản.⟧ → 他那麼有錢，卻從來捨不得去吃特色菜。
+⟦phát⟧ +（動詞／形容詞）：以 ⟦phát⟧ + 動詞／形容詞 的形式，表示「動詞／形容詞所表達的狀態出現、顯露出來」。
+⟦Hương vị quyến rũ của nó khiến ai nghĩ đến cũng phát thèm.⟧ → 它誘人的味道讓人一想到就嘴饞。 · ⟦Ăn thịt mãi cũng phát chán.⟧ → 老是吃肉也會吃膩。 · ⟦Chẳng có việc gì làm cũng phát buồn.⟧ → 沒事可做也會悶得發慌。 · ⟦Đi đêm một mình trong rừng thấy phát sợ.⟧ → 夜裡一個人走在森林裡，讓人害怕。
+⟦mỗi ... một⟧：以 ⟦mỗi A một B⟧ 的形式，表示「每一個A，一個B」。
+⟦Mỗi cuống hoa ra một trái.⟧ → 每個花梗結一顆果實。 · ⟦Mỗi người được sử dụng một máy tính.⟧ → 每人可以使用一台電腦。 · ⟦Mỗi người ngồi một bàn.⟧ → 每人坐一張桌子。 · ⟦Mỗi tuần đi chợ một lần.⟧ → 每週去一次市場。
+=en
+Grammar notes
+⟦vậy mà⟧: in the form "A ⟦vậy mà⟧ B", links contrasting contents A and B; placed before B – "and yet, but".
+⟦Cây sầu riêng khẳng khiu, cao vút, cành thẳng; thiếu cái dáng cong, dáng nghiêng; lá nhỏ xanh vàng, hơi khép lại như lá héo. Vậy mà khi trái chín, hương tỏa ngạt ngào, vị ngọt đến đam mê.⟧ → The durian tree is scrawny and towering, with straight branches, lacking any curve or lean; its leaves are small and yellowish-green, slightly curled like withered leaves. And yet when the fruit ripens, its fragrance is intoxicating and its sweetness is addictive. · ⟦Trời hôm nay không có nắng vậy mà lại rất nóng.⟧ → There's no sun today, and yet it's very hot. · ⟦Ông ấy nhiều tiền vậy mà chẳng bao giờ dám đi ăn đặc sản.⟧ → He has so much money, yet he never lets himself go out for local specialities.
+⟦phát⟧ + (verb/adjective): expresses that the state denoted by the verb or adjective comes about or shows itself ("to start to feel ~, get ~").
+⟦Hương vị quyến rũ của nó khiến ai nghĩ đến cũng phát thèm.⟧ → Its alluring flavour makes anyone who thinks of it start craving it. · ⟦Ăn thịt mãi cũng phát chán.⟧ → Eating meat all the time gets boring. · ⟦Chẳng có việc gì làm cũng phát buồn.⟧ → Having nothing to do makes you feel down. · ⟦Đi đêm một mình trong rừng thấy phát sợ.⟧ → Walking alone in the forest at night gets scary.
+⟦mỗi ... một⟧: in the form ⟦mỗi A một B⟧, means "one B for each A".
+⟦Mỗi cuống hoa ra một trái.⟧ → Each flower stalk produces one fruit. · ⟦Mỗi người được sử dụng một máy tính.⟧ → Each person may use one computer. · ⟦Mỗi người ngồi một bàn.⟧ → Each person sits at one table. · ⟦Mỗi tuần đi chợ một lần.⟧ → Go to the market once a week.
+=fr
+Notes de grammaire
+⟦vậy mà⟧ : sous la forme « A ⟦vậy mà⟧ B », relie deux contenus opposés A et B ; se place devant B – « et pourtant, mais ».
+⟦Cây sầu riêng khẳng khiu, cao vút, cành thẳng; thiếu cái dáng cong, dáng nghiêng; lá nhỏ xanh vàng, hơi khép lại như lá héo. Vậy mà khi trái chín, hương tỏa ngạt ngào, vị ngọt đến đam mê.⟧ → Le durian est un arbre maigre et élancé, aux branches droites, sans courbe ni inclinaison gracieuse ; ses feuilles sont petites, vert-jaune, un peu recroquevillées comme fanées. Et pourtant, quand le fruit mûrit, son parfum est enivrant et sa douceur passionnante. · ⟦Trời hôm nay không có nắng vậy mà lại rất nóng.⟧ → Il n'y a pas de soleil aujourd'hui, et pourtant il fait très chaud. · ⟦Ông ấy nhiều tiền vậy mà chẳng bao giờ dám đi ăn đặc sản.⟧ → Il a beaucoup d'argent, et pourtant il ne s'offre jamais de spécialités.
+⟦phát⟧ + (verbe/adjectif) : exprime que l'état rendu par le verbe ou l'adjectif apparaît, se manifeste (« finir par ~, en devenir ~ »).
+⟦Hương vị quyến rũ của nó khiến ai nghĩ đến cũng phát thèm.⟧ → Sa saveur séduisante donne envie à quiconque y pense. · ⟦Ăn thịt mãi cũng phát chán.⟧ → Manger de la viande tout le temps finit par lasser. · ⟦Chẳng có việc gì làm cũng phát buồn.⟧ → À ne rien faire, on finit par s'ennuyer. · ⟦Đi đêm một mình trong rừng thấy phát sợ.⟧ → Marcher seul la nuit dans la forêt, ça fait peur.
+⟦mỗi ... một⟧ : sous la forme ⟦mỗi A một B⟧, signifie « un B pour chaque A ».
+⟦Mỗi cuống hoa ra một trái.⟧ → Chaque pédoncule donne un fruit. · ⟦Mỗi người được sử dụng một máy tính.⟧ → Chacun peut utiliser un ordinateur. · ⟦Mỗi người ngồi một bàn.⟧ → Chacun s'assoit à une table. · ⟦Mỗi tuần đi chợ một lần.⟧ → Aller au marché une fois par semaine.
+=de
+Grammatikerläuterungen
+⟦vậy mà⟧: in der Form „A ⟦vậy mà⟧ B“ verbindet es gegensätzliche Inhalte A und B; steht vor B – „und trotzdem, dennoch“.
+⟦Cây sầu riêng khẳng khiu, cao vút, cành thẳng; thiếu cái dáng cong, dáng nghiêng; lá nhỏ xanh vàng, hơi khép lại như lá héo. Vậy mà khi trái chín, hương tỏa ngạt ngào, vị ngọt đến đam mê.⟧ → Der Durianbaum ist hager und hochgewachsen, mit geraden Ästen, ohne jede Biegung oder Neigung; die Blätter sind klein, gelbgrün, leicht eingerollt wie welk. Und trotzdem verströmen die reifen Früchte einen betörenden Duft und eine leidenschaftliche Süße. · ⟦Trời hôm nay không có nắng vậy mà lại rất nóng.⟧ → Heute scheint keine Sonne, und trotzdem ist es sehr heiß. · ⟦Ông ấy nhiều tiền vậy mà chẳng bao giờ dám đi ăn đặc sản.⟧ → Er hat so viel Geld, gönnt sich aber nie Spezialitäten.
+⟦phát⟧ + (Verb/Adjektiv): drückt aus, dass der vom Verb bzw. Adjektiv bezeichnete Zustand eintritt oder sich zeigt („anfangen, ~ zu werden“).
+⟦Hương vị quyến rũ của nó khiến ai nghĩ đến cũng phát thèm.⟧ → Sein verführerischer Geschmack lässt jeden, der daran denkt, Appetit bekommen. · ⟦Ăn thịt mãi cũng phát chán.⟧ → Immer nur Fleisch essen wird langweilig. · ⟦Chẳng có việc gì làm cũng phát buồn.⟧ → Wenn man nichts zu tun hat, wird man trübsinnig. · ⟦Đi đêm một mình trong rừng thấy phát sợ.⟧ → Nachts allein durch den Wald zu gehen, macht einem Angst.
+⟦mỗi ... một⟧: in der Form ⟦mỗi A một B⟧ bedeutet es „je A ein B“.
+⟦Mỗi cuống hoa ra một trái.⟧ → Jeder Blütenstiel bringt eine Frucht hervor. · ⟦Mỗi người được sử dụng một máy tính.⟧ → Jeder darf einen Computer benutzen. · ⟦Mỗi người ngồi một bàn.⟧ → Jeder sitzt an einem Tisch. · ⟦Mỗi tuần đi chợ một lần.⟧ → Einmal pro Woche auf den Markt gehen.
+=hu
+Nyelvtani magyarázat
+⟦vậy mà⟧: „A ⟦vậy mà⟧ B” alakban az egymással ellentétes A és B tartalmat köti össze; B előtt áll – „mégis, pedig”.
+⟦Cây sầu riêng khẳng khiu, cao vút, cành thẳng; thiếu cái dáng cong, dáng nghiêng; lá nhỏ xanh vàng, hơi khép lại như lá héo. Vậy mà khi trái chín, hương tỏa ngạt ngào, vị ngọt đến đam mê.⟧ → A duriánfa sovány és magasra nyúló, egyenes ágú, hiányzik belőle minden hajlás és ív; levelei aprók, sárgászöldek, kissé összecsukódnak, mint a hervadt levél. Mégis, amikor a gyümölcs megérik, bódító illatot áraszt, és édessége szenvedélyt ébreszt. · ⟦Trời hôm nay không có nắng vậy mà lại rất nóng.⟧ → Ma nem süt a nap, mégis nagyon meleg van. · ⟦Ông ấy nhiều tiền vậy mà chẳng bao giờ dám đi ăn đặc sản.⟧ → Sok pénze van, mégsem engedi meg magának soha, hogy különlegességeket egyen.
+⟦phát⟧ + (ige/melléknév): azt fejezi ki, hogy az ige vagy melléknév által jelölt állapot megjelenik, jelentkezik („elkezd ~ni, ~vá válik”).
+⟦Hương vị quyến rũ của nó khiến ai nghĩ đến cũng phát thèm.⟧ → Csábító íze miatt bárkinek megjön rá az étvágya, aki csak gondol rá. · ⟦Ăn thịt mãi cũng phát chán.⟧ → Ha folyton húst eszel, megunod. · ⟦Chẳng có việc gì làm cũng phát buồn.⟧ → Ha nincs mit csinálni, elszomorodik az ember. · ⟦Đi đêm một mình trong rừng thấy phát sợ.⟧ → Éjjel egyedül menni az erdőben – az ember megijed.
+⟦mỗi ... một⟧: ⟦mỗi A một B⟧ alakban jelentése „minden A-ra egy B”.
+⟦Mỗi cuống hoa ra một trái.⟧ → Minden virágkocsányon egy gyümölcs nő. · ⟦Mỗi người được sử dụng một máy tính.⟧ → Mindenki egy számítógépet használhat. · ⟦Mỗi người ngồi một bàn.⟧ → Mindenki egy asztalnál ül. · ⟦Mỗi tuần đi chợ một lần.⟧ → Hetente egyszer piacra menni.
+=id
+Penjelasan tata bahasa
+⟦vậy mà⟧: dalam bentuk "A ⟦vậy mà⟧ B" menghubungkan isi A dan B yang berlawanan; diletakkan sebelum B – "namun, padahal, tetapi".
+⟦Cây sầu riêng khẳng khiu, cao vút, cành thẳng; thiếu cái dáng cong, dáng nghiêng; lá nhỏ xanh vàng, hơi khép lại như lá héo. Vậy mà khi trái chín, hương tỏa ngạt ngào, vị ngọt đến đam mê.⟧ → Pohon durian kurus menjulang, cabangnya lurus, tanpa lekuk atau condong; daunnya kecil hijau kekuningan, agak menguncup seperti daun layu. Namun ketika buahnya matang, harumnya semerbak memabukkan dan manisnya membuat ketagihan. · ⟦Trời hôm nay không có nắng vậy mà lại rất nóng.⟧ → Hari ini tidak ada matahari, namun sangat panas. · ⟦Ông ấy nhiều tiền vậy mà chẳng bao giờ dám đi ăn đặc sản.⟧ → Beliau banyak uang, tetapi tidak pernah berani makan makanan khas.
+⟦phát⟧ + (verba/adjektiva): menyatakan bahwa keadaan yang dinyatakan verba atau adjektiva muncul, timbul ("jadi ~").
+⟦Hương vị quyến rũ của nó khiến ai nghĩ đến cũng phát thèm.⟧ → Cita rasanya yang memikat membuat siapa pun yang memikirkannya jadi ngiler. · ⟦Ăn thịt mãi cũng phát chán.⟧ → Makan daging terus-menerus jadi bosan juga. · ⟦Chẳng có việc gì làm cũng phát buồn.⟧ → Tidak ada kerjaan membuat jadi murung. · ⟦Đi đêm một mình trong rừng thấy phát sợ.⟧ → Berjalan sendirian di hutan pada malam hari jadi takut.
+⟦mỗi ... một⟧: dalam bentuk ⟦mỗi A một B⟧ berarti "setiap A satu B".
+⟦Mỗi cuống hoa ra một trái.⟧ → Setiap tangkai bunga menghasilkan satu buah. · ⟦Mỗi người được sử dụng một máy tính.⟧ → Setiap orang boleh memakai satu komputer. · ⟦Mỗi người ngồi một bàn.⟧ → Setiap orang duduk di satu meja. · ⟦Mỗi tuần đi chợ một lần.⟧ → Seminggu sekali pergi ke pasar.
+=ja
+文法解説
+⟦vậy mà⟧：「A ⟦vậy mà⟧ B」の形で、AとBが相反する内容であるときにそれをつなぐため、Aと相反するBの前に使い、「～なのに、～だが、しかし」と訳されます。
+⟦Cây sầu riêng khẳng khiu, cao vút, cành thẳng; thiếu cái dáng cong, dáng nghiêng; lá nhỏ xanh vàng, hơi khép lại như lá héo. Vậy mà khi trái chín, hương tỏa ngạt ngào, vị ngọt đến đam mê.⟧ → ドリアンの木はひょろりと高く、枝はまっすぐで、曲がった姿や傾いた姿に欠け、葉は小さく黄緑色で、しおれた葉のように少し閉じている。それなのに実が熟すと、香りはむせ返るほど広がり、甘さはやみつきになるほどだ。 · ⟦Trời hôm nay không có nắng vậy mà lại rất nóng.⟧ → 今日は日が差していないのに、とても暑い。 · ⟦Ông ấy nhiều tiền vậy mà chẳng bao giờ dám đi ăn đặc sản.⟧ → 彼はお金がたくさんあるのに、名物料理を食べに行ったことは一度もない。
+⟦phát⟧ +（動詞／形容詞）：⟦phát⟧ + 動詞／形容詞 の形で、「動詞・形容詞の内容が現れる、表に出る」という意味で使います。
+⟦Hương vị quyến rũ của nó khiến ai nghĩ đến cũng phát thèm.⟧ → その魅惑的な味は、思い浮かべるだけで誰でも食べたくなる。 · ⟦Ăn thịt mãi cũng phát chán.⟧ → 肉ばかり食べていると飽きてくる。 · ⟦Chẳng có việc gì làm cũng phát buồn.⟧ → 何もすることがないと気がふさいでくる。 · ⟦Đi đêm một mình trong rừng thấy phát sợ.⟧ → 夜に一人で森を歩くと怖くなる。
+⟦mỗi ... một⟧：⟦mỗi A một B⟧ の形で「Aごとに一つのB」という意味で使われます。
+⟦Mỗi cuống hoa ra một trái.⟧ → 花の柄一つごとに実が一つなる。 · ⟦Mỗi người được sử dụng một máy tính.⟧ → 一人一台パソコンを使える。 · ⟦Mỗi người ngồi một bàn.⟧ → 一人一つの机に座る。 · ⟦Mỗi tuần đi chợ một lần.⟧ → 週に一度市場に行く。
+=pl
+Objaśnienia gramatyczne
+⟦vậy mà⟧: w formie „A ⟦vậy mà⟧ B” łączy przeciwstawne treści A i B; stoi przed B – „a jednak, mimo to”.
+⟦Cây sầu riêng khẳng khiu, cao vút, cành thẳng; thiếu cái dáng cong, dáng nghiêng; lá nhỏ xanh vàng, hơi khép lại như lá héo. Vậy mà khi trái chín, hương tỏa ngạt ngào, vị ngọt đến đam mê.⟧ → Drzewo durianowe jest chude i strzeliste, o prostych gałęziach, bez żadnego wdzięcznego wygięcia; liście ma małe, żółtozielone, lekko zwinięte jak zwiędłe. A jednak gdy owoce dojrzeją, roztaczają odurzający zapach i uzależniającą słodycz. · ⟦Trời hôm nay không có nắng vậy mà lại rất nóng.⟧ → Dziś nie ma słońca, a mimo to jest bardzo gorąco. · ⟦Ông ấy nhiều tiền vậy mà chẳng bao giờ dám đi ăn đặc sản.⟧ → Ma dużo pieniędzy, a nigdy nie pozwala sobie na lokalne przysmaki.
+⟦phát⟧ + (czasownik/przymiotnik): wyraża, że stan oznaczony czasownikiem lub przymiotnikiem pojawia się, ujawnia („zaczynać ~, robić się ~”).
+⟦Hương vị quyến rũ của nó khiến ai nghĩ đến cũng phát thèm.⟧ → Jego kuszący smak sprawia, że każdy, kto o nim pomyśli, nabiera apetytu. · ⟦Ăn thịt mãi cũng phát chán.⟧ → Jedzenie ciągle mięsa w końcu się nudzi. · ⟦Chẳng có việc gì làm cũng phát buồn.⟧ → Gdy nie ma nic do roboty, robi się smutno. · ⟦Đi đêm một mình trong rừng thấy phát sợ.⟧ → Iść nocą samemu przez las – robi się strasznie.
+⟦mỗi ... một⟧: w formie ⟦mỗi A một B⟧ znaczy „na każde A jedno B”.
+⟦Mỗi cuống hoa ra một trái.⟧ → Z każdej szypułki wyrasta jeden owoc. · ⟦Mỗi người được sử dụng một máy tính.⟧ → Każdy może korzystać z jednego komputera. · ⟦Mỗi người ngồi một bàn.⟧ → Każdy siedzi przy jednym stole. · ⟦Mỗi tuần đi chợ một lần.⟧ → Raz w tygodniu chodzić na targ.

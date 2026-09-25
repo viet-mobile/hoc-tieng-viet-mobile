@@ -1,0 +1,172 @@
+@@ pdf-grammar-70c62129312905f3#0
+=cs
+Gramatický výklad
+⟦tùy thuộc⟧ + podstatné jméno nebo ⟦tùy thuộc vào⟧ + podstatné jméno vyjadřuje podmínku: „záleží na ~, závisí na ~“.
+⟦Giá thuê cũng tùy thuộc vị trí và tiện nghi của ngôi nhà.⟧ → Výše nájmu závisí i na poloze a vybavení domu.
+⟦Việc thuê một tháng hay thuê lâu dài tùy thuộc vào sự thỏa thuận người thuê và chủ nhà.⟧ → Zda se pronajímá na měsíc, nebo dlouhodobě, záleží na dohodě mezi nájemcem a majitelem.
+⟦có A có B⟧ slouží k výčtu věcí, o kterých mluvíme: „je A, je i B“.
+⟦Có nhà cho thuê toàn bộ, có nhà cho thuê một tầng, có nhà cho thuê một phòng.⟧ → Jsou domy k pronájmu celé, jiné po patrech a jiné po jednotlivých pokojích. · ⟦Có nhà mặt phố, có nhà trong ngõ, có nhà chung cư.⟧ → Jsou domy do ulice, domy v uličkách i byty v panelácích. · ⟦Có nhà hai tầng, có nhà ba tầng, có nhà nhiều tầng hơn nữa.⟧ → Jsou dvoupatrové domy, třípatrové i ještě vyšší.
+⟦có thể A (cũng) có thể B⟧ znamená „může být A, může být i B“.
+⟦Bạn có thể thuê một năm, cũng có thể thuê một tháng hay hai tháng.⟧ → Můžete si pronajmout na rok, ale i na měsíc či dva. · ⟦Bạn có thể thuê nhà mặt phố, cũng có thể thuê nhà trong hẻm, trong ngõ.⟧ → Můžete si pronajmout dům do ulice, ale i dům v uličce.
+=zh_cn
+语法解说
+⟦tùy thuộc⟧ + 名词（短语）或 ⟦tùy thuộc vào⟧ + 名词（短语），表示条件，意为“取决于……、视……而定”。
+⟦Giá thuê cũng tùy thuộc vị trí và tiện nghi của ngôi nhà.⟧ → 租金也取决于房子的位置和设施。
+⟦Việc thuê một tháng hay thuê lâu dài tùy thuộc vào sự thỏa thuận người thuê và chủ nhà.⟧ → 租一个月还是长租，取决于租客和房东之间的协商。
+⟦có A có B⟧ 用于列举所提及的对象，意为“有A，也有B”。
+⟦Có nhà cho thuê toàn bộ, có nhà cho thuê một tầng, có nhà cho thuê một phòng.⟧ → 有整栋出租的，有按层出租的，也有单间出租的。 · ⟦Có nhà mặt phố, có nhà trong ngõ, có nhà chung cư.⟧ → 有临街的房子，有巷子里的房子，也有公寓。 · ⟦Có nhà hai tầng, có nhà ba tầng, có nhà nhiều tầng hơn nữa.⟧ → 有两层的，有三层的，还有更高的房子。
+⟦có thể A (cũng) có thể B⟧ 意为“可以A，也可以B”。
+⟦Bạn có thể thuê một năm, cũng có thể thuê một tháng hay hai tháng.⟧ → 你可以租一年，也可以租一两个月。 · ⟦Bạn có thể thuê nhà mặt phố, cũng có thể thuê nhà trong hẻm, trong ngõ.⟧ → 你可以租临街的房子，也可以租巷子里的房子。
+=zh
+文法解說
+⟦tùy thuộc⟧ + 名詞（片語）或 ⟦tùy thuộc vào⟧ + 名詞（片語），表示條件，意為「取決於……、視……而定」。
+⟦Giá thuê cũng tùy thuộc vị trí và tiện nghi của ngôi nhà.⟧ → 租金也取決於房子的位置和設備。
+⟦Việc thuê một tháng hay thuê lâu dài tùy thuộc vào sự thỏa thuận người thuê và chủ nhà.⟧ → 租一個月還是長租，取決於房客和房東之間的協議。
+⟦có A có B⟧ 用於列舉所提及的對象，意為「有A，也有B」。
+⟦Có nhà cho thuê toàn bộ, có nhà cho thuê một tầng, có nhà cho thuê một phòng.⟧ → 有整棟出租的，有按層出租的，也有單間出租的。 · ⟦Có nhà mặt phố, có nhà trong ngõ, có nhà chung cư.⟧ → 有臨街的房子，有巷子裡的房子，也有公寓大樓。 · ⟦Có nhà hai tầng, có nhà ba tầng, có nhà nhiều tầng hơn nữa.⟧ → 有兩層的，有三層的，還有更高的房子。
+⟦có thể A (cũng) có thể B⟧ 意為「可以A，也可以B」。
+⟦Bạn có thể thuê một năm, cũng có thể thuê một tháng hay hai tháng.⟧ → 你可以租一年，也可以租一兩個月。 · ⟦Bạn có thể thuê nhà mặt phố, cũng có thể thuê nhà trong hẻm, trong ngõ.⟧ → 你可以租臨街的房子，也可以租巷子裡的房子。
+=en
+Grammar notes
+⟦tùy thuộc⟧ + noun (phrase) or ⟦tùy thuộc vào⟧ + noun (phrase) expresses a condition: "depends on ~".
+⟦Giá thuê cũng tùy thuộc vị trí và tiện nghi của ngôi nhà.⟧ → The rent also depends on the location and amenities of the house.
+⟦Việc thuê một tháng hay thuê lâu dài tùy thuộc vào sự thỏa thuận người thuê và chủ nhà.⟧ → Whether you rent for a month or long-term depends on the agreement between tenant and landlord.
+⟦có A có B⟧ is used to list the things being talked about: "there is A, there is also B".
+⟦Có nhà cho thuê toàn bộ, có nhà cho thuê một tầng, có nhà cho thuê một phòng.⟧ → Some houses are let whole, some one floor at a time, and some one room at a time. · ⟦Có nhà mặt phố, có nhà trong ngõ, có nhà chung cư.⟧ → There are houses on the main street, houses down alleys and flats in apartment blocks. · ⟦Có nhà hai tầng, có nhà ba tầng, có nhà nhiều tầng hơn nữa.⟧ → There are two-storey houses, three-storey houses and even taller ones.
+⟦có thể A (cũng) có thể B⟧ means "you can A, and you can also B".
+⟦Bạn có thể thuê một năm, cũng có thể thuê một tháng hay hai tháng.⟧ → You can rent for a year, or just for one or two months. · ⟦Bạn có thể thuê nhà mặt phố, cũng có thể thuê nhà trong hẻm, trong ngõ.⟧ → You can rent a house on the street front, or one down a lane or alley.
+=fr
+Notes de grammaire
+⟦tùy thuộc⟧ + nom ou ⟦tùy thuộc vào⟧ + nom exprime une condition : « dépendre de ~ ».
+⟦Giá thuê cũng tùy thuộc vị trí và tiện nghi của ngôi nhà.⟧ → Le loyer dépend aussi de l'emplacement et du confort de la maison.
+⟦Việc thuê một tháng hay thuê lâu dài tùy thuộc vào sự thỏa thuận người thuê và chủ nhà.⟧ → Louer pour un mois ou à long terme dépend de l'accord entre le locataire et le propriétaire.
+⟦có A có B⟧ sert à énumérer les éléments dont on parle : « il y a A, il y a aussi B ».
+⟦Có nhà cho thuê toàn bộ, có nhà cho thuê một tầng, có nhà cho thuê một phòng.⟧ → Certaines maisons se louent entières, d'autres par étage, d'autres par chambre. · ⟦Có nhà mặt phố, có nhà trong ngõ, có nhà chung cư.⟧ → Il y a des maisons sur rue, des maisons dans les ruelles et des appartements en immeuble. · ⟦Có nhà hai tầng, có nhà ba tầng, có nhà nhiều tầng hơn nữa.⟧ → Il y a des maisons à deux étages, à trois étages et même plus.
+⟦có thể A (cũng) có thể B⟧ signifie « on peut A, on peut aussi B ».
+⟦Bạn có thể thuê một năm, cũng có thể thuê một tháng hay hai tháng.⟧ → Vous pouvez louer pour un an, ou aussi pour un ou deux mois. · ⟦Bạn có thể thuê nhà mặt phố, cũng có thể thuê nhà trong hẻm, trong ngõ.⟧ → Vous pouvez louer une maison sur rue, ou aussi une maison dans une ruelle.
+=de
+Grammatikerläuterungen
+⟦tùy thuộc⟧ + Nomen oder ⟦tùy thuộc vào⟧ + Nomen drückt eine Bedingung aus: „hängt ab von ~“.
+⟦Giá thuê cũng tùy thuộc vị trí và tiện nghi của ngôi nhà.⟧ → Die Miete hängt auch von Lage und Ausstattung des Hauses ab.
+⟦Việc thuê một tháng hay thuê lâu dài tùy thuộc vào sự thỏa thuận người thuê và chủ nhà.⟧ → Ob man für einen Monat oder langfristig mietet, hängt von der Vereinbarung zwischen Mieter und Vermieter ab.
+⟦có A có B⟧ dient zur Aufzählung: „es gibt A, es gibt auch B“.
+⟦Có nhà cho thuê toàn bộ, có nhà cho thuê một tầng, có nhà cho thuê một phòng.⟧ → Manche Häuser werden ganz vermietet, manche etagenweise, manche zimmerweise. · ⟦Có nhà mặt phố, có nhà trong ngõ, có nhà chung cư.⟧ → Es gibt Häuser an der Straße, Häuser in Gassen und Wohnungen in Wohnblocks. · ⟦Có nhà hai tầng, có nhà ba tầng, có nhà nhiều tầng hơn nữa.⟧ → Es gibt zweistöckige, dreistöckige und noch höhere Häuser.
+⟦có thể A (cũng) có thể B⟧ bedeutet „man kann A, man kann auch B“.
+⟦Bạn có thể thuê một năm, cũng có thể thuê một tháng hay hai tháng.⟧ → Sie können für ein Jahr mieten, aber auch für ein oder zwei Monate. · ⟦Bạn có thể thuê nhà mặt phố, cũng có thể thuê nhà trong hẻm, trong ngõ.⟧ → Sie können ein Haus an der Straße mieten, aber auch eines in einer Gasse.
+=hu
+Nyelvtani magyarázat
+A ⟦tùy thuộc⟧ + főnév vagy ⟦tùy thuộc vào⟧ + főnév feltételt fejez ki: „~tól függ”.
+⟦Giá thuê cũng tùy thuộc vị trí và tiện nghi của ngôi nhà.⟧ → A bérleti díj a ház fekvésétől és felszereltségétől is függ.
+⟦Việc thuê một tháng hay thuê lâu dài tùy thuộc vào sự thỏa thuận người thuê và chủ nhà.⟧ → Hogy egy hónapra vagy hosszú távra bérelünk, az a bérlő és a tulajdonos megállapodásától függ.
+A ⟦có A có B⟧ a szóban forgó dolgok felsorolására szolgál: „van A, van B is”.
+⟦Có nhà cho thuê toàn bộ, có nhà cho thuê một tầng, có nhà cho thuê một phòng.⟧ → Van egészben kiadó ház, van szintenként kiadó és van szobánként kiadó is. · ⟦Có nhà mặt phố, có nhà trong ngõ, có nhà chung cư.⟧ → Van utcafronti ház, sikátorbeli ház és társasházi lakás is. · ⟦Có nhà hai tầng, có nhà ba tầng, có nhà nhiều tầng hơn nữa.⟧ → Van kétszintes, háromszintes és még magasabb ház is.
+A ⟦có thể A (cũng) có thể B⟧ jelentése „lehet A, és lehet B is”.
+⟦Bạn có thể thuê một năm, cũng có thể thuê một tháng hay hai tháng.⟧ → Bérelhet egy évre, de egy-két hónapra is. · ⟦Bạn có thể thuê nhà mặt phố, cũng có thể thuê nhà trong hẻm, trong ngõ.⟧ → Bérelhet utcafronti házat, de sikátorbelit is.
+=id
+Penjelasan tata bahasa
+⟦tùy thuộc⟧ + nomina atau ⟦tùy thuộc vào⟧ + nomina menyatakan syarat: "tergantung pada ~".
+⟦Giá thuê cũng tùy thuộc vị trí và tiện nghi của ngôi nhà.⟧ → Harga sewa juga tergantung pada lokasi dan fasilitas rumah.
+⟦Việc thuê một tháng hay thuê lâu dài tùy thuộc vào sự thỏa thuận người thuê và chủ nhà.⟧ → Menyewa sebulan atau jangka panjang tergantung pada kesepakatan antara penyewa dan pemilik rumah.
+⟦có A có B⟧ dipakai untuk menyebutkan hal-hal yang dibicarakan: "ada A, ada juga B".
+⟦Có nhà cho thuê toàn bộ, có nhà cho thuê một tầng, có nhà cho thuê một phòng.⟧ → Ada rumah yang disewakan seluruhnya, ada yang per lantai, ada yang per kamar. · ⟦Có nhà mặt phố, có nhà trong ngõ, có nhà chung cư.⟧ → Ada rumah di tepi jalan raya, rumah di gang, dan apartemen. · ⟦Có nhà hai tầng, có nhà ba tầng, có nhà nhiều tầng hơn nữa.⟧ → Ada rumah dua lantai, tiga lantai, bahkan lebih.
+⟦có thể A (cũng) có thể B⟧ berarti "bisa A, bisa juga B".
+⟦Bạn có thể thuê một năm, cũng có thể thuê một tháng hay hai tháng.⟧ → Anda bisa menyewa setahun, bisa juga sebulan atau dua bulan. · ⟦Bạn có thể thuê nhà mặt phố, cũng có thể thuê nhà trong hẻm, trong ngõ.⟧ → Anda bisa menyewa rumah di tepi jalan, bisa juga rumah di gang.
+=ja
+文法解説
+⟦tùy thuộc⟧ + 名詞（句）または ⟦tùy thuộc vào⟧ + 名詞（句）の形で使い、「～によって決まる」「～に左右される」という条件の意味を表します。
+⟦Giá thuê cũng tùy thuộc vị trí và tiện nghi của ngôi nhà.⟧ → 家賃は家の立地と設備によっても決まる。
+⟦Việc thuê một tháng hay thuê lâu dài tùy thuộc vào sự thỏa thuận người thuê và chủ nhà.⟧ → 1か月借りるか長期で借りるかは、借り手と家主の協議によって決まる。
+⟦có A có B⟧ の形で、話題にする対象を列挙するために使い、「Aもあれば Bもある」という意味を表します。
+⟦Có nhà cho thuê toàn bộ, có nhà cho thuê một tầng, có nhà cho thuê một phòng.⟧ → 丸ごと貸す家もあれば、1フロアだけ貸す家、1部屋だけ貸す家もある。 · ⟦Có nhà mặt phố, có nhà trong ngõ, có nhà chung cư.⟧ → 通りに面した家もあれば、路地の中の家、マンションもある。 · ⟦Có nhà hai tầng, có nhà ba tầng, có nhà nhiều tầng hơn nữa.⟧ → 2階建ての家もあれば、3階建て、さらに高い家もある。
+⟦có thể A (cũng) có thể B⟧ の形で「Aすることもできるし、Bすることもできる」という意味で使われます。
+⟦Bạn có thể thuê một năm, cũng có thể thuê một tháng hay hai tháng.⟧ → 1年借りることもできるし、1か月や2か月借りることもできる。 · ⟦Bạn có thể thuê nhà mặt phố, cũng có thể thuê nhà trong hẻm, trong ngõ.⟧ → 通りに面した家を借りることもできるし、路地の中の家を借りることもできる。
+=pl
+Objaśnienia gramatyczne
+⟦tùy thuộc⟧ + rzeczownik lub ⟦tùy thuộc vào⟧ + rzeczownik wyraża warunek: „zależy od ~”.
+⟦Giá thuê cũng tùy thuộc vị trí và tiện nghi của ngôi nhà.⟧ → Wysokość czynszu zależy też od położenia i wyposażenia domu.
+⟦Việc thuê một tháng hay thuê lâu dài tùy thuộc vào sự thỏa thuận người thuê và chủ nhà.⟧ → To, czy wynajmuje się na miesiąc, czy długoterminowo, zależy od umowy między najemcą a właścicielem.
+⟦có A có B⟧ służy do wyliczania: „jest A, jest i B”.
+⟦Có nhà cho thuê toàn bộ, có nhà cho thuê một tầng, có nhà cho thuê một phòng.⟧ → Są domy wynajmowane w całości, na piętra i na pokoje. · ⟦Có nhà mặt phố, có nhà trong ngõ, có nhà chung cư.⟧ → Są domy przy ulicy, domy w zaułkach i mieszkania w blokach. · ⟦Có nhà hai tầng, có nhà ba tầng, có nhà nhiều tầng hơn nữa.⟧ → Są domy dwupiętrowe, trzypiętrowe i jeszcze wyższe.
+⟦có thể A (cũng) có thể B⟧ znaczy „można A, można też B”.
+⟦Bạn có thể thuê một năm, cũng có thể thuê một tháng hay hai tháng.⟧ → Można wynająć na rok, ale też na miesiąc czy dwa. · ⟦Bạn có thể thuê nhà mặt phố, cũng có thể thuê nhà trong hẻm, trong ngõ.⟧ → Można wynająć dom przy ulicy, ale też w zaułku.
+@@ pdf-grammar-6e38b40c6ed914a4#0
+=cs
+Gramatický výklad
+⟦tuy A nhưng B⟧ znamená „přestože A, (přece) B“.
+⟦Tuy quán vỉa hè nhỏ hẹp nhưng lại rẻ và ngon miệng⟧ → Pouliční bistra jsou sice malá a stísněná, ale levná a chutná. · ⟦Tuy là quán vỉa hè nhưng khách lúc nào cũng rất đông.⟧ → Přestože je to jen pouliční bistro, hostů je tu vždycky hodně. · ⟦Tuy trời mưa nhưng anh ấy vẫn đi ra phố.⟧ → Přestože pršelo, šel do města.
+⟦không những A mà còn B⟧ znamená „nejen A, ale i B“.
+⟦Đến quán vỉa hè, các bạn trẻ không những no bụng mà còn được nói chuyện vui vẻ, thoải mái.⟧ → V pouličních bistrech se mladí lidé nejen najedí, ale také si vesele a uvolněně popovídají. · ⟦Cửa hàng này không những giá đắt mà còn nấu nướng kém.⟧ → Tahle restaurace je nejen drahá, ale ještě špatně vaří.
+⟦so (với) A thì B⟧ znamená „ve srovnání s A je B“.
+⟦So với quán sành điệu thì quán vỉa hè không sang trọng bằng.⟧ → Ve srovnání s módními podniky nejsou pouliční bistra tak luxusní. · ⟦So với quán sang trọng thì quán vỉa hè giá đồ ăn rẻ hơn.⟧ → Ve srovnání s luxusními restauracemi je jídlo v pouličních bistrech levnější. · ⟦So với ngoài chợ thì hàng trong siêu thị giá bao giờ cũng cao hơn.⟧ → Ve srovnání s trhem je zboží v supermarketu vždycky dražší.
+=zh_cn
+语法解说
+⟦tuy A nhưng B⟧ 意为“虽然A，但是B”。
+⟦Tuy quán vỉa hè nhỏ hẹp nhưng lại rẻ và ngon miệng⟧ → 路边小店虽然狭小，却又便宜又好吃。 · ⟦Tuy là quán vỉa hè nhưng khách lúc nào cũng rất đông.⟧ → 虽然是路边小店，但客人总是很多。 · ⟦Tuy trời mưa nhưng anh ấy vẫn đi ra phố.⟧ → 虽然下雨，他还是上街去了。
+⟦không những A mà còn B⟧ 意为“不但A，而且B”。
+⟦Đến quán vỉa hè, các bạn trẻ không những no bụng mà còn được nói chuyện vui vẻ, thoải mái.⟧ → 到路边小店，年轻人不但能吃饱，还能愉快轻松地聊天。 · ⟦Cửa hàng này không những giá đắt mà còn nấu nướng kém.⟧ → 这家店不但价格贵，而且做菜也不好吃。
+⟦so (với) A thì B⟧ 意为“和A相比，B”。
+⟦So với quán sành điệu thì quán vỉa hè không sang trọng bằng.⟧ → 和时髦的餐厅相比，路边小店没那么高档。 · ⟦So với quán sang trọng thì quán vỉa hè giá đồ ăn rẻ hơn.⟧ → 和高档餐厅相比，路边小店的饭菜更便宜。 · ⟦So với ngoài chợ thì hàng trong siêu thị giá bao giờ cũng cao hơn.⟧ → 和市场相比，超市里的商品总是更贵。
+=zh
+文法解說
+⟦tuy A nhưng B⟧ 意為「雖然A，但是B」。
+⟦Tuy quán vỉa hè nhỏ hẹp nhưng lại rẻ và ngon miệng⟧ → 路邊小吃店雖然狹小，卻又便宜又好吃。 · ⟦Tuy là quán vỉa hè nhưng khách lúc nào cũng rất đông.⟧ → 雖然是路邊小吃店，但客人總是很多。 · ⟦Tuy trời mưa nhưng anh ấy vẫn đi ra phố.⟧ → 雖然下雨，他還是上街去了。
+⟦không những A mà còn B⟧ 意為「不但A，而且B」。
+⟦Đến quán vỉa hè, các bạn trẻ không những no bụng mà còn được nói chuyện vui vẻ, thoải mái.⟧ → 到路邊小吃店，年輕人不但能吃飽，還能愉快輕鬆地聊天。 · ⟦Cửa hàng này không những giá đắt mà còn nấu nướng kém.⟧ → 這家店不但價格貴，而且菜做得也不好。
+⟦so (với) A thì B⟧ 意為「和A相比，B」。
+⟦So với quán sành điệu thì quán vỉa hè không sang trọng bằng.⟧ → 和時髦的餐廳相比，路邊小吃店沒那麼高檔。 · ⟦So với quán sang trọng thì quán vỉa hè giá đồ ăn rẻ hơn.⟧ → 和高級餐廳相比，路邊小吃店的餐點更便宜。 · ⟦So với ngoài chợ thì hàng trong siêu thị giá bao giờ cũng cao hơn.⟧ → 和傳統市場相比，超市裡的商品總是比較貴。
+=en
+Grammar notes
+⟦tuy A nhưng B⟧ means "although A, B".
+⟦Tuy quán vỉa hè nhỏ hẹp nhưng lại rẻ và ngon miệng⟧ → Although pavement eateries are small and cramped, they're cheap and tasty. · ⟦Tuy là quán vỉa hè nhưng khách lúc nào cũng rất đông.⟧ → Although it's just a pavement eatery, it's always packed with customers. · ⟦Tuy trời mưa nhưng anh ấy vẫn đi ra phố.⟧ → Although it was raining, he still went out.
+⟦không những A mà còn B⟧ means "not only A but also B".
+⟦Đến quán vỉa hè, các bạn trẻ không những no bụng mà còn được nói chuyện vui vẻ, thoải mái.⟧ → At pavement eateries, young people not only fill their stomachs but can also chat happily and freely. · ⟦Cửa hàng này không những giá đắt mà còn nấu nướng kém.⟧ → This restaurant is not only expensive, the cooking is bad too.
+⟦so (với) A thì B⟧ means "compared with A, B".
+⟦So với quán sành điệu thì quán vỉa hè không sang trọng bằng.⟧ → Compared with trendy places, pavement eateries aren't as fancy. · ⟦So với quán sang trọng thì quán vỉa hè giá đồ ăn rẻ hơn.⟧ → Compared with upmarket restaurants, food at pavement eateries is cheaper. · ⟦So với ngoài chợ thì hàng trong siêu thị giá bao giờ cũng cao hơn.⟧ → Compared with the market, goods in the supermarket are always more expensive.
+=fr
+Notes de grammaire
+⟦tuy A nhưng B⟧ signifie « bien que A, B ».
+⟦Tuy quán vỉa hè nhỏ hẹp nhưng lại rẻ và ngon miệng⟧ → Bien que les gargotes de trottoir soient petites et étroites, elles sont bon marché et savoureuses. · ⟦Tuy là quán vỉa hè nhưng khách lúc nào cũng rất đông.⟧ → Bien que ce soit une simple gargote de trottoir, il y a toujours beaucoup de clients. · ⟦Tuy trời mưa nhưng anh ấy vẫn đi ra phố.⟧ → Bien qu'il pleuve, il est quand même sorti en ville.
+⟦không những A mà còn B⟧ signifie « non seulement A, mais aussi B ».
+⟦Đến quán vỉa hè, các bạn trẻ không những no bụng mà còn được nói chuyện vui vẻ, thoải mái.⟧ → Dans les gargotes de trottoir, les jeunes non seulement mangent à leur faim, mais peuvent aussi bavarder gaiement et librement. · ⟦Cửa hàng này không những giá đắt mà còn nấu nướng kém.⟧ → Ce restaurant est non seulement cher, mais en plus la cuisine y est mauvaise.
+⟦so (với) A thì B⟧ signifie « par rapport à A, B ».
+⟦So với quán sành điệu thì quán vỉa hè không sang trọng bằng.⟧ → Par rapport aux établissements branchés, les gargotes de trottoir sont moins chic. · ⟦So với quán sang trọng thì quán vỉa hè giá đồ ăn rẻ hơn.⟧ → Par rapport aux restaurants chic, la nourriture des gargotes est moins chère. · ⟦So với ngoài chợ thì hàng trong siêu thị giá bao giờ cũng cao hơn.⟧ → Par rapport au marché, les produits du supermarché sont toujours plus chers.
+=de
+Grammatikerläuterungen
+⟦tuy A nhưng B⟧ bedeutet „obwohl A, (trotzdem) B“.
+⟦Tuy quán vỉa hè nhỏ hẹp nhưng lại rẻ và ngon miệng⟧ → Obwohl Straßenlokale klein und eng sind, sind sie billig und lecker. · ⟦Tuy là quán vỉa hè nhưng khách lúc nào cũng rất đông.⟧ → Obwohl es nur ein Straßenlokal ist, sind immer viele Gäste da. · ⟦Tuy trời mưa nhưng anh ấy vẫn đi ra phố.⟧ → Obwohl es regnete, ging er trotzdem in die Stadt.
+⟦không những A mà còn B⟧ bedeutet „nicht nur A, sondern auch B“.
+⟦Đến quán vỉa hè, các bạn trẻ không những no bụng mà còn được nói chuyện vui vẻ, thoải mái.⟧ → In Straßenlokalen werden junge Leute nicht nur satt, sondern können sich auch fröhlich und ungezwungen unterhalten. · ⟦Cửa hàng này không những giá đắt mà còn nấu nướng kém.⟧ → Dieses Lokal ist nicht nur teuer, sondern kocht auch schlecht.
+⟦so (với) A thì B⟧ bedeutet „im Vergleich zu A ist B“.
+⟦So với quán sành điệu thì quán vỉa hè không sang trọng bằng.⟧ → Im Vergleich zu schicken Lokalen sind Straßenlokale nicht so vornehm. · ⟦So với quán sang trọng thì quán vỉa hè giá đồ ăn rẻ hơn.⟧ → Im Vergleich zu Nobelrestaurants ist das Essen in Straßenlokalen billiger. · ⟦So với ngoài chợ thì hàng trong siêu thị giá bao giờ cũng cao hơn.⟧ → Im Vergleich zum Markt sind die Waren im Supermarkt immer teurer.
+=hu
+Nyelvtani magyarázat
+A ⟦tuy A nhưng B⟧ jelentése „bár A, (mégis) B”.
+⟦Tuy quán vỉa hè nhỏ hẹp nhưng lại rẻ và ngon miệng⟧ → Bár a járdaszéli kifőzdék kicsik és szűkek, olcsók és ízletesek. · ⟦Tuy là quán vỉa hè nhưng khách lúc nào cũng rất đông.⟧ → Bár csak járdaszéli kifőzde, mindig sok a vendég. · ⟦Tuy trời mưa nhưng anh ấy vẫn đi ra phố.⟧ → Bár esett, mégis kiment a városba.
+A ⟦không những A mà còn B⟧ jelentése „nemcsak A, hanem B is”.
+⟦Đến quán vỉa hè, các bạn trẻ không những no bụng mà còn được nói chuyện vui vẻ, thoải mái.⟧ → A járdaszéli kifőzdékben a fiatalok nemcsak jóllaknak, hanem vidáman, kötetlenül beszélgethetnek is. · ⟦Cửa hàng này không những giá đắt mà còn nấu nướng kém.⟧ → Ez a hely nemcsak drága, hanem rosszul is főznek.
+A ⟦so (với) A thì B⟧ jelentése „A-hoz képest B”.
+⟦So với quán sành điệu thì quán vỉa hè không sang trọng bằng.⟧ → A divatos helyekhez képest a járdaszéli kifőzdék nem olyan elegánsak. · ⟦So với quán sang trọng thì quán vỉa hè giá đồ ăn rẻ hơn.⟧ → Az elegáns éttermekhez képest a járdaszéli kifőzdékben olcsóbb az étel. · ⟦So với ngoài chợ thì hàng trong siêu thị giá bao giờ cũng cao hơn.⟧ → A piachoz képest a szupermarketben mindig drágább az áru.
+=id
+Penjelasan tata bahasa
+⟦tuy A nhưng B⟧ berarti "meskipun A, tetapi B".
+⟦Tuy quán vỉa hè nhỏ hẹp nhưng lại rẻ và ngon miệng⟧ → Meskipun warung kaki lima sempit, tetapi murah dan enak. · ⟦Tuy là quán vỉa hè nhưng khách lúc nào cũng rất đông.⟧ → Meskipun hanya warung kaki lima, pembelinya selalu ramai. · ⟦Tuy trời mưa nhưng anh ấy vẫn đi ra phố.⟧ → Meskipun hujan, dia tetap pergi ke kota.
+⟦không những A mà còn B⟧ berarti "tidak hanya A, tetapi juga B".
+⟦Đến quán vỉa hè, các bạn trẻ không những no bụng mà còn được nói chuyện vui vẻ, thoải mái.⟧ → Di warung kaki lima, anak muda tidak hanya kenyang tetapi juga bisa mengobrol dengan gembira dan santai. · ⟦Cửa hàng này không những giá đắt mà còn nấu nướng kém.⟧ → Warung ini tidak hanya mahal, tetapi masakannya juga tidak enak.
+⟦so (với) A thì B⟧ berarti "dibandingkan dengan A, B".
+⟦So với quán sành điệu thì quán vỉa hè không sang trọng bằng.⟧ → Dibandingkan kafe yang trendi, warung kaki lima tidak semewah itu. · ⟦So với quán sang trọng thì quán vỉa hè giá đồ ăn rẻ hơn.⟧ → Dibandingkan restoran mewah, harga makanan di warung kaki lima lebih murah. · ⟦So với ngoài chợ thì hàng trong siêu thị giá bao giờ cũng cao hơn.⟧ → Dibandingkan di pasar, barang di supermarket selalu lebih mahal.
+=ja
+文法解説
+⟦tuy A nhưng B⟧ の形で使われ、「Aではあるが Bだ」という意味を表します。
+⟦Tuy quán vỉa hè nhỏ hẹp nhưng lại rẻ và ngon miệng⟧ → 屋台は狭いけれど、安くておいしい。 · ⟦Tuy là quán vỉa hè nhưng khách lúc nào cũng rất đông.⟧ → 屋台だけれど、いつも客でにぎわっている。 · ⟦Tuy trời mưa nhưng anh ấy vẫn đi ra phố.⟧ → 雨が降っていたが、彼はそれでも街に出かけた。
+⟦không những A mà còn B⟧ の形で「Aだけでなく Bも」という意味で使われます。
+⟦Đến quán vỉa hè, các bạn trẻ không những no bụng mà còn được nói chuyện vui vẻ, thoải mái.⟧ → 屋台に行けば、若者たちはお腹いっぱい食べられるだけでなく、楽しく気楽におしゃべりもできる。 · ⟦Cửa hàng này không những giá đắt mà còn nấu nướng kém.⟧ → この店は値段が高いだけでなく、料理もまずい。
+⟦so (với) A thì B⟧ の形で「Aと比べるとBだ」という意味で使われます。
+⟦So với quán sành điệu thì quán vỉa hè không sang trọng bằng.⟧ → おしゃれな店に比べると、屋台はそれほど豪華ではない。 · ⟦So với quán sang trọng thì quán vỉa hè giá đồ ăn rẻ hơn.⟧ → 高級店に比べると、屋台の料理は安い。 · ⟦So với ngoài chợ thì hàng trong siêu thị giá bao giờ cũng cao hơn.⟧ → 市場に比べると、スーパーの商品はいつも値段が高い。
+=pl
+Objaśnienia gramatyczne
+⟦tuy A nhưng B⟧ znaczy „chociaż A, to B”.
+⟦Tuy quán vỉa hè nhỏ hẹp nhưng lại rẻ và ngon miệng⟧ → Chociaż uliczne jadłodajnie są małe i ciasne, to tanie i smaczne. · ⟦Tuy là quán vỉa hè nhưng khách lúc nào cũng rất đông.⟧ → Chociaż to tylko uliczna jadłodajnia, zawsze jest tłum gości. · ⟦Tuy trời mưa nhưng anh ấy vẫn đi ra phố.⟧ → Chociaż padało, i tak wyszedł na miasto.
+⟦không những A mà còn B⟧ znaczy „nie tylko A, ale także B”.
+⟦Đến quán vỉa hè, các bạn trẻ không những no bụng mà còn được nói chuyện vui vẻ, thoải mái.⟧ → W ulicznych jadłodajniach młodzi nie tylko się najedzą, ale też mogą wesoło i swobodnie porozmawiać. · ⟦Cửa hàng này không những giá đắt mà còn nấu nướng kém.⟧ → Ten lokal jest nie tylko drogi, ale jeszcze kiepsko gotują.
+⟦so (với) A thì B⟧ znaczy „w porównaniu z A, B”.
+⟦So với quán sành điệu thì quán vỉa hè không sang trọng bằng.⟧ → W porównaniu z modnymi lokalami uliczne jadłodajnie nie są tak eleganckie. · ⟦So với quán sang trọng thì quán vỉa hè giá đồ ăn rẻ hơn.⟧ → W porównaniu z eleganckimi restauracjami jedzenie w ulicznych jadłodajniach jest tańsze. · ⟦So với ngoài chợ thì hàng trong siêu thị giá bao giờ cũng cao hơn.⟧ → W porównaniu z targiem towary w supermarkecie są zawsze droższe.

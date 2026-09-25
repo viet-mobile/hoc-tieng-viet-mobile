@@ -1,0 +1,131 @@
+@@ pdf-grammar-4421a8eef2e3a5ed#0
+=cs
+Klíčové výrazy: ⟦hồi⟧ / ⟦Thế thì còn gì bằng nữa⟧
+⟦hồi⟧ se obvykle používá, když mluvíme o něčem, co se stalo v minulosti, a znamená „když, v době, kdy ~“.
+❶ ⟦Hồi còn là học sinh cấp 3, em đã thường xuyên đến công viên đó.⟧ — Když jsem chodila na střední školu, chodila jsem často do toho parku.
+❷ Ⓐ ⟦Chị và anh Dũng biết nhau lâu chưa?⟧ — Znáte se s Dũngem dlouho? Ⓑ ⟦Chị biết bạn ấy từ hồi còn nhỏ.⟧ — Znám ho od dětství.
+⟦Thế thì còn gì bằng nữa⟧ vyjadřuje, že lepší to být nemůže: „tak to si nemůžu přát nic lepšího“.
+❶ Ⓐ ⟦Khách sẽ được đi du lịch trong những điều kiện thuận tiện nhất.⟧ — Budete cestovat za těch nejvýhodnějších podmínek. Ⓑ ⟦Thế à? Thế thì còn gì bằng nữa.⟧ — Opravdu? Tak to si nemůžu přát nic lepšího.
+❷ Ⓐ ⟦Sau vài tuần nữa, mọi việc sẽ trở lại bình thường.⟧ — Za pár týdnů se všechno vrátí do normálu. Ⓑ ⟦Thật à? Thế thì còn gì bằng nữa.⟧ — Opravdu? To by bylo úplně nejlepší.
+Procvičování 3 — spojte vhodné části a veďte rozhovor podle vzoru: ① ⟦nấu phở⟧ (vařit phở) – Ⓑ ⟦cách nấu từ cô chủ nhà⟧ (postup od bytné) – ③ ⟦còn du học ở Việt Nam⟧ (když studoval ve Vietnamu) | ② ⟦chơi piano⟧ (hrát na klavír) – Ⓐ ⟦mấy năm⟧ (několik let) – ② ⟦còn là học sinh cấp 1⟧ (když chodil na základní školu) | ③ ⟦nói tiếng Pháp⟧ (mluvit francouzsky) – Ⓒ ⟦ở trung tâm ngoại ngữ⟧ (v jazykové škole) – ① ⟦còn làm việc ở Pháp⟧ (když pracoval ve Francii)
+Vzor (②–Ⓐ–②): Ⓐ ⟦Anh biết chơi piano à? Anh đã học khi nào?⟧ — Ty umíš hrát na klavír? Kdy ses to naučil? Ⓑ ⟦Anh đã học mấy năm hồi còn là học sinh cấp 1.⟧ — Učil jsem se několik let, když jsem chodil na základní školu.
+Procvičování 4 — spojte vhodné části a veďte rozhovor podle vzoru: ① ⟦có bạn gái⟧ (mít přítelkyni) → Ⓐ ⟦bạn gái rất hiền và xinh đẹp⟧ (velmi milá a hezká dívka) | ② ⟦tìm được nhà mới⟧ (najít nový byt) → Ⓑ ⟦ngôi nhà giá rẻ với đầy đủ tiện nghi⟧ (levný a plně vybavený dům) | ③ ⟦tuyển phiên dịch viên⟧ (přijmout tlumočníka) → Ⓒ ⟦người dịch tốt và có nhiều kinh nghiệm⟧ (dobrý a zkušený překladatel)
+Vzor (①–Ⓐ): Ⓐ ⟦Em có bạn gái chưa?⟧ — Máš už přítelkyni? Ⓑ ⟦Chưa ạ. Chị giới thiệu giúp em, được không?⟧ — Ještě ne. Mohla bys mi nějakou představit? Ⓐ ⟦Được. Chị sẽ giới thiệu cho em một bạn gái rất hiền và xinh đẹp.⟧ — Dobře. Představím ti jednu velmi milou a hezkou dívku. Ⓑ ⟦Thế thì còn gì bằng nữa. Em cảm ơn chị.⟧ — Tak to si nemůžu přát nic lepšího. Děkuju.
+Nová slovíčka: ⟦cấp 3⟧ střední škola | ⟦cấp 1⟧ základní škola (1. stupeň) | ⟦đầy đủ⟧ plný, dostatečný | ⟦tuyển⟧ vybírat, přijímat (zaměstnance) | ⟦phiên dịch viên⟧ tlumočník, překladatel
+=zh_cn
+核心表达：⟦hồi⟧ / ⟦Thế thì còn gì bằng nữa⟧
+⟦hồi⟧ 通常用于讲述过去发生的事，意为“……的时候”。
+❶ ⟦Hồi còn là học sinh cấp 3, em đã thường xuyên đến công viên đó.⟧ —— 我上高中的时候经常去那个公园。
+❷ Ⓐ ⟦Chị và anh Dũng biết nhau lâu chưa?⟧ —— 你和勇哥认识很久了吗？ Ⓑ ⟦Chị biết bạn ấy từ hồi còn nhỏ.⟧ —— 我从小就认识他。
+⟦Thế thì còn gì bằng nữa⟧ 表示再好不过的状态，意为“那就再好不过了”。
+❶ Ⓐ ⟦Khách sẽ được đi du lịch trong những điều kiện thuận tiện nhất.⟧ —— 您将在最便利的条件下旅行。 Ⓑ ⟦Thế à? Thế thì còn gì bằng nữa.⟧ —— 是吗？那就再好不过了。
+❷ Ⓐ ⟦Sau vài tuần nữa, mọi việc sẽ trở lại bình thường.⟧ —— 再过几周，一切都会恢复正常。 Ⓑ ⟦Thật à? Thế thì còn gì bằng nữa.⟧ —— 真的吗？那就太好了。
+句型练习3 —— 找出相应内容连线，然后仿照范例对话：① ⟦nấu phở⟧（煮河粉）– Ⓑ ⟦cách nấu từ cô chủ nhà⟧（跟房东学的做法）– ③ ⟦còn du học ở Việt Nam⟧（在越南留学时）| ② ⟦chơi piano⟧（弹钢琴）– Ⓐ ⟦mấy năm⟧（几年）– ② ⟦còn là học sinh cấp 1⟧（上小学时）| ③ ⟦nói tiếng Pháp⟧（说法语）– Ⓒ ⟦ở trung tâm ngoại ngữ⟧（在外语中心）– ① ⟦còn làm việc ở Pháp⟧（在法国工作时）
+范例（②–Ⓐ–②）：Ⓐ ⟦Anh biết chơi piano à? Anh đã học khi nào?⟧ —— 你会弹钢琴啊？什么时候学的？ Ⓑ ⟦Anh đã học mấy năm hồi còn là học sinh cấp 1.⟧ —— 我上小学的时候学了几年。
+句型练习4 —— 找出相应内容连线，然后仿照范例对话：① ⟦có bạn gái⟧（有女朋友）→ Ⓐ ⟦bạn gái rất hiền và xinh đẹp⟧（很温柔漂亮的女孩）| ② ⟦tìm được nhà mới⟧（找到新房子）→ Ⓑ ⟦ngôi nhà giá rẻ với đầy đủ tiện nghi⟧（价格便宜、设施齐全的房子）| ③ ⟦tuyển phiên dịch viên⟧（招聘翻译）→ Ⓒ ⟦người dịch tốt và có nhiều kinh nghiệm⟧（翻译得好又经验丰富的人）
+范例（①–Ⓐ）：Ⓐ ⟦Em có bạn gái chưa?⟧ —— 你有女朋友了吗？ Ⓑ ⟦Chưa ạ. Chị giới thiệu giúp em, được không?⟧ —— 还没有。姐帮我介绍一个好吗？ Ⓐ ⟦Được. Chị sẽ giới thiệu cho em một bạn gái rất hiền và xinh đẹp.⟧ —— 好。我给你介绍一个很温柔漂亮的女孩。 Ⓑ ⟦Thế thì còn gì bằng nữa. Em cảm ơn chị.⟧ —— 那就再好不过了。谢谢姐。
+新单词：⟦cấp 3⟧ 高中 | ⟦cấp 1⟧ 小学 | ⟦đầy đủ⟧ 充足、齐全 | ⟦tuyển⟧ 招聘、选拔 | ⟦phiên dịch viên⟧ 翻译员
+=zh
+核心表達：⟦hồi⟧ / ⟦Thế thì còn gì bằng nữa⟧
+⟦hồi⟧ 通常用於講述過去發生的事，意為「……的時候」。
+❶ ⟦Hồi còn là học sinh cấp 3, em đã thường xuyên đến công viên đó.⟧ —— 我讀高中的時候常去那個公園。
+❷ Ⓐ ⟦Chị và anh Dũng biết nhau lâu chưa?⟧ —— 妳和勇哥認識很久了嗎？ Ⓑ ⟦Chị biết bạn ấy từ hồi còn nhỏ.⟧ —— 我從小就認識他。
+⟦Thế thì còn gì bằng nữa⟧ 表示再好不過的狀態，意為「那就再好不過了」。
+❶ Ⓐ ⟦Khách sẽ được đi du lịch trong những điều kiện thuận tiện nhất.⟧ —— 您將在最便利的條件下旅遊。 Ⓑ ⟦Thế à? Thế thì còn gì bằng nữa.⟧ —— 是嗎？那就再好不過了。
+❷ Ⓐ ⟦Sau vài tuần nữa, mọi việc sẽ trở lại bình thường.⟧ —— 再過幾週，一切都會恢復正常。 Ⓑ ⟦Thật à? Thế thì còn gì bằng nữa.⟧ —— 真的嗎？那就太好了。
+句型練習3 —— 找出相應內容連線，然後仿照範例對話：① ⟦nấu phở⟧（煮河粉）– Ⓑ ⟦cách nấu từ cô chủ nhà⟧（跟房東學的做法）– ③ ⟦còn du học ở Việt Nam⟧（在越南留學時）| ② ⟦chơi piano⟧（彈鋼琴）– Ⓐ ⟦mấy năm⟧（幾年）– ② ⟦còn là học sinh cấp 1⟧（讀小學時）| ③ ⟦nói tiếng Pháp⟧（說法語）– Ⓒ ⟦ở trung tâm ngoại ngữ⟧（在外語中心）– ① ⟦còn làm việc ở Pháp⟧（在法國工作時）
+範例（②–Ⓐ–②）：Ⓐ ⟦Anh biết chơi piano à? Anh đã học khi nào?⟧ —— 你會彈鋼琴啊？什麼時候學的？ Ⓑ ⟦Anh đã học mấy năm hồi còn là học sinh cấp 1.⟧ —— 我讀小學的時候學了幾年。
+句型練習4 —— 找出相應內容連線，然後仿照範例對話：① ⟦có bạn gái⟧（有女朋友）→ Ⓐ ⟦bạn gái rất hiền và xinh đẹp⟧（很溫柔漂亮的女孩）| ② ⟦tìm được nhà mới⟧（找到新房子）→ Ⓑ ⟦ngôi nhà giá rẻ với đầy đủ tiện nghi⟧（價格便宜、設備齊全的房子）| ③ ⟦tuyển phiên dịch viên⟧（招募口譯員）→ Ⓒ ⟦người dịch tốt và có nhiều kinh nghiệm⟧（翻譯得好又經驗豐富的人）
+範例（①–Ⓐ）：Ⓐ ⟦Em có bạn gái chưa?⟧ —— 你有女朋友了嗎？ Ⓑ ⟦Chưa ạ. Chị giới thiệu giúp em, được không?⟧ —— 還沒有。姊幫我介紹一個好嗎？ Ⓐ ⟦Được. Chị sẽ giới thiệu cho em một bạn gái rất hiền và xinh đẹp.⟧ —— 好。我幫你介紹一個很溫柔漂亮的女孩。 Ⓑ ⟦Thế thì còn gì bằng nữa. Em cảm ơn chị.⟧ —— 那就再好不過了。謝謝姊。
+新單字：⟦cấp 3⟧ 高中 | ⟦cấp 1⟧ 小學 | ⟦đầy đủ⟧ 充足、齊全 | ⟦tuyển⟧ 招募、選拔 | ⟦phiên dịch viên⟧ 口譯員、翻譯員
+=en
+Key expressions: ⟦hồi⟧ / ⟦Thế thì còn gì bằng nữa⟧
+⟦hồi⟧ is usually used when talking about the past and means "when, back when ~".
+❶ ⟦Hồi còn là học sinh cấp 3, em đã thường xuyên đến công viên đó.⟧ — When I was at high school, I often went to that park.
+❷ Ⓐ ⟦Chị và anh Dũng biết nhau lâu chưa?⟧ — Have you and Dũng known each other long? Ⓑ ⟦Chị biết bạn ấy từ hồi còn nhỏ.⟧ — I've known him since we were little.
+⟦Thế thì còn gì bằng nữa⟧ expresses that things couldn't be better: "then I couldn't ask for more".
+❶ Ⓐ ⟦Khách sẽ được đi du lịch trong những điều kiện thuận tiện nhất.⟧ — You'll travel under the most convenient conditions. Ⓑ ⟦Thế à? Thế thì còn gì bằng nữa.⟧ — Really? Then I couldn't ask for more.
+❷ Ⓐ ⟦Sau vài tuần nữa, mọi việc sẽ trở lại bình thường.⟧ — In a few weeks everything will be back to normal. Ⓑ ⟦Thật à? Thế thì còn gì bằng nữa.⟧ — Really? That would be perfect.
+Pattern practice 3 — match the parts, then talk as in the model: ① ⟦nấu phở⟧ (cook phở) – Ⓑ ⟦cách nấu từ cô chủ nhà⟧ (the recipe from the landlady) – ③ ⟦còn du học ở Việt Nam⟧ (when studying in Vietnam) | ② ⟦chơi piano⟧ (play the piano) – Ⓐ ⟦mấy năm⟧ (for a few years) – ② ⟦còn là học sinh cấp 1⟧ (at primary school) | ③ ⟦nói tiếng Pháp⟧ (speak French) – Ⓒ ⟦ở trung tâm ngoại ngữ⟧ (at a language centre) – ① ⟦còn làm việc ở Pháp⟧ (when working in France)
+Model (②–Ⓐ–②): Ⓐ ⟦Anh biết chơi piano à? Anh đã học khi nào?⟧ — You can play the piano? When did you learn? Ⓑ ⟦Anh đã học mấy năm hồi còn là học sinh cấp 1.⟧ — I learned for a few years when I was at primary school.
+Pattern practice 4 — match the parts, then talk as in the model: ① ⟦có bạn gái⟧ (have a girlfriend) → Ⓐ ⟦bạn gái rất hiền và xinh đẹp⟧ (a very sweet, pretty girl) | ② ⟦tìm được nhà mới⟧ (find a new home) → Ⓑ ⟦ngôi nhà giá rẻ với đầy đủ tiện nghi⟧ (a cheap, fully equipped house) | ③ ⟦tuyển phiên dịch viên⟧ (hire an interpreter) → Ⓒ ⟦người dịch tốt và có nhiều kinh nghiệm⟧ (a good, experienced translator)
+Model (①–Ⓐ): Ⓐ ⟦Em có bạn gái chưa?⟧ — Do you have a girlfriend yet? Ⓑ ⟦Chưa ạ. Chị giới thiệu giúp em, được không?⟧ — Not yet. Could you introduce me to someone? Ⓐ ⟦Được. Chị sẽ giới thiệu cho em một bạn gái rất hiền và xinh đẹp.⟧ — Sure. I'll introduce you to a very sweet, pretty girl. Ⓑ ⟦Thế thì còn gì bằng nữa. Em cảm ơn chị.⟧ — I couldn't ask for more. Thank you.
+New words: ⟦cấp 3⟧ high school | ⟦cấp 1⟧ primary school | ⟦đầy đủ⟧ full, complete | ⟦tuyển⟧ to recruit, select | ⟦phiên dịch viên⟧ interpreter, translator
+=fr
+Expressions clés : ⟦hồi⟧ / ⟦Thế thì còn gì bằng nữa⟧
+⟦hồi⟧ s'emploie généralement pour parler d'événements passés et signifie « quand, à l'époque où ~ ».
+❶ ⟦Hồi còn là học sinh cấp 3, em đã thường xuyên đến công viên đó.⟧ — Quand j'étais au lycée, j'allais souvent dans ce parc.
+❷ Ⓐ ⟦Chị và anh Dũng biết nhau lâu chưa?⟧ — Tu connais Dũng depuis longtemps ? Ⓑ ⟦Chị biết bạn ấy từ hồi còn nhỏ.⟧ — Je le connais depuis que je suis petite.
+⟦Thế thì còn gì bằng nữa⟧ exprime un état idéal : « alors, je ne pourrais rêver mieux ».
+❶ Ⓐ ⟦Khách sẽ được đi du lịch trong những điều kiện thuận tiện nhất.⟧ — Vous voyagerez dans les conditions les plus favorables. Ⓑ ⟦Thế à? Thế thì còn gì bằng nữa.⟧ — Vraiment ? Alors je ne pourrais rêver mieux.
+❷ Ⓐ ⟦Sau vài tuần nữa, mọi việc sẽ trở lại bình thường.⟧ — Dans quelques semaines, tout rentrera dans l'ordre. Ⓑ ⟦Thật à? Thế thì còn gì bằng nữa.⟧ — C'est vrai ? Ce serait parfait.
+Exercice 3 — reliez les éléments, puis dialoguez comme dans le modèle : ① ⟦nấu phở⟧ (préparer le phở) – Ⓑ ⟦cách nấu từ cô chủ nhà⟧ (la recette de la propriétaire) – ③ ⟦còn du học ở Việt Nam⟧ (pendant ses études au Vietnam) | ② ⟦chơi piano⟧ (jouer du piano) – Ⓐ ⟦mấy năm⟧ (quelques années) – ② ⟦còn là học sinh cấp 1⟧ (à l'école primaire) | ③ ⟦nói tiếng Pháp⟧ (parler français) – Ⓒ ⟦ở trung tâm ngoại ngữ⟧ (dans un centre de langues) – ① ⟦còn làm việc ở Pháp⟧ (quand il travaillait en France)
+Modèle (②–Ⓐ–②) : Ⓐ ⟦Anh biết chơi piano à? Anh đã học khi nào?⟧ — Tu sais jouer du piano ? Tu as appris quand ? Ⓑ ⟦Anh đã học mấy năm hồi còn là học sinh cấp 1.⟧ — J'ai pris des cours pendant quelques années quand j'étais à l'école primaire.
+Exercice 4 — reliez les éléments, puis dialoguez comme dans le modèle : ① ⟦có bạn gái⟧ (avoir une petite amie) → Ⓐ ⟦bạn gái rất hiền và xinh đẹp⟧ (une fille très douce et jolie) | ② ⟦tìm được nhà mới⟧ (trouver un nouveau logement) → Ⓑ ⟦ngôi nhà giá rẻ với đầy đủ tiện nghi⟧ (une maison bon marché tout équipée) | ③ ⟦tuyển phiên dịch viên⟧ (recruter un interprète) → Ⓒ ⟦người dịch tốt và có nhiều kinh nghiệm⟧ (un bon traducteur expérimenté)
+Modèle (①–Ⓐ) : Ⓐ ⟦Em có bạn gái chưa?⟧ — Tu as une petite amie ? Ⓑ ⟦Chưa ạ. Chị giới thiệu giúp em, được không?⟧ — Pas encore. Tu pourrais m'en présenter une ? Ⓐ ⟦Được. Chị sẽ giới thiệu cho em một bạn gái rất hiền và xinh đẹp.⟧ — D'accord. Je vais te présenter une fille très douce et jolie. Ⓑ ⟦Thế thì còn gì bằng nữa. Em cảm ơn chị.⟧ — Je ne pourrais rêver mieux. Merci.
+Nouveaux mots : ⟦cấp 3⟧ lycée | ⟦cấp 1⟧ école primaire | ⟦đầy đủ⟧ complet, suffisant | ⟦tuyển⟧ recruter, sélectionner | ⟦phiên dịch viên⟧ interprète, traducteur
+=de
+Schlüsselausdrücke: ⟦hồi⟧ / ⟦Thế thì còn gì bằng nữa⟧
+⟦hồi⟧ wird meist verwendet, wenn man über Vergangenes spricht, und bedeutet „als, zu der Zeit, als ~“.
+❶ ⟦Hồi còn là học sinh cấp 3, em đã thường xuyên đến công viên đó.⟧ — Als ich in der Oberstufe war, bin ich oft in den Park gegangen.
+❷ Ⓐ ⟦Chị và anh Dũng biết nhau lâu chưa?⟧ — Kennst du Dũng schon lange? Ⓑ ⟦Chị biết bạn ấy từ hồi còn nhỏ.⟧ — Ich kenne ihn seit meiner Kindheit.
+⟦Thế thì còn gì bằng nữa⟧ drückt einen Zustand aus, der nicht besser sein könnte: „dann könnte ich mir nichts Besseres wünschen“.
+❶ Ⓐ ⟦Khách sẽ được đi du lịch trong những điều kiện thuận tiện nhất.⟧ — Sie reisen zu den günstigsten Bedingungen. Ⓑ ⟦Thế à? Thế thì còn gì bằng nữa.⟧ — Wirklich? Dann könnte ich mir nichts Besseres wünschen.
+❷ Ⓐ ⟦Sau vài tuần nữa, mọi việc sẽ trở lại bình thường.⟧ — In ein paar Wochen ist alles wieder normal. Ⓑ ⟦Thật à? Thế thì còn gì bằng nữa.⟧ — Echt? Das wäre ja perfekt.
+Übung 3 — passende Teile verbinden, dann wie im Muster sprechen: ① ⟦nấu phở⟧ (Phở kochen) – Ⓑ ⟦cách nấu từ cô chủ nhà⟧ (das Rezept von der Vermieterin) – ③ ⟦còn du học ở Việt Nam⟧ (während des Studiums in Vietnam) | ② ⟦chơi piano⟧ (Klavier spielen) – Ⓐ ⟦mấy năm⟧ (ein paar Jahre) – ② ⟦còn là học sinh cấp 1⟧ (in der Grundschulzeit) | ③ ⟦nói tiếng Pháp⟧ (Französisch sprechen) – Ⓒ ⟦ở trung tâm ngoại ngữ⟧ (in einer Sprachschule) – ① ⟦còn làm việc ở Pháp⟧ (als er in Frankreich arbeitete)
+Muster (②–Ⓐ–②): Ⓐ ⟦Anh biết chơi piano à? Anh đã học khi nào?⟧ — Du kannst Klavier spielen? Wann hast du das gelernt? Ⓑ ⟦Anh đã học mấy năm hồi còn là học sinh cấp 1.⟧ — Ich habe ein paar Jahre gelernt, als ich in der Grundschule war.
+Übung 4 — passende Teile verbinden, dann wie im Muster sprechen: ① ⟦có bạn gái⟧ (eine Freundin haben) → Ⓐ ⟦bạn gái rất hiền và xinh đẹp⟧ (ein sehr liebes, hübsches Mädchen) | ② ⟦tìm được nhà mới⟧ (eine neue Wohnung finden) → Ⓑ ⟦ngôi nhà giá rẻ với đầy đủ tiện nghi⟧ (ein günstiges, voll ausgestattetes Haus) | ③ ⟦tuyển phiên dịch viên⟧ (einen Dolmetscher einstellen) → Ⓒ ⟦người dịch tốt và có nhiều kinh nghiệm⟧ (ein guter, erfahrener Übersetzer)
+Muster (①–Ⓐ): Ⓐ ⟦Em có bạn gái chưa?⟧ — Hast du schon eine Freundin? Ⓑ ⟦Chưa ạ. Chị giới thiệu giúp em, được không?⟧ — Noch nicht. Kannst du mir jemanden vorstellen? Ⓐ ⟦Được. Chị sẽ giới thiệu cho em một bạn gái rất hiền và xinh đẹp.⟧ — Klar. Ich stelle dir ein sehr liebes, hübsches Mädchen vor. Ⓑ ⟦Thế thì còn gì bằng nữa. Em cảm ơn chị.⟧ — Da kann ich mir nichts Besseres wünschen. Danke.
+Neue Wörter: ⟦cấp 3⟧ Oberstufe (Gymnasium) | ⟦cấp 1⟧ Grundschule | ⟦đầy đủ⟧ vollständig, ausreichend | ⟦tuyển⟧ einstellen, auswählen | ⟦phiên dịch viên⟧ Dolmetscher, Übersetzer
+=hu
+Kulcskifejezések: ⟦hồi⟧ / ⟦Thế thì còn gì bằng nữa⟧
+A ⟦hồi⟧ általában múltbeli eseményekről szólva használatos, jelentése „amikor, akkoriban, amikor ~”.
+❶ ⟦Hồi còn là học sinh cấp 3, em đã thường xuyên đến công viên đó.⟧ — Amikor gimnazista voltam, gyakran jártam abba a parkba.
+❷ Ⓐ ⟦Chị và anh Dũng biết nhau lâu chưa?⟧ — Régóta ismered Dũngot? Ⓑ ⟦Chị biết bạn ấy từ hồi còn nhỏ.⟧ — Gyerekkorunk óta ismerem.
+A ⟦Thế thì còn gì bằng nữa⟧ azt fejezi ki, hogy ennél jobb nem is lehetne: „akkor ennél jobbat nem is kívánhatnék”.
+❶ Ⓐ ⟦Khách sẽ được đi du lịch trong những điều kiện thuận tiện nhất.⟧ — A lehető legkedvezőbb feltételekkel fog utazni. Ⓑ ⟦Thế à? Thế thì còn gì bằng nữa.⟧ — Tényleg? Akkor ennél jobbat nem is kívánhatnék.
+❷ Ⓐ ⟦Sau vài tuần nữa, mọi việc sẽ trở lại bình thường.⟧ — Pár hét múlva minden visszatér a rendes kerékvágásba. Ⓑ ⟦Thật à? Thế thì còn gì bằng nữa.⟧ — Tényleg? Az lenne a legjobb.
+3. gyakorlat — kösse össze a megfelelő részeket, majd beszélgessen a minta szerint: ① ⟦nấu phở⟧ (phởt főzni) – Ⓑ ⟦cách nấu từ cô chủ nhà⟧ (a főbérlőtől tanult recept) – ③ ⟦còn du học ở Việt Nam⟧ (amikor Vietnamban tanult) | ② ⟦chơi piano⟧ (zongorázni) – Ⓐ ⟦mấy năm⟧ (néhány évig) – ② ⟦còn là học sinh cấp 1⟧ (amikor általános iskolás volt) | ③ ⟦nói tiếng Pháp⟧ (franciául beszélni) – Ⓒ ⟦ở trung tâm ngoại ngữ⟧ (nyelviskolában) – ① ⟦còn làm việc ở Pháp⟧ (amikor Franciaországban dolgozott)
+Minta (②–Ⓐ–②): Ⓐ ⟦Anh biết chơi piano à? Anh đã học khi nào?⟧ — Tudsz zongorázni? Mikor tanultál? Ⓑ ⟦Anh đã học mấy năm hồi còn là học sinh cấp 1.⟧ — Néhány évig tanultam, amikor általános iskolás voltam.
+4. gyakorlat — kösse össze a megfelelő részeket, majd beszélgessen a minta szerint: ① ⟦có bạn gái⟧ (barátnője van) → Ⓐ ⟦bạn gái rất hiền và xinh đẹp⟧ (nagyon kedves és csinos lány) | ② ⟦tìm được nhà mới⟧ (új lakást találni) → Ⓑ ⟦ngôi nhà giá rẻ với đầy đủ tiện nghi⟧ (olcsó, teljesen felszerelt ház) | ③ ⟦tuyển phiên dịch viên⟧ (tolmácsot felvenni) → Ⓒ ⟦người dịch tốt và có nhiều kinh nghiệm⟧ (jó és tapasztalt fordító)
+Minta (①–Ⓐ): Ⓐ ⟦Em có bạn gái chưa?⟧ — Van már barátnőd? Ⓑ ⟦Chưa ạ. Chị giới thiệu giúp em, được không?⟧ — Még nincs. Bemutatnál valakit? Ⓐ ⟦Được. Chị sẽ giới thiệu cho em một bạn gái rất hiền và xinh đẹp.⟧ — Persze. Bemutatok neked egy nagyon kedves és csinos lányt. Ⓑ ⟦Thế thì còn gì bằng nữa. Em cảm ơn chị.⟧ — Ennél jobbat nem is kívánhatnék. Köszönöm.
+Új szavak: ⟦cấp 3⟧ középiskola | ⟦cấp 1⟧ általános iskola (alsó tagozat) | ⟦đầy đủ⟧ teljes, elegendő | ⟦tuyển⟧ felvenni, kiválasztani | ⟦phiên dịch viên⟧ tolmács, fordító
+=id
+Ungkapan kunci: ⟦hồi⟧ / ⟦Thế thì còn gì bằng nữa⟧
+⟦hồi⟧ biasanya dipakai saat membicarakan hal yang terjadi di masa lalu dan berarti "waktu, ketika ~".
+❶ ⟦Hồi còn là học sinh cấp 3, em đã thường xuyên đến công viên đó.⟧ — Waktu masih SMA, aku sering pergi ke taman itu.
+❷ Ⓐ ⟦Chị và anh Dũng biết nhau lâu chưa?⟧ — Kakak dan Mas Dũng sudah lama saling kenal? Ⓑ ⟦Chị biết bạn ấy từ hồi còn nhỏ.⟧ — Kakak sudah kenal dia sejak kecil.
+⟦Thế thì còn gì bằng nữa⟧ menyatakan keadaan yang tidak ada bandingannya: "kalau begitu, tidak ada yang lebih baik lagi".
+❶ Ⓐ ⟦Khách sẽ được đi du lịch trong những điều kiện thuận tiện nhất.⟧ — Anda akan berwisata dengan kondisi yang paling nyaman. Ⓑ ⟦Thế à? Thế thì còn gì bằng nữa.⟧ — Oh ya? Kalau begitu, tidak ada yang lebih baik lagi.
+❷ Ⓐ ⟦Sau vài tuần nữa, mọi việc sẽ trở lại bình thường.⟧ — Beberapa minggu lagi, semuanya akan kembali normal. Ⓑ ⟦Thật à? Thế thì còn gì bằng nữa.⟧ — Sungguh? Kalau begitu bagus sekali.
+Latihan pola 3 — hubungkan bagian yang cocok, lalu bercakaplah seperti contoh: ① ⟦nấu phở⟧ (memasak phở) – Ⓑ ⟦cách nấu từ cô chủ nhà⟧ (resep dari ibu kos) – ③ ⟦còn du học ở Việt Nam⟧ (waktu kuliah di Vietnam) | ② ⟦chơi piano⟧ (bermain piano) – Ⓐ ⟦mấy năm⟧ (beberapa tahun) – ② ⟦còn là học sinh cấp 1⟧ (waktu masih SD) | ③ ⟦nói tiếng Pháp⟧ (berbahasa Prancis) – Ⓒ ⟦ở trung tâm ngoại ngữ⟧ (di lembaga kursus bahasa) – ① ⟦còn làm việc ở Pháp⟧ (waktu bekerja di Prancis)
+Contoh (②–Ⓐ–②): Ⓐ ⟦Anh biết chơi piano à? Anh đã học khi nào?⟧ — Kakak bisa main piano? Belajarnya kapan? Ⓑ ⟦Anh đã học mấy năm hồi còn là học sinh cấp 1.⟧ — Aku belajar beberapa tahun waktu masih SD.
+Latihan pola 4 — hubungkan bagian yang cocok, lalu bercakaplah seperti contoh: ① ⟦có bạn gái⟧ (punya pacar) → Ⓐ ⟦bạn gái rất hiền và xinh đẹp⟧ (gadis yang sangat baik hati dan cantik) | ② ⟦tìm được nhà mới⟧ (menemukan rumah baru) → Ⓑ ⟦ngôi nhà giá rẻ với đầy đủ tiện nghi⟧ (rumah murah dengan fasilitas lengkap) | ③ ⟦tuyển phiên dịch viên⟧ (merekrut penerjemah) → Ⓒ ⟦người dịch tốt và có nhiều kinh nghiệm⟧ (penerjemah yang bagus dan berpengalaman)
+Contoh (①–Ⓐ): Ⓐ ⟦Em có bạn gái chưa?⟧ — Kamu sudah punya pacar? Ⓑ ⟦Chưa ạ. Chị giới thiệu giúp em, được không?⟧ — Belum. Bisa Kakak kenalkan? Ⓐ ⟦Được. Chị sẽ giới thiệu cho em một bạn gái rất hiền và xinh đẹp.⟧ — Bisa. Kakak akan mengenalkanmu pada gadis yang sangat baik hati dan cantik. Ⓑ ⟦Thế thì còn gì bằng nữa. Em cảm ơn chị.⟧ — Kalau begitu, tidak ada yang lebih baik lagi. Terima kasih, Kak.
+Kosakata baru: ⟦cấp 3⟧ SMA | ⟦cấp 1⟧ SD | ⟦đầy đủ⟧ lengkap, cukup | ⟦tuyển⟧ merekrut, memilih | ⟦phiên dịch viên⟧ penerjemah, juru bahasa
+=ja
+核心表現：⟦hồi⟧ / ⟦Thế thì còn gì bằng nữa⟧
+⟦hồi⟧ は普通、過去に起きたことを話すときに使い、「～のとき」という意味です。
+❶ ⟦Hồi còn là học sinh cấp 3, em đã thường xuyên đến công viên đó.⟧ — 高校生だったとき、私はその公園によく行きました。
+❷ Ⓐ ⟦Chị và anh Dũng biết nhau lâu chưa?⟧ — ズンさんとは知り合って長いんですか。 Ⓑ ⟦Chị biết bạn ấy từ hồi còn nhỏ.⟧ — 彼とは小さいころから知り合いなの。
+⟦Thế thì còn gì bằng nữa⟧ はこの上ない状態であることを表し、「それならもう言うことはない」という意味です。
+❶ Ⓐ ⟦Khách sẽ được đi du lịch trong những điều kiện thuận tiện nhất.⟧ — お客様は最も便利な条件で旅行していただけます。 Ⓑ ⟦Thế à? Thế thì còn gì bằng nữa.⟧ — そうですか。それならもう言うことはありませんね。
+❷ Ⓐ ⟦Sau vài tuần nữa, mọi việc sẽ trở lại bình thường.⟧ — あと数週間もすれば、すべて元通りになります。 Ⓑ ⟦Thật à? Thế thì còn gì bằng nữa.⟧ — 本当ですか。それなら願ってもないことです。
+文型練習3 — 適切な内容を結び、例のように会話してみましょう：① ⟦nấu phở⟧（フォーを作る）– Ⓑ ⟦cách nấu từ cô chủ nhà⟧（大家さんから作り方を）– ③ ⟦còn du học ở Việt Nam⟧（ベトナムに留学していたとき）| ② ⟦chơi piano⟧（ピアノを弾く）– Ⓐ ⟦mấy năm⟧（数年間）– ② ⟦còn là học sinh cấp 1⟧（小学生のとき）| ③ ⟦nói tiếng Pháp⟧（フランス語を話す）– Ⓒ ⟦ở trung tâm ngoại ngữ⟧（語学センターで）– ① ⟦còn làm việc ở Pháp⟧（フランスで働いていたとき）
+例（②–Ⓐ–②）：Ⓐ ⟦Anh biết chơi piano à? Anh đã học khi nào?⟧ — ピアノが弾けるんですか。いつ習ったんですか。 Ⓑ ⟦Anh đã học mấy năm hồi còn là học sinh cấp 1.⟧ — 小学生のときに数年間習ったんだ。
+文型練習4 — 適切な内容を結び、例のように会話してみましょう：① ⟦có bạn gái⟧（彼女がいる）→ Ⓐ ⟦bạn gái rất hiền và xinh đẹp⟧（とても優しくてきれいな女の子）| ② ⟦tìm được nhà mới⟧（新しい家が見つかる）→ Ⓑ ⟦ngôi nhà giá rẻ với đầy đủ tiện nghi⟧（安くて設備の整った家）| ③ ⟦tuyển phiên dịch viên⟧（通訳者を採用する）→ Ⓒ ⟦người dịch tốt và có nhiều kinh nghiệm⟧（翻訳が上手で経験豊富な人）
+例（①–Ⓐ）：Ⓐ ⟦Em có bạn gái chưa?⟧ — 彼女はいるの？ Ⓑ ⟦Chưa ạ. Chị giới thiệu giúp em, được không?⟧ — まだいません。紹介してもらえませんか。 Ⓐ ⟦Được. Chị sẽ giới thiệu cho em một bạn gái rất hiền và xinh đẹp.⟧ — いいわよ。とても優しくてきれいな女の子を紹介してあげる。 Ⓑ ⟦Thế thì còn gì bằng nữa. Em cảm ơn chị.⟧ — それならもう言うことはありません。ありがとうございます。
+新出単語：⟦cấp 3⟧ 高校 | ⟦cấp 1⟧ 小学校 | ⟦đầy đủ⟧ 十分だ、そろっている | ⟦tuyển⟧ 選ぶ、採用する | ⟦phiên dịch viên⟧ 通訳者、翻訳者
+=pl
+Kluczowe wyrażenia: ⟦hồi⟧ / ⟦Thế thì còn gì bằng nữa⟧
+⟦hồi⟧ używa się zwykle, mówiąc o przeszłości; znaczy „kiedy, w czasach gdy ~”.
+❶ ⟦Hồi còn là học sinh cấp 3, em đã thường xuyên đến công viên đó.⟧ — Kiedy chodziłam do liceum, często bywałam w tym parku.
+❷ Ⓐ ⟦Chị và anh Dũng biết nhau lâu chưa?⟧ — Długo znasz Dũnga? Ⓑ ⟦Chị biết bạn ấy từ hồi còn nhỏ.⟧ — Znam go od dziecka.
+⟦Thế thì còn gì bằng nữa⟧ wyraża stan, który nie mógłby być lepszy: „to nic lepszego nie mogłoby mnie spotkać”.
+❶ Ⓐ ⟦Khách sẽ được đi du lịch trong những điều kiện thuận tiện nhất.⟧ — Będzie pan podróżował w najdogodniejszych warunkach. Ⓑ ⟦Thế à? Thế thì còn gì bằng nữa.⟧ — Naprawdę? To nic lepszego nie mogłoby mnie spotkać.
+❷ Ⓐ ⟦Sau vài tuần nữa, mọi việc sẽ trở lại bình thường.⟧ — Za kilka tygodni wszystko wróci do normy. Ⓑ ⟦Thật à? Thế thì còn gì bằng nữa.⟧ — Naprawdę? To byłoby idealnie.
+Ćwiczenie 3 — połącz pasujące elementy i rozmawiaj jak we wzorze: ① ⟦nấu phở⟧ (gotować phở) – Ⓑ ⟦cách nấu từ cô chủ nhà⟧ (przepis od gospodyni) – ③ ⟦còn du học ở Việt Nam⟧ (gdy studiował w Wietnamie) | ② ⟦chơi piano⟧ (grać na pianinie) – Ⓐ ⟦mấy năm⟧ (kilka lat) – ② ⟦còn là học sinh cấp 1⟧ (w podstawówce) | ③ ⟦nói tiếng Pháp⟧ (mówić po francusku) – Ⓒ ⟦ở trung tâm ngoại ngữ⟧ (w szkole językowej) – ① ⟦còn làm việc ở Pháp⟧ (gdy pracował we Francji)
+Wzór (②–Ⓐ–②): Ⓐ ⟦Anh biết chơi piano à? Anh đã học khi nào?⟧ — Umiesz grać na pianinie? Kiedy się nauczyłeś? Ⓑ ⟦Anh đã học mấy năm hồi còn là học sinh cấp 1.⟧ — Uczyłem się przez kilka lat, kiedy chodziłem do podstawówki.
+Ćwiczenie 4 — połącz pasujące elementy i rozmawiaj jak we wzorze: ① ⟦có bạn gái⟧ (mieć dziewczynę) → Ⓐ ⟦bạn gái rất hiền và xinh đẹp⟧ (bardzo miła i ładna dziewczyna) | ② ⟦tìm được nhà mới⟧ (znaleźć nowe mieszkanie) → Ⓑ ⟦ngôi nhà giá rẻ với đầy đủ tiện nghi⟧ (tani, w pełni wyposażony dom) | ③ ⟦tuyển phiên dịch viên⟧ (zatrudnić tłumacza) → Ⓒ ⟦người dịch tốt và có nhiều kinh nghiệm⟧ (dobry i doświadczony tłumacz)
+Wzór (①–Ⓐ): Ⓐ ⟦Em có bạn gái chưa?⟧ — Masz już dziewczynę? Ⓑ ⟦Chưa ạ. Chị giới thiệu giúp em, được không?⟧ — Jeszcze nie. Mogłabyś mi kogoś przedstawić? Ⓐ ⟦Được. Chị sẽ giới thiệu cho em một bạn gái rất hiền và xinh đẹp.⟧ — Jasne. Przedstawię ci bardzo miłą i ładną dziewczynę. Ⓑ ⟦Thế thì còn gì bằng nữa. Em cảm ơn chị.⟧ — Nic lepszego nie mogłoby mnie spotkać. Dziękuję.
+Nowe słówka: ⟦cấp 3⟧ liceum | ⟦cấp 1⟧ szkoła podstawowa | ⟦đầy đủ⟧ pełny, wystarczający | ⟦tuyển⟧ rekrutować, wybierać | ⟦phiên dịch viên⟧ tłumacz

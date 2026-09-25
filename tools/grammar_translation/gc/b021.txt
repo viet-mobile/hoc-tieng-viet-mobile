@@ -1,0 +1,161 @@
+@@ pdf-grammar-fdd633f74a71ce3b#0
+=cs
+Klíčový výraz 1: ⟦đến với⟧ — „đến với + osoba“ znamená „přijít k někomu“.
+❶ ⟦Ai cần giúp đỡ thì hãy đến với chúng tôi.⟧ — Kdo potřebuje pomoc, ať přijde k nám.
+❷ Ⓐ ⟦Sao 2 nhân vật chính không thể đến với nhau? Bố mẹ họ phản đối à?⟧ — Proč se ti dva hlavní hrdinové nemohou dát dohromady? Jsou rodiče proti? Ⓑ ⟦Ha ha, em xem hết phim thì sẽ biết.⟧ — Haha, když se na film podíváš celý, dozvíš se to.
+Klíčový výraz 2: ⟦vui lòng⟧ — „vui lòng ~“ znamená „prosím, buďte tak laskav a ~“.
+❶ ⟦Xin ông vui lòng cho chúng tôi kiểm tra hộ chiếu.⟧ — Prosím, pane, ukažte nám pas ke kontrole.
+❷ Ⓐ ⟦Xin quý khách vui lòng đợi thêm 5 phút nữa ạ.⟧ — Prosíme vážené hosty, aby počkali ještě 5 minut. Ⓑ ⟦Vâng, không sao. Tôi sẽ đợi ở đây.⟧ — Dobře, to nevadí. Počkám tady.
+Procvičování 3 — podle obrázku doplňte s ⟦đến với⟧ a mluvte:
+Vzor: Ⓐ ⟦Oe oe...⟧ — Uá uá… (pláč miminka) Ⓑ ⟦Cảm ơn con đã đến với mẹ.⟧ — Děkuji, že jsi ke mně přišlo, děťátko.
+❶ Ⓐ ⟦Chúc mừng chị đã tốt nghiệp!⟧ — Gratuluji k promoci! Ⓑ ⟦Cảm ơn em đã đến với chị trong buổi lễ tốt nghiệp này.⟧ — Děkuji, že jsi za mnou na promoci přišel.
+❷ Ⓐ ⟦Anh hi vọng là hạnh phúc sẽ đến với em từng ngày.⟧ — Doufám, že štěstí k tobě bude přicházet každý den. Ⓑ ⟦Cảm ơn anh. Em cũng mong anh luôn hạnh phúc ạ.⟧ — Děkuji. I já vám přeji, abyste byl vždy šťastný.
+Procvičování 4 — doplňte s ⟦vui lòng⟧ a řekněte:
+Vzor: ⟦Xin vui lòng tham khảo nội dung file đính kèm email này.⟧ — Prosím, podívejte se na obsah souboru přiloženého k tomuto e-mailu.
+❶ ⟦Xin vui lòng cho chúng tôi một chiếc taxi 7 chỗ đi sân bay.⟧ — Prosím, pošlete nám sedmimístné taxi na letiště.
+❷ ⟦Thuê bao quý khách vừa gọi tạm thời không liên lạc được, xin vui lòng gọi lại sau.⟧ — Volané číslo je dočasně nedostupné, zavolejte prosím později.
+Nová slovíčka: ⟦giúp đỡ⟧ pomáhat | ⟦oe oe⟧ uá uá (pláč miminka) | ⟦nội dung⟧ obsah | ⟦đính kèm⟧ přiložit | ⟦thuê bao⟧ účastník (sítě), předplatitel | ⟦tạm thời⟧ dočasně | ⟦liên lạc⟧ spojit se
+=zh_cn
+核心表达1：⟦đến với⟧ —— “đến với + 人”意为“来到某人身边”。
+❶ ⟦Ai cần giúp đỡ thì hãy đến với chúng tôi.⟧ —— 需要帮助的人请来找我们。
+❷ Ⓐ ⟦Sao 2 nhân vật chính không thể đến với nhau? Bố mẹ họ phản đối à?⟧ —— 为什么两位主角不能在一起？是他们的父母反对吗？ Ⓑ ⟦Ha ha, em xem hết phim thì sẽ biết.⟧ —— 哈哈，你把电影看完就知道了。
+核心表达2：⟦vui lòng⟧ —— “vui lòng ~”意为“敬请……、请您……”。
+❶ ⟦Xin ông vui lòng cho chúng tôi kiểm tra hộ chiếu.⟧ —— 先生，请出示您的护照让我们检查。
+❷ Ⓐ ⟦Xin quý khách vui lòng đợi thêm 5 phút nữa ạ.⟧ —— 敬请各位顾客再等5分钟。 Ⓑ ⟦Vâng, không sao. Tôi sẽ đợi ở đây.⟧ —— 好的，没关系。我在这里等。
+句型练习3 —— 看图，用 ⟦đến với⟧ 填空后对话：
+范例：Ⓐ ⟦Oe oe...⟧ —— 哇哇……（婴儿哭声） Ⓑ ⟦Cảm ơn con đã đến với mẹ.⟧ —— 谢谢你来到妈妈身边，孩子。
+❶ Ⓐ ⟦Chúc mừng chị đã tốt nghiệp!⟧ —— 恭喜你毕业！ Ⓑ ⟦Cảm ơn em đã đến với chị trong buổi lễ tốt nghiệp này.⟧ —— 谢谢你来参加我的毕业典礼。
+❷ Ⓐ ⟦Anh hi vọng là hạnh phúc sẽ đến với em từng ngày.⟧ —— 希望幸福每天都降临到你身上。 Ⓑ ⟦Cảm ơn anh. Em cũng mong anh luôn hạnh phúc ạ.⟧ —— 谢谢。我也希望你永远幸福。
+句型练习4 —— 用 ⟦vui lòng⟧ 填空后说一说：
+范例：⟦Xin vui lòng tham khảo nội dung file đính kèm email này.⟧ —— 请参考这封邮件所附文件的内容。
+❶ ⟦Xin vui lòng cho chúng tôi một chiếc taxi 7 chỗ đi sân bay.⟧ —— 请给我们派一辆去机场的7座出租车。
+❷ ⟦Thuê bao quý khách vừa gọi tạm thời không liên lạc được, xin vui lòng gọi lại sau.⟧ —— 您拨打的用户暂时无法接通，请稍后再拨。
+新单词：⟦giúp đỡ⟧ 帮助 | ⟦oe oe⟧ 哇哇（婴儿哭声） | ⟦nội dung⟧ 内容 | ⟦đính kèm⟧ 附加 | ⟦thuê bao⟧ 用户，订户 | ⟦tạm thời⟧ 暂时 | ⟦liên lạc⟧ 联系
+=zh
+核心表達1：⟦đến với⟧ —— 「đến với + 人」意為「來到某人身邊」。
+❶ ⟦Ai cần giúp đỡ thì hãy đến với chúng tôi.⟧ —— 需要幫助的人請來找我們。
+❷ Ⓐ ⟦Sao 2 nhân vật chính không thể đến với nhau? Bố mẹ họ phản đối à?⟧ —— 為什麼兩位主角不能在一起？是他們的父母反對嗎？ Ⓑ ⟦Ha ha, em xem hết phim thì sẽ biết.⟧ —— 哈哈，你把電影看完就知道了。
+核心表達2：⟦vui lòng⟧ —— 「vui lòng ~」意為「敬請……、請您……」。
+❶ ⟦Xin ông vui lòng cho chúng tôi kiểm tra hộ chiếu.⟧ —— 先生，請出示您的護照讓我們檢查。
+❷ Ⓐ ⟦Xin quý khách vui lòng đợi thêm 5 phút nữa ạ.⟧ —— 敬請各位顧客再等5分鐘。 Ⓑ ⟦Vâng, không sao. Tôi sẽ đợi ở đây.⟧ —— 好的，沒關係。我在這裡等。
+句型練習3 —— 看圖，用 ⟦đến với⟧ 填空後對話：
+範例：Ⓐ ⟦Oe oe...⟧ —— 哇哇……（嬰兒哭聲） Ⓑ ⟦Cảm ơn con đã đến với mẹ.⟧ —— 謝謝你來到媽媽身邊，孩子。
+❶ Ⓐ ⟦Chúc mừng chị đã tốt nghiệp!⟧ —— 恭喜你畢業！ Ⓑ ⟦Cảm ơn em đã đến với chị trong buổi lễ tốt nghiệp này.⟧ —— 謝謝你來參加我的畢業典禮。
+❷ Ⓐ ⟦Anh hi vọng là hạnh phúc sẽ đến với em từng ngày.⟧ —— 希望幸福每天都降臨到你身上。 Ⓑ ⟦Cảm ơn anh. Em cũng mong anh luôn hạnh phúc ạ.⟧ —— 謝謝。我也希望你永遠幸福。
+句型練習4 —— 用 ⟦vui lòng⟧ 填空後說一說：
+範例：⟦Xin vui lòng tham khảo nội dung file đính kèm email này.⟧ —— 請參考這封郵件所附檔案的內容。
+❶ ⟦Xin vui lòng cho chúng tôi một chiếc taxi 7 chỗ đi sân bay.⟧ —— 請幫我們派一輛去機場的7人座計程車。
+❷ ⟦Thuê bao quý khách vừa gọi tạm thời không liên lạc được, xin vui lòng gọi lại sau.⟧ —— 您撥打的用戶暫時無法接通，請稍後再撥。
+新單字：⟦giúp đỡ⟧ 幫助 | ⟦oe oe⟧ 哇哇（嬰兒哭聲） | ⟦nội dung⟧ 內容 | ⟦đính kèm⟧ 附加 | ⟦thuê bao⟧ 用戶，訂戶 | ⟦tạm thời⟧ 暫時 | ⟦liên lạc⟧ 聯絡
+=en
+Key expression 1: ⟦đến với⟧ — "đến với + person" means "to come to someone".
+❶ ⟦Ai cần giúp đỡ thì hãy đến với chúng tôi.⟧ — Anyone who needs help, please come to us.
+❷ Ⓐ ⟦Sao 2 nhân vật chính không thể đến với nhau? Bố mẹ họ phản đối à?⟧ — Why can't the two main characters be together? Are their parents against it? Ⓑ ⟦Ha ha, em xem hết phim thì sẽ biết.⟧ — Ha ha, watch the whole movie and you'll find out.
+Key expression 2: ⟦vui lòng⟧ — "vui lòng ~" means "please kindly ~".
+❶ ⟦Xin ông vui lòng cho chúng tôi kiểm tra hộ chiếu.⟧ — Sir, please let us check your passport.
+❷ Ⓐ ⟦Xin quý khách vui lòng đợi thêm 5 phút nữa ạ.⟧ — We kindly ask our customers to wait another 5 minutes. Ⓑ ⟦Vâng, không sao. Tôi sẽ đợi ở đây.⟧ — OK, no problem. I'll wait here.
+Pattern practice 3 — look at the pictures, fill in the blanks with ⟦đến với⟧ and talk:
+Model: Ⓐ ⟦Oe oe...⟧ — Waah waah… (a baby crying) Ⓑ ⟦Cảm ơn con đã đến với mẹ.⟧ — Thank you for coming to me, my baby.
+❶ Ⓐ ⟦Chúc mừng chị đã tốt nghiệp!⟧ — Congratulations on your graduation! Ⓑ ⟦Cảm ơn em đã đến với chị trong buổi lễ tốt nghiệp này.⟧ — Thanks for coming to my graduation ceremony.
+❷ Ⓐ ⟦Anh hi vọng là hạnh phúc sẽ đến với em từng ngày.⟧ — I hope happiness comes to you every day. Ⓑ ⟦Cảm ơn anh. Em cũng mong anh luôn hạnh phúc ạ.⟧ — Thank you. I hope you'll always be happy too.
+Pattern practice 4 — fill in the blanks with ⟦vui lòng⟧ and say:
+Model: ⟦Xin vui lòng tham khảo nội dung file đính kèm email này.⟧ — Please refer to the file attached to this email.
+❶ ⟦Xin vui lòng cho chúng tôi một chiếc taxi 7 chỗ đi sân bay.⟧ — Please send us a 7-seater taxi to the airport.
+❷ ⟦Thuê bao quý khách vừa gọi tạm thời không liên lạc được, xin vui lòng gọi lại sau.⟧ — The number you have called is temporarily unavailable; please call again later.
+New words: ⟦giúp đỡ⟧ to help | ⟦oe oe⟧ waah (baby's cry) | ⟦nội dung⟧ content | ⟦đính kèm⟧ to attach | ⟦thuê bao⟧ subscriber | ⟦tạm thời⟧ temporarily | ⟦liên lạc⟧ to contact
+=fr
+Expression clé 1 : ⟦đến với⟧ — « đến với + personne » signifie « venir vers quelqu'un ».
+❶ ⟦Ai cần giúp đỡ thì hãy đến với chúng tôi.⟧ — Si vous avez besoin d'aide, venez nous voir.
+❷ Ⓐ ⟦Sao 2 nhân vật chính không thể đến với nhau? Bố mẹ họ phản đối à?⟧ — Pourquoi les deux personnages principaux ne peuvent-ils pas être ensemble ? Leurs parents s'y opposent ? Ⓑ ⟦Ha ha, em xem hết phim thì sẽ biết.⟧ — Ha ha, regarde le film jusqu'au bout et tu sauras.
+Expression clé 2 : ⟦vui lòng⟧ — « vui lòng ~ » signifie « veuillez ~, ayez l'obligeance de ~ ».
+❶ ⟦Xin ông vui lòng cho chúng tôi kiểm tra hộ chiếu.⟧ — Monsieur, veuillez nous montrer votre passeport.
+❷ Ⓐ ⟦Xin quý khách vui lòng đợi thêm 5 phút nữa ạ.⟧ — Chers clients, veuillez patienter encore 5 minutes. Ⓑ ⟦Vâng, không sao. Tôi sẽ đợi ở đây.⟧ — D'accord, pas de problème. J'attendrai ici.
+Exercice 3 — regardez les images, complétez avec ⟦đến với⟧ et dialoguez :
+Modèle : Ⓐ ⟦Oe oe...⟧ — Ouin ouin… (pleurs de bébé) Ⓑ ⟦Cảm ơn con đã đến với mẹ.⟧ — Merci d'être venu à moi, mon bébé.
+❶ Ⓐ ⟦Chúc mừng chị đã tốt nghiệp!⟧ — Félicitations pour ton diplôme ! Ⓑ ⟦Cảm ơn em đã đến với chị trong buổi lễ tốt nghiệp này.⟧ — Merci d'être venu à ma cérémonie de remise de diplôme.
+❷ Ⓐ ⟦Anh hi vọng là hạnh phúc sẽ đến với em từng ngày.⟧ — J'espère que le bonheur viendra à toi chaque jour. Ⓑ ⟦Cảm ơn anh. Em cũng mong anh luôn hạnh phúc ạ.⟧ — Merci. Je te souhaite aussi d'être toujours heureux.
+Exercice 4 — complétez avec ⟦vui lòng⟧ et dites :
+Modèle : ⟦Xin vui lòng tham khảo nội dung file đính kèm email này.⟧ — Veuillez consulter le fichier joint à cet e-mail.
+❶ ⟦Xin vui lòng cho chúng tôi một chiếc taxi 7 chỗ đi sân bay.⟧ — Veuillez nous envoyer un taxi de 7 places pour l'aéroport.
+❷ ⟦Thuê bao quý khách vừa gọi tạm thời không liên lạc được, xin vui lòng gọi lại sau.⟧ — Le numéro que vous avez composé est temporairement indisponible ; veuillez rappeler plus tard.
+Nouveaux mots : ⟦giúp đỡ⟧ aider | ⟦oe oe⟧ ouin (pleurs de bébé) | ⟦nội dung⟧ contenu | ⟦đính kèm⟧ joindre | ⟦thuê bao⟧ abonné | ⟦tạm thời⟧ temporairement | ⟦liên lạc⟧ contacter
+=de
+Schlüsselausdruck 1: ⟦đến với⟧ — „đến với + Person“ bedeutet „zu jemandem kommen“.
+❶ ⟦Ai cần giúp đỡ thì hãy đến với chúng tôi.⟧ — Wer Hilfe braucht, soll zu uns kommen.
+❷ Ⓐ ⟦Sao 2 nhân vật chính không thể đến với nhau? Bố mẹ họ phản đối à?⟧ — Warum können die beiden Hauptfiguren nicht zusammenkommen? Sind ihre Eltern dagegen? Ⓑ ⟦Ha ha, em xem hết phim thì sẽ biết.⟧ — Haha, schau den Film zu Ende, dann weißt du es.
+Schlüsselausdruck 2: ⟦vui lòng⟧ — „vui lòng ~“ bedeutet „bitte seien Sie so freundlich und ~“.
+❶ ⟦Xin ông vui lòng cho chúng tôi kiểm tra hộ chiếu.⟧ — Mein Herr, bitte zeigen Sie uns Ihren Pass zur Kontrolle.
+❷ Ⓐ ⟦Xin quý khách vui lòng đợi thêm 5 phút nữa ạ.⟧ — Wir bitten unsere Gäste, noch 5 Minuten zu warten. Ⓑ ⟦Vâng, không sao. Tôi sẽ đợi ở đây.⟧ — Gut, kein Problem. Ich warte hier.
+Übung 3 — sehen Sie sich die Bilder an, ergänzen Sie mit ⟦đến với⟧ und sprechen Sie:
+Muster: Ⓐ ⟦Oe oe...⟧ — Uäh uäh … (Babygeschrei) Ⓑ ⟦Cảm ơn con đã đến với mẹ.⟧ — Danke, dass du zu mir gekommen bist, mein Kind.
+❶ Ⓐ ⟦Chúc mừng chị đã tốt nghiệp!⟧ — Herzlichen Glückwunsch zum Abschluss! Ⓑ ⟦Cảm ơn em đã đến với chị trong buổi lễ tốt nghiệp này.⟧ — Danke, dass du zu meiner Abschlussfeier gekommen bist.
+❷ Ⓐ ⟦Anh hi vọng là hạnh phúc sẽ đến với em từng ngày.⟧ — Ich hoffe, dass das Glück jeden Tag zu dir kommt. Ⓑ ⟦Cảm ơn anh. Em cũng mong anh luôn hạnh phúc ạ.⟧ — Danke. Ich wünsche dir auch, dass du immer glücklich bist.
+Übung 4 — ergänzen Sie mit ⟦vui lòng⟧ und sprechen Sie:
+Muster: ⟦Xin vui lòng tham khảo nội dung file đính kèm email này.⟧ — Bitte beachten Sie den Inhalt der dieser E-Mail angehängten Datei.
+❶ ⟦Xin vui lòng cho chúng tôi một chiếc taxi 7 chỗ đi sân bay.⟧ — Bitte schicken Sie uns ein Siebensitzer-Taxi zum Flughafen.
+❷ ⟦Thuê bao quý khách vừa gọi tạm thời không liên lạc được, xin vui lòng gọi lại sau.⟧ — Der gewünschte Teilnehmer ist vorübergehend nicht erreichbar, bitte rufen Sie später wieder an.
+Neue Wörter: ⟦giúp đỡ⟧ helfen | ⟦oe oe⟧ uäh (Babygeschrei) | ⟦nội dung⟧ Inhalt | ⟦đính kèm⟧ anhängen | ⟦thuê bao⟧ Teilnehmer, Abonnent | ⟦tạm thời⟧ vorübergehend | ⟦liên lạc⟧ kontaktieren
+=hu
+1. kulcskifejezés: ⟦đến với⟧ — a „đến với + személy” jelentése „valakihez eljönni”.
+❶ ⟦Ai cần giúp đỡ thì hãy đến với chúng tôi.⟧ — Akinek segítség kell, jöjjön hozzánk.
+❷ Ⓐ ⟦Sao 2 nhân vật chính không thể đến với nhau? Bố mẹ họ phản đối à?⟧ — Miért nem lehet együtt a két főszereplő? A szüleik ellenzik? Ⓑ ⟦Ha ha, em xem hết phim thì sẽ biết.⟧ — Haha, ha végignézed a filmet, megtudod.
+2. kulcskifejezés: ⟦vui lòng⟧ — a „vui lòng ~” jelentése „kérjük, legyen szíves ~”.
+❶ ⟦Xin ông vui lòng cho chúng tôi kiểm tra hộ chiếu.⟧ — Uram, legyen szíves, mutassa meg az útlevelét ellenőrzésre.
+❷ Ⓐ ⟦Xin quý khách vui lòng đợi thêm 5 phút nữa ạ.⟧ — Kérjük kedves vendégeinket, várjanak még 5 percet. Ⓑ ⟦Vâng, không sao. Tôi sẽ đợi ở đây.⟧ — Rendben, semmi gond. Itt várok.
+3. gyakorlat — a képek alapján egészítse ki a ⟦đến với⟧ kifejezéssel, és beszélgessen:
+Minta: Ⓐ ⟦Oe oe...⟧ — Oá oá… (babasírás) Ⓑ ⟦Cảm ơn con đã đến với mẹ.⟧ — Köszönöm, hogy hozzám jöttél, kicsim.
+❶ Ⓐ ⟦Chúc mừng chị đã tốt nghiệp!⟧ — Gratulálok a diplomádhoz! Ⓑ ⟦Cảm ơn em đã đến với chị trong buổi lễ tốt nghiệp này.⟧ — Köszönöm, hogy eljöttél a diplomaosztómra.
+❷ Ⓐ ⟦Anh hi vọng là hạnh phúc sẽ đến với em từng ngày.⟧ — Remélem, a boldogság minden nap rád talál. Ⓑ ⟦Cảm ơn anh. Em cũng mong anh luôn hạnh phúc ạ.⟧ — Köszönöm. Én is kívánom, hogy mindig boldog légy.
+4. gyakorlat — egészítse ki a ⟦vui lòng⟧ kifejezéssel, és mondja el:
+Minta: ⟦Xin vui lòng tham khảo nội dung file đính kèm email này.⟧ — Kérjük, tekintse meg az e-mailhez csatolt fájl tartalmát.
+❶ ⟦Xin vui lòng cho chúng tôi một chiếc taxi 7 chỗ đi sân bay.⟧ — Kérünk egy hétszemélyes taxit a repülőtérre.
+❷ ⟦Thuê bao quý khách vừa gọi tạm thời không liên lạc được, xin vui lòng gọi lại sau.⟧ — A hívott szám átmenetileg nem elérhető, kérjük, hívja később.
+Új szavak: ⟦giúp đỡ⟧ segíteni | ⟦oe oe⟧ oá (babasírás) | ⟦nội dung⟧ tartalom | ⟦đính kèm⟧ csatolni | ⟦thuê bao⟧ előfizető | ⟦tạm thời⟧ átmenetileg | ⟦liên lạc⟧ kapcsolatba lépni
+=id
+Ungkapan kunci 1: ⟦đến với⟧ — "đến với + orang" berarti "datang kepada seseorang".
+❶ ⟦Ai cần giúp đỡ thì hãy đến với chúng tôi.⟧ — Siapa pun yang butuh bantuan, datanglah kepada kami.
+❷ Ⓐ ⟦Sao 2 nhân vật chính không thể đến với nhau? Bố mẹ họ phản đối à?⟧ — Kenapa kedua tokoh utama tidak bisa bersatu? Orang tua mereka menentang? Ⓑ ⟦Ha ha, em xem hết phim thì sẽ biết.⟧ — Haha, tonton filmnya sampai habis, nanti kamu tahu.
+Ungkapan kunci 2: ⟦vui lòng⟧ — "vui lòng ~" berarti "mohon ~, dimohon dengan hormat ~".
+❶ ⟦Xin ông vui lòng cho chúng tôi kiểm tra hộ chiếu.⟧ — Pak, mohon perlihatkan paspor Anda untuk kami periksa.
+❷ Ⓐ ⟦Xin quý khách vui lòng đợi thêm 5 phút nữa ạ.⟧ — Para pelanggan dimohon menunggu 5 menit lagi. Ⓑ ⟦Vâng, không sao. Tôi sẽ đợi ở đây.⟧ — Baik, tidak apa-apa. Saya akan menunggu di sini.
+Latihan pola 3 — lihat gambar, isi dengan ⟦đến với⟧ lalu bercakap:
+Contoh: Ⓐ ⟦Oe oe...⟧ — Oek oek… (tangis bayi) Ⓑ ⟦Cảm ơn con đã đến với mẹ.⟧ — Terima kasih sudah hadir untuk Ibu, Nak.
+❶ Ⓐ ⟦Chúc mừng chị đã tốt nghiệp!⟧ — Selamat atas kelulusan Kakak! Ⓑ ⟦Cảm ơn em đã đến với chị trong buổi lễ tốt nghiệp này.⟧ — Terima kasih sudah datang ke acara wisuda Kakak.
+❷ Ⓐ ⟦Anh hi vọng là hạnh phúc sẽ đến với em từng ngày.⟧ — Kakak berharap kebahagiaan datang kepadamu setiap hari. Ⓑ ⟦Cảm ơn anh. Em cũng mong anh luôn hạnh phúc ạ.⟧ — Terima kasih. Saya juga berharap Kakak selalu bahagia.
+Latihan pola 4 — isi dengan ⟦vui lòng⟧ lalu ucapkan:
+Contoh: ⟦Xin vui lòng tham khảo nội dung file đính kèm email này.⟧ — Mohon lihat isi berkas yang terlampir dalam surel ini.
+❶ ⟦Xin vui lòng cho chúng tôi một chiếc taxi 7 chỗ đi sân bay.⟧ — Mohon kirimkan kami taksi 7 kursi ke bandara.
+❷ ⟦Thuê bao quý khách vừa gọi tạm thời không liên lạc được, xin vui lòng gọi lại sau.⟧ — Nomor yang Anda tuju sedang tidak dapat dihubungi, mohon hubungi kembali nanti.
+Kosakata baru: ⟦giúp đỡ⟧ membantu | ⟦oe oe⟧ oek oek (tangis bayi) | ⟦nội dung⟧ isi | ⟦đính kèm⟧ melampirkan | ⟦thuê bao⟧ pelanggan (telepon) | ⟦tạm thời⟧ sementara | ⟦liên lạc⟧ menghubungi
+=ja
+核心表現1：⟦đến với⟧ —「đến với ＋ 人」は「人のところに来る」という意味です。
+❶ ⟦Ai cần giúp đỡ thì hãy đến với chúng tôi.⟧ — 助けが必要な方は私たちのところへ来てください。
+❷ Ⓐ ⟦Sao 2 nhân vật chính không thể đến với nhau? Bố mẹ họ phản đối à?⟧ — どうして二人の主人公は結ばれないの？親が反対しているの？ Ⓑ ⟦Ha ha, em xem hết phim thì sẽ biết.⟧ — ハハ、映画を最後まで見れば分かるよ。
+核心表現2：⟦vui lòng⟧ —「vui lòng ~」は「～してくださいますようお願いします」という意味です。
+❶ ⟦Xin ông vui lòng cho chúng tôi kiểm tra hộ chiếu.⟧ — パスポートを確認させていただけますでしょうか。
+❷ Ⓐ ⟦Xin quý khách vui lòng đợi thêm 5 phút nữa ạ.⟧ — お客様、あと5分お待ちください。 Ⓑ ⟦Vâng, không sao. Tôi sẽ đợi ở đây.⟧ — ええ、大丈夫です。ここで待ちます。
+文型練習3 — 例のように絵を見て ⟦đến với⟧ を使って空欄を埋め、会話しましょう：
+例：Ⓐ ⟦Oe oe...⟧ — おぎゃあおぎゃあ…… Ⓑ ⟦Cảm ơn con đã đến với mẹ.⟧ — ママのところに来てくれてありがとう。
+❶ Ⓐ ⟦Chúc mừng chị đã tốt nghiệp!⟧ — 卒業おめでとう！ Ⓑ ⟦Cảm ơn em đã đến với chị trong buổi lễ tốt nghiệp này.⟧ — 私の卒業式に来てくれてありがとう。
+❷ Ⓐ ⟦Anh hi vọng là hạnh phúc sẽ đến với em từng ngày.⟧ — 毎日君に幸せが訪れますように。 Ⓑ ⟦Cảm ơn anh. Em cũng mong anh luôn hạnh phúc ạ.⟧ — ありがとう。あなたもいつも幸せでありますように。
+文型練習4 — 例のように ⟦vui lòng⟧ を使って空欄を埋め、言ってみましょう：
+例：⟦Xin vui lòng tham khảo nội dung file đính kèm email này.⟧ — このメールに添付したファイルの内容をご参照ください。
+❶ ⟦Xin vui lòng cho chúng tôi một chiếc taxi 7 chỗ đi sân bay.⟧ — 空港まで7人乗りのタクシーを1台お願いします。
+❷ ⟦Thuê bao quý khách vừa gọi tạm thời không liên lạc được, xin vui lòng gọi lại sau.⟧ — おかけになった電話は現在つながりません。しばらくしてからおかけ直しください。
+新出単語：⟦giúp đỡ⟧ 助ける | ⟦oe oe⟧ おぎゃあ（赤ちゃんの泣き声） | ⟦nội dung⟧ 内容 | ⟦đính kèm⟧ 添付する | ⟦thuê bao⟧ 加入者 | ⟦tạm thời⟧ 一時的に | ⟦liên lạc⟧ 連絡する
+=pl
+Kluczowe wyrażenie 1: ⟦đến với⟧ — „đến với + osoba” znaczy „przyjść do kogoś”.
+❶ ⟦Ai cần giúp đỡ thì hãy đến với chúng tôi.⟧ — Kto potrzebuje pomocy, niech przyjdzie do nas.
+❷ Ⓐ ⟦Sao 2 nhân vật chính không thể đến với nhau? Bố mẹ họ phản đối à?⟧ — Dlaczego dwoje głównych bohaterów nie może być razem? Rodzice się sprzeciwiają? Ⓑ ⟦Ha ha, em xem hết phim thì sẽ biết.⟧ — Haha, obejrzyj film do końca, to się dowiesz.
+Kluczowe wyrażenie 2: ⟦vui lòng⟧ — „vui lòng ~” znaczy „uprzejmie prosimy ~”.
+❶ ⟦Xin ông vui lòng cho chúng tôi kiểm tra hộ chiếu.⟧ — Proszę pana, uprzejmie prosimy o paszport do kontroli.
+❷ Ⓐ ⟦Xin quý khách vui lòng đợi thêm 5 phút nữa ạ.⟧ — Szanownych klientów prosimy o poczekanie jeszcze 5 minut. Ⓑ ⟦Vâng, không sao. Tôi sẽ đợi ở đây.⟧ — Dobrze, nie ma sprawy. Poczekam tutaj.
+Ćwiczenie 3 — na podstawie obrazków uzupełnij z ⟦đến với⟧ i rozmawiaj:
+Wzór: Ⓐ ⟦Oe oe...⟧ — Łee łee… (płacz niemowlęcia) Ⓑ ⟦Cảm ơn con đã đến với mẹ.⟧ — Dziękuję, że przyszedłeś do mnie, maleństwo.
+❶ Ⓐ ⟦Chúc mừng chị đã tốt nghiệp!⟧ — Gratuluję ukończenia studiów! Ⓑ ⟦Cảm ơn em đã đến với chị trong buổi lễ tốt nghiệp này.⟧ — Dziękuję, że przyszedłeś na moje zakończenie studiów.
+❷ Ⓐ ⟦Anh hi vọng là hạnh phúc sẽ đến với em từng ngày.⟧ — Mam nadzieję, że szczęście będzie przychodzić do ciebie każdego dnia. Ⓑ ⟦Cảm ơn anh. Em cũng mong anh luôn hạnh phúc ạ.⟧ — Dziękuję. Ja też życzę ci, żebyś zawsze był szczęśliwy.
+Ćwiczenie 4 — uzupełnij z ⟦vui lòng⟧ i powiedz:
+Wzór: ⟦Xin vui lòng tham khảo nội dung file đính kèm email này.⟧ — Prosimy zapoznać się z treścią pliku załączonego do tego e-maila.
+❶ ⟦Xin vui lòng cho chúng tôi một chiếc taxi 7 chỗ đi sân bay.⟧ — Prosimy o siedmioosobową taksówkę na lotnisko.
+❷ ⟦Thuê bao quý khách vừa gọi tạm thời không liên lạc được, xin vui lòng gọi lại sau.⟧ — Abonent jest chwilowo niedostępny, prosimy zadzwonić później.
+Nowe słówka: ⟦giúp đỡ⟧ pomagać | ⟦oe oe⟧ łee (płacz niemowlęcia) | ⟦nội dung⟧ treść | ⟦đính kèm⟧ załączyć | ⟦thuê bao⟧ abonent | ⟦tạm thời⟧ chwilowo | ⟦liên lạc⟧ kontaktować się

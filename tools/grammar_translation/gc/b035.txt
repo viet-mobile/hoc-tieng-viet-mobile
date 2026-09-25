@@ -1,0 +1,191 @@
+@@ pdf-grammar-f489eaedd0c0ee92#0
+=cs
+Klíčový výraz: ⟦dù ~ thế nào cũng⟧
+⟦dù + A + thế nào + (podmět) + cũng + B⟧ znamená „ať je A jakkoli, (podmět) přesto B“ a vyjadřuje děj či stav, který nastane za všech okolností. Varianta s jinou pozicí podmětu ⟦dù + A + (podmět) + thế nào cũng + B⟧ se překládá trochu jinak („i když A, (podmět) nějak / stejně B“), ale v zásadě má stejný význam.
+❶ ⟦Nếu muốn thì dù khó khăn thế nào em ấy cũng sẽ làm.⟧ — Když bude chtít, udělá to, ať je to jakkoli těžké.
+❷ Ⓐ ⟦Trời mưa to lắm! Hôm nay không đi có được không?⟧ — Strašně prší! Nemohli bychom dnes nejít? Ⓑ ⟦Đã hẹn với khách hàng rồi mà. Dù trời mưa to thế nào cũng phải đi chứ!⟧ — Vždyť jsme domluvení se zákazníkem. Ať prší sebevíc, musíme jít!
+Výrazy k blahopřání a přáním: ⟦vạn sự như ý/mơ⟧ ať se vše daří podle přání / snů | ⟦hay ăn chóng lớn⟧ ať (dítě) dobře papá a rychle roste | ⟦mẹ tròn con vuông※⟧ ať matka i dítě šťastně přečkají porod | ⟦trăm năm hạnh phúc⟧ sto let štěstí (novomanželům) | ⟦sống lâu mạnh khoẻ /sống lâu trăm tuổi⟧ dlouhý a zdravý život / ať se dožijete sta let
+※ ⟦mẹ tròn con vuông⟧: přání těhotné ženě před porodem, aby matka i dítě byly zdravé a vše proběhlo bez komplikací. ⟦tròn⟧ (kulatý) symbolizuje nebe, ⟦vuông⟧ (čtvercový) zemi.
+Procvičování 2 — dokončete rozhovor podle vzoru.
+Vzor (Ⓐ ⟦đang bị bệnh nặng mà lại đi làm⟧ je vážně nemocný, a přesto jde do práce; Ⓑ ⟦hoàn thành công việc đúng hạn, phải đi làm⟧ dokončit práci včas, musí jít): Ⓐ ⟦Anh đang bị bệnh nặng mà tại sao lại đi làm?⟧ — Jsi vážně nemocný, tak proč jdeš do práce? Ⓑ ⟦Để hoàn thành công việc đúng hạn, dù bị bệnh nặng thế nào anh cũng phải đi làm!⟧ — Abych dokončil práci včas, musím jít do práce, ať jsem nemocný sebevíc!
+❶ (Ⓐ ⟦thích món này mà không ăn⟧ má to jídlo rád, a nejí ho; Ⓑ ⟦giảm cân, phải kiêng ăn⟧ zhubnout, musí se ho vzdát) Ⓐ ⟦Anh thích món này mà tại sao lại không ăn?⟧ — Máš to jídlo rád, tak proč ho nejíš? Ⓑ ⟦Để giảm cân, dù thích món này thế nào anh cũng phải kiêng ăn!⟧ — Abych zhubl, musím se ho vzdát, ať ho mám rád sebevíc!
+❷ (Ⓐ ⟦đã xin được việc làm ổn định thế rồi mà lại đi học nghề nữa⟧ už má stabilní práci, a přesto jde ještě do kurzu; Ⓑ ⟦phát triển bản thân, phải học tiếp chứ⟧ rozvíjet se, musí se učit dál) Ⓐ ⟦Anh đã xin được việc làm ổn định thế rồi mà tại sao lại đi học nghề nữa?⟧ — Už máš tak stabilní práci, proč chodíš ještě na rekvalifikaci? Ⓑ ⟦Để phát triển bản thân, dù công việc ổn định thế nào anh cũng phải học tiếp chứ!⟧ — Abych se rozvíjel, musím se učit dál, ať je práce jakkoli stabilní!
+Rozhovor: Min-ho blahopřeje Hiền ke svatbě.
+Min-ho: ⟦Ôi, thật vui quá. Chúc hai vợ chồng em trăm năm hạnh phúc nhé!⟧ — To je ale radost. Přeju vám oběma sto let štěstí!
+Hiền: ⟦Anh Min-ho đến rồi à? Cảm ơn anh đã đến dự lễ cưới của chúng em dù rất bận rộn.⟧ — Min-ho, ty už jsi tady? Děkuji, že jsi přišel na naši svatbu, i když máš tolik práce.
+Min-ho: ⟦Dù bận thế nào cũng phải đến chứ! Hôm nay em mặc váy cưới đẹp lắm!⟧ — Ať mám práce sebevíc, přijít jsem musel! Dnes ti ty svatební šaty moc sluší!
+Hiền: ⟦Cảm ơn anh. Cô dâu nào cũng xinh đẹp mà! Anh cũng nhanh lên nhé!⟧ — Děkuji. Každá nevěsta je krásná! Ty si taky pospěš!
+Min-ho: ⟦Ừ, anh cũng muốn lấy vợ sớm, em ơi!⟧ — Jo, já bych se taky rád brzy oženil!
+Procvičování — přání: ⟦hai vợ chồng em trăm năm hạnh phúc⟧ (vám oběma sto let štěstí) / ⟦em bé lớn lên khoẻ mạnh⟧ (ať miminko roste zdravé); oslava: ⟦lễ cưới⟧ (svatba) / ⟦lễ thôi nôi em bé⟧ (první narozeniny miminka); pochvala: ⟦em mặc váy cưới đẹp⟧ (sluší ti svatební šaty) / ⟦trông em bé đáng yêu⟧ (miminko je roztomilé); skromná odpověď: ⟦Cô dâu nào cũng xinh đẹp⟧ (každá nevěsta je krásná) / ⟦Em bé nào cũng dễ thương⟧ (každé miminko je roztomilé); přání mluvčího: ⟦lấy vợ sớm⟧ (brzy se oženit) / ⟦sinh em bé sớm⟧ (brzy mít miminko).
+Nová slovíčka: ⟦vạn sự⟧ všechny věci | ⟦(nhanh) chóng⟧ rychlý | ⟦vuông⟧ čtvercový, hranatý | ⟦bận rộn⟧ zaneprázdněný | ⟦cô dâu⟧ nevěsta | ⟦hạn⟧ lhůta, termín | ⟦kiêng⟧ vyhýbat se, zdržet se | ⟦ổn định⟧ stabilní
+=zh_cn
+核心表达：⟦dù ~ thế nào cũng⟧
+⟦dù + A + thế nào + (主语) + cũng + B⟧ 意为“不管多么A，（主语）也还是B”，表示必然发生的行为或状态。主语位置变化后的 ⟦dù + A + (主语) + thế nào cũng + B⟧ 虽可略译为“即使A，（主语）无论如何也要B”，但基本上意思相同。
+❶ ⟦Nếu muốn thì dù khó khăn thế nào em ấy cũng sẽ làm.⟧ —— 如果他想做，不管多难他都会去做。
+❷ Ⓐ ⟦Trời mưa to lắm! Hôm nay không đi có được không?⟧ —— 雨下得很大！今天不去行不行？ Ⓑ ⟦Đã hẹn với khách hàng rồi mà. Dù trời mưa to thế nào cũng phải đi chứ!⟧ —— 已经和客户约好了啊。雨再大也得去！
+与祝贺、祈愿相关的表达：⟦vạn sự như ý/mơ⟧ 万事如意 | ⟦hay ăn chóng lớn⟧（祝孩子）能吃快长 | ⟦mẹ tròn con vuông※⟧ 母子平安 | ⟦trăm năm hạnh phúc⟧ 百年好合 | ⟦sống lâu mạnh khoẻ /sống lâu trăm tuổi⟧ 健康长寿 / 长命百岁
+※ ⟦mẹ tròn con vuông⟧：对即将分娩的孕妇说的祝福语，祝愿母亲和孩子都健康平安。⟦tròn⟧（圆）象征天，⟦vuông⟧（方）象征地。
+句型练习2 —— 仿照范例完成对话。
+范例（Ⓐ ⟦đang bị bệnh nặng mà lại đi làm⟧ 病得很重还去上班；Ⓑ ⟦hoàn thành công việc đúng hạn, phải đi làm⟧ 为了按时完成工作，必须上班）：Ⓐ ⟦Anh đang bị bệnh nặng mà tại sao lại đi làm?⟧ —— 你病得这么重，为什么还去上班？ Ⓑ ⟦Để hoàn thành công việc đúng hạn, dù bị bệnh nặng thế nào anh cũng phải đi làm!⟧ —— 为了按时完成工作，不管病得多重我都得去上班！
+❶（Ⓐ ⟦thích món này mà không ăn⟧ 喜欢这道菜却不吃；Ⓑ ⟦giảm cân, phải kiêng ăn⟧ 为了减肥，必须忌口）Ⓐ ⟦Anh thích món này mà tại sao lại không ăn?⟧ —— 你喜欢这道菜，为什么不吃？ Ⓑ ⟦Để giảm cân, dù thích món này thế nào anh cũng phải kiêng ăn!⟧ —— 为了减肥，再喜欢这道菜我也得忌口！
+❷（Ⓐ ⟦đã xin được việc làm ổn định thế rồi mà lại đi học nghề nữa⟧ 已经找到稳定工作了还去学手艺；Ⓑ ⟦phát triển bản thân, phải học tiếp chứ⟧ 为了自我发展，必须继续学习）Ⓐ ⟦Anh đã xin được việc làm ổn định thế rồi mà tại sao lại đi học nghề nữa?⟧ —— 你已经找到这么稳定的工作了，为什么还去学手艺？ Ⓑ ⟦Để phát triển bản thân, dù công việc ổn định thế nào anh cũng phải học tiếp chứ!⟧ —— 为了发展自己，工作再稳定我也得继续学习！
+对话：敏浩在祝贺贤结婚。
+敏浩：⟦Ôi, thật vui quá. Chúc hai vợ chồng em trăm năm hạnh phúc nhé!⟧ —— 哇，真高兴。祝你们夫妻百年好合！
+贤：⟦Anh Min-ho đến rồi à? Cảm ơn anh đã đến dự lễ cưới của chúng em dù rất bận rộn.⟧ —— 敏浩哥来啦？谢谢你这么忙还来参加我们的婚礼。
+敏浩：⟦Dù bận thế nào cũng phải đến chứ! Hôm nay em mặc váy cưới đẹp lắm!⟧ —— 再忙也得来呀！你今天穿婚纱真漂亮！
+贤：⟦Cảm ơn anh. Cô dâu nào cũng xinh đẹp mà! Anh cũng nhanh lên nhé!⟧ —— 谢谢哥。新娘子都漂亮嘛！你也抓紧哦！
+敏浩：⟦Ừ, anh cũng muốn lấy vợ sớm, em ơi!⟧ —— 嗯，我也想早点娶老婆啊！
+句型练习 —— 祝福语：⟦hai vợ chồng em trăm năm hạnh phúc⟧（你们夫妻百年好合）/ ⟦em bé lớn lên khoẻ mạnh⟧（宝宝健康成长）；典礼：⟦lễ cưới⟧（婚礼）/ ⟦lễ thôi nôi em bé⟧（宝宝周岁宴）；称赞：⟦em mặc váy cưới đẹp⟧（你穿婚纱很漂亮）/ ⟦trông em bé đáng yêu⟧（宝宝看起来很可爱）；谦虚的回答：⟦Cô dâu nào cũng xinh đẹp⟧（新娘子都漂亮）/ ⟦Em bé nào cũng dễ thương⟧（宝宝都可爱）；心愿：⟦lấy vợ sớm⟧（早点娶老婆）/ ⟦sinh em bé sớm⟧（早点生宝宝）。
+新单词：⟦vạn sự⟧ 万事 | ⟦(nhanh) chóng⟧ 快的 | ⟦vuông⟧ 方的、四方形的 | ⟦bận rộn⟧ 忙碌 | ⟦cô dâu⟧ 新娘 | ⟦hạn⟧ 期限 | ⟦kiêng⟧ 忌、避免 | ⟦ổn định⟧ 稳定
+=zh
+核心表達：⟦dù ~ thế nào cũng⟧
+⟦dù + A + thế nào + (主詞) + cũng + B⟧ 意為「不管多麼A，（主詞）也還是B」，表示必然發生的行為或狀態。主詞位置改變後的 ⟦dù + A + (主詞) + thế nào cũng + B⟧ 雖可略譯為「即使A，（主詞）無論如何也要B」，但基本上意思相同。
+❶ ⟦Nếu muốn thì dù khó khăn thế nào em ấy cũng sẽ làm.⟧ —— 如果他想做，不管多難他都會去做。
+❷ Ⓐ ⟦Trời mưa to lắm! Hôm nay không đi có được không?⟧ —— 雨下得很大！今天不去行不行？ Ⓑ ⟦Đã hẹn với khách hàng rồi mà. Dù trời mưa to thế nào cũng phải đi chứ!⟧ —— 已經和客戶約好了啊。雨再大也得去！
+與祝賀、祈願相關的表達：⟦vạn sự như ý/mơ⟧ 萬事如意 | ⟦hay ăn chóng lớn⟧（祝孩子）頭好壯壯、快快長大 | ⟦mẹ tròn con vuông※⟧ 母子平安 | ⟦trăm năm hạnh phúc⟧ 百年好合 | ⟦sống lâu mạnh khoẻ /sống lâu trăm tuổi⟧ 健康長壽 / 長命百歲
+※ ⟦mẹ tròn con vuông⟧：對即將分娩的孕婦說的祝福語，祝願母親和孩子都健康平安。⟦tròn⟧（圓）象徵天，⟦vuông⟧（方）象徵地。
+句型練習2 —— 仿照範例完成對話。
+範例（Ⓐ ⟦đang bị bệnh nặng mà lại đi làm⟧ 病得很重還去上班；Ⓑ ⟦hoàn thành công việc đúng hạn, phải đi làm⟧ 為了按時完成工作，必須上班）：Ⓐ ⟦Anh đang bị bệnh nặng mà tại sao lại đi làm?⟧ —— 你病得這麼重，為什麼還去上班？ Ⓑ ⟦Để hoàn thành công việc đúng hạn, dù bị bệnh nặng thế nào anh cũng phải đi làm!⟧ —— 為了按時完成工作，不管病得多重我都得去上班！
+❶（Ⓐ ⟦thích món này mà không ăn⟧ 喜歡這道菜卻不吃；Ⓑ ⟦giảm cân, phải kiêng ăn⟧ 為了減肥，必須忌口）Ⓐ ⟦Anh thích món này mà tại sao lại không ăn?⟧ —— 你喜歡這道菜，為什麼不吃？ Ⓑ ⟦Để giảm cân, dù thích món này thế nào anh cũng phải kiêng ăn!⟧ —— 為了減肥，再喜歡這道菜我也得忌口！
+❷（Ⓐ ⟦đã xin được việc làm ổn định thế rồi mà lại đi học nghề nữa⟧ 已經找到穩定工作了還去學技術；Ⓑ ⟦phát triển bản thân, phải học tiếp chứ⟧ 為了自我發展，必須繼續學習）Ⓐ ⟦Anh đã xin được việc làm ổn định thế rồi mà tại sao lại đi học nghề nữa?⟧ —— 你已經找到這麼穩定的工作了，為什麼還去學技術？ Ⓑ ⟦Để phát triển bản thân, dù công việc ổn định thế nào anh cũng phải học tiếp chứ!⟧ —— 為了發展自己，工作再穩定我也得繼續學習！
+對話：敏浩在祝賀賢結婚。
+敏浩：⟦Ôi, thật vui quá. Chúc hai vợ chồng em trăm năm hạnh phúc nhé!⟧ —— 哇，真高興。祝你們夫妻百年好合！
+賢：⟦Anh Min-ho đến rồi à? Cảm ơn anh đã đến dự lễ cưới của chúng em dù rất bận rộn.⟧ —— 敏浩哥來啦？謝謝你這麼忙還來參加我們的婚禮。
+敏浩：⟦Dù bận thế nào cũng phải đến chứ! Hôm nay em mặc váy cưới đẹp lắm!⟧ —— 再忙也得來呀！妳今天穿婚紗真漂亮！
+賢：⟦Cảm ơn anh. Cô dâu nào cũng xinh đẹp mà! Anh cũng nhanh lên nhé!⟧ —— 謝謝哥。新娘都很漂亮嘛！你也要加快腳步喔！
+敏浩：⟦Ừ, anh cũng muốn lấy vợ sớm, em ơi!⟧ —— 嗯，我也想早點娶老婆啊！
+句型練習 —— 祝福語：⟦hai vợ chồng em trăm năm hạnh phúc⟧（你們夫妻百年好合）/ ⟦em bé lớn lên khoẻ mạnh⟧（寶寶健康長大）；典禮：⟦lễ cưới⟧（婚禮）/ ⟦lễ thôi nôi em bé⟧（寶寶週歲宴）；稱讚：⟦em mặc váy cưới đẹp⟧（妳穿婚紗很漂亮）/ ⟦trông em bé đáng yêu⟧（寶寶看起來很可愛）；謙虛的回答：⟦Cô dâu nào cũng xinh đẹp⟧（新娘都很漂亮）/ ⟦Em bé nào cũng dễ thương⟧（寶寶都很可愛）；心願：⟦lấy vợ sớm⟧（早點娶老婆）/ ⟦sinh em bé sớm⟧（早點生寶寶）。
+新單字：⟦vạn sự⟧ 萬事 | ⟦(nhanh) chóng⟧ 快的 | ⟦vuông⟧ 方的、四方形的 | ⟦bận rộn⟧ 忙碌 | ⟦cô dâu⟧ 新娘 | ⟦hạn⟧ 期限 | ⟦kiêng⟧ 忌、避免 | ⟦ổn định⟧ 穩定
+=en
+Key expression: ⟦dù ~ thế nào cũng⟧
+⟦dù + A + thế nào + (subject) + cũng + B⟧ means "no matter how A, (the subject) still B" and expresses an action or state that will happen regardless. In the variant with the subject moved, ⟦dù + A + (subject) + thế nào cũng + B⟧, the nuance shifts slightly ("even if A, (the subject) will B somehow"), but the meaning is basically the same.
+❶ ⟦Nếu muốn thì dù khó khăn thế nào em ấy cũng sẽ làm.⟧ — If she wants to, she'll do it no matter how hard it is.
+❷ Ⓐ ⟦Trời mưa to lắm! Hôm nay không đi có được không?⟧ — It's pouring! Can't we skip it today? Ⓑ ⟦Đã hẹn với khách hàng rồi mà. Dù trời mưa to thế nào cũng phải đi chứ!⟧ — We've already arranged to meet the client. However hard it rains, we have to go!
+Expressions for congratulations and wishes: ⟦vạn sự như ý/mơ⟧ may everything go as you wish / dream | ⟦hay ăn chóng lớn⟧ (to a child) eat well and grow fast | ⟦mẹ tròn con vuông※⟧ may mother and baby come through safely | ⟦trăm năm hạnh phúc⟧ a hundred years of happiness (to newlyweds) | ⟦sống lâu mạnh khoẻ /sống lâu trăm tuổi⟧ long life and good health / live to a hundred
+※ ⟦mẹ tròn con vuông⟧: a wish for a pregnant woman about to give birth, that mother and baby will both be healthy and safe. ⟦tròn⟧ (round) stands for heaven and ⟦vuông⟧ (square) for earth.
+Pattern practice 2 — complete the dialogue as in the model.
+Model (Ⓐ ⟦đang bị bệnh nặng mà lại đi làm⟧ seriously ill yet going to work; Ⓑ ⟦hoàn thành công việc đúng hạn, phải đi làm⟧ to finish the work on time, must go to work): Ⓐ ⟦Anh đang bị bệnh nặng mà tại sao lại đi làm?⟧ — You're seriously ill, so why are you going to work? Ⓑ ⟦Để hoàn thành công việc đúng hạn, dù bị bệnh nặng thế nào anh cũng phải đi làm!⟧ — To finish the work on time, I have to go to work however ill I am!
+❶ (Ⓐ ⟦thích món này mà không ăn⟧ likes this dish yet doesn't eat it; Ⓑ ⟦giảm cân, phải kiêng ăn⟧ to lose weight, must abstain) Ⓐ ⟦Anh thích món này mà tại sao lại không ăn?⟧ — You like this dish, so why aren't you eating it? Ⓑ ⟦Để giảm cân, dù thích món này thế nào anh cũng phải kiêng ăn!⟧ — To lose weight, I have to go without it, however much I like it!
+❷ (Ⓐ ⟦đã xin được việc làm ổn định thế rồi mà lại đi học nghề nữa⟧ already has a stable job yet is taking vocational training; Ⓑ ⟦phát triển bản thân, phải học tiếp chứ⟧ to develop oneself, must keep learning) Ⓐ ⟦Anh đã xin được việc làm ổn định thế rồi mà tại sao lại đi học nghề nữa?⟧ — You've already got such a stable job, so why are you doing vocational training too? Ⓑ ⟦Để phát triển bản thân, dù công việc ổn định thế nào anh cũng phải học tiếp chứ!⟧ — To develop myself, I have to keep learning, however stable my job is!
+Dialogue: Min-ho is congratulating Hiền on her wedding.
+Min-ho: ⟦Ôi, thật vui quá. Chúc hai vợ chồng em trăm năm hạnh phúc nhé!⟧ — Oh, how wonderful. I wish you both a hundred years of happiness!
+Hiền: ⟦Anh Min-ho đến rồi à? Cảm ơn anh đã đến dự lễ cưới của chúng em dù rất bận rộn.⟧ — Min-ho, you're here? Thank you for coming to our wedding even though you're so busy.
+Min-ho: ⟦Dù bận thế nào cũng phải đến chứ! Hôm nay em mặc váy cưới đẹp lắm!⟧ — However busy I am, I had to come! You look beautiful in your wedding dress today!
+Hiền: ⟦Cảm ơn anh. Cô dâu nào cũng xinh đẹp mà! Anh cũng nhanh lên nhé!⟧ — Thank you. Every bride is beautiful! You'd better hurry up too!
+Min-ho: ⟦Ừ, anh cũng muốn lấy vợ sớm, em ơi!⟧ — Yes, I'd like to get married soon too!
+Pattern practice — wish: ⟦hai vợ chồng em trăm năm hạnh phúc⟧ (a hundred years of happiness to you both) / ⟦em bé lớn lên khoẻ mạnh⟧ (may the baby grow up healthy); occasion: ⟦lễ cưới⟧ (wedding) / ⟦lễ thôi nôi em bé⟧ (baby's first birthday); compliment: ⟦em mặc váy cưới đẹp⟧ (you look lovely in your wedding dress) / ⟦trông em bé đáng yêu⟧ (the baby looks adorable); modest reply: ⟦Cô dâu nào cũng xinh đẹp⟧ (every bride is beautiful) / ⟦Em bé nào cũng dễ thương⟧ (every baby is cute); wish for oneself: ⟦lấy vợ sớm⟧ (get married soon) / ⟦sinh em bé sớm⟧ (have a baby soon).
+New words: ⟦vạn sự⟧ all things | ⟦(nhanh) chóng⟧ quick | ⟦vuông⟧ square | ⟦bận rộn⟧ busy | ⟦cô dâu⟧ bride | ⟦hạn⟧ deadline, time limit | ⟦kiêng⟧ to abstain, avoid | ⟦ổn định⟧ stable
+=fr
+Expression clé : ⟦dù ~ thế nào cũng⟧
+⟦dù + A + thế nào + (sujet) + cũng + B⟧ signifie « si A que ce soit, (le sujet) B quand même » et exprime une action ou un état qui se produira de toute façon. Dans la variante où le sujet est déplacé, ⟦dù + A + (sujet) + thế nào cũng + B⟧, la nuance change légèrement (« même si A, (le sujet) B d'une manière ou d'une autre »), mais le sens est fondamentalement le même.
+❶ ⟦Nếu muốn thì dù khó khăn thế nào em ấy cũng sẽ làm.⟧ — Si elle le veut, elle le fera, aussi difficile que ce soit.
+❷ Ⓐ ⟦Trời mưa to lắm! Hôm nay không đi có được không?⟧ — Il pleut à verse ! On ne pourrait pas ne pas y aller aujourd'hui ? Ⓑ ⟦Đã hẹn với khách hàng rồi mà. Dù trời mưa to thế nào cũng phải đi chứ!⟧ — On a déjà rendez-vous avec le client. Même s'il pleut des cordes, il faut y aller !
+Expressions de félicitations et de vœux : ⟦vạn sự như ý/mơ⟧ que tout se passe selon vos souhaits / vos rêves | ⟦hay ăn chóng lớn⟧ (à un enfant) mange bien et grandis vite | ⟦mẹ tròn con vuông※⟧ que la mère et l'enfant se portent bien | ⟦trăm năm hạnh phúc⟧ cent ans de bonheur (aux mariés) | ⟦sống lâu mạnh khoẻ /sống lâu trăm tuổi⟧ longue vie et bonne santé / vivre jusqu'à cent ans
+※ ⟦mẹ tròn con vuông⟧ : vœu adressé à une femme enceinte avant l'accouchement, pour que la mère et le bébé soient en bonne santé et que tout se passe bien. ⟦tròn⟧ (rond) symbolise le ciel, ⟦vuông⟧ (carré) la terre.
+Exercice 2 — complétez le dialogue comme dans le modèle.
+Modèle (Ⓐ ⟦đang bị bệnh nặng mà lại đi làm⟧ gravement malade et pourtant au travail ; Ⓑ ⟦hoàn thành công việc đúng hạn, phải đi làm⟧ pour finir le travail à temps, obligé d'aller travailler) : Ⓐ ⟦Anh đang bị bệnh nặng mà tại sao lại đi làm?⟧ — Tu es gravement malade, pourquoi vas-tu travailler ? Ⓑ ⟦Để hoàn thành công việc đúng hạn, dù bị bệnh nặng thế nào anh cũng phải đi làm!⟧ — Pour finir le travail dans les délais, je dois y aller, si malade que je sois !
+❶ (Ⓐ ⟦thích món này mà không ăn⟧ aime ce plat mais n'en mange pas ; Ⓑ ⟦giảm cân, phải kiêng ăn⟧ pour maigrir, doit s'en priver) Ⓐ ⟦Anh thích món này mà tại sao lại không ăn?⟧ — Tu aimes ce plat, pourquoi n'en manges-tu pas ? Ⓑ ⟦Để giảm cân, dù thích món này thế nào anh cũng phải kiêng ăn!⟧ — Pour maigrir, je dois m'en priver, même si je l'adore !
+❷ (Ⓐ ⟦đã xin được việc làm ổn định thế rồi mà lại đi học nghề nữa⟧ a déjà un emploi stable et suit pourtant une formation ; Ⓑ ⟦phát triển bản thân, phải học tiếp chứ⟧ pour progresser, doit continuer à apprendre) Ⓐ ⟦Anh đã xin được việc làm ổn định thế rồi mà tại sao lại đi học nghề nữa?⟧ — Tu as déjà un emploi si stable, pourquoi suis-tu encore une formation professionnelle ? Ⓑ ⟦Để phát triển bản thân, dù công việc ổn định thế nào anh cũng phải học tiếp chứ!⟧ — Pour progresser, je dois continuer à apprendre, aussi stable que soit mon emploi !
+Dialogue : Min-ho félicite Hiền pour son mariage.
+Min-ho : ⟦Ôi, thật vui quá. Chúc hai vợ chồng em trăm năm hạnh phúc nhé!⟧ — Oh, quelle joie ! Je vous souhaite à tous les deux cent ans de bonheur !
+Hiền : ⟦Anh Min-ho đến rồi à? Cảm ơn anh đã đến dự lễ cưới của chúng em dù rất bận rộn.⟧ — Min-ho, tu es là ? Merci d'être venu à notre mariage malgré ton emploi du temps chargé.
+Min-ho : ⟦Dù bận thế nào cũng phải đến chứ! Hôm nay em mặc váy cưới đẹp lắm!⟧ — Si occupé que je sois, il fallait que je vienne ! Ta robe de mariée est magnifique aujourd'hui !
+Hiền : ⟦Cảm ơn anh. Cô dâu nào cũng xinh đẹp mà! Anh cũng nhanh lên nhé!⟧ — Merci. Toutes les mariées sont belles ! Dépêche-toi toi aussi !
+Min-ho : ⟦Ừ, anh cũng muốn lấy vợ sớm, em ơi!⟧ — Oui, moi aussi j'aimerais me marier bientôt !
+Exercices — vœu : ⟦hai vợ chồng em trăm năm hạnh phúc⟧ (cent ans de bonheur à vous deux) / ⟦em bé lớn lên khoẻ mạnh⟧ (que le bébé grandisse en bonne santé) ; occasion : ⟦lễ cưới⟧ (mariage) / ⟦lễ thôi nôi em bé⟧ (premier anniversaire du bébé) ; compliment : ⟦em mặc váy cưới đẹp⟧ (ta robe de mariée te va bien) / ⟦trông em bé đáng yêu⟧ (le bébé est adorable) ; réponse modeste : ⟦Cô dâu nào cũng xinh đẹp⟧ (toutes les mariées sont belles) / ⟦Em bé nào cũng dễ thương⟧ (tous les bébés sont mignons) ; souhait : ⟦lấy vợ sớm⟧ (se marier bientôt) / ⟦sinh em bé sớm⟧ (avoir bientôt un bébé).
+Nouveaux mots : ⟦vạn sự⟧ toutes choses | ⟦(nhanh) chóng⟧ rapide | ⟦vuông⟧ carré | ⟦bận rộn⟧ occupé | ⟦cô dâu⟧ mariée | ⟦hạn⟧ délai, échéance | ⟦kiêng⟧ s'abstenir, éviter | ⟦ổn định⟧ stable
+=de
+Schlüsselausdruck: ⟦dù ~ thế nào cũng⟧
+⟦dù + A + thế nào + (Subjekt) + cũng + B⟧ bedeutet „wie A auch immer, (das Subjekt) trotzdem B“ und drückt eine Handlung oder einen Zustand aus, der in jedem Fall eintritt. In der Variante mit verschobenem Subjekt ⟦dù + A + (Subjekt) + thế nào cũng + B⟧ verschiebt sich die Nuance leicht („auch wenn A, (das Subjekt) irgendwie B“), die Grundbedeutung ist aber gleich.
+❶ ⟦Nếu muốn thì dù khó khăn thế nào em ấy cũng sẽ làm.⟧ — Wenn sie will, macht sie es, egal wie schwer es ist.
+❷ Ⓐ ⟦Trời mưa to lắm! Hôm nay không đi có được không?⟧ — Es gießt! Können wir heute nicht einfach nicht gehen? Ⓑ ⟦Đã hẹn với khách hàng rồi mà. Dù trời mưa to thế nào cũng phải đi chứ!⟧ — Wir haben doch schon einen Termin mit dem Kunden. Egal wie sehr es regnet, wir müssen hin!
+Ausdrücke für Glückwünsche: ⟦vạn sự như ý/mơ⟧ möge alles nach Wunsch / wie erträumt gelingen | ⟦hay ăn chóng lớn⟧ (zu einem Kind) iss gut und wachse schnell | ⟦mẹ tròn con vuông※⟧ mögen Mutter und Kind wohlauf sein | ⟦trăm năm hạnh phúc⟧ hundert Jahre Glück (für Brautpaare) | ⟦sống lâu mạnh khoẻ /sống lâu trăm tuổi⟧ langes, gesundes Leben / hundert Jahre alt werden
+※ ⟦mẹ tròn con vuông⟧: Wunsch an eine Schwangere vor der Geburt, dass Mutter und Kind gesund bleiben und alles gut verläuft. ⟦tròn⟧ (rund) steht für den Himmel, ⟦vuông⟧ (quadratisch) für die Erde.
+Übung 2 — den Dialog wie im Muster vervollständigen.
+Muster (Ⓐ ⟦đang bị bệnh nặng mà lại đi làm⟧ schwer krank und trotzdem zur Arbeit; Ⓑ ⟦hoàn thành công việc đúng hạn, phải đi làm⟧ um die Arbeit fristgerecht zu erledigen, muss er hin): Ⓐ ⟦Anh đang bị bệnh nặng mà tại sao lại đi làm?⟧ — Du bist schwer krank, warum gehst du zur Arbeit? Ⓑ ⟦Để hoàn thành công việc đúng hạn, dù bị bệnh nặng thế nào anh cũng phải đi làm!⟧ — Um die Arbeit fristgerecht zu erledigen, muss ich hin, egal wie krank ich bin!
+❶ (Ⓐ ⟦thích món này mà không ăn⟧ mag das Gericht, isst es aber nicht; Ⓑ ⟦giảm cân, phải kiêng ăn⟧ um abzunehmen, muss verzichten) Ⓐ ⟦Anh thích món này mà tại sao lại không ăn?⟧ — Du magst das Gericht doch, warum isst du es nicht? Ⓑ ⟦Để giảm cân, dù thích món này thế nào anh cũng phải kiêng ăn!⟧ — Um abzunehmen, muss ich darauf verzichten, egal wie gern ich es mag!
+❷ (Ⓐ ⟦đã xin được việc làm ổn định thế rồi mà lại đi học nghề nữa⟧ hat schon eine feste Stelle und macht trotzdem noch eine Ausbildung; Ⓑ ⟦phát triển bản thân, phải học tiếp chứ⟧ um sich weiterzuentwickeln, muss weiterlernen) Ⓐ ⟦Anh đã xin được việc làm ổn định thế rồi mà tại sao lại đi học nghề nữa?⟧ — Du hast doch schon so eine sichere Stelle, warum machst du noch eine Ausbildung? Ⓑ ⟦Để phát triển bản thân, dù công việc ổn định thế nào anh cũng phải học tiếp chứ!⟧ — Um mich weiterzuentwickeln, muss ich weiterlernen, egal wie sicher die Stelle ist!
+Dialog: Min-ho gratuliert Hiền zur Hochzeit.
+Min-ho: ⟦Ôi, thật vui quá. Chúc hai vợ chồng em trăm năm hạnh phúc nhé!⟧ — Oh, wie schön! Ich wünsche euch beiden hundert Jahre Glück!
+Hiền: ⟦Anh Min-ho đến rồi à? Cảm ơn anh đã đến dự lễ cưới của chúng em dù rất bận rộn.⟧ — Min-ho, du bist schon da? Danke, dass du trotz deines vollen Terminkalenders zu unserer Hochzeit gekommen bist.
+Min-ho: ⟦Dù bận thế nào cũng phải đến chứ! Hôm nay em mặc váy cưới đẹp lắm!⟧ — Egal wie viel ich zu tun habe, ich musste kommen! Du siehst heute wunderschön aus im Brautkleid!
+Hiền: ⟦Cảm ơn anh. Cô dâu nào cũng xinh đẹp mà! Anh cũng nhanh lên nhé!⟧ — Danke. Jede Braut ist schön! Beeil du dich auch mal!
+Min-ho: ⟦Ừ, anh cũng muốn lấy vợ sớm, em ơi!⟧ — Ja, ich möchte auch bald heiraten!
+Satzmusterübung — Glückwunsch: ⟦hai vợ chồng em trăm năm hạnh phúc⟧ (hundert Jahre Glück für euch beide) / ⟦em bé lớn lên khoẻ mạnh⟧ (möge das Baby gesund aufwachsen); Anlass: ⟦lễ cưới⟧ (Hochzeit) / ⟦lễ thôi nôi em bé⟧ (erster Geburtstag des Babys); Kompliment: ⟦em mặc váy cưới đẹp⟧ (das Brautkleid steht dir) / ⟦trông em bé đáng yêu⟧ (das Baby ist süß); bescheidene Antwort: ⟦Cô dâu nào cũng xinh đẹp⟧ (jede Braut ist schön) / ⟦Em bé nào cũng dễ thương⟧ (jedes Baby ist süß); eigener Wunsch: ⟦lấy vợ sớm⟧ (bald heiraten) / ⟦sinh em bé sớm⟧ (bald ein Baby bekommen).
+Neue Wörter: ⟦vạn sự⟧ alle Dinge | ⟦(nhanh) chóng⟧ schnell | ⟦vuông⟧ quadratisch, viereckig | ⟦bận rộn⟧ beschäftigt | ⟦cô dâu⟧ Braut | ⟦hạn⟧ Frist | ⟦kiêng⟧ meiden, verzichten | ⟦ổn định⟧ stabil
+=hu
+Kulcskifejezés: ⟦dù ~ thế nào cũng⟧
+A ⟦dù + A + thế nào + (alany) + cũng + B⟧ jelentése „akármennyire A, (az alany) mégis B”, olyan cselekvést vagy állapotot fejez ki, amely mindenképp bekövetkezik. Az alany áthelyezésével kapott ⟦dù + A + (alany) + thế nào cũng + B⟧ változat árnyalata kissé eltér („még ha A is, (az alany) valahogy B”), de alapjában ugyanazt jelenti.
+❶ ⟦Nếu muốn thì dù khó khăn thế nào em ấy cũng sẽ làm.⟧ — Ha akarja, megcsinálja, akármilyen nehéz is.
+❷ Ⓐ ⟦Trời mưa to lắm! Hôm nay không đi có được không?⟧ — Nagyon esik! Nem lehetne ma nem menni? Ⓑ ⟦Đã hẹn với khách hàng rồi mà. Dù trời mưa to thế nào cũng phải đi chứ!⟧ — Már megbeszéltük az ügyféllel. Akármennyire esik, mennünk kell!
+Gratulációval, jókívánsággal kapcsolatos kifejezések: ⟦vạn sự như ý/mơ⟧ minden úgy sikerüljön, ahogy szeretnéd / álmodod | ⟦hay ăn chóng lớn⟧ (gyereknek) egyél jól és nőj nagyra | ⟦mẹ tròn con vuông※⟧ anya és gyermek épségben legyen | ⟦trăm năm hạnh phúc⟧ száz év boldogság (ifjú házasoknak) | ⟦sống lâu mạnh khoẻ /sống lâu trăm tuổi⟧ hosszú, egészséges élet / éljen száz évig
+※ ⟦mẹ tròn con vuông⟧: szülés előtt álló kismamának mondott jókívánság, hogy anya és baba is egészséges legyen és minden rendben menjen. A ⟦tròn⟧ (kerek) az eget, a ⟦vuông⟧ (négyzetes) a földet jelképezi.
+2. gyakorlat — egészítse ki a párbeszédet a minta szerint.
+Minta (Ⓐ ⟦đang bị bệnh nặng mà lại đi làm⟧ súlyos beteg, mégis dolgozni megy; Ⓑ ⟦hoàn thành công việc đúng hạn, phải đi làm⟧ hogy határidőre végezzen, mennie kell): Ⓐ ⟦Anh đang bị bệnh nặng mà tại sao lại đi làm?⟧ — Súlyos beteg vagy, miért mész dolgozni? Ⓑ ⟦Để hoàn thành công việc đúng hạn, dù bị bệnh nặng thế nào anh cũng phải đi làm!⟧ — Hogy határidőre befejezzem a munkát, mennem kell, akármilyen beteg vagyok!
+❶ (Ⓐ ⟦thích món này mà không ăn⟧ szereti ezt az ételt, mégsem eszi; Ⓑ ⟦giảm cân, phải kiêng ăn⟧ fogyni akar, le kell mondania róla) Ⓐ ⟦Anh thích món này mà tại sao lại không ăn?⟧ — Szereted ezt az ételt, miért nem eszed? Ⓑ ⟦Để giảm cân, dù thích món này thế nào anh cũng phải kiêng ăn!⟧ — Hogy lefogyjak, le kell mondanom róla, akármennyire szeretem!
+❷ (Ⓐ ⟦đã xin được việc làm ổn định thế rồi mà lại đi học nghề nữa⟧ már stabil állása van, mégis szakmát tanul; Ⓑ ⟦phát triển bản thân, phải học tiếp chứ⟧ hogy fejlődjön, tovább kell tanulnia) Ⓐ ⟦Anh đã xin được việc làm ổn định thế rồi mà tại sao lại đi học nghề nữa?⟧ — Már ilyen stabil állásod van, miért tanulsz még szakmát? Ⓑ ⟦Để phát triển bản thân, dù công việc ổn định thế nào anh cũng phải học tiếp chứ!⟧ — Hogy fejlődjek, tovább kell tanulnom, akármilyen stabil is az állásom!
+Párbeszéd: Min-ho gratulál Hiền esküvőjéhez.
+Min-ho: ⟦Ôi, thật vui quá. Chúc hai vợ chồng em trăm năm hạnh phúc nhé!⟧ — Ó, de nagy öröm! Száz év boldogságot kívánok nektek!
+Hiền: ⟦Anh Min-ho đến rồi à? Cảm ơn anh đã đến dự lễ cưới của chúng em dù rất bận rộn.⟧ — Min-ho, megjöttél? Köszönöm, hogy eljöttél az esküvőnkre, pedig nagyon elfoglalt vagy.
+Min-ho: ⟦Dù bận thế nào cũng phải đến chứ! Hôm nay em mặc váy cưới đẹp lắm!⟧ — Akármennyire elfoglalt vagyok, el kellett jönnöm! Gyönyörű vagy ma a menyasszonyi ruhában!
+Hiền: ⟦Cảm ơn anh. Cô dâu nào cũng xinh đẹp mà! Anh cũng nhanh lên nhé!⟧ — Köszönöm. Minden menyasszony szép! Te is siess ám!
+Min-ho: ⟦Ừ, anh cũng muốn lấy vợ sớm, em ơi!⟧ — Igen, én is szeretnék mielőbb megnősülni!
+Mintagyakorlat — jókívánság: ⟦hai vợ chồng em trăm năm hạnh phúc⟧ (száz év boldogság nektek) / ⟦em bé lớn lên khoẻ mạnh⟧ (nőjön fel egészségesen a baba); alkalom: ⟦lễ cưới⟧ (esküvő) / ⟦lễ thôi nôi em bé⟧ (a baba első születésnapja); dicséret: ⟦em mặc váy cưới đẹp⟧ (jól áll a menyasszonyi ruha) / ⟦trông em bé đáng yêu⟧ (aranyos a baba); szerény válasz: ⟦Cô dâu nào cũng xinh đẹp⟧ (minden menyasszony szép) / ⟦Em bé nào cũng dễ thương⟧ (minden baba aranyos); saját kívánság: ⟦lấy vợ sớm⟧ (hamar megnősülni) / ⟦sinh em bé sớm⟧ (hamar babát szülni).
+Új szavak: ⟦vạn sự⟧ minden dolog | ⟦(nhanh) chóng⟧ gyors | ⟦vuông⟧ négyzetes, szögletes | ⟦bận rộn⟧ elfoglalt | ⟦cô dâu⟧ menyasszony | ⟦hạn⟧ határidő | ⟦kiêng⟧ kerülni, tartózkodni | ⟦ổn định⟧ stabil
+=id
+Ungkapan kunci: ⟦dù ~ thế nào cũng⟧
+⟦dù + A + thế nào + (subjek) + cũng + B⟧ berarti "seberapa pun A, (subjek) tetap B" dan menyatakan tindakan atau keadaan yang pasti terjadi. Varian dengan posisi subjek berubah, ⟦dù + A + (subjek) + thế nào cũng + B⟧, bernuansa sedikit berbeda ("walaupun A, (subjek) bagaimanapun juga B"), tetapi pada dasarnya bermakna sama.
+❶ ⟦Nếu muốn thì dù khó khăn thế nào em ấy cũng sẽ làm.⟧ — Kalau mau, sesulit apa pun dia tetap akan melakukannya.
+❷ Ⓐ ⟦Trời mưa to lắm! Hôm nay không đi có được không?⟧ — Hujannya deras sekali! Hari ini tidak pergi boleh tidak? Ⓑ ⟦Đã hẹn với khách hàng rồi mà. Dù trời mưa to thế nào cũng phải đi chứ!⟧ — Kita sudah janji dengan klien. Sederas apa pun hujannya, kita tetap harus pergi!
+Ungkapan ucapan selamat dan doa: ⟦vạn sự như ý/mơ⟧ semoga semua berjalan sesuai keinginan / impian | ⟦hay ăn chóng lớn⟧ (kepada anak) makan yang banyak dan cepat besar | ⟦mẹ tròn con vuông※⟧ semoga ibu dan bayi selamat | ⟦trăm năm hạnh phúc⟧ bahagia sampai seratus tahun (untuk pengantin) | ⟦sống lâu mạnh khoẻ /sống lâu trăm tuổi⟧ panjang umur dan sehat / berumur seratus tahun
+※ ⟦mẹ tròn con vuông⟧: doa untuk ibu hamil yang akan melahirkan agar ibu dan bayi sehat dan selamat. ⟦tròn⟧ (bulat) melambangkan langit, ⟦vuông⟧ (persegi) melambangkan bumi.
+Latihan pola 2 — lengkapi percakapan seperti contoh.
+Contoh (Ⓐ ⟦đang bị bệnh nặng mà lại đi làm⟧ sakit parah tetapi tetap bekerja; Ⓑ ⟦hoàn thành công việc đúng hạn, phải đi làm⟧ supaya pekerjaan selesai tepat waktu, harus bekerja): Ⓐ ⟦Anh đang bị bệnh nặng mà tại sao lại đi làm?⟧ — Kakak sedang sakit parah, kenapa tetap bekerja? Ⓑ ⟦Để hoàn thành công việc đúng hạn, dù bị bệnh nặng thế nào anh cũng phải đi làm!⟧ — Supaya pekerjaan selesai tepat waktu, separah apa pun sakitnya aku tetap harus bekerja!
+❶ (Ⓐ ⟦thích món này mà không ăn⟧ suka makanan ini tetapi tidak makan; Ⓑ ⟦giảm cân, phải kiêng ăn⟧ untuk diet, harus pantang) Ⓐ ⟦Anh thích món này mà tại sao lại không ăn?⟧ — Kakak suka makanan ini, kenapa tidak dimakan? Ⓑ ⟦Để giảm cân, dù thích món này thế nào anh cũng phải kiêng ăn!⟧ — Supaya berat badan turun, sesuka apa pun aku harus pantang!
+❷ (Ⓐ ⟦đã xin được việc làm ổn định thế rồi mà lại đi học nghề nữa⟧ sudah punya pekerjaan tetap tetapi masih ikut kursus keterampilan; Ⓑ ⟦phát triển bản thân, phải học tiếp chứ⟧ untuk mengembangkan diri, harus terus belajar) Ⓐ ⟦Anh đã xin được việc làm ổn định thế rồi mà tại sao lại đi học nghề nữa?⟧ — Kakak sudah punya pekerjaan yang begitu mapan, kenapa masih ikut kursus keterampilan? Ⓑ ⟦Để phát triển bản thân, dù công việc ổn định thế nào anh cũng phải học tiếp chứ!⟧ — Untuk mengembangkan diri, semapan apa pun pekerjaanku aku tetap harus terus belajar!
+Percakapan: Min-ho memberi selamat atas pernikahan Hiền.
+Min-ho: ⟦Ôi, thật vui quá. Chúc hai vợ chồng em trăm năm hạnh phúc nhé!⟧ — Wah, senang sekali. Semoga kalian berdua bahagia sampai seratus tahun!
+Hiền: ⟦Anh Min-ho đến rồi à? Cảm ơn anh đã đến dự lễ cưới của chúng em dù rất bận rộn.⟧ — Kak Min-ho sudah datang? Terima kasih sudah datang ke pernikahan kami walaupun sangat sibuk.
+Min-ho: ⟦Dù bận thế nào cũng phải đến chứ! Hôm nay em mặc váy cưới đẹp lắm!⟧ — Sesibuk apa pun, aku harus datang! Hari ini kamu cantik sekali dengan gaun pengantin!
+Hiền: ⟦Cảm ơn anh. Cô dâu nào cũng xinh đẹp mà! Anh cũng nhanh lên nhé!⟧ — Terima kasih, Kak. Semua pengantin kan cantik! Kakak juga cepat menyusul, ya!
+Min-ho: ⟦Ừ, anh cũng muốn lấy vợ sớm, em ơi!⟧ — Iya, aku juga ingin cepat menikah!
+Latihan pola — ucapan: ⟦hai vợ chồng em trăm năm hạnh phúc⟧ (kalian berdua bahagia sampai seratus tahun) / ⟦em bé lớn lên khoẻ mạnh⟧ (semoga bayinya tumbuh sehat); acara: ⟦lễ cưới⟧ (pernikahan) / ⟦lễ thôi nôi em bé⟧ (ulang tahun pertama bayi); pujian: ⟦em mặc váy cưới đẹp⟧ (cantik dengan gaun pengantin) / ⟦trông em bé đáng yêu⟧ (bayinya lucu); jawaban rendah hati: ⟦Cô dâu nào cũng xinh đẹp⟧ (semua pengantin cantik) / ⟦Em bé nào cũng dễ thương⟧ (semua bayi lucu); harapan: ⟦lấy vợ sớm⟧ (cepat menikah) / ⟦sinh em bé sớm⟧ (cepat punya bayi).
+Kosakata baru: ⟦vạn sự⟧ segala hal | ⟦(nhanh) chóng⟧ cepat | ⟦vuông⟧ persegi | ⟦bận rộn⟧ sibuk | ⟦cô dâu⟧ pengantin wanita | ⟦hạn⟧ batas waktu | ⟦kiêng⟧ pantang, menghindari | ⟦ổn định⟧ stabil, mapan
+=ja
+核心表現：⟦dù ~ thế nào cũng⟧
+⟦dù + A + thế nào + (主語) + cũng + B⟧ は「たとえどんなにAでも（主語は）やはりBだ / Bする」という意味で、必ず起こる行為や状態を表します。主語の位置が変わった ⟦dù + A + (主語) + thế nào cũng + B⟧ も、訳は「たとえAでも（主語は）何としてもBする」と少し変わることがありますが、基本的には同じ意味で使われます。
+❶ ⟦Nếu muốn thì dù khó khăn thế nào em ấy cũng sẽ làm.⟧ — 望むなら、どんなに難しくてもあの子はやるだろう。
+❷ Ⓐ ⟦Trời mưa to lắm! Hôm nay không đi có được không?⟧ — 雨がすごく降っています！今日は行かなくてもいいですか。 Ⓑ ⟦Đã hẹn với khách hàng rồi mà. Dù trời mưa to thế nào cũng phải đi chứ!⟧ — もうお客さんと約束したんだから。どんなに雨が降っても行かなくちゃ！
+お祝い・祈願に関する表現：⟦vạn sự như ý/mơ⟧ 万事思い通りに / 夢の通りに | ⟦hay ăn chóng lớn⟧ （子どもに）よく食べて早く大きくなりますように | ⟦mẹ tròn con vuông※⟧ 母子ともに健やかに | ⟦trăm năm hạnh phúc⟧ 百年の幸せを（新郎新婦に） | ⟦sống lâu mạnh khoẻ /sống lâu trăm tuổi⟧ 健康で長生きを / 百歳まで長生きを
+※ ⟦mẹ tròn con vuông⟧：出産を控えた妊婦に、母親と赤ちゃんがともに健康で無事であるよう祈る言葉。⟦tròn⟧（丸い）は天を、⟦vuông⟧（四角い）は地を意味します。
+文型練習2 — 例のように会話を完成させましょう。
+例（Ⓐ ⟦đang bị bệnh nặng mà lại đi làm⟧ 重い病気なのに仕事に行く；Ⓑ ⟦hoàn thành công việc đúng hạn, phải đi làm⟧ 期限内に仕事を終えるため、行かなければならない）：Ⓐ ⟦Anh đang bị bệnh nặng mà tại sao lại đi làm?⟧ — 重い病気なのに、どうして仕事に行くんですか。 Ⓑ ⟦Để hoàn thành công việc đúng hạn, dù bị bệnh nặng thế nào anh cũng phải đi làm!⟧ — 期限内に仕事を終えるには、どんなに具合が悪くても行かなきゃいけないんだ！
+❶（Ⓐ ⟦thích món này mà không ăn⟧ この料理が好きなのに食べない；Ⓑ ⟦giảm cân, phải kiêng ăn⟧ 減量のため我慢しなければならない）Ⓐ ⟦Anh thích món này mà tại sao lại không ăn?⟧ — この料理が好きなのに、どうして食べないんですか。 Ⓑ ⟦Để giảm cân, dù thích món này thế nào anh cũng phải kiêng ăn!⟧ — 減量のために、どんなに好きでも我慢しなきゃいけないんだ！
+❷（Ⓐ ⟦đã xin được việc làm ổn định thế rồi mà lại đi học nghề nữa⟧ もう安定した仕事に就いたのにまだ職業訓練に通う；Ⓑ ⟦phát triển bản thân, phải học tiếp chứ⟧ 自己成長のため学び続けなければ）Ⓐ ⟦Anh đã xin được việc làm ổn định thế rồi mà tại sao lại đi học nghề nữa?⟧ — そんなに安定した仕事に就いたのに、どうしてまだ職業訓練に通うんですか。 Ⓑ ⟦Để phát triển bản thân, dù công việc ổn định thế nào anh cũng phải học tiếp chứ!⟧ — 自分を成長させるためには、仕事がどんなに安定していても学び続けなくちゃ！
+会話：ミンホがヒエンの結婚を祝っています。
+ミンホ：⟦Ôi, thật vui quá. Chúc hai vợ chồng em trăm năm hạnh phúc nhé!⟧ — わあ、本当にうれしいね。二人の末永い幸せを祈っているよ！
+ヒエン：⟦Anh Min-ho đến rồi à? Cảm ơn anh đã đến dự lễ cưới của chúng em dù rất bận rộn.⟧ — ミンホさん、来てくれたんですね。とても忙しいのに、私たちの結婚式に来てくれてありがとうございます。
+ミンホ：⟦Dù bận thế nào cũng phải đến chứ! Hôm nay em mặc váy cưới đẹp lắm!⟧ — どんなに忙しくても来なくちゃ！今日のウエディングドレス、すごくきれいだよ！
+ヒエン：⟦Cảm ơn anh. Cô dâu nào cũng xinh đẹp mà! Anh cũng nhanh lên nhé!⟧ — ありがとうございます。花嫁はみんなきれいなものですよ！ミンホさんも早くね！
+ミンホ：⟦Ừ, anh cũng muốn lấy vợ sớm, em ơi!⟧ — うん、僕も早く結婚したいよ！
+文型練習 — 祝いの言葉：⟦hai vợ chồng em trăm năm hạnh phúc⟧（二人の末永い幸せ）/ ⟦em bé lớn lên khoẻ mạnh⟧（赤ちゃんが健やかに育つこと）；行事：⟦lễ cưới⟧（結婚式）/ ⟦lễ thôi nôi em bé⟧（赤ちゃんの一歳のお祝い）；ほめ言葉：⟦em mặc váy cưới đẹp⟧（ウエディングドレスがきれい）/ ⟦trông em bé đáng yêu⟧（赤ちゃんがかわいい）；謙遜の返事：⟦Cô dâu nào cũng xinh đẹp⟧（花嫁はみんなきれい）/ ⟦Em bé nào cũng dễ thương⟧（赤ちゃんはみんなかわいい）；願い：⟦lấy vợ sớm⟧（早く結婚する）/ ⟦sinh em bé sớm⟧（早く赤ちゃんを産む）。
+新出単語：⟦vạn sự⟧ 万事 | ⟦(nhanh) chóng⟧ 速い | ⟦vuông⟧ 四角い、四角形の | ⟦bận rộn⟧ 忙しい | ⟦cô dâu⟧ 花嫁、新婦 | ⟦hạn⟧ 定められた時間・期間、期限 | ⟦kiêng⟧ 避ける、控える | ⟦ổn định⟧ 安定した、安定的だ
+=pl
+Kluczowe wyrażenie: ⟦dù ~ thế nào cũng⟧
+⟦dù + A + thế nào + (podmiot) + cũng + B⟧ znaczy „choćby nie wiem jak A, (podmiot) i tak B” i wyraża czynność lub stan, który nastąpi w każdym przypadku. W wariancie z przesuniętym podmiotem ⟦dù + A + (podmiot) + thế nào cũng + B⟧ odcień nieco się zmienia („nawet jeśli A, (podmiot) jakoś B”), ale znaczenie jest zasadniczo to samo.
+❶ ⟦Nếu muốn thì dù khó khăn thế nào em ấy cũng sẽ làm.⟧ — Jeśli zechce, zrobi to, choćby nie wiem jak było trudno.
+❷ Ⓐ ⟦Trời mưa to lắm! Hôm nay không đi có được không?⟧ — Strasznie leje! Czy możemy dziś nie iść? Ⓑ ⟦Đã hẹn với khách hàng rồi mà. Dù trời mưa to thế nào cũng phải đi chứ!⟧ — Przecież jesteśmy umówieni z klientem. Choćby lało jak z cebra, musimy iść!
+Wyrażenia z gratulacjami i życzeniami: ⟦vạn sự như ý/mơ⟧ niech wszystko idzie po twojej myśli / jak we śnie | ⟦hay ăn chóng lớn⟧ (do dziecka) jedz dobrze i szybko rośnij | ⟦mẹ tròn con vuông※⟧ niech matka i dziecko będą zdrowi | ⟦trăm năm hạnh phúc⟧ sto lat szczęścia (dla nowożeńców) | ⟦sống lâu mạnh khoẻ /sống lâu trăm tuổi⟧ długiego i zdrowego życia / sto lat
+※ ⟦mẹ tròn con vuông⟧: życzenie dla kobiety tuż przed porodem, by matka i dziecko byli zdrowi i by wszystko przebiegło bez komplikacji. ⟦tròn⟧ (okrągły) symbolizuje niebo, a ⟦vuông⟧ (kwadratowy) ziemię.
+Ćwiczenie 2 — dokończ dialog jak we wzorze.
+Wzór (Ⓐ ⟦đang bị bệnh nặng mà lại đi làm⟧ jest ciężko chory, a mimo to idzie do pracy; Ⓑ ⟦hoàn thành công việc đúng hạn, phải đi làm⟧ żeby skończyć pracę w terminie, musi iść): Ⓐ ⟦Anh đang bị bệnh nặng mà tại sao lại đi làm?⟧ — Jesteś ciężko chory, czemu idziesz do pracy? Ⓑ ⟦Để hoàn thành công việc đúng hạn, dù bị bệnh nặng thế nào anh cũng phải đi làm!⟧ — Żeby skończyć pracę w terminie, muszę iść, choćbym był nie wiem jak chory!
+❶ (Ⓐ ⟦thích món này mà không ăn⟧ lubi to danie, a go nie je; Ⓑ ⟦giảm cân, phải kiêng ăn⟧ żeby schudnąć, musi sobie odmówić) Ⓐ ⟦Anh thích món này mà tại sao lại không ăn?⟧ — Lubisz to danie, czemu go nie jesz? Ⓑ ⟦Để giảm cân, dù thích món này thế nào anh cũng phải kiêng ăn!⟧ — Żeby schudnąć, muszę sobie odmówić, choćbym nie wiem jak je lubił!
+❷ (Ⓐ ⟦đã xin được việc làm ổn định thế rồi mà lại đi học nghề nữa⟧ ma już stabilną pracę, a mimo to uczy się zawodu; Ⓑ ⟦phát triển bản thân, phải học tiếp chứ⟧ żeby się rozwijać, musi się dalej uczyć) Ⓐ ⟦Anh đã xin được việc làm ổn định thế rồi mà tại sao lại đi học nghề nữa?⟧ — Masz już taką stabilną pracę, czemu jeszcze chodzisz na kurs zawodowy? Ⓑ ⟦Để phát triển bản thân, dù công việc ổn định thế nào anh cũng phải học tiếp chứ!⟧ — Żeby się rozwijać, muszę się dalej uczyć, choćby praca była nie wiem jak stabilna!
+Dialog: Min-ho składa Hiền gratulacje z okazji ślubu.
+Min-ho: ⟦Ôi, thật vui quá. Chúc hai vợ chồng em trăm năm hạnh phúc nhé!⟧ — Och, co za radość! Życzę wam obojgu stu lat szczęścia!
+Hiền: ⟦Anh Min-ho đến rồi à? Cảm ơn anh đã đến dự lễ cưới của chúng em dù rất bận rộn.⟧ — Min-ho, już jesteś? Dziękuję, że przyszedłeś na nasz ślub, choć jesteś taki zajęty.
+Min-ho: ⟦Dù bận thế nào cũng phải đến chứ! Hôm nay em mặc váy cưới đẹp lắm!⟧ — Choćbym był nie wiem jak zajęty, musiałem przyjść! Pięknie dziś wyglądasz w sukni ślubnej!
+Hiền: ⟦Cảm ơn anh. Cô dâu nào cũng xinh đẹp mà! Anh cũng nhanh lên nhé!⟧ — Dziękuję. Każda panna młoda jest piękna! Ty też się pospiesz!
+Min-ho: ⟦Ừ, anh cũng muốn lấy vợ sớm, em ơi!⟧ — Tak, też chciałbym szybko się ożenić!
+Ćwiczenie wzorców — życzenia: ⟦hai vợ chồng em trăm năm hạnh phúc⟧ (sto lat szczęścia dla was obojga) / ⟦em bé lớn lên khoẻ mạnh⟧ (niech dziecko rośnie zdrowo); uroczystość: ⟦lễ cưới⟧ (ślub) / ⟦lễ thôi nôi em bé⟧ (roczek dziecka); komplement: ⟦em mặc váy cưới đẹp⟧ (pięknie wyglądasz w sukni ślubnej) / ⟦trông em bé đáng yêu⟧ (dziecko jest urocze); skromna odpowiedź: ⟦Cô dâu nào cũng xinh đẹp⟧ (każda panna młoda jest piękna) / ⟦Em bé nào cũng dễ thương⟧ (każde dziecko jest słodkie); własne życzenie: ⟦lấy vợ sớm⟧ (szybko się ożenić) / ⟦sinh em bé sớm⟧ (szybko mieć dziecko).
+Nowe słówka: ⟦vạn sự⟧ wszystkie sprawy | ⟦(nhanh) chóng⟧ szybki | ⟦vuông⟧ kwadratowy | ⟦bận rộn⟧ zajęty | ⟦cô dâu⟧ panna młoda | ⟦hạn⟧ termin | ⟦kiêng⟧ unikać, powstrzymywać się | ⟦ổn định⟧ stabilny

@@ -1,0 +1,591 @@
+@@ pdf-grammar-0af55a8d878ea993#1
+~t 2. Představování|2. 介绍的表达|2. 介紹的表達|2. Introducing|2. Présenter|2. Vorstellen|2. Bemutatás|2. Memperkenalkan|2. 紹介の表現|2. Przedstawianie
+=cs
+⟦Đây là em gái của em.⟧ — Tohle je moje mladší sestra.
+⟦đây là⟧ znamená „tady je / toto je …“ a používá se k představení osoby nebo věci poblíž.
+⟦Đây là mẹ của anh.⟧ — Tohle je moje (bratrova) maminka.
+⟦Đây là trường của em.⟧ — Tady je moje škola.
+⟦kia là⟧ znamená „tamto je …“, ⟦đó là⟧ znamená „to je … / on je …“.
+⟦Kia là nhà của anh.⟧ — Tamto je můj dům.
+⟦Kia là bạn trai của Thuý.⟧ — Tamten je Thuýin přítel.
+⟦Đó là bút của chị.⟧ — To je moje (sestřino) pero.
+⟦Đó là bạn của tôi.⟧ — To je můj přítel.
+Slovíčka: ⟦trường⟧ škola | ⟦kia⟧ tamto | ⟦nhà⟧ dům | ⟦trai⟧ muž | ⟦đó⟧ to | ⟦bút⟧ pero
+=zh_cn
+⟦Đây là em gái của em.⟧ —— 这位是我的妹妹。
+⟦đây là⟧ 意为“这里/这位是……”，用于介绍近处的人或物。
+⟦Đây là mẹ của anh.⟧ —— 这位是我（哥哥）的妈妈。
+⟦Đây là trường của em.⟧ —— 这里是我的学校。
+⟦kia là⟧ 意为“那里/那位是……”，⟦đó là⟧ 意为“那是……/他是……”。
+⟦Kia là nhà của anh.⟧ —— 那里是我（哥哥）的家。
+⟦Kia là bạn trai của Thuý.⟧ —— 那位是翠的男朋友。
+⟦Đó là bút của chị.⟧ —— 那是我（姐姐）的笔。
+⟦Đó là bạn của tôi.⟧ —— 他是我的朋友。
+单词：⟦trường⟧ 学校 | ⟦kia⟧ 那里 | ⟦nhà⟧ 家 | ⟦trai⟧ 男 | ⟦đó⟧ 那 | ⟦bút⟧ 笔
+=zh
+⟦Đây là em gái của em.⟧ —— 這位是我的妹妹。
+⟦đây là⟧ 意為「這裡/這位是……」，用於介紹近處的人或物。
+⟦Đây là mẹ của anh.⟧ —— 這位是我（哥哥）的媽媽。
+⟦Đây là trường của em.⟧ —— 這裡是我的學校。
+⟦kia là⟧ 意為「那裡/那位是……」，⟦đó là⟧ 意為「那是……/他是……」。
+⟦Kia là nhà của anh.⟧ —— 那裡是我（哥哥）的家。
+⟦Kia là bạn trai của Thuý.⟧ —— 那位是翠的男朋友。
+⟦Đó là bút của chị.⟧ —— 那是我（姐姐）的筆。
+⟦Đó là bạn của tôi.⟧ —— 他是我的朋友。
+單字：⟦trường⟧ 學校 | ⟦kia⟧ 那裡 | ⟦nhà⟧ 家 | ⟦trai⟧ 男 | ⟦đó⟧ 那 | ⟦bút⟧ 筆
+=en
+⟦Đây là em gái của em.⟧ — This is my younger sister.
+⟦đây là⟧ means "here is / this is …" and is used to introduce a person or thing nearby.
+⟦Đây là mẹ của anh.⟧ — This is my (big brother's) mother.
+⟦Đây là trường của em.⟧ — This is my school.
+⟦kia là⟧ means "that over there is …", and ⟦đó là⟧ means "that is … / he is …".
+⟦Kia là nhà của anh.⟧ — That over there is my house.
+⟦Kia là bạn trai của Thuý.⟧ — That's Thuý's boyfriend over there.
+⟦Đó là bút của chị.⟧ — That's my (big sister's) pen.
+⟦Đó là bạn của tôi.⟧ — He's my friend.
+Words: ⟦trường⟧ school | ⟦kia⟧ over there | ⟦nhà⟧ house | ⟦trai⟧ male | ⟦đó⟧ that | ⟦bút⟧ pen
+=fr
+⟦Đây là em gái của em.⟧ — Voici ma petite sœur.
+⟦đây là⟧ signifie « voici / c'est … (ici) » et sert à présenter une personne ou une chose proche.
+⟦Đây là mẹ của anh.⟧ — Voici ma mère (dit par le grand frère).
+⟦Đây là trường của em.⟧ — Voici mon école.
+⟦kia là⟧ signifie « là-bas, c'est … », et ⟦đó là⟧ « c'est … / il est … ».
+⟦Kia là nhà của anh.⟧ — Là-bas, c'est ma maison.
+⟦Kia là bạn trai của Thuý.⟧ — Là-bas, c'est le petit ami de Thuý.
+⟦Đó là bút của chị.⟧ — C'est mon stylo (dit par la grande sœur).
+⟦Đó là bạn của tôi.⟧ — C'est mon ami.
+Mots : ⟦trường⟧ école | ⟦kia⟧ là-bas | ⟦nhà⟧ maison | ⟦trai⟧ garçon, masculin | ⟦đó⟧ cela | ⟦bút⟧ stylo
+=de
+⟦Đây là em gái của em.⟧ — Das ist meine jüngere Schwester.
+⟦đây là⟧ bedeutet „hier ist / das ist …“ und dient dazu, eine Person oder Sache in der Nähe vorzustellen.
+⟦Đây là mẹ của anh.⟧ — Das ist meine Mutter (sagt der große Bruder).
+⟦Đây là trường của em.⟧ — Das ist meine Schule.
+⟦kia là⟧ bedeutet „dort drüben ist …“, ⟦đó là⟧ bedeutet „das ist … / er ist …“.
+⟦Kia là nhà của anh.⟧ — Dort drüben ist mein Haus.
+⟦Kia là bạn trai của Thuý.⟧ — Dort drüben ist Thuýs Freund.
+⟦Đó là bút của chị.⟧ — Das ist mein Stift (sagt die große Schwester).
+⟦Đó là bạn của tôi.⟧ — Er ist mein Freund.
+Wörter: ⟦trường⟧ Schule | ⟦kia⟧ dort drüben | ⟦nhà⟧ Haus | ⟦trai⟧ männlich | ⟦đó⟧ das | ⟦bút⟧ Stift
+=hu
+⟦Đây là em gái của em.⟧ — Ez a húgom.
+A ⟦đây là⟧ jelentése „itt van / ez …”, közeli személy vagy tárgy bemutatására használjuk.
+⟦Đây là mẹ của anh.⟧ — Ez az anyukám (a báty mondja).
+⟦Đây là trường của em.⟧ — Ez az iskolám.
+A ⟦kia là⟧ jelentése „az ott …”, a ⟦đó là⟧ jelentése „az …, ő …”.
+⟦Kia là nhà của anh.⟧ — Az ott a házam.
+⟦Kia là bạn trai của Thuý.⟧ — Az ott Thuý barátja.
+⟦Đó là bút của chị.⟧ — Az az én tollam (a nővér mondja).
+⟦Đó là bạn của tôi.⟧ — Ő a barátom.
+Szavak: ⟦trường⟧ iskola | ⟦kia⟧ ott, amott | ⟦nhà⟧ ház | ⟦trai⟧ férfi | ⟦đó⟧ az | ⟦bút⟧ toll
+=id
+⟦Đây là em gái của em.⟧ — Ini adik perempuan saya.
+⟦đây là⟧ berarti "ini/di sini adalah …" dan dipakai untuk memperkenalkan orang atau benda yang dekat.
+⟦Đây là mẹ của anh.⟧ — Ini ibu Kakak.
+⟦Đây là trường của em.⟧ — Ini sekolah saya.
+⟦kia là⟧ berarti "yang di sana adalah …", dan ⟦đó là⟧ berarti "itu adalah … / dia adalah …".
+⟦Kia là nhà của anh.⟧ — Yang di sana rumah Kakak.
+⟦Kia là bạn trai của Thuý.⟧ — Yang di sana pacar Thuý.
+⟦Đó là bút của chị.⟧ — Itu pulpen Kakak.
+⟦Đó là bạn của tôi.⟧ — Dia teman saya.
+Kosakata: ⟦trường⟧ sekolah | ⟦kia⟧ di sana | ⟦nhà⟧ rumah | ⟦trai⟧ laki-laki | ⟦đó⟧ itu | ⟦bút⟧ pulpen
+=ja
+⟦Đây là em gái của em.⟧ — こちらは私の妹です。
+⟦đây là⟧ は「ここは・こちらは～だ」で、近くにいる人や物を紹介するときに使えます。
+⟦Đây là mẹ của anh.⟧ — こちらは僕（兄）の母だよ。
+⟦Đây là trường của em.⟧ — ここが私の学校です。
+⟦kia là⟧ は「あそこは・あちらは～だ」、⟦đó là⟧ は「それは・彼は～だ」を意味します。
+⟦Kia là nhà của anh.⟧ — あそこが僕の家だよ。
+⟦Kia là bạn trai của Thuý.⟧ — あちらはトゥイの彼氏だよ。
+⟦Đó là bút của chị.⟧ — それは私（姉）のペンよ。
+⟦Đó là bạn của tôi.⟧ — 彼は私の友達だ。
+単語：⟦trường⟧ 学校 | ⟦kia⟧ あそこ、あちら | ⟦nhà⟧ 家 | ⟦trai⟧ 男 | ⟦đó⟧ それ、その | ⟦bút⟧ ペン
+=pl
+⟦Đây là em gái của em.⟧ — To jest moja młodsza siostra.
+⟦đây là⟧ znaczy „tu jest / to jest …” i służy do przedstawiania osoby lub rzeczy znajdującej się blisko.
+⟦Đây là mẹ của anh.⟧ — To jest moja mama (mówi starszy brat).
+⟦Đây là trường của em.⟧ — To jest moja szkoła.
+⟦kia là⟧ znaczy „tamto jest …”, a ⟦đó là⟧ „to jest … / on jest …”.
+⟦Kia là nhà của anh.⟧ — Tam jest mój dom.
+⟦Kia là bạn trai của Thuý.⟧ — Tamten to chłopak Thuý.
+⟦Đó là bút của chị.⟧ — To jest mój długopis (mówi starsza siostra).
+⟦Đó là bạn của tôi.⟧ — To mój przyjaciel.
+Słówka: ⟦trường⟧ szkoła | ⟦kia⟧ tamto, tam | ⟦nhà⟧ dom | ⟦trai⟧ mężczyzna | ⟦đó⟧ to | ⟦bút⟧ długopis
+@@ pdf-grammar-728a1d29edd99f8c#0
+=cs
+K rozlišení pohlaví se k oslovením přidává ⟦gái⟧ (žena) a ⟦trai⟧ (muž).
+⟦em⟧ mladší sourozenec — ⟦em trai⟧ mladší bratr — ⟦em gái⟧ mladší sestra
+⟦con⟧ dítě — ⟦con trai⟧ syn — ⟦con gái⟧ dcera
+⟦cháu⟧ synovec/neteř, vnouče — ⟦cháu trai⟧ synovec, vnuk — ⟦cháu gái⟧ neteř, vnučka
+⟦bạn⟧ přítel — ⟦bạn trai⟧ přítel (partner) — ⟦bạn gái⟧ přítelkyně
+=zh_cn
+在称呼后加上 ⟦gái⟧（女）、⟦trai⟧（男）来区分性别。
+⟦em⟧ 弟弟妹妹 — ⟦em trai⟧ 弟弟 — ⟦em gái⟧ 妹妹
+⟦con⟧ 子女 — ⟦con trai⟧ 儿子 — ⟦con gái⟧ 女儿
+⟦cháu⟧ 侄子/孙辈 — ⟦cháu trai⟧ 侄子、孙子 — ⟦cháu gái⟧ 侄女、孙女
+⟦bạn⟧ 朋友 — ⟦bạn trai⟧ 男朋友 — ⟦bạn gái⟧ 女朋友
+=zh
+在稱呼後加上 ⟦gái⟧（女）、⟦trai⟧（男）來區分性別。
+⟦em⟧ 弟弟妹妹 — ⟦em trai⟧ 弟弟 — ⟦em gái⟧ 妹妹
+⟦con⟧ 子女 — ⟦con trai⟧ 兒子 — ⟦con gái⟧ 女兒
+⟦cháu⟧ 姪子/孫輩 — ⟦cháu trai⟧ 姪子、孫子 — ⟦cháu gái⟧ 姪女、孫女
+⟦bạn⟧ 朋友 — ⟦bạn trai⟧ 男朋友 — ⟦bạn gái⟧ 女朋友
+=en
+⟦gái⟧ (female) and ⟦trai⟧ (male) are added to kinship words to distinguish gender.
+⟦em⟧ younger sibling — ⟦em trai⟧ younger brother — ⟦em gái⟧ younger sister
+⟦con⟧ child — ⟦con trai⟧ son — ⟦con gái⟧ daughter
+⟦cháu⟧ niece/nephew, grandchild — ⟦cháu trai⟧ nephew, grandson — ⟦cháu gái⟧ niece, granddaughter
+⟦bạn⟧ friend — ⟦bạn trai⟧ boyfriend — ⟦bạn gái⟧ girlfriend
+=fr
+On ajoute ⟦gái⟧ (féminin) et ⟦trai⟧ (masculin) aux termes de parenté pour distinguer le genre.
+⟦em⟧ cadet — ⟦em trai⟧ petit frère — ⟦em gái⟧ petite sœur
+⟦con⟧ enfant — ⟦con trai⟧ fils — ⟦con gái⟧ fille
+⟦cháu⟧ neveu/nièce, petit-enfant — ⟦cháu trai⟧ neveu, petit-fils — ⟦cháu gái⟧ nièce, petite-fille
+⟦bạn⟧ ami — ⟦bạn trai⟧ petit ami — ⟦bạn gái⟧ petite amie
+=de
+Mit ⟦gái⟧ (weiblich) und ⟦trai⟧ (männlich) unterscheidet man bei Anreden das Geschlecht.
+⟦em⟧ jüngeres Geschwister — ⟦em trai⟧ jüngerer Bruder — ⟦em gái⟧ jüngere Schwester
+⟦con⟧ Kind — ⟦con trai⟧ Sohn — ⟦con gái⟧ Tochter
+⟦cháu⟧ Neffe/Nichte, Enkel — ⟦cháu trai⟧ Neffe, Enkel — ⟦cháu gái⟧ Nichte, Enkelin
+⟦bạn⟧ Freund — ⟦bạn trai⟧ fester Freund — ⟦bạn gái⟧ feste Freundin
+=hu
+A megszólításokhoz a ⟦gái⟧ (nő) és ⟦trai⟧ (férfi) szót teszik a nem megkülönböztetésére.
+⟦em⟧ kisebb testvér — ⟦em trai⟧ öcs — ⟦em gái⟧ húg
+⟦con⟧ gyermek — ⟦con trai⟧ fiú (gyermek) — ⟦con gái⟧ lány (gyermek)
+⟦cháu⟧ unokaöcs/unokahúg, unoka — ⟦cháu trai⟧ unokaöcs, fiúunoka — ⟦cháu gái⟧ unokahúg, lányunoka
+⟦bạn⟧ barát — ⟦bạn trai⟧ barát (partner) — ⟦bạn gái⟧ barátnő
+=id
+Untuk membedakan jenis kelamin, pada sapaan ditambahkan ⟦gái⟧ (perempuan) dan ⟦trai⟧ (laki-laki).
+⟦em⟧ adik — ⟦em trai⟧ adik laki-laki — ⟦em gái⟧ adik perempuan
+⟦con⟧ anak — ⟦con trai⟧ anak laki-laki — ⟦con gái⟧ anak perempuan
+⟦cháu⟧ keponakan, cucu — ⟦cháu trai⟧ keponakan/cucu laki-laki — ⟦cháu gái⟧ keponakan/cucu perempuan
+⟦bạn⟧ teman — ⟦bạn trai⟧ pacar (laki-laki) — ⟦bạn gái⟧ pacar (perempuan)
+=ja
+呼び方に ⟦gái⟧（女）、⟦trai⟧（男）をつけて男女を区別します。
+⟦em⟧ 弟・妹 — ⟦em trai⟧ 弟 — ⟦em gái⟧ 妹
+⟦con⟧ 子ども — ⟦con trai⟧ 息子 — ⟦con gái⟧ 娘
+⟦cháu⟧ 甥・姪、孫 — ⟦cháu trai⟧ 甥、孫息子 — ⟦cháu gái⟧ 姪、孫娘
+⟦bạn⟧ 友達 — ⟦bạn trai⟧ 彼氏 — ⟦bạn gái⟧ 彼女
+=pl
+Aby rozróżnić płeć, do form zwracania się dodaje się ⟦gái⟧ (kobieta) i ⟦trai⟧ (mężczyzna).
+⟦em⟧ młodsze rodzeństwo — ⟦em trai⟧ młodszy brat — ⟦em gái⟧ młodsza siostra
+⟦con⟧ dziecko — ⟦con trai⟧ syn — ⟦con gái⟧ córka
+⟦cháu⟧ bratanek/siostrzeniec, wnuk — ⟦cháu trai⟧ bratanek, wnuk — ⟦cháu gái⟧ bratanica, wnuczka
+⟦bạn⟧ przyjaciel — ⟦bạn trai⟧ chłopak — ⟦bạn gái⟧ dziewczyna
+@@ pdf-grammar-728a1d29edd99f8c#1
+~t 3. Prosba: Xin|3. 请求的表达：Xin|3. 請求的表達：Xin|3. Making a request: Xin|3. Faire une demande : Xin|3. Um etwas bitten: Xin|3. Kérés: Xin|3. Ungkapan permintaan: Xin|3. お願いの表現：Xin|3. Prośba: Xin
+=cs
+⟦Xin nhắc lại.⟧ — Zopakujte to prosím.
+⟦xin⟧ znamená „prosit“ a pojí se se slovesem nebo podstatným jménem.
+Za prvé: „xin + (2. osoba) + sloveso“ — prosím, abyste …
+⟦(Em) xin (anh) nhắc lại.⟧ — Prosím tě, bratře, zopakuj to.
+Za druhé: „xin + (2. osoba) + podstatné jméno“ — prosím (vás) o …
+⟦(Con) xin (mẹ) tiền ạ.⟧ — Mami, prosím o peníze.
+Pokud je činitelem slovesa první osoba, znamená to „dovolím si zdvořile …“.
+⟦(Tôi) xin cảm ơn.⟧ — Děkuji.
+⟦(Em) xin hỏi ạ.⟧ — Dovolte mi otázku.
+Slovíčka: ⟦tiền⟧ peníze | ⟦hỏi⟧ ptát se
+=zh_cn
+⟦Xin nhắc lại.⟧ —— 请再说一遍。
+⟦xin⟧ 意为“请求”，可以和动词或名词一起使用。
+第一，“xin + （第二人称）+ 动词”：请（您）……
+⟦(Em) xin (anh) nhắc lại.⟧ —— 请哥哥再说一遍。
+第二，“xin + （第二人称）+ 名词”：向（您）请求……、请给我……
+⟦(Con) xin (mẹ) tiền ạ.⟧ —— 妈妈，请给我钱。
+此外，动作主体是第一人称时，表示“我恭敬地……”。
+⟦(Tôi) xin cảm ơn.⟧ —— 我衷心感谢。
+⟦(Em) xin hỏi ạ.⟧ —— 请允许我问一下。
+单词：⟦tiền⟧ 钱 | ⟦hỏi⟧ 问
+=zh
+⟦Xin nhắc lại.⟧ —— 請再說一遍。
+⟦xin⟧ 意為「請求」，可以和動詞或名詞一起使用。
+第一，「xin + （第二人稱）+ 動詞」：請（您）……
+⟦(Em) xin (anh) nhắc lại.⟧ —— 請哥哥再說一遍。
+第二，「xin + （第二人稱）+ 名詞」：向（您）請求……、請給我……
+⟦(Con) xin (mẹ) tiền ạ.⟧ —— 媽媽，請給我錢。
+此外，動作主體是第一人稱時，表示「我恭敬地……」。
+⟦(Tôi) xin cảm ơn.⟧ —— 我衷心感謝。
+⟦(Em) xin hỏi ạ.⟧ —— 請容我問一下。
+單字：⟦tiền⟧ 錢 | ⟦hỏi⟧ 問
+=en
+⟦Xin nhắc lại.⟧ — Please say that again.
+⟦xin⟧ means "to ask for, to request" and can be used with a verb or a noun.
+First: "xin + (2nd person) + verb" — I ask you to …, please …
+⟦(Em) xin (anh) nhắc lại.⟧ — Please say that again, brother.
+Second: "xin + (2nd person) + noun" — I ask you for …, please give me …
+⟦(Con) xin (mẹ) tiền ạ.⟧ — Mom, may I have some money?
+In addition, when the subject of the verb is the first person, it means "I respectfully …".
+⟦(Tôi) xin cảm ơn.⟧ — Thank you (I sincerely thank you).
+⟦(Em) xin hỏi ạ.⟧ — May I ask a question?
+Words: ⟦tiền⟧ money | ⟦hỏi⟧ to ask
+=fr
+⟦Xin nhắc lại.⟧ — Répétez, s'il vous plaît.
+⟦xin⟧ signifie « demander, prier » et s'emploie avec un verbe ou un nom.
+Premièrement : « xin + (2e personne) + verbe » — je vous prie de …
+⟦(Em) xin (anh) nhắc lại.⟧ — Grand frère, répète s'il te plaît.
+Deuxièmement : « xin + (2e personne) + nom » — je vous demande …, donnez-moi …
+⟦(Con) xin (mẹ) tiền ạ.⟧ — Maman, donne-moi de l'argent s'il te plaît.
+Par ailleurs, quand le sujet du verbe est la 1re personne, cela signifie « je me permets de … ».
+⟦(Tôi) xin cảm ơn.⟧ — Je vous remercie.
+⟦(Em) xin hỏi ạ.⟧ — Puis-je poser une question ?
+Mots : ⟦tiền⟧ argent | ⟦hỏi⟧ demander
+=de
+⟦Xin nhắc lại.⟧ — Bitte wiederholen Sie das.
+⟦xin⟧ bedeutet „bitten“ und steht mit einem Verb oder Substantiv.
+Erstens: „xin + (2. Person) + Verb“ — ich bitte Sie, … zu tun
+⟦(Em) xin (anh) nhắc lại.⟧ — Großer Bruder, sag das bitte noch einmal.
+Zweitens: „xin + (2. Person) + Substantiv“ — ich bitte Sie um …, geben Sie mir bitte …
+⟦(Con) xin (mẹ) tiền ạ.⟧ — Mama, gib mir bitte Geld.
+Ist das Subjekt des Verbs die 1. Person, bedeutet es „ich erlaube mir höflich, …“.
+⟦(Tôi) xin cảm ơn.⟧ — Ich danke Ihnen.
+⟦(Em) xin hỏi ạ.⟧ — Darf ich etwas fragen?
+Wörter: ⟦tiền⟧ Geld | ⟦hỏi⟧ fragen
+=hu
+⟦Xin nhắc lại.⟧ — Kérem, ismételje meg.
+A ⟦xin⟧ jelentése „kérni”, igével vagy főnévvel együtt használható.
+Először: „xin + (2. személy) + ige” — kérem, hogy …
+⟦(Em) xin (anh) nhắc lại.⟧ — Bátyám, kérlek, ismételd meg.
+Másodszor: „xin + (2. személy) + főnév” — kérek (öntől) …, adjon …
+⟦(Con) xin (mẹ) tiền ạ.⟧ — Anya, kérek pénzt.
+Ezenkívül, ha az ige alanya első személy, jelentése „tisztelettel …”.
+⟦(Tôi) xin cảm ơn.⟧ — Köszönöm.
+⟦(Em) xin hỏi ạ.⟧ — Szabad kérdeznem?
+Szavak: ⟦tiền⟧ pénz | ⟦hỏi⟧ kérdezni
+=id
+⟦Xin nhắc lại.⟧ — Tolong ulangi.
+⟦xin⟧ berarti "memohon, meminta" dan dapat dipakai bersama kata kerja atau kata benda.
+Pertama: "xin + (orang kedua) + kata kerja" — mohon (Anda) …
+⟦(Em) xin (anh) nhắc lại.⟧ — Kak, tolong ulangi lagi.
+Kedua: "xin + (orang kedua) + kata benda" — saya meminta … kepada (Anda), tolong beri …
+⟦(Con) xin (mẹ) tiền ạ.⟧ — Bu, minta uang.
+Selain itu, jika pelakunya orang pertama, artinya "saya dengan hormat …".
+⟦(Tôi) xin cảm ơn.⟧ — Terima kasih.
+⟦(Em) xin hỏi ạ.⟧ — Boleh saya bertanya?
+Kosakata: ⟦tiền⟧ uang | ⟦hỏi⟧ bertanya
+=ja
+⟦Xin nhắc lại.⟧ — もう一度言ってください。
+⟦xin⟧ は「請う、お願いする」という意味で、動詞や名詞と一緒に使えます。
+一つ目：「xin ＋（二人称）＋ 動詞」 —（あなたが）～してくださるようお願いします
+⟦(Em) xin (anh) nhắc lại.⟧ — お兄さん、もう一度言ってください。
+二つ目：「xin ＋（二人称）＋ 名詞」 —（あなたに）～をお願いします、～をください
+⟦(Con) xin (mẹ) tiền ạ.⟧ — お母さん、お金をください。
+そのほか、動詞の主体が一人称の場合は「（私が）謹んで～いたします」となります。
+⟦(Tôi) xin cảm ơn.⟧ — ありがとうございます。
+⟦(Em) xin hỏi ạ.⟧ — 質問させていただきます。
+単語：⟦tiền⟧ お金 | ⟦hỏi⟧ 尋ねる
+=pl
+⟦Xin nhắc lại.⟧ — Proszę powtórzyć.
+⟦xin⟧ znaczy „prosić” i łączy się z czasownikiem lub rzeczownikiem.
+Po pierwsze: „xin + (2. osoba) + czasownik” — proszę, abyś …
+⟦(Em) xin (anh) nhắc lại.⟧ — Bracie, powtórz proszę.
+Po drugie: „xin + (2. osoba) + rzeczownik” — proszę (cię) o …, daj mi …
+⟦(Con) xin (mẹ) tiền ạ.⟧ — Mamo, poproszę o pieniądze.
+Gdy wykonawcą czynności jest 1. osoba, znaczy to „pozwolę sobie uprzejmie …”.
+⟦(Tôi) xin cảm ơn.⟧ — Dziękuję.
+⟦(Em) xin hỏi ạ.⟧ — Czy mogę zapytać?
+Słówka: ⟦tiền⟧ pieniądze | ⟦hỏi⟧ pytać
+@@ pdf-grammar-a8d282d4b86e29e9#0
+~t 1. Ptát se na národnost a odpovídat|1. 询问与回答国籍|1. 詢問與回答國籍|1. Asking and answering nationality|1. Demander et donner sa nationalité|1. Nach der Nationalität fragen und antworten|1. Nemzetiség kérdezése és megadása|1. Menanyakan dan menjawab kewarganegaraan|1. 国籍を尋ねて答える表現|1. Pytanie o narodowość i odpowiedź
+=cs
+A: ⟦Em là người nước nào?⟧ — Odkud jsi (z jaké země)?
+B: ⟦Em là người Việt Nam.⟧ — Jsem Vietnamec.
+Na národnost se ptáme pomocí ⟦người nước nào⟧ (člověk z které země) a odpovídáme „người + název země“.
+A: ⟦Anh là người nước nào?⟧ — Odkud jsi, bratře?
+B: ⟦Anh là người Hàn Quốc.⟧ — Jsem Korejec.
+Tázací slovo ⟦nào⟧ znamená „který, jaký“ a s podstatným jménem se používá ve tvaru „podstatné jméno + nào“.
+⟦Anh đi nước nào?⟧ — Do které země jedeš?
+⟦Em thích sách nào?⟧ — Kterou knihu máš rád?
+Tázací slovo ⟦gì⟧ znamená „jaký, co za“ a používá se ve tvaru „podstatné jméno + gì“; samostatně funguje i jako „co“.
+⟦Em có chuyện gì?⟧ — Co se děje? (Co máš za problém?)
+⟦Tên của chị là gì?⟧ — Jak se jmenuješ, sestro?
+Slovíčka: ⟦người⟧ člověk | ⟦nước⟧ země | ⟦nào⟧ který | ⟦Việt Nam⟧ Vietnam | ⟦Hàn Quốc⟧ Korea | ⟦thích⟧ mít rád | ⟦sách⟧ kniha | ⟦chuyện⟧ záležitost
+=zh_cn
+A：⟦Em là người nước nào?⟧ —— 你是哪国人？
+B：⟦Em là người Việt Nam.⟧ —— 我是越南人。
+询问国籍时用 ⟦người nước nào⟧（哪国人），回答时用“người + 国名”（某国人）。
+A：⟦Anh là người nước nào?⟧ —— 哥哥是哪国人？
+B：⟦Anh là người Hàn Quốc.⟧ —— 我是韩国人。
+疑问词 ⟦nào⟧ 意为“哪、哪个”，和名词一起以“名词 + nào”的形式使用。
+⟦Anh đi nước nào?⟧ —— 哥哥去哪个国家？
+⟦Em thích sách nào?⟧ —— 你喜欢哪本书？
+疑问词 ⟦gì⟧ 意为“什么”，以“名词 + gì”（什么名词）的形式使用，也可单独作“什么”使用。
+⟦Em có chuyện gì?⟧ —— 你有什么事？
+⟦Tên của chị là gì?⟧ —— 姐姐叫什么名字？
+单词：⟦người⟧ 人 | ⟦nước⟧ 国家 | ⟦nào⟧ 哪 | ⟦Việt Nam⟧ 越南 | ⟦Hàn Quốc⟧ 韩国 | ⟦thích⟧ 喜欢 | ⟦sách⟧ 书 | ⟦chuyện⟧ 事情
+=zh
+A：⟦Em là người nước nào?⟧ —— 你是哪國人？
+B：⟦Em là người Việt Nam.⟧ —— 我是越南人。
+詢問國籍時用 ⟦người nước nào⟧（哪國人），回答時用「người + 國名」（某國人）。
+A：⟦Anh là người nước nào?⟧ —— 哥哥是哪國人？
+B：⟦Anh là người Hàn Quốc.⟧ —— 我是韓國人。
+疑問詞 ⟦nào⟧ 意為「哪、哪個」，和名詞一起以「名詞 + nào」的形式使用。
+⟦Anh đi nước nào?⟧ —— 哥哥去哪個國家？
+⟦Em thích sách nào?⟧ —— 你喜歡哪本書？
+疑問詞 ⟦gì⟧ 意為「什麼」，以「名詞 + gì」（什麼名詞）的形式使用，也可單獨作「什麼」使用。
+⟦Em có chuyện gì?⟧ —— 你有什麼事？
+⟦Tên của chị là gì?⟧ —— 姐姐叫什麼名字？
+單字：⟦người⟧ 人 | ⟦nước⟧ 國家 | ⟦nào⟧ 哪 | ⟦Việt Nam⟧ 越南 | ⟦Hàn Quốc⟧ 韓國 | ⟦thích⟧ 喜歡 | ⟦sách⟧ 書 | ⟦chuyện⟧ 事情
+=en
+A: ⟦Em là người nước nào?⟧ — Where are you from? (Which country are you from?)
+B: ⟦Em là người Việt Nam.⟧ — I'm Vietnamese.
+To ask about nationality, use ⟦người nước nào⟧ (person of which country) and answer with "người + country name".
+A: ⟦Anh là người nước nào?⟧ — Where are you from, brother?
+B: ⟦Anh là người Hàn Quốc.⟧ — I'm Korean.
+The question word ⟦nào⟧ means "which" and is used with a noun as "noun + nào".
+⟦Anh đi nước nào?⟧ — Which country are you going to?
+⟦Em thích sách nào?⟧ — Which book do you like?
+The question word ⟦gì⟧ means "what (kind of)" and is used as "noun + gì"; on its own it also means "what".
+⟦Em có chuyện gì?⟧ — What's the matter?
+⟦Tên của chị là gì?⟧ — What's your name, sister?
+Words: ⟦người⟧ person | ⟦nước⟧ country | ⟦nào⟧ which | ⟦Việt Nam⟧ Vietnam | ⟦Hàn Quốc⟧ Korea | ⟦thích⟧ to like | ⟦sách⟧ book | ⟦chuyện⟧ matter
+=fr
+A : ⟦Em là người nước nào?⟧ — De quel pays es-tu ?
+B : ⟦Em là người Việt Nam.⟧ — Je suis vietnamien.
+Pour demander la nationalité, on utilise ⟦người nước nào⟧ (personne de quel pays) et l'on répond par « người + nom du pays ».
+A : ⟦Anh là người nước nào?⟧ — De quel pays es-tu, grand frère ?
+B : ⟦Anh là người Hàn Quốc.⟧ — Je suis coréen.
+Le mot interrogatif ⟦nào⟧ signifie « quel » et s'emploie avec un nom : « nom + nào ».
+⟦Anh đi nước nào?⟧ — Dans quel pays vas-tu ?
+⟦Em thích sách nào?⟧ — Quel livre aimes-tu ?
+Le mot interrogatif ⟦gì⟧ signifie « quel (genre de) » et s'emploie sous la forme « nom + gì » ; seul, il signifie aussi « quoi ».
+⟦Em có chuyện gì?⟧ — Qu'est-ce qui se passe ?
+⟦Tên của chị là gì?⟧ — Comment t'appelles-tu, grande sœur ?
+Mots : ⟦người⟧ personne | ⟦nước⟧ pays | ⟦nào⟧ quel | ⟦Việt Nam⟧ Viêt Nam | ⟦Hàn Quốc⟧ Corée | ⟦thích⟧ aimer | ⟦sách⟧ livre | ⟦chuyện⟧ affaire
+=de
+A: ⟦Em là người nước nào?⟧ — Aus welchem Land kommst du?
+B: ⟦Em là người Việt Nam.⟧ — Ich bin Vietnamese.
+Nach der Nationalität fragt man mit ⟦người nước nào⟧ (Mensch aus welchem Land) und antwortet mit „người + Ländername“.
+A: ⟦Anh là người nước nào?⟧ — Aus welchem Land kommst du, großer Bruder?
+B: ⟦Anh là người Hàn Quốc.⟧ — Ich bin Koreaner.
+Das Fragewort ⟦nào⟧ bedeutet „welcher“ und steht als „Substantiv + nào“.
+⟦Anh đi nước nào?⟧ — In welches Land fährst du?
+⟦Em thích sách nào?⟧ — Welches Buch magst du?
+Das Fragewort ⟦gì⟧ bedeutet „was für ein“ und steht als „Substantiv + gì“; allein bedeutet es auch „was“.
+⟦Em có chuyện gì?⟧ — Was ist los?
+⟦Tên của chị là gì?⟧ — Wie heißt du, große Schwester?
+Wörter: ⟦người⟧ Mensch | ⟦nước⟧ Land | ⟦nào⟧ welcher | ⟦Việt Nam⟧ Vietnam | ⟦Hàn Quốc⟧ Korea | ⟦thích⟧ mögen | ⟦sách⟧ Buch | ⟦chuyện⟧ Angelegenheit
+=hu
+A: ⟦Em là người nước nào?⟧ — Milyen nemzetiségű vagy?
+B: ⟦Em là người Việt Nam.⟧ — Vietnámi vagyok.
+A nemzetiséget a ⟦người nước nào⟧ (melyik ország embere) kifejezéssel kérdezzük, és „người + ország neve” formában válaszolunk.
+A: ⟦Anh là người nước nào?⟧ — Milyen nemzetiségű vagy, bátyám?
+B: ⟦Anh là người Hàn Quốc.⟧ — Koreai vagyok.
+A ⟦nào⟧ kérdőszó jelentése „melyik”, főnévvel „főnév + nào” formában használjuk.
+⟦Anh đi nước nào?⟧ — Melyik országba mész?
+⟦Em thích sách nào?⟧ — Melyik könyvet szereted?
+A ⟦gì⟧ kérdőszó jelentése „milyen”, „főnév + gì” formában használjuk; önmagában „mi” jelentésű is.
+⟦Em có chuyện gì?⟧ — Mi a baj?
+⟦Tên của chị là gì?⟧ — Mi a neved, nővérem?
+Szavak: ⟦người⟧ ember | ⟦nước⟧ ország | ⟦nào⟧ melyik | ⟦Việt Nam⟧ Vietnám | ⟦Hàn Quốc⟧ Korea | ⟦thích⟧ szeretni | ⟦sách⟧ könyv | ⟦chuyện⟧ ügy, dolog
+=id
+A: ⟦Em là người nước nào?⟧ — Kamu orang mana (negara apa)?
+B: ⟦Em là người Việt Nam.⟧ — Saya orang Vietnam.
+Untuk menanyakan kewarganegaraan dipakai ⟦người nước nào⟧ (orang negara mana), dan dijawab dengan "người + nama negara".
+A: ⟦Anh là người nước nào?⟧ — Kakak orang mana?
+B: ⟦Anh là người Hàn Quốc.⟧ — Kakak orang Korea.
+Kata tanya ⟦nào⟧ berarti "yang mana" dan dipakai dengan kata benda: "kata benda + nào".
+⟦Anh đi nước nào?⟧ — Kakak pergi ke negara mana?
+⟦Em thích sách nào?⟧ — Kamu suka buku yang mana?
+Kata tanya ⟦gì⟧ berarti "apa" dan dipakai dengan pola "kata benda + gì"; sendiri pun berarti "apa".
+⟦Em có chuyện gì?⟧ — Ada apa denganmu?
+⟦Tên của chị là gì?⟧ — Siapa nama Kakak?
+Kosakata: ⟦người⟧ orang | ⟦nước⟧ negara | ⟦nào⟧ yang mana | ⟦Việt Nam⟧ Vietnam | ⟦Hàn Quốc⟧ Korea | ⟦thích⟧ suka | ⟦sách⟧ buku | ⟦chuyện⟧ urusan
+=ja
+A：⟦Em là người nước nào?⟧ — 君はどこの国の人？
+B：⟦Em là người Việt Nam.⟧ — 私はベトナム人です。
+国籍を尋ねるときは ⟦người nước nào⟧（どの国の人）を使い、「người ＋ 国名」（～人）で答えます。
+A：⟦Anh là người nước nào?⟧ — お兄さんはどこの国の人ですか。
+B：⟦Anh là người Hàn Quốc.⟧ — 僕は韓国人だよ。
+疑問詞 ⟦nào⟧ は「どの、どんな」の意味で、名詞と一緒に「名詞 ＋ nào」の形で使います。
+⟦Anh đi nước nào?⟧ — お兄さんはどの国へ行くの？
+⟦Em thích sách nào?⟧ — 君はどの本が好き？
+疑問詞 ⟦gì⟧ は「何の」の意味で「名詞 ＋ gì」の形で使い、単独で「何」という疑問名詞にもなります。
+⟦Em có chuyện gì?⟧ — 何かあったの？
+⟦Tên của chị là gì?⟧ — お姉さんの名前は何ですか。
+単語：⟦người⟧ 人 | ⟦nước⟧ 国 | ⟦nào⟧ どの | ⟦Việt Nam⟧ ベトナム | ⟦Hàn Quốc⟧ 韓国 | ⟦thích⟧ 好きだ | ⟦sách⟧ 本 | ⟦chuyện⟧ こと
+=pl
+A: ⟦Em là người nước nào?⟧ — Skąd jesteś (z jakiego kraju)?
+B: ⟦Em là người Việt Nam.⟧ — Jestem Wietnamczykiem.
+O narodowość pytamy ⟦người nước nào⟧ (człowiek z którego kraju), a odpowiadamy „người + nazwa kraju”.
+A: ⟦Anh là người nước nào?⟧ — Skąd jesteś, bracie?
+B: ⟦Anh là người Hàn Quốc.⟧ — Jestem Koreańczykiem.
+Słowo pytające ⟦nào⟧ znaczy „który” i występuje z rzeczownikiem: „rzeczownik + nào”.
+⟦Anh đi nước nào?⟧ — Do którego kraju jedziesz?
+⟦Em thích sách nào?⟧ — Którą książkę lubisz?
+Słowo pytające ⟦gì⟧ znaczy „jaki, co za” i występuje jako „rzeczownik + gì”; samodzielnie znaczy też „co”.
+⟦Em có chuyện gì?⟧ — Co się stało?
+⟦Tên của chị là gì?⟧ — Jak masz na imię, siostro?
+Słówka: ⟦người⟧ człowiek | ⟦nước⟧ kraj | ⟦nào⟧ który | ⟦Việt Nam⟧ Wietnam | ⟦Hàn Quốc⟧ Korea | ⟦thích⟧ lubić | ⟦sách⟧ książka | ⟦chuyện⟧ sprawa
+@@ pdf-grammar-d35c6fcf21efb488#0
+~t 2. Doplňovací otázka (že?)|2. 附加疑问句|2. 附加疑問句|2. Tag questions|2. Les questions de confirmation|2. Rückversicherungsfragen|2. Megerősítő kérdések|2. Pertanyaan penegas|2. 付加疑問の表現|2. Pytania upewniające
+=cs
+A: ⟦Anh là người Việt Nam, (có) phải không?⟧ — Jsi Vietnamec, že?
+B: ⟦Phải. Anh là người Việt Nam.⟧ — Ano. Jsem Vietnamec.
+B: ⟦Không phải. Anh không phải là người Việt Nam.⟧ — Ne. Nejsem Vietnamec.
+U vět s ⟦là⟧ („podmět + là + podstatné jméno“) se otázka netvoří jen přidáním ⟦không⟧ na konec, ale doplňovací otázkou „podmět + là + podstatné jméno + có + phải + không?“ (…, je to tak?). ⟦có⟧ lze vynechat.
+⟦Anh Min-su là người Hàn Quốc.⟧ — Min-su je Korejec.
+⟦Anh Min-su là người Hàn Quốc, (có) phải không?⟧ — Min-su je Korejec, že?
+Kladná odpověď je ⟦ừ⟧ (jo), ⟦vâng⟧ (ano) nebo ⟦phải⟧ (správně), záporná ⟦không (phải)⟧ (není to tak). Zápor se tvoří tvarem ⟦không phải là⟧ (není …).
+A: ⟦Anh là người Hàn Quốc, phải không?⟧ — Jsi Korejec, že?
+B: ⟦Phải. Anh là người Hàn Quốc.⟧ — Ano. Jsem Korejec.
+B: ⟦Không (phải). Anh không phải là người Hàn Quốc.⟧ — Ne. Nejsem Korejec.
+Slovíčko: ⟦phải⟧ správný, pravda
+=zh_cn
+A：⟦Anh là người Việt Nam, (có) phải không?⟧ —— 哥哥是越南人，对吗？
+B：⟦Phải. Anh là người Việt Nam.⟧ —— 对。我是越南人。
+B：⟦Không phải. Anh không phải là người Việt Nam.⟧ —— 不是。我不是越南人。
+带 ⟦là⟧ 的句子“主语 + là + 名词”（主语是名词）的疑问句，不是只在句末加 ⟦không⟧，而是用“主语 + là + 名词 + có + phải + không?”（主语是名词，对吗？）的附加疑问形式。⟦có⟧ 可以省略。
+⟦Anh Min-su là người Hàn Quốc.⟧ —— 民秀哥是韩国人。
+⟦Anh Min-su là người Hàn Quốc, (có) phải không?⟧ —— 民秀哥是韩国人，对吗？
+肯定回答用 ⟦ừ⟧（嗯）、⟦vâng⟧（是的）或 ⟦phải⟧（对），否定回答用 ⟦không (phải)⟧（不对）。特别是否定句要用 ⟦không phải là⟧（不是……）的形式。
+A：⟦Anh là người Hàn Quốc, phải không?⟧ —— 哥哥是韩国人，对吗？
+B：⟦Phải. Anh là người Hàn Quốc.⟧ —— 对。我是韩国人。
+B：⟦Không (phải). Anh không phải là người Hàn Quốc.⟧ —— 不是。我不是韩国人。
+单词：⟦phải⟧ 对，正确
+=zh
+A：⟦Anh là người Việt Nam, (có) phải không?⟧ —— 哥哥是越南人，對嗎？
+B：⟦Phải. Anh là người Việt Nam.⟧ —— 對。我是越南人。
+B：⟦Không phải. Anh không phải là người Việt Nam.⟧ —— 不是。我不是越南人。
+帶 ⟦là⟧ 的句子「主語 + là + 名詞」（主語是名詞）的疑問句，不是只在句末加 ⟦không⟧，而是用「主語 + là + 名詞 + có + phải + không?」（主語是名詞，對嗎？）的附加疑問形式。⟦có⟧ 可以省略。
+⟦Anh Min-su là người Hàn Quốc.⟧ —— 民秀哥是韓國人。
+⟦Anh Min-su là người Hàn Quốc, (có) phải không?⟧ —— 民秀哥是韓國人，對嗎？
+肯定回答用 ⟦ừ⟧（嗯）、⟦vâng⟧（是的）或 ⟦phải⟧（對），否定回答用 ⟦không (phải)⟧（不對）。特別是否定句要用 ⟦không phải là⟧（不是……）的形式。
+A：⟦Anh là người Hàn Quốc, phải không?⟧ —— 哥哥是韓國人，對嗎？
+B：⟦Phải. Anh là người Hàn Quốc.⟧ —— 對。我是韓國人。
+B：⟦Không (phải). Anh không phải là người Hàn Quốc.⟧ —— 不是。我不是韓國人。
+單字：⟦phải⟧ 對，正確
+=en
+A: ⟦Anh là người Việt Nam, (có) phải không?⟧ — You're Vietnamese, aren't you?
+B: ⟦Phải. Anh là người Việt Nam.⟧ — Right. I'm Vietnamese.
+B: ⟦Không phải. Anh không phải là người Việt Nam.⟧ — No. I'm not Vietnamese.
+For sentences with ⟦là⟧ ("subject + là + noun"), the question isn't formed just by adding ⟦không⟧ at the end; instead you use the tag-question form "subject + là + noun + có + phải + không?" (…, isn't that right?). ⟦có⟧ can be omitted.
+⟦Anh Min-su là người Hàn Quốc.⟧ — Min-su is Korean.
+⟦Anh Min-su là người Hàn Quốc, (có) phải không?⟧ — Min-su is Korean, isn't he?
+A positive answer uses ⟦ừ⟧ (yeah), ⟦vâng⟧ (yes) or ⟦phải⟧ (right); a negative answer uses ⟦không (phải)⟧ (not right). Negative sentences in particular use the form ⟦không phải là⟧ (is not …).
+A: ⟦Anh là người Hàn Quốc, phải không?⟧ — You're Korean, right?
+B: ⟦Phải. Anh là người Hàn Quốc.⟧ — Right. I'm Korean.
+B: ⟦Không (phải). Anh không phải là người Hàn Quốc.⟧ — No. I'm not Korean.
+Word: ⟦phải⟧ right, correct
+=fr
+A : ⟦Anh là người Việt Nam, (có) phải không?⟧ — Tu es vietnamien, n'est-ce pas ?
+B : ⟦Phải. Anh là người Việt Nam.⟧ — Oui. Je suis vietnamien.
+B : ⟦Không phải. Anh không phải là người Việt Nam.⟧ — Non. Je ne suis pas vietnamien.
+Pour les phrases avec ⟦là⟧ (« sujet + là + nom »), on ne forme pas la question en ajoutant seulement ⟦không⟧ à la fin : on utilise la forme « sujet + là + nom + có + phải + không? » (…, c'est bien ça ?). ⟦có⟧ peut être omis.
+⟦Anh Min-su là người Hàn Quốc.⟧ — Min-su est coréen.
+⟦Anh Min-su là người Hàn Quốc, (có) phải không?⟧ — Min-su est coréen, n'est-ce pas ?
+On répond affirmativement par ⟦ừ⟧ (ouais), ⟦vâng⟧ (oui) ou ⟦phải⟧ (c'est ça), négativement par ⟦không (phải)⟧ (ce n'est pas ça). La phrase négative prend la forme ⟦không phải là⟧ (n'est pas …).
+A : ⟦Anh là người Hàn Quốc, phải không?⟧ — Tu es coréen, c'est ça ?
+B : ⟦Phải. Anh là người Hàn Quốc.⟧ — Oui. Je suis coréen.
+B : ⟦Không (phải). Anh không phải là người Hàn Quốc.⟧ — Non. Je ne suis pas coréen.
+Mot : ⟦phải⟧ exact, juste
+=de
+A: ⟦Anh là người Việt Nam, (có) phải không?⟧ — Du bist Vietnamese, nicht wahr?
+B: ⟦Phải. Anh là người Việt Nam.⟧ — Stimmt. Ich bin Vietnamese.
+B: ⟦Không phải. Anh không phải là người Việt Nam.⟧ — Nein. Ich bin kein Vietnamese.
+Bei Sätzen mit ⟦là⟧ („Subjekt + là + Substantiv“) bildet man die Frage nicht nur mit ⟦không⟧ am Ende, sondern mit der Rückfrage „Subjekt + là + Substantiv + có + phải + không?“ (…, stimmt's?). ⟦có⟧ kann entfallen.
+⟦Anh Min-su là người Hàn Quốc.⟧ — Min-su ist Koreaner.
+⟦Anh Min-su là người Hàn Quốc, (có) phải không?⟧ — Min-su ist Koreaner, oder?
+Bejahend antwortet man mit ⟦ừ⟧ (ja), ⟦vâng⟧ (ja, höflich) oder ⟦phải⟧ (stimmt), verneinend mit ⟦không (phải)⟧ (stimmt nicht). Verneinte Sätze verwenden die Form ⟦không phải là⟧ (ist nicht …).
+A: ⟦Anh là người Hàn Quốc, phải không?⟧ — Du bist Koreaner, stimmt's?
+B: ⟦Phải. Anh là người Hàn Quốc.⟧ — Stimmt. Ich bin Koreaner.
+B: ⟦Không (phải). Anh không phải là người Hàn Quốc.⟧ — Nein. Ich bin kein Koreaner.
+Wort: ⟦phải⟧ richtig, stimmen
+=hu
+A: ⟦Anh là người Việt Nam, (có) phải không?⟧ — Vietnámi vagy, ugye?
+B: ⟦Phải. Anh là người Việt Nam.⟧ — Igen. Vietnámi vagyok.
+B: ⟦Không phải. Anh không phải là người Việt Nam.⟧ — Nem. Nem vagyok vietnámi.
+A ⟦là⟧-t tartalmazó mondatok („alany + là + főnév”) kérdő alakja nem csupán a mondat végi ⟦không⟧-gal képződik, hanem „alany + là + főnév + có + phải + không?” (…, igaz?) megerősítő kérdéssel. A ⟦có⟧ elhagyható.
+⟦Anh Min-su là người Hàn Quốc.⟧ — Min-su koreai.
+⟦Anh Min-su là người Hàn Quốc, (có) phải không?⟧ — Min-su koreai, ugye?
+Igenlő válasz: ⟦ừ⟧ (aha), ⟦vâng⟧ (igen) vagy ⟦phải⟧ (igaz); nemleges válasz: ⟦không (phải)⟧ (nem igaz). A tagadó mondat alakja ⟦không phải là⟧ (nem …).
+A: ⟦Anh là người Hàn Quốc, phải không?⟧ — Koreai vagy, igaz?
+B: ⟦Phải. Anh là người Hàn Quốc.⟧ — Igen. Koreai vagyok.
+B: ⟦Không (phải). Anh không phải là người Hàn Quốc.⟧ — Nem. Nem vagyok koreai.
+Szó: ⟦phải⟧ igaz, helyes
+=id
+A: ⟦Anh là người Việt Nam, (có) phải không?⟧ — Kakak orang Vietnam, kan?
+B: ⟦Phải. Anh là người Việt Nam.⟧ — Betul. Kakak orang Vietnam.
+B: ⟦Không phải. Anh không phải là người Việt Nam.⟧ — Bukan. Kakak bukan orang Vietnam.
+Kalimat dengan ⟦là⟧ ("subjek + là + kata benda") tidak dijadikan pertanyaan hanya dengan menambah ⟦không⟧ di akhir, tetapi dengan bentuk pertanyaan penegas "subjek + là + kata benda + có + phải + không?" (…, benar?). ⟦có⟧ boleh dihilangkan.
+⟦Anh Min-su là người Hàn Quốc.⟧ — Kak Min-su orang Korea.
+⟦Anh Min-su là người Hàn Quốc, (có) phải không?⟧ — Kak Min-su orang Korea, kan?
+Jawaban positif memakai ⟦ừ⟧ (ya), ⟦vâng⟧ (ya, sopan) atau ⟦phải⟧ (betul), jawaban negatif ⟦không (phải)⟧ (tidak betul). Kalimat negatif khususnya memakai bentuk ⟦không phải là⟧ (bukan …).
+A: ⟦Anh là người Hàn Quốc, phải không?⟧ — Kakak orang Korea, kan?
+B: ⟦Phải. Anh là người Hàn Quốc.⟧ — Betul. Kakak orang Korea.
+B: ⟦Không (phải). Anh không phải là người Hàn Quốc.⟧ — Bukan. Kakak bukan orang Korea.
+Kosakata: ⟦phải⟧ betul, benar
+=ja
+A：⟦Anh là người Việt Nam, (có) phải không?⟧ — お兄さんはベトナム人ですよね？
+B：⟦Phải. Anh là người Việt Nam.⟧ — そうだよ。僕はベトナム人だ。
+B：⟦Không phải. Anh không phải là người Việt Nam.⟧ — 違うよ。僕はベトナム人じゃない。
+⟦là⟧ のある文「主語 ＋ là ＋ 名詞」（主語は名詞だ）の疑問文は、文末に ⟦không⟧ をつけるだけでなく、「主語 ＋ là ＋ 名詞 ＋ có ＋ phải ＋ không?」（主語は名詞だ、そうでしょう？）の付加疑問の形を使います。⟦có⟧ は省略できます。
+⟦Anh Min-su là người Hàn Quốc.⟧ — ミンスさんは韓国人だ。
+⟦Anh Min-su là người Hàn Quốc, (có) phải không?⟧ — ミンスさんは韓国人ですよね？
+肯定の答えには ⟦ừ⟧（うん）、⟦vâng⟧（はい）または ⟦phải⟧（そうだ）を、否定の答えには ⟦không (phải)⟧（違う）を使います。特に否定文は ⟦không phải là⟧（～ではない）の形を使います。
+A：⟦Anh là người Hàn Quốc, phải không?⟧ — お兄さんは韓国人ですよね？
+B：⟦Phải. Anh là người Hàn Quốc.⟧ — そうだよ。僕は韓国人だ。
+B：⟦Không (phải). Anh không phải là người Hàn Quốc.⟧ — 違うよ。僕は韓国人じゃない。
+単語：⟦phải⟧ 正しい、そうだ
+=pl
+A: ⟦Anh là người Việt Nam, (có) phải không?⟧ — Jesteś Wietnamczykiem, prawda?
+B: ⟦Phải. Anh là người Việt Nam.⟧ — Tak. Jestem Wietnamczykiem.
+B: ⟦Không phải. Anh không phải là người Việt Nam.⟧ — Nie. Nie jestem Wietnamczykiem.
+W zdaniach z ⟦là⟧ („podmiot + là + rzeczownik”) pytania nie tworzy się samym ⟦không⟧ na końcu, lecz formą „podmiot + là + rzeczownik + có + phải + không?” (…, prawda?). ⟦có⟧ można pominąć.
+⟦Anh Min-su là người Hàn Quốc.⟧ — Min-su jest Koreańczykiem.
+⟦Anh Min-su là người Hàn Quốc, (có) phải không?⟧ — Min-su jest Koreańczykiem, prawda?
+Odpowiedź twierdząca to ⟦ừ⟧ (no), ⟦vâng⟧ (tak) lub ⟦phải⟧ (zgadza się), przecząca ⟦không (phải)⟧ (nie zgadza się). Zdanie przeczące ma formę ⟦không phải là⟧ (nie jest …).
+A: ⟦Anh là người Hàn Quốc, phải không?⟧ — Jesteś Koreańczykiem, prawda?
+B: ⟦Phải. Anh là người Hàn Quốc.⟧ — Tak. Jestem Koreańczykiem.
+B: ⟦Không (phải). Anh không phải là người Hàn Quốc.⟧ — Nie. Nie jestem Koreańczykiem.
+Słówko: ⟦phải⟧ prawdziwy, słuszny
+@@ pdf-grammar-1654eb602402692f#0
+~t 1. Výčet|1. 列举的表达|1. 列舉的表達|1. Listing items|1. Énumérer|1. Aufzählen|1. Felsorolás|1. Ungkapan menyebutkan daftar|1. 列挙の表現|1. Wyliczanie
+=cs
+⟦Gia đình tôi có bốn người : bố mẹ, anh trai và tôi.⟧ — Naše rodina má čtyři členy: rodiče, staršího bratra a mě.
+Při výčtu se používá tvar ⟦A, B, C và D⟧.
+⟦Anh muốn đi du lịch Mĩ, Pháp, Nhật Bản và Việt Nam.⟧ — Chci cestovat do Ameriky, Francie, Japonska a Vietnamu.
+Slovíčka: ⟦bốn⟧ čtyři | ⟦và⟧ a | ⟦anh trai⟧ starší bratr | ⟦muốn⟧ chtít | ⟦du lịch⟧ cestovat | ⟦Pháp⟧ Francie | ⟦Nhật Bản⟧ Japonsko
+=zh_cn
+⟦Gia đình tôi có bốn người : bố mẹ, anh trai và tôi.⟧ —— 我家有四口人：父母、哥哥和我。
+列举时使用 ⟦A, B, C và D⟧ 的形式。
+⟦Anh muốn đi du lịch Mĩ, Pháp, Nhật Bản và Việt Nam.⟧ —— 我想去美国、法国、日本和越南旅行。
+单词：⟦bốn⟧ 四 | ⟦và⟧ 和 | ⟦anh trai⟧ 亲哥哥 | ⟦muốn⟧ 想要 | ⟦du lịch⟧ 旅行 | ⟦Pháp⟧ 法国 | ⟦Nhật Bản⟧ 日本
+=zh
+⟦Gia đình tôi có bốn người : bố mẹ, anh trai và tôi.⟧ —— 我家有四口人：父母、哥哥和我。
+列舉時使用 ⟦A, B, C và D⟧ 的形式。
+⟦Anh muốn đi du lịch Mĩ, Pháp, Nhật Bản và Việt Nam.⟧ —— 我想去美國、法國、日本和越南旅行。
+單字：⟦bốn⟧ 四 | ⟦và⟧ 和 | ⟦anh trai⟧ 親哥哥 | ⟦muốn⟧ 想要 | ⟦du lịch⟧ 旅行 | ⟦Pháp⟧ 法國 | ⟦Nhật Bản⟧ 日本
+=en
+⟦Gia đình tôi có bốn người : bố mẹ, anh trai và tôi.⟧ — There are four people in my family: my parents, my older brother and me.
+When listing, use the form ⟦A, B, C và D⟧.
+⟦Anh muốn đi du lịch Mĩ, Pháp, Nhật Bản và Việt Nam.⟧ — I want to travel to America, France, Japan and Vietnam.
+Words: ⟦bốn⟧ four | ⟦và⟧ and | ⟦anh trai⟧ older brother | ⟦muốn⟧ to want | ⟦du lịch⟧ to travel | ⟦Pháp⟧ France | ⟦Nhật Bản⟧ Japan
+=fr
+⟦Gia đình tôi có bốn người : bố mẹ, anh trai và tôi.⟧ — Nous sommes quatre dans ma famille : mes parents, mon grand frère et moi.
+Pour énumérer, on utilise la forme ⟦A, B, C và D⟧.
+⟦Anh muốn đi du lịch Mĩ, Pháp, Nhật Bản và Việt Nam.⟧ — Je veux voyager aux États-Unis, en France, au Japon et au Viêt Nam.
+Mots : ⟦bốn⟧ quatre | ⟦và⟧ et | ⟦anh trai⟧ grand frère | ⟦muốn⟧ vouloir | ⟦du lịch⟧ voyager | ⟦Pháp⟧ France | ⟦Nhật Bản⟧ Japon
+=de
+⟦Gia đình tôi có bốn người : bố mẹ, anh trai và tôi.⟧ — Meine Familie hat vier Personen: meine Eltern, meinen älteren Bruder und mich.
+Bei Aufzählungen verwendet man die Form ⟦A, B, C và D⟧.
+⟦Anh muốn đi du lịch Mĩ, Pháp, Nhật Bản và Việt Nam.⟧ — Ich möchte nach Amerika, Frankreich, Japan und Vietnam reisen.
+Wörter: ⟦bốn⟧ vier | ⟦và⟧ und | ⟦anh trai⟧ älterer Bruder | ⟦muốn⟧ wollen | ⟦du lịch⟧ reisen | ⟦Pháp⟧ Frankreich | ⟦Nhật Bản⟧ Japan
+=hu
+⟦Gia đình tôi có bốn người : bố mẹ, anh trai và tôi.⟧ — A családunk négy főből áll: a szüleim, a bátyám és én.
+Felsorolásnál az ⟦A, B, C và D⟧ formát használjuk.
+⟦Anh muốn đi du lịch Mĩ, Pháp, Nhật Bản và Việt Nam.⟧ — Amerikába, Franciaországba, Japánba és Vietnámba szeretnék utazni.
+Szavak: ⟦bốn⟧ négy | ⟦và⟧ és | ⟦anh trai⟧ báty | ⟦muốn⟧ akarni | ⟦du lịch⟧ utazni | ⟦Pháp⟧ Franciaország | ⟦Nhật Bản⟧ Japán
+=id
+⟦Gia đình tôi có bốn người : bố mẹ, anh trai và tôi.⟧ — Keluarga saya ada empat orang: ayah dan ibu, kakak laki-laki, dan saya.
+Untuk menyebutkan daftar, dipakai bentuk ⟦A, B, C và D⟧.
+⟦Anh muốn đi du lịch Mĩ, Pháp, Nhật Bản và Việt Nam.⟧ — Kakak ingin berwisata ke Amerika, Prancis, Jepang, dan Vietnam.
+Kosakata: ⟦bốn⟧ empat | ⟦và⟧ dan | ⟦anh trai⟧ kakak laki-laki | ⟦muốn⟧ ingin | ⟦du lịch⟧ berwisata | ⟦Pháp⟧ Prancis | ⟦Nhật Bản⟧ Jepang
+=ja
+⟦Gia đình tôi có bốn người : bố mẹ, anh trai và tôi.⟧ — 私の家族は両親、兄と私の4人です。
+列挙するときは ⟦A, B, C và D⟧ の形を使います。
+⟦Anh muốn đi du lịch Mĩ, Pháp, Nhật Bản và Việt Nam.⟧ — 僕はアメリカ、フランス、日本、そしてベトナムを旅行したい。
+単語：⟦bốn⟧ 四 | ⟦và⟧ そして | ⟦anh trai⟧ 兄 | ⟦muốn⟧ 望む | ⟦du lịch⟧ 旅行する | ⟦Pháp⟧ フランス | ⟦Nhật Bản⟧ 日本
+=pl
+⟦Gia đình tôi có bốn người : bố mẹ, anh trai và tôi.⟧ — Moja rodzina liczy cztery osoby: rodziców, starszego brata i mnie.
+Przy wyliczaniu używa się formy ⟦A, B, C và D⟧.
+⟦Anh muốn đi du lịch Mĩ, Pháp, Nhật Bản và Việt Nam.⟧ — Chcę pojechać do Ameryki, Francji, Japonii i Wietnamu.
+Słówka: ⟦bốn⟧ cztery | ⟦và⟧ i | ⟦anh trai⟧ starszy brat | ⟦muốn⟧ chcieć | ⟦du lịch⟧ podróżować | ⟦Pháp⟧ Francja | ⟦Nhật Bản⟧ Japonia

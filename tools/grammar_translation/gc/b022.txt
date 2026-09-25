@@ -1,0 +1,181 @@
+@@ pdf-grammar-27d96e965ed1b9c8#0
+=cs
+Klíčový výraz: ⟦~ tận ~⟧
+„sloveso + tận ~“ znamená „… až do/až na ~“. Za ⟦tận⟧ následuje podstatné jméno nebo číslovka a zdůrazňuje místo, míru či mez, kam děj dosáhne.
+❶ ⟦Nếu anh muốn thì tôi sẽ giao hàng tận nhà cho anh.⟧ — Pokud chcete, doručím vám zboží až domů.
+❷ Ⓐ ⟦Em làm việc chăm chỉ quá! Em dịch được nhiều chưa?⟧ — Ty ale pilně pracuješ! Přeložila jsi už hodně? Ⓑ ⟦Em dịch được tận 50 trang rồi, chỉ còn khoảng 10 trang nữa thôi.⟧ — Přeložila jsem už celých 50 stran, zbývá jen asi 10.
+Výrazy o počasí a podnebí: ⟦trời mát⟧ je chladno (příjemně) | ⟦trời mưa⟧ prší | ⟦trời âm u⟧ je zataženo | ⟦trời lạnh lắm⟧ je velká zima | ⟦trời nắng nóng⟧ je slunečno a horko
+Rozhovor: Min-ho jede na služební cestu do provincie a telefonuje s kolegyní Mai z tamní pobočky, aby si ověřil podnebí, počasí a co si má vzít s sebou.
+Min-ho: ⟦Alô, chào chị Mai ạ. Chị ơi, dạo này thời tiết ở đó thế nào?⟧ — Haló, dobrý den, Mai. Jaké je u vás teď počasí?
+Mai: ⟦Gần đây trời lạnh lắm, anh ạ.⟧ — Poslední dobou je velká zima.
+Min-ho: ⟦Nhiệt độ thế nào?⟧ — A jaké jsou teploty?
+Mai: ⟦Nhiệt độ có khi hạ xuống tận dưới 8 độ C. Ngoài ra, còn có gió mùa Đông Bắc nên càng thấy rét buốt.⟧ — Teplota někdy klesne až pod 8 °C. Navíc fouká severovýchodní monzun, takže je ještě pronikavější zima.
+Min-ho: ⟦Thế à? Như vậy thì tôi có cần phải chuẩn bị gì đặc biệt không?⟧ — Opravdu? Mám si tedy připravit něco zvláštního?
+Mai: ⟦Vâng. Anh nên mang theo áo rét và mũ ấm. Tuy nhiên nếu không chuẩn bị trước thì anh mua ở đây cũng được.⟧ — Ano. Měl byste si vzít zimní bundu a teplou čepici. Ale pokud si je nepřipravíte předem, můžete si je koupit i tady.
+Procvičování — jaké je počasí: ⟦trời lạnh lắm⟧ / ⟦trời nắng nóng⟧; teplota: ⟦hạ xuống tận dưới 8 độ C⟧ (klesá až pod 8 °C) / ⟦tăng lên tận trên 40 độ C⟧ (stoupá až nad 40 °C); co ještě: ⟦gió mùa Đông Bắc nên càng thấy rét buốt⟧ (severovýchodní monzun, takže je ještě větší zima) / ⟦không khí ẩm nên thấy oi bức⟧ (vlhký vzduch, takže je dusno); co připravit: ⟦áo rét và mũ ấm⟧ (zimní bundu a teplou čepici) / ⟦quần ngắn và dép⟧ (kraťasy a sandály).
+Vzor (⟦hơn 100 mét⟧): Ⓐ ⟦Cô có biết loại cây này có thể mọc cao bao nhiêu mét không?⟧ — Víte, do jaké výšky tento druh stromu může vyrůst? Ⓑ ⟦Ừ, cô nghe nói là loại cây này có thể mọc cao tận hơn 100 mét.⟧ — Ano, slyšela jsem, že může dorůst až přes 100 metrů.
+❶ ⟦1 tháng⟧: Ⓐ ⟦Chị có biết từ tuần sau ở khu vực này trời sẽ mưa trong bao lâu không?⟧ — Víš, jak dlouho bude v této oblasti od příštího týdne pršet? Ⓑ ⟦Ừ, chị nghe nói là trời sẽ mưa tận 1 tháng.⟧ — Ano, slyšela jsem, že bude pršet až měsíc.
+❷ ⟦hàng trăm triệu đô⟧: Ⓐ ⟦Anh có biết năm nay công ti anh sẽ thực hiện bao nhiêu doanh thu không?⟧ — Víš, jakých tržeb letos tvoje firma dosáhne? Ⓑ ⟦Ừ, anh nghe nói là công ti sẽ thực hiện doanh thu tận hàng trăm triệu đô.⟧ — Ano, slyšel jsem, že firma dosáhne tržeb až stovek milionů dolarů.
+Nová slovíčka: ⟦âm u⟧ zatažený (o počasí) | ⟦buốt⟧ pronikavý, řezavý | ⟦không khí⟧ vzduch | ⟦mọc⟧ růst | ⟦doanh thu⟧ tržby | ⟦thực hiện⟧ uskutečnit, realizovat | ⟦gió mùa⟧ monzun
+=zh_cn
+核心表达：⟦~ tận ~⟧
+“动词 + tận ~”是表示“……到……为止/竟达……”的连接词。⟦tận⟧ 后面接名词、数词等，强调前面动词所达到的位置、程度、限度。
+❶ ⟦Nếu anh muốn thì tôi sẽ giao hàng tận nhà cho anh.⟧ —— 如果您愿意，我会把货送到您家门口。
+❷ Ⓐ ⟦Em làm việc chăm chỉ quá! Em dịch được nhiều chưa?⟧ —— 你工作真努力！翻译了很多了吗？ Ⓑ ⟦Em dịch được tận 50 trang rồi, chỉ còn khoảng 10 trang nữa thôi.⟧ —— 我已经翻译了足足50页，只剩大约10页了。
+表示天气与气候的表达：⟦trời mát⟧ 天气凉爽 | ⟦trời mưa⟧ 下雨 | ⟦trời âm u⟧ 天阴 | ⟦trời lạnh lắm⟧ 天很冷 | ⟦trời nắng nóng⟧ 天晴又热
+对话：敏浩要去外地出差，为了确认当地的气候、天气和要准备的东西，正在给在当地分公司工作的同事梅打电话。
+敏浩：⟦Alô, chào chị Mai ạ. Chị ơi, dạo này thời tiết ở đó thế nào?⟧ —— 喂，梅姐你好。最近那边天气怎么样？
+梅：⟦Gần đây trời lạnh lắm, anh ạ.⟧ —— 最近很冷。
+敏浩：⟦Nhiệt độ thế nào?⟧ —— 气温怎么样？
+梅：⟦Nhiệt độ có khi hạ xuống tận dưới 8 độ C. Ngoài ra, còn có gió mùa Đông Bắc nên càng thấy rét buốt.⟧ —— 气温有时降到8度以下。另外还刮东北季风，所以更觉得刺骨地冷。
+敏浩：⟦Thế à? Như vậy thì tôi có cần phải chuẩn bị gì đặc biệt không?⟧ —— 是吗？那我需要特别准备什么吗？
+梅：⟦Vâng. Anh nên mang theo áo rét và mũ ấm. Tuy nhiên nếu không chuẩn bị trước thì anh mua ở đây cũng được.⟧ —— 是的。你最好带上防寒外套和保暖帽。不过如果没提前准备，在这边买也可以。
+句型练习 —— 天气怎么样：⟦trời lạnh lắm⟧ / ⟦trời nắng nóng⟧；气温：⟦hạ xuống tận dưới 8 độ C⟧（降到8度以下）/ ⟦tăng lên tận trên 40 độ C⟧（升到40度以上）；还有什么：⟦gió mùa Đông Bắc nên càng thấy rét buốt⟧（刮东北季风，更觉刺骨寒冷）/ ⟦không khí ẩm nên thấy oi bức⟧（空气潮湿，感觉闷热）；准备什么：⟦áo rét và mũ ấm⟧（防寒外套和保暖帽）/ ⟦quần ngắn và dép⟧（短裤和拖鞋）。
+范例（⟦hơn 100 mét⟧）：Ⓐ ⟦Cô có biết loại cây này có thể mọc cao bao nhiêu mét không?⟧ —— 你知道这种树能长多高吗？ Ⓑ ⟦Ừ, cô nghe nói là loại cây này có thể mọc cao tận hơn 100 mét.⟧ —— 嗯，听说这种树能长到100多米高。
+❶ ⟦1 tháng⟧：Ⓐ ⟦Chị có biết từ tuần sau ở khu vực này trời sẽ mưa trong bao lâu không?⟧ —— 你知道从下周开始这个地区会下多久的雨吗？ Ⓑ ⟦Ừ, chị nghe nói là trời sẽ mưa tận 1 tháng.⟧ —— 嗯，听说会下整整一个月。
+❷ ⟦hàng trăm triệu đô⟧：Ⓐ ⟦Anh có biết năm nay công ti anh sẽ thực hiện bao nhiêu doanh thu không?⟧ —— 你知道你们公司今年会实现多少营业额吗？ Ⓑ ⟦Ừ, anh nghe nói là công ti sẽ thực hiện doanh thu tận hàng trăm triệu đô.⟧ —— 嗯，听说公司营业额会高达数亿美元。
+新单词：⟦âm u⟧ （天气）阴沉 | ⟦buốt⟧ 刺骨 | ⟦không khí⟧ 空气 | ⟦mọc⟧ 生长 | ⟦doanh thu⟧ 营业额 | ⟦thực hiện⟧ 实现，实行 | ⟦gió mùa⟧ 季风
+=zh
+核心表達：⟦~ tận ~⟧
+「動詞 + tận ~」是表示「……到……為止/竟達……」的連接詞。⟦tận⟧ 後面接名詞、數詞等，強調前面動詞所達到的位置、程度、限度。
+❶ ⟦Nếu anh muốn thì tôi sẽ giao hàng tận nhà cho anh.⟧ —— 如果您願意，我會把貨送到您家門口。
+❷ Ⓐ ⟦Em làm việc chăm chỉ quá! Em dịch được nhiều chưa?⟧ —— 你工作真努力！翻譯了很多了嗎？ Ⓑ ⟦Em dịch được tận 50 trang rồi, chỉ còn khoảng 10 trang nữa thôi.⟧ —— 我已經翻譯了足足50頁，只剩大約10頁了。
+表示天氣與氣候的表達：⟦trời mát⟧ 天氣涼爽 | ⟦trời mưa⟧ 下雨 | ⟦trời âm u⟧ 天陰 | ⟦trời lạnh lắm⟧ 天很冷 | ⟦trời nắng nóng⟧ 天晴又熱
+對話：敏浩要去外地出差，為了確認當地的氣候、天氣和要準備的東西，正在打電話給在當地分公司工作的同事梅。
+敏浩：⟦Alô, chào chị Mai ạ. Chị ơi, dạo này thời tiết ở đó thế nào?⟧ —— 喂，梅姐妳好。最近那邊天氣怎麼樣？
+梅：⟦Gần đây trời lạnh lắm, anh ạ.⟧ —— 最近很冷。
+敏浩：⟦Nhiệt độ thế nào?⟧ —— 氣溫怎麼樣？
+梅：⟦Nhiệt độ có khi hạ xuống tận dưới 8 độ C. Ngoài ra, còn có gió mùa Đông Bắc nên càng thấy rét buốt.⟧ —— 氣溫有時降到8度以下。另外還颳東北季風，所以更覺得刺骨地冷。
+敏浩：⟦Thế à? Như vậy thì tôi có cần phải chuẩn bị gì đặc biệt không?⟧ —— 是嗎？那我需要特別準備什麼嗎？
+梅：⟦Vâng. Anh nên mang theo áo rét và mũ ấm. Tuy nhiên nếu không chuẩn bị trước thì anh mua ở đây cũng được.⟧ —— 是的。你最好帶上防寒外套和保暖帽。不過如果沒提前準備，在這邊買也可以。
+句型練習 —— 天氣怎麼樣：⟦trời lạnh lắm⟧ / ⟦trời nắng nóng⟧；氣溫：⟦hạ xuống tận dưới 8 độ C⟧（降到8度以下）/ ⟦tăng lên tận trên 40 độ C⟧（升到40度以上）；還有什麼：⟦gió mùa Đông Bắc nên càng thấy rét buốt⟧（颳東北季風，更覺刺骨寒冷）/ ⟦không khí ẩm nên thấy oi bức⟧（空氣潮濕，感覺悶熱）；準備什麼：⟦áo rét và mũ ấm⟧（防寒外套和保暖帽）/ ⟦quần ngắn và dép⟧（短褲和拖鞋）。
+範例（⟦hơn 100 mét⟧）：Ⓐ ⟦Cô có biết loại cây này có thể mọc cao bao nhiêu mét không?⟧ —— 妳知道這種樹能長多高嗎？ Ⓑ ⟦Ừ, cô nghe nói là loại cây này có thể mọc cao tận hơn 100 mét.⟧ —— 嗯，聽說這種樹能長到100多公尺高。
+❶ ⟦1 tháng⟧：Ⓐ ⟦Chị có biết từ tuần sau ở khu vực này trời sẽ mưa trong bao lâu không?⟧ —— 妳知道從下週開始這個地區會下多久的雨嗎？ Ⓑ ⟦Ừ, chị nghe nói là trời sẽ mưa tận 1 tháng.⟧ —— 嗯，聽說會下整整一個月。
+❷ ⟦hàng trăm triệu đô⟧：Ⓐ ⟦Anh có biết năm nay công ti anh sẽ thực hiện bao nhiêu doanh thu không?⟧ —— 你知道你們公司今年會實現多少營業額嗎？ Ⓑ ⟦Ừ, anh nghe nói là công ti sẽ thực hiện doanh thu tận hàng trăm triệu đô.⟧ —— 嗯，聽說公司營業額會高達數億美元。
+新單字：⟦âm u⟧ （天氣）陰沉 | ⟦buốt⟧ 刺骨 | ⟦không khí⟧ 空氣 | ⟦mọc⟧ 生長 | ⟦doanh thu⟧ 營業額 | ⟦thực hiện⟧ 實現，實行 | ⟦gió mùa⟧ 季風
+=en
+Key expression: ⟦~ tận ~⟧
+"verb + tận ~" is a connector meaning "… all the way to / as much as ~". ⟦tận⟧ is followed by a noun or number and emphasizes the place, degree or limit the verb reaches.
+❶ ⟦Nếu anh muốn thì tôi sẽ giao hàng tận nhà cho anh.⟧ — If you like, I'll deliver the goods right to your door.
+❷ Ⓐ ⟦Em làm việc chăm chỉ quá! Em dịch được nhiều chưa?⟧ — You're working so hard! Have you translated a lot yet? Ⓑ ⟦Em dịch được tận 50 trang rồi, chỉ còn khoảng 10 trang nữa thôi.⟧ — I've translated a whole 50 pages; only about 10 are left.
+Weather and climate expressions: ⟦trời mát⟧ it's cool | ⟦trời mưa⟧ it's raining | ⟦trời âm u⟧ it's overcast | ⟦trời lạnh lắm⟧ it's very cold | ⟦trời nắng nóng⟧ it's sunny and hot
+Dialogue: Before a business trip to the provinces, Min-ho phones Mai, a colleague at the local branch, to check the climate, weather and what to pack.
+Min-ho: ⟦Alô, chào chị Mai ạ. Chị ơi, dạo này thời tiết ở đó thế nào?⟧ — Hello, Mai. How's the weather there these days?
+Mai: ⟦Gần đây trời lạnh lắm, anh ạ.⟧ — It's been very cold lately.
+Min-ho: ⟦Nhiệt độ thế nào?⟧ — What about the temperature?
+Mai: ⟦Nhiệt độ có khi hạ xuống tận dưới 8 độ C. Ngoài ra, còn có gió mùa Đông Bắc nên càng thấy rét buốt.⟧ — Sometimes it drops below 8°C. On top of that, there's the north-east monsoon, so it feels even more bitterly cold.
+Min-ho: ⟦Thế à? Như vậy thì tôi có cần phải chuẩn bị gì đặc biệt không?⟧ — Really? Then do I need to prepare anything special?
+Mai: ⟦Vâng. Anh nên mang theo áo rét và mũ ấm. Tuy nhiên nếu không chuẩn bị trước thì anh mua ở đây cũng được.⟧ — Yes. You should bring a winter coat and a warm hat. But if you don't get them beforehand, you can buy them here too.
+Pattern practice — the weather: ⟦trời lạnh lắm⟧ / ⟦trời nắng nóng⟧; temperature: ⟦hạ xuống tận dưới 8 độ C⟧ (drops below 8°C) / ⟦tăng lên tận trên 40 độ C⟧ (rises above 40°C); what else: ⟦gió mùa Đông Bắc nên càng thấy rét buốt⟧ (the north-east monsoon makes it even colder) / ⟦không khí ẩm nên thấy oi bức⟧ (the air is humid, so it feels muggy); what to prepare: ⟦áo rét và mũ ấm⟧ (a winter coat and warm hat) / ⟦quần ngắn và dép⟧ (shorts and sandals).
+Model (⟦hơn 100 mét⟧): Ⓐ ⟦Cô có biết loại cây này có thể mọc cao bao nhiêu mét không?⟧ — Do you know how tall this kind of tree can grow? Ⓑ ⟦Ừ, cô nghe nói là loại cây này có thể mọc cao tận hơn 100 mét.⟧ — Yes, I hear it can grow to over 100 metres.
+❶ ⟦1 tháng⟧: Ⓐ ⟦Chị có biết từ tuần sau ở khu vực này trời sẽ mưa trong bao lâu không?⟧ — Do you know how long it will rain in this area from next week? Ⓑ ⟦Ừ, chị nghe nói là trời sẽ mưa tận 1 tháng.⟧ — Yes, I hear it'll rain for a whole month.
+❷ ⟦hàng trăm triệu đô⟧: Ⓐ ⟦Anh có biết năm nay công ti anh sẽ thực hiện bao nhiêu doanh thu không?⟧ — Do you know how much revenue your company will make this year? Ⓑ ⟦Ừ, anh nghe nói là công ti sẽ thực hiện doanh thu tận hàng trăm triệu đô.⟧ — Yes, I hear the company will make as much as hundreds of millions of dollars.
+New words: ⟦âm u⟧ overcast | ⟦buốt⟧ piercing, biting | ⟦không khí⟧ air | ⟦mọc⟧ to grow | ⟦doanh thu⟧ revenue | ⟦thực hiện⟧ to achieve, carry out | ⟦gió mùa⟧ monsoon
+=fr
+Expression clé : ⟦~ tận ~⟧
+« verbe + tận ~ » est un connecteur signifiant « … jusqu'à ~ / pas moins de ~ ». ⟦tận⟧ est suivi d'un nom ou d'un nombre et souligne le lieu, le degré ou la limite atteints par le verbe.
+❶ ⟦Nếu anh muốn thì tôi sẽ giao hàng tận nhà cho anh.⟧ — Si vous le souhaitez, je vous livrerai jusqu'à votre domicile.
+❷ Ⓐ ⟦Em làm việc chăm chỉ quá! Em dịch được nhiều chưa?⟧ — Tu travailles dur ! Tu as déjà beaucoup traduit ? Ⓑ ⟦Em dịch được tận 50 trang rồi, chỉ còn khoảng 10 trang nữa thôi.⟧ — J'ai déjà traduit pas moins de 50 pages ; il n'en reste qu'une dizaine.
+Expressions du temps et du climat : ⟦trời mát⟧ il fait frais | ⟦trời mưa⟧ il pleut | ⟦trời âm u⟧ le ciel est couvert | ⟦trời lạnh lắm⟧ il fait très froid | ⟦trời nắng nóng⟧ il fait chaud et ensoleillé
+Dialogue : avant un déplacement en province, Min-ho téléphone à Mai, une collègue de la filiale locale, pour vérifier le climat, la météo et ce qu'il faut emporter.
+Min-ho : ⟦Alô, chào chị Mai ạ. Chị ơi, dạo này thời tiết ở đó thế nào?⟧ — Allô, bonjour Mai. Quel temps fait-il chez vous ces temps-ci ?
+Mai : ⟦Gần đây trời lạnh lắm, anh ạ.⟧ — Il fait très froid ces derniers temps.
+Min-ho : ⟦Nhiệt độ thế nào?⟧ — Et les températures ?
+Mai : ⟦Nhiệt độ có khi hạ xuống tận dưới 8 độ C. Ngoài ra, còn có gió mùa Đông Bắc nên càng thấy rét buốt.⟧ — Il arrive qu'elles descendent jusqu'en dessous de 8 °C. En plus, il y a la mousson du nord-est, alors le froid est encore plus mordant.
+Min-ho : ⟦Thế à? Như vậy thì tôi có cần phải chuẩn bị gì đặc biệt không?⟧ — Ah bon ? Alors, dois-je prévoir quelque chose de particulier ?
+Mai : ⟦Vâng. Anh nên mang theo áo rét và mũ ấm. Tuy nhiên nếu không chuẩn bị trước thì anh mua ở đây cũng được.⟧ — Oui. Tu devrais emporter un manteau d'hiver et un bonnet chaud. Mais si tu ne les prépares pas à l'avance, tu peux aussi les acheter ici.
+Exercices — le temps : ⟦trời lạnh lắm⟧ / ⟦trời nắng nóng⟧ ; température : ⟦hạ xuống tận dưới 8 độ C⟧ (descend sous les 8 °C) / ⟦tăng lên tận trên 40 độ C⟧ (monte au-dessus de 40 °C) ; autre chose : ⟦gió mùa Đông Bắc nên càng thấy rét buốt⟧ (la mousson du nord-est rend le froid plus mordant) / ⟦không khí ẩm nên thấy oi bức⟧ (l'air humide rend l'atmosphère étouffante) ; quoi préparer : ⟦áo rét và mũ ấm⟧ (manteau d'hiver et bonnet) / ⟦quần ngắn và dép⟧ (short et sandales).
+Modèle (⟦hơn 100 mét⟧) : Ⓐ ⟦Cô có biết loại cây này có thể mọc cao bao nhiêu mét không?⟧ — Savez-vous jusqu'à quelle hauteur cet arbre peut pousser ? Ⓑ ⟦Ừ, cô nghe nói là loại cây này có thể mọc cao tận hơn 100 mét.⟧ — Oui, on dit qu'il peut atteindre plus de 100 mètres.
+❶ ⟦1 tháng⟧ : Ⓐ ⟦Chị có biết từ tuần sau ở khu vực này trời sẽ mưa trong bao lâu không?⟧ — Sais-tu combien de temps il va pleuvoir dans cette région à partir de la semaine prochaine ? Ⓑ ⟦Ừ, chị nghe nói là trời sẽ mưa tận 1 tháng.⟧ — Oui, on dit qu'il va pleuvoir pendant tout un mois.
+❷ ⟦hàng trăm triệu đô⟧ : Ⓐ ⟦Anh có biết năm nay công ti anh sẽ thực hiện bao nhiêu doanh thu không?⟧ — Sais-tu quel chiffre d'affaires ton entreprise réalisera cette année ? Ⓑ ⟦Ừ, anh nghe nói là công ti sẽ thực hiện doanh thu tận hàng trăm triệu đô.⟧ — Oui, il paraît qu'elle réalisera jusqu'à des centaines de millions de dollars.
+Nouveaux mots : ⟦âm u⟧ couvert (temps) | ⟦buốt⟧ mordant, perçant | ⟦không khí⟧ air | ⟦mọc⟧ pousser | ⟦doanh thu⟧ chiffre d'affaires | ⟦thực hiện⟧ réaliser | ⟦gió mùa⟧ mousson
+=de
+Schlüsselausdruck: ⟦~ tận ~⟧
+„Verb + tận ~“ ist ein Bindeglied mit der Bedeutung „… bis hin zu ~ / ganze ~“. Auf ⟦tận⟧ folgen Substantive oder Zahlen; es betont Ort, Grad oder Grenze, die das Verb erreicht.
+❶ ⟦Nếu anh muốn thì tôi sẽ giao hàng tận nhà cho anh.⟧ — Wenn Sie möchten, liefere ich Ihnen die Ware bis an die Haustür.
+❷ Ⓐ ⟦Em làm việc chăm chỉ quá! Em dịch được nhiều chưa?⟧ — Du arbeitest ja fleißig! Hast du schon viel übersetzt? Ⓑ ⟦Em dịch được tận 50 trang rồi, chỉ còn khoảng 10 trang nữa thôi.⟧ — Ich habe schon ganze 50 Seiten übersetzt, es fehlen nur noch etwa 10.
+Ausdrücke zu Wetter und Klima: ⟦trời mát⟧ es ist kühl | ⟦trời mưa⟧ es regnet | ⟦trời âm u⟧ es ist bedeckt | ⟦trời lạnh lắm⟧ es ist sehr kalt | ⟦trời nắng nóng⟧ es ist sonnig und heiß
+Dialog: Vor einer Geschäftsreise in die Provinz telefoniert Min-ho mit Mai, einer Kollegin in der dortigen Filiale, um Klima, Wetter und das Nötige zu klären.
+Min-ho: ⟦Alô, chào chị Mai ạ. Chị ơi, dạo này thời tiết ở đó thế nào?⟧ — Hallo, Mai. Wie ist das Wetter bei euch zurzeit?
+Mai: ⟦Gần đây trời lạnh lắm, anh ạ.⟧ — In letzter Zeit ist es sehr kalt.
+Min-ho: ⟦Nhiệt độ thế nào?⟧ — Und die Temperaturen?
+Mai: ⟦Nhiệt độ có khi hạ xuống tận dưới 8 độ C. Ngoài ra, còn có gió mùa Đông Bắc nên càng thấy rét buốt.⟧ — Die Temperatur sinkt manchmal bis unter 8 °C. Außerdem weht der Nordost-Monsun, dadurch ist es noch schneidender kalt.
+Min-ho: ⟦Thế à? Như vậy thì tôi có cần phải chuẩn bị gì đặc biệt không?⟧ — Wirklich? Muss ich dann etwas Besonderes vorbereiten?
+Mai: ⟦Vâng. Anh nên mang theo áo rét và mũ ấm. Tuy nhiên nếu không chuẩn bị trước thì anh mua ở đây cũng được.⟧ — Ja. Du solltest eine Winterjacke und eine warme Mütze mitnehmen. Wenn du sie nicht vorher besorgst, kannst du sie aber auch hier kaufen.
+Satzmusterübung — Wetter: ⟦trời lạnh lắm⟧ / ⟦trời nắng nóng⟧; Temperatur: ⟦hạ xuống tận dưới 8 độ C⟧ (sinkt bis unter 8 °C) / ⟦tăng lên tận trên 40 độ C⟧ (steigt bis über 40 °C); was noch: ⟦gió mùa Đông Bắc nên càng thấy rét buốt⟧ (Nordost-Monsun, dadurch noch kälter) / ⟦không khí ẩm nên thấy oi bức⟧ (feuchte Luft, daher schwül); was vorbereiten: ⟦áo rét và mũ ấm⟧ (Winterjacke und warme Mütze) / ⟦quần ngắn và dép⟧ (kurze Hose und Sandalen).
+Muster (⟦hơn 100 mét⟧): Ⓐ ⟦Cô có biết loại cây này có thể mọc cao bao nhiêu mét không?⟧ — Wissen Sie, wie hoch diese Baumart werden kann? Ⓑ ⟦Ừ, cô nghe nói là loại cây này có thể mọc cao tận hơn 100 mét.⟧ — Ja, ich habe gehört, sie kann über 100 Meter hoch werden.
+❶ ⟦1 tháng⟧: Ⓐ ⟦Chị có biết từ tuần sau ở khu vực này trời sẽ mưa trong bao lâu không?⟧ — Weißt du, wie lange es ab nächster Woche in dieser Gegend regnen wird? Ⓑ ⟦Ừ, chị nghe nói là trời sẽ mưa tận 1 tháng.⟧ — Ja, ich habe gehört, es soll einen ganzen Monat regnen.
+❷ ⟦hàng trăm triệu đô⟧: Ⓐ ⟦Anh có biết năm nay công ti anh sẽ thực hiện bao nhiêu doanh thu không?⟧ — Weißt du, wie viel Umsatz deine Firma dieses Jahr machen wird? Ⓑ ⟦Ừ, anh nghe nói là công ti sẽ thực hiện doanh thu tận hàng trăm triệu đô.⟧ — Ja, ich habe gehört, der Umsatz soll bis zu Hunderte Millionen Dollar betragen.
+Neue Wörter: ⟦âm u⟧ bedeckt, trüb | ⟦buốt⟧ schneidend | ⟦không khí⟧ Luft | ⟦mọc⟧ wachsen | ⟦doanh thu⟧ Umsatz | ⟦thực hiện⟧ erzielen, durchführen | ⟦gió mùa⟧ Monsun
+=hu
+Kulcskifejezés: ⟦~ tận ~⟧
+Az „ige + tận ~” kötőelem jelentése „egészen …-ig / nem kevesebb, mint ~”. A ⟦tận⟧ után főnév vagy számnév áll, és azt a helyet, mértéket vagy határt hangsúlyozza, ameddig a cselekvés elér.
+❶ ⟦Nếu anh muốn thì tôi sẽ giao hàng tận nhà cho anh.⟧ — Ha szeretné, egészen házhoz szállítom az árut.
+❷ Ⓐ ⟦Em làm việc chăm chỉ quá! Em dịch được nhiều chưa?⟧ — De szorgalmasan dolgozol! Sokat fordítottál már? Ⓑ ⟦Em dịch được tận 50 trang rồi, chỉ còn khoảng 10 trang nữa thôi.⟧ — Már 50 oldalt lefordítottam, csak kb. 10 van hátra.
+Időjárás és éghajlat kifejezései: ⟦trời mát⟧ hűvös van | ⟦trời mưa⟧ esik az eső | ⟦trời âm u⟧ borús az ég | ⟦trời lạnh lắm⟧ nagyon hideg van | ⟦trời nắng nóng⟧ napos és meleg van
+Párbeszéd: Min-ho vidéki üzleti útja előtt felhívja Mait, a helyi fióktelep kolléganőjét, hogy tájékozódjon az éghajlatról, az időjárásról és arról, mit vigyen.
+Min-ho: ⟦Alô, chào chị Mai ạ. Chị ơi, dạo này thời tiết ở đó thế nào?⟧ — Halló, jó napot, Mai. Milyen most az idő arrafelé?
+Mai: ⟦Gần đây trời lạnh lắm, anh ạ.⟧ — Mostanában nagyon hideg van.
+Min-ho: ⟦Nhiệt độ thế nào?⟧ — És a hőmérséklet?
+Mai: ⟦Nhiệt độ có khi hạ xuống tận dưới 8 độ C. Ngoài ra, còn có gió mùa Đông Bắc nên càng thấy rét buốt.⟧ — Néha 8 fok alá is lemegy. Ráadásul fúj az északkeleti monszun, így még csípősebb a hideg.
+Min-ho: ⟦Thế à? Như vậy thì tôi có cần phải chuẩn bị gì đặc biệt không?⟧ — Tényleg? Akkor kell valami különlegeset előkészítenem?
+Mai: ⟦Vâng. Anh nên mang theo áo rét và mũ ấm. Tuy nhiên nếu không chuẩn bị trước thì anh mua ở đây cũng được.⟧ — Igen. Hozz magaddal télikabátot és meleg sapkát. De ha nem készülsz elő, itt is megveheted.
+Mintagyakorlat — milyen az idő: ⟦trời lạnh lắm⟧ / ⟦trời nắng nóng⟧; hőmérséklet: ⟦hạ xuống tận dưới 8 độ C⟧ (8 fok alá süllyed) / ⟦tăng lên tận trên 40 độ C⟧ (40 fok fölé emelkedik); mi még: ⟦gió mùa Đông Bắc nên càng thấy rét buốt⟧ (az északkeleti monszun miatt még hidegebb) / ⟦không khí ẩm nên thấy oi bức⟧ (párás a levegő, ezért fülledt); mit készítsen: ⟦áo rét và mũ ấm⟧ (télikabát és meleg sapka) / ⟦quần ngắn và dép⟧ (rövidnadrág és papucs).
+Minta (⟦hơn 100 mét⟧): Ⓐ ⟦Cô có biết loại cây này có thể mọc cao bao nhiêu mét không?⟧ — Tudja, milyen magasra nőhet ez a fafajta? Ⓑ ⟦Ừ, cô nghe nói là loại cây này có thể mọc cao tận hơn 100 mét.⟧ — Igen, úgy hallottam, akár 100 méternél is magasabbra.
+❶ ⟦1 tháng⟧: Ⓐ ⟦Chị có biết từ tuần sau ở khu vực này trời sẽ mưa trong bao lâu không?⟧ — Tudod, jövő héttől meddig fog esni ezen a környéken? Ⓑ ⟦Ừ, chị nghe nói là trời sẽ mưa tận 1 tháng.⟧ — Igen, úgy hallottam, egy teljes hónapig.
+❷ ⟦hàng trăm triệu đô⟧: Ⓐ ⟦Anh có biết năm nay công ti anh sẽ thực hiện bao nhiêu doanh thu không?⟧ — Tudod, mekkora bevételt ér el idén a cégetek? Ⓑ ⟦Ừ, anh nghe nói là công ti sẽ thực hiện doanh thu tận hàng trăm triệu đô.⟧ — Igen, úgy hallottam, akár több száz millió dollárt is.
+Új szavak: ⟦âm u⟧ borús | ⟦buốt⟧ csípős, metsző | ⟦không khí⟧ levegő | ⟦mọc⟧ nőni | ⟦doanh thu⟧ árbevétel | ⟦thực hiện⟧ megvalósítani | ⟦gió mùa⟧ monszun
+=id
+Ungkapan kunci: ⟦~ tận ~⟧
+"kata kerja + tận ~" adalah kata sambung yang berarti "… sampai ~ / sebanyak ~". Setelah ⟦tận⟧ muncul kata benda atau bilangan, menegaskan tempat, tingkat, atau batas yang dicapai kata kerja.
+❶ ⟦Nếu anh muốn thì tôi sẽ giao hàng tận nhà cho anh.⟧ — Kalau Anda mau, saya akan mengantar barangnya sampai ke rumah.
+❷ Ⓐ ⟦Em làm việc chăm chỉ quá! Em dịch được nhiều chưa?⟧ — Kamu rajin sekali bekerja! Sudah banyak yang diterjemahkan? Ⓑ ⟦Em dịch được tận 50 trang rồi, chỉ còn khoảng 10 trang nữa thôi.⟧ — Saya sudah menerjemahkan sampai 50 halaman, tinggal sekitar 10 halaman lagi.
+Ungkapan cuaca dan iklim: ⟦trời mát⟧ udara sejuk | ⟦trời mưa⟧ hujan | ⟦trời âm u⟧ mendung | ⟦trời lạnh lắm⟧ dingin sekali | ⟦trời nắng nóng⟧ panas terik
+Percakapan: Sebelum dinas ke daerah, Min-ho menelepon Mai, rekan kerja di kantor cabang setempat, untuk memeriksa iklim, cuaca, dan barang bawaan.
+Min-ho: ⟦Alô, chào chị Mai ạ. Chị ơi, dạo này thời tiết ở đó thế nào?⟧ — Halo, Kak Mai. Bagaimana cuaca di sana akhir-akhir ini?
+Mai: ⟦Gần đây trời lạnh lắm, anh ạ.⟧ — Belakangan ini dingin sekali.
+Min-ho: ⟦Nhiệt độ thế nào?⟧ — Suhunya bagaimana?
+Mai: ⟦Nhiệt độ có khi hạ xuống tận dưới 8 độ C. Ngoài ra, còn có gió mùa Đông Bắc nên càng thấy rét buốt.⟧ — Suhu kadang turun sampai di bawah 8°C. Selain itu ada angin muson timur laut, jadi terasa makin dingin menusuk.
+Min-ho: ⟦Thế à? Như vậy thì tôi có cần phải chuẩn bị gì đặc biệt không?⟧ — Oh ya? Kalau begitu, apakah saya perlu menyiapkan sesuatu yang khusus?
+Mai: ⟦Vâng. Anh nên mang theo áo rét và mũ ấm. Tuy nhiên nếu không chuẩn bị trước thì anh mua ở đây cũng được.⟧ — Ya. Sebaiknya bawa jaket musim dingin dan topi hangat. Tapi kalau tidak sempat, beli di sini juga bisa.
+Latihan pola — cuaca: ⟦trời lạnh lắm⟧ / ⟦trời nắng nóng⟧; suhu: ⟦hạ xuống tận dưới 8 độ C⟧ (turun sampai di bawah 8°C) / ⟦tăng lên tận trên 40 độ C⟧ (naik sampai di atas 40°C); apa lagi: ⟦gió mùa Đông Bắc nên càng thấy rét buốt⟧ (ada angin muson timur laut sehingga makin dingin) / ⟦không khí ẩm nên thấy oi bức⟧ (udara lembap sehingga gerah); apa yang disiapkan: ⟦áo rét và mũ ấm⟧ (jaket musim dingin dan topi hangat) / ⟦quần ngắn và dép⟧ (celana pendek dan sandal).
+Contoh (⟦hơn 100 mét⟧): Ⓐ ⟦Cô có biết loại cây này có thể mọc cao bao nhiêu mét không?⟧ — Ibu tahu jenis pohon ini bisa tumbuh setinggi berapa meter? Ⓑ ⟦Ừ, cô nghe nói là loại cây này có thể mọc cao tận hơn 100 mét.⟧ — Ya, katanya pohon ini bisa tumbuh sampai lebih dari 100 meter.
+❶ ⟦1 tháng⟧: Ⓐ ⟦Chị có biết từ tuần sau ở khu vực này trời sẽ mưa trong bao lâu không?⟧ — Kakak tahu mulai minggu depan di daerah ini akan hujan berapa lama? Ⓑ ⟦Ừ, chị nghe nói là trời sẽ mưa tận 1 tháng.⟧ — Ya, katanya akan hujan sampai sebulan penuh.
+❷ ⟦hàng trăm triệu đô⟧: Ⓐ ⟦Anh có biết năm nay công ti anh sẽ thực hiện bao nhiêu doanh thu không?⟧ — Kakak tahu berapa pendapatan perusahaan Kakak tahun ini? Ⓑ ⟦Ừ, anh nghe nói là công ti sẽ thực hiện doanh thu tận hàng trăm triệu đô.⟧ — Ya, katanya pendapatan perusahaan akan mencapai ratusan juta dolar.
+Kosakata baru: ⟦âm u⟧ mendung | ⟦buốt⟧ menusuk | ⟦không khí⟧ udara | ⟦mọc⟧ tumbuh | ⟦doanh thu⟧ pendapatan usaha | ⟦thực hiện⟧ mewujudkan, melaksanakan | ⟦gió mùa⟧ angin muson
+=ja
+核心表現：⟦~ tận ~⟧
+「動詞 ＋ tận ~」は「～まで～する」という意味を表す接続表現です。⟦tận⟧ の後には名詞や数詞などが来て、前の動詞が到達する位置・程度・限界を強調します。
+❶ ⟦Nếu anh muốn thì tôi sẽ giao hàng tận nhà cho anh.⟧ — ご希望なら家まで配達いたします。
+❷ Ⓐ ⟦Em làm việc chăm chỉ quá! Em dịch được nhiều chưa?⟧ — すごく熱心に働いているね！翻訳はたくさん進んだ？ Ⓑ ⟦Em dịch được tận 50 trang rồi, chỉ còn khoảng 10 trang nữa thôi.⟧ — 50ページまで翻訳を終えて、あと10ページほどだけです。
+天気と気候を表す表現：⟦trời mát⟧ 涼しい | ⟦trời mưa⟧ 雨が降る | ⟦trời âm u⟧ 曇っている | ⟦trời lạnh lắm⟧ とても寒い | ⟦trời nắng nóng⟧ 日差しが強く暑い
+会話：地方へ出張するミンホが、現地の気候や天気、持ち物を確認するため、そこの支社で働く同僚マイに電話をしています。
+ミンホ：⟦Alô, chào chị Mai ạ. Chị ơi, dạo này thời tiết ở đó thế nào?⟧ — もしもし、マイさん、こんにちは。最近そちらの天気はどうですか。
+マイ：⟦Gần đây trời lạnh lắm, anh ạ.⟧ — 最近はとても寒いです。
+ミンホ：⟦Nhiệt độ thế nào?⟧ — 気温はどうですか。
+マイ：⟦Nhiệt độ có khi hạ xuống tận dưới 8 độ C. Ngoài ra, còn có gió mùa Đông Bắc nên càng thấy rét buốt.⟧ — 気温が8度以下まで下がることもあります。それに北東の季節風もあるので、いっそう身を切るように寒く感じます。
+ミンホ：⟦Thế à? Như vậy thì tôi có cần phải chuẩn bị gì đặc biệt không?⟧ — そうですか。それなら何か特別に準備する必要がありますか。
+マイ：⟦Vâng. Anh nên mang theo áo rét và mũ ấm. Tuy nhiên nếu không chuẩn bị trước thì anh mua ở đây cũng được.⟧ — はい。防寒着と暖かい帽子を持ってきたほうがいいです。でも前もって準備できなければ、こちらで買っても大丈夫です。
+文型練習 — 天気：⟦trời lạnh lắm⟧ / ⟦trời nắng nóng⟧；気温：⟦hạ xuống tận dưới 8 độ C⟧（8度以下まで下がる）/ ⟦tăng lên tận trên 40 độ C⟧（40度以上まで上がる）；ほかに：⟦gió mùa Đông Bắc nên càng thấy rét buốt⟧（北東の季節風でいっそう寒い）/ ⟦không khí ẩm nên thấy oi bức⟧（空気が湿っていて蒸し暑い）；準備するもの：⟦áo rét và mũ ấm⟧（防寒着と暖かい帽子）/ ⟦quần ngắn và dép⟧（短パンとサンダル）。
+例（⟦hơn 100 mét⟧）：Ⓐ ⟦Cô có biết loại cây này có thể mọc cao bao nhiêu mét không?⟧ — この木は何メートルまで伸びるか知っていますか。 Ⓑ ⟦Ừ, cô nghe nói là loại cây này có thể mọc cao tận hơn 100 mét.⟧ — ええ、100メートル以上まで伸びるそうです。
+❶ ⟦1 tháng⟧：Ⓐ ⟦Chị có biết từ tuần sau ở khu vực này trời sẽ mưa trong bao lâu không?⟧ — 来週からこの地域でどのくらい雨が降るか知っていますか。 Ⓑ ⟦Ừ, chị nghe nói là trời sẽ mưa tận 1 tháng.⟧ — ええ、1か月も降るそうです。
+❷ ⟦hàng trăm triệu đô⟧：Ⓐ ⟦Anh có biết năm nay công ti anh sẽ thực hiện bao nhiêu doanh thu không?⟧ — 今年あなたの会社がどのくらいの売上を上げるか知っていますか。 Ⓑ ⟦Ừ, anh nghe nói là công ti sẽ thực hiện doanh thu tận hàng trăm triệu đô.⟧ — ええ、数億ドルにもなるそうです。
+新出単語：⟦âm u⟧ （天気が）曇った | ⟦buốt⟧ 刺すような | ⟦không khí⟧ 空気 | ⟦mọc⟧ 生える、伸びる | ⟦doanh thu⟧ 売上 | ⟦thực hiện⟧ 実現する、実行する | ⟦gió mùa⟧ 季節風
+=pl
+Kluczowe wyrażenie: ⟦~ tận ~⟧
+„czasownik + tận ~” to łącznik znaczący „… aż do ~ / aż ~”. Po ⟦tận⟧ stoi rzeczownik lub liczebnik; podkreśla miejsce, stopień lub granicę, do której sięga czynność.
+❶ ⟦Nếu anh muốn thì tôi sẽ giao hàng tận nhà cho anh.⟧ — Jeśli pan chce, dostarczę towar aż pod drzwi.
+❷ Ⓐ ⟦Em làm việc chăm chỉ quá! Em dịch được nhiều chưa?⟧ — Ale pilnie pracujesz! Dużo już przetłumaczyłaś? Ⓑ ⟦Em dịch được tận 50 trang rồi, chỉ còn khoảng 10 trang nữa thôi.⟧ — Przetłumaczyłam już aż 50 stron, zostało tylko około 10.
+Wyrażenia o pogodzie i klimacie: ⟦trời mát⟧ jest chłodno | ⟦trời mưa⟧ pada deszcz | ⟦trời âm u⟧ jest pochmurno | ⟦trời lạnh lắm⟧ jest bardzo zimno | ⟦trời nắng nóng⟧ jest słonecznie i gorąco
+Dialog: Przed wyjazdem służbowym na prowincję Min-ho dzwoni do Mai, koleżanki z tamtejszego oddziału, żeby sprawdzić klimat, pogodę i co zabrać.
+Min-ho: ⟦Alô, chào chị Mai ạ. Chị ơi, dạo này thời tiết ở đó thế nào?⟧ — Halo, dzień dobry, Mai. Jaka jest teraz u was pogoda?
+Mai: ⟦Gần đây trời lạnh lắm, anh ạ.⟧ — Ostatnio jest bardzo zimno.
+Min-ho: ⟦Nhiệt độ thế nào?⟧ — A temperatura?
+Mai: ⟦Nhiệt độ có khi hạ xuống tận dưới 8 độ C. Ngoài ra, còn có gió mùa Đông Bắc nên càng thấy rét buốt.⟧ — Czasem spada aż poniżej 8°C. Do tego wieje monsun północno-wschodni, więc zimno jest jeszcze bardziej przenikliwe.
+Min-ho: ⟦Thế à? Như vậy thì tôi có cần phải chuẩn bị gì đặc biệt không?⟧ — Naprawdę? W takim razie muszę przygotować coś specjalnego?
+Mai: ⟦Vâng. Anh nên mang theo áo rét và mũ ấm. Tuy nhiên nếu không chuẩn bị trước thì anh mua ở đây cũng được.⟧ — Tak. Weź zimową kurtkę i ciepłą czapkę. Ale jeśli nie przygotujesz ich wcześniej, możesz kupić tutaj.
+Ćwiczenie wzorców — pogoda: ⟦trời lạnh lắm⟧ / ⟦trời nắng nóng⟧; temperatura: ⟦hạ xuống tận dưới 8 độ C⟧ (spada aż poniżej 8°C) / ⟦tăng lên tận trên 40 độ C⟧ (rośnie aż powyżej 40°C); co jeszcze: ⟦gió mùa Đông Bắc nên càng thấy rét buốt⟧ (monsun północno-wschodni, więc jeszcze zimniej) / ⟦không khí ẩm nên thấy oi bức⟧ (wilgotne powietrze, więc parno); co przygotować: ⟦áo rét và mũ ấm⟧ (zimową kurtkę i ciepłą czapkę) / ⟦quần ngắn và dép⟧ (szorty i sandały).
+Wzór (⟦hơn 100 mét⟧): Ⓐ ⟦Cô có biết loại cây này có thể mọc cao bao nhiêu mét không?⟧ — Wie pani, do jakiej wysokości może urosnąć to drzewo? Ⓑ ⟦Ừ, cô nghe nói là loại cây này có thể mọc cao tận hơn 100 mét.⟧ — Tak, słyszałam, że może osiągnąć aż ponad 100 metrów.
+❶ ⟦1 tháng⟧: Ⓐ ⟦Chị có biết từ tuần sau ở khu vực này trời sẽ mưa trong bao lâu không?⟧ — Wiesz, jak długo od przyszłego tygodnia będzie tu padać? Ⓑ ⟦Ừ, chị nghe nói là trời sẽ mưa tận 1 tháng.⟧ — Tak, słyszałam, że aż cały miesiąc.
+❷ ⟦hàng trăm triệu đô⟧: Ⓐ ⟦Anh có biết năm nay công ti anh sẽ thực hiện bao nhiêu doanh thu không?⟧ — Wiesz, jakie przychody osiągnie w tym roku twoja firma? Ⓑ ⟦Ừ, anh nghe nói là công ti sẽ thực hiện doanh thu tận hàng trăm triệu đô.⟧ — Tak, słyszałem, że aż setki milionów dolarów.
+Nowe słówka: ⟦âm u⟧ pochmurny | ⟦buốt⟧ przenikliwy | ⟦không khí⟧ powietrze | ⟦mọc⟧ rosnąć | ⟦doanh thu⟧ przychód | ⟦thực hiện⟧ zrealizować, osiągnąć | ⟦gió mùa⟧ monsun

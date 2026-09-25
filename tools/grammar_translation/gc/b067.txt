@@ -1,0 +1,223 @@
+@@ pdf-grammar-133c5593b2baf58e#0
+=cs
+Gramatický výklad
+⟦tất cả (mọi)⟧ + podstatné jméno znamená „všichni, všechno, celý“.
+⟦Tất cả mọi người đều muốn được khỏe mạnh.⟧ → Všichni lidé chtějí být zdraví. · ⟦Tất cả các sinh viên trong lớp này đều thông minh.⟧ → Všichni studenti v této třídě jsou chytří. · ⟦Tất cả các nhân viên ở công ti này đều được khám sức khỏe.⟧ → Všichni zaměstnanci této firmy chodí na zdravotní prohlídky.
+⟦cả⟧ + podstatné jméno znamená „celý, všichni“.
+⟦Cả lớp chúng tôi đi làm từ thiện.⟧ → Celá naše třída se zapojila do dobročinnosti. · ⟦Cả trường được nghỉ lễ hai ngày.⟧ → Celá škola má dva dny sváteční volno. · ⟦Cả công ti được đi du lịch nước ngoài.⟧ → Celá firma jede na zájezd do zahraničí.
+⟦hãy⟧ + sloveso se používá k mírné výzvě nebo přesvědčování: „~te, prosím ~“.
+⟦Hãy chăm sóc răng miệng đúng cách!⟧ → Pečujte o zuby a ústa správným způsobem! · ⟦Hãy lái xe cẩn thận!⟧ → Jezděte opatrně! · ⟦Hãy tiết kiệm điện!⟧ → Šetřete elektřinou!
+=zh_cn
+语法解说
+⟦tất cả (mọi)⟧ + 名词，表示“所有、全部”。
+⟦Tất cả mọi người đều muốn được khỏe mạnh.⟧ → 所有人都希望身体健康。 · ⟦Tất cả các sinh viên trong lớp này đều thông minh.⟧ → 这个班所有的学生都很聪明。 · ⟦Tất cả các nhân viên ở công ti này đều được khám sức khỏe.⟧ → 这家公司所有员工都能做健康检查。
+⟦cả⟧ + 名词，表示“整个、全部”。
+⟦Cả lớp chúng tôi đi làm từ thiện.⟧ → 我们全班去做慈善。 · ⟦Cả trường được nghỉ lễ hai ngày.⟧ → 全校放假两天。 · ⟦Cả công ti được đi du lịch nước ngoài.⟧ → 全公司去国外旅游。
+⟦hãy⟧ + 动词，用于轻微地要求或说服对方，意为“请……”。
+⟦Hãy chăm sóc răng miệng đúng cách!⟧ → 请用正确的方法护理口腔！ · ⟦Hãy lái xe cẩn thận!⟧ → 请小心驾驶！ · ⟦Hãy tiết kiệm điện!⟧ → 请节约用电！
+=zh
+文法解說
+⟦tất cả (mọi)⟧ + 名詞，表示「所有、全部」。
+⟦Tất cả mọi người đều muốn được khỏe mạnh.⟧ → 所有人都希望身體健康。 · ⟦Tất cả các sinh viên trong lớp này đều thông minh.⟧ → 這個班所有的學生都很聰明。 · ⟦Tất cả các nhân viên ở công ti này đều được khám sức khỏe.⟧ → 這家公司所有員工都能做健康檢查。
+⟦cả⟧ + 名詞，表示「整個、全部」。
+⟦Cả lớp chúng tôi đi làm từ thiện.⟧ → 我們全班去做公益。 · ⟦Cả trường được nghỉ lễ hai ngày.⟧ → 全校放假兩天。 · ⟦Cả công ti được đi du lịch nước ngoài.⟧ → 全公司去國外旅遊。
+⟦hãy⟧ + 動詞，用於輕微地要求或說服對方，意為「請……」。
+⟦Hãy chăm sóc răng miệng đúng cách!⟧ → 請用正確的方法保養口腔！ · ⟦Hãy lái xe cẩn thận!⟧ → 請小心駕駛！ · ⟦Hãy tiết kiệm điện!⟧ → 請節約用電！
+=en
+Grammar notes
+⟦tất cả (mọi)⟧ + noun means "all, every, the whole".
+⟦Tất cả mọi người đều muốn được khỏe mạnh.⟧ → Everyone wants to be healthy. · ⟦Tất cả các sinh viên trong lớp này đều thông minh.⟧ → All the students in this class are clever. · ⟦Tất cả các nhân viên ở công ti này đều được khám sức khỏe.⟧ → All the employees at this company get health check-ups.
+⟦cả⟧ + noun means "the whole, all".
+⟦Cả lớp chúng tôi đi làm từ thiện.⟧ → Our whole class did charity work. · ⟦Cả trường được nghỉ lễ hai ngày.⟧ → The whole school gets two days off for the holiday. · ⟦Cả công ti được đi du lịch nước ngoài.⟧ → The whole company is going on a trip abroad.
+⟦hãy⟧ + verb is used to make a gentle request or to persuade: "please ~".
+⟦Hãy chăm sóc răng miệng đúng cách!⟧ → Take proper care of your teeth and mouth! · ⟦Hãy lái xe cẩn thận!⟧ → Drive carefully! · ⟦Hãy tiết kiệm điện!⟧ → Save electricity!
+=fr
+Notes de grammaire
+⟦tất cả (mọi)⟧ + nom signifie « tous, tout, l'ensemble ».
+⟦Tất cả mọi người đều muốn được khỏe mạnh.⟧ → Tout le monde veut être en bonne santé. · ⟦Tất cả các sinh viên trong lớp này đều thông minh.⟧ → Tous les étudiants de cette classe sont intelligents. · ⟦Tất cả các nhân viên ở công ti này đều được khám sức khỏe.⟧ → Tous les employés de cette entreprise passent des bilans de santé.
+⟦cả⟧ + nom signifie « tout(e) entier(-ère) ».
+⟦Cả lớp chúng tôi đi làm từ thiện.⟧ → Toute notre classe a fait du bénévolat. · ⟦Cả trường được nghỉ lễ hai ngày.⟧ → Toute l'école a deux jours de congé. · ⟦Cả công ti được đi du lịch nước ngoài.⟧ → Toute l'entreprise part en voyage à l'étranger.
+⟦hãy⟧ + verbe sert à formuler une demande légère ou à persuader : « veuillez ~ ».
+⟦Hãy chăm sóc răng miệng đúng cách!⟧ → Prenez soin de vos dents correctement ! · ⟦Hãy lái xe cẩn thận!⟧ → Conduisez prudemment ! · ⟦Hãy tiết kiệm điện!⟧ → Économisez l'électricité !
+=de
+Grammatikerläuterungen
+⟦tất cả (mọi)⟧ + Nomen bedeutet „alle, sämtliche, ganz“.
+⟦Tất cả mọi người đều muốn được khỏe mạnh.⟧ → Alle Menschen möchten gesund sein. · ⟦Tất cả các sinh viên trong lớp này đều thông minh.⟧ → Alle Studenten in dieser Klasse sind klug. · ⟦Tất cả các nhân viên ở công ti này đều được khám sức khỏe.⟧ → Alle Mitarbeiter dieser Firma bekommen Gesundheitschecks.
+⟦cả⟧ + Nomen bedeutet „ganz, gesamt“.
+⟦Cả lớp chúng tôi đi làm từ thiện.⟧ → Unsere ganze Klasse hat sich karitativ engagiert. · ⟦Cả trường được nghỉ lễ hai ngày.⟧ → Die ganze Schule hat zwei Feiertage frei. · ⟦Cả công ti được đi du lịch nước ngoài.⟧ → Die ganze Firma macht eine Auslandsreise.
+⟦hãy⟧ + Verb dient einer freundlichen Aufforderung oder dem Überreden: „bitte ~“.
+⟦Hãy chăm sóc răng miệng đúng cách!⟧ → Pflegen Sie Ihre Zähne richtig! · ⟦Hãy lái xe cẩn thận!⟧ → Fahren Sie vorsichtig! · ⟦Hãy tiết kiệm điện!⟧ → Sparen Sie Strom!
+=hu
+Nyelvtani magyarázat
+A ⟦tất cả (mọi)⟧ + főnév jelentése „minden, az összes, az egész”.
+⟦Tất cả mọi người đều muốn được khỏe mạnh.⟧ → Mindenki egészséges szeretne lenni. · ⟦Tất cả các sinh viên trong lớp này đều thông minh.⟧ → Ebben az osztályban minden diák okos. · ⟦Tất cả các nhân viên ở công ti này đều được khám sức khỏe.⟧ → Ennek a cégnek minden dolgozója egészségügyi szűrésen vesz részt.
+A ⟦cả⟧ + főnév jelentése „az egész”.
+⟦Cả lớp chúng tôi đi làm từ thiện.⟧ → Az egész osztályunk jótékonykodott. · ⟦Cả trường được nghỉ lễ hai ngày.⟧ → Az egész iskola két nap ünnepi szünetet kap. · ⟦Cả công ti được đi du lịch nước ngoài.⟧ → Az egész cég külföldre utazik.
+A ⟦hãy⟧ + ige enyhe kérésre vagy rábeszélésre szolgál: „kérem, ~jon”.
+⟦Hãy chăm sóc răng miệng đúng cách!⟧ → Ápolja fogait helyesen! · ⟦Hãy lái xe cẩn thận!⟧ → Vezessen óvatosan! · ⟦Hãy tiết kiệm điện!⟧ → Takarékoskodjon az árammal!
+=id
+Penjelasan tata bahasa
+⟦tất cả (mọi)⟧ + nomina berarti "semua, seluruh".
+⟦Tất cả mọi người đều muốn được khỏe mạnh.⟧ → Semua orang ingin sehat. · ⟦Tất cả các sinh viên trong lớp này đều thông minh.⟧ → Semua mahasiswa di kelas ini pintar. · ⟦Tất cả các nhân viên ở công ti này đều được khám sức khỏe.⟧ → Semua karyawan di perusahaan ini mendapat pemeriksaan kesehatan.
+⟦cả⟧ + nomina berarti "seluruh, segenap".
+⟦Cả lớp chúng tôi đi làm từ thiện.⟧ → Seluruh kelas kami ikut kegiatan amal. · ⟦Cả trường được nghỉ lễ hai ngày.⟧ → Seluruh sekolah libur dua hari. · ⟦Cả công ti được đi du lịch nước ngoài.⟧ → Seluruh perusahaan berwisata ke luar negeri.
+⟦hãy⟧ + verba dipakai untuk meminta dengan halus atau membujuk: "silakan ~, mari ~".
+⟦Hãy chăm sóc răng miệng đúng cách!⟧ → Rawatlah gigi dan mulut dengan cara yang benar! · ⟦Hãy lái xe cẩn thận!⟧ → Menyetirlah dengan hati-hati! · ⟦Hãy tiết kiệm điện!⟧ → Hematlah listrik!
+=ja
+文法解説
+⟦tất cả (mọi)⟧ + 名詞の形で「すべて」「全体」という意味を表します。
+⟦Tất cả mọi người đều muốn được khỏe mạnh.⟧ → すべての人が健康でありたいと願っている。 · ⟦Tất cả các sinh viên trong lớp này đều thông minh.⟧ → このクラスの学生はみんな頭がいい。 · ⟦Tất cả các nhân viên ở công ti này đều được khám sức khỏe.⟧ → この会社の全社員は健康診断を受けられる。
+⟦cả⟧ + 名詞の形で「全部」「全体」という意味を表します。
+⟦Cả lớp chúng tôi đi làm từ thiện.⟧ → 私たちのクラス全員でボランティア（慈善活動）をした。 · ⟦Cả trường được nghỉ lễ hai ngày.⟧ → 学校全体が2日間の休みになる。 · ⟦Cả công ti được đi du lịch nước ngoài.⟧ → 会社全体で海外旅行に行く。
+⟦hãy⟧ + 動詞の形は、相手に軽く頼んだり相手を説得したりする目的で使われ、「～してください」という意味です。
+⟦Hãy chăm sóc răng miệng đúng cách!⟧ → 正しい方法で口腔ケアをしてください！ · ⟦Hãy lái xe cẩn thận!⟧ → 気をつけて運転してください！ · ⟦Hãy tiết kiệm điện!⟧ → 電気を節約しましょう！
+=pl
+Objaśnienia gramatyczne
+⟦tất cả (mọi)⟧ + rzeczownik znaczy „wszyscy, wszystko, cały”.
+⟦Tất cả mọi người đều muốn được khỏe mạnh.⟧ → Wszyscy ludzie chcą być zdrowi. · ⟦Tất cả các sinh viên trong lớp này đều thông minh.⟧ → Wszyscy studenci w tej klasie są mądrzy. · ⟦Tất cả các nhân viên ở công ti này đều được khám sức khỏe.⟧ → Wszyscy pracownicy tej firmy przechodzą badania lekarskie.
+⟦cả⟧ + rzeczownik znaczy „cały”.
+⟦Cả lớp chúng tôi đi làm từ thiện.⟧ → Cała nasza klasa zaangażowała się w działalność charytatywną. · ⟦Cả trường được nghỉ lễ hai ngày.⟧ → Cała szkoła ma dwa dni wolnego. · ⟦Cả công ti được đi du lịch nước ngoài.⟧ → Cała firma jedzie na wycieczkę za granicę.
+⟦hãy⟧ + czasownik służy do łagodnej prośby lub przekonywania: „proszę ~”.
+⟦Hãy chăm sóc răng miệng đúng cách!⟧ → Dbaj prawidłowo o zęby! · ⟦Hãy lái xe cẩn thận!⟧ → Jedź ostrożnie! · ⟦Hãy tiết kiệm điện!⟧ → Oszczędzaj prąd!
+@@ pdf-grammar-ad0fd8ce3f9ef214#0
+=cs
+Gramatický výklad
+⟦trông⟧ znamená „vypadat (jako) ~“ o vzhledu věcí či lidí.
+⟦Năm nay bà nội tôi trông yếu hơn năm trước.⟧ → Letos babička vypadá slabší než loni. · ⟦Ông Tân đã ngoài 60 tuổi nhưng trông ông còn rất khỏe.⟧ → Panu Tânovi je přes 60, ale vypadá ještě velmi zdravě.
+⟦thấy⟧ kromě „vidět“ znamená také „cítit (se)“.
+⟦Bây giờ cháu thấy trong người thế nào?⟧ → Jak se teď cítíš? · ⟦Cháu thấy khỏe hơn rồi ạ.⟧ → Cítím se už lépe.
+⟦càng A càng B⟧ znamená „čím víc A, tím víc B“.
+⟦Cô bé càng lớn càng xinh đẹp.⟧ → Čím je holčička větší, tím je hezčí. · ⟦Ông càng hút thuốc thì bệnh ho càng nặng.⟧ → Čím víc kouří, tím horší má kašel.
+⟦càng ngày càng A⟧ znamená „den ode dne čím dál A“.
+⟦Thời tiết càng ngày càng nóng.⟧ → Počasí je den ode dne teplejší. · ⟦Sức khỏe của ông Tân càng ngày càng tốt hơn.⟧ → Zdraví pana Tâna se den ode dne lepší.
+=zh_cn
+语法解说
+⟦trông⟧ 表示事物或人的外表“看起来……”。
+⟦Năm nay bà nội tôi trông yếu hơn năm trước.⟧ → 今年奶奶看起来比去年虚弱。 · ⟦Ông Tân đã ngoài 60 tuổi nhưng trông ông còn rất khỏe.⟧ → 新先生已经60多岁了，但看起来还很健康。
+⟦thấy⟧ 除了“看见”，还有“感觉”的意思。
+⟦Bây giờ cháu thấy trong người thế nào?⟧ → 你现在感觉身体怎么样？ · ⟦Cháu thấy khỏe hơn rồi ạ.⟧ → 我觉得好多了。
+⟦càng A càng B⟧ 意为“越A越B”。
+⟦Cô bé càng lớn càng xinh đẹp.⟧ → 小女孩越长越漂亮。 · ⟦Ông càng hút thuốc thì bệnh ho càng nặng.⟧ → 他烟抽得越多，咳嗽就越严重。
+⟦càng ngày càng A⟧ 意为“一天比一天A、越来越A”。
+⟦Thời tiết càng ngày càng nóng.⟧ → 天气越来越热。 · ⟦Sức khỏe của ông Tân càng ngày càng tốt hơn.⟧ → 新先生的身体一天比一天好。
+=zh
+文法解說
+⟦trông⟧ 表示事物或人的外表「看起來……」。
+⟦Năm nay bà nội tôi trông yếu hơn năm trước.⟧ → 今年奶奶看起來比去年虛弱。 · ⟦Ông Tân đã ngoài 60 tuổi nhưng trông ông còn rất khỏe.⟧ → 新先生已經60多歲了，但看起來還很健康。
+⟦thấy⟧ 除了「看見」，還有「感覺」的意思。
+⟦Bây giờ cháu thấy trong người thế nào?⟧ → 你現在覺得身體怎麼樣？ · ⟦Cháu thấy khỏe hơn rồi ạ.⟧ → 我覺得好多了。
+⟦càng A càng B⟧ 意為「越A越B」。
+⟦Cô bé càng lớn càng xinh đẹp.⟧ → 小女孩越長越漂亮。 · ⟦Ông càng hút thuốc thì bệnh ho càng nặng.⟧ → 他菸抽得越多，咳嗽就越嚴重。
+⟦càng ngày càng A⟧ 意為「一天比一天A、越來越A」。
+⟦Thời tiết càng ngày càng nóng.⟧ → 天氣越來越熱。 · ⟦Sức khỏe của ông Tân càng ngày càng tốt hơn.⟧ → 新先生的身體一天比一天好。
+=en
+Grammar notes
+⟦trông⟧ means "to look (like) ~" in terms of the appearance of things or people.
+⟦Năm nay bà nội tôi trông yếu hơn năm trước.⟧ → This year my grandmother looks frailer than last year. · ⟦Ông Tân đã ngoài 60 tuổi nhưng trông ông còn rất khỏe.⟧ → Mr Tân is over 60, but he still looks very healthy.
+Besides "to see", ⟦thấy⟧ also means "to feel".
+⟦Bây giờ cháu thấy trong người thế nào?⟧ → How are you feeling now? · ⟦Cháu thấy khỏe hơn rồi ạ.⟧ → I feel better now.
+⟦càng A càng B⟧ means "the more A, the more B".
+⟦Cô bé càng lớn càng xinh đẹp.⟧ → The older the little girl gets, the prettier she becomes. · ⟦Ông càng hút thuốc thì bệnh ho càng nặng.⟧ → The more he smokes, the worse his cough gets.
+⟦càng ngày càng A⟧ means "more and more A every day".
+⟦Thời tiết càng ngày càng nóng.⟧ → The weather is getting hotter and hotter. · ⟦Sức khỏe của ông Tân càng ngày càng tốt hơn.⟧ → Mr Tân's health is getting better day by day.
+=fr
+Notes de grammaire
+⟦trông⟧ signifie « avoir l'air ~, sembler ~ » en parlant de l'apparence des choses ou des personnes.
+⟦Năm nay bà nội tôi trông yếu hơn năm trước.⟧ → Cette année, ma grand-mère a l'air plus faible que l'an dernier. · ⟦Ông Tân đã ngoài 60 tuổi nhưng trông ông còn rất khỏe.⟧ → M. Tân a plus de 60 ans, mais il a encore l'air en pleine forme.
+Outre « voir », ⟦thấy⟧ signifie aussi « (se) sentir ».
+⟦Bây giờ cháu thấy trong người thế nào?⟧ → Comment te sens-tu maintenant ? · ⟦Cháu thấy khỏe hơn rồi ạ.⟧ → Je me sens mieux.
+⟦càng A càng B⟧ signifie « plus A, plus B ».
+⟦Cô bé càng lớn càng xinh đẹp.⟧ → Plus la fillette grandit, plus elle devient jolie. · ⟦Ông càng hút thuốc thì bệnh ho càng nặng.⟧ → Plus il fume, plus sa toux s'aggrave.
+⟦càng ngày càng A⟧ signifie « de plus en plus A de jour en jour ».
+⟦Thời tiết càng ngày càng nóng.⟧ → Il fait de plus en plus chaud. · ⟦Sức khỏe của ông Tân càng ngày càng tốt hơn.⟧ → La santé de M. Tân s'améliore de jour en jour.
+=de
+Grammatikerläuterungen
+⟦trông⟧ bedeutet „aussehen (wie) ~“ in Bezug auf das Äußere von Dingen oder Menschen.
+⟦Năm nay bà nội tôi trông yếu hơn năm trước.⟧ → Dieses Jahr sieht meine Großmutter schwächer aus als im Vorjahr. · ⟦Ông Tân đã ngoài 60 tuổi nhưng trông ông còn rất khỏe.⟧ → Herr Tân ist über 60, sieht aber noch sehr gesund aus.
+Außer „sehen“ bedeutet ⟦thấy⟧ auch „(sich) fühlen“.
+⟦Bây giờ cháu thấy trong người thế nào?⟧ → Wie fühlst du dich jetzt? · ⟦Cháu thấy khỏe hơn rồi ạ.⟧ → Mir geht es schon besser.
+⟦càng A càng B⟧ bedeutet „je mehr A, desto mehr B“.
+⟦Cô bé càng lớn càng xinh đẹp.⟧ → Je größer das Mädchen wird, desto hübscher wird es. · ⟦Ông càng hút thuốc thì bệnh ho càng nặng.⟧ → Je mehr er raucht, desto schlimmer wird sein Husten.
+⟦càng ngày càng A⟧ bedeutet „von Tag zu Tag immer A-er“.
+⟦Thời tiết càng ngày càng nóng.⟧ → Das Wetter wird immer heißer. · ⟦Sức khỏe của ông Tân càng ngày càng tốt hơn.⟧ → Herrn Tâns Gesundheit wird von Tag zu Tag besser.
+=hu
+Nyelvtani magyarázat
+A ⟦trông⟧ tárgyak vagy emberek külsejére vonatkozóan azt jelenti: „~nak látszik, úgy néz ki, mint ~”.
+⟦Năm nay bà nội tôi trông yếu hơn năm trước.⟧ → Idén a nagymamám gyengébbnek látszik, mint tavaly. · ⟦Ông Tân đã ngoài 60 tuổi nhưng trông ông còn rất khỏe.⟧ → Tân úr már elmúlt 60, de még nagyon egészségesnek látszik.
+A ⟦thấy⟧ a „látni” mellett „érezni (magát)” jelentésű is.
+⟦Bây giờ cháu thấy trong người thế nào?⟧ → Hogy érzed most magad? · ⟦Cháu thấy khỏe hơn rồi ạ.⟧ → Már jobban érzem magam.
+A ⟦càng A càng B⟧ jelentése „minél A, annál B”.
+⟦Cô bé càng lớn càng xinh đẹp.⟧ → Minél nagyobb a kislány, annál csinosabb. · ⟦Ông càng hút thuốc thì bệnh ho càng nặng.⟧ → Minél többet dohányzik, annál rosszabb a köhögése.
+A ⟦càng ngày càng A⟧ jelentése „napról napra egyre A-bb”.
+⟦Thời tiết càng ngày càng nóng.⟧ → Az idő napról napra melegebb. · ⟦Sức khỏe của ông Tân càng ngày càng tốt hơn.⟧ → Tân úr egészsége napról napra jobb.
+=id
+Penjelasan tata bahasa
+⟦trông⟧ berarti "kelihatan ~, tampak ~" tentang penampilan benda atau orang.
+⟦Năm nay bà nội tôi trông yếu hơn năm trước.⟧ → Tahun ini nenek saya kelihatan lebih lemah daripada tahun lalu. · ⟦Ông Tân đã ngoài 60 tuổi nhưng trông ông còn rất khỏe.⟧ → Pak Tân sudah lebih dari 60 tahun, tetapi masih kelihatan sangat sehat.
+Selain "melihat", ⟦thấy⟧ juga berarti "merasa".
+⟦Bây giờ cháu thấy trong người thế nào?⟧ → Bagaimana perasaanmu sekarang? · ⟦Cháu thấy khỏe hơn rồi ạ.⟧ → Saya merasa sudah lebih sehat.
+⟦càng A càng B⟧ berarti "makin A makin B".
+⟦Cô bé càng lớn càng xinh đẹp.⟧ → Gadis kecil itu makin besar makin cantik. · ⟦Ông càng hút thuốc thì bệnh ho càng nặng.⟧ → Makin banyak dia merokok, makin parah batuknya.
+⟦càng ngày càng A⟧ berarti "makin hari makin A".
+⟦Thời tiết càng ngày càng nóng.⟧ → Cuaca makin hari makin panas. · ⟦Sức khỏe của ông Tân càng ngày càng tốt hơn.⟧ → Kesehatan Pak Tân makin hari makin baik.
+=ja
+文法解説
+⟦trông⟧ は物や人の外見が「～のように見える」という意味で使われます。
+⟦Năm nay bà nội tôi trông yếu hơn năm trước.⟧ → 今年、祖母は去年より弱ったように見える。 · ⟦Ông Tân đã ngoài 60 tuổi nhưng trông ông còn rất khỏe.⟧ → タンさんは60歳を過ぎたが、とても元気そうに見える。
+⟦thấy⟧ は「見る」という意味のほかに「感じる」という意味でも使われます。
+⟦Bây giờ cháu thấy trong người thế nào?⟧ → 今、体の具合はどう？ · ⟦Cháu thấy khỏe hơn rồi ạ.⟧ → だいぶ元気になりました。
+⟦càng A càng B⟧ の形で「Aすればするほど、ますますBする」という意味で使われます。
+⟦Cô bé càng lớn càng xinh đẹp.⟧ → その女の子は大きくなるほどきれいになった。 · ⟦Ông càng hút thuốc thì bệnh ho càng nặng.⟧ → 彼はたばこを吸えば吸うほど、せきがひどくなった。
+⟦càng ngày càng A⟧ の形で「日に日に、日を追うごとにAになる」という意味で使われます。
+⟦Thời tiết càng ngày càng nóng.⟧ → 天気が日に日に暑くなる。 · ⟦Sức khỏe của ông Tân càng ngày càng tốt hơn.⟧ → タンさんの健康は日に日によくなった。
+=pl
+Objaśnienia gramatyczne
+⟦trông⟧ znaczy „wyglądać (na) ~” w odniesieniu do wyglądu rzeczy lub ludzi.
+⟦Năm nay bà nội tôi trông yếu hơn năm trước.⟧ → W tym roku babcia wygląda na słabszą niż w zeszłym. · ⟦Ông Tân đã ngoài 60 tuổi nhưng trông ông còn rất khỏe.⟧ → Pan Tân ma ponad 60 lat, ale wygląda jeszcze bardzo zdrowo.
+Oprócz „widzieć” ⟦thấy⟧ znaczy też „czuć (się)”.
+⟦Bây giờ cháu thấy trong người thế nào?⟧ → Jak się teraz czujesz? · ⟦Cháu thấy khỏe hơn rồi ạ.⟧ → Czuję się już lepiej.
+⟦càng A càng B⟧ znaczy „im bardziej A, tym bardziej B”.
+⟦Cô bé càng lớn càng xinh đẹp.⟧ → Im dziewczynka większa, tym ładniejsza. · ⟦Ông càng hút thuốc thì bệnh ho càng nặng.⟧ → Im więcej pali, tym gorszy ma kaszel.
+⟦càng ngày càng A⟧ znaczy „z dnia na dzień coraz bardziej A”.
+⟦Thời tiết càng ngày càng nóng.⟧ → Pogoda jest z dnia na dzień coraz gorętsza. · ⟦Sức khỏe của ông Tân càng ngày càng tốt hơn.⟧ → Zdrowie pana Tâna z dnia na dzień się poprawia.
+@@ pdf-grammar-41d10342b3b10402#0
+=cs
+Gramatický výklad
+Sloveso + ⟦ngay⟧ znamená „okamžitě, hned ~“.
+⟦Ai gặp hắn ở đâu xin báo ngay cho cảnh sát.⟧ → Kdo ho kdekoli uvidí, ať to okamžitě ohlásí policii. · ⟦Ôn giám đốc bảo anh đến gặp ông ấy ngay.⟧ → Pan ředitel říkal, abyste za ním hned přišel. · ⟦Đến giờ lên máy bay rồi. Tôi phải đi ngay kẻo muộn.⟧ → Je čas nastupovat do letadla. Musím hned jít, jinak přijdu pozdě.
+=zh_cn
+语法解说
+动词 + ⟦ngay⟧ 表示“立即、马上……”。
+⟦Ai gặp hắn ở đâu xin báo ngay cho cảnh sát.⟧ → 谁在哪里见到他，请立即报警。 · ⟦Ôn giám đốc bảo anh đến gặp ông ấy ngay.⟧ → 经理让你马上去见他。 · ⟦Đến giờ lên máy bay rồi. Tôi phải đi ngay kẻo muộn.⟧ → 登机时间到了。我得马上走，不然会迟到。
+=zh
+文法解說
+動詞 + ⟦ngay⟧ 表示「立即、馬上……」。
+⟦Ai gặp hắn ở đâu xin báo ngay cho cảnh sát.⟧ → 誰在哪裡看到他，請立即報警。 · ⟦Ôn giám đốc bảo anh đến gặp ông ấy ngay.⟧ → 經理要你馬上去見他。 · ⟦Đến giờ lên máy bay rồi. Tôi phải đi ngay kẻo muộn.⟧ → 登機時間到了。我得馬上走，不然會遲到。
+=en
+Grammar notes
+Verb + ⟦ngay⟧ means "to ~ immediately, right away".
+⟦Ai gặp hắn ở đâu xin báo ngay cho cảnh sát.⟧ → Anyone who sees him anywhere, please report it to the police immediately. · ⟦Ôn giám đốc bảo anh đến gặp ông ấy ngay.⟧ → The director told you to come and see him right away. · ⟦Đến giờ lên máy bay rồi. Tôi phải đi ngay kẻo muộn.⟧ → It's time to board. I must go right now or I'll be late.
+=fr
+Notes de grammaire
+Verbe + ⟦ngay⟧ signifie « ~ immédiatement, tout de suite ».
+⟦Ai gặp hắn ở đâu xin báo ngay cho cảnh sát.⟧ → Quiconque le voit, où que ce soit, est prié de prévenir immédiatement la police. · ⟦Ôn giám đốc bảo anh đến gặp ông ấy ngay.⟧ → Le directeur vous demande de venir le voir tout de suite. · ⟦Đến giờ lên máy bay rồi. Tôi phải đi ngay kẻo muộn.⟧ → C'est l'heure d'embarquer. Je dois y aller tout de suite, sinon je serai en retard.
+=de
+Grammatikerläuterungen
+Verb + ⟦ngay⟧ bedeutet „sofort, unverzüglich ~“.
+⟦Ai gặp hắn ở đâu xin báo ngay cho cảnh sát.⟧ → Wer ihn irgendwo sieht, melde es bitte sofort der Polizei. · ⟦Ôn giám đốc bảo anh đến gặp ông ấy ngay.⟧ → Der Direktor sagt, Sie sollen sofort zu ihm kommen. · ⟦Đến giờ lên máy bay rồi. Tôi phải đi ngay kẻo muộn.⟧ → Es ist Zeit zum Boarding. Ich muss sofort los, sonst komme ich zu spät.
+=hu
+Nyelvtani magyarázat
+Az ige + ⟦ngay⟧ jelentése „azonnal, rögtön ~”.
+⟦Ai gặp hắn ở đâu xin báo ngay cho cảnh sát.⟧ → Aki bárhol látja, azonnal jelentse a rendőrségnek. · ⟦Ôn giám đốc bảo anh đến gặp ông ấy ngay.⟧ → Az igazgató úr azt mondta, azonnal menjen hozzá. · ⟦Đến giờ lên máy bay rồi. Tôi phải đi ngay kẻo muộn.⟧ → Itt a beszállás ideje. Azonnal mennem kell, különben elkésem.
+=id
+Penjelasan tata bahasa
+Verba + ⟦ngay⟧ berarti "segera, langsung ~".
+⟦Ai gặp hắn ở đâu xin báo ngay cho cảnh sát.⟧ → Siapa pun yang melihatnya di mana pun, mohon segera lapor polisi. · ⟦Ôn giám đốc bảo anh đến gặp ông ấy ngay.⟧ → Pak direktur meminta Anda segera menemuinya. · ⟦Đến giờ lên máy bay rồi. Tôi phải đi ngay kẻo muộn.⟧ → Sudah waktunya naik pesawat. Saya harus segera pergi, nanti terlambat.
+=ja
+文法解説
+動詞 + ⟦ngay⟧ の形で「すぐに、直ちに～する」という意味で使われます。
+⟦Ai gặp hắn ở đâu xin báo ngay cho cảnh sát.⟧ → 誰かがどこかで彼を見かけたら、すぐに警察に知らせてください。 · ⟦Ôn giám đốc bảo anh đến gặp ông ấy ngay.⟧ → 社長があなたにすぐ会いに来るようにと言っていました。 · ⟦Đến giờ lên máy bay rồi. Tôi phải đi ngay kẻo muộn.⟧ → 搭乗時間になりました。遅れないよう、今すぐ行かなければなりません。
+=pl
+Objaśnienia gramatyczne
+Czasownik + ⟦ngay⟧ znaczy „natychmiast, od razu ~”.
+⟦Ai gặp hắn ở đâu xin báo ngay cho cảnh sát.⟧ → Kto go gdziekolwiek zobaczy, niech natychmiast zawiadomi policję. · ⟦Ôn giám đốc bảo anh đến gặp ông ấy ngay.⟧ → Dyrektor prosi, żeby pan natychmiast do niego przyszedł. · ⟦Đến giờ lên máy bay rồi. Tôi phải đi ngay kẻo muộn.⟧ → Czas wsiadać do samolotu. Muszę iść od razu, bo się spóźnię.

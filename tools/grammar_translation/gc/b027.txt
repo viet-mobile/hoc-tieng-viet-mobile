@@ -1,0 +1,151 @@
+@@ pdf-grammar-bc190ce9478460bb#0
+=cs
+Klíčové výrazy: ⟦~ ra ~⟧ / ⟦dẫn đến ~⟧
+⟦~ ra ~⟧ znamená „přijít na ~, dokázat ~“. Ve spojení s předchozím slovesem vyjadřuje proces činnosti, který vede k pozitivnímu výsledku.
+❶ ⟦Chúng ta cần phải nghĩ ra các biện pháp đối phó với những khó khăn trong cuộc sống.⟧ — Musíme vymyslet způsoby, jak se vypořádat s životními obtížemi.
+❷ Ⓐ ⟦Em đã làm xong bài tập môn Toán chưa?⟧ — Už máš hotový úkol z matematiky? Ⓑ ⟦Chưa. Em chưa nghĩ ra cách làm bài cuối. Bài đó khó quá.⟧ — Ještě ne. Nevím, jak vyřešit poslední příklad. Je moc těžký.
+⟦dẫn đến ~⟧ znamená „vést k ~“ a vyjadřuje, že něco vyústí v určitý stav či výsledek.
+❶ ⟦Việc thường xuyên gặp gỡ và nói chuyện với nhau là bước đầu dẫn đến hoà bình.⟧ — Častá setkání a rozhovory jsou prvním krokem k míru.
+❷ Ⓐ ⟦Gây tổn hại đến môi trường thiên nhiên thế này mà không có vấn đề gì cả à?⟧ — Takhle poškozovat přírodu a nebude to mít žádné následky? Ⓑ ⟦Tất nhiên là có chứ! Đó sẽ là nguyên nhân dẫn đến thiên tai nghiêm trọng trong tương lai gần.⟧ — Samozřejmě bude! V blízké budoucnosti to bude příčinou vážných přírodních katastrof.
+Procvičování 3 — spojte vhodné části a veďte rozhovor podle vzoru: ① ⟦bài Toán, khó⟧ (příklad z matematiky, těžký) → Ⓐ ⟦tự tìm ra cách làm⟧ (sám najít postup) | ② ⟦bài thơ, khó hiểu⟧ (báseň, těžko srozumitelná) → Ⓒ ⟦đọc nhiều để hiểu ra nội dung đó⟧ (hodně číst, aby pochopil obsah) | ③ ⟦vấn đề, phức tạp⟧ (problém, složitý) → Ⓑ ⟦tự nghĩ ra cách giải quyết⟧ (sám vymyslet řešení)
+Vzor (③–Ⓑ): Ⓐ ⟦Vấn đề này phức tạp quá. Anh làm ơn giúp đỡ nhé.⟧ — Tenhle problém je moc složitý. Pomozte mi prosím. Ⓑ ⟦Cố lên! Các em cần phải tự nghĩ ra cách giải quyết.⟧ — Hlavu vzhůru! Musíte si sami vymyslet řešení.
+Procvičování 4 — doplňte ⟦dẫn đến⟧ podle vzoru a veďte rozhovor.
+Vzor: Ⓐ ⟦Em có thói quen nào đặc biệt để đạt được thành công như vậy?⟧ — Máš nějaký zvláštní zvyk, díky kterému jsi tak úspěšný? Ⓑ ⟦Không ạ, nhưng nếu bắt đầu việc gì đó thì em nhất thiết phải làm xong.⟧ — Ne, ale když něco začnu, musím to bezpodmínečně dokončit. Ⓐ ⟦Ừ, cô nghĩ rằng đó chắc chắn là thói quen dẫn đến thành công.⟧ — Ano, myslím, že to je určitě zvyk, který vede k úspěchu.
+❶ Ⓐ ⟦Anh có cách nào đặc biệt để đạt kết quả tốt như vậy?⟧ — Máš nějaký zvláštní způsob, jak dosáhnout tak dobrých výsledků? Ⓑ ⟦Không, nhưng anh đã cố gắng hết sức để thuyết phục mọi người.⟧ — Ne, ale ze všech sil jsem se snažil všechny přesvědčit. Ⓐ ⟦Vâng, em nghĩ rằng đó chắc chắn là cách dẫn đến kết quả tốt.⟧ — Ano, myslím, že to je určitě cesta, která vede k dobrým výsledkům.
+❷ Ⓐ ⟦Em có lí do gì đặc biệt mà dạo này hay bị mất ngủ như vậy?⟧ — Máš nějaký zvláštní důvod, proč teď tak často nemůžeš spát? Ⓑ ⟦Không ạ, nhưng em hay uống cà phê hơn trước đây.⟧ — Ne, ale piju víc kávy než dřív. Ⓐ ⟦Ừ, anh nghĩ rằng đó chắc chắn là nguyên nhân dẫn đến mất ngủ.⟧ — Aha, myslím, že to je určitě příčina, která vede k nespavosti.
+Nová slovíčka: ⟦bước⟧ krok | ⟦tổn hại⟧ škoda, poškození | ⟦môi trường⟧ životní prostředí | ⟦thiên nhiên⟧ příroda | ⟦nguyên nhân⟧ příčina | ⟦thiên tai⟧ přírodní katastrofa | ⟦biện pháp⟧ opatření, způsob řešení | ⟦giải quyết⟧ vyřešit | ⟦thói quen⟧ zvyk | ⟦nhất thiết⟧ bezpodmínečně | ⟦thuyết phục⟧ přesvědčit
+=zh_cn
+核心表达：⟦~ ra ~⟧ / ⟦dẫn đến ~⟧
+⟦~ ra ~⟧ 意为“……出（来）”，与前面的动词结合，表示达到积极结果的活动过程。
+❶ ⟦Chúng ta cần phải nghĩ ra các biện pháp đối phó với những khó khăn trong cuộc sống.⟧ —— 我们需要想出应对生活中各种困难的办法。
+❷ Ⓐ ⟦Em đã làm xong bài tập môn Toán chưa?⟧ —— 数学作业做完了吗？ Ⓑ ⟦Chưa. Em chưa nghĩ ra cách làm bài cuối. Bài đó khó quá.⟧ —— 还没。我还没想出最后一道题的解法。那道题太难了。
+⟦dẫn đến ~⟧ 意为“导致、引向……”，表示引出某种状态或结果。
+❶ ⟦Việc thường xuyên gặp gỡ và nói chuyện với nhau là bước đầu dẫn đến hoà bình.⟧ —— 经常见面交谈是通往和平的第一步。
+❷ Ⓐ ⟦Gây tổn hại đến môi trường thiên nhiên thế này mà không có vấn đề gì cả à?⟧ —— 这样破坏自然环境，难道不会有什么问题吗？ Ⓑ ⟦Tất nhiên là có chứ! Đó sẽ là nguyên nhân dẫn đến thiên tai nghiêm trọng trong tương lai gần.⟧ —— 当然会有！那将成为不久的将来导致严重灾害的原因。
+句型练习3 —— 找出相应内容连线，然后仿照范例对话：① ⟦bài Toán, khó⟧（数学题，难）→ Ⓐ ⟦tự tìm ra cách làm⟧（自己找出解法）| ② ⟦bài thơ, khó hiểu⟧（诗，难懂）→ Ⓒ ⟦đọc nhiều để hiểu ra nội dung đó⟧（多读几遍来理解内容）| ③ ⟦vấn đề, phức tạp⟧（问题，复杂）→ Ⓑ ⟦tự nghĩ ra cách giải quyết⟧（自己想出解决办法）
+范例（③–Ⓑ）：Ⓐ ⟦Vấn đề này phức tạp quá. Anh làm ơn giúp đỡ nhé.⟧ —— 这个问题太复杂了。请帮帮我吧。 Ⓑ ⟦Cố lên! Các em cần phải tự nghĩ ra cách giải quyết.⟧ —— 加油！你们需要自己想出解决办法。
+句型练习4 —— 仿照范例用 ⟦dẫn đến⟧ 填空后进行对话。
+范例：Ⓐ ⟦Em có thói quen nào đặc biệt để đạt được thành công như vậy?⟧ —— 你有什么特别的习惯让你取得这样的成功吗？ Ⓑ ⟦Không ạ, nhưng nếu bắt đầu việc gì đó thì em nhất thiết phải làm xong.⟧ —— 没有，不过我一旦开始做什么事，就一定要做完。 Ⓐ ⟦Ừ, cô nghĩ rằng đó chắc chắn là thói quen dẫn đến thành công.⟧ —— 嗯，老师认为那一定是通向成功的习惯。
+❶ Ⓐ ⟦Anh có cách nào đặc biệt để đạt kết quả tốt như vậy?⟧ —— 你有什么特别的方法取得这么好的结果吗？ Ⓑ ⟦Không, nhưng anh đã cố gắng hết sức để thuyết phục mọi người.⟧ —— 没有，不过我尽全力说服了大家。 Ⓐ ⟦Vâng, em nghĩ rằng đó chắc chắn là cách dẫn đến kết quả tốt.⟧ —— 是的，我认为那一定是带来好结果的方法。
+❷ Ⓐ ⟦Em có lí do gì đặc biệt mà dạo này hay bị mất ngủ như vậy?⟧ —— 你最近总是失眠，有什么特别的原因吗？ Ⓑ ⟦Không ạ, nhưng em hay uống cà phê hơn trước đây.⟧ —— 没有，不过我比以前更常喝咖啡了。 Ⓐ ⟦Ừ, anh nghĩ rằng đó chắc chắn là nguyên nhân dẫn đến mất ngủ.⟧ —— 嗯，我觉得那一定是导致失眠的原因。
+新单词：⟦bước⟧ 步 | ⟦tổn hại⟧ 损害 | ⟦môi trường⟧ 环境 | ⟦thiên nhiên⟧ 自然 | ⟦nguyên nhân⟧ 原因 | ⟦thiên tai⟧ 自然灾害 | ⟦biện pháp⟧ 措施、办法 | ⟦giải quyết⟧ 解决 | ⟦thói quen⟧ 习惯 | ⟦nhất thiết⟧ 一定、必须 | ⟦thuyết phục⟧ 说服
+=zh
+核心表達：⟦~ ra ~⟧ / ⟦dẫn đến ~⟧
+⟦~ ra ~⟧ 意為「……出（來）」，與前面的動詞結合，表示達到正面結果的活動過程。
+❶ ⟦Chúng ta cần phải nghĩ ra các biện pháp đối phó với những khó khăn trong cuộc sống.⟧ —— 我們需要想出應對生活中各種困難的辦法。
+❷ Ⓐ ⟦Em đã làm xong bài tập môn Toán chưa?⟧ —— 數學作業寫完了嗎？ Ⓑ ⟦Chưa. Em chưa nghĩ ra cách làm bài cuối. Bài đó khó quá.⟧ —— 還沒。我還沒想出最後一題的解法。那題太難了。
+⟦dẫn đến ~⟧ 意為「導致、引向……」，表示引出某種狀態或結果。
+❶ ⟦Việc thường xuyên gặp gỡ và nói chuyện với nhau là bước đầu dẫn đến hoà bình.⟧ —— 經常見面交談是通往和平的第一步。
+❷ Ⓐ ⟦Gây tổn hại đến môi trường thiên nhiên thế này mà không có vấn đề gì cả à?⟧ —— 這樣破壞自然環境，難道不會有什麼問題嗎？ Ⓑ ⟦Tất nhiên là có chứ! Đó sẽ là nguyên nhân dẫn đến thiên tai nghiêm trọng trong tương lai gần.⟧ —— 當然會有！那將成為不久的將來導致嚴重災害的原因。
+句型練習3 —— 找出相應內容連線，然後仿照範例對話：① ⟦bài Toán, khó⟧（數學題，難）→ Ⓐ ⟦tự tìm ra cách làm⟧（自己找出解法）| ② ⟦bài thơ, khó hiểu⟧（詩，難懂）→ Ⓒ ⟦đọc nhiều để hiểu ra nội dung đó⟧（多讀幾遍來理解內容）| ③ ⟦vấn đề, phức tạp⟧（問題，複雜）→ Ⓑ ⟦tự nghĩ ra cách giải quyết⟧（自己想出解決辦法）
+範例（③–Ⓑ）：Ⓐ ⟦Vấn đề này phức tạp quá. Anh làm ơn giúp đỡ nhé.⟧ —— 這個問題太複雜了。請幫幫我吧。 Ⓑ ⟦Cố lên! Các em cần phải tự nghĩ ra cách giải quyết.⟧ —— 加油！你們需要自己想出解決辦法。
+句型練習4 —— 仿照範例用 ⟦dẫn đến⟧ 填空後進行對話。
+範例：Ⓐ ⟦Em có thói quen nào đặc biệt để đạt được thành công như vậy?⟧ —— 你有什麼特別的習慣讓你取得這樣的成功嗎？ Ⓑ ⟦Không ạ, nhưng nếu bắt đầu việc gì đó thì em nhất thiết phải làm xong.⟧ —— 沒有，不過我一旦開始做什麼事，就一定要做完。 Ⓐ ⟦Ừ, cô nghĩ rằng đó chắc chắn là thói quen dẫn đến thành công.⟧ —— 嗯，老師認為那一定是通向成功的習慣。
+❶ Ⓐ ⟦Anh có cách nào đặc biệt để đạt kết quả tốt như vậy?⟧ —— 你有什麼特別的方法取得這麼好的結果嗎？ Ⓑ ⟦Không, nhưng anh đã cố gắng hết sức để thuyết phục mọi người.⟧ —— 沒有，不過我盡全力說服了大家。 Ⓐ ⟦Vâng, em nghĩ rằng đó chắc chắn là cách dẫn đến kết quả tốt.⟧ —— 是的，我認為那一定是帶來好結果的方法。
+❷ Ⓐ ⟦Em có lí do gì đặc biệt mà dạo này hay bị mất ngủ như vậy?⟧ —— 你最近常常失眠，有什麼特別的原因嗎？ Ⓑ ⟦Không ạ, nhưng em hay uống cà phê hơn trước đây.⟧ —— 沒有，不過我比以前更常喝咖啡了。 Ⓐ ⟦Ừ, anh nghĩ rằng đó chắc chắn là nguyên nhân dẫn đến mất ngủ.⟧ —— 嗯，我覺得那一定是導致失眠的原因。
+新單字：⟦bước⟧ 步 | ⟦tổn hại⟧ 損害 | ⟦môi trường⟧ 環境 | ⟦thiên nhiên⟧ 自然 | ⟦nguyên nhân⟧ 原因 | ⟦thiên tai⟧ 天災 | ⟦biện pháp⟧ 措施、辦法 | ⟦giải quyết⟧ 解決 | ⟦thói quen⟧ 習慣 | ⟦nhất thiết⟧ 一定、必須 | ⟦thuyết phục⟧ 說服
+=en
+Key expressions: ⟦~ ra ~⟧ / ⟦dẫn đến ~⟧
+⟦~ ra ~⟧ means "to come up with / work out ~". Combined with the preceding verb, it expresses an activity that reaches a positive result.
+❶ ⟦Chúng ta cần phải nghĩ ra các biện pháp đối phó với những khó khăn trong cuộc sống.⟧ — We need to come up with ways to deal with the difficulties in life.
+❷ Ⓐ ⟦Em đã làm xong bài tập môn Toán chưa?⟧ — Have you finished your maths homework? Ⓑ ⟦Chưa. Em chưa nghĩ ra cách làm bài cuối. Bài đó khó quá.⟧ — Not yet. I haven't worked out how to do the last problem. It's too hard.
+⟦dẫn đến ~⟧ means "to lead to ~" and expresses that something results in a certain state or outcome.
+❶ ⟦Việc thường xuyên gặp gỡ và nói chuyện với nhau là bước đầu dẫn đến hoà bình.⟧ — Meeting and talking to each other regularly is the first step towards peace.
+❷ Ⓐ ⟦Gây tổn hại đến môi trường thiên nhiên thế này mà không có vấn đề gì cả à?⟧ — Can we damage the natural environment like this without any consequences? Ⓑ ⟦Tất nhiên là có chứ! Đó sẽ là nguyên nhân dẫn đến thiên tai nghiêm trọng trong tương lai gần.⟧ — Of course not! It will be the cause of serious natural disasters in the near future.
+Pattern practice 3 — match the parts, then talk as in the model: ① ⟦bài Toán, khó⟧ (maths problem, hard) → Ⓐ ⟦tự tìm ra cách làm⟧ (find the method yourself) | ② ⟦bài thơ, khó hiểu⟧ (poem, hard to understand) → Ⓒ ⟦đọc nhiều để hiểu ra nội dung đó⟧ (read it many times to grasp its meaning) | ③ ⟦vấn đề, phức tạp⟧ (problem, complicated) → Ⓑ ⟦tự nghĩ ra cách giải quyết⟧ (come up with a solution yourself)
+Model (③–Ⓑ): Ⓐ ⟦Vấn đề này phức tạp quá. Anh làm ơn giúp đỡ nhé.⟧ — This problem is too complicated. Please help me. Ⓑ ⟦Cố lên! Các em cần phải tự nghĩ ra cách giải quyết.⟧ — Keep going! You need to come up with a solution yourselves.
+Pattern practice 4 — fill in the blanks with ⟦dẫn đến⟧ as in the model, then talk.
+Model: Ⓐ ⟦Em có thói quen nào đặc biệt để đạt được thành công như vậy?⟧ — Do you have any special habit that has made you so successful? Ⓑ ⟦Không ạ, nhưng nếu bắt đầu việc gì đó thì em nhất thiết phải làm xong.⟧ — No, but if I start something, I absolutely have to finish it. Ⓐ ⟦Ừ, cô nghĩ rằng đó chắc chắn là thói quen dẫn đến thành công.⟧ — Yes, I think that's definitely a habit that leads to success.
+❶ Ⓐ ⟦Anh có cách nào đặc biệt để đạt kết quả tốt như vậy?⟧ — Do you have a special way of getting such good results? Ⓑ ⟦Không, nhưng anh đã cố gắng hết sức để thuyết phục mọi người.⟧ — No, but I tried my very best to persuade everyone. Ⓐ ⟦Vâng, em nghĩ rằng đó chắc chắn là cách dẫn đến kết quả tốt.⟧ — Yes, I think that's definitely the way that leads to good results.
+❷ Ⓐ ⟦Em có lí do gì đặc biệt mà dạo này hay bị mất ngủ như vậy?⟧ — Is there any particular reason you've been sleeping so badly lately? Ⓑ ⟦Không ạ, nhưng em hay uống cà phê hơn trước đây.⟧ — No, but I drink more coffee than before. Ⓐ ⟦Ừ, anh nghĩ rằng đó chắc chắn là nguyên nhân dẫn đến mất ngủ.⟧ — Well, I think that's definitely what's causing your insomnia.
+New words: ⟦bước⟧ step | ⟦tổn hại⟧ damage, harm | ⟦môi trường⟧ environment | ⟦thiên nhiên⟧ nature | ⟦nguyên nhân⟧ cause | ⟦thiên tai⟧ natural disaster | ⟦biện pháp⟧ measure, solution | ⟦giải quyết⟧ to solve | ⟦thói quen⟧ habit | ⟦nhất thiết⟧ absolutely, necessarily | ⟦thuyết phục⟧ to persuade
+=fr
+Expressions clés : ⟦~ ra ~⟧ / ⟦dẫn đến ~⟧
+⟦~ ra ~⟧ signifie « trouver, parvenir à ~ ». Associé au verbe qui précède, il exprime une activité aboutissant à un résultat positif.
+❶ ⟦Chúng ta cần phải nghĩ ra các biện pháp đối phó với những khó khăn trong cuộc sống.⟧ — Nous devons trouver des moyens de faire face aux difficultés de la vie.
+❷ Ⓐ ⟦Em đã làm xong bài tập môn Toán chưa?⟧ — Tu as fini tes devoirs de maths ? Ⓑ ⟦Chưa. Em chưa nghĩ ra cách làm bài cuối. Bài đó khó quá.⟧ — Pas encore. Je n'ai pas trouvé comment faire le dernier exercice. Il est trop difficile.
+⟦dẫn đến ~⟧ signifie « mener à ~ » et exprime qu'une chose aboutit à un état ou à un résultat.
+❶ ⟦Việc thường xuyên gặp gỡ và nói chuyện với nhau là bước đầu dẫn đến hoà bình.⟧ — Se rencontrer et se parler souvent est le premier pas vers la paix.
+❷ Ⓐ ⟦Gây tổn hại đến môi trường thiên nhiên thế này mà không có vấn đề gì cả à?⟧ — On peut abîmer ainsi l'environnement naturel sans aucune conséquence ? Ⓑ ⟦Tất nhiên là có chứ! Đó sẽ là nguyên nhân dẫn đến thiên tai nghiêm trọng trong tương lai gần.⟧ — Bien sûr que non ! Ce sera la cause de graves catastrophes naturelles dans un proche avenir.
+Exercice 3 — reliez les éléments, puis dialoguez comme dans le modèle : ① ⟦bài Toán, khó⟧ (exercice de maths, difficile) → Ⓐ ⟦tự tìm ra cách làm⟧ (trouver soi-même la méthode) | ② ⟦bài thơ, khó hiểu⟧ (poème, difficile à comprendre) → Ⓒ ⟦đọc nhiều để hiểu ra nội dung đó⟧ (le lire souvent pour en saisir le sens) | ③ ⟦vấn đề, phức tạp⟧ (problème, compliqué) → Ⓑ ⟦tự nghĩ ra cách giải quyết⟧ (trouver soi-même une solution)
+Modèle (③–Ⓑ) : Ⓐ ⟦Vấn đề này phức tạp quá. Anh làm ơn giúp đỡ nhé.⟧ — Ce problème est trop compliqué. Aidez-moi, s'il vous plaît. Ⓑ ⟦Cố lên! Các em cần phải tự nghĩ ra cách giải quyết.⟧ — Courage ! Vous devez trouver vous-mêmes une solution.
+Exercice 4 — complétez avec ⟦dẫn đến⟧ comme dans le modèle, puis dialoguez.
+Modèle : Ⓐ ⟦Em có thói quen nào đặc biệt để đạt được thành công như vậy?⟧ — As-tu une habitude particulière qui t'a permis de réussir ainsi ? Ⓑ ⟦Không ạ, nhưng nếu bắt đầu việc gì đó thì em nhất thiết phải làm xong.⟧ — Non, mais quand je commence quelque chose, je dois absolument le terminer. Ⓐ ⟦Ừ, cô nghĩ rằng đó chắc chắn là thói quen dẫn đến thành công.⟧ — Oui, je pense que c'est sans aucun doute une habitude qui mène au succès.
+❶ Ⓐ ⟦Anh có cách nào đặc biệt để đạt kết quả tốt như vậy?⟧ — As-tu une méthode particulière pour obtenir d'aussi bons résultats ? Ⓑ ⟦Không, nhưng anh đã cố gắng hết sức để thuyết phục mọi người.⟧ — Non, mais j'ai fait tout mon possible pour convaincre tout le monde. Ⓐ ⟦Vâng, em nghĩ rằng đó chắc chắn là cách dẫn đến kết quả tốt.⟧ — Oui, je pense que c'est sûrement ce qui mène à de bons résultats.
+❷ Ⓐ ⟦Em có lí do gì đặc biệt mà dạo này hay bị mất ngủ như vậy?⟧ — Y a-t-il une raison particulière pour que tu dormes si mal ces temps-ci ? Ⓑ ⟦Không ạ, nhưng em hay uống cà phê hơn trước đây.⟧ — Non, mais je bois plus de café qu'avant. Ⓐ ⟦Ừ, anh nghĩ rằng đó chắc chắn là nguyên nhân dẫn đến mất ngủ.⟧ — Eh bien, je pense que c'est sûrement la cause de ton insomnie.
+Nouveaux mots : ⟦bước⟧ pas | ⟦tổn hại⟧ dommage | ⟦môi trường⟧ environnement | ⟦thiên nhiên⟧ nature | ⟦nguyên nhân⟧ cause | ⟦thiên tai⟧ catastrophe naturelle | ⟦biện pháp⟧ mesure, solution | ⟦giải quyết⟧ résoudre | ⟦thói quen⟧ habitude | ⟦nhất thiết⟧ absolument | ⟦thuyết phục⟧ convaincre
+=de
+Schlüsselausdrücke: ⟦~ ra ~⟧ / ⟦dẫn đến ~⟧
+⟦~ ra ~⟧ bedeutet „~ herausfinden, sich ~ ausdenken“. In Verbindung mit dem vorangehenden Verb drückt es eine Tätigkeit aus, die zu einem positiven Ergebnis führt.
+❶ ⟦Chúng ta cần phải nghĩ ra các biện pháp đối phó với những khó khăn trong cuộc sống.⟧ — Wir müssen uns Wege ausdenken, mit den Schwierigkeiten des Lebens umzugehen.
+❷ Ⓐ ⟦Em đã làm xong bài tập môn Toán chưa?⟧ — Hast du die Matheaufgaben schon fertig? Ⓑ ⟦Chưa. Em chưa nghĩ ra cách làm bài cuối. Bài đó khó quá.⟧ — Noch nicht. Ich bin noch nicht darauf gekommen, wie die letzte Aufgabe geht. Sie ist zu schwer.
+⟦dẫn đến ~⟧ bedeutet „zu ~ führen“ und drückt aus, dass etwas in einen Zustand oder ein Ergebnis mündet.
+❶ ⟦Việc thường xuyên gặp gỡ và nói chuyện với nhau là bước đầu dẫn đến hoà bình.⟧ — Sich oft zu treffen und miteinander zu reden ist der erste Schritt zum Frieden.
+❷ Ⓐ ⟦Gây tổn hại đến môi trường thiên nhiên thế này mà không có vấn đề gì cả à?⟧ — Kann man die Natur so schädigen, ohne dass es Folgen hat? Ⓑ ⟦Tất nhiên là có chứ! Đó sẽ là nguyên nhân dẫn đến thiên tai nghiêm trọng trong tương lai gần.⟧ — Natürlich nicht! Das wird in naher Zukunft zu schweren Naturkatastrophen führen.
+Übung 3 — passende Teile verbinden, dann wie im Muster sprechen: ① ⟦bài Toán, khó⟧ (Matheaufgabe, schwer) → Ⓐ ⟦tự tìm ra cách làm⟧ (den Lösungsweg selbst finden) | ② ⟦bài thơ, khó hiểu⟧ (Gedicht, schwer verständlich) → Ⓒ ⟦đọc nhiều để hiểu ra nội dung đó⟧ (oft lesen, um den Inhalt zu verstehen) | ③ ⟦vấn đề, phức tạp⟧ (Problem, kompliziert) → Ⓑ ⟦tự nghĩ ra cách giải quyết⟧ (sich selbst eine Lösung ausdenken)
+Muster (③–Ⓑ): Ⓐ ⟦Vấn đề này phức tạp quá. Anh làm ơn giúp đỡ nhé.⟧ — Dieses Problem ist zu kompliziert. Helfen Sie mir bitte. Ⓑ ⟦Cố lên! Các em cần phải tự nghĩ ra cách giải quyết.⟧ — Nur Mut! Ihr müsst euch selbst eine Lösung ausdenken.
+Übung 4 — mit ⟦dẫn đến⟧ wie im Muster ergänzen, dann sprechen.
+Muster: Ⓐ ⟦Em có thói quen nào đặc biệt để đạt được thành công như vậy?⟧ — Hast du eine besondere Gewohnheit, mit der du so erfolgreich bist? Ⓑ ⟦Không ạ, nhưng nếu bắt đầu việc gì đó thì em nhất thiết phải làm xong.⟧ — Nein, aber wenn ich etwas anfange, muss ich es unbedingt zu Ende bringen. Ⓐ ⟦Ừ, cô nghĩ rằng đó chắc chắn là thói quen dẫn đến thành công.⟧ — Ja, ich denke, das ist sicher eine Gewohnheit, die zum Erfolg führt.
+❶ Ⓐ ⟦Anh có cách nào đặc biệt để đạt kết quả tốt như vậy?⟧ — Hast du eine besondere Methode, um so gute Ergebnisse zu erzielen? Ⓑ ⟦Không, nhưng anh đã cố gắng hết sức để thuyết phục mọi người.⟧ — Nein, aber ich habe mich nach Kräften bemüht, alle zu überzeugen. Ⓐ ⟦Vâng, em nghĩ rằng đó chắc chắn là cách dẫn đến kết quả tốt.⟧ — Ja, ich denke, das ist sicher der Weg, der zu guten Ergebnissen führt.
+❷ Ⓐ ⟦Em có lí do gì đặc biệt mà dạo này hay bị mất ngủ như vậy?⟧ — Gibt es einen besonderen Grund, warum du in letzter Zeit so oft schlecht schläfst? Ⓑ ⟦Không ạ, nhưng em hay uống cà phê hơn trước đây.⟧ — Nein, aber ich trinke mehr Kaffee als früher. Ⓐ ⟦Ừ, anh nghĩ rằng đó chắc chắn là nguyên nhân dẫn đến mất ngủ.⟧ — Na ja, ich glaube, das ist sicher die Ursache deiner Schlaflosigkeit.
+Neue Wörter: ⟦bước⟧ Schritt | ⟦tổn hại⟧ Schaden | ⟦môi trường⟧ Umwelt | ⟦thiên nhiên⟧ Natur | ⟦nguyên nhân⟧ Ursache | ⟦thiên tai⟧ Naturkatastrophe | ⟦biện pháp⟧ Maßnahme, Lösungsweg | ⟦giải quyết⟧ lösen | ⟦thói quen⟧ Gewohnheit | ⟦nhất thiết⟧ unbedingt | ⟦thuyết phục⟧ überzeugen
+=hu
+Kulcskifejezések: ⟦~ ra ~⟧ / ⟦dẫn đến ~⟧
+A ⟦~ ra ~⟧ jelentése „kitalálni, rájönni ~”. Az előtte álló igével együtt pozitív eredményhez vezető tevékenységet fejez ki.
+❶ ⟦Chúng ta cần phải nghĩ ra các biện pháp đối phó với những khó khăn trong cuộc sống.⟧ — Ki kell találnunk, hogyan birkózzunk meg az élet nehézségeivel.
+❷ Ⓐ ⟦Em đã làm xong bài tập môn Toán chưa?⟧ — Megcsináltad már a matekházit? Ⓑ ⟦Chưa. Em chưa nghĩ ra cách làm bài cuối. Bài đó khó quá.⟧ — Még nem. Nem jöttem rá, hogyan kell megoldani az utolsó feladatot. Túl nehéz.
+A ⟦dẫn đến ~⟧ jelentése „~hoz vezet”, azt fejezi ki, hogy valami egy állapotba vagy eredménybe torkollik.
+❶ ⟦Việc thường xuyên gặp gỡ và nói chuyện với nhau là bước đầu dẫn đến hoà bình.⟧ — A gyakori találkozás és beszélgetés az első lépés a béke felé.
+❷ Ⓐ ⟦Gây tổn hại đến môi trường thiên nhiên thế này mà không có vấn đề gì cả à?⟧ — Így károsítjuk a természetet, és semmi következménye nem lesz? Ⓑ ⟦Tất nhiên là có chứ! Đó sẽ là nguyên nhân dẫn đến thiên tai nghiêm trọng trong tương lai gần.⟧ — Dehogynem! A közeljövőben ez súlyos természeti katasztrófákhoz fog vezetni.
+3. gyakorlat — kösse össze a megfelelő részeket, majd beszélgessen a minta szerint: ① ⟦bài Toán, khó⟧ (matekfeladat, nehéz) → Ⓐ ⟦tự tìm ra cách làm⟧ (magad rájönni a megoldásra) | ② ⟦bài thơ, khó hiểu⟧ (vers, nehezen érthető) → Ⓒ ⟦đọc nhiều để hiểu ra nội dung đó⟧ (sokszor elolvasni, hogy megértsd) | ③ ⟦vấn đề, phức tạp⟧ (probléma, bonyolult) → Ⓑ ⟦tự nghĩ ra cách giải quyết⟧ (magad kitalálni a megoldást)
+Minta (③–Ⓑ): Ⓐ ⟦Vấn đề này phức tạp quá. Anh làm ơn giúp đỡ nhé.⟧ — Ez a probléma túl bonyolult. Kérem, segítsen. Ⓑ ⟦Cố lên! Các em cần phải tự nghĩ ra cách giải quyết.⟧ — Hajrá! Nektek kell kitalálnotok a megoldást.
+4. gyakorlat — töltse ki a ⟦dẫn đến⟧ kifejezéssel a minta szerint, majd beszélgessen.
+Minta: Ⓐ ⟦Em có thói quen nào đặc biệt để đạt được thành công như vậy?⟧ — Van valami különleges szokásod, amitől ilyen sikeres vagy? Ⓑ ⟦Không ạ, nhưng nếu bắt đầu việc gì đó thì em nhất thiết phải làm xong.⟧ — Nincs, de ha belekezdek valamibe, azt feltétlenül be kell fejeznem. Ⓐ ⟦Ừ, cô nghĩ rằng đó chắc chắn là thói quen dẫn đến thành công.⟧ — Igen, szerintem ez biztosan olyan szokás, amely sikerhez vezet.
+❶ Ⓐ ⟦Anh có cách nào đặc biệt để đạt kết quả tốt như vậy?⟧ — Van valami különleges módszered, hogy ilyen jó eredményt érj el? Ⓑ ⟦Không, nhưng anh đã cố gắng hết sức để thuyết phục mọi người.⟧ — Nincs, de minden erőmmel igyekeztem meggyőzni mindenkit. Ⓐ ⟦Vâng, em nghĩ rằng đó chắc chắn là cách dẫn đến kết quả tốt.⟧ — Igen, szerintem ez biztosan olyan út, amely jó eredményhez vezet.
+❷ Ⓐ ⟦Em có lí do gì đặc biệt mà dạo này hay bị mất ngủ như vậy?⟧ — Van valami különös oka, hogy mostanában ilyen gyakran nem tudsz aludni? Ⓑ ⟦Không ạ, nhưng em hay uống cà phê hơn trước đây.⟧ — Nincs, de több kávét iszom, mint korábban. Ⓐ ⟦Ừ, anh nghĩ rằng đó chắc chắn là nguyên nhân dẫn đến mất ngủ.⟧ — Hát, szerintem biztosan ez vezet az álmatlansághoz.
+Új szavak: ⟦bước⟧ lépés | ⟦tổn hại⟧ kár, károsodás | ⟦môi trường⟧ környezet | ⟦thiên nhiên⟧ természet | ⟦nguyên nhân⟧ ok | ⟦thiên tai⟧ természeti katasztrófa | ⟦biện pháp⟧ intézkedés, megoldási mód | ⟦giải quyết⟧ megoldani | ⟦thói quen⟧ szokás | ⟦nhất thiết⟧ feltétlenül | ⟦thuyết phục⟧ meggyőzni
+=id
+Ungkapan kunci: ⟦~ ra ~⟧ / ⟦dẫn đến ~⟧
+⟦~ ra ~⟧ berarti "berhasil menemukan/memikirkan ~". Digabung dengan verba sebelumnya, menyatakan proses kegiatan yang mencapai hasil positif.
+❶ ⟦Chúng ta cần phải nghĩ ra các biện pháp đối phó với những khó khăn trong cuộc sống.⟧ — Kita perlu memikirkan cara-cara menghadapi kesulitan dalam hidup.
+❷ Ⓐ ⟦Em đã làm xong bài tập môn Toán chưa?⟧ — Sudah selesai PR Matematika? Ⓑ ⟦Chưa. Em chưa nghĩ ra cách làm bài cuối. Bài đó khó quá.⟧ — Belum. Saya belum menemukan cara mengerjakan soal terakhir. Soal itu sulit sekali.
+⟦dẫn đến ~⟧ berarti "mengarah ke ~, berujung pada ~" dan menyatakan sesuatu yang berlanjut ke keadaan atau hasil tertentu.
+❶ ⟦Việc thường xuyên gặp gỡ và nói chuyện với nhau là bước đầu dẫn đến hoà bình.⟧ — Sering bertemu dan berbicara satu sama lain adalah langkah awal menuju perdamaian.
+❷ Ⓐ ⟦Gây tổn hại đến môi trường thiên nhiên thế này mà không có vấn đề gì cả à?⟧ — Merusak lingkungan alam seperti ini, apa tidak ada masalah sama sekali? Ⓑ ⟦Tất nhiên là có chứ! Đó sẽ là nguyên nhân dẫn đến thiên tai nghiêm trọng trong tương lai gần.⟧ — Tentu saja ada! Itu akan menjadi penyebab bencana alam yang serius dalam waktu dekat.
+Latihan pola 3 — hubungkan bagian yang cocok, lalu bercakaplah seperti contoh: ① ⟦bài Toán, khó⟧ (soal Matematika, sulit) → Ⓐ ⟦tự tìm ra cách làm⟧ (menemukan sendiri caranya) | ② ⟦bài thơ, khó hiểu⟧ (puisi, sulit dipahami) → Ⓒ ⟦đọc nhiều để hiểu ra nội dung đó⟧ (membaca berkali-kali untuk memahami isinya) | ③ ⟦vấn đề, phức tạp⟧ (masalah, rumit) → Ⓑ ⟦tự nghĩ ra cách giải quyết⟧ (memikirkan sendiri penyelesaiannya)
+Contoh (③–Ⓑ): Ⓐ ⟦Vấn đề này phức tạp quá. Anh làm ơn giúp đỡ nhé.⟧ — Masalah ini rumit sekali. Tolong bantu, ya. Ⓑ ⟦Cố lên! Các em cần phải tự nghĩ ra cách giải quyết.⟧ — Semangat! Kalian perlu memikirkan sendiri cara penyelesaiannya.
+Latihan pola 4 — isi dengan ⟦dẫn đến⟧ seperti contoh, lalu bercakaplah.
+Contoh: Ⓐ ⟦Em có thói quen nào đặc biệt để đạt được thành công như vậy?⟧ — Apakah kamu punya kebiasaan khusus sehingga bisa sesukses itu? Ⓑ ⟦Không ạ, nhưng nếu bắt đầu việc gì đó thì em nhất thiết phải làm xong.⟧ — Tidak, tetapi kalau memulai sesuatu, saya harus menyelesaikannya. Ⓐ ⟦Ừ, cô nghĩ rằng đó chắc chắn là thói quen dẫn đến thành công.⟧ — Ya, Ibu rasa itu pasti kebiasaan yang membawa pada kesuksesan.
+❶ Ⓐ ⟦Anh có cách nào đặc biệt để đạt kết quả tốt như vậy?⟧ — Apakah Anda punya cara khusus untuk mencapai hasil sebaik itu? Ⓑ ⟦Không, nhưng anh đã cố gắng hết sức để thuyết phục mọi người.⟧ — Tidak, tetapi saya berusaha sekuat tenaga meyakinkan semua orang. Ⓐ ⟦Vâng, em nghĩ rằng đó chắc chắn là cách dẫn đến kết quả tốt.⟧ — Ya, saya rasa itu pasti cara yang membawa hasil baik.
+❷ Ⓐ ⟦Em có lí do gì đặc biệt mà dạo này hay bị mất ngủ như vậy?⟧ — Apakah ada alasan khusus kenapa akhir-akhir ini kamu sering susah tidur? Ⓑ ⟦Không ạ, nhưng em hay uống cà phê hơn trước đây.⟧ — Tidak, tetapi saya lebih sering minum kopi daripada dulu. Ⓐ ⟦Ừ, anh nghĩ rằng đó chắc chắn là nguyên nhân dẫn đến mất ngủ.⟧ — Nah, saya rasa itu pasti penyebab susah tidurmu.
+Kosakata baru: ⟦bước⟧ langkah | ⟦tổn hại⟧ kerusakan, kerugian | ⟦môi trường⟧ lingkungan | ⟦thiên nhiên⟧ alam | ⟦nguyên nhân⟧ penyebab | ⟦thiên tai⟧ bencana alam | ⟦biện pháp⟧ langkah, cara penyelesaian | ⟦giải quyết⟧ menyelesaikan | ⟦thói quen⟧ kebiasaan | ⟦nhất thiết⟧ harus, mutlak | ⟦thuyết phục⟧ meyakinkan
+=ja
+核心表現：⟦~ ra ~⟧ / ⟦dẫn đến ~⟧
+⟦~ ra ~⟧ は「～を～し出す」という意味で、前の動詞と結合して肯定的な結果に到達する動作の過程を表します。
+❶ ⟦Chúng ta cần phải nghĩ ra các biện pháp đối phó với những khó khăn trong cuộc sống.⟧ — 私たちは生活の中の困難に対処する方法を考え出す必要があります。
+❷ Ⓐ ⟦Em đã làm xong bài tập môn Toán chưa?⟧ — 数学の宿題は終わった？ Ⓑ ⟦Chưa. Em chưa nghĩ ra cách làm bài cuối. Bài đó khó quá.⟧ — まだです。最後の問題の解き方が思いつきません。その問題は難しすぎます。
+⟦dẫn đến ~⟧ は「～へ導く」という意味で、ある状態や結果につながることを表します。
+❶ ⟦Việc thường xuyên gặp gỡ và nói chuyện với nhau là bước đầu dẫn đến hoà bình.⟧ — 頻繁に会って話し合うことが平和へ導く第一歩です。
+❷ Ⓐ ⟦Gây tổn hại đến môi trường thiên nhiên thế này mà không có vấn đề gì cả à?⟧ — こんなに自然環境を損なっても何の問題もないのでしょうか。 Ⓑ ⟦Tất nhiên là có chứ! Đó sẽ là nguyên nhân dẫn đến thiên tai nghiêm trọng trong tương lai gần.⟧ — もちろんあります！それは近い将来、深刻な災害を招く原因になるでしょう。
+文型練習3 — 適切な内容を結び、例のように会話してみましょう：① ⟦bài Toán, khó⟧（数学の問題、難しい）→ Ⓐ ⟦tự tìm ra cách làm⟧（自分で解き方を見つけ出す）| ② ⟦bài thơ, khó hiểu⟧（詩、難解）→ Ⓒ ⟦đọc nhiều để hiểu ra nội dung đó⟧（何度も読んで内容を理解する）| ③ ⟦vấn đề, phức tạp⟧（問題、複雑）→ Ⓑ ⟦tự nghĩ ra cách giải quyết⟧（自分で解決策を考え出す）
+例（③–Ⓑ）：Ⓐ ⟦Vấn đề này phức tạp quá. Anh làm ơn giúp đỡ nhé.⟧ — この問題は複雑すぎます。どうか手伝ってください。 Ⓑ ⟦Cố lên! Các em cần phải tự nghĩ ra cách giải quyết.⟧ — がんばって！君たちが自分で解決策を考え出さなければなりません。
+文型練習4 — 例のように ⟦dẫn đến⟧ を使って空欄を埋め、会話してみましょう。
+例：Ⓐ ⟦Em có thói quen nào đặc biệt để đạt được thành công như vậy?⟧ — そんなに成功するために、何か特別な習慣がありますか。 Ⓑ ⟦Không ạ, nhưng nếu bắt đầu việc gì đó thì em nhất thiết phải làm xong.⟧ — いいえ、でも何かを始めたら必ず最後までやり遂げます。 Ⓐ ⟦Ừ, cô nghĩ rằng đó chắc chắn là thói quen dẫn đến thành công.⟧ — ええ、それはきっと成功へ導く習慣だと思います。
+❶ Ⓐ ⟦Anh có cách nào đặc biệt để đạt kết quả tốt như vậy?⟧ — そんなに良い結果を出すために、何か特別な方法がありますか。 Ⓑ ⟦Không, nhưng anh đã cố gắng hết sức để thuyết phục mọi người.⟧ — いいえ、でも皆を説得しようと全力を尽くしました。 Ⓐ ⟦Vâng, em nghĩ rằng đó chắc chắn là cách dẫn đến kết quả tốt.⟧ — ええ、それはきっと良い結果へ導く方法だと思います。
+❷ Ⓐ ⟦Em có lí do gì đặc biệt mà dạo này hay bị mất ngủ như vậy?⟧ — 最近そんなによく眠れないのは、何か特別な理由がありますか。 Ⓑ ⟦Không ạ, nhưng em hay uống cà phê hơn trước đây.⟧ — いいえ、でも以前よりコーヒーをよく飲みます。 Ⓐ ⟦Ừ, anh nghĩ rằng đó chắc chắn là nguyên nhân dẫn đến mất ngủ.⟧ — うん、それがきっと不眠を招く原因だと思うよ。
+新出単語：⟦bước⟧ 歩み | ⟦tổn hại⟧ 損害、損傷 | ⟦môi trường⟧ 環境 | ⟦thiên nhiên⟧ 自然 | ⟦nguyên nhân⟧ 原因 | ⟦thiên tai⟧ 災害 | ⟦biện pháp⟧ 措置、解決方法 | ⟦giải quyết⟧ 解決する | ⟦thói quen⟧ 習慣 | ⟦nhất thiết⟧ 必ず | ⟦thuyết phục⟧ 説得する
+=pl
+Kluczowe wyrażenia: ⟦~ ra ~⟧ / ⟦dẫn đến ~⟧
+⟦~ ra ~⟧ znaczy „wymyślić, dojść do ~”. W połączeniu z poprzedzającym czasownikiem wyraża czynność prowadzącą do pozytywnego wyniku.
+❶ ⟦Chúng ta cần phải nghĩ ra các biện pháp đối phó với những khó khăn trong cuộc sống.⟧ — Musimy wymyślić sposoby radzenia sobie z trudnościami w życiu.
+❷ Ⓐ ⟦Em đã làm xong bài tập môn Toán chưa?⟧ — Zrobiłeś już zadanie z matematyki? Ⓑ ⟦Chưa. Em chưa nghĩ ra cách làm bài cuối. Bài đó khó quá.⟧ — Jeszcze nie. Nie wymyśliłem, jak rozwiązać ostatnie zadanie. Jest za trudne.
+⟦dẫn đến ~⟧ znaczy „prowadzić do ~” i wyraża, że coś kończy się określonym stanem lub wynikiem.
+❶ ⟦Việc thường xuyên gặp gỡ và nói chuyện với nhau là bước đầu dẫn đến hoà bình.⟧ — Częste spotkania i rozmowy to pierwszy krok do pokoju.
+❷ Ⓐ ⟦Gây tổn hại đến môi trường thiên nhiên thế này mà không có vấn đề gì cả à?⟧ — Tak niszczyć środowisko naturalne i nie będzie żadnych konsekwencji? Ⓑ ⟦Tất nhiên là có chứ! Đó sẽ là nguyên nhân dẫn đến thiên tai nghiêm trọng trong tương lai gần.⟧ — Oczywiście, że będą! W niedalekiej przyszłości doprowadzi to do poważnych klęsk żywiołowych.
+Ćwiczenie 3 — połącz pasujące elementy i rozmawiaj jak we wzorze: ① ⟦bài Toán, khó⟧ (zadanie z matematyki, trudne) → Ⓐ ⟦tự tìm ra cách làm⟧ (samemu znaleźć sposób) | ② ⟦bài thơ, khó hiểu⟧ (wiersz, trudny do zrozumienia) → Ⓒ ⟦đọc nhiều để hiểu ra nội dung đó⟧ (czytać wiele razy, by zrozumieć treść) | ③ ⟦vấn đề, phức tạp⟧ (problem, skomplikowany) → Ⓑ ⟦tự nghĩ ra cách giải quyết⟧ (samemu wymyślić rozwiązanie)
+Wzór (③–Ⓑ): Ⓐ ⟦Vấn đề này phức tạp quá. Anh làm ơn giúp đỡ nhé.⟧ — Ten problem jest zbyt skomplikowany. Proszę mi pomóc. Ⓑ ⟦Cố lên! Các em cần phải tự nghĩ ra cách giải quyết.⟧ — Głowa do góry! Musicie sami wymyślić rozwiązanie.
+Ćwiczenie 4 — uzupełnij za pomocą ⟦dẫn đến⟧ jak we wzorze, potem rozmawiaj.
+Wzór: Ⓐ ⟦Em có thói quen nào đặc biệt để đạt được thành công như vậy?⟧ — Masz jakiś szczególny nawyk, dzięki któremu odnosisz takie sukcesy? Ⓑ ⟦Không ạ, nhưng nếu bắt đầu việc gì đó thì em nhất thiết phải làm xong.⟧ — Nie, ale jeśli coś zaczynam, koniecznie muszę to skończyć. Ⓐ ⟦Ừ, cô nghĩ rằng đó chắc chắn là thói quen dẫn đến thành công.⟧ — Tak, myślę, że to na pewno nawyk prowadzący do sukcesu.
+❶ Ⓐ ⟦Anh có cách nào đặc biệt để đạt kết quả tốt như vậy?⟧ — Masz jakiś specjalny sposób na osiąganie tak dobrych wyników? Ⓑ ⟦Không, nhưng anh đã cố gắng hết sức để thuyết phục mọi người.⟧ — Nie, ale z całych sił starałem się wszystkich przekonać. Ⓐ ⟦Vâng, em nghĩ rằng đó chắc chắn là cách dẫn đến kết quả tốt.⟧ — Tak, myślę, że to na pewno droga prowadząca do dobrych wyników.
+❷ Ⓐ ⟦Em có lí do gì đặc biệt mà dạo này hay bị mất ngủ như vậy?⟧ — Czy jest jakiś szczególny powód, że ostatnio tak często nie możesz spać? Ⓑ ⟦Không ạ, nhưng em hay uống cà phê hơn trước đây.⟧ — Nie, ale piję więcej kawy niż wcześniej. Ⓐ ⟦Ừ, anh nghĩ rằng đó chắc chắn là nguyên nhân dẫn đến mất ngủ.⟧ — No cóż, myślę, że to na pewno przyczyna twojej bezsenności.
+Nowe słówka: ⟦bước⟧ krok | ⟦tổn hại⟧ szkoda | ⟦môi trường⟧ środowisko | ⟦thiên nhiên⟧ przyroda | ⟦nguyên nhân⟧ przyczyna | ⟦thiên tai⟧ klęska żywiołowa | ⟦biện pháp⟧ środek, sposób rozwiązania | ⟦giải quyết⟧ rozwiązać | ⟦thói quen⟧ nawyk | ⟦nhất thiết⟧ koniecznie | ⟦thuyết phục⟧ przekonać

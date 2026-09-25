@@ -1,0 +1,212 @@
+@@ pdf-grammar-60ac5bf82b2e79ad#0
+=cs
+Gramatický výklad
+⟦là⟧ se používá ve tvaru „podmět + ⟦là⟧ + doplněk“ ve významu „podmět je ~, znamená ~“.
+⟦Phương tiện giao thông là gì?⟧ — Co znamená dopravní prostředek?
+⟦Phương tiện giao thông là những phương tiện giúp con người di chuyển được từ nơi này đến nơi khác.⟧ — Dopravní prostředky jsou prostředky, které lidem pomáhají přesouvat se z jednoho místa na druhé.
+⟦Phương tiện giao thông xanh là gì?⟧ — Co je zelená doprava?
+⟦Phương tiện giao thông xanh là những phương tiện hạn chế thải khí độc hại ra môi trường.⟧ — Zelené dopravní prostředky jsou ty, které omezují vypouštění škodlivých plynů do prostředí.
+⟦chính là⟧ znamená „je právě ~, to je ~“ a zdůrazňuje či potvrzuje vysvětlení nebo obsah, který následuje.
+⟦Các phương tiện giao thông xanh chính là các phương tiện giao thông sử dụng sức người, sức kéo của động vật và các năng lượng tái tạo.⟧ → Zelené dopravní prostředky jsou právě ty, které využívají lidskou sílu, tažnou sílu zvířat a obnovitelné zdroje energie.
+⟦Tham gia giao thông xanh chính là tham gia giao thông bằng việc đi bộ, đi xe đạp và sử dụng các loại năng lượng mặt trời⟧ → Účastnit se zelené dopravy znamená právě chodit pěšky, jezdit na kole a využívat solární energii.
+⟦Phương tiện giao thông sử dụng sức kéo chính là phương tiện sử dụng sức của các loài động vật để di chuyển.⟧ → Dopravní prostředky na tažnou sílu jsou právě ty, které k pohybu využívají sílu zvířat.
+=zh_cn
+语法解说
+⟦là⟧ 以“主语 + ⟦là⟧ + 补语”的形式使用，意为“主语是……、指……”。
+⟦Phương tiện giao thông là gì?⟧ —— 交通工具是什么意思？
+⟦Phương tiện giao thông là những phương tiện giúp con người di chuyển được từ nơi này đến nơi khác.⟧ —— 交通工具是指帮助人们从一个地方移动到另一个地方的工具。
+⟦Phương tiện giao thông xanh là gì?⟧ —— 绿色交通工具是什么？
+⟦Phương tiện giao thông xanh là những phương tiện hạn chế thải khí độc hại ra môi trường.⟧ —— 绿色交通工具是指减少向环境排放有害气体的交通工具。
+⟦chính là⟧ 意为“正是……、就是……”，用来强调、确认后面的说明或内容。
+⟦Các phương tiện giao thông xanh chính là các phương tiện giao thông sử dụng sức người, sức kéo của động vật và các năng lượng tái tạo.⟧ → 绿色交通工具正是使用人力、畜力和可再生能源的交通工具。
+⟦Tham gia giao thông xanh chính là tham gia giao thông bằng việc đi bộ, đi xe đạp và sử dụng các loại năng lượng mặt trời⟧ → 参与绿色交通就是通过步行、骑自行车和使用太阳能等方式出行。
+⟦Phương tiện giao thông sử dụng sức kéo chính là phương tiện sử dụng sức của các loài động vật để di chuyển.⟧ → 使用牵引力的交通工具就是利用动物的力量来移动的交通工具。
+=zh
+文法解說
+⟦là⟧ 以「主詞 + ⟦là⟧ + 補語」的形式使用，意為「主詞是……、指……」。
+⟦Phương tiện giao thông là gì?⟧ —— 交通工具是什麼意思？
+⟦Phương tiện giao thông là những phương tiện giúp con người di chuyển được từ nơi này đến nơi khác.⟧ —— 交通工具是指幫助人們從一個地方移動到另一個地方的工具。
+⟦Phương tiện giao thông xanh là gì?⟧ —— 綠色交通工具是什麼？
+⟦Phương tiện giao thông xanh là những phương tiện hạn chế thải khí độc hại ra môi trường.⟧ —— 綠色交通工具是指減少向環境排放有害氣體的交通工具。
+⟦chính là⟧ 意為「正是……、就是……」，用來強調、確認後面的說明或內容。
+⟦Các phương tiện giao thông xanh chính là các phương tiện giao thông sử dụng sức người, sức kéo của động vật và các năng lượng tái tạo.⟧ → 綠色交通工具正是使用人力、獸力和再生能源的交通工具。
+⟦Tham gia giao thông xanh chính là tham gia giao thông bằng việc đi bộ, đi xe đạp và sử dụng các loại năng lượng mặt trời⟧ → 參與綠色交通就是以步行、騎腳踏車和使用太陽能等方式通行。
+⟦Phương tiện giao thông sử dụng sức kéo chính là phương tiện sử dụng sức của các loài động vật để di chuyển.⟧ → 使用牽引力的交通工具就是利用動物的力量來移動的交通工具。
+=en
+Grammar notes
+⟦là⟧ is used in the pattern "subject + ⟦là⟧ + complement" to mean "subject is ~, means ~".
+⟦Phương tiện giao thông là gì?⟧ — What does "means of transport" mean?
+⟦Phương tiện giao thông là những phương tiện giúp con người di chuyển được từ nơi này đến nơi khác.⟧ — Means of transport are the means that help people move from one place to another.
+⟦Phương tiện giao thông xanh là gì?⟧ — What is green transport?
+⟦Phương tiện giao thông xanh là những phương tiện hạn chế thải khí độc hại ra môi trường.⟧ — Green transport means vehicles that limit the emission of harmful gases into the environment.
+⟦chính là⟧ means "is precisely ~, is exactly ~" and emphasises or confirms the explanation or content that follows.
+⟦Các phương tiện giao thông xanh chính là các phương tiện giao thông sử dụng sức người, sức kéo của động vật và các năng lượng tái tạo.⟧ → Green means of transport are precisely those that use human power, animal traction and renewable energy.
+⟦Tham gia giao thông xanh chính là tham gia giao thông bằng việc đi bộ, đi xe đạp và sử dụng các loại năng lượng mặt trời⟧ → Taking part in green transport means exactly getting around by walking, cycling and using solar energy.
+⟦Phương tiện giao thông sử dụng sức kéo chính là phương tiện sử dụng sức của các loài động vật để di chuyển.⟧ → Traction-powered transport is precisely transport that uses the strength of animals to move.
+=fr
+Notes de grammaire
+⟦là⟧ s'emploie dans la structure « sujet + ⟦là⟧ + attribut » au sens de « le sujet est ~, signifie ~ ».
+⟦Phương tiện giao thông là gì?⟧ — Que signifie « moyen de transport » ?
+⟦Phương tiện giao thông là những phương tiện giúp con người di chuyển được từ nơi này đến nơi khác.⟧ — Les moyens de transport sont les moyens qui permettent aux gens de se déplacer d'un endroit à un autre.
+⟦Phương tiện giao thông xanh là gì?⟧ — Qu'est-ce qu'un moyen de transport vert ?
+⟦Phương tiện giao thông xanh là những phương tiện hạn chế thải khí độc hại ra môi trường.⟧ — Les transports verts sont ceux qui limitent les émissions de gaz nocifs dans l'environnement.
+⟦chính là⟧ signifie « c'est justement ~, c'est précisément ~ » et sert à souligner ou confirmer l'explication qui suit.
+⟦Các phương tiện giao thông xanh chính là các phương tiện giao thông sử dụng sức người, sức kéo của động vật và các năng lượng tái tạo.⟧ → Les transports verts, ce sont précisément ceux qui utilisent la force humaine, la traction animale et les énergies renouvelables.
+⟦Tham gia giao thông xanh chính là tham gia giao thông bằng việc đi bộ, đi xe đạp và sử dụng các loại năng lượng mặt trời⟧ → Participer aux transports verts, c'est justement se déplacer à pied, à vélo et en utilisant l'énergie solaire.
+⟦Phương tiện giao thông sử dụng sức kéo chính là phương tiện sử dụng sức của các loài động vật để di chuyển.⟧ → Les moyens de transport à traction sont précisément ceux qui utilisent la force des animaux pour se déplacer.
+=de
+Grammatikerläuterungen
+⟦là⟧ wird in der Form „Subjekt + ⟦là⟧ + Ergänzung“ verwendet und bedeutet „das Subjekt ist ~, bedeutet ~“.
+⟦Phương tiện giao thông là gì?⟧ — Was bedeutet „Verkehrsmittel“?
+⟦Phương tiện giao thông là những phương tiện giúp con người di chuyển được từ nơi này đến nơi khác.⟧ — Verkehrsmittel sind Mittel, mit denen Menschen von einem Ort zum anderen gelangen.
+⟦Phương tiện giao thông xanh là gì?⟧ — Was sind grüne Verkehrsmittel?
+⟦Phương tiện giao thông xanh là những phương tiện hạn chế thải khí độc hại ra môi trường.⟧ — Grüne Verkehrsmittel sind solche, die den Ausstoß schädlicher Gase in die Umwelt begrenzen.
+⟦chính là⟧ bedeutet „ist genau ~, ist eben ~“ und hebt die folgende Erklärung hervor oder bestätigt sie.
+⟦Các phương tiện giao thông xanh chính là các phương tiện giao thông sử dụng sức người, sức kéo của động vật và các năng lượng tái tạo.⟧ → Grüne Verkehrsmittel sind genau die, die Muskelkraft, tierische Zugkraft und erneuerbare Energien nutzen.
+⟦Tham gia giao thông xanh chính là tham gia giao thông bằng việc đi bộ, đi xe đạp và sử dụng các loại năng lượng mặt trời⟧ → Am grünen Verkehr teilnehmen heißt eben, zu Fuß zu gehen, Rad zu fahren und Solarenergie zu nutzen.
+⟦Phương tiện giao thông sử dụng sức kéo chính là phương tiện sử dụng sức của các loài động vật để di chuyển.⟧ → Verkehrsmittel mit Zugkraft sind genau die, die zur Fortbewegung die Kraft von Tieren nutzen.
+=hu
+Nyelvtani magyarázat
+A ⟦là⟧ az „alany + ⟦là⟧ + kiegészítő” szerkezetben „az alany ~, azt jelenti, hogy ~” értelemben használatos.
+⟦Phương tiện giao thông là gì?⟧ — Mit jelent a közlekedési eszköz?
+⟦Phương tiện giao thông là những phương tiện giúp con người di chuyển được từ nơi này đến nơi khác.⟧ — A közlekedési eszközök azok az eszközök, amelyek segítik az embereket egyik helyről a másikra eljutni.
+⟦Phương tiện giao thông xanh là gì?⟧ — Mi a zöld közlekedési eszköz?
+⟦Phương tiện giao thông xanh là những phương tiện hạn chế thải khí độc hại ra môi trường.⟧ — A zöld közlekedési eszközök azok, amelyek korlátozzák a káros gázok környezetbe bocsátását.
+A ⟦chính là⟧ jelentése „éppen ~, pontosan ~”; az utána következő magyarázatot, tartalmat hangsúlyozza vagy megerősíti.
+⟦Các phương tiện giao thông xanh chính là các phương tiện giao thông sử dụng sức người, sức kéo của động vật và các năng lượng tái tạo.⟧ → A zöld közlekedési eszközök éppen azok, amelyek emberi erőt, állati vonóerőt és megújuló energiát használnak.
+⟦Tham gia giao thông xanh chính là tham gia giao thông bằng việc đi bộ, đi xe đạp và sử dụng các loại năng lượng mặt trời⟧ → A zöld közlekedésben részt venni éppen azt jelenti, hogy gyalogolunk, biciklizünk és napenergiát használunk.
+⟦Phương tiện giao thông sử dụng sức kéo chính là phương tiện sử dụng sức của các loài động vật để di chuyển.⟧ → A vonóerővel működő közlekedési eszközök éppen azok, amelyek az állatok erejét használják a haladáshoz.
+=id
+Penjelasan tata bahasa
+⟦là⟧ dipakai dalam pola "subjek + ⟦là⟧ + pelengkap" dengan arti "subjek adalah ~, berarti ~".
+⟦Phương tiện giao thông là gì?⟧ — Apa arti alat transportasi?
+⟦Phương tiện giao thông là những phương tiện giúp con người di chuyển được từ nơi này đến nơi khác.⟧ — Alat transportasi adalah sarana yang membantu manusia berpindah dari satu tempat ke tempat lain.
+⟦Phương tiện giao thông xanh là gì?⟧ — Apa itu transportasi hijau?
+⟦Phương tiện giao thông xanh là những phương tiện hạn chế thải khí độc hại ra môi trường.⟧ — Transportasi hijau adalah sarana yang membatasi pembuangan gas beracun ke lingkungan.
+⟦chính là⟧ berarti "justru adalah ~, tak lain adalah ~" dan dipakai untuk menekankan atau menegaskan penjelasan sesudahnya.
+⟦Các phương tiện giao thông xanh chính là các phương tiện giao thông sử dụng sức người, sức kéo của động vật và các năng lượng tái tạo.⟧ → Transportasi hijau tak lain adalah transportasi yang memakai tenaga manusia, tenaga tarik hewan, dan energi terbarukan.
+⟦Tham gia giao thông xanh chính là tham gia giao thông bằng việc đi bộ, đi xe đạp và sử dụng các loại năng lượng mặt trời⟧ → Ikut serta dalam transportasi hijau berarti berjalan kaki, bersepeda, dan memakai energi surya.
+⟦Phương tiện giao thông sử dụng sức kéo chính là phương tiện sử dụng sức của các loài động vật để di chuyển.⟧ → Transportasi bertenaga tarik tak lain adalah transportasi yang memakai tenaga hewan untuk bergerak.
+=ja
+文法解説
+⟦là⟧ は「主語 + ⟦là⟧ + 補語」の形で「主語は～である、～を意味する」という意味で使われます。
+⟦Phương tiện giao thông là gì?⟧ — 交通手段とは何ですか。
+⟦Phương tiện giao thông là những phương tiện giúp con người di chuyển được từ nơi này đến nơi khác.⟧ — 交通手段とは、人がある場所から別の場所へ移動するのを助ける手段のことです。
+⟦Phương tiện giao thông xanh là gì?⟧ — グリーンな交通手段とは何ですか。
+⟦Phương tiện giao thông xanh là những phương tiện hạn chế thải khí độc hại ra môi trường.⟧ — グリーンな交通手段とは、環境への有害ガスの排出を抑えた交通手段のことです。
+⟦chính là⟧ は「まさに～である」という意味で、⟦là⟧ の後に続く説明や内容を強調・確認するときに使います。
+⟦Các phương tiện giao thông xanh chính là các phương tiện giao thông sử dụng sức người, sức kéo của động vật và các năng lượng tái tạo.⟧ → グリーンな交通手段とは、まさに人力、動物の牽引力、再生可能エネルギーを使う交通手段のことです。
+⟦Tham gia giao thông xanh chính là tham gia giao thông bằng việc đi bộ, đi xe đạp và sử dụng các loại năng lượng mặt trời⟧ → グリーンな交通に参加するとは、まさに歩いたり自転車に乗ったり太陽エネルギーを使ったりすることです。
+⟦Phương tiện giao thông sử dụng sức kéo chính là phương tiện sử dụng sức của các loài động vật để di chuyển.⟧ → 牽引力を使う交通手段とは、まさに移動のために動物の力を使う交通手段のことです。
+=pl
+Objaśnienia gramatyczne
+⟦là⟧ występuje w konstrukcji „podmiot + ⟦là⟧ + dopełnienie” w znaczeniu „podmiot jest ~, oznacza ~”.
+⟦Phương tiện giao thông là gì?⟧ — Co oznacza środek transportu?
+⟦Phương tiện giao thông là những phương tiện giúp con người di chuyển được từ nơi này đến nơi khác.⟧ — Środki transportu to środki, które pomagają ludziom przemieszczać się z jednego miejsca do drugiego.
+⟦Phương tiện giao thông xanh là gì?⟧ — Czym jest zielony transport?
+⟦Phương tiện giao thông xanh là những phương tiện hạn chế thải khí độc hại ra môi trường.⟧ — Zielone środki transportu to takie, które ograniczają emisję szkodliwych gazów do środowiska.
+⟦chính là⟧ znaczy „to właśnie ~, jest właśnie ~” i podkreśla lub potwierdza następujące po nim wyjaśnienie.
+⟦Các phương tiện giao thông xanh chính là các phương tiện giao thông sử dụng sức người, sức kéo của động vật và các năng lượng tái tạo.⟧ → Zielone środki transportu to właśnie te, które wykorzystują siłę ludzkich mięśni, siłę pociągową zwierząt i energię odnawialną.
+⟦Tham gia giao thông xanh chính là tham gia giao thông bằng việc đi bộ, đi xe đạp và sử dụng các loại năng lượng mặt trời⟧ → Uczestniczyć w zielonym transporcie to właśnie chodzić pieszo, jeździć rowerem i korzystać z energii słonecznej.
+⟦Phương tiện giao thông sử dụng sức kéo chính là phương tiện sử dụng sức của các loài động vật để di chuyển.⟧ → Środki transportu o napędzie pociągowym to właśnie te, które do poruszania się wykorzystują siłę zwierząt.
+@@ pdf-grammar-17d2ec614fb5225d#0
+=cs
+Gramatický výklad
+⟦xin ... làm ơn⟧ je zdvořilý výraz, kterým mluvčí posluchače o něco žádá.
+⟦Xin anh làm ơn cho tôi đến bến xe Nam Hà Nội!⟧ → Odvezte mě prosím na autobusové nádraží Nam Hà Nội! (potřebná pomoc: dostat se na nádraží Nam Hà Nội)
+⟦Xin chị làm ơn bán cho một vé Nam Định!⟧ → Prosím jednu jízdenku do Nam Định! (potřebná pomoc: koupit jízdenku do Nam Định)
+⟦hãy ... đi⟧ se používá, když mluvčí přemlouvá nebo vybízí druhého, aby se něco stalo podle jeho přání: „udělejte prosím ~, pojďme ~“.
+⟦Chị hãy đi chuyến 10 giờ đi⟧ → Jeďte spojem v 10 hodin! (přemlouvání: jet v 10) · ⟦Anh hãy mua vé xe giường nằm đi!⟧ → Kupte si lístek do lehátkového autobusu! (přemlouvání: koupit lístek na lehátko)
+⟦giá A thì B⟧ je vzor pro předpoklad a výsledek: „kdyby A, B“; v části A obvykle stojí předpoklad odporující skutečnosti.
+⟦Giá chị đến sớm hơn vài phút thì vẫn kịp gặp Lan.⟧ → Kdybys přišla o pár minut dřív, ještě bys Lan zastihla. (předpoklad: přijít o pár minut dřív; výsledek: setkání s Lan, ke kterému ve skutečnosti nedošlo)
+⟦Giá anh đi xe giường nằm thì sẽ đỡ mệt mỏi hơn.⟧ → Kdybys jel lehátkovým autobusem, byl bys méně unavený. (předpoklad: jet lehátkovým autobusem; výsledek: menší únava, ve skutečnosti se tak nestalo)
+=zh_cn
+语法解说
+⟦xin ... làm ơn⟧ 是说话人请求对方做某事时使用的礼貌表达。
+⟦Xin anh làm ơn cho tôi đến bến xe Nam Hà Nội!⟧ → 请载我到南河内汽车站！（需要帮助的事：我去南河内汽车站）
+⟦Xin chị làm ơn bán cho một vé Nam Định!⟧ → 请卖给我一张去南定的票！（需要帮助的事：买一张去南定的票）
+⟦hãy ... đi⟧ 用于说话人劝说或建议对方按自己的意思去做某事，意为“请……吧”或“……吧”。
+⟦Chị hãy đi chuyến 10 giờ đi⟧ → 您坐10点的班次吧！（劝说：10点出发） · ⟦Anh hãy mua vé xe giường nằm đi!⟧ → 您买卧铺车票吧！（劝说：买卧铺票）
+⟦giá A thì B⟧ 是表示假设和结果的句型，意为“要是A的话就B”，A通常是与现实不同的假设。
+⟦Giá chị đến sớm hơn vài phút thì vẫn kịp gặp Lan.⟧ → 要是你早到几分钟，就还能见到阿兰。（假设：早到几分钟；结果：能见到阿兰，但现实并非如此）
+⟦Giá anh đi xe giường nằm thì sẽ đỡ mệt mỏi hơn.⟧ → 要是你坐卧铺车就不会那么累了。（假设：坐卧铺车；结果：会轻松些，但现实并非如此）
+=zh
+文法解說
+⟦xin ... làm ơn⟧ 是說話者請求對方做某事時使用的禮貌表達。
+⟦Xin anh làm ơn cho tôi đến bến xe Nam Hà Nội!⟧ → 請載我到南河內客運站！（需要幫忙的事：我去南河內客運站）
+⟦Xin chị làm ơn bán cho một vé Nam Định!⟧ → 請賣我一張去南定的票！（需要幫忙的事：買一張去南定的票）
+⟦hãy ... đi⟧ 用於說話者勸說或建議對方照自己的意思去做某事，意為「請……吧」或「……吧」。
+⟦Chị hãy đi chuyến 10 giờ đi⟧ → 您搭10點的班次吧！（勸說：10點出發） · ⟦Anh hãy mua vé xe giường nằm đi!⟧ → 您買臥鋪巴士的票吧！（勸說：買臥鋪票）
+⟦giá A thì B⟧ 是表示假設和結果的句型，意為「要是A的話就B」，A通常是與現實不同的假設。
+⟦Giá chị đến sớm hơn vài phút thì vẫn kịp gặp Lan.⟧ → 要是妳早到幾分鐘，就還能見到阿蘭。（假設：早到幾分鐘；結果：能見到阿蘭，但現實並非如此）
+⟦Giá anh đi xe giường nằm thì sẽ đỡ mệt mỏi hơn.⟧ → 要是你搭臥鋪巴士就不會那麼累了。（假設：搭臥鋪巴士；結果：會輕鬆些，但現實並非如此）
+=en
+Grammar notes
+⟦xin ... làm ơn⟧ is a polite expression used when the speaker asks the listener to do something.
+⟦Xin anh làm ơn cho tôi đến bến xe Nam Hà Nội!⟧ → Please take me to Nam Hà Nội bus station! (help needed: getting to Nam Hà Nội bus station)
+⟦Xin chị làm ơn bán cho một vé Nam Định!⟧ → One ticket to Nam Định, please! (help needed: buying a ticket to Nam Định)
+⟦hãy ... đi⟧ is used when the speaker persuades or encourages the listener to do something as the speaker wishes: "please ~, let's ~".
+⟦Chị hãy đi chuyến 10 giờ đi⟧ → Take the 10 o'clock one! (persuading: leave at 10) · ⟦Anh hãy mua vé xe giường nằm đi!⟧ → Buy a sleeper-bus ticket! (persuading: buy a sleeper ticket)
+⟦giá A thì B⟧ is a pattern expressing a supposition and its result: "if A, B". A usually contains a supposition contrary to reality.
+⟦Giá chị đến sớm hơn vài phút thì vẫn kịp gặp Lan.⟧ → If you had come a few minutes earlier, you would still have caught Lan. (supposition: arriving a few minutes earlier; result: meeting Lan, which did not actually happen)
+⟦Giá anh đi xe giường nằm thì sẽ đỡ mệt mỏi hơn.⟧ → If you had taken the sleeper bus, you would have been less tired. (supposition: taking the sleeper bus; result: less tiredness, which did not actually happen)
+=fr
+Notes de grammaire
+⟦xin ... làm ơn⟧ est une formule polie qu'emploie le locuteur pour demander un service à son interlocuteur.
+⟦Xin anh làm ơn cho tôi đến bến xe Nam Hà Nội!⟧ → Conduisez-moi à la gare routière de Nam Hà Nội, s'il vous plaît ! (service demandé : aller à la gare routière)
+⟦Xin chị làm ơn bán cho một vé Nam Định!⟧ → Un billet pour Nam Định, s'il vous plaît ! (service demandé : acheter un billet pour Nam Định)
+⟦hãy ... đi⟧ s'emploie quand le locuteur persuade ou encourage l'interlocuteur à agir selon son souhait : « faites donc ~, allons ~ ».
+⟦Chị hãy đi chuyến 10 giờ đi⟧ → Prenez donc le départ de 10 h ! (persuasion : partir à 10 h) · ⟦Anh hãy mua vé xe giường nằm đi!⟧ → Achetez donc un billet de bus-couchettes ! (persuasion : acheter un billet couchette)
+⟦giá A thì B⟧ est une structure d'hypothèse et de résultat : « si A, B » ; A exprime généralement une hypothèse contraire à la réalité.
+⟦Giá chị đến sớm hơn vài phút thì vẫn kịp gặp Lan.⟧ → Si tu étais arrivée quelques minutes plus tôt, tu aurais encore pu voir Lan. (hypothèse : arriver plus tôt ; résultat : voir Lan, ce qui n'a pas eu lieu)
+⟦Giá anh đi xe giường nằm thì sẽ đỡ mệt mỏi hơn.⟧ → Si tu avais pris le bus-couchettes, tu aurais été moins fatigué. (hypothèse : prendre le bus-couchettes ; résultat : moins de fatigue, ce qui n'a pas eu lieu)
+=de
+Grammatikerläuterungen
+⟦xin ... làm ơn⟧ ist eine höfliche Wendung, mit der der Sprecher den Hörer um etwas bittet.
+⟦Xin anh làm ơn cho tôi đến bến xe Nam Hà Nội!⟧ → Bringen Sie mich bitte zum Busbahnhof Nam Hà Nội! (erbetene Hilfe: zum Busbahnhof Nam Hà Nội kommen)
+⟦Xin chị làm ơn bán cho một vé Nam Định!⟧ → Bitte eine Fahrkarte nach Nam Định! (erbetene Hilfe: eine Fahrkarte nach Nam Định kaufen)
+⟦hãy ... đi⟧ wird verwendet, wenn der Sprecher den Hörer überredet oder ermuntert, etwas nach seinem Wunsch zu tun: „tun Sie doch ~, lass uns ~“.
+⟦Chị hãy đi chuyến 10 giờ đi⟧ → Nehmen Sie doch die Fahrt um 10 Uhr! (Überredung: um 10 fahren) · ⟦Anh hãy mua vé xe giường nằm đi!⟧ → Kaufen Sie doch eine Karte für den Schlafbus! (Überredung: Schlafbus-Karte kaufen)
+⟦giá A thì B⟧ ist ein Muster für Annahme und Folge: „wenn A, (dann) B“; A enthält meist eine Annahme, die der Wirklichkeit widerspricht.
+⟦Giá chị đến sớm hơn vài phút thì vẫn kịp gặp Lan.⟧ → Wärst du ein paar Minuten früher gekommen, hättest du Lan noch getroffen. (Annahme: früher ankommen; Folge: Treffen mit Lan, das in Wirklichkeit nicht stattfand)
+⟦Giá anh đi xe giường nằm thì sẽ đỡ mệt mỏi hơn.⟧ → Wärst du mit dem Schlafbus gefahren, wärst du weniger müde. (Annahme: Schlafbus nehmen; Folge: weniger Müdigkeit, was in Wirklichkeit nicht eintrat)
+=hu
+Nyelvtani magyarázat
+A ⟦xin ... làm ơn⟧ udvarias kifejezés, amellyel a beszélő megkéri a hallgatót valamire.
+⟦Xin anh làm ơn cho tôi đến bến xe Nam Hà Nội!⟧ → Kérem, vigyen el a Nam Hà Nội buszpályaudvarra! (kért segítség: eljutni a buszpályaudvarra)
+⟦Xin chị làm ơn bán cho một vé Nam Định!⟧ → Kérek egy jegyet Nam Địnhbe! (kért segítség: jegyet venni Nam Địnhbe)
+A ⟦hãy ... đi⟧ akkor használatos, amikor a beszélő rábeszéli vagy biztatja a másikat, hogy az ő szándéka szerint tegyen valamit: „tegye csak ~, menjünk ~”.
+⟦Chị hãy đi chuyến 10 giờ đi⟧ → Menjen a 10 órás járattal! (rábeszélés: 10-kor indulni) · ⟦Anh hãy mua vé xe giường nằm đi!⟧ → Vegyen jegyet a hálóbuszra! (rábeszélés: hálóbuszjegyet venni)
+A ⟦giá A thì B⟧ feltevést és eredményt kifejező minta: „ha A, (akkor) B”; A-ban általában a valósággal ellentétes feltevés áll.
+⟦Giá chị đến sớm hơn vài phút thì vẫn kịp gặp Lan.⟧ → Ha pár perccel korábban érkeztél volna, még találkoztál volna Lannal. (feltevés: korábban érkezni; eredmény: találkozás Lannal, ami valójában nem történt meg)
+⟦Giá anh đi xe giường nằm thì sẽ đỡ mệt mỏi hơn.⟧ → Ha hálóbusszal mentél volna, kevésbé lennél fáradt. (feltevés: hálóbusszal menni; eredmény: kisebb fáradtság, ami valójában nem így lett)
+=id
+Penjelasan tata bahasa
+⟦xin ... làm ơn⟧ adalah ungkapan sopan yang dipakai pembicara saat meminta pendengar melakukan sesuatu.
+⟦Xin anh làm ơn cho tôi đến bến xe Nam Hà Nội!⟧ → Tolong antar saya ke terminal bus Nam Hà Nội! (bantuan yang diperlukan: pergi ke terminal Nam Hà Nội)
+⟦Xin chị làm ơn bán cho một vé Nam Định!⟧ → Tolong jual satu tiket ke Nam Định! (bantuan yang diperlukan: membeli satu tiket ke Nam Định)
+⟦hãy ... đi⟧ dipakai saat pembicara membujuk atau menganjurkan lawan bicara agar sesuatu berjalan sesuai keinginannya: "silakan ~, mari ~".
+⟦Chị hãy đi chuyến 10 giờ đi⟧ → Naik yang jam 10 saja! (membujuk: berangkat jam 10) · ⟦Anh hãy mua vé xe giường nằm đi!⟧ → Beli tiket bus tidur saja! (membujuk: membeli tiket bus tidur)
+⟦giá A thì B⟧ adalah pola pengandaian dan akibat: "seandainya A, (tentu) B"; A biasanya berisi pengandaian yang berlawanan dengan kenyataan.
+⟦Giá chị đến sớm hơn vài phút thì vẫn kịp gặp Lan.⟧ → Seandainya Kakak datang beberapa menit lebih awal, tentu masih sempat bertemu Lan. (pengandaian: datang lebih awal; akibat: bertemu Lan, yang kenyataannya tidak terjadi)
+⟦Giá anh đi xe giường nằm thì sẽ đỡ mệt mỏi hơn.⟧ → Seandainya Kakak naik bus tidur, tentu tidak terlalu lelah. (pengandaian: naik bus tidur; akibat: lebih tidak lelah, yang kenyataannya tidak terjadi)
+=ja
+文法解説
+⟦xin ... làm ơn⟧ は、話し手が聞き手に何かを頼むときに使う丁寧な表現です。
+⟦Xin anh làm ơn cho tôi đến bến xe Nam Hà Nội!⟧ → 南ハノイバスターミナルまで行ってください！（助けが必要なこと：南ハノイバスターミナルまで行くこと）
+⟦Xin chị làm ơn bán cho một vé Nam Định!⟧ → ナムディン行きの切符を1枚ください！（助けが必要なこと：ナムディン行きの切符を1枚買うこと）
+⟦hãy ... đi⟧ は、話し手が相手に自分の意向どおりに事が進むよう説得したり勧めたりするときに使い、「～してください」「～しましょう」という意味です。
+⟦Chị hãy đi chuyến 10 giờ đi⟧ → 10時の便で行きましょう！（説得：10時に出発） · ⟦Anh hãy mua vé xe giường nằm đi!⟧ → 寝台バスの切符を買いましょう！（説得：寝台の切符を購入）
+⟦giá A thì B⟧ は仮定と結果を表す文型で、「もしAならBだ」という意味です。Aには普通、現実とは異なる仮定の内容が来ます。
+⟦Giá chị đến sớm hơn vài phút thì vẫn kịp gặp Lan.⟧ → もしあと数分早く着いていたら、ランに会えたでしょうに。（仮定：数分早く到着；結果：ランに会えたが、現実はそうならなかった）
+⟦Giá anh đi xe giường nằm thì sẽ đỡ mệt mỏi hơn.⟧ → 寝台バスを使っていたら、もっと疲れなかったでしょうに。（仮定：寝台バスの利用；結果：疲れが少なかったはずだが、現実はそうならなかった）
+=pl
+Objaśnienia gramatyczne
+⟦xin ... làm ơn⟧ to grzeczny zwrot, którym mówiący prosi słuchacza o zrobienie czegoś.
+⟦Xin anh làm ơn cho tôi đến bến xe Nam Hà Nội!⟧ → Proszę mnie zawieźć na dworzec autobusowy Nam Hà Nội! (potrzebna pomoc: dostać się na dworzec)
+⟦Xin chị làm ơn bán cho một vé Nam Định!⟧ → Poproszę jeden bilet do Nam Định! (potrzebna pomoc: kupić bilet do Nam Định)
+⟦hãy ... đi⟧ używa się, gdy mówiący przekonuje lub zachęca drugą osobę, by coś zrobiła zgodnie z jego wolą: „niech pan/pani ~, chodźmy ~”.
+⟦Chị hãy đi chuyến 10 giờ đi⟧ → Niech pani jedzie kursem o 10! (namawianie: wyjazd o 10) · ⟦Anh hãy mua vé xe giường nằm đi!⟧ → Niech pan kupi bilet na autobus sypialny! (namawianie: kupno biletu sypialnego)
+⟦giá A thì B⟧ to konstrukcja wyrażająca założenie i skutek: „gdyby A, to B”; w A zwykle stoi założenie sprzeczne z rzeczywistością.
+⟦Giá chị đến sớm hơn vài phút thì vẫn kịp gặp Lan.⟧ → Gdybyś przyszła kilka minut wcześniej, zdążyłabyś jeszcze spotkać Lan. (założenie: przyjść kilka minut wcześniej; skutek: spotkanie z Lan, do którego w rzeczywistości nie doszło)
+⟦Giá anh đi xe giường nằm thì sẽ đỡ mệt mỏi hơn.⟧ → Gdybyś pojechał autobusem sypialnym, byłbyś mniej zmęczony. (założenie: jazda autobusem sypialnym; skutek: mniejsze zmęczenie, czego w rzeczywistości nie było)

@@ -1,0 +1,421 @@
+@@ pdf-grammar-3246114656ba6ecb#1
+~t 4. Loučení|4. 告别的问候|4. 告別的問候|4. Saying goodbye|4. Prendre congé|4. Sich verabschieden|4. Búcsúzás|4. Salam perpisahan|4. 別れのあいさつ|4. Pożegnania
+=cs
+⟦Tạm biệt em.⟧ — Měj se. / Ahoj.
+Zatímco ⟦chào⟧ se používá při setkání i loučení, ⟦tạm biệt⟧ je pozdrav jen na rozloučenou, podobně jako ⟦hẹn gặp lại⟧ (na shledanou). Dá se použít samostatně nebo spolu s ⟦chào⟧.
+⟦Tạm biệt bạn.⟧ — Měj se, kamaráde.
+⟦Chào bạn.⟧ ⟦Hẹn gặp lại.⟧ — Ahoj, kamaráde. Uvidíme se.
+Slovíčka: ⟦bạn⟧ přítel | ⟦hẹn⟧ domluvit si (schůzku)
+=zh_cn
+⟦Tạm biệt em.⟧ —— 再见。
+⟦chào⟧ 在见面和分别时都可以用，而 ⟦tạm biệt⟧ 和 ⟦hẹn gặp lại⟧（再会）一样，只在分别时使用。可以单独使用，也可以和 ⟦chào⟧ 一起用。
+⟦Tạm biệt bạn.⟧ —— 朋友，再见。
+⟦Chào bạn.⟧ ⟦Hẹn gặp lại.⟧ —— 朋友再见，下次见。
+单词：⟦bạn⟧ 朋友 | ⟦hẹn⟧ 约定
+=zh
+⟦Tạm biệt em.⟧ —— 再見。
+⟦chào⟧ 在見面和分別時都可以用，而 ⟦tạm biệt⟧ 和 ⟦hẹn gặp lại⟧（再會）一樣，只在分別時使用。可以單獨使用，也可以和 ⟦chào⟧ 一起用。
+⟦Tạm biệt bạn.⟧ —— 朋友，再見。
+⟦Chào bạn.⟧ ⟦Hẹn gặp lại.⟧ —— 朋友再見，下次見。
+單字：⟦bạn⟧ 朋友 | ⟦hẹn⟧ 約定
+=en
+⟦Tạm biệt em.⟧ — Bye. / Take care.
+While ⟦chào⟧ is used both when meeting and when parting, ⟦tạm biệt⟧ — like ⟦hẹn gặp lại⟧ (see you again) — is used only when saying goodbye. It can be used on its own or together with ⟦chào⟧.
+⟦Tạm biệt bạn.⟧ — Goodbye, friend.
+⟦Chào bạn.⟧ ⟦Hẹn gặp lại.⟧ — Bye, friend. See you again.
+Words: ⟦bạn⟧ friend | ⟦hẹn⟧ to arrange (to meet)
+=fr
+⟦Tạm biệt em.⟧ — Au revoir. / Salut.
+Alors que ⟦chào⟧ s'emploie à la rencontre comme à la séparation, ⟦tạm biệt⟧, comme ⟦hẹn gặp lại⟧ (à la prochaine), ne s'utilise que pour se quitter. On peut l'employer seul ou avec ⟦chào⟧.
+⟦Tạm biệt bạn.⟧ — Au revoir, mon ami.
+⟦Chào bạn.⟧ ⟦Hẹn gặp lại.⟧ — Salut, mon ami. À la prochaine.
+Mots : ⟦bạn⟧ ami | ⟦hẹn⟧ donner rendez-vous
+=de
+⟦Tạm biệt em.⟧ — Tschüss. / Mach's gut.
+Während ⟦chào⟧ sowohl beim Treffen als auch beim Abschied verwendet wird, gebraucht man ⟦tạm biệt⟧ – wie ⟦hẹn gặp lại⟧ (bis bald) – nur beim Abschied. Es kann allein oder zusammen mit ⟦chào⟧ stehen.
+⟦Tạm biệt bạn.⟧ — Auf Wiedersehen, Freund.
+⟦Chào bạn.⟧ ⟦Hẹn gặp lại.⟧ — Tschüss, Freund. Bis bald.
+Wörter: ⟦bạn⟧ Freund | ⟦hẹn⟧ verabreden
+=hu
+⟦Tạm biệt em.⟧ — Szia. / Viszlát.
+Míg a ⟦chào⟧ találkozáskor és búcsúzáskor is használatos, a ⟦tạm biệt⟧ – a ⟦hẹn gặp lại⟧ (viszontlátásra) kifejezéshez hasonlóan – csak elköszönéskor. Önállóan vagy a ⟦chào⟧ mellett is használható.
+⟦Tạm biệt bạn.⟧ — Viszlát, barátom.
+⟦Chào bạn.⟧ ⟦Hẹn gặp lại.⟧ — Szia, barátom. Viszontlátásra.
+Szavak: ⟦bạn⟧ barát | ⟦hẹn⟧ megbeszélni (találkozót)
+=id
+⟦Tạm biệt em.⟧ — Sampai jumpa. / Dah.
+Kalau ⟦chào⟧ dipakai saat bertemu maupun berpisah, ⟦tạm biệt⟧ — seperti ⟦hẹn gặp lại⟧ (sampai bertemu lagi) — hanya dipakai saat berpisah. Bisa dipakai sendiri atau bersama ⟦chào⟧.
+⟦Tạm biệt bạn.⟧ — Sampai jumpa, teman.
+⟦Chào bạn.⟧ ⟦Hẹn gặp lại.⟧ — Dah, teman. Sampai bertemu lagi.
+Kosakata: ⟦bạn⟧ teman | ⟦hẹn⟧ berjanji (bertemu)
+=ja
+⟦Tạm biệt em.⟧ — じゃあね。／元気でね。
+⟦chào⟧ が会うときにも別れるときにも使われるのに対し、⟦tạm biệt⟧ は ⟦hẹn gặp lại⟧（また会いましょう）と同様に別れるときだけに使うあいさつです。単独でも ⟦chào⟧ と一緒にも使えます。
+⟦Tạm biệt bạn.⟧ — さようなら、友よ。
+⟦Chào bạn.⟧ ⟦Hẹn gặp lại.⟧ — じゃあね。また会おう。
+単語：⟦bạn⟧ 友達 | ⟦hẹn⟧ 約束する
+=pl
+⟦Tạm biệt em.⟧ — Pa. / Trzymaj się.
+Podczas gdy ⟦chào⟧ używa się i przy spotkaniu, i przy pożegnaniu, ⟦tạm biệt⟧ — podobnie jak ⟦hẹn gặp lại⟧ (do zobaczenia) — służy tylko do pożegnania. Można go użyć samodzielnie lub razem z ⟦chào⟧.
+⟦Tạm biệt bạn.⟧ — Do widzenia, przyjacielu.
+⟦Chào bạn.⟧ ⟦Hẹn gặp lại.⟧ — Cześć, przyjacielu. Do zobaczenia.
+Słówka: ⟦bạn⟧ przyjaciel | ⟦hẹn⟧ umówić się
+@@ pdf-grammar-b956c287e37dcce3#0
+~t 1. Omluva|1. 失礼/道歉的表达|1. 失禮/道歉的表達|1. Excuse me / apologizing|1. S'excuser|1. Entschuldigen|1. Elnézéskérés, bocsánatkérés|1. Permisi / minta maaf|1. 失礼・謝罪の表現|1. Przepraszanie
+=cs
+⟦Xin lỗi.⟧ — Promiňte. / Omlouvám se.
+⟦Xin lỗi⟧ znamená „promiňte, omlouvám se“ a lze ho použít ve tvaru „Xin lỗi + oslovení“. Jako odpověď se používá ⟦Không sao⟧ (to nevadí).
+A: ⟦Xin lỗi anh.⟧ — Promiň, bratře. B: ⟦Không sao.⟧ — To nevadí.
+Slovíčko: ⟦không sao⟧ to nic, nevadí
+=zh_cn
+⟦Xin lỗi.⟧ —— 打扰了 / 对不起。
+⟦Xin lỗi⟧ 意为“打扰了、对不起”，可以用“Xin lỗi + 对方的称呼”的形式。回应时用 ⟦Không sao⟧（没关系）。
+A：⟦Xin lỗi anh.⟧ —— 对不起，哥。 B：⟦Không sao.⟧ —— 没关系。
+单词：⟦không sao⟧ 没关系
+=zh
+⟦Xin lỗi.⟧ —— 打擾了 / 對不起。
+⟦Xin lỗi⟧ 意為「打擾了、對不起」，可以用「Xin lỗi + 對方的稱呼」的形式。回應時用 ⟦Không sao⟧（沒關係）。
+A：⟦Xin lỗi anh.⟧ —— 對不起，哥。 B：⟦Không sao.⟧ —— 沒關係。
+單字：⟦không sao⟧ 沒關係
+=en
+⟦Xin lỗi.⟧ — Excuse me. / I'm sorry.
+⟦Xin lỗi⟧ means "excuse me, I'm sorry" and can be used as "Xin lỗi + the way you address the other person". The reply is ⟦Không sao⟧ (it's okay).
+A: ⟦Xin lỗi anh.⟧ — Sorry, brother. B: ⟦Không sao.⟧ — It's okay.
+Word: ⟦không sao⟧ it's okay, no problem
+=fr
+⟦Xin lỗi.⟧ — Excusez-moi. / Pardon.
+⟦Xin lỗi⟧ signifie « excusez-moi, pardon » et s'emploie sous la forme « Xin lỗi + terme d'adresse ». On y répond par ⟦Không sao⟧ (ce n'est rien).
+A : ⟦Xin lỗi anh.⟧ — Pardon, grand frère. B : ⟦Không sao.⟧ — Ce n'est rien.
+Mot : ⟦không sao⟧ ce n'est rien, pas de problème
+=de
+⟦Xin lỗi.⟧ — Entschuldigung. / Es tut mir leid.
+⟦Xin lỗi⟧ bedeutet „Entschuldigung, es tut mir leid“ und kann als „Xin lỗi + Anrede des Gegenübers“ verwendet werden. Als Antwort sagt man ⟦Không sao⟧ (macht nichts).
+A: ⟦Xin lỗi anh.⟧ — Entschuldige, großer Bruder. B: ⟦Không sao.⟧ — Macht nichts.
+Wort: ⟦không sao⟧ macht nichts, kein Problem
+=hu
+⟦Xin lỗi.⟧ — Elnézést. / Bocsánat.
+A ⟦Xin lỗi⟧ jelentése „elnézést, bocsánat”, és „Xin lỗi + megszólítás” formában is használható. Válaszként a ⟦Không sao⟧ (semmi baj) használatos.
+A: ⟦Xin lỗi anh.⟧ — Bocsánat, bátyám. B: ⟦Không sao.⟧ — Semmi baj.
+Szó: ⟦không sao⟧ semmi baj, nem probléma
+=id
+⟦Xin lỗi.⟧ — Permisi. / Maaf.
+⟦Xin lỗi⟧ berarti "permisi, maaf" dan dapat dipakai dengan pola "Xin lỗi + sapaan lawan bicara". Jawabannya ⟦Không sao⟧ (tidak apa-apa).
+A: ⟦Xin lỗi anh.⟧ — Maaf, Kak. B: ⟦Không sao.⟧ — Tidak apa-apa.
+Kosakata: ⟦không sao⟧ tidak apa-apa
+=ja
+⟦Xin lỗi.⟧ — 失礼します。／すみません。
+⟦Xin lỗi⟧ は「失礼します、すみません」の意味で、「Xin lỗi ＋ 相手の呼び方」の形で使えます。それに対する返事には ⟦Không sao⟧（大丈夫です）を使います。
+A：⟦Xin lỗi anh.⟧ — すみません、お兄さん。 B：⟦Không sao.⟧ — 大丈夫。
+単語：⟦không sao⟧ 大丈夫だ
+=pl
+⟦Xin lỗi.⟧ — Przepraszam.
+⟦Xin lỗi⟧ znaczy „przepraszam” i można go używać w formie „Xin lỗi + forma zwracania się”. W odpowiedzi mówi się ⟦Không sao⟧ (nic nie szkodzi).
+A: ⟦Xin lỗi anh.⟧ — Przepraszam, bracie. B: ⟦Không sao.⟧ — Nic nie szkodzi.
+Słówko: ⟦không sao⟧ nic nie szkodzi
+@@ pdf-grammar-b956c287e37dcce3#1
+~t 2. Ptát se na jméno a odpovídat|2. 询问与回答名字|2. 詢問與回答名字|2. Asking and giving names|2. Demander et donner son nom|2. Nach dem Namen fragen und antworten|2. Név kérdezése és megadása|2. Menanyakan dan menjawab nama|2. 名前を尋ねて答える表現|2. Pytanie o imię i odpowiedź
+=cs
+A: ⟦Tên của chị là gì?⟧ — Jak se jmenuješ, sestro?
+B: ⟦Tên của em là Trang.⟧ — Jmenuji se Trang.
+Vietnamský slovosled je „rozvíjené slovo + přívlastek“, takže ⟦tên của chị⟧ znamená „jméno sestry“. ⟦của⟧ lze vynechat.
+⟦em (của) bạn⟧ — mladší sourozenec kamaráda; ⟦hoa này⟧ — tato květina
+V otázkách s tázacím slovem se tázací slovo nepřesouvá na začátek věty jako v angličtině; slovosled se nemění, stejně jako v korejštině. I v odpovědi se slovosled zachová — stačí na místo tázacího slova dosadit odpověď.
+A: ⟦Tên của anh là gì?⟧ — Jak se jmenuješ, bratře?
+B: ⟦Tên của anh là Hùng.⟧ — Jmenuji se Hùng.
+=zh_cn
+A：⟦Tên của chị là gì?⟧ —— 姐姐叫什么名字？
+B：⟦Tên của em là Trang.⟧ —— 我叫庄（Trang）。
+越南语的语序是“被修饰语 + 修饰语”，所以 ⟦tên của chị⟧ 是“姐姐的名字”。⟦của⟧ 可以省略。
+⟦em (của) bạn⟧ —— 朋友的弟弟妹妹；⟦hoa này⟧ —— 这朵花
+带疑问词的疑问句不像英语那样把疑问词倒装到句首，而是和韩语（中文）一样语序不变。回答时也保持句子语序，只要在疑问词的位置填入答案即可。
+A：⟦Tên của anh là gì?⟧ —— 哥哥叫什么名字？
+B：⟦Tên của anh là Hùng.⟧ —— 我叫雄（Hùng）。
+=zh
+A：⟦Tên của chị là gì?⟧ —— 姐姐叫什麼名字？
+B：⟦Tên của em là Trang.⟧ —— 我叫莊（Trang）。
+越南語的語序是「被修飾語 + 修飾語」，所以 ⟦tên của chị⟧ 是「姐姐的名字」。⟦của⟧ 可以省略。
+⟦em (của) bạn⟧ —— 朋友的弟弟妹妹；⟦hoa này⟧ —— 這朵花
+帶疑問詞的疑問句不像英語那樣把疑問詞倒裝到句首，而是和韓語（中文）一樣語序不變。回答時也保持句子語序，只要在疑問詞的位置填入答案即可。
+A：⟦Tên của anh là gì?⟧ —— 哥哥叫什麼名字？
+B：⟦Tên của anh là Hùng.⟧ —— 我叫雄（Hùng）。
+=en
+A: ⟦Tên của chị là gì?⟧ — What's your name, sister?
+B: ⟦Tên của em là Trang.⟧ — My name is Trang.
+Vietnamese word order is "modified word + modifier", so ⟦tên của chị⟧ is "sister's name". ⟦của⟧ can be left out.
+⟦em (của) bạn⟧ — a friend's younger sibling; ⟦hoa này⟧ — this flower
+In questions with a question word, the question word is not moved to the front as in English; the word order stays the same, as in Korean. The answer also keeps the same order — just put the answer where the question word was.
+A: ⟦Tên của anh là gì?⟧ — What's your name, brother?
+B: ⟦Tên của anh là Hùng.⟧ — My name is Hùng.
+=fr
+A : ⟦Tên của chị là gì?⟧ — Comment t'appelles-tu, grande sœur ?
+B : ⟦Tên của em là Trang.⟧ — Je m'appelle Trang.
+L'ordre des mots en vietnamien est « mot déterminé + déterminant » : ⟦tên của chị⟧ signifie « le nom de grande sœur ». ⟦của⟧ peut être omis.
+⟦em (của) bạn⟧ — le cadet d'un ami ; ⟦hoa này⟧ — cette fleur
+Dans les questions avec un mot interrogatif, celui-ci n'est pas déplacé en tête de phrase comme en anglais ; l'ordre ne change pas, comme en coréen. La réponse garde aussi le même ordre : il suffit de mettre la réponse à la place du mot interrogatif.
+A : ⟦Tên của anh là gì?⟧ — Comment t'appelles-tu, grand frère ?
+B : ⟦Tên của anh là Hùng.⟧ — Je m'appelle Hùng.
+=de
+A: ⟦Tên của chị là gì?⟧ — Wie heißt du, große Schwester?
+B: ⟦Tên của em là Trang.⟧ — Ich heiße Trang.
+Die vietnamesische Wortstellung ist „Bezugswort + Attribut“, also bedeutet ⟦tên của chị⟧ „der Name der großen Schwester“. ⟦của⟧ kann entfallen.
+⟦em (của) bạn⟧ — das jüngere Geschwister eines Freundes; ⟦hoa này⟧ — diese Blume
+In Fragen mit Fragewort wird das Fragewort nicht wie im Englischen an den Satzanfang gestellt; die Wortstellung bleibt wie im Koreanischen gleich. Auch in der Antwort bleibt sie gleich – man setzt die Antwort einfach an die Stelle des Fragewortes.
+A: ⟦Tên của anh là gì?⟧ — Wie heißt du, großer Bruder?
+B: ⟦Tên của anh là Hùng.⟧ — Ich heiße Hùng.
+=hu
+A: ⟦Tên của chị là gì?⟧ — Mi a neved, nővérem?
+B: ⟦Tên của em là Trang.⟧ — A nevem Trang.
+A vietnámi szórend „jelzett szó + jelző”, így a ⟦tên của chị⟧ jelentése „a nővér neve”. A ⟦của⟧ elhagyható.
+⟦em (của) bạn⟧ — a barát kisebb testvére; ⟦hoa này⟧ — ez a virág
+A kérdőszós kérdésekben a kérdőszó nem kerül a mondat elejére, mint az angolban; a szórend – akárcsak a koreaiban – nem változik. A válaszban is marad a szórend: a kérdőszó helyére kell beírni a választ.
+A: ⟦Tên của anh là gì?⟧ — Mi a neved, bátyám?
+B: ⟦Tên của anh là Hùng.⟧ — A nevem Hùng.
+=id
+A: ⟦Tên của chị là gì?⟧ — Siapa nama Kakak?
+B: ⟦Tên của em là Trang.⟧ — Nama saya Trang.
+Susunan kata bahasa Vietnam adalah "kata yang diterangkan + penerang", sehingga ⟦tên của chị⟧ berarti "nama kakak". ⟦của⟧ boleh dihilangkan.
+⟦em (của) bạn⟧ — adik teman; ⟦hoa này⟧ — bunga ini
+Dalam pertanyaan dengan kata tanya, kata tanya tidak dipindahkan ke awal kalimat seperti bahasa Inggris; susunan kata tetap sama, seperti bahasa Korea. Jawabannya juga mempertahankan susunan yang sama — cukup isi jawaban di posisi kata tanya.
+A: ⟦Tên của anh là gì?⟧ — Siapa nama Kakak?
+B: ⟦Tên của anh là Hùng.⟧ — Nama saya Hùng.
+=ja
+A：⟦Tên của chị là gì?⟧ — お姉さんの名前は何ですか。
+B：⟦Tên của em là Trang.⟧ — 私の名前はチャンです。
+ベトナム語の語順は「被修飾語 ＋ 修飾語」なので、⟦tên của chị⟧ は「お姉さんの名前」になります。⟦của⟧ は省略できます。
+⟦em (của) bạn⟧ — 友達の弟・妹；⟦hoa này⟧ — この花
+疑問詞のある疑問文は、英語のように疑問詞が文頭に移動することはなく、韓国語（日本語）と同じく語順が変わりません。答えるときも語順はそのままで、疑問詞の位置に答えを入れるだけです。
+A：⟦Tên của anh là gì?⟧ — お兄さんの名前は何ですか。
+B：⟦Tên của anh là Hùng.⟧ — 僕の名前はフンだよ。
+=pl
+A: ⟦Tên của chị là gì?⟧ — Jak masz na imię, siostro?
+B: ⟦Tên của em là Trang.⟧ — Mam na imię Trang.
+Szyk wietnamski to „wyraz określany + określenie”, więc ⟦tên của chị⟧ znaczy „imię siostry”. ⟦của⟧ można pominąć.
+⟦em (của) bạn⟧ — młodsze rodzeństwo przyjaciela; ⟦hoa này⟧ — ten kwiat
+W pytaniach ze słowem pytającym nie przenosi się go na początek zdania jak w angielskim; szyk się nie zmienia, tak jak w koreańskim. W odpowiedzi szyk również zostaje — wystarczy wstawić odpowiedź w miejsce słowa pytającego.
+A: ⟦Tên của anh là gì?⟧ — Jak masz na imię, bracie?
+B: ⟦Tên của anh là Hùng.⟧ — Mam na imię Hùng.
+@@ pdf-grammar-18491373792e16ba#0
+=cs
+Vietnamský slovosled je „podmět + sloveso/přídavné jméno“, ale když za podmětem následuje podstatné jméno, použije se „podmět + là + podstatné jméno“ (podmět je …).
+⟦Em là học sinh.⟧ — Jsem žák.
+⟦Bố của em là bác sĩ.⟧ — Můj otec je lékař.
+Slovíčka: ⟦bạn⟧ přítel | ⟦hoa⟧ květina | ⟦này⟧ tento | ⟦học sinh⟧ žák (ZŠ, SŠ) | ⟦bác sĩ⟧ lékař
+Způsobů, jak se zeptat na jméno a odpovědět, je více.
+⟦Tên của em là gì?⟧ — Jak se jmenuješ? → ⟦Tên của em là Trang.⟧ — Jmenuji se Trang.
+⟦Tên em là gì?⟧ — Jaké je tvé jméno? → ⟦Tên em là Trang.⟧ — Mé jméno je Trang.
+⟦Em tên là gì?⟧ — Jak ti říkají? → ⟦Em tên là Trang.⟧ — Jmenuji se Trang.
+⟦Em là Trang.⟧ — Jsem Trang.
+=zh_cn
+越南语的语序是“主语 + 动词/形容词”，但主语后面接名词时，要用“主语 + là + 名词”（主语是名词）。
+⟦Em là học sinh.⟧ —— 我是学生。
+⟦Bố của em là bác sĩ.⟧ —— 我的父亲是医生。
+单词：⟦bạn⟧ 朋友 | ⟦hoa⟧ 花 | ⟦này⟧ 这（指示词） | ⟦học sinh⟧ 学生（中小学） | ⟦bác sĩ⟧ 医生
+询问和回答名字的说法有很多种。
+⟦Tên của em là gì?⟧ —— 你叫什么名字？ → ⟦Tên của em là Trang.⟧ —— 我的名字是庄。
+⟦Tên em là gì?⟧ —— 你的名字是什么？ → ⟦Tên em là Trang.⟧ —— 我名字叫庄。
+⟦Em tên là gì?⟧ —— 你叫什么？ → ⟦Em tên là Trang.⟧ —— 我叫庄。
+⟦Em là Trang.⟧ —— 我是庄。
+=zh
+越南語的語序是「主語 + 動詞/形容詞」，但主語後面接名詞時，要用「主語 + là + 名詞」（主語是名詞）。
+⟦Em là học sinh.⟧ —— 我是學生。
+⟦Bố của em là bác sĩ.⟧ —— 我的父親是醫生。
+單字：⟦bạn⟧ 朋友 | ⟦hoa⟧ 花 | ⟦này⟧ 這（指示詞） | ⟦học sinh⟧ 學生（中小學） | ⟦bác sĩ⟧ 醫生
+詢問和回答名字的說法有很多種。
+⟦Tên của em là gì?⟧ —— 你叫什麼名字？ → ⟦Tên của em là Trang.⟧ —— 我的名字是莊。
+⟦Tên em là gì?⟧ —— 你的名字是什麼？ → ⟦Tên em là Trang.⟧ —— 我名字叫莊。
+⟦Em tên là gì?⟧ —— 你叫什麼？ → ⟦Em tên là Trang.⟧ —— 我叫莊。
+⟦Em là Trang.⟧ —— 我是莊。
+=en
+Vietnamese word order is "subject + verb/adjective", but when a noun follows the subject, you use "subject + là + noun" (the subject is a noun).
+⟦Em là học sinh.⟧ — I am a student.
+⟦Bố của em là bác sĩ.⟧ — My father is a doctor.
+Words: ⟦bạn⟧ friend | ⟦hoa⟧ flower | ⟦này⟧ this | ⟦học sinh⟧ pupil (primary/secondary school) | ⟦bác sĩ⟧ doctor
+There are many ways to ask and give names.
+⟦Tên của em là gì?⟧ — What is your name? → ⟦Tên của em là Trang.⟧ — My name is Trang.
+⟦Tên em là gì?⟧ — What's your name? → ⟦Tên em là Trang.⟧ — My name's Trang.
+⟦Em tên là gì?⟧ — What are you called? → ⟦Em tên là Trang.⟧ — I'm called Trang.
+⟦Em là Trang.⟧ — I'm Trang.
+=fr
+L'ordre des mots est « sujet + verbe/adjectif », mais lorsqu'un nom suit le sujet, on emploie « sujet + là + nom » (le sujet est …).
+⟦Em là học sinh.⟧ — Je suis élève.
+⟦Bố của em là bác sĩ.⟧ — Mon père est médecin.
+Mots : ⟦bạn⟧ ami | ⟦hoa⟧ fleur | ⟦này⟧ ce, cette | ⟦học sinh⟧ élève (primaire/secondaire) | ⟦bác sĩ⟧ médecin
+Il existe plusieurs façons de demander et de donner son nom.
+⟦Tên của em là gì?⟧ — Quel est ton nom ? → ⟦Tên của em là Trang.⟧ — Mon nom est Trang.
+⟦Tên em là gì?⟧ — C'est quoi ton nom ? → ⟦Tên em là Trang.⟧ — Mon nom, c'est Trang.
+⟦Em tên là gì?⟧ — Comment t'appelles-tu ? → ⟦Em tên là Trang.⟧ — Je m'appelle Trang.
+⟦Em là Trang.⟧ — Je suis Trang.
+=de
+Die Wortstellung ist „Subjekt + Verb/Adjektiv“; folgt aber auf das Subjekt ein Substantiv, verwendet man „Subjekt + là + Substantiv“ (das Subjekt ist …).
+⟦Em là học sinh.⟧ — Ich bin Schüler.
+⟦Bố của em là bác sĩ.⟧ — Mein Vater ist Arzt.
+Wörter: ⟦bạn⟧ Freund | ⟦hoa⟧ Blume | ⟦này⟧ dieser | ⟦học sinh⟧ Schüler | ⟦bác sĩ⟧ Arzt
+Es gibt viele Arten, nach dem Namen zu fragen und zu antworten.
+⟦Tên của em là gì?⟧ — Wie ist dein Name? → ⟦Tên của em là Trang.⟧ — Mein Name ist Trang.
+⟦Tên em là gì?⟧ — Wie heißt du? → ⟦Tên em là Trang.⟧ — Ich heiße Trang.
+⟦Em tên là gì?⟧ — Wie nennt man dich? → ⟦Em tên là Trang.⟧ — Man nennt mich Trang.
+⟦Em là Trang.⟧ — Ich bin Trang.
+=hu
+A szórend „alany + ige/melléknév”, de ha az alany után főnév áll, az „alany + là + főnév” (az alany valami) szerkezetet használjuk.
+⟦Em là học sinh.⟧ — Diák vagyok.
+⟦Bố của em là bác sĩ.⟧ — Az apám orvos.
+Szavak: ⟦bạn⟧ barát | ⟦hoa⟧ virág | ⟦này⟧ ez (mutató szó) | ⟦học sinh⟧ tanuló (általános/középiskolás) | ⟦bác sĩ⟧ orvos
+Sokféleképpen lehet nevet kérdezni és megmondani.
+⟦Tên của em là gì?⟧ — Mi a neved? → ⟦Tên của em là Trang.⟧ — A nevem Trang.
+⟦Tên em là gì?⟧ — Hogy hívnak? → ⟦Tên em là Trang.⟧ — Trangnak hívnak.
+⟦Em tên là gì?⟧ — Téged hogy hívnak? → ⟦Em tên là Trang.⟧ — Engem Trangnak hívnak.
+⟦Em là Trang.⟧ — Trang vagyok.
+=id
+Susunan kata bahasa Vietnam adalah "subjek + kata kerja/kata sifat", tetapi jika setelah subjek ada kata benda, dipakai "subjek + là + kata benda" (subjek adalah …).
+⟦Em là học sinh.⟧ — Saya pelajar.
+⟦Bố của em là bác sĩ.⟧ — Ayah saya dokter.
+Kosakata: ⟦bạn⟧ teman | ⟦hoa⟧ bunga | ⟦này⟧ ini (penunjuk) | ⟦học sinh⟧ pelajar (SD–SMA) | ⟦bác sĩ⟧ dokter
+Ada banyak cara menanyakan dan menyebutkan nama.
+⟦Tên của em là gì?⟧ — Siapa namamu? → ⟦Tên của em là Trang.⟧ — Nama saya Trang.
+⟦Tên em là gì?⟧ — Namamu siapa? → ⟦Tên em là Trang.⟧ — Nama saya Trang.
+⟦Em tên là gì?⟧ — Kamu bernama siapa? → ⟦Em tên là Trang.⟧ — Saya bernama Trang.
+⟦Em là Trang.⟧ — Saya Trang.
+=ja
+ベトナム語の語順は「主語 ＋ 動詞・形容詞」ですが、主語の後に名詞が来るときは「主語 ＋ là ＋ 名詞」（主語は名詞だ）になります。
+⟦Em là học sinh.⟧ — 私は学生です。
+⟦Bố của em là bác sĩ.⟧ — 私の父は医者です。
+単語：⟦bạn⟧ 友達 | ⟦hoa⟧ 花 | ⟦này⟧ この（指示詞） | ⟦học sinh⟧ 生徒（小・中・高校） | ⟦bác sĩ⟧ 医者
+名前を尋ねて答える表現はいろいろあります。
+⟦Tên của em là gì?⟧ — 君の名前は何？ → ⟦Tên của em là Trang.⟧ — 私の名前はチャンです。
+⟦Tên em là gì?⟧ — 名前は何？ → ⟦Tên em là Trang.⟧ — 名前はチャンです。
+⟦Em tên là gì?⟧ — 君は何という名前？ → ⟦Em tên là Trang.⟧ — 私はチャンという名前です。
+⟦Em là Trang.⟧ — 私はチャンです。
+=pl
+Szyk wietnamski to „podmiot + czasownik/przymiotnik”, ale gdy po podmiocie stoi rzeczownik, używa się „podmiot + là + rzeczownik” (podmiot jest …).
+⟦Em là học sinh.⟧ — Jestem uczniem.
+⟦Bố của em là bác sĩ.⟧ — Mój ojciec jest lekarzem.
+Słówka: ⟦bạn⟧ przyjaciel | ⟦hoa⟧ kwiat | ⟦này⟧ ten | ⟦học sinh⟧ uczeń (szkoła podstawowa/średnia) | ⟦bác sĩ⟧ lekarz
+Jest wiele sposobów pytania o imię i odpowiadania.
+⟦Tên của em là gì?⟧ — Jak masz na imię? → ⟦Tên của em là Trang.⟧ — Mam na imię Trang.
+⟦Tên em là gì?⟧ — Jakie jest twoje imię? → ⟦Tên em là Trang.⟧ — Moje imię to Trang.
+⟦Em tên là gì?⟧ — Jak się nazywasz? → ⟦Em tên là Trang.⟧ — Nazywam się Trang.
+⟦Em là Trang.⟧ — Jestem Trang.
+@@ pdf-grammar-18491373792e16ba#1
+~t 3. Vyjádření radosti ze setkání|3. 表达见面的喜悦|3. 表達見面的喜悅|3. Expressing gladness to meet someone|3. Exprimer la joie de rencontrer quelqu'un|3. Freude über ein Treffen ausdrücken|3. Az öröm kifejezése a találkozáskor|3. Mengungkapkan rasa senang bertemu|3. 会えてうれしい気持ちの表現|3. Wyrażanie radości ze spotkania
+=cs
+⟦Em rất vui được gặp anh.⟧ — Moc rád tě poznávám, bratře.
+⟦rất⟧ znamená „velmi“ a stojí před slovem, které rozvíjí.
+⟦Bà của em rất khoẻ.⟧ — Moje babička je velmi zdravá.
+⟦được⟧ před přísudkem znamená „dostat příležitost (něco dělat)“.
+⟦được học⟧ — mít možnost studovat
+Slovíčko: ⟦học⟧ učit se, studovat
+=zh_cn
+⟦Em rất vui được gặp anh.⟧ —— 很高兴见到哥哥。
+⟦rất⟧ 意为“非常”，放在被修饰语的前面。
+⟦Bà của em rất khoẻ.⟧ —— 我的奶奶非常健康。
+⟦được⟧ 放在谓语前，表示“得以……、有机会……”。
+⟦được học⟧ —— 得以学习
+单词：⟦học⟧ 学习
+=zh
+⟦Em rất vui được gặp anh.⟧ —— 很高興見到哥哥。
+⟦rất⟧ 意為「非常」，放在被修飾語的前面。
+⟦Bà của em rất khoẻ.⟧ —— 我的奶奶非常健康。
+⟦được⟧ 放在謂語前，表示「得以……、有機會……」。
+⟦được học⟧ —— 得以學習
+單字：⟦học⟧ 學習
+=en
+⟦Em rất vui được gặp anh.⟧ — I'm very glad to meet you, brother.
+⟦rất⟧ means "very" and comes before the word it modifies.
+⟦Bà của em rất khoẻ.⟧ — My grandmother is very healthy.
+⟦được⟧ before a predicate means "to get to (do something)".
+⟦được học⟧ — to get to study
+Word: ⟦học⟧ to study
+=fr
+⟦Em rất vui được gặp anh.⟧ — Je suis très heureux de te rencontrer, grand frère.
+⟦rất⟧ signifie « très » et se place devant le mot qu'il modifie.
+⟦Bà của em rất khoẻ.⟧ — Ma grand-mère est en très bonne santé.
+⟦được⟧ devant un prédicat signifie « avoir l'occasion de (faire) ».
+⟦được học⟧ — avoir l'occasion d'étudier
+Mot : ⟦học⟧ étudier
+=de
+⟦Em rất vui được gặp anh.⟧ — Ich freue mich sehr, dich kennenzulernen, großer Bruder.
+⟦rất⟧ bedeutet „sehr“ und steht vor dem Wort, das es näher bestimmt.
+⟦Bà của em rất khoẻ.⟧ — Meine Großmutter ist sehr gesund.
+⟦được⟧ vor dem Prädikat bedeutet „die Gelegenheit bekommen, etwas zu tun“.
+⟦được học⟧ — lernen dürfen
+Wort: ⟦học⟧ lernen, studieren
+=hu
+⟦Em rất vui được gặp anh.⟧ — Nagyon örülök, hogy találkozhatok veled, bátyám.
+A ⟦rất⟧ jelentése „nagyon”, és a módosított szó előtt áll.
+⟦Bà của em rất khoẻ.⟧ — A nagymamám nagyon egészséges.
+Az állítmány előtti ⟦được⟧ jelentése „lehetőséget kap (valamire)”.
+⟦được học⟧ — tanulhat
+Szó: ⟦học⟧ tanulni
+=id
+⟦Em rất vui được gặp anh.⟧ — Saya sangat senang bisa bertemu Kakak.
+⟦rất⟧ berarti "sangat" dan diletakkan sebelum kata yang diterangkannya.
+⟦Bà của em rất khoẻ.⟧ — Nenek saya sangat sehat.
+⟦được⟧ sebelum predikat berarti "mendapat kesempatan (melakukan sesuatu)".
+⟦được học⟧ — mendapat kesempatan belajar
+Kosakata: ⟦học⟧ belajar
+=ja
+⟦Em rất vui được gặp anh.⟧ — お兄さんに会えてとてもうれしいです。
+⟦rất⟧ は「とても」で、修飾される語の前に置かれます。
+⟦Bà của em rất khoẻ.⟧ — 私の祖母はとても元気です。
+⟦được⟧ は述語の前で「～することになる、～できる」の意味です。
+⟦được học⟧ — 勉強できるようになる
+単語：⟦học⟧ 勉強する
+=pl
+⟦Em rất vui được gặp anh.⟧ — Bardzo się cieszę, że cię poznaję, bracie.
+⟦rất⟧ znaczy „bardzo” i stoi przed wyrazem, który określa.
+⟦Bà của em rất khoẻ.⟧ — Moja babcia jest bardzo zdrowa.
+⟦được⟧ przed orzeczeniem znaczy „mieć okazję (coś zrobić)”.
+⟦được học⟧ — mieć okazję się uczyć
+Słówko: ⟦học⟧ uczyć się
+@@ pdf-grammar-0af55a8d878ea993#0
+~t 1. Oslovení (zavolání) druhé osoby|1. 呼唤对方的表达|1. 呼喚對方的表達|1. Calling out to someone|1. Interpeller quelqu'un|1. Jemanden rufen|1. Valaki megszólítása|1. Memanggil lawan bicara|1. 相手を呼ぶ表現|1. Wołanie kogoś
+=cs
+⟦Anh Min-su ơi.⟧ — Min-su!
+Když někoho voláte („Hej, …!“), můžete použít „~ ơi“.
+⟦Em ơi.⟧ — Hej, ty (mladší)! ⟦Bạn ơi.⟧ — Kamaráde!
+⟦Chị ơi.⟧ — Sestro! ⟦Bố ơi.⟧ — Tati!
+=zh_cn
+⟦Anh Min-su ơi.⟧ —— 民秀哥！
+叫别人“喂，……”的时候，可以用“~ ơi”。
+⟦Em ơi.⟧ —— 小弟（小妹）！ ⟦Bạn ơi.⟧ —— 朋友！
+⟦Chị ơi.⟧ —— 姐姐！ ⟦Bố ơi.⟧ —— 爸爸！
+=zh
+⟦Anh Min-su ơi.⟧ —— 民秀哥！
+叫別人「喂，……」的時候，可以用「~ ơi」。
+⟦Em ơi.⟧ —— 小弟（小妹）！ ⟦Bạn ơi.⟧ —— 朋友！
+⟦Chị ơi.⟧ —— 姐姐！ ⟦Bố ơi.⟧ —— 爸爸！
+=en
+⟦Anh Min-su ơi.⟧ — Min-su!
+To call out to someone ("Hey, …!"), you can use "~ ơi".
+⟦Em ơi.⟧ — Hey, you! (to a younger person) ⟦Bạn ơi.⟧ — Hey, friend!
+⟦Chị ơi.⟧ — Sister! ⟦Bố ơi.⟧ — Dad!
+=fr
+⟦Anh Min-su ơi.⟧ — Min-su !
+Pour interpeller quelqu'un (« Hé, … ! »), on peut utiliser « ~ ơi ».
+⟦Em ơi.⟧ — Hé, toi ! (à un cadet) ⟦Bạn ơi.⟧ — Hé, l'ami !
+⟦Chị ơi.⟧ — Grande sœur ! ⟦Bố ơi.⟧ — Papa !
+=de
+⟦Anh Min-su ơi.⟧ — Min-su!
+Wenn man jemanden ruft („He, …!“), kann man „~ ơi“ verwenden.
+⟦Em ơi.⟧ — He, du! (zu Jüngeren) ⟦Bạn ơi.⟧ — He, Freund!
+⟦Chị ơi.⟧ — Große Schwester! ⟦Bố ơi.⟧ — Papa!
+=hu
+⟦Anh Min-su ơi.⟧ — Min-su!
+Ha valakit megszólítunk („Hé, …!”), a „~ ơi” használható.
+⟦Em ơi.⟧ — Hé, te! (fiatalabbnak) ⟦Bạn ơi.⟧ — Hé, barátom!
+⟦Chị ơi.⟧ — Nővérem! ⟦Bố ơi.⟧ — Apa!
+=id
+⟦Anh Min-su ơi.⟧ — Kak Min-su!
+Untuk memanggil seseorang ("Hei, …!"), bisa dipakai "~ ơi".
+⟦Em ơi.⟧ — Dik! ⟦Bạn ơi.⟧ — Teman!
+⟦Chị ơi.⟧ — Kak! ⟦Bố ơi.⟧ — Ayah!
+=ja
+⟦Anh Min-su ơi.⟧ — ミンスさん！
+「～よ」と相手を呼ぶときは「~ ơi」を使えます。
+⟦Em ơi.⟧ — ねえ、君！（年下に） ⟦Bạn ơi.⟧ — ねえ、友よ！
+⟦Chị ơi.⟧ — お姉さん！ ⟦Bố ơi.⟧ — お父さん！
+=pl
+⟦Anh Min-su ơi.⟧ — Min-su!
+Wołając kogoś („Hej, …!”), można użyć „~ ơi”.
+⟦Em ơi.⟧ — Hej, ty! (do młodszego) ⟦Bạn ơi.⟧ — Hej, przyjacielu!
+⟦Chị ơi.⟧ — Siostro! ⟦Bố ơi.⟧ — Tato!

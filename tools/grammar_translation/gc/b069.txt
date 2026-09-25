@@ -1,0 +1,170 @@
+@@ pdf-grammar-921c05195be2b8d1#0
+=cs
+Gramatický výklad
+⟦thì⟧: „pokud ~, když ~; co se týče ~“ – slouží ke zdůraznění obsahu, který následuje po ⟦thì⟧.
+⟦Anh nói vậy thì tôi đi.⟧ → Když to říkáš takhle, tak půjdu. · ⟦Chị ấy thì ăn cơm rồi.⟧ → Ona už (co se jí týče) jedla. · ⟦Chị Lee nói thì rất chậm.⟧ → Lee, ta mluví velmi pomalu. · ⟦Anh muốn đi chợ thì đi!⟧ → Jestli chceš jít na trh, tak jdi! · ⟦Từ giờ thì anh sẽ gọi Loan là “em” nhé!⟧ → Od teď ti, Loan, budu říkat „em“ (mladší), ano!
+Cvičení
+=zh_cn
+语法解说
+⟦thì⟧：意为“如果……就……、至于……”，用于强调 ⟦thì⟧ 后面提出的内容。
+⟦Anh nói vậy thì tôi đi.⟧ → 你这么说的话，那我就走。 · ⟦Chị ấy thì ăn cơm rồi.⟧ → 她嘛，已经吃过饭了。 · ⟦Chị Lee nói thì rất chậm.⟧ → 李姐说话嘛，非常慢。 · ⟦Anh muốn đi chợ thì đi!⟧ → 你想去市场就去吧！ · ⟦Từ giờ thì anh sẽ gọi Loan là “em” nhé!⟧ → 从现在起我就叫阿鸾“em”（妹妹）了哦！
+练习题
+=zh
+文法解說
+⟦thì⟧：意為「如果……就……、至於……」，用於強調 ⟦thì⟧ 後面提出的內容。
+⟦Anh nói vậy thì tôi đi.⟧ → 你這麼說的話，那我就走。 · ⟦Chị ấy thì ăn cơm rồi.⟧ → 她嘛，已經吃過飯了。 · ⟦Chị Lee nói thì rất chậm.⟧ → 李姐說話嘛，非常慢。 · ⟦Anh muốn đi chợ thì đi!⟧ → 你想去市場就去吧！ · ⟦Từ giờ thì anh sẽ gọi Loan là “em” nhé!⟧ → 從現在起我就叫阿鸞「em」（妹妹）囉！
+練習題
+=en
+Grammar notes
+⟦thì⟧: "if ~, then ~; as for ~" – used to emphasize the content that follows ⟦thì⟧.
+⟦Anh nói vậy thì tôi đi.⟧ → If you put it that way, then I'll go. · ⟦Chị ấy thì ăn cơm rồi.⟧ → As for her, she has already eaten. · ⟦Chị Lee nói thì rất chậm.⟧ → Lee – when she speaks, she speaks very slowly. · ⟦Anh muốn đi chợ thì đi!⟧ → If you want to go to the market, then go! · ⟦Từ giờ thì anh sẽ gọi Loan là “em” nhé!⟧ → From now on I'll call you, Loan, "em" (younger sister), OK!
+Practice exercises
+=fr
+Notes de grammaire
+⟦thì⟧ : « si ~, alors ~ ; quant à ~ » – sert à mettre en relief ce qui suit ⟦thì⟧.
+⟦Anh nói vậy thì tôi đi.⟧ → Si tu le dis comme ça, alors j'y vais. · ⟦Chị ấy thì ăn cơm rồi.⟧ → Elle, elle a déjà mangé. · ⟦Chị Lee nói thì rất chậm.⟧ → Lee, quand elle parle, c'est très lentement. · ⟦Anh muốn đi chợ thì đi!⟧ → Si tu veux aller au marché, vas-y ! · ⟦Từ giờ thì anh sẽ gọi Loan là “em” nhé!⟧ → À partir de maintenant, je t'appellerai « em » (petite sœur), Loan, d'accord !
+Exercices
+=de
+Grammatikerläuterungen
+⟦thì⟧: „wenn ~, dann ~; was ~ betrifft“ – dient dazu, den Inhalt nach ⟦thì⟧ hervorzuheben.
+⟦Anh nói vậy thì tôi đi.⟧ → Wenn du das so sagst, dann gehe ich. · ⟦Chị ấy thì ăn cơm rồi.⟧ → Sie hat schon gegessen (was sie betrifft). · ⟦Chị Lee nói thì rất chậm.⟧ → Lee – wenn sie spricht, spricht sie sehr langsam. · ⟦Anh muốn đi chợ thì đi!⟧ → Wenn du auf den Markt willst, dann geh! · ⟦Từ giờ thì anh sẽ gọi Loan là “em” nhé!⟧ → Ab jetzt nenne ich dich, Loan, „em“ (jüngere Schwester), ja!
+Übungen
+=hu
+Nyelvtani magyarázat
+⟦thì⟧: „ha ~, akkor ~; ami ~t illeti” – a ⟦thì⟧ után következő tartalom kiemelésére szolgál.
+⟦Anh nói vậy thì tôi đi.⟧ → Ha így mondod, akkor megyek. · ⟦Chị ấy thì ăn cơm rồi.⟧ → Ő már evett. (ami őt illeti) · ⟦Chị Lee nói thì rất chậm.⟧ → Lee, ha beszél, nagyon lassan beszél. · ⟦Anh muốn đi chợ thì đi!⟧ → Ha a piacra akarsz menni, hát menj! · ⟦Từ giờ thì anh sẽ gọi Loan là “em” nhé!⟧ → Mostantól „em”-nek (húgomnak) foglak hívni, Loan, jó?
+Gyakorló feladatok
+=id
+Penjelasan tata bahasa
+⟦thì⟧: "kalau ~, maka ~; adapun ~" – digunakan untuk menekankan isi yang disebutkan setelah ⟦thì⟧.
+⟦Anh nói vậy thì tôi đi.⟧ → Kalau kamu bilang begitu, aku pergi. · ⟦Chị ấy thì ăn cơm rồi.⟧ → Kalau dia, sudah makan. · ⟦Chị Lee nói thì rất chậm.⟧ → Kak Lee kalau bicara sangat pelan. · ⟦Anh muốn đi chợ thì đi!⟧ → Kalau kamu mau ke pasar, pergilah! · ⟦Từ giờ thì anh sẽ gọi Loan là “em” nhé!⟧ → Mulai sekarang aku akan memanggil Loan "em" (adik), ya!
+Latihan soal
+=ja
+文法解説
+⟦thì⟧：「～なら、～すれば、～は」という意味で、⟦thì⟧ の後に示される内容を強調するために使われます。
+⟦Anh nói vậy thì tôi đi.⟧ → あなたがそう言うなら、私は行きます。 · ⟦Chị ấy thì ăn cơm rồi.⟧ → 彼女なら、もう食事しました。 · ⟦Chị Lee nói thì rất chậm.⟧ → リーさんは話すと、とてもゆっくりです。 · ⟦Anh muốn đi chợ thì đi!⟧ → 市場に行きたいなら行きなさい！ · ⟦Từ giờ thì anh sẽ gọi Loan là “em” nhé!⟧ → これからはロアンのことを「em」（妹）と呼ぶね！
+練習問題
+=pl
+Objaśnienia gramatyczne
+⟦thì⟧: „jeśli ~, to ~; co do ~” – służy do podkreślenia treści następującej po ⟦thì⟧.
+⟦Anh nói vậy thì tôi đi.⟧ → Skoro tak mówisz, to pójdę. · ⟦Chị ấy thì ăn cơm rồi.⟧ → Ona, to już jadła. · ⟦Chị Lee nói thì rất chậm.⟧ → Lee, jak mówi, to bardzo wolno. · ⟦Anh muốn đi chợ thì đi!⟧ → Jak chcesz iść na targ, to idź! · ⟦Từ giờ thì anh sẽ gọi Loan là “em” nhé!⟧ → Od teraz będę cię, Loan, nazywał „em” (młodsza siostra), dobrze!
+Ćwiczenia
+@@ pdf-grammar-921c05195be2b8d1#1
+~tko 1. 질문에 답하세요:
+~t 1. Odpovězte na otázky:|1. 回答问题：|1. 回答問題：|1. Answer the questions:|1. Répondez aux questions :|1. Beantworten Sie die Fragen:|1. Válaszoljon a kérdésekre:|1. Jawablah pertanyaan:|1. 質問に答えなさい：|1. Odpowiedz na pytania:
+=ko
+⟦a) Anh Park học khoa nào và chuyên ngành gì?⟧ — 박 씨는 어느 학부에서 무슨 전공을 공부하나요?
+⟦b) Trong lớp có bao nhiêu sinh viên nước ngoài?⟧ — 반에 외국인 학생이 몇 명 있나요?
+⟦c) Để làm quen với Loan, anh Park đã nói thế nào?⟧ — 로안과 알게 되기 위해 박 씨는 어떻게 말했나요?
+⟦d) Vì sao Loan lại muốn anh Park gọi mình là “em”?⟧ — 로안은 왜 박 씨가 자신을 ‘em’이라고 부르기를 원했나요?
+=cs
+⟦a) Anh Park học khoa nào và chuyên ngành gì?⟧ — Na jaké fakultě a jaký obor studuje Park?
+⟦b) Trong lớp có bao nhiêu sinh viên nước ngoài?⟧ — Kolik zahraničních studentů je ve třídě?
+⟦c) Để làm quen với Loan, anh Park đã nói thế nào?⟧ — Co řekl Park, aby se seznámil s Loan?
+⟦d) Vì sao Loan lại muốn anh Park gọi mình là “em”?⟧ — Proč Loan chtěla, aby jí Park říkal „em“?
+=zh_cn
+⟦a) Anh Park học khoa nào và chuyên ngành gì?⟧ — 朴先生在哪个系学习，专业是什么？
+⟦b) Trong lớp có bao nhiêu sinh viên nước ngoài?⟧ — 班里有多少外国学生？
+⟦c) Để làm quen với Loan, anh Park đã nói thế nào?⟧ — 为了认识阿鸾，朴先生是怎么说的？
+⟦d) Vì sao Loan lại muốn anh Park gọi mình là “em”?⟧ — 为什么阿鸾希望朴先生叫她“em”？
+=zh
+⟦a) Anh Park học khoa nào và chuyên ngành gì?⟧ — 朴先生在哪個系就讀，主修什麼？
+⟦b) Trong lớp có bao nhiêu sinh viên nước ngoài?⟧ — 班上有多少外國學生？
+⟦c) Để làm quen với Loan, anh Park đã nói thế nào?⟧ — 為了認識阿鸞，朴先生是怎麼說的？
+⟦d) Vì sao Loan lại muốn anh Park gọi mình là “em”?⟧ — 為什麼阿鸞希望朴先生叫她「em」？
+=en
+⟦a) Anh Park học khoa nào và chuyên ngành gì?⟧ — Which faculty is Park in, and what is his major?
+⟦b) Trong lớp có bao nhiêu sinh viên nước ngoài?⟧ — How many foreign students are there in the class?
+⟦c) Để làm quen với Loan, anh Park đã nói thế nào?⟧ — What did Park say to get to know Loan?
+⟦d) Vì sao Loan lại muốn anh Park gọi mình là “em”?⟧ — Why did Loan want Park to call her "em"?
+=fr
+⟦a) Anh Park học khoa nào và chuyên ngành gì?⟧ — Dans quelle faculté Park étudie-t-il et quelle est sa spécialité ?
+⟦b) Trong lớp có bao nhiêu sinh viên nước ngoài?⟧ — Combien d'étudiants étrangers y a-t-il dans la classe ?
+⟦c) Để làm quen với Loan, anh Park đã nói thế nào?⟧ — Qu'a dit Park pour faire la connaissance de Loan ?
+⟦d) Vì sao Loan lại muốn anh Park gọi mình là “em”?⟧ — Pourquoi Loan voulait-elle que Park l'appelle « em » ?
+=de
+⟦a) Anh Park học khoa nào và chuyên ngành gì?⟧ — An welcher Fakultät studiert Park und was ist sein Hauptfach?
+⟦b) Trong lớp có bao nhiêu sinh viên nước ngoài?⟧ — Wie viele ausländische Studenten sind in der Klasse?
+⟦c) Để làm quen với Loan, anh Park đã nói thế nào?⟧ — Was hat Park gesagt, um Loan kennenzulernen?
+⟦d) Vì sao Loan lại muốn anh Park gọi mình là “em”?⟧ — Warum wollte Loan, dass Park sie „em“ nennt?
+=hu
+⟦a) Anh Park học khoa nào và chuyên ngành gì?⟧ — Melyik karon tanul Park, és mi a szakja?
+⟦b) Trong lớp có bao nhiêu sinh viên nước ngoài?⟧ — Hány külföldi diák van az osztályban?
+⟦c) Để làm quen với Loan, anh Park đã nói thế nào?⟧ — Mit mondott Park, hogy megismerkedjen Loannal?
+⟦d) Vì sao Loan lại muốn anh Park gọi mình là “em”?⟧ — Miért akarta Loan, hogy Park „em”-nek szólítsa?
+=id
+⟦a) Anh Park học khoa nào và chuyên ngành gì?⟧ — Park kuliah di fakultas apa dan jurusannya apa?
+⟦b) Trong lớp có bao nhiêu sinh viên nước ngoài?⟧ — Ada berapa mahasiswa asing di kelas?
+⟦c) Để làm quen với Loan, anh Park đã nói thế nào?⟧ — Apa yang dikatakan Park untuk berkenalan dengan Loan?
+⟦d) Vì sao Loan lại muốn anh Park gọi mình là “em”?⟧ — Mengapa Loan ingin Park memanggilnya "em"?
+=ja
+⟦a) Anh Park học khoa nào và chuyên ngành gì?⟧ — パクさんはどの学部で、何を専攻していますか。
+⟦b) Trong lớp có bao nhiêu sinh viên nước ngoài?⟧ — クラスに留学生は何人いますか。
+⟦c) Để làm quen với Loan, anh Park đã nói thế nào?⟧ — ロアンと知り合うために、パクさんは何と言いましたか。
+⟦d) Vì sao Loan lại muốn anh Park gọi mình là “em”?⟧ — ロアンはなぜパクさんに自分を「em」と呼んでほしかったのですか。
+=pl
+⟦a) Anh Park học khoa nào và chuyên ngành gì?⟧ — Na jakim wydziale i jaki kierunek studiuje Park?
+⟦b) Trong lớp có bao nhiêu sinh viên nước ngoài?⟧ — Ilu zagranicznych studentów jest w klasie?
+⟦c) Để làm quen với Loan, anh Park đã nói thế nào?⟧ — Co powiedział Park, żeby poznać Loan?
+⟦d) Vì sao Loan lại muốn anh Park gọi mình là “em”?⟧ — Dlaczego Loan chciała, żeby Park nazywał ją „em”?
+@@ pdf-grammar-3fed7ecf06129300#0
+=cs
+Gramatický výklad
+⟦tự⟧ + sloveso: vyjadřuje, že činnost uvedenou slovesem vykonává přímo sám podmět („sám, osobně“).
+⟦Tôi tự đánh máy bài viết này.⟧ → Tento text píšu na stroji sám. · ⟦Chị ấy tự nấu cơm.⟧ → Vaří si sama. · ⟦Anh Park tự học tiếng Việt.⟧ → Park se učí vietnamsky sám. · ⟦Sinh viên tự giới thiệu về mình.⟧ → Studenti se sami představují. · ⟦Việc dọn dẹp nhà cửa đều do tôi tự làm.⟧ → Úklid domu dělám celý sám. · ⟦Ngày nào chị ấy cũng tự lái ô tô đến trường.⟧ → Každý den jezdí do školy sama autem. · ⟦Ông ấy tự chữa máy tính⟧ → Dědeček si sám opravuje počítač. · ⟦Anh ấy tự đi chợ mua đồ ăn.⟧ → Sám chodí na trh nakupovat jídlo.
+⟦làm sao mà⟧: „jak bych mohl ~“ – vyjadřuje, že dříve uvedená okolnost je příčinou, proč je následující věc těžko proveditelná.
+⟦Chị nói nhanh quá làm sao mà tôi nghe hiểu được.⟧ → Mluvíš tak rychle, jak ti mám rozumět? („rozumět“ je těžké, protože „mluví příliš rychle“) · ⟦Mưa to thế này thì làm sao mà về nhà được.⟧ → V takovém lijáku jak se dostanu domů? („jít domů“ je těžké kvůli „silnému dešti“) · ⟦Công việc nhiều làm sao mà đi chơi được.⟧ → Je tolik práce, jak bych mohl jít ven? („jít ven“ je těžké, protože „je hodně práce“) · ⟦Đường phố đông nghịt người làm sao mà đi nhanh được.⟧ → Ulice jsou narvané lidmi, jak můžeme jet rychle? („jet rychle“ je těžké, protože „ulice jsou plné lidí“) · ⟦Bài tập này khó quá làm sao mà tôi làm được.⟧ → Tohle cvičení je moc těžké, jak ho mám udělat? („udělat to“ je těžké, protože „úkol je moc těžký“)
+=zh_cn
+语法解说
+⟦tự⟧ + 动词：表示动词所说的行为是由主语亲自完成的（“自己、亲自”）。
+⟦Tôi tự đánh máy bài viết này.⟧ → 这篇稿子是我自己打字的。 · ⟦Chị ấy tự nấu cơm.⟧ → 她自己做饭。 · ⟦Anh Park tự học tiếng Việt.⟧ → 朴先生自学越南语。 · ⟦Sinh viên tự giới thiệu về mình.⟧ → 大学生们作自我介绍。 · ⟦Việc dọn dẹp nhà cửa đều do tôi tự làm.⟧ → 打扫房子的事都是我自己做。 · ⟦Ngày nào chị ấy cũng tự lái ô tô đến trường.⟧ → 她每天都自己开车来学校。 · ⟦Ông ấy tự chữa máy tính⟧ → 爷爷自己修电脑。 · ⟦Anh ấy tự đi chợ mua đồ ăn.⟧ → 他亲自去市场买吃的。
+⟦làm sao mà⟧：意为“怎么能……呢”，表示前面提到的情况是后面那件难以做到的事的原因。
+⟦Chị nói nhanh quá làm sao mà tôi nghe hiểu được.⟧ → 你说得太快了，我怎么听得懂呢？（因为“说得太快”，“听懂”很难做到） · ⟦Mưa to thế này thì làm sao mà về nhà được.⟧ → 雨下得这么大，怎么回得了家？（因为“下大雨”，“回家”很难做到） · ⟦Công việc nhiều làm sao mà đi chơi được.⟧ → 工作这么多，怎么能去玩呢？（因为“工作多”，“去玩”很难做到） · ⟦Đường phố đông nghịt người làm sao mà đi nhanh được.⟧ → 街上挤满了人，怎么走得快呢？（因为“街上人挤”，“走快”很难做到） · ⟦Bài tập này khó quá làm sao mà tôi làm được.⟧ → 这道题太难了，我怎么做得出来？（因为“题太难”，“做出来”很难做到）
+=zh
+文法解說
+⟦tự⟧ + 動詞：表示動詞所說的行為是由主語親自完成的（「自己、親自」）。
+⟦Tôi tự đánh máy bài viết này.⟧ → 這篇稿子是我自己打字的。 · ⟦Chị ấy tự nấu cơm.⟧ → 她自己做飯。 · ⟦Anh Park tự học tiếng Việt.⟧ → 朴先生自學越南語。 · ⟦Sinh viên tự giới thiệu về mình.⟧ → 大學生們做自我介紹。 · ⟦Việc dọn dẹp nhà cửa đều do tôi tự làm.⟧ → 打掃房子的事都是我自己做。 · ⟦Ngày nào chị ấy cũng tự lái ô tô đến trường.⟧ → 她每天都自己開車來學校。 · ⟦Ông ấy tự chữa máy tính⟧ → 爺爺自己修電腦。 · ⟦Anh ấy tự đi chợ mua đồ ăn.⟧ → 他親自去市場買吃的。
+⟦làm sao mà⟧：意為「怎麼能……呢」，表示前面提到的情況是後面那件難以做到的事的原因。
+⟦Chị nói nhanh quá làm sao mà tôi nghe hiểu được.⟧ → 你說得太快了，我怎麼聽得懂呢？（因為「說得太快」，「聽懂」很難做到） · ⟦Mưa to thế này thì làm sao mà về nhà được.⟧ → 雨下得這麼大，怎麼回得了家？（因為「下大雨」，「回家」很難做到） · ⟦Công việc nhiều làm sao mà đi chơi được.⟧ → 工作這麼多，怎麼能去玩呢？（因為「工作多」，「去玩」很難做到） · ⟦Đường phố đông nghịt người làm sao mà đi nhanh được.⟧ → 街上擠滿了人，怎麼走得快呢？（因為「街上人擠」，「走快」很難做到） · ⟦Bài tập này khó quá làm sao mà tôi làm được.⟧ → 這道題太難了，我怎麼做得出來？（因為「題太難」，「做出來」很難做到）
+=en
+Grammar notes
+⟦tự⟧ + verb: indicates that the action of the verb is carried out by the subject themselves ("by oneself, personally").
+⟦Tôi tự đánh máy bài viết này.⟧ → I type this manuscript myself. · ⟦Chị ấy tự nấu cơm.⟧ → She cooks for herself. · ⟦Anh Park tự học tiếng Việt.⟧ → Park teaches himself Vietnamese. · ⟦Sinh viên tự giới thiệu về mình.⟧ → The students introduce themselves. · ⟦Việc dọn dẹp nhà cửa đều do tôi tự làm.⟧ → I do all the housecleaning myself. · ⟦Ngày nào chị ấy cũng tự lái ô tô đến trường.⟧ → Every day she drives herself to school. · ⟦Ông ấy tự chữa máy tính⟧ → Grandpa fixes the computer himself. · ⟦Anh ấy tự đi chợ mua đồ ăn.⟧ → He goes to the market to buy food himself.
+⟦làm sao mà⟧: "how could one ~" – shows that the situation mentioned first is the reason why what follows is hard to do.
+⟦Chị nói nhanh quá làm sao mà tôi nghe hiểu được.⟧ → You speak so fast – how can I understand? ("understanding" is hard because "she speaks too fast") · ⟦Mưa to thế này thì làm sao mà về nhà được.⟧ → With rain this heavy, how can we get home? ("going home" is hard because of "the heavy rain") · ⟦Công việc nhiều làm sao mà đi chơi được.⟧ → There's so much work – how could I go out? ("going out" is hard because "there's a lot of work") · ⟦Đường phố đông nghịt người làm sao mà đi nhanh được.⟧ → The streets are packed with people – how can we go fast? ("going fast" is hard because "the streets are packed") · ⟦Bài tập này khó quá làm sao mà tôi làm được.⟧ → This exercise is too hard – how can I do it? ("doing it" is hard because "the exercise is too hard")
+=fr
+Notes de grammaire
+⟦tự⟧ + verbe : indique que l'action exprimée par le verbe est accomplie par le sujet lui-même (« soi-même, en personne »).
+⟦Tôi tự đánh máy bài viết này.⟧ → Je tape ce texte moi-même. · ⟦Chị ấy tự nấu cơm.⟧ → Elle cuisine elle-même. · ⟦Anh Park tự học tiếng Việt.⟧ → Park apprend le vietnamien tout seul. · ⟦Sinh viên tự giới thiệu về mình.⟧ → Les étudiants se présentent eux-mêmes. · ⟦Việc dọn dẹp nhà cửa đều do tôi tự làm.⟧ → Le ménage de la maison, je le fais entièrement moi-même. · ⟦Ngày nào chị ấy cũng tự lái ô tô đến trường.⟧ → Chaque jour, elle conduit elle-même jusqu'à l'école. · ⟦Ông ấy tự chữa máy tính⟧ → Grand-père répare lui-même l'ordinateur. · ⟦Anh ấy tự đi chợ mua đồ ăn.⟧ → Il va lui-même au marché acheter à manger.
+⟦làm sao mà⟧ : « comment pourrait-on ~ » – indique que la situation évoquée d'abord est la cause qui rend difficile ce qui suit.
+⟦Chị nói nhanh quá làm sao mà tôi nghe hiểu được.⟧ → Tu parles si vite, comment veux-tu que je comprenne ? (« comprendre » est difficile car « elle parle trop vite ») · ⟦Mưa to thế này thì làm sao mà về nhà được.⟧ → Avec une pluie pareille, comment rentrer à la maison ? (« rentrer » est difficile à cause de « la forte pluie ») · ⟦Công việc nhiều làm sao mà đi chơi được.⟧ → Avec tout ce travail, comment sortir ? (« sortir » est difficile car « il y a beaucoup de travail ») · ⟦Đường phố đông nghịt người làm sao mà đi nhanh được.⟧ → Les rues sont bondées, comment avancer vite ? (« aller vite » est difficile car « les rues sont bondées ») · ⟦Bài tập này khó quá làm sao mà tôi làm được.⟧ → Cet exercice est trop dur, comment pourrais-je le faire ? (« le faire » est difficile car « l'exercice est trop dur »)
+=de
+Grammatikerläuterungen
+⟦tự⟧ + Verb: zeigt an, dass die Handlung des Verbs vom Subjekt selbst ausgeführt wird („selbst, persönlich“).
+⟦Tôi tự đánh máy bài viết này.⟧ → Diesen Text tippe ich selbst. · ⟦Chị ấy tự nấu cơm.⟧ → Sie kocht selbst. · ⟦Anh Park tự học tiếng Việt.⟧ → Park lernt Vietnamesisch im Selbststudium. · ⟦Sinh viên tự giới thiệu về mình.⟧ → Die Studenten stellen sich selbst vor. · ⟦Việc dọn dẹp nhà cửa đều do tôi tự làm.⟧ → Den Hausputz mache ich komplett selbst. · ⟦Ngày nào chị ấy cũng tự lái ô tô đến trường.⟧ → Jeden Tag fährt sie selbst mit dem Auto zur Schule. · ⟦Ông ấy tự chữa máy tính⟧ → Opa repariert den Computer selbst. · ⟦Anh ấy tự đi chợ mua đồ ăn.⟧ → Er geht selbst auf den Markt, um Essen zu kaufen.
+⟦làm sao mà⟧: „wie soll man ~“ – zeigt, dass der zuerst genannte Umstand der Grund dafür ist, dass das Folgende schwer umsetzbar ist.
+⟦Chị nói nhanh quá làm sao mà tôi nghe hiểu được.⟧ → Du sprichst so schnell, wie soll ich das verstehen? („verstehen“ ist schwer, weil „sie zu schnell spricht“) · ⟦Mưa to thế này thì làm sao mà về nhà được.⟧ → Bei so starkem Regen, wie sollen wir nach Hause kommen? („heimgehen“ ist schwer wegen „des starken Regens“) · ⟦Công việc nhiều làm sao mà đi chơi được.⟧ → So viel Arbeit, wie soll ich da ausgehen? („ausgehen“ ist schwer, weil „es viel Arbeit gibt“) · ⟦Đường phố đông nghịt người làm sao mà đi nhanh được.⟧ → Die Straßen sind voller Menschen, wie soll man da schnell vorankommen? („schnell vorankommen“ ist schwer, weil „die Straßen voll sind“) · ⟦Bài tập này khó quá làm sao mà tôi làm được.⟧ → Diese Aufgabe ist zu schwer, wie soll ich sie lösen? („lösen“ ist schwer, weil „die Aufgabe zu schwer ist“)
+=hu
+Nyelvtani magyarázat
+⟦tự⟧ + ige: azt jelzi, hogy az igében megnevezett cselekvést maga az alany végzi („saját maga, személyesen”).
+⟦Tôi tự đánh máy bài viết này.⟧ → Ezt a kéziratot magam gépelem. · ⟦Chị ấy tự nấu cơm.⟧ → Ő maga főz. · ⟦Anh Park tự học tiếng Việt.⟧ → Park egyedül tanul vietnámiul. · ⟦Sinh viên tự giới thiệu về mình.⟧ → A diákok bemutatkoznak. · ⟦Việc dọn dẹp nhà cửa đều do tôi tự làm.⟧ → A házat mindig magam takarítom. · ⟦Ngày nào chị ấy cũng tự lái ô tô đến trường.⟧ → Minden nap maga vezet autóval az iskolába. · ⟦Ông ấy tự chữa máy tính⟧ → Nagyapa maga javítja meg a számítógépet. · ⟦Anh ấy tự đi chợ mua đồ ăn.⟧ → Ő maga megy a piacra ennivalót venni.
+⟦làm sao mà⟧: „hogyan tudnék ~” – azt fejezi ki, hogy az előbb említett körülmény az oka annak, hogy a következő dolog nehezen megvalósítható.
+⟦Chị nói nhanh quá làm sao mà tôi nghe hiểu được.⟧ → Olyan gyorsan beszélsz, hogy érthetném meg? (a „megértés” nehéz, mert „túl gyorsan beszél”) · ⟦Mưa to thế này thì làm sao mà về nhà được.⟧ → Ilyen nagy esőben hogy jutunk haza? (a „hazajutás” nehéz a „nagy eső” miatt) · ⟦Công việc nhiều làm sao mà đi chơi được.⟧ → Ennyi munka mellett hogy mehetnék szórakozni? (a „szórakozás” nehéz, mert „sok a munka”) · ⟦Đường phố đông nghịt người làm sao mà đi nhanh được.⟧ → Az utcák tömve vannak emberekkel, hogy haladhatnánk gyorsan? (a „gyors haladás” nehéz, mert „tömve vannak az utcák”) · ⟦Bài tập này khó quá làm sao mà tôi làm được.⟧ → Ez a feladat túl nehéz, hogy tudnám megoldani? (a „megoldás” nehéz, mert „túl nehéz a feladat”)
+=id
+Penjelasan tata bahasa
+⟦tự⟧ + verba: menandakan bahwa kegiatan yang disebut dalam verba dilakukan langsung oleh subjek sendiri ("sendiri, secara langsung").
+⟦Tôi tự đánh máy bài viết này.⟧ → Saya sendiri yang mengetik naskah ini. · ⟦Chị ấy tự nấu cơm.⟧ → Dia memasak sendiri. · ⟦Anh Park tự học tiếng Việt.⟧ → Park belajar bahasa Vietnam sendiri. · ⟦Sinh viên tự giới thiệu về mình.⟧ → Mahasiswa memperkenalkan diri sendiri. · ⟦Việc dọn dẹp nhà cửa đều do tôi tự làm.⟧ → Pekerjaan membersihkan rumah semuanya saya lakukan sendiri. · ⟦Ngày nào chị ấy cũng tự lái ô tô đến trường.⟧ → Setiap hari dia menyetir mobil sendiri ke sekolah. · ⟦Ông ấy tự chữa máy tính⟧ → Kakek memperbaiki komputer sendiri. · ⟦Anh ấy tự đi chợ mua đồ ăn.⟧ → Dia sendiri pergi ke pasar membeli makanan.
+⟦làm sao mà⟧: "bagaimana bisa ~" – menunjukkan bahwa hal yang disebut sebelumnya menjadi penyebab sulitnya melakukan hal yang disebut sesudahnya.
+⟦Chị nói nhanh quá làm sao mà tôi nghe hiểu được.⟧ → Kamu bicara terlalu cepat, bagaimana aku bisa mengerti? ("mengerti" sulit karena "bicaranya terlalu cepat") · ⟦Mưa to thế này thì làm sao mà về nhà được.⟧ → Hujan sederas ini, bagaimana bisa pulang? ("pulang" sulit karena "hujan deras") · ⟦Công việc nhiều làm sao mà đi chơi được.⟧ → Pekerjaan banyak, bagaimana bisa jalan-jalan? ("jalan-jalan" sulit karena "pekerjaan banyak") · ⟦Đường phố đông nghịt người làm sao mà đi nhanh được.⟧ → Jalanan penuh sesak orang, bagaimana bisa cepat? ("berjalan cepat" sulit karena "jalanan penuh sesak") · ⟦Bài tập này khó quá làm sao mà tôi làm được.⟧ → Soal ini terlalu sulit, bagaimana aku bisa mengerjakannya? ("mengerjakan" sulit karena "soalnya terlalu sulit")
+=ja
+文法解説
+⟦tự⟧ + 動詞：動詞で述べられた行為が主語自身によって行われたことを示すために使われます（「自分で、直接」）。
+⟦Tôi tự đánh máy bài viết này.⟧ → 私はこの原稿を自分でタイプする。 · ⟦Chị ấy tự nấu cơm.⟧ → 彼女は自分で食事を作る。 · ⟦Anh Park tự học tiếng Việt.⟧ → パクさんはベトナム語を独学している。 · ⟦Sinh viên tự giới thiệu về mình.⟧ → 大学生が自己紹介をする。 · ⟦Việc dọn dẹp nhà cửa đều do tôi tự làm.⟧ → 家の片付けはすべて私が自分でする。 · ⟦Ngày nào chị ấy cũng tự lái ô tô đến trường.⟧ → 彼女は毎日自分で車を運転して学校に来る。 · ⟦Ông ấy tự chữa máy tính⟧ → おじいさんは自分でパソコンを直す。 · ⟦Anh ấy tự đi chợ mua đồ ăn.⟧ → 彼は自分で市場に行って食べ物を買う。
+⟦làm sao mà⟧：「どうして～できようか」という意味で、先に述べた内容が、後に述べる実行困難なことの原因であることを表すために使われます。
+⟦Chị nói nhanh quá làm sao mà tôi nghe hiểu được.⟧ → あなたは話すのが速すぎて、どうして聞き取れるでしょうか。（「話が速すぎる」ために「聞き取る」ことが難しい） · ⟦Mưa to thế này thì làm sao mà về nhà được.⟧ → こんな大雨では、どうして家に帰れるだろう。（「大雨」のために「帰宅」が難しい） · ⟦Công việc nhiều làm sao mà đi chơi được.⟧ → 仕事が多くて、どうして遊びに行けるだろう。（「仕事が多い」ために「遊びに行く」ことが難しい） · ⟦Đường phố đông nghịt người làm sao mà đi nhanh được.⟧ → 通りが人でぎっしりなのに、どうして速く行けるだろう。（「通りが混雑している」ために「速く行く」ことが難しい） · ⟦Bài tập này khó quá làm sao mà tôi làm được.⟧ → この課題は難しすぎて、どうしてできるだろう。（「課題が難しすぎる」ために「やる」ことが難しい）
+=pl
+Objaśnienia gramatyczne
+⟦tự⟧ + czasownik: wskazuje, że czynność wyrażoną czasownikiem wykonuje sam podmiot („sam, osobiście”).
+⟦Tôi tự đánh máy bài viết này.⟧ → Ten tekst przepisuję na maszynie sam. · ⟦Chị ấy tự nấu cơm.⟧ → Ona sama gotuje. · ⟦Anh Park tự học tiếng Việt.⟧ → Park uczy się wietnamskiego sam. · ⟦Sinh viên tự giới thiệu về mình.⟧ → Studenci sami się przedstawiają. · ⟦Việc dọn dẹp nhà cửa đều do tôi tự làm.⟧ → Sprzątanie domu robię w całości sam. · ⟦Ngày nào chị ấy cũng tự lái ô tô đến trường.⟧ → Codziennie sama jeździ samochodem do szkoły. · ⟦Ông ấy tự chữa máy tính⟧ → Dziadek sam naprawia komputer. · ⟦Anh ấy tự đi chợ mua đồ ăn.⟧ → On sam chodzi na targ kupować jedzenie.
+⟦làm sao mà⟧: „jak można ~” – wskazuje, że wcześniej wspomniana okoliczność jest przyczyną, dla której następna rzecz jest trudna do wykonania.
+⟦Chị nói nhanh quá làm sao mà tôi nghe hiểu được.⟧ → Mówisz tak szybko, jak mam cię zrozumieć? („zrozumieć” jest trudno, bo „mówi za szybko”) · ⟦Mưa to thế này thì làm sao mà về nhà được.⟧ → Przy takim deszczu jak wrócić do domu? („powrót” jest trudny z powodu „ulewy”) · ⟦Công việc nhiều làm sao mà đi chơi được.⟧ → Tyle pracy, jak tu gdzieś wyjść? („wyjście” jest trudne, bo „jest dużo pracy”) · ⟦Đường phố đông nghịt người làm sao mà đi nhanh được.⟧ → Ulice są zatłoczone, jak jechać szybko? („szybka jazda” jest trudna, bo „ulice są pełne ludzi”) · ⟦Bài tập này khó quá làm sao mà tôi làm được.⟧ → To zadanie jest za trudne, jak mam je zrobić? („zrobienie” jest trudne, bo „zadanie jest za trudne”)

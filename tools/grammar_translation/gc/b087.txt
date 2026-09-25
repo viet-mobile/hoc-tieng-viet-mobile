@@ -1,0 +1,122 @@
+@@ pdf-grammar-d86cd61575fadf02#0
+=cs
+Gramatický výklad
+⟦cảm thấy⟧: „cítit, mít pocit“ – vyjadřuje vlastní pocit či dojem.
+⟦Hiện giờ Hà Nội thời tiết hanh khô, mình cảm thấy hơi khó chịu.⟧ → V Hanoji je teď suché počasí, cítím se trochu nepříjemně. · ⟦Chúng tôi cảm thấy họ sống rất thân thiện.⟧ → Máme pocit, že jsou velmi přátelští. · ⟦Mọi người đều cảm thấy lo lắng.⟧ → Všichni cítí úzkost. · ⟦Tôi cảm thấy đã có chuyện không hay xảy ra.⟧ → Mám pocit, že se stalo něco zlého. · ⟦Anh có cảm thấy hôm nay chị ấy vui hơn mọi ngày hay không?⟧ → Nemáš pocit, že je dnes veselejší než jindy?
+⟦dám⟧: ve tvaru ⟦dám⟧ + sloveso znamená „odvážit se ~“ – vyjadřuje, že se někdo odvážně pustí do obtížné či těžké věci.
+⟦Bận thế nhưng mình đã dám đi ra ngoài chơi một mình rồi nhé.⟧ → I když jsem měl tolik práce, odvážil jsem se jít se sám pobavit ven. · ⟦Tôi đã dám vào rừng một mình.⟧ → Odvážil jsem se jít do lesa sám. · ⟦Chị ấy trông nhút nhát thế mà dám bắt rắn đấy.⟧ → Vypadá tak bojácně, a přitom se odvážila chytit hada. · ⟦Chị ấy mấy học bơi mà hôm qua đã dám ra sông tập một mình.⟧ → Teprve se učí plavat, a včera se už odvážila jít trénovat do řeky sama. · ⟦Anh ấy khȏng dám gặp mặt tȏi⟧ → Neodváží se mi podívat do očí.
+=zh_cn
+语法解说
+⟦cảm thấy⟧：意为“感觉、觉得”，用于表达自己的感觉或感想。
+⟦Hiện giờ Hà Nội thời tiết hanh khô, mình cảm thấy hơi khó chịu.⟧ → 现在河内天气干燥，我觉得有点难受。 · ⟦Chúng tôi cảm thấy họ sống rất thân thiện.⟧ → 我们觉得他们为人很友善。 · ⟦Mọi người đều cảm thấy lo lắng.⟧ → 大家都感到担心。 · ⟦Tôi cảm thấy đã có chuyện không hay xảy ra.⟧ → 我感觉发生了不好的事。 · ⟦Anh có cảm thấy hôm nay chị ấy vui hơn mọi ngày hay không?⟧ → 你有没有觉得她今天比平时开心？
+⟦dám⟧：以 ⟦dám⟧ + 动词 的形式，表示“敢于……”，用于表达勇敢地去做某件困难、艰苦的事。
+⟦Bận thế nhưng mình đã dám đi ra ngoài chơi một mình rồi nhé.⟧ → 虽然那么忙，我还是敢一个人出去玩了呢。 · ⟦Tôi đã dám vào rừng một mình.⟧ → 我敢一个人进树林。 · ⟦Chị ấy trông nhút nhát thế mà dám bắt rắn đấy.⟧ → 她看起来那么胆小，却敢抓蛇呢。 · ⟦Chị ấy mấy học bơi mà hôm qua đã dám ra sông tập một mình.⟧ → 她才刚学游泳，昨天就敢一个人去河里练了。 · ⟦Anh ấy khȏng dám gặp mặt tȏi⟧ → 他不敢见我。
+=zh
+文法解說
+⟦cảm thấy⟧：意為「感覺、覺得」，用於表達自己的感覺或感想。
+⟦Hiện giờ Hà Nội thời tiết hanh khô, mình cảm thấy hơi khó chịu.⟧ → 現在河內天氣乾燥，我覺得有點不舒服。 · ⟦Chúng tôi cảm thấy họ sống rất thân thiện.⟧ → 我們覺得他們為人很友善。 · ⟦Mọi người đều cảm thấy lo lắng.⟧ → 大家都感到擔心。 · ⟦Tôi cảm thấy đã có chuyện không hay xảy ra.⟧ → 我感覺發生了不好的事。 · ⟦Anh có cảm thấy hôm nay chị ấy vui hơn mọi ngày hay không?⟧ → 你有沒有覺得她今天比平常開心？
+⟦dám⟧：以 ⟦dám⟧ + 動詞 的形式，表示「敢於……」，用於表達勇敢地去做某件困難、艱苦的事。
+⟦Bận thế nhưng mình đã dám đi ra ngoài chơi một mình rồi nhé.⟧ → 雖然那麼忙，我還是敢一個人出去玩了呢。 · ⟦Tôi đã dám vào rừng một mình.⟧ → 我敢一個人進森林。 · ⟦Chị ấy trông nhút nhát thế mà dám bắt rắn đấy.⟧ → 她看起來那麼膽小，卻敢抓蛇呢。 · ⟦Chị ấy mấy học bơi mà hôm qua đã dám ra sông tập một mình.⟧ → 她才剛學游泳，昨天就敢一個人去河裡練了。 · ⟦Anh ấy khȏng dám gặp mặt tȏi⟧ → 他不敢見我。
+=en
+Grammar notes
+⟦cảm thấy⟧: "to feel" – used to express one's own feelings or impressions.
+⟦Hiện giờ Hà Nội thời tiết hanh khô, mình cảm thấy hơi khó chịu.⟧ → The weather in Hanoi is dry right now, and I feel a bit uncomfortable. · ⟦Chúng tôi cảm thấy họ sống rất thân thiện.⟧ → We feel that they are very friendly. · ⟦Mọi người đều cảm thấy lo lắng.⟧ → Everyone feels worried. · ⟦Tôi cảm thấy đã có chuyện không hay xảy ra.⟧ → I have a feeling something bad has happened. · ⟦Anh có cảm thấy hôm nay chị ấy vui hơn mọi ngày hay không?⟧ → Do you feel she's happier today than usual?
+⟦dám⟧: in the form ⟦dám⟧ + verb, means "to dare to ~" – used when someone bravely takes on something difficult or hard.
+⟦Bận thế nhưng mình đã dám đi ra ngoài chơi một mình rồi nhé.⟧ → Busy as I was, I dared to go out and have fun on my own. · ⟦Tôi đã dám vào rừng một mình.⟧ → I dared to go into the forest alone. · ⟦Chị ấy trông nhút nhát thế mà dám bắt rắn đấy.⟧ → She looks so timid, yet she dared to catch a snake. · ⟦Chị ấy mấy học bơi mà hôm qua đã dám ra sông tập một mình.⟧ → She's only just learned to swim, but yesterday she dared to practise in the river by herself. · ⟦Anh ấy khȏng dám gặp mặt tȏi⟧ → He doesn't dare to face me.
+=fr
+Notes de grammaire
+⟦cảm thấy⟧ : « ressentir, avoir l'impression » – sert à exprimer ses sensations ou impressions.
+⟦Hiện giờ Hà Nội thời tiết hanh khô, mình cảm thấy hơi khó chịu.⟧ → En ce moment il fait sec à Hanoï, je me sens un peu mal à l'aise. · ⟦Chúng tôi cảm thấy họ sống rất thân thiện.⟧ → Nous trouvons qu'ils sont très aimables. · ⟦Mọi người đều cảm thấy lo lắng.⟧ → Tout le monde se sent inquiet. · ⟦Tôi cảm thấy đã có chuyện không hay xảy ra.⟧ → J'ai l'impression qu'il s'est passé quelque chose de fâcheux. · ⟦Anh có cảm thấy hôm nay chị ấy vui hơn mọi ngày hay không?⟧ → Tu ne trouves pas qu'elle est plus gaie aujourd'hui que d'habitude ?
+⟦dám⟧ : sous la forme ⟦dám⟧ + verbe, signifie « oser ~ » – exprime qu'on entreprend courageusement une chose difficile ou pénible.
+⟦Bận thế nhưng mình đã dám đi ra ngoài chơi một mình rồi nhé.⟧ → Malgré tout ce travail, j'ai osé sortir m'amuser tout seul. · ⟦Tôi đã dám vào rừng một mình.⟧ → J'ai osé entrer seul dans la forêt. · ⟦Chị ấy trông nhút nhát thế mà dám bắt rắn đấy.⟧ → Elle a l'air si timide, et pourtant elle a osé attraper un serpent. · ⟦Chị ấy mấy học bơi mà hôm qua đã dám ra sông tập một mình.⟧ → Elle vient à peine d'apprendre à nager et hier elle a osé aller s'entraîner seule dans la rivière. · ⟦Anh ấy khȏng dám gặp mặt tȏi⟧ → Il n'ose pas me regarder en face.
+=de
+Grammatikerläuterungen
+⟦cảm thấy⟧: „fühlen, empfinden“ – drückt eigene Gefühle oder Eindrücke aus.
+⟦Hiện giờ Hà Nội thời tiết hanh khô, mình cảm thấy hơi khó chịu.⟧ → In Hanoi ist es gerade trocken, ich fühle mich etwas unwohl. · ⟦Chúng tôi cảm thấy họ sống rất thân thiện.⟧ → Wir empfinden sie als sehr freundlich. · ⟦Mọi người đều cảm thấy lo lắng.⟧ → Alle sind besorgt. · ⟦Tôi cảm thấy đã có chuyện không hay xảy ra.⟧ → Ich habe das Gefühl, dass etwas Schlimmes passiert ist. · ⟦Anh có cảm thấy hôm nay chị ấy vui hơn mọi ngày hay không?⟧ → Findest du nicht, dass sie heute fröhlicher ist als sonst?
+⟦dám⟧: in der Form ⟦dám⟧ + Verb bedeutet es „wagen, sich trauen ~“ – drückt aus, dass jemand mutig eine schwierige oder harte Sache angeht.
+⟦Bận thế nhưng mình đã dám đi ra ngoài chơi một mình rồi nhé.⟧ → Obwohl ich so beschäftigt war, habe ich mich getraut, allein auszugehen. · ⟦Tôi đã dám vào rừng một mình.⟧ → Ich habe mich allein in den Wald gewagt. · ⟦Chị ấy trông nhút nhát thế mà dám bắt rắn đấy.⟧ → Sie wirkt so schüchtern und hat sich doch getraut, eine Schlange zu fangen. · ⟦Chị ấy mấy học bơi mà hôm qua đã dám ra sông tập một mình.⟧ → Sie lernt gerade erst schwimmen und hat sich gestern schon getraut, allein im Fluss zu üben. · ⟦Anh ấy khȏng dám gặp mặt tȏi⟧ → Er traut sich nicht, mir unter die Augen zu treten.
+=hu
+Nyelvtani magyarázat
+⟦cảm thấy⟧: „érezni” – saját érzés vagy benyomás kifejezésére szolgál.
+⟦Hiện giờ Hà Nội thời tiết hanh khô, mình cảm thấy hơi khó chịu.⟧ → Hanoiban most száraz az idő, kicsit kellemetlenül érzem magam. · ⟦Chúng tôi cảm thấy họ sống rất thân thiện.⟧ → Úgy érezzük, nagyon barátságosak. · ⟦Mọi người đều cảm thấy lo lắng.⟧ → Mindenki aggódik. · ⟦Tôi cảm thấy đã có chuyện không hay xảy ra.⟧ → Úgy érzem, valami rossz történt. · ⟦Anh có cảm thấy hôm nay chị ấy vui hơn mọi ngày hay không?⟧ → Nem érzed úgy, hogy ma vidámabb, mint máskor?
+⟦dám⟧: ⟦dám⟧ + ige alakban jelentése „merni, merészelni” – azt fejezi ki, hogy valaki bátran nekivág egy nehéz feladatnak.
+⟦Bận thế nhưng mình đã dám đi ra ngoài chơi một mình rồi nhé.⟧ → Bár nagyon elfoglalt voltam, mertem egyedül elmenni szórakozni. · ⟦Tôi đã dám vào rừng một mình.⟧ → Mertem egyedül bemenni az erdőbe. · ⟦Chị ấy trông nhút nhát thế mà dám bắt rắn đấy.⟧ → Olyan félénknek látszik, mégis mert kígyót fogni. · ⟦Chị ấy mấy học bơi mà hôm qua đã dám ra sông tập một mình.⟧ → Még csak most tanul úszni, de tegnap már mert egyedül gyakorolni a folyóban. · ⟦Anh ấy khȏng dám gặp mặt tȏi⟧ → Nem mer a szemem elé kerülni.
+=id
+Penjelasan tata bahasa
+⟦cảm thấy⟧: "merasa" – ungkapan untuk menyatakan perasaan atau kesan sendiri.
+⟦Hiện giờ Hà Nội thời tiết hanh khô, mình cảm thấy hơi khó chịu.⟧ → Sekarang cuaca Hanoi kering, aku merasa agak tidak nyaman. · ⟦Chúng tôi cảm thấy họ sống rất thân thiện.⟧ → Kami merasa mereka sangat ramah. · ⟦Mọi người đều cảm thấy lo lắng.⟧ → Semua orang merasa cemas. · ⟦Tôi cảm thấy đã có chuyện không hay xảy ra.⟧ → Saya merasa telah terjadi sesuatu yang buruk. · ⟦Anh có cảm thấy hôm nay chị ấy vui hơn mọi ngày hay không?⟧ → Apakah kamu merasa hari ini dia lebih ceria dari biasanya?
+⟦dám⟧: dalam bentuk ⟦dám⟧ + verba berarti "berani ~" – menyatakan seseorang dengan berani melakukan hal yang sulit atau berat.
+⟦Bận thế nhưng mình đã dám đi ra ngoài chơi một mình rồi nhé.⟧ → Meskipun sibuk, aku sudah berani keluar bermain sendirian, lho. · ⟦Tôi đã dám vào rừng một mình.⟧ → Saya berani masuk hutan sendirian. · ⟦Chị ấy trông nhút nhát thế mà dám bắt rắn đấy.⟧ → Dia kelihatan pemalu, tetapi berani menangkap ular. · ⟦Chị ấy mấy học bơi mà hôm qua đã dám ra sông tập một mình.⟧ → Dia baru belajar berenang, tetapi kemarin sudah berani berlatih sendirian di sungai. · ⟦Anh ấy khȏng dám gặp mặt tȏi⟧ → Dia tidak berani bertatap muka dengan saya.
+=ja
+文法解説
+⟦cảm thấy⟧：「感じる」という意味で、自分の感覚や感想を表したい場合に使う表現です。
+⟦Hiện giờ Hà Nội thời tiết hanh khô, mình cảm thấy hơi khó chịu.⟧ → 今ハノイは乾燥していて、少しつらく感じる。 · ⟦Chúng tôi cảm thấy họ sống rất thân thiện.⟧ → 私たちは彼らがとても親切だと感じます。 · ⟦Mọi người đều cảm thấy lo lắng.⟧ → 皆が不安を感じています。 · ⟦Tôi cảm thấy đã có chuyện không hay xảy ra.⟧ → 何かよくないことが起きた気がします。 · ⟦Anh có cảm thấy hôm nay chị ấy vui hơn mọi ngày hay không?⟧ → 今日の彼女はいつもより楽しそうだと感じませんか。
+⟦dám⟧：⟦dám⟧ + 動詞 の形で、困難なことやつらいことを勇気をもって行う場合にそれを表すため、「思い切って～する、あえて～する」という意味で使われます。
+⟦Bận thế nhưng mình đã dám đi ra ngoài chơi một mình rồi nhé.⟧ → 忙しかったけど、思い切って一人で遊びに出かけたよ。 · ⟦Tôi đã dám vào rừng một mình.⟧ → 私は思い切って一人で森に入った。 · ⟦Chị ấy trông nhút nhát thế mà dám bắt rắn đấy.⟧ → 彼女は内気そうに見えるのに、蛇を捕まえたんだよ。 · ⟦Chị ấy mấy học bơi mà hôm qua đã dám ra sông tập một mình.⟧ → 彼女は泳ぎを習い始めたばかりなのに、昨日は思い切って一人で川に出て練習した。 · ⟦Anh ấy khȏng dám gặp mặt tȏi⟧ → 彼は私に顔を合わせる勇気がない。
+=pl
+Objaśnienia gramatyczne
+⟦cảm thấy⟧: „czuć, odczuwać” – służy do wyrażenia własnych odczuć lub wrażeń.
+⟦Hiện giờ Hà Nội thời tiết hanh khô, mình cảm thấy hơi khó chịu.⟧ → W Hanoi jest teraz sucho, czuję się trochę nieswojo. · ⟦Chúng tôi cảm thấy họ sống rất thân thiện.⟧ → Mamy wrażenie, że są bardzo przyjaźni. · ⟦Mọi người đều cảm thấy lo lắng.⟧ → Wszyscy się niepokoją. · ⟦Tôi cảm thấy đã có chuyện không hay xảy ra.⟧ → Czuję, że stało się coś złego. · ⟦Anh có cảm thấy hôm nay chị ấy vui hơn mọi ngày hay không?⟧ → Nie masz wrażenia, że jest dziś weselsza niż zwykle?
+⟦dám⟧: w formie ⟦dám⟧ + czasownik znaczy „odważyć się ~” – wyraża, że ktoś odważnie podejmuje się czegoś trudnego lub ciężkiego.
+⟦Bận thế nhưng mình đã dám đi ra ngoài chơi một mình rồi nhé.⟧ → Choć byłem tak zajęty, odważyłem się sam wyjść się rozerwać. · ⟦Tôi đã dám vào rừng một mình.⟧ → Odważyłem się sam wejść do lasu. · ⟦Chị ấy trông nhút nhát thế mà dám bắt rắn đấy.⟧ → Wygląda na tak nieśmiałą, a odważyła się złapać węża. · ⟦Chị ấy mấy học bơi mà hôm qua đã dám ra sông tập một mình.⟧ → Dopiero uczy się pływać, a wczoraj odważyła się sama ćwiczyć w rzece. · ⟦Anh ấy khȏng dám gặp mặt tȏi⟧ → On nie ma odwagi spojrzeć mi w oczy.
+@@ pdf-grammar-1be0dfe2408698d0#0
+=cs
+Gramatický výklad
+⟦vào vị trí⟧: ve tvaru ⟦A vào vị trí⟧ znamená „(ucházet se o) pozici A, nastoupit na místo A“.
+⟦Tôi xin được nộp hồ sơ ứng tuyển vào vị trí marketing.⟧ → Dovoluji si podat přihlášku na pozici v marketingu. · ⟦Chị ấy đã xin được vào vị trí kế toán.⟧ → Podařilo se jí získat místo účetní. · ⟦Ông ấy đã được mọi người bầu vào vị trí giám đốc.⟧ → Všichni ho zvolili do funkce ředitele. · ⟦Công ti đã sắp xếp anh ấy vào vị trí phiên dịch.⟧ → Firma ho zařadila na pozici tlumočníka. · ⟦Ai cũng muốn mình được sắp xếp vào vị trí bán hàng.⟧ → Každý chce být zařazen na pozici v prodeji.
+⟦tin⟧: ve tvaru ⟦A tin B⟧ znamená „A věří B“.
+⟦Tôi thực sự tin mình có đủ khả năng để trở thành một nhân viên marketing giỏi mà công ti đang cần.⟧ → Opravdu věřím, že mám dostatečné schopnosti, abych se stal dobrým pracovníkem marketingu, jakého vaše firma potřebuje. · ⟦Tôi tin mình đã xin việc là được.⟧ → Věřím, že když se o místo ucházím, dostanu ho. · ⟦Mọi người đều tin anh ấy sẽ không sai lời hứa.⟧ → Všichni věří, že svůj slib nezruší.
+=zh_cn
+语法解说
+⟦vào vị trí⟧：以 ⟦A vào vị trí⟧ 的形式，表示“（应聘／担任）A职位”。
+⟦Tôi xin được nộp hồ sơ ứng tuyển vào vị trí marketing.⟧ → 我想提交应聘市场营销职位的材料。 · ⟦Chị ấy đã xin được vào vị trí kế toán.⟧ → 她应聘上了会计职位。 · ⟦Ông ấy đã được mọi người bầu vào vị trí giám đốc.⟧ → 他被大家选为经理。 · ⟦Công ti đã sắp xếp anh ấy vào vị trí phiên dịch.⟧ → 公司安排他担任翻译。 · ⟦Ai cũng muốn mình được sắp xếp vào vị trí bán hàng.⟧ → 谁都想被安排到销售岗位。
+⟦tin⟧：以 ⟦A tin B⟧ 的形式，表示“A相信B”。
+⟦Tôi thực sự tin mình có đủ khả năng để trở thành một nhân viên marketing giỏi mà công ti đang cần.⟧ → 我真心相信自己有足够的能力成为贵公司所需要的优秀营销人员。 · ⟦Tôi tin mình đã xin việc là được.⟧ → 我相信只要我去应聘就能被录用。 · ⟦Mọi người đều tin anh ấy sẽ không sai lời hứa.⟧ → 大家都相信他不会食言。
+=zh
+文法解說
+⟦vào vị trí⟧：以 ⟦A vào vị trí⟧ 的形式，表示「（應徵／擔任）A職位」。
+⟦Tôi xin được nộp hồ sơ ứng tuyển vào vị trí marketing.⟧ → 我想提交應徵行銷職位的資料。 · ⟦Chị ấy đã xin được vào vị trí kế toán.⟧ → 她應徵上了會計職位。 · ⟦Ông ấy đã được mọi người bầu vào vị trí giám đốc.⟧ → 他被大家選為經理。 · ⟦Công ti đã sắp xếp anh ấy vào vị trí phiên dịch.⟧ → 公司安排他擔任口譯。 · ⟦Ai cũng muốn mình được sắp xếp vào vị trí bán hàng.⟧ → 誰都想被安排到業務職位。
+⟦tin⟧：以 ⟦A tin B⟧ 的形式，表示「A相信B」。
+⟦Tôi thực sự tin mình có đủ khả năng để trở thành một nhân viên marketing giỏi mà công ti đang cần.⟧ → 我真心相信自己有足夠的能力成為貴公司所需要的優秀行銷人員。 · ⟦Tôi tin mình đã xin việc là được.⟧ → 我相信只要我去應徵就能被錄取。 · ⟦Mọi người đều tin anh ấy sẽ không sai lời hứa.⟧ → 大家都相信他不會食言。
+=en
+Grammar notes
+⟦vào vị trí⟧: in the form ⟦A vào vị trí⟧, means "(apply for / be placed in) the position of A".
+⟦Tôi xin được nộp hồ sơ ứng tuyển vào vị trí marketing.⟧ → I would like to submit my application for the marketing position. · ⟦Chị ấy đã xin được vào vị trí kế toán.⟧ → She got the accountant position. · ⟦Ông ấy đã được mọi người bầu vào vị trí giám đốc.⟧ → Everyone elected him to the position of director. · ⟦Công ti đã sắp xếp anh ấy vào vị trí phiên dịch.⟧ → The company assigned him to the interpreter position. · ⟦Ai cũng muốn mình được sắp xếp vào vị trí bán hàng.⟧ → Everyone wants to be placed in a sales position.
+⟦tin⟧: in the form ⟦A tin B⟧, means "A believes B".
+⟦Tôi thực sự tin mình có đủ khả năng để trở thành một nhân viên marketing giỏi mà công ti đang cần.⟧ → I truly believe I have what it takes to become the skilled marketing employee your company needs. · ⟦Tôi tin mình đã xin việc là được.⟧ → I believe that if I apply, I'll get the job. · ⟦Mọi người đều tin anh ấy sẽ không sai lời hứa.⟧ → Everyone believes he won't break his promise.
+=fr
+Notes de grammaire
+⟦vào vị trí⟧ : sous la forme ⟦A vào vị trí⟧, signifie « (postuler au / être affecté au) poste de A ».
+⟦Tôi xin được nộp hồ sơ ứng tuyển vào vị trí marketing.⟧ → Je souhaite déposer ma candidature au poste de marketing. · ⟦Chị ấy đã xin được vào vị trí kế toán.⟧ → Elle a obtenu le poste de comptable. · ⟦Ông ấy đã được mọi người bầu vào vị trí giám đốc.⟧ → Tout le monde l'a élu au poste de directeur. · ⟦Công ti đã sắp xếp anh ấy vào vị trí phiên dịch.⟧ → L'entreprise l'a affecté au poste d'interprète. · ⟦Ai cũng muốn mình được sắp xếp vào vị trí bán hàng.⟧ → Tout le monde veut être affecté à la vente.
+⟦tin⟧ : sous la forme ⟦A tin B⟧, signifie « A croit B ».
+⟦Tôi thực sự tin mình có đủ khả năng để trở thành một nhân viên marketing giỏi mà công ti đang cần.⟧ → Je crois sincèrement avoir les capacités pour devenir le bon collaborateur marketing dont votre entreprise a besoin. · ⟦Tôi tin mình đã xin việc là được.⟧ → Je crois que si je postule, je serai pris. · ⟦Mọi người đều tin anh ấy sẽ không sai lời hứa.⟧ → Tout le monde croit qu'il ne manquera pas à sa promesse.
+=de
+Grammatikerläuterungen
+⟦vào vị trí⟧: in der Form ⟦A vào vị trí⟧ bedeutet es „(sich bewerben um / eingesetzt werden auf) die Stelle A“.
+⟦Tôi xin được nộp hồ sơ ứng tuyển vào vị trí marketing.⟧ → Hiermit möchte ich meine Bewerbung für die Stelle im Marketing einreichen. · ⟦Chị ấy đã xin được vào vị trí kế toán.⟧ → Sie hat die Stelle als Buchhalterin bekommen. · ⟦Ông ấy đã được mọi người bầu vào vị trí giám đốc.⟧ → Alle haben ihn zum Direktor gewählt. · ⟦Công ti đã sắp xếp anh ấy vào vị trí phiên dịch.⟧ → Die Firma hat ihn als Dolmetscher eingesetzt. · ⟦Ai cũng muốn mình được sắp xếp vào vị trí bán hàng.⟧ → Jeder möchte im Verkauf eingesetzt werden.
+⟦tin⟧: in der Form ⟦A tin B⟧ bedeutet es „A glaubt B“.
+⟦Tôi thực sự tin mình có đủ khả năng để trở thành một nhân viên marketing giỏi mà công ti đang cần.⟧ → Ich glaube wirklich, dass ich die Fähigkeiten habe, der gute Marketingmitarbeiter zu werden, den Ihre Firma braucht. · ⟦Tôi tin mình đã xin việc là được.⟧ → Ich glaube, wenn ich mich bewerbe, werde ich genommen. · ⟦Mọi người đều tin anh ấy sẽ không sai lời hứa.⟧ → Alle glauben, dass er sein Versprechen nicht brechen wird.
+=hu
+Nyelvtani magyarázat
+⟦vào vị trí⟧: ⟦A vào vị trí⟧ alakban jelentése „(pályázik az) A pozícióra, A munkakörbe kerül”.
+⟦Tôi xin được nộp hồ sơ ứng tuyển vào vị trí marketing.⟧ → Szeretném benyújtani pályázatomat a marketinges pozícióra. · ⟦Chị ấy đã xin được vào vị trí kế toán.⟧ → Megkapta a könyvelői állást. · ⟦Ông ấy đã được mọi người bầu vào vị trí giám đốc.⟧ → Mindenki őt választotta igazgatónak. · ⟦Công ti đã sắp xếp anh ấy vào vị trí phiên dịch.⟧ → A cég tolmácsi munkakörbe helyezte. · ⟦Ai cũng muốn mình được sắp xếp vào vị trí bán hàng.⟧ → Mindenki értékesítési munkakörbe szeretne kerülni.
+⟦tin⟧: ⟦A tin B⟧ alakban jelentése „A hisz B-nek / B-ben”.
+⟦Tôi thực sự tin mình có đủ khả năng để trở thành một nhân viên marketing giỏi mà công ti đang cần.⟧ → Valóban hiszem, hogy megvannak a képességeim ahhoz, hogy olyan jó marketinges munkatárs legyek, akire a cégnek szüksége van. · ⟦Tôi tin mình đã xin việc là được.⟧ → Hiszem, hogy ha jelentkezem, felvesznek. · ⟦Mọi người đều tin anh ấy sẽ không sai lời hứa.⟧ → Mindenki hiszi, hogy nem szegi meg az ígéretét.
+=id
+Penjelasan tata bahasa
+⟦vào vị trí⟧: dalam bentuk ⟦A vào vị trí⟧ berarti "(melamar / ditempatkan di) posisi A".
+⟦Tôi xin được nộp hồ sơ ứng tuyển vào vị trí marketing.⟧ → Saya ingin mengajukan lamaran untuk posisi pemasaran. · ⟦Chị ấy đã xin được vào vị trí kế toán.⟧ → Dia berhasil mendapatkan posisi akuntan. · ⟦Ông ấy đã được mọi người bầu vào vị trí giám đốc.⟧ → Beliau dipilih semua orang untuk posisi direktur. · ⟦Công ti đã sắp xếp anh ấy vào vị trí phiên dịch.⟧ → Perusahaan menempatkannya di posisi penerjemah lisan. · ⟦Ai cũng muốn mình được sắp xếp vào vị trí bán hàng.⟧ → Semua orang ingin ditempatkan di posisi penjualan.
+⟦tin⟧: dalam bentuk ⟦A tin B⟧ berarti "A percaya B".
+⟦Tôi thực sự tin mình có đủ khả năng để trở thành một nhân viên marketing giỏi mà công ti đang cần.⟧ → Saya sungguh percaya bahwa saya memiliki kemampuan yang cukup untuk menjadi staf pemasaran andal yang sedang dibutuhkan perusahaan. · ⟦Tôi tin mình đã xin việc là được.⟧ → Saya percaya kalau saya melamar, pasti diterima. · ⟦Mọi người đều tin anh ấy sẽ không sai lời hứa.⟧ → Semua orang percaya dia tidak akan ingkar janji.
+=ja
+文法解説
+⟦vào vị trí⟧：⟦A vào vị trí⟧ の形で「Aの職務を担当することになる、Aのポジションに（応募する）」という意味で使われます。
+⟦Tôi xin được nộp hồ sơ ứng tuyển vào vị trí marketing.⟧ → マーケティング職に応募書類を提出いたします。 · ⟦Chị ấy đã xin được vào vị trí kế toán.⟧ → 彼女は経理職に就くことができた。 · ⟦Ông ấy đã được mọi người bầu vào vị trí giám đốc.⟧ → 皆が彼を社長に選出した。 · ⟦Công ti đã sắp xếp anh ấy vào vị trí phiên dịch.⟧ → 会社は彼を通訳の職務に配置した。 · ⟦Ai cũng muốn mình được sắp xếp vào vị trí bán hàng.⟧ → 誰もが営業職に配置されたいと思っている。
+⟦tin⟧：⟦A tin B⟧ の形で「AがBを信じる」という意味で使われます。
+⟦Tôi thực sự tin mình có đủ khả năng để trở thành một nhân viên marketing giỏi mà công ti đang cần.⟧ → 私は貴社が必要とする優秀なマーケティング社員になれる十分な能力を持っていると本当に信じています。 · ⟦Tôi tin mình đã xin việc là được.⟧ → 私は応募すれば採用されると信じています。 · ⟦Mọi người đều tin anh ấy sẽ không sai lời hứa.⟧ → 皆、彼が約束を破らないと信じています。
+=pl
+Objaśnienia gramatyczne
+⟦vào vị trí⟧: w formie ⟦A vào vị trí⟧ znaczy „(ubiegać się o) stanowisko A, zostać przydzielonym na stanowisko A”.
+⟦Tôi xin được nộp hồ sơ ứng tuyển vào vị trí marketing.⟧ → Chciałbym złożyć aplikację na stanowisko w marketingu. · ⟦Chị ấy đã xin được vào vị trí kế toán.⟧ → Dostała stanowisko księgowej. · ⟦Ông ấy đã được mọi người bầu vào vị trí giám đốc.⟧ → Wszyscy wybrali go na stanowisko dyrektora. · ⟦Công ti đã sắp xếp anh ấy vào vị trí phiên dịch.⟧ → Firma przydzieliła go na stanowisko tłumacza. · ⟦Ai cũng muốn mình được sắp xếp vào vị trí bán hàng.⟧ → Każdy chce zostać przydzielony do działu sprzedaży.
+⟦tin⟧: w formie ⟦A tin B⟧ znaczy „A wierzy B”.
+⟦Tôi thực sự tin mình có đủ khả năng để trở thành một nhân viên marketing giỏi mà công ti đang cần.⟧ → Naprawdę wierzę, że mam wystarczające umiejętności, by zostać dobrym pracownikiem marketingu, jakiego potrzebuje firma. · ⟦Tôi tin mình đã xin việc là được.⟧ → Wierzę, że jeśli złożę podanie, dostanę pracę. · ⟦Mọi người đều tin anh ấy sẽ không sai lời hứa.⟧ → Wszyscy wierzą, że nie złamie obietnicy.

@@ -1,0 +1,162 @@
+@@ pdf-grammar-35d92ef380e611bf#0
+=cs
+Gramatický výklad
+⟦mấy⟧ a ⟦vài⟧ vyjadřují neurčitý malý počet či množství: „několik, pár“.
+⟦Mỗi tháng họ chỉ gặp nhau được vài lần.⟧ → Vidí se jen párkrát za měsíc. · ⟦Còn mấy học viên khác là người Thái Lan.⟧ → Několik dalších studentů jsou Thajci. · ⟦Học viên Hàn Quốc chỉ có vài người thôi.⟧ → Korejských studentů je jen pár.
+⟦phần lớn là A⟧ nebo ⟦phần nhiều là A⟧ znamená „většinou jsou A, většina jsou A“.
+⟦Lớp phần lớn là người Hàn Quốc.⟧ → Třídu tvoří většinou Korejci. · ⟦Lớp anh thì phần lớn lại là người Mĩ.⟧ → V mé třídě jsou naopak většinou Američané. · ⟦Lớp này phần nhiều là người Thái Lan.⟧ → V téhle třídě jsou většinou Thajci. · ⟦Số học viên này phần nhiều là đến từ Trung Quốc.⟧ → Většina z těchto studentů pochází z Číny.
+⟦ngoài A⟧ nebo ⟦A ngoài ra B⟧ znamená „kromě A“, „kromě A ještě B“.
+⟦Ngoài lớp tiếng Anh, tôi còn học thêm lớp tiếng Hàn.⟧ → Kromě angličtiny chodím ještě na korejštinu. · ⟦Ngoài trường đại học này, ở đây còn có mấy trường đại học nữa.⟧ → Kromě této univerzity je tu ještě několik dalších. · ⟦Ngoài mấy học viên người Thái Lan, lớp còn một số học viên người Trung Quốc nữa.⟧ → Kromě několika thajských studentů jsou ve třídě ještě nějací Číňané.
+=zh_cn
+语法解说
+⟦mấy⟧ 和 ⟦vài⟧ 表示不确定的少数或少量，意为“几、几个”。
+⟦Mỗi tháng họ chỉ gặp nhau được vài lần.⟧ → 他们每个月只能见几次面。 · ⟦Còn mấy học viên khác là người Thái Lan.⟧ → 另外几个学员是泰国人。 · ⟦Học viên Hàn Quốc chỉ có vài người thôi.⟧ → 韩国学员只有几个人而已。
+⟦phần lớn là A⟧ 或 ⟦phần nhiều là A⟧ 意为“大部分是A”。
+⟦Lớp phần lớn là người Hàn Quốc.⟧ → 班里大部分是韩国人。 · ⟦Lớp anh thì phần lớn lại là người Mĩ.⟧ → 我们班大部分却是美国人。 · ⟦Lớp này phần nhiều là người Thái Lan.⟧ → 这个班大部分是泰国人。 · ⟦Số học viên này phần nhiều là đến từ Trung Quốc.⟧ → 这些学员大部分来自中国。
+⟦ngoài A⟧ 或 ⟦A ngoài ra B⟧ 意为“除了A以外”“除了A以外还有B”。
+⟦Ngoài lớp tiếng Anh, tôi còn học thêm lớp tiếng Hàn.⟧ → 除了英语课，我还加学了韩语课。 · ⟦Ngoài trường đại học này, ở đây còn có mấy trường đại học nữa.⟧ → 除了这所大学，这里还有几所大学。 · ⟦Ngoài mấy học viên người Thái Lan, lớp còn một số học viên người Trung Quốc nữa.⟧ → 除了几个泰国学员，班上还有一些中国学员。
+=zh
+文法解說
+⟦mấy⟧ 和 ⟦vài⟧ 表示不確定的少數或少量，意為「幾、幾個」。
+⟦Mỗi tháng họ chỉ gặp nhau được vài lần.⟧ → 他們每個月只能見幾次面。 · ⟦Còn mấy học viên khác là người Thái Lan.⟧ → 另外幾個學員是泰國人。 · ⟦Học viên Hàn Quốc chỉ có vài người thôi.⟧ → 韓國學員只有幾個人而已。
+⟦phần lớn là A⟧ 或 ⟦phần nhiều là A⟧ 意為「大部分是A」。
+⟦Lớp phần lớn là người Hàn Quốc.⟧ → 班上大部分是韓國人。 · ⟦Lớp anh thì phần lớn lại là người Mĩ.⟧ → 我們班大部分卻是美國人。 · ⟦Lớp này phần nhiều là người Thái Lan.⟧ → 這個班大部分是泰國人。 · ⟦Số học viên này phần nhiều là đến từ Trung Quốc.⟧ → 這些學員大部分來自中國。
+⟦ngoài A⟧ 或 ⟦A ngoài ra B⟧ 意為「除了A以外」「除了A以外還有B」。
+⟦Ngoài lớp tiếng Anh, tôi còn học thêm lớp tiếng Hàn.⟧ → 除了英文課，我還加修了韓文課。 · ⟦Ngoài trường đại học này, ở đây còn có mấy trường đại học nữa.⟧ → 除了這所大學，這裡還有幾所大學。 · ⟦Ngoài mấy học viên người Thái Lan, lớp còn một số học viên người Trung Quốc nữa.⟧ → 除了幾個泰國學員，班上還有一些中國學員。
+=en
+Grammar notes
+⟦mấy⟧ and ⟦vài⟧ express an unspecified small number or amount: "a few, several".
+⟦Mỗi tháng họ chỉ gặp nhau được vài lần.⟧ → They only manage to meet a few times a month. · ⟦Còn mấy học viên khác là người Thái Lan.⟧ → Several other students are Thai. · ⟦Học viên Hàn Quốc chỉ có vài người thôi.⟧ → There are only a few Korean students.
+⟦phần lớn là A⟧ or ⟦phần nhiều là A⟧ means "mostly A, the majority are A".
+⟦Lớp phần lớn là người Hàn Quốc.⟧ → The class is mostly Korean. · ⟦Lớp anh thì phần lớn lại là người Mĩ.⟧ → My class, on the other hand, is mostly American. · ⟦Lớp này phần nhiều là người Thái Lan.⟧ → This class is mostly Thai. · ⟦Số học viên này phần nhiều là đến từ Trung Quốc.⟧ → Most of these students come from China.
+⟦ngoài A⟧ or ⟦A ngoài ra B⟧ means "apart from A", "besides A, also B".
+⟦Ngoài lớp tiếng Anh, tôi còn học thêm lớp tiếng Hàn.⟧ → Besides my English class, I also take Korean. · ⟦Ngoài trường đại học này, ở đây còn có mấy trường đại học nữa.⟧ → Apart from this university, there are several others here. · ⟦Ngoài mấy học viên người Thái Lan, lớp còn một số học viên người Trung Quốc nữa.⟧ → Besides a few Thai students, the class also has some Chinese students.
+=fr
+Notes de grammaire
+⟦mấy⟧ et ⟦vài⟧ expriment un petit nombre ou une petite quantité indéterminés : « quelques ».
+⟦Mỗi tháng họ chỉ gặp nhau được vài lần.⟧ → Ils ne se voient que quelques fois par mois. · ⟦Còn mấy học viên khác là người Thái Lan.⟧ → Quelques autres étudiants sont thaïlandais. · ⟦Học viên Hàn Quốc chỉ có vài người thôi.⟧ → Il n'y a que quelques étudiants coréens.
+⟦phần lớn là A⟧ ou ⟦phần nhiều là A⟧ signifie « la plupart sont A ».
+⟦Lớp phần lớn là người Hàn Quốc.⟧ → La classe est composée en majorité de Coréens. · ⟦Lớp anh thì phần lớn lại là người Mĩ.⟧ → Dans ma classe, en revanche, ce sont surtout des Américains. · ⟦Lớp này phần nhiều là người Thái Lan.⟧ → Cette classe compte surtout des Thaïlandais. · ⟦Số học viên này phần nhiều là đến từ Trung Quốc.⟧ → La plupart de ces étudiants viennent de Chine.
+⟦ngoài A⟧ ou ⟦A ngoài ra B⟧ signifie « en dehors de A », « outre A, aussi B ».
+⟦Ngoài lớp tiếng Anh, tôi còn học thêm lớp tiếng Hàn.⟧ → En plus du cours d'anglais, je suis aussi un cours de coréen. · ⟦Ngoài trường đại học này, ở đây còn có mấy trường đại học nữa.⟧ → Outre cette université, il y en a plusieurs autres ici. · ⟦Ngoài mấy học viên người Thái Lan, lớp còn một số học viên người Trung Quốc nữa.⟧ → Outre quelques étudiants thaïlandais, la classe compte aussi des étudiants chinois.
+=de
+Grammatikerläuterungen
+⟦mấy⟧ und ⟦vài⟧ bezeichnen eine unbestimmte kleine Anzahl oder Menge: „einige, ein paar“.
+⟦Mỗi tháng họ chỉ gặp nhau được vài lần.⟧ → Sie sehen sich nur ein paar Mal im Monat. · ⟦Còn mấy học viên khác là người Thái Lan.⟧ → Einige andere Kursteilnehmer sind Thailänder. · ⟦Học viên Hàn Quốc chỉ có vài người thôi.⟧ → Koreanische Teilnehmer gibt es nur ein paar.
+⟦phần lớn là A⟧ oder ⟦phần nhiều là A⟧ bedeutet „größtenteils A, die meisten sind A“.
+⟦Lớp phần lớn là người Hàn Quốc.⟧ → Die Klasse besteht größtenteils aus Koreanern. · ⟦Lớp anh thì phần lớn lại là người Mĩ.⟧ → In meiner Klasse sind dagegen die meisten Amerikaner. · ⟦Lớp này phần nhiều là người Thái Lan.⟧ → In dieser Klasse sind die meisten Thailänder. · ⟦Số học viên này phần nhiều là đến từ Trung Quốc.⟧ → Die meisten dieser Teilnehmer kommen aus China.
+⟦ngoài A⟧ oder ⟦A ngoài ra B⟧ bedeutet „außer A“, „außer A auch noch B“.
+⟦Ngoài lớp tiếng Anh, tôi còn học thêm lớp tiếng Hàn.⟧ → Außer dem Englischkurs besuche ich auch noch einen Koreanischkurs. · ⟦Ngoài trường đại học này, ở đây còn có mấy trường đại học nữa.⟧ → Außer dieser Universität gibt es hier noch einige weitere. · ⟦Ngoài mấy học viên người Thái Lan, lớp còn một số học viên người Trung Quốc nữa.⟧ → Außer ein paar Thailändern sind auch einige Chinesen in der Klasse.
+=hu
+Nyelvtani magyarázat
+A ⟦mấy⟧ és ⟦vài⟧ meghatározatlan kis számot vagy mennyiséget jelöl: „néhány, pár”.
+⟦Mỗi tháng họ chỉ gặp nhau được vài lần.⟧ → Havonta csak néhányszor tudnak találkozni. · ⟦Còn mấy học viên khác là người Thái Lan.⟧ → Néhány másik hallgató thai. · ⟦Học viên Hàn Quốc chỉ có vài người thôi.⟧ → Koreai hallgató csak pár van.
+A ⟦phần lớn là A⟧ vagy ⟦phần nhiều là A⟧ jelentése „nagyrészt A, a többség A”.
+⟦Lớp phần lớn là người Hàn Quốc.⟧ → Az osztály nagy része koreai. · ⟦Lớp anh thì phần lớn lại là người Mĩ.⟧ → Az én osztályomban viszont többnyire amerikaiak vannak. · ⟦Lớp này phần nhiều là người Thái Lan.⟧ → Ebben az osztályban többnyire thaiok vannak. · ⟦Số học viên này phần nhiều là đến từ Trung Quốc.⟧ → Ezeknek a hallgatóknak a többsége Kínából jött.
+A ⟦ngoài A⟧ vagy ⟦A ngoài ra B⟧ jelentése „A-n kívül”, „A-n kívül még B is”.
+⟦Ngoài lớp tiếng Anh, tôi còn học thêm lớp tiếng Hàn.⟧ → Az angolórán kívül koreaira is járok. · ⟦Ngoài trường đại học này, ở đây còn có mấy trường đại học nữa.⟧ → Ezen az egyetemen kívül van itt még néhány. · ⟦Ngoài mấy học viên người Thái Lan, lớp còn một số học viên người Trung Quốc nữa.⟧ → Néhány thai hallgatón kívül kínaiak is vannak az osztályban.
+=id
+Penjelasan tata bahasa
+⟦mấy⟧ dan ⟦vài⟧ menyatakan jumlah kecil yang tidak tentu: "beberapa".
+⟦Mỗi tháng họ chỉ gặp nhau được vài lần.⟧ → Setiap bulan mereka hanya bisa bertemu beberapa kali. · ⟦Còn mấy học viên khác là người Thái Lan.⟧ → Beberapa peserta lainnya orang Thailand. · ⟦Học viên Hàn Quốc chỉ có vài người thôi.⟧ → Peserta dari Korea hanya beberapa orang.
+⟦phần lớn là A⟧ atau ⟦phần nhiều là A⟧ berarti "sebagian besar adalah A".
+⟦Lớp phần lớn là người Hàn Quốc.⟧ → Kelas ini sebagian besar orang Korea. · ⟦Lớp anh thì phần lớn lại là người Mĩ.⟧ → Kelasku justru sebagian besar orang Amerika. · ⟦Lớp này phần nhiều là người Thái Lan.⟧ → Kelas ini sebagian besar orang Thailand. · ⟦Số học viên này phần nhiều là đến từ Trung Quốc.⟧ → Sebagian besar peserta ini berasal dari Tiongkok.
+⟦ngoài A⟧ atau ⟦A ngoài ra B⟧ berarti "selain A", "selain A, juga B".
+⟦Ngoài lớp tiếng Anh, tôi còn học thêm lớp tiếng Hàn.⟧ → Selain kelas bahasa Inggris, saya juga ikut kelas bahasa Korea. · ⟦Ngoài trường đại học này, ở đây còn có mấy trường đại học nữa.⟧ → Selain universitas ini, di sini masih ada beberapa universitas lain. · ⟦Ngoài mấy học viên người Thái Lan, lớp còn một số học viên người Trung Quốc nữa.⟧ → Selain beberapa peserta dari Thailand, kelas ini juga punya beberapa peserta dari Tiongkok.
+=ja
+文法解説
+⟦mấy⟧ と ⟦vài⟧ は不特定の少数・少量を表し、「いくつか、何人か」という意味で使われます。
+⟦Mỗi tháng họ chỉ gặp nhau được vài lần.⟧ → 彼らは毎月数回しか会えない。 · ⟦Còn mấy học viên khác là người Thái Lan.⟧ → ほかの何人かの学生はタイ人だ。 · ⟦Học viên Hàn Quốc chỉ có vài người thôi.⟧ → 韓国人の学生はほんの数人にすぎない。
+⟦phần lớn là A⟧ または ⟦phần nhiều là A⟧ の形で「大部分は～だ」という意味で使われます。
+⟦Lớp phần lớn là người Hàn Quốc.⟧ → クラスの大部分は韓国人だ。 · ⟦Lớp anh thì phần lớn lại là người Mĩ.⟧ → 僕のクラスは逆に大部分がアメリカ人だよ。 · ⟦Lớp này phần nhiều là người Thái Lan.⟧ → このクラスは大部分がタイ人だ。 · ⟦Số học viên này phần nhiều là đến từ Trung Quốc.⟧ → これらの学生の大部分は中国から来た。
+⟦ngoài A⟧ または ⟦A ngoài ra B⟧ の形で「A以外に」「A以外にもB」という意味で使われます。
+⟦Ngoài lớp tiếng Anh, tôi còn học thêm lớp tiếng Hàn.⟧ → 英語の授業以外に、韓国語の授業も取っている。 · ⟦Ngoài trường đại học này, ở đây còn có mấy trường đại học nữa.⟧ → ここにはこの大学以外にも、いくつか大学がある。 · ⟦Ngoài mấy học viên người Thái Lan, lớp còn một số học viên người Trung Quốc nữa.⟧ → 何人かのタイ人学生以外に、クラスには中国人学生も何人かいる。
+=pl
+Objaśnienia gramatyczne
+⟦mấy⟧ i ⟦vài⟧ wyrażają nieokreśloną małą liczbę lub ilość: „kilka, parę”.
+⟦Mỗi tháng họ chỉ gặp nhau được vài lần.⟧ → Widują się tylko kilka razy w miesiącu. · ⟦Còn mấy học viên khác là người Thái Lan.⟧ → Kilku innych słuchaczy to Tajowie. · ⟦Học viên Hàn Quốc chỉ có vài người thôi.⟧ → Koreańskich słuchaczy jest tylko kilku.
+⟦phần lớn là A⟧ lub ⟦phần nhiều là A⟧ znaczy „w większości A, większość to A”.
+⟦Lớp phần lớn là người Hàn Quốc.⟧ → W klasie są w większości Koreańczycy. · ⟦Lớp anh thì phần lớn lại là người Mĩ.⟧ → W mojej klasie za to większość to Amerykanie. · ⟦Lớp này phần nhiều là người Thái Lan.⟧ → W tej klasie większość to Tajowie. · ⟦Số học viên này phần nhiều là đến từ Trung Quốc.⟧ → Większość tych słuchaczy pochodzi z Chin.
+⟦ngoài A⟧ lub ⟦A ngoài ra B⟧ znaczy „oprócz A”, „oprócz A jeszcze B”.
+⟦Ngoài lớp tiếng Anh, tôi còn học thêm lớp tiếng Hàn.⟧ → Oprócz angielskiego chodzę jeszcze na koreański. · ⟦Ngoài trường đại học này, ở đây còn có mấy trường đại học nữa.⟧ → Oprócz tego uniwersytetu jest tu jeszcze kilka innych. · ⟦Ngoài mấy học viên người Thái Lan, lớp còn một số học viên người Trung Quốc nữa.⟧ → Oprócz kilku Tajów w klasie jest jeszcze kilku Chińczyków.
+@@ pdf-grammar-7f5cd0815ca01067#0
+=cs
+Gramatický výklad
+⟦A là một trong những B⟧ znamená „A je jedním z B“.
+⟦Ồng Lương Thế Vinh là một trong những nhà toán học nổi tiếng của Việt Nam.⟧ → Lương Thế Vinh je jedním ze slavných vietnamských matematiků. · ⟦Chị ấy là một trong những người nói tiếng Việt giỏi nhất ở lớp chúng tôi.⟧ → Je jednou z těch, kdo v naší třídě mluví vietnamsky nejlépe.
+⟦toàn bộ⟧ + podstatné jméno a ⟦tất cả⟧ + podstatné jméno znamenají „celý, všechny“.
+⟦Rồi ông cân toàn bộ số đá.⟧ → Pak zvážil všechny kameny. · ⟦Chúng tôi đã dành toàn bộ thời gian cho việc học tập.⟧ → Všechen čas jsme věnovali studiu. · ⟦Toàn bộ lớp này chỉ có tám người.⟧ → Celá tahle třída má jen osm lidí. · ⟦Tất cả số tiền tôi mang theo đã tiêu hết rồi.⟧ → Všechny peníze, které jsem si vzal s sebou, jsem utratil. · ⟦Tất cả những cuốn sách này đều là của chị ấy.⟧ → Všechny tyhle knihy jsou její.
+⟦A bao nhiêu thì B bấy nhiêu⟧ znamená „kolik (nakolik) A, tolik (natolik) B“.
+⟦Đá xếp càng nhiều bao nhiêu thì thuyền càng chìm sâu bấy nhiêu.⟧ → Čím víc kamenů se naskládalo, tím hlouběji se loď ponořila. · ⟦Số đá nặng bao nhiêu thì con voi cũng sẽ nặng bấy nhiêu.⟧ → Kolik váží kameny, tolik bude vážit i slon.
+=zh_cn
+语法解说
+⟦A là một trong những B⟧ 意为“A是B之一”。
+⟦Ồng Lương Thế Vinh là một trong những nhà toán học nổi tiếng của Việt Nam.⟧ → 梁世荣是越南著名的数学家之一。 · ⟦Chị ấy là một trong những người nói tiếng Việt giỏi nhất ở lớp chúng tôi.⟧ → 她是我们班越南语说得最好的人之一。
+⟦toàn bộ⟧ + 名词、⟦tất cả⟧ + 名词，意为“全部、所有”。
+⟦Rồi ông cân toàn bộ số đá.⟧ → 然后他称了全部石头的重量。 · ⟦Chúng tôi đã dành toàn bộ thời gian cho việc học tập.⟧ → 我们把全部时间都用在了学习上。 · ⟦Toàn bộ lớp này chỉ có tám người.⟧ → 这个班总共只有八个人。 · ⟦Tất cả số tiền tôi mang theo đã tiêu hết rồi.⟧ → 我带来的钱全都花光了。 · ⟦Tất cả những cuốn sách này đều là của chị ấy.⟧ → 这些书全都是她的。
+⟦A bao nhiêu thì B bấy nhiêu⟧ 意为“A多少（到什么程度），B也就多少（到那个程度）”。
+⟦Đá xếp càng nhiều bao nhiêu thì thuyền càng chìm sâu bấy nhiêu.⟧ → 石头堆得越多，船就沉得越深。 · ⟦Số đá nặng bao nhiêu thì con voi cũng sẽ nặng bấy nhiêu.⟧ → 石头有多重，大象也就有多重。
+=zh
+文法解說
+⟦A là một trong những B⟧ 意為「A是B之一」。
+⟦Ồng Lương Thế Vinh là một trong những nhà toán học nổi tiếng của Việt Nam.⟧ → 梁世榮是越南著名的數學家之一。 · ⟦Chị ấy là một trong những người nói tiếng Việt giỏi nhất ở lớp chúng tôi.⟧ → 她是我們班越南語說得最好的人之一。
+⟦toàn bộ⟧ + 名詞、⟦tất cả⟧ + 名詞，意為「全部、所有」。
+⟦Rồi ông cân toàn bộ số đá.⟧ → 然後他秤了全部石頭的重量。 · ⟦Chúng tôi đã dành toàn bộ thời gian cho việc học tập.⟧ → 我們把全部時間都用在讀書上。 · ⟦Toàn bộ lớp này chỉ có tám người.⟧ → 這個班總共只有八個人。 · ⟦Tất cả số tiền tôi mang theo đã tiêu hết rồi.⟧ → 我帶來的錢全都花光了。 · ⟦Tất cả những cuốn sách này đều là của chị ấy.⟧ → 這些書全都是她的。
+⟦A bao nhiêu thì B bấy nhiêu⟧ 意為「A多少（到什麼程度），B也就多少（到那個程度）」。
+⟦Đá xếp càng nhiều bao nhiêu thì thuyền càng chìm sâu bấy nhiêu.⟧ → 石頭堆得越多，船就沉得越深。 · ⟦Số đá nặng bao nhiêu thì con voi cũng sẽ nặng bấy nhiêu.⟧ → 石頭有多重，大象也就有多重。
+=en
+Grammar notes
+⟦A là một trong những B⟧ means "A is one of the B".
+⟦Ồng Lương Thế Vinh là một trong những nhà toán học nổi tiếng của Việt Nam.⟧ → Lương Thế Vinh is one of Vietnam's famous mathematicians. · ⟦Chị ấy là một trong những người nói tiếng Việt giỏi nhất ở lớp chúng tôi.⟧ → She is one of the best Vietnamese speakers in our class.
+⟦toàn bộ⟧ + noun and ⟦tất cả⟧ + noun mean "the whole, all".
+⟦Rồi ông cân toàn bộ số đá.⟧ → Then he weighed all the stones. · ⟦Chúng tôi đã dành toàn bộ thời gian cho việc học tập.⟧ → We devoted all our time to studying. · ⟦Toàn bộ lớp này chỉ có tám người.⟧ → The whole class has only eight people. · ⟦Tất cả số tiền tôi mang theo đã tiêu hết rồi.⟧ → I've spent all the money I brought with me. · ⟦Tất cả những cuốn sách này đều là của chị ấy.⟧ → All these books are hers.
+⟦A bao nhiêu thì B bấy nhiêu⟧ means "as much (to whatever degree) as A, so much B".
+⟦Đá xếp càng nhiều bao nhiêu thì thuyền càng chìm sâu bấy nhiêu.⟧ → The more stones were piled on, the deeper the boat sank. · ⟦Số đá nặng bao nhiêu thì con voi cũng sẽ nặng bấy nhiêu.⟧ → However much the stones weigh, the elephant will weigh the same.
+=fr
+Notes de grammaire
+⟦A là một trong những B⟧ signifie « A est l'un des B ».
+⟦Ồng Lương Thế Vinh là một trong những nhà toán học nổi tiếng của Việt Nam.⟧ → Lương Thế Vinh est l'un des mathématiciens célèbres du Vietnam. · ⟦Chị ấy là một trong những người nói tiếng Việt giỏi nhất ở lớp chúng tôi.⟧ → Elle est l'une des personnes qui parlent le mieux vietnamien dans notre classe.
+⟦toàn bộ⟧ + nom et ⟦tất cả⟧ + nom signifient « tout, l'ensemble de ».
+⟦Rồi ông cân toàn bộ số đá.⟧ → Puis il pesa toutes les pierres. · ⟦Chúng tôi đã dành toàn bộ thời gian cho việc học tập.⟧ → Nous avons consacré tout notre temps aux études. · ⟦Toàn bộ lớp này chỉ có tám người.⟧ → Cette classe ne compte en tout que huit personnes. · ⟦Tất cả số tiền tôi mang theo đã tiêu hết rồi.⟧ → J'ai dépensé tout l'argent que j'avais apporté. · ⟦Tất cả những cuốn sách này đều là của chị ấy.⟧ → Tous ces livres sont à elle.
+⟦A bao nhiêu thì B bấy nhiêu⟧ signifie « autant (dans la mesure où) A, autant B ».
+⟦Đá xếp càng nhiều bao nhiêu thì thuyền càng chìm sâu bấy nhiêu.⟧ → Plus on empilait de pierres, plus le bateau s'enfonçait. · ⟦Số đá nặng bao nhiêu thì con voi cũng sẽ nặng bấy nhiêu.⟧ → Autant pèsent les pierres, autant pèsera l'éléphant.
+=de
+Grammatikerläuterungen
+⟦A là một trong những B⟧ bedeutet „A ist eine(r/s) der B“.
+⟦Ồng Lương Thế Vinh là một trong những nhà toán học nổi tiếng của Việt Nam.⟧ → Lương Thế Vinh ist einer der berühmten Mathematiker Vietnams. · ⟦Chị ấy là một trong những người nói tiếng Việt giỏi nhất ở lớp chúng tôi.⟧ → Sie ist eine der Personen, die in unserer Klasse am besten Vietnamesisch sprechen.
+⟦toàn bộ⟧ + Nomen und ⟦tất cả⟧ + Nomen bedeuten „ganz, alle“.
+⟦Rồi ông cân toàn bộ số đá.⟧ → Dann wog er sämtliche Steine. · ⟦Chúng tôi đã dành toàn bộ thời gian cho việc học tập.⟧ → Wir haben unsere ganze Zeit dem Lernen gewidmet. · ⟦Toàn bộ lớp này chỉ có tám người.⟧ → Die ganze Klasse hat nur acht Leute. · ⟦Tất cả số tiền tôi mang theo đã tiêu hết rồi.⟧ → Ich habe das ganze mitgebrachte Geld ausgegeben. · ⟦Tất cả những cuốn sách này đều là của chị ấy.⟧ → All diese Bücher gehören ihr.
+⟦A bao nhiêu thì B bấy nhiêu⟧ bedeutet „so viel (in dem Maße, wie) A, so viel B“.
+⟦Đá xếp càng nhiều bao nhiêu thì thuyền càng chìm sâu bấy nhiêu.⟧ → Je mehr Steine aufgeschichtet wurden, desto tiefer sank das Boot. · ⟦Số đá nặng bao nhiêu thì con voi cũng sẽ nặng bấy nhiêu.⟧ → So viel die Steine wiegen, so viel wiegt auch der Elefant.
+=hu
+Nyelvtani magyarázat
+Az ⟦A là một trong những B⟧ jelentése „A az egyik B”.
+⟦Ồng Lương Thế Vinh là một trong những nhà toán học nổi tiếng của Việt Nam.⟧ → Lương Thế Vinh Vietnam egyik híres matematikusa. · ⟦Chị ấy là một trong những người nói tiếng Việt giỏi nhất ở lớp chúng tôi.⟧ → Ő az egyik, aki az osztályunkban a legjobban beszél vietnamiul.
+A ⟦toàn bộ⟧ + főnév és ⟦tất cả⟧ + főnév jelentése „az egész, az összes”.
+⟦Rồi ông cân toàn bộ số đá.⟧ → Aztán lemérte az összes követ. · ⟦Chúng tôi đã dành toàn bộ thời gian cho việc học tập.⟧ → Minden időnket a tanulásra fordítottuk. · ⟦Toàn bộ lớp này chỉ có tám người.⟧ → Ez az egész osztály mindössze nyolc fő. · ⟦Tất cả số tiền tôi mang theo đã tiêu hết rồi.⟧ → Az összes pénzt, amit magammal hoztam, elköltöttem. · ⟦Tất cả những cuốn sách này đều là của chị ấy.⟧ → Ezek a könyvek mind az övéi.
+Az ⟦A bao nhiêu thì B bấy nhiêu⟧ jelentése „amennyi (amilyen mértékű) A, annyi B”.
+⟦Đá xếp càng nhiều bao nhiêu thì thuyền càng chìm sâu bấy nhiêu.⟧ → Minél több követ raktak rá, annál mélyebbre süllyedt a csónak. · ⟦Số đá nặng bao nhiêu thì con voi cũng sẽ nặng bấy nhiêu.⟧ → Amennyit a kövek nyomnak, annyit nyom az elefánt is.
+=id
+Penjelasan tata bahasa
+⟦A là một trong những B⟧ berarti "A adalah salah satu dari B".
+⟦Ồng Lương Thế Vinh là một trong những nhà toán học nổi tiếng của Việt Nam.⟧ → Lương Thế Vinh adalah salah satu matematikawan terkenal Vietnam. · ⟦Chị ấy là một trong những người nói tiếng Việt giỏi nhất ở lớp chúng tôi.⟧ → Dia salah satu orang yang paling pandai berbahasa Vietnam di kelas kami.
+⟦toàn bộ⟧ + nomina dan ⟦tất cả⟧ + nomina berarti "seluruh, semua".
+⟦Rồi ông cân toàn bộ số đá.⟧ → Lalu ia menimbang seluruh batu itu. · ⟦Chúng tôi đã dành toàn bộ thời gian cho việc học tập.⟧ → Kami mencurahkan seluruh waktu untuk belajar. · ⟦Toàn bộ lớp này chỉ có tám người.⟧ → Seluruh kelas ini hanya ada delapan orang. · ⟦Tất cả số tiền tôi mang theo đã tiêu hết rồi.⟧ → Semua uang yang saya bawa sudah habis terpakai. · ⟦Tất cả những cuốn sách này đều là của chị ấy.⟧ → Semua buku ini miliknya.
+⟦A bao nhiêu thì B bấy nhiêu⟧ berarti "sebanyak (sejauh) A, sebanyak itu pula B".
+⟦Đá xếp càng nhiều bao nhiêu thì thuyền càng chìm sâu bấy nhiêu.⟧ → Makin banyak batu ditumpuk, makin dalam pula kapal tenggelam. · ⟦Số đá nặng bao nhiêu thì con voi cũng sẽ nặng bấy nhiêu.⟧ → Seberat apa pun batu-batu itu, seberat itu pula gajahnya.
+=ja
+文法解説
+⟦A là một trong những B⟧ の形で「AはBのうちの一つだ」という意味で使われます。
+⟦Ồng Lương Thế Vinh là một trong những nhà toán học nổi tiếng của Việt Nam.⟧ → ルオン・テー・ヴィンはベトナムの有名な数学者の一人だ。 · ⟦Chị ấy là một trong những người nói tiếng Việt giỏi nhất ở lớp chúng tôi.⟧ → 彼女は私たちのクラスで最もベトナム語が上手な人の一人だ。
+⟦toàn bộ⟧ + 名詞、⟦tất cả⟧ + 名詞の形で「全体」「すべて」という意味で使われます。
+⟦Rồi ông cân toàn bộ số đá.⟧ → それから彼は石全体の重さを量った。 · ⟦Chúng tôi đã dành toàn bộ thời gian cho việc học tập.⟧ → 私たちはすべての時間を勉強に充てた。 · ⟦Toàn bộ lớp này chỉ có tám người.⟧ → このクラスは全部でわずか8人しかいない。 · ⟦Tất cả số tiền tôi mang theo đã tiêu hết rồi.⟧ → 持ってきたお金をすべて使い果たしてしまった。 · ⟦Tất cả những cuốn sách này đều là của chị ấy.⟧ → これらの本はすべて彼女のものだ。
+⟦A bao nhiêu thì B bấy nhiêu⟧ の形で「Aがどれだけ（どの程度）なら、Bもまたそれだけ（その程度）」という意味で使われます。
+⟦Đá xếp càng nhiều bao nhiêu thì thuyền càng chìm sâu bấy nhiêu.⟧ → 石を積めば積むほど、船はそれだけ深く沈んだ。 · ⟦Số đá nặng bao nhiêu thì con voi cũng sẽ nặng bấy nhiêu.⟧ → 石の重さの分だけ、象の重さもそれだけあるはずだ。
+=pl
+Objaśnienia gramatyczne
+⟦A là một trong những B⟧ znaczy „A jest jednym z B”.
+⟦Ồng Lương Thế Vinh là một trong những nhà toán học nổi tiếng của Việt Nam.⟧ → Lương Thế Vinh jest jednym ze słynnych wietnamskich matematyków. · ⟦Chị ấy là một trong những người nói tiếng Việt giỏi nhất ở lớp chúng tôi.⟧ → Jest jedną z osób, które najlepiej mówią po wietnamsku w naszej klasie.
+⟦toàn bộ⟧ + rzeczownik i ⟦tất cả⟧ + rzeczownik znaczą „cały, wszystkie”.
+⟦Rồi ông cân toàn bộ số đá.⟧ → Potem zważył wszystkie kamienie. · ⟦Chúng tôi đã dành toàn bộ thời gian cho việc học tập.⟧ → Cały czas poświęciliśmy nauce. · ⟦Toàn bộ lớp này chỉ có tám người.⟧ → Cała ta klasa liczy tylko osiem osób. · ⟦Tất cả số tiền tôi mang theo đã tiêu hết rồi.⟧ → Wydałem wszystkie pieniądze, które zabrałem ze sobą. · ⟦Tất cả những cuốn sách này đều là của chị ấy.⟧ → Wszystkie te książki są jej.
+⟦A bao nhiêu thì B bấy nhiêu⟧ znaczy „ile (w jakim stopniu) A, tyle (w takim stopniu) B”.
+⟦Đá xếp càng nhiều bao nhiêu thì thuyền càng chìm sâu bấy nhiêu.⟧ → Im więcej kamieni ułożono, tym głębiej zanurzała się łódź. · ⟦Số đá nặng bao nhiêu thì con voi cũng sẽ nặng bấy nhiêu.⟧ → Ile ważą kamienie, tyle będzie ważył słoń.

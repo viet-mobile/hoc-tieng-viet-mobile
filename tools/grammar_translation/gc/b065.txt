@@ -1,0 +1,213 @@
+@@ pdf-grammar-c9ba6b7dc4ab1263#0
+=cs
+Gramatický výklad
+⟦A kẻo B⟧ znamená „je třeba A, aby ne-B; A, jinak B“. Podobný význam má ⟦nếu không thì⟧.
+⟦Xin ông viết địa chỉ cho rõ, kẻo sẽ bị gửi nhầm.⟧ → Napište prosím adresu čitelně, aby se zásilka neposlala omylem jinam. · ⟦Bây giờ tôi phải đi ngay kẻo trễ chuyến tàu.⟧ → Musím hned vyrazit, jinak mi ujede vlak. · ⟦Anh chú ý giữ thẻ ngân hàng cẩn thận kẻo bị mất.⟧ → Dávej dobrý pozor na bankovní kartu, ať ji neztratíš.
+=zh_cn
+语法解说
+⟦A kẻo B⟧ 意为“要A，免得B；A，不然B”。意思相近的有 ⟦nếu không thì⟧。
+⟦Xin ông viết địa chỉ cho rõ, kẻo sẽ bị gửi nhầm.⟧ → 请把地址写清楚，免得寄错。 · ⟦Bây giờ tôi phải đi ngay kẻo trễ chuyến tàu.⟧ → 我现在得马上走，不然赶不上车了。 · ⟦Anh chú ý giữ thẻ ngân hàng cẩn thận kẻo bị mất.⟧ → 你要小心保管银行卡，免得弄丢。
+=zh
+文法解說
+⟦A kẻo B⟧ 意為「要A，免得B；A，不然B」。意思相近的有 ⟦nếu không thì⟧。
+⟦Xin ông viết địa chỉ cho rõ, kẻo sẽ bị gửi nhầm.⟧ → 請把地址寫清楚，免得寄錯。 · ⟦Bây giờ tôi phải đi ngay kẻo trễ chuyến tàu.⟧ → 我現在得馬上走，不然趕不上車了。 · ⟦Anh chú ý giữ thẻ ngân hàng cẩn thận kẻo bị mất.⟧ → 你要小心保管金融卡，免得弄丟。
+=en
+Grammar notes
+⟦A kẻo B⟧ means "do A so that B doesn't happen; A, otherwise B". ⟦nếu không thì⟧ has a similar meaning.
+⟦Xin ông viết địa chỉ cho rõ, kẻo sẽ bị gửi nhầm.⟧ → Please write the address clearly so it isn't sent to the wrong place. · ⟦Bây giờ tôi phải đi ngay kẻo trễ chuyến tàu.⟧ → I must leave right now or I'll miss the train. · ⟦Anh chú ý giữ thẻ ngân hàng cẩn thận kẻo bị mất.⟧ → Take good care of your bank card so you don't lose it.
+=fr
+Notes de grammaire
+⟦A kẻo B⟧ signifie « il faut A pour ne pas B ; A, sinon B ». ⟦nếu không thì⟧ a un sens proche.
+⟦Xin ông viết địa chỉ cho rõ, kẻo sẽ bị gửi nhầm.⟧ → Veuillez écrire l'adresse lisiblement, sinon l'envoi risque de se tromper de destinataire. · ⟦Bây giờ tôi phải đi ngay kẻo trễ chuyến tàu.⟧ → Je dois partir tout de suite, sinon je vais rater le train. · ⟦Anh chú ý giữ thẻ ngân hàng cẩn thận kẻo bị mất.⟧ → Fais bien attention à ta carte bancaire pour ne pas la perdre.
+=de
+Grammatikerläuterungen
+⟦A kẻo B⟧ bedeutet „A tun, damit nicht B; A, sonst B“. Ähnlich ist ⟦nếu không thì⟧.
+⟦Xin ông viết địa chỉ cho rõ, kẻo sẽ bị gửi nhầm.⟧ → Bitte schreiben Sie die Adresse deutlich, damit die Sendung nicht falsch zugestellt wird. · ⟦Bây giờ tôi phải đi ngay kẻo trễ chuyến tàu.⟧ → Ich muss sofort los, sonst verpasse ich den Zug. · ⟦Anh chú ý giữ thẻ ngân hàng cẩn thận kẻo bị mất.⟧ → Pass gut auf deine Bankkarte auf, damit du sie nicht verlierst.
+=hu
+Nyelvtani magyarázat
+Az ⟦A kẻo B⟧ jelentése „tedd A-t, nehogy B; A, különben B”. Hasonló jelentésű a ⟦nếu không thì⟧.
+⟦Xin ông viết địa chỉ cho rõ, kẻo sẽ bị gửi nhầm.⟧ → Kérem, írja olvashatóan a címet, nehogy rossz helyre küldjék. · ⟦Bây giờ tôi phải đi ngay kẻo trễ chuyến tàu.⟧ → Azonnal indulnom kell, különben lekésem a vonatot. · ⟦Anh chú ý giữ thẻ ngân hàng cẩn thận kẻo bị mất.⟧ → Vigyázz jól a bankkártyádra, nehogy elveszítsd.
+=id
+Penjelasan tata bahasa
+⟦A kẻo B⟧ berarti "lakukan A agar tidak B; A, kalau tidak B". Maknanya mirip dengan ⟦nếu không thì⟧.
+⟦Xin ông viết địa chỉ cho rõ, kẻo sẽ bị gửi nhầm.⟧ → Mohon tulis alamat dengan jelas agar tidak salah kirim. · ⟦Bây giờ tôi phải đi ngay kẻo trễ chuyến tàu.⟧ → Saya harus berangkat sekarang, nanti ketinggalan kereta. · ⟦Anh chú ý giữ thẻ ngân hàng cẩn thận kẻo bị mất.⟧ → Simpan kartu bankmu baik-baik agar tidak hilang.
+=ja
+文法解説
+⟦A kẻo B⟧ の形で「Bしないように Aしなければならない」という意味で使われます。似た意味の表現に ⟦nếu không thì⟧ があります。
+⟦Xin ông viết địa chỉ cho rõ, kẻo sẽ bị gửi nhầm.⟧ → 誤配送されないよう、住所をはっきり書いてください。 · ⟦Bây giờ tôi phải đi ngay kẻo trễ chuyến tàu.⟧ → 列車に遅れないよう、今すぐ行かなければならない。 · ⟦Anh chú ý giữ thẻ ngân hàng cẩn thận kẻo bị mất.⟧ → なくさないよう、銀行カードを大切に持っていてください。
+=pl
+Objaśnienia gramatyczne
+⟦A kẻo B⟧ znaczy „trzeba A, żeby nie B; A, bo inaczej B”. Podobne znaczenie ma ⟦nếu không thì⟧.
+⟦Xin ông viết địa chỉ cho rõ, kẻo sẽ bị gửi nhầm.⟧ → Proszę wyraźnie napisać adres, żeby przesyłka nie trafiła gdzie indziej. · ⟦Bây giờ tôi phải đi ngay kẻo trễ chuyến tàu.⟧ → Muszę zaraz iść, bo spóźnię się na pociąg. · ⟦Anh chú ý giữ thẻ ngân hàng cẩn thận kẻo bị mất.⟧ → Uważaj na kartę bankową, żeby jej nie zgubić.
+@@ pdf-grammar-5fb08b6649d90164#0
+=cs
+Gramatický výklad
+⟦mỗi⟧ a ⟦từng⟧ se překládají jako „každý (jednotlivě)“. Rozdíl je v tom, že ⟦từng⟧ znamená „postupně jeden po druhém, v pořadí“, kdežto ⟦mỗi⟧ znamená „každý jednotlivý“ bez ohledu na pořadí.
+⟦từng⟧: ⟦Anh ấy nhớ rõ từng câu từng chữ của thầy.⟧ → Pamatuje si přesně každou větu a každé slovo učitele. · ⟦Từ khi con trai đi du học, bà ấy đếm từng ngày để mong con về.⟧ → Od té doby, co syn odjel studovat do ciziny, počítá každý den a čeká na jeho návrat.
+⟦mỗi⟧: ⟦Mỗi sinh viên được vay tối đa là 100 triệu đồng.⟧ → Každý student si může půjčit maximálně 100 milionů dongů. · ⟦Anh John về nước thăm gia đình mỗi năm hai lần.⟧ → John jezdí domů za rodinou dvakrát ročně.
+⟦có A mới B⟧ znamená „teprve když (je) A, pak B“.
+⟦Có sức khỏe mới làm việc tốt được.⟧ → Jen když je člověk zdravý, může dobře pracovat. · ⟦Có học chăm chỉ mới nói tiếng Việt giỏi.⟧ → Jen když se budeš pilně učit, budeš dobře mluvit vietnamsky.
+=zh_cn
+语法解说
+⟦mỗi⟧ 和 ⟦từng⟧ 都可译为“每、各个”。区别在于 ⟦từng⟧ 表示按顺序“一个一个地、逐一”，而 ⟦mỗi⟧ 表示不按顺序的“每个、各个”。
+⟦từng⟧：⟦Anh ấy nhớ rõ từng câu từng chữ của thầy.⟧ → 他清楚地记得老师的每一句话、每一个字。 · ⟦Từ khi con trai đi du học, bà ấy đếm từng ngày để mong con về.⟧ → 自从儿子出国留学，她一天一天地数着日子盼儿子回来。
+⟦mỗi⟧：⟦Mỗi sinh viên được vay tối đa là 100 triệu đồng.⟧ → 每个大学生最多可以贷款1亿越盾。 · ⟦Anh John về nước thăm gia đình mỗi năm hai lần.⟧ → 约翰每年回国探亲两次。
+⟦có A mới B⟧ 意为“有了A才能B”。
+⟦Có sức khỏe mới làm việc tốt được.⟧ → 有健康才能把工作做好。 · ⟦Có học chăm chỉ mới nói tiếng Việt giỏi.⟧ → 只有努力学习，才能说好越南语。
+=zh
+文法解說
+⟦mỗi⟧ 和 ⟦từng⟧ 都可譯為「每、各個」。區別在於 ⟦từng⟧ 表示按順序「一個一個地、逐一」，而 ⟦mỗi⟧ 表示不按順序的「每個、各個」。
+⟦từng⟧：⟦Anh ấy nhớ rõ từng câu từng chữ của thầy.⟧ → 他清楚記得老師的每一句話、每一個字。 · ⟦Từ khi con trai đi du học, bà ấy đếm từng ngày để mong con về.⟧ → 自從兒子出國留學，她一天一天地數著日子盼兒子回來。
+⟦mỗi⟧：⟦Mỗi sinh viên được vay tối đa là 100 triệu đồng.⟧ → 每個大學生最多可以貸款1億越南盾。 · ⟦Anh John về nước thăm gia đình mỗi năm hai lần.⟧ → 約翰每年回國探親兩次。
+⟦có A mới B⟧ 意為「有了A才能B」。
+⟦Có sức khỏe mới làm việc tốt được.⟧ → 有健康才能把工作做好。 · ⟦Có học chăm chỉ mới nói tiếng Việt giỏi.⟧ → 只有認真讀書，才能說好越南語。
+=en
+Grammar notes
+⟦mỗi⟧ and ⟦từng⟧ are both translated as "each, every". The difference is that ⟦từng⟧ means "one by one, in order", whereas ⟦mỗi⟧ means "each individual" without regard to order.
+⟦từng⟧: ⟦Anh ấy nhớ rõ từng câu từng chữ của thầy.⟧ → He clearly remembers every sentence and every word his teacher said. · ⟦Từ khi con trai đi du học, bà ấy đếm từng ngày để mong con về.⟧ → Since her son went abroad to study, she has counted every day waiting for him to come home.
+⟦mỗi⟧: ⟦Mỗi sinh viên được vay tối đa là 100 triệu đồng.⟧ → Each student can borrow up to 100 million dong. · ⟦Anh John về nước thăm gia đình mỗi năm hai lần.⟧ → John goes home to visit his family twice a year.
+⟦có A mới B⟧ means "only with A can B, only when A (then) B".
+⟦Có sức khỏe mới làm việc tốt được.⟧ → Only if you're healthy can you work well. · ⟦Có học chăm chỉ mới nói tiếng Việt giỏi.⟧ → Only by studying hard will you speak Vietnamese well.
+=fr
+Notes de grammaire
+⟦mỗi⟧ et ⟦từng⟧ se traduisent tous deux par « chaque ». La différence : ⟦từng⟧ signifie « un par un, dans l'ordre », tandis que ⟦mỗi⟧ signifie « chaque » sans notion d'ordre.
+⟦từng⟧ : ⟦Anh ấy nhớ rõ từng câu từng chữ của thầy.⟧ → Il se souvient précisément de chaque phrase et de chaque mot de son professeur. · ⟦Từ khi con trai đi du học, bà ấy đếm từng ngày để mong con về.⟧ → Depuis que son fils est parti étudier à l'étranger, elle compte les jours en attendant son retour.
+⟦mỗi⟧ : ⟦Mỗi sinh viên được vay tối đa là 100 triệu đồng.⟧ → Chaque étudiant peut emprunter au maximum 100 millions de dongs. · ⟦Anh John về nước thăm gia đình mỗi năm hai lần.⟧ → John rentre voir sa famille deux fois par an.
+⟦có A mới B⟧ signifie « ce n'est qu'avec A que B ».
+⟦Có sức khỏe mới làm việc tốt được.⟧ → Ce n'est qu'en bonne santé qu'on peut bien travailler. · ⟦Có học chăm chỉ mới nói tiếng Việt giỏi.⟧ → Ce n'est qu'en étudiant sérieusement qu'on parle bien vietnamien.
+=de
+Grammatikerläuterungen
+⟦mỗi⟧ und ⟦từng⟧ werden beide mit „jede(r/s)“ übersetzt. Der Unterschied: ⟦từng⟧ bedeutet „einer nach dem anderen, der Reihe nach“, ⟦mỗi⟧ dagegen „jede(r/s) einzelne“ ohne Reihenfolge.
+⟦từng⟧: ⟦Anh ấy nhớ rõ từng câu từng chữ của thầy.⟧ → Er erinnert sich genau an jeden Satz und jedes Wort seines Lehrers. · ⟦Từ khi con trai đi du học, bà ấy đếm từng ngày để mong con về.⟧ → Seit ihr Sohn zum Studium ins Ausland ging, zählt sie jeden Tag bis zu seiner Rückkehr.
+⟦mỗi⟧: ⟦Mỗi sinh viên được vay tối đa là 100 triệu đồng.⟧ → Jeder Student kann bis zu 100 Millionen Dong leihen. · ⟦Anh John về nước thăm gia đình mỗi năm hai lần.⟧ → John fliegt zweimal im Jahr nach Hause, um seine Familie zu besuchen.
+⟦có A mới B⟧ bedeutet „nur mit A kann B, erst wenn A, dann B“.
+⟦Có sức khỏe mới làm việc tốt được.⟧ → Nur wer gesund ist, kann gut arbeiten. · ⟦Có học chăm chỉ mới nói tiếng Việt giỏi.⟧ → Nur wer fleißig lernt, spricht gut Vietnamesisch.
+=hu
+Nyelvtani magyarázat
+A ⟦mỗi⟧ és a ⟦từng⟧ egyaránt „minden egyes” jelentésű. A különbség: a ⟦từng⟧ azt jelenti, hogy „sorban, egyenként”, a ⟦mỗi⟧ pedig „minden egyes” sorrendtől függetlenül.
+⟦từng⟧: ⟦Anh ấy nhớ rõ từng câu từng chữ của thầy.⟧ → Pontosan emlékszik a tanára minden egyes mondatára és szavára. · ⟦Từ khi con trai đi du học, bà ấy đếm từng ngày để mong con về.⟧ → Mióta a fia külföldre ment tanulni, napról napra számolja a napokat, várva, hogy hazajöjjön.
+⟦mỗi⟧: ⟦Mỗi sinh viên được vay tối đa là 100 triệu đồng.⟧ → Minden hallgató legfeljebb 100 millió dong kölcsönt vehet fel. · ⟦Anh John về nước thăm gia đình mỗi năm hai lần.⟧ → John évente kétszer hazautazik meglátogatni a családját.
+A ⟦có A mới B⟧ jelentése „csak ha A, akkor B”.
+⟦Có sức khỏe mới làm việc tốt được.⟧ → Csak egészségesen lehet jól dolgozni. · ⟦Có học chăm chỉ mới nói tiếng Việt giỏi.⟧ → Csak szorgalmas tanulással lehet jól beszélni vietnamiul.
+=id
+Penjelasan tata bahasa
+⟦mỗi⟧ dan ⟦từng⟧ sama-sama diterjemahkan "setiap, masing-masing". Bedanya, ⟦từng⟧ berarti "satu per satu secara berurutan", sedangkan ⟦mỗi⟧ berarti "masing-masing" tanpa urutan.
+⟦từng⟧: ⟦Anh ấy nhớ rõ từng câu từng chữ của thầy.⟧ → Dia ingat jelas setiap kalimat dan setiap kata gurunya. · ⟦Từ khi con trai đi du học, bà ấy đếm từng ngày để mong con về.⟧ → Sejak putranya pergi belajar ke luar negeri, dia menghitung hari demi hari menanti anaknya pulang.
+⟦mỗi⟧: ⟦Mỗi sinh viên được vay tối đa là 100 triệu đồng.⟧ → Setiap mahasiswa boleh meminjam maksimal 100 juta dong. · ⟦Anh John về nước thăm gia đình mỗi năm hai lần.⟧ → John pulang ke negaranya menjenguk keluarga dua kali setahun.
+⟦có A mới B⟧ berarti "hanya dengan A barulah B".
+⟦Có sức khỏe mới làm việc tốt được.⟧ → Hanya dengan kesehatan barulah bisa bekerja dengan baik. · ⟦Có học chăm chỉ mới nói tiếng Việt giỏi.⟧ → Hanya dengan belajar rajin barulah bisa berbahasa Vietnam dengan baik.
+=ja
+文法解説
+⟦mỗi⟧ と ⟦từng⟧ は切り離した「一つ一つ」「それぞれの」「個々の」「～ごとに」と訳されます。ただし、⟦từng⟧ は順序に従って「順々に」「～ごとに」という意味を持つのに対し、⟦mỗi⟧ は順序によらない「個々の」「それぞれの」という意味で使われる点が違います。
+⟦từng⟧：⟦Anh ấy nhớ rõ từng câu từng chữ của thầy.⟧ → 彼は先生の言った一文一文、一字一字をはっきり覚えている。 · ⟦Từ khi con trai đi du học, bà ấy đếm từng ngày để mong con về.⟧ → 息子が留学してから、彼女は息子の帰りを待ちながら一日一日を数えた。
+⟦mỗi⟧：⟦Mỗi sinh viên được vay tối đa là 100 triệu đồng.⟧ → 大学生は一人につき最大1億ドンまで借りられる。 · ⟦Anh John về nước thăm gia đình mỗi năm hai lần.⟧ → ジョンさんは毎年2回帰国して家族に会う。
+⟦có A mới B⟧ の形で「Aがあってこそ Bする」という意味で使われます。
+⟦Có sức khỏe mới làm việc tốt được.⟧ → 健康であってこそ、よい仕事ができる。 · ⟦Có học chăm chỉ mới nói tiếng Việt giỏi.⟧ → 一生懸命勉強してこそ、ベトナム語が上手に話せるようになる。
+=pl
+Objaśnienia gramatyczne
+⟦mỗi⟧ i ⟦từng⟧ tłumaczy się jako „każdy (z osobna)”. Różnica polega na tym, że ⟦từng⟧ znaczy „po kolei, jeden po drugim”, a ⟦mỗi⟧ „każdy poszczególny” bez względu na kolejność.
+⟦từng⟧: ⟦Anh ấy nhớ rõ từng câu từng chữ của thầy.⟧ → Dokładnie pamięta każde zdanie i każde słowo nauczyciela. · ⟦Từ khi con trai đi du học, bà ấy đếm từng ngày để mong con về.⟧ → Odkąd syn wyjechał na studia za granicę, liczy każdy dzień do jego powrotu.
+⟦mỗi⟧: ⟦Mỗi sinh viên được vay tối đa là 100 triệu đồng.⟧ → Każdy student może pożyczyć maksymalnie 100 milionów dongów. · ⟦Anh John về nước thăm gia đình mỗi năm hai lần.⟧ → John jeździ do kraju odwiedzić rodzinę dwa razy w roku.
+⟦có A mới B⟧ znaczy „dopiero mając A, można B”.
+⟦Có sức khỏe mới làm việc tốt được.⟧ → Tylko będąc zdrowym, można dobrze pracować. · ⟦Có học chăm chỉ mới nói tiếng Việt giỏi.⟧ → Tylko pilnie się ucząc, będziesz dobrze mówić po wietnamsku.
+@@ pdf-grammar-852d4766741cde3a#0
+=cs
+Gramatický výklad
+⟦gửi lời A đến B⟧ znamená „vyřídit / poslat B vzkaz A“.
+⟦gửi lời chúc sức khỏe đến…⟧ → poslat … přání pevného zdraví · ⟦gửi lời thăm hỏi đến…⟧ → poslat … pozdrav (a optat se, jak se daří) · ⟦gửi lời chúc mừng đến…⟧ → poslat … blahopřání · ⟦gửi lời chào đến…⟧ → vyřídit … pozdrav · ⟦gửi lời chia buồn đến…⟧ → vyjádřit … soustrast
+⟦thế nào cũng⟧ + přísudek se používá, když mluvčí věří, že se něco určitě stane: „tak či onak, určitě ~“.
+⟦Chiều nay thế nào cũng có mưa.⟧ → Odpoledne bude určitě pršet. · ⟦Tôi thế nào cũng đến dự lễ cưới của anh chị.⟧ → Na vaši svatbu určitě přijdu.
+⟦hoặc⟧ i ⟦hay⟧ znamenají „nebo“, ale ⟦hoặc⟧ se užívá jen v oznamovacích větách, zatímco ⟦hay⟧ v oznamovacích i tázacích.
+⟦Chị có thể gặp tôi buổi sáng hoặc buổi chiều.⟧ → Můžeš se se mnou sejít dopoledne nebo odpoledne. · ⟦Em định đi học hay đi làm?⟧ → Chceš studovat, nebo pracovat?
+⟦xin phép⟧ znamená „požádat o svolení“.
+⟦Xin phép nâng cốc chúc sức khỏe mọi người!⟧ → Dovolte mi pozvednout sklenici na zdraví všech! · ⟦Lan xin phép cô giáo nghỉ một ngày để đi bệnh viện.⟧ → Lan požádala učitelku o den volna, aby mohla jít do nemocnice.
+=zh_cn
+语法解说
+⟦gửi lời A đến B⟧ 意为“向B转达A、致以A”。
+⟦gửi lời chúc sức khỏe đến…⟧ → 向……致以健康的祝福 · ⟦gửi lời thăm hỏi đến…⟧ → 向……问好 · ⟦gửi lời chúc mừng đến…⟧ → 向……表示祝贺 · ⟦gửi lời chào đến…⟧ → 向……问候 · ⟦gửi lời chia buồn đến…⟧ → 向……表示慰问（哀悼）
+⟦thế nào cũng⟧ + 谓语，用于说话人确信所说的事一定会发生，意为“无论如何都……、一定……”。
+⟦Chiều nay thế nào cũng có mưa.⟧ → 今天下午一定会下雨。 · ⟦Tôi thế nào cũng đến dự lễ cưới của anh chị.⟧ → 你们的婚礼我无论如何都会去参加。
+⟦hoặc⟧、⟦hay⟧ 都表示“或者”，但 ⟦hoặc⟧ 只用于陈述句，⟦hay⟧ 陈述句和疑问句都可以用。
+⟦Chị có thể gặp tôi buổi sáng hoặc buổi chiều.⟧ → 你可以上午或下午来见我。 · ⟦Em định đi học hay đi làm?⟧ → 你打算读书还是工作？
+⟦xin phép⟧ 表示向对方“请求允许”。
+⟦Xin phép nâng cốc chúc sức khỏe mọi người!⟧ → 请允许我举杯祝大家身体健康！ · ⟦Lan xin phép cô giáo nghỉ một ngày để đi bệnh viện.⟧ → 阿兰向老师请了一天假去医院。
+=zh
+文法解說
+⟦gửi lời A đến B⟧ 意為「向B轉達A、致上A」。
+⟦gửi lời chúc sức khỏe đến…⟧ → 向……致上健康的祝福 · ⟦gửi lời thăm hỏi đến…⟧ → 向……問好 · ⟦gửi lời chúc mừng đến…⟧ → 向……表示祝賀 · ⟦gửi lời chào đến…⟧ → 向……問候 · ⟦gửi lời chia buồn đến…⟧ → 向……致哀、表示慰問
+⟦thế nào cũng⟧ + 謂語，用於說話者確信所說的事一定會發生，意為「無論如何都……、一定……」。
+⟦Chiều nay thế nào cũng có mưa.⟧ → 今天下午一定會下雨。 · ⟦Tôi thế nào cũng đến dự lễ cưới của anh chị.⟧ → 你們的婚禮我無論如何都會去參加。
+⟦hoặc⟧、⟦hay⟧ 都表示「或者」，但 ⟦hoặc⟧ 只用於直述句，⟦hay⟧ 直述句和疑問句都可以用。
+⟦Chị có thể gặp tôi buổi sáng hoặc buổi chiều.⟧ → 妳可以上午或下午來見我。 · ⟦Em định đi học hay đi làm?⟧ → 你打算讀書還是工作？
+⟦xin phép⟧ 表示向對方「請求允許」。
+⟦Xin phép nâng cốc chúc sức khỏe mọi người!⟧ → 請容我舉杯祝大家身體健康！ · ⟦Lan xin phép cô giáo nghỉ một ngày để đi bệnh viện.⟧ → 阿蘭向老師請一天假去醫院。
+=en
+Grammar notes
+⟦gửi lời A đến B⟧ means "to send A (a message) to B".
+⟦gửi lời chúc sức khỏe đến…⟧ → to send wishes for good health to… · ⟦gửi lời thăm hỏi đến…⟧ → to send one's regards to… · ⟦gửi lời chúc mừng đến…⟧ → to send congratulations to… · ⟦gửi lời chào đến…⟧ → to send greetings to… · ⟦gửi lời chia buồn đến…⟧ → to send condolences to…
+⟦thế nào cũng⟧ + predicate is used when the speaker firmly believes something will happen: "one way or another, definitely ~".
+⟦Chiều nay thế nào cũng có mưa.⟧ → It's definitely going to rain this afternoon. · ⟦Tôi thế nào cũng đến dự lễ cưới của anh chị.⟧ → I'll definitely come to your wedding, whatever happens.
+⟦hoặc⟧ and ⟦hay⟧ both mean "or", but ⟦hoặc⟧ is only used in statements, whereas ⟦hay⟧ can be used in both statements and questions.
+⟦Chị có thể gặp tôi buổi sáng hoặc buổi chiều.⟧ → You can meet me in the morning or the afternoon. · ⟦Em định đi học hay đi làm?⟧ → Do you plan to study or to work?
+⟦xin phép⟧ means "to ask permission".
+⟦Xin phép nâng cốc chúc sức khỏe mọi người!⟧ → Allow me to raise a glass to everyone's health! · ⟦Lan xin phép cô giáo nghỉ một ngày để đi bệnh viện.⟧ → Lan asked her teacher for a day off to go to hospital.
+=fr
+Notes de grammaire
+⟦gửi lời A đến B⟧ signifie « transmettre A (un message) à B ».
+⟦gửi lời chúc sức khỏe đến…⟧ → adresser des vœux de bonne santé à… · ⟦gửi lời thăm hỏi đến…⟧ → transmettre ses amitiés à… · ⟦gửi lời chúc mừng đến…⟧ → adresser ses félicitations à… · ⟦gửi lời chào đến…⟧ → transmettre ses salutations à… · ⟦gửi lời chia buồn đến…⟧ → présenter ses condoléances à…
+⟦thế nào cũng⟧ + prédicat s'emploie quand le locuteur croit fermement qu'une chose va se produire : « quoi qu'il arrive, sûrement ~ ».
+⟦Chiều nay thế nào cũng có mưa.⟧ → Cet après-midi, il va sûrement pleuvoir. · ⟦Tôi thế nào cũng đến dự lễ cưới của anh chị.⟧ → Quoi qu'il arrive, je viendrai à votre mariage.
+⟦hoặc⟧ et ⟦hay⟧ signifient tous deux « ou », mais ⟦hoặc⟧ ne s'emploie que dans les phrases affirmatives, tandis que ⟦hay⟧ s'emploie aussi dans les questions.
+⟦Chị có thể gặp tôi buổi sáng hoặc buổi chiều.⟧ → Tu peux me voir le matin ou l'après-midi. · ⟦Em định đi học hay đi làm?⟧ → Tu comptes étudier ou travailler ?
+⟦xin phép⟧ signifie « demander la permission ».
+⟦Xin phép nâng cốc chúc sức khỏe mọi người!⟧ → Permettez-moi de lever mon verre à la santé de tous ! · ⟦Lan xin phép cô giáo nghỉ một ngày để đi bệnh viện.⟧ → Lan a demandé à son institutrice un jour d'absence pour aller à l'hôpital.
+=de
+Grammatikerläuterungen
+⟦gửi lời A đến B⟧ bedeutet „B A (eine Botschaft) übermitteln“.
+⟦gửi lời chúc sức khỏe đến…⟧ → … Gesundheitswünsche übermitteln · ⟦gửi lời thăm hỏi đến…⟧ → … Grüße ausrichten · ⟦gửi lời chúc mừng đến…⟧ → … Glückwünsche übermitteln · ⟦gửi lời chào đến…⟧ → … Grüße bestellen · ⟦gửi lời chia buồn đến…⟧ → … sein Beileid aussprechen
+⟦thế nào cũng⟧ + Prädikat wird verwendet, wenn der Sprecher fest glaubt, dass etwas eintritt: „auf jeden Fall, bestimmt ~“.
+⟦Chiều nay thế nào cũng có mưa.⟧ → Heute Nachmittag regnet es auf jeden Fall. · ⟦Tôi thế nào cũng đến dự lễ cưới của anh chị.⟧ → Zu eurer Hochzeit komme ich auf jeden Fall.
+⟦hoặc⟧ und ⟦hay⟧ bedeuten beide „oder“, aber ⟦hoặc⟧ steht nur in Aussagesätzen, ⟦hay⟧ dagegen in Aussage- und Fragesätzen.
+⟦Chị có thể gặp tôi buổi sáng hoặc buổi chiều.⟧ → Du kannst mich vormittags oder nachmittags treffen. · ⟦Em định đi học hay đi làm?⟧ → Willst du studieren oder arbeiten?
+⟦xin phép⟧ bedeutet „um Erlaubnis bitten“.
+⟦Xin phép nâng cốc chúc sức khỏe mọi người!⟧ → Erlauben Sie mir, das Glas auf die Gesundheit aller zu erheben! · ⟦Lan xin phép cô giáo nghỉ một ngày để đi bệnh viện.⟧ → Lan bat ihre Lehrerin um einen freien Tag, um ins Krankenhaus zu gehen.
+=hu
+Nyelvtani magyarázat
+A ⟦gửi lời A đến B⟧ jelentése „A-t (üzenetet) küldeni / átadni B-nek”.
+⟦gửi lời chúc sức khỏe đến…⟧ → jó egészséget kívánni …-nak · ⟦gửi lời thăm hỏi đến…⟧ → üdvözletét küldeni …-nak · ⟦gửi lời chúc mừng đến…⟧ → gratulációt küldeni …-nak · ⟦gửi lời chào đến…⟧ → üdvözletet átadni …-nak · ⟦gửi lời chia buồn đến…⟧ → részvétet nyilvánítani …-nak
+A ⟦thế nào cũng⟧ + állítmány akkor használatos, ha a beszélő biztos benne, hogy valami megtörténik: „mindenképp, biztosan ~”.
+⟦Chiều nay thế nào cũng có mưa.⟧ → Ma délután biztosan esni fog. · ⟦Tôi thế nào cũng đến dự lễ cưới của anh chị.⟧ → Az esküvőtökre mindenképp eljövök.
+A ⟦hoặc⟧ és a ⟦hay⟧ is „vagy” jelentésű, de a ⟦hoặc⟧ csak kijelentő mondatban, a ⟦hay⟧ kijelentő és kérdő mondatban is használható.
+⟦Chị có thể gặp tôi buổi sáng hoặc buổi chiều.⟧ → Délelőtt vagy délután találkozhatsz velem. · ⟦Em định đi học hay đi làm?⟧ → Tanulni akarsz vagy dolgozni?
+A ⟦xin phép⟧ jelentése „engedélyt kérni”.
+⟦Xin phép nâng cốc chúc sức khỏe mọi người!⟧ → Engedjék meg, hogy poharamat emeljem mindenki egészségére! · ⟦Lan xin phép cô giáo nghỉ một ngày để đi bệnh viện.⟧ → Lan egy nap szabadságot kért a tanárnőtől, hogy kórházba menjen.
+=id
+Penjelasan tata bahasa
+⟦gửi lời A đến B⟧ berarti "menyampaikan A (pesan) kepada B".
+⟦gửi lời chúc sức khỏe đến…⟧ → menyampaikan doa kesehatan kepada… · ⟦gửi lời thăm hỏi đến…⟧ → menyampaikan salam kepada… · ⟦gửi lời chúc mừng đến…⟧ → menyampaikan ucapan selamat kepada… · ⟦gửi lời chào đến…⟧ → menyampaikan salam kepada… · ⟦gửi lời chia buồn đến…⟧ → menyampaikan belasungkawa kepada…
+⟦thế nào cũng⟧ + predikat dipakai saat pembicara yakin sesuatu pasti terjadi: "bagaimanapun juga, pasti ~".
+⟦Chiều nay thế nào cũng có mưa.⟧ → Sore ini pasti hujan. · ⟦Tôi thế nào cũng đến dự lễ cưới của anh chị.⟧ → Bagaimanapun juga saya akan datang ke pernikahan kalian.
+⟦hoặc⟧ dan ⟦hay⟧ sama-sama berarti "atau", tetapi ⟦hoặc⟧ hanya dipakai dalam kalimat berita, sedangkan ⟦hay⟧ bisa dalam kalimat berita maupun tanya.
+⟦Chị có thể gặp tôi buổi sáng hoặc buổi chiều.⟧ → Kakak bisa menemui saya pagi atau sore. · ⟦Em định đi học hay đi làm?⟧ → Kamu mau kuliah atau bekerja?
+⟦xin phép⟧ berarti "minta izin".
+⟦Xin phép nâng cốc chúc sức khỏe mọi người!⟧ → Izinkan saya mengangkat gelas untuk kesehatan semua orang! · ⟦Lan xin phép cô giáo nghỉ một ngày để đi bệnh viện.⟧ → Lan minta izin kepada gurunya untuk libur sehari ke rumah sakit.
+=ja
+文法解説
+⟦gửi lời A đến B⟧ の形で「Aという内容をBに送る / 伝える」という意味で使われます。
+⟦gửi lời chúc sức khỏe đến…⟧ → 健康を祈る言葉を…に伝える · ⟦gửi lời thăm hỏi đến…⟧ → よろしくと…に伝える · ⟦gửi lời chúc mừng đến…⟧ → お祝いを…に伝える · ⟦gửi lời chào đến…⟧ → あいさつを…に伝える · ⟦gửi lời chia buồn đến…⟧ → お悔やみを…に伝える
+⟦thế nào cũng⟧ + 述語の形で、話し手が言うことが確実に起こると信じてそれを話すときに「何としても、きっと～する」という意味で使われます。
+⟦Chiều nay thế nào cũng có mưa.⟧ → 午後にはきっと雨が降る。 · ⟦Tôi thế nào cũng đến dự lễ cưới của anh chị.⟧ → 何としてもお二人の結婚式に出席します。
+⟦hoặc⟧、⟦hay⟧ はどちらも「または」という意味ですが、⟦hoặc⟧ は平叙文にのみ使われるのに対し、⟦hay⟧ は平叙文と疑問文の両方に使えます。
+⟦Chị có thể gặp tôi buổi sáng hoặc buổi chiều.⟧ → 午前か午後に私に会えますよ。 · ⟦Em định đi học hay đi làm?⟧ → 勉強するつもり？それとも働くつもり？
+⟦xin phép⟧ は相手にある行為や事柄の「許可をもらう」という意味で使われます。
+⟦Xin phép nâng cốc chúc sức khỏe mọi người!⟧ → お許しいただければ、皆さんの健康を祝して乾杯したいと思います！ · ⟦Lan xin phép cô giáo nghỉ một ngày để đi bệnh viện.⟧ → ランは病院に行くため、先生に一日休む許可をもらった。
+=pl
+Objaśnienia gramatyczne
+⟦gửi lời A đến B⟧ znaczy „przekazać B wiadomość A”.
+⟦gửi lời chúc sức khỏe đến…⟧ → przesłać … życzenia zdrowia · ⟦gửi lời thăm hỏi đến…⟧ → przesłać … pozdrowienia · ⟦gửi lời chúc mừng đến…⟧ → przesłać … gratulacje · ⟦gửi lời chào đến…⟧ → przekazać … pozdrowienia · ⟦gửi lời chia buồn đến…⟧ → złożyć … kondolencje
+⟦thế nào cũng⟧ + orzeczenie używa się, gdy mówiący jest przekonany, że coś na pewno nastąpi: „tak czy inaczej, na pewno ~”.
+⟦Chiều nay thế nào cũng có mưa.⟧ → Po południu na pewno będzie padać. · ⟦Tôi thế nào cũng đến dự lễ cưới của anh chị.⟧ → Tak czy inaczej przyjdę na wasz ślub.
+⟦hoặc⟧ i ⟦hay⟧ znaczą „lub, albo”, ale ⟦hoặc⟧ stosuje się tylko w zdaniach oznajmujących, a ⟦hay⟧ zarówno w oznajmujących, jak i pytających.
+⟦Chị có thể gặp tôi buổi sáng hoặc buổi chiều.⟧ → Możesz się ze mną spotkać rano lub po południu. · ⟦Em định đi học hay đi làm?⟧ → Zamierzasz się uczyć czy pracować?
+⟦xin phép⟧ znaczy „prosić o pozwolenie”.
+⟦Xin phép nâng cốc chúc sức khỏe mọi người!⟧ → Pozwólcie, że wzniosę toast za zdrowie wszystkich! · ⟦Lan xin phép cô giáo nghỉ một ngày để đi bệnh viện.⟧ → Lan poprosiła nauczycielkę o dzień wolny, żeby pójść do szpitala.

@@ -1,0 +1,182 @@
+@@ pdf-grammar-737da42fe4ac72e3#0
+=cs
+Gramatický výklad
+⟦đâu đâu⟧: označuje všechna místa bez výjimky – „všude, na každém místě, všude možně“.
+⟦Việt Nam, đâu đâu cũng có những lũy tre xanh tốt bốn mùa.⟧ → Ve Vietnamu jsou všude bambusové háje, zelené po celý rok. · ⟦Đâu đâu cũng thấy tiếng cười tiếng nói.⟧ → Všude je slyšet smích a hovor. · ⟦Đâu đâu cũng treo đèn, kết hoa.⟧ → Všude visí lampiony a zdobí to květiny. · ⟦Đến với Việt Nam, đâu đâu bạn cũng thấy mọi người đều rất thân thiện.⟧ → Když přijedete do Vietnamu, všude uvidíte, že lidé jsou velmi přátelští.
+⟦nơi⟧ + (podmět + přísudek): může stát na začátku, uprostřed i na konci věty a označuje místo, kde k události dochází („v, na ~“).
+⟦Nơi vùng cao, tre trúc bạt ngàn trên núi đồi, đèo dốc.⟧ = ⟦Tre trúc bạt ngàn trên núi đồi, đèo dốc nơi vùng cao⟧ → Na horách pokrývá bambus nekonečné plochy kopců, průsmyků a svahů. · ⟦Nơi đồng bằng, những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng.⟧ = ⟦Những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng nơi đồng bằng.⟧ → V nížinách obklopují a chrání vesnice svěže zelené bambusové ploty. · ⟦Nơi rừng sâu, tre nứa đan nhau san sát.⟧ = ⟦Tre nứa đan nhau san sát nơi rừng sâu.⟧ → V hlubokém lese se bambus hustě proplétá.
+⟦khi⟧, ⟦lúc⟧ + (podmět–přísudek): „když, v době, kdy“ – může stát na začátku, uprostřed i na konci věty.
+⟦Khi vào hè, lũy tre như chiếc quạt khổng lồ xua tan cái oi bức.⟧ = ⟦Lũy tre như chiếc quạt khổng lồ xua tan cái oi bức khi vào hè.⟧ → Když přijde léto, bambusový háj jako obří vějíř zahání dusné horko. · ⟦Lũy tre lại hóa thành tấm bình phong ngăn những cơn gió rét mướt thổi vào xóm thôn khi sang đông.⟧ → Když přijde zima, bambusový háj se promění v zástěnu, která zadržuje mrazivý vítr vanoucí do vesnice. · ⟦Lúc vào hè, bóng tre trùm mát rượi.⟧ = ⟦Bóng tre trùm mát rượi lúc vào hè.⟧ → V létě vrhá bambus příjemně chladivý stín.
+=zh_cn
+语法解说
+⟦đâu đâu⟧：指没有遗漏的所有地方，意为“处处、到处、各地”。
+⟦Việt Nam, đâu đâu cũng có những lũy tre xanh tốt bốn mùa.⟧ → 在越南，到处都有四季常青的竹篱。 · ⟦Đâu đâu cũng thấy tiếng cười tiếng nói.⟧ → 处处都能听到欢声笑语。 · ⟦Đâu đâu cũng treo đèn, kết hoa.⟧ → 到处张灯结彩。 · ⟦Đến với Việt Nam, đâu đâu bạn cũng thấy mọi người đều rất thân thiện.⟧ → 来到越南，你到处都会发现人们非常友善。
+⟦nơi⟧ +（主语 + 谓语）：可用于句首、句中、句末等不同位置，表示某事发生的场所或地点。
+⟦Nơi vùng cao, tre trúc bạt ngàn trên núi đồi, đèo dốc.⟧ = ⟦Tre trúc bạt ngàn trên núi đồi, đèo dốc nơi vùng cao⟧ → 在高原地区，竹林漫山遍野，覆盖山坡和隘口。 · ⟦Nơi đồng bằng, những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng.⟧ = ⟦Những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng nơi đồng bằng.⟧ → 在平原，葱郁的竹篱环绕、守护着村庄。 · ⟦Nơi rừng sâu, tre nứa đan nhau san sát.⟧ = ⟦Tre nứa đan nhau san sát nơi rừng sâu.⟧ → 在深山老林里，竹子密密地交织在一起。
+⟦khi⟧、⟦lúc⟧ +（主–谓）：以 ⟦khi⟧、⟦lúc⟧ + 主语 + 谓语 的形式，可用于句首、句中或句末，表示“……的时候”。
+⟦Khi vào hè, lũy tre như chiếc quạt khổng lồ xua tan cái oi bức.⟧ = ⟦Lũy tre như chiếc quạt khổng lồ xua tan cái oi bức khi vào hè.⟧ → 入夏时，竹篱像一把巨大的扇子驱散闷热。 · ⟦Lũy tre lại hóa thành tấm bình phong ngăn những cơn gió rét mướt thổi vào xóm thôn khi sang đông.⟧ → 入冬时，竹篱又化作屏风，挡住吹进村子的寒风。 · ⟦Lúc vào hè, bóng tre trùm mát rượi.⟧ = ⟦Bóng tre trùm mát rượi lúc vào hè.⟧ → 入夏时，竹荫笼罩，十分凉爽。
+=zh
+文法解說
+⟦đâu đâu⟧：指沒有遺漏的所有地方，意為「處處、到處、各地」。
+⟦Việt Nam, đâu đâu cũng có những lũy tre xanh tốt bốn mùa.⟧ → 在越南，到處都有四季常青的竹籬。 · ⟦Đâu đâu cũng thấy tiếng cười tiếng nói.⟧ → 處處都能聽到歡聲笑語。 · ⟦Đâu đâu cũng treo đèn, kết hoa.⟧ → 到處張燈結綵。 · ⟦Đến với Việt Nam, đâu đâu bạn cũng thấy mọi người đều rất thân thiện.⟧ → 來到越南，你到處都會發現人們非常友善。
+⟦nơi⟧ +（主語 + 謂語）：可用於句首、句中、句尾等不同位置，表示某事發生的場所或地點。
+⟦Nơi vùng cao, tre trúc bạt ngàn trên núi đồi, đèo dốc.⟧ = ⟦Tre trúc bạt ngàn trên núi đồi, đèo dốc nơi vùng cao⟧ → 在高地，竹林漫山遍野，覆蓋山坡和隘口。 · ⟦Nơi đồng bằng, những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng.⟧ = ⟦Những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng nơi đồng bằng.⟧ → 在平原，蓊鬱的竹籬環繞、守護著村莊。 · ⟦Nơi rừng sâu, tre nứa đan nhau san sát.⟧ = ⟦Tre nứa đan nhau san sát nơi rừng sâu.⟧ → 在深山老林裡，竹子密密地交織在一起。
+⟦khi⟧、⟦lúc⟧ +（主–謂）：以 ⟦khi⟧、⟦lúc⟧ + 主語 + 謂語 的形式，可用於句首、句中或句尾，表示「……的時候」。
+⟦Khi vào hè, lũy tre như chiếc quạt khổng lồ xua tan cái oi bức.⟧ = ⟦Lũy tre như chiếc quạt khổng lồ xua tan cái oi bức khi vào hè.⟧ → 入夏時，竹籬像一把巨大的扇子驅散悶熱。 · ⟦Lũy tre lại hóa thành tấm bình phong ngăn những cơn gió rét mướt thổi vào xóm thôn khi sang đông.⟧ → 入冬時，竹籬又化作屏風，擋住吹進村子的寒風。 · ⟦Lúc vào hè, bóng tre trùm mát rượi.⟧ = ⟦Bóng tre trùm mát rượi lúc vào hè.⟧ → 入夏時，竹蔭籠罩，十分涼爽。
+=en
+Grammar notes
+⟦đâu đâu⟧: refers to every place without exception – "everywhere, all over".
+⟦Việt Nam, đâu đâu cũng có những lũy tre xanh tốt bốn mùa.⟧ → In Vietnam there are bamboo hedges everywhere, lush and green all year round. · ⟦Đâu đâu cũng thấy tiếng cười tiếng nói.⟧ → Laughter and chatter can be heard everywhere. · ⟦Đâu đâu cũng treo đèn, kết hoa.⟧ → Lanterns and flowers are hung everywhere. · ⟦Đến với Việt Nam, đâu đâu bạn cũng thấy mọi người đều rất thân thiện.⟧ → Come to Vietnam and everywhere you'll find people very friendly.
+⟦nơi⟧ + (subject + predicate): can appear at the start, in the middle or at the end of a sentence to indicate the place where something happens ("in, at ~").
+⟦Nơi vùng cao, tre trúc bạt ngàn trên núi đồi, đèo dốc.⟧ = ⟦Tre trúc bạt ngàn trên núi đồi, đèo dốc nơi vùng cao⟧ → In the highlands, bamboo stretches endlessly over hills, passes and slopes. · ⟦Nơi đồng bằng, những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng.⟧ = ⟦Những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng nơi đồng bằng.⟧ → In the lowlands, lush green bamboo hedges surround and protect the villages. · ⟦Nơi rừng sâu, tre nứa đan nhau san sát.⟧ = ⟦Tre nứa đan nhau san sát nơi rừng sâu.⟧ → Deep in the forest, bamboo grows densely interlaced.
+⟦khi⟧, ⟦lúc⟧ + (subject–predicate): "when ~" – can appear at the start, in the middle or at the end of a sentence.
+⟦Khi vào hè, lũy tre như chiếc quạt khổng lồ xua tan cái oi bức.⟧ = ⟦Lũy tre như chiếc quạt khổng lồ xua tan cái oi bức khi vào hè.⟧ → When summer comes, the bamboo hedge is like a giant fan driving away the stifling heat. · ⟦Lũy tre lại hóa thành tấm bình phong ngăn những cơn gió rét mướt thổi vào xóm thôn khi sang đông.⟧ → When winter arrives, the bamboo hedge turns into a screen blocking the freezing winds blowing into the village. · ⟦Lúc vào hè, bóng tre trùm mát rượi.⟧ = ⟦Bóng tre trùm mát rượi lúc vào hè.⟧ → In summer, the bamboo casts a deliciously cool shade.
+=fr
+Notes de grammaire
+⟦đâu đâu⟧ : désigne tous les lieux sans exception – « partout, en tout lieu ».
+⟦Việt Nam, đâu đâu cũng có những lũy tre xanh tốt bốn mùa.⟧ → Au Vietnam, il y a partout des haies de bambou verdoyantes en toute saison. · ⟦Đâu đâu cũng thấy tiếng cười tiếng nói.⟧ → Partout on entend des rires et des conversations. · ⟦Đâu đâu cũng treo đèn, kết hoa.⟧ → Partout, on accroche des lanternes et des fleurs. · ⟦Đến với Việt Nam, đâu đâu bạn cũng thấy mọi người đều rất thân thiện.⟧ → En venant au Vietnam, vous verrez partout que les gens sont très aimables.
+⟦nơi⟧ + (sujet + prédicat) : peut se placer en début, au milieu ou en fin de phrase pour indiquer le lieu où se produit un événement (« dans, en ~ »).
+⟦Nơi vùng cao, tre trúc bạt ngàn trên núi đồi, đèo dốc.⟧ = ⟦Tre trúc bạt ngàn trên núi đồi, đèo dốc nơi vùng cao⟧ → Dans les hautes terres, les bambous s'étendent à perte de vue sur les collines, cols et pentes. · ⟦Nơi đồng bằng, những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng.⟧ = ⟦Những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng nơi đồng bằng.⟧ → Dans les plaines, les haies de bambou verdoyantes entourent et protègent les villages. · ⟦Nơi rừng sâu, tre nứa đan nhau san sát.⟧ = ⟦Tre nứa đan nhau san sát nơi rừng sâu.⟧ → Au fond de la forêt, les bambous s'entrelacent serrés.
+⟦khi⟧, ⟦lúc⟧ + (sujet–prédicat) : « quand, lorsque » – peut se placer en début, au milieu ou en fin de phrase.
+⟦Khi vào hè, lũy tre như chiếc quạt khổng lồ xua tan cái oi bức.⟧ = ⟦Lũy tre như chiếc quạt khổng lồ xua tan cái oi bức khi vào hè.⟧ → Quand vient l'été, la haie de bambou est comme un éventail géant qui chasse la chaleur étouffante. · ⟦Lũy tre lại hóa thành tấm bình phong ngăn những cơn gió rét mướt thổi vào xóm thôn khi sang đông.⟧ → Quand arrive l'hiver, la haie de bambou devient un paravent qui arrête les vents glacés soufflant sur le village. · ⟦Lúc vào hè, bóng tre trùm mát rượi.⟧ = ⟦Bóng tre trùm mát rượi lúc vào hè.⟧ → En été, l'ombre des bambous est délicieusement fraîche.
+=de
+Grammatikerläuterungen
+⟦đâu đâu⟧: bezeichnet alle Orte ohne Ausnahme – „überall, allerorts“.
+⟦Việt Nam, đâu đâu cũng có những lũy tre xanh tốt bốn mùa.⟧ → In Vietnam gibt es überall Bambushecken, die das ganze Jahr sattgrün sind. · ⟦Đâu đâu cũng thấy tiếng cười tiếng nói.⟧ → Überall hört man Lachen und Plaudern. · ⟦Đâu đâu cũng treo đèn, kết hoa.⟧ → Überall hängen Laternen und Blumenschmuck. · ⟦Đến với Việt Nam, đâu đâu bạn cũng thấy mọi người đều rất thân thiện.⟧ → Wenn Sie nach Vietnam kommen, werden Sie überall sehr freundliche Menschen treffen.
+⟦nơi⟧ + (Subjekt + Prädikat): kann am Anfang, in der Mitte oder am Ende des Satzes stehen und bezeichnet den Ort, an dem etwas geschieht („in, an ~“).
+⟦Nơi vùng cao, tre trúc bạt ngàn trên núi đồi, đèo dốc.⟧ = ⟦Tre trúc bạt ngàn trên núi đồi, đèo dốc nơi vùng cao⟧ → Im Hochland bedeckt Bambus endlos Hügel, Pässe und Hänge. · ⟦Nơi đồng bằng, những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng.⟧ = ⟦Những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng nơi đồng bằng.⟧ → Im Flachland umgeben und schützen sattgrüne Bambushecken die Dörfer. · ⟦Nơi rừng sâu, tre nứa đan nhau san sát.⟧ = ⟦Tre nứa đan nhau san sát nơi rừng sâu.⟧ → Tief im Wald wächst Bambus dicht ineinander verflochten.
+⟦khi⟧, ⟦lúc⟧ + (Subjekt–Prädikat): „wenn, als“ – kann am Anfang, in der Mitte oder am Ende des Satzes stehen.
+⟦Khi vào hè, lũy tre như chiếc quạt khổng lồ xua tan cái oi bức.⟧ = ⟦Lũy tre như chiếc quạt khổng lồ xua tan cái oi bức khi vào hè.⟧ → Wenn der Sommer kommt, vertreibt die Bambushecke wie ein riesiger Fächer die drückende Hitze. · ⟦Lũy tre lại hóa thành tấm bình phong ngăn những cơn gió rét mướt thổi vào xóm thôn khi sang đông.⟧ → Wenn der Winter kommt, wird die Bambushecke zum Wandschirm, der die eisigen Winde vom Dorf abhält. · ⟦Lúc vào hè, bóng tre trùm mát rượi.⟧ = ⟦Bóng tre trùm mát rượi lúc vào hè.⟧ → Im Sommer spendet der Bambus herrlich kühlen Schatten.
+=hu
+Nyelvtani magyarázat
+⟦đâu đâu⟧: minden helyet jelöl kivétel nélkül – „mindenütt, mindenhol”.
+⟦Việt Nam, đâu đâu cũng có những lũy tre xanh tốt bốn mùa.⟧ → Vietnámban mindenütt vannak egész évben zöldellő bambuszsövények. · ⟦Đâu đâu cũng thấy tiếng cười tiếng nói.⟧ → Mindenhol nevetés és beszélgetés hallatszik. · ⟦Đâu đâu cũng treo đèn, kết hoa.⟧ → Mindenhol lámpások és virágfüzérek díszítenek. · ⟦Đến với Việt Nam, đâu đâu bạn cũng thấy mọi người đều rất thân thiện.⟧ → Ha Vietnámba jön, mindenhol azt látja, hogy az emberek nagyon barátságosak.
+⟦nơi⟧ + (alany + állítmány): a mondat elején, közepén és végén is állhat, és azt a helyet jelöli, ahol valami történik („-ban/-ben, ~ vidékén”).
+⟦Nơi vùng cao, tre trúc bạt ngàn trên núi đồi, đèo dốc.⟧ = ⟦Tre trúc bạt ngàn trên núi đồi, đèo dốc nơi vùng cao⟧ → A hegyvidéken a bambusz végeláthatatlanul borítja a dombokat, hágókat, lejtőket. · ⟦Nơi đồng bằng, những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng.⟧ = ⟦Những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng nơi đồng bằng.⟧ → Az alföldön dús zöld bambuszsövények veszik körül és védik a falvakat. · ⟦Nơi rừng sâu, tre nứa đan nhau san sát.⟧ = ⟦Tre nứa đan nhau san sát nơi rừng sâu.⟧ → A mély erdőben a bambusz sűrűn összefonódik.
+⟦khi⟧, ⟦lúc⟧ + (alany–állítmány): „amikor” – a mondat elején, közepén vagy végén is állhat.
+⟦Khi vào hè, lũy tre như chiếc quạt khổng lồ xua tan cái oi bức.⟧ = ⟦Lũy tre như chiếc quạt khổng lồ xua tan cái oi bức khi vào hè.⟧ → Amikor beköszönt a nyár, a bambuszsövény óriási legyezőként űzi el a fülledt hőséget. · ⟦Lũy tre lại hóa thành tấm bình phong ngăn những cơn gió rét mướt thổi vào xóm thôn khi sang đông.⟧ → Amikor beköszönt a tél, a bambuszsövény paravánná válik, amely feltartja a faluba fújó dermesztő szelet. · ⟦Lúc vào hè, bóng tre trùm mát rượi.⟧ = ⟦Bóng tre trùm mát rượi lúc vào hè.⟧ → Nyáron a bambusz kellemesen hűs árnyékot ad.
+=id
+Penjelasan tata bahasa
+⟦đâu đâu⟧: merujuk pada semua tempat tanpa terkecuali – "di mana-mana, di segala tempat".
+⟦Việt Nam, đâu đâu cũng có những lũy tre xanh tốt bốn mùa.⟧ → Di Vietnam, di mana-mana ada pagar bambu yang hijau subur sepanjang tahun. · ⟦Đâu đâu cũng thấy tiếng cười tiếng nói.⟧ → Di mana-mana terdengar tawa dan obrolan. · ⟦Đâu đâu cũng treo đèn, kết hoa.⟧ → Di mana-mana dipasang lampion dan hiasan bunga. · ⟦Đến với Việt Nam, đâu đâu bạn cũng thấy mọi người đều rất thân thiện.⟧ → Datang ke Vietnam, di mana-mana Anda akan melihat orang-orang sangat ramah.
+⟦nơi⟧ + (subjek + predikat): dapat diletakkan di awal, tengah, atau akhir kalimat untuk menunjukkan tempat terjadinya suatu peristiwa ("di ~").
+⟦Nơi vùng cao, tre trúc bạt ngàn trên núi đồi, đèo dốc.⟧ = ⟦Tre trúc bạt ngàn trên núi đồi, đèo dốc nơi vùng cao⟧ → Di dataran tinggi, bambu terhampar luas di bukit, celah, dan lereng. · ⟦Nơi đồng bằng, những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng.⟧ = ⟦Những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng nơi đồng bằng.⟧ → Di dataran rendah, pagar bambu yang hijau subur mengelilingi dan melindungi desa. · ⟦Nơi rừng sâu, tre nứa đan nhau san sát.⟧ = ⟦Tre nứa đan nhau san sát nơi rừng sâu.⟧ → Di hutan dalam, bambu saling menjalin rapat.
+⟦khi⟧, ⟦lúc⟧ + (subjek–predikat): "ketika, saat" – dapat diletakkan di awal, tengah, atau akhir kalimat.
+⟦Khi vào hè, lũy tre như chiếc quạt khổng lồ xua tan cái oi bức.⟧ = ⟦Lũy tre như chiếc quạt khổng lồ xua tan cái oi bức khi vào hè.⟧ → Ketika musim panas tiba, pagar bambu bagaikan kipas raksasa yang mengusir hawa gerah. · ⟦Lũy tre lại hóa thành tấm bình phong ngăn những cơn gió rét mướt thổi vào xóm thôn khi sang đông.⟧ → Ketika musim dingin tiba, pagar bambu menjadi tabir yang menahan angin dingin yang bertiup ke desa. · ⟦Lúc vào hè, bóng tre trùm mát rượi.⟧ = ⟦Bóng tre trùm mát rượi lúc vào hè.⟧ → Saat musim panas, bayangan bambu terasa sejuk sekali.
+=ja
+文法解説
+⟦đâu đâu⟧：漏れのないすべての場所を指し、「至る所、あらゆる所、各地に」という意味で使われます。
+⟦Việt Nam, đâu đâu cũng có những lũy tre xanh tốt bốn mùa.⟧ → ベトナムでは至る所に一年中青々とした竹垣がある。 · ⟦Đâu đâu cũng thấy tiếng cười tiếng nói.⟧ → 至る所で笑い声や話し声が聞こえる。 · ⟦Đâu đâu cũng treo đèn, kết hoa.⟧ → 至る所に灯籠が掛けられ、花が飾られている。 · ⟦Đến với Việt Nam, đâu đâu bạn cũng thấy mọi người đều rất thân thiện.⟧ → ベトナムに来れば、どこでも人々がとても親切なことがわかるでしょう。
+⟦nơi⟧ +（主語 + 述語）：文の前・中・後ろなどさまざまな位置で使われ、ある出来事や事柄が起こる場所・地点を表します。
+⟦Nơi vùng cao, tre trúc bạt ngàn trên núi đồi, đèo dốc.⟧ = ⟦Tre trúc bạt ngàn trên núi đồi, đèo dốc nơi vùng cao⟧ → 高地では、竹が山や丘、峠や坂に果てしなく広がっている。 · ⟦Nơi đồng bằng, những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng.⟧ = ⟦Những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng nơi đồng bằng.⟧ → 平野では、青々とした竹垣が村を囲み守っている。 · ⟦Nơi rừng sâu, tre nứa đan nhau san sát.⟧ = ⟦Tre nứa đan nhau san sát nơi rừng sâu.⟧ → 深い森では、竹がびっしりと絡み合っている。
+⟦khi⟧、⟦lúc⟧ +（主語–述語）：⟦khi⟧、⟦lúc⟧ + 主語 + 述語 の形で文の前・中・後ろに置かれ、「～するとき」という意味を表します。
+⟦Khi vào hè, lũy tre như chiếc quạt khổng lồ xua tan cái oi bức.⟧ = ⟦Lũy tre như chiếc quạt khổng lồ xua tan cái oi bức khi vào hè.⟧ → 夏になると、竹垣は巨大な扇のように蒸し暑さを吹き払う。 · ⟦Lũy tre lại hóa thành tấm bình phong ngăn những cơn gió rét mướt thổi vào xóm thôn khi sang đông.⟧ → 冬になると、竹垣は村に吹き込む冷たい風を防ぐ屏風に変わる。 · ⟦Lúc vào hè, bóng tre trùm mát rượi.⟧ = ⟦Bóng tre trùm mát rượi lúc vào hè.⟧ → 夏になると、竹の陰がひんやりと涼しく覆う。
+=pl
+Objaśnienia gramatyczne
+⟦đâu đâu⟧: oznacza wszystkie miejsca bez wyjątku – „wszędzie, w każdym miejscu”.
+⟦Việt Nam, đâu đâu cũng có những lũy tre xanh tốt bốn mùa.⟧ → W Wietnamie wszędzie są bambusowe żywopłoty, zielone przez cały rok. · ⟦Đâu đâu cũng thấy tiếng cười tiếng nói.⟧ → Wszędzie słychać śmiech i rozmowy. · ⟦Đâu đâu cũng treo đèn, kết hoa.⟧ → Wszędzie wiszą lampiony i kwiaty. · ⟦Đến với Việt Nam, đâu đâu bạn cũng thấy mọi người đều rất thân thiện.⟧ → Przyjeżdżając do Wietnamu, wszędzie zobaczysz, że ludzie są bardzo przyjaźni.
+⟦nơi⟧ + (podmiot + orzeczenie): może stać na początku, w środku lub na końcu zdania i wskazuje miejsce, w którym coś się dzieje („w, na ~”).
+⟦Nơi vùng cao, tre trúc bạt ngàn trên núi đồi, đèo dốc.⟧ = ⟦Tre trúc bạt ngàn trên núi đồi, đèo dốc nơi vùng cao⟧ → Na wyżynach bambus bezkreśnie porasta wzgórza, przełęcze i zbocza. · ⟦Nơi đồng bằng, những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng.⟧ = ⟦Những lũy tre xanh tốt, bao bọc, bảo vệ xóm làng nơi đồng bằng.⟧ → Na nizinach bujne bambusowe żywopłoty otaczają i chronią wsie. · ⟦Nơi rừng sâu, tre nứa đan nhau san sát.⟧ = ⟦Tre nứa đan nhau san sát nơi rừng sâu.⟧ → W głębi lasu bambus gęsto się splata.
+⟦khi⟧, ⟦lúc⟧ + (podmiot–orzeczenie): „kiedy, gdy” – może stać na początku, w środku lub na końcu zdania.
+⟦Khi vào hè, lũy tre như chiếc quạt khổng lồ xua tan cái oi bức.⟧ = ⟦Lũy tre như chiếc quạt khổng lồ xua tan cái oi bức khi vào hè.⟧ → Gdy przychodzi lato, bambusowy żywopłot jak olbrzymi wachlarz odpędza duszny upał. · ⟦Lũy tre lại hóa thành tấm bình phong ngăn những cơn gió rét mướt thổi vào xóm thôn khi sang đông.⟧ → Gdy nadchodzi zima, żywopłot bambusowy zamienia się w parawan zatrzymujący mroźne wiatry wiejące na wieś. · ⟦Lúc vào hè, bóng tre trùm mát rượi.⟧ = ⟦Bóng tre trùm mát rượi lúc vào hè.⟧ → Latem bambus daje przyjemnie chłodny cień.
+@@ pdf-grammar-e0880ccd76d16c7c#0
+=cs
+Gramatický výklad
+⟦chỉ ... mà không ...⟧: ve tvaru ⟦chỉ A mà không B⟧, kde A a B jsou protikladné, znamená „jen A, ale ne B“.
+⟦Chỉ nghe tiếng chim hót mà không thấy bóng chim đâu.⟧ → Je slyšet jen zpěv ptáků, ale ptáka nikde není vidět. · ⟦Chỉ thấy ba lô của nó mà không nhìn thấy nó đâu.⟧ → Je vidět jen jeho batoh, ale jeho samotného nikde.
+⟦người bắc kẻ nam⟧: „jeden na severu, druhý na jihu“ – popisuje lidi rozptýlené daleko od sebe, kteří spolu nemohou udržovat kontakt.
+⟦Người dân sông Thao quê tôi dù người bắc kẻ nam nhưng đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → Lidé od řeky Thao, mého rodného kraje, ačkoli jsou roztroušeni po severu i jihu, kamkoli jdou, vzpomínají na palmové háje domova. · ⟦Sau khi tốt nghiệp, lớp tôi mỗi người một nơi, người bắc kẻ nam khó mà gặp lại được.⟧ → Po maturitě se naše třída rozprchla – každý jinam, jeden na sever, druhý na jih – a těžko se zase setkáme.
+(sloveso) + ⟦đâu⟧: „ať (jde) kamkoli, ať (je) kdekoli“.
+⟦Người dân sông Thao quê tôi dù đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → Lidé od řeky Thao, kamkoli jdou, vzpomínají na palmové háje domova. · ⟦Chúng tôi dù có đi đâu thì đến ngày giỗ Tổ Hùng Vương cũng sẽ về.⟧ → Ať jsme kdekoli, na výročí králů Hùng se vrátíme domů. · ⟦Anh ấy có ngủ đâu thì sáng mai cũng sẽ về nhà.⟧ → Ať přespí kdekoli, zítra ráno přijde domů. · ⟦Nó có ở đâu thì tối cũng sẽ về ăn cơm.⟧ → Ať je kdekoli, večer přijde domů na večeři.
+⟦Chẳng có nơi nào như⟧: „nikde není takové místo jako ~“ – zdůrazňuje výrazný rys, jímž se místo liší od jiných.
+⟦Chẳng có nơi nào như sông Thao quê tôi, rừng cọ trập trùng.⟧ → Nikde není místo jako řeka Thao, můj domov, s palmovými háji táhnoucími se do dálky. · ⟦Chẳng có nơi nào như thành phố này, tiếng còi xe luôn inh ỏi.⟧ → Nikde není místo jako toto město, kde neustále ohlušivě troubí auta. · ⟦Chẳng có nơi nào như vùng ngoại ô này, bụi cát suốt ngày mù mịt.⟧ → Nikde není místo jako toto předměstí, kde je celý den zamlženo prachem a pískem.
+=zh_cn
+语法解说
+⟦chỉ ... mà không ...⟧：以 ⟦chỉ A mà không B⟧ 的形式使用，A与B为相反的内容，意为“只……而不……”。
+⟦Chỉ nghe tiếng chim hót mà không thấy bóng chim đâu.⟧ → 只听见鸟叫，却看不见鸟的影子。 · ⟦Chỉ thấy ba lô của nó mà không nhìn thấy nó đâu.⟧ → 只看见他的背包，却看不见他人在哪儿。
+⟦người bắc kẻ nam⟧：用于表达人们分散各地、彼此难以联系的状况，意为“天南地北、各奔东西”。
+⟦Người dân sông Thao quê tôi dù người bắc kẻ nam nhưng đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → 我家乡涛江的人们虽然天南地北，但无论走到哪里都思念家乡的棕榈林。 · ⟦Sau khi tốt nghiệp, lớp tôi mỗi người một nơi, người bắc kẻ nam khó mà gặp lại được.⟧ → 毕业后，我们班各奔东西，天南地北，很难再相聚了。
+（动词）+ ⟦đâu⟧：以 动词 + ⟦đâu⟧ 的形式，意为“无论去哪里／在哪里……”。
+⟦Người dân sông Thao quê tôi dù đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → 我家乡涛江的人们无论走到哪里都思念家乡的棕榈林。 · ⟦Chúng tôi dù có đi đâu thì đến ngày giỗ Tổ Hùng Vương cũng sẽ về.⟧ → 我们无论去了哪里，到了雄王祭祖日都会回来。 · ⟦Anh ấy có ngủ đâu thì sáng mai cũng sẽ về nhà.⟧ → 他无论在哪里过夜，明天早上都会回家。 · ⟦Nó có ở đâu thì tối cũng sẽ về ăn cơm.⟧ → 他无论在哪里，晚上都会回来吃饭。
+⟦Chẳng có nơi nào như⟧：与其他地区或空间相比，强调其具有与众不同的特点，意为“哪里都比不上……、没有哪里像……一样”。
+⟦Chẳng có nơi nào như sông Thao quê tôi, rừng cọ trập trùng.⟧ → 哪里也比不上我家乡涛江，棕榈林连绵起伏。 · ⟦Chẳng có nơi nào như thành phố này, tiếng còi xe luôn inh ỏi.⟧ → 没有哪里像这座城市一样，汽车喇叭声总是震耳欲聋。 · ⟦Chẳng có nơi nào như vùng ngoại ô này, bụi cát suốt ngày mù mịt.⟧ → 没有哪里像这片郊区一样，整天尘沙弥漫。
+=zh
+文法解說
+⟦chỉ ... mà không ...⟧：以 ⟦chỉ A mà không B⟧ 的形式使用，A與B為相反的內容，意為「只……而不……」。
+⟦Chỉ nghe tiếng chim hót mà không thấy bóng chim đâu.⟧ → 只聽見鳥叫，卻看不見鳥的影子。 · ⟦Chỉ thấy ba lô của nó mà không nhìn thấy nó đâu.⟧ → 只看見他的背包，卻看不見他人在哪裡。
+⟦người bắc kẻ nam⟧：用於表達人們分散各地、彼此難以聯繫的狀況，意為「天南地北、各奔東西」。
+⟦Người dân sông Thao quê tôi dù người bắc kẻ nam nhưng đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → 我家鄉濤江的人們雖然天南地北，但無論走到哪裡都思念家鄉的棕櫚林。 · ⟦Sau khi tốt nghiệp, lớp tôi mỗi người một nơi, người bắc kẻ nam khó mà gặp lại được.⟧ → 畢業後，我們班各奔東西，天南地北，很難再相聚了。
+（動詞）+ ⟦đâu⟧：以 動詞 + ⟦đâu⟧ 的形式，意為「無論去哪裡／在哪裡……」。
+⟦Người dân sông Thao quê tôi dù đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → 我家鄉濤江的人們無論走到哪裡都思念家鄉的棕櫚林。 · ⟦Chúng tôi dù có đi đâu thì đến ngày giỗ Tổ Hùng Vương cũng sẽ về.⟧ → 我們無論去了哪裡，到了雄王祭祖日都會回來。 · ⟦Anh ấy có ngủ đâu thì sáng mai cũng sẽ về nhà.⟧ → 他無論在哪裡過夜，明天早上都會回家。 · ⟦Nó có ở đâu thì tối cũng sẽ về ăn cơm.⟧ → 他無論在哪裡，晚上都會回來吃飯。
+⟦Chẳng có nơi nào như⟧：與其他地區或空間相比，強調其具有與眾不同的特點，意為「哪裡都比不上……、沒有哪裡像……一樣」。
+⟦Chẳng có nơi nào như sông Thao quê tôi, rừng cọ trập trùng.⟧ → 哪裡也比不上我家鄉濤江，棕櫚林連綿起伏。 · ⟦Chẳng có nơi nào như thành phố này, tiếng còi xe luôn inh ỏi.⟧ → 沒有哪裡像這座城市一樣，汽車喇叭聲總是震耳欲聾。 · ⟦Chẳng có nơi nào như vùng ngoại ô này, bụi cát suốt ngày mù mịt.⟧ → 沒有哪裡像這片郊區一樣，整天塵沙瀰漫。
+=en
+Grammar notes
+⟦chỉ ... mà không ...⟧: used in the form ⟦chỉ A mà không B⟧, where A and B are contrasting – "only A, but not B".
+⟦Chỉ nghe tiếng chim hót mà không thấy bóng chim đâu.⟧ → You can only hear the birds singing, but you can't see a single bird. · ⟦Chỉ thấy ba lô của nó mà không nhìn thấy nó đâu.⟧ → You can only see his backpack, but not him anywhere.
+⟦người bắc kẻ nam⟧: "one in the north, one in the south" – describes people scattered far apart who can't keep in touch.
+⟦Người dân sông Thao quê tôi dù người bắc kẻ nam nhưng đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → The people of the Thao River, my home region, though scattered north and south, always remember the palm forests of home wherever they go. · ⟦Sau khi tốt nghiệp, lớp tôi mỗi người một nơi, người bắc kẻ nam khó mà gặp lại được.⟧ → After graduation, my classmates went their separate ways, north and south, and it's hard to meet up again.
+(verb) + ⟦đâu⟧: "wherever (one goes/is)".
+⟦Người dân sông Thao quê tôi dù đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → Wherever they go, the people of the Thao River remember the palm forests of home. · ⟦Chúng tôi dù có đi đâu thì đến ngày giỗ Tổ Hùng Vương cũng sẽ về.⟧ → Wherever we are, we'll come home for the Hùng Kings' Commemoration Day. · ⟦Anh ấy có ngủ đâu thì sáng mai cũng sẽ về nhà.⟧ → Wherever he sleeps tonight, he'll come home tomorrow morning. · ⟦Nó có ở đâu thì tối cũng sẽ về ăn cơm.⟧ → Wherever he is, he'll come home for dinner in the evening.
+⟦Chẳng có nơi nào như⟧: "there's no place like ~" – emphasizes a distinctive feature that sets a place apart from others.
+⟦Chẳng có nơi nào như sông Thao quê tôi, rừng cọ trập trùng.⟧ → There's no place like my home by the Thao River, with its rolling palm forests. · ⟦Chẳng có nơi nào như thành phố này, tiếng còi xe luôn inh ỏi.⟧ → There's no place like this city, where car horns are always blaring. · ⟦Chẳng có nơi nào như vùng ngoại ô này, bụi cát suốt ngày mù mịt.⟧ → There's no place like this suburb, hazy with dust and sand all day.
+=fr
+Notes de grammaire
+⟦chỉ ... mà không ...⟧ : sous la forme ⟦chỉ A mà không B⟧, A et B étant opposés, signifie « seulement A, mais pas B ».
+⟦Chỉ nghe tiếng chim hót mà không thấy bóng chim đâu.⟧ → On entend seulement les oiseaux chanter, sans en voir un seul. · ⟦Chỉ thấy ba lô của nó mà không nhìn thấy nó đâu.⟧ → On ne voit que son sac à dos, mais lui, nulle part.
+⟦người bắc kẻ nam⟧ : « l'un au nord, l'autre au sud » – décrit des gens dispersés au loin qui ne peuvent rester en contact.
+⟦Người dân sông Thao quê tôi dù người bắc kẻ nam nhưng đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → Les gens de la rivière Thao, ma région natale, même dispersés au nord et au sud, se souviennent partout des forêts de palmiers de leur pays. · ⟦Sau khi tốt nghiệp, lớp tôi mỗi người một nơi, người bắc kẻ nam khó mà gặp lại được.⟧ → Après le diplôme, les élèves de ma classe se sont dispersés, qui au nord, qui au sud, et il est difficile de se retrouver.
+(verbe) + ⟦đâu⟧ : « où que (l'on aille / l'on soit) ».
+⟦Người dân sông Thao quê tôi dù đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → Où qu'ils aillent, les gens de la rivière Thao se souviennent des forêts de palmiers de leur pays. · ⟦Chúng tôi dù có đi đâu thì đến ngày giỗ Tổ Hùng Vương cũng sẽ về.⟧ → Où que nous soyons, nous rentrerons pour la fête commémorative des rois Hùng. · ⟦Anh ấy có ngủ đâu thì sáng mai cũng sẽ về nhà.⟧ → Où qu'il dorme, il rentrera demain matin. · ⟦Nó có ở đâu thì tối cũng sẽ về ăn cơm.⟧ → Où qu'il soit, il rentrera dîner ce soir.
+⟦Chẳng có nơi nào như⟧ : « nulle part ailleurs comme ~ » – souligne un trait distinctif qui différencie un lieu des autres.
+⟦Chẳng có nơi nào như sông Thao quê tôi, rừng cọ trập trùng.⟧ → Il n'y a pas d'endroit comme ma rivière Thao natale, avec ses forêts de palmiers ondoyantes. · ⟦Chẳng có nơi nào như thành phố này, tiếng còi xe luôn inh ỏi.⟧ → Il n'y a pas d'endroit comme cette ville, où les klaxons hurlent sans cesse. · ⟦Chẳng có nơi nào như vùng ngoại ô này, bụi cát suốt ngày mù mịt.⟧ → Il n'y a pas d'endroit comme cette banlieue, noyée toute la journée dans la poussière et le sable.
+=de
+Grammatikerläuterungen
+⟦chỉ ... mà không ...⟧: in der Form ⟦chỉ A mà không B⟧, wobei A und B gegensätzlich sind, bedeutet es „nur A, aber nicht B“.
+⟦Chỉ nghe tiếng chim hót mà không thấy bóng chim đâu.⟧ → Man hört nur Vögel singen, sieht aber keinen einzigen. · ⟦Chỉ thấy ba lô của nó mà không nhìn thấy nó đâu.⟧ → Man sieht nur seinen Rucksack, ihn selbst aber nirgends.
+⟦người bắc kẻ nam⟧: „einer im Norden, einer im Süden“ – beschreibt weit verstreute Menschen, die keinen Kontakt halten können.
+⟦Người dân sông Thao quê tôi dù người bắc kẻ nam nhưng đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → Die Menschen vom Thao-Fluss, meiner Heimat, erinnern sich, obwohl in Nord und Süd verstreut, überall an die Palmenwälder ihrer Heimat. · ⟦Sau khi tốt nghiệp, lớp tôi mỗi người một nơi, người bắc kẻ nam khó mà gặp lại được.⟧ → Nach dem Abschluss hat sich meine Klasse in alle Winde zerstreut, in Nord und Süd, und es ist schwer, sich wiederzusehen.
+(Verb) + ⟦đâu⟧: „wohin/wo auch immer“.
+⟦Người dân sông Thao quê tôi dù đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → Wohin sie auch gehen, die Menschen vom Thao-Fluss erinnern sich an die Palmenwälder der Heimat. · ⟦Chúng tôi dù có đi đâu thì đến ngày giỗ Tổ Hùng Vương cũng sẽ về.⟧ → Wo wir auch sind, zum Gedenktag der Hùng-Könige kommen wir nach Hause. · ⟦Anh ấy có ngủ đâu thì sáng mai cũng sẽ về nhà.⟧ → Wo er auch übernachtet, morgen früh kommt er nach Hause. · ⟦Nó có ở đâu thì tối cũng sẽ về ăn cơm.⟧ → Wo er auch ist, abends kommt er zum Essen heim.
+⟦Chẳng có nơi nào như⟧: „nirgends ist es so wie ~“ – betont ein charakteristisches Merkmal, das einen Ort von anderen unterscheidet.
+⟦Chẳng có nơi nào như sông Thao quê tôi, rừng cọ trập trùng.⟧ → Nirgends ist es wie an meinem heimatlichen Thao-Fluss mit seinen wogenden Palmenwäldern. · ⟦Chẳng có nơi nào như thành phố này, tiếng còi xe luôn inh ỏi.⟧ → Nirgends ist es wie in dieser Stadt, wo ständig ohrenbetäubend gehupt wird. · ⟦Chẳng có nơi nào như vùng ngoại ô này, bụi cát suốt ngày mù mịt.⟧ → Nirgends ist es wie in diesem Vorort, wo den ganzen Tag Staub und Sand die Luft trüben.
+=hu
+Nyelvtani magyarázat
+⟦chỉ ... mà không ...⟧: ⟦chỉ A mà không B⟧ alakban, ahol A és B ellentétes, jelentése „csak A, de B nem”.
+⟦Chỉ nghe tiếng chim hót mà không thấy bóng chim đâu.⟧ → Csak a madárdalt hallani, de madarat sehol sem látni. · ⟦Chỉ thấy ba lô của nó mà không nhìn thấy nó đâu.⟧ → Csak a hátizsákját látni, őt magát sehol.
+⟦người bắc kẻ nam⟧: „egyik északon, másik délen” – egymástól messze szétszóródott, kapcsolatot tartani nem tudó emberek helyzetét írja le.
+⟦Người dân sông Thao quê tôi dù người bắc kẻ nam nhưng đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → A Thao-folyó mentén élő földijeim, bár szétszóródtak északra és délre, bárhová mennek, emlékeznek szülőföldjük pálmaerdeire. · ⟦Sau khi tốt nghiệp, lớp tôi mỗi người một nơi, người bắc kẻ nam khó mà gặp lại được.⟧ → Az érettségi után az osztályunk szétszéledt, ki északra, ki délre, és nehéz újra találkozni.
+(ige) + ⟦đâu⟧: „bárhová megy, bárhol van”.
+⟦Người dân sông Thao quê tôi dù đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → A Thao-folyó mentén élők, bárhová mennek, emlékeznek szülőföldjük pálmaerdeire. · ⟦Chúng tôi dù có đi đâu thì đến ngày giỗ Tổ Hùng Vương cũng sẽ về.⟧ → Bárhol vagyunk is, a Hùng királyok emléknapjára hazamegyünk. · ⟦Anh ấy có ngủ đâu thì sáng mai cũng sẽ về nhà.⟧ → Bárhol alszik is, holnap reggel hazajön. · ⟦Nó có ở đâu thì tối cũng sẽ về ăn cơm.⟧ → Bárhol van is, este hazajön vacsorázni.
+⟦Chẳng có nơi nào như⟧: „sehol sincs olyan hely, mint ~” – egy helyet másoktól megkülönböztető jellegzetességet hangsúlyoz.
+⟦Chẳng có nơi nào như sông Thao quê tôi, rừng cọ trập trùng.⟧ → Sehol sincs olyan hely, mint a szülőföldem, a Thao-folyó vidéke, hullámzó pálmaerdőivel. · ⟦Chẳng có nơi nào như thành phố này, tiếng còi xe luôn inh ỏi.⟧ → Sehol sincs olyan hely, mint ez a város, ahol folyton harsog az autók dudája. · ⟦Chẳng có nơi nào như vùng ngoại ô này, bụi cát suốt ngày mù mịt.⟧ → Sehol sincs olyan hely, mint ez a külváros, ahol egész nap por és homok homályosítja a levegőt.
+=id
+Penjelasan tata bahasa
+⟦chỉ ... mà không ...⟧: dipakai dalam bentuk ⟦chỉ A mà không B⟧, dengan A dan B berlawanan – "hanya A, tetapi tidak B".
+⟦Chỉ nghe tiếng chim hót mà không thấy bóng chim đâu.⟧ → Hanya terdengar kicau burung, tetapi burungnya tak kelihatan. · ⟦Chỉ thấy ba lô của nó mà không nhìn thấy nó đâu.⟧ → Hanya tampak ranselnya, tetapi orangnya tak kelihatan.
+⟦người bắc kẻ nam⟧: "ada yang di utara, ada yang di selatan" – menggambarkan orang-orang yang tersebar berjauhan dan sulit menjaga hubungan.
+⟦Người dân sông Thao quê tôi dù người bắc kẻ nam nhưng đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → Warga Sungai Thao, kampung halaman saya, meski tersebar di utara dan selatan, ke mana pun pergi tetap teringat hutan palem kampungnya. · ⟦Sau khi tốt nghiệp, lớp tôi mỗi người một nơi, người bắc kẻ nam khó mà gặp lại được.⟧ → Setelah lulus, teman sekelas saya masing-masing di tempat berbeda, ada di utara ada di selatan, sulit bertemu lagi.
+(verba) + ⟦đâu⟧: "ke mana pun / di mana pun ~".
+⟦Người dân sông Thao quê tôi dù đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → Warga Sungai Thao ke mana pun pergi tetap teringat hutan palem kampungnya. · ⟦Chúng tôi dù có đi đâu thì đến ngày giỗ Tổ Hùng Vương cũng sẽ về.⟧ → Di mana pun kami berada, pada Hari Peringatan Raja Hùng kami akan pulang. · ⟦Anh ấy có ngủ đâu thì sáng mai cũng sẽ về nhà.⟧ → Di mana pun dia menginap, besok pagi dia akan pulang. · ⟦Nó có ở đâu thì tối cũng sẽ về ăn cơm.⟧ → Di mana pun dia berada, malam nanti dia akan pulang makan.
+⟦Chẳng có nơi nào như⟧: "tidak ada tempat mana pun seperti ~" – menegaskan ciri khas yang membedakan suatu tempat dari tempat lain.
+⟦Chẳng có nơi nào như sông Thao quê tôi, rừng cọ trập trùng.⟧ → Tak ada tempat seperti Sungai Thao, kampung halaman saya, dengan hutan palem yang bergelombang. · ⟦Chẳng có nơi nào như thành phố này, tiếng còi xe luôn inh ỏi.⟧ → Tak ada tempat seperti kota ini, bunyi klakson selalu memekakkan telinga. · ⟦Chẳng có nơi nào như vùng ngoại ô này, bụi cát suốt ngày mù mịt.⟧ → Tak ada tempat seperti pinggiran kota ini, debu dan pasir beterbangan sepanjang hari.
+=ja
+文法解説
+⟦chỉ ... mà không ...⟧：⟦chỉ A mà không B⟧ の形で使われます。このときAとBには相反する内容が来て、「Aするが（だけで）Bできない」という意味になります。
+⟦Chỉ nghe tiếng chim hót mà không thấy bóng chim đâu.⟧ → 鳥のさえずりが聞こえるだけで、鳥の姿はどこにも見えない。 · ⟦Chỉ thấy ba lô của nó mà không nhìn thấy nó đâu.⟧ → その子のリュックが見えるだけで、本人はどこにも見えない。
+⟦người bắc kẻ nam⟧：各地に遠く離れて互いに関係を保てない人々の状況を表すときに、「各地でそれぞれに」という意味で使います。
+⟦Người dân sông Thao quê tôi dù người bắc kẻ nam nhưng đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → 私の故郷タオ川の人々は、北に南にと散らばっていても、どこへ行っても故郷のヤシ林を思い出す。 · ⟦Sau khi tốt nghiệp, lớp tôi mỗi người một nơi, người bắc kẻ nam khó mà gặp lại được.⟧ → 卒業後、クラスの仲間はそれぞれ北へ南へと散り、再会するのは難しい。
+（動詞）+ ⟦đâu⟧：動詞 + ⟦đâu⟧ の形で「どこへ／どこで～しようとも」という意味で使われます。
+⟦Người dân sông Thao quê tôi dù đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → 私の故郷タオ川の人々は、どこへ行っても故郷のヤシ林を思い出す。 · ⟦Chúng tôi dù có đi đâu thì đến ngày giỗ Tổ Hùng Vương cũng sẽ về.⟧ → 私たちはどこへ行こうとも、フン王の命日には帰ってくる。 · ⟦Anh ấy có ngủ đâu thì sáng mai cũng sẽ về nhà.⟧ → 彼はどこで寝ようとも、明日の朝には家に帰る。 · ⟦Nó có ở đâu thì tối cũng sẽ về ăn cơm.⟧ → あの子はどこにいようとも、夜にはご飯を食べに帰ってくる。
+⟦Chẳng có nơi nào như⟧：他の地域や空間と比べて区別される特徴的な面・内容を持っていることを強調して表したいときに使い、「～のような所はどこにもない」という意味です。
+⟦Chẳng có nơi nào như sông Thao quê tôi, rừng cọ trập trùng.⟧ → 私の故郷タオ川ほど、ヤシ林が幾重にも連なる所はどこにもない。 · ⟦Chẳng có nơi nào như thành phố này, tiếng còi xe luôn inh ỏi.⟧ → この街ほど、車のクラクションがいつもけたたましい所はどこにもない。 · ⟦Chẳng có nơi nào như vùng ngoại ô này, bụi cát suốt ngày mù mịt.⟧ → この郊外ほど、一日中砂ぼこりが立ちこめている所はどこにもない。
+=pl
+Objaśnienia gramatyczne
+⟦chỉ ... mà không ...⟧: w formie ⟦chỉ A mà không B⟧, gdzie A i B są przeciwstawne, znaczy „tylko A, ale nie B”.
+⟦Chỉ nghe tiếng chim hót mà không thấy bóng chim đâu.⟧ → Słychać tylko śpiew ptaków, ale ptaków nigdzie nie widać. · ⟦Chỉ thấy ba lô của nó mà không nhìn thấy nó đâu.⟧ → Widać tylko jego plecak, ale jego samego nigdzie.
+⟦người bắc kẻ nam⟧: „jeden na północy, drugi na południu” – opisuje ludzi rozproszonych daleko od siebie, którzy nie mogą utrzymywać kontaktu.
+⟦Người dân sông Thao quê tôi dù người bắc kẻ nam nhưng đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → Mieszkańcy znad rzeki Thao, moich rodzinnych stron, choć rozproszeni po północy i południu, dokądkolwiek pójdą, wspominają palmowe lasy ojczyzny. · ⟦Sau khi tốt nghiệp, lớp tôi mỗi người một nơi, người bắc kẻ nam khó mà gặp lại được.⟧ → Po maturze moja klasa się rozjechała – każdy gdzie indziej, jeden na północ, drugi na południe – i trudno się znów spotkać.
+(czasownik) + ⟦đâu⟧: „dokądkolwiek / gdziekolwiek ~”.
+⟦Người dân sông Thao quê tôi dù đi đâu rồi cũng nhớ về rừng cọ quê mình.⟧ → Mieszkańcy znad rzeki Thao, dokądkolwiek pójdą, wspominają palmowe lasy ojczyzny. · ⟦Chúng tôi dù có đi đâu thì đến ngày giỗ Tổ Hùng Vương cũng sẽ về.⟧ → Gdziekolwiek będziemy, na Dzień Pamięci Królów Hùng wrócimy do domu. · ⟦Anh ấy có ngủ đâu thì sáng mai cũng sẽ về nhà.⟧ → Gdziekolwiek przenocuje, jutro rano wróci do domu. · ⟦Nó có ở đâu thì tối cũng sẽ về ăn cơm.⟧ → Gdziekolwiek jest, wieczorem wróci na kolację.
+⟦Chẳng có nơi nào như⟧: „nigdzie nie ma takiego miejsca jak ~” – podkreśla charakterystyczną cechę odróżniającą dane miejsce od innych.
+⟦Chẳng có nơi nào như sông Thao quê tôi, rừng cọ trập trùng.⟧ → Nigdzie nie ma takiego miejsca jak rzeka Thao, moje rodzinne strony, z falującymi lasami palmowymi. · ⟦Chẳng có nơi nào như thành phố này, tiếng còi xe luôn inh ỏi.⟧ → Nigdzie nie ma takiego miejsca jak to miasto, gdzie klaksony ciągle ogłuszająco trąbią. · ⟦Chẳng có nơi nào như vùng ngoại ô này, bụi cát suốt ngày mù mịt.⟧ → Nigdzie nie ma takiego miejsca jak to przedmieście, gdzie przez cały dzień unosi się kurz i piasek.

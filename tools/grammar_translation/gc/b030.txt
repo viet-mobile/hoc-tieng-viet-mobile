@@ -1,0 +1,181 @@
+@@ pdf-grammar-70385bbbba02f194#0
+=cs
+Klíčové výrazy: ⟦không ~ xuể⟧ / ⟦tới⟧
+⟦không + sloveso + xuể⟧ nebo ⟦sloveso + không xuể⟧ znamená „nedá se (všechno) ~“, protože počet či množství je příliš velké nebo objem či plocha příliš rozsáhlé.
+❶ ⟦Vào những ngày nghỉ lễ này, nhiều điểm tham quan bị ngập rác nên các công nhân vệ sinh môi trường dọn không xuể.⟧ — Během těchto svátků byla řada turistických míst zavalena odpadky, takže je úklidoví pracovníci nestačili uklidit.
+❷ ⟦Kể không xuể những cái khổ của giáo viên dạy mầm non.⟧ — Trápení učitelek v mateřských školách se nedá ani vypočítat.
+❸ ⟦Phòng này rất rộng, một người thì sơn tường không xuể trong một ngày.⟧ — Tahle místnost je tak velká, že jeden člověk nestihne vymalovat stěny za jeden den.
+⟦tới⟧ se pojí s číslovkami vyjadřujícími čas, množství, vzdálenost apod. a znamená „až, celých ~“ (zdůrazňuje vysokou míru). Ve stejném významu lze použít i ⟦đến⟧.
+❶ ⟦Sáng nào ông ấy cũng đọc tới 5 loại báo khác nhau.⟧ — Každé ráno čte celých pět různých novin.
+❷ Ⓐ ⟦Cậu có biết toà nhà mới được xây đó có bao nhiêu tầng không?⟧ — Víš, kolik pater má ta nově postavená budova? Ⓑ ⟦Ý cậu hỏi về toà nhà gần trường mình, phải không? Toà nhà đó có tới 81 tầng đấy!⟧ — Myslíš tu budovu u naší školy, ne? Ta má celých 81 pater!
+Procvičování 3 — podívejte se na obrázek a veďte rozhovor s daným slovesem podle vzoru.
+Vzor (⟦ăn⟧ jíst): Ⓐ ⟦Em đã ăn trưa chưa? Nếu chưa thì ăn bún chả với chị nhé. Chị mua hơi nhiều, một mình thì ăn không xuể.⟧ — Už jsi obědvala? Jestli ne, dej si se mnou bún chả. Koupila jsem toho trochu moc, sama to nesním. Ⓑ ⟦Vâng, cảm ơn chị ạ.⟧ — Dobře, děkuji.
+❶ (⟦ôm⟧ obejmout) Ⓐ ⟦Cây này to quá nhỉ?⟧ — Tenhle strom je obrovský, viď? Ⓑ ⟦Ừ, gốc cây này một người ôm không xuể đấy!⟧ — Jo, kmen tohohle stromu jeden člověk neobejme!
+❷ (⟦đếm⟧ počítat) Ⓐ ⟦Em nghe người ta nói là ông ấy giàu lắm, tiền đếm không xuể.⟧ — Slyšela jsem, že je strašně bohatý a peníze ani nestačí přepočítat. Ⓑ ⟦Ừ, anh cũng nghe vậy. Có thể chính ông ấy cũng không biết mình có bao nhiêu tài sản đâu.⟧ — Jo, taky jsem to slyšel. Možná ani sám neví, kolik majetku má.
+Procvičování 4 — doplňte ⟦tới⟧ podle vzoru a veďte rozhovor.
+Vzor: Ⓐ ⟦Mẹ ơi, con ăn thêm 1 chiếc kem nữa, được không mẹ?⟧ — Mami, můžu si dát ještě jednu zmrzlinu? Ⓑ ⟦Không được đâu. Con không nên ăn thêm nữa. Con đã ăn tới 3 chiếc rồi mà!⟧ — Nemůžeš. Už bys neměl jíst další. Snědl jsi jich už celé tři! Ⓐ ⟦Dạ, con biết rồi...⟧ — Dobře, rozumím…
+❶ Ⓐ ⟦Em nghe nói là ngày mai khu phố nhà mình sẽ bị cắt điện trong 3 tiếng.⟧ — Slyšela jsem, že zítra u nás ve čtvrti vypnou na 3 hodiny proud. Ⓑ ⟦Sao? Trời nóng bức thế này mà bị cắt điện tới 3 tiếng hả?⟧ — Cože? V takovém vedru vypnou proud na celé 3 hodiny? Ⓐ ⟦Vâng. Khổ thật!⟧ — Jo. To je hrůza!
+❷ Ⓐ ⟦Em trai của cậu có cao không?⟧ — Je tvůj mladší bratr vysoký? Ⓑ ⟦Ừ, cao lắm. Nó cao tới 1m90 đấy!⟧ — Jo, hodně. Měří celých 190 cm! Ⓐ ⟦Thế à? Thế thì chắc nó là người cao nhất trong trường mình đấy nhỉ!⟧ — Opravdu? Tak to je asi nejvyšší na naší škole!
+Nová slovíčka: ⟦rác⟧ odpadky | ⟦khổ⟧ trápení, trpět | ⟦mầm non⟧ výhonek (⟦trường mầm non⟧ mateřská škola) | ⟦sơn⟧ natírat; barva | ⟦tài sản⟧ majetek | ⟦toà nhà⟧ budova
+=zh_cn
+核心表达：⟦không ~ xuể⟧ / ⟦tới⟧
+⟦không + 动词 + xuể⟧ 或 ⟦动词 + không xuể⟧ 表示因数量太多或体积、面积太大，而“无法全部……完”。
+❶ ⟦Vào những ngày nghỉ lễ này, nhiều điểm tham quan bị ngập rác nên các công nhân vệ sinh môi trường dọn không xuể.⟧ —— 这个假期，许多景点被垃圾淹没，环卫工人根本清扫不完。
+❷ ⟦Kể không xuể những cái khổ của giáo viên dạy mầm non.⟧ —— 幼儿园老师的辛苦说也说不完。
+❸ ⟦Phòng này rất rộng, một người thì sơn tường không xuể trong một ngày.⟧ —— 这个房间很大，一个人一天刷不完墙。
+⟦tới⟧ 与表示时间、数量、间隔等的数词结合，表示“程度之高”，意为“竟达……、……之多”。同样的意思也可以用 ⟦đến⟧。
+❶ ⟦Sáng nào ông ấy cũng đọc tới 5 loại báo khác nhau.⟧ —— 他每天早上都要看多达5种不同的报纸。
+❷ Ⓐ ⟦Cậu có biết toà nhà mới được xây đó có bao nhiêu tầng không?⟧ —— 你知道那栋新建的大楼有多少层吗？ Ⓑ ⟦Ý cậu hỏi về toà nhà gần trường mình, phải không? Toà nhà đó có tới 81 tầng đấy!⟧ —— 你说的是我们学校附近那栋吧？那栋楼足足有81层呢！
+句型练习3 —— 看图用所给动词仿照范例对话。
+范例（⟦ăn⟧ 吃）：Ⓐ ⟦Em đã ăn trưa chưa? Nếu chưa thì ăn bún chả với chị nhé. Chị mua hơi nhiều, một mình thì ăn không xuể.⟧ —— 你吃午饭了吗？没吃的话就和我一起吃烤肉米线吧。我买多了，一个人吃不完。 Ⓑ ⟦Vâng, cảm ơn chị ạ.⟧ —— 好的，谢谢姐姐。
+❶（⟦ôm⟧ 抱）Ⓐ ⟦Cây này to quá nhỉ?⟧ —— 这棵树好大啊！ Ⓑ ⟦Ừ, gốc cây này một người ôm không xuể đấy!⟧ —— 是啊，这树干一个人都抱不过来！
+❷（⟦đếm⟧ 数）Ⓐ ⟦Em nghe người ta nói là ông ấy giàu lắm, tiền đếm không xuể.⟧ —— 听人说他非常有钱，钱多得数不过来。 Ⓑ ⟦Ừ, anh cũng nghe vậy. Có thể chính ông ấy cũng không biết mình có bao nhiêu tài sản đâu.⟧ —— 嗯，我也听说了。说不定他自己都不知道有多少财产。
+句型练习4 —— 仿照范例用 ⟦tới⟧ 填空后进行对话。
+范例：Ⓐ ⟦Mẹ ơi, con ăn thêm 1 chiếc kem nữa, được không mẹ?⟧ —— 妈妈，我再吃一个冰淇淋可以吗？ Ⓑ ⟦Không được đâu. Con không nên ăn thêm nữa. Con đã ăn tới 3 chiếc rồi mà!⟧ —— 不行。你不该再吃了。你都已经吃了3个了！ Ⓐ ⟦Dạ, con biết rồi...⟧ —— 好吧，我知道了……
+❶ Ⓐ ⟦Em nghe nói là ngày mai khu phố nhà mình sẽ bị cắt điện trong 3 tiếng.⟧ —— 听说明天我们这个街区要停电3个小时。 Ⓑ ⟦Sao? Trời nóng bức thế này mà bị cắt điện tới 3 tiếng hả?⟧ —— 什么？天这么热，竟然要停电整整3个小时？ Ⓐ ⟦Vâng. Khổ thật!⟧ —— 是啊。真受罪！
+❷ Ⓐ ⟦Em trai của cậu có cao không?⟧ —— 你弟弟个子高吗？ Ⓑ ⟦Ừ, cao lắm. Nó cao tới 1m90 đấy!⟧ —— 嗯，很高。他足足有1米90呢！ Ⓐ ⟦Thế à? Thế thì chắc nó là người cao nhất trong trường mình đấy nhỉ!⟧ —— 是吗？那他大概是我们学校最高的人了吧！
+新单词：⟦rác⟧ 垃圾 | ⟦khổ⟧ 辛苦、痛苦 | ⟦mầm non⟧ 嫩芽（⟦trường mầm non⟧ 幼儿园）| ⟦sơn⟧ 刷漆；油漆 | ⟦tài sản⟧ 财产 | ⟦toà nhà⟧ 建筑物、大楼
+=zh
+核心表達：⟦không ~ xuể⟧ / ⟦tới⟧
+⟦không + 動詞 + xuể⟧ 或 ⟦動詞 + không xuể⟧ 表示因數量太多或體積、面積太大，而「無法全部……完」。
+❶ ⟦Vào những ngày nghỉ lễ này, nhiều điểm tham quan bị ngập rác nên các công nhân vệ sinh môi trường dọn không xuể.⟧ —— 這次連假，許多景點被垃圾淹沒，清潔人員根本清不完。
+❷ ⟦Kể không xuể những cái khổ của giáo viên dạy mầm non.⟧ —— 幼兒園老師的辛苦說也說不完。
+❸ ⟦Phòng này rất rộng, một người thì sơn tường không xuể trong một ngày.⟧ —— 這個房間很大，一個人一天漆不完牆。
+⟦tới⟧ 與表示時間、數量、間隔等的數詞結合，表示「程度之高」，意為「竟達……、……之多」。同樣的意思也可以用 ⟦đến⟧。
+❶ ⟦Sáng nào ông ấy cũng đọc tới 5 loại báo khác nhau.⟧ —— 他每天早上都要看多達5種不同的報紙。
+❷ Ⓐ ⟦Cậu có biết toà nhà mới được xây đó có bao nhiêu tầng không?⟧ —— 你知道那棟新蓋的大樓有幾層嗎？ Ⓑ ⟦Ý cậu hỏi về toà nhà gần trường mình, phải không? Toà nhà đó có tới 81 tầng đấy!⟧ —— 你說的是我們學校附近那棟吧？那棟樓足足有81層呢！
+句型練習3 —— 看圖用所給動詞仿照範例對話。
+範例（⟦ăn⟧ 吃）：Ⓐ ⟦Em đã ăn trưa chưa? Nếu chưa thì ăn bún chả với chị nhé. Chị mua hơi nhiều, một mình thì ăn không xuể.⟧ —— 妳吃午餐了嗎？還沒的話就和我一起吃烤肉米線吧。我買太多了，一個人吃不完。 Ⓑ ⟦Vâng, cảm ơn chị ạ.⟧ —— 好的，謝謝姊姊。
+❶（⟦ôm⟧ 抱）Ⓐ ⟦Cây này to quá nhỉ?⟧ —— 這棵樹好大啊！ Ⓑ ⟦Ừ, gốc cây này một người ôm không xuể đấy!⟧ —— 是啊，這樹幹一個人都抱不過來！
+❷（⟦đếm⟧ 數）Ⓐ ⟦Em nghe người ta nói là ông ấy giàu lắm, tiền đếm không xuể.⟧ —— 聽人家說他非常有錢，錢多得數不完。 Ⓑ ⟦Ừ, anh cũng nghe vậy. Có thể chính ông ấy cũng không biết mình có bao nhiêu tài sản đâu.⟧ —— 嗯，我也聽說了。說不定他自己都不知道有多少財產。
+句型練習4 —— 仿照範例用 ⟦tới⟧ 填空後進行對話。
+範例：Ⓐ ⟦Mẹ ơi, con ăn thêm 1 chiếc kem nữa, được không mẹ?⟧ —— 媽媽，我再吃一支冰淇淋可以嗎？ Ⓑ ⟦Không được đâu. Con không nên ăn thêm nữa. Con đã ăn tới 3 chiếc rồi mà!⟧ —— 不行。你不該再吃了。你都已經吃了3支了！ Ⓐ ⟦Dạ, con biết rồi...⟧ —— 好吧，我知道了……
+❶ Ⓐ ⟦Em nghe nói là ngày mai khu phố nhà mình sẽ bị cắt điện trong 3 tiếng.⟧ —— 聽說明天我們這一帶要停電3個小時。 Ⓑ ⟦Sao? Trời nóng bức thế này mà bị cắt điện tới 3 tiếng hả?⟧ —— 什麼？天氣這麼熱，竟然要停電整整3個小時？ Ⓐ ⟦Vâng. Khổ thật!⟧ —— 是啊。真受罪！
+❷ Ⓐ ⟦Em trai của cậu có cao không?⟧ —— 你弟弟個子高嗎？ Ⓑ ⟦Ừ, cao lắm. Nó cao tới 1m90 đấy!⟧ —— 嗯，很高。他足足有190公分呢！ Ⓐ ⟦Thế à? Thế thì chắc nó là người cao nhất trong trường mình đấy nhỉ!⟧ —— 是嗎？那他大概是我們學校最高的人了吧！
+新單字：⟦rác⟧ 垃圾 | ⟦khổ⟧ 辛苦、痛苦 | ⟦mầm non⟧ 嫩芽（⟦trường mầm non⟧ 幼兒園）| ⟦sơn⟧ 油漆；上漆 | ⟦tài sản⟧ 財產 | ⟦toà nhà⟧ 建築物、大樓
+=en
+Key expressions: ⟦không ~ xuể⟧ / ⟦tới⟧
+⟦không + verb + xuể⟧ or ⟦verb + không xuể⟧ means "can't ~ it all", because the number or amount is too great, or the volume or area too large.
+❶ ⟦Vào những ngày nghỉ lễ này, nhiều điểm tham quan bị ngập rác nên các công nhân vệ sinh môi trường dọn không xuể.⟧ — Over this holiday many tourist spots were swamped with rubbish, so the cleaners couldn't clear it all.
+❷ ⟦Kể không xuể những cái khổ của giáo viên dạy mầm non.⟧ — The hardships of nursery-school teachers are too many to tell.
+❸ ⟦Phòng này rất rộng, một người thì sơn tường không xuể trong một ngày.⟧ — This room is so big that one person can't paint all the walls in a day.
+⟦tới⟧ combines with numerals of time, quantity, distance, etc. to mean "as many/much as ~", stressing a high degree. ⟦đến⟧ can be used with the same meaning.
+❶ ⟦Sáng nào ông ấy cũng đọc tới 5 loại báo khác nhau.⟧ — Every morning he reads as many as five different newspapers.
+❷ Ⓐ ⟦Cậu có biết toà nhà mới được xây đó có bao nhiêu tầng không?⟧ — Do you know how many floors that new building has? Ⓑ ⟦Ý cậu hỏi về toà nhà gần trường mình, phải không? Toà nhà đó có tới 81 tầng đấy!⟧ — You mean the one near our school, right? It has a whole 81 floors!
+Pattern practice 3 — look at the picture and talk as in the model using the given verb.
+Model (⟦ăn⟧ eat): Ⓐ ⟦Em đã ăn trưa chưa? Nếu chưa thì ăn bún chả với chị nhé. Chị mua hơi nhiều, một mình thì ăn không xuể.⟧ — Have you had lunch? If not, have some bún chả with me. I bought a bit too much – I can't eat it all by myself. Ⓑ ⟦Vâng, cảm ơn chị ạ.⟧ — OK, thank you.
+❶ (⟦ôm⟧ hug) Ⓐ ⟦Cây này to quá nhỉ?⟧ — This tree is huge, isn't it? Ⓑ ⟦Ừ, gốc cây này một người ôm không xuể đấy!⟧ — Yes, one person can't get their arms around the trunk!
+❷ (⟦đếm⟧ count) Ⓐ ⟦Em nghe người ta nói là ông ấy giàu lắm, tiền đếm không xuể.⟧ — I heard he's extremely rich – he has more money than he can count. Ⓑ ⟦Ừ, anh cũng nghe vậy. Có thể chính ông ấy cũng không biết mình có bao nhiêu tài sản đâu.⟧ — Yes, I heard that too. Maybe even he doesn't know how much he owns.
+Pattern practice 4 — fill in the blanks with ⟦tới⟧ as in the model, then talk.
+Model: Ⓐ ⟦Mẹ ơi, con ăn thêm 1 chiếc kem nữa, được không mẹ?⟧ — Mum, can I have one more ice cream? Ⓑ ⟦Không được đâu. Con không nên ăn thêm nữa. Con đã ăn tới 3 chiếc rồi mà!⟧ — No. You shouldn't have any more. You've already had three! Ⓐ ⟦Dạ, con biết rồi...⟧ — OK, I understand…
+❶ Ⓐ ⟦Em nghe nói là ngày mai khu phố nhà mình sẽ bị cắt điện trong 3 tiếng.⟧ — I heard our neighbourhood will have a 3-hour power cut tomorrow. Ⓑ ⟦Sao? Trời nóng bức thế này mà bị cắt điện tới 3 tiếng hả?⟧ — What? In this heat, the power will be off for a full 3 hours? Ⓐ ⟦Vâng. Khổ thật!⟧ — Yes. It's awful!
+❷ Ⓐ ⟦Em trai của cậu có cao không?⟧ — Is your younger brother tall? Ⓑ ⟦Ừ, cao lắm. Nó cao tới 1m90 đấy!⟧ — Yes, very. He's a whole 1.90 m! Ⓐ ⟦Thế à? Thế thì chắc nó là người cao nhất trong trường mình đấy nhỉ!⟧ — Really? Then he must be the tallest person in our school!
+New words: ⟦rác⟧ rubbish | ⟦khổ⟧ hardship, suffering | ⟦mầm non⟧ sprout (⟦trường mầm non⟧ nursery school) | ⟦sơn⟧ to paint; paint | ⟦tài sản⟧ property, assets | ⟦toà nhà⟧ building
+=fr
+Expressions clés : ⟦không ~ xuể⟧ / ⟦tới⟧
+⟦không + verbe + xuể⟧ ou ⟦verbe + không xuể⟧ signifie « ne pas arriver à tout ~ », parce que le nombre ou la quantité est trop grand, ou le volume ou la surface trop vaste.
+❶ ⟦Vào những ngày nghỉ lễ này, nhiều điểm tham quan bị ngập rác nên các công nhân vệ sinh môi trường dọn không xuể.⟧ — Pendant ces jours fériés, de nombreux sites touristiques ont été submergés de déchets, si bien que les agents de propreté n'ont pas pu tout ramasser.
+❷ ⟦Kể không xuể những cái khổ của giáo viên dạy mầm non.⟧ — On ne saurait énumérer toutes les peines des enseignants de maternelle.
+❸ ⟦Phòng này rất rộng, một người thì sơn tường không xuể trong một ngày.⟧ — Cette pièce est si grande qu'une personne seule ne peut pas peindre tous les murs en une journée.
+⟦tới⟧ se combine avec des numéraux de temps, de quantité, d'écart, etc. pour signifier « jusqu'à ~, pas moins de ~ », soulignant un degré élevé. On peut aussi employer ⟦đến⟧ dans le même sens.
+❶ ⟦Sáng nào ông ấy cũng đọc tới 5 loại báo khác nhau.⟧ — Chaque matin, il lit pas moins de cinq journaux différents.
+❷ Ⓐ ⟦Cậu có biết toà nhà mới được xây đó có bao nhiêu tầng không?⟧ — Tu sais combien d'étages a ce nouvel immeuble ? Ⓑ ⟦Ý cậu hỏi về toà nhà gần trường mình, phải không? Toà nhà đó có tới 81 tầng đấy!⟧ — Tu parles de celui près de notre école ? Il a pas moins de 81 étages !
+Exercice 3 — regardez l'image et dialoguez comme dans le modèle avec le verbe donné.
+Modèle (⟦ăn⟧ manger) : Ⓐ ⟦Em đã ăn trưa chưa? Nếu chưa thì ăn bún chả với chị nhé. Chị mua hơi nhiều, một mình thì ăn không xuể.⟧ — Tu as déjeuné ? Sinon, mange du bún chả avec moi. J'en ai acheté un peu trop, je n'arriverai pas à tout manger seule. Ⓑ ⟦Vâng, cảm ơn chị ạ.⟧ — D'accord, merci.
+❶ (⟦ôm⟧ entourer de ses bras) Ⓐ ⟦Cây này to quá nhỉ?⟧ — Cet arbre est énorme, non ? Ⓑ ⟦Ừ, gốc cây này một người ôm không xuể đấy!⟧ — Oui, une seule personne ne peut pas entourer son tronc de ses bras !
+❷ (⟦đếm⟧ compter) Ⓐ ⟦Em nghe người ta nói là ông ấy giàu lắm, tiền đếm không xuể.⟧ — On dit qu'il est très riche, qu'il a plus d'argent qu'il ne peut en compter. Ⓑ ⟦Ừ, anh cũng nghe vậy. Có thể chính ông ấy cũng không biết mình có bao nhiêu tài sản đâu.⟧ — Oui, je l'ai entendu aussi. Peut-être qu'il ne sait même pas lui-même combien il possède.
+Exercice 4 — complétez avec ⟦tới⟧ comme dans le modèle, puis dialoguez.
+Modèle : Ⓐ ⟦Mẹ ơi, con ăn thêm 1 chiếc kem nữa, được không mẹ?⟧ — Maman, je peux manger encore une glace ? Ⓑ ⟦Không được đâu. Con không nên ăn thêm nữa. Con đã ăn tới 3 chiếc rồi mà!⟧ — Non. Tu ne devrais plus en manger. Tu en as déjà mangé trois ! Ⓐ ⟦Dạ, con biết rồi...⟧ — D'accord, j'ai compris…
+❶ Ⓐ ⟦Em nghe nói là ngày mai khu phố nhà mình sẽ bị cắt điện trong 3 tiếng.⟧ — J'ai entendu dire que demain notre quartier sera privé d'électricité pendant 3 heures. Ⓑ ⟦Sao? Trời nóng bức thế này mà bị cắt điện tới 3 tiếng hả?⟧ — Quoi ? Par cette chaleur, une coupure de trois heures entières ? Ⓐ ⟦Vâng. Khổ thật!⟧ — Oui. Quelle galère !
+❷ Ⓐ ⟦Em trai của cậu có cao không?⟧ — Ton petit frère est grand ? Ⓑ ⟦Ừ, cao lắm. Nó cao tới 1m90 đấy!⟧ — Oui, très. Il mesure pas moins d'1,90 m ! Ⓐ ⟦Thế à? Thế thì chắc nó là người cao nhất trong trường mình đấy nhỉ!⟧ — Ah bon ? Alors c'est sûrement le plus grand de notre école !
+Nouveaux mots : ⟦rác⟧ déchets | ⟦khổ⟧ peine, souffrir | ⟦mầm non⟧ jeune pousse (⟦trường mầm non⟧ école maternelle) | ⟦sơn⟧ peindre ; peinture | ⟦tài sản⟧ biens, fortune | ⟦toà nhà⟧ bâtiment, immeuble
+=de
+Schlüsselausdrücke: ⟦không ~ xuể⟧ / ⟦tới⟧
+⟦không + Verb + xuể⟧ oder ⟦Verb + không xuể⟧ bedeutet „nicht alles ~ können“, weil Anzahl oder Menge zu groß bzw. Umfang oder Fläche zu weit sind.
+❶ ⟦Vào những ngày nghỉ lễ này, nhiều điểm tham quan bị ngập rác nên các công nhân vệ sinh môi trường dọn không xuể.⟧ — An diesen Feiertagen versanken viele Sehenswürdigkeiten im Müll, sodass die Reinigungskräfte nicht alles wegräumen konnten.
+❷ ⟦Kể không xuể những cái khổ của giáo viên dạy mầm non.⟧ — Die Mühen der Kindergärtnerinnen kann man gar nicht alle aufzählen.
+❸ ⟦Phòng này rất rộng, một người thì sơn tường không xuể trong một ngày.⟧ — Dieser Raum ist so groß, dass eine Person die Wände nicht an einem Tag streichen kann.
+⟦tới⟧ verbindet sich mit Zahlwörtern für Zeit, Menge, Abstand usw. und bedeutet „ganze ~, sogar ~“ (betont einen hohen Grad). Mit gleicher Bedeutung kann auch ⟦đến⟧ stehen.
+❶ ⟦Sáng nào ông ấy cũng đọc tới 5 loại báo khác nhau.⟧ — Jeden Morgen liest er ganze fünf verschiedene Zeitungen.
+❷ Ⓐ ⟦Cậu có biết toà nhà mới được xây đó có bao nhiêu tầng không?⟧ — Weißt du, wie viele Stockwerke das neu gebaute Gebäude hat? Ⓑ ⟦Ý cậu hỏi về toà nhà gần trường mình, phải không? Toà nhà đó có tới 81 tầng đấy!⟧ — Du meinst das bei unserer Schule, oder? Das hat ganze 81 Stockwerke!
+Übung 3 — Bild ansehen und wie im Muster mit dem vorgegebenen Verb sprechen.
+Muster (⟦ăn⟧ essen): Ⓐ ⟦Em đã ăn trưa chưa? Nếu chưa thì ăn bún chả với chị nhé. Chị mua hơi nhiều, một mình thì ăn không xuể.⟧ — Hast du schon zu Mittag gegessen? Wenn nicht, iss mit mir Bún chả. Ich habe etwas zu viel gekauft, allein schaffe ich das nicht. Ⓑ ⟦Vâng, cảm ơn chị ạ.⟧ — Gern, danke.
+❶ (⟦ôm⟧ umarmen) Ⓐ ⟦Cây này to quá nhỉ?⟧ — Dieser Baum ist riesig, nicht? Ⓑ ⟦Ừ, gốc cây này một người ôm không xuể đấy!⟧ — Ja, den Stamm kann ein Mensch allein nicht umfassen!
+❷ (⟦đếm⟧ zählen) Ⓐ ⟦Em nghe người ta nói là ông ấy giàu lắm, tiền đếm không xuể.⟧ — Man sagt, er sei sehr reich und habe mehr Geld, als er zählen kann. Ⓑ ⟦Ừ, anh cũng nghe vậy. Có thể chính ông ấy cũng không biết mình có bao nhiêu tài sản đâu.⟧ — Ja, das habe ich auch gehört. Vielleicht weiß er selbst nicht, wie viel Vermögen er hat.
+Übung 4 — mit ⟦tới⟧ wie im Muster ergänzen, dann sprechen.
+Muster: Ⓐ ⟦Mẹ ơi, con ăn thêm 1 chiếc kem nữa, được không mẹ?⟧ — Mama, darf ich noch ein Eis essen? Ⓑ ⟦Không được đâu. Con không nên ăn thêm nữa. Con đã ăn tới 3 chiếc rồi mà!⟧ — Nein. Du solltest keins mehr essen. Du hast doch schon ganze drei gegessen! Ⓐ ⟦Dạ, con biết rồi...⟧ — Ja, schon gut…
+❶ Ⓐ ⟦Em nghe nói là ngày mai khu phố nhà mình sẽ bị cắt điện trong 3 tiếng.⟧ — Ich habe gehört, dass morgen in unserem Viertel 3 Stunden der Strom abgestellt wird. Ⓑ ⟦Sao? Trời nóng bức thế này mà bị cắt điện tới 3 tiếng hả?⟧ — Was? Bei dieser Hitze ganze 3 Stunden ohne Strom? Ⓐ ⟦Vâng. Khổ thật!⟧ — Ja. Schrecklich!
+❷ Ⓐ ⟦Em trai của cậu có cao không?⟧ — Ist dein jüngerer Bruder groß? Ⓑ ⟦Ừ, cao lắm. Nó cao tới 1m90 đấy!⟧ — Ja, sehr. Er ist ganze 1,90 m groß! Ⓐ ⟦Thế à? Thế thì chắc nó là người cao nhất trong trường mình đấy nhỉ!⟧ — Echt? Dann ist er bestimmt der Größte an unserer Schule!
+Neue Wörter: ⟦rác⟧ Müll | ⟦khổ⟧ Mühsal, leiden | ⟦mầm non⟧ Keim, Spross (⟦trường mầm non⟧ Kindergarten) | ⟦sơn⟧ streichen; Farbe | ⟦tài sản⟧ Vermögen | ⟦toà nhà⟧ Gebäude
+=hu
+Kulcskifejezések: ⟦không ~ xuể⟧ / ⟦tới⟧
+A ⟦không + ige + xuể⟧ vagy ⟦ige + không xuể⟧ jelentése „nem lehet (mindet) ~”, mert a szám vagy mennyiség túl nagy, illetve a térfogat vagy terület túl kiterjedt.
+❶ ⟦Vào những ngày nghỉ lễ này, nhiều điểm tham quan bị ngập rác nên các công nhân vệ sinh môi trường dọn không xuể.⟧ — Az ünnepek alatt sok látnivalót elárasztott a szemét, így a takarítók nem tudták mind eltakarítani.
+❷ ⟦Kể không xuể những cái khổ của giáo viên dạy mầm non.⟧ — Az óvónők gondjait fel sem lehet sorolni.
+❸ ⟦Phòng này rất rộng, một người thì sơn tường không xuể trong một ngày.⟧ — Ez a szoba olyan nagy, hogy egy ember egy nap alatt nem tudja végigfesteni a falakat.
+A ⟦tới⟧ időt, mennyiséget, távolságot stb. jelölő számnevekkel állva „egészen ~, nem kevesebb mint ~” jelentésű, a nagy mértéket hangsúlyozza. Ugyanebben az értelemben a ⟦đến⟧ is használható.
+❶ ⟦Sáng nào ông ấy cũng đọc tới 5 loại báo khác nhau.⟧ — Minden reggel nem kevesebb, mint ötféle újságot olvas.
+❷ Ⓐ ⟦Cậu có biết toà nhà mới được xây đó có bao nhiêu tầng không?⟧ — Tudod, hány emeletes az az újonnan épült ház? Ⓑ ⟦Ý cậu hỏi về toà nhà gần trường mình, phải không? Toà nhà đó có tới 81 tầng đấy!⟧ — Az iskolánk mellettire gondolsz, ugye? Annak egészen 81 emelete van!
+3. gyakorlat — nézze meg a képet, és beszélgessen a minta szerint a megadott igével.
+Minta (⟦ăn⟧ enni): Ⓐ ⟦Em đã ăn trưa chưa? Nếu chưa thì ăn bún chả với chị nhé. Chị mua hơi nhiều, một mình thì ăn không xuể.⟧ — Ebédeltél már? Ha nem, egyél velem bún chả-t. Kicsit sokat vettem, egyedül nem bírom megenni. Ⓑ ⟦Vâng, cảm ơn chị ạ.⟧ — Jó, köszönöm.
+❶ (⟦ôm⟧ átölelni) Ⓐ ⟦Cây này to quá nhỉ?⟧ — Hatalmas ez a fa, ugye? Ⓑ ⟦Ừ, gốc cây này một người ôm không xuể đấy!⟧ — Igen, a törzsét egy ember nem tudja átölelni!
+❷ (⟦đếm⟧ számolni) Ⓐ ⟦Em nghe người ta nói là ông ấy giàu lắm, tiền đếm không xuể.⟧ — Azt hallottam, nagyon gazdag, annyi pénze van, hogy meg sem tudja számolni. Ⓑ ⟦Ừ, anh cũng nghe vậy. Có thể chính ông ấy cũng không biết mình có bao nhiêu tài sản đâu.⟧ — Igen, én is hallottam. Talán ő maga sem tudja, mekkora a vagyona.
+4. gyakorlat — töltse ki a ⟦tới⟧ szóval a minta szerint, majd beszélgessen.
+Minta: Ⓐ ⟦Mẹ ơi, con ăn thêm 1 chiếc kem nữa, được không mẹ?⟧ — Anya, ehetek még egy fagyit? Ⓑ ⟦Không được đâu. Con không nên ăn thêm nữa. Con đã ăn tới 3 chiếc rồi mà!⟧ — Nem. Nem kéne többet enned. Már egészen hármat megettél! Ⓐ ⟦Dạ, con biết rồi...⟧ — Jó, értem…
+❶ Ⓐ ⟦Em nghe nói là ngày mai khu phố nhà mình sẽ bị cắt điện trong 3 tiếng.⟧ — Azt hallottam, holnap 3 órára kikapcsolják az áramot a környékünkön. Ⓑ ⟦Sao? Trời nóng bức thế này mà bị cắt điện tới 3 tiếng hả?⟧ — Mi? Ilyen hőségben egészen 3 órára nem lesz áram? Ⓐ ⟦Vâng. Khổ thật!⟧ — Igen. Szörnyű!
+❷ Ⓐ ⟦Em trai của cậu có cao không?⟧ — Magas az öcséd? Ⓑ ⟦Ừ, cao lắm. Nó cao tới 1m90 đấy!⟧ — Igen, nagyon. Egészen 190 cm magas! Ⓐ ⟦Thế à? Thế thì chắc nó là người cao nhất trong trường mình đấy nhỉ!⟧ — Tényleg? Akkor biztos ő a legmagasabb az iskolánkban!
+Új szavak: ⟦rác⟧ szemét | ⟦khổ⟧ szenvedés, gyötrődni | ⟦mầm non⟧ hajtás, rügy (⟦trường mầm non⟧ óvoda) | ⟦sơn⟧ festeni; festék | ⟦tài sản⟧ vagyon | ⟦toà nhà⟧ épület
+=id
+Ungkapan kunci: ⟦không ~ xuể⟧ / ⟦tới⟧
+⟦không + verba + xuể⟧ atau ⟦verba + không xuể⟧ berarti "tidak sanggup ~ semuanya", karena jumlahnya terlalu banyak atau volume dan luasnya terlalu besar.
+❶ ⟦Vào những ngày nghỉ lễ này, nhiều điểm tham quan bị ngập rác nên các công nhân vệ sinh môi trường dọn không xuể.⟧ — Selama libur panjang ini, banyak tempat wisata dipenuhi sampah sehingga petugas kebersihan tidak sanggup membersihkan semuanya.
+❷ ⟦Kể không xuể những cái khổ của giáo viên dạy mầm non.⟧ — Kesulitan guru PAUD tak terhitung banyaknya.
+❸ ⟦Phòng này rất rộng, một người thì sơn tường không xuể trong một ngày.⟧ — Ruangan ini sangat luas, satu orang tidak sanggup mengecat semua dindingnya dalam sehari.
+⟦tới⟧ bergabung dengan numeralia waktu, jumlah, jarak, dsb. dan berarti "sampai ~, sebanyak ~" untuk menekankan tingkat yang tinggi. ⟦đến⟧ juga bisa dipakai dengan makna yang sama.
+❶ ⟦Sáng nào ông ấy cũng đọc tới 5 loại báo khác nhau.⟧ — Setiap pagi dia membaca sampai lima jenis koran yang berbeda.
+❷ Ⓐ ⟦Cậu có biết toà nhà mới được xây đó có bao nhiêu tầng không?⟧ — Kamu tahu gedung yang baru dibangun itu berapa lantai? Ⓑ ⟦Ý cậu hỏi về toà nhà gần trường mình, phải không? Toà nhà đó có tới 81 tầng đấy!⟧ — Maksudmu gedung dekat sekolah kita, kan? Gedung itu sampai 81 lantai, lho!
+Latihan pola 3 — lihat gambar dan bercakaplah seperti contoh dengan verba yang diberikan.
+Contoh (⟦ăn⟧ makan): Ⓐ ⟦Em đã ăn trưa chưa? Nếu chưa thì ăn bún chả với chị nhé. Chị mua hơi nhiều, một mình thì ăn không xuể.⟧ — Kamu sudah makan siang? Kalau belum, makan bún chả bareng Kakak, yuk. Kakak beli agak banyak, sendirian tidak akan habis. Ⓑ ⟦Vâng, cảm ơn chị ạ.⟧ — Iya, terima kasih, Kak.
+❶ (⟦ôm⟧ memeluk) Ⓐ ⟦Cây này to quá nhỉ?⟧ — Pohon ini besar sekali, ya? Ⓑ ⟦Ừ, gốc cây này một người ôm không xuể đấy!⟧ — Iya, batangnya tidak bisa dipeluk satu orang!
+❷ (⟦đếm⟧ menghitung) Ⓐ ⟦Em nghe người ta nói là ông ấy giàu lắm, tiền đếm không xuể.⟧ — Katanya dia kaya sekali, uangnya tak terhitung. Ⓑ ⟦Ừ, anh cũng nghe vậy. Có thể chính ông ấy cũng không biết mình có bao nhiêu tài sản đâu.⟧ — Iya, aku juga dengar begitu. Mungkin dia sendiri pun tidak tahu berapa hartanya.
+Latihan pola 4 — isi dengan ⟦tới⟧ seperti contoh, lalu bercakaplah.
+Contoh: Ⓐ ⟦Mẹ ơi, con ăn thêm 1 chiếc kem nữa, được không mẹ?⟧ — Bu, boleh aku makan satu es krim lagi? Ⓑ ⟦Không được đâu. Con không nên ăn thêm nữa. Con đã ăn tới 3 chiếc rồi mà!⟧ — Tidak boleh. Kamu jangan makan lagi. Kamu sudah makan sampai tiga! Ⓐ ⟦Dạ, con biết rồi...⟧ — Iya, aku mengerti…
+❶ Ⓐ ⟦Em nghe nói là ngày mai khu phố nhà mình sẽ bị cắt điện trong 3 tiếng.⟧ — Katanya besok di lingkungan kita akan ada pemadaman listrik selama 3 jam. Ⓑ ⟦Sao? Trời nóng bức thế này mà bị cắt điện tới 3 tiếng hả?⟧ — Apa? Cuaca sepanas ini, listrik padam sampai 3 jam? Ⓐ ⟦Vâng. Khổ thật!⟧ — Iya. Susah sekali!
+❷ Ⓐ ⟦Em trai của cậu có cao không?⟧ — Adikmu tinggi tidak? Ⓑ ⟦Ừ, cao lắm. Nó cao tới 1m90 đấy!⟧ — Iya, tinggi sekali. Tingginya sampai 190 cm! Ⓐ ⟦Thế à? Thế thì chắc nó là người cao nhất trong trường mình đấy nhỉ!⟧ — Oh ya? Kalau begitu pasti dia orang paling tinggi di sekolah kita!
+Kosakata baru: ⟦rác⟧ sampah | ⟦khổ⟧ penderitaan, susah | ⟦mầm non⟧ tunas (⟦trường mầm non⟧ PAUD/TK) | ⟦sơn⟧ mengecat; cat | ⟦tài sản⟧ harta | ⟦toà nhà⟧ gedung
+=ja
+核心表現：⟦không ~ xuể⟧ / ⟦tới⟧
+⟦không + 動詞 + xuể⟧ または ⟦動詞 + không xuể⟧ は、数や量が多すぎたり体積・面積などが大きすぎたりして「（全部は）～しきれない」という意味を表します。
+❶ ⟦Vào những ngày nghỉ lễ này, nhiều điểm tham quan bị ngập rác nên các công nhân vệ sinh môi trường dọn không xuể.⟧ — 今回の連休に多くの観光地がごみで埋まってしまい、清掃員たちは片付けきれませんでした。
+❷ ⟦Kể không xuể những cái khổ của giáo viên dạy mầm non.⟧ — 保育士の苦労は言い尽くせません。
+❸ ⟦Phòng này rất rộng, một người thì sơn tường không xuể trong một ngày.⟧ — この部屋はとても広いので、一人では一日で壁を塗りきれません。
+⟦tới⟧ は時間・数量・間隔などを表す数詞と結合して、「程度がはなはだしい」ことを表す「～も」の意味で使われます。同じ意味で ⟦đến⟧ も使えます。
+❶ ⟦Sáng nào ông ấy cũng đọc tới 5 loại báo khác nhau.⟧ — 彼は毎朝、異なる新聞を5種類も読みます。
+❷ Ⓐ ⟦Cậu có biết toà nhà mới được xây đó có bao nhiêu tầng không?⟧ — あの新しく建った建物が何階建てか知ってる？ Ⓑ ⟦Ý cậu hỏi về toà nhà gần trường mình, phải không? Toà nhà đó có tới 81 tầng đấy!⟧ — 学校の近くにある建物のこと？あの建物は81階もあるんだよ！
+文型練習3 — 絵を見ながら、与えられた動詞を使って例のように会話してみましょう。
+例（⟦ăn⟧ 食べる）：Ⓐ ⟦Em đã ăn trưa chưa? Nếu chưa thì ăn bún chả với chị nhé. Chị mua hơi nhiều, một mình thì ăn không xuể.⟧ — お昼食べた？まだならブンチャーを一緒に食べよう。ちょっと買いすぎて、一人じゃ食べきれないの。 Ⓑ ⟦Vâng, cảm ơn chị ạ.⟧ — はい、ありがとうございます。
+❶（⟦ôm⟧ 抱える）Ⓐ ⟦Cây này to quá nhỉ?⟧ — この木、すごく大きいね。 Ⓑ ⟦Ừ, gốc cây này một người ôm không xuể đấy!⟧ — うん、この幹は一人じゃ抱えきれないよ！
+❷（⟦đếm⟧ 数える）Ⓐ ⟦Em nghe người ta nói là ông ấy giàu lắm, tiền đếm không xuể.⟧ — あの人はすごいお金持ちで、お金が数えきれないほどあるそうですね。 Ⓑ ⟦Ừ, anh cũng nghe vậy. Có thể chính ông ấy cũng không biết mình có bao nhiêu tài sản đâu.⟧ — うん、僕もそう聞いた。本人も自分の財産がどれくらいあるか知らないかもしれないね。
+文型練習4 — 例のように ⟦tới⟧ を使って空欄を埋め、会話してみましょう。
+例：Ⓐ ⟦Mẹ ơi, con ăn thêm 1 chiếc kem nữa, được không mẹ?⟧ — お母さん、アイスもう1本食べてもいい？ Ⓑ ⟦Không được đâu. Con không nên ăn thêm nữa. Con đã ăn tới 3 chiếc rồi mà!⟧ — だめよ。もう食べちゃいけません。もう3本も食べたでしょう！ Ⓐ ⟦Dạ, con biết rồi...⟧ — はい、わかった……
+❶ Ⓐ ⟦Em nghe nói là ngày mai khu phố nhà mình sẽ bị cắt điện trong 3 tiếng.⟧ — 明日、うちの地域で3時間停電するそうです。 Ⓑ ⟦Sao? Trời nóng bức thế này mà bị cắt điện tới 3 tiếng hả?⟧ — えっ？こんなに蒸し暑いのに3時間も停電するの？ Ⓐ ⟦Vâng. Khổ thật!⟧ — ええ。本当につらいですね！
+❷ Ⓐ ⟦Em trai của cậu có cao không?⟧ — 君の弟は背が高い？ Ⓑ ⟦Ừ, cao lắm. Nó cao tới 1m90 đấy!⟧ — うん、すごく高いよ。190センチもあるんだ！ Ⓐ ⟦Thế à? Thế thì chắc nó là người cao nhất trong trường mình đấy nhỉ!⟧ — そうなの？じゃあきっとうちの学校で一番背が高いね！
+新出単語：⟦rác⟧ ごみ | ⟦khổ⟧ 苦しい、苦労 | ⟦mầm non⟧ 新芽（⟦trường mầm non⟧ 保育園）| ⟦sơn⟧ ペンキを塗る、ペンキ | ⟦tài sản⟧ 財産 | ⟦toà nhà⟧ 建物
+=pl
+Kluczowe wyrażenia: ⟦không ~ xuể⟧ / ⟦tới⟧
+⟦không + czasownik + xuể⟧ lub ⟦czasownik + không xuể⟧ znaczy „nie dać rady ~ wszystkiego”, bo liczba lub ilość jest zbyt duża albo objętość czy powierzchnia zbyt rozległa.
+❶ ⟦Vào những ngày nghỉ lễ này, nhiều điểm tham quan bị ngập rác nên các công nhân vệ sinh môi trường dọn không xuể.⟧ — W te święta wiele atrakcji turystycznych utonęło w śmieciach, więc sprzątacze nie nadążali z ich usuwaniem.
+❷ ⟦Kể không xuể những cái khổ của giáo viên dạy mầm non.⟧ — Trudów nauczycielek przedszkolnych nie da się nawet wyliczyć.
+❸ ⟦Phòng này rất rộng, một người thì sơn tường không xuể trong một ngày.⟧ — Ten pokój jest tak duży, że jedna osoba nie zdąży pomalować ścian w jeden dzień.
+⟦tới⟧ łączy się z liczebnikami czasu, ilości, odległości itp. i znaczy „aż ~, całe ~”, podkreślając wysoki stopień. W tym samym znaczeniu można użyć ⟦đến⟧.
+❶ ⟦Sáng nào ông ấy cũng đọc tới 5 loại báo khác nhau.⟧ — Każdego ranka czyta aż pięć różnych gazet.
+❷ Ⓐ ⟦Cậu có biết toà nhà mới được xây đó có bao nhiêu tầng không?⟧ — Wiesz, ile pięter ma ten nowo zbudowany budynek? Ⓑ ⟦Ý cậu hỏi về toà nhà gần trường mình, phải không? Toà nhà đó có tới 81 tầng đấy!⟧ — Chodzi ci o ten przy naszej szkole, tak? Ma aż 81 pięter!
+Ćwiczenie 3 — patrząc na obrazek, rozmawiaj jak we wzorze, używając podanego czasownika.
+Wzór (⟦ăn⟧ jeść): Ⓐ ⟦Em đã ăn trưa chưa? Nếu chưa thì ăn bún chả với chị nhé. Chị mua hơi nhiều, một mình thì ăn không xuể.⟧ — Jadłaś już obiad? Jeśli nie, zjedz ze mną bún chả. Kupiłam trochę za dużo, sama nie dam rady. Ⓑ ⟦Vâng, cảm ơn chị ạ.⟧ — Dobrze, dziękuję.
+❶ (⟦ôm⟧ objąć) Ⓐ ⟦Cây này to quá nhỉ?⟧ — Ale ogromne drzewo, prawda? Ⓑ ⟦Ừ, gốc cây này một người ôm không xuể đấy!⟧ — Tak, jedna osoba nie obejmie tego pnia!
+❷ (⟦đếm⟧ liczyć) Ⓐ ⟦Em nghe người ta nói là ông ấy giàu lắm, tiền đếm không xuể.⟧ — Słyszałam, że jest bardzo bogaty i ma więcej pieniędzy, niż zdoła przeliczyć. Ⓑ ⟦Ừ, anh cũng nghe vậy. Có thể chính ông ấy cũng không biết mình có bao nhiêu tài sản đâu.⟧ — Tak, też to słyszałem. Może sam nie wie, ile ma majątku.
+Ćwiczenie 4 — uzupełnij za pomocą ⟦tới⟧ jak we wzorze, potem rozmawiaj.
+Wzór: Ⓐ ⟦Mẹ ơi, con ăn thêm 1 chiếc kem nữa, được không mẹ?⟧ — Mamo, mogę zjeść jeszcze jednego loda? Ⓑ ⟦Không được đâu. Con không nên ăn thêm nữa. Con đã ăn tới 3 chiếc rồi mà!⟧ — Nie. Nie powinieneś już więcej jeść. Zjadłeś już aż trzy! Ⓐ ⟦Dạ, con biết rồi...⟧ — Dobrze, rozumiem…
+❶ Ⓐ ⟦Em nghe nói là ngày mai khu phố nhà mình sẽ bị cắt điện trong 3 tiếng.⟧ — Słyszałam, że jutro w naszej dzielnicy wyłączą prąd na 3 godziny. Ⓑ ⟦Sao? Trời nóng bức thế này mà bị cắt điện tới 3 tiếng hả?⟧ — Co? W taki upał bez prądu aż przez 3 godziny? Ⓐ ⟦Vâng. Khổ thật!⟧ — Tak. Koszmar!
+❷ Ⓐ ⟦Em trai của cậu có cao không?⟧ — Twój młodszy brat jest wysoki? Ⓑ ⟦Ừ, cao lắm. Nó cao tới 1m90 đấy!⟧ — Tak, bardzo. Ma aż 190 cm! Ⓐ ⟦Thế à? Thế thì chắc nó là người cao nhất trong trường mình đấy nhỉ!⟧ — Naprawdę? To pewnie najwyższy w naszej szkole!
+Nowe słówka: ⟦rác⟧ śmieci | ⟦khổ⟧ cierpienie, męczyć się | ⟦mầm non⟧ pęd, kiełek (⟦trường mầm non⟧ przedszkole) | ⟦sơn⟧ malować; farba | ⟦tài sản⟧ majątek | ⟦toà nhà⟧ budynek

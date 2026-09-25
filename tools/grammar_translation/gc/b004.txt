@@ -1,0 +1,582 @@
+@@ pdf-grammar-fcf0176207d3f7f7#0
+=cs
+⟦Em là học sinh lớp mười.⟧ — Jsem žák 10. ročníku (1. ročník střední školy).
+⟦Chị gái của em là sinh viên.⟧ — Moje starší sestra je vysokoškolačka.
+Škola | věk | žák/student | ročník | délka (roky)
+=zh_cn
+⟦Em là học sinh lớp mười.⟧ —— 我是十年级（高一）学生。
+⟦Chị gái của em là sinh viên.⟧ —— 我姐姐是大学生。
+学校 | 年龄 | 学生 | 年级 | 年限（年）
+=zh
+⟦Em là học sinh lớp mười.⟧ —— 我是十年級（高一）學生。
+⟦Chị gái của em là sinh viên.⟧ —— 我姐姐是大學生。
+學校 | 年齡 | 學生 | 年級 | 年限（年）
+=en
+⟦Em là học sinh lớp mười.⟧ — I'm in grade 10 (first year of high school).
+⟦Chị gái của em là sinh viên.⟧ — My older sister is a university student.
+School | age | student | grade | length (years)
+=fr
+⟦Em là học sinh lớp mười.⟧ — Je suis en 10e année (première année de lycée).
+⟦Chị gái của em là sinh viên.⟧ — Ma grande sœur est étudiante.
+École | âge | élève/étudiant | année | durée (ans)
+=de
+⟦Em là học sinh lớp mười.⟧ — Ich bin in der 10. Klasse (erstes Jahr der Oberschule).
+⟦Chị gái của em là sinh viên.⟧ — Meine ältere Schwester ist Studentin.
+Schule | Alter | Schüler/Student | Klasse | Dauer (Jahre)
+=hu
+⟦Em là học sinh lớp mười.⟧ — 10. osztályos (elsős középiskolás) tanuló vagyok.
+⟦Chị gái của em là sinh viên.⟧ — A nővérem egyetemista.
+Iskola | életkor | tanuló/hallgató | évfolyam | időtartam (év)
+=id
+⟦Em là học sinh lớp mười.⟧ — Saya siswa kelas 10 (kelas 1 SMA).
+⟦Chị gái của em là sinh viên.⟧ — Kakak perempuan saya mahasiswa.
+Sekolah | usia | siswa/mahasiswa | tingkat | lama (tahun)
+=ja
+⟦Em là học sinh lớp mười.⟧ — 私は10年生（高校1年生）です。
+⟦Chị gái của em là sinh viên.⟧ — 私の姉は大学生です。
+学校 | 年齢 | 学生 | 学年 | 期間（年）
+=pl
+⟦Em là học sinh lớp mười.⟧ — Jestem uczniem 10. klasy (pierwszej klasy liceum).
+⟦Chị gái của em là sinh viên.⟧ — Moja starsza siostra jest studentką.
+Szkoła | wiek | uczeń/student | klasa | czas trwania (lata)
+@@ pdf-grammar-fcf0176207d3f7f7#2
+=cs
+⟦trường tiểu học⟧ — základní škola (1. stupeň) | věk 6–11 | ⟦học sinh⟧ | ⟦lớp ba⟧ 3. ročník | 5 let
+=zh_cn
+⟦trường tiểu học⟧ —— 小学 | 6～11 岁 | ⟦học sinh⟧ | ⟦lớp ba⟧ 三年级 | 5 年
+=zh
+⟦trường tiểu học⟧ —— 小學 | 6～11 歲 | ⟦học sinh⟧ | ⟦lớp ba⟧ 三年級 | 5 年
+=en
+⟦trường tiểu học⟧ — primary school | ages 6–11 | ⟦học sinh⟧ | ⟦lớp ba⟧ grade 3 | 5 years
+=fr
+⟦trường tiểu học⟧ — école primaire | 6–11 ans | ⟦học sinh⟧ | ⟦lớp ba⟧ 3e année | 5 ans
+=de
+⟦trường tiểu học⟧ — Grundschule | 6–11 Jahre | ⟦học sinh⟧ | ⟦lớp ba⟧ 3. Klasse | 5 Jahre
+=hu
+⟦trường tiểu học⟧ — általános iskola (alsó tagozat) | 6–11 év | ⟦học sinh⟧ | ⟦lớp ba⟧ 3. osztály | 5 év
+=id
+⟦trường tiểu học⟧ — sekolah dasar | usia 6–11 | ⟦học sinh⟧ | ⟦lớp ba⟧ kelas 3 | 5 tahun
+=ja
+⟦trường tiểu học⟧ — 小学校 | 6～11歳 | ⟦học sinh⟧ | ⟦lớp ba⟧ 3年生 | 5年
+=pl
+⟦trường tiểu học⟧ — szkoła podstawowa | 6–11 lat | ⟦học sinh⟧ | ⟦lớp ba⟧ 3. klasa | 5 lat
+@@ pdf-grammar-fcf0176207d3f7f7#5
+=cs
+⟦trường trung học cơ sở⟧ — nižší střední škola | věk 11–15 | ⟦học sinh⟧ | 4 roky | ⟦lớp bảy⟧ 7. ročník, ⟦lớp tám⟧ 8. ročník
+=zh_cn
+⟦trường trung học cơ sở⟧ —— 初中 | 11～15 岁 | ⟦học sinh⟧ | 4 年 | ⟦lớp bảy⟧ 七年级，⟦lớp tám⟧ 八年级
+=zh
+⟦trường trung học cơ sở⟧ —— 國中 | 11～15 歲 | ⟦học sinh⟧ | 4 年 | ⟦lớp bảy⟧ 七年級，⟦lớp tám⟧ 八年級
+=en
+⟦trường trung học cơ sở⟧ — lower secondary (middle) school | ages 11–15 | ⟦học sinh⟧ | 4 years | ⟦lớp bảy⟧ grade 7, ⟦lớp tám⟧ grade 8
+=fr
+⟦trường trung học cơ sở⟧ — collège | 11–15 ans | ⟦học sinh⟧ | 4 ans | ⟦lớp bảy⟧ 7e année, ⟦lớp tám⟧ 8e année
+=de
+⟦trường trung học cơ sở⟧ — Mittelschule (Sekundarstufe I) | 11–15 Jahre | ⟦học sinh⟧ | 4 Jahre | ⟦lớp bảy⟧ 7. Klasse, ⟦lớp tám⟧ 8. Klasse
+=hu
+⟦trường trung học cơ sở⟧ — általános iskola felső tagozata | 11–15 év | ⟦học sinh⟧ | 4 év | ⟦lớp bảy⟧ 7. osztály, ⟦lớp tám⟧ 8. osztály
+=id
+⟦trường trung học cơ sở⟧ — sekolah menengah pertama | usia 11–15 | ⟦học sinh⟧ | 4 tahun | ⟦lớp bảy⟧ kelas 7, ⟦lớp tám⟧ kelas 8
+=ja
+⟦trường trung học cơ sở⟧ — 中学校 | 11～15歳 | ⟦học sinh⟧ | 4年 | ⟦lớp bảy⟧ 7年生、⟦lớp tám⟧ 8年生
+=pl
+⟦trường trung học cơ sở⟧ — szkoła średnia I stopnia | 11–15 lat | ⟦học sinh⟧ | 4 lata | ⟦lớp bảy⟧ 7. klasa, ⟦lớp tám⟧ 8. klasa
+@@ pdf-grammar-fcf0176207d3f7f7#7
+=cs
+⟦trường trung học phổ thông⟧ — vyšší střední škola (gymnázium) | věk 15–18 | ⟦học sinh⟧ | ⟦lớp mười một⟧ 11. ročník | 3 roky
+=zh_cn
+⟦trường trung học phổ thông⟧ —— 高中 | 15～18 岁 | ⟦học sinh⟧ | ⟦lớp mười một⟧ 十一年级 | 3 年
+=zh
+⟦trường trung học phổ thông⟧ —— 高中 | 15～18 歲 | ⟦học sinh⟧ | ⟦lớp mười một⟧ 十一年級 | 3 年
+=en
+⟦trường trung học phổ thông⟧ — high school | ages 15–18 | ⟦học sinh⟧ | ⟦lớp mười một⟧ grade 11 | 3 years
+=fr
+⟦trường trung học phổ thông⟧ — lycée | 15–18 ans | ⟦học sinh⟧ | ⟦lớp mười một⟧ 11e année | 3 ans
+=de
+⟦trường trung học phổ thông⟧ — Oberschule | 15–18 Jahre | ⟦học sinh⟧ | ⟦lớp mười một⟧ 11. Klasse | 3 Jahre
+=hu
+⟦trường trung học phổ thông⟧ — középiskola | 15–18 év | ⟦học sinh⟧ | ⟦lớp mười một⟧ 11. osztály | 3 év
+=id
+⟦trường trung học phổ thông⟧ — sekolah menengah atas | usia 15–18 | ⟦học sinh⟧ | ⟦lớp mười một⟧ kelas 11 | 3 tahun
+=ja
+⟦trường trung học phổ thông⟧ — 高校 | 15～18歳 | ⟦học sinh⟧ | ⟦lớp mười một⟧ 11年生 | 3年
+=pl
+⟦trường trung học phổ thông⟧ — liceum | 15–18 lat | ⟦học sinh⟧ | ⟦lớp mười một⟧ 11. klasa | 3 lata
+@@ pdf-grammar-fcf0176207d3f7f7#9
+=cs
+⟦trường đại học⟧ — vysoká škola | věk 18–22 | ⟦sinh viên⟧ | 4 roky | ⟦năm thứ hai⟧ 2. ročník, ⟦năm thứ ba⟧ 3. ročník
+=zh_cn
+⟦trường đại học⟧ —— 大学 | 18～22 岁 | ⟦sinh viên⟧ | 4 年 | ⟦năm thứ hai⟧ 大二，⟦năm thứ ba⟧ 大三
+=zh
+⟦trường đại học⟧ —— 大學 | 18～22 歲 | ⟦sinh viên⟧ | 4 年 | ⟦năm thứ hai⟧ 大二，⟦năm thứ ba⟧ 大三
+=en
+⟦trường đại học⟧ — university | ages 18–22 | ⟦sinh viên⟧ | 4 years | ⟦năm thứ hai⟧ second year, ⟦năm thứ ba⟧ third year
+=fr
+⟦trường đại học⟧ — université | 18–22 ans | ⟦sinh viên⟧ | 4 ans | ⟦năm thứ hai⟧ 2e année, ⟦năm thứ ba⟧ 3e année
+=de
+⟦trường đại học⟧ — Universität | 18–22 Jahre | ⟦sinh viên⟧ | 4 Jahre | ⟦năm thứ hai⟧ 2. Studienjahr, ⟦năm thứ ba⟧ 3. Studienjahr
+=hu
+⟦trường đại học⟧ — egyetem | 18–22 év | ⟦sinh viên⟧ | 4 év | ⟦năm thứ hai⟧ másodév, ⟦năm thứ ba⟧ harmadév
+=id
+⟦trường đại học⟧ — universitas | usia 18–22 | ⟦sinh viên⟧ | 4 tahun | ⟦năm thứ hai⟧ tahun kedua, ⟦năm thứ ba⟧ tahun ketiga
+=ja
+⟦trường đại học⟧ — 大学 | 18～22歳 | ⟦sinh viên⟧ | 4年 | ⟦năm thứ hai⟧ 2年生、⟦năm thứ ba⟧ 3年生
+=pl
+⟦trường đại học⟧ — uniwersytet | 18–22 lat | ⟦sinh viên⟧ | 4 lata | ⟦năm thứ hai⟧ drugi rok, ⟦năm thứ ba⟧ trzeci rok
+@@ pdf-grammar-fcf0176207d3f7f7#10
+=cs
+Když za ⟦thứ⟧ následuje číslo, místo 1 a 4 se používá ⟦nhất⟧ a ⟦tư⟧.
+Slovíčka: ⟦sinh viên⟧ vysokoškolák | ⟦năm⟧ rok | ⟦thứ⟧ -tý (pořadí) | ⟦khoa⟧ fakulta, obor | ⟦tiếng Hàn⟧ korejština | ⟦trường⟧ škola | ⟦đại học⟧ vysoká škola | ⟦học sinh⟧ žák | ⟦lớp⟧ ročník, třída | ⟦chị gái⟧ starší sestra
+=zh_cn
+⟦thứ⟧ 后面接数字时，1 和 4 分别用 ⟦nhất⟧、⟦tư⟧。
+单词：⟦sinh viên⟧ 大学生 | ⟦năm⟧ 年 | ⟦thứ⟧ 第…… | ⟦khoa⟧ 系 | ⟦tiếng Hàn⟧ 韩语 | ⟦trường⟧ 学校 | ⟦đại học⟧ 大学 | ⟦học sinh⟧ 中小学生 | ⟦lớp⟧ 年级，班 | ⟦chị gái⟧ 亲姐姐
+=zh
+⟦thứ⟧ 後面接數字時，1 和 4 分別用 ⟦nhất⟧、⟦tư⟧。
+單字：⟦sinh viên⟧ 大學生 | ⟦năm⟧ 年 | ⟦thứ⟧ 第…… | ⟦khoa⟧ 系 | ⟦tiếng Hàn⟧ 韓語 | ⟦trường⟧ 學校 | ⟦đại học⟧ 大學 | ⟦học sinh⟧ 中小學生 | ⟦lớp⟧ 年級，班 | ⟦chị gái⟧ 親姐姐
+=en
+When a number follows ⟦thứ⟧, 1 and 4 become ⟦nhất⟧ and ⟦tư⟧ respectively.
+Words: ⟦sinh viên⟧ university student | ⟦năm⟧ year | ⟦thứ⟧ -th (ordinal) | ⟦khoa⟧ department | ⟦tiếng Hàn⟧ Korean language | ⟦trường⟧ school | ⟦đại học⟧ university | ⟦học sinh⟧ pupil | ⟦lớp⟧ grade, class | ⟦chị gái⟧ older sister
+=fr
+Lorsqu'un nombre suit ⟦thứ⟧, 1 et 4 se disent respectivement ⟦nhất⟧ et ⟦tư⟧.
+Mots : ⟦sinh viên⟧ étudiant | ⟦năm⟧ année | ⟦thứ⟧ -ième (ordinal) | ⟦khoa⟧ département | ⟦tiếng Hàn⟧ coréen | ⟦trường⟧ école | ⟦đại học⟧ université | ⟦học sinh⟧ élève | ⟦lớp⟧ année, classe | ⟦chị gái⟧ grande sœur
+=de
+Folgt auf ⟦thứ⟧ eine Zahl, sagt man für 1 und 4 ⟦nhất⟧ bzw. ⟦tư⟧.
+Wörter: ⟦sinh viên⟧ Student | ⟦năm⟧ Jahr | ⟦thứ⟧ -te(r) (Ordinalzahl) | ⟦khoa⟧ Fakultät | ⟦tiếng Hàn⟧ Koreanisch | ⟦trường⟧ Schule | ⟦đại học⟧ Universität | ⟦học sinh⟧ Schüler | ⟦lớp⟧ Klasse | ⟦chị gái⟧ ältere Schwester
+=hu
+Ha a ⟦thứ⟧ után szám áll, az 1 helyett ⟦nhất⟧, a 4 helyett ⟦tư⟧ használatos.
+Szavak: ⟦sinh viên⟧ egyetemi hallgató | ⟦năm⟧ év | ⟦thứ⟧ -ik (sorszám) | ⟦khoa⟧ tanszék, szak | ⟦tiếng Hàn⟧ koreai nyelv | ⟦trường⟧ iskola | ⟦đại học⟧ egyetem | ⟦học sinh⟧ tanuló | ⟦lớp⟧ évfolyam, osztály | ⟦chị gái⟧ nővér
+=id
+Jika angka mengikuti ⟦thứ⟧, angka 1 dan 4 masing-masing memakai ⟦nhất⟧ dan ⟦tư⟧.
+Kosakata: ⟦sinh viên⟧ mahasiswa | ⟦năm⟧ tahun | ⟦thứ⟧ ke- (urutan) | ⟦khoa⟧ jurusan | ⟦tiếng Hàn⟧ bahasa Korea | ⟦trường⟧ sekolah | ⟦đại học⟧ universitas | ⟦học sinh⟧ siswa | ⟦lớp⟧ kelas | ⟦chị gái⟧ kakak perempuan
+=ja
+⟦thứ⟧ の後に数字が来る場合、1と4はそれぞれ ⟦nhất⟧、⟦tư⟧ を使います。
+単語：⟦sinh viên⟧ 大学生 | ⟦năm⟧ 年 | ⟦thứ⟧ ～番目 | ⟦khoa⟧ 学科 | ⟦tiếng Hàn⟧ 韓国語 | ⟦trường⟧ 学校 | ⟦đại học⟧ 大学 | ⟦học sinh⟧ 小・中・高校生 | ⟦lớp⟧ 学年、クラス | ⟦chị gái⟧ 姉
+=pl
+Gdy po ⟦thứ⟧ następuje liczba, zamiast 1 i 4 używa się odpowiednio ⟦nhất⟧ i ⟦tư⟧.
+Słówka: ⟦sinh viên⟧ student | ⟦năm⟧ rok | ⟦thứ⟧ -ty (liczebnik porządkowy) | ⟦khoa⟧ wydział, kierunek | ⟦tiếng Hàn⟧ koreański | ⟦trường⟧ szkoła | ⟦đại học⟧ uniwersytet | ⟦học sinh⟧ uczeń | ⟦lớp⟧ klasa | ⟦chị gái⟧ starsza siostra
+@@ pdf-grammar-ce722f9084732935#0
+~t 1. Ptát se na bydliště a odpovídat|1. 询问与回答住处|1. 詢問與回答住處|1. Asking and saying where you live|1. Demander et dire où l'on habite|1. Nach dem Wohnort fragen und antworten|1. Lakóhely kérdezése és megadása|1. Menanyakan dan menjawab tempat tinggal|1. 住まいを尋ねて答える表現|1. Pytanie o miejsce zamieszkania i odpowiedź
+=cs
+A: ⟦Em sống ở đâu?⟧ — Kde bydlíš?
+B: ⟦Em sống ở đường Hai Bà Trưng.⟧ — Bydlím v ulici Hai Bà Trưng.
+Na bydliště se ptáme tvarem „osoba + sống ở đâu?“ (kde osoba bydlí?) nebo „dům + ở đâu?“ (kde je dům?) a odpovídáme tak, že místo tázacího slova ⟦đâu⟧ (kde) dosadíme místo.
+A: ⟦Anh sống ở đâu?⟧ — Kde bydlíš, bratře?
+B: ⟦Anh sống ở đường Sejong.⟧ — Bydlím v ulici Sejong.
+A: ⟦Nhà chị ở đâu?⟧ — Kde máš dům, sestro?
+B: ⟦Nhà chị ở đường Sejong.⟧ — Můj dům je v ulici Sejong.
+⟦ở⟧ spolu s plnovýznamovým slovesem znamená „v, na“.
+⟦Chị ăn cơm ở nhà.⟧ — Jím doma.
+⟦Anh gặp em ở đâu?⟧ — Kde se s tebou mám setkat?
+Bez plnovýznamového slovesa znamená ⟦ở⟧ „být (někde)“.
+⟦Bố em ở nhà.⟧ — Můj tatínek je doma.
+⟦Chị ở đâu?⟧ — Kde jsi, sestro?
+Slovíčka: ⟦sống⟧ žít, bydlet | ⟦ở⟧ v, na; být (někde) | ⟦đường⟧ ulice, cesta | ⟦Hai Bà Trưng⟧ sestry Trưng (vietnamské hrdinky)
+=zh_cn
+A：⟦Em sống ở đâu?⟧ —— 你住在哪里？
+B：⟦Em sống ở đường Hai Bà Trưng.⟧ —— 我住在二征夫人街。
+询问住处时用“人 + sống ở đâu?”（某人住在哪里？）或“家 + ở đâu?”（家在哪里？）的形式，回答时把疑问词 ⟦đâu⟧（哪里）换成住处即可。
+A：⟦Anh sống ở đâu?⟧ —— 哥哥住在哪里？
+B：⟦Anh sống ở đường Sejong.⟧ —— 我住在世宗路。
+A：⟦Nhà chị ở đâu?⟧ —— 姐姐家在哪里？
+B：⟦Nhà chị ở đường Sejong.⟧ —— 我家在世宗路。
+⟦ở⟧ 和主要动词一起使用时，意为“在……”。
+⟦Chị ăn cơm ở nhà.⟧ —— 我在家吃饭。
+⟦Anh gặp em ở đâu?⟧ —— 我在哪里跟你见面？
+没有主要动词时，⟦ở⟧ 表示“在（某处）”。
+⟦Bố em ở nhà.⟧ —— 我爸爸在家。
+⟦Chị ở đâu?⟧ —— 姐姐在哪里？
+单词：⟦sống⟧ 生活，居住 | ⟦ở⟧ 在 | ⟦đường⟧ 路，街 | ⟦Hai Bà Trưng⟧ 二征夫人（越南英雄）
+=zh
+A：⟦Em sống ở đâu?⟧ —— 你住在哪裡？
+B：⟦Em sống ở đường Hai Bà Trưng.⟧ —— 我住在二徵夫人街。
+詢問住處時用「人 + sống ở đâu?」（某人住在哪裡？）或「家 + ở đâu?」（家在哪裡？）的形式，回答時把疑問詞 ⟦đâu⟧（哪裡）換成住處即可。
+A：⟦Anh sống ở đâu?⟧ —— 哥哥住在哪裡？
+B：⟦Anh sống ở đường Sejong.⟧ —— 我住在世宗路。
+A：⟦Nhà chị ở đâu?⟧ —— 姐姐家在哪裡？
+B：⟦Nhà chị ở đường Sejong.⟧ —— 我家在世宗路。
+⟦ở⟧ 和主要動詞一起使用時，意為「在……」。
+⟦Chị ăn cơm ở nhà.⟧ —— 我在家吃飯。
+⟦Anh gặp em ở đâu?⟧ —— 我在哪裡跟你見面？
+沒有主要動詞時，⟦ở⟧ 表示「在（某處）」。
+⟦Bố em ở nhà.⟧ —— 我爸爸在家。
+⟦Chị ở đâu?⟧ —— 姐姐在哪裡？
+單字：⟦sống⟧ 生活，居住 | ⟦ở⟧ 在 | ⟦đường⟧ 路，街 | ⟦Hai Bà Trưng⟧ 二徵夫人（越南英雄）
+=en
+A: ⟦Em sống ở đâu?⟧ — Where do you live?
+B: ⟦Em sống ở đường Hai Bà Trưng.⟧ — I live on Hai Bà Trưng Street.
+To ask where someone lives, use "person + sống ở đâu?" (where does the person live?) or "house + ở đâu?" (where is the house?), and answer by putting the place where the question word ⟦đâu⟧ (where) was.
+A: ⟦Anh sống ở đâu?⟧ — Where do you live, brother?
+B: ⟦Anh sống ở đường Sejong.⟧ — I live on Sejong Street.
+A: ⟦Nhà chị ở đâu?⟧ — Where is your house, sister?
+B: ⟦Nhà chị ở đường Sejong.⟧ — My house is on Sejong Street.
+With a main verb, ⟦ở⟧ means "at, in".
+⟦Chị ăn cơm ở nhà.⟧ — I eat at home.
+⟦Anh gặp em ở đâu?⟧ — Where shall I meet you?
+Without a main verb, ⟦ở⟧ means "to be (somewhere)".
+⟦Bố em ở nhà.⟧ — My dad is at home.
+⟦Chị ở đâu?⟧ — Where are you, sister?
+Words: ⟦sống⟧ to live | ⟦ở⟧ at, in; to be (somewhere) | ⟦đường⟧ street, road | ⟦Hai Bà Trưng⟧ the Trưng Sisters (Vietnamese heroines)
+=fr
+A : ⟦Em sống ở đâu?⟧ — Où habites-tu ?
+B : ⟦Em sống ở đường Hai Bà Trưng.⟧ — J'habite rue Hai Bà Trưng.
+Pour demander le lieu de résidence, on utilise « personne + sống ở đâu? » (où vit la personne ?) ou « maison + ở đâu? » (où est la maison ?), et l'on répond en remplaçant le mot interrogatif ⟦đâu⟧ (où) par le lieu.
+A : ⟦Anh sống ở đâu?⟧ — Où habites-tu, grand frère ?
+B : ⟦Anh sống ở đường Sejong.⟧ — J'habite rue Sejong.
+A : ⟦Nhà chị ở đâu?⟧ — Où est ta maison, grande sœur ?
+B : ⟦Nhà chị ở đường Sejong.⟧ — Ma maison est rue Sejong.
+Avec un verbe principal, ⟦ở⟧ signifie « à, dans ».
+⟦Chị ăn cơm ở nhà.⟧ — Je mange à la maison.
+⟦Anh gặp em ở đâu?⟧ — Où est-ce que je te retrouve ?
+Sans verbe principal, ⟦ở⟧ signifie « être (quelque part) ».
+⟦Bố em ở nhà.⟧ — Mon père est à la maison.
+⟦Chị ở đâu?⟧ — Où es-tu, grande sœur ?
+Mots : ⟦sống⟧ vivre, habiter | ⟦ở⟧ à, dans ; être (quelque part) | ⟦đường⟧ rue, route | ⟦Hai Bà Trưng⟧ les sœurs Trưng (héroïnes vietnamiennes)
+=de
+A: ⟦Em sống ở đâu?⟧ — Wo wohnst du?
+B: ⟦Em sống ở đường Hai Bà Trưng.⟧ — Ich wohne in der Hai-Bà-Trưng-Straße.
+Nach dem Wohnort fragt man mit „Person + sống ở đâu?“ (wo wohnt die Person?) oder „Haus + ở đâu?“ (wo ist das Haus?) und antwortet, indem man das Fragewort ⟦đâu⟧ (wo) durch den Ort ersetzt.
+A: ⟦Anh sống ở đâu?⟧ — Wo wohnst du, großer Bruder?
+B: ⟦Anh sống ở đường Sejong.⟧ — Ich wohne in der Sejong-Straße.
+A: ⟦Nhà chị ở đâu?⟧ — Wo ist dein Haus, große Schwester?
+B: ⟦Nhà chị ở đường Sejong.⟧ — Mein Haus ist in der Sejong-Straße.
+Mit einem Vollverb bedeutet ⟦ở⟧ „in, an“.
+⟦Chị ăn cơm ở nhà.⟧ — Ich esse zu Hause.
+⟦Anh gặp em ở đâu?⟧ — Wo treffe ich dich?
+Ohne Vollverb bedeutet ⟦ở⟧ „sich (irgendwo) befinden“.
+⟦Bố em ở nhà.⟧ — Mein Vater ist zu Hause.
+⟦Chị ở đâu?⟧ — Wo bist du, große Schwester?
+Wörter: ⟦sống⟧ leben, wohnen | ⟦ở⟧ in, an; sich befinden | ⟦đường⟧ Straße | ⟦Hai Bà Trưng⟧ die Trưng-Schwestern (vietnamesische Heldinnen)
+=hu
+A: ⟦Em sống ở đâu?⟧ — Hol laksz?
+B: ⟦Em sống ở đường Hai Bà Trưng.⟧ — A Hai Bà Trưng utcában lakom.
+A lakóhelyet „személy + sống ở đâu?” (hol lakik?) vagy „ház + ở đâu?” (hol van a ház?) formában kérdezzük, és úgy válaszolunk, hogy a ⟦đâu⟧ (hol) kérdőszó helyére a helyet tesszük.
+A: ⟦Anh sống ở đâu?⟧ — Hol laksz, bátyám?
+B: ⟦Anh sống ở đường Sejong.⟧ — A Sejong utcában lakom.
+A: ⟦Nhà chị ở đâu?⟧ — Hol van a házad, nővérem?
+B: ⟦Nhà chị ở đường Sejong.⟧ — A házam a Sejong utcában van.
+Főigével a ⟦ở⟧ jelentése „-ban/-ben, -on/-en”.
+⟦Chị ăn cơm ở nhà.⟧ — Otthon eszem.
+⟦Anh gặp em ở đâu?⟧ — Hol találkozzunk?
+Főige nélkül a ⟦ở⟧ jelentése „(valahol) van”.
+⟦Bố em ở nhà.⟧ — Az apukám otthon van.
+⟦Chị ở đâu?⟧ — Hol vagy, nővérem?
+Szavak: ⟦sống⟧ élni, lakni | ⟦ở⟧ -ban/-ben; valahol lenni | ⟦đường⟧ utca, út | ⟦Hai Bà Trưng⟧ a Trưng nővérek (vietnámi hősnők)
+=id
+A: ⟦Em sống ở đâu?⟧ — Kamu tinggal di mana?
+B: ⟦Em sống ở đường Hai Bà Trưng.⟧ — Saya tinggal di Jalan Hai Bà Trưng.
+Untuk menanyakan tempat tinggal dipakai "orang + sống ở đâu?" (tinggal di mana?) atau "rumah + ở đâu?" (rumahnya di mana?), dan dijawab dengan mengganti kata tanya ⟦đâu⟧ (di mana) dengan tempatnya.
+A: ⟦Anh sống ở đâu?⟧ — Kakak tinggal di mana?
+B: ⟦Anh sống ở đường Sejong.⟧ — Kakak tinggal di Jalan Sejong.
+A: ⟦Nhà chị ở đâu?⟧ — Rumah Kakak di mana?
+B: ⟦Nhà chị ở đường Sejong.⟧ — Rumah Kakak di Jalan Sejong.
+Bersama kata kerja utama, ⟦ở⟧ berarti "di".
+⟦Chị ăn cơm ở nhà.⟧ — Kakak makan di rumah.
+⟦Anh gặp em ở đâu?⟧ — Kakak bertemu kamu di mana?
+Tanpa kata kerja utama, ⟦ở⟧ berarti "berada (di suatu tempat)".
+⟦Bố em ở nhà.⟧ — Ayah saya ada di rumah.
+⟦Chị ở đâu?⟧ — Kakak ada di mana?
+Kosakata: ⟦sống⟧ tinggal, hidup | ⟦ở⟧ di; berada | ⟦đường⟧ jalan | ⟦Hai Bà Trưng⟧ Dua Saudari Trưng (pahlawan Vietnam)
+=ja
+A：⟦Em sống ở đâu?⟧ — 君はどこに住んでいるの？
+B：⟦Em sống ở đường Hai Bà Trưng.⟧ — 私はハイバーチュン通りに住んでいます。
+住まいを尋ねるときは「人 ＋ sống ở đâu?」（人はどこに住んでいるか）または「家 ＋ ở đâu?」（家はどこにあるか）の形を使い、疑問詞 ⟦đâu⟧（どこ）の代わりに住まいを入れて答えます。
+A：⟦Anh sống ở đâu?⟧ — お兄さんはどこに住んでいますか。
+B：⟦Anh sống ở đường Sejong.⟧ — 僕は世宗路に住んでいるよ。
+A：⟦Nhà chị ở đâu?⟧ — お姉さんの家はどこですか。
+B：⟦Nhà chị ở đường Sejong.⟧ — 私の家は世宗路にあるよ。
+⟦ở⟧ は本動詞と一緒に使われて「～に・～で」の意味になります。
+⟦Chị ăn cơm ở nhà.⟧ — 私は家でご飯を食べる。
+⟦Anh gặp em ở đâu?⟧ — 僕は君とどこで会う？
+本動詞がないとき、⟦ở⟧ は「～にいる・ある」の意味で使われます。
+⟦Bố em ở nhà.⟧ — 父は家にいます。
+⟦Chị ở đâu?⟧ — お姉さんはどこにいますか。
+単語：⟦sống⟧ 住む、生きる | ⟦ở⟧ ～に・～で（いる） | ⟦đường⟧ 道、通り | ⟦Hai Bà Trưng⟧ ハイバーチュン（ベトナムの偉人）
+=pl
+A: ⟦Em sống ở đâu?⟧ — Gdzie mieszkasz?
+B: ⟦Em sống ở đường Hai Bà Trưng.⟧ — Mieszkam przy ulicy Hai Bà Trưng.
+O miejsce zamieszkania pytamy „osoba + sống ở đâu?” (gdzie mieszka?) lub „dom + ở đâu?” (gdzie jest dom?), a odpowiadamy, wstawiając miejsce w miejsce słowa pytającego ⟦đâu⟧ (gdzie).
+A: ⟦Anh sống ở đâu?⟧ — Gdzie mieszkasz, bracie?
+B: ⟦Anh sống ở đường Sejong.⟧ — Mieszkam przy ulicy Sejong.
+A: ⟦Nhà chị ở đâu?⟧ — Gdzie jest twój dom, siostro?
+B: ⟦Nhà chị ở đường Sejong.⟧ — Mój dom jest przy ulicy Sejong.
+Z czasownikiem głównym ⟦ở⟧ znaczy „w, na”.
+⟦Chị ăn cơm ở nhà.⟧ — Jem w domu.
+⟦Anh gặp em ở đâu?⟧ — Gdzie mam się z tobą spotkać?
+Bez czasownika głównego ⟦ở⟧ znaczy „być (gdzieś)”.
+⟦Bố em ở nhà.⟧ — Mój tata jest w domu.
+⟦Chị ở đâu?⟧ — Gdzie jesteś, siostro?
+Słówka: ⟦sống⟧ żyć, mieszkać | ⟦ở⟧ w, na; być (gdzieś) | ⟦đường⟧ ulica, droga | ⟦Hai Bà Trưng⟧ siostry Trưng (wietnamskie bohaterki)
+@@ pdf-grammar-ff71e6a751510b42#0
+~t 2. Příčina a následek: protože A, (proto) B|2. 因果关系：因为A所以B|2. 因果關係：因為A所以B|2. Cause and effect: because A, (so) B|2. Cause et conséquence : parce que A, (donc) B|2. Ursache und Wirkung: weil A, (deshalb) B|2. Ok és okozat: mivel A, (ezért) B|2. Sebab-akibat: karena A, (maka) B|2. 因果関係の表現：AなのでBする|2. Przyczyna i skutek: ponieważ A, (więc) B
+=cs
+⟦Vì anh đang làm việc ở công ti Hàn Quốc tại Hà Nội nên thuê nhà ở đây.⟧ — Protože pracuji v korejské firmě v Hanoji, pronajal jsem si tady dům.
+⟦(Bởi) vì A nên B⟧ znamená „protože A, proto B“; ⟦bởi vì⟧ lze vynechat a říct ⟦A nên B⟧ (A, a tak B). Lze také říct ⟦B (bởi) vì A⟧ (B, protože A).
+⟦(Bởi) vì tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — Protože mám rád Vietnam, učím se vietnamsky.
+= ⟦Tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — Mám rád Vietnam, a tak se učím vietnamsky.
+= ⟦Tôi học tiếng Việt (bởi) vì tôi thích Việt Nam.⟧ — Učím se vietnamsky, protože mám rád Vietnam.
+„Podmět + ⟦đang⟧ + přísudek“ vyjadřuje právě probíhající děj („podmět právě …“).
+A: ⟦Anh đang làm gì?⟧ — Co právě děláš, bratře?
+B: ⟦Anh đang xem phim.⟧ — Dívám se na film.
+=zh_cn
+⟦Vì anh đang làm việc ở công ti Hàn Quốc tại Hà Nội nên thuê nhà ở đây.⟧ —— 因为我在河内的韩国公司工作，所以在这里租了房子。
+⟦(Bởi) vì A nên B⟧ 意为“因为A，所以B”，也可以省略 ⟦bởi vì⟧ 说成 ⟦A nên B⟧（A，所以B）。还可以说 ⟦B (bởi) vì A⟧（B，因为A）。
+⟦(Bởi) vì tôi thích Việt Nam nên tôi học tiếng Việt.⟧ —— 因为我喜欢越南，所以学越南语。
+= ⟦Tôi thích Việt Nam nên tôi học tiếng Việt.⟧ —— 我喜欢越南，所以学越南语。
+= ⟦Tôi học tiếng Việt (bởi) vì tôi thích Việt Nam.⟧ —— 我学越南语，是因为我喜欢越南。
+“主语 + ⟦đang⟧ + 谓语”表示“主语正在……”的现在进行。
+A：⟦Anh đang làm gì?⟧ —— 哥哥在做什么？
+B：⟦Anh đang xem phim.⟧ —— 我在看电影。
+=zh
+⟦Vì anh đang làm việc ở công ti Hàn Quốc tại Hà Nội nên thuê nhà ở đây.⟧ —— 因為我在河內的韓國公司工作，所以在這裡租了房子。
+⟦(Bởi) vì A nên B⟧ 意為「因為A，所以B」，也可以省略 ⟦bởi vì⟧ 說成 ⟦A nên B⟧（A，所以B）。還可以說 ⟦B (bởi) vì A⟧（B，因為A）。
+⟦(Bởi) vì tôi thích Việt Nam nên tôi học tiếng Việt.⟧ —— 因為我喜歡越南，所以學越南語。
+= ⟦Tôi thích Việt Nam nên tôi học tiếng Việt.⟧ —— 我喜歡越南，所以學越南語。
+= ⟦Tôi học tiếng Việt (bởi) vì tôi thích Việt Nam.⟧ —— 我學越南語，是因為我喜歡越南。
+「主語 + ⟦đang⟧ + 謂語」表示「主語正在……」的現在進行。
+A：⟦Anh đang làm gì?⟧ —— 哥哥在做什麼？
+B：⟦Anh đang xem phim.⟧ —— 我在看電影。
+=en
+⟦Vì anh đang làm việc ở công ti Hàn Quốc tại Hà Nội nên thuê nhà ở đây.⟧ — Because I'm working at a Korean company in Hanoi, I rented a house here.
+⟦(Bởi) vì A nên B⟧ means "because A, (so) B"; ⟦bởi vì⟧ can be dropped to give ⟦A nên B⟧ (A, so B). You can also say ⟦B (bởi) vì A⟧ (B because A).
+⟦(Bởi) vì tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — Because I like Vietnam, I study Vietnamese.
+= ⟦Tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — I like Vietnam, so I study Vietnamese.
+= ⟦Tôi học tiếng Việt (bởi) vì tôi thích Việt Nam.⟧ — I study Vietnamese because I like Vietnam.
+"Subject + ⟦đang⟧ + predicate" expresses an action in progress ("the subject is …ing").
+A: ⟦Anh đang làm gì?⟧ — What are you doing, brother?
+B: ⟦Anh đang xem phim.⟧ — I'm watching a movie.
+=fr
+⟦Vì anh đang làm việc ở công ti Hàn Quốc tại Hà Nội nên thuê nhà ở đây.⟧ — Comme je travaille dans une entreprise coréenne à Hanoï, j'ai loué une maison ici.
+⟦(Bởi) vì A nên B⟧ signifie « parce que A, (donc) B » ; on peut omettre ⟦bởi vì⟧ et dire ⟦A nên B⟧ (A, donc B), ou encore ⟦B (bởi) vì A⟧ (B parce que A).
+⟦(Bởi) vì tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — Parce que j'aime le Viêt Nam, j'apprends le vietnamien.
+= ⟦Tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — J'aime le Viêt Nam, donc j'apprends le vietnamien.
+= ⟦Tôi học tiếng Việt (bởi) vì tôi thích Việt Nam.⟧ — J'apprends le vietnamien parce que j'aime le Viêt Nam.
+« Sujet + ⟦đang⟧ + prédicat » exprime une action en cours (« le sujet est en train de … »).
+A : ⟦Anh đang làm gì?⟧ — Qu'est-ce que tu fais, grand frère ?
+B : ⟦Anh đang xem phim.⟧ — Je regarde un film.
+=de
+⟦Vì anh đang làm việc ở công ti Hàn Quốc tại Hà Nội nên thuê nhà ở đây.⟧ — Weil ich bei einer koreanischen Firma in Hanoi arbeite, habe ich hier ein Haus gemietet.
+⟦(Bởi) vì A nên B⟧ bedeutet „weil A, (deshalb) B“; ⟦bởi vì⟧ kann entfallen: ⟦A nên B⟧ (A, also B). Man kann auch ⟦B (bởi) vì A⟧ (B, weil A) sagen.
+⟦(Bởi) vì tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — Weil ich Vietnam mag, lerne ich Vietnamesisch.
+= ⟦Tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — Ich mag Vietnam, also lerne ich Vietnamesisch.
+= ⟦Tôi học tiếng Việt (bởi) vì tôi thích Việt Nam.⟧ — Ich lerne Vietnamesisch, weil ich Vietnam mag.
+„Subjekt + ⟦đang⟧ + Prädikat“ drückt eine gerade ablaufende Handlung aus („das Subjekt ist gerade dabei, …“).
+A: ⟦Anh đang làm gì?⟧ — Was machst du gerade, großer Bruder?
+B: ⟦Anh đang xem phim.⟧ — Ich sehe gerade einen Film.
+=hu
+⟦Vì anh đang làm việc ở công ti Hàn Quốc tại Hà Nội nên thuê nhà ở đây.⟧ — Mivel egy hanoi koreai cégnél dolgozom, itt béreltem házat.
+A ⟦(Bởi) vì A nên B⟧ jelentése „mivel A, (ezért) B”; a ⟦bởi vì⟧ elhagyható: ⟦A nên B⟧ (A, így B). Úgy is mondható: ⟦B (bởi) vì A⟧ (B, mert A).
+⟦(Bởi) vì tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — Mivel szeretem Vietnámot, vietnámiul tanulok.
+= ⟦Tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — Szeretem Vietnámot, ezért vietnámiul tanulok.
+= ⟦Tôi học tiếng Việt (bởi) vì tôi thích Việt Nam.⟧ — Azért tanulok vietnámiul, mert szeretem Vietnámot.
+Az „alany + ⟦đang⟧ + állítmány” folyamatban lévő cselekvést fejez ki („az alany éppen …”).
+A: ⟦Anh đang làm gì?⟧ — Mit csinálsz éppen, bátyám?
+B: ⟦Anh đang xem phim.⟧ — Éppen filmet nézek.
+=id
+⟦Vì anh đang làm việc ở công ti Hàn Quốc tại Hà Nội nên thuê nhà ở đây.⟧ — Karena Kakak sedang bekerja di perusahaan Korea di Hanoi, Kakak menyewa rumah di sini.
+⟦(Bởi) vì A nên B⟧ berarti "karena A, maka B"; ⟦bởi vì⟧ dapat dihilangkan menjadi ⟦A nên B⟧ (A, jadi B). Bisa juga dikatakan ⟦B (bởi) vì A⟧ (B karena A).
+⟦(Bởi) vì tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — Karena saya suka Vietnam, saya belajar bahasa Vietnam.
+= ⟦Tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — Saya suka Vietnam, jadi saya belajar bahasa Vietnam.
+= ⟦Tôi học tiếng Việt (bởi) vì tôi thích Việt Nam.⟧ — Saya belajar bahasa Vietnam karena saya suka Vietnam.
+"Subjek + ⟦đang⟧ + predikat" menyatakan tindakan yang sedang berlangsung ("subjek sedang …").
+A: ⟦Anh đang làm gì?⟧ — Kakak sedang apa?
+B: ⟦Anh đang xem phim.⟧ — Kakak sedang menonton film.
+=ja
+⟦Vì anh đang làm việc ở công ti Hàn Quốc tại Hà Nội nên thuê nhà ở đây.⟧ — ハノイにある韓国の会社で働いているので、ここに家を借りたんだ。
+⟦(Bởi) vì A nên B⟧ は「なぜならAだからBする」で、⟦bởi vì⟧ を省略して ⟦A nên B⟧（AなのでBする）とも言えます。また ⟦B (bởi) vì A⟧（Bする、Aだから）とも言えます。
+⟦(Bởi) vì tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — 私はベトナムが好きなので、ベトナム語を勉強します。
+= ⟦Tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — 私はベトナムが好きで、ベトナム語を勉強します。
+= ⟦Tôi học tiếng Việt (bởi) vì tôi thích Việt Nam.⟧ — 私がベトナム語を勉強するのは、ベトナムが好きだからです。
+「主語 ＋ ⟦đang⟧ ＋ 述語」は「主語が～している」という現在進行を表します。
+A：⟦Anh đang làm gì?⟧ — お兄さんは何をしているの？
+B：⟦Anh đang xem phim.⟧ — 映画を見ているよ。
+=pl
+⟦Vì anh đang làm việc ở công ti Hàn Quốc tại Hà Nội nên thuê nhà ở đây.⟧ — Ponieważ pracuję w koreańskiej firmie w Hanoi, wynająłem tu dom.
+⟦(Bởi) vì A nên B⟧ znaczy „ponieważ A, (więc) B”; ⟦bởi vì⟧ można pominąć: ⟦A nên B⟧ (A, więc B). Można też powiedzieć ⟦B (bởi) vì A⟧ (B, ponieważ A).
+⟦(Bởi) vì tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — Ponieważ lubię Wietnam, uczę się wietnamskiego.
+= ⟦Tôi thích Việt Nam nên tôi học tiếng Việt.⟧ — Lubię Wietnam, więc uczę się wietnamskiego.
+= ⟦Tôi học tiếng Việt (bởi) vì tôi thích Việt Nam.⟧ — Uczę się wietnamskiego, bo lubię Wietnam.
+„Podmiot + ⟦đang⟧ + orzeczenie” wyraża czynność w toku („podmiot właśnie …”).
+A: ⟦Anh đang làm gì?⟧ — Co teraz robisz, bracie?
+B: ⟦Anh đang xem phim.⟧ — Oglądam film.
+@@ pdf-grammar-8118180e8f002ede#0
+~t 1. Příslovce míry a samomluva|1. 程度副词与自言自语的表达|1. 程度副詞與自言自語的表達|1. Degree adverbs and musing aloud|1. Adverbes de degré et expressions de soliloque|1. Gradadverbien und Selbstgespräch|1. Fokhatározók és önmagunkhoz intézett kérdés|1. Adverbia derajat dan ungkapan bergumam|1. 程度副詞と独り言の表現|1. Przysłówki stopnia i mówienie do siebie
+=cs
+⟦Em gái của em đẹp quá nhỉ.⟧ — Tvoje mladší sestra je ale hezká.
+Příslovce míry jsou shrnuta níže.
+⟦hơi⟧, ⟦khá⟧, ⟦rất⟧, ⟦quá⟧ + rozvíjené slovo
+rozvíjené slovo + ⟦lắm⟧, ⟦quá⟧
+✽ ⟦quá⟧ může stát před i za rozvíjeným slovem; stojí-li před ním, znamená, že míra nebo mez byla překročena (příliš).
+⟦hơi⟧ trochu — ⟦Em hơi buồn.⟧ — Jsem trochu smutný.
+⟦khá⟧ docela — ⟦Mi-na nói tiếng Việt khá giỏi.⟧ — Mi-na mluví vietnamsky docela dobře.
+⟦rất⟧ velmi — ⟦Phở này rất ngon.⟧ — Tohle phở je velmi chutné.
+⟦lắm⟧ velmi — ⟦Mẹ em đẹp lắm.⟧ — Moje maminka je moc hezká.
+⟦quá⟧ moc — ⟦Hùng chạy nhanh quá!⟧ — Hùng běhá ale rychle!
+⟦Hùng chạy quá nhanh.⟧ — Hùng běhá příliš rychle.
+⟦nhỉ⟧ na konci věty nepřímo žádá souhlas druhé osoby nebo vyjadřuje otázku položenou sám sobě.
+⟦Tiếng Việt hay.⟧ — Vietnamština je zajímavá.
+⟦Tiếng Việt hay nhỉ.⟧ — Vietnamština je ale zajímavá, že?
+⟦Nhà của Hùng ở đâu?⟧ — Kde bydlí Hùng?
+⟦Nhà của Hùng ở đâu nhỉ?⟧ — Kde že to Hùng bydlí?
+Slovíčka: ⟦chị gái⟧ starší sestra | ⟦đẹp⟧ krásný | ⟦buồn⟧ smutný | ⟦phở⟧ phở (nudlová polévka) | ⟦ngon⟧ chutný | ⟦chạy⟧ běžet | ⟦nhanh⟧ rychlý | ⟦hay⟧ zajímavý
+=zh_cn
+⟦Em gái của em đẹp quá nhỉ.⟧ —— 你妹妹真漂亮啊。
+下面整理了表示程度的副词。
+⟦hơi⟧、⟦khá⟧、⟦rất⟧、⟦quá⟧ + 被修饰语
+被修饰语 + ⟦lắm⟧、⟦quá⟧
+✽ ⟦quá⟧ 可放在被修饰语的前面或后面，放在前面时表示程度或限度过头了（太过）。
+⟦hơi⟧ 有点 —— ⟦Em hơi buồn.⟧ —— 我有点难过。
+⟦khá⟧ 相当 —— ⟦Mi-na nói tiếng Việt khá giỏi.⟧ —— 美娜越南语说得相当好。
+⟦rất⟧ 非常 —— ⟦Phở này rất ngon.⟧ —— 这碗河粉非常好吃。
+⟦lắm⟧ 非常 —— ⟦Mẹ em đẹp lắm.⟧ —— 我妈妈非常漂亮。
+⟦quá⟧ 太 —— ⟦Hùng chạy nhanh quá!⟧ —— 雄跑得真快！
+⟦Hùng chạy quá nhanh.⟧ —— 雄跑得太快了（过快）。
+⟦nhỉ⟧ 放在句末，用来间接要求对方同意，或以自言自语的方式提问。
+⟦Tiếng Việt hay.⟧ —— 越南语很有趣。
+⟦Tiếng Việt hay nhỉ.⟧ —— 越南语真有趣啊。
+⟦Nhà của Hùng ở đâu?⟧ —— 雄的家在哪里？
+⟦Nhà của Hùng ở đâu nhỉ?⟧ —— 雄的家在哪里来着？
+单词：⟦chị gái⟧ 亲姐姐 | ⟦đẹp⟧ 美丽 | ⟦buồn⟧ 难过 | ⟦phở⟧ 河粉 | ⟦ngon⟧ 好吃 | ⟦chạy⟧ 跑 | ⟦nhanh⟧ 快 | ⟦hay⟧ 有趣
+=zh
+⟦Em gái của em đẹp quá nhỉ.⟧ —— 你妹妹真漂亮啊。
+下面整理了表示程度的副詞。
+⟦hơi⟧、⟦khá⟧、⟦rất⟧、⟦quá⟧ + 被修飾語
+被修飾語 + ⟦lắm⟧、⟦quá⟧
+✽ ⟦quá⟧ 可放在被修飾語的前面或後面，放在前面時表示程度或限度過頭了（太過）。
+⟦hơi⟧ 有點 —— ⟦Em hơi buồn.⟧ —— 我有點難過。
+⟦khá⟧ 相當 —— ⟦Mi-na nói tiếng Việt khá giỏi.⟧ —— 美娜越南語說得相當好。
+⟦rất⟧ 非常 —— ⟦Phở này rất ngon.⟧ —— 這碗河粉非常好吃。
+⟦lắm⟧ 非常 —— ⟦Mẹ em đẹp lắm.⟧ —— 我媽媽非常漂亮。
+⟦quá⟧ 太 —— ⟦Hùng chạy nhanh quá!⟧ —— 雄跑得真快！
+⟦Hùng chạy quá nhanh.⟧ —— 雄跑得太快了（過快）。
+⟦nhỉ⟧ 放在句末，用來間接要求對方同意，或以自言自語的方式提問。
+⟦Tiếng Việt hay.⟧ —— 越南語很有趣。
+⟦Tiếng Việt hay nhỉ.⟧ —— 越南語真有趣啊。
+⟦Nhà của Hùng ở đâu?⟧ —— 雄的家在哪裡？
+⟦Nhà của Hùng ở đâu nhỉ?⟧ —— 雄的家在哪裡來著？
+單字：⟦chị gái⟧ 親姐姐 | ⟦đẹp⟧ 美麗 | ⟦buồn⟧ 難過 | ⟦phở⟧ 河粉 | ⟦ngon⟧ 好吃 | ⟦chạy⟧ 跑 | ⟦nhanh⟧ 快 | ⟦hay⟧ 有趣
+=en
+⟦Em gái của em đẹp quá nhỉ.⟧ — Your younger sister is so pretty, isn't she.
+Here is a summary of degree adverbs.
+⟦hơi⟧, ⟦khá⟧, ⟦rất⟧, ⟦quá⟧ + modified word
+modified word + ⟦lắm⟧, ⟦quá⟧
+✽ ⟦quá⟧ can come before or after the modified word; before it, it means the degree or limit has been exceeded (too much).
+⟦hơi⟧ a bit — ⟦Em hơi buồn.⟧ — I'm a bit sad.
+⟦khá⟧ quite — ⟦Mi-na nói tiếng Việt khá giỏi.⟧ — Mi-na speaks Vietnamese quite well.
+⟦rất⟧ very — ⟦Phở này rất ngon.⟧ — This phở is very tasty.
+⟦lắm⟧ very — ⟦Mẹ em đẹp lắm.⟧ — My mother is very beautiful.
+⟦quá⟧ so — ⟦Hùng chạy nhanh quá!⟧ — Hùng runs so fast!
+⟦Hùng chạy quá nhanh.⟧ — Hùng runs too fast.
+⟦nhỉ⟧ at the end of a sentence indirectly asks for the listener's agreement or poses a question as if musing aloud.
+⟦Tiếng Việt hay.⟧ — Vietnamese is interesting.
+⟦Tiếng Việt hay nhỉ.⟧ — Vietnamese is interesting, isn't it.
+⟦Nhà của Hùng ở đâu?⟧ — Where is Hùng's house?
+⟦Nhà của Hùng ở đâu nhỉ?⟧ — Now where was Hùng's house again?
+Words: ⟦chị gái⟧ older sister | ⟦đẹp⟧ beautiful | ⟦buồn⟧ sad | ⟦phở⟧ phở (noodle soup) | ⟦ngon⟧ tasty | ⟦chạy⟧ to run | ⟦nhanh⟧ fast | ⟦hay⟧ interesting
+=fr
+⟦Em gái của em đẹp quá nhỉ.⟧ — Ta petite sœur est vraiment jolie, hein.
+Voici un récapitulatif des adverbes de degré.
+⟦hơi⟧, ⟦khá⟧, ⟦rất⟧, ⟦quá⟧ + mot modifié
+mot modifié + ⟦lắm⟧, ⟦quá⟧
+✽ ⟦quá⟧ peut se placer avant ou après le mot modifié ; placé avant, il indique que le degré ou la limite est dépassé (trop).
+⟦hơi⟧ un peu — ⟦Em hơi buồn.⟧ — Je suis un peu triste.
+⟦khá⟧ assez — ⟦Mi-na nói tiếng Việt khá giỏi.⟧ — Mi-na parle assez bien vietnamien.
+⟦rất⟧ très — ⟦Phở này rất ngon.⟧ — Ce phở est très bon.
+⟦lắm⟧ très — ⟦Mẹ em đẹp lắm.⟧ — Ma mère est très belle.
+⟦quá⟧ vraiment — ⟦Hùng chạy nhanh quá!⟧ — Hùng court vraiment vite !
+⟦Hùng chạy quá nhanh.⟧ — Hùng court trop vite.
+⟦nhỉ⟧ en fin de phrase sollicite indirectement l'accord de l'interlocuteur ou pose une question comme on se parle à soi-même.
+⟦Tiếng Việt hay.⟧ — Le vietnamien est intéressant.
+⟦Tiếng Việt hay nhỉ.⟧ — Le vietnamien est intéressant, hein.
+⟦Nhà của Hùng ở đâu?⟧ — Où est la maison de Hùng ?
+⟦Nhà của Hùng ở đâu nhỉ?⟧ — Où est-ce qu'elle est déjà, la maison de Hùng ?
+Mots : ⟦chị gái⟧ grande sœur | ⟦đẹp⟧ beau | ⟦buồn⟧ triste | ⟦phở⟧ phở (soupe de nouilles) | ⟦ngon⟧ bon (au goût) | ⟦chạy⟧ courir | ⟦nhanh⟧ rapide | ⟦hay⟧ intéressant
+=de
+⟦Em gái của em đẹp quá nhỉ.⟧ — Deine jüngere Schwester ist wirklich hübsch, was?
+Hier eine Übersicht über die Gradadverbien.
+⟦hơi⟧, ⟦khá⟧, ⟦rất⟧, ⟦quá⟧ + Bezugswort
+Bezugswort + ⟦lắm⟧, ⟦quá⟧
+✽ ⟦quá⟧ kann vor oder nach dem Bezugswort stehen; davor bedeutet es, dass Grad oder Grenze überschritten sind (zu sehr).
+⟦hơi⟧ etwas — ⟦Em hơi buồn.⟧ — Ich bin etwas traurig.
+⟦khá⟧ ziemlich — ⟦Mi-na nói tiếng Việt khá giỏi.⟧ — Mi-na spricht ziemlich gut Vietnamesisch.
+⟦rất⟧ sehr — ⟦Phở này rất ngon.⟧ — Dieses Phở ist sehr lecker.
+⟦lắm⟧ sehr — ⟦Mẹ em đẹp lắm.⟧ — Meine Mutter ist sehr schön.
+⟦quá⟧ so — ⟦Hùng chạy nhanh quá!⟧ — Hùng läuft so schnell!
+⟦Hùng chạy quá nhanh.⟧ — Hùng läuft zu schnell.
+⟦nhỉ⟧ am Satzende bittet indirekt um Zustimmung oder stellt eine Frage wie im Selbstgespräch.
+⟦Tiếng Việt hay.⟧ — Vietnamesisch ist interessant.
+⟦Tiếng Việt hay nhỉ.⟧ — Vietnamesisch ist interessant, nicht?
+⟦Nhà của Hùng ở đâu?⟧ — Wo ist Hùngs Haus?
+⟦Nhà của Hùng ở đâu nhỉ?⟧ — Wo war nochmal Hùngs Haus?
+Wörter: ⟦chị gái⟧ ältere Schwester | ⟦đẹp⟧ schön | ⟦buồn⟧ traurig | ⟦phở⟧ Phở (Nudelsuppe) | ⟦ngon⟧ lecker | ⟦chạy⟧ laufen | ⟦nhanh⟧ schnell | ⟦hay⟧ interessant
+=hu
+⟦Em gái của em đẹp quá nhỉ.⟧ — Milyen csinos a húgod, ugye?
+Az alábbiakban összefoglaltuk a fokhatározókat.
+⟦hơi⟧, ⟦khá⟧, ⟦rất⟧, ⟦quá⟧ + módosított szó
+módosított szó + ⟦lắm⟧, ⟦quá⟧
+✽ A ⟦quá⟧ a módosított szó előtt és után is állhat; előtte azt jelenti, hogy a mértéket vagy határt túllépték (túlságosan).
+⟦hơi⟧ kissé — ⟦Em hơi buồn.⟧ — Kissé szomorú vagyok.
+⟦khá⟧ elég — ⟦Mi-na nói tiếng Việt khá giỏi.⟧ — Mi-na elég jól beszél vietnámiul.
+⟦rất⟧ nagyon — ⟦Phở này rất ngon.⟧ — Ez a phở nagyon finom.
+⟦lắm⟧ nagyon — ⟦Mẹ em đẹp lắm.⟧ — Az anyukám nagyon szép.
+⟦quá⟧ de — ⟦Hùng chạy nhanh quá!⟧ — De gyorsan fut Hùng!
+⟦Hùng chạy quá nhanh.⟧ — Hùng túl gyorsan fut.
+A mondat végi ⟦nhỉ⟧ közvetve a másik egyetértését kéri, vagy önmagunkhoz intézett kérdést fejez ki.
+⟦Tiếng Việt hay.⟧ — A vietnámi érdekes.
+⟦Tiếng Việt hay nhỉ.⟧ — Milyen érdekes a vietnámi, ugye?
+⟦Nhà của Hùng ở đâu?⟧ — Hol van Hùng háza?
+⟦Nhà của Hùng ở đâu nhỉ?⟧ — Hol is van Hùng háza?
+Szavak: ⟦chị gái⟧ nővér | ⟦đẹp⟧ szép | ⟦buồn⟧ szomorú | ⟦phở⟧ phở (tésztaleves) | ⟦ngon⟧ finom | ⟦chạy⟧ futni | ⟦nhanh⟧ gyors | ⟦hay⟧ érdekes
+=id
+⟦Em gái của em đẹp quá nhỉ.⟧ — Adik perempuanmu cantik sekali, ya.
+Berikut ringkasan adverbia derajat.
+⟦hơi⟧, ⟦khá⟧, ⟦rất⟧, ⟦quá⟧ + kata yang diterangkan
+kata yang diterangkan + ⟦lắm⟧, ⟦quá⟧
+✽ ⟦quá⟧ bisa diletakkan sebelum atau sesudah kata yang diterangkan; jika sebelumnya, artinya derajat atau batas sudah terlampaui (terlalu).
+⟦hơi⟧ agak — ⟦Em hơi buồn.⟧ — Saya agak sedih.
+⟦khá⟧ cukup — ⟦Mi-na nói tiếng Việt khá giỏi.⟧ — Mi-na cukup pandai berbahasa Vietnam.
+⟦rất⟧ sangat — ⟦Phở này rất ngon.⟧ — Phở ini sangat enak.
+⟦lắm⟧ sangat — ⟦Mẹ em đẹp lắm.⟧ — Ibu saya cantik sekali.
+⟦quá⟧ sekali — ⟦Hùng chạy nhanh quá!⟧ — Hùng larinya cepat sekali!
+⟦Hùng chạy quá nhanh.⟧ — Hùng berlari terlalu cepat.
+⟦nhỉ⟧ di akhir kalimat secara tidak langsung meminta persetujuan lawan bicara atau mengajukan pertanyaan seperti bergumam.
+⟦Tiếng Việt hay.⟧ — Bahasa Vietnam menarik.
+⟦Tiếng Việt hay nhỉ.⟧ — Bahasa Vietnam menarik, ya.
+⟦Nhà của Hùng ở đâu?⟧ — Rumah Hùng di mana?
+⟦Nhà của Hùng ở đâu nhỉ?⟧ — Rumah Hùng di mana, ya?
+Kosakata: ⟦chị gái⟧ kakak perempuan | ⟦đẹp⟧ cantik, indah | ⟦buồn⟧ sedih | ⟦phở⟧ phở (sup mi) | ⟦ngon⟧ enak | ⟦chạy⟧ berlari | ⟦nhanh⟧ cepat | ⟦hay⟧ menarik
+=ja
+⟦Em gái của em đẹp quá nhỉ.⟧ — 君の妹、すごくきれいだね。
+程度を表す副詞を次のようにまとめました。
+⟦hơi⟧、⟦khá⟧、⟦rất⟧、⟦quá⟧ ＋ 被修飾語
+被修飾語 ＋ ⟦lắm⟧、⟦quá⟧
+✽ ⟦quá⟧ は被修飾語の前にも後にも置けますが、前に置くと程度や限度を超えすぎたという意味になります。
+⟦hơi⟧ 少し — ⟦Em hơi buồn.⟧ — 私はちょっと悲しいです。
+⟦khá⟧ かなり — ⟦Mi-na nói tiếng Việt khá giỏi.⟧ — ミナはベトナム語がかなり上手だ。
+⟦rất⟧ とても — ⟦Phở này rất ngon.⟧ — このフォーはとてもおいしいです。
+⟦lắm⟧ とても — ⟦Mẹ em đẹp lắm.⟧ — 私の母はとてもきれいです。
+⟦quá⟧ 本当に — ⟦Hùng chạy nhanh quá!⟧ — フンは本当に速く走る！
+⟦Hùng chạy quá nhanh.⟧ — フンは速く走りすぎる。
+⟦nhỉ⟧ は文末で相手の同意を間接的に求めたり、独り言のように質問したりするときに使います。
+⟦Tiếng Việt hay.⟧ — ベトナム語は面白い。
+⟦Tiếng Việt hay nhỉ.⟧ — ベトナム語って面白いね。
+⟦Nhà của Hùng ở đâu?⟧ — フンの家はどこ？
+⟦Nhà của Hùng ở đâu nhỉ?⟧ — フンの家、どこだったっけ？
+単語：⟦chị gái⟧ 姉 | ⟦đẹp⟧ 美しい | ⟦buồn⟧ 悲しい | ⟦phở⟧ フォー | ⟦ngon⟧ おいしい | ⟦chạy⟧ 走る | ⟦nhanh⟧ 速い | ⟦hay⟧ 面白い
+=pl
+⟦Em gái của em đẹp quá nhỉ.⟧ — Twoja młodsza siostra jest naprawdę ładna, co?
+Poniżej zestawiono przysłówki stopnia.
+⟦hơi⟧, ⟦khá⟧, ⟦rất⟧, ⟦quá⟧ + wyraz określany
+wyraz określany + ⟦lắm⟧, ⟦quá⟧
+✽ ⟦quá⟧ może stać przed lub po wyrazie określanym; przed nim oznacza przekroczenie miary lub granicy (za bardzo).
+⟦hơi⟧ trochu — ⟦Em hơi buồn.⟧ — Jestem trochę smutny.
+⟦khá⟧ dość — ⟦Mi-na nói tiếng Việt khá giỏi.⟧ — Mi-na mówi po wietnamsku dość dobrze.
+⟦rất⟧ bardzo — ⟦Phở này rất ngon.⟧ — To phở jest bardzo smaczne.
+⟦lắm⟧ bardzo — ⟦Mẹ em đẹp lắm.⟧ — Moja mama jest bardzo ładna.
+⟦quá⟧ ale — ⟦Hùng chạy nhanh quá!⟧ — Ale Hùng szybko biega!
+⟦Hùng chạy quá nhanh.⟧ — Hùng biega za szybko.
+⟦nhỉ⟧ na końcu zdania pośrednio prosi o zgodę rozmówcy albo wyraża pytanie zadane jakby samemu sobie.
+⟦Tiếng Việt hay.⟧ — Wietnamski jest ciekawy.
+⟦Tiếng Việt hay nhỉ.⟧ — Wietnamski jest ciekawy, co?
+⟦Nhà của Hùng ở đâu?⟧ — Gdzie jest dom Hùnga?
+⟦Nhà của Hùng ở đâu nhỉ?⟧ — Gdzie to był dom Hùnga?
+Słówka: ⟦chị gái⟧ starsza siostra | ⟦đẹp⟧ piękny | ⟦buồn⟧ smutny | ⟦phở⟧ phở (zupa z makaronem) | ⟦ngon⟧ smaczny | ⟦chạy⟧ biegać | ⟦nhanh⟧ szybki | ⟦hay⟧ ciekawy

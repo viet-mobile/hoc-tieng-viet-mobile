@@ -1,0 +1,389 @@
+@@ pdf-grammar-240a2c393bf6bf06#1
+~t 2. Sloveso + sloveso (+ sloveso)|2. 动词 + 动词（+ 动词）|2. 動詞 + 動詞（+ 動詞）|2. Verb + verb (+ verb)|2. Verbe + verbe (+ verbe)|2. Verb + Verb (+ Verb)|2. Ige + ige (+ ige)|2. Kata kerja + kata kerja (+ kata kerja)|2. 動詞 ＋ 動詞（＋ 動詞）|2. Czasownik + czasownik (+ czasownik)
+=cs
+⟦Nhưng em muốn học lái.⟧ — Ale já se chci naučit řídit.
+Vietnamština nemá koncovky sloves, a tak lze za sebou použít dvě nebo tři slovesa.
+A: ⟦Bây giờ anh đi đâu ạ?⟧ — Kam teď jdeš, bratře?
+B: ⟦Anh đi tập bóng đá.⟧ — Jdu na fotbalový trénink.
+⟦Tôi muốn đi gặp bố mẹ tôi.⟧ — Chci jít navštívit své rodiče.
+Slovíčka: ⟦đâu⟧ kam (tázací slovo) | ⟦tập⟧ trénovat | ⟦bóng đá⟧ fotbal | ⟦gặp⟧ potkat | ⟦bố mẹ⟧ rodiče
+=zh_cn
+⟦Nhưng em muốn học lái.⟧ —— 可是我想学驾驶。
+越南语的动词没有词尾变化，可以连续使用两个或三个动词。
+A：⟦Bây giờ anh đi đâu ạ?⟧ —— 哥哥现在去哪里？
+B：⟦Anh đi tập bóng đá.⟧ —— 我去练足球。
+⟦Tôi muốn đi gặp bố mẹ tôi.⟧ —— 我想去见我的父母。
+单词：⟦đâu⟧ 哪里（疑问词） | ⟦tập⟧ 练习 | ⟦bóng đá⟧ 足球 | ⟦gặp⟧ 见面 | ⟦bố mẹ⟧ 父母
+=zh
+⟦Nhưng em muốn học lái.⟧ —— 可是我想學開車（騎車）。
+越南語的動詞沒有詞尾變化，可以連續使用兩個或三個動詞。
+A：⟦Bây giờ anh đi đâu ạ?⟧ —— 哥哥現在去哪裡？
+B：⟦Anh đi tập bóng đá.⟧ —— 我去練足球。
+⟦Tôi muốn đi gặp bố mẹ tôi.⟧ —— 我想去見我的父母。
+單字：⟦đâu⟧ 哪裡（疑問詞） | ⟦tập⟧ 練習 | ⟦bóng đá⟧ 足球 | ⟦gặp⟧ 見面 | ⟦bố mẹ⟧ 父母
+=en
+⟦Nhưng em muốn học lái.⟧ — But I want to learn to ride (drive).
+Vietnamese verbs have no endings, so two or three verbs can be used one after another.
+A: ⟦Bây giờ anh đi đâu ạ?⟧ — Where are you going now, brother?
+B: ⟦Anh đi tập bóng đá.⟧ — I'm going to football practice.
+⟦Tôi muốn đi gặp bố mẹ tôi.⟧ — I want to go and see my parents.
+Words: ⟦đâu⟧ where (question word) | ⟦tập⟧ to practise | ⟦bóng đá⟧ football | ⟦gặp⟧ to meet | ⟦bố mẹ⟧ parents
+=fr
+⟦Nhưng em muốn học lái.⟧ — Mais je veux apprendre à conduire.
+Les verbes vietnamiens n'ont pas de terminaisons ; on peut donc enchaîner deux ou trois verbes.
+A : ⟦Bây giờ anh đi đâu ạ?⟧ — Où vas-tu maintenant, grand frère ?
+B : ⟦Anh đi tập bóng đá.⟧ — Je vais à l'entraînement de foot.
+⟦Tôi muốn đi gặp bố mẹ tôi.⟧ — Je veux aller voir mes parents.
+Mots : ⟦đâu⟧ où (interrogatif) | ⟦tập⟧ s'entraîner | ⟦bóng đá⟧ football | ⟦gặp⟧ rencontrer | ⟦bố mẹ⟧ parents
+=de
+⟦Nhưng em muốn học lái.⟧ — Aber ich möchte fahren lernen.
+Vietnamesische Verben haben keine Endungen, daher kann man zwei oder drei Verben hintereinander verwenden.
+A: ⟦Bây giờ anh đi đâu ạ?⟧ — Wohin gehst du jetzt, großer Bruder?
+B: ⟦Anh đi tập bóng đá.⟧ — Ich gehe zum Fußballtraining.
+⟦Tôi muốn đi gặp bố mẹ tôi.⟧ — Ich möchte meine Eltern besuchen gehen.
+Wörter: ⟦đâu⟧ wohin (Fragewort) | ⟦tập⟧ üben, trainieren | ⟦bóng đá⟧ Fußball | ⟦gặp⟧ treffen | ⟦bố mẹ⟧ Eltern
+=hu
+⟦Nhưng em muốn học lái.⟧ — De én vezetni szeretnék tanulni.
+A vietnámi igéknek nincs végződésük, így két vagy három ige is követheti egymást.
+A: ⟦Bây giờ anh đi đâu ạ?⟧ — Hová mész most, bátyám?
+B: ⟦Anh đi tập bóng đá.⟧ — Megyek focizni edzeni.
+⟦Tôi muốn đi gặp bố mẹ tôi.⟧ — El akarok menni a szüleimhez.
+Szavak: ⟦đâu⟧ hová (kérdőszó) | ⟦tập⟧ gyakorolni, edzeni | ⟦bóng đá⟧ foci | ⟦gặp⟧ találkozni | ⟦bố mẹ⟧ szülők
+=id
+⟦Nhưng em muốn học lái.⟧ — Tapi saya ingin belajar mengemudi.
+Kata kerja bahasa Vietnam tidak berubah bentuk, sehingga dua atau tiga kata kerja bisa dipakai berurutan.
+A: ⟦Bây giờ anh đi đâu ạ?⟧ — Sekarang Kakak mau ke mana?
+B: ⟦Anh đi tập bóng đá.⟧ — Kakak pergi latihan sepak bola.
+⟦Tôi muốn đi gặp bố mẹ tôi.⟧ — Saya ingin pergi menemui orang tua saya.
+Kosakata: ⟦đâu⟧ ke mana (kata tanya) | ⟦tập⟧ berlatih | ⟦bóng đá⟧ sepak bola | ⟦gặp⟧ bertemu | ⟦bố mẹ⟧ orang tua
+=ja
+⟦Nhưng em muốn học lái.⟧ — でも私は運転を習いたいです。
+ベトナム語は動詞の語尾変化がないので、二つまたは三つの動詞を続けて使うことができます。
+A：⟦Bây giờ anh đi đâu ạ?⟧ — お兄さん、今どこへ行くんですか。
+B：⟦Anh đi tập bóng đá.⟧ — サッカーの練習に行くんだ。
+⟦Tôi muốn đi gặp bố mẹ tôi.⟧ — 私は両親に会いに行きたい。
+単語：⟦đâu⟧ どこ（疑問詞） | ⟦tập⟧ 練習する | ⟦bóng đá⟧ サッカー | ⟦gặp⟧ 会う | ⟦bố mẹ⟧ 両親
+=pl
+⟦Nhưng em muốn học lái.⟧ — Ale ja chcę nauczyć się jeździć.
+Wietnamskie czasowniki nie mają końcówek, więc można użyć dwóch lub trzech czasowników jeden po drugim.
+A: ⟦Bây giờ anh đi đâu ạ?⟧ — Dokąd teraz idziesz, bracie?
+B: ⟦Anh đi tập bóng đá.⟧ — Idę na trening piłki nożnej.
+⟦Tôi muốn đi gặp bố mẹ tôi.⟧ — Chcę pójść odwiedzić rodziców.
+Słówka: ⟦đâu⟧ dokąd (słowo pytające) | ⟦tập⟧ ćwiczyć, trenować | ⟦bóng đá⟧ piłka nożna | ⟦gặp⟧ spotkać | ⟦bố mẹ⟧ rodzice
+@@ pdf-grammar-35d417291fd5eb79#0
+~t 3. Zápor v rozkazu: nedělej …|3. 否定命令|3. 否定命令|3. Negative commands|3. L'impératif négatif|3. Verneinte Aufforderungen|3. Tiltó felszólítás|3. Perintah negatif|3. 否定命令の表現|3. Rozkaz przeczący
+=cs
+⟦Em đừng lo.⟧ — Neboj se.
+⟦đừng⟧ znamená „ne- (nedělej …)“ a vyjadřuje zákaz. Obvykle se používá ve tvaru „(2. osoba) + đừng + sloveso“ ((ty/vy) nedělej …).
+⟦Em đừng nói nữa.⟧ — Už nic neříkej.
+⟦Các em đừng quên làm bài tập nhé.⟧ — Nezapomeňte si udělat úkoly, děti.
+Slovíčka: ⟦nói⟧ mluvit | ⟦nữa⟧ více, ještě | ⟦quên⟧ zapomenout | ⟦bài tập⟧ domácí úkol | ⟦nhé⟧ ano? (důvěrná částice)
+=zh_cn
+⟦Em đừng lo.⟧ —— 别担心。
+⟦đừng⟧ 意为“不要……”，是否定命令的表达，一般以“（第二人称）+ đừng + 动词”（（你）不要……）的形式使用。
+⟦Em đừng nói nữa.⟧ —— 你别再说了。
+⟦Các em đừng quên làm bài tập nhé.⟧ —— 你们别忘了做作业啊。
+单词：⟦nói⟧ 说 | ⟦nữa⟧ 再 | ⟦quên⟧ 忘记 | ⟦bài tập⟧ 作业 | ⟦nhé⟧ ……啊（亲切语气）
+=zh
+⟦Em đừng lo.⟧ —— 別擔心。
+⟦đừng⟧ 意為「不要……」，是否定命令的表達，一般以「（第二人稱）+ đừng + 動詞」（（你）不要……）的形式使用。
+⟦Em đừng nói nữa.⟧ —— 你別再說了。
+⟦Các em đừng quên làm bài tập nhé.⟧ —— 你們別忘了做作業喔。
+單字：⟦nói⟧ 說 | ⟦nữa⟧ 再 | ⟦quên⟧ 忘記 | ⟦bài tập⟧ 作業 | ⟦nhé⟧ ……喔（親切語氣）
+=en
+⟦Em đừng lo.⟧ — Don't worry.
+⟦đừng⟧ means "don't …" and is used for negative commands, usually in the form "(2nd person) + đừng + verb" ((you) don't …).
+⟦Em đừng nói nữa.⟧ — Don't say any more.
+⟦Các em đừng quên làm bài tập nhé.⟧ — Don't forget to do your homework, everyone.
+Words: ⟦nói⟧ to speak | ⟦nữa⟧ more | ⟦quên⟧ to forget | ⟦bài tập⟧ homework | ⟦nhé⟧ okay? (friendly particle)
+=fr
+⟦Em đừng lo.⟧ — Ne t'inquiète pas.
+⟦đừng⟧ signifie « ne … pas » et sert à exprimer une défense, en général sous la forme « (2e personne) + đừng + verbe ».
+⟦Em đừng nói nữa.⟧ — N'en dis pas plus.
+⟦Các em đừng quên làm bài tập nhé.⟧ — N'oubliez pas de faire vos devoirs, les enfants.
+Mots : ⟦nói⟧ parler | ⟦nữa⟧ encore | ⟦quên⟧ oublier | ⟦bài tập⟧ devoirs | ⟦nhé⟧ d'accord ? (particule amicale)
+=de
+⟦Em đừng lo.⟧ — Mach dir keine Sorgen.
+⟦đừng⟧ bedeutet „tu … nicht“ und drückt ein Verbot aus, meist in der Form „(2. Person) + đừng + Verb“.
+⟦Em đừng nói nữa.⟧ — Sag nichts mehr.
+⟦Các em đừng quên làm bài tập nhé.⟧ — Vergesst nicht, eure Hausaufgaben zu machen, Kinder.
+Wörter: ⟦nói⟧ sprechen | ⟦nữa⟧ mehr, noch | ⟦quên⟧ vergessen | ⟦bài tập⟧ Hausaufgabe | ⟦nhé⟧ ja? (vertraute Partikel)
+=hu
+⟦Em đừng lo.⟧ — Ne aggódj.
+A ⟦đừng⟧ jelentése „ne …”, tiltó felszólítást fejez ki, általában „(2. személy) + đừng + ige” formában.
+⟦Em đừng nói nữa.⟧ — Ne mondj többet.
+⟦Các em đừng quên làm bài tập nhé.⟧ — Gyerekek, el ne felejtsétek megcsinálni a házit.
+Szavak: ⟦nói⟧ beszélni | ⟦nữa⟧ még, több | ⟦quên⟧ elfelejteni | ⟦bài tập⟧ házi feladat | ⟦nhé⟧ jó? (bizalmas partikula)
+=id
+⟦Em đừng lo.⟧ — Jangan khawatir.
+⟦đừng⟧ berarti "jangan …" dan dipakai untuk perintah negatif, umumnya dalam bentuk "(orang kedua) + đừng + kata kerja".
+⟦Em đừng nói nữa.⟧ — Kamu jangan bicara lagi.
+⟦Các em đừng quên làm bài tập nhé.⟧ — Anak-anak, jangan lupa mengerjakan PR, ya.
+Kosakata: ⟦nói⟧ berbicara | ⟦nữa⟧ lagi | ⟦quên⟧ lupa | ⟦bài tập⟧ PR | ⟦nhé⟧ ya (partikel akrab)
+=ja
+⟦Em đừng lo.⟧ — 心配しないで。
+⟦đừng⟧ は「～するな」という意味の否定命令の表現で、一般に「（二人称）＋ đừng ＋ 動詞」（（あなたは）～しないでください）の形で使います。
+⟦Em đừng nói nữa.⟧ — もうそれ以上言わないで。
+⟦Các em đừng quên làm bài tập nhé.⟧ — みんな、宿題を忘れないでね。
+単語：⟦nói⟧ 話す | ⟦nữa⟧ さらに | ⟦quên⟧ 忘れる | ⟦bài tập⟧ 宿題 | ⟦nhé⟧ ～ね（親しみ）
+=pl
+⟦Em đừng lo.⟧ — Nie martw się.
+⟦đừng⟧ znaczy „nie (rób) …” i wyraża zakaz, zwykle w formie „(2. osoba) + đừng + czasownik”.
+⟦Em đừng nói nữa.⟧ — Nic już nie mów.
+⟦Các em đừng quên làm bài tập nhé.⟧ — Dzieci, nie zapomnijcie odrobić zadania domowego.
+Słówka: ⟦nói⟧ mówić | ⟦nữa⟧ więcej, jeszcze | ⟦quên⟧ zapomnieć | ⟦bài tập⟧ zadanie domowe | ⟦nhé⟧ dobrze? (partykuła poufała)
+@@ pdf-grammar-35d417291fd5eb79#1
+~t 4. Hned, okamžitě: ngay|4. 马上、立即：ngay|4. 馬上、立即：ngay|4. Right away: ngay|4. Tout de suite : ngay|4. Sofort: ngay|4. Azonnal: ngay|4. Segera: ngay|4. すぐに：ngay|4. Od razu: ngay
+=cs
+⟦Học một ngày thì sẽ đi được ngay.⟧ — Stačí se jeden den učit a hned budeš umět jezdit.
+⟦ngay⟧ znamená „hned, okamžitě“ a používá se ve tvaru „sloveso + ngay“ (okamžitě …). Stojí-li ve tvaru „ngay + místo, čas“ před slovem označujícím místo nebo čas, znamená „přímo (právě) tam/tehdy“.
+⟦Em muốn về nhà ngay.⟧ — Chci hned domů.
+⟦Tôi đưa ngay Mi-na vào bệnh viện.⟧ — Okamžitě jsem odvezl Mi-nu do nemocnice.
+⟦Nhà em ở ngay sau trường.⟧ — Můj dům je hned za školou.
+⟦Chúng ta gặp nhau ngay bây giờ.⟧ — Sejdeme se hned teď.
+Slovíčka: ⟦đưa⟧ odvézt, přinést | ⟦vào⟧ vejít | ⟦bệnh viện⟧ nemocnice | ⟦sau⟧ za | ⟦trường⟧ škola | ⟦nhau⟧ navzájem | ⟦bây giờ⟧ teď
+=zh_cn
+⟦Học một ngày thì sẽ đi được ngay.⟧ —— 只要学一天，马上就能骑了。
+⟦ngay⟧ 意为“马上、立即”，以“动词 + ngay”（立即……）的形式使用。如果像“ngay + 地点、时间”那样放在表示地点或时间的词前面，就表示“就在（那个）地点/时间”。
+⟦Em muốn về nhà ngay.⟧ —— 我想马上回家。
+⟦Tôi đưa ngay Mi-na vào bệnh viện.⟧ —— 我立即把美娜送进了医院。
+⟦Nhà em ở ngay sau trường.⟧ —— 我家就在学校后面。
+⟦Chúng ta gặp nhau ngay bây giờ.⟧ —— 我们现在马上见面吧。
+单词：⟦đưa⟧ 带去，送去 | ⟦vào⟧ 进入 | ⟦bệnh viện⟧ 医院 | ⟦sau⟧ 后面 | ⟦trường⟧ 学校 | ⟦nhau⟧ 互相 | ⟦bây giờ⟧ 现在
+=zh
+⟦Học một ngày thì sẽ đi được ngay.⟧ —— 只要學一天，馬上就能騎了。
+⟦ngay⟧ 意為「馬上、立即」，以「動詞 + ngay」（立即……）的形式使用。如果像「ngay + 地點、時間」那樣放在表示地點或時間的詞前面，就表示「就在（那個）地點/時間」。
+⟦Em muốn về nhà ngay.⟧ —— 我想馬上回家。
+⟦Tôi đưa ngay Mi-na vào bệnh viện.⟧ —— 我立即把美娜送進了醫院。
+⟦Nhà em ở ngay sau trường.⟧ —— 我家就在學校後面。
+⟦Chúng ta gặp nhau ngay bây giờ.⟧ —— 我們現在馬上見面吧。
+單字：⟦đưa⟧ 帶去，送去 | ⟦vào⟧ 進入 | ⟦bệnh viện⟧ 醫院 | ⟦sau⟧ 後面 | ⟦trường⟧ 學校 | ⟦nhau⟧ 互相 | ⟦bây giờ⟧ 現在
+=en
+⟦Học một ngày thì sẽ đi được ngay.⟧ — Learn for just one day and you'll be able to ride right away.
+⟦ngay⟧ means "right away, immediately" and is used as "verb + ngay" (to … immediately). Placed before a word of place or time, as in "ngay + place/time", it means "right at (that) place/time".
+⟦Em muốn về nhà ngay.⟧ — I want to go home right now.
+⟦Tôi đưa ngay Mi-na vào bệnh viện.⟧ — I immediately took Mi-na to the hospital.
+⟦Nhà em ở ngay sau trường.⟧ — My house is right behind the school.
+⟦Chúng ta gặp nhau ngay bây giờ.⟧ — Let's meet right now.
+Words: ⟦đưa⟧ to take, to bring | ⟦vào⟧ to enter | ⟦bệnh viện⟧ hospital | ⟦sau⟧ behind | ⟦trường⟧ school | ⟦nhau⟧ each other | ⟦bây giờ⟧ now
+=fr
+⟦Học một ngày thì sẽ đi được ngay.⟧ — Une seule journée d'apprentissage et tu sauras conduire tout de suite.
+⟦ngay⟧ signifie « tout de suite, immédiatement » et s'emploie sous la forme « verbe + ngay ». Placé devant un mot de lieu ou de temps (« ngay + lieu/temps »), il signifie « juste (à ce lieu/moment) ».
+⟦Em muốn về nhà ngay.⟧ — Je veux rentrer tout de suite.
+⟦Tôi đưa ngay Mi-na vào bệnh viện.⟧ — J'ai immédiatement emmené Mi-na à l'hôpital.
+⟦Nhà em ở ngay sau trường.⟧ — Ma maison est juste derrière l'école.
+⟦Chúng ta gặp nhau ngay bây giờ.⟧ — Retrouvons-nous tout de suite.
+Mots : ⟦đưa⟧ emmener, apporter | ⟦vào⟧ entrer | ⟦bệnh viện⟧ hôpital | ⟦sau⟧ derrière | ⟦trường⟧ école | ⟦nhau⟧ l'un l'autre | ⟦bây giờ⟧ maintenant
+=de
+⟦Học một ngày thì sẽ đi được ngay.⟧ — Lernst du nur einen Tag, kannst du sofort fahren.
+⟦ngay⟧ bedeutet „sofort, gleich“ und steht in der Form „Verb + ngay“ (sofort …). Vor einer Orts- oder Zeitangabe („ngay + Ort/Zeit“) bedeutet es „genau (an diesem Ort / zu dieser Zeit)“.
+⟦Em muốn về nhà ngay.⟧ — Ich will sofort nach Hause.
+⟦Tôi đưa ngay Mi-na vào bệnh viện.⟧ — Ich brachte Mi-na sofort ins Krankenhaus.
+⟦Nhà em ở ngay sau trường.⟧ — Mein Haus liegt direkt hinter der Schule.
+⟦Chúng ta gặp nhau ngay bây giờ.⟧ — Treffen wir uns sofort.
+Wörter: ⟦đưa⟧ bringen | ⟦vào⟧ hineingehen | ⟦bệnh viện⟧ Krankenhaus | ⟦sau⟧ hinter | ⟦trường⟧ Schule | ⟦nhau⟧ einander | ⟦bây giờ⟧ jetzt
+=hu
+⟦Học một ngày thì sẽ đi được ngay.⟧ — Ha csak egy napot tanulsz, rögtön tudsz majd menni vele.
+A ⟦ngay⟧ jelentése „azonnal, rögtön”, „ige + ngay” (azonnal …) formában használjuk. Ha hely- vagy időjelölő szó előtt áll („ngay + hely/idő”), jelentése „éppen (azon a helyen / abban az időben)”.
+⟦Em muốn về nhà ngay.⟧ — Azonnal haza akarok menni.
+⟦Tôi đưa ngay Mi-na vào bệnh viện.⟧ — Azonnal bevittem Mi-nát a kórházba.
+⟦Nhà em ở ngay sau trường.⟧ — A házunk közvetlenül az iskola mögött van.
+⟦Chúng ta gặp nhau ngay bây giờ.⟧ — Találkozzunk most azonnal.
+Szavak: ⟦đưa⟧ elvinni | ⟦vào⟧ bemenni | ⟦bệnh viện⟧ kórház | ⟦sau⟧ mögött | ⟦trường⟧ iskola | ⟦nhau⟧ egymás | ⟦bây giờ⟧ most
+=id
+⟦Học một ngày thì sẽ đi được ngay.⟧ — Cukup belajar sehari, langsung bisa naik.
+⟦ngay⟧ berarti "langsung, segera" dan dipakai dalam bentuk "kata kerja + ngay" (segera …). Jika diletakkan sebelum kata tempat atau waktu ("ngay + tempat/waktu"), artinya "tepat di (tempat/waktu itu)".
+⟦Em muốn về nhà ngay.⟧ — Saya ingin segera pulang.
+⟦Tôi đưa ngay Mi-na vào bệnh viện.⟧ — Saya segera membawa Mi-na ke rumah sakit.
+⟦Nhà em ở ngay sau trường.⟧ — Rumah saya tepat di belakang sekolah.
+⟦Chúng ta gặp nhau ngay bây giờ.⟧ — Ayo kita bertemu sekarang juga.
+Kosakata: ⟦đưa⟧ mengantar, membawa | ⟦vào⟧ masuk | ⟦bệnh viện⟧ rumah sakit | ⟦sau⟧ belakang | ⟦trường⟧ sekolah | ⟦nhau⟧ saling | ⟦bây giờ⟧ sekarang
+=ja
+⟦Học một ngày thì sẽ đi được ngay.⟧ — 一日習えば、すぐに乗れるよ。
+⟦ngay⟧ は「すぐに・即座に」の意味で、「動詞 ＋ ngay」（すぐに～する）の形で使います。また「ngay ＋ 場所・時間」のように場所や時間を表す語の前に置くと「まさに（その）場所・時間」を意味します。
+⟦Em muốn về nhà ngay.⟧ — 私は今すぐ家に帰りたいです。
+⟦Tôi đưa ngay Mi-na vào bệnh viện.⟧ — 私はすぐにミナを病院へ連れて行った。
+⟦Nhà em ở ngay sau trường.⟧ — 私の家は学校のすぐ裏にあります。
+⟦Chúng ta gặp nhau ngay bây giờ.⟧ — 今すぐ会おう。
+単語：⟦đưa⟧ 連れて行く、持って行く | ⟦vào⟧ 入る | ⟦bệnh viện⟧ 病院 | ⟦sau⟧ 後ろ | ⟦trường⟧ 学校 | ⟦nhau⟧ 互いに | ⟦bây giờ⟧ 今
+=pl
+⟦Học một ngày thì sẽ đi được ngay.⟧ — Wystarczy dzień nauki i od razu będziesz jeździć.
+⟦ngay⟧ znaczy „od razu, natychmiast” i występuje w formie „czasownik + ngay”. Postawione przed słowem oznaczającym miejsce lub czas („ngay + miejsce/czas”) znaczy „tuż, właśnie (w tym miejscu/czasie)”.
+⟦Em muốn về nhà ngay.⟧ — Chcę od razu wrócić do domu.
+⟦Tôi đưa ngay Mi-na vào bệnh viện.⟧ — Natychmiast zawiozłem Mi-nę do szpitala.
+⟦Nhà em ở ngay sau trường.⟧ — Mój dom jest tuż za szkołą.
+⟦Chúng ta gặp nhau ngay bây giờ.⟧ — Spotkajmy się od razu.
+Słówka: ⟦đưa⟧ zawieźć, zanieść | ⟦vào⟧ wejść | ⟦bệnh viện⟧ szpital | ⟦sau⟧ za | ⟦trường⟧ szkoła | ⟦nhau⟧ nawzajem | ⟦bây giờ⟧ teraz
+@@ pdf-grammar-c50262ffd60442c1#0
+~t 1. Ptát se na koníčky a odpovídat|1. 询问与回答爱好|1. 詢問與回答愛好|1. Asking and talking about hobbies|1. Demander et parler de ses loisirs|1. Nach Hobbys fragen und antworten|1. Hobbi kérdezése és megválaszolása|1. Menanyakan dan menjawab hobi|1. 趣味を尋ねて答える表現|1. Pytanie o hobby i odpowiedź
+=cs
+A: ⟦Sở thích của em là gì?⟧ — Jaký máš koníček?
+B: ⟦Em thích chơi bóng đá ạ.⟧ — Rád hraji fotbal.
+Na koníčky se lze ptát a odpovídat přímo slovem ⟦sở thích⟧ (koníček), nebo osobní zálibu vyjádřit tvarem „thích (mít rád) + sloveso/podstatné jméno“. Lze také použít otázku na volný čas: „Khi rỗi/rảnh, 2. osoba + thường làm gì?“ (Co obvykle děláš, když máš volno?).
+A: ⟦Sở thích của anh là gì?⟧ — Jaký máš koníček, bratře?
+B: ⟦Sở thích của anh là đọc sách và nghe nhạc.⟧ — Mým koníčkem je čtení a poslech hudby.
+B: ⟦Anh thích đọc sách và nghe nhạc.⟧ — Rád čtu a poslouchám hudbu.
+A: ⟦Khi rỗi, anh thường làm gì?⟧ — Co obvykle děláš, když máš volno?
+B: ⟦Anh thường đọc sách và nghe nhạc.⟧ — Obvykle čtu a poslouchám hudbu.
+Slovíčka: ⟦đọc⟧ číst | ⟦sách⟧ kniha | ⟦rỗi⟧ / ⟦rảnh⟧ volný
+=zh_cn
+A：⟦Sở thích của em là gì?⟧ —— 你的爱好是什么？
+B：⟦Em thích chơi bóng đá ạ.⟧ —— 我喜欢踢足球。
+询问爱好时，可以直接用 ⟦sở thích⟧（爱好）一词来问答，也可以用“thích（喜欢）+ 动词/名词”表达个人喜好。还可以用“Khi rỗi/rảnh, 第二人称 + thường làm gì?”（有空时你通常做什么？）来询问业余活动。
+A：⟦Sở thích của anh là gì?⟧ —— 哥哥的爱好是什么？
+B：⟦Sở thích của anh là đọc sách và nghe nhạc.⟧ —— 我的爱好是读书和听音乐。
+B：⟦Anh thích đọc sách và nghe nhạc.⟧ —— 我喜欢读书和听音乐。
+A：⟦Khi rỗi, anh thường làm gì?⟧ —— 有空的时候，哥哥通常做什么？
+B：⟦Anh thường đọc sách và nghe nhạc.⟧ —— 我通常读书、听音乐。
+单词：⟦đọc⟧ 读 | ⟦sách⟧ 书 | ⟦rỗi⟧ / ⟦rảnh⟧ 有空
+=zh
+A：⟦Sở thích của em là gì?⟧ —— 你的愛好是什麼？
+B：⟦Em thích chơi bóng đá ạ.⟧ —— 我喜歡踢足球。
+詢問愛好時，可以直接用 ⟦sở thích⟧（愛好）一詞來問答，也可以用「thích（喜歡）+ 動詞/名詞」表達個人喜好。還可以用「Khi rỗi/rảnh, 第二人稱 + thường làm gì?」（有空時你通常做什麼？）來詢問休閒活動。
+A：⟦Sở thích của anh là gì?⟧ —— 哥哥的愛好是什麼？
+B：⟦Sở thích của anh là đọc sách và nghe nhạc.⟧ —— 我的愛好是讀書和聽音樂。
+B：⟦Anh thích đọc sách và nghe nhạc.⟧ —— 我喜歡讀書和聽音樂。
+A：⟦Khi rỗi, anh thường làm gì?⟧ —— 有空的時候，哥哥通常做什麼？
+B：⟦Anh thường đọc sách và nghe nhạc.⟧ —— 我通常讀書、聽音樂。
+單字：⟦đọc⟧ 讀 | ⟦sách⟧ 書 | ⟦rỗi⟧ / ⟦rảnh⟧ 有空
+=en
+A: ⟦Sở thích của em là gì?⟧ — What's your hobby?
+B: ⟦Em thích chơi bóng đá ạ.⟧ — I like playing football.
+To ask about hobbies you can use the word ⟦sở thích⟧ (hobby) directly, or express personal taste with "thích (to like) + verb/noun". You can also ask about free-time activities with "Khi rỗi/rảnh, 2nd person + thường làm gì?" (What do you usually do in your free time?).
+A: ⟦Sở thích của anh là gì?⟧ — What's your hobby, brother?
+B: ⟦Sở thích của anh là đọc sách và nghe nhạc.⟧ — My hobbies are reading and listening to music.
+B: ⟦Anh thích đọc sách và nghe nhạc.⟧ — I like reading and listening to music.
+A: ⟦Khi rỗi, anh thường làm gì?⟧ — What do you usually do in your free time?
+B: ⟦Anh thường đọc sách và nghe nhạc.⟧ — I usually read and listen to music.
+Words: ⟦đọc⟧ to read | ⟦sách⟧ book | ⟦rỗi⟧ / ⟦rảnh⟧ free, not busy
+=fr
+A : ⟦Sở thích của em là gì?⟧ — Quel est ton passe-temps ?
+B : ⟦Em thích chơi bóng đá ạ.⟧ — J'aime jouer au football.
+Pour parler des loisirs, on peut employer directement le mot ⟦sở thích⟧ (loisir) ou exprimer ses goûts avec « thích (aimer) + verbe/nom ». On peut aussi demander ce qu'on fait pendant son temps libre : « Khi rỗi/rảnh, 2e personne + thường làm gì? » (Que fais-tu d'habitude quand tu es libre ?).
+A : ⟦Sở thích của anh là gì?⟧ — Quel est ton passe-temps, grand frère ?
+B : ⟦Sở thích của anh là đọc sách và nghe nhạc.⟧ — Mes passe-temps sont la lecture et la musique.
+B : ⟦Anh thích đọc sách và nghe nhạc.⟧ — J'aime lire et écouter de la musique.
+A : ⟦Khi rỗi, anh thường làm gì?⟧ — Que fais-tu d'habitude quand tu es libre ?
+B : ⟦Anh thường đọc sách và nghe nhạc.⟧ — D'habitude, je lis et j'écoute de la musique.
+Mots : ⟦đọc⟧ lire | ⟦sách⟧ livre | ⟦rỗi⟧ / ⟦rảnh⟧ libre
+=de
+A: ⟦Sở thích của em là gì?⟧ — Was ist dein Hobby?
+B: ⟦Em thích chơi bóng đá ạ.⟧ — Ich spiele gern Fußball.
+Nach Hobbys kann man direkt mit dem Wort ⟦sở thích⟧ (Hobby) fragen und antworten oder persönliche Vorlieben mit „thích (mögen) + Verb/Substantiv“ ausdrücken. Man kann auch nach Freizeitaktivitäten fragen: „Khi rỗi/rảnh, 2. Person + thường làm gì?“ (Was machst du normalerweise in deiner Freizeit?).
+A: ⟦Sở thích của anh là gì?⟧ — Was ist dein Hobby, großer Bruder?
+B: ⟦Sở thích của anh là đọc sách và nghe nhạc.⟧ — Meine Hobbys sind Lesen und Musikhören.
+B: ⟦Anh thích đọc sách và nghe nhạc.⟧ — Ich lese gern und höre gern Musik.
+A: ⟦Khi rỗi, anh thường làm gì?⟧ — Was machst du normalerweise in deiner Freizeit?
+B: ⟦Anh thường đọc sách và nghe nhạc.⟧ — Normalerweise lese ich und höre Musik.
+Wörter: ⟦đọc⟧ lesen | ⟦sách⟧ Buch | ⟦rỗi⟧ / ⟦rảnh⟧ frei, nicht beschäftigt
+=hu
+A: ⟦Sở thích của em là gì?⟧ — Mi a hobbid?
+B: ⟦Em thích chơi bóng đá ạ.⟧ — Szeretek focizni.
+A hobbiról a ⟦sở thích⟧ (hobbi) szóval közvetlenül is kérdezhetünk és válaszolhatunk, vagy a „thích (szeretni) + ige/főnév” formával fejezhetjük ki, mit szeretünk. A szabadidős tevékenységről is kérdezhetünk: „Khi rỗi/rảnh, 2. személy + thường làm gì?” (Mit szoktál csinálni, amikor ráérsz?).
+A: ⟦Sở thích của anh là gì?⟧ — Mi a hobbid, bátyám?
+B: ⟦Sở thích của anh là đọc sách và nghe nhạc.⟧ — A hobbim az olvasás és a zenehallgatás.
+B: ⟦Anh thích đọc sách và nghe nhạc.⟧ — Szeretek olvasni és zenét hallgatni.
+A: ⟦Khi rỗi, anh thường làm gì?⟧ — Mit szoktál csinálni, amikor ráérsz?
+B: ⟦Anh thường đọc sách và nghe nhạc.⟧ — Olvasni és zenét hallgatni szoktam.
+Szavak: ⟦đọc⟧ olvasni | ⟦sách⟧ könyv | ⟦rỗi⟧ / ⟦rảnh⟧ ráér, szabad
+=id
+A: ⟦Sở thích của em là gì?⟧ — Apa hobimu?
+B: ⟦Em thích chơi bóng đá ạ.⟧ — Saya suka bermain sepak bola.
+Untuk menanyakan hobi, bisa langsung memakai kata ⟦sở thích⟧ (hobi), atau menyatakan kesukaan dengan "thích (suka) + kata kerja/kata benda". Bisa juga menanyakan kegiatan waktu luang: "Khi rỗi/rảnh, orang kedua + thường làm gì?" (Kalau senggang, biasanya kamu melakukan apa?).
+A: ⟦Sở thích của anh là gì?⟧ — Apa hobi Kakak?
+B: ⟦Sở thích của anh là đọc sách và nghe nhạc.⟧ — Hobi Kakak membaca buku dan mendengarkan musik.
+B: ⟦Anh thích đọc sách và nghe nhạc.⟧ — Kakak suka membaca buku dan mendengarkan musik.
+A: ⟦Khi rỗi, anh thường làm gì?⟧ — Kalau senggang, Kakak biasanya melakukan apa?
+B: ⟦Anh thường đọc sách và nghe nhạc.⟧ — Kakak biasanya membaca buku dan mendengarkan musik.
+Kosakata: ⟦đọc⟧ membaca | ⟦sách⟧ buku | ⟦rỗi⟧ / ⟦rảnh⟧ senggang
+=ja
+A：⟦Sở thích của em là gì?⟧ — 君の趣味は何？
+B：⟦Em thích chơi bóng đá ạ.⟧ — 私はサッカーをするのが好きです。
+趣味を尋ねるときは ⟦sở thích⟧（趣味）という語を直接使って尋ねたり答えたりするほか、「thích（好きだ）＋ 動詞・名詞」の形で個人の好みを表せます。また「Khi rỗi/rảnh, 二人称 ＋ thường làm gì?」（暇なとき、あなたはふつう何をしますか）のように余暇の活動を尋ねる形も使えます。
+A：⟦Sở thích của anh là gì?⟧ — お兄さんの趣味は何ですか。
+B：⟦Sở thích của anh là đọc sách và nghe nhạc.⟧ — 僕の趣味は読書と音楽鑑賞だよ。
+B：⟦Anh thích đọc sách và nghe nhạc.⟧ — 僕は読書と音楽を聴くのが好きだ。
+A：⟦Khi rỗi, anh thường làm gì?⟧ — 暇なとき、お兄さんはふだん何をしますか。
+B：⟦Anh thường đọc sách và nghe nhạc.⟧ — ふだんは読書と音楽鑑賞をするよ。
+単語：⟦đọc⟧ 読む | ⟦sách⟧ 本 | ⟦rỗi⟧ / ⟦rảnh⟧ 暇だ
+=pl
+A: ⟦Sở thích của em là gì?⟧ — Jakie masz hobby?
+B: ⟦Em thích chơi bóng đá ạ.⟧ — Lubię grać w piłkę nożną.
+O hobby można pytać i odpowiadać wprost słowem ⟦sở thích⟧ (hobby) albo wyrazić upodobania formą „thích (lubić) + czasownik/rzeczownik”. Można też zapytać o czas wolny: „Khi rỗi/rảnh, 2. osoba + thường làm gì?” (Co zwykle robisz w wolnym czasie?).
+A: ⟦Sở thích của anh là gì?⟧ — Jakie masz hobby, bracie?
+B: ⟦Sở thích của anh là đọc sách và nghe nhạc.⟧ — Moje hobby to czytanie i słuchanie muzyki.
+B: ⟦Anh thích đọc sách và nghe nhạc.⟧ — Lubię czytać i słuchać muzyki.
+A: ⟦Khi rỗi, anh thường làm gì?⟧ — Co zwykle robisz w wolnym czasie?
+B: ⟦Anh thường đọc sách và nghe nhạc.⟧ — Zwykle czytam i słucham muzyki.
+Słówka: ⟦đọc⟧ czytać | ⟦sách⟧ książka | ⟦rỗi⟧ / ⟦rảnh⟧ wolny, niezajęty
+@@ pdf-grammar-a46260e0b140e60e#0
+=cs
+2. V (době/období): vào
+⟦Vào ngày nghỉ, em thường đá bóng cùng với các bạn em.⟧ — O volných dnech obvykle hraji fotbal se svými kamarády.
+Stojí-li ⟦vào⟧ před slovem označujícím dobu nebo období, znamená „v (době/období)“.
+⟦Vào mùa đông, ở Hàn Quốc có nhiều tuyết.⟧ — V zimě je v Koreji hodně sněhu.
+⟦Min-su sẽ đi du lịch miền Nam Việt Nam vào hè này.⟧ — Min-su pojede letos v létě na výlet do jižního Vietnamu.
+Slovíčka: ⟦đông⟧ zima | ⟦tuyết⟧ sníh | ⟦miền⟧ oblast, region
+=zh_cn
+2. 在（时期/期间）：vào
+⟦Vào ngày nghỉ, em thường đá bóng cùng với các bạn em.⟧ —— 休息日我通常和朋友们一起踢足球。
+⟦vào⟧ 放在表示时期或期间的词前面，意为“在（某时期/期间）”。
+⟦Vào mùa đông, ở Hàn Quốc có nhiều tuyết.⟧ —— 冬天韩国下很多雪。
+⟦Min-su sẽ đi du lịch miền Nam Việt Nam vào hè này.⟧ —— 民秀今年夏天要去越南南部旅行。
+单词：⟦đông⟧ 冬天 | ⟦tuyết⟧ 雪 | ⟦miền⟧ 地区
+=zh
+2. 在（時期/期間）：vào
+⟦Vào ngày nghỉ, em thường đá bóng cùng với các bạn em.⟧ —— 休假日我通常和朋友們一起踢足球。
+⟦vào⟧ 放在表示時期或期間的詞前面，意為「在（某時期/期間）」。
+⟦Vào mùa đông, ở Hàn Quốc có nhiều tuyết.⟧ —— 冬天韓國下很多雪。
+⟦Min-su sẽ đi du lịch miền Nam Việt Nam vào hè này.⟧ —— 民秀今年夏天要去越南南部旅行。
+單字：⟦đông⟧ 冬天 | ⟦tuyết⟧ 雪 | ⟦miền⟧ 地區
+=en
+2. In/on (a time or period): vào
+⟦Vào ngày nghỉ, em thường đá bóng cùng với các bạn em.⟧ — On my days off, I usually play football with my friends.
+When ⟦vào⟧ comes before a word for a time or period, it means "in/on (that time)".
+⟦Vào mùa đông, ở Hàn Quốc có nhiều tuyết.⟧ — In winter there is a lot of snow in Korea.
+⟦Min-su sẽ đi du lịch miền Nam Việt Nam vào hè này.⟧ — Min-su will travel to southern Vietnam this summer.
+Words: ⟦đông⟧ winter | ⟦tuyết⟧ snow | ⟦miền⟧ region
+=fr
+2. En, à (une période) : vào
+⟦Vào ngày nghỉ, em thường đá bóng cùng với các bạn em.⟧ — Les jours de congé, je joue d'habitude au foot avec mes amis.
+Placé devant un mot de temps ou de période, ⟦vào⟧ signifie « en, à (tel moment) ».
+⟦Vào mùa đông, ở Hàn Quốc có nhiều tuyết.⟧ — En hiver, il neige beaucoup en Corée.
+⟦Min-su sẽ đi du lịch miền Nam Việt Nam vào hè này.⟧ — Min-su partira en voyage dans le sud du Viêt Nam cet été.
+Mots : ⟦đông⟧ hiver | ⟦tuyết⟧ neige | ⟦miền⟧ région
+=de
+2. In, an (Zeitpunkt/Zeitraum): vào
+⟦Vào ngày nghỉ, em thường đá bóng cùng với các bạn em.⟧ — An freien Tagen spiele ich meist mit meinen Freunden Fußball.
+Steht ⟦vào⟧ vor einer Zeit- oder Zeitraumangabe, bedeutet es „in, an (zu dieser Zeit)“.
+⟦Vào mùa đông, ở Hàn Quốc có nhiều tuyết.⟧ — Im Winter liegt in Korea viel Schnee.
+⟦Min-su sẽ đi du lịch miền Nam Việt Nam vào hè này.⟧ — Min-su reist diesen Sommer in den Süden Vietnams.
+Wörter: ⟦đông⟧ Winter | ⟦tuyết⟧ Schnee | ⟦miền⟧ Region
+=hu
+2. Időben (időpont/időszak): vào
+⟦Vào ngày nghỉ, em thường đá bóng cùng với các bạn em.⟧ — Szabadnapokon általában a barátaimmal focizom.
+Ha a ⟦vào⟧ időpontot vagy időszakot jelölő szó előtt áll, jelentése „-ban/-ben, -kor”.
+⟦Vào mùa đông, ở Hàn Quốc có nhiều tuyết.⟧ — Télen Koreában sok a hó.
+⟦Min-su sẽ đi du lịch miền Nam Việt Nam vào hè này.⟧ — Min-su idén nyáron Dél-Vietnámba utazik.
+Szavak: ⟦đông⟧ tél | ⟦tuyết⟧ hó | ⟦miền⟧ vidék, régió
+=id
+2. Pada (waktu/masa): vào
+⟦Vào ngày nghỉ, em thường đá bóng cùng với các bạn em.⟧ — Pada hari libur, saya biasanya bermain sepak bola bersama teman-teman.
+Jika ⟦vào⟧ diletakkan sebelum kata yang menunjukkan waktu atau masa, artinya "pada (waktu/masa itu)".
+⟦Vào mùa đông, ở Hàn Quốc có nhiều tuyết.⟧ — Pada musim dingin, di Korea banyak salju.
+⟦Min-su sẽ đi du lịch miền Nam Việt Nam vào hè này.⟧ — Min-su akan berwisata ke Vietnam selatan musim panas ini.
+Kosakata: ⟦đông⟧ musim dingin | ⟦tuyết⟧ salju | ⟦miền⟧ wilayah
+=ja
+2. ～（時期・期間）に：vào
+⟦Vào ngày nghỉ, em thường đá bóng cùng với các bạn em.⟧ — 休日に私はふだん友達と一緒にサッカーをします。
+⟦vào⟧ は時期や期間を表す語の前に置かれると「～（時期・期間）に」の意味で使われます。
+⟦Vào mùa đông, ở Hàn Quốc có nhiều tuyết.⟧ — 冬に韓国では雪がたくさん降る。
+⟦Min-su sẽ đi du lịch miền Nam Việt Nam vào hè này.⟧ — ミンスはこの夏、ベトナム南部へ旅行に行く予定だ。
+単語：⟦đông⟧ 冬 | ⟦tuyết⟧ 雪 | ⟦miền⟧ 地方
+=pl
+2. W (czasie/okresie): vào
+⟦Vào ngày nghỉ, em thường đá bóng cùng với các bạn em.⟧ — W dni wolne zwykle gram w piłkę z przyjaciółmi.
+Gdy ⟦vào⟧ stoi przed słowem oznaczającym czas lub okres, znaczy „w (tym czasie)”.
+⟦Vào mùa đông, ở Hàn Quốc có nhiều tuyết.⟧ — Zimą w Korei jest dużo śniegu.
+⟦Min-su sẽ đi du lịch miền Nam Việt Nam vào hè này.⟧ — Min-su pojedzie tego lata na wycieczkę do południowego Wietnamu.
+Słówka: ⟦đông⟧ zima | ⟦tuyết⟧ śnieg | ⟦miền⟧ region

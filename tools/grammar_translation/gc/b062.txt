@@ -1,0 +1,142 @@
+@@ pdf-grammar-5da7f279160f59ac#0
+=cs
+Gramatický výklad
+⟦đã⟧ na konci věty znamená, že se předchozí děj má udělat „nejdřív, napřed“.
+⟦Chị để em nghĩ một chút đã!⟧ → Nech mě to nejdřív trochu promyslet! · ⟦Để tôi đi chợ về đã.⟧ → Nejdřív si zajdu na trh. · ⟦Để chờ chị ấy mua quà lưu niệm đã.⟧ → Nejdřív počkejme, až si koupí suvenýry. · ⟦Chờ anh ấy ăn cơm xong đã.⟧ → Nejdřív počkejme, až dojí.
+⟦nào⟧ na konci věty zdůrazňuje přání mluvčího nebo to, co říká, a upoutává pozornost; překládá se různě: „tak…, no tak…, pojďme…“.
+⟦Chị cho em xem cái áo dài tay nào!⟧ → Ukažte mi prosím tu košili s dlouhým rukávem! · ⟦Để em mặc thử cái áo này xem nào!⟧ → Tak si tu halenku zkusím! · ⟦Hôm nay chúng ta cùng đi xem phim nào!⟧ → Tak pojďme dnes spolu do kina! · ⟦Chúng ta cùng hát nào!⟧ → Pojďme si spolu zazpívat!
+=zh_cn
+语法解说
+⟦đã⟧ 用在句末时，表示前面的内容要“先、首先”做。
+⟦Chị để em nghĩ một chút đã!⟧ → 姐，让我先想一想！ · ⟦Để tôi đi chợ về đã.⟧ → 我先去趟市场。 · ⟦Để chờ chị ấy mua quà lưu niệm đã.⟧ → 先等她买完纪念品吧。 · ⟦Chờ anh ấy ăn cơm xong đã.⟧ → 先等他吃完饭吧。
+⟦nào⟧ 用在句末，用来强调或唤起对说话人愿望或所说内容的注意，可译为“吧、嘛、来”等。
+⟦Chị cho em xem cái áo dài tay nào!⟧ → 姐，给我看看这件长袖衣服吧！ · ⟦Để em mặc thử cái áo này xem nào!⟧ → 我来试穿一下这件衣服！ · ⟦Hôm nay chúng ta cùng đi xem phim nào!⟧ → 来，我们今天一起去看电影吧！ · ⟦Chúng ta cùng hát nào!⟧ → 我们一起唱歌吧！
+=zh
+文法解說
+⟦đã⟧ 用在句尾時，表示前面的內容要「先、首先」做。
+⟦Chị để em nghĩ một chút đã!⟧ → 姊，讓我先想一想！ · ⟦Để tôi đi chợ về đã.⟧ → 我先去一趟市場。 · ⟦Để chờ chị ấy mua quà lưu niệm đã.⟧ → 先等她買完紀念品吧。 · ⟦Chờ anh ấy ăn cơm xong đã.⟧ → 先等他吃完飯吧。
+⟦nào⟧ 用在句尾，用來強調或喚起對說話者願望或所說內容的注意，可譯為「吧、嘛、來」等。
+⟦Chị cho em xem cái áo dài tay nào!⟧ → 姊，給我看看這件長袖衣服吧！ · ⟦Để em mặc thử cái áo này xem nào!⟧ → 我來試穿一下這件衣服！ · ⟦Hôm nay chúng ta cùng đi xem phim nào!⟧ → 來，我們今天一起去看電影吧！ · ⟦Chúng ta cùng hát nào!⟧ → 我們一起唱歌吧！
+=en
+Grammar notes
+⟦đã⟧ at the end of a sentence means the preceding action should be done "first".
+⟦Chị để em nghĩ một chút đã!⟧ → Let me think about it for a moment first! · ⟦Để tôi đi chợ về đã.⟧ → Let me go to the market first. · ⟦Để chờ chị ấy mua quà lưu niệm đã.⟧ → Let's wait for her to buy her souvenirs first. · ⟦Chờ anh ấy ăn cơm xong đã.⟧ → Let's wait for him to finish eating first.
+⟦nào⟧ at the end of a sentence emphasises the speaker's wish or what they are saying and draws attention to it; it can be rendered in various ways: "come on, let's, go on".
+⟦Chị cho em xem cái áo dài tay nào!⟧ → Could you show me that long-sleeved top, please! · ⟦Để em mặc thử cái áo này xem nào!⟧ → Let me try this one on! · ⟦Hôm nay chúng ta cùng đi xem phim nào!⟧ → Come on, let's go to the cinema together today! · ⟦Chúng ta cùng hát nào!⟧ → Let's all sing together!
+=fr
+Notes de grammaire
+⟦đã⟧ en fin de phrase indique que l'action qui précède doit se faire « d'abord ».
+⟦Chị để em nghĩ một chút đã!⟧ → Laisse-moi d'abord réfléchir un peu ! · ⟦Để tôi đi chợ về đã.⟧ → Je vais d'abord faire un tour au marché. · ⟦Để chờ chị ấy mua quà lưu niệm đã.⟧ → Attendons d'abord qu'elle achète ses souvenirs. · ⟦Chờ anh ấy ăn cơm xong đã.⟧ → Attendons d'abord qu'il ait fini de manger.
+⟦nào⟧ en fin de phrase souligne le souhait du locuteur ou ce qu'il dit et attire l'attention ; on peut le rendre de diverses façons : « allez, voyons, allons ».
+⟦Chị cho em xem cái áo dài tay nào!⟧ → Montrez-moi donc ce haut à manches longues ! · ⟦Để em mặc thử cái áo này xem nào!⟧ → Voyons, je vais essayer ce haut ! · ⟦Hôm nay chúng ta cùng đi xem phim nào!⟧ → Allez, aujourd'hui on va au cinéma ensemble ! · ⟦Chúng ta cùng hát nào!⟧ → Chantons tous ensemble !
+=de
+Grammatikerläuterungen
+⟦đã⟧ am Satzende bedeutet, dass die vorangehende Handlung „zuerst“ erfolgen soll.
+⟦Chị để em nghĩ một chút đã!⟧ → Lass mich erst einmal kurz nachdenken! · ⟦Để tôi đi chợ về đã.⟧ → Ich gehe erst mal auf den Markt. · ⟦Để chờ chị ấy mua quà lưu niệm đã.⟧ → Warten wir erst, bis sie ihre Souvenirs gekauft hat. · ⟦Chờ anh ấy ăn cơm xong đã.⟧ → Warten wir erst, bis er fertig gegessen hat.
+⟦nào⟧ am Satzende betont den Wunsch des Sprechers oder das Gesagte und lenkt die Aufmerksamkeit darauf; es lässt sich unterschiedlich wiedergeben: „komm, na los, lass uns“.
+⟦Chị cho em xem cái áo dài tay nào!⟧ → Zeigen Sie mir doch mal das langärmelige Oberteil! · ⟦Để em mặc thử cái áo này xem nào!⟧ → Na, dann probiere ich dieses Oberteil mal an! · ⟦Hôm nay chúng ta cùng đi xem phim nào!⟧ → Komm, lass uns heute zusammen ins Kino gehen! · ⟦Chúng ta cùng hát nào!⟧ → Lasst uns zusammen singen!
+=hu
+Nyelvtani magyarázat
+A mondat végén álló ⟦đã⟧ azt jelzi, hogy az előtte álló cselekvést „előbb, először” kell elvégezni.
+⟦Chị để em nghĩ một chút đã!⟧ → Hadd gondolkodjam előbb egy kicsit! · ⟦Để tôi đi chợ về đã.⟧ → Előbb elmegyek a piacra. · ⟦Để chờ chị ấy mua quà lưu niệm đã.⟧ → Várjuk meg előbb, amíg megveszi az ajándéktárgyakat. · ⟦Chờ anh ấy ăn cơm xong đã.⟧ → Várjuk meg előbb, amíg befejezi az evést.
+A mondat végén álló ⟦nào⟧ a beszélő kívánságát vagy mondanivalóját hangsúlyozza és felhívja rá a figyelmet; többféleképpen fordítható: „na, gyerünk, hadd”.
+⟦Chị cho em xem cái áo dài tay nào!⟧ → Mutassa már meg azt a hosszú ujjú felsőt! · ⟦Để em mặc thử cái áo này xem nào!⟧ → Na, hadd próbáljam fel ezt a felsőt! · ⟦Hôm nay chúng ta cùng đi xem phim nào!⟧ → Gyerünk, menjünk ma együtt moziba! · ⟦Chúng ta cùng hát nào!⟧ → Énekeljünk együtt!
+=id
+Penjelasan tata bahasa
+⟦đã⟧ di akhir kalimat menyatakan bahwa isi kalimat sebelumnya dilakukan "terlebih dahulu".
+⟦Chị để em nghĩ một chút đã!⟧ → Kak, biar aku berpikir sebentar dulu! · ⟦Để tôi đi chợ về đã.⟧ → Biar saya ke pasar dulu. · ⟦Để chờ chị ấy mua quà lưu niệm đã.⟧ → Kita tunggu dia membeli suvenir dulu. · ⟦Chờ anh ấy ăn cơm xong đã.⟧ → Tunggu dia selesai makan dulu.
+⟦nào⟧ di akhir kalimat dipakai untuk menekankan keinginan pembicara atau isi ucapannya dan menarik perhatian; dapat diterjemahkan beragam: "ayo, yuk, dong".
+⟦Chị cho em xem cái áo dài tay nào!⟧ → Mbak, coba lihat baju lengan panjang itu dong! · ⟦Để em mặc thử cái áo này xem nào!⟧ → Coba saya pakai baju ini dulu! · ⟦Hôm nay chúng ta cùng đi xem phim nào!⟧ → Ayo, hari ini kita nonton film bersama! · ⟦Chúng ta cùng hát nào!⟧ → Yuk, kita bernyanyi bersama!
+=ja
+文法解説
+⟦đã⟧ が文末に使われると、前の内容を「まず、先に～する」という意味になります。
+⟦Chị để em nghĩ một chút đã!⟧ → まずちょっと考えさせてください！ · ⟦Để tôi đi chợ về đã.⟧ → 先に市場へ行ってきます。 · ⟦Để chờ chị ấy mua quà lưu niệm đã.⟧ → まず彼女がお土産を買うのを待とう。 · ⟦Chờ anh ấy ăn cơm xong đã.⟧ → まず彼が食事を終えるのを待とう。
+⟦nào⟧ は話し手の願いや話す内容を強調・喚起するために文末で使われ、「さあ」「～よ」「～しよう」などさまざまに訳せます。
+⟦Chị cho em xem cái áo dài tay nào!⟧ → この長袖の服をちょっと見せてください！ · ⟦Để em mặc thử cái áo này xem nào!⟧ → この服、ちょっと試着してみます！ · ⟦Hôm nay chúng ta cùng đi xem phim nào!⟧ → さあ、今日は一緒に映画を見に行こう！ · ⟦Chúng ta cùng hát nào!⟧ → みんなで一緒に歌おう！
+=pl
+Objaśnienia gramatyczne
+⟦đã⟧ na końcu zdania oznacza, że poprzedzającą czynność trzeba wykonać „najpierw”.
+⟦Chị để em nghĩ một chút đã!⟧ → Pozwól mi najpierw chwilę pomyśleć! · ⟦Để tôi đi chợ về đã.⟧ → Najpierw pójdę na targ. · ⟦Để chờ chị ấy mua quà lưu niệm đã.⟧ → Najpierw poczekajmy, aż kupi pamiątki. · ⟦Chờ anh ấy ăn cơm xong đã.⟧ → Najpierw poczekajmy, aż skończy jeść.
+⟦nào⟧ na końcu zdania podkreśla życzenie mówiącego lub to, co mówi, i przyciąga uwagę; można je tłumaczyć różnie: „no, chodźmy, niech”.
+⟦Chị cho em xem cái áo dài tay nào!⟧ → Proszę mi pokazać tę bluzkę z długim rękawem! · ⟦Để em mặc thử cái áo này xem nào!⟧ → No to przymierzę tę bluzkę! · ⟦Hôm nay chúng ta cùng đi xem phim nào!⟧ → No to chodźmy dziś razem do kina! · ⟦Chúng ta cùng hát nào!⟧ → Zaśpiewajmy razem!
+@@ pdf-grammar-64a3bdff11ec88f0#0
+=cs
+Gramatický výklad
+⟦mà⟧ jako spojka znamená „ale“ a spojuje se i s ⟦nhưng⟧ do tvaru ⟦nhưng mà⟧. Někdy znamená také „a (zároveň)“.
+⟦Áo dài Việt Nam kín đáo mà gợi cảm.⟧ → Vietnamské áo dài je cudné, a přitom svůdné. · ⟦Hàng hóa ở đây đã tốt mà lại rẻ.⟧ → Zboží je tu kvalitní a navíc levné.
+⟦nhưng⟧ znamená „ale“ a vyjadřuje odporovací vztah; spojuje se také s ⟦mà⟧ do tvaru ⟦nhưng mà⟧.
+⟦Ngày nay, áo dài đã có một số thay đổi nhưng vẫn giữ được nét đẹp truyền thống.⟧ → Dnes áo dài prošlo určitými změnami, ale stále si uchovává tradiční krásu. · ⟦Trời có mưa nhưng không lạnh.⟧ → Prší, ale není zima. · ⟦Chúng tôi cố đi thật nhanh nhưng vẫn không sao theo kịp anh ấy.⟧ → Snažili jsme se jít opravdu rychle, ale stejně jsme ho nemohli dohnat.
+⟦từng⟧ ve tvaru ⟦từng⟧ + A znamená „každý jednotlivý A“.
+⟦Tà áo mong manh ôm trọn lấy từng đường nét mềm mại của người phụ nữ.⟧ → Jemné šosy šatů obepínají každou jemnou křivku ženského těla. · ⟦Gió len lỏi vào từng cành cây.⟧ → Vítr pronikal do každé větvičky.
+=zh_cn
+语法解说
+⟦mà⟧ 作连词时意为“但是”，也可与 ⟦nhưng⟧ 结合成 ⟦nhưng mà⟧。有时也表示“而且、又”。
+⟦Áo dài Việt Nam kín đáo mà gợi cảm.⟧ → 越南奥黛含蓄而又性感。 · ⟦Hàng hóa ở đây đã tốt mà lại rẻ.⟧ → 这里的商品又好又便宜。
+⟦nhưng⟧ 意为“但是”，表示转折关系，也可与 ⟦mà⟧ 结合成 ⟦nhưng mà⟧。
+⟦Ngày nay, áo dài đã có một số thay đổi nhưng vẫn giữ được nét đẹp truyền thống.⟧ → 如今奥黛有了一些变化，但依然保留着传统之美。 · ⟦Trời có mưa nhưng không lạnh.⟧ → 虽然下雨，但不冷。 · ⟦Chúng tôi cố đi thật nhanh nhưng vẫn không sao theo kịp anh ấy.⟧ → 我们努力走得很快，但还是怎么也追不上他。
+⟦từng⟧ 以 ⟦từng⟧ + A 的形式表示“每一个A”。
+⟦Tà áo mong manh ôm trọn lấy từng đường nét mềm mại của người phụ nữ.⟧ → 轻薄的衣襟包裹着女性每一道柔美的曲线。 · ⟦Gió len lỏi vào từng cành cây.⟧ → 风钻进每一根树枝。
+=zh
+文法解說
+⟦mà⟧ 作連接詞時意為「但是」，也可與 ⟦nhưng⟧ 結合成 ⟦nhưng mà⟧。有時也表示「而且、又」。
+⟦Áo dài Việt Nam kín đáo mà gợi cảm.⟧ → 越南奧黛含蓄而又性感。 · ⟦Hàng hóa ở đây đã tốt mà lại rẻ.⟧ → 這裡的商品又好又便宜。
+⟦nhưng⟧ 意為「但是」，表示轉折關係，也可與 ⟦mà⟧ 結合成 ⟦nhưng mà⟧。
+⟦Ngày nay, áo dài đã có một số thay đổi nhưng vẫn giữ được nét đẹp truyền thống.⟧ → 如今奧黛有了一些變化，但依然保有傳統之美。 · ⟦Trời có mưa nhưng không lạnh.⟧ → 雖然下雨，但不冷。 · ⟦Chúng tôi cố đi thật nhanh nhưng vẫn không sao theo kịp anh ấy.⟧ → 我們努力走得很快，但還是怎麼也追不上他。
+⟦từng⟧ 以 ⟦từng⟧ + A 的形式表示「每一個A」。
+⟦Tà áo mong manh ôm trọn lấy từng đường nét mềm mại của người phụ nữ.⟧ → 輕薄的衣襬包覆著女性每一道柔美的曲線。 · ⟦Gió len lỏi vào từng cành cây.⟧ → 風鑽進每一根樹枝。
+=en
+Grammar notes
+As a conjunction, ⟦mà⟧ means "but" and can combine with ⟦nhưng⟧ as ⟦nhưng mà⟧. Sometimes it also means "and (also)".
+⟦Áo dài Việt Nam kín đáo mà gợi cảm.⟧ → The Vietnamese áo dài is modest yet alluring. · ⟦Hàng hóa ở đây đã tốt mà lại rẻ.⟧ → The goods here are good and cheap too.
+⟦nhưng⟧ means "but" and expresses contrast; it can also combine with ⟦mà⟧ as ⟦nhưng mà⟧.
+⟦Ngày nay, áo dài đã có một số thay đổi nhưng vẫn giữ được nét đẹp truyền thống.⟧ → Today the áo dài has undergone some changes but still keeps its traditional beauty. · ⟦Trời có mưa nhưng không lạnh.⟧ → It's raining, but it isn't cold. · ⟦Chúng tôi cố đi thật nhanh nhưng vẫn không sao theo kịp anh ấy.⟧ → We tried to walk really fast but still couldn't keep up with him.
+⟦từng⟧ in the form ⟦từng⟧ + A means "each individual A".
+⟦Tà áo mong manh ôm trọn lấy từng đường nét mềm mại của người phụ nữ.⟧ → The delicate panels of the dress hug every soft curve of the woman's figure. · ⟦Gió len lỏi vào từng cành cây.⟧ → The wind crept into every branch.
+=fr
+Notes de grammaire
+Comme conjonction, ⟦mà⟧ signifie « mais » et peut s'associer à ⟦nhưng⟧ sous la forme ⟦nhưng mà⟧. Il signifie parfois aussi « et (en même temps) ».
+⟦Áo dài Việt Nam kín đáo mà gợi cảm.⟧ → L'áo dài vietnamien est pudique et pourtant séduisant. · ⟦Hàng hóa ở đây đã tốt mà lại rẻ.⟧ → Les marchandises ici sont bonnes et en plus bon marché.
+⟦nhưng⟧ signifie « mais » et exprime l'opposition ; il peut aussi s'associer à ⟦mà⟧ sous la forme ⟦nhưng mà⟧.
+⟦Ngày nay, áo dài đã có một số thay đổi nhưng vẫn giữ được nét đẹp truyền thống.⟧ → Aujourd'hui l'áo dài a connu quelques changements, mais il garde sa beauté traditionnelle. · ⟦Trời có mưa nhưng không lạnh.⟧ → Il pleut, mais il ne fait pas froid. · ⟦Chúng tôi cố đi thật nhanh nhưng vẫn không sao theo kịp anh ấy.⟧ → Nous avons essayé de marcher très vite, mais impossible de le rattraper.
+⟦từng⟧ dans la forme ⟦từng⟧ + A signifie « chaque A (pris un à un) ».
+⟦Tà áo mong manh ôm trọn lấy từng đường nét mềm mại của người phụ nữ.⟧ → Les pans légers de la robe épousent chaque courbe délicate du corps féminin. · ⟦Gió len lỏi vào từng cành cây.⟧ → Le vent se glissait dans chaque branche.
+=de
+Grammatikerläuterungen
+Als Konjunktion bedeutet ⟦mà⟧ „aber“ und kann mit ⟦nhưng⟧ zu ⟦nhưng mà⟧ verbunden werden. Manchmal bedeutet es auch „und (zugleich)“.
+⟦Áo dài Việt Nam kín đáo mà gợi cảm.⟧ → Das vietnamesische Áo dài ist zurückhaltend und doch verführerisch. · ⟦Hàng hóa ở đây đã tốt mà lại rẻ.⟧ → Die Waren hier sind gut und obendrein billig.
+⟦nhưng⟧ bedeutet „aber“ und drückt einen Gegensatz aus; es kann auch mit ⟦mà⟧ zu ⟦nhưng mà⟧ verbunden werden.
+⟦Ngày nay, áo dài đã có một số thay đổi nhưng vẫn giữ được nét đẹp truyền thống.⟧ → Heute hat sich das Áo dài etwas verändert, bewahrt aber noch seine traditionelle Schönheit. · ⟦Trời có mưa nhưng không lạnh.⟧ → Es regnet, aber es ist nicht kalt. · ⟦Chúng tôi cố đi thật nhanh nhưng vẫn không sao theo kịp anh ấy.⟧ → Wir versuchten, ganz schnell zu gehen, konnten ihn aber trotzdem nicht einholen.
+⟦từng⟧ in der Form ⟦từng⟧ + A bedeutet „jede(r/s) einzelne A“.
+⟦Tà áo mong manh ôm trọn lấy từng đường nét mềm mại của người phụ nữ.⟧ → Die zarten Bahnen des Kleides umschmeicheln jede weiche Linie des Frauenkörpers. · ⟦Gió len lỏi vào từng cành cây.⟧ → Der Wind drang in jeden einzelnen Zweig.
+=hu
+Nyelvtani magyarázat
+Kötőszóként a ⟦mà⟧ jelentése „de”, és a ⟦nhưng⟧ szóval ⟦nhưng mà⟧ formában is állhat. Néha „és (egyben)” jelentésű.
+⟦Áo dài Việt Nam kín đáo mà gợi cảm.⟧ → A vietnami áo dài szemérmes, mégis csábító. · ⟦Hàng hóa ở đây đã tốt mà lại rẻ.⟧ → Az áru itt jó, ráadásul olcsó is.
+A ⟦nhưng⟧ jelentése „de”, ellentétet fejez ki; a ⟦mà⟧ szóval ⟦nhưng mà⟧ formában is használatos.
+⟦Ngày nay, áo dài đã có một số thay đổi nhưng vẫn giữ được nét đẹp truyền thống.⟧ → Ma az áo dài némileg megváltozott, de megőrizte hagyományos szépségét. · ⟦Trời có mưa nhưng không lạnh.⟧ → Esik, de nincs hideg. · ⟦Chúng tôi cố đi thật nhanh nhưng vẫn không sao theo kịp anh ấy.⟧ → Igyekeztünk nagyon gyorsan menni, de így sem tudtuk utolérni.
+A ⟦từng⟧ a ⟦từng⟧ + A formában „minden egyes A” jelentésű.
+⟦Tà áo mong manh ôm trọn lấy từng đường nét mềm mại của người phụ nữ.⟧ → A ruha finom szárnyai a női test minden lágy vonalát körülölelik. · ⟦Gió len lỏi vào từng cành cây.⟧ → A szél minden egyes ágba befurakodott.
+=id
+Penjelasan tata bahasa
+Sebagai konjungsi, ⟦mà⟧ berarti "tetapi" dan dapat digabung dengan ⟦nhưng⟧ menjadi ⟦nhưng mà⟧. Kadang juga berarti "dan (sekaligus)".
+⟦Áo dài Việt Nam kín đáo mà gợi cảm.⟧ → Áo dài Vietnam tertutup tetapi memikat. · ⟦Hàng hóa ở đây đã tốt mà lại rẻ.⟧ → Barang di sini sudah bagus, murah pula.
+⟦nhưng⟧ berarti "tetapi" dan menyatakan hubungan pertentangan; dapat juga digabung dengan ⟦mà⟧ menjadi ⟦nhưng mà⟧.
+⟦Ngày nay, áo dài đã có một số thay đổi nhưng vẫn giữ được nét đẹp truyền thống.⟧ → Kini áo dài telah mengalami beberapa perubahan, tetapi tetap mempertahankan keindahan tradisionalnya. · ⟦Trời có mưa nhưng không lạnh.⟧ → Hujan, tetapi tidak dingin. · ⟦Chúng tôi cố đi thật nhanh nhưng vẫn không sao theo kịp anh ấy.⟧ → Kami berusaha berjalan sangat cepat, tetapi tetap tidak bisa menyusulnya.
+⟦từng⟧ dalam bentuk ⟦từng⟧ + A berarti "setiap A (satu per satu)".
+⟦Tà áo mong manh ôm trọn lấy từng đường nét mềm mại của người phụ nữ.⟧ → Kain baju yang tipis membalut setiap lekuk lembut tubuh perempuan. · ⟦Gió len lỏi vào từng cành cây.⟧ → Angin menyusup ke setiap dahan pohon.
+=ja
+文法解説
+⟦mà⟧ が接続詞として使われると「しかし」の意味になり、⟦nhưng⟧ と結合して ⟦nhưng mà⟧ の形でも使われます。「～して」「そして」などの意味で使われることもあります。
+⟦Áo dài Việt Nam kín đáo mà gợi cảm.⟧ → ベトナムのアオザイは慎み深いながらも色っぽい。 · ⟦Hàng hóa ở đây đã tốt mà lại rẻ.⟧ → ここの品物は良いうえに安い。
+⟦nhưng⟧ は「しかし」の意味で逆接関係を表し、⟦mà⟧ と結合して ⟦nhưng mà⟧ の形でも使われます。
+⟦Ngày nay, áo dài đã có một số thay đổi nhưng vẫn giữ được nét đẹp truyền thống.⟧ → 今日、アオザイにはいくつかの変化が加わったが、依然として伝統的な美しさを保っている。 · ⟦Trời có mưa nhưng không lạnh.⟧ → 雨は降っているが寒くない。 · ⟦Chúng tôi cố đi thật nhanh nhưng vẫn không sao theo kịp anh ấy.⟧ → 私たちは本当に速く歩こうとしたが、それでも彼に追いつけなかった。
+⟦từng⟧ は ⟦từng⟧ + A の形で「一つ一つのA」という意味で使われます。
+⟦Tà áo mong manh ôm trọn lấy từng đường nét mềm mại của người phụ nữ.⟧ → 薄い裾が女性のしなやかな曲線の一つ一つを包み込む。 · ⟦Gió len lỏi vào từng cành cây.⟧ → 風が木の枝の一本一本に入り込んできた。
+=pl
+Objaśnienia gramatyczne
+Jako spójnik ⟦mà⟧ znaczy „ale” i może łączyć się z ⟦nhưng⟧ w postaci ⟦nhưng mà⟧. Czasem znaczy też „i (zarazem)”.
+⟦Áo dài Việt Nam kín đáo mà gợi cảm.⟧ → Wietnamskie áo dài jest skromne, a zarazem zmysłowe. · ⟦Hàng hóa ở đây đã tốt mà lại rẻ.⟧ → Towary są tu dobre, a do tego tanie.
+⟦nhưng⟧ znaczy „ale” i wyraża przeciwieństwo; może też łączyć się z ⟦mà⟧ w postaci ⟦nhưng mà⟧.
+⟦Ngày nay, áo dài đã có một số thay đổi nhưng vẫn giữ được nét đẹp truyền thống.⟧ → Dziś áo dài przeszło pewne zmiany, ale wciąż zachowuje tradycyjne piękno. · ⟦Trời có mưa nhưng không lạnh.⟧ → Pada, ale nie jest zimno. · ⟦Chúng tôi cố đi thật nhanh nhưng vẫn không sao theo kịp anh ấy.⟧ → Staraliśmy się iść naprawdę szybko, ale i tak nie mogliśmy go dogonić.
+⟦từng⟧ w formie ⟦từng⟧ + A znaczy „każdy poszczególny A”.
+⟦Tà áo mong manh ôm trọn lấy từng đường nét mềm mại của người phụ nữ.⟧ → Delikatne poły sukni otulają każdą miękką linię kobiecego ciała. · ⟦Gió len lỏi vào từng cành cây.⟧ → Wiatr wdzierał się w każdą gałąź.

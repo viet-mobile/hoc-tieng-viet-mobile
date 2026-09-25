@@ -1,0 +1,131 @@
+@@ pdf-grammar-571b7bd68028e55a#0
+=cs
+Klíčové výrazy: ⟦đáng⟧ / ⟦giá A thì B⟧
+⟦đáng + sloveso⟧ znamená „stojí za to ~, hodný ~“.
+❶ ⟦Chuyện này không đáng lo, để em giải quyết ngay bây giờ.⟧ — S tím si nemusíte dělat starosti, hned to vyřeším.
+❷ Ⓐ ⟦Chương trình biểu diễn nghệ thuật này thật tuyệt vời, anh nhỉ?⟧ — Tohle umělecké vystoupení je úžasné, že? Ⓑ ⟦Anh cũng thấy thế, rất đáng xem.⟧ — Taky si to myslím, rozhodně stojí za zhlédnutí.
+⟦giá A thì B⟧ vyjadřuje lítost nad něčím, co se nestalo, nebo předpoklad něčeho, co se stát nemůže: „kdyby A, (bylo by) B“.
+❶ ⟦Tiếc quá! Giá biết trước là anh sang du lịch Việt Nam thì tôi đã ra sân bay đón anh.⟧ — Škoda! Kdybych byl předem věděl, že přijedete do Vietnamu, byl bych vám přijel naproti na letiště.
+❷ Ⓐ ⟦Anh ấy lại mới mở thêm cửa hàng nữa, phải không?⟧ — On si zase otevřel další obchod, že? Ⓑ ⟦Vâng, nhưng ở xa trung tâm thành phố quá. Giá ở gần thì em sẽ thường xuyên ghé vào.⟧ — Ano, ale je moc daleko od centra. Kdyby byl blíž, chodila bych tam často.
+Procvičování 3 — spojte vhodné části a veďte rozhovor podle vzoru: ① ⟦món bún⟧ (nudlové jídlo) – Ⓐ ⟦ăn⟧ (jíst) – ② ⟦bún bò Huế⟧ (hovězí nudle po huế-sku) | ② ⟦bảo tàng⟧ (muzeum) – Ⓒ ⟦tham quan⟧ (navštívit) – ③ ⟦Bảo tàng Dân tộc học Việt Nam⟧ (Vietnamské etnografické muzeum) | ③ ⟦môn thể thao⟧ (sport) – Ⓑ ⟦học⟧ (učit se) – ① ⟦bóng bàn⟧ (stolní tenis)
+Vzor (①–Ⓐ–②): Ⓐ ⟦Chị giới thiệu cho em món bún đáng ăn, được không?⟧ — Můžeš mi doporučit nějaké nudle, které stojí za ochutnání? Ⓑ ⟦Bún bò Huế đáng ăn, em thử đi.⟧ — Bún bò Huế stojí za to, zkus je.
+Procvičování 4 — spojte vhodné části a veďte rozhovor podle vzoru: ① ⟦em là chị ấy⟧ (být na jejím místě) → Ⓐ ⟦em sẽ mua toà nhà đó⟧ (koupila bych tu budovu) | ② ⟦em ấy nói sự thật⟧ (kdyby řekl pravdu) → Ⓑ ⟦chị ấy sẽ bỏ qua cho em ấy⟧ (odpustila by mu to) | ③ ⟦chị ấy đi bệnh viện sớm hơn⟧ (kdyby šla dřív do nemocnice) → Ⓒ ⟦tình trạng của chị ấy đã không xấu đi như thế này⟧ (její stav by se takhle nezhoršil)
+Vzor (①–Ⓐ): Ⓐ ⟦Giá em là chị ấy thì em sẽ mua toà nhà đó.⟧ — Být na jejím místě, tu budovu bych koupila. Ⓑ ⟦Đúng rồi. Anh cũng nghĩ như vậy.⟧ — Přesně. Taky si to myslím.
+Nová slovíčka: ⟦bảo tàng⟧ muzeum | ⟦ghé⟧ zastavit se | ⟦sự thật⟧ pravda | ⟦bỏ qua⟧ prominout, přejít | ⟦tình trạng⟧ stav
+=zh_cn
+核心表达：⟦đáng⟧ / ⟦giá A thì B⟧
+⟦đáng + 动词⟧ 意为“值得……”。
+❶ ⟦Chuyện này không đáng lo, để em giải quyết ngay bây giờ.⟧ —— 这件事不值得担心，我现在马上解决。
+❷ Ⓐ ⟦Chương trình biểu diễn nghệ thuật này thật tuyệt vời, anh nhỉ?⟧ —— 这场艺术演出真精彩，是吧？ Ⓑ ⟦Anh cũng thấy thế, rất đáng xem.⟧ —— 我也这么觉得，非常值得一看。
+⟦giá A thì B⟧ 表示对未实现之事的遗憾或对不可能实现之事的假设，意为“如果当初A的话就会B / 要是A的话就会B”。
+❶ ⟦Tiếc quá! Giá biết trước là anh sang du lịch Việt Nam thì tôi đã ra sân bay đón anh.⟧ —— 太可惜了！要是早知道你来越南旅游，我就去机场接你了。
+❷ Ⓐ ⟦Anh ấy lại mới mở thêm cửa hàng nữa, phải không?⟧ —— 他又新开了一家店，是吗？ Ⓑ ⟦Vâng, nhưng ở xa trung tâm thành phố quá. Giá ở gần thì em sẽ thường xuyên ghé vào.⟧ —— 是的，但离市中心太远了。要是近一点，我会常去逛逛。
+句型练习3 —— 找出相应内容连线，然后仿照范例对话：① ⟦món bún⟧（米线类菜）– Ⓐ ⟦ăn⟧（吃）– ② ⟦bún bò Huế⟧（顺化牛肉米线）| ② ⟦bảo tàng⟧（博物馆）– Ⓒ ⟦tham quan⟧（参观）– ③ ⟦Bảo tàng Dân tộc học Việt Nam⟧（越南民族学博物馆）| ③ ⟦môn thể thao⟧（运动项目）– Ⓑ ⟦học⟧（学）– ① ⟦bóng bàn⟧（乒乓球）
+范例（①–Ⓐ–②）：Ⓐ ⟦Chị giới thiệu cho em món bún đáng ăn, được không?⟧ —— 你能给我推荐一道值得吃的米线吗？ Ⓑ ⟦Bún bò Huế đáng ăn, em thử đi.⟧ —— 顺化牛肉米线值得一吃，你尝尝吧。
+句型练习4 —— 找出相应内容连线，然后仿照范例对话：① ⟦em là chị ấy⟧（我是她的话）→ Ⓐ ⟦em sẽ mua toà nhà đó⟧（我会买下那栋楼）| ② ⟦em ấy nói sự thật⟧（他说实话的话）→ Ⓑ ⟦chị ấy sẽ bỏ qua cho em ấy⟧（她就会原谅他）| ③ ⟦chị ấy đi bệnh viện sớm hơn⟧（她早点去医院的话）→ Ⓒ ⟦tình trạng của chị ấy đã không xấu đi như thế này⟧（她的病情就不会恶化成这样）
+范例（①–Ⓐ）：Ⓐ ⟦Giá em là chị ấy thì em sẽ mua toà nhà đó.⟧ —— 如果我是她，我就会买下那栋楼。 Ⓑ ⟦Đúng rồi. Anh cũng nghĩ như vậy.⟧ —— 对。我也是这么想的。
+新单词：⟦bảo tàng⟧ 博物馆 | ⟦ghé⟧ 顺路去、顺便到 | ⟦sự thật⟧ 事实 | ⟦bỏ qua⟧ 原谅、放过 | ⟦tình trạng⟧ 状况
+=zh
+核心表達：⟦đáng⟧ / ⟦giá A thì B⟧
+⟦đáng + 動詞⟧ 意為「值得……」。
+❶ ⟦Chuyện này không đáng lo, để em giải quyết ngay bây giờ.⟧ —— 這件事不值得擔心，我現在馬上解決。
+❷ Ⓐ ⟦Chương trình biểu diễn nghệ thuật này thật tuyệt vời, anh nhỉ?⟧ —— 這場藝術表演真精彩，對吧？ Ⓑ ⟦Anh cũng thấy thế, rất đáng xem.⟧ —— 我也這麼覺得，非常值得一看。
+⟦giá A thì B⟧ 表示對未實現之事的遺憾或對不可能實現之事的假設，意為「如果當初A的話就會B / 要是A的話就會B」。
+❶ ⟦Tiếc quá! Giá biết trước là anh sang du lịch Việt Nam thì tôi đã ra sân bay đón anh.⟧ —— 太可惜了！要是早知道你來越南旅遊，我就去機場接你了。
+❷ Ⓐ ⟦Anh ấy lại mới mở thêm cửa hàng nữa, phải không?⟧ —— 他又新開了一家店，是嗎？ Ⓑ ⟦Vâng, nhưng ở xa trung tâm thành phố quá. Giá ở gần thì em sẽ thường xuyên ghé vào.⟧ —— 是的，但離市中心太遠了。要是近一點，我會常去逛逛。
+句型練習3 —— 找出相應內容連線，然後仿照範例對話：① ⟦món bún⟧（米線類料理）– Ⓐ ⟦ăn⟧（吃）– ② ⟦bún bò Huế⟧（順化牛肉米線）| ② ⟦bảo tàng⟧（博物館）– Ⓒ ⟦tham quan⟧（參觀）– ③ ⟦Bảo tàng Dân tộc học Việt Nam⟧（越南民族學博物館）| ③ ⟦môn thể thao⟧（運動項目）– Ⓑ ⟦học⟧（學）– ① ⟦bóng bàn⟧（桌球）
+範例（①–Ⓐ–②）：Ⓐ ⟦Chị giới thiệu cho em món bún đáng ăn, được không?⟧ —— 妳能推薦我一道值得吃的米線嗎？ Ⓑ ⟦Bún bò Huế đáng ăn, em thử đi.⟧ —— 順化牛肉米線值得一吃，妳嚐嚐看吧。
+句型練習4 —— 找出相應內容連線，然後仿照範例對話：① ⟦em là chị ấy⟧（我是她的話）→ Ⓐ ⟦em sẽ mua toà nhà đó⟧（我會買下那棟樓）| ② ⟦em ấy nói sự thật⟧（他說實話的話）→ Ⓑ ⟦chị ấy sẽ bỏ qua cho em ấy⟧（她就會原諒他）| ③ ⟦chị ấy đi bệnh viện sớm hơn⟧（她早點去醫院的話）→ Ⓒ ⟦tình trạng của chị ấy đã không xấu đi như thế này⟧（她的病情就不會惡化成這樣）
+範例（①–Ⓐ）：Ⓐ ⟦Giá em là chị ấy thì em sẽ mua toà nhà đó.⟧ —— 如果我是她，我就會買下那棟樓。 Ⓑ ⟦Đúng rồi. Anh cũng nghĩ như vậy.⟧ —— 對。我也是這麼想的。
+新單字：⟦bảo tàng⟧ 博物館 | ⟦ghé⟧ 順道去 | ⟦sự thật⟧ 事實 | ⟦bỏ qua⟧ 原諒、放過 | ⟦tình trạng⟧ 狀況
+=en
+Key expressions: ⟦đáng⟧ / ⟦giá A thì B⟧
+⟦đáng + verb⟧ means "worth ~ing".
+❶ ⟦Chuyện này không đáng lo, để em giải quyết ngay bây giờ.⟧ — This isn't worth worrying about – let me sort it out right now.
+❷ Ⓐ ⟦Chương trình biểu diễn nghệ thuật này thật tuyệt vời, anh nhỉ?⟧ — This performance is really wonderful, isn't it? Ⓑ ⟦Anh cũng thấy thế, rất đáng xem.⟧ — I think so too – it's well worth seeing.
+⟦giá A thì B⟧ expresses regret about something that didn't happen, or a hypothesis about something that can't happen: "if A (had been the case), B (would have happened)".
+❶ ⟦Tiếc quá! Giá biết trước là anh sang du lịch Việt Nam thì tôi đã ra sân bay đón anh.⟧ — What a pity! If I'd known you were coming to Vietnam, I'd have met you at the airport.
+❷ Ⓐ ⟦Anh ấy lại mới mở thêm cửa hàng nữa, phải không?⟧ — He's opened another shop, hasn't he? Ⓑ ⟦Vâng, nhưng ở xa trung tâm thành phố quá. Giá ở gần thì em sẽ thường xuyên ghé vào.⟧ — Yes, but it's too far from the city centre. If it were closer, I'd drop in often.
+Pattern practice 3 — match the parts, then talk as in the model: ① ⟦món bún⟧ (noodle dish) – Ⓐ ⟦ăn⟧ (eat) – ② ⟦bún bò Huế⟧ (Huế beef noodles) | ② ⟦bảo tàng⟧ (museum) – Ⓒ ⟦tham quan⟧ (visit) – ③ ⟦Bảo tàng Dân tộc học Việt Nam⟧ (Vietnam Museum of Ethnology) | ③ ⟦môn thể thao⟧ (sport) – Ⓑ ⟦học⟧ (learn) – ① ⟦bóng bàn⟧ (table tennis)
+Model (①–Ⓐ–②): Ⓐ ⟦Chị giới thiệu cho em món bún đáng ăn, được không?⟧ — Could you recommend a noodle dish worth trying? Ⓑ ⟦Bún bò Huế đáng ăn, em thử đi.⟧ — Bún bò Huế is worth eating – give it a try.
+Pattern practice 4 — match the parts, then talk as in the model: ① ⟦em là chị ấy⟧ (if I were her) → Ⓐ ⟦em sẽ mua toà nhà đó⟧ (I'd buy that building) | ② ⟦em ấy nói sự thật⟧ (if he told the truth) → Ⓑ ⟦chị ấy sẽ bỏ qua cho em ấy⟧ (she'd let him off) | ③ ⟦chị ấy đi bệnh viện sớm hơn⟧ (if she had gone to hospital sooner) → Ⓒ ⟦tình trạng của chị ấy đã không xấu đi như thế này⟧ (her condition wouldn't have got this bad)
+Model (①–Ⓐ): Ⓐ ⟦Giá em là chị ấy thì em sẽ mua toà nhà đó.⟧ — If I were her, I'd buy that building. Ⓑ ⟦Đúng rồi. Anh cũng nghĩ như vậy.⟧ — Exactly. I think so too.
+New words: ⟦bảo tàng⟧ museum | ⟦ghé⟧ to drop in | ⟦sự thật⟧ truth | ⟦bỏ qua⟧ to let off, overlook | ⟦tình trạng⟧ condition
+=fr
+Expressions clés : ⟦đáng⟧ / ⟦giá A thì B⟧
+⟦đáng + verbe⟧ signifie « qui vaut la peine de ~, digne de ~ ».
+❶ ⟦Chuyện này không đáng lo, để em giải quyết ngay bây giờ.⟧ — Cela ne vaut pas la peine de s'inquiéter, je m'en occupe tout de suite.
+❷ Ⓐ ⟦Chương trình biểu diễn nghệ thuật này thật tuyệt vời, anh nhỉ?⟧ — Ce spectacle est vraiment magnifique, n'est-ce pas ? Ⓑ ⟦Anh cũng thấy thế, rất đáng xem.⟧ — Je trouve aussi, il vaut vraiment la peine d'être vu.
+⟦giá A thì B⟧ exprime le regret d'une chose qui ne s'est pas réalisée ou l'hypothèse d'une chose irréalisable : « si A, (alors) B ».
+❶ ⟦Tiếc quá! Giá biết trước là anh sang du lịch Việt Nam thì tôi đã ra sân bay đón anh.⟧ — Dommage ! Si j'avais su que vous veniez au Vietnam, je serais allé vous chercher à l'aéroport.
+❷ Ⓐ ⟦Anh ấy lại mới mở thêm cửa hàng nữa, phải không?⟧ — Il vient encore d'ouvrir une nouvelle boutique, c'est ça ? Ⓑ ⟦Vâng, nhưng ở xa trung tâm thành phố quá. Giá ở gần thì em sẽ thường xuyên ghé vào.⟧ — Oui, mais elle est trop loin du centre-ville. Si elle était plus près, j'y passerais souvent.
+Exercice 3 — reliez les éléments, puis dialoguez comme dans le modèle : ① ⟦món bún⟧ (plat de vermicelles) – Ⓐ ⟦ăn⟧ (manger) – ② ⟦bún bò Huế⟧ (vermicelles au bœuf de Huế) | ② ⟦bảo tàng⟧ (musée) – Ⓒ ⟦tham quan⟧ (visiter) – ③ ⟦Bảo tàng Dân tộc học Việt Nam⟧ (Musée d'ethnographie du Vietnam) | ③ ⟦môn thể thao⟧ (sport) – Ⓑ ⟦học⟧ (apprendre) – ① ⟦bóng bàn⟧ (tennis de table)
+Modèle (①–Ⓐ–②) : Ⓐ ⟦Chị giới thiệu cho em món bún đáng ăn, được không?⟧ — Tu peux me conseiller un plat de vermicelles qui vaut le coup ? Ⓑ ⟦Bún bò Huế đáng ăn, em thử đi.⟧ — Le bún bò Huế vaut le détour, goûte-le.
+Exercice 4 — reliez les éléments, puis dialoguez comme dans le modèle : ① ⟦em là chị ấy⟧ (si j'étais elle) → Ⓐ ⟦em sẽ mua toà nhà đó⟧ (j'achèterais cet immeuble) | ② ⟦em ấy nói sự thật⟧ (s'il disait la vérité) → Ⓑ ⟦chị ấy sẽ bỏ qua cho em ấy⟧ (elle lui pardonnerait) | ③ ⟦chị ấy đi bệnh viện sớm hơn⟧ (si elle était allée plus tôt à l'hôpital) → Ⓒ ⟦tình trạng của chị ấy đã không xấu đi như thế này⟧ (son état ne se serait pas autant aggravé)
+Modèle (①–Ⓐ) : Ⓐ ⟦Giá em là chị ấy thì em sẽ mua toà nhà đó.⟧ — Si j'étais elle, j'achèterais cet immeuble. Ⓑ ⟦Đúng rồi. Anh cũng nghĩ như vậy.⟧ — Exactement. Je pense la même chose.
+Nouveaux mots : ⟦bảo tàng⟧ musée | ⟦ghé⟧ passer (quelque part) | ⟦sự thật⟧ vérité | ⟦bỏ qua⟧ passer l'éponge | ⟦tình trạng⟧ état
+=de
+Schlüsselausdrücke: ⟦đáng⟧ / ⟦giá A thì B⟧
+⟦đáng + Verb⟧ bedeutet „es lohnt sich, zu ~; ~ wert“.
+❶ ⟦Chuyện này không đáng lo, để em giải quyết ngay bây giờ.⟧ — Darüber muss man sich keine Sorgen machen, ich kläre das sofort.
+❷ Ⓐ ⟦Chương trình biểu diễn nghệ thuật này thật tuyệt vời, anh nhỉ?⟧ — Diese Aufführung ist wirklich großartig, oder? Ⓑ ⟦Anh cũng thấy thế, rất đáng xem.⟧ — Finde ich auch, sehr sehenswert.
+⟦giá A thì B⟧ drückt Bedauern über etwas Nicht-Eingetretenes oder eine Annahme über etwas Unmögliches aus: „wenn A (gewesen wäre), (dann) B“.
+❶ ⟦Tiếc quá! Giá biết trước là anh sang du lịch Việt Nam thì tôi đã ra sân bay đón anh.⟧ — Schade! Hätte ich vorher gewusst, dass Sie nach Vietnam kommen, hätte ich Sie am Flughafen abgeholt.
+❷ Ⓐ ⟦Anh ấy lại mới mở thêm cửa hàng nữa, phải không?⟧ — Er hat schon wieder einen Laden eröffnet, oder? Ⓑ ⟦Vâng, nhưng ở xa trung tâm thành phố quá. Giá ở gần thì em sẽ thường xuyên ghé vào.⟧ — Ja, aber er liegt zu weit vom Zentrum entfernt. Wäre er näher, würde ich oft vorbeischauen.
+Übung 3 — passende Teile verbinden, dann wie im Muster sprechen: ① ⟦món bún⟧ (Nudelgericht) – Ⓐ ⟦ăn⟧ (essen) – ② ⟦bún bò Huế⟧ (Rindfleischnudeln nach Huế-Art) | ② ⟦bảo tàng⟧ (Museum) – Ⓒ ⟦tham quan⟧ (besichtigen) – ③ ⟦Bảo tàng Dân tộc học Việt Nam⟧ (Vietnamesisches Museum für Völkerkunde) | ③ ⟦môn thể thao⟧ (Sportart) – Ⓑ ⟦học⟧ (lernen) – ① ⟦bóng bàn⟧ (Tischtennis)
+Muster (①–Ⓐ–②): Ⓐ ⟦Chị giới thiệu cho em món bún đáng ăn, được không?⟧ — Kannst du mir ein Nudelgericht empfehlen, das sich lohnt? Ⓑ ⟦Bún bò Huế đáng ăn, em thử đi.⟧ — Bún bò Huế lohnt sich, probier es mal.
+Übung 4 — passende Teile verbinden, dann wie im Muster sprechen: ① ⟦em là chị ấy⟧ (wenn ich sie wäre) → Ⓐ ⟦em sẽ mua toà nhà đó⟧ (würde ich das Gebäude kaufen) | ② ⟦em ấy nói sự thật⟧ (wenn er die Wahrheit sagte) → Ⓑ ⟦chị ấy sẽ bỏ qua cho em ấy⟧ (würde sie es ihm nachsehen) | ③ ⟦chị ấy đi bệnh viện sớm hơn⟧ (wäre sie früher ins Krankenhaus gegangen) → Ⓒ ⟦tình trạng của chị ấy đã không xấu đi như thế này⟧ (hätte sich ihr Zustand nicht so verschlechtert)
+Muster (①–Ⓐ): Ⓐ ⟦Giá em là chị ấy thì em sẽ mua toà nhà đó.⟧ — Wenn ich sie wäre, würde ich das Gebäude kaufen. Ⓑ ⟦Đúng rồi. Anh cũng nghĩ như vậy.⟧ — Genau. Das denke ich auch.
+Neue Wörter: ⟦bảo tàng⟧ Museum | ⟦ghé⟧ vorbeischauen | ⟦sự thật⟧ Wahrheit | ⟦bỏ qua⟧ durchgehen lassen, verzeihen | ⟦tình trạng⟧ Zustand
+=hu
+Kulcskifejezések: ⟦đáng⟧ / ⟦giá A thì B⟧
+Az ⟦đáng + ige⟧ jelentése „érdemes ~, méltó arra, hogy ~”.
+❶ ⟦Chuyện này không đáng lo, để em giải quyết ngay bây giờ.⟧ — Emiatt nem érdemes aggódni, rögtön elintézem.
+❷ Ⓐ ⟦Chương trình biểu diễn nghệ thuật này thật tuyệt vời, anh nhỉ?⟧ — Ez az előadás igazán nagyszerű, ugye? Ⓑ ⟦Anh cũng thấy thế, rất đáng xem.⟧ — Én is így látom, nagyon érdemes megnézni.
+A ⟦giá A thì B⟧ meg nem valósult dolog miatti sajnálkozást vagy megvalósíthatatlan dologra vonatkozó feltevést fejez ki: „ha A (lett volna), (akkor) B”.
+❶ ⟦Tiếc quá! Giá biết trước là anh sang du lịch Việt Nam thì tôi đã ra sân bay đón anh.⟧ — De kár! Ha előre tudtam volna, hogy Vietnamba jön, kimentem volna ön elé a repülőtérre.
+❷ Ⓐ ⟦Anh ấy lại mới mở thêm cửa hàng nữa, phải không?⟧ — Megint nyitott egy új boltot, ugye? Ⓑ ⟦Vâng, nhưng ở xa trung tâm thành phố quá. Giá ở gần thì em sẽ thường xuyên ghé vào.⟧ — Igen, de túl messze van a belvárostól. Ha közelebb lenne, gyakran benéznék.
+3. gyakorlat — kösse össze a megfelelő részeket, majd beszélgessen a minta szerint: ① ⟦món bún⟧ (tésztaétel) – Ⓐ ⟦ăn⟧ (enni) – ② ⟦bún bò Huế⟧ (huế-i marhahúsos tészta) | ② ⟦bảo tàng⟧ (múzeum) – Ⓒ ⟦tham quan⟧ (megtekinteni) – ③ ⟦Bảo tàng Dân tộc học Việt Nam⟧ (Vietnami Néprajzi Múzeum) | ③ ⟦môn thể thao⟧ (sportág) – Ⓑ ⟦học⟧ (tanulni) – ① ⟦bóng bàn⟧ (asztalitenisz)
+Minta (①–Ⓐ–②): Ⓐ ⟦Chị giới thiệu cho em món bún đáng ăn, được không?⟧ — Tudnál ajánlani egy tésztaételt, amit érdemes megkóstolni? Ⓑ ⟦Bún bò Huế đáng ăn, em thử đi.⟧ — A bún bò Huế-t érdemes megkóstolni, próbáld ki.
+4. gyakorlat — kösse össze a megfelelő részeket, majd beszélgessen a minta szerint: ① ⟦em là chị ấy⟧ (ha én lennék ő) → Ⓐ ⟦em sẽ mua toà nhà đó⟧ (megvenném azt az épületet) | ② ⟦em ấy nói sự thật⟧ (ha igazat mondana) → Ⓑ ⟦chị ấy sẽ bỏ qua cho em ấy⟧ (megbocsátana neki) | ③ ⟦chị ấy đi bệnh viện sớm hơn⟧ (ha korábban ment volna kórházba) → Ⓒ ⟦tình trạng của chị ấy đã không xấu đi như thế này⟧ (nem romlott volna így az állapota)
+Minta (①–Ⓐ): Ⓐ ⟦Giá em là chị ấy thì em sẽ mua toà nhà đó.⟧ — Ha én lennék ő, megvenném azt az épületet. Ⓑ ⟦Đúng rồi. Anh cũng nghĩ như vậy.⟧ — Pontosan. Én is így gondolom.
+Új szavak: ⟦bảo tàng⟧ múzeum | ⟦ghé⟧ beugrani | ⟦sự thật⟧ igazság | ⟦bỏ qua⟧ elnézni, megbocsátani | ⟦tình trạng⟧ állapot
+=id
+Ungkapan kunci: ⟦đáng⟧ / ⟦giá A thì B⟧
+⟦đáng + verba⟧ berarti "layak ~, pantas ~".
+❶ ⟦Chuyện này không đáng lo, để em giải quyết ngay bây giờ.⟧ — Hal ini tidak perlu dikhawatirkan, biar saya selesaikan sekarang juga.
+❷ Ⓐ ⟦Chương trình biểu diễn nghệ thuật này thật tuyệt vời, anh nhỉ?⟧ — Pertunjukan seni ini benar-benar luar biasa, ya? Ⓑ ⟦Anh cũng thấy thế, rất đáng xem.⟧ — Aku juga merasa begitu, sangat layak ditonton.
+⟦giá A thì B⟧ menyatakan penyesalan atas hal yang tidak terjadi atau pengandaian atas hal yang tidak mungkin terjadi: "seandainya A, (tentu) B".
+❶ ⟦Tiếc quá! Giá biết trước là anh sang du lịch Việt Nam thì tôi đã ra sân bay đón anh.⟧ — Sayang sekali! Seandainya saya tahu sebelumnya Anda berwisata ke Vietnam, saya pasti menjemput Anda di bandara.
+❷ Ⓐ ⟦Anh ấy lại mới mở thêm cửa hàng nữa, phải không?⟧ — Dia baru membuka toko lagi, ya? Ⓑ ⟦Vâng, nhưng ở xa trung tâm thành phố quá. Giá ở gần thì em sẽ thường xuyên ghé vào.⟧ — Iya, tapi terlalu jauh dari pusat kota. Seandainya dekat, saya pasti sering mampir.
+Latihan pola 3 — hubungkan bagian yang cocok, lalu bercakaplah seperti contoh: ① ⟦món bún⟧ (hidangan bihun) – Ⓐ ⟦ăn⟧ (makan) – ② ⟦bún bò Huế⟧ (bihun sapi khas Huế) | ② ⟦bảo tàng⟧ (museum) – Ⓒ ⟦tham quan⟧ (berkunjung) – ③ ⟦Bảo tàng Dân tộc học Việt Nam⟧ (Museum Etnologi Vietnam) | ③ ⟦môn thể thao⟧ (cabang olahraga) – Ⓑ ⟦học⟧ (belajar) – ① ⟦bóng bàn⟧ (tenis meja)
+Contoh (①–Ⓐ–②): Ⓐ ⟦Chị giới thiệu cho em món bún đáng ăn, được không?⟧ — Bisakah Kakak merekomendasikan hidangan bihun yang layak dicoba? Ⓑ ⟦Bún bò Huế đáng ăn, em thử đi.⟧ — Bún bò Huế layak dicoba, cobalah.
+Latihan pola 4 — hubungkan bagian yang cocok, lalu bercakaplah seperti contoh: ① ⟦em là chị ấy⟧ (seandainya aku jadi dia) → Ⓐ ⟦em sẽ mua toà nhà đó⟧ (aku akan membeli gedung itu) | ② ⟦em ấy nói sự thật⟧ (seandainya dia berkata jujur) → Ⓑ ⟦chị ấy sẽ bỏ qua cho em ấy⟧ (dia akan memaafkannya) | ③ ⟦chị ấy đi bệnh viện sớm hơn⟧ (seandainya dia ke rumah sakit lebih awal) → Ⓒ ⟦tình trạng của chị ấy đã không xấu đi như thế này⟧ (kondisinya tidak akan memburuk seperti ini)
+Contoh (①–Ⓐ): Ⓐ ⟦Giá em là chị ấy thì em sẽ mua toà nhà đó.⟧ — Seandainya aku jadi dia, aku akan membeli gedung itu. Ⓑ ⟦Đúng rồi. Anh cũng nghĩ như vậy.⟧ — Betul. Aku juga berpikir begitu.
+Kosakata baru: ⟦bảo tàng⟧ museum | ⟦ghé⟧ mampir | ⟦sự thật⟧ kebenaran | ⟦bỏ qua⟧ memaafkan, melewatkan | ⟦tình trạng⟧ kondisi
+=ja
+核心表現：⟦đáng⟧ / ⟦giá A thì B⟧
+⟦đáng + 動詞⟧ は「～するに値する、～する価値がある」という意味を表します。
+❶ ⟦Chuyện này không đáng lo, để em giải quyết ngay bây giờ.⟧ — このことは心配するほどのことではありません。私が今すぐ解決します。
+❷ Ⓐ ⟦Chương trình biểu diễn nghệ thuật này thật tuyệt vời, anh nhỉ?⟧ — この芸術公演は本当にすばらしいですね。 Ⓑ ⟦Anh cũng thấy thế, rất đáng xem.⟧ — 僕もそう思う。とても見る価値があるよ。
+⟦giá A thì B⟧ は、実現しなかったことへの残念な気持ちや、実現し得ないことへの仮定を表す表現で、「もしAだったらBしただろう / もしAならBするだろう」などの意味を表します。
+❶ ⟦Tiếc quá! Giá biết trước là anh sang du lịch Việt Nam thì tôi đã ra sân bay đón anh.⟧ — 残念です！あなたがベトナムに旅行に来ると前もって知っていたら、空港まで迎えに行ったのに。
+❷ Ⓐ ⟦Anh ấy lại mới mở thêm cửa hàng nữa, phải không?⟧ — 彼はまたお店を開いたんだよね？ Ⓑ ⟦Vâng, nhưng ở xa trung tâm thành phố quá. Giá ở gần thì em sẽ thường xuyên ghé vào.⟧ — はい、でも市の中心から遠すぎます。もし近かったらよく立ち寄るんですけど。
+文型練習3 — 適切な内容を結び、例のように会話してみましょう：① ⟦món bún⟧（ブン料理）– Ⓐ ⟦ăn⟧（食べる）– ② ⟦bún bò Huế⟧（ブンボーフエ）| ② ⟦bảo tàng⟧（博物館）– Ⓒ ⟦tham quan⟧（見学する）– ③ ⟦Bảo tàng Dân tộc học Việt Nam⟧（ベトナム民族学博物館）| ③ ⟦môn thể thao⟧（スポーツ）– Ⓑ ⟦học⟧（習う）– ① ⟦bóng bàn⟧（卓球）
+例（①–Ⓐ–②）：Ⓐ ⟦Chị giới thiệu cho em món bún đáng ăn, được không?⟧ — 食べる価値のあるブン料理を紹介してくれませんか。 Ⓑ ⟦Bún bò Huế đáng ăn, em thử đi.⟧ — ブンボーフエは食べる価値があるよ。食べてみて。
+文型練習4 — 適切な内容を結び、例のように会話してみましょう：① ⟦em là chị ấy⟧（私が彼女なら）→ Ⓐ ⟦em sẽ mua toà nhà đó⟧（あの建物を買う）| ② ⟦em ấy nói sự thật⟧（彼が本当のことを言えば）→ Ⓑ ⟦chị ấy sẽ bỏ qua cho em ấy⟧（彼女は彼を許すだろう）| ③ ⟦chị ấy đi bệnh viện sớm hơn⟧（彼女がもっと早く病院に行っていたら）→ Ⓒ ⟦tình trạng của chị ấy đã không xấu đi như thế này⟧（彼女の状態はこんなに悪化しなかっただろう）
+例（①–Ⓐ）：Ⓐ ⟦Giá em là chị ấy thì em sẽ mua toà nhà đó.⟧ — もし私が彼女だったら、あの建物を買います。 Ⓑ ⟦Đúng rồi. Anh cũng nghĩ như vậy.⟧ — その通り。僕もそう思うよ。
+新出単語：⟦bảo tàng⟧ 博物館 | ⟦ghé⟧ 立ち寄る | ⟦sự thật⟧ 事実 | ⟦bỏ qua⟧ 大目に見る、見逃す | ⟦tình trạng⟧ 状態
+=pl
+Kluczowe wyrażenia: ⟦đáng⟧ / ⟦giá A thì B⟧
+⟦đáng + czasownik⟧ znaczy „warto ~, godny ~”.
+❶ ⟦Chuyện này không đáng lo, để em giải quyết ngay bây giờ.⟧ — Nie ma się czym martwić, zaraz to załatwię.
+❷ Ⓐ ⟦Chương trình biểu diễn nghệ thuật này thật tuyệt vời, anh nhỉ?⟧ — Ten występ jest naprawdę wspaniały, prawda? Ⓑ ⟦Anh cũng thấy thế, rất đáng xem.⟧ — Też tak uważam, naprawdę warto go zobaczyć.
+⟦giá A thì B⟧ wyraża żal z powodu czegoś, co się nie wydarzyło, lub przypuszczenie dotyczące czegoś, co nie może się wydarzyć: „gdyby A, (to) B”.
+❶ ⟦Tiếc quá! Giá biết trước là anh sang du lịch Việt Nam thì tôi đã ra sân bay đón anh.⟧ — Szkoda! Gdybym wiedział wcześniej, że przyjeżdża pan do Wietnamu, wyjechałbym po pana na lotnisko.
+❷ Ⓐ ⟦Anh ấy lại mới mở thêm cửa hàng nữa, phải không?⟧ — Znowu otworzył nowy sklep, prawda? Ⓑ ⟦Vâng, nhưng ở xa trung tâm thành phố quá. Giá ở gần thì em sẽ thường xuyên ghé vào.⟧ — Tak, ale jest za daleko od centrum. Gdyby był bliżej, często bym tam zaglądała.
+Ćwiczenie 3 — połącz pasujące elementy i rozmawiaj jak we wzorze: ① ⟦món bún⟧ (danie z makaronem) – Ⓐ ⟦ăn⟧ (jeść) – ② ⟦bún bò Huế⟧ (makaron z wołowiną po huejsku) | ② ⟦bảo tàng⟧ (muzeum) – Ⓒ ⟦tham quan⟧ (zwiedzać) – ③ ⟦Bảo tàng Dân tộc học Việt Nam⟧ (Wietnamskie Muzeum Etnograficzne) | ③ ⟦môn thể thao⟧ (dyscyplina sportu) – Ⓑ ⟦học⟧ (uczyć się) – ① ⟦bóng bàn⟧ (tenis stołowy)
+Wzór (①–Ⓐ–②): Ⓐ ⟦Chị giới thiệu cho em món bún đáng ăn, được không?⟧ — Możesz mi polecić danie z makaronem, które warto zjeść? Ⓑ ⟦Bún bò Huế đáng ăn, em thử đi.⟧ — Warto zjeść bún bò Huế, spróbuj.
+Ćwiczenie 4 — połącz pasujące elementy i rozmawiaj jak we wzorze: ① ⟦em là chị ấy⟧ (gdybym była nią) → Ⓐ ⟦em sẽ mua toà nhà đó⟧ (kupiłabym ten budynek) | ② ⟦em ấy nói sự thật⟧ (gdyby powiedział prawdę) → Ⓑ ⟦chị ấy sẽ bỏ qua cho em ấy⟧ (wybaczyłaby mu) | ③ ⟦chị ấy đi bệnh viện sớm hơn⟧ (gdyby wcześniej poszła do szpitala) → Ⓒ ⟦tình trạng của chị ấy đã không xấu đi như thế này⟧ (jej stan by się tak nie pogorszył)
+Wzór (①–Ⓐ): Ⓐ ⟦Giá em là chị ấy thì em sẽ mua toà nhà đó.⟧ — Gdybym była nią, kupiłabym ten budynek. Ⓑ ⟦Đúng rồi. Anh cũng nghĩ như vậy.⟧ — Właśnie. Też tak myślę.
+Nowe słówka: ⟦bảo tàng⟧ muzeum | ⟦ghé⟧ wpaść, zajrzeć | ⟦sự thật⟧ prawda | ⟦bỏ qua⟧ darować, przymknąć oko | ⟦tình trạng⟧ stan

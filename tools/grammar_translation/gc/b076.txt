@@ -1,0 +1,132 @@
+@@ pdf-grammar-455f3873d2e25150#0
+=cs
+Gramatický výklad
+⟦theo⟧: „podle, dle“ – vyjadřuje, že výpověď vychází z určité informace či názoru.
+⟦Theo tư liệu lịch sử, đúc đồng đã phát triển rực rỡ ở Việt Nam cách đây khoảng ba nghìn năm.⟧ → Podle historických pramenů zažilo odlévání bronzu ve Vietnamu skvělý rozkvět asi před třemi tisíci lety. · ⟦Theo các nghệ nhân đúc đồng, mỗi nghề đều có một số kĩ thuật riêng.⟧ → Podle mistrů odlévačů bronzu má každé řemeslo své vlastní techniky. · ⟦Theo chị, chúng ta có nên đi tham quan làng nghề vào chủ nhật này không?⟧ → Myslíš, že bychom měli tuto neděli navštívit řemeslnou vesnici? · ⟦Theo báo chí nước ngoài, Việt Nam là nơi thu hút được rất nhiều khách du lịch.⟧ → Podle zahraničního tisku je Vietnam místem, které láká velmi mnoho turistů.
+⟦mỗi⟧: „každý“ – označuje jednotlivé součásti či prvky tvořící stejný druh.
+⟦Theo các nghệ nhân đúc đồng, mỗi nghề có một số kĩ thuật riêng.⟧ → Podle mistrů odlévačů má každé řemeslo své vlastní techniky. = ⟦Theo các nghệ nhân đúc đồng, nghề nào cũng có một số kĩ thuật riêng.⟧ → Podle mistrů odlévačů má jakékoli řemeslo své vlastní techniky.
+⟦Mỗi năm tôi về thăm quê một lần.⟧ → Každý rok jednou jedu navštívit rodný kraj. = ⟦Năm nào tôi cũng về thăm quê một lần.⟧ → Každý rok alespoň jednou navštívím rodný kraj.
+=zh_cn
+语法解说
+⟦theo⟧：意为“根据、按照”，表示是依据某种信息或意见进行陈述。
+⟦Theo tư liệu lịch sử, đúc đồng đã phát triển rực rỡ ở Việt Nam cách đây khoảng ba nghìn năm.⟧ → 根据历史资料，大约三千年前越南的青铜铸造就已辉煌发展。 · ⟦Theo các nghệ nhân đúc đồng, mỗi nghề đều có một số kĩ thuật riêng.⟧ → 据铸铜匠人说，每种手艺都有一些独特的技术。 · ⟦Theo chị, chúng ta có nên đi tham quan làng nghề vào chủ nhật này không?⟧ → 依你看，我们这个星期天该不该去参观手工艺村？ · ⟦Theo báo chí nước ngoài, Việt Nam là nơi thu hút được rất nhiều khách du lịch.⟧ → 据外国报刊报道，越南是吸引大量游客的地方。
+⟦mỗi⟧：意为“每个、各个”，用于表示构成同一类别的各个成分、要素。
+⟦Theo các nghệ nhân đúc đồng, mỗi nghề có một số kĩ thuật riêng.⟧ → 据铸铜匠人说，每种手艺都有一些独特的技术。 = ⟦Theo các nghệ nhân đúc đồng, nghề nào cũng có một số kĩ thuật riêng.⟧ → 据铸铜匠人说，无论哪种手艺都有一些独特的技术。
+⟦Mỗi năm tôi về thăm quê một lần.⟧ → 我每年回一次老家。 = ⟦Năm nào tôi cũng về thăm quê một lần.⟧ → 我哪一年都会回一次老家。
+=zh
+文法解說
+⟦theo⟧：意為「根據、依照」，表示是依據某種資訊或意見進行陳述。
+⟦Theo tư liệu lịch sử, đúc đồng đã phát triển rực rỡ ở Việt Nam cách đây khoảng ba nghìn năm.⟧ → 根據歷史資料，大約三千年前越南的青銅鑄造就已輝煌發展。 · ⟦Theo các nghệ nhân đúc đồng, mỗi nghề đều có một số kĩ thuật riêng.⟧ → 據鑄銅匠人說，每種手藝都有一些獨特的技術。 · ⟦Theo chị, chúng ta có nên đi tham quan làng nghề vào chủ nhật này không?⟧ → 依你看，我們這個星期天該不該去參觀手工藝村？ · ⟦Theo báo chí nước ngoài, Việt Nam là nơi thu hút được rất nhiều khách du lịch.⟧ → 據外國報刊報導，越南是吸引大量遊客的地方。
+⟦mỗi⟧：意為「每個、各個」，用於表示構成同一類別的各個成分、要素。
+⟦Theo các nghệ nhân đúc đồng, mỗi nghề có một số kĩ thuật riêng.⟧ → 據鑄銅匠人說，每種手藝都有一些獨特的技術。 = ⟦Theo các nghệ nhân đúc đồng, nghề nào cũng có một số kĩ thuật riêng.⟧ → 據鑄銅匠人說，無論哪種手藝都有一些獨特的技術。
+⟦Mỗi năm tôi về thăm quê một lần.⟧ → 我每年回一次老家。 = ⟦Năm nào tôi cũng về thăm quê một lần.⟧ → 我哪一年都會回一次老家。
+=en
+Grammar notes
+⟦theo⟧: "according to" – shows that a statement is based on certain information or an opinion.
+⟦Theo tư liệu lịch sử, đúc đồng đã phát triển rực rỡ ở Việt Nam cách đây khoảng ba nghìn năm.⟧ → According to historical records, bronze casting flourished brilliantly in Vietnam about three thousand years ago. · ⟦Theo các nghệ nhân đúc đồng, mỗi nghề đều có một số kĩ thuật riêng.⟧ → According to bronze-casting artisans, every craft has its own techniques. · ⟦Theo chị, chúng ta có nên đi tham quan làng nghề vào chủ nhật này không?⟧ → In your opinion, should we visit the craft village this Sunday? · ⟦Theo báo chí nước ngoài, Việt Nam là nơi thu hút được rất nhiều khách du lịch.⟧ → According to the foreign press, Vietnam is a place that attracts a great many tourists.
+⟦mỗi⟧: "each, every" – refers to the individual components or elements making up the same kind.
+⟦Theo các nghệ nhân đúc đồng, mỗi nghề có một số kĩ thuật riêng.⟧ → According to bronze-casting artisans, each craft has its own techniques. = ⟦Theo các nghệ nhân đúc đồng, nghề nào cũng có một số kĩ thuật riêng.⟧ → According to bronze-casting artisans, every single craft has its own techniques.
+⟦Mỗi năm tôi về thăm quê một lần.⟧ → Every year I go back to visit my hometown once. = ⟦Năm nào tôi cũng về thăm quê một lần.⟧ → Whatever the year, I go back to my hometown once.
+=fr
+Notes de grammaire
+⟦theo⟧ : « selon, d'après » – indique qu'une affirmation se fonde sur une information ou un avis.
+⟦Theo tư liệu lịch sử, đúc đồng đã phát triển rực rỡ ở Việt Nam cách đây khoảng ba nghìn năm.⟧ → Selon les sources historiques, la fonte du bronze a connu un essor brillant au Vietnam il y a environ trois mille ans. · ⟦Theo các nghệ nhân đúc đồng, mỗi nghề đều có một số kĩ thuật riêng.⟧ → D'après les artisans fondeurs de bronze, chaque métier a ses propres techniques. · ⟦Theo chị, chúng ta có nên đi tham quan làng nghề vào chủ nhật này không?⟧ → À ton avis, devrions-nous visiter le village artisanal ce dimanche ? · ⟦Theo báo chí nước ngoài, Việt Nam là nơi thu hút được rất nhiều khách du lịch.⟧ → Selon la presse étrangère, le Vietnam attire énormément de touristes.
+⟦mỗi⟧ : « chaque » – désigne les composantes ou éléments individuels d'un même ensemble.
+⟦Theo các nghệ nhân đúc đồng, mỗi nghề có một số kĩ thuật riêng.⟧ → D'après les artisans fondeurs, chaque métier a ses propres techniques. = ⟦Theo các nghệ nhân đúc đồng, nghề nào cũng có một số kĩ thuật riêng.⟧ → D'après les artisans fondeurs, n'importe quel métier a ses propres techniques.
+⟦Mỗi năm tôi về thăm quê một lần.⟧ → Chaque année, je retourne une fois dans mon village natal. = ⟦Năm nào tôi cũng về thăm quê một lần.⟧ → Toutes les années sans exception, je retourne une fois dans mon village natal.
+=de
+Grammatikerläuterungen
+⟦theo⟧: „laut, nach, zufolge“ – zeigt, dass sich eine Aussage auf bestimmte Informationen oder Meinungen stützt.
+⟦Theo tư liệu lịch sử, đúc đồng đã phát triển rực rỡ ở Việt Nam cách đây khoảng ba nghìn năm.⟧ → Historischen Quellen zufolge erlebte der Bronzeguss in Vietnam vor etwa dreitausend Jahren eine glanzvolle Blüte. · ⟦Theo các nghệ nhân đúc đồng, mỗi nghề đều có một số kĩ thuật riêng.⟧ → Laut den Bronzegießern hat jedes Handwerk seine eigenen Techniken. · ⟦Theo chị, chúng ta có nên đi tham quan làng nghề vào chủ nhật này không?⟧ → Meinst du, wir sollten diesen Sonntag das Handwerksdorf besuchen? · ⟦Theo báo chí nước ngoài, Việt Nam là nơi thu hút được rất nhiều khách du lịch.⟧ → Laut ausländischer Presse zieht Vietnam sehr viele Touristen an.
+⟦mỗi⟧: „jeder, jede, jedes“ – bezeichnet die einzelnen Bestandteile bzw. Elemente einer gleichen Art.
+⟦Theo các nghệ nhân đúc đồng, mỗi nghề có một số kĩ thuật riêng.⟧ → Laut den Bronzegießern hat jedes Handwerk seine eigenen Techniken. = ⟦Theo các nghệ nhân đúc đồng, nghề nào cũng có một số kĩ thuật riêng.⟧ → Laut den Bronzegießern hat jedes beliebige Handwerk seine eigenen Techniken.
+⟦Mỗi năm tôi về thăm quê một lần.⟧ → Jedes Jahr besuche ich einmal meine Heimat. = ⟦Năm nào tôi cũng về thăm quê một lần.⟧ → In jedem Jahr fahre ich einmal in meine Heimat.
+=hu
+Nyelvtani magyarázat
+⟦theo⟧: „szerint” – azt jelzi, hogy a kijelentés valamilyen információn vagy véleményen alapul.
+⟦Theo tư liệu lịch sử, đúc đồng đã phát triển rực rỡ ở Việt Nam cách đây khoảng ba nghìn năm.⟧ → A történelmi források szerint a bronzöntés Vietnámban mintegy háromezer éve ragyogó virágzásnak indult. · ⟦Theo các nghệ nhân đúc đồng, mỗi nghề đều có một số kĩ thuật riêng.⟧ → A bronzöntő mesterek szerint minden mesterségnek megvannak a saját technikái. · ⟦Theo chị, chúng ta có nên đi tham quan làng nghề vào chủ nhật này không?⟧ → Szerinted elmenjünk ezen a vasárnapon megnézni a kézműves falut? · ⟦Theo báo chí nước ngoài, Việt Nam là nơi thu hút được rất nhiều khách du lịch.⟧ → A külföldi sajtó szerint Vietnám nagyon sok turistát vonz.
+⟦mỗi⟧: „minden, mindegyik” – az azonos fajtát alkotó egyes összetevőket, elemeket jelöli.
+⟦Theo các nghệ nhân đúc đồng, mỗi nghề có một số kĩ thuật riêng.⟧ → A bronzöntő mesterek szerint minden mesterségnek saját technikái vannak. = ⟦Theo các nghệ nhân đúc đồng, nghề nào cũng có một số kĩ thuật riêng.⟧ → A bronzöntő mesterek szerint bármely mesterségnek saját technikái vannak.
+⟦Mỗi năm tôi về thăm quê một lần.⟧ → Minden évben egyszer hazalátogatok. = ⟦Năm nào tôi cũng về thăm quê một lần.⟧ → Bármelyik évben egyszer hazalátogatok.
+=id
+Penjelasan tata bahasa
+⟦theo⟧: "menurut" – menunjukkan bahwa pernyataan didasarkan pada suatu informasi atau pendapat.
+⟦Theo tư liệu lịch sử, đúc đồng đã phát triển rực rỡ ở Việt Nam cách đây khoảng ba nghìn năm.⟧ → Menurut catatan sejarah, pengecoran perunggu telah berkembang pesat di Vietnam sekitar tiga ribu tahun yang lalu. · ⟦Theo các nghệ nhân đúc đồng, mỗi nghề đều có một số kĩ thuật riêng.⟧ → Menurut para perajin cor perunggu, setiap kerajinan memiliki beberapa teknik tersendiri. · ⟦Theo chị, chúng ta có nên đi tham quan làng nghề vào chủ nhật này không?⟧ → Menurutmu, apakah kita sebaiknya mengunjungi desa kerajinan hari Minggu ini? · ⟦Theo báo chí nước ngoài, Việt Nam là nơi thu hút được rất nhiều khách du lịch.⟧ → Menurut media asing, Vietnam adalah tempat yang menarik sangat banyak wisatawan.
+⟦mỗi⟧: "setiap, tiap-tiap" – menunjukkan komponen atau unsur individual yang membentuk satu jenis yang sama.
+⟦Theo các nghệ nhân đúc đồng, mỗi nghề có một số kĩ thuật riêng.⟧ → Menurut para perajin cor perunggu, setiap kerajinan memiliki teknik tersendiri. = ⟦Theo các nghệ nhân đúc đồng, nghề nào cũng có một số kĩ thuật riêng.⟧ → Menurut para perajin cor perunggu, kerajinan apa pun memiliki teknik tersendiri.
+⟦Mỗi năm tôi về thăm quê một lần.⟧ → Setiap tahun saya pulang kampung sekali. = ⟦Năm nào tôi cũng về thăm quê một lần.⟧ → Tahun berapa pun saya selalu pulang kampung sekali.
+=ja
+文法解説
+⟦theo⟧：「～によると」という意味で、ある情報や意見に基づいて述べていることを表すために使います。
+⟦Theo tư liệu lịch sử, đúc đồng đã phát triển rực rỡ ở Việt Nam cách đây khoảng ba nghìn năm.⟧ → 歴史史料によると、青銅鋳造は約3千年前からベトナムで目覚ましく発展した。 · ⟦Theo các nghệ nhân đúc đồng, mỗi nghề đều có một số kĩ thuật riêng.⟧ → 青銅鋳造の職人たちによると、それぞれの工芸ごとに独自の技術がいくつかあるという。 · ⟦Theo chị, chúng ta có nên đi tham quan làng nghề vào chủ nhật này không?⟧ → あなたの考えでは、私たちは今度の日曜日に伝統工芸村を訪ねたほうがいいですか。 · ⟦Theo báo chí nước ngoài, Việt Nam là nơi thu hút được rất nhiều khách du lịch.⟧ → 外国の報道によると、ベトナムはとても多くの観光客を引きつける場所です。
+⟦mỗi⟧：「それぞれの、各～」という意味で、同じ種類を構成する個々の成分・要素を表すために使います。
+⟦Theo các nghệ nhân đúc đồng, mỗi nghề có một số kĩ thuật riêng.⟧ → 青銅鋳造の職人たちによると、それぞれの工芸ごとに独自の技術がいくつかあるという。 = ⟦Theo các nghệ nhân đúc đồng, nghề nào cũng có một số kĩ thuật riêng.⟧ → 青銅鋳造の職人たちによると、どの工芸にも独自の技術がいくつかあるという。
+⟦Mỗi năm tôi về thăm quê một lần.⟧ → 毎年、私は一度故郷を訪れる。 = ⟦Năm nào tôi cũng về thăm quê một lần.⟧ → どの年も、私は一度は故郷を訪れる。
+=pl
+Objaśnienia gramatyczne
+⟦theo⟧: „według, zdaniem” – wskazuje, że wypowiedź opiera się na jakiejś informacji lub opinii.
+⟦Theo tư liệu lịch sử, đúc đồng đã phát triển rực rỡ ở Việt Nam cách đây khoảng ba nghìn năm.⟧ → Według źródeł historycznych odlewnictwo brązu rozkwitło w Wietnamie około trzech tysięcy lat temu. · ⟦Theo các nghệ nhân đúc đồng, mỗi nghề đều có một số kĩ thuật riêng.⟧ → Według mistrzów odlewników każde rzemiosło ma własne techniki. · ⟦Theo chị, chúng ta có nên đi tham quan làng nghề vào chủ nhật này không?⟧ → Twoim zdaniem powinniśmy w tę niedzielę zwiedzić wieś rzemieślniczą? · ⟦Theo báo chí nước ngoài, Việt Nam là nơi thu hút được rất nhiều khách du lịch.⟧ → Według prasy zagranicznej Wietnam przyciąga bardzo wielu turystów.
+⟦mỗi⟧: „każdy” – oznacza poszczególne składniki lub elementy tworzące ten sam rodzaj.
+⟦Theo các nghệ nhân đúc đồng, mỗi nghề có một số kĩ thuật riêng.⟧ → Według mistrzów odlewników każde rzemiosło ma własne techniki. = ⟦Theo các nghệ nhân đúc đồng, nghề nào cũng có một số kĩ thuật riêng.⟧ → Według mistrzów odlewników jakiekolwiek rzemiosło ma własne techniki.
+⟦Mỗi năm tôi về thăm quê một lần.⟧ → Każdego roku raz odwiedzam rodzinne strony. = ⟦Năm nào tôi cũng về thăm quê một lần.⟧ → W każdym roku raz jeżdżę w rodzinne strony.
+@@ pdf-grammar-64e7239c6c4e6099#0
+=cs
+Gramatický výklad
+⟦vì sao⟧: „proč, z jakého důvodu“ – ptá se na příčinu určitého výsledku.
+⟦Vì sao làng tranh này lại nổi tiếng, em nhỉ?⟧ → Proč je vlastně tahle vesnice lidových obrazů tak slavná? · ⟦Vì sao anh lại không đi thăm làng nghề đúc đồng?⟧ → Proč nejedeš navštívit vesnici odlévačů bronzu? · ⟦Vì sao chị ấy lại biết chuyện tôi nghỉ học?⟧ → Jak to, že ví o tom, že jsem přerušil studium? · ⟦Vì sao hôm nay chị ấy không đến trường?⟧ → Proč dnes nepřišla do školy? · ⟦Vì sao ở đây các quán ăn lại vắng khách thế?⟧ → Proč jsou tady restaurace tak prázdné?
+⟦trước khi⟧: „před tím, než; dříve než“ – vyjadřuje, že určitá činnost proběhne před jinou činností.
+⟦Trước khi đi thăm làng nghề, anh Park đã gặp Lan để trò truyện.⟧ → Než se Park vydal do řemeslné vesnice, sešel se s Lan, aby si popovídali. (návštěva vesnice proběhne až po setkání s Lan) · ⟦Trước khi về nước, tôi sẽ đi thăm một số làng nghề truyền thống ở Việt Nam.⟧ → Než se vrátím domů, navštívím několik tradičních řemeslných vesnic ve Vietnamu. (návrat domů proběhne až po návštěvě vesnic) · ⟦Trước khi nghỉ hè, chúng tôi đã tổ chức một buổi văn nghệ rất vui vẻ.⟧ → Před letními prázdninami jsme uspořádali velmi veselý kulturní večer. (prázdniny začnou až po kulturním večeru) · ⟦Trước khi đi tham quan, anh gọi điện cho tôi nhé!⟧ → Než vyrazíš na exkurzi, zavolej mi, ano! (exkurze proběhne až po telefonátu)
+=zh_cn
+语法解说
+⟦vì sao⟧：意为“为什么”，用于询问某一结果的原因。
+⟦Vì sao làng tranh này lại nổi tiếng, em nhỉ?⟧ → 为什么这个年画村这么有名呢？ · ⟦Vì sao anh lại không đi thăm làng nghề đúc đồng?⟧ → 你为什么不去参观铸铜村呢？ · ⟦Vì sao chị ấy lại biết chuyện tôi nghỉ học?⟧ → 她怎么会知道我休学的事？ · ⟦Vì sao hôm nay chị ấy không đến trường?⟧ → 她今天为什么没来学校？ · ⟦Vì sao ở đây các quán ăn lại vắng khách thế?⟧ → 为什么这里的饭馆这么冷清？
+⟦trước khi⟧：意为“在……之前”，表示在进行另一行为之前会先做某个行为。
+⟦Trước khi đi thăm làng nghề, anh Park đã gặp Lan để trò truyện.⟧ → 去参观手工艺村之前，朴先和阿兰见面聊了聊。（参观手工艺村是在与阿兰见面之后） · ⟦Trước khi về nước, tôi sẽ đi thăm một số làng nghề truyền thống ở Việt Nam.⟧ → 回国之前，我要去参观越南的几个传统手工艺村。（回国是在参观之后） · ⟦Trước khi nghỉ hè, chúng tôi đã tổ chức một buổi văn nghệ rất vui vẻ.⟧ → 放暑假之前，我们举办了一场非常欢乐的文艺晚会。（放暑假是在晚会之后） · ⟦Trước khi đi tham quan, anh gọi điện cho tôi nhé!⟧ → 去参观之前，给我打个电话吧！（参观是在打电话之后）
+=zh
+文法解說
+⟦vì sao⟧：意為「為什麼」，用於詢問某一結果的原因。
+⟦Vì sao làng tranh này lại nổi tiếng, em nhỉ?⟧ → 為什麼這個年畫村這麼有名呢？ · ⟦Vì sao anh lại không đi thăm làng nghề đúc đồng?⟧ → 你為什麼不去參觀鑄銅村呢？ · ⟦Vì sao chị ấy lại biết chuyện tôi nghỉ học?⟧ → 她怎麼會知道我休學的事？ · ⟦Vì sao hôm nay chị ấy không đến trường?⟧ → 她今天為什麼沒來學校？ · ⟦Vì sao ở đây các quán ăn lại vắng khách thế?⟧ → 為什麼這裡的餐館這麼冷清？
+⟦trước khi⟧：意為「在……之前」，表示在進行另一行為之前會先做某個行為。
+⟦Trước khi đi thăm làng nghề, anh Park đã gặp Lan để trò truyện.⟧ → 去參觀手工藝村之前，朴先和阿蘭見面聊了聊。（參觀手工藝村是在與阿蘭見面之後） · ⟦Trước khi về nước, tôi sẽ đi thăm một số làng nghề truyền thống ở Việt Nam.⟧ → 回國之前，我要去參觀越南的幾個傳統手工藝村。（回國是在參觀之後） · ⟦Trước khi nghỉ hè, chúng tôi đã tổ chức một buổi văn nghệ rất vui vẻ.⟧ → 放暑假之前，我們舉辦了一場非常歡樂的文藝晚會。（放暑假是在晚會之後） · ⟦Trước khi đi tham quan, anh gọi điện cho tôi nhé!⟧ → 去參觀之前，打個電話給我喔！（參觀是在打電話之後）
+=en
+Grammar notes
+⟦vì sao⟧: "why, for what reason" – asks about the cause of a certain result.
+⟦Vì sao làng tranh này lại nổi tiếng, em nhỉ?⟧ → Why is this folk-painting village so famous, I wonder? · ⟦Vì sao anh lại không đi thăm làng nghề đúc đồng?⟧ → Why aren't you visiting the bronze-casting village? · ⟦Vì sao chị ấy lại biết chuyện tôi nghỉ học?⟧ → How come she knows that I took time off school? · ⟦Vì sao hôm nay chị ấy không đến trường?⟧ → Why didn't she come to school today? · ⟦Vì sao ở đây các quán ăn lại vắng khách thế?⟧ → Why are the restaurants here so empty?
+⟦trước khi⟧: "before ~ing" – expresses that one action will be done before carrying out another.
+⟦Trước khi đi thăm làng nghề, anh Park đã gặp Lan để trò truyện.⟧ → Before visiting the craft village, Park met Lan for a chat. (visiting the village comes after meeting Lan) · ⟦Trước khi về nước, tôi sẽ đi thăm một số làng nghề truyền thống ở Việt Nam.⟧ → Before going home, I'll visit some traditional craft villages in Vietnam. (going home comes after the visits) · ⟦Trước khi nghỉ hè, chúng tôi đã tổ chức một buổi văn nghệ rất vui vẻ.⟧ → Before the summer holidays, we held a really fun performance evening. (the holidays come after the show) · ⟦Trước khi đi tham quan, anh gọi điện cho tôi nhé!⟧ → Before you go on the visit, give me a call, OK! (the visit comes after the call)
+=fr
+Notes de grammaire
+⟦vì sao⟧ : « pourquoi, pour quelle raison » – interroge sur la cause d'un résultat.
+⟦Vì sao làng tranh này lại nổi tiếng, em nhỉ?⟧ → Pourquoi ce village d'estampes populaires est-il si célèbre, à ton avis ? · ⟦Vì sao anh lại không đi thăm làng nghề đúc đồng?⟧ → Pourquoi ne vas-tu pas visiter le village des fondeurs de bronze ? · ⟦Vì sao chị ấy lại biết chuyện tôi nghỉ học?⟧ → Comment se fait-il qu'elle sache que j'ai interrompu mes études ? · ⟦Vì sao hôm nay chị ấy không đến trường?⟧ → Pourquoi n'est-elle pas venue à l'école aujourd'hui ? · ⟦Vì sao ở đây các quán ăn lại vắng khách thế?⟧ → Pourquoi les restaurants ici sont-ils si vides ?
+⟦trước khi⟧ : « avant de ~ » – exprime qu'une action sera faite avant d'en accomplir une autre.
+⟦Trước khi đi thăm làng nghề, anh Park đã gặp Lan để trò truyện.⟧ → Avant de visiter le village artisanal, Park a rencontré Lan pour bavarder. (la visite a lieu après la rencontre avec Lan) · ⟦Trước khi về nước, tôi sẽ đi thăm một số làng nghề truyền thống ở Việt Nam.⟧ → Avant de rentrer dans mon pays, je visiterai quelques villages artisanaux traditionnels du Vietnam. (le retour a lieu après les visites) · ⟦Trước khi nghỉ hè, chúng tôi đã tổ chức một buổi văn nghệ rất vui vẻ.⟧ → Avant les vacances d'été, nous avons organisé une soirée artistique très joyeuse. (les vacances viennent après la soirée) · ⟦Trước khi đi tham quan, anh gọi điện cho tôi nhé!⟧ → Avant de partir en visite, appelle-moi, d'accord ! (la visite a lieu après l'appel)
+=de
+Grammatikerläuterungen
+⟦vì sao⟧: „warum, weshalb“ – fragt nach der Ursache eines bestimmten Ergebnisses.
+⟦Vì sao làng tranh này lại nổi tiếng, em nhỉ?⟧ → Warum ist dieses Dorf der Volksbilder eigentlich so berühmt? · ⟦Vì sao anh lại không đi thăm làng nghề đúc đồng?⟧ → Warum besuchst du das Bronzegießerdorf nicht? · ⟦Vì sao chị ấy lại biết chuyện tôi nghỉ học?⟧ → Wieso weiß sie, dass ich mein Studium unterbrochen habe? · ⟦Vì sao hôm nay chị ấy không đến trường?⟧ → Warum ist sie heute nicht zur Schule gekommen? · ⟦Vì sao ở đây các quán ăn lại vắng khách thế?⟧ → Warum sind die Lokale hier so leer?
+⟦trước khi⟧: „bevor“ – drückt aus, dass eine Handlung vor einer anderen ausgeführt wird.
+⟦Trước khi đi thăm làng nghề, anh Park đã gặp Lan để trò truyện.⟧ → Bevor Park das Handwerksdorf besuchte, traf er sich mit Lan zum Plaudern. (der Dorfbesuch folgt nach dem Treffen mit Lan) · ⟦Trước khi về nước, tôi sẽ đi thăm một số làng nghề truyền thống ở Việt Nam.⟧ → Bevor ich heimkehre, besuche ich einige traditionelle Handwerksdörfer in Vietnam. (die Heimkehr folgt nach den Besuchen) · ⟦Trước khi nghỉ hè, chúng tôi đã tổ chức một buổi văn nghệ rất vui vẻ.⟧ → Vor den Sommerferien haben wir einen sehr fröhlichen Kulturabend veranstaltet. (die Ferien folgen nach dem Kulturabend) · ⟦Trước khi đi tham quan, anh gọi điện cho tôi nhé!⟧ → Bevor du zur Besichtigung gehst, ruf mich an, ja! (die Besichtigung folgt nach dem Anruf)
+=hu
+Nyelvtani magyarázat
+⟦vì sao⟧: „miért, mi okból” – egy bizonyos eredmény okára kérdez rá.
+⟦Vì sao làng tranh này lại nổi tiếng, em nhỉ?⟧ → Vajon miért olyan híres ez a népi festményeiről ismert falu? · ⟦Vì sao anh lại không đi thăm làng nghề đúc đồng?⟧ → Miért nem látogatod meg a bronzöntő falut? · ⟦Vì sao chị ấy lại biết chuyện tôi nghỉ học?⟧ → Honnan tudja, hogy szüneteltetem a tanulmányaimat? · ⟦Vì sao hôm nay chị ấy không đến trường?⟧ → Miért nem jött ma iskolába? · ⟦Vì sao ở đây các quán ăn lại vắng khách thế?⟧ → Miért ilyen üresek itt az éttermek?
+⟦trước khi⟧: „mielőtt” – azt fejezi ki, hogy egy cselekvést egy másik előtt végeznek el.
+⟦Trước khi đi thăm làng nghề, anh Park đã gặp Lan để trò truyện.⟧ → Mielőtt Park meglátogatta a kézműves falut, találkozott Lannal, hogy beszélgessenek. (a faluba látogatás a Lannal való találkozás után történik) · ⟦Trước khi về nước, tôi sẽ đi thăm một số làng nghề truyền thống ở Việt Nam.⟧ → Mielőtt hazatérek, meglátogatok néhány hagyományos kézműves falut Vietnámban. (a hazatérés a látogatások után történik) · ⟦Trước khi nghỉ hè, chúng tôi đã tổ chức một buổi văn nghệ rất vui vẻ.⟧ → A nyári szünet előtt nagyon vidám kulturális estet rendeztünk. (a szünet a műsor után kezdődik) · ⟦Trước khi đi tham quan, anh gọi điện cho tôi nhé!⟧ → Mielőtt elindulsz a látogatásra, hívj fel, jó? (a látogatás a telefonhívás után történik)
+=id
+Penjelasan tata bahasa
+⟦vì sao⟧: "mengapa, kenapa" – menanyakan penyebab dari suatu hasil.
+⟦Vì sao làng tranh này lại nổi tiếng, em nhỉ?⟧ → Kenapa desa lukisan rakyat ini begitu terkenal, ya? · ⟦Vì sao anh lại không đi thăm làng nghề đúc đồng?⟧ → Mengapa kamu tidak mengunjungi desa pengecoran perunggu? · ⟦Vì sao chị ấy lại biết chuyện tôi nghỉ học?⟧ → Kenapa dia bisa tahu bahwa saya cuti kuliah? · ⟦Vì sao hôm nay chị ấy không đến trường?⟧ → Mengapa hari ini dia tidak datang ke sekolah? · ⟦Vì sao ở đây các quán ăn lại vắng khách thế?⟧ → Kenapa rumah makan di sini sepi sekali?
+⟦trước khi⟧: "sebelum" – menyatakan bahwa suatu tindakan dilakukan sebelum melaksanakan tindakan lain.
+⟦Trước khi đi thăm làng nghề, anh Park đã gặp Lan để trò truyện.⟧ → Sebelum mengunjungi desa kerajinan, Park bertemu Lan untuk mengobrol. (kunjungan ke desa terjadi setelah bertemu Lan) · ⟦Trước khi về nước, tôi sẽ đi thăm một số làng nghề truyền thống ở Việt Nam.⟧ → Sebelum pulang ke negara saya, saya akan mengunjungi beberapa desa kerajinan tradisional di Vietnam. (pulang terjadi setelah kunjungan) · ⟦Trước khi nghỉ hè, chúng tôi đã tổ chức một buổi văn nghệ rất vui vẻ.⟧ → Sebelum libur musim panas, kami mengadakan pentas seni yang sangat meriah. (libur terjadi setelah pentas) · ⟦Trước khi đi tham quan, anh gọi điện cho tôi nhé!⟧ → Sebelum pergi berkunjung, telepon aku, ya! (kunjungan terjadi setelah menelepon)
+=ja
+文法解説
+⟦vì sao⟧：「なぜ、どうして」という意味で、ある結果の原因を尋ねるために使います。
+⟦Vì sao làng tranh này lại nổi tiếng, em nhỉ?⟧ → どうしてこの絵画（民画）の村はこんなに有名なの？ · ⟦Vì sao anh lại không đi thăm làng nghề đúc đồng?⟧ → どうしてあなたは青銅鋳造の村を訪ねないのですか。 · ⟦Vì sao chị ấy lại biết chuyện tôi nghỉ học?⟧ → どうして彼女は私が休学したことを知っているのだろう。 · ⟦Vì sao hôm nay chị ấy không đến trường?⟧ → どうして今日彼女は学校に来なかったのですか。 · ⟦Vì sao ở đây các quán ăn lại vắng khách thế?⟧ → どうしてここの食堂はこんなに客がいないのですか。
+⟦trước khi⟧：「～する前に」という意味で、別の行動をする前にある行動をすることを表すために使います。
+⟦Trước khi đi thăm làng nghề, anh Park đã gặp Lan để trò truyện.⟧ → 工芸村を訪ねる前に、パクは話をするためにランに会った。（「工芸村を訪ねる」行動は「ランに会う」行動の後に行われる） · ⟦Trước khi về nước, tôi sẽ đi thăm một số làng nghề truyền thống ở Việt Nam.⟧ → 帰国する前に、私はベトナムの伝統工芸村をいくつか訪ねるつもりだ。（「帰国する」行動は「工芸村を訪ねる」行動の後に行われる） · ⟦Trước khi nghỉ hè, chúng tôi đã tổ chức một buổi văn nghệ rất vui vẻ.⟧ → 夏休みの前に、私たちはとても楽しい演芸会を開いた。（「夏休み」は「演芸会」の後に来る） · ⟦Trước khi đi tham quan, anh gọi điện cho tôi nhé!⟧ → 見学に行く前に、私に電話してくださいね！（「見学に行く」行動は「電話をかける」行動の後に行われる）
+=pl
+Objaśnienia gramatyczne
+⟦vì sao⟧: „dlaczego, z jakiego powodu” – pyta o przyczynę danego skutku.
+⟦Vì sao làng tranh này lại nổi tiếng, em nhỉ?⟧ → Dlaczego ta wieś ludowych obrazów jest taka sławna? · ⟦Vì sao anh lại không đi thăm làng nghề đúc đồng?⟧ → Dlaczego nie jedziesz zwiedzić wsi odlewników brązu? · ⟦Vì sao chị ấy lại biết chuyện tôi nghỉ học?⟧ → Skąd ona wie, że przerwałem naukę? · ⟦Vì sao hôm nay chị ấy không đến trường?⟧ → Dlaczego ona nie przyszła dziś do szkoły? · ⟦Vì sao ở đây các quán ăn lại vắng khách thế?⟧ → Dlaczego tutejsze jadłodajnie są takie puste?
+⟦trước khi⟧: „zanim, przed” – wyraża, że jedna czynność zostanie wykonana przed inną.
+⟦Trước khi đi thăm làng nghề, anh Park đã gặp Lan để trò truyện.⟧ → Zanim Park pojechał do wsi rzemieślniczej, spotkał się z Lan, żeby porozmawiać. (wizyta we wsi następuje po spotkaniu z Lan) · ⟦Trước khi về nước, tôi sẽ đi thăm một số làng nghề truyền thống ở Việt Nam.⟧ → Zanim wrócę do kraju, odwiedzę kilka tradycyjnych wsi rzemieślniczych w Wietnamie. (powrót następuje po odwiedzinach) · ⟦Trước khi nghỉ hè, chúng tôi đã tổ chức một buổi văn nghệ rất vui vẻ.⟧ → Przed wakacjami zorganizowaliśmy bardzo wesoły wieczór artystyczny. (wakacje następują po wieczorze) · ⟦Trước khi đi tham quan, anh gọi điện cho tôi nhé!⟧ → Zanim pojedziesz na wycieczkę, zadzwoń do mnie, dobrze? (wycieczka następuje po telefonie)

@@ -1,0 +1,191 @@
+@@ pdf-grammar-f0e7e3f8cfad4e6e#0
+=cs
+Klíčový výraz: ⟦chẳng mấy ~⟧
+⟦chẳng mấy ~⟧ znamená „málokdo/málokdy ~, skoro žádný ~“. Vyjadřuje, že následujícího zájmena či podstatného jména je velmi málo nebo že jde o velmi krátkou dobu.
+❶ ⟦Chẳng mấy ngày nữa chúng ta sẽ bắt đầu năm học mới.⟧ — Za pár dní začneme nový školní rok.
+❷ Ⓐ ⟦Chuyến đi công tác lần này dài ngày quá!⟧ — Tahle služební cesta je hrozně dlouhá! Ⓑ ⟦Đúng thế! Chẳng mấy ai muốn xa gia đình lâu như vậy.⟧ — To je pravda! Málokdo chce být tak dlouho pryč od rodiny.
+Výrazy k pracovním úkolům na služební cestě: ⟦kí kết hợp đồng⟧ uzavřít smlouvu | ⟦tìm cơ hội hợp tác⟧ hledat příležitost ke spolupráci | ⟦nộp thuế nhập khẩu⟧ zaplatit dovozní clo | ⟦bàn bạc về điều kiện đầu tư⟧ jednat o investičních podmínkách
+Procvičování 2 — veďte rozhovor podle vzoru s daným slovem.
+Vzor (⟦khi⟧): Ⓐ ⟦Em có thường tham gia các chương trình như thế này không?⟧ — Účastníš se často takových programů? Ⓑ ⟦Không, chẳng mấy khi em có thể tham gia các chương trình như thế này.⟧ — Ne, takových programů se můžu zúčastnit jen málokdy.
+❶ (⟦ai⟧) Ⓐ ⟦Có ai trong các em có thể giải thích được phần này không?⟧ — Umí někdo z vás vysvětlit tuto část? Ⓑ ⟦Chẳng mấy ai có thể giải thích được phần này.⟧ — Tuto část umí vysvětlit málokdo.
+❷ (⟦nơi⟧) Ⓐ ⟦Có nơi nào có phong cảnh đẹp như ở đây nữa không?⟧ — Je ještě někde tak krásná krajina jako tady? Ⓑ ⟦Chẳng mấy nơi có phong cảnh đẹp như ở đây.⟧ — Málokde je tak krásná krajina jako tady.
+Rozhovor: Min-ho mluví s Hiền o své služební cestě.
+Min-ho: ⟦Tuần sau, anh có kế hoạch đến một công ti ở Bắc Ninh.⟧ — Příští týden mám v plánu navštívit jednu firmu v Bắc Ninhu.
+Hiền: ⟦Anh đến đó để làm gì?⟧ — Co tam budeš dělat?
+Min-ho: ⟦Anh định tìm cơ hội hợp tác với công ti đó. Chẳng mấy khi đi công tác như thế này. Vì thế anh thấy rất hào hứng.⟧ — Chci hledat příležitost ke spolupráci s tou firmou. Na takovou služební cestu nejezdím často, takže se moc těším.
+Hiền: ⟦Anh đã chuẩn bị gì cho chuyến đi công tác này chưa?⟧ — Už ses na tu cestu nějak připravil?
+Min-ho: ⟦Rồi, anh đã chuẩn bị nhiều thứ và đặc biệt là chuẩn bị đủ danh thiếp để đưa cho những người sẽ gặp vì anh nghĩ là sẽ cần đến.⟧ — Ano, připravil jsem spoustu věcí, hlavně dost vizitek pro lidi, se kterými se setkám, protože myslím, že je budu potřebovat.
+Hiền: ⟦Mong là mọi việc đều thành công như ý của anh nhé!⟧ — Ať se ti všechno podaří, jak si přeješ!
+Procvičování — kam: ⟦một công ti ở Bắc Ninh⟧ (firma v Bắc Ninhu) / ⟦một văn phòng thuế ở Hải Phòng⟧ (finanční úřad v Hải Phòngu); co dělat: ⟦tìm cơ hội hợp tác với công ti đó⟧ (hledat příležitost ke spolupráci s tou firmou) / ⟦nộp thuế nhập khẩu⟧ (zaplatit dovozní clo); co připravit: ⟦đủ danh thiếp để đưa cho những người sẽ gặp⟧ (dost vizitek pro lidi, se kterými se setká) / ⟦danh sách các hàng hóa nhập khẩu⟧ (seznam dovážného zboží).
+Nová slovíčka: ⟦kí kết⟧ uzavřít (smlouvu) | ⟦cơ hội⟧ příležitost | ⟦hợp tác⟧ spolupracovat | ⟦nhập khẩu⟧ dovážet | ⟦bàn bạc⟧ projednávat | ⟦điều kiện⟧ podmínka | ⟦hào hứng⟧ nadšený | ⟦danh thiếp⟧ vizitka | ⟦thành công⟧ uspět | ⟦phần⟧ část | ⟦ý⟧ vůle, záměr
+=zh_cn
+核心表达：⟦chẳng mấy ~⟧
+⟦chẳng mấy ~⟧ 意为“没几个……、很少……”，表示后面的代词或名词数量很少或时间很短。
+❶ ⟦Chẳng mấy ngày nữa chúng ta sẽ bắt đầu năm học mới.⟧ —— 再过没几天我们就要开始新学年了。
+❷ Ⓐ ⟦Chuyến đi công tác lần này dài ngày quá!⟧ —— 这次出差时间太长了！ Ⓑ ⟦Đúng thế! Chẳng mấy ai muốn xa gia đình lâu như vậy.⟧ —— 是啊！很少有人愿意离开家人那么久。
+与出差工作相关的表达：⟦kí kết hợp đồng⟧ 签订合同 | ⟦tìm cơ hội hợp tác⟧ 寻找合作机会 | ⟦nộp thuế nhập khẩu⟧ 缴纳进口税 | ⟦bàn bạc về điều kiện đầu tư⟧ 商讨投资条件
+句型练习2 —— 用所给词语仿照范例对话。
+范例（⟦khi⟧）：Ⓐ ⟦Em có thường tham gia các chương trình như thế này không?⟧ —— 你经常参加这样的活动吗？ Ⓑ ⟦Không, chẳng mấy khi em có thể tham gia các chương trình như thế này.⟧ —— 不，我很少有机会参加这样的活动。
+❶（⟦ai⟧）Ⓐ ⟦Có ai trong các em có thể giải thích được phần này không?⟧ —— 你们当中有谁能解释这部分吗？ Ⓑ ⟦Chẳng mấy ai có thể giải thích được phần này.⟧ —— 没几个人能解释这部分。
+❷（⟦nơi⟧）Ⓐ ⟦Có nơi nào có phong cảnh đẹp như ở đây nữa không?⟧ —— 还有哪里的风景像这里一样美吗？ Ⓑ ⟦Chẳng mấy nơi có phong cảnh đẹp như ở đây.⟧ —— 很少有地方的风景像这里一样美。
+对话：敏浩和贤在谈论他的出差。
+敏浩：⟦Tuần sau, anh có kế hoạch đến một công ti ở Bắc Ninh.⟧ —— 下周我计划去北宁的一家公司。
+贤：⟦Anh đến đó để làm gì?⟧ —— 你去那里做什么？
+敏浩：⟦Anh định tìm cơ hội hợp tác với công ti đó. Chẳng mấy khi đi công tác như thế này. Vì thế anh thấy rất hào hứng.⟧ —— 我打算寻找和那家公司合作的机会。很少有这样的出差机会，所以我很兴奋。
+贤：⟦Anh đã chuẩn bị gì cho chuyến đi công tác này chưa?⟧ —— 你为这次出差准备了什么吗？
+敏浩：⟦Rồi, anh đã chuẩn bị nhiều thứ và đặc biệt là chuẩn bị đủ danh thiếp để đưa cho những người sẽ gặp vì anh nghĩ là sẽ cần đến.⟧ —— 准备了，我准备了很多东西，特别是准备了足够的名片给要见的人，因为我觉得会用得上。
+贤：⟦Mong là mọi việc đều thành công như ý của anh nhé!⟧ —— 希望一切都如你所愿，顺利成功！
+句型练习 —— 去拜访哪里：⟦một công ti ở Bắc Ninh⟧（北宁的一家公司）/ ⟦một văn phòng thuế ở Hải Phòng⟧（海防的一个税务所）；做什么：⟦tìm cơ hội hợp tác với công ti đó⟧（寻找和那家公司合作的机会）/ ⟦nộp thuế nhập khẩu⟧（缴纳进口税）；准备什么：⟦đủ danh thiếp để đưa cho những người sẽ gặp⟧（足够给要见的人的名片）/ ⟦danh sách các hàng hóa nhập khẩu⟧（进口商品清单）。
+新单词：⟦kí kết⟧ 签订 | ⟦cơ hội⟧ 机会 | ⟦hợp tác⟧ 合作 | ⟦nhập khẩu⟧ 进口 | ⟦bàn bạc⟧ 商讨 | ⟦điều kiện⟧ 条件 | ⟦hào hứng⟧ 兴奋的 | ⟦danh thiếp⟧ 名片 | ⟦thành công⟧ 成功 | ⟦phần⟧ 部分 | ⟦ý⟧ 意愿、意图
+=zh
+核心表達：⟦chẳng mấy ~⟧
+⟦chẳng mấy ~⟧ 意為「沒幾個……、很少……」，表示後面的代詞或名詞數量很少或時間很短。
+❶ ⟦Chẳng mấy ngày nữa chúng ta sẽ bắt đầu năm học mới.⟧ —— 再過沒幾天我們就要開始新學年了。
+❷ Ⓐ ⟦Chuyến đi công tác lần này dài ngày quá!⟧ —— 這次出差時間太長了！ Ⓑ ⟦Đúng thế! Chẳng mấy ai muốn xa gia đình lâu như vậy.⟧ —— 是啊！很少有人願意離開家人那麼久。
+與出差工作相關的表達：⟦kí kết hợp đồng⟧ 簽訂合約 | ⟦tìm cơ hội hợp tác⟧ 尋找合作機會 | ⟦nộp thuế nhập khẩu⟧ 繳納進口稅 | ⟦bàn bạc về điều kiện đầu tư⟧ 商討投資條件
+句型練習2 —— 用所給詞語仿照範例對話。
+範例（⟦khi⟧）：Ⓐ ⟦Em có thường tham gia các chương trình như thế này không?⟧ —— 妳常參加這樣的活動嗎？ Ⓑ ⟦Không, chẳng mấy khi em có thể tham gia các chương trình như thế này.⟧ —— 不，我很少有機會參加這樣的活動。
+❶（⟦ai⟧）Ⓐ ⟦Có ai trong các em có thể giải thích được phần này không?⟧ —— 你們當中有誰能解釋這部分嗎？ Ⓑ ⟦Chẳng mấy ai có thể giải thích được phần này.⟧ —— 沒幾個人能解釋這部分。
+❷（⟦nơi⟧）Ⓐ ⟦Có nơi nào có phong cảnh đẹp như ở đây nữa không?⟧ —— 還有哪裡的風景像這裡一樣美嗎？ Ⓑ ⟦Chẳng mấy nơi có phong cảnh đẹp như ở đây.⟧ —— 很少有地方的風景像這裡一樣美。
+對話：敏浩和賢在談論他的出差。
+敏浩：⟦Tuần sau, anh có kế hoạch đến một công ti ở Bắc Ninh.⟧ —— 下週我計畫去北寧的一家公司。
+賢：⟦Anh đến đó để làm gì?⟧ —— 你去那裡做什麼？
+敏浩：⟦Anh định tìm cơ hội hợp tác với công ti đó. Chẳng mấy khi đi công tác như thế này. Vì thế anh thấy rất hào hứng.⟧ —— 我打算尋找和那家公司合作的機會。很少有這樣的出差機會，所以我很興奮。
+賢：⟦Anh đã chuẩn bị gì cho chuyến đi công tác này chưa?⟧ —— 你為這次出差準備了什麼嗎？
+敏浩：⟦Rồi, anh đã chuẩn bị nhiều thứ và đặc biệt là chuẩn bị đủ danh thiếp để đưa cho những người sẽ gặp vì anh nghĩ là sẽ cần đến.⟧ —— 準備了，我準備了很多東西，特別是準備了足夠的名片給要見的人，因為我覺得會用得上。
+賢：⟦Mong là mọi việc đều thành công như ý của anh nhé!⟧ —— 希望一切都如你所願，順利成功！
+句型練習 —— 去拜訪哪裡：⟦một công ti ở Bắc Ninh⟧（北寧的一家公司）/ ⟦một văn phòng thuế ở Hải Phòng⟧（海防的一個稅務所）；做什麼：⟦tìm cơ hội hợp tác với công ti đó⟧（尋找和那家公司合作的機會）/ ⟦nộp thuế nhập khẩu⟧（繳納進口稅）；準備什麼：⟦đủ danh thiếp để đưa cho những người sẽ gặp⟧（足夠給要見的人的名片）/ ⟦danh sách các hàng hóa nhập khẩu⟧（進口商品清單）。
+新單字：⟦kí kết⟧ 簽訂 | ⟦cơ hội⟧ 機會 | ⟦hợp tác⟧ 合作 | ⟦nhập khẩu⟧ 進口 | ⟦bàn bạc⟧ 商討 | ⟦điều kiện⟧ 條件 | ⟦hào hứng⟧ 興奮的 | ⟦danh thiếp⟧ 名片 | ⟦thành công⟧ 成功 | ⟦phần⟧ 部分 | ⟦ý⟧ 意願、意圖
+=en
+Key expression: ⟦chẳng mấy ~⟧
+⟦chẳng mấy ~⟧ means "hardly any ~, few ~". It expresses that the following pronoun or noun is very few in number or very short in time.
+❶ ⟦Chẳng mấy ngày nữa chúng ta sẽ bắt đầu năm học mới.⟧ — In just a few days we'll start the new school year.
+❷ Ⓐ ⟦Chuyến đi công tác lần này dài ngày quá!⟧ — This business trip is really long! Ⓑ ⟦Đúng thế! Chẳng mấy ai muốn xa gia đình lâu như vậy.⟧ — Exactly! Hardly anyone wants to be away from their family that long.
+Expressions about work on a business trip: ⟦kí kết hợp đồng⟧ to sign a contract | ⟦tìm cơ hội hợp tác⟧ to look for opportunities to cooperate | ⟦nộp thuế nhập khẩu⟧ to pay import duty | ⟦bàn bạc về điều kiện đầu tư⟧ to discuss investment conditions
+Pattern practice 2 — talk as in the model using the given word.
+Model (⟦khi⟧): Ⓐ ⟦Em có thường tham gia các chương trình như thế này không?⟧ — Do you often take part in programmes like this? Ⓑ ⟦Không, chẳng mấy khi em có thể tham gia các chương trình như thế này.⟧ — No, I rarely get to take part in programmes like this.
+❶ (⟦ai⟧) Ⓐ ⟦Có ai trong các em có thể giải thích được phần này không?⟧ — Can any of you explain this part? Ⓑ ⟦Chẳng mấy ai có thể giải thích được phần này.⟧ — Hardly anyone can explain this part.
+❷ (⟦nơi⟧) Ⓐ ⟦Có nơi nào có phong cảnh đẹp như ở đây nữa không?⟧ — Is there anywhere else with scenery as beautiful as here? Ⓑ ⟦Chẳng mấy nơi có phong cảnh đẹp như ở đây.⟧ — Few places have scenery as beautiful as here.
+Dialogue: Min-ho talks with Hiền about his business trip.
+Min-ho: ⟦Tuần sau, anh có kế hoạch đến một công ti ở Bắc Ninh.⟧ — Next week I'm planning to visit a company in Bắc Ninh.
+Hiền: ⟦Anh đến đó để làm gì?⟧ — What are you going there for?
+Min-ho: ⟦Anh định tìm cơ hội hợp tác với công ti đó. Chẳng mấy khi đi công tác như thế này. Vì thế anh thấy rất hào hứng.⟧ — I want to look for opportunities to work with that company. I rarely go on a business trip like this, so I'm really excited.
+Hiền: ⟦Anh đã chuẩn bị gì cho chuyến đi công tác này chưa?⟧ — Have you prepared anything for the trip yet?
+Min-ho: ⟦Rồi, anh đã chuẩn bị nhiều thứ và đặc biệt là chuẩn bị đủ danh thiếp để đưa cho những người sẽ gặp vì anh nghĩ là sẽ cần đến.⟧ — Yes, I've prepared lots of things, especially enough business cards to give to the people I'll meet, because I think I'll need them.
+Hiền: ⟦Mong là mọi việc đều thành công như ý của anh nhé!⟧ — I hope everything goes just as you wish!
+Pattern practice — where: ⟦một công ti ở Bắc Ninh⟧ (a company in Bắc Ninh) / ⟦một văn phòng thuế ở Hải Phòng⟧ (a tax office in Hải Phòng); what to do: ⟦tìm cơ hội hợp tác với công ti đó⟧ (look for cooperation with that company) / ⟦nộp thuế nhập khẩu⟧ (pay import duty); what to prepare: ⟦đủ danh thiếp để đưa cho những người sẽ gặp⟧ (enough business cards for the people he'll meet) / ⟦danh sách các hàng hóa nhập khẩu⟧ (a list of imported goods).
+New words: ⟦kí kết⟧ to sign (an agreement) | ⟦cơ hội⟧ opportunity | ⟦hợp tác⟧ to cooperate | ⟦nhập khẩu⟧ to import | ⟦bàn bạc⟧ to discuss | ⟦điều kiện⟧ condition | ⟦hào hứng⟧ excited | ⟦danh thiếp⟧ business card | ⟦thành công⟧ to succeed | ⟦phần⟧ part | ⟦ý⟧ will, intention
+=fr
+Expression clé : ⟦chẳng mấy ~⟧
+⟦chẳng mấy ~⟧ signifie « peu de ~, presque aucun ~ ». Il indique que le pronom ou le nom qui suit est en très petit nombre ou de très courte durée.
+❶ ⟦Chẳng mấy ngày nữa chúng ta sẽ bắt đầu năm học mới.⟧ — Dans quelques jours à peine, nous commencerons la nouvelle année scolaire.
+❷ Ⓐ ⟦Chuyến đi công tác lần này dài ngày quá!⟧ — Ce voyage d'affaires est vraiment long ! Ⓑ ⟦Đúng thế! Chẳng mấy ai muốn xa gia đình lâu như vậy.⟧ — Exactement ! Presque personne ne veut être loin de sa famille aussi longtemps.
+Expressions liées au travail en déplacement : ⟦kí kết hợp đồng⟧ signer un contrat | ⟦tìm cơ hội hợp tác⟧ chercher des occasions de coopération | ⟦nộp thuế nhập khẩu⟧ payer les droits d'importation | ⟦bàn bạc về điều kiện đầu tư⟧ discuter des conditions d'investissement
+Exercice 2 — dialoguez comme dans le modèle avec le mot donné.
+Modèle (⟦khi⟧) : Ⓐ ⟦Em có thường tham gia các chương trình như thế này không?⟧ — Tu participes souvent à ce genre de programme ? Ⓑ ⟦Không, chẳng mấy khi em có thể tham gia các chương trình như thế này.⟧ — Non, j'ai rarement l'occasion de participer à ce genre de programme.
+❶ (⟦ai⟧) Ⓐ ⟦Có ai trong các em có thể giải thích được phần này không?⟧ — L'un d'entre vous peut-il expliquer cette partie ? Ⓑ ⟦Chẳng mấy ai có thể giải thích được phần này.⟧ — Presque personne ne peut expliquer cette partie.
+❷ (⟦nơi⟧) Ⓐ ⟦Có nơi nào có phong cảnh đẹp như ở đây nữa không?⟧ — Y a-t-il ailleurs un paysage aussi beau qu'ici ? Ⓑ ⟦Chẳng mấy nơi có phong cảnh đẹp như ở đây.⟧ — Peu d'endroits ont un paysage aussi beau qu'ici.
+Dialogue : Min-ho parle avec Hiền de son déplacement professionnel.
+Min-ho : ⟦Tuần sau, anh có kế hoạch đến một công ti ở Bắc Ninh.⟧ — La semaine prochaine, je prévois de me rendre dans une entreprise à Bắc Ninh.
+Hiền : ⟦Anh đến đó để làm gì?⟧ — Tu y vas pour quoi faire ?
+Min-ho : ⟦Anh định tìm cơ hội hợp tác với công ti đó. Chẳng mấy khi đi công tác như thế này. Vì thế anh thấy rất hào hứng.⟧ — Je compte chercher des occasions de coopérer avec elle. Ce genre de déplacement est rare, alors je suis très enthousiaste.
+Hiền : ⟦Anh đã chuẩn bị gì cho chuyến đi công tác này chưa?⟧ — Tu as préparé quelque chose pour ce déplacement ?
+Min-ho : ⟦Rồi, anh đã chuẩn bị nhiều thứ và đặc biệt là chuẩn bị đủ danh thiếp để đưa cho những người sẽ gặp vì anh nghĩ là sẽ cần đến.⟧ — Oui, j'ai préparé beaucoup de choses, surtout assez de cartes de visite pour les personnes que je vais rencontrer, car je pense en avoir besoin.
+Hiền : ⟦Mong là mọi việc đều thành công như ý của anh nhé!⟧ — J'espère que tout réussira comme tu le souhaites !
+Exercices — où : ⟦một công ti ở Bắc Ninh⟧ (une entreprise à Bắc Ninh) / ⟦một văn phòng thuế ở Hải Phòng⟧ (un bureau des impôts à Hải Phòng) ; pour quoi faire : ⟦tìm cơ hội hợp tác với công ti đó⟧ (chercher à coopérer avec cette entreprise) / ⟦nộp thuế nhập khẩu⟧ (payer les droits d'importation) ; quoi préparer : ⟦đủ danh thiếp để đưa cho những người sẽ gặp⟧ (assez de cartes de visite pour les personnes rencontrées) / ⟦danh sách các hàng hóa nhập khẩu⟧ (la liste des marchandises importées).
+Nouveaux mots : ⟦kí kết⟧ signer, conclure | ⟦cơ hội⟧ occasion | ⟦hợp tác⟧ coopérer | ⟦nhập khẩu⟧ importer | ⟦bàn bạc⟧ discuter | ⟦điều kiện⟧ condition | ⟦hào hứng⟧ enthousiaste | ⟦danh thiếp⟧ carte de visite | ⟦thành công⟧ réussir | ⟦phần⟧ partie | ⟦ý⟧ volonté, intention
+=de
+Schlüsselausdruck: ⟦chẳng mấy ~⟧
+⟦chẳng mấy ~⟧ bedeutet „kaum ~, wenige ~“. Es drückt aus, dass das folgende Pronomen oder Nomen sehr gering an Zahl oder sehr kurz an Dauer ist.
+❶ ⟦Chẳng mấy ngày nữa chúng ta sẽ bắt đầu năm học mới.⟧ — In wenigen Tagen beginnt das neue Schuljahr.
+❷ Ⓐ ⟦Chuyến đi công tác lần này dài ngày quá!⟧ — Diese Dienstreise ist wirklich lang! Ⓑ ⟦Đúng thế! Chẳng mấy ai muốn xa gia đình lâu như vậy.⟧ — Genau! Kaum jemand will so lange von der Familie getrennt sein.
+Ausdrücke zu Aufgaben auf Dienstreisen: ⟦kí kết hợp đồng⟧ einen Vertrag abschließen | ⟦tìm cơ hội hợp tác⟧ Kooperationsmöglichkeiten suchen | ⟦nộp thuế nhập khẩu⟧ Einfuhrzoll zahlen | ⟦bàn bạc về điều kiện đầu tư⟧ über Investitionsbedingungen verhandeln
+Übung 2 — wie im Muster mit dem vorgegebenen Wort sprechen.
+Muster (⟦khi⟧): Ⓐ ⟦Em có thường tham gia các chương trình như thế này không?⟧ — Nimmst du oft an solchen Programmen teil? Ⓑ ⟦Không, chẳng mấy khi em có thể tham gia các chương trình như thế này.⟧ — Nein, ich kann nur selten an solchen Programmen teilnehmen.
+❶ (⟦ai⟧) Ⓐ ⟦Có ai trong các em có thể giải thích được phần này không?⟧ — Kann jemand von euch diesen Teil erklären? Ⓑ ⟦Chẳng mấy ai có thể giải thích được phần này.⟧ — Kaum jemand kann diesen Teil erklären.
+❷ (⟦nơi⟧) Ⓐ ⟦Có nơi nào có phong cảnh đẹp như ở đây nữa không?⟧ — Gibt es noch einen Ort mit so schöner Landschaft wie hier? Ⓑ ⟦Chẳng mấy nơi có phong cảnh đẹp như ở đây.⟧ — Kaum ein Ort hat eine so schöne Landschaft wie hier.
+Dialog: Min-ho spricht mit Hiền über seine Dienstreise.
+Min-ho: ⟦Tuần sau, anh có kế hoạch đến một công ti ở Bắc Ninh.⟧ — Nächste Woche will ich eine Firma in Bắc Ninh besuchen.
+Hiền: ⟦Anh đến đó để làm gì?⟧ — Was machst du dort?
+Min-ho: ⟦Anh định tìm cơ hội hợp tác với công ti đó. Chẳng mấy khi đi công tác như thế này. Vì thế anh thấy rất hào hứng.⟧ — Ich will nach Kooperationsmöglichkeiten mit dieser Firma suchen. So eine Dienstreise habe ich selten, deshalb bin ich sehr gespannt.
+Hiền: ⟦Anh đã chuẩn bị gì cho chuyến đi công tác này chưa?⟧ — Hast du dich schon auf die Reise vorbereitet?
+Min-ho: ⟦Rồi, anh đã chuẩn bị nhiều thứ và đặc biệt là chuẩn bị đủ danh thiếp để đưa cho những người sẽ gặp vì anh nghĩ là sẽ cần đến.⟧ — Ja, ich habe vieles vorbereitet, vor allem genug Visitenkarten für die Leute, die ich treffe, weil ich glaube, dass ich sie brauchen werde.
+Hiền: ⟦Mong là mọi việc đều thành công như ý của anh nhé!⟧ — Hoffentlich klappt alles so, wie du es dir wünschst!
+Satzmusterübung — wohin: ⟦một công ti ở Bắc Ninh⟧ (eine Firma in Bắc Ninh) / ⟦một văn phòng thuế ở Hải Phòng⟧ (ein Steuerbüro in Hải Phòng); was tun: ⟦tìm cơ hội hợp tác với công ti đó⟧ (Kooperation mit der Firma suchen) / ⟦nộp thuế nhập khẩu⟧ (Einfuhrzoll zahlen); was vorbereiten: ⟦đủ danh thiếp để đưa cho những người sẽ gặp⟧ (genug Visitenkarten für die Gesprächspartner) / ⟦danh sách các hàng hóa nhập khẩu⟧ (Liste der Importwaren).
+Neue Wörter: ⟦kí kết⟧ abschließen (Vertrag) | ⟦cơ hội⟧ Gelegenheit | ⟦hợp tác⟧ zusammenarbeiten | ⟦nhập khẩu⟧ importieren | ⟦bàn bạc⟧ beraten, besprechen | ⟦điều kiện⟧ Bedingung | ⟦hào hứng⟧ begeistert | ⟦danh thiếp⟧ Visitenkarte | ⟦thành công⟧ Erfolg haben | ⟦phần⟧ Teil | ⟦ý⟧ Wille, Absicht
+=hu
+Kulcskifejezés: ⟦chẳng mấy ~⟧
+A ⟦chẳng mấy ~⟧ jelentése „alig ~, kevés ~”. Azt fejezi ki, hogy az utána álló névmás vagy főnév nagyon kevés, illetve nagyon rövid ideig tart.
+❶ ⟦Chẳng mấy ngày nữa chúng ta sẽ bắt đầu năm học mới.⟧ — Pár nap múlva kezdjük az új tanévet.
+❷ Ⓐ ⟦Chuyến đi công tác lần này dài ngày quá!⟧ — Ez az üzleti út nagyon hosszú! Ⓑ ⟦Đúng thế! Chẳng mấy ai muốn xa gia đình lâu như vậy.⟧ — Így van! Alig akar valaki ilyen sokáig távol lenni a családjától.
+Kiküldetési feladatokkal kapcsolatos kifejezések: ⟦kí kết hợp đồng⟧ szerződést köt | ⟦tìm cơ hội hợp tác⟧ együttműködési lehetőséget keres | ⟦nộp thuế nhập khẩu⟧ behozatali vámot fizet | ⟦bàn bạc về điều kiện đầu tư⟧ befektetési feltételekről tárgyal
+2. gyakorlat — beszélgessen a minta szerint a megadott szóval.
+Minta (⟦khi⟧): Ⓐ ⟦Em có thường tham gia các chương trình như thế này không?⟧ — Gyakran részt veszel ilyen programokon? Ⓑ ⟦Không, chẳng mấy khi em có thể tham gia các chương trình như thế này.⟧ — Nem, csak ritkán vehetek részt ilyen programokon.
+❶ (⟦ai⟧) Ⓐ ⟦Có ai trong các em có thể giải thích được phần này không?⟧ — Meg tudja valaki magyarázni ezt a részt? Ⓑ ⟦Chẳng mấy ai có thể giải thích được phần này.⟧ — Alig tudja valaki megmagyarázni ezt a részt.
+❷ (⟦nơi⟧) Ⓐ ⟦Có nơi nào có phong cảnh đẹp như ở đây nữa không?⟧ — Van még olyan hely, ahol ilyen szép a táj, mint itt? Ⓑ ⟦Chẳng mấy nơi có phong cảnh đẹp như ở đây.⟧ — Kevés helyen olyan szép a táj, mint itt.
+Párbeszéd: Min-ho Hiềnnel beszélget az üzleti útjáról.
+Min-ho: ⟦Tuần sau, anh có kế hoạch đến một công ti ở Bắc Ninh.⟧ — Jövő héten egy Bắc Ninh-i céghez tervezek menni.
+Hiền: ⟦Anh đến đó để làm gì?⟧ — Mit fogsz ott csinálni?
+Min-ho: ⟦Anh định tìm cơ hội hợp tác với công ti đó. Chẳng mấy khi đi công tác như thế này. Vì thế anh thấy rất hào hứng.⟧ — Együttműködési lehetőséget keresek azzal a céggel. Ritkán megyek ilyen üzleti útra, ezért nagyon izgatott vagyok.
+Hiền: ⟦Anh đã chuẩn bị gì cho chuyến đi công tác này chưa?⟧ — Felkészültél már valamivel erre az útra?
+Min-ho: ⟦Rồi, anh đã chuẩn bị nhiều thứ và đặc biệt là chuẩn bị đủ danh thiếp để đưa cho những người sẽ gặp vì anh nghĩ là sẽ cần đến.⟧ — Igen, sok mindent előkészítettem, főleg elég névjegykártyát azoknak, akikkel találkozom, mert szerintem szükség lesz rá.
+Hiền: ⟦Mong là mọi việc đều thành công như ý của anh nhé!⟧ — Remélem, minden úgy sikerül, ahogy szeretnéd!
+Mintagyakorlat — hová: ⟦một công ti ở Bắc Ninh⟧ (egy Bắc Ninh-i cég) / ⟦một văn phòng thuế ở Hải Phòng⟧ (egy Hải Phòng-i adóiroda); mit csinál: ⟦tìm cơ hội hợp tác với công ti đó⟧ (együttműködést keres azzal a céggel) / ⟦nộp thuế nhập khẩu⟧ (behozatali vámot fizet); mit készít elő: ⟦đủ danh thiếp để đưa cho những người sẽ gặp⟧ (elég névjegyet a találkozókra) / ⟦danh sách các hàng hóa nhập khẩu⟧ (az importáruk listáját).
+Új szavak: ⟦kí kết⟧ megkötni (szerződést) | ⟦cơ hội⟧ lehetőség | ⟦hợp tác⟧ együttműködni | ⟦nhập khẩu⟧ importálni | ⟦bàn bạc⟧ megbeszélni | ⟦điều kiện⟧ feltétel | ⟦hào hứng⟧ lelkes, izgatott | ⟦danh thiếp⟧ névjegykártya | ⟦thành công⟧ sikerül | ⟦phần⟧ rész | ⟦ý⟧ akarat, szándék
+=id
+Ungkapan kunci: ⟦chẳng mấy ~⟧
+⟦chẳng mấy ~⟧ berarti "hampir tidak ada ~, sedikit ~". Menyatakan bahwa kata ganti atau kata benda sesudahnya sangat sedikit jumlahnya atau sangat singkat waktunya.
+❶ ⟦Chẳng mấy ngày nữa chúng ta sẽ bắt đầu năm học mới.⟧ — Tidak lama lagi kita akan memulai tahun ajaran baru.
+❷ Ⓐ ⟦Chuyến đi công tác lần này dài ngày quá!⟧ — Perjalanan dinas kali ini lama sekali! Ⓑ ⟦Đúng thế! Chẳng mấy ai muốn xa gia đình lâu như vậy.⟧ — Betul! Hampir tidak ada orang yang mau jauh dari keluarga selama itu.
+Ungkapan tentang pekerjaan saat dinas: ⟦kí kết hợp đồng⟧ menandatangani kontrak | ⟦tìm cơ hội hợp tác⟧ mencari peluang kerja sama | ⟦nộp thuế nhập khẩu⟧ membayar bea impor | ⟦bàn bạc về điều kiện đầu tư⟧ membahas syarat investasi
+Latihan pola 2 — bercakaplah seperti contoh dengan kata yang diberikan.
+Contoh (⟦khi⟧): Ⓐ ⟦Em có thường tham gia các chương trình như thế này không?⟧ — Apakah kamu sering ikut program seperti ini? Ⓑ ⟦Không, chẳng mấy khi em có thể tham gia các chương trình như thế này.⟧ — Tidak, saya jarang bisa ikut program seperti ini.
+❶ (⟦ai⟧) Ⓐ ⟦Có ai trong các em có thể giải thích được phần này không?⟧ — Adakah di antara kalian yang bisa menjelaskan bagian ini? Ⓑ ⟦Chẳng mấy ai có thể giải thích được phần này.⟧ — Hampir tidak ada yang bisa menjelaskan bagian ini.
+❷ (⟦nơi⟧) Ⓐ ⟦Có nơi nào có phong cảnh đẹp như ở đây nữa không?⟧ — Adakah tempat lain dengan pemandangan seindah di sini? Ⓑ ⟦Chẳng mấy nơi có phong cảnh đẹp như ở đây.⟧ — Jarang ada tempat dengan pemandangan seindah di sini.
+Percakapan: Min-ho berbicara dengan Hiền tentang perjalanan dinasnya.
+Min-ho: ⟦Tuần sau, anh có kế hoạch đến một công ti ở Bắc Ninh.⟧ — Minggu depan saya berencana ke sebuah perusahaan di Bắc Ninh.
+Hiền: ⟦Anh đến đó để làm gì?⟧ — Kakak ke sana untuk apa?
+Min-ho: ⟦Anh định tìm cơ hội hợp tác với công ti đó. Chẳng mấy khi đi công tác như thế này. Vì thế anh thấy rất hào hứng.⟧ — Saya ingin mencari peluang kerja sama dengan perusahaan itu. Jarang sekali dapat dinas seperti ini, jadi saya sangat bersemangat.
+Hiền: ⟦Anh đã chuẩn bị gì cho chuyến đi công tác này chưa?⟧ — Sudah menyiapkan apa untuk perjalanan dinas ini?
+Min-ho: ⟦Rồi, anh đã chuẩn bị nhiều thứ và đặc biệt là chuẩn bị đủ danh thiếp để đưa cho những người sẽ gặp vì anh nghĩ là sẽ cần đến.⟧ — Sudah, saya menyiapkan banyak hal, terutama kartu nama yang cukup untuk orang-orang yang akan saya temui, karena saya rasa akan diperlukan.
+Hiền: ⟦Mong là mọi việc đều thành công như ý của anh nhé!⟧ — Semoga semuanya berhasil sesuai harapan Kakak!
+Latihan pola — ke mana: ⟦một công ti ở Bắc Ninh⟧ (sebuah perusahaan di Bắc Ninh) / ⟦một văn phòng thuế ở Hải Phòng⟧ (sebuah kantor pajak di Hải Phòng); untuk apa: ⟦tìm cơ hội hợp tác với công ti đó⟧ (mencari kerja sama dengan perusahaan itu) / ⟦nộp thuế nhập khẩu⟧ (membayar bea impor); menyiapkan apa: ⟦đủ danh thiếp để đưa cho những người sẽ gặp⟧ (kartu nama yang cukup untuk orang yang akan ditemui) / ⟦danh sách các hàng hóa nhập khẩu⟧ (daftar barang impor).
+Kosakata baru: ⟦kí kết⟧ menandatangani | ⟦cơ hội⟧ kesempatan, peluang | ⟦hợp tác⟧ bekerja sama | ⟦nhập khẩu⟧ mengimpor | ⟦bàn bạc⟧ berunding | ⟦điều kiện⟧ syarat | ⟦hào hứng⟧ bersemangat | ⟦danh thiếp⟧ kartu nama | ⟦thành công⟧ berhasil | ⟦phần⟧ bagian | ⟦ý⟧ kehendak, niat
+=ja
+核心表現：⟦chẳng mấy ~⟧
+⟦chẳng mấy ~⟧ は「いくらもない～、ほとんどない～」という意味で、後に来る代名詞・名詞がごく少ない、または短い状態を表します。
+❶ ⟦Chẳng mấy ngày nữa chúng ta sẽ bắt đầu năm học mới.⟧ — 何日もしないうちに、私たちは新学期を始めます。
+❷ Ⓐ ⟦Chuyến đi công tác lần này dài ngày quá!⟧ — 今回の出張は長すぎます！ Ⓑ ⟦Đúng thế! Chẳng mấy ai muốn xa gia đình lâu như vậy.⟧ — その通り！そんなに長く家族と離れたい人はほとんどいないでしょう。
+出張時の業務に関する表現：⟦kí kết hợp đồng⟧ 契約を締結する | ⟦tìm cơ hội hợp tác⟧ 協力の機会を探す | ⟦nộp thuế nhập khẩu⟧ 輸入税を納める | ⟦bàn bạc về điều kiện đầu tư⟧ 投資条件について協議する
+文型練習2 — 与えられた語を使って例のように会話してみましょう。
+例（⟦khi⟧）：Ⓐ ⟦Em có thường tham gia các chương trình như thế này không?⟧ — こういうプログラムによく参加しますか。 Ⓑ ⟦Không, chẳng mấy khi em có thể tham gia các chương trình như thế này.⟧ — いいえ、こういうプログラムに参加できることはめったにありません。
+❶（⟦ai⟧）Ⓐ ⟦Có ai trong các em có thể giải thích được phần này không?⟧ — 皆さんの中で、この部分を説明できる人はいますか。 Ⓑ ⟦Chẳng mấy ai có thể giải thích được phần này.⟧ — この部分を説明できる人はほとんどいません。
+❷（⟦nơi⟧）Ⓐ ⟦Có nơi nào có phong cảnh đẹp như ở đây nữa không?⟧ — ここのように景色がきれいな所はほかにありますか。 Ⓑ ⟦Chẳng mấy nơi có phong cảnh đẹp như ở đây.⟧ — ここほど景色がきれいな所はほとんどありません。
+会話：ミンホがヒエンと出張について話しています。
+ミンホ：⟦Tuần sau, anh có kế hoạch đến một công ti ở Bắc Ninh.⟧ — 来週、バクニンのある会社へ行く予定です。
+ヒエン：⟦Anh đến đó để làm gì?⟧ — そこへ何をしに行くんですか。
+ミンホ：⟦Anh định tìm cơ hội hợp tác với công ti đó. Chẳng mấy khi đi công tác như thế này. Vì thế anh thấy rất hào hứng.⟧ — その会社との協力の機会を探すつもりです。こんな出張はめったにないので、とてもわくわくしています。
+ヒエン：⟦Anh đã chuẩn bị gì cho chuyến đi công tác này chưa?⟧ — この出張のために何か準備しましたか。
+ミンホ：⟦Rồi, anh đã chuẩn bị nhiều thứ và đặc biệt là chuẩn bị đủ danh thiếp để đưa cho những người sẽ gặp vì anh nghĩ là sẽ cần đến.⟧ — ええ、いろいろ準備しました。特に、会う人たちに渡す名刺を十分に用意しました。必要になると思うので。
+ヒエン：⟦Mong là mọi việc đều thành công như ý của anh nhé!⟧ — すべて思い通りにうまくいくといいですね！
+文型練習 — どこへ：⟦một công ti ở Bắc Ninh⟧（バクニンの会社）/ ⟦một văn phòng thuế ở Hải Phòng⟧（ハイフォンの税務署）；何をする：⟦tìm cơ hội hợp tác với công ti đó⟧（その会社との協力の機会を探す）/ ⟦nộp thuế nhập khẩu⟧（輸入税を納める）；何を準備：⟦đủ danh thiếp để đưa cho những người sẽ gặp⟧（会う人に渡す十分な名刺）/ ⟦danh sách các hàng hóa nhập khẩu⟧（輸入品のリスト）。
+新出単語：⟦kí kết⟧ 締結する | ⟦cơ hội⟧ 機会 | ⟦hợp tác⟧ 協力する | ⟦nhập khẩu⟧ 輸入する | ⟦bàn bạc⟧ 協議する | ⟦điều kiện⟧ 条件 | ⟦hào hứng⟧ わくわくした | ⟦danh thiếp⟧ 名刺 | ⟦thành công⟧ 成功する | ⟦phần⟧ 部分 | ⟦ý⟧ 意志、意図
+=pl
+Kluczowe wyrażenie: ⟦chẳng mấy ~⟧
+⟦chẳng mấy ~⟧ znaczy „mało kto/co ~, prawie żaden ~”. Wyraża, że następującego zaimka lub rzeczownika jest bardzo mało albo że chodzi o bardzo krótki czas.
+❶ ⟦Chẳng mấy ngày nữa chúng ta sẽ bắt đầu năm học mới.⟧ — Za kilka dni zaczniemy nowy rok szkolny.
+❷ Ⓐ ⟦Chuyến đi công tác lần này dài ngày quá!⟧ — Ten wyjazd służbowy jest strasznie długi! Ⓑ ⟦Đúng thế! Chẳng mấy ai muốn xa gia đình lâu như vậy.⟧ — Właśnie! Mało kto chce być tak długo z dala od rodziny.
+Wyrażenia związane z pracą na wyjeździe służbowym: ⟦kí kết hợp đồng⟧ podpisać umowę | ⟦tìm cơ hội hợp tác⟧ szukać okazji do współpracy | ⟦nộp thuế nhập khẩu⟧ zapłacić cło importowe | ⟦bàn bạc về điều kiện đầu tư⟧ omawiać warunki inwestycji
+Ćwiczenie 2 — rozmawiaj jak we wzorze, używając podanego słowa.
+Wzór (⟦khi⟧): Ⓐ ⟦Em có thường tham gia các chương trình như thế này không?⟧ — Często bierzesz udział w takich programach? Ⓑ ⟦Không, chẳng mấy khi em có thể tham gia các chương trình như thế này.⟧ — Nie, rzadko mogę brać udział w takich programach.
+❶ (⟦ai⟧) Ⓐ ⟦Có ai trong các em có thể giải thích được phần này không?⟧ — Czy ktoś z was potrafi wyjaśnić tę część? Ⓑ ⟦Chẳng mấy ai có thể giải thích được phần này.⟧ — Mało kto potrafi wyjaśnić tę część.
+❷ (⟦nơi⟧) Ⓐ ⟦Có nơi nào có phong cảnh đẹp như ở đây nữa không?⟧ — Czy jest jeszcze gdzieś tak piękny krajobraz jak tutaj? Ⓑ ⟦Chẳng mấy nơi có phong cảnh đẹp như ở đây.⟧ — Mało gdzie jest tak piękny krajobraz jak tutaj.
+Dialog: Min-ho rozmawia z Hiền o swoim wyjeździe służbowym.
+Min-ho: ⟦Tuần sau, anh có kế hoạch đến một công ti ở Bắc Ninh.⟧ — W przyszłym tygodniu planuję pojechać do pewnej firmy w Bắc Ninh.
+Hiền: ⟦Anh đến đó để làm gì?⟧ — Po co tam jedziesz?
+Min-ho: ⟦Anh định tìm cơ hội hợp tác với công ti đó. Chẳng mấy khi đi công tác như thế này. Vì thế anh thấy rất hào hứng.⟧ — Chcę poszukać możliwości współpracy z tą firmą. Rzadko jeżdżę w takie delegacje, więc jestem bardzo podekscytowany.
+Hiền: ⟦Anh đã chuẩn bị gì cho chuyến đi công tác này chưa?⟧ — Przygotowałeś już coś na ten wyjazd?
+Min-ho: ⟦Rồi, anh đã chuẩn bị nhiều thứ và đặc biệt là chuẩn bị đủ danh thiếp để đưa cho những người sẽ gặp vì anh nghĩ là sẽ cần đến.⟧ — Tak, przygotowałem wiele rzeczy, zwłaszcza wystarczająco dużo wizytówek dla osób, z którymi się spotkam, bo myślę, że będą potrzebne.
+Hiền: ⟦Mong là mọi việc đều thành công như ý của anh nhé!⟧ — Mam nadzieję, że wszystko pójdzie po twojej myśli!
+Ćwiczenie wzorców — dokąd: ⟦một công ti ở Bắc Ninh⟧ (firma w Bắc Ninh) / ⟦một văn phòng thuế ở Hải Phòng⟧ (urząd skarbowy w Hải Phòng); co robić: ⟦tìm cơ hội hợp tác với công ti đó⟧ (szukać współpracy z tą firmą) / ⟦nộp thuế nhập khẩu⟧ (zapłacić cło importowe); co przygotować: ⟦đủ danh thiếp để đưa cho những người sẽ gặp⟧ (dość wizytówek dla rozmówców) / ⟦danh sách các hàng hóa nhập khẩu⟧ (listę importowanych towarów).
+Nowe słówka: ⟦kí kết⟧ zawrzeć (umowę) | ⟦cơ hội⟧ okazja | ⟦hợp tác⟧ współpracować | ⟦nhập khẩu⟧ importować | ⟦bàn bạc⟧ omawiać | ⟦điều kiện⟧ warunek | ⟦hào hứng⟧ podekscytowany | ⟦danh thiếp⟧ wizytówka | ⟦thành công⟧ odnieść sukces | ⟦phần⟧ część | ⟦ý⟧ wola, zamiar

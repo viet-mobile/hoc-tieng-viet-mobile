@@ -1,0 +1,163 @@
+@@ pdf-grammar-27286f9e1f1c796a#0
+=cs
+Gramatický výklad
+⟦không A cũng không B⟧ znamená „ani A, ani B“.
+⟦Cô Lan không cao cũng không thấp.⟧ → Paní učitelka Lan není ani vysoká, ani malá. · ⟦Thời tiết mùa thu không lạnh cũng không nóng.⟧ → Podzimní počasí není ani chladné, ani horké. · ⟦Anh Toàn năm nay 42 tuổi, không già cũng không trẻ.⟧ → Toànovi je letos 42 – není ani starý, ani mladý.
+Sloveso + ⟦xong⟧ znamená „dokončit ~, mít hotovo“.
+⟦Các sinh viên đã làm xong bài tập.⟧ → Studenti už mají úkoly hotové. · ⟦Từ khi thi xong, tôi chưa gặp lại cô ấy.⟧ → Od té doby, co skončily zkoušky, jsem ji ještě neviděl. · ⟦Hễ làm việc xong là cô Phương đi đón con ngay.⟧ → Jakmile Phương skončí práci, jde hned vyzvednout dítě.
+=zh_cn
+语法解说
+⟦không A cũng không B⟧ 意为“既不A，也不B”。
+⟦Cô Lan không cao cũng không thấp.⟧ → 兰老师不高也不矮。 · ⟦Thời tiết mùa thu không lạnh cũng không nóng.⟧ → 秋天的天气不冷也不热。 · ⟦Anh Toàn năm nay 42 tuổi, không già cũng không trẻ.⟧ → 阿全今年42岁，不老也不年轻。
+动词 + ⟦xong⟧ 表示“做完……”。
+⟦Các sinh viên đã làm xong bài tập.⟧ → 学生们已经做完作业了。 · ⟦Từ khi thi xong, tôi chưa gặp lại cô ấy.⟧ → 考完试以后，我还没再见过她。 · ⟦Hễ làm việc xong là cô Phương đi đón con ngay.⟧ → 阿芳一下班就马上去接孩子。
+=zh
+文法解說
+⟦không A cũng không B⟧ 意為「既不A，也不B」。
+⟦Cô Lan không cao cũng không thấp.⟧ → 蘭老師不高也不矮。 · ⟦Thời tiết mùa thu không lạnh cũng không nóng.⟧ → 秋天的天氣不冷也不熱。 · ⟦Anh Toàn năm nay 42 tuổi, không già cũng không trẻ.⟧ → 阿全今年42歲，不老也不年輕。
+動詞 + ⟦xong⟧ 表示「做完……」。
+⟦Các sinh viên đã làm xong bài tập.⟧ → 學生們已經寫完作業了。 · ⟦Từ khi thi xong, tôi chưa gặp lại cô ấy.⟧ → 考完試以後，我還沒再見過她。 · ⟦Hễ làm việc xong là cô Phương đi đón con ngay.⟧ → 阿芳一下班就馬上去接孩子。
+=en
+Grammar notes
+⟦không A cũng không B⟧ means "neither A nor B".
+⟦Cô Lan không cao cũng không thấp.⟧ → Ms Lan is neither tall nor short. · ⟦Thời tiết mùa thu không lạnh cũng không nóng.⟧ → Autumn weather is neither cold nor hot. · ⟦Anh Toàn năm nay 42 tuổi, không già cũng không trẻ.⟧ → Toàn is 42 this year – neither old nor young.
+Verb + ⟦xong⟧ means "to finish ~".
+⟦Các sinh viên đã làm xong bài tập.⟧ → The students have finished their homework. · ⟦Từ khi thi xong, tôi chưa gặp lại cô ấy.⟧ → Since the exams finished, I haven't seen her again. · ⟦Hễ làm việc xong là cô Phương đi đón con ngay.⟧ → As soon as she finishes work, Phương goes straight to pick up her child.
+=fr
+Notes de grammaire
+⟦không A cũng không B⟧ signifie « ni A ni B ».
+⟦Cô Lan không cao cũng không thấp.⟧ → Mme Lan n'est ni grande ni petite. · ⟦Thời tiết mùa thu không lạnh cũng không nóng.⟧ → En automne, il ne fait ni froid ni chaud. · ⟦Anh Toàn năm nay 42 tuổi, không già cũng không trẻ.⟧ → Toàn a 42 ans cette année, il n'est ni vieux ni jeune.
+Verbe + ⟦xong⟧ signifie « finir de ~ ».
+⟦Các sinh viên đã làm xong bài tập.⟧ → Les étudiants ont fini leurs devoirs. · ⟦Từ khi thi xong, tôi chưa gặp lại cô ấy.⟧ → Depuis la fin des examens, je ne l'ai pas revue. · ⟦Hễ làm việc xong là cô Phương đi đón con ngay.⟧ → Dès qu'elle a fini le travail, Phương va aussitôt chercher son enfant.
+=de
+Grammatikerläuterungen
+⟦không A cũng không B⟧ bedeutet „weder A noch B“.
+⟦Cô Lan không cao cũng không thấp.⟧ → Frau Lan ist weder groß noch klein. · ⟦Thời tiết mùa thu không lạnh cũng không nóng.⟧ → Das Herbstwetter ist weder kalt noch heiß. · ⟦Anh Toàn năm nay 42 tuổi, không già cũng không trẻ.⟧ → Toàn ist dieses Jahr 42 – weder alt noch jung.
+Verb + ⟦xong⟧ bedeutet „~ beenden, mit ~ fertig sein“.
+⟦Các sinh viên đã làm xong bài tập.⟧ → Die Studenten sind mit den Aufgaben fertig. · ⟦Từ khi thi xong, tôi chưa gặp lại cô ấy.⟧ → Seit die Prüfungen vorbei sind, habe ich sie nicht wiedergesehen. · ⟦Hễ làm việc xong là cô Phương đi đón con ngay.⟧ → Sobald Phương mit der Arbeit fertig ist, holt sie sofort ihr Kind ab.
+=hu
+Nyelvtani magyarázat
+A ⟦không A cũng không B⟧ jelentése „sem A, sem B”.
+⟦Cô Lan không cao cũng không thấp.⟧ → Lan tanárnő se nem magas, se nem alacsony. · ⟦Thời tiết mùa thu không lạnh cũng không nóng.⟧ → Az őszi idő se nem hideg, se nem meleg. · ⟦Anh Toàn năm nay 42 tuổi, không già cũng không trẻ.⟧ → Toàn idén 42 éves – se nem öreg, se nem fiatal.
+Az ige + ⟦xong⟧ jelentése „befejezni ~t, végezni ~vel”.
+⟦Các sinh viên đã làm xong bài tập.⟧ → A diákok már befejezték a házi feladatot. · ⟦Từ khi thi xong, tôi chưa gặp lại cô ấy.⟧ → Mióta véget értek a vizsgák, nem láttam őt. · ⟦Hễ làm việc xong là cô Phương đi đón con ngay.⟧ → Amint Phương végez a munkával, rögtön megy a gyerekéért.
+=id
+Penjelasan tata bahasa
+⟦không A cũng không B⟧ berarti "tidak A dan tidak juga B".
+⟦Cô Lan không cao cũng không thấp.⟧ → Bu Lan tidak tinggi dan tidak juga pendek. · ⟦Thời tiết mùa thu không lạnh cũng không nóng.⟧ → Cuaca musim gugur tidak dingin dan tidak juga panas. · ⟦Anh Toàn năm nay 42 tuổi, không già cũng không trẻ.⟧ → Mas Toàn tahun ini 42 tahun, tidak tua dan tidak juga muda.
+Verba + ⟦xong⟧ berarti "selesai ~".
+⟦Các sinh viên đã làm xong bài tập.⟧ → Para mahasiswa sudah selesai mengerjakan tugas. · ⟦Từ khi thi xong, tôi chưa gặp lại cô ấy.⟧ → Sejak ujian selesai, saya belum bertemu dia lagi. · ⟦Hễ làm việc xong là cô Phương đi đón con ngay.⟧ → Setiap selesai bekerja, Bu Phương langsung menjemput anaknya.
+=ja
+文法解説
+⟦không A cũng không B⟧ の形で「Aでもなく Bでもない」という意味で使われます。
+⟦Cô Lan không cao cũng không thấp.⟧ → ラン先生は背が高くも低くもない。 · ⟦Thời tiết mùa thu không lạnh cũng không nóng.⟧ → 秋の天気は寒くも暑くもない。 · ⟦Anh Toàn năm nay 42 tuổi, không già cũng không trẻ.⟧ → トアンさんは今年42歳で、年寄りでも若くもない。
+動詞 + ⟦xong⟧ の形で「～し終える」という意味で使われます。
+⟦Các sinh viên đã làm xong bài tập.⟧ → 大学生たちはもう課題を終えた。 · ⟦Từ khi thi xong, tôi chưa gặp lại cô ấy.⟧ → 試験が終わってから、まだ彼女に会っていない。 · ⟦Hễ làm việc xong là cô Phương đi đón con ngay.⟧ → 仕事を終えるといつも、フオンさんはすぐ子どもを迎えに行く。
+=pl
+Objaśnienia gramatyczne
+⟦không A cũng không B⟧ znaczy „ani A, ani B”.
+⟦Cô Lan không cao cũng không thấp.⟧ → Pani Lan nie jest ani wysoka, ani niska. · ⟦Thời tiết mùa thu không lạnh cũng không nóng.⟧ → Jesienna pogoda nie jest ani zimna, ani gorąca. · ⟦Anh Toàn năm nay 42 tuổi, không già cũng không trẻ.⟧ → Toàn ma w tym roku 42 lata – nie jest ani stary, ani młody.
+Czasownik + ⟦xong⟧ znaczy „skończyć ~”.
+⟦Các sinh viên đã làm xong bài tập.⟧ → Studenci skończyli już zadania. · ⟦Từ khi thi xong, tôi chưa gặp lại cô ấy.⟧ → Odkąd skończyły się egzaminy, jeszcze jej nie widziałem. · ⟦Hễ làm việc xong là cô Phương đi đón con ngay.⟧ → Gdy tylko Phương skończy pracę, od razu idzie odebrać dziecko.
+@@ pdf-grammar-9aea88abd2574c75#0
+=cs
+Gramatický výklad
+⟦không ai⟧ + sloveso vyjadřuje silný zápor: „nikdo ne~“.
+⟦Không ai biết tại sao họ cãi nhau.⟧ → Nikdo neví, proč se hádají. · ⟦Cảnh sát đã gọi nhiều lần nhưng không ai trả lời.⟧ → Policie několikrát volala, ale nikdo neodpověděl. · ⟦Tôi có nhiều bạn bè nhưng không ai có thể giúp tôi việc đó.⟧ → Mám hodně přátel, ale nikdo mi s tím nemůže pomoct.
+=zh_cn
+语法解说
+⟦không ai⟧ + 动词 表示强烈的否定，意为“谁都不……、没有人……”。
+⟦Không ai biết tại sao họ cãi nhau.⟧ → 谁也不知道他们为什么吵架。 · ⟦Cảnh sát đã gọi nhiều lần nhưng không ai trả lời.⟧ → 警察叫了好几次，但没有人回应。 · ⟦Tôi có nhiều bạn bè nhưng không ai có thể giúp tôi việc đó.⟧ → 我有很多朋友，但没有人能帮我这件事。
+=zh
+文法解說
+⟦không ai⟧ + 動詞 表示強烈的否定，意為「誰都不……、沒有人……」。
+⟦Không ai biết tại sao họ cãi nhau.⟧ → 誰也不知道他們為什麼吵架。 · ⟦Cảnh sát đã gọi nhiều lần nhưng không ai trả lời.⟧ → 警察叫了好幾次，但沒有人回應。 · ⟦Tôi có nhiều bạn bè nhưng không ai có thể giúp tôi việc đó.⟧ → 我有很多朋友，但沒有人能幫我這件事。
+=en
+Grammar notes
+⟦không ai⟧ + verb expresses strong negation: "nobody ~, no one at all ~".
+⟦Không ai biết tại sao họ cãi nhau.⟧ → Nobody knows why they're arguing. · ⟦Cảnh sát đã gọi nhiều lần nhưng không ai trả lời.⟧ → The police called out several times, but nobody answered. · ⟦Tôi có nhiều bạn bè nhưng không ai có thể giúp tôi việc đó.⟧ → I have many friends, but none of them can help me with that.
+=fr
+Notes de grammaire
+⟦không ai⟧ + verbe exprime une négation forte : « personne ne ~ ».
+⟦Không ai biết tại sao họ cãi nhau.⟧ → Personne ne sait pourquoi ils se disputent. · ⟦Cảnh sát đã gọi nhiều lần nhưng không ai trả lời.⟧ → La police a appelé plusieurs fois, mais personne n'a répondu. · ⟦Tôi có nhiều bạn bè nhưng không ai có thể giúp tôi việc đó.⟧ → J'ai beaucoup d'amis, mais aucun ne peut m'aider pour ça.
+=de
+Grammatikerläuterungen
+⟦không ai⟧ + Verb drückt eine starke Verneinung aus: „niemand ~“.
+⟦Không ai biết tại sao họ cãi nhau.⟧ → Niemand weiß, warum sie streiten. · ⟦Cảnh sát đã gọi nhiều lần nhưng không ai trả lời.⟧ → Die Polizei rief mehrmals, aber niemand antwortete. · ⟦Tôi có nhiều bạn bè nhưng không ai có thể giúp tôi việc đó.⟧ → Ich habe viele Freunde, aber niemand kann mir dabei helfen.
+=hu
+Nyelvtani magyarázat
+A ⟦không ai⟧ + ige erős tagadást fejez ki: „senki sem ~”.
+⟦Không ai biết tại sao họ cãi nhau.⟧ → Senki sem tudja, miért veszekednek. · ⟦Cảnh sát đã gọi nhiều lần nhưng không ai trả lời.⟧ → A rendőrség többször is szólította őket, de senki sem válaszolt. · ⟦Tôi có nhiều bạn bè nhưng không ai có thể giúp tôi việc đó.⟧ → Sok barátom van, de ebben senki sem tud segíteni.
+=id
+Penjelasan tata bahasa
+⟦không ai⟧ + verba menyatakan penyangkalan kuat: "tidak ada seorang pun yang ~".
+⟦Không ai biết tại sao họ cãi nhau.⟧ → Tidak ada yang tahu mengapa mereka bertengkar. · ⟦Cảnh sát đã gọi nhiều lần nhưng không ai trả lời.⟧ → Polisi sudah memanggil berkali-kali, tetapi tidak ada yang menjawab. · ⟦Tôi có nhiều bạn bè nhưng không ai có thể giúp tôi việc đó.⟧ → Saya punya banyak teman, tetapi tidak ada yang bisa membantu saya dalam hal itu.
+=ja
+文法解説
+⟦không ai⟧ + 動詞の形で強い否定を表し、「まったく、誰も～しない」という意味に解釈されます。
+⟦Không ai biết tại sao họ cãi nhau.⟧ → 彼らがなぜけんかしているのか誰も知らない。 · ⟦Cảnh sát đã gọi nhiều lần nhưng không ai trả lời.⟧ → 警察が何度も呼んだが、誰も返事をしなかった。 · ⟦Tôi có nhiều bạn bè nhưng không ai có thể giúp tôi việc đó.⟧ → 私には友達がたくさんいるが、そのことを手伝ってくれる人は誰もいなかった。
+=pl
+Objaśnienia gramatyczne
+⟦không ai⟧ + czasownik wyraża silne przeczenie: „nikt nie ~”.
+⟦Không ai biết tại sao họ cãi nhau.⟧ → Nikt nie wie, dlaczego się kłócą. · ⟦Cảnh sát đã gọi nhiều lần nhưng không ai trả lời.⟧ → Policja wołała kilka razy, ale nikt nie odpowiedział. · ⟦Tôi có nhiều bạn bè nhưng không ai có thể giúp tôi việc đó.⟧ → Mam wielu przyjaciół, ale nikt nie może mi w tym pomóc.
+@@ pdf-grammar-59a6b930410b7b1b#0
+=cs
+Gramatický výklad
+⟦nhé⟧ / ⟦nhỉ⟧ stojí na konci věty a jsou to důvěrné výrazy, jimiž se mluvčí snaží získat aktivní souhlas a podporu posluchače pro to, co navrhuje nebo říká.
+⟦Chiều nay chúng mình đi chơi nhé!⟧ → Pojďme dnes odpoledne ven, ano! (snaha získat souhlas s návrhem „jít ven“) · ⟦Sau khi đọc sách xong thì trả lại cho mình nhé!⟧ → Až knihu dočteš, vrať mi ji, ano! (snaha získat souhlas s prosbou „vrátit knihu“) · ⟦Chúng ta nghỉ một chút nhỉ?⟧ → Dáme si chvilku pauzu, ne? (snaha získat souhlas s návrhem „odpočinout si“) · ⟦Cô ấy xinh quá nhỉ?⟧ → Ta je ale hezká, že? (snaha získat souhlas s názorem „je hezká“)
+⟦cũng được⟧ / ⟦cũng được thôi⟧ znamená „dobře, klidně“; vyjadřuje souhlas, ale s určitou nutností či lehkou výhradou.
+⟦Ông ngồi đấy cũng được.⟧ → Klidně si tam, dědečku, sedněte. (souhlas s mírným nátlakem) · ⟦Hôm nay anh nghỉ học cũng được.⟧ → Dnes klidně vynechám učení. (souhlas, ale ne úplně rád) · ⟦Chiều nay chị ấy về quê cũng được.⟧ → Klidně ať dnes odpoledne jede domů. (souhlas s mírným nátlakem) · ⟦Tối nay, chúng mình uống bia cũng được.⟧ → Dnes večer si klidně dáme pivo. (souhlas, ale bez velkého nadšení)
+=zh_cn
+语法解说
+⟦nhé⟧ / ⟦nhỉ⟧ 位于句末，是一种亲切的表达，用于争取对方对所提出事项的积极赞同和支持。
+⟦Chiều nay chúng mình đi chơi nhé!⟧ → 今天下午我们去玩吧！（争取对方积极赞同“去玩”的提议） · ⟦Sau khi đọc sách xong thì trả lại cho mình nhé!⟧ → 书看完了还给我哦！（争取对方赞同“看完还书”） · ⟦Chúng ta nghỉ một chút nhỉ?⟧ → 我们休息一会儿吧？（争取对方赞同“休息一下”） · ⟦Cô ấy xinh quá nhỉ?⟧ → 她真漂亮啊，是吧？（争取对方赞同“她很漂亮”）
+⟦cũng được⟧ / ⟦cũng được thôi⟧ 意为“也行、可以”，表示对某事表示同意，但带有一定的勉强，流露出些许担心。
+⟦Ông ngồi đấy cũng được.⟧ → 爷爷您坐那儿也行。（同意但带些勉强） · ⟦Hôm nay anh nghỉ học cũng được.⟧ → 今天我不去上课也行。（同意但不太情愿） · ⟦Chiều nay chị ấy về quê cũng được.⟧ → 今天下午她回老家也行。（同意但带些勉强） · ⟦Tối nay, chúng mình uống bia cũng được.⟧ → 今晚我们喝啤酒也行。（同意但不怎么起劲）
+=zh
+文法解說
+⟦nhé⟧ / ⟦nhỉ⟧ 位於句尾，是一種親切的表達，用於爭取對方對所提事項的積極贊同和支持。
+⟦Chiều nay chúng mình đi chơi nhé!⟧ → 今天下午我們去玩吧！（爭取對方積極贊同「去玩」的提議） · ⟦Sau khi đọc sách xong thì trả lại cho mình nhé!⟧ → 書看完了要還我喔！（爭取對方贊同「看完還書」） · ⟦Chúng ta nghỉ một chút nhỉ?⟧ → 我們休息一下吧？（爭取對方贊同「休息一下」） · ⟦Cô ấy xinh quá nhỉ?⟧ → 她真漂亮耶，對吧？（爭取對方贊同「她很漂亮」）
+⟦cũng được⟧ / ⟦cũng được thôi⟧ 意為「也可以、也行」，表示對某事表示同意，但帶有一定的勉強，透露些許擔心。
+⟦Ông ngồi đấy cũng được.⟧ → 爺爺您坐那裡也可以。（同意但帶些勉強） · ⟦Hôm nay anh nghỉ học cũng được.⟧ → 今天我不上課也行。（同意但不太情願） · ⟦Chiều nay chị ấy về quê cũng được.⟧ → 今天下午她回老家也可以。（同意但帶些勉強） · ⟦Tối nay, chúng mình uống bia cũng được.⟧ → 今晚我們喝啤酒也行。（同意但不怎麼起勁）
+=en
+Grammar notes
+⟦nhé⟧ / ⟦nhỉ⟧ come at the end of a sentence and are friendly expressions used to win the listener's active agreement and support for what is proposed or said.
+⟦Chiều nay chúng mình đi chơi nhé!⟧ → Let's go out this afternoon, OK? (seeking agreement to "going out") · ⟦Sau khi đọc sách xong thì trả lại cho mình nhé!⟧ → Give the book back to me when you've finished, OK? (seeking agreement to "returning the book") · ⟦Chúng ta nghỉ một chút nhỉ?⟧ → Shall we take a little break? (seeking agreement to "taking a break") · ⟦Cô ấy xinh quá nhỉ?⟧ → She's really pretty, isn't she? (seeking agreement that "she's pretty")
+⟦cũng được⟧ / ⟦cũng được thôi⟧ mean "that's fine, all right"; they express agreement, but with a certain reluctance or slight concern.
+⟦Ông ngồi đấy cũng được.⟧ → You can sit there, grandpa, that's fine. (agreement with a slight sense of obligation) · ⟦Hôm nay anh nghỉ học cũng được.⟧ → I suppose I can skip class today. (agreement, but not very happily) · ⟦Chiều nay chị ấy về quê cũng được.⟧ → She can go back home this afternoon, that's fine. (agreement with a slight sense of obligation) · ⟦Tối nay, chúng mình uống bia cũng được.⟧ → We can have beer tonight, I suppose. (agreement without much enthusiasm)
+=fr
+Notes de grammaire
+⟦nhé⟧ / ⟦nhỉ⟧ se placent en fin de phrase ; ce sont des expressions familières servant à obtenir l'adhésion active de l'interlocuteur à ce qui est proposé ou dit.
+⟦Chiều nay chúng mình đi chơi nhé!⟧ → Et si on sortait cet après-midi, d'accord ? (recherche d'adhésion à « sortir ») · ⟦Sau khi đọc sách xong thì trả lại cho mình nhé!⟧ → Rends-moi le livre quand tu l'auras fini, d'accord ? (recherche d'adhésion à « rendre le livre ») · ⟦Chúng ta nghỉ một chút nhỉ?⟧ → On fait une petite pause, non ? (recherche d'adhésion à « faire une pause ») · ⟦Cô ấy xinh quá nhỉ?⟧ → Elle est vraiment jolie, hein ? (recherche d'adhésion à « elle est jolie »)
+⟦cũng được⟧ / ⟦cũng được thôi⟧ signifient « ça va, d'accord » ; ils expriment un accord, mais avec une certaine contrainte ou une légère réserve.
+⟦Ông ngồi đấy cũng được.⟧ → Vous pouvez vous asseoir là, grand-père, ça ira. (accord avec une légère contrainte) · ⟦Hôm nay anh nghỉ học cũng được.⟧ → Je peux bien sécher les cours aujourd'hui. (accord, mais sans grand plaisir) · ⟦Chiều nay chị ấy về quê cũng được.⟧ → Elle peut rentrer au village cet après-midi, soit. (accord avec une légère contrainte) · ⟦Tối nay, chúng mình uống bia cũng được.⟧ → Ce soir, on peut boire une bière, pourquoi pas. (accord sans grand enthousiasme)
+=de
+Grammatikerläuterungen
+⟦nhé⟧ / ⟦nhỉ⟧ stehen am Satzende und sind vertraute Ausdrücke, mit denen man die aktive Zustimmung und Unterstützung des Gesprächspartners für das Vorgeschlagene oder Gesagte gewinnen will.
+⟦Chiều nay chúng mình đi chơi nhé!⟧ → Lass uns heute Nachmittag ausgehen, ja? (Zustimmung zu „ausgehen“ gesucht) · ⟦Sau khi đọc sách xong thì trả lại cho mình nhé!⟧ → Gib mir das Buch zurück, wenn du es gelesen hast, ja? (Zustimmung zu „Buch zurückgeben“ gesucht) · ⟦Chúng ta nghỉ một chút nhỉ?⟧ → Machen wir kurz Pause, oder? (Zustimmung zu „Pause machen“ gesucht) · ⟦Cô ấy xinh quá nhỉ?⟧ → Sie ist wirklich hübsch, nicht wahr? (Zustimmung zu „sie ist hübsch“ gesucht)
+⟦cũng được⟧ / ⟦cũng được thôi⟧ bedeuten „in Ordnung, meinetwegen“; sie drücken Zustimmung aus, aber mit einem gewissen Zwang oder leichten Bedenken.
+⟦Ông ngồi đấy cũng được.⟧ → Sie können sich ruhig dorthin setzen, Opa. (Zustimmung mit leichtem Zwang) · ⟦Hôm nay anh nghỉ học cũng được.⟧ → Heute kann ich den Unterricht ja mal ausfallen lassen. (Zustimmung, aber nicht sehr gern) · ⟦Chiều nay chị ấy về quê cũng được.⟧ → Meinetwegen kann sie heute Nachmittag nach Hause fahren. (Zustimmung mit leichtem Zwang) · ⟦Tối nay, chúng mình uống bia cũng được.⟧ → Heute Abend können wir ja Bier trinken. (Zustimmung ohne große Begeisterung)
+=hu
+Nyelvtani magyarázat
+A ⟦nhé⟧ / ⟦nhỉ⟧ a mondat végén áll; bizalmas kifejezések, amelyekkel a beszélő a hallgató aktív egyetértését és támogatását igyekszik megszerezni a javaslathoz, mondanivalóhoz.
+⟦Chiều nay chúng mình đi chơi nhé!⟧ → Menjünk el ma délután szórakozni, jó? (egyetértést kér a „menjünk el” javaslathoz) · ⟦Sau khi đọc sách xong thì trả lại cho mình nhé!⟧ → Ha elolvastad a könyvet, add vissza, jó? (egyetértést kér a „könyv visszaadásához”) · ⟦Chúng ta nghỉ một chút nhỉ?⟧ → Pihenjünk egy kicsit, nem? (egyetértést kér a „pihenéshez”) · ⟦Cô ấy xinh quá nhỉ?⟧ → Milyen csinos, ugye? (egyetértést kér a „csinos” véleményhez)
+A ⟦cũng được⟧ / ⟦cũng được thôi⟧ jelentése „rendben, jó, ha…”; egyetértést fejez ki, de bizonyos kényszerrel vagy enyhe aggodalommal.
+⟦Ông ngồi đấy cũng được.⟧ → Nagyapa, üljön csak oda, az is jó. (egyetértés enyhe kényszerrel) · ⟦Hôm nay anh nghỉ học cũng được.⟧ → Ma kihagyhatom a tanulást, jó. (egyetértés, de nem túl szívesen) · ⟦Chiều nay chị ấy về quê cũng được.⟧ → Hazautazhat ma délután, rendben. (egyetértés enyhe kényszerrel) · ⟦Tối nay, chúng mình uống bia cũng được.⟧ → Ma este sörözhetünk is, jó. (egyetértés különösebb lelkesedés nélkül)
+=id
+Penjelasan tata bahasa
+⟦nhé⟧ / ⟦nhỉ⟧ terletak di akhir kalimat; merupakan ungkapan akrab untuk memperoleh persetujuan dan dukungan aktif lawan bicara terhadap hal yang diusulkan atau diucapkan.
+⟦Chiều nay chúng mình đi chơi nhé!⟧ → Sore ini kita jalan-jalan, ya! (meminta persetujuan untuk usulan "jalan-jalan") · ⟦Sau khi đọc sách xong thì trả lại cho mình nhé!⟧ → Setelah selesai membaca, kembalikan bukunya kepadaku, ya! (meminta persetujuan untuk "mengembalikan buku") · ⟦Chúng ta nghỉ một chút nhỉ?⟧ → Kita istirahat sebentar, ya? (meminta persetujuan untuk "istirahat") · ⟦Cô ấy xinh quá nhỉ?⟧ → Dia cantik sekali, ya? (meminta persetujuan untuk pendapat "dia cantik")
+⟦cũng được⟧ / ⟦cũng được thôi⟧ berarti "boleh juga, tidak apa-apa"; menyatakan persetujuan, tetapi dengan sedikit keterpaksaan atau kekhawatiran.
+⟦Ông ngồi đấy cũng được.⟧ → Kakek duduk di sana juga tidak apa-apa. (setuju dengan sedikit keterpaksaan) · ⟦Hôm nay anh nghỉ học cũng được.⟧ → Hari ini aku bolos belajar juga tidak apa-apa. (setuju, tetapi kurang senang) · ⟦Chiều nay chị ấy về quê cũng được.⟧ → Sore ini dia pulang kampung juga boleh. (setuju dengan sedikit keterpaksaan) · ⟦Tối nay, chúng mình uống bia cũng được.⟧ → Malam ini kita minum bir juga boleh. (setuju, tetapi tidak terlalu antusias)
+=ja
+文法解説
+⟦nhé⟧ / ⟦nhỉ⟧：文末に置いて、示した事柄について相手の積極的な同調と支持を引き出すために使う親しみのある表現です。
+⟦Chiều nay chúng mình đi chơi nhé!⟧ → 今日の午後、遊びに行こうね！（「遊びに行こう」という意見への積極的な同調・支持を引き出そうとする） · ⟦Sau khi đọc sách xong thì trả lại cho mình nhé!⟧ → 本を読み終わったら返してね！（「読んだら返して」という意見への同調・支持を引き出そうとする） · ⟦Chúng ta nghỉ một chút nhỉ?⟧ → ちょっと休んだほうがいいよね？（「少し休もう」という意見への同調・支持を引き出そうとする） · ⟦Cô ấy xinh quá nhỉ?⟧ → 彼女、本当にきれいだよね？（「彼女はきれいだ」という意見への同調・支持を引き出そうとする）
+⟦cũng được⟧ / ⟦cũng được thôi⟧：「かまわない」「いいよ」という意味で、あることに同意を示すものの、ある程度の強制性を帯び、若干の懸念を表す表現です。
+⟦Ông ngồi đấy cũng được.⟧ → おじいさんはあそこに座ってもかまいませんよ。（同意しつつ若干の強制性を帯びる） · ⟦Hôm nay anh nghỉ học cũng được.⟧ → 今日は勉強を休んでもいいか。（同意しつつあまり愉快ではないことを表す） · ⟦Chiều nay chị ấy về quê cũng được.⟧ → 今日の午後、彼女は故郷に帰ってもかまわない。（同意しつつ若干の強制性を帯びる） · ⟦Tối nay, chúng mình uống bia cũng được.⟧ → 今夜、ビールを飲んでもいいよ。（同意しつつあまり楽しくはないことを表す）
+=pl
+Objaśnienia gramatyczne
+⟦nhé⟧ / ⟦nhỉ⟧ stoją na końcu zdania; są to poufałe zwroty, którymi mówiący stara się uzyskać aktywną zgodę i poparcie słuchacza dla tego, co proponuje lub mówi.
+⟦Chiều nay chúng mình đi chơi nhé!⟧ → Chodźmy dziś po południu się rozerwać, dobrze? (zabieganie o zgodę na „wyjście”) · ⟦Sau khi đọc sách xong thì trả lại cho mình nhé!⟧ → Jak przeczytasz książkę, oddaj mi ją, dobrze? (zabieganie o zgodę na „oddanie książki”) · ⟦Chúng ta nghỉ một chút nhỉ?⟧ → Zróbmy sobie chwilę przerwy, co? (zabieganie o zgodę na „przerwę”) · ⟦Cô ấy xinh quá nhỉ?⟧ → Ale ona ładna, prawda? (zabieganie o zgodę z opinią „jest ładna”)
+⟦cũng được⟧ / ⟦cũng được thôi⟧ znaczą „dobrze, niech będzie”; wyrażają zgodę, ale z pewnym przymusem lub lekkim niepokojem.
+⟦Ông ngồi đấy cũng được.⟧ → Dziadku, może pan tam usiąść, niech będzie. (zgoda z lekkim przymusem) · ⟦Hôm nay anh nghỉ học cũng được.⟧ → Dziś mogę sobie odpuścić naukę, niech będzie. (zgoda, ale bez przyjemności) · ⟦Chiều nay chị ấy về quê cũng được.⟧ → Niech jedzie dziś po południu w rodzinne strony, dobrze. (zgoda z lekkim przymusem) · ⟦Tối nay, chúng mình uống bia cũng được.⟧ → Dziś wieczorem możemy wypić piwo, niech będzie. (zgoda bez wielkiego entuzjazmu)

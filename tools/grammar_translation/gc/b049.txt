@@ -1,0 +1,211 @@
+@@ pdf-grammar-554017d552db12ff#0
+=cs
+Klíčový výraz: ⟦không bao giờ⟧
+⟦không bao giờ + sloveso⟧ vyjadřuje silný zápor: „nikdy, v žádném případě ne~“.
+❶ ⟦Tôi không biết bơi nên không bao giờ đi chơi biển một mình.⟧ — Neumím plavat, takže nikdy nejezdím k moři sám.
+❷ Ⓐ ⟦Đây là ảnh chị chụp hồi còn là sinh viên, phải không?⟧ — Tohle je fotka z doby, kdy jsi byla studentka, že? Ⓑ ⟦Đúng rồi. Ảnh chụp với giáo sư và các bạn của chị đấy. Có lẽ chị sẽ không bao giờ quên được những kỉ niệm với họ.⟧ — Ano. Je to fotka s profesorem a spolužáky. Vzpomínky na ně asi nikdy nezapomenu.
+Výrazy k požadovaným podmínkám bydlení: ⟦nhà riêng⟧ samostatný dům | ⟦giá thuê vừa phải⟧ přiměřený nájem | ⟦giao thông thuận lợi⟧ dobrá dopravní dostupnost | ⟦khu dân cư yên tĩnh⟧ klidná obytná čtvrť | ⟦ngôi nhà có view đẹp⟧ dům s pěkným výhledem | ⟦khu vực đầy đủ cơ sở tiện ích⟧ oblast s kompletní občanskou vybaveností
+Procvičování 1 — doplňte ⟦không bao giờ⟧ podle vzoru a veďte rozhovor.
+Vzor: Ⓐ ⟦Lần trước, khi đến nhà hàng ABC, anh thấy các món ở đó không ngon, đúng không?⟧ — Když jsi byl minule v restauraci ABC, jídla ti nechutnala, že? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ đến nhà hàng ABC nữa.⟧ — Přesně. Od teď už do restaurace ABC nikdy nepůjdu.
+❶ Ⓐ ⟦Lần trước, khi uống nhiều rượu, anh đã rất mệt, đúng không?⟧ — Když jsi minule hodně pil, bylo ti pak hrozně, že? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ uống nhiều rượu nữa.⟧ — Přesně. Od teď už nikdy nebudu tolik pít.
+❷ Ⓐ ⟦Lần trước, khi làm việc đến tận khuya, anh bị đau hết cả người, đúng không?⟧ — Když jsi minule pracoval až do noci, bolelo tě celé tělo, že? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ làm việc đến tận khuya nữa.⟧ — Přesně. Od teď už nikdy nebudu pracovat do noci.
+Rozhovor: Min-ho mluví s Trang o plánu stěhování.
+Trang: ⟦Anh đang tìm nhà mới à?⟧ — Hledáš nový byt?
+Min-ho: ⟦Ừ, nhà anh đang ở sắp hết hợp đồng rồi. Nhưng không dễ tìm được nhà vừa ý.⟧ — Jo, smlouva na můj současný byt brzy končí. Ale najít něco, co by mi vyhovovalo, není snadné.
+Trang: ⟦Vậy à? Thế sao anh không gia hạn hợp đồng nhà cũ?⟧ — Vážně? A proč si neprodloužíš smlouvu na starý byt?
+Min-ho: ⟦Nhà anh nằm ở trung tâm thành phố nên rất ồn ào. Anh sẽ không bao giờ thuê nhà ở khu vực ồn ào như thế này nữa.⟧ — Můj byt je v centru města, a tam je velký hluk. Už nikdy si nepronajmu byt v tak hlučné oblasti.
+Trang: ⟦Vậy, điều kiện để thuê nhà mới của anh là như thế nào?⟧ — A jaké máš podmínky pro nový byt?
+Min-ho: ⟦Đầu tiên, anh muốn tìm nhà nằm trong khu dân cư yên tĩnh, tiếp theo là nhà riêng hiện đại, có hơn 3 phòng ngủ.⟧ — Zaprvé chci dům v klidné obytné čtvrti, zadruhé moderní samostatný dům s více než třemi ložnicemi.
+Trang: ⟦Vâng, em hiểu rồi. Em cũng sẽ thử tìm cho anh nhé.⟧ — Dobře, rozumím. Taky ti zkusím něco najít.
+Min-ho: ⟦Ôi, thật à? Cảm ơn em rất nhiều.⟧ — Opravdu? Moc ti děkuju.
+Procvičování — současné bydlení: ⟦trung tâm thành phố, rất ồn ào⟧ (centrum města, velmi hlučné) / ⟦vùng ngoại thành, ít cơ sở tiện ích⟧ (předměstí, málo občanské vybavenosti); kde už bydlet nechce: ⟦khu vực ồn ào⟧ (hlučná oblast) / ⟦khu vực ít cơ sở tiện ích⟧ (oblast s malou vybaveností); podmínky pro nový byt: ⟦khu dân cư yên tĩnh, nhà riêng hiện đại, có hơn 3 phòng ngủ⟧ (klidná obytná čtvrť, moderní samostatný dům s více než 3 ložnicemi) / ⟦khu vực đầy đủ cơ sở tiện ích, giá thuê vừa phải⟧ (plná vybavenost, přiměřený nájem).
+Nová slovíčka: ⟦vừa phải⟧ přiměřený, rozumný | ⟦thuận lợi⟧ výhodný, pohodlný | ⟦khu dân cư⟧ obytná čtvrť | ⟦tiện ích⟧ vybavenost, užitek | ⟦ngoại thành⟧ předměstí
+=zh_cn
+核心表达：⟦không bao giờ⟧
+⟦không bao giờ + 动词⟧ 表示强烈的否定，意为“绝不……、从不……”。
+❶ ⟦Tôi không biết bơi nên không bao giờ đi chơi biển một mình.⟧ —— 我不会游泳，所以绝不一个人去海边玩。
+❷ Ⓐ ⟦Đây là ảnh chị chụp hồi còn là sinh viên, phải không?⟧ —— 这是你上大学时拍的照片吧？ Ⓑ ⟦Đúng rồi. Ảnh chụp với giáo sư và các bạn của chị đấy. Có lẽ chị sẽ không bao giờ quên được những kỉ niệm với họ.⟧ —— 对。是和教授还有同学们拍的。和他们在一起的回忆我大概永远也忘不了。
+表示理想居住条件的表达：⟦nhà riêng⟧ 独栋住宅 | ⟦giá thuê vừa phải⟧ 租金合理 | ⟦giao thông thuận lợi⟧ 交通便利 | ⟦khu dân cư yên tĩnh⟧ 安静的住宅区 | ⟦ngôi nhà có view đẹp⟧ 景观好的房子 | ⟦khu vực đầy đủ cơ sở tiện ích⟧ 生活设施齐全的地区
+句型练习1 —— 仿照范例用 ⟦không bao giờ⟧ 填空后进行对话。
+范例：Ⓐ ⟦Lần trước, khi đến nhà hàng ABC, anh thấy các món ở đó không ngon, đúng không?⟧ —— 上次去ABC餐厅，你觉得那里的菜不好吃，对吧？ Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ đến nhà hàng ABC nữa.⟧ —— 对。从现在起我再也不去ABC餐厅了。
+❶ Ⓐ ⟦Lần trước, khi uống nhiều rượu, anh đã rất mệt, đúng không?⟧ —— 上次喝多了酒，你很难受，对吧？ Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ uống nhiều rượu nữa.⟧ —— 对。从现在起我再也不喝那么多酒了。
+❷ Ⓐ ⟦Lần trước, khi làm việc đến tận khuya, anh bị đau hết cả người, đúng không?⟧ —— 上次工作到深夜，你浑身都疼，对吧？ Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ làm việc đến tận khuya nữa.⟧ —— 对。从现在起我再也不工作到深夜了。
+对话：敏浩在和庄聊搬家计划。
+庄：⟦Anh đang tìm nhà mới à?⟧ —— 你在找新房子吗？
+敏浩：⟦Ừ, nhà anh đang ở sắp hết hợp đồng rồi. Nhưng không dễ tìm được nhà vừa ý.⟧ —— 嗯，我现在住的房子合同快到期了。不过要找到称心的房子不容易。
+庄：⟦Vậy à? Thế sao anh không gia hạn hợp đồng nhà cũ?⟧ —— 是吗？那你为什么不续租旧房子？
+敏浩：⟦Nhà anh nằm ở trung tâm thành phố nên rất ồn ào. Anh sẽ không bao giờ thuê nhà ở khu vực ồn ào như thế này nữa.⟧ —— 我家在市中心，所以很吵。我再也不会在这么吵的地方租房了。
+庄：⟦Vậy, điều kiện để thuê nhà mới của anh là như thế nào?⟧ —— 那你租新房子的条件是什么？
+敏浩：⟦Đầu tiên, anh muốn tìm nhà nằm trong khu dân cư yên tĩnh, tiếp theo là nhà riêng hiện đại, có hơn 3 phòng ngủ.⟧ —— 首先，我想找在安静住宅区的房子，其次是有三间以上卧室的现代独栋住宅。
+庄：⟦Vâng, em hiểu rồi. Em cũng sẽ thử tìm cho anh nhé.⟧ —— 好的，我明白了。我也帮你找找看。
+敏浩：⟦Ôi, thật à? Cảm ơn em rất nhiều.⟧ —— 哇，真的吗？太谢谢你了。
+句型练习 —— 现在的住处：⟦trung tâm thành phố, rất ồn ào⟧（市中心，很吵）/ ⟦vùng ngoại thành, ít cơ sở tiện ích⟧（郊区，生活设施少）；不想再住的地区：⟦khu vực ồn ào⟧（吵闹的地区）/ ⟦khu vực ít cơ sở tiện ích⟧（设施少的地区）；租新房的条件：⟦khu dân cư yên tĩnh, nhà riêng hiện đại, có hơn 3 phòng ngủ⟧（安静住宅区，现代独栋，三间以上卧室）/ ⟦khu vực đầy đủ cơ sở tiện ích, giá thuê vừa phải⟧（设施齐全，租金合理）。
+新单词：⟦vừa phải⟧ 适当、合理 | ⟦thuận lợi⟧ 便利 | ⟦khu dân cư⟧ 住宅区 | ⟦tiện ích⟧ 便利设施 | ⟦ngoại thành⟧ 郊区、城外
+=zh
+核心表達：⟦không bao giờ⟧
+⟦không bao giờ + 動詞⟧ 表示強烈的否定，意為「絕不……、從不……」。
+❶ ⟦Tôi không biết bơi nên không bao giờ đi chơi biển một mình.⟧ —— 我不會游泳，所以絕不一個人去海邊玩。
+❷ Ⓐ ⟦Đây là ảnh chị chụp hồi còn là sinh viên, phải không?⟧ —— 這是妳讀大學時拍的照片吧？ Ⓑ ⟦Đúng rồi. Ảnh chụp với giáo sư và các bạn của chị đấy. Có lẽ chị sẽ không bao giờ quên được những kỉ niệm với họ.⟧ —— 對。是和教授還有同學們拍的。和他們在一起的回憶我大概永遠也忘不了。
+表示理想居住條件的表達：⟦nhà riêng⟧ 透天獨棟 | ⟦giá thuê vừa phải⟧ 租金合理 | ⟦giao thông thuận lợi⟧ 交通便利 | ⟦khu dân cư yên tĩnh⟧ 安靜的住宅區 | ⟦ngôi nhà có view đẹp⟧ 景觀好的房子 | ⟦khu vực đầy đủ cơ sở tiện ích⟧ 生活機能齊全的地區
+句型練習1 —— 仿照範例用 ⟦không bao giờ⟧ 填空後進行對話。
+範例：Ⓐ ⟦Lần trước, khi đến nhà hàng ABC, anh thấy các món ở đó không ngon, đúng không?⟧ —— 上次去ABC餐廳，你覺得那裡的菜不好吃，對吧？ Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ đến nhà hàng ABC nữa.⟧ —— 對。從現在起我再也不去ABC餐廳了。
+❶ Ⓐ ⟦Lần trước, khi uống nhiều rượu, anh đã rất mệt, đúng không?⟧ —— 上次喝多了酒，你很難受，對吧？ Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ uống nhiều rượu nữa.⟧ —— 對。從現在起我再也不喝那麼多酒了。
+❷ Ⓐ ⟦Lần trước, khi làm việc đến tận khuya, anh bị đau hết cả người, đúng không?⟧ —— 上次工作到深夜，你全身都痛，對吧？ Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ làm việc đến tận khuya nữa.⟧ —— 對。從現在起我再也不工作到深夜了。
+對話：敏浩在和莊聊搬家計畫。
+莊：⟦Anh đang tìm nhà mới à?⟧ —— 你在找新房子嗎？
+敏浩：⟦Ừ, nhà anh đang ở sắp hết hợp đồng rồi. Nhưng không dễ tìm được nhà vừa ý.⟧ —— 嗯，我現在住的房子合約快到期了。不過要找到滿意的房子不容易。
+莊：⟦Vậy à? Thế sao anh không gia hạn hợp đồng nhà cũ?⟧ —— 是嗎？那你為什麼不續租舊房子？
+敏浩：⟦Nhà anh nằm ở trung tâm thành phố nên rất ồn ào. Anh sẽ không bao giờ thuê nhà ở khu vực ồn ào như thế này nữa.⟧ —— 我家在市中心，所以很吵。我再也不會在這麼吵的地方租房了。
+莊：⟦Vậy, điều kiện để thuê nhà mới của anh là như thế nào?⟧ —— 那你租新房子的條件是什麼？
+敏浩：⟦Đầu tiên, anh muốn tìm nhà nằm trong khu dân cư yên tĩnh, tiếp theo là nhà riêng hiện đại, có hơn 3 phòng ngủ.⟧ —— 首先，我想找在安靜住宅區的房子，其次是有三間以上臥室的現代透天獨棟。
+莊：⟦Vâng, em hiểu rồi. Em cũng sẽ thử tìm cho anh nhé.⟧ —— 好的，我明白了。我也幫你找找看。
+敏浩：⟦Ôi, thật à? Cảm ơn em rất nhiều.⟧ —— 哇，真的嗎？太謝謝妳了。
+句型練習 —— 現在的住處：⟦trung tâm thành phố, rất ồn ào⟧（市中心，很吵）/ ⟦vùng ngoại thành, ít cơ sở tiện ích⟧（郊區，生活機能少）；不想再住的地區：⟦khu vực ồn ào⟧（吵雜的地區）/ ⟦khu vực ít cơ sở tiện ích⟧（生活機能少的地區）；租新房的條件：⟦khu dân cư yên tĩnh, nhà riêng hiện đại, có hơn 3 phòng ngủ⟧（安靜住宅區，現代透天，三間以上臥室）/ ⟦khu vực đầy đủ cơ sở tiện ích, giá thuê vừa phải⟧（生活機能齊全，租金合理）。
+新單字：⟦vừa phải⟧ 適當、合理 | ⟦thuận lợi⟧ 便利 | ⟦khu dân cư⟧ 住宅區 | ⟦tiện ích⟧ 便利設施 | ⟦ngoại thành⟧ 郊區、城外
+=en
+Key expression: ⟦không bao giờ⟧
+⟦không bao giờ + verb⟧ expresses strong negation: "never, not ever".
+❶ ⟦Tôi không biết bơi nên không bao giờ đi chơi biển một mình.⟧ — I can't swim, so I never go to the beach alone.
+❷ Ⓐ ⟦Đây là ảnh chị chụp hồi còn là sinh viên, phải không?⟧ — This is a photo from when you were a student, right? Ⓑ ⟦Đúng rồi. Ảnh chụp với giáo sư và các bạn của chị đấy. Có lẽ chị sẽ không bao giờ quên được những kỉ niệm với họ.⟧ — That's right. It's with my professor and classmates. I'll probably never forget my memories with them.
+Expressions for desired housing conditions: ⟦nhà riêng⟧ a detached house | ⟦giá thuê vừa phải⟧ reasonable rent | ⟦giao thông thuận lợi⟧ good transport links | ⟦khu dân cư yên tĩnh⟧ a quiet residential area | ⟦ngôi nhà có view đẹp⟧ a house with a nice view | ⟦khu vực đầy đủ cơ sở tiện ích⟧ an area with all amenities
+Pattern practice 1 — fill in the blanks with ⟦không bao giờ⟧ as in the model, then talk.
+Model: Ⓐ ⟦Lần trước, khi đến nhà hàng ABC, anh thấy các món ở đó không ngon, đúng không?⟧ — Last time you went to ABC restaurant, you didn't like the food, did you? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ đến nhà hàng ABC nữa.⟧ — Right. From now on I'll never go to ABC restaurant again.
+❶ Ⓐ ⟦Lần trước, khi uống nhiều rượu, anh đã rất mệt, đúng không?⟧ — Last time you drank a lot, you felt awful, didn't you? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ uống nhiều rượu nữa.⟧ — Right. From now on I'll never drink that much again.
+❷ Ⓐ ⟦Lần trước, khi làm việc đến tận khuya, anh bị đau hết cả người, đúng không?⟧ — Last time you worked late into the night, you ached all over, didn't you? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ làm việc đến tận khuya nữa.⟧ — Right. From now on I'll never work that late again.
+Dialogue: Min-ho is talking with Trang about his plans to move.
+Trang: ⟦Anh đang tìm nhà mới à?⟧ — Are you looking for a new place?
+Min-ho: ⟦Ừ, nhà anh đang ở sắp hết hợp đồng rồi. Nhưng không dễ tìm được nhà vừa ý.⟧ — Yes, the lease on my current place is about to run out. But it's not easy to find somewhere I like.
+Trang: ⟦Vậy à? Thế sao anh không gia hạn hợp đồng nhà cũ?⟧ — Really? So why don't you renew the lease on your old place?
+Min-ho: ⟦Nhà anh nằm ở trung tâm thành phố nên rất ồn ào. Anh sẽ không bao giờ thuê nhà ở khu vực ồn ào như thế này nữa.⟧ — It's in the city centre, so it's very noisy. I'll never rent in such a noisy area again.
+Trang: ⟦Vậy, điều kiện để thuê nhà mới của anh là như thế nào?⟧ — So what are your conditions for the new place?
+Min-ho: ⟦Đầu tiên, anh muốn tìm nhà nằm trong khu dân cư yên tĩnh, tiếp theo là nhà riêng hiện đại, có hơn 3 phòng ngủ.⟧ — First, I want somewhere in a quiet residential area; second, a modern detached house with more than three bedrooms.
+Trang: ⟦Vâng, em hiểu rồi. Em cũng sẽ thử tìm cho anh nhé.⟧ — OK, I see. I'll try to look for one for you too.
+Min-ho: ⟦Ôi, thật à? Cảm ơn em rất nhiều.⟧ — Oh, really? Thank you so much.
+Pattern practice — current home: ⟦trung tâm thành phố, rất ồn ào⟧ (city centre, very noisy) / ⟦vùng ngoại thành, ít cơ sở tiện ích⟧ (suburbs, few amenities); area he doesn't want any more: ⟦khu vực ồn ào⟧ (a noisy area) / ⟦khu vực ít cơ sở tiện ích⟧ (an area with few amenities); conditions for the new home: ⟦khu dân cư yên tĩnh, nhà riêng hiện đại, có hơn 3 phòng ngủ⟧ (quiet residential area, modern detached house, over 3 bedrooms) / ⟦khu vực đầy đủ cơ sở tiện ích, giá thuê vừa phải⟧ (all amenities, reasonable rent).
+New words: ⟦vừa phải⟧ moderate, reasonable | ⟦thuận lợi⟧ convenient, favourable | ⟦khu dân cư⟧ residential area | ⟦tiện ích⟧ amenity | ⟦ngoại thành⟧ suburbs, outskirts
+=fr
+Expression clé : ⟦không bao giờ⟧
+⟦không bao giờ + verbe⟧ exprime une négation forte : « ne ~ jamais ».
+❶ ⟦Tôi không biết bơi nên không bao giờ đi chơi biển một mình.⟧ — Je ne sais pas nager, donc je ne vais jamais seul à la mer.
+❷ Ⓐ ⟦Đây là ảnh chị chụp hồi còn là sinh viên, phải không?⟧ — C'est une photo de quand tu étais étudiante, non ? Ⓑ ⟦Đúng rồi. Ảnh chụp với giáo sư và các bạn của chị đấy. Có lẽ chị sẽ không bao giờ quên được những kỉ niệm với họ.⟧ — Oui. C'est avec mon professeur et mes camarades. Je n'oublierai sans doute jamais mes souvenirs avec eux.
+Expressions sur les conditions de logement souhaitées : ⟦nhà riêng⟧ maison individuelle | ⟦giá thuê vừa phải⟧ loyer raisonnable | ⟦giao thông thuận lợi⟧ bien desservi | ⟦khu dân cư yên tĩnh⟧ quartier résidentiel calme | ⟦ngôi nhà có view đẹp⟧ maison avec une belle vue | ⟦khu vực đầy đủ cơ sở tiện ích⟧ quartier avec tous les services
+Exercice 1 — complétez avec ⟦không bao giờ⟧ comme dans le modèle, puis dialoguez.
+Modèle : Ⓐ ⟦Lần trước, khi đến nhà hàng ABC, anh thấy các món ở đó không ngon, đúng không?⟧ — La dernière fois au restaurant ABC, tu n'as pas trouvé les plats bons, n'est-ce pas ? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ đến nhà hàng ABC nữa.⟧ — Exact. Désormais, je n'irai plus jamais au restaurant ABC.
+❶ Ⓐ ⟦Lần trước, khi uống nhiều rượu, anh đã rất mệt, đúng không?⟧ — La dernière fois que tu as beaucoup bu, tu étais dans un sale état, non ? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ uống nhiều rượu nữa.⟧ — Exact. Désormais, je ne boirai plus jamais autant.
+❷ Ⓐ ⟦Lần trước, khi làm việc đến tận khuya, anh bị đau hết cả người, đúng không?⟧ — La dernière fois que tu as travaillé tard dans la nuit, tu avais mal partout, non ? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ làm việc đến tận khuya nữa.⟧ — Exact. Désormais, je ne travaillerai plus jamais aussi tard.
+Dialogue : Min-ho parle avec Trang de son projet de déménagement.
+Trang : ⟦Anh đang tìm nhà mới à?⟧ — Tu cherches un nouveau logement ?
+Min-ho : ⟦Ừ, nhà anh đang ở sắp hết hợp đồng rồi. Nhưng không dễ tìm được nhà vừa ý.⟧ — Oui, mon bail se termine bientôt. Mais ce n'est pas facile de trouver un logement qui me plaise.
+Trang : ⟦Vậy à? Thế sao anh không gia hạn hợp đồng nhà cũ?⟧ — Ah bon ? Pourquoi ne renouvelles-tu pas ton bail ?
+Min-ho : ⟦Nhà anh nằm ở trung tâm thành phố nên rất ồn ào. Anh sẽ không bao giờ thuê nhà ở khu vực ồn ào như thế này nữa.⟧ — Mon logement est en centre-ville, c'est très bruyant. Je ne louerai plus jamais dans un quartier aussi bruyant.
+Trang : ⟦Vậy, điều kiện để thuê nhà mới của anh là như thế nào?⟧ — Alors, quels sont tes critères pour le nouveau logement ?
+Min-ho : ⟦Đầu tiên, anh muốn tìm nhà nằm trong khu dân cư yên tĩnh, tiếp theo là nhà riêng hiện đại, có hơn 3 phòng ngủ.⟧ — D'abord, je veux un logement dans un quartier résidentiel calme, ensuite une maison individuelle moderne avec plus de trois chambres.
+Trang : ⟦Vâng, em hiểu rồi. Em cũng sẽ thử tìm cho anh nhé.⟧ — D'accord, je vois. Je vais aussi chercher pour toi.
+Min-ho : ⟦Ôi, thật à? Cảm ơn em rất nhiều.⟧ — Oh, vraiment ? Merci beaucoup.
+Exercices — logement actuel : ⟦trung tâm thành phố, rất ồn ào⟧ (centre-ville, très bruyant) / ⟦vùng ngoại thành, ít cơ sở tiện ích⟧ (banlieue, peu de services) ; quartier dont il ne veut plus : ⟦khu vực ồn ào⟧ (bruyant) / ⟦khu vực ít cơ sở tiện ích⟧ (peu de services) ; critères : ⟦khu dân cư yên tĩnh, nhà riêng hiện đại, có hơn 3 phòng ngủ⟧ (quartier calme, maison moderne, plus de 3 chambres) / ⟦khu vực đầy đủ cơ sở tiện ích, giá thuê vừa phải⟧ (tous les services, loyer raisonnable).
+Nouveaux mots : ⟦vừa phải⟧ raisonnable, modéré | ⟦thuận lợi⟧ pratique, favorable | ⟦khu dân cư⟧ quartier résidentiel | ⟦tiện ích⟧ commodité, service | ⟦ngoại thành⟧ banlieue, périphérie
+=de
+Schlüsselausdruck: ⟦không bao giờ⟧
+⟦không bao giờ + Verb⟧ drückt eine starke Verneinung aus: „nie, niemals“.
+❶ ⟦Tôi không biết bơi nên không bao giờ đi chơi biển một mình.⟧ — Ich kann nicht schwimmen, deshalb fahre ich nie allein ans Meer.
+❷ Ⓐ ⟦Đây là ảnh chị chụp hồi còn là sinh viên, phải không?⟧ — Das ist ein Foto aus deiner Studienzeit, oder? Ⓑ ⟦Đúng rồi. Ảnh chụp với giáo sư và các bạn của chị đấy. Có lẽ chị sẽ không bao giờ quên được những kỉ niệm với họ.⟧ — Genau. Mit meinem Professor und meinen Kommilitonen. Die Erinnerungen an sie werde ich wohl nie vergessen.
+Ausdrücke zu gewünschten Wohnbedingungen: ⟦nhà riêng⟧ Einfamilienhaus | ⟦giá thuê vừa phải⟧ angemessene Miete | ⟦giao thông thuận lợi⟧ gute Verkehrsanbindung | ⟦khu dân cư yên tĩnh⟧ ruhiges Wohngebiet | ⟦ngôi nhà có view đẹp⟧ Haus mit schöner Aussicht | ⟦khu vực đầy đủ cơ sở tiện ích⟧ Gegend mit kompletter Infrastruktur
+Übung 1 — mit ⟦không bao giờ⟧ wie im Muster ergänzen, dann sprechen.
+Muster: Ⓐ ⟦Lần trước, khi đến nhà hàng ABC, anh thấy các món ở đó không ngon, đúng không?⟧ — Als du letztes Mal im Restaurant ABC warst, hat dir das Essen nicht geschmeckt, oder? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ đến nhà hàng ABC nữa.⟧ — Stimmt. Ab jetzt gehe ich nie wieder ins Restaurant ABC.
+❶ Ⓐ ⟦Lần trước, khi uống nhiều rượu, anh đã rất mệt, đúng không?⟧ — Als du letztes Mal viel getrunken hast, ging es dir danach richtig schlecht, oder? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ uống nhiều rượu nữa.⟧ — Stimmt. Ab jetzt trinke ich nie wieder so viel.
+❷ Ⓐ ⟦Lần trước, khi làm việc đến tận khuya, anh bị đau hết cả người, đúng không?⟧ — Als du letztes Mal bis spät in die Nacht gearbeitet hast, tat dir alles weh, oder? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ làm việc đến tận khuya nữa.⟧ — Stimmt. Ab jetzt arbeite ich nie wieder so lange.
+Dialog: Min-ho spricht mit Trang über seine Umzugspläne.
+Trang: ⟦Anh đang tìm nhà mới à?⟧ — Suchst du eine neue Wohnung?
+Min-ho: ⟦Ừ, nhà anh đang ở sắp hết hợp đồng rồi. Nhưng không dễ tìm được nhà vừa ý.⟧ — Ja, mein Mietvertrag läuft bald aus. Aber es ist nicht leicht, etwas Passendes zu finden.
+Trang: ⟦Vậy à? Thế sao anh không gia hạn hợp đồng nhà cũ?⟧ — Ach so? Warum verlängerst du nicht einfach den alten Vertrag?
+Min-ho: ⟦Nhà anh nằm ở trung tâm thành phố nên rất ồn ào. Anh sẽ không bao giờ thuê nhà ở khu vực ồn ào như thế này nữa.⟧ — Meine Wohnung liegt im Stadtzentrum und ist sehr laut. So eine laute Gegend miete ich nie wieder.
+Trang: ⟦Vậy, điều kiện để thuê nhà mới của anh là như thế nào?⟧ — Und was sind deine Bedingungen für die neue Wohnung?
+Min-ho: ⟦Đầu tiên, anh muốn tìm nhà nằm trong khu dân cư yên tĩnh, tiếp theo là nhà riêng hiện đại, có hơn 3 phòng ngủ.⟧ — Erstens soll sie in einem ruhigen Wohngebiet liegen, zweitens ein modernes Einfamilienhaus mit mehr als drei Schlafzimmern sein.
+Trang: ⟦Vâng, em hiểu rồi. Em cũng sẽ thử tìm cho anh nhé.⟧ — Alles klar. Ich suche auch mal für dich.
+Min-ho: ⟦Ôi, thật à? Cảm ơn em rất nhiều.⟧ — Oh, wirklich? Vielen Dank.
+Satzmusterübung — jetzige Wohnung: ⟦trung tâm thành phố, rất ồn ào⟧ (Stadtzentrum, sehr laut) / ⟦vùng ngoại thành, ít cơ sở tiện ích⟧ (Stadtrand, wenig Infrastruktur); wo er nicht mehr wohnen will: ⟦khu vực ồn ào⟧ (laute Gegend) / ⟦khu vực ít cơ sở tiện ích⟧ (Gegend mit wenig Infrastruktur); Bedingungen: ⟦khu dân cư yên tĩnh, nhà riêng hiện đại, có hơn 3 phòng ngủ⟧ (ruhiges Wohngebiet, modernes Einfamilienhaus, über 3 Schlafzimmer) / ⟦khu vực đầy đủ cơ sở tiện ích, giá thuê vừa phải⟧ (komplette Infrastruktur, angemessene Miete).
+Neue Wörter: ⟦vừa phải⟧ angemessen | ⟦thuận lợi⟧ günstig, bequem | ⟦khu dân cư⟧ Wohngebiet | ⟦tiện ích⟧ Einrichtung, Annehmlichkeit | ⟦ngoại thành⟧ Stadtrand, Vorort
+=hu
+Kulcskifejezés: ⟦không bao giờ⟧
+A ⟦không bao giờ + ige⟧ erős tagadást fejez ki: „soha, semmiképp sem”.
+❶ ⟦Tôi không biết bơi nên không bao giờ đi chơi biển một mình.⟧ — Nem tudok úszni, ezért soha nem megyek egyedül a tengerre.
+❷ Ⓐ ⟦Đây là ảnh chị chụp hồi còn là sinh viên, phải không?⟧ — Ez egy egyetemista korodban készült fotó, ugye? Ⓑ ⟦Đúng rồi. Ảnh chụp với giáo sư và các bạn của chị đấy. Có lẽ chị sẽ không bao giờ quên được những kỉ niệm với họ.⟧ — Igen. A professzorommal és a csoporttársaimmal. A velük töltött emlékeket valószínűleg soha nem felejtem el.
+A kívánt lakáskörülményekkel kapcsolatos kifejezések: ⟦nhà riêng⟧ családi ház | ⟦giá thuê vừa phải⟧ elfogadható bérleti díj | ⟦giao thông thuận lợi⟧ jó közlekedés | ⟦khu dân cư yên tĩnh⟧ csendes lakónegyed | ⟦ngôi nhà có view đẹp⟧ szép kilátású ház | ⟦khu vực đầy đủ cơ sở tiện ích⟧ jól ellátott környék
+1. gyakorlat — töltse ki a ⟦không bao giờ⟧ kifejezéssel a minta szerint, majd beszélgessen.
+Minta: Ⓐ ⟦Lần trước, khi đến nhà hàng ABC, anh thấy các món ở đó không ngon, đúng không?⟧ — Amikor legutóbb az ABC étteremben voltál, nem ízlettek az ételek, ugye? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ đến nhà hàng ABC nữa.⟧ — Így van. Mostantól soha többé nem megyek az ABC étterembe.
+❶ Ⓐ ⟦Lần trước, khi uống nhiều rượu, anh đã rất mệt, đúng không?⟧ — Amikor legutóbb sokat ittál, nagyon rosszul voltál, ugye? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ uống nhiều rượu nữa.⟧ — Így van. Mostantól soha többé nem iszom ennyit.
+❷ Ⓐ ⟦Lần trước, khi làm việc đến tận khuya, anh bị đau hết cả người, đúng không?⟧ — Amikor legutóbb késő éjszakáig dolgoztál, mindened fájt, ugye? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ làm việc đến tận khuya nữa.⟧ — Így van. Mostantól soha többé nem dolgozom késő éjszakáig.
+Párbeszéd: Min-ho a költözési terveiről beszélget Tranggal.
+Trang: ⟦Anh đang tìm nhà mới à?⟧ — Új lakást keresel?
+Min-ho: ⟦Ừ, nhà anh đang ở sắp hết hợp đồng rồi. Nhưng không dễ tìm được nhà vừa ý.⟧ — Igen, hamarosan lejár a mostani bérleti szerződésem. De nem könnyű megfelelőt találni.
+Trang: ⟦Vậy à? Thế sao anh không gia hạn hợp đồng nhà cũ?⟧ — Tényleg? És miért nem hosszabbítod meg a régit?
+Min-ho: ⟦Nhà anh nằm ở trung tâm thành phố nên rất ồn ào. Anh sẽ không bao giờ thuê nhà ở khu vực ồn ào như thế này nữa.⟧ — A lakásom a belvárosban van, ezért nagyon zajos. Soha többé nem bérelek lakást ilyen zajos helyen.
+Trang: ⟦Vậy, điều kiện để thuê nhà mới của anh là như thế nào?⟧ — És milyen feltételeid vannak az új lakással szemben?
+Min-ho: ⟦Đầu tiên, anh muốn tìm nhà nằm trong khu dân cư yên tĩnh, tiếp theo là nhà riêng hiện đại, có hơn 3 phòng ngủ.⟧ — Először is csendes lakónegyedben legyen, másodszor modern családi ház legyen háromnál több hálószobával.
+Trang: ⟦Vâng, em hiểu rồi. Em cũng sẽ thử tìm cho anh nhé.⟧ — Értem. Én is próbálok keresni neked.
+Min-ho: ⟦Ôi, thật à? Cảm ơn em rất nhiều.⟧ — Ó, tényleg? Nagyon köszönöm.
+Mintagyakorlat — jelenlegi lakás: ⟦trung tâm thành phố, rất ồn ào⟧ (belváros, nagyon zajos) / ⟦vùng ngoại thành, ít cơ sở tiện ích⟧ (külváros, kevés szolgáltatás); ahol már nem akar lakni: ⟦khu vực ồn ào⟧ (zajos környék) / ⟦khu vực ít cơ sở tiện ích⟧ (kevés szolgáltatású környék); feltételek: ⟦khu dân cư yên tĩnh, nhà riêng hiện đại, có hơn 3 phòng ngủ⟧ (csendes lakónegyed, modern családi ház, 3-nál több hálószoba) / ⟦khu vực đầy đủ cơ sở tiện ích, giá thuê vừa phải⟧ (jól ellátott környék, elfogadható bérleti díj).
+Új szavak: ⟦vừa phải⟧ mérsékelt, elfogadható | ⟦thuận lợi⟧ kedvező, kényelmes | ⟦khu dân cư⟧ lakónegyed | ⟦tiện ích⟧ szolgáltatás, kényelem | ⟦ngoại thành⟧ külváros, peremkerület
+=id
+Ungkapan kunci: ⟦không bao giờ⟧
+⟦không bao giờ + verba⟧ menyatakan penyangkalan yang kuat: "tidak pernah, sama sekali tidak".
+❶ ⟦Tôi không biết bơi nên không bao giờ đi chơi biển một mình.⟧ — Saya tidak bisa berenang, jadi tidak pernah pergi ke pantai sendirian.
+❷ Ⓐ ⟦Đây là ảnh chị chụp hồi còn là sinh viên, phải không?⟧ — Ini foto waktu Kakak masih mahasiswa, kan? Ⓑ ⟦Đúng rồi. Ảnh chụp với giáo sư và các bạn của chị đấy. Có lẽ chị sẽ không bao giờ quên được những kỉ niệm với họ.⟧ — Betul. Ini foto bersama profesor dan teman-teman Kakak. Mungkin Kakak tidak akan pernah melupakan kenangan bersama mereka.
+Ungkapan tentang syarat tempat tinggal yang diinginkan: ⟦nhà riêng⟧ rumah tapak | ⟦giá thuê vừa phải⟧ harga sewa wajar | ⟦giao thông thuận lợi⟧ akses transportasi mudah | ⟦khu dân cư yên tĩnh⟧ kawasan permukiman yang tenang | ⟦ngôi nhà có view đẹp⟧ rumah dengan pemandangan indah | ⟦khu vực đầy đủ cơ sở tiện ích⟧ kawasan dengan fasilitas lengkap
+Latihan pola 1 — isi dengan ⟦không bao giờ⟧ seperti contoh, lalu bercakaplah.
+Contoh: Ⓐ ⟦Lần trước, khi đến nhà hàng ABC, anh thấy các món ở đó không ngon, đúng không?⟧ — Waktu ke restoran ABC dulu, Kakak merasa makanannya tidak enak, kan? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ đến nhà hàng ABC nữa.⟧ — Betul. Mulai sekarang aku tidak akan pernah ke restoran ABC lagi.
+❶ Ⓐ ⟦Lần trước, khi uống nhiều rượu, anh đã rất mệt, đúng không?⟧ — Waktu dulu minum banyak alkohol, Kakak sangat lemas, kan? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ uống nhiều rượu nữa.⟧ — Betul. Mulai sekarang aku tidak akan pernah minum banyak lagi.
+❷ Ⓐ ⟦Lần trước, khi làm việc đến tận khuya, anh bị đau hết cả người, đúng không?⟧ — Waktu dulu bekerja sampai larut malam, seluruh badan Kakak sakit, kan? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ làm việc đến tận khuya nữa.⟧ — Betul. Mulai sekarang aku tidak akan pernah bekerja sampai larut malam lagi.
+Percakapan: Min-ho berbicara dengan Trang tentang rencana pindah rumah.
+Trang: ⟦Anh đang tìm nhà mới à?⟧ — Kakak sedang mencari rumah baru?
+Min-ho: ⟦Ừ, nhà anh đang ở sắp hết hợp đồng rồi. Nhưng không dễ tìm được nhà vừa ý.⟧ — Iya, kontrak rumah yang kutempati sebentar lagi habis. Tapi tidak mudah menemukan rumah yang cocok.
+Trang: ⟦Vậy à? Thế sao anh không gia hạn hợp đồng nhà cũ?⟧ — Oh ya? Kenapa Kakak tidak memperpanjang kontrak rumah lama?
+Min-ho: ⟦Nhà anh nằm ở trung tâm thành phố nên rất ồn ào. Anh sẽ không bao giờ thuê nhà ở khu vực ồn ào như thế này nữa.⟧ — Rumahku di pusat kota, jadi sangat bising. Aku tidak akan pernah menyewa rumah di kawasan bising seperti ini lagi.
+Trang: ⟦Vậy, điều kiện để thuê nhà mới của anh là như thế nào?⟧ — Lalu, syarat Kakak untuk menyewa rumah baru seperti apa?
+Min-ho: ⟦Đầu tiên, anh muốn tìm nhà nằm trong khu dân cư yên tĩnh, tiếp theo là nhà riêng hiện đại, có hơn 3 phòng ngủ.⟧ — Pertama, aku ingin rumah di kawasan permukiman yang tenang, lalu rumah tapak modern dengan lebih dari 3 kamar tidur.
+Trang: ⟦Vâng, em hiểu rồi. Em cũng sẽ thử tìm cho anh nhé.⟧ — Baik, aku mengerti. Aku juga akan coba carikan untuk Kakak.
+Min-ho: ⟦Ôi, thật à? Cảm ơn em rất nhiều.⟧ — Wah, sungguh? Terima kasih banyak.
+Latihan pola — rumah sekarang: ⟦trung tâm thành phố, rất ồn ào⟧ (pusat kota, sangat bising) / ⟦vùng ngoại thành, ít cơ sở tiện ích⟧ (pinggiran kota, sedikit fasilitas); kawasan yang tidak ingin ditinggali lagi: ⟦khu vực ồn ào⟧ (kawasan bising) / ⟦khu vực ít cơ sở tiện ích⟧ (kawasan minim fasilitas); syarat rumah baru: ⟦khu dân cư yên tĩnh, nhà riêng hiện đại, có hơn 3 phòng ngủ⟧ (permukiman tenang, rumah tapak modern, lebih dari 3 kamar tidur) / ⟦khu vực đầy đủ cơ sở tiện ích, giá thuê vừa phải⟧ (fasilitas lengkap, harga sewa wajar).
+Kosakata baru: ⟦vừa phải⟧ wajar, sedang | ⟦thuận lợi⟧ mudah, menguntungkan | ⟦khu dân cư⟧ kawasan permukiman | ⟦tiện ích⟧ fasilitas | ⟦ngoại thành⟧ pinggiran kota
+=ja
+核心表現：⟦không bao giờ⟧
+⟦không bao giờ + 動詞⟧ は強い否定を表す表現で、「決して / 絶対に～しない」という意味です。
+❶ ⟦Tôi không biết bơi nên không bao giờ đi chơi biển một mình.⟧ — 私は泳げないので、絶対に一人で海に遊びに行きません。
+❷ Ⓐ ⟦Đây là ảnh chị chụp hồi còn là sinh viên, phải không?⟧ — これは大学生のときに撮った写真ですよね。 Ⓑ ⟦Đúng rồi. Ảnh chụp với giáo sư và các bạn của chị đấy. Có lẽ chị sẽ không bao giờ quên được những kỉ niệm với họ.⟧ — そうよ。教授や友達と撮った写真なの。彼らとの思い出はきっと決して忘れられないわ。
+希望する住居条件を表す表現：⟦nhà riêng⟧ 一戸建て | ⟦giá thuê vừa phải⟧ 手頃な家賃 | ⟦giao thông thuận lợi⟧ 交通の便が良い | ⟦khu dân cư yên tĩnh⟧ 静かな住宅街 | ⟦ngôi nhà có view đẹp⟧ 眺めの良い家 | ⟦khu vực đầy đủ cơ sở tiện ích⟧ 生活施設が整った地域
+文型練習1 — 例のように ⟦không bao giờ⟧ を使って空欄を埋め、会話してみましょう。
+例：Ⓐ ⟦Lần trước, khi đến nhà hàng ABC, anh thấy các món ở đó không ngon, đúng không?⟧ — 前にABCレストランに行ったとき、料理がおいしくなかったんですよね。 Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ đến nhà hàng ABC nữa.⟧ — そうなんだ。これからはもう絶対にABCレストランには行かないよ。
+❶ Ⓐ ⟦Lần trước, khi uống nhiều rượu, anh đã rất mệt, đúng không?⟧ — 前にお酒をたくさん飲んだとき、すごくつらかったんですよね。 Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ uống nhiều rượu nữa.⟧ — そうなんだ。これからはもう絶対にお酒を飲みすぎないよ。
+❷ Ⓐ ⟦Lần trước, khi làm việc đến tận khuya, anh bị đau hết cả người, đúng không?⟧ — 前に夜遅くまで仕事をしたとき、体中が痛くなったんですよね。 Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ làm việc đến tận khuya nữa.⟧ — そうなんだ。これからはもう絶対に夜遅くまで働かないよ。
+会話：ミンホが引っ越しの計画についてチャンと話しています。
+チャン：⟦Anh đang tìm nhà mới à?⟧ — 新しい家を探しているんですか。
+ミンホ：⟦Ừ, nhà anh đang ở sắp hết hợp đồng rồi. Nhưng không dễ tìm được nhà vừa ý.⟧ — うん、今住んでいる家の契約がもうすぐ切れるんだ。でも気に入る家を見つけるのは簡単じゃないね。
+チャン：⟦Vậy à? Thế sao anh không gia hạn hợp đồng nhà cũ?⟧ — そうなんですか。じゃあ、どうして今の家の契約を延長しないんですか。
+ミンホ：⟦Nhà anh nằm ở trung tâm thành phố nên rất ồn ào. Anh sẽ không bao giờ thuê nhà ở khu vực ồn ào như thế này nữa.⟧ — 今の家は市の中心にあって、すごくうるさいんだ。こんなにうるさい地域にはもう絶対に住まないよ。
+チャン：⟦Vậy, điều kiện để thuê nhà mới của anh là như thế nào?⟧ — それで、新しい家を借りる条件はどんなものですか。
+ミンホ：⟦Đầu tiên, anh muốn tìm nhà nằm trong khu dân cư yên tĩnh, tiếp theo là nhà riêng hiện đại, có hơn 3 phòng ngủ.⟧ — まず静かな住宅街にある家、それから寝室が3つ以上ある現代的な一戸建てがいいな。
+チャン：⟦Vâng, em hiểu rồi. Em cũng sẽ thử tìm cho anh nhé.⟧ — わかりました。私も探してみますね。
+ミンホ：⟦Ôi, thật à? Cảm ơn em rất nhiều.⟧ — え、本当？どうもありがとう。
+文型練習 — 今の住まい：⟦trung tâm thành phố, rất ồn ào⟧（市の中心、とてもうるさい）/ ⟦vùng ngoại thành, ít cơ sở tiện ích⟧（郊外、生活施設が少ない）；もう住みたくない地域：⟦khu vực ồn ào⟧（うるさい地域）/ ⟦khu vực ít cơ sở tiện ích⟧（生活施設が少ない地域）；新居の条件：⟦khu dân cư yên tĩnh, nhà riêng hiện đại, có hơn 3 phòng ngủ⟧（静かな住宅街、現代的な一戸建て、寝室3つ以上）/ ⟦khu vực đầy đủ cơ sở tiện ích, giá thuê vừa phải⟧（生活施設が整っている、手頃な家賃）。
+新出単語：⟦vừa phải⟧ 適当だ、手頃だ | ⟦thuận lợi⟧ 便利だ | ⟦khu dân cư⟧ 住宅街 | ⟦tiện ích⟧ 便益、利便施設 | ⟦ngoại thành⟧ 郊外
+=pl
+Kluczowe wyrażenie: ⟦không bao giờ⟧
+⟦không bao giờ + czasownik⟧ wyraża silne przeczenie: „nigdy, w żadnym razie”.
+❶ ⟦Tôi không biết bơi nên không bao giờ đi chơi biển một mình.⟧ — Nie umiem pływać, więc nigdy nie jeżdżę sam nad morze.
+❷ Ⓐ ⟦Đây là ảnh chị chụp hồi còn là sinh viên, phải không?⟧ — To zdjęcie z czasów, gdy byłaś studentką, prawda? Ⓑ ⟦Đúng rồi. Ảnh chụp với giáo sư và các bạn của chị đấy. Có lẽ chị sẽ không bao giờ quên được những kỉ niệm với họ.⟧ — Tak. Z profesorem i kolegami z roku. Wspomnień z nimi chyba nigdy nie zapomnę.
+Wyrażenia dotyczące pożądanych warunków mieszkaniowych: ⟦nhà riêng⟧ dom jednorodzinny | ⟦giá thuê vừa phải⟧ rozsądny czynsz | ⟦giao thông thuận lợi⟧ dobry dojazd | ⟦khu dân cư yên tĩnh⟧ spokojne osiedle | ⟦ngôi nhà có view đẹp⟧ dom z ładnym widokiem | ⟦khu vực đầy đủ cơ sở tiện ích⟧ okolica z pełną infrastrukturą
+Ćwiczenie 1 — uzupełnij za pomocą ⟦không bao giờ⟧ jak we wzorze, potem rozmawiaj.
+Wzór: Ⓐ ⟦Lần trước, khi đến nhà hàng ABC, anh thấy các món ở đó không ngon, đúng không?⟧ — Kiedy ostatnio byłeś w restauracji ABC, jedzenie ci nie smakowało, prawda? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ đến nhà hàng ABC nữa.⟧ — Zgadza się. Od teraz już nigdy nie pójdę do restauracji ABC.
+❶ Ⓐ ⟦Lần trước, khi uống nhiều rượu, anh đã rất mệt, đúng không?⟧ — Kiedy ostatnio dużo wypiłeś, czułeś się fatalnie, prawda? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ uống nhiều rượu nữa.⟧ — Zgadza się. Od teraz już nigdy nie będę tyle pił.
+❷ Ⓐ ⟦Lần trước, khi làm việc đến tận khuya, anh bị đau hết cả người, đúng không?⟧ — Kiedy ostatnio pracowałeś do późnej nocy, bolało cię całe ciało, prawda? Ⓑ ⟦Đúng rồi. Từ bây giờ anh sẽ không bao giờ làm việc đến tận khuya nữa.⟧ — Zgadza się. Od teraz już nigdy nie będę pracował do tak późna.
+Dialog: Min-ho rozmawia z Trang o planach przeprowadzki.
+Trang: ⟦Anh đang tìm nhà mới à?⟧ — Szukasz nowego mieszkania?
+Min-ho: ⟦Ừ, nhà anh đang ở sắp hết hợp đồng rồi. Nhưng không dễ tìm được nhà vừa ý.⟧ — Tak, umowa na obecne mieszkanie niedługo wygasa. Ale niełatwo znaleźć coś odpowiedniego.
+Trang: ⟦Vậy à? Thế sao anh không gia hạn hợp đồng nhà cũ?⟧ — Naprawdę? To czemu nie przedłużysz starej umowy?
+Min-ho: ⟦Nhà anh nằm ở trung tâm thành phố nên rất ồn ào. Anh sẽ không bao giờ thuê nhà ở khu vực ồn ào như thế này nữa.⟧ — Moje mieszkanie jest w centrum miasta, więc jest bardzo głośno. Już nigdy nie wynajmę mieszkania w tak hałaśliwej okolicy.
+Trang: ⟦Vậy, điều kiện để thuê nhà mới của anh là như thế nào?⟧ — A jakie masz wymagania wobec nowego mieszkania?
+Min-ho: ⟦Đầu tiên, anh muốn tìm nhà nằm trong khu dân cư yên tĩnh, tiếp theo là nhà riêng hiện đại, có hơn 3 phòng ngủ.⟧ — Po pierwsze, chcę czegoś na spokojnym osiedlu, po drugie, nowoczesnego domu jednorodzinnego z więcej niż trzema sypialniami.
+Trang: ⟦Vâng, em hiểu rồi. Em cũng sẽ thử tìm cho anh nhé.⟧ — Dobrze, rozumiem. Też spróbuję ci coś znaleźć.
+Min-ho: ⟦Ôi, thật à? Cảm ơn em rất nhiều.⟧ — Naprawdę? Bardzo ci dziękuję.
+Ćwiczenie wzorców — obecne mieszkanie: ⟦trung tâm thành phố, rất ồn ào⟧ (centrum miasta, bardzo głośno) / ⟦vùng ngoại thành, ít cơ sở tiện ích⟧ (przedmieścia, mało infrastruktury); gdzie nie chce już mieszkać: ⟦khu vực ồn ào⟧ (hałaśliwa okolica) / ⟦khu vực ít cơ sở tiện ích⟧ (okolica z małą infrastrukturą); wymagania: ⟦khu dân cư yên tĩnh, nhà riêng hiện đại, có hơn 3 phòng ngủ⟧ (spokojne osiedle, nowoczesny dom, ponad 3 sypialnie) / ⟦khu vực đầy đủ cơ sở tiện ích, giá thuê vừa phải⟧ (pełna infrastruktura, rozsądny czynsz).
+Nowe słówka: ⟦vừa phải⟧ umiarkowany, rozsądny | ⟦thuận lợi⟧ dogodny | ⟦khu dân cư⟧ osiedle | ⟦tiện ích⟧ udogodnienie, infrastruktura | ⟦ngoại thành⟧ przedmieścia

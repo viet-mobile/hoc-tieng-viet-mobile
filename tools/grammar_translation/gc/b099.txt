@@ -1,0 +1,202 @@
+@@ pdf-grammar-8ed322294bbe6dd7#0
+=cs
+Gramatický výklad
+⟦thuộc⟧, ⟦thuộc về⟧: „patřit (k), náležet“ – uvádí prvek či část, která spadá do vlastnictví či oblasti určité věci, události nebo jevu.
+⟦Trò chơi dân gian là tài sản chung thuộc về toàn thể quần chúng nhân dân.⟧ → Lidové hry jsou společným majetkem, který patří všemu lidu. · ⟦Mảnh đất này thuộc quyền sử dụng của gia đình tôi.⟧ → Tento pozemek je v užívání mé rodiny.
+(přídavné jméno, sloveso) + ⟦gì⟧: slouží k popření významu slovesa či přídavného jména („vůbec ne ~, jakýpak ~“).
+⟦Việc xác định rõ thời điểm ra đời của nó đâu phải là chuyện dễ dàng gì.⟧ → Určit přesně dobu jejich vzniku není vůbec snadné. · ⟦Có nhiều nhặt gì.⟧ → Vždyť toho vůbec není moc. · ⟦Nó thì nhanh nhẹn gì.⟧ → On a čilý? Kdepak. · ⟦Lúc này thì ăn uống gì.⟧ → Teď se přece nedá jíst. · ⟦Có chừng này tiền thì mua bán gì.⟧ → S takhle málo penězi se nedá nic nakoupit.
+⟦khiến⟧: „způsobit, že; vést k tomu, že“ – vyjadřuje, že něco vyvolá změnu u určitého subjektu.
+⟦Cuộc sống nông nghiệp vất vả của người Việt khiến họ có nhu cầu cần được nghỉ ngơi, giải trí.⟧ → Namáhavý zemědělský život Vietnamců způsobil, že potřebují odpočinek a zábavu.
+⟦chính ... là⟧: „právě ~ je“ – zdůrazňuje přesnost a vyjadřuje, že v příčinném vztahu není žádná odchylka.
+⟦Chính những ngày thơ dại được tham gia các trò chơi dân gian trong những dịp hội làng là những ngày không bao giờ phai nhạt trong tâm trí tôi.⟧ → Právě dny nevinného dětství, kdy jsem se o vesnických slavnostech účastnil lidových her, nikdy nevyblednou v mé paměti. · ⟦Chính sự vất vả kiếm sống và sự ân cần dạy bảo của bố mẹ là động lực giúp anh ấy học tập đạt kết quả tốt.⟧ → Právě dřina rodičů při vydělávání na živobytí a jejich pečlivé vedení jsou tím, co ho motivuje k dobrým studijním výsledkům.
+=zh_cn
+语法解说
+⟦thuộc⟧、⟦thuộc về⟧：意为“属于”，用于句子前半部分，提及处于某事物、事件或现象所属范围内的要素或部分。
+⟦Trò chơi dân gian là tài sản chung thuộc về toàn thể quần chúng nhân dân.⟧ → 民间游戏是属于全体人民群众的共同财产。 · ⟦Mảnh đất này thuộc quyền sử dụng của gia đình tôi.⟧ → 这块地的使用权属于我家。
+（形容词、动词）+ ⟦gì⟧：用于否定动词或形容词的意义（“哪里……、……什么”）。
+⟦Việc xác định rõ thời điểm ra đời của nó đâu phải là chuyện dễ dàng gì.⟧ → 要确定它产生的准确时间，可不是什么容易的事。 · ⟦Có nhiều nhặt gì.⟧ → 哪里有多少啊。 · ⟦Nó thì nhanh nhẹn gì.⟧ → 他哪里机灵了。 · ⟦Lúc này thì ăn uống gì.⟧ → 这个时候还吃什么喝什么。 · ⟦Có chừng này tiền thì mua bán gì.⟧ → 就这么点钱还买什么东西。
+⟦khiến⟧：意为“使、让”，表示促使对象发生某种变化。
+⟦Cuộc sống nông nghiệp vất vả của người Việt khiến họ có nhu cầu cần được nghỉ ngơi, giải trí.⟧ → 越南人辛苦的农耕生活使他们需要休息和娱乐。
+⟦chính ... là⟧：意为“正是……”，用于强调准确性，表示在因果关系上毫无偏差。
+⟦Chính những ngày thơ dại được tham gia các trò chơi dân gian trong những dịp hội làng là những ngày không bao giờ phai nhạt trong tâm trí tôi.⟧ → 正是童年时在村庙会上参加民间游戏的那些日子，永远不会在我的记忆中褪色。 · ⟦Chính sự vất vả kiếm sống và sự ân cần dạy bảo của bố mẹ là động lực giúp anh ấy học tập đạt kết quả tốt.⟧ → 正是父母为生计的辛劳和悉心教导，成为他取得好成绩的动力。
+=zh
+文法解說
+⟦thuộc⟧、⟦thuộc về⟧：意為「屬於」，用於句子前半部分，提及處於某事物、事件或現象所屬範圍內的要素或部分。
+⟦Trò chơi dân gian là tài sản chung thuộc về toàn thể quần chúng nhân dân.⟧ → 民間遊戲是屬於全體人民群眾的共同資產。 · ⟦Mảnh đất này thuộc quyền sử dụng của gia đình tôi.⟧ → 這塊地的使用權屬於我家。
+（形容詞、動詞）+ ⟦gì⟧：用於否定動詞或形容詞的意義（「哪裡……、……什麼」）。
+⟦Việc xác định rõ thời điểm ra đời của nó đâu phải là chuyện dễ dàng gì.⟧ → 要確定它出現的準確時間，可不是什麼容易的事。 · ⟦Có nhiều nhặt gì.⟧ → 哪裡有多少啊。 · ⟦Nó thì nhanh nhẹn gì.⟧ → 他哪裡機靈了。 · ⟦Lúc này thì ăn uống gì.⟧ → 這個時候還吃什麼喝什麼。 · ⟦Có chừng này tiền thì mua bán gì.⟧ → 就這麼點錢還買什麼東西。
+⟦khiến⟧：意為「使、讓」，表示促使對象發生某種變化。
+⟦Cuộc sống nông nghiệp vất vả của người Việt khiến họ có nhu cầu cần được nghỉ ngơi, giải trí.⟧ → 越南人辛苦的農耕生活使他們需要休息和娛樂。
+⟦chính ... là⟧：意為「正是……」，用於強調準確性，表示在因果關係上毫無偏差。
+⟦Chính những ngày thơ dại được tham gia các trò chơi dân gian trong những dịp hội làng là những ngày không bao giờ phai nhạt trong tâm trí tôi.⟧ → 正是童年時在村廟會上參加民間遊戲的那些日子，永遠不會在我的記憶中褪色。 · ⟦Chính sự vất vả kiếm sống và sự ân cần dạy bảo của bố mẹ là động lực giúp anh ấy học tập đạt kết quả tốt.⟧ → 正是父母為生計的辛勞和悉心教導，成為他取得好成績的動力。
+=en
+Grammar notes
+⟦thuộc⟧, ⟦thuộc về⟧: "to belong to" – used at the start of a sentence to mention an element or part that falls within the ownership or scope of something.
+⟦Trò chơi dân gian là tài sản chung thuộc về toàn thể quần chúng nhân dân.⟧ → Folk games are a common heritage belonging to all the people. · ⟦Mảnh đất này thuộc quyền sử dụng của gia đình tôi.⟧ → The right to use this plot of land belongs to my family.
+(adjective, verb) + ⟦gì⟧: used to negate the meaning of the verb or adjective ("not ~ at all, hardly ~").
+⟦Việc xác định rõ thời điểm ra đời của nó đâu phải là chuyện dễ dàng gì.⟧ → Pinning down exactly when they originated is no easy matter at all. · ⟦Có nhiều nhặt gì.⟧ → There's hardly much at all. · ⟦Nó thì nhanh nhẹn gì.⟧ → Him, nimble? Not at all. · ⟦Lúc này thì ăn uống gì.⟧ → This is no time to be eating. · ⟦Có chừng này tiền thì mua bán gì.⟧ → You can't buy anything with this little money.
+⟦khiến⟧: "to make, cause" – expresses that something prompts a change in someone or something.
+⟦Cuộc sống nông nghiệp vất vả của người Việt khiến họ có nhu cầu cần được nghỉ ngơi, giải trí.⟧ → The hard agricultural life of Vietnamese people made them need rest and recreation.
+⟦chính ... là⟧: "it is precisely ~ that" – emphasizes exactness and shows there is no deviation in a cause-and-effect relationship.
+⟦Chính những ngày thơ dại được tham gia các trò chơi dân gian trong những dịp hội làng là những ngày không bao giờ phai nhạt trong tâm trí tôi.⟧ → It is precisely the innocent childhood days of playing folk games at village festivals that will never fade from my memory. · ⟦Chính sự vất vả kiếm sống và sự ân cần dạy bảo của bố mẹ là động lực giúp anh ấy học tập đạt kết quả tốt.⟧ → It is precisely his parents' struggle to make a living and their caring guidance that motivate him to do well in his studies.
+=fr
+Notes de grammaire
+⟦thuộc⟧, ⟦thuộc về⟧ : « appartenir à » – s'emploie en début de phrase pour évoquer un élément ou une partie relevant d'une chose, d'un événement ou d'un phénomène.
+⟦Trò chơi dân gian là tài sản chung thuộc về toàn thể quần chúng nhân dân.⟧ → Les jeux populaires sont un bien commun appartenant à tout le peuple. · ⟦Mảnh đất này thuộc quyền sử dụng của gia đình tôi.⟧ → Le droit d'usage de ce terrain appartient à ma famille.
+(adjectif, verbe) + ⟦gì⟧ : sert à nier le sens du verbe ou de l'adjectif (« pas du tout ~, tu parles ~ »).
+⟦Việc xác định rõ thời điểm ra đời của nó đâu phải là chuyện dễ dàng gì.⟧ → Déterminer avec précision leur date d'apparition n'est pas du tout chose facile. · ⟦Có nhiều nhặt gì.⟧ → Il n'y en a pas beaucoup du tout. · ⟦Nó thì nhanh nhẹn gì.⟧ → Lui, agile ? Tu parles. · ⟦Lúc này thì ăn uống gì.⟧ → Ce n'est pas le moment de manger. · ⟦Có chừng này tiền thì mua bán gì.⟧ → Avec si peu d'argent, on ne peut rien acheter.
+⟦khiến⟧ : « faire que, amener à » – exprime qu'une chose provoque un changement chez quelqu'un ou quelque chose.
+⟦Cuộc sống nông nghiệp vất vả của người Việt khiến họ có nhu cầu cần được nghỉ ngơi, giải trí.⟧ → La dure vie agricole des Vietnamiens les a amenés à avoir besoin de repos et de divertissement.
+⟦chính ... là⟧ : « c'est justement ~ qui » – souligne l'exactitude et indique qu'il n'y a aucun écart dans la relation de cause à effet.
+⟦Chính những ngày thơ dại được tham gia các trò chơi dân gian trong những dịp hội làng là những ngày không bao giờ phai nhạt trong tâm trí tôi.⟧ → Ce sont justement les jours d'enfance insouciante passés à jouer aux jeux populaires lors des fêtes du village qui ne s'effaceront jamais de ma mémoire. · ⟦Chính sự vất vả kiếm sống và sự ân cần dạy bảo của bố mẹ là động lực giúp anh ấy học tập đạt kết quả tốt.⟧ → Ce sont justement le dur labeur de ses parents pour gagner leur vie et leurs conseils attentionnés qui le motivent à obtenir de bons résultats.
+=de
+Grammatikerläuterungen
+⟦thuộc⟧, ⟦thuộc về⟧: „gehören zu“ – steht im ersten Satzteil, um ein Element oder einen Teil zu nennen, der zum Besitz oder Bereich einer Sache, eines Ereignisses oder einer Erscheinung gehört.
+⟦Trò chơi dân gian là tài sản chung thuộc về toàn thể quần chúng nhân dân.⟧ → Volksspiele sind ein Gemeingut, das dem ganzen Volk gehört. · ⟦Mảnh đất này thuộc quyền sử dụng của gia đình tôi.⟧ → Das Nutzungsrecht an diesem Grundstück gehört meiner Familie.
+(Adjektiv, Verb) + ⟦gì⟧: dient zur Verneinung der Bedeutung des Verbs oder Adjektivs („überhaupt nicht ~, von wegen ~“).
+⟦Việc xác định rõ thời điểm ra đời của nó đâu phải là chuyện dễ dàng gì.⟧ → Den Zeitpunkt ihrer Entstehung genau zu bestimmen, ist überhaupt nicht einfach. · ⟦Có nhiều nhặt gì.⟧ → Es ist doch gar nicht viel. · ⟦Nó thì nhanh nhẹn gì.⟧ → Der und flink? Von wegen. · ⟦Lúc này thì ăn uống gì.⟧ → Jetzt ist doch keine Zeit zum Essen. · ⟦Có chừng này tiền thì mua bán gì.⟧ → Mit so wenig Geld kann man doch nichts kaufen.
+⟦khiến⟧: „bewirken, dass; dazu führen, dass“ – drückt aus, dass etwas eine Veränderung bei jemandem oder etwas auslöst.
+⟦Cuộc sống nông nghiệp vất vả của người Việt khiến họ có nhu cầu cần được nghỉ ngơi, giải trí.⟧ → Das mühsame bäuerliche Leben der Vietnamesen führte dazu, dass sie Erholung und Unterhaltung brauchten.
+⟦chính ... là⟧: „gerade ~ ist es, das“ – betont die Genauigkeit und zeigt, dass es im Ursache-Wirkungs-Verhältnis keine Abweichung gibt.
+⟦Chính những ngày thơ dại được tham gia các trò chơi dân gian trong những dịp hội làng là những ngày không bao giờ phai nhạt trong tâm trí tôi.⟧ → Gerade die unschuldigen Kindertage, an denen ich bei Dorffesten an Volksspielen teilnahm, werden in meiner Erinnerung nie verblassen. · ⟦Chính sự vất vả kiếm sống và sự ân cần dạy bảo của bố mẹ là động lực giúp anh ấy học tập đạt kết quả tốt.⟧ → Gerade die Mühen seiner Eltern, den Lebensunterhalt zu verdienen, und ihre fürsorgliche Anleitung motivieren ihn zu guten Lernergebnissen.
+=hu
+Nyelvtani magyarázat
+⟦thuộc⟧, ⟦thuộc về⟧: „tartozik (valamihez)” – a mondat első részében áll, és egy dolog, esemény vagy jelenség körébe tartozó elemet, részt említ.
+⟦Trò chơi dân gian là tài sản chung thuộc về toàn thể quần chúng nhân dân.⟧ → A népi játékok az egész néphez tartozó közös kincsek. · ⟦Mảnh đất này thuộc quyền sử dụng của gia đình tôi.⟧ → Ennek a teleknek a használati joga a családomé.
+(melléknév, ige) + ⟦gì⟧: az ige vagy melléknév jelentésének tagadására szolgál („egyáltalán nem ~, dehogy ~”).
+⟦Việc xác định rõ thời điểm ra đời của nó đâu phải là chuyện dễ dàng gì.⟧ → Keletkezésük idejét pontosan meghatározni egyáltalán nem könnyű. · ⟦Có nhiều nhặt gì.⟧ → Dehogy sok. · ⟦Nó thì nhanh nhẹn gì.⟧ → Ő és fürge? Dehogy. · ⟦Lúc này thì ăn uống gì.⟧ → Most ugyan mit ennénk. · ⟦Có chừng này tiền thì mua bán gì.⟧ → Ennyi pénzből ugyan mit lehetne venni.
+⟦khiến⟧: „azt eredményezi, hogy; arra készteti, hogy” – azt fejezi ki, hogy valami változást idéz elő egy alanyban.
+⟦Cuộc sống nông nghiệp vất vả của người Việt khiến họ có nhu cầu cần được nghỉ ngơi, giải trí.⟧ → A vietnámiak nehéz földműves élete miatt szükségük volt pihenésre és szórakozásra.
+⟦chính ... là⟧: „éppen ~ az, ami” – a pontosságot hangsúlyozza, és azt, hogy az ok-okozati viszonyban nincs semmi eltérés.
+⟦Chính những ngày thơ dại được tham gia các trò chơi dân gian trong những dịp hội làng là những ngày không bao giờ phai nhạt trong tâm trí tôi.⟧ → Éppen azok az ártatlan gyermeknapok, amikor a falusi ünnepeken népi játékokban vettem részt, azok, amelyek soha nem halványulnak el az emlékezetemben. · ⟦Chính sự vất vả kiếm sống và sự ân cần dạy bảo của bố mẹ là động lực giúp anh ấy học tập đạt kết quả tốt.⟧ → Éppen szülei megélhetésért folytatott küzdelme és gondos nevelése az, ami jó tanulmányi eredményekre ösztönzi.
+=id
+Penjelasan tata bahasa
+⟦thuộc⟧, ⟦thuộc về⟧: "termasuk, milik" – dipakai di bagian awal kalimat untuk menyebut unsur atau bagian yang berada dalam lingkup kepemilikan suatu benda, peristiwa, atau fenomena.
+⟦Trò chơi dân gian là tài sản chung thuộc về toàn thể quần chúng nhân dân.⟧ → Permainan rakyat adalah harta bersama milik seluruh rakyat. · ⟦Mảnh đất này thuộc quyền sử dụng của gia đình tôi.⟧ → Hak guna tanah ini milik keluarga saya.
+(adjektiva, verba) + ⟦gì⟧: digunakan untuk menyangkal makna verba atau adjektiva ("sama sekali tidak ~, apanya ~").
+⟦Việc xác định rõ thời điểm ra đời của nó đâu phải là chuyện dễ dàng gì.⟧ → Menentukan dengan jelas kapan permainan itu lahir sama sekali bukan hal mudah. · ⟦Có nhiều nhặt gì.⟧ → Banyak apanya. · ⟦Nó thì nhanh nhẹn gì.⟧ → Dia gesit apanya. · ⟦Lúc này thì ăn uống gì.⟧ → Saat begini mana bisa makan minum. · ⟦Có chừng này tiền thì mua bán gì.⟧ → Uang segini mau beli apa.
+⟦khiến⟧: "membuat, menyebabkan" – menyatakan sesuatu mendorong terjadinya perubahan pada suatu objek.
+⟦Cuộc sống nông nghiệp vất vả của người Việt khiến họ có nhu cầu cần được nghỉ ngơi, giải trí.⟧ → Kehidupan bertani orang Vietnam yang berat membuat mereka butuh istirahat dan hiburan.
+⟦chính ... là⟧: "justru ~-lah yang" – menegaskan ketepatan dan menyatakan tidak ada penyimpangan dalam hubungan sebab-akibat.
+⟦Chính những ngày thơ dại được tham gia các trò chơi dân gian trong những dịp hội làng là những ngày không bao giờ phai nhạt trong tâm trí tôi.⟧ → Justru hari-hari masa kecil saat ikut permainan rakyat di pesta desa-lah yang tak pernah pudar dalam ingatan saya. · ⟦Chính sự vất vả kiếm sống và sự ân cần dạy bảo của bố mẹ là động lực giúp anh ấy học tập đạt kết quả tốt.⟧ → Justru kerja keras orang tua mencari nafkah dan bimbingan penuh perhatian merekalah yang menjadi pendorong dia berprestasi.
+=ja
+文法解説
+⟦thuộc⟧、⟦thuộc về⟧：ある物事・出来事・現象の所有範囲にある要素や部分を取り上げるため、文の前半に使います（「～に属する」）。
+⟦Trò chơi dân gian là tài sản chung thuộc về toàn thể quần chúng nhân dân.⟧ → 民間の遊びは全人民に属する共有財産だ。 · ⟦Mảnh đất này thuộc quyền sử dụng của gia đình tôi.⟧ → この土地の使用権は私の家族に属している。
+（形容詞、動詞）+ ⟦gì⟧：動詞や形容詞の意味を否定するために使います（「ちっとも～ない、何が～なものか」）。
+⟦Việc xác định rõ thời điểm ra đời của nó đâu phải là chuyện dễ dàng gì.⟧ → その誕生の時期をはっきり特定するのは決して簡単なことではない。 · ⟦Có nhiều nhặt gì.⟧ → 多くなんかないよ。 · ⟦Nó thì nhanh nhẹn gì.⟧ → あいつが機敏なものか。 · ⟦Lúc này thì ăn uống gì.⟧ → 今は食べるどころじゃない。 · ⟦Có chừng này tiền thì mua bán gì.⟧ → これっぽっちのお金じゃ何も買えない。
+⟦khiến⟧：対象に何らかの変化が起こるよう促すという意味で使われます（「～させる」）。
+⟦Cuộc sống nông nghiệp vất vả của người Việt khiến họ có nhu cầu cần được nghỉ ngơi, giải trí.⟧ → ベトナム人のつらい農業生活は、彼らに休息や娯楽の必要性をもたらした。
+⟦chính ... là⟧：正確さを強調し、因果関係において少しの違いもないことを表すために使われます（「まさに～こそが」）。
+⟦Chính những ngày thơ dại được tham gia các trò chơi dân gian trong những dịp hội làng là những ngày không bao giờ phai nhạt trong tâm trí tôi.⟧ → 村祭りの折に民間の遊びに参加した幼い日々こそが、私の心の中で決して色あせることのない日々だ。 · ⟦Chính sự vất vả kiếm sống và sự ân cần dạy bảo của bố mẹ là động lực giúp anh ấy học tập đạt kết quả tốt.⟧ → 生計を立てるための両親の苦労と心のこもった教えこそが、彼が良い成績を収める原動力となっている。
+=pl
+Objaśnienia gramatyczne
+⟦thuộc⟧, ⟦thuộc về⟧: „należeć do” – stoi w pierwszej części zdania i wymienia element lub część należącą do zakresu jakiejś rzeczy, zdarzenia lub zjawiska.
+⟦Trò chơi dân gian là tài sản chung thuộc về toàn thể quần chúng nhân dân.⟧ → Gry ludowe są wspólnym dobrem należącym do całego narodu. · ⟦Mảnh đất này thuộc quyền sử dụng của gia đình tôi.⟧ → Prawo użytkowania tej działki należy do mojej rodziny.
+(przymiotnik, czasownik) + ⟦gì⟧: służy do zaprzeczenia znaczenia czasownika lub przymiotnika („wcale nie ~, gdzie tam ~”).
+⟦Việc xác định rõ thời điểm ra đời của nó đâu phải là chuyện dễ dàng gì.⟧ → Dokładne ustalenie czasu ich powstania wcale nie jest łatwe. · ⟦Có nhiều nhặt gì.⟧ → Gdzie tam dużo. · ⟦Nó thì nhanh nhẹn gì.⟧ → On zwinny? Gdzie tam. · ⟦Lúc này thì ăn uống gì.⟧ → Teraz to nie czas na jedzenie. · ⟦Có chừng này tiền thì mua bán gì.⟧ → Za tak mało pieniędzy nic się nie kupi.
+⟦khiến⟧: „sprawiać, że; powodować” – wyraża, że coś wywołuje zmianę u kogoś lub czegoś.
+⟦Cuộc sống nông nghiệp vất vả của người Việt khiến họ có nhu cầu cần được nghỉ ngơi, giải trí.⟧ → Ciężkie życie rolnicze Wietnamczyków sprawiło, że potrzebowali odpoczynku i rozrywki.
+⟦chính ... là⟧: „właśnie ~ jest tym, co” – podkreśla dokładność i wskazuje, że w związku przyczynowo-skutkowym nie ma żadnej rozbieżności.
+⟦Chính những ngày thơ dại được tham gia các trò chơi dân gian trong những dịp hội làng là những ngày không bao giờ phai nhạt trong tâm trí tôi.⟧ → Właśnie beztroskie dni dzieciństwa, gdy podczas świąt wiejskich brałem udział w grach ludowych, nigdy nie wyblakną w mojej pamięci. · ⟦Chính sự vất vả kiếm sống và sự ân cần dạy bảo của bố mẹ là động lực giúp anh ấy học tập đạt kết quả tốt.⟧ → Właśnie trud rodziców w zarabianiu na życie i ich troskliwe wychowanie motywują go do dobrych wyników w nauce.
+@@ pdf-grammar-332ea38723f2535a#0
+=cs
+Gramatický výklad
+⟦nào mà chẳng⟧ + (sloveso, přídavné jméno): zdůrazňuje, že stav, činnost či vlastnost vyjádřená přísudkem existuje vždy („který ~ ne, kdy ~ ne“ = vždycky).
+⟦Năm nào mà tôi chẳng đi Hội Gióng.⟧ → Není roku, kdy bych nejel na slavnost Gióng. · ⟦Lúc nào mà tôi chẳng thích ăn phở.⟧ → Phở mám rád vždycky. · ⟦Buổi học nào mà tôi chẳng ngồi chỗ này.⟧ → Na každé hodině sedím právě tady.
+(sloveso) + ⟦được⟧: vyjadřuje, že činnost vyjádřená slovesem může být uskutečněna („umět, dokázat“).
+⟦Tôi chơi được cờ tướng.⟧ → Umím hrát čínské šachy. · ⟦Chị ấy hát được những bài dân ca.⟧ → Umí zpívat lidové písně. · ⟦Sau một thời gian tập luyện, tôi đã bơi được.⟧ → Po nějaké době tréninku už umím plavat.
+(sloveso, přídavné jméno) + ⟦sao được⟧: vyjadřuje, že činnost, stav či vlastnost nemohou být uskutečněny („jak by mohl ~“ = nemůže).
+⟦Tôi gầy và thấp lùn thế này tham gia đấu vật sao được.⟧ → Takhle hubený a malý – jak bych se mohl účastnit zápasu? · ⟦Bệnh dịch Covid đang hoành hành thì du lịch sao được.⟧ → Když řádí covid, jak by se dalo cestovat? · ⟦Vừa bị điểm kém thì vui sao được.⟧ → Právě jsem dostal špatnou známku – jak bych mohl mít radost?
+(sloveso, přídavné jméno) + ⟦là chính⟧: vyjadřuje, že činnost, vlastnost či stav jsou hlavní, převažující („hlavně, především“).
+⟦Mình đến đây chơi là chính.⟧ → Přišel jsem sem hlavně za zábavou. · ⟦Chị ấy đến thành phố để du lịch là chính.⟧ → Přijela do města hlavně na výlet. · ⟦Chúng tôi sang Việt Nam để học tiếng Việt là chính.⟧ → Přijeli jsme do Vietnamu hlavně se učit vietnamsky. · ⟦Mình chơi cho vui là chính.⟧ → Hraju hlavně pro zábavu. · ⟦Ôn lại tiếng Việt cho đỡ quên là chính.⟧ → Hlavně si opakuji vietnamštinu, abych ji nezapomněl.
+=zh_cn
+语法解说
+⟦nào mà chẳng⟧ +（动词、形容词）：用于强调谓语所表示的状态、活动、性质总是存在（“哪……不……”＝总是）。
+⟦Năm nào mà tôi chẳng đi Hội Gióng.⟧ → 哪一年我不去扶董庙会呢（每年都去）。 · ⟦Lúc nào mà tôi chẳng thích ăn phở.⟧ → 我什么时候不爱吃河粉呢（一直爱吃）。 · ⟦Buổi học nào mà tôi chẳng ngồi chỗ này.⟧ → 哪节课我不是坐在这儿呢。
+（动词）+ ⟦được⟧：表示动词所示的活动有实现的可能（“会、能”）。
+⟦Tôi chơi được cờ tướng.⟧ → 我会下象棋。 · ⟦Chị ấy hát được những bài dân ca.⟧ → 她会唱民歌。 · ⟦Sau một thời gian tập luyện, tôi đã bơi được.⟧ → 练了一段时间后，我已经会游泳了。
+（动词、形容词）+ ⟦sao được⟧：表示谓语所示的活动、状态、性质没有实现的可能（“怎么能……呢”）。
+⟦Tôi gầy và thấp lùn thế này tham gia đấu vật sao được.⟧ → 我这么瘦小，怎么能参加摔跤呢。 · ⟦Bệnh dịch Covid đang hoành hành thì du lịch sao được.⟧ → 新冠疫情正肆虐，怎么能去旅游呢。 · ⟦Vừa bị điểm kém thì vui sao được.⟧ → 刚考了低分，怎么高兴得起来呢。
+（动词、形容词）+ ⟦là chính⟧：表示动词、形容词所示的活动、性质或状态是主要的（“主要是……”）。
+⟦Mình đến đây chơi là chính.⟧ → 我来这里主要是玩的。 · ⟦Chị ấy đến thành phố để du lịch là chính.⟧ → 她来城里主要是为了旅游。 · ⟦Chúng tôi sang Việt Nam để học tiếng Việt là chính.⟧ → 我们来越南主要是为了学越南语。 · ⟦Mình chơi cho vui là chính.⟧ → 我主要是玩个开心。 · ⟦Ôn lại tiếng Việt cho đỡ quên là chính.⟧ → 主要是复习一下越南语，免得忘了。
+=zh
+文法解說
+⟦nào mà chẳng⟧ +（動詞、形容詞）：用於強調謂語所表示的狀態、活動、性質總是存在（「哪……不……」＝總是）。
+⟦Năm nào mà tôi chẳng đi Hội Gióng.⟧ → 哪一年我不去扶董廟會呢（每年都去）。 · ⟦Lúc nào mà tôi chẳng thích ăn phở.⟧ → 我什麼時候不愛吃河粉呢（一直愛吃）。 · ⟦Buổi học nào mà tôi chẳng ngồi chỗ này.⟧ → 哪堂課我不是坐在這裡呢。
+（動詞）+ ⟦được⟧：表示動詞所示的活動有實現的可能（「會、能」）。
+⟦Tôi chơi được cờ tướng.⟧ → 我會下象棋。 · ⟦Chị ấy hát được những bài dân ca.⟧ → 她會唱民歌。 · ⟦Sau một thời gian tập luyện, tôi đã bơi được.⟧ → 練了一段時間後，我已經會游泳了。
+（動詞、形容詞）+ ⟦sao được⟧：表示謂語所示的活動、狀態、性質沒有實現的可能（「怎麼能……呢」）。
+⟦Tôi gầy và thấp lùn thế này tham gia đấu vật sao được.⟧ → 我這麼瘦小，怎麼能參加摔角呢。 · ⟦Bệnh dịch Covid đang hoành hành thì du lịch sao được.⟧ → 新冠疫情正肆虐，怎麼能去旅遊呢。 · ⟦Vừa bị điểm kém thì vui sao được.⟧ → 剛考了低分，怎麼高興得起來呢。
+（動詞、形容詞）+ ⟦là chính⟧：表示動詞、形容詞所示的活動、性質或狀態是主要的（「主要是……」）。
+⟦Mình đến đây chơi là chính.⟧ → 我來這裡主要是玩的。 · ⟦Chị ấy đến thành phố để du lịch là chính.⟧ → 她來城裡主要是為了旅遊。 · ⟦Chúng tôi sang Việt Nam để học tiếng Việt là chính.⟧ → 我們來越南主要是為了學越南語。 · ⟦Mình chơi cho vui là chính.⟧ → 我主要是玩個開心。 · ⟦Ôn lại tiếng Việt cho đỡ quên là chính.⟧ → 主要是複習一下越南語，免得忘了。
+=en
+Grammar notes
+⟦nào mà chẳng⟧ + (verb, adjective): emphasizes that the state, activity or quality in the predicate always exists ("which ~ doesn't …?" = always).
+⟦Năm nào mà tôi chẳng đi Hội Gióng.⟧ → There's no year I don't go to the Gióng Festival. · ⟦Lúc nào mà tôi chẳng thích ăn phở.⟧ → I always love eating phở. · ⟦Buổi học nào mà tôi chẳng ngồi chỗ này.⟧ → I sit in this spot in every single class.
+(verb) + ⟦được⟧: shows that the activity of the verb can be realised ("can, be able to").
+⟦Tôi chơi được cờ tướng.⟧ → I can play Chinese chess. · ⟦Chị ấy hát được những bài dân ca.⟧ → She can sing folk songs. · ⟦Sau một thời gian tập luyện, tôi đã bơi được.⟧ → After some practice, I can swim now.
+(verb, adjective) + ⟦sao được⟧: shows that the activity, state or quality cannot possibly be realised ("how could ~?" = can't).
+⟦Tôi gầy và thấp lùn thế này tham gia đấu vật sao được.⟧ → Skinny and short as I am, how could I take part in wrestling? · ⟦Bệnh dịch Covid đang hoành hành thì du lịch sao được.⟧ → With Covid raging, how can anyone travel? · ⟦Vừa bị điểm kém thì vui sao được.⟧ → I've just got a bad mark – how could I be happy?
+(verb, adjective) + ⟦là chính⟧: shows that the activity, quality or state is the main or predominant one ("mainly, chiefly").
+⟦Mình đến đây chơi là chính.⟧ → I came here mainly to have fun. · ⟦Chị ấy đến thành phố để du lịch là chính.⟧ → She came to the city mainly for sightseeing. · ⟦Chúng tôi sang Việt Nam để học tiếng Việt là chính.⟧ → We came to Vietnam mainly to learn Vietnamese. · ⟦Mình chơi cho vui là chính.⟧ → I play mainly for fun. · ⟦Ôn lại tiếng Việt cho đỡ quên là chính.⟧ → It's mainly to review Vietnamese so I don't forget it.
+=fr
+Notes de grammaire
+⟦nào mà chẳng⟧ + (verbe, adjectif) : souligne que l'état, l'activité ou la qualité exprimés par le prédicat existent toujours (« quel ~ ne … pas ? » = toujours).
+⟦Năm nào mà tôi chẳng đi Hội Gióng.⟧ → Pas une année sans que j'aille à la fête de Gióng. · ⟦Lúc nào mà tôi chẳng thích ăn phở.⟧ → J'aime toujours manger du phở. · ⟦Buổi học nào mà tôi chẳng ngồi chỗ này.⟧ → À chaque cours, je m'assois à cette place.
+(verbe) + ⟦được⟧ : indique que l'activité exprimée par le verbe peut se réaliser (« savoir, pouvoir »).
+⟦Tôi chơi được cờ tướng.⟧ → Je sais jouer aux échecs chinois. · ⟦Chị ấy hát được những bài dân ca.⟧ → Elle sait chanter des chansons populaires. · ⟦Sau một thời gian tập luyện, tôi đã bơi được.⟧ → Après un temps d'entraînement, je sais nager.
+(verbe, adjectif) + ⟦sao được⟧ : indique que l'activité, l'état ou la qualité ne peuvent se réaliser (« comment pourrait-on ~ ? » = impossible).
+⟦Tôi gầy và thấp lùn thế này tham gia đấu vật sao được.⟧ → Maigre et petit comme je suis, comment pourrais-je participer à la lutte ? · ⟦Bệnh dịch Covid đang hoành hành thì du lịch sao được.⟧ → Avec la Covid qui fait rage, comment voyager ? · ⟦Vừa bị điểm kém thì vui sao được.⟧ → Je viens d'avoir une mauvaise note, comment pourrais-je être content ?
+(verbe, adjectif) + ⟦là chính⟧ : indique que l'activité, la qualité ou l'état sont principaux (« surtout, avant tout »).
+⟦Mình đến đây chơi là chính.⟧ → Je suis venu ici surtout pour m'amuser. · ⟦Chị ấy đến thành phố để du lịch là chính.⟧ → Elle est venue en ville surtout pour faire du tourisme. · ⟦Chúng tôi sang Việt Nam để học tiếng Việt là chính.⟧ → Nous sommes venus au Vietnam avant tout pour apprendre le vietnamien. · ⟦Mình chơi cho vui là chính.⟧ → Je joue surtout pour le plaisir. · ⟦Ôn lại tiếng Việt cho đỡ quên là chính.⟧ → C'est surtout pour réviser le vietnamien et ne pas l'oublier.
+=de
+Grammatikerläuterungen
+⟦nào mà chẳng⟧ + (Verb, Adjektiv): betont, dass der im Prädikat genannte Zustand, die Tätigkeit oder Eigenschaft immer vorhanden ist („welcher ~ nicht?“ = immer).
+⟦Năm nào mà tôi chẳng đi Hội Gióng.⟧ → Es gibt kein Jahr, in dem ich nicht zum Gióng-Fest gehe. · ⟦Lúc nào mà tôi chẳng thích ăn phở.⟧ → Phở esse ich immer gern. · ⟦Buổi học nào mà tôi chẳng ngồi chỗ này.⟧ → In jeder Stunde sitze ich an diesem Platz.
+(Verb) + ⟦được⟧: zeigt, dass die Tätigkeit des Verbs realisierbar ist („können“).
+⟦Tôi chơi được cờ tướng.⟧ → Ich kann chinesisches Schach spielen. · ⟦Chị ấy hát được những bài dân ca.⟧ → Sie kann Volkslieder singen. · ⟦Sau một thời gian tập luyện, tôi đã bơi được.⟧ → Nach einiger Übung kann ich jetzt schwimmen.
+(Verb, Adjektiv) + ⟦sao được⟧: zeigt, dass Tätigkeit, Zustand oder Eigenschaft nicht verwirklicht werden können („wie sollte ~?“ = unmöglich).
+⟦Tôi gầy và thấp lùn thế này tham gia đấu vật sao được.⟧ → So dünn und klein, wie ich bin – wie sollte ich beim Ringen mitmachen? · ⟦Bệnh dịch Covid đang hoành hành thì du lịch sao được.⟧ → Wie soll man reisen, wenn Covid wütet? · ⟦Vừa bị điểm kém thì vui sao được.⟧ → Gerade eine schlechte Note bekommen – wie sollte ich da froh sein?
+(Verb, Adjektiv) + ⟦là chính⟧: drückt aus, dass Tätigkeit, Eigenschaft oder Zustand das Hauptsächliche sind („hauptsächlich, vor allem“).
+⟦Mình đến đây chơi là chính.⟧ → Ich bin hauptsächlich zum Vergnügen hier. · ⟦Chị ấy đến thành phố để du lịch là chính.⟧ → Sie ist vor allem als Touristin in die Stadt gekommen. · ⟦Chúng tôi sang Việt Nam để học tiếng Việt là chính.⟧ → Wir sind hauptsächlich nach Vietnam gekommen, um Vietnamesisch zu lernen. · ⟦Mình chơi cho vui là chính.⟧ → Ich spiele vor allem zum Spaß. · ⟦Ôn lại tiếng Việt cho đỡ quên là chính.⟧ → Hauptsächlich wiederhole ich Vietnamesisch, um es nicht zu vergessen.
+=hu
+Nyelvtani magyarázat
+⟦nào mà chẳng⟧ + (ige, melléknév): azt hangsúlyozza, hogy az állítmányban megadott állapot, tevékenység vagy tulajdonság mindig fennáll („melyik ~ nem?” = mindig).
+⟦Năm nào mà tôi chẳng đi Hội Gióng.⟧ → Nincs olyan év, hogy ne mennék el a Gióng-ünnepre. · ⟦Lúc nào mà tôi chẳng thích ăn phở.⟧ → A phởt mindig szívesen eszem. · ⟦Buổi học nào mà tôi chẳng ngồi chỗ này.⟧ → Minden órán ezen a helyen ülök.
+(ige) + ⟦được⟧: azt jelzi, hogy az ige által jelölt tevékenység megvalósítható („tud, képes”).
+⟦Tôi chơi được cờ tướng.⟧ → Tudok kínai sakkot játszani. · ⟦Chị ấy hát được những bài dân ca.⟧ → Tud népdalokat énekelni. · ⟦Sau một thời gian tập luyện, tôi đã bơi được.⟧ → Egy kis gyakorlás után már tudok úszni.
+(ige, melléknév) + ⟦sao được⟧: azt jelzi, hogy a tevékenység, állapot vagy tulajdonság nem valósulhat meg („hogyan is ~?” = nem lehet).
+⟦Tôi gầy và thấp lùn thế này tham gia đấu vật sao được.⟧ → Ilyen soványan és alacsonyan hogyan is vehetnék részt birkózáson? · ⟦Bệnh dịch Covid đang hoành hành thì du lịch sao được.⟧ → Amikor a Covid tombol, hogyan is lehetne utazni? · ⟦Vừa bị điểm kém thì vui sao được.⟧ → Most kaptam rossz jegyet, hogyan is örülhetnék?
+(ige, melléknév) + ⟦là chính⟧: azt fejezi ki, hogy a tevékenység, tulajdonság vagy állapot a fő, meghatározó („főleg, elsősorban”).
+⟦Mình đến đây chơi là chính.⟧ → Főleg szórakozni jöttem ide. · ⟦Chị ấy đến thành phố để du lịch là chính.⟧ → Főleg turistaként jött a városba. · ⟦Chúng tôi sang Việt Nam để học tiếng Việt là chính.⟧ → Elsősorban vietnámit tanulni jöttünk Vietnámba. · ⟦Mình chơi cho vui là chính.⟧ → Főleg a szórakozás kedvéért játszom. · ⟦Ôn lại tiếng Việt cho đỡ quên là chính.⟧ → Főleg azért ismétlem a vietnámit, hogy ne felejtsem el.
+=id
+Penjelasan tata bahasa
+⟦nào mà chẳng⟧ + (verba, adjektiva): menegaskan bahwa keadaan, kegiatan, atau sifat dalam predikat selalu ada ("~ mana yang tidak" = selalu).
+⟦Năm nào mà tôi chẳng đi Hội Gióng.⟧ → Tahun mana yang saya tidak pergi ke Festival Gióng (setiap tahun pergi). · ⟦Lúc nào mà tôi chẳng thích ăn phở.⟧ → Kapan saya tidak suka makan phở (selalu suka). · ⟦Buổi học nào mà tôi chẳng ngồi chỗ này.⟧ → Setiap pelajaran saya selalu duduk di sini.
+(verba) + ⟦được⟧: menunjukkan bahwa kegiatan dalam verba mungkin terlaksana ("bisa, dapat").
+⟦Tôi chơi được cờ tướng.⟧ → Saya bisa main catur Tiongkok. · ⟦Chị ấy hát được những bài dân ca.⟧ → Dia bisa menyanyikan lagu-lagu rakyat. · ⟦Sau một thời gian tập luyện, tôi đã bơi được.⟧ → Setelah berlatih beberapa waktu, saya sudah bisa berenang.
+(verba, adjektiva) + ⟦sao được⟧: menunjukkan bahwa kegiatan, keadaan, atau sifat tidak mungkin terlaksana ("mana bisa ~").
+⟦Tôi gầy và thấp lùn thế này tham gia đấu vật sao được.⟧ → Saya kurus dan pendek begini, mana bisa ikut gulat. · ⟦Bệnh dịch Covid đang hoành hành thì du lịch sao được.⟧ → Covid sedang merajalela, mana bisa berwisata. · ⟦Vừa bị điểm kém thì vui sao được.⟧ → Baru dapat nilai jelek, mana bisa senang.
+(verba, adjektiva) + ⟦là chính⟧: menyatakan bahwa kegiatan, sifat, atau keadaan itu yang utama ("terutama").
+⟦Mình đến đây chơi là chính.⟧ → Aku datang ke sini terutama untuk bersenang-senang. · ⟦Chị ấy đến thành phố để du lịch là chính.⟧ → Dia datang ke kota terutama untuk berwisata. · ⟦Chúng tôi sang Việt Nam để học tiếng Việt là chính.⟧ → Kami datang ke Vietnam terutama untuk belajar bahasa Vietnam. · ⟦Mình chơi cho vui là chính.⟧ → Aku bermain terutama untuk senang-senang. · ⟦Ôn lại tiếng Việt cho đỡ quên là chính.⟧ → Terutama untuk mengulang bahasa Vietnam supaya tidak lupa.
+=ja
+文法解説
+⟦nào mà chẳng⟧ +（動詞、形容詞）：述語（動詞・形容詞）で示した状態・活動・性質が常に存在することを強調するために使います（「どの～も～しないことはない」＝いつも）。
+⟦Năm nào mà tôi chẳng đi Hội Gióng.⟧ → 私がゾン祭りに行かない年などない。 · ⟦Lúc nào mà tôi chẳng thích ăn phở.⟧ → 私はいつだってフォーが好きだ。 · ⟦Buổi học nào mà tôi chẳng ngồi chỗ này.⟧ → 私はどの授業でもこの席に座る。
+（動詞）+ ⟦được⟧：動詞で示した活動が実現する可能性があることを表すために使います（「～できる」）。
+⟦Tôi chơi được cờ tướng.⟧ → 私は中国将棋ができる。 · ⟦Chị ấy hát được những bài dân ca.⟧ → 彼女は民謡が歌える。 · ⟦Sau một thời gian tập luyện, tôi đã bơi được.⟧ → しばらく練習して、泳げるようになった。
+（動詞、形容詞）+ ⟦sao được⟧：述語で示した活動・状態・性質が実現する可能性がないことを表すために使います（「どうして～できようか」）。
+⟦Tôi gầy và thấp lùn thế này tham gia đấu vật sao được.⟧ → こんなにやせて背が低いのに、どうして相撲に出られようか。 · ⟦Bệnh dịch Covid đang hoành hành thì du lịch sao được.⟧ → 新型コロナが猛威をふるっているのに、どうして旅行できようか。 · ⟦Vừa bị điểm kém thì vui sao được.⟧ → 悪い点を取ったばかりなのに、どうして喜べようか。
+（動詞、形容詞）+ ⟦là chính⟧：動詞・形容詞で示された活動・性質・状態が主導的・主要なものであることを表すために使います（「主に～」）。
+⟦Mình đến đây chơi là chính.⟧ → ここには主に遊びに来たんだ。 · ⟦Chị ấy đến thành phố để du lịch là chính.⟧ → 彼女は主に観光のために街に来た。 · ⟦Chúng tôi sang Việt Nam để học tiếng Việt là chính.⟧ → 私たちは主にベトナム語を学ぶためにベトナムに来た。 · ⟦Mình chơi cho vui là chính.⟧ → 主に楽しむために遊んでいる。 · ⟦Ôn lại tiếng Việt cho đỡ quên là chính.⟧ → 主に忘れないようにベトナム語を復習しているんだ。
+=pl
+Objaśnienia gramatyczne
+⟦nào mà chẳng⟧ + (czasownik, przymiotnik): podkreśla, że stan, czynność lub cecha wyrażona orzeczeniem istnieje zawsze („który ~ nie?” = zawsze).
+⟦Năm nào mà tôi chẳng đi Hội Gióng.⟧ → Nie ma roku, żebym nie pojechał na święto Gióng. · ⟦Lúc nào mà tôi chẳng thích ăn phở.⟧ → Phở zawsze lubię jeść. · ⟦Buổi học nào mà tôi chẳng ngồi chỗ này.⟧ → Na każdej lekcji siedzę właśnie tutaj.
+(czasownik) + ⟦được⟧: wskazuje, że czynność wyrażona czasownikiem może zostać zrealizowana („umieć, móc”).
+⟦Tôi chơi được cờ tướng.⟧ → Umiem grać w szachy chińskie. · ⟦Chị ấy hát được những bài dân ca.⟧ → Umie śpiewać pieśni ludowe. · ⟦Sau một thời gian tập luyện, tôi đã bơi được.⟧ → Po pewnym czasie treningu już umiem pływać.
+(czasownik, przymiotnik) + ⟦sao được⟧: wskazuje, że czynność, stan lub cecha nie mogą zostać zrealizowane („jakże by ~?” = niemożliwe).
+⟦Tôi gầy và thấp lùn thế này tham gia đấu vật sao được.⟧ → Taki chudy i niski – jakże miałbym startować w zapasach? · ⟦Bệnh dịch Covid đang hoành hành thì du lịch sao được.⟧ → Gdy szaleje Covid, jak tu podróżować? · ⟦Vừa bị điểm kém thì vui sao được.⟧ → Właśnie dostałem złą ocenę – jak mam się cieszyć?
+(czasownik, przymiotnik) + ⟦là chính⟧: wyraża, że czynność, cecha lub stan są główne, przeważające („głównie, przede wszystkim”).
+⟦Mình đến đây chơi là chính.⟧ → Przyjechałem tu głównie dla przyjemności. · ⟦Chị ấy đến thành phố để du lịch là chính.⟧ → Przyjechała do miasta głównie zwiedzać. · ⟦Chúng tôi sang Việt Nam để học tiếng Việt là chính.⟧ → Przyjechaliśmy do Wietnamu przede wszystkim uczyć się wietnamskiego. · ⟦Mình chơi cho vui là chính.⟧ → Gram głównie dla zabawy. · ⟦Ôn lại tiếng Việt cho đỡ quên là chính.⟧ → Głównie powtarzam wietnamski, żeby go nie zapomnieć.

@@ -1,0 +1,569 @@
+@@ pdf-grammar-ef9e330ff37aab27#0
+~t 1. Různé významy cho|1. cho 的多种含义|1. cho 的多種含義|1. The many meanings of cho|1. Les différents sens de cho|1. Die vielen Bedeutungen von cho|1. A cho sokféle jelentése|1. Berbagai makna cho|1. cho のさまざまな意味|1. Różne znaczenia cho
+=cs
+⟦cho⟧ se ve větě používá jako různé slovní druhy s různými významy. Podívejme se na jednotlivá použití.
+A: ⟦Chị ơi, cho tôi xem thực đơn.⟧ — Prosím vás, ukažte mi jídelní lístek.
+B: ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Tady je. Prosím, jídelní lístek.
+Ve tvaru „cho + osoba + sloveso“ tvoří ⟦cho⟧ větu s významem „nechat/dovolit někomu něco udělat“.
+⟦Cho tôi biết số điện thoại của anh Hùng.⟧ — Dejte mi prosím vědět Hùngovo telefonní číslo.
+⟦Cho em gửi tiền.⟧ — Dovolte, abych zaplatil. (Tady jsou peníze.)
+A: ⟦Anh dùng gì ạ?⟧ — Co si dáte?
+B: ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — Dejte mi misku phở a talíř smažených závitků.
+Jako sloveso znamená ⟦cho⟧ „dát“.
+⟦Hôm qua, chị Hoa cho em một quyển từ điển.⟧ — Včera mi Hoa dala slovník.
+⟦Cho tôi một cân táo.⟧ — Dejte mi kilo jablek.
+=zh_cn
+⟦cho⟧ 在句子中可以作多种词类，有多种含义。各用法和意思如下。
+A：⟦Chị ơi, cho tôi xem thực đơn.⟧ —— 服务员，请给我看一下菜单。
+B：⟦Đây ạ. Mời anh xem thực đơn.⟧ —— 在这里。请看菜单。
+⟦cho⟧ 以“cho + 人 + 动词”的形式，构成“让某人做……”的使役句。
+⟦Cho tôi biết số điện thoại của anh Hùng.⟧ —— 请告诉我雄哥的电话号码。
+⟦Cho em gửi tiền.⟧ —— 让我付钱吧。（给您钱。）
+A：⟦Anh dùng gì ạ?⟧ —— 您要点什么？
+B：⟦Cho tôi một bát phở và một đĩa nem rán.⟧ —— 请给我一碗河粉和一盘炸春卷。
+⟦cho⟧ 作动词时，意为“给”。
+⟦Hôm qua, chị Hoa cho em một quyển từ điển.⟧ —— 昨天花姐给了我一本词典。
+⟦Cho tôi một cân táo.⟧ —— 请给我一公斤苹果。
+=zh
+⟦cho⟧ 在句子中可以作多種詞類，有多種含義。各用法和意思如下。
+A：⟦Chị ơi, cho tôi xem thực đơn.⟧ —— 服務員，請給我看一下菜單。
+B：⟦Đây ạ. Mời anh xem thực đơn.⟧ —— 在這裡。請看菜單。
+⟦cho⟧ 以「cho + 人 + 動詞」的形式，構成「讓某人做……」的使役句。
+⟦Cho tôi biết số điện thoại của anh Hùng.⟧ —— 請告訴我雄哥的電話號碼。
+⟦Cho em gửi tiền.⟧ —— 讓我付錢吧。（給您錢。）
+A：⟦Anh dùng gì ạ?⟧ —— 您要點什麼？
+B：⟦Cho tôi một bát phở và một đĩa nem rán.⟧ —— 請給我一碗河粉和一盤炸春捲。
+⟦cho⟧ 作動詞時，意為「給」。
+⟦Hôm qua, chị Hoa cho em một quyển từ điển.⟧ —— 昨天花姐給了我一本詞典。
+⟦Cho tôi một cân táo.⟧ —— 請給我一公斤蘋果。
+=en
+⟦cho⟧ is used in sentences as several parts of speech with different meanings. Let's look at each use.
+A: ⟦Chị ơi, cho tôi xem thực đơn.⟧ — Excuse me, could I see the menu?
+B: ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Here you are. Please have a look at the menu.
+In the form "cho + person + verb", ⟦cho⟧ makes a causative sentence meaning "let/have someone do something".
+⟦Cho tôi biết số điện thoại của anh Hùng.⟧ — Please let me know Hùng's phone number.
+⟦Cho em gửi tiền.⟧ — Let me pay. (Here's the money.)
+A: ⟦Anh dùng gì ạ?⟧ — What would you like to have?
+B: ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — A bowl of phở and a plate of fried spring rolls, please.
+As a verb, ⟦cho⟧ means "to give".
+⟦Hôm qua, chị Hoa cho em một quyển từ điển.⟧ — Yesterday Hoa gave me a dictionary.
+⟦Cho tôi một cân táo.⟧ — A kilo of apples, please.
+=fr
+⟦cho⟧ s'emploie comme plusieurs catégories grammaticales, avec des sens variés. Voyons chaque emploi.
+A : ⟦Chị ơi, cho tôi xem thực đơn.⟧ — S'il vous plaît, montrez-moi le menu.
+B : ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Voici. Je vous en prie, voici le menu.
+Sous la forme « cho + personne + verbe », ⟦cho⟧ forme une phrase causative : « laisser/faire faire quelque chose à quelqu'un ».
+⟦Cho tôi biết số điện thoại của anh Hùng.⟧ — Donnez-moi le numéro de téléphone de Hùng, s'il vous plaît.
+⟦Cho em gửi tiền.⟧ — Permettez-moi de payer. (Voici l'argent.)
+A : ⟦Anh dùng gì ạ?⟧ — Que désirez-vous ?
+B : ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — Un bol de phở et une assiette de nems, s'il vous plaît.
+Comme verbe, ⟦cho⟧ signifie « donner ».
+⟦Hôm qua, chị Hoa cho em một quyển từ điển.⟧ — Hier, Hoa m'a donné un dictionnaire.
+⟦Cho tôi một cân táo.⟧ — Un kilo de pommes, s'il vous plaît.
+=de
+⟦cho⟧ wird im Satz als verschiedene Wortarten mit verschiedenen Bedeutungen verwendet. Sehen wir uns die einzelnen Verwendungen an.
+A: ⟦Chị ơi, cho tôi xem thực đơn.⟧ — Entschuldigung, zeigen Sie mir bitte die Speisekarte.
+B: ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Bitte sehr. Hier ist die Speisekarte.
+In der Form „cho + Person + Verb“ bildet ⟦cho⟧ einen Kausativsatz: „jemanden etwas tun lassen“.
+⟦Cho tôi biết số điện thoại của anh Hùng.⟧ — Sagen Sie mir bitte Hùngs Telefonnummer.
+⟦Cho em gửi tiền.⟧ — Lassen Sie mich bezahlen. (Hier ist das Geld.)
+A: ⟦Anh dùng gì ạ?⟧ — Was möchten Sie?
+B: ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — Eine Schüssel Phở und einen Teller frittierte Frühlingsrollen, bitte.
+Als Verb bedeutet ⟦cho⟧ „geben“.
+⟦Hôm qua, chị Hoa cho em một quyển từ điển.⟧ — Gestern hat mir Hoa ein Wörterbuch gegeben.
+⟦Cho tôi một cân táo.⟧ — Ein Kilo Äpfel, bitte.
+=hu
+A ⟦cho⟧ a mondatban többféle szófajként, különböző jelentésekkel fordul elő. Nézzük meg az egyes használatokat.
+A: ⟦Chị ơi, cho tôi xem thực đơn.⟧ — Elnézést, megmutatná az étlapot?
+B: ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Tessék. Itt az étlap.
+„cho + személy + ige” formában a ⟦cho⟧ műveltető mondatot alkot: „hagyja/engedje, hogy valaki megtegyen valamit”.
+⟦Cho tôi biết số điện thoại của anh Hùng.⟧ — Mondja meg, kérem, Hùng telefonszámát.
+⟦Cho em gửi tiền.⟧ — Hadd fizessek. (Itt a pénz.)
+A: ⟦Anh dùng gì ạ?⟧ — Mit parancsol?
+B: ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — Kérek egy tál phởt és egy tányér sült tavaszi tekercset.
+Igeként a ⟦cho⟧ jelentése „adni”.
+⟦Hôm qua, chị Hoa cho em một quyển từ điển.⟧ — Tegnap Hoa adott nekem egy szótárt.
+⟦Cho tôi một cân táo.⟧ — Kérek egy kiló almát.
+=id
+⟦cho⟧ dipakai dalam kalimat sebagai berbagai jenis kata dengan berbagai makna. Mari lihat tiap penggunaannya.
+A: ⟦Chị ơi, cho tôi xem thực đơn.⟧ — Mbak, tolong lihat menunya.
+B: ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Ini dia. Silakan lihat menunya.
+Dalam bentuk "cho + orang + kata kerja", ⟦cho⟧ membentuk kalimat kausatif "membiarkan/membuat seseorang melakukan sesuatu".
+⟦Cho tôi biết số điện thoại của anh Hùng.⟧ — Tolong beri tahu saya nomor telepon Kak Hùng.
+⟦Cho em gửi tiền.⟧ — Biar saya bayar. (Ini uangnya.)
+A: ⟦Anh dùng gì ạ?⟧ — Mau pesan apa?
+B: ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — Saya pesan semangkuk phở dan sepiring lumpia goreng.
+Sebagai kata kerja, ⟦cho⟧ berarti "memberi".
+⟦Hôm qua, chị Hoa cho em một quyển từ điển.⟧ — Kemarin Kak Hoa memberi saya sebuah kamus.
+⟦Cho tôi một cân táo.⟧ — Saya minta satu kilo apel.
+=ja
+⟦cho⟧ は文の中でさまざまな品詞として、さまざまな意味で使われます。それぞれの用法と意味を見てみましょう。
+A：⟦Chị ơi, cho tôi xem thực đơn.⟧ — すみません、メニューを見せてください。
+B：⟦Đây ạ. Mời anh xem thực đơn.⟧ — こちらです。メニューをどうぞ。
+⟦cho⟧ は「cho ＋ 人 ＋ 動詞」の形で「人に～させる」という使役文を作ります。
+⟦Cho tôi biết số điện thoại của anh Hùng.⟧ — フンさんの電話番号を教えてください。
+⟦Cho em gửi tiền.⟧ — お金をお渡しします。（払わせてください。）
+A：⟦Anh dùng gì ạ?⟧ — 何を召し上がりますか。
+B：⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — フォーを一杯と揚げ春巻きを一皿ください。
+⟦cho⟧ は動詞として「あげる、与える」の意味を持ちます。
+⟦Hôm qua, chị Hoa cho em một quyển từ điển.⟧ — 昨日ホアさんが私に辞書を一冊くれました。
+⟦Cho tôi một cân táo.⟧ — りんごを1キロください。
+=pl
+⟦cho⟧ występuje w zdaniu jako różne części mowy i ma różne znaczenia. Przyjrzyjmy się poszczególnym użyciom.
+A: ⟦Chị ơi, cho tôi xem thực đơn.⟧ — Przepraszam, poproszę menu.
+B: ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Proszę bardzo. Oto menu.
+W formie „cho + osoba + czasownik” ⟦cho⟧ tworzy zdanie kauzatywne: „pozwolić/kazać komuś coś zrobić”.
+⟦Cho tôi biết số điện thoại của anh Hùng.⟧ — Proszę podać mi numer telefonu Hùnga.
+⟦Cho em gửi tiền.⟧ — Pozwól, że zapłacę. (Oto pieniądze.)
+A: ⟦Anh dùng gì ạ?⟧ — Co podać?
+B: ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — Poproszę miskę phở i talerz smażonych sajgonek.
+Jako czasownik ⟦cho⟧ znaczy „dać”.
+⟦Hôm qua, chị Hoa cho em một quyển từ điển.⟧ — Wczoraj Hoa dała mi słownik.
+⟦Cho tôi một cân táo.⟧ — Poproszę kilogram jabłek.
+@@ pdf-grammar-77a65fe8d90bfb5c#0
+=cs
+Kromě toho se ⟦cho⟧ používá ve tvaru „cho + adresát“ ve významu „komu, pro koho“ a ve tvaru „sloveso + cho“ ve významu „udělat něco pro někoho“.
+⟦Tôi đang viết thư cho bạn.⟧ — Píšu dopis kamarádovi.
+⟦Đây là sách cho trẻ em.⟧ — Tohle je kniha pro děti.
+⟦Để tôi khám cho.⟧ — Nechte mě, abych vás vyšetřil.
+2. Výraz „Tady to je“
+A: ⟦Chị ơi, cho tôi xem thực đơn.⟧ — Prosím vás, ukažte mi jídelní lístek.
+B: ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Tady je. Prosím, jídelní lístek.
+Když chcete něco podat a říct „Tady to je“, spojte ⟦đây⟧ (tady) a zdvořilostní částici ⟦ạ⟧ na konci: ⟦Đây ạ⟧ (Tady to je).
+A: ⟦Chị ơi, cho tôi xem cái đồng hồ này.⟧ — Prosím vás, ukažte mi tyhle hodinky.
+B: ⟦Đây ạ.⟧ — Tady jsou.
+Slovíčka: ⟦xem⟧ dívat se | ⟦đồng hồ⟧ hodinky, hodiny
+3. Zdvořilé „ráčit jíst“: ⟦dùng⟧
+A: ⟦Anh dùng gì ạ?⟧ — Co si dáte?
+B: ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — Dejte mi misku phở a talíř smažených závitků.
+=zh_cn
+此外，⟦cho⟧ 以“cho + 对象”的形式表示“给……、为了……”，以“动词 + cho”的形式表示“为（某人）做……”。
+⟦Tôi đang viết thư cho bạn.⟧ —— 我在给朋友写信。
+⟦Đây là sách cho trẻ em.⟧ —— 这是给儿童的书。
+⟦Để tôi khám cho.⟧ —— 我来给你看看（诊察）。
+2. “在这里 / 给您”的表达
+A：⟦Chị ơi, cho tôi xem thực đơn.⟧ —— 服务员，请给我看一下菜单。
+B：⟦Đây ạ. Mời anh xem thực đơn.⟧ —— 在这里。请看菜单。
+把东西递给对方并想说“给您/在这里”时，用表示地点的 ⟦đây⟧（这里）加上句末表示礼貌的 ⟦ạ⟧，说 ⟦Đây ạ⟧ 即可。
+A：⟦Chị ơi, cho tôi xem cái đồng hồ này.⟧ —— 服务员，请给我看看这块手表。
+B：⟦Đây ạ.⟧ —— 给您。
+单词：⟦xem⟧ 看 | ⟦đồng hồ⟧ 手表，钟
+3. 敬语“用餐”：⟦dùng⟧
+A：⟦Anh dùng gì ạ?⟧ —— 您要点什么？
+B：⟦Cho tôi một bát phở và một đĩa nem rán.⟧ —— 请给我一碗河粉和一盘炸春卷。
+=zh
+此外，⟦cho⟧ 以「cho + 對象」的形式表示「給……、為了……」，以「動詞 + cho」的形式表示「為（某人）做……」。
+⟦Tôi đang viết thư cho bạn.⟧ —— 我在給朋友寫信。
+⟦Đây là sách cho trẻ em.⟧ —— 這是給兒童的書。
+⟦Để tôi khám cho.⟧ —— 我來幫你看看（診察）。
+2. 「在這裡 / 給您」的表達
+A：⟦Chị ơi, cho tôi xem thực đơn.⟧ —— 服務員，請給我看一下菜單。
+B：⟦Đây ạ. Mời anh xem thực đơn.⟧ —— 在這裡。請看菜單。
+把東西遞給對方並想說「給您/在這裡」時，用表示地點的 ⟦đây⟧（這裡）加上句末表示禮貌的 ⟦ạ⟧，說 ⟦Đây ạ⟧ 即可。
+A：⟦Chị ơi, cho tôi xem cái đồng hồ này.⟧ —— 服務員，請給我看看這支手錶。
+B：⟦Đây ạ.⟧ —— 給您。
+單字：⟦xem⟧ 看 | ⟦đồng hồ⟧ 手錶，時鐘
+3. 敬語「用餐」：⟦dùng⟧
+A：⟦Anh dùng gì ạ?⟧ —— 您要點什麼？
+B：⟦Cho tôi một bát phở và một đĩa nem rán.⟧ —— 請給我一碗河粉和一盤炸春捲。
+=en
+In addition, ⟦cho⟧ is used in the form "cho + person" to mean "to, for", and in the form "verb + cho" to mean "to do something for someone".
+⟦Tôi đang viết thư cho bạn.⟧ — I'm writing a letter to my friend.
+⟦Đây là sách cho trẻ em.⟧ — This is a book for children.
+⟦Để tôi khám cho.⟧ — Let me examine you.
+2. Saying "Here you are"
+A: ⟦Chị ơi, cho tôi xem thực đơn.⟧ — Excuse me, could I see the menu?
+B: ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Here you are. Please have a look at the menu.
+When you hand something over and want to say "Here you are", combine ⟦đây⟧ (here) with the polite sentence-final ⟦ạ⟧: ⟦Đây ạ⟧.
+A: ⟦Chị ơi, cho tôi xem cái đồng hồ này.⟧ — Excuse me, could I see this watch?
+B: ⟦Đây ạ.⟧ — Here you are.
+Words: ⟦xem⟧ to look at | ⟦đồng hồ⟧ watch, clock
+3. The polite "to have (food)": ⟦dùng⟧
+A: ⟦Anh dùng gì ạ?⟧ — What would you like to have?
+B: ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — A bowl of phở and a plate of fried spring rolls, please.
+=fr
+Par ailleurs, ⟦cho⟧ s'emploie sous la forme « cho + destinataire » au sens de « à, pour », et sous la forme « verbe + cho » au sens de « faire quelque chose pour quelqu'un ».
+⟦Tôi đang viết thư cho bạn.⟧ — J'écris une lettre à mon ami.
+⟦Đây là sách cho trẻ em.⟧ — C'est un livre pour enfants.
+⟦Để tôi khám cho.⟧ — Laissez-moi vous examiner.
+2. Dire « Voici »
+A : ⟦Chị ơi, cho tôi xem thực đơn.⟧ — S'il vous plaît, montrez-moi le menu.
+B : ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Voici. Je vous en prie, voici le menu.
+Pour tendre un objet en disant « Voici », on associe ⟦đây⟧ (ici) à la particule de politesse finale ⟦ạ⟧ : ⟦Đây ạ⟧.
+A : ⟦Chị ơi, cho tôi xem cái đồng hồ này.⟧ — S'il vous plaît, montrez-moi cette montre.
+B : ⟦Đây ạ.⟧ — Voici.
+Mots : ⟦xem⟧ regarder | ⟦đồng hồ⟧ montre, horloge
+3. Le « prendre (un repas) » poli : ⟦dùng⟧
+A : ⟦Anh dùng gì ạ?⟧ — Que désirez-vous ?
+B : ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — Un bol de phở et une assiette de nems, s'il vous plaît.
+=de
+Außerdem steht ⟦cho⟧ in der Form „cho + Person“ für „für, an“ und in der Form „Verb + cho“ für „etwas für jemanden tun“.
+⟦Tôi đang viết thư cho bạn.⟧ — Ich schreibe gerade einen Brief an meinen Freund.
+⟦Đây là sách cho trẻ em.⟧ — Das ist ein Buch für Kinder.
+⟦Để tôi khám cho.⟧ — Lassen Sie mich Sie untersuchen.
+2. „Bitte sehr“ sagen
+A: ⟦Chị ơi, cho tôi xem thực đơn.⟧ — Entschuldigung, zeigen Sie mir bitte die Speisekarte.
+B: ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Bitte sehr. Hier ist die Speisekarte.
+Wenn man etwas überreicht und „Bitte sehr“ sagen möchte, verbindet man ⟦đây⟧ (hier) mit der höflichen Satzendpartikel ⟦ạ⟧: ⟦Đây ạ⟧.
+A: ⟦Chị ơi, cho tôi xem cái đồng hồ này.⟧ — Entschuldigung, zeigen Sie mir bitte diese Uhr.
+B: ⟦Đây ạ.⟧ — Bitte sehr.
+Wörter: ⟦xem⟧ ansehen | ⟦đồng hồ⟧ Uhr
+3. Das höfliche „speisen“: ⟦dùng⟧
+A: ⟦Anh dùng gì ạ?⟧ — Was möchten Sie?
+B: ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — Eine Schüssel Phở und einen Teller frittierte Frühlingsrollen, bitte.
+=hu
+Ezenkívül a ⟦cho⟧ „cho + személy” formában „-nak/-nek, számára” jelentésű, „ige + cho” formában pedig „megtenni valamit valakinek”.
+⟦Tôi đang viết thư cho bạn.⟧ — Levelet írok a barátomnak.
+⟦Đây là sách cho trẻ em.⟧ — Ez egy gyerekeknek szóló könyv.
+⟦Để tôi khám cho.⟧ — Hadd vizsgáljam meg.
+2. A „Tessék” kifejezés
+A: ⟦Chị ơi, cho tôi xem thực đơn.⟧ — Elnézést, megmutatná az étlapot?
+B: ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Tessék. Itt az étlap.
+Ha átnyújtunk valamit, és azt akarjuk mondani: „Tessék”, a helyet jelölő ⟦đây⟧ (itt) szót az udvarias mondatzáró ⟦ạ⟧-val kapcsoljuk össze: ⟦Đây ạ⟧.
+A: ⟦Chị ơi, cho tôi xem cái đồng hồ này.⟧ — Elnézést, megmutatná ezt az órát?
+B: ⟦Đây ạ.⟧ — Tessék.
+Szavak: ⟦xem⟧ nézni | ⟦đồng hồ⟧ óra
+3. Az udvarias „fogyasztani”: ⟦dùng⟧
+A: ⟦Anh dùng gì ạ?⟧ — Mit parancsol?
+B: ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — Kérek egy tál phởt és egy tányér sült tavaszi tekercset.
+=id
+Selain itu, ⟦cho⟧ dipakai dalam bentuk "cho + sasaran" berarti "kepada, untuk", dan dalam bentuk "kata kerja + cho" berarti "melakukan sesuatu untuk orang lain".
+⟦Tôi đang viết thư cho bạn.⟧ — Saya sedang menulis surat untuk teman.
+⟦Đây là sách cho trẻ em.⟧ — Ini buku untuk anak-anak.
+⟦Để tôi khám cho.⟧ — Biar saya periksakan.
+2. Ungkapan "Ini dia"
+A: ⟦Chị ơi, cho tôi xem thực đơn.⟧ — Mbak, tolong lihat menunya.
+B: ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Ini dia. Silakan lihat menunya.
+Saat menyerahkan sesuatu dan ingin berkata "Ini dia", gabungkan ⟦đây⟧ (di sini) dengan partikel sopan ⟦ạ⟧ di akhir: ⟦Đây ạ⟧.
+A: ⟦Chị ơi, cho tôi xem cái đồng hồ này.⟧ — Mbak, tolong lihat jam tangan ini.
+B: ⟦Đây ạ.⟧ — Ini dia.
+Kosakata: ⟦xem⟧ melihat | ⟦đồng hồ⟧ jam
+3. Ungkapan sopan "menyantap": ⟦dùng⟧
+A: ⟦Anh dùng gì ạ?⟧ — Mau pesan apa?
+B: ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — Saya pesan semangkuk phở dan sepiring lumpia goreng.
+=ja
+このほか、⟦cho⟧ は「cho ＋ 対象」の形で「～に」「～のために」の意味にも、「動詞 ＋ cho」の形で「～してあげる」の意味にも使われます。
+⟦Tôi đang viết thư cho bạn.⟧ — 私は友達に手紙を書いている。
+⟦Đây là sách cho trẻ em.⟧ — これは子ども向けの本だ。
+⟦Để tôi khám cho.⟧ — 私が診てあげましょう。
+2. 「こちらです」の表現
+A：⟦Chị ơi, cho tôi xem thực đơn.⟧ — すみません、メニューを見せてください。
+B：⟦Đây ạ. Mời anh xem thực đơn.⟧ — こちらです。メニューをどうぞ。
+相手に物を渡しながら「こちらです」と言いたいときは、場所を表す ⟦đây⟧（ここ）と、丁寧さを表す文末の ⟦ạ⟧ を使って ⟦Đây ạ⟧ と言えば大丈夫です。
+A：⟦Chị ơi, cho tôi xem cái đồng hồ này.⟧ — すみません、この時計を見せてください。
+B：⟦Đây ạ.⟧ — こちらです。
+単語：⟦xem⟧ 見る | ⟦đồng hồ⟧ 時計
+3. 「召し上がる」⟦dùng⟧ の表現
+A：⟦Anh dùng gì ạ?⟧ — 何を召し上がりますか。
+B：⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — フォーを一杯と揚げ春巻きを一皿ください。
+=pl
+Poza tym ⟦cho⟧ występuje w formie „cho + odbiorca” w znaczeniu „dla, do”, a w formie „czasownik + cho” w znaczeniu „zrobić coś dla kogoś”.
+⟦Tôi đang viết thư cho bạn.⟧ — Piszę list do przyjaciela.
+⟦Đây là sách cho trẻ em.⟧ — To książka dla dzieci.
+⟦Để tôi khám cho.⟧ — Pozwól, że cię zbadam.
+2. Wyrażenie „Proszę bardzo”
+A: ⟦Chị ơi, cho tôi xem thực đơn.⟧ — Przepraszam, poproszę menu.
+B: ⟦Đây ạ. Mời anh xem thực đơn.⟧ — Proszę bardzo. Oto menu.
+Gdy podajemy coś i chcemy powiedzieć „Proszę bardzo”, łączymy ⟦đây⟧ (tutaj) z uprzejmą partykułą końcową ⟦ạ⟧: ⟦Đây ạ⟧.
+A: ⟦Chị ơi, cho tôi xem cái đồng hồ này.⟧ — Przepraszam, proszę pokazać mi ten zegarek.
+B: ⟦Đây ạ.⟧ — Proszę bardzo.
+Słówka: ⟦xem⟧ oglądać | ⟦đồng hồ⟧ zegarek, zegar
+3. Uprzejme „spożywać”: ⟦dùng⟧
+A: ⟦Anh dùng gì ạ?⟧ — Co podać?
+B: ⟦Cho tôi một bát phở và một đĩa nem rán.⟧ — Poproszę miskę phở i talerz smażonych sajgonek.
+@@ pdf-grammar-4fe6f429852e5a69#0
+~t 1. Vyjádření času „když“|1. 表示时候的表达|1. 表示時候的表達|1. Expressing "when"|1. Exprimer le moment : « quand »|1. Zeitangaben mit „wenn / als“|1. Az „amikor” kifejezése|1. Ungkapan waktu "ketika"|1. 時を表す表現|1. Wyrażanie czasu: „kiedy”
+=cs
+⟦Khi đi làm, chị thường đi bằng gì?⟧ — Čím obvykle jezdíš do práce, sestro?
+⟦khi⟧ znamená „když (doba)“. Ve tvaru „khi + A + přísudek“ znamená „když A …“. Podobný význam má ⟦lúc⟧, které se používá s konkrétním časovým údajem.
+⟦Khi tôi ngủ⟧ — když spím
+⟦Khi tôi xem ti vi, con gái tôi nghe nhạc.⟧ — Když se dívám na televizi, moje dcera poslouchá hudbu.
+⟦Gia đình tôi thường ăn tối lúc 7 giờ rưỡi tối.⟧ — Naše rodina obvykle večeří v půl osmé večer.
+Slovíčka: ⟦ngủ⟧ spát | ⟦xem⟧ dívat se | ⟦con gái⟧ dcera | ⟦nghe⟧ poslouchat | ⟦nhạc⟧ hudba | ⟦gia đình⟧ rodina | ⟦ăn tối⟧ večeřet
+⟦thường⟧ je příslovce četnosti s významem „obvykle“; používá se ve tvaru „podmět + thường + přísudek“.
+⟦Min-su thường ăn cơm ở nhà.⟧ — Min-su obvykle jí doma.
+⟦Khi có thời gian, tôi thường chơi bóng bàn.⟧ — Když mám čas, obvykle hraji stolní tenis.
+Slovíčka: ⟦nhà⟧ dům | ⟦thời gian⟧ čas | ⟦chơi⟧ hrát (sport, na nástroj), bavit se | ⟦bóng bàn⟧ stolní tenis
+=zh_cn
+⟦Khi đi làm, chị thường đi bằng gì?⟧ —— 姐姐上班时通常坐什么去？
+⟦khi⟧ 意为“……的时候”。以“khi + A + 谓语”的形式使用，表示“A……的时候”。意思相近的有 ⟦lúc⟧，它与具体时刻一起使用。
+⟦Khi tôi ngủ⟧ —— 我睡觉的时候
+⟦Khi tôi xem ti vi, con gái tôi nghe nhạc.⟧ —— 我看电视的时候，我女儿听音乐。
+⟦Gia đình tôi thường ăn tối lúc 7 giờ rưỡi tối.⟧ —— 我家通常在晚上七点半吃晚饭。
+单词：⟦ngủ⟧ 睡觉 | ⟦xem⟧ 看 | ⟦con gái⟧ 女儿 | ⟦nghe⟧ 听 | ⟦nhạc⟧ 音乐 | ⟦gia đình⟧ 家庭 | ⟦ăn tối⟧ 吃晚饭
+⟦thường⟧ 是频度副词之一，意为“通常”，以“主语 + thường + 谓语”（主语通常……）的形式使用。
+⟦Min-su thường ăn cơm ở nhà.⟧ —— 民秀通常在家吃饭。
+⟦Khi có thời gian, tôi thường chơi bóng bàn.⟧ —— 有时间的时候，我通常打乒乓球。
+单词：⟦nhà⟧ 家 | ⟦thời gian⟧ 时间 | ⟦chơi⟧ 玩（运动/演奏） | ⟦bóng bàn⟧ 乒乓球
+=zh
+⟦Khi đi làm, chị thường đi bằng gì?⟧ —— 姐姐上班時通常搭什麼去？
+⟦khi⟧ 意為「……的時候」。以「khi + A + 謂語」的形式使用，表示「A……的時候」。意思相近的有 ⟦lúc⟧，它與具體時刻一起使用。
+⟦Khi tôi ngủ⟧ —— 我睡覺的時候
+⟦Khi tôi xem ti vi, con gái tôi nghe nhạc.⟧ —— 我看電視的時候，我女兒聽音樂。
+⟦Gia đình tôi thường ăn tối lúc 7 giờ rưỡi tối.⟧ —— 我家通常在晚上七點半吃晚飯。
+單字：⟦ngủ⟧ 睡覺 | ⟦xem⟧ 看 | ⟦con gái⟧ 女兒 | ⟦nghe⟧ 聽 | ⟦nhạc⟧ 音樂 | ⟦gia đình⟧ 家庭 | ⟦ăn tối⟧ 吃晚飯
+⟦thường⟧ 是頻度副詞之一，意為「通常」，以「主語 + thường + 謂語」（主語通常……）的形式使用。
+⟦Min-su thường ăn cơm ở nhà.⟧ —— 民秀通常在家吃飯。
+⟦Khi có thời gian, tôi thường chơi bóng bàn.⟧ —— 有時間的時候，我通常打桌球。
+單字：⟦nhà⟧ 家 | ⟦thời gian⟧ 時間 | ⟦chơi⟧ 玩（運動/演奏） | ⟦bóng bàn⟧ 桌球（乒乓球）
+=en
+⟦Khi đi làm, chị thường đi bằng gì?⟧ — How do you usually get to work, sister?
+⟦khi⟧ means "when (the time when)". Used as "khi + A + predicate", it means "when A …". ⟦lúc⟧ has a similar meaning and is used with a specific clock time.
+⟦Khi tôi ngủ⟧ — when I sleep
+⟦Khi tôi xem ti vi, con gái tôi nghe nhạc.⟧ — When I watch TV, my daughter listens to music.
+⟦Gia đình tôi thường ăn tối lúc 7 giờ rưỡi tối.⟧ — My family usually has dinner at 7:30 in the evening.
+Words: ⟦ngủ⟧ to sleep | ⟦xem⟧ to watch | ⟦con gái⟧ daughter | ⟦nghe⟧ to listen | ⟦nhạc⟧ music | ⟦gia đình⟧ family | ⟦ăn tối⟧ to have dinner
+⟦thường⟧ is a frequency adverb meaning "usually", used in the form "subject + thường + predicate".
+⟦Min-su thường ăn cơm ở nhà.⟧ — Min-su usually eats at home.
+⟦Khi có thời gian, tôi thường chơi bóng bàn.⟧ — When I have time, I usually play table tennis.
+Words: ⟦nhà⟧ house | ⟦thời gian⟧ time | ⟦chơi⟧ to play (a sport/instrument), to have fun | ⟦bóng bàn⟧ table tennis
+=fr
+⟦Khi đi làm, chị thường đi bằng gì?⟧ — Comment vas-tu au travail d'habitude, grande sœur ?
+⟦khi⟧ signifie « quand, le moment où ». Employé sous la forme « khi + A + prédicat », il signifie « quand A … ». ⟦lúc⟧ a un sens voisin et s'emploie avec une heure précise.
+⟦Khi tôi ngủ⟧ — quand je dors
+⟦Khi tôi xem ti vi, con gái tôi nghe nhạc.⟧ — Quand je regarde la télé, ma fille écoute de la musique.
+⟦Gia đình tôi thường ăn tối lúc 7 giờ rưỡi tối.⟧ — Ma famille dîne généralement à 19 h 30.
+Mots : ⟦ngủ⟧ dormir | ⟦xem⟧ regarder | ⟦con gái⟧ fille | ⟦nghe⟧ écouter | ⟦nhạc⟧ musique | ⟦gia đình⟧ famille | ⟦ăn tối⟧ dîner
+⟦thường⟧ est un adverbe de fréquence signifiant « d'habitude », employé sous la forme « sujet + thường + prédicat ».
+⟦Min-su thường ăn cơm ở nhà.⟧ — Min-su mange d'habitude à la maison.
+⟦Khi có thời gian, tôi thường chơi bóng bàn.⟧ — Quand j'ai du temps, je joue d'habitude au ping-pong.
+Mots : ⟦nhà⟧ maison | ⟦thời gian⟧ temps | ⟦chơi⟧ jouer (sport, instrument), s'amuser | ⟦bóng bàn⟧ ping-pong
+=de
+⟦Khi đi làm, chị thường đi bằng gì?⟧ — Womit fährst du normalerweise zur Arbeit, große Schwester?
+⟦khi⟧ bedeutet „wenn, als (Zeitpunkt)“. In der Form „khi + A + Prädikat“ bedeutet es „wenn A …“. Ähnlich ist ⟦lúc⟧, das mit einer konkreten Uhrzeit verwendet wird.
+⟦Khi tôi ngủ⟧ — wenn ich schlafe
+⟦Khi tôi xem ti vi, con gái tôi nghe nhạc.⟧ — Wenn ich fernsehe, hört meine Tochter Musik.
+⟦Gia đình tôi thường ăn tối lúc 7 giờ rưỡi tối.⟧ — Meine Familie isst normalerweise um halb acht zu Abend.
+Wörter: ⟦ngủ⟧ schlafen | ⟦xem⟧ ansehen | ⟦con gái⟧ Tochter | ⟦nghe⟧ hören | ⟦nhạc⟧ Musik | ⟦gia đình⟧ Familie | ⟦ăn tối⟧ zu Abend essen
+⟦thường⟧ ist ein Häufigkeitsadverb mit der Bedeutung „normalerweise“, verwendet als „Subjekt + thường + Prädikat“.
+⟦Min-su thường ăn cơm ở nhà.⟧ — Min-su isst normalerweise zu Hause.
+⟦Khi có thời gian, tôi thường chơi bóng bàn.⟧ — Wenn ich Zeit habe, spiele ich normalerweise Tischtennis.
+Wörter: ⟦nhà⟧ Haus | ⟦thời gian⟧ Zeit | ⟦chơi⟧ spielen (Sport, Instrument) | ⟦bóng bàn⟧ Tischtennis
+=hu
+⟦Khi đi làm, chị thường đi bằng gì?⟧ — Mivel jársz általában dolgozni, nővérem?
+A ⟦khi⟧ jelentése „amikor (az idő, amikor)”. „khi + A + állítmány” formában azt jelenti: „amikor A …”. Hasonló jelentésű a ⟦lúc⟧, amelyet konkrét időponttal használunk.
+⟦Khi tôi ngủ⟧ — amikor alszom
+⟦Khi tôi xem ti vi, con gái tôi nghe nhạc.⟧ — Amikor tévét nézek, a lányom zenét hallgat.
+⟦Gia đình tôi thường ăn tối lúc 7 giờ rưỡi tối.⟧ — A családunk általában este fél nyolckor vacsorázik.
+Szavak: ⟦ngủ⟧ aludni | ⟦xem⟧ nézni | ⟦con gái⟧ lány (gyermek) | ⟦nghe⟧ hallgatni | ⟦nhạc⟧ zene | ⟦gia đình⟧ család | ⟦ăn tối⟧ vacsorázni
+A ⟦thường⟧ gyakoriságot kifejező határozószó, jelentése „általában”; „alany + thường + állítmány” formában használjuk.
+⟦Min-su thường ăn cơm ở nhà.⟧ — Min-su általában otthon eszik.
+⟦Khi có thời gian, tôi thường chơi bóng bàn.⟧ — Amikor van időm, általában pingpongozom.
+Szavak: ⟦nhà⟧ ház | ⟦thời gian⟧ idő | ⟦chơi⟧ játszani (sportot, hangszeren) | ⟦bóng bàn⟧ asztalitenisz
+=id
+⟦Khi đi làm, chị thường đi bằng gì?⟧ — Kalau pergi bekerja, Kakak biasanya naik apa?
+⟦khi⟧ berarti "ketika, saat". Dalam bentuk "khi + A + predikat" artinya "ketika A …". Kata ⟦lúc⟧ bermakna mirip dan dipakai bersama jam yang spesifik.
+⟦Khi tôi ngủ⟧ — ketika saya tidur
+⟦Khi tôi xem ti vi, con gái tôi nghe nhạc.⟧ — Ketika saya menonton TV, anak perempuan saya mendengarkan musik.
+⟦Gia đình tôi thường ăn tối lúc 7 giờ rưỡi tối.⟧ — Keluarga saya biasanya makan malam pukul setengah delapan malam.
+Kosakata: ⟦ngủ⟧ tidur | ⟦xem⟧ menonton | ⟦con gái⟧ anak perempuan | ⟦nghe⟧ mendengar | ⟦nhạc⟧ musik | ⟦gia đình⟧ keluarga | ⟦ăn tối⟧ makan malam
+⟦thường⟧ adalah adverbia frekuensi yang berarti "biasanya", dipakai dalam bentuk "subjek + thường + predikat".
+⟦Min-su thường ăn cơm ở nhà.⟧ — Min-su biasanya makan di rumah.
+⟦Khi có thời gian, tôi thường chơi bóng bàn.⟧ — Kalau ada waktu, saya biasanya bermain tenis meja.
+Kosakata: ⟦nhà⟧ rumah | ⟦thời gian⟧ waktu | ⟦chơi⟧ bermain | ⟦bóng bàn⟧ tenis meja
+=ja
+⟦Khi đi làm, chị thường đi bằng gì?⟧ — 仕事に行くとき、お姉さんはふだん何に乗って行きますか。
+⟦khi⟧ は「とき」を意味する語です。「khi ＋ A ＋ 述語」の形で使うと「Aが～するとき」という意味になります。似た意味の ⟦lúc⟧ は具体的な時刻と一緒に使います。
+⟦Khi tôi ngủ⟧ — 私が寝るとき
+⟦Khi tôi xem ti vi, con gái tôi nghe nhạc.⟧ — 私がテレビを見るとき、娘は音楽を聴く。
+⟦Gia đình tôi thường ăn tối lúc 7 giờ rưỡi tối.⟧ — 我が家はふつう夜7時半に夕食をとる。
+単語：⟦ngủ⟧ 寝る | ⟦xem⟧ 見る | ⟦con gái⟧ 娘 | ⟦nghe⟧ 聴く | ⟦nhạc⟧ 音楽 | ⟦gia đình⟧ 家族 | ⟦ăn tối⟧ 夕食をとる
+⟦thường⟧ は頻度副詞の一つで「ふつう、たいてい」を意味し、「主語 ＋ thường ＋ 述語」（主語はふつう～する）の形で使います。
+⟦Min-su thường ăn cơm ở nhà.⟧ — ミンスはたいてい家でご飯を食べる。
+⟦Khi có thời gian, tôi thường chơi bóng bàn.⟧ — 時間があるとき、私はたいてい卓球をする。
+単語：⟦nhà⟧ 家 | ⟦thời gian⟧ 時間 | ⟦chơi⟧ （スポーツ・演奏）する、遊ぶ | ⟦bóng bàn⟧ 卓球
+=pl
+⟦Khi đi làm, chị thường đi bằng gì?⟧ — Czym zwykle jeździsz do pracy, siostro?
+⟦khi⟧ znaczy „kiedy (czas, gdy)”. W formie „khi + A + orzeczenie” znaczy „kiedy A …”. Podobne znaczenie ma ⟦lúc⟧, używane z konkretną godziną.
+⟦Khi tôi ngủ⟧ — kiedy śpię
+⟦Khi tôi xem ti vi, con gái tôi nghe nhạc.⟧ — Kiedy oglądam telewizję, moja córka słucha muzyki.
+⟦Gia đình tôi thường ăn tối lúc 7 giờ rưỡi tối.⟧ — Moja rodzina zwykle je kolację o wpół do ósmej wieczorem.
+Słówka: ⟦ngủ⟧ spać | ⟦xem⟧ oglądać | ⟦con gái⟧ córka | ⟦nghe⟧ słuchać | ⟦nhạc⟧ muzyka | ⟦gia đình⟧ rodzina | ⟦ăn tối⟧ jeść kolację
+⟦thường⟧ to przysłówek częstotliwości znaczący „zwykle”, używany w formie „podmiot + thường + orzeczenie”.
+⟦Min-su thường ăn cơm ở nhà.⟧ — Min-su zwykle je w domu.
+⟦Khi có thời gian, tôi thường chơi bóng bàn.⟧ — Kiedy mam czas, zwykle gram w tenisa stołowego.
+Słówka: ⟦nhà⟧ dom | ⟦thời gian⟧ czas | ⟦chơi⟧ grać (w sport, na instrumencie), bawić się | ⟦bóng bàn⟧ tenis stołowy
+@@ pdf-grammar-ce73cc91d82c27fe#0
+~t 2. Dopravní prostředky|2. 使用交通工具的表达|2. 使用交通工具的表達|2. Means of transport|2. Les moyens de transport|2. Verkehrsmittel|2. Közlekedési eszközök|2. Sarana transportasi|2. 交通手段の表現|2. Środki transportu
+=cs
+⟦Chị thường đi bằng xe máy.⟧ — Obvykle jezdím na motorce.
+⟦đi⟧ znamená „jít, jet“ a lze ho spojit s dopravním prostředkem jako „đi + dopravní prostředek“; pak znamená „jet něčím“.
+⟦Khi đi làm, tôi thích đi xe buýt.⟧ — Do práce rád jezdím autobusem.
+⟦Khi về nhà, em hay đi xe ôm vì xe ôm tiện và nhanh.⟧ — Domů často jezdím motorkovým taxi (xe ôm), protože je pohodlné a rychlé.
+Slovíčka: ⟦xe buýt⟧ autobus | ⟦xe ôm⟧ motorkové taxi
+⟦bằng⟧ znamená „čím, pomocí“ a vyjadřuje prostředek nebo způsob ve tvaru „bằng + prostředek, nástroj, materiál“.
+⟦Cái bàn này được làm bằng gỗ.⟧ — Tento stůl je vyrobený ze dřeva.
+⟦Gia đình tôi đi Đà Nẵng bằng máy bay.⟧ — Naše rodina letí do Da Nangu letadlem.
+⟦Anh ấy thỉnh thoảng nói bằng tiếng Anh.⟧ — Občas mluví anglicky.
+Slovíčka: ⟦máy bay⟧ letadlo | ⟦ấy⟧ ten (za osobním zájmenem) | ⟦thỉnh thoảng⟧ občas | ⟦nói⟧ mluvit | ⟦tiếng Anh⟧ angličtina
+=zh_cn
+⟦Chị thường đi bằng xe máy.⟧ —— 我通常骑摩托车去。
+⟦đi⟧ 意为“去”，也可以像“đi + 交通工具”那样和交通工具一起用，这时意为“乘坐（交通工具）”。
+⟦Khi đi làm, tôi thích đi xe buýt.⟧ —— 上班时，我喜欢坐公交车。
+⟦Khi về nhà, em hay đi xe ôm vì xe ôm tiện và nhanh.⟧ —— 回家时我常坐摩的（xe ôm），因为又方便又快。
+单词：⟦xe buýt⟧ 公交车 | ⟦xe ôm⟧ 摩的（摩托车出租）
+⟦bằng⟧ 意为“用……、以……”，表示手段或方法，以“bằng + 手段、工具、材料”的形式使用。
+⟦Cái bàn này được làm bằng gỗ.⟧ —— 这张桌子是用木头做的。
+⟦Gia đình tôi đi Đà Nẵng bằng máy bay.⟧ —— 我们家坐飞机去岘港。
+⟦Anh ấy thỉnh thoảng nói bằng tiếng Anh.⟧ —— 他偶尔用英语说话。
+单词：⟦máy bay⟧ 飞机 | ⟦ấy⟧ 那（放在人称代词后） | ⟦thỉnh thoảng⟧ 偶尔 | ⟦nói⟧ 说 | ⟦tiếng Anh⟧ 英语
+=zh
+⟦Chị thường đi bằng xe máy.⟧ —— 我通常騎機車去。
+⟦đi⟧ 意為「去」，也可以像「đi + 交通工具」那樣和交通工具一起用，這時意為「搭乘（交通工具）」。
+⟦Khi đi làm, tôi thích đi xe buýt.⟧ —— 上班時，我喜歡搭公車。
+⟦Khi về nhà, em hay đi xe ôm vì xe ôm tiện và nhanh.⟧ —— 回家時我常搭機車計程車（xe ôm），因為又方便又快。
+單字：⟦xe buýt⟧ 公車 | ⟦xe ôm⟧ 機車計程車
+⟦bằng⟧ 意為「用……、以……」，表示手段或方法，以「bằng + 手段、工具、材料」的形式使用。
+⟦Cái bàn này được làm bằng gỗ.⟧ —— 這張桌子是用木頭做的。
+⟦Gia đình tôi đi Đà Nẵng bằng máy bay.⟧ —— 我們家搭飛機去峴港。
+⟦Anh ấy thỉnh thoảng nói bằng tiếng Anh.⟧ —— 他偶爾用英語說話。
+單字：⟦máy bay⟧ 飛機 | ⟦ấy⟧ 那（放在人稱代詞後） | ⟦thỉnh thoảng⟧ 偶爾 | ⟦nói⟧ 說 | ⟦tiếng Anh⟧ 英語
+=en
+⟦Chị thường đi bằng xe máy.⟧ — I usually go by motorbike.
+⟦đi⟧ means "to go" and can also be used with a means of transport as "đi + vehicle", in which case it means "to ride/take (the vehicle)".
+⟦Khi đi làm, tôi thích đi xe buýt.⟧ — When I go to work, I like to take the bus.
+⟦Khi về nhà, em hay đi xe ôm vì xe ôm tiện và nhanh.⟧ — When I go home, I often take a motorbike taxi (xe ôm) because it's convenient and fast.
+Words: ⟦xe buýt⟧ bus | ⟦xe ôm⟧ motorbike taxi
+⟦bằng⟧ means "by, with" and expresses a means or method, in the form "bằng + means, tool, material".
+⟦Cái bàn này được làm bằng gỗ.⟧ — This table is made of wood.
+⟦Gia đình tôi đi Đà Nẵng bằng máy bay.⟧ — My family goes to Da Nang by plane.
+⟦Anh ấy thỉnh thoảng nói bằng tiếng Anh.⟧ — He sometimes speaks in English.
+Words: ⟦máy bay⟧ airplane | ⟦ấy⟧ that (after a personal pronoun) | ⟦thỉnh thoảng⟧ sometimes | ⟦nói⟧ to speak | ⟦tiếng Anh⟧ English
+=fr
+⟦Chị thường đi bằng xe máy.⟧ — D'habitude, j'y vais en scooter.
+⟦đi⟧ signifie « aller » et peut s'employer avec un moyen de transport, « đi + véhicule », au sens de « prendre (un véhicule) ».
+⟦Khi đi làm, tôi thích đi xe buýt.⟧ — Pour aller au travail, j'aime prendre le bus.
+⟦Khi về nhà, em hay đi xe ôm vì xe ôm tiện và nhanh.⟧ — Pour rentrer, je prends souvent un moto-taxi (xe ôm), car c'est pratique et rapide.
+Mots : ⟦xe buýt⟧ bus | ⟦xe ôm⟧ moto-taxi
+⟦bằng⟧ signifie « en, avec, par » et exprime un moyen ou une manière sous la forme « bằng + moyen, outil, matériau ».
+⟦Cái bàn này được làm bằng gỗ.⟧ — Cette table est faite en bois.
+⟦Gia đình tôi đi Đà Nẵng bằng máy bay.⟧ — Ma famille va à Da Nang en avion.
+⟦Anh ấy thỉnh thoảng nói bằng tiếng Anh.⟧ — Il parle parfois en anglais.
+Mots : ⟦máy bay⟧ avion | ⟦ấy⟧ ce …-là (après un pronom personnel) | ⟦thỉnh thoảng⟧ parfois | ⟦nói⟧ parler | ⟦tiếng Anh⟧ anglais
+=de
+⟦Chị thường đi bằng xe máy.⟧ — Ich fahre normalerweise mit dem Motorroller.
+⟦đi⟧ bedeutet „gehen“ und kann mit einem Verkehrsmittel als „đi + Verkehrsmittel“ stehen; dann bedeutet es „mit … fahren“.
+⟦Khi đi làm, tôi thích đi xe buýt.⟧ — Zur Arbeit fahre ich gern mit dem Bus.
+⟦Khi về nhà, em hay đi xe ôm vì xe ôm tiện và nhanh.⟧ — Nach Hause nehme ich oft ein Motorradtaxi (xe ôm), weil es bequem und schnell ist.
+Wörter: ⟦xe buýt⟧ Bus | ⟦xe ôm⟧ Motorradtaxi
+⟦bằng⟧ bedeutet „mit, mittels“ und drückt ein Mittel oder eine Methode aus, in der Form „bằng + Mittel, Werkzeug, Material“.
+⟦Cái bàn này được làm bằng gỗ.⟧ — Dieser Tisch ist aus Holz.
+⟦Gia đình tôi đi Đà Nẵng bằng máy bay.⟧ — Meine Familie fliegt nach Da Nang.
+⟦Anh ấy thỉnh thoảng nói bằng tiếng Anh.⟧ — Er spricht manchmal Englisch.
+Wörter: ⟦máy bay⟧ Flugzeug | ⟦ấy⟧ jener (nach Personalpronomen) | ⟦thỉnh thoảng⟧ manchmal | ⟦nói⟧ sprechen | ⟦tiếng Anh⟧ Englisch
+=hu
+⟦Chị thường đi bằng xe máy.⟧ — Általában motorral járok.
+A ⟦đi⟧ jelentése „menni”, és közlekedési eszközzel is használható: „đi + jármű”, ekkor jelentése „valamivel menni/utazni”.
+⟦Khi đi làm, tôi thích đi xe buýt.⟧ — Munkába szívesen járok busszal.
+⟦Khi về nhà, em hay đi xe ôm vì xe ôm tiện và nhanh.⟧ — Hazafelé gyakran motoros taxival (xe ôm) megyek, mert kényelmes és gyors.
+Szavak: ⟦xe buýt⟧ busz | ⟦xe ôm⟧ motoros taxi
+A ⟦bằng⟧ jelentése „-val/-vel, segítségével”, eszközt vagy módot fejez ki „bằng + eszköz, szerszám, anyag” formában.
+⟦Cái bàn này được làm bằng gỗ.⟧ — Ez az asztal fából készült.
+⟦Gia đình tôi đi Đà Nẵng bằng máy bay.⟧ — A családunk repülővel megy Đà Nẵngba.
+⟦Anh ấy thỉnh thoảng nói bằng tiếng Anh.⟧ — Időnként angolul beszél.
+Szavak: ⟦máy bay⟧ repülőgép | ⟦ấy⟧ az (személyes névmás után) | ⟦thỉnh thoảng⟧ időnként | ⟦nói⟧ beszélni | ⟦tiếng Anh⟧ angol nyelv
+=id
+⟦Chị thường đi bằng xe máy.⟧ — Kakak biasanya naik sepeda motor.
+⟦đi⟧ berarti "pergi" dan bisa dipakai bersama sarana transportasi seperti "đi + kendaraan", yang berarti "naik (kendaraan)".
+⟦Khi đi làm, tôi thích đi xe buýt.⟧ — Kalau berangkat kerja, saya suka naik bus.
+⟦Khi về nhà, em hay đi xe ôm vì xe ôm tiện và nhanh.⟧ — Kalau pulang, saya sering naik ojek (xe ôm) karena praktis dan cepat.
+Kosakata: ⟦xe buýt⟧ bus | ⟦xe ôm⟧ ojek
+⟦bằng⟧ berarti "dengan" dan menyatakan sarana atau cara, dalam bentuk "bằng + sarana, alat, bahan".
+⟦Cái bàn này được làm bằng gỗ.⟧ — Meja ini terbuat dari kayu.
+⟦Gia đình tôi đi Đà Nẵng bằng máy bay.⟧ — Keluarga saya pergi ke Đà Nẵng dengan pesawat.
+⟦Anh ấy thỉnh thoảng nói bằng tiếng Anh.⟧ — Dia kadang-kadang berbicara dalam bahasa Inggris.
+Kosakata: ⟦máy bay⟧ pesawat | ⟦ấy⟧ itu (setelah kata ganti orang) | ⟦thỉnh thoảng⟧ kadang-kadang | ⟦nói⟧ berbicara | ⟦tiếng Anh⟧ bahasa Inggris
+=ja
+⟦Chị thường đi bằng xe máy.⟧ — 私はふだんバイクで行くわ。
+⟦đi⟧ は「行く」の意味で、「đi ＋ 交通手段」のように交通手段と一緒に使うこともできます。この場合は「交通手段に乗る」の意味になります。
+⟦Khi đi làm, tôi thích đi xe buýt.⟧ — 仕事に行くとき、私はバスに乗るのが好きだ。
+⟦Khi về nhà, em hay đi xe ôm vì xe ôm tiện và nhanh.⟧ — 帰宅するとき、セーオム（バイクタクシー）は便利で速いので、よくセーオムに乗ります。
+単語：⟦xe buýt⟧ バス | ⟦xe ôm⟧ セーオム（バイクタクシー）
+⟦bằng⟧ は「～で」の意味で、手段や方法を表します。「bằng ＋ 手段・道具・材料」（手段・道具・材料で）の形で使います。
+⟦Cái bàn này được làm bằng gỗ.⟧ — このテーブルは木でできている。
+⟦Gia đình tôi đi Đà Nẵng bằng máy bay.⟧ — 私の家族は飛行機でダナンへ行く。
+⟦Anh ấy thỉnh thoảng nói bằng tiếng Anh.⟧ — 彼はときどき英語で話す。
+単語：⟦máy bay⟧ 飛行機 | ⟦ấy⟧ その（人称代名詞の後） | ⟦thỉnh thoảng⟧ ときどき | ⟦nói⟧ 話す | ⟦tiếng Anh⟧ 英語
+=pl
+⟦Chị thường đi bằng xe máy.⟧ — Zwykle jeżdżę skuterem.
+⟦đi⟧ znaczy „iść, jechać” i może łączyć się ze środkiem transportu: „đi + pojazd” znaczy wtedy „jechać (czymś)”.
+⟦Khi đi làm, tôi thích đi xe buýt.⟧ — Do pracy lubię jeździć autobusem.
+⟦Khi về nhà, em hay đi xe ôm vì xe ôm tiện và nhanh.⟧ — Do domu często jeżdżę mototaksówką (xe ôm), bo jest wygodna i szybka.
+Słówka: ⟦xe buýt⟧ autobus | ⟦xe ôm⟧ mototaksówka
+⟦bằng⟧ znaczy „czymś, za pomocą” i wyraża środek lub sposób w formie „bằng + środek, narzędzie, materiał”.
+⟦Cái bàn này được làm bằng gỗ.⟧ — Ten stół jest zrobiony z drewna.
+⟦Gia đình tôi đi Đà Nẵng bằng máy bay.⟧ — Moja rodzina leci do Đà Nẵng samolotem.
+⟦Anh ấy thỉnh thoảng nói bằng tiếng Anh.⟧ — On czasem mówi po angielsku.
+Słówka: ⟦máy bay⟧ samolot | ⟦ấy⟧ ten (po zaimku osobowym) | ⟦thỉnh thoảng⟧ czasami | ⟦nói⟧ mówić | ⟦tiếng Anh⟧ angielski
+@@ pdf-grammar-240a2c393bf6bf06#0
+~t 1. Zkušenost: Už jsi někdy …?|1. 经验的表达：你……过吗？|1. 經驗的表達：你……過嗎？|1. Experience: Have you ever …?|1. L'expérience : As-tu déjà … ?|1. Erfahrung: Hast du schon einmal …?|1. Tapasztalat: …-tál már valaha?|1. Pengalaman: Pernahkah kamu …?|1. 経験の表現：～したことある？|1. Doświadczenie: Czy kiedyś …?
+=cs
+⟦Em đã đi xe máy bao giờ chưa?⟧ — Jel jsi někdy na motorce?
+⟦(đã) ~ bao giờ chưa?⟧ znamená „už jsi někdy …?“ a ptáme se jím na zkušenosti druhé osoby. Totéž znamená ⟦(đã) ~ lần nào chưa?⟧. Kladně se odpovídá ⟦rồi⟧, záporně ⟦chưa⟧.
+⟦Em (đã) đi Mũi Né bao giờ chưa/lần nào chưa?⟧ — Byl jsi někdy v Mũi Né?
+Kladná odpověď: ⟦Rồi, năm ngoái em (đã) đi một lần rồi ạ.⟧ — Ano, loni jsem tam jednou byl.
+Záporná odpověď: ⟦Chưa, em chưa bao giờ/lần nào đi Mũi Né ạ.⟧ — Ne, v Mũi Né jsem ještě nikdy nebyl.
+Slovíčka: ⟦năm ngoái⟧ loni | ⟦lần⟧ krát, jednou
+=zh_cn
+⟦Em đã đi xe máy bao giờ chưa?⟧ —— 你骑过摩托车吗？
+⟦(đã) ~ bao giờ chưa?⟧ 意为“你……过吗？”，用来询问对方的经验。⟦(đã) ~ lần nào chưa?⟧ 也表示同样的意思。肯定回答用 ⟦rồi⟧，否定回答用 ⟦chưa⟧。
+⟦Em (đã) đi Mũi Né bao giờ chưa/lần nào chưa?⟧ —— 你去过美奈吗？
+肯定回答：⟦Rồi, năm ngoái em (đã) đi một lần rồi ạ.⟧ —— 去过，去年去过一次。
+否定回答：⟦Chưa, em chưa bao giờ/lần nào đi Mũi Né ạ.⟧ —— 没有，我一次也没去过美奈。
+单词：⟦năm ngoái⟧ 去年 | ⟦lần⟧ 次
+=zh
+⟦Em đã đi xe máy bao giờ chưa?⟧ —— 你騎過機車嗎？
+⟦(đã) ~ bao giờ chưa?⟧ 意為「你……過嗎？」，用來詢問對方的經驗。⟦(đã) ~ lần nào chưa?⟧ 也表示同樣的意思。肯定回答用 ⟦rồi⟧，否定回答用 ⟦chưa⟧。
+⟦Em (đã) đi Mũi Né bao giờ chưa/lần nào chưa?⟧ —— 你去過美奈嗎？
+肯定回答：⟦Rồi, năm ngoái em (đã) đi một lần rồi ạ.⟧ —— 去過，去年去過一次。
+否定回答：⟦Chưa, em chưa bao giờ/lần nào đi Mũi Né ạ.⟧ —— 沒有，我一次也沒去過美奈。
+單字：⟦năm ngoái⟧ 去年 | ⟦lần⟧ 次
+=en
+⟦Em đã đi xe máy bao giờ chưa?⟧ — Have you ever ridden a motorbike?
+⟦(đã) ~ bao giờ chưa?⟧ means "have you ever …?" and asks about the other person's experience. ⟦(đã) ~ lần nào chưa?⟧ means the same. Answer positively with ⟦rồi⟧ and negatively with ⟦chưa⟧.
+⟦Em (đã) đi Mũi Né bao giờ chưa/lần nào chưa?⟧ — Have you ever been to Mũi Né?
+Positive answer: ⟦Rồi, năm ngoái em (đã) đi một lần rồi ạ.⟧ — Yes, I went there once last year.
+Negative answer: ⟦Chưa, em chưa bao giờ/lần nào đi Mũi Né ạ.⟧ — No, I've never been to Mũi Né.
+Words: ⟦năm ngoái⟧ last year | ⟦lần⟧ time (occasion)
+=fr
+⟦Em đã đi xe máy bao giờ chưa?⟧ — As-tu déjà conduit un scooter ?
+⟦(đã) ~ bao giờ chưa?⟧ signifie « as-tu déjà … ? » et sert à interroger sur l'expérience de l'autre. ⟦(đã) ~ lần nào chưa?⟧ a le même sens. On répond positivement par ⟦rồi⟧ et négativement par ⟦chưa⟧.
+⟦Em (đã) đi Mũi Né bao giờ chưa/lần nào chưa?⟧ — Es-tu déjà allé à Mũi Né ?
+Réponse positive : ⟦Rồi, năm ngoái em (đã) đi một lần rồi ạ.⟧ — Oui, j'y suis allé une fois l'année dernière.
+Réponse négative : ⟦Chưa, em chưa bao giờ/lần nào đi Mũi Né ạ.⟧ — Non, je ne suis jamais allé à Mũi Né.
+Mots : ⟦năm ngoái⟧ l'année dernière | ⟦lần⟧ fois
+=de
+⟦Em đã đi xe máy bao giờ chưa?⟧ — Bist du schon einmal Motorroller gefahren?
+⟦(đã) ~ bao giờ chưa?⟧ bedeutet „hast du schon einmal …?“ und fragt nach der Erfahrung des Gegenübers. ⟦(đã) ~ lần nào chưa?⟧ bedeutet dasselbe. Bejahend antwortet man mit ⟦rồi⟧, verneinend mit ⟦chưa⟧.
+⟦Em (đã) đi Mũi Né bao giờ chưa/lần nào chưa?⟧ — Warst du schon einmal in Mũi Né?
+Bejahende Antwort: ⟦Rồi, năm ngoái em (đã) đi một lần rồi ạ.⟧ — Ja, letztes Jahr war ich einmal dort.
+Verneinende Antwort: ⟦Chưa, em chưa bao giờ/lần nào đi Mũi Né ạ.⟧ — Nein, ich war noch nie in Mũi Né.
+Wörter: ⟦năm ngoái⟧ letztes Jahr | ⟦lần⟧ Mal
+=hu
+⟦Em đã đi xe máy bao giờ chưa?⟧ — Motoroztál már valaha?
+Az ⟦(đã) ~ bao giờ chưa?⟧ jelentése „…-tál már valaha?”, a másik tapasztalatáról kérdezünk vele. Ugyanezt jelenti az ⟦(đã) ~ lần nào chưa?⟧. Igenlő válasz: ⟦rồi⟧, nemleges: ⟦chưa⟧.
+⟦Em (đã) đi Mũi Né bao giờ chưa/lần nào chưa?⟧ — Jártál már Mũi Néban?
+Igenlő válasz: ⟦Rồi, năm ngoái em (đã) đi một lần rồi ạ.⟧ — Igen, tavaly egyszer voltam ott.
+Nemleges válasz: ⟦Chưa, em chưa bao giờ/lần nào đi Mũi Né ạ.⟧ — Nem, még soha nem jártam Mũi Néban.
+Szavak: ⟦năm ngoái⟧ tavaly | ⟦lần⟧ alkalom, -szor
+=id
+⟦Em đã đi xe máy bao giờ chưa?⟧ — Pernahkah kamu naik sepeda motor?
+⟦(đã) ~ bao giờ chưa?⟧ berarti "pernahkah …?" dan dipakai untuk menanyakan pengalaman lawan bicara. ⟦(đã) ~ lần nào chưa?⟧ bermakna sama. Jawaban positif memakai ⟦rồi⟧, jawaban negatif ⟦chưa⟧.
+⟦Em (đã) đi Mũi Né bao giờ chưa/lần nào chưa?⟧ — Pernahkah kamu ke Mũi Né?
+Jawaban positif: ⟦Rồi, năm ngoái em (đã) đi một lần rồi ạ.⟧ — Pernah, tahun lalu saya sekali ke sana.
+Jawaban negatif: ⟦Chưa, em chưa bao giờ/lần nào đi Mũi Né ạ.⟧ — Belum, saya belum pernah sekali pun ke Mũi Né.
+Kosakata: ⟦năm ngoái⟧ tahun lalu | ⟦lần⟧ kali
+=ja
+⟦Em đã đi xe máy bao giờ chưa?⟧ — 君はバイクに乗ったことある？
+⟦(đã) ~ bao giờ chưa?⟧ は「～したことがありますか」のように相手の経験を尋ねるときに使う表現です。⟦(đã) ~ lần nào chưa?⟧ も同じ意味を表します。肯定の答えは ⟦rồi⟧、否定の答えは ⟦chưa⟧ で表せます。
+⟦Em (đã) đi Mũi Né bao giờ chưa/lần nào chưa?⟧ — ムイネーに行ったことある？
+肯定の答え：⟦Rồi, năm ngoái em (đã) đi một lần rồi ạ.⟧ — はい、去年一度行きました。
+否定の答え：⟦Chưa, em chưa bao giờ/lần nào đi Mũi Né ạ.⟧ — いいえ、ムイネーには一度も行ったことがありません。
+単語：⟦năm ngoái⟧ 去年 | ⟦lần⟧ 回、回数
+=pl
+⟦Em đã đi xe máy bao giờ chưa?⟧ — Jeździłeś kiedyś skuterem?
+⟦(đã) ~ bao giờ chưa?⟧ znaczy „czy kiedyś …?” i służy do pytania o doświadczenie rozmówcy. ⟦(đã) ~ lần nào chưa?⟧ znaczy to samo. Twierdząco odpowiada się ⟦rồi⟧, przecząco ⟦chưa⟧.
+⟦Em (đã) đi Mũi Né bao giờ chưa/lần nào chưa?⟧ — Byłeś kiedyś w Mũi Né?
+Odpowiedź twierdząca: ⟦Rồi, năm ngoái em (đã) đi một lần rồi ạ.⟧ — Tak, byłem tam raz w zeszłym roku.
+Odpowiedź przecząca: ⟦Chưa, em chưa bao giờ/lần nào đi Mũi Né ạ.⟧ — Nie, nigdy nie byłem w Mũi Né.
+Słówka: ⟦năm ngoái⟧ w zeszłym roku | ⟦lần⟧ raz

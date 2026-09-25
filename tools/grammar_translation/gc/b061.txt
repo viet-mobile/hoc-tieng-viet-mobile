@@ -1,0 +1,162 @@
+@@ pdf-grammar-ead905dfc9d23f28#0
+=cs
+Gramatický výklad
+⟦trở thành⟧ + podstatné jméno znamená „stát se ~“.
+⟦Từ đó đến nay, tên gọi Oscar đã trở thành tên gọi của giải thưởng.⟧ → Od té doby až dodnes se jméno Oscar stalo názvem této ceny. · ⟦Hai người đã trở thành đôi bạn thân từ rất lâu.⟧ → Ti dva se už velmi dávno stali blízkými přáteli. · ⟦Bộ phim Titanic đã đưa hai diễn viên Leonardo DiCaprio và Kate Winslet trở thành những ngôi sao hàng đầu thế giới.⟧ → Film Titanic udělal z herců Leonarda DiCapria a Kate Winsletové světové hvězdy.
+⟦nhất⟧ ve tvaru přídavné jméno + ⟦nhất⟧ vyjadřuje nejvyšší stupeň: „nej~“.
+⟦Oscar là giải thưởng cao quý nhất của điện ảnh Mỹ.⟧ → Oscar je nejprestižnější cenou amerického filmu. · ⟦Giải thưởng này được trao cho những bộ phim hay, những nam nữ diễn viên và đạo diễn xuất sắc nhất trong năm.⟧ → Tato cena se uděluje nejlepším filmům, hercům, herečkám a režisérům roku. · ⟦Điểm nhấn quan trọng nhất của giải thưởng chính là tượng vàng Oscar.⟧ → Nejdůležitějším symbolem ceny je zlatá soška Oscara. · ⟦Phim “Cuốn theo chiều gió” là một trong những bộ phim hay nhất của Mĩ.⟧ → Film „Jih proti Severu“ je jedním z nejlepších amerických filmů. · ⟦“Bố già” là một trong những bộ phim Mĩ tôi thích nhất.⟧ → „Kmotr“ je jeden z amerických filmů, které mám nejraději.
+=zh_cn
+语法解说
+⟦trở thành⟧ + 名词，意为“成为……”。
+⟦Từ đó đến nay, tên gọi Oscar đã trở thành tên gọi của giải thưởng.⟧ → 从那时到现在，“奥斯卡”这个名字已成为该奖项的名称。 · ⟦Hai người đã trở thành đôi bạn thân từ rất lâu.⟧ → 两人很久以前就成了好朋友。 · ⟦Bộ phim Titanic đã đưa hai diễn viên Leonardo DiCaprio và Kate Winslet trở thành những ngôi sao hàng đầu thế giới.⟧ → 电影《泰坦尼克号》让莱昂纳多·迪卡普里奥和凯特·温斯莱特成为世界顶级明星。
+⟦nhất⟧ 以“形容词 + ⟦nhất⟧”的形式表示最高级，意为“最……”。
+⟦Oscar là giải thưởng cao quý nhất của điện ảnh Mỹ.⟧ → 奥斯卡是美国电影界最崇高的奖项。 · ⟦Giải thưởng này được trao cho những bộ phim hay, những nam nữ diễn viên và đạo diễn xuất sắc nhất trong năm.⟧ → 这个奖颁给年度最佳影片和最优秀的男女演员及导演。 · ⟦Điểm nhấn quan trọng nhất của giải thưởng chính là tượng vàng Oscar.⟧ → 该奖最重要的亮点就是奥斯卡金像。 · ⟦Phim “Cuốn theo chiều gió” là một trong những bộ phim hay nhất của Mĩ.⟧ → 《乱世佳人》是美国最优秀的电影之一。 · ⟦“Bố già” là một trong những bộ phim Mĩ tôi thích nhất.⟧ → 《教父》是我最喜欢的美国电影之一。
+=zh
+文法解說
+⟦trở thành⟧ + 名詞，意為「成為……」。
+⟦Từ đó đến nay, tên gọi Oscar đã trở thành tên gọi của giải thưởng.⟧ → 從那時到現在，「奧斯卡」這個名字已成為該獎項的名稱。 · ⟦Hai người đã trở thành đôi bạn thân từ rất lâu.⟧ → 兩人很久以前就成了好朋友。 · ⟦Bộ phim Titanic đã đưa hai diễn viên Leonardo DiCaprio và Kate Winslet trở thành những ngôi sao hàng đầu thế giới.⟧ → 電影《鐵達尼號》讓李奧納多·狄卡皮歐和凱特·溫絲蕾成為世界頂尖巨星。
+⟦nhất⟧ 以「形容詞 + ⟦nhất⟧」的形式表示最高級，意為「最……」。
+⟦Oscar là giải thưởng cao quý nhất của điện ảnh Mỹ.⟧ → 奧斯卡是美國電影界最崇高的獎項。 · ⟦Giải thưởng này được trao cho những bộ phim hay, những nam nữ diễn viên và đạo diễn xuất sắc nhất trong năm.⟧ → 這個獎頒給年度最佳電影和最傑出的男女演員及導演。 · ⟦Điểm nhấn quan trọng nhất của giải thưởng chính là tượng vàng Oscar.⟧ → 該獎最重要的亮點就是奧斯卡金像。 · ⟦Phim “Cuốn theo chiều gió” là một trong những bộ phim hay nhất của Mĩ.⟧ → 《亂世佳人》是美國最優秀的電影之一。 · ⟦“Bố già” là một trong những bộ phim Mĩ tôi thích nhất.⟧ → 《教父》是我最喜歡的美國電影之一。
+=en
+Grammar notes
+⟦trở thành⟧ + noun means "to become ~".
+⟦Từ đó đến nay, tên gọi Oscar đã trở thành tên gọi của giải thưởng.⟧ → From then until now, the name Oscar has become the name of the award. · ⟦Hai người đã trở thành đôi bạn thân từ rất lâu.⟧ → The two became close friends long ago. · ⟦Bộ phim Titanic đã đưa hai diễn viên Leonardo DiCaprio và Kate Winslet trở thành những ngôi sao hàng đầu thế giới.⟧ → Titanic turned Leonardo DiCaprio and Kate Winslet into world-class stars.
+⟦nhất⟧ in the form adjective + ⟦nhất⟧ expresses the superlative: "the most ~, the ~est".
+⟦Oscar là giải thưởng cao quý nhất của điện ảnh Mỹ.⟧ → The Oscar is the most prestigious award in American cinema. · ⟦Giải thưởng này được trao cho những bộ phim hay, những nam nữ diễn viên và đạo diễn xuất sắc nhất trong năm.⟧ → It is given to the year's best films, actors, actresses and directors. · ⟦Điểm nhấn quan trọng nhất của giải thưởng chính là tượng vàng Oscar.⟧ → The most important highlight of the award is the golden Oscar statuette. · ⟦Phim “Cuốn theo chiều gió” là một trong những bộ phim hay nhất của Mĩ.⟧ → "Gone with the Wind" is one of the best American films. · ⟦“Bố già” là một trong những bộ phim Mĩ tôi thích nhất.⟧ → "The Godfather" is one of my favourite American films.
+=fr
+Notes de grammaire
+⟦trở thành⟧ + nom signifie « devenir ~ ».
+⟦Từ đó đến nay, tên gọi Oscar đã trở thành tên gọi của giải thưởng.⟧ → Depuis lors, le nom Oscar est devenu celui de la récompense. · ⟦Hai người đã trở thành đôi bạn thân từ rất lâu.⟧ → Tous deux sont devenus amis intimes depuis très longtemps. · ⟦Bộ phim Titanic đã đưa hai diễn viên Leonardo DiCaprio và Kate Winslet trở thành những ngôi sao hàng đầu thế giới.⟧ → Titanic a fait de Leonardo DiCaprio et Kate Winslet des stars mondiales.
+⟦nhất⟧ dans la forme adjectif + ⟦nhất⟧ exprime le superlatif : « le plus ~ ».
+⟦Oscar là giải thưởng cao quý nhất của điện ảnh Mỹ.⟧ → L'Oscar est la récompense la plus prestigieuse du cinéma américain. · ⟦Giải thưởng này được trao cho những bộ phim hay, những nam nữ diễn viên và đạo diễn xuất sắc nhất trong năm.⟧ → Elle est décernée aux meilleurs films, acteurs, actrices et réalisateurs de l'année. · ⟦Điểm nhấn quan trọng nhất của giải thưởng chính là tượng vàng Oscar.⟧ → Le symbole le plus important de la récompense est la statuette dorée de l'Oscar. · ⟦Phim “Cuốn theo chiều gió” là một trong những bộ phim hay nhất của Mĩ.⟧ → « Autant en emporte le vent » est l'un des meilleurs films américains. · ⟦“Bố già” là một trong những bộ phim Mĩ tôi thích nhất.⟧ → « Le Parrain » est l'un des films américains que j'aime le plus.
+=de
+Grammatikerläuterungen
+⟦trở thành⟧ + Nomen bedeutet „~ werden“.
+⟦Từ đó đến nay, tên gọi Oscar đã trở thành tên gọi của giải thưởng.⟧ → Seitdem ist der Name Oscar zum Namen des Preises geworden. · ⟦Hai người đã trở thành đôi bạn thân từ rất lâu.⟧ → Die beiden sind schon vor sehr langer Zeit enge Freunde geworden. · ⟦Bộ phim Titanic đã đưa hai diễn viên Leonardo DiCaprio và Kate Winslet trở thành những ngôi sao hàng đầu thế giới.⟧ → Der Film Titanic hat Leonardo DiCaprio und Kate Winslet zu Weltstars gemacht.
+⟦nhất⟧ in der Form Adjektiv + ⟦nhất⟧ drückt den Superlativ aus: „am ~sten, der/die/das ~ste“.
+⟦Oscar là giải thưởng cao quý nhất của điện ảnh Mỹ.⟧ → Der Oscar ist der renommierteste Preis des amerikanischen Films. · ⟦Giải thưởng này được trao cho những bộ phim hay, những nam nữ diễn viên và đạo diễn xuất sắc nhất trong năm.⟧ → Er wird an die besten Filme, Schauspieler, Schauspielerinnen und Regisseure des Jahres verliehen. · ⟦Điểm nhấn quan trọng nhất của giải thưởng chính là tượng vàng Oscar.⟧ → Das wichtigste Symbol des Preises ist die goldene Oscar-Statuette. · ⟦Phim “Cuốn theo chiều gió” là một trong những bộ phim hay nhất của Mĩ.⟧ → „Vom Winde verweht“ ist einer der besten amerikanischen Filme. · ⟦“Bố già” là một trong những bộ phim Mĩ tôi thích nhất.⟧ → „Der Pate“ ist einer meiner liebsten amerikanischen Filme.
+=hu
+Nyelvtani magyarázat
+A ⟦trở thành⟧ + főnév jelentése „~vá válik”.
+⟦Từ đó đến nay, tên gọi Oscar đã trở thành tên gọi của giải thưởng.⟧ → Azóta az Oscar név a díj nevévé vált. · ⟦Hai người đã trở thành đôi bạn thân từ rất lâu.⟧ → Ők ketten már nagyon régen jó barátokká váltak. · ⟦Bộ phim Titanic đã đưa hai diễn viên Leonardo DiCaprio và Kate Winslet trở thành những ngôi sao hàng đầu thế giới.⟧ → A Titanic című film világsztárrá tette Leonardo DiCapriót és Kate Winsletet.
+A ⟦nhất⟧ melléknév + ⟦nhất⟧ formában felsőfokot fejez ki: „leg~bb”.
+⟦Oscar là giải thưởng cao quý nhất của điện ảnh Mỹ.⟧ → Az Oscar az amerikai filmművészet legrangosabb díja. · ⟦Giải thưởng này được trao cho những bộ phim hay, những nam nữ diễn viên và đạo diễn xuất sắc nhất trong năm.⟧ → Ezt a díjat az év legjobb filmjei, színészei, színésznői és rendezői kapják. · ⟦Điểm nhấn quan trọng nhất của giải thưởng chính là tượng vàng Oscar.⟧ → A díj legfontosabb jelképe az arany Oscar-szobor. · ⟦Phim “Cuốn theo chiều gió” là một trong những bộ phim hay nhất của Mĩ.⟧ → Az „Elfújta a szél” az egyik legjobb amerikai film. · ⟦“Bố già” là một trong những bộ phim Mĩ tôi thích nhất.⟧ → „A keresztapa” az egyik kedvenc amerikai filmem.
+=id
+Penjelasan tata bahasa
+⟦trở thành⟧ + nomina berarti "menjadi ~".
+⟦Từ đó đến nay, tên gọi Oscar đã trở thành tên gọi của giải thưởng.⟧ → Sejak itu hingga kini, nama Oscar menjadi nama penghargaan tersebut. · ⟦Hai người đã trở thành đôi bạn thân từ rất lâu.⟧ → Keduanya sudah menjadi sahabat sejak lama sekali. · ⟦Bộ phim Titanic đã đưa hai diễn viên Leonardo DiCaprio và Kate Winslet trở thành những ngôi sao hàng đầu thế giới.⟧ → Film Titanic menjadikan Leonardo DiCaprio dan Kate Winslet bintang papan atas dunia.
+⟦nhất⟧ dalam bentuk adjektiva + ⟦nhất⟧ menyatakan tingkat paling tinggi: "paling ~".
+⟦Oscar là giải thưởng cao quý nhất của điện ảnh Mỹ.⟧ → Oscar adalah penghargaan paling bergengsi di perfilman Amerika. · ⟦Giải thưởng này được trao cho những bộ phim hay, những nam nữ diễn viên và đạo diễn xuất sắc nhất trong năm.⟧ → Penghargaan ini diberikan kepada film, aktor, aktris, dan sutradara terbaik tahun itu. · ⟦Điểm nhấn quan trọng nhất của giải thưởng chính là tượng vàng Oscar.⟧ → Sorotan paling penting dari penghargaan ini adalah patung emas Oscar. · ⟦Phim “Cuốn theo chiều gió” là một trong những bộ phim hay nhất của Mĩ.⟧ → "Gone with the Wind" adalah salah satu film terbaik Amerika. · ⟦“Bố già” là một trong những bộ phim Mĩ tôi thích nhất.⟧ → "The Godfather" adalah salah satu film Amerika yang paling saya sukai.
+=ja
+文法解説
+⟦trở thành⟧ + 名詞の形で「～になる」という意味を表します。
+⟦Từ đó đến nay, tên gọi Oscar đã trở thành tên gọi của giải thưởng.⟧ → その時から今まで、オスカーという名前が賞の名前になった。 · ⟦Hai người đã trở thành đôi bạn thân từ rất lâu.⟧ → 二人はずっと前から親友になった。 · ⟦Bộ phim Titanic đã đưa hai diễn viên Leonardo DiCaprio và Kate Winslet trở thành những ngôi sao hàng đầu thế giới.⟧ → 映画『タイタニック』はレオナルド・ディカプリオとケイト・ウィンスレットを世界的スターにした。
+⟦nhất⟧ が「形容詞 + ⟦nhất⟧」の形で使われると最上級を表し、「最も～な」となります。
+⟦Oscar là giải thưởng cao quý nhất của điện ảnh Mỹ.⟧ → オスカーはアメリカ映画界で最も権威ある賞だ。 · ⟦Giải thưởng này được trao cho những bộ phim hay, những nam nữ diễn viên và đạo diễn xuất sắc nhất trong năm.⟧ → この賞はその年の最も優れた映画、男女俳優、監督に贈られる。 · ⟦Điểm nhấn quan trọng nhất của giải thưởng chính là tượng vàng Oscar.⟧ → 賞の最も重要なポイントはオスカーの黄金像だ。 · ⟦Phim “Cuốn theo chiều gió” là một trong những bộ phim hay nhất của Mĩ.⟧ → 『風と共に去りぬ』はアメリカで最も優れた映画の一つだ。 · ⟦“Bố già” là một trong những bộ phim Mĩ tôi thích nhất.⟧ → 『ゴッドファーザー』は私が最も好きなアメリカ映画の一つだ。
+=pl
+Objaśnienia gramatyczne
+⟦trở thành⟧ + rzeczownik znaczy „stać się ~”.
+⟦Từ đó đến nay, tên gọi Oscar đã trở thành tên gọi của giải thưởng.⟧ → Od tamtej pory nazwa Oscar stała się nazwą nagrody. · ⟦Hai người đã trở thành đôi bạn thân từ rất lâu.⟧ → Tych dwoje już bardzo dawno zostało bliskimi przyjaciółmi. · ⟦Bộ phim Titanic đã đưa hai diễn viên Leonardo DiCaprio và Kate Winslet trở thành những ngôi sao hàng đầu thế giới.⟧ → Film Titanic uczynił z Leonarda DiCaprio i Kate Winslet światowe gwiazdy.
+⟦nhất⟧ w formie przymiotnik + ⟦nhất⟧ wyraża stopień najwyższy: „naj~”.
+⟦Oscar là giải thưởng cao quý nhất của điện ảnh Mỹ.⟧ → Oscar to najbardziej prestiżowa nagroda kina amerykańskiego. · ⟦Giải thưởng này được trao cho những bộ phim hay, những nam nữ diễn viên và đạo diễn xuất sắc nhất trong năm.⟧ → Przyznaje się ją najlepszym filmom, aktorom, aktorkom i reżyserom roku. · ⟦Điểm nhấn quan trọng nhất của giải thưởng chính là tượng vàng Oscar.⟧ → Najważniejszym symbolem nagrody jest złota statuetka Oscara. · ⟦Phim “Cuốn theo chiều gió” là một trong những bộ phim hay nhất của Mĩ.⟧ → „Przeminęło z wiatrem” to jeden z najlepszych filmów amerykańskich. · ⟦“Bố già” là một trong những bộ phim Mĩ tôi thích nhất.⟧ → „Ojciec chrzestny” to jeden z moich ulubionych filmów amerykańskich.
+@@ pdf-grammar-5e01ce148b12258b#0
+=cs
+Gramatický výklad
+⟦ra⟧ vyjadřuje pohyb zevnitř ven do širšího prostoru: „vyjít, jít ven“.
+⟦Lee mở cổng, bước ra đường.⟧ → Lee otevřel bránu a vyšel na ulici. · ⟦Tôi đi ra chợ mua đồ ăn.⟧ → Jdu na trh nakoupit jídlo.
+⟦vào⟧ vyjadřuje pohyb z širšího vnějšího prostoru dovnitř: „vejít, jít dovnitř“.
+⟦Lee bước vào một cửa hàng lưu niệm lớn nhất.⟧ → Lee vešel do největšího obchodu se suvenýry. · ⟦Sinh viên đang bước vào lớp.⟧ → Studenti vcházejí do třídy.
+⟦lên⟧ vyjadřuje pohyb směrem nahoru: „jít / vyjet nahoru“.
+⟦Lee lên gác lấy điện thoại.⟧ → Lee šel nahoru pro telefon. · ⟦Xe ô tô đang lên dốc.⟧ → Auto jede do kopce.
+⟦xuống⟧ vyjadřuje pohyb směrem dolů: „jít / sjet dolů“.
+⟦Lee lên gác lấy điện thoại rồi sau đó quay xuống nhà.⟧ → Lee šel nahoru pro telefon a pak se vrátil dolů. · ⟦Anh ấy bước xuống ga tàu điện ngầm.⟧ → Sestoupil do stanice metra.
+=zh_cn
+语法解说
+⟦ra⟧ 表示从内部向更宽阔的外部移动，意为“出去”。
+⟦Lee mở cổng, bước ra đường.⟧ → 李先生打开大门，走到街上。 · ⟦Tôi đi ra chợ mua đồ ăn.⟧ → 我去市场买吃的。
+⟦vào⟧ 表示从宽阔的外部向狭小的内部移动，意为“进来、进去”。
+⟦Lee bước vào một cửa hàng lưu niệm lớn nhất.⟧ → 李先生走进一家最大的纪念品店。 · ⟦Sinh viên đang bước vào lớp.⟧ → 学生正在走进教室。
+⟦lên⟧ 表示向更高处移动的方向，意为“上去”。
+⟦Lee lên gác lấy điện thoại.⟧ → 李先生上楼去拿电话。 · ⟦Xe ô tô đang lên dốc.⟧ → 汽车正在上坡。
+⟦xuống⟧ 表示向更低处移动的方向，意为“下去”。
+⟦Lee lên gác lấy điện thoại rồi sau đó quay xuống nhà.⟧ → 李先生上楼拿了电话，然后又下楼来。 · ⟦Anh ấy bước xuống ga tàu điện ngầm.⟧ → 他走下地铁站。
+=zh
+文法解說
+⟦ra⟧ 表示從內部向更寬闊的外部移動，意為「出去」。
+⟦Lee mở cổng, bước ra đường.⟧ → 李先生打開大門，走到街上。 · ⟦Tôi đi ra chợ mua đồ ăn.⟧ → 我去市場買吃的。
+⟦vào⟧ 表示從寬闊的外部向狹小的內部移動，意為「進來、進去」。
+⟦Lee bước vào một cửa hàng lưu niệm lớn nhất.⟧ → 李先生走進一家最大的紀念品店。 · ⟦Sinh viên đang bước vào lớp.⟧ → 學生正在走進教室。
+⟦lên⟧ 表示向更高處移動的方向，意為「上去」。
+⟦Lee lên gác lấy điện thoại.⟧ → 李先生上樓去拿電話。 · ⟦Xe ô tô đang lên dốc.⟧ → 汽車正在上坡。
+⟦xuống⟧ 表示向更低處移動的方向，意為「下去」。
+⟦Lee lên gác lấy điện thoại rồi sau đó quay xuống nhà.⟧ → 李先生上樓拿了電話，然後又下樓來。 · ⟦Anh ấy bước xuống ga tàu điện ngầm.⟧ → 他走下捷運站。
+=en
+Grammar notes
+⟦ra⟧ expresses movement from inside to a wider outside space: "to go out".
+⟦Lee mở cổng, bước ra đường.⟧ → Lee opened the gate and stepped out into the street. · ⟦Tôi đi ra chợ mua đồ ăn.⟧ → I'm going out to the market to buy food.
+⟦vào⟧ expresses movement from a wider outside space into a narrower inside: "to go in, come in".
+⟦Lee bước vào một cửa hàng lưu niệm lớn nhất.⟧ → Lee walked into the biggest souvenir shop. · ⟦Sinh viên đang bước vào lớp.⟧ → The students are walking into the classroom.
+⟦lên⟧ expresses movement upwards: "to go up".
+⟦Lee lên gác lấy điện thoại.⟧ → Lee went upstairs to get the phone. · ⟦Xe ô tô đang lên dốc.⟧ → The car is going uphill.
+⟦xuống⟧ expresses movement downwards: "to go down".
+⟦Lee lên gác lấy điện thoại rồi sau đó quay xuống nhà.⟧ → Lee went upstairs to get the phone and then came back down. · ⟦Anh ấy bước xuống ga tàu điện ngầm.⟧ → He went down into the metro station.
+=fr
+Notes de grammaire
+⟦ra⟧ exprime un mouvement de l'intérieur vers un espace extérieur plus vaste : « sortir ».
+⟦Lee mở cổng, bước ra đường.⟧ → Lee ouvrit le portail et sortit dans la rue. · ⟦Tôi đi ra chợ mua đồ ăn.⟧ → Je vais au marché acheter à manger.
+⟦vào⟧ exprime un mouvement de l'extérieur vers un espace intérieur plus restreint : « entrer ».
+⟦Lee bước vào một cửa hàng lưu niệm lớn nhất.⟧ → Lee entra dans la plus grande boutique de souvenirs. · ⟦Sinh viên đang bước vào lớp.⟧ → Les étudiants entrent dans la salle de classe.
+⟦lên⟧ exprime un mouvement vers le haut : « monter ».
+⟦Lee lên gác lấy điện thoại.⟧ → Lee monta à l'étage chercher le téléphone. · ⟦Xe ô tô đang lên dốc.⟧ → La voiture monte la côte.
+⟦xuống⟧ exprime un mouvement vers le bas : « descendre ».
+⟦Lee lên gác lấy điện thoại rồi sau đó quay xuống nhà.⟧ → Lee monta chercher le téléphone puis redescendit. · ⟦Anh ấy bước xuống ga tàu điện ngầm.⟧ → Il descendit dans la station de métro.
+=de
+Grammatikerläuterungen
+⟦ra⟧ drückt eine Bewegung von innen nach außen in einen weiteren Raum aus: „hinausgehen“.
+⟦Lee mở cổng, bước ra đường.⟧ → Lee öffnete das Tor und trat auf die Straße hinaus. · ⟦Tôi đi ra chợ mua đồ ăn.⟧ → Ich gehe auf den Markt, um Essen zu kaufen.
+⟦vào⟧ drückt eine Bewegung von außen in einen engeren Innenraum aus: „hineingehen, hereinkommen“.
+⟦Lee bước vào một cửa hàng lưu niệm lớn nhất.⟧ → Lee betrat den größten Souvenirladen. · ⟦Sinh viên đang bước vào lớp.⟧ → Die Studenten gehen gerade ins Klassenzimmer.
+⟦lên⟧ drückt eine Bewegung nach oben aus: „hinaufgehen“.
+⟦Lee lên gác lấy điện thoại.⟧ → Lee ging nach oben, um das Telefon zu holen. · ⟦Xe ô tô đang lên dốc.⟧ → Das Auto fährt den Hang hinauf.
+⟦xuống⟧ drückt eine Bewegung nach unten aus: „hinuntergehen“.
+⟦Lee lên gác lấy điện thoại rồi sau đó quay xuống nhà.⟧ → Lee ging nach oben, holte das Telefon und kam dann wieder herunter. · ⟦Anh ấy bước xuống ga tàu điện ngầm.⟧ → Er stieg in die U-Bahn-Station hinab.
+=hu
+Nyelvtani magyarázat
+A ⟦ra⟧ a belülről tágabb külső térbe irányuló mozgást fejezi ki: „kimenni”.
+⟦Lee mở cổng, bước ra đường.⟧ → Lee kinyitotta a kaput, és kilépett az utcára. · ⟦Tôi đi ra chợ mua đồ ăn.⟧ → Kimegyek a piacra ennivalót venni.
+A ⟦vào⟧ a tágabb külső térből szűkebb belső térbe irányuló mozgást fejezi ki: „bemenni, bejönni”.
+⟦Lee bước vào một cửa hàng lưu niệm lớn nhất.⟧ → Lee bement a legnagyobb ajándékboltba. · ⟦Sinh viên đang bước vào lớp.⟧ → A diákok épp belépnek a tanterembe.
+A ⟦lên⟧ felfelé irányuló mozgást fejez ki: „felmenni”.
+⟦Lee lên gác lấy điện thoại.⟧ → Lee felment az emeletre a telefonért. · ⟦Xe ô tô đang lên dốc.⟧ → Az autó felfelé halad az emelkedőn.
+A ⟦xuống⟧ lefelé irányuló mozgást fejez ki: „lemenni”.
+⟦Lee lên gác lấy điện thoại rồi sau đó quay xuống nhà.⟧ → Lee felment a telefonért, aztán visszajött le. · ⟦Anh ấy bước xuống ga tàu điện ngầm.⟧ → Lement a metróállomásra.
+=id
+Penjelasan tata bahasa
+⟦ra⟧ menyatakan gerakan dari dalam ke luar yang lebih luas: "keluar".
+⟦Lee mở cổng, bước ra đường.⟧ → Lee membuka gerbang dan melangkah keluar ke jalan. · ⟦Tôi đi ra chợ mua đồ ăn.⟧ → Saya pergi ke pasar membeli makanan.
+⟦vào⟧ menyatakan gerakan dari luar yang luas ke dalam yang lebih sempit: "masuk".
+⟦Lee bước vào một cửa hàng lưu niệm lớn nhất.⟧ → Lee masuk ke toko suvenir terbesar. · ⟦Sinh viên đang bước vào lớp.⟧ → Mahasiswa sedang masuk ke kelas.
+⟦lên⟧ menyatakan arah gerakan ke tempat yang lebih tinggi: "naik".
+⟦Lee lên gác lấy điện thoại.⟧ → Lee naik ke lantai atas mengambil telepon. · ⟦Xe ô tô đang lên dốc.⟧ → Mobil sedang menanjak.
+⟦xuống⟧ menyatakan arah gerakan ke tempat yang lebih rendah: "turun".
+⟦Lee lên gác lấy điện thoại rồi sau đó quay xuống nhà.⟧ → Lee naik mengambil telepon lalu turun kembali. · ⟦Anh ấy bước xuống ga tàu điện ngầm.⟧ → Dia turun ke stasiun kereta bawah tanah.
+=ja
+文法解説
+⟦ra⟧ は内部からより広い外部への移動を表し、「出る、出ていく」という意味で使われます。
+⟦Lee mở cổng, bước ra đường.⟧ → イさんは門を開けて通りに出た。 · ⟦Tôi đi ra chợ mua đồ ăn.⟧ → 私は市場へ行って食べ物を買う。
+⟦vào⟧ はより広い外部から狭い内部への移動を表し、「入る」という意味で使われます。
+⟦Lee bước vào một cửa hàng lưu niệm lớn nhất.⟧ → イさんは一番大きな土産物店に入った。 · ⟦Sinh viên đang bước vào lớp.⟧ → 学生が教室に入っていく。
+⟦lên⟧ は移動の方向、つまりより高い所への移動を表し、「上がる」という意味で使われます。
+⟦Lee lên gác lấy điện thoại.⟧ → イさんは2階に上がって電話を取ってきた。 · ⟦Xe ô tô đang lên dốc.⟧ → 車が坂を上っている。
+⟦xuống⟧ は移動の方向、つまりより低い所への移動を表し、「下りる」という意味で使われます。
+⟦Lee lên gác lấy điện thoại rồi sau đó quay xuống nhà.⟧ → イさんは2階に上がって電話を取り、それから下りてきた。 · ⟦Anh ấy bước xuống ga tàu điện ngầm.⟧ → 彼は地下鉄の駅に下りていった。
+=pl
+Objaśnienia gramatyczne
+⟦ra⟧ wyraża ruch od wewnątrz na zewnątrz, w szerszą przestrzeń: „wyjść”.
+⟦Lee mở cổng, bước ra đường.⟧ → Lee otworzył bramę i wyszedł na ulicę. · ⟦Tôi đi ra chợ mua đồ ăn.⟧ → Idę na targ kupić jedzenie.
+⟦vào⟧ wyraża ruch z szerszej przestrzeni do węższego wnętrza: „wejść”.
+⟦Lee bước vào một cửa hàng lưu niệm lớn nhất.⟧ → Lee wszedł do największego sklepu z pamiątkami. · ⟦Sinh viên đang bước vào lớp.⟧ → Studenci wchodzą do sali.
+⟦lên⟧ wyraża ruch w górę: „wejść na górę, wjechać”.
+⟦Lee lên gác lấy điện thoại.⟧ → Lee poszedł na górę po telefon. · ⟦Xe ô tô đang lên dốc.⟧ → Samochód wjeżdża pod górę.
+⟦xuống⟧ wyraża ruch w dół: „zejść, zjechać”.
+⟦Lee lên gác lấy điện thoại rồi sau đó quay xuống nhà.⟧ → Lee poszedł na górę po telefon, a potem zszedł z powrotem. · ⟦Anh ấy bước xuống ga tàu điện ngầm.⟧ → Zszedł na stację metra.

@@ -1,0 +1,389 @@
+@@ pdf-grammar-db59e50e7290baf1#0
+~t 1. cả — celý, všichni|1. cả — 全部|1. cả — 全部|1. cả — all, whole|1. cả — tout, entier|1. cả — ganz, alle|1. cả — egész, mind|1. cả — seluruh, semua|1. cả — 全部|1. cả — cały, wszyscy
+=cs
+⟦Cả năm đều nóng mà.⟧ — Vždyť je horko celý rok.
+⟦cả⟧ znamená „celý, všichni“ a stojí před hromadnými podstatnými jmény, podstatnými jmény označujícími čas nebo před číslovkami.
+⟦cả gia đình⟧ — celá rodina
+⟦Tôi ở nhà cả ngày.⟧ — Celý den jsem byl doma.
+A: ⟦Em thích ăn cơm hay mì?⟧ — Máš raději rýži, nebo nudle?
+B: ⟦Em thích cả hai.⟧ — Mám rád obojí.
+Slovíčko: ⟦mì⟧ nudle
+=zh_cn
+⟦Cả năm đều nóng mà.⟧ —— 一年到头都很热嘛。
+⟦cả⟧ 意为“全部”，用在集合名词、表示时间的名词或数词前面。
+⟦cả gia đình⟧ —— 全家
+⟦Tôi ở nhà cả ngày.⟧ —— 我在家待了一整天。
+A：⟦Em thích ăn cơm hay mì?⟧ —— 你喜欢吃米饭还是面？
+B：⟦Em thích cả hai.⟧ —— 两个我都喜欢。
+单词：⟦mì⟧ 面
+=zh
+⟦Cả năm đều nóng mà.⟧ —— 一年到頭都很熱嘛。
+⟦cả⟧ 意為「全部」，用在集合名詞、表示時間的名詞或數詞前面。
+⟦cả gia đình⟧ —— 全家
+⟦Tôi ở nhà cả ngày.⟧ —— 我在家待了一整天。
+A：⟦Em thích ăn cơm hay mì?⟧ —— 你喜歡吃飯還是麵？
+B：⟦Em thích cả hai.⟧ —— 兩個我都喜歡。
+單字：⟦mì⟧ 麵
+=en
+⟦Cả năm đều nóng mà.⟧ — It's hot all year round, you know.
+⟦cả⟧ means "all, the whole" and is used before collective nouns, nouns of time, or numbers.
+⟦cả gia đình⟧ — the whole family
+⟦Tôi ở nhà cả ngày.⟧ — I stayed at home all day.
+A: ⟦Em thích ăn cơm hay mì?⟧ — Do you like rice or noodles?
+B: ⟦Em thích cả hai.⟧ — I like both.
+Word: ⟦mì⟧ noodles
+=fr
+⟦Cả năm đều nóng mà.⟧ — Il fait chaud toute l'année, voyons.
+⟦cả⟧ signifie « tout, entier » et se place devant les noms collectifs, les noms de temps ou les nombres.
+⟦cả gia đình⟧ — toute la famille
+⟦Tôi ở nhà cả ngày.⟧ — Je suis resté à la maison toute la journée.
+A : ⟦Em thích ăn cơm hay mì?⟧ — Tu préfères le riz ou les nouilles ?
+B : ⟦Em thích cả hai.⟧ — J'aime les deux.
+Mot : ⟦mì⟧ nouilles
+=de
+⟦Cả năm đều nóng mà.⟧ — Es ist doch das ganze Jahr heiß.
+⟦cả⟧ bedeutet „ganz, alle“ und steht vor Sammelbegriffen, Zeitangaben oder Zahlen.
+⟦cả gia đình⟧ — die ganze Familie
+⟦Tôi ở nhà cả ngày.⟧ — Ich war den ganzen Tag zu Hause.
+A: ⟦Em thích ăn cơm hay mì?⟧ — Isst du lieber Reis oder Nudeln?
+B: ⟦Em thích cả hai.⟧ — Ich mag beides.
+Wort: ⟦mì⟧ Nudeln
+=hu
+⟦Cả năm đều nóng mà.⟧ — Hiszen egész évben meleg van.
+A ⟦cả⟧ jelentése „egész, mind”, gyűjtőnevek, időt jelölő főnevek vagy számok előtt áll.
+⟦cả gia đình⟧ — az egész család
+⟦Tôi ở nhà cả ngày.⟧ — Egész nap otthon voltam.
+A: ⟦Em thích ăn cơm hay mì?⟧ — A rizst vagy a tésztát szereted?
+B: ⟦Em thích cả hai.⟧ — Mindkettőt szeretem.
+Szó: ⟦mì⟧ tészta
+=id
+⟦Cả năm đều nóng mà.⟧ — Sepanjang tahun panas, kok.
+⟦cả⟧ berarti "seluruh, semua" dan dipakai sebelum kata benda kolektif, kata benda waktu, atau bilangan.
+⟦cả gia đình⟧ — seluruh keluarga
+⟦Tôi ở nhà cả ngày.⟧ — Saya di rumah seharian.
+A: ⟦Em thích ăn cơm hay mì?⟧ — Kamu suka makan nasi atau mi?
+B: ⟦Em thích cả hai.⟧ — Saya suka keduanya.
+Kosakata: ⟦mì⟧ mi
+=ja
+⟦Cả năm đều nóng mà.⟧ — 一年中暑いんですよ。
+⟦cả⟧ は「全部」を意味し、集合名詞、時間を表す名詞や数の前に使います。
+⟦cả gia đình⟧ — 家族全員
+⟦Tôi ở nhà cả ngày.⟧ — 私は一日中家にいた。
+A：⟦Em thích ăn cơm hay mì?⟧ — ご飯と麺、どっちが好き？
+B：⟦Em thích cả hai.⟧ — 両方好きです。
+単語：⟦mì⟧ 麺
+=pl
+⟦Cả năm đều nóng mà.⟧ — Przecież przez cały rok jest gorąco.
+⟦cả⟧ znaczy „cały, wszyscy” i stoi przed rzeczownikami zbiorowymi, rzeczownikami oznaczającymi czas lub liczebnikami.
+⟦cả gia đình⟧ — cała rodzina
+⟦Tôi ở nhà cả ngày.⟧ — Cały dzień byłem w domu.
+A: ⟦Em thích ăn cơm hay mì?⟧ — Wolisz ryż czy makaron?
+B: ⟦Em thích cả hai.⟧ — Lubię jedno i drugie.
+Słówko: ⟦mì⟧ makaron
+@@ pdf-grammar-db59e50e7290baf1#1
+=cs
+⟦TP. Hồ Chí Minh chỉ có 2 mùa là mùa mưa và mùa khô thôi.⟧ — Ho Či Minovo Město má jen dvě období: období dešťů a období sucha.
+⟦chỉ ~ thôi⟧ znamená „jen, pouze ~ / nic než ~“; ⟦chỉ⟧ a ⟦thôi⟧ lze použít společně nebo jen jedno z nich.
+⟦Tối qua, tôi chỉ ngủ 3 tiếng thôi.⟧ — Včera večer jsem spal jen 3 hodiny.
+⟦Từ nhà mình đến đó chỉ mất 5 phút thôi.⟧ — Od nás je to tam jen 5 minut.
+⟦Anh ấy có một con trai thôi.⟧ — Má jen jednoho syna.
+⟦Đây là việc của mình thôi.⟧ — To je jen moje věc.
+Slovíčka: ⟦tối qua⟧ včera večer | ⟦tiếng⟧ hodina; zvuk | ⟦mất⟧ trvat; ztratit | ⟦con trai⟧ syn
+=zh_cn
+⟦TP. Hồ Chí Minh chỉ có 2 mùa là mùa mưa và mùa khô thôi.⟧ —— 胡志明市只有雨季和旱季两个季节。
+⟦chỉ ~ thôi⟧ 意为“只……而已 / 只有…… / 仅仅……”，⟦chỉ⟧ 和 ⟦thôi⟧ 可以一起用，也可以只用其中一个。
+⟦Tối qua, tôi chỉ ngủ 3 tiếng thôi.⟧ —— 昨晚我只睡了3个小时。
+⟦Từ nhà mình đến đó chỉ mất 5 phút thôi.⟧ —— 从我家到那里只要5分钟。
+⟦Anh ấy có một con trai thôi.⟧ —— 他只有一个儿子。
+⟦Đây là việc của mình thôi.⟧ —— 这只是我自己的事。
+单词：⟦tối qua⟧ 昨晚 | ⟦tiếng⟧ 小时；声音 | ⟦mất⟧ 花费（时间）；丢失 | ⟦con trai⟧ 儿子
+=zh
+⟦TP. Hồ Chí Minh chỉ có 2 mùa là mùa mưa và mùa khô thôi.⟧ —— 胡志明市只有雨季和旱季兩個季節。
+⟦chỉ ~ thôi⟧ 意為「只……而已 / 只有…… / 僅僅……」，⟦chỉ⟧ 和 ⟦thôi⟧ 可以一起用，也可以只用其中一個。
+⟦Tối qua, tôi chỉ ngủ 3 tiếng thôi.⟧ —— 昨晚我只睡了3個小時。
+⟦Từ nhà mình đến đó chỉ mất 5 phút thôi.⟧ —— 從我家到那裡只要5分鐘。
+⟦Anh ấy có một con trai thôi.⟧ —— 他只有一個兒子。
+⟦Đây là việc của mình thôi.⟧ —— 這只是我自己的事。
+單字：⟦tối qua⟧ 昨晚 | ⟦tiếng⟧ 小時；聲音 | ⟦mất⟧ 花費（時間）；遺失 | ⟦con trai⟧ 兒子
+=en
+⟦TP. Hồ Chí Minh chỉ có 2 mùa là mùa mưa và mùa khô thôi.⟧ — Ho Chi Minh City has only two seasons: the rainy season and the dry season.
+⟦chỉ ~ thôi⟧ means "only, just ~ / nothing but ~"; ⟦chỉ⟧ and ⟦thôi⟧ can be used together or just one of them.
+⟦Tối qua, tôi chỉ ngủ 3 tiếng thôi.⟧ — Last night I slept only 3 hours.
+⟦Từ nhà mình đến đó chỉ mất 5 phút thôi.⟧ — It takes only 5 minutes from my house to there.
+⟦Anh ấy có một con trai thôi.⟧ — He has only one son.
+⟦Đây là việc của mình thôi.⟧ — This is just my own business.
+Words: ⟦tối qua⟧ last night | ⟦tiếng⟧ hour; sound | ⟦mất⟧ to take (time); to lose | ⟦con trai⟧ son
+=fr
+⟦TP. Hồ Chí Minh chỉ có 2 mùa là mùa mưa và mùa khô thôi.⟧ — Hô Chi Minh-Ville n'a que deux saisons : la saison des pluies et la saison sèche.
+⟦chỉ ~ thôi⟧ signifie « seulement, ne … que ~ » ; on peut employer ⟦chỉ⟧ et ⟦thôi⟧ ensemble ou un seul des deux.
+⟦Tối qua, tôi chỉ ngủ 3 tiếng thôi.⟧ — Hier soir, je n'ai dormi que 3 heures.
+⟦Từ nhà mình đến đó chỉ mất 5 phút thôi.⟧ — De chez moi à là-bas, il ne faut que 5 minutes.
+⟦Anh ấy có một con trai thôi.⟧ — Il n'a qu'un fils.
+⟦Đây là việc của mình thôi.⟧ — Ce n'est que mon affaire.
+Mots : ⟦tối qua⟧ hier soir | ⟦tiếng⟧ heure ; son | ⟦mất⟧ prendre (du temps) ; perdre | ⟦con trai⟧ fils
+=de
+⟦TP. Hồ Chí Minh chỉ có 2 mùa là mùa mưa và mùa khô thôi.⟧ — Ho-Chi-Minh-Stadt hat nur zwei Jahreszeiten: Regenzeit und Trockenzeit.
+⟦chỉ ~ thôi⟧ bedeutet „nur, bloß ~ / nichts als ~“; ⟦chỉ⟧ und ⟦thôi⟧ können zusammen oder einzeln verwendet werden.
+⟦Tối qua, tôi chỉ ngủ 3 tiếng thôi.⟧ — Gestern Abend habe ich nur 3 Stunden geschlafen.
+⟦Từ nhà mình đến đó chỉ mất 5 phút thôi.⟧ — Von mir zu Hause dorthin sind es nur 5 Minuten.
+⟦Anh ấy có một con trai thôi.⟧ — Er hat nur einen Sohn.
+⟦Đây là việc của mình thôi.⟧ — Das ist nur meine Angelegenheit.
+Wörter: ⟦tối qua⟧ gestern Abend | ⟦tiếng⟧ Stunde; Laut | ⟦mất⟧ dauern; verlieren | ⟦con trai⟧ Sohn
+=hu
+⟦TP. Hồ Chí Minh chỉ có 2 mùa là mùa mưa và mùa khô thôi.⟧ — Ho Si Minh-városban csak két évszak van: az esős és a száraz évszak.
+A ⟦chỉ ~ thôi⟧ jelentése „csak, mindössze ~”; a ⟦chỉ⟧ és a ⟦thôi⟧ együtt vagy külön-külön is használható.
+⟦Tối qua, tôi chỉ ngủ 3 tiếng thôi.⟧ — Tegnap este csak 3 órát aludtam.
+⟦Từ nhà mình đến đó chỉ mất 5 phút thôi.⟧ — Tőlünk odáig csak 5 perc.
+⟦Anh ấy có một con trai thôi.⟧ — Csak egy fia van.
+⟦Đây là việc của mình thôi.⟧ — Ez csak az én dolgom.
+Szavak: ⟦tối qua⟧ tegnap este | ⟦tiếng⟧ óra; hang | ⟦mất⟧ tart (időben); elveszíteni | ⟦con trai⟧ fiú (gyermek)
+=id
+⟦TP. Hồ Chí Minh chỉ có 2 mùa là mùa mưa và mùa khô thôi.⟧ — Kota Ho Chi Minh hanya punya dua musim: musim hujan dan musim kemarau.
+⟦chỉ ~ thôi⟧ berarti "hanya ~ saja"; ⟦chỉ⟧ dan ⟦thôi⟧ bisa dipakai bersama atau salah satunya saja.
+⟦Tối qua, tôi chỉ ngủ 3 tiếng thôi.⟧ — Tadi malam saya hanya tidur 3 jam.
+⟦Từ nhà mình đến đó chỉ mất 5 phút thôi.⟧ — Dari rumahku ke sana hanya 5 menit.
+⟦Anh ấy có một con trai thôi.⟧ — Dia hanya punya satu anak laki-laki.
+⟦Đây là việc của mình thôi.⟧ — Ini hanya urusanku.
+Kosakata: ⟦tối qua⟧ tadi malam | ⟦tiếng⟧ jam; suara | ⟦mất⟧ memakan (waktu); kehilangan | ⟦con trai⟧ anak laki-laki
+=ja
+⟦TP. Hồ Chí Minh chỉ có 2 mùa là mùa mưa và mùa khô thôi.⟧ — ホーチミン市には雨季と乾季の二つの季節しかありません。
+⟦chỉ ~ thôi⟧ は「たった・ただ～だけだ／～しかない」という意味で、chỉ と thôi を一緒に使うことも、どちらか一方だけを使うこともできます。
+⟦Tối qua, tôi chỉ ngủ 3 tiếng thôi.⟧ — 昨夜は3時間しか寝られなかった。
+⟦Từ nhà mình đến đó chỉ mất 5 phút thôi.⟧ — 私の家からそこまでたった5分しかかからない。
+⟦Anh ấy có một con trai thôi.⟧ — 彼には息子が一人いるだけだ。
+⟦Đây là việc của mình thôi.⟧ — これは私の問題にすぎない。
+単語：⟦tối qua⟧ 昨夜 | ⟦tiếng⟧ 時間、音 | ⟦mất⟧ かかる、失う | ⟦con trai⟧ 息子
+=pl
+⟦TP. Hồ Chí Minh chỉ có 2 mùa là mùa mưa và mùa khô thôi.⟧ — Ho Chi Minh ma tylko dwie pory roku: porę deszczową i porę suchą.
+⟦chỉ ~ thôi⟧ znaczy „tylko, jedynie ~”; ⟦chỉ⟧ i ⟦thôi⟧ można użyć razem lub tylko jednego z nich.
+⟦Tối qua, tôi chỉ ngủ 3 tiếng thôi.⟧ — Wczoraj wieczorem spałem tylko 3 godziny.
+⟦Từ nhà mình đến đó chỉ mất 5 phút thôi.⟧ — Z mojego domu tam jest tylko 5 minut.
+⟦Anh ấy có một con trai thôi.⟧ — On ma tylko jednego syna.
+⟦Đây là việc của mình thôi.⟧ — To tylko moja sprawa.
+Słówka: ⟦tối qua⟧ wczoraj wieczorem | ⟦tiếng⟧ godzina; dźwięk | ⟦mất⟧ zajmować (czas); stracić | ⟦con trai⟧ syn
+@@ pdf-grammar-1d055401327d6261#0
+~t 1. Ptát se na zdravotní stav|1. 询问状态|1. 詢問狀態|1. Asking about someone's condition|1. Demander comment va quelqu'un|1. Nach dem Befinden fragen|1. Az állapot kérdezése|1. Menanyakan keadaan|1. 状態を尋ねる表現|1. Pytanie o stan zdrowia
+=cs
+⟦Anh bị làm sao thế?⟧ — Co ti je?
+S ⟦bị⟧, které se používá o nepříjemné situaci či stavu druhé osoby, a ⟦sao⟧ (proč, jak) lze tvořit otázky jako „osoba + bị (làm) sao thế/vậy?“ (co ti je?).
+Na zdravotní stav se lze zeptat i tvarem „osoba + bị đau ở đâu?“ (Kde tě to bolí?) nebo „osoba + thấy trong người thế nào?“ (Jak se cítíš?).
+A: ⟦Em bị sao thế/vậy?⟧ — Co je ti?
+= ⟦Em bị đau ở đâu?⟧ — Kde tě to bolí?
+= ⟦Em thấy trong người thế nào?⟧ — Jak se cítíš?
+B: ⟦Em bị cảm.⟧ — Jsem nachlazený.
+Slovíčko: ⟦người⟧ člověk; tělo
+=zh_cn
+⟦Anh bị làm sao thế?⟧ —— 你哪里不舒服？
+利用用于对方处于不好情况或状态的 ⟦bị⟧ 和意为“为什么、怎么”的 ⟦sao⟧，可以说“对象 + bị (làm) sao thế/vậy?”（怎么了？）。
+也可以用“对象 + bị đau ở đâu?”（哪里疼？）或“对象 + thấy trong người thế nào?”（身体感觉怎么样？）来询问对方的身体状况。
+A：⟦Em bị sao thế/vậy?⟧ —— 你怎么了？
+= ⟦Em bị đau ở đâu?⟧ —— 你哪里疼？
+= ⟦Em thấy trong người thế nào?⟧ —— 你觉得身体怎么样？
+B：⟦Em bị cảm.⟧ —— 我感冒了。
+单词：⟦người⟧ 人，身体
+=zh
+⟦Anh bị làm sao thế?⟧ —— 你哪裡不舒服？
+利用用於對方處於不好情況或狀態的 ⟦bị⟧ 和意為「為什麼、怎麼」的 ⟦sao⟧，可以說「對象 + bị (làm) sao thế/vậy?」（怎麼了？）。
+也可以用「對象 + bị đau ở đâu?」（哪裡痛？）或「對象 + thấy trong người thế nào?」（身體感覺怎麼樣？）來詢問對方的身體狀況。
+A：⟦Em bị sao thế/vậy?⟧ —— 你怎麼了？
+= ⟦Em bị đau ở đâu?⟧ —— 你哪裡痛？
+= ⟦Em thấy trong người thế nào?⟧ —— 你覺得身體怎麼樣？
+B：⟦Em bị cảm.⟧ —— 我感冒了。
+單字：⟦người⟧ 人，身體
+=en
+⟦Anh bị làm sao thế?⟧ — What's wrong with you?
+Using ⟦bị⟧ (for a bad situation or condition someone is in) and ⟦sao⟧ (why, how), you can ask "person + bị (làm) sao thế/vậy?" (what's wrong?).
+You can also ask about someone's physical condition with "person + bị đau ở đâu?" (Where does it hurt?) or "person + thấy trong người thế nào?" (How do you feel?).
+A: ⟦Em bị sao thế/vậy?⟧ — What's wrong?
+= ⟦Em bị đau ở đâu?⟧ — Where does it hurt?
+= ⟦Em thấy trong người thế nào?⟧ — How do you feel?
+B: ⟦Em bị cảm.⟧ — I have a cold.
+Word: ⟦người⟧ person; body
+=fr
+⟦Anh bị làm sao thế?⟧ — Qu'est-ce qui ne va pas ?
+Avec ⟦bị⟧ (qui indique une situation ou un état désagréable) et ⟦sao⟧ (pourquoi, comment), on peut dire « personne + bị (làm) sao thế/vậy? » (qu'est-ce qui ne va pas ?).
+On peut aussi demander l'état de santé avec « personne + bị đau ở đâu? » (Où as-tu mal ?) ou « personne + thấy trong người thế nào? » (Comment te sens-tu ?).
+A : ⟦Em bị sao thế/vậy?⟧ — Qu'est-ce que tu as ?
+= ⟦Em bị đau ở đâu?⟧ — Où as-tu mal ?
+= ⟦Em thấy trong người thế nào?⟧ — Comment te sens-tu ?
+B : ⟦Em bị cảm.⟧ — J'ai un rhume.
+Mot : ⟦người⟧ personne ; corps
+=de
+⟦Anh bị làm sao thế?⟧ — Was fehlt dir?
+Mit ⟦bị⟧ (für eine unangenehme Lage oder einen schlechten Zustand) und ⟦sao⟧ (warum, wie) kann man fragen: „Person + bị (làm) sao thế/vậy?“ (was ist los?).
+Nach dem körperlichen Befinden fragt man auch mit „Person + bị đau ở đâu?“ (Wo tut es weh?) oder „Person + thấy trong người thế nào?“ (Wie fühlst du dich?).
+A: ⟦Em bị sao thế/vậy?⟧ — Was hast du?
+= ⟦Em bị đau ở đâu?⟧ — Wo tut es weh?
+= ⟦Em thấy trong người thế nào?⟧ — Wie fühlst du dich?
+B: ⟦Em bị cảm.⟧ — Ich bin erkältet.
+Wort: ⟦người⟧ Mensch; Körper
+=hu
+⟦Anh bị làm sao thế?⟧ — Mi a baj?
+A kellemetlen helyzetre, állapotra utaló ⟦bị⟧ és a „miért, hogyan” jelentésű ⟦sao⟧ segítségével így kérdezhetünk: „személy + bị (làm) sao thế/vậy?” (mi a baj?).
+A testi állapotról „személy + bị đau ở đâu?” (Hol fáj?) vagy „személy + thấy trong người thế nào?” (Hogy érzed magad?) formában is kérdezhetünk.
+A: ⟦Em bị sao thế/vậy?⟧ — Mi a baj?
+= ⟦Em bị đau ở đâu?⟧ — Hol fáj?
+= ⟦Em thấy trong người thế nào?⟧ — Hogy érzed magad?
+B: ⟦Em bị cảm.⟧ — Megfáztam.
+Szó: ⟦người⟧ ember; test
+=id
+⟦Anh bị làm sao thế?⟧ — Kakak kenapa?
+Dengan ⟦bị⟧ (untuk keadaan atau situasi yang tidak baik) dan ⟦sao⟧ (mengapa, bagaimana), bisa ditanyakan "orang + bị (làm) sao thế/vậy?" (kenapa?).
+Keadaan tubuh juga bisa ditanyakan dengan "orang + bị đau ở đâu?" (Sakit di mana?) atau "orang + thấy trong người thế nào?" (Bagaimana rasanya badanmu?).
+A: ⟦Em bị sao thế/vậy?⟧ — Kamu kenapa?
+= ⟦Em bị đau ở đâu?⟧ — Sakit di mana?
+= ⟦Em thấy trong người thế nào?⟧ — Bagaimana rasanya badanmu?
+B: ⟦Em bị cảm.⟧ — Saya masuk angin (flu).
+Kosakata: ⟦người⟧ orang; badan
+=ja
+⟦Anh bị làm sao thế?⟧ — お兄さん、どこが悪いの？
+相手がよくない状況・状態にあることに使う ⟦bị⟧ と「なぜ、どう」の意味の ⟦sao⟧ を使って、「対象 ＋ bị (làm) sao thế/vậy?」などと言えます。
+「対象 ＋ bị đau ở đâu?」（どこが痛いですか）や「対象 ＋ thấy trong người thế nào?」（体の具合はどうですか）の形で相手の体調を尋ねることもできます。
+A：⟦Em bị sao thế/vậy?⟧ — どこか具合が悪いの？
+= ⟦Em bị đau ở đâu?⟧ — どこが痛いの？
+= ⟦Em thấy trong người thế nào?⟧ — 体の具合はどう？
+B：⟦Em bị cảm.⟧ — 風邪をひきました。
+単語：⟦người⟧ 人、体
+=pl
+⟦Anh bị làm sao thế?⟧ — Co ci jest?
+Używając ⟦bị⟧ (o nieprzyjemnej sytuacji lub stanie) i ⟦sao⟧ (dlaczego, jak), można zapytać „osoba + bị (làm) sao thế/vậy?” (co się stało?).
+O stan zdrowia można też zapytać formą „osoba + bị đau ở đâu?” (Gdzie boli?) lub „osoba + thấy trong người thế nào?” (Jak się czujesz?).
+A: ⟦Em bị sao thế/vậy?⟧ — Co ci jest?
+= ⟦Em bị đau ở đâu?⟧ — Gdzie cię boli?
+= ⟦Em thấy trong người thế nào?⟧ — Jak się czujesz?
+B: ⟦Em bị cảm.⟧ — Jestem przeziębiony.
+Słówko: ⟦người⟧ człowiek; ciało
+@@ pdf-grammar-1d055401327d6261#1
+~t 2. Rozsah: až do|2. 范围的表达|2. 範圍的表達|2. Expressing extent: up to|2. Exprimer l'étendue : jusqu'à|2. Umfang ausdrücken: bis zu|2. Mérték kifejezése: egészen … -ig|2. Ungkapan cakupan: sampai|2. 範囲の表現|2. Zakres: aż do
+=cs
+⟦Anh bị đau họng từ tối qua và bây giờ bị sốt đến 39°C.⟧ — Od včerejšího večera mě bolí v krku a teď mám horečku až 39 °C.
+⟦đến⟧ vyjadřuje rozsah „až do, až“ a používá se i důrazně ve významu „dokonce až“.
+⟦Nhiệt độ hôm nay lên đến 40°C.⟧ — Teplota dnes vystoupala až na 40 °C.
+⟦Có đến 500 người đến xem.⟧ — Přišlo se podívat dokonce 500 lidí.
+Slovíčka: ⟦nhiệt độ⟧ teplota | ⟦lên⟧ stoupat
+=zh_cn
+⟦Anh bị đau họng từ tối qua và bây giờ bị sốt đến 39°C.⟧ —— 我从昨晚开始喉咙痛，现在发烧到39度。
+⟦đến⟧ 也表示“到……、达……”的范围，还可以用作强调，意为“甚至达到……”。
+⟦Nhiệt độ hôm nay lên đến 40°C.⟧ —— 今天气温升到了40度。
+⟦Có đến 500 người đến xem.⟧ —— 足有500人来观看。
+单词：⟦nhiệt độ⟧ 温度 | ⟦lên⟧ 上升
+=zh
+⟦Anh bị đau họng từ tối qua và bây giờ bị sốt đến 39°C.⟧ —— 我從昨晚開始喉嚨痛，現在發燒到39度。
+⟦đến⟧ 也表示「到……、達……」的範圍，還可以用作強調，意為「甚至達到……」。
+⟦Nhiệt độ hôm nay lên đến 40°C.⟧ —— 今天氣溫升到了40度。
+⟦Có đến 500 người đến xem.⟧ —— 足有500人來觀看。
+單字：⟦nhiệt độ⟧ 溫度 | ⟦lên⟧ 上升
+=en
+⟦Anh bị đau họng từ tối qua và bây giờ bị sốt đến 39°C.⟧ — I've had a sore throat since last night, and now my fever is up to 39°C.
+⟦đến⟧ expresses extent, "up to, as much as", and is also used for emphasis, meaning "even reaching".
+⟦Nhiệt độ hôm nay lên đến 40°C.⟧ — Today the temperature rose to 40°C.
+⟦Có đến 500 người đến xem.⟧ — As many as 500 people came to watch.
+Words: ⟦nhiệt độ⟧ temperature | ⟦lên⟧ to rise
+=fr
+⟦Anh bị đau họng từ tối qua và bây giờ bị sốt đến 39°C.⟧ — J'ai mal à la gorge depuis hier soir, et maintenant j'ai jusqu'à 39 °C de fièvre.
+⟦đến⟧ exprime l'étendue, « jusqu'à », et s'emploie aussi pour insister au sens de « atteindre même ».
+⟦Nhiệt độ hôm nay lên đến 40°C.⟧ — Aujourd'hui, la température est montée jusqu'à 40 °C.
+⟦Có đến 500 người đến xem.⟧ — Pas moins de 500 personnes sont venues voir.
+Mots : ⟦nhiệt độ⟧ température | ⟦lên⟧ monter
+=de
+⟦Anh bị đau họng từ tối qua và bây giờ bị sốt đến 39°C.⟧ — Seit gestern Abend habe ich Halsschmerzen, und jetzt habe ich Fieber bis 39 °C.
+⟦đến⟧ drückt einen Umfang aus („bis zu“) und dient auch zur Betonung im Sinne von „sogar bis“.
+⟦Nhiệt độ hôm nay lên đến 40°C.⟧ — Die Temperatur stieg heute auf bis zu 40 °C.
+⟦Có đến 500 người đến xem.⟧ — Ganze 500 Leute kamen zum Zuschauen.
+Wörter: ⟦nhiệt độ⟧ Temperatur | ⟦lên⟧ steigen
+=hu
+⟦Anh bị đau họng từ tối qua và bây giờ bị sốt đến 39°C.⟧ — Tegnap este óta fáj a torkom, és most már 39 fokos lázam van.
+A ⟦đến⟧ mértéket fejez ki („egészen …-ig”), és nyomatékosításra is használják „egyenesen …” jelentésben.
+⟦Nhiệt độ hôm nay lên đến 40°C.⟧ — Ma a hőmérséklet egészen 40 fokig emelkedett.
+⟦Có đến 500 người đến xem.⟧ — Egyenesen 500 ember jött el megnézni.
+Szavak: ⟦nhiệt độ⟧ hőmérséklet | ⟦lên⟧ emelkedni
+=id
+⟦Anh bị đau họng từ tối qua và bây giờ bị sốt đến 39°C.⟧ — Sejak tadi malam tenggorokan Kakak sakit, dan sekarang demam sampai 39°C.
+⟦đến⟧ juga menyatakan cakupan "sampai", dan dipakai sebagai penegas yang berarti "bahkan sampai".
+⟦Nhiệt độ hôm nay lên đến 40°C.⟧ — Suhu hari ini naik sampai 40°C.
+⟦Có đến 500 người đến xem.⟧ — Sebanyak 500 orang datang menonton.
+Kosakata: ⟦nhiệt độ⟧ suhu | ⟦lên⟧ naik
+=ja
+⟦Anh bị đau họng từ tối qua và bây giờ bị sốt đến 39°C.⟧ — 昨夜から喉が痛くて、今は熱が39度まで上がった。
+⟦đến⟧ は「～まで／～も」という範囲の意味でも使われ、「なんと～まで／～に至る」という強調表現としても使われます。
+⟦Nhiệt độ hôm nay lên đến 40°C.⟧ — 今日は気温が40度まで上がった。
+⟦Có đến 500 người đến xem.⟧ — 500人もの人が見に来た。
+単語：⟦nhiệt độ⟧ 温度 | ⟦lên⟧ 上がる
+=pl
+⟦Anh bị đau họng từ tối qua và bây giờ bị sốt đến 39°C.⟧ — Od wczoraj wieczorem boli mnie gardło, a teraz mam gorączkę aż 39°C.
+⟦đến⟧ wyraża zakres („aż do”) i bywa też używane dla podkreślenia w znaczeniu „aż, nawet”.
+⟦Nhiệt độ hôm nay lên đến 40°C.⟧ — Temperatura wzrosła dziś aż do 40°C.
+⟦Có đến 500 người đến xem.⟧ — Przyszło aż 500 osób, żeby popatrzeć.
+Słówka: ⟦nhiệt độ⟧ temperatura | ⟦lên⟧ wzrastać
+@@ pdf-grammar-74141ab034b1b0a0#0
+~t 3. uống thuốc — brát léky|3. uống thuốc — 吃药|3. uống thuốc — 吃藥|3. uống thuốc — to take medicine|3. uống thuốc — prendre un médicament|3. uống thuốc — Medizin einnehmen|3. uống thuốc — gyógyszert bevenni|3. uống thuốc — minum obat|3. uống thuốc — 薬を飲む|3. uống thuốc — brać lekarstwo
+=cs
+⟦Anh chỉ uống thuốc thôi.⟧ — Jen jsem si vzal lék.
+Pro „brát lék“ se ve vietnamštině obvykle nepoužívá ⟦ăn⟧ (jíst), ale ⟦uống⟧ (pít). Používá se i ⟦dùng⟧ (užívat).
+A: ⟦Bạn đã uống thuốc chưa?⟧ — Už sis vzal lék?
+B: ⟦Rồi. Mình đã uống rồi.⟧ — Jo. Už jsem ho vzal.
+⟦Trong khi dùng thuốc xin đừng uống rượu.⟧ — Během užívání léku prosím nepijte alkohol.
+Slovíčko: ⟦rượu⟧ alkohol
+=zh_cn
+⟦Anh chỉ uống thuốc thôi.⟧ —— 我只吃了药。
+越南语“吃药”通常不用 ⟦ăn⟧（吃），而用 ⟦uống⟧（喝）。也用 ⟦dùng⟧（服用、使用）。
+A：⟦Bạn đã uống thuốc chưa?⟧ —— 你吃药了吗？
+B：⟦Rồi. Mình đã uống rồi.⟧ —— 嗯，我已经吃了。
+⟦Trong khi dùng thuốc xin đừng uống rượu.⟧ —— 服药期间请勿饮酒。
+单词：⟦rượu⟧ 酒
+=zh
+⟦Anh chỉ uống thuốc thôi.⟧ —— 我只吃了藥。
+越南語「吃藥」通常不用 ⟦ăn⟧（吃），而用 ⟦uống⟧（喝）。也用 ⟦dùng⟧（服用、使用）。
+A：⟦Bạn đã uống thuốc chưa?⟧ —— 你吃藥了嗎？
+B：⟦Rồi. Mình đã uống rồi.⟧ —— 嗯，我已經吃了。
+⟦Trong khi dùng thuốc xin đừng uống rượu.⟧ —— 服藥期間請勿飲酒。
+單字：⟦rượu⟧ 酒
+=en
+⟦Anh chỉ uống thuốc thôi.⟧ — I just took some medicine.
+For "taking medicine", Vietnamese usually uses ⟦uống⟧ (to drink) rather than ⟦ăn⟧ (to eat). ⟦dùng⟧ (to use, to take) is also used.
+A: ⟦Bạn đã uống thuốc chưa?⟧ — Have you taken your medicine?
+B: ⟦Rồi. Mình đã uống rồi.⟧ — Yes. I've already taken it.
+⟦Trong khi dùng thuốc xin đừng uống rượu.⟧ — Please don't drink alcohol while taking this medicine.
+Word: ⟦rượu⟧ alcohol, liquor
+=fr
+⟦Anh chỉ uống thuốc thôi.⟧ — J'ai juste pris des médicaments.
+Pour « prendre un médicament », le vietnamien utilise généralement ⟦uống⟧ (boire) plutôt que ⟦ăn⟧ (manger). On emploie aussi ⟦dùng⟧ (utiliser, prendre).
+A : ⟦Bạn đã uống thuốc chưa?⟧ — Tu as pris ton médicament ?
+B : ⟦Rồi. Mình đã uống rồi.⟧ — Oui. Je l'ai déjà pris.
+⟦Trong khi dùng thuốc xin đừng uống rượu.⟧ — Pendant le traitement, ne buvez pas d'alcool.
+Mot : ⟦rượu⟧ alcool
+=de
+⟦Anh chỉ uống thuốc thôi.⟧ — Ich habe nur Medizin genommen.
+Für „Medizin einnehmen“ sagt man im Vietnamesischen meist nicht ⟦ăn⟧ (essen), sondern ⟦uống⟧ (trinken). Auch ⟦dùng⟧ (verwenden, einnehmen) ist üblich.
+A: ⟦Bạn đã uống thuốc chưa?⟧ — Hast du deine Medizin schon genommen?
+B: ⟦Rồi. Mình đã uống rồi.⟧ — Ja. Schon genommen.
+⟦Trong khi dùng thuốc xin đừng uống rượu.⟧ — Bitte trinken Sie während der Einnahme keinen Alkohol.
+Wort: ⟦rượu⟧ Alkohol
+=hu
+⟦Anh chỉ uống thuốc thôi.⟧ — Csak bevettem a gyógyszert.
+A „gyógyszert bevenni” kifejezésre a vietnámi általában nem az ⟦ăn⟧ (enni), hanem az ⟦uống⟧ (inni) igét használja. A ⟦dùng⟧ (használni, bevenni) is előfordul.
+A: ⟦Bạn đã uống thuốc chưa?⟧ — Bevetted már a gyógyszert?
+B: ⟦Rồi. Mình đã uống rồi.⟧ — Igen. Már bevettem.
+⟦Trong khi dùng thuốc xin đừng uống rượu.⟧ — A gyógyszer szedése alatt ne fogyasszon alkoholt.
+Szó: ⟦rượu⟧ alkohol, szeszes ital
+=id
+⟦Anh chỉ uống thuốc thôi.⟧ — Kakak cuma minum obat saja.
+Untuk "minum obat", bahasa Vietnam biasanya memakai ⟦uống⟧ (minum), bukan ⟦ăn⟧ (makan). Kadang juga dipakai ⟦dùng⟧ (memakai, mengonsumsi).
+A: ⟦Bạn đã uống thuốc chưa?⟧ — Kamu sudah minum obat?
+B: ⟦Rồi. Mình đã uống rồi.⟧ — Sudah. Aku sudah minum.
+⟦Trong khi dùng thuốc xin đừng uống rượu.⟧ — Selama minum obat, mohon jangan minum alkohol.
+Kosakata: ⟦rượu⟧ minuman keras
+=ja
+⟦Anh chỉ uống thuốc thôi.⟧ — 薬を飲んだだけだよ。
+「薬を飲む」は ⟦ăn⟧（食べる）ではなく、主に ⟦uống⟧（飲む）を使います。⟦dùng⟧（召し上がる、使う）を使うこともあります。
+A：⟦Bạn đã uống thuốc chưa?⟧ — 薬飲んだ？
+B：⟦Rồi. Mình đã uống rồi.⟧ — うん。もう飲んだよ。
+⟦Trong khi dùng thuốc xin đừng uống rượu.⟧ — 薬を服用中はお酒を飲まないでください。
+単語：⟦rượu⟧ 酒
+=pl
+⟦Anh chỉ uống thuốc thôi.⟧ — Po prostu wziąłem lekarstwo.
+Na „brać lekarstwo” po wietnamsku zwykle mówi się nie ⟦ăn⟧ (jeść), lecz ⟦uống⟧ (pić). Używa się też ⟦dùng⟧ (używać, zażywać).
+A: ⟦Bạn đã uống thuốc chưa?⟧ — Wziąłeś już lekarstwo?
+B: ⟦Rồi. Mình đã uống rồi.⟧ — Tak. Już wziąłem.
+⟦Trong khi dùng thuốc xin đừng uống rượu.⟧ — Podczas przyjmowania leku prosimy nie pić alkoholu.
+Słówko: ⟦rượu⟧ alkohol

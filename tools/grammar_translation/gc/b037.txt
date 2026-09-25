@@ -1,0 +1,191 @@
+@@ pdf-grammar-c6f905af660b27a0#0
+=cs
+Klíčový výraz: ⟦hay là⟧
+⟦hay là A⟧ znamená „nebo co kdybychom A?, a co takhle A?“.
+❶ ⟦Hay là nhờ anh ấy giúp đỡ?⟧ — Nebo co kdybychom ho požádali o pomoc?
+❷ Ⓐ ⟦Em vừa đi làm về nên chưa nấu cơm.⟧ — Právě jsem se vrátila z práce, takže jsem ještě nevařila. Ⓑ ⟦Hay là chúng mình ra ngoài ăn tối nhé?⟧ — A co kdybychom šli na večeři ven?
+Výrazy k vadám výrobků: ⟦bị vỡ⟧ rozbitý | ⟦bị bẩn⟧ ušpiněný | ⟦máy không chạy⟧ přístroj nefunguje | ⟦khoá kéo bị hỏng⟧ rozbitý zip | ⟦không đạt tiêu chuẩn⟧ nesplňuje normu
+Procvičování 1 — veďte rozhovor s daným výrazem podle vzoru.
+Vzor (⟦đi đâu đó uống một cốc cà phê⟧ zajít někam na kávu): Ⓐ ⟦Hôm nay chị và em vất vả rồi. Chia tay như thế này thì thật là tiếc!⟧ — Dnes jsme se obě nadřely. Takhle se rozloučit je škoda! Ⓑ ⟦Hay là chúng mình đi đâu đó uống một cốc cà phê nhé?⟧ — Co kdybychom zašly někam na kávu?
+❶ (⟦mua cả quả rồi chia đôi ra ăn⟧ koupit celý a rozdělit se napůl) Ⓐ ⟦Em muốn ăn dưa hấu nhưng mua cả quả thì nhiều quá.⟧ — Mám chuť na meloun, ale celý je na mě moc. Ⓑ ⟦Hay là chúng mình mua cả quả rồi chia đôi ra ăn nhé?⟧ — Co kdybychom koupily celý a rozdělily se napůl?
+❷ (⟦đi dạo ở công viên gần nhà⟧ projít se v parku u domu) Ⓐ ⟦Hình như anh đã ăn hơi nhiều. Uống thuốc rồi nhưng vẫn bị đầy bụng.⟧ — Asi jsem toho snědl trochu moc. Vzal jsem si lék, ale pořád mám plný žaludek. Ⓑ ⟦Hay là anh đi dạo ở công viên gần nhà nhé?⟧ — Co kdyby ses šel projít do parku u domu?
+Rozhovor: Trang koupila vadný výrobek a žádá prodavače o výměnu.
+Trang: ⟦Chào anh. Em đã mua quần này ở đây nhưng muốn đổi.⟧ — Dobrý den. Koupila jsem tady tyhle kalhoty, ale chtěla bych je vyměnit.
+Prodavač: ⟦Em không vừa ý à?⟧ — Nelíbí se vám?
+Trang: ⟦Không phải không vừa ý mà vì khoá kéo quần bị hỏng.⟧ — Nejde o to, že by se mi nelíbily, ale mají rozbitý zip.
+Prodavač: ⟦Thế à? Xin lỗi em. Em muốn đổi lấy cái mới, phải không?⟧ — Opravdu? Omlouvám se. Chcete je vyměnit za nové, že?
+Trang: ⟦Hay là em đổi lấy váy kia được không?⟧ — Nebo bych je mohla vyměnit za tamtu sukni?
+Prodavač: ⟦Cũng được. Em chờ một chút nhé.⟧ — To taky jde. Chviličku počkejte.
+Procvičování — výrobek: ⟦quần⟧ (kalhoty) / ⟦giày thể thao⟧ (sportovní boty); problém: ⟦khoá kéo quần bị hỏng⟧ (rozbitý zip u kalhot) / ⟦bị bẩn một chút từ trước⟧ (byly už předtím trochu ušpiněné); požadavek: ⟦đổi lấy váy kia⟧ (vyměnit za tamtu sukni) / ⟦nhận lại tiền⟧ (dostat zpět peníze).
+Nová slovíčka: ⟦vỡ⟧ rozbít se | ⟦khoá kéo⟧ zip | ⟦tiêu chuẩn⟧ norma, standard | ⟦vừa ý⟧ líbit se, vyhovovat | ⟦đầy bụng⟧ mít plný (nafouknutý) žaludek
+=zh_cn
+核心表达：⟦hay là⟧
+⟦hay là A⟧ 意为“要不A吧？/ 要不……怎么样？”
+❶ ⟦Hay là nhờ anh ấy giúp đỡ?⟧ —— 要不请他帮帮忙？
+❷ Ⓐ ⟦Em vừa đi làm về nên chưa nấu cơm.⟧ —— 我刚下班回来，还没做饭。 Ⓑ ⟦Hay là chúng mình ra ngoài ăn tối nhé?⟧ —— 要不我们出去吃晚饭吧？
+表示产品缺陷的表达：⟦bị vỡ⟧ 碎了 | ⟦bị bẩn⟧ 脏了 | ⟦máy không chạy⟧ 机器不运转 | ⟦khoá kéo bị hỏng⟧ 拉链坏了 | ⟦không đạt tiêu chuẩn⟧ 不合格、未达标准
+句型练习1 —— 用所给表达仿照范例对话。
+范例（⟦đi đâu đó uống một cốc cà phê⟧ 去哪儿喝杯咖啡）：Ⓐ ⟦Hôm nay chị và em vất vả rồi. Chia tay như thế này thì thật là tiếc!⟧ —— 今天我们俩都辛苦了。就这样分开真可惜！ Ⓑ ⟦Hay là chúng mình đi đâu đó uống một cốc cà phê nhé?⟧ —— 要不我们去哪儿喝杯咖啡吧？
+❶（⟦mua cả quả rồi chia đôi ra ăn⟧ 买一整个然后分着吃）Ⓐ ⟦Em muốn ăn dưa hấu nhưng mua cả quả thì nhiều quá.⟧ —— 我想吃西瓜，但买一整个太多了。 Ⓑ ⟦Hay là chúng mình mua cả quả rồi chia đôi ra ăn nhé?⟧ —— 要不我们买一整个，然后一人一半？
+❷（⟦đi dạo ở công viên gần nhà⟧ 在家附近的公园散步）Ⓐ ⟦Hình như anh đã ăn hơi nhiều. Uống thuốc rồi nhưng vẫn bị đầy bụng.⟧ —— 我好像吃得有点多。吃了药还是觉得胀肚子。 Ⓑ ⟦Hay là anh đi dạo ở công viên gần nhà nhé?⟧ —— 要不你去家附近的公园散散步吧？
+对话：庄买的商品有瑕疵，正在请店员给她换货。
+庄：⟦Chào anh. Em đã mua quần này ở đây nhưng muốn đổi.⟧ —— 你好。我在这里买了这条裤子，但想换一下。
+店员：⟦Em không vừa ý à?⟧ —— 你不满意吗？
+庄：⟦Không phải không vừa ý mà vì khoá kéo quần bị hỏng.⟧ —— 不是不满意，而是裤子的拉链坏了。
+店员：⟦Thế à? Xin lỗi em. Em muốn đổi lấy cái mới, phải không?⟧ —— 是吗？对不起。你想换一条新的，对吧？
+庄：⟦Hay là em đổi lấy váy kia được không?⟧ —— 要不我换那条裙子可以吗？
+店员：⟦Cũng được. Em chờ một chút nhé.⟧ —— 也可以。请稍等一下。
+句型练习 —— 产品：⟦quần⟧（裤子）/ ⟦giày thể thao⟧（运动鞋）；问题：⟦khoá kéo quần bị hỏng⟧（裤子拉链坏了）/ ⟦bị bẩn một chút từ trước⟧（原本就有点脏）；要求：⟦đổi lấy váy kia⟧（换那条裙子）/ ⟦nhận lại tiền⟧（退款）。
+新单词：⟦vỡ⟧ 碎、破 | ⟦khoá kéo⟧ 拉链 | ⟦tiêu chuẩn⟧ 标准 | ⟦vừa ý⟧ 满意、称心 | ⟦đầy bụng⟧ 胀肚、消化不良
+=zh
+核心表達：⟦hay là⟧
+⟦hay là A⟧ 意為「要不A吧？/ 要不……怎麼樣？」
+❶ ⟦Hay là nhờ anh ấy giúp đỡ?⟧ —— 要不請他幫幫忙？
+❷ Ⓐ ⟦Em vừa đi làm về nên chưa nấu cơm.⟧ —— 我剛下班回來，還沒煮飯。 Ⓑ ⟦Hay là chúng mình ra ngoài ăn tối nhé?⟧ —— 要不我們出去吃晚餐吧？
+表示產品瑕疵的表達：⟦bị vỡ⟧ 破了 | ⟦bị bẩn⟧ 髒了 | ⟦máy không chạy⟧ 機器不會動 | ⟦khoá kéo bị hỏng⟧ 拉鍊壞了 | ⟦không đạt tiêu chuẩn⟧ 不合格、未達標準
+句型練習1 —— 用所給表達仿照範例對話。
+範例（⟦đi đâu đó uống một cốc cà phê⟧ 去哪裡喝杯咖啡）：Ⓐ ⟦Hôm nay chị và em vất vả rồi. Chia tay như thế này thì thật là tiếc!⟧ —— 今天我們倆都辛苦了。就這樣分開真可惜！ Ⓑ ⟦Hay là chúng mình đi đâu đó uống một cốc cà phê nhé?⟧ —— 要不我們去哪裡喝杯咖啡吧？
+❶（⟦mua cả quả rồi chia đôi ra ăn⟧ 買一整顆然後分著吃）Ⓐ ⟦Em muốn ăn dưa hấu nhưng mua cả quả thì nhiều quá.⟧ —— 我想吃西瓜，但買一整顆太多了。 Ⓑ ⟦Hay là chúng mình mua cả quả rồi chia đôi ra ăn nhé?⟧ —— 要不我們買一整顆，然後一人一半？
+❷（⟦đi dạo ở công viên gần nhà⟧ 在家附近的公園散步）Ⓐ ⟦Hình như anh đã ăn hơi nhiều. Uống thuốc rồi nhưng vẫn bị đầy bụng.⟧ —— 我好像吃得有點多。吃了藥還是覺得脹氣。 Ⓑ ⟦Hay là anh đi dạo ở công viên gần nhà nhé?⟧ —— 要不你去家附近的公園散散步吧？
+對話：莊買的商品有瑕疵，正在請店員幫她換貨。
+莊：⟦Chào anh. Em đã mua quần này ở đây nhưng muốn đổi.⟧ —— 你好。我在這裡買了這條褲子，但想換一下。
+店員：⟦Em không vừa ý à?⟧ —— 妳不滿意嗎？
+莊：⟦Không phải không vừa ý mà vì khoá kéo quần bị hỏng.⟧ —— 不是不滿意，而是褲子的拉鍊壞了。
+店員：⟦Thế à? Xin lỗi em. Em muốn đổi lấy cái mới, phải không?⟧ —— 是嗎？不好意思。妳想換一條新的，對吧？
+莊：⟦Hay là em đổi lấy váy kia được không?⟧ —— 要不我換那件裙子可以嗎？
+店員：⟦Cũng được. Em chờ một chút nhé.⟧ —— 也可以。請稍等一下。
+句型練習 —— 產品：⟦quần⟧（褲子）/ ⟦giày thể thao⟧（運動鞋）；問題：⟦khoá kéo quần bị hỏng⟧（褲子拉鍊壞了）/ ⟦bị bẩn một chút từ trước⟧（原本就有點髒）；要求：⟦đổi lấy váy kia⟧（換那件裙子）/ ⟦nhận lại tiền⟧（退款）。
+新單字：⟦vỡ⟧ 碎、破 | ⟦khoá kéo⟧ 拉鍊 | ⟦tiêu chuẩn⟧ 標準 | ⟦vừa ý⟧ 滿意、稱心 | ⟦đầy bụng⟧ 脹氣、消化不良
+=en
+Key expression: ⟦hay là⟧
+⟦hay là A⟧ means "or how about A?, or shall we A?".
+❶ ⟦Hay là nhờ anh ấy giúp đỡ?⟧ — Or shall we ask him for help?
+❷ Ⓐ ⟦Em vừa đi làm về nên chưa nấu cơm.⟧ — I've just got back from work, so I haven't cooked yet. Ⓑ ⟦Hay là chúng mình ra ngoài ăn tối nhé?⟧ — How about we go out for dinner, then?
+Expressions for product defects: ⟦bị vỡ⟧ broken, cracked | ⟦bị bẩn⟧ dirty | ⟦máy không chạy⟧ the machine doesn't work | ⟦khoá kéo bị hỏng⟧ the zip is broken | ⟦không đạt tiêu chuẩn⟧ not up to standard
+Pattern practice 1 — talk as in the model using the given expression.
+Model (⟦đi đâu đó uống một cốc cà phê⟧ go somewhere for a coffee): Ⓐ ⟦Hôm nay chị và em vất vả rồi. Chia tay như thế này thì thật là tiếc!⟧ — We both worked hard today. It'd be a shame to just say goodbye like this! Ⓑ ⟦Hay là chúng mình đi đâu đó uống một cốc cà phê nhé?⟧ — How about we go somewhere for a coffee?
+❶ (⟦mua cả quả rồi chia đôi ra ăn⟧ buy a whole one and split it) Ⓐ ⟦Em muốn ăn dưa hấu nhưng mua cả quả thì nhiều quá.⟧ — I'd like some watermelon, but a whole one is too much. Ⓑ ⟦Hay là chúng mình mua cả quả rồi chia đôi ra ăn nhé?⟧ — How about we buy a whole one and split it?
+❷ (⟦đi dạo ở công viên gần nhà⟧ take a walk in the park near home) Ⓐ ⟦Hình như anh đã ăn hơi nhiều. Uống thuốc rồi nhưng vẫn bị đầy bụng.⟧ — I think I ate a bit too much. I've taken some medicine, but I still feel bloated. Ⓑ ⟦Hay là anh đi dạo ở công viên gần nhà nhé?⟧ — How about taking a walk in the park near home?
+Dialogue: Trang bought a defective product and is asking the sales assistant to exchange it.
+Trang: ⟦Chào anh. Em đã mua quần này ở đây nhưng muốn đổi.⟧ — Hello. I bought these trousers here, but I'd like to exchange them.
+Sales assistant: ⟦Em không vừa ý à?⟧ — Aren't you happy with them?
+Trang: ⟦Không phải không vừa ý mà vì khoá kéo quần bị hỏng.⟧ — It's not that I don't like them – the zip is broken.
+Sales assistant: ⟦Thế à? Xin lỗi em. Em muốn đổi lấy cái mới, phải không?⟧ — Really? I'm sorry. You'd like a new pair, right?
+Trang: ⟦Hay là em đổi lấy váy kia được không?⟧ — Or could I exchange them for that skirt?
+Sales assistant: ⟦Cũng được. Em chờ một chút nhé.⟧ — That's fine too. Just a moment, please.
+Pattern practice — product: ⟦quần⟧ (trousers) / ⟦giày thể thao⟧ (trainers); problem: ⟦khoá kéo quần bị hỏng⟧ (the trouser zip is broken) / ⟦bị bẩn một chút từ trước⟧ (it was already a bit dirty); request: ⟦đổi lấy váy kia⟧ (exchange it for that skirt) / ⟦nhận lại tiền⟧ (get a refund).
+New words: ⟦vỡ⟧ to break, shatter | ⟦khoá kéo⟧ zip | ⟦tiêu chuẩn⟧ standard | ⟦vừa ý⟧ satisfied, to one's liking | ⟦đầy bụng⟧ bloated
+=fr
+Expression clé : ⟦hay là⟧
+⟦hay là A⟧ signifie « et si on A ? / sinon, que dirais-tu de A ? ».
+❶ ⟦Hay là nhờ anh ấy giúp đỡ?⟧ — Et si on lui demandait de l'aide ?
+❷ Ⓐ ⟦Em vừa đi làm về nên chưa nấu cơm.⟧ — Je viens de rentrer du travail, je n'ai pas encore préparé le repas. Ⓑ ⟦Hay là chúng mình ra ngoài ăn tối nhé?⟧ — Et si on allait dîner dehors ?
+Expressions pour les défauts d'un produit : ⟦bị vỡ⟧ cassé | ⟦bị bẩn⟧ sale | ⟦máy không chạy⟧ l'appareil ne marche pas | ⟦khoá kéo bị hỏng⟧ la fermeture éclair est cassée | ⟦không đạt tiêu chuẩn⟧ non conforme aux normes
+Exercice 1 — dialoguez comme dans le modèle avec l'expression donnée.
+Modèle (⟦đi đâu đó uống một cốc cà phê⟧ aller boire un café quelque part) : Ⓐ ⟦Hôm nay chị và em vất vả rồi. Chia tay như thế này thì thật là tiếc!⟧ — On a bien travaillé toutes les deux aujourd'hui. Ce serait dommage de se quitter comme ça ! Ⓑ ⟦Hay là chúng mình đi đâu đó uống một cốc cà phê nhé?⟧ — Et si on allait boire un café quelque part ?
+❶ (⟦mua cả quả rồi chia đôi ra ăn⟧ en acheter une entière et la partager) Ⓐ ⟦Em muốn ăn dưa hấu nhưng mua cả quả thì nhiều quá.⟧ — J'ai envie de pastèque, mais une entière, c'est trop. Ⓑ ⟦Hay là chúng mình mua cả quả rồi chia đôi ra ăn nhé?⟧ — Et si on en achetait une entière pour la partager en deux ?
+❷ (⟦đi dạo ở công viên gần nhà⟧ se promener dans le parc près de chez soi) Ⓐ ⟦Hình như anh đã ăn hơi nhiều. Uống thuốc rồi nhưng vẫn bị đầy bụng.⟧ — Je crois que j'ai un peu trop mangé. J'ai pris un médicament mais j'ai toujours le ventre ballonné. Ⓑ ⟦Hay là anh đi dạo ở công viên gần nhà nhé?⟧ — Et si tu allais te promener dans le parc près de chez toi ?
+Dialogue : Trang a acheté un produit défectueux et demande au vendeur de l'échanger.
+Trang : ⟦Chào anh. Em đã mua quần này ở đây nhưng muốn đổi.⟧ — Bonjour. J'ai acheté ce pantalon ici, mais je voudrais l'échanger.
+Vendeur : ⟦Em không vừa ý à?⟧ — Il ne vous plaît pas ?
+Trang : ⟦Không phải không vừa ý mà vì khoá kéo quần bị hỏng.⟧ — Ce n'est pas qu'il ne me plaît pas, c'est que la fermeture éclair est cassée.
+Vendeur : ⟦Thế à? Xin lỗi em. Em muốn đổi lấy cái mới, phải không?⟧ — Ah bon ? Je suis désolé. Vous voulez en prendre un neuf, c'est ça ?
+Trang : ⟦Hay là em đổi lấy váy kia được không?⟧ — Ou bien, est-ce que je pourrais l'échanger contre cette jupe-là ?
+Vendeur : ⟦Cũng được. Em chờ một chút nhé.⟧ — C'est possible aussi. Un instant, s'il vous plaît.
+Exercices — produit : ⟦quần⟧ (pantalon) / ⟦giày thể thao⟧ (baskets) ; problème : ⟦khoá kéo quần bị hỏng⟧ (la fermeture du pantalon est cassée) / ⟦bị bẩn một chút từ trước⟧ (c'était déjà un peu sale) ; demande : ⟦đổi lấy váy kia⟧ (l'échanger contre cette jupe) / ⟦nhận lại tiền⟧ (être remboursé).
+Nouveaux mots : ⟦vỡ⟧ se casser, se briser | ⟦khoá kéo⟧ fermeture éclair | ⟦tiêu chuẩn⟧ norme, standard | ⟦vừa ý⟧ plaire, satisfaire | ⟦đầy bụng⟧ avoir le ventre ballonné
+=de
+Schlüsselausdruck: ⟦hay là⟧
+⟦hay là A⟧ bedeutet „oder sollen wir A? / wie wäre es mit A?“.
+❶ ⟦Hay là nhờ anh ấy giúp đỡ?⟧ — Oder sollen wir ihn um Hilfe bitten?
+❷ Ⓐ ⟦Em vừa đi làm về nên chưa nấu cơm.⟧ — Ich bin gerade erst von der Arbeit gekommen und habe noch nicht gekocht. Ⓑ ⟦Hay là chúng mình ra ngoài ăn tối nhé?⟧ — Wie wäre es, wenn wir auswärts zu Abend essen?
+Ausdrücke für Produktmängel: ⟦bị vỡ⟧ zerbrochen | ⟦bị bẩn⟧ verschmutzt | ⟦máy không chạy⟧ das Gerät funktioniert nicht | ⟦khoá kéo bị hỏng⟧ der Reißverschluss ist kaputt | ⟦không đạt tiêu chuẩn⟧ entspricht nicht dem Standard
+Übung 1 — wie im Muster mit dem vorgegebenen Ausdruck sprechen.
+Muster (⟦đi đâu đó uống một cốc cà phê⟧ irgendwo einen Kaffee trinken gehen): Ⓐ ⟦Hôm nay chị và em vất vả rồi. Chia tay như thế này thì thật là tiếc!⟧ — Wir haben uns heute beide abgemüht. Schade, sich einfach so zu trennen! Ⓑ ⟦Hay là chúng mình đi đâu đó uống một cốc cà phê nhé?⟧ — Wie wäre es, wenn wir irgendwo einen Kaffee trinken gehen?
+❶ (⟦mua cả quả rồi chia đôi ra ăn⟧ eine ganze kaufen und teilen) Ⓐ ⟦Em muốn ăn dưa hấu nhưng mua cả quả thì nhiều quá.⟧ — Ich hätte gern Wassermelone, aber eine ganze ist zu viel. Ⓑ ⟦Hay là chúng mình mua cả quả rồi chia đôi ra ăn nhé?⟧ — Wie wäre es, wenn wir eine ganze kaufen und sie teilen?
+❷ (⟦đi dạo ở công viên gần nhà⟧ im Park in der Nähe spazieren gehen) Ⓐ ⟦Hình như anh đã ăn hơi nhiều. Uống thuốc rồi nhưng vẫn bị đầy bụng.⟧ — Ich habe wohl etwas zu viel gegessen. Ich habe schon ein Mittel genommen, aber mein Magen ist immer noch voll. Ⓑ ⟦Hay là anh đi dạo ở công viên gần nhà nhé?⟧ — Wie wäre es mit einem Spaziergang im Park in der Nähe?
+Dialog: Trang hat ein fehlerhaftes Produkt gekauft und bittet den Verkäufer um Umtausch.
+Trang: ⟦Chào anh. Em đã mua quần này ở đây nhưng muốn đổi.⟧ — Guten Tag. Ich habe diese Hose hier gekauft, möchte sie aber umtauschen.
+Verkäufer: ⟦Em không vừa ý à?⟧ — Gefällt sie Ihnen nicht?
+Trang: ⟦Không phải không vừa ý mà vì khoá kéo quần bị hỏng.⟧ — Nicht, dass sie mir nicht gefällt – der Reißverschluss ist kaputt.
+Verkäufer: ⟦Thế à? Xin lỗi em. Em muốn đổi lấy cái mới, phải không?⟧ — Wirklich? Das tut mir leid. Sie möchten eine neue, nicht wahr?
+Trang: ⟦Hay là em đổi lấy váy kia được không?⟧ — Oder könnte ich sie gegen den Rock dort umtauschen?
+Verkäufer: ⟦Cũng được. Em chờ một chút nhé.⟧ — Das geht auch. Einen Moment bitte.
+Satzmusterübung — Produkt: ⟦quần⟧ (Hose) / ⟦giày thể thao⟧ (Turnschuhe); Problem: ⟦khoá kéo quần bị hỏng⟧ (Reißverschluss der Hose kaputt) / ⟦bị bẩn một chút từ trước⟧ (war schon vorher etwas schmutzig); Wunsch: ⟦đổi lấy váy kia⟧ (gegen den Rock dort tauschen) / ⟦nhận lại tiền⟧ (Geld zurück).
+Neue Wörter: ⟦vỡ⟧ zerbrechen | ⟦khoá kéo⟧ Reißverschluss | ⟦tiêu chuẩn⟧ Standard, Norm | ⟦vừa ý⟧ gefallen, zufrieden sein | ⟦đầy bụng⟧ Völlegefühl haben
+=hu
+Kulcskifejezés: ⟦hay là⟧
+A ⟦hay là A⟧ jelentése „vagy mi lenne, ha A?, és ha A?”.
+❶ ⟦Hay là nhờ anh ấy giúp đỡ?⟧ — Vagy kérjük meg őt, hogy segítsen?
+❷ Ⓐ ⟦Em vừa đi làm về nên chưa nấu cơm.⟧ — Most jöttem haza a munkából, ezért még nem főztem. Ⓑ ⟦Hay là chúng mình ra ngoài ăn tối nhé?⟧ — És ha elmennénk valahova vacsorázni?
+A termékhibákat jelölő kifejezések: ⟦bị vỡ⟧ eltört | ⟦bị bẩn⟧ koszos | ⟦máy không chạy⟧ a gép nem működik | ⟦khoá kéo bị hỏng⟧ elromlott a cipzár | ⟦không đạt tiêu chuẩn⟧ nem felel meg a szabványnak
+1. gyakorlat — beszélgessen a minta szerint a megadott kifejezéssel.
+Minta (⟦đi đâu đó uống một cốc cà phê⟧ elmenni valahová egy kávéra): Ⓐ ⟦Hôm nay chị và em vất vả rồi. Chia tay như thế này thì thật là tiếc!⟧ — Ma mindketten sokat dolgoztunk. Kár lenne csak így elválni! Ⓑ ⟦Hay là chúng mình đi đâu đó uống một cốc cà phê nhé?⟧ — És ha beülnénk valahová egy kávéra?
+❶ (⟦mua cả quả rồi chia đôi ra ăn⟧ egy egészet venni és elfelezni) Ⓐ ⟦Em muốn ăn dưa hấu nhưng mua cả quả thì nhiều quá.⟧ — Görögdinnyét ennék, de egy egész túl sok. Ⓑ ⟦Hay là chúng mình mua cả quả rồi chia đôi ra ăn nhé?⟧ — És ha vennénk egy egészet, és elfeleznénk?
+❷ (⟦đi dạo ở công viên gần nhà⟧ sétálni a közeli parkban) Ⓐ ⟦Hình như anh đã ăn hơi nhiều. Uống thuốc rồi nhưng vẫn bị đầy bụng.⟧ — Azt hiszem, kicsit sokat ettem. Bevettem gyógyszert, de még mindig puffadt vagyok. Ⓑ ⟦Hay là anh đi dạo ở công viên gần nhà nhé?⟧ — És ha sétálnál egyet a közeli parkban?
+Párbeszéd: Trang hibás terméket vett, és cserét kér az eladótól.
+Trang: ⟦Chào anh. Em đã mua quần này ở đây nhưng muốn đổi.⟧ — Jó napot. Itt vettem ezt a nadrágot, de szeretném kicserélni.
+Eladó: ⟦Em không vừa ý à?⟧ — Nem tetszik?
+Trang: ⟦Không phải không vừa ý mà vì khoá kéo quần bị hỏng.⟧ — Nem arról van szó, hogy nem tetszik, hanem elromlott a cipzárja.
+Eladó: ⟦Thế à? Xin lỗi em. Em muốn đổi lấy cái mới, phải không?⟧ — Tényleg? Elnézést kérek. Egy újra szeretné cserélni, ugye?
+Trang: ⟦Hay là em đổi lấy váy kia được không?⟧ — Vagy kicserélhetném azért a szoknyáért?
+Eladó: ⟦Cũng được. Em chờ một chút nhé.⟧ — Az is lehet. Egy pillanat türelmet.
+Mintagyakorlat — termék: ⟦quần⟧ (nadrág) / ⟦giày thể thao⟧ (sportcipő); probléma: ⟦khoá kéo quần bị hỏng⟧ (elromlott a nadrág cipzárja) / ⟦bị bẩn một chút từ trước⟧ (már eleve kicsit koszos volt); kérés: ⟦đổi lấy váy kia⟧ (kicserélni azért a szoknyáért) / ⟦nhận lại tiền⟧ (visszakapni a pénzt).
+Új szavak: ⟦vỡ⟧ eltörik | ⟦khoá kéo⟧ cipzár | ⟦tiêu chuẩn⟧ szabvány, norma | ⟦vừa ý⟧ tetszik, megfelel | ⟦đầy bụng⟧ puffadt, teli gyomor
+=id
+Ungkapan kunci: ⟦hay là⟧
+⟦hay là A⟧ berarti "atau bagaimana kalau A?".
+❶ ⟦Hay là nhờ anh ấy giúp đỡ?⟧ — Atau bagaimana kalau kita minta tolong dia?
+❷ Ⓐ ⟦Em vừa đi làm về nên chưa nấu cơm.⟧ — Aku baru pulang kerja, jadi belum masak. Ⓑ ⟦Hay là chúng mình ra ngoài ăn tối nhé?⟧ — Bagaimana kalau kita makan malam di luar?
+Ungkapan tentang cacat produk: ⟦bị vỡ⟧ pecah | ⟦bị bẩn⟧ kotor | ⟦máy không chạy⟧ mesin tidak jalan | ⟦khoá kéo bị hỏng⟧ ritsleting rusak | ⟦không đạt tiêu chuẩn⟧ tidak memenuhi standar
+Latihan pola 1 — bercakaplah seperti contoh dengan ungkapan yang diberikan.
+Contoh (⟦đi đâu đó uống một cốc cà phê⟧ pergi ke suatu tempat untuk minum kopi): Ⓐ ⟦Hôm nay chị và em vất vả rồi. Chia tay như thế này thì thật là tiếc!⟧ — Hari ini kita berdua sudah capek. Sayang sekali kalau berpisah begitu saja! Ⓑ ⟦Hay là chúng mình đi đâu đó uống một cốc cà phê nhé?⟧ — Bagaimana kalau kita pergi minum kopi dulu?
+❶ (⟦mua cả quả rồi chia đôi ra ăn⟧ beli satu buah utuh lalu dibagi dua) Ⓐ ⟦Em muốn ăn dưa hấu nhưng mua cả quả thì nhiều quá.⟧ — Aku ingin makan semangka, tapi kalau beli satu utuh terlalu banyak. Ⓑ ⟦Hay là chúng mình mua cả quả rồi chia đôi ra ăn nhé?⟧ — Bagaimana kalau kita beli satu utuh lalu dibagi dua?
+❷ (⟦đi dạo ở công viên gần nhà⟧ jalan-jalan di taman dekat rumah) Ⓐ ⟦Hình như anh đã ăn hơi nhiều. Uống thuốc rồi nhưng vẫn bị đầy bụng.⟧ — Sepertinya aku makan agak kebanyakan. Sudah minum obat tapi masih kembung. Ⓑ ⟦Hay là anh đi dạo ở công viên gần nhà nhé?⟧ — Bagaimana kalau jalan-jalan di taman dekat rumah?
+Percakapan: Trang membeli produk yang cacat dan meminta pramuniaga untuk menukarnya.
+Trang: ⟦Chào anh. Em đã mua quần này ở đây nhưng muốn đổi.⟧ — Halo, Mas. Saya membeli celana ini di sini, tetapi ingin menukarnya.
+Pramuniaga: ⟦Em không vừa ý à?⟧ — Tidak suka, ya?
+Trang: ⟦Không phải không vừa ý mà vì khoá kéo quần bị hỏng.⟧ — Bukan tidak suka, tapi ritsleting celananya rusak.
+Pramuniaga: ⟦Thế à? Xin lỗi em. Em muốn đổi lấy cái mới, phải không?⟧ — Oh begitu? Maaf. Mau ditukar dengan yang baru, kan?
+Trang: ⟦Hay là em đổi lấy váy kia được không?⟧ — Atau bisakah saya tukar dengan rok yang itu?
+Pramuniaga: ⟦Cũng được. Em chờ một chút nhé.⟧ — Bisa juga. Tunggu sebentar, ya.
+Latihan pola — produk: ⟦quần⟧ (celana) / ⟦giày thể thao⟧ (sepatu olahraga); masalah: ⟦khoá kéo quần bị hỏng⟧ (ritsleting celana rusak) / ⟦bị bẩn một chút từ trước⟧ (sudah agak kotor dari awal); permintaan: ⟦đổi lấy váy kia⟧ (tukar dengan rok itu) / ⟦nhận lại tiền⟧ (uang kembali).
+Kosakata baru: ⟦vỡ⟧ pecah | ⟦khoá kéo⟧ ritsleting | ⟦tiêu chuẩn⟧ standar | ⟦vừa ý⟧ sesuai keinginan, puas | ⟦đầy bụng⟧ kembung
+=ja
+核心表現：⟦hay là⟧
+⟦hay là A⟧ は「それともAしようか？/ それともAはどう？」という意味を表します。
+❶ ⟦Hay là nhờ anh ấy giúp đỡ?⟧ — それとも彼に手伝ってもらおうか。
+❷ Ⓐ ⟦Em vừa đi làm về nên chưa nấu cơm.⟧ — さっき仕事から帰ったばかりで、まだご飯を作っていません。 Ⓑ ⟦Hay là chúng mình ra ngoài ăn tối nhé?⟧ — それなら、外に夕食を食べに行こうか。
+製品の欠陥を表す表現：⟦bị vỡ⟧ 割れている | ⟦bị bẩn⟧ 汚れている | ⟦máy không chạy⟧ 機械が動かない | ⟦khoá kéo bị hỏng⟧ ファスナーが壊れている | ⟦không đạt tiêu chuẩn⟧ 基準を満たしていない
+文型練習1 — 与えられた表現を使って例のように会話してみましょう。
+例（⟦đi đâu đó uống một cốc cà phê⟧ どこかでコーヒーを一杯飲む）：Ⓐ ⟦Hôm nay chị và em vất vả rồi. Chia tay như thế này thì thật là tiếc!⟧ — 今日は二人ともお疲れさま。このまま別れるのは本当に惜しいね！ Ⓑ ⟦Hay là chúng mình đi đâu đó uống một cốc cà phê nhé?⟧ — じゃあ、どこかでコーヒーでも一杯飲みに行きましょうか。
+❶（⟦mua cả quả rồi chia đôi ra ăn⟧ 丸ごと買って半分ずつ食べる）Ⓐ ⟦Em muốn ăn dưa hấu nhưng mua cả quả thì nhiều quá.⟧ — スイカが食べたいけど、丸ごと一個買うと多すぎます。 Ⓑ ⟦Hay là chúng mình mua cả quả rồi chia đôi ra ăn nhé?⟧ — じゃあ、丸ごと買って半分ずつ食べようか。
+❷（⟦đi dạo ở công viên gần nhà⟧ 家の近くの公園を散歩する）Ⓐ ⟦Hình như anh đã ăn hơi nhiều. Uống thuốc rồi nhưng vẫn bị đầy bụng.⟧ — ちょっと食べすぎたみたい。薬を飲んだけど、まだお腹が張っている。 Ⓑ ⟦Hay là anh đi dạo ở công viên gần nhà nhé?⟧ — それなら、家の近くの公園を散歩したらどう？
+会話：チャンが購入した製品に欠陥があり、販売員に交換を求めています。
+チャン：⟦Chào anh. Em đã mua quần này ở đây nhưng muốn đổi.⟧ — こんにちは。ここでこのズボンを買ったのですが、交換したいです。
+販売員：⟦Em không vừa ý à?⟧ — お気に召しませんでしたか。
+チャン：⟦Không phải không vừa ý mà vì khoá kéo quần bị hỏng.⟧ — 気に入らないのではなく、ズボンのファスナーが壊れているんです。
+販売員：⟦Thế à? Xin lỗi em. Em muốn đổi lấy cái mới, phải không?⟧ — そうですか。申し訳ありません。新しいものと交換ご希望ですね。
+チャン：⟦Hay là em đổi lấy váy kia được không?⟧ — それとも、あちらのスカートと交換してもいいですか。
+販売員：⟦Cũng được. Em chờ một chút nhé.⟧ — それでも大丈夫です。少々お待ちください。
+文型練習 — 製品：⟦quần⟧（ズボン）/ ⟦giày thể thao⟧（スニーカー）；問題：⟦khoá kéo quần bị hỏng⟧（ズボンのファスナーが壊れている）/ ⟦bị bẩn một chút từ trước⟧（もともと少し汚れていた）；要望：⟦đổi lấy váy kia⟧（あのスカートと交換）/ ⟦nhận lại tiền⟧（返金してもらう）。
+新出単語：⟦vỡ⟧ 割れる | ⟦khoá kéo⟧ ファスナー | ⟦tiêu chuẩn⟧ 基準、標準 | ⟦vừa ý⟧ 気に入る | ⟦đầy bụng⟧ お腹が張る、胃がもたれる
+=pl
+Kluczowe wyrażenie: ⟦hay là⟧
+⟦hay là A⟧ znaczy „a może A?, a co powiesz na A?”.
+❶ ⟦Hay là nhờ anh ấy giúp đỡ?⟧ — A może poprosimy go o pomoc?
+❷ Ⓐ ⟦Em vừa đi làm về nên chưa nấu cơm.⟧ — Właśnie wróciłam z pracy, więc jeszcze nie ugotowałam obiadu. Ⓑ ⟦Hay là chúng mình ra ngoài ăn tối nhé?⟧ — A może pójdziemy zjeść kolację na mieście?
+Wyrażenia opisujące wady produktu: ⟦bị vỡ⟧ stłuczony | ⟦bị bẩn⟧ brudny | ⟦máy không chạy⟧ urządzenie nie działa | ⟦khoá kéo bị hỏng⟧ zepsuty zamek błyskawiczny | ⟦không đạt tiêu chuẩn⟧ nie spełnia norm
+Ćwiczenie 1 — rozmawiaj jak we wzorze, używając podanego wyrażenia.
+Wzór (⟦đi đâu đó uống một cốc cà phê⟧ pójść gdzieś na kawę): Ⓐ ⟦Hôm nay chị và em vất vả rồi. Chia tay như thế này thì thật là tiếc!⟧ — Obie się dziś napracowałyśmy. Szkoda tak po prostu się rozstać! Ⓑ ⟦Hay là chúng mình đi đâu đó uống một cốc cà phê nhé?⟧ — A może pójdziemy gdzieś na kawę?
+❶ (⟦mua cả quả rồi chia đôi ra ăn⟧ kupić cały i podzielić się na pół) Ⓐ ⟦Em muốn ăn dưa hấu nhưng mua cả quả thì nhiều quá.⟧ — Mam ochotę na arbuza, ale cały to za dużo. Ⓑ ⟦Hay là chúng mình mua cả quả rồi chia đôi ra ăn nhé?⟧ — A może kupimy cały i podzielimy się na pół?
+❷ (⟦đi dạo ở công viên gần nhà⟧ pospacerować w parku koło domu) Ⓐ ⟦Hình như anh đã ăn hơi nhiều. Uống thuốc rồi nhưng vẫn bị đầy bụng.⟧ — Chyba zjadłem trochę za dużo. Wziąłem lekarstwo, ale nadal czuję się przejedzony. Ⓑ ⟦Hay là anh đi dạo ở công viên gần nhà nhé?⟧ — A może przejdziesz się po parku koło domu?
+Dialog: Trang kupiła wadliwy produkt i prosi sprzedawcę o wymianę.
+Trang: ⟦Chào anh. Em đã mua quần này ở đây nhưng muốn đổi.⟧ — Dzień dobry. Kupiłam tu te spodnie, ale chciałabym je wymienić.
+Sprzedawca: ⟦Em không vừa ý à?⟧ — Nie podobają się pani?
+Trang: ⟦Không phải không vừa ý mà vì khoá kéo quần bị hỏng.⟧ — Nie chodzi o to, że mi się nie podobają, tylko zamek jest zepsuty.
+Sprzedawca: ⟦Thế à? Xin lỗi em. Em muốn đổi lấy cái mới, phải không?⟧ — Naprawdę? Przepraszam. Chce pani wymienić na nowe, tak?
+Trang: ⟦Hay là em đổi lấy váy kia được không?⟧ — A może mogłabym je wymienić na tamtą spódnicę?
+Sprzedawca: ⟦Cũng được. Em chờ một chút nhé.⟧ — Też można. Proszę chwilę zaczekać.
+Ćwiczenie wzorców — produkt: ⟦quần⟧ (spodnie) / ⟦giày thể thao⟧ (buty sportowe); problem: ⟦khoá kéo quần bị hỏng⟧ (zepsuty zamek w spodniach) / ⟦bị bẩn một chút từ trước⟧ (już wcześniej były trochę brudne); prośba: ⟦đổi lấy váy kia⟧ (wymienić na tamtą spódnicę) / ⟦nhận lại tiền⟧ (zwrot pieniędzy).
+Nowe słówka: ⟦vỡ⟧ stłuc się | ⟦khoá kéo⟧ zamek błyskawiczny | ⟦tiêu chuẩn⟧ norma, standard | ⟦vừa ý⟧ podobać się, odpowiadać | ⟦đầy bụng⟧ uczucie przepełnienia żołądka

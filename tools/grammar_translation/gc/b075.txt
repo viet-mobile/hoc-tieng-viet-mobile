@@ -1,0 +1,193 @@
+@@ pdf-grammar-ac22ac651fa4c353#0
+=cs
+Gramatický výklad
+⟦từ ... đến⟧: „od ~ do ~“ – označuje počáteční a koncový bod určitého času či prostoru.
+⟦Từ tầng một đến tầng sáu của tòa tháp là khu mua sắm.⟧ → Od prvního do šestého patra budovy je nákupní zóna. · ⟦Từ nhà tôi đến trung tâm thương mại rất xa.⟧ → Od nás z domu do obchodního centra je to velmi daleko. · ⟦Ngày nào anh ấy cũng đi bộ từ nhà đến trường.⟧ → Každý den chodí z domu do školy pěšky. · ⟦Ngày nào chị Nga cũng đọc sách ở thư viện từ sáng đến chiều.⟧ → Nga každý den čte v knihovně od rána do odpoledne. · ⟦Buổi sáng, chúng tôi lên lớp từ 8 giờ đến 12 giờ.⟧ → Dopoledne máme vyučování od 8 do 12 hodin.
+⟦tùy⟧, ⟦tùy thuộc⟧: „podle, záležet na“ – vyjadřuje vztah závislosti a jeho výsledek.
+⟦Tùy nhu cầu sử dụng mà khách hàng có thể chọn tầng để mua.⟧ → Podle svých potřeb si zákazníci mohou vybrat patro, kde nakoupí. (rozhodující faktor: potřeba · výsledek: výběr patra) · ⟦Việc đi chợ hoặc đi trung tâm thương mại là tùy vào việc bạn định mua thứ gì.⟧ → Zda jít na trh, nebo do obchodního centra, záleží na tom, co chcete koupit. (rozhodující faktor: co koupit · výsledek: volba mezi trhem a obchodním centrem)
+=zh_cn
+语法解说
+⟦từ ... đến⟧：意为“从……到……”，用于表示句中所说的一定时间、空间的起点和终点。
+⟦Từ tầng một đến tầng sáu của tòa tháp là khu mua sắm.⟧ → 大楼的一层到六层是购物区。 · ⟦Từ nhà tôi đến trung tâm thương mại rất xa.⟧ → 从我家到商场很远。 · ⟦Ngày nào anh ấy cũng đi bộ từ nhà đến trường.⟧ → 他每天都从家走路去学校。 · ⟦Ngày nào chị Nga cũng đọc sách ở thư viện từ sáng đến chiều.⟧ → 阿娥每天从早到下午都在图书馆看书。 · ⟦Buổi sáng, chúng tôi lên lớp từ 8 giờ đến 12 giờ.⟧ → 上午我们从8点到12点上课。
+⟦tùy⟧、⟦tùy thuộc⟧：意为“根据、取决于”，用于表示依存关系及其结果。
+⟦Tùy nhu cầu sử dụng mà khách hàng có thể chọn tầng để mua.⟧ → 顾客可以根据需要选择购物的楼层。（决定因素：需要 · 结果：选择楼层） · ⟦Việc đi chợ hoặc đi trung tâm thương mại là tùy vào việc bạn định mua thứ gì.⟧ → 去市场还是去商场，取决于你打算买什么东西。（决定因素：买什么 · 结果：决定去市场还是商场）
+=zh
+文法解說
+⟦từ ... đến⟧：意為「從……到……」，用於表示句中所說的一定時間、空間的起點和終點。
+⟦Từ tầng một đến tầng sáu của tòa tháp là khu mua sắm.⟧ → 大樓的一樓到六樓是購物區。 · ⟦Từ nhà tôi đến trung tâm thương mại rất xa.⟧ → 從我家到百貨公司很遠。 · ⟦Ngày nào anh ấy cũng đi bộ từ nhà đến trường.⟧ → 他每天都從家走路去學校。 · ⟦Ngày nào chị Nga cũng đọc sách ở thư viện từ sáng đến chiều.⟧ → 阿娥每天從早到下午都在圖書館看書。 · ⟦Buổi sáng, chúng tôi lên lớp từ 8 giờ đến 12 giờ.⟧ → 上午我們從8點到12點上課。
+⟦tùy⟧、⟦tùy thuộc⟧：意為「根據、取決於」，用於表示依存關係及其結果。
+⟦Tùy nhu cầu sử dụng mà khách hàng có thể chọn tầng để mua.⟧ → 顧客可以根據需要選擇購物的樓層。（決定因素：需要 · 結果：選擇樓層） · ⟦Việc đi chợ hoặc đi trung tâm thương mại là tùy vào việc bạn định mua thứ gì.⟧ → 去市場還是去百貨公司，取決於你打算買什麼東西。（決定因素：買什麼 · 結果：決定去市場還是百貨公司）
+=en
+Grammar notes
+⟦từ ... đến⟧: "from ~ to ~" – marks the starting and end points of a certain time or space mentioned in the sentence.
+⟦Từ tầng một đến tầng sáu của tòa tháp là khu mua sắm.⟧ → From the first to the sixth floor of the tower is the shopping area. · ⟦Từ nhà tôi đến trung tâm thương mại rất xa.⟧ → It's a long way from my house to the shopping centre. · ⟦Ngày nào anh ấy cũng đi bộ từ nhà đến trường.⟧ → Every day he walks from home to school. · ⟦Ngày nào chị Nga cũng đọc sách ở thư viện từ sáng đến chiều.⟧ → Every day Nga reads in the library from morning till afternoon. · ⟦Buổi sáng, chúng tôi lên lớp từ 8 giờ đến 12 giờ.⟧ → In the morning we have classes from 8 to 12.
+⟦tùy⟧, ⟦tùy thuộc⟧: "depending on, it depends on" – expresses a relationship of dependence and its result.
+⟦Tùy nhu cầu sử dụng mà khách hàng có thể chọn tầng để mua.⟧ → Depending on their needs, customers can choose which floor to shop on. (deciding factor: needs · result: choosing the floor) · ⟦Việc đi chợ hoặc đi trung tâm thương mại là tùy vào việc bạn định mua thứ gì.⟧ → Whether to go to the market or the shopping centre depends on what you plan to buy. (deciding factor: what to buy · result: choosing market or shopping centre)
+=fr
+Notes de grammaire
+⟦từ ... đến⟧ : « de ~ à ~ » – indique le point de départ et le point d'arrivée d'un temps ou d'un espace donné.
+⟦Từ tầng một đến tầng sáu của tòa tháp là khu mua sắm.⟧ → Du premier au sixième étage de la tour, c'est la zone commerciale. · ⟦Từ nhà tôi đến trung tâm thương mại rất xa.⟧ → De chez moi au centre commercial, c'est très loin. · ⟦Ngày nào anh ấy cũng đi bộ từ nhà đến trường.⟧ → Tous les jours, il va à pied de chez lui à l'école. · ⟦Ngày nào chị Nga cũng đọc sách ở thư viện từ sáng đến chiều.⟧ → Tous les jours, Nga lit à la bibliothèque du matin jusqu'à l'après-midi. · ⟦Buổi sáng, chúng tôi lên lớp từ 8 giờ đến 12 giờ.⟧ → Le matin, nous avons cours de 8 h à 12 h.
+⟦tùy⟧, ⟦tùy thuộc⟧ : « selon, en fonction de, dépendre de » – exprime une relation de dépendance et son résultat.
+⟦Tùy nhu cầu sử dụng mà khách hàng có thể chọn tầng để mua.⟧ → Selon leurs besoins, les clients peuvent choisir l'étage où faire leurs achats. (facteur décisif : les besoins · résultat : choix de l'étage) · ⟦Việc đi chợ hoặc đi trung tâm thương mại là tùy vào việc bạn định mua thứ gì.⟧ → Aller au marché ou au centre commercial dépend de ce que vous comptez acheter. (facteur décisif : ce qu'on achète · résultat : choix entre marché et centre commercial)
+=de
+Grammatikerläuterungen
+⟦từ ... đến⟧: „von ~ bis ~“ – kennzeichnet Anfangs- und Endpunkt einer bestimmten Zeit oder eines Raumes.
+⟦Từ tầng một đến tầng sáu của tòa tháp là khu mua sắm.⟧ → Vom ersten bis zum sechsten Stock des Turms ist der Einkaufsbereich. · ⟦Từ nhà tôi đến trung tâm thương mại rất xa.⟧ → Von meinem Haus bis zum Einkaufszentrum ist es sehr weit. · ⟦Ngày nào anh ấy cũng đi bộ từ nhà đến trường.⟧ → Jeden Tag geht er zu Fuß von zu Hause zur Schule. · ⟦Ngày nào chị Nga cũng đọc sách ở thư viện từ sáng đến chiều.⟧ → Nga liest jeden Tag von morgens bis nachmittags in der Bibliothek. · ⟦Buổi sáng, chúng tôi lên lớp từ 8 giờ đến 12 giờ.⟧ → Vormittags haben wir von 8 bis 12 Uhr Unterricht.
+⟦tùy⟧, ⟦tùy thuộc⟧: „je nach, abhängen von“ – drückt ein Abhängigkeitsverhältnis und sein Ergebnis aus.
+⟦Tùy nhu cầu sử dụng mà khách hàng có thể chọn tầng để mua.⟧ → Je nach Bedarf können die Kunden das Stockwerk zum Einkaufen wählen. (entscheidender Faktor: Bedarf · Ergebnis: Wahl des Stockwerks) · ⟦Việc đi chợ hoặc đi trung tâm thương mại là tùy vào việc bạn định mua thứ gì.⟧ → Ob man auf den Markt oder ins Einkaufszentrum geht, hängt davon ab, was man kaufen will. (entscheidender Faktor: was man kauft · Ergebnis: Wahl zwischen Markt und Einkaufszentrum)
+=hu
+Nyelvtani magyarázat
+⟦từ ... đến⟧: „~tól ~ig” – egy adott idő vagy tér kezdő- és végpontját jelöli.
+⟦Từ tầng một đến tầng sáu của tòa tháp là khu mua sắm.⟧ → Az épület első emeletétől a hatodikig bevásárlóövezet van. · ⟦Từ nhà tôi đến trung tâm thương mại rất xa.⟧ → A házunktól a bevásárlóközpontig nagyon messze van. · ⟦Ngày nào anh ấy cũng đi bộ từ nhà đến trường.⟧ → Minden nap gyalog megy otthonról az iskolába. · ⟦Ngày nào chị Nga cũng đọc sách ở thư viện từ sáng đến chiều.⟧ → Nga minden nap reggeltől délutánig olvas a könyvtárban. · ⟦Buổi sáng, chúng tôi lên lớp từ 8 giờ đến 12 giờ.⟧ → Délelőtt 8-tól 12-ig van óránk.
+⟦tùy⟧, ⟦tùy thuộc⟧: „~tól függően, ~on múlik” – függőségi viszonyt és annak eredményét fejezi ki.
+⟦Tùy nhu cầu sử dụng mà khách hàng có thể chọn tầng để mua.⟧ → Igényeiktől függően a vásárlók kiválaszthatják, melyik emeleten vásárolnak. (döntő tényező: igény · eredmény: emelet kiválasztása) · ⟦Việc đi chợ hoặc đi trung tâm thương mại là tùy vào việc bạn định mua thứ gì.⟧ → Az, hogy piacra vagy bevásárlóközpontba megyünk, attól függ, mit akarunk venni. (döntő tényező: mit veszünk · eredmény: piac vagy bevásárlóközpont)
+=id
+Penjelasan tata bahasa
+⟦từ ... đến⟧: "dari ~ sampai ~" – menunjukkan titik awal dan titik akhir waktu atau ruang tertentu yang disebut dalam kalimat.
+⟦Từ tầng một đến tầng sáu của tòa tháp là khu mua sắm.⟧ → Dari lantai satu sampai lantai enam gedung itu adalah area belanja. · ⟦Từ nhà tôi đến trung tâm thương mại rất xa.⟧ → Dari rumah saya ke pusat perbelanjaan sangat jauh. · ⟦Ngày nào anh ấy cũng đi bộ từ nhà đến trường.⟧ → Setiap hari dia berjalan kaki dari rumah ke sekolah. · ⟦Ngày nào chị Nga cũng đọc sách ở thư viện từ sáng đến chiều.⟧ → Setiap hari Nga membaca buku di perpustakaan dari pagi sampai sore. · ⟦Buổi sáng, chúng tôi lên lớp từ 8 giờ đến 12 giờ.⟧ → Pagi hari kami kuliah dari pukul 8 sampai pukul 12.
+⟦tùy⟧, ⟦tùy thuộc⟧: "tergantung, sesuai dengan" – menyatakan hubungan ketergantungan dan hasilnya.
+⟦Tùy nhu cầu sử dụng mà khách hàng có thể chọn tầng để mua.⟧ → Sesuai kebutuhan, pelanggan dapat memilih lantai untuk berbelanja. (faktor penentu: kebutuhan · hasil: memilih lantai) · ⟦Việc đi chợ hoặc đi trung tâm thương mại là tùy vào việc bạn định mua thứ gì.⟧ → Pergi ke pasar atau ke pusat perbelanjaan tergantung pada barang apa yang ingin Anda beli. (faktor penentu: barang yang dibeli · hasil: memilih pasar atau pusat perbelanjaan)
+=ja
+文法解説
+⟦từ ... đến⟧：「～から～まで」という意味で、文中で述べた一定の時間・空間の始点と終点を表すために使います。
+⟦Từ tầng một đến tầng sáu của tòa tháp là khu mua sắm.⟧ → ビルの1階から6階まではショッピングモールだ。 · ⟦Từ nhà tôi đến trung tâm thương mại rất xa.⟧ → 私の家からデパートまではとても遠い。 · ⟦Ngày nào anh ấy cũng đi bộ từ nhà đến trường.⟧ → 毎日彼は家から学校まで歩いて行く。 · ⟦Ngày nào chị Nga cũng đọc sách ở thư viện từ sáng đến chiều.⟧ → 毎日ガーは朝から午後まで図書館で本を読む。 · ⟦Buổi sáng, chúng tôi lên lớp từ 8 giờ đến 12 giờ.⟧ → 午前中、私たちは8時から12時まで授業を受ける。
+⟦tùy⟧、⟦tùy thuộc⟧：「～によって」「～次第だ」という意味で、依存関係とその結果を表すために使います。
+⟦Tùy nhu cầu sử dụng mà khách hàng có thể chọn tầng để mua.⟧ → 必要に応じて、客は買い物をする階を選ぶことができる。（決定要素：必要 · 決定の結果：買い物する階を選ぶ） · ⟦Việc đi chợ hoặc đi trung tâm thương mại là tùy vào việc bạn định mua thứ gì.⟧ → 市場に行くかデパートに行くかは、どんな物を買うかによる。（決定要素：どんな物を買うか · 決定の結果：市場かデパートかを決める）
+=pl
+Objaśnienia gramatyczne
+⟦từ ... đến⟧: „od ~ do ~” – oznacza punkt początkowy i końcowy określonego czasu lub przestrzeni.
+⟦Từ tầng một đến tầng sáu của tòa tháp là khu mua sắm.⟧ → Od pierwszego do szóstego piętra wieżowca jest strefa handlowa. · ⟦Từ nhà tôi đến trung tâm thương mại rất xa.⟧ → Od mojego domu do centrum handlowego jest bardzo daleko. · ⟦Ngày nào anh ấy cũng đi bộ từ nhà đến trường.⟧ → Codziennie chodzi pieszo z domu do szkoły. · ⟦Ngày nào chị Nga cũng đọc sách ở thư viện từ sáng đến chiều.⟧ → Nga codziennie czyta w bibliotece od rana do popołudnia. · ⟦Buổi sáng, chúng tôi lên lớp từ 8 giờ đến 12 giờ.⟧ → Rano mamy zajęcia od 8 do 12.
+⟦tùy⟧, ⟦tùy thuộc⟧: „w zależności od, zależeć od” – wyraża relację zależności i jej wynik.
+⟦Tùy nhu cầu sử dụng mà khách hàng có thể chọn tầng để mua.⟧ → W zależności od potrzeb klienci mogą wybrać piętro, na którym zrobią zakupy. (czynnik decydujący: potrzeby · wynik: wybór piętra) · ⟦Việc đi chợ hoặc đi trung tâm thương mại là tùy vào việc bạn định mua thứ gì.⟧ → To, czy iść na targ, czy do centrum handlowego, zależy od tego, co chcesz kupić. (czynnik decydujący: co kupić · wynik: wybór między targiem a centrum)
+@@ pdf-grammar-efd18f785d98045d#0
+=cs
+Gramatický výklad
+⟦vì thế⟧: „proto, a tak“ – v příčinném vztahu uvádí následek.
+⟦Trong tủ đã hết nhẵn hoa quả, vì thế Nga đi chợ mua một vài cân cam.⟧ → V lednici už nezbylo žádné ovoce, a tak Nga jde na trh koupit pár kil pomerančů. (příčina: v lednici není ovoce · následek: Nga jde koupit pomeranče) · ⟦Chợ rất xa, vì thế chúng tôi phải đi bằng taxi.⟧ → Trh je velmi daleko, proto jsme museli jet taxíkem. (příčina: trh je daleko · následek: musíme jet taxíkem) · ⟦Tôi không có nhiều tiền, vì thế rất ít khi đi mua sắm ở siêu thị.⟧ → Nemám moc peněz, proto nakupuji v supermarketu jen velmi zřídka. (příčina: málo peněz · následek: zřídka nakupuji v supermarketu)
+⟦thôi⟧: „jen, no tak, přece“ – zdůrazňuje vlastní názor, zejména při přemlouvání posluchače, aby souhlasil.
+⟦Bốn mươi nghìn một cân thôi!⟧ → Dejte to za čtyřicet tisíc za kilo! (přemlouvá k: 40 000 dongů za kilo) · ⟦Em bớt ít thôi chứ!⟧ → Tak trochu slevíš, ne? (přemlouvá k: trochu slevit) · ⟦Em nói chầm chậm thôi chứ!⟧ → Mluv přece trochu pomaleji! (přemlouvá k: mluvit pomalu) · ⟦Chị chỉ đến gặp em vào buổi chiều được thôi!⟧ → Můžu za tebou přijít jen odpoledne, to přece jde! (přemlouvá k: setkání odpoledne)
+=zh_cn
+语法解说
+⟦vì thế⟧：意为“所以、因此”，在因果关系中用于表示结果。
+⟦Trong tủ đã hết nhẵn hoa quả, vì thế Nga đi chợ mua một vài cân cam.⟧ → 冰箱里一个水果都没有了，所以阿娥去市场买几公斤橙子。（原因：冰箱没有水果 · 结果：阿娥去买橙子） · ⟦Chợ rất xa, vì thế chúng tôi phải đi bằng taxi.⟧ → 市场很远，所以我们得打车去。（原因：市场太远 · 结果：得打车） · ⟦Tôi không có nhiều tiền, vì thế rất ít khi đi mua sắm ở siêu thị.⟧ → 我钱不多，所以很少去超市购物。（原因：钱不多 · 结果：很少去超市）
+⟦thôi⟧：意为“就……吧、算了”，主要在说服听话人同意的过程中用于强调自己的意见。
+⟦Bốn mươi nghìn một cân thôi!⟧ → 一公斤四万盾吧！（说服对方同意：一公斤四万盾） · ⟦Em bớt ít thôi chứ!⟧ → 你就便宜一点嘛！（说服对方同意：便宜一点） · ⟦Em nói chầm chậm thôi chứ!⟧ → 你说慢一点嘛！（说服对方同意：说慢一点） · ⟦Chị chỉ đến gặp em vào buổi chiều được thôi!⟧ → 我只能下午来见你啦！（说服对方同意：下午见面）
+=zh
+文法解說
+⟦vì thế⟧：意為「所以、因此」，在因果關係中用於表示結果。
+⟦Trong tủ đã hết nhẵn hoa quả, vì thế Nga đi chợ mua một vài cân cam.⟧ → 冰箱裡一個水果都沒有了，所以阿娥去市場買幾公斤柳橙。（原因：冰箱沒有水果 · 結果：阿娥去買柳橙） · ⟦Chợ rất xa, vì thế chúng tôi phải đi bằng taxi.⟧ → 市場很遠，所以我們得搭計程車去。（原因：市場太遠 · 結果：得搭計程車） · ⟦Tôi không có nhiều tiền, vì thế rất ít khi đi mua sắm ở siêu thị.⟧ → 我錢不多，所以很少去超市購物。（原因：錢不多 · 結果：很少去超市）
+⟦thôi⟧：意為「就……吧、算了」，主要在說服聽話者同意的過程中用於強調自己的意見。
+⟦Bốn mươi nghìn một cân thôi!⟧ → 一公斤四萬盾吧！（說服對方同意：一公斤四萬盾） · ⟦Em bớt ít thôi chứ!⟧ → 你就算便宜一點嘛！（說服對方同意：便宜一點） · ⟦Em nói chầm chậm thôi chứ!⟧ → 你說慢一點嘛！（說服對方同意：說慢一點） · ⟦Chị chỉ đến gặp em vào buổi chiều được thôi!⟧ → 我只能下午來見你啦！（說服對方同意：下午見面）
+=en
+Grammar notes
+⟦vì thế⟧: "so, therefore" – introduces the result in a cause-and-effect relationship.
+⟦Trong tủ đã hết nhẵn hoa quả, vì thế Nga đi chợ mua một vài cân cam.⟧ → There's no fruit left at all in the fridge, so Nga goes to the market to buy a few kilos of oranges. (cause: no fruit in the fridge · result: Nga goes to buy oranges) · ⟦Chợ rất xa, vì thế chúng tôi phải đi bằng taxi.⟧ → The market is very far, so we had to take a taxi. (cause: the market is far · result: we have to take a taxi) · ⟦Tôi không có nhiều tiền, vì thế rất ít khi đi mua sắm ở siêu thị.⟧ → I don't have much money, so I very rarely shop at the supermarket. (cause: not much money · result: rarely shop at the supermarket)
+⟦thôi⟧: "just, come on, only" – mainly used to stress one's own opinion while persuading the listener to agree.
+⟦Bốn mươi nghìn một cân thôi!⟧ → Just forty thousand a kilo! (persuading toward: 40,000 dong a kilo) · ⟦Em bớt ít thôi chứ!⟧ → Come on, knock a little off! (persuading toward: a small discount) · ⟦Em nói chầm chậm thôi chứ!⟧ → Come on, speak a bit more slowly! (persuading toward: speaking slowly) · ⟦Chị chỉ đến gặp em vào buổi chiều được thôi!⟧ → I can only come and see you in the afternoon, OK! (persuading toward: meeting in the afternoon)
+=fr
+Notes de grammaire
+⟦vì thế⟧ : « c'est pourquoi, donc » – introduit la conséquence dans une relation de cause à effet.
+⟦Trong tủ đã hết nhẵn hoa quả, vì thế Nga đi chợ mua một vài cân cam.⟧ → Il n'y a plus un seul fruit dans le frigo, c'est pourquoi Nga va au marché acheter quelques kilos d'oranges. (cause : plus de fruits · conséquence : Nga va acheter des oranges) · ⟦Chợ rất xa, vì thế chúng tôi phải đi bằng taxi.⟧ → Le marché est très loin, donc nous avons dû prendre un taxi. (cause : marché éloigné · conséquence : prendre un taxi) · ⟦Tôi không có nhiều tiền, vì thế rất ít khi đi mua sắm ở siêu thị.⟧ → Je n'ai pas beaucoup d'argent, c'est pourquoi je fais très rarement mes courses au supermarché. (cause : peu d'argent · conséquence : rarement au supermarché)
+⟦thôi⟧ : « allez, juste, seulement » – sert surtout à insister sur son propre avis en cherchant à persuader l'interlocuteur.
+⟦Bốn mươi nghìn một cân thôi!⟧ → Allez, quarante mille le kilo ! (persuader de : 40 000 dongs le kilo) · ⟦Em bớt ít thôi chứ!⟧ → Allez, fais-moi un petit rabais ! (persuader de : baisser un peu) · ⟦Em nói chầm chậm thôi chứ!⟧ → Parle un peu plus lentement, voyons ! (persuader de : parler lentement) · ⟦Chị chỉ đến gặp em vào buổi chiều được thôi!⟧ → Je ne peux venir te voir que l'après-midi, d'accord ! (persuader de : se voir l'après-midi)
+=de
+Grammatikerläuterungen
+⟦vì thế⟧: „deshalb, daher“ – führt in einem Ursache-Wirkungs-Verhältnis die Folge ein.
+⟦Trong tủ đã hết nhẵn hoa quả, vì thế Nga đi chợ mua một vài cân cam.⟧ → Im Kühlschrank ist überhaupt kein Obst mehr, deshalb geht Nga auf den Markt, um ein paar Kilo Orangen zu kaufen. (Ursache: kein Obst · Folge: Nga kauft Orangen) · ⟦Chợ rất xa, vì thế chúng tôi phải đi bằng taxi.⟧ → Der Markt ist sehr weit, deshalb mussten wir ein Taxi nehmen. (Ursache: Markt weit weg · Folge: Taxi nehmen) · ⟦Tôi không có nhiều tiền, vì thế rất ít khi đi mua sắm ở siêu thị.⟧ → Ich habe nicht viel Geld, daher kaufe ich nur sehr selten im Supermarkt ein. (Ursache: wenig Geld · Folge: selten im Supermarkt)
+⟦thôi⟧: „doch, nur, na komm“ – dient vor allem dazu, die eigene Meinung zu betonen, wenn man den Zuhörer zur Zustimmung überreden will.
+⟦Bốn mươi nghìn một cân thôi!⟧ → Nur vierzigtausend das Kilo! (Überredung zu: 40.000 Dong pro Kilo) · ⟦Em bớt ít thôi chứ!⟧ → Na komm, lass ein bisschen nach! (Überredung zu: kleiner Rabatt) · ⟦Em nói chầm chậm thôi chứ!⟧ → Sprich doch ein bisschen langsamer! (Überredung zu: langsam sprechen) · ⟦Chị chỉ đến gặp em vào buổi chiều được thôi!⟧ → Ich kann nur am Nachmittag zu dir kommen, ja! (Überredung zu: Treffen am Nachmittag)
+=hu
+Nyelvtani magyarázat
+⟦vì thế⟧: „ezért, így hát” – ok-okozati viszonyban az okozatot vezeti be.
+⟦Trong tủ đã hết nhẵn hoa quả, vì thế Nga đi chợ mua một vài cân cam.⟧ → A hűtőben egyáltalán nincs már gyümölcs, ezért Nga elmegy a piacra pár kiló narancsot venni. (ok: nincs gyümölcs · okozat: Nga narancsot vesz) · ⟦Chợ rất xa, vì thế chúng tôi phải đi bằng taxi.⟧ → A piac nagyon messze van, ezért taxival kellett mennünk. (ok: messze a piac · okozat: taxival megyünk) · ⟦Tôi không có nhiều tiền, vì thế rất ít khi đi mua sắm ở siêu thị.⟧ → Nincs sok pénzem, ezért nagyon ritkán vásárolok a szupermarketben. (ok: kevés pénz · okozat: ritkán járok szupermarketbe)
+⟦thôi⟧: „csak, ugyan már, na” – főként arra szolgál, hogy a beszélő saját véleményét hangsúlyozza, miközben a hallgatót egyetértésre próbálja rábeszélni.
+⟦Bốn mươi nghìn một cân thôi!⟧ → Csak negyvenezer kilója! (rábeszélés: 40 000 dong kilója) · ⟦Em bớt ít thôi chứ!⟧ → Na, engedj egy kicsit az árból! (rábeszélés: kis engedmény) · ⟦Em nói chầm chậm thôi chứ!⟧ → Beszélj már egy kicsit lassabban! (rábeszélés: lassabb beszéd) · ⟦Chị chỉ đến gặp em vào buổi chiều được thôi!⟧ → Csak délután tudok hozzád menni, jó? (rábeszélés: délutáni találkozó)
+=id
+Penjelasan tata bahasa
+⟦vì thế⟧: "karena itu, oleh sebab itu" – menyatakan akibat dalam hubungan sebab-akibat.
+⟦Trong tủ đã hết nhẵn hoa quả, vì thế Nga đi chợ mua một vài cân cam.⟧ → Di kulkas sudah tidak ada buah sama sekali, karena itu Nga pergi ke pasar membeli beberapa kilo jeruk. (sebab: tidak ada buah · akibat: Nga membeli jeruk) · ⟦Chợ rất xa, vì thế chúng tôi phải đi bằng taxi.⟧ → Pasarnya sangat jauh, karena itu kami harus naik taksi. (sebab: pasar jauh · akibat: harus naik taksi) · ⟦Tôi không có nhiều tiền, vì thế rất ít khi đi mua sắm ở siêu thị.⟧ → Saya tidak punya banyak uang, karena itu jarang sekali berbelanja di supermarket. (sebab: uang sedikit · akibat: jarang ke supermarket)
+⟦thôi⟧: "saja, deh, lah" – terutama digunakan untuk menegaskan pendapat sendiri sambil membujuk lawan bicara agar setuju.
+⟦Bốn mươi nghìn một cân thôi!⟧ → Empat puluh ribu sekilo saja! (membujuk agar setuju: 40.000 dong per kilo) · ⟦Em bớt ít thôi chứ!⟧ → Kurangi sedikit dong! (membujuk agar setuju: memberi potongan) · ⟦Em nói chầm chậm thôi chứ!⟧ → Bicaranya pelan-pelan saja dong! (membujuk agar setuju: bicara pelan) · ⟦Chị chỉ đến gặp em vào buổi chiều được thôi!⟧ → Aku cuma bisa datang menemuimu sore hari, ya! (membujuk agar setuju: bertemu sore hari)
+=ja
+文法解説
+⟦vì thế⟧：「だから、それで」という意味で、因果関係において結果を表すために使います。
+⟦Trong tủ đã hết nhẵn hoa quả, vì thế Nga đi chợ mua một vài cân cam.⟧ → 冷蔵庫に果物が一つもないので、ガーはオレンジを数キロ買いに市場へ行く。（原因：冷蔵庫に果物がない · 結果：ガーはオレンジを買いに市場へ行く） · ⟦Chợ rất xa, vì thế chúng tôi phải đi bằng taxi.⟧ → 市場がとても遠いので、私たちはタクシーに乗らなければならなかった。（原因：市場が遠い · 結果：タクシーに乗る） · ⟦Tôi không có nhiều tiền, vì thế rất ít khi đi mua sắm ở siêu thị.⟧ → お金があまりないので、スーパーにはごくたまにしか買い物に行かない。（原因：お金があまりない · 結果：スーパーにはたまにしか行かない）
+⟦thôi⟧：「もう、～でいいでしょ」という意味で、主に聞き手の同意を得ようと説得する過程で自分の意見を強調するために使います。
+⟦Bốn mươi nghìn một cân thôi!⟧ → 1キロ4万ドンにしてください！（説得する事柄：1キロ4万ドン） · ⟦Em bớt ít thôi chứ!⟧ → 少しまけてくれるよね！（説得する事柄：少しまける） · ⟦Em nói chầm chậm thôi chứ!⟧ → もっとゆっくり話してよ！（説得する事柄：ゆっくり話す） · ⟦Chị chỉ đến gặp em vào buổi chiều được thôi!⟧ → 午後にしか会いに行けないのよ！（説得する事柄：午後に会いに行く）
+=pl
+Objaśnienia gramatyczne
+⟦vì thế⟧: „dlatego, więc” – w związku przyczynowo-skutkowym wprowadza skutek.
+⟦Trong tủ đã hết nhẵn hoa quả, vì thế Nga đi chợ mua một vài cân cam.⟧ → W lodówce nie ma już ani jednego owocu, więc Nga idzie na targ kupić kilka kilo pomarańczy. (przyczyna: brak owoców · skutek: Nga kupuje pomarańcze) · ⟦Chợ rất xa, vì thế chúng tôi phải đi bằng taxi.⟧ → Targ jest bardzo daleko, dlatego musieliśmy jechać taksówką. (przyczyna: daleki targ · skutek: jazda taksówką) · ⟦Tôi không có nhiều tiền, vì thế rất ít khi đi mua sắm ở siêu thị.⟧ → Nie mam dużo pieniędzy, dlatego bardzo rzadko robię zakupy w supermarkecie. (przyczyna: mało pieniędzy · skutek: rzadko w supermarkecie)
+⟦thôi⟧: „no, tylko, przecież” – służy głównie do podkreślenia własnego zdania przy przekonywaniu słuchacza do zgody.
+⟦Bốn mươi nghìn một cân thôi!⟧ → Tylko czterdzieści tysięcy za kilo! (przekonywanie do: 40 000 dongów za kilo) · ⟦Em bớt ít thôi chứ!⟧ → No, opuść trochę! (przekonywanie do: małej obniżki) · ⟦Em nói chầm chậm thôi chứ!⟧ → Mów no trochę wolniej! (przekonywanie do: wolniejszego mówienia) · ⟦Chị chỉ đến gặp em vào buổi chiều được thôi!⟧ → Mogę do ciebie przyjść tylko po południu, dobrze? (przekonywanie do: spotkania po południu)
+@@ pdf-grammar-5ed4c11b7856407b#0
+=cs
+Gramatický výklad
+⟦thuộc⟧: „patřit (k), náležet“ – vyjadřuje vlastnictví nebo oblast, do které daný objekt spadá.
+⟦Làng cổ Bát Tràng thuộc huyện Gia Lâm, Hà Nội.⟧ → Stará vesnice Bát Tràng patří k okresu Gia Lâm v Hanoji. · ⟦Chợ Đồng Đăng thuộc tỉnh Lạng Sơn.⟧ → Trh Đồng Đăng patří k provincii Lạng Sơn. · ⟦Ngôi nhà này đã thuộc về chủ mới.⟧ → Tento dům už patří novému majiteli.
+⟦không ai không⟧: „není nikdo, kdo by ne~“ – zdůrazňuje, že to, co je uvedeno ve druhé části věty, všichni znají nebo dělají. Má podobný význam jako ⟦mọi người đều⟧ („všichni“).
+⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, không ai không biết.⟧ → Mezi Vietnamci není nikdo, kdo by neznal proslulost keramické vesnice Bát Tràng. = ⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, mọi người đều biết.⟧ → Proslulost keramické vesnice Bát Tràng znají všichni Vietnamci.
+⟦Không ai không biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Není nikdo, kdo by nevěděl, že naše třída zítra jede na exkurzi do staré vesnice Bát Tràng. = ⟦Mọi người đều biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Všichni vědí, že naše třída zítra jede do Bát Tràng.
+=zh_cn
+语法解说
+⟦thuộc⟧：意为“属于”，用于表示某一对象的所属或管辖范围。
+⟦Làng cổ Bát Tràng thuộc huyện Gia Lâm, Hà Nội.⟧ → 钵场古村属于河内嘉林县。 · ⟦Chợ Đồng Đăng thuộc tỉnh Lạng Sơn.⟧ → 同登市场属于谅山省。 · ⟦Ngôi nhà này đã thuộc về chủ mới.⟧ → 这栋房子已经归新主人所有。
+⟦không ai không⟧：意为“没有人不……”，用于强调句子后半部分所说的事情或行为是所有人都知道或都在做的。⟦Không ai không⟧ 与 ⟦mọi người đều⟧（大家都……）意思相近。
+⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, không ai không biết.⟧ → 越南人没有人不知道钵场陶瓷村的名气。 = ⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, mọi người đều biết.⟧ → 越南人都知道钵场陶瓷村的名气。
+⟦Không ai không biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → 没有人不知道明天我们班要去参观钵场古村。 = ⟦Mọi người đều biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → 大家都知道明天我们班要去参观钵场古村。
+=zh
+文法解說
+⟦thuộc⟧：意為「屬於」，用於表示某一對象的所屬或管轄範圍。
+⟦Làng cổ Bát Tràng thuộc huyện Gia Lâm, Hà Nội.⟧ → 缽場古村屬於河內嘉林縣。 · ⟦Chợ Đồng Đăng thuộc tỉnh Lạng Sơn.⟧ → 同登市場屬於諒山省。 · ⟦Ngôi nhà này đã thuộc về chủ mới.⟧ → 這棟房子已經歸新屋主所有。
+⟦không ai không⟧：意為「沒有人不……」，用於強調句子後半部分所說的事情或行為是所有人都知道或都在做的。⟦Không ai không⟧ 與 ⟦mọi người đều⟧（大家都……）意思相近。
+⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, không ai không biết.⟧ → 越南人沒有人不知道缽場陶瓷村的名氣。 = ⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, mọi người đều biết.⟧ → 越南人都知道缽場陶瓷村的名氣。
+⟦Không ai không biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → 沒有人不知道明天我們班要去參觀缽場古村。 = ⟦Mọi người đều biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → 大家都知道明天我們班要去參觀缽場古村。
+=en
+Grammar notes
+⟦thuộc⟧: "to belong to, be part of" – indicates the ownership or the area to which something belongs.
+⟦Làng cổ Bát Tràng thuộc huyện Gia Lâm, Hà Nội.⟧ → The ancient village of Bát Tràng belongs to Gia Lâm district, Hanoi. · ⟦Chợ Đồng Đăng thuộc tỉnh Lạng Sơn.⟧ → Đồng Đăng market belongs to Lạng Sơn province. · ⟦Ngôi nhà này đã thuộc về chủ mới.⟧ → This house now belongs to a new owner.
+⟦không ai không⟧: "there is no one who doesn't ~" – emphasizes that the matter or action in the second half of the sentence is known or done by everyone. ⟦Không ai không⟧ has a similar meaning to ⟦mọi người đều⟧ ("everyone ~").
+⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, không ai không biết.⟧ → Among Vietnamese people, there's no one who doesn't know how famous Bát Tràng pottery village is. = ⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, mọi người đều biết.⟧ → All Vietnamese people know how famous Bát Tràng pottery village is.
+⟦Không ai không biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → There's no one who doesn't know our class is visiting the ancient village of Bát Tràng tomorrow. = ⟦Mọi người đều biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Everyone knows our class is visiting Bát Tràng tomorrow.
+=fr
+Notes de grammaire
+⟦thuộc⟧ : « appartenir à, relever de » – indique l'appartenance ou le domaine dont relève un objet.
+⟦Làng cổ Bát Tràng thuộc huyện Gia Lâm, Hà Nội.⟧ → Le village ancien de Bát Tràng relève du district de Gia Lâm, à Hanoï. · ⟦Chợ Đồng Đăng thuộc tỉnh Lạng Sơn.⟧ → Le marché de Đồng Đăng se trouve dans la province de Lạng Sơn. · ⟦Ngôi nhà này đã thuộc về chủ mới.⟧ → Cette maison appartient désormais à un nouveau propriétaire.
+⟦không ai không⟧ : « il n'y a personne qui ne ~ pas » – souligne que ce qui est dit dans la seconde partie de la phrase est connu ou fait par tout le monde. ⟦Không ai không⟧ a un sens proche de ⟦mọi người đều⟧ (« tout le monde »).
+⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, không ai không biết.⟧ → Chez les Vietnamiens, il n'y a personne qui ne connaisse la renommée du village de poterie de Bát Tràng. = ⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, mọi người đều biết.⟧ → Tous les Vietnamiens connaissent la renommée du village de poterie de Bát Tràng.
+⟦Không ai không biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Il n'y a personne qui ne sache que notre classe visite demain le village ancien de Bát Tràng. = ⟦Mọi người đều biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Tout le monde sait que notre classe visite Bát Tràng demain.
+=de
+Grammatikerläuterungen
+⟦thuộc⟧: „gehören zu“ – bezeichnet Besitz oder den Bereich, zu dem etwas gehört.
+⟦Làng cổ Bát Tràng thuộc huyện Gia Lâm, Hà Nội.⟧ → Das alte Dorf Bát Tràng gehört zum Bezirk Gia Lâm in Hanoi. · ⟦Chợ Đồng Đăng thuộc tỉnh Lạng Sơn.⟧ → Der Markt Đồng Đăng gehört zur Provinz Lạng Sơn. · ⟦Ngôi nhà này đã thuộc về chủ mới.⟧ → Dieses Haus gehört jetzt einem neuen Besitzer.
+⟦không ai không⟧: „es gibt niemanden, der nicht ~“ – betont, dass das in der zweiten Satzhälfte Genannte allen bekannt ist oder von allen getan wird. ⟦Không ai không⟧ hat eine ähnliche Bedeutung wie ⟦mọi người đều⟧ („alle“).
+⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, không ai không biết.⟧ → Unter Vietnamesen gibt es niemanden, der den Ruhm des Töpferdorfs Bát Tràng nicht kennt. = ⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, mọi người đều biết.⟧ → Alle Vietnamesen kennen den Ruhm des Töpferdorfs Bát Tràng.
+⟦Không ai không biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Es gibt niemanden, der nicht weiß, dass unsere Klasse morgen das alte Dorf Bát Tràng besucht. = ⟦Mọi người đều biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Alle wissen, dass unsere Klasse morgen Bát Tràng besucht.
+=hu
+Nyelvtani magyarázat
+⟦thuộc⟧: „tartozik (valamihez)” – egy dolog tulajdonát vagy azt a területet jelöli, amelyhez tartozik.
+⟦Làng cổ Bát Tràng thuộc huyện Gia Lâm, Hà Nội.⟧ → Bát Tràng ősi falu Hanoi Gia Lâm járásához tartozik. · ⟦Chợ Đồng Đăng thuộc tỉnh Lạng Sơn.⟧ → A Đồng Đăng piac Lạng Sơn tartományhoz tartozik. · ⟦Ngôi nhà này đã thuộc về chủ mới.⟧ → Ez a ház már az új tulajdonosé.
+⟦không ai không⟧: „nincs senki, aki ne ~” – azt hangsúlyozza, hogy a mondat második felében szereplő dolgot mindenki tudja vagy teszi. A ⟦Không ai không⟧ jelentése hasonló a ⟦mọi người đều⟧ („mindenki”) kifejezéséhez.
+⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, không ai không biết.⟧ → A vietnámiak közt nincs senki, aki ne ismerné a Bát Tràng-i fazekasfalu hírnevét. = ⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, mọi người đều biết.⟧ → Minden vietnámi ismeri a Bát Tràng-i fazekasfalu hírnevét.
+⟦Không ai không biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Nincs senki, aki ne tudná, hogy az osztályunk holnap Bát Tràng ősi faluba megy kirándulni. = ⟦Mọi người đều biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Mindenki tudja, hogy az osztályunk holnap Bát Tràngba megy.
+=id
+Penjelasan tata bahasa
+⟦thuộc⟧: "termasuk, milik" – menunjukkan kepemilikan atau wilayah yang menaungi suatu objek.
+⟦Làng cổ Bát Tràng thuộc huyện Gia Lâm, Hà Nội.⟧ → Desa kuno Bát Tràng termasuk Kabupaten Gia Lâm, Hanoi. · ⟦Chợ Đồng Đăng thuộc tỉnh Lạng Sơn.⟧ → Pasar Đồng Đăng termasuk Provinsi Lạng Sơn. · ⟦Ngôi nhà này đã thuộc về chủ mới.⟧ → Rumah ini sudah menjadi milik pemilik baru.
+⟦không ai không⟧: "tidak ada yang tidak ~" – menegaskan bahwa hal atau tindakan di bagian akhir kalimat diketahui atau dilakukan oleh semua orang. ⟦Không ai không⟧ bermakna mirip dengan ⟦mọi người đều⟧ ("semua orang ~").
+⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, không ai không biết.⟧ → Bagi orang Vietnam, tidak ada yang tidak tahu ketenaran desa gerabah Bát Tràng. = ⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, mọi người đều biết.⟧ → Semua orang Vietnam tahu ketenaran desa gerabah Bát Tràng.
+⟦Không ai không biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Tidak ada yang tidak tahu bahwa besok kelas kami akan berkunjung ke desa kuno Bát Tràng. = ⟦Mọi người đều biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Semua orang tahu besok kelas kami akan berkunjung ke Bát Tràng.
+=ja
+文法解説
+⟦thuộc⟧：「～に属する」という意味で、ある対象の所有や支配の範囲を表すために使います。
+⟦Làng cổ Bát Tràng thuộc huyện Gia Lâm, Hà Nội.⟧ → バッチャン伝統村はハノイ市ザーラム県に属する。 · ⟦Chợ Đồng Đăng thuộc tỉnh Lạng Sơn.⟧ → ドンダン市場はランソン省に属する。 · ⟦Ngôi nhà này đã thuộc về chủ mới.⟧ → この家は新しい持ち主のものになった。
+⟦không ai không⟧：「～しない人はいない」という意味で、文の後半で述べる事柄や行動は、すべての人が知っている、またはそうしていることを強調するために使います。⟦Không ai không⟧ は ⟦mọi người đều⟧（すべての人が～）と似た意味を持ちます。
+⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, không ai không biết.⟧ → ベトナム人でバッチャン陶器村の名声を知らない人はいない。 = ⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, mọi người đều biết.⟧ → ベトナム人はみな、バッチャン陶器村の名声を知っている。
+⟦Không ai không biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → 明日私たちのクラスがバッチャン伝統村を見学に行くことを知らない人はいない。 = ⟦Mọi người đều biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → 皆、明日私たちのクラスがバッチャン伝統村を見学に行くことを知っている。
+=pl
+Objaśnienia gramatyczne
+⟦thuộc⟧: „należeć do” – wskazuje własność lub obszar, do którego dany obiekt przynależy.
+⟦Làng cổ Bát Tràng thuộc huyện Gia Lâm, Hà Nội.⟧ → Stara wieś Bát Tràng należy do dystryktu Gia Lâm w Hanoi. · ⟦Chợ Đồng Đăng thuộc tỉnh Lạng Sơn.⟧ → Targ Đồng Đăng należy do prowincji Lạng Sơn. · ⟦Ngôi nhà này đã thuộc về chủ mới.⟧ → Ten dom należy już do nowego właściciela.
+⟦không ai không⟧: „nie ma nikogo, kto by nie ~” – podkreśla, że to, co podano w drugiej części zdania, wszyscy znają lub robią. ⟦Không ai không⟧ ma podobne znaczenie do ⟦mọi người đều⟧ („wszyscy”).
+⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, không ai không biết.⟧ → Wśród Wietnamczyków nie ma nikogo, kto nie znałby sławy wsi garncarskiej Bát Tràng. = ⟦Đối với người dân Việt Nam, sự nổi tiếng của làng gốm Bát Tràng, mọi người đều biết.⟧ → Wszyscy Wietnamczycy znają sławę wsi garncarskiej Bát Tràng.
+⟦Không ai không biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Nie ma nikogo, kto by nie wiedział, że jutro nasza klasa jedzie zwiedzać starą wieś Bát Tràng. = ⟦Mọi người đều biết ngày mai lớp tôi sẽ đi tham quan làng cổ Bát Tràng.⟧ → Wszyscy wiedzą, że jutro nasza klasa jedzie do Bát Tràng.

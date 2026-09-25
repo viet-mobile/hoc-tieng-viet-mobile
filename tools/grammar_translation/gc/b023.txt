@@ -1,0 +1,191 @@
+@@ pdf-grammar-e6038bcdbed51bb9#0
+=cs
+Klíčový výraz: ⟦hễ ~ thì ~⟧
+⟦hễ ~ thì ~⟧ znamená „kdykoli ~, (vždy) ~“ a vyjadřuje trvalý jev, jednání či událost, které nastávají za určité podmínky.
+❶ ⟦Bạn ấy hễ gặp mình thì chào hỏi rất vui vẻ như được gặp lần đầu tiên.⟧ — Kdykoli mě potká, pozdraví mě tak radostně, jako by mě viděl poprvé.
+❷ Ⓐ ⟦Thái độ học tập của các học sinh tham dự lớp học đó thế nào?⟧ — Jaký přístup k učení mají žáci v té třídě? Ⓑ ⟦Tốt lắm! Hễ được cô hỏi thì mọi học sinh đều hết sức cố gắng trả lời.⟧ — Výborný! Kdykoli se učitelka zeptá, všichni žáci se ze všech sil snaží odpovědět.
+Výrazy k dopravním potížím při nepříznivém počasí: ⟦đường bị tắc⟧ silnice je ucpaná | ⟦đường xe bị sạt lở⟧ silnici zavalil sesuv | ⟦đường thủy bị chắn⟧ vodní cesta je zablokovaná | ⟦sân bay bị đóng cửa⟧ letiště je zavřené | ⟦đường sắt bị tàn phá⟧ železnice je zničená
+Rozhovor: Termín služební cesty je potvrzen na příští týden a Min-ho telefonuje s Mai, aby si ověřil očekávané počasí a dopravní situaci.
+Min-ho: ⟦Chào chị, tuần sau tôi sẽ đến đó công tác. Nghe nói hiện nay thời tiết ở đó rất dễ chịu, phải không chị?⟧ — Dobrý den, příští týden k vám přijedu služebně. Prý je u vás teď velmi příjemné počasí, že?
+Mai: ⟦Bây giờ trời đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão.⟧ — Teď je hezky, ale podle předpovědi nás příští týden možná zasáhne tajfun.
+Min-ho: ⟦Thế à? Không biết giao thông có bị ảnh hưởng gì hay không nhỉ?⟧ — Opravdu? Bude to mít vliv na dopravu?
+Mai: ⟦Ở đây, hễ có bão thì sân bay bị đóng cửa.⟧ — Tady kdykoli přijde tajfun, letiště se zavře.
+Min-ho: ⟦À, thế thì tôi có thể đến đó bằng cách nào?⟧ — Aha, tak jak se tam tedy dostanu?
+Mai: ⟦Anh nên đi xe lửa, nếu không thì anh sẽ phải hoãn lịch trình tới tuần sau nữa.⟧ — Měl byste jet vlakem, jinak budete muset cestu odložit až na další týden.
+Min-ho: ⟦Vâng. Cảm ơn chị đã cho biết thông tin rất cần thiết.⟧ — Dobře. Děkuji za velmi potřebné informace.
+Procvičování — jaké je počasí: ⟦đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão⟧ (hezky, ale příští týden možná tajfun) / ⟦mưa nhỏ nhưng nghe nói là mưa sẽ ngày càng to hơn⟧ (mrholí, ale prý bude pršet čím dál víc); vliv na dopravu: ⟦hễ có bão thì sân bay bị đóng cửa⟧ (při tajfunu se zavře letiště) / ⟦hễ mưa to thì đường hay bị tắc⟧ (při silném dešti bývají silnice ucpané); jak se tam dostat: ⟦đi xe lửa⟧ (vlakem) / ⟦đi máy bay⟧ (letadlem); jinak: ⟦hoãn lịch trình tới tuần sau nữa⟧ (odložit cestu o další týden) / ⟦mất nhiều thời gian trên đường⟧ (ztratit na cestě hodně času).
+Vzor: Ⓐ ⟦Khi có bài tập khó thì em thường làm thế nào?⟧ — Co obvykle děláš, když máš těžký úkol? Ⓑ ⟦Hễ có bài tập khó thì em thường nhờ các thầy cô giải thích cho.⟧ — Kdykoli mám těžký úkol, obvykle požádám učitele o vysvětlení.
+❶ Ⓐ ⟦Khi có thời gian rỗi thì anh thường làm gì?⟧ — Co obvykle děláš, když máš volno? Ⓑ ⟦Hễ có thời gian rỗi thì anh thường đi thăm các di tích lịch sử trong thành phố.⟧ — Kdykoli mám volno, chodím obvykle na historické památky ve městě.
+❷ Ⓐ ⟦Khi sang TP. Hồ Chí Minh thì chị thường đến quán phở nào?⟧ — Do které phở restaurace obvykle chodíš, když jedeš do Ho Či Minova Města? Ⓑ ⟦Hễ sang TP. Hồ Chí Minh thì chị thường đến ăn phở ở quán phở Hoa Hương.⟧ — Kdykoli jedu do Ho Či Minova Města, chodím na phở do restaurace Hoa Hương.
+Nová slovíčka: ⟦chắn⟧ blokovat | ⟦sạt lở⟧ sesout se | ⟦tàn phá⟧ zpustošit | ⟦thái độ⟧ postoj | ⟦hết sức⟧ ze všech sil | ⟦di tích⟧ památka | ⟦ảnh hưởng⟧ vliv, ovlivnit | ⟦hoãn⟧ odložit | ⟦lịch trình⟧ program cesty | ⟦cần thiết⟧ nezbytný
+=zh_cn
+核心表达：⟦hễ ~ thì ~⟧
+⟦hễ ~ thì ~⟧ 意为“一……就总是……”，表示在一定条件下经常出现的现象、行为或事情。
+❶ ⟦Bạn ấy hễ gặp mình thì chào hỏi rất vui vẻ như được gặp lần đầu tiên.⟧ —— 那个朋友一见到我，总是像第一次见面一样热情地打招呼。
+❷ Ⓐ ⟦Thái độ học tập của các học sinh tham dự lớp học đó thế nào?⟧ —— 参加那门课的学生学习态度怎么样？ Ⓑ ⟦Tốt lắm! Hễ được cô hỏi thì mọi học sinh đều hết sức cố gắng trả lời.⟧ —— 很好！只要老师一提问，所有学生都会尽全力回答。
+与恶劣天气导致的交通问题相关的表达：⟦đường bị tắc⟧ 道路堵塞 | ⟦đường xe bị sạt lở⟧ 车道塌方 | ⟦đường thủy bị chắn⟧ 水路受阻 | ⟦sân bay bị đóng cửa⟧ 机场关闭 | ⟦đường sắt bị tàn phá⟧ 铁路被彻底破坏
+对话：出差日程确定在下周，敏浩给梅打电话，确认当地预计的天气和交通情况。
+敏浩：⟦Chào chị, tuần sau tôi sẽ đến đó công tác. Nghe nói hiện nay thời tiết ở đó rất dễ chịu, phải không chị?⟧ —— 你好，我下周要去那边出差。听说现在那边天气很舒服，是吗？
+梅：⟦Bây giờ trời đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão.⟧ —— 现在天气很好，但根据预报，下周可能会受台风影响。
+敏浩：⟦Thế à? Không biết giao thông có bị ảnh hưởng gì hay không nhỉ?⟧ —— 是吗？不知道交通会不会受影响呢？
+梅：⟦Ở đây, hễ có bão thì sân bay bị đóng cửa.⟧ —— 在这里，一有台风机场就会关闭。
+敏浩：⟦À, thế thì tôi có thể đến đó bằng cách nào?⟧ —— 啊，那我怎么才能到那里呢？
+梅：⟦Anh nên đi xe lửa, nếu không thì anh sẽ phải hoãn lịch trình tới tuần sau nữa.⟧ —— 你最好坐火车，不然就得把日程推迟到下下周了。
+敏浩：⟦Vâng. Cảm ơn chị đã cho biết thông tin rất cần thiết.⟧ —— 好的。谢谢你告诉我这么必要的信息。
+句型练习 —— 天气怎么样：⟦đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão⟧（天气好，但预报下周可能受台风影响）/ ⟦mưa nhỏ nhưng nghe nói là mưa sẽ ngày càng to hơn⟧（下小雨，但听说雨会越来越大）；对交通有什么影响：⟦hễ có bão thì sân bay bị đóng cửa⟧（一有台风机场就关闭）/ ⟦hễ mưa to thì đường hay bị tắc⟧（一下大雨路就常堵）；怎么去：⟦đi xe lửa⟧（坐火车）/ ⟦đi máy bay⟧（坐飞机）；否则会怎样：⟦hoãn lịch trình tới tuần sau nữa⟧（日程推迟到下下周）/ ⟦mất nhiều thời gian trên đường⟧（路上花很多时间）。
+范例：Ⓐ ⟦Khi có bài tập khó thì em thường làm thế nào?⟧ —— 遇到难题时你通常怎么办？ Ⓑ ⟦Hễ có bài tập khó thì em thường nhờ các thầy cô giải thích cho.⟧ —— 一遇到难题，我通常请老师们给我讲解。
+❶ Ⓐ ⟦Khi có thời gian rỗi thì anh thường làm gì?⟧ —— 有空时你通常做什么？ Ⓑ ⟦Hễ có thời gian rỗi thì anh thường đi thăm các di tích lịch sử trong thành phố.⟧ —— 一有空，我通常去参观市内的历史遗迹。
+❷ Ⓐ ⟦Khi sang TP. Hồ Chí Minh thì chị thường đến quán phở nào?⟧ —— 去胡志明市时你通常去哪家河粉店？ Ⓑ ⟦Hễ sang TP. Hồ Chí Minh thì chị thường đến ăn phở ở quán phở Hoa Hương.⟧ —— 一去胡志明市，我通常去花香河粉店吃河粉。
+新单词：⟦chắn⟧ 阻挡 | ⟦sạt lở⟧ 塌方 | ⟦tàn phá⟧ 彻底破坏 | ⟦thái độ⟧ 态度 | ⟦hết sức⟧ 竭尽全力 | ⟦di tích⟧ 遗迹 | ⟦ảnh hưởng⟧ 影响 | ⟦hoãn⟧ 推迟 | ⟦lịch trình⟧ 日程 | ⟦cần thiết⟧ 必要的
+=zh
+核心表達：⟦hễ ~ thì ~⟧
+⟦hễ ~ thì ~⟧ 意為「一……就總是……」，表示在一定條件下經常出現的現象、行為或事情。
+❶ ⟦Bạn ấy hễ gặp mình thì chào hỏi rất vui vẻ như được gặp lần đầu tiên.⟧ —— 那個朋友一見到我，總是像第一次見面一樣熱情地打招呼。
+❷ Ⓐ ⟦Thái độ học tập của các học sinh tham dự lớp học đó thế nào?⟧ —— 參加那門課的學生學習態度怎麼樣？ Ⓑ ⟦Tốt lắm! Hễ được cô hỏi thì mọi học sinh đều hết sức cố gắng trả lời.⟧ —— 很好！只要老師一提問，所有學生都會盡全力回答。
+與惡劣天氣導致的交通問題相關的表達：⟦đường bị tắc⟧ 道路堵塞 | ⟦đường xe bị sạt lở⟧ 車道坍方 | ⟦đường thủy bị chắn⟧ 水路受阻 | ⟦sân bay bị đóng cửa⟧ 機場關閉 | ⟦đường sắt bị tàn phá⟧ 鐵路被徹底破壞
+對話：出差日程確定在下週，敏浩打電話給梅，確認當地預計的天氣和交通情況。
+敏浩：⟦Chào chị, tuần sau tôi sẽ đến đó công tác. Nghe nói hiện nay thời tiết ở đó rất dễ chịu, phải không chị?⟧ —— 妳好，我下週要去那邊出差。聽說現在那邊天氣很舒服，是嗎？
+梅：⟦Bây giờ trời đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão.⟧ —— 現在天氣很好，但根據預報，下週可能會受颱風影響。
+敏浩：⟦Thế à? Không biết giao thông có bị ảnh hưởng gì hay không nhỉ?⟧ —— 是嗎？不知道交通會不會受影響呢？
+梅：⟦Ở đây, hễ có bão thì sân bay bị đóng cửa.⟧ —— 在這裡，一有颱風機場就會關閉。
+敏浩：⟦À, thế thì tôi có thể đến đó bằng cách nào?⟧ —— 啊，那我怎麼才能到那裡呢？
+梅：⟦Anh nên đi xe lửa, nếu không thì anh sẽ phải hoãn lịch trình tới tuần sau nữa.⟧ —— 你最好搭火車，不然就得把行程延到下下週了。
+敏浩：⟦Vâng. Cảm ơn chị đã cho biết thông tin rất cần thiết.⟧ —— 好的。謝謝妳告訴我這麼必要的資訊。
+句型練習 —— 天氣怎麼樣：⟦đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão⟧（天氣好，但預報下週可能受颱風影響）/ ⟦mưa nhỏ nhưng nghe nói là mưa sẽ ngày càng to hơn⟧（下小雨，但聽說雨會越來越大）；對交通有什麼影響：⟦hễ có bão thì sân bay bị đóng cửa⟧（一有颱風機場就關閉）/ ⟦hễ mưa to thì đường hay bị tắc⟧（一下大雨路就常塞）；怎麼去：⟦đi xe lửa⟧（搭火車）/ ⟦đi máy bay⟧（搭飛機）；否則會怎樣：⟦hoãn lịch trình tới tuần sau nữa⟧（行程延到下下週）/ ⟦mất nhiều thời gian trên đường⟧（路上花很多時間）。
+範例：Ⓐ ⟦Khi có bài tập khó thì em thường làm thế nào?⟧ —— 遇到難題時你通常怎麼辦？ Ⓑ ⟦Hễ có bài tập khó thì em thường nhờ các thầy cô giải thích cho.⟧ —— 一遇到難題，我通常請老師們幫我講解。
+❶ Ⓐ ⟦Khi có thời gian rỗi thì anh thường làm gì?⟧ —— 有空時你通常做什麼？ Ⓑ ⟦Hễ có thời gian rỗi thì anh thường đi thăm các di tích lịch sử trong thành phố.⟧ —— 一有空，我通常去參觀市內的歷史遺跡。
+❷ Ⓐ ⟦Khi sang TP. Hồ Chí Minh thì chị thường đến quán phở nào?⟧ —— 去胡志明市時妳通常去哪家河粉店？ Ⓑ ⟦Hễ sang TP. Hồ Chí Minh thì chị thường đến ăn phở ở quán phở Hoa Hương.⟧ —— 一去胡志明市，我通常去花香河粉店吃河粉。
+新單字：⟦chắn⟧ 阻擋 | ⟦sạt lở⟧ 坍方 | ⟦tàn phá⟧ 徹底破壞 | ⟦thái độ⟧ 態度 | ⟦hết sức⟧ 竭盡全力 | ⟦di tích⟧ 遺跡 | ⟦ảnh hưởng⟧ 影響 | ⟦hoãn⟧ 延後 | ⟦lịch trình⟧ 行程 | ⟦cần thiết⟧ 必要的
+=en
+Key expression: ⟦hễ ~ thì ~⟧
+⟦hễ ~ thì ~⟧ means "whenever ~, (always) ~" and describes a constant phenomenon, action or event that follows from a certain condition.
+❶ ⟦Bạn ấy hễ gặp mình thì chào hỏi rất vui vẻ như được gặp lần đầu tiên.⟧ — Whenever he sees me, he greets me as warmly as if we were meeting for the first time.
+❷ Ⓐ ⟦Thái độ học tập của các học sinh tham dự lớp học đó thế nào?⟧ — What are the students in that class like in their attitude to learning? Ⓑ ⟦Tốt lắm! Hễ được cô hỏi thì mọi học sinh đều hết sức cố gắng trả lời.⟧ — Very good! Whenever the teacher asks a question, every student does their very best to answer.
+Expressions about transport problems caused by bad weather: ⟦đường bị tắc⟧ the road is jammed | ⟦đường xe bị sạt lở⟧ the road is hit by a landslide | ⟦đường thủy bị chắn⟧ the waterway is blocked | ⟦sân bay bị đóng cửa⟧ the airport is closed | ⟦đường sắt bị tàn phá⟧ the railway is destroyed
+Dialogue: The business trip is confirmed for next week, and Min-ho phones Mai to check the expected weather and traffic conditions.
+Min-ho: ⟦Chào chị, tuần sau tôi sẽ đến đó công tác. Nghe nói hiện nay thời tiết ở đó rất dễ chịu, phải không chị?⟧ — Hello, I'm coming there on business next week. I hear the weather there is very pleasant right now, is that right?
+Mai: ⟦Bây giờ trời đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão.⟧ — It's nice now, but according to the forecast we may be hit by a typhoon next week.
+Min-ho: ⟦Thế à? Không biết giao thông có bị ảnh hưởng gì hay không nhỉ?⟧ — Really? I wonder whether transport will be affected.
+Mai: ⟦Ở đây, hễ có bão thì sân bay bị đóng cửa.⟧ — Here, whenever there's a typhoon, the airport closes.
+Min-ho: ⟦À, thế thì tôi có thể đến đó bằng cách nào?⟧ — Ah, then how can I get there?
+Mai: ⟦Anh nên đi xe lửa, nếu không thì anh sẽ phải hoãn lịch trình tới tuần sau nữa.⟧ — You should take the train; otherwise you'll have to postpone your trip until the week after.
+Min-ho: ⟦Vâng. Cảm ơn chị đã cho biết thông tin rất cần thiết.⟧ — OK. Thank you for the really essential information.
+Pattern practice — the weather: ⟦đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão⟧ (nice, but a typhoon may hit next week) / ⟦mưa nhỏ nhưng nghe nói là mưa sẽ ngày càng to hơn⟧ (light rain, but it's said it'll get heavier and heavier); effect on transport: ⟦hễ có bão thì sân bay bị đóng cửa⟧ (the airport closes whenever there's a typhoon) / ⟦hễ mưa to thì đường hay bị tắc⟧ (roads often jam whenever it rains hard); how to get there: ⟦đi xe lửa⟧ (by train) / ⟦đi máy bay⟧ (by plane); otherwise: ⟦hoãn lịch trình tới tuần sau nữa⟧ (postpone the trip until the week after) / ⟦mất nhiều thời gian trên đường⟧ (lose a lot of time on the road).
+Model: Ⓐ ⟦Khi có bài tập khó thì em thường làm thế nào?⟧ — What do you usually do when you have a difficult exercise? Ⓑ ⟦Hễ có bài tập khó thì em thường nhờ các thầy cô giải thích cho.⟧ — Whenever I have a difficult exercise, I usually ask my teachers to explain it.
+❶ Ⓐ ⟦Khi có thời gian rỗi thì anh thường làm gì?⟧ — What do you usually do when you have free time? Ⓑ ⟦Hễ có thời gian rỗi thì anh thường đi thăm các di tích lịch sử trong thành phố.⟧ — Whenever I have free time, I usually visit historic sites in the city.
+❷ Ⓐ ⟦Khi sang TP. Hồ Chí Minh thì chị thường đến quán phở nào?⟧ — Which phở restaurant do you usually go to when you're in Ho Chi Minh City? Ⓑ ⟦Hễ sang TP. Hồ Chí Minh thì chị thường đến ăn phở ở quán phở Hoa Hương.⟧ — Whenever I'm in Ho Chi Minh City, I usually eat phở at the Hoa Hương restaurant.
+New words: ⟦chắn⟧ to block | ⟦sạt lở⟧ to collapse, landslide | ⟦tàn phá⟧ to devastate | ⟦thái độ⟧ attitude | ⟦hết sức⟧ with all one's strength | ⟦di tích⟧ historic site | ⟦ảnh hưởng⟧ influence, to affect | ⟦hoãn⟧ to postpone | ⟦lịch trình⟧ itinerary | ⟦cần thiết⟧ necessary
+=fr
+Expression clé : ⟦hễ ~ thì ~⟧
+⟦hễ ~ thì ~⟧ signifie « chaque fois que ~, (toujours) ~ » et exprime un phénomène, une action ou un fait constant lié à une condition.
+❶ ⟦Bạn ấy hễ gặp mình thì chào hỏi rất vui vẻ như được gặp lần đầu tiên.⟧ — Chaque fois qu'il me voit, il me salue aussi chaleureusement que si c'était notre première rencontre.
+❷ Ⓐ ⟦Thái độ học tập của các học sinh tham dự lớp học đó thế nào?⟧ — Quelle est l'attitude des élèves de cette classe face aux études ? Ⓑ ⟦Tốt lắm! Hễ được cô hỏi thì mọi học sinh đều hết sức cố gắng trả lời.⟧ — Excellente ! Chaque fois que la maîtresse pose une question, tous les élèves font de leur mieux pour répondre.
+Expressions sur les problèmes de transport dus aux intempéries : ⟦đường bị tắc⟧ la route est bouchée | ⟦đường xe bị sạt lở⟧ la route est coupée par un glissement de terrain | ⟦đường thủy bị chắn⟧ la voie navigable est bloquée | ⟦sân bay bị đóng cửa⟧ l'aéroport est fermé | ⟦đường sắt bị tàn phá⟧ la voie ferrée est dévastée
+Dialogue : le voyage d'affaires est confirmé pour la semaine prochaine, et Min-ho appelle Mai pour vérifier la météo et l'état des transports prévus.
+Min-ho : ⟦Chào chị, tuần sau tôi sẽ đến đó công tác. Nghe nói hiện nay thời tiết ở đó rất dễ chịu, phải không chị?⟧ — Bonjour, je viens chez vous en déplacement la semaine prochaine. Il paraît qu'il fait très bon en ce moment, c'est vrai ?
+Mai : ⟦Bây giờ trời đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão.⟧ — Il fait beau maintenant, mais d'après les prévisions, nous risquons d'être touchés par un typhon la semaine prochaine.
+Min-ho : ⟦Thế à? Không biết giao thông có bị ảnh hưởng gì hay không nhỉ?⟧ — Ah bon ? Je me demande si les transports seront perturbés.
+Mai : ⟦Ở đây, hễ có bão thì sân bay bị đóng cửa.⟧ — Ici, chaque fois qu'il y a un typhon, l'aéroport ferme.
+Min-ho : ⟦À, thế thì tôi có thể đến đó bằng cách nào?⟧ — Ah, alors comment puis-je venir ?
+Mai : ⟦Anh nên đi xe lửa, nếu không thì anh sẽ phải hoãn lịch trình tới tuần sau nữa.⟧ — Tu devrais prendre le train, sinon tu devras reporter ton voyage à la semaine d'après.
+Min-ho : ⟦Vâng. Cảm ơn chị đã cho biết thông tin rất cần thiết.⟧ — D'accord. Merci pour ces informations très utiles.
+Exercices — la météo : ⟦đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão⟧ (beau, mais un typhon est possible la semaine prochaine) / ⟦mưa nhỏ nhưng nghe nói là mưa sẽ ngày càng to hơn⟧ (petite pluie, mais elle devrait s'intensifier) ; effet sur les transports : ⟦hễ có bão thì sân bay bị đóng cửa⟧ (l'aéroport ferme à chaque typhon) / ⟦hễ mưa to thì đường hay bị tắc⟧ (les routes se bouchent dès qu'il pleut fort) ; comment y aller : ⟦đi xe lửa⟧ (en train) / ⟦đi máy bay⟧ (en avion) ; sinon : ⟦hoãn lịch trình tới tuần sau nữa⟧ (reporter le voyage d'une semaine de plus) / ⟦mất nhiều thời gian trên đường⟧ (perdre beaucoup de temps en route).
+Modèle : Ⓐ ⟦Khi có bài tập khó thì em thường làm thế nào?⟧ — Que fais-tu d'habitude quand tu as un exercice difficile ? Ⓑ ⟦Hễ có bài tập khó thì em thường nhờ các thầy cô giải thích cho.⟧ — Chaque fois que j'ai un exercice difficile, je demande à mes professeurs de me l'expliquer.
+❶ Ⓐ ⟦Khi có thời gian rỗi thì anh thường làm gì?⟧ — Que fais-tu d'habitude pendant ton temps libre ? Ⓑ ⟦Hễ có thời gian rỗi thì anh thường đi thăm các di tích lịch sử trong thành phố.⟧ — Chaque fois que j'ai du temps libre, je visite les sites historiques de la ville.
+❷ Ⓐ ⟦Khi sang TP. Hồ Chí Minh thì chị thường đến quán phở nào?⟧ — Dans quel restaurant de phở vas-tu d'habitude à Hô Chi Minh-Ville ? Ⓑ ⟦Hễ sang TP. Hồ Chí Minh thì chị thường đến ăn phở ở quán phở Hoa Hương.⟧ — Chaque fois que je vais à Hô Chi Minh-Ville, je mange un phở chez Hoa Hương.
+Nouveaux mots : ⟦chắn⟧ bloquer | ⟦sạt lở⟧ s'effondrer, glissement de terrain | ⟦tàn phá⟧ dévaster | ⟦thái độ⟧ attitude | ⟦hết sức⟧ de toutes ses forces | ⟦di tích⟧ site historique | ⟦ảnh hưởng⟧ influence, affecter | ⟦hoãn⟧ reporter | ⟦lịch trình⟧ programme, itinéraire | ⟦cần thiết⟧ nécessaire
+=de
+Schlüsselausdruck: ⟦hễ ~ thì ~⟧
+⟦hễ ~ thì ~⟧ bedeutet „immer wenn ~, dann ~“ und beschreibt ein ständiges Phänomen, eine Handlung oder ein Ereignis unter einer bestimmten Bedingung.
+❶ ⟦Bạn ấy hễ gặp mình thì chào hỏi rất vui vẻ như được gặp lần đầu tiên.⟧ — Immer wenn er mich trifft, begrüßt er mich so herzlich, als sähen wir uns zum ersten Mal.
+❷ Ⓐ ⟦Thái độ học tập của các học sinh tham dự lớp học đó thế nào?⟧ — Wie ist die Lernhaltung der Schüler in diesem Kurs? Ⓑ ⟦Tốt lắm! Hễ được cô hỏi thì mọi học sinh đều hết sức cố gắng trả lời.⟧ — Sehr gut! Immer wenn die Lehrerin fragt, geben sich alle Schüler größte Mühe zu antworten.
+Ausdrücke zu Verkehrsproblemen bei Unwetter: ⟦đường bị tắc⟧ die Straße ist verstopft | ⟦đường xe bị sạt lở⟧ die Straße ist verschüttet | ⟦đường thủy bị chắn⟧ der Wasserweg ist blockiert | ⟦sân bay bị đóng cửa⟧ der Flughafen ist geschlossen | ⟦đường sắt bị tàn phá⟧ die Bahnstrecke ist zerstört
+Dialog: Die Geschäftsreise steht für nächste Woche fest, und Min-ho telefoniert mit Mai, um das zu erwartende Wetter und die Verkehrslage zu prüfen.
+Min-ho: ⟦Chào chị, tuần sau tôi sẽ đến đó công tác. Nghe nói hiện nay thời tiết ở đó rất dễ chịu, phải không chị?⟧ — Hallo, nächste Woche komme ich geschäftlich zu euch. Das Wetter soll gerade sehr angenehm sein, stimmt's?
+Mai: ⟦Bây giờ trời đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão.⟧ — Jetzt ist es schön, aber laut Vorhersage könnte uns nächste Woche ein Taifun treffen.
+Min-ho: ⟦Thế à? Không biết giao thông có bị ảnh hưởng gì hay không nhỉ?⟧ — Wirklich? Ob der Verkehr wohl beeinträchtigt wird?
+Mai: ⟦Ở đây, hễ có bão thì sân bay bị đóng cửa.⟧ — Hier wird der Flughafen bei jedem Taifun geschlossen.
+Min-ho: ⟦À, thế thì tôi có thể đến đó bằng cách nào?⟧ — Ach so, wie komme ich dann dorthin?
+Mai: ⟦Anh nên đi xe lửa, nếu không thì anh sẽ phải hoãn lịch trình tới tuần sau nữa.⟧ — Du solltest den Zug nehmen, sonst musst du die Reise auf übernächste Woche verschieben.
+Min-ho: ⟦Vâng. Cảm ơn chị đã cho biết thông tin rất cần thiết.⟧ — Gut. Danke für die wirklich wichtigen Informationen.
+Satzmusterübung — Wetter: ⟦đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão⟧ (schön, aber nächste Woche evtl. Taifun) / ⟦mưa nhỏ nhưng nghe nói là mưa sẽ ngày càng to hơn⟧ (leichter Regen, der aber stärker werden soll); Auswirkung auf den Verkehr: ⟦hễ có bão thì sân bay bị đóng cửa⟧ (bei Taifun schließt der Flughafen) / ⟦hễ mưa to thì đường hay bị tắc⟧ (bei starkem Regen gibt es oft Stau); wie hinkommen: ⟦đi xe lửa⟧ (mit dem Zug) / ⟦đi máy bay⟧ (mit dem Flugzeug); sonst: ⟦hoãn lịch trình tới tuần sau nữa⟧ (Reise auf übernächste Woche verschieben) / ⟦mất nhiều thời gian trên đường⟧ (viel Zeit unterwegs verlieren).
+Muster: Ⓐ ⟦Khi có bài tập khó thì em thường làm thế nào?⟧ — Was machst du normalerweise bei einer schweren Aufgabe? Ⓑ ⟦Hễ có bài tập khó thì em thường nhờ các thầy cô giải thích cho.⟧ — Immer wenn ich eine schwere Aufgabe habe, bitte ich meine Lehrer um eine Erklärung.
+❶ Ⓐ ⟦Khi có thời gian rỗi thì anh thường làm gì?⟧ — Was machst du normalerweise in deiner Freizeit? Ⓑ ⟦Hễ có thời gian rỗi thì anh thường đi thăm các di tích lịch sử trong thành phố.⟧ — Immer wenn ich frei habe, besuche ich die historischen Stätten der Stadt.
+❷ Ⓐ ⟦Khi sang TP. Hồ Chí Minh thì chị thường đến quán phở nào?⟧ — In welches Phở-Lokal gehst du normalerweise in Ho-Chi-Minh-Stadt? Ⓑ ⟦Hễ sang TP. Hồ Chí Minh thì chị thường đến ăn phở ở quán phở Hoa Hương.⟧ — Immer wenn ich in Ho-Chi-Minh-Stadt bin, esse ich Phở im Lokal Hoa Hương.
+Neue Wörter: ⟦chắn⟧ blockieren | ⟦sạt lở⟧ einstürzen, Erdrutsch | ⟦tàn phá⟧ verwüsten | ⟦thái độ⟧ Haltung | ⟦hết sức⟧ mit aller Kraft | ⟦di tích⟧ historische Stätte | ⟦ảnh hưởng⟧ Einfluss, beeinflussen | ⟦hoãn⟧ verschieben | ⟦lịch trình⟧ Reiseplan | ⟦cần thiết⟧ notwendig
+=hu
+Kulcskifejezés: ⟦hễ ~ thì ~⟧
+A ⟦hễ ~ thì ~⟧ jelentése „valahányszor ~, mindig ~”, egy adott feltételhez kötött állandó jelenséget, cselekvést vagy eseményt fejez ki.
+❶ ⟦Bạn ấy hễ gặp mình thì chào hỏi rất vui vẻ như được gặp lần đầu tiên.⟧ — Valahányszor találkozik velem, olyan vidáman köszön, mintha először látna.
+❷ Ⓐ ⟦Thái độ học tập của các học sinh tham dự lớp học đó thế nào?⟧ — Milyen a tanuláshoz való hozzáállásuk az abban az osztályban tanuló diákoknak? Ⓑ ⟦Tốt lắm! Hễ được cô hỏi thì mọi học sinh đều hết sức cố gắng trả lời.⟧ — Nagyon jó! Valahányszor a tanárnő kérdez, minden diák teljes erejéből igyekszik válaszolni.
+Rossz időjárás okozta közlekedési gondok kifejezései: ⟦đường bị tắc⟧ az út be van dugulva | ⟦đường xe bị sạt lở⟧ az utat földcsuszamlás zárta el | ⟦đường thủy bị chắn⟧ a vízi út el van zárva | ⟦sân bay bị đóng cửa⟧ a repülőtér zárva | ⟦đường sắt bị tàn phá⟧ a vasútvonal elpusztult
+Párbeszéd: Az üzleti út időpontja a jövő hétre véglegesült, Min-ho telefonon egyeztet Maival a várható időjárásról és közlekedési helyzetről.
+Min-ho: ⟦Chào chị, tuần sau tôi sẽ đến đó công tác. Nghe nói hiện nay thời tiết ở đó rất dễ chịu, phải không chị?⟧ — Jó napot, jövő héten üzleti úton megyek oda. Azt hallottam, most nagyon kellemes arra az idő, igaz?
+Mai: ⟦Bây giờ trời đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão.⟧ — Most szép idő van, de az előrejelzés szerint jövő héten tájfun érhet minket.
+Min-ho: ⟦Thế à? Không biết giao thông có bị ảnh hưởng gì hay không nhỉ?⟧ — Tényleg? Vajon érinti-e a közlekedést?
+Mai: ⟦Ở đây, hễ có bão thì sân bay bị đóng cửa.⟧ — Itt valahányszor tájfun van, bezárják a repülőteret.
+Min-ho: ⟦À, thế thì tôi có thể đến đó bằng cách nào?⟧ — Á, akkor hogyan juthatok oda?
+Mai: ⟦Anh nên đi xe lửa, nếu không thì anh sẽ phải hoãn lịch trình tới tuần sau nữa.⟧ — Vonattal kellene jönnöd, különben az azutáni hétre kell halasztanod az utat.
+Min-ho: ⟦Vâng. Cảm ơn chị đã cho biết thông tin rất cần thiết.⟧ — Rendben. Köszönöm a nagyon fontos információt.
+Mintagyakorlat — milyen az idő: ⟦đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão⟧ (szép, de jövő héten tájfun lehet) / ⟦mưa nhỏ nhưng nghe nói là mưa sẽ ngày càng to hơn⟧ (szemerkél, de állítólag egyre erősebb lesz); hatás a közlekedésre: ⟦hễ có bão thì sân bay bị đóng cửa⟧ (tájfunkor bezár a repülőtér) / ⟦hễ mưa to thì đường hay bị tắc⟧ (erős esőben gyakran dugó van); hogyan jusson el: ⟦đi xe lửa⟧ (vonattal) / ⟦đi máy bay⟧ (repülővel); különben: ⟦hoãn lịch trình tới tuần sau nữa⟧ (az azutáni hétre halasztani) / ⟦mất nhiều thời gian trên đường⟧ (sok időt veszíteni útközben).
+Minta: Ⓐ ⟦Khi có bài tập khó thì em thường làm thế nào?⟧ — Mit szoktál csinálni, ha nehéz feladatod van? Ⓑ ⟦Hễ có bài tập khó thì em thường nhờ các thầy cô giải thích cho.⟧ — Valahányszor nehéz feladatom van, meg szoktam kérni a tanárokat, hogy magyarázzák el.
+❶ Ⓐ ⟦Khi có thời gian rỗi thì anh thường làm gì?⟧ — Mit szoktál csinálni szabadidődben? Ⓑ ⟦Hễ có thời gian rỗi thì anh thường đi thăm các di tích lịch sử trong thành phố.⟧ — Valahányszor ráérek, meglátogatom a város történelmi emlékhelyeit.
+❷ Ⓐ ⟦Khi sang TP. Hồ Chí Minh thì chị thường đến quán phở nào?⟧ — Melyik phở-étkezdébe szoktál járni Ho Si Minh-városban? Ⓑ ⟦Hễ sang TP. Hồ Chí Minh thì chị thường đến ăn phở ở quán phở Hoa Hương.⟧ — Valahányszor Ho Si Minh-városban vagyok, a Hoa Hương étkezdébe megyek phởt enni.
+Új szavak: ⟦chắn⟧ elzárni | ⟦sạt lở⟧ leomlani, földcsuszamlás | ⟦tàn phá⟧ elpusztítani | ⟦thái độ⟧ hozzáállás | ⟦hết sức⟧ teljes erőből | ⟦di tích⟧ történelmi emlékhely | ⟦ảnh hưởng⟧ hatás, hatni | ⟦hoãn⟧ elhalasztani | ⟦lịch trình⟧ útiterv | ⟦cần thiết⟧ szükséges
+=id
+Ungkapan kunci: ⟦hễ ~ thì ~⟧
+⟦hễ ~ thì ~⟧ berarti "setiap kali ~, (selalu) ~" dan menyatakan fenomena, tindakan, atau kejadian tetap yang mengikuti suatu syarat.
+❶ ⟦Bạn ấy hễ gặp mình thì chào hỏi rất vui vẻ như được gặp lần đầu tiên.⟧ — Setiap kali bertemu aku, dia menyapa dengan gembira seperti baru pertama kali bertemu.
+❷ Ⓐ ⟦Thái độ học tập của các học sinh tham dự lớp học đó thế nào?⟧ — Bagaimana sikap belajar siswa-siswa di kelas itu? Ⓑ ⟦Tốt lắm! Hễ được cô hỏi thì mọi học sinh đều hết sức cố gắng trả lời.⟧ — Bagus sekali! Setiap kali ditanya guru, semua siswa berusaha sekuat tenaga menjawab.
+Ungkapan tentang masalah lalu lintas akibat cuaca buruk: ⟦đường bị tắc⟧ jalan macet | ⟦đường xe bị sạt lở⟧ jalan tertimbun longsor | ⟦đường thủy bị chắn⟧ jalur air terhalang | ⟦sân bay bị đóng cửa⟧ bandara ditutup | ⟦đường sắt bị tàn phá⟧ jalur kereta hancur
+Percakapan: Jadwal dinas sudah pasti minggu depan, dan Min-ho menelepon Mai untuk memeriksa perkiraan cuaca dan kondisi lalu lintas setempat.
+Min-ho: ⟦Chào chị, tuần sau tôi sẽ đến đó công tác. Nghe nói hiện nay thời tiết ở đó rất dễ chịu, phải không chị?⟧ — Halo, minggu depan saya akan dinas ke sana. Katanya cuaca di sana sekarang sangat nyaman, benar?
+Mai: ⟦Bây giờ trời đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão.⟧ — Sekarang cuacanya bagus, tetapi menurut prakiraan, minggu depan mungkin terkena dampak badai.
+Min-ho: ⟦Thế à? Không biết giao thông có bị ảnh hưởng gì hay không nhỉ?⟧ — Oh ya? Apakah lalu lintas akan terpengaruh, ya?
+Mai: ⟦Ở đây, hễ có bão thì sân bay bị đóng cửa.⟧ — Di sini, setiap kali ada badai, bandara ditutup.
+Min-ho: ⟦À, thế thì tôi có thể đến đó bằng cách nào?⟧ — Oh, kalau begitu saya bisa ke sana dengan cara apa?
+Mai: ⟦Anh nên đi xe lửa, nếu không thì anh sẽ phải hoãn lịch trình tới tuần sau nữa.⟧ — Sebaiknya naik kereta, kalau tidak Anda harus menunda jadwal sampai minggu depannya lagi.
+Min-ho: ⟦Vâng. Cảm ơn chị đã cho biết thông tin rất cần thiết.⟧ — Baik. Terima kasih atas informasi yang sangat penting ini.
+Latihan pola — cuaca: ⟦đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão⟧ (cerah, tetapi minggu depan mungkin ada badai) / ⟦mưa nhỏ nhưng nghe nói là mưa sẽ ngày càng to hơn⟧ (hujan kecil, tetapi katanya akan makin deras); dampak pada lalu lintas: ⟦hễ có bão thì sân bay bị đóng cửa⟧ (bandara ditutup setiap ada badai) / ⟦hễ mưa to thì đường hay bị tắc⟧ (jalan sering macet setiap hujan deras); cara ke sana: ⟦đi xe lửa⟧ (naik kereta) / ⟦đi máy bay⟧ (naik pesawat); kalau tidak: ⟦hoãn lịch trình tới tuần sau nữa⟧ (menunda jadwal sampai minggu berikutnya lagi) / ⟦mất nhiều thời gian trên đường⟧ (menghabiskan banyak waktu di jalan).
+Contoh: Ⓐ ⟦Khi có bài tập khó thì em thường làm thế nào?⟧ — Kalau ada soal sulit, biasanya kamu bagaimana? Ⓑ ⟦Hễ có bài tập khó thì em thường nhờ các thầy cô giải thích cho.⟧ — Setiap kali ada soal sulit, saya biasanya minta guru menjelaskannya.
+❶ Ⓐ ⟦Khi có thời gian rỗi thì anh thường làm gì?⟧ — Kalau ada waktu luang, biasanya Kakak melakukan apa? Ⓑ ⟦Hễ có thời gian rỗi thì anh thường đi thăm các di tích lịch sử trong thành phố.⟧ — Setiap kali ada waktu luang, Kakak biasanya mengunjungi situs-situs bersejarah di kota.
+❷ Ⓐ ⟦Khi sang TP. Hồ Chí Minh thì chị thường đến quán phở nào?⟧ — Kalau ke Kota Ho Chi Minh, Kakak biasanya ke kedai phở mana? Ⓑ ⟦Hễ sang TP. Hồ Chí Minh thì chị thường đến ăn phở ở quán phở Hoa Hương.⟧ — Setiap kali ke Kota Ho Chi Minh, Kakak biasanya makan phở di kedai Hoa Hương.
+Kosakata baru: ⟦chắn⟧ menghalangi | ⟦sạt lở⟧ longsor | ⟦tàn phá⟧ menghancurkan | ⟦thái độ⟧ sikap | ⟦hết sức⟧ sekuat tenaga | ⟦di tích⟧ situs bersejarah | ⟦ảnh hưởng⟧ pengaruh, memengaruhi | ⟦hoãn⟧ menunda | ⟦lịch trình⟧ jadwal perjalanan | ⟦cần thiết⟧ penting, perlu
+=ja
+核心表現：⟦hễ ~ thì ~⟧
+⟦hễ ~ thì ~⟧ は「～すればいつも～する」という意味で、一定の条件に伴う恒常的な現象・行動・事柄などを表します。
+❶ ⟦Bạn ấy hễ gặp mình thì chào hỏi rất vui vẻ như được gặp lần đầu tiên.⟧ — あの友達は私に会うといつも、初めて会ったかのようにうれしそうにあいさつします。
+❷ Ⓐ ⟦Thái độ học tập của các học sinh tham dự lớp học đó thế nào?⟧ — その授業に参加している生徒たちの学習態度はどうですか。 Ⓑ ⟦Tốt lắm! Hễ được cô hỏi thì mọi học sinh đều hết sức cố gắng trả lời.⟧ — とてもいいです！先生に質問されると、生徒たちはいつも全力で答えます。
+悪天候による交通問題に関する表現：⟦đường bị tắc⟧ 道が渋滞する | ⟦đường xe bị sạt lở⟧ 道路が崩れる | ⟦đường thủy bị chắn⟧ 水路がふさがれる | ⟦sân bay bị đóng cửa⟧ 空港が閉鎖される | ⟦đường sắt bị tàn phá⟧ 鉄道が破壊される
+会話：出張の日程が来週に決まり、ミンホはマイと電話をして、現地で予想される天気と交通状況を確認しています。
+ミンホ：⟦Chào chị, tuần sau tôi sẽ đến đó công tác. Nghe nói hiện nay thời tiết ở đó rất dễ chịu, phải không chị?⟧ — こんにちは、来週そちらに出張します。今そちらはとても過ごしやすい天気だそうですね。
+マイ：⟦Bây giờ trời đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão.⟧ — 今は天気がいいですが、予報では来週台風の影響を受けるかもしれません。
+ミンホ：⟦Thế à? Không biết giao thông có bị ảnh hưởng gì hay không nhỉ?⟧ — そうですか。交通に影響があるかどうか心配ですね。
+マイ：⟦Ở đây, hễ có bão thì sân bay bị đóng cửa.⟧ — ここでは台風が来ると、いつも空港が閉鎖されます。
+ミンホ：⟦À, thế thì tôi có thể đến đó bằng cách nào?⟧ — ああ、それならどうやってそちらへ行けばいいでしょう。
+マイ：⟦Anh nên đi xe lửa, nếu không thì anh sẽ phải hoãn lịch trình tới tuần sau nữa.⟧ — 列車で来たほうがいいです。そうしないと日程を再来週まで延ばさなければならなくなります。
+ミンホ：⟦Vâng. Cảm ơn chị đã cho biết thông tin rất cần thiết.⟧ — わかりました。とても必要な情報を教えてくださってありがとうございます。
+文型練習 — 天気：⟦đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão⟧（晴れだが、来週は台風の影響を受けるかも）/ ⟦mưa nhỏ nhưng nghe nói là mưa sẽ ngày càng to hơn⟧（小雨だが、だんだん強くなるそうだ）；交通への影響：⟦hễ có bão thì sân bay bị đóng cửa⟧（台風が来るといつも空港が閉鎖）/ ⟦hễ mưa to thì đường hay bị tắc⟧（大雨が降るとよく渋滞）；行き方：⟦đi xe lửa⟧（列車で）/ ⟦đi máy bay⟧（飛行機で）；そうでないと：⟦hoãn lịch trình tới tuần sau nữa⟧（日程を再来週に延期）/ ⟦mất nhiều thời gian trên đường⟧（道中で時間がかかる）。
+例：Ⓐ ⟦Khi có bài tập khó thì em thường làm thế nào?⟧ — 難しい課題があるとき、ふだんどうしていますか。 Ⓑ ⟦Hễ có bài tập khó thì em thường nhờ các thầy cô giải thích cho.⟧ — 難しい課題があるといつも、先生たちに説明をお願いしています。
+❶ Ⓐ ⟦Khi có thời gian rỗi thì anh thường làm gì?⟧ — 暇なとき、ふだん何をしますか。 Ⓑ ⟦Hễ có thời gian rỗi thì anh thường đi thăm các di tích lịch sử trong thành phố.⟧ — 暇があるといつも、市内の史跡を見に行きます。
+❷ Ⓐ ⟦Khi sang TP. Hồ Chí Minh thì chị thường đến quán phở nào?⟧ — ホーチミン市に行ったとき、ふだんどのフォー屋に行きますか。 Ⓑ ⟦Hễ sang TP. Hồ Chí Minh thì chị thường đến ăn phở ở quán phở Hoa Hương.⟧ — ホーチミン市に行くといつも、ホアフオンのフォー屋に食べに行きます。
+新出単語：⟦chắn⟧ ふさぐ | ⟦sạt lở⟧ 崩れる | ⟦tàn phá⟧ 徹底的に破壊する | ⟦thái độ⟧ 態度 | ⟦hết sức⟧ 全力を尽くす | ⟦di tích⟧ 遺跡 | ⟦ảnh hưởng⟧ 影響、影響を与える | ⟦hoãn⟧ 延期する | ⟦lịch trình⟧ 日程 | ⟦cần thiết⟧ 必要な
+=pl
+Kluczowe wyrażenie: ⟦hễ ~ thì ~⟧
+⟦hễ ~ thì ~⟧ znaczy „ilekroć ~, (zawsze) ~” i wyraża stałe zjawisko, zachowanie czy zdarzenie wynikające z pewnego warunku.
+❶ ⟦Bạn ấy hễ gặp mình thì chào hỏi rất vui vẻ như được gặp lần đầu tiên.⟧ — Ilekroć mnie spotyka, wita się tak radośnie, jakbyśmy widzieli się pierwszy raz.
+❷ Ⓐ ⟦Thái độ học tập của các học sinh tham dự lớp học đó thế nào?⟧ — Jakie podejście do nauki mają uczniowie z tej klasy? Ⓑ ⟦Tốt lắm! Hễ được cô hỏi thì mọi học sinh đều hết sức cố gắng trả lời.⟧ — Bardzo dobre! Ilekroć nauczycielka pyta, wszyscy uczniowie z całych sił starają się odpowiedzieć.
+Wyrażenia o problemach komunikacyjnych przy złej pogodzie: ⟦đường bị tắc⟧ droga jest zakorkowana | ⟦đường xe bị sạt lở⟧ drogę zasypało osuwisko | ⟦đường thủy bị chắn⟧ szlak wodny jest zablokowany | ⟦sân bay bị đóng cửa⟧ lotnisko jest zamknięte | ⟦đường sắt bị tàn phá⟧ linia kolejowa jest zniszczona
+Dialog: Termin wyjazdu służbowego potwierdzono na przyszły tydzień i Min-ho dzwoni do Mai, żeby sprawdzić przewidywaną pogodę i sytuację na drogach.
+Min-ho: ⟦Chào chị, tuần sau tôi sẽ đến đó công tác. Nghe nói hiện nay thời tiết ở đó rất dễ chịu, phải không chị?⟧ — Dzień dobry, w przyszłym tygodniu przyjeżdżam do was służbowo. Podobno pogoda jest teraz bardzo przyjemna, prawda?
+Mai: ⟦Bây giờ trời đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão.⟧ — Teraz jest ładnie, ale według prognozy w przyszłym tygodniu może nas dotknąć tajfun.
+Min-ho: ⟦Thế à? Không biết giao thông có bị ảnh hưởng gì hay không nhỉ?⟧ — Naprawdę? Ciekawe, czy wpłynie to na komunikację.
+Mai: ⟦Ở đây, hễ có bão thì sân bay bị đóng cửa.⟧ — Tutaj ilekroć jest tajfun, zamykają lotnisko.
+Min-ho: ⟦À, thế thì tôi có thể đến đó bằng cách nào?⟧ — Aha, to jak mogę tam dotrzeć?
+Mai: ⟦Anh nên đi xe lửa, nếu không thì anh sẽ phải hoãn lịch trình tới tuần sau nữa.⟧ — Lepiej przyjedź pociągiem, inaczej będziesz musiał przełożyć wyjazd o kolejny tydzień.
+Min-ho: ⟦Vâng. Cảm ơn chị đã cho biết thông tin rất cần thiết.⟧ — Dobrze. Dziękuję za bardzo potrzebne informacje.
+Ćwiczenie wzorców — pogoda: ⟦đẹp nhưng theo dự báo thì tuần sau có thể sẽ chịu ảnh hưởng của một cơn bão⟧ (ładnie, ale w przyszłym tygodniu może być tajfun) / ⟦mưa nhỏ nhưng nghe nói là mưa sẽ ngày càng to hơn⟧ (mży, ale podobno będzie padać coraz mocniej); wpływ na komunikację: ⟦hễ có bão thì sân bay bị đóng cửa⟧ (przy tajfunie zamykają lotnisko) / ⟦hễ mưa to thì đường hay bị tắc⟧ (przy ulewie drogi często się korkują); jak dojechać: ⟦đi xe lửa⟧ (pociągiem) / ⟦đi máy bay⟧ (samolotem); w przeciwnym razie: ⟦hoãn lịch trình tới tuần sau nữa⟧ (przełożyć wyjazd o kolejny tydzień) / ⟦mất nhiều thời gian trên đường⟧ (stracić dużo czasu w drodze).
+Wzór: Ⓐ ⟦Khi có bài tập khó thì em thường làm thế nào?⟧ — Co zwykle robisz, gdy masz trudne zadanie? Ⓑ ⟦Hễ có bài tập khó thì em thường nhờ các thầy cô giải thích cho.⟧ — Ilekroć mam trudne zadanie, proszę nauczycieli o wyjaśnienie.
+❶ Ⓐ ⟦Khi có thời gian rỗi thì anh thường làm gì?⟧ — Co zwykle robisz w wolnym czasie? Ⓑ ⟦Hễ có thời gian rỗi thì anh thường đi thăm các di tích lịch sử trong thành phố.⟧ — Ilekroć mam wolny czas, zwiedzam zabytki w mieście.
+❷ Ⓐ ⟦Khi sang TP. Hồ Chí Minh thì chị thường đến quán phở nào?⟧ — Do jakiej knajpki z phở zwykle chodzisz w Ho Chi Minh? Ⓑ ⟦Hễ sang TP. Hồ Chí Minh thì chị thường đến ăn phở ở quán phở Hoa Hương.⟧ — Ilekroć jestem w Ho Chi Minh, jem phở w knajpce Hoa Hương.
+Nowe słówka: ⟦chắn⟧ blokować | ⟦sạt lở⟧ osuwać się, osuwisko | ⟦tàn phá⟧ zniszczyć | ⟦thái độ⟧ postawa | ⟦hết sức⟧ z całych sił | ⟦di tích⟧ zabytek | ⟦ảnh hưởng⟧ wpływ, wpływać | ⟦hoãn⟧ odłożyć | ⟦lịch trình⟧ plan podróży | ⟦cần thiết⟧ niezbędny

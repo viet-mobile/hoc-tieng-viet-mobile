@@ -1,0 +1,191 @@
+@@ pdf-grammar-4cd209d1a512ada0#0
+=cs
+Klíčový výraz 1: ⟦ngay cả ~⟧ — „dokonce i ~, ani ~“ (zdůraznění).
+❶ ⟦Ngay cả những kiến thức đơn giản như thế này mà em ấy cũng không biết.⟧ — Neví ani takhle jednoduché věci.
+❷ Ⓐ ⟦Nhà hàng này đóng cửa rồi à? Từ bao giờ vậy?⟧ — Tahle restaurace zavřela? Od kdy? Ⓑ ⟦Ừ, nghe nói là đóng cửa đột ngột, ngay cả nhân viên cũng không biết trước.⟧ — Jo, prý zavřeli náhle, ani zaměstnanci to předem nevěděli.
+Klíčový výraz 2: ⟦thậm chí⟧ — „dokonce“.
+❶ ⟦Anh ấy bị ốm mà không nói với ai nên thậm chí các đồng nghiệp cũng không biết.⟧ — Byl nemocný, ale nikomu to neřekl, takže to nevěděli dokonce ani kolegové.
+❷ Ⓐ ⟦Anh sắp viết xong báo cáo chưa?⟧ — Máš zprávu skoro hotovou? Ⓑ ⟦Chưa, thậm chí anh còn chưa bắt đầu.⟧ — Ne, dokonce jsem ještě ani nezačal.
+Procvičování 3 — spojte a mluvte podle vzoru:
+① ⟦Bài tập Toán này⟧ (tenhle úkol z matematiky) — Ⓐ ⟦trẻ con cũng làm được⟧ (zvládne ho i dítě)
+② ⟦Em Trang làm việc⟧ (jak pracuje Trang) — Ⓑ ⟦ngày nghỉ em ấy cũng làm việc⟧ (pracuje i ve volné dny)
+③ ⟦Trình độ tiếng Việt của chị Ha-na⟧ (úroveň vietnamštiny Ha-ny) — Ⓒ ⟦từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết⟧ (zná i pokročilé výrazy jako „změna systému“)
+Vzor (①―Ⓐ): Ⓐ ⟦Bài tập Toán này thế nào? Có khó không?⟧ — Jaký je ten úkol z matematiky? Je těžký? Ⓑ ⟦Bài này khó gì. Ngay cả trẻ con cũng làm được.⟧ — Vůbec ne. Zvládne ho i dítě.
+② Ⓐ ⟦Em Trang làm việc thế nào? Có chăm chỉ không?⟧ — Jak pracuje Trang? Je pilná? Ⓑ ⟦Vâng, Trang rất chăm chỉ. Ngay cả ngày nghỉ em ấy cũng làm việc.⟧ — Ano, Trang je velmi pilná. Pracuje dokonce i ve volné dny.
+③ Ⓐ ⟦Trình độ tiếng Việt của chị Ha-na thế nào? Có giỏi không?⟧ — Jak dobře umí Ha-na vietnamsky? Ⓑ ⟦Chị ấy giỏi lắm. Ngay cả từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết.⟧ — Velmi dobře. Zná dokonce i pokročilé výrazy jako „změna systému“.
+Procvičování 4 — doplňte a řekněte:
+Vzor: ⟦Em thích ăn hoa quả nhiệt đới, thậm chí thích cả sầu riêng.⟧ — Mám rád tropické ovoce, dokonce i durian.
+❶ ⟦Hôm nay em bận quá, thậm chí không có cả thời gian uống cà phê.⟧ — Dnes mám strašně moc práce, nemám dokonce ani čas na kávu.
+❷ ⟦Chúng tôi không có thông tin gì về anh ấy, thậm chí không biết cả số điện thoại.⟧ — Nemáme o něm žádné informace, neznáme dokonce ani jeho telefonní číslo.
+Nová slovíčka: ⟦chuyển đổi⟧ změnit, převést | ⟦cơ chế⟧ systém, mechanismus
+=zh_cn
+核心表达1：⟦ngay cả ~⟧ —— “连……都/甚至……”，表示强调。
+❶ ⟦Ngay cả những kiến thức đơn giản như thế này mà em ấy cũng không biết.⟧ —— 连这么简单的知识他都不知道。
+❷ Ⓐ ⟦Nhà hàng này đóng cửa rồi à? Từ bao giờ vậy?⟧ —— 这家餐厅关门了？从什么时候开始的？ Ⓑ ⟦Ừ, nghe nói là đóng cửa đột ngột, ngay cả nhân viên cũng không biết trước.⟧ —— 嗯，听说是突然关门的，连员工都事先不知道。
+核心表达2：⟦thậm chí⟧ —— “甚至”。
+❶ ⟦Anh ấy bị ốm mà không nói với ai nên thậm chí các đồng nghiệp cũng không biết.⟧ —— 他生病了却没告诉任何人，所以甚至连同事都不知道。
+❷ Ⓐ ⟦Anh sắp viết xong báo cáo chưa?⟧ —— 你报告快写完了吗？ Ⓑ ⟦Chưa, thậm chí anh còn chưa bắt đầu.⟧ —— 还没，我甚至还没开始。
+句型练习3 —— 找出正确的搭配，并照范例对话：
+① ⟦Bài tập Toán này⟧（这道数学题）—— Ⓐ ⟦trẻ con cũng làm được⟧（小孩也会做）
+② ⟦Em Trang làm việc⟧（庄工作）—— Ⓑ ⟦ngày nghỉ em ấy cũng làm việc⟧（休息日也工作）
+③ ⟦Trình độ tiếng Việt của chị Ha-na⟧（夏娜的越南语水平）—— Ⓒ ⟦từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết⟧（连“转换体制”这样的高级越南语词汇也懂）
+范例（①―Ⓐ）：Ⓐ ⟦Bài tập Toán này thế nào? Có khó không?⟧ —— 这道数学题怎么样？难吗？ Ⓑ ⟦Bài này khó gì. Ngay cả trẻ con cũng làm được.⟧ —— 这题哪里难。连小孩都会做。
+② Ⓐ ⟦Em Trang làm việc thế nào? Có chăm chỉ không?⟧ —— 庄工作怎么样？勤快吗？ Ⓑ ⟦Vâng, Trang rất chăm chỉ. Ngay cả ngày nghỉ em ấy cũng làm việc.⟧ —— 是的，庄很勤快。连休息日她都在工作。
+③ Ⓐ ⟦Trình độ tiếng Việt của chị Ha-na thế nào? Có giỏi không?⟧ —— 夏娜的越南语水平怎么样？好吗？ Ⓑ ⟦Chị ấy giỏi lắm. Ngay cả từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết.⟧ —— 她很厉害。连“转换体制”这样的高级词汇都懂。
+句型练习4 —— 填空后说一说：
+范例：⟦Em thích ăn hoa quả nhiệt đới, thậm chí thích cả sầu riêng.⟧ —— 我喜欢吃热带水果，甚至连榴莲也喜欢。
+❶ ⟦Hôm nay em bận quá, thậm chí không có cả thời gian uống cà phê.⟧ —— 今天我太忙了，甚至连喝咖啡的时间都没有。
+❷ ⟦Chúng tôi không có thông tin gì về anh ấy, thậm chí không biết cả số điện thoại.⟧ —— 我们没有他的任何信息，甚至连电话号码都不知道。
+新单词：⟦chuyển đổi⟧ 转换 | ⟦cơ chế⟧ 体制，机制
+=zh
+核心表達1：⟦ngay cả ~⟧ —— 「連……都/甚至……」，表示強調。
+❶ ⟦Ngay cả những kiến thức đơn giản như thế này mà em ấy cũng không biết.⟧ —— 連這麼簡單的知識他都不知道。
+❷ Ⓐ ⟦Nhà hàng này đóng cửa rồi à? Từ bao giờ vậy?⟧ —— 這家餐廳關門了？從什麼時候開始的？ Ⓑ ⟦Ừ, nghe nói là đóng cửa đột ngột, ngay cả nhân viên cũng không biết trước.⟧ —— 嗯，聽說是突然關門的，連員工都事先不知道。
+核心表達2：⟦thậm chí⟧ —— 「甚至」。
+❶ ⟦Anh ấy bị ốm mà không nói với ai nên thậm chí các đồng nghiệp cũng không biết.⟧ —— 他生病了卻沒告訴任何人，所以甚至連同事都不知道。
+❷ Ⓐ ⟦Anh sắp viết xong báo cáo chưa?⟧ —— 你報告快寫完了嗎？ Ⓑ ⟦Chưa, thậm chí anh còn chưa bắt đầu.⟧ —— 還沒，我甚至還沒開始。
+句型練習3 —— 找出正確的搭配，並照範例對話：
+① ⟦Bài tập Toán này⟧（這道數學題）—— Ⓐ ⟦trẻ con cũng làm được⟧（小孩也會做）
+② ⟦Em Trang làm việc⟧（莊工作）—— Ⓑ ⟦ngày nghỉ em ấy cũng làm việc⟧（休假日也工作）
+③ ⟦Trình độ tiếng Việt của chị Ha-na⟧（夏娜的越南語程度）—— Ⓒ ⟦từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết⟧（連「轉換體制」這樣的高級越南語詞彙也懂）
+範例（①―Ⓐ）：Ⓐ ⟦Bài tập Toán này thế nào? Có khó không?⟧ —— 這道數學題怎麼樣？難嗎？ Ⓑ ⟦Bài này khó gì. Ngay cả trẻ con cũng làm được.⟧ —— 這題哪裡難。連小孩都會做。
+② Ⓐ ⟦Em Trang làm việc thế nào? Có chăm chỉ không?⟧ —— 莊工作怎麼樣？勤快嗎？ Ⓑ ⟦Vâng, Trang rất chăm chỉ. Ngay cả ngày nghỉ em ấy cũng làm việc.⟧ —— 是的，莊很勤快。連休假日她都在工作。
+③ Ⓐ ⟦Trình độ tiếng Việt của chị Ha-na thế nào? Có giỏi không?⟧ —— 夏娜的越南語程度怎麼樣？好嗎？ Ⓑ ⟦Chị ấy giỏi lắm. Ngay cả từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết.⟧ —— 她很厲害。連「轉換體制」這樣的高級詞彙都懂。
+句型練習4 —— 填空後說一說：
+範例：⟦Em thích ăn hoa quả nhiệt đới, thậm chí thích cả sầu riêng.⟧ —— 我喜歡吃熱帶水果，甚至連榴槤也喜歡。
+❶ ⟦Hôm nay em bận quá, thậm chí không có cả thời gian uống cà phê.⟧ —— 今天我太忙了，甚至連喝咖啡的時間都沒有。
+❷ ⟦Chúng tôi không có thông tin gì về anh ấy, thậm chí không biết cả số điện thoại.⟧ —— 我們沒有他的任何資訊，甚至連電話號碼都不知道。
+新單字：⟦chuyển đổi⟧ 轉換 | ⟦cơ chế⟧ 體制，機制
+=en
+Key expression 1: ⟦ngay cả ~⟧ — "even ~" (emphasis).
+❶ ⟦Ngay cả những kiến thức đơn giản như thế này mà em ấy cũng không biết.⟧ — He doesn't even know something as simple as this.
+❷ Ⓐ ⟦Nhà hàng này đóng cửa rồi à? Từ bao giờ vậy?⟧ — This restaurant has closed? Since when? Ⓑ ⟦Ừ, nghe nói là đóng cửa đột ngột, ngay cả nhân viên cũng không biết trước.⟧ — Yeah, I hear it closed suddenly — even the staff didn't know in advance.
+Key expression 2: ⟦thậm chí⟧ — "even, in fact".
+❶ ⟦Anh ấy bị ốm mà không nói với ai nên thậm chí các đồng nghiệp cũng không biết.⟧ — He was sick but didn't tell anyone, so even his colleagues didn't know.
+❷ Ⓐ ⟦Anh sắp viết xong báo cáo chưa?⟧ — Are you almost done with the report? Ⓑ ⟦Chưa, thậm chí anh còn chưa bắt đầu.⟧ — No, I haven't even started.
+Pattern practice 3 — match and talk like the model:
+① ⟦Bài tập Toán này⟧ (this math exercise) — Ⓐ ⟦trẻ con cũng làm được⟧ (even a child can do it)
+② ⟦Em Trang làm việc⟧ (how Trang works) — Ⓑ ⟦ngày nghỉ em ấy cũng làm việc⟧ (she works even on days off)
+③ ⟦Trình độ tiếng Việt của chị Ha-na⟧ (Ha-na's level of Vietnamese) — Ⓒ ⟦từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết⟧ (she even knows advanced terms like "mechanism change")
+Model (①―Ⓐ): Ⓐ ⟦Bài tập Toán này thế nào? Có khó không?⟧ — How's this math exercise? Is it hard? Ⓑ ⟦Bài này khó gì. Ngay cả trẻ con cũng làm được.⟧ — It's not hard at all. Even a child could do it.
+② Ⓐ ⟦Em Trang làm việc thế nào? Có chăm chỉ không?⟧ — How does Trang work? Is she hard-working? Ⓑ ⟦Vâng, Trang rất chăm chỉ. Ngay cả ngày nghỉ em ấy cũng làm việc.⟧ — Yes, Trang is very hard-working. She even works on her days off.
+③ Ⓐ ⟦Trình độ tiếng Việt của chị Ha-na thế nào? Có giỏi không?⟧ — How good is Ha-na's Vietnamese? Ⓑ ⟦Chị ấy giỏi lắm. Ngay cả từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết.⟧ — Very good. She even knows advanced terms like "mechanism change".
+Pattern practice 4 — fill in and say:
+Model: ⟦Em thích ăn hoa quả nhiệt đới, thậm chí thích cả sầu riêng.⟧ — I like tropical fruit — I even like durian.
+❶ ⟦Hôm nay em bận quá, thậm chí không có cả thời gian uống cà phê.⟧ — I'm so busy today that I don't even have time for a coffee.
+❷ ⟦Chúng tôi không có thông tin gì về anh ấy, thậm chí không biết cả số điện thoại.⟧ — We have no information about him; we don't even know his phone number.
+New words: ⟦chuyển đổi⟧ to change, convert | ⟦cơ chế⟧ mechanism, system
+=fr
+Expression clé 1 : ⟦ngay cả ~⟧ — « même ~ » (insistance).
+❶ ⟦Ngay cả những kiến thức đơn giản như thế này mà em ấy cũng không biết.⟧ — Il ne sait même pas des choses aussi simples que celles-ci.
+❷ Ⓐ ⟦Nhà hàng này đóng cửa rồi à? Từ bao giờ vậy?⟧ — Ce restaurant a fermé ? Depuis quand ? Ⓑ ⟦Ừ, nghe nói là đóng cửa đột ngột, ngay cả nhân viên cũng không biết trước.⟧ — Oui, il paraît qu'il a fermé brusquement ; même le personnel n'était pas prévenu.
+Expression clé 2 : ⟦thậm chí⟧ — « même, voire ».
+❶ ⟦Anh ấy bị ốm mà không nói với ai nên thậm chí các đồng nghiệp cũng không biết.⟧ — Il était malade mais ne l'a dit à personne, si bien que même ses collègues ne le savaient pas.
+❷ Ⓐ ⟦Anh sắp viết xong báo cáo chưa?⟧ — Tu as bientôt fini ton rapport ? Ⓑ ⟦Chưa, thậm chí anh còn chưa bắt đầu.⟧ — Non, je n'ai même pas commencé.
+Exercice 3 — associez et dialoguez comme dans le modèle :
+① ⟦Bài tập Toán này⟧ (cet exercice de maths) — Ⓐ ⟦trẻ con cũng làm được⟧ (même un enfant peut le faire)
+② ⟦Em Trang làm việc⟧ (la façon de travailler de Trang) — Ⓑ ⟦ngày nghỉ em ấy cũng làm việc⟧ (elle travaille même les jours de congé)
+③ ⟦Trình độ tiếng Việt của chị Ha-na⟧ (le niveau de vietnamien de Ha-na) — Ⓒ ⟦từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết⟧ (elle connaît même des termes avancés comme « changement de mécanisme »)
+Modèle (①―Ⓐ) : Ⓐ ⟦Bài tập Toán này thế nào? Có khó không?⟧ — Comment est cet exercice de maths ? Difficile ? Ⓑ ⟦Bài này khó gì. Ngay cả trẻ con cũng làm được.⟧ — Pas du tout. Même un enfant pourrait le faire.
+② Ⓐ ⟦Em Trang làm việc thế nào? Có chăm chỉ không?⟧ — Comment travaille Trang ? Elle est travailleuse ? Ⓑ ⟦Vâng, Trang rất chăm chỉ. Ngay cả ngày nghỉ em ấy cũng làm việc.⟧ — Oui, très. Elle travaille même les jours de congé.
+③ Ⓐ ⟦Trình độ tiếng Việt của chị Ha-na thế nào? Có giỏi không?⟧ — Quel est le niveau de vietnamien de Ha-na ? Ⓑ ⟦Chị ấy giỏi lắm. Ngay cả từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết.⟧ — Excellent. Elle connaît même des termes avancés comme « changement de mécanisme ».
+Exercice 4 — complétez et dites :
+Modèle : ⟦Em thích ăn hoa quả nhiệt đới, thậm chí thích cả sầu riêng.⟧ — J'aime les fruits tropicaux, j'aime même le durian.
+❶ ⟦Hôm nay em bận quá, thậm chí không có cả thời gian uống cà phê.⟧ — Je suis tellement occupé aujourd'hui que je n'ai même pas le temps de boire un café.
+❷ ⟦Chúng tôi không có thông tin gì về anh ấy, thậm chí không biết cả số điện thoại.⟧ — Nous n'avons aucune information sur lui ; nous ne connaissons même pas son numéro de téléphone.
+Nouveaux mots : ⟦chuyển đổi⟧ changer, convertir | ⟦cơ chế⟧ mécanisme, système
+=de
+Schlüsselausdruck 1: ⟦ngay cả ~⟧ — „sogar ~, selbst ~“ (Betonung).
+❶ ⟦Ngay cả những kiến thức đơn giản như thế này mà em ấy cũng không biết.⟧ — Nicht einmal so einfache Dinge weiß er.
+❷ Ⓐ ⟦Nhà hàng này đóng cửa rồi à? Từ bao giờ vậy?⟧ — Das Restaurant hat geschlossen? Seit wann? Ⓑ ⟦Ừ, nghe nói là đóng cửa đột ngột, ngay cả nhân viên cũng không biết trước.⟧ — Ja, es hat angeblich plötzlich geschlossen, selbst die Angestellten wussten es vorher nicht.
+Schlüsselausdruck 2: ⟦thậm chí⟧ — „sogar, gar“.
+❶ ⟦Anh ấy bị ốm mà không nói với ai nên thậm chí các đồng nghiệp cũng không biết.⟧ — Er war krank, hat es aber niemandem gesagt, sodass sogar die Kollegen nichts wussten.
+❷ Ⓐ ⟦Anh sắp viết xong báo cáo chưa?⟧ — Bist du mit dem Bericht bald fertig? Ⓑ ⟦Chưa, thậm chí anh còn chưa bắt đầu.⟧ — Nein, ich habe noch nicht einmal angefangen.
+Übung 3 — ordnen Sie zu und sprechen Sie wie im Muster:
+① ⟦Bài tập Toán này⟧ (diese Matheaufgabe) — Ⓐ ⟦trẻ con cũng làm được⟧ (sogar ein Kind schafft sie)
+② ⟦Em Trang làm việc⟧ (wie Trang arbeitet) — Ⓑ ⟦ngày nghỉ em ấy cũng làm việc⟧ (sie arbeitet sogar an freien Tagen)
+③ ⟦Trình độ tiếng Việt của chị Ha-na⟧ (Ha-nas Vietnamesischniveau) — Ⓒ ⟦từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết⟧ (sie kennt sogar gehobene Ausdrücke wie „Systemwechsel“)
+Muster (①―Ⓐ): Ⓐ ⟦Bài tập Toán này thế nào? Có khó không?⟧ — Wie ist die Matheaufgabe? Ist sie schwer? Ⓑ ⟦Bài này khó gì. Ngay cả trẻ con cũng làm được.⟧ — Überhaupt nicht. Die schafft sogar ein Kind.
+② Ⓐ ⟦Em Trang làm việc thế nào? Có chăm chỉ không?⟧ — Wie arbeitet Trang? Ist sie fleißig? Ⓑ ⟦Vâng, Trang rất chăm chỉ. Ngay cả ngày nghỉ em ấy cũng làm việc.⟧ — Ja, sehr. Sie arbeitet sogar an freien Tagen.
+③ Ⓐ ⟦Trình độ tiếng Việt của chị Ha-na thế nào? Có giỏi không?⟧ — Wie gut ist Ha-nas Vietnamesisch? Ⓑ ⟦Chị ấy giỏi lắm. Ngay cả từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết.⟧ — Sehr gut. Sie kennt sogar gehobene Ausdrücke wie „Systemwechsel“.
+Übung 4 — ergänzen und sprechen:
+Muster: ⟦Em thích ăn hoa quả nhiệt đới, thậm chí thích cả sầu riêng.⟧ — Ich esse gern tropisches Obst, sogar Durian.
+❶ ⟦Hôm nay em bận quá, thậm chí không có cả thời gian uống cà phê.⟧ — Ich bin heute so beschäftigt, dass ich nicht einmal Zeit für einen Kaffee habe.
+❷ ⟦Chúng tôi không có thông tin gì về anh ấy, thậm chí không biết cả số điện thoại.⟧ — Wir haben keinerlei Informationen über ihn, wir kennen nicht einmal seine Telefonnummer.
+Neue Wörter: ⟦chuyển đổi⟧ umstellen, umwandeln | ⟦cơ chế⟧ Mechanismus, System
+=hu
+1. kulcskifejezés: ⟦ngay cả ~⟧ — „még ~ is” (nyomatékosítás).
+❶ ⟦Ngay cả những kiến thức đơn giản như thế này mà em ấy cũng không biết.⟧ — Még ilyen egyszerű dolgot sem tud.
+❷ Ⓐ ⟦Nhà hàng này đóng cửa rồi à? Từ bao giờ vậy?⟧ — Bezárt ez az étterem? Mióta? Ⓑ ⟦Ừ, nghe nói là đóng cửa đột ngột, ngay cả nhân viên cũng không biết trước.⟧ — Igen, azt mondják, hirtelen zárt be, még az alkalmazottak sem tudták előre.
+2. kulcskifejezés: ⟦thậm chí⟧ — „sőt, még … is”.
+❶ ⟦Anh ấy bị ốm mà không nói với ai nên thậm chí các đồng nghiệp cũng không biết.⟧ — Beteg volt, de senkinek sem szólt, így még a kollégái sem tudtak róla.
+❷ Ⓐ ⟦Anh sắp viết xong báo cáo chưa?⟧ — Hamarosan kész a jelentés? Ⓑ ⟦Chưa, thậm chí anh còn chưa bắt đầu.⟧ — Nem, még el sem kezdtem.
+3. gyakorlat — párosítsa, majd beszélgessen a minta szerint:
+① ⟦Bài tập Toán này⟧ (ez a matekfeladat) — Ⓐ ⟦trẻ con cũng làm được⟧ (még egy gyerek is meg tudja oldani)
+② ⟦Em Trang làm việc⟧ (ahogy Trang dolgozik) — Ⓑ ⟦ngày nghỉ em ấy cũng làm việc⟧ (még szabadnapon is dolgozik)
+③ ⟦Trình độ tiếng Việt của chị Ha-na⟧ (Ha-na vietnámitudása) — Ⓒ ⟦từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết⟧ (még olyan haladó kifejezéseket is ismer, mint „rendszerváltás”)
+Minta (①―Ⓐ): Ⓐ ⟦Bài tập Toán này thế nào? Có khó không?⟧ — Milyen ez a matekfeladat? Nehéz? Ⓑ ⟦Bài này khó gì. Ngay cả trẻ con cũng làm được.⟧ — Egyáltalán nem. Még egy gyerek is meg tudja oldani.
+② Ⓐ ⟦Em Trang làm việc thế nào? Có chăm chỉ không?⟧ — Hogyan dolgozik Trang? Szorgalmas? Ⓑ ⟦Vâng, Trang rất chăm chỉ. Ngay cả ngày nghỉ em ấy cũng làm việc.⟧ — Igen, nagyon. Még szabadnapon is dolgozik.
+③ Ⓐ ⟦Trình độ tiếng Việt của chị Ha-na thế nào? Có giỏi không?⟧ — Milyen jól tud Ha-na vietnámiul? Ⓑ ⟦Chị ấy giỏi lắm. Ngay cả từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết.⟧ — Nagyon jól. Még olyan haladó kifejezéseket is ismer, mint „rendszerváltás”.
+4. gyakorlat — egészítse ki, majd mondja el:
+Minta: ⟦Em thích ăn hoa quả nhiệt đới, thậm chí thích cả sầu riêng.⟧ — Szeretem a trópusi gyümölcsöket, sőt még a duriánt is.
+❶ ⟦Hôm nay em bận quá, thậm chí không có cả thời gian uống cà phê.⟧ — Ma annyira elfoglalt vagyok, hogy még egy kávéra sincs időm.
+❷ ⟦Chúng tôi không có thông tin gì về anh ấy, thậm chí không biết cả số điện thoại.⟧ — Semmilyen információnk nincs róla, még a telefonszámát sem tudjuk.
+Új szavak: ⟦chuyển đổi⟧ átalakítani, átváltani | ⟦cơ chế⟧ mechanizmus, rendszer
+=id
+Ungkapan kunci 1: ⟦ngay cả ~⟧ — "bahkan ~ pun" (penegasan).
+❶ ⟦Ngay cả những kiến thức đơn giản như thế này mà em ấy cũng không biết.⟧ — Bahkan pengetahuan sesederhana ini pun dia tidak tahu.
+❷ Ⓐ ⟦Nhà hàng này đóng cửa rồi à? Từ bao giờ vậy?⟧ — Restoran ini sudah tutup? Sejak kapan? Ⓑ ⟦Ừ, nghe nói là đóng cửa đột ngột, ngay cả nhân viên cũng không biết trước.⟧ — Ya, katanya tutup mendadak, bahkan karyawannya pun tidak tahu sebelumnya.
+Ungkapan kunci 2: ⟦thậm chí⟧ — "bahkan".
+❶ ⟦Anh ấy bị ốm mà không nói với ai nên thậm chí các đồng nghiệp cũng không biết.⟧ — Dia sakit tetapi tidak bilang kepada siapa pun, jadi bahkan rekan kerjanya pun tidak tahu.
+❷ Ⓐ ⟦Anh sắp viết xong báo cáo chưa?⟧ — Laporannya hampir selesai? Ⓑ ⟦Chưa, thậm chí anh còn chưa bắt đầu.⟧ — Belum, bahkan Kakak belum mulai.
+Latihan pola 3 — pasangkan lalu bercakap seperti contoh:
+① ⟦Bài tập Toán này⟧ (soal matematika ini) — Ⓐ ⟦trẻ con cũng làm được⟧ (anak kecil pun bisa mengerjakannya)
+② ⟦Em Trang làm việc⟧ (cara Trang bekerja) — Ⓑ ⟦ngày nghỉ em ấy cũng làm việc⟧ (hari libur pun dia bekerja)
+③ ⟦Trình độ tiếng Việt của chị Ha-na⟧ (kemampuan bahasa Vietnam Ha-na) — Ⓒ ⟦từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết⟧ (bahkan tahu istilah tingkat tinggi seperti "perubahan mekanisme")
+Contoh (①―Ⓐ): Ⓐ ⟦Bài tập Toán này thế nào? Có khó không?⟧ — Bagaimana soal matematika ini? Sulit? Ⓑ ⟦Bài này khó gì. Ngay cả trẻ con cũng làm được.⟧ — Tidak sulit sama sekali. Anak kecil pun bisa.
+② Ⓐ ⟦Em Trang làm việc thế nào? Có chăm chỉ không?⟧ — Bagaimana Trang bekerja? Rajin? Ⓑ ⟦Vâng, Trang rất chăm chỉ. Ngay cả ngày nghỉ em ấy cũng làm việc.⟧ — Ya, Trang sangat rajin. Bahkan hari libur pun dia bekerja.
+③ Ⓐ ⟦Trình độ tiếng Việt của chị Ha-na thế nào? Có giỏi không?⟧ — Bagaimana kemampuan bahasa Vietnam Kak Ha-na? Bagus? Ⓑ ⟦Chị ấy giỏi lắm. Ngay cả từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết.⟧ — Bagus sekali. Bahkan istilah tingkat tinggi seperti "perubahan mekanisme" pun dia tahu.
+Latihan pola 4 — isilah lalu ucapkan:
+Contoh: ⟦Em thích ăn hoa quả nhiệt đới, thậm chí thích cả sầu riêng.⟧ — Saya suka makan buah tropis, bahkan durian pun suka.
+❶ ⟦Hôm nay em bận quá, thậm chí không có cả thời gian uống cà phê.⟧ — Hari ini saya sibuk sekali, bahkan tidak sempat minum kopi.
+❷ ⟦Chúng tôi không có thông tin gì về anh ấy, thậm chí không biết cả số điện thoại.⟧ — Kami tidak punya informasi apa pun tentang dia, bahkan nomor teleponnya pun tidak tahu.
+Kosakata baru: ⟦chuyển đổi⟧ mengubah, mengalihkan | ⟦cơ chế⟧ mekanisme, sistem
+=ja
+核心表現1：⟦ngay cả ~⟧ —「～さえ、～まで」と強調する意味を表します。
+❶ ⟦Ngay cả những kiến thức đơn giản như thế này mà em ấy cũng không biết.⟧ — こんな単純な知識さえ、あの子は知らない。
+❷ Ⓐ ⟦Nhà hàng này đóng cửa rồi à? Từ bao giờ vậy?⟧ — この店、閉店したの？いつから？ Ⓑ ⟦Ừ, nghe nói là đóng cửa đột ngột, ngay cả nhân viên cũng không biết trước.⟧ — うん、急に閉めたから、店員さえ前もって知らなかったらしいよ。
+核心表現2：⟦thậm chí⟧ —「さらには、それどころか」。
+❶ ⟦Anh ấy bị ốm mà không nói với ai nên thậm chí các đồng nghiệp cũng không biết.⟧ — 彼は具合が悪くても誰にも言わないので、同僚でさえ知らない。
+❷ Ⓐ ⟦Anh sắp viết xong báo cáo chưa?⟧ — 報告書、もうすぐ終わりますか。 Ⓑ ⟦Chưa, thậm chí anh còn chưa bắt đầu.⟧ — まだ。それどころかまだ始めてもいないよ。
+文型練習3 — 合うものを結んで、例のように会話しましょう：
+① ⟦Bài tập Toán này⟧（この数学の問題）— Ⓐ ⟦trẻ con cũng làm được⟧（子どもでもできる）
+② ⟦Em Trang làm việc⟧（チャンの働きぶり）— Ⓑ ⟦ngày nghỉ em ấy cũng làm việc⟧（休日も働く）
+③ ⟦Trình độ tiếng Việt của chị Ha-na⟧（ハナさんのベトナム語のレベル）— Ⓒ ⟦từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết⟧（「体制転換」のような高度なベトナム語まで知っている）
+例（①―Ⓐ）：Ⓐ ⟦Bài tập Toán này thế nào? Có khó không?⟧ — この数学の問題はどう？難しい？ Ⓑ ⟦Bài này khó gì. Ngay cả trẻ con cũng làm được.⟧ — 全然難しくないよ。子どもでもできる。
+② Ⓐ ⟦Em Trang làm việc thế nào? Có chăm chỉ không?⟧ — チャンの働きぶりはどう？まじめ？ Ⓑ ⟦Vâng, Trang rất chăm chỉ. Ngay cả ngày nghỉ em ấy cũng làm việc.⟧ — はい、とてもまじめです。休日さえ働いています。
+③ Ⓐ ⟦Trình độ tiếng Việt của chị Ha-na thế nào? Có giỏi không?⟧ — ハナさんのベトナム語はどう？上手？ Ⓑ ⟦Chị ấy giỏi lắm. Ngay cả từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết.⟧ — とても上手だよ。「体制転換」みたいな高度な言葉まで知っている。
+文型練習4 — 空欄を埋めて言ってみましょう：
+例：⟦Em thích ăn hoa quả nhiệt đới, thậm chí thích cả sầu riêng.⟧ — 私は熱帯の果物が好きで、ドリアンさえ好きです。
+❶ ⟦Hôm nay em bận quá, thậm chí không có cả thời gian uống cà phê.⟧ — 今日は忙しすぎて、コーヒーを飲む時間さえない。
+❷ ⟦Chúng tôi không có thông tin gì về anh ấy, thậm chí không biết cả số điện thoại.⟧ — 私たちは彼について何の情報もなく、電話番号さえ知らない。
+新出単語：⟦chuyển đổi⟧ 転換する、変える | ⟦cơ chế⟧ 体制、メカニズム
+=pl
+Kluczowe wyrażenie 1: ⟦ngay cả ~⟧ — „nawet ~” (podkreślenie).
+❶ ⟦Ngay cả những kiến thức đơn giản như thế này mà em ấy cũng không biết.⟧ — On nie zna nawet tak prostych rzeczy.
+❷ Ⓐ ⟦Nhà hàng này đóng cửa rồi à? Từ bao giờ vậy?⟧ — Ta restauracja jest zamknięta? Od kiedy? Ⓑ ⟦Ừ, nghe nói là đóng cửa đột ngột, ngay cả nhân viên cũng không biết trước.⟧ — Tak, podobno zamknęli nagle, nawet pracownicy nie wiedzieli wcześniej.
+Kluczowe wyrażenie 2: ⟦thậm chí⟧ — „nawet, wręcz”.
+❶ ⟦Anh ấy bị ốm mà không nói với ai nên thậm chí các đồng nghiệp cũng không biết.⟧ — Był chory, ale nikomu nie powiedział, więc nawet koledzy nie wiedzieli.
+❷ Ⓐ ⟦Anh sắp viết xong báo cáo chưa?⟧ — Kończysz już raport? Ⓑ ⟦Chưa, thậm chí anh còn chưa bắt đầu.⟧ — Nie, nawet jeszcze nie zacząłem.
+Ćwiczenie 3 — połącz i rozmawiaj według wzoru:
+① ⟦Bài tập Toán này⟧ (to zadanie z matematyki) — Ⓐ ⟦trẻ con cũng làm được⟧ (nawet dziecko je zrobi)
+② ⟦Em Trang làm việc⟧ (jak pracuje Trang) — Ⓑ ⟦ngày nghỉ em ấy cũng làm việc⟧ (pracuje nawet w dni wolne)
+③ ⟦Trình độ tiếng Việt của chị Ha-na⟧ (poziom wietnamskiego Ha-ny) — Ⓒ ⟦từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết⟧ (zna nawet zaawansowane wyrażenia jak „zmiana systemu”)
+Wzór (①―Ⓐ): Ⓐ ⟦Bài tập Toán này thế nào? Có khó không?⟧ — Jak to zadanie z matematyki? Trudne? Ⓑ ⟦Bài này khó gì. Ngay cả trẻ con cũng làm được.⟧ — Wcale nie. Nawet dziecko by je zrobiło.
+② Ⓐ ⟦Em Trang làm việc thế nào? Có chăm chỉ không?⟧ — Jak pracuje Trang? Jest pracowita? Ⓑ ⟦Vâng, Trang rất chăm chỉ. Ngay cả ngày nghỉ em ấy cũng làm việc.⟧ — Tak, bardzo. Pracuje nawet w dni wolne.
+③ Ⓐ ⟦Trình độ tiếng Việt của chị Ha-na thế nào? Có giỏi không?⟧ — Jak dobrze Ha-na mówi po wietnamsku? Ⓑ ⟦Chị ấy giỏi lắm. Ngay cả từ ngữ tiếng Việt cao cấp như ‘chuyển đổi cơ chế’ cũng biết.⟧ — Bardzo dobrze. Zna nawet zaawansowane wyrażenia jak „zmiana systemu”.
+Ćwiczenie 4 — uzupełnij i powiedz:
+Wzór: ⟦Em thích ăn hoa quả nhiệt đới, thậm chí thích cả sầu riêng.⟧ — Lubię owoce tropikalne, nawet duriana.
+❶ ⟦Hôm nay em bận quá, thậm chí không có cả thời gian uống cà phê.⟧ — Jestem dziś tak zajęty, że nie mam nawet czasu na kawę.
+❷ ⟦Chúng tôi không có thông tin gì về anh ấy, thậm chí không biết cả số điện thoại.⟧ — Nie mamy o nim żadnych informacji, nie znamy nawet jego numeru telefonu.
+Nowe słówka: ⟦chuyển đổi⟧ zmieniać, przekształcać | ⟦cơ chế⟧ mechanizm, system

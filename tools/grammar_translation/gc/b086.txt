@@ -1,0 +1,122 @@
+@@ pdf-grammar-8dbfa5430f72cb88#0
+=cs
+Gramatický výklad
+⟦Cách đọc phần trăm⟧ — Jak číst procenta
+0,7 % → ⟦không phẩy bảy phần trăm⟧ · 16 % → ⟦mười sáu phần trăm⟧ · 70 % → ⟦bảy mươi phần trăm⟧ · 81,2 % → ⟦tám (mươi) mốt phẩy hai (mươi) phần trăm⟧ · 73,8 % → ⟦bảy (mươi) ba phẩy tám (mươi) phần trăm⟧ · 36,2 % → ⟦ba (mươi) sáu phẩy hai (mươi) phần trăm⟧ · 64,08 % → ⟦sáu (mươi) tư phẩy không tám phần trăm⟧ · 63,02 % → ⟦sáu (mươi) ba phẩy không hai phần trăm⟧
+⟦để⟧: vyjadřuje účel činnosti – „aby, za účelem“.
+⟦Mục đích phổ biến nhất của việc sử dụng internet hàng ngày là để cập nhật thông tin.⟧ → Nejčastějším účelem každodenního používání internetu je získávat aktuální informace. · ⟦Đa số người tham gia khảo sát sử dụng internet là để tham gia các diễn đàn, mạng xã hội, truy cập e-mail, xem phim ảnh, nghe nhạc ...⟧ → Většina respondentů průzkumu používá internet k účasti ve fórech a sociálních sítích, k práci s e-mailem, sledování filmů, poslechu hudby… · ⟦Anh ấy mua ô tô để đi làm được thuận tiện hơn.⟧ → Koupil si auto, aby se mu pohodlněji jezdilo do práce. · ⟦Tôi đến trường sớm hơn mọi ngày để kịp gặp thầy hiệu trưởng trước giờ lên lớp.⟧ → Přišel jsem do školy dřív než obvykle, abych stihl mluvit s ředitelem před vyučováním. · ⟦Chúng tôi thường đến trường bằng xe buýt để đỡ mệt mỏi.⟧ → Do školy obvykle jezdíme autobusem, abychom nebyli tak unavení.
+=zh_cn
+语法解说
+⟦Cách đọc phần trăm⟧ — 百分数的读法
+0,7 % → ⟦không phẩy bảy phần trăm⟧ · 16 % → ⟦mười sáu phần trăm⟧ · 70 % → ⟦bảy mươi phần trăm⟧ · 81,2 % → ⟦tám (mươi) mốt phẩy hai (mươi) phần trăm⟧ · 73,8 % → ⟦bảy (mươi) ba phẩy tám (mươi) phần trăm⟧ · 36,2 % → ⟦ba (mươi) sáu phẩy hai (mươi) phần trăm⟧ · 64,08 % → ⟦sáu (mươi) tư phẩy không tám phần trăm⟧ · 63,02 % → ⟦sáu (mươi) ba phẩy không hai phần trăm⟧
+⟦để⟧：表示活动的目的，意为“为了……”。
+⟦Mục đích phổ biến nhất của việc sử dụng internet hàng ngày là để cập nhật thông tin.⟧ → 每天上网最普遍的目的是更新信息。 · ⟦Đa số người tham gia khảo sát sử dụng internet là để tham gia các diễn đàn, mạng xã hội, truy cập e-mail, xem phim ảnh, nghe nhạc ...⟧ → 大多数受访者上网是为了参加论坛、社交网络，收发电子邮件，看电影，听音乐等。 · ⟦Anh ấy mua ô tô để đi làm được thuận tiện hơn.⟧ → 他买车是为了上班更方便。 · ⟦Tôi đến trường sớm hơn mọi ngày để kịp gặp thầy hiệu trưởng trước giờ lên lớp.⟧ → 我比平时早到学校，为了在上课前见到校长。 · ⟦Chúng tôi thường đến trường bằng xe buýt để đỡ mệt mỏi.⟧ → 我们通常坐公交车上学，为了少累一点。
+=zh
+文法解說
+⟦Cách đọc phần trăm⟧ — 百分比的讀法
+0,7 % → ⟦không phẩy bảy phần trăm⟧ · 16 % → ⟦mười sáu phần trăm⟧ · 70 % → ⟦bảy mươi phần trăm⟧ · 81,2 % → ⟦tám (mươi) mốt phẩy hai (mươi) phần trăm⟧ · 73,8 % → ⟦bảy (mươi) ba phẩy tám (mươi) phần trăm⟧ · 36,2 % → ⟦ba (mươi) sáu phẩy hai (mươi) phần trăm⟧ · 64,08 % → ⟦sáu (mươi) tư phẩy không tám phần trăm⟧ · 63,02 % → ⟦sáu (mươi) ba phẩy không hai phần trăm⟧
+⟦để⟧：表示活動的目的，意為「為了……」。
+⟦Mục đích phổ biến nhất của việc sử dụng internet hàng ngày là để cập nhật thông tin.⟧ → 每天上網最普遍的目的是更新資訊。 · ⟦Đa số người tham gia khảo sát sử dụng internet là để tham gia các diễn đàn, mạng xã hội, truy cập e-mail, xem phim ảnh, nghe nhạc ...⟧ → 大多數受訪者上網是為了參與論壇、社群網站，收發電子郵件，看電影，聽音樂等。 · ⟦Anh ấy mua ô tô để đi làm được thuận tiện hơn.⟧ → 他買車是為了上班更方便。 · ⟦Tôi đến trường sớm hơn mọi ngày để kịp gặp thầy hiệu trưởng trước giờ lên lớp.⟧ → 我比平常早到學校，為了在上課前見到校長。 · ⟦Chúng tôi thường đến trường bằng xe buýt để đỡ mệt mỏi.⟧ → 我們通常搭公車上學，為了少累一點。
+=en
+Grammar notes
+⟦Cách đọc phần trăm⟧ — How to read percentages
+0.7 % → ⟦không phẩy bảy phần trăm⟧ · 16 % → ⟦mười sáu phần trăm⟧ · 70 % → ⟦bảy mươi phần trăm⟧ · 81.2 % → ⟦tám (mươi) mốt phẩy hai (mươi) phần trăm⟧ · 73.8 % → ⟦bảy (mươi) ba phẩy tám (mươi) phần trăm⟧ · 36.2 % → ⟦ba (mươi) sáu phẩy hai (mươi) phần trăm⟧ · 64.08 % → ⟦sáu (mươi) tư phẩy không tám phần trăm⟧ · 63.02 % → ⟦sáu (mươi) ba phẩy không hai phần trăm⟧ (Vietnamese uses a comma as the decimal point, read ⟦phẩy⟧.)
+⟦để⟧: expresses the purpose of an activity – "in order to, to".
+⟦Mục đích phổ biến nhất của việc sử dụng internet hàng ngày là để cập nhật thông tin.⟧ → The most common purpose of daily internet use is to keep up with information. · ⟦Đa số người tham gia khảo sát sử dụng internet là để tham gia các diễn đàn, mạng xã hội, truy cập e-mail, xem phim ảnh, nghe nhạc ...⟧ → Most survey participants use the internet to join forums and social networks, check e-mail, watch films, listen to music… · ⟦Anh ấy mua ô tô để đi làm được thuận tiện hơn.⟧ → He bought a car to make getting to work more convenient. · ⟦Tôi đến trường sớm hơn mọi ngày để kịp gặp thầy hiệu trưởng trước giờ lên lớp.⟧ → I came to school earlier than usual so I could see the headmaster before class. · ⟦Chúng tôi thường đến trường bằng xe buýt để đỡ mệt mỏi.⟧ → We usually go to school by bus so as to be less tired.
+=fr
+Notes de grammaire
+⟦Cách đọc phần trăm⟧ — Comment lire les pourcentages
+0,7 % → ⟦không phẩy bảy phần trăm⟧ · 16 % → ⟦mười sáu phần trăm⟧ · 70 % → ⟦bảy mươi phần trăm⟧ · 81,2 % → ⟦tám (mươi) mốt phẩy hai (mươi) phần trăm⟧ · 73,8 % → ⟦bảy (mươi) ba phẩy tám (mươi) phần trăm⟧ · 36,2 % → ⟦ba (mươi) sáu phẩy hai (mươi) phần trăm⟧ · 64,08 % → ⟦sáu (mươi) tư phẩy không tám phần trăm⟧ · 63,02 % → ⟦sáu (mươi) ba phẩy không hai phần trăm⟧
+⟦để⟧ : exprime le but d'une activité – « pour, afin de ».
+⟦Mục đích phổ biến nhất của việc sử dụng internet hàng ngày là để cập nhật thông tin.⟧ → Le but le plus courant de l'usage quotidien d'Internet est de se tenir informé. · ⟦Đa số người tham gia khảo sát sử dụng internet là để tham gia các diễn đàn, mạng xã hội, truy cập e-mail, xem phim ảnh, nghe nhạc ...⟧ → La plupart des personnes interrogées utilisent Internet pour participer à des forums et réseaux sociaux, consulter leurs e-mails, regarder des films, écouter de la musique… · ⟦Anh ấy mua ô tô để đi làm được thuận tiện hơn.⟧ → Il a acheté une voiture pour aller au travail plus facilement. · ⟦Tôi đến trường sớm hơn mọi ngày để kịp gặp thầy hiệu trưởng trước giờ lên lớp.⟧ → Je suis arrivé à l'école plus tôt que d'habitude pour voir le directeur avant les cours. · ⟦Chúng tôi thường đến trường bằng xe buýt để đỡ mệt mỏi.⟧ → Nous allons généralement à l'école en bus pour être moins fatigués.
+=de
+Grammatikerläuterungen
+⟦Cách đọc phần trăm⟧ — Wie man Prozentzahlen liest
+0,7 % → ⟦không phẩy bảy phần trăm⟧ · 16 % → ⟦mười sáu phần trăm⟧ · 70 % → ⟦bảy mươi phần trăm⟧ · 81,2 % → ⟦tám (mươi) mốt phẩy hai (mươi) phần trăm⟧ · 73,8 % → ⟦bảy (mươi) ba phẩy tám (mươi) phần trăm⟧ · 36,2 % → ⟦ba (mươi) sáu phẩy hai (mươi) phần trăm⟧ · 64,08 % → ⟦sáu (mươi) tư phẩy không tám phần trăm⟧ · 63,02 % → ⟦sáu (mươi) ba phẩy không hai phần trăm⟧
+⟦để⟧: drückt den Zweck einer Tätigkeit aus – „um … zu, damit“.
+⟦Mục đích phổ biến nhất của việc sử dụng internet hàng ngày là để cập nhật thông tin.⟧ → Der häufigste Zweck der täglichen Internetnutzung ist, sich auf dem Laufenden zu halten. · ⟦Đa số người tham gia khảo sát sử dụng internet là để tham gia các diễn đàn, mạng xã hội, truy cập e-mail, xem phim ảnh, nghe nhạc ...⟧ → Die meisten Befragten nutzen das Internet, um an Foren und sozialen Netzwerken teilzunehmen, E-Mails abzurufen, Filme zu sehen, Musik zu hören … · ⟦Anh ấy mua ô tô để đi làm được thuận tiện hơn.⟧ → Er hat ein Auto gekauft, um bequemer zur Arbeit zu kommen. · ⟦Tôi đến trường sớm hơn mọi ngày để kịp gặp thầy hiệu trưởng trước giờ lên lớp.⟧ → Ich kam früher als sonst zur Schule, um den Schulleiter noch vor dem Unterricht zu treffen. · ⟦Chúng tôi thường đến trường bằng xe buýt để đỡ mệt mỏi.⟧ → Wir fahren meist mit dem Bus zur Schule, um weniger müde zu sein.
+=hu
+Nyelvtani magyarázat
+⟦Cách đọc phần trăm⟧ — A százalékok kiolvasása
+0,7 % → ⟦không phẩy bảy phần trăm⟧ · 16 % → ⟦mười sáu phần trăm⟧ · 70 % → ⟦bảy mươi phần trăm⟧ · 81,2 % → ⟦tám (mươi) mốt phẩy hai (mươi) phần trăm⟧ · 73,8 % → ⟦bảy (mươi) ba phẩy tám (mươi) phần trăm⟧ · 36,2 % → ⟦ba (mươi) sáu phẩy hai (mươi) phần trăm⟧ · 64,08 % → ⟦sáu (mươi) tư phẩy không tám phần trăm⟧ · 63,02 % → ⟦sáu (mươi) ba phẩy không hai phần trăm⟧
+⟦để⟧: egy tevékenység célját fejezi ki – „azért, hogy; céljából”.
+⟦Mục đích phổ biến nhất của việc sử dụng internet hàng ngày là để cập nhật thông tin.⟧ → A napi internethasználat leggyakoribb célja az információk naprakészen tartása. · ⟦Đa số người tham gia khảo sát sử dụng internet là để tham gia các diễn đàn, mạng xã hội, truy cập e-mail, xem phim ảnh, nghe nhạc ...⟧ → A felmérés résztvevőinek többsége fórumokon és közösségi oldalakon való részvételre, e-mailezésre, filmnézésre, zenehallgatásra használja az internetet… · ⟦Anh ấy mua ô tô để đi làm được thuận tiện hơn.⟧ → Autót vett, hogy kényelmesebben járjon munkába. · ⟦Tôi đến trường sớm hơn mọi ngày để kịp gặp thầy hiệu trưởng trước giờ lên lớp.⟧ → A szokásosnál korábban mentem iskolába, hogy óra előtt találkozhassak az igazgatóval. · ⟦Chúng tôi thường đến trường bằng xe buýt để đỡ mệt mỏi.⟧ → Általában busszal járunk iskolába, hogy kevésbé fáradjunk el.
+=id
+Penjelasan tata bahasa
+⟦Cách đọc phần trăm⟧ — Cara membaca persen
+0,7 % → ⟦không phẩy bảy phần trăm⟧ · 16 % → ⟦mười sáu phần trăm⟧ · 70 % → ⟦bảy mươi phần trăm⟧ · 81,2 % → ⟦tám (mươi) mốt phẩy hai (mươi) phần trăm⟧ · 73,8 % → ⟦bảy (mươi) ba phẩy tám (mươi) phần trăm⟧ · 36,2 % → ⟦ba (mươi) sáu phẩy hai (mươi) phần trăm⟧ · 64,08 % → ⟦sáu (mươi) tư phẩy không tám phần trăm⟧ · 63,02 % → ⟦sáu (mươi) ba phẩy không hai phần trăm⟧
+⟦để⟧: menyatakan tujuan suatu kegiatan – "untuk, agar".
+⟦Mục đích phổ biến nhất của việc sử dụng internet hàng ngày là để cập nhật thông tin.⟧ → Tujuan paling umum menggunakan internet setiap hari adalah untuk memperbarui informasi. · ⟦Đa số người tham gia khảo sát sử dụng internet là để tham gia các diễn đàn, mạng xã hội, truy cập e-mail, xem phim ảnh, nghe nhạc ...⟧ → Sebagian besar peserta survei menggunakan internet untuk ikut forum, media sosial, mengakses e-mail, menonton film, mendengarkan musik… · ⟦Anh ấy mua ô tô để đi làm được thuận tiện hơn.⟧ → Dia membeli mobil agar lebih mudah pergi bekerja. · ⟦Tôi đến trường sớm hơn mọi ngày để kịp gặp thầy hiệu trưởng trước giờ lên lớp.⟧ → Saya datang ke sekolah lebih awal dari biasanya agar sempat bertemu kepala sekolah sebelum pelajaran. · ⟦Chúng tôi thường đến trường bằng xe buýt để đỡ mệt mỏi.⟧ → Kami biasanya ke sekolah naik bus agar tidak terlalu lelah.
+=ja
+文法解説
+⟦Cách đọc phần trăm⟧ — パーセントの読み方
+0,7 % → ⟦không phẩy bảy phần trăm⟧ · 16 % → ⟦mười sáu phần trăm⟧ · 70 % → ⟦bảy mươi phần trăm⟧ · 81,2 % → ⟦tám (mươi) mốt phẩy hai (mươi) phần trăm⟧ · 73,8 % → ⟦bảy (mươi) ba phẩy tám (mươi) phần trăm⟧ · 36,2 % → ⟦ba (mươi) sáu phẩy hai (mươi) phần trăm⟧ · 64,08 % → ⟦sáu (mươi) tư phẩy không tám phần trăm⟧ · 63,02 % → ⟦sáu (mươi) ba phẩy không hai phần trăm⟧
+⟦để⟧：活動の目的を表し、「～するために」という意味で使われます。
+⟦Mục đích phổ biến nhất của việc sử dụng internet hàng ngày là để cập nhật thông tin.⟧ → インターネットを毎日使う最も一般的な目的は、情報を更新することだった。 · ⟦Đa số người tham gia khảo sát sử dụng internet là để tham gia các diễn đàn, mạng xã hội, truy cập e-mail, xem phim ảnh, nghe nhạc ...⟧ → 調査に参加した人の大半は、フォーラムやSNSへの参加、メール、映画鑑賞、音楽鑑賞などのためにインターネットを使っていた。 · ⟦Anh ấy mua ô tô để đi làm được thuận tiện hơn.⟧ → 彼は通勤をより楽にするために車を買った。 · ⟦Tôi đến trường sớm hơn mọi ngày để kịp gặp thầy hiệu trưởng trước giờ lên lớp.⟧ → 私は授業前に校長先生に会うために、いつもより早く学校に行った。 · ⟦Chúng tôi thường đến trường bằng xe buýt để đỡ mệt mỏi.⟧ → 私たちは疲れを減らすために、普段バスで学校に行く。
+=pl
+Objaśnienia gramatyczne
+⟦Cách đọc phần trăm⟧ — Jak czytać procenty
+0,7 % → ⟦không phẩy bảy phần trăm⟧ · 16 % → ⟦mười sáu phần trăm⟧ · 70 % → ⟦bảy mươi phần trăm⟧ · 81,2 % → ⟦tám (mươi) mốt phẩy hai (mươi) phần trăm⟧ · 73,8 % → ⟦bảy (mươi) ba phẩy tám (mươi) phần trăm⟧ · 36,2 % → ⟦ba (mươi) sáu phẩy hai (mươi) phần trăm⟧ · 64,08 % → ⟦sáu (mươi) tư phẩy không tám phần trăm⟧ · 63,02 % → ⟦sáu (mươi) ba phẩy không hai phần trăm⟧
+⟦để⟧: wyraża cel czynności – „aby, żeby, w celu”.
+⟦Mục đích phổ biến nhất của việc sử dụng internet hàng ngày là để cập nhật thông tin.⟧ → Najczęstszym celem codziennego korzystania z internetu jest bycie na bieżąco z informacjami. · ⟦Đa số người tham gia khảo sát sử dụng internet là để tham gia các diễn đàn, mạng xã hội, truy cập e-mail, xem phim ảnh, nghe nhạc ...⟧ → Większość ankietowanych korzysta z internetu, by uczestniczyć w forach i sieciach społecznościowych, sprawdzać e-maile, oglądać filmy, słuchać muzyki… · ⟦Anh ấy mua ô tô để đi làm được thuận tiện hơn.⟧ → Kupił samochód, żeby wygodniej dojeżdżać do pracy. · ⟦Tôi đến trường sớm hơn mọi ngày để kịp gặp thầy hiệu trưởng trước giờ lên lớp.⟧ → Przyszedłem do szkoły wcześniej niż zwykle, żeby zdążyć spotkać dyrektora przed lekcjami. · ⟦Chúng tôi thường đến trường bằng xe buýt để đỡ mệt mỏi.⟧ → Zwykle jeździmy do szkoły autobusem, żeby mniej się męczyć.
+@@ pdf-grammar-a895a68143aa9f28#0
+=cs
+Gramatický výklad
+⟦cả buổi⟧: ve tvaru ⟦cả⟧ + časový výraz znamená „po celou dobu, celý ~“. ⟦cả buổi⟧ tedy v sobě nese význam „celý den, dlouho“.
+⟦Cả buổi chiều, hai người trò chuyện hết sức vui vẻ, thoải mái.⟧ → Celé odpoledne si ti dva nesmírně vesele a uvolněně povídali. · ⟦Tôi đợi anh ấy cả buổi chiều mà anh ấy không đến.⟧ → Čekal jsem na něj celé odpoledne, a on nepřišel. · ⟦Mất cả ngày cả buổi mà chẳng làm được việc gì.⟧ → Promarnil jsem celý den a nic jsem neudělal. · ⟦Tôi trò chuyện với cô ấy cả buổi sáng nay.⟧ → Celé dnešní dopoledne jsem si s ní povídal. · ⟦Ô tô chạy cả buổi mới vào được trung tâm thành phố.⟧ → Auto jelo hrozně dlouho, než se dostalo do centra města.
+⟦bữa qua⟧, ⟦bữa nay⟧: výrazy pro čas – ⟦bữa qua⟧ znamená „včera“, ⟦bữa nay⟧ „dnes“.
+⟦Mình vừa lắp bữa qua đấy.⟧ → Zrovna včera jsem to nainstaloval. · ⟦Bữa nay nói chuyện thế là nhiều rồi.⟧ → Pro dnešek jsme si toho řekli dost. · ⟦Mình vừa đặt mua qua mạng bữa qua mà bữa nay hàng đã đến rồi.⟧ → Včera jsem si to objednal přes internet, a dnes už zboží dorazilo. · ⟦Bữa qua anh có đi đâu không?⟧ → Byl jsi včera někde? · ⟦Bữa nay tôi có rất nhiều việc phải làm.⟧ → Dnes mám spoustu práce.
+=zh_cn
+语法解说
+⟦cả buổi⟧：以 ⟦cả⟧ + 表示时间的词 的形式，表示“整个……期间”，因此 ⟦cả buổi⟧ 含有“一整天、很长时间”的意思。
+⟦Cả buổi chiều, hai người trò chuyện hết sức vui vẻ, thoải mái.⟧ → 整个下午，两个人聊得非常开心、轻松。 · ⟦Tôi đợi anh ấy cả buổi chiều mà anh ấy không đến.⟧ → 我等了他一下午，他却没来。 · ⟦Mất cả ngày cả buổi mà chẳng làm được việc gì.⟧ → 花了一整天，什么事也没做成。 · ⟦Tôi trò chuyện với cô ấy cả buổi sáng nay.⟧ → 今天整个上午我都在和她聊天。 · ⟦Ô tô chạy cả buổi mới vào được trung tâm thành phố.⟧ → 汽车开了好半天才进入市中心。
+⟦bữa qua⟧、⟦bữa nay⟧：表示时间的词，⟦bữa qua⟧ 意为“昨天”，⟦bữa nay⟧ 意为“今天”。
+⟦Mình vừa lắp bữa qua đấy.⟧ → 我昨天刚装好的。 · ⟦Bữa nay nói chuyện thế là nhiều rồi.⟧ → 今天就聊这么多吧。 · ⟦Mình vừa đặt mua qua mạng bữa qua mà bữa nay hàng đã đến rồi.⟧ → 我昨天刚在网上下单，今天货就到了。 · ⟦Bữa qua anh có đi đâu không?⟧ → 你昨天去哪儿了吗？ · ⟦Bữa nay tôi có rất nhiều việc phải làm.⟧ → 我今天有很多事要做。
+=zh
+文法解說
+⟦cả buổi⟧：以 ⟦cả⟧ + 表示時間的詞 的形式，表示「整個……期間」，因此 ⟦cả buổi⟧ 含有「一整天、很長時間」的意思。
+⟦Cả buổi chiều, hai người trò chuyện hết sức vui vẻ, thoải mái.⟧ → 整個下午，兩個人聊得非常開心、輕鬆。 · ⟦Tôi đợi anh ấy cả buổi chiều mà anh ấy không đến.⟧ → 我等了他一下午，他卻沒來。 · ⟦Mất cả ngày cả buổi mà chẳng làm được việc gì.⟧ → 花了一整天，什麼事也沒做成。 · ⟦Tôi trò chuyện với cô ấy cả buổi sáng nay.⟧ → 今天整個上午我都在和她聊天。 · ⟦Ô tô chạy cả buổi mới vào được trung tâm thành phố.⟧ → 汽車開了好半天才進入市中心。
+⟦bữa qua⟧、⟦bữa nay⟧：表示時間的詞，⟦bữa qua⟧ 意為「昨天」，⟦bữa nay⟧ 意為「今天」。
+⟦Mình vừa lắp bữa qua đấy.⟧ → 我昨天剛裝好的。 · ⟦Bữa nay nói chuyện thế là nhiều rồi.⟧ → 今天就聊這麼多吧。 · ⟦Mình vừa đặt mua qua mạng bữa qua mà bữa nay hàng đã đến rồi.⟧ → 我昨天剛在網路上下單，今天貨就到了。 · ⟦Bữa qua anh có đi đâu không?⟧ → 你昨天有去哪裡嗎？ · ⟦Bữa nay tôi có rất nhiều việc phải làm.⟧ → 我今天有很多事要做。
+=en
+Grammar notes
+⟦cả buổi⟧: in the form ⟦cả⟧ + a time word, means "the whole ~, all ~ long". So ⟦cả buổi⟧ implies "all day, for a long time".
+⟦Cả buổi chiều, hai người trò chuyện hết sức vui vẻ, thoải mái.⟧ → All afternoon the two of them chatted very happily and comfortably. · ⟦Tôi đợi anh ấy cả buổi chiều mà anh ấy không đến.⟧ → I waited for him the whole afternoon, but he didn't come. · ⟦Mất cả ngày cả buổi mà chẳng làm được việc gì.⟧ → I wasted the whole day and got nothing done. · ⟦Tôi trò chuyện với cô ấy cả buổi sáng nay.⟧ → I chatted with her all morning today. · ⟦Ô tô chạy cả buổi mới vào được trung tâm thành phố.⟧ → The car drove for ages before it got into the city centre.
+⟦bữa qua⟧, ⟦bữa nay⟧: time expressions – ⟦bữa qua⟧ means "yesterday", ⟦bữa nay⟧ means "today".
+⟦Mình vừa lắp bữa qua đấy.⟧ → I only installed it yesterday. · ⟦Bữa nay nói chuyện thế là nhiều rồi.⟧ → We've talked plenty for today. · ⟦Mình vừa đặt mua qua mạng bữa qua mà bữa nay hàng đã đến rồi.⟧ → I only ordered it online yesterday and it's already arrived today. · ⟦Bữa qua anh có đi đâu không?⟧ → Did you go anywhere yesterday? · ⟦Bữa nay tôi có rất nhiều việc phải làm.⟧ → I have a lot to do today.
+=fr
+Notes de grammaire
+⟦cả buổi⟧ : sous la forme ⟦cả⟧ + expression de temps, signifie « pendant tout(e) ~ ». ⟦cả buổi⟧ implique donc « toute la journée, longtemps ».
+⟦Cả buổi chiều, hai người trò chuyện hết sức vui vẻ, thoải mái.⟧ → Tout l'après-midi, les deux ont bavardé très joyeusement et librement. · ⟦Tôi đợi anh ấy cả buổi chiều mà anh ấy không đến.⟧ → Je l'ai attendu tout l'après-midi, mais il n'est pas venu. · ⟦Mất cả ngày cả buổi mà chẳng làm được việc gì.⟧ → J'ai perdu toute la journée sans rien faire. · ⟦Tôi trò chuyện với cô ấy cả buổi sáng nay.⟧ → J'ai discuté avec elle toute la matinée. · ⟦Ô tô chạy cả buổi mới vào được trung tâm thành phố.⟧ → La voiture a roulé une éternité avant d'arriver au centre-ville.
+⟦bữa qua⟧, ⟦bữa nay⟧ : expressions de temps – ⟦bữa qua⟧ signifie « hier », ⟦bữa nay⟧ « aujourd'hui ».
+⟦Mình vừa lắp bữa qua đấy.⟧ → Je viens de l'installer hier. · ⟦Bữa nay nói chuyện thế là nhiều rồi.⟧ → On a assez parlé pour aujourd'hui. · ⟦Mình vừa đặt mua qua mạng bữa qua mà bữa nay hàng đã đến rồi.⟧ → Je l'ai commandé en ligne hier et c'est déjà arrivé aujourd'hui. · ⟦Bữa qua anh có đi đâu không?⟧ → Tu es allé quelque part hier ? · ⟦Bữa nay tôi có rất nhiều việc phải làm.⟧ → Aujourd'hui, j'ai énormément de travail.
+=de
+Grammatikerläuterungen
+⟦cả buổi⟧: in der Form ⟦cả⟧ + Zeitangabe bedeutet es „die ganze ~ über“. ⟦cả buổi⟧ enthält daher die Bedeutung „den ganzen Tag, lange Zeit“.
+⟦Cả buổi chiều, hai người trò chuyện hết sức vui vẻ, thoải mái.⟧ → Den ganzen Nachmittag unterhielten sich die beiden äußerst fröhlich und entspannt. · ⟦Tôi đợi anh ấy cả buổi chiều mà anh ấy không đến.⟧ → Ich habe den ganzen Nachmittag auf ihn gewartet, aber er kam nicht. · ⟦Mất cả ngày cả buổi mà chẳng làm được việc gì.⟧ → Ich habe den ganzen Tag vertan und nichts geschafft. · ⟦Tôi trò chuyện với cô ấy cả buổi sáng nay.⟧ → Ich habe mich heute den ganzen Vormittag mit ihr unterhalten. · ⟦Ô tô chạy cả buổi mới vào được trung tâm thành phố.⟧ → Das Auto fuhr ewig, bis es ins Stadtzentrum kam.
+⟦bữa qua⟧, ⟦bữa nay⟧: Zeitausdrücke – ⟦bữa qua⟧ heißt „gestern“, ⟦bữa nay⟧ „heute“.
+⟦Mình vừa lắp bữa qua đấy.⟧ → Ich habe es erst gestern installiert. · ⟦Bữa nay nói chuyện thế là nhiều rồi.⟧ → Für heute haben wir genug geredet. · ⟦Mình vừa đặt mua qua mạng bữa qua mà bữa nay hàng đã đến rồi.⟧ → Ich habe es gestern online bestellt, und heute ist die Ware schon da. · ⟦Bữa qua anh có đi đâu không?⟧ → Warst du gestern irgendwo? · ⟦Bữa nay tôi có rất nhiều việc phải làm.⟧ → Heute habe ich sehr viel zu tun.
+=hu
+Nyelvtani magyarázat
+⟦cả buổi⟧: ⟦cả⟧ + időt jelölő szó alakban jelentése „egész ~ alatt”. A ⟦cả buổi⟧ tehát „egész nap, hosszú ideig” jelentést hordoz.
+⟦Cả buổi chiều, hai người trò chuyện hết sức vui vẻ, thoải mái.⟧ → Egész délután nagyon vidáman és kötetlenül beszélgettek. · ⟦Tôi đợi anh ấy cả buổi chiều mà anh ấy không đến.⟧ → Egész délután vártam rá, de nem jött. · ⟦Mất cả ngày cả buổi mà chẳng làm được việc gì.⟧ → Egész nap elment, és semmit sem végeztem. · ⟦Tôi trò chuyện với cô ấy cả buổi sáng nay.⟧ → Ma egész délelőtt vele beszélgettem. · ⟦Ô tô chạy cả buổi mới vào được trung tâm thành phố.⟧ → Az autó egy örökkévalóságig ment, mire beért a városközpontba.
+⟦bữa qua⟧, ⟦bữa nay⟧: időkifejezések – a ⟦bữa qua⟧ jelentése „tegnap”, a ⟦bữa nay⟧ jelentése „ma”.
+⟦Mình vừa lắp bữa qua đấy.⟧ → Épp tegnap szereltem fel. · ⟦Bữa nay nói chuyện thế là nhiều rồi.⟧ → Mára ennyi beszélgetés elég. · ⟦Mình vừa đặt mua qua mạng bữa qua mà bữa nay hàng đã đến rồi.⟧ → Tegnap rendeltem meg az interneten, és ma már meg is érkezett. · ⟦Bữa qua anh có đi đâu không?⟧ → Voltál valahol tegnap? · ⟦Bữa nay tôi có rất nhiều việc phải làm.⟧ → Ma nagyon sok dolgom van.
+=id
+Penjelasan tata bahasa
+⟦cả buổi⟧: dalam bentuk ⟦cả⟧ + kata keterangan waktu berarti "sepanjang ~". Jadi ⟦cả buổi⟧ mengandung makna "seharian, lama".
+⟦Cả buổi chiều, hai người trò chuyện hết sức vui vẻ, thoải mái.⟧ → Sepanjang sore, keduanya mengobrol dengan sangat gembira dan santai. · ⟦Tôi đợi anh ấy cả buổi chiều mà anh ấy không đến.⟧ → Saya menunggunya sepanjang sore, tetapi dia tidak datang. · ⟦Mất cả ngày cả buổi mà chẳng làm được việc gì.⟧ → Seharian habis tanpa bisa mengerjakan apa pun. · ⟦Tôi trò chuyện với cô ấy cả buổi sáng nay.⟧ → Saya mengobrol dengannya sepanjang pagi tadi. · ⟦Ô tô chạy cả buổi mới vào được trung tâm thành phố.⟧ → Mobil melaju lama sekali barulah bisa masuk ke pusat kota.
+⟦bữa qua⟧, ⟦bữa nay⟧: kata keterangan waktu – ⟦bữa qua⟧ berarti "kemarin", ⟦bữa nay⟧ berarti "hari ini".
+⟦Mình vừa lắp bữa qua đấy.⟧ → Aku baru memasangnya kemarin. · ⟦Bữa nay nói chuyện thế là nhiều rồi.⟧ → Hari ini kita sudah banyak bicara. · ⟦Mình vừa đặt mua qua mạng bữa qua mà bữa nay hàng đã đến rồi.⟧ → Aku baru memesan lewat internet kemarin, hari ini barangnya sudah datang. · ⟦Bữa qua anh có đi đâu không?⟧ → Kemarin kamu pergi ke mana? · ⟦Bữa nay tôi có rất nhiều việc phải làm.⟧ → Hari ini saya punya banyak sekali pekerjaan.
+=ja
+文法解説
+⟦cả buổi⟧：⟦cả⟧ + 時間を表す語 の形で「その時間ずっと」という意味で使われます。したがって ⟦cả buổi⟧ は「一日中、つまり長い間」という意味を含んでいます。
+⟦Cả buổi chiều, hai người trò chuyện hết sức vui vẻ, thoải mái.⟧ → 午後の間ずっと、二人はとても楽しく気楽に話をした。 · ⟦Tôi đợi anh ấy cả buổi chiều mà anh ấy không đến.⟧ → 私は午後ずっと彼を待ったが、彼は来なかった。 · ⟦Mất cả ngày cả buổi mà chẳng làm được việc gì.⟧ → 一日中時間を使ったのに、何もできなかった。 · ⟦Tôi trò chuyện với cô ấy cả buổi sáng nay.⟧ → 私は今朝ずっと彼女と話していた。 · ⟦Ô tô chạy cả buổi mới vào được trung tâm thành phố.⟧ → 車は長いこと走って、ようやく市の中心部に入った。
+⟦bữa qua⟧、⟦bữa nay⟧：時を表す言葉で、⟦bữa qua⟧ は「昨日」、⟦bữa nay⟧ は「今日」です。
+⟦Mình vừa lắp bữa qua đấy.⟧ → 昨日取り付けたばかりだよ。 · ⟦Bữa nay nói chuyện thế là nhiều rồi.⟧ → 今日はこれくらいでたくさん話したね。 · ⟦Mình vừa đặt mua qua mạng bữa qua mà bữa nay hàng đã đến rồi.⟧ → 昨日ネットで注文したばかりなのに、今日もう品物が届いた。 · ⟦Bữa qua anh có đi đâu không?⟧ → 昨日どこかに行った？ · ⟦Bữa nay tôi có rất nhiều việc phải làm.⟧ → 今日はやることが本当にたくさんある。
+=pl
+Objaśnienia gramatyczne
+⟦cả buổi⟧: w formie ⟦cả⟧ + określenie czasu znaczy „przez cały ~”. ⟦cả buổi⟧ zawiera więc znaczenie „cały dzień, długo”.
+⟦Cả buổi chiều, hai người trò chuyện hết sức vui vẻ, thoải mái.⟧ → Przez całe popołudnie oboje rozmawiali bardzo wesoło i swobodnie. · ⟦Tôi đợi anh ấy cả buổi chiều mà anh ấy không đến.⟧ → Czekałem na niego całe popołudnie, a on nie przyszedł. · ⟦Mất cả ngày cả buổi mà chẳng làm được việc gì.⟧ → Straciłem cały dzień i nic nie zrobiłem. · ⟦Tôi trò chuyện với cô ấy cả buổi sáng nay.⟧ → Rozmawiałem z nią całe dzisiejsze przedpołudnie. · ⟦Ô tô chạy cả buổi mới vào được trung tâm thành phố.⟧ → Samochód jechał bardzo długo, zanim dotarł do centrum miasta.
+⟦bữa qua⟧, ⟦bữa nay⟧: określenia czasu – ⟦bữa qua⟧ znaczy „wczoraj”, ⟦bữa nay⟧ „dziś”.
+⟦Mình vừa lắp bữa qua đấy.⟧ → Dopiero wczoraj to zamontowałem. · ⟦Bữa nay nói chuyện thế là nhiều rồi.⟧ → Jak na dziś nagadaliśmy się dość. · ⟦Mình vừa đặt mua qua mạng bữa qua mà bữa nay hàng đã đến rồi.⟧ → Wczoraj zamówiłem przez internet, a dziś towar już przyszedł. · ⟦Bữa qua anh có đi đâu không?⟧ → Byłeś gdzieś wczoraj? · ⟦Bữa nay tôi có rất nhiều việc phải làm.⟧ → Dziś mam bardzo dużo do zrobienia.

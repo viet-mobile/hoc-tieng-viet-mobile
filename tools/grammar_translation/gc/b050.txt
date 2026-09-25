@@ -1,0 +1,221 @@
+@@ pdf-grammar-44d093a7d2a435ba#0
+=cs
+Klíčový výraz: ⟦~ gì⟧
+⟦sloveso / přídavné jméno + gì⟧ vyjadřuje zápor: „jaképak ~, kdepak ~“, tj. „vůbec ne~“.
+❶ Ⓐ ⟦Anh đã giải quyết xong vấn đề chất lượng sản phẩm với cô Hoa chưa?⟧ — Vyřešil jsi už s paní Hoa problém s kvalitou výrobků? Ⓑ ⟦Giải quyết gì, thậm chí cô ấy còn chưa liên lạc với anh.⟧ — Kdepak vyřešil, vždyť se mi ani ještě neozvala.
+❷ Ⓐ ⟦Em có mệt lắm không? Hay là để chị làm giúp nhé?⟧ — Jsi hodně unavená? Nemám ti pomoct? Ⓑ ⟦Mệt gì, em vừa mới bắt đầu thôi mà. Cảm ơn chị ạ.⟧ — Jakápak únava, vždyť jsem teprve začala. Děkuju.
+Výrazy k blahopřání ke kolaudaci nového domova: ⟦Mừng anh về nhà mới phát tài, phát lộc!⟧ Gratuluji k novému domovu, ať se vám daří a máte štěstí! | ⟦Chúc gia đình về nhà mới mọi việc thuận lợi!⟧ Přeji rodině, ať se v novém domově vše daří! | ⟦Chúc gia đình luôn hạnh phúc, sung túc đủ đầy!⟧ Přeji rodině stálé štěstí a hojnost! | ⟦Mừng gia đình luôn hoà thuận, vợ chồng hạnh phúc, con cái thành đạt!⟧ Ať je rodina vždy svorná, manželé šťastní a děti úspěšné!
+Procvičování 2 — doplňte ⟦gì⟧ podle vzoru a veďte rozhovor.
+Vzor: Ⓐ ⟦Vấn đề này phức tạp quá!⟧ — Tenhle problém je moc složitý! Ⓑ ⟦Phức tạp gì, để mình giải quyết ngay cho.⟧ — Jakápak složitost, hned ho vyřeším.
+❶ Ⓐ ⟦Dạo này, chị bận không ạ? Em muốn nhờ chị một việc.⟧ — Máš teď hodně práce? Chtěla bych tě o něco požádat. Ⓑ ⟦Bận gì, em cứ nói đi. Là việc gì vậy em?⟧ — Kdepak práce, klidně povídej. O co jde?
+❷ Ⓐ ⟦Anh gặp giám đốc chưa?⟧ — Už ses setkal s ředitelem? Ⓑ ⟦Gặp gì, giám đốc lại vừa đi công tác rồi.⟧ — Kdepak setkal, ředitel zase právě odjel na služební cestu.
+Rozhovor: Min-ho se přestěhoval do nového domu a pozval kolegyně Hiền a Trang na kolaudaci.
+Min-ho: ⟦Hiền, Trang đến rồi à? Các em vào đi!⟧ — Hiền, Trang, už jste tady? Pojďte dál!
+Hiền: ⟦Chào anh. Nhà mới của anh rộng và đẹp quá. Nhà anh mua đấy à?⟧ — Ahoj. Tvůj nový dům je tak prostorný a hezký. Koupil sis ho?
+Min-ho: ⟦Mua gì, nhà anh thuê đấy. Anh không giàu như vậy đâu.⟧ — Kdepak koupil, mám ho pronajatý. Tak bohatý nejsem.
+Hiền: ⟦Ha ha. Đây là bột giặt. Em nghe Trang nói là khi đến ăn mừng nhà mới, người Hàn Quốc thường mang bột giặt đến làm quà. Chúc anh Min-ho nhanh giàu nhé!⟧ — Haha. Tady je prací prášek. Trang říkala, že Korejci na kolaudaci obvykle nosí jako dárek prací prášek. Ať brzy zbohatneš!
+Min-ho: ⟦Hiền vui tính thật. Cảm ơn em.⟧ — Hiền, ty jsi ale vtipná. Děkuju.
+Trang: ⟦Mừng anh về nhà mới phát tài, phát lộc nhé!⟧ — Gratuluji k novému domovu, ať se ti daří a máš štěstí!
+Min-ho: ⟦Phong bì gì thế này, Trang?⟧ — Co je to za obálku, Trang?
+Hiền: ⟦Ở Việt Nam, mọi người thường cho tiền vào phong bì để mừng nhà mới nên Trang chuẩn bị phong bì cho anh đấy.⟧ — Ve Vietnamu se k novému domovu obvykle dávají peníze v obálce, tak ti Trang připravila obálku.
+Min-ho: ⟦À, cảm ơn các em. Anh sẽ gọi nhiều món ăn ngon, chúng ta cùng ăn nhé.⟧ — Aha, děkuju vám. Objednám spoustu dobrého jídla a najíme se spolu.
+Procvičování — jaký je nový dům: ⟦rộng và đẹp⟧ (prostorný a hezký) / ⟦to và sáng⟧ (velký a světlý); dárek: ⟦bột giặt⟧ (prací prášek) / ⟦giấy vệ sinh⟧ (toaletní papír); přání: ⟦Mừng anh về nhà mới phát tài, phát lộc⟧ (ať se ti v novém domově daří a máš štěstí) / ⟦Chúc gia đình anh luôn hạnh phúc, sung túc đủ đầy⟧ (ať je tvá rodina vždy šťastná a žije v hojnosti).
+Nová slovíčka: ⟦phát lộc⟧ mít štěstí, přijímat požehnání | ⟦sung túc⟧ zámožný, dostatek | ⟦hoà thuận⟧ svorný, harmonický | ⟦chất lượng⟧ kvalita | ⟦thành đạt⟧ úspěšný, uspět | ⟦bột giặt⟧ prací prášek | ⟦phong bì⟧ obálka
+=zh_cn
+核心表达：⟦~ gì⟧
+⟦动词 / 形容词 + gì⟧ 表示否定，意为“……什么呀”，即“并不……”。
+❶ Ⓐ ⟦Anh đã giải quyết xong vấn đề chất lượng sản phẩm với cô Hoa chưa?⟧ —— 你和花小姐把产品质量问题解决了吗？ Ⓑ ⟦Giải quyết gì, thậm chí cô ấy còn chưa liên lạc với anh.⟧ —— 解决什么呀，她甚至还没跟我联系呢。
+❷ Ⓐ ⟦Em có mệt lắm không? Hay là để chị làm giúp nhé?⟧ —— 你很累吗？要不我来帮你？ Ⓑ ⟦Mệt gì, em vừa mới bắt đầu thôi mà. Cảm ơn chị ạ.⟧ —— 累什么呀，我才刚开始。谢谢姐。
+表示乔迁祝贺和祝愿的表达：⟦Mừng anh về nhà mới phát tài, phát lộc!⟧ 恭贺乔迁新居，发财进福！| ⟦Chúc gia đình về nhà mới mọi việc thuận lợi!⟧ 祝贵府乔迁新居万事顺利！| ⟦Chúc gia đình luôn hạnh phúc, sung túc đủ đầy!⟧ 祝全家幸福美满、富足安康！| ⟦Mừng gia đình luôn hoà thuận, vợ chồng hạnh phúc, con cái thành đạt!⟧ 祝家庭和睦、夫妻幸福、子女有成！
+句型练习2 —— 仿照范例用 ⟦gì⟧ 填空后进行对话。
+范例：Ⓐ ⟦Vấn đề này phức tạp quá!⟧ —— 这个问题太复杂了！ Ⓑ ⟦Phức tạp gì, để mình giải quyết ngay cho.⟧ —— 复杂什么呀，我马上帮你解决。
+❶ Ⓐ ⟦Dạo này, chị bận không ạ? Em muốn nhờ chị một việc.⟧ —— 姐最近忙吗？我想请你帮个忙。 Ⓑ ⟦Bận gì, em cứ nói đi. Là việc gì vậy em?⟧ —— 忙什么呀，你尽管说。什么事？
+❷ Ⓐ ⟦Anh gặp giám đốc chưa?⟧ —— 你见到经理了吗？ Ⓑ ⟦Gặp gì, giám đốc lại vừa đi công tác rồi.⟧ —— 见什么呀，经理又刚出差去了。
+对话：敏浩搬进新家后，邀请公司同事贤和庄来参加乔迁宴。
+敏浩：⟦Hiền, Trang đến rồi à? Các em vào đi!⟧ —— 贤、庄，你们来啦？快进来！
+贤：⟦Chào anh. Nhà mới của anh rộng và đẹp quá. Nhà anh mua đấy à?⟧ —— 哥好。你的新家又宽敞又漂亮。是买的吗？
+敏浩：⟦Mua gì, nhà anh thuê đấy. Anh không giàu như vậy đâu.⟧ —— 买什么呀，是租的。我没那么有钱。
+贤：⟦Ha ha. Đây là bột giặt. Em nghe Trang nói là khi đến ăn mừng nhà mới, người Hàn Quốc thường mang bột giặt đến làm quà. Chúc anh Min-ho nhanh giàu nhé!⟧ —— 哈哈。这是洗衣粉。听庄说韩国人去庆祝乔迁时通常送洗衣粉。祝敏浩哥早日发财！
+敏浩：⟦Hiền vui tính thật. Cảm ơn em.⟧ —— 贤真幽默。谢谢你。
+庄：⟦Mừng anh về nhà mới phát tài, phát lộc nhé!⟧ —— 恭贺乔迁，祝你发财进福！
+敏浩：⟦Phong bì gì thế này, Trang?⟧ —— 庄，这是什么信封？
+贤：⟦Ở Việt Nam, mọi người thường cho tiền vào phong bì để mừng nhà mới nên Trang chuẩn bị phong bì cho anh đấy.⟧ —— 在越南，大家通常把钱装进信封来庆祝乔迁，所以庄给你准备了红包。
+敏浩：⟦À, cảm ơn các em. Anh sẽ gọi nhiều món ăn ngon, chúng ta cùng ăn nhé.⟧ —— 啊，谢谢你们。我点很多好吃的，我们一起吃吧。
+句型练习 —— 新家的样子：⟦rộng và đẹp⟧（宽敞漂亮）/ ⟦to và sáng⟧（大又明亮）；礼物：⟦bột giặt⟧（洗衣粉）/ ⟦giấy vệ sinh⟧（卫生纸）；祝福语：⟦Mừng anh về nhà mới phát tài, phát lộc⟧（恭贺乔迁，发财进福）/ ⟦Chúc gia đình anh luôn hạnh phúc, sung túc đủ đầy⟧（祝你全家幸福美满、富足安康）。
+新单词：⟦phát lộc⟧ 得福、进福 | ⟦sung túc⟧ 富足、宽裕 | ⟦hoà thuận⟧ 和睦 | ⟦chất lượng⟧ 质量 | ⟦thành đạt⟧ 有成就、成功 | ⟦bột giặt⟧ 洗衣粉 | ⟦phong bì⟧ 信封
+=zh
+核心表達：⟦~ gì⟧
+⟦動詞 / 形容詞 + gì⟧ 表示否定，意為「……什麼啊」，即「並不……」。
+❶ Ⓐ ⟦Anh đã giải quyết xong vấn đề chất lượng sản phẩm với cô Hoa chưa?⟧ —— 你和花小姐把產品品質問題解決了嗎？ Ⓑ ⟦Giải quyết gì, thậm chí cô ấy còn chưa liên lạc với anh.⟧ —— 解決什麼啊，她甚至還沒跟我聯絡呢。
+❷ Ⓐ ⟦Em có mệt lắm không? Hay là để chị làm giúp nhé?⟧ —— 妳很累嗎？要不我來幫妳？ Ⓑ ⟦Mệt gì, em vừa mới bắt đầu thôi mà. Cảm ơn chị ạ.⟧ —— 累什麼啊，我才剛開始。謝謝姊。
+表示喬遷祝賀和祝願的表達：⟦Mừng anh về nhà mới phát tài, phát lộc!⟧ 恭賀喬遷新居，發財進福！| ⟦Chúc gia đình về nhà mới mọi việc thuận lợi!⟧ 祝府上喬遷新居萬事順利！| ⟦Chúc gia đình luôn hạnh phúc, sung túc đủ đầy!⟧ 祝全家幸福美滿、富足安康！| ⟦Mừng gia đình luôn hoà thuận, vợ chồng hạnh phúc, con cái thành đạt!⟧ 祝家庭和睦、夫妻幸福、子女有成！
+句型練習2 —— 仿照範例用 ⟦gì⟧ 填空後進行對話。
+範例：Ⓐ ⟦Vấn đề này phức tạp quá!⟧ —— 這個問題太複雜了！ Ⓑ ⟦Phức tạp gì, để mình giải quyết ngay cho.⟧ —— 複雜什麼啊，我馬上幫你解決。
+❶ Ⓐ ⟦Dạo này, chị bận không ạ? Em muốn nhờ chị một việc.⟧ —— 姊最近忙嗎？我想請妳幫個忙。 Ⓑ ⟦Bận gì, em cứ nói đi. Là việc gì vậy em?⟧ —— 忙什麼啊，妳儘管說。什麼事？
+❷ Ⓐ ⟦Anh gặp giám đốc chưa?⟧ —— 你見到經理了嗎？ Ⓑ ⟦Gặp gì, giám đốc lại vừa đi công tác rồi.⟧ —— 見什麼啊，經理又剛出差去了。
+對話：敏浩搬進新家後，邀請公司同事賢和莊來參加入厝宴。
+敏浩：⟦Hiền, Trang đến rồi à? Các em vào đi!⟧ —— 賢、莊，妳們來啦？快進來！
+賢：⟦Chào anh. Nhà mới của anh rộng và đẹp quá. Nhà anh mua đấy à?⟧ —— 哥好。你的新家又寬敞又漂亮。是買的嗎？
+敏浩：⟦Mua gì, nhà anh thuê đấy. Anh không giàu như vậy đâu.⟧ —— 買什麼啊，是租的。我沒那麼有錢。
+賢：⟦Ha ha. Đây là bột giặt. Em nghe Trang nói là khi đến ăn mừng nhà mới, người Hàn Quốc thường mang bột giặt đến làm quà. Chúc anh Min-ho nhanh giàu nhé!⟧ —— 哈哈。這是洗衣粉。聽莊說韓國人去慶祝入厝時通常送洗衣粉。祝敏浩哥早日發財！
+敏浩：⟦Hiền vui tính thật. Cảm ơn em.⟧ —— 賢真幽默。謝謝妳。
+莊：⟦Mừng anh về nhà mới phát tài, phát lộc nhé!⟧ —— 恭賀入厝，祝你發財進福！
+敏浩：⟦Phong bì gì thế này, Trang?⟧ —— 莊，這是什麼信封？
+賢：⟦Ở Việt Nam, mọi người thường cho tiền vào phong bì để mừng nhà mới nên Trang chuẩn bị phong bì cho anh đấy.⟧ —— 在越南，大家通常把錢裝進信封來祝賀入厝，所以莊幫你準備了紅包。
+敏浩：⟦À, cảm ơn các em. Anh sẽ gọi nhiều món ăn ngon, chúng ta cùng ăn nhé.⟧ —— 啊，謝謝妳們。我點很多好吃的，我們一起吃吧。
+句型練習 —— 新家的樣子：⟦rộng và đẹp⟧（寬敞漂亮）/ ⟦to và sáng⟧（大又明亮）；禮物：⟦bột giặt⟧（洗衣粉）/ ⟦giấy vệ sinh⟧（衛生紙）；祝福語：⟦Mừng anh về nhà mới phát tài, phát lộc⟧（恭賀入厝，發財進福）/ ⟦Chúc gia đình anh luôn hạnh phúc, sung túc đủ đầy⟧（祝你全家幸福美滿、富足安康）。
+新單字：⟦phát lộc⟧ 得福、進福 | ⟦sung túc⟧ 富足、寬裕 | ⟦hoà thuận⟧ 和睦 | ⟦chất lượng⟧ 品質 | ⟦thành đạt⟧ 有成就、成功 | ⟦bột giặt⟧ 洗衣粉 | ⟦phong bì⟧ 信封
+=en
+Key expression: ⟦~ gì⟧
+⟦verb / adjective + gì⟧ expresses negation: "what do you mean ~?", i.e. "not ~ at all".
+❶ Ⓐ ⟦Anh đã giải quyết xong vấn đề chất lượng sản phẩm với cô Hoa chưa?⟧ — Have you sorted out the product quality issue with Ms Hoa? Ⓑ ⟦Giải quyết gì, thậm chí cô ấy còn chưa liên lạc với anh.⟧ — Sorted it out? She hasn't even contacted me yet.
+❷ Ⓐ ⟦Em có mệt lắm không? Hay là để chị làm giúp nhé?⟧ — Are you very tired? Shall I help you? Ⓑ ⟦Mệt gì, em vừa mới bắt đầu thôi mà. Cảm ơn chị ạ.⟧ — Tired? I've only just started. Thanks, though.
+Expressions for housewarming congratulations and wishes: ⟦Mừng anh về nhà mới phát tài, phát lộc!⟧ Congratulations on your new home – may you prosper and be blessed! | ⟦Chúc gia đình về nhà mới mọi việc thuận lợi!⟧ Wishing the family every success in the new home! | ⟦Chúc gia đình luôn hạnh phúc, sung túc đủ đầy!⟧ Wishing the family lasting happiness and plenty! | ⟦Mừng gia đình luôn hoà thuận, vợ chồng hạnh phúc, con cái thành đạt!⟧ May the family always live in harmony, the couple be happy and the children succeed!
+Pattern practice 2 — fill in the blanks with ⟦gì⟧ as in the model, then talk.
+Model: Ⓐ ⟦Vấn đề này phức tạp quá!⟧ — This problem is so complicated! Ⓑ ⟦Phức tạp gì, để mình giải quyết ngay cho.⟧ — Complicated? Let me sort it out for you right now.
+❶ Ⓐ ⟦Dạo này, chị bận không ạ? Em muốn nhờ chị một việc.⟧ — Are you busy these days? I'd like to ask you a favour. Ⓑ ⟦Bận gì, em cứ nói đi. Là việc gì vậy em?⟧ — Busy? Not at all – go ahead. What is it?
+❷ Ⓐ ⟦Anh gặp giám đốc chưa?⟧ — Have you met the director yet? Ⓑ ⟦Gặp gì, giám đốc lại vừa đi công tác rồi.⟧ — Met him? He's just gone off on another business trip.
+Dialogue: After moving into his new home, Min-ho has invited his colleagues Hiền and Trang to a housewarming party.
+Min-ho: ⟦Hiền, Trang đến rồi à? Các em vào đi!⟧ — Hiền, Trang, you're here? Come on in!
+Hiền: ⟦Chào anh. Nhà mới của anh rộng và đẹp quá. Nhà anh mua đấy à?⟧ — Hi. Your new place is so spacious and nice. Did you buy it?
+Min-ho: ⟦Mua gì, nhà anh thuê đấy. Anh không giàu như vậy đâu.⟧ — Buy it? No, I'm renting. I'm not that rich.
+Hiền: ⟦Ha ha. Đây là bột giặt. Em nghe Trang nói là khi đến ăn mừng nhà mới, người Hàn Quốc thường mang bột giặt đến làm quà. Chúc anh Min-ho nhanh giàu nhé!⟧ — Ha ha. Here's some washing powder. Trang told me Koreans usually bring washing powder to a housewarming. May you get rich soon, Min-ho!
+Min-ho: ⟦Hiền vui tính thật. Cảm ơn em.⟧ — You're so funny, Hiền. Thank you.
+Trang: ⟦Mừng anh về nhà mới phát tài, phát lộc nhé!⟧ — Congratulations on your new home – may you prosper and be blessed!
+Min-ho: ⟦Phong bì gì thế này, Trang?⟧ — What's this envelope, Trang?
+Hiền: ⟦Ở Việt Nam, mọi người thường cho tiền vào phong bì để mừng nhà mới nên Trang chuẩn bị phong bì cho anh đấy.⟧ — In Vietnam people usually put money in an envelope to celebrate a new home, so Trang prepared one for you.
+Min-ho: ⟦À, cảm ơn các em. Anh sẽ gọi nhiều món ăn ngon, chúng ta cùng ăn nhé.⟧ — Oh, thank you both. I'll order lots of good food and we'll eat together.
+Pattern practice — the new home: ⟦rộng và đẹp⟧ (spacious and nice) / ⟦to và sáng⟧ (big and bright); gift: ⟦bột giặt⟧ (washing powder) / ⟦giấy vệ sinh⟧ (toilet paper); wish: ⟦Mừng anh về nhà mới phát tài, phát lộc⟧ (may you prosper in your new home) / ⟦Chúc gia đình anh luôn hạnh phúc, sung túc đủ đầy⟧ (may your family always be happy and prosperous).
+New words: ⟦phát lộc⟧ to be blessed, prosper | ⟦sung túc⟧ well-off, abundant | ⟦hoà thuận⟧ harmonious | ⟦chất lượng⟧ quality | ⟦thành đạt⟧ to succeed, successful | ⟦bột giặt⟧ washing powder | ⟦phong bì⟧ envelope
+=fr
+Expression clé : ⟦~ gì⟧
+⟦verbe / adjectif + gì⟧ exprime une négation : « ~ quoi ? pas du tout ~ ».
+❶ Ⓐ ⟦Anh đã giải quyết xong vấn đề chất lượng sản phẩm với cô Hoa chưa?⟧ — Tu as réglé le problème de qualité des produits avec Mme Hoa ? Ⓑ ⟦Giải quyết gì, thậm chí cô ấy còn chưa liên lạc với anh.⟧ — Réglé quoi ? Elle ne m'a même pas encore contacté.
+❷ Ⓐ ⟦Em có mệt lắm không? Hay là để chị làm giúp nhé?⟧ — Tu es très fatiguée ? Je t'aide ? Ⓑ ⟦Mệt gì, em vừa mới bắt đầu thôi mà. Cảm ơn chị ạ.⟧ — Fatiguée ? Je viens juste de commencer. Merci quand même.
+Expressions de félicitations et de vœux pour une pendaison de crémaillère : ⟦Mừng anh về nhà mới phát tài, phát lộc!⟧ Félicitations pour ta nouvelle maison, prospérité et bonheur ! | ⟦Chúc gia đình về nhà mới mọi việc thuận lợi!⟧ Que tout réussisse à la famille dans sa nouvelle maison ! | ⟦Chúc gia đình luôn hạnh phúc, sung túc đủ đầy!⟧ Bonheur et abondance à toute la famille ! | ⟦Mừng gia đình luôn hoà thuận, vợ chồng hạnh phúc, con cái thành đạt!⟧ Que la famille reste unie, le couple heureux et les enfants prospères !
+Exercice 2 — complétez avec ⟦gì⟧ comme dans le modèle, puis dialoguez.
+Modèle : Ⓐ ⟦Vấn đề này phức tạp quá!⟧ — Ce problème est trop compliqué ! Ⓑ ⟦Phức tạp gì, để mình giải quyết ngay cho.⟧ — Compliqué ? Pas du tout, je m'en occupe tout de suite.
+❶ Ⓐ ⟦Dạo này, chị bận không ạ? Em muốn nhờ chị một việc.⟧ — Tu es occupée en ce moment ? J'aimerais te demander un service. Ⓑ ⟦Bận gì, em cứ nói đi. Là việc gì vậy em?⟧ — Occupée ? Pas du tout, vas-y. De quoi s'agit-il ?
+❷ Ⓐ ⟦Anh gặp giám đốc chưa?⟧ — Tu as vu le directeur ? Ⓑ ⟦Gặp gì, giám đốc lại vừa đi công tác rồi.⟧ — Vu ? Il vient encore de partir en déplacement.
+Dialogue : après avoir emménagé, Min-ho invite ses collègues Hiền et Trang à sa pendaison de crémaillère.
+Min-ho : ⟦Hiền, Trang đến rồi à? Các em vào đi!⟧ — Hiền, Trang, vous êtes là ? Entrez !
+Hiền : ⟦Chào anh. Nhà mới của anh rộng và đẹp quá. Nhà anh mua đấy à?⟧ — Salut. Ta nouvelle maison est grande et belle. Tu l'as achetée ?
+Min-ho : ⟦Mua gì, nhà anh thuê đấy. Anh không giàu như vậy đâu.⟧ — Achetée ? Non, je la loue. Je ne suis pas si riche.
+Hiền : ⟦Ha ha. Đây là bột giặt. Em nghe Trang nói là khi đến ăn mừng nhà mới, người Hàn Quốc thường mang bột giặt đến làm quà. Chúc anh Min-ho nhanh giàu nhé!⟧ — Ha ha. Voici de la lessive. Trang m'a dit que les Coréens en apportent souvent en cadeau pour une crémaillère. Que tu t'enrichisses vite, Min-ho !
+Min-ho : ⟦Hiền vui tính thật. Cảm ơn em.⟧ — Tu es drôle, Hiền. Merci.
+Trang : ⟦Mừng anh về nhà mới phát tài, phát lộc nhé!⟧ — Félicitations pour ta nouvelle maison, prospérité et bonheur !
+Min-ho : ⟦Phong bì gì thế này, Trang?⟧ — C'est quoi cette enveloppe, Trang ?
+Hiền : ⟦Ở Việt Nam, mọi người thường cho tiền vào phong bì để mừng nhà mới nên Trang chuẩn bị phong bì cho anh đấy.⟧ — Au Vietnam, on offre souvent de l'argent dans une enveloppe pour fêter une nouvelle maison, alors Trang t'en a préparé une.
+Min-ho : ⟦À, cảm ơn các em. Anh sẽ gọi nhiều món ăn ngon, chúng ta cùng ăn nhé.⟧ — Ah, merci à vous deux. Je vais commander plein de bons plats et on mangera ensemble.
+Exercices — la nouvelle maison : ⟦rộng và đẹp⟧ (grande et belle) / ⟦to và sáng⟧ (grande et lumineuse) ; cadeau : ⟦bột giặt⟧ (lessive) / ⟦giấy vệ sinh⟧ (papier toilette) ; vœu : ⟦Mừng anh về nhà mới phát tài, phát lộc⟧ (prospérité dans ta nouvelle maison) / ⟦Chúc gia đình anh luôn hạnh phúc, sung túc đủ đầy⟧ (que ta famille soit toujours heureuse et prospère).
+Nouveaux mots : ⟦phát lộc⟧ recevoir la bonne fortune | ⟦sung túc⟧ aisé, abondant | ⟦hoà thuận⟧ harmonieux, uni | ⟦chất lượng⟧ qualité | ⟦thành đạt⟧ réussir | ⟦bột giặt⟧ lessive | ⟦phong bì⟧ enveloppe
+=de
+Schlüsselausdruck: ⟦~ gì⟧
+⟦Verb / Adjektiv + gì⟧ drückt eine Verneinung aus: „was heißt hier ~?“, also „gar nicht ~“.
+❶ Ⓐ ⟦Anh đã giải quyết xong vấn đề chất lượng sản phẩm với cô Hoa chưa?⟧ — Hast du das Qualitätsproblem mit Frau Hoa schon gelöst? Ⓑ ⟦Giải quyết gì, thậm chí cô ấy còn chưa liên lạc với anh.⟧ — Was heißt hier gelöst – sie hat sich noch nicht einmal bei mir gemeldet.
+❷ Ⓐ ⟦Em có mệt lắm không? Hay là để chị làm giúp nhé?⟧ — Bist du sehr müde? Soll ich dir helfen? Ⓑ ⟦Mệt gì, em vừa mới bắt đầu thôi mà. Cảm ơn chị ạ.⟧ — Müde? Ich habe doch gerade erst angefangen. Danke trotzdem.
+Ausdrücke für Glückwünsche zur Einweihung eines neuen Heims: ⟦Mừng anh về nhà mới phát tài, phát lộc!⟧ Glückwunsch zum neuen Zuhause – viel Wohlstand und Glück! | ⟦Chúc gia đình về nhà mới mọi việc thuận lợi!⟧ Möge der Familie im neuen Heim alles gelingen! | ⟦Chúc gia đình luôn hạnh phúc, sung túc đủ đầy!⟧ Der Familie immer Glück und Wohlstand! | ⟦Mừng gia đình luôn hoà thuận, vợ chồng hạnh phúc, con cái thành đạt!⟧ Möge die Familie stets in Eintracht leben, das Paar glücklich sein und die Kinder erfolgreich!
+Übung 2 — mit ⟦gì⟧ wie im Muster ergänzen, dann sprechen.
+Muster: Ⓐ ⟦Vấn đề này phức tạp quá!⟧ — Dieses Problem ist zu kompliziert! Ⓑ ⟦Phức tạp gì, để mình giải quyết ngay cho.⟧ — Kompliziert? Ach was, ich löse es gleich für dich.
+❶ Ⓐ ⟦Dạo này, chị bận không ạ? Em muốn nhờ chị một việc.⟧ — Hast du zurzeit viel zu tun? Ich möchte dich um etwas bitten. Ⓑ ⟦Bận gì, em cứ nói đi. Là việc gì vậy em?⟧ — Viel zu tun? Ach was, sag nur. Worum geht's?
+❷ Ⓐ ⟦Anh gặp giám đốc chưa?⟧ — Hast du den Direktor schon getroffen? Ⓑ ⟦Gặp gì, giám đốc lại vừa đi công tác rồi.⟧ — Getroffen? Der ist gerade schon wieder auf Dienstreise gefahren.
+Dialog: Nach dem Umzug hat Min-ho seine Kolleginnen Hiền und Trang zur Einweihungsfeier eingeladen.
+Min-ho: ⟦Hiền, Trang đến rồi à? Các em vào đi!⟧ — Hiền, Trang, ihr seid da? Kommt rein!
+Hiền: ⟦Chào anh. Nhà mới của anh rộng và đẹp quá. Nhà anh mua đấy à?⟧ — Hallo. Dein neues Haus ist so geräumig und schön. Hast du es gekauft?
+Min-ho: ⟦Mua gì, nhà anh thuê đấy. Anh không giàu như vậy đâu.⟧ — Gekauft? Nein, es ist gemietet. So reich bin ich nicht.
+Hiền: ⟦Ha ha. Đây là bột giặt. Em nghe Trang nói là khi đến ăn mừng nhà mới, người Hàn Quốc thường mang bột giặt đến làm quà. Chúc anh Min-ho nhanh giàu nhé!⟧ — Haha. Hier ist Waschpulver. Trang hat gesagt, dass Koreaner zur Einweihung oft Waschpulver mitbringen. Werd bald reich, Min-ho!
+Min-ho: ⟦Hiền vui tính thật. Cảm ơn em.⟧ — Du bist echt witzig, Hiền. Danke.
+Trang: ⟦Mừng anh về nhà mới phát tài, phát lộc nhé!⟧ — Glückwunsch zum neuen Zuhause – viel Wohlstand und Glück!
+Min-ho: ⟦Phong bì gì thế này, Trang?⟧ — Was ist das für ein Umschlag, Trang?
+Hiền: ⟦Ở Việt Nam, mọi người thường cho tiền vào phong bì để mừng nhà mới nên Trang chuẩn bị phong bì cho anh đấy.⟧ — In Vietnam schenkt man zum neuen Heim oft Geld im Umschlag, deshalb hat Trang dir einen vorbereitet.
+Min-ho: ⟦À, cảm ơn các em. Anh sẽ gọi nhiều món ăn ngon, chúng ta cùng ăn nhé.⟧ — Ach so, danke euch. Ich bestelle viele leckere Gerichte, dann essen wir zusammen.
+Satzmusterübung — das neue Heim: ⟦rộng và đẹp⟧ (geräumig und schön) / ⟦to và sáng⟧ (groß und hell); Geschenk: ⟦bột giặt⟧ (Waschpulver) / ⟦giấy vệ sinh⟧ (Toilettenpapier); Glückwunsch: ⟦Mừng anh về nhà mới phát tài, phát lộc⟧ (viel Wohlstand im neuen Heim) / ⟦Chúc gia đình anh luôn hạnh phúc, sung túc đủ đầy⟧ (deiner Familie immer Glück und Wohlstand).
+Neue Wörter: ⟦phát lộc⟧ Glück erlangen, gedeihen | ⟦sung túc⟧ wohlhabend, reichlich | ⟦hoà thuận⟧ einträchtig | ⟦chất lượng⟧ Qualität | ⟦thành đạt⟧ erfolgreich sein | ⟦bột giặt⟧ Waschpulver | ⟦phong bì⟧ Umschlag
+=hu
+Kulcskifejezés: ⟦~ gì⟧
+Az ⟦ige / melléknév + gì⟧ tagadást fejez ki: „miféle ~, dehogy ~”, azaz „egyáltalán nem ~”.
+❶ Ⓐ ⟦Anh đã giải quyết xong vấn đề chất lượng sản phẩm với cô Hoa chưa?⟧ — Megoldottad már Hoa asszonnyal a termékminőségi problémát? Ⓑ ⟦Giải quyết gì, thậm chí cô ấy còn chưa liên lạc với anh.⟧ — Dehogy oldottam meg, még csak nem is keresett.
+❷ Ⓐ ⟦Em có mệt lắm không? Hay là để chị làm giúp nhé?⟧ — Nagyon fáradt vagy? Segítsek? Ⓑ ⟦Mệt gì, em vừa mới bắt đầu thôi mà. Cảm ơn chị ạ.⟧ — Dehogy vagyok fáradt, hiszen most kezdtem. Köszönöm.
+A házavatói gratulációk és jókívánságok kifejezései: ⟦Mừng anh về nhà mới phát tài, phát lộc!⟧ Gratulálok az új otthonhoz, sok sikert és szerencsét! | ⟦Chúc gia đình về nhà mới mọi việc thuận lợi!⟧ Kívánom, hogy a családnak minden jól menjen az új otthonban! | ⟦Chúc gia đình luôn hạnh phúc, sung túc đủ đầy!⟧ Sok boldogságot és bőséget a családnak! | ⟦Mừng gia đình luôn hoà thuận, vợ chồng hạnh phúc, con cái thành đạt!⟧ Legyen a család mindig egyetértésben, a házaspár boldog, a gyerekek sikeresek!
+2. gyakorlat — töltse ki a ⟦gì⟧ szóval a minta szerint, majd beszélgessen.
+Minta: Ⓐ ⟦Vấn đề này phức tạp quá!⟧ — Ez a probléma túl bonyolult! Ⓑ ⟦Phức tạp gì, để mình giải quyết ngay cho.⟧ — Dehogy bonyolult, rögtön megoldom neked.
+❶ Ⓐ ⟦Dạo này, chị bận không ạ? Em muốn nhờ chị một việc.⟧ — Mostanában sok dolgod van? Szeretnélek megkérni valamire. Ⓑ ⟦Bận gì, em cứ nói đi. Là việc gì vậy em?⟧ — Dehogy van, csak mondd. Miről van szó?
+❷ Ⓐ ⟦Anh gặp giám đốc chưa?⟧ — Találkoztál már az igazgatóval? Ⓑ ⟦Gặp gì, giám đốc lại vừa đi công tác rồi.⟧ — Dehogy találkoztam, megint épp elutazott üzleti útra.
+Párbeszéd: Min-ho beköltözött az új házába, és meghívta kolléganőit, Hiềnt és Trangot a házavatóra.
+Min-ho: ⟦Hiền, Trang đến rồi à? Các em vào đi!⟧ — Hiền, Trang, megjöttetek? Gyertek be!
+Hiền: ⟦Chào anh. Nhà mới của anh rộng và đẹp quá. Nhà anh mua đấy à?⟧ — Szia. Milyen tágas és szép az új házad. Megvetted?
+Min-ho: ⟦Mua gì, nhà anh thuê đấy. Anh không giàu như vậy đâu.⟧ — Dehogy vettem, bérlem. Nem vagyok olyan gazdag.
+Hiền: ⟦Ha ha. Đây là bột giặt. Em nghe Trang nói là khi đến ăn mừng nhà mới, người Hàn Quốc thường mang bột giặt đến làm quà. Chúc anh Min-ho nhanh giàu nhé!⟧ — Haha. Itt egy mosópor. Trang mesélte, hogy a koreaiak házavatóra általában mosóport visznek ajándékba. Legyél hamar gazdag, Min-ho!
+Min-ho: ⟦Hiền vui tính thật. Cảm ơn em.⟧ — Hiền, te aztán vicces vagy. Köszönöm.
+Trang: ⟦Mừng anh về nhà mới phát tài, phát lộc nhé!⟧ — Gratulálok az új otthonhoz, sok sikert és szerencsét!
+Min-ho: ⟦Phong bì gì thế này, Trang?⟧ — Mi ez a boríték, Trang?
+Hiền: ⟦Ở Việt Nam, mọi người thường cho tiền vào phong bì để mừng nhà mới nên Trang chuẩn bị phong bì cho anh đấy.⟧ — Vietnamban új otthon alkalmából általában pénzt adnak borítékban, ezért Trang készített neked egyet.
+Min-ho: ⟦À, cảm ơn các em. Anh sẽ gọi nhiều món ăn ngon, chúng ta cùng ăn nhé.⟧ — Ó, köszönöm nektek. Rendelek sok finom ételt, és együtt eszünk.
+Mintagyakorlat — az új ház: ⟦rộng và đẹp⟧ (tágas és szép) / ⟦to và sáng⟧ (nagy és világos); ajándék: ⟦bột giặt⟧ (mosópor) / ⟦giấy vệ sinh⟧ (vécépapír); jókívánság: ⟦Mừng anh về nhà mới phát tài, phát lộc⟧ (sok sikert és szerencsét az új otthonban) / ⟦Chúc gia đình anh luôn hạnh phúc, sung túc đủ đầy⟧ (legyen a családod mindig boldog és jómódú).
+Új szavak: ⟦phát lộc⟧ szerencsét kapni, gyarapodni | ⟦sung túc⟧ jómódú, bőséges | ⟦hoà thuận⟧ egyetértő, harmonikus | ⟦chất lượng⟧ minőség | ⟦thành đạt⟧ sikeres | ⟦bột giặt⟧ mosópor | ⟦phong bì⟧ boríték
+=id
+Ungkapan kunci: ⟦~ gì⟧
+⟦verba / adjektiva + gì⟧ menyatakan penyangkalan: "~ apanya", yakni "sama sekali tidak ~".
+❶ Ⓐ ⟦Anh đã giải quyết xong vấn đề chất lượng sản phẩm với cô Hoa chưa?⟧ — Masalah kualitas produk dengan Bu Hoa sudah Kakak selesaikan? Ⓑ ⟦Giải quyết gì, thậm chí cô ấy còn chưa liên lạc với anh.⟧ — Selesai apanya, dia bahkan belum menghubungiku.
+❷ Ⓐ ⟦Em có mệt lắm không? Hay là để chị làm giúp nhé?⟧ — Kamu capek sekali? Bagaimana kalau Kakak bantu? Ⓑ ⟦Mệt gì, em vừa mới bắt đầu thôi mà. Cảm ơn chị ạ.⟧ — Capek apanya, aku baru saja mulai. Terima kasih, Kak.
+Ungkapan ucapan selamat dan doa untuk rumah baru: ⟦Mừng anh về nhà mới phát tài, phát lộc!⟧ Selamat atas rumah barunya, semoga makin makmur dan berlimpah rezeki! | ⟦Chúc gia đình về nhà mới mọi việc thuận lợi!⟧ Semoga keluarga lancar segalanya di rumah baru! | ⟦Chúc gia đình luôn hạnh phúc, sung túc đủ đầy!⟧ Semoga keluarga selalu bahagia dan berkecukupan! | ⟦Mừng gia đình luôn hoà thuận, vợ chồng hạnh phúc, con cái thành đạt!⟧ Semoga keluarga selalu rukun, suami-istri bahagia, anak-anak sukses!
+Latihan pola 2 — isi dengan ⟦gì⟧ seperti contoh, lalu bercakaplah.
+Contoh: Ⓐ ⟦Vấn đề này phức tạp quá!⟧ — Masalah ini rumit sekali! Ⓑ ⟦Phức tạp gì, để mình giải quyết ngay cho.⟧ — Rumit apanya, biar aku selesaikan sekarang.
+❶ Ⓐ ⟦Dạo này, chị bận không ạ? Em muốn nhờ chị một việc.⟧ — Akhir-akhir ini Kakak sibuk? Aku ingin minta tolong sesuatu. Ⓑ ⟦Bận gì, em cứ nói đi. Là việc gì vậy em?⟧ — Sibuk apanya, bilang saja. Ada apa?
+❷ Ⓐ ⟦Anh gặp giám đốc chưa?⟧ — Kakak sudah bertemu direktur? Ⓑ ⟦Gặp gì, giám đốc lại vừa đi công tác rồi.⟧ — Bertemu apanya, direktur baru saja pergi dinas lagi.
+Percakapan: Setelah pindah ke rumah baru, Min-ho mengundang rekan kerjanya, Hiền dan Trang, ke syukuran rumah baru.
+Min-ho: ⟦Hiền, Trang đến rồi à? Các em vào đi!⟧ — Hiền, Trang, sudah datang? Ayo masuk!
+Hiền: ⟦Chào anh. Nhà mới của anh rộng và đẹp quá. Nhà anh mua đấy à?⟧ — Halo, Kak. Rumah baru Kakak luas dan bagus sekali. Kakak beli?
+Min-ho: ⟦Mua gì, nhà anh thuê đấy. Anh không giàu như vậy đâu.⟧ — Beli apanya, ini rumah sewa. Aku tidak sekaya itu.
+Hiền: ⟦Ha ha. Đây là bột giặt. Em nghe Trang nói là khi đến ăn mừng nhà mới, người Hàn Quốc thường mang bột giặt đến làm quà. Chúc anh Min-ho nhanh giàu nhé!⟧ — Haha. Ini deterjen. Kata Trang, orang Korea biasanya membawa deterjen sebagai hadiah saat syukuran rumah baru. Semoga Kak Min-ho cepat kaya!
+Min-ho: ⟦Hiền vui tính thật. Cảm ơn em.⟧ — Hiền lucu sekali. Terima kasih.
+Trang: ⟦Mừng anh về nhà mới phát tài, phát lộc nhé!⟧ — Selamat atas rumah barunya, semoga makin makmur dan berlimpah rezeki!
+Min-ho: ⟦Phong bì gì thế này, Trang?⟧ — Amplop apa ini, Trang?
+Hiền: ⟦Ở Việt Nam, mọi người thường cho tiền vào phong bì để mừng nhà mới nên Trang chuẩn bị phong bì cho anh đấy.⟧ — Di Vietnam, orang biasanya memberi uang dalam amplop untuk merayakan rumah baru, jadi Trang menyiapkan amplop untuk Kakak.
+Min-ho: ⟦À, cảm ơn các em. Anh sẽ gọi nhiều món ăn ngon, chúng ta cùng ăn nhé.⟧ — Oh, terima kasih kalian. Aku pesan banyak makanan enak, ayo kita makan bersama.
+Latihan pola — keadaan rumah baru: ⟦rộng và đẹp⟧ (luas dan bagus) / ⟦to và sáng⟧ (besar dan terang); hadiah: ⟦bột giặt⟧ (deterjen) / ⟦giấy vệ sinh⟧ (tisu toilet); ucapan: ⟦Mừng anh về nhà mới phát tài, phát lộc⟧ (semoga makmur di rumah baru) / ⟦Chúc gia đình anh luôn hạnh phúc, sung túc đủ đầy⟧ (semoga keluarga Kakak selalu bahagia dan berkecukupan).
+Kosakata baru: ⟦phát lộc⟧ mendapat rezeki | ⟦sung túc⟧ berkecukupan | ⟦hoà thuận⟧ rukun | ⟦chất lượng⟧ kualitas | ⟦thành đạt⟧ sukses | ⟦bột giặt⟧ deterjen | ⟦phong bì⟧ amplop
+=ja
+核心表現：⟦~ gì⟧
+⟦動詞 / 形容詞 + gì⟧ は否定の意味を表す表現で、「何が / 何を～するものか」、つまり「～しない」という意味です。
+❶ Ⓐ ⟦Anh đã giải quyết xong vấn đề chất lượng sản phẩm với cô Hoa chưa?⟧ — ホアさんと製品の品質問題は解決しましたか。 Ⓑ ⟦Giải quyết gì, thậm chí cô ấy còn chưa liên lạc với anh.⟧ — 解決なんてとんでもない、彼女からはまだ連絡すら来ていないよ。
+❷ Ⓐ ⟦Em có mệt lắm không? Hay là để chị làm giúp nhé?⟧ — すごく疲れてる？手伝おうか。 Ⓑ ⟦Mệt gì, em vừa mới bắt đầu thôi mà. Cảm ơn chị ạ.⟧ — 疲れてなんかいませんよ、始めたばかりですから。ありがとうございます。
+新居祝いと祈願を表す表現：⟦Mừng anh về nhà mới phát tài, phát lộc!⟧ 新居へのお引っ越しおめでとう、ご繁栄とご多幸を！| ⟦Chúc gia đình về nhà mới mọi việc thuận lợi!⟧ 新居でご家族のすべてが順調でありますように！| ⟦Chúc gia đình luôn hạnh phúc, sung túc đủ đầy!⟧ ご家族がいつも幸せで豊かでありますように！| ⟦Mừng gia đình luôn hoà thuận, vợ chồng hạnh phúc, con cái thành đạt!⟧ ご家族がいつも仲睦まじく、夫婦円満で、子どもたちが成功しますように！
+文型練習2 — 例のように ⟦gì⟧ を使って空欄を埋め、会話してみましょう。
+例：Ⓐ ⟦Vấn đề này phức tạp quá!⟧ — この問題は複雑すぎる！ Ⓑ ⟦Phức tạp gì, để mình giải quyết ngay cho.⟧ — 複雑なんかじゃないよ、すぐに解決してあげる。
+❶ Ⓐ ⟦Dạo này, chị bận không ạ? Em muốn nhờ chị một việc.⟧ — 最近忙しいですか。ちょっとお願いしたいことがあるんですが。 Ⓑ ⟦Bận gì, em cứ nói đi. Là việc gì vậy em?⟧ — 忙しくなんかないわよ、遠慮なく言って。どんなこと？
+❷ Ⓐ ⟦Anh gặp giám đốc chưa?⟧ — 社長に会いましたか。 Ⓑ ⟦Gặp gì, giám đốc lại vừa đi công tác rồi.⟧ — 会うどころか、社長はまた出張に行ったところだよ。
+会話：ミンホが新居に引っ越した後、会社の同僚ヒエンとチャンを引っ越し祝いに招待しました。
+ミンホ：⟦Hiền, Trang đến rồi à? Các em vào đi!⟧ — ヒエン、チャン、来てくれたんだね。さあ、入って！
+ヒエン：⟦Chào anh. Nhà mới của anh rộng và đẹp quá. Nhà anh mua đấy à?⟧ — こんにちは。新しい家、広くてすてきですね。買ったんですか。
+ミンホ：⟦Mua gì, nhà anh thuê đấy. Anh không giàu như vậy đâu.⟧ — 買ったなんてとんでもない、借りているんだよ。そんなにお金持ちじゃないさ。
+ヒエン：⟦Ha ha. Đây là bột giặt. Em nghe Trang nói là khi đến ăn mừng nhà mới, người Hàn Quốc thường mang bột giặt đến làm quà. Chúc anh Min-ho nhanh giàu nhé!⟧ — ははは。これは洗剤です。チャンから、韓国人は引っ越し祝いに洗剤をプレゼントすると聞いたので。ミンホさん、早くお金持ちになってくださいね！
+ミンホ：⟦Hiền vui tính thật. Cảm ơn em.⟧ — ヒエンは本当に愉快だね。ありがとう。
+チャン：⟦Mừng anh về nhà mới phát tài, phát lộc nhé!⟧ — 新居おめでとうございます。ご繁栄とご多幸を！
+ミンホ：⟦Phong bì gì thế này, Trang?⟧ — チャン、この封筒は何？
+ヒエン：⟦Ở Việt Nam, mọi người thường cho tiền vào phong bì để mừng nhà mới nên Trang chuẩn bị phong bì cho anh đấy.⟧ — ベトナムでは新居のお祝いに封筒にお金を入れて渡すことが多いので、チャンが用意したんですよ。
+ミンホ：⟦À, cảm ơn các em. Anh sẽ gọi nhiều món ăn ngon, chúng ta cùng ăn nhé.⟧ — ああ、二人ともありがとう。おいしい料理をたくさん頼むから、一緒に食べよう。
+文型練習 — 新居の様子：⟦rộng và đẹp⟧（広くてきれい）/ ⟦to và sáng⟧（大きくて明るい）；プレゼント：⟦bột giặt⟧（洗剤）/ ⟦giấy vệ sinh⟧（トイレットペーパー）；お祝いの言葉：⟦Mừng anh về nhà mới phát tài, phát lộc⟧（新居でのご繁栄とご多幸を）/ ⟦Chúc gia đình anh luôn hạnh phúc, sung túc đủ đầy⟧（ご家族がいつも幸せで豊かでありますように）。
+新出単語：⟦phát lộc⟧ 福を授かる | ⟦sung túc⟧ 豊かだ | ⟦hoà thuận⟧ 仲睦まじい | ⟦chất lượng⟧ 品質 | ⟦thành đạt⟧ 成功する | ⟦bột giặt⟧ 洗剤 | ⟦phong bì⟧ 封筒
+=pl
+Kluczowe wyrażenie: ⟦~ gì⟧
+⟦czasownik / przymiotnik + gì⟧ wyraża przeczenie: „jakie tam ~, gdzie tam ~”, czyli „wcale nie ~”.
+❶ Ⓐ ⟦Anh đã giải quyết xong vấn đề chất lượng sản phẩm với cô Hoa chưa?⟧ — Rozwiązałeś już z panią Hoa problem z jakością produktów? Ⓑ ⟦Giải quyết gì, thậm chí cô ấy còn chưa liên lạc với anh.⟧ — Gdzie tam rozwiązałem, ona nawet się jeszcze do mnie nie odezwała.
+❷ Ⓐ ⟦Em có mệt lắm không? Hay là để chị làm giúp nhé?⟧ — Jesteś bardzo zmęczona? Może ci pomogę? Ⓑ ⟦Mệt gì, em vừa mới bắt đầu thôi mà. Cảm ơn chị ạ.⟧ — Jakie tam zmęczenie, dopiero zaczęłam. Dziękuję.
+Wyrażenia z gratulacjami i życzeniami z okazji parapetówki: ⟦Mừng anh về nhà mới phát tài, phát lộc!⟧ Gratuluję nowego domu, pomyślności i szczęścia! | ⟦Chúc gia đình về nhà mới mọi việc thuận lợi!⟧ Niech rodzinie w nowym domu wszystko się układa! | ⟦Chúc gia đình luôn hạnh phúc, sung túc đủ đầy!⟧ Rodzinie zawsze szczęścia i dostatku! | ⟦Mừng gia đình luôn hoà thuận, vợ chồng hạnh phúc, con cái thành đạt!⟧ Niech rodzina zawsze żyje w zgodzie, małżonkowie będą szczęśliwi, a dzieci odnoszą sukcesy!
+Ćwiczenie 2 — uzupełnij za pomocą ⟦gì⟧ jak we wzorze, potem rozmawiaj.
+Wzór: Ⓐ ⟦Vấn đề này phức tạp quá!⟧ — Ten problem jest zbyt skomplikowany! Ⓑ ⟦Phức tạp gì, để mình giải quyết ngay cho.⟧ — Jakie tam skomplikowany, zaraz to załatwię.
+❶ Ⓐ ⟦Dạo này, chị bận không ạ? Em muốn nhờ chị một việc.⟧ — Jesteś ostatnio zajęta? Chciałabym cię o coś poprosić. Ⓑ ⟦Bận gì, em cứ nói đi. Là việc gì vậy em?⟧ — Gdzie tam zajęta, mów śmiało. O co chodzi?
+❷ Ⓐ ⟦Anh gặp giám đốc chưa?⟧ — Spotkałeś się już z dyrektorem? Ⓑ ⟦Gặp gì, giám đốc lại vừa đi công tác rồi.⟧ — Gdzie tam spotkałem, dyrektor znowu właśnie wyjechał w delegację.
+Dialog: Po przeprowadzce Min-ho zaprosił koleżanki z pracy, Hiền i Trang, na parapetówkę.
+Min-ho: ⟦Hiền, Trang đến rồi à? Các em vào đi!⟧ — Hiền, Trang, już jesteście? Wchodźcie!
+Hiền: ⟦Chào anh. Nhà mới của anh rộng và đẹp quá. Nhà anh mua đấy à?⟧ — Cześć. Twój nowy dom jest taki przestronny i ładny. Kupiłeś go?
+Min-ho: ⟦Mua gì, nhà anh thuê đấy. Anh không giàu như vậy đâu.⟧ — Gdzie tam kupiłem, wynajmuję. Nie jestem aż tak bogaty.
+Hiền: ⟦Ha ha. Đây là bột giặt. Em nghe Trang nói là khi đến ăn mừng nhà mới, người Hàn Quốc thường mang bột giặt đến làm quà. Chúc anh Min-ho nhanh giàu nhé!⟧ — Haha. Tu masz proszek do prania. Trang mówiła, że Koreańczycy zwykle przynoszą go w prezencie na parapetówkę. Szybko się wzbogać, Min-ho!
+Min-ho: ⟦Hiền vui tính thật. Cảm ơn em.⟧ — Hiền, ale z ciebie żartownisia. Dziękuję.
+Trang: ⟦Mừng anh về nhà mới phát tài, phát lộc nhé!⟧ — Gratuluję nowego domu, pomyślności i szczęścia!
+Min-ho: ⟦Phong bì gì thế này, Trang?⟧ — Co to za koperta, Trang?
+Hiền: ⟦Ở Việt Nam, mọi người thường cho tiền vào phong bì để mừng nhà mới nên Trang chuẩn bị phong bì cho anh đấy.⟧ — W Wietnamie z okazji nowego domu zwykle daje się pieniądze w kopercie, więc Trang przygotowała ją dla ciebie.
+Min-ho: ⟦À, cảm ơn các em. Anh sẽ gọi nhiều món ăn ngon, chúng ta cùng ăn nhé.⟧ — Ach, dziękuję wam. Zamówię dużo pysznego jedzenia i zjemy razem.
+Ćwiczenie wzorców — nowy dom: ⟦rộng và đẹp⟧ (przestronny i ładny) / ⟦to và sáng⟧ (duży i jasny); prezent: ⟦bột giặt⟧ (proszek do prania) / ⟦giấy vệ sinh⟧ (papier toaletowy); życzenia: ⟦Mừng anh về nhà mới phát tài, phát lộc⟧ (pomyślności w nowym domu) / ⟦Chúc gia đình anh luôn hạnh phúc, sung túc đủ đầy⟧ (niech twoja rodzina zawsze żyje w szczęściu i dostatku).
+Nowe słówka: ⟦phát lộc⟧ mieć szczęście, prosperować | ⟦sung túc⟧ dostatni | ⟦hoà thuận⟧ zgodny, harmonijny | ⟦chất lượng⟧ jakość | ⟦thành đạt⟧ odnieść sukces | ⟦bột giặt⟧ proszek do prania | ⟦phong bì⟧ koperta

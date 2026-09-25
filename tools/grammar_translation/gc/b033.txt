@@ -1,0 +1,151 @@
+@@ pdf-grammar-95b5d642646fba10#0
+=cs
+Klíčové výrazy: ⟦sloveso + được⟧ / ⟦toàn bộ⟧
+⟦được⟧ má více použití; jedním z nich je ⟦sloveso + được⟧, které vyjadřuje výsledek děje. ⟦được⟧ ve významu „dosáhnout výsledku (slovesa)“ se může pojit téměř se všemi slovesy.
+❶ Ⓐ ⟦Tối qua chị đã gửi email cho em rồi. Em nhận được chưa?⟧ — Včera večer jsem ti poslala e-mail. Dostala jsi ho? Ⓑ ⟦Dạ, sáng nay em nhận được rồi ạ.⟧ — Ano, dnes ráno jsem ho dostala.
+❷ ⟦Bài này khó quá! Trong lớp mình chắc không ai hiểu được đâu!⟧ — Tahle lekce je moc těžká! V naší třídě ji asi nikdo nepochopí!
+⟦toàn bộ⟧ se pojí s podstatnými jmény či zájmeny (v množném čísle nebo hromadnými) a znamená „všechny, veškeré (tyto ~)“. Za podstatným jménem obvykle následuje výraz vymezující rozsah.
+❶ ⟦Toàn bộ các ngôi nhà ở khu phố này đều được xây dựng từ hơn 100 năm trước.⟧ — Všechny domy v této čtvrti byly postaveny před více než 100 lety.
+❷ Ⓐ ⟦Chị định gửi thông báo này cho ai ạ?⟧ — Komu chceš poslat toto oznámení? Ⓑ ⟦Chị sẽ gửi cho toàn bộ các khách hàng của công ti mình.⟧ — Pošlu ho všem zákazníkům naší firmy.
+Procvičování 3 — spojte vhodné části a veďte rozhovor podle vzoru: ① ⟦viết luận văn⟧ (psát diplomovou práci) → Ⓒ ⟦đọc được những tài liệu rất quan trọng liên quan đến đề tài để tham khảo⟧ (podařilo se přečíst velmi důležité materiály k tématu) | ② ⟦học làm bánh⟧ (učit se péct) → Ⓐ ⟦tự làm được chiếc bánh kem đầu tiên⟧ (sám upéct první dort) | ③ ⟦điều tra vụ án ấy⟧ (vyšetřovat ten případ) → Ⓑ ⟦nhận được một số thông tin cơ bản từ người bị hại⟧ (získat od poškozeného základní informace)
+Vzor (②–Ⓐ): Ⓐ ⟦Anh học làm bánh tới đâu rồi?⟧ — Jak daleko jsi s učením pečení? Ⓑ ⟦Anh đã tự làm được chiếc bánh kem đầu tiên rồi đấy!⟧ — Už jsem sám upekl svůj první dort!
+Procvičování 4 — doplňte ⟦toàn bộ⟧ podle vzoru a veďte rozhovor.
+Vzor: Ⓐ ⟦Đây là bộ sưu tập phim của tớ. Có phim nào cậu đã từng xem rồi không?⟧ — Tohle je moje sbírka filmů. Viděl jsi už některý? Ⓑ ⟦Có chứ. Tớ đã xem toàn bộ các phim này rồi.⟧ — Jasně. Viděl jsem už všechny tyhle filmy. Ⓐ ⟦Thế à? Chắc cậu cũng là người say mê xem phim nhỉ!⟧ — Vážně? Tak to jsi asi taky velký filmový nadšenec!
+❶ Ⓐ ⟦Nhà em nuôi nhiều mèo quá nhỉ!⟧ — Vy doma chováte hodně koček! Ⓑ ⟦Vâng. Toàn bộ số mèo này đều là mèo hoang được đem về nuôi đấy ạ.⟧ — Ano. Všechny tyhle kočky jsou toulavé, přinesli jsme si je domů. Ⓐ ⟦Thế à? Em tốt bụng quá!⟧ — Opravdu? Ty máš ale dobré srdce!
+❷ Ⓐ ⟦Alô, tôi muốn đặt phòng cho những ngày nghỉ lễ Quốc khánh.⟧ — Haló, chtěl bych si zarezervovat pokoj na svátky Dne nezávislosti. Ⓑ ⟦Xin lỗi anh ạ. Toàn bộ các phòng đều đã được đặt trước hết rồi.⟧ — Promiňte. Všechny pokoje už jsou zamluvené. Ⓐ ⟦À, thế à? Tiếc quá!⟧ — Aha, opravdu? To je škoda!
+Nová slovíčka: ⟦điều tra⟧ vyšetřovat | ⟦vụ án⟧ (soudní) případ | ⟦luận văn⟧ (diplomová) práce | ⟦liên quan⟧ souviset | ⟦tham khảo⟧ nahlédnout, konzultovat | ⟦cơ bản⟧ základní | ⟦hại⟧ poškodit | ⟦ngôi⟧ klasifikátor pro budovy, hvězdy apod. | ⟦sưu tập⟧ sbírat | ⟦say mê⟧ být zapálený pro ~ | ⟦hoang⟧ divoký, toulavý | ⟦đem⟧ přinést, odnést
+=zh_cn
+核心表达：⟦动词 + được⟧ / ⟦toàn bộ⟧
+⟦được⟧ 有多种用法，其中 ⟦动词 + được⟧ 表示“行为的结果”。此时表示“得到（动词的）结果”的 ⟦được⟧ 几乎可以与所有动词搭配使用。
+❶ Ⓐ ⟦Tối qua chị đã gửi email cho em rồi. Em nhận được chưa?⟧ —— 昨晚我给你发了邮件。你收到了吗？ Ⓑ ⟦Dạ, sáng nay em nhận được rồi ạ.⟧ —— 是的，今天早上收到了。
+❷ ⟦Bài này khó quá! Trong lớp mình chắc không ai hiểu được đâu!⟧ —— 这课太难了！我们班肯定没人能听懂！
+⟦toàn bộ⟧ 与（复数、集合）名词或代词结合，表示“（这些名词/代词）全部”。一般名词后面会接限定范围的表达。
+❶ ⟦Toàn bộ các ngôi nhà ở khu phố này đều được xây dựng từ hơn 100 năm trước.⟧ —— 这个街区的房子全都是100多年前建造的。
+❷ Ⓐ ⟦Chị định gửi thông báo này cho ai ạ?⟧ —— 这份通知你打算发给谁？ Ⓑ ⟦Chị sẽ gửi cho toàn bộ các khách hàng của công ti mình.⟧ —— 我要发给我们公司的全部客户。
+句型练习3 —— 找出相应内容连线，然后仿照范例对话：① ⟦viết luận văn⟧（写论文）→ Ⓒ ⟦đọc được những tài liệu rất quan trọng liên quan đến đề tài để tham khảo⟧（读到了与课题相关的很重要的参考资料）| ② ⟦học làm bánh⟧（学做蛋糕）→ Ⓐ ⟦tự làm được chiếc bánh kem đầu tiên⟧（自己做出了第一个奶油蛋糕）| ③ ⟦điều tra vụ án ấy⟧（调查那起案件）→ Ⓑ ⟦nhận được một số thông tin cơ bản từ người bị hại⟧（从受害者那里得到了一些基本信息）
+范例（②–Ⓐ）：Ⓐ ⟦Anh học làm bánh tới đâu rồi?⟧ —— 你学做蛋糕学到哪一步了？ Ⓑ ⟦Anh đã tự làm được chiếc bánh kem đầu tiên rồi đấy!⟧ —— 我已经自己做出第一个奶油蛋糕了！
+句型练习4 —— 仿照范例用 ⟦toàn bộ⟧ 填空后进行对话。
+范例：Ⓐ ⟦Đây là bộ sưu tập phim của tớ. Có phim nào cậu đã từng xem rồi không?⟧ —— 这是我的电影收藏。有你看过的吗？ Ⓑ ⟦Có chứ. Tớ đã xem toàn bộ các phim này rồi.⟧ —— 当然有。这些电影我全都看过了。 Ⓐ ⟦Thế à? Chắc cậu cũng là người say mê xem phim nhỉ!⟧ —— 是吗？你肯定也是个电影迷吧！
+❶ Ⓐ ⟦Nhà em nuôi nhiều mèo quá nhỉ!⟧ —— 你家养了好多猫啊！ Ⓑ ⟦Vâng. Toàn bộ số mèo này đều là mèo hoang được đem về nuôi đấy ạ.⟧ —— 是的。这些猫全都是捡回来养的流浪猫。 Ⓐ ⟦Thế à? Em tốt bụng quá!⟧ —— 是吗？你心肠真好！
+❷ Ⓐ ⟦Alô, tôi muốn đặt phòng cho những ngày nghỉ lễ Quốc khánh.⟧ —— 喂，我想预订国庆假期的房间。 Ⓑ ⟦Xin lỗi anh ạ. Toàn bộ các phòng đều đã được đặt trước hết rồi.⟧ —— 对不起。所有房间都已经被预订完了。 Ⓐ ⟦À, thế à? Tiếc quá!⟧ —— 啊，是吗？太可惜了！
+新单词：⟦điều tra⟧ 调查 | ⟦vụ án⟧（法律）案件 | ⟦luận văn⟧（硕士）论文 | ⟦liên quan⟧ 相关 | ⟦tham khảo⟧ 参考 | ⟦cơ bản⟧ 基本的 | ⟦hại⟧ 损害、伤害 | ⟦ngôi⟧ 用于建筑物、星星等的单位名词 | ⟦sưu tập⟧ 收集 | ⟦say mê⟧ 迷恋、非常喜欢 | ⟦hoang⟧ 荒野的、无人照看的 | ⟦đem⟧ 带去/带来
+=zh
+核心表達：⟦動詞 + được⟧ / ⟦toàn bộ⟧
+⟦được⟧ 有多種用法，其中 ⟦動詞 + được⟧ 表示「行為的結果」。此時表示「得到（動詞的）結果」的 ⟦được⟧ 幾乎可以與所有動詞搭配使用。
+❶ Ⓐ ⟦Tối qua chị đã gửi email cho em rồi. Em nhận được chưa?⟧ —— 昨晚我寄了電子郵件給妳。妳收到了嗎？ Ⓑ ⟦Dạ, sáng nay em nhận được rồi ạ.⟧ —— 是的，今天早上收到了。
+❷ ⟦Bài này khó quá! Trong lớp mình chắc không ai hiểu được đâu!⟧ —— 這課太難了！我們班一定沒人聽得懂！
+⟦toàn bộ⟧ 與（複數、集合）名詞或代詞結合，表示「（這些名詞/代詞）全部」。一般名詞後面會接限定範圍的表達。
+❶ ⟦Toàn bộ các ngôi nhà ở khu phố này đều được xây dựng từ hơn 100 năm trước.⟧ —— 這一帶的房子全都是100多年前建造的。
+❷ Ⓐ ⟦Chị định gửi thông báo này cho ai ạ?⟧ —— 這份通知妳打算寄給誰？ Ⓑ ⟦Chị sẽ gửi cho toàn bộ các khách hàng của công ti mình.⟧ —— 我要寄給我們公司的全部客戶。
+句型練習3 —— 找出相應內容連線，然後仿照範例對話：① ⟦viết luận văn⟧（寫論文）→ Ⓒ ⟦đọc được những tài liệu rất quan trọng liên quan đến đề tài để tham khảo⟧（讀到了與題目相關的很重要的參考資料）| ② ⟦học làm bánh⟧（學做蛋糕）→ Ⓐ ⟦tự làm được chiếc bánh kem đầu tiên⟧（自己做出了第一個鮮奶油蛋糕）| ③ ⟦điều tra vụ án ấy⟧（調查那起案件）→ Ⓑ ⟦nhận được một số thông tin cơ bản từ người bị hại⟧（從受害者那裡得到了一些基本資訊）
+範例（②–Ⓐ）：Ⓐ ⟦Anh học làm bánh tới đâu rồi?⟧ —— 你學做蛋糕學到哪裡了？ Ⓑ ⟦Anh đã tự làm được chiếc bánh kem đầu tiên rồi đấy!⟧ —— 我已經自己做出第一個鮮奶油蛋糕了！
+句型練習4 —— 仿照範例用 ⟦toàn bộ⟧ 填空後進行對話。
+範例：Ⓐ ⟦Đây là bộ sưu tập phim của tớ. Có phim nào cậu đã từng xem rồi không?⟧ —— 這是我的電影收藏。有你看過的嗎？ Ⓑ ⟦Có chứ. Tớ đã xem toàn bộ các phim này rồi.⟧ —— 當然有。這些電影我全都看過了。 Ⓐ ⟦Thế à? Chắc cậu cũng là người say mê xem phim nhỉ!⟧ —— 是嗎？你一定也是個電影迷吧！
+❶ Ⓐ ⟦Nhà em nuôi nhiều mèo quá nhỉ!⟧ —— 妳家養了好多貓啊！ Ⓑ ⟦Vâng. Toàn bộ số mèo này đều là mèo hoang được đem về nuôi đấy ạ.⟧ —— 是的。這些貓全都是撿回來養的流浪貓。 Ⓐ ⟦Thế à? Em tốt bụng quá!⟧ —— 是嗎？妳心地真好！
+❷ Ⓐ ⟦Alô, tôi muốn đặt phòng cho những ngày nghỉ lễ Quốc khánh.⟧ —— 喂，我想預訂國慶連假的房間。 Ⓑ ⟦Xin lỗi anh ạ. Toàn bộ các phòng đều đã được đặt trước hết rồi.⟧ —— 不好意思。所有房間都已經被訂滿了。 Ⓐ ⟦À, thế à? Tiếc quá!⟧ —— 啊，是嗎？太可惜了！
+新單字：⟦điều tra⟧ 調查 | ⟦vụ án⟧（法律）案件 | ⟦luận văn⟧（碩士）論文 | ⟦liên quan⟧ 相關 | ⟦tham khảo⟧ 參考 | ⟦cơ bản⟧ 基本的 | ⟦hại⟧ 損害、傷害 | ⟦ngôi⟧ 用於建築物、星星等的單位名詞 | ⟦sưu tập⟧ 收集 | ⟦say mê⟧ 迷戀、非常喜歡 | ⟦hoang⟧ 荒野的、無人照顧的 | ⟦đem⟧ 帶去/帶來
+=en
+Key expressions: ⟦verb + được⟧ / ⟦toàn bộ⟧
+⟦được⟧ has several uses; one of them is ⟦verb + được⟧, which expresses the result of an action. In this sense – "to achieve the result (of the verb)" – ⟦được⟧ can be used with almost any verb.
+❶ Ⓐ ⟦Tối qua chị đã gửi email cho em rồi. Em nhận được chưa?⟧ — I sent you an email last night. Did you get it? Ⓑ ⟦Dạ, sáng nay em nhận được rồi ạ.⟧ — Yes, I got it this morning.
+❷ ⟦Bài này khó quá! Trong lớp mình chắc không ai hiểu được đâu!⟧ — This lesson is so hard! I bet nobody in our class can understand it!
+⟦toàn bộ⟧ combines with (plural or collective) nouns or pronouns to mean "all of (these ~)". The noun is usually followed by an expression limiting the scope.
+❶ ⟦Toàn bộ các ngôi nhà ở khu phố này đều được xây dựng từ hơn 100 năm trước.⟧ — All the houses in this neighbourhood were built more than 100 years ago.
+❷ Ⓐ ⟦Chị định gửi thông báo này cho ai ạ?⟧ — Who are you going to send this notice to? Ⓑ ⟦Chị sẽ gửi cho toàn bộ các khách hàng của công ti mình.⟧ — I'll send it to all of our company's customers.
+Pattern practice 3 — match the parts, then talk as in the model: ① ⟦viết luận văn⟧ (write a thesis) → Ⓒ ⟦đọc được những tài liệu rất quan trọng liên quan đến đề tài để tham khảo⟧ (managed to read very important reference materials on the topic) | ② ⟦học làm bánh⟧ (learn baking) → Ⓐ ⟦tự làm được chiếc bánh kem đầu tiên⟧ (managed to make a first cream cake on one's own) | ③ ⟦điều tra vụ án ấy⟧ (investigate that case) → Ⓑ ⟦nhận được một số thông tin cơ bản từ người bị hại⟧ (obtained some basic information from the victim)
+Model (②–Ⓐ): Ⓐ ⟦Anh học làm bánh tới đâu rồi?⟧ — How far have you got with learning to bake? Ⓑ ⟦Anh đã tự làm được chiếc bánh kem đầu tiên rồi đấy!⟧ — I've already made my first cream cake all by myself!
+Pattern practice 4 — fill in the blanks with ⟦toàn bộ⟧ as in the model, then talk.
+Model: Ⓐ ⟦Đây là bộ sưu tập phim của tớ. Có phim nào cậu đã từng xem rồi không?⟧ — This is my film collection. Have you seen any of them? Ⓑ ⟦Có chứ. Tớ đã xem toàn bộ các phim này rồi.⟧ — Of course. I've seen all of these films. Ⓐ ⟦Thế à? Chắc cậu cũng là người say mê xem phim nhỉ!⟧ — Really? You must be a real film lover too!
+❶ Ⓐ ⟦Nhà em nuôi nhiều mèo quá nhỉ!⟧ — You keep so many cats at home! Ⓑ ⟦Vâng. Toàn bộ số mèo này đều là mèo hoang được đem về nuôi đấy ạ.⟧ — Yes. All of these cats are strays that we brought home. Ⓐ ⟦Thế à? Em tốt bụng quá!⟧ — Really? You're so kind-hearted!
+❷ Ⓐ ⟦Alô, tôi muốn đặt phòng cho những ngày nghỉ lễ Quốc khánh.⟧ — Hello, I'd like to book a room for the National Day holiday. Ⓑ ⟦Xin lỗi anh ạ. Toàn bộ các phòng đều đã được đặt trước hết rồi.⟧ — I'm sorry. All the rooms have already been booked. Ⓐ ⟦À, thế à? Tiếc quá!⟧ — Oh, really? What a pity!
+New words: ⟦điều tra⟧ to investigate | ⟦vụ án⟧ (legal) case | ⟦luận văn⟧ (master's) thesis | ⟦liên quan⟧ to be related | ⟦tham khảo⟧ to consult, refer to | ⟦cơ bản⟧ basic | ⟦hại⟧ to harm | ⟦ngôi⟧ classifier for buildings, stars, etc. | ⟦sưu tập⟧ to collect | ⟦say mê⟧ to be passionate about | ⟦hoang⟧ wild, stray | ⟦đem⟧ to bring, take
+=fr
+Expressions clés : ⟦verbe + được⟧ / ⟦toàn bộ⟧
+⟦được⟧ a plusieurs emplois ; l'un d'eux est ⟦verbe + được⟧, qui exprime le résultat d'une action. Dans ce sens – « obtenir le résultat (du verbe) » –, ⟦được⟧ peut s'employer avec presque tous les verbes.
+❶ Ⓐ ⟦Tối qua chị đã gửi email cho em rồi. Em nhận được chưa?⟧ — Je t'ai envoyé un e-mail hier soir. Tu l'as reçu ? Ⓑ ⟦Dạ, sáng nay em nhận được rồi ạ.⟧ — Oui, je l'ai reçu ce matin.
+❷ ⟦Bài này khó quá! Trong lớp mình chắc không ai hiểu được đâu!⟧ — Cette leçon est trop difficile ! Personne dans notre classe n'arrivera à la comprendre !
+⟦toàn bộ⟧ se combine avec des noms ou pronoms (pluriels ou collectifs) pour signifier « la totalité de (ces ~) ». Le nom est généralement suivi d'une expression qui en limite la portée.
+❶ ⟦Toàn bộ các ngôi nhà ở khu phố này đều được xây dựng từ hơn 100 năm trước.⟧ — Toutes les maisons de ce quartier ont été construites il y a plus de 100 ans.
+❷ Ⓐ ⟦Chị định gửi thông báo này cho ai ạ?⟧ — À qui comptes-tu envoyer cet avis ? Ⓑ ⟦Chị sẽ gửi cho toàn bộ các khách hàng của công ti mình.⟧ — Je vais l'envoyer à tous les clients de notre entreprise.
+Exercice 3 — reliez les éléments, puis dialoguez comme dans le modèle : ① ⟦viết luận văn⟧ (rédiger un mémoire) → Ⓒ ⟦đọc được những tài liệu rất quan trọng liên quan đến đề tài để tham khảo⟧ (avoir pu lire des documents très importants sur le sujet) | ② ⟦học làm bánh⟧ (apprendre la pâtisserie) → Ⓐ ⟦tự làm được chiếc bánh kem đầu tiên⟧ (avoir réussi son premier gâteau à la crème tout seul) | ③ ⟦điều tra vụ án ấy⟧ (enquêter sur cette affaire) → Ⓑ ⟦nhận được một số thông tin cơ bản từ người bị hại⟧ (avoir obtenu quelques informations de base auprès de la victime)
+Modèle (②–Ⓐ) : Ⓐ ⟦Anh học làm bánh tới đâu rồi?⟧ — Où en es-tu avec tes cours de pâtisserie ? Ⓑ ⟦Anh đã tự làm được chiếc bánh kem đầu tiên rồi đấy!⟧ — J'ai déjà réussi mon premier gâteau à la crème tout seul !
+Exercice 4 — complétez avec ⟦toàn bộ⟧ comme dans le modèle, puis dialoguez.
+Modèle : Ⓐ ⟦Đây là bộ sưu tập phim của tớ. Có phim nào cậu đã từng xem rồi không?⟧ — Voici ma collection de films. Tu en as déjà vu certains ? Ⓑ ⟦Có chứ. Tớ đã xem toàn bộ các phim này rồi.⟧ — Bien sûr. J'ai vu tous ces films. Ⓐ ⟦Thế à? Chắc cậu cũng là người say mê xem phim nhỉ!⟧ — Ah bon ? Tu dois être un vrai cinéphile, toi aussi !
+❶ Ⓐ ⟦Nhà em nuôi nhiều mèo quá nhỉ!⟧ — Vous avez tellement de chats chez vous ! Ⓑ ⟦Vâng. Toàn bộ số mèo này đều là mèo hoang được đem về nuôi đấy ạ.⟧ — Oui. Tous ces chats sont des chats errants que nous avons recueillis. Ⓐ ⟦Thế à? Em tốt bụng quá!⟧ — Vraiment ? Tu as un cœur d'or !
+❷ Ⓐ ⟦Alô, tôi muốn đặt phòng cho những ngày nghỉ lễ Quốc khánh.⟧ — Allô, je voudrais réserver une chambre pour les congés de la Fête nationale. Ⓑ ⟦Xin lỗi anh ạ. Toàn bộ các phòng đều đã được đặt trước hết rồi.⟧ — Désolée, monsieur. Toutes les chambres sont déjà réservées. Ⓐ ⟦À, thế à? Tiếc quá!⟧ — Ah bon ? Dommage !
+Nouveaux mots : ⟦điều tra⟧ enquêter | ⟦vụ án⟧ affaire (judiciaire) | ⟦luận văn⟧ mémoire (de master) | ⟦liên quan⟧ être lié à | ⟦tham khảo⟧ consulter | ⟦cơ bản⟧ de base | ⟦hại⟧ nuire | ⟦ngôi⟧ classificateur pour bâtiments, étoiles, etc. | ⟦sưu tập⟧ collectionner | ⟦say mê⟧ être passionné de | ⟦hoang⟧ sauvage, errant | ⟦đem⟧ apporter, emporter
+=de
+Schlüsselausdrücke: ⟦Verb + được⟧ / ⟦toàn bộ⟧
+⟦được⟧ hat mehrere Verwendungen; eine davon ist ⟦Verb + được⟧, das das Ergebnis einer Handlung ausdrückt. In der Bedeutung „das Ergebnis (des Verbs) erreichen“ lässt sich ⟦được⟧ mit fast allen Verben verbinden.
+❶ Ⓐ ⟦Tối qua chị đã gửi email cho em rồi. Em nhận được chưa?⟧ — Ich habe dir gestern Abend eine E-Mail geschickt. Hast du sie bekommen? Ⓑ ⟦Dạ, sáng nay em nhận được rồi ạ.⟧ — Ja, heute Morgen habe ich sie bekommen.
+❷ ⟦Bài này khó quá! Trong lớp mình chắc không ai hiểu được đâu!⟧ — Diese Lektion ist zu schwer! In unserer Klasse versteht sie bestimmt niemand!
+⟦toàn bộ⟧ verbindet sich mit (Plural- oder Sammel-)Nomen bzw. Pronomen und bedeutet „sämtliche (dieser ~)“. Nach dem Nomen folgt meist ein Ausdruck, der den Umfang eingrenzt.
+❶ ⟦Toàn bộ các ngôi nhà ở khu phố này đều được xây dựng từ hơn 100 năm trước.⟧ — Sämtliche Häuser in diesem Viertel wurden vor über 100 Jahren gebaut.
+❷ Ⓐ ⟦Chị định gửi thông báo này cho ai ạ?⟧ — An wen willst du diese Mitteilung schicken? Ⓑ ⟦Chị sẽ gửi cho toàn bộ các khách hàng của công ti mình.⟧ — An sämtliche Kunden unserer Firma.
+Übung 3 — passende Teile verbinden, dann wie im Muster sprechen: ① ⟦viết luận văn⟧ (Abschlussarbeit schreiben) → Ⓒ ⟦đọc được những tài liệu rất quan trọng liên quan đến đề tài để tham khảo⟧ (sehr wichtige Materialien zum Thema lesen können) | ② ⟦học làm bánh⟧ (Backen lernen) → Ⓐ ⟦tự làm được chiếc bánh kem đầu tiên⟧ (die erste Sahnetorte selbst geschafft) | ③ ⟦điều tra vụ án ấy⟧ (den Fall untersuchen) → Ⓑ ⟦nhận được một số thông tin cơ bản từ người bị hại⟧ (vom Geschädigten einige Grundinformationen erhalten)
+Muster (②–Ⓐ): Ⓐ ⟦Anh học làm bánh tới đâu rồi?⟧ — Wie weit bist du mit dem Backenlernen? Ⓑ ⟦Anh đã tự làm được chiếc bánh kem đầu tiên rồi đấy!⟧ — Ich habe schon meine erste Sahnetorte ganz allein gebacken!
+Übung 4 — mit ⟦toàn bộ⟧ wie im Muster ergänzen, dann sprechen.
+Muster: Ⓐ ⟦Đây là bộ sưu tập phim của tớ. Có phim nào cậu đã từng xem rồi không?⟧ — Das ist meine Filmsammlung. Hast du einen davon schon gesehen? Ⓑ ⟦Có chứ. Tớ đã xem toàn bộ các phim này rồi.⟧ — Klar. Ich habe sämtliche dieser Filme schon gesehen. Ⓐ ⟦Thế à? Chắc cậu cũng là người say mê xem phim nhỉ!⟧ — Echt? Dann bist du wohl auch ein echter Filmfan!
+❶ Ⓐ ⟦Nhà em nuôi nhiều mèo quá nhỉ!⟧ — Ihr habt aber viele Katzen zu Hause! Ⓑ ⟦Vâng. Toàn bộ số mèo này đều là mèo hoang được đem về nuôi đấy ạ.⟧ — Ja. Sämtliche Katzen hier sind Streuner, die wir aufgenommen haben. Ⓐ ⟦Thế à? Em tốt bụng quá!⟧ — Wirklich? Du bist so gutherzig!
+❷ Ⓐ ⟦Alô, tôi muốn đặt phòng cho những ngày nghỉ lễ Quốc khánh.⟧ — Hallo, ich möchte ein Zimmer für die Feiertage zum Nationalfeiertag buchen. Ⓑ ⟦Xin lỗi anh ạ. Toàn bộ các phòng đều đã được đặt trước hết rồi.⟧ — Tut mir leid. Sämtliche Zimmer sind bereits ausgebucht. Ⓐ ⟦À, thế à? Tiếc quá!⟧ — Ach so? Schade!
+Neue Wörter: ⟦điều tra⟧ ermitteln, untersuchen | ⟦vụ án⟧ (Rechts-)Fall | ⟦luận văn⟧ (Master-)Arbeit | ⟦liên quan⟧ zusammenhängen | ⟦tham khảo⟧ nachschlagen, heranziehen | ⟦cơ bản⟧ grundlegend | ⟦hại⟧ schaden | ⟦ngôi⟧ Klassifikator für Gebäude, Sterne usw. | ⟦sưu tập⟧ sammeln | ⟦say mê⟧ begeistert sein von | ⟦hoang⟧ wild, streunend | ⟦đem⟧ bringen, mitnehmen
+=hu
+Kulcskifejezések: ⟦ige + được⟧ / ⟦toàn bộ⟧
+A ⟦được⟧-nek többféle használata van; ezek egyike az ⟦ige + được⟧, amely a cselekvés eredményét fejezi ki. „(Az ige) eredményét elérni” jelentésben a ⟦được⟧ szinte minden igével használható.
+❶ Ⓐ ⟦Tối qua chị đã gửi email cho em rồi. Em nhận được chưa?⟧ — Tegnap este küldtem neked egy e-mailt. Megkaptad? Ⓑ ⟦Dạ, sáng nay em nhận được rồi ạ.⟧ — Igen, ma reggel megkaptam.
+❷ ⟦Bài này khó quá! Trong lớp mình chắc không ai hiểu được đâu!⟧ — Ez a lecke túl nehéz! Az osztályunkban biztos senki sem érti meg!
+A ⟦toàn bộ⟧ (többes számú vagy gyűjtő) főnevekkel, névmásokkal állva „az összes (ilyen ~)” jelentésű. A főnév után általában a kört szűkítő kifejezés következik.
+❶ ⟦Toàn bộ các ngôi nhà ở khu phố này đều được xây dựng từ hơn 100 năm trước.⟧ — Ebben a negyedben az összes ház több mint 100 éve épült.
+❷ Ⓐ ⟦Chị định gửi thông báo này cho ai ạ?⟧ — Kinek akarod elküldeni ezt az értesítést? Ⓑ ⟦Chị sẽ gửi cho toàn bộ các khách hàng của công ti mình.⟧ — A cégünk összes ügyfelének elküldöm.
+3. gyakorlat — kösse össze a megfelelő részeket, majd beszélgessen a minta szerint: ① ⟦viết luận văn⟧ (szakdolgozatot írni) → Ⓒ ⟦đọc được những tài liệu rất quan trọng liên quan đến đề tài để tham khảo⟧ (sikerült elolvasni a témához kapcsolódó nagyon fontos szakirodalmat) | ② ⟦học làm bánh⟧ (sütni tanulni) → Ⓐ ⟦tự làm được chiếc bánh kem đầu tiên⟧ (sikerült egyedül megsütni az első krémtortát) | ③ ⟦điều tra vụ án ấy⟧ (kivizsgálni azt az ügyet) → Ⓑ ⟦nhận được một số thông tin cơ bản từ người bị hại⟧ (néhány alapvető információt kapni a sértettől)
+Minta (②–Ⓐ): Ⓐ ⟦Anh học làm bánh tới đâu rồi?⟧ — Hol tartasz a sütéstanulással? Ⓑ ⟦Anh đã tự làm được chiếc bánh kem đầu tiên rồi đấy!⟧ — Már egyedül megsütöttem az első krémtortámat!
+4. gyakorlat — töltse ki a ⟦toàn bộ⟧ szóval a minta szerint, majd beszélgessen.
+Minta: Ⓐ ⟦Đây là bộ sưu tập phim của tớ. Có phim nào cậu đã từng xem rồi không?⟧ — Ez a filmgyűjteményem. Láttál már közülük valamit? Ⓑ ⟦Có chứ. Tớ đã xem toàn bộ các phim này rồi.⟧ — Persze. Az összeset láttam már. Ⓐ ⟦Thế à? Chắc cậu cũng là người say mê xem phim nhỉ!⟧ — Tényleg? Akkor te is nagy filmrajongó lehetsz!
+❶ Ⓐ ⟦Nhà em nuôi nhiều mèo quá nhỉ!⟧ — Milyen sok macskátok van otthon! Ⓑ ⟦Vâng. Toàn bộ số mèo này đều là mèo hoang được đem về nuôi đấy ạ.⟧ — Igen. Ezek mind kóbor macskák, amelyeket hazahoztunk. Ⓐ ⟦Thế à? Em tốt bụng quá!⟧ — Tényleg? Milyen jószívű vagy!
+❷ Ⓐ ⟦Alô, tôi muốn đặt phòng cho những ngày nghỉ lễ Quốc khánh.⟧ — Halló, szobát szeretnék foglalni a nemzeti ünnep szabadnapjaira. Ⓑ ⟦Xin lỗi anh ạ. Toàn bộ các phòng đều đã được đặt trước hết rồi.⟧ — Elnézést. Az összes szoba már foglalt. Ⓐ ⟦À, thế à? Tiếc quá!⟧ — Ó, tényleg? Kár!
+Új szavak: ⟦điều tra⟧ nyomozni, vizsgálni | ⟦vụ án⟧ (jogi) ügy | ⟦luận văn⟧ (mester)dolgozat | ⟦liên quan⟧ összefügg | ⟦tham khảo⟧ felhasználni, konzultálni | ⟦cơ bản⟧ alapvető | ⟦hại⟧ kárt okozni | ⟦ngôi⟧ osztályozószó épületekhez, csillagokhoz stb. | ⟦sưu tập⟧ gyűjteni | ⟦say mê⟧ rajongani valamiért | ⟦hoang⟧ vad, kóbor | ⟦đem⟧ hozni, vinni
+=id
+Ungkapan kunci: ⟦verba + được⟧ / ⟦toàn bộ⟧
+⟦được⟧ memiliki beberapa penggunaan; salah satunya ⟦verba + được⟧ yang menyatakan hasil suatu tindakan. Dalam arti "memperoleh hasil (dari verba)", ⟦được⟧ dapat dipakai dengan hampir semua verba.
+❶ Ⓐ ⟦Tối qua chị đã gửi email cho em rồi. Em nhận được chưa?⟧ — Tadi malam Kakak sudah mengirim email kepadamu. Sudah kamu terima? Ⓑ ⟦Dạ, sáng nay em nhận được rồi ạ.⟧ — Iya, tadi pagi sudah saya terima.
+❷ ⟦Bài này khó quá! Trong lớp mình chắc không ai hiểu được đâu!⟧ — Pelajaran ini sulit sekali! Di kelas kita pasti tidak ada yang bisa memahaminya!
+⟦toàn bộ⟧ bergabung dengan nomina atau pronomina (jamak/kolektif) dan berarti "seluruh (~ itu)". Biasanya setelah nomina diikuti ungkapan yang membatasi cakupannya.
+❶ ⟦Toàn bộ các ngôi nhà ở khu phố này đều được xây dựng từ hơn 100 năm trước.⟧ — Seluruh rumah di kawasan ini dibangun lebih dari 100 tahun yang lalu.
+❷ Ⓐ ⟦Chị định gửi thông báo này cho ai ạ?⟧ — Pengumuman ini mau Kakak kirim ke siapa? Ⓑ ⟦Chị sẽ gửi cho toàn bộ các khách hàng của công ti mình.⟧ — Kakak akan kirim ke seluruh pelanggan perusahaan kita.
+Latihan pola 3 — hubungkan bagian yang cocok, lalu bercakaplah seperti contoh: ① ⟦viết luận văn⟧ (menulis tesis) → Ⓒ ⟦đọc được những tài liệu rất quan trọng liên quan đến đề tài để tham khảo⟧ (berhasil membaca referensi penting terkait topik) | ② ⟦học làm bánh⟧ (belajar membuat kue) → Ⓐ ⟦tự làm được chiếc bánh kem đầu tiên⟧ (berhasil membuat kue krim pertama sendiri) | ③ ⟦điều tra vụ án ấy⟧ (menyelidiki kasus itu) → Ⓑ ⟦nhận được một số thông tin cơ bản từ người bị hại⟧ (memperoleh beberapa informasi dasar dari korban)
+Contoh (②–Ⓐ): Ⓐ ⟦Anh học làm bánh tới đâu rồi?⟧ — Belajar bikin kuenya sudah sampai mana? Ⓑ ⟦Anh đã tự làm được chiếc bánh kem đầu tiên rồi đấy!⟧ — Aku sudah berhasil membuat kue krim pertamaku sendiri!
+Latihan pola 4 — isi dengan ⟦toàn bộ⟧ seperti contoh, lalu bercakaplah.
+Contoh: Ⓐ ⟦Đây là bộ sưu tập phim của tớ. Có phim nào cậu đã từng xem rồi không?⟧ — Ini koleksi filmku. Ada yang pernah kamu tonton? Ⓑ ⟦Có chứ. Tớ đã xem toàn bộ các phim này rồi.⟧ — Tentu. Aku sudah menonton seluruh film ini. Ⓐ ⟦Thế à? Chắc cậu cũng là người say mê xem phim nhỉ!⟧ — Oh ya? Pasti kamu juga penggila film, ya!
+❶ Ⓐ ⟦Nhà em nuôi nhiều mèo quá nhỉ!⟧ — Di rumahmu banyak sekali kucing, ya! Ⓑ ⟦Vâng. Toàn bộ số mèo này đều là mèo hoang được đem về nuôi đấy ạ.⟧ — Iya. Seluruh kucing ini adalah kucing liar yang dibawa pulang untuk dipelihara. Ⓐ ⟦Thế à? Em tốt bụng quá!⟧ — Oh ya? Baik sekali kamu!
+❷ Ⓐ ⟦Alô, tôi muốn đặt phòng cho những ngày nghỉ lễ Quốc khánh.⟧ — Halo, saya ingin memesan kamar untuk libur Hari Nasional. Ⓑ ⟦Xin lỗi anh ạ. Toàn bộ các phòng đều đã được đặt trước hết rồi.⟧ — Maaf, Pak. Seluruh kamar sudah dipesan. Ⓐ ⟦À, thế à? Tiếc quá!⟧ — Oh, begitu? Sayang sekali!
+Kosakata baru: ⟦điều tra⟧ menyelidiki | ⟦vụ án⟧ kasus (hukum) | ⟦luận văn⟧ tesis | ⟦liên quan⟧ berkaitan | ⟦tham khảo⟧ merujuk | ⟦cơ bản⟧ dasar | ⟦hại⟧ merugikan | ⟦ngôi⟧ kata penggolong untuk bangunan, bintang, dll. | ⟦sưu tập⟧ mengoleksi | ⟦say mê⟧ tergila-gila | ⟦hoang⟧ liar | ⟦đem⟧ membawa
+=ja
+核心表現：⟦動詞 + được⟧ / ⟦toàn bộ⟧
+⟦được⟧ にはいろいろな用法がありますが、その中に「行為の結果」を表す ⟦動詞 + được⟧ があります。このとき「（動詞の）結果を得る」という意味の ⟦được⟧ は、ほとんどすべての動詞と一緒に使えます。
+❶ Ⓐ ⟦Tối qua chị đã gửi email cho em rồi. Em nhận được chưa?⟧ — 昨日の夜メールを送ったよ。受け取った？ Ⓑ ⟦Dạ, sáng nay em nhận được rồi ạ.⟧ — はい、今朝受け取りました。
+❷ ⟦Bài này khó quá! Trong lớp mình chắc không ai hiểu được đâu!⟧ — この課は難しすぎる！うちのクラスできっと誰も理解できないよ！
+⟦toàn bộ⟧ は（複数・集合）名詞や代名詞と結合して「（その名詞・代名詞の）全部」を表します。一般的に名詞の後には範囲を限定する表現が来ます。
+❶ ⟦Toàn bộ các ngôi nhà ở khu phố này đều được xây dựng từ hơn 100 năm trước.⟧ — この地域の建物はすべて100年以上前に建てられました。
+❷ Ⓐ ⟦Chị định gửi thông báo này cho ai ạ?⟧ — このお知らせは誰に送るつもりですか。 Ⓑ ⟦Chị sẽ gửi cho toàn bộ các khách hàng của công ti mình.⟧ — うちの会社の顧客全員に送るつもりよ。
+文型練習3 — 適切な内容を結び、例のように会話してみましょう：① ⟦viết luận văn⟧（論文を書く）→ Ⓒ ⟦đọc được những tài liệu rất quan trọng liên quan đến đề tài để tham khảo⟧（テーマに関連するとても重要な資料を読むことができた）| ② ⟦học làm bánh⟧（お菓子作りを習う）→ Ⓐ ⟦tự làm được chiếc bánh kem đầu tiên⟧（初めてのデコレーションケーキを自分で作れた）| ③ ⟦điều tra vụ án ấy⟧（その事件を調査する）→ Ⓑ ⟦nhận được một số thông tin cơ bản từ người bị hại⟧（被害者から基本的な情報をいくつか得た）
+例（②–Ⓐ）：Ⓐ ⟦Anh học làm bánh tới đâu rồi?⟧ — お菓子作りはどこまで習いましたか。 Ⓑ ⟦Anh đã tự làm được chiếc bánh kem đầu tiên rồi đấy!⟧ — 初めてのデコレーションケーキを自分で作れたよ！
+文型練習4 — 例のように ⟦toàn bộ⟧ を使って空欄を埋め、会話してみましょう。
+例：Ⓐ ⟦Đây là bộ sưu tập phim của tớ. Có phim nào cậu đã từng xem rồi không?⟧ — これは僕の映画コレクションだよ。見たことある映画はある？ Ⓑ ⟦Có chứ. Tớ đã xem toàn bộ các phim này rồi.⟧ — もちろん。これらの映画は全部見たよ。 Ⓐ ⟦Thế à? Chắc cậu cũng là người say mê xem phim nhỉ!⟧ — そうなの？君もきっと大の映画好きなんだね！
+❶ Ⓐ ⟦Nhà em nuôi nhiều mèo quá nhỉ!⟧ — お宅ではたくさん猫を飼っているんですね！ Ⓑ ⟦Vâng. Toàn bộ số mèo này đều là mèo hoang được đem về nuôi đấy ạ.⟧ — はい。この猫たちは全部、連れて帰って飼っている野良猫なんです。 Ⓐ ⟦Thế à? Em tốt bụng quá!⟧ — そうなの？本当に心が優しいね！
+❷ Ⓐ ⟦Alô, tôi muốn đặt phòng cho những ngày nghỉ lễ Quốc khánh.⟧ — もしもし、建国記念日の連休に部屋を予約したいのですが。 Ⓑ ⟦Xin lỗi anh ạ. Toàn bộ các phòng đều đã được đặt trước hết rồi.⟧ — 申し訳ございません。全室すでに予約で埋まっております。 Ⓐ ⟦À, thế à? Tiếc quá!⟧ — ああ、そうですか。残念です！
+新出単語：⟦điều tra⟧ 調査する | ⟦vụ án⟧ （法的な）事件 | ⟦luận văn⟧ （修士）論文 | ⟦liên quan⟧ 関連する | ⟦tham khảo⟧ 参考にする | ⟦cơ bản⟧ 基本的な | ⟦hại⟧ 被害・損傷を与える | ⟦ngôi⟧ 建物・星などに付く単位名詞 | ⟦sưu tập⟧ 収集する | ⟦say mê⟧ ～が大好きだ、～に夢中になる | ⟦hoang⟧ 人の手が入っていない、野生の | ⟦đem⟧ 持っていく・持ってくる
+=pl
+Kluczowe wyrażenia: ⟦czasownik + được⟧ / ⟦toàn bộ⟧
+⟦được⟧ ma kilka zastosowań; jednym z nich jest ⟦czasownik + được⟧, które wyraża rezultat czynności. W znaczeniu „osiągnąć rezultat (czasownika)” ⟦được⟧ może łączyć się niemal z każdym czasownikiem.
+❶ Ⓐ ⟦Tối qua chị đã gửi email cho em rồi. Em nhận được chưa?⟧ — Wczoraj wieczorem wysłałam ci maila. Dostałaś? Ⓑ ⟦Dạ, sáng nay em nhận được rồi ạ.⟧ — Tak, dostałam dziś rano.
+❷ ⟦Bài này khó quá! Trong lớp mình chắc không ai hiểu được đâu!⟧ — Ta lekcja jest za trudna! W naszej klasie na pewno nikt jej nie zrozumie!
+⟦toàn bộ⟧ łączy się z rzeczownikami lub zaimkami (w liczbie mnogiej lub zbiorowymi) i znaczy „wszystkie (te ~)”. Po rzeczowniku zwykle następuje wyrażenie ograniczające zakres.
+❶ ⟦Toàn bộ các ngôi nhà ở khu phố này đều được xây dựng từ hơn 100 năm trước.⟧ — Wszystkie domy w tej dzielnicy zbudowano ponad 100 lat temu.
+❷ Ⓐ ⟦Chị định gửi thông báo này cho ai ạ?⟧ — Do kogo chcesz wysłać to ogłoszenie? Ⓑ ⟦Chị sẽ gửi cho toàn bộ các khách hàng của công ti mình.⟧ — Wyślę je do wszystkich klientów naszej firmy.
+Ćwiczenie 3 — połącz pasujące elementy i rozmawiaj jak we wzorze: ① ⟦viết luận văn⟧ (pisać pracę dyplomową) → Ⓒ ⟦đọc được những tài liệu rất quan trọng liên quan đến đề tài để tham khảo⟧ (udało się przeczytać bardzo ważne materiały do tematu) | ② ⟦học làm bánh⟧ (uczyć się piec) → Ⓐ ⟦tự làm được chiếc bánh kem đầu tiên⟧ (samodzielnie upiec pierwszy tort) | ③ ⟦điều tra vụ án ấy⟧ (prowadzić śledztwo w tej sprawie) → Ⓑ ⟦nhận được một số thông tin cơ bản từ người bị hại⟧ (uzyskać od poszkodowanego podstawowe informacje)
+Wzór (②–Ⓐ): Ⓐ ⟦Anh học làm bánh tới đâu rồi?⟧ — Jak ci idzie nauka pieczenia? Ⓑ ⟦Anh đã tự làm được chiếc bánh kem đầu tiên rồi đấy!⟧ — Już sam upiekłem swój pierwszy tort!
+Ćwiczenie 4 — uzupełnij za pomocą ⟦toàn bộ⟧ jak we wzorze, potem rozmawiaj.
+Wzór: Ⓐ ⟦Đây là bộ sưu tập phim của tớ. Có phim nào cậu đã từng xem rồi không?⟧ — To moja kolekcja filmów. Widziałeś któryś? Ⓑ ⟦Có chứ. Tớ đã xem toàn bộ các phim này rồi.⟧ — Pewnie. Widziałem już wszystkie te filmy. Ⓐ ⟦Thế à? Chắc cậu cũng là người say mê xem phim nhỉ!⟧ — Naprawdę? To pewnie też jesteś zapalonym kinomanem!
+❶ Ⓐ ⟦Nhà em nuôi nhiều mèo quá nhỉ!⟧ — Macie w domu tyle kotów! Ⓑ ⟦Vâng. Toàn bộ số mèo này đều là mèo hoang được đem về nuôi đấy ạ.⟧ — Tak. Wszystkie te koty to przybłędy, które przygarnęliśmy. Ⓐ ⟦Thế à? Em tốt bụng quá!⟧ — Naprawdę? Masz dobre serce!
+❷ Ⓐ ⟦Alô, tôi muốn đặt phòng cho những ngày nghỉ lễ Quốc khánh.⟧ — Halo, chciałbym zarezerwować pokój na dni wolne z okazji Święta Narodowego. Ⓑ ⟦Xin lỗi anh ạ. Toàn bộ các phòng đều đã được đặt trước hết rồi.⟧ — Przepraszam. Wszystkie pokoje są już zarezerwowane. Ⓐ ⟦À, thế à? Tiếc quá!⟧ — Ach tak? Szkoda!
+Nowe słówka: ⟦điều tra⟧ prowadzić śledztwo, badać | ⟦vụ án⟧ sprawa (sądowa) | ⟦luận văn⟧ praca (magisterska) | ⟦liên quan⟧ być powiązanym | ⟦tham khảo⟧ korzystać ze źródeł | ⟦cơ bản⟧ podstawowy | ⟦hại⟧ szkodzić | ⟦ngôi⟧ klasyfikator dla budynków, gwiazd itp. | ⟦sưu tập⟧ kolekcjonować | ⟦say mê⟧ pasjonować się | ⟦hoang⟧ dziki, bezpański | ⟦đem⟧ przynieść, zabrać

@@ -1,0 +1,142 @@
+@@ pdf-grammar-51e60a9a28942ea7#0
+=cs
+Gramatický výklad
+⟦ngay⟧: ve tvaru sloveso + ⟦ngay⟧ znamená „ihned, hned, okamžitě ~“.
+⟦Thế mình đi ngay nhé!⟧ → Tak já jdu hned! · ⟦Phải đưa ngay người ốm vào bệnh viện.⟧ → Nemocného je třeba okamžitě odvézt do nemocnice. · ⟦Trời vừa tạnh đã lại mưa ngay được.⟧ → Sotva přestalo pršet, hned zase začalo. · ⟦Tôi vừa nộp đơn xin việc hôm trước thì ngay hôm sau đã được gọi đi làm.⟧ → Jeden den jsem podal žádost o práci a hned druhý den mě zavolali do práce. · ⟦Tôi phải ra sân bay ngay cho kịp giờ.⟧ → Musím hned na letiště, abych to stihl.
+⟦vui quá mà⟧: ve tvaru přídavné jméno/sloveso + ⟦mà⟧ zdůrazňuje význam přídavného jména či slovesa („tak ~, že ~“).
+⟦Mình vui quá mà chảy nước mắt thôi.⟧ → Mám takovou radost, že mi tečou slzy. · ⟦Mình vui quá mà quên cả ăn cơm.⟧ → Měl jsem takovou radost, že jsem zapomněl i najíst se. · ⟦Bọn mình vui quá mà quên cả giờ vào lớp.⟧ → Měli jsme takovou radost, že jsme zapomněli i na začátek vyučování. · ⟦Nghe tin được ra viện, ông ấy vui quá mà không nhớ gì việc uống thuốc.⟧ → Když slyšel, že ho propustí z nemocnice, měl takovou radost, že úplně zapomněl vzít si léky. · ⟦Chúng vui quá mà nói chuyện mãi chẳng ngủ.⟧ → Měly takovou radost, že si pořád povídaly a vůbec nespaly.
+=zh_cn
+语法解说
+⟦ngay⟧：以 动词 + ⟦ngay⟧ 的形式，表示“立即、马上……”。
+⟦Thế mình đi ngay nhé!⟧ → 那我马上去啦！ · ⟦Phải đưa ngay người ốm vào bệnh viện.⟧ → 必须马上把病人送进医院。 · ⟦Trời vừa tạnh đã lại mưa ngay được.⟧ → 雨刚停就马上又下了。 · ⟦Tôi vừa nộp đơn xin việc hôm trước thì ngay hôm sau đã được gọi đi làm.⟧ → 我前一天刚交了求职申请，第二天就被叫去上班了。 · ⟦Tôi phải ra sân bay ngay cho kịp giờ.⟧ → 我得马上去机场，才能赶上时间。
+⟦vui quá mà⟧：以 形容词／动词 + ⟦mà⟧ 的形式，起强调该形容词／动词意义的作用（“……得……”）。
+⟦Mình vui quá mà chảy nước mắt thôi.⟧ → 我高兴得都流眼泪了。 · ⟦Mình vui quá mà quên cả ăn cơm.⟧ → 我高兴得连饭都忘了吃。 · ⟦Bọn mình vui quá mà quên cả giờ vào lớp.⟧ → 我们高兴得连上课时间都忘了。 · ⟦Nghe tin được ra viện, ông ấy vui quá mà không nhớ gì việc uống thuốc.⟧ → 听到可以出院的消息，他高兴得完全忘了吃药。 · ⟦Chúng vui quá mà nói chuyện mãi chẳng ngủ.⟧ → 他们高兴得一直聊天，都不睡觉。
+=zh
+文法解說
+⟦ngay⟧：以 動詞 + ⟦ngay⟧ 的形式，表示「立即、馬上……」。
+⟦Thế mình đi ngay nhé!⟧ → 那我馬上去囉！ · ⟦Phải đưa ngay người ốm vào bệnh viện.⟧ → 必須馬上把病人送進醫院。 · ⟦Trời vừa tạnh đã lại mưa ngay được.⟧ → 雨剛停就馬上又下了。 · ⟦Tôi vừa nộp đơn xin việc hôm trước thì ngay hôm sau đã được gọi đi làm.⟧ → 我前一天剛交了求職申請，隔天就被叫去上班了。 · ⟦Tôi phải ra sân bay ngay cho kịp giờ.⟧ → 我得馬上去機場，才能趕上時間。
+⟦vui quá mà⟧：以 形容詞／動詞 + ⟦mà⟧ 的形式，起強調該形容詞／動詞意義的作用（「……得……」）。
+⟦Mình vui quá mà chảy nước mắt thôi.⟧ → 我高興得都流眼淚了。 · ⟦Mình vui quá mà quên cả ăn cơm.⟧ → 我高興得連飯都忘了吃。 · ⟦Bọn mình vui quá mà quên cả giờ vào lớp.⟧ → 我們高興得連上課時間都忘了。 · ⟦Nghe tin được ra viện, ông ấy vui quá mà không nhớ gì việc uống thuốc.⟧ → 聽到可以出院的消息，他高興得完全忘了吃藥。 · ⟦Chúng vui quá mà nói chuyện mãi chẳng ngủ.⟧ → 他們高興得一直聊天，都不睡覺。
+=en
+Grammar notes
+⟦ngay⟧: in the form verb + ⟦ngay⟧, means "to ~ immediately, right away".
+⟦Thế mình đi ngay nhé!⟧ → Then I'll go right away! · ⟦Phải đưa ngay người ốm vào bệnh viện.⟧ → The sick person must be taken to hospital immediately. · ⟦Trời vừa tạnh đã lại mưa ngay được.⟧ → No sooner had the rain stopped than it started again. · ⟦Tôi vừa nộp đơn xin việc hôm trước thì ngay hôm sau đã được gọi đi làm.⟧ → I'd only just sent my job application one day, and the very next day I was called in to work. · ⟦Tôi phải ra sân bay ngay cho kịp giờ.⟧ → I have to go to the airport right now to make it in time.
+⟦vui quá mà⟧: in the form adjective/verb + ⟦mà⟧, emphasizes the meaning of the adjective or verb ("so ~ that ~").
+⟦Mình vui quá mà chảy nước mắt thôi.⟧ → I'm so happy that I'm crying. · ⟦Mình vui quá mà quên cả ăn cơm.⟧ → I was so happy I even forgot to eat. · ⟦Bọn mình vui quá mà quên cả giờ vào lớp.⟧ → We were so happy we even forgot the time for class. · ⟦Nghe tin được ra viện, ông ấy vui quá mà không nhớ gì việc uống thuốc.⟧ → Hearing he could leave hospital, he was so happy he forgot all about taking his medicine. · ⟦Chúng vui quá mà nói chuyện mãi chẳng ngủ.⟧ → They were so happy they kept talking and didn't sleep at all.
+=fr
+Notes de grammaire
+⟦ngay⟧ : sous la forme verbe + ⟦ngay⟧, signifie « ~ immédiatement, tout de suite ».
+⟦Thế mình đi ngay nhé!⟧ → Alors j'y vais tout de suite ! · ⟦Phải đưa ngay người ốm vào bệnh viện.⟧ → Il faut emmener immédiatement le malade à l'hôpital. · ⟦Trời vừa tạnh đã lại mưa ngay được.⟧ → À peine la pluie s'était-elle arrêtée qu'elle a repris aussitôt. · ⟦Tôi vừa nộp đơn xin việc hôm trước thì ngay hôm sau đã được gọi đi làm.⟧ → J'avais à peine déposé ma candidature que dès le lendemain on m'appelait pour travailler. · ⟦Tôi phải ra sân bay ngay cho kịp giờ.⟧ → Je dois partir tout de suite à l'aéroport pour être à l'heure.
+⟦vui quá mà⟧ : sous la forme adjectif/verbe + ⟦mà⟧, met en relief le sens de l'adjectif ou du verbe (« si ~ que ~ »).
+⟦Mình vui quá mà chảy nước mắt thôi.⟧ → Je suis si heureux que j'en pleure. · ⟦Mình vui quá mà quên cả ăn cơm.⟧ → J'étais si content que j'en ai oublié de manger. · ⟦Bọn mình vui quá mà quên cả giờ vào lớp.⟧ → Nous étions si joyeux que nous avons oublié l'heure du cours. · ⟦Nghe tin được ra viện, ông ấy vui quá mà không nhớ gì việc uống thuốc.⟧ → En apprenant qu'il pouvait sortir de l'hôpital, il était si heureux qu'il a complètement oublié de prendre ses médicaments. · ⟦Chúng vui quá mà nói chuyện mãi chẳng ngủ.⟧ → Ils étaient si contents qu'ils ont bavardé sans fin sans dormir.
+=de
+Grammatikerläuterungen
+⟦ngay⟧: in der Form Verb + ⟦ngay⟧ bedeutet es „sofort, gleich ~“.
+⟦Thế mình đi ngay nhé!⟧ → Dann gehe ich sofort! · ⟦Phải đưa ngay người ốm vào bệnh viện.⟧ → Der Kranke muss sofort ins Krankenhaus gebracht werden. · ⟦Trời vừa tạnh đã lại mưa ngay được.⟧ → Kaum hatte der Regen aufgehört, fing es gleich wieder an. · ⟦Tôi vừa nộp đơn xin việc hôm trước thì ngay hôm sau đã được gọi đi làm.⟧ → Ich hatte gerade am Vortag meine Bewerbung abgegeben, und gleich am nächsten Tag wurde ich zur Arbeit gerufen. · ⟦Tôi phải ra sân bay ngay cho kịp giờ.⟧ → Ich muss sofort zum Flughafen, um es rechtzeitig zu schaffen.
+⟦vui quá mà⟧: in der Form Adjektiv/Verb + ⟦mà⟧ verstärkt es die Bedeutung des Adjektivs bzw. Verbs („so ~, dass ~“).
+⟦Mình vui quá mà chảy nước mắt thôi.⟧ → Ich freue mich so sehr, dass mir die Tränen kommen. · ⟦Mình vui quá mà quên cả ăn cơm.⟧ → Ich habe mich so gefreut, dass ich sogar das Essen vergessen habe. · ⟦Bọn mình vui quá mà quên cả giờ vào lớp.⟧ → Wir waren so fröhlich, dass wir sogar den Unterrichtsbeginn vergessen haben. · ⟦Nghe tin được ra viện, ông ấy vui quá mà không nhớ gì việc uống thuốc.⟧ → Als er hörte, dass er entlassen wird, freute er sich so, dass er völlig vergaß, seine Medizin zu nehmen. · ⟦Chúng vui quá mà nói chuyện mãi chẳng ngủ.⟧ → Sie waren so froh, dass sie immerzu redeten und gar nicht schliefen.
+=hu
+Nyelvtani magyarázat
+⟦ngay⟧: ige + ⟦ngay⟧ alakban jelentése „azonnal, rögtön ~”.
+⟦Thế mình đi ngay nhé!⟧ → Akkor rögtön megyek! · ⟦Phải đưa ngay người ốm vào bệnh viện.⟧ → A beteget azonnal kórházba kell vinni. · ⟦Trời vừa tạnh đã lại mưa ngay được.⟧ → Alig állt el az eső, máris újra esett. · ⟦Tôi vừa nộp đơn xin việc hôm trước thì ngay hôm sau đã được gọi đi làm.⟧ → Előző nap adtam be az álláspályázatot, és rögtön másnap behívtak dolgozni. · ⟦Tôi phải ra sân bay ngay cho kịp giờ.⟧ → Azonnal ki kell mennem a reptérre, hogy odaérjek.
+⟦vui quá mà⟧: melléknév/ige + ⟦mà⟧ alakban a melléknév vagy ige jelentését nyomatékosítja („annyira ~, hogy ~”).
+⟦Mình vui quá mà chảy nước mắt thôi.⟧ → Annyira örülök, hogy kicsordul a könnyem. · ⟦Mình vui quá mà quên cả ăn cơm.⟧ → Annyira örültem, hogy még enni is elfelejtettem. · ⟦Bọn mình vui quá mà quên cả giờ vào lớp.⟧ → Annyira jól éreztük magunkat, hogy még az óra kezdetét is elfelejtettük. · ⟦Nghe tin được ra viện, ông ấy vui quá mà không nhớ gì việc uống thuốc.⟧ → Amikor meghallotta, hogy kiengedik a kórházból, annyira megörült, hogy teljesen elfelejtette bevenni a gyógyszerét. · ⟦Chúng vui quá mà nói chuyện mãi chẳng ngủ.⟧ → Annyira örültek, hogy egyfolytában beszélgettek, és nem is aludtak.
+=id
+Penjelasan tata bahasa
+⟦ngay⟧: dalam bentuk verba + ⟦ngay⟧ berarti "segera, langsung ~".
+⟦Thế mình đi ngay nhé!⟧ → Kalau begitu aku langsung pergi, ya! · ⟦Phải đưa ngay người ốm vào bệnh viện.⟧ → Orang sakit itu harus segera dibawa ke rumah sakit. · ⟦Trời vừa tạnh đã lại mưa ngay được.⟧ → Hujan baru saja reda, langsung turun lagi. · ⟦Tôi vừa nộp đơn xin việc hôm trước thì ngay hôm sau đã được gọi đi làm.⟧ → Saya baru mengajukan lamaran kerja sehari sebelumnya, keesokan harinya langsung dipanggil bekerja. · ⟦Tôi phải ra sân bay ngay cho kịp giờ.⟧ → Saya harus segera ke bandara agar tepat waktu.
+⟦vui quá mà⟧: dalam bentuk adjektiva/verba + ⟦mà⟧ berfungsi menegaskan makna adjektiva atau verba ("begitu ~ sampai ~").
+⟦Mình vui quá mà chảy nước mắt thôi.⟧ → Aku begitu senang sampai menangis. · ⟦Mình vui quá mà quên cả ăn cơm.⟧ → Aku begitu senang sampai lupa makan. · ⟦Bọn mình vui quá mà quên cả giờ vào lớp.⟧ → Kami begitu gembira sampai lupa jam masuk kelas. · ⟦Nghe tin được ra viện, ông ấy vui quá mà không nhớ gì việc uống thuốc.⟧ → Mendengar kabar boleh keluar dari rumah sakit, beliau begitu senang sampai lupa minum obat. · ⟦Chúng vui quá mà nói chuyện mãi chẳng ngủ.⟧ → Mereka begitu gembira sampai terus mengobrol dan tidak tidur.
+=ja
+文法解説
+⟦ngay⟧：動詞 + ⟦ngay⟧ の形で「すぐに、直ちに～する」という意味で使われます。
+⟦Thế mình đi ngay nhé!⟧ → じゃあ、すぐ行くね！ · ⟦Phải đưa ngay người ốm vào bệnh viện.⟧ → 病人をすぐに病院に連れて行かなければならない。 · ⟦Trời vừa tạnh đã lại mưa ngay được.⟧ → 雨がやんだと思ったら、すぐにまた降り出した。 · ⟦Tôi vừa nộp đơn xin việc hôm trước thì ngay hôm sau đã được gọi đi làm.⟧ → 前日に応募書類を出したばかりなのに、翌日すぐに出勤するよう連絡が来た。 · ⟦Tôi phải ra sân bay ngay cho kịp giờ.⟧ → 間に合うように、すぐに空港に行かなければならない。
+⟦vui quá mà⟧：形容詞／動詞 + ⟦mà⟧ の形で、その形容詞・動詞の意味を強調する役割をします（「あまりに～で～」）。
+⟦Mình vui quá mà chảy nước mắt thôi.⟧ → うれしすぎて涙が出てくるよ。 · ⟦Mình vui quá mà quên cả ăn cơm.⟧ → うれしすぎてご飯を食べるのまで忘れた。 · ⟦Bọn mình vui quá mà quên cả giờ vào lớp.⟧ → 楽しすぎて授業に入る時間まで忘れてしまった。 · ⟦Nghe tin được ra viện, ông ấy vui quá mà không nhớ gì việc uống thuốc.⟧ → 退院できるという知らせを聞いて、彼はうれしすぎて薬を飲むことをすっかり忘れた。 · ⟦Chúng vui quá mà nói chuyện mãi chẳng ngủ.⟧ → 彼らはうれしすぎて、寝もせずにずっと話していた。
+=pl
+Objaśnienia gramatyczne
+⟦ngay⟧: w formie czasownik + ⟦ngay⟧ znaczy „natychmiast, od razu ~”.
+⟦Thế mình đi ngay nhé!⟧ → To ja idę od razu! · ⟦Phải đưa ngay người ốm vào bệnh viện.⟧ → Chorego trzeba natychmiast zawieźć do szpitala. · ⟦Trời vừa tạnh đã lại mưa ngay được.⟧ → Ledwo przestało padać, a już znów zaczęło. · ⟦Tôi vừa nộp đơn xin việc hôm trước thì ngay hôm sau đã được gọi đi làm.⟧ → Dzień wcześniej złożyłem podanie o pracę, a już następnego dnia wezwano mnie do pracy. · ⟦Tôi phải ra sân bay ngay cho kịp giờ.⟧ → Muszę natychmiast jechać na lotnisko, żeby zdążyć.
+⟦vui quá mà⟧: w formie przymiotnik/czasownik + ⟦mà⟧ podkreśla znaczenie przymiotnika lub czasownika („tak ~, że ~”).
+⟦Mình vui quá mà chảy nước mắt thôi.⟧ → Tak się cieszę, że aż płaczę. · ⟦Mình vui quá mà quên cả ăn cơm.⟧ → Tak się cieszyłem, że zapomniałem nawet zjeść. · ⟦Bọn mình vui quá mà quên cả giờ vào lớp.⟧ → Tak się cieszyliśmy, że zapomnieliśmy nawet o godzinie lekcji. · ⟦Nghe tin được ra viện, ông ấy vui quá mà không nhớ gì việc uống thuốc.⟧ → Usłyszawszy, że wychodzi ze szpitala, tak się ucieszył, że całkiem zapomniał wziąć lekarstwa. · ⟦Chúng vui quá mà nói chuyện mãi chẳng ngủ.⟧ → Tak się cieszyli, że rozmawiali bez końca i w ogóle nie spali.
+@@ pdf-grammar-fd32ff0c6ed3222c#0
+=cs
+Gramatický výklad
+⟦trái lại⟧: stojí před obsahem, který je v protikladu k předchozímu, ve významu „naopak, oproti tomu“.
+⟦Đối với người Việt, khi có khách đến thăm, chủ nhà ít khi tiếp khách một mình. Trái lại, chủ nhà thường mời thêm một vài người đến cùng trò chuyện.⟧ → U Vietnamců hostitel zřídka přijímá návštěvu sám. Naopak obvykle pozve ještě několik dalších lidí, aby si s hostem povídali. · ⟦Anh không có bệnh tật gì, trái lại, tôi thì lúc nào cũng đầy bệnh.⟧ → Ty nemáš žádné nemoci, já naopak mám pořád nějaké neduhy. · ⟦Cây này rất nhiều quả, trái lại, cây kia không có một quả nào⟧ → Tento strom má spoustu plodů, naopak tamten nemá ani jeden.
+⟦đi kèm⟧: ve tvaru ⟦đi kèm với⟧ ~ vyjadřuje věci, jevy či vlastnosti, které se neoddělují a jdou spolu – „doprovázet, jít ruku v ruce“.
+⟦Đã có “khách” thì phải có “khứa” dần dần trở thành những việc luôn luôn đi kèm với nhau.⟧ → Rčení „kde je host, musí být i hostina“ postupně vyjádřilo, že tyto věci jdou vždy ruku v ruce. · ⟦Gió bão thường đi kèm với mưa to⟧ → Bouřlivý vítr obvykle doprovází silný déšť.
+⟦đã A thì phải B⟧: vyjadřuje příčinný vztah mezi A a B – „když už A, musí být i B“.
+⟦Đã có “khách” thì phải có “khứa”.⟧ → Když už je host, musí být i pohoštění. · ⟦Đã có khách đến thăm thì phải có chủ nhà tiếp đón.⟧ → Když přijde host, musí ho hostitel přivítat. · ⟦Đã hẹn chị ấy đến thì phải đón tiếp chị ấy cho lịch sự⟧ → Když už jsem ji pozval, musím ji zdvořile přijmout.
+=zh_cn
+语法解说
+⟦trái lại⟧：用于前后内容相反时，放在相反内容之前，意为“相反、反而、与……不同”。
+⟦Đối với người Việt, khi có khách đến thăm, chủ nhà ít khi tiếp khách một mình. Trái lại, chủ nhà thường mời thêm một vài người đến cùng trò chuyện.⟧ → 对越南人来说，有客人来访时，主人很少独自接待。相反，主人常常会再请几个人来一起聊天。 · ⟦Anh không có bệnh tật gì, trái lại, tôi thì lúc nào cũng đầy bệnh.⟧ → 你没什么病，相反，我却总是一身病。 · ⟦Cây này rất nhiều quả, trái lại, cây kia không có một quả nào⟧ → 这棵树果实累累，相反，那棵树一个果子都没有。
+⟦đi kèm⟧：以 ⟦đi kèm với⟧ ~ 的形式，表示不分离、相伴而行的事物、现象、性质等，意为“伴随、一起……”。
+⟦Đã có “khách” thì phải có “khứa” dần dần trở thành những việc luôn luôn đi kèm với nhau.⟧ → “有客就得有宴”，渐渐成了总是相伴而行的事情。 · ⟦Gió bão thường đi kèm với mưa to⟧ → 暴风常伴随着大雨。
+⟦đã A thì phải B⟧：表示A与B之间的因果关系，意为“既然A，就必须B”。
+⟦Đã có “khách” thì phải có “khứa”.⟧ → 既然有客人，就得有款待。 · ⟦Đã có khách đến thăm thì phải có chủ nhà tiếp đón.⟧ → 既然有客人来访，就得有主人接待。 · ⟦Đã hẹn chị ấy đến thì phải đón tiếp chị ấy cho lịch sự⟧ → 既然约了她来，就得礼貌地接待她。
+=zh
+文法解說
+⟦trái lại⟧：用於前後內容相反時，放在相反內容之前，意為「相反、反而、與……不同」。
+⟦Đối với người Việt, khi có khách đến thăm, chủ nhà ít khi tiếp khách một mình. Trái lại, chủ nhà thường mời thêm một vài người đến cùng trò chuyện.⟧ → 對越南人來說，有客人來訪時，主人很少獨自接待。相反地，主人常會再邀幾個人一起聊天。 · ⟦Anh không có bệnh tật gì, trái lại, tôi thì lúc nào cũng đầy bệnh.⟧ → 你沒什麼病痛，相反地，我卻總是一身病。 · ⟦Cây này rất nhiều quả, trái lại, cây kia không có một quả nào⟧ → 這棵樹結實纍纍，相反地，那棵樹一顆果子都沒有。
+⟦đi kèm⟧：以 ⟦đi kèm với⟧ ~ 的形式，表示不分離、相伴而行的事物、現象、性質等，意為「伴隨、一起……」。
+⟦Đã có “khách” thì phải có “khứa” dần dần trở thành những việc luôn luôn đi kèm với nhau.⟧ → 「有客就得有宴」，漸漸成了總是相伴而行的事。 · ⟦Gió bão thường đi kèm với mưa to⟧ → 暴風常伴隨著大雨。
+⟦đã A thì phải B⟧：表示A與B之間的因果關係，意為「既然A，就必須B」。
+⟦Đã có “khách” thì phải có “khứa”.⟧ → 既然有客人，就得有款待。 · ⟦Đã có khách đến thăm thì phải có chủ nhà tiếp đón.⟧ → 既然有客人來訪，就得有主人接待。 · ⟦Đã hẹn chị ấy đến thì phải đón tiếp chị ấy cho lịch sự⟧ → 既然約了她來，就得禮貌地接待她。
+=en
+Grammar notes
+⟦trái lại⟧: placed before content that contrasts with what came before, meaning "on the contrary, by contrast, unlike ~".
+⟦Đối với người Việt, khi có khách đến thăm, chủ nhà ít khi tiếp khách một mình. Trái lại, chủ nhà thường mời thêm một vài người đến cùng trò chuyện.⟧ → For Vietnamese people, when a guest visits, the host rarely receives them alone. On the contrary, the host usually invites a few more people to join the conversation. · ⟦Anh không có bệnh tật gì, trái lại, tôi thì lúc nào cũng đầy bệnh.⟧ → You don't have any illnesses; I, on the contrary, am always full of ailments. · ⟦Cây này rất nhiều quả, trái lại, cây kia không có một quả nào⟧ → This tree has lots of fruit; that one, by contrast, has none at all.
+⟦đi kèm⟧: in the form ⟦đi kèm với⟧ ~, expresses things, phenomena or qualities that are inseparable and go together – "to accompany, go hand in hand with".
+⟦Đã có “khách” thì phải có “khứa” dần dần trở thành những việc luôn luôn đi kèm với nhau.⟧ → "Where there's a guest there must be a feast" – gradually these became things that always go hand in hand. · ⟦Gió bão thường đi kèm với mưa to⟧ → Storm winds usually come with heavy rain.
+⟦đã A thì phải B⟧: expresses a causal relation between A and B – "if A, then B must follow; since there is A, there must be B".
+⟦Đã có “khách” thì phải có “khứa”.⟧ → If there's a guest, there must be hospitality. · ⟦Đã có khách đến thăm thì phải có chủ nhà tiếp đón.⟧ → If a guest comes to visit, the host must receive them. · ⟦Đã hẹn chị ấy đến thì phải đón tiếp chị ấy cho lịch sự⟧ → Since I've invited her over, I must receive her politely.
+=fr
+Notes de grammaire
+⟦trái lại⟧ : placé devant un contenu qui s'oppose au précédent, signifie « au contraire, à l'inverse, contrairement à ~ ».
+⟦Đối với người Việt, khi có khách đến thăm, chủ nhà ít khi tiếp khách một mình. Trái lại, chủ nhà thường mời thêm một vài người đến cùng trò chuyện.⟧ → Chez les Vietnamiens, quand un invité vient, l'hôte le reçoit rarement seul. Au contraire, il invite souvent quelques personnes de plus pour bavarder ensemble. · ⟦Anh không có bệnh tật gì, trái lại, tôi thì lúc nào cũng đầy bệnh.⟧ → Toi, tu n'as aucune maladie ; moi, au contraire, j'ai toujours tous les maux. · ⟦Cây này rất nhiều quả, trái lại, cây kia không có một quả nào⟧ → Cet arbre porte beaucoup de fruits ; celui-là, à l'inverse, n'en a aucun.
+⟦đi kèm⟧ : sous la forme ⟦đi kèm với⟧ ~, exprime des choses, phénomènes ou caractères inséparables, qui vont ensemble – « accompagner, aller de pair avec ».
+⟦Đã có “khách” thì phải có “khứa” dần dần trở thành những việc luôn luôn đi kèm với nhau.⟧ → « Qui dit invité dit festin » : peu à peu, ce sont devenues des choses qui vont toujours de pair. · ⟦Gió bão thường đi kèm với mưa to⟧ → Les vents de tempête s'accompagnent souvent de fortes pluies.
+⟦đã A thì phải B⟧ : exprime une relation de cause entre A et B – « dès lors que A, il faut B ».
+⟦Đã có “khách” thì phải có “khứa”.⟧ → Dès lors qu'il y a un invité, il faut un repas. · ⟦Đã có khách đến thăm thì phải có chủ nhà tiếp đón.⟧ → Dès lors qu'un invité vient, il faut que l'hôte l'accueille. · ⟦Đã hẹn chị ấy đến thì phải đón tiếp chị ấy cho lịch sự⟧ → Puisque je l'ai invitée, je dois la recevoir poliment.
+=de
+Grammatikerläuterungen
+⟦trái lại⟧: steht vor einem Inhalt, der dem vorherigen entgegengesetzt ist, im Sinne von „im Gegenteil, dagegen, anders als ~“.
+⟦Đối với người Việt, khi có khách đến thăm, chủ nhà ít khi tiếp khách một mình. Trái lại, chủ nhà thường mời thêm một vài người đến cùng trò chuyện.⟧ → Bei Vietnamesen empfängt der Gastgeber einen Besucher selten allein. Im Gegenteil, er lädt meist noch ein paar Leute ein, die mitplaudern. · ⟦Anh không có bệnh tật gì, trái lại, tôi thì lúc nào cũng đầy bệnh.⟧ → Du hast keinerlei Krankheiten, ich dagegen bin ständig voller Leiden. · ⟦Cây này rất nhiều quả, trái lại, cây kia không có một quả nào⟧ → Dieser Baum trägt viele Früchte, jener dagegen keine einzige.
+⟦đi kèm⟧: in der Form ⟦đi kèm với⟧ ~ drückt es untrennbar zusammengehörende Dinge, Erscheinungen oder Eigenschaften aus – „begleiten, einhergehen mit“.
+⟦Đã có “khách” thì phải có “khứa” dần dần trở thành những việc luôn luôn đi kèm với nhau.⟧ → „Wo ein Gast ist, muss auch ein Festmahl sein“ – allmählich wurden daraus Dinge, die stets miteinander einhergehen. · ⟦Gió bão thường đi kèm với mưa to⟧ → Sturm geht meist mit starkem Regen einher.
+⟦đã A thì phải B⟧: drückt ein Kausalverhältnis zwischen A und B aus – „wenn schon A, dann muss auch B sein“.
+⟦Đã có “khách” thì phải có “khứa”.⟧ → Wenn schon ein Gast da ist, muss auch bewirtet werden. · ⟦Đã có khách đến thăm thì phải có chủ nhà tiếp đón.⟧ → Wenn ein Gast kommt, muss ihn der Gastgeber empfangen. · ⟦Đã hẹn chị ấy đến thì phải đón tiếp chị ấy cho lịch sự⟧ → Wenn ich sie schon eingeladen habe, muss ich sie höflich empfangen.
+=hu
+Nyelvtani magyarázat
+⟦trái lại⟧: az előzővel ellentétes tartalom előtt áll, jelentése „ezzel szemben, ellenkezőleg, ~val ellentétben”.
+⟦Đối với người Việt, khi có khách đến thăm, chủ nhà ít khi tiếp khách một mình. Trái lại, chủ nhà thường mời thêm một vài người đến cùng trò chuyện.⟧ → A vietnámiaknál a házigazda ritkán fogadja egyedül a vendéget. Ellenkezőleg, általában meghív még néhány embert, hogy együtt beszélgessenek. · ⟦Anh không có bệnh tật gì, trái lại, tôi thì lúc nào cũng đầy bệnh.⟧ → Neked semmi bajod, én ezzel szemben mindig tele vagyok nyavalyával. · ⟦Cây này rất nhiều quả, trái lại, cây kia không có một quả nào⟧ → Ezen a fán sok gyümölcs van, azon viszont egy sem.
+⟦đi kèm⟧: ⟦đi kèm với⟧ ~ alakban elválaszthatatlanul együtt járó dolgokat, jelenségeket, tulajdonságokat fejez ki – „együtt jár, kíséri”.
+⟦Đã có “khách” thì phải có “khứa” dần dần trở thành những việc luôn luôn đi kèm với nhau.⟧ → „Ha van vendég, lakomának is kell lennie” – ezek fokozatosan mindig együtt járó dolgokká váltak. · ⟦Gió bão thường đi kèm với mưa to⟧ → A viharos szél általában heves esővel jár.
+⟦đã A thì phải B⟧: A és B közti okozati viszonyt fejez ki – „ha már A, akkor B-nek is kell lennie”.
+⟦Đã có “khách” thì phải có “khứa”.⟧ → Ha már van vendég, vendéglátásnak is kell lennie. · ⟦Đã có khách đến thăm thì phải có chủ nhà tiếp đón.⟧ → Ha vendég jön, a házigazdának fogadnia kell. · ⟦Đã hẹn chị ấy đến thì phải đón tiếp chị ấy cho lịch sự⟧ → Ha már meghívtam, illendően kell fogadnom.
+=id
+Penjelasan tata bahasa
+⟦trái lại⟧: diletakkan sebelum isi yang berlawanan dengan isi sebelumnya, bermakna "sebaliknya, berbeda dengan ~".
+⟦Đối với người Việt, khi có khách đến thăm, chủ nhà ít khi tiếp khách một mình. Trái lại, chủ nhà thường mời thêm một vài người đến cùng trò chuyện.⟧ → Bagi orang Vietnam, ketika ada tamu berkunjung, tuan rumah jarang menjamu tamu sendirian. Sebaliknya, tuan rumah biasanya mengundang beberapa orang lagi untuk ikut mengobrol. · ⟦Anh không có bệnh tật gì, trái lại, tôi thì lúc nào cũng đầy bệnh.⟧ → Kamu tidak punya penyakit apa-apa, sebaliknya aku selalu penuh penyakit. · ⟦Cây này rất nhiều quả, trái lại, cây kia không có một quả nào⟧ → Pohon ini buahnya banyak sekali, sebaliknya pohon itu tidak berbuah sama sekali.
+⟦đi kèm⟧: dalam bentuk ⟦đi kèm với⟧ ~ menyatakan benda, fenomena, atau sifat yang tidak terpisahkan dan selalu bersama – "menyertai, selalu bersamaan dengan".
+⟦Đã có “khách” thì phải có “khứa” dần dần trở thành những việc luôn luôn đi kèm với nhau.⟧ → "Ada tamu harus ada jamuan" lambat laun menjadi hal yang selalu menyertai satu sama lain. · ⟦Gió bão thường đi kèm với mưa to⟧ → Angin badai biasanya disertai hujan lebat.
+⟦đã A thì phải B⟧: menyatakan hubungan sebab-akibat antara A dan B – "kalau sudah A, maka harus B".
+⟦Đã có “khách” thì phải có “khứa”.⟧ → Kalau sudah ada tamu, harus ada jamuan. · ⟦Đã có khách đến thăm thì phải có chủ nhà tiếp đón.⟧ → Kalau ada tamu berkunjung, harus ada tuan rumah yang menyambut. · ⟦Đã hẹn chị ấy đến thì phải đón tiếp chị ấy cho lịch sự⟧ → Kalau sudah mengundangnya datang, harus menyambutnya dengan sopan.
+=ja
+文法解説
+⟦trái lại⟧：前の内容と後の内容が相反する場合に、相反する内容の前に置き、「反面、逆に、～とは違って」などの意味で使われます。
+⟦Đối với người Việt, khi có khách đến thăm, chủ nhà ít khi tiếp khách một mình. Trái lại, chủ nhà thường mời thêm một vài người đến cùng trò chuyện.⟧ → ベトナム人の場合、客が訪ねてきたとき、主人が一人で客をもてなすことはめったにない。逆に、主人はたいてい何人かを招いて一緒に話をする。 · ⟦Anh không có bệnh tật gì, trái lại, tôi thì lúc nào cũng đầy bệnh.⟧ → あなたは何の病気もないが、逆に私はいつも病気だらけだ。 · ⟦Cây này rất nhiều quả, trái lại, cây kia không có một quả nào⟧ → この木は実がたくさんなっているが、逆にあの木には一つもない。
+⟦đi kèm⟧：⟦đi kèm với⟧ ~ の形で、互いに離れず共にある事物・現象・性格などを表し、「伴う、共に～する」という意味で使われます。
+⟦Đã có “khách” thì phải có “khứa” dần dần trở thành những việc luôn luôn đi kèm với nhau.⟧ → 「客があれば、もてなしがなければならない」は、次第に常に伴い合う事柄となった。 · ⟦Gió bão thường đi kèm với mưa to⟧ → 暴風はたいてい大雨を伴う。
+⟦đã A thì phải B⟧：AとBの間の因果関係を表し、「Aしたなら必ずBしなければならない」または「Aがあるなら必ずBがなければならない」という意味で使われます。
+⟦Đã có “khách” thì phải có “khứa”.⟧ → 客があるなら、もてなしがなければならない。 · ⟦Đã có khách đến thăm thì phải có chủ nhà tiếp đón.⟧ → 客が訪ねてきたなら、主人が迎えなければならない。 · ⟦Đã hẹn chị ấy đến thì phải đón tiếp chị ấy cho lịch sự⟧ → 彼女に来るよう約束したなら、礼儀正しく迎えなければならない。
+=pl
+Objaśnienia gramatyczne
+⟦trái lại⟧: stoi przed treścią przeciwstawną do poprzedniej, w znaczeniu „przeciwnie, natomiast, w odróżnieniu od ~”.
+⟦Đối với người Việt, khi có khách đến thăm, chủ nhà ít khi tiếp khách một mình. Trái lại, chủ nhà thường mời thêm một vài người đến cùng trò chuyện.⟧ → U Wietnamczyków gospodarz rzadko przyjmuje gościa sam. Przeciwnie, zwykle zaprasza jeszcze kilka osób do wspólnej rozmowy. · ⟦Anh không có bệnh tật gì, trái lại, tôi thì lúc nào cũng đầy bệnh.⟧ → Ty nie masz żadnych chorób, ja natomiast wciąż mam jakieś dolegliwości. · ⟦Cây này rất nhiều quả, trái lại, cây kia không có một quả nào⟧ → To drzewo ma mnóstwo owoców, tamto natomiast ani jednego.
+⟦đi kèm⟧: w formie ⟦đi kèm với⟧ ~ wyraża rzeczy, zjawiska lub cechy nierozłączne, występujące razem – „towarzyszyć, iść w parze z”.
+⟦Đã có “khách” thì phải có “khứa” dần dần trở thành những việc luôn luôn đi kèm với nhau.⟧ → „Gdzie gość, tam i uczta” – z czasem stały się to rzeczy, które zawsze idą w parze. · ⟦Gió bão thường đi kèm với mưa to⟧ → Wichurze zwykle towarzyszy ulewa.
+⟦đã A thì phải B⟧: wyraża związek przyczynowy między A i B – „skoro A, to musi być B”.
+⟦Đã có “khách” thì phải có “khứa”.⟧ → Skoro jest gość, musi być i poczęstunek. · ⟦Đã có khách đến thăm thì phải có chủ nhà tiếp đón.⟧ → Skoro przychodzi gość, gospodarz musi go przyjąć. · ⟦Đã hẹn chị ấy đến thì phải đón tiếp chị ấy cho lịch sự⟧ → Skoro ją zaprosiłem, muszę ją grzecznie przyjąć.

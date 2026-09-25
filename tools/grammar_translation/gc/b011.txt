@@ -1,0 +1,399 @@
+@@ pdf-grammar-75156b776357aee1#0
+~t 3. Trong lớp học — Ve třídě|3. Trong lớp học — 在教室里|3. Trong lớp học — 在教室裡|3. Trong lớp học — In the classroom|3. Trong lớp học — En classe|3. Trong lớp học — Im Klassenzimmer|3. Trong lớp học — Az osztályteremben|3. Trong lớp học — Di dalam kelas|3. Trong lớp học — 教室の中で|3. Trong lớp học — W klasie
+=cs
+⟦Cô đang vào lớp học.⟧ — Paní učitelka právě vchází do třídy.
+⟦Một học sinh đang viết trên bảng.⟧ — Jeden žák píše na tabuli.
+⟦Một học sinh đang nghe nhạc.⟧ — Jeden žák poslouchá hudbu.
+⟦Trên bàn có sách và vở.⟧ — Na stole jsou knihy a sešity.
+⟦Một học sinh đang ngồi trên ghế đọc sách.⟧ — Jeden žák sedí na židli a čte knihu.
+=zh_cn
+⟦Cô đang vào lớp học.⟧ —— （女）老师正走进教室。
+⟦Một học sinh đang viết trên bảng.⟧ —— 一名学生正在黑板上写字。
+⟦Một học sinh đang nghe nhạc.⟧ —— 一名学生正在听音乐。
+⟦Trên bàn có sách và vở.⟧ —— 桌子上有书和笔记本。
+⟦Một học sinh đang ngồi trên ghế đọc sách.⟧ —— 一名学生正坐在椅子上看书。
+=zh
+⟦Cô đang vào lớp học.⟧ —— （女）老師正走進教室。
+⟦Một học sinh đang viết trên bảng.⟧ —— 一名學生正在黑板上寫字。
+⟦Một học sinh đang nghe nhạc.⟧ —— 一名學生正在聽音樂。
+⟦Trên bàn có sách và vở.⟧ —— 桌子上有書和筆記本。
+⟦Một học sinh đang ngồi trên ghế đọc sách.⟧ —— 一名學生正坐在椅子上看書。
+=en
+⟦Cô đang vào lớp học.⟧ — The (female) teacher is coming into the classroom.
+⟦Một học sinh đang viết trên bảng.⟧ — One student is writing on the board.
+⟦Một học sinh đang nghe nhạc.⟧ — One student is listening to music.
+⟦Trên bàn có sách và vở.⟧ — There are books and notebooks on the desk.
+⟦Một học sinh đang ngồi trên ghế đọc sách.⟧ — One student is sitting on a chair reading a book.
+=fr
+⟦Cô đang vào lớp học.⟧ — La maîtresse entre dans la classe.
+⟦Một học sinh đang viết trên bảng.⟧ — Un élève écrit au tableau.
+⟦Một học sinh đang nghe nhạc.⟧ — Un élève écoute de la musique.
+⟦Trên bàn có sách và vở.⟧ — Il y a des livres et des cahiers sur la table.
+⟦Một học sinh đang ngồi trên ghế đọc sách.⟧ — Un élève est assis sur une chaise et lit un livre.
+=de
+⟦Cô đang vào lớp học.⟧ — Die Lehrerin kommt gerade ins Klassenzimmer.
+⟦Một học sinh đang viết trên bảng.⟧ — Ein Schüler schreibt an die Tafel.
+⟦Một học sinh đang nghe nhạc.⟧ — Ein Schüler hört Musik.
+⟦Trên bàn có sách và vở.⟧ — Auf dem Tisch liegen Bücher und Hefte.
+⟦Một học sinh đang ngồi trên ghế đọc sách.⟧ — Ein Schüler sitzt auf einem Stuhl und liest ein Buch.
+=hu
+⟦Cô đang vào lớp học.⟧ — A tanárnő éppen belép az osztályterembe.
+⟦Một học sinh đang viết trên bảng.⟧ — Egy diák a táblára ír.
+⟦Một học sinh đang nghe nhạc.⟧ — Egy diák zenét hallgat.
+⟦Trên bàn có sách và vở.⟧ — Az asztalon könyvek és füzetek vannak.
+⟦Một học sinh đang ngồi trên ghế đọc sách.⟧ — Egy diák a széken ülve könyvet olvas.
+=id
+⟦Cô đang vào lớp học.⟧ — Bu Guru sedang masuk ke kelas.
+⟦Một học sinh đang viết trên bảng.⟧ — Seorang siswa sedang menulis di papan tulis.
+⟦Một học sinh đang nghe nhạc.⟧ — Seorang siswa sedang mendengarkan musik.
+⟦Trên bàn có sách và vở.⟧ — Di atas meja ada buku dan buku tulis.
+⟦Một học sinh đang ngồi trên ghế đọc sách.⟧ — Seorang siswa sedang duduk di kursi membaca buku.
+=ja
+⟦Cô đang vào lớp học.⟧ — （女性の）先生が教室に入ってくるところだ。
+⟦Một học sinh đang viết trên bảng.⟧ — 生徒が一人、黒板に書いている。
+⟦Một học sinh đang nghe nhạc.⟧ — 生徒が一人、音楽を聴いている。
+⟦Trên bàn có sách và vở.⟧ — 机の上に本とノートがある。
+⟦Một học sinh đang ngồi trên ghế đọc sách.⟧ — 一人の生徒が椅子に座って本を読んでいる。
+=pl
+⟦Cô đang vào lớp học.⟧ — Pani nauczycielka wchodzi do klasy.
+⟦Một học sinh đang viết trên bảng.⟧ — Jeden uczeń pisze na tablicy.
+⟦Một học sinh đang nghe nhạc.⟧ — Jeden uczeń słucha muzyki.
+⟦Trên bàn có sách và vở.⟧ — Na stole leżą książki i zeszyty.
+⟦Một học sinh đang ngồi trên ghế đọc sách.⟧ — Jeden uczeń siedzi na krześle i czyta książkę.
+@@ pdf-grammar-ce424f0d0ec52f14#0
+~t 1. khi (když) a 3. stupeň|1. khi（……的时候）与最高级|1. khi（……的時候）與最高級|1. khi (when) and the superlative|1. khi (quand) et le superlatif|1. khi (wenn/als) und der Superlativ|1. khi (amikor) és a felsőfok|1. khi (ketika) dan superlatif|1. khi（～するとき）と最上級|1. khi (kiedy) i stopień najwyższy
+=cs
+⟦Khi còn là sinh viên, chị thích học môn gì nhất?⟧ — Který předmět jsi měla nejraději, když jsi byla studentkou?
+⟦khi⟧ znamená „když“. S předponou ⟦trước⟧, ⟦sau⟧ nebo ⟦trong⟧ znamená „před tím, než“, „poté, co“ a „během toho, co“. Používá se ve tvaru „(sau/trước/trong) khi + (podmět) + sloveso“.
+⟦Khi anh ấy nói, em đã nghe nhạc.⟧ — Když mluvil, poslouchala jsem hudbu.
+⟦Trước khi đi làm, bố em đọc báo.⟧ — Než jde můj táta do práce, čte noviny.
+⟦Sau khi em ngủ, mẹ em đi chợ.⟧ — Když jsem usnul, maminka šla na trh.
+⟦Trong khi mình làm bài tập, bạn đã làm gì?⟧ — Co jsi dělal, zatímco jsem dělal úkol?
+⟦nhất⟧ vyjadřuje 3. stupeň ve tvaru „A + přídavné jméno + nhất“ (nej-…). Podobný výraz je „A + přídavné jméno + hơn cả“.
+⟦Trong lớp mình, Hùng là người cao nhất.⟧ — V naší třídě je Hùng nejvyšší.
+⟦Trong ba người, Mi-na đẹp hơn cả.⟧ — Ze tří lidí je Mi-na nejhezčí.
+Slovíčka: ⟦báo⟧ noviny | ⟦ngủ⟧ spát | ⟦chợ⟧ trh | ⟦cao⟧ vysoký | ⟦đẹp⟧ hezký
+=zh_cn
+⟦Khi còn là sinh viên, chị thích học môn gì nhất?⟧ —— 姐姐上大学时最喜欢什么科目？
+⟦khi⟧ 意为“……的时候”。前面加上 ⟦trước⟧、⟦sau⟧ 或 ⟦trong⟧，可以表示“……之前”“……之后”“……期间”，用“(sau/trước/trong) khi + (主语) + 动词”的形式。
+⟦Khi anh ấy nói, em đã nghe nhạc.⟧ —— 他说话的时候，我在听音乐。
+⟦Trước khi đi làm, bố em đọc báo.⟧ —— 上班之前，我爸爸看报纸。
+⟦Sau khi em ngủ, mẹ em đi chợ.⟧ —— 我睡着之后，妈妈去了市场。
+⟦Trong khi mình làm bài tập, bạn đã làm gì?⟧ —— 我做作业的时候，你做了什么？
+⟦nhất⟧ 是最高级表达，以“A + 形容词 + nhất”（最……）的形式使用。类似的表达还有“A + 形容词 + hơn cả”。
+⟦Trong lớp mình, Hùng là người cao nhất.⟧ —— 在我们班，雄是个子最高的人。
+⟦Trong ba người, Mi-na đẹp hơn cả.⟧ —— 三个人中，美娜最漂亮。
+单词：⟦báo⟧ 报纸 | ⟦ngủ⟧ 睡觉 | ⟦chợ⟧ 市场 | ⟦cao⟧ 高 | ⟦đẹp⟧ 漂亮
+=zh
+⟦Khi còn là sinh viên, chị thích học môn gì nhất?⟧ —— 姐姐讀大學時最喜歡什麼科目？
+⟦khi⟧ 意為「……的時候」。前面加上 ⟦trước⟧、⟦sau⟧ 或 ⟦trong⟧，可以表示「……之前」「……之後」「……期間」，用「(sau/trước/trong) khi + (主語) + 動詞」的形式。
+⟦Khi anh ấy nói, em đã nghe nhạc.⟧ —— 他說話的時候，我在聽音樂。
+⟦Trước khi đi làm, bố em đọc báo.⟧ —— 上班之前，我爸爸看報紙。
+⟦Sau khi em ngủ, mẹ em đi chợ.⟧ —— 我睡著之後，媽媽去了市場。
+⟦Trong khi mình làm bài tập, bạn đã làm gì?⟧ —— 我做作業的時候，你做了什麼？
+⟦nhất⟧ 是最高級表達，以「A + 形容詞 + nhất」（最……）的形式使用。類似的表達還有「A + 形容詞 + hơn cả」。
+⟦Trong lớp mình, Hùng là người cao nhất.⟧ —— 在我們班，雄是個子最高的人。
+⟦Trong ba người, Mi-na đẹp hơn cả.⟧ —— 三個人中，美娜最漂亮。
+單字：⟦báo⟧ 報紙 | ⟦ngủ⟧ 睡覺 | ⟦chợ⟧ 市場 | ⟦cao⟧ 高 | ⟦đẹp⟧ 漂亮
+=en
+⟦Khi còn là sinh viên, chị thích học môn gì nhất?⟧ — When you were a student, which subject did you like best?
+⟦khi⟧ means "when". With ⟦trước⟧, ⟦sau⟧ or ⟦trong⟧ in front, it means "before", "after" and "while". It's used in the form "(sau/trước/trong) khi + (subject) + verb".
+⟦Khi anh ấy nói, em đã nghe nhạc.⟧ — When he was speaking, I was listening to music.
+⟦Trước khi đi làm, bố em đọc báo.⟧ — Before going to work, my father reads the newspaper.
+⟦Sau khi em ngủ, mẹ em đi chợ.⟧ — After I fell asleep, my mother went to the market.
+⟦Trong khi mình làm bài tập, bạn đã làm gì?⟧ — What did you do while I was doing my homework?
+⟦nhất⟧ expresses the superlative in the form "A + adjective + nhất" (the most …). A similar expression is "A + adjective + hơn cả".
+⟦Trong lớp mình, Hùng là người cao nhất.⟧ — In our class, Hùng is the tallest.
+⟦Trong ba người, Mi-na đẹp hơn cả.⟧ — Of the three, Mi-na is the prettiest.
+Words: ⟦báo⟧ newspaper | ⟦ngủ⟧ to sleep | ⟦chợ⟧ market | ⟦cao⟧ tall | ⟦đẹp⟧ pretty
+=fr
+⟦Khi còn là sinh viên, chị thích học môn gì nhất?⟧ — Quand tu étais étudiante, quelle matière préférais-tu ?
+⟦khi⟧ signifie « quand ». Précédé de ⟦trước⟧, ⟦sau⟧ ou ⟦trong⟧, il signifie « avant de », « après que » et « pendant que ». On l'emploie sous la forme « (sau/trước/trong) khi + (sujet) + verbe ».
+⟦Khi anh ấy nói, em đã nghe nhạc.⟧ — Quand il parlait, j'écoutais de la musique.
+⟦Trước khi đi làm, bố em đọc báo.⟧ — Avant d'aller au travail, mon père lit le journal.
+⟦Sau khi em ngủ, mẹ em đi chợ.⟧ — Après que je me suis endormi, ma mère est allée au marché.
+⟦Trong khi mình làm bài tập, bạn đã làm gì?⟧ — Qu'as-tu fait pendant que je faisais mes devoirs ?
+⟦nhất⟧ exprime le superlatif sous la forme « A + adjectif + nhất » (le plus …). Une expression semblable est « A + adjectif + hơn cả ».
+⟦Trong lớp mình, Hùng là người cao nhất.⟧ — Dans notre classe, Hùng est le plus grand.
+⟦Trong ba người, Mi-na đẹp hơn cả.⟧ — Des trois, Mi-na est la plus jolie.
+Mots : ⟦báo⟧ journal | ⟦ngủ⟧ dormir | ⟦chợ⟧ marché | ⟦cao⟧ grand | ⟦đẹp⟧ joli
+=de
+⟦Khi còn là sinh viên, chị thích học môn gì nhất?⟧ — Welches Fach mochtest du als Studentin am liebsten?
+⟦khi⟧ bedeutet „wenn, als“. Mit vorangestelltem ⟦trước⟧, ⟦sau⟧ oder ⟦trong⟧ bedeutet es „bevor“, „nachdem“ und „während“. Man verwendet die Form „(sau/trước/trong) khi + (Subjekt) + Verb“.
+⟦Khi anh ấy nói, em đã nghe nhạc.⟧ — Als er sprach, hörte ich Musik.
+⟦Trước khi đi làm, bố em đọc báo.⟧ — Bevor er zur Arbeit geht, liest mein Vater Zeitung.
+⟦Sau khi em ngủ, mẹ em đi chợ.⟧ — Nachdem ich eingeschlafen war, ging meine Mutter auf den Markt.
+⟦Trong khi mình làm bài tập, bạn đã làm gì?⟧ — Was hast du gemacht, während ich meine Hausaufgaben gemacht habe?
+⟦nhất⟧ bildet den Superlativ in der Form „A + Adjektiv + nhất“ (am …sten). Ein ähnlicher Ausdruck ist „A + Adjektiv + hơn cả“.
+⟦Trong lớp mình, Hùng là người cao nhất.⟧ — In unserer Klasse ist Hùng der Größte.
+⟦Trong ba người, Mi-na đẹp hơn cả.⟧ — Von den dreien ist Mi-na die Hübscheste.
+Wörter: ⟦báo⟧ Zeitung | ⟦ngủ⟧ schlafen | ⟦chợ⟧ Markt | ⟦cao⟧ groß | ⟦đẹp⟧ hübsch
+=hu
+⟦Khi còn là sinh viên, chị thích học môn gì nhất?⟧ — Egyetemistaként melyik tantárgyat szeretted a legjobban?
+A ⟦khi⟧ jelentése „amikor”. Elé ⟦trước⟧, ⟦sau⟧ vagy ⟦trong⟧ kerülve „mielőtt”, „miután” és „miközben” jelentésű. Formája: „(sau/trước/trong) khi + (alany) + ige”.
+⟦Khi anh ấy nói, em đã nghe nhạc.⟧ — Amikor ő beszélt, én zenét hallgattam.
+⟦Trước khi đi làm, bố em đọc báo.⟧ — Mielőtt munkába megy, apám újságot olvas.
+⟦Sau khi em ngủ, mẹ em đi chợ.⟧ — Miután elaludtam, anyám elment a piacra.
+⟦Trong khi mình làm bài tập, bạn đã làm gì?⟧ — Mit csináltál, miközben én a házit írtam?
+A ⟦nhất⟧ a felsőfokot fejezi ki „A + melléknév + nhất” (a leg…) formában. Hasonló kifejezés az „A + melléknév + hơn cả”.
+⟦Trong lớp mình, Hùng là người cao nhất.⟧ — Az osztályunkban Hùng a legmagasabb.
+⟦Trong ba người, Mi-na đẹp hơn cả.⟧ — A három közül Mi-na a legszebb.
+Szavak: ⟦báo⟧ újság | ⟦ngủ⟧ aludni | ⟦chợ⟧ piac | ⟦cao⟧ magas | ⟦đẹp⟧ szép
+=id
+⟦Khi còn là sinh viên, chị thích học môn gì nhất?⟧ — Waktu masih mahasiswa, Kakak paling suka mata kuliah apa?
+⟦khi⟧ berarti "ketika". Dengan ⟦trước⟧, ⟦sau⟧, atau ⟦trong⟧ di depannya, artinya "sebelum", "setelah", dan "selama". Dipakai dalam bentuk "(sau/trước/trong) khi + (subjek) + kata kerja".
+⟦Khi anh ấy nói, em đã nghe nhạc.⟧ — Ketika dia berbicara, saya sedang mendengarkan musik.
+⟦Trước khi đi làm, bố em đọc báo.⟧ — Sebelum berangkat kerja, ayah saya membaca koran.
+⟦Sau khi em ngủ, mẹ em đi chợ.⟧ — Setelah saya tidur, ibu saya pergi ke pasar.
+⟦Trong khi mình làm bài tập, bạn đã làm gì?⟧ — Selama aku mengerjakan PR, kamu melakukan apa?
+⟦nhất⟧ menyatakan superlatif dalam bentuk "A + kata sifat + nhất" (paling …). Ungkapan serupa adalah "A + kata sifat + hơn cả".
+⟦Trong lớp mình, Hùng là người cao nhất.⟧ — Di kelas kami, Hùng orang yang paling tinggi.
+⟦Trong ba người, Mi-na đẹp hơn cả.⟧ — Di antara tiga orang itu, Mi-na paling cantik.
+Kosakata: ⟦báo⟧ koran | ⟦ngủ⟧ tidur | ⟦chợ⟧ pasar | ⟦cao⟧ tinggi | ⟦đẹp⟧ cantik
+=ja
+⟦Khi còn là sinh viên, chị thích học môn gì nhất?⟧ — 大学生だったとき、お姉さんはどの科目がいちばん好きでしたか。
+⟦khi⟧ は「～するとき」の意味です。前に ⟦trước⟧、⟦sau⟧ または ⟦trong⟧ をつけると「～する前に」「～した後に」「～している間に」という意味でも使えます。「(sau/trước/trong) khi ＋（主語）＋ 動詞」の形で使います。
+⟦Khi anh ấy nói, em đã nghe nhạc.⟧ — 彼が話しているとき、私は音楽を聴いていました。
+⟦Trước khi đi làm, bố em đọc báo.⟧ — 仕事に行く前に、父は新聞を読む。
+⟦Sau khi em ngủ, mẹ em đi chợ.⟧ — 私が寝た後、母は市場へ行った。
+⟦Trong khi mình làm bài tập, bạn đã làm gì?⟧ — 私が宿題をしている間、君は何をしていたの？
+⟦nhất⟧ は最上級の表現で「A ＋ 形容詞 ＋ nhất」（いちばん～だ）の形で使います。似た表現に「A ＋ 形容詞 ＋ hơn cả」があります。
+⟦Trong lớp mình, Hùng là người cao nhất.⟧ — 私たちのクラスでは、フンがいちばん背が高い。
+⟦Trong ba người, Mi-na đẹp hơn cả.⟧ — 3人の中で、ミナがいちばんきれいだ。
+単語：⟦báo⟧ 新聞 | ⟦ngủ⟧ 寝る | ⟦chợ⟧ 市場 | ⟦cao⟧ 高い | ⟦đẹp⟧ きれいだ
+=pl
+⟦Khi còn là sinh viên, chị thích học môn gì nhất?⟧ — Który przedmiot najbardziej lubiłaś, kiedy byłaś studentką?
+⟦khi⟧ znaczy „kiedy”. Poprzedzone przez ⟦trước⟧, ⟦sau⟧ lub ⟦trong⟧ znaczy „zanim”, „po tym jak” i „podczas gdy”. Występuje w formie „(sau/trước/trong) khi + (podmiot) + czasownik”.
+⟦Khi anh ấy nói, em đã nghe nhạc.⟧ — Kiedy on mówił, słuchałam muzyki.
+⟦Trước khi đi làm, bố em đọc báo.⟧ — Zanim pójdzie do pracy, mój tata czyta gazetę.
+⟦Sau khi em ngủ, mẹ em đi chợ.⟧ — Po tym jak zasnąłem, mama poszła na targ.
+⟦Trong khi mình làm bài tập, bạn đã làm gì?⟧ — Co robiłeś, gdy ja odrabiałem lekcje?
+⟦nhất⟧ wyraża stopień najwyższy w formie „A + przymiotnik + nhất” (naj…). Podobne wyrażenie to „A + przymiotnik + hơn cả”.
+⟦Trong lớp mình, Hùng là người cao nhất.⟧ — W naszej klasie Hùng jest najwyższy.
+⟦Trong ba người, Mi-na đẹp hơn cả.⟧ — Z tych trzech osób Mi-na jest najładniejsza.
+Słówka: ⟦báo⟧ gazeta | ⟦ngủ⟧ spać | ⟦chợ⟧ targ | ⟦cao⟧ wysoki | ⟦đẹp⟧ ładny
+@@ pdf-grammar-3994be42b4516a9b#0
+~t 1. Počasí|1. 天气的表达|1. 天氣的表達|1. Talking about the weather|1. Parler du temps|1. Über das Wetter sprechen|1. Az időjárás kifejezése|1. Ungkapan cuaca|1. 天気の表現|1. Mówienie o pogodzie
+=cs
+A: ⟦Hôm nay thời tiết thế nào?⟧ — Jaké je dnes počasí?
+B: ⟦Hôm nay trời nóng.⟧ — Dnes je horko.
+O počasí lze mluvit pomocí slova ⟦thời tiết⟧ (počasí), ale obvykle se používá ⟦trời⟧ (nebe).
+A: ⟦Hôm nay thời tiết/trời thế nào?⟧ — Jaké je dnes počasí?
+B: ⟦Hôm nay trời mưa.⟧ — Dnes prší.
+⟦Trời chỉ giúp những người tự biết giúp mình.⟧ — Nebe pomáhá jen těm, kdo si umějí pomoci sami.
+Slovíčka: ⟦mưa⟧ pršet | ⟦chỉ⟧ jen | ⟦giúp⟧ pomáhat
+=zh_cn
+A：⟦Hôm nay thời tiết thế nào?⟧ —— 今天天气怎么样？
+B：⟦Hôm nay trời nóng.⟧ —— 今天天气很热。
+描述天气时可以用意为“天气”的 ⟦thời tiết⟧，但通常用意为“天”的 ⟦trời⟧。
+A：⟦Hôm nay thời tiết/trời thế nào?⟧ —— 今天天气怎么样？
+B：⟦Hôm nay trời mưa.⟧ —— 今天下雨。
+⟦Trời chỉ giúp những người tự biết giúp mình.⟧ —— 天助自助者。
+单词：⟦mưa⟧ 下雨 | ⟦chỉ⟧ 只 | ⟦giúp⟧ 帮助
+=zh
+A：⟦Hôm nay thời tiết thế nào?⟧ —— 今天天氣怎麼樣？
+B：⟦Hôm nay trời nóng.⟧ —— 今天天氣很熱。
+描述天氣時可以用意為「天氣」的 ⟦thời tiết⟧，但通常用意為「天」的 ⟦trời⟧。
+A：⟦Hôm nay thời tiết/trời thế nào?⟧ —— 今天天氣怎麼樣？
+B：⟦Hôm nay trời mưa.⟧ —— 今天下雨。
+⟦Trời chỉ giúp những người tự biết giúp mình.⟧ —— 天助自助者。
+單字：⟦mưa⟧ 下雨 | ⟦chỉ⟧ 只 | ⟦giúp⟧ 幫助
+=en
+A: ⟦Hôm nay thời tiết thế nào?⟧ — What's the weather like today?
+B: ⟦Hôm nay trời nóng.⟧ — It's hot today.
+To talk about the weather you can use ⟦thời tiết⟧ (weather), but usually ⟦trời⟧ (sky) is used.
+A: ⟦Hôm nay thời tiết/trời thế nào?⟧ — What's the weather like today?
+B: ⟦Hôm nay trời mưa.⟧ — It's raining today.
+⟦Trời chỉ giúp những người tự biết giúp mình.⟧ — Heaven helps only those who help themselves.
+Words: ⟦mưa⟧ to rain | ⟦chỉ⟧ only | ⟦giúp⟧ to help
+=fr
+A : ⟦Hôm nay thời tiết thế nào?⟧ — Quel temps fait-il aujourd'hui ?
+B : ⟦Hôm nay trời nóng.⟧ — Il fait chaud aujourd'hui.
+Pour parler du temps, on peut utiliser ⟦thời tiết⟧ (le temps, la météo), mais on emploie généralement ⟦trời⟧ (le ciel).
+A : ⟦Hôm nay thời tiết/trời thế nào?⟧ — Quel temps fait-il aujourd'hui ?
+B : ⟦Hôm nay trời mưa.⟧ — Il pleut aujourd'hui.
+⟦Trời chỉ giúp những người tự biết giúp mình.⟧ — Aide-toi, le ciel t'aidera.
+Mots : ⟦mưa⟧ pleuvoir | ⟦chỉ⟧ seulement | ⟦giúp⟧ aider
+=de
+A: ⟦Hôm nay thời tiết thế nào?⟧ — Wie ist das Wetter heute?
+B: ⟦Hôm nay trời nóng.⟧ — Heute ist es heiß.
+Für das Wetter kann man ⟦thời tiết⟧ (Wetter) verwenden, meist sagt man aber ⟦trời⟧ (Himmel).
+A: ⟦Hôm nay thời tiết/trời thế nào?⟧ — Wie ist das Wetter heute?
+B: ⟦Hôm nay trời mưa.⟧ — Heute regnet es.
+⟦Trời chỉ giúp những người tự biết giúp mình.⟧ — Hilf dir selbst, dann hilft dir Gott.
+Wörter: ⟦mưa⟧ regnen | ⟦chỉ⟧ nur | ⟦giúp⟧ helfen
+=hu
+A: ⟦Hôm nay thời tiết thế nào?⟧ — Milyen idő van ma?
+B: ⟦Hôm nay trời nóng.⟧ — Ma meleg van.
+Az időjárásról beszélve használhatjuk a ⟦thời tiết⟧ (időjárás) szót, de általában az „ég” jelentésű ⟦trời⟧ szót mondjuk.
+A: ⟦Hôm nay thời tiết/trời thế nào?⟧ — Milyen idő van ma?
+B: ⟦Hôm nay trời mưa.⟧ — Ma esik az eső.
+⟦Trời chỉ giúp những người tự biết giúp mình.⟧ — Segíts magadon, az Isten is megsegít.
+Szavak: ⟦mưa⟧ esik (az eső) | ⟦chỉ⟧ csak | ⟦giúp⟧ segíteni
+=id
+A: ⟦Hôm nay thời tiết thế nào?⟧ — Bagaimana cuaca hari ini?
+B: ⟦Hôm nay trời nóng.⟧ — Hari ini panas.
+Untuk membicarakan cuaca bisa dipakai ⟦thời tiết⟧ (cuaca), tetapi biasanya dipakai ⟦trời⟧ (langit).
+A: ⟦Hôm nay thời tiết/trời thế nào?⟧ — Bagaimana cuaca hari ini?
+B: ⟦Hôm nay trời mưa.⟧ — Hari ini hujan.
+⟦Trời chỉ giúp những người tự biết giúp mình.⟧ — Tuhan hanya menolong orang yang mau menolong dirinya sendiri.
+Kosakata: ⟦mưa⟧ hujan | ⟦chỉ⟧ hanya | ⟦giúp⟧ menolong
+=ja
+A：⟦Hôm nay thời tiết thế nào?⟧ — 今日の天気はどう？
+B：⟦Hôm nay trời nóng.⟧ — 今日は暑いです。
+天気を表すとき、「天気」の意味の ⟦thời tiết⟧ も使えますが、ふつうは「空」の意味の ⟦trời⟧ を使います。
+A：⟦Hôm nay thời tiết/trời thế nào?⟧ — 今日の天気はどうですか。
+B：⟦Hôm nay trời mưa.⟧ — 今日は雨です。
+⟦Trời chỉ giúp những người tự biết giúp mình.⟧ — 天は自ら助くる者を助く。
+単語：⟦mưa⟧ 雨が降る | ⟦chỉ⟧ ただ | ⟦giúp⟧ 助ける
+=pl
+A: ⟦Hôm nay thời tiết thế nào?⟧ — Jaka jest dziś pogoda?
+B: ⟦Hôm nay trời nóng.⟧ — Dziś jest gorąco.
+O pogodzie można mówić słowem ⟦thời tiết⟧ (pogoda), ale zwykle używa się ⟦trời⟧ (niebo).
+A: ⟦Hôm nay thời tiết/trời thế nào?⟧ — Jaka jest dziś pogoda?
+B: ⟦Hôm nay trời mưa.⟧ — Dziś pada deszcz.
+⟦Trời chỉ giúp những người tự biết giúp mình.⟧ — Niebo pomaga tylko tym, którzy sami sobie pomagają.
+Słówka: ⟦mưa⟧ padać (deszcz) | ⟦chỉ⟧ tylko | ⟦giúp⟧ pomagać
+@@ pdf-grammar-3994be42b4516a9b#1
+=cs
+⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Protože na podzim je obloha jasná, vysoká a vzduch svěží.
+Stojí-li ⟦vào⟧ před slovem označujícím dobu, znamená „v (době)“. Jako sloveso znamená „vejít“.
+⟦Vào hè này, tôi sẽ đi du lịch Việt Nam.⟧ — Letos v létě pojedu na výlet do Vietnamu.
+⟦Trẻ em không được vào.⟧ — Dětem vstup zakázán.
+=zh_cn
+⟦Vì vào mùa thu trời trong, cao và mát.⟧ —— 因为秋天天空晴朗、高远又凉爽。
+⟦vào⟧ 放在表示时期的词前面时，意为“在（某时期）”。作动词时意为“进入”。
+⟦Vào hè này, tôi sẽ đi du lịch Việt Nam.⟧ —— 今年夏天我要去越南旅行。
+⟦Trẻ em không được vào.⟧ —— 儿童不得入内。
+=zh
+⟦Vì vào mùa thu trời trong, cao và mát.⟧ —— 因為秋天天空晴朗、高遠又涼爽。
+⟦vào⟧ 放在表示時期的詞前面時，意為「在（某時期）」。作動詞時意為「進入」。
+⟦Vào hè này, tôi sẽ đi du lịch Việt Nam.⟧ —— 今年夏天我要去越南旅行。
+⟦Trẻ em không được vào.⟧ —— 兒童不得進入。
+=en
+⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Because in autumn the sky is clear and high, and it's cool.
+Placed before a word for a time, ⟦vào⟧ means "in/on (that time)". As a verb it means "to enter".
+⟦Vào hè này, tôi sẽ đi du lịch Việt Nam.⟧ — This summer I'm going to travel to Vietnam.
+⟦Trẻ em không được vào.⟧ — Children are not allowed in.
+=fr
+⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Parce qu'en automne, le ciel est clair et haut, et il fait frais.
+Placé devant un mot de temps, ⟦vào⟧ signifie « en, à (tel moment) ». Comme verbe, il signifie « entrer ».
+⟦Vào hè này, tôi sẽ đi du lịch Việt Nam.⟧ — Cet été, je vais voyager au Viêt Nam.
+⟦Trẻ em không được vào.⟧ — Entrée interdite aux enfants.
+=de
+⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Weil im Herbst der Himmel klar und hoch und es angenehm kühl ist.
+Steht ⟦vào⟧ vor einer Zeitangabe, bedeutet es „in, an (zu dieser Zeit)“. Als Verb bedeutet es „hineingehen“.
+⟦Vào hè này, tôi sẽ đi du lịch Việt Nam.⟧ — Diesen Sommer reise ich nach Vietnam.
+⟦Trẻ em không được vào.⟧ — Kinder haben keinen Zutritt.
+=hu
+⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Mert ősszel az ég tiszta és magas, a levegő pedig hűvös.
+Ha a ⟦vào⟧ időt jelölő szó előtt áll, jelentése „-ban/-ben, -kor”. Igeként jelentése „bemenni”.
+⟦Vào hè này, tôi sẽ đi du lịch Việt Nam.⟧ — Idén nyáron Vietnámba utazom.
+⟦Trẻ em không được vào.⟧ — Gyerekeknek tilos a belépés.
+=id
+⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Karena pada musim gugur langit cerah dan tinggi, serta udaranya sejuk.
+Jika diletakkan sebelum kata yang menunjukkan waktu, ⟦vào⟧ berarti "pada (waktu itu)". Sebagai kata kerja artinya "masuk".
+⟦Vào hè này, tôi sẽ đi du lịch Việt Nam.⟧ — Musim panas ini saya akan berwisata ke Vietnam.
+⟦Trẻ em không được vào.⟧ — Anak-anak dilarang masuk.
+=ja
+⟦Vì vào mùa thu trời trong, cao và mát.⟧ — 秋は空が澄んで高く、涼しいからだよ。
+⟦vào⟧ は時期を表す語の前に置かれると「～（時期）に」という意味で使われます。動詞としては「入る（入ってくる）」の意味です。
+⟦Vào hè này, tôi sẽ đi du lịch Việt Nam.⟧ — この夏、私はベトナムへ旅行に行きます。
+⟦Trẻ em không được vào.⟧ — 子どもは入れません。
+=pl
+⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Bo jesienią niebo jest czyste i wysokie, a powietrze chłodne.
+Postawione przed słowem oznaczającym czas ⟦vào⟧ znaczy „w (tym czasie)”. Jako czasownik znaczy „wejść”.
+⟦Vào hè này, tôi sẽ đi du lịch Việt Nam.⟧ — Tego lata pojadę na wycieczkę do Wietnamu.
+⟦Trẻ em không được vào.⟧ — Dzieciom wstęp wzbroniony.
+@@ pdf-grammar-e95df9ab5a1b6591#0
+~t 3. Ptát se na důvod|3. 询问原因|3. 詢問原因|3. Asking for reasons|3. Demander la raison|3. Nach dem Grund fragen|3. Az ok kérdezése|3. Menanyakan alasan|3. 理由を尋ねる表現|3. Pytanie o powód
+=cs
+A: ⟦Vì sao anh thích mùa thu nhất?⟧ — Proč máš nejraději podzim?
+B: ⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Protože na podzim je obloha jasná, vysoká a vzduch svěží.
+⟦Vì sao⟧ je tázací výraz na důvod; jiný výraz je ⟦tại sao⟧. Odpovídá se pomocí ⟦bởi vì⟧, ⟦tại vì⟧, ⟦vì⟧ apod.
+⟦Vì sao (Tại sao) bạn học tiếng Việt?⟧ — Proč se učíš vietnamsky?
+⟦Bởi vì mình càng học tiếng Việt càng thấy hay.⟧ — Protože čím víc se vietnamsky učím, tím je to zajímavější.
+⟦Tại sao em đến lớp muộn?⟧ — Proč jsi přišel do hodiny pozdě?
+⟦Vì em dậy muộn thầy ạ.⟧ — Protože jsem zaspal, pane učiteli.
+Slovíčka: ⟦muộn⟧ pozdě | ⟦dậy⟧ vstát
+=zh_cn
+A：⟦Vì sao anh thích mùa thu nhất?⟧ —— 你为什么最喜欢秋天？
+B：⟦Vì vào mùa thu trời trong, cao và mát.⟧ —— 因为秋天天空晴朗、高远又凉爽。
+⟦Vì sao⟧ 是询问原因的疑问词，另一种说法是 ⟦tại sao⟧。回答时可以用 ⟦bởi vì⟧、⟦tại vì⟧、⟦vì⟧ 等。
+⟦Vì sao (Tại sao) bạn học tiếng Việt?⟧ —— 你为什么学越南语？
+⟦Bởi vì mình càng học tiếng Việt càng thấy hay.⟧ —— 因为越南语越学越有意思。
+⟦Tại sao em đến lớp muộn?⟧ —— 你为什么上课迟到？
+⟦Vì em dậy muộn thầy ạ.⟧ —— 因为我起晚了，老师。
+单词：⟦muộn⟧ 晚 | ⟦dậy⟧ 起床
+=zh
+A：⟦Vì sao anh thích mùa thu nhất?⟧ —— 你為什麼最喜歡秋天？
+B：⟦Vì vào mùa thu trời trong, cao và mát.⟧ —— 因為秋天天空晴朗、高遠又涼爽。
+⟦Vì sao⟧ 是詢問原因的疑問詞，另一種說法是 ⟦tại sao⟧。回答時可以用 ⟦bởi vì⟧、⟦tại vì⟧、⟦vì⟧ 等。
+⟦Vì sao (Tại sao) bạn học tiếng Việt?⟧ —— 你為什麼學越南語？
+⟦Bởi vì mình càng học tiếng Việt càng thấy hay.⟧ —— 因為越南語越學越有意思。
+⟦Tại sao em đến lớp muộn?⟧ —— 你為什麼上課遲到？
+⟦Vì em dậy muộn thầy ạ.⟧ —— 因為我起晚了，老師。
+單字：⟦muộn⟧ 晚 | ⟦dậy⟧ 起床
+=en
+A: ⟦Vì sao anh thích mùa thu nhất?⟧ — Why do you like autumn best?
+B: ⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Because in autumn the sky is clear and high, and it's cool.
+⟦Vì sao⟧ is a question word asking for a reason; another expression is ⟦tại sao⟧. You can answer with ⟦bởi vì⟧, ⟦tại vì⟧, ⟦vì⟧ and so on.
+⟦Vì sao (Tại sao) bạn học tiếng Việt?⟧ — Why do you study Vietnamese?
+⟦Bởi vì mình càng học tiếng Việt càng thấy hay.⟧ — Because the more I study Vietnamese, the more interesting I find it.
+⟦Tại sao em đến lớp muộn?⟧ — Why were you late for class?
+⟦Vì em dậy muộn thầy ạ.⟧ — Because I got up late, sir.
+Words: ⟦muộn⟧ late | ⟦dậy⟧ to get up
+=fr
+A : ⟦Vì sao anh thích mùa thu nhất?⟧ — Pourquoi préfères-tu l'automne ?
+B : ⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Parce qu'en automne, le ciel est clair et haut, et il fait frais.
+⟦Vì sao⟧ est un mot interrogatif portant sur la raison ; on dit aussi ⟦tại sao⟧. On peut répondre avec ⟦bởi vì⟧, ⟦tại vì⟧, ⟦vì⟧, etc.
+⟦Vì sao (Tại sao) bạn học tiếng Việt?⟧ — Pourquoi apprends-tu le vietnamien ?
+⟦Bởi vì mình càng học tiếng Việt càng thấy hay.⟧ — Parce que plus j'apprends le vietnamien, plus je le trouve intéressant.
+⟦Tại sao em đến lớp muộn?⟧ — Pourquoi es-tu arrivé en retard en classe ?
+⟦Vì em dậy muộn thầy ạ.⟧ — Parce que je me suis levé tard, monsieur.
+Mots : ⟦muộn⟧ tard | ⟦dậy⟧ se lever
+=de
+A: ⟦Vì sao anh thích mùa thu nhất?⟧ — Warum magst du den Herbst am liebsten?
+B: ⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Weil im Herbst der Himmel klar und hoch und es angenehm kühl ist.
+⟦Vì sao⟧ ist ein Fragewort nach dem Grund; ein anderer Ausdruck ist ⟦tại sao⟧. Antworten kann man mit ⟦bởi vì⟧, ⟦tại vì⟧, ⟦vì⟧ usw.
+⟦Vì sao (Tại sao) bạn học tiếng Việt?⟧ — Warum lernst du Vietnamesisch?
+⟦Bởi vì mình càng học tiếng Việt càng thấy hay.⟧ — Weil Vietnamesisch umso interessanter wird, je mehr ich es lerne.
+⟦Tại sao em đến lớp muộn?⟧ — Warum bist du zu spät zum Unterricht gekommen?
+⟦Vì em dậy muộn thầy ạ.⟧ — Weil ich zu spät aufgestanden bin, Herr Lehrer.
+Wörter: ⟦muộn⟧ spät | ⟦dậy⟧ aufstehen
+=hu
+A: ⟦Vì sao anh thích mùa thu nhất?⟧ — Miért szereted a legjobban az őszt?
+B: ⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Mert ősszel az ég tiszta és magas, a levegő pedig hűvös.
+A ⟦Vì sao⟧ az okra kérdez; másik alakja a ⟦tại sao⟧. Válaszolni ⟦bởi vì⟧, ⟦tại vì⟧, ⟦vì⟧ stb. szavakkal lehet.
+⟦Vì sao (Tại sao) bạn học tiếng Việt?⟧ — Miért tanulsz vietnámiul?
+⟦Bởi vì mình càng học tiếng Việt càng thấy hay.⟧ — Mert minél többet tanulom a vietnámit, annál érdekesebbnek találom.
+⟦Tại sao em đến lớp muộn?⟧ — Miért késtél el az óráról?
+⟦Vì em dậy muộn thầy ạ.⟧ — Mert későn keltem, tanár úr.
+Szavak: ⟦muộn⟧ késő | ⟦dậy⟧ felkelni
+=id
+A: ⟦Vì sao anh thích mùa thu nhất?⟧ — Mengapa Kakak paling suka musim gugur?
+B: ⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Karena pada musim gugur langit cerah dan tinggi, serta udaranya sejuk.
+⟦Vì sao⟧ adalah kata tanya untuk alasan; ungkapan lainnya ⟦tại sao⟧. Jawabannya bisa memakai ⟦bởi vì⟧, ⟦tại vì⟧, ⟦vì⟧, dan sebagainya.
+⟦Vì sao (Tại sao) bạn học tiếng Việt?⟧ — Mengapa kamu belajar bahasa Vietnam?
+⟦Bởi vì mình càng học tiếng Việt càng thấy hay.⟧ — Karena semakin belajar bahasa Vietnam, semakin terasa menarik.
+⟦Tại sao em đến lớp muộn?⟧ — Mengapa kamu terlambat masuk kelas?
+⟦Vì em dậy muộn thầy ạ.⟧ — Karena saya bangun kesiangan, Pak.
+Kosakata: ⟦muộn⟧ terlambat | ⟦dậy⟧ bangun
+=ja
+A：⟦Vì sao anh thích mùa thu nhất?⟧ — どうして秋がいちばん好きなんですか。
+B：⟦Vì vào mùa thu trời trong, cao và mát.⟧ — 秋は空が澄んで高く、涼しいからだよ。
+⟦Vì sao⟧ は理由を尋ねる疑問詞で、別の表現に ⟦tại sao⟧ があります。これに対しては ⟦bởi vì⟧、⟦tại vì⟧、⟦vì⟧ などで答えられます。
+⟦Vì sao (Tại sao) bạn học tiếng Việt?⟧ — 君はどうしてベトナム語を勉強するの？
+⟦Bởi vì mình càng học tiếng Việt càng thấy hay.⟧ — ベトナム語は勉強するほど面白くなるからだよ。
+⟦Tại sao em đến lớp muộn?⟧ — どうして授業に遅れて来たの？
+⟦Vì em dậy muộn thầy ạ.⟧ — 寝坊したからです、先生。
+単語：⟦muộn⟧ 遅い | ⟦dậy⟧ 起きる
+=pl
+A: ⟦Vì sao anh thích mùa thu nhất?⟧ — Dlaczego najbardziej lubisz jesień?
+B: ⟦Vì vào mùa thu trời trong, cao và mát.⟧ — Bo jesienią niebo jest czyste i wysokie, a powietrze chłodne.
+⟦Vì sao⟧ to słowo pytające o powód; inne wyrażenie to ⟦tại sao⟧. Odpowiada się za pomocą ⟦bởi vì⟧, ⟦tại vì⟧, ⟦vì⟧ itp.
+⟦Vì sao (Tại sao) bạn học tiếng Việt?⟧ — Dlaczego uczysz się wietnamskiego?
+⟦Bởi vì mình càng học tiếng Việt càng thấy hay.⟧ — Bo im więcej się uczę wietnamskiego, tym ciekawszy mi się wydaje.
+⟦Tại sao em đến lớp muộn?⟧ — Dlaczego spóźniłeś się na lekcję?
+⟦Vì em dậy muộn thầy ạ.⟧ — Bo zaspałem, proszę pana.
+Słówka: ⟦muộn⟧ późno | ⟦dậy⟧ wstawać

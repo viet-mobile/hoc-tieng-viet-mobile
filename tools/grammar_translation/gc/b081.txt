@@ -1,0 +1,122 @@
+@@ pdf-grammar-37fc468126f59a9f#0
+=cs
+Gramatický výklad
+⟦ai (cũng)⟧: ve tvaru ⟦ai (cũng)⟧ vyjadřuje „všichni, každý“.
+⟦Điều này khiến ai cũng căng thẳng.⟧ → To každého stresuje. · ⟦Ai cũng cho rằng giải trí là một hoạt động hết sức cần thiết.⟧ → Každý se domnívá, že zábava a odpočinek jsou nesmírně potřebnou činností. · ⟦Ai cũng nhận thức được rằng cuộc sống không thể thiếu hoạt động giải trí.⟧ → Každý si uvědomuje, že život se bez odpočinku a zábavy neobejde. · ⟦Giải trí là một hoạt động ai cũng cần tham gia.⟧ → Odpočinek je činnost, které se musí věnovat každý. · ⟦Khi tham gia hoạt động giải trí, ai cũng thoát khỏi những băn khoăn, lo lắng thường ngày.⟧ → Při odpočinku se každý zbaví každodenních starostí a obav.
+⟦không chỉ là ... mà còn là⟧: ve tvaru ⟦không chỉ là A mà còn là B⟧ znamená „nejen A, ale i B“.
+⟦Giải trí không chỉ là nhu cầu của cá nhân mà còn là nhu cầu của cả cộng đồng.⟧ → Odpočinek není jen potřebou jednotlivce, ale i celé společnosti. · ⟦Giải trí không chỉ là giải tỏa sự mệt mỏi mà còn là sự thỏa mãn sở thích riêng của con người.⟧ → Zábava není jen uvolněním únavy, ale i uspokojením osobních zálib člověka. · ⟦Anh ấy không chỉ là người học giỏi mà còn là người chơi đàn ghi ta xuất sắc.⟧ → Není jen dobrý student, ale i vynikající kytarista.
+=zh_cn
+语法解说
+⟦ai (cũng)⟧：以 ⟦ai (cũng)⟧ 的形式表示“所有人、大家都”。
+⟦Điều này khiến ai cũng căng thẳng.⟧ → 这让每个人都很紧张。 · ⟦Ai cũng cho rằng giải trí là một hoạt động hết sức cần thiết.⟧ → 人人都认为娱乐休闲是非常必要的活动。 · ⟦Ai cũng nhận thức được rằng cuộc sống không thể thiếu hoạt động giải trí.⟧ → 人人都认识到生活中不能缺少娱乐活动。 · ⟦Giải trí là một hoạt động ai cũng cần tham gia.⟧ → 娱乐是人人都需要参与的活动。 · ⟦Khi tham gia hoạt động giải trí, ai cũng thoát khỏi những băn khoăn, lo lắng thường ngày.⟧ → 参加娱乐活动时，人人都能摆脱日常的烦恼和忧虑。
+⟦không chỉ là ... mà còn là⟧：以 ⟦không chỉ là A mà còn là B⟧ 的形式表示“不仅是A，而且是B”。
+⟦Giải trí không chỉ là nhu cầu của cá nhân mà còn là nhu cầu của cả cộng đồng.⟧ → 娱乐不仅是个人的需求，也是整个社会的需求。 · ⟦Giải trí không chỉ là giải tỏa sự mệt mỏi mà còn là sự thỏa mãn sở thích riêng của con người.⟧ → 娱乐不仅是消除疲劳，也是满足人的个人爱好。 · ⟦Anh ấy không chỉ là người học giỏi mà còn là người chơi đàn ghi ta xuất sắc.⟧ → 他不仅学习好，还是一位出色的吉他手。
+=zh
+文法解說
+⟦ai (cũng)⟧：以 ⟦ai (cũng)⟧ 的形式表示「所有人、大家都」。
+⟦Điều này khiến ai cũng căng thẳng.⟧ → 這讓每個人都很緊張。 · ⟦Ai cũng cho rằng giải trí là một hoạt động hết sức cần thiết.⟧ → 人人都認為娛樂休閒是非常必要的活動。 · ⟦Ai cũng nhận thức được rằng cuộc sống không thể thiếu hoạt động giải trí.⟧ → 人人都認識到生活中不能缺少娛樂活動。 · ⟦Giải trí là một hoạt động ai cũng cần tham gia.⟧ → 娛樂是人人都需要參與的活動。 · ⟦Khi tham gia hoạt động giải trí, ai cũng thoát khỏi những băn khoăn, lo lắng thường ngày.⟧ → 參加娛樂活動時，人人都能擺脫日常的煩惱和憂慮。
+⟦không chỉ là ... mà còn là⟧：以 ⟦không chỉ là A mà còn là B⟧ 的形式表示「不僅是A，而且是B」。
+⟦Giải trí không chỉ là nhu cầu của cá nhân mà còn là nhu cầu của cả cộng đồng.⟧ → 娛樂不僅是個人的需求，也是整個社會的需求。 · ⟦Giải trí không chỉ là giải tỏa sự mệt mỏi mà còn là sự thỏa mãn sở thích riêng của con người.⟧ → 娛樂不僅是消除疲勞，也是滿足人的個人喜好。 · ⟦Anh ấy không chỉ là người học giỏi mà còn là người chơi đàn ghi ta xuất sắc.⟧ → 他不僅書念得好，還是一位出色的吉他手。
+=en
+Grammar notes
+⟦ai (cũng)⟧: in the form ⟦ai (cũng)⟧, expresses "everyone, all".
+⟦Điều này khiến ai cũng căng thẳng.⟧ → This makes everyone stressed. · ⟦Ai cũng cho rằng giải trí là một hoạt động hết sức cần thiết.⟧ → Everyone thinks that leisure is an extremely necessary activity. · ⟦Ai cũng nhận thức được rằng cuộc sống không thể thiếu hoạt động giải trí.⟧ → Everyone realizes that life can't do without leisure. · ⟦Giải trí là một hoạt động ai cũng cần tham gia.⟧ → Leisure is an activity everyone needs to take part in. · ⟦Khi tham gia hoạt động giải trí, ai cũng thoát khỏi những băn khoăn, lo lắng thường ngày.⟧ → When taking part in leisure activities, everyone escapes their everyday cares and worries.
+⟦không chỉ là ... mà còn là⟧: in the form ⟦không chỉ là A mà còn là B⟧, means "not only A but also B".
+⟦Giải trí không chỉ là nhu cầu của cá nhân mà còn là nhu cầu của cả cộng đồng.⟧ → Leisure is not only an individual need but also a need of the whole community. · ⟦Giải trí không chỉ là giải tỏa sự mệt mỏi mà còn là sự thỏa mãn sở thích riêng của con người.⟧ → Leisure is not only about relieving fatigue but also about satisfying people's personal interests. · ⟦Anh ấy không chỉ là người học giỏi mà còn là người chơi đàn ghi ta xuất sắc.⟧ → He's not only a good student but also an excellent guitarist.
+=fr
+Notes de grammaire
+⟦ai (cũng)⟧ : sous la forme ⟦ai (cũng)⟧, exprime « tout le monde, chacun ».
+⟦Điều này khiến ai cũng căng thẳng.⟧ → Cela stresse tout le monde. · ⟦Ai cũng cho rằng giải trí là một hoạt động hết sức cần thiết.⟧ → Tout le monde estime que les loisirs sont une activité absolument nécessaire. · ⟦Ai cũng nhận thức được rằng cuộc sống không thể thiếu hoạt động giải trí.⟧ → Chacun a conscience que la vie ne peut se passer de loisirs. · ⟦Giải trí là một hoạt động ai cũng cần tham gia.⟧ → Les loisirs sont une activité à laquelle chacun doit prendre part. · ⟦Khi tham gia hoạt động giải trí, ai cũng thoát khỏi những băn khoăn, lo lắng thường ngày.⟧ → En se divertissant, chacun échappe aux soucis et inquiétudes du quotidien.
+⟦không chỉ là ... mà còn là⟧ : sous la forme ⟦không chỉ là A mà còn là B⟧, signifie « non seulement A, mais aussi B ».
+⟦Giải trí không chỉ là nhu cầu của cá nhân mà còn là nhu cầu của cả cộng đồng.⟧ → Les loisirs ne sont pas seulement un besoin individuel, mais aussi un besoin de toute la communauté. · ⟦Giải trí không chỉ là giải tỏa sự mệt mỏi mà còn là sự thỏa mãn sở thích riêng của con người.⟧ → Se divertir, ce n'est pas seulement évacuer la fatigue, c'est aussi satisfaire ses goûts personnels. · ⟦Anh ấy không chỉ là người học giỏi mà còn là người chơi đàn ghi ta xuất sắc.⟧ → Il n'est pas seulement bon élève, c'est aussi un excellent guitariste.
+=de
+Grammatikerläuterungen
+⟦ai (cũng)⟧: in der Form ⟦ai (cũng)⟧ bedeutet es „alle, jeder“.
+⟦Điều này khiến ai cũng căng thẳng.⟧ → Das stresst jeden. · ⟦Ai cũng cho rằng giải trí là một hoạt động hết sức cần thiết.⟧ → Jeder meint, dass Freizeit und Unterhaltung eine äußerst notwendige Tätigkeit sind. · ⟦Ai cũng nhận thức được rằng cuộc sống không thể thiếu hoạt động giải trí.⟧ → Jedem ist bewusst, dass das Leben ohne Freizeitaktivitäten nicht auskommt. · ⟦Giải trí là một hoạt động ai cũng cần tham gia.⟧ → Freizeit ist eine Tätigkeit, an der jeder teilnehmen muss. · ⟦Khi tham gia hoạt động giải trí, ai cũng thoát khỏi những băn khoăn, lo lắng thường ngày.⟧ → Bei Freizeitaktivitäten entkommt jeder den alltäglichen Sorgen und Nöten.
+⟦không chỉ là ... mà còn là⟧: in der Form ⟦không chỉ là A mà còn là B⟧ bedeutet es „nicht nur A, sondern auch B“.
+⟦Giải trí không chỉ là nhu cầu của cá nhân mà còn là nhu cầu của cả cộng đồng.⟧ → Freizeit ist nicht nur ein individuelles Bedürfnis, sondern auch ein Bedürfnis der ganzen Gemeinschaft. · ⟦Giải trí không chỉ là giải tỏa sự mệt mỏi mà còn là sự thỏa mãn sở thích riêng của con người.⟧ → Unterhaltung heißt nicht nur Müdigkeit abbauen, sondern auch persönliche Vorlieben befriedigen. · ⟦Anh ấy không chỉ là người học giỏi mà còn là người chơi đàn ghi ta xuất sắc.⟧ → Er ist nicht nur ein guter Schüler, sondern auch ein hervorragender Gitarrist.
+=hu
+Nyelvtani magyarázat
+⟦ai (cũng)⟧: ⟦ai (cũng)⟧ alakban jelentése „mindenki, mind”.
+⟦Điều này khiến ai cũng căng thẳng.⟧ → Ez mindenkit feszültté tesz. · ⟦Ai cũng cho rằng giải trí là một hoạt động hết sức cần thiết.⟧ → Mindenki úgy véli, hogy a szórakozás rendkívül szükséges tevékenység. · ⟦Ai cũng nhận thức được rằng cuộc sống không thể thiếu hoạt động giải trí.⟧ → Mindenki tisztában van vele, hogy az élet nem nélkülözheti a szórakozást. · ⟦Giải trí là một hoạt động ai cũng cần tham gia.⟧ → A szórakozás olyan tevékenység, amelyben mindenkinek részt kell vennie. · ⟦Khi tham gia hoạt động giải trí, ai cũng thoát khỏi những băn khoăn, lo lắng thường ngày.⟧ → Szórakozás közben mindenki megszabadul a mindennapi gondoktól és aggodalmaktól.
+⟦không chỉ là ... mà còn là⟧: ⟦không chỉ là A mà còn là B⟧ alakban jelentése „nemcsak A, hanem B is”.
+⟦Giải trí không chỉ là nhu cầu của cá nhân mà còn là nhu cầu của cả cộng đồng.⟧ → A szórakozás nemcsak egyéni, hanem az egész közösség szükséglete is. · ⟦Giải trí không chỉ là giải tỏa sự mệt mỏi mà còn là sự thỏa mãn sở thích riêng của con người.⟧ → A szórakozás nemcsak a fáradtság oldása, hanem az ember saját kedvteléseinek kielégítése is. · ⟦Anh ấy không chỉ là người học giỏi mà còn là người chơi đàn ghi ta xuất sắc.⟧ → Nemcsak jó tanuló, hanem kiváló gitáros is.
+=id
+Penjelasan tata bahasa
+⟦ai (cũng)⟧: dalam bentuk ⟦ai (cũng)⟧ menyatakan "semua orang, siapa pun".
+⟦Điều này khiến ai cũng căng thẳng.⟧ → Hal ini membuat semua orang tegang. · ⟦Ai cũng cho rằng giải trí là một hoạt động hết sức cần thiết.⟧ → Semua orang menganggap hiburan adalah kegiatan yang sangat diperlukan. · ⟦Ai cũng nhận thức được rằng cuộc sống không thể thiếu hoạt động giải trí.⟧ → Semua orang menyadari bahwa hidup tidak bisa tanpa kegiatan hiburan. · ⟦Giải trí là một hoạt động ai cũng cần tham gia.⟧ → Hiburan adalah kegiatan yang perlu diikuti semua orang. · ⟦Khi tham gia hoạt động giải trí, ai cũng thoát khỏi những băn khoăn, lo lắng thường ngày.⟧ → Saat mengikuti kegiatan hiburan, semua orang terlepas dari kegelisahan dan kekhawatiran sehari-hari.
+⟦không chỉ là ... mà còn là⟧: dalam bentuk ⟦không chỉ là A mà còn là B⟧ berarti "bukan hanya A tetapi juga B".
+⟦Giải trí không chỉ là nhu cầu của cá nhân mà còn là nhu cầu của cả cộng đồng.⟧ → Hiburan bukan hanya kebutuhan pribadi tetapi juga kebutuhan seluruh masyarakat. · ⟦Giải trí không chỉ là giải tỏa sự mệt mỏi mà còn là sự thỏa mãn sở thích riêng của con người.⟧ → Hiburan bukan hanya melepas lelah tetapi juga memuaskan kegemaran pribadi manusia. · ⟦Anh ấy không chỉ là người học giỏi mà còn là người chơi đàn ghi ta xuất sắc.⟧ → Dia bukan hanya pintar belajar tetapi juga pemain gitar yang hebat.
+=ja
+文法解説
+⟦ai (cũng)⟧：⟦ai (cũng)⟧ の形で使われ、「すべての人、みんな」という意味を表します。
+⟦Điều này khiến ai cũng căng thẳng.⟧ → これは誰にとってもストレスになる。 · ⟦Ai cũng cho rằng giải trí là một hoạt động hết sức cần thiết.⟧ → 誰もが、娯楽はとても必要な活動だと考えている。 · ⟦Ai cũng nhận thức được rằng cuộc sống không thể thiếu hoạt động giải trí.⟧ → 誰もが、人の暮らしに娯楽活動が欠かせないことを認識している。 · ⟦Giải trí là một hoạt động ai cũng cần tham gia.⟧ → 娯楽は誰もが参加する必要のある活動だ。 · ⟦Khi tham gia hoạt động giải trí, ai cũng thoát khỏi những băn khoăn, lo lắng thường ngày.⟧ → 娯楽活動に参加するとき、誰もが日常生活の心配や悩みから解放される。
+⟦không chỉ là ... mà còn là⟧：⟦không chỉ là A mà còn là B⟧ の形で「Aだけでなく Bも」という意味で使われます。
+⟦Giải trí không chỉ là nhu cầu của cá nhân mà còn là nhu cầu của cả cộng đồng.⟧ → 娯楽は個人的な欲求であるだけでなく、共同体の欲求でもある。 · ⟦Giải trí không chỉ là giải tỏa sự mệt mỏi mà còn là sự thỏa mãn sở thích riêng của con người.⟧ → 娯楽は疲れを癒すだけでなく、人の個人的な趣味を満たしてくれる。 · ⟦Anh ấy không chỉ là người học giỏi mà còn là người chơi đàn ghi ta xuất sắc.⟧ → 彼は勉強がよくできるだけでなく、優れたギター奏者でもある。
+=pl
+Objaśnienia gramatyczne
+⟦ai (cũng)⟧: w formie ⟦ai (cũng)⟧ wyraża „wszyscy, każdy”.
+⟦Điều này khiến ai cũng căng thẳng.⟧ → To stresuje każdego. · ⟦Ai cũng cho rằng giải trí là một hoạt động hết sức cần thiết.⟧ → Każdy uważa, że rozrywka jest niezwykle potrzebną aktywnością. · ⟦Ai cũng nhận thức được rằng cuộc sống không thể thiếu hoạt động giải trí.⟧ → Każdy zdaje sobie sprawę, że życie nie może się obyć bez rozrywki. · ⟦Giải trí là một hoạt động ai cũng cần tham gia.⟧ → Rozrywka to aktywność, w której każdy powinien brać udział. · ⟦Khi tham gia hoạt động giải trí, ai cũng thoát khỏi những băn khoăn, lo lắng thường ngày.⟧ → Podczas rozrywki każdy uwalnia się od codziennych trosk i zmartwień.
+⟦không chỉ là ... mà còn là⟧: w formie ⟦không chỉ là A mà còn là B⟧ znaczy „nie tylko A, lecz także B”.
+⟦Giải trí không chỉ là nhu cầu của cá nhân mà còn là nhu cầu của cả cộng đồng.⟧ → Rozrywka jest nie tylko potrzebą jednostki, lecz także całej społeczności. · ⟦Giải trí không chỉ là giải tỏa sự mệt mỏi mà còn là sự thỏa mãn sở thích riêng của con người.⟧ → Rozrywka to nie tylko odreagowanie zmęczenia, lecz także zaspokojenie osobistych upodobań. · ⟦Anh ấy không chỉ là người học giỏi mà còn là người chơi đàn ghi ta xuất sắc.⟧ → On jest nie tylko dobrym uczniem, lecz także znakomitym gitarzystą.
+@@ pdf-grammar-a8daf1d06313c55b#0
+=cs
+Gramatický výklad
+⟦muôn vàn⟧: „nesčetné, nespočet, bezpočet“ – vyjadřuje velmi velké, blíže neurčené množství.
+⟦Sau những giờ học tập căng thẳng, các bạn trẻ có muôn vàn cách giải trí.⟧ → Po náročných hodinách učení mají mladí lidé nespočet způsobů, jak si odpočinout. · ⟦Những ngày hè có muôn vàn địa điểm đón khách du lịch.⟧ → V létě vítá turisty nespočet míst. · ⟦Thư viện có muôn vàn cuốn sách để cho chúng ta lựa chọn.⟧ → Knihovna má nesčetně knih, ze kterých si můžeme vybrat. · ⟦Vì có muôn vàn cách giải trí nên tôi lúng túng không biết chọn cách nào.⟧ → Protože je nespočet způsobů zábavy, jsem bezradný a nevím, který si vybrat. · ⟦Ông bà nào cũng luôn dành muôn vàn tình yêu thương cho con cháu.⟧ → Všichni prarodiče vždy dávají dětem a vnoučatům nezměrnou lásku.
+⟦với⟧: „k, s, do“ – vyjadřuje, že určitý subjekt se svou činností obrací k určitému směru či předmětu.
+⟦Hiện nay các bạn trẻ không còn mặn mà với những trò chơi truyền thống.⟧ → Dnešní mladí lidé už nejsou nadšení z tradičních her. · ⟦Có bạn chìm đắm vào thế giới ảo với Yahoo, Blog, Facebook.⟧ → Někteří se ponořili do virtuálního světa s Yahoo, blogy a Facebookem. · ⟦Suốt ngày anh ấy bù đầu với sách vở.⟧ → Celý den je zavalený knihami a sešity.
+=zh_cn
+语法解说
+⟦muôn vàn⟧：意为“无数的、数不清的”，用于表示虽不具体但数量非常多的情况。
+⟦Sau những giờ học tập căng thẳng, các bạn trẻ có muôn vàn cách giải trí.⟧ → 紧张的学习之后，年轻人有无数种娱乐方式。 · ⟦Những ngày hè có muôn vàn địa điểm đón khách du lịch.⟧ → 夏天有无数地方迎接游客。 · ⟦Thư viện có muôn vàn cuốn sách để cho chúng ta lựa chọn.⟧ → 图书馆有数不清的书供我们选择。 · ⟦Vì có muôn vàn cách giải trí nên tôi lúng túng không biết chọn cách nào.⟧ → 因为娱乐方式多得数不清，我都不知道该选哪种了。 · ⟦Ông bà nào cũng luôn dành muôn vàn tình yêu thương cho con cháu.⟧ → 每位爷爷奶奶总是把无尽的爱给予子孙。
+⟦với⟧：意为“对、向、与”，用于表示特定对象朝某一方向进行活动。
+⟦Hiện nay các bạn trẻ không còn mặn mà với những trò chơi truyền thống.⟧ → 如今的年轻人对传统游戏已经不再热衷。 · ⟦Có bạn chìm đắm vào thế giới ảo với Yahoo, Blog, Facebook.⟧ → 有的人沉迷于雅虎、博客、脸书等虚拟世界。 · ⟦Suốt ngày anh ấy bù đầu với sách vở.⟧ → 他整天埋头于书本之中。
+=zh
+文法解說
+⟦muôn vàn⟧：意為「無數的、數不清的」，用於表示雖不具體但數量非常多的情況。
+⟦Sau những giờ học tập căng thẳng, các bạn trẻ có muôn vàn cách giải trí.⟧ → 緊張的學習之後，年輕人有無數種娛樂方式。 · ⟦Những ngày hè có muôn vàn địa điểm đón khách du lịch.⟧ → 夏天有無數地方迎接遊客。 · ⟦Thư viện có muôn vàn cuốn sách để cho chúng ta lựa chọn.⟧ → 圖書館有數不清的書供我們選擇。 · ⟦Vì có muôn vàn cách giải trí nên tôi lúng túng không biết chọn cách nào.⟧ → 因為娛樂方式多得數不清，我都不知道該選哪種了。 · ⟦Ông bà nào cũng luôn dành muôn vàn tình yêu thương cho con cháu.⟧ → 每位爺爺奶奶總是把無盡的愛給予子孫。
+⟦với⟧：意為「對、向、與」，用於表示特定對象朝某一方向進行活動。
+⟦Hiện nay các bạn trẻ không còn mặn mà với những trò chơi truyền thống.⟧ → 如今的年輕人對傳統遊戲已經不再熱衷。 · ⟦Có bạn chìm đắm vào thế giới ảo với Yahoo, Blog, Facebook.⟧ → 有的人沉迷於雅虎、部落格、臉書等虛擬世界。 · ⟦Suốt ngày anh ấy bù đầu với sách vở.⟧ → 他整天埋頭於書本之中。
+=en
+Grammar notes
+⟦muôn vàn⟧: "countless, innumerable" – expresses a very large but unspecified quantity.
+⟦Sau những giờ học tập căng thẳng, các bạn trẻ có muôn vàn cách giải trí.⟧ → After intense hours of study, young people have countless ways to unwind. · ⟦Những ngày hè có muôn vàn địa điểm đón khách du lịch.⟧ → In summer, countless places welcome tourists. · ⟦Thư viện có muôn vàn cuốn sách để cho chúng ta lựa chọn.⟧ → The library has countless books for us to choose from. · ⟦Vì có muôn vàn cách giải trí nên tôi lúng túng không biết chọn cách nào.⟧ → Because there are countless ways to have fun, I'm at a loss which one to choose. · ⟦Ông bà nào cũng luôn dành muôn vàn tình yêu thương cho con cháu.⟧ → All grandparents always give boundless love to their children and grandchildren.
+⟦với⟧: "with, towards, about" – expresses that a particular subject directs its activity towards something.
+⟦Hiện nay các bạn trẻ không còn mặn mà với những trò chơi truyền thống.⟧ → Young people today are no longer keen on traditional games. · ⟦Có bạn chìm đắm vào thế giới ảo với Yahoo, Blog, Facebook.⟧ → Some are immersed in the virtual world of Yahoo, blogs and Facebook. · ⟦Suốt ngày anh ấy bù đầu với sách vở.⟧ → He's buried in his books all day long.
+=fr
+Notes de grammaire
+⟦muôn vàn⟧ : « innombrable, d'innombrables » – exprime une quantité très grande mais non précisée.
+⟦Sau những giờ học tập căng thẳng, các bạn trẻ có muôn vàn cách giải trí.⟧ → Après des heures d'étude intense, les jeunes ont d'innombrables façons de se divertir. · ⟦Những ngày hè có muôn vàn địa điểm đón khách du lịch.⟧ → En été, d'innombrables lieux accueillent les touristes. · ⟦Thư viện có muôn vàn cuốn sách để cho chúng ta lựa chọn.⟧ → La bibliothèque a d'innombrables livres parmi lesquels choisir. · ⟦Vì có muôn vàn cách giải trí nên tôi lúng túng không biết chọn cách nào.⟧ → Comme il existe d'innombrables loisirs, je suis perplexe et ne sais lequel choisir. · ⟦Ông bà nào cũng luôn dành muôn vàn tình yêu thương cho con cháu.⟧ → Tous les grands-parents donnent toujours un amour infini à leurs enfants et petits-enfants.
+⟦với⟧ : « avec, envers, pour » – exprime qu'un sujet donné oriente son activité vers quelque chose.
+⟦Hiện nay các bạn trẻ không còn mặn mà với những trò chơi truyền thống.⟧ → Aujourd'hui, les jeunes ne s'intéressent plus guère aux jeux traditionnels. · ⟦Có bạn chìm đắm vào thế giới ảo với Yahoo, Blog, Facebook.⟧ → Certains sont plongés dans le monde virtuel avec Yahoo, les blogs, Facebook. · ⟦Suốt ngày anh ấy bù đầu với sách vở.⟧ → Il est plongé dans ses livres toute la journée.
+=de
+Grammatikerläuterungen
+⟦muôn vàn⟧: „unzählige, zahllose“ – drückt eine sehr große, nicht genau bestimmte Menge aus.
+⟦Sau những giờ học tập căng thẳng, các bạn trẻ có muôn vàn cách giải trí.⟧ → Nach anstrengenden Lernstunden haben junge Leute unzählige Möglichkeiten, sich zu entspannen. · ⟦Những ngày hè có muôn vàn địa điểm đón khách du lịch.⟧ → Im Sommer empfangen unzählige Orte Touristen. · ⟦Thư viện có muôn vàn cuốn sách để cho chúng ta lựa chọn.⟧ → Die Bibliothek hat zahllose Bücher, aus denen wir wählen können. · ⟦Vì có muôn vàn cách giải trí nên tôi lúng túng không biết chọn cách nào.⟧ → Weil es unzählige Freizeitmöglichkeiten gibt, bin ich ratlos, welche ich wählen soll. · ⟦Ông bà nào cũng luôn dành muôn vàn tình yêu thương cho con cháu.⟧ → Alle Großeltern schenken ihren Kindern und Enkeln stets grenzenlose Liebe.
+⟦với⟧: „mit, gegenüber, zu“ – drückt aus, dass ein bestimmtes Subjekt seine Tätigkeit auf etwas richtet.
+⟦Hiện nay các bạn trẻ không còn mặn mà với những trò chơi truyền thống.⟧ → Heute begeistern sich junge Leute nicht mehr für traditionelle Spiele. · ⟦Có bạn chìm đắm vào thế giới ảo với Yahoo, Blog, Facebook.⟧ → Manche versinken in der virtuellen Welt mit Yahoo, Blogs und Facebook. · ⟦Suốt ngày anh ấy bù đầu với sách vở.⟧ → Den ganzen Tag steckt er bis über beide Ohren in seinen Büchern.
+=hu
+Nyelvtani magyarázat
+⟦muôn vàn⟧: „számtalan, megszámlálhatatlan” – nagyon nagy, de pontosan meg nem határozott mennyiséget fejez ki.
+⟦Sau những giờ học tập căng thẳng, các bạn trẻ có muôn vàn cách giải trí.⟧ → A feszített tanulás után a fiataloknak számtalan módjuk van a kikapcsolódásra. · ⟦Những ngày hè có muôn vàn địa điểm đón khách du lịch.⟧ → Nyáron számtalan hely fogad turistákat. · ⟦Thư viện có muôn vàn cuốn sách để cho chúng ta lựa chọn.⟧ → A könyvtárban számtalan könyv közül választhatunk. · ⟦Vì có muôn vàn cách giải trí nên tôi lúng túng không biết chọn cách nào.⟧ → Mivel számtalan szórakozási lehetőség van, tanácstalan vagyok, melyiket válasszam. · ⟦Ông bà nào cũng luôn dành muôn vàn tình yêu thương cho con cháu.⟧ → Minden nagyszülő végtelen szeretettel halmozza el gyermekeit és unokáit.
+⟦với⟧: „-val/-vel, iránt, felé” – azt fejezi ki, hogy egy adott alany valami felé irányítja tevékenységét.
+⟦Hiện nay các bạn trẻ không còn mặn mà với những trò chơi truyền thống.⟧ → A mai fiatalok már nem lelkesednek a hagyományos játékokért. · ⟦Có bạn chìm đắm vào thế giới ảo với Yahoo, Blog, Facebook.⟧ → Vannak, akik elmerülnek a Yahoo, a blogok és a Facebook virtuális világában. · ⟦Suốt ngày anh ấy bù đầu với sách vở.⟧ → Egész nap a könyveibe temetkezik.
+=id
+Penjelasan tata bahasa
+⟦muôn vàn⟧: "tak terhitung, tak terbilang" – menyatakan jumlah yang sangat banyak meski tidak spesifik.
+⟦Sau những giờ học tập căng thẳng, các bạn trẻ có muôn vàn cách giải trí.⟧ → Setelah jam belajar yang menegangkan, anak muda punya tak terhitung cara untuk bersantai. · ⟦Những ngày hè có muôn vàn địa điểm đón khách du lịch.⟧ → Pada musim panas ada tak terhitung tempat yang menyambut wisatawan. · ⟦Thư viện có muôn vàn cuốn sách để cho chúng ta lựa chọn.⟧ → Perpustakaan punya tak terhitung buku untuk kita pilih. · ⟦Vì có muôn vàn cách giải trí nên tôi lúng túng không biết chọn cách nào.⟧ → Karena ada tak terhitung cara bersantai, saya bingung harus memilih yang mana. · ⟦Ông bà nào cũng luôn dành muôn vàn tình yêu thương cho con cháu.⟧ → Setiap kakek-nenek selalu mencurahkan kasih sayang yang tak terhingga kepada anak cucu.
+⟦với⟧: "dengan, terhadap, pada" – menyatakan bahwa subjek tertentu mengarahkan kegiatannya ke suatu arah.
+⟦Hiện nay các bạn trẻ không còn mặn mà với những trò chơi truyền thống.⟧ → Sekarang anak muda sudah tidak tertarik lagi pada permainan tradisional. · ⟦Có bạn chìm đắm vào thế giới ảo với Yahoo, Blog, Facebook.⟧ → Ada yang tenggelam dalam dunia maya dengan Yahoo, blog, Facebook. · ⟦Suốt ngày anh ấy bù đầu với sách vở.⟧ → Sepanjang hari dia sibuk berkutat dengan buku-bukunya.
+=ja
+文法解説
+⟦muôn vàn⟧：「無数の、数えきれない、数多くの」という意味で、具体的ではないが数量が非常に多い場合を表すときに使います。
+⟦Sau những giờ học tập căng thẳng, các bạn trẻ có muôn vàn cách giải trí.⟧ → 緊張した学習時間の後、若者たちは数多くの方法でくつろぐ。 · ⟦Những ngày hè có muôn vàn địa điểm đón khách du lịch.⟧ → 夏には数多くの場所が旅行者を迎える。 · ⟦Thư viện có muôn vàn cuốn sách để cho chúng ta lựa chọn.⟧ → 図書館には私たちが選べる数多くの本がある。 · ⟦Vì có muôn vàn cách giải trí nên tôi lúng túng không biết chọn cách nào.⟧ → 楽しめる方法が数えきれないほどあるので、どれを選べばいいか戸惑った。 · ⟦Ông bà nào cũng luôn dành muôn vàn tình yêu thương cho con cháu.⟧ → どの祖父母も、いつも計り知れない愛情を子や孫に注ぐ。
+⟦với⟧：「～に、～で」という意味で、特定の対象がある方向に向かって活動する場合を表したいときに使います。
+⟦Hiện nay các bạn trẻ không còn mặn mà với những trò chơi truyền thống.⟧ → 今日の若者は伝統的な遊びにもう興味を感じない。 · ⟦Có bạn chìm đắm vào thế giới ảo với Yahoo, Blog, Facebook.⟧ → ヤフー、ブログ、フェイスブックなどの仮想世界にどっぷり浸かっている人もいる。 · ⟦Suốt ngày anh ấy bù đầu với sách vở.⟧ → 一日中、彼は本に頭を抱えていた。
+=pl
+Objaśnienia gramatyczne
+⟦muôn vàn⟧: „niezliczone, mnóstwo” – wyraża bardzo dużą, nieokreśloną ilość.
+⟦Sau những giờ học tập căng thẳng, các bạn trẻ có muôn vàn cách giải trí.⟧ → Po wyczerpujących godzinach nauki młodzi ludzie mają niezliczone sposoby na odpoczynek. · ⟦Những ngày hè có muôn vàn địa điểm đón khách du lịch.⟧ → Latem niezliczone miejsca przyjmują turystów. · ⟦Thư viện có muôn vàn cuốn sách để cho chúng ta lựa chọn.⟧ → Biblioteka ma niezliczone książki, spośród których możemy wybierać. · ⟦Vì có muôn vàn cách giải trí nên tôi lúng túng không biết chọn cách nào.⟧ → Ponieważ jest niezliczenie wiele form rozrywki, nie wiem, którą wybrać. · ⟦Ông bà nào cũng luôn dành muôn vàn tình yêu thương cho con cháu.⟧ → Wszyscy dziadkowie zawsze obdarzają dzieci i wnuki bezgraniczną miłością.
+⟦với⟧: „z, wobec, do” – wyraża, że określony podmiot kieruje swoją aktywność w jakąś stronę.
+⟦Hiện nay các bạn trẻ không còn mặn mà với những trò chơi truyền thống.⟧ → Dzisiejsza młodzież nie przepada już za tradycyjnymi grami. · ⟦Có bạn chìm đắm vào thế giới ảo với Yahoo, Blog, Facebook.⟧ → Niektórzy pogrążają się w wirtualnym świecie z Yahoo, blogami i Facebookiem. · ⟦Suốt ngày anh ấy bù đầu với sách vở.⟧ → Cały dzień siedzi z nosem w książkach.

@@ -1,0 +1,340 @@
+@@ pdf-grammar-a46260e0b140e60e#1
+~t 3. có biết ~ không?: Znáš …? / Víš …?|3. có biết ~ không?：你知道……吗？|3. có biết ~ không?：你知道……嗎？|3. có biết ~ không?: Do you know …?|3. có biết ~ không? : Connais-tu … ? / Sais-tu … ?|3. có biết ~ không?: Kennst du … / Weißt du …?|3. có biết ~ không?: Ismered …? / Tudod …?|3. có biết ~ không?: Apakah kamu tahu …?|3. có biết ~ không?：～を知っていますか|3. có biết ~ không?: Czy znasz … / wiesz …?
+=cs
+⟦Em có biết cầu thủ bóng đá Hàn Quốc Son Heung-min không?⟧ — Znáš korejského fotbalistu Son Heung-mina?
+„podmět + có biết ~ không?“ znamená „Zná/ví podmět …?“; na místě „~“ může stát nejen slovo, ale i slovní spojení nebo vedlejší věta.
+⟦Em có biết nhà hàng Ngon không?⟧ — Znáš restauraci Ngon?
+⟦Em có biết nhà hàng Ngon ở đâu không?⟧ — Víš, kde je restaurace Ngon?
+Slovíčka: ⟦nhà hàng⟧ restaurace | ⟦ở⟧ v, na | ⟦đâu⟧ kde
+=zh_cn
+⟦Em có biết cầu thủ bóng đá Hàn Quốc Son Heung-min không?⟧ —— 你知道韩国足球运动员孙兴慜吗？
+“主语 + có biết ~ không?”意为“主语知道……吗？”，“~”的位置不仅可以放单词，也可以放短语或从句。
+⟦Em có biết nhà hàng Ngon không?⟧ —— 你知道 Ngon 餐厅吗？
+⟦Em có biết nhà hàng Ngon ở đâu không?⟧ —— 你知道 Ngon 餐厅在哪里吗？
+单词：⟦nhà hàng⟧ 餐厅 | ⟦ở⟧ 在 | ⟦đâu⟧ 哪里
+=zh
+⟦Em có biết cầu thủ bóng đá Hàn Quốc Son Heung-min không?⟧ —— 你知道韓國足球選手孫興慜嗎？
+「主語 + có biết ~ không?」意為「主語知道……嗎？」，「~」的位置不僅可以放單字，也可以放片語或子句。
+⟦Em có biết nhà hàng Ngon không?⟧ —— 你知道 Ngon 餐廳嗎？
+⟦Em có biết nhà hàng Ngon ở đâu không?⟧ —— 你知道 Ngon 餐廳在哪裡嗎？
+單字：⟦nhà hàng⟧ 餐廳 | ⟦ở⟧ 在 | ⟦đâu⟧ 哪裡
+=en
+⟦Em có biết cầu thủ bóng đá Hàn Quốc Son Heung-min không?⟧ — Do you know the Korean football player Son Heung-min?
+"subject + có biết ~ không?" means "Does the subject know …?"; the "~" slot can hold not only a word but also a phrase or a clause.
+⟦Em có biết nhà hàng Ngon không?⟧ — Do you know the Ngon restaurant?
+⟦Em có biết nhà hàng Ngon ở đâu không?⟧ — Do you know where the Ngon restaurant is?
+Words: ⟦nhà hàng⟧ restaurant | ⟦ở⟧ at, in | ⟦đâu⟧ where
+=fr
+⟦Em có biết cầu thủ bóng đá Hàn Quốc Son Heung-min không?⟧ — Connais-tu le footballeur coréen Son Heung-min ?
+« sujet + có biết ~ không? » signifie « Le sujet connaît-il / sait-il … ? » ; à la place de « ~ » peut figurer un mot, mais aussi un groupe de mots ou une proposition.
+⟦Em có biết nhà hàng Ngon không?⟧ — Connais-tu le restaurant Ngon ?
+⟦Em có biết nhà hàng Ngon ở đâu không?⟧ — Sais-tu où se trouve le restaurant Ngon ?
+Mots : ⟦nhà hàng⟧ restaurant | ⟦ở⟧ à, dans | ⟦đâu⟧ où
+=de
+⟦Em có biết cầu thủ bóng đá Hàn Quốc Son Heung-min không?⟧ — Kennst du den koreanischen Fußballspieler Son Heung-min?
+„Subjekt + có biết ~ không?“ bedeutet „Kennt/weiß das Subjekt …?“; an der Stelle von „~“ kann nicht nur ein Wort, sondern auch eine Wortgruppe oder ein Nebensatz stehen.
+⟦Em có biết nhà hàng Ngon không?⟧ — Kennst du das Restaurant Ngon?
+⟦Em có biết nhà hàng Ngon ở đâu không?⟧ — Weißt du, wo das Restaurant Ngon ist?
+Wörter: ⟦nhà hàng⟧ Restaurant | ⟦ở⟧ in, an | ⟦đâu⟧ wo
+=hu
+⟦Em có biết cầu thủ bóng đá Hàn Quốc Son Heung-min không?⟧ — Ismered Son Heung-min koreai focistát?
+Az „alany + có biết ~ không?” jelentése „Ismeri/tudja az alany …?”; a „~” helyén nemcsak szó, hanem szókapcsolat vagy mellékmondat is állhat.
+⟦Em có biết nhà hàng Ngon không?⟧ — Ismered a Ngon éttermet?
+⟦Em có biết nhà hàng Ngon ở đâu không?⟧ — Tudod, hol van a Ngon étterem?
+Szavak: ⟦nhà hàng⟧ étterem | ⟦ở⟧ -ban/-ben | ⟦đâu⟧ hol
+=id
+⟦Em có biết cầu thủ bóng đá Hàn Quốc Son Heung-min không?⟧ — Apakah kamu tahu pemain sepak bola Korea Son Heung-min?
+"subjek + có biết ~ không?" berarti "Apakah subjek tahu …?"; di posisi "~" dapat diletakkan bukan hanya kata, tetapi juga frasa atau klausa.
+⟦Em có biết nhà hàng Ngon không?⟧ — Kamu tahu restoran Ngon?
+⟦Em có biết nhà hàng Ngon ở đâu không?⟧ — Kamu tahu restoran Ngon ada di mana?
+Kosakata: ⟦nhà hàng⟧ restoran | ⟦ở⟧ di | ⟦đâu⟧ mana
+=ja
+⟦Em có biết cầu thủ bóng đá Hàn Quốc Son Heung-min không?⟧ — 君は韓国のサッカー選手ソン・フンミンを知ってる？
+「主語 ＋ có biết ~ không?」は「主語は～を知っていますか」の意味で、「~」の位置には単語だけでなく句や節も入れられます。
+⟦Em có biết nhà hàng Ngon không?⟧ — ゴン食堂を知ってる？
+⟦Em có biết nhà hàng Ngon ở đâu không?⟧ — ゴン食堂がどこにあるか知ってる？
+単語：⟦nhà hàng⟧ 食堂、レストラン | ⟦ở⟧ ～に・～で | ⟦đâu⟧ どこ
+=pl
+⟦Em có biết cầu thủ bóng đá Hàn Quốc Son Heung-min không?⟧ — Znasz koreańskiego piłkarza Son Heung-mina?
+„podmiot + có biết ~ không?” znaczy „Czy podmiot zna/wie …?”; w miejscu „~” może stać nie tylko wyraz, ale też fraza lub zdanie podrzędne.
+⟦Em có biết nhà hàng Ngon không?⟧ — Znasz restaurację Ngon?
+⟦Em có biết nhà hàng Ngon ở đâu không?⟧ — Wiesz, gdzie jest restauracja Ngon?
+Słówka: ⟦nhà hàng⟧ restauracja | ⟦ở⟧ w, na | ⟦đâu⟧ gdzie
+@@ pdf-grammar-d179991a493bfbac#0
+~t 1. Otázka na situaci druhého: ~ thì sao?|1. 询问对方情况：~ thì sao?|1. 詢問對方情況：~ thì sao?|1. Asking about the other person: ~ thì sao?|1. Demander l'avis de l'autre : ~ thì sao ?|1. Nach dem anderen fragen: ~ thì sao?|1. A másik helyzetéről kérdezni: ~ thì sao?|1. Menanyakan keadaan lawan bicara: ~ thì sao?|1. 相手の状況を尋ねる表現：~ thì sao?|1. Pytanie o drugą osobę: ~ thì sao?
+=cs
+⟦Anh thích nhất phim hành động. Còn em thì sao?⟧ — Nejraději mám akční filmy. A co ty?
+„podmět + thì sao?“ znamená „a co …?“. Používá se, když se ptáme na stav nebo situaci druhé osoby k tématu, které už v rozhovoru padlo. Také ⟦thế nào⟧ znamená „jak je na tom …“, ale liší se tím, že ho lze použít i bez předchozí zmínky.
+A: ⟦Trong các món ăn Việt Nam, tôi thích nhất bún chả. Còn anh thì sao?⟧ — Z vietnamských jídel mám nejraději bún chả. A vy?
+B: ⟦Tôi thì thích phở bò nhất.⟧ — Já mám nejraději hovězí phở.
+⟦Xe máy mới của anh thế nào?⟧ — Jaká je tvoje nová motorka, bratře?
+Slovíčka: ⟦trong⟧ v, mezi | ⟦món ăn⟧ jídlo | ⟦bún chả⟧ bún chả (název jídla)
+=zh_cn
+⟦Anh thích nhất phim hành động. Còn em thì sao?⟧ —— 我最喜欢动作片。那你呢？
+“主语 thì sao?”意为“（主语）呢？怎么样？”，用于就对话中已提到的内容询问对方的状态或情况。⟦thế nào⟧ 也有“……怎么样”的意思，但不同之处在于即使前面没提到相关内容也能使用。
+A：⟦Trong các món ăn Việt Nam, tôi thích nhất bún chả. Còn anh thì sao?⟧ —— 越南菜里我最喜欢烤肉米线。您呢？
+B：⟦Tôi thì thích phở bò nhất.⟧ —— 我最喜欢牛肉河粉。
+⟦Xe máy mới của anh thế nào?⟧ —— 哥哥的新摩托车怎么样？
+单词：⟦trong⟧ 里面，……之中 | ⟦món ăn⟧ 食物 | ⟦bún chả⟧ 烤肉米线（菜名）
+=zh
+⟦Anh thích nhất phim hành động. Còn em thì sao?⟧ —— 我最喜歡動作片。那你呢？
+「主語 thì sao?」意為「（主語）呢？怎麼樣？」，用於就對話中已提到的內容詢問對方的狀態或情況。⟦thế nào⟧ 也有「……怎麼樣」的意思，但不同之處在於即使前面沒提到相關內容也能使用。
+A：⟦Trong các món ăn Việt Nam, tôi thích nhất bún chả. Còn anh thì sao?⟧ —— 越南菜裡我最喜歡烤肉米線。您呢？
+B：⟦Tôi thì thích phở bò nhất.⟧ —— 我最喜歡牛肉河粉。
+⟦Xe máy mới của anh thế nào?⟧ —— 哥哥的新機車怎麼樣？
+單字：⟦trong⟧ 裡面，……之中 | ⟦món ăn⟧ 食物 | ⟦bún chả⟧ 烤肉米線（菜名）
+=en
+⟦Anh thích nhất phim hành động. Còn em thì sao?⟧ — I like action movies best. How about you?
+"subject + thì sao?" means "what about …?". It's used to ask about the other person's state or situation regarding something already mentioned in the conversation. ⟦thế nào⟧ also means "how is …", but differs in that it can be used even when nothing has been mentioned before.
+A: ⟦Trong các món ăn Việt Nam, tôi thích nhất bún chả. Còn anh thì sao?⟧ — Of all Vietnamese dishes I like bún chả best. How about you?
+B: ⟦Tôi thì thích phở bò nhất.⟧ — As for me, I like beef phở best.
+⟦Xe máy mới của anh thế nào?⟧ — How's your new motorbike, brother?
+Words: ⟦trong⟧ in, among | ⟦món ăn⟧ dish, food | ⟦bún chả⟧ bún chả (a dish)
+=fr
+⟦Anh thích nhất phim hành động. Còn em thì sao?⟧ — J'adore les films d'action. Et toi ?
+« sujet + thì sao? » signifie « et … ? ». On l'emploie pour demander l'état ou la situation de l'autre à propos d'un sujet déjà abordé. ⟦thế nào⟧ signifie aussi « comment est … », mais il peut s'employer même sans mention préalable.
+A : ⟦Trong các món ăn Việt Nam, tôi thích nhất bún chả. Còn anh thì sao?⟧ — Parmi les plats vietnamiens, je préfère le bún chả. Et vous ?
+B : ⟦Tôi thì thích phở bò nhất.⟧ — Moi, je préfère le phở au bœuf.
+⟦Xe máy mới của anh thế nào?⟧ — Comment est ton nouveau scooter, grand frère ?
+Mots : ⟦trong⟧ dans, parmi | ⟦món ăn⟧ plat | ⟦bún chả⟧ bún chả (nom d'un plat)
+=de
+⟦Anh thích nhất phim hành động. Còn em thì sao?⟧ — Ich mag Actionfilme am liebsten. Und du?
+„Subjekt + thì sao?“ bedeutet „und was ist mit …?“. Man fragt damit nach dem Zustand oder der Situation des Gegenübers zu einem bereits erwähnten Thema. ⟦thế nào⟧ bedeutet ebenfalls „wie ist …“, kann aber auch ohne vorherige Erwähnung verwendet werden.
+A: ⟦Trong các món ăn Việt Nam, tôi thích nhất bún chả. Còn anh thì sao?⟧ — Von den vietnamesischen Gerichten mag ich Bún chả am liebsten. Und Sie?
+B: ⟦Tôi thì thích phở bò nhất.⟧ — Ich mag Rindfleisch-Phở am liebsten.
+⟦Xe máy mới của anh thế nào?⟧ — Wie ist dein neuer Motorroller, großer Bruder?
+Wörter: ⟦trong⟧ in, unter | ⟦món ăn⟧ Gericht | ⟦bún chả⟧ Bún chả (Gericht)
+=hu
+⟦Anh thích nhất phim hành động. Còn em thì sao?⟧ — Én az akciófilmeket szeretem a legjobban. És te?
+Az „alany + thì sao?” jelentése „és … ?”. Akkor használjuk, amikor a beszélgetésben már szóba került témával kapcsolatban a másik állapotáról vagy helyzetéről kérdezünk. A ⟦thế nào⟧ jelentése is „milyen …”, de abban különbözik, hogy előzetes említés nélkül is használható.
+A: ⟦Trong các món ăn Việt Nam, tôi thích nhất bún chả. Còn anh thì sao?⟧ — A vietnámi ételek közül a bún chả-t szeretem a legjobban. És ön?
+B: ⟦Tôi thì thích phở bò nhất.⟧ — Én a marhahúsos phởt szeretem a legjobban.
+⟦Xe máy mới của anh thế nào?⟧ — Milyen az új motorod, bátyám?
+Szavak: ⟦trong⟧ -ban/-ben, között | ⟦món ăn⟧ étel | ⟦bún chả⟧ bún chả (étel neve)
+=id
+⟦Anh thích nhất phim hành động. Còn em thì sao?⟧ — Kakak paling suka film aksi. Kalau kamu?
+"subjek + thì sao?" berarti "bagaimana dengan …?". Dipakai untuk menanyakan keadaan atau situasi lawan bicara tentang hal yang sudah disebut dalam percakapan. ⟦thế nào⟧ juga berarti "bagaimana …", tetapi bisa dipakai meskipun sebelumnya tidak ada yang disebut.
+A: ⟦Trong các món ăn Việt Nam, tôi thích nhất bún chả. Còn anh thì sao?⟧ — Di antara masakan Vietnam, saya paling suka bún chả. Kalau Anda?
+B: ⟦Tôi thì thích phở bò nhất.⟧ — Saya paling suka phở sapi.
+⟦Xe máy mới của anh thế nào?⟧ — Bagaimana sepeda motor baru Kakak?
+Kosakata: ⟦trong⟧ di dalam, di antara | ⟦món ăn⟧ masakan | ⟦bún chả⟧ bún chả (nama makanan)
+=ja
+⟦Anh thích nhất phim hành động. Còn em thì sao?⟧ — 僕はアクション映画がいちばん好きだ。君はどう？
+「主語 thì sao?」は「主語はどう？」という意味で使えます。会話ですでに話題になった内容について、相手の状態や状況を尋ねるときの表現です。⟦thế nào⟧ も「～はどう」という意味ですが、前に話題に出た内容がなくても使える点が違います。
+A：⟦Trong các món ăn Việt Nam, tôi thích nhất bún chả. Còn anh thì sao?⟧ — ベトナム料理の中で私はブンチャーがいちばん好きです。あなたはどうですか。
+B：⟦Tôi thì thích phở bò nhất.⟧ — 私は牛肉のフォーがいちばん好きです。
+⟦Xe máy mới của anh thế nào?⟧ — お兄さんの新しいバイクはどうですか。
+単語：⟦trong⟧ 中、～の中で | ⟦món ăn⟧ 料理 | ⟦bún chả⟧ ブンチャー（料理名）
+=pl
+⟦Anh thích nhất phim hành động. Còn em thì sao?⟧ — Najbardziej lubię filmy akcji. A ty?
+„podmiot + thì sao?” znaczy „a co z …?”. Używa się go, pytając o stan lub sytuację rozmówcy w sprawie już poruszonej w rozmowie. ⟦thế nào⟧ też znaczy „jak …”, ale różni się tym, że można go użyć nawet bez wcześniejszej wzmianki.
+A: ⟦Trong các món ăn Việt Nam, tôi thích nhất bún chả. Còn anh thì sao?⟧ — Z dań wietnamskich najbardziej lubię bún chả. A pan?
+B: ⟦Tôi thì thích phở bò nhất.⟧ — Ja najbardziej lubię phở z wołowiną.
+⟦Xe máy mới của anh thế nào?⟧ — Jak tam twój nowy skuter, bracie?
+Słówka: ⟦trong⟧ w, spośród | ⟦món ăn⟧ danie | ⟦bún chả⟧ bún chả (nazwa dania)
+@@ pdf-grammar-4d11f01b22025cef#0
+~t 2. Srovnání preferencí: thích ~ hơn|2. 比较偏好：thích ~ hơn|2. 比較偏好：thích ~ hơn|2. Comparing preferences: thích ~ hơn|2. Comparer ses préférences : thích ~ hơn|2. Vorlieben vergleichen: thích ~ hơn|2. Preferenciák összevetése: thích ~ hơn|2. Membandingkan kesukaan: thích ~ hơn|2. 好みの比較：thích ~ hơn|2. Porównywanie upodobań: thích ~ hơn
+=cs
+⟦Em thì thích phim hài hơn ạ.⟧ — Já mám raději komedie.
+⟦thích ~ hơn⟧ znamená „mít raději ~“ a vyjadřuje osobní preferenci mezi zmíněnými možnostmi.
+A: ⟦Mùa hè và mùa đông, em thích mùa nào hơn?⟧ — Léto, nebo zima — které období máš raději?
+B: ⟦Em thích mùa hè hơn.⟧ — Mám raději léto.
+⟦Trong hai loại phở bò và phở gà, tôi thích phở bò hơn.⟧ — Ze dvou druhů, hovězího a kuřecího phở, mám raději hovězí.
+Slovíčka: ⟦mùa đông⟧ zima | ⟦gà⟧ kuře
+=zh_cn
+⟦Em thì thích phim hài hơn ạ.⟧ —— 我更喜欢喜剧片。
+⟦thích ~ hơn⟧ 意为“更喜欢……”，表示在所提到的对象中个人更偏爱的一方。
+A：⟦Mùa hè và mùa đông, em thích mùa nào hơn?⟧ —— 夏天和冬天，你更喜欢哪个季节？
+B：⟦Em thích mùa hè hơn.⟧ —— 我更喜欢夏天。
+⟦Trong hai loại phở bò và phở gà, tôi thích phở bò hơn.⟧ —— 牛肉河粉和鸡肉河粉这两种里，我更喜欢牛肉河粉。
+单词：⟦mùa đông⟧ 冬天 | ⟦gà⟧ 鸡
+=zh
+⟦Em thì thích phim hài hơn ạ.⟧ —— 我更喜歡喜劇片。
+⟦thích ~ hơn⟧ 意為「更喜歡……」，表示在所提到的對象中個人更偏愛的一方。
+A：⟦Mùa hè và mùa đông, em thích mùa nào hơn?⟧ —— 夏天和冬天，你更喜歡哪個季節？
+B：⟦Em thích mùa hè hơn.⟧ —— 我更喜歡夏天。
+⟦Trong hai loại phở bò và phở gà, tôi thích phở bò hơn.⟧ —— 牛肉河粉和雞肉河粉這兩種裡，我更喜歡牛肉河粉。
+單字：⟦mùa đông⟧ 冬天 | ⟦gà⟧ 雞
+=en
+⟦Em thì thích phim hài hơn ạ.⟧ — As for me, I prefer comedies.
+⟦thích ~ hơn⟧ means "to like ~ more, to prefer ~" and expresses personal preference among the options mentioned.
+A: ⟦Mùa hè và mùa đông, em thích mùa nào hơn?⟧ — Summer or winter — which season do you like more?
+B: ⟦Em thích mùa hè hơn.⟧ — I like summer more.
+⟦Trong hai loại phở bò và phở gà, tôi thích phở bò hơn.⟧ — Of the two kinds, beef phở and chicken phở, I prefer beef phở.
+Words: ⟦mùa đông⟧ winter | ⟦gà⟧ chicken
+=fr
+⟦Em thì thích phim hài hơn ạ.⟧ — Moi, je préfère les comédies.
+⟦thích ~ hơn⟧ signifie « préférer ~ » et exprime une préférence personnelle parmi les choix évoqués.
+A : ⟦Mùa hè và mùa đông, em thích mùa nào hơn?⟧ — L'été ou l'hiver : quelle saison préfères-tu ?
+B : ⟦Em thích mùa hè hơn.⟧ — Je préfère l'été.
+⟦Trong hai loại phở bò và phở gà, tôi thích phở bò hơn.⟧ — Entre le phở au bœuf et le phở au poulet, je préfère le phở au bœuf.
+Mots : ⟦mùa đông⟧ hiver | ⟦gà⟧ poulet
+=de
+⟦Em thì thích phim hài hơn ạ.⟧ — Ich mag lieber Komödien.
+⟦thích ~ hơn⟧ bedeutet „~ lieber mögen“ und drückt eine persönliche Vorliebe unter den genannten Möglichkeiten aus.
+A: ⟦Mùa hè và mùa đông, em thích mùa nào hơn?⟧ — Sommer oder Winter – welche Jahreszeit magst du lieber?
+B: ⟦Em thích mùa hè hơn.⟧ — Ich mag den Sommer lieber.
+⟦Trong hai loại phở bò và phở gà, tôi thích phở bò hơn.⟧ — Von den beiden Sorten Rindfleisch- und Hühnchen-Phở mag ich Rindfleisch-Phở lieber.
+Wörter: ⟦mùa đông⟧ Winter | ⟦gà⟧ Huhn
+=hu
+⟦Em thì thích phim hài hơn ạ.⟧ — Én inkább a vígjátékokat szeretem.
+A ⟦thích ~ hơn⟧ jelentése „jobban szeret ~t”, a felsorolt lehetőségek közti személyes preferenciát fejezi ki.
+A: ⟦Mùa hè và mùa đông, em thích mùa nào hơn?⟧ — A nyarat vagy a telet szereted jobban?
+B: ⟦Em thích mùa hè hơn.⟧ — A nyarat szeretem jobban.
+⟦Trong hai loại phở bò và phở gà, tôi thích phở bò hơn.⟧ — A marhahúsos és a csirkés phở közül a marhahúsosat szeretem jobban.
+Szavak: ⟦mùa đông⟧ tél | ⟦gà⟧ csirke
+=id
+⟦Em thì thích phim hài hơn ạ.⟧ — Saya lebih suka film komedi.
+⟦thích ~ hơn⟧ berarti "lebih suka ~" dan menyatakan kesukaan pribadi di antara pilihan yang disebutkan.
+A: ⟦Mùa hè và mùa đông, em thích mùa nào hơn?⟧ — Musim panas dan musim dingin, kamu lebih suka yang mana?
+B: ⟦Em thích mùa hè hơn.⟧ — Saya lebih suka musim panas.
+⟦Trong hai loại phở bò và phở gà, tôi thích phở bò hơn.⟧ — Dari dua jenis phở sapi dan phở ayam, saya lebih suka phở sapi.
+Kosakata: ⟦mùa đông⟧ musim dingin | ⟦gà⟧ ayam
+=ja
+⟦Em thì thích phim hài hơn ạ.⟧ — 私はコメディ映画のほうが好きです。
+⟦thích ~ hơn⟧ は「～のほうが好きだ」という意味で、挙げられた対象の中で個人的にどちらがより好きかを表す表現です。
+A：⟦Mùa hè và mùa đông, em thích mùa nào hơn?⟧ — 夏と冬、どちらの季節のほうが好き？
+B：⟦Em thích mùa hè hơn.⟧ — 夏のほうが好きです。
+⟦Trong hai loại phở bò và phở gà, tôi thích phở bò hơn.⟧ — 牛肉のフォーと鶏肉のフォーの2種類のうち、私は牛肉のフォーのほうが好きだ。
+単語：⟦mùa đông⟧ 冬 | ⟦gà⟧ 鶏
+=pl
+⟦Em thì thích phim hài hơn ạ.⟧ — Ja wolę komedie.
+⟦thích ~ hơn⟧ znaczy „bardziej lubić ~, woleć ~” i wyraża osobistą preferencję spośród wymienionych możliwości.
+A: ⟦Mùa hè và mùa đông, em thích mùa nào hơn?⟧ — Lato czy zima — którą porę roku wolisz?
+B: ⟦Em thích mùa hè hơn.⟧ — Wolę lato.
+⟦Trong hai loại phở bò và phở gà, tôi thích phở bò hơn.⟧ — Z dwóch rodzajów, phở z wołowiną i z kurczakiem, wolę z wołowiną.
+Słówka: ⟦mùa đông⟧ zima | ⟦gà⟧ kurczak
+@@ pdf-grammar-d9a79cad3731b2a8#0
+~t 1. Výraz hãy|1. hãy 的表达|1. hãy 的表達|1. The word hãy|1. L'expression hãy|1. Der Ausdruck hãy|1. A hãy kifejezés|1. Ungkapan hãy|1. hãy の表現|1. Wyrażenie hãy
+=cs
+⟦Các em hãy nghe cô đọc nhé.⟧ — Děti, poslouchejte pozorně, co paní učitelka čte.
+⟦hãy⟧ znamená „…ej! / pojďme …“ a používá se v rozkazovacích a vybízecích větách, spíše v psaném než v hovorovém stylu. Jiným způsobem, jak někoho k něčemu vybídnout, je ⟦nhé⟧ na konci věty.
+⟦Hãy trả lời những câu hỏi sau xem “đúng” hay “sai”!⟧ — Odpovězte na následující otázky „správně“ nebo „špatně“!
+⟦Chúng ta hãy đến xem.⟧ — Pojďme se tam podívat.
+⟦Bây giờ chúng ta xem TV nhé.⟧ — Pojďme se teď dívat na televizi.
+Slovíčka: ⟦trả lời⟧ odpovědět | ⟦những⟧ (množné číslo) | ⟦câu hỏi⟧ otázka | ⟦sai⟧ špatný, chybný
+=zh_cn
+⟦Các em hãy nghe cô đọc nhé.⟧ —— 同学们，好好听老师读。
+⟦hãy⟧ 意为“……吧 / 请……”，用于命令句或劝诱句，多用于书面语而非口语。另一种劝诱的表达是在句末用 ⟦nhé⟧。
+⟦Hãy trả lời những câu hỏi sau xem “đúng” hay “sai”!⟧ —— 请用“对”或“错”回答下列问题！
+⟦Chúng ta hãy đến xem.⟧ —— 我们去看看吧。
+⟦Bây giờ chúng ta xem TV nhé.⟧ —— 现在我们看电视吧。
+单词：⟦trả lời⟧ 回答 | ⟦những⟧ ……们（复数） | ⟦câu hỏi⟧ 问题 | ⟦sai⟧ 错
+=zh
+⟦Các em hãy nghe cô đọc nhé.⟧ —— 同學們，好好聽老師讀。
+⟦hãy⟧ 意為「……吧 / 請……」，用於命令句或勸誘句，多用於書面語而非口語。另一種勸誘的表達是在句末用 ⟦nhé⟧。
+⟦Hãy trả lời những câu hỏi sau xem “đúng” hay “sai”!⟧ —— 請用「對」或「錯」回答下列問題！
+⟦Chúng ta hãy đến xem.⟧ —— 我們去看看吧。
+⟦Bây giờ chúng ta xem TV nhé.⟧ —— 現在我們看電視吧。
+單字：⟦trả lời⟧ 回答 | ⟦những⟧ ……們（複數） | ⟦câu hỏi⟧ 問題 | ⟦sai⟧ 錯
+=en
+⟦Các em hãy nghe cô đọc nhé.⟧ — Everyone, listen carefully as the teacher reads.
+⟦hãy⟧ means "do …! / let's …" and is used in commands and suggestions, mainly in written rather than spoken style. Another way to make a suggestion is ⟦nhé⟧ at the end of the sentence.
+⟦Hãy trả lời những câu hỏi sau xem “đúng” hay “sai”!⟧ — Answer the following questions with "true" or "false"!
+⟦Chúng ta hãy đến xem.⟧ — Let's go and see.
+⟦Bây giờ chúng ta xem TV nhé.⟧ — Let's watch TV now.
+Words: ⟦trả lời⟧ to answer | ⟦những⟧ (plural marker) | ⟦câu hỏi⟧ question | ⟦sai⟧ wrong
+=fr
+⟦Các em hãy nghe cô đọc nhé.⟧ — Écoutez bien la maîtresse lire, les enfants.
+⟦hãy⟧ signifie « fais … ! / faisons … » et s'emploie dans les phrases impératives et incitatives, surtout à l'écrit plutôt qu'à l'oral. Une autre façon d'inviter à faire quelque chose est ⟦nhé⟧ en fin de phrase.
+⟦Hãy trả lời những câu hỏi sau xem “đúng” hay “sai”!⟧ — Répondez aux questions suivantes par « vrai » ou « faux » !
+⟦Chúng ta hãy đến xem.⟧ — Allons voir.
+⟦Bây giờ chúng ta xem TV nhé.⟧ — Regardons la télé maintenant.
+Mots : ⟦trả lời⟧ répondre | ⟦những⟧ (marque du pluriel) | ⟦câu hỏi⟧ question | ⟦sai⟧ faux
+=de
+⟦Các em hãy nghe cô đọc nhé.⟧ — Kinder, hört gut zu, wenn die Lehrerin vorliest.
+⟦hãy⟧ bedeutet „tu …! / lasst uns …“ und wird in Befehls- und Aufforderungssätzen verwendet, eher schriftsprachlich als umgangssprachlich. Eine andere Art der Aufforderung ist ⟦nhé⟧ am Satzende.
+⟦Hãy trả lời những câu hỏi sau xem “đúng” hay “sai”!⟧ — Beantworten Sie die folgenden Fragen mit „richtig“ oder „falsch“!
+⟦Chúng ta hãy đến xem.⟧ — Lasst uns hingehen und nachsehen.
+⟦Bây giờ chúng ta xem TV nhé.⟧ — Lass uns jetzt fernsehen.
+Wörter: ⟦trả lời⟧ antworten | ⟦những⟧ (Pluralmarker) | ⟦câu hỏi⟧ Frage | ⟦sai⟧ falsch
+=hu
+⟦Các em hãy nghe cô đọc nhé.⟧ — Gyerekek, figyeljetek jól, ahogy a tanárnő olvas.
+A ⟦hãy⟧ jelentése „…-j! / …-junk!”, felszólító és buzdító mondatokban használjuk, inkább írott, mint beszélt nyelvben. A buzdítás másik módja a mondat végi ⟦nhé⟧.
+⟦Hãy trả lời những câu hỏi sau xem “đúng” hay “sai”!⟧ — Válaszoljon a következő kérdésekre „igaz” vagy „hamis” válasszal!
+⟦Chúng ta hãy đến xem.⟧ — Menjünk és nézzük meg.
+⟦Bây giờ chúng ta xem TV nhé.⟧ — Most nézzünk tévét.
+Szavak: ⟦trả lời⟧ válaszolni | ⟦những⟧ (többes szám jelölője) | ⟦câu hỏi⟧ kérdés | ⟦sai⟧ hibás, rossz
+=id
+⟦Các em hãy nghe cô đọc nhé.⟧ — Anak-anak, dengarkan baik-baik Bu Guru membaca, ya.
+⟦hãy⟧ berarti "…lah / mari …" dan dipakai dalam kalimat perintah atau ajakan, terutama dalam ragam tulis daripada lisan. Cara lain untuk mengajak adalah memakai ⟦nhé⟧ di akhir kalimat.
+⟦Hãy trả lời những câu hỏi sau xem “đúng” hay “sai”!⟧ — Jawablah pertanyaan-pertanyaan berikut dengan "benar" atau "salah"!
+⟦Chúng ta hãy đến xem.⟧ — Mari kita pergi melihat.
+⟦Bây giờ chúng ta xem TV nhé.⟧ — Sekarang kita nonton TV, yuk.
+Kosakata: ⟦trả lời⟧ menjawab | ⟦những⟧ (penanda jamak) | ⟦câu hỏi⟧ pertanyaan | ⟦sai⟧ salah
+=ja
+⟦Các em hãy nghe cô đọc nhé.⟧ — みなさん、先生が読むのをよく聞いてくださいね。
+⟦hãy⟧ は「～しなさい・～しよう」の意味で命令文や勧誘文に使われ、口語よりも主に文語で使われます。もう一つの勧誘の表現として、文末に ⟦nhé⟧ を使うこともあります。
+⟦Hãy trả lời những câu hỏi sau xem “đúng” hay “sai”!⟧ — 次の質問に「正しい」か「誤り」で答えなさい！
+⟦Chúng ta hãy đến xem.⟧ — 私たち、行って見てみよう。
+⟦Bây giờ chúng ta xem TV nhé.⟧ — 今からテレビを見よう。
+単語：⟦trả lời⟧ 答える | ⟦những⟧ ～たち（複数表現） | ⟦câu hỏi⟧ 質問 | ⟦sai⟧ 間違っている
+=pl
+⟦Các em hãy nghe cô đọc nhé.⟧ — Dzieci, posłuchajcie uważnie, jak pani czyta.
+⟦hãy⟧ znaczy „zrób …! / zróbmy …” i występuje w zdaniach rozkazujących i zachęcających, raczej w stylu pisanym niż mówionym. Innym sposobem zachęty jest ⟦nhé⟧ na końcu zdania.
+⟦Hãy trả lời những câu hỏi sau xem “đúng” hay “sai”!⟧ — Odpowiedz na poniższe pytania „prawda” lub „fałsz”!
+⟦Chúng ta hãy đến xem.⟧ — Chodźmy zobaczyć.
+⟦Bây giờ chúng ta xem TV nhé.⟧ — Pooglądajmy teraz telewizję.
+Słówka: ⟦trả lời⟧ odpowiadać | ⟦những⟧ (wskaźnik liczby mnogiej) | ⟦câu hỏi⟧ pytanie | ⟦sai⟧ błędny
+@@ pdf-grammar-d9a79cad3731b2a8#1
+~t 2. Ověřovací otázka: đúng không?|2. 确认疑问：đúng không?|2. 確認疑問：đúng không?|2. Checking questions: đúng không?|2. Question de vérification : đúng không ?|2. Rückfrage: đúng không?|2. Ellenőrző kérdés: đúng không?|2. Pertanyaan konfirmasi: đúng không?|2. 確認の疑問表現：đúng không?|2. Pytanie sprawdzające: đúng không?
+=cs
+⟦Cô ạ, tuần sau có bài kiểm tra, đúng không ạ?⟧ — Paní učitelko, příští týden je test, že ano?
+⟦đúng không?⟧ se připojuje za oznamovací větu a ověřuje její obsah. Znamená „že? / je to tak?“; lze použít i ⟦phải không?⟧.
+A: ⟦Ngày mai là sinh nhật của bạn, đúng không?⟧ — Zítra máš narozeniny, že?
+B: ⟦Đúng rồi, ngày mai là sinh nhật của mình.⟧ — Přesně tak, zítra mám narozeniny.
+B: ⟦Không đúng (phải), ngày mai không phải là sinh nhật của mình.⟧ — Ne, zítra narozeniny nemám.
+=zh_cn
+⟦Cô ạ, tuần sau có bài kiểm tra, đúng không ạ?⟧ —— 老师，下周有考试，对吧？
+⟦đúng không?⟧ 接在陈述句后面，用来确认前面的内容，意为“对吧、是吧”，也可以用 ⟦phải không?⟧。
+A：⟦Ngày mai là sinh nhật của bạn, đúng không?⟧ —— 明天是你的生日，对吧？
+B：⟦Đúng rồi, ngày mai là sinh nhật của mình.⟧ —— 对，明天是我的生日。
+B：⟦Không đúng (phải), ngày mai không phải là sinh nhật của mình.⟧ —— 不对，明天不是我的生日。
+=zh
+⟦Cô ạ, tuần sau có bài kiểm tra, đúng không ạ?⟧ —— 老師，下週有考試，對吧？
+⟦đúng không?⟧ 接在陳述句後面，用來確認前面的內容，意為「對吧、是吧」，也可以用 ⟦phải không?⟧。
+A：⟦Ngày mai là sinh nhật của bạn, đúng không?⟧ —— 明天是你的生日，對吧？
+B：⟦Đúng rồi, ngày mai là sinh nhật của mình.⟧ —— 對，明天是我的生日。
+B：⟦Không đúng (phải), ngày mai không phải là sinh nhật của mình.⟧ —— 不對，明天不是我的生日。
+=en
+⟦Cô ạ, tuần sau có bài kiểm tra, đúng không ạ?⟧ — Teacher, there's a test next week, right?
+⟦đúng không?⟧ is added after a statement to check what was just said. It means "right? / isn't it?"; ⟦phải không?⟧ can also be used.
+A: ⟦Ngày mai là sinh nhật của bạn, đúng không?⟧ — Tomorrow is your birthday, right?
+B: ⟦Đúng rồi, ngày mai là sinh nhật của mình.⟧ — That's right, tomorrow is my birthday.
+B: ⟦Không đúng (phải), ngày mai không phải là sinh nhật của mình.⟧ — No, tomorrow isn't my birthday.
+=fr
+⟦Cô ạ, tuần sau có bài kiểm tra, đúng không ạ?⟧ — Madame, il y a un contrôle la semaine prochaine, c'est bien ça ?
+⟦đúng không?⟧ se place après une affirmation pour la vérifier. Il signifie « n'est-ce pas ? / c'est bien ça ? » ; on peut aussi employer ⟦phải không?⟧.
+A : ⟦Ngày mai là sinh nhật của bạn, đúng không?⟧ — Demain, c'est ton anniversaire, n'est-ce pas ?
+B : ⟦Đúng rồi, ngày mai là sinh nhật của mình.⟧ — C'est ça, demain c'est mon anniversaire.
+B : ⟦Không đúng (phải), ngày mai không phải là sinh nhật của mình.⟧ — Non, demain ce n'est pas mon anniversaire.
+=de
+⟦Cô ạ, tuần sau có bài kiểm tra, đúng không ạ?⟧ — Frau Lehrerin, nächste Woche ist doch eine Prüfung, oder?
+⟦đúng không?⟧ wird an einen Aussagesatz angehängt, um dessen Inhalt zu bestätigen. Es bedeutet „nicht wahr? / stimmt's?“; man kann auch ⟦phải không?⟧ verwenden.
+A: ⟦Ngày mai là sinh nhật của bạn, đúng không?⟧ — Morgen hast du Geburtstag, stimmt's?
+B: ⟦Đúng rồi, ngày mai là sinh nhật của mình.⟧ — Genau, morgen habe ich Geburtstag.
+B: ⟦Không đúng (phải), ngày mai không phải là sinh nhật của mình.⟧ — Nein, morgen habe ich nicht Geburtstag.
+=hu
+⟦Cô ạ, tuần sau có bài kiểm tra, đúng không ạ?⟧ — Tanárnő, jövő héten dolgozat lesz, ugye?
+A ⟦đúng không?⟧ kijelentő mondat után áll, és a mondottakat erősíti meg. Jelentése „ugye? / igaz?”; a ⟦phải không?⟧ is használható.
+A: ⟦Ngày mai là sinh nhật của bạn, đúng không?⟧ — Holnap lesz a születésnapod, ugye?
+B: ⟦Đúng rồi, ngày mai là sinh nhật của mình.⟧ — Igen, holnap lesz a születésnapom.
+B: ⟦Không đúng (phải), ngày mai không phải là sinh nhật của mình.⟧ — Nem, holnap nincs születésnapom.
+=id
+⟦Cô ạ, tuần sau có bài kiểm tra, đúng không ạ?⟧ — Bu Guru, minggu depan ada ujian, kan?
+⟦đúng không?⟧ ditempatkan setelah kalimat pernyataan untuk memastikan isinya. Artinya "kan? / benar?"; bisa juga dipakai ⟦phải không?⟧.
+A: ⟦Ngày mai là sinh nhật của bạn, đúng không?⟧ — Besok ulang tahunmu, kan?
+B: ⟦Đúng rồi, ngày mai là sinh nhật của mình.⟧ — Betul, besok ulang tahunku.
+B: ⟦Không đúng (phải), ngày mai không phải là sinh nhật của mình.⟧ — Bukan, besok bukan ulang tahunku.
+=ja
+⟦Cô ạ, tuần sau có bài kiểm tra, đúng không ạ?⟧ — 先生、来週試験がありますよね？
+⟦đúng không?⟧ は平叙文の後につけて前の内容を確認する語です。「そうだよね・そうでしょう」という意味で、⟦phải không?⟧ も使えます。
+A：⟦Ngày mai là sinh nhật của bạn, đúng không?⟧ — 明日は君の誕生日だよね？
+B：⟦Đúng rồi, ngày mai là sinh nhật của mình.⟧ — そうだよ、明日は私の誕生日。
+B：⟦Không đúng (phải), ngày mai không phải là sinh nhật của mình.⟧ — 違うよ、明日は私の誕生日じゃない。
+=pl
+⟦Cô ạ, tuần sau có bài kiểm tra, đúng không ạ?⟧ — Proszę pani, w przyszłym tygodniu jest sprawdzian, prawda?
+⟦đúng không?⟧ dodaje się po zdaniu oznajmującym, by potwierdzić jego treść. Znaczy „prawda? / zgadza się?”; można też użyć ⟦phải không?⟧.
+A: ⟦Ngày mai là sinh nhật của bạn, đúng không?⟧ — Jutro są twoje urodziny, prawda?
+B: ⟦Đúng rồi, ngày mai là sinh nhật của mình.⟧ — Zgadza się, jutro mam urodziny.
+B: ⟦Không đúng (phải), ngày mai không phải là sinh nhật của mình.⟧ — Nie, jutro nie mam urodzin.

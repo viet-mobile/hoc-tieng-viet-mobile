@@ -1,0 +1,191 @@
+@@ pdf-grammar-9a23f8cd3400139f#0
+=cs
+Klíčový výraz: ⟦còn gì⟧
+⟦~ còn gì!⟧ znamená „vždyť přece ~! (tak co si stěžuješ?)“.
+Příklady:
+❶ ⟦Anh có nhiều tiền rồi còn gì!⟧ — Vždyť máš spoustu peněz!
+❷ Ⓐ ⟦Em đã có việc làm rồi còn gì!⟧ — Vždyť už máš práci! Ⓑ ⟦Em muốn làm việc ở công ti tốt hơn.⟧ — Chci pracovat v lepší firmě.
+Různé výrazy ke služební cestě do zahraničí: ⟦tham dự lễ khai mạc⟧ zúčastnit se slavnostního zahájení | ⟦làm quen với đồng nghiệp Việt Nam⟧ seznámit se s vietnamskými kolegy | ⟦thực tập tiếng Việt một cách chính thức⟧ pořádně si procvičit vietnamštinu | ⟦triển lãm sản phẩm mới do chi nhánh tổ chức⟧ výstava nových výrobků pořádaná pobočkou
+Rozhovor: Min-ho a Trang jedou autem do centra Hanoje a mluví o plánech.
+Min-ho: ⟦Ôi, Hà Nội đẹp thật!⟧ — Páni, Hanoj je opravdu krásná!
+Trang: ⟦Anh sẽ ở Hà Nội trong bao lâu?⟧ — Jak dlouho budete v Hanoji?
+Min-ho: ⟦Anh dự định ở lại khoảng một năm nên muốn làm thử nhiều việc. Cuối năm, trước khi vào Sài Gòn, anh sẽ ghé qua Đà Nẵng để tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức.⟧ — Plánuji zůstat asi rok, tak si chci vyzkoušet spoustu věcí. Na konci roku se před cestou do Saigonu zastavím v Da Nangu na zahájení výstavy nových výrobků, kterou pořádá tamní pobočka.
+Trang: ⟦Thế thì có lẽ anh sẽ có nhiều kinh nghiệm có ích ở Việt Nam.⟧ — Pak asi ve Vietnamu získáte spoustu užitečných zkušeností.
+Min-ho: ⟦Ừ. Anh sẽ sắp xếp thời gian để vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa.⟧ — Jo. Rozvrhnu si čas tak, abych cestoval a zároveň si pořádně procvičil vietnamštinu.
+Trang: ⟦Anh nói tiếng Việt giỏi thế rồi còn gì!⟧ — Vždyť už mluvíte vietnamsky tak dobře!
+Procvičování vzorců — kam se zastavit před Saigonem: ⟦Đà Nẵng⟧ / ⟦Huế⟧; důvod: ⟦tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức⟧ (zahájení výstavy nových výrobků pobočky v Da Nangu) / ⟦đến dự hội nghị quốc tế do Bộ Kế hoạch và Đầu tư Việt Nam tổ chức⟧ (mezinárodní konference pořádaná vietnamským ministerstvem plánování a investic); proč si rozvrhnout čas: ⟦vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa⟧ / ⟦làm quen thêm với các đồng nghiệp Việt Nam⟧ (lépe se seznámit s vietnamskými kolegy); odpověď Trang: ⟦nói tiếng Việt giỏi thế rồi còn gì⟧ / ⟦có nhiều đồng nghiệp rồi còn gì⟧.
+Vzor: Ⓐ ⟦Anh đã có bạn gái rồi còn gì!⟧ — Vždyť už máš přítelkyni! Ⓑ ⟦Anh đã có bạn gái đâu?⟧ — Jakou přítelkyni?
+❶ Ⓐ ⟦Chị đã uống một cốc cà phê rồi còn gì!⟧ — Vždyť už jsi vypila šálek kávy! Ⓑ ⟦Chị muốn uống thêm một cốc nữa.⟧ — Chci si dát ještě jeden.
+❷ Ⓐ ⟦Em đã đi du lịch Việt Nam rồi còn gì!⟧ — Vždyť už jsi ve Vietnamu byl! Ⓑ ⟦Em chưa đi du lịch Vũng Tàu.⟧ — Ale ve Vũng Tàu jsem ještě nebyl.
+Nová slovíčka: ⟦tham dự⟧ zúčastnit se | ⟦khai mạc⟧ zahájit | ⟦sản phẩm⟧ výrobek | ⟦chi nhánh⟧ pobočka | ⟦thực tập⟧ procvičovat, mít praxi | ⟦chính thức⟧ oficiální, pořádný | ⟦đồng nghiệp⟧ kolega | ⟦ghé⟧ zastavit se | ⟦sắp xếp⟧ uspořádat
+=zh_cn
+核心表达：⟦còn gì⟧
+⟦~ còn gì!⟧ 意为“明明……嘛，还（说）什么！”。
+例句：
+❶ ⟦Anh có nhiều tiền rồi còn gì!⟧ —— 哥哥明明有很多钱嘛！
+❷ Ⓐ ⟦Em đã có việc làm rồi còn gì!⟧ —— 你明明已经有工作了嘛！ Ⓑ ⟦Em muốn làm việc ở công ti tốt hơn.⟧ —— 我想在更好的公司工作。
+与海外出差相关的各种表达：⟦tham dự lễ khai mạc⟧ 参加开幕式 | ⟦làm quen với đồng nghiệp Việt Nam⟧ 结识越南同事 | ⟦thực tập tiếng Việt một cách chính thức⟧ 正式地练习越南语 | ⟦triển lãm sản phẩm mới do chi nhánh tổ chức⟧ 分公司举办的新产品展览
+对话：敏浩和庄一起坐车前往河内市区，谈论今后的计划。
+敏浩：⟦Ôi, Hà Nội đẹp thật!⟧ —— 哇，河内真美！
+庄：⟦Anh sẽ ở Hà Nội trong bao lâu?⟧ —— 你会在河内待多久？
+敏浩：⟦Anh dự định ở lại khoảng một năm nên muốn làm thử nhiều việc. Cuối năm, trước khi vào Sài Gòn, anh sẽ ghé qua Đà Nẵng để tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức.⟧ —— 我打算待一年左右，所以想尝试很多事情。年底去西贡之前，我会顺路去岘港，参加岘港分公司举办的新产品展览开幕式。
+庄：⟦Thế thì có lẽ anh sẽ có nhiều kinh nghiệm có ích ở Việt Nam.⟧ —— 那你在越南大概会有很多有益的经验。
+敏浩：⟦Ừ. Anh sẽ sắp xếp thời gian để vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa.⟧ —— 嗯。我会安排时间，一边旅行一边正式地练习越南语。
+庄：⟦Anh nói tiếng Việt giỏi thế rồi còn gì!⟧ —— 你越南语明明已经说得这么好了嘛！
+句型练习 —— 去西贡前顺路去的地方：⟦Đà Nẵng⟧ / ⟦Huế⟧；顺路的理由：⟦tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức⟧（参加岘港分公司新产品展览开幕式）/ ⟦đến dự hội nghị quốc tế do Bộ Kế hoạch và Đầu tư Việt Nam tổ chức⟧（参加越南计划投资部举办的国际会议）；安排时间的理由：⟦vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa⟧ / ⟦làm quen thêm với các đồng nghiệp Việt Nam⟧（多认识越南同事）；庄的回应：⟦nói tiếng Việt giỏi thế rồi còn gì⟧ / ⟦có nhiều đồng nghiệp rồi còn gì⟧。
+范例：Ⓐ ⟦Anh đã có bạn gái rồi còn gì!⟧ —— 你明明已经有女朋友了嘛！ Ⓑ ⟦Anh đã có bạn gái đâu?⟧ —— 我哪有女朋友？
+❶ Ⓐ ⟦Chị đã uống một cốc cà phê rồi còn gì!⟧ —— 你明明已经喝了一杯咖啡了嘛！ Ⓑ ⟦Chị muốn uống thêm một cốc nữa.⟧ —— 我想再喝一杯。
+❷ Ⓐ ⟦Em đã đi du lịch Việt Nam rồi còn gì!⟧ —— 你明明已经去越南旅行过了嘛！ Ⓑ ⟦Em chưa đi du lịch Vũng Tàu.⟧ —— 我还没去过头顿。
+新单词：⟦tham dự⟧ 参加 | ⟦khai mạc⟧ 开幕 | ⟦sản phẩm⟧ 产品 | ⟦chi nhánh⟧ 分公司 | ⟦thực tập⟧ 实习，练习 | ⟦chính thức⟧ 正式的 | ⟦đồng nghiệp⟧ 同事 | ⟦ghé⟧ 顺路拜访 | ⟦sắp xếp⟧ 安排，整理
+=zh
+核心表達：⟦còn gì⟧
+⟦~ còn gì!⟧ 意為「明明……嘛，還（說）什麼！」。
+例句：
+❶ ⟦Anh có nhiều tiền rồi còn gì!⟧ —— 哥哥明明有很多錢嘛！
+❷ Ⓐ ⟦Em đã có việc làm rồi còn gì!⟧ —— 你明明已經有工作了嘛！ Ⓑ ⟦Em muốn làm việc ở công ti tốt hơn.⟧ —— 我想在更好的公司工作。
+與海外出差相關的各種表達：⟦tham dự lễ khai mạc⟧ 參加開幕式 | ⟦làm quen với đồng nghiệp Việt Nam⟧ 結識越南同事 | ⟦thực tập tiếng Việt một cách chính thức⟧ 正式地練習越南語 | ⟦triển lãm sản phẩm mới do chi nhánh tổ chức⟧ 分公司舉辦的新產品展覽
+對話：敏浩和莊一起搭車前往河內市區，談論今後的計畫。
+敏浩：⟦Ôi, Hà Nội đẹp thật!⟧ —— 哇，河內真美！
+莊：⟦Anh sẽ ở Hà Nội trong bao lâu?⟧ —— 你會在河內待多久？
+敏浩：⟦Anh dự định ở lại khoảng một năm nên muốn làm thử nhiều việc. Cuối năm, trước khi vào Sài Gòn, anh sẽ ghé qua Đà Nẵng để tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức.⟧ —— 我打算待一年左右，所以想嘗試很多事情。年底去西貢之前，我會順路去峴港，參加峴港分公司舉辦的新產品展覽開幕式。
+莊：⟦Thế thì có lẽ anh sẽ có nhiều kinh nghiệm có ích ở Việt Nam.⟧ —— 那你在越南大概會有很多有益的經驗。
+敏浩：⟦Ừ. Anh sẽ sắp xếp thời gian để vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa.⟧ —— 嗯。我會安排時間，一邊旅行一邊正式地練習越南語。
+莊：⟦Anh nói tiếng Việt giỏi thế rồi còn gì!⟧ —— 你越南語明明已經說得這麼好了嘛！
+句型練習 —— 去西貢前順路去的地方：⟦Đà Nẵng⟧ / ⟦Huế⟧；順路的理由：⟦tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức⟧（參加峴港分公司新產品展覽開幕式）/ ⟦đến dự hội nghị quốc tế do Bộ Kế hoạch và Đầu tư Việt Nam tổ chức⟧（參加越南計畫投資部舉辦的國際會議）；安排時間的理由：⟦vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa⟧ / ⟦làm quen thêm với các đồng nghiệp Việt Nam⟧（多認識越南同事）；莊的回應：⟦nói tiếng Việt giỏi thế rồi còn gì⟧ / ⟦có nhiều đồng nghiệp rồi còn gì⟧。
+範例：Ⓐ ⟦Anh đã có bạn gái rồi còn gì!⟧ —— 你明明已經有女朋友了嘛！ Ⓑ ⟦Anh đã có bạn gái đâu?⟧ —— 我哪有女朋友？
+❶ Ⓐ ⟦Chị đã uống một cốc cà phê rồi còn gì!⟧ —— 你明明已經喝了一杯咖啡了嘛！ Ⓑ ⟦Chị muốn uống thêm một cốc nữa.⟧ —— 我想再喝一杯。
+❷ Ⓐ ⟦Em đã đi du lịch Việt Nam rồi còn gì!⟧ —— 你明明已經去越南旅行過了嘛！ Ⓑ ⟦Em chưa đi du lịch Vũng Tàu.⟧ —— 我還沒去過頭頓。
+新單字：⟦tham dự⟧ 參加 | ⟦khai mạc⟧ 開幕 | ⟦sản phẩm⟧ 產品 | ⟦chi nhánh⟧ 分公司 | ⟦thực tập⟧ 實習，練習 | ⟦chính thức⟧ 正式的 | ⟦đồng nghiệp⟧ 同事 | ⟦ghé⟧ 順路拜訪 | ⟦sắp xếp⟧ 安排，整理
+=en
+Key expression: ⟦còn gì⟧
+⟦~ còn gì!⟧ means "but you already ~! (so what's the problem?)".
+Examples:
+❶ ⟦Anh có nhiều tiền rồi còn gì!⟧ — But you already have lots of money!
+❷ Ⓐ ⟦Em đã có việc làm rồi còn gì!⟧ — But you already have a job! Ⓑ ⟦Em muốn làm việc ở công ti tốt hơn.⟧ — I want to work at a better company.
+Various expressions about business trips abroad: ⟦tham dự lễ khai mạc⟧ attend an opening ceremony | ⟦làm quen với đồng nghiệp Việt Nam⟧ get to know Vietnamese colleagues | ⟦thực tập tiếng Việt một cách chính thức⟧ practise Vietnamese properly | ⟦triển lãm sản phẩm mới do chi nhánh tổ chức⟧ a new-product exhibition organized by the branch
+Dialogue: Min-ho and Trang ride together into downtown Hanoi, talking about his plans.
+Min-ho: ⟦Ôi, Hà Nội đẹp thật!⟧ — Wow, Hanoi is really beautiful!
+Trang: ⟦Anh sẽ ở Hà Nội trong bao lâu?⟧ — How long will you stay in Hanoi?
+Min-ho: ⟦Anh dự định ở lại khoảng một năm nên muốn làm thử nhiều việc. Cuối năm, trước khi vào Sài Gòn, anh sẽ ghé qua Đà Nẵng để tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức.⟧ — I plan to stay about a year, so I want to try lots of things. At the end of the year, before going to Saigon, I'll stop by Da Nang to attend the opening of a new-product exhibition organized by the Da Nang branch.
+Trang: ⟦Thế thì có lẽ anh sẽ có nhiều kinh nghiệm có ích ở Việt Nam.⟧ — Then you'll probably gain lots of useful experience in Vietnam.
+Min-ho: ⟦Ừ. Anh sẽ sắp xếp thời gian để vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa.⟧ — Yeah. I'll arrange my time so I can travel and properly practise Vietnamese too.
+Trang: ⟦Anh nói tiếng Việt giỏi thế rồi còn gì!⟧ — But you already speak Vietnamese so well!
+Pattern practice — place to stop by before Saigon: ⟦Đà Nẵng⟧ / ⟦Huế⟧; reason: ⟦tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức⟧ (the opening of the Da Nang branch's new-product exhibition) / ⟦đến dự hội nghị quốc tế do Bộ Kế hoạch và Đầu tư Việt Nam tổ chức⟧ (an international conference held by Vietnam's Ministry of Planning and Investment); reason to arrange time: ⟦vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa⟧ / ⟦làm quen thêm với các đồng nghiệp Việt Nam⟧ (get to know more Vietnamese colleagues); Trang's reply: ⟦nói tiếng Việt giỏi thế rồi còn gì⟧ / ⟦có nhiều đồng nghiệp rồi còn gì⟧.
+Model: Ⓐ ⟦Anh đã có bạn gái rồi còn gì!⟧ — But you already have a girlfriend! Ⓑ ⟦Anh đã có bạn gái đâu?⟧ — What girlfriend?
+❶ Ⓐ ⟦Chị đã uống một cốc cà phê rồi còn gì!⟧ — But you've already had a cup of coffee! Ⓑ ⟦Chị muốn uống thêm một cốc nữa.⟧ — I want one more cup.
+❷ Ⓐ ⟦Em đã đi du lịch Việt Nam rồi còn gì!⟧ — But you've already traveled in Vietnam! Ⓑ ⟦Em chưa đi du lịch Vũng Tàu.⟧ — I haven't been to Vũng Tàu yet.
+New words: ⟦tham dự⟧ to attend | ⟦khai mạc⟧ to open (an event) | ⟦sản phẩm⟧ product | ⟦chi nhánh⟧ branch | ⟦thực tập⟧ to practise, intern | ⟦chính thức⟧ official, proper | ⟦đồng nghiệp⟧ colleague | ⟦ghé⟧ to stop by | ⟦sắp xếp⟧ to arrange
+=fr
+Expression clé : ⟦còn gì⟧
+⟦~ còn gì!⟧ signifie « mais tu as déjà ~ ! (alors pourquoi te plaindre ?) ».
+Exemples :
+❶ ⟦Anh có nhiều tiền rồi còn gì!⟧ — Mais tu as déjà plein d'argent !
+❷ Ⓐ ⟦Em đã có việc làm rồi còn gì!⟧ — Mais tu as déjà un travail ! Ⓑ ⟦Em muốn làm việc ở công ti tốt hơn.⟧ — Je veux travailler dans une meilleure entreprise.
+Expressions liées aux voyages d'affaires à l'étranger : ⟦tham dự lễ khai mạc⟧ assister à une cérémonie d'ouverture | ⟦làm quen với đồng nghiệp Việt Nam⟧ faire connaissance avec des collègues vietnamiens | ⟦thực tập tiếng Việt một cách chính thức⟧ pratiquer sérieusement le vietnamien | ⟦triển lãm sản phẩm mới do chi nhánh tổ chức⟧ salon de nouveaux produits organisé par la filiale
+Dialogue : Min-ho et Trang se rendent en voiture au centre de Hanoï en parlant de ses projets.
+Min-ho : ⟦Ôi, Hà Nội đẹp thật!⟧ — Oh, Hanoï est vraiment belle !
+Trang : ⟦Anh sẽ ở Hà Nội trong bao lâu?⟧ — Combien de temps vas-tu rester à Hanoï ?
+Min-ho : ⟦Anh dự định ở lại khoảng một năm nên muốn làm thử nhiều việc. Cuối năm, trước khi vào Sài Gòn, anh sẽ ghé qua Đà Nẵng để tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức.⟧ — Je compte rester environ un an, alors je veux essayer beaucoup de choses. En fin d'année, avant d'aller à Saïgon, je passerai par Da Nang pour assister à l'ouverture du salon de nouveaux produits organisé par la filiale de Da Nang.
+Trang : ⟦Thế thì có lẽ anh sẽ có nhiều kinh nghiệm có ích ở Việt Nam.⟧ — Alors tu vas sans doute acquérir beaucoup d'expériences utiles au Viêt Nam.
+Min-ho : ⟦Ừ. Anh sẽ sắp xếp thời gian để vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa.⟧ — Oui. Je vais m'organiser pour voyager tout en pratiquant sérieusement le vietnamien.
+Trang : ⟦Anh nói tiếng Việt giỏi thế rồi còn gì!⟧ — Mais tu parles déjà si bien vietnamien !
+Exercices — étape avant Saïgon : ⟦Đà Nẵng⟧ / ⟦Huế⟧ ; raison : ⟦tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức⟧ (ouverture du salon de la filiale de Da Nang) / ⟦đến dự hội nghị quốc tế do Bộ Kế hoạch và Đầu tư Việt Nam tổ chức⟧ (conférence internationale du ministère vietnamien du Plan et de l'Investissement) ; pourquoi s'organiser : ⟦vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa⟧ / ⟦làm quen thêm với các đồng nghiệp Việt Nam⟧ (mieux connaître les collègues vietnamiens) ; réponse de Trang : ⟦nói tiếng Việt giỏi thế rồi còn gì⟧ / ⟦có nhiều đồng nghiệp rồi còn gì⟧.
+Modèle : Ⓐ ⟦Anh đã có bạn gái rồi còn gì!⟧ — Mais tu as déjà une petite amie ! Ⓑ ⟦Anh đã có bạn gái đâu?⟧ — Quelle petite amie ?
+❶ Ⓐ ⟦Chị đã uống một cốc cà phê rồi còn gì!⟧ — Mais tu as déjà bu un café ! Ⓑ ⟦Chị muốn uống thêm một cốc nữa.⟧ — J'en veux un autre.
+❷ Ⓐ ⟦Em đã đi du lịch Việt Nam rồi còn gì!⟧ — Mais tu as déjà voyagé au Viêt Nam ! Ⓑ ⟦Em chưa đi du lịch Vũng Tàu.⟧ — Je ne suis pas encore allé à Vũng Tàu.
+Nouveaux mots : ⟦tham dự⟧ participer | ⟦khai mạc⟧ inaugurer | ⟦sản phẩm⟧ produit | ⟦chi nhánh⟧ filiale | ⟦thực tập⟧ s'exercer, faire un stage | ⟦chính thức⟧ officiel, sérieux | ⟦đồng nghiệp⟧ collègue | ⟦ghé⟧ passer (par) | ⟦sắp xếp⟧ organiser
+=de
+Schlüsselausdruck: ⟦còn gì⟧
+⟦~ còn gì!⟧ bedeutet „du hast doch schon ~! (was willst du denn?)“.
+Beispiele:
+❶ ⟦Anh có nhiều tiền rồi còn gì!⟧ — Du hast doch schon viel Geld!
+❷ Ⓐ ⟦Em đã có việc làm rồi còn gì!⟧ — Du hast doch schon eine Arbeit! Ⓑ ⟦Em muốn làm việc ở công ti tốt hơn.⟧ — Ich möchte in einer besseren Firma arbeiten.
+Ausdrücke rund um Geschäftsreisen ins Ausland: ⟦tham dự lễ khai mạc⟧ an einer Eröffnungsfeier teilnehmen | ⟦làm quen với đồng nghiệp Việt Nam⟧ vietnamesische Kollegen kennenlernen | ⟦thực tập tiếng Việt một cách chính thức⟧ richtig Vietnamesisch üben | ⟦triển lãm sản phẩm mới do chi nhánh tổ chức⟧ eine von der Filiale organisierte Produktausstellung
+Dialog: Min-ho und Trang fahren zusammen ins Zentrum von Hanoi und sprechen über seine Pläne.
+Min-ho: ⟦Ôi, Hà Nội đẹp thật!⟧ — Oh, Hanoi ist wirklich schön!
+Trang: ⟦Anh sẽ ở Hà Nội trong bao lâu?⟧ — Wie lange bleibst du in Hanoi?
+Min-ho: ⟦Anh dự định ở lại khoảng một năm nên muốn làm thử nhiều việc. Cuối năm, trước khi vào Sài Gòn, anh sẽ ghé qua Đà Nẵng để tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức.⟧ — Ich plane, etwa ein Jahr zu bleiben, deshalb möchte ich vieles ausprobieren. Ende des Jahres, bevor ich nach Saigon gehe, mache ich in Da Nang Station, um an der Eröffnung der Produktausstellung der Filiale Da Nang teilzunehmen.
+Trang: ⟦Thế thì có lẽ anh sẽ có nhiều kinh nghiệm có ích ở Việt Nam.⟧ — Dann wirst du in Vietnam wohl viele nützliche Erfahrungen sammeln.
+Min-ho: ⟦Ừ. Anh sẽ sắp xếp thời gian để vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa.⟧ — Ja. Ich teile mir die Zeit so ein, dass ich reisen und zugleich richtig Vietnamesisch üben kann.
+Trang: ⟦Anh nói tiếng Việt giỏi thế rồi còn gì!⟧ — Du sprichst doch schon so gut Vietnamesisch!
+Satzmusterübung — Zwischenstopp vor Saigon: ⟦Đà Nẵng⟧ / ⟦Huế⟧; Grund: ⟦tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức⟧ (Eröffnung der Produktausstellung der Filiale Da Nang) / ⟦đến dự hội nghị quốc tế do Bộ Kế hoạch và Đầu tư Việt Nam tổ chức⟧ (internationale Konferenz des vietnamesischen Ministeriums für Planung und Investitionen); Grund für die Zeiteinteilung: ⟦vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa⟧ / ⟦làm quen thêm với các đồng nghiệp Việt Nam⟧ (weitere vietnamesische Kollegen kennenlernen); Trangs Antwort: ⟦nói tiếng Việt giỏi thế rồi còn gì⟧ / ⟦có nhiều đồng nghiệp rồi còn gì⟧.
+Muster: Ⓐ ⟦Anh đã có bạn gái rồi còn gì!⟧ — Du hast doch schon eine Freundin! Ⓑ ⟦Anh đã có bạn gái đâu?⟧ — Welche Freundin denn?
+❶ Ⓐ ⟦Chị đã uống một cốc cà phê rồi còn gì!⟧ — Du hast doch schon eine Tasse Kaffee getrunken! Ⓑ ⟦Chị muốn uống thêm một cốc nữa.⟧ — Ich möchte noch eine.
+❷ Ⓐ ⟦Em đã đi du lịch Việt Nam rồi còn gì!⟧ — Du warst doch schon in Vietnam! Ⓑ ⟦Em chưa đi du lịch Vũng Tàu.⟧ — In Vũng Tàu war ich noch nicht.
+Neue Wörter: ⟦tham dự⟧ teilnehmen | ⟦khai mạc⟧ eröffnen | ⟦sản phẩm⟧ Produkt | ⟦chi nhánh⟧ Filiale | ⟦thực tập⟧ üben, ein Praktikum machen | ⟦chính thức⟧ offiziell, richtig | ⟦đồng nghiệp⟧ Kollege | ⟦ghé⟧ vorbeischauen | ⟦sắp xếp⟧ einteilen, ordnen
+=hu
+Kulcskifejezés: ⟦còn gì⟧
+A ⟦~ còn gì!⟧ jelentése „hiszen már ~! (akkor mi a gond?)”.
+Példák:
+❶ ⟦Anh có nhiều tiền rồi còn gì!⟧ — Hiszen neked rengeteg pénzed van!
+❷ Ⓐ ⟦Em đã có việc làm rồi còn gì!⟧ — Hiszen már van munkád! Ⓑ ⟦Em muốn làm việc ở công ti tốt hơn.⟧ — Jobb cégnél szeretnék dolgozni.
+Külföldi üzleti úttal kapcsolatos kifejezések: ⟦tham dự lễ khai mạc⟧ részt venni a megnyitón | ⟦làm quen với đồng nghiệp Việt Nam⟧ megismerkedni vietnámi kollégákkal | ⟦thực tập tiếng Việt một cách chính thức⟧ rendesen gyakorolni a vietnámit | ⟦triển lãm sản phẩm mới do chi nhánh tổ chức⟧ a fióktelep által rendezett termékbemutató
+Párbeszéd: Min-ho és Trang autóval Hanoi belvárosába tartanak, és a tervekről beszélgetnek.
+Min-ho: ⟦Ôi, Hà Nội đẹp thật!⟧ — Hű, Hanoi tényleg gyönyörű!
+Trang: ⟦Anh sẽ ở Hà Nội trong bao lâu?⟧ — Meddig maradsz Hanoiban?
+Min-ho: ⟦Anh dự định ở lại khoảng một năm nên muốn làm thử nhiều việc. Cuối năm, trước khi vào Sài Gòn, anh sẽ ghé qua Đà Nẵng để tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức.⟧ — Körülbelül egy évig tervezek maradni, ezért sok mindent ki szeretnék próbálni. Év végén, mielőtt Saigonba megyek, beugrom Đà Nẵngba, hogy részt vegyek a Đà Nẵng-i fióktelep termékbemutatójának megnyitóján.
+Trang: ⟦Thế thì có lẽ anh sẽ có nhiều kinh nghiệm có ích ở Việt Nam.⟧ — Akkor valószínűleg sok hasznos tapasztalatot szerzel Vietnámban.
+Min-ho: ⟦Ừ. Anh sẽ sắp xếp thời gian để vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa.⟧ — Igen. Úgy osztom be az időmet, hogy utazzak is, és rendesen gyakoroljam a vietnámit is.
+Trang: ⟦Anh nói tiếng Việt giỏi thế rồi còn gì!⟧ — Hiszen már olyan jól beszélsz vietnámiul!
+Mintagyakorlat — hová ugorjon be Saigon előtt: ⟦Đà Nẵng⟧ / ⟦Huế⟧; ok: ⟦tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức⟧ (a Đà Nẵng-i fióktelep termékbemutatójának megnyitója) / ⟦đến dự hội nghị quốc tế do Bộ Kế hoạch và Đầu tư Việt Nam tổ chức⟧ (a vietnámi Tervezési és Beruházási Minisztérium nemzetközi konferenciája); miért osztja be az időt: ⟦vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa⟧ / ⟦làm quen thêm với các đồng nghiệp Việt Nam⟧ (még több vietnámi kollégát megismerni); Trang válasza: ⟦nói tiếng Việt giỏi thế rồi còn gì⟧ / ⟦có nhiều đồng nghiệp rồi còn gì⟧.
+Minta: Ⓐ ⟦Anh đã có bạn gái rồi còn gì!⟧ — Hiszen már van barátnőd! Ⓑ ⟦Anh đã có bạn gái đâu?⟧ — Milyen barátnő?
+❶ Ⓐ ⟦Chị đã uống một cốc cà phê rồi còn gì!⟧ — Hiszen már ittál egy csésze kávét! Ⓑ ⟦Chị muốn uống thêm một cốc nữa.⟧ — Szeretnék még egyet.
+❷ Ⓐ ⟦Em đã đi du lịch Việt Nam rồi còn gì!⟧ — Hiszen már jártál Vietnámban! Ⓑ ⟦Em chưa đi du lịch Vũng Tàu.⟧ — Vũng Tàuban még nem voltam.
+Új szavak: ⟦tham dự⟧ részt venni | ⟦khai mạc⟧ megnyitni | ⟦sản phẩm⟧ termék | ⟦chi nhánh⟧ fióktelep | ⟦thực tập⟧ gyakorolni, gyakorlaton lenni | ⟦chính thức⟧ hivatalos, rendes | ⟦đồng nghiệp⟧ kolléga | ⟦ghé⟧ beugrani | ⟦sắp xếp⟧ beosztani, rendezni
+=id
+Ungkapan kunci: ⟦còn gì⟧
+⟦~ còn gì!⟧ berarti "kan sudah ~! (jadi kenapa?)".
+Contoh:
+❶ ⟦Anh có nhiều tiền rồi còn gì!⟧ — Kakak kan sudah punya banyak uang!
+❷ Ⓐ ⟦Em đã có việc làm rồi còn gì!⟧ — Kamu kan sudah punya pekerjaan! Ⓑ ⟦Em muốn làm việc ở công ti tốt hơn.⟧ — Saya ingin bekerja di perusahaan yang lebih baik.
+Berbagai ungkapan terkait perjalanan dinas ke luar negeri: ⟦tham dự lễ khai mạc⟧ menghadiri upacara pembukaan | ⟦làm quen với đồng nghiệp Việt Nam⟧ berkenalan dengan rekan kerja Vietnam | ⟦thực tập tiếng Việt một cách chính thức⟧ berlatih bahasa Vietnam secara serius | ⟦triển lãm sản phẩm mới do chi nhánh tổ chức⟧ pameran produk baru yang diadakan kantor cabang
+Percakapan: Min-ho dan Trang naik mobil ke pusat kota Hanoi sambil membicarakan rencana.
+Min-ho: ⟦Ôi, Hà Nội đẹp thật!⟧ — Wah, Hanoi benar-benar indah!
+Trang: ⟦Anh sẽ ở Hà Nội trong bao lâu?⟧ — Berapa lama Kakak akan tinggal di Hanoi?
+Min-ho: ⟦Anh dự định ở lại khoảng một năm nên muốn làm thử nhiều việc. Cuối năm, trước khi vào Sài Gòn, anh sẽ ghé qua Đà Nẵng để tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức.⟧ — Kakak berencana tinggal sekitar setahun, jadi ingin mencoba banyak hal. Akhir tahun, sebelum ke Saigon, Kakak akan mampir ke Đà Nẵng untuk menghadiri pembukaan pameran produk baru yang diadakan kantor cabang Đà Nẵng.
+Trang: ⟦Thế thì có lẽ anh sẽ có nhiều kinh nghiệm có ích ở Việt Nam.⟧ — Kalau begitu, mungkin Kakak akan mendapat banyak pengalaman berguna di Vietnam.
+Min-ho: ⟦Ừ. Anh sẽ sắp xếp thời gian để vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa.⟧ — Ya. Kakak akan mengatur waktu supaya bisa berwisata sambil berlatih bahasa Vietnam dengan serius.
+Trang: ⟦Anh nói tiếng Việt giỏi thế rồi còn gì!⟧ — Kakak kan sudah pandai sekali berbahasa Vietnam!
+Latihan pola — tempat mampir sebelum Saigon: ⟦Đà Nẵng⟧ / ⟦Huế⟧; alasan: ⟦tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức⟧ (pembukaan pameran produk baru cabang Đà Nẵng) / ⟦đến dự hội nghị quốc tế do Bộ Kế hoạch và Đầu tư Việt Nam tổ chức⟧ (konferensi internasional Kementerian Perencanaan dan Investasi Vietnam); alasan mengatur waktu: ⟦vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa⟧ / ⟦làm quen thêm với các đồng nghiệp Việt Nam⟧ (lebih mengenal rekan kerja Vietnam); jawaban Trang: ⟦nói tiếng Việt giỏi thế rồi còn gì⟧ / ⟦có nhiều đồng nghiệp rồi còn gì⟧.
+Contoh: Ⓐ ⟦Anh đã có bạn gái rồi còn gì!⟧ — Kakak kan sudah punya pacar! Ⓑ ⟦Anh đã có bạn gái đâu?⟧ — Pacar dari mana?
+❶ Ⓐ ⟦Chị đã uống một cốc cà phê rồi còn gì!⟧ — Kakak kan sudah minum secangkir kopi! Ⓑ ⟦Chị muốn uống thêm một cốc nữa.⟧ — Kakak mau minum satu cangkir lagi.
+❷ Ⓐ ⟦Em đã đi du lịch Việt Nam rồi còn gì!⟧ — Kamu kan sudah pernah berwisata ke Vietnam! Ⓑ ⟦Em chưa đi du lịch Vũng Tàu.⟧ — Saya belum pernah ke Vũng Tàu.
+Kosakata baru: ⟦tham dự⟧ menghadiri | ⟦khai mạc⟧ membuka (acara) | ⟦sản phẩm⟧ produk | ⟦chi nhánh⟧ kantor cabang | ⟦thực tập⟧ berlatih, magang | ⟦chính thức⟧ resmi, serius | ⟦đồng nghiệp⟧ rekan kerja | ⟦ghé⟧ mampir | ⟦sắp xếp⟧ mengatur
+=ja
+核心表現：⟦còn gì⟧
+⟦~ còn gì!⟧ は「～のくせに何を（言うの）？」という意味を表します。
+例：
+❶ ⟦Anh có nhiều tiền rồi còn gì!⟧ — お兄さんはお金がたくさんあるくせに何を言うの？
+❷ Ⓐ ⟦Em đã có việc làm rồi còn gì!⟧ — もう仕事があるくせに何を？ Ⓑ ⟦Em muốn làm việc ở công ti tốt hơn.⟧ — もっといい会社で働きたいんです。
+海外出張に関するいろいろな表現：⟦tham dự lễ khai mạc⟧ 開幕式に出席する | ⟦làm quen với đồng nghiệp Việt Nam⟧ ベトナム人の同僚と知り合う | ⟦thực tập tiếng Việt một cách chính thức⟧ ベトナム語を本格的に実習する | ⟦triển lãm sản phẩm mới do chi nhánh tổ chức⟧ 支社主催の新商品展示会
+会話：ミンホとチャンが一緒に車でハノイ市内へ向かいながら、今後の計画について話しています。
+ミンホ：⟦Ôi, Hà Nội đẹp thật!⟧ — わあ、ハノイは本当にきれいだ！
+チャン：⟦Anh sẽ ở Hà Nội trong bao lâu?⟧ — ハノイにはどのくらいいるんですか。
+ミンホ：⟦Anh dự định ở lại khoảng một năm nên muốn làm thử nhiều việc. Cuối năm, trước khi vào Sài Gòn, anh sẽ ghé qua Đà Nẵng để tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức.⟧ — 1年くらい滞在する予定だから、いろいろやってみたいんだ。年末、サイゴンに入る前に、ダナン支社主催の新商品展示会の開幕式に出席するためにダナンに寄るつもりだよ。
+チャン：⟦Thế thì có lẽ anh sẽ có nhiều kinh nghiệm có ích ở Việt Nam.⟧ — それならベトナムで役に立つ経験がたくさんできそうですね。
+ミンホ：⟦Ừ. Anh sẽ sắp xếp thời gian để vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa.⟧ — うん。旅行しながらベトナム語も本格的に練習できるよう時間を調整するよ。
+チャン：⟦Anh nói tiếng Việt giỏi thế rồi còn gì!⟧ — もうそんなにベトナム語が上手なのに！
+文型練習 — サイゴンに入る前に寄る所：⟦Đà Nẵng⟧ / ⟦Huế⟧；寄る理由：⟦tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức⟧（ダナン支社主催の新商品展示会の開幕式）/ ⟦đến dự hội nghị quốc tế do Bộ Kế hoạch và Đầu tư Việt Nam tổ chức⟧（ベトナム計画投資省主催の国際会議）；時間を調整する理由：⟦vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa⟧ / ⟦làm quen thêm với các đồng nghiệp Việt Nam⟧（ベトナム人の同僚ともっと知り合う）；チャンの返事：⟦nói tiếng Việt giỏi thế rồi còn gì⟧ / ⟦có nhiều đồng nghiệp rồi còn gì⟧。
+例：Ⓐ ⟦Anh đã có bạn gái rồi còn gì!⟧ — もう彼女がいるくせに！ Ⓑ ⟦Anh đã có bạn gái đâu?⟧ — 彼女なんていないよ。
+❶ Ⓐ ⟦Chị đã uống một cốc cà phê rồi còn gì!⟧ — もうコーヒーを1杯飲んだじゃない！ Ⓑ ⟦Chị muốn uống thêm một cốc nữa.⟧ — もう1杯飲みたいの。
+❷ Ⓐ ⟦Em đã đi du lịch Việt Nam rồi còn gì!⟧ — もうベトナム旅行に行ったじゃない！ Ⓑ ⟦Em chưa đi du lịch Vũng Tàu.⟧ — ブンタウにはまだ行っていません。
+新出単語：⟦tham dự⟧ 参加する | ⟦khai mạc⟧ 開幕する | ⟦sản phẩm⟧ 商品 | ⟦chi nhánh⟧ 支社 | ⟦thực tập⟧ 実習する | ⟦chính thức⟧ 正式な | ⟦đồng nghiệp⟧ 同僚 | ⟦ghé⟧ 立ち寄る | ⟦sắp xếp⟧ 整理する、調整する
+=pl
+Kluczowe wyrażenie: ⟦còn gì⟧
+⟦~ còn gì!⟧ znaczy „przecież już ~! (to o co chodzi?)”.
+Przykłady:
+❶ ⟦Anh có nhiều tiền rồi còn gì!⟧ — Przecież masz mnóstwo pieniędzy!
+❷ Ⓐ ⟦Em đã có việc làm rồi còn gì!⟧ — Przecież już masz pracę! Ⓑ ⟦Em muốn làm việc ở công ti tốt hơn.⟧ — Chcę pracować w lepszej firmie.
+Wyrażenia związane z podróżą służbową za granicę: ⟦tham dự lễ khai mạc⟧ wziąć udział w ceremonii otwarcia | ⟦làm quen với đồng nghiệp Việt Nam⟧ poznać wietnamskich współpracowników | ⟦thực tập tiếng Việt một cách chính thức⟧ porządnie poćwiczyć wietnamski | ⟦triển lãm sản phẩm mới do chi nhánh tổ chức⟧ wystawa nowych produktów organizowana przez oddział
+Dialog: Min-ho i Trang jadą razem samochodem do centrum Hanoi, rozmawiając o planach.
+Min-ho: ⟦Ôi, Hà Nội đẹp thật!⟧ — Och, Hanoi jest naprawdę piękne!
+Trang: ⟦Anh sẽ ở Hà Nội trong bao lâu?⟧ — Jak długo zostaniesz w Hanoi?
+Min-ho: ⟦Anh dự định ở lại khoảng một năm nên muốn làm thử nhiều việc. Cuối năm, trước khi vào Sài Gòn, anh sẽ ghé qua Đà Nẵng để tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức.⟧ — Planuję zostać około roku, więc chcę spróbować wielu rzeczy. Pod koniec roku, zanim pojadę do Sajgonu, zajrzę do Đà Nẵng na otwarcie wystawy nowych produktów organizowanej przez tamtejszy oddział.
+Trang: ⟦Thế thì có lẽ anh sẽ có nhiều kinh nghiệm có ích ở Việt Nam.⟧ — W takim razie pewnie zdobędziesz w Wietnamie wiele przydatnych doświadczeń.
+Min-ho: ⟦Ừ. Anh sẽ sắp xếp thời gian để vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa.⟧ — Tak. Tak zaplanuję czas, żeby i podróżować, i porządnie ćwiczyć wietnamski.
+Trang: ⟦Anh nói tiếng Việt giỏi thế rồi còn gì!⟧ — Przecież już tak dobrze mówisz po wietnamsku!
+Ćwiczenie wzorców — gdzie zajrzeć przed Sajgonem: ⟦Đà Nẵng⟧ / ⟦Huế⟧; powód: ⟦tham dự lễ khai mạc triển lãm sản phẩm mới do chi nhánh Đà Nẵng tổ chức⟧ (otwarcie wystawy oddziału w Đà Nẵng) / ⟦đến dự hội nghị quốc tế do Bộ Kế hoạch và Đầu tư Việt Nam tổ chức⟧ (międzynarodowa konferencja wietnamskiego Ministerstwa Planowania i Inwestycji); po co planować czas: ⟦vừa đi du lịch vừa thực tập tiếng Việt một cách chính thức nữa⟧ / ⟦làm quen thêm với các đồng nghiệp Việt Nam⟧ (poznać więcej wietnamskich współpracowników); odpowiedź Trang: ⟦nói tiếng Việt giỏi thế rồi còn gì⟧ / ⟦có nhiều đồng nghiệp rồi còn gì⟧.
+Wzór: Ⓐ ⟦Anh đã có bạn gái rồi còn gì!⟧ — Przecież już masz dziewczynę! Ⓑ ⟦Anh đã có bạn gái đâu?⟧ — Jaką dziewczynę?
+❶ Ⓐ ⟦Chị đã uống một cốc cà phê rồi còn gì!⟧ — Przecież już wypiłaś kawę! Ⓑ ⟦Chị muốn uống thêm một cốc nữa.⟧ — Chcę jeszcze jedną.
+❷ Ⓐ ⟦Em đã đi du lịch Việt Nam rồi còn gì!⟧ — Przecież już byłeś w Wietnamie! Ⓑ ⟦Em chưa đi du lịch Vũng Tàu.⟧ — Jeszcze nie byłem w Vũng Tàu.
+Nowe słówka: ⟦tham dự⟧ uczestniczyć | ⟦khai mạc⟧ otworzyć (wydarzenie) | ⟦sản phẩm⟧ produkt | ⟦chi nhánh⟧ oddział | ⟦thực tập⟧ ćwiczyć, odbywać praktykę | ⟦chính thức⟧ oficjalny, porządny | ⟦đồng nghiệp⟧ współpracownik | ⟦ghé⟧ zajrzeć, wpaść | ⟦sắp xếp⟧ zaplanować, uporządkować

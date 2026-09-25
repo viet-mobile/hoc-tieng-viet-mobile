@@ -1,0 +1,171 @@
+@@ pdf-grammar-f7c7a99a593a80c7#0
+=cs
+Klíčový výraz 1: ⟦không ai ~ bằng A⟧ — „nikdo není tak ~ jako A“.
+❶ ⟦Trong lớp, không ai hát hay bằng Trang.⟧ — Ve třídě nikdo nezpívá tak hezky jako Trang.
+❷ Ⓐ ⟦Trang ơi. Tất cả mọi người Việt đều kính trọng Chủ tịch Hồ Chí Minh à?⟧ — Trang, opravdu všichni Vietnamci ctí prezidenta Ho Či Mina? Ⓑ ⟦Vâng. Không ai có công lớn bằng Bác Hồ trong việc giành lại độc lập cho Việt Nam.⟧ — Ano. Nikdo se o získání nezávislosti Vietnamu nezasloužil tolik jako strýček Ho.
+Klíčový výraz 2: ⟦từng A một⟧ — „A jeden po druhém, po jednom“.
+❶ ⟦Từng người một đi vào phòng.⟧ — Lidé vcházejí do místnosti jeden po druhém.
+❷ Ⓐ ⟦Con đói bụng quá!⟧ — Mám strašný hlad! Ⓑ ⟦Con ăn từ từ từng quả một thôi.⟧ — Jez pomalu, jeden kus po druhém.
+Procvičování 3 — spojte správné dvojice a mluvte podle vzoru:
+① ⟦em định lập gia đình với Tuấn⟧ (chceš si vzít Tuấna) — Ⓐ ⟦yêu em bằng anh Tuấn⟧ (miluje tě tak jako Tuấn)
+② ⟦anh muốn học tiếng Việt với thầy Lee⟧ (chceš se učit vietnamsky u pana Leeho) — Ⓑ ⟦dạy tiếng Việt tốt bằng thầy Lee⟧ (učí vietnamsky tak dobře jako pan Lee)
+③ ⟦chị mua điện thoại di động ở cửa hàng đó⟧ (kupuješ mobil v tom obchodě) — Ⓒ ⟦tiếp chuyện tử tế và lịch sự bằng nhân viên ở đó⟧ (jedná tak laskavě a zdvořile jako tamní personál)
+Vzor (①―Ⓐ): Ⓐ ⟦Tại sao em định lập gia đình với Tuấn?⟧ — Proč si chceš vzít Tuấna? Ⓑ ⟦Vì không ai yêu em bằng anh Tuấn.⟧ — Protože nikdo mě nemiluje tak jako Tuấn.
+Procvičování 4 — doplňte a řekněte:
+Vzor: ⟦Năm học mới đã bắt đầu, giáo viên đang trao đổi với từng học sinh một.⟧ — Začal nový školní rok a učitel mluví s každým žákem zvlášť.
+❶ ⟦từng câu một⟧: ⟦Giáo viên bắt học sinh phải xem từng câu một xem có sai sót hay không.⟧ — Učitel nutí žáky kontrolovat větu po větě, zda v nich nejsou chyby.
+❷ ⟦từng phòng học trong trường một⟧: ⟦Do bệnh dịch, cơ quan y tế đã kiểm tra từng phòng học trong trường một.⟧ — Kvůli epidemii zdravotní úřad zkontroloval ve škole třídu po třídě.
+Nová slovíčka: ⟦kính trọng⟧ ctít | ⟦công⟧ zásluha | ⟦giành⟧ vybojovat, získat | ⟦độc lập⟧ nezávislost | ⟦cửa hàng⟧ obchod | ⟦tiếp chuyện⟧ jednat se zákazníkem | ⟦tử tế⟧ laskavý | ⟦từ từ⟧ pomalu
+=zh_cn
+核心表达1：⟦không ai ~ bằng A⟧ —— “没有人像A那样……”。
+❶ ⟦Trong lớp, không ai hát hay bằng Trang.⟧ —— 班上没有人唱歌像庄那么好听。
+❷ Ⓐ ⟦Trang ơi. Tất cả mọi người Việt đều kính trọng Chủ tịch Hồ Chí Minh à?⟧ —— 庄，所有越南人都尊敬胡志明主席吗？ Ⓑ ⟦Vâng. Không ai có công lớn bằng Bác Hồ trong việc giành lại độc lập cho Việt Nam.⟧ —— 是的。在为越南争取独立方面，没有人比胡伯伯功劳更大。
+核心表达2：⟦từng A một⟧ —— “一个一个地A”。
+❶ ⟦Từng người một đi vào phòng.⟧ —— 一个一个地走进房间。
+❷ Ⓐ ⟦Con đói bụng quá!⟧ —— 我好饿啊！ Ⓑ ⟦Con ăn từ từ từng quả một thôi.⟧ —— 一个一个慢慢吃。
+句型练习3 —— 找出正确的搭配，并照范例对话：
+① ⟦em định lập gia đình với Tuấn⟧（你打算和俊结婚）—— Ⓐ ⟦yêu em bằng anh Tuấn⟧（像俊哥那样爱我）
+② ⟦anh muốn học tiếng Việt với thầy Lee⟧（你想跟李老师学越南语）—— Ⓑ ⟦dạy tiếng Việt tốt bằng thầy Lee⟧（越南语教得像李老师那么好）
+③ ⟦chị mua điện thoại di động ở cửa hàng đó⟧（你在那家店买手机）—— Ⓒ ⟦tiếp chuyện tử tế và lịch sự bằng nhân viên ở đó⟧（像那里的店员那样亲切有礼地接待）
+范例（①―Ⓐ）：Ⓐ ⟦Tại sao em định lập gia đình với Tuấn?⟧ —— 你为什么打算和俊结婚？ Ⓑ ⟦Vì không ai yêu em bằng anh Tuấn.⟧ —— 因为没有人像俊哥那样爱我。
+句型练习4 —— 填空后说一说：
+范例：⟦Năm học mới đã bắt đầu, giáo viên đang trao đổi với từng học sinh một.⟧ —— 新学年开始了，老师正在和学生一个一个地交谈。
+❶ ⟦từng câu một⟧：⟦Giáo viên bắt học sinh phải xem từng câu một xem có sai sót hay không.⟧ —— 老师要求学生一句一句地检查有没有错误。
+❷ ⟦từng phòng học trong trường một⟧：⟦Do bệnh dịch, cơ quan y tế đã kiểm tra từng phòng học trong trường một.⟧ —— 由于疫情，卫生部门逐间检查了学校的教室。
+新单词：⟦kính trọng⟧ 尊敬 | ⟦công⟧ 功劳 | ⟦giành⟧ 争取，获得 | ⟦độc lập⟧ 独立 | ⟦cửa hàng⟧ 商店 | ⟦tiếp chuyện⟧ 接待，应对 | ⟦tử tế⟧ 亲切 | ⟦từ từ⟧ 慢慢地
+=zh
+核心表達1：⟦không ai ~ bằng A⟧ —— 「沒有人像A那樣……」。
+❶ ⟦Trong lớp, không ai hát hay bằng Trang.⟧ —— 班上沒有人唱歌像莊那麼好聽。
+❷ Ⓐ ⟦Trang ơi. Tất cả mọi người Việt đều kính trọng Chủ tịch Hồ Chí Minh à?⟧ —— 莊，所有越南人都尊敬胡志明主席嗎？ Ⓑ ⟦Vâng. Không ai có công lớn bằng Bác Hồ trong việc giành lại độc lập cho Việt Nam.⟧ —— 是的。在為越南爭取獨立方面，沒有人比胡伯伯功勞更大。
+核心表達2：⟦từng A một⟧ —— 「一個一個地A」。
+❶ ⟦Từng người một đi vào phòng.⟧ —— 一個一個地走進房間。
+❷ Ⓐ ⟦Con đói bụng quá!⟧ —— 我好餓啊！ Ⓑ ⟦Con ăn từ từ từng quả một thôi.⟧ —— 一個一個慢慢吃。
+句型練習3 —— 找出正確的搭配，並照範例對話：
+① ⟦em định lập gia đình với Tuấn⟧（你打算和俊結婚）—— Ⓐ ⟦yêu em bằng anh Tuấn⟧（像俊哥那樣愛我）
+② ⟦anh muốn học tiếng Việt với thầy Lee⟧（你想跟李老師學越南語）—— Ⓑ ⟦dạy tiếng Việt tốt bằng thầy Lee⟧（越南語教得像李老師那麼好）
+③ ⟦chị mua điện thoại di động ở cửa hàng đó⟧（你在那家店買手機）—— Ⓒ ⟦tiếp chuyện tử tế và lịch sự bằng nhân viên ở đó⟧（像那裡的店員那樣親切有禮地接待）
+範例（①―Ⓐ）：Ⓐ ⟦Tại sao em định lập gia đình với Tuấn?⟧ —— 你為什麼打算和俊結婚？ Ⓑ ⟦Vì không ai yêu em bằng anh Tuấn.⟧ —— 因為沒有人像俊哥那樣愛我。
+句型練習4 —— 填空後說一說：
+範例：⟦Năm học mới đã bắt đầu, giáo viên đang trao đổi với từng học sinh một.⟧ —— 新學年開始了，老師正在和學生一個一個地交談。
+❶ ⟦từng câu một⟧：⟦Giáo viên bắt học sinh phải xem từng câu một xem có sai sót hay không.⟧ —— 老師要求學生一句一句地檢查有沒有錯誤。
+❷ ⟦từng phòng học trong trường một⟧：⟦Do bệnh dịch, cơ quan y tế đã kiểm tra từng phòng học trong trường một.⟧ —— 由於疫情，衛生單位逐間檢查了學校的教室。
+新單字：⟦kính trọng⟧ 尊敬 | ⟦công⟧ 功勞 | ⟦giành⟧ 爭取，獲得 | ⟦độc lập⟧ 獨立 | ⟦cửa hàng⟧ 商店 | ⟦tiếp chuyện⟧ 接待，應對 | ⟦tử tế⟧ 親切 | ⟦từ từ⟧ 慢慢地
+=en
+Key expression 1: ⟦không ai ~ bằng A⟧ — "nobody is as ~ as A".
+❶ ⟦Trong lớp, không ai hát hay bằng Trang.⟧ — In our class, nobody sings as well as Trang.
+❷ Ⓐ ⟦Trang ơi. Tất cả mọi người Việt đều kính trọng Chủ tịch Hồ Chí Minh à?⟧ — Trang, do all Vietnamese really respect President Ho Chi Minh? Ⓑ ⟦Vâng. Không ai có công lớn bằng Bác Hồ trong việc giành lại độc lập cho Việt Nam.⟧ — Yes. Nobody contributed as much as Uncle Ho to winning back Vietnam's independence.
+Key expression 2: ⟦từng A một⟧ — "one A at a time, one by one".
+❶ ⟦Từng người một đi vào phòng.⟧ — People go into the room one by one.
+❷ Ⓐ ⟦Con đói bụng quá!⟧ — I'm so hungry! Ⓑ ⟦Con ăn từ từ từng quả một thôi.⟧ — Eat slowly, one at a time.
+Pattern practice 3 — match the pairs and talk like the model:
+① ⟦em định lập gia đình với Tuấn⟧ (you plan to marry Tuấn) — Ⓐ ⟦yêu em bằng anh Tuấn⟧ (loves me as much as Tuấn)
+② ⟦anh muốn học tiếng Việt với thầy Lee⟧ (you want to study Vietnamese with Mr. Lee) — Ⓑ ⟦dạy tiếng Việt tốt bằng thầy Lee⟧ (teaches Vietnamese as well as Mr. Lee)
+③ ⟦chị mua điện thoại di động ở cửa hàng đó⟧ (you buy mobile phones at that shop) — Ⓒ ⟦tiếp chuyện tử tế và lịch sự bằng nhân viên ở đó⟧ (serves customers as kindly and politely as the staff there)
+Model (①―Ⓐ): Ⓐ ⟦Tại sao em định lập gia đình với Tuấn?⟧ — Why are you planning to marry Tuấn? Ⓑ ⟦Vì không ai yêu em bằng anh Tuấn.⟧ — Because nobody loves me as much as Tuấn.
+Pattern practice 4 — fill in the blanks and say them:
+Model: ⟦Năm học mới đã bắt đầu, giáo viên đang trao đổi với từng học sinh một.⟧ — The new school year has started, and the teacher is talking with each student one by one.
+❶ ⟦từng câu một⟧: ⟦Giáo viên bắt học sinh phải xem từng câu một xem có sai sót hay không.⟧ — The teacher makes the students check each sentence one by one for mistakes.
+❷ ⟦từng phòng học trong trường một⟧: ⟦Do bệnh dịch, cơ quan y tế đã kiểm tra từng phòng học trong trường một.⟧ — Because of the epidemic, the health authority inspected every classroom in the school one by one.
+New words: ⟦kính trọng⟧ to respect | ⟦công⟧ merit, contribution | ⟦giành⟧ to win, gain | ⟦độc lập⟧ independence | ⟦cửa hàng⟧ shop | ⟦tiếp chuyện⟧ to attend to (customers) | ⟦tử tế⟧ kind | ⟦từ từ⟧ slowly
+=fr
+Expression clé 1 : ⟦không ai ~ bằng A⟧ — « personne n'est aussi ~ que A ».
+❶ ⟦Trong lớp, không ai hát hay bằng Trang.⟧ — Dans la classe, personne ne chante aussi bien que Trang.
+❷ Ⓐ ⟦Trang ơi. Tất cả mọi người Việt đều kính trọng Chủ tịch Hồ Chí Minh à?⟧ — Trang, tous les Vietnamiens respectent-ils vraiment le président Hô Chi Minh ? Ⓑ ⟦Vâng. Không ai có công lớn bằng Bác Hồ trong việc giành lại độc lập cho Việt Nam.⟧ — Oui. Personne n'a autant contribué que l'Oncle Hô à reconquérir l'indépendance du Viêt Nam.
+Expression clé 2 : ⟦từng A một⟧ — « un A à la fois, un par un ».
+❶ ⟦Từng người một đi vào phòng.⟧ — Les gens entrent dans la pièce un par un.
+❷ Ⓐ ⟦Con đói bụng quá!⟧ — J'ai tellement faim ! Ⓑ ⟦Con ăn từ từ từng quả một thôi.⟧ — Mange doucement, un à la fois.
+Exercice 3 — associez les éléments et dialoguez comme dans le modèle :
+① ⟦em định lập gia đình với Tuấn⟧ (tu comptes épouser Tuấn) — Ⓐ ⟦yêu em bằng anh Tuấn⟧ (m'aime autant que Tuấn)
+② ⟦anh muốn học tiếng Việt với thầy Lee⟧ (tu veux apprendre le vietnamien avec M. Lee) — Ⓑ ⟦dạy tiếng Việt tốt bằng thầy Lee⟧ (enseigne le vietnamien aussi bien que M. Lee)
+③ ⟦chị mua điện thoại di động ở cửa hàng đó⟧ (tu achètes ton portable dans cette boutique) — Ⓒ ⟦tiếp chuyện tử tế và lịch sự bằng nhân viên ở đó⟧ (accueille les clients aussi gentiment et poliment que le personnel de là-bas)
+Modèle (①―Ⓐ) : Ⓐ ⟦Tại sao em định lập gia đình với Tuấn?⟧ — Pourquoi comptes-tu épouser Tuấn ? Ⓑ ⟦Vì không ai yêu em bằng anh Tuấn.⟧ — Parce que personne ne m'aime autant que Tuấn.
+Exercice 4 — complétez puis dites les phrases :
+Modèle : ⟦Năm học mới đã bắt đầu, giáo viên đang trao đổi với từng học sinh một.⟧ — La nouvelle année scolaire a commencé et l'enseignant s'entretient avec chaque élève, un par un.
+❶ ⟦từng câu một⟧ : ⟦Giáo viên bắt học sinh phải xem từng câu một xem có sai sót hay không.⟧ — L'enseignant oblige les élèves à vérifier chaque phrase une par une pour voir s'il y a des erreurs.
+❷ ⟦từng phòng học trong trường một⟧ : ⟦Do bệnh dịch, cơ quan y tế đã kiểm tra từng phòng học trong trường một.⟧ — À cause de l'épidémie, les services de santé ont inspecté les salles de classe une par une.
+Nouveaux mots : ⟦kính trọng⟧ respecter | ⟦công⟧ mérite | ⟦giành⟧ conquérir, obtenir | ⟦độc lập⟧ indépendance | ⟦cửa hàng⟧ magasin | ⟦tiếp chuyện⟧ accueillir (un client) | ⟦tử tế⟧ gentil | ⟦từ từ⟧ lentement
+=de
+Schlüsselausdruck 1: ⟦không ai ~ bằng A⟧ — „niemand ist so ~ wie A“.
+❶ ⟦Trong lớp, không ai hát hay bằng Trang.⟧ — In der Klasse singt niemand so schön wie Trang.
+❷ Ⓐ ⟦Trang ơi. Tất cả mọi người Việt đều kính trọng Chủ tịch Hồ Chí Minh à?⟧ — Trang, verehren wirklich alle Vietnamesen Präsident Ho Chi Minh? Ⓑ ⟦Vâng. Không ai có công lớn bằng Bác Hồ trong việc giành lại độc lập cho Việt Nam.⟧ — Ja. Niemand hat so viel zur Wiedererlangung der Unabhängigkeit Vietnams beigetragen wie Onkel Ho.
+Schlüsselausdruck 2: ⟦từng A một⟧ — „ein A nach dem anderen, einzeln“.
+❶ ⟦Từng người một đi vào phòng.⟧ — Die Leute gehen einer nach dem anderen ins Zimmer.
+❷ Ⓐ ⟦Con đói bụng quá!⟧ — Ich habe solchen Hunger! Ⓑ ⟦Con ăn từ từ từng quả một thôi.⟧ — Iss langsam, eins nach dem anderen.
+Übung 3 — ordnen Sie zu und sprechen Sie wie im Muster:
+① ⟦em định lập gia đình với Tuấn⟧ (du willst Tuấn heiraten) — Ⓐ ⟦yêu em bằng anh Tuấn⟧ (liebt mich so sehr wie Tuấn)
+② ⟦anh muốn học tiếng Việt với thầy Lee⟧ (du willst bei Herrn Lee Vietnamesisch lernen) — Ⓑ ⟦dạy tiếng Việt tốt bằng thầy Lee⟧ (unterrichtet so gut Vietnamesisch wie Herr Lee)
+③ ⟦chị mua điện thoại di động ở cửa hàng đó⟧ (du kaufst dein Handy in dem Laden) — Ⓒ ⟦tiếp chuyện tử tế và lịch sự bằng nhân viên ở đó⟧ (bedient so freundlich und höflich wie das Personal dort)
+Muster (①―Ⓐ): Ⓐ ⟦Tại sao em định lập gia đình với Tuấn?⟧ — Warum willst du Tuấn heiraten? Ⓑ ⟦Vì không ai yêu em bằng anh Tuấn.⟧ — Weil niemand mich so liebt wie Tuấn.
+Übung 4 — ergänzen und sprechen:
+Muster: ⟦Năm học mới đã bắt đầu, giáo viên đang trao đổi với từng học sinh một.⟧ — Das neue Schuljahr hat begonnen, und der Lehrer spricht mit jedem Schüler einzeln.
+❶ ⟦từng câu một⟧: ⟦Giáo viên bắt học sinh phải xem từng câu một xem có sai sót hay không.⟧ — Der Lehrer lässt die Schüler Satz für Satz auf Fehler prüfen.
+❷ ⟦từng phòng học trong trường một⟧: ⟦Do bệnh dịch, cơ quan y tế đã kiểm tra từng phòng học trong trường một.⟧ — Wegen der Epidemie hat die Gesundheitsbehörde jedes Klassenzimmer der Schule einzeln kontrolliert.
+Neue Wörter: ⟦kính trọng⟧ verehren | ⟦công⟧ Verdienst | ⟦giành⟧ erkämpfen, erlangen | ⟦độc lập⟧ Unabhängigkeit | ⟦cửa hàng⟧ Laden | ⟦tiếp chuyện⟧ (Kunden) bedienen | ⟦tử tế⟧ freundlich | ⟦từ từ⟧ langsam
+=hu
+1. kulcskifejezés: ⟦không ai ~ bằng A⟧ — „senki sem olyan ~, mint A”.
+❶ ⟦Trong lớp, không ai hát hay bằng Trang.⟧ — Az osztályban senki sem énekel olyan szépen, mint Trang.
+❷ Ⓐ ⟦Trang ơi. Tất cả mọi người Việt đều kính trọng Chủ tịch Hồ Chí Minh à?⟧ — Trang, tényleg minden vietnámi tiszteli Ho Si Minh elnököt? Ⓑ ⟦Vâng. Không ai có công lớn bằng Bác Hồ trong việc giành lại độc lập cho Việt Nam.⟧ — Igen. Senkinek sincs akkora érdeme Vietnám függetlenségének kivívásában, mint Ho bácsinak.
+2. kulcskifejezés: ⟦từng A một⟧ — „egyenként, egyesével”.
+❶ ⟦Từng người một đi vào phòng.⟧ — Egyenként mennek be a szobába.
+❷ Ⓐ ⟦Con đói bụng quá!⟧ — Nagyon éhes vagyok! Ⓑ ⟦Con ăn từ từ từng quả một thôi.⟧ — Egyél lassan, egyesével.
+3. gyakorlat — párosítsa össze, majd beszélgessen a minta szerint:
+① ⟦em định lập gia đình với Tuấn⟧ (Tuấnhoz akarsz feleségül menni) — Ⓐ ⟦yêu em bằng anh Tuấn⟧ (úgy szeret, mint Tuấn)
+② ⟦anh muốn học tiếng Việt với thầy Lee⟧ (Lee tanár úrnál akarsz vietnámiul tanulni) — Ⓑ ⟦dạy tiếng Việt tốt bằng thầy Lee⟧ (olyan jól tanít vietnámit, mint Lee tanár úr)
+③ ⟦chị mua điện thoại di động ở cửa hàng đó⟧ (abban a boltban veszed a mobilodat) — Ⓒ ⟦tiếp chuyện tử tế và lịch sự bằng nhân viên ở đó⟧ (olyan kedvesen és udvariasan szolgál ki, mint az ottani személyzet)
+Minta (①―Ⓐ): Ⓐ ⟦Tại sao em định lập gia đình với Tuấn?⟧ — Miért akarsz Tuấnhoz feleségül menni? Ⓑ ⟦Vì không ai yêu em bằng anh Tuấn.⟧ — Mert senki sem szeret úgy, mint Tuấn.
+4. gyakorlat — egészítse ki, majd mondja el:
+Minta: ⟦Năm học mới đã bắt đầu, giáo viên đang trao đổi với từng học sinh một.⟧ — Elkezdődött az új tanév, a tanár egyenként beszélget a diákokkal.
+❶ ⟦từng câu một⟧: ⟦Giáo viên bắt học sinh phải xem từng câu một xem có sai sót hay không.⟧ — A tanár mondatonként ellenőrizteti a diákokkal, van-e hiba.
+❷ ⟦từng phòng học trong trường một⟧: ⟦Do bệnh dịch, cơ quan y tế đã kiểm tra từng phòng học trong trường một.⟧ — A járvány miatt az egészségügyi hatóság egyenként átvizsgálta az iskola tantermeit.
+Új szavak: ⟦kính trọng⟧ tisztelni | ⟦công⟧ érdem | ⟦giành⟧ kivívni, megszerezni | ⟦độc lập⟧ függetlenség | ⟦cửa hàng⟧ bolt | ⟦tiếp chuyện⟧ kiszolgálni, fogadni | ⟦tử tế⟧ kedves | ⟦từ từ⟧ lassan
+=id
+Ungkapan kunci 1: ⟦không ai ~ bằng A⟧ — "tidak ada yang se-~ A".
+❶ ⟦Trong lớp, không ai hát hay bằng Trang.⟧ — Di kelas, tidak ada yang bernyanyi semerdu Trang.
+❷ Ⓐ ⟦Trang ơi. Tất cả mọi người Việt đều kính trọng Chủ tịch Hồ Chí Minh à?⟧ — Trang, apakah semua orang Vietnam menghormati Presiden Ho Chi Minh? Ⓑ ⟦Vâng. Không ai có công lớn bằng Bác Hồ trong việc giành lại độc lập cho Việt Nam.⟧ — Ya. Tidak ada yang jasanya sebesar Paman Ho dalam merebut kembali kemerdekaan Vietnam.
+Ungkapan kunci 2: ⟦từng A một⟧ — "satu per satu".
+❶ ⟦Từng người một đi vào phòng.⟧ — Orang-orang masuk ke ruangan satu per satu.
+❷ Ⓐ ⟦Con đói bụng quá!⟧ — Aku lapar sekali! Ⓑ ⟦Con ăn từ từ từng quả một thôi.⟧ — Makanlah pelan-pelan, satu per satu.
+Latihan pola 3 — pasangkan lalu bercakap seperti contoh:
+① ⟦em định lập gia đình với Tuấn⟧ (kamu berencana menikah dengan Tuấn) — Ⓐ ⟦yêu em bằng anh Tuấn⟧ (mencintaiku seperti Tuấn)
+② ⟦anh muốn học tiếng Việt với thầy Lee⟧ (kamu ingin belajar bahasa Vietnam dengan Pak Lee) — Ⓑ ⟦dạy tiếng Việt tốt bằng thầy Lee⟧ (mengajar bahasa Vietnam sebaik Pak Lee)
+③ ⟦chị mua điện thoại di động ở cửa hàng đó⟧ (kamu membeli ponsel di toko itu) — Ⓒ ⟦tiếp chuyện tử tế và lịch sự bằng nhân viên ở đó⟧ (melayani seramah dan sesopan karyawan di sana)
+Contoh (①―Ⓐ): Ⓐ ⟦Tại sao em định lập gia đình với Tuấn?⟧ — Mengapa kamu berencana menikah dengan Tuấn? Ⓑ ⟦Vì không ai yêu em bằng anh Tuấn.⟧ — Karena tidak ada yang mencintaiku seperti Tuấn.
+Latihan pola 4 — isilah lalu ucapkan:
+Contoh: ⟦Năm học mới đã bắt đầu, giáo viên đang trao đổi với từng học sinh một.⟧ — Tahun ajaran baru sudah dimulai, guru sedang berbicara dengan siswa satu per satu.
+❶ ⟦từng câu một⟧: ⟦Giáo viên bắt học sinh phải xem từng câu một xem có sai sót hay không.⟧ — Guru menyuruh siswa memeriksa kalimat satu per satu apakah ada kesalahan.
+❷ ⟦từng phòng học trong trường một⟧: ⟦Do bệnh dịch, cơ quan y tế đã kiểm tra từng phòng học trong trường một.⟧ — Karena wabah, dinas kesehatan memeriksa ruang kelas di sekolah satu per satu.
+Kosakata baru: ⟦kính trọng⟧ menghormati | ⟦công⟧ jasa | ⟦giành⟧ merebut, meraih | ⟦độc lập⟧ kemerdekaan | ⟦cửa hàng⟧ toko | ⟦tiếp chuyện⟧ melayani | ⟦tử tế⟧ ramah | ⟦từ từ⟧ pelan-pelan
+=ja
+核心表現1：⟦không ai ~ bằng A⟧ —「Aほど～な人はいない」。
+❶ ⟦Trong lớp, không ai hát hay bằng Trang.⟧ — クラスでチャンほど歌が上手な人はいない。
+❷ Ⓐ ⟦Trang ơi. Tất cả mọi người Việt đều kính trọng Chủ tịch Hồ Chí Minh à?⟧ — チャン、ベトナム人はみんなホー・チ・ミン主席を尊敬しているの？ Ⓑ ⟦Vâng. Không ai có công lớn bằng Bác Hồ trong việc giành lại độc lập cho Việt Nam.⟧ — はい。ベトナムの独立を勝ち取るのに、ホーおじさんほど大きく貢献した人はいません。
+核心表現2：⟦từng A một⟧ —「Aを一つずつ」。
+❶ ⟦Từng người một đi vào phòng.⟧ — 一人ずつ部屋に入る。
+❷ Ⓐ ⟦Con đói bụng quá!⟧ — お腹がすごくすいた！ Ⓑ ⟦Con ăn từ từ từng quả một thôi.⟧ — 一つずつゆっくり食べなさい。
+文型練習3 — 合うものを結んで、例のように会話しましょう：
+① ⟦em định lập gia đình với Tuấn⟧（トゥアンと結婚するつもりだ）— Ⓐ ⟦yêu em bằng anh Tuấn⟧（トゥアンさんほど私を愛してくれる）
+② ⟦anh muốn học tiếng Việt với thầy Lee⟧（イー先生にベトナム語を習いたい）— Ⓑ ⟦dạy tiếng Việt tốt bằng thầy Lee⟧（イー先生ほどベトナム語を上手に教える）
+③ ⟦chị mua điện thoại di động ở cửa hàng đó⟧（その店で携帯電話を買う）— Ⓒ ⟦tiếp chuyện tử tế và lịch sự bằng nhân viên ở đó⟧（そこの店員ほど親切で丁寧に応対する）
+例（①―Ⓐ）：Ⓐ ⟦Tại sao em định lập gia đình với Tuấn?⟧ — どうしてトゥアンと結婚するつもりなの？ Ⓑ ⟦Vì không ai yêu em bằng anh Tuấn.⟧ — トゥアンさんほど私を愛してくれる人はいないから。
+文型練習4 — 空欄を埋めて言ってみましょう：
+例：⟦Năm học mới đã bắt đầu, giáo viên đang trao đổi với từng học sinh một.⟧ — 新学期が始まり、先生は生徒一人ひとりと話をしている。
+❶ ⟦từng câu một⟧：⟦Giáo viên bắt học sinh phải xem từng câu một xem có sai sót hay không.⟧ — 先生は生徒に一文ずつ誤りがないか確認させる。
+❷ ⟦từng phòng học trong trường một⟧：⟦Do bệnh dịch, cơ quan y tế đã kiểm tra từng phòng học trong trường một.⟧ — 伝染病のため、保健当局は学校の教室を一つずつ検査した。
+新出単語：⟦kính trọng⟧ 尊敬する | ⟦công⟧ 功績 | ⟦giành⟧ 勝ち取る | ⟦độc lập⟧ 独立 | ⟦cửa hàng⟧ 店 | ⟦tiếp chuyện⟧ 応対する | ⟦tử tế⟧ 親切だ | ⟦từ từ⟧ ゆっくり
+=pl
+Kluczowe wyrażenie 1: ⟦không ai ~ bằng A⟧ — „nikt nie jest tak ~ jak A”.
+❶ ⟦Trong lớp, không ai hát hay bằng Trang.⟧ — W klasie nikt nie śpiewa tak pięknie jak Trang.
+❷ Ⓐ ⟦Trang ơi. Tất cả mọi người Việt đều kính trọng Chủ tịch Hồ Chí Minh à?⟧ — Trang, czy naprawdę wszyscy Wietnamczycy szanują prezydenta Ho Chi Minha? Ⓑ ⟦Vâng. Không ai có công lớn bằng Bác Hồ trong việc giành lại độc lập cho Việt Nam.⟧ — Tak. Nikt nie ma tak wielkich zasług w odzyskaniu niepodległości Wietnamu jak wujek Ho.
+Kluczowe wyrażenie 2: ⟦từng A một⟧ — „po jednym, jeden po drugim”.
+❶ ⟦Từng người một đi vào phòng.⟧ — Ludzie wchodzą do pokoju jeden po drugim.
+❷ Ⓐ ⟦Con đói bụng quá!⟧ — Jestem strasznie głodny! Ⓑ ⟦Con ăn từ từ từng quả một thôi.⟧ — Jedz powoli, po jednym.
+Ćwiczenie 3 — połącz w pary i rozmawiaj według wzoru:
+① ⟦em định lập gia đình với Tuấn⟧ (zamierzasz wyjść za Tuấna) — Ⓐ ⟦yêu em bằng anh Tuấn⟧ (kocha mnie tak jak Tuấn)
+② ⟦anh muốn học tiếng Việt với thầy Lee⟧ (chcesz uczyć się wietnamskiego u pana Lee) — Ⓑ ⟦dạy tiếng Việt tốt bằng thầy Lee⟧ (uczy wietnamskiego tak dobrze jak pan Lee)
+③ ⟦chị mua điện thoại di động ở cửa hàng đó⟧ (kupujesz komórkę w tamtym sklepie) — Ⓒ ⟦tiếp chuyện tử tế và lịch sự bằng nhân viên ở đó⟧ (obsługuje tak miło i uprzejmie jak tamtejszy personel)
+Wzór (①―Ⓐ): Ⓐ ⟦Tại sao em định lập gia đình với Tuấn?⟧ — Dlaczego chcesz wyjść za Tuấna? Ⓑ ⟦Vì không ai yêu em bằng anh Tuấn.⟧ — Bo nikt nie kocha mnie tak jak Tuấn.
+Ćwiczenie 4 — uzupełnij i powiedz:
+Wzór: ⟦Năm học mới đã bắt đầu, giáo viên đang trao đổi với từng học sinh một.⟧ — Zaczął się nowy rok szkolny i nauczyciel rozmawia z każdym uczniem po kolei.
+❶ ⟦từng câu một⟧: ⟦Giáo viên bắt học sinh phải xem từng câu một xem có sai sót hay không.⟧ — Nauczyciel każe uczniom sprawdzać zdanie po zdaniu, czy nie ma błędów.
+❷ ⟦từng phòng học trong trường một⟧: ⟦Do bệnh dịch, cơ quan y tế đã kiểm tra từng phòng học trong trường một.⟧ — Z powodu epidemii służby sanitarne sprawdziły w szkole salę po sali.
+Nowe słówka: ⟦kính trọng⟧ szanować | ⟦công⟧ zasługa | ⟦giành⟧ wywalczyć, zdobyć | ⟦độc lập⟧ niepodległość | ⟦cửa hàng⟧ sklep | ⟦tiếp chuyện⟧ obsługiwać (klienta) | ⟦tử tế⟧ uprzejmy | ⟦từ từ⟧ powoli

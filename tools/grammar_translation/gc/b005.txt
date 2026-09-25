@@ -1,0 +1,356 @@
+@@ pdf-grammar-7477003d9f1b381f#0
+~t 2. Současnost: A a zároveň B|2. 同时进行：一边A一边B|2. 同時進行：一邊A一邊B|2. Simultaneity: both A and B|2. Simultanéité : à la fois A et B|2. Gleichzeitigkeit: sowohl A als auch B|2. Egyidejűség: A is, B is|2. Kesamaan waktu: sambil A, B|2. 同時進行の表現：AしながらBする|2. Równoczesność: zarówno A, jak i B
+=cs
+⟦Em ấy vừa đẹp vừa thông minh.⟧ — Je hezká a zároveň chytrá.
+⟦vừa A vừa B⟧ znamená „A a zároveň B“. Jsou-li A a B slovesa, jde o dva současné děje; jsou-li to přídavná jména, podmět má obě vlastnosti. Jsou-li A a B podstatná jména, používá se tvar ⟦vừa là A vừa là B⟧ (je zároveň A i B).
+⟦Thuý vừa ăn cơm vừa xem ti vi.⟧ — Thuý jí a přitom se dívá na televizi.
+⟦Anh Hùng vừa đẹp trai vừa tốt bụng.⟧ — Hùng je pohledný a zároveň dobrosrdečný.
+⟦Hoa vừa là bác sĩ vừa là giám đốc công ti.⟧ — Hoa je lékařka a zároveň ředitelka firmy.
+Slovíčka: ⟦thông minh⟧ chytrý | ⟦ti vi⟧ televize | ⟦đẹp trai⟧ pohledný | ⟦tốt bụng⟧ dobrosrdečný
+=zh_cn
+⟦Em ấy vừa đẹp vừa thông minh.⟧ —— 她既漂亮又聪明。
+⟦vừa A vừa B⟧ 表示“一边A一边B / 既A又B”。A和B是动词时，表示两个动作同时进行；是形容词时，表示同时具有两种状态或性质。A和B是名词时，用 ⟦vừa là A vừa là B⟧ 的形式，意为“既是A又是B”。
+⟦Thuý vừa ăn cơm vừa xem ti vi.⟧ —— 翠一边吃饭一边看电视。
+⟦Anh Hùng vừa đẹp trai vừa tốt bụng.⟧ —— 雄哥既帅气又善良。
+⟦Hoa vừa là bác sĩ vừa là giám đốc công ti.⟧ —— 花既是医生又是公司老板。
+单词：⟦thông minh⟧ 聪明 | ⟦ti vi⟧ 电视 | ⟦đẹp trai⟧ 帅气 | ⟦tốt bụng⟧ 心地善良
+=zh
+⟦Em ấy vừa đẹp vừa thông minh.⟧ —— 她既漂亮又聰明。
+⟦vừa A vừa B⟧ 表示「一邊A一邊B / 既A又B」。A和B是動詞時，表示兩個動作同時進行；是形容詞時，表示同時具有兩種狀態或性質。A和B是名詞時，用 ⟦vừa là A vừa là B⟧ 的形式，意為「既是A又是B」。
+⟦Thuý vừa ăn cơm vừa xem ti vi.⟧ —— 翠一邊吃飯一邊看電視。
+⟦Anh Hùng vừa đẹp trai vừa tốt bụng.⟧ —— 雄哥既帥氣又善良。
+⟦Hoa vừa là bác sĩ vừa là giám đốc công ti.⟧ —— 花既是醫生又是公司老闆。
+單字：⟦thông minh⟧ 聰明 | ⟦ti vi⟧ 電視 | ⟦đẹp trai⟧ 帥氣 | ⟦tốt bụng⟧ 心地善良
+=en
+⟦Em ấy vừa đẹp vừa thông minh.⟧ — She's both pretty and smart.
+⟦vừa A vừa B⟧ means "A and at the same time B". When A and B are verbs, two actions happen simultaneously; when they are adjectives, the subject has both qualities. When A and B are nouns, the form ⟦vừa là A vừa là B⟧ (is both A and B) is used.
+⟦Thuý vừa ăn cơm vừa xem ti vi.⟧ — Thuý eats while watching TV.
+⟦Anh Hùng vừa đẹp trai vừa tốt bụng.⟧ — Hùng is both handsome and kind-hearted.
+⟦Hoa vừa là bác sĩ vừa là giám đốc công ti.⟧ — Hoa is both a doctor and a company director.
+Words: ⟦thông minh⟧ smart | ⟦ti vi⟧ TV | ⟦đẹp trai⟧ handsome | ⟦tốt bụng⟧ kind-hearted
+=fr
+⟦Em ấy vừa đẹp vừa thông minh.⟧ — Elle est à la fois jolie et intelligente.
+⟦vừa A vừa B⟧ signifie « A et en même temps B ». Si A et B sont des verbes, deux actions ont lieu simultanément ; si ce sont des adjectifs, le sujet possède les deux qualités. Si A et B sont des noms, on emploie ⟦vừa là A vừa là B⟧ (être à la fois A et B).
+⟦Thuý vừa ăn cơm vừa xem ti vi.⟧ — Thuý mange tout en regardant la télé.
+⟦Anh Hùng vừa đẹp trai vừa tốt bụng.⟧ — Hùng est à la fois beau garçon et généreux.
+⟦Hoa vừa là bác sĩ vừa là giám đốc công ti.⟧ — Hoa est à la fois médecin et directrice d'entreprise.
+Mots : ⟦thông minh⟧ intelligent | ⟦ti vi⟧ télé | ⟦đẹp trai⟧ beau (garçon) | ⟦tốt bụng⟧ bon, généreux
+=de
+⟦Em ấy vừa đẹp vừa thông minh.⟧ — Sie ist hübsch und zugleich klug.
+⟦vừa A vừa B⟧ bedeutet „A und zugleich B“. Sind A und B Verben, laufen zwei Handlungen gleichzeitig ab; sind es Adjektive, hat das Subjekt beide Eigenschaften. Bei Substantiven verwendet man ⟦vừa là A vừa là B⟧ (sowohl A als auch B sein).
+⟦Thuý vừa ăn cơm vừa xem ti vi.⟧ — Thuý isst und sieht dabei fern.
+⟦Anh Hùng vừa đẹp trai vừa tốt bụng.⟧ — Hùng ist gutaussehend und zugleich gutherzig.
+⟦Hoa vừa là bác sĩ vừa là giám đốc công ti.⟧ — Hoa ist Ärztin und zugleich Firmenchefin.
+Wörter: ⟦thông minh⟧ klug | ⟦ti vi⟧ Fernseher | ⟦đẹp trai⟧ gutaussehend | ⟦tốt bụng⟧ gutherzig
+=hu
+⟦Em ấy vừa đẹp vừa thông minh.⟧ — Csinos is, okos is.
+A ⟦vừa A vừa B⟧ jelentése „A és egyúttal B”. Ha A és B ige, két cselekvés egyszerre történik; ha melléknév, az alanynak mindkét tulajdonsága megvan. Ha A és B főnév, a ⟦vừa là A vừa là B⟧ (A is, B is) alakot használjuk.
+⟦Thuý vừa ăn cơm vừa xem ti vi.⟧ — Thuý evés közben tévét néz.
+⟦Anh Hùng vừa đẹp trai vừa tốt bụng.⟧ — Hùng jóképű is, jószívű is.
+⟦Hoa vừa là bác sĩ vừa là giám đốc công ti.⟧ — Hoa orvos is, cégvezető is.
+Szavak: ⟦thông minh⟧ okos | ⟦ti vi⟧ tévé | ⟦đẹp trai⟧ jóképű | ⟦tốt bụng⟧ jószívű
+=id
+⟦Em ấy vừa đẹp vừa thông minh.⟧ — Dia cantik sekaligus pintar.
+⟦vừa A vừa B⟧ berarti "sambil A, B / A sekaligus B". Jika A dan B kata kerja, dua tindakan terjadi bersamaan; jika kata sifat, subjek memiliki kedua sifat itu. Jika A dan B kata benda, dipakai bentuk ⟦vừa là A vừa là B⟧ (adalah A sekaligus B).
+⟦Thuý vừa ăn cơm vừa xem ti vi.⟧ — Thuý makan sambil menonton TV.
+⟦Anh Hùng vừa đẹp trai vừa tốt bụng.⟧ — Kak Hùng tampan sekaligus baik hati.
+⟦Hoa vừa là bác sĩ vừa là giám đốc công ti.⟧ — Hoa adalah dokter sekaligus direktur perusahaan.
+Kosakata: ⟦thông minh⟧ pintar | ⟦ti vi⟧ televisi | ⟦đẹp trai⟧ tampan | ⟦tốt bụng⟧ baik hati
+=ja
+⟦Em ấy vừa đẹp vừa thông minh.⟧ — あの子はきれいで、しかも賢いです。
+⟦vừa A vừa B⟧ は「AしながらBする」の構文で、A・Bが動詞なら二つの動作が同時に行われることを、形容詞なら二つの状態や性質を併せ持つことを表します。A・Bが名詞のときは ⟦vừa là A vừa là B⟧ の形で「Aであり、Bでもある」の意味になります。
+⟦Thuý vừa ăn cơm vừa xem ti vi.⟧ — トゥイはご飯を食べながらテレビを見る。
+⟦Anh Hùng vừa đẹp trai vừa tốt bụng.⟧ — フンさんはハンサムで、心も優しい。
+⟦Hoa vừa là bác sĩ vừa là giám đốc công ti.⟧ — ホアは医者であり、会社の社長でもある。
+単語：⟦thông minh⟧ 賢い | ⟦ti vi⟧ テレビ | ⟦đẹp trai⟧ ハンサムだ | ⟦tốt bụng⟧ 心が優しい
+=pl
+⟦Em ấy vừa đẹp vừa thông minh.⟧ — Jest i ładna, i mądra.
+⟦vừa A vừa B⟧ znaczy „A i jednocześnie B”. Gdy A i B są czasownikami, dwie czynności zachodzą równocześnie; gdy przymiotnikami — podmiot ma obie cechy. Gdy A i B są rzeczownikami, używa się ⟦vừa là A vừa là B⟧ (być zarówno A, jak i B).
+⟦Thuý vừa ăn cơm vừa xem ti vi.⟧ — Thuý je i jednocześnie ogląda telewizję.
+⟦Anh Hùng vừa đẹp trai vừa tốt bụng.⟧ — Hùng jest przystojny i dobroduszny.
+⟦Hoa vừa là bác sĩ vừa là giám đốc công ti.⟧ — Hoa jest lekarką i zarazem dyrektorką firmy.
+Słówka: ⟦thông minh⟧ mądry | ⟦ti vi⟧ telewizor | ⟦đẹp trai⟧ przystojny | ⟦tốt bụng⟧ dobroduszny
+@@ pdf-grammar-7daad3f5276ad964#0
+~t 1. Ptát se na možnost a odpovídat|1. 询问与回答可能性|1. 詢問與回答可能性|1. Asking and answering about possibility|1. Demander si c'est possible et répondre|1. Nach einer Möglichkeit fragen und antworten|1. Lehetőség kérdezése és megválaszolása|1. Menanyakan dan menjawab kemungkinan|1. 可能かどうかを尋ねて答える表現|1. Pytanie o możliwość i odpowiedź
+=cs
+A: ⟦Hôm nay chị đi xem phim với em, được không?⟧ — Můžeš jít dnes se mnou do kina, sestro?
+B: ⟦Được chứ!⟧ — Jasně! (Samozřejmě, že jo!)
+Na možnost se ptáme tvarem „podmět + přísudek, được không?“ (Může/je v pořádku, aby …?). Kladná odpověď je ⟦Được⟧ (jde to), záporná ⟦Không được⟧ (nejde to).
+A: ⟦Em ăn cơm với anh, được không?⟧ — Můžeš se mnou jít na jídlo?
+B: ⟦Được chứ.⟧ — Samozřejmě.
+B: ⟦Không được.⟧ — Nemůžu.
+A: ⟦Em về nhà, được không ạ?⟧ — Mohu jít domů?
+B: ⟦Ừ, được.⟧ — Jo, můžeš.
+B: ⟦Không được.⟧ — Nemůžeš.
+Slovíčka: ⟦xem⟧ dívat se | ⟦phim⟧ film | ⟦được⟧ být možné | ⟦chứ⟧ (samozřejmě) přece
+=zh_cn
+A：⟦Hôm nay chị đi xem phim với em, được không?⟧ —— 姐姐今天能和我去看电影吗？
+B：⟦Được chứ!⟧ —— 当然可以！
+询问是否可以时，用“主语 + 谓语, được không?”（主语做……可以吗？）的形式；肯定回答用 ⟦Được⟧（可以），否定回答用 ⟦Không được⟧（不可以）。
+A：⟦Em ăn cơm với anh, được không?⟧ —— 你能和我一起吃饭吗？
+B：⟦Được chứ.⟧ —— 当然可以。
+B：⟦Không được.⟧ —— 不行。
+A：⟦Em về nhà, được không ạ?⟧ —— 我可以回家吗？
+B：⟦Ừ, được.⟧ —— 嗯，可以。
+B：⟦Không được.⟧ —— 不行。
+单词：⟦xem⟧ 看 | ⟦phim⟧ 电影 | ⟦được⟧ 可以 | ⟦chứ⟧ （当然）……啦
+=zh
+A：⟦Hôm nay chị đi xem phim với em, được không?⟧ —— 姐姐今天能和我去看電影嗎？
+B：⟦Được chứ!⟧ —— 當然可以！
+詢問是否可以時，用「主語 + 謂語, được không?」（主語做……可以嗎？）的形式；肯定回答用 ⟦Được⟧（可以），否定回答用 ⟦Không được⟧（不可以）。
+A：⟦Em ăn cơm với anh, được không?⟧ —— 你能和我一起吃飯嗎？
+B：⟦Được chứ.⟧ —— 當然可以。
+B：⟦Không được.⟧ —— 不行。
+A：⟦Em về nhà, được không ạ?⟧ —— 我可以回家嗎？
+B：⟦Ừ, được.⟧ —— 嗯，可以。
+B：⟦Không được.⟧ —— 不行。
+單字：⟦xem⟧ 看 | ⟦phim⟧ 電影 | ⟦được⟧ 可以 | ⟦chứ⟧ （當然）……啦
+=en
+A: ⟦Hôm nay chị đi xem phim với em, được không?⟧ — Can you go to the movies with me today, sister?
+B: ⟦Được chứ!⟧ — Sure! (Of course I can!)
+To ask whether something is possible, use "subject + predicate, được không?" (Is it possible / okay for the subject to …?). A positive answer is ⟦Được⟧ (yes, it's possible), a negative one ⟦Không được⟧ (no, it's not possible).
+A: ⟦Em ăn cơm với anh, được không?⟧ — Can you have a meal with me?
+B: ⟦Được chứ.⟧ — Of course.
+B: ⟦Không được.⟧ — I can't.
+A: ⟦Em về nhà, được không ạ?⟧ — May I go home?
+B: ⟦Ừ, được.⟧ — Yes, you may.
+B: ⟦Không được.⟧ — No, you may not.
+Words: ⟦xem⟧ to watch | ⟦phim⟧ movie | ⟦được⟧ to be possible | ⟦chứ⟧ (of course) particle
+=fr
+A : ⟦Hôm nay chị đi xem phim với em, được không?⟧ — Tu peux aller au cinéma avec moi aujourd'hui, grande sœur ?
+B : ⟦Được chứ!⟧ — Bien sûr !
+Pour demander si c'est possible, on utilise « sujet + prédicat, được không? » (est-ce possible / d'accord que … ?). On répond ⟦Được⟧ (c'est possible) ou ⟦Không được⟧ (ce n'est pas possible).
+A : ⟦Em ăn cơm với anh, được không?⟧ — Tu peux manger avec moi ?
+B : ⟦Được chứ.⟧ — Bien sûr.
+B : ⟦Không được.⟧ — Je ne peux pas.
+A : ⟦Em về nhà, được không ạ?⟧ — Puis-je rentrer à la maison ?
+B : ⟦Ừ, được.⟧ — Oui, tu peux.
+B : ⟦Không được.⟧ — Non.
+Mots : ⟦xem⟧ regarder | ⟦phim⟧ film | ⟦được⟧ être possible | ⟦chứ⟧ (bien sûr) particule
+=de
+A: ⟦Hôm nay chị đi xem phim với em, được không?⟧ — Kannst du heute mit mir ins Kino gehen, große Schwester?
+B: ⟦Được chứ!⟧ — Klar! (Natürlich geht das!)
+Nach einer Möglichkeit fragt man mit „Subjekt + Prädikat, được không?“ (Geht es / ist es in Ordnung, dass …?). Bejahend antwortet man ⟦Được⟧ (geht), verneinend ⟦Không được⟧ (geht nicht).
+A: ⟦Em ăn cơm với anh, được không?⟧ — Kannst du mit mir essen?
+B: ⟦Được chứ.⟧ — Natürlich.
+B: ⟦Không được.⟧ — Geht nicht.
+A: ⟦Em về nhà, được không ạ?⟧ — Darf ich nach Hause gehen?
+B: ⟦Ừ, được.⟧ — Ja, darfst du.
+B: ⟦Không được.⟧ — Nein.
+Wörter: ⟦xem⟧ sehen | ⟦phim⟧ Film | ⟦được⟧ möglich sein | ⟦chứ⟧ (natürlich) Partikel
+=hu
+A: ⟦Hôm nay chị đi xem phim với em, được không?⟧ — El tudsz jönni ma velem moziba, nővérem?
+B: ⟦Được chứ!⟧ — Persze! (Hogyne!)
+A lehetőséget „alany + állítmány, được không?” (lehetséges / rendben van, hogy …?) formában kérdezzük. Igenlő válasz: ⟦Được⟧ (lehet), nemleges: ⟦Không được⟧ (nem lehet).
+A: ⟦Em ăn cơm với anh, được không?⟧ — Eljössz velem enni?
+B: ⟦Được chứ.⟧ — Persze.
+B: ⟦Không được.⟧ — Nem lehet.
+A: ⟦Em về nhà, được không ạ?⟧ — Hazamehetek?
+B: ⟦Ừ, được.⟧ — Igen, mehetsz.
+B: ⟦Không được.⟧ — Nem.
+Szavak: ⟦xem⟧ nézni | ⟦phim⟧ film | ⟦được⟧ lehetséges | ⟦chứ⟧ (persze) partikula
+=id
+A: ⟦Hôm nay chị đi xem phim với em, được không?⟧ — Hari ini Kakak bisa nonton film dengan saya?
+B: ⟦Được chứ!⟧ — Tentu bisa!
+Untuk menanyakan kemungkinan dipakai "subjek + predikat, được không?" (Bisakah / bolehkah …?). Jawaban positif ⟦Được⟧ (bisa/boleh), negatif ⟦Không được⟧ (tidak bisa/tidak boleh).
+A: ⟦Em ăn cơm với anh, được không?⟧ — Kamu bisa makan bersama Kakak?
+B: ⟦Được chứ.⟧ — Tentu bisa.
+B: ⟦Không được.⟧ — Tidak bisa.
+A: ⟦Em về nhà, được không ạ?⟧ — Bolehkah saya pulang?
+B: ⟦Ừ, được.⟧ — Ya, boleh.
+B: ⟦Không được.⟧ — Tidak boleh.
+Kosakata: ⟦xem⟧ menonton | ⟦phim⟧ film | ⟦được⟧ bisa, boleh | ⟦chứ⟧ (tentu) partikel
+=ja
+A：⟦Hôm nay chị đi xem phim với em, được không?⟧ — お姉さん、今日私と映画を見に行けますか。
+B：⟦Được chứ!⟧ — もちろん！（行けるわよ！）
+可能かどうかを尋ねるときは「主語 ＋ 述語, được không?」（主語が～することは可能ですか・大丈夫ですか）の形を使い、肯定の答えは ⟦Được⟧（できます・いいです）、否定の答えは ⟦Không được⟧（できません・だめです）を使います。
+A：⟦Em ăn cơm với anh, được không?⟧ — 僕と一緒にご飯を食べられる？
+B：⟦Được chứ.⟧ — もちろんです。
+B：⟦Không được.⟧ — だめです。
+A：⟦Em về nhà, được không ạ?⟧ — 家に帰ってもいいですか。
+B：⟦Ừ, được.⟧ — うん、いいよ。
+B：⟦Không được.⟧ — だめだ。
+単語：⟦xem⟧ 見る | ⟦phim⟧ 映画 | ⟦được⟧ 可能だ | ⟦chứ⟧ （当然）～よ
+=pl
+A: ⟦Hôm nay chị đi xem phim với em, được không?⟧ — Możesz dziś pójść ze mną do kina, siostro?
+B: ⟦Được chứ!⟧ — Jasne! (Oczywiście, że mogę!)
+O możliwość pytamy formą „podmiot + orzeczenie, được không?” (czy można / czy w porządku, żeby …?). Odpowiedź twierdząca to ⟦Được⟧ (można), przecząca ⟦Không được⟧ (nie można).
+A: ⟦Em ăn cơm với anh, được không?⟧ — Zjesz ze mną?
+B: ⟦Được chứ.⟧ — Oczywiście.
+B: ⟦Không được.⟧ — Nie mogę.
+A: ⟦Em về nhà, được không ạ?⟧ — Czy mogę iść do domu?
+B: ⟦Ừ, được.⟧ — Tak, możesz.
+B: ⟦Không được.⟧ — Nie.
+Słówka: ⟦xem⟧ oglądać | ⟦phim⟧ film | ⟦được⟧ być możliwym | ⟦chứ⟧ (oczywiście) partykuła
+@@ pdf-grammar-bdeeda051fa8b141#0
+~t 2. Ptát se na čas a odpovídat|2. 询问与回答时间|2. 詢問與回答時間|2. Asking and telling the time|2. Demander et dire l'heure|2. Nach der Uhrzeit fragen und antworten|2. Az idő kérdezése és megmondása|2. Menanyakan dan menjawab waktu|2. 時間を尋ねて答える表現|2. Pytanie o godzinę i odpowiedź
+=cs
+A: ⟦Bây giờ là mấy giờ?⟧ — Kolik je hodin?
+B: ⟦Bây giờ là bốn giờ.⟧ — Jsou čtyři hodiny.
+Na čas se ptáme spojením ⟦mấy⟧ (kolik) a ⟦giờ⟧ (hodina): ⟦mấy giờ⟧ (kolik hodin). Čas se obvykle vyjadřuje jako „číslo + giờ + číslo + phút + sáng (dopoledne) / trưa (poledne) / chiều (odpoledne) / tối (večer) / đêm (noc)“.
+A: ⟦Mấy giờ em đi học?⟧ — V kolik jdeš do školy?
+B: ⟦Bảy giờ ba mươi phút sáng.⟧ — V 7:30 ráno.
+Časové údaje jsou shrnuty níže.
+⟦tám giờ mười phút sáng⟧ — 8:10 dopoledne
+⟦mười hai giờ trưa⟧ — 12 hodin v poledne
+⟦ba giờ rưỡi chiều⟧ — půl čtvrté odpoledne
+⟦năm giờ kém mười phút⟧ — za deset minut pět (4:50)
+⟦bảy giờ ba mươi phút tối⟧ — 7:30 večer
+⟦mười một giờ đêm⟧ — 11 hodin v noci
+⟦rưỡi⟧ znamená „půl“ a ve tvaru „jednotka + rưỡi“ přidává k jednotce ještě její polovinu. ⟦nửa⟧ má stejný význam, ale jiné použití: ve tvaru „nửa + jednotka“ znamená polovinu jednotky.
+⟦Em muốn mua 1 cân rưỡi cam.⟧ — Chci koupit kilo a půl pomerančů. (1 kg + 0,5 kg = 1,5 kg)
+⟦Em muốn mua nửa cân cam.⟧ — Chci koupit půl kila pomerančů. (0,5 kg)
+Slovíčka: ⟦bây giờ⟧ teď | ⟦rưỡi⟧ a půl | ⟦phút⟧ minuta | ⟦kém⟧ chybět; za (… minut) | ⟦cân⟧ kilogram | ⟦cam⟧ pomeranč | ⟦nửa⟧ polovina
+=zh_cn
+A：⟦Bây giờ là mấy giờ?⟧ —— 现在几点？
+B：⟦Bây giờ là bốn giờ.⟧ —— 现在四点。
+询问时间时，把 ⟦mấy⟧（几）和 ⟦giờ⟧（点）结合成 ⟦mấy giờ⟧（几点）。时间通常用“数字 + giờ + 数字 + phút + sáng（上午）/ trưa（中午）/ chiều（下午）/ tối（晚上）/ đêm（夜里）”来表达。
+A：⟦Mấy giờ em đi học?⟧ —— 你几点去上学？
+B：⟦Bảy giờ ba mươi phút sáng.⟧ —— 早上七点三十分。
+时间表达整理如下。
+⟦tám giờ mười phút sáng⟧ —— 上午八点十分
+⟦mười hai giờ trưa⟧ —— 中午十二点
+⟦ba giờ rưỡi chiều⟧ —— 下午三点半
+⟦năm giờ kém mười phút⟧ —— 差十分五点（四点五十分）
+⟦bảy giờ ba mươi phút tối⟧ —— 晚上七点三十分
+⟦mười một giờ đêm⟧ —— 夜里十一点
+⟦rưỡi⟧ 意为“半”，以“单位 + rưỡi”的形式表示在单位上再加一半。意思相同但用法不同的 ⟦nửa⟧ 以“nửa + 单位”的形式表示单位的一半。
+⟦Em muốn mua 1 cân rưỡi cam.⟧ —— 我想买一公斤半橙子。（1 公斤 + 0.5 公斤 = 1.5 公斤）
+⟦Em muốn mua nửa cân cam.⟧ —— 我想买半公斤橙子。（0.5 公斤）
+单词：⟦bây giờ⟧ 现在 | ⟦rưỡi⟧ 半 | ⟦phút⟧ 分钟 | ⟦kém⟧ 不足；差（时间） | ⟦cân⟧ 公斤 | ⟦cam⟧ 橙子 | ⟦nửa⟧ 一半
+=zh
+A：⟦Bây giờ là mấy giờ?⟧ —— 現在幾點？
+B：⟦Bây giờ là bốn giờ.⟧ —— 現在四點。
+詢問時間時，把 ⟦mấy⟧（幾）和 ⟦giờ⟧（點）結合成 ⟦mấy giờ⟧（幾點）。時間通常用「數字 + giờ + 數字 + phút + sáng（上午）/ trưa（中午）/ chiều（下午）/ tối（晚上）/ đêm（夜裡）」來表達。
+A：⟦Mấy giờ em đi học?⟧ —— 你幾點去上學？
+B：⟦Bảy giờ ba mươi phút sáng.⟧ —— 早上七點三十分。
+時間表達整理如下。
+⟦tám giờ mười phút sáng⟧ —— 上午八點十分
+⟦mười hai giờ trưa⟧ —— 中午十二點
+⟦ba giờ rưỡi chiều⟧ —— 下午三點半
+⟦năm giờ kém mười phút⟧ —— 差十分五點（四點五十分）
+⟦bảy giờ ba mươi phút tối⟧ —— 晚上七點三十分
+⟦mười một giờ đêm⟧ —— 夜裡十一點
+⟦rưỡi⟧ 意為「半」，以「單位 + rưỡi」的形式表示在單位上再加一半。意思相同但用法不同的 ⟦nửa⟧ 以「nửa + 單位」的形式表示單位的一半。
+⟦Em muốn mua 1 cân rưỡi cam.⟧ —— 我想買一公斤半柳橙。（1 公斤 + 0.5 公斤 = 1.5 公斤）
+⟦Em muốn mua nửa cân cam.⟧ —— 我想買半公斤柳橙。（0.5 公斤）
+單字：⟦bây giờ⟧ 現在 | ⟦rưỡi⟧ 半 | ⟦phút⟧ 分鐘 | ⟦kém⟧ 不足；差（時間） | ⟦cân⟧ 公斤 | ⟦cam⟧ 柳橙 | ⟦nửa⟧ 一半
+=en
+A: ⟦Bây giờ là mấy giờ?⟧ — What time is it now?
+B: ⟦Bây giờ là bốn giờ.⟧ — It's four o'clock.
+To ask the time, combine ⟦mấy⟧ (how many) and ⟦giờ⟧ (hour) into ⟦mấy giờ⟧ (what time). Time is usually expressed as "number + giờ + number + phút + sáng (morning) / trưa (noon) / chiều (afternoon) / tối (evening) / đêm (night)".
+A: ⟦Mấy giờ em đi học?⟧ — What time do you go to school?
+B: ⟦Bảy giờ ba mươi phút sáng.⟧ — At 7:30 in the morning.
+Here is a summary of time expressions.
+⟦tám giờ mười phút sáng⟧ — 8:10 a.m.
+⟦mười hai giờ trưa⟧ — 12 noon
+⟦ba giờ rưỡi chiều⟧ — 3:30 p.m. (half past three)
+⟦năm giờ kém mười phút⟧ — ten to five (4:50)
+⟦bảy giờ ba mươi phút tối⟧ — 7:30 in the evening
+⟦mười một giờ đêm⟧ — 11 at night
+⟦rưỡi⟧ means "half" and, in the form "unit + rưỡi", adds half a unit to the unit. ⟦nửa⟧ has the same meaning but a different use: in the form "nửa + unit" it means half of the unit.
+⟦Em muốn mua 1 cân rưỡi cam.⟧ — I want to buy a kilo and a half of oranges. (1 kg + 0.5 kg = 1.5 kg)
+⟦Em muốn mua nửa cân cam.⟧ — I want to buy half a kilo of oranges. (0.5 kg)
+Words: ⟦bây giờ⟧ now | ⟦rưỡi⟧ and a half | ⟦phút⟧ minute | ⟦kém⟧ to lack; to (the hour) | ⟦cân⟧ kilogram | ⟦cam⟧ orange | ⟦nửa⟧ half
+=fr
+A : ⟦Bây giờ là mấy giờ?⟧ — Quelle heure est-il ?
+B : ⟦Bây giờ là bốn giờ.⟧ — Il est quatre heures.
+Pour demander l'heure, on combine ⟦mấy⟧ (combien) et ⟦giờ⟧ (heure) : ⟦mấy giờ⟧ (quelle heure). L'heure s'exprime généralement par « nombre + giờ + nombre + phút + sáng (matin) / trưa (midi) / chiều (après-midi) / tối (soir) / đêm (nuit) ».
+A : ⟦Mấy giờ em đi học?⟧ — À quelle heure vas-tu à l'école ?
+B : ⟦Bảy giờ ba mươi phút sáng.⟧ — À 7 h 30 du matin.
+Voici un récapitulatif des expressions de l'heure.
+⟦tám giờ mười phút sáng⟧ — 8 h 10 du matin
+⟦mười hai giờ trưa⟧ — midi
+⟦ba giờ rưỡi chiều⟧ — 3 h et demie de l'après-midi
+⟦năm giờ kém mười phút⟧ — 5 h moins 10 (4 h 50)
+⟦bảy giờ ba mươi phút tối⟧ — 7 h 30 du soir
+⟦mười một giờ đêm⟧ — 11 h du soir
+⟦rưỡi⟧ signifie « demi » ; sous la forme « unité + rưỡi », il ajoute une demi-unité. ⟦nửa⟧ a le même sens mais un autre emploi : « nửa + unité » signifie la moitié de l'unité.
+⟦Em muốn mua 1 cân rưỡi cam.⟧ — Je voudrais un kilo et demi d'oranges. (1 kg + 0,5 kg = 1,5 kg)
+⟦Em muốn mua nửa cân cam.⟧ — Je voudrais un demi-kilo d'oranges. (0,5 kg)
+Mots : ⟦bây giờ⟧ maintenant | ⟦rưỡi⟧ et demi | ⟦phút⟧ minute | ⟦kém⟧ manquer ; moins (l'heure) | ⟦cân⟧ kilogramme | ⟦cam⟧ orange | ⟦nửa⟧ moitié
+=de
+A: ⟦Bây giờ là mấy giờ?⟧ — Wie spät ist es jetzt?
+B: ⟦Bây giờ là bốn giờ.⟧ — Es ist vier Uhr.
+Nach der Uhrzeit fragt man, indem man ⟦mấy⟧ (wie viel) und ⟦giờ⟧ (Stunde) zu ⟦mấy giờ⟧ (wie spät) verbindet. Die Uhrzeit wird meist als „Zahl + giờ + Zahl + phút + sáng (vormittags) / trưa (mittags) / chiều (nachmittags) / tối (abends) / đêm (nachts)“ ausgedrückt.
+A: ⟦Mấy giờ em đi học?⟧ — Um wie viel Uhr gehst du zur Schule?
+B: ⟦Bảy giờ ba mươi phút sáng.⟧ — Um 7:30 Uhr morgens.
+Hier eine Übersicht der Zeitangaben.
+⟦tám giờ mười phút sáng⟧ — 8:10 Uhr vormittags
+⟦mười hai giờ trưa⟧ — 12 Uhr mittags
+⟦ba giờ rưỡi chiều⟧ — halb vier nachmittags
+⟦năm giờ kém mười phút⟧ — zehn vor fünf (4:50)
+⟦bảy giờ ba mươi phút tối⟧ — 19:30 Uhr
+⟦mười một giờ đêm⟧ — 23 Uhr
+⟦rưỡi⟧ bedeutet „halb“ und fügt in der Form „Einheit + rưỡi“ eine halbe Einheit hinzu. ⟦nửa⟧ bedeutet dasselbe, wird aber anders verwendet: „nửa + Einheit“ ist die Hälfte der Einheit.
+⟦Em muốn mua 1 cân rưỡi cam.⟧ — Ich möchte anderthalb Kilo Orangen kaufen. (1 kg + 0,5 kg = 1,5 kg)
+⟦Em muốn mua nửa cân cam.⟧ — Ich möchte ein halbes Kilo Orangen kaufen. (0,5 kg)
+Wörter: ⟦bây giờ⟧ jetzt | ⟦rưỡi⟧ -einhalb | ⟦phút⟧ Minute | ⟦kém⟧ fehlen; vor (Uhrzeit) | ⟦cân⟧ Kilogramm | ⟦cam⟧ Orange | ⟦nửa⟧ Hälfte
+=hu
+A: ⟦Bây giờ là mấy giờ?⟧ — Hány óra van most?
+B: ⟦Bây giờ là bốn giờ.⟧ — Most négy óra van.
+Az időt a ⟦mấy⟧ (hány) és a ⟦giờ⟧ (óra) összekapcsolásával, ⟦mấy giờ⟧ (hány óra) formában kérdezzük. Az időt általában „szám + giờ + szám + phút + sáng (délelőtt) / trưa (dél) / chiều (délután) / tối (este) / đêm (éjjel)” formában fejezzük ki.
+A: ⟦Mấy giờ em đi học?⟧ — Hánykor mész iskolába?
+B: ⟦Bảy giờ ba mươi phút sáng.⟧ — Reggel fél nyolckor (7:30).
+Az időkifejezések összefoglalása:
+⟦tám giờ mười phút sáng⟧ — délelőtt 8:10
+⟦mười hai giờ trưa⟧ — déli 12 óra
+⟦ba giờ rưỡi chiều⟧ — délután fél négy
+⟦năm giờ kém mười phút⟧ — öt óra előtt tíz perccel (4:50)
+⟦bảy giờ ba mươi phút tối⟧ — este 7:30
+⟦mười một giờ đêm⟧ — éjjel 11 óra
+A ⟦rưỡi⟧ jelentése „fél”, és „egység + rưỡi” formában az egységhez még egy fél egységet ad. A ⟦nửa⟧ jelentése ugyanaz, de másként használjuk: „nửa + egység” az egység felét jelenti.
+⟦Em muốn mua 1 cân rưỡi cam.⟧ — Másfél kiló narancsot szeretnék venni. (1 kg + 0,5 kg = 1,5 kg)
+⟦Em muốn mua nửa cân cam.⟧ — Fél kiló narancsot szeretnék venni. (0,5 kg)
+Szavak: ⟦bây giờ⟧ most | ⟦rưỡi⟧ és fél | ⟦phút⟧ perc | ⟦kém⟧ hiányzik; előtt (idő) | ⟦cân⟧ kilogramm | ⟦cam⟧ narancs | ⟦nửa⟧ fél
+=id
+A: ⟦Bây giờ là mấy giờ?⟧ — Sekarang jam berapa?
+B: ⟦Bây giờ là bốn giờ.⟧ — Sekarang jam empat.
+Untuk menanyakan waktu, ⟦mấy⟧ (berapa) digabung dengan ⟦giờ⟧ (jam) menjadi ⟦mấy giờ⟧ (jam berapa). Waktu biasanya dinyatakan dengan "angka + giờ + angka + phút + sáng (pagi) / trưa (siang) / chiều (sore) / tối (malam) / đêm (larut malam)".
+A: ⟦Mấy giờ em đi học?⟧ — Jam berapa kamu pergi ke sekolah?
+B: ⟦Bảy giờ ba mươi phút sáng.⟧ — Jam 7.30 pagi.
+Berikut ringkasan ungkapan waktu.
+⟦tám giờ mười phút sáng⟧ — jam 8.10 pagi
+⟦mười hai giờ trưa⟧ — jam 12 siang
+⟦ba giờ rưỡi chiều⟧ — jam setengah empat sore
+⟦năm giờ kém mười phút⟧ — jam lima kurang sepuluh (4.50)
+⟦bảy giờ ba mươi phút tối⟧ — jam 7.30 malam
+⟦mười một giờ đêm⟧ — jam 11 malam
+⟦rưỡi⟧ berarti "setengah" dan dalam bentuk "satuan + rưỡi" menambahkan setengah satuan. ⟦nửa⟧ artinya sama tetapi pemakaiannya berbeda: "nửa + satuan" berarti setengah dari satuan itu.
+⟦Em muốn mua 1 cân rưỡi cam.⟧ — Saya mau beli satu setengah kilo jeruk. (1 kg + 0,5 kg = 1,5 kg)
+⟦Em muốn mua nửa cân cam.⟧ — Saya mau beli setengah kilo jeruk. (0,5 kg)
+Kosakata: ⟦bây giờ⟧ sekarang | ⟦rưỡi⟧ setengah (tambahan) | ⟦phút⟧ menit | ⟦kém⟧ kurang | ⟦cân⟧ kilogram | ⟦cam⟧ jeruk | ⟦nửa⟧ setengah
+=ja
+A：⟦Bây giờ là mấy giờ?⟧ — 今何時ですか。
+B：⟦Bây giờ là bốn giờ.⟧ — 今4時です。
+時間を尋ねるときは ⟦mấy⟧（いくつ）と ⟦giờ⟧（時）を組み合わせて ⟦mấy giờ⟧（何時）を使います。時間はふつう「数字 ＋ giờ ＋ 数字 ＋ phút ＋ sáng（午前）/ trưa（昼）/ chiều（午後）/ tối（夕方）/ đêm（夜）」で表します。
+A：⟦Mấy giờ em đi học?⟧ — 何時に学校へ行くの？
+B：⟦Bảy giờ ba mươi phút sáng.⟧ — 午前7時30分です。
+時間の表現を次のようにまとめました。
+⟦tám giờ mười phút sáng⟧ — 午前8時10分
+⟦mười hai giờ trưa⟧ — 昼の12時
+⟦ba giờ rưỡi chiều⟧ — 午後3時半
+⟦năm giờ kém mười phút⟧ — 5時10分前（4時50分）
+⟦bảy giờ ba mươi phút tối⟧ — 夜7時30分
+⟦mười một giờ đêm⟧ — 夜11時
+⟦rưỡi⟧ は「半分」の意味で、「単位 ＋ rưỡi」の形で単位にその半分を加えることを表します。意味は同じでも使い方が違う ⟦nửa⟧ は「nửa ＋ 単位」の形で単位の半分を意味します。
+⟦Em muốn mua 1 cân rưỡi cam.⟧ — オレンジを1.5キロ買いたいです。（1キロ＋0.5キロ＝1.5キロ）
+⟦Em muốn mua nửa cân cam.⟧ — オレンジを0.5キロ買いたいです。（0.5キロ）
+単語：⟦bây giờ⟧ 今 | ⟦rưỡi⟧ 半 | ⟦phút⟧ 分 | ⟦kém⟧ 足りない、前（時間） | ⟦cân⟧ キログラム | ⟦cam⟧ オレンジ | ⟦nửa⟧ 半分
+=pl
+A: ⟦Bây giờ là mấy giờ?⟧ — Która jest teraz godzina?
+B: ⟦Bây giờ là bốn giờ.⟧ — Jest czwarta.
+O godzinę pytamy, łącząc ⟦mấy⟧ (ile) i ⟦giờ⟧ (godzina) w ⟦mấy giờ⟧ (która godzina). Czas wyraża się zwykle jako „liczba + giờ + liczba + phút + sáng (rano) / trưa (południe) / chiều (po południu) / tối (wieczorem) / đêm (w nocy)”.
+A: ⟦Mấy giờ em đi học?⟧ — O której idziesz do szkoły?
+B: ⟦Bảy giờ ba mươi phút sáng.⟧ — O 7:30 rano.
+Oto zestawienie wyrażeń czasowych.
+⟦tám giờ mười phút sáng⟧ — 8:10 rano
+⟦mười hai giờ trưa⟧ — 12 w południe
+⟦ba giờ rưỡi chiều⟧ — wpół do czwartej po południu
+⟦năm giờ kém mười phút⟧ — za dziesięć piąta (4:50)
+⟦bảy giờ ba mươi phút tối⟧ — 19:30
+⟦mười một giờ đêm⟧ — 23:00
+⟦rưỡi⟧ znaczy „pół” i w formie „jednostka + rưỡi” dodaje do jednostki jeszcze połowę. ⟦nửa⟧ ma to samo znaczenie, ale inne użycie: „nửa + jednostka” oznacza połowę jednostki.
+⟦Em muốn mua 1 cân rưỡi cam.⟧ — Chcę kupić półtora kilograma pomarańczy. (1 kg + 0,5 kg = 1,5 kg)
+⟦Em muốn mua nửa cân cam.⟧ — Chcę kupić pół kilograma pomarańczy. (0,5 kg)
+Słówka: ⟦bây giờ⟧ teraz | ⟦rưỡi⟧ i pół | ⟦phút⟧ minuta | ⟦kém⟧ brakować; za (… minut) | ⟦cân⟧ kilogram | ⟦cam⟧ pomarańcza | ⟦nửa⟧ połowa
