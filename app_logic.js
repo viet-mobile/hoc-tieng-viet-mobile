@@ -9021,7 +9021,10 @@ function verifyDistribution(units, dist, pins) {
           selectCategory(key, current.length ? current : "all");
         });
       });
-      renderReviewSubscope(key, Array.isArray(selectedScope) ? selectedScope[0] : selectedScope);
+      var dependentScope = Array.isArray(selectedScope)
+        ? (selectedScope.indexOf("lpd") >= 0 ? "lpd" : selectedScope[0])
+        : selectedScope;
+      renderReviewSubscope(key, dependentScope);
     }
 
     // poolOverride (optional) lets a caller supply an already-built pool instead of the full
