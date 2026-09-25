@@ -504,6 +504,53 @@ def scrub_note_fields(value):
         return out
     return value
 
+def filter_general_curriculum(welcome, phases, weeks):
+    """Keep the language-learning course in GENERAL while removing JW-only study items."""
+    blocked_terms = (
+        "행누", "랑제", "졸업", "집회", "봉사", "회중", "성서 연구", "파수대", "연설",
+        "제공", "성경 책명", "성서 책명", "성경 찾기", "성경구절", "노래", "신권", "인명", "기도 준비",
+    )
+    blocked_links = {
+        ("sentence", "wt"),
+        ("wizard", "talks"),
+        ("vocab", "theo"),
+        ("vocab", "names"),
+        ("bible", "books"),
+        ("curriculum", "song"),
+        ("curriculum", "prayer"),
+    }
+
+    def is_blocked(item):
+        link = item.get("link") or {}
+        if (link.get("subAttr"), link.get("subVal")) in blocked_links:
+            return True
+        return any(term in json.dumps(item, ensure_ascii=False) for term in blocked_terms)
+
+    filtered_welcome = dict(welcome)
+    filtered_welcome["body"] = [
+        body for body in welcome.get("body", [])
+        if not any(term in json.dumps(body, ensure_ascii=False) for term in blocked_terms)
+    ]
+    filtered_phases = []
+    for phase in phases:
+        filtered_body = [
+            body for body in phase.get("body", [])
+            if not any(term in json.dumps(body, ensure_ascii=False) for term in blocked_terms)
+        ]
+        if filtered_body:
+            kept_phase = dict(phase)
+            kept_phase["body"] = filtered_body
+            filtered_phases.append(kept_phase)
+    filtered_weeks = []
+    for week in weeks:
+        kept_week = dict(week)
+        for field in ("title", "note"):
+            if field in kept_week and any(term in json.dumps(kept_week[field], ensure_ascii=False) for term in blocked_terms):
+                kept_week.pop(field)
+        kept_week["items"] = [item for item in week.get("items", []) if not is_blocked(item)]
+        filtered_weeks.append(kept_week)
+    return filtered_welcome, filtered_phases, filtered_weeks
+
 def build_data_js(site):
     # One source of truth for all three profiles: GENERAL is the slim profile (JW publication
     # data excluded/filtered); JW gets everything; JEONJU = JW's full data set + its own event
@@ -511,9 +558,10 @@ def build_data_js(site):
     # "general + event", it inherits the full JW content set unchanged).
     exclude = JW_ONLY_CONSTS if site == "general" else set()
     filter_general = site == "general"
+    general_curriculum_names = {"CURR_WELCOME", "CURR_PHASES", "CURR_WEEKS", "CURR_ASSIGNMENTS"}
 
     def emit(name, value):
-        if name in exclude:
+        if name in exclude and not (filter_general and name in general_curriculum_names):
             value = STRUCTURED_EMPTY_SHAPES.get(name, empty_like(value))
         elif filter_general and name in GENERAL_CONSTS_NEEDING_ENTRY_FILTER:
             value = strip_religious_entries(value)
@@ -592,6 +640,12 @@ def build_data_js(site):
             curr_weeks = ulsan_data.ULSAN_CURR_WEEKS
         if getattr(ulsan_data, "ULSAN_CURR_ASSIGNMENTS", None) is not None:
             curr_assignments = ulsan_data.ULSAN_CURR_ASSIGNMENTS
+
+    if filter_general:
+        curr_welcome, curr_phases, curr_weeks = filter_general_curriculum(
+            curr_welcome, curr_phases, curr_weeks
+        )
+        curr_assignments = []
 
     parts.append(emit("CURR_WELCOME", curr_welcome))
     parts.append(emit("CURR_PHASES", curr_phases))

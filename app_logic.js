@@ -4409,7 +4409,7 @@
     }
 
     var slice = filtered.slice(0, wordsDisplayLimit);
-    var html = '<div class="chain-note" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">' +
+    var html = '<div class="chain-note" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">' +
       '<span>' + TU("총 ") + filtered.length + TU("개 단어") + (activeWordTag !== "all" ? ' (' + wordTagLabel(activeWordTag) + ')' : '') + '</span>' +
       readAllButtonHtml(slice.map(function (w) { return [w.vi, getWordMeaning(w)]; })) +
       '</div>';
@@ -8445,10 +8445,15 @@ function verifyDistribution(units, dist, pins) {
       songs.forEach(function (s) { if (s.number > maxNum) maxNum = s.number; });
       if (!maxNum) maxNum = songs.length || 163;
       var scopes = ["all"];
-      for (var start = 1; start <= maxNum; start += 20) {
-        var end = Math.min(start + 19, maxNum);
-        scopes.push(start + "-" + end);
-      }
+      for (var number = 1; number <= maxNum; number++) scopes.push(String(number));
+      return scopes;
+    }
+
+    function getSentenceReviewScopes() {
+      var scopes = ["all"];
+      (LFF_CONVERSATIONS || []).forEach(function (rec) { if (rec.num) scopes.push("lff:" + rec.num); });
+      (LPD_LESSONS || []).forEach(function (rec) { if (rec.num) scopes.push("lpd:" + rec.num); });
+      scopes.push("wt");
       return scopes;
     }
 
@@ -8460,7 +8465,7 @@ function verifyDistribution(units, dist, pins) {
       bible: ["all", "books", "numbers", "time", "days", "months"],
       wizard: ["all", "main", "reftable", "talks", "neighbor", "daily"],
       vocab: ["all", "rhyme", "orderrev", "groups", "basic", "antonym", "freq", "theo", "names", "chain", "dialect"],
-      sentence: ["all", "lff", "lpd", "wt"],
+      sentence: ["all", "wt"],
       grammar: ["all", "lessons", "special", "sentences"],
       song: ["all"]
     };
@@ -8472,6 +8477,10 @@ function verifyDistribution(units, dist, pins) {
       lessons: "예문", special: "특강", sentences: "범용 언어 생성표"
     };
     function reviewScopeLabel(scope) {
+      var lessonMatch = scope && scope.match(/^(lff|lpd):(\d+)$/);
+      if (lessonMatch) {
+        return (lessonMatch[1] === "lff" ? "행누 " : "랑제 ") + lessonMatch[2] + (currentLang === "en" ? "" : "과");
+      }
       var m = scope && scope.match(/^(\d+)-(\d+)$/);
       if (m) {
         var s1 = m[1], s2 = m[2];
@@ -8480,11 +8489,22 @@ function verifyDistribution(units, dist, pins) {
         if (currentLang === "ja") return s1 + "-" + s2 + "番";
         return s1 + "~" + s2 + "번";
       }
+      if (/^\d+$/.test(scope || "")) {
+        if (currentLang === "en") return "Song " + scope;
+        if (currentLang === "ja") return scope + "番";
+        return scope + "번";
+      }
       if (scope !== "all") return TU(REVIEW_SCOPE_LABELS[scope] || scope);
       return currentLang === "zh" ? "全部" : currentLang === "en" ? "All" : currentLang === "ja" ? "すべて" : "전체";
     }
     window.reviewScopedPool = reviewScopedPool; // read-only hook used by tests/test_browser_runtime.js
     function reviewScopedPool(key, scope) {
+      if (Array.isArray(scope)) {
+        if (scope.indexOf("all") >= 0 || !scope.length) return POOL_BUILDERS[key] ? POOL_BUILDERS[key]() : [];
+        var combined = [];
+        scope.forEach(function (oneScope) { combined = combined.concat(reviewScopedPool(key, oneScope)); });
+        return dedupeByVi(combined);
+      }
       if (!scope || scope === "all") return POOL_BUILDERS[key] ? POOL_BUILDERS[key]() : [];
       var out = [];
       function sentence(vi, kr) { if (vi && kr) addSentencePairs(out, vi, kr); }
@@ -8506,8 +8526,11 @@ function verifyDistribution(units, dist, pins) {
         else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(applyNeighborTermsVi(l.vi), applyNeighborTermsMeaning(Tstrict(l), currentLang)); }); });
         else if (scope === "daily") DAILY_CONVERSATIONS.forEach(function (c) { c.turns.forEach(function (t) { sentence(applyDailyPronouns(c, t), applyDailyMeaningPronouns(c, t, currentLang)); }); });
       } else if (key === "sentence") {
-        if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
-        else if (scope === "lpd") LPD_LESSONS.forEach(function (r) {
+        var lffScope = scope === "lff" ? 0 : (scope && scope.indexOf("lff:") === 0 ? parseInt(scope.slice(4), 10) : -1);
+        var lpdScope = scope === "lpd" ? 0 : (scope && scope.indexOf("lpd:") === 0 ? parseInt(scope.slice(4), 10) : -1);
+        if (lffScope >= 0) LFF_CONVERSATIONS.forEach(function (r) { if (!lffScope || r.num === lffScope) lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
+        else if (lpdScope >= 0) LPD_LESSONS.forEach(function (r) {
+          if (lpdScope && r.num !== lpdScope) return;
           r.lines.forEach(function (l) {
             if (r.kind === "appendix" && r.num === "A") {
               var u = applyLpdTerms(l);
@@ -8565,7 +8588,7 @@ function verifyDistribution(units, dist, pins) {
 
     var poolCache = {};
     function getPool(key, scope) {
-      var cacheKey = key + ":" + (scope || "all");
+      var cacheKey = key + ":" + (Array.isArray(scope) ? scope.join(",") : (scope || "all"));
       if (!poolCache[cacheKey]) poolCache[cacheKey] = reviewScopedPool(key, scope || "all");
       return poolCache[cacheKey];
     }
@@ -8915,7 +8938,7 @@ function verifyDistribution(units, dist, pins) {
 
     function renderReviewScopes(key, selectedScope) {
       if (!reviewScopeEl) return;
-      var scopes = (key === "song" ? getSongReviewScopes() : (REVIEW_SCOPES[key] || ["all"]));
+      var scopes = key === "song" ? getSongReviewScopes() : (key === "sentence" ? getSentenceReviewScopes() : (REVIEW_SCOPES[key] || ["all"]));
       // REVIEW_SCOPES is a static, profile-independent list; each of its non-"all" entries names
       // exactly one subtab value of this same category's own top-level tab (e.g. "wizard":"talks"
       // <-> that tab's own [data-wizard="talks"] button). GENERAL removes several of those subtab
@@ -8924,19 +8947,31 @@ function verifyDistribution(units, dist, pins) {
       // forking REVIEW_SCOPES per profile: a scope only appears if its own subtab button still
       // exists somewhere in the document (or it's the always-present "all").
       scopes = scopes.filter(function (s) {
-        return s === "all" || !!document.querySelector('[data-' + key + '="' + s + '"]');
+        return s === "all" || s === "wt" || s.indexOf("lff:") === 0 || s.indexOf("lpd:") === 0 || /^\d+$/.test(s) || !!document.querySelector('[data-' + key + '="' + s + '"]');
       });
       reviewScopeEl.dataset.scopeCategory = key;
+      var selectedScopes = Array.isArray(selectedScope) ? selectedScope : [selectedScope || "all"];
       reviewScopeEl.innerHTML = scopes.map(function (scope) {
-        var isSelected = (scope === selectedScope || (scope === "wt" && selectedScope && selectedScope.indexOf("wt:") === 0));
+        var isSelected = selectedScopes.indexOf(scope) >= 0 || (scope === "wt" && selectedScopes.some(function (s) { return s && s.indexOf("wt:") === 0; }));
         return '<button type="button" class="subtab-btn" data-review-scope="' + escapeAttr(scope) +
           '" aria-selected="' + (isSelected ? "true" : "false") + '">' +
           escapeHtml(reviewScopeLabel(scope)) + '</button>';
       }).join("");
       reviewScopeEl.querySelectorAll("[data-review-scope]").forEach(function (btn) {
-        btn.addEventListener("click", function () { selectCategory(key, btn.dataset.reviewScope); });
+        btn.addEventListener("click", function () {
+          var clicked = btn.dataset.reviewScope;
+          if (clicked === "all") {
+            selectCategory(key, "all");
+            return;
+          }
+          var current = selectedScopes.filter(function (s) { return s !== "all"; });
+          var index = current.indexOf(clicked);
+          if (index >= 0) current.splice(index, 1);
+          else current.push(clicked);
+          selectCategory(key, current.length ? current : "all");
+        });
       });
-      renderReviewSubscope(key, selectedScope);
+      renderReviewSubscope(key, Array.isArray(selectedScope) ? selectedScope[0] : selectedScope);
     }
 
     // poolOverride (optional) lets a caller supply an already-built pool instead of the full
@@ -8944,8 +8979,8 @@ function verifyDistribution(units, dist, pins) {
     // can show the "어휘" subtab as selected (key stays "vocab") while only testing the words in
     // the currently-scoped range, without touching/polluting getPool()'s poolCache for "vocab".
     function selectCategory(key, scope, poolOverride) {
-      if (Array.isArray(scope)) { poolOverride = scope; scope = "all"; }
       scope = scope || "all";
+      if (Array.isArray(scope)) scope = scope.filter(Boolean).filter(function (s, i, a) { return a.indexOf(s) === i; });
       // Guards every entry point into this function (button clicks, the boot-time default,
       // window.__goToScopedVocabReview, and any "바로가기" deep-link), not just the visible
       // category row: a profile that doesn't have this category's button at all (e.g. GENERAL
@@ -8963,7 +8998,10 @@ function verifyDistribution(units, dist, pins) {
       // it happens to be the same one this function's boot-time default call already selected)
       // used to immediately re-trigger a second, competing prompt read-aloud. poolOverride always
       // forces through, since a scoped-review launch needs a fresh pool even when key/scope match.
-      if (!poolOverride && studyState.tabKey === key && studyState.scope === scope) return;
+      var sameScope = Array.isArray(scope) && Array.isArray(studyState.scope)
+        ? scope.join(",") === studyState.scope.join(",")
+        : studyState.scope === scope;
+      if (!poolOverride && studyState.tabKey === key && sameScope) return;
       var prevKey = studyState.tabKey;
       studyState.tabKey = key;
       studyState.scope = scope;

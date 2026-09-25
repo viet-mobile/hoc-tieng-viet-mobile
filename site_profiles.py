@@ -27,9 +27,9 @@ JW_ONLY_CONSTS = {
     "BIBLE_OT", "BIBLE_NT",      # bible_numbers_data.py -- 66 Bible book names (the *_NUM_* half
                                  # of that same file is general Vietnamese numbers, kept)
     "GRAMMAR_INTRO", "GRAMMAR_UNITS",  # grammar_data.py -- pervasive religious example sentences
-    "CURR_WELCOME", "CURR_PHASES", "CURR_WEEKS",  # curriculum_data.py -- "베트남어 학습반 16주
-                                 # 과정" ministry class booklet ("이 학습반은... 전파하기 위해...")
-    "CURR_ASSIGNMENTS",          # weekly_assignments_data.py -- tied to that same 16-week class
+    "CURR_WELCOME", "CURR_PHASES", "CURR_WEEKS",  # curriculum_data.py -- JW course source;
+                                 # GENERAL receives a filtered language-learning subset
+    "CURR_ASSIGNMENTS",          # weekly_assignments_data.py -- JW-only weekly tasks; removed from GENERAL
     "USAGE_GUIDE_COMMON", "USAGE_GUIDE_TABS",  # usage_guide_data.py -- "교과 > 사용설명"
     "OFFER_TALKS", "KINGDOM_SONGS", "PRAYER_TEMPLATE",  # offer_talks_data.py -- ministry talk/
                                  # prayer/song material transcribed from the course booklet
@@ -114,7 +114,7 @@ SITE_TITLES = {
         "h1_by_lang": {
             "vi": "JW Học tiếng Việt",
             "cs": "JW Studium vietnamštiny",
-            "zh_cn": "JW 越南语学习",
+            "zh_cn": "JW 学习越南语",
             "zh": "JW學習越南語",
             "en": "JW Vietnamese Learning",
             "fr": "JW Apprentissage du vietnamien",
@@ -128,7 +128,7 @@ SITE_TITLES = {
         "title_by_lang": {
             "vi": "JW Học tiếng Việt",
             "cs": "JW Studium vietnamštiny",
-            "zh_cn": "JW 越南语学习",
+            "zh_cn": "JW 学习越南语",
             "zh": "JW學習越南語",
             "en": "JW Vietnamese Learning",
             "fr": "JW Apprentissage du vietnamien",
@@ -145,14 +145,14 @@ SITE_TITLES = {
         },
     },
     "general": {
-        "title": "베트남어 학습 · 越南語學習 · Learn Vietnamese · ベトナム語学習",
+        "title": "베트남어 학습 · 學習越南語 · Learn Vietnamese · ベトナム語学習",
         "h1": "베트남어 학습",
         "host": "hoc.tieng.viet.mobile",
         "h1_by_lang": {
             "vi": "Học tiếng Việt",
             "cs": "Studium vietnamštiny",
-            "zh_cn": "越南语学习",
-            "zh": "越南語學習",
+            "zh_cn": "学习越南语",
+            "zh": "學習越南語",
             "en": "Vietnamese Learning",
             "fr": "Apprentissage du vietnamien",
             "de": "Vietnamesisch lernen",
@@ -165,8 +165,8 @@ SITE_TITLES = {
         "title_by_lang": {
             "vi": "Học tiếng Việt",
             "cs": "Studium vietnamštiny",
-            "zh_cn": "越南语学习",
-            "zh": "越南語學習",
+            "zh_cn": "学习越南语",
+            "zh": "學習越南語",
             "en": "Vietnamese Learning",
             "fr": "Apprentissage du vietnamien",
             "de": "Vietnamesisch lernen",
@@ -277,11 +277,11 @@ NON_JW_HTML_REMOVALS = {
     # GRAMMAR_B1_B2_PATTERNS (COMMON), alongside its legacy JW-only content (GX_*, the original
     # GRAMMAR_DICT entries), which is already emptied at the data level for GENERAL via
     # JW_ONLY_CONSTS -- whole-removing this pane would also hide the COMMON B1/B2 material.
-    # [과정] (curriculum) is kept for GENERAL as its first tab; its course data is JW-only and emitted empty, so
-    # GENERAL shows the "자료 미정" state (app_logic.js renderCurrWeek16).
+    # [과정] (curriculum) is kept for GENERAL as its first tab; build_app.py supplies a filtered
+    # language-learning subset while removing JW publication, meeting, ministry, and graduation items.
     "tabs": [],
     "subtabs": [
-        {"attr": "data-sentence", "values": ["lff", "lpd", "wt", "song", "prayer"]},
+        {"attr": "data-sentence", "values": ["lff", "lpd", "wt", "song", "prayer", "lff2", "lpd2", "wt2"]},
         {"attr": "data-wizard", "values": ["main", "talks", "neighbor"]},
         {"attr": "data-vocab", "values": ["theo", "names"]},
         {"attr": "data-bible", "values": ["books"]},

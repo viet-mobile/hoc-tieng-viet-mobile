@@ -283,7 +283,7 @@
     border: none; background: transparent; color: var(--ink-soft);
     font-size: 0.71rem; font-weight: 700; padding: 6px 7px; border-radius: 8px 0 8px 0;
     cursor: pointer; transition: background .15s, color .15s;
-    white-space: nowrap; flex: none; line-height: 1.2;
+    white-space: nowrap; flex: 0 1 auto; line-height: 1.2; max-width: 100%;
   }
   .tab-btn[aria-selected="true"], .subtab-btn[aria-selected="true"] { background: var(--accent-soft); color: var(--accent); }
   .tab-btn:hover, .subtab-btn:hover { color: var(--accent); }
@@ -297,16 +297,15 @@
     .brand { gap: 8px; }
     .brand-logo { width: 50px; height: 50px; }
     .brand h1 { font-size: 1.05rem; }
-    .tabs, .subtab-row { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; }
-    .tabs::-webkit-scrollbar, .subtab-row::-webkit-scrollbar { display: none; }
-    .tabs { padding: 7px 10px; gap: 4px; }
-    .tab-btn, .subtab-btn { font-size: 0.82rem; padding: 8px 10px; }
+    .tabs, .subtab-row { justify-content: flex-start; flex-wrap: wrap; overflow: visible; gap: 3px 4px; }
+    .tabs { padding: 5px 10px; }
+    .tab-btn, .subtab-btn { font-size: 0.82rem; padding: 5px 8px; min-height: 0; white-space: normal; overflow-wrap: anywhere; }
     main { padding: 15px 14px; }
     .intro h2 { font-size: 1.2rem; }
     .intro p { font-size: 0.98rem; line-height: 1.65; }
     .choice-row.cols-2, .people-fields-age, .people-fields-myname { grid-template-columns: 1fr; }
-    .study-mode-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
-    .study-mode-btn { font-size: 0.72rem; min-height: 3em; padding: 7px 4px; }
+    .study-mode-tabs { gap: 3px 4px; }
+    .study-mode-btn { font-size: 0.72rem; min-height: 0; padding: 5px 7px; }
     .talk-lines { gap: 12px; }
     .talk-line { gap: 8px; }
     .talk-who { margin-top: 2px; }
@@ -608,8 +607,8 @@
   /* ---------- Vocab ---------- */
   .search-box {
     display: flex; align-items: center; gap: 8px; background: var(--surface);
-    border: 1.5px solid var(--border); border-radius: var(--radius-m); padding: 10px 13px;
-    margin-bottom: 14px;
+    border: 1.5px solid var(--border); border-radius: var(--radius-m); padding: 6px 9px;
+    margin-bottom: 9px;
   }
   .search-box svg { width: 16px; height: 16px; color: var(--ink-faint); flex: none; }
   .search-box input {
@@ -643,6 +642,12 @@
     margin: 0 -18px 14px; padding: 7px 10px;
     position: sticky; top: var(--tabbar-h, 40px); z-index: 30;
     background: var(--bg);
+  }
+  .tabs .tab-btn, .subtab-row .subtab-btn, .tag-filter-btn {
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
   }
   .chain-note {
     font-size: 0.78rem; color: var(--ink-faint); background: var(--chip-bg);
@@ -866,11 +871,11 @@
   .gr-align-kr { font-size: 0.7rem; color: var(--ink-faint); margin-top: 2px; white-space: nowrap; text-align: center; }
 
   /* ---------- Study games ---------- */
-  .study-mode-tabs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; margin-bottom: 14px; }
+  .study-mode-tabs { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 14px; }
   .study-mode-btn {
     border: 1.5px solid var(--border); background: var(--surface); color: var(--ink-soft);
-    font-size: 0.62rem; font-weight: 700; padding: 6px 2px; border-radius: 10px 0 10px 0; cursor: pointer; line-height: 1.2;
-    white-space: normal; word-break: keep-all; overflow-wrap: anywhere; min-width: 0; min-height: 2.6em;
+    font-size: 0.62rem; font-weight: 700; padding: 5px 8px; border-radius: 10px 0 10px 0; cursor: pointer; line-height: 1.2;
+    white-space: normal; word-break: keep-all; overflow-wrap: anywhere; min-width: 0; min-height: 0; max-width: 100%; flex: 0 1 auto;
     display: flex; align-items: center; justify-content: center; text-align: center;
   }
   .study-mode-btn[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
@@ -883,7 +888,8 @@
      below -- itself assigned in fixed order (자주-분홍-주황-노랑-연두-민트-하늘-파랑-네이비-보라,
      wrapping back to 1 after 10) by assignPastelSlots() in app_logic.js. --pastel-rgb here is
      just the neutral fallback shown for the instant before that JS runs. */
-  .tab-btn, .subtab-btn, .study-mode-btn, .foot-btn, .study-chip, .read-all-btn {
+  .tab-btn, .subtab-btn, .study-mode-btn, .foot-btn, .study-chip, .read-all-btn,
+  .word-tag-pill, .tag-filter-btn, .word-freq-badge {
     --pastel-rgb: 216 220 206;
     background-color: rgb(var(--pastel-rgb) / var(--pastel-fill-a));
     background-image: var(--droplet-gloss);
@@ -1922,7 +1928,6 @@
   }
   @media (min-width: 1000px) {
     .tabs { gap: 8px; }
-    .tab-btn { flex: 1 1 0; }
     .curr-phase-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .people-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   }
@@ -1932,12 +1937,10 @@
     .topbar-row { align-items: center; }
     .brand-logo { width: 44px; height: 44px; }
     .brand h1 { white-space: normal; font-size: 1rem; line-height: 1.3; }
-    .tabs, .subtab-row { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
-    .tabs { padding: 6px 16px 8px; scroll-padding-inline: 16px; }
-    .tabs::-webkit-scrollbar, .subtab-row::-webkit-scrollbar { height: 3px; }
-    .tabs::-webkit-scrollbar-thumb, .subtab-row::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px 0 3px 0; }
-    .tab-btn { font-size: .85rem; padding-inline: 14px; }
-    .subtab-row { margin-inline: -16px; padding: 6px 16px 9px; scroll-padding-inline: 16px; }
+    .tabs, .subtab-row { justify-content: flex-start; flex-wrap: wrap; overflow: visible; gap: 3px 4px; }
+    .tabs { padding: 4px 16px 5px; }
+    .tab-btn { font-size: .85rem; padding: 5px 10px; }
+    .subtab-row { margin-inline: -16px; padding: 4px 16px 6px; }
     main { padding: 18px 16px; }
     .intro h2 { font-size: 1.2rem; }
     .choice-row.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -2007,18 +2010,17 @@
     .lang-select-wrap { display: block; }
     .lang-select { min-height: 32px; font-size: 0.78rem; padding: 3px 6px; }
 
-    /* Eight primary tabs fit the viewport; deeper tabs wrap in place. */
-    .tabs { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 0; overflow: visible; padding-inline: 4px; }
-    .tab-btn { min-width: 0; width: 100%; min-height: 42px; padding: 6px 0; font-size: clamp(.7rem, 3vw, .84rem); }
+    .tabs { display: flex; flex-wrap: wrap; gap: 2px 4px; overflow: visible; padding-inline: 4px; }
+    .tab-btn { min-width: 0; width: auto; min-height: 0; padding: 5px 7px; font-size: clamp(.7rem, 3vw, .84rem); max-width: 100%; }
     .subtab-row { flex-wrap: wrap; overflow: visible; gap: 2px 4px; }
     .stage-nav { flex-wrap: wrap; overflow-x: visible; }
-    .subtab-btn { min-height: 38px; padding: 6px 9px; font-size: .78rem; }
+    .subtab-btn { min-height: 0; padding: 5px 8px; font-size: .78rem; max-width: 100%; }
     #panel-review > .subtab-row:first-child { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 2px; }
     #panel-review > .subtab-row:first-child .subtab-btn { min-width: 0; width: 100%; padding-inline: 0; }
     #review-scope-tabs .subtab-btn { white-space: normal; text-align: center; word-break: keep-all; }
 
-    #panel-review .study-mode-tabs { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; }
-    #panel-review .study-mode-btn { min-width: 0; min-height: 22px; padding: 2px 2px; font-size: clamp(.59rem, 2.4vw, .75rem); }
+    #panel-review .study-mode-tabs { gap: 3px; }
+    #panel-review .study-mode-btn { min-width: 0; min-height: 0; padding: 3px 5px; font-size: clamp(.59rem, 2.4vw, .75rem); }
     #panel-review .study-auto-row {
       display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;
       gap: 3px; padding: 4px 5px; overflow-x: auto; scrollbar-width: none;
@@ -2232,15 +2234,14 @@
   html body #panel-vocab > .subtab-row.subtab-row,
   html body #panel-sentence > .subtab-row.subtab-row,
   html body #panel-grammar > .subtab-row.subtab-row {
-    display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr);
-    flex-wrap: nowrap; overflow: visible; gap: 3px;
+    display: flex; flex-wrap: wrap; overflow: visible; gap: 3px 4px;
   }
   html body #panel-bible > .subtab-row.subtab-row .subtab-btn,
   html body #panel-wizard > .subtab-row.subtab-row .subtab-btn,
   html body #panel-vocab > .subtab-row.subtab-row .subtab-btn,
   html body #panel-sentence > .subtab-row.subtab-row .subtab-btn,
   html body #panel-grammar > .subtab-row.subtab-row .subtab-btn {
-    min-width: 0; width: 100%; height: auto; padding: 4px 2px;
+    min-width: 0; width: auto; max-width: 100%; flex: 0 1 auto; height: auto; padding: 4px 7px;
     line-height: 1.15; letter-spacing: -0.02em; white-space: normal; word-break: keep-all; overflow-wrap: anywhere;
     text-align: center; display: inline-flex; align-items: center; justify-content: center;
   }
@@ -2250,9 +2251,11 @@
     html body #panel-vocab > .subtab-row.subtab-row .subtab-btn,
     html body #panel-sentence > .subtab-row.subtab-row .subtab-btn,
     html body #panel-grammar > .subtab-row.subtab-row .subtab-btn {
-      min-height: 34px; padding: 3px 1px; font-size: clamp(.5rem, 2.4vw, .78rem);
+      min-height: 0; padding: 4px 6px; font-size: clamp(.5rem, 2.4vw, .78rem);
     }
   }
+  html[data-site="general"] body #panel-bible > .subtab-row.subtab-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; }
+  html[data-site="general"] body #panel-vocab > .subtab-row.subtab-row { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 3px; }
   /* Review Subscope Row (e.g. Watchtower week selector) */
   .review-subscope-row {
     display: flex;
@@ -2338,29 +2341,35 @@
   .tag-filter-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
-    padding: 6px 0 10px;
+    gap: 3px 4px;
+    padding: 2px 0 6px;
     align-items: center;
   }
   .tag-filter-btn {
-    padding: 4px 10px;
-    border-radius: 9999px;
-    border: 1px solid var(--border);
-    background: var(--surface-2);
+    flex: 1 1 auto;
+    min-width: max-content;
+    padding: 4px 8px;
+    border-radius: 8px 0 8px 0;
+    border: 1px solid rgb(var(--pastel-rgb) / var(--pastel-border-a));
+    background-color: var(--surface-2);
+    background-image: var(--droplet-gloss);
     color: var(--ink);
     font-size: 0.8rem;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.15s ease;
+    box-shadow: var(--droplet-shadow);
+    transition: background-color .15s, border-color .15s, box-shadow .15s, color .15s;
   }
   .tag-filter-btn:hover {
     border-color: var(--accent);
     color: var(--accent);
   }
   .tag-filter-btn.active, .tag-filter-btn[aria-pressed="true"] {
-    background: var(--accent);
-    color: var(--accent-ink);
+    background-color: var(--accent-soft);
+    background-image: var(--droplet-gloss);
+    color: var(--accent);
     border-color: var(--accent);
+    box-shadow: var(--droplet-shadow-selected);
   }
 
   /* Word card items */
@@ -2377,29 +2386,260 @@
     font-size: 0.72rem;
     font-weight: 600;
     padding: 2px 7px;
-    border-radius: 9999px;
-    background: color-mix(in srgb, var(--accent) 15%, var(--surface));
+    border-radius: 8px 0 8px 0;
+    background-color: color-mix(in srgb, var(--accent) 15%, var(--surface));
+    background-image: var(--droplet-gloss);
     color: var(--accent);
     border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    box-shadow: var(--droplet-shadow);
+    transition: background-color .15s, border-color .15s, box-shadow .15s;
   }
   /* Word tag pills: every color derives from theme variables (defined for light AND dark), tinted per tag type.
      --tag-hue is mixed into the surface for the background and into --ink for the text, so contrast follows the theme. */
   .word-tag-pill {
     --tag-hue: var(--ink-soft);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     font-size: 0.7rem;
     font-weight: 600;
     padding: 1px 6px;
-    border-radius: 4px;
-    background: color-mix(in srgb, var(--tag-hue) 16%, var(--surface));
+    border-radius: 8px 0 8px 0;
+    background-color: color-mix(in srgb, var(--tag-hue) 16%, var(--surface));
+    background-image: var(--droplet-gloss);
     color: color-mix(in srgb, var(--tag-hue) 55%, var(--ink));
     border: 1px solid color-mix(in srgb, var(--tag-hue) 45%, var(--border));
+    box-shadow: var(--droplet-shadow);
+    transition: background-color .15s, border-color .15s, box-shadow .15s;
   }
   .word-tag-pill.tag-freq { --tag-hue: #2F6FD6; }     /* 상용 */
   .word-tag-pill.tag-sino { --tag-hue: #C27A12; }     /* 한자음 */
   .word-tag-pill.tag-theo { --tag-hue: #8455D4; }     /* 신권 */
   .word-tag-pill.tag-reversed { --tag-hue: #0F8C80; } /* 어순반대 */
   .word-tag-pill.tag-homo { --tag-hue: #D0365E; }     /* 동일음 */
+  #panel-vocab > .subtab-row:first-child { margin-bottom: 3px; }
+  #vocab-tag-filters .tag-filter-btn,
+  #vocab-root .word-freq-badge,
+  #vocab-root .word-tag-pill {
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+  #panel-vocab > .chain-note {
+    padding: 6px 8px;
+    margin-bottom: 7px;
+  }
+  #panel-vocab > .search-box {
+    padding: 6px 9px;
+    margin-bottom: 9px;
+  }
+  #panel-vocab > .search-box input {
+    min-height: 0;
+  }
+  #vocab-root .chain-note {
+    padding: 6px 8px;
+    margin-bottom: 7px;
+  }
+  #vocab-root .chain-note .read-all-btn {
+    min-height: 0;
+    padding: 4px 8px;
+  }
+  /* Keep the eight primary tabs on one responsive full-width row. */
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    width: 100%;
+  }
+  .tabs .tab-btn {
+    width: 100%;
+    min-width: 0;
+    white-space: nowrap;
+  }
+  .tabs,
+  .subtab-row,
+  .tag-filter-row {
+    display: grid;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+  .tabs .tab-btn,
+  .subtab-row .subtab-btn,
+  .tag-filter-row .tag-filter-btn {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .tag-filter-row .tag-filter-btn {
+    flex: none;
+    white-space: nowrap;
+  }
+  /* Every menu row uses (available width - total gaps) / button count for each track. */
+  html body .tabs,
+  html body .subtab-row,
+  html body .tag-filter-row {
+    margin-inline: 0;
+    padding-inline: 0;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+  }
+  html body .tabs .tab-btn,
+  html body .subtab-row .subtab-btn,
+  html body .tag-filter-row .tag-filter-btn {
+    max-width: none;
+  }
+  /* Content-aware full-row sizing: long labels get a larger natural basis, then remaining
+     width is distributed evenly across every button. */
+  html body .tabs,
+  html body .subtab-row,
+  html body .tag-filter-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+    grid-template-columns: none;
+    grid-auto-flow: initial;
+    grid-auto-columns: initial;
+  }
+  html body .tag-filter-row {
+    overflow: hidden;
+  }
+  html body #panel-bible > .subtab-row.subtab-row.subtab-row,
+  html body #panel-wizard > .subtab-row.subtab-row.subtab-row,
+  html body #panel-vocab > .subtab-row.subtab-row.subtab-row,
+  html body #panel-sentence > .subtab-row.subtab-row.subtab-row,
+  html body #panel-grammar > .subtab-row.subtab-row.subtab-row,
+  html body #panel-pron > .subtab-row.subtab-row.subtab-row,
+  html body #panel-review > .subtab-row.subtab-row.subtab-row,
+  html body #review-scope-tabs {
+    display: flex;
+    grid-template-columns: none;
+    grid-auto-flow: initial;
+    grid-auto-columns: initial;
+  }
+  html body .tabs .tab-btn,
+  html body .subtab-row .subtab-btn,
+  html body .tag-filter-row .tag-filter-btn {
+    flex: 1 1 max-content;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    overflow-wrap: anywhere;
+  }
+  #panel-vocab > .subtab-row:first-child {
+    margin-bottom: 0;
+  }
+  #vocab-tag-filters {
+    padding-top: 0;
+  }
+  #vocab-tag-filters .word-sort-btn {
+    grid-column: auto;
+  }
+  /* Final shared control language: equal tracks, one gap, and one droplet face. */
+  html body .tabs,
+  html body .subtab-row,
+  html body .tag-filter-row {
+    display: grid !important;
+    grid-template-columns: none !important;
+    grid-auto-flow: column !important;
+    grid-auto-columns: minmax(0, 1fr) !important;
+    gap: 4px !important;
+    width: 100%;
+    margin-inline: 0;
+    padding-inline: 0;
+    margin-block: 0 !important;
+    padding-block: 0 !important;
+  }
+  html body .tabs,
+  html body .subtab-row,
+  html body .tag-filter-row,
+  html body #panel-review .study-mode-tabs {
+    row-gap: 4px !important;
+  }
+  html body #vocab-tag-filters.tag-filter-row {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    grid-auto-flow: row !important;
+    grid-auto-columns: auto !important;
+    grid-auto-rows: minmax(0, auto);
+    align-items: stretch;
+    overflow: visible;
+  }
+  html body #review-scope-tabs[data-scope-category="song"] {
+    grid-template-columns: repeat(10, minmax(0, 1fr)) !important;
+    grid-auto-flow: row !important;
+    grid-auto-columns: auto !important;
+  }
+  html body #review-scope-tabs[data-scope-category="sentence"] {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    grid-auto-flow: row !important;
+    grid-auto-columns: auto !important;
+  }
+  html body #panel-review .study-mode-tabs {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 4px;
+    width: 100%;
+  }
+  html body #panel-review .study-mode-tabs > .study-mode-btn {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+  }
+  html body .tabs > .tab-btn,
+  html body .subtab-row > .subtab-btn,
+  html body .tag-filter-row > .tag-filter-btn,
+  html body .read-all-btn,
+  html body .curr-link-btn,
+  html body .word-freq-badge,
+  html body .word-tag-pill {
+    box-sizing: border-box;
+    border-radius: 8px 0 8px 0;
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.2;
+    background-image: var(--droplet-gloss);
+    box-shadow: var(--droplet-shadow);
+  }
+  html body .tabs > .tab-btn,
+  html body .subtab-row > .subtab-btn,
+  html body .tag-filter-row > .tag-filter-btn {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  html body #vocab-tag-filters.tag-filter-row > .tag-filter-btn {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  html body .read-all-btn,
+  html body .curr-link-btn,
+  html body .word-freq-badge,
+  html body .word-tag-pill {
+    border: 1px solid rgb(var(--pastel-rgb) / var(--pastel-border-a));
+    min-height: 0;
+    padding: 4px 8px;
+  }
+  html body #vocab-tag-filters .tag-filter-btn {
+    background-color: rgb(var(--pastel-rgb) / var(--pastel-fill-a));
+    background-image: var(--droplet-gloss);
+    border: 1px solid rgb(var(--pastel-rgb) / var(--pastel-border-a));
+    border-radius: 8px 0 8px 0;
+    box-shadow: var(--droplet-shadow);
+    color: var(--ink);
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+  html body #vocab-tag-filters .tag-filter-btn.active,
+  html body #vocab-tag-filters .tag-filter-btn[aria-pressed="true"] {
+    background-color: rgb(var(--pastel-rgb) / var(--pastel-selected-a));
+    background-image: var(--droplet-gloss);
+    border-color: color-mix(in srgb, rgb(var(--pastel-rgb)) 55%, var(--ink) 45%);
+    box-shadow: var(--droplet-shadow-selected);
+    color: var(--ink);
+  }
   .word-antonym-box {
     margin-top: 6px;
     padding: 6px 10px;
