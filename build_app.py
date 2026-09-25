@@ -35,6 +35,46 @@ from daily_conversations_i18n import apply_daily_ai_translations
 # Source keeps vi/ko/zh/en/ja; cs/zh_cn/fr/de/hu/id/pl come from the separate AI-translation layer
 # (each conversation is tagged with the languages it received in `aiLangs`).
 DAILY_CONVERSATIONS = apply_daily_ai_translations(DAILY_CONVERSATIONS)
+
+def normalize_korean_text(s):
+    if not s or not isinstance(s, str):
+        return s
+    import re
+    s = re.sub(r'나\s*\(\s*형\s*/\s*오빠\s*\)', '형', s)
+    s = re.sub(r'나\s*\(\s*오빠\s*/\s*형\s*\)', '형', s)
+    s = re.sub(r'나\s*\(\s*누나\s*/\s*언니\s*\)', '언니', s)
+    s = re.sub(r'나\s*\(\s*언니\s*/\s*누나\s*\)', '언니', s)
+    s = re.sub(r'나\s*\(\s*형\s*\)', '형', s)
+    s = re.sub(r'나\s*\(\s*오빠\s*\)', '오빠', s)
+    s = re.sub(r'나\s*\(\s*누나\s*\)', '누나', s)
+    s = re.sub(r'나\s*\(\s*언니\s*\)', '언니', s)
+
+    s = re.sub(r'저\s*\(\s*동생\s*\)', '저', s)
+    s = re.sub(r'너\s*\(\s*동생\s*\)', '너', s)
+
+    s = re.sub(r'형은\s*/\s*오빠는', '형은', s)
+    s = re.sub(r'오빠는\s*/\s*형은', '형은', s)
+    s = re.sub(r'누나\s*/\s*언니의', '언니의', s)
+    s = re.sub(r'누나의\s*/\s*언니의', '언니의', s)
+    s = re.sub(r'언니의\s*/\s*누나의', '언니의', s)
+    s = re.sub(r'언니\s*/\s*누나의', '언니의', s)
+
+    s = re.sub(r'형([가-힣]*)\s*/\s*오빠([가-힣]*)', lambda m: '형' + (m.group(1) or m.group(2)), s)
+    s = re.sub(r'오빠([가-힣]*)\s*/\s*형([가-힣]*)', lambda m: '형' + (m.group(2) or m.group(1)), s)
+    s = re.sub(r'누나([가-힣]*)\s*/\s*언니([가-힣]*)', lambda m: '언니' + (m.group(2) or m.group(1)), s)
+    s = re.sub(r'언니([가-힣]*)\s*/\s*누나([가-힣]*)', lambda m: '언니' + (m.group(1) or m.group(2)), s)
+
+    s = re.sub(r'\s*\(\s*(?:동생|가지다\s*의미|의문문\s*요소|건강하게)\s*\)', '', s)
+
+    s = re.sub(r'[ \t]+', ' ', s)
+    s = re.sub(r'\s+([?.!,])', r'\1', s).strip()
+    return s
+
+for conv in DAILY_CONVERSATIONS:
+    for turn in conv.get("turns", []):
+        if "ko" in turn and isinstance(turn["ko"], str):
+            turn["ko"] = normalize_korean_text(turn["ko"])
+
 from general_pdf_ai_translations import GENERAL_PDF_SENTENCE_AI_TRANSLATIONS
 from lff_data import LFF_CONVERSATIONS
 from lpd_data import LPD_LESSONS

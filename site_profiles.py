@@ -281,7 +281,7 @@ NON_JW_HTML_REMOVALS = {
     # GENERAL shows the "자료 미정" state (app_logic.js renderCurrWeek16).
     "tabs": [],
     "subtabs": [
-        {"attr": "data-sentence", "values": ["lff", "lpd", "wt", "song", "prayer", "lff2", "lpd2", "wt2"]},
+        {"attr": "data-sentence", "values": ["lff", "lpd", "wt", "song", "prayer"]},
         {"attr": "data-wizard", "values": ["main", "talks", "neighbor"]},
         {"attr": "data-vocab", "values": ["theo", "names"]},
         {"attr": "data-bible", "values": ["books"]},

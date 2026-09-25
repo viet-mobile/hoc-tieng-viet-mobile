@@ -2515,6 +2515,199 @@
       .replace(/\u0002/g, addrTarget.toLowerCase()).replace(/\u0004/g, capitalize(addrTarget));
   }
 
+  var DAILY_SENIORITY_LEVEL = {
+    bác: 3, chú: 3, cô: 3, ông: 3, bà: 3,
+    anh: 2, chị: 2,
+    tôi: 1.5, bạn: 1.5,
+    em: 1,
+    cháu: 0, con: 0
+  };
+
+  function normalizeKoreanDialogue(s) {
+    if (!s || typeof s !== "string") return s;
+    s = s.replace(/나\s*\(\s*형\s*\/\s*오빠\s*\)/g, "형");
+    s = s.replace(/나\s*\(\s*오빠\s*\/\s*형\s*\)/g, "형");
+    s = s.replace(/나\s*\(\s*누나\s*\/\s*언니\s*\)/g, "언니");
+    s = s.replace(/나\s*\(\s*언니\s*\/\s*누나\s*\)/g, "언니");
+    s = s.replace(/나\s*\(\s*형\s*\)/g, "형");
+    s = s.replace(/나\s*\(\s*오빠\s*\)/g, "오빠");
+    s = s.replace(/나\s*\(\s*누나\s*\)/g, "누나");
+    s = s.replace(/나\s*\(\s*언니\s*\)/g, "언니");
+
+    s = s.replace(/저\s*\(\s*동생\s*\)/g, "저");
+    s = s.replace(/너\s*\(\s*동생\s*\)/g, "너");
+
+    s = s.replace(/형은\s*\/\s*오빠는/g, "형은");
+    s = s.replace(/오빠는\s*\/\s*형은/g, "형은");
+    s = s.replace(/누나\s*\/\s*언니의/g, "언니의");
+    s = s.replace(/누나의\s*\/\s*언니의/g, "언니의");
+    s = s.replace(/언니의\s*\/\s*누나의/g, "언니의");
+    s = s.replace(/언니\s*\/\s*누나의/g, "언니의");
+
+    s = s.replace(/형([가-힣]*)\s*\/\s*오빠([가-힣]*)/g, function (m, p1, p2) { return "형" + (p1 || p2); });
+    s = s.replace(/오빠([가-힣]*)\s*\/\s*형([가-힣]*)/g, function (m, p1, p2) { return "형" + (p2 || p1); });
+    s = s.replace(/누나([가-힣]*)\s*\/\s*언니([가-힣]*)/g, function (m, p1, p2) { return "언니" + (p2 || p1); });
+    s = s.replace(/언니([가-힣]*)\s*\/\s*누나([가-힣]*)/g, function (m, p1, p2) { return "언니" + (p1 || p2); });
+
+    s = s.replace(/\s*\((?:동생|가지다\s*의미|의문문\s*요소|건강하게|의문|남부|북부|가족|비격식|존칭|사물|사람|시간|수량|질문|식사|동작|호칭)\)/g, "");
+
+    s = s.replace(/[ \t]+/g, " ");
+    s = s.replace(/\s+([?.!,])/g, "$1").trim();
+    return s;
+  }
+
+  function applyDailyMeaningPronouns(conv, turn, lang) {
+    var checkLang = lang || currentLang || "ko";
+    // Tstrict: a language the turn has no translation for stays empty (never Korean).
+    var baseText = Tstrict(turn) || "";
+    if (checkLang === "vi" || !baseText) return "";
+
+    var roles = conv && DAILY_PRONOUN_ROLES[conv.id];
+    var terms = roles ? firstMeetingPronouns() : null;
+    if (!terms || !roles) {
+      return checkLang === "ko" ? normalizeKoreanDialogue(baseText) : baseText;
+    }
+
+    var who = turn.who && turn.who.vi;
+    var mine = roles.speakers[who];
+    if (!mine) {
+      return checkLang === "ko" ? normalizeKoreanDialogue(baseText) : baseText;
+    }
+
+    var isLearner = who === roles.learner;
+    var selfTarget = ((isLearner ? terms.self : terms.addr) || "").toLowerCase();
+    var addrTarget = ((isLearner ? terms.addr : terms.self) || "").toLowerCase();
+
+    var sLevel = DAILY_SENIORITY_LEVEL[selfTarget] !== undefined ? DAILY_SENIORITY_LEVEL[selfTarget] : 1;
+    var aLevel = DAILY_SENIORITY_LEVEL[addrTarget] !== undefined ? DAILY_SENIORITY_LEVEL[addrTarget] : 1;
+    var isSpeakingUp = sLevel < aLevel;
+    var isSpeakingDown = sLevel > aLevel;
+
+    var text = baseText;
+    if (checkLang === "ko") {
+      text = normalizeKoreanDialogue(text);
+
+      var koAddrMap = {
+        bác: ["어르신", "어르신은", "어르신이", "어르신을", "어르신의", "어르신께"],
+        chú: ["삼촌", "삼촌은", "삼촌이", "삼촌을", "삼촌의", "삼촌에게"],
+        cô: ["이모", "이모는", "이모가", "이모를", "이모의", "이모에게"],
+        ông: ["어르신", "어르신은", "어르신이", "어르신을", "어르신의", "어르신께"],
+        bà: ["어르신", "어르신은", "어르신이", "어르신을", "어르신의", "어르신께"],
+        cháu: ["조카", "조카는", "조카가", "조카를", "조카의", "조카에게"],
+        con: ["얘", "얘는", "얘가", "얘를", "얘의", "얘에게"],
+        anh: ["형", "형은", "형이", "형을", "형의", "형에게"],
+        chị: ["언니", "언니는", "언니가", "언니를", "언니의", "언니에게"],
+        em: ["동생", "동생은", "동생이", "동생을", "동생의", "동생에게"]
+      };
+
+      var addrForms = koAddrMap[addrTarget] || [addrTarget, addrTarget + "은", addrTarget + "이", addrTarget + "을", addrTarget + "의", addrTarget + "에게"];
+      var t = addrForms[0], tEun = addrForms[1], tI = addrForms[2], tEul = addrForms[3], tUi = addrForms[4], tEge = addrForms[5];
+
+      // 1. Greetings
+      if (/안녕하세요,\s*(?:형|오빠|누나|언니|동생)/.test(text)) {
+        if (isSpeakingDown) {
+          if (addrTarget === "cháu") text = text.replace(/안녕하세요,\s*(?:형|오빠|누나|언니|동생)/g, "안녕, 조카");
+          else if (addrTarget === "con") text = text.replace(/안녕하세요,\s*(?:형|오빠|누나|언니|동생)/g, "안녕, 얘야");
+          else text = text.replace(/안녕하세요,\s*(?:형|오빠|누나|언니|동생)/g, "안녕, 동생");
+        } else {
+          text = text.replace(/안녕하세요,\s*(?:형|오빠|누나|언니|동생)/g, "안녕하세요, " + t);
+        }
+      } else if (/안녕,\s*(?:동생|형|오빠|누나|언니)/.test(text)) {
+        if (isSpeakingUp) {
+          text = text.replace(/안녕,\s*(?:동생|형|오빠|누나|언니)/g, "안녕하세요, " + t);
+        } else if (addrTarget === "cháu") {
+          text = text.replace(/안녕,\s*(?:동생|형|오빠|누나|언니)/g, "안녕, 조카");
+        } else if (addrTarget === "con") {
+          text = text.replace(/안녕,\s*(?:동생|형|오빠|누나|언니)/g, "안녕, 얘야");
+        } else {
+          text = text.replace(/안녕,\s*(?:동생|형|오빠|누나|언니)/g, "안녕, 동생");
+        }
+      }
+
+      // 2. Address particles & vocatives
+      text = text.replace(/(?:형|오빠|누나|언니|동생)은/g, tEun);
+      text = text.replace(/(?:형|오빠|누나|언니|동생)는/g, tEun);
+      text = text.replace(/(?:형|오빠|누나|언니|동생)이/g, tI);
+      text = text.replace(/(?:형|오빠|누나|언니)가/g, tI);
+      text = text.replace(/(?:형|오빠|누나|언니|동생)을/g, tEul);
+      text = text.replace(/(?:형|오빠|누나|언니|동생)를/g, tEul);
+      text = text.replace(/(?:형|오빠|누나|언니|동생)의/g, tUi);
+      text = text.replace(/(?:형|오빠|누나|언니|동생)에게/g, tEge);
+
+      text = text.replace(/(?<![\p{L}\p{N}])(?:형|오빠|누나|언니),\s*/gu, t + ", ");
+      text = text.replace(/,\s*(?:형|오빠|누나|언니)(?![\p{L}\p{N}])/gu, ", " + t);
+
+      // 3. Junior speaking UP to Senior (존댓말 / 낮춤말)
+      if (isSpeakingUp) {
+        text = text.replace(/(?<![\p{L}\p{N}])너는\s*건강하니\?/gu, tEun + " 건강하세요?");
+        text = text.replace(/(?<![\p{L}\p{N}])너\s*건강하니\?/gu, t + " 건강하세요?");
+        text = text.replace(/(?<![\p{L}\p{N}])너는\s*어떤데\?/gu, tEun + " 어떠세요?");
+        text = text.replace(/(?<![\p{L}\p{N}])너는(?![\p{L}\p{N}])/gu, tEun);
+        text = text.replace(/(?<![\p{L}\p{N}])너의(?![\p{L}\p{N}])/gu, tUi);
+        text = text.replace(/(?<![\p{L}\p{N}])너를(?![\p{L}\p{N}])/gu, tEul);
+        text = text.replace(/(?<![\p{L}\p{N}])너(?![\p{L}\p{N}])/gu, t);
+
+        text = text.replace(/(?<![\p{L}\p{N}])(?:나|형|오빠|누나|언니)는(?![\p{L}\p{N}])/gu, "저는");
+        text = text.replace(/(?<![\p{L}\p{N}])(?:내|형|오빠|누나|언니)가(?![\p{L}\p{N}])/gu, "제가");
+        text = text.replace(/(?<![\p{L}\p{N}])(?:나|형|오빠|누나|언니)도(?![\p{L}\p{N}])/gu, "저도");
+        text = text.replace(/(?<![\p{L}\p{N}])(?:나|형|오빠|누나|언니)의(?![\p{L}\p{N}])/gu, "저의");
+        text = text.replace(/(?<![\p{L}\p{N}])내\s/gu, "제 ");
+        text = text.replace(/(?<![\p{L}\p{N}])나(?![\p{L}\p{N}])/gu, "저");
+        text = text.replace(/(?<![\p{L}\p{N}])형(?![\p{L}\p{N}])/gu, "저");
+
+        text = text.replace(/(?<![\p{L}\p{N}])응[,\.]/gu, "네,");
+        text = text.replace(/^응\b/gu, "네");
+        text = text.replace(/건강해\./gu, "건강해요.");
+        text = text.replace(/고마워\./gu, "감사합니다.");
+        text = text.replace(/고마워(?![\p{L}\p{N}])/gu, "감사해요");
+      }
+
+      // 4. Senior speaking DOWN to Junior (반말 / 평어)
+      if (isSpeakingDown) {
+        text = text.replace(/(?<![\p{L}\p{N}])(?:형|오빠|누나|언니)도(?![\p{L}\p{N}])/gu, "나도");
+        text = text.replace(/(?<![\p{L}\p{N}])(?:형|오빠|누나|언니)는(?![\p{L}\p{N}])/gu, "나는");
+        text = text.replace(/(?<![\p{L}\p{N}])(?:형|오빠|누나|언니)가(?![\p{L}\p{N}])/gu, "내가");
+        text = text.replace(/(?<![\p{L}\p{N}])(?:형|오빠|누나|언니)의(?![\p{L}\p{N}])/gu, "나의");
+        text = text.replace(/(?<![\p{L}\p{N}])(?:형|오빠|누나|언니)(?![\p{L}\p{N}])/gu, "나");
+
+        text = text.replace(/(?<![\p{L}\p{N}])저는(?![\p{L}\p{N}])/gu, "나는");
+        text = text.replace(/(?<![\p{L}\p{N}])제가(?![\p{L}\p{N}])/gu, "내가");
+        text = text.replace(/(?<![\p{L}\p{N}])저도(?![\p{L}\p{N}])/gu, "나도");
+        text = text.replace(/(?<![\p{L}\p{N}])저의(?![\p{L}\p{N}])/gu, "나의");
+        text = text.replace(/(?<![\p{L}\p{N}])저(?![\p{L}\p{N}])/gu, "나");
+
+        if (addrTarget === "cháu" || addrTarget === "con") {
+          text = text.replace(/건강하세요\?/gu, "건강하니?");
+          text = text.replace(/어떠세요\?/gu, "어떠니?");
+        }
+
+        text = text.replace(/^예,\s*/gu, "응, ");
+        text = text.replace(/^네,\s*/gu, "응, ");
+        text = text.replace(/건강해요\./gu, "건강해.");
+      }
+
+      return normalizeKoreanDialogue(text);
+    }
+
+    if (checkLang === "ja") {
+      if (isSpeakingDown) {
+        text = text.replace(/こんにちは/g, "やあ").replace(/元気ですか/g, "元気かい");
+      } else if (isSpeakingUp) {
+        text = text.replace(/やあ/g, "こんにちは").replace(/元気かい/g, "お元気ですか");
+      }
+    } else if (checkLang === "zh_cn" || checkLang === "zh") {
+      if (isSpeakingUp) {
+        text = text.replace(/你好/g, "您好");
+      }
+    } else if (checkLang === "en") {
+      if (isSpeakingDown) {
+        text = text.replace(/Hello/g, "Hi");
+      }
+    }
+
+    return text;
+  }
+
   /* ---------------- 이웃 사람과의 대화 호칭 및 이름 변형 ---------------- */
   var KNOWN_NEIGHBOR_NAMES_RE = "(?:Trung|Sương|Giang|Dũng|Dương|An|Vy|Tín)";
 
@@ -2729,7 +2922,7 @@
     renderCurrCulture();
   })();
 
-  /* ---------------- 문장 subtab (행복한 삶을 영원히 / 사람들을 사랑하고 제자로 / 파수대 / 노래 / 기도 / (전체) 원문 뷰어 3종) ---------------- */
+  /* ---------------- 문장 subtab (행복한 삶을 영원히 / 사람들을 사랑하고 제자로 / 파수대 / 노래 / 기도) ---------------- */
   // These source-backed views deliberately do not use t()/meaning fallbacks for
   // learning content. A missing translation stays missing in every UI language.
   // A PDF sentence's meaning in the current language: the source translation first, then the separately
@@ -2740,6 +2933,20 @@
     if (src) return src;
     var ai = typeof GENERAL_PDF_AI_TRANSLATIONS !== "undefined" && row.id && GENERAL_PDF_AI_TRANSLATIONS[row.id];
     return (currentLang !== "ko" && ai && ai[currentLang]) || "";
+  }
+  // Review pools: PDF sentence rows, and the sentence rows a PDF grammar section cites (examples are sentence ids).
+  function pdfSentenceRows() {
+    return (typeof GENERAL_PDF !== "undefined" && GENERAL_PDF && GENERAL_PDF.sentences) || [];
+  }
+  function pdfGrammarExampleRows() {
+    if (typeof GENERAL_PDF === "undefined" || !GENERAL_PDF || !GENERAL_PDF.grammar) return [];
+    var byId = {};
+    pdfSentenceRows().forEach(function (r) { byId[r.id] = r; });
+    var out = [];
+    GENERAL_PDF.grammar.forEach(function (g) {
+      (g.examples || []).forEach(function (id) { if (byId[id]) out.push(byId[id]); });
+    });
+    return out;
   }
   function renderGeneralPdf() {
     if (typeof GENERAL_PDF === "undefined") return;
@@ -3146,10 +3353,7 @@
       lpd: document.getElementById("sentence-lpd-pane"),
       wt: document.getElementById("sentence-wt-pane"),
       song: document.getElementById("sentence-song-pane"),
-      prayer: document.getElementById("sentence-prayer-pane"),
-      lff2: document.getElementById("sentence-lff2-pane"),
-      lpd2: document.getElementById("sentence-lpd2-pane"),
-      wt2: document.getElementById("sentence-wt2-pane"),
+      prayer: document.getElementById("sentence-prayer-pane")
     };
     var btns = document.querySelectorAll(".subtab-btn[data-sentence]");
     if (!btns.length) return;
@@ -3165,13 +3369,6 @@
         if (btn.dataset.sentence === "lff") renderCurrLff();
         if (btn.dataset.sentence === "song") renderCurrSongs();
         if (btn.dataset.sentence === "prayer") renderCurrPrayer();
-        // initLff2/initLpd2/initWt2 are defined further down the file (their state is set up via
-        // `var` initializers that haven't run yet this early in the script), so they're only ever
-        // invoked lazily here on click -- never eagerly alongside the other renderCurr* calls
-        // below, which read plain top-level `const`s already available from data_block.js.
-        if (btn.dataset.sentence === "lff2") initLff2();
-        if (btn.dataset.sentence === "lpd2") initLpd2();
-        if (btn.dataset.sentence === "wt2") initWt2();
       });
     });
     renderCurrLff();
@@ -6640,12 +6837,13 @@ function verifyDistribution(units, dist, pins) {
 
     var ql = q ? q.toLowerCase() : "";
     var html = "";
-    // In Vietnamese mode a record's own `vi` is the sentence itself, not a translation of it -- show no meaning line
-    // (the pronoun-adapted Vietnamese above it is the text) rather than repeating the unadapted source sentence.
-    function dailyMeaning(field) { return currentLang === "vi" ? "" : (Tstrict(field) || ""); }
+    function dailyMeaning(conv, field) {
+      if (currentLang === "vi") return "";
+      return applyDailyMeaningPronouns(conv, field, currentLang);
+    }
     DAILY_CONVERSATIONS.forEach(function (conv, ci) {
-      var turns = conv.turns.map(function (t) { return { who: t.who, vi: applyDailyPronouns(conv, t), kr: dailyMeaning(t) }; });
-      var vocab = (conv.vocab || []).map(function (v) { return { vi: v.vi, kr: dailyMeaning(v) }; });
+      var turns = conv.turns.map(function (t) { return { who: t.who, vi: applyDailyPronouns(conv, t), kr: dailyMeaning(conv, t) }; });
+      var vocab = (conv.vocab || []).map(function (v) { return { vi: v.vi, kr: dailyMeaning(conv, v) }; });
       if (ql) {
         var hit = conv.title.vi.toLowerCase().indexOf(ql) >= 0 || T(conv.title).toLowerCase().indexOf(ql) >= 0 ||
           turns.some(function (t) {
@@ -6655,7 +6853,7 @@ function verifyDistribution(units, dist, pins) {
           vocab.some(function (v) { return v.vi.toLowerCase().indexOf(ql) >= 0 || v.kr.toLowerCase().indexOf(ql) >= 0; });
         if (!hit) return;
       }
-      var readPairs = [[conv.title.vi, dailyMeaning(conv.title)]].concat(turns.map(function (t) { return [t.vi, t.kr]; }));
+      var readPairs = [[conv.title.vi, dailyMeaning(conv, conv.title)]].concat(turns.map(function (t) { return [t.vi, t.kr]; }));
       html += '<div class="group-card" data-open="' + (openSyls["dc" + ci] ? "true" : "false") + '" data-syl="dc' + ci + '">' +
         '<div class="group-head-row"><button class="group-head"><span><span class="syl">' + (ci + 1) + '.</span> ' +
         '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(conv.title.vi) + '</span>' + (currentLang === "vi" ? "" : titleTrSpan(conv.title)) + '</span></span>' +
@@ -6695,416 +6893,6 @@ function verifyDistribution(units, dist, pins) {
     var input = document.getElementById("daily-search");
     renderCurrDaily(input ? input.value.trim() : "");
   });
-
-  // "문장 > 행복한 삶을 영원히(전체)" (Enjoy Life Forever! -- full Excel source, 72 units x 10
-  // languages). Lives alongside, not inside, the "문장" tab's own "행복한 삶을 영원히" subtab
-  // (LFF_CONVERSATIONS, 5-language sentence-split body text) -- originally implemented under
-  // [대화], moved here so the same feature isn't shown under two different top-level menus. This
-  // renders ENJOY_LIFE_FOREVER verbatim at row granularity (no sentence splitting, no reordering --
-  // an Excel row's 12 language cells must stay aligned exactly as given) and only ever renders the
-  // ONE currently selected unit's rows (up to ~412 for the largest lessons), never all 72 at once,
-  // since the underlying JSON is multiple MB. The site-wide currentLang only covers 7 languages
-  // (no cs/hu/zh_cn/id), so translation language here is a separate, panel-local selector/localStorage
-  // key rather than reusing currentLang -- UI chrome (buttons, empty-state text) still follows the
-  // site-wide currentLang via TU(), only the row content follows this local picker.
-  var LFF2_LANGS = ["cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko", "pl"];
-  var LFF2_STORAGE_KEY = "vn-app-lff2-v1";
-  var lff2State = { lang: null, unitId: null };
-  (function loadLff2State() {
-    try {
-      var raw = window.localStorage && window.localStorage.getItem(LFF2_STORAGE_KEY);
-      if (raw) {
-        var parsed = JSON.parse(raw);
-        if (parsed && LFF2_LANGS.indexOf(parsed.lang) >= 0) lff2State.lang = parsed.lang;
-        if (parsed && typeof parsed.unitId === "number") lff2State.unitId = parsed.unitId;
-      }
-    } catch (e) { /* no-op: localStorage unavailable */ }
-    if (!lff2State.lang) lff2State.lang = LFF2_LANGS.indexOf(currentLang) >= 0 ? currentLang : "ko";
-  })();
-  function saveLff2State() {
-    try { window.localStorage && window.localStorage.setItem(LFF2_STORAGE_KEY, JSON.stringify(lff2State)); } catch (e) { /* no-op */ }
-  }
-
-  // Fixed part boundaries by unit id, exactly matching the course's own Section 1-4 structure
-  // (units never get reordered -- see ENJOY_LIFE_FOREVER.units).
-  var LFF2_PART_RANGES = [
-    { part: 1, startId: 1, endId: 14 },
-    { part: 2, startId: 15, endId: 37 },
-    { part: 3, startId: 38, endId: 53 },
-    { part: 4, startId: 54, endId: 72 }
-  ];
-  var LFF2_PART_LABEL_FN = {
-    vi: function (n) { return "Phần " + n; },
-    cs: function (n) { return "Část " + n; },
-    zh_cn: function (n) { return "第" + n + "部"; },
-    zh: function (n) { return "第" + n + "部"; },
-    en: function (n) { return "Part " + n; },
-    fr: function (n) { return "Partie " + n; },
-    de: function (n) { return "Teil " + n; },
-    hu: function (n) { return n + ". rész"; },
-    id: function (n) { return "Bagian " + n; },
-    ja: function (n) { return "第" + n + "部"; },
-    ko: function (n) { return "제" + n + "부"; },
-    pl: function (n) { return "Część " + n; }
-  };
-  function lff2PartLabel(n) {
-    return (LFF2_PART_LABEL_FN[lff2State.lang] || LFF2_PART_LABEL_FN.ko)(n);
-  }
-  function lff2RowText(row, lang) {
-    var v = row[lang];
-    return typeof v === "string" ? v.trim() : "";
-  }
-  // Every unit's own row 1 already carries its title in all 10 languages (verbatim, from the
-  // source publication) -- reused as-is for menu/header labels instead of writing new translations.
-  function lff2UnitLabel(u, lang) {
-    var row0 = u && u.rows && u.rows[0];
-    if (!row0) return u ? u.labelKo : "";
-    return lff2RowText(row0, lang) || lff2RowText(row0, "vi");
-  }
-
-  function renderLff2Picker() {
-    var root = document.getElementById("lff2-picker-root");
-    if (!root || typeof ENJOY_LIFE_FOREVER === "undefined") return;
-    var units = ENJOY_LIFE_FOREVER.units;
-    var lang = lff2State.lang;
-    var openParts = {};
-    root.querySelectorAll('.lff2-part[data-open="true"]').forEach(function (p) { openParts[p.dataset.part] = true; });
-    var firstRender = !root.dataset.rendered;
-    root.dataset.rendered = "true";
-    var html = "";
-    LFF2_PART_RANGES.forEach(function (range) {
-      var partOpen = Object.prototype.hasOwnProperty.call(openParts, String(range.part))
-        ? openParts[String(range.part)]
-        : (firstRender && range.part === 1);
-      html += '<section class="lff2-part" data-part="' + range.part + '" data-open="' + (partOpen ? "true" : "false") + '">' +
-        '<button type="button" class="lff2-part-head" aria-expanded="' + (partOpen ? "true" : "false") + '">' +
-        '<span>' + escapeHtml(lff2PartLabel(range.part)) + '</span>' + currChev() + '</button><div class="lff2-part-body">';
-      var itemsHtml = "";
-      for (var id = range.startId; id <= range.endId; id++) {
-        var u = units[id - 1];
-        if (!u || u.id !== id) u = units.filter(function (x) { return x.id === id; })[0];
-        if (!u) continue;
-        var isCurrent = lff2State.unitId === u.id;
-        var label = lff2UnitLabel(u, lang);
-        if (u.type === "lesson") {
-          itemsHtml += '<button type="button" class="lff2-unit-btn" data-unit-id="' + u.id + '" aria-current="' + (isCurrent ? "true" : "false") + '" title="' + escapeAttr(label) + '" aria-label="' + escapeAttr(label) + '">' + u.lesson + '</button>';
-        } else {
-          itemsHtml += '<button type="button" class="lff2-special-btn" data-unit-id="' + u.id + '" aria-current="' + (isCurrent ? "true" : "false") + '">' + escapeHtml(label) + '</button>';
-        }
-      }
-      html += '<div class="lff2-unit-grid">' + itemsHtml + '</div></div></section>';
-    });
-    root.innerHTML = html;
-    root.querySelectorAll(".lff2-part-head").forEach(function (button) {
-      button.addEventListener("click", function () {
-        var part = button.closest(".lff2-part");
-        var willOpen = part.dataset.open !== "true";
-        part.dataset.open = willOpen ? "true" : "false";
-        button.setAttribute("aria-expanded", willOpen ? "true" : "false");
-      });
-    });
-    root.querySelectorAll("[data-unit-id]").forEach(function (btn) {
-      btn.addEventListener("click", function () { renderLff2Unit(Number(btn.dataset.unitId)); });
-    });
-  }
-
-  // Builds only the row-list HTML (not the header/nav around it) so the per-unit search box can
-  // refresh just this part without rebuilding prev/next buttons on every keystroke.
-  function lff2BuildRowsHtml(unit, lang, query) {
-    var q = query ? query.toLowerCase() : "";
-    var html = "";
-    (unit.rows || []).forEach(function (row) {
-      var vi = lff2RowText(row, "vi");
-      var tr = lang === "vi" ? "" : lff2RowText(row, lang);
-      if (!vi && !tr) return;
-      if (q && vi.toLowerCase().indexOf(q) < 0 && (!tr || tr.toLowerCase().indexOf(q) < 0)) return;
-      html += '<div class="lff2-row"><span class="lff2-row-num">' + row.row + '</span><div class="lff2-row-body">';
-      if (vi) {
-        html += '<div class="lff2-row-vi">' + escapeHtml(vi) +
-          '<button type="button" class="speak-btn" data-speak="' + escapeAttr(vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>';
-      }
-      if (tr) html += '<div class="lff2-row-tr">' + escapeHtml(tr) + '</div>';
-      html += '</div></div>';
-    });
-    return html || '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
-  }
-
-  function renderLff2Unit(unitId) {
-    var pickerRoot = document.getElementById("lff2-picker-root");
-    var viewerRoot = document.getElementById("lff2-viewer-root");
-    if (!pickerRoot || !viewerRoot || typeof ENJOY_LIFE_FOREVER === "undefined") return;
-    var units = ENJOY_LIFE_FOREVER.units;
-    var unit = units[unitId - 1] && units[unitId - 1].id === unitId ? units[unitId - 1] : units.filter(function (u) { return u.id === unitId; })[0];
-    if (!unit) return;
-    var idx = units.indexOf(unit);
-    var lang = lff2State.lang;
-    lff2State.unitId = unitId;
-    saveLff2State();
-
-    pickerRoot.style.display = "none";
-    viewerRoot.style.display = "";
-
-    var prevUnit = units[idx - 1] || null;
-    var nextUnit = units[idx + 1] || null;
-    var titleText = lff2UnitLabel(unit, lang);
-
-    var html = '<div class="lff2-viewer-head">' +
-      '<button type="button" class="lff2-back-btn" id="lff2-back-btn">← ' + escapeHtml(TU("목록")) + '</button>' +
-      '<div class="lff2-unit-title">' + escapeHtml(titleText) + '</div></div>' +
-      '<div class="lff2-nav-row">' +
-      '<button type="button" class="lff2-nav-btn" id="lff2-prev-btn"' + (prevUnit ? "" : " disabled") + '>' +
-      (prevUnit ? "← " + escapeHtml(lff2UnitLabel(prevUnit, lang)) : escapeHtml(TU("이전"))) + '</button>' +
-      '<button type="button" class="lff2-nav-btn" id="lff2-next-btn"' + (nextUnit ? "" : " disabled") + '>' +
-      (nextUnit ? escapeHtml(lff2UnitLabel(nextUnit, lang)) + " →" : escapeHtml(TU("다음"))) + '</button>' +
-      '</div>' +
-      '<div class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>' +
-      '<input type="text" id="lff2-search" data-i18n-placeholder="베트남어 문장이나 뜻으로 검색" placeholder="' + escapeAttr(TU("베트남어 문장이나 뜻으로 검색")) + '"></div>' +
-      '<div class="lff2-row-list" id="lff2-row-list">' + lff2BuildRowsHtml(unit, lang) + '</div>';
-
-    viewerRoot.innerHTML = html;
-    bindCurrSpeakBtns(viewerRoot);
-
-    var backBtn = document.getElementById("lff2-back-btn");
-    if (backBtn) backBtn.addEventListener("click", function () {
-      viewerRoot.style.display = "none";
-      pickerRoot.style.display = "";
-      renderLff2Picker();
-    });
-    var prevBtn = document.getElementById("lff2-prev-btn");
-    if (prevBtn && prevUnit) prevBtn.addEventListener("click", function () { renderLff2Unit(prevUnit.id); window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" }); });
-    var nextBtn = document.getElementById("lff2-next-btn");
-    if (nextBtn && nextUnit) nextBtn.addEventListener("click", function () { renderLff2Unit(nextUnit.id); window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" }); });
-
-    var searchInput = document.getElementById("lff2-search");
-    if (searchInput) {
-      searchInput.addEventListener("input", function () {
-        var listRoot = document.getElementById("lff2-row-list");
-        if (!listRoot) return;
-        listRoot.innerHTML = lff2BuildRowsHtml(unit, lang, searchInput.value.trim());
-        bindCurrSpeakBtns(listRoot);
-      });
-    }
-  }
-
-  function populateLff2LangSelect() {
-    var sel = document.getElementById("lff2-lang-select");
-    if (!sel || sel.dataset.populated || typeof ENJOY_LIFE_FOREVER === "undefined") return;
-    sel.dataset.populated = "true";
-    var names = ENJOY_LIFE_FOREVER.languages || {};
-    sel.innerHTML = LFF2_LANGS.map(function (code) {
-      return '<option value="' + code + '"' + (code === lff2State.lang ? " selected" : "") + '>' + escapeHtml(names[code] || code) + '</option>';
-    }).join("");
-    sel.addEventListener("change", function () {
-      if (LFF2_LANGS.indexOf(sel.value) < 0) return;
-      lff2State.lang = sel.value;
-      saveLff2State();
-      renderLff2Picker();
-      if (lff2State.unitId) renderLff2Unit(lff2State.unitId);
-    });
-  }
-
-  function initLff2() {
-    if (typeof ENJOY_LIFE_FOREVER === "undefined" || document.body.dataset.lff2Init) return;
-    document.body.dataset.lff2Init = "true";
-    populateLff2LangSelect();
-    renderLff2Picker();
-    if (lff2State.unitId) {
-      renderLff2Unit(lff2State.unitId);
-    } else {
-      document.getElementById("lff2-picker-root").style.display = "";
-      document.getElementById("lff2-viewer-root").style.display = "none";
-    }
-  }
-  // Chrome text (목록/이전/다음/검색 placeholder/발음 듣기 aria-labels, via TU()) follows the
-  // site-wide language switch even though the row content's translation language does not.
-  onLangChange(function () {
-    if (!document.body.dataset.lff2Init) return;
-    if (lff2State.unitId) renderLff2Unit(lff2State.unitId);
-  });
-
-  // Shared engine behind the two other "(전체)" full-Excel-transcription viewers (Love People,
-  // Watchtower Study) -- same verbatim-row-list behavior as LFF2 above (reuses its .lff2-* CSS,
-  // since the two are visually identical), just without LFF2's part/section accordion, since
-  // both of these datasets are small enough (<=24 items) for one flat grid.
-  function createExcelFullViewer(opts) {
-    var prefix = opts.prefix;
-    var storageKey = "vn-app-" + prefix + "-v1";
-    var state = { lang: null, unitId: null };
-    (function loadState() {
-      try {
-        var raw = window.localStorage && window.localStorage.getItem(storageKey);
-        if (raw) {
-          var parsed = JSON.parse(raw);
-          if (parsed && LFF2_LANGS.indexOf(parsed.lang) >= 0) state.lang = parsed.lang;
-          if (parsed && typeof parsed.unitId === "number") state.unitId = parsed.unitId;
-        }
-      } catch (e) { /* no-op: localStorage unavailable */ }
-      if (!state.lang) state.lang = LFF2_LANGS.indexOf(currentLang) >= 0 ? currentLang : "ko";
-    })();
-    function saveState() {
-      try { window.localStorage && window.localStorage.setItem(storageKey, JSON.stringify(state)); } catch (e) { /* no-op */ }
-    }
-    function rowText(row, lang) {
-      var v = row[lang];
-      return typeof v === "string" ? v.trim() : "";
-    }
-    function unitLabel(u, lang) {
-      var row0 = u && u.rows && u.rows[0];
-      if (!row0) return u ? u.labelKo : "";
-      return rowText(row0, lang) || rowText(row0, "vi");
-    }
-    function unitButtonText(u) {
-      if (u.type === "lesson") return String(u.lesson);
-      if (u.type === "week") return String(u.week);
-      return null;
-    }
-    function buildRowsHtml(unit, lang, query) {
-      var q = query ? query.toLowerCase() : "";
-      var html = "";
-      (unit.rows || []).forEach(function (row) {
-        var vi = rowText(row, "vi");
-        var tr = lang === "vi" ? "" : rowText(row, lang);
-        if (!vi && !tr) return;
-        if (q && vi.toLowerCase().indexOf(q) < 0 && (!tr || tr.toLowerCase().indexOf(q) < 0)) return;
-        html += '<div class="lff2-row"><span class="lff2-row-num">' + row.row + '</span><div class="lff2-row-body">';
-        if (vi) {
-          html += '<div class="lff2-row-vi">' + escapeHtml(vi) +
-            '<button type="button" class="speak-btn" data-speak="' + escapeAttr(vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>';
-        }
-        if (tr) html += '<div class="lff2-row-tr">' + escapeHtml(tr) + '</div>';
-        html += '</div></div>';
-      });
-      return html || '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
-    }
-    function renderPicker() {
-      var root = document.getElementById(prefix + "-picker-root");
-      var data = opts.getData();
-      if (!root || !data) return;
-      var units = data.units;
-      var lang = state.lang;
-      var itemsHtml = units.map(function (u) {
-        var isCurrent = state.unitId === u.id;
-        var label = unitLabel(u, lang);
-        var btnText = unitButtonText(u);
-        if (btnText !== null) {
-          return '<button type="button" class="lff2-unit-btn" data-unit-id="' + u.id + '" aria-current="' + (isCurrent ? "true" : "false") + '" title="' + escapeAttr(label) + '" aria-label="' + escapeAttr(label) + '">' + btnText + '</button>';
-        }
-        return '<button type="button" class="lff2-special-btn" data-unit-id="' + u.id + '" aria-current="' + (isCurrent ? "true" : "false") + '">' + escapeHtml(label) + '</button>';
-      }).join("");
-      root.innerHTML = '<div class="lff2-unit-grid">' + itemsHtml + '</div>';
-      root.querySelectorAll("[data-unit-id]").forEach(function (btn) {
-        btn.addEventListener("click", function () { renderUnit(Number(btn.dataset.unitId)); });
-      });
-    }
-    function renderUnit(unitId) {
-      var pickerRoot = document.getElementById(prefix + "-picker-root");
-      var viewerRoot = document.getElementById(prefix + "-viewer-root");
-      var data = opts.getData();
-      if (!pickerRoot || !viewerRoot || !data) return;
-      var units = data.units;
-      var unit = units[unitId - 1] && units[unitId - 1].id === unitId ? units[unitId - 1] : units.filter(function (u) { return u.id === unitId; })[0];
-      if (!unit) return;
-      var idx = units.indexOf(unit);
-      var lang = state.lang;
-      state.unitId = unitId;
-      saveState();
-
-      pickerRoot.style.display = "none";
-      viewerRoot.style.display = "";
-
-      var prevUnit = units[idx - 1] || null;
-      var nextUnit = units[idx + 1] || null;
-      var titleText = unitLabel(unit, lang);
-
-      var searchId = prefix + "-search";
-      var listId = prefix + "-row-list";
-      var html = '<div class="lff2-viewer-head">' +
-        '<button type="button" class="lff2-back-btn" id="' + prefix + '-back-btn">← ' + escapeHtml(TU("목록")) + '</button>' +
-        '<div class="lff2-unit-title">' + escapeHtml(titleText) + '</div></div>' +
-        '<div class="lff2-nav-row">' +
-        '<button type="button" class="lff2-nav-btn" id="' + prefix + '-prev-btn"' + (prevUnit ? "" : " disabled") + '>' +
-        (prevUnit ? "← " + escapeHtml(unitLabel(prevUnit, lang)) : escapeHtml(TU("이전"))) + '</button>' +
-        '<button type="button" class="lff2-nav-btn" id="' + prefix + '-next-btn"' + (nextUnit ? "" : " disabled") + '>' +
-        (nextUnit ? escapeHtml(unitLabel(nextUnit, lang)) + " →" : escapeHtml(TU("다음"))) + '</button>' +
-        '</div>' +
-        '<div class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>' +
-        '<input type="text" id="' + searchId + '" data-i18n-placeholder="베트남어 문장이나 뜻으로 검색" placeholder="' + escapeAttr(TU("베트남어 문장이나 뜻으로 검색")) + '"></div>' +
-        '<div class="lff2-row-list" id="' + listId + '">' + buildRowsHtml(unit, lang) + '</div>';
-
-      viewerRoot.innerHTML = html;
-      bindCurrSpeakBtns(viewerRoot);
-
-      var backBtn = document.getElementById(prefix + "-back-btn");
-      if (backBtn) backBtn.addEventListener("click", function () {
-        viewerRoot.style.display = "none";
-        pickerRoot.style.display = "";
-        renderPicker();
-      });
-      var prevBtn = document.getElementById(prefix + "-prev-btn");
-      if (prevBtn && prevUnit) prevBtn.addEventListener("click", function () { renderUnit(prevUnit.id); window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" }); });
-      var nextBtn = document.getElementById(prefix + "-next-btn");
-      if (nextBtn && nextUnit) nextBtn.addEventListener("click", function () { renderUnit(nextUnit.id); window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" }); });
-
-      var searchInput = document.getElementById(searchId);
-      if (searchInput) {
-        searchInput.addEventListener("input", function () {
-          var listRoot = document.getElementById(listId);
-          if (!listRoot) return;
-          listRoot.innerHTML = buildRowsHtml(unit, lang, searchInput.value.trim());
-          bindCurrSpeakBtns(listRoot);
-        });
-      }
-    }
-    function populateLangSelect() {
-      var sel = document.getElementById(prefix + "-lang-select");
-      var data = opts.getData();
-      if (!sel || sel.dataset.populated || !data) return;
-      sel.dataset.populated = "true";
-      var names = data.languages || {};
-      sel.innerHTML = LFF2_LANGS.map(function (code) {
-        return '<option value="' + code + '"' + (code === state.lang ? " selected" : "") + '>' + escapeHtml(names[code] || code) + '</option>';
-      }).join("");
-      sel.addEventListener("change", function () {
-        if (LFF2_LANGS.indexOf(sel.value) < 0) return;
-        state.lang = sel.value;
-        saveState();
-        renderPicker();
-        if (state.unitId) renderUnit(state.unitId);
-      });
-    }
-    function init() {
-      var data = opts.getData();
-      if (!data || document.body.dataset[opts.initFlag]) return;
-      document.body.dataset[opts.initFlag] = "true";
-      populateLangSelect();
-      renderPicker();
-      if (state.unitId) {
-        renderUnit(state.unitId);
-      } else {
-        document.getElementById(prefix + "-picker-root").style.display = "";
-        document.getElementById(prefix + "-viewer-root").style.display = "none";
-      }
-    }
-    onLangChange(function () {
-      if (!document.body.dataset[opts.initFlag]) return;
-      if (state.unitId) renderUnit(state.unitId);
-    });
-    return { init: init };
-  }
-
-  var lpd2Viewer = createExcelFullViewer({
-    prefix: "lpd2",
-    initFlag: "lpd2Init",
-    getData: function () { return typeof LOVE_PEOPLE_FULL === "undefined" ? null : LOVE_PEOPLE_FULL; },
-  });
-  function initLpd2() { lpd2Viewer.init(); }
-
-  var wt2Viewer = createExcelFullViewer({
-    prefix: "wt2",
-    initFlag: "wt2Init",
-    getData: function () { return typeof WATCHTOWER_FULL === "undefined" ? null : WATCHTOWER_FULL; },
-  });
-  function initWt2() { wt2Viewer.init(); }
 
   // "행복한 삶을 영원히" (Enjoy Life Forever!) -- LFF_CONVERSATIONS holds the body-text sentences of
   // 5 languages, sourced from wol.jw.org (video call-outs and the trailing "더 찾아보기"/EXPLORE
@@ -8470,7 +8258,7 @@ function verifyDistribution(units, dist, pins) {
         });
         // 일상 회화 (21 general dialogues, shared by all profiles) contributes its lines too.
         DAILY_CONVERSATIONS.forEach(function (conv) {
-          conv.turns.forEach(function (t) { if (t.vi) addSentencePairs(out, applyDailyPronouns(conv, t), Tstrict(t)); });
+          conv.turns.forEach(function (t) { if (t.vi) addSentencePairs(out, applyDailyPronouns(conv, t), applyDailyMeaningPronouns(conv, t, currentLang)); });
         });
         return dedupeByVi(out);
       },
@@ -8552,12 +8340,14 @@ function verifyDistribution(units, dist, pins) {
             pat.examples.forEach(function (ex) { if (ex.vi && ex.ko) addSentencePairs(out, ex.vi, Tstrict(ex.tr || ex.ko)); });
           });
         }
+        pdfGrammarExampleRows().forEach(function (r) { addSentencePairs(out, r.vi, pdfSentenceTr(r)); });
         return dedupeByVi(out);
       },
       // 문장 탭 (행복한 삶을 영원히 · 사람들을 사랑하고 제자로 · 파수대) -- 문장이 아닌 항목은 모두
       // 제외하므로, 파수대에서는 단어(w.vi/w.mean)가 아니라 예문(w.example/w.example_mean)만 쓴다.
       sentence: function () {
         var out = [];
+        pdfSentenceRows().forEach(function (r) { addSentencePairs(out, r.vi, pdfSentenceTr(r)); });
         LFF_CONVERSATIONS.forEach(function (rec) {
           lffDisplayLines(rec).forEach(function (l) {
             if (isReviewableLffLine(l)) addSentencePairs(out, applyLffListenerTerms(l.vi), Tstrict(l));
@@ -8714,7 +8504,7 @@ function verifyDistribution(units, dist, pins) {
         else if (scope === "reftable") REF_TABLE.forEach(function (sec) { sec.rows.forEach(function (r) { if (TERM_MEAN[r.listener]) out.push({ vi: r.listener, kr: TU(TERM_MEAN[r.listener]) }); if (TERM_MEAN[r.self]) out.push({ vi: r.self, kr: TU(TERM_MEAN[r.self]) }); }); });
         else if (scope === "talks") OFFER_TALKS.forEach(function (t) { t.lines.forEach(function (l) { sentence(l.vi, Tstrict(l.kr)); }); });
         else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(applyNeighborTermsVi(l.vi), applyNeighborTermsMeaning(Tstrict(l), currentLang)); }); });
-        else if (scope === "daily") DAILY_CONVERSATIONS.forEach(function (c) { c.turns.forEach(function (t) { sentence(applyDailyPronouns(c, t), Tstrict(t)); }); });
+        else if (scope === "daily") DAILY_CONVERSATIONS.forEach(function (c) { c.turns.forEach(function (t) { sentence(applyDailyPronouns(c, t), applyDailyMeaningPronouns(c, t, currentLang)); }); });
       } else if (key === "sentence") {
         if (scope === "lff") LFF_CONVERSATIONS.forEach(function (r) { lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
         else if (scope === "lpd") LPD_LESSONS.forEach(function (r) {

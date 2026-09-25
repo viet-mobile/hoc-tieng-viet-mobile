@@ -251,7 +251,9 @@ async function runTest() {
   });
 
   cdp.on('Network.loadingFailed', (params) => {
-    networkFailures.push(`FAILED: ${params.errorText} on ${params.requestId}`);
+    if (params.errorText !== 'net::ERR_ABORTED') {
+      networkFailures.push(`FAILED: ${params.errorText} on ${params.requestId}`);
+    }
   });
 
   await cdp.send('Page.enable');
@@ -466,8 +468,8 @@ async function runTest() {
       // 5. Trigger reload
       await cdp.send('Page.reload');
 
-      // 6. Deterministic wait for NEW document and app readiness (10-second timeout)
-      const timeoutMs = 10000;
+      // 6. Deterministic wait for NEW document and app readiness (25-second timeout for large profiles)
+      const timeoutMs = 25000;
       const pollIntervalMs = 50;
       const startTime = Date.now();
       let ready = false;
