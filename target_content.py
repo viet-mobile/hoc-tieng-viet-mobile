@@ -11,6 +11,7 @@ by the voice settings; neither is learning content.
 """
 import json
 
+from target_segment import sentence_records
 from site_profiles import (SITES, TARGET_LANGUAGES, TARGET_LANGUAGE_NAMES, TARGET_CONTENT_SOURCES,
                            TARGET_SOURCE_REQUIRED, UI_LANGS)
 
@@ -29,13 +30,22 @@ def _texts(row, langs=UI_LANGS):
     return out
 
 
-def _excel_units(source_id, data, field):
+def _excel_units(source_id, data, field, stats=None):
+    """ELF/LPD/WT units whose body is one record per target-language sentence (target_segment.py);
+    p = the paragraph's position in the unit body, s = the sentence's position in that paragraph."""
     units = []
     header_n = HEADER_ROWS[source_id]
     for unit in data["units"]:
         rows = [_texts(r) for r in unit["rows"]]
         head = [r for r in rows[:header_n] if r]
-        body = [r for r in rows[header_n:] if field in r]
+        body = []
+        for p, row in enumerate(r for r in rows[header_n:] if field in r):
+            records, outcome = sentence_records(row, field, UI_LANGS)
+            if stats is not None:
+                stats.append({"n": len(records), "outcome": outcome, "records": records})
+            for s, rec in enumerate(records):
+                rec["p"], rec["s"] = p, s
+                body.append(rec)
         if not body:
             continue
         units.append({"id": "%s-%s" % (source_id, unit["id"]), "head": head, "rows": body})
@@ -69,7 +79,7 @@ def _neighbor_units(conversations, field):
     return units
 
 
-def build_target_corpus(site, sources):
+def build_target_corpus(site, sources, stats=None):
     """sources: {"elf": ENJOY_LIFE_FOREVER-shaped, "lpd": ..., "wt": ..., "songs": [...],
     "neighbor": [...]} -- the same objects the Vietnamese profiles ship."""
     meta = SITES[site]
@@ -79,7 +89,8 @@ def build_target_corpus(site, sources):
         if TARGET_CONTENT_SOURCES[source_id]["family"] != meta["family"]:
             raise SystemExit("[%s] source %r belongs to another site family" % (site, source_id))
         if source_id in HEADER_ROWS:
-            units = _excel_units(source_id, sources[source_id], field)
+            units = _excel_units(source_id, sources[source_id], field,
+                                 None if stats is None else stats.setdefault(source_id, []))
         elif source_id == "songs":
             units = _song_units(sources["songs"], field)
         elif source_id == "neighbor":
@@ -110,6 +121,10 @@ def build_target_site(site, corpus):
         # Other scripts of the same language (zh: Hans) -- parallel text, shown under the target line
         # only in the UI language that reads that script.
         "altFields": [s["field"] for k, s in lang["scripts"].items() if k != meta["target_script"]],
+        # Scripts the learner can study, primary first (Chinese: Traditional, Simplified). The engine reads
+        # the chosen script's field of each sentence record.
+        "scripts": [dict(script=meta["target_script"], **lang["scripts"][meta["target_script"]])] +
+                   [dict(script=k, **s) for k, s in lang["scripts"].items() if k != meta["target_script"]],
         "tokenizer": lang["tokenizer"],
         "names": TARGET_LANGUAGE_NAMES[meta["target_language"]],
         "features": meta["features"],
@@ -236,6 +251,13 @@ TARGET_UI_TEXT = {
               "ko": "틀렸어요. 다시 해 보세요.", "pl": "Jeszcze nie, spróbuj ponownie."},
     "all": {"vi": "Tất cả", "cs": "Vše", "zh_cn": "全部", "zh": "全部", "en": "All", "fr": "Tout", "de": "Alle", "hu": "Összes",
             "id": "Semua", "ja": "すべて", "ko": "전체", "pl": "Wszystko"},
+    # Script switch of a target written in two scripts (Chinese).
+    "script_Hant": {"vi": "Phồn thể", "cs": "Tradiční znaky", "zh_cn": "繁体", "zh": "繁體", "en": "Traditional",
+                    "fr": "Traditionnel", "de": "Traditionell", "hu": "Hagyományos", "id": "Tradisional", "ja": "繁体字",
+                    "ko": "번체", "pl": "Tradycyjne"},
+    "script_Hans": {"vi": "Giản thể", "cs": "Zjednodušené znaky", "zh_cn": "简体", "zh": "簡體", "en": "Simplified",
+                    "fr": "Simplifié", "de": "Vereinfacht", "hu": "Egyszerűsített", "id": "Sederhana", "ja": "簡体字",
+                    "ko": "간체", "pl": "Uproszczone"},
     "search": {"vi": "Tìm kiếm", "cs": "Hledat", "zh_cn": "搜索", "zh": "搜尋", "en": "Search", "fr": "Rechercher", "de": "Suchen",
                "hu": "Keresés", "id": "Cari", "ja": "検索", "ko": "검색", "pl": "Szukaj"},
     "no_results": {"vi": "Không có kết quả.", "cs": "Žádné výsledky.", "zh_cn": "没有结果。", "zh": "沒有結果。", "en": "No results.",

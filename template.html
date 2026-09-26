@@ -3105,15 +3105,23 @@
   .tg-scope select { max-width: 100%; }
   .tg-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-m, var(--radius-s)); padding: 16px; display: flex; flex-direction: column; gap: 12px; }
   .tg-count { font-size: 0.8rem; color: var(--ink-faint); }
-  .tg-prompt, .tg-answer, .tg-built { font-size: 1.08rem; line-height: 1.6; overflow-wrap: anywhere; }
-  .tg-built { min-height: 2.2em; border-bottom: 2px dashed var(--border); cursor: pointer; }
-  .tg-chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .tg-chip { padding: 7px 11px; border-radius: var(--radius-s); border: 1px solid var(--border); background: var(--chip-bg); color: inherit; font-size: 0.98rem; cursor: pointer; }
-  .tg-chip[disabled] { opacity: 0.35; cursor: default; }
+  .tg-prompt, .tg-answer { font-size: 1.08rem; line-height: 1.6; overflow-wrap: anywhere; }
+  /* Word order uses the review's own .study-order-answer / .study-order-bank / .study-chip design. */
+  .tg-card .study-order-answer { min-height: 48px; }
+  /* Each script in its own font on the target sites (body.tg-engine is set by the target engine; every
+     target/translation line carries its lang). Simplified Chinese needs Noto Sans SC -- the Korean and
+     Traditional fonts lack many Simplified glyphs, which then fell back to a mismatched bold face. */
+  :root { --font-zh-hans: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+          --font-ko-base: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; }
+  body.tg-engine[data-app-lang="zh_cn"] { --font-kr: var(--font-zh-hans); }
+  body.tg-engine [lang="zh-CN"] { font-family: var(--font-zh-hans); }
+  body.tg-engine [lang="zh-TW"] { font-family: var(--font-zh); }
+  body.tg-engine [lang="ja-JP"] { font-family: var(--font-ja); }
+  body.tg-engine [lang="ko-KR"] { font-family: var(--font-ko-base); }
+  body.tg-engine .study-chip { font-family: inherit; }
   .tg-result.ok { color: var(--good); font-weight: 700; display: flex; align-items: center; gap: 6px; }
   .tg-result.bad { color: var(--danger); font-weight: 700; }
-  .tg-nav { display: flex; gap: 6px; flex-wrap: wrap; }
-  .tg-nav .study-nav-btn { flex: 1 1 0; }
+  .tg-nav .foot-btn { display: inline-flex; align-items: center; justify-content: center; gap: 4px; }
 </style>
 
 <div class="app" data-active-tab="review">

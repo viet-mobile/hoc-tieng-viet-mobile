@@ -130,6 +130,11 @@ def apply_brand(html_text, site):
              f'<link rel="icon" type="image/png" sizes="32x32" href="brand/{BRAND_ICON_FILES["png32"]}">\n'
              f'<link rel="apple-touch-icon" sizes="180x180" href="brand/{BRAND_ICON_FILES["apple"]}">')
     html_text = html_text.replace(VIETNAMESE_ICON_LINKS, links, 1)
+    # Simplified Chinese glyphs (the shared font link has only KR/TC/JP): Noto Sans SC for zh-CN text.
+    tc = "&family=Noto+Sans+TC:"
+    if tc not in html_text:
+        raise SystemExit(f"[{site}] template.html: Google Fonts link without Noto Sans TC")
+    html_text = html_text.replace(tc, "&family=Noto+Sans+SC:wght@400;500;600;700;900" + tc, 1)
     return html_text.replace(VIETNAMESE_THEME_META, f'<meta name="theme-color" content="{brand["color"]}">', 1)
 
 

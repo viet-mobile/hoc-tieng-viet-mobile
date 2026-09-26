@@ -11880,6 +11880,45 @@ function verifyDistribution(units, dist, pins) {
     var corpus = (typeof TARGET_CORPUS !== "undefined" && TARGET_CORPUS) || [];
     var FIELD = TARGET.field;
     var has = function (f) { return TARGET.features.indexOf(f) >= 0; };
+    if (document.body) document.body.classList.add("tg-engine");
+    // Scripts the studied language is written in (TARGET_SITE.scripts): Chinese has Traditional (the
+    // primary one) and Simplified, and the learner picks which to study. Each script reads its own field
+    // of the same sentence record; a record without text in the chosen script is left out -- never shown
+    // in the other script instead.
+    var SCRIPTS = TARGET.scripts || [];
+    var SCRIPT_KEY = "tgt-script-" + TARGET.lang;
+    var SCRIPT = SCRIPTS.length ? SCRIPTS[0].script : null;
+    try {
+      var savedScript = window.localStorage ? window.localStorage.getItem(SCRIPT_KEY) : null;
+      if (SCRIPTS.some(function (s) { return s.script === savedScript; })) SCRIPT = savedScript;
+    } catch (e) { /* no-op */ }
+    function applyScript() {
+      var s = SCRIPTS.filter(function (x) { return x.script === SCRIPT; })[0];
+      if (s) { FIELD = s.field; TARGET_TTS_TAG = s.tts; }
+    }
+    applyScript();
+    function hasTarget(row) { return !!row[FIELD]; }
+    function unitRows(unit) { return unit.rows.filter(hasTarget); }
+    function uiLangTag() { return READALL_LANG_TAG[currentLang] || currentLang; }
+    function scriptToggleHtml() {
+      if (SCRIPTS.length < 2) return "";
+      return '<div class="subtab-row tg-scripts">' + SCRIPTS.map(function (s) {
+        return '<button class="subtab-btn" data-tg-script="' + escapeAttr(s.script) + '" aria-selected="' + (s.script === SCRIPT ? "true" : "false") + '">' +
+          escapeHtml(TX("script_" + s.script)) + '</button>';
+      }).join("") + '</div>';
+    }
+    function bindScriptToggle(root) {
+      root.querySelectorAll("[data-tg-script]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          if (b.dataset.tgScript === SCRIPT) return;
+          SCRIPT = b.dataset.tgScript;
+          try { window.localStorage && window.localStorage.setItem(SCRIPT_KEY, SCRIPT); } catch (e) { /* no-op */ }
+          applyScript();
+          buildPool();
+          renderAll();
+        });
+      });
+    }
     // Source names come from TARGET_SOURCE_META (target_sources.py): "label" for buttons and menus,
     // "official" (the official full title, where the language has one) as the selected source's heading.
     var SOURCE_META = (typeof TARGET_SOURCE_META !== "undefined" && TARGET_SOURCE_META) || {};
@@ -11937,7 +11976,8 @@ function verifyDistribution(units, dist, pins) {
       if (who) html += '<div class="tg-who">' + escapeHtml(who) + '</div>';
       html += '<div class="talk-vi tg-target" lang="' + escapeAttr(TARGET_TTS_TAG) + '">' + escapeHtml(target) + speakBtn(target) + '</div>';
       var tr = trOf(row);
-      if (tr) html += '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(tr) + '</span>' + meaningBtn(tr) + '</div>';
+      // lang on every line so each script gets its own font (zh-CN / zh-TW / ja / ko; see template.html).
+      if (tr) html += '<div class="talk-kr" lang="' + escapeAttr(uiLangTag()) + '"><span class="talk-kr-text">' + escapeHtml(tr) + '</span>' + meaningBtn(tr) + '</div>';
       else if (!sameLang()) html += '<div class="talk-kr tg-missing">' + escapeHtml(TX("no_translation")) + '</div>';
       return html + '</div></div>';
     }
@@ -11967,14 +12007,14 @@ function verifyDistribution(units, dist, pins) {
       var pairs = [[tHead, trHead]].concat(rows.map(function (r) { return [r[FIELD], trOf(r) || ""]; }));
       return '<div class="group-card" data-open="' + (open ? "true" : "false") + '" data-unit="' + escapeAttr(unit.id) + '" data-anchor="' + escapeAttr(unit.id) + '">' +
         '<div class="group-head-row"><button class="group-head"><span class="tg-head"><span class="tg-head-target" lang="' + escapeAttr(TARGET_TTS_TAG) + '">' + escapeHtml(tHead) + '</span>' +
-        (trHead ? '<span class="tg-head-tr">' + escapeHtml(trHead) + '</span>' : '') + '</span>' + currChev() + '</button>' +
+        (trHead ? '<span class="tg-head-tr" lang="' + escapeAttr(uiLangTag()) + '">' + escapeHtml(trHead) + '</span>' : '') + '</span>' + currChev() + '</button>' +
         readAllButtonHtml(pairs) + '</div><div class="group-body"><div class="talk-lines">' +
         (open ? rows.map(rowHtml).join("") : "") + '</div></div></div>';
     }
     function renderReader() {
       if (!readerPanel) return;
       if (!corpus.length) { readerPanel.innerHTML = sourceRequiredHtml(); return; }
-      var html = '<div class="subtab-row tg-sources">' + corpus.map(function (src) {
+      var html = scriptToggleHtml() + '<div class="subtab-row tg-sources">' + corpus.map(function (src) {
         return '<button class="subtab-btn" data-tg-source="' + escapeAttr(src.id) + '" aria-selected="' + (src.id === readerState.source ? "true" : "false") + '">' + escapeHtml(sourceTitle(src.id)) + '</button>';
       }).join("") + '</div>' +
         '<div class="tg-search"><input type="search" id="tg-search" placeholder="' + escapeAttr(TX("search")) + '" value="' + escapeAttr(readerState.q) + '"></div>';
@@ -11991,6 +12031,7 @@ function verifyDistribution(units, dist, pins) {
       });
       var input = document.getElementById("tg-search");
       input.addEventListener("input", function () { readerState.q = input.value.trim(); renderUnits(); });
+      bindScriptToggle(readerPanel);
       renderUnits();
       assignPastelSlots();
     }
@@ -12002,9 +12043,12 @@ function verifyDistribution(units, dist, pins) {
       if (heading) heading.textContent = sourceOfficial(src.id) || sourceTitle(src.id);
       var q = readerState.q.toLowerCase();
       var html = "";
-      src.units.forEach(function (unit, i) {
-        if (!q) { html += unitCardHtml(unit, i === 0, unit.rows); return; }
-        var rows = unit.rows.filter(function (r) {
+      var first = true;
+      src.units.forEach(function (unit) {
+        var shown = unitRows(unit);
+        if (!shown.length) return;               // nothing in the chosen script
+        if (!q) { html += unitCardHtml(unit, first, shown); first = false; return; }
+        var rows = shown.filter(function (r) {
           return String(r[FIELD]).toLowerCase().indexOf(q) >= 0 || String(trOf(r) || "").toLowerCase().indexOf(q) >= 0;
         });
         if (rows.length) html += unitCardHtml(unit, true, rows);
@@ -12017,7 +12061,7 @@ function verifyDistribution(units, dist, pins) {
           var lines = card.querySelector(".talk-lines");
           if (open && !lines.childElementCount) {
             var unit = src.units.filter(function (u) { return u.id === card.dataset.unit; })[0];
-            lines.innerHTML = unit.rows.map(rowHtml).join("");
+            lines.innerHTML = unitRows(unit).map(rowHtml).join("");
             bindCurrSpeakBtns(lines);
           }
         });
@@ -12028,16 +12072,24 @@ function verifyDistribution(units, dist, pins) {
     /* ---------- [복습] ---------- */
     var reviewPanel = document.getElementById("panel-review");
     var rv = { source: "all", unit: "all", mode: "listen", pool: [], idx: 0, revealed: false, built: [] };
+    // Units the learner puts in order (TARGET_SITE.tokenizer):
+    //   "whitespace" (en/id), "eojeol" (ko): space-separated units, punctuation kept on its token;
+    //   "han_char" (zh): one token per Han character, one per Latin/number run ("21:4", "JW"),
+    //   punctuation, quotes, brackets and spaces are not tokens.
+    // A leading paragraph/question number ("1.") is not part of the sentence to order.
+    var CHAR_ORDER = TARGET.tokenizer === "han_char";
     function tokens(text) {
-      // "whitespace" (en/id) and "eojeol" (ko): space-separated units, punctuation kept on its token.
-      // A leading paragraph/question number ("1.") is not part of the sentence to order.
-      return String(text).trim().replace(/^\d+\.\s+/, "").split(/\s+/).filter(Boolean);
+      var t = String(text).trim().replace(/^\d+\.\s+/, "");
+      if (CHAR_ORDER) return t.match(/\p{Script=Han}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]+(?:[:.,][0-9０-９]+)*/gu) || [];
+      return t.split(/\s+/).filter(Boolean);
     }
+    // Same glyph as the review's [섞기] (shuffleGlyphIcon() in the review module is not in scope here).
+    var TG_SHUFFLE_ICON = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>';
     function usableRow(r) {
       var t = String(r[FIELD] || "").trim();
       if (t.length < 4 || !/[\p{L}]/u.test(t)) return false;
       if (rv.mode === "recall" && !trOf(r)) return false;
-      if (rv.mode === "order") { var n = tokens(t).length; return n >= 3 && n <= 12; }
+      if (rv.mode === "order") { var n = tokens(t).length; return CHAR_ORDER ? (n >= 4 && n <= 16) : (n >= 3 && n <= 12); }
       return t.length <= 220;
     }
     function buildPool() {
@@ -12070,10 +12122,11 @@ function verifyDistribution(units, dist, pins) {
       corpus.forEach(function (s) {
         if (rv.source !== s.id) return;
         s.units.forEach(function (u) {
+          if (!unitRows(u).length) return;
           unitOpts += '<option value="' + escapeAttr(u.id) + '"' + (rv.unit === u.id ? " selected" : "") + '>' + escapeHtml(headText(u, FIELD).slice(0, 60)) + '</option>';
         });
       });
-      var html = '<div class="subtab-row tg-modes">' + modes().map(function (m) {
+      var html = scriptToggleHtml() + '<div class="subtab-row tg-modes">' + modes().map(function (m) {
         return '<button class="subtab-btn" data-tg-mode="' + m[0] + '" aria-selected="' + (m[0] === rv.mode ? "true" : "false") + '">' + escapeHtml(m[1]) + '</button>';
       }).join("") + '</div>' +
         '<div class="tg-scope"><select id="tg-rv-source" class="review-dd">' + srcOpts + '</select>' +
@@ -12087,6 +12140,7 @@ function verifyDistribution(units, dist, pins) {
       document.getElementById("tg-rv-source").addEventListener("change", function (e) { rv.source = e.target.value; rv.unit = "all"; buildPool(); renderReview(); });
       var unitSel = document.getElementById("tg-rv-unit");
       if (unitSel) unitSel.addEventListener("change", function (e) { rv.unit = e.target.value; buildPool(); renderCard(); });
+      bindScriptToggle(reviewPanel);
       if (!rv.pool.length) buildPool();
       renderCard();
       assignPastelSlots();
@@ -12101,13 +12155,13 @@ function verifyDistribution(units, dist, pins) {
       html += '<div class="tg-count">' + (rv.idx + 1) + ' / ' + rv.pool.length + '</div>';
       if (rv.mode === "listen") {
         html += '<div class="tg-prompt talk-vi" lang="' + escapeAttr(TARGET_TTS_TAG) + '">' + escapeHtml(target) + speakBtn(target) + '</div>';
-        if (rv.revealed) html += tr ? '<div class="tg-answer talk-kr">' + escapeHtml(tr) + meaningBtn(tr) + '</div>'
+        if (rv.revealed) html += tr ? '<div class="tg-answer talk-kr" lang="' + escapeAttr(uiLangTag()) + '">' + escapeHtml(tr) + meaningBtn(tr) + '</div>'
           : '<div class="tg-answer talk-kr tg-missing">' + escapeHtml(sameLang() ? TX("same_lang") : TX("no_translation")) + '</div>';
-        else html += '<button class="study-nav-btn wide" id="tg-reveal">' + escapeHtml(TX("reveal")) + '</button>';
+        else html += '<div class="study-action-row"><button class="foot-btn primary" id="tg-reveal">' + escapeHtml(TX("reveal")) + '</button></div>';
       } else if (rv.mode === "recall") {
-        html += '<div class="tg-prompt talk-kr">' + escapeHtml(tr) + meaningBtn(tr) + '</div>';
+        html += '<div class="tg-prompt talk-kr" lang="' + escapeAttr(uiLangTag()) + '">' + escapeHtml(tr) + meaningBtn(tr) + '</div>';
         if (rv.revealed) html += '<div class="tg-answer talk-vi" lang="' + escapeAttr(TARGET_TTS_TAG) + '">' + escapeHtml(target) + speakBtn(target) + '</div>';
-        else html += '<button class="study-nav-btn wide" id="tg-reveal">' + escapeHtml(TX("reveal_target")) + '</button>';
+        else html += '<div class="study-action-row"><button class="foot-btn primary" id="tg-reveal">' + escapeHtml(TX("reveal_target")) + '</button></div>';
       } else {
         var toks = tokens(target);
         if (!rv.shuffled || rv.shuffledFor !== rv.idx) {
@@ -12115,19 +12169,25 @@ function verifyDistribution(units, dist, pins) {
           rv.shuffledFor = rv.idx;
           rv.built = [];
         }
-        if (tr) html += '<div class="tg-prompt talk-kr">' + escapeHtml(tr) + '</div>';
-        html += '<div class="tg-built talk-vi" lang="' + escapeAttr(TARGET_TTS_TAG) + '">' + rv.built.map(function (k) { return escapeHtml(rv.shuffled[k].t); }).join(" ") + '&nbsp;</div>';
-        html += '<div class="tg-chips">' + rv.shuffled.map(function (c, k) {
-          return '<button class="tg-chip" data-k="' + k + '"' + (rv.built.indexOf(k) >= 0 ? " disabled" : "") + '>' + escapeHtml(c.t) + '</button>';
+        // The review's own word-order pieces (.study-chip / .study-chip.placed): placed pieces in the answer
+        // row (tap one to put it back), the rest in the bank.
+        if (tr) html += '<div class="tg-prompt talk-kr" lang="' + escapeAttr(uiLangTag()) + '">' + escapeHtml(tr) + '</div>';
+        html += '<div class="study-order-answer tg-built" lang="' + escapeAttr(TARGET_TTS_TAG) + '">' + rv.built.map(function (k, pos) {
+          return '<button type="button" class="study-chip placed" data-pos="' + pos + '">' + escapeHtml(rv.shuffled[k].t) + '</button>';
+        }).join("") + '</div>';
+        html += '<div class="study-order-bank tg-chips" lang="' + escapeAttr(TARGET_TTS_TAG) + '">' + rv.shuffled.map(function (c, k) {
+          return rv.built.indexOf(k) >= 0 ? "" : '<button type="button" class="study-chip tg-chip" data-k="' + k + '">' + escapeHtml(c.t) + '</button>';
         }).join("") + '</div>';
         if (rv.built.length === toks.length) {
-          var ok = rv.built.map(function (k) { return rv.shuffled[k].t; }).join(" ") === toks.join(" ");
+          var ok = rv.built.map(function (k) { return rv.shuffled[k].t; }).join("\u0001") === toks.join("\u0001");  // separator: tokens compared one by one
           html += '<div class="tg-result ' + (ok ? "ok" : "bad") + '">' + escapeHtml(ok ? TX("correct") : TX("wrong")) + (ok ? speakBtn(target) : "") + '</div>';
         }
       }
-      html += '<div class="tg-nav"><button class="study-nav-btn" id="tg-prev">' + escapeHtml(TU("이전")) + '</button>' +
-        '<button class="study-nav-btn" id="tg-shuffle">' + escapeHtml(TU("섞기")) + '</button>' +
-        '<button class="study-nav-btn" id="tg-next">' + escapeHtml(TU("다음")) + '</button></div></div>';
+      // Same buttons as the rest of the review (.foot-btn in a .study-action-row), so they carry the review's
+      // pastel design and colours.
+      html += '<div class="study-action-row tg-nav"><button class="foot-btn" id="tg-prev">← ' + escapeHtml(TU("이전")) + '</button>' +
+        '<button class="foot-btn" id="tg-shuffle">' + TG_SHUFFLE_ICON + ' ' + escapeHtml(TU("섞기")) + '</button>' +
+        '<button class="foot-btn primary" id="tg-next">' + escapeHtml(TU("다음")) + ' →</button></div></div>';
       root.innerHTML = html;
       bindCurrSpeakBtns(root);
       var reveal = document.getElementById("tg-reveal");
@@ -12135,8 +12195,9 @@ function verifyDistribution(units, dist, pins) {
       root.querySelectorAll(".tg-chip").forEach(function (b) {
         b.addEventListener("click", function () { rv.built.push(Number(b.dataset.k)); renderCard(); });
       });
-      var built = root.querySelector(".tg-built");
-      if (built) built.addEventListener("click", function () { if (rv.built.length) { rv.built.pop(); renderCard(); } });
+      root.querySelectorAll(".tg-built .study-chip.placed").forEach(function (b) {
+        b.addEventListener("click", function () { rv.built.splice(Number(b.dataset.pos), 1); renderCard(); });
+      });
       function go(d) { rv.idx = (rv.idx + d + rv.pool.length) % rv.pool.length; rv.revealed = false; rv.built = []; renderCard(); }
       document.getElementById("tg-prev").addEventListener("click", function () { go(-1); });
       document.getElementById("tg-next").addEventListener("click", function () { go(1); });

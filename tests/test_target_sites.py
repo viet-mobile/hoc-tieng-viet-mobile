@@ -54,7 +54,7 @@ class TargetSiteTests(unittest.TestCase):
                 for unit in corpus["units"]:
                     for row in unit["rows"]:
                         self.assertTrue(row.get(field), (sid, source_id, unit["id"]))
-                        self.assertLessEqual(set(row) - {"who"}, set(UI_LANGS))
+                        self.assertLessEqual(set(row) - {"who", "p", "s"}, set(UI_LANGS))
             ui = json.loads(c["TARGET_UI_TEXT"])
             for key, texts in ui.items():
                 self.assertEqual(set(texts), set(UI_LANGS), key)
@@ -115,6 +115,50 @@ class TargetSiteTests(unittest.TestCase):
             # No Worker, no D1 client on a target site.
             self.assertFalse((out / "_worker.js").exists(), sid)
             self.assertNotIn("/api/regional/", html, sid)
+
+    def test_sentence_level_records(self):
+        """ELF/LPD/WT: one target sentence per record, checked by a detector independent of
+        target_segment.py; a paragraph's translation is attached to all of its sentences or to none."""
+        import re
+        latin = re.compile(r"(?<!\b[A-Za-z])(?<!\bMr)(?<!\bMrs)(?<!\bDr)(?<!\bSt)(?<!\bvs)(?<!\bdll)[.?!][\"”’)\]]*\s+[\"“‘]?(?=[A-ZÀ-Ỹ])")
+        # "ㄱ. …" / "a. …" list labels are not sentence ends.
+        hangul = re.compile(r"(?<![ㄱ-ㅎA-Za-z])[.?!][\"”’)\]]*\s+[\"“‘]?(?=[가-힣])")
+        cjk = re.compile(r"[。？！][」』”’]*(?=[^」』”’\s_]*[^\W\d_])")
+
+        def boundaries(text, lang):
+            t = text
+            for _ in range(3):
+                t = re.sub(r"[（(《〈【][^()（）《》〈〉【】]{0,80}[)）》〉】][。.]?", "", t)
+            if lang in ("zh", "ja"):
+                return len(cjk.findall(t))
+            return len(latin.findall(t)) + (len(hangul.findall(t)) if lang == "ko" else 0)
+
+        for sid, meta in SITES.items():
+            if meta["engine"] != "target" or not meta["content_sources"]:
+                continue
+            c = consts(sid)
+            field = json.loads(c["TARGET_SITE"])["field"]
+            for source_id in ("elf", "lpd", "wt"):
+                corpus = json.loads(c["TARGET_CORPUS_" + source_id.upper()])
+                multi = []
+                for unit in corpus["units"]:
+                    paragraphs = {}
+                    for row in unit["rows"]:
+                        self.assertIn("p", row)
+                        self.assertIn("s", row)
+                        if boundaries(row[field], field):
+                            multi.append(row[field][:60])
+                        paragraphs.setdefault(row["p"], []).append(row)
+                    for rows in paragraphs.values():
+                        self.assertEqual([r["s"] for r in rows], list(range(len(rows))), (sid, unit["id"]))
+                        if len(rows) > 1:
+                            for lang in UI_LANGS:
+                                have = [lang in r for r in rows]
+                                self.assertIn(set(have), ({True}, {False}), (sid, unit["id"], lang))
+                self.assertEqual(multi, [], (sid, source_id, multi[:3]))
+            for source_id in ("songs", "neighbor"):
+                corpus = json.loads(c["TARGET_CORPUS_" + source_id.upper()])
+                self.assertFalse(any("p" in r for u in corpus["units"] for r in u["rows"]), (sid, source_id))
 
     def test_word_order_only_with_a_safe_tokenizer(self):
         for sid, meta in SITES.items():

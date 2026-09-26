@@ -388,8 +388,9 @@ UI_LANGS = ["vi", "cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko",
 # Per target language: which record field holds each script, the TTS locale per script, and how
 # text may be split into words. tokenizer "whitespace" = words are space-separated (safe for
 # word-order exercises); "eojeol" = Korean space-separated eojeol units (safe at eojeol level, no
-# morpheme analysis); "none" = no safe word boundary without a dictionary segmenter, so word-level
-# features (word order) are not shipped.
+# morpheme analysis); "han_char" = Chinese ordered one Han character at a time (Latin/number runs as
+# one unit, punctuation left out), no word segmentation needed; "none" = no safe unit without a
+# dictionary segmenter (Japanese), so word order is not shipped.
 TARGET_LANGUAGES = {
     "vi": {"scripts": {"Latn": {"field": "vi", "tts": "vi-VN"}}, "primary_script": "Latn",
            "tokenizer": "whitespace"},
@@ -404,7 +405,7 @@ TARGET_LANGUAGES = {
     # Traditional is primary: every JW source has at least as many Traditional rows as Simplified
     # (ELF 5071 vs 4714, LFF 2296 vs 2235, LPD excerpts 164 vs 39; WT/songs/neighbor equal).
     "zh": {"scripts": {"Hant": {"field": "zh", "tts": "zh-TW"}, "Hans": {"field": "zh_cn", "tts": "zh-CN"}},
-           "primary_script": "Hant", "tokenizer": "none"},
+           "primary_script": "Hant", "tokenizer": "han_char"},
 }
 
 # Target-language names in each UI language (UI text only: voice settings, notices).
