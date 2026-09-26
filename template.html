@@ -2837,6 +2837,12 @@
     list-style: none;
   }
   .pdf-subheading-summary .pdf-readall { margin-left: auto; margin-right: 8px; flex: none; }
+  /* [일반 문법]: one folded item per record, "N. title" only while folded. */
+  .pdf-grammar-item { margin-bottom: 8px; }
+  .pdf-grammar-item > .pdf-subheading-summary { gap: 8px; }
+  .pdf-grammar-item > .pdf-subheading-summary > span:first-child { min-width: 0; overflow-wrap: anywhere; }
+  .pdf-grammar-subhead { margin: 14px 0 6px; font-size: 0.92rem; font-weight: 700; color: var(--ink); }
+  .pdf-grammar-subhead:first-of-type { margin-top: 4px; }
   .pdf-inline-speak { display: inline-flex; vertical-align: middle; width: 28px; height: 28px; margin: 0 4px; }
   .pdf-inline-speak svg { width: 15px; height: 15px; }
   .pdf-vi-row { padding: 6px 0; border-bottom: 1px dashed var(--border); }

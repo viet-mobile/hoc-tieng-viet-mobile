@@ -3111,10 +3111,27 @@
       gramRoot.replaceChildren();
       var gramRows = GENERAL_PDF.grammar || [];
 
-      function cleanPdfLines(raw) {
+      // GENERAL_PDF_GRAMMAR_JOINS[row id] = [[line index, joiner], ...]: Korean prose lines the PDF's line wrap
+      // split mid-sentence (general_pdf_layout.py); joiner "" rejoins a split word, " " a split at a space.
+      var GRAM_JOINS = (typeof GENERAL_PDF_GRAMMAR_JOINS !== "undefined" && GENERAL_PDF_GRAMMAR_JOINS) || {};
+      function joinWrappedLines(lines, joins) {
+        if (!joins || !joins.length) return lines;
+        var joinAt = {};
+        joins.forEach(function (j) { joinAt[j[0]] = j[1]; });
+        var out = [];
+        lines.forEach(function (line, i) {
+          if (i > 0 && Object.prototype.hasOwnProperty.call(joinAt, i - 1) && out.length) {
+            out[out.length - 1] = out[out.length - 1].replace(/\s+$/, "") + joinAt[i - 1] + line.trim();
+          } else {
+            out.push(line);
+          }
+        });
+        return out;
+      }
+      function cleanPdfLines(raw, joins) {
         if (!raw) return [];
         var text = stripControls(raw);
-        var rawLines = text.replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n");
+        var rawLines = joinWrappedLines(text.replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n"), joins);
         while (rawLines.length && !rawLines[0].trim()) rawLines.shift();
         while (rawLines.length && !rawLines[rawLines.length - 1].trim()) rawLines.pop();
 
@@ -3129,6 +3146,7 @@
           if (/Bài\s+\d+.*?\d+$/.test(s) || /\|\s*\d+\s*\|\s*·/.test(s)) return;
           if (/베트남어\s+(?:읽기|가르치기와\s*배우기).*?·\s*\d+$/.test(s)) return;
           if (/^\d{1,3}$/.test(s)) return;
+          if (/^(?:문법해설\s*)?HƯỚNG DẪN CÁCH DÙNG(?:\s*문법해설)?$/.test(s)) return;  // page header
           if (/\|\s*\d{1,3}\s*$/.test(s)) return;
 
           var norm = line.replace(/[ \t]{4,}/g, "   ").trimEnd();
@@ -3316,6 +3334,16 @@
       }
       // [전체 듣기] entries from lines split into alternating [text, vietnamese, text, ...] parts: each Vietnamese
       // piece is read with the text right after it (its meaning); text before any Vietnamese on a line is read on its own.
+      // Speaker/list markers ("A", "B", "Ⓐ") and a bare word-box label are layout, not something to read aloud:
+      // a marker standing alone, at a column gap ("안녕하세요, 아빠.   A") or right before the next Vietnamese
+      // piece is dropped.
+      var READ_LABELS = [TU("단어"), "단어", "Word", "Words"];
+      function stripReadMarkers(t, beforeVi) {
+        // "A:", "A：" and French "A :" alike.
+        t = t.replace(/(^|\s{2,})[A-EＡ-ＥⒶ-Ⓔ]\s?[:.)：）]?(?=\s{2,}|\s*$)/g, "$1");
+        if (beforeVi) t = t.replace(/(^|\s)[A-EＡ-ＥⒶ-Ⓔ]\s?[:.)：）]?\s*$/, "$1");
+        return t;
+      }
       function readEntriesFromParts(partLines) {
         var entries = [];
         partLines.forEach(function (parts) {
@@ -3326,8 +3354,9 @@
               entries.push(lastVi);
               return;
             }
-            var t = part.replace(/^[\s:：\-–—=→·•,;|()（）\[\]]+|[\s:：\-–—=→·•,;|(（\[]+$/g, "").trim();
-            if (!/[\p{L}]/u.test(t)) return;
+            var t = stripReadMarkers(part, i + 1 < parts.length)
+              .replace(/^[\s:：\-–—=→·•,;|()（）\[\]]+|[\s:：\-–—=→·•,;|(（\[]+$/g, "").replace(/\s{2,}/g, " ").trim();
+            if (!/[\p{L}]/u.test(t) || READ_LABELS.indexOf(t.replace(/[:：]$/, "")) >= 0) return;
             if (lastVi && !lastVi[1]) lastVi[1] = t;
             else entries.push(["", t]);
           });
@@ -3380,62 +3409,133 @@
         return (num ? num + ". " : "") + text;
       }
 
-      gramRows.forEach(function (row, rowIndex) {
-        var cleanedLines = cleanPdfLines(row.original);
-        if (!cleanedLines.length) return;
-        var firstChildOfRow = gramRoot.children.length;
-        var sections = parseSubsections(cleanedLines);
-
-        sections.forEach(function (sec, si) {
-          var ai = sectionAi(row.id + "#" + si, sec.lines);
-          if (sec.title) {
-            var details = document.createElement("details");
-            details.className = "pdf-subheading-group";
-            details.open = true;
-            if (row.id) details.dataset.pdfId = row.id;
-
-            var summary = document.createElement("summary");
-            summary.className = "pdf-subheading-summary";
-            var titleSpan = document.createElement("span");
-            titleSpan.textContent = (ai && ai.t) || sectionTitleText(sec.title, sec.lines);
-            var chevSpan = document.createElement("span");
-            chevSpan.className = "chev";
-            chevSpan.textContent = "▾";
-            summary.appendChild(titleSpan);
-            var readAll = readAllButtonHtml(sectionReadEntries(sec.lines, ai));
-            if (readAll) {
-              var raWrap = document.createElement("span");
-              raWrap.className = "pdf-readall";
-              raWrap.innerHTML = readAll;
-              summary.appendChild(raWrap);
-            }
-            summary.appendChild(chevSpan);
-            details.appendChild(summary);
-
-            var body = document.createElement("div");
-            body.className = "pdf-subheading-body";
-            renderSectionBody(body, sec.lines, ai);
-            details.appendChild(body);
-
-            gramRoot.appendChild(details);
-          } else {
-            var card = document.createElement("article");
-            card.className = "curr-card";
-            if (row.id) card.dataset.pdfId = row.id;
-            var cardReadAll = readAllButtonHtml(sectionReadEntries(sec.lines, ai));
-            if (cardReadAll) {
-              var cardBar = document.createElement("div");
-              cardBar.className = "pdf-readall";
-              cardBar.style.cssText = "display:flex;justify-content:flex-end;";
-              cardBar.innerHTML = cardReadAll;
-              card.appendChild(cardBar);
-            }
-            renderSectionBody(card, sec.lines, ai);
-            gramRoot.appendChild(card);
+      // A real subsection heading names an expression in Korean ("1. 인사 표현", "3. 요청하는 표현: Xin"); a
+      // numbered table row the parser also splits on ("0. không   5   năm", "1. lớp một") is content. The section
+      // split itself is kept as is, because GENERAL_PDF_GRAMMAR_AI is keyed by section index.
+      function isRealHeading(title) { return !!title && /[가-힣]/.test(title) && !/\S\s{3,}\S/.test(title); }
+      function stripNum(t) { return String(t || "").replace(/^\s*\d+[.)]?\s+/, "").trim(); }
+      function headingText(sec, ai) { return stripNum((ai && ai.t) || sectionTitleText(sec.title, sec.lines)); }
+      // Title of a record when none of its sections has a heading: its first Korean line (Korean view) or its
+      // first Vietnamese sentence.
+      // Pages of the grammar-notes book have no numbered headings; each explanation starts at the margin with
+      // the Vietnamese expression it explains ("mấy 와 vài는 ...", "동사 + ngay의 형태로 ...", "mới nói : ...").
+      // Those expressions (Vietnamese, the same in every language) make the item's title.
+      var PLACEHOLDER_WORDS = ["동사", "명사", "형용사", "주어", "서술어", "대상", "수량", "장소", "시간", "숫자", "단위"];
+      function explainedTerm(line) {
+        if (!/[가-힣]/.test(line)) return "";
+        // "thì:’~(이)라면…", "tự + động từ: 동사에서…": a Vietnamese term right before a colon, at any indent
+        // (some pages are indented as a whole).
+        var colonForm = line.trim().replace(/^\d+[.)]?\s+/, "").match(/^([^가-힣:：‘’'"]{1,40}?)\s*[:：]/);
+        if (colonForm && /[A-Za-zÀ-ỹ]/.test(colonForm[1]) && !/^(?:Ví dụ|Chú ý)$/i.test(colonForm[1].trim())) return colonForm[1].trim();
+        if (/^\s{2,}/.test(line) || /^\s?(?:-|→|•|Ví dụ)/.test(line)) return "";
+        var out = [];
+        var tokens = line.trim().split(/\s+/);
+        while (tokens.length && /^\d+[.)]?$/.test(tokens[0])) tokens.shift();   // a list number is not the term
+        for (var i = 0; i < tokens.length; i++) {
+          var tok = tokens[i];
+          if (/^[:：]/.test(tok)) break;
+          var colon = tok.search(/[:：]/);
+          if (colon > 0 && /[가-힣]/.test(tok) && !/[가-힣]/.test(tok.slice(0, colon))) {  // "thì:’~(이)라면,"
+            out.push(tok.slice(0, colon));
+            break;
           }
+          var latin = tok.match(/^([^가-힣:：]+?)[:：]?(?=[가-힣]|$)/);
+          if (!/[가-힣]/.test(tok)) { out.push(tok.replace(/[:：]$/, "")); if (/[:：]$/.test(tok)) break; continue; }
+          if (/^(?:와|과|또는)$/.test(tok) || PLACEHOLDER_WORDS.indexOf(tok) >= 0) { out.push(tok); continue; }
+          if (latin && /[A-Za-zÀ-ỹ)]/.test(latin[1])) out.push(latin[1]);   // "vài는" -> "vài"
+          break;
+        }
+        while (out.length && /^(?:와|과|또는|\+)$/.test(out[out.length - 1])) out.pop();
+        var term = out.join(" ").trim();
+        // A term ending in a lone full stop is the start of a sentence ("tuổi."), not an expression.
+        if (/[^.]\.$/.test(term) || /^[+‘']/.test(term)) return "";   // also "+ dù lúc đó…" example lines
+        return /[A-Za-zÀ-ỹ]/.test(term) && term.length <= 40 ? term : "";
+      }
+      function fallbackTitle(sections) {
+        var lines = [];
+        sections.forEach(function (sec) { lines = lines.concat(sec.lines); });
+        var terms = [];
+        lines.forEach(function (l) {
+          var t = explainedTerm(l);
+          if (t && !koView) {
+            // Outside Korean, the Korean glue of a term is written neutrally ("mấy 와 vài" -> "mấy, vài",
+            // "동사 + ngay" -> "~ + ngay"); a term still holding Korean is not used.
+            t = t.replace(/\s*(?:와|과)\s+/g, ", ").replace(/\s*또는\s*/g, " / ")
+              .replace(new RegExp("(^|[\\s(+])(?:" + PLACEHOLDER_WORDS.join("|") + ")(?=$|[\\s)+])", "g"), "$1~");
+            if (/[가-힣]/.test(t)) t = "";
+          }
+          if (t && terms.indexOf(t) < 0) terms.push(t);
         });
-        var rowFirstEl = gramRoot.children[firstChildOfRow];
-        if (rowFirstEl) rowFirstEl.dataset.anchor = "pdf-grammar-" + (rowIndex + 1);
+        if (terms.length) return terms.slice(0, 4).join(" · ") + (terms.length > 4 ? " …" : "");
+        var text = koView ? (lines.filter(function (l) { return /[가-힣]/.test(l); })[0] || "") : (viTextsOf(lines)[0] || "");
+        text = String(text).replace(/\s{2,}/g, " ").trim() || TU("문법");
+        return text.length > 48 ? text.slice(0, 47) + "…" : text;
+      }
+
+      // Every grammar record (one source page) is one folded item, numbered 1-209 in order. Folded, only
+      // "N. title" shows; the body holds [전체 듣기] for the whole item and each subsection under its heading.
+      gramRows.forEach(function (row, rowIndex) {
+        var cleanedLines = cleanPdfLines(row.original, GRAM_JOINS[row.id]);
+        if (!cleanedLines.length) return;
+        var hasPageHeader = /HƯỚNG DẪN CÁCH DÙNG/.test(row.original || "");
+        var sections = parseSubsections(cleanedLines).map(function (sec, si) {
+          var ai = sectionAi(row.id + "#" + si, sec.lines);
+          // The page header ("문법해설 HƯỚNG DẪN CÁCH DÙNG") is page chrome, dropped from the Korean lines above; its
+          // translation opens the first translated section of those pages ("Grammar notes"), so it goes too.
+          if (ai && si === 0 && hasPageHeader) {
+            var trLines = String(ai.b).split("\n");
+            if (trLines.length > 1 && !/⟦/.test(trLines[0]) && trLines[0].trim().length < 40) ai = { t: ai.t, b: trLines.slice(1).join("\n") };
+          }
+          var heading = isRealHeading(sec.title);
+          // A table row mistaken for a heading goes back into the content as its first line.
+          var lines = (!heading && sec.title) ? [sec.title].concat(sec.lines) : sec.lines;
+          return { ai: ai, lines: lines, title: heading ? headingText(sec, ai) : null };
+        });
+        var titles = sections.filter(function (s) { return s.title; }).map(function (s) { return s.title; });
+        var itemTitle = (rowIndex + 1) + ". " + (titles.length ? titles.join(" · ") : fallbackTitle(sections));
+
+        var details = document.createElement("details");
+        details.className = "pdf-subheading-group pdf-grammar-item";
+        details.open = false;
+        if (row.id) details.dataset.pdfId = row.id;
+        details.dataset.anchor = "pdf-grammar-" + (rowIndex + 1);
+        var summary = document.createElement("summary");
+        summary.className = "pdf-subheading-summary";
+        var titleSpan = document.createElement("span");
+        titleSpan.textContent = itemTitle;
+        var chevSpan = document.createElement("span");
+        chevSpan.className = "chev";
+        chevSpan.textContent = "▾";
+        summary.appendChild(titleSpan);
+        summary.appendChild(chevSpan);
+        details.appendChild(summary);
+
+        var body = document.createElement("div");
+        body.className = "pdf-subheading-body";
+        // [전체 듣기] reads this item's content in order -- not its number or title, which are UI labels.
+        var entries = [];
+        sections.forEach(function (sec) {
+          entries = entries.concat(sectionReadEntries(sec.lines, sec.ai));
+        });
+        var readAll = readAllButtonHtml(entries);
+        if (readAll) {
+          var bar = document.createElement("div");
+          bar.className = "pdf-readall";
+          bar.style.cssText = "display:flex;justify-content:flex-end;margin-bottom:6px;";
+          bar.innerHTML = readAll;
+          body.appendChild(bar);
+        }
+        sections.forEach(function (sec) {
+          if (sec.title && sections.length > 1) {
+            var h = document.createElement("h4");
+            h.className = "pdf-grammar-subhead";
+            h.textContent = sec.title;
+            body.appendChild(h);
+          }
+          renderSectionBody(body, sec.lines, sec.ai);
+        });
+        details.appendChild(body);
+        gramRoot.appendChild(details);
       });
     }
   }
@@ -5481,6 +5581,7 @@
         var card = target.closest ? target.closest(".group-card") : null;
         if (card) card.dataset.open = "true";
         if (target.classList.contains("group-card")) target.dataset.open = "true";
+        if (target.tagName === "DETAILS") target.open = true;  // a folded [일반 문법] item
         target.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 0);
     }

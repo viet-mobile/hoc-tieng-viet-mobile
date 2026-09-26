@@ -591,6 +591,21 @@ def filter_general_curriculum(welcome, phases, weeks):
         filtered_weeks.append(kept_week)
     return filtered_welcome, filtered_phases, filtered_weeks
 
+_GRAMMAR_JOINS = None
+
+
+def general_pdf_grammar_joins(pdf_learning):
+    """Same result for every profile (computed once per build run)."""
+    global _GRAMMAR_JOINS
+    if _GRAMMAR_JOINS is None:
+        from general_pdf_layout import build_grammar_joins
+        korean = [r["ko"] for pub in (enjoy_life_forever_data, love_people_full_data, watchtower_full_data)
+                  for u in pub["units"] for r in u["rows"] if r.get("ko")]
+        korean += [r["translations"].get("ko", "") for r in pdf_learning.get("sentences") or []]
+        _GRAMMAR_JOINS = build_grammar_joins(pdf_learning.get("grammar") or [], korean)
+    return _GRAMMAR_JOINS
+
+
 def build_data_js(site):
     # One source of truth for all three profiles: GENERAL is the slim profile (JW publication
     # data excluded/filtered); JW gets everything; JEONJU = JW's full data set + its own event
@@ -788,6 +803,9 @@ def build_data_js(site):
     # Vietnamese inside each text is marked with ⟦ ⟧. Source grammar records stay as extracted.
     with open("general_pdf_grammar_ai_translations.json", encoding="utf-8") as f:
         parts.append(emit("GENERAL_PDF_GRAMMAR_AI", json.load(f)))
+    # Display-only line joins for the grammar pages' wrapped Korean prose (general_pdf_layout.py); the
+    # Korean word statistics come from text without line wraps. The records themselves stay as extracted.
+    parts.append(emit("GENERAL_PDF_GRAMMAR_JOINS", general_pdf_grammar_joins(pdf_learning)))
     parts.append(emit("UNIFIED_WORDS", unified_words))
     parts.append(emit("GRAMMAR_A1_A2_PATTERNS", GRAMMAR_A1_A2_PATTERNS))
     parts.append(emit("GRAMMAR_B1_B2_PATTERNS", GRAMMAR_B1_B2_PATTERNS))
