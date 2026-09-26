@@ -6,6 +6,13 @@
   // T() preserves plain source strings/annotations; Tstrict() excludes unlocalized
   // plain-string meanings from non-Korean review pools.
   var VALID_LANGS = ["vi", "cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko", "pl"];
+  // The language being learned. TARGET_SITE (data block of an engine "target" site, see
+  // site_profiles.SITES / target_content.py) names its record field and TTS locale; the Vietnamese
+  // sites have no TARGET_SITE and keep Vietnamese. Everything that speaks or shows the studied
+  // language reads these instead of assuming "vi".
+  var TARGET = (typeof TARGET_SITE !== "undefined" && TARGET_SITE) ? TARGET_SITE : null;
+  var TARGET_TTS_TAG = TARGET ? TARGET.tts : "vi-VN";
+  var TARGET_VOICE_RE = new RegExp("^" + TARGET_TTS_TAG.split("-")[0] + "(-|_|$)", "i");
   // With no saved preference yet (first visit, or localStorage unavailable), use the
   // device/browser's system language: Korean -> ko, Chinese -> zh, Japanese -> ja, German -> de,
   // French -> fr, Polish -> pl, Czech -> cs, Hungarian -> hu, and English plus every other
@@ -1661,7 +1668,7 @@
       if (!("speechSynthesis" in window)) return;
       var all = window.speechSynthesis.getVoices().filter(function (v) { return !isNoveltyVoice(v); });
       availableViVoices = all.filter(function (v) {
-        return /^vi(-|_|$)/i.test(v.lang);
+        return TARGET_VOICE_RE.test(v.lang);
       });
       var prefix = LANG_BCP47_PREFIX[currentLang] || "en";
       availableLangVoices = all.filter(function (v) {
@@ -2020,8 +2027,15 @@
   // Speaks text ONE time (Vietnamese, current speak-voice) and calls onOnceDone when that single
   // utterance finishes -- the original body of speak() before 베트남어 반복 듣기 횟수 was added;
   // speak() below wraps this in a repeat loop.
+  // Speech options for the studied language: Vietnamese keeps its own text preparation (jw.org
+  // spelling, citations, ...) and north/south voice; a target-engine site uses its target locale
+  // and the voice picked in its own settings (target engine section).
+  function targetSpeechOpts(text) {
+    if (TARGET) return { text: String(text), lang: TARGET_TTS_TAG, rate: 0.95, voice: currentTargetVoice() };
+    return { text: prepareSpeechText(text), lang: "vi-VN", rate: 0.92, voice: currentViVoice() };
+  }
   function speakOnce(text, onOnceDone) {
-    robustSpeak({ text: prepareSpeechText(text), lang: "vi-VN", rate: 0.92, voice: currentViVoice() }, onOnceDone);
+    robustSpeak(targetSpeechOpts(text), onOnceDone);
   }
   // onDone (optional): called once after every repetition finishes, or immediately if speech
   // isn't available at all -- lets callers (복습's auto-advance) chain "speak, then move on"
@@ -2275,7 +2289,7 @@
       if (repsLeft > 1) setTimeout(function () { playReadAllVi(token, entry, repsLeft - 1); }, VI_REPEAT_GAP_MS);
       else setTimeout(function () { playReadAllMeaning(token, entry); }, 300);
     };
-    robustSpeak({ text: prepareSpeechText(entry.vi), lang: "vi-VN", rate: 0.92, voice: currentViVoice() }, advance);
+    robustSpeak(targetSpeechOpts(entry.vi), advance);
   }
 
   // Reads entry.mean (the word's meaning / the sentence's translation, already resolved to the
@@ -2437,6 +2451,10 @@
   // duplicated exactly what's already asked in the 대화 subtab -- so 제공 연설 now just reads
   // this same `state` directly instead (see renderCurrTalks() below), and bindChoiceGroup()
   // further down re-renders the talks pane on every change so it always stays in sync.
+  // A target-language site runs only the target engine (end of this file); none of the Vietnamese
+  // modules below apply to it, and its data block carries none of their constants.
+  if (TARGET) { runTargetEngine(); return; }
+
   var state = { speaker: null, listener_gender: null, rel: null, region: null, ageBracket: null };
 
   // Profile data for 나·봉사짝·장로 형제·파이오니아 자매, shared by both 대화 and 제공 연설 --
@@ -11735,6 +11753,362 @@ function verifyDistribution(units, dist, pins) {
       }
     } catch (e) { /* no-op */ }
   })();
+
+  /* ================= TARGET ENGINE =================
+     Runs instead of the Vietnamese modules on a site whose data block has TARGET_SITE
+     (site_profiles.SITES engine "target"). Three panels, all driven by TARGET_SITE's metadata:
+       [읽기] parallel reader over TARGET_CORPUS (target line + the UI language's line of the same
+              source row -- never another language's line when the UI language has none),
+       [복습] target-centred review (listen / recall / word order where the tokenizer is safe),
+       [설정] target voice + UI voice + the device TTS guide for the target language.
+     Features a site does not have (TARGET_SITE.sourceRequired) are listed as SOURCE REQUIRED. */
+  function currentTargetVoice() {
+    var list = availableViVoices;
+    var key = null;
+    try { key = window.localStorage ? window.localStorage.getItem("tgt-voice-" + TARGET.lang) : null; } catch (e) { /* no-op */ }
+    if (key) {
+      var picked = list.filter(function (v) { return voiceMatchKey(v) === key; })[0];
+      if (picked) return picked;
+    }
+    // Default: a voice of the exact locale (zh-TW for Traditional Chinese, ...); otherwise let the
+    // browser choose by the utterance's lang.
+    return list.filter(function (v) { return String(v.lang).replace("_", "-").toLowerCase() === TARGET_TTS_TAG.toLowerCase(); })[0] || null;
+  }
+
+  function runTargetEngine() {
+    var corpus = (typeof TARGET_CORPUS !== "undefined" && TARGET_CORPUS) || [];
+    var FIELD = TARGET.field;
+    var has = function (f) { return TARGET.features.indexOf(f) >= 0; };
+    var SOURCE_KEY = { elf: "행복한 삶을 영원히", lpd: "사람들을 사랑하고 제자로", wt: "파수대", songs: "노래", neighbor: "이웃 사람과의 대화" };
+    var FEATURE_LABEL = {
+      words: function () { return TU("단어"); }, pronunciation: function () { return TU("발음"); },
+      difference: function () { return TU("차이"); }, grammar: function () { return TU("문법"); },
+      course: function () { return TU("과정"); }, culture: function () { return TU("문화"); },
+      reader: function () { return TX("feat_reader"); }, review: function () { return TU("복습"); }
+    };
+    function TX(key) {
+      var entry = TARGET_UI_TEXT[key] || {};
+      return String(entry[currentLang] || "").replace("{lang}", TARGET.names[currentLang] || "");
+    }
+    function sourceTitle(id) { return TU(SOURCE_KEY[id] || id); }
+    // The UI language's text of a source row, or null. When the UI language IS the studied
+    // language there is nothing to translate (sameLang). Never another language's text.
+    function sameLang() { return currentLang === FIELD; }
+    function trOf(row) { return sameLang() ? null : (row[currentLang] || null); }
+    function whoLabel(who) { return who === "PUBLISHER" ? TU("전도인") : who === "HOUSEHOLDER" ? TU("집주인") : ""; }
+
+    /* ---------- tabs ---------- */
+    var TAB_ORDER = [["sentence", "reader"], ["review", "review"], ["pron", "voice_settings"]];
+    var nav = document.querySelector(".tabbar .tabs");
+    function syncTabLabels() {
+      TAB_ORDER.forEach(function (t) {
+        var btn = document.querySelector('.tab-btn[data-tab="' + t[0] + '"]');
+        if (!btn) return;
+        btn.removeAttribute("data-i18n");
+        btn.textContent = t[0] === "sentence" ? TX("reader") : t[0] === "review" ? TU("복습") : TU("설정");
+      });
+    }
+    TAB_ORDER.forEach(function (t) {
+      var btn = document.querySelector('.tab-btn[data-tab="' + t[0] + '"]');
+      if (!btn) return;
+      // [읽기] stays even without a source: it is where SOURCE REQUIRED is explained.
+      if (t[0] === "review" && !has("review")) { btn.hidden = true; return; }
+      if (nav) nav.appendChild(btn);
+    });
+    syncTabLabels();
+
+    /* ---------- shared pieces ---------- */
+    function speakBtn(text) {
+      return '<button class="speak-btn" data-speak="' + escapeAttr(text) + '" aria-label="' + escapeAttr(TU("발음 듣기")) + '">' + speakIcon() + '</button>';
+    }
+    function meaningBtn(text) {
+      return '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(text) + '" aria-label="' + escapeAttr(TU("발음 듣기")) + '">' + speakIcon() + '</button>';
+    }
+    // One source row: the target line, then (when this UI language reads the target's other
+    // script, e.g. Simplified under Traditional) that line, then the UI language's own line.
+    function rowHtml(row) {
+      var target = row[FIELD];
+      var html = '<div class="talk-line tg-line"><div class="talk-body">';
+      var who = whoLabel(row.who);
+      if (who) html += '<div class="tg-who">' + escapeHtml(who) + '</div>';
+      html += '<div class="talk-vi tg-target" lang="' + escapeAttr(TARGET_TTS_TAG) + '">' + escapeHtml(target) + speakBtn(target) + '</div>';
+      var tr = trOf(row);
+      if (tr) html += '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(tr) + '</span>' + meaningBtn(tr) + '</div>';
+      else if (!sameLang()) html += '<div class="talk-kr tg-missing">' + escapeHtml(TX("no_translation")) + '</div>';
+      return html + '</div></div>';
+    }
+    function headText(unit, lang) {
+      return unit.head.map(function (h) { return h[lang] || ""; }).filter(Boolean).join(" · ");
+    }
+    function sourceRequiredHtml() {
+      var items = TARGET.sourceRequired.filter(function (f) { return FEATURE_LABEL[f]; });
+      if (!items.length) return "";
+      var html = '<div class="p-section tg-required"><h3>' + escapeHtml(TX("source_required")) + '</h3>' +
+        '<p class="p-desc">' + escapeHtml(TX("source_required_body")) + '</p><ul>' +
+        items.map(function (f) { return '<li>' + escapeHtml(FEATURE_LABEL[f]()) + '</li>'; }).join("") + '</ul>';
+      if (TARGET.tokenizer === "none" && has("review")) html += '<p class="p-desc">' + escapeHtml(TX("word_order_off")) + '</p>';
+      return html + '</div>';
+    }
+
+    /* ---------- [읽기] ---------- */
+    var readerPanel = document.getElementById("panel-sentence");
+    var readerState = { source: corpus.length ? corpus[0].id : null, q: "" };
+    try {
+      var savedSource = window.localStorage && window.localStorage.getItem("tgt-reader-source");
+      if (savedSource && corpus.some(function (c) { return c.id === savedSource; })) readerState.source = savedSource;
+    } catch (e) { /* no-op */ }
+    function unitCardHtml(unit, open, rows) {
+      var tHead = headText(unit, FIELD);
+      var trHead = sameLang() ? "" : headText(unit, currentLang);
+      var pairs = [[tHead, trHead]].concat(rows.map(function (r) { return [r[FIELD], trOf(r) || ""]; }));
+      return '<div class="group-card" data-open="' + (open ? "true" : "false") + '" data-unit="' + escapeAttr(unit.id) + '" data-anchor="' + escapeAttr(unit.id) + '">' +
+        '<div class="group-head-row"><button class="group-head"><span class="tg-head"><span class="tg-head-target" lang="' + escapeAttr(TARGET_TTS_TAG) + '">' + escapeHtml(tHead) + '</span>' +
+        (trHead ? '<span class="tg-head-tr">' + escapeHtml(trHead) + '</span>' : '') + '</span>' + currChev() + '</button>' +
+        readAllButtonHtml(pairs) + '</div><div class="group-body"><div class="talk-lines">' +
+        (open ? rows.map(rowHtml).join("") : "") + '</div></div></div>';
+    }
+    function renderReader() {
+      if (!readerPanel) return;
+      if (!corpus.length) { readerPanel.innerHTML = sourceRequiredHtml(); return; }
+      var html = '<div class="subtab-row tg-sources">' + corpus.map(function (src) {
+        return '<button class="subtab-btn" data-tg-source="' + escapeAttr(src.id) + '" aria-selected="' + (src.id === readerState.source ? "true" : "false") + '">' + escapeHtml(sourceTitle(src.id)) + '</button>';
+      }).join("") + '</div>' +
+        '<div class="tg-search"><input type="search" id="tg-search" placeholder="' + escapeAttr(TX("search")) + '" value="' + escapeAttr(readerState.q) + '"></div>';
+      if (sameLang()) html += '<p class="p-desc tg-note">' + escapeHtml(TX("same_lang")) + '</p>';
+      html += '<div id="tg-units"></div>' + sourceRequiredHtml();
+      readerPanel.innerHTML = html;
+      readerPanel.querySelectorAll("[data-tg-source]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          readerState.source = b.dataset.tgSource;
+          try { window.localStorage && window.localStorage.setItem("tgt-reader-source", readerState.source); } catch (e) { /* no-op */ }
+          readerPanel.querySelectorAll("[data-tg-source]").forEach(function (x) { x.setAttribute("aria-selected", x === b ? "true" : "false"); });
+          renderUnits();
+        });
+      });
+      var input = document.getElementById("tg-search");
+      input.addEventListener("input", function () { readerState.q = input.value.trim(); renderUnits(); });
+      renderUnits();
+      assignPastelSlots();
+    }
+    function renderUnits() {
+      var root = document.getElementById("tg-units");
+      if (!root) return;
+      var src = corpus.filter(function (c) { return c.id === readerState.source; })[0] || corpus[0];
+      var q = readerState.q.toLowerCase();
+      var html = "";
+      src.units.forEach(function (unit, i) {
+        if (!q) { html += unitCardHtml(unit, i === 0, unit.rows); return; }
+        var rows = unit.rows.filter(function (r) {
+          return String(r[FIELD]).toLowerCase().indexOf(q) >= 0 || String(trOf(r) || "").toLowerCase().indexOf(q) >= 0;
+        });
+        if (rows.length) html += unitCardHtml(unit, true, rows);
+      });
+      root.innerHTML = html || '<div class="empty-state">' + escapeHtml(TX("no_results")) + '</div>';
+      root.querySelectorAll(".group-card").forEach(function (card) {
+        card.querySelector(".group-head").addEventListener("click", function () {
+          var open = card.dataset.open !== "true";
+          card.dataset.open = open ? "true" : "false";
+          var lines = card.querySelector(".talk-lines");
+          if (open && !lines.childElementCount) {
+            var unit = src.units.filter(function (u) { return u.id === card.dataset.unit; })[0];
+            lines.innerHTML = unit.rows.map(rowHtml).join("");
+            bindCurrSpeakBtns(lines);
+          }
+        });
+      });
+      bindCurrSpeakBtns(root);
+    }
+
+    /* ---------- [복습] ---------- */
+    var reviewPanel = document.getElementById("panel-review");
+    var rv = { source: "all", unit: "all", mode: "listen", pool: [], idx: 0, revealed: false, built: [] };
+    function tokens(text) {
+      // "whitespace" (en/id) and "eojeol" (ko): space-separated units, punctuation kept on its token.
+      // A leading paragraph/question number ("1.") is not part of the sentence to order.
+      return String(text).trim().replace(/^\d+\.\s+/, "").split(/\s+/).filter(Boolean);
+    }
+    function usableRow(r) {
+      var t = String(r[FIELD] || "").trim();
+      if (t.length < 4 || !/[\p{L}]/u.test(t)) return false;
+      if (rv.mode === "recall" && !trOf(r)) return false;
+      if (rv.mode === "order") { var n = tokens(t).length; return n >= 3 && n <= 12; }
+      return t.length <= 220;
+    }
+    function buildPool() {
+      var pool = [];
+      corpus.forEach(function (src) {
+        if (rv.source !== "all" && src.id !== rv.source) return;
+        src.units.forEach(function (u) {
+          if (rv.unit !== "all" && u.id !== rv.unit) return;
+          u.rows.forEach(function (r) { if (usableRow(r)) pool.push(r); });
+        });
+      });
+      rv.pool = pool;
+      rv.idx = 0;
+      rv.revealed = false;
+      rv.built = [];
+    }
+    function modes() {
+      var list = [["listen", TX("mode_listen")]];
+      if (!sameLang()) list.push(["recall", TX("mode_recall")]);
+      if (has("word_order")) list.push(["order", TU("어순 배열")]);
+      return list;
+    }
+    function renderReview() {
+      if (!reviewPanel || !has("review")) return;
+      if (!modes().some(function (m) { return m[0] === rv.mode; })) rv.mode = "listen";
+      var srcOpts = '<option value="all">' + escapeHtml(TX("all")) + '</option>' + corpus.map(function (s) {
+        return '<option value="' + escapeAttr(s.id) + '"' + (rv.source === s.id ? " selected" : "") + '>' + escapeHtml(sourceTitle(s.id)) + '</option>';
+      }).join("");
+      var unitOpts = '<option value="all">' + escapeHtml(TX("all")) + '</option>';
+      corpus.forEach(function (s) {
+        if (rv.source !== s.id) return;
+        s.units.forEach(function (u) {
+          unitOpts += '<option value="' + escapeAttr(u.id) + '"' + (rv.unit === u.id ? " selected" : "") + '>' + escapeHtml(headText(u, FIELD).slice(0, 60)) + '</option>';
+        });
+      });
+      var html = '<div class="subtab-row tg-modes">' + modes().map(function (m) {
+        return '<button class="subtab-btn" data-tg-mode="' + m[0] + '" aria-selected="' + (m[0] === rv.mode ? "true" : "false") + '">' + escapeHtml(m[1]) + '</button>';
+      }).join("") + '</div>' +
+        '<div class="tg-scope"><select id="tg-rv-source" class="review-dd">' + srcOpts + '</select>' +
+        (rv.source !== "all" ? '<select id="tg-rv-unit" class="review-dd">' + unitOpts + '</select>' : '') + '</div>';
+      if (!has("word_order")) html += '<p class="p-desc tg-note">' + escapeHtml(TX("word_order_off")) + '</p>';
+      html += '<div id="tg-card"></div>';
+      reviewPanel.innerHTML = html;
+      reviewPanel.querySelectorAll("[data-tg-mode]").forEach(function (b) {
+        b.addEventListener("click", function () { rv.mode = b.dataset.tgMode; buildPool(); renderReview(); });
+      });
+      document.getElementById("tg-rv-source").addEventListener("change", function (e) { rv.source = e.target.value; rv.unit = "all"; buildPool(); renderReview(); });
+      var unitSel = document.getElementById("tg-rv-unit");
+      if (unitSel) unitSel.addEventListener("change", function (e) { rv.unit = e.target.value; buildPool(); renderCard(); });
+      if (!rv.pool.length) buildPool();
+      renderCard();
+      assignPastelSlots();
+    }
+    function renderCard() {
+      var root = document.getElementById("tg-card");
+      if (!root) return;
+      if (!rv.pool.length) { root.innerHTML = '<div class="empty-state">' + escapeHtml(TX("no_results")) + '</div>'; return; }
+      var row = rv.pool[rv.idx];
+      var target = row[FIELD], tr = trOf(row);
+      var html = '<div class="tg-card">';
+      html += '<div class="tg-count">' + (rv.idx + 1) + ' / ' + rv.pool.length + '</div>';
+      if (rv.mode === "listen") {
+        html += '<div class="tg-prompt talk-vi" lang="' + escapeAttr(TARGET_TTS_TAG) + '">' + escapeHtml(target) + speakBtn(target) + '</div>';
+        if (rv.revealed) html += tr ? '<div class="tg-answer talk-kr">' + escapeHtml(tr) + meaningBtn(tr) + '</div>'
+          : '<div class="tg-answer talk-kr tg-missing">' + escapeHtml(sameLang() ? TX("same_lang") : TX("no_translation")) + '</div>';
+        else html += '<button class="study-nav-btn wide" id="tg-reveal">' + escapeHtml(TX("reveal")) + '</button>';
+      } else if (rv.mode === "recall") {
+        html += '<div class="tg-prompt talk-kr">' + escapeHtml(tr) + meaningBtn(tr) + '</div>';
+        if (rv.revealed) html += '<div class="tg-answer talk-vi" lang="' + escapeAttr(TARGET_TTS_TAG) + '">' + escapeHtml(target) + speakBtn(target) + '</div>';
+        else html += '<button class="study-nav-btn wide" id="tg-reveal">' + escapeHtml(TX("reveal_target")) + '</button>';
+      } else {
+        var toks = tokens(target);
+        if (!rv.shuffled || rv.shuffledFor !== rv.idx) {
+          rv.shuffled = toks.map(function (t, i) { return { t: t, i: i }; }).sort(function () { return Math.random() - 0.5; });
+          rv.shuffledFor = rv.idx;
+          rv.built = [];
+        }
+        if (tr) html += '<div class="tg-prompt talk-kr">' + escapeHtml(tr) + '</div>';
+        html += '<div class="tg-built talk-vi" lang="' + escapeAttr(TARGET_TTS_TAG) + '">' + rv.built.map(function (k) { return escapeHtml(rv.shuffled[k].t); }).join(" ") + '&nbsp;</div>';
+        html += '<div class="tg-chips">' + rv.shuffled.map(function (c, k) {
+          return '<button class="tg-chip" data-k="' + k + '"' + (rv.built.indexOf(k) >= 0 ? " disabled" : "") + '>' + escapeHtml(c.t) + '</button>';
+        }).join("") + '</div>';
+        if (rv.built.length === toks.length) {
+          var ok = rv.built.map(function (k) { return rv.shuffled[k].t; }).join(" ") === toks.join(" ");
+          html += '<div class="tg-result ' + (ok ? "ok" : "bad") + '">' + escapeHtml(ok ? TX("correct") : TX("wrong")) + (ok ? speakBtn(target) : "") + '</div>';
+        }
+      }
+      html += '<div class="tg-nav"><button class="study-nav-btn" id="tg-prev">' + escapeHtml(TU("이전")) + '</button>' +
+        '<button class="study-nav-btn" id="tg-shuffle">' + escapeHtml(TU("섞기")) + '</button>' +
+        '<button class="study-nav-btn" id="tg-next">' + escapeHtml(TU("다음")) + '</button></div></div>';
+      root.innerHTML = html;
+      bindCurrSpeakBtns(root);
+      var reveal = document.getElementById("tg-reveal");
+      if (reveal) reveal.addEventListener("click", function () { rv.revealed = true; renderCard(); });
+      root.querySelectorAll(".tg-chip").forEach(function (b) {
+        b.addEventListener("click", function () { rv.built.push(Number(b.dataset.k)); renderCard(); });
+      });
+      var built = root.querySelector(".tg-built");
+      if (built) built.addEventListener("click", function () { if (rv.built.length) { rv.built.pop(); renderCard(); } });
+      function go(d) { rv.idx = (rv.idx + d + rv.pool.length) % rv.pool.length; rv.revealed = false; rv.built = []; renderCard(); }
+      document.getElementById("tg-prev").addEventListener("click", function () { go(-1); });
+      document.getElementById("tg-next").addEventListener("click", function () { go(1); });
+      document.getElementById("tg-shuffle").addEventListener("click", function () {
+        for (var i = rv.pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = rv.pool[i]; rv.pool[i] = rv.pool[j]; rv.pool[j] = t; }
+        rv.idx = 0; rv.revealed = false; rv.built = []; renderCard();
+      });
+    }
+
+    /* ---------- [설정] ---------- */
+    var settingsPanel = document.getElementById("panel-pron");
+    function voiceListHtml(name, voices, selectedKey, autoLabel) {
+      var html = '<div class="voice-grid"><label class="voice-opt"><input type="radio" name="' + name + '" value=""' + (!selectedKey ? " checked" : "") + '>' +
+        '<span class="vname">' + escapeHtml(autoLabel) + '</span></label>';
+      voices.forEach(function (v) {
+        var key = voiceMatchKey(v);
+        html += '<label class="voice-opt"><input type="radio" name="' + name + '" value="' + escapeAttr(key) + '"' + (selectedKey === key ? " checked" : "") + '>' +
+          '<span class="vname">' + escapeHtml(v.name) + '</span><span class="vmeta">' + escapeHtml(v.lang) + '</span></label>';
+      });
+      return html + '</div>';
+    }
+    function ttsGuideSectionHtml() {
+      if (typeof TARGET_TTS_GUIDE === "undefined" || !TARGET_TTS_GUIDE) return "";
+      var guide = TARGET_TTS_GUIDE.langs[currentLang];
+      if (!guide) return "";
+      var joiner = (currentLang === "ja" || currentLang === "zh" || currentLang === "zh_cn") ? "、" : ", ";
+      var langsHtml = guide.names.map(function (n) { return "<b>" + escapeHtml(n) + "</b>"; }).join(joiner);
+      var html = '<div class="p-section"><h3>' + escapeHtml(guide.title) + '</h3>';
+      TARGET_TTS_GUIDE.order.forEach(function (id) {
+        var card = guide.cards[id];
+        if (!card) return;
+        html += '<div class="group-card" data-open="false" data-tts="' + id + '"><button class="group-head"><span class="syl">' + escapeHtml(card.title) + '</span>' + currChev() + '</button>' +
+          '<div class="group-body tts-guide-section">' + (card.lead ? '<p class="p-desc">' + escapeHtml(card.lead) + '</p>' : '') +
+          '<ol>' + card.steps.map(function (st) { return '<li>' + escapeHtml(st).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace("{langs}", langsHtml) + '</li>'; }).join("") + '</ol>' +
+          (card.note ? '<div class="tts-tip">' + escapeHtml(card.note) + '</div>' : '') + '</div></div>';
+      });
+      return html + '</div>';
+    }
+    function renderSettings() {
+      if (!settingsPanel) return;
+      var tKey = null;
+      try { tKey = window.localStorage ? window.localStorage.getItem("tgt-voice-" + TARGET.lang) : null; } catch (e) { /* no-op */ }
+      var html = '<div class="p-section"><h3>' + escapeHtml(TX("target_voice")) + '</h3>';
+      html += availableViVoices.length ? voiceListHtml("tg-voice-target", availableViVoices, tKey, TX("auto_voice"))
+        : '<p class="p-desc">' + escapeHtml(TX("no_voice")) + '</p>';
+      if (!sameLang()) {
+        html += '<h4>' + escapeHtml(TU("뜻·해석 읽기 목소리")) + '</h4>' +
+          voiceListHtml("tg-voice-ui", availableLangVoices, selectedLangVoiceURI[currentLang] || null, TX("auto_voice"));
+      }
+      html += '</div>' + ttsGuideSectionHtml();
+      settingsPanel.innerHTML = html;
+      settingsPanel.querySelectorAll('input[name="tg-voice-target"]').forEach(function (r) {
+        r.addEventListener("change", function () {
+          try { window.localStorage && window.localStorage.setItem("tgt-voice-" + TARGET.lang, r.value); } catch (e) { /* no-op */ }
+        });
+      });
+      settingsPanel.querySelectorAll('input[name="tg-voice-ui"]').forEach(function (r) {
+        r.addEventListener("change", function () { selectedLangVoiceURI[currentLang] = r.value || null; });
+      });
+      bindCurrGroupCards(settingsPanel);
+    }
+
+    /* ---------- boot ---------- */
+    function renderAll() { syncTabLabels(); renderReader(); renderReview(); renderSettings(); }
+    renderAll();
+    onLangChange(function () { buildPool(); renderAll(); });
+    if ("speechSynthesis" in window && window.speechSynthesis.addEventListener) {
+      window.speechSynthesis.addEventListener("voiceschanged", renderSettings);
+    }
+    [800, 2000, 4000].forEach(function (ms) { setTimeout(renderSettings, ms); });
+    var startTab = "sentence";
+    try {
+      var saved = SAVED_PLACE_RAW ? JSON.parse(SAVED_PLACE_RAW) : null;
+      if (saved && panels[saved.tab] && TAB_ORDER.some(function (t) { return t[0] === saved.tab; }) &&
+          !(saved.tab === "review" && !has("review"))) startTab = saved.tab;
+    } catch (e) { /* no-op */ }
+    activateTab(startTab, false);
+  }
 
 /* BEGIN REGIONAL-HYDRATION (removed from GENERAL/JW builds by assemble_app.py) */
   /* ================= REGIONAL SCHEDULE & CURRICULUM SWR HYDRATION =================

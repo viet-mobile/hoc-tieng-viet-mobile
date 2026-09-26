@@ -154,3 +154,15 @@ def strip_site_html(html_text, removals):
         counts["review_categories"] = n
 
     return text, counts
+
+
+def empty_elements(html_text, matchers):
+    """Keeps each element matching (tag, attr, value) but drops everything inside it (its opening
+    and closing tags stay, so ids/classes the runtime mounts into still exist). Returns
+    (new_text, count)."""
+    spans = sorted(_find_spans(html_text, matchers), reverse=True)
+    for start, end in spans:
+        open_end = html_text.index(">", start) + 1
+        close_start = html_text.rindex("</", start, end)
+        html_text = html_text[:open_end] + html_text[close_start:]
+    return html_text, len(spans)

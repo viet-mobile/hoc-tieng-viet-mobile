@@ -5,8 +5,8 @@ import re
 from pathlib import Path
 import shutil
 
-from site_html import strip_site_html
-from site_profiles import SITE_TITLES, NON_JW_HTML_REMOVALS
+from site_html import strip_site_html, remove_elements, empty_elements
+from site_profiles import SITE_TITLES, NON_JW_HTML_REMOVALS, SITES, SITE_IDS, TARGET_ENGINE_HTML, data_block_name
 
 
 def apply_general_label_overrides(html_text):
@@ -116,7 +116,8 @@ def build_site_identity_prelude(site):
 # ~27 MiB, so each profile's own data block is published as separate classic scripts, each at most this size.
 DATA_CHUNK_LIMIT = 20 * 1024 * 1024
 DATA_PLACEHOLDER = "__DATA_SCRIPTS__"
-PROFILE_SUBDIRS = ("jw", "jeonju", "ulsan")
+# Every site other than GENERAL publishes into its own directory under dist/ (site_profiles.SITES).
+PROFILE_SUBDIRS = tuple(SITES[s]["output_dir"][len("dist/"):] for s in SITE_IDS if SITES[s]["output_dir"] != "dist")
 
 
 def split_data_js(data_js, limit=DATA_CHUNK_LIMIT):
@@ -165,11 +166,11 @@ def strip_marked_block(text, name):
 
 def assemble_site(site):
     tpl = open("template.html", encoding="utf-8").read()
-    data_js_path = "data_block.js" if site == "jw" else f"data_block.{site}.js"
-    data_js = open(data_js_path, encoding="utf-8").read()
+    meta = SITES[site]
+    data_js = open(data_block_name(site), encoding="utf-8").read()
     app_js = open("app_logic.js", encoding="utf-8").read()
 
-    if site not in ("jeonju", "ulsan"):
+    if meta["family"] != "regional":
         # The regional public site's live-data client (its only network call) exists only in regional builds.
         app_js = strip_marked_block(app_js, "REGIONAL-HYDRATION")
 
@@ -182,23 +183,29 @@ def assemble_site(site):
     # GENERAL is the only slim profile -- JW and JEONJU both keep the full JW-profile HTML
     # (JEONJU = JW's complete feature set + its own event layer, not general + event).
     removal_counts = {}
-    if site == "general":
+    if meta["engine"] == "vietnamese" and meta["family"] == "general":
         out, removal_counts = strip_site_html(out, NON_JW_HTML_REMOVALS)
         out = apply_general_label_overrides(out)
+    elif meta["engine"] == "target":
+        # The target engine renders into the kept panels; none of the Vietnamese app's markup ships.
+        out, removal_counts = strip_site_html(out, {"tabs": TARGET_ENGINE_HTML["tabs"]})
+        out, removal_counts["emptied_panels"] = empty_elements(
+            out, [("section", "id", "panel-" + p) for p in TARGET_ENGINE_HTML["empty_panels"]])
+        out, removal_counts["removed"] = remove_elements(out, TARGET_ENGINE_HTML["remove"])
 
     out = apply_site_identity(out, site)
 
     # Local single-file copy (not deployed) keeps the data inline.
-    out_html_name = "app.html" if site == "jw" else f"app.{site}.html"
+    out_html_name = "app.html" if site == "jw" else f"app.{site}.html"  # local only, git-ignored
     open(out_html_name, "w", encoding="utf-8").write(out.replace(DATA_PLACEHOLDER, "<script>\n" + data_js + "\n</script>", 1))
 
     # dist/ layout follows DOMAIN_MAP's meaning, not build-CLI legacy defaults: GENERAL is
     # hoc.tieng.viet.mobile's own content (bare dist/), JW and JEONJU are the two subdomains
     # (dist/jw/, dist/jeonju/). Source/data are never duplicated per profile -- only this
     # deployment-artifact directory differs; see site_profiles.DOMAIN_MAP.
-    dist_dir = Path("dist") if site == "general" else Path("dist") / site
+    dist_dir = Path(meta["output_dir"])
     dist_dir.mkdir(parents=True, exist_ok=True)
-    if site == "general":
+    if dist_dir == Path("dist"):
         # GENERAL's Pages output is dist/ itself: it must not also publish the other profiles' artifacts.
         for sub in PROFILE_SUBDIRS:
             try:
@@ -216,7 +223,7 @@ def assemble_site(site):
     # Physical build isolation: _worker.js is generated ONLY for regional sites (jeonju, ulsan).
     # general and jw are 100% static sites with 0 admin UI bytes, 0 API routes, and NO _worker.js.
     worker_path = dist_dir / "_worker.js"
-    if site in ("jeonju", "ulsan"):
+    if meta["family"] == "regional":
         from regional_admin.bundle_worker import bundle_regional_worker
         worker_code = bundle_regional_worker(site)
         with open(worker_path, "w", encoding="utf-8", newline="\n") as fh:
@@ -239,18 +246,22 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--product", choices=list(PRODUCTS.keys()), default="vietnamese",
-                         help="Learning-content language/product (only 'vietnamese' is implemented).")
-    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju", "ulsan", "all"], default="general",
-                         help="Content profile to assemble: general | jw | jeonju | ulsan | all (default: general, which is "
-                              "what the GENERAL Pages project deploys from dist/). --site is kept "
-                              "as an alias for --profile for backward compatibility.")
+                         help="Deprecated: the learning language comes from site_profiles.SITES; kept for old commands.")
+    parser.add_argument("--site", "--profile", dest="site", choices=SITE_IDS + ["all", "all-vietnamese"], default="general",
+                         help="Site to assemble (site_profiles.SITES), 'all-vietnamese' (general, jw, jeonju, ulsan) or "
+                              "'all' (default: general, which is what the GENERAL Pages project deploys from dist/). "
+                              "--site is kept as an alias for --profile for backward compatibility.")
     args = parser.parse_args()
     if args.product != "vietnamese":
-        raise SystemExit(f"--product {args.product!r} is architecture-ready only; no data/content "
-                          f"exists for it in this repo (see site_profiles.PRODUCTS).")
+        raise SystemExit(f"--product {args.product!r}: choose a site with --profile instead (site_profiles.SITES).")
 
-    # "all" builds general first (it clears dist/<profile>/), then each profile into its own subdirectory.
-    sites = ["general", "jw", "jeonju", "ulsan"] if args.site == "all" else [args.site]
+    # "all" builds general first (it clears the other sites' dist/ subdirectories), then each site into its own.
+    if args.site == "all":
+        sites = SITE_IDS
+    elif args.site == "all-vietnamese":
+        sites = [s for s in SITE_IDS if SITES[s]["engine"] == "vietnamese"]
+    else:
+        sites = [args.site]
     for s in sites:
         assemble_site(s)
 

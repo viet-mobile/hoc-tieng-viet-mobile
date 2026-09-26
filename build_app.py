@@ -837,26 +837,61 @@ def build_data_js(site):
 
     return data_js
 
+def build_target_data_js(site):
+    """Data block of a target-language site (site_profiles.SITES[site]["engine"] == "target"): only
+    the target engine's constants. None of the Vietnamese app's constants are shipped; the runtime
+    never reaches the Vietnamese modules on these sites (see app_logic.js TARGET ENGINE)."""
+    from target_content import (build_target_corpus, build_target_site, build_target_tts_guide,
+                                TARGET_UI_TEXT, target_ui_text_check, js)
+    target_ui_text_check()
+    songs_js = open("songs_data.js", encoding="utf-8").read()
+    marker = "const SONGS_DATA = "
+    songs, _ = json.JSONDecoder().raw_decode(songs_js[songs_js.index(marker) + len(marker):])
+    sources = {
+        "elf": enjoy_life_forever_data,
+        "lpd": love_people_full_data,
+        "wt": watchtower_full_data,
+        "songs": songs,
+        "neighbor": NEIGHBOR_CONVERSATIONS,
+    }
+    corpus = build_target_corpus(site, sources)
+    parts = [
+        "\n",
+        "const TARGET_SITE = %s;\n" % js(build_target_site(site, corpus)),
+        "const TARGET_UI_TEXT = %s;\n" % js(TARGET_UI_TEXT),
+        "const TARGET_TTS_GUIDE = %s;\n" % js(build_target_tts_guide(site, TTS_GUIDE, TTS_GUIDE_ORDER)),
+    ]
+    # One declaration per content source keeps every data chunk well under the per-file limit.
+    for src in corpus:
+        parts.append("const TARGET_CORPUS_%s = %s;\n" % (src["id"].upper(), js(src)))
+    parts.append("const TARGET_CORPUS = [%s];\n" % ", ".join("TARGET_CORPUS_" + src["id"].upper() for src in corpus))
+    return "".join(parts)
+
+
 if __name__ == "__main__":
-    from site_profiles import PRODUCTS
+    from site_profiles import PRODUCTS, SITES, SITE_IDS, data_block_name
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--product", choices=list(PRODUCTS.keys()), default="vietnamese",
-                         help="Learning-content language/product (only 'vietnamese' is implemented; "
-                              "see site_profiles.PRODUCTS for architecture-ready placeholders).")
-    parser.add_argument("--site", "--profile", dest="site", choices=["jw", "general", "jeonju", "ulsan", "all"], default="general",
-                         help="Content profile to build: general | jw | jeonju | ulsan | all. "
-                              "--site is kept as an alias for --profile for backward compatibility; "
-                              "default general (the GENERAL Pages project's build); use --profile all locally.")
+                         help="Deprecated: the learning language now comes from each site's target_language "
+                              "(site_profiles.SITES); kept so existing build commands keep working.")
+    parser.add_argument("--site", "--profile", dest="site", choices=SITE_IDS + ["all", "all-vietnamese"], default="general",
+                         help="Site to build (site_profiles.SITES), 'all-vietnamese' (general, jw, jeonju, ulsan) or "
+                              "'all' (every site). --site is kept as an alias for --profile; default general "
+                              "(the GENERAL Pages project's build).")
     args = parser.parse_args()
 
     if args.product != "vietnamese":
-        raise SystemExit(f"--product {args.product!r} is architecture-ready only; no data/content "
-                          f"exists for it in this repo (see site_profiles.PRODUCTS).")
+        raise SystemExit(f"--product {args.product!r}: choose a site with --profile instead (site_profiles.SITES).")
 
-    sites = ["general", "jw", "jeonju", "ulsan"] if args.site == "all" else [args.site]
+    if args.site == "all":
+        sites = SITE_IDS
+    elif args.site == "all-vietnamese":
+        sites = [s for s in SITE_IDS if SITES[s]["engine"] == "vietnamese"]
+    else:
+        sites = [args.site]
     for s in sites:
-        data_js = build_data_js(s)
-        out_name = "data_block.js" if s == "jw" else f"data_block.{s}.js"
+        data_js = build_data_js(s) if SITES[s]["engine"] == "vietnamese" else build_target_data_js(s)
+        out_name = data_block_name(s)
         open(out_name, "w", encoding="utf-8").write(data_js)
-        print(f"[{args.product}/{s}] data block bytes:", len(data_js), "->", out_name)
+        print(f"[{SITES[s]['target_language']}/{s}] data block bytes:", len(data_js), "->", out_name)

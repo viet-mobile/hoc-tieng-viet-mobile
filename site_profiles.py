@@ -364,3 +364,177 @@ DOMAIN_MAP = {
     # "bahasa.indonesia.viet.mobile": {"product": "indonesian", "profile": "general"},
     # "jw.bahasa.indonesia.viet.mobile": {"product": "indonesian", "profile": "jw"},
 }
+
+
+# ============================================================================================
+# SITE FAMILY x TARGET LANGUAGE x UI LANGUAGE
+#
+# Every deployable site is one SITES entry: a family (general | jw | regional), the language being
+# learned (target_language + target_script), its domain and dist/ output directory, the features it
+# ships and the content sources those features may read. The 12 UI languages are orthogonal to
+# this: every site runs in all of them. Nothing in the build or the runtime branches on a site id;
+# they read these fields.
+#
+#   engine "vietnamese": the existing Vietnamese learning app (all of its tabs and data). The four
+#                        original profile ids are unchanged.
+#   engine "target":     the target-language engine (app_logic.js TARGET ENGINE section): a
+#                        parallel reader, a target-centred review and target/UI voice settings,
+#                        built only from content sources that really exist in the target language.
+# ============================================================================================
+
+# The 12 UI languages, in the canonical order (never re-ordered).
+UI_LANGS = ["vi", "cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko", "pl"]
+
+# Per target language: which record field holds each script, the TTS locale per script, and how
+# text may be split into words. tokenizer "whitespace" = words are space-separated (safe for
+# word-order exercises); "eojeol" = Korean space-separated eojeol units (safe at eojeol level, no
+# morpheme analysis); "none" = no safe word boundary without a dictionary segmenter, so word-level
+# features (word order) are not shipped.
+TARGET_LANGUAGES = {
+    "vi": {"scripts": {"Latn": {"field": "vi", "tts": "vi-VN"}}, "primary_script": "Latn",
+           "tokenizer": "whitespace"},
+    "en": {"scripts": {"Latn": {"field": "en", "tts": "en-US"}}, "primary_script": "Latn",
+           "tokenizer": "whitespace"},
+    "id": {"scripts": {"Latn": {"field": "id", "tts": "id-ID"}}, "primary_script": "Latn",
+           "tokenizer": "whitespace"},
+    "ko": {"scripts": {"Kore": {"field": "ko", "tts": "ko-KR"}}, "primary_script": "Kore",
+           "tokenizer": "eojeol"},
+    "ja": {"scripts": {"Jpan": {"field": "ja", "tts": "ja-JP"}}, "primary_script": "Jpan",
+           "tokenizer": "none"},
+    # Traditional is primary: every JW source has at least as many Traditional rows as Simplified
+    # (ELF 5071 vs 4714, LFF 2296 vs 2235, LPD excerpts 164 vs 39; WT/songs/neighbor equal).
+    "zh": {"scripts": {"Hant": {"field": "zh", "tts": "zh-TW"}, "Hans": {"field": "zh_cn", "tts": "zh-CN"}},
+           "primary_script": "Hant", "tokenizer": "none"},
+}
+
+# Target-language names in each UI language (UI text only: voice settings, notices).
+TARGET_LANGUAGE_NAMES = {
+    "en": {"vi": "tiếng Anh", "cs": "angličtina", "zh_cn": "英语", "zh": "英語", "en": "English",
+           "fr": "anglais", "de": "Englisch", "hu": "angol", "id": "Bahasa Inggris", "ja": "英語",
+           "ko": "영어", "pl": "angielski"},
+    "zh": {"vi": "tiếng Trung", "cs": "čínština", "zh_cn": "中文", "zh": "中文", "en": "Chinese",
+           "fr": "chinois", "de": "Chinesisch", "hu": "kínai", "id": "Bahasa Mandarin", "ja": "中国語",
+           "ko": "중국어", "pl": "chiński"},
+    "id": {"vi": "tiếng Indonesia", "cs": "indonéština", "zh_cn": "印尼语", "zh": "印尼語", "en": "Indonesian",
+           "fr": "indonésien", "de": "Indonesisch", "hu": "indonéz", "id": "Bahasa Indonesia", "ja": "インドネシア語",
+           "ko": "인도네시아어", "pl": "indonezyjski"},
+    "ja": {"vi": "tiếng Nhật", "cs": "japonština", "zh_cn": "日语", "zh": "日語", "en": "Japanese",
+           "fr": "japonais", "de": "Japanisch", "hu": "japán", "id": "Bahasa Jepang", "ja": "日本語",
+           "ko": "일본어", "pl": "japoński"},
+    "ko": {"vi": "tiếng Hàn", "cs": "korejština", "zh_cn": "韩语", "zh": "韓語", "en": "Korean",
+           "fr": "coréen", "de": "Koreanisch", "hu": "koreai", "id": "Bahasa Korea", "ja": "韓国語",
+           "ko": "한국어", "pl": "koreański"},
+}
+
+# "Study <language>" site names per UI language (the GENERAL family title; JW prefixes "JW").
+TARGET_SITE_NAMES = {
+    "en": {"vi": "Học tiếng Anh", "cs": "Studium angličtiny", "zh_cn": "学习英语", "zh": "學習英語",
+           "en": "Study English", "fr": "Apprentissage de l'anglais", "de": "Englisch lernen",
+           "hu": "Angol nyelvtanulás", "id": "Belajar Bahasa Inggris", "ja": "英語学習", "ko": "영어 학습",
+           "pl": "Nauka angielskiego"},
+    "zh": {"vi": "Học tiếng Trung", "cs": "Studium čínštiny", "zh_cn": "学习中文", "zh": "學習中文",
+           "en": "Study Chinese", "fr": "Apprentissage du chinois", "de": "Chinesisch lernen",
+           "hu": "Kínai nyelvtanulás", "id": "Belajar Bahasa Mandarin", "ja": "中国語学習", "ko": "중국어 학습",
+           "pl": "Nauka chińskiego"},
+    "id": {"vi": "Học tiếng Indonesia", "cs": "Studium indonéštiny", "zh_cn": "学习印尼语", "zh": "學習印尼語",
+           "en": "Study Indonesian", "fr": "Apprentissage de l'indonésien", "de": "Indonesisch lernen",
+           "hu": "Indonéz nyelvtanulás", "id": "Belajar Bahasa Indonesia", "ja": "インドネシア語学習",
+           "ko": "인도네시아어 학습", "pl": "Nauka indonezyjskiego"},
+    "ja": {"vi": "Học tiếng Nhật", "cs": "Studium japonštiny", "zh_cn": "学习日语", "zh": "學習日語",
+           "en": "Study Japanese", "fr": "Apprentissage du japonais", "de": "Japanisch lernen",
+           "hu": "Japán nyelvtanulás", "id": "Belajar Bahasa Jepang", "ja": "日本語学習", "ko": "일본어 학습",
+           "pl": "Nauka japońskiego"},
+    "ko": {"vi": "Học tiếng Hàn", "cs": "Studium korejštiny", "zh_cn": "学习韩语", "zh": "學習韓語",
+           "en": "Study Korean", "fr": "Apprentissage du coréen", "de": "Koreanisch lernen",
+           "hu": "Koreai nyelvtanulás", "id": "Belajar Bahasa Korea", "ja": "韓国語学習", "ko": "한국어 학습",
+           "pl": "Nauka koreańskiego"},
+}
+
+# Content sources the target engine can read. Each is a real 12-language row-aligned source; the
+# builder (target_content.py) never translates or generates text. family = which site family may
+# ship it (a JW source is never shipped to a GENERAL site).
+TARGET_CONTENT_SOURCES = {
+    "elf": {"family": "jw", "provenance": "Enjoy Life Forever(4).xlsx, 12 languages row-aligned"},
+    "lpd": {"family": "jw", "provenance": "Love people(3).xlsx, 12 languages row-aligned"},
+    "wt": {"family": "jw", "provenance": "Watchtower Study(3).xlsx, 12 languages row-aligned"},
+    "songs": {"family": "jw", "provenance": "songs_data.js from Songs(7).xlsx, Japanese lines post-processed"},
+    "neighbor": {"family": "jw", "provenance": "wol.jw.org conversation articles, 12 languages"},
+}
+
+# Target-language capabilities with no source in this repository yet: not shipped, reported as
+# SOURCE REQUIRED, never filled from another language.
+TARGET_SOURCE_REQUIRED = ["words", "pronunciation", "difference", "grammar", "course", "culture"]
+
+_VIET_SITES = {
+    "general": {"family": "general", "domain": "hoc.tieng.viet.mobile", "output_dir": "dist"},
+    "jw": {"family": "jw", "domain": "jw.hoc.tieng.viet.mobile", "output_dir": "dist/jw"},
+    "jeonju": {"family": "regional", "domain": "jeonju.hoc.tieng.viet.mobile", "output_dir": "dist/jeonju"},
+    "ulsan": {"family": "regional", "domain": "ulsan.hoc.tieng.viet.mobile", "output_dir": "dist/ulsan"},
+}
+_TARGET_SITE_DEFS = [
+    # (target, slug, GENERAL domain, JW domain)
+    ("en", "english", "study.english.viet.mobile", "jw.study.english.viet.mobile"),
+    ("zh", "chinese", "zhong.wen.viet.mobile", "jw.zhong.wen.viet.mobile"),
+    ("id", "indonesian", "bahasa.indonesia.viet.mobile", "jw.bahasa.indonesia.viet.mobile"),
+    ("ja", "japanese", "study.japanese.viet.mobile", "jw.study.japanese.viet.mobile"),
+    ("ko", "korean", "study.korean.viet.mobile", "jw.study.korean.viet.mobile"),
+]
+
+
+def _target_features(target, sources):
+    features = ["voice_settings"]
+    if sources:
+        features += ["reader", "review"]
+        if TARGET_LANGUAGES[target]["tokenizer"] != "none":
+            features.append("word_order")
+    return features
+
+
+SITES = {}
+for _sid, _meta in _VIET_SITES.items():
+    SITES[_sid] = dict(_meta, site_id=_sid, engine="vietnamese", target_language="vi", target_script="Latn",
+                       title=SITE_TITLES[_sid]["h1"], features=["vietnamese_app"], content_sources=[])
+for _target, _slug, _gdomain, _jdomain in _TARGET_SITE_DEFS:
+    for _family, _domain in (("general", _gdomain), ("jw", _jdomain)):
+        _sid = ("jw_study_" if _family == "jw" else "study_") + _slug
+        _sources = [k for k, v in TARGET_CONTENT_SOURCES.items() if v["family"] == _family]
+        SITES[_sid] = {
+            "site_id": _sid,
+            "family": _family,
+            "engine": "target",
+            "target_language": _target,
+            "target_script": TARGET_LANGUAGES[_target]["primary_script"],
+            "title": ("JW " if _family == "jw" else "") + TARGET_SITE_NAMES[_target]["en"],
+            "domain": _domain,
+            "output_dir": "dist/" + _sid.replace("_", "-"),
+            "features": _target_features(_target, _sources),
+            "content_sources": _sources,
+        }
+        _by_lang = {}
+        for _ui in UI_LANGS:
+            _n = TARGET_SITE_NAMES[_target][_ui]
+            _by_lang[_ui] = _n if _family == "general" else ("JW" + _n if _ui == "zh" else "JW " + _n)
+        SITE_TITLES[_sid] = {
+            "title": SITES[_sid]["title"],
+            "h1": SITES[_sid]["title"],
+            "host": _domain,
+            "h1_by_lang": _by_lang,
+            "title_by_lang": dict(_by_lang),
+        }
+        DOMAIN_MAP[_domain] = {"product": _target, "profile": _sid}
+
+SITE_IDS = list(SITES)
+
+
+def data_block_name(site):
+    """build_app.py output for a site (the JW profile keeps its historical file name)."""
+    return "data_block.js" if site == "jw" else f"data_block.{site}.js"
+
+# Template trimming for engine "target" sites (assemble_app.py): the Vietnamese app's own tabs are
+# removed whole, and the panels the target engine renders into are kept but emptied.
+TARGET_ENGINE_HTML = {
+    "tabs": ["curriculum", "wizard", "vocab", "bible", "grammar"],
+    "empty_panels": ["sentence", "review", "pron"],
+    # The header logo reads "học tiếng Việt"; it is not shown on another language's site.
+    "remove": [("img", "class", "brand-logo")],
+}
