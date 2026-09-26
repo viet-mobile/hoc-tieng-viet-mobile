@@ -1953,9 +1953,24 @@
         if (onDone) onDone();
       }
 
+      // Watchdog for engines that never fire onend/onerror. It must not cut off an utterance that is
+      // still playing (a slow voice or a long sentence easily outlasts the estimate): cutting it
+      // short makes the next step cancel() mid-word, which is heard as a click/garbled noise. While
+      // the engine still reports speaking/pending, the watchdog re-arms, up to a hard cap.
       var textLen = (opts.text ? String(opts.text).length : 10);
       var estMs = Math.max(3500, textLen * 160);
-      watchdogTimer = setTimeout(callDone, estMs);
+      var hardCapAt = Date.now() + estMs * 4 + 10000;
+      function armWatchdog(ms) {
+        watchdogTimer = setTimeout(function () {
+          watchdogTimer = null;
+          if (doneCalled) return;
+          var busy = false;
+          try { busy = synth.speaking || synth.pending; } catch (eBusy) { /* no-op */ }
+          if (busy && Date.now() < hardCapAt) armWatchdog(1000);
+          else callDone();
+        }, ms);
+      }
+      armWatchdog(estMs);
 
       try { if (synth.paused) synth.resume(); } catch (e1) { /* no-op */ }
       var hadActiveSpeech = false;
@@ -1985,14 +2000,19 @@
           var started = false;
           currentU.onstart = function () { started = true; };
           synth.speak(currentU);
+          // Retry once only if the engine silently dropped the utterance. Mobile engines (Samsung/
+          // Google TTS on Android, iOS) often need well over 350 ms before onstart fires; cancelling
+          // and re-speaking in that window restarted the audio (an audible click plus extra delay),
+          // so the check waits longer and treats a queued (pending) utterance as accepted.
           setTimeout(function () {
-            if (started || synth.speaking || !("speechSynthesis" in window) || doneCalled) return;
+            if (started || doneCalled || !("speechSynthesis" in window)) return;
+            try { if (synth.speaking || synth.pending) return; } catch (eState) { /* no-op */ }
             try {
               synth.cancel();
               currentU = buildUtterance();
               synth.speak(currentU);
             } catch (e3) { callDone(); }
-          }, 350);
+          }, 1200);
         } catch (e2) { callDone(); /* no-op: speech not available */ }
       }, delay);
     } catch (e) { if (onDone) onDone(); /* no-op: speech not available */ }
@@ -2094,6 +2114,10 @@
       // Age/generation counters ("10대", "20대" etc.) are read Sino-Korean ("십대", "이십대"),
       // not native-Korean ("열 대").
       t = t.replace(/(\d+)대/g, function (m, n) { return sinoKoreanNumber(n) + "대"; });
+      // The noun 의(義, righteousness) standing as its own word ("공의와 의를 행하였다") is read like
+      // the possessive particle 의 ([에]) by Korean voices. A particle 의 is always attached to the
+      // word before it, so only a word-initial 의 followed by a particle (or nothing) is rewritten.
+      t = t.replace(/(^|[^가-힣])의(?=(?:를|가|와|는|도|로|에게|에|이다|입니다|이며|이고|이)?(?:[^가-힣]|$))/g, "$1으이");
     }
     return t;
   }
@@ -2116,8 +2140,9 @@
       // same Chrome race speakOnce()/전체 듣기 already had to work around: the two calls can end
       // up both audible instead of the second cleanly replacing the first, which is what made an
       // 어순 배열 prompt sometimes carry on into an unrelated sentence never shown on screen.
+      // robustSpeak's own watchdog guarantees finish(); a fixed timeout here used to advance (and
+      // cancel) a long meaning while it was still being read.
       robustSpeak({ text: prepareMeaningSpeechText(text), lang: READALL_LANG_TAG[currentLang] || "en-US", voice: voice }, finish);
-      setTimeout(finish, 6000);
     } catch (e) { if (onDone) onDone(); }
   }
 
