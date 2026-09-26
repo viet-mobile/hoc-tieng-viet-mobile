@@ -2444,7 +2444,15 @@
     color: var(--ink);
   }
   #vocab-root.hide-word-tags .word-tag-pill { display: none; }
-  #vocab-root .word-tag-toggle { min-height: 0; padding: 4px 8px; }
+  #vocab-root .word-count-row { display: flex; align-items: center; gap: 4px; flex-wrap: nowrap; }
+  #vocab-root .word-count-row > .tag-filter-btn,
+  #vocab-root .word-count-row > .read-all-btn { padding: 4px 6px; font-size: 0.74rem; }
+  #vocab-root .word-count-row > .word-count { flex: 1 0 auto; white-space: nowrap; }
+  #vocab-root .word-count-row > .word-sort-btn,
+  #vocab-root .word-count-row > .word-tag-toggle,
+  #vocab-root .word-count-row > .read-all-btn { flex: 0 0 auto; width: auto; white-space: nowrap; }
+  #vocab-root .word-tag-toggle, #vocab-root .word-count-row > .word-sort-btn { min-height: 0; padding: 4px 8px; }
+  #vocab-root .word-head-row { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 6px; }
   .tag-k-all   { --pastel-rgb: 128 132 140; } /* 전체: 진회색 */
   .tag-k-base  { --pastel-rgb: 160 120 230; } /* 기본: 보라 */
   .tag-k-freq  { --pastel-rgb: 200 90 170; }  /* 상용: 자주 */
@@ -2455,24 +2463,22 @@
   .tag-k-homo  { --pastel-rgb: 240 145 60; }  /* 동일: 주황 */
   .tag-k-ant   { --pastel-rgb: 235 200 50; }  /* 반의: 노랑 */
   .tag-k-daily { --pastel-rgb: 150 205 80; }  /* 일상: 연두 */
-  .tag-k-lff   { --pastel-rgb: 60 170 95; }   /* 행누: 초록 */
   .tag-k-song  { --pastel-rgb: 70 140 235; }  /* 노래: 파랑 */
-  .tag-k-jw    { --pastel-rgb: 40 85 200; }   /* JW: 진파랑 */
   .tag-k-wt    { --pastel-rgb: 120 140 200; } /* WT: 연네이비 */
   .tag-k-ns    { --pastel-rgb: 45 60 125; }   /* 남북: 진곤색 */
-  .tag-k-elf   { --pastel-rgb: 30 170 170; }  /* 영원히: 청록 */
+  .tag-k-elf   { --pastel-rgb: 60 170 95; }   /* 행누 (Enjoy Life Forever): 초록 */
   /* Selected filters use the full hue: the darkest hues need light text on it in light mode,
      and the lightest ones a stronger fill (with dark text) in dark mode. */
-  .tag-k-all, .tag-k-theo, .tag-k-sino, .tag-k-jw, .tag-k-ns { --tag-selected-ink: #FFFFFF; }
+  .tag-k-all, .tag-k-theo, .tag-k-sino, .tag-k-ns { --tag-selected-ink: #FFFFFF; }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) .tag-k-all, :root:not([data-theme="light"]) .tag-k-theo,
-    :root:not([data-theme="light"]) .tag-k-sino, :root:not([data-theme="light"]) .tag-k-jw,
+    :root:not([data-theme="light"]) .tag-k-sino,
     :root:not([data-theme="light"]) .tag-k-ns { --tag-selected-ink: var(--ink); }
     :root:not([data-theme="light"]) .tag-k-ant, :root:not([data-theme="light"]) .tag-k-daily,
     :root:not([data-theme="light"]) .tag-k-homo, :root:not([data-theme="light"]) .tag-k-order { --pastel-selected-a: 0.85; --tag-selected-ink: #202A22; }
   }
   :root[data-theme="dark"] .tag-k-all, :root[data-theme="dark"] .tag-k-theo,
-  :root[data-theme="dark"] .tag-k-sino, :root[data-theme="dark"] .tag-k-jw,
+  :root[data-theme="dark"] .tag-k-sino,
   :root[data-theme="dark"] .tag-k-ns { --tag-selected-ink: var(--ink); }
   :root[data-theme="dark"] .tag-k-ant, :root[data-theme="dark"] .tag-k-daily,
   :root[data-theme="dark"] .tag-k-homo, :root[data-theme="dark"] .tag-k-order { --pastel-selected-a: 0.85; --tag-selected-ink: #202A22; }
@@ -2679,6 +2685,18 @@
     line-height: 1.1;
   }
   html body #vocab-tag-filters.tag-filter-row { column-gap: 2px !important; }
+  /* Alphabetic UI languages: on narrow screens the eight top tabs take two rows of four, so every
+     label stays on one horizontal line (Korean/Japanese/Chinese labels fit in a single row). */
+  @media (max-width: 999px) {
+    html body:not([data-app-lang="ko"]):not([data-app-lang="ja"]):not([data-app-lang="zh"]):not([data-app-lang="zh_cn"]) .tabs {
+      grid-auto-flow: row !important;
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+    html body:not([data-app-lang="ko"]):not([data-app-lang="ja"]):not([data-app-lang="zh"]):not([data-app-lang="zh_cn"]) .tabs > .tab-btn {
+      white-space: nowrap;
+      overflow-wrap: normal;
+    }
+  }
   html body .read-all-btn,
   html body .curr-link-btn,
   html body .word-freq-badge,
@@ -2955,6 +2973,17 @@
     line-height: 1.5;
   }
 
+  /* [발음] > [차이] comparison text */
+  .pron-cmp .pron-cmp-title { font-weight: 800; color: var(--accent); overflow-wrap: anywhere; }
+  .pron-cmp .pron-cmp-part { box-shadow: none; margin: 0 0 8px; }
+  .pron-cmp .pron-cmp-part .pron-cmp-title { font-size: 0.92rem; }
+  .pron-cmp .pron-cmp-section > .group-body { padding: 0 10px 6px; }
+  .pron-cmp .pron-cmp-part > .group-body { padding: 0 14px 10px; }
+  .pron-cmp .pron-cmp-sub { font-size: 0.98rem; margin: 10px 4px 6px; color: var(--ink); }
+  .pron-cmp .pron-cmp-h { font-size: 0.9rem; margin: 10px 0 4px; color: var(--ink); }
+  .pron-cmp .pron-cmp-p, .pron-cmp .pron-cmp-list { font-size: 0.9rem; line-height: 1.6; color: var(--ink); overflow-wrap: anywhere; }
+  .pron-cmp .pron-cmp-list { margin: 4px 0 6px; padding-left: 1.2em; }
+  .pron-cmp .pron-cmp-list li { margin-bottom: 4px; }
   /* Culture compact cards */
   .culture-fold .culture-fold-head { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; text-align: left; }
   .culture-fold .culture-card-title { display: block; margin-bottom: 0; }
@@ -3378,6 +3407,7 @@
     <section class="panel" id="panel-pron">
       <div class="subtab-row">
         <button class="subtab-btn" data-pron="settings" aria-selected="false" data-i18n="설정">설정</button>
+        <button class="subtab-btn" data-pron="diff" aria-selected="false" data-i18n="차이">차이</button>
         <button class="subtab-btn" data-pron="jamo" aria-selected="true" data-i18n="자모">자모</button>
         <button class="subtab-btn" data-pron="tones" aria-selected="false" data-i18n="성조">성조</button>
         <button class="subtab-btn" data-pron="nsdiff" aria-selected="false" data-i18n="남북 발음">남북 발음</button>
@@ -3386,6 +3416,7 @@
         <div id="pron-settings-root"></div>
         <div id="curr-guide-root"></div>
       </div>
+      <div id="pron-diff-pane" style="display:none"></div>
       <div id="pron-jamo-pane"></div>
       <div id="pron-tones-pane" style="display:none"></div>
       <div id="pron-nsdiff-pane" style="display:none"></div>

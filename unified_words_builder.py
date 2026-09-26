@@ -15,7 +15,12 @@ HUN_EUM_RE = re.compile(r'^([가-힣]+(?:\s[가-힣]+)*)\s([가-힣])(\s*\([^()]
 
 # [단어] meanings corrected by hand (merged over whichever source supplied the word first).
 WORD_MEANING_OVERRIDES = {
-    "anh": {"ko": "꽃부리 영(英), 맏 형(兄)"},
+    # anh: both readings -- 英 and 兄 (elder brother) -- in every language.
+    "anh": {"ko": "꽃부리 영(英), 맏 형(兄)", "ja": "英, 兄", "zh": "英才；兄", "zh_cn": "英才；兄",
+            "en": "flower, hero, England; elder brother", "de": "Blüte, Held, England; älterer Bruder",
+            "fr": "fleur, héros, Angleterre ; grand frère", "pl": "bohater, Anglia; starszy brat",
+            "cs": "květ, hrdina, Anglie; starší bratr", "hu": "virág, hős, Anglia; báty",
+            "id": "bunga, pahlawan, Inggris; kakak laki-laki"},
     "đi": {"ko": "가다", "zh": "去", "en": "to go", "ja": "行く"},
     "có": {"ko": "(가지고) 있다"},
     "thánh": {"ko": "거룩할 성(聖)"},
@@ -116,7 +121,7 @@ def gather_learning_corpus(site, daily_conversations, offer_talks, neighbor_conv
 def build_unified_words(site, basic_word_groups, freq_vocab, vocab_theo, bible_names,
                         rhyme_groups, word_order_reversed, vocab_groups, antonym_pairs,
                         user_new_words, corpus_text, religious_filter_terms=None,
-                        dialect_words=None, lff_conversations=None):
+                        dialect_words=None):
     words_map = {}
 
     def get_or_create(vi, kr=None, hanja=None):
@@ -253,15 +258,6 @@ def build_unified_words(site, basic_word_groups, freq_vocab, vocab_theo, bible_n
         suffix = "(" + rec["hanja"] + (", " + rest.strip()[1:-1] if rest else "") + ")"
         rec["kr"] = dict(rec["kr"], ko=m.group(1) + " " + m.group(2) + suffix)
 
-    # 12. 행누: the word occurs in the [문장] > [행복한 삶을 영원히] lesson text (JW profiles only).
-    if site != "general" and lff_conversations:
-        lff_text = "\n".join(
-            (line.get("vi") or "") for conv in lff_conversations for line in conv.get("lines", [])
-        ).lower()
-        for key, rec in words_map.items():
-            if re.search(BOUNDARY_PREFIX + re.escape(key) + BOUNDARY_SUFFIX, lff_text):
-                rec["tags"].add("행누")
-
     # Compile word records
     result = []
     rel_terms = religious_filter_terms or []
@@ -270,7 +266,7 @@ def build_unified_words(site, basic_word_groups, freq_vocab, vocab_theo, bible_n
         # Profile filtering for GENERAL
         if site == "general":
             # If word is strictly JW-only (신권 and/or 인명 only), skip
-            non_jw_tags = rec["tags"] - {"신권", "인명", "행누"}
+            non_jw_tags = rec["tags"] - {"신권", "인명"}
             if not non_jw_tags:
                 continue
             # Remove JW-only tags from remaining words
@@ -290,7 +286,7 @@ def build_unified_words(site, basic_word_groups, freq_vocab, vocab_theo, bible_n
             rec["frequency"] = 0
 
         # Convert tags set to sorted list
-        tag_order = ["기본", "상용", "신권", "인명", "한자음", "어순반대", "동일음", "반의", "PDF", "행누", "남북"]
+        tag_order = ["기본", "상용", "신권", "인명", "한자음", "어순반대", "동일음", "반의", "PDF", "남북"]
         rec["tags"] = sorted(list(rec["tags"]), key=lambda t: tag_order.index(t) if t in tag_order else 99)
         result.append(rec)
 

@@ -93,6 +93,8 @@ from vocab_study_plan_data import VOCAB_PLAN
 from watchtower_vocab_data import WATCHTOWER_VOCAB
 from usage_guide_data import USAGE_GUIDE_COMMON, USAGE_GUIDE_TABS
 from course_materials import add_general_materials, remove_jw_event_items
+from pronunciation_comparison import build_pron_comparison
+from tts_guide_data import TTS_GUIDE, TTS_GUIDE_ORDER
 
 app_data = json.load(open("app_data.json", encoding="utf-8"))
 vocab_chain = json.load(open("vocab_chain.json", encoding="utf-8"))
@@ -623,6 +625,8 @@ def build_data_js(site):
     parts.append(emit("NS_DIFFS", NORTH_SOUTH_DIFFS))
     parts.append(emit("NS_NOTE", NORTH_SOUTH_NOTE))
     parts.append(emit("NS_EXTRA_NOTES", NORTH_SOUTH_EXTRA_NOTES))
+    parts.append(emit("PRON_COMPARISON", build_pron_comparison()))
+    parts.append(emit("TTS_GUIDE", {"order": TTS_GUIDE_ORDER, "langs": TTS_GUIDE}))
     parts.append(emit("BIBLE_OT", BIBLE_BOOKS_OT))
     parts.append(emit("BIBLE_NT", BIBLE_BOOKS_NT))
     parts.append(emit("NUM_BASIC", NUMBERS_BASIC))
@@ -761,7 +765,7 @@ def build_data_js(site):
         site, BASIC_WORD_GROUPS, freq_vocab, vocab_theo, BIBLE_NAMES,
         RHYME_GROUPS, WORD_ORDER_REVERSED_EXTRA, vocab_groups, ANTONYM_PAIRS,
         USER_NEW_WORDS, corpus_text, RELIGIOUS_FILTER_TERMS,
-        dialect_words=DIALECT_WORDS, lff_conversations=LFF_CONVERSATIONS
+        dialect_words=DIALECT_WORDS
     )
     from jw_extraction.engine import ExtractionEngine
     from general_pdf_data import merge_pdf_words
