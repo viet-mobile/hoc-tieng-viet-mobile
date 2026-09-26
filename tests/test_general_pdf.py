@@ -58,11 +58,26 @@ class GeneralPdfTests(unittest.TestCase):
             self.assertNotIn('const ' + constant, html)
         self.assertFalse((ROOT / 'dist/_worker.js').exists())
         self.assertIn('const JW_EXTRACTION_DATA = null;', html)
+        # GENERAL ships its own filtered language course ([과정]): no class welcome, phases or
+        # weekly assignments, and no course link into a pane GENERAL removes.
+        general_course = {"CURR_WELCOME", "CURR_PHASES", "CURR_WEEKS", "CURR_ASSIGNMENTS"}
+        removed_links = {(r["attr"][len("data-"):], v) for r in NON_JW_HTML_REMOVALS["subtabs"] for v in r["values"]}
         for name in JW_ONLY_CONSTS:
             match = re.search(r'^const ' + name + r' = (.*);$', html, re.MULTILINE)
             self.assertIsNotNone(match, name)
             value = json.loads(match[1])
-            if name in STRUCTURED_EMPTY_SHAPES:
+            if name in general_course:
+                if name == "CURR_WELCOME":
+                    self.assertEqual(value, {"title": None, "body": []}, name)
+                elif name == "CURR_WEEKS":
+                    self.assertTrue(value, name)
+                    for week in value:
+                        for item in week.get("items", []):
+                            link = item.get("link") or {}
+                            self.assertNotIn((link.get("subAttr"), link.get("subVal")), removed_links, item)
+                else:
+                    self.assertEqual(value, [], name)
+            elif name in STRUCTURED_EMPTY_SHAPES:
                 self.assertEqual(value, STRUCTURED_EMPTY_SHAPES[name], name)
             else:
                 self.assertIn(value, [[], {}], name)

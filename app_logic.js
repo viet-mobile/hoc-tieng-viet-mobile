@@ -269,6 +269,8 @@
     "학습 과정": {"vi": "Khóa học", "cs": "Studijní kurz", "zh_cn": "学习课程", "zh": "學習課程", "en": "Study Course", "fr": "Cours d’étude", "de": "Lernkurs", "hu": "Tanulmányi kurzus", "id": "Kursus belajar", "ja": "学習コース", "pl": "Kurs nauki"},
     "일정 미정": {"vi": "Chưa xác định lịch", "cs": "Rozvrh dosud nestanoven", "zh_cn": "日程未定", "zh": "日程未定", "en": "Schedule TBD", "fr": "Calendrier à déterminer", "de": "Termin noch offen", "hu": "Időbeosztás még nincs meghatározva", "id": "Jadwal belum ditentukan", "ja": "日程未定", "pl": "Harmonogram do ustalenia"},
     "휴강": {"vi": "Nghỉ học", "cs": "Výuka se nekoná", "zh_cn": "休课", "zh": "停課", "en": "No Class", "fr": "Pas de cours", "de": "Unterrichtsausfall", "hu": "Nincs tanítás", "id": "Libur kelas", "ja": "休講", "pl": "Brak zajęć"},
+    "천안 베트남어 순회대회 파이오니아 모임": {"vi": "Buổi họp tiên phong – hội nghị vòng quanh tiếng Việt Cheonan", "cs": "Setkání průkopníků – vietnamský krajský sjezd v Čchonanu", "zh_cn": "天安越南语分区大会先驱聚会", "zh": "天安越南語分區大會先驅聚會", "en": "Pioneer meeting – Cheonan Vietnamese circuit assembly", "fr": "Réunion des pionniers – assemblée de circonscription en vietnamien de Cheonan", "de": "Pioniertreffen – vietnamesischer Kreiskongress Cheonan", "hu": "Úttörő-összejövetel – csonani vietnami körzetkongresszus", "id": "Pertemuan perintis – kebaktian wilayah bahasa Vietnam Cheonan", "ja": "天安ベトナム語巡回大会 開拓者の集まり", "pl": "Spotkanie pionierów – wietnamskie zgromadzenie obwodowe w Czonan"},
+    "군산 한국어 순회대회": {"vi": "Hội nghị vòng quanh tiếng Hàn Gunsan", "cs": "Korejský krajský sjezd v Kunsanu", "zh_cn": "群山韩语分区大会", "zh": "群山韓語分區大會", "en": "Gunsan Korean circuit assembly", "fr": "Assemblée de circonscription en coréen de Gunsan", "de": "Koreanischer Kreiskongress Gunsan", "hu": "Kunszani koreai körzetkongresszus", "id": "Kebaktian wilayah bahasa Korea Gunsan", "ja": "群山韓国語巡回大会", "pl": "Koreańskie zgromadzenie obwodowe w Kunsan"},
     "총복습": {"vi": "Tổng ôn tập", "cs": "Celkové opakování", "zh_cn": "总复习", "zh": "總複習", "en": "Comprehensive Review", "fr": "Révision générale", "de": "Gesamtwiederholung", "hu": "Összefoglaló ismétlés", "id": "Tinjauan menyeluruh", "ja": "総復習", "pl": "Powtórzenie całościowe"},
     "예비 모임": {"vi": "Buổi gặp mặt chuẩn bị", "cs": "Přípravné setkání", "zh_cn": "预备聚会", "zh": "預備聚會", "en": "Preliminary Meeting", "fr": "Réunion préparatoire", "de": "Vorbereitungstreffen", "hu": "Előkészítő találkozó", "id": "Pertemuan persiapan", "ja": "予備の集まり", "pl": "Spotkanie wstępne"},
     "문화": {"vi": "Văn hóa", "cs": "Kultura", "zh_cn": "文化", "zh": "文化", "en": "Culture", "fr": "Culture", "de": "Kultur", "hu": "Kultúra", "id": "Budaya", "ja": "文化", "pl": "Kultura"},
@@ -711,7 +713,7 @@
     "부": {"vi": "Phần", "cs": "Část", "zh_cn": "部分", "zh": "部分", "en": "Part", "fr": "Partie", "de": "Teil", "hu": "Rész", "id": "Bagian", "ja": "部", "pl": "Część"},
     "베트남어 문장이나 뜻으로 검색": {"vi": "Tìm theo câu tiếng Việt hoặc nghĩa", "cs": "Hledat vietnamskou větu nebo význam", "zh_cn": "用越南语句子或意思搜寻", "zh": "用越南語句子或意思搜尋", "en": "Search by Vietnamese sentence or meaning", "fr": "Rechercher par phrase vietnamienne ou sens", "de": "Nach vietnamesischem Satz oder Bedeutung suchen", "hu": "Keresés vietnámi mondatra vagy jelentésre", "id": "Cari kalimat Vietnam atau artinya", "ja": "ベトナム語の文や意味で検索", "pl": "Szukaj wietnamskiego zdania lub znaczenia"},
     "나는 준비가 되었는가?": {"vi": "Mình đã sẵn sàng chưa?", "cs": "Jsem připraven?", "zh_cn": "我准备好了嗎？", "zh": "我準備好了嗎？", "en": "Am I Ready?", "fr": "Suis-je prêt ?", "de": "Bin ich bereit?", "hu": "Felkészült vagyok?", "id": "Apakah Saya Siap?", "ja": "準備はできていますか", "pl": "Czy jesteś gotowy?"},
-    "사람들을 사랑하고 제자로": {"vi": "Yêu thương người khác — Đào tạo môn đồ", "cs": "Mějte rádi lidi a pomáhejte jim stát se učedníky", "zh_cn": "用愛心帮助人成为基督徒", "zh": "用愛心幫助人成為基督徒", "en": "Love People—Make Disciples", "fr": "Aimez les gens, faites des disciples", "de": "Menschen lieben – Jünger machen", "hu": "Szeressük az embereket, és tegyük őket tanítványokká", "id": "Kasihi Orang dan Buatlah Murid", "ja": "愛を込めて弟子を育てる", "pl": "Kochaj ludzi — pozyskuj uczniów"},
+    "사람들을 사랑하고 제자로": {"vi": "Yêu thương người khác — Đào tạo môn đồ", "cs": "Mějte rádi lidi a pomáhejte jim stát se učedníky", "zh_cn": "用爱心帮助人成为基督徒", "zh": "用愛心幫助人成為基督徒", "en": "Love People—Make Disciples", "fr": "Aimez les gens, faites des disciples", "de": "Menschen lieben – Jünger machen", "hu": "Szeressük az embereket, és tegyük őket tanítványokká", "id": "Kasihi Orang dan Buatlah Murid", "ja": "愛を込めて弟子を育てる", "pl": "Kochaj ludzi — pozyskuj uczniów"},
     "\"사람들을 사랑하고 제자로 삼으십시오\" 소책자에서 뽑은 과별 대표 예문이에요. 1~12과와 부록 가·나·다에서 각 5~8개씩 골라 5개 언어로 대조해 두었어요. 전체 본문이 아니라 학습용으로 엄선한 예문이에요.": {"vi": "Các câu ví dụ tiêu biểu được chọn từ sách mỏng \"Yêu thương người khác — Đào tạo môn đồ\": từ bài 1–12 và phụ lục A, B, C, mỗi phần chọn 5–8 câu và đối chiếu bằng 5 ngôn ngữ. Đây là các câu được tuyển chọn để học, không phải toàn văn.", "cs": "Reprezentativní příklady z brožury „Mějte rádi lidi a pomáhejte jim stát se učedníky“ vybrané z lekcí 1–12 a dodatků A, B, C.", "zh_cn": "选自《用爱心帮助人成为基督徒》册子的各课代表例句。从第1~12课和附录一、二、三中精选，并以多种语言对照。", "zh": "從「用愛心幫助人成為基督徒」小冊子中，每課精選5~8個代表例句，共12課加上附錄A、B、C，以5種語言對照。這不是全文，而是為學習精選的例句。", "en": "A handful of representative example sentences (5–8 per lesson) selected from the \"Love People—Make Disciples\" brochure — Lessons 1–12 plus Appendices A, B, and C — aligned across 5 languages. This is a small curated selection for study, not the full text.", "fr": "Sélection de phrases d'exemple représentatives de la brochure « Aimez les gens, faites des disciples » (leçons 1 à 12 et annexes A, B, C) en plusieurs langues.", "de": "Ausgewählte Beispielsätze aus der Broschüre „Menschen lieben – Jünger machen“ (Lektionen 1–12 und Anhang A, B, C) in verschiedenen Sprachen.", "hu": "Kiemelt példamondatok a „Szeressük az embereket, és tegyük őket tanítványokká” füzet 1–12. leckéjéből és az A, B, C függelékekből.", "id": "Contoh kalimat perwakilan per bab yang dipilih dari brosur 'Kasihi Orang dan Buatlah Murid' Bab 1–12 dan Lampiran A, B, C.", "ja": "「愛を込めて弟子を育てる」小冊子から選んだ、各課の代表的な例文です。レッスン1~12と付録a・b・cから5~8個ずつ選び、5つの言語で対照してあります。全文ではなく、学習用に厳選した例文です。", "pl": "Reprezentatywne przykłady z broszury „Kochaj ludzi i pomagaj im stawać się uczniami” wybrane z lekcji 1–12 i dodatków A, B, C."},
     "부록": {"vi": "Phụ lục", "cs": "Příloha", "zh_cn": "附录", "zh": "附錄", "en": "Appendix", "fr": "Annexe", "de": "Anhang", "hu": "Függelék", "id": "Lampiran", "ja": "付録", "pl": "Dodatek"},
     "노래 선택": {"vi": "Chọn bài hát", "cs": "Vybrat píseň", "zh_cn": "选择诗歌", "zh": "選擇詩歌", "en": "Select Song", "fr": "Choisir un chant", "de": "Lied auswählen", "hu": "Ének kiválasztása", "id": "Pilih Lagu", "ja": "歌の選択", "pl": "Wybierz pieśń"},
@@ -5532,6 +5534,12 @@
   function courseStudyNumber(weekKey) {
     return Number(weekKey) >= 0 && Number(weekKey) <= 15 ? Number(weekKey) + 1 : null;
   }
+  // A class cancellation's reason: the schedule stores it as Korean text (static data or the
+  // regional admin), so known reasons are shown through the UI label table; text an admin typed
+  // that has no translation stays as entered.
+  function cancellationReasonLabel(reason) {
+    return typeof reason === "string" ? TU(reason) : T(reason);
+  }
   function curriculumItemText(it, weekKey) {
     var text = T(it.text);
     if (currentLang !== "ko") return text;
@@ -5551,13 +5559,34 @@
     "10": { lff: 9, lpd: 9 }, "11": { lff: 10, lpd: 10 }, "12": { lff: 11, lpd: 11 }, "13": { lff: 12, lpd: 12 },
     "14": { lffReview: 1, lpdAppendix: "A" }
   };
+  // Reading-practice course items: "<publication> <lesson>: <lesson title>" in every UI language.
+  // Publication names are the site's own labels for them (I18N_UI); lesson, part-review and
+  // appendix titles come from the authoritative 12-language LFF_CONVERSATIONS / LPD_LESSONS.
+  var COURSE_READING_WORDS = {
+    lesson: { vi: "Bài {n}", cs: "lekce {n}", zh_cn: "第{n}课", zh: "第{n}課", en: "Lesson {n}", fr: "leçon {n}", de: "Lektion {n}", hu: "{n}. lecke", id: "Pelajaran {n}", ja: "レッスン{n}", ko: "{n}과", pl: "lekcja {n}" },
+    appendix: { vi: "Phụ lục {n}", cs: "dodatek {n}", zh_cn: "附录{n}", zh: "附錄{n}", en: "Appendix {n}", fr: "annexe {n}", de: "Anhang {n}", hu: "{n} függelék", id: "Lampiran {n}", ja: "付録{n}", ko: "부록 {n}", pl: "dodatek {n}" },
+    reading: { vi: "luyện đọc", cs: "čtení", zh_cn: "阅读练习", zh: "閱讀練習", en: "reading practice", fr: "lecture", de: "Leseübung", hu: "olvasás", id: "latihan membaca", ja: "読解練習", ko: "읽기 연습", pl: "czytanie" }
+  };
+  var COURSE_READING_LANGS = ["vi", "cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko", "pl"];
   function courseReadingText(kind, value) {
-    var appendix = kind === "lpdAppendix";
-    var partReview = kind === "lffReview";
-    if (kind === "lff") return { ko: "행누 " + value + "과 읽기 연습", zh: "「행누」第" + value + "課閱讀練習", en: "행누 Lesson " + value + " Reading Practice", ja: "「행누」レッスン" + value + " 読解練習" };
-    if (partReview) return { ko: "행누 1부 복습 읽기 연습", zh: "「행누」第1部分複習閱讀練習", en: "행누 Part 1 Review Reading Practice", ja: "「행누」第1部 復習読解練習" };
-    if (appendix) return { ko: "랑제 부록 " + ({ A: "가", B: "나", C: "다" }[value]) + " 읽기 연습", zh: "《用愛心幫助人成為基督徒》附錄" + value + "閱讀練習", en: "Love People—Make Disciples Appendix " + value + " Reading Practice", ja: "「愛を込めて弟子を育てる」付録" + value + " 読解練習" };
-    return { ko: "랑제 " + value + "과 읽기 연습", zh: "《用愛心幫助人成為基督徒》第" + value + "課閱讀練習", en: "Love People—Make Disciples Lesson " + value + " Reading Practice", ja: "「愛を込めて弟子を育てる」レッスン" + value + " 読解練習" };
+    var rec = null;
+    if (kind === "lff") rec = LFF_CONVERSATIONS.filter(function (r) { return r.kind === "lesson" && r.num === value; })[0];
+    else if (kind === "lffReview") rec = LFF_CONVERSATIONS.filter(function (r) { return r.kind === "review" && r.part === value; })[0];
+    else if (kind === "lpdAppendix") rec = LPD_LESSONS.filter(function (r) { return r.kind === "appendix" && String(r.num) === String(value); })[0];
+    else rec = LPD_LESSONS.filter(function (r) { return r.kind !== "appendix" && r.num === value; })[0];
+    var pubKey = (kind === "lff" || kind === "lffReview") ? "행복한 삶을 영원히" : "사람들을 사랑하고 제자로";
+    var out = {};
+    COURSE_READING_LANGS.forEach(function (lang) {
+      var pub = lang === "ko" ? (pubKey === "행복한 삶을 영원히" ? "행누" : "랑제") : ((I18N_UI[pubKey] || {})[lang] || "");
+      var title = rec && rec.title ? (rec.title[lang] || "") : "";
+      var unit = kind === "lffReview" ? "" :
+        (kind === "lpdAppendix" ? COURSE_READING_WORDS.appendix : COURSE_READING_WORDS.lesson)[lang]
+          .replace("{n}", lang === "ko" && kind === "lpdAppendix" ? ({ A: "가", B: "나", C: "다" }[value]) : value);
+      var head = pub + (unit ? " " + unit : "");
+      var cjk = lang === "zh" || lang === "zh_cn" || lang === "ja";
+      out[lang] = head + (title ? (cjk ? "：" : ": ") + title : "") + (cjk ? "（" : " (") + COURSE_READING_WORDS.reading[lang] + (cjk ? "）" : ")");
+    });
+    return out;
   }
   function courseReadingItems(weekKey) {
     var plan = COURSE_READING_PLAN[String(weekKey)];
@@ -5955,18 +5984,32 @@ function verifyDistribution(units, dist, pins) {
     var staticByUid = {};
     staticUnits.forEach(function (u) { u.learning.concat(u.assignments).forEach(function (x) { staticByUid[x.uid] = x; }); });
     function sameKo(a, b) { return !!a && !!b && a.ko === b.ko; }
+    // The admin API stores only Korean/English. A live item takes the static 12-language text of
+    // the same uid when its Korean is unchanged -- and, because static uids are positional and can
+    // shift when the static course gains items, otherwise the static text with the identical Korean
+    // source. Text an admin rewrote has no static counterpart and is shown as stored.
+    var staticByKo = {};
+    function indexKo(t) { if (t && t.ko && !staticByKo[t.ko]) staticByKo[t.ko] = t; }
+    staticUnits.forEach(function (u) {
+      indexKo(u.title); indexKo(u.note);
+      u.learning.concat(u.assignments).forEach(function (x) { indexKo(x.text); });
+    });
+    function liveText(st, t) {
+      if (st && sameKo(st, t)) return st;
+      return (t && t.ko && staticByKo[t.ko]) || t || null;
+    }
     var units = ((data.source && data.source.units) || []).map(function (u) {
       var su = staticUnits.filter(function (x) { return x.unit === u.unit; })[0] || {};
       function atom(x, kind) {
         var st = staticByUid[x.uid];
-        var out = { uid: x.uid, unit: u.unit, kind: kind, text: (st && sameKo(st.text, x.text)) ? st.text : x.text, link: x.link || null };
+        var out = { uid: x.uid, unit: u.unit, kind: kind, text: liveText(st && st.text, x.text), link: x.link || null };
         if (kind === "learning") out.page = x.page || null; else { out.day = x.day; out.category = x.category; }
         return out;
       }
       return {
         unit: u.unit,
-        title: (su.title && sameKo(su.title, u.title)) ? su.title : (u.title || null),
-        note: (su.note && sameKo(su.note, u.note)) ? su.note : (u.note || null),
+        title: liveText(su.title, u.title),
+        note: liveText(su.note, u.note),
         learning: (u.learning || []).map(function (x) { return atom(x, "learning"); }),
         assignments: (u.assignments || []).map(function (x) { return atom(x, "assignment"); })
       };
@@ -6081,10 +6124,10 @@ function verifyDistribution(units, dist, pins) {
     rp.sched.slots.forEach(function (slot) {
       if (slot.type === "cancellation") {
         html += '<div class="group-card curr-vacation-card" data-open="false" data-syl="cancel-' + slot.date + '">' +
-          '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " " + (T(slot.reason) || TU("휴강"))) + '</span></span>' +
+          '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " " + (cancellationReasonLabel(slot.reason) || TU("휴강"))) + '</span></span>' +
           currChev() + '</button>' +
           '<div class="group-body"><div class="curr-item-list">' +
-          '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(T(slot.reason)) + '</div></div>' +
+          '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
           '</div></div></div>';
         return;
       }
@@ -6294,10 +6337,10 @@ function verifyDistribution(units, dist, pins) {
         sched.slots.forEach(function (slot, slotIdx) {
           if (slot.type === 'cancellation') {
             html += '<div class="group-card curr-vacation-card" data-open="false" data-syl="cancel-' + slot.date + '">' +
-              '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " " + (T(slot.reason) || TU("휴강"))) + '</span></span>' +
+              '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " " + (cancellationReasonLabel(slot.reason) || TU("휴강"))) + '</span></span>' +
               currChev() + '</button>' +
               '<div class="group-body"><div class="curr-item-list">' +
-              '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(T(slot.reason)) + '</div></div>' +
+              '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
               '</div></div></div>';
           } else {
             var badgeText = slot.week === 16 ?

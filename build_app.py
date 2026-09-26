@@ -93,6 +93,7 @@ from vocab_study_plan_data import VOCAB_PLAN
 from watchtower_vocab_data import WATCHTOWER_VOCAB
 from usage_guide_data import USAGE_GUIDE_COMMON, USAGE_GUIDE_TABS
 from course_materials import add_general_materials, remove_jw_event_items
+from course_i18n import complete_course_texts
 from pronunciation_comparison import build_pron_comparison
 from tts_guide_data import TTS_GUIDE, TTS_GUIDE_ORDER
 
@@ -709,6 +710,14 @@ def build_data_js(site):
     if site == "jw":
         curr_weeks, curr_assignments = remove_jw_event_items(curr_weeks, curr_assignments)
 
+    # Every course text in all 12 UI languages (course_i18n.py); a course line that still misses a
+    # language stops the build rather than rendering blank.
+    course_missing = set()
+    curr_welcome, curr_phases, curr_weeks, curr_assignments = (
+        complete_course_texts(v, course_missing) for v in (curr_welcome, curr_phases, curr_weeks, curr_assignments)
+    )
+    if course_missing:
+        raise SystemExit("[%s] course texts without a translation: %r" % (site, sorted(course_missing)[:20]))
     parts.append(emit("CURR_WELCOME", curr_welcome))
     parts.append(emit("CURR_PHASES", curr_phases))
     parts.append(emit("CURR_WEEKS", curr_weeks))

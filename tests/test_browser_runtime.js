@@ -23,8 +23,8 @@ const EXPECTED_H1 = {
   general: {
     vi: "Học tiếng Việt",
     cs: "Studium vietnamštiny",
-    zh_cn: "越南语学习",
-    zh: "越南語學習",
+    zh_cn: "学习越南语",
+    zh: "學習越南語",
     en: "Vietnamese Learning",
     fr: "Apprentissage du vietnamien",
     de: "Vietnamesisch lernen",
@@ -37,7 +37,7 @@ const EXPECTED_H1 = {
   jw: {
     vi: "JW Học tiếng Việt",
     cs: "JW Studium vietnamštiny",
-    zh_cn: "JW 越南语学习",
+    zh_cn: "JW 学习越南语",
     zh: "JW學習越南語",
     en: "JW Vietnamese Learning",
     fr: "JW Apprentissage du vietnamien",
@@ -56,8 +56,8 @@ const EXPECTED_TITLE = {
   general: {
     vi: "Học tiếng Việt",
     cs: "Studium vietnamštiny",
-    zh_cn: "越南语学习",
-    zh: "越南語學習",
+    zh_cn: "学习越南语",
+    zh: "學習越南語",
     en: "Vietnamese Learning",
     fr: "Apprentissage du vietnamien",
     de: "Vietnamesisch lernen",
@@ -70,7 +70,7 @@ const EXPECTED_TITLE = {
   jw: {
     vi: "JW Học tiếng Việt",
     cs: "JW Studium vietnamštiny",
-    zh_cn: "JW 越南语学习",
+    zh_cn: "JW 学习越南语",
     zh: "JW學習越南語",
     en: "JW Vietnamese Learning",
     fr: "JW Apprentissage du vietnamien",
