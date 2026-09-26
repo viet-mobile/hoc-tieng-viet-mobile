@@ -471,6 +471,20 @@ _VIET_SITES = {
     "jeonju": {"family": "regional", "domain": "jeonju.hoc.tieng.viet.mobile", "output_dir": "dist/jeonju"},
     "ulsan": {"family": "regional", "domain": "ulsan.hoc.tieng.viet.mobile", "output_dir": "dist/ulsan"},
 }
+# Branding of the target-language sites: one visual system (rounded square, white mark, underline),
+# told apart by the target language's mark and colour. brand_icons.py draws the marks as geometric
+# shapes (no font, no third-party logo) into brand/<target>/; assemble_app.py links a site's icons and
+# writes its manifest from this entry. The Vietnamese sites keep their own logo and manifest untouched.
+TARGET_BRANDS = {
+    "en": {"mark": "EN", "color": "#1F4E8C"},
+    "zh": {"mark": "中", "color": "#A8322D"},
+    "id": {"mark": "ID", "color": "#2E7D4F"},
+    "ja": {"mark": "日", "color": "#5B3E96"},
+    "ko": {"mark": "한", "color": "#00796B"},
+}
+BRAND_ICON_FILES = {"svg": "icon.svg", "png32": "icon-32.png", "apple": "icon-180.png",
+                    "png192": "icon-192.png", "png512": "icon-512.png"}
+
 _TARGET_SITE_DEFS = [
     # (target, slug, GENERAL domain, JW domain)
     ("en", "english", "study.english.viet.mobile", "jw.study.english.viet.mobile"),
@@ -509,6 +523,8 @@ for _target, _slug, _gdomain, _jdomain in _TARGET_SITE_DEFS:
             "output_dir": "dist/" + _sid.replace("_", "-"),
             "features": _target_features(_target, _sources),
             "content_sources": _sources,
+            "brand": dict(TARGET_BRANDS[_target], dir="brand/" + _target,
+                          short_name=TARGET_SITE_NAMES[_target]["en"]),
         }
         _by_lang = {}
         for _ui in UI_LANGS:

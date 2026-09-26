@@ -861,6 +861,7 @@ def build_target_data_js(site):
     never reaches the Vietnamese modules on these sites (see app_logic.js TARGET ENGINE)."""
     from target_content import (build_target_corpus, build_target_site, build_target_tts_guide,
                                 TARGET_UI_TEXT, target_ui_text_check, js)
+    from target_sources import source_meta_for
     target_ui_text_check()
     songs_js = open("songs_data.js", encoding="utf-8").read()
     marker = "const SONGS_DATA = "
@@ -878,6 +879,9 @@ def build_target_data_js(site):
         "const TARGET_SITE = %s;\n" % js(build_target_site(site, corpus)),
         "const TARGET_UI_TEXT = %s;\n" % js(TARGET_UI_TEXT),
         "const TARGET_TTS_GUIDE = %s;\n" % js(build_target_tts_guide(site, TTS_GUIDE, TTS_GUIDE_ORDER)),
+        # Source names (target_sources.py) are their own constant: renaming a source never changes the
+        # content constants below.
+        "const TARGET_SOURCE_META = %s;\n" % js(source_meta_for([src["id"] for src in corpus])),
     ]
     # One declaration per content source keeps every data chunk well under the per-file limit.
     for src in corpus:

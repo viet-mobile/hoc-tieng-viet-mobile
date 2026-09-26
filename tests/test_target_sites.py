@@ -59,6 +59,63 @@ class TargetSiteTests(unittest.TestCase):
             for key, texts in ui.items():
                 self.assertEqual(set(texts), set(UI_LANGS), key)
 
+    def test_source_meta_is_complete_and_separate(self):
+        from target_sources import TARGET_SOURCE_META
+        for sid, meta in TARGET_SOURCE_META.items():
+            labels = meta["label"] or meta["official"]
+            self.assertEqual(set(labels), set(UI_LANGS), sid)
+            self.assertTrue(all(v.strip() for v in labels.values()), sid)
+            self.assertTrue(set(meta["official"]) <= set(UI_LANGS), sid)
+        for sid, meta in SITES.items():
+            if meta["engine"] != "target" or not meta["content_sources"]:
+                continue
+            c = consts(sid)
+            shipped = json.loads(c["TARGET_SOURCE_META"])
+            self.assertEqual(list(shipped), meta["content_sources"], sid)
+            for source_id in meta["content_sources"]:
+                corpus = json.loads(c["TARGET_CORPUS_" + source_id.upper()])
+                # Source names live only in TARGET_SOURCE_META: the content constant carries no name/label
+                # field (an article's own title in its "head" rows is source text, not a source name).
+                self.assertEqual(set(corpus), {"id", "provenance", "units"})
+                for unit in corpus["units"]:
+                    self.assertEqual(set(unit), {"id", "head", "rows"}, (sid, source_id))
+
+    def test_branding(self):
+        from site_profiles import BRAND_ICON_FILES
+        for sid, meta in SITES.items():
+            out = ROOT / meta["output_dir"]
+            html = (out / "index.html").read_text(encoding="utf-8")
+            manifest = json.loads((out / "manifest.webmanifest").read_text(encoding="utf-8"))
+            if meta["engine"] == "vietnamese":
+                # The Vietnamese sites keep their own logo, theme and manifest icon.
+                self.assertIn('href="assets/hoc-tieng-viet-logo.png"', html, sid)
+                self.assertIn('<meta name="theme-color" content="#00613F">', html, sid)
+                self.assertEqual(manifest["icons"][0]["src"], "assets/hoc-tieng-viet-logo.png", sid)
+                self.assertFalse((out / "brand").exists(), sid)
+                continue
+            brand = meta["brand"]
+            self.assertNotIn("hoc-tieng-viet-logo", html, sid)
+            # Branding remnants of the Vietnamese sites (the shared UI-text table may still hold the words
+            # "học tiếng Việt" inside ordinary Vietnamese sentences, which is not branding).
+            self.assertNotIn('alt="học tiếng Việt"', html, sid)
+            self.assertNotIn('class="brand-logo"', html, sid)
+            self.assertFalse((out / "assets" / "hoc-tieng-viet-logo.png").exists(), sid)
+            self.assertIn("<title>%s</title>" % meta["title"], html)
+            self.assertIn('<link rel="icon" type="image/svg+xml" href="brand/%s">' % BRAND_ICON_FILES["svg"], html)
+            self.assertIn('<link rel="apple-touch-icon" sizes="180x180" href="brand/%s">' % BRAND_ICON_FILES["apple"], html)
+            self.assertIn('<meta name="theme-color" content="%s">' % brand["color"], html)
+            self.assertEqual(manifest["name"], meta["title"])
+            self.assertEqual(manifest["short_name"], brand["short_name"])
+            self.assertEqual(manifest["theme_color"], brand["color"])
+            self.assertEqual(manifest["start_url"], "/")
+            for icon in manifest["icons"]:
+                self.assertTrue((out / icon["src"]).exists(), (sid, icon["src"]))
+            for name in BRAND_ICON_FILES.values():
+                self.assertEqual((out / "brand" / name).read_bytes(), (ROOT / brand["dir"] / name).read_bytes(), (sid, name))
+            # No Worker, no D1 client on a target site.
+            self.assertFalse((out / "_worker.js").exists(), sid)
+            self.assertNotIn("/api/regional/", html, sid)
+
     def test_word_order_only_with_a_safe_tokenizer(self):
         for sid, meta in SITES.items():
             if meta["engine"] == "target":

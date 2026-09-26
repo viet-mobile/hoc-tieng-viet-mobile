@@ -1,4 +1,7 @@
 import argparse
+import os
+import stat
+import sys
 import hashlib
 import json
 import re
@@ -6,7 +9,8 @@ from pathlib import Path
 import shutil
 
 from site_html import strip_site_html, remove_elements, empty_elements
-from site_profiles import SITE_TITLES, NON_JW_HTML_REMOVALS, SITES, SITE_IDS, TARGET_ENGINE_HTML, data_block_name
+from site_profiles import (SITE_TITLES, NON_JW_HTML_REMOVALS, SITES, SITE_IDS, TARGET_ENGINE_HTML, data_block_name,
+                           BRAND_ICON_FILES)
 
 
 def apply_general_label_overrides(html_text):
@@ -86,7 +90,47 @@ def build_manifest(site):
     base["name"] = info["h1"]
     base["short_name"] = info["h1"][:12]
     base["description"] = info["title"]
+    brand = SITES[site].get("brand")
+    if brand:
+        # A target-language site installs as its own app: its short name, colour and icons (never
+        # the Vietnamese sites' logo).
+        base["short_name"] = brand["short_name"]
+        base["theme_color"] = brand["color"]
+        base["background_color"] = "#FFFFFF"
+        base["icons"] = [
+            {"src": "brand/" + BRAND_ICON_FILES["png192"], "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+            {"src": "brand/" + BRAND_ICON_FILES["png512"], "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
+            {"src": "brand/" + BRAND_ICON_FILES["svg"], "sizes": "any", "type": "image/svg+xml", "purpose": "any"},
+        ]
     return json.dumps(base, ensure_ascii=False, indent=2)
+
+
+def _remove_tree(path):
+    """rmtree that also clears a read-only flag (Windows marks copied directories read-only)."""
+    def retry(func, p, _exc):
+        os.chmod(p, stat.S_IWRITE)
+        func(p)
+    if Path(path).exists():
+        shutil.rmtree(path, onexc=retry) if sys.version_info >= (3, 12) else shutil.rmtree(path, onerror=retry)
+
+
+VIETNAMESE_ICON_LINKS = ('<link rel="icon" type="image/png" href="assets/hoc-tieng-viet-logo.png">\n'
+                         '<link rel="apple-touch-icon" href="assets/hoc-tieng-viet-logo.png">')
+VIETNAMESE_THEME_META = '<meta name="theme-color" content="#00613F">'
+
+
+def apply_brand(html_text, site):
+    """Target-language sites: their own favicon/apple-touch icon and theme colour in place of the
+    Vietnamese sites' logo (files copied from brand/<target>/ into the site's brand/ directory)."""
+    brand = SITES[site]["brand"]
+    for needle in (VIETNAMESE_ICON_LINKS, VIETNAMESE_THEME_META):
+        if needle not in html_text:
+            raise SystemExit(f"[{site}] template.html: {needle[:40]!r}... not found for branding")
+    links = (f'<link rel="icon" type="image/svg+xml" href="brand/{BRAND_ICON_FILES["svg"]}">\n'
+             f'<link rel="icon" type="image/png" sizes="32x32" href="brand/{BRAND_ICON_FILES["png32"]}">\n'
+             f'<link rel="apple-touch-icon" sizes="180x180" href="brand/{BRAND_ICON_FILES["apple"]}">')
+    html_text = html_text.replace(VIETNAMESE_ICON_LINKS, links, 1)
+    return html_text.replace(VIETNAMESE_THEME_META, f'<meta name="theme-color" content="{brand["color"]}">', 1)
 
 
 def build_site_identity_prelude(site):
@@ -192,6 +236,8 @@ def assemble_site(site):
         out, removal_counts["emptied_panels"] = empty_elements(
             out, [("section", "id", "panel-" + p) for p in TARGET_ENGINE_HTML["empty_panels"]])
         out, removal_counts["removed"] = remove_elements(out, TARGET_ENGINE_HTML["remove"])
+    if meta.get("brand"):
+        out = apply_brand(out, site)
 
     out = apply_site_identity(out, site)
 
@@ -216,7 +262,14 @@ def assemble_site(site):
                 print(f"[general] WARNING: could not remove dist/{sub} ({exc}); do not deploy this local dist/ as GENERAL")
     data_tags = write_data_scripts(dist_dir, data_js)
     open(dist_dir / "index.html", "w", encoding="utf-8").write(out.replace(DATA_PLACEHOLDER, data_tags, 1))
-    shutil.copytree("assets", dist_dir / "assets", dirs_exist_ok=True)
+    if meta.get("brand"):
+        # Only this site's own icons; the Vietnamese sites' logo (assets/) is not published here.
+        _remove_tree(dist_dir / "assets")
+        (dist_dir / "brand").mkdir(exist_ok=True)
+        for name in BRAND_ICON_FILES.values():
+            shutil.copyfile(Path(meta["brand"]["dir"]) / name, dist_dir / "brand" / name)
+    else:
+        shutil.copytree("assets", dist_dir / "assets", dirs_exist_ok=True)
     open(dist_dir / "manifest.webmanifest", "w", encoding="utf-8").write(build_manifest(site))
     shutil.copyfile("_redirects", dist_dir / "_redirects")
 

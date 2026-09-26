@@ -3077,6 +3077,22 @@
   .tg-search { margin: 8px 0 10px; }
   .tg-search input { width: 100%; box-sizing: border-box; padding: 9px 12px; border-radius: var(--radius-s); border: 1px solid var(--border); background: var(--surface); color: inherit; font-size: 0.95rem; }
   .tg-note { margin: 4px 0 10px; }
+  .tg-source-heading { margin: 4px 0 10px; font-size: 1rem; font-weight: 700; line-height: 1.4; overflow-wrap: anywhere; }
+  /* Source buttons carry official titles: wrap between words (never mid-word unless one word is wider
+     than the button); on phones two per row so a long title gets room instead of five narrow columns. */
+  /* Scoped to the target engine's source row (stronger than the shared subtab-row rules): break lines
+     between words, not mid-word. */
+  html body #panel-sentence > .subtab-row.tg-sources.tg-sources.tg-sources .subtab-btn {
+    white-space: normal; overflow-wrap: break-word; word-break: keep-all; hyphens: auto; line-height: 1.25;
+  }
+  @media (max-width: 600px) {
+    /* The shared rule keeps every subtab row on one line with !important; on phones this row holds long
+       official titles, so it alone gets two buttons per row (an odd last one spans both). */
+    html body #panel-sentence > .subtab-row.tg-sources.tg-sources.tg-sources {
+      grid-auto-flow: row !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+    html body #panel-sentence > .subtab-row.tg-sources.tg-sources.tg-sources .subtab-btn:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  }
   .tg-head { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left; min-width: 0; }
   .tg-head-target { font-weight: 700; overflow-wrap: anywhere; }
   .tg-head-tr { font-size: 0.82rem; color: var(--ink-faint); overflow-wrap: anywhere; }

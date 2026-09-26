@@ -11880,7 +11880,9 @@ function verifyDistribution(units, dist, pins) {
     var corpus = (typeof TARGET_CORPUS !== "undefined" && TARGET_CORPUS) || [];
     var FIELD = TARGET.field;
     var has = function (f) { return TARGET.features.indexOf(f) >= 0; };
-    var SOURCE_KEY = { elf: "행복한 삶을 영원히", lpd: "사람들을 사랑하고 제자로", wt: "파수대", songs: "노래", neighbor: "이웃 사람과의 대화" };
+    // Source names come from TARGET_SOURCE_META (target_sources.py): "label" for buttons and menus,
+    // "official" (the official full title, where the language has one) as the selected source's heading.
+    var SOURCE_META = (typeof TARGET_SOURCE_META !== "undefined" && TARGET_SOURCE_META) || {};
     var FEATURE_LABEL = {
       words: function () { return TU("단어"); }, pronunciation: function () { return TU("발음"); },
       difference: function () { return TU("차이"); }, grammar: function () { return TU("문법"); },
@@ -11891,7 +11893,8 @@ function verifyDistribution(units, dist, pins) {
       var entry = TARGET_UI_TEXT[key] || {};
       return String(entry[currentLang] || "").replace("{lang}", TARGET.names[currentLang] || "");
     }
-    function sourceTitle(id) { return TU(SOURCE_KEY[id] || id); }
+    function sourceTitle(id) { var m = SOURCE_META[id]; return (m && m.label && m.label[currentLang]) || id; }
+    function sourceOfficial(id) { var m = SOURCE_META[id]; return (m && m.official && m.official[currentLang]) || ""; }
     // The UI language's text of a source row, or null. When the UI language IS the studied
     // language there is nothing to translate (sameLang). Never another language's text.
     function sameLang() { return currentLang === FIELD; }
@@ -11976,7 +11979,7 @@ function verifyDistribution(units, dist, pins) {
       }).join("") + '</div>' +
         '<div class="tg-search"><input type="search" id="tg-search" placeholder="' + escapeAttr(TX("search")) + '" value="' + escapeAttr(readerState.q) + '"></div>';
       if (sameLang()) html += '<p class="p-desc tg-note">' + escapeHtml(TX("same_lang")) + '</p>';
-      html += '<div id="tg-units"></div>' + sourceRequiredHtml();
+      html += '<h3 class="tg-source-heading" id="tg-source-heading"></h3><div id="tg-units"></div>' + sourceRequiredHtml();
       readerPanel.innerHTML = html;
       readerPanel.querySelectorAll("[data-tg-source]").forEach(function (b) {
         b.addEventListener("click", function () {
@@ -11995,6 +11998,8 @@ function verifyDistribution(units, dist, pins) {
       var root = document.getElementById("tg-units");
       if (!root) return;
       var src = corpus.filter(function (c) { return c.id === readerState.source; })[0] || corpus[0];
+      var heading = document.getElementById("tg-source-heading");
+      if (heading) heading.textContent = sourceOfficial(src.id) || sourceTitle(src.id);
       var q = readerState.q.toLowerCase();
       var html = "";
       src.units.forEach(function (unit, i) {
