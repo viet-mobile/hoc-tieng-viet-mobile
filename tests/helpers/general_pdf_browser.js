@@ -40,7 +40,7 @@ module.exports = async function verifyPdf(cdp, site) {
 
         click('[data-tab="vocab"]');
         click('[data-vocab="words"]');
-        click('[data-tag="PDF"]');
+        click('[data-tag="daily"]'); // the [일상] filter (words from the everyday-conversation PDF books)
         card = document.querySelector('#vocab-root [data-pdf-id]');
         const word = GENERAL_PDF.words.find(w => w.id === card?.dataset.pdfId);
         check(visible(card) && !!word, lang + ': PDF word not visible');

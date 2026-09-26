@@ -43,7 +43,9 @@ USER_NEW_WORDS = [
     {
         "vi": "ám ảnh",
         "kr": {"ko": "귀찮게 따라 다니다, 따라다니며 괴롭히다, (머리 속을) 맴돌다"},
-        "tags": ["기본", "상용"]
+        # Not a 기본/상용 word: it comes from the Watchtower study article (week 3), so its only
+        # tags are the source tags [JW]/[WT] derived from JW_EXTRACTION_DATA.
+        "tags": []
     },
     {
         "vi": "quá khứ",

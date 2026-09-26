@@ -92,6 +92,7 @@ from time_data import TIME_ORDER_NOTE, TIME_RUOI_KEM_NOTE, TIME_PERIODS, TIME_HO
 from vocab_study_plan_data import VOCAB_PLAN
 from watchtower_vocab_data import WATCHTOWER_VOCAB
 from usage_guide_data import USAGE_GUIDE_COMMON, USAGE_GUIDE_TABS
+from course_materials import add_general_materials, remove_jw_event_items
 
 app_data = json.load(open("app_data.json", encoding="utf-8"))
 vocab_chain = json.load(open("vocab_chain.json", encoding="utf-8"))
@@ -268,6 +269,67 @@ def enrich_curated_datasets(lff, lpd, wt, elf_raw, lpd_raw, wt_raw):
         s = re.sub(r'[\s\.\?!,;:\"\'“”‘’\(\)\[\]\—\-\–]+', ' ', s)
         return s.strip().lower()
 
+    # A curated line is usually ONE sentence, while an Excel row is a whole numbered paragraph
+    # ("9 Unser interaktiver Bibelkurs ... (Lies Jakobus 5:11.)"). Copying a row's cell into a
+    # curated line is only correct when the row IS that line; when the line is just part of a
+    # longer row, only the matching sentence(s) may be taken -- and only when the row splits
+    # into the same number of sentences in both languages, so the positions line up. Anything
+    # else stays blank rather than attaching the whole paragraph.
+    para_num_re = re.compile(r'^\s*\d{1,3}\s+(?=\S)')
+    sentence_end_re = re.compile(r'(?<=[.!?…。！？])[”’"」』)]*\s+(?=\S)|(?<=[。！？])(?=\S)')
+
+    def split_row_sentences(text):
+        text = para_num_re.sub('', (text or '').replace('\xa0', ' ')).strip()
+        return [part.strip() for part in sentence_end_re.split(text) if part and part.strip()]
+
+    def row_translation(vi, row, lang):
+        """row[lang] if the row is exactly `vi`; the aligned sentence(s) if `vi` is a run of
+        whole sentences inside the row; otherwise None."""
+        target = row.get(lang)
+        if not target:
+            return None
+        ck = clean_key(vi)
+        row_vi = row.get("vi") or ""
+        if clean_key(row_vi) == ck or clean_key(para_num_re.sub('', row_vi)) == ck:
+            return para_num_re.sub('', target).strip() if para_num_re.match(row_vi) else target
+        vi_parts = split_row_sentences(row_vi)
+        tr_parts = split_row_sentences(target)
+        if len(vi_parts) < 2 or len(vi_parts) != len(tr_parts):
+            return None
+        keys = [clean_key(part) for part in vi_parts]
+        for i in range(len(keys)):
+            for j in range(i, len(keys)):
+                if " ".join(k for k in keys[i:j + 1] if k) == ck:
+                    return " ".join(tr_parts[i:j + 1])
+        return None
+
+    def find_rows(vi, sheet_map, global_map):
+        """Candidate rows for `vi`: exact matches first (sheet, then whole book), then rows
+        that contain it (a longer paragraph). Rows SHORTER than `vi` are never used."""
+        ck = clean_key(vi)
+        raw_k = re.sub(r'\s+', ' ', (vi or '').replace('\xa0', ' ')).strip().lower()
+        rows = []
+        for m in (sheet_map, global_map):
+            for key in (raw_k, ck):
+                if key and m.get(key) is not None:
+                    rows.append(m[key])
+        if len(ck) > 10:
+            for m in (sheet_map, global_map):
+                for k, r in m.items():
+                    if len(k) > len(ck) and ck in k:
+                        rows.append(r)
+        return rows
+
+    def fill_from_rows(field, vi, rows):
+        for lang in target_langs:
+            if field.get(lang):
+                continue
+            for r in rows:
+                tr = row_translation(vi, r, lang)
+                if tr:
+                    field[lang] = tr
+                    break
+
     # 1. Enjoy Life Forever -> LFF_CONVERSATIONS
     elf_by_sheet = {}
     elf_global = {}
@@ -313,25 +375,8 @@ def enrich_curated_datasets(lff, lpd, wt, elf_raw, lpd_raw, wt_raw):
         # Lines
         for line in conv.get("lines", []):
             vi = line.get("vi") or ""
-            ck = clean_key(vi)
-            raw_k = re.sub(r'\s+', ' ', vi.replace('\xa0', ' ')).strip().lower()
-            row = sm.get(raw_k) or sm.get(ck)
-            if not row:
-                for k, r in sm.items():
-                    if len(k) > 10 and (k in ck or ck in k):
-                        row = r
-                        break
-            if not row:
-                row = elf_global.get(raw_k) or elf_global.get(ck)
-            if not row:
-                for k, r in elf_global.items():
-                    if len(k) > 12 and (k in ck or ck in k):
-                        row = r
-                        break
-            if row:
-                for lang in target_langs:
-                    if (lang not in line or not line[lang]) and row.get(lang):
-                        line[lang] = row[lang]
+            if vi:
+                fill_from_rows(line, vi, find_rows(vi, sm, elf_global))
 
     # 2. Love People -> LPD_LESSONS
     lpd_by_sheet = {}
@@ -376,25 +421,8 @@ def enrich_curated_datasets(lff, lpd, wt, elf_raw, lpd_raw, wt_raw):
         # Lines
         for line in conv.get("lines", []):
             vi = line.get("vi") or ""
-            ck = clean_key(vi)
-            raw_k = re.sub(r'\s+', ' ', vi.replace('\xa0', ' ')).strip().lower()
-            row = sm.get(raw_k) or sm.get(ck)
-            if not row:
-                for k, r in sm.items():
-                    if len(k) > 10 and (k in ck or ck in k):
-                        row = r
-                        break
-            if not row:
-                row = lpd_global.get(raw_k) or lpd_global.get(ck)
-            if not row:
-                for k, r in lpd_global.items():
-                    if len(k) > 12 and (k in ck or ck in k):
-                        row = r
-                        break
-            if row:
-                for lang in target_langs:
-                    if (lang not in line or not line[lang]) and row.get(lang):
-                        line[lang] = row[lang]
+            if vi:
+                fill_from_rows(line, vi, find_rows(vi, sm, lpd_global))
 
     # 3. Watchtower Study -> WATCHTOWER_VOCAB
     wt_global = {}
@@ -422,23 +450,25 @@ def enrich_curated_datasets(lff, lpd, wt, elf_raw, lpd_raw, wt_raw):
                 if (lang not in wk["date_range"] or not wk["date_range"][lang]) and r0.get(lang):
                     wk["date_range"][lang] = r0[lang]
 
+        # Article title: each weekly sheet opens with the date line, the "BÀI HÁT <n> ..." song
+        # line, then the article title -- only attached when that layout is actually present.
+        if len(sheet_rows) >= 3 and (sheet_rows[1].get("vi") or "").startswith("BÀI HÁT"):
+            title_row = sheet_rows[2]
+            wk["article_title"] = {lang: title_row[lang] for lang in ["vi"] + target_langs if title_row.get(lang)}
+
         # Word example sentences
         for word in wk.get("words", []):
             ex = word.get("example") or ""
             if ex:
-                ck = clean_key(ex)
-                raw_k = re.sub(r'\s+', ' ', ex.replace('\xa0', ' ')).strip().lower()
-                row = wt_global.get(raw_k) or wt_global.get(ck)
-                if not row:
-                    for k, r in wt_global.items():
-                        if len(k) > 10 and (k in ck or ck in k):
-                            row = r
-                            break
-                if row:
-                    em = word.setdefault("example_mean", {})
-                    for lang in target_langs:
-                        if (lang not in em or not em[lang]) and row.get(lang):
-                            em[lang] = row[lang]
+                week_map = {}
+                for r in sheet_rows:
+                    rv = r.get("vi") or ""
+                    for key in (clean_key(rv), re.sub(r'\s+', ' ', rv.replace('\xa0', ' ')).strip().lower()):
+                        if key:
+                            week_map.setdefault(key, r)
+                rows = find_rows(ex, week_map, wt_global)
+                if rows:
+                    fill_from_rows(word.setdefault("example_mean", {}), ex, rows)
 
 # Enrich curated publications with 12-language authoritative Excel translations
 enrich_curated_datasets(
@@ -519,6 +549,13 @@ def filter_general_curriculum(welcome, phases, weeks):
         ("curriculum", "song"),
         ("curriculum", "prayer"),
     }
+
+    # Every subtab GENERAL's HTML drops (site_profiles.NON_JW_HTML_REMOVALS) is also a dead
+    # course shortcut target there.
+    from site_profiles import NON_JW_HTML_REMOVALS
+    for removal in NON_JW_HTML_REMOVALS["subtabs"]:
+        for value in removal["values"]:
+            blocked_links.add((removal["attr"][len("data-"):], value))
 
     def is_blocked(item):
         link = item.get("link") or {}
@@ -646,6 +683,27 @@ def build_data_js(site):
             curr_welcome, curr_phases, curr_weeks
         )
         curr_assignments = []
+        # GENERAL shows no class welcome ("...학습반에 오신 여러분을 환영합니다") at all.
+        curr_welcome, curr_phases = {"title": None, "body": []}, []
+        curr_weeks = [dict(w, title=None) if w.get("week") == 0 else w for w in curr_weeks]
+
+    # General materials spread over the 16 course weeks (see course_materials.py). ULSAN's static
+    # weeks are intentionally empty (its course is configured through the regional admin), so it
+    # is left alone; GENERAL gets no neighbor dialogues (JW content).
+    if site != "ulsan":
+        from jw_extraction.engine import ExtractionEngine as GeneralPdfEngine
+        general_pdf_rows = GeneralPdfEngine(profile="general").load_general_output()["learningData"]
+        material_counts = {
+            "daily": len(DAILY_CONVERSATIONS),
+            "culture": len(CULTURE_ARTICLES),
+            "pdf_sentence": len(general_pdf_rows.get("sentences") or []),
+            "pdf_grammar": len(general_pdf_rows.get("grammar") or []),
+        }
+        if site != "general":
+            material_counts["neighbor"] = len(NEIGHBOR_CONVERSATIONS)
+        curr_weeks, curr_assignments = add_general_materials(curr_weeks, curr_assignments, material_counts)
+    if site == "jw":
+        curr_weeks, curr_assignments = remove_jw_event_items(curr_weeks, curr_assignments)
 
     parts.append(emit("CURR_WELCOME", curr_welcome))
     parts.append(emit("CURR_PHASES", curr_phases))
@@ -702,7 +760,8 @@ def build_data_js(site):
     unified_words = build_unified_words(
         site, BASIC_WORD_GROUPS, freq_vocab, vocab_theo, BIBLE_NAMES,
         RHYME_GROUPS, WORD_ORDER_REVERSED_EXTRA, vocab_groups, ANTONYM_PAIRS,
-        USER_NEW_WORDS, corpus_text, RELIGIOUS_FILTER_TERMS
+        USER_NEW_WORDS, corpus_text, RELIGIOUS_FILTER_TERMS,
+        dialect_words=DIALECT_WORDS, lff_conversations=LFF_CONVERSATIONS
     )
     from jw_extraction.engine import ExtractionEngine
     from general_pdf_data import merge_pdf_words

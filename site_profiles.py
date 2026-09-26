@@ -142,6 +142,11 @@ SITE_TITLES = {
         "cross_link": {
             "url": "https://jeonju.hoc.tieng.viet.mobile",
             "text": "전주 학습반?",
+            # The regional-class links are for Korean-speaking learners only.
+            "ko_only": True,
+            "extra_links": [
+                {"url": "https://ulsan.hoc.tieng.viet.mobile", "text": "울산 학습반?"},
+            ],
         },
     },
     "general": {

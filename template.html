@@ -232,11 +232,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
     margin-top: 36px;
     margin-bottom: 16px;
     padding: 0 16px;
     min-height: 32px;
   }
+  .site-cross-link-wrap[hidden] { display: none; }
   .site-cross-link {
     color: #1a365d;
     font-family: var(--font-kr), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -633,7 +636,7 @@
      visually equal to the BÀI label. Appendix C's long translation deliberately
      starts on its own line, aligned with the Vietnamese title rather than BÀI. */
   .lpd-title { display: inline-block; vertical-align: top; }
-  .lpd-title-vi { color: var(--ink); font-family: var(--font-vn); font-weight: 800; font-size: 1.05rem; }
+  .lpd-title-vi { color: var(--accent); font-family: var(--font-vn); font-weight: 800; font-size: 1.05rem; }
   .lpd-title-translation { color: var(--ink-faint); }
   .lpd-title.is-appendix-title .lpd-title-translation { display: block; margin-top: 2px; }
 
@@ -694,6 +697,17 @@
   .group-head .ch { font-family: var(--font-vn); font-weight: 800; color: var(--accent); }
   .group-head .syl { font-family: var(--font-vn); font-weight: 800; font-size: 1.05rem; color: var(--accent); }
   .group-head .cnt { font-size: 0.75rem; color: var(--ink-faint); font-weight: 600; }
+  /* [문장] > [파수대] week header: date and Vietnamese article title share the week label's
+     type (.syl); the selected-language article title sits below them, one step quieter. */
+  .wt-head > .syl:not(.wt-date) { margin-right: 0.5em; }
+  .wt-head .wt-article { display: block; margin-top: 2px; }
+  .wt-head .wt-article-tr { display: block; margin-top: 1px; font-size: 0.9rem; font-weight: 600; color: var(--ink-soft); }
+  .wt-head .cnt { display: block; margin-top: 2px; }
+  /* [문장] > [행복한 삶을 영원히] lesson header: the Vietnamese title matches "Bài N" in size and
+     weight, a clear gap follows the number, and the translation is one step below the title. */
+  #curr-lff-root .group-head .syl { margin-right: 0.35em; }
+  #curr-lff-root .lff-title-vi { font-family: var(--font-vn); font-size: 1.05rem; font-weight: 800; }
+  #curr-lff-root .lff-title-translation { font-size: 0.95rem; font-weight: 600; }
   .group-head .chev { color: var(--ink-faint); transition: transform .15s; flex: none; }
   .group-card[data-open="true"] .chev { transform: rotate(180deg); }
   .group-body { display: none; padding: 0 15px 13px; }
@@ -889,7 +903,7 @@
      wrapping back to 1 after 10) by assignPastelSlots() in app_logic.js. --pastel-rgb here is
      just the neutral fallback shown for the instant before that JS runs. */
   .tab-btn, .subtab-btn, .study-mode-btn, .foot-btn, .study-chip, .read-all-btn,
-  .word-tag-pill, .tag-filter-btn, .word-freq-badge {
+  .word-tag-pill, .tag-filter-btn, .word-freq-badge, .review-dd {
     --pastel-rgb: 216 220 206;
     background-color: rgb(var(--pastel-rgb) / var(--pastel-fill-a));
     background-image: var(--droplet-gloss);
@@ -906,7 +920,7 @@
      .read-all-btn[data-playing="true"] (전체 듣기 재생 중) all share this same treatment rather
      than a plain solid --accent fill, so every one of them reads as the same pastel-droplet
      family as the tabs above them. */
-  .tab-btn[aria-selected="true"], .subtab-btn[aria-selected="true"],
+  .tab-btn[aria-selected="true"], .subtab-btn[aria-selected="true"], .review-dd[aria-selected="true"],
   .study-mode-btn[aria-selected="true"], .foot-btn.primary,
   .study-chip.placed, .read-all-btn[data-playing="true"] {
     background-color: rgb(var(--pastel-rgb) / var(--pastel-selected-a));
@@ -1329,7 +1343,7 @@
   .song-ctrl-main-title {
     font-weight: 700;
     font-size: 0.95rem;
-    color: var(--ink);
+    color: var(--accent);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1394,7 +1408,7 @@
     font-family: var(--font-vn);
     font-size: 1.25rem;
     font-weight: 800;
-    color: var(--ink);
+    color: var(--accent);
     margin: 0 0 3px;
     line-height: 1.35;
   }
@@ -2068,21 +2082,14 @@
 
   /* Soft square-drop tabs retain a clear selected state in light and dark themes. */
   .subtab-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; margin-bottom: 10px; }
+  /* Lower menus use the same pastel droplet colors as the top tabs (see "Pastel droplet
+     buttons"): only shape/size is set here, never a separate accent-tinted face. */
   .subtab-btn {
     min-width: 0; width: 100%; min-height: 44px; white-space: normal; text-align: center;
     overflow-wrap: anywhere; line-height: 1.25; font-weight: 750;
-    border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--border));
     border-radius: 14px 0 14px 0;
-    background: color-mix(in srgb, var(--accent) 8%, var(--surface));
     color: var(--ink);
   }
-  .subtab-btn[aria-selected="true"] {
-    background: color-mix(in srgb, var(--accent) 22%, var(--surface));
-    border-color: color-mix(in srgb, var(--accent) 50%, var(--border));
-    color: var(--accent);
-    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 12%, transparent);
-  }
-  .subtab-btn:hover { background: color-mix(in srgb, var(--accent) 16%, var(--surface)); }
   #panel-grammar > .subtab-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   #panel-wizard > .subtab-row, #panel-bible > .subtab-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   /* 노래/발음/성경/대화/어휘/문장/문법: always 7 across in a single row, even on narrow phones. */
@@ -2298,6 +2305,36 @@
     opacity: 0.35;
     cursor: default;
   }
+  /* [전체] + one dropdown per group (행복한 삶을 영원히 parts, 노래 30-song ranges): each control
+     is as wide as its own label and the row wraps when the screen is too narrow. */
+  .review-subscope-row.is-multi { flex-wrap: wrap; justify-content: flex-start; gap: 4px; padding: 0; }
+  .review-subscope-row.is-multi > .subtab-btn,
+  .review-subscope-row.is-multi > .review-dd {
+    flex: 0 1 auto;
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    min-height: 30px;
+    padding: 4px 8px;
+    border-radius: 8px 0 8px 0;
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--ink);
+  }
+  .review-subscope-row.is-multi > .review-dd {
+    field-sizing: content;
+    padding-right: 4px;
+    background-color: rgb(var(--pastel-rgb) / var(--pastel-fill-a));
+    background-image: var(--droplet-gloss);
+    border: 1px solid rgb(var(--pastel-rgb) / var(--pastel-border-a));
+  }
+  .review-subscope-row.is-multi > .review-dd[aria-selected="true"] {
+    background-color: rgb(var(--pastel-rgb) / var(--pastel-selected-a));
+    border-width: 2px;
+    border-color: color-mix(in srgb, rgb(var(--pastel-rgb)) 55%, var(--ink) 45%);
+  }
   /* The first subtab row starts directly under the primary navigation in every section. */
   .app main { padding-top: 0; }
   .panel > .subtab-row:first-child { padding-top: 2px; }
@@ -2394,37 +2431,51 @@
     box-shadow: var(--droplet-shadow);
     transition: background-color .15s, border-color .15s, box-shadow .15s;
   }
-  /* Word tag pills: every color derives from theme variables (defined for light AND dark), tinted per tag type.
-     --tag-hue is mixed into the surface for the background and into --ink for the text, so contrast follows the theme. */
+  /* Word tags ([어휘] > [단어]): each tag has one hue (--pastel-rgb, set by its tag-k-<key> class),
+     shared by its filter button and by the small pill under every word carrying it, so a pill
+     and its filter always match. Same droplet face as every other nav control. */
   .word-tag-pill {
-    --tag-hue: var(--ink-soft);
     display: inline-flex;
     align-items: center;
     font-size: 0.7rem;
     font-weight: 600;
     padding: 1px 6px;
     border-radius: 8px 0 8px 0;
-    background-color: color-mix(in srgb, var(--tag-hue) 16%, var(--surface));
-    background-image: var(--droplet-gloss);
-    color: color-mix(in srgb, var(--tag-hue) 55%, var(--ink));
-    border: 1px solid color-mix(in srgb, var(--tag-hue) 45%, var(--border));
-    box-shadow: var(--droplet-shadow);
-    transition: background-color .15s, border-color .15s, box-shadow .15s;
+    color: var(--ink);
   }
-  .word-tag-pill.tag-freq { --tag-hue: #2F6FD6; }     /* 상용 */
-  .word-tag-pill.tag-sino { --tag-hue: #C27A12; }     /* 한자음 */
-  .word-tag-pill.tag-theo { --tag-hue: #8455D4; }     /* 신권 */
-  .word-tag-pill.tag-reversed { --tag-hue: #0F8C80; } /* 어순반대 */
-  .word-tag-pill.tag-homo { --tag-hue: #D0365E; }     /* 동일음 */
-  .word-tag-pill.tag-base, #vocab-tag-filters .tag-filter-btn:nth-child(2) { --pastel-rgb: 235 198 226; }
-  .word-tag-pill.tag-freq, #vocab-tag-filters .tag-filter-btn:nth-child(3) { --pastel-rgb: 214 195 242; }
-  .word-tag-pill.tag-sino, #vocab-tag-filters .tag-filter-btn:nth-child(4) { --pastel-rgb: 224 190 150; }
-  .word-tag-pill.tag-reversed, #vocab-tag-filters .tag-filter-btn:nth-child(5) { --pastel-rgb: 235 170 185; }
-  .word-tag-pill.tag-homo, #vocab-tag-filters .tag-filter-btn:nth-child(6) { --pastel-rgb: 246 203 221; }
-  .word-tag-pill.tag-antonym, #vocab-tag-filters .tag-filter-btn:nth-child(7) { --pastel-rgb: 248 211 174; }
-  .word-tag-pill.tag-pdf, #vocab-tag-filters .tag-filter-btn:nth-child(8) { --pastel-rgb: 246 233 169; }
-  #vocab-tag-filters .tag-filter-btn:nth-child(1) { --pastel-rgb: 214 195 242; }
-  #vocab-tag-filters .tag-filter-btn:nth-child(9) { --pastel-rgb: 185 226 247; }
+  #vocab-root.hide-word-tags .word-tag-pill { display: none; }
+  #vocab-root .word-tag-toggle { min-height: 0; padding: 4px 8px; }
+  .tag-k-all   { --pastel-rgb: 128 132 140; } /* 전체: 진회색 */
+  .tag-k-base  { --pastel-rgb: 160 120 230; } /* 기본: 보라 */
+  .tag-k-freq  { --pastel-rgb: 200 90 170; }  /* 상용: 자주 */
+  .tag-k-theo  { --pastel-rgb: 170 95 75; }   /* 신권: 고동 */
+  .tag-k-names { --pastel-rgb: 185 135 85; }  /* 인명: 갈색 */
+  .tag-k-sino  { --pastel-rgb: 225 75 70; }   /* 한자: 빨강 */
+  .tag-k-order { --pastel-rgb: 240 130 175; } /* 어순: 분홍 */
+  .tag-k-homo  { --pastel-rgb: 240 145 60; }  /* 동일: 주황 */
+  .tag-k-ant   { --pastel-rgb: 235 200 50; }  /* 반의: 노랑 */
+  .tag-k-daily { --pastel-rgb: 150 205 80; }  /* 일상: 연두 */
+  .tag-k-lff   { --pastel-rgb: 60 170 95; }   /* 행누: 초록 */
+  .tag-k-song  { --pastel-rgb: 70 140 235; }  /* 노래: 파랑 */
+  .tag-k-jw    { --pastel-rgb: 40 85 200; }   /* JW: 진파랑 */
+  .tag-k-wt    { --pastel-rgb: 120 140 200; } /* WT: 연네이비 */
+  .tag-k-ns    { --pastel-rgb: 45 60 125; }   /* 남북: 진곤색 */
+  .tag-k-elf   { --pastel-rgb: 30 170 170; }  /* 영원히: 청록 */
+  /* Selected filters use the full hue: the darkest hues need light text on it in light mode,
+     and the lightest ones a stronger fill (with dark text) in dark mode. */
+  .tag-k-all, .tag-k-theo, .tag-k-sino, .tag-k-jw, .tag-k-ns { --tag-selected-ink: #FFFFFF; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .tag-k-all, :root:not([data-theme="light"]) .tag-k-theo,
+    :root:not([data-theme="light"]) .tag-k-sino, :root:not([data-theme="light"]) .tag-k-jw,
+    :root:not([data-theme="light"]) .tag-k-ns { --tag-selected-ink: var(--ink); }
+    :root:not([data-theme="light"]) .tag-k-ant, :root:not([data-theme="light"]) .tag-k-daily,
+    :root:not([data-theme="light"]) .tag-k-homo, :root:not([data-theme="light"]) .tag-k-order { --pastel-selected-a: 0.85; --tag-selected-ink: #202A22; }
+  }
+  :root[data-theme="dark"] .tag-k-all, :root[data-theme="dark"] .tag-k-theo,
+  :root[data-theme="dark"] .tag-k-sino, :root[data-theme="dark"] .tag-k-jw,
+  :root[data-theme="dark"] .tag-k-ns { --tag-selected-ink: var(--ink); }
+  :root[data-theme="dark"] .tag-k-ant, :root[data-theme="dark"] .tag-k-daily,
+  :root[data-theme="dark"] .tag-k-homo, :root[data-theme="dark"] .tag-k-order { --pastel-selected-a: 0.85; --tag-selected-ink: #202A22; }
   #panel-vocab > .subtab-row:first-child { margin-bottom: 3px; }
   #vocab-tag-filters .tag-filter-btn,
   #vocab-root .word-freq-badge,
@@ -2567,7 +2618,7 @@
     row-gap: 4px !important;
   }
   html body #vocab-tag-filters.tag-filter-row {
-    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    grid-template-columns: repeat(var(--tag-cols, 5), minmax(0, 1fr)) !important;
     grid-auto-flow: row !important;
     grid-auto-columns: auto !important;
     grid-auto-rows: minmax(0, auto);
@@ -2575,9 +2626,7 @@
     overflow: visible;
   }
   html body #review-scope-tabs[data-scope-category="song"] {
-    grid-template-columns: repeat(10, minmax(0, 1fr)) !important;
-    grid-auto-flow: row !important;
-    grid-auto-columns: auto !important;
+    display: none !important;
   }
   html body #review-scope-tabs[data-scope-category="sentence"] {
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
@@ -2622,7 +2671,14 @@
   html body #vocab-tag-filters.tag-filter-row > .tag-filter-btn {
     white-space: normal;
     overflow-wrap: anywhere;
+    min-height: 30px;
+    padding: 3px 0;
+    font-size: clamp(0.56rem, 2.4vw, 0.78rem);
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
   }
+  html body #vocab-tag-filters.tag-filter-row { column-gap: 2px !important; }
   html body .read-all-btn,
   html body .curr-link-btn,
   html body .word-freq-badge,
@@ -2630,6 +2686,11 @@
     border: 1px solid rgb(var(--pastel-rgb) / var(--pastel-border-a));
     min-height: 0;
     padding: 4px 8px;
+  }
+  html body .word-tag-pill {
+    background-color: rgb(var(--pastel-rgb) / var(--pastel-fill-a));
+    padding: 2px 6px;
+    font-size: 0.7rem;
   }
   html body #vocab-tag-filters .tag-filter-btn {
     background-color: rgb(var(--pastel-rgb) / var(--pastel-fill-a));
@@ -2647,7 +2708,7 @@
     background-image: var(--droplet-gloss);
     border-color: color-mix(in srgb, rgb(var(--pastel-rgb)) 55%, var(--ink) 45%);
     box-shadow: var(--droplet-shadow-selected);
-    color: var(--ink);
+    color: var(--tag-selected-ink, var(--ink));
   }
   .word-antonym-box {
     margin-top: 6px;
@@ -2895,6 +2956,9 @@
   }
 
   /* Culture compact cards */
+  .culture-fold .culture-fold-head { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; text-align: left; }
+  .culture-fold .culture-card-title { display: block; margin-bottom: 0; }
+  .culture-fold .culture-card { padding: 0 15px 12px; }
   .culture-category-badge {
     display: inline-block;
     font-size: 0.72rem;

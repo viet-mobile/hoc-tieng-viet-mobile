@@ -67,7 +67,11 @@ def apply_site_identity(html_text, site):
         cross_link_markup = (
             f'<div class="site-cross-link-wrap">'
             f'<a id="site-cross-link" class="site-cross-link" href="{url}">{initial_text}</a>'
-            f'</div>'
+            + "".join(
+                f'<a class="site-cross-link" href="{extra["url"]}">{extra["text"]}</a>'
+                for extra in link_info.get("extra_links", [])
+            )
+            + f'</div>'
         )
         out = out.replace("<!-- __SITE_CROSS_LINK__ -->", cross_link_markup, 1)
     else:

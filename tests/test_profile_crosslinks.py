@@ -32,6 +32,8 @@ class TestProfileCrossLinks(unittest.TestCase):
         cross_link = jw_title["cross_link"]
         self.assertEqual(cross_link["url"], "https://jeonju.hoc.tieng.viet.mobile")
         self.assertEqual(cross_link.get("text"), "전주 학습반?")
+        self.assertTrue(cross_link.get("ko_only"))
+        self.assertEqual(cross_link["extra_links"], [{"url": "https://ulsan.hoc.tieng.viet.mobile", "text": "울산 학습반?"}])
 
     def test_jeonju_cross_link_config(self):
         jeonju_title = SITE_TITLES["jeonju"]
@@ -86,11 +88,12 @@ class TestProfileCrossLinks(unittest.TestCase):
         self.assertNotIn("ULSAN_INFO", general_html)
         self.assertNotIn("ULSAN_WEEKS", general_html)
 
-        # JW check: has cross link to jeonju, does NOT have link to jw or ulsan
+        # JW check: Korean-only footer links to the jeonju and ulsan class sites
         self.assertIn('id="site-cross-link"', jw_html)
         self.assertIn('href="https://jeonju.hoc.tieng.viet.mobile"', jw_html)
         self.assertIn('전주 학습반?', jw_html)
-        self.assertNotIn('href="https://ulsan.hoc.tieng.viet.mobile"', jw_html)
+        self.assertIn('href="https://ulsan.hoc.tieng.viet.mobile"', jw_html)
+        self.assertIn('울산 학습반?', jw_html)
         self.assertNotIn("JEONJU_INFO", jw_html)
         self.assertNotIn("JEONJU_WEEKS", jw_html)
         self.assertNotIn("ULSAN_INFO", jw_html)
