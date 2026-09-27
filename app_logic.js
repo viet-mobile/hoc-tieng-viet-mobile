@@ -6928,7 +6928,54 @@ function verifyDistribution(units, dist, pins) {
   function isDashCitation(s) {
     return /^[—–]/.test(s);
   }
-  function sentencePairs(vietnamese, meaning) {
+  // [문장] reading only (sentencePairs(..., { colonLists: true })): a source paragraph that introduces a
+  // list of questions with a colon ("… những câu hỏi quan trọng như: Sự sống bắt đầu như thế nào? …")
+  // while the translation ends that sentence with a full stop ("… 답을 알려 줍니다. 생명은 …?") splits
+  // into different sentence counts, so it stayed one long pair. Such a colon also ends a sentence when
+  // that makes the counts equal AND every pair agrees on question vs statement, on its numbers and on its
+  // share of the paragraph -- with at least one question and one statement, so the pattern itself
+  // confirms the alignment. Anything short of that keeps the whole paragraph as one (correct) pair.
+  // Only a colon that opens a QUESTION ("như: Sự sống bắt đầu như thế nào?"): after a colon that opens
+  // a quotation or an explanation ("Kinh Thánh nói: “…”") translations regroup the words too freely
+  // for any check here to confirm the pairing (audited on LFF/LPD: such pairs came out shifted).
+  function splitAtListColons(parts) {
+    var out = [];
+    parts.forEach(function (p) {
+      var m = /^(.*?[:：])\s*([“"‘「『]?[A-ZÀ-Ỹ가-힣\u3040-\u30ff\u4e00-\u9fff].*)$/.exec(p);
+      if (m && isQuestionPart(m[2]) && !isQuestionPart(m[1]) && !/[:：]/.test(m[2])) {
+        out.push(m[1].trim(), m[2].trim());
+      } else out.push(p);
+    });
+    return out;
+  }
+  function isQuestionPart(s) {
+    var t = String(s).replace(/[\s”"’'」』)）\]]+$/, "");
+    return /[?？]$/.test(t) || /か。?$/.test(t);
+  }
+  function numbersKey(s) {
+    return (String(s).replace(/(\d)[.,   ](?=\d{3}(?!\d))/g, "$1").match(/\d+/g) || []).map(Number).sort(function (a, b) { return a - b; }).join(",");
+  }
+  function colonListPairs(viParts, meaningParts) {
+    var tries = [[splitAtListColons(viParts), meaningParts], [viParts, splitAtListColons(meaningParts)],
+      [splitAtListColons(viParts), splitAtListColons(meaningParts)]];
+    for (var k = 0; k < tries.length; k++) {
+      var a = tries[k][0], b = tries[k][1];
+      if (a.length !== b.length || a.length < 2) continue;
+      var ta = a.join("").length || 1, tb = b.join("").length || 1;
+      var questions = 0, ok = true;
+      for (var i = 0; i < a.length && ok; i++) {
+        var q = isQuestionPart(a[i]);
+        if (q !== isQuestionPart(b[i]) || numbersKey(a[i]) !== numbersKey(b[i]) ||
+            Math.abs(a[i].length / ta - b[i].length / tb) > 0.2) ok = false;
+        if (q) questions++;
+      }
+      if (ok && questions > 0 && questions < a.length) {
+        return a.map(function (vi, i) { return { vi: vi, kr: b[i] }; });
+      }
+    }
+    return null;
+  }
+  function sentencePairs(vietnamese, meaning, opts) {
     var viParts = splitSentences(vietnamese);
     if (viParts.length < 2) return [{ vi: String(vietnamese || "").trim(), kr: String(meaning || "").trim() }];
     var meaningParts = splitSentences(meaning);
@@ -6951,6 +6998,8 @@ function verifyDistribution(units, dist, pins) {
       pairs = [];
     } else if (meaningParts.length === viParts.length) {
       pairs = viParts.map(function (vi, i) { return { vi: vi, kr: meaningParts[i] }; });
+    } else if (opts && opts.colonLists && (pairs = colonListPairs(viParts, meaningParts))) {
+      // see colonListPairs()
     } else {
       // The translation splits/joins sentences differently than the Vietnamese does. Spreading one
       // side's sentences proportionally over the other's paired sentences that do not correspond
@@ -7324,7 +7373,7 @@ function verifyDistribution(units, dist, pins) {
       var lineUnits = [];
       lffDisplayLines(rec).forEach(function (line) {
         var vi = applyLffListenerTerms(line.vi);
-        sentencePairs(vi, T(line)).forEach(function (pair) {
+        sentencePairs(vi, T(line), { colonLists: true }).forEach(function (pair) {
           lineUnits.push({ vi: pair.vi, kr: pair.kr });
         });
       });
@@ -7414,7 +7463,7 @@ function verifyDistribution(units, dist, pins) {
           var item = applyLpdTerms(line);
           lineUnits.push({ vi: item.vi, kr: item.kr });
         } else {
-          sentencePairs(line.vi, T(line)).forEach(function (pair) {
+          sentencePairs(line.vi, T(line), { colonLists: true }).forEach(function (pair) {
             lineUnits.push({ vi: pair.vi, kr: pair.kr });
           });
         }
