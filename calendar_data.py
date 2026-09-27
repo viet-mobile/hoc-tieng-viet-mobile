@@ -132,7 +132,7 @@ DATE_ORDER_NOTE = {'ko': '베트남어는 날짜를 말할 때 요일, 날짜, �
        'năm 2024 — Thursday, the 15th, March, 2024). This is the exact reverse of the year → month → date → '
        'day-of-week order used in Korean, Chinese, and Japanese.',
  'ja': 'ベトナム語で日付を言うときは、曜日→日にち→月→年の順に言います(例:Thứ Năm, ngày 15, tháng 3, năm 2024 —— '
-       '木曜日、15日、3월、2024年)。これは韓国語・中国語・日本語で年→月→日→曜日の順に言うのとちょうど反対の順序です。',
+       '木曜日、15日、3月、2024年)。これは韓国語・中国語・日本語で年→月→日→曜日の順に言うのとちょうど反対の順序です。',
  'de': 'Im Vietnamesischen nennt man bei einem Datum Wochentag, Tag, Monat und Jahr in dieser Reihenfolge (z. B. Thứ '
        'Năm, ngày 15, tháng 3, năm 2024 – Donnerstag, 15. März 2024). Dies entspricht der im Deutschen üblichen '
        'Reihenfolge, ist jedoch genau umgekehrt zur Reihenfolge Jahr → Monat → Tag → Wochentag im Koreanischen, '

@@ -20,6 +20,7 @@ GRAMMAR_INTRO = apply_grammar_lessons_ai_translations(GRAMMAR_INTRO)  # fills cs
 GRAMMAR_UNITS = apply_grammar_lessons_ai_translations(GRAMMAR_UNITS)
 from user_words_data import USER_NEW_WORDS
 from unified_words_builder import gather_learning_corpus, build_unified_words
+from word_meanings_extended import apply_extended_meanings, with_extended_meanings
 from sentence_builder_data import (SB_PRONOUNS, SB_NOUN_SUBJECTS, SB_INTRANS_VERBS, SB_TRANS_VERBS,
                                     SB_AUX_VERBS, SB_OBJECT_NOUNS, SB_ADJECTIVES, SB_CONNECTIVES,
                                     SB_TIME_ADV, SB_PLACE_ADV, SB_MANNER_ADV, SB_SENTENCE_TYPES, SB_WH_WORDS,
@@ -624,12 +625,14 @@ def build_data_js(site):
 
     parts = ["\n"]
     parts.append(emit("CASES", app_data))
-    parts.append(emit("VOCAB_CHAIN", vocab_chain))
-    parts.append(emit("VOCAB_GROUPS", vocab_groups))
-    parts.append(emit("VOCAB_THEO", vocab_theo))
-    parts.append(emit("FREQ_VOCAB", freq_vocab))
-    parts.append(emit("RHYME_GROUPS", RHYME_GROUPS))
-    parts.append(emit("WORD_ORDER_REVERSED_EXTRA", WORD_ORDER_REVERSED_EXTRA))
+    # [어휘] source lists are emitted with the curated zh_cn/cs/hu/id meanings (word_meanings_extended.py) filled
+    # in on a copy; the lists themselves stay as loaded, so UNIFIED_WORDS below is built from the originals.
+    parts.append(emit("VOCAB_CHAIN", with_extended_meanings("VOCAB_CHAIN", vocab_chain)))
+    parts.append(emit("VOCAB_GROUPS", with_extended_meanings("VOCAB_GROUPS", vocab_groups)))
+    parts.append(emit("VOCAB_THEO", with_extended_meanings("VOCAB_THEO", vocab_theo)))
+    parts.append(emit("FREQ_VOCAB", with_extended_meanings("FREQ_VOCAB", freq_vocab)))
+    parts.append(emit("RHYME_GROUPS", with_extended_meanings("RHYME_GROUPS", RHYME_GROUPS)))
+    parts.append(emit("WORD_ORDER_REVERSED_EXTRA", with_extended_meanings("WORD_ORDER_REVERSED_EXTRA", WORD_ORDER_REVERSED_EXTRA)))
     parts.append(emit("TONE_ZH_CORR", TONE_ZH_CORR))
     parts.append(emit("TONES", TONES))
     parts.append(emit("ALPHABET", ALPHABET))
@@ -747,9 +750,9 @@ def build_data_js(site):
     parts.append(emit("DAILY_CONVERSATIONS", DAILY_CONVERSATIONS))
     parts.append(emit("LFF_CONVERSATIONS", LFF_CONVERSATIONS))
     parts.append(emit("LPD_LESSONS", LPD_LESSONS))
-    parts.append(emit("BIBLE_NAMES", BIBLE_NAMES))
-    parts.append(emit("BASIC_WORD_GROUPS", BASIC_WORD_GROUPS))
-    parts.append(emit("ANTONYM_PAIRS", ANTONYM_PAIRS))
+    parts.append(emit("BIBLE_NAMES", with_extended_meanings("BIBLE_NAMES", BIBLE_NAMES)))
+    parts.append(emit("BASIC_WORD_GROUPS", with_extended_meanings("BASIC_WORD_GROUPS", BASIC_WORD_GROUPS)))
+    parts.append(emit("ANTONYM_PAIRS", with_extended_meanings("ANTONYM_PAIRS", ANTONYM_PAIRS)))
     parts.append(emit("SENT_GEN_INTRO", SENTENCE_GEN_INTRO))
     parts.append(emit("SENT_GEN_BANK", SENTENCE_GEN_BANK))
     parts.append(emit("SENT_GEN_STAGES", SENTENCE_GEN_STAGES))
@@ -759,7 +762,7 @@ def build_data_js(site):
     parts.append(emit("GX_POS_EXAMPLES", POSITION_EXAMPLES))
     parts.append(emit("GX_DIRECTION_DIALOGUES", DIRECTION_DIALOGUES))
     parts.append(emit("GRAMMAR_DICT", GRAMMAR_DICT))
-    parts.append(emit("DIALECT_WORDS", DIALECT_WORDS))
+    parts.append(emit("DIALECT_WORDS", with_extended_meanings("DIALECT_WORDS", DIALECT_WORDS)))
     parts.append(emit("CAL_MONTHS", MONTHS))
     parts.append(emit("CAL_DAYS", DAYS))
     parts.append(emit("CAL_SEASONS", SEASONS))
@@ -795,6 +798,8 @@ def build_data_js(site):
     from general_pdf_data import merge_pdf_words
     pdf_learning = ExtractionEngine(profile="general").load_general_output()["learningData"]
     unified_words = merge_pdf_words(unified_words, pdf_learning["words"])
+    # Curated zh_cn/cs/hu/id meanings per "vi|ko" sense; fills missing languages only.
+    apply_extended_meanings(unified_words)
     parts.append(emit("GENERAL_PDF", pdf_learning))
     # The PDF source only has vi/ko; GENERAL_PDF stays exactly as extracted. Machine translations of its
     # sentences (keyed by sentence id, never "ko"/"vi") are a separate constant.
@@ -823,6 +828,7 @@ def build_data_js(site):
         import jeonju_data
         parts.append(emit("JEONJU_INFO", jeonju_data.JEONJU_INFO))
         parts.append(emit("JEONJU_WEEKS", getattr(jeonju_data, "JEONJU_WEEKS", [])))
+        parts.append(emit("CLASS_ROSTER", jeonju_data.JEONJU_CLASS_ROSTER))
         parts.append(emit("REGIONAL_SCHEDULE", {
             "preliminaryMeetingDate": jeonju_data.JEONJU_PRELIMINARY_DATE,
             "courseStartDate": jeonju_data.JEONJU_COURSE_START_DATE,

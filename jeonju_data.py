@@ -50,6 +50,30 @@ def _build_weeks():
 
 JEONJU_WEEKS = _build_weeks()
 
+# Members' Korean and Vietnamese names, shown in the [과정] welcome card (supplied by the user as a table).
+# Each Vietnamese name has a listen button; the label of each group is bilingual, as in the source.
+JEONJU_CLASS_ROSTER = [
+    {"title": {"ko": "2026–2027 전주 베트남어 학습반 성원", "vi": "Thành viên lớp học tiếng Việt Jeonju năm 2026–2027"},
+     "members": [
+         ["김동주 형제", "anh Minh Phước"], ["김영임 자매", "chị Minh Thương"], ["김재윤 형제", "anh Tài Duẫn"],
+         ["오호경 자매", "chị Hồ Khánh"], ["김종배 형제", "anh Pháp"], ["최미순 자매", "chị Mỹ Xuân"],
+         ["박정환 형제", "anh Chính Hoan"], ["원혜진 자매", "chị Huệ Trân"], ["박철현 형제", "anh Triết Hiền"],
+         ["송제홍 형제", "anh Lý"], ["이수연 자매", "chị Xuyến"], ["이종명 형제", "anh Minh"],
+         ["이주옥 자매", "chị Ngọc"], ["이제희 어린이", "em Vy"], ["이제아 어린이", "em Nga"],
+         ["최영주 자매", "chị Châu"], ["한상현 형제", "anh Huyền"], ["한도희 형제", "anh Tươi"],
+         ["서주연 자매", "chị Quyên"], ["한정우 형제", "em Chính Du"],
+     ]},
+    {"title": {"ko": "전주 베트남어 집단 성원", "vi": "Thành viên nhóm tiếng Việt Jeonju"},
+     "members": [
+         ["최찬호 형제", "anh Lam Phong"], ["이재순 자매", "chị Mỹ Duyên"], ["김한빈 형제", "anh Dương Bình"],
+         ["김수민 자매", "chị Ngọc Bích"], ["김예나 자매", "em Trang Thanh"], ["진마이 자매", "chị Mai"],
+         ["김소영 자매", "chị Mỹ Tâm"],
+         ["김종현 형제", "anh Minh Trường"], ["김대훈 형제", "anh Huấn"], ["박준우 형제", "anh Anh Duy"],
+     ]},
+    {"title": {"ko": "강사", "vi": "Giảng viên"},
+     "members": [["이주복 형제", "anh Thành Trung"]]},
+]
+
 # Regional editing boundary: [교과] / [16주 과정] overrides
 # When None, build_app.py inherits the shared JW CURR_WEEKS, CURR_WELCOME, CURR_PHASES, CURR_ASSIGNMENTS.
 JEONJU_CURR_WELCOME = None

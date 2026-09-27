@@ -2906,7 +2906,7 @@
     "妻が夫に心から敬意を払うことは大切。": "妻が夫に心から敬意を払うことは大切です。",
     "結婚の絆を大切にする夫婦はうまくいく。": "結婚の絆を大切にする夫婦はうまくいきます。",
     "親を敬って言うことを聞く子供は幸せになれる。": "親を敬って言うことを聞く子供は幸せになれます。",
-    "神には名前がある。": "神에는名前があります。",
+    "神には名前がある。": "神には名前があります。",
     "神は人間に自分の考えを伝えている。": "神は人間に自分の考えを伝えています。",
     "神は誰に対しても公平。": "神は誰に対しても公平です。",
     "神は私たちのことを助けたいと思っている。": "神は私たちのことを助けたいと思っています。",
@@ -5671,7 +5671,11 @@
   function curriculumLinkForWeek(link, weekKey) {
     if (!link || link.subAttr !== "sentence" || link.subVal !== "wt") return link;
     if (Number(weekKey) === 16) return { tab: "review", reviewScope: "wt", reviewMode: "order" };
-    var range = watchtowerRange(courseWatchtowerWeek(weekKey));
+    // JEONJU's class week N studies the JW course's N주차 collection (1주 = 245–295), one slot earlier than
+    // its own week key; week 0 (the welcome homework) keeps the first collection.
+    var slotKey = window.SITE_PROFILE === "jeonju" && Number(weekKey) >= 1 && Number(weekKey) <= 15 ?
+      Number(weekKey) - 1 : weekKey;
+    var range = watchtowerRange(courseWatchtowerWeek(slotKey));
     if (!range) return null;
     var adjusted = Object.assign({}, link);
     adjusted.vocabRange = range;
@@ -5697,7 +5701,9 @@
     if (currentLang !== "ko") return text;
     if (/^베트남어 파수대 어휘 50개 학습/.test(text)) {
       if (Number(weekKey) === 16) return "베트남어 파수대 어휘 및 문장 복습";
-      var number = courseStudyNumber(weekKey);
+      // JEONJU numbers the study by its own class weeks (1주 수업 = 1주차); the JW course counts one ahead.
+      var number = window.SITE_PROFILE === "jeonju" ?
+        (Number(weekKey) >= 1 && Number(weekKey) <= 15 ? Number(weekKey) : null) : courseStudyNumber(weekKey);
       if (number) return "베트남어 파수대 어휘 50개 학습 " + number + "주차";
     }
     return text;
@@ -6453,6 +6459,21 @@ function verifyDistribution(units, dist, pins) {
       });
       html += '</div>';
     }
+    // Class members' Korean / Vietnamese names (JEONJU), each Vietnamese name with a listen button.
+    if (typeof CLASS_ROSTER !== "undefined" && CLASS_ROSTER.length) {
+      html += '<div class="curr-roster"><div class="curr-roster-head"><span>한국어 이름</span><span>Tên tiếng Việt</span></div>';
+      CLASS_ROSTER.forEach(function (grp) {
+        html += '<div class="curr-roster-group"><div class="curr-roster-title">' + escapeHtml(grp.title.ko) +
+          '<span class="curr-roster-title-vi vn">' + escapeHtml(grp.title.vi) + '</span></div>';
+        grp.members.forEach(function (m) {
+          html += '<div class="curr-roster-row"><span class="curr-roster-ko">' + escapeHtml(m[0]) + '</span>' +
+            '<span class="curr-roster-vi vn">' + escapeHtml(m[1]) +
+            '<button class="speak-btn" data-speak="' + escapeAttr(m[1]) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></span></div>';
+        });
+        html += '</div>';
+      });
+      html += '</div>';
+    }
 
     // The first week's homework belongs at the bottom of the welcome card (if configured)
     if (!sched || sched.status !== "unconfigured") {
@@ -6657,6 +6678,7 @@ function verifyDistribution(units, dist, pins) {
     });
     bindCurrGroupCards(root);
     bindGotoButtons(root);
+    if (welcomeCard) bindCurrSpeakBtns(welcomeCard);
   }
 
   function renderCurrCulture() {

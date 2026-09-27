@@ -6,7 +6,8 @@
 //     item's own text in the UI language -- never Korean in another language, never anything in Vietnamese
 //     (the studied language itself) except language-neutral answers (numbers, letters, the 호칭 table);
 //   - a TARGET_ONLY pool (어순 배열/받아쓰기) keeps every item, with or without a meaning;
-//   - real items from the shipped data are asked in their language (cs/zh_cn/hu/id/vi asserted by name);
+//   - real items from the shipped data are asked in their language (cs/zh_cn/hu/id/vi asserted by name), and word
+//     review in cs/zh_cn/hu/id uses each word's own meaning in that language (word_meanings_extended.py);
 //   - on screen, a card shows exactly that language's meaning.
 // JW Study sites: per language, source and mode the review shows exactly the rows the data allows, recall asks
 // with the row's own UI-language text, and listen/order never depend on a translation.
@@ -43,8 +44,8 @@ async function vietnameseMatrix(LANGS) {
       check(to.length >= tr.length, lang + ' ' + key + '/' + scope + ': target-only pool smaller than translation pool');
       check(tr.every(it => it.kr && it.kr.trim()), lang + ' ' + key + '/' + scope + ': item without meaning in a translation-required pool');
       if (lang !== 'ko' && key + '|' + scope !== 'pron|alphabet') {
-        // Korean text where this language's is expected (a zh/ja line with a stray Hangul typo is still that
-        // language's own line: "神에는名前があります。" in LPD's Japanese).
+        // Korean text where this language's is expected (a zh/ja line that also has a stray Hangul typo is still
+        // that language's own line).
         const own = /^(zh|zh_cn|ja)$/.test(lang) ? /[\u3040-\u30ff\u4e00-\u9fff]/ : null;
         const kor = tr.filter(it => /[가-힣]/.test(it.kr) && !(own && own.test(it.kr)));
         check(!kor.length, lang + ' ' + key + '/' + scope + ': Korean meaning ' + (kor[0] && kor[0].kr));
@@ -83,24 +84,70 @@ async function vietnameseMatrix(LANGS) {
       if (lang === 'vi') check(pool.length > 0, 'vi: LFF sentences missing from 어순 배열');
     }
   }
-  // cs / zh_cn / hu / id: the one word the word list has in these languages ("anh"), asked with exactly it.
+  // cs / zh_cn / hu / id: the [어휘] meanings of word_meanings_extended.py. Every word review item is asked with that
+  // language's own meaning of the word in one of the [어휘] lists -- never a ko/en/zh text in its place; the lists
+  // cover the pool except the REVIEW_REQUIRED senses (cs/hu/id) and words without a zh meaning (zh_cn); the
+  // existing meaning of "anh" is kept.
+  const EXT = ['cs', 'zh_cn', 'hu', 'id'];
+  const extValid = {};
   if (typeof UNIFIED_WORDS !== 'undefined') {
-    const anh = UNIFIED_WORDS.find(u => u.vi === 'anh');
-    for (const lang of ['cs', 'zh_cn', 'hu', 'id']) {
+    const own = {};
+    const add = (vi, m) => { if (vi && m && typeof m === 'object') { const k = String(vi).trim(); (own[k] = own[k] || []).push(m); } };
+    const hanjaGloss = w => { const g = {}; Object.keys(w.gloss || {}).forEach(l => { g[l] = w.gloss[l] + (w.hanja ? '(' + w.hanja + ')' : ''); }); return g; };
+    UNIFIED_WORDS.forEach(u => add(u.vi, u.kr));
+    (typeof RHYME_GROUPS !== 'undefined' ? RHYME_GROUPS : []).forEach(g => g.families.forEach(f => f.words.forEach(w => add(w.word, hanjaGloss(w)))));
+    (typeof WORD_ORDER_REVERSED_EXTRA !== 'undefined' ? WORD_ORDER_REVERSED_EXTRA : []).forEach(w => add(w.word, hanjaGloss(w)));
+    (typeof VOCAB_GROUPS !== 'undefined' ? VOCAB_GROUPS : []).forEach(g => g.words.forEach(w => add(w.word, w.meaning)));
+    (typeof VOCAB_CHAIN !== 'undefined' ? VOCAB_CHAIN : []).forEach(it => add(it.word, it.meaning));
+    (typeof VOCAB_THEO !== 'undefined' ? VOCAB_THEO : []).forEach(it => add(it.word, it.meaning));
+    (typeof FREQ_VOCAB !== 'undefined' ? FREQ_VOCAB : []).forEach(it => add(it.vi, it.kr));
+    (typeof BIBLE_NAMES !== 'undefined' ? BIBLE_NAMES : []).forEach(it => add(it.vi, it.kr));
+    (typeof BASIC_WORD_GROUPS !== 'undefined' ? BASIC_WORD_GROUPS : []).forEach(g => g.words.forEach(w => add(w.vi, w.kr)));
+    (typeof ANTONYM_PAIRS !== 'undefined' ? ANTONYM_PAIRS : []).forEach(p => { add(p.vi1, p.kr1); add(p.vi2, p.kr2); });
+    (typeof DIALECT_WORDS !== 'undefined' ? DIALECT_WORDS : []).forEach(d => { add(d.north.replace(/[/].*$/, ''), d.mean); add(d.south.replace(/[/].*$/, ''), d.mean); });
+    const anh = UNIFIED_WORDS.find(u => u.vi === 'anh' && u.kr.ko === '꽃부리 영(英), 맏 형(兄)');
+    check(anh && anh.kr.cs === 'květ, hrdina, Anglie; starší bratr' && anh.kr.zh_cn === '英才；兄', 'existing "anh" meanings changed');
+    window.setLang('zh'); await sleep(40);
+    const zhCount = window.reviewModePool('vocab', 'all', 'mcq').length;
+    for (const lang of EXT) {
       window.setLang(lang); await sleep(40);
       const words = window.reviewModePool('vocab', 'all', 'mcq');
-      check(anh && anh.kr[lang] && words.some(p => p.vi === 'anh' && p.kr === anh.kr[lang]), lang + ': "anh" not asked with its ' + lang + ' meaning');
-      check(words.every(p => UNIFIED_WORDS.some(u => u.vi === p.vi && u.kr && u.kr[lang] === p.kr)), lang + ': a word meaning not from this language');
+      const all = window.reviewModePool('vocab', 'all', 'order');
+      const notOwn = words.filter(p => !(own[p.vi] || []).some(m => m[lang] === p.kr));
+      check(!notOwn.length, lang + ': word review meaning not this language\'s own: ' + JSON.stringify(notOwn.slice(0, 3)));
+      const fallback = words.filter(p => (own[p.vi] || []).some(m => (m.ko === p.kr || m.en === p.kr || (lang === 'zh_cn' && m.zh === p.kr)) && m[lang] !== p.kr));
+      check(!fallback.length, lang + ': ko/en/zh text asked as the ' + lang + ' meaning: ' + JSON.stringify(fallback.slice(0, 3)));
+      if (lang === 'zh_cn') check(words.length === zhCount, 'zh_cn word review ' + words.length + ' items, zh ' + zhCount);
+      else check(all.length - words.length <= 2, lang + ': ' + (all.length - words.length) + ' words without a meaning (REVIEW_REQUIRED only)');
+      extValid[lang] = new Set();
+      ['all', 'rhyme', 'orderrev', 'groups', 'basic', 'antonym', 'freq', 'theo', 'names', 'chain', 'dialect']
+        .forEach(sc => window.reviewModePool('vocab', sc, 'mcq').forEach(p => extValid[lang].add(p.kr)));
     }
   }
-  // On screen: [복습] > [어휘] > 플래시카드 in cs shows the Czech meaning; [문장] > 보기 in each language shows its own.
+  // On screen: [복습] > [어휘] in cs / zh_cn / hu / id -- 플래시카드, 보기, 듣기 show that language's own meanings;
+  // 어순 배열 and 받아쓰기 ask every word and never show Korean. [문장] > 보기 in each language shows its own.
   document.querySelector('.tab-btn[data-tab="review"]').click(); await sleep(40);
-  window.setLang('cs'); await sleep(60);
-  document.querySelector('.subtab-btn[data-review="vocab"]').click(); await sleep(60);
-  document.querySelector('.study-mode-btn[data-mode="flash"]').click(); await sleep(60);
-  const flashKr = document.getElementById('flash-kr');
-  const anh = typeof UNIFIED_WORDS !== 'undefined' && UNIFIED_WORDS.find(u => u.vi === 'anh');
-  check(flashKr && anh && flashKr.textContent.trim() === anh.kr.cs, 'cs 어휘 플래시카드 does not show the Czech meaning: ' + (flashKr && flashKr.textContent));
+  for (const lang of EXT) {
+    if (!extValid[lang]) break;
+    window.setLang(lang); await sleep(60);
+    document.querySelector('.subtab-btn[data-review="vocab"]').click(); await sleep(60);
+    const valid = extValid[lang];
+    document.querySelector('.study-mode-btn[data-mode="flash"]').click(); await sleep(60);
+    const flashKr = document.getElementById('flash-kr');
+    check(flashKr && valid.has(flashKr.textContent.trim()), lang + ' 어휘 플래시카드 does not show a ' + lang + ' meaning: ' + (flashKr && flashKr.textContent));
+    for (const mode of ['look', 'mcq']) {
+      document.querySelector('.study-mode-btn[data-mode="' + mode + '"]').click(); await sleep(60);
+      const choices = [...document.querySelectorAll('#' + mode + '-choices .study-mcq-choice')].map(b => b.textContent.trim());
+      check(choices.length >= 2 && choices.every(c => valid.has(c)), lang + ' 어휘 ' + mode + ': choices not ' + lang + ' meanings: ' + JSON.stringify(choices));
+    }
+    document.querySelector('.study-mode-btn[data-mode="order"]').click(); await sleep(60);
+    const orderPrompt = document.querySelector('.study-order-prompt');
+    check(document.querySelectorAll('#order-bank .study-chip').length > 0, lang + ' 어휘 어순 배열: no question');
+    check(orderPrompt && !/[가-힣]/.test(orderPrompt.textContent), lang + ' 어휘 어순 배열: Korean prompt ' + (orderPrompt && orderPrompt.textContent));
+    document.querySelector('.study-mode-btn[data-mode="type"]').click(); await sleep(60);
+    const typePrompt = document.querySelector('.study-type-prompt');
+    check(document.getElementById('type-input') && typePrompt && !/[가-힣]/.test(typePrompt.textContent), lang + ' 어휘 받아쓰기: ' + (typePrompt && typePrompt.textContent));
+  }
   if (document.querySelector('.subtab-btn[data-review="sentence"]')) {
     for (const lang of LANGS) {
       window.setLang(lang); await sleep(60);
