@@ -10,6 +10,7 @@ The only new text in this module is UI text (TARGET_UI_TEXT) and the target-lang
 by the voice settings; neither is learning content.
 """
 import json
+import re
 
 from target_segment import sentence_records
 from site_profiles import (SITES, TARGET_LANGUAGES, TARGET_LANGUAGE_NAMES, TARGET_CONTENT_SOURCES,
@@ -30,19 +31,74 @@ def _texts(row, langs=UI_LANGS):
     return out
 
 
-def _excel_units(source_id, data, field, stats=None):
+def _book_key(text):
+    return re.sub(r"[\s  　•·.,;:!?\"'“”‘’「」（）()\-–—]+", "", str(text)).lower()
+
+
+def _bible_book_names():
+    from bible_numbers_data import BIBLE_BOOKS_OT, BIBLE_BOOKS_NT
+    names = set()
+    for book in BIBLE_BOOKS_OT + BIBLE_BOOKS_NT:
+        names.add(_book_key(book["vi"]))
+        names.update(_book_key(v) for v in (book.get("kr") or {}).values())
+    names.discard("")
+    return names
+
+
+BIBLE_BOOK_NAMES = _bible_book_names()
+
+
+def dropped_row(row, field):
+    """Rows that are not study text: only numbers ("29 30 31 32", ELF's reading grid) or a Bible book name
+    alone without chapter and verse ("1 Samuel", "撒母耳記上", ELF's reading checklist)."""
+    target = row[field]
+    if not any(ch.isalpha() for ch in target):
+        return "numbers"
+    if any(_book_key(text) in BIBLE_BOOK_NAMES for text in row.values()):
+        return "book"
+    return None
+
+
+def _excel_units(source_id, data, field, stats=None, reference=None):
     """ELF/LPD/WT units whose body is one record per target-language sentence (target_segment.py);
-    p = the paragraph's position in the unit body, s = the sentence's position in that paragraph."""
+    p = the paragraph's position in the unit body, s = the sentence's position in that paragraph.
+    A language the Excel row could not pair is looked up in the JW site's [문장] sentence data
+    (target_reference.py); such languages are listed in the record's "r"."""
     units = []
     header_n = HEADER_ROWS[source_id]
     for unit in data["units"]:
         rows = [_texts(r) for r in unit["rows"]]
         head = [r for r in rows[:header_n] if r]
         body = []
-        for p, row in enumerate(r for r in rows[header_n:] if field in r):
+        kept = []
+        for r in rows[header_n:]:
+            if field not in r:
+                continue
+            why = dropped_row(r, field)
+            if why:
+                if stats is not None:
+                    stats.append({"dropped": why, "text": r[field]})
+                continue
+            kept.append(r)
+        for p, row in enumerate(kept):
             records, outcome = sentence_records(row, field, UI_LANGS)
+            filled = conflicts = 0
+            if reference is not None:
+                for rec in records:
+                    for lang in UI_LANGS:
+                        if lang == field or lang in rec:
+                            continue
+                        answer, found = reference.lookup(rec[field], field, lang)
+                        if answer:
+                            rec[lang] = answer
+                            rec.setdefault("r", []).append(lang)
+                            filled += 1
+                        elif found > 1:
+                            conflicts += 1
             if stats is not None:
-                stats.append({"n": len(records), "outcome": outcome, "records": records})
+                stats.append({"n": len(records), "outcome": outcome, "records": records, "row": row,
+                              "ref_filled": filled, "ref_conflicts": conflicts,
+                              "unit": "%s-%s" % (source_id, unit["id"]), "p": p})
             for s, rec in enumerate(records):
                 rec["p"], rec["s"] = p, s
                 body.append(rec)
@@ -79,7 +135,7 @@ def _neighbor_units(conversations, field):
     return units
 
 
-def build_target_corpus(site, sources, stats=None):
+def build_target_corpus(site, sources, stats=None, reference=None):
     """sources: {"elf": ENJOY_LIFE_FOREVER-shaped, "lpd": ..., "wt": ..., "songs": [...],
     "neighbor": [...]} -- the same objects the Vietnamese profiles ship."""
     meta = SITES[site]
@@ -90,7 +146,7 @@ def build_target_corpus(site, sources, stats=None):
             raise SystemExit("[%s] source %r belongs to another site family" % (site, source_id))
         if source_id in HEADER_ROWS:
             units = _excel_units(source_id, sources[source_id], field,
-                                 None if stats is None else stats.setdefault(source_id, []))
+                                 None if stats is None else stats.setdefault(source_id, []), reference)
         elif source_id == "songs":
             units = _song_units(sources["songs"], field)
         elif source_id == "neighbor":

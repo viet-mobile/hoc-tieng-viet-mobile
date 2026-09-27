@@ -160,36 +160,56 @@ def segment(text, lang):
             out.append(text[start:c].strip())
             start = c
     out.append(text[start:].strip())
-    # A piece with no letters (a stray "." or ")") joins the sentence before it.
-    merged = []
+    # A piece with no letters (a stray "." or ")", a leading label like "1-2.") joins the sentence before it,
+    # or the one after it when it comes first.
+    merged, pending = [], ""
     for s in out:
-        if merged and not any(ch.isalpha() for ch in s):
-            merged[-1] = merged[-1] + s
-        elif s:
-            merged.append(s)
+        if not s:
+            continue
+        if not any(ch.isalpha() for ch in s):
+            if merged:
+                merged[-1] = merged[-1] + s
+            else:
+                pending = (pending + " " + s).strip()
+            continue
+        merged.append((pending + " " + s).strip() if pending else s)
+        pending = ""
+    if pending:
+        merged.append(pending)
     return merged
 
 
-def strip_paragraph_number(row):
-    """Row with a shared leading paragraph/question number removed from every language, or the row as is."""
-    # "9 ", "2. ", and the Chinese/Japanese full-width "2．" (written without a following space).
-    number = re.compile(r"^\s*(\d{1,3})(?:[.．](?!\d)[\s\u3000]*|[\s\u3000]+)(?=\S)")
+def label_groups(row):
+    """(row without its paragraph/question number, {lang: label} or None).
+
+    When a majority of the row's languages start with the same number, it is the source's paragraph /
+    question label: it is removed from those languages, and every language is grouped by the label it
+    starts with ("" = none). A language outside the target's group holds a different row of the source
+    (the Excel rows are shifted in places: "［研讀問題］" in some languages beside "1. What tactic ..." in
+    others), so it is not the target's translation. No majority -> the row is returned as is, no groups."""
+    # "9 ", "2. ", the Chinese/Japanese full-width "2．" (no space after it, even before a digit: "2．1914年"), and a range
+    # ("1-2.", "1–2.", "1, 2.", "1., 2." -- a question covering several paragraphs). One or two digits only:
+    # the sources number paragraphs/questions/lessons below 100, and "607 B.C.E." is a year, not a label.
+    number = re.compile(r"^\s*(\d{1,2}(?:[-–]\d{1,2}|\.?,\s?\d{1,2})?)(?:\.(?!\d)[\s\u3000]*|．[\s\u3000]*|[\s\u3000]+)(?=\S)")
     found = {}
     for lang, text in row.items():
         m = number.match(text) if isinstance(text, str) else None
         # A row that is only numbers (ELF's "29 30 31 32" lesson grid) keeps them all.
         if m and any(ch.isalpha() for ch in text[m.end():]):
-            found[lang] = m.group(1)
+            found[lang] = "-".join(re.findall(r"\d+", m.group(1)))   # "1-2" = "1–2" = "1, 2" = "1., 2"
     if not found:
-        return row
-    common = max(set(found.values()), key=lambda n: sum(1 for v in found.values() if v == n))
+        return row, None
+    common = max(sorted(set(found.values())), key=lambda n: sum(1 for v in found.values() if v == n))
     agree = [lang for lang, n in found.items() if n == common]
-    # The same number at the start of at least two thirds of the row's languages is the source's paragraph /
-    # question number (a language may print a blank "__________" or no number there); it is removed only
-    # from the languages that carry it.
-    if len(agree) * 3 < len(row) * 2:
-        return row
-    return {lang: (number.sub("", text, count=1) if lang in agree else text) for lang, text in row.items()}
+    if len(agree) * 2 <= len(row):
+        return row, None
+    groups = {lang: found.get(lang, "") for lang in row}
+    return {lang: (number.sub("", text, count=1) if lang in agree else text) for lang, text in row.items()}, groups
+
+
+def strip_paragraph_number(row):
+    """Row with the shared paragraph/question number removed (see label_groups)."""
+    return label_groups(row)[0]
 
 
 def _numbers(s):
@@ -243,12 +263,15 @@ def _row_ok(target, other):
 def sentence_records(row, field, langs):
     """Sentence records of one source row: [{lang: text, ...}, ...] for the target `field`, plus the
     alignment outcome per language ({"lang": "row" | "sentence" | "count" | "check"} for the stats)."""
-    row = strip_paragraph_number(row)
+    row, groups = label_groups(row)
     target = segment(row[field], field)
     records = [{field: s} for s in target]
     outcome = {}
     for lang in langs:
         if lang == field or lang not in row:
+            continue
+        if groups is not None and groups.get(lang) != groups.get(field):
+            outcome[lang] = "label"
             continue
         if len(target) == 1:
             # The other language's whole row is the counterpart of a one-sentence row -- when it passes the

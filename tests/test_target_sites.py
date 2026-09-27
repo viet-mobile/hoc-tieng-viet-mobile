@@ -54,7 +54,7 @@ class TargetSiteTests(unittest.TestCase):
                 for unit in corpus["units"]:
                     for row in unit["rows"]:
                         self.assertTrue(row.get(field), (sid, source_id, unit["id"]))
-                        self.assertLessEqual(set(row) - {"who", "p", "s"}, set(UI_LANGS))
+                        self.assertLessEqual(set(row) - {"who", "p", "s", "r"}, set(UI_LANGS))
             ui = json.loads(c["TARGET_UI_TEXT"])
             for key, texts in ui.items():
                 self.assertEqual(set(texts), set(UI_LANGS), key)
@@ -117,6 +117,8 @@ class TargetSiteTests(unittest.TestCase):
             self.assertNotIn("/api/regional/", html, sid)
 
     def test_sentence_level_records(self):
+        from target_reference import CURATED_LANGS
+        from target_content import BIBLE_BOOK_NAMES, _book_key
         """ELF/LPD/WT: one target sentence per record, checked by a detector independent of
         target_segment.py; a paragraph's translation is attached to all of its sentences or to none."""
         import re
@@ -126,7 +128,8 @@ class TargetSiteTests(unittest.TestCase):
         cjk = re.compile(r"[。？！][」』”’]*(?=[^」』”’\s_]*[^\W\d_])")
 
         def boundaries(text, lang):
-            t = text
+            # A leading question/paragraph label ("1. ", "6-7. ") is not a sentence end.
+            t = re.sub(r"^\s*\d{1,3}(?:[-–]\d{1,3}|\.?,\s?\d{1,3})?[.．]\s*", "", text)
             for _ in range(3):
                 t = re.sub(r"[（(《〈【][^()（）《》〈〉【】]{0,80}[)）》〉】][。.]?", "", t)
             if lang in ("zh", "ja"):
@@ -146,14 +149,23 @@ class TargetSiteTests(unittest.TestCase):
                     for row in unit["rows"]:
                         self.assertIn("p", row)
                         self.assertIn("s", row)
+                        # Reference-filled languages (target_reference.py) are curated ones and are present.
+                        for lang in row.get("r", []):
+                            self.assertIn(lang, CURATED_LANGS, (sid, unit["id"]))
+                            self.assertIn(lang, row, (sid, unit["id"]))
+                        # Rows that were only numbers or a Bible book name alone are gone.
+                        self.assertTrue(any(ch.isalpha() for ch in row[field]), (sid, unit["id"], row[field]))
+                        self.assertNotIn(_book_key(row[field]), BIBLE_BOOK_NAMES, (sid, unit["id"], row[field]))
                         if boundaries(row[field], field):
                             multi.append(row[field][:60])
                         paragraphs.setdefault(row["p"], []).append(row)
                     for rows in paragraphs.values():
                         self.assertEqual([r["s"] for r in rows], list(range(len(rows))), (sid, unit["id"]))
                         if len(rows) > 1:
+                            # From the Excel pairing a paragraph's language is on all its sentences or on none;
+                            # only reference-filled sentences ("r") may add it to single sentences.
                             for lang in UI_LANGS:
-                                have = [lang in r for r in rows]
+                                have = [lang in r and lang not in r.get("r", []) for r in rows]
                                 self.assertIn(set(have), ({True}, {False}), (sid, unit["id"], lang))
                 self.assertEqual(multi, [], (sid, source_id, multi[:3]))
             for source_id in ("songs", "neighbor"):

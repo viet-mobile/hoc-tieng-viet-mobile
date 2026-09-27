@@ -2030,8 +2030,13 @@
   // Speech options for the studied language: Vietnamese keeps its own text preparation (jw.org
   // spelling, citations, ...) and north/south voice; a target-engine site uses its target locale
   // and the voice picked in its own settings (target engine section).
+  // "01과" / "LESSON 01" / "レッスン01" are read "1과" / "LESSON 1" / "レッスン1" on the target sites (the zero
+  // is only the source's zero-padding); times, verses and decimals ("01:05", "3.05") are left alone.
+  function stripLeadingZerosForSpeech(text) {
+    return String(text).replace(/(^|[^0-9.,:\/])0+(\d)(?!\d*[.,:\/]\d)/g, "$1$2");
+  }
   function targetSpeechOpts(text) {
-    if (TARGET) return { text: String(text), lang: TARGET_TTS_TAG, rate: 0.95, voice: currentTargetVoice() };
+    if (TARGET) return { text: stripLeadingZerosForSpeech(text), lang: TARGET_TTS_TAG, rate: 0.95, voice: currentTargetVoice() };
     return { text: prepareSpeechText(text), lang: "vi-VN", rate: 0.92, voice: currentViVoice() };
   }
   function speakOnce(text, onOnceDone) {
@@ -2122,6 +2127,7 @@
   function prepareMeaningSpeechText(text) {
     if (!text) return text;
     var t = expandScriptureVersesForSpeech(stripHanjaParensForSpeech(stripSlashForSpeech(String(text).trim())));
+    if (TARGET) t = stripLeadingZerosForSpeech(t);   // target sites: "01과" -> "1과" (see targetSpeechOpts)
     if (currentLang === "ko") {
       // Force the correct 된소리 reading for 영적 in Korean TTS; the displayed text remains unchanged.
       t = t.replace(/영적/g, "영쩍");

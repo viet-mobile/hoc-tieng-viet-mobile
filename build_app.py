@@ -855,6 +855,19 @@ def build_data_js(site):
 
     return data_js
 
+_JW_REFERENCE = None
+
+
+def jw_sentence_reference():
+    """The JW site's [문장] sentence data (LFF, LPD lessons, WT vocabulary examples) as a lookup for the
+    target sites' unpaired sentences (target_reference.py); built once per run."""
+    global _JW_REFERENCE
+    if _JW_REFERENCE is None:
+        from target_reference import Reference, jw_sentence_units
+        _JW_REFERENCE = Reference(jw_sentence_units(LFF_CONVERSATIONS, LPD_LESSONS, WATCHTOWER_VOCAB))
+    return _JW_REFERENCE
+
+
 def build_target_data_js(site):
     """Data block of a target-language site (site_profiles.SITES[site]["engine"] == "target"): only
     the target engine's constants. None of the Vietnamese app's constants are shipped; the runtime
@@ -873,7 +886,7 @@ def build_target_data_js(site):
         "songs": songs,
         "neighbor": NEIGHBOR_CONVERSATIONS,
     }
-    corpus = build_target_corpus(site, sources)
+    corpus = build_target_corpus(site, sources, reference=jw_sentence_reference())
     parts = [
         "\n",
         "const TARGET_SITE = %s;\n" % js(build_target_site(site, corpus)),
