@@ -12,7 +12,8 @@ by the voice settings; neither is learning content.
 import json
 import re
 
-from target_segment import sentence_records
+from target_segment import sentence_records, label_groups
+from target_recover import RECOVERABLE, recover_language
 from site_profiles import (SITES, TARGET_LANGUAGES, TARGET_LANGUAGE_NAMES, TARGET_CONTENT_SOURCES,
                            TARGET_SOURCE_REQUIRED, UI_LANGS)
 
@@ -59,11 +60,14 @@ def dropped_row(row, field):
     return None
 
 
-def _excel_units(source_id, data, field, stats=None, reference=None):
+def _excel_units(source_id, data, field, stats=None, reference=None, recover=True):
     """ELF/LPD/WT units whose body is one record per target-language sentence (target_segment.py);
     p = the paragraph's position in the unit body, s = the sentence's position in that paragraph.
     A language the Excel row could not pair is looked up in the JW site's [문장] sentence data
-    (target_reference.py); such languages are listed in the record's "r"."""
+    (target_reference.py); such languages are listed in the record's "r". A language still empty whose
+    paragraph could not be paired ("count"/"check") is recovered from the same row only where independent
+    anchors fix the sentence (target_recover.py); such languages are in the record's "x" with the rule's
+    code."""
     units = []
     header_n = HEADER_ROWS[source_id]
     for unit in data["units"]:
@@ -95,9 +99,25 @@ def _excel_units(source_id, data, field, stats=None, reference=None):
                             filled += 1
                         elif found > 1:
                             conflicts += 1
+            recovered, crossed = [], []
+            if recover and len(records) > 1:
+                stripped = label_groups(row)[0]
+                t_sents = [rec[field] for rec in records]
+                for lang in UI_LANGS:
+                    if outcome.get(lang) not in RECOVERABLE or lang not in stripped:
+                        continue
+                    found_conflicts = []
+                    for i, (text, code) in sorted(recover_language(t_sents, stripped[lang], lang, found_conflicts).items()):
+                        if lang in records[i]:
+                            continue
+                        records[i][lang] = text
+                        records[i].setdefault("x", {})[lang] = code
+                        recovered.append((i, lang, code, text))
+                    crossed += [(lang, anchors) for anchors in found_conflicts]
             if stats is not None:
                 stats.append({"n": len(records), "outcome": outcome, "records": records, "row": row,
-                              "ref_filled": filled, "ref_conflicts": conflicts,
+                              "ref_filled": filled, "ref_conflicts": conflicts, "recovered": recovered,
+                              "recover_conflicts": crossed,
                               "unit": "%s-%s" % (source_id, unit["id"]), "p": p})
             for s, rec in enumerate(records):
                 rec["p"], rec["s"] = p, s
@@ -135,7 +155,7 @@ def _neighbor_units(conversations, field):
     return units
 
 
-def build_target_corpus(site, sources, stats=None, reference=None):
+def build_target_corpus(site, sources, stats=None, reference=None, recover=True):
     """sources: {"elf": ENJOY_LIFE_FOREVER-shaped, "lpd": ..., "wt": ..., "songs": [...],
     "neighbor": [...]} -- the same objects the Vietnamese profiles ship."""
     meta = SITES[site]
@@ -146,7 +166,7 @@ def build_target_corpus(site, sources, stats=None, reference=None):
             raise SystemExit("[%s] source %r belongs to another site family" % (site, source_id))
         if source_id in HEADER_ROWS:
             units = _excel_units(source_id, sources[source_id], field,
-                                 None if stats is None else stats.setdefault(source_id, []), reference)
+                                 None if stats is None else stats.setdefault(source_id, []), reference, recover)
         elif source_id == "songs":
             units = _song_units(sources["songs"], field)
         elif source_id == "neighbor":

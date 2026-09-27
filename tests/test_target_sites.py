@@ -54,7 +54,7 @@ class TargetSiteTests(unittest.TestCase):
                 for unit in corpus["units"]:
                     for row in unit["rows"]:
                         self.assertTrue(row.get(field), (sid, source_id, unit["id"]))
-                        self.assertLessEqual(set(row) - {"who", "p", "s", "r"}, set(UI_LANGS))
+                        self.assertLessEqual(set(row) - {"who", "p", "s", "r", "x"}, set(UI_LANGS))
             ui = json.loads(c["TARGET_UI_TEXT"])
             for key, texts in ui.items():
                 self.assertEqual(set(texts), set(UI_LANGS), key)
@@ -119,6 +119,8 @@ class TargetSiteTests(unittest.TestCase):
     def test_sentence_level_records(self):
         from target_reference import CURATED_LANGS
         from target_content import BIBLE_BOOK_NAMES, _book_key
+        from target_segment import segment
+        from target_recover import list_label, hidden_boundary, citation_fragment
         """ELF/LPD/WT: one target sentence per record, checked by a detector independent of
         target_segment.py; a paragraph's translation is attached to all of its sentences or to none."""
         import re
@@ -153,6 +155,16 @@ class TargetSiteTests(unittest.TestCase):
                         for lang in row.get("r", []):
                             self.assertIn(lang, CURATED_LANGS, (sid, unit["id"]))
                             self.assertIn(lang, row, (sid, unit["id"]))
+                        # Recovered languages (target_recover.py) carry their rule's code, are present, are
+                        # never also reference-filled, and hold exactly one sentence of their language.
+                        for lang, code in row.get("x", {}).items():
+                            self.assertIn(code, ("N", "U", "B"), (sid, unit["id"]))
+                            self.assertIn(lang, row, (sid, unit["id"]))
+                            self.assertNotIn(lang, row.get("r", []), (sid, unit["id"]))
+                            self.assertEqual(len(segment(row[lang], lang)), 1, (sid, unit["id"], lang, row[lang][:60]))
+                            for text in (row[lang], row[field]):
+                                self.assertFalse(list_label(text) or hidden_boundary(text) or citation_fragment(text),
+                                                 (sid, unit["id"], lang, text[:60]))
                         # Rows that were only numbers or a Bible book name alone are gone.
                         self.assertTrue(any(ch.isalpha() for ch in row[field]), (sid, unit["id"], row[field]))
                         self.assertNotIn(_book_key(row[field]), BIBLE_BOOK_NAMES, (sid, unit["id"], row[field]))
@@ -163,9 +175,9 @@ class TargetSiteTests(unittest.TestCase):
                         self.assertEqual([r["s"] for r in rows], list(range(len(rows))), (sid, unit["id"]))
                         if len(rows) > 1:
                             # From the Excel pairing a paragraph's language is on all its sentences or on none;
-                            # only reference-filled sentences ("r") may add it to single sentences.
+                            # only reference-filled ("r") or recovered ("x") sentences may add it to single sentences.
                             for lang in UI_LANGS:
-                                have = [lang in r and lang not in r.get("r", []) for r in rows]
+                                have = [lang in r and lang not in r.get("r", []) and lang not in r.get("x", {}) for r in rows]
                                 self.assertIn(set(have), ({True}, {False}), (sid, unit["id"], lang))
                 self.assertEqual(multi, [], (sid, source_id, multi[:3]))
             for source_id in ("songs", "neighbor"):
