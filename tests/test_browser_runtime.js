@@ -936,7 +936,9 @@ async function runTest() {
               var sentCatBtn = document.querySelector('.subtab-btn[data-review="sentence"]');
               if (sentCatBtn) sentCatBtn.click();
 
-              var pool = window.reviewScopedPool ? window.reviewScopedPool("sentence", "all") : [];
+              // Items the meaning-based modes (플래시카드/보기/듣기) ask: each has this language's translation.
+              // (Sentences without one stay available to 어순 배열/받아쓰기 -- REVIEW_MODE_NEEDS in app_logic.js.)
+              var pool = window.reviewModePool ? window.reviewModePool("sentence", "all", "mcq") : [];
               if (!pool || !pool.length) {
                 return { ok: false, error: 'Empty sentence review pool for lang ' + '${lang}' };
               }

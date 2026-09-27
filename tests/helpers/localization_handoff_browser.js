@@ -62,7 +62,10 @@ module.exports = async function verifyLocalization(cdp, site) {
             const turn = card.querySelector('.talk-line')?.querySelector('.talk-kr');
             check(!title, lang + ': missing title fallback: ' + title?.textContent);
             check(!turn, lang + ': missing turn fallback: ' + turn?.textContent);
-            check(!window.reviewScopedPool('wizard','daily').some(p => p.vi === conv.turns[0].vi), lang + ': untranslated review turn retained');
+            // The turn is not asked by the meaning-based modes, and wherever it stays (어순 배열/받아쓰기) it has no
+            // meaning -- never another language's.
+            check(!window.reviewModePool('wizard','daily','mcq').some(p => p.vi === conv.turns[0].vi), lang + ': untranslated review turn asked with a meaning');
+            check(window.reviewScopedPool('wizard','daily').every(p => p.vi !== conv.turns[0].vi || !p.kr), lang + ': untranslated review turn given a fallback meaning');
           } finally {
             fields.forEach((f,i) => { if (saved[i].present) f[lang] = saved[i].value; else delete f[lang]; });
           }

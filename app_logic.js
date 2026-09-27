@@ -490,6 +490,8 @@
     "정답: ": {"vi": "Đáp án: ", "cs": "Odpověď: ", "zh_cn": "正确答案：", "zh": "正確答案：", "en": "Answer: ", "fr": "Réponse : ", "de": "Richtige Antwort: ", "hu": "Válasz: ", "id": "Jawaban: ", "ja": "正解： ", "pl": "Odpowiedź: "},
     "확인": {"vi": "Xác nhận", "cs": "Potvrdit", "zh_cn": "确认", "zh": "確認", "en": "Check", "fr": "Vérifier", "de": "Bestätigen", "hu": "Megerősítés", "id": "Konfirmasi", "ja": "確認", "pl": "Sprawdź"},
     "다시 확인해 보세요.": {"vi": "Hãy kiểm tra lại.", "cs": "Zkontrolujte to znovu.", "zh_cn": "请再检查一次。", "zh": "請再檢查一次。", "en": "Check again.", "fr": "Vérifiez à nouveau.", "de": "Bitte noch einmal prüfen.", "hu": "Ellenőrizze újra.", "id": "Periksa kembali.", "ja": "もう一度確認してください。", "pl": "Sprawdź ponownie."},
+    "선택한 언어의 뜻이 없는 자료예요. [어순 배열]과 [받아쓰기]로 복습할 수 있어요.": {"vi": "Nội dung này không có nghĩa bằng ngôn ngữ đã chọn. Bạn có thể ôn bằng [Sắp xếp từ] và [Chính tả].", "cs": "Tento materiál nemá význam ve zvoleném jazyce. Můžete ho opakovat pomocí [Slovosled] a [Diktát].", "zh_cn": "这些资料没有所选语言的意思。可以用［排列语序］和［听写］复习。", "zh": "這些資料沒有所選語言的意思。可以用［排列語序］和［聽寫］複習。", "en": "This material has no meaning in the selected language. You can review it with [Word Order] and [Dictation].", "fr": "Ce contenu n'a pas de sens dans la langue choisie. Vous pouvez le réviser avec [Ordre des mots] et [Dictée].", "de": "Für dieses Material gibt es keine Bedeutung in der gewählten Sprache. Sie können es mit [Wortstellung] und [Diktat] wiederholen.", "hu": "Ehhez az anyaghoz nincs jelentés a kiválasztott nyelven. A [Szórend] és a [Diktálás] móddal ismételheti.", "id": "Materi ini tidak memiliki arti dalam bahasa yang dipilih. Anda bisa mengulasnya dengan [Susun Urutan Kata] dan [Dikte].", "ja": "この教材には選択した言語の意味がありません。［語順並べ替え］と［書き取り］で復習できます。", "pl": "Ten materiał nie ma znaczenia w wybranym języku. Możesz go powtarzać w trybach [Szyk wyrazów] i [Dyktando]."},
+    "듣고 베트남어 순서대로 배열하세요": {"vi": "Nghe rồi sắp xếp theo đúng thứ tự tiếng Việt", "cs": "Poslechněte si a seřaďte vietnamská slova", "zh_cn": "听后按越南语顺序排列", "zh": "聽後按越南語順序排列", "en": "Listen and put the Vietnamese words in order", "fr": "Écoutez et remettez les mots vietnamiens dans l'ordre", "de": "Hören Sie zu und ordnen Sie die vietnamesischen Wörter", "hu": "Hallgassa meg, és rakja sorba a vietnámi szavakat", "id": "Dengarkan lalu susun kata-kata bahasa Vietnam", "ja": "聞いてベトナム語の順番に並べてください", "pl": "Posłuchaj i ułóż wietnamskie słowa we właściwej kolejności"},
     "이 탭에는 아직 복습할 자료가 없어요.": {"vi": "Thẻ này chưa có nội dung để ôn tập.", "cs": "Na této kartě zatím nejsou žádné materiály k opakování.", "zh_cn": "这个分页还没有可复习的资料。", "zh": "這個分頁還沒有可複習的資料。", "en": "There's no material to review in this tab yet.", "fr": "Il n'y a pas encore de contenu à réviser sous cet onglet.", "de": "In diesem Tab gibt es noch kein Material zum Wiederholen.", "hu": "Ezen a lapon még nincs ismétlendő anyag.", "id": "Belum ada materi untuk diulas di tab ini.", "ja": "このタブにはまだ復習する内容がありません。", "pl": "W tej zakładce nie ma jeszcze materiałów do powtórki."},
     "010-0000-0000": {"vi": "0901 234 567", "cs": "010-0000-0000", "zh_cn": "0900-000-000", "zh": "0900-000-000", "en": "010-0000-0000", "fr": "010-0000-0000", "de": "010-0000-0000", "hu": "010-0000-0000", "id": "010-0000-0000", "ja": "0X0-0000-0000", "pl": "010-0000-0000"},
     "대화 탭에서 선택한 나와 상대방의 관계에 따라, 제공 연설 대화문 속 \"저는(tôi)\"·\"당신은(bạn)\" 표현이 실제 상황에 맞는 호칭으로 자동으로 바뀌어요. 아직 선택하지 않았다면 원문 그대로 tôi·bạn으로 표시돼요.": {"vi": "Dựa trên mối quan hệ bạn đã chọn ở thẻ Hội thoại, các từ \"tôi\" và \"bạn\" trong bài trình bày sẽ tự động đổi thành cách xưng hô phù hợp với tình huống. Nếu chưa chọn, chúng vẫn giữ nguyên là tôi và bạn.", "cs": "Podle vztahu zvoleného na kartě Rozhovory se výrazy „já (tôi)“ a „vy (bạn)“ ve vzorových rozhovorech automaticky změní na vhodné oslovení pro danou situaci.", "zh_cn": "根据在对话标签中选择的我与对方的关系，提供见证对话中的“我(tôi)”和“你(bạn)”会自动替换为符合实际情况的称呼。", "zh": "「提供演講」對話文中的「我是(tôi)」‧「您是(bạn)」會依照您在〔對話〕分頁中選擇的雙方關係，自動換成符合實際情況的稱呼。若尚未選擇，則會維持原文顯示為 tôi‧bạn。", "en": "Based on the relationship you selected in the [Dialogue] tab, the \"I (tôi)\" / \"you (bạn)\" expressions in the offer-talk dialogue automatically change to the appropriate terms of address for that situation. If nothing has been selected yet, they stay as the original tôi/bạn.", "fr": "Selon la relation choisie sous l'onglet Dialogue, les expressions « tôi » (je) et « bạn » (vous) dans les présentations modèles sont automatiquement remplacées par les termes adaptés. Si aucun choix n'a été fait, les termes originaux tôi et bạn sont conservés.", "de": "Je nach der im Tab [Dialog] gewählten Beziehung zwischen Ihnen und der Person werden die Ausdrücke „ich (tôi)“ und „Sie/du (bạn)“ im Gesprächsvorschlag automatisch an die reale Situation angepasst. Wurde noch nichts ausgewählt, bleibt die Originalanzeige tôi/bạn.", "hu": "A Beszélgetések lapon kiválasztott kapcsolat alapján a minta-beszélgetésekben az „én (tôi)” és „te (bạn)” kifejezések automatikusan a helyzetnek megfelelő megszólításra váltanak.", "id": "Sesuai dengan hubungan yang dipilih di tab Percakapan, ungkapan 'saya (tôi)' dan 'Anda (bạn)' dalam contoh percakapan akan otomatis berubah menjadi sebutan yang tepat.", "ja": "「会話」タブで選択した自分と相手の関係に応じて、提供トークの会話文にある「私は(tôi)」・「あなたは(bạn)」という表現が、実際の状況に合った呼び方に自動的に変わります。まだ選択していない場合は、原文のまま tôi・bạn と表示されます。", "pl": "W zależności od relacji wybranej w zakładce Rozmowy, wyrażenia „ja (tôi)” i „ty (bạn)” w dialogach wzorcowych automatycznie zmieniają się na odpowiednie formy."},
@@ -7071,6 +7073,15 @@ function verifyDistribution(units, dist, pins) {
     return [String(vietnamese).replace(PARAGRAPH_NUMBER_RE, ""), String(meaning).replace(PARAGRAPH_NUMBER_RE, "")];
   }
   function addSentencePairs(target, vietnamese, meaning) {
+    // No meaning in the current language: the Vietnamese sentences still serve the review modes that need
+    // none (REVIEW_MODE_NEEDS "TARGET_ONLY"), one item per sentence and without any meaning.
+    if (!meaning || !String(meaning).trim()) {
+      splitSentences(stripReviewListMarker(vietnamese)).forEach(function (vi) {
+        vi = stripReviewListMarker(vi);
+        if (vi && !/[가-힣]/.test(vi) && !isIsolatedJw(vi) && !isCitationOnlyLine(vi)) target.push({ vi: normalizeJwOrg(vi), kr: "" });
+      });
+      return;
+    }
     var unnumbered = stripSharedParagraphNumber(vietnamese, meaning);
     sentencePairs(stripReviewListMarker(unnumbered[0]), stripReviewListMarker(unnumbered[1])).forEach(function (pair) {
       // A "Vietnamese" side that contains Hangul is a mis-split fragment (e.g. "/ quyển vở노트"), not a sentence to order.
@@ -8474,24 +8485,59 @@ function verifyDistribution(units, dist, pins) {
     var bodyEl = document.getElementById("study-body");
     if (!modeTabsEl || !bodyEl) return;
 
+    /* ---------- review language policy ---------- */
+    // Every review item's meaning comes from reviewMeaning(): the item's own text in the current UI
+    // language, or nothing -- never another language (no Korean/English fallback, no zh <-> zh_cn), and
+    // nothing in Vietnamese, which is the studied language itself (as applyDailyMeaningPronouns() does).
+    // Items without a meaning stay in the pool: which items a mode may use is decided by what the mode
+    // needs (REVIEW_MODE_NEEDS), not by the pool builders.
+    function reviewMeaning(field) {
+      if (currentLang === "vi" || field === null || field === undefined) return null;
+      if (typeof field === "string") return currentLang === "ko" ? field : null;
+      return field[currentLang] || null;
+    }
+    // A UI-language string computed elsewhere (PDF sentence translations, song lyrics): none in Vietnamese.
+    function reviewText(text) { return currentLang === "vi" ? "" : (text || ""); }
+    //   TARGET_ONLY           the Vietnamese text is the question and the answer; a meaning, when the item
+    //                         has one, is only shown as a hint (어순 배열, 받아쓰기)
+    //   TRANSLATION_REQUIRED  the meaning in the current UI language is the question or the answer
+    //                         (플래시카드, 보기, 듣기), so items without one are not asked
+    var REVIEW_MODE_NEEDS = { flash: "TRANSLATION_REQUIRED", look: "TRANSLATION_REQUIRED", mcq: "TRANSLATION_REQUIRED", order: "TARGET_ONLY", type: "TARGET_ONLY" };
+    function hasMeaning(item) { return !!(item && item.kr && String(item.kr).trim()); }
+    function poolForMode(pool, mode) {
+      return REVIEW_MODE_NEEDS[mode] === "TARGET_ONLY" ? pool : pool.filter(hasMeaning);
+    }
+    function modePool() { return poolForMode(studyState.pool, studyState.mode); }
+    // 제공 연설 lines with their {{MY_NAME}}/{{MARITAL_A}}/... tokens filled in, as the reader does
+    // (renderCurrTalks()), instead of the raw tokens.
+    function talkReviewVi(l) { return applyPeopleTalkTokens(l.vi, false); }
+    // {{MARITAL_A}} has only a Korean answer text (applyPeopleTalkTokens()), so in any other language that
+    // line has no meaning of its own.
+    function talkReviewMeaning(l) {
+      var m = reviewMeaning(l.kr);
+      if (!m || (currentLang !== "ko" && m.indexOf("{{MARITAL_A}}") >= 0)) return null;
+      return applyKoreanRelTerms(applyPeopleTalkTokens(m, true));
+    }
+
     // Single-hanja vocab words (한자음/어순반대, from RHYME_GROUPS / WORD_ORDER_REVERSED_EXTRA)
     // carry a 'hanja' field the other vocab sources don't -- on their review flashcards we show
     // the hanja in parens right after the Korean gloss, e.g. "이룰 성(成)".
     function krGlossWithHanja(wd) {
-      var g = Tstrict(wd.gloss);
+      var g = reviewMeaning(wd.gloss);
       if (!g) return null;
       return wd.hanja ? (g + "(" + wd.hanja + ")") : g;
     }
 
     function dedupeByVi(arr) {
-      var seen = {}; var out = [];
+      var at = {}; var out = [];
       arr.forEach(function (it) {
-        if (!it || !it.vi || !it.kr) return;
+        if (!it || !it.vi) return;
         var k = String(it.vi).trim();
-        var m = String(it.kr).trim();
-        if (!k || !m || seen[k]) return;
-        seen[k] = true;
-        out.push({ vi: k, kr: m, meaning: it.meaning || "", songNo: it.songNo });
+        var m = it.kr ? String(it.kr).trim() : "";
+        if (!k) return;
+        var entry = { vi: k, kr: m, meaning: it.meaning || "", songNo: it.songNo };
+        if (!Object.prototype.hasOwnProperty.call(at, k)) { at[k] = out.length; out.push(entry); }
+        else if (m && !out[at[k]].kr) out[at[k]] = entry;
       });
       return out;
     }
@@ -8506,25 +8552,25 @@ function verifyDistribution(units, dist, pins) {
     function vocabScopedPool() {
       if (!vocabFocus) return [];
       var mode = vocabFocus.mode, out = [];
-      function push(vi, kr) { if (vi && kr) out.push({ vi: vi, kr: kr }); }
+      function push(vi, kr) { if (vi) out.push({ vi: vi, kr: kr }); }
       if (mode === "theo") {
-        applyVocabFocus("theo", VOCAB_THEO).forEach(function (it) { push(it.word, Tstrict(it.meaning)); });
+        applyVocabFocus("theo", VOCAB_THEO).forEach(function (it) { push(it.word, reviewMeaning(it.meaning)); });
       } else if (mode === "freq") {
-        applyVocabFocus("freq", FREQ_VOCAB).forEach(function (it) { push(it.vi, Tstrict(it.kr)); });
+        applyVocabFocus("freq", FREQ_VOCAB).forEach(function (it) { push(it.vi, reviewMeaning(it.kr)); });
       } else if (mode === "chain") {
-        applyVocabFocus("chain", VOCAB_CHAIN).forEach(function (it) { push(it.word, Tstrict(it.meaning)); });
+        applyVocabFocus("chain", VOCAB_CHAIN).forEach(function (it) { push(it.word, reviewMeaning(it.meaning)); });
       } else if (mode === "names") {
-        applyVocabFocus("names", BIBLE_NAMES).forEach(function (n) { push(n.vi, Tstrict(n.kr)); });
+        applyVocabFocus("names", BIBLE_NAMES).forEach(function (n) { push(n.vi, reviewMeaning(n.kr)); });
       } else if (mode === "basic") {
         var basicWords = [];
         BASIC_WORD_GROUPS.forEach(function (g) { basicWords = basicWords.concat(g.words); });
-        applyVocabFocus("basic", basicWords).forEach(function (w) { push(w.vi, Tstrict(w.kr)); });
+        applyVocabFocus("basic", basicWords).forEach(function (w) { push(w.vi, reviewMeaning(w.kr)); });
       } else if (mode === "antonym") {
-        applyVocabFocus("antonym", ANTONYM_PAIRS).forEach(function (p) { push(p.vi1, Tstrict(p.kr1)); push(p.vi2, Tstrict(p.kr2)); });
+        applyVocabFocus("antonym", ANTONYM_PAIRS).forEach(function (p) { push(p.vi1, reviewMeaning(p.kr1)); push(p.vi2, reviewMeaning(p.kr2)); });
       } else if (mode === "dialect") {
         applyVocabFocus("dialect", DIALECT_WORDS).forEach(function (d) {
-          push(d.north.replace(/[/].*$/, ""), Tstrict(d.mean));
-          push(d.south.replace(/[/].*$/, ""), Tstrict(d.mean));
+          push(d.north.replace(/[/].*$/, ""), reviewMeaning(d.mean));
+          push(d.south.replace(/[/].*$/, ""), reviewMeaning(d.mean));
         });
       } else if (mode === "rhyme") {
         var rhymeFlat = [];
@@ -8533,7 +8579,7 @@ function verifyDistribution(units, dist, pins) {
       } else if (mode === "groups") {
         var groupsFlat = [];
         VOCAB_GROUPS.forEach(function (g) { g.words.forEach(function (w) { groupsFlat.push(w); }); });
-        groupsFlat.slice(vocabFocus.start, vocabFocus.end).forEach(function (w) { push(w.word, Tstrict(w.meaning)); });
+        groupsFlat.slice(vocabFocus.start, vocabFocus.end).forEach(function (w) { push(w.word, reviewMeaning(w.meaning)); });
       } else if (mode === "orderrev") {
         var orItems = [];
         RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (fam) { fam.words.forEach(function (wd) { if (wd.word_order_reversed) orItems.push(wd); }); }); });
@@ -8542,7 +8588,7 @@ function verifyDistribution(units, dist, pins) {
       } else if (mode === "wt") {
         var wtFlat = [];
         WATCHTOWER_VOCAB.forEach(function (wk) { wk.words.forEach(function (w) { wtFlat.push(w); }); });
-        wtFlat.slice(vocabFocus.start, vocabFocus.end).forEach(function (w) { push(w.vi, Tstrict(w.mean)); });
+        wtFlat.slice(vocabFocus.start, vocabFocus.end).forEach(function (w) { push(w.vi, reviewMeaning(w.mean)); });
       }
       return dedupeByVi(out);
     }
@@ -8553,8 +8599,8 @@ function verifyDistribution(units, dist, pins) {
         CASES.forEach(function (c) {
           Object.keys(c.stages).forEach(function (sn) {
             c.stages[sn].forEach(function (it) {
-              if (it.viet && it.translation) addSentencePairs(out, it.viet, Tstrict(it.translation));
-              if (it.reply && it.reply.name) addSentencePairs(out, it.reply.viet, Tstrict(it.reply.translation));
+              if (it.viet && it.translation) addSentencePairs(out, it.viet, reviewMeaning(it.translation));
+              if (it.reply && it.reply.name) addSentencePairs(out, it.reply.viet, reviewMeaning(it.reply.translation));
             });
           });
         });
@@ -8567,16 +8613,16 @@ function verifyDistribution(units, dist, pins) {
         });
         // 제공 연설 (moved from 교과 into 호칭·대화 as a subtab) contributes to the same pool.
         OFFER_TALKS.forEach(function (t) {
-          t.lines.forEach(function (l) { if (l.vi && l.kr) addSentencePairs(out, l.vi, Tstrict(l.kr)); });
+          t.lines.forEach(function (l) { if (l.vi && l.kr) addSentencePairs(out, talkReviewVi(l), talkReviewMeaning(l)); });
         });
         // 기도 준비하기 (노래·기도) contributes its lines too, so the prayer text can be reviewed.
-        PRAYER_TEMPLATE.lines.forEach(function (l) { if (l.vi && l.kr) addSentencePairs(out, l.vi, Tstrict(l.kr)); });
+        PRAYER_TEMPLATE.lines.forEach(function (l) { if (l.vi && l.kr) addSentencePairs(out, l.vi, reviewMeaning(l.kr)); });
         // 이웃 사람과의 대화 (new 대화 subtab) contributes its 11 conversations' lines too.
         NEIGHBOR_CONVERSATIONS.forEach(function (conv) {
           conv.lines.forEach(function (l) {
             if (l.vi) {
               var vi = applyNeighborTermsVi(l.vi);
-              var kr = applyNeighborTermsMeaning(Tstrict(l), currentLang);
+              var kr = applyNeighborTermsMeaning(reviewMeaning(l), currentLang);
               addSentencePairs(out, vi, kr);
             }
           });
@@ -8595,42 +8641,47 @@ function verifyDistribution(units, dist, pins) {
           });
         });
         VOCAB_GROUPS.forEach(function (g) {
-          g.words.forEach(function (w) { out.push({ vi: w.word, kr: Tstrict(w.meaning) }); });
+          g.words.forEach(function (w) { out.push({ vi: w.word, kr: reviewMeaning(w.meaning) }); });
         });
-        VOCAB_CHAIN.forEach(function (it) { out.push({ vi: it.word, kr: Tstrict(it.meaning) }); });
+        VOCAB_CHAIN.forEach(function (it) { out.push({ vi: it.word, kr: reviewMeaning(it.meaning) }); });
         // 신권 어휘 + 자주 사용 어휘 (merged into 어휘 as subtabs) contribute to the same pool.
-        VOCAB_THEO.forEach(function (it) { out.push({ vi: it.word, kr: Tstrict(it.meaning) }); });
-        FREQ_VOCAB.forEach(function (it) { out.push({ vi: it.vi, kr: Tstrict(it.kr) }); });
+        VOCAB_THEO.forEach(function (it) { out.push({ vi: it.word, kr: reviewMeaning(it.meaning) }); });
+        FREQ_VOCAB.forEach(function (it) { out.push({ vi: it.vi, kr: reviewMeaning(it.kr) }); });
         // 성경 인명 사전 + 기본 단어·반의어 (moved from 교과 into 어휘 as subtabs) contribute too.
-        BIBLE_NAMES.forEach(function (n) { out.push({ vi: n.vi, kr: Tstrict(n.kr) }); });
+        BIBLE_NAMES.forEach(function (n) { out.push({ vi: n.vi, kr: reviewMeaning(n.kr) }); });
         BASIC_WORD_GROUPS.forEach(function (g) {
-          g.words.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.kr) }); });
+          g.words.forEach(function (w) { out.push({ vi: w.vi, kr: reviewMeaning(w.kr) }); });
         });
         ANTONYM_PAIRS.forEach(function (p) {
-          out.push({ vi: p.vi1, kr: Tstrict(p.kr1) });
-          out.push({ vi: p.vi2, kr: Tstrict(p.kr2) });
+          out.push({ vi: p.vi1, kr: reviewMeaning(p.kr1) });
+          out.push({ vi: p.vi2, kr: reviewMeaning(p.kr2) });
         });
         // 남북 단어 (new 어휘 subtab) contributes too.
         DIALECT_WORDS.forEach(function (d) {
-          out.push({ vi: d.north.replace(/[/].*$/, ""), kr: Tstrict(d.mean) });
-          out.push({ vi: d.south.replace(/[/].*$/, ""), kr: Tstrict(d.mean) });
+          out.push({ vi: d.north.replace(/[/].*$/, ""), kr: reviewMeaning(d.mean) });
+          out.push({ vi: d.south.replace(/[/].*$/, ""), kr: reviewMeaning(d.mean) });
         });
+        // Every word of the [어휘] word list (UNIFIED_WORDS), with that list's meaning of the same word in the
+        // current language -- words it holds beyond the lists above, and meanings those lists lack.
+        if (typeof UNIFIED_WORDS !== "undefined" && UNIFIED_WORDS) {
+          UNIFIED_WORDS.forEach(function (w) { out.push({ vi: w.vi, kr: reviewMeaning(w.kr) }); });
+        }
         return dedupeByVi(out);
       },
       pron: function () {
         var out = [];
         TONE_PAIRS.forEach(function (p) {
-          p.words.forEach(function (wd) { out.push({ vi: wd.vi, kr: Tstrict(wd.kr) }); });
+          p.words.forEach(function (wd) { out.push({ vi: wd.vi, kr: reviewMeaning(wd.kr) }); });
         });
         NS_DIFFS.forEach(function (d) {
-          d.examples.forEach(function (ex) { out.push({ vi: ex.word, kr: Tstrict(ex.mean) }); });
+          d.examples.forEach(function (ex) { out.push({ vi: ex.word, kr: reviewMeaning(ex.mean) }); });
         });
         return dedupeByVi(out);
       },
       bible: function () {
         var out = [];
-        BIBLE_OT.forEach(function (bk) { out.push({ vi: bk.vi, kr: Tstrict(bk.kr) }); });
-        BIBLE_NT.forEach(function (bk) { out.push({ vi: bk.vi, kr: Tstrict(bk.kr) }); });
+        BIBLE_OT.forEach(function (bk) { out.push({ vi: bk.vi, kr: reviewMeaning(bk.kr) }); });
+        BIBLE_NT.forEach(function (bk) { out.push({ vi: bk.vi, kr: reviewMeaning(bk.kr) }); });
         [NUM_BASIC, NUM_TEEN, NUM_TENS, NUM_HUNDREDS, NUM_LARGE, NUM_SPECIAL].forEach(function (list) {
           list.forEach(function (it) { out.push({ vi: it.reading, kr: formatNum(it.num) }); });
         });
@@ -8639,43 +8690,43 @@ function verifyDistribution(units, dist, pins) {
       grammar: function () {
         var out = [];
         GRAMMAR_INTRO.forEach(function (sec) {
-          sec.examples.forEach(function (ex) { if (ex.vi && ex.kr) addSentencePairs(out, ex.vi, Tstrict(ex.kr)); });
+          sec.examples.forEach(function (ex) { if (ex.vi && ex.kr) addSentencePairs(out, ex.vi, reviewMeaning(ex.kr)); });
         });
         GRAMMAR_UNITS.forEach(function (u) {
-          u.steps.forEach(function (s) { if (s.kr) addSentencePairs(out, s.vi, Tstrict(s.kr)); });
+          u.steps.forEach(function (s) { if (s.kr) addSentencePairs(out, s.vi, reviewMeaning(s.kr)); });
         });
         // 범용 언어 생성표 + 문법 특강 (moved from 교과 into 문법·작문 as subtabs) contribute too.
         ["subjects", "modals", "verbs", "places"].forEach(function (k) {
-          (SENT_GEN_BANK[k] || []).forEach(function (w) { addSentencePairs(out, w.vi, Tstrict(w.kr)); });
+          (SENT_GEN_BANK[k] || []).forEach(function (w) { addSentencePairs(out, w.vi, reviewMeaning(w.kr)); });
         });
-        GX_MOTION_VERBS.forEach(function (v) { addSentencePairs(out, v.vi, Tstrict(v.kr)); });
-        GX_POS_EXAMPLES.forEach(function (e) { addSentencePairs(out, e.vi, Tstrict(e.kr)); });
+        GX_MOTION_VERBS.forEach(function (v) { addSentencePairs(out, v.vi, reviewMeaning(v.kr)); });
+        GX_POS_EXAMPLES.forEach(function (e) { addSentencePairs(out, e.vi, reviewMeaning(e.kr)); });
         GRAMMAR_DICT.forEach(function (g) {
-          g.examples.forEach(function (e) { if (e.vi && e.kr) addSentencePairs(out, e.vi, Tstrict(e.kr)); });
+          g.examples.forEach(function (e) { if (e.vi && e.kr) addSentencePairs(out, e.vi, reviewMeaning(e.kr)); });
         });
         if (typeof GRAMMAR_B1_B2_PATTERNS !== "undefined") {
           GRAMMAR_B1_B2_PATTERNS.forEach(function (g) {
-            g.examples.forEach(function (e) { if (e.vi && e.kr) addSentencePairs(out, e.vi, Tstrict(e.kr)); });
+            g.examples.forEach(function (e) { if (e.vi && e.kr) addSentencePairs(out, e.vi, reviewMeaning(e.kr)); });
           });
         }
-        // A1/A2 example meanings: ex.tr holds ko + the generated languages; Tstrict() drops an example from a
+        // A1/A2 example meanings: ex.tr holds ko + the generated languages; reviewMeaning() drops an example from a
         // language's pool when that language is missing instead of offering Korean choices.
         if (typeof GRAMMAR_A1_A2_PATTERNS !== "undefined") {
           GRAMMAR_A1_A2_PATTERNS.forEach(function (pat) {
-            pat.examples.forEach(function (ex) { if (ex.vi && ex.ko) addSentencePairs(out, ex.vi, Tstrict(ex.tr || ex.ko)); });
+            pat.examples.forEach(function (ex) { if (ex.vi && ex.ko) addSentencePairs(out, ex.vi, reviewMeaning(ex.tr || ex.ko)); });
           });
         }
-        pdfGrammarExampleRows().forEach(function (r) { addSentencePairs(out, r.vi, pdfSentenceTr(r)); });
+        pdfGrammarExampleRows().forEach(function (r) { addSentencePairs(out, r.vi, reviewText(pdfSentenceTr(r))); });
         return dedupeByVi(out);
       },
       // 문장 탭 (행복한 삶을 영원히 · 사람들을 사랑하고 제자로 · 파수대) -- 문장이 아닌 항목은 모두
       // 제외하므로, 파수대에서는 단어(w.vi/w.mean)가 아니라 예문(w.example/w.example_mean)만 쓴다.
       sentence: function () {
         var out = [];
-        pdfSentenceRows().forEach(function (r) { addSentencePairs(out, r.vi, pdfSentenceTr(r)); });
+        pdfSentenceRows().forEach(function (r) { addSentencePairs(out, r.vi, reviewText(pdfSentenceTr(r))); });
         LFF_CONVERSATIONS.forEach(function (rec) {
           lffDisplayLines(rec).forEach(function (l) {
-            if (isReviewableLffLine(l)) addSentencePairs(out, applyLffListenerTerms(l.vi), Tstrict(l));
+            if (isReviewableLffLine(l)) addSentencePairs(out, applyLffListenerTerms(l.vi), reviewMeaning(l));
           });
         });
         LPD_LESSONS.forEach(function (rec) {
@@ -8683,16 +8734,16 @@ function verifyDistribution(units, dist, pins) {
             if (l.vi) {
               if (rec.kind === "appendix" && rec.num === "A") {
                 var u = applyLpdTerms(l);
-                if (u.kr && u.kr.trim()) out.push({ vi: u.vi, kr: u.kr });
+                out.push({ vi: u.vi, kr: reviewMeaning(l) ? u.kr : "" });
               } else {
-                addSentencePairs(out, l.vi, Tstrict(l));
+                addSentencePairs(out, l.vi, reviewMeaning(l));
               }
             }
           });
         });
         WATCHTOWER_VOCAB.forEach(function (wk) {
           wk.words.forEach(function (w) {
-            if (w.example && w.example_mean) addSentencePairs(out, w.example, Tstrict(w.example_mean));
+            if (w.example && w.example_mean) addSentencePairs(out, w.example, reviewMeaning(w.example_mean));
           });
         });
         return dedupeByVi(out);
@@ -8716,7 +8767,7 @@ function verifyDistribution(units, dist, pins) {
                 return it.meaning ? stripReviewListMarker(it.meaning) : stripReviewListMarker(it.target);
               }).join(" ").trim();
             }
-            if (viFull && targetFull) {
+            if (viFull) {
               out.push({
                 vi: viFull,
                 kr: targetFull,
@@ -8736,19 +8787,19 @@ function verifyDistribution(units, dist, pins) {
               // existing SONG_MEANINGS entry attached to its index must still be reachable --
               // same invariant as the viewer (renderCurrSongs) -- so surface it as its own
               // standalone Review unit rather than silently dropping it.
-              var markerTarget = songSanitize((l[currentLang] || l.ko || "").trim());
-              var markerMeaning = songSanitize((mObj[String(idx)] && mObj[String(idx)][currentLang]) || "");
+              var markerTarget = songSanitize(reviewText(l[currentLang]).trim());
+              var markerMeaning = songSanitize(reviewText(mObj[String(idx)] && mObj[String(idx)][currentLang]));
               if (markerMeaning && markerTarget) {
                 out.push({ vi: vi, kr: markerTarget, meaning: markerMeaning, songNo: s.number });
               }
               return;
             }
-            var target = songSanitize((l[currentLang] || l.ko || "").trim());
-            if (!target || isSongSectionMarker(target)) {
+            var target = songSanitize(reviewText(l[currentLang]).trim());
+            if (target && isSongSectionMarker(target)) {
               flushSentence();
               return;
             }
-            var mn = songSanitize((mObj[String(idx)] && mObj[String(idx)][currentLang]) || "");
+            var mn = songSanitize(reviewText(mObj[String(idx)] && mObj[String(idx)][currentLang]));
             buf.push({
               vi: vi,
               target: target,
@@ -8874,23 +8925,23 @@ function verifyDistribution(units, dist, pins) {
       }
       if (!scope || scope === "all") return POOL_BUILDERS[key] ? POOL_BUILDERS[key]() : [];
       var out = [];
-      function sentence(vi, kr) { if (vi && kr) addSentencePairs(out, vi, kr); }
+      function sentence(vi, kr) { if (vi) addSentencePairs(out, vi, kr); }
       if (key === "pron") {
         if (scope === "alphabet") ALPHABET.forEach(function (a) { out.push({ vi: a[1].replace(/^\[|\]$/g, ""), kr: a[0] }); });
-        else if (scope === "tones") TONES.forEach(function (t) { out.push({ vi: t.mark, kr: Tstrict(t.kr) }); });
-        else if (scope === "tonepairs") TONE_PAIRS.forEach(function (p) { p.words.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.kr) }); }); });
-        else if (scope === "nsdiff") NS_DIFFS.forEach(function (d) { d.examples.forEach(function (e) { out.push({ vi: e.word, kr: Tstrict(e.mean) }); }); });
+        else if (scope === "tones") TONES.forEach(function (t) { out.push({ vi: t.mark, kr: reviewMeaning(t.kr) }); });
+        else if (scope === "tonepairs") TONE_PAIRS.forEach(function (p) { p.words.forEach(function (w) { out.push({ vi: w.vi, kr: reviewMeaning(w.kr) }); }); });
+        else if (scope === "nsdiff") NS_DIFFS.forEach(function (d) { d.examples.forEach(function (e) { out.push({ vi: e.word, kr: reviewMeaning(e.mean) }); }); });
       } else if (key === "bible") {
-        if (scope === "books") BIBLE_OT.concat(BIBLE_NT).forEach(function (b) { out.push({ vi: b.vi, kr: Tstrict(b.kr) }); });
+        if (scope === "books") BIBLE_OT.concat(BIBLE_NT).forEach(function (b) { out.push({ vi: b.vi, kr: reviewMeaning(b.kr) }); });
         else if (scope === "numbers") [NUM_BASIC, NUM_TEEN, NUM_TENS, NUM_HUNDREDS, NUM_LARGE, NUM_SPECIAL].forEach(function (list) { list.forEach(function (n) { out.push({ vi: n.reading, kr: formatNum(n.num) }); }); });
-        else if (scope === "time") [TIME_HOURS, TIME_PERIODS, TIME_EXAMPLES].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: Tstrict(i.kr) }); }); });
-        else if (scope === "days") [CAL_DAYS, CAL_DATES].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: Tstrict(i.kr) }); }); });
-        else if (scope === "months") [CAL_MONTHS, CAL_SEASONS].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: Tstrict(i.kr) }); }); });
+        else if (scope === "time") [TIME_HOURS, TIME_PERIODS, TIME_EXAMPLES].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: reviewMeaning(i.kr) }); }); });
+        else if (scope === "days") [CAL_DAYS, CAL_DATES].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: reviewMeaning(i.kr) }); }); });
+        else if (scope === "months") [CAL_MONTHS, CAL_SEASONS].forEach(function (list) { list.forEach(function (i) { out.push({ vi: i.vi, kr: reviewMeaning(i.kr) }); }); });
       } else if (key === "wizard") {
-        if (scope === "main") CASES.forEach(function (c) { Object.keys(c.stages).forEach(function (s) { c.stages[s].forEach(function (i) { if (i.viet && i.translation) sentence(i.viet, Tstrict(i.translation)); if (i.reply && i.reply.name) sentence(i.reply.viet, Tstrict(i.reply.translation)); }); }); });
+        if (scope === "main") CASES.forEach(function (c) { Object.keys(c.stages).forEach(function (s) { c.stages[s].forEach(function (i) { if (i.viet && i.translation) sentence(i.viet, reviewMeaning(i.translation)); if (i.reply && i.reply.name) sentence(i.reply.viet, reviewMeaning(i.reply.translation)); }); }); });
         else if (scope === "reftable") REF_TABLE.forEach(function (sec) { sec.rows.forEach(function (r) { if (TERM_MEAN[r.listener]) out.push({ vi: r.listener, kr: TU(TERM_MEAN[r.listener]) }); if (TERM_MEAN[r.self]) out.push({ vi: r.self, kr: TU(TERM_MEAN[r.self]) }); }); });
-        else if (scope === "talks") OFFER_TALKS.forEach(function (t) { t.lines.forEach(function (l) { sentence(l.vi, Tstrict(l.kr)); }); });
-        else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(applyNeighborTermsVi(l.vi), applyNeighborTermsMeaning(Tstrict(l), currentLang)); }); });
+        else if (scope === "talks") OFFER_TALKS.forEach(function (t) { t.lines.forEach(function (l) { sentence(talkReviewVi(l), talkReviewMeaning(l)); }); });
+        else if (scope === "neighbor") NEIGHBOR_CONVERSATIONS.forEach(function (c) { c.lines.forEach(function (l) { sentence(applyNeighborTermsVi(l.vi), applyNeighborTermsMeaning(reviewMeaning(l), currentLang)); }); });
         else if (scope === "daily") DAILY_CONVERSATIONS.forEach(function (c) { c.turns.forEach(function (t) { sentence(applyDailyPronouns(c, t), applyDailyMeaningPronouns(c, t, currentLang)); }); });
       } else if (key === "sentence") {
         var lffScope = scope === "lff" ? 0 : (scope && scope.indexOf("lff:") === 0 ? parseInt(scope.slice(4), 10) : -1);
@@ -8900,54 +8951,54 @@ function verifyDistribution(units, dist, pins) {
         var lffRevScope = scope && scope.indexOf("lffrev:") === 0 ? parseInt(scope.slice(7), 10) : -1;
         if (lffRevScope >= 0 || scope === "lffready") LFF_CONVERSATIONS.forEach(function (r) {
           var hit = scope === "lffready" ? r.kind === "ready" : (r.kind === "review" && r.part === lffRevScope);
-          if (hit) lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); });
+          if (hit) lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), reviewMeaning(l)); });
         });
-        else if (lffPartScope >= 0) LFF_CONVERSATIONS.forEach(function (r) { if (r.part === lffPartScope) lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
-        else if (lffScope >= 0) LFF_CONVERSATIONS.forEach(function (r) { if (!lffScope || r.num === lffScope) lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), Tstrict(l)); }); });
+        else if (lffPartScope >= 0) LFF_CONVERSATIONS.forEach(function (r) { if (r.part === lffPartScope) lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), reviewMeaning(l)); }); });
+        else if (lffScope >= 0) LFF_CONVERSATIONS.forEach(function (r) { if (!lffScope || r.num === lffScope) lffDisplayLines(r).forEach(function (l) { if (isReviewableLffLine(l)) sentence(applyLffListenerTerms(l.vi), reviewMeaning(l)); }); });
         else if (lpdScope >= 0) LPD_LESSONS.forEach(function (r) {
           if (lpdScope && r.num !== lpdScope) return;
           r.lines.forEach(function (l) {
             if (r.kind === "appendix" && r.num === "A") {
               var u = applyLpdTerms(l);
-              if (u.kr && u.kr.trim()) out.push({ vi: u.vi, kr: u.kr });
+              out.push({ vi: u.vi, kr: reviewMeaning(l) ? u.kr : "" });
             } else {
-              sentence(l.vi, Tstrict(l));
+              sentence(l.vi, reviewMeaning(l));
             }
           });
         });
-        else if (lpdPartScope) LPD_LESSONS.forEach(function (r) { if (String(r.num) === lpdPartScope) r.lines.forEach(function (l) { sentence(l.vi, Tstrict(l)); }); });
+        else if (lpdPartScope) LPD_LESSONS.forEach(function (r) { if (String(r.num) === lpdPartScope) r.lines.forEach(function (l) { sentence(l.vi, reviewMeaning(l)); }); });
         else if (scope === "wt" || (scope && scope.indexOf("wt:") === 0)) {
           var targetWeek = (scope && scope.indexOf("wt:") === 0) ? parseInt(scope.slice(3), 10) : 0;
           WATCHTOWER_VOCAB.forEach(function (wk) {
             if (targetWeek && wk.week !== targetWeek) return;
             wk.words.forEach(function (w) {
-              if (w.example && w.example_mean) sentence(w.example, Tstrict(w.example_mean));
+              if (w.example && w.example_mean) sentence(w.example, reviewMeaning(w.example_mean));
             });
           });
         }
       } else if (key === "vocab") {
         if (scope === "rhyme") RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); });
         else if (scope === "orderrev") { RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { if (w.word_order_reversed) out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); }); if (typeof WORD_ORDER_REVERSED_EXTRA !== "undefined") WORD_ORDER_REVERSED_EXTRA.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }
-        else if (scope === "groups") VOCAB_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.word, kr: Tstrict(w.meaning) }); }); });
-        else if (scope === "basic") BASIC_WORD_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.kr) }); }); });
-        else if (scope === "antonym") ANTONYM_PAIRS.forEach(function (p) { out.push({ vi: p.vi1, kr: Tstrict(p.kr1) }, { vi: p.vi2, kr: Tstrict(p.kr2) }); });
-        else if (scope === "freq") FREQ_VOCAB.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.kr) }); });
-        else if (scope === "theo") VOCAB_THEO.forEach(function (w) { out.push({ vi: w.word, kr: Tstrict(w.meaning) }); });
-        else if (scope === "names") BIBLE_NAMES.forEach(function (w) { out.push({ vi: w.vi, kr: Tstrict(w.kr) }); });
-        else if (scope === "chain") VOCAB_CHAIN.forEach(function (w) { out.push({ vi: w.word, kr: Tstrict(w.meaning) }); });
-        else if (scope === "dialect") DIALECT_WORDS.forEach(function (w) { out.push({ vi: w.north.replace(/[/].*$/, ""), kr: Tstrict(w.mean) }, { vi: w.south.replace(/[/].*$/, ""), kr: Tstrict(w.mean) }); });
+        else if (scope === "groups") VOCAB_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.word, kr: reviewMeaning(w.meaning) }); }); });
+        else if (scope === "basic") BASIC_WORD_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.vi, kr: reviewMeaning(w.kr) }); }); });
+        else if (scope === "antonym") ANTONYM_PAIRS.forEach(function (p) { out.push({ vi: p.vi1, kr: reviewMeaning(p.kr1) }, { vi: p.vi2, kr: reviewMeaning(p.kr2) }); });
+        else if (scope === "freq") FREQ_VOCAB.forEach(function (w) { out.push({ vi: w.vi, kr: reviewMeaning(w.kr) }); });
+        else if (scope === "theo") VOCAB_THEO.forEach(function (w) { out.push({ vi: w.word, kr: reviewMeaning(w.meaning) }); });
+        else if (scope === "names") BIBLE_NAMES.forEach(function (w) { out.push({ vi: w.vi, kr: reviewMeaning(w.kr) }); });
+        else if (scope === "chain") VOCAB_CHAIN.forEach(function (w) { out.push({ vi: w.word, kr: reviewMeaning(w.meaning) }); });
+        else if (scope === "dialect") DIALECT_WORDS.forEach(function (w) { out.push({ vi: w.north.replace(/[/].*$/, ""), kr: reviewMeaning(w.mean) }, { vi: w.south.replace(/[/].*$/, ""), kr: reviewMeaning(w.mean) }); });
       } else if (key === "grammar") {
         if (scope === "lessons") {
-          GRAMMAR_INTRO.forEach(function (s) { s.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); });
-          GRAMMAR_UNITS.forEach(function (u) { u.steps.forEach(function (s) { sentence(s.vi, Tstrict(s.kr)); }); });
+          GRAMMAR_INTRO.forEach(function (s) { s.examples.forEach(function (e) { sentence(e.vi, reviewMeaning(e.kr)); }); });
+          GRAMMAR_UNITS.forEach(function (u) { u.steps.forEach(function (s) { sentence(s.vi, reviewMeaning(s.kr)); }); });
           if (typeof GRAMMAR_A1_A2_PATTERNS !== "undefined") {
             GRAMMAR_A1_A2_PATTERNS.forEach(function (p) {
-              p.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.tr || e.ko)); });
+              p.examples.forEach(function (e) { sentence(e.vi, reviewMeaning(e.tr || e.ko)); });
             });
           }
         }
-        else if (scope === "special") { GX_MOTION_VERBS.forEach(function (v) { sentence(v.vi, Tstrict(v.kr)); }); GX_POS_EXAMPLES.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); GRAMMAR_DICT.concat(typeof GRAMMAR_B1_B2_PATTERNS !== "undefined" ? GRAMMAR_B1_B2_PATTERNS : []).forEach(function (g) { g.examples.forEach(function (e) { sentence(e.vi, Tstrict(e.kr)); }); }); }
-        else if (scope === "sentences") ["subjects", "modals", "verbs", "places"].forEach(function (k) { (SENT_GEN_BANK[k] || []).forEach(function (w) { sentence(w.vi, Tstrict(w.kr)); }); });
+        else if (scope === "special") { GX_MOTION_VERBS.forEach(function (v) { sentence(v.vi, reviewMeaning(v.kr)); }); GX_POS_EXAMPLES.forEach(function (e) { sentence(e.vi, reviewMeaning(e.kr)); }); GRAMMAR_DICT.concat(typeof GRAMMAR_B1_B2_PATTERNS !== "undefined" ? GRAMMAR_B1_B2_PATTERNS : []).forEach(function (g) { g.examples.forEach(function (e) { sentence(e.vi, reviewMeaning(e.kr)); }); }); }
+        else if (scope === "sentences") ["subjects", "modals", "verbs", "places"].forEach(function (k) { (SENT_GEN_BANK[k] || []).forEach(function (w) { sentence(w.vi, reviewMeaning(w.kr)); }); });
       } else if (key === "song") {
         var allSongs = POOL_BUILDERS.song ? POOL_BUILDERS.song() : [];
         var m = scope ? scope.match(/^(\d+)-(\d+)$/) : null;
@@ -8991,6 +9042,8 @@ function verifyDistribution(units, dist, pins) {
 
     var studyState = { tabKey: null, scope: "all", mode: "flash", pool: [], deck: [], idx: 0, score: { correct: 0, total: 0 }, current: null, orderTokens: [], orderBank: [], orderPlaced: [] };
     window.__getPool = getPool;
+    window.reviewModePool = function (key, scope, mode) { return poolForMode(getPool(key, scope), mode); };
+    window.REVIEW_MODE_NEEDS = REVIEW_MODE_NEEDS;
     window.__studyState = studyState;
 
     /* ---------- 자동 넘김 (auto-advance) ---------- */
@@ -9538,7 +9591,12 @@ function verifyDistribution(units, dist, pins) {
 
     function startMode() {
       clearAutoAdvanceTimer();
-      if (!studyState.pool.length) { bodyEl.innerHTML = '<div class="study-empty">' + TU("이 탭에는 아직 복습할 자료가 없어요.") + '</div>'; return; }
+      if (!modePool().length) {
+        // Material exists but none of it has a meaning in this language: only the TARGET_ONLY modes apply.
+        var why = studyState.pool.length ? "선택한 언어의 뜻이 없는 자료예요. [어순 배열]과 [받아쓰기]로 복습할 수 있어요." : "이 탭에는 아직 복습할 자료가 없어요.";
+        bodyEl.innerHTML = '<div class="study-empty">' + TU(why) + '</div>';
+        return;
+      }
       if (studyState.mode === "flash") startFlash();
       else if (studyState.mode === "look") startLook();
       else if (studyState.mode === "mcq") startMcq();
@@ -9548,7 +9606,7 @@ function verifyDistribution(units, dist, pins) {
 
     /* ---------- flashcard ---------- */
     function startFlash() {
-      studyState.deck = shuffle(studyState.pool);
+      studyState.deck = shuffle(modePool());
       studyState.idx = 0;
       studyState.flashDir = studyState.flashDir || "vi-to-target";
       renderFlash();
@@ -9655,7 +9713,7 @@ function verifyDistribution(units, dist, pins) {
     }
     function nextMcq() {
       clearAutoAdvanceTimer();
-      var pool = studyState.pool;
+      var pool = modePool();
       var item = pickRandomDistinctFromCurrent(pool);
       studyState.current = item;
       var distractorPool = pool.filter(function (p) { return p.kr !== item.kr; });
@@ -9751,7 +9809,7 @@ function verifyDistribution(units, dist, pins) {
     }
     function nextLook() {
       clearAutoAdvanceTimer();
-      var pool = studyState.pool;
+      var pool = modePool();
       var item = pickRandomDistinctFromCurrent(pool);
       studyState.current = item;
       var distractorPool = pool.filter(function (p) { return p.kr !== item.kr; });
@@ -9833,8 +9891,8 @@ function verifyDistribution(units, dist, pins) {
     function startOrder() { nextOrder(); }
     function nextOrder() {
       clearAutoAdvanceTimer();
-      var candidates = studyState.pool.filter(function (p) { return tokenize(p.vi).length >= 2; });
-      var pool = candidates.length ? candidates : studyState.pool;
+      var candidates = modePool().filter(function (p) { return tokenize(p.vi).length >= 2; });
+      var pool = candidates.length ? candidates : modePool();
       var item = pickRandomDistinctFromCurrent(pool);
       studyState.current = item;
       studyState.orderTokens = tokenize(item.vi);
@@ -9850,7 +9908,9 @@ function verifyDistribution(units, dist, pins) {
     function renderOrder() {
       var item = studyState.current;
       var meaningSub = item.meaning ? '<div class="study-meaning-sub"><span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(item.meaning) + '</div>' : '';
-      var html = '<div class="study-order-prompt">' + escapeHtml(item.kr) + meaningSub + '</div>';
+      var promptHtml = item.kr ? escapeHtml(item.kr)
+        : '<button class="speak-btn" id="order-listen" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button> ' + TU("듣고 베트남어 순서대로 배열하세요");
+      var html = '<div class="study-order-prompt">' + promptHtml + meaningSub + '</div>';
       html += '<div class="study-order-answer" id="order-answer"></div>';
       html += '<div class="study-order-bank" id="order-bank"></div>';
       html += '<div id="order-feedback"></div>';
@@ -9864,7 +9924,10 @@ function verifyDistribution(units, dist, pins) {
         renderOrderChips();
       });
       document.getElementById("order-skip").addEventListener("click", nextOrder);
-      speakPromptThenArm(item.kr, revealOrder);
+      var listenBtn = document.getElementById("order-listen");
+      if (listenBtn) listenBtn.addEventListener("click", function () { speak(item.vi); });
+      if (item.kr) speakPromptThenArm(item.kr, revealOrder);
+      else speakItemThenArm(item.vi, revealOrder);
     }
     // Cold reveal -- the learner hasn't finished (or hasn't gotten right) the arrangement by the
     // time the interval nearly runs out. Shows the correct Vietnamese order in the feedback area
@@ -10137,7 +10200,7 @@ function verifyDistribution(units, dist, pins) {
     function startType() { nextType(); }
     function nextType() {
       clearAutoAdvanceTimer();
-      var item = pickRandomDistinctFromCurrent(studyState.pool);
+      var item = pickRandomDistinctFromCurrent(modePool());
       studyState.current = item;
       renderType();
     }
