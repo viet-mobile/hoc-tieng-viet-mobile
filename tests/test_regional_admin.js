@@ -412,7 +412,7 @@ async function signJwt(key, payload, headerOverrides = {}) {
     const st = await db.getPlanState(d1, 'jeonju');
     const s = st.proposal.schedule;
     assert.deepStrictEqual([s.calendarOpportunities, s.cancellationCount, s.instructionalSessions, s.completionDate], [19, 3, 16, '2027-02-13']);
-    assert.deepStrictEqual(s.slots.filter(x => x.type === 'cancellation').map(x => x.date), ['2026-11-07', '2026-12-05', '2026-12-26']);
+    assert.deepStrictEqual(s.slots.filter(x => x.type === 'cancellation').map(x => x.date), ['2026-11-07', '2026-11-28', '2026-12-05']);
     assert.strictEqual(st.proposal.changed, false, 'the seeded plan is exactly what the engine derives');
     assert.strictEqual(st.active.sessionCount, 16);
     assert.deepStrictEqual(st.active.unplaced, { learning: [], assignments: [] });
@@ -452,14 +452,14 @@ async function signJwt(key, payload, headerOverrides = {}) {
     const d1 = createD1({ seed: true });
     const activeBefore = JSON.stringify(planRows(d1, 'jeonju'));
     await db.updateRegionalSettings(d1, 'jeonju', { preliminaryMeetingDate: '2026-10-03', courseStartDate: '2026-10-10', courseEndDate: '2026-12-12', intervalDays: 7 }, ADMIN);
-    await db.addCancellation(d1, 'jeonju', { date: '2026-10-24', reason: 'x' }, ADMIN); // 10 opportunities - 3 cancellations
+    await db.addCancellation(d1, 'jeonju', { date: '2026-10-24', reason: 'x' }, ADMIN); // 10 opportunities - 4 cancellations (11-07, 11-28, 12-05 + 10-24)
     assert.strictEqual(JSON.stringify(planRows(d1, 'jeonju')), activeBefore, 'live plan untouched by configuration edits');
     const pub = await db.getPublicPlan(d1, 'jeonju');
     assert.strictEqual(pub.plan.sessionCount, 16, 'public still shows the applied 16-session plan');
     assert.strictEqual(pub.config.courseEndDate, '2027-02-13', 'public config is the applied snapshot, not the draft');
     const pr = (await db.getPlanState(d1, 'jeonju')).proposal;
     assert.strictEqual(pr.previous.sessionCount, 16);
-    assert.strictEqual(pr.proposed.sessionCount, 7);
+    assert.strictEqual(pr.proposed.sessionCount, 6);
     assert.strictEqual(pr.changed, true);
     assert(pr.proposed.sessions.every((s, i) => s.session === i + 1 && /^\d{4}-\d{2}-\d{2}$/.test(s.date)));
     assert.deepStrictEqual(pr.proposed.sessions[0].units, [1, 2]);
@@ -480,7 +480,7 @@ async function signJwt(key, payload, headerOverrides = {}) {
     assert.strictEqual(pub2.config.courseEndDate, '2026-12-19');
   });
 
-  await t('course-length transitions 16 -> 8 -> 16 -> 20 -> 12 -> 1 via the HTTP API: exact session counts, full distribution invariants, source untouched', async () => {
+  await t('course-length transitions 16 -> 7 -> 16 -> 20 -> 12 -> 1 via the HTTP API: exact session counts, full distribution invariants, source untouched', async () => {
     const w = await makeRegionWorker('jeonju');
     const s = await w.login(USERS.jeonju);
     const sourceBefore = sourceOnly(w.d1, 'jeonju');
@@ -488,7 +488,7 @@ async function signJwt(key, payload, headerOverrides = {}) {
     const totalLearning = units.reduce((n, u) => n + u.learning.length, 0);
     const totalAssign = units.reduce((n, u) => n + u.assignments.length, 0);
     const steps = [
-      { end: '2026-12-12', expect: 8 }, { end: '2027-02-13', expect: 16 }, { end: '2027-03-13', expect: 20 },
+      { end: '2026-12-12', expect: 7 }, { end: '2027-02-13', expect: 16 }, { end: '2027-03-13', expect: 20 },
       { end: '2027-01-16', expect: 12 }, { end: '2026-10-10', expect: 1 },
     ];
     for (const step of steps) {
@@ -524,7 +524,7 @@ async function signJwt(key, payload, headerOverrides = {}) {
     const d1 = createD1({ seed: true });
     const start = '2026-10-10';
     await db.updateRegionalSettings(d1, 'jeonju', { preliminaryMeetingDate: '2026-10-03', courseStartDate: start, courseEndDate: '2027-02-27', intervalDays: 7 }, ADMIN);
-    // seeded cancellations: 11-07, 12-05, 12-26 => 21 opportunities - 3 = 18
+    // seeded cancellations: 11-07, 11-28, 12-05 => 21 opportunities - 3 = 18
     let pr = (await db.getPlanState(d1, 'jeonju')).proposal;
     assert.deepStrictEqual([pr.schedule.calendarOpportunities, pr.schedule.cancellationCount, pr.schedule.instructionalSessions], [21, 3, 18]);
     await db.applyPlan(d1, 'jeonju', { token: pr.token }, ADMIN);
@@ -579,18 +579,18 @@ async function signJwt(key, payload, headerOverrides = {}) {
     await db.applyPlan(d1, 'jeonju', { token: pr.token }, ADMIN);
     const row = planRows(d1, 'jeonju').find(r => r.item_uid === target);
     assert.deepStrictEqual([row.session_number, row.origin], [5, 'manual']);
-    assert.deepStrictEqual(planRows(d1, 'jeonju'), await expectedPlanRows(d1, 'jeonju', 8, { [target]: 5 }));
-    await assert.rejects(() => db.setPlanPin(d1, 'jeonju', { uid: target, session: 9 }, ADMIN), /1~8/);
+    assert.deepStrictEqual(planRows(d1, 'jeonju'), await expectedPlanRows(d1, 'jeonju', 7, { [target]: 5 }));
+    await assert.rejects(() => db.setPlanPin(d1, 'jeonju', { uid: target, session: 8 }, ADMIN), /1~7/);
     await assert.rejects(() => db.setPlanPin(d1, 'jeonju', { uid: 'nope', session: 2 }, ADMIN), e => e.status === 404);
     await db.setPlanPin(d1, 'jeonju', { uid: target, session: null }, ADMIN);
     assert.strictEqual(planRows(d1, 'jeonju').find(r => r.item_uid === target).origin, 'auto');
-    assert.deepStrictEqual(planRows(d1, 'jeonju'), await expectedPlanRows(d1, 'jeonju', 8));
+    assert.deepStrictEqual(planRows(d1, 'jeonju'), await expectedPlanRows(d1, 'jeonju', 7));
     // a new source item is not lost before the next apply: it is shown in the last session (unplaced)
     const wk = (await db.getCurriculum(d1, 'jeonju'))[2];
     await db.updateCurriculumWeek(d1, 'jeonju', 3, { title: wk.title, note: wk.note, items: wk.items.concat([{ text: { ko: '새 항목' } }]), assignments: wk.assignments }, ADMIN);
     const st = await db.getPlanState(d1, 'jeonju');
     assert.strictEqual(st.active.unplaced.learning.length, 1);
-    assert(st.active.sessions[7].learning.includes(st.active.unplaced.learning[0]));
+    assert(st.active.sessions[6].learning.includes(st.active.unplaced.learning[0]));
     // removing an item drops its plan row in the same transaction (no orphans)
     const wk2 = (await db.getCurriculum(d1, 'jeonju'))[2];
     await db.updateCurriculumWeek(d1, 'jeonju', 3, { title: wk2.title, note: wk2.note, items: wk2.items.slice(1), assignments: wk2.assignments }, ADMIN);
@@ -710,7 +710,7 @@ async function signJwt(key, payload, headerOverrides = {}) {
     assert(applyLog.created_at);
     const details = JSON.parse(applyLog.details);
     assert.strictEqual(details.previousSessionCount, 16);
-    assert.strictEqual(details.newSessionCount, 8);
+    assert.strictEqual(details.newSessionCount, 7);
     assert.strictEqual(details.before.config.courseEndDate, '2027-02-13');
     assert.strictEqual(details.after.config.courseEndDate, '2026-12-12');
     assert.strictEqual(details.before.sessionCount, 16);

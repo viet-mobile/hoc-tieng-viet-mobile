@@ -217,8 +217,8 @@ def run_parity_check():
         "2026-10-03", # Jeonju prelim
         "2026-10-10", # Jeonju start
         "2026-11-07", # Jeonju cancel 1
-        "2026-12-05", # Jeonju cancel 2
-        "2026-12-26", # Jeonju cancel 3
+        "2026-11-28", # Jeonju cancel 2
+        "2026-12-05", # Jeonju cancel 3
         "천안 베트남어 순회대회",
         "군산 한국어 순회대회",
         "JEONJU_EVENT",

@@ -182,14 +182,14 @@ t('O. fortnightly classes: grid is start + 14k; off-grid weeks are unaligned', (
 t('P. JEONJU authoritative timeline: 19 opportunities - 3 cancellations = 16 sessions ending 2027-02-13', () => {
   const cancels = [
     { date: '2026-11-07', reason: '방학' },
+    { date: '2026-11-28', reason: '군산 한국어 순회대회' },
     { date: '2026-12-05', reason: '천안 베트남어 순회대회 파이오니아 모임' },
-    { date: '2026-12-26', reason: '군산 한국어 순회대회' },
   ];
   const r = run({ preliminaryMeetingDate: '2026-10-03', courseStartDate: '2026-10-10', courseEndDate: '2027-02-13', cancellations: cancels });
-  const authoritative = ['2026-10-10', '2026-10-17', '2026-10-24', '2026-10-31', '2026-11-14', '2026-11-21', '2026-11-28', '2026-12-12',
-    '2026-12-19', '2027-01-02', '2027-01-09', '2027-01-16', '2027-01-23', '2027-01-30', '2027-02-06', '2027-02-13'];
+  const authoritative = ['2026-10-10', '2026-10-17', '2026-10-24', '2026-10-31', '2026-11-14', '2026-11-21', '2026-12-12', '2026-12-19',
+    '2026-12-26', '2027-01-02', '2027-01-09', '2027-01-16', '2027-01-23', '2027-01-30', '2027-02-06', '2027-02-13'];
   assert.deepStrictEqual(sessionDates(r), authoritative);
-  assert.deepStrictEqual(cancelDates(r), ['2026-11-07', '2026-12-05', '2026-12-26']);
+  assert.deepStrictEqual(cancelDates(r), ['2026-11-07', '2026-11-28', '2026-12-05']);
   assert.strictEqual(r.calendarOpportunities, 19);
   assert.strictEqual(r.cancellationCount, 3);
   assert.strictEqual(r.instructionalSessions, 16);

@@ -7,7 +7,7 @@ INSERT OR IGNORE, so re-running it never overwrites what regional admins have si
 - Regions: jeonju, ulsan
 - Jeonju authoritative course configuration:
   preliminary_meeting_date = '2026-10-03', course_start_date = '2026-10-10', course_end_date = '2027-02-13',
-  weekly classes, cancellations 2026-11-07 / 2026-12-05 / 2026-12-26
+  weekly classes, cancellations 2026-11-07 / 2026-11-28 / 2026-12-05
   -> 19 class opportunities - 3 cancellations = 16 instructional sessions (the authoritative timeline)
 - Jeonju SOURCE CURRICULUM: 16 units of learning items + weekly assignments (WEEK16_TOC / WEEKLY_ASSIGNMENTS),
   every atomic item with a stable uid:  learning  L<unit:02>-<index:03>   assignment  A<unit:02>-<seq:03>

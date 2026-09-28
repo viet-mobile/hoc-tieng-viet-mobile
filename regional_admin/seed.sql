@@ -9,8 +9,8 @@ INSERT OR IGNORE INTO regional_settings (region_id, preliminary_meeting_date, co
 INSERT OR IGNORE INTO regional_settings (region_id, preliminary_meeting_date, course_start_date, course_end_date, interval_days, meeting_weekday, welcome_title, welcome_body) VALUES ('ulsan', NULL, NULL, NULL, 7, '매주 토요일', '2026-2027 울산 베트남어 학습반', NULL);
 
 INSERT OR IGNORE INTO class_cancellations (region_id, date, reason) VALUES ('jeonju', '2026-11-07', '방학');
+INSERT OR IGNORE INTO class_cancellations (region_id, date, reason) VALUES ('jeonju', '2026-11-28', '군산 한국어 순회대회');
 INSERT OR IGNORE INTO class_cancellations (region_id, date, reason) VALUES ('jeonju', '2026-12-05', '천안 베트남어 순회대회 파이오니아 모임');
-INSERT OR IGNORE INTO class_cancellations (region_id, date, reason) VALUES ('jeonju', '2026-12-26', '군산 한국어 순회대회');
 
 INSERT OR IGNORE INTO curriculum_weeks (region_id, week_number, title_ko, title_en, note_ko, note_en) VALUES ('jeonju', 1, '', '', '베트남어 성경 책명과 숫자 배우기 (풍선 준비)', 'Learning Vietnamese Bible Book Names and Numbers (Balloon Preparation)');
 INSERT OR IGNORE INTO curriculum_learning_items (uid, region_id, week_number, sort_order, text_ko, text_en, page, link_json) VALUES ('L01-000', 'jeonju', 1, 0, '성조연습', 'Tone Practice', '', '{"subAttr": "pron", "subVal": "tones", "tab": "pron"}');
@@ -417,7 +417,7 @@ INSERT OR IGNORE INTO curriculum_assignment_items (uid, region_id, week_number, 
 INSERT OR IGNORE INTO curriculum_assignment_items (uid, region_id, week_number, day_name, category, sort_order, text_ko, text_en, link_json) VALUES ('A16-007', 'jeonju', 16, '목', 'vocab', 0, '오늘의 파수대 어휘 10개 학습', 'Today''s 10 Watchtower Vocabulary Words', '{"subAttr": "sentence", "subVal": "wt", "tab": "sentence", "vocabRange": {"end": 990, "start": 980}}');
 INSERT OR IGNORE INTO curriculum_assignment_items (uid, region_id, week_number, day_name, category, sort_order, text_ko, text_en, link_json) VALUES ('A16-008', 'jeonju', 16, '금', 'review', 0, '15주차 내용 복습', 'Review Week 15 material', '{"subAttr": "review", "subVal": "grammar", "tab": "review"}');
 INSERT OR IGNORE INTO curriculum_assignment_items (uid, region_id, week_number, day_name, category, sort_order, text_ko, text_en, link_json) VALUES ('A16-009', 'jeonju', 16, '금', 'vocab', 0, '오늘의 파수대 어휘 10개 학습', 'Today''s 10 Watchtower Vocabulary Words', '{"subAttr": "sentence", "subVal": "wt", "tab": "sentence", "vocabRange": {"end": 1000, "start": 990}}');
-INSERT OR IGNORE INTO course_plans (region_id, config_json, session_count, applied_by) VALUES ('jeonju', '{"cancellations": [{"date": "2026-11-07", "reason": "방학"}, {"date": "2026-12-05", "reason": "천안 베트남어 순회대회 파이오니아 모임"}, {"date": "2026-12-26", "reason": "군산 한국어 순회대회"}], "courseEndDate": "2027-02-13", "courseStartDate": "2026-10-10", "intervalDays": 7, "preliminaryMeetingDate": "2026-10-03"}', 16, 'seed');
+INSERT OR IGNORE INTO course_plans (region_id, config_json, session_count, applied_by) VALUES ('jeonju', '{"cancellations": [{"date": "2026-11-07", "reason": "방학"}, {"date": "2026-11-28", "reason": "군산 한국어 순회대회"}, {"date": "2026-12-05", "reason": "천안 베트남어 순회대회 파이오니아 모임"}], "courseEndDate": "2027-02-13", "courseStartDate": "2026-10-10", "intervalDays": 7, "preliminaryMeetingDate": "2026-10-03"}', 16, 'seed');
 INSERT OR IGNORE INTO course_plan_items (region_id, kind, item_uid, session_number, position, origin) VALUES ('jeonju', 'learning', 'L01-000', 1, 0, 'auto');
 INSERT OR IGNORE INTO course_plan_items (region_id, kind, item_uid, session_number, position, origin) VALUES ('jeonju', 'learning', 'L01-001', 1, 1, 'auto');
 INSERT OR IGNORE INTO course_plan_items (region_id, kind, item_uid, session_number, position, origin) VALUES ('jeonju', 'learning', 'L01-002', 1, 2, 'auto');

@@ -835,6 +835,7 @@ def build_data_js(site):
             "courseEndDate": jeonju_data.JEONJU_COURSE_END_DATE,
             "intervalDays": jeonju_data.JEONJU_INTERVAL_DAYS,
             "cancellations": jeonju_data.JEONJU_CANCELLATIONS,
+            "reschedules": jeonju_data.JEONJU_RESCHEDULES,
         }))
     elif site == "ulsan":
         import ulsan_data

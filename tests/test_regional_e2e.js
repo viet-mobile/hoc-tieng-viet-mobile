@@ -147,6 +147,9 @@ async function startServer(workers) {
       if (lang === 'ko') {
         ok(/^2026\/10\/10 - 1주$/.test(info.sessions[0]), 'first card badge is "2026/10/10 - 1주", got ' + info.sessions[0]);
         ok(/2027\/2\/13|2027\/02\/13/.test(info.sessions[15]) && /총복습/.test(info.sessions[15]), 'last card is the 2027/02/13 총복습, got ' + info.sessions[15]);
+        ok(info.sessions[4] === '2026/11/15 - 5주 (토요일 본부 대표자 특별 방문 집회로 인해 일요일 오후 2시)', 'the moved 5th class shows its Sunday date and reason, got ' + info.sessions[4]);
+        ok(info.sessions[6] === '2026/12/12 - 7주' && info.sessions[8] === '2026/12/26 - 9주', 'classes 7-9 follow the 11/28 break, got ' + JSON.stringify(info.sessions.slice(6, 9)));
+        ok(JSON.stringify(info.cancels) === JSON.stringify(['2026/11/07 방학', '2026/11/28 군산 한국어 순회대회', '2026/12/05 천안 베트남어 순회대회 파이오니아 모임']), 'cancellation cards: ' + JSON.stringify(info.cancels));
       }
     }
     await E(`localStorage.removeItem('vn-app-lang')`);
@@ -167,7 +170,7 @@ async function startServer(workers) {
     // live recalculation while typing (no save yet)
     await E(`(function(){ var e = document.getElementById('sett-end'); e.value = '2026-12-12'; e.dispatchEvent(new Event('input', {bubbles:true})); })()`);
     summary = await E(`document.getElementById('course-summary').innerText`);
-    ok(/10회/.test(summary) && /2회/.test(summary) && /8회/.test(summary), 'live summary for end 2026-12-12 = 10 / 2 / 8: ' + summary.replace(/\s+/g, ' '));
+    ok(/10회/.test(summary) && /3회/.test(summary) && /7회/.test(summary), 'live summary for end 2026-12-12 = 10 / 3 / 7: ' + summary.replace(/\s+/g, ' '));
     await E(`(function(){ var e = document.getElementById('sett-end'); e.value = '2026-12-01'; e.dispatchEvent(new Event('input', {bubbles:true})); document.getElementById('sett-start').value = '2026-12-05'; document.getElementById('sett-start').dispatchEvent(new Event('input', {bubbles:true})); })()`);
     ok(/종료일이 시작일보다 빠릅니다/.test(await E(`document.getElementById('course-summary').innerText`)), 'end < start is flagged in the UI');
     await E(`(function(){ document.getElementById('sett-start').value = '2026-10-10'; document.getElementById('sett-start').dispatchEvent(new Event('input', {bubbles:true})); var e = document.getElementById('sett-end'); e.value = '2026-12-12'; e.dispatchEvent(new Event('input', {bubbles:true})); })()`);
@@ -179,7 +182,7 @@ async function startServer(workers) {
     await E(`document.querySelector('[data-act="tab"][data-tab="plan"]').click()`);
     await waitFor(`document.body.innerText.includes('자동 재배정 미리보기')`, 'plan tab');
     const planText = await E(`document.getElementById('tab-content').innerText`);
-    ok(/16회차 → 8회차/.test(planText), 'preview announces 16회차 → 8회차');
+    ok(/16회차 → 7회차/.test(planText), 'preview announces 16회차 → 7회차');
     ok(/1회차 — 2026-10-10/.test(planText), 'preview lists 1회차 — 2026-10-10');
     ok(!/undefined|NaN|\[object/.test(planText), 'no undefined in plan preview');
     // public still shows the applied plan (16)
@@ -192,16 +195,17 @@ async function startServer(workers) {
     await E(`document.querySelector('[data-act="tab"][data-tab="plan"]').click()`);
     await waitFor(`!!document.querySelector('[data-act="plan-apply"]') && !document.querySelector('[data-act="plan-apply"]').disabled`, 'enabled apply button');
     await E(`document.querySelector('[data-act="plan-apply"]').click()`); // confirm() dialog auto-accepted
-    await waitFor(`document.body.innerText.includes('현재 적용된 배정 (8회차)')`, 'applied 8-session plan');
+    await waitFor(`document.body.innerText.includes('현재 적용된 배정 (7회차)')`, 'applied 7-session plan');
 
     /* ---------- 3. public site now shows the generated 8-session plan ---------- */
     await goto(`http://jeonju.test:${PORT}/`);
     await hydrationDone();
     await courseHtml();
     let info = await cardInfo();
-    ok(info.sessions.length === 8, `public shows 8 sessions after apply, got ${info.sessions.length}`);
-    ok(info.cancels.length === 2, `public shows the 2 in-period cancellations, got ${info.cancels.length}`);
-    ok(info.sessions[0] === '2026/10/10 - 1회차' && info.sessions[7] === '2026/12/12 - 8회차', 'session badges are "N회차" with dates: ' + JSON.stringify([info.sessions[0], info.sessions[7]]));
+    ok(info.sessions.length === 7, `public shows 7 sessions after apply, got ${info.sessions.length}`);
+    ok(info.cancels.length === 3, `public shows the 3 in-period cancellations, got ${info.cancels.length}`);
+    ok(info.sessions[0] === '2026/10/10 - 1회차' && info.sessions[6] === '2026/12/12 - 7회차', 'session badges are "N회차" with dates: ' + JSON.stringify([info.sessions[0], info.sessions[6]]));
+    ok(info.sessions[4] === '2026/11/15 - 5회차 (토요일 본부 대표자 특별 방문 집회로 인해 일요일 오후 2시)', 'the moved class keeps its Sunday date on a generated plan: ' + info.sessions[4]);
     ok(!(await E(`document.getElementById('curr-week16-root').innerText`)).match(/undefined|NaN/), 'no undefined in public course');
     const firstCardItems = await E(`document.querySelector('#curr-week16-root .group-card[data-syl="s1"] .curr-item-list').children.length`);
     ok(firstCardItems > 5, 'session 1 carries its share of learning items (' + firstCardItems + ')');

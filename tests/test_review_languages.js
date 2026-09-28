@@ -161,6 +161,22 @@ async function vietnameseMatrix(LANGS) {
       check(document.querySelectorAll('#order-bank .study-chip').length > 0, lang + ' 어순 배열: no question');
     }
   }
+  // [대화] > [제공 연설] reader: a line shows its meaning only in the UI language's own text -- the Korean-only
+  // {{MARITAL_A}} answer never in another language, no raw token, no empty meaning row, nothing in Vietnamese.
+  if (document.querySelector('.subtab-btn[data-wizard="talks"]')) {
+    for (const lang of LANGS) {
+      window.setLang(lang); await sleep(40);
+      document.querySelector('.tab-btn[data-tab="wizard"]').click(); await sleep(40);
+      document.querySelector('.subtab-btn[data-wizard="talks"]').click(); await sleep(80);
+      const root = document.getElementById('curr-talks-root');
+      const rows = [...root.querySelectorAll('.talk-kr')].map(e => e.textContent.trim());
+      check(root.querySelectorAll('.talk-vi').length > 0 && !/\{\{[A-Z_]+\}\}/.test(root.textContent), lang + ' 제공 연설: no lines or a raw token');
+      check(rows.every(Boolean), lang + ' 제공 연설: empty meaning row');
+      if (lang === 'ko') check(rows.some(s => /결혼하지 않았어요|이미 결혼했어요/.test(s)), 'ko 제공 연설: the answer to "결혼은 하셨나요?" is missing');
+      else check(!rows.some(s => /[가-힣]/.test(s)), lang + ' 제공 연설: Korean meaning ' + (rows.find(s => /[가-힣]/.test(s)) || ''));
+      if (lang === 'vi') check(!rows.length, 'vi 제공 연설: a meaning row in Vietnamese');
+    }
+  }
   return { errors, fixtures, counts };
 }
 
