@@ -5635,9 +5635,8 @@
   // "N주" reads naturally as a trailing unit in Korean/Chinese/Japanese (1주/1週/1週), but English
   // puts the ordinal word first ("Week 1", not "1 Week") -- so this can't just be a suffix string.
   function weekBadge(n) {
-    if (currentLang === "en") return TU("주") + " " + n;
-    // CJK counters attach to the number ("5주", "5週"); the other languages write "5 Tuần", "5 Woche".
-    return /^(ko|ja|zh|zh_cn)$/.test(currentLang) ? n + TU("주") : n + " " + TU("주");
+    // CJK counters attach to the number ("5주", "5週"); the other languages lead with the word ("Week 5", "Tuần 5").
+    return /^(ko|ja|zh|zh_cn)$/.test(currentLang) ? n + TU("주") : TU("주") + " " + n;
   }
   // "N주차" (the Nth week) -- ordinal position differs per language, so a per-language format like SESSION_BADGE.
   // (table lives inside the function: it is called during start-up rendering, before a top-level var would be set)

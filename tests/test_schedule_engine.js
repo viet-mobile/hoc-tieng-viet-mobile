@@ -181,7 +181,7 @@ t('O. fortnightly classes: grid is start + 14k; off-grid weeks are unaligned', (
 
 t('P. JEONJU authoritative timeline: 19 opportunities - 3 cancellations = 16 sessions ending 2027-02-13', () => {
   const cancels = [
-    { date: '2026-11-07', reason: '방학' },
+    { date: '2026-11-07', reason: '휴강' },
     { date: '2026-11-28', reason: '군산 한국어 순회대회' },
     { date: '2026-12-05', reason: '천안 베트남어 순회대회 파이오니아 모임' },
   ];

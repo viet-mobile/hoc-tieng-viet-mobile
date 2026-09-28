@@ -19,7 +19,7 @@ JEONJU_COURSE_START_DATE = "2026-10-10"
 JEONJU_COURSE_END_DATE = JEONJU_END.isoformat()
 JEONJU_INTERVAL_DAYS = 7
 JEONJU_CANCELLATIONS = [
-    {"date": "2026-11-07", "reason": "방학"},
+    {"date": "2026-11-07", "reason": "휴강"},
     {"date": "2026-11-28", "reason": "군산 한국어 순회대회"},
     {"date": "2026-12-05", "reason": "천안 베트남어 순회대회 파이오니아 모임"},
 ]
