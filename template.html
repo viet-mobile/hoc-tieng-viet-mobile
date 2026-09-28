@@ -712,6 +712,8 @@
   .group-card[data-open="true"] .chev { transform: rotate(180deg); }
   .group-body { display: none; padding: 0 15px 13px; }
   .group-card[data-open="true"] .group-body { display: block; }
+  /* A closed card inside an open one (e.g. [발음] > [성조] 중국어 성조 대응) stays closed. */
+  .group-card[data-open="false"] > .group-body { display: none; }
   .word-row { display: flex; justify-content: space-between; gap: 10px; padding: 6px 0; border-top: 1px solid var(--border); }
 
   /* ---------- Read-all (전체 듣기) ---------- */
