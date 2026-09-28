@@ -9,6 +9,12 @@ UI language (vi, cs, zh_cn, zh, en, fr, de, hu, id, ja, ko, pl), each defining:
              "zh" instead has {"title", "note": text, "subsections": {"nan": {...}, "yue": {...}}}
              (Taiwanese Hokkien and Cantonese -- Traditional characters are not a pronunciation).
 
+  CONSONANTS = {"title", "intro": text, "topics": [{"id", "title", "text": text,
+                  "cards": [{"title", "rows": [[<"north"|"south">, label, text], ...]}],   (optional)
+                  "examples": [{"word": Vietnamese, "mean", "note": IPA by region}],       (optional)
+                  "after": text}]}                                                          (optional)
+             Korean <-> Vietnamese consonant systems; shown inside the "ko" section in every UI language.
+
 Text format of every part: one block per line -- "## heading", "- bullet", or a paragraph.
 """
 import importlib
@@ -50,6 +56,19 @@ def _parse_part(part):
     return out
 
 
+def _parse_consonants(cons):
+    topics = []
+    for topic in cons["topics"]:
+        out = {"id": topic["id"], "title": topic["title"], "text": parse_blocks(topic["text"])}
+        for key in ("cards", "examples"):
+            if topic.get(key):
+                out[key] = topic[key]
+        if topic.get("after"):
+            out["after"] = parse_blocks(topic["after"])
+        topics.append(out)
+    return {"title": cons["title"], "intro": parse_blocks(cons["intro"]), "topics": topics}
+
+
 def build_pron_comparison():
     data = {"order": SECTION_ORDER, "langs": {}}
     for lang in UI_LANGS:
@@ -63,4 +82,16 @@ def build_pron_comparison():
             "ui": module.UI,
             "sections": {sid: _parse_part(module.SECTIONS[sid]) for sid in SECTION_ORDER},
         }
+        data["langs"][lang]["sections"]["ko"]["consonants"] = _parse_consonants(module.CONSONANTS)
+    _check_consonants_parallel(data)
     return data
+
+
+def _check_consonants_parallel(data):
+    """Every UI language has the same consonant topics, cards, rows and example words (only the text differs)."""
+    def shape(cons):
+        return [(t["id"], [len(c["rows"]) for c in t.get("cards", [])], [[r[0] for r in c["rows"]] for c in t.get("cards", [])],
+                 [e["word"] for e in t.get("examples", [])], bool(t.get("after"))) for t in cons["topics"]]
+    ref = shape(data["langs"]["ko"]["sections"]["ko"]["consonants"])
+    for lang, content in data["langs"].items():
+        assert shape(content["sections"]["ko"]["consonants"]) == ref, lang

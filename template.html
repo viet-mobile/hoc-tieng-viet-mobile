@@ -2999,6 +2999,9 @@
   .pron-cmp .pron-cmp-p, .pron-cmp .pron-cmp-list { font-size: 0.9rem; line-height: 1.6; color: var(--ink); overflow-wrap: anywhere; }
   .pron-cmp .pron-cmp-list { margin: 4px 0 6px; padding-left: 1.2em; }
   .pron-cmp .pron-cmp-list li { margin-bottom: 4px; }
+  /* [남북 발음] region cards reused in [차이]: a long region label puts the description on the next line. */
+  .pron-cmp .ns-row { flex-wrap: wrap; }
+  .pron-cmp .ns-desc { flex: 1 1 12em; min-width: 0; overflow-wrap: anywhere; }
   /* Culture compact cards */
   .culture-fold .culture-fold-head { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; text-align: left; }
   .culture-fold .culture-card-title { display: block; margin-bottom: 0; }

@@ -379,3 +379,124 @@ Kata bahasa Polandia bertekanan tetap dan punya banyak gugus konsonan; suku kata
 """,
     },
 }
+
+
+# Perbandingan konsonan bahasa Korea dan bahasa Vietnam (kartu lipat di bagian "Bahasa Korea dan bahasa Vietnam"). Format: __init__.py.
+CONSONANTS = {
+    "title": "Perbandingan konsonan bahasa Korea dan bahasa Vietnam",
+    "intro": """
+Huruf Korea yang dicantumkan di samping (ㄱ, ㄲ, ㅋ, dan seterusnya) hanyalah petunjuk belajar agar penutur bahasa Korea dapat memperkirakan bunyinya. Artinya bukan bahwa konsonan bahasa Vietnam identik secara fonetis dengan konsonan bahasa Korea. Acuannya adalah pelafalan Hanoi; perbedaan daerah ditandai tersendiri. Di dalam [ ] adalah IPA.
+""",
+    "topics": [
+        {
+            "id": "laryngeal",
+            "title": "Perbandingan dengan konsonan lenis, fortis, dan aspirat bahasa Korea",
+            "text": """
+Konsonan hambat dan afrikat bahasa Korea membentuk oposisi tiga arah: lenis, fortis (tegang), dan aspirat (ㄱ/ㄲ/ㅋ, ㄷ/ㄸ/ㅌ, ㅂ/ㅃ/ㅍ, ㅈ/ㅉ/ㅊ). Konsonan lenis tak bersuara dengan sedikit hembusan di awal kata dan menjadi bersuara di antara vokal; fortis tidak beraspirasi dengan laring yang tegang; aspirat dilafalkan dengan hembusan kuat.
+Bahasa Vietnam tidak memiliki oposisi tiga arah seperti itu. Konsonan hambatnya dibedakan oleh aspirasi (t / th) dan oleh bersuara-tidaknya (đ, b). Perbandingan di bawah ini hanya membantu merasakan oposisi tersebut.
+## đ / t / th dan ㄷ / ㄸ / ㅌ
+- t [t]: tak bersuara dan tidak beraspirasi, sehingga bagi penutur bahasa Korea terdengar dekat dengan ㄸ, tetapi tidak setegang ㄸ.
+- th [tʰ]: tak bersuara dan beraspirasi, dekat dengan ㅌ. Bukan th bahasa Inggris [θ].
+- đ [ɗ]: implosif bersuara, pita suara bergetar. ㄷ bahasa Korea tak bersuara di awal kata, jadi melafalkan đ sebagai ㄷ menghasilkan bunyi lain.
+## g / c·k·q / kh dan ㄱ / ㄲ / ㅋ
+- c·k·q [k]: hambat tak bersuara tanpa aspirasi, sehingga terdengar dekat dengan ㄲ.
+- kh [x]: bukan konsonan hambat, melainkan frikatif tak bersuara yang dibentuk dengan pangkal lidah di dekat langit-langit lunak. Tidak dilepaskan seperti ㅋ [kʰ].
+- g·gh [ɣ]: frikatif bersuara. Cara artikulasinya berbeda dari ㄱ bahasa Korea.
+Jadi g / c / kh bukan tiga konsonan hambat yang dibentuk dengan cara yang sama seperti ㄱ/ㄲ/ㅋ, melainkan frikatif bersuara, hambat tanpa aspirasi, dan frikatif tak bersuara.
+## b / p dan ㅂ / ㅃ / ㅍ
+- b [ɓ]: implosif bersuara, seperti đ.
+- p [p]: tidak beraspirasi sehingga terdengar dekat dengan ㅃ, tetapi terutama muncul di akhir suku kata (đáp); di awal kata hanya jarang, dalam kata serapan (pin 'baterai'). Banyak penutur melafalkan p semacam ini seperti [b].
+- [pʰ] beraspirasi kuat seperti ㅍ tidak ada dalam bahasa Vietnam modern. Ejaan ph dibaca [f] (lihat "ph dulu dan sekarang" di bawah).
+""",
+        },
+        {
+            "id": "ph",
+            "title": "ph dulu dan sekarang",
+            "text": """
+Dalam bahasa Vietnam modern, ph adalah [f]: seperti f dalam bahasa Indonesia, frikatif labiodental tak bersuara dengan gigi atas menyentuh ringan bibir bawah (pha [fa] 'menyeduh', phở).
+Jangan meletupkan ph seperti ㅍ bahasa Korea. ㅍ adalah hambat beraspirasi [pʰ], bibir dikatupkan lalu dibuka; ph [f] dihasilkan oleh gesekan tanpa mengatupkan bibir.
+## Asal ejaan ph
+Ketika para misionaris menuliskan bahasa Vietnam dengan huruf Latin pada abad ke-17, mereka memakai ph, ejaan untuk huruf Yunani φ, untuk menuliskan konsonan hambat beraspirasi bahasa Vietnam (demikian pula th). Karena itu ph pada masa itu ditafsirkan sebagai bunyi jenis [pʰ], yaitu bunyi yang dapat dibandingkan dengan ㅍ bahasa Korea.
+Kemudian bunyi ini berubah menjadi frikatif [f]. th, yang ditulis dengan cara yang sama, hingga kini tetap hambat beraspirasi [tʰ].
+Lebih jauh lagi, bunyi yang berkembang menjadi ph tidak berasal dari satu sumber saja: bunyi beraspirasi lama pada kata asli dan bunyi bibir pada kata Sino-Vietnam diperkirakan mencapai [f] masa kini melalui jalan yang berbeda. Tidak dapat dipastikan bahwa nilai bunyinya dahulu persis sama dengan ㅍ bahasa Korea.
+- ph dulu: jenis [pʰ], dapat dibandingkan dengan ㅍ bahasa Korea.
+- ph sekarang: [f], bukan ㅍ bahasa Korea.
+""",
+        },
+        {
+            "id": "palatal",
+            "title": "ㅈ / ㅉ / ㅊ dan konsonan bahasa Vietnam",
+            "text": """
+ㅈ/ㅉ/ㅊ bahasa Korea [tɕ t͈ɕ tɕʰ] adalah afrikat yang beroposisi sebagai lenis, fortis, dan aspirat. Dalam bahasa Vietnam, ejaan yang dapat dibandingkan dengannya adalah ch, tr, d, dan gi, tetapi oposisinya bekerja dengan cara lain.
+- ch [c]~[tɕ]: tidak beraspirasi, sehingga bagi penutur bahasa Korea terdengar dekat dengan ㅉ. Banyak penutur Hanoi melafalkannya sebagai afrikat [tɕ]; deskripsi tradisional menuliskannya sebagai hambat palatal [c].
+- tr: di Hanoi sama dengan ch; dalam pelafalan tradisional Vietnam Tengah dan Selatan [ʈ], dengan lidah terangkat lebih ke belakang (lihat "ch dan tr menurut daerah" di bawah).
+- d·gi: di Hanoi frikatif bersuara [z], di Selatan semivokal [j] (seperti y dalam bahasa Indonesia). Keduanya bukan afrikat, sehingga cara artikulasinya berbeda dari ㅈ bahasa Korea.
+ch dan tr bahasa Vietnam digambarkan pada dasarnya tidak beraspirasi, dan tidak ada afrikat beraspirasi yang menjadi pasangannya. Jadi tidak ada deret bunyi tersendiri yang tepat sepadan dengan ㅊ bahasa Korea [tɕʰ]. Menghafal d·gi sebagai ㅈ dan ch sebagai ㅉ juga membuat perbedaan bersuara-tidaknya dan cara artikulasi mudah terlewat.
+""",
+        },
+        {
+            "id": "sx",
+            "title": "s dan x menurut daerah",
+            "text": """
+Ejaan s dan x dahulu melambangkan bunyi yang berbeda dalam sistem bunyi tradisional; kini keduanya dibedakan di sebagian daerah dan sudah melebur di daerah lain.
+""",
+            "cards": [
+                {"title": "Utara — sekitar Hanoi", "rows": [
+                    ["north", "Oposisi", "Dalam bahasa lisan masa kini sebagian besar sudah melebur (netralisasi)."],
+                    ["north", "Pelafalan", "s dan x sama-sama [s]. Ejaannya berbeda, tetapi bunyinya sama atau sangat mirip. Sebagian penutur membedakannya saat membaca dengan cermat sesuai ejaan, jadi tidak dapat dikatakan bahwa semua penutur selalu melafalkannya persis sama."],
+                ]},
+                {"title": "Tengah dan Selatan", "rows": [
+                    ["south", "Oposisi", "Masih dibedakan di banyak daerah."],
+                    ["south", "Pelafalan", "x adalah [s], s adalah [ʂ] dengan lidah lebih ke belakang (sebagian sumber menulis [ʃ]). Namun banyak penutur, misalnya generasi muda di Kota Ho Chi Minh, juga melafalkan s sebagai [s] sehingga keduanya melebur; di dalam satu daerah pun ada perbedaan."],
+                ]},
+            ],
+            "examples": [
+                {"word": "sinh", "mean": "lahir", "note": "Hanoi [s] · Huế, Saigon [ʂ]~[s]"},
+                {"word": "xinh", "mean": "cantik", "note": "Hanoi [s] · Huế, Saigon [s]"},
+            ],
+            "after": """
+## Perbandingan dengan ㅅ / ㅆ bahasa Korea
+- ㅅ/ㅆ bahasa Korea adalah dua frikatif yang beroposisi sebagai lenis dan fortis. s/x bahasa Vietnam juga dibedakan dalam ejaan dan sistem tradisional, sehingga kebiasaan mempelajari dua bunyi terpisah dapat dimanfaatkan dengan cara serupa.
+- Namun jangan menghafalnya satu lawan satu seperti "s = ㅆ, x = ㅅ". Di daerah yang membedakannya, perbedaan s dan x bukan soal ketegangan seperti dalam bahasa Korea, melainkan posisi lidah ([ʂ] lawan [s]).
+- Di Hanoi s dan x sama-sama [s], sehingga bagi penutur bahasa Korea keduanya dapat terdengar seperti ㅅ yang kuat, yaitu dekat dengan ㅆ. Ini hanya petunjuk untuk menyimak.
+- Di Vietnam Tengah dan Selatan keduanya dapat dibedakan, jadi jangan menganggap s dan x bahasa Vietnam selalu berbunyi sama.
+""",
+        },
+        {
+            "id": "chtr",
+            "title": "ch dan tr menurut daerah",
+            "text": """
+Ejaan ch dan tr secara tradisional melambangkan bunyi yang berbeda; tergantung daerahnya, keduanya sudah melebur atau masih dibedakan.
+## Utara — sekitar Hanoi
+Dalam tuturan Hanoi masa kini, ch dan tr digambarkan sudah melebur sepenuhnya. Deskripsi tradisional menuliskan bunyinya sebagai hambat palatal [c], dibentuk dengan bagian depan lidah menempel pada langit-langit; banyak penutur muda melafalkannya sebagai afrikat [tɕ]. Bunyinya tidak beraspirasi.
+Karena itu trà 'teh' dan chà 'menggosok', yang nadanya (huyền) pun sama, terdengar sama di Hanoi: keduanya [tɕaː]. Bagi penutur bahasa Korea bunyinya bisa terdengar dekat dengan ㅉ, tetapi bukan bunyi yang sama.
+## Selatan — sekitar Kota Ho Chi Minh
+Pelafalan tradisional Selatan membedakan ch dan tr. ch adalah [c] dengan lidah relatif di depan (dapat terdengar sedikit seperti afrikat, dekat dengan [tɕ]); tr adalah retrofleks [ʈ] dengan ujung lidah terangkat di belakang gusi, dan sering terdengar sedikit seperti afrikat [ʈʂ].
+Karena itu di Selatan trà [ʈaː] dan chà [caː] terdengar berbeda. Bagi penutur bahasa Korea, ch terdengar dekat dengan ㅉ, sedangkan tr, dengan lidah lebih ke belakang, bisa terdengar sedikit lebih berat dan lebih redup.
+Namun banyak penutur, termasuk generasi muda di Kota Ho Chi Minh, melafalkan tr seperti ch, yaitu [c], dan melemahnya oposisi ini juga dilaporkan di Selatan. Pelafalan tradisional Vietnam Tengah (Huế dan tempat lain) juga membedakan keduanya.
+## Ringkasan
+""",
+            "cards": [
+                {"title": "ch", "rows": [
+                    ["north", "Utara (sekitar Hanoi)", "[c]~[tɕ], tidak beraspirasi. Sama dengan tr."],
+                    ["south", "Selatan (sekitar Kota Ho Chi Minh)", "[c] (dapat terdengar sedikit seperti afrikat). Lidah relatif di depan."],
+                ]},
+                {"title": "tr", "rows": [
+                    ["north", "Utara (sekitar Hanoi)", "Melebur dengan ch, dilafalkan [c]~[tɕ]."],
+                    ["south", "Selatan (sekitar Kota Ho Chi Minh)", "[ʈ] (sering terdengar seperti [ʈʂ]). Retrofleks, ujung lidah terangkat lebih ke belakang. Sebagian penutur melafalkannya seperti ch, yaitu [c]."],
+                ]},
+            ],
+            "examples": [
+                {"word": "trà", "mean": "teh", "note": "Hanoi [tɕaː] · Saigon [ʈaː]"},
+                {"word": "chà", "mean": "menggosok", "note": "Hanoi [tɕaː] · Saigon [caː]"},
+            ],
+            "after": """
+## Catatan untuk penutur bahasa Korea
+- Jangan menghafal ch sebagai ㅉ dan tr sebagai ㅊ bahasa Korea. Keduanya pada dasarnya tidak beraspirasi.
+- ㅈ/ㅉ/ㅊ bahasa Korea beroposisi sebagai lenis, fortis, dan aspirat, sedangkan ch/tr bahasa Vietnam berbeda posisi lidahnya (tempat artikulasi) di Selatan dan sudah melebur di Utara, sehingga keduanya sistem yang berbeda.
+- Di Utara ch dan tr adalah bunyi yang sama, jadi ejaan setiap kata perlu dihafal tersendiri.
+- Saat mempelajari pelafalan Selatan, perhatikan perbedaan tempat artikulasi: pada tr lidah terangkat lebih ke belakang.
+""",
+        },
+    ],
+}

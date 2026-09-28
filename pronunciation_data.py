@@ -613,26 +613,53 @@ NORTH_SOUTH_NOTE = {'ko': "-anh/-ach, -inh/-ich, -ênh/-êch의 남부식 발음
        'da się tego ująć w sztywną regułę.'}
 
 NORTH_SOUTH_DIFFS = [{'title': 'd-, gi-, r-',
-  'north': {'ko': "셋 다 한글의 'ㅈ'에 가까운 소리로 똑같이 발음해요.",
-            'zh': '三者的發音都接近英語的z音，讀音完全相同（華語沒有完全對應的注音符號）。',
-            'en': 'All three are pronounced exactly the same, close to the English z sound.',
-            'ja': '三つとも日本語のザ行に近い音で、同じように発音します。',
-            'de': 'Alle drei werden im Norden völlig gleich ausgesprochen, ähnlich einem weichen, stimmhaften s [z].',
-            'fr': "Dans le Nord, tous les trois se prononcent de façon identique, proche d'un z sonore [z].",
-            'pl': 'Wszystkie trzy wymawia się na północy zupełnie tak samo, blisko polskiego dźwięcznego „z” [z].'},
-  'south': {'ko': "d와 gi는 영어 yes의 y처럼 반모음 'y'에 가깝게, r은 혀를 굴리는 'ㄹㄹ'(스페인어 r과 비슷)로 서로 다르게 발음해요.",
-            'zh': "d和gi的發音接近半元音'y'，像英語yes中的y，而r則是捲舌顫音（類似西班牙語的r），兩者發音不同。",
-            'en': "d and gi are pronounced close to the semivowel 'y', like the y in English yes, while r is "
-                  'pronounced as a rolled r (similar to Spanish r) — the two are pronounced differently.',
-            'ja': "dとgiは英語yesのyのように半母音'y'に近く、rは舌を巻く巻き舌音（スペイン語のrに似ている）で、互いに異なって発音します。",
-            'de': 'd und gi werden wie ein j-Halbvokal [j] gesprochen, während r als gerolltes Zungen-r gesprochen '
-                  'wird – sie werden also unterschieden.',
-            'fr': 'Dans le Sud, d et gi se prononcent comme un y semi-voyelle [j], tandis que r se prononce comme un r '
-                  'roulé — ils sont donc distingués.',
-            'pl': 'd oraz gi wymawia się jak półsamogłoskę „j” [j], natomiast r wymawia się jako drżące „r” — oba '
-                  'dźwięki są więc rozróżniane.'},
+  'north': {'ko': '셋 다 보통 [z]로 같게 발음해요. 성대를 울리며 마찰로 내는 소리(영어 z와 비슷)라서 한국어 ㅈ과는 다른 소리예요.',
+            'zh': '三者通常都念 [z]，接近英語的 z 音（華語沒有完全對應的注音符號）。',
+            'en': 'All three are usually pronounced the same, [z], close to the English z sound.',
+            'ja': '三つともふつうは同じ [z] で、日本語のザ行に近い音です。',
+            'de': 'Alle drei werden im Norden meist gleich ausgesprochen, als stimmhaftes s [z].',
+            'fr': 'Dans le Nord, les trois se prononcent généralement de la même façon, comme un z '
+                  'sonore [z].',
+            'pl': 'Na północy wszystkie trzy wymawia się zwykle tak samo, jak dźwięczne „z” [z].',
+            'vi': 'Cả ba thường được đọc giống nhau là [z], gần với âm z của tiếng Anh.',
+            'cs': 'Všechna tři se obvykle vyslovují stejně, jako znělé [z].',
+            'zh_cn': '三者通常都读 [z]，接近英语的 z 音。',
+            'hu': 'Északon mindhármat általában ugyanúgy, zöngés [z]-nek ejtik.',
+            'id': 'Di Utara ketiganya biasanya dilafalkan sama, yaitu [z], mirip bunyi z.'},
+  'south': {'ko': 'd와 gi는 반모음 [j](영어 yes의 y와 비슷)로, r은 [r]~[ɹ] 등 화자에 따라 다른 r 소리로 발음해서 서로 구별해요.',
+            'zh': 'd 和 gi 念半母音 [j]（類似英語 yes 的 y），r 則依說話者念成 [r]~[ɹ] 等不同的 r 音，兩者有區別。',
+            'en': 'd and gi are pronounced as the glide [j], like the y in English yes, while r is '
+                  'an r sound such as [r]~[ɹ] that varies by speaker, so they are kept apart.',
+            'ja': 'd と gi は英語 yes の y のような半母音 [j]、r は話者によって [r]~[ɹ] などさまざまな r 音で発音し、互いに区別します。',
+            'de': 'd und gi werden als Halbvokal [j] gesprochen, r dagegen als ein je nach Sprecher '
+                  'unterschiedliches r wie [r]~[ɹ] – sie werden also unterschieden.',
+            'fr': 'Dans le Sud, d et gi se prononcent comme la semi-voyelle [j], tandis que r est '
+                  'un r variable selon les locuteurs, comme [r]~[ɹ] — ils sont donc distingués.',
+            'pl': 'd oraz gi wymawia się jak półsamogłoskę „j” [j], natomiast r jako różne, '
+                  'zależnie od mówiącego, „r” w rodzaju [r]~[ɹ] — są więc rozróżniane.',
+            'vi': 'd và gi đọc là bán nguyên âm [j] (gần y trong yes của tiếng Anh), còn r là âm r '
+                  'khác nhau tùy người như [r]~[ɹ], nên chúng được phân biệt.',
+            'cs': 'd a gi se vyslovují jako polosamohláska [j] (jako anglické y ve slově yes), r '
+                  'jako různé r podle mluvčího, například [r]~[ɹ] – rozlišují se tedy.',
+            'zh_cn': 'd 和 gi 读半元音 [j]（类似英语 yes 的 y），r 则因人而异读成 [r]~[ɹ] 等不同的 r 音，两者有区别。',
+            'hu': 'A d és a gi [j] félhangzó (mint az angol yes y-ja), az r pedig beszélőnként '
+                  'eltérő r-hang, például [r]~[ɹ], így megkülönböztetik őket.',
+            'id': 'd dan gi dilafalkan sebagai semivokal [j] (seperti y dalam yes bahasa Inggris), '
+                  'sedangkan r berupa bunyi r yang berbeda menurut penutur, misalnya [r]~[ɹ], '
+                  'sehingga keduanya dibedakan.'},
   'examples': [{'word': 'da',
-                'mean': {'ko': '피부', 'zh': '皮膚', 'en': 'skin', 'ja': '肌', 'de': 'Haut', 'fr': 'peau', 'pl': 'skóra'},
+                'mean': {'ko': '피부',
+                         'zh': '皮膚',
+                         'en': 'skin',
+                         'ja': '肌',
+                         'de': 'Haut',
+                         'fr': 'peau',
+                         'pl': 'skóra',
+                         'vi': 'da (bì)',
+                         'cs': 'kůže',
+                         'zh_cn': '皮肤',
+                         'hu': 'bőr',
+                         'id': 'kulit'},
                 'north': '자[za]',
                 'south': '야[ja]'},
                {'word': 'gia',
@@ -642,7 +669,12 @@ NORTH_SOUTH_DIFFS = [{'title': 'd-, gi-, r-',
                          'ja': '家·加える',
                          'de': 'Haus · hinzufügen',
                          'fr': 'maison · ajouter',
-                         'pl': 'dom · dodawać'},
+                         'pl': 'dom · dodawać',
+                         'vi': 'nhà · thêm',
+                         'cs': 'dům · přidat',
+                         'zh_cn': '家·加',
+                         'hu': 'ház · hozzáad',
+                         'id': 'rumah · menambah'},
                 'north': '자[za]',
                 'south': '야[ja]'},
                {'word': 'Giê-hô-va',
@@ -652,7 +684,12 @@ NORTH_SOUTH_DIFFS = [{'title': 'd-, gi-, r-',
                          'ja': 'エホバ',
                          'de': 'Jehova',
                          'fr': 'Jéhovah',
-                         'pl': 'Jehowa'},
+                         'pl': 'Jehowa',
+                         'vi': 'Giê-hô-va',
+                         'cs': 'Jehova',
+                         'zh_cn': '耶和华',
+                         'hu': 'Jehova',
+                         'id': 'Yehuwa'},
                 'north': '제호바[zɛhova]',
                 'south': '예호바[jɛhova]'},
                {'word': 'Giê-su',
@@ -662,7 +699,12 @@ NORTH_SOUTH_DIFFS = [{'title': 'd-, gi-, r-',
                          'ja': 'イエス',
                          'de': 'Jesus',
                          'fr': 'Jésus',
-                         'pl': 'Jezus'},
+                         'pl': 'Jezus',
+                         'vi': 'Giê-su',
+                         'cs': 'Ježíš',
+                         'zh_cn': '耶稣',
+                         'hu': 'Jézus',
+                         'id': 'Yesus'},
                 'north': '제수[zɛsu]',
                 'south': '예수[jɛsu]'},
                {'word': 'ra',
@@ -672,29 +714,64 @@ NORTH_SOUTH_DIFFS = [{'title': 'd-, gi-, r-',
                          'ja': '出る、出かける',
                          'de': 'hinausgehen',
                          'fr': 'sortir',
-                         'pl': 'wychodzić'},
+                         'pl': 'wychodzić',
+                         'vi': 'đi ra',
+                         'cs': 'vyjít ven',
+                         'zh_cn': '出去',
+                         'hu': 'kimegy',
+                         'id': 'keluar'},
                 'north': '자[za]',
                 'south': '굴린 라[ra]'}]},
  {'title': 's-, x-',
-  'north': {'ko': "둘 다 한글의 'ㅅ(ㅆ)'처럼 똑같이 발음해요.",
-            'zh': '兩者的發音都和注音符號的ㄙ相同。',
-            'en': 'Both are pronounced exactly the same, like the English s.',
-            'ja': '両方とも日本語のサ行と同じように発音します。',
-            'de': 'Beide werden im Norden völlig gleich wie ein scharfes s [s] ausgesprochen.',
-            'fr': 'Dans le Nord, les deux se prononcent de façon identique comme un s sourd [s].',
-            'pl': 'Oba wymawia się na północy identycznie jak polskie bezdźwięczne „s” [s].'},
-  'south': {'ko': "x는 북부와 같이 'ㅅ(ㅆ)'로, s는 혀를 살짝 말아 올리는 권설음(捲舌音, 영어 sh와 비슷하지만 더 가벼움)으로 서로 다르게 발음해요.",
-            'zh': 'x和北部一樣發ㄙ音，s則發捲舌音（捲舌音，類似英語sh，但更輕），兩者發音不同。',
-            'en': 'x is pronounced like the English s, just like in the North, while s is pronounced as a retroflex '
-                  'sound made by curling the tongue up slightly (similar to English sh, but lighter) — the two are '
-                  'pronounced differently.',
-            'ja': 'xは北部と同じくサ行の音で、sは舌を軽く巻き上げる巻き舌音（捲舌音、英語のshに似ているがより軽い）で、互いに異なって発音します。',
-            'de': 'x wird wie im Norden als s gesprochen, s dagegen mit leicht zurückgebogener Zunge retroflex '
-                  '(ähnlich einem weichen sch [ʂ]) – sie werden also unterschieden.',
-            'fr': 'Dans le Sud, x se prononce [s] comme au Nord, tandis que s est rétroflexe avec la langue légèrement '
-                  'relevée [ʂ] — ils sont donc distingués.',
-            'pl': 'x wymawia się jak na północy jako „s”, natomiast s wymawia się z językiem lekko uniesionym '
-                  'retrofleksyjnie (zbliżone do szumiącego „sz” [ʂ]) — są więc rozróżniane.'},
+  'north': {'ko': '보통 둘 다 [s]로 발음해서 같거나 거의 같게 들려요(한국어 화자에게는 ㅆ에 가깝게 들리기도 해요). 철자대로 또박또박 읽을 때는 구별하기도 '
+                  '해요.',
+            'zh': '通常兩者都念 [s]，聽起來相同或幾乎相同。照拼寫仔細朗讀時也有人會區分。',
+            'en': 'Both are usually pronounced [s], so they sound the same or nearly so. Some '
+                  'speakers keep them apart when reading carefully by the spelling.',
+            'ja': 'ふつうはどちらも [s] と発音され、同じかほぼ同じに聞こえます。つづりどおり丁寧に読むときに区別する人もいます。',
+            'de': 'Beide werden im Norden meist als [s] gesprochen und klingen gleich oder fast '
+                  'gleich. Manche unterscheiden sie beim sorgfältigen Lesen nach der Schrift.',
+            'fr': 'Dans le Nord, les deux se prononcent généralement [s] et sonnent pareil ou '
+                  'presque. Certains les distinguent en lisant soigneusement d’après l’orthographe.',
+            'pl': 'Na północy oba wymawia się zwykle jako [s], więc brzmią tak samo lub prawie tak '
+                  'samo. Niektórzy rozróżniają je przy starannym czytaniu zgodnie z pisownią.',
+            'vi': 'Thường cả hai đều đọc là [s] nên nghe giống hoặc gần giống nhau. Có người vẫn '
+                  'phân biệt khi đọc cẩn thận theo chính tả.',
+            'cs': 'Obě se obvykle vyslovují [s], takže znějí stejně nebo téměř stejně. Někteří je '
+                  'při pečlivém čtení podle pravopisu rozlišují.',
+            'zh_cn': '通常两者都读 [s]，听起来相同或几乎相同。照拼写认真朗读时也有人会区分。',
+            'hu': 'Északon általában mindkettőt [s]-nek ejtik, így azonosan vagy majdnem azonosan '
+                  'hangzanak. Gondos, helyesírás szerinti olvasáskor egyesek megkülönböztetik őket.',
+            'id': 'Di Utara keduanya biasanya dilafalkan [s], sehingga terdengar sama atau hampir '
+                  'sama. Sebagian penutur membedakannya saat membaca dengan cermat sesuai ejaan.'},
+  'south': {'ko': '많은 지역에서 x는 [s], s는 혀를 뒤로 살짝 드는 [ʂ](또는 [ʃ])로 구별해요. 다만 호찌민시의 젊은 화자처럼 s도 [s]로 발음하는 '
+                  '사람도 많아요.',
+            'zh': '許多地區 x 念 [s]，s 念舌頭稍微向後抬起的 [ʂ]（或 [ʃ]），兩者有區別。不過也有很多人（例如胡志明市的年輕人）把 s 也念成 [s]。',
+            'en': 'In many areas x is [s] and s is [ʂ] (or [ʃ]), with the tongue raised slightly '
+                  'further back. Many speakers, such as younger people in Ho Chi Minh City, also '
+                  'say s as [s].',
+            'ja': '多くの地域で x は [s]、s は舌を少し奥に上げる [ʂ]（または [ʃ]）と区別します。ただしホーチミン市の若い話者のように s も [s] '
+                  'で発音する人も多くいます。',
+            'de': 'In vielen Gegenden ist x [s] und s [ʂ] (oder [ʃ]) mit etwas weiter hinten '
+                  'angehobener Zunge. Viele, etwa jüngere Sprecher in Ho-Chi-Minh-Stadt, sprechen '
+                  'aber auch s als [s].',
+            'fr': 'Dans de nombreuses régions, x est [s] et s est [ʂ] (ou [ʃ]), la langue un peu '
+                  'plus en arrière. Beaucoup de locuteurs, comme les jeunes de Hô Chi Minh-Ville, '
+                  'prononcent toutefois aussi s comme [s].',
+            'pl': 'W wielu regionach x to [s], a s to [ʂ] (lub [ʃ]) z językiem nieco dalej w tył. '
+                  'Wiele osób, np. młodsze pokolenie w Ho Chi Minh, wymawia jednak także s jako '
+                  '[s].',
+            'vi': 'Ở nhiều nơi, x là [s] còn s là [ʂ] (hoặc [ʃ]), lưỡi hơi lùi về sau. Tuy vậy '
+                  'nhiều người, như lớp trẻ ở TP. Hồ Chí Minh, cũng đọc s là [s].',
+            'cs': 'V mnoha oblastech je x [s] a s [ʂ] (nebo [ʃ]) s jazykem lehce vzadu. Mnoho '
+                  'mluvčích, například mladší generace v Ho Či Minově Městě, však vyslovuje i s '
+                  'jako [s].',
+            'zh_cn': '许多地区 x 读 [s]，s 读舌头稍微向后抬起的 [ʂ]（或 [ʃ]），两者有区别。不过也有很多人（比如胡志明市的年轻人）把 s 也读成 [s]。',
+            'hu': 'Sok helyen az x [s], az s pedig kissé hátrébb képzett [ʂ] (vagy [ʃ]). Sokan, '
+                  'például a Ho Si Minh-városi fiatalok, azonban az s-t is [s]-nek ejtik.',
+            'id': 'Di banyak daerah x adalah [s] dan s adalah [ʂ] (atau [ʃ]) dengan lidah sedikit '
+                  'lebih ke belakang. Namun banyak penutur, misalnya generasi muda di Kota Ho Chi '
+                  'Minh, juga melafalkan s sebagai [s].'},
   'examples': [{'word': 'sa',
                 'mean': {'ko': '떨어지다',
                          'zh': '掉落',
@@ -702,7 +779,12 @@ NORTH_SOUTH_DIFFS = [{'title': 'd-, gi-, r-',
                          'ja': '落ちる',
                          'de': 'fallen',
                          'fr': 'tomber',
-                         'pl': 'spadać'},
+                         'pl': 'spadać',
+                         'vi': 'rơi',
+                         'cs': 'padat',
+                         'zh_cn': '掉落',
+                         'hu': 'leesik',
+                         'id': 'jatuh'},
                 'north': '사[sa]',
                 'south': '말아 올린 샤[ʂa]'},
                {'word': 'xa',
@@ -712,28 +794,58 @@ NORTH_SOUTH_DIFFS = [{'title': 'd-, gi-, r-',
                          'ja': '遠い',
                          'de': 'weit entfernt sein',
                          'fr': 'loin, être éloigné',
-                         'pl': 'daleki'},
+                         'pl': 'daleki',
+                         'vi': 'xa',
+                         'cs': 'být daleko',
+                         'zh_cn': '远',
+                         'hu': 'messze van',
+                         'id': 'jauh'},
                 'north': '사[sa]',
                 'south': '사[sa]'}]},
  {'title': 'ch-, tr-',
-  'north': {'ko': "둘 다 한글의 'ㅉ'처럼 똑같이 발음해요.",
-            'zh': '兩者的發音都和注音符號的ㄐ相同（不送氣）。',
-            'en': 'Both are pronounced exactly the same, like the ch in "chip" (unaspirated).',
-            'ja': '両方とも日本語のチャ行と同じように発音します。',
-            'de': 'Beide werden im Norden völlig gleich wie ein unbehauchtes tsch [c] ausgesprochen.',
-            'fr': 'Dans le Nord, les deux se prononcent de façon identique comme un « tch » non aspiré [c].',
-            'pl': 'Oba wymawia się na północy identycznie jak nieprzydechowe „ć / cz” [c].'},
-  'south': {'ko': "ch는 북부와 같이 'ㅉ'로, tr은 혀를 말아 올리는 권설음(영어 ch와 비슷하되 더 무거움)으로 서로 다르게 발음해요.",
-            'zh': 'ch和北部一樣發ㄐ音，tr則發捲舌音（類似英語ch，但更重），兩者發音不同。',
-            'en': 'ch is pronounced the same as in the North, while tr is pronounced as a retroflex sound made by '
-                  'curling the tongue up (similar to English ch, but heavier) — the two are pronounced differently.',
-            'ja': 'chは北部と同じくチャ行の音で、trは舌を巻き上げる巻き舌音（英語のchに似ているが、より重い）で、互いに異なって発音します。',
-            'de': 'ch wird wie im Norden gesprochen, tr dagegen retroflex mit zurückgebogener Zunge [ʈʂ] – sie werden '
-                  'also unterschieden.',
-            'fr': 'Dans le Sud, ch se prononce comme au Nord, tandis que tr est rétroflexe avec la langue relevée [ʈʂ] '
-                  '— ils sont donc distingués.',
-            'pl': 'ch wymawia się jak na północy, natomiast tr wymawia się z językiem uniesionym retrofleksyjnie [ʈʂ] '
-                  '— są więc rozróżniane.'},
+  'north': {'ko': '보통 둘 다 [c]~[tɕ]로 같게 발음해요. 기식이 없어서 한국어 화자에게는 ㅉ에 가깝게 들리지만 같은 소리는 아니에요.',
+            'zh': '通常兩者同音，念 [c]~[tɕ]，不送氣。',
+            'en': 'Both are usually pronounced the same, [c]~[tɕ], without aspiration.',
+            'ja': 'ふつうはどちらも同じ [c]~[tɕ] で、息を伴いません。',
+            'de': 'Beide werden im Norden meist gleich gesprochen, [c]~[tɕ], unbehaucht.',
+            'fr': 'Dans le Nord, les deux se prononcent généralement de la même façon, [c]~[tɕ], '
+                  'sans aspiration.',
+            'pl': 'Na północy oba wymawia się zwykle tak samo, [c]~[tɕ], bez przydechu.',
+            'vi': 'Thường cả hai đều đọc giống nhau là [c]~[tɕ], không bật hơi.',
+            'cs': 'Obě se obvykle vyslovují stejně, [c]~[tɕ], bez přídechu.',
+            'zh_cn': '通常两者同音，读 [c]~[tɕ]，不送气。',
+            'hu': 'Északon általában mindkettőt ugyanúgy, hehezet nélkül ejtik: [c]~[tɕ].',
+            'id': 'Di Utara keduanya biasanya dilafalkan sama, [c]~[tɕ], tanpa aspirasi.'},
+  'south': {'ko': '전통적으로 ch는 [c], tr은 혀끝을 뒤로 드는 권설음 [ʈ](흔히 [ʈʂ]처럼 들림)로 구별해요. 다만 젊은 화자를 중심으로 tr을 '
+                  'ch처럼 발음하는 경우도 많아요.',
+            'zh': '傳統上 ch 念 [c]，tr 念舌尖向後抬起的捲舌音 [ʈ]（常聽起來像 [ʈʂ]），兩者有區別。不過也有很多人（尤其是年輕人）把 tr 念成和 ch 一樣。',
+            'en': 'Traditionally ch is [c] and tr is the retroflex [ʈ], with the tongue tip raised '
+                  'further back (often sounding like [ʈʂ]). Many speakers, especially younger ones, '
+                  'pronounce tr like ch.',
+            'ja': '伝統的には ch は [c]、tr は舌先を奥に上げるそり舌音 [ʈ]（しばしば [ʈʂ] のように聞こえる）と区別します。ただし若い話者を中心に tr を '
+                  'ch と同じに発音する人も多くいます。',
+            'de': 'Traditionell ist ch [c] und tr das retroflexe [ʈ] mit weiter hinten angehobener '
+                  'Zungenspitze (klingt oft wie [ʈʂ]). Viele, vor allem jüngere Sprecher, sprechen '
+                  'tr aber wie ch.',
+            'fr': 'Traditionnellement, ch est [c] et tr la rétroflexe [ʈ], pointe de la langue '
+                  'relevée plus en arrière (souvent entendue comme [ʈʂ]). Beaucoup de locuteurs, '
+                  'surtout jeunes, prononcent toutefois tr comme ch.',
+            'pl': 'Tradycyjnie ch to [c], a tr to retrofleksyjne [ʈ] z czubkiem języka uniesionym '
+                  'dalej w tył (często brzmi jak [ʈʂ]). Wiele osób, zwłaszcza młodszych, wymawia '
+                  'jednak tr jak ch.',
+            'vi': 'Theo truyền thống, ch là [c] còn tr là âm quặt lưỡi [ʈ], đầu lưỡi nâng lùi về '
+                  'sau (thường nghe như [ʈʂ]). Nhiều người, nhất là lớp trẻ, đọc tr giống ch.',
+            'cs': 'Tradičně je ch [c] a tr retroflexní [ʈ] se špičkou jazyka zdviženou víc vzadu '
+                  '(často zní jako [ʈʂ]). Mnoho mluvčích, zvláště mladších, však vyslovuje tr jako '
+                  'ch.',
+            'zh_cn': '传统上 ch 读 [c]，tr 读舌尖向后抬起的卷舌音 [ʈ]（常听起来像 [ʈʂ]），两者有区别。不过也有很多人（尤其是年轻人）把 tr 读成和 ch '
+                     '一样。',
+            'hu': 'Hagyományosan a ch [c], a tr pedig a hátrébb emelt nyelvheggyel képzett '
+                  'retroflex [ʈ] (gyakran [ʈʂ]-nek hangzik). Sokan, főleg a fiatalok, azonban a '
+                  'tr-t is a ch-hoz hasonlóan ejtik.',
+            'id': 'Secara tradisional ch adalah [c] dan tr adalah retrofleks [ʈ] dengan ujung lidah '
+                  'terangkat lebih ke belakang (sering terdengar seperti [ʈʂ]). Namun banyak '
+                  'penutur, terutama generasi muda, melafalkan tr seperti ch.'},
   'examples': [{'word': 'cha',
                 'mean': {'ko': '아버지',
                          'zh': '父親',
@@ -741,7 +853,12 @@ NORTH_SOUTH_DIFFS = [{'title': 'd-, gi-, r-',
                          'ja': '父',
                          'de': 'Vater',
                          'fr': 'père',
-                         'pl': 'ojciec'},
+                         'pl': 'ojciec',
+                         'vi': 'bố, cha',
+                         'cs': 'otec',
+                         'zh_cn': '父亲',
+                         'hu': 'apa',
+                         'id': 'ayah'},
                 'north': '짜[ca]',
                 'south': '짜[ca]'},
                {'word': 'tra',
@@ -751,9 +868,14 @@ NORTH_SOUTH_DIFFS = [{'title': 'd-, gi-, r-',
                          'ja': '調査する',
                          'de': 'untersuchen',
                          'fr': 'enquêter, vérifier',
-                         'pl': 'badać, sprawdzać'},
+                         'pl': 'badać, sprawdzać',
+                         'vi': 'tra cứu',
+                         'cs': 'zkoumat',
+                         'zh_cn': '调查',
+                         'hu': 'vizsgál',
+                         'id': 'memeriksa'},
                 'north': '짜[ca]',
-                'south': '말아 올린 짜[ʈʂa]'}]},
+                'south': '말아 올린 짜[ʈa]'}]},
  {'title': 'v-',
   'north': {'ko': '영어 v처럼 윗니로 아랫입술을 살짝 물어 발음해요.',
             'zh': '像英語的v一樣，用上齒輕咬下唇發音。',

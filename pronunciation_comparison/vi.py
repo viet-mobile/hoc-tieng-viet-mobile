@@ -379,3 +379,124 @@ Từ tiếng Ba Lan có trọng âm cố định và nhiều cụm phụ âm; â
 """,
     },
 }
+
+
+# So sánh hệ thống phụ âm tiếng Hàn và tiếng Việt (thẻ gập trong mục "Tiếng Hàn và tiếng Việt"). Định dạng: __init__.py.
+CONSONANTS = {
+    "title": "So sánh phụ âm tiếng Hàn và tiếng Việt",
+    "intro": """
+Các chữ cái tiếng Hàn (ㄱ, ㄲ, ㅋ, v.v.) ghi kèm chỉ là gợi ý học tập giúp người nói tiếng Hàn hình dung âm. Điều đó không có nghĩa là phụ âm tiếng Việt giống hệt phụ âm tiếng Hàn về mặt ngữ âm. Chuẩn là cách phát âm Hà Nội; khác biệt vùng miền được ghi riêng. Trong [ ] là IPA.
+""",
+    "topics": [
+        {
+            "id": "laryngeal",
+            "title": "So sánh với âm thường, âm căng và âm bật hơi của tiếng Hàn",
+            "text": """
+Âm tắc và âm tắc xát tiếng Hàn đối lập theo ba cách: âm thường, âm căng và âm bật hơi (ㄱ/ㄲ/ㅋ, ㄷ/ㄸ/ㅌ, ㅂ/ㅃ/ㅍ, ㅈ/ㅉ/ㅊ). Âm thường là âm vô thanh hơi bật hơi nhẹ ở đầu từ và trở thành hữu thanh giữa hai nguyên âm; âm căng không bật hơi, thanh quản căng; âm bật hơi có luồng hơi mạnh.
+Tiếng Việt không có đối lập ba cách như vậy. Âm tắc được phân biệt bằng việc có bật hơi hay không (t / th) và bằng tính hữu thanh (đ, b). Những so sánh dưới đây chỉ giúp cảm nhận các đối lập.
+## đ / t / th và ㄷ / ㄸ / ㅌ
+- t [t]: vô thanh, không bật hơi, nên với người nói tiếng Hàn nghe gần ㄸ, nhưng không căng bằng ㄸ.
+- th [tʰ]: vô thanh, bật hơi, gần ㅌ. Không phải th [θ] của tiếng Anh.
+- đ [ɗ]: âm hút vào hữu thanh, dây thanh rung. ㄷ tiếng Hàn là vô thanh ở đầu từ, nên đọc đ thành ㄷ sẽ ra một âm khác.
+## g / c·k·q / kh và ㄱ / ㄲ / ㅋ
+- c·k·q [k]: âm tắc vô thanh không bật hơi, nên nghe gần ㄲ.
+- kh [x]: không phải âm tắc mà là âm xát vô thanh, gốc lưỡi đưa gần ngạc mềm. Không bật ra như ㅋ [kʰ].
+- g·gh [ɣ]: âm xát hữu thanh. Phương thức cấu âm khác ㄱ tiếng Hàn.
+Vì vậy g / c / kh không phải ba âm tắc phát âm cùng một cách như ㄱ/ㄲ/ㅋ, mà là một âm xát hữu thanh, một âm tắc không bật hơi và một âm xát vô thanh.
+## b / p và ㅂ / ㅃ / ㅍ
+- b [ɓ]: âm hút vào hữu thanh, giống đ.
+- p [p]: không bật hơi nên nghe gần ㅃ, nhưng chủ yếu đứng cuối âm tiết (đáp); ở đầu âm tiết chỉ hiếm khi xuất hiện trong từ vay mượn (pin). Nhiều người đọc âm p này như [b].
+- Âm [pʰ] bật hơi mạnh như ㅍ không có trong tiếng Việt hiện đại. Chữ ph đọc là [f] (xem "ph xưa và nay" bên dưới).
+""",
+        },
+        {
+            "id": "ph",
+            "title": "ph xưa và nay",
+            "text": """
+Trong tiếng Việt hiện đại, ph là [f]: giống f tiếng Anh, là âm xát môi-răng vô thanh, răng trên chạm nhẹ môi dưới (pha [fa], phở).
+Đừng bật ph ra như ㅍ tiếng Hàn. ㅍ là âm tắc bật hơi [pʰ], khép rồi mở hai môi; ph [f] tạo bằng sự cọ xát, không khép môi.
+## Chữ ph từ đâu mà có
+Khi các giáo sĩ ghi tiếng Việt bằng chữ Latinh vào thế kỷ 17, họ dùng ph, vốn ghi chữ φ của tiếng Hy Lạp, để ghi một âm tắc bật hơi của tiếng Việt (th cũng theo nguyên tắc này). Vì vậy ph thời đó được hiểu là một âm thuộc loại [pʰ], có thể so sánh với ㅍ tiếng Hàn.
+Về sau âm này chuyển thành âm xát [f]. Còn th, được ghi theo cùng cách, đến nay vẫn là âm tắc bật hơi [tʰ].
+Xa hơn nữa, các âm dẫn đến ph không chỉ có một nguồn gốc: âm bật hơi cổ trong từ thuần Việt và âm môi trong từ Hán Việt được cho là đã đến [f] ngày nay theo những con đường khác nhau. Không thể khẳng định giá trị cổ giống hệt ㅍ tiếng Hàn.
+- ph ngày xưa: loại [pʰ], có thể so sánh với ㅍ tiếng Hàn.
+- ph ngày nay: [f], không phải ㅍ tiếng Hàn.
+""",
+        },
+        {
+            "id": "palatal",
+            "title": "ㅈ / ㅉ / ㅊ và phụ âm tiếng Việt",
+            "text": """
+ㅈ/ㅉ/ㅊ [tɕ t͈ɕ tɕʰ] của tiếng Hàn là các âm tắc xát đối lập theo âm thường, âm căng và âm bật hơi. Các chữ tiếng Việt đáng so sánh với chúng là ch, tr, d và gi, nhưng cách đối lập khác nhau.
+- ch [c]~[tɕ]: không bật hơi, nên với người nói tiếng Hàn nghe gần ㅉ. Nhiều người Hà Nội phát âm thành âm tắc xát [tɕ]; các mô tả truyền thống ghi là âm tắc ngạc cứng [c].
+- tr: ở Hà Nội là cùng một âm với ch; trong cách phát âm truyền thống ở miền Trung và miền Nam là [ʈ], lưỡi nâng lùi về phía sau hơn (xem "ch và tr theo vùng miền" bên dưới).
+- d·gi: ở Hà Nội là âm xát hữu thanh [z], ở miền Nam là bán nguyên âm [j] (gần y tiếng Anh). Chúng không phải âm tắc xát, nên phương thức cấu âm khác ㅈ tiếng Hàn.
+ch và tr tiếng Việt được mô tả về cơ bản là không bật hơi, và không có âm tắc xát bật hơi nào làm cặp với chúng. Vì vậy có thể hiểu là không có một dãy âm riêng tương ứng chính xác với ㅊ [tɕʰ] tiếng Hàn. Học d·gi là ㅈ và ch là ㅉ cũng dễ bỏ qua khác biệt về tính hữu thanh và phương thức cấu âm.
+""",
+        },
+        {
+            "id": "sx",
+            "title": "s và x theo vùng miền",
+            "text": """
+Chữ s và x vốn là hai âm khác nhau trong hệ thống ngữ âm truyền thống; ngày nay có vùng vẫn phân biệt, có vùng đã nhập làm một.
+""",
+            "cards": [
+                {"title": "Miền Bắc — khu vực Hà Nội", "rows": [
+                    ["north", "Đối lập", "Trong khẩu ngữ hiện nay phần lớn đã nhập làm một (trung hòa)."],
+                    ["north", "Cách phát âm", "Cả s và x đều là [s]. Viết khác nhau nhưng nghe giống hệt hoặc rất gần nhau. Có người vẫn phân biệt khi đọc cẩn thận theo chính tả, nên không thể khẳng định mọi người lúc nào cũng phát âm giống hệt."],
+                ]},
+                {"title": "Miền Trung và miền Nam", "rows": [
+                    ["south", "Đối lập", "Nhiều nơi vẫn phân biệt."],
+                    ["south", "Cách phát âm", "x là [s]; s là [ʂ], lưỡi lùi về sau hơn (có tài liệu ghi là [ʃ]). Tuy vậy nhiều người, như lớp trẻ ở Thành phố Hồ Chí Minh, cũng đọc s là [s] khiến hai âm nhập làm một, và ngay trong một vùng cũng có khác biệt."],
+                ]},
+            ],
+            "examples": [
+                {"word": "sinh", "mean": "sinh ra", "note": "Hà Nội [s] · Huế, Sài Gòn [ʂ]~[s]"},
+                {"word": "xinh", "mean": "đẹp", "note": "Hà Nội [s] · Huế, Sài Gòn [s]"},
+            ],
+            "after": """
+## So sánh với ㅅ / ㅆ tiếng Hàn
+- ㅅ/ㅆ tiếng Hàn là hai âm xát đối lập theo âm thường và âm căng. s/x tiếng Việt cũng được phân biệt trong chính tả và trong hệ thống truyền thống, nên thói quen học hai âm riêng biệt có thể áp dụng tương tự.
+- Nhưng đừng học theo kiểu một đối một "s = ㅆ, x = ㅅ". Ở nơi còn phân biệt, khác biệt giữa s và x không phải là độ căng như tiếng Hàn mà là vị trí lưỡi ([ʂ] so với [s]).
+- Ở Hà Nội cả s và x đều là [s], nên với người nói tiếng Hàn cả hai có thể nghe như một ㅅ mạnh, tức gần ㅆ. Đây chỉ là gợi ý khi nghe.
+- Ở miền Trung và miền Nam hai âm có thể được phân biệt, nên đừng nghĩ rằng s và x tiếng Việt lúc nào cũng là một âm.
+""",
+        },
+        {
+            "id": "chtr",
+            "title": "ch và tr theo vùng miền",
+            "text": """
+Chữ ch và tr vốn là hai âm khác nhau; tùy vùng mà chúng nhập làm một hoặc vẫn được phân biệt.
+## Miền Bắc — khu vực Hà Nội
+Trong tiếng Hà Nội hiện nay, ch và tr được mô tả là đã nhập làm một hoàn toàn. Các mô tả truyền thống ghi âm này là âm tắc ngạc cứng [c], mặt lưỡi phía trước áp vào ngạc; nhiều người trẻ phát âm thành âm tắc xát [tɕ]. Âm này không bật hơi.
+Vì vậy trà và chà (chà xát), vốn cùng thanh huyền, ở Hà Nội nghe giống nhau: đều là [tɕaː]. Với người nói tiếng Hàn có thể nghe gần ㅉ, nhưng không phải cùng một âm.
+## Miền Nam — khu vực Thành phố Hồ Chí Minh
+Cách phát âm truyền thống miền Nam phân biệt ch và tr. ch là [c], lưỡi đặt tương đối về phía trước (có thể nghe hơi giống âm tắc xát, gần [tɕ]); tr là âm quặt lưỡi [ʈ], đầu lưỡi nâng lên phía sau lợi, thường nghe hơi giống âm tắc xát [ʈʂ].
+Vì vậy ở miền Nam trà [ʈaː] và chà [caː] nghe khác nhau. Với người nói tiếng Hàn, ch nghe gần ㅉ, còn tr, do lưỡi lùi sâu hơn, có thể nghe nặng và đục hơn một chút.
+Tuy nhiên nhiều người, kể cả lớp trẻ ở Thành phố Hồ Chí Minh, đọc tr giống ch là [c], và xu hướng đối lập yếu dần cũng được ghi nhận ở miền Nam. Cách phát âm truyền thống miền Trung (Huế và các nơi khác) cũng phân biệt hai âm này.
+## Tóm tắt
+""",
+            "cards": [
+                {"title": "ch", "rows": [
+                    ["north", "Miền Bắc (Hà Nội)", "[c]~[tɕ], không bật hơi. Cùng một âm với tr."],
+                    ["south", "Miền Nam (TP. Hồ Chí Minh)", "[c] (có thể nghe hơi giống âm tắc xát). Lưỡi đặt tương đối về phía trước."],
+                ]},
+                {"title": "tr", "rows": [
+                    ["north", "Miền Bắc (Hà Nội)", "Nhập với ch, phát âm [c]~[tɕ]."],
+                    ["south", "Miền Nam (TP. Hồ Chí Minh)", "[ʈ] (thường nghe như [ʈʂ]). Âm quặt lưỡi, đầu lưỡi nâng lùi về sau. Có người đọc giống ch là [c]."],
+                ]},
+            ],
+            "examples": [
+                {"word": "trà", "mean": "trà (thức uống)", "note": "Hà Nội [tɕaː] · Sài Gòn [ʈaː]"},
+                {"word": "chà", "mean": "chà xát", "note": "Hà Nội [tɕaː] · Sài Gòn [caː]"},
+            ],
+            "after": """
+## Lưu ý cho người nói tiếng Hàn
+- Đừng học ch là ㅉ và tr là ㅊ tiếng Hàn. Cả hai về cơ bản đều không bật hơi.
+- ㅈ/ㅉ/ㅊ tiếng Hàn đối lập theo âm thường, âm căng và âm bật hơi, còn ch/tr tiếng Việt khác nhau ở vị trí lưỡi (vị trí cấu âm) tại miền Nam và đã nhập làm một ở miền Bắc, nên đây là hai hệ thống khác nhau.
+- Ở miền Bắc ch và tr là cùng một âm, nên cần học chính tả của từng từ.
+- Khi học giọng miền Nam, hãy chú ý khác biệt về vị trí cấu âm: với tr lưỡi nâng lùi về phía sau hơn.
+""",
+        },
+    ],
+}

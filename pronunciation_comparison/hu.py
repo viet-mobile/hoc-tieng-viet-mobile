@@ -379,3 +379,124 @@ A lengyel szavaknak rögzített hangsúlyuk és sok mássalhangzó-torlódásuk 
 """,
     },
 }
+
+
+# A koreai és a vietnami mássalhangzók összevetése (összecsukható kártya „A koreai és a vietnami” szakaszban). Formátum: __init__.py.
+CONSONANTS = {
+    "title": "A koreai és a vietnami mássalhangzók összevetése",
+    "intro": """
+A mellé írt koreai betűk (ㄱ, ㄲ, ㅋ stb.) csak tanulási segítségek, amelyekkel a koreaiul beszélők behatárolhatják a hangot. Nem azt jelentik, hogy egy vietnami mássalhangzó fonetikailag azonos egy koreaival. Az alap a hanoi kiejtés; a regionális különbségeket külön jelöljük. A [ ] között IPA áll.
+""",
+    "topics": [
+        {
+            "id": "laryngeal",
+            "title": "Összevetés a koreai lágy, feszes és hehezetes mássalhangzókkal",
+            "text": """
+A koreai zárhangok és zár-rés hangok hármas szembenállást alkotnak: lágy (lenis), feszes (fortis) és hehezetes (ㄱ/ㄲ/ㅋ, ㄷ/ㄸ/ㅌ, ㅂ/ㅃ/ㅍ, ㅈ/ㅉ/ㅊ). A lágyak szó elején zöngétlenek, enyhe hehezettel, magánhangzók között zöngések; a feszesek hehezet nélküliek, feszes gégével; a hehezetesek erős hehezettel ejtődnek.
+A vietnamiban nincs ilyen hármas szembenállás. Zárhangjait a hehezet (t / th) és a zöngésség (đ, b) különbözteti meg. Az alábbi összevetések csak abban segítenek, hogy ráérezzen a szembenállásokra.
+## đ / t / th és ㄷ / ㄸ / ㅌ
+- t [t]: zöngétlen és hehezet nélküli, ezért a koreaiul beszélőknek a ㄸ-hez hasonlít, de nem olyan feszes, mint a ㄸ.
+- th [tʰ]: zöngétlen és hehezetes, közel áll a ㅌ-hez. Nem az angol th [θ].
+- đ [ɗ]: zöngés implozíva, a hangszalagok rezegnek. A koreai ㄷ szó elején zöngétlen, így ha a đ-t ㄷ-ként ejti, más hang jön létre.
+## g / c·k·q / kh és ㄱ / ㄲ / ㅋ
+- c·k·q [k]: zöngétlen, hehezet nélküli zárhang, ezért a ㄲ-hez hasonlít.
+- kh [x]: nem zárhang, hanem zöngétlen réshang, amelyet a nyelvhát a lágy szájpadlás közelében képez. Nem pattan fel úgy, mint a ㅋ [kʰ].
+- g·gh [ɣ]: zöngés réshang. Képzésmódja eltér a koreai ㄱ-től.
+A g / c / kh tehát nem három, azonos módon képzett zárhang, mint a ㄱ/ㄲ/ㅋ, hanem egy zöngés réshang, egy hehezet nélküli zárhang és egy zöngétlen réshang.
+## b / p és ㅂ / ㅃ / ㅍ
+- b [ɓ]: zöngés implozíva, mint a đ.
+- p [p]: hehezet nélküli, ezért a ㅃ-hez hasonlít, de főleg szótag végén áll (đáp); szó elején csak ritkán, jövevényszavakban (pin 'elem'). Sok beszélő az ilyen p-t [b]-nek ejti.
+- A ㅍ-hez hasonló, erősen hehezetes [pʰ] a mai vietnamiban nincs. A ph betűkapcsolat [f] (lásd lent: „A ph régen és ma”).
+""",
+        },
+        {
+            "id": "ph",
+            "title": "A ph régen és ma",
+            "text": """
+A mai vietnamiban a ph [f]: a magyar f-hez hasonlóan zöngétlen ajak-fog réshang, a felső fogak enyhén érintik az alsó ajkat (pha [fa] 'forrázni (teát)', phở).
+A ph-t ne ejtse felpattanó hangként, mint a koreai ㅍ-t. A ㅍ hehezetes zárhang [pʰ], amelynél az ajkak összezárulnak, majd kinyílnak; a ph [f] súrlódással, az ajkak zárása nélkül keletkezik.
+## Honnan ered a ph írásmód
+Amikor a 17. században a misszionáriusok latin betűkkel kezdték lejegyezni a vietnamit, a görög φ írására használt ph-t egy vietnami hehezetes zárhang jelölésére alkalmazták (ugyanígy a th-t). Ezért az akkori ph-t [pʰ]-típusú hangként értelmezik, vagyis olyan hangként, amely a koreai ㅍ-vel összevethető.
+Később ez a hang [f] réshanggá vált. Az ugyanígy lejegyzett th ma is hehezetes zárhang, [tʰ].
+Még korábbra visszatekintve a ph-hoz vezető hangoknak nem egyetlen forrásuk van: az ősi szavak régi hehezetes hangjai és a kínai-vietnami szavak ajakhangjai valószínűleg különböző utakon jutottak el a mai [f]-ig. Nem állítható, hogy a régi hangérték pontosan a koreai ㅍ-vel egyezett.
+- A ph régen: [pʰ]-típusú, a koreai ㅍ-vel összevethető.
+- A ph ma: [f], nem a koreai ㅍ.
+""",
+        },
+        {
+            "id": "palatal",
+            "title": "ㅈ / ㅉ / ㅊ és a vietnami mássalhangzók",
+            "text": """
+A koreai ㅈ/ㅉ/ㅊ [tɕ t͈ɕ tɕʰ] zár-rés hangok, lágy – feszes – hehezetes szembenállásban. A vietnamiban a ch, tr, d és gi betűk vethetők össze velük, de szembenállásaik másként működnek.
+- ch [c]~[tɕ]: hehezet nélküli, ezért a koreaiul beszélőknek a ㅉ-hez hasonlít. Sok hanoi beszélő [tɕ] zár-rés hangként ejti; a hagyományos leírások a [c] palatális zárhangot írják.
+- tr: Hanoiban ugyanaz a hang, mint a ch; a közép- és dél-vietnami hagyományos kiejtésben [ʈ], hátrébb emelt nyelvvel (lásd lent: „A ch és a tr régiónként”).
+- d·gi: Hanoiban a zöngés [z] réshang, délen a [j] félhangzó (mint a magyar j). Nem zár-rés hangok, így képzésmódjuk eltér a koreai ㅈ-től.
+A vietnami ch-t és tr-t alapvetően hehezet nélküli hangként írják le, és nincs hozzájuk tartozó hehezetes zár-rés hang. Így nincs olyan külön hangsor, amely pontosan a koreai ㅊ-nek [tɕʰ] felelne meg. Ha a d·gi-t ㅈ-ként, a ch-t ㅉ-ként jegyzi meg, könnyen elsiklik a zöngésség és a képzésmód különbségei felett.
+""",
+        },
+        {
+            "id": "sx",
+            "title": "Az s és az x régiónként",
+            "text": """
+Az s és az x betű a hagyományos hangrendszerben különböző hangokat jelölt; ma egyes régiókban megkülönböztetik őket, máshol egybeestek.
+""",
+            "cards": [
+                {"title": "Észak — Hanoi környéke", "rows": [
+                    ["north", "Szembenállás", "A mai köznyelvben nagyrészt egybeesett (semlegesült)."],
+                    ["north", "Kiejtés", "Az s és az x egyaránt [s]. Másként írják őket, de azonosan vagy nagyon hasonlóan hangzanak. Egyes beszélők a helyesírás szerinti gondos olvasáskor megkülönböztetik őket, ezért nem állítható, hogy mindenki mindig teljesen egyformán ejti őket."],
+                ]},
+                {"title": "Közép és Dél", "rows": [
+                    ["south", "Szembenállás", "Sok helyen megmaradt."],
+                    ["south", "Kiejtés", "Az x [s], az s hátrébb képzett [ʂ] (egyes források [ʃ]-nek írják). Sok beszélő, például a Ho Si Minh-városi fiatalok, azonban az s-t is [s]-nek ejti, így a kettő egybeesik; a régiókon belül is vannak különbségek."],
+                ]},
+            ],
+            "examples": [
+                {"word": "sinh", "mean": "születik", "note": "Hanoi [s] · Huế, Saigon [ʂ]~[s]"},
+                {"word": "xinh", "mean": "csinos", "note": "Hanoi [s] · Huế, Saigon [s]"},
+            ],
+            "after": """
+## Összevetés a koreai ㅅ / ㅆ-vel
+- A koreai ㅅ/ㅆ két réshang lágy – feszes szembenállásban. A vietnami s/x a helyesírásban és a hagyományos rendszerben szintén különbözik, így a két külön hang megtanulásának szokása hasonlóan hasznosítható.
+- Ne tanulja azonban egy az egyben, „s = ㅆ, x = ㅅ” módon. Ahol az s és az x különbözik, a különbség nem a feszességben van, mint a koreaiban, hanem a nyelv helyzetében ([ʂ] és [s]).
+- Hanoiban az s és az x egyaránt [s], ezért a koreaiul beszélőknek mindkettő erős ㅅ-nek, azaz a ㅆ-hez közelinek hangozhat. Ez csak hallási támpont.
+- Közép- és Dél-Vietnamban megkülönböztethetik őket, ezért ne gondolja, hogy a vietnami s és x mindig ugyanaz a hang.
+""",
+        },
+        {
+            "id": "chtr",
+            "title": "A ch és a tr régiónként",
+            "text": """
+A ch és a tr betű hagyományosan különböző hangokat jelölt; régiótól függően egybeestek, vagy megkülönböztetik őket.
+## Észak — Hanoi környéke
+A mai hanoi beszédben a ch és a tr teljesen egybeesett. A hagyományos leírások ezt a hangot [c] palatális zárhangként írják, amelyet a nyelvhát elülső része a szájpadláshoz érintve képez; sok fiatal beszélő [tɕ] zár-rés hangként ejti. Hehezet nélküli.
+Ezért a trà 'tea' és a chà 'dörzsöl', amelyeknek a hangjuk (huyền) is azonos, Hanoiban egyformán hangzik: mindkettő [tɕaː]. A koreaiul beszélőknek a ㅉ-hez hasonlíthat, de nem ugyanaz a hang.
+## Dél — Ho Si Minh-város környéke
+A hagyományos déli kiejtés megkülönbözteti a ch-t és a tr-t. A ch [c], viszonylag elöl képzett nyelvvel (enyhén zár-réshangszerűen, a [tɕ]-hez közelien is hangozhat); a tr a retroflex [ʈ], a nyelvheggyel a fogmeder mögé emelve, és gyakran enyhén zár-réshangszerű, mint a [ʈʂ].
+Délen ezért a trà [ʈaː] és a chà [caː] különbözően hangzik. A koreaiul beszélőknek a ch a ㅉ-hez közeli, a hátrébb képzett tr pedig kissé nehezebbnek, tompábbnak hangozhat.
+Sok beszélő azonban, köztük a Ho Si Minh-városi fiatalok, a tr-t a ch-hoz hasonlóan [c]-nek ejti, és délen is beszámolnak a szembenállás gyengüléséről. A közép-vietnami (Huế és más helyek) hagyományos kiejtés szintén megkülönbözteti a kettőt.
+## Összefoglalás
+""",
+            "cards": [
+                {"title": "ch", "rows": [
+                    ["north", "Észak (Hanoi környéke)", "[c]~[tɕ], hehezet nélkül. Ugyanaz a hang, mint a tr."],
+                    ["south", "Dél (Ho Si Minh-város környéke)", "[c] (enyhén zár-réshangszerűen is hangozhat). Viszonylag elöl képzett."],
+                ]},
+                {"title": "tr", "rows": [
+                    ["north", "Észak (Hanoi környéke)", "Egybeesett a ch-val, ejtése [c]~[tɕ]."],
+                    ["south", "Dél (Ho Si Minh-város környéke)", "[ʈ] (gyakran [ʈʂ]-nek hangzik). Retroflex, a nyelvheggyel hátrébb emelve. Egyes beszélők a ch-hoz hasonlóan [c]-nek ejtik."],
+                ]},
+            ],
+            "examples": [
+                {"word": "trà", "mean": "tea", "note": "Hanoi [tɕaː] · Saigon [ʈaː]"},
+                {"word": "chà", "mean": "dörzsöl", "note": "Hanoi [tɕaː] · Saigon [caː]"},
+            ],
+            "after": """
+## Tudnivalók koreaiul beszélőknek
+- A ch-t ne a koreai ㅉ-ként, a tr-t ne a koreai ㅊ-ként jegyezze meg. Mindkettő alapvetően hehezet nélküli.
+- A koreai ㅈ/ㅉ/ㅊ lágy – feszes – hehezetes szembenállás, a vietnami ch/tr viszont délen a nyelv helyzetében (a képzés helyében) tér el, északon pedig egybeesett, így két különböző rendszerről van szó.
+- Északon a ch és a tr ugyanaz a hang, ezért minden szó helyesírását külön kell megtanulni.
+- A déli kiejtés tanulásakor figyeljen a képzés helyének különbségére: a tr-nél a nyelv hátrébb emelkedik.
+""",
+        },
+    ],
+}

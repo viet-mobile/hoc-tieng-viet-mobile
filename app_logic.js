@@ -5314,7 +5314,34 @@
     }
     function partsHtml(sec) {
       return card("pron-cmp-part", content.ui.common, blocksHtml(sec.common), true) +
-        card("pron-cmp-part", content.ui.diff, blocksHtml(sec.diff), true);
+        card("pron-cmp-part", content.ui.diff, blocksHtml(sec.diff), true) +
+        (sec.consonants ? consonantsHtml(sec.consonants) : "");
+    }
+    // Korean <-> Vietnamese consonant systems (pronunciation_comparison CONSONANTS): one folding part with a folding
+    // card per topic; regional comparisons reuse the [남북 발음] cards; example words are read in Vietnamese only
+    // (the IPA notes are not spoken).
+    function consonantsHtml(cons) {
+      var topics = cons.topics.map(function (t) {
+        var body = blocksHtml(t.text);
+        if (t.cards) {
+          body += '<div class="ns-list">' + t.cards.map(function (cd) {
+            return '<div class="ns-card"><div class="ns-title vn">' + escapeHtml(cd.title) + '</div>' + cd.rows.map(function (r) {
+              return '<div class="ns-row"><span class="ns-tag ' + (r[0] === "south" ? "south" : "north") + '">' + escapeHtml(r[1]) + '</span>' +
+                '<span class="ns-desc">' + escapeHtml(r[2]) + '</span></div>';
+            }).join("") + '</div>';
+          }).join("") + '</div>';
+        }
+        if (t.examples) {
+          body += '<div class="ns-examples">' + t.examples.map(function (ex) {
+            return '<div class="ns-ex-row"><span class="ns-ex-word vn">' + escapeHtml(ex.word) + '</span><span class="ns-ex-mean">' + escapeHtml(ex.mean) + '</span>' +
+              '<button class="speak-btn" data-speak="' + escapeAttr(ex.word) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+              '<span class="ns-ex-mean">' + escapeHtml(ex.note) + '</span></div>';
+          }).join("") + '</div>';
+        }
+        if (t.after) body += blocksHtml(t.after);
+        return card("pron-cmp-part", t.title, body, false);
+      }).join("");
+      return card("pron-cmp-part", cons.title, blocksHtml(cons.intro) + topics, false);
     }
     var html = '<div class="p-section pron-cmp"><p class="p-desc">' + escapeHtml(content.ui.intro) + '</p>';
     order.forEach(function (id, i) {
