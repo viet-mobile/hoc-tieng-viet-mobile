@@ -132,8 +132,8 @@ async function startServer(workers) {
   const ok = (cond, msg) => { checks++; if (!cond) failures.push('FAIL: ' + msg); };
 
   try {
-    /* ---------- 1. public JEONJU: static rendering == hydrated rendering (parity), in ko and en ---------- */
-    for (const lang of ['ko', 'en']) {
+    /* ---------- 1. public JEONJU: static rendering == hydrated rendering (parity), in ko, en, vi and ja ---------- */
+    for (const lang of ['ko', 'en', 'vi', 'ja']) {
       await setLangOn(`http://localhost:${PORT}/`, lang);
       const staticHtml = await courseHtml();
       await setLangOn(`http://jeonju.test:${PORT}/`, lang);
@@ -144,6 +144,9 @@ async function startServer(workers) {
       const info = await cardInfo();
       ok(info.sessions.length === 16 && info.cancels.length === 3, `JEONJU (${lang}) shows 16 sessions + 3 cancellations, got ${info.sessions.length}/${info.cancels.length}`);
       ok(!info.overflow, `no horizontal overflow (${lang})`);
+      // Week label: CJK counters attach to the number, English leads with the word, the others are "1 Tuần".
+      const firstBadge = { ko: '2026/10/10 - 1주', en: '2026/10/10 - Week 1', vi: '2026/10/10 - 1 Tuần', ja: '2026/10/10 - 1週' }[lang];
+      ok(info.sessions[0] === firstBadge, `first card badge (${lang}) is "${firstBadge}", got ` + info.sessions[0]);
       if (lang === 'ko') {
         ok(/^2026\/10\/10 - 1주$/.test(info.sessions[0]), 'first card badge is "2026/10/10 - 1주", got ' + info.sessions[0]);
         ok(/2027\/2\/13|2027\/02\/13/.test(info.sessions[15]) && /총복습/.test(info.sessions[15]), 'last card is the 2027/02/13 총복습, got ' + info.sessions[15]);
