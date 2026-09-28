@@ -5332,35 +5332,54 @@
     });
     return html + '</div>';
   }
+  // [발음] > [설정] guide cards (TTS_GUIDE / TARGET_TTS_GUIDE / HOME_SCREEN_GUIDE, from tts_guide_data.py):
+  // "**x**" marks a menu name, "{langs}" becomes the voice languages.
+  function ttsGuideMarkup(text, langsHtml) {
+    return escapeHtml(text).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace("{langs}", langsHtml || "");
+  }
+  function ttsGuideList(items, langsHtml) {
+    return '<ol>' + items.map(function (st) { return '<li>' + ttsGuideMarkup(st, langsHtml) + '</li>'; }).join("") + '</ol>';
+  }
+  function ttsGuideCard(id, title, bodyHtml, open) {
+    return '<div class="group-card" data-open="' + (open ? "true" : "false") + '" data-tts="' + id + '">' +
+      '<button class="group-head"><span class="syl">' + escapeHtml(title) + '</span>' + currChev() + '</button>' +
+      '<div class="group-body tts-guide-section">' + bodyHtml + '</div></div>';
+  }
+  // One device card: install steps, then the speed/pitch steps, then the note.
+  function ttsDeviceCardHtml(id, card, tuneTitle, langsHtml) {
+    return ttsGuideCard(id, card.title,
+      (card.lead ? '<p class="p-desc">' + escapeHtml(card.lead) + '</p>' : '') + ttsGuideList(card.steps, langsHtml) +
+      (card.tune && card.tune.length ? '<h4>' + escapeHtml(tuneTitle || "") + '</h4>' + ttsGuideList(card.tune, langsHtml) : '') +
+      (card.note ? '<div class="tts-tip">' + ttsGuideMarkup(card.note, langsHtml) + '</div>' : ''), false);
+  }
+  // "No sound?" -- first check the KakaoTalk in-app browser; open by default when the page runs inside KakaoTalk.
+  function ttsHelpCardHtml(help) {
+    if (!help) return "";
+    var inKakao = typeof navigator !== "undefined" && /KAKAOTALK/i.test(navigator.userAgent || "");
+    return ttsGuideCard("help", help.title, '<p class="p-desc">' + escapeHtml(help.lead) + '</p>' + ttsGuideList(help.steps) +
+      (help.note ? '<div class="tts-tip">' + ttsGuideMarkup(help.note) + '</div>' : ''), inKakao);
+  }
+  // "Add to Home Screen" -- only built for the profile that ships HOME_SCREEN_GUIDE (JEONJU).
+  function homeScreenCardHtml() {
+    var g = (typeof HOME_SCREEN_GUIDE !== "undefined" && HOME_SCREEN_GUIDE) ? HOME_SCREEN_GUIDE[currentLang] : null;
+    if (!g) return "";
+    function part(x) { return '<h4>' + escapeHtml(x.title) + '</h4>' + ttsGuideList(x.steps) + (x.note ? '<div class="tts-tip">' + ttsGuideMarkup(x.note) + '</div>' : ''); }
+    return ttsGuideCard("home", g.title, '<p class="p-desc">' + escapeHtml(g.lead) + '</p>' + part(g.ios) + part(g.android), false);
+  }
   function renderPron() {
     if (!PRON_PANE_ELS.settings) return;
 
-    /* -- 설정 (own subtab): voice picker + per-device TTS 설치 안내 -- */
-    function ttsCard(id, title, bodyHtml) {
-      return '<div class="group-card" data-open="false" data-tts="' + id + '">' +
-        '<button class="group-head"><span class="syl">' + escapeHtml(title) + '</span>' +
-        '<span class="chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></button>' +
-        '<div class="group-body tts-guide-section">' + bodyHtml + '</div></div>';
-    }
-
-    // Device cards from TTS_GUIDE (tts_guide_data.py): a Vietnamese voice plus a voice for the UI
-    // language ({langs}); "**x**" marks a menu name.
+    /* -- 설정 (own subtab): voice picker + "발음이 들리지 않나요?" + (JEONJU) 홈 화면 + per-device TTS 안내 -- */
+    // Device cards from TTS_GUIDE (tts_guide_data.py): a Vietnamese voice plus a voice for the UI language ({langs}).
     function ttsGuideHtml() {
       if (typeof TTS_GUIDE === "undefined" || !TTS_GUIDE) return "";
       var guide = TTS_GUIDE.langs[currentLang] || TTS_GUIDE.langs.en;
       var joiner = (currentLang === "ja" || currentLang === "zh" || currentLang === "zh_cn") ? "、" : ", ";
       var langsHtml = guide.names.map(function (n) { return "<b>" + escapeHtml(n) + "</b>"; }).join(joiner);
-      function stepHtml(text) {
-        return escapeHtml(text).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace("{langs}", langsHtml);
-      }
-      var html = '<div class="p-section"><h3>' + escapeHtml(guide.title) + '</h3><p class="p-desc">' + escapeHtml(guide.intro) + '</p>';
+      var html = '<div class="p-section">' + ttsHelpCardHtml(guide.help) + homeScreenCardHtml() + '</div>' +
+        '<div class="p-section"><h3>' + escapeHtml(guide.title) + '</h3><p class="p-desc">' + escapeHtml(guide.intro) + '</p>';
       TTS_GUIDE.order.forEach(function (id) {
-        var card = guide.cards[id];
-        if (!card) return;
-        var body = (card.lead ? '<p class="p-desc">' + escapeHtml(card.lead) + '</p>' : '') +
-          '<ol>' + card.steps.map(function (st) { return '<li>' + stepHtml(st) + '</li>'; }).join("") + '</ol>' +
-          (card.note ? '<div class="tts-tip">' + escapeHtml(card.note) + '</div>' : '');
-        html += ttsCard(id, card.title, body);
+        if (guide.cards[id]) html += ttsDeviceCardHtml(id, guide.cards[id], guide.tuneTitle, langsHtml);
       });
       return html + '</div>';
     }
@@ -12473,14 +12492,9 @@ function verifyDistribution(units, dist, pins) {
       if (!guide) return "";
       var joiner = (currentLang === "ja" || currentLang === "zh" || currentLang === "zh_cn") ? "、" : ", ";
       var langsHtml = guide.names.map(function (n) { return "<b>" + escapeHtml(n) + "</b>"; }).join(joiner);
-      var html = '<div class="p-section"><h3>' + escapeHtml(guide.title) + '</h3>';
+      var html = '<div class="p-section">' + ttsHelpCardHtml(guide.help) + '</div><div class="p-section"><h3>' + escapeHtml(guide.title) + '</h3>';
       TARGET_TTS_GUIDE.order.forEach(function (id) {
-        var card = guide.cards[id];
-        if (!card) return;
-        html += '<div class="group-card" data-open="false" data-tts="' + id + '"><button class="group-head"><span class="syl">' + escapeHtml(card.title) + '</span>' + currChev() + '</button>' +
-          '<div class="group-body tts-guide-section">' + (card.lead ? '<p class="p-desc">' + escapeHtml(card.lead) + '</p>' : '') +
-          '<ol>' + card.steps.map(function (st) { return '<li>' + escapeHtml(st).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace("{langs}", langsHtml) + '</li>'; }).join("") + '</ol>' +
-          (card.note ? '<div class="tts-tip">' + escapeHtml(card.note) + '</div>' : '') + '</div></div>';
+        if (guide.cards[id]) html += ttsDeviceCardHtml(id, guide.cards[id], guide.tuneTitle, langsHtml);
       });
       return html + '</div>';
     }

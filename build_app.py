@@ -96,7 +96,7 @@ from usage_guide_data import USAGE_GUIDE_COMMON, USAGE_GUIDE_TABS
 from course_materials import add_general_materials, remove_jw_event_items
 from course_i18n import complete_course_texts
 from pronunciation_comparison import build_pron_comparison
-from tts_guide_data import TTS_GUIDE, TTS_GUIDE_ORDER
+from tts_guide_data import TTS_GUIDE, TTS_GUIDE_ORDER, home_screen_guide
 
 app_data = json.load(open("app_data.json", encoding="utf-8"))
 vocab_chain = json.load(open("vocab_chain.json", encoding="utf-8"))
@@ -829,6 +829,9 @@ def build_data_js(site):
         parts.append(emit("JEONJU_INFO", jeonju_data.JEONJU_INFO))
         parts.append(emit("JEONJU_WEEKS", getattr(jeonju_data, "JEONJU_WEEKS", [])))
         parts.append(emit("CLASS_ROSTER", jeonju_data.JEONJU_CLASS_ROSTER))
+        # [발음] > [설정] "홈 화면에 추가" guide: JEONJU only, named after this profile's own title and domain.
+        from site_profiles import SITES as _SITES
+        parts.append(emit("HOME_SCREEN_GUIDE", home_screen_guide(_SITES["jeonju"]["title"], "https://" + _SITES["jeonju"]["domain"])))
         parts.append(emit("REGIONAL_SCHEDULE", {
             "preliminaryMeetingDate": jeonju_data.JEONJU_PRELIMINARY_DATE,
             "courseStartDate": jeonju_data.JEONJU_COURSE_START_DATE,

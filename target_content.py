@@ -228,7 +228,8 @@ def build_target_tts_guide(site, tts_guide, order):
             if vi_name.casefold() in note.casefold() or "Việt" in note or "Microsoft An" in note:
                 card.pop("note", None)
             cards[card_id] = card
-        out[ui] = {"title": guide["title"], "names": names, "cards": cards}
+        out[ui] = {"title": guide["title"], "names": names, "cards": cards,
+                   "tuneTitle": guide.get("tuneTitle"), "help": guide.get("help")}
     return {"order": order, "langs": out}
 
 
