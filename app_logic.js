@@ -6753,6 +6753,9 @@ function verifyDistribution(units, dist, pins) {
     // Culture-card category labels (UI chrome). Kept apart from I18N_UI because the same Korean word can mean
     // something else there (I18N_UI's "결혼" is the "marital status" field label).
     var CULTURE_CATEGORY_LABELS = {
+      "의복": { vi: "Trang phục", cs: "Oblečení", zh_cn: "服饰", zh: "服飾", en: "Clothing", fr: "Vêtements", de: "Kleidung", hu: "Öltözködés", id: "Pakaian", ja: "衣服", ko: "의복", pl: "Ubiór" },
+      "교통": { vi: "Giao thông", cs: "Doprava", zh_cn: "交通", zh: "交通", en: "Transportation", fr: "Transports", de: "Verkehr", hu: "Közlekedés", id: "Transportasi", ja: "交通", ko: "교통", pl: "Transport" },
+      "언어": { vi: "Ngôn ngữ", cs: "Jazyk", zh_cn: "语言", zh: "語言", en: "Language", fr: "Langue", de: "Sprache", hu: "Nyelv", id: "Bahasa", ja: "言語", ko: "언어", pl: "Język" },
       "음식": { vi: "Ẩm thực", cs: "Jídlo", zh_cn: "饮食", zh: "飲食", en: "Food", fr: "Cuisine", de: "Essen", hu: "Étkezés", id: "Makanan", ja: "食べ物", ko: "음식", pl: "Jedzenie" },
       "명절과 기념일": { vi: "Lễ tết và ngày kỷ niệm", cs: "Svátky a výročí", zh_cn: "节日与纪念日", zh: "節日與紀念日", en: "Holidays & Anniversaries", fr: "Fêtes et anniversaires", de: "Feste und Gedenktage", hu: "Ünnepek és évfordulók", id: "Hari raya dan peringatan", ja: "祝日と記念日", ko: "명절과 기념일", pl: "Święta i rocznice" },
       "식사 문화": { vi: "Văn hóa ăn uống", cs: "Stolování", zh_cn: "饮食文化", zh: "飲食文化", en: "Dining Culture", fr: "Culture de la table", de: "Esskultur", hu: "Étkezési kultúra", id: "Budaya makan", ja: "食事文化", ko: "식사 문화", pl: "Kultura stołu" },
@@ -6780,6 +6783,21 @@ function verifyDistribution(units, dist, pins) {
         '<div class="group-head-row"><button class="group-head"><span class="culture-fold-head">' + headHtml + '</span>' + currChev() + '</button></div>' +
         '<div class="group-body">';
     }
+    // Card header, the same for every article: category badge, then "title (Vietnamese title)" (the Vietnamese
+    // title alone in the Vietnamese UI).
+    function cultureHeadHtml(a, cardTitle) {
+      var head = '';
+      if (a.category) {
+        var cat = CULTURE_CATEGORY_LABELS[a.category];
+        var catLabel = cat ? T(cat) : Tstrict(a.category);
+        if (catLabel) head += '<span class="culture-category-badge">' + escapeHtml(catLabel) + '</span>';
+      }
+      return head + '<span class="culture-card-title">' +
+        (cardTitle && currentLang !== "vi" ? '<span class="ko">' + escapeHtml(cardTitle) + '</span> ' +
+          (a.titleVi ? '<span class="vi vn">(' + escapeHtml(a.titleVi) + ')</span>' : '')
+          : '<span class="vi vn">' + escapeHtml(a.titleVi || cardTitle || "") + '</span>') +
+        '</span>';
+    }
     var html = "";
     CULTURE_ARTICLES.forEach(function (a, ai) {
       if (a.keywords || a.summaryKo) {
@@ -6788,18 +6806,7 @@ function verifyDistribution(units, dist, pins) {
         var cardTitle = Tstrict(a.titleTr || a.titleKo);
         var cardSummary = Tstrict(a.summaryTr || a.summaryKo);
         var cardPoint = Tstrict(a.learningPointTr || a.learningPoint);
-        var headHtml = '';
-        if (a.category) {
-          var cat = CULTURE_CATEGORY_LABELS[a.category];
-          var catLabel = cat ? T(cat) : Tstrict(a.category);
-          if (catLabel) headHtml += '<span class="culture-category-badge">' + escapeHtml(catLabel) + '</span>';
-        }
-        headHtml += '<span class="culture-card-title">' +
-          (cardTitle && currentLang !== "vi" ? '<span class="ko">' + escapeHtml(cardTitle) + '</span> ' +
-            (a.titleVi ? '<span class="vi vn">(' + escapeHtml(a.titleVi) + ')</span>' : '')
-            : '<span class="vi vn">' + escapeHtml(a.titleVi || "") + '</span>') +
-          '</span>';
-        html += cardOpen(ai, headHtml) + '<div class="culture-card">';
+        html += cardOpen(ai, cultureHeadHtml(a, cardTitle)) + '<div class="culture-card">';
         if (cardSummary) {
           html += '<p class="culture-summary">' + escapeHtml(cardSummary) + '</p>';
         }
@@ -6817,13 +6824,10 @@ function verifyDistribution(units, dist, pins) {
           });
           html += '</div>';
         }
-        if (a.source && currentLang === "ko") { // Korean book titles: source note for the Korean view only
-          html += '<div class="culture-source">' + escapeHtml(a.source.file || "") + ' p.' + (a.source.page || "") + '</div>';
-        }
         html += '</div></div></div>';
       } else {
         if (!T(a.title)) return; // article not available in this language
-        html += cardOpen(ai, '<span class="culture-card-title">' + escapeHtml(T(a.title)) + '</span>') + '<div class="culture-card">' +
+        html += cardOpen(ai, cultureHeadHtml(a, T(a.title))) + '<div class="culture-card">' +
           '<div class="curr-culture-sub">' + escapeHtml(T(a.subtitle)) + '</div>';
         (a.paragraphs || []).forEach(function (p) { html += '<p>' + escapeHtml(T(p)) + '</p>'; });
         html += '</div></div></div>';

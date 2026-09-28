@@ -106,6 +106,8 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                         'd’aller la goûter sur place !',
                   'pl': 'Którą regionalną wersję zupy pho wolicie? Najlepiej oczywiście spróbować jej osobiście na '
                         'miejscu!'}],
+  'category': '음식',
+  'titleVi': 'Các món mì đa dạng của Việt Nam',
   'page': 79},
  {'title': {'ko': '베트남의 전통 의상',
             'zh': '越南的傳統服飾',
@@ -208,6 +210,8 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                         'votre séjour.',
                   'pl': 'Co powiecie na założenie zwiewnego áo dài i zrobienie pamiątkowych zdjęć na tle malowniczych '
                         'zakątków Wietnamu? Z pewnością będzie to jedna z najpiękniejszych chwil podczas podróży.'}],
+  'category': '의복',
+  'titleVi': 'Trang phục truyền thống Việt Nam',
   'page': 83},
  {'title': {'ko': '오토바이의 나라 베트남',
             'zh': '摩托車王國越南',
@@ -291,6 +295,8 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                   'fr': 'C’est une expérience insolite et mémorable que l’on ne vit nulle part ailleurs qu’au Vietnam.',
                   'pl': 'Będzie to z pewnością niezwykłe i niezapomniane przeżycie, jakiego można doświadczyć tylko w '
                         'Wietnamie.'}],
+  'category': '교통',
+  'titleVi': 'Việt Nam – vùng đất của xe máy',
   'page': 88},
  {'title': {'ko': '베트남의 기후',
             'zh': '越南的氣候',
@@ -384,6 +390,8 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                         'Średnia temperatura wynosi 27–30°C, a rok dzieli się na porę suchą i deszczową. W porze '
                         'suchej słońce pali bezlitośnie. W porze deszczowej gwałtowne ulewy potrafią przejść kilka '
                         'razy dziennie, dlatego Wietnamczycy zawsze noszą ze sobą płaszcz przeciwdeszczowy.'}],
+  'category': '날씨와 기후',
+  'titleVi': 'Khí hậu Việt Nam',
   'page': 91},
  {'title': {'ko': '베트남어와 한자',
             'zh': '越南語與漢字',
@@ -470,6 +478,8 @@ CULTURE_ARTICLES = [{'title': {'ko': '베트남의 다양한 면 요리',
                         'l’apprentissage ne paraît-il pas plus abordable ?',
                   'pl': 'Być może wietnamski wydawał się wam dotąd bardzo trudny, ale z tej perspektywy nauka staje '
                         'się o wiele bardziej przystępna, prawda?'}],
+  'category': '언어',
+  'titleVi': 'Tiếng Việt và chữ Hán',
   'page': 125}]
 
 # Compact culture cards added from vietnam_culture_from_pdfs.json
