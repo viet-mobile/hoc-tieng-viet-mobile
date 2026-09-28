@@ -10,7 +10,7 @@ import shutil
 
 from site_html import strip_site_html, remove_elements, empty_elements
 from site_profiles import (SITE_TITLES, NON_JW_HTML_REMOVALS, SITES, SITE_IDS, TARGET_ENGINE_HTML, data_block_name,
-                           BRAND_ICON_FILES)
+                           BRAND_ICON_FILES, PWA_ICON_FILES)
 
 
 def apply_general_label_overrides(html_text):
@@ -102,6 +102,16 @@ def build_manifest(site):
             {"src": "brand/" + BRAND_ICON_FILES["png512"], "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
             {"src": "brand/" + BRAND_ICON_FILES["svg"], "sizes": "any", "type": "image/svg+xml", "purpose": "any"},
         ]
+    pwa = SITES[site].get("pwa")
+    if pwa:
+        # A Vietnamese site with its own home-screen identity (JEONJU): short launcher name, and the shared logo
+        # at standard sizes -- "any" keeps the logo as is, "maskable" is the padded copy (jeonju_icons.py).
+        base["short_name"] = pwa["short_name"]
+        base["icons"] = [
+            {"src": "brand/" + PWA_ICON_FILES[key], "sizes": "%dx%d" % (size, size), "type": "image/png", "purpose": purpose}
+            for key, size, purpose in (("any192", 192, "any"), ("any512", 512, "any"),
+                                       ("maskable192", 192, "maskable"), ("maskable512", 512, "maskable"))
+        ]
     return json.dumps(base, ensure_ascii=False, indent=2)
 
 
@@ -117,6 +127,18 @@ def _remove_tree(path):
 VIETNAMESE_ICON_LINKS = ('<link rel="icon" type="image/png" href="assets/hoc-tieng-viet-logo.png">\n'
                          '<link rel="apple-touch-icon" href="assets/hoc-tieng-viet-logo.png">')
 VIETNAMESE_THEME_META = '<meta name="theme-color" content="#00613F">'
+
+
+def apply_pwa_identity(html_text, site):
+    """A Vietnamese site with a "pwa" entry: same favicon, its own opaque 180px apple-touch icon and the iOS
+    home-screen title (otherwise iOS proposes the long page title)."""
+    pwa = SITES[site]["pwa"]
+    if VIETNAMESE_ICON_LINKS not in html_text:
+        raise SystemExit(f"[{site}] template.html: icon links not found for the home-screen identity")
+    links = ('<link rel="icon" type="image/png" href="assets/hoc-tieng-viet-logo.png">\n'
+             f'<link rel="apple-touch-icon" sizes="180x180" href="brand/{PWA_ICON_FILES["apple"]}">\n'
+             f'<meta name="apple-mobile-web-app-title" content="{pwa["apple_title"]}">')
+    return html_text.replace(VIETNAMESE_ICON_LINKS, links, 1)
 
 
 def apply_brand(html_text, site):
@@ -243,6 +265,8 @@ def assemble_site(site):
         out, removal_counts["removed"] = remove_elements(out, TARGET_ENGINE_HTML["remove"])
     if meta.get("brand"):
         out = apply_brand(out, site)
+    if meta.get("pwa"):
+        out = apply_pwa_identity(out, site)
 
     out = apply_site_identity(out, site)
 
@@ -275,6 +299,10 @@ def assemble_site(site):
             shutil.copyfile(Path(meta["brand"]["dir"]) / name, dist_dir / "brand" / name)
     else:
         shutil.copytree("assets", dist_dir / "assets", dirs_exist_ok=True)
+    if meta.get("pwa"):
+        (dist_dir / "brand").mkdir(exist_ok=True)
+        for name in PWA_ICON_FILES.values():
+            shutil.copyfile(Path(meta["pwa"]["icons_dir"]) / name, dist_dir / "brand" / name)
     open(dist_dir / "manifest.webmanifest", "w", encoding="utf-8").write(build_manifest(site))
     shutil.copyfile("_redirects", dist_dir / "_redirects")
 

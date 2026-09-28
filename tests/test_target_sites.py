@@ -90,6 +90,13 @@ class TargetSiteTests(unittest.TestCase):
                 # The Vietnamese sites keep their own logo, theme and manifest icon.
                 self.assertIn('href="assets/hoc-tieng-viet-logo.png"', html, sid)
                 self.assertIn('<meta name="theme-color" content="#00613F">', html, sid)
+                if meta.get("pwa"):
+                    # JEONJU: the same logo at standard home-screen sizes (jeonju_icons.py), copied into brand/.
+                    from site_profiles import PWA_ICON_FILES
+                    self.assertEqual([i["src"] for i in manifest["icons"]],
+                                     ["brand/" + PWA_ICON_FILES[k] for k in ("any192", "any512", "maskable192", "maskable512")], sid)
+                    self.assertEqual(sorted(p.name for p in (out / "brand").iterdir()), sorted(PWA_ICON_FILES.values()), sid)
+                    continue
                 self.assertEqual(manifest["icons"][0]["src"], "assets/hoc-tieng-viet-logo.png", sid)
                 self.assertFalse((out / "brand").exists(), sid)
                 continue

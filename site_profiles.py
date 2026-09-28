@@ -469,7 +469,9 @@ TARGET_SOURCE_REQUIRED = ["words", "pronunciation", "difference", "grammar", "co
 _VIET_SITES = {
     "general": {"family": "general", "domain": "hoc.tieng.viet.mobile", "output_dir": "dist"},
     "jw": {"family": "jw", "domain": "jw.hoc.tieng.viet.mobile", "output_dir": "dist/jw"},
-    "jeonju": {"family": "regional", "domain": "jeonju.hoc.tieng.viet.mobile", "output_dir": "dist/jeonju"},
+    "jeonju": {"family": "regional", "domain": "jeonju.hoc.tieng.viet.mobile", "output_dir": "dist/jeonju",
+               # Home-screen identity (manifest + iOS title + icons made by jeonju_icons.py from the shared logo).
+               "pwa": {"short_name": "전주 베트남어", "apple_title": "전주 베트남어", "icons_dir": "brand/jeonju"}},
     "ulsan": {"family": "regional", "domain": "ulsan.hoc.tieng.viet.mobile", "output_dir": "dist/ulsan"},
 }
 # Branding of the target-language sites: one visual system (rounded square, white mark, underline),
@@ -485,6 +487,9 @@ TARGET_BRANDS = {
 }
 BRAND_ICON_FILES = {"svg": "icon.svg", "png32": "icon-32.png", "apple": "icon-180.png",
                     "png192": "icon-192.png", "png512": "icon-512.png"}
+# Home-screen icons of a Vietnamese site with its own "pwa" entry (JEONJU), drawn by jeonju_icons.py.
+PWA_ICON_FILES = {"any192": "icon-192.png", "any512": "icon-512.png", "maskable192": "icon-maskable-192.png",
+                  "maskable512": "icon-maskable-512.png", "apple": "icon-180.png"}
 
 _TARGET_SITE_DEFS = [
     # (target, slug, GENERAL domain, JW domain)
