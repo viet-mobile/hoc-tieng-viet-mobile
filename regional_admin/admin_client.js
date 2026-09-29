@@ -195,8 +195,12 @@
     var plan = '<table class="table"><thead><tr><th>시간</th><th>활동</th><th>교수법</th></tr></thead><tbody>' +
       (g.lessonPlan || []).map(function (r) { return '<tr><td>' + esc(r.time) + '</td><td>' + esc(r.activity) + '</td><td>' + esc(r.method) + '</td></tr>'; }).join('') + '</tbody></table>';
     var methods = '<div class="guide-grid">' + (g.methods || []).map(function (m) {
-      return '<div class="guide-method"><h4>' + esc(m.label) + ' <span style="font-weight:400;color:var(--ink-faint);font-size:12px;">' + esc(m.name) + '</span></h4><p>' + esc(m.summary) + '</p>' +
-        '<ol>' + (m.steps || []).map(function (st) { return '<li>' + esc(st) + '</li>'; }).join('') + '</ol></div>';
+      function sub(label, list) {
+        return (list && list.length) ? '<div class="guide-label">' + esc(label) + '</div><ul>' + list.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '';
+      }
+      return '<div class="guide-method guide-body"><h4>' + esc(m.label) + ' <span style="font-weight:400;color:var(--ink-faint);font-size:12px;">' + esc(m.name) + (m.page ? ' · ' + esc(m.page) + '쪽' : '') + '</span></h4><p>' + esc(m.summary) + '</p>' +
+        '<div class="guide-label">단계</div><ol>' + (m.steps || []).map(function (st) { return '<li>' + esc(st) + '</li>'; }).join('') + '</ol>' +
+        sub('변형', m.variations) + sub('준비물', m.materials) + sub('교재 메모·베트남어 적용', m.teacherMemo) + '</div>';
     }).join('') + '</div>';
     var principles = '<ul style="margin-left:18px;">' + (g.principles || []).map(function (p) {
       return '<li style="margin-bottom:4px;"><b>' + esc(p.name) + '</b> — ' + esc(p.body) + '</li>';
@@ -210,8 +214,15 @@
       '<p class="help-text" style="margin-bottom:12px;">출처: ' + esc(g.source) + '. 이 내용은 읽기 전용이며 코드(regional_admin/teaching_guide.json)에서 관리합니다. 각 주의 교수법과 학생 준비물은 학생용 [과정] 카드에도 표시됩니다.</p>' +
       '<div class="guide-hint">날짜는 원래 계획 기준입니다. SECTION D에서 회차 배정이 바뀌면 원본 단위 번호로 맞춰 보세요.</div></div>' +
       '<div class="card"><div class="card-title">주별 지도 계획</div>' + pre + units + '</div>' +
+      '<div class="card"><div class="card-title">방법별 사용 주</div><table class="table"><thead><tr><th>교수법</th><th>사용 주</th></tr></thead><tbody>' +
+      (g.methods || []).map(function (m) {
+        var weeks = [];
+        if (g.preliminary && (g.preliminary.methods || []).indexOf(m.id) >= 0) weeks.push('예비');
+        (g.units || []).forEach(function (u) { if ((u.methods || []).indexOf(m.id) >= 0) weeks.push(u.unit + '주'); });
+        return '<tr><td>' + esc(m.label) + '</td><td>' + esc(weeks.join(', ')) + '</td></tr>';
+      }).join('') + '</tbody></table></div>' +
       '<div class="card"><div class="card-title">2시간 표준 수업안</div>' + plan + '</div>' +
-      '<div class="card"><div class="card-title">교수법 요약 (교재 Method #1–#7)</div>' + methods + '</div>' +
+      '<div class="card"><div class="card-title">교수법 16가지 (교재 Method #1–#16)</div>' + methods + '</div>' +
       '<div class="card"><div class="card-title">공통 원칙</div>' + principles + '</div>' +
       '<div class="card"><div class="card-title">베트남어 조음 위치 (Basic Linguistics)</div><ul style="margin-left:18px;">' +
       (g.linguistics || []).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div>';
