@@ -11,7 +11,7 @@ SECTIONS = {
     "ko": {
         "title": "Korejština a vietnamština",
         "common": """
-Oba jazyky zřetelně oddělují slabiky a slabiky zakončují nevypuštěnými souhláskami: korejské 밥 [pap̚] i vietnamské đáp [ɗaːp̚] končí sevřenými rty bez výdechu. Korejští mluvčí tak už ovládají to, co je na vietnamských koncovkách pro většinu studentů nejtěžší.
+Oba jazyky zřetelně oddělují slabiky a slabiky zakončují nevypuštěnými souhláskami: korejské 답 [taːp̚] (na začátku slova, po neznělé hlásce nebo na konci slabiky) / [daːp̚] (mezi znělými hláskami: samohláskami, ㄴ, ㄹ, ㅁ, ㅇ) i vietnamské đáp [ɗaːp̚] končí sevřenými rty bez výdechu. Korejští mluvčí tak už ovládají to, co je na vietnamských koncovkách pro většinu studentů nejtěžší.
 - Koncovky: sedm korejských koncových hlásek [p̚ t̚ k̚ m n ŋ l] zahrnuje šest vietnamských koncovek /p t k m n ŋ/ (psáno p, t, c/ch, m, n, ng/nh).
 - /ŋ/: koncové ㅇ (강) je vietnamské koncové ng; vietnamština ho používá i na začátku slabiky (ngà).
 - Přídech: ㅌ /tʰ/ odpovídá vietnamskému th /tʰ/; nepřídechové vietnamské t /t/ má blíž k napjatému ㄸ než k ㄷ.
@@ -27,11 +27,10 @@ Oba jazyky zřetelně oddělují slabiky a slabiky zakončují nevypuštěnými 
 - Samohlásky ơ [əː], krátké â [ə], krátké ă a protiklad e [ɛ] / ê [e] (ㅐ/ㅔ u většiny mluvčích splynuly).
 - Palatální koncovky -nh, -ch po i, ê, a a sevření rtů na konci ông [ʔəwŋ͡m], học [hawk͡p].
 ## B. V korejštině, ale ne ve vietnamštině
-- Trojí protiklad lenis/fortis/přídechová (ㄱ/ㄲ/ㅋ, ㅈ/ㅉ/ㅊ); vietnamština má jen dvojí protiklady jako t/th.
 - Koncové /l/ (말) a střídání [ɾ]~[l] u ㄹ; žádná vietnamská slabika nekončí na l.
 - Hláskové změny mezi slabikami (nazalizace 국물 → [궁물], vázání); ve vietnamštině si každá slabika ponechává svou koncovku.
 ## C. Snadno zaměnitelné
-- Vietnamské t není ㄷ: bez přídechu, jako ㄸ, ale méně napjaté. th se podobá ㅌ a nikdy není anglické „th“.
+- Vietnamské t se vyslovuje jako ㄸ, vietnamské th jako ㅌ; není to anglické „th“.
 - ư [ɨ] je centrálnější než ㅡ; ơ [əː] je centrálnější a delší než ㅓ [ʌ].
 - Koncové -c po o, ô, u končí sevřenými rty (học ≈ [hawk͡p]), nevyslovuje se jako 학.
 ## D. Systém
@@ -393,15 +392,14 @@ Korejská písmena (ㄱ, ㄲ, ㅋ atd.) uvedená vedle jsou jen studijní nápov
             "title": "Srovnání s korejskými měkkými, napjatými a přídechovými souhláskami",
             "text": """
 Korejské plozivy a afrikáty tvoří trojí protiklad: měkké (lenis), napjaté (fortis) a přídechové (ㄱ/ㄲ/ㅋ, ㄷ/ㄸ/ㅌ, ㅂ/ㅃ/ㅍ, ㅈ/ㅉ/ㅊ). Měkké jsou na začátku slova neznělé se slabým přídechem a mezi samohláskami znělé; napjaté jsou bez přídechu s napjatým hrtanem; přídechové mají silný přídech.
-Vietnamština takový trojí protiklad nemá. Její plozivy se liší přídechem (t / th) a znělostí (đ, b). Následující srovnání slouží jen k tomu, abyste protiklady lépe vycítili.
 ## đ / t / th a ㄷ / ㄸ / ㅌ
+- đ [ɗ]: znělá implozíva, hlasivky kmitají. Korejské ㄷ je na začátku slova neznělé, takže vyslovit đ jako ㄷ dává jiný zvuk.
 - t [t]: neznělé a bez přídechu, proto mluvčím korejštiny zní blízko ㄸ, ale není tak napjaté jako ㄸ.
 - th [tʰ]: neznělé s přídechem, blízko ㅌ. Není to anglické th [θ].
-- đ [ɗ]: znělá implozíva, hlasivky kmitají. Korejské ㄷ je na začátku slova neznělé, takže vyslovit đ jako ㄷ dává jiný zvuk.
 ## g / c·k·q / kh a ㄱ / ㄲ / ㅋ
+- g·gh [ɣ]: znělá frikativa. Způsobem tvoření se liší od korejského ㄱ.
 - c·k·q [k]: neznělá plozíva bez přídechu, zní proto blízko ㄲ.
 - kh [x]: není plozíva, ale neznělá frikativa tvořená zadní částí jazyka u měkkého patra. Nevyráží se jako ㅋ [kʰ].
-- g·gh [ɣ]: znělá frikativa. Způsobem tvoření se liší od korejského ㄱ.
 Takže g / c / kh nejsou tři plozivy tvořené stejným způsobem jako ㄱ/ㄲ/ㅋ, ale znělá frikativa, plozíva bez přídechu a neznělá frikativa.
 ## b / p a ㅂ / ㅃ / ㅍ
 - b [ɓ]: znělá implozíva, stejně jako đ.

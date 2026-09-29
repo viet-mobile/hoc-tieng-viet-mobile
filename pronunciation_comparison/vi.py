@@ -11,7 +11,7 @@ SECTIONS = {
     "ko": {
         "title": "Tiếng Hàn và tiếng Việt",
         "common": """
-Cả hai ngôn ngữ đều có âm tiết tách bạch rõ ràng và kết thúc âm tiết bằng phụ âm không bật hơi ra: 밥 [pap̚] của tiếng Hàn và đáp [ɗaːp̚] của tiếng Việt khép môi rồi dừng, không có luồng hơi thoát ra. Vì vậy người Hàn đã quen với phần khó nhất của phụ âm cuối tiếng Việt.
+Cả hai ngôn ngữ đều có âm tiết tách bạch rõ ràng và kết thúc âm tiết bằng phụ âm không bật hơi ra: 답 [taːp̚] (khi đứng đầu từ, sau âm vô thanh hoặc ở cuối âm tiết) / [daːp̚] (khi đứng giữa các âm hữu thanh: nguyên âm, ㄴ, ㄹ, ㅁ, ㅇ) của tiếng Hàn và đáp [ɗaːp̚] của tiếng Việt khép môi rồi dừng, không có luồng hơi thoát ra. Vì vậy người Hàn đã quen với phần khó nhất của phụ âm cuối tiếng Việt.
 - Phụ âm cuối: bảy âm cuối tiếng Hàn [p̚ t̚ k̚ m n ŋ l] có sáu âm trùng với âm cuối tiếng Việt /p t k m n ŋ/ (viết là p, t, c/ch, m, n, ng/nh).
 - /ŋ/: ㅇ ở cuối âm tiết (강) chính là ng cuối của tiếng Việt; tiếng Việt còn dùng âm này ở đầu âm tiết (ngà).
 - Bật hơi: ㅌ /tʰ/ gần với th /tʰ/ của tiếng Việt; t /t/ không bật hơi của tiếng Việt gần với ㄸ hơn là ㄷ.
@@ -27,11 +27,10 @@ Cả hai ngôn ngữ đều có âm tiết tách bạch rõ ràng và kết thú
 - Nguyên âm ơ [əː], â [ə] ngắn, ă ngắn, và sự đối lập e [ɛ] / ê [e] (ㅐ/ㅔ đã nhập làm một ở phần lớn người nói).
 - Âm cuối ngạc -nh, -ch sau i, ê, a, và khép môi ở cuối ông [ʔəwŋ͡m], học [hawk͡p].
 ## B. Có trong tiếng Hàn nhưng không có trong tiếng Việt
-- Đối lập ba chiều thường/căng/bật hơi (ㄱ/ㄲ/ㅋ, ㅈ/ㅉ/ㅊ); tiếng Việt chỉ có đối lập hai chiều như t/th.
 - Âm cuối /l/ (말) và ㄹ luân phiên [ɾ]~[l]; không âm tiết tiếng Việt nào kết thúc bằng l.
 - Biến đổi âm giữa các âm tiết (mũi hóa 국물 → [궁물], nối âm); trong tiếng Việt mỗi âm tiết giữ nguyên âm cuối của mình.
 ## C. Dễ nhầm lẫn
-- t tiếng Việt không phải ㄷ: không bật hơi, giống ㄸ nhưng ít căng hơn; th gần với ㅌ, không phải "th" tiếng Anh.
+- t tiếng Việt đọc giống ㄸ, th tiếng Việt đọc giống ㅌ; không phải "th" tiếng Anh.
 - ư [ɨ] ở giữa miệng hơn ㅡ; ơ [əː] ở giữa và dài hơn ㅓ [ʌ].
 - -c sau o, ô, u kết thúc bằng khép môi (học ≈ [hawk͡p]), không đọc thành 학.
 ## D. Khác biệt hệ thống
@@ -393,15 +392,14 @@ Các chữ cái tiếng Hàn (ㄱ, ㄲ, ㅋ, v.v.) ghi kèm chỉ là gợi ý h
             "title": "So sánh với âm thường, âm căng và âm bật hơi của tiếng Hàn",
             "text": """
 Âm tắc và âm tắc xát tiếng Hàn đối lập theo ba cách: âm thường, âm căng và âm bật hơi (ㄱ/ㄲ/ㅋ, ㄷ/ㄸ/ㅌ, ㅂ/ㅃ/ㅍ, ㅈ/ㅉ/ㅊ). Âm thường là âm vô thanh hơi bật hơi nhẹ ở đầu từ và trở thành hữu thanh giữa hai nguyên âm; âm căng không bật hơi, thanh quản căng; âm bật hơi có luồng hơi mạnh.
-Tiếng Việt không có đối lập ba cách như vậy. Âm tắc được phân biệt bằng việc có bật hơi hay không (t / th) và bằng tính hữu thanh (đ, b). Những so sánh dưới đây chỉ giúp cảm nhận các đối lập.
 ## đ / t / th và ㄷ / ㄸ / ㅌ
+- đ [ɗ]: âm hút vào hữu thanh, dây thanh rung. ㄷ tiếng Hàn là vô thanh ở đầu từ, nên đọc đ thành ㄷ sẽ ra một âm khác.
 - t [t]: vô thanh, không bật hơi, nên với người nói tiếng Hàn nghe gần ㄸ, nhưng không căng bằng ㄸ.
 - th [tʰ]: vô thanh, bật hơi, gần ㅌ. Không phải th [θ] của tiếng Anh.
-- đ [ɗ]: âm hút vào hữu thanh, dây thanh rung. ㄷ tiếng Hàn là vô thanh ở đầu từ, nên đọc đ thành ㄷ sẽ ra một âm khác.
 ## g / c·k·q / kh và ㄱ / ㄲ / ㅋ
+- g·gh [ɣ]: âm xát hữu thanh. Phương thức cấu âm khác ㄱ tiếng Hàn.
 - c·k·q [k]: âm tắc vô thanh không bật hơi, nên nghe gần ㄲ.
 - kh [x]: không phải âm tắc mà là âm xát vô thanh, gốc lưỡi đưa gần ngạc mềm. Không bật ra như ㅋ [kʰ].
-- g·gh [ɣ]: âm xát hữu thanh. Phương thức cấu âm khác ㄱ tiếng Hàn.
 Vì vậy g / c / kh không phải ba âm tắc phát âm cùng một cách như ㄱ/ㄲ/ㅋ, mà là một âm xát hữu thanh, một âm tắc không bật hơi và một âm xát vô thanh.
 ## b / p và ㅂ / ㅃ / ㅍ
 - b [ɓ]: âm hút vào hữu thanh, giống đ.

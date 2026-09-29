@@ -11,7 +11,7 @@ SECTIONS = {
     "ko": {
         "title": "Le coréen et le vietnamien",
         "common": """
-Les deux langues découpent nettement les syllabes et terminent les syllabes par des consonnes non relâchées : le coréen 밥 [pap̚] et le vietnamien đáp [ɗaːp̚] se ferment de la même façon, lèvres closes, sans souffle. Les coréanophones maîtrisent donc déjà ce qui est le plus difficile dans les finales vietnamiennes.
+Les deux langues découpent nettement les syllabes et terminent les syllabes par des consonnes non relâchées : le coréen 답 [taːp̚] (en début de mot, après une consonne sourde ou en fin de syllabe) / [daːp̚] (entre sons voisés : voyelles, ㄴ, ㄹ, ㅁ, ㅇ) et le vietnamien đáp [ɗaːp̚] se ferment de la même façon, lèvres closes, sans souffle. Les coréanophones maîtrisent donc déjà ce qui est le plus difficile dans les finales vietnamiennes.
 - Finales : les sept sons de fin de syllabe du coréen [p̚ t̚ k̚ m n ŋ l] comprennent six finales vietnamiennes /p t k m n ŋ/ (écrites p, t, c/ch, m, n, ng/nh).
 - /ŋ/ : le ㅇ final (강) est le ng final vietnamien ; le vietnamien l'emploie aussi en début de syllabe (ngà).
 - Aspiration : ㅌ /tʰ/ est proche du th /tʰ/ vietnamien ; le t /t/ vietnamien, non aspiré, est plus proche du ㄸ tendu que du ㄷ.
@@ -27,11 +27,10 @@ Les deux langues découpent nettement les syllabes et terminent les syllabes par
 - Les voyelles ơ [əː], â [ə] bref, ă bref, et l'opposition e [ɛ] / ê [e] (ㅐ/ㅔ se sont confondus chez la plupart des locuteurs).
 - Finales palatales -nh, -ch après i, ê, a, et fermeture des lèvres à la fin de ông [ʔəwŋ͡m], học [hawk͡p].
 ## B. En coréen mais pas en vietnamien
-- L'opposition à trois termes douce/tendue/aspirée (ㄱ/ㄲ/ㅋ, ㅈ/ㅉ/ㅊ) ; le vietnamien n'a que des oppositions à deux termes comme t/th.
 - Le /l/ final (말) et l'alternance [ɾ]~[l] de ㄹ ; aucune syllabe vietnamienne ne se termine par l.
 - Les changements phonétiques entre syllabes (nasalisation 국물 → [궁물], enchaînement) ; en vietnamien, chaque syllabe garde sa finale.
 ## C. Faciles à confondre
-- Le t vietnamien n'est pas ㄷ : sans aspiration, comme ㄸ mais moins tendu. th ressemble à ㅌ et n'est jamais le « th » anglais.
+- Le t vietnamien se prononce comme ㄸ, le th vietnamien comme ㅌ ; ce n'est pas le « th » anglais.
 - ư [ɨ] est plus central que ㅡ ; ơ [əː] est plus central et plus long que ㅓ [ʌ].
 - Le -c final après o, ô, u se termine lèvres fermées (học ≈ [hawk͡p]) ; ce n'est pas 학.
 ## D. Système
@@ -393,15 +392,14 @@ Les lettres coréennes indiquées à côté (ㄱ, ㄲ, ㅋ, etc.) sont des repè
             "title": "Comparaison avec les consonnes coréennes douces, fortes et aspirées",
             "text": """
 Les occlusives et affriquées coréennes forment une triple opposition : douces (lenis), fortes (tendues) et aspirées (ㄱ/ㄲ/ㅋ, ㄷ/ㄸ/ㅌ, ㅂ/ㅃ/ㅍ, ㅈ/ㅉ/ㅊ). Les douces sont sourdes avec une légère aspiration en début de mot et deviennent sonores entre voyelles ; les fortes sont non aspirées, avec un larynx tendu ; les aspirées ont une forte aspiration.
-Le vietnamien n’a pas de triple opposition de ce type. Ses occlusives se distinguent par l’aspiration (t / th) et par le voisement (đ, b). Les comparaisons ci-dessous servent seulement à percevoir ces oppositions.
 ## đ / t / th et ㄷ / ㄸ / ㅌ
+- đ [ɗ] : une implosive sonore, avec vibration des cordes vocales. Le ㄷ coréen est sourd en début de mot ; prononcer đ comme ㄷ donne un autre son.
 - t [t] : sourde et non aspirée, elle paraît proche de ㄸ aux locuteurs coréens, sans être aussi tendue que ㄸ.
 - th [tʰ] : sourde et aspirée, proche de ㅌ. Ce n’est pas le th anglais [θ].
-- đ [ɗ] : une implosive sonore, avec vibration des cordes vocales. Le ㄷ coréen est sourd en début de mot ; prononcer đ comme ㄷ donne un autre son.
 ## g / c·k·q / kh et ㄱ / ㄲ / ㅋ
+- g·gh [ɣ] : une fricative sonore. Son mode d’articulation diffère du ㄱ coréen.
 - c·k·q [k] : une occlusive sourde non aspirée, qui paraît donc proche de ㄲ.
 - kh [x] : non pas une occlusive mais une fricative sourde, produite avec le dos de la langue près du voile du palais. Elle n’explose pas comme ㅋ [kʰ].
-- g·gh [ɣ] : une fricative sonore. Son mode d’articulation diffère du ㄱ coréen.
 g / c / kh ne sont donc pas trois occlusives produites de la même façon comme ㄱ/ㄲ/ㅋ, mais une fricative sonore, une occlusive non aspirée et une fricative sourde.
 ## b / p et ㅂ / ㅃ / ㅍ
 - b [ɓ] : une implosive sonore, comme đ.

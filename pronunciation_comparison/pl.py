@@ -11,7 +11,7 @@ SECTIONS = {
     "ko": {
         "title": "Koreański i wietnamski",
         "common": """
-Oba języki wyraźnie dzielą sylaby i kończą je spółgłoskami bez plozji: koreańskie 밥 [pap̚] i wietnamskie đáp [ɗaːp̚] zamykają się tak samo – wargi złączone, bez wydechu. Koreańczycy opanowali już więc to, co w wietnamskich wygłosach jest dla większości uczących się najtrudniejsze.
+Oba języki wyraźnie dzielą sylaby i kończą je spółgłoskami bez plozji: koreańskie 답 [taːp̚] (na początku wyrazu, po głosce bezdźwięcznej lub na końcu sylaby) / [daːp̚] (między głoskami dźwięcznymi: samogłoskami, ㄴ, ㄹ, ㅁ, ㅇ) i wietnamskie đáp [ɗaːp̚] zamykają się tak samo – wargi złączone, bez wydechu. Koreańczycy opanowali już więc to, co w wietnamskich wygłosach jest dla większości uczących się najtrudniejsze.
 - Wygłosy: siedem koreańskich dźwięków wygłosowych [p̚ t̚ k̚ m n ŋ l] obejmuje sześć wietnamskich wygłosów /p t k m n ŋ/ (pisanych p, t, c/ch, m, n, ng/nh).
 - /ŋ/: wygłosowe ㅇ (강) to wietnamskie ng na końcu sylaby; wietnamski używa go też na początku sylaby (ngà).
 - Przydech: ㅌ /tʰ/ odpowiada wietnamskiemu th /tʰ/; nieprzydechowe wietnamskie t /t/ jest bliższe napiętemu ㄸ niż ㄷ.
@@ -27,11 +27,10 @@ Oba języki wyraźnie dzielą sylaby i kończą je spółgłoskami bez plozji: k
 - Samogłoski ơ [əː], krótkie â [ə], krótkie ă i opozycja e [ɛ] / ê [e] (ㅐ/ㅔ u większości mówiących się zlały).
 - Palatalne wygłosy -nh, -ch po i, ê, a oraz zamknięcie warg na końcu ông [ʔəwŋ͡m], học [hawk͡p].
 ## B. W koreańskim, ale nie w wietnamskim
-- Potrójna opozycja luźna/napięta/przydechowa (ㄱ/ㄲ/ㅋ, ㅈ/ㅉ/ㅊ); wietnamski ma tylko podwójne opozycje, jak t/th.
 - Wygłosowe /l/ (말) i wymiana [ɾ]~[l] w ㄹ; żadna wietnamska sylaba nie kończy się na l.
 - Zmiany dźwiękowe między sylabami (nazalizacja 국물 → [궁물], łączenie); w wietnamskim każda sylaba zachowuje swój wygłos.
 ## C. Łatwe do pomylenia
-- Wietnamskie t to nie ㄷ: bez przydechu, jak ㄸ, ale mniej napięte. th przypomina ㅌ i nigdy nie jest angielskim „th”.
+- Wietnamskie t wymawia się jak ㄸ, a wietnamskie th jak ㅌ; to nie jest angielskie „th”.
 - ư [ɨ] jest bardziej centralne niż ㅡ; ơ [əː] – bardziej centralne i dłuższe niż ㅓ [ʌ].
 - Wygłosowe -c po o, ô, u kończy się zamknięciem warg (học ≈ [hawk͡p]), nie jak 학.
 ## D. System
@@ -393,15 +392,14 @@ Podane obok litery koreańskie (ㄱ, ㄲ, ㅋ itd.) to wskazówki do nauki, któ
             "title": "Porównanie z koreańskimi spółgłoskami miękkimi, napiętymi i przydechowymi",
             "text": """
 Koreańskie spółgłoski zwarte i zwarto-szczelinowe tworzą opozycję trójczłonową: miękkie (lenis), napięte (fortis) i przydechowe (ㄱ/ㄲ/ㅋ, ㄷ/ㄸ/ㅌ, ㅂ/ㅃ/ㅍ, ㅈ/ㅉ/ㅊ). Miękkie są na początku wyrazu bezdźwięczne z lekkim przydechem, a między samogłoskami dźwięczne; napięte są bez przydechu, z napiętą krtanią; przydechowe mają silny przydech.
-Wietnamski nie ma takiej opozycji trójczłonowej. Jego spółgłoski zwarte różnią się przydechem (t / th) i dźwięcznością (đ, b). Poniższe porównania pomagają jedynie wyczuć te opozycje.
 ## đ / t / th oraz ㄷ / ㄸ / ㅌ
+- đ [ɗ]: dźwięczna spółgłoska implozywna, wiązadła głosowe drgają. Koreańskie ㄷ jest na początku wyrazu bezdźwięczne, więc wymówienie đ jak ㄷ daje inny dźwięk.
 - t [t]: bezdźwięczna i bez przydechu, więc osobom mówiącym po koreańsku brzmi podobnie do ㄸ, choć nie jest tak napięta jak ㄸ.
 - th [tʰ]: bezdźwięczna z przydechem, bliska ㅌ. To nie jest angielskie th [θ].
-- đ [ɗ]: dźwięczna spółgłoska implozywna, wiązadła głosowe drgają. Koreańskie ㄷ jest na początku wyrazu bezdźwięczne, więc wymówienie đ jak ㄷ daje inny dźwięk.
 ## g / c·k·q / kh oraz ㄱ / ㄲ / ㅋ
+- g·gh [ɣ]: dźwięczna szczelinowa. Sposobem artykulacji różni się od koreańskiego ㄱ.
 - c·k·q [k]: bezdźwięczna zwarta bez przydechu, dlatego brzmi podobnie do ㄲ.
 - kh [x]: nie zwarta, lecz bezdźwięczna szczelinowa, tworzona tylną częścią języka blisko podniebienia miękkiego (jak polskie ch). Nie jest „wybuchana” jak ㅋ [kʰ].
-- g·gh [ɣ]: dźwięczna szczelinowa. Sposobem artykulacji różni się od koreańskiego ㄱ.
 g / c / kh nie są więc trzema zwartymi tworzonymi w ten sam sposób, jak ㄱ/ㄲ/ㅋ, lecz dźwięczną szczelinową, zwartą bez przydechu i bezdźwięczną szczelinową.
 ## b / p oraz ㅂ / ㅃ / ㅍ
 - b [ɓ]: dźwięczna implozywna, jak đ.

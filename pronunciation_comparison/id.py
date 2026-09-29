@@ -11,7 +11,7 @@ SECTIONS = {
     "ko": {
         "title": "Bahasa Korea dan bahasa Vietnam",
         "common": """
-Kedua bahasa memisahkan suku kata dengan jelas dan menutup suku kata dengan konsonan tanpa letupan: 밥 [pap̚] dalam bahasa Korea dan đáp [ɗaːp̚] dalam bahasa Vietnam berakhir sama – bibir tertutup, tanpa hembusan udara. Jadi penutur Korea sudah menguasai bagian tersulit dari konsonan akhir bahasa Vietnam bagi kebanyakan pelajar.
+Kedua bahasa memisahkan suku kata dengan jelas dan menutup suku kata dengan konsonan tanpa letupan: 답 [taːp̚] (di awal kata, setelah bunyi tak bersuara, atau di akhir suku kata) / [daːp̚] (di antara bunyi bersuara: vokal, ㄴ, ㄹ, ㅁ, ㅇ) dalam bahasa Korea dan đáp [ɗaːp̚] dalam bahasa Vietnam berakhir sama – bibir tertutup, tanpa hembusan udara. Jadi penutur Korea sudah menguasai bagian tersulit dari konsonan akhir bahasa Vietnam bagi kebanyakan pelajar.
 - Konsonan akhir: tujuh bunyi akhir suku kata Korea [p̚ t̚ k̚ m n ŋ l] mencakup enam konsonan akhir Vietnam /p t k m n ŋ/ (ditulis p, t, c/ch, m, n, ng/nh).
 - /ŋ/: ㅇ di akhir (강) adalah ng akhir bahasa Vietnam; bahasa Vietnam juga memakainya di awal suku kata (ngà).
 - Aspirasi: ㅌ /tʰ/ dekat dengan th /tʰ/ Vietnam; t /t/ Vietnam yang tanpa aspirasi lebih dekat ke ㄸ yang tegang daripada ke ㄷ.
@@ -27,11 +27,10 @@ Kedua bahasa memisahkan suku kata dengan jelas dan menutup suku kata dengan kons
 - Vokal ơ [əː], â [ə] pendek, ă pendek, dan kontras e [ɛ] / ê [e] (ㅐ/ㅔ sudah menyatu bagi kebanyakan penutur).
 - Akhiran palatal -nh, -ch setelah i, ê, a, serta penutupan bibir di akhir ông [ʔəwŋ͡m], học [hawk͡p].
 ## B. Ada dalam bahasa Korea, tetapi tidak dalam bahasa Vietnam
-- Kontras tiga arah lunak/tegang/beraspirasi (ㄱ/ㄲ/ㅋ, ㅈ/ㅉ/ㅊ); bahasa Vietnam hanya punya kontras dua arah seperti t/th.
 - /l/ di akhir (말) dan pergantian [ɾ]~[l] pada ㄹ; tak ada suku kata Vietnam yang berakhir dengan l.
 - Perubahan bunyi antarsuku kata (nasalisasi 국물 → [궁물], perangkaian); dalam bahasa Vietnam setiap suku kata mempertahankan akhirannya.
 ## C. Mudah tertukar
-- t Vietnam bukan ㄷ: tanpa aspirasi, seperti ㄸ tetapi kurang tegang. th mirip ㅌ dan tidak pernah "th" Inggris.
+- t Vietnam dilafalkan seperti ㄸ, dan th Vietnam seperti ㅌ; bukan "th" Inggris.
 - ư [ɨ] lebih ke tengah daripada ㅡ; ơ [əː] lebih ke tengah dan lebih panjang daripada ㅓ [ʌ].
 - -c akhir setelah o, ô, u berakhir dengan bibir tertutup (học ≈ [hawk͡p]), bukan seperti 학.
 ## D. Sistem
@@ -393,15 +392,14 @@ Huruf Korea yang dicantumkan di samping (ㄱ, ㄲ, ㅋ, dan seterusnya) hanyalah
             "title": "Perbandingan dengan konsonan lenis, fortis, dan aspirat bahasa Korea",
             "text": """
 Konsonan hambat dan afrikat bahasa Korea membentuk oposisi tiga arah: lenis, fortis (tegang), dan aspirat (ㄱ/ㄲ/ㅋ, ㄷ/ㄸ/ㅌ, ㅂ/ㅃ/ㅍ, ㅈ/ㅉ/ㅊ). Konsonan lenis tak bersuara dengan sedikit hembusan di awal kata dan menjadi bersuara di antara vokal; fortis tidak beraspirasi dengan laring yang tegang; aspirat dilafalkan dengan hembusan kuat.
-Bahasa Vietnam tidak memiliki oposisi tiga arah seperti itu. Konsonan hambatnya dibedakan oleh aspirasi (t / th) dan oleh bersuara-tidaknya (đ, b). Perbandingan di bawah ini hanya membantu merasakan oposisi tersebut.
 ## đ / t / th dan ㄷ / ㄸ / ㅌ
+- đ [ɗ]: implosif bersuara, pita suara bergetar. ㄷ bahasa Korea tak bersuara di awal kata, jadi melafalkan đ sebagai ㄷ menghasilkan bunyi lain.
 - t [t]: tak bersuara dan tidak beraspirasi, sehingga bagi penutur bahasa Korea terdengar dekat dengan ㄸ, tetapi tidak setegang ㄸ.
 - th [tʰ]: tak bersuara dan beraspirasi, dekat dengan ㅌ. Bukan th bahasa Inggris [θ].
-- đ [ɗ]: implosif bersuara, pita suara bergetar. ㄷ bahasa Korea tak bersuara di awal kata, jadi melafalkan đ sebagai ㄷ menghasilkan bunyi lain.
 ## g / c·k·q / kh dan ㄱ / ㄲ / ㅋ
+- g·gh [ɣ]: frikatif bersuara. Cara artikulasinya berbeda dari ㄱ bahasa Korea.
 - c·k·q [k]: hambat tak bersuara tanpa aspirasi, sehingga terdengar dekat dengan ㄲ.
 - kh [x]: bukan konsonan hambat, melainkan frikatif tak bersuara yang dibentuk dengan pangkal lidah di dekat langit-langit lunak. Tidak dilepaskan seperti ㅋ [kʰ].
-- g·gh [ɣ]: frikatif bersuara. Cara artikulasinya berbeda dari ㄱ bahasa Korea.
 Jadi g / c / kh bukan tiga konsonan hambat yang dibentuk dengan cara yang sama seperti ㄱ/ㄲ/ㅋ, melainkan frikatif bersuara, hambat tanpa aspirasi, dan frikatif tak bersuara.
 ## b / p dan ㅂ / ㅃ / ㅍ
 - b [ɓ]: implosif bersuara, seperti đ.

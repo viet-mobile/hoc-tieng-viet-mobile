@@ -11,7 +11,7 @@ SECTIONS = {
     "ko": {
         "title": "Koreanisch und Vietnamesisch",
         "common": """
-Beide Sprachen trennen Silben deutlich und schließen Silben mit ungelösten Konsonanten ab: Koreanisch 밥 [pap̚] und vietnamesisch đáp [ɗaːp̚] enden gleich – die Lippen schließen sich, ohne Luftstoß. Koreanischsprachige beherrschen damit schon, was an vietnamesischen Auslauten für die meisten Lernenden am schwersten ist.
+Beide Sprachen trennen Silben deutlich und schließen Silben mit ungelösten Konsonanten ab: Koreanisch 답 [taːp̚] (am Wortanfang, nach stimmlosen Lauten oder am Silbenende) / [daːp̚] (zwischen stimmhaften Lauten: Vokalen, ㄴ, ㄹ, ㅁ, ㅇ) und vietnamesisch đáp [ɗaːp̚] enden gleich – die Lippen schließen sich, ohne Luftstoß. Koreanischsprachige beherrschen damit schon, was an vietnamesischen Auslauten für die meisten Lernenden am schwersten ist.
 - Auslaute: Die sieben koreanischen Silbenendlaute [p̚ t̚ k̚ m n ŋ l] umfassen sechs vietnamesische Auslaute /p t k m n ŋ/ (geschrieben p, t, c/ch, m, n, ng/nh).
 - /ŋ/: Auslautendes ㅇ (강) ist das vietnamesische ng am Silbenende; Vietnamesisch verwendet es auch am Silbenanfang (ngà).
 - Aspiration: ㅌ /tʰ/ entspricht etwa vietnamesischem th /tʰ/; das unbehauchte vietnamesische t /t/ liegt näher an gespanntem ㄸ als an ㄷ.
@@ -27,11 +27,10 @@ Beide Sprachen trennen Silben deutlich und schließen Silben mit ungelösten Kon
 - Die Vokale ơ [əː], kurzes â [ə], kurzes ă und der Kontrast e [ɛ] / ê [e] (ㅐ/ㅔ sind bei den meisten Sprechern zusammengefallen).
 - Palatale Auslaute -nh, -ch nach i, ê, a und Lippenschluss am Ende von ông [ʔəwŋ͡m], học [hawk͡p].
 ## B. Im Koreanischen, aber nicht im Vietnamesischen
-- Der dreifache Kontrast lenis/fortis/aspiriert (ㄱ/ㄲ/ㅋ, ㅈ/ㅉ/ㅊ); Vietnamesisch kennt nur zweifache Kontraste wie t/th.
 - Auslautendes /l/ (말) und der Wechsel [ɾ]~[l] bei ㄹ; keine vietnamesische Silbe endet auf l.
 - Lautveränderungen zwischen Silben (Nasalierung 국물 → [궁물], Bindung); im Vietnamesischen behält jede Silbe ihren eigenen Auslaut.
 ## C. Leicht zu verwechseln
-- Vietnamesisches t ist nicht ㄷ: ohne Behauchung, wie ㄸ, aber weniger gespannt. th ähnelt ㅌ und ist nie englisches „th“.
+- Vietnamesisches t wird wie ㄸ gesprochen, vietnamesisches th wie ㅌ; es ist nicht englisches „th“.
 - ư [ɨ] ist zentraler als ㅡ; ơ [əː] ist zentraler und länger als ㅓ [ʌ].
 - Auslautendes -c nach o, ô, u endet mit geschlossenen Lippen (học ≈ [hawk͡p]), nicht wie 학.
 ## D. System
@@ -393,15 +392,14 @@ Die daneben stehenden koreanischen Buchstaben (ㄱ, ㄲ, ㅋ usw.) sind Lernhilf
             "title": "Vergleich mit den koreanischen lenis, fortis und aspirierten Konsonanten",
             "text": """
 Koreanische Plosive und Affrikaten bilden einen dreifachen Gegensatz: lenis, fortis (gespannt) und aspiriert (ㄱ/ㄲ/ㅋ, ㄷ/ㄸ/ㅌ, ㅂ/ㅃ/ㅍ, ㅈ/ㅉ/ㅊ). Lenis-Laute sind am Wortanfang stimmlos mit leichter Behauchung und zwischen Vokalen stimmhaft; Fortis-Laute sind unbehaucht mit angespanntem Kehlkopf; aspirierte Laute sind stark behaucht.
-Das Vietnamesische kennt keinen solchen dreifachen Gegensatz. Seine Plosive unterscheiden sich durch Behauchung (t / th) und Stimmhaftigkeit (đ, b). Die folgenden Vergleiche helfen nur, ein Gefühl für die Gegensätze zu bekommen.
 ## đ / t / th und ㄷ / ㄸ / ㅌ
+- đ [ɗ]: ein stimmhafter Implosiv, die Stimmlippen schwingen. Koreanisches ㄷ ist am Wortanfang stimmlos; wer đ wie ㄷ ausspricht, erzeugt einen anderen Laut.
 - t [t]: stimmlos und unbehaucht, daher klingt es für Koreanischsprachige nah an ㄸ, ist aber nicht so gespannt wie ㄸ.
 - th [tʰ]: stimmlos und behaucht, nah an ㅌ. Es ist nicht das englische th [θ].
-- đ [ɗ]: ein stimmhafter Implosiv, die Stimmlippen schwingen. Koreanisches ㄷ ist am Wortanfang stimmlos; wer đ wie ㄷ ausspricht, erzeugt einen anderen Laut.
 ## g / c·k·q / kh und ㄱ / ㄲ / ㅋ
+- g·gh [ɣ]: ein stimmhafter Frikativ. Die Artikulationsart unterscheidet sich von koreanischem ㄱ.
 - c·k·q [k]: ein stimmloser, unbehauchter Plosiv, klingt daher nah an ㄲ.
 - kh [x]: kein Plosiv, sondern ein stimmloser Frikativ, gebildet mit dem Zungenrücken nahe am weichen Gaumen (wie das ch in „ach“). Er wird nicht wie ㅋ [kʰ] gesprengt.
-- g·gh [ɣ]: ein stimmhafter Frikativ. Die Artikulationsart unterscheidet sich von koreanischem ㄱ.
 g / c / kh sind also nicht drei auf dieselbe Weise gebildete Plosive wie ㄱ/ㄲ/ㅋ, sondern ein stimmhafter Frikativ, ein unbehauchter Plosiv und ein stimmloser Frikativ.
 ## b / p und ㅂ / ㅃ / ㅍ
 - b [ɓ]: ein stimmhafter Implosiv, wie đ.

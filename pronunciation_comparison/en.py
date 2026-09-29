@@ -11,7 +11,7 @@ SECTIONS = {
     "ko": {
         "title": "Korean and Vietnamese",
         "common": """
-Both languages build words from clearly separated syllables, and both end syllables with unreleased consonants: Korean 밥 [pap̚] and Vietnamese đáp [ɗaːp̚] close the same way, lips shut, no puff of air. Korean speakers therefore already control what is hardest about Vietnamese finals for most learners.
+Both languages build words from clearly separated syllables, and both end syllables with unreleased consonants: Korean 답 [taːp̚] (at the start of a word, after a voiceless sound, or at the end of a syllable) / [daːp̚] (between voiced sounds: vowels, ㄴ, ㄹ, ㅁ, ㅇ) and Vietnamese đáp [ɗaːp̚] close the same way, lips shut, no puff of air. Korean speakers therefore already control what is hardest about Vietnamese finals for most learners.
 - Finals: Korean's seven coda sounds [p̚ t̚ k̚ m n ŋ l] include six of the Vietnamese finals /p t k m n ŋ/ (written p, t, c/ch, m, n, ng/nh).
 - /ŋ/: Korean final ㅇ (강) is Vietnamese final ng. Vietnamese also puts it at the start of a syllable (ngà); the articulation is the same, only the position is new.
 - Aspiration: Korean ㅌ /tʰ/ is close to Vietnamese th /tʰ/, and Vietnamese t /t/ (no aspiration) is closer to tense ㄸ than to lax ㄷ.
@@ -27,11 +27,10 @@ Both languages build words from clearly separated syllables, and both end syllab
 - Vowels ơ [əː] and short â [ə], short ă, and the e [ɛ] / ê [e] contrast (Korean ㅐ/ㅔ have merged for most speakers).
 - Palatal finals -nh, -ch after i, ê, a, and lip closure at the end of ông [ʔəwŋ͡m], học [hawk͡p].
 ## B. In Korean but not in Vietnamese
-- The three-way lax/tense/aspirated contrast (ㄱ/ㄲ/ㅋ, ㅈ/ㅉ/ㅊ); Vietnamese has two-way contrasts such as t/th.
 - Final /l/ (말) and ㄹ alternating [ɾ]~[l]; no Vietnamese syllable ends in l.
 - Sound changes between syllables (nasalization 국물 → [궁물], linking of a final into the next syllable) do not happen in Vietnamese: each syllable keeps its own final.
 ## C. Easily confused
-- Vietnamese t is not ㄷ: no aspiration, like ㄸ but less tense. Vietnamese th is like ㅌ and never English "th".
+- Vietnamese t is pronounced like ㄸ, and Vietnamese th like ㅌ. It is not English "th".
 - ư [ɨ] is more central than ㅡ; ơ [əː] is more central and longer than ㅓ [ʌ].
 - Final -c after o, ô, u ends with the lips closed (học ≈ [hawk͡p]); it is not 학.
 ## D. System
@@ -393,15 +392,14 @@ The Korean letters (ㄱ, ㄲ, ㅋ and so on) given alongside are learning hints 
             "title": "Compared with Korean lax, tense and aspirated consonants",
             "text": """
 Korean stops and affricates contrast in three ways: lax, tense and aspirated (ㄱ/ㄲ/ㅋ, ㄷ/ㄸ/ㅌ, ㅂ/ㅃ/ㅍ, ㅈ/ㅉ/ㅊ). Lax consonants are voiceless with slight aspiration at the start of a word and voiced between vowels; tense consonants are unaspirated with a tense larynx; aspirated consonants have strong aspiration.
-Vietnamese has no such three-way contrast. Its stops are distinguished by aspiration (t / th) and by voicing (đ, b). The comparisons below only help you get a feel for the contrasts.
 ## đ / t / th and ㄷ / ㄸ / ㅌ
+- đ [ɗ]: a voiced implosive, with the vocal folds vibrating. Korean ㄷ is voiceless at the start of a word, so saying đ as ㄷ gives a different sound.
 - t [t]: voiceless and unaspirated, so to Korean speakers it sounds close to ㄸ, though it is not as tense as ㄸ.
 - th [tʰ]: voiceless and aspirated, close to ㅌ. It is not English th [θ].
-- đ [ɗ]: a voiced implosive, with the vocal folds vibrating. Korean ㄷ is voiceless at the start of a word, so saying đ as ㄷ gives a different sound.
 ## g / c·k·q / kh and ㄱ / ㄲ / ㅋ
+- g·gh [ɣ]: a voiced fricative. Its manner of articulation differs from Korean ㄱ.
 - c·k·q [k]: a voiceless unaspirated stop, so it sounds close to ㄲ.
 - kh [x]: not a stop but a voiceless fricative, made with the back of the tongue close to the soft palate. It is not released like ㅋ [kʰ].
-- g·gh [ɣ]: a voiced fricative. Its manner of articulation differs from Korean ㄱ.
 So g / c / kh are not three stops made the same way, like ㄱ/ㄲ/ㅋ, but a voiced fricative, an unaspirated stop and a voiceless fricative.
 ## b / p and ㅂ / ㅃ / ㅍ
 - b [ɓ]: a voiced implosive, like đ.

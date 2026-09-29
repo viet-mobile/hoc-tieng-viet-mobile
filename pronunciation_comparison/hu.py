@@ -11,7 +11,7 @@ SECTIONS = {
     "ko": {
         "title": "A koreai és a vietnami",
         "common": """
-Mindkét nyelv élesen elválasztja a szótagokat, és a szótagot felpattanás nélküli mássalhangzóval zárja: a koreai 밥 [pap̚] és a vietnami đáp [ɗaːp̚] ugyanúgy végződik – zárt ajakkal, kiáramló levegő nélkül. A koreaiak tehát már uralják azt, ami a vietnami szótagvégekben a legtöbb tanulónak a legnehezebb.
+Mindkét nyelv élesen elválasztja a szótagokat, és a szótagot felpattanás nélküli mássalhangzóval zárja: a koreai 답 [taːp̚] (szó elején, zöngétlen hang után vagy szótag végén) / [daːp̚] (zöngés hangok – magánhangzók, ㄴ, ㄹ, ㅁ, ㅇ – között) és a vietnami đáp [ɗaːp̚] ugyanúgy végződik – zárt ajakkal, kiáramló levegő nélkül. A koreaiak tehát már uralják azt, ami a vietnami szótagvégekben a legtöbb tanulónak a legnehezebb.
 - Szótagvégek: a hét koreai szótagvégi hang [p̚ t̚ k̚ m n ŋ l] közül hat megegyezik a vietnami /p t k m n ŋ/ szótagvégekkel (írásban p, t, c/ch, m, n, ng/nh).
 - /ŋ/: a szótagvégi ㅇ (강) a vietnami szótagvégi ng; a vietnami a szótag elején is használja (ngà).
 - Hehezet: a ㅌ /tʰ/ közel áll a vietnami th /tʰ/-hoz; a hehezet nélküli vietnami t /t/ a feszes ㄸ-hez közelebb áll, mint a ㄷ-hez.
@@ -27,11 +27,10 @@ Mindkét nyelv élesen elválasztja a szótagokat, és a szótagot felpattanás 
 - Az ơ [əː], a rövid â [ə], a rövid ă és az e [ɛ] / ê [e] szembenállás (a ㅐ/ㅔ a legtöbb beszélőnél egybeesett).
 - Az i, ê, a utáni palatális -nh, -ch szótagvég és az ajakzárás az ông [ʔəwŋ͡m], học [hawk͡p] végén.
 ## B. A koreaiban megvan, a vietnamiban nincs
-- A laza/feszes/hehezetes hármas szembenállás (ㄱ/ㄲ/ㅋ, ㅈ/ㅉ/ㅊ); a vietnamiban csak kettős szembenállás van, mint a t/th.
 - A szótagvégi /l/ (말) és a ㄹ [ɾ]~[l] váltakozása; vietnami szótag nem végződik l-re.
 - A szótagok közötti hangváltozások (orrhangúsodás 국물 → [궁물], átkötés); a vietnamiban minden szótag megtartja saját szótagvégét.
 ## C. Könnyen összetéveszthető
-- A vietnami t nem ㄷ: hehezet nélkül, mint a ㄸ, de kevésbé feszesen. A th a ㅌ-hez hasonlít, és sosem angol „th”.
+- A vietnami t-t úgy ejtjük, mint a ㄸ-t, a th-t pedig úgy, mint a ㅌ-t; nem angol „th”.
 - Az ư [ɨ] centrálisabb a ㅡ-nál; az ơ [əː] centrálisabb és hosszabb a ㅓ [ʌ]-nál.
 - Az o, ô, u utáni -c zárt ajakkal végződik (học ≈ [hawk͡p]), nem 학.
 ## D. Rendszer
@@ -393,15 +392,14 @@ A mellé írt koreai betűk (ㄱ, ㄲ, ㅋ stb.) csak tanulási segítségek, am
             "title": "Összevetés a koreai lágy, feszes és hehezetes mássalhangzókkal",
             "text": """
 A koreai zárhangok és zár-rés hangok hármas szembenállást alkotnak: lágy (lenis), feszes (fortis) és hehezetes (ㄱ/ㄲ/ㅋ, ㄷ/ㄸ/ㅌ, ㅂ/ㅃ/ㅍ, ㅈ/ㅉ/ㅊ). A lágyak szó elején zöngétlenek, enyhe hehezettel, magánhangzók között zöngések; a feszesek hehezet nélküliek, feszes gégével; a hehezetesek erős hehezettel ejtődnek.
-A vietnamiban nincs ilyen hármas szembenállás. Zárhangjait a hehezet (t / th) és a zöngésség (đ, b) különbözteti meg. Az alábbi összevetések csak abban segítenek, hogy ráérezzen a szembenállásokra.
 ## đ / t / th és ㄷ / ㄸ / ㅌ
+- đ [ɗ]: zöngés implozíva, a hangszalagok rezegnek. A koreai ㄷ szó elején zöngétlen, így ha a đ-t ㄷ-ként ejti, más hang jön létre.
 - t [t]: zöngétlen és hehezet nélküli, ezért a koreaiul beszélőknek a ㄸ-hez hasonlít, de nem olyan feszes, mint a ㄸ.
 - th [tʰ]: zöngétlen és hehezetes, közel áll a ㅌ-hez. Nem az angol th [θ].
-- đ [ɗ]: zöngés implozíva, a hangszalagok rezegnek. A koreai ㄷ szó elején zöngétlen, így ha a đ-t ㄷ-ként ejti, más hang jön létre.
 ## g / c·k·q / kh és ㄱ / ㄲ / ㅋ
+- g·gh [ɣ]: zöngés réshang. Képzésmódja eltér a koreai ㄱ-től.
 - c·k·q [k]: zöngétlen, hehezet nélküli zárhang, ezért a ㄲ-hez hasonlít.
 - kh [x]: nem zárhang, hanem zöngétlen réshang, amelyet a nyelvhát a lágy szájpadlás közelében képez. Nem pattan fel úgy, mint a ㅋ [kʰ].
-- g·gh [ɣ]: zöngés réshang. Képzésmódja eltér a koreai ㄱ-től.
 A g / c / kh tehát nem három, azonos módon képzett zárhang, mint a ㄱ/ㄲ/ㅋ, hanem egy zöngés réshang, egy hehezet nélküli zárhang és egy zöngétlen réshang.
 ## b / p és ㅂ / ㅃ / ㅍ
 - b [ɓ]: zöngés implozíva, mint a đ.
