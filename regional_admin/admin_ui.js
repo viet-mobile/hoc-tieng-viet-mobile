@@ -111,6 +111,7 @@ const STYLES = `
     }
     .tabs-nav {
       display: flex;
+      flex-wrap: wrap;
       gap: 6px;
       margin-bottom: 20px;
       border-bottom: 2px solid var(--border);
@@ -299,13 +300,32 @@ const STYLES = `
       padding: 4px 8px;
       font-size: 11px;
     }
+    .guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+    .guide-method { border: 1px solid var(--border); border-radius: 6px; padding: 12px; background: #FDFDFD; }
+    .guide-method h4 { font-size: 14px; margin-bottom: 4px; }
+    .guide-method p, .guide-unit p { font-size: 13px; color: var(--ink-soft); }
+    .guide-method ol, .guide-body ul { margin: 6px 0 0 18px; font-size: 13px; }
+    .guide-unit { border: 1px solid var(--border); border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .guide-unit summary { cursor: pointer; font-weight: 700; }
+    .guide-chip { display: inline-block; background: var(--primary-light); color: var(--primary); border-radius: 12px; padding: 2px 9px; font-size: 12px; font-weight: 700; margin: 2px 4px 2px 0; }
+    .guide-label { font-weight: 700; font-size: 12px; color: var(--ink-soft); margin-top: 8px; }
+    .guide-hint { background: #FFF8E6; border: 1px solid #FFE08A; border-radius: 6px; padding: 10px 12px; font-size: 13px; margin-bottom: 14px; }
 `;
+
+/** Per-region teacher's guide (teaching_guide.json), shared with the public [과정] build. */
+function loadTeachingGuide(regionId) {
+  try {
+    return require('./teaching_guide.json')[regionId] || null;
+  } catch (e) {
+    return null;
+  }
+}
 
 function renderAdminHtml(regionId, regionName, currentUser = null, csrfToken = '', nonce = '') {
   const badge = regionId === 'jeonju' ? '전주' : (regionId === 'ulsan' ? '울산' : regionId);
   const title = `2026-2027 ${regionName} 관리자`;
   const nonceAttr = nonce ? ` nonce="${escapeHtml(nonce)}"` : '';
-  const boot = safeJson({ regionId, regionName, csrfToken: csrfToken || '' });
+  const boot = safeJson({ regionId, regionName, csrfToken: csrfToken || '', guide: loadTeachingGuide(regionId) });
 
   return `<!DOCTYPE html>
 <html lang="ko">

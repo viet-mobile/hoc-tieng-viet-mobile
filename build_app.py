@@ -487,6 +487,24 @@ if os.path.exists(jw_extraction_data_path):
 else:
     jw_extraction_data = None
 
+def public_teaching_guide(region):
+    """Student-facing subset of regional_admin/teaching_guide.json: method labels and materials per unit."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "regional_admin", "teaching_guide.json")
+    with open(path, encoding="utf-8") as fh:
+        guide = json.load(fh).get(region)
+    if not guide:
+        return None
+    labels = {m["id"]: {"label": m["label"], "hint": m.get("studentHint", "")} for m in guide["methods"]}
+
+    def entry(u):
+        return {"methods": [labels[i] for i in u["methods"]], "materials": list(u["studentMaterials"])}
+
+    return {
+        "preliminary": entry(guide["preliminary"]) if guide.get("preliminary") else None,
+        "units": {str(u["unit"]): entry(u) for u in guide["units"]},
+    }
+
+
 def js_json(obj):
     return json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
@@ -840,6 +858,9 @@ def build_data_js(site):
             "cancellations": jeonju_data.JEONJU_CANCELLATIONS,
             "reschedules": jeonju_data.JEONJU_RESCHEDULES,
         }))
+        # Teaching methods + student materials per source unit (regional_admin/teaching_guide.json, the same
+        # file the /admin teacher's guide shows); students see only the method names and what to bring.
+        parts.append(emit("JEONJU_TEACHING_GUIDE", public_teaching_guide("jeonju")))
     elif site == "ulsan":
         import ulsan_data
         parts.append(emit("ULSAN_INFO", ulsan_data.ULSAN_INFO))

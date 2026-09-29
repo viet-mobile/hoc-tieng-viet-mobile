@@ -5777,6 +5777,30 @@
   var REGIONAL_READING_PLAN = {
     "8": { lff: [5, 6], lpd: [5, 6] }, "10": { lff: [8, 9], lpd: [8, 9] }
   };
+  // JEONJU: the day's teaching methods and what students bring, per source unit (regional_admin/teaching_guide.json,
+  // the same data the /admin teacher's guide shows). The content is Korean; only the two labels follow the UI language.
+  var COURSE_GUIDE_LABELS = {
+    methods: { ko: "오늘의 교수법", vi: "Phương pháp hôm nay", en: "Today's teaching methods", zh: "今日教學法", zh_cn: "今日教学法", ja: "今日の教授法",
+      de: "Heutige Lehrmethoden", fr: "Méthodes du jour", pl: "Dzisiejsze metody", cs: "Dnešní metody", hu: "Mai tanítási módszerek", id: "Metode hari ini" },
+    materials: { ko: "준비물", vi: "Cần mang theo", en: "What to bring", zh: "準備物品", zh_cn: "准备物品", ja: "持ち物",
+      de: "Mitbringen", fr: "À apporter", pl: "Co przynieść", cs: "Co si přinést", hu: "Hozd magaddal", id: "Yang perlu dibawa" }
+  };
+  function courseGuideEntry(unit) {
+    if (typeof JEONJU_TEACHING_GUIDE === "undefined" || !JEONJU_TEACHING_GUIDE) return null;
+    if (unit === "preliminary") return JEONJU_TEACHING_GUIDE.preliminary || null;
+    return (JEONJU_TEACHING_GUIDE.units || {})[String(unit)] || null;
+  }
+  function courseGuideHtml(unit) {
+    var g = courseGuideEntry(unit);
+    if (!g) return "";
+    var methods = (g.methods || []).map(function (m) {
+      return '<span class="curr-guide-chip">' + escapeHtml(m.label) + (m.hint ? '<span class="curr-guide-hint"> · ' + escapeHtml(m.hint) + '</span>' : '') + '</span>';
+    }).join("");
+    return '<div class="curr-guide">' +
+      (methods ? '<div class="curr-guide-row"><span class="curr-guide-label">' + escapeHtml(T(COURSE_GUIDE_LABELS.methods)) + '</span><div class="curr-guide-chips">' + methods + '</div></div>' : '') +
+      ((g.materials || []).length ? '<div class="curr-guide-row"><span class="curr-guide-label">' + escapeHtml(T(COURSE_GUIDE_LABELS.materials)) + '</span><span class="curr-guide-text">' + escapeHtml(g.materials.join(", ")) + '</span></div>' : '') +
+      '</div>';
+  }
   function courseReadingPlan(weekKey) {
     var key = String(weekKey);
     if (typeof REGIONAL_SCHEDULE !== "undefined" && REGIONAL_READING_PLAN[key]) return REGIONAL_READING_PLAN[key];
@@ -6407,7 +6431,7 @@ function verifyDistribution(units, dist, pins) {
       html += '<div class="group-card" data-open="' + (slot.session === 1 ? "true" : "false") + '" data-syl="s' + slot.session + '">' +
         '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " - " + sessionBadge(slot.session) + slotDateNote(slot)) + '</span>' +
         (notes.length ? '<span class="curr-week-note">' + escapeHtml(T(notes[0])) + '</span>' : '') + '</span>' + currChev() + '</button>' +
-        '<div class="group-body"><div class="curr-item-list">';
+        '<div class="group-body">' + (sess.units.length ? courseGuideHtml(sess.units[0]) : '') + '<div class="curr-item-list">';
       var rows = "";
       sess.learning.forEach(function (it) {
         if (readingLabels.indexOf((it.text || {}).ko) >= 0) return;
@@ -6584,6 +6608,8 @@ function verifyDistribution(units, dist, pins) {
       html += '</div>';
     }
 
+    html += courseGuideHtml("preliminary");
+
     // The first week's homework belongs at the bottom of the welcome card (if configured)
     if (!sched || sched.status !== "unconfigured") {
       var welcomeAssign = currAssignments.filter(function (a) { return a.week === 0; })[0] || null;
@@ -6625,14 +6651,14 @@ function verifyDistribution(units, dist, pins) {
               '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
               '</div></div></div>';
           } else {
-            var badgeText = slot.week === 16 ?
+            var badgeText = slot.week === 16 && !(courseGuideEntry(16) && !/총복습/.test((slot.title && (slot.title.ko || slot.title)) || "")) ?
               (slot.calculatedDate + " - " + TU("총복습")) :
               (slot.calculatedDate + " - " + weekBadge(slot.week) + slotDateNote(slot));
             html += '<div class="group-card" data-open="' + (slot.week === 1 ? "true" : "false") + '" data-syl="wk' + slot.week + '">' +
               '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(badgeText) + '</span>' +
               (slot.note ? '<span class="curr-week-note">' + escapeHtml(T(slot.note)) + '</span>' : '') + '</span>' +
               currChev() + '</button>' +
-              '<div class="group-body"><div class="curr-item-list">';
+              '<div class="group-body">' + courseGuideHtml(slot.week) + '<div class="curr-item-list">';
             var displayItems = curriculumDisplayItems({ week: slot.week, items: slot.items || [] });
             if (!displayItems || displayItems.length === 0) {
               html += '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div>';
