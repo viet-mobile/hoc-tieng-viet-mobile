@@ -216,6 +216,17 @@
   // back to returning the Korean unchanged, same "never breaks, just shows Korean until
   // translated" philosophy as T() above -- this lets translation coverage grow incrementally.
   var I18N_UI = {
+    "예비 모임": {"vi": "Buổi họp chuẩn bị", "cs": "Úvodní setkání", "zh_cn": "预备聚会", "zh": "預備聚會", "en": "Preliminary meeting", "fr": "Réunion préparatoire", "de": "Vorbereitendes Treffen", "hu": "Előkészítő találkozó", "id": "Pertemuan persiapan", "ja": "準備の集まり", "pl": "Spotkanie wstępne"},
+    "대역 읽기": {"vi": "Đọc song ngữ", "cs": "Dvojjazyčné čtení", "zh_cn": "对照阅读", "zh": "對照閱讀", "en": "Parallel reading", "fr": "Lecture bilingue", "de": "Zweisprachig lesen", "hu": "Kétnyelvű olvasás", "id": "Bacaan dwibahasa", "ja": "対訳リーディング", "pl": "Czytanie dwujęzyczne"},
+    "내 표현집": {"vi": "Sổ tay cụm từ", "cs": "Moje fráze", "zh_cn": "我的短语本", "zh": "我的短語本", "en": "My phrase book", "fr": "Mon carnet d’expressions", "de": "Mein Sprachführer", "hu": "Kifejezésfüzetem", "id": "Buku frasa saya", "ja": "マイ表現集", "pl": "Mój rozmówki"},
+    "표현집에 추가": {"vi": "Thêm vào sổ tay", "cs": "Přidat do frází", "zh_cn": "加入短语本", "zh": "加入短語本", "en": "Add to phrase book", "fr": "Ajouter au carnet", "de": "Zum Sprachführer hinzufügen", "hu": "Hozzáadás a füzethez", "id": "Tambahkan ke buku frasa", "ja": "表現集に追加", "pl": "Dodaj do rozmówek"},
+    "표현집에서 삭제": {"vi": "Xóa khỏi sổ tay", "cs": "Odebrat z frází", "zh_cn": "从短语本删除", "zh": "從短語本刪除", "en": "Remove from phrase book", "fr": "Retirer du carnet", "de": "Aus dem Sprachführer entfernen", "hu": "Törlés a füzetből", "id": "Hapus dari buku frasa", "ja": "表現集から削除", "pl": "Usuń z rozmówek"},
+    "베트남어 표현": {"vi": "Cụm từ tiếng Việt", "cs": "Vietnamská fráze", "zh_cn": "越南语表达", "zh": "越南語表達", "en": "Vietnamese phrase", "fr": "Expression en vietnamien", "de": "Vietnamesischer Ausdruck", "hu": "Vietnami kifejezés", "id": "Frasa bahasa Vietnam", "ja": "ベトナム語の表現", "pl": "Wyrażenie po wietnamsku"},
+    "뜻(선택)": {"vi": "Nghĩa (tùy chọn)", "cs": "Význam (nepovinné)", "zh_cn": "意思（可选）", "zh": "意思（可選）", "en": "Meaning (optional)", "fr": "Sens (facultatif)", "de": "Bedeutung (optional)", "hu": "Jelentés (nem kötelező)", "id": "Arti (opsional)", "ja": "意味（任意）", "pl": "Znaczenie (opcjonalnie)"},
+    "추가": {"vi": "Thêm", "cs": "Přidat", "zh_cn": "添加", "zh": "新增", "en": "Add", "fr": "Ajouter", "de": "Hinzufügen", "hu": "Hozzáadás", "id": "Tambah", "ja": "追加", "pl": "Dodaj"},
+    "저장한 표현이 없어요. ★를 누르거나 직접 추가하세요.": {"vi": "Chưa có cụm từ nào. Hãy bấm ★ hoặc tự thêm.", "cs": "Zatím žádné fráze. Klepněte na ★ nebo je přidejte sami.", "zh_cn": "还没有保存的短语。请点 ★ 或自行添加。", "zh": "還沒有儲存的短語。請點 ★ 或自行新增。", "en": "No saved phrases yet. Tap ★ or add your own.", "fr": "Aucune expression enregistrée. Touchez ★ ou ajoutez-en une.", "de": "Noch keine Ausdrücke gespeichert. Tippe auf ★ oder füge selbst welche hinzu.", "hu": "Még nincs mentett kifejezés. Koppints a ★-ra, vagy add hozzá magad.", "id": "Belum ada frasa tersimpan. Ketuk ★ atau tambahkan sendiri.", "ja": "保存した表現はまだありません。★を押すか自分で追加してください。", "pl": "Brak zapisanych wyrażeń. Stuknij ★ albo dodaj własne."},
+    "원문 문장과 뜻을 한 줄씩 대조해 읽어요. 전체 듣기를 틀고 음성과 동시에 소리 내어 읽으면 에코 리딩이 돼요.": {"vi": "Đọc từng dòng câu gốc cùng nghĩa. Bật Tất cả và đọc to cùng lúc với giọng đọc để luyện đọc đuổi.", "cs": "Čtěte řádek po řádku originál i význam. Pusťte Vše a čtěte nahlas současně s nahrávkou.", "zh_cn": "逐行对照原文与意思。播放全部并同时跟读，就是跟读练习。", "zh": "逐行對照原文與意思。播放全部並同時跟讀，就是跟讀練習。", "en": "Read the original and its meaning line by line. Play All and read aloud with the voice for echo reading.", "fr": "Lisez l’original et son sens ligne par ligne. Lancez Tout et lisez à voix haute en même temps que la voix.", "de": "Lies Original und Bedeutung Zeile für Zeile. Spiele Alles ab und lies gleichzeitig laut mit.", "hu": "Olvasd soronként az eredetit és a jelentését. Indítsd az Összes gombot, és olvass hangosan a hanggal együtt.", "id": "Baca teks asli dan artinya baris demi baris. Putar Semua dan baca keras bersamaan dengan suara.", "ja": "原文と意味を1行ずつ対照して読みます。すべて再生を流し、音声と同時に声に出して読むとエコーリーディングになります。", "pl": "Czytaj oryginał i znaczenie linijka po linijce. Włącz Wszystko i czytaj na głos razem z nagraniem."},
+    "★를 누른 문장과 직접 적은 표현이 이 기기에 저장돼요. 봉사에서 쓸 나만의 표현을 모으세요.": {"vi": "Câu đã bấm ★ và cụm từ bạn tự viết được lưu trên thiết bị này. Hãy gom những câu riêng để dùng trong thánh chức.", "cs": "Věty označené ★ a vlastní fráze se ukládají v tomto zařízení. Sbírejte si vlastní obraty pro službu.", "zh_cn": "点了 ★ 的句子和自己写的表达会保存在这台设备上。收集传道时要用的表达吧。", "zh": "點了 ★ 的句子和自己寫的表達會儲存在這台裝置上。收集傳道時要用的表達吧。", "en": "Sentences you starred and phrases you typed are saved on this device. Collect your own phrases for the ministry.", "fr": "Les phrases marquées ★ et vos expressions sont enregistrées sur cet appareil. Rassemblez vos propres expressions pour la prédication.", "de": "Mit ★ markierte Sätze und eigene Ausdrücke werden auf diesem Gerät gespeichert. Sammle deine eigenen Sätze für den Dienst.", "hu": "A ★-gal jelölt mondatok és a saját kifejezéseid ezen az eszközön tárolódnak. Gyűjtsd a szolgálatban használható kifejezéseidet.", "id": "Kalimat yang diberi ★ dan frasa yang Anda tulis disimpan di perangkat ini. Kumpulkan frasa Anda sendiri untuk pelayanan.", "ja": "★を付けた文と自分で書いた表現はこの端末に保存されます。奉仕で使う自分だけの表現を集めましょう。", "pl": "Zdania oznaczone ★ i własne wyrażenia zapisują się na tym urządzeniu. Zbieraj własne zwroty do służby."},
     "이전 곡": {"vi": "Bài trước", "cs": "Předchozí píseň", "zh_cn": "上一首", "zh": "上一首", "en": "Previous Song", "fr": "Chant précédent", "de": "Vorheriges Lied", "hu": "Előző ének", "id": "Lagu Sebelumnya", "ja": "前の曲", "pl": "Poprzednia pieśń"},
     "다음 곡": {"vi": "Bài tiếp", "cs": "Další píseň", "zh_cn": "下一首", "zh": "下一首", "en": "Next Song", "fr": "Chant suivant", "de": "Nächstes Lied", "hu": "Következő ének", "id": "Lagu Berikutnya", "ja": "次の曲", "pl": "Następna pieśń"},
     "방향 전환": {"vi": "Đổi chiều", "cs": "Změnit směr", "zh_cn": "切换方向", "zh": "切換方向", "en": "Switch Direction", "fr": "Inverser la direction", "de": "Richtung wechseln", "hu": "Irányváltás", "id": "Tukar Arah", "ja": "方向切替", "pl": "Zmień kierunek"},
@@ -3547,6 +3558,169 @@
       });
     }
   }
+  // ---- JEONJU: [문장] > [대역 읽기] (#3 echo reading) and [내 표현집] (#4 personal phrase book) ----
+  // 대역 읽기 shows the full bilingual texts already in the data (WATCHTOWER_FULL, ENJOY_LIFE_FOREVER,
+  // LOVE_PEOPLE_FULL): Vietnamese row + the UI-language row, one listen button per row, and 전체 듣기 for echo reading.
+  // 내 표현집 keeps phrases a student starred (☆ next to a listen button) or typed in, in this browser only.
+  var IS_JEONJU = window.SITE_PROFILE === "jeonju";
+  var READER_SOURCES = [
+    { id: "wt", label: "파수대", data: function () { return typeof WATCHTOWER_FULL !== "undefined" ? WATCHTOWER_FULL : null; } },
+    { id: "lff", label: "행복한 삶을 영원히", data: function () { return typeof ENJOY_LIFE_FOREVER !== "undefined" ? ENJOY_LIFE_FOREVER : null; } },
+    { id: "lpd", label: "사람들을 사랑하고 제자로", data: function () { return typeof LOVE_PEOPLE_FULL !== "undefined" ? LOVE_PEOPLE_FULL : null; } }
+  ];
+  var biReaderState = { source: "lff", unit: 0 };
+  function readerUnits(src) {
+    var d = src && src.data();
+    return (d && Array.isArray(d.units)) ? d.units.filter(function (u) { return u.rows && u.rows.length; }) : [];
+  }
+  function readerUnitLabel(src, u) {
+    var first = (u.rows[0] && (u.rows[0][currentLang] || u.rows[0].ko || u.rows[0].vi)) || "";
+    if (src.id === "wt") return first;
+    var title = (u.rows[1] && (u.rows[1][currentLang] || u.rows[1].ko)) || "";
+    return (u.labelKo && currentLang === "ko" ? u.labelKo : first) + (title ? " · " + title : "");
+  }
+  function renderBilingualReader() {
+    var root = document.getElementById("bilingual-reader-root");
+    if (!root) return;
+    var src = READER_SOURCES.filter(function (x) { return x.id === biReaderState.source; })[0] || READER_SOURCES[0];
+    var units = readerUnits(src);
+    if (biReaderState.unit >= units.length) biReaderState.unit = 0;
+    var html = '<div class="subtab-row reader-sources">' + READER_SOURCES.filter(function (x) { return readerUnits(x).length; }).map(function (x) {
+      return '<button type="button" class="subtab-btn" data-reader-source="' + x.id + '" aria-selected="' + (x.id === src.id) + '">' + escapeHtml(TU(x.label)) + '</button>';
+    }).join("") + '</div>';
+    if (!units.length) { root.innerHTML = html + '<div class="empty-state">' + escapeHtml(TU("자료 미정")) + '</div>'; bindReader(root); return; }
+    html += '<select class="reader-unit-select" aria-label="' + escapeAttr(TU("대역 읽기")) + '">' + units.map(function (u, i) {
+      return '<option value="' + i + '"' + (i === biReaderState.unit ? " selected" : "") + '>' + escapeHtml(readerUnitLabel(src, u)) + '</option>';
+    }).join("") + '</select>';
+    var unit = units[biReaderState.unit];
+    var pairs = unit.rows.filter(function (r) { return r.vi; }).map(function (r) {
+      return [r.vi, currentLang === "vi" ? "" : (r[currentLang] || "")];
+    });
+    html += '<div class="reader-toolbar">' + readAllButtonHtml(pairs.map(function (p) { return p[0]; })) + '</div><div class="reader-rows">';
+    pairs.forEach(function (p) {
+      html += '<div class="reader-row"><div class="reader-text"><div class="vn reader-vi">' + escapeHtml(p[0]) + '</div>' +
+        (p[1] ? '<div class="reader-tr">' + escapeHtml(p[1]) + '</div>' : '') + '</div>' +
+        '<button class="speak-btn" data-speak="' + escapeAttr(p[0]) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>';
+    });
+    html += '</div>';
+    root.innerHTML = html;
+    bindReader(root);
+  }
+  function bindReader(root) {
+    root.querySelectorAll("[data-reader-source]").forEach(function (b) {
+      b.addEventListener("click", function () { biReaderState = { source: b.dataset.readerSource, unit: 0 }; renderBilingualReader(); });
+    });
+    var sel = root.querySelector(".reader-unit-select");
+    if (sel) sel.addEventListener("change", function () { biReaderState.unit = Number(sel.value) || 0; renderBilingualReader(); });
+    root.querySelectorAll(".speak-btn[data-speak]").forEach(function (b) {
+      b.addEventListener("click", function (e) { e.stopPropagation(); speak(b.dataset.speak); });
+    });
+    decoratePhraseStars(root);
+  }
+
+  var PHRASE_KEY = "jeonju-phrasebook";
+  function loadPhrases() {
+    try { var v = JSON.parse(localStorage.getItem(PHRASE_KEY) || "[]"); return Array.isArray(v) ? v : []; } catch (e) { return []; }
+  }
+  function savePhrases(list) {
+    try { localStorage.setItem(PHRASE_KEY, JSON.stringify(list)); } catch (e) { /* storage unavailable: kept for this view only */ }
+  }
+  var phraseCache = null;
+  function phrases() { if (!phraseCache) phraseCache = loadPhrases(); return phraseCache; }
+  function hasPhrase(vi) { return phrases().some(function (p) { return p.vi === vi; }); }
+  function togglePhrase(vi, meaning) {
+    var list = phrases();
+    var i = -1;
+    list.forEach(function (p, k) { if (p.vi === vi) i = k; });
+    if (i >= 0) list.splice(i, 1); else list.unshift({ vi: vi, meaning: meaning || "", added: Date.now() });
+    savePhrases(list);
+  }
+  // A ☆ after every sentence-length listen button in [대화] and [문장] (Jeonju only).
+  function decoratePhraseStars(root) {
+    if (!IS_JEONJU || !root) return;
+    root.querySelectorAll(".speak-btn[data-speak]").forEach(function (b) {
+      var vi = b.dataset.speak || "";
+      if (vi.trim().split(/\s+/).length < 3 || b.closest("#phrasebook-root")) return;
+      var next = b.nextElementSibling;
+      if (next && next.classList.contains("phrase-star")) { next.dataset.on = String(hasPhrase(vi)); return; }
+      var star = document.createElement("button");
+      star.type = "button";
+      star.className = "phrase-star";
+      star.dataset.vi = vi;
+      star.dataset.on = String(hasPhrase(vi));
+      star.setAttribute("aria-label", TU("표현집에 추가"));
+      star.textContent = "★";
+      b.insertAdjacentElement("afterend", star);
+    });
+  }
+  if (IS_JEONJU) {
+    document.addEventListener("click", function (e) {
+      var star = e.target.closest && e.target.closest(".phrase-star");
+      if (!star) return;
+      e.preventDefault(); e.stopPropagation();
+      var row = star.closest(".reader-row, .curr-ex-row, .curr-item-row, li, p, div");
+      var tr = row && row.querySelector(".reader-tr, .kr, .meaning, .ko");
+      togglePhrase(star.dataset.vi, tr ? tr.textContent.trim().slice(0, 300) : "");
+      document.querySelectorAll('.phrase-star').forEach(function (s) { if (s.dataset.vi === star.dataset.vi) s.dataset.on = String(hasPhrase(s.dataset.vi)); });
+      renderPhrasebook();
+    }, true);
+    var starTimer = null;
+    var starObserver = new MutationObserver(function () {
+      if (starTimer) return;
+      starTimer = setTimeout(function () {
+        starTimer = null;
+        ["panel-sentence", "panel-wizard"].forEach(function (id) { decoratePhraseStars(document.getElementById(id)); });
+      }, 150);
+    });
+    ["panel-sentence", "panel-wizard"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) starObserver.observe(el, { childList: true, subtree: true });
+    });
+  }
+  function renderPhrasebook() {
+    var root = document.getElementById("phrasebook-root");
+    if (!root) return;
+    var list = phrases();
+    var html = '<form class="phrase-add"><input type="text" class="vn" name="vi" placeholder="' + escapeAttr(TU("베트남어 표현")) + '" maxlength="300" required>' +
+      '<input type="text" name="meaning" placeholder="' + escapeAttr(TU("뜻(선택)")) + '" maxlength="300">' +
+      '<button type="submit" class="curr-link-btn">' + escapeHtml(TU("추가")) + '</button></form>';
+    if (!list.length) html += '<div class="empty-state">' + escapeHtml(TU("저장한 표현이 없어요. ★를 누르거나 직접 추가하세요.")) + '</div>';
+    else {
+      html += '<div class="reader-toolbar">' + readAllButtonHtml(list.map(function (p) { return p.meaning ? [p.vi, p.meaning] : p.vi; })) + '</div><div class="reader-rows">';
+      list.forEach(function (p, i) {
+        html += '<div class="reader-row"><div class="reader-text"><div class="vn reader-vi">' + escapeHtml(p.vi) + '</div>' +
+          '<input type="text" class="phrase-meaning" data-i="' + i + '" value="' + escapeAttr(p.meaning || "") + '" placeholder="' + escapeAttr(TU("뜻(선택)")) + '" maxlength="300"></div>' +
+          '<button class="speak-btn" data-speak="' + escapeAttr(p.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+          '<button type="button" class="phrase-del" data-i="' + i + '" aria-label="' + escapeAttr(TU("표현집에서 삭제")) + '">✕</button></div>';
+      });
+      html += '</div>';
+    }
+    root.innerHTML = html;
+    root.querySelector(".phrase-add").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var vi = e.target.vi.value.trim();
+      if (!vi) return;
+      var l = phrases().filter(function (p) { return p.vi !== vi; });
+      l.unshift({ vi: vi, meaning: e.target.meaning.value.trim(), added: Date.now() });
+      phraseCache = l; savePhrases(l); renderPhrasebook();
+    });
+    root.querySelectorAll(".phrase-meaning").forEach(function (inp) {
+      inp.addEventListener("change", function () { var l = phrases(); if (l[+inp.dataset.i]) { l[+inp.dataset.i].meaning = inp.value.trim(); savePhrases(l); } });
+    });
+    root.querySelectorAll(".phrase-del").forEach(function (b) {
+      b.addEventListener("click", function () { var l = phrases(); l.splice(+b.dataset.i, 1); savePhrases(l); renderPhrasebook(); });
+    });
+    root.querySelectorAll(".speak-btn[data-speak]").forEach(function (b) {
+      b.addEventListener("click", function (e) { e.stopPropagation(); speak(b.dataset.speak); });
+    });
+  }
+  if (!IS_JEONJU) {
+    document.querySelectorAll('.subtab-btn[data-sentence="reader"], .subtab-btn[data-sentence="phrases"]').forEach(function (b) { b.remove(); });
+    ["sentence-reader-pane", "sentence-phrases-pane"].forEach(function (id) { var el = document.getElementById(id); if (el) el.remove(); });
+  } else {
+    onLangChange(function () { renderBilingualReader(); renderPhrasebook(); });
+  }
+
   renderGeneralPdf();
   onLangChange(renderGeneralPdf);
   (function () {
@@ -3556,7 +3730,9 @@
       lpd: document.getElementById("sentence-lpd-pane"),
       wt: document.getElementById("sentence-wt-pane"),
       song: document.getElementById("sentence-song-pane"),
-      prayer: document.getElementById("sentence-prayer-pane")
+      prayer: document.getElementById("sentence-prayer-pane"),
+      reader: document.getElementById("sentence-reader-pane"),
+      phrases: document.getElementById("sentence-phrases-pane")
     };
     var btns = document.querySelectorAll(".subtab-btn[data-sentence]");
     if (!btns.length) return;
@@ -3572,6 +3748,8 @@
         if (btn.dataset.sentence === "lff") renderCurrLff();
         if (btn.dataset.sentence === "song") renderCurrSongs();
         if (btn.dataset.sentence === "prayer") renderCurrPrayer();
+        if (btn.dataset.sentence === "reader") renderBilingualReader();
+        if (btn.dataset.sentence === "phrases") renderPhrasebook();
       });
     });
     renderCurrLff();
@@ -6609,6 +6787,18 @@ function verifyDistribution(units, dist, pins) {
     }
 
     html += courseGuideHtml("preliminary");
+    // JEONJU: the 10/3 preliminary meeting's own study items (CURR_WEEKS week 0), which otherwise only appear as homework.
+    if (sched && sched.preliminaryMeeting && courseGuideEntry("preliminary")) {
+      var week0 = (CURR_WEEKS || []).filter(function (w) { return w.week === 0; })[0];
+      if (week0 && week0.items && week0.items.length) {
+        html += '<div class="curr-item-list curr-prelim-list"><div class="curr-guide-label" style="margin:4px 0 2px;">' + escapeHtml(TU("예비 모임")) + '</div>';
+        curriculumDisplayItems({ week: 0, items: week0.items }).forEach(function (it) {
+          html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, 0)) +
+            (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') + '</div>' + currLinkBtn(curriculumLinkForWeek(it.link, 0)) + '</div>';
+        });
+        html += '</div>';
+      }
+    }
 
     // The first week's homework belongs at the bottom of the welcome card (if configured)
     if (!sched || sched.status !== "unconfigured") {

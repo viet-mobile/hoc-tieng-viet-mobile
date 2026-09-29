@@ -1144,6 +1144,20 @@
     background: var(--accent); border-radius: 999px 0 999px 0; padding: 3px 11px; flex: none;
     max-width: 100%; white-space: normal; line-height: 1.35;
   }
+  .reader-sources { margin-bottom: 8px; }
+  .reader-unit-select { width: 100%; max-width: 100%; border: 1.5px solid var(--border); border-radius: 10px; padding: 8px 10px; background: var(--surface); color: var(--ink); font-size: 0.86rem; margin-bottom: 8px; }
+  .reader-toolbar { display: flex; justify-content: flex-end; margin: 4px 0 8px; }
+  .reader-rows { display: flex; flex-direction: column; gap: 6px; }
+  .reader-row { display: flex; align-items: flex-start; gap: 6px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px; }
+  .reader-text { flex: 1; min-width: 0; }
+  .reader-vi { font-size: 0.95rem; line-height: 1.5; overflow-wrap: anywhere; }
+  .reader-tr { font-size: 0.82rem; color: var(--ink-soft); line-height: 1.5; margin-top: 2px; overflow-wrap: anywhere; }
+  .phrase-star { border: none; background: transparent; color: var(--ink-faint); font-size: 1rem; line-height: 1; padding: 4px; cursor: pointer; flex: none; }
+  .phrase-star[data-on="true"] { color: var(--warm); }
+  .phrase-add { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .phrase-add input { flex: 1 1 140px; min-width: 0; border: 1.5px solid var(--border); border-radius: 10px; padding: 8px 10px; background: var(--surface); color: var(--ink); font-size: 0.86rem; }
+  .phrase-meaning { width: 100%; border: none; border-bottom: 1px dashed var(--border); background: transparent; color: var(--ink-soft); font-size: 0.82rem; padding: 2px 0; margin-top: 2px; }
+  .phrase-del { border: none; background: transparent; color: var(--ink-faint); cursor: pointer; padding: 4px; flex: none; }
   .curr-guide { background: var(--accent-soft); border-radius: 10px; padding: 9px 11px; margin: 2px 0 10px; display: flex; flex-direction: column; gap: 6px; }
   .curr-guide-row { display: flex; gap: 8px; align-items: flex-start; font-size: 0.8rem; line-height: 1.5; }
   .curr-guide-label { flex: none; font-weight: 800; color: var(--accent); min-width: 5.5em; }
@@ -3441,6 +3455,8 @@
         <button class="subtab-btn" data-sentence="wt" aria-selected="false" data-i18n="파수대">파수대</button>
         <button class="subtab-btn" data-sentence="song" aria-selected="false" data-i18n="노래">노래</button>
         <button class="subtab-btn" data-sentence="prayer" aria-selected="false" data-i18n="기도">기도</button>
+        <button class="subtab-btn" data-sentence="reader" aria-selected="false" data-i18n="대역 읽기">대역 읽기</button>
+        <button class="subtab-btn" data-sentence="phrases" aria-selected="false" data-i18n="내 표현집">내 표현집</button>
       </div>
 
       <div id="sentence-pdf-pane" style="display:none"><div id="pdf-sentences-root"></div></div>
@@ -3473,6 +3489,16 @@
 
       <div id="sentence-prayer-pane" style="display:none">
         <div id="curr-prayer-root"></div>
+      </div>
+
+      <div id="sentence-reader-pane" style="display:none">
+        <div class="chain-note" data-i18n="원문 문장과 뜻을 한 줄씩 대조해 읽어요. 전체 듣기를 틀고 음성과 동시에 소리 내어 읽으면 에코 리딩이 돼요.">원문 문장과 뜻을 한 줄씩 대조해 읽어요. 전체 듣기를 틀고 음성과 동시에 소리 내어 읽으면 에코 리딩이 돼요.</div>
+        <div id="bilingual-reader-root"></div>
+      </div>
+
+      <div id="sentence-phrases-pane" style="display:none">
+        <div class="chain-note" data-i18n="★를 누른 문장과 직접 적은 표현이 이 기기에 저장돼요. 봉사에서 쓸 나만의 표현을 모으세요.">★를 누른 문장과 직접 적은 표현이 이 기기에 저장돼요. 봉사에서 쓸 나만의 표현을 모으세요.</div>
+        <div id="phrasebook-root"></div>
       </div>
     </section>
 
