@@ -5772,6 +5772,16 @@
     "10": { lff: 9, lpd: 9 }, "11": { lff: 10, lpd: 10 }, "12": { lff: 11, lpd: 11 }, "13": { lff: 12, lpd: 12 },
     "14": { lffReview: 1, lpdAppendix: "A" }
   };
+  // Regional sites (JEONJU, ULSAN) compute their own cancellations, so the JW course's break slots (-2.5, -3.5)
+  // never become sessions there and lessons 5 and 8 would silently drop out. They ride along with the next class.
+  var REGIONAL_READING_PLAN = {
+    "8": { lff: [5, 6], lpd: [5, 6] }, "10": { lff: [8, 9], lpd: [8, 9] }
+  };
+  function courseReadingPlan(weekKey) {
+    var key = String(weekKey);
+    if (typeof REGIONAL_SCHEDULE !== "undefined" && REGIONAL_READING_PLAN[key]) return REGIONAL_READING_PLAN[key];
+    return COURSE_READING_PLAN[key];
+  }
   // Reading-practice course items: "<publication> <lesson>: <lesson title>" in every UI language.
   // Publication names are the site's own labels for them (I18N_UI); lesson, part-review and
   // appendix titles come from the authoritative 12-language LFF_CONVERSATIONS / LPD_LESSONS.
@@ -5802,13 +5812,17 @@
     return out;
   }
   function courseReadingItems(weekKey) {
-    var plan = COURSE_READING_PLAN[String(weekKey)];
+    var plan = courseReadingPlan(weekKey);
     // GENERAL has neither publication pane, so there is nothing to link to.
     if (!plan || !document.querySelector('.subtab-btn[data-sentence="lff"]')) return [];
     var items = [];
-    if (plan.lff) items.push({ text: courseReadingText("lff", plan.lff), link: { tab: "sentence", subAttr: "sentence", subVal: "lff", anchor: "lff" + (plan.lff - 1) } });
+    [].concat(plan.lff || []).forEach(function (n) {
+      items.push({ text: courseReadingText("lff", n), link: { tab: "sentence", subAttr: "sentence", subVal: "lff", anchor: "lff" + (n - 1) } });
+    });
     if (plan.lffReview) items.push({ text: courseReadingText("lffReview", plan.lffReview), link: { tab: "sentence", subAttr: "sentence", subVal: "lff", anchor: "lff12" } });
-    if (plan.lpd) items.push({ text: courseReadingText("lpd", plan.lpd), link: { tab: "sentence", subAttr: "sentence", subVal: "lpd", anchor: "lpd" + (plan.lpd - 1) } });
+    [].concat(plan.lpd || []).forEach(function (n) {
+      items.push({ text: courseReadingText("lpd", n), link: { tab: "sentence", subAttr: "sentence", subVal: "lpd", anchor: "lpd" + (n - 1) } });
+    });
     if (plan.lpdAppendix) {
       var appendixIndex = { A: 12, B: 13, C: 14 }[plan.lpdAppendix];
       items.push({ text: courseReadingText("lpdAppendix", plan.lpdAppendix), link: { tab: "sentence", subAttr: "sentence", subVal: "lpd", anchor: "lpd" + appendixIndex } });
