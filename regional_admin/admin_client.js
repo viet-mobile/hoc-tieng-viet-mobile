@@ -146,6 +146,8 @@
     ['plan', 'SECTION D — 회차 배정'],
     ['audit', 'SECTION E — 변경 이력 & 복구']
   ];
+  var GUIDE = boot.guide || null;
+  if (GUIDE) TABS.push(['guide', 'SECTION F — 교사용 지도서']);
 
   function renderApp() {
     var nav = TABS.map(function (t) {
@@ -163,6 +165,56 @@
     else if (state.tab === 'curriculum') renderCurriculum(c);
     else if (state.tab === 'plan') renderPlan(c);
     else if (state.tab === 'audit') renderAudit(c);
+    else if (state.tab === 'guide') renderGuide(c);
+  }
+
+  /* ---------------- SECTION F: teacher's guide (read-only, teaching_guide.json) ---------------- */
+
+  function guideMethod(id) {
+    return ((GUIDE && GUIDE.methods) || []).filter(function (m) { return m.id === id; })[0] || null;
+  }
+  function guideChips(ids) {
+    return (ids || []).map(function (id) {
+      var m = guideMethod(id);
+      return '<span class="guide-chip">' + esc(m ? m.label : id) + '</span>';
+    }).join('');
+  }
+  function guideList(label, list) {
+    if (!list || !list.length) return '';
+    return '<div class="guide-label">' + esc(label) + '</div><ul>' + list.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
+  }
+  function guideUnitBody(u) {
+    return '<div class="guide-body"><div class="guide-label">적용할 교수법</div><div>' + guideChips(u.methods) + '</div>' +
+      guideList('수업 적용', u.notes) + guideList('교사 준비물', u.teacherPrep) + guideList('학생 준비물 (학생 [과정]에 표시)', u.studentMaterials) + '</div>';
+  }
+  function guideUnitFor(week) {
+    return ((GUIDE && GUIDE.units) || []).filter(function (u) { return u.unit === week; })[0] || null;
+  }
+  function renderGuide(c) {
+    var g = GUIDE;
+    var plan = '<table class="table"><thead><tr><th>시간</th><th>활동</th><th>교수법</th></tr></thead><tbody>' +
+      (g.lessonPlan || []).map(function (r) { return '<tr><td>' + esc(r.time) + '</td><td>' + esc(r.activity) + '</td><td>' + esc(r.method) + '</td></tr>'; }).join('') + '</tbody></table>';
+    var methods = '<div class="guide-grid">' + (g.methods || []).map(function (m) {
+      return '<div class="guide-method"><h4>' + esc(m.label) + ' <span style="font-weight:400;color:var(--ink-faint);font-size:12px;">' + esc(m.name) + '</span></h4><p>' + esc(m.summary) + '</p>' +
+        '<ol>' + (m.steps || []).map(function (st) { return '<li>' + esc(st) + '</li>'; }).join('') + '</ol></div>';
+    }).join('') + '</div>';
+    var principles = '<ul style="margin-left:18px;">' + (g.principles || []).map(function (p) {
+      return '<li style="margin-bottom:4px;"><b>' + esc(p.name) + '</b> — ' + esc(p.body) + '</li>';
+    }).join('') + '</ul>';
+    var pre = g.preliminary ? '<details class="guide-unit" open><summary>예비 모임 · ' + esc(g.preliminary.date) + ' · ' + esc(g.preliminary.theme) + '</summary>' + guideUnitBody(g.preliminary) + '</details>' : '';
+    var units = (g.units || []).map(function (u) {
+      return '<details class="guide-unit"' + (u.unit === state.week ? ' open' : '') + '><summary>' + u.unit + '주 · ' + esc(u.date) + ' · ' + esc(u.theme) + '</summary>' + guideUnitBody(u) + '</details>';
+    }).join('');
+    c.innerHTML =
+      '<div class="card"><div class="card-title">' + esc(g.title) + '</div>' +
+      '<p class="help-text" style="margin-bottom:12px;">출처: ' + esc(g.source) + '. 이 내용은 읽기 전용이며 코드(regional_admin/teaching_guide.json)에서 관리합니다. 각 주의 교수법과 학생 준비물은 학생용 [과정] 카드에도 표시됩니다.</p>' +
+      '<div class="guide-hint">날짜는 원래 계획 기준입니다. SECTION D에서 회차 배정이 바뀌면 원본 단위 번호로 맞춰 보세요.</div></div>' +
+      '<div class="card"><div class="card-title">주별 지도 계획</div>' + pre + units + '</div>' +
+      '<div class="card"><div class="card-title">2시간 표준 수업안</div>' + plan + '</div>' +
+      '<div class="card"><div class="card-title">교수법 요약 (교재 Method #1–#7)</div>' + methods + '</div>' +
+      '<div class="card"><div class="card-title">공통 원칙</div>' + principles + '</div>' +
+      '<div class="card"><div class="card-title">베트남어 조음 위치 (Basic Linguistics)</div><ul style="margin-left:18px;">' +
+      (g.linguistics || []).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div>';
   }
 
   function pendingBanner() {
@@ -428,6 +480,7 @@
     c.innerHTML =
       '<div class="card"><div class="card-title">원본 커리큘럼 단위 선택 (1 ~ 16)</div>' + nav +
       '<p class="help-text">여기는 전체 학습 분량(원본 커리큘럼)입니다. 실제 수업 회차 수와 무관하며, 일정이 바뀌어도 이 내용은 바뀌지 않습니다. 회차별 배정은 SECTION D에서 자동 계산됩니다.</p></div>' +
+      (guideUnitFor(state.week) ? '<div class="card"><div class="card-title">교사용 지도서 — ' + state.week + '주 <button type="button" class="btn move-btn" data-act="tab" data-tab="guide">전체 보기</button></div>' + guideUnitBody(guideUnitFor(state.week)) + '</div>' : '') +
       '<div class="card"><div class="card-title">원본 단위 ' + state.week + ' — 학습 자료 및 수행 과제 편집' + (state.dirty ? ' <span class="tag tag-cancel">저장 안 됨</span>' : '') + '</div>' +
       '<form id="week-form">' +
       '<div class="form-group"><label for="week-title">단위 제목</label><input type="text" id="week-title" class="form-control" data-f="title" maxlength="200" value="' + esc(e.title.ko) + '"></div>' +

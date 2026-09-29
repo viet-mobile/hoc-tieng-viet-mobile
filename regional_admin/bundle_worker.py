@@ -62,6 +62,11 @@ def bundle_regional_worker(region_id: str, region_name: str = None) -> str:
         defs.append(
             "  " + json.dumps(module_id) + ": function (module, exports, require) {\n" + source + "\n  },"
         )
+    # Teacher's guide data (also read by build_app.py for the public [과정]); a JSON module for require().
+    defs.append(
+        "  " + json.dumps("./teaching_guide.json") + ": function (module, exports, require) {\n"
+        "    module.exports = " + json.dumps(json.loads(_read("teaching_guide.json")), ensure_ascii=False) + ";\n  },"
+    )
     for module_id, filename in _STRING_MODULES:
         defs.append(
             "  " + json.dumps(module_id) + ": function (module, exports, require) {\n"
