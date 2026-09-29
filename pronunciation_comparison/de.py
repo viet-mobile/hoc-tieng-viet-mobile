@@ -411,12 +411,12 @@ g / c / kh sind also nicht drei auf dieselbe Weise gebildete Plosive wie ㄱ/ㄲ
             "id": "ph",
             "title": "ph – früher und heute",
             "text": """
-Im heutigen Vietnamesisch ist ph [f]: wie deutsches f ein stimmloser labiodentaler Frikativ, die oberen Zähne berühren leicht die Unterlippe (pha [fa] „aufgießen“, phở).
+Im heutigen Vietnamesisch ist ph [f]: wie deutsches f ein stimmloser labiodentaler Frikativ, die oberen Zähne berühren leicht die Unterlippe (pha [fa] „(Kaffee) zubereiten“, phở [fəː˧˩] „Reisnudelsuppe“).
 ph nicht wie koreanisches ㅍ sprengen. ㅍ ist ein aspirierter Plosiv [pʰ], bei dem sich die Lippen schließen und öffnen; ph [f] entsteht durch Reibung, ohne Lippenverschluss.
 ## Woher die Schreibung ph kommt
-Als Missionare im 17. Jahrhundert das Vietnamesische mit lateinischen Buchstaben schrieben, verwendeten sie ph, die Schreibung des griechischen φ, für einen vietnamesischen aspirierten Plosiv (ebenso th). Das damalige ph wird deshalb als Laut vom Typ [pʰ] gedeutet, also als Laut, der sich mit koreanischem ㅍ vergleichen lässt.
+Als Missionare im 17. Jahrhundert das Vietnamesische mit lateinischen Buchstaben schrieben, verwendeten sie ph, die Schreibung des griechischen φ, für einen vietnamesischen aspirierten Plosiv (ebenso th). Das damalige ph war deshalb offenbar ein Laut vom Typ [pʰ], ähnlich dem koreanischen ㅍ.
 Später wurde dieser Laut zum Frikativ [f]. Das auf dieselbe Weise geschriebene th ist bis heute der aspirierte Plosiv [tʰ].
-Noch weiter zurück haben die Laute, die zu ph führten, mehr als einen Ursprung: Alte behauchte Laute einheimischer Wörter und Labiale sinovietnamesischer Wörter gelangten wohl auf verschiedenen Wegen zum heutigen [f]. Dass der alte Lautwert genau dem koreanischen ㅍ entsprach, lässt sich nicht behaupten.
+Noch weiter zurück haben die Laute, die zu ph führten, mehr als einen Ursprung: Alte behauchte Laute einheimischer Wörter und Labiale sinovietnamesischer Wörter gelangten wohl auf verschiedenen Wegen zum heutigen [f].
 - ph früher: Typ [pʰ], vergleichbar mit koreanischem ㅍ.
 - ph heute: [f], nicht koreanisches ㅍ.
 """,
@@ -425,39 +425,11 @@ Noch weiter zurück haben die Laute, die zu ph führten, mehr als einen Ursprung
             "id": "palatal",
             "title": "ㅈ / ㅉ / ㅊ und vietnamesische Konsonanten",
             "text": """
-Koreanisches ㅈ/ㅉ/ㅊ [tɕ t͈ɕ tɕʰ] sind Affrikaten im Gegensatz lenis – fortis – aspiriert. Vergleichbar sind im Vietnamesischen die Schreibungen ch, tr, d und gi, doch ihre Gegensätze funktionieren anders.
+Koreanisches ㅈ/ㅉ/ㅊ [tɕ / t͈ɕ / tɕʰ] sind Affrikaten im Gegensatz lenis – fortis – aspiriert. Vergleichbar sind im Vietnamesischen die Schreibungen d, gi / ch, tr, doch ihre Gegensätze funktionieren anders.
+- d·gi: in Hanoi der stimmhafte Frikativ [z], im Süden der Halbvokal [j] (ähnlich dem deutschen j). Es sind keine Affrikaten, daher unterscheidet sich die Artikulationsart von koreanischem ㅈ.
 - ch [c]~[tɕ]: unbehaucht, daher für Koreanischsprachige nah an ㅉ. Viele Sprecher in Hanoi sprechen es als Affrikate [tɕ]; traditionelle Beschreibungen schreiben den palatalen Plosiv [c].
 - tr: in Hanoi derselbe Laut wie ch; in der traditionellen Aussprache Zentral- und Südvietnams [ʈ], mit weiter hinten angehobener Zunge (siehe „ch und tr nach Region“ unten).
-- d·gi: in Hanoi der stimmhafte Frikativ [z], im Süden der Halbvokal [j] (ähnlich dem deutschen j). Es sind keine Affrikaten, daher unterscheidet sich die Artikulationsart von koreanischem ㅈ.
 Vietnamesisches ch und tr werden als grundsätzlich unbehaucht beschrieben, und es gibt keine behauchte Affrikate als Gegenstück. Eine eigene Reihe, die genau koreanischem ㅊ [tɕʰ] entspricht, gibt es also nicht. Wer d·gi als ㅈ und ch als ㅉ lernt, übersieht zudem leicht die Unterschiede in Stimmhaftigkeit und Artikulationsart.
-""",
-        },
-        {
-            "id": "sx",
-            "title": "s und x nach Region",
-            "text": """
-Die Schreibungen s und x standen im traditionellen Lautsystem für verschiedene Laute; heute werden sie in manchen Regionen unterschieden, in anderen sind sie zusammengefallen.
-""",
-            "cards": [
-                {"title": "Norden — Raum Hanoi", "rows": [
-                    ["north", "Gegensatz", "In der heutigen Umgangssprache weitgehend zusammengefallen (neutralisiert)."],
-                    ["north", "Aussprache", "s und x sind beide [s]. Sie werden verschieden geschrieben, klingen aber gleich oder sehr ähnlich. Manche Sprecher unterscheiden sie beim sorgfältigen Lesen nach der Schrift; dass alle sie immer völlig gleich aussprechen, lässt sich daher nicht sagen."],
-                ]},
-                {"title": "Zentrum und Süden", "rows": [
-                    ["south", "Gegensatz", "In vielen Gegenden erhalten."],
-                    ["south", "Aussprache", "x ist [s], s ist [ʂ] mit weiter hinten liegender Zunge (manche Quellen schreiben [ʃ]). Viele Sprecher, etwa jüngere in Ho-Chi-Minh-Stadt, sprechen aber auch s als [s], sodass beide zusammenfallen; auch innerhalb der Regionen gibt es Unterschiede."],
-                ]},
-            ],
-            "examples": [
-                {"word": "sinh", "mean": "geboren werden", "note": "Hanoi [s] · Huế, Saigon [ʂ]~[s]"},
-                {"word": "xinh", "mean": "hübsch", "note": "Hanoi [s] · Huế, Saigon [s]"},
-            ],
-            "after": """
-## Vergleich mit koreanischem ㅅ / ㅆ
-- Koreanisches ㅅ/ㅆ sind zwei Frikative im Gegensatz lenis – fortis. Vietnamesisches s/x wird in der Schrift und im traditionellen System ebenfalls unterschieden; die Gewohnheit, zwei getrennte Laute zu lernen, lässt sich also ähnlich nutzen.
-- Aber nicht eins zu eins als „s = ㅆ, x = ㅅ“ lernen. Wo s und x unterschieden werden, liegt der Unterschied nicht in der Gespanntheit wie im Koreanischen, sondern in der Zungenstellung ([ʂ] gegenüber [s]).
-- In Hanoi sind s und x beide [s]; Koreanischsprachigen können daher beide wie ein kräftiges ㅅ, also nah an ㅆ, klingen. Das ist nur eine Hörhilfe.
-- In Zentral- und Südvietnam können sie unterschieden werden – also nicht annehmen, dass vietnamesisches s und x immer derselbe Laut sind.
 """,
         },
         {
@@ -494,6 +466,34 @@ Viele Sprecher, auch jüngere in Ho-Chi-Minh-Stadt, sprechen tr jedoch wie ch al
 - Koreanisches ㅈ/ㅉ/ㅊ bildet den Gegensatz lenis – fortis – aspiriert, vietnamesisches ch/tr unterscheidet sich im Süden durch die Zungenstellung (Artikulationsort) und ist im Norden zusammengefallen – es sind verschiedene Systeme.
 - Im Norden sind ch und tr derselbe Laut; die Schreibung muss daher für jedes Wort einzeln gelernt werden.
 - Beim Lernen der südlichen Aussprache auf den Unterschied im Artikulationsort achten: Bei tr wird die Zunge weiter hinten angehoben.
+""",
+        },
+        {
+            "id": "sx",
+            "title": "s und x nach Region",
+            "text": """
+Die Schreibungen s und x standen im traditionellen Lautsystem für verschiedene Laute; heute werden sie in manchen Regionen unterschieden, in anderen sind sie zusammengefallen.
+""",
+            "cards": [
+                {"title": "Norden — Raum Hanoi", "rows": [
+                    ["north", "Gegensatz", "In der heutigen Umgangssprache weitgehend zusammengefallen (neutralisiert)."],
+                    ["north", "Aussprache", "s und x sind beide [s]. Sie werden verschieden geschrieben, klingen aber gleich oder sehr ähnlich. Manche Sprecher unterscheiden sie beim sorgfältigen Lesen nach der Schrift; dass alle sie immer völlig gleich aussprechen, lässt sich daher nicht sagen."],
+                ]},
+                {"title": "Zentrum und Süden", "rows": [
+                    ["south", "Gegensatz", "In vielen Gegenden erhalten."],
+                    ["south", "Aussprache", "x ist [s], s ist [ʂ] mit weiter hinten liegender Zunge (manche Quellen schreiben [ʃ]). Viele Sprecher, etwa jüngere in Ho-Chi-Minh-Stadt, sprechen aber auch s als [s], sodass beide zusammenfallen; auch innerhalb der Regionen gibt es Unterschiede."],
+                ]},
+            ],
+            "examples": [
+                {"word": "sinh", "mean": "geboren werden", "note": "Hanoi [s] · Huế, Saigon [ʂ]~[s]"},
+                {"word": "xinh", "mean": "hübsch", "note": "Hanoi [s] · Huế, Saigon [s]"},
+            ],
+            "after": """
+## Vergleich mit koreanischem ㅅ / ㅆ
+- Koreanisches ㅅ/ㅆ sind zwei Frikative im Gegensatz lenis – fortis. Vietnamesisches s/x wird in der Schrift und im traditionellen System ebenfalls unterschieden; die Gewohnheit, zwei getrennte Laute zu lernen, lässt sich also ähnlich nutzen.
+- Aber nicht eins zu eins als „s = ㅆ, x = ㅅ“ lernen. Wo s und x unterschieden werden, liegt der Unterschied nicht in der Gespanntheit wie im Koreanischen, sondern in der Zungenstellung ([ʂ] gegenüber [s]).
+- In Hanoi sind s und x beide [s]; Koreanischsprachigen können daher beide wie ein kräftiges ㅅ, also nah an ㅆ, klingen. Das ist nur eine Hörhilfe.
+- In Zentral- und Südvietnam können sie unterschieden werden – also nicht annehmen, dass vietnamesisches s und x immer derselbe Laut sind.
 """,
         },
     ],

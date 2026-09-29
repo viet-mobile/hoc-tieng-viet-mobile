@@ -411,12 +411,12 @@ g / c / kh nie są więc trzema zwartymi tworzonymi w ten sam sposób, jak ㄱ/�
             "id": "ph",
             "title": "ph dawniej i dziś",
             "text": """
-We współczesnym wietnamskim ph to [f]: jak polskie f, bezdźwięczna spółgłoska wargowo-zębowa szczelinowa, górne zęby lekko dotykają dolnej wargi (pha [fa] „zaparzać”, phở).
+We współczesnym wietnamskim ph to [f]: jak polskie f, bezdźwięczna spółgłoska wargowo-zębowa szczelinowa, górne zęby lekko dotykają dolnej wargi (pha [fa] „przyrządzać (kawę)”, phở [fəː˧˩] „zupa z makaronem ryżowym”).
 Nie wymawiać ph „wybuchowo” jak koreańskie ㅍ. ㅍ to zwarta przydechowa [pʰ], przy której wargi się zamykają i otwierają; ph [f] powstaje przez tarcie, bez zamykania warg.
 ## Skąd pochodzi pisownia ph
-Gdy misjonarze w XVII wieku zapisywali wietnamski alfabetem łacińskim, użyli ph, którym zapisywano greckie φ, do oznaczenia wietnamskiej zwartej przydechowej (podobnie th). Ówczesne ph interpretuje się więc jako dźwięk typu [pʰ], czyli dźwięk porównywalny z koreańskim ㅍ.
+Gdy misjonarze w XVII wieku zapisywali wietnamski alfabetem łacińskim, użyli ph, którym zapisywano greckie φ, do oznaczenia wietnamskiej zwartej przydechowej (podobnie th). Ówczesne ph było więc najwyraźniej dźwiękiem typu [pʰ], podobnym do koreańskiego ㅍ.
 Później dźwięk ten zmienił się w szczelinową [f]. Zapisywane w ten sam sposób th do dziś pozostaje zwartą przydechową [tʰ].
-Sięgając jeszcze dalej, dźwięki, które doprowadziły do ph, nie mają jednego źródła: dawne spółgłoski przydechowe wyrazów rodzimych i spółgłoski wargowe wyrazów chińsko-wietnamskich doszły do dzisiejszego [f] prawdopodobnie różnymi drogami. Nie można twierdzić, że dawna wartość była dokładnie taka jak koreańskie ㅍ.
+Sięgając jeszcze dalej, dźwięki, które doprowadziły do ph, nie mają jednego źródła: dawne spółgłoski przydechowe wyrazów rodzimych i spółgłoski wargowe wyrazów chińsko-wietnamskich doszły do dzisiejszego [f] prawdopodobnie różnymi drogami.
 - ph dawniej: typu [pʰ], porównywalne z koreańskim ㅍ.
 - ph dziś: [f], nie koreańskie ㅍ.
 """,
@@ -425,39 +425,11 @@ Sięgając jeszcze dalej, dźwięki, które doprowadziły do ph, nie mają jedne
             "id": "palatal",
             "title": "ㅈ / ㅉ / ㅊ a spółgłoski wietnamskie",
             "text": """
-Koreańskie ㅈ/ㅉ/ㅊ [tɕ t͈ɕ tɕʰ] to spółgłoski zwarto-szczelinowe w opozycji miękka – napięta – przydechowa. W wietnamskim można je porównać z pisownią ch, tr, d i gi, ale ich opozycje działają inaczej.
+Koreańskie ㅈ/ㅉ/ㅊ [tɕ / t͈ɕ / tɕʰ] to spółgłoski zwarto-szczelinowe w opozycji miękka – napięta – przydechowa. W wietnamskim można je porównać z pisownią d, gi / ch, tr, ale ich opozycje działają inaczej.
+- d·gi: w Hanoi dźwięczna szczelinowa [z], na południu półsamogłoska [j] (jak polskie j). Nie są to spółgłoski zwarto-szczelinowe, więc sposobem artykulacji różnią się od koreańskiego ㅈ.
 - ch [c]~[tɕ]: bez przydechu, dlatego osobom mówiącym po koreańsku brzmi podobnie do ㅉ. Wiele osób w Hanoi wymawia je jako zwarto-szczelinową [tɕ] (podobną do polskiego ć); tradycyjne opisy zapisują zwartą palatalną [c].
 - tr: w Hanoi ten sam dźwięk co ch; w tradycyjnej wymowie środkowej i południowej [ʈ], z językiem uniesionym dalej w tył (zob. „ch i tr według regionów” poniżej).
-- d·gi: w Hanoi dźwięczna szczelinowa [z], na południu półsamogłoska [j] (jak polskie j). Nie są to spółgłoski zwarto-szczelinowe, więc sposobem artykulacji różnią się od koreańskiego ㅈ.
 Wietnamskie ch i tr opisuje się jako zasadniczo bezprzydechowe i nie mają przydechowego odpowiednika zwarto-szczelinowego. Nie ma więc osobnego szeregu, który dokładnie odpowiadałby koreańskiemu ㅊ [tɕʰ]. Zapamiętywanie d·gi jako ㅈ, a ch jako ㅉ łatwo też prowadzi do przeoczenia różnic w dźwięczności i sposobie artykulacji.
-""",
-        },
-        {
-            "id": "sx",
-            "title": "s i x według regionów",
-            "text": """
-Litery s i x oznaczały w tradycyjnym systemie dźwiękowym różne dźwięki; dziś w niektórych regionach się je rozróżnia, w innych zlały się w jeden.
-""",
-            "cards": [
-                {"title": "Północ — okolice Hanoi", "rows": [
-                    ["north", "Opozycja", "We współczesnej mowie potocznej w dużej mierze zanikła (neutralizacja)."],
-                    ["north", "Wymowa", "s i x to oba [s]. Zapisuje się je inaczej, ale brzmią tak samo lub bardzo podobnie. Niektórzy rozróżniają je przy starannym czytaniu zgodnie z pisownią, dlatego nie można twierdzić, że wszyscy zawsze wymawiają je identycznie."],
-                ]},
-                {"title": "Środek i południe", "rows": [
-                    ["south", "Opozycja", "W wielu regionach zachowana."],
-                    ["south", "Wymowa", "x to [s], s to [ʂ] z językiem dalej w tył (niektóre źródła zapisują [ʃ]; podobne do polskiego sz). Wiele osób, np. młodsze pokolenie w Ho Chi Minh, wymawia jednak także s jako [s], przez co oba dźwięki się zlewają; różnice istnieją też wewnątrz regionów."],
-                ]},
-            ],
-            "examples": [
-                {"word": "sinh", "mean": "rodzić się", "note": "Hanoi [s] · Huế, Sajgon [ʂ]~[s]"},
-                {"word": "xinh", "mean": "ładny", "note": "Hanoi [s] · Huế, Sajgon [s]"},
-            ],
-            "after": """
-## Porównanie z koreańskim ㅅ / ㅆ
-- Koreańskie ㅅ/ㅆ to dwie spółgłoski szczelinowe w opozycji miękka – napięta. Wietnamskie s/x także są rozróżniane w pisowni i w tradycyjnym systemie, więc nawyk uczenia się dwóch osobnych dźwięków można wykorzystać podobnie.
-- Nie uczyć się ich jednak jeden do jednego jako „s = ㅆ, x = ㅅ”. Tam, gdzie s i x są rozróżniane, różnica nie polega na napięciu jak w koreańskim, lecz na położeniu języka ([ʂ] wobec [s]).
-- W Hanoi s i x to oba [s], więc osobom mówiącym po koreańsku oba mogą brzmieć jak mocne ㅅ, czyli podobnie do ㅆ. To tylko wskazówka przy słuchaniu.
-- W środkowym i południowym Wietnamie mogą być rozróżniane, więc nie należy zakładać, że wietnamskie s i x to zawsze ten sam dźwięk.
 """,
         },
         {
@@ -494,6 +466,34 @@ Wiele osób, w tym młodsze pokolenie w Ho Chi Minh, wymawia jednak tr tak jak c
 - Koreańskie ㅈ/ㅉ/ㅊ tworzą opozycję miękka – napięta – przydechowa, a wietnamskie ch/tr różnią się na południu położeniem języka (miejscem artykulacji), na północy zaś się zlały – to dwa różne systemy.
 - Na północy ch i tr to ten sam dźwięk, więc pisowni każdego wyrazu trzeba uczyć się osobno.
 - Ucząc się wymowy południowej, zwracać uwagę na różnicę miejsca artykulacji: przy tr język unosi się dalej w tył.
+""",
+        },
+        {
+            "id": "sx",
+            "title": "s i x według regionów",
+            "text": """
+Litery s i x oznaczały w tradycyjnym systemie dźwiękowym różne dźwięki; dziś w niektórych regionach się je rozróżnia, w innych zlały się w jeden.
+""",
+            "cards": [
+                {"title": "Północ — okolice Hanoi", "rows": [
+                    ["north", "Opozycja", "We współczesnej mowie potocznej w dużej mierze zanikła (neutralizacja)."],
+                    ["north", "Wymowa", "s i x to oba [s]. Zapisuje się je inaczej, ale brzmią tak samo lub bardzo podobnie. Niektórzy rozróżniają je przy starannym czytaniu zgodnie z pisownią, dlatego nie można twierdzić, że wszyscy zawsze wymawiają je identycznie."],
+                ]},
+                {"title": "Środek i południe", "rows": [
+                    ["south", "Opozycja", "W wielu regionach zachowana."],
+                    ["south", "Wymowa", "x to [s], s to [ʂ] z językiem dalej w tył (niektóre źródła zapisują [ʃ]; podobne do polskiego sz). Wiele osób, np. młodsze pokolenie w Ho Chi Minh, wymawia jednak także s jako [s], przez co oba dźwięki się zlewają; różnice istnieją też wewnątrz regionów."],
+                ]},
+            ],
+            "examples": [
+                {"word": "sinh", "mean": "rodzić się", "note": "Hanoi [s] · Huế, Sajgon [ʂ]~[s]"},
+                {"word": "xinh", "mean": "ładny", "note": "Hanoi [s] · Huế, Sajgon [s]"},
+            ],
+            "after": """
+## Porównanie z koreańskim ㅅ / ㅆ
+- Koreańskie ㅅ/ㅆ to dwie spółgłoski szczelinowe w opozycji miękka – napięta. Wietnamskie s/x także są rozróżniane w pisowni i w tradycyjnym systemie, więc nawyk uczenia się dwóch osobnych dźwięków można wykorzystać podobnie.
+- Nie uczyć się ich jednak jeden do jednego jako „s = ㅆ, x = ㅅ”. Tam, gdzie s i x są rozróżniane, różnica nie polega na napięciu jak w koreańskim, lecz na położeniu języka ([ʂ] wobec [s]).
+- W Hanoi s i x to oba [s], więc osobom mówiącym po koreańsku oba mogą brzmieć jak mocne ㅅ, czyli podobnie do ㅆ. To tylko wskazówka przy słuchaniu.
+- W środkowym i południowym Wietnamie mogą być rozróżniane, więc nie należy zakładać, że wietnamskie s i x to zawsze ten sam dźwięk.
 """,
         },
     ],

@@ -411,12 +411,12 @@ A g / c / kh tehát nem három, azonos módon képzett zárhang, mint a ㄱ/ㄲ/
             "id": "ph",
             "title": "A ph régen és ma",
             "text": """
-A mai vietnamiban a ph [f]: a magyar f-hez hasonlóan zöngétlen ajak-fog réshang, a felső fogak enyhén érintik az alsó ajkat (pha [fa] 'forrázni (teát)', phở).
+A mai vietnamiban a ph [f]: a magyar f-hez hasonlóan zöngétlen ajak-fog réshang, a felső fogak enyhén érintik az alsó ajkat (pha [fa] '(kávét) készíteni', phở [fəː˧˩] 'rizstésztaleves').
 A ph-t ne ejtse felpattanó hangként, mint a koreai ㅍ-t. A ㅍ hehezetes zárhang [pʰ], amelynél az ajkak összezárulnak, majd kinyílnak; a ph [f] súrlódással, az ajkak zárása nélkül keletkezik.
 ## Honnan ered a ph írásmód
-Amikor a 17. században a misszionáriusok latin betűkkel kezdték lejegyezni a vietnamit, a görög φ írására használt ph-t egy vietnami hehezetes zárhang jelölésére alkalmazták (ugyanígy a th-t). Ezért az akkori ph-t [pʰ]-típusú hangként értelmezik, vagyis olyan hangként, amely a koreai ㅍ-vel összevethető.
+Amikor a 17. században a misszionáriusok latin betűkkel kezdték lejegyezni a vietnamit, a görög φ írására használt ph-t egy vietnami hehezetes zárhang jelölésére alkalmazták (ugyanígy a th-t). Az akkori ph ezért valószínűleg [pʰ]-típusú hang volt, a koreai ㅍ-hez hasonló.
 Később ez a hang [f] réshanggá vált. Az ugyanígy lejegyzett th ma is hehezetes zárhang, [tʰ].
-Még korábbra visszatekintve a ph-hoz vezető hangoknak nem egyetlen forrásuk van: az ősi szavak régi hehezetes hangjai és a kínai-vietnami szavak ajakhangjai valószínűleg különböző utakon jutottak el a mai [f]-ig. Nem állítható, hogy a régi hangérték pontosan a koreai ㅍ-vel egyezett.
+Még korábbra visszatekintve a ph-hoz vezető hangoknak nem egyetlen forrásuk van: az ősi szavak régi hehezetes hangjai és a kínai-vietnami szavak ajakhangjai valószínűleg különböző utakon jutottak el a mai [f]-ig.
 - A ph régen: [pʰ]-típusú, a koreai ㅍ-vel összevethető.
 - A ph ma: [f], nem a koreai ㅍ.
 """,
@@ -425,39 +425,11 @@ Még korábbra visszatekintve a ph-hoz vezető hangoknak nem egyetlen forrásuk 
             "id": "palatal",
             "title": "ㅈ / ㅉ / ㅊ és a vietnami mássalhangzók",
             "text": """
-A koreai ㅈ/ㅉ/ㅊ [tɕ t͈ɕ tɕʰ] zár-rés hangok, lágy – feszes – hehezetes szembenállásban. A vietnamiban a ch, tr, d és gi betűk vethetők össze velük, de szembenállásaik másként működnek.
+A koreai ㅈ/ㅉ/ㅊ [tɕ / t͈ɕ / tɕʰ] zár-rés hangok, lágy – feszes – hehezetes szembenállásban. A vietnamiban a d, gi / ch, tr betűk vethetők össze velük, de szembenállásaik másként működnek.
+- d·gi: Hanoiban a zöngés [z] réshang, délen a [j] félhangzó (mint a magyar j). Nem zár-rés hangok, így képzésmódjuk eltér a koreai ㅈ-től.
 - ch [c]~[tɕ]: hehezet nélküli, ezért a koreaiul beszélőknek a ㅉ-hez hasonlít. Sok hanoi beszélő [tɕ] zár-rés hangként ejti; a hagyományos leírások a [c] palatális zárhangot írják.
 - tr: Hanoiban ugyanaz a hang, mint a ch; a közép- és dél-vietnami hagyományos kiejtésben [ʈ], hátrébb emelt nyelvvel (lásd lent: „A ch és a tr régiónként”).
-- d·gi: Hanoiban a zöngés [z] réshang, délen a [j] félhangzó (mint a magyar j). Nem zár-rés hangok, így képzésmódjuk eltér a koreai ㅈ-től.
 A vietnami ch-t és tr-t alapvetően hehezet nélküli hangként írják le, és nincs hozzájuk tartozó hehezetes zár-rés hang. Így nincs olyan külön hangsor, amely pontosan a koreai ㅊ-nek [tɕʰ] felelne meg. Ha a d·gi-t ㅈ-ként, a ch-t ㅉ-ként jegyzi meg, könnyen elsiklik a zöngésség és a képzésmód különbségei felett.
-""",
-        },
-        {
-            "id": "sx",
-            "title": "Az s és az x régiónként",
-            "text": """
-Az s és az x betű a hagyományos hangrendszerben különböző hangokat jelölt; ma egyes régiókban megkülönböztetik őket, máshol egybeestek.
-""",
-            "cards": [
-                {"title": "Észak — Hanoi környéke", "rows": [
-                    ["north", "Szembenállás", "A mai köznyelvben nagyrészt egybeesett (semlegesült)."],
-                    ["north", "Kiejtés", "Az s és az x egyaránt [s]. Másként írják őket, de azonosan vagy nagyon hasonlóan hangzanak. Egyes beszélők a helyesírás szerinti gondos olvasáskor megkülönböztetik őket, ezért nem állítható, hogy mindenki mindig teljesen egyformán ejti őket."],
-                ]},
-                {"title": "Közép és Dél", "rows": [
-                    ["south", "Szembenállás", "Sok helyen megmaradt."],
-                    ["south", "Kiejtés", "Az x [s], az s hátrébb képzett [ʂ] (egyes források [ʃ]-nek írják). Sok beszélő, például a Ho Si Minh-városi fiatalok, azonban az s-t is [s]-nek ejti, így a kettő egybeesik; a régiókon belül is vannak különbségek."],
-                ]},
-            ],
-            "examples": [
-                {"word": "sinh", "mean": "születik", "note": "Hanoi [s] · Huế, Saigon [ʂ]~[s]"},
-                {"word": "xinh", "mean": "csinos", "note": "Hanoi [s] · Huế, Saigon [s]"},
-            ],
-            "after": """
-## Összevetés a koreai ㅅ / ㅆ-vel
-- A koreai ㅅ/ㅆ két réshang lágy – feszes szembenállásban. A vietnami s/x a helyesírásban és a hagyományos rendszerben szintén különbözik, így a két külön hang megtanulásának szokása hasonlóan hasznosítható.
-- Ne tanulja azonban egy az egyben, „s = ㅆ, x = ㅅ” módon. Ahol az s és az x különbözik, a különbség nem a feszességben van, mint a koreaiban, hanem a nyelv helyzetében ([ʂ] és [s]).
-- Hanoiban az s és az x egyaránt [s], ezért a koreaiul beszélőknek mindkettő erős ㅅ-nek, azaz a ㅆ-hez közelinek hangozhat. Ez csak hallási támpont.
-- Közép- és Dél-Vietnamban megkülönböztethetik őket, ezért ne gondolja, hogy a vietnami s és x mindig ugyanaz a hang.
 """,
         },
         {
@@ -494,6 +466,34 @@ Sok beszélő azonban, köztük a Ho Si Minh-városi fiatalok, a tr-t a ch-hoz h
 - A koreai ㅈ/ㅉ/ㅊ lágy – feszes – hehezetes szembenállás, a vietnami ch/tr viszont délen a nyelv helyzetében (a képzés helyében) tér el, északon pedig egybeesett, így két különböző rendszerről van szó.
 - Északon a ch és a tr ugyanaz a hang, ezért minden szó helyesírását külön kell megtanulni.
 - A déli kiejtés tanulásakor figyeljen a képzés helyének különbségére: a tr-nél a nyelv hátrébb emelkedik.
+""",
+        },
+        {
+            "id": "sx",
+            "title": "Az s és az x régiónként",
+            "text": """
+Az s és az x betű a hagyományos hangrendszerben különböző hangokat jelölt; ma egyes régiókban megkülönböztetik őket, máshol egybeestek.
+""",
+            "cards": [
+                {"title": "Észak — Hanoi környéke", "rows": [
+                    ["north", "Szembenállás", "A mai köznyelvben nagyrészt egybeesett (semlegesült)."],
+                    ["north", "Kiejtés", "Az s és az x egyaránt [s]. Másként írják őket, de azonosan vagy nagyon hasonlóan hangzanak. Egyes beszélők a helyesírás szerinti gondos olvasáskor megkülönböztetik őket, ezért nem állítható, hogy mindenki mindig teljesen egyformán ejti őket."],
+                ]},
+                {"title": "Közép és Dél", "rows": [
+                    ["south", "Szembenállás", "Sok helyen megmaradt."],
+                    ["south", "Kiejtés", "Az x [s], az s hátrébb képzett [ʂ] (egyes források [ʃ]-nek írják). Sok beszélő, például a Ho Si Minh-városi fiatalok, azonban az s-t is [s]-nek ejti, így a kettő egybeesik; a régiókon belül is vannak különbségek."],
+                ]},
+            ],
+            "examples": [
+                {"word": "sinh", "mean": "születik", "note": "Hanoi [s] · Huế, Saigon [ʂ]~[s]"},
+                {"word": "xinh", "mean": "csinos", "note": "Hanoi [s] · Huế, Saigon [s]"},
+            ],
+            "after": """
+## Összevetés a koreai ㅅ / ㅆ-vel
+- A koreai ㅅ/ㅆ két réshang lágy – feszes szembenállásban. A vietnami s/x a helyesírásban és a hagyományos rendszerben szintén különbözik, így a két külön hang megtanulásának szokása hasonlóan hasznosítható.
+- Ne tanulja azonban egy az egyben, „s = ㅆ, x = ㅅ” módon. Ahol az s és az x különbözik, a különbség nem a feszességben van, mint a koreaiban, hanem a nyelv helyzetében ([ʂ] és [s]).
+- Hanoiban az s és az x egyaránt [s], ezért a koreaiul beszélőknek mindkettő erős ㅅ-nek, azaz a ㅆ-hez közelinek hangozhat. Ez csak hallási támpont.
+- Közép- és Dél-Vietnamban megkülönböztethetik őket, ezért ne gondolja, hogy a vietnami s és x mindig ugyanaz a hang.
 """,
         },
     ],

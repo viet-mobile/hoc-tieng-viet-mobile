@@ -411,12 +411,12 @@ Vì vậy g / c / kh không phải ba âm tắc phát âm cùng một cách như
             "id": "ph",
             "title": "ph xưa và nay",
             "text": """
-Trong tiếng Việt hiện đại, ph là [f]: giống f tiếng Anh, là âm xát môi-răng vô thanh, răng trên chạm nhẹ môi dưới (pha [fa], phở).
+Trong tiếng Việt hiện đại, ph là [f]: giống f tiếng Anh, là âm xát môi-răng vô thanh, răng trên chạm nhẹ môi dưới (pha [fa] (pha cà phê), phở [fəː˧˩]).
 Đừng bật ph ra như ㅍ tiếng Hàn. ㅍ là âm tắc bật hơi [pʰ], khép rồi mở hai môi; ph [f] tạo bằng sự cọ xát, không khép môi.
 ## Chữ ph từ đâu mà có
-Khi các giáo sĩ ghi tiếng Việt bằng chữ Latinh vào thế kỷ 17, họ dùng ph, vốn ghi chữ φ của tiếng Hy Lạp, để ghi một âm tắc bật hơi của tiếng Việt (th cũng theo nguyên tắc này). Vì vậy ph thời đó được hiểu là một âm thuộc loại [pʰ], có thể so sánh với ㅍ tiếng Hàn.
+Khi các giáo sĩ ghi tiếng Việt bằng chữ Latinh vào thế kỷ 17, họ dùng ph, vốn ghi chữ φ của tiếng Hy Lạp, để ghi một âm tắc bật hơi của tiếng Việt (th cũng theo nguyên tắc này). Vì vậy ph thời đó có vẻ là một âm thuộc loại [pʰ], gần giống ㅍ tiếng Hàn.
 Về sau âm này chuyển thành âm xát [f]. Còn th, được ghi theo cùng cách, đến nay vẫn là âm tắc bật hơi [tʰ].
-Xa hơn nữa, các âm dẫn đến ph không chỉ có một nguồn gốc: âm bật hơi cổ trong từ thuần Việt và âm môi trong từ Hán Việt được cho là đã đến [f] ngày nay theo những con đường khác nhau. Không thể khẳng định giá trị cổ giống hệt ㅍ tiếng Hàn.
+Xa hơn nữa, các âm dẫn đến ph không chỉ có một nguồn gốc: âm bật hơi cổ trong từ thuần Việt và âm môi trong từ Hán Việt được cho là đã đến [f] ngày nay theo những con đường khác nhau.
 - ph ngày xưa: loại [pʰ], có thể so sánh với ㅍ tiếng Hàn.
 - ph ngày nay: [f], không phải ㅍ tiếng Hàn.
 """,
@@ -425,39 +425,11 @@ Xa hơn nữa, các âm dẫn đến ph không chỉ có một nguồn gốc: â
             "id": "palatal",
             "title": "ㅈ / ㅉ / ㅊ và phụ âm tiếng Việt",
             "text": """
-ㅈ/ㅉ/ㅊ [tɕ t͈ɕ tɕʰ] của tiếng Hàn là các âm tắc xát đối lập theo âm thường, âm căng và âm bật hơi. Các chữ tiếng Việt đáng so sánh với chúng là ch, tr, d và gi, nhưng cách đối lập khác nhau.
+ㅈ/ㅉ/ㅊ [tɕ / t͈ɕ / tɕʰ] của tiếng Hàn là các âm tắc xát đối lập theo âm thường, âm căng và âm bật hơi. Các chữ tiếng Việt đáng so sánh với chúng là d, gi / ch, tr, nhưng cách đối lập khác nhau.
+- d·gi: ở Hà Nội là âm xát hữu thanh [z], ở miền Nam là bán nguyên âm [j] (gần y tiếng Anh). Chúng không phải âm tắc xát, nên phương thức cấu âm khác ㅈ tiếng Hàn.
 - ch [c]~[tɕ]: không bật hơi, nên với người nói tiếng Hàn nghe gần ㅉ. Nhiều người Hà Nội phát âm thành âm tắc xát [tɕ]; các mô tả truyền thống ghi là âm tắc ngạc cứng [c].
 - tr: ở Hà Nội là cùng một âm với ch; trong cách phát âm truyền thống ở miền Trung và miền Nam là [ʈ], lưỡi nâng lùi về phía sau hơn (xem "ch và tr theo vùng miền" bên dưới).
-- d·gi: ở Hà Nội là âm xát hữu thanh [z], ở miền Nam là bán nguyên âm [j] (gần y tiếng Anh). Chúng không phải âm tắc xát, nên phương thức cấu âm khác ㅈ tiếng Hàn.
 ch và tr tiếng Việt được mô tả về cơ bản là không bật hơi, và không có âm tắc xát bật hơi nào làm cặp với chúng. Vì vậy có thể hiểu là không có một dãy âm riêng tương ứng chính xác với ㅊ [tɕʰ] tiếng Hàn. Học d·gi là ㅈ và ch là ㅉ cũng dễ bỏ qua khác biệt về tính hữu thanh và phương thức cấu âm.
-""",
-        },
-        {
-            "id": "sx",
-            "title": "s và x theo vùng miền",
-            "text": """
-Chữ s và x vốn là hai âm khác nhau trong hệ thống ngữ âm truyền thống; ngày nay có vùng vẫn phân biệt, có vùng đã nhập làm một.
-""",
-            "cards": [
-                {"title": "Miền Bắc — khu vực Hà Nội", "rows": [
-                    ["north", "Đối lập", "Trong khẩu ngữ hiện nay phần lớn đã nhập làm một (trung hòa)."],
-                    ["north", "Cách phát âm", "Cả s và x đều là [s]. Viết khác nhau nhưng nghe giống hệt hoặc rất gần nhau. Có người vẫn phân biệt khi đọc cẩn thận theo chính tả, nên không thể khẳng định mọi người lúc nào cũng phát âm giống hệt."],
-                ]},
-                {"title": "Miền Trung và miền Nam", "rows": [
-                    ["south", "Đối lập", "Nhiều nơi vẫn phân biệt."],
-                    ["south", "Cách phát âm", "x là [s]; s là [ʂ], lưỡi lùi về sau hơn (có tài liệu ghi là [ʃ]). Tuy vậy nhiều người, như lớp trẻ ở Thành phố Hồ Chí Minh, cũng đọc s là [s] khiến hai âm nhập làm một, và ngay trong một vùng cũng có khác biệt."],
-                ]},
-            ],
-            "examples": [
-                {"word": "sinh", "mean": "sinh ra", "note": "Hà Nội [s] · Huế, Sài Gòn [ʂ]~[s]"},
-                {"word": "xinh", "mean": "đẹp", "note": "Hà Nội [s] · Huế, Sài Gòn [s]"},
-            ],
-            "after": """
-## So sánh với ㅅ / ㅆ tiếng Hàn
-- ㅅ/ㅆ tiếng Hàn là hai âm xát đối lập theo âm thường và âm căng. s/x tiếng Việt cũng được phân biệt trong chính tả và trong hệ thống truyền thống, nên thói quen học hai âm riêng biệt có thể áp dụng tương tự.
-- Nhưng đừng học theo kiểu một đối một "s = ㅆ, x = ㅅ". Ở nơi còn phân biệt, khác biệt giữa s và x không phải là độ căng như tiếng Hàn mà là vị trí lưỡi ([ʂ] so với [s]).
-- Ở Hà Nội cả s và x đều là [s], nên với người nói tiếng Hàn cả hai có thể nghe như một ㅅ mạnh, tức gần ㅆ. Đây chỉ là gợi ý khi nghe.
-- Ở miền Trung và miền Nam hai âm có thể được phân biệt, nên đừng nghĩ rằng s và x tiếng Việt lúc nào cũng là một âm.
 """,
         },
         {
@@ -494,6 +466,34 @@ Tuy nhiên nhiều người, kể cả lớp trẻ ở Thành phố Hồ Chí Mi
 - ㅈ/ㅉ/ㅊ tiếng Hàn đối lập theo âm thường, âm căng và âm bật hơi, còn ch/tr tiếng Việt khác nhau ở vị trí lưỡi (vị trí cấu âm) tại miền Nam và đã nhập làm một ở miền Bắc, nên đây là hai hệ thống khác nhau.
 - Ở miền Bắc ch và tr là cùng một âm, nên cần học chính tả của từng từ.
 - Khi học giọng miền Nam, hãy chú ý khác biệt về vị trí cấu âm: với tr lưỡi nâng lùi về phía sau hơn.
+""",
+        },
+        {
+            "id": "sx",
+            "title": "s và x theo vùng miền",
+            "text": """
+Chữ s và x vốn là hai âm khác nhau trong hệ thống ngữ âm truyền thống; ngày nay có vùng vẫn phân biệt, có vùng đã nhập làm một.
+""",
+            "cards": [
+                {"title": "Miền Bắc — khu vực Hà Nội", "rows": [
+                    ["north", "Đối lập", "Trong khẩu ngữ hiện nay phần lớn đã nhập làm một (trung hòa)."],
+                    ["north", "Cách phát âm", "Cả s và x đều là [s]. Viết khác nhau nhưng nghe giống hệt hoặc rất gần nhau. Có người vẫn phân biệt khi đọc cẩn thận theo chính tả, nên không thể khẳng định mọi người lúc nào cũng phát âm giống hệt."],
+                ]},
+                {"title": "Miền Trung và miền Nam", "rows": [
+                    ["south", "Đối lập", "Nhiều nơi vẫn phân biệt."],
+                    ["south", "Cách phát âm", "x là [s]; s là [ʂ], lưỡi lùi về sau hơn (có tài liệu ghi là [ʃ]). Tuy vậy nhiều người, như lớp trẻ ở Thành phố Hồ Chí Minh, cũng đọc s là [s] khiến hai âm nhập làm một, và ngay trong một vùng cũng có khác biệt."],
+                ]},
+            ],
+            "examples": [
+                {"word": "sinh", "mean": "sinh ra", "note": "Hà Nội [s] · Huế, Sài Gòn [ʂ]~[s]"},
+                {"word": "xinh", "mean": "đẹp", "note": "Hà Nội [s] · Huế, Sài Gòn [s]"},
+            ],
+            "after": """
+## So sánh với ㅅ / ㅆ tiếng Hàn
+- ㅅ/ㅆ tiếng Hàn là hai âm xát đối lập theo âm thường và âm căng. s/x tiếng Việt cũng được phân biệt trong chính tả và trong hệ thống truyền thống, nên thói quen học hai âm riêng biệt có thể áp dụng tương tự.
+- Nhưng đừng học theo kiểu một đối một "s = ㅆ, x = ㅅ". Ở nơi còn phân biệt, khác biệt giữa s và x không phải là độ căng như tiếng Hàn mà là vị trí lưỡi ([ʂ] so với [s]).
+- Ở Hà Nội cả s và x đều là [s], nên với người nói tiếng Hàn cả hai có thể nghe như một ㅅ mạnh, tức gần ㅆ. Đây chỉ là gợi ý khi nghe.
+- Ở miền Trung và miền Nam hai âm có thể được phân biệt, nên đừng nghĩ rằng s và x tiếng Việt lúc nào cũng là một âm.
 """,
         },
     ],

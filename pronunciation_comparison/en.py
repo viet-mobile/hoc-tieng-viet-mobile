@@ -411,12 +411,12 @@ So g / c / kh are not three stops made the same way, like ㄱ/ㄲ/ㅋ, but a voi
             "id": "ph",
             "title": "ph, past and present",
             "text": """
-In modern Vietnamese, ph is [f]: like English f, a voiceless labiodental fricative made with the upper teeth lightly touching the lower lip (pha [fa] 'to brew', phở).
+In modern Vietnamese, ph is [f]: like English f, a voiceless labiodental fricative made with the upper teeth lightly touching the lower lip (pha [fa] 'to make (coffee)', phở [fəː˧˩] 'rice noodle soup').
 Do not release ph like Korean ㅍ. ㅍ is an aspirated stop [pʰ] made by closing and opening the lips; ph [f] is made by friction, without closing the lips.
 ## Where the spelling ph comes from
-When missionaries wrote Vietnamese in the Latin alphabet in the 17th century, they used ph, the spelling of Greek φ, for a Vietnamese aspirated stop (th works the same way). The ph of that time is therefore interpreted as a [pʰ]-type sound, one that can be compared with Korean ㅍ.
+When missionaries wrote Vietnamese in the Latin alphabet in the 17th century, they used ph, the spelling of Greek φ, for a Vietnamese aspirated stop (th works the same way). The ph of that time therefore appears to have been a [pʰ]-type sound, similar to Korean ㅍ.
 The sound later became the fricative [f]. th, written the same way, is still the aspirated stop [tʰ] today.
-Further back, the sounds that led to ph have more than one origin: old aspirates of native words and labials of Sino-Vietnamese words are thought to have reached today's [f] by different paths. The old value cannot be said to have been exactly the same as Korean ㅍ.
+Further back, the sounds that led to ph have more than one origin: old aspirates of native words and labials of Sino-Vietnamese words are thought to have reached today's [f] by different paths.
 - ph in the past: [pʰ]-type, comparable with Korean ㅍ.
 - ph today: [f], not Korean ㅍ.
 """,
@@ -425,39 +425,11 @@ Further back, the sounds that led to ph have more than one origin: old aspirates
             "id": "palatal",
             "title": "ㅈ / ㅉ / ㅊ and Vietnamese consonants",
             "text": """
-Korean ㅈ/ㅉ/ㅊ [tɕ t͈ɕ tɕʰ] are affricates contrasting as lax, tense and aspirated. The Vietnamese spellings worth comparing with them are ch, tr, d and gi, but their contrasts work differently.
+Korean ㅈ/ㅉ/ㅊ [tɕ / t͈ɕ / tɕʰ] are affricates contrasting as lax, tense and aspirated. The Vietnamese spellings worth comparing with them are d, gi / ch, tr, but their contrasts work differently.
+- d·gi: the voiced fricative [z] in Hanoi and the glide [j] (similar to English y) in the south. They are not affricates, so their manner of articulation differs from Korean ㅈ.
 - ch [c]~[tɕ]: unaspirated, so to Korean speakers it sounds close to ㅉ. Many Hanoi speakers pronounce it as the affricate [tɕ]; traditional descriptions write it as the palatal stop [c].
 - tr: in Hanoi the same sound as ch; in traditional central and southern pronunciation [ʈ], with the tongue raised further back (see "ch and tr by region" below).
-- d·gi: the voiced fricative [z] in Hanoi and the glide [j] (similar to English y) in the south. They are not affricates, so their manner of articulation differs from Korean ㅈ.
 Vietnamese ch and tr are described as basically unaspirated, and there is no aspirated affricate paired with them. So there is no separate series that corresponds exactly to Korean ㅊ [tɕʰ]. Learning d·gi as ㅈ and ch as ㅉ also makes it easy to miss the differences in voicing and manner of articulation.
-""",
-        },
-        {
-            "id": "sx",
-            "title": "s and x by region",
-            "text": """
-The spellings s and x were different sounds in the traditional sound system; today they are kept apart in some regions and merged in others.
-""",
-            "cards": [
-                {"title": "North — Hanoi area", "rows": [
-                    ["north", "Contrast", "Mostly merged (neutralized) in present-day everyday speech."],
-                    ["north", "Sound", "Both s and x are [s]. They are spelled differently but sound the same or very similar. Some speakers keep them apart when reading carefully according to the spelling, so it cannot be said that every speaker always pronounces them identically."],
-                ]},
-                {"title": "Central and South", "rows": [
-                    ["south", "Contrast", "Kept apart in many areas."],
-                    ["south", "Sound", "x is [s]; s is [ʂ], with the tongue further back (some sources write [ʃ]). Many speakers, such as younger speakers in Ho Chi Minh City, also say s as [s], merging the two, and there is variation within regions."],
-                ]},
-            ],
-            "examples": [
-                {"word": "sinh", "mean": "to be born", "note": "Hanoi [s] · Huế, Saigon [ʂ]~[s]"},
-                {"word": "xinh", "mean": "pretty", "note": "Hanoi [s] · Huế, Saigon [s]"},
-            ],
-            "after": """
-## Compared with Korean ㅅ / ㅆ
-- Korean ㅅ/ㅆ are two fricatives contrasting as lax and tense. Vietnamese s/x are also distinguished in spelling and in the traditional system, so the habit of learning two separate sounds carries over.
-- But do not learn them one-to-one as "s = ㅆ, x = ㅅ". Where s and x are distinguished, the difference is not tenseness as in Korean but tongue position ([ʂ] versus [s]).
-- In Hanoi both s and x are [s], so to Korean speakers both may sound like a strong ㅅ, that is, close to ㅆ. This is only a listening hint.
-- In the centre and south they may be distinguished, so do not assume that Vietnamese s and x are always the same sound.
 """,
         },
         {
@@ -494,6 +466,34 @@ However, many speakers, including younger speakers in Ho Chi Minh City, pronounc
 - Korean ㅈ/ㅉ/ㅊ contrast as lax, tense and aspirated, whereas Vietnamese ch/tr differ in tongue position (place of articulation) in the south and are merged in the north, so the two are different systems.
 - In the north ch and tr are the same sound, so learn the spelling of each word separately.
 - When learning southern pronunciation, pay attention to the difference in place of articulation: for tr the tongue is raised further back.
+""",
+        },
+        {
+            "id": "sx",
+            "title": "s and x by region",
+            "text": """
+The spellings s and x were different sounds in the traditional sound system; today they are kept apart in some regions and merged in others.
+""",
+            "cards": [
+                {"title": "North — Hanoi area", "rows": [
+                    ["north", "Contrast", "Mostly merged (neutralized) in present-day everyday speech."],
+                    ["north", "Sound", "Both s and x are [s]. They are spelled differently but sound the same or very similar. Some speakers keep them apart when reading carefully according to the spelling, so it cannot be said that every speaker always pronounces them identically."],
+                ]},
+                {"title": "Central and South", "rows": [
+                    ["south", "Contrast", "Kept apart in many areas."],
+                    ["south", "Sound", "x is [s]; s is [ʂ], with the tongue further back (some sources write [ʃ]). Many speakers, such as younger speakers in Ho Chi Minh City, also say s as [s], merging the two, and there is variation within regions."],
+                ]},
+            ],
+            "examples": [
+                {"word": "sinh", "mean": "to be born", "note": "Hanoi [s] · Huế, Saigon [ʂ]~[s]"},
+                {"word": "xinh", "mean": "pretty", "note": "Hanoi [s] · Huế, Saigon [s]"},
+            ],
+            "after": """
+## Compared with Korean ㅅ / ㅆ
+- Korean ㅅ/ㅆ are two fricatives contrasting as lax and tense. Vietnamese s/x are also distinguished in spelling and in the traditional system, so the habit of learning two separate sounds carries over.
+- But do not learn them one-to-one as "s = ㅆ, x = ㅅ". Where s and x are distinguished, the difference is not tenseness as in Korean but tongue position ([ʂ] versus [s]).
+- In Hanoi both s and x are [s], so to Korean speakers both may sound like a strong ㅅ, that is, close to ㅆ. This is only a listening hint.
+- In the centre and south they may be distinguished, so do not assume that Vietnamese s and x are always the same sound.
 """,
         },
     ],

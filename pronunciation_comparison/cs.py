@@ -411,12 +411,12 @@ Takže g / c / kh nejsou tři plozivy tvořené stejným způsobem jako ㄱ/ㄲ/
             "id": "ph",
             "title": "ph dříve a dnes",
             "text": """
-V současné vietnamštině je ph [f]: jako anglické f je to neznělá retnozubná frikativa, horní zuby se lehce dotýkají dolního rtu (pha [fa] „připravit (čaj)“, phở).
+V současné vietnamštině je ph [f]: jako anglické f je to neznělá retnozubná frikativa, horní zuby se lehce dotýkají dolního rtu (pha [fa] „připravit (kávu)“, phở [fəː˧˩] „rýžová nudlová polévka“).
 Nevyslovujte ph jako korejské ㅍ. ㅍ je přídechová plozíva [pʰ], při níž se rty zavřou a otevřou; ph [f] vzniká třením bez zavření rtů.
 ## Odkud pochází pravopis ph
-Když misionáři v 17. století zapisovali vietnamštinu latinkou, použili ph, kterým se psalo řecké φ, pro vietnamskou přídechovou plozívu (stejně jako th). Tehdejší ph se proto vykládá jako zvuk typu [pʰ], tedy zvuk srovnatelný s korejským ㅍ.
+Když misionáři v 17. století zapisovali vietnamštinu latinkou, použili ph, kterým se psalo řecké φ, pro vietnamskou přídechovou plozívu (stejně jako th). Tehdejší ph byl proto zřejmě zvuk typu [pʰ], podobný korejskému ㅍ.
 Později se tento zvuk změnil ve frikativu [f]. th, zapisované stejným způsobem, je dodnes přídechová plozíva [tʰ].
-Ještě dále do minulosti nemají zvuky vedoucí k ph jediný původ: staré přídechové hlásky domácích slov a retné hlásky sinovietnamských slov se podle všeho dostaly k dnešnímu [f] různými cestami. Nelze tvrdit, že stará hodnota byla přesně stejná jako korejské ㅍ.
+Ještě dále do minulosti nemají zvuky vedoucí k ph jediný původ: staré přídechové hlásky domácích slov a retné hlásky sinovietnamských slov se podle všeho dostaly k dnešnímu [f] různými cestami.
 - ph dříve: typ [pʰ], srovnatelný s korejským ㅍ.
 - ph dnes: [f], nikoli korejské ㅍ.
 """,
@@ -425,39 +425,11 @@ Ještě dále do minulosti nemají zvuky vedoucí k ph jediný původ: staré p�
             "id": "palatal",
             "title": "ㅈ / ㅉ / ㅊ a vietnamské souhlásky",
             "text": """
-Korejské ㅈ/ㅉ/ㅊ [tɕ t͈ɕ tɕʰ] jsou afrikáty v protikladu měkká – napjatá – přídechová. Ve vietnamštině se s nimi dají srovnat písmena ch, tr, d a gi, jejich protiklady však fungují jinak.
+Korejské ㅈ/ㅉ/ㅊ [tɕ / t͈ɕ / tɕʰ] jsou afrikáty v protikladu měkká – napjatá – přídechová. Ve vietnamštině se s nimi dají srovnat písmena d, gi / ch, tr, jejich protiklady však fungují jinak.
+- d·gi: v Hanoji znělá frikativa [z], na jihu polosamohláska [j] (podobná anglickému y). Nejsou to afrikáty, takže se způsobem tvoření liší od korejského ㅈ.
 - ch [c]~[tɕ]: bez přídechu, proto mluvčím korejštiny zní blízko ㅉ. Mnoho Hanojanů ho vyslovuje jako afrikátu [tɕ]; tradiční popisy ho zapisují jako palatální plozívu [c].
 - tr: v Hanoji stejný zvuk jako ch; v tradiční výslovnosti střední a jižní části země [ʈ], s jazykem zdviženým víc vzadu (viz „ch a tr podle regionů“ níže).
-- d·gi: v Hanoji znělá frikativa [z], na jihu polosamohláska [j] (podobná anglickému y). Nejsou to afrikáty, takže se způsobem tvoření liší od korejského ㅈ.
 Vietnamské ch a tr se popisují jako v zásadě nepřídechové a nemají přídechový afrikátový protějšek. Lze tedy říci, že neexistuje samostatná řada, která by přesně odpovídala korejskému ㅊ [tɕʰ]. Kdo si d·gi zapamatuje jako ㅈ a ch jako ㅉ, snadno přehlédne rozdíly ve znělosti a způsobu tvoření.
-""",
-        },
-        {
-            "id": "sx",
-            "title": "s a x podle regionů",
-            "text": """
-Písmena s a x označovala v tradičním hláskovém systému různé zvuky; dnes se v některých oblastech rozlišují a v jiných splynula.
-""",
-            "cards": [
-                {"title": "Sever — oblast Hanoje", "rows": [
-                    ["north", "Protiklad", "V dnešní běžné řeči většinou splynuly (neutralizace)."],
-                    ["north", "Výslovnost", "s i x jsou [s]. Píší se různě, ale znějí stejně nebo velmi podobně. Někteří mluvčí je při pečlivém čtení podle pravopisu rozlišují, takže nelze tvrdit, že je všichni vždy vyslovují úplně stejně."],
-                ]},
-                {"title": "Střed a jih", "rows": [
-                    ["south", "Protiklad", "V mnoha oblastech se rozlišují."],
-                    ["south", "Výslovnost", "x je [s], s je [ʂ] s jazykem víc vzadu (některé zdroje píší [ʃ]). Mnoho mluvčích, například mladší generace v Ho Či Minově Městě, však vyslovuje i s jako [s], takže oba zvuky splývají; rozdíly jsou i uvnitř regionů."],
-                ]},
-            ],
-            "examples": [
-                {"word": "sinh", "mean": "narodit se", "note": "Hanoj [s] · Hue, Saigon [ʂ]~[s]"},
-                {"word": "xinh", "mean": "hezký", "note": "Hanoj [s] · Hue, Saigon [s]"},
-            ],
-            "after": """
-## Srovnání s korejským ㅅ / ㅆ
-- Korejské ㅅ/ㅆ jsou dvě frikativy v protikladu měkká – napjatá. Vietnamské s/x se také rozlišují v pravopisu a v tradičním systému, takže zvyk učit se dva samostatné zvuky se dá využít podobně.
-- Neučte se je však jedna ku jedné jako „s = ㅆ, x = ㅅ“. Tam, kde se s a x rozlišují, je rozdíl mezi nimi v poloze jazyka ([ʂ] oproti [s]), ne v napětí jako v korejštině.
-- V Hanoji jsou s i x obě [s], takže mluvčím korejštiny mohou obě znít jako silné ㅅ, tedy blízko ㅆ. Je to jen nápověda pro poslech.
-- Ve středu a na jihu se mohou rozlišovat, proto si nemyslete, že vietnamské s a x jsou vždy stejný zvuk.
 """,
         },
         {
@@ -494,6 +466,34 @@ Mnoho mluvčích, včetně mladší generace v Ho Či Minově Městě, však vys
 - Korejské ㅈ/ㅉ/ㅊ tvoří protiklad měkká – napjatá – přídechová, kdežto vietnamské ch/tr se na jihu liší polohou jazyka (místem tvoření) a na severu zcela splynuly; jde tedy o odlišné systémy.
 - Na severu jsou ch a tr stejný zvuk, proto se pravopis každého slova učte zvlášť.
 - Při učení jižní výslovnosti dbejte na rozdíl v místě tvoření: u tr je jazyk zdvižen víc vzadu.
+""",
+        },
+        {
+            "id": "sx",
+            "title": "s a x podle regionů",
+            "text": """
+Písmena s a x označovala v tradičním hláskovém systému různé zvuky; dnes se v některých oblastech rozlišují a v jiných splynula.
+""",
+            "cards": [
+                {"title": "Sever — oblast Hanoje", "rows": [
+                    ["north", "Protiklad", "V dnešní běžné řeči většinou splynuly (neutralizace)."],
+                    ["north", "Výslovnost", "s i x jsou [s]. Píší se různě, ale znějí stejně nebo velmi podobně. Někteří mluvčí je při pečlivém čtení podle pravopisu rozlišují, takže nelze tvrdit, že je všichni vždy vyslovují úplně stejně."],
+                ]},
+                {"title": "Střed a jih", "rows": [
+                    ["south", "Protiklad", "V mnoha oblastech se rozlišují."],
+                    ["south", "Výslovnost", "x je [s], s je [ʂ] s jazykem víc vzadu (některé zdroje píší [ʃ]). Mnoho mluvčích, například mladší generace v Ho Či Minově Městě, však vyslovuje i s jako [s], takže oba zvuky splývají; rozdíly jsou i uvnitř regionů."],
+                ]},
+            ],
+            "examples": [
+                {"word": "sinh", "mean": "narodit se", "note": "Hanoj [s] · Hue, Saigon [ʂ]~[s]"},
+                {"word": "xinh", "mean": "hezký", "note": "Hanoj [s] · Hue, Saigon [s]"},
+            ],
+            "after": """
+## Srovnání s korejským ㅅ / ㅆ
+- Korejské ㅅ/ㅆ jsou dvě frikativy v protikladu měkká – napjatá. Vietnamské s/x se také rozlišují v pravopisu a v tradičním systému, takže zvyk učit se dva samostatné zvuky se dá využít podobně.
+- Neučte se je však jedna ku jedné jako „s = ㅆ, x = ㅅ“. Tam, kde se s a x rozlišují, je rozdíl mezi nimi v poloze jazyka ([ʂ] oproti [s]), ne v napětí jako v korejštině.
+- V Hanoji jsou s i x obě [s], takže mluvčím korejštiny mohou obě znít jako silné ㅅ, tedy blízko ㅆ. Je to jen nápověda pro poslech.
+- Ve středu a na jihu se mohou rozlišovat, proto si nemyslete, že vietnamské s a x jsou vždy stejný zvuk.
 """,
         },
     ],
