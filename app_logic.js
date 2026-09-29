@@ -2020,6 +2020,18 @@
           var started = false;
           currentU.onstart = function () { started = true; };
           synth.speak(currentU);
+          // Some engines (macOS Safari / system voices in particular) drop or delay onend, and the watchdog
+          // below would then hold the next step for seconds. Once the utterance has started (or the engine
+          // was seen busy), two idle checks in a row (0.5 s) count as finished.
+          var seenBusy = false, idleChecks = 0;
+          (function pollIdle() {
+            if (doneCalled) return;
+            var busy = false;
+            try { busy = synth.speaking || synth.pending; } catch (eIdle) { /* no-op */ }
+            if (busy) { seenBusy = true; idleChecks = 0; }
+            else if (started || seenBusy) { if (++idleChecks >= 2) { callDone(); return; } }
+            setTimeout(pollIdle, 250);
+          })();
           // Retry once only if the engine silently dropped the utterance. Mobile engines (Samsung/
           // Google TTS on Android, iOS) often need well over 350 ms before onstart fires; cancelling
           // and re-speaking in that window restarted the audio (an audible click plus extra delay),
@@ -2270,7 +2282,12 @@
       if (!readAllState.id) { stopReadAllKeepAlive(); return; }
       try {
         var synth = window.speechSynthesis;
-        if (synth.speaking) { synth.pause(); synth.resume(); }
+        // Only Chrome's network voices (localService false) stop after ~15 s. On local voices -- macOS
+        // system voices, Safari -- pause()/resume() can lose the utterance's end event, which left 전체
+        // 듣기 waiting for the watchdog before the next (meaning) step.
+        var active = window.__activeUtterances[window.__activeUtterances.length - 1];
+        var remote = active && active.voice && active.voice.localService === false;
+        if (synth.speaking && remote) { synth.pause(); synth.resume(); }
       } catch (e) { /* no-op */ }
     }, 5000);
   }
@@ -3493,8 +3510,27 @@
 
       // Every grammar record (one source page) is one folded item, numbered 1-209 in order. Folded, only
       // "N. title" shows; the body holds [전체 듣기] for the whole item and each subsection under its heading.
+      // GENERAL_PDF_GRAMMAR_EDITS[row id] = [[line as extracted (whitespace collapsed), line to show], ...]
+      // (general_pdf_edits.py): display-only corrections; the record itself stays as extracted.
+      var GRAM_EDITS = (typeof GENERAL_PDF_GRAMMAR_EDITS !== "undefined" && GENERAL_PDF_GRAMMAR_EDITS) || {};
+      function applyGramEdits(lines, edits) {
+        if (!edits || !edits.length) return lines;
+        return lines.map(function (line) {
+          var key = line.replace(/\s+/g, " ").trim();
+          for (var i = 0; i < edits.length; i++) if (edits[i][0] === key) return edits[i][1];
+          return line;
+        });
+      }
+      // GENERAL_PDF_GRAMMAR_TITLES[row id] = [[Vietnamese pattern, Korean meaning], ...]: the item's title as
+      // requested; the Korean view shows each pattern with its meaning, the other languages the patterns.
+      var GRAM_TITLES = (typeof GENERAL_PDF_GRAMMAR_TITLES !== "undefined" && GENERAL_PDF_GRAMMAR_TITLES) || {};
+      function gramTitle(parts) {
+        return parts.map(function (p) {
+          return currentLang === "ko" ? [p[0], p[1]].filter(Boolean).join(" ") : p[0];
+        }).filter(Boolean).join(" | ");
+      }
       gramRows.forEach(function (row, rowIndex) {
-        var cleanedLines = cleanPdfLines(row.original, GRAM_JOINS[row.id]);
+        var cleanedLines = applyGramEdits(cleanPdfLines(row.original, GRAM_JOINS[row.id]), GRAM_EDITS[row.id]);
         if (!cleanedLines.length) return;
         var hasPageHeader = /HƯỚNG DẪN CÁCH DÙNG/.test(row.original || "");
         var sections = parseSubsections(cleanedLines).map(function (sec, si) {
@@ -3511,7 +3547,8 @@
           return { ai: ai, lines: lines, title: heading ? headingText(sec, ai) : null };
         });
         var titles = sections.filter(function (s) { return s.title; }).map(function (s) { return s.title; });
-        var itemTitle = (rowIndex + 1) + ". " + (titles.length ? titles.join(" · ") : fallbackTitle(sections));
+        var itemTitle = (rowIndex + 1) + ". " + (GRAM_TITLES[row.id] ? gramTitle(GRAM_TITLES[row.id]) :
+          titles.length ? titles.join(" · ") : fallbackTitle(sections));
 
         var details = document.createElement("details");
         details.className = "pdf-subheading-group pdf-grammar-item";
@@ -6057,6 +6094,86 @@
     });
     return Object.assign({}, assign, { days: days });
   }
+  // [일반 문법] homework along the class dates (COURSE_GRAMMAR from course_materials.grammar_plan: the grammar range
+  // of each class week). Every homework week between a class and the next one -- also the weeks without a class --
+  // reviews the last class's range (Mon, Tue) and previews its share of the next class's range (Wed-Fri; Mon-Fri
+  // when there is nothing to review yet).
+  function courseGrammarItem(start, end) {
+    var label = COURSE_GRAMMAR.label, text = {};
+    Object.keys(label).forEach(function (lang) {
+      var span = start === end ? String(start) : start + (lang === "ko" ? "~" : "–") + end;
+      text[lang] = label[lang] + " " + span + (lang === "ko" ? "번" : "");
+    });
+    return { text: text, link: { tab: "grammar", subAttr: "grammar", subVal: "pdf", anchor: "pdf-grammar-" + start } };
+  }
+  function splitGrammarRange(range, parts) {
+    var count = range[1] - range[0] + 1, out = [], start = range[0];
+    for (var i = 0; i < parts; i++) {
+      var size = Math.floor(count / parts) + (i < count % parts ? 1 : 0);
+      out.push(size ? [start, start + size - 1] : null);
+      start += size;
+    }
+    return out;
+  }
+  function addGrammarHomework(assign, reviewWeek, previewWeek, part, parts) {
+    if (typeof COURSE_GRAMMAR === "undefined" || !COURSE_GRAMMAR || !assign || !assign.days || !assign.days.length) return assign;
+    // A week's own course items can stand in for its review (the week-15 card); its whole [일반 문법] range is
+    // replaced by the scheduled parts below.
+    function notGrammar(it) { return !(it && it.link && it.link.subAttr === "grammar" && it.link.subVal === "pdf"); }
+    var days = assign.days.map(function (day) {
+      return Object.assign({}, day, { reviews: (day.reviews || []).filter(notGrammar), previews: (day.previews || []).filter(notGrammar) });
+    });
+    var review = reviewWeek === null ? null : COURSE_GRAMMAR.weeks[String(reviewWeek)];
+    var preview = previewWeek === null ? null : COURSE_GRAMMAR.weeks[String(previewWeek)];
+    if (review) {
+      splitGrammarRange(review, 2).forEach(function (r, i) {
+        if (r) days[i % days.length].reviews.push(courseGrammarItem(r[0], r[1]));
+      });
+    }
+    var share = preview ? splitGrammarRange(preview, Math.max(1, parts))[part] : null;
+    if (share) {
+      var previewDays = review ? [2, 3, 4] : [0, 1, 2, 3, 4];
+      splitGrammarRange(share, previewDays.length).forEach(function (r, i) {
+        if (r) days[previewDays[i] % days.length].previews.push(courseGrammarItem(r[0], r[1]));
+      });
+    }
+    return Object.assign({}, assign, { days: days });
+  }
+  // Where a homework week sits between two classes: seq[i] = {cls: class week number or null (a week without a
+  // class)}; the homework shown at seq[idx] runs until the next class.
+  function grammarHomeworkSpan(seq, idx) {
+    var prev = null, next = null, first = 0;
+    for (var i = idx; i >= 0; i--) { if (seq[i].cls !== null) { prev = seq[i].cls; first = i; break; } }
+    for (var j = idx + 1; j < seq.length; j++) { if (seq[j].cls !== null) { next = seq[j].cls; break; } }
+    var parts = 0;
+    for (var k = first; k < seq.length && (k === first || seq[k].cls === null); k++) parts++;
+    return { review: prev, preview: next, part: idx - first, parts: parts };
+  }
+  // A class that teaches a grammar range (JW week 0, the first meeting, has none; breaks and cancellations are no class).
+  function grammarClassWeek(week) {
+    return typeof COURSE_GRAMMAR !== "undefined" && COURSE_GRAMMAR && COURSE_GRAMMAR.weeks[String(week)] ? week : null;
+  }
+  function grammarOnlyAssign() {
+    var base = (typeof CURR_ASSIGNMENTS !== "undefined" ? CURR_ASSIGNMENTS : []).filter(function (a) { return a.days && a.days.length === 5; })[0];
+    return base ? { days: base.days.map(function (d) { return { day: d.day, reviews: [], previews: [] }; }) } : null;
+  }
+  function grammarAssignCardHtml(assign, weekKey) {
+    if (!assign) return "";
+    var body = "";
+    assign.days.forEach(function (d) {
+      var rows = "";
+      [[d.reviews || [], "review", "복습"], [d.previews || [], "preview", "예습"]].forEach(function (group) {
+        group[0].forEach(function (it) {
+          rows += '<div class="curr-assign-row"><span class="curr-assign-kind ' + group[1] + '">' + TU(group[2]) + '</span><span class="curr-assign-text">' +
+            escapeHtml(T(it.text)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, weekKey)) + '</div>';
+        });
+      });
+      if (rows) body += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>' + rows + '</div>';
+    });
+    if (!body) return "";
+    return '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' +
+      TU("주간 수행 과제") + '</span>' + currChev() + '</button><div class="curr-assign-body">' + body + '</div></div>';
+  }
   function bindCurrGroupCards(root) {
     root.querySelectorAll(".group-card").forEach(function (card) {
       card.querySelector(".group-head").addEventListener("click", function () {
@@ -6804,6 +6921,11 @@ function verifyDistribution(units, dist, pins) {
     if (!sched || sched.status !== "unconfigured") {
       var welcomeAssign = currAssignments.filter(function (a) { return a.week === 0; })[0] || null;
       welcomeAssign = addCourseReadingAssignments(welcomeAssign, [null, 0], 1);
+      if (sched && sched.status === "configured") {
+        var welcomeSeq = [{ cls: null }].concat(sched.slots.map(function (s) { return { cls: s.type === "instructional" ? grammarClassWeek(s.week) : null }; }));
+        var welcomeSpan = grammarHomeworkSpan(welcomeSeq, 0);
+        welcomeAssign = addGrammarHomework(welcomeAssign, null, welcomeSpan.preview, 0, welcomeSpan.parts);
+      }
       if (welcomeAssign) {
         html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button><div class="curr-assign-body">';
         welcomeAssign.days.forEach(function (d) {
@@ -6832,14 +6954,18 @@ function verifyDistribution(units, dist, pins) {
       } else {
         // Configured Regional Schedule (e.g. Jeonju)
         var instSlots = sched.slots.filter(function (s) { return s.type === 'instructional'; });
+        // welcome (homework before the first class), then every slot: where each homework week sits for [일반 문법]
+        var gramSeq = [{ cls: null }].concat(sched.slots.map(function (s) { return { cls: s.type === "instructional" ? grammarClassWeek(s.week) : null }; }));
         sched.slots.forEach(function (slot, slotIdx) {
+          var gramSpan = grammarHomeworkSpan(gramSeq, slotIdx + 1);
           if (slot.type === 'cancellation') {
             html += '<div class="group-card curr-vacation-card" data-open="false" data-syl="cancel-' + slot.date + '">' +
               '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " " + (cancellationReasonLabel(slot.reason) || TU("휴강"))) + '</span></span>' +
               currChev() + '</button>' +
               '<div class="group-body"><div class="curr-item-list">' +
               '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
-              '</div></div></div>';
+              '</div>' + grammarAssignCardHtml(addGrammarHomework(grammarOnlyAssign(), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), gramSpan.preview) +
+              '</div></div>';
           } else {
             var badgeText = slot.week === 16 && !(courseGuideEntry(16) && !/총복습/.test((slot.title && (slot.title.ko || slot.title)) || "")) ?
               (slot.calculatedDate + " - " + TU("총복습")) :
@@ -6883,6 +7009,7 @@ function verifyDistribution(units, dist, pins) {
                 });
               }
               assign = addCourseReadingAssignments(assign, [prevInst ? prevInst.week : null, slot.week], nextInst ? nextInst.week : null);
+              assign = addGrammarHomework(assign, gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts);
             }
             if (assign) {
               html += '<div class="curr-assign-card" data-open="false">' +
@@ -6952,6 +7079,8 @@ function verifyDistribution(units, dist, pins) {
             });
           }
           assign = addCourseReadingAssignments(assign, [previousSlot ? previousSlot.week : null, w.week], nextSlot ? nextSlot.week : null);
+          var jwSpan = grammarHomeworkSpan(courseWeeks.map(function (x) { return { cls: grammarClassWeek(x.week) }; }), wi);
+          assign = addGrammarHomework(assign, jwSpan.review, jwSpan.preview, jwSpan.part, jwSpan.parts);
         }
         if (assign) {
           html += '<div class="curr-assign-card" data-open="false">' +

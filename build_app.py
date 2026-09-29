@@ -93,7 +93,7 @@ from time_data import TIME_ORDER_NOTE, TIME_RUOI_KEM_NOTE, TIME_PERIODS, TIME_HO
 from vocab_study_plan_data import VOCAB_PLAN
 from watchtower_vocab_data import WATCHTOWER_VOCAB
 from usage_guide_data import USAGE_GUIDE_COMMON, USAGE_GUIDE_TABS
-from course_materials import add_general_materials, remove_jw_event_items
+from course_materials import add_general_materials, remove_jw_event_items, grammar_plan
 from course_i18n import complete_course_texts
 from pronunciation_comparison import build_pron_comparison
 from tts_guide_data import TTS_GUIDE, TTS_GUIDE_ORDER, home_screen_guide
@@ -743,6 +743,9 @@ def build_data_js(site):
         if site != "general":
             material_counts["neighbor"] = len(NEIGHBOR_CONVERSATIONS)
         curr_weeks, curr_assignments = add_general_materials(curr_weeks, curr_assignments, material_counts)
+        course_grammar = grammar_plan(material_counts) if curr_assignments else None
+    else:
+        course_grammar = None
     if site == "jw":
         curr_weeks, curr_assignments = remove_jw_event_items(curr_weeks, curr_assignments)
 
@@ -758,6 +761,8 @@ def build_data_js(site):
     parts.append(emit("CURR_PHASES", curr_phases))
     parts.append(emit("CURR_WEEKS", curr_weeks))
     parts.append(emit("CURR_ASSIGNMENTS", curr_assignments))
+    # [일반 문법] range per class week; app_logic.js adds its review/preview to every homework week.
+    parts.append(emit("COURSE_GRAMMAR", course_grammar))
     parts.append(emit("CULTURE_ARTICLES", CULTURE_ARTICLES))
     parts.append(emit("USAGE_GUIDE_COMMON", USAGE_GUIDE_COMMON))
     parts.append(emit("USAGE_GUIDE_TABS", USAGE_GUIDE_TABS))
@@ -829,6 +834,10 @@ def build_data_js(site):
     # Display-only line joins for the grammar pages' wrapped Korean prose (general_pdf_layout.py); the
     # Korean word statistics come from text without line wraps. The records themselves stay as extracted.
     parts.append(emit("GENERAL_PDF_GRAMMAR_JOINS", general_pdf_grammar_joins(pdf_learning)))
+    # Display-only line corrections requested for [일반 문법] (general_pdf_edits.py); checked against the records.
+    from general_pdf_edits import check_general_pdf_edits, check_general_pdf_titles
+    parts.append(emit("GENERAL_PDF_GRAMMAR_EDITS", check_general_pdf_edits(pdf_learning["grammar"], general_pdf_grammar_joins(pdf_learning))))
+    parts.append(emit("GENERAL_PDF_GRAMMAR_TITLES", check_general_pdf_titles(pdf_learning["grammar"])))
     parts.append(emit("UNIFIED_WORDS", unified_words))
     parts.append(emit("GRAMMAR_A1_A2_PATTERNS", GRAMMAR_A1_A2_PATTERNS))
     parts.append(emit("GRAMMAR_B1_B2_PATTERNS", GRAMMAR_B1_B2_PATTERNS))

@@ -15,6 +15,11 @@ from the actual item counts (largest-remainder allocation over per-week weights)
 one course item per material (a range such as "일상 회화 4~6번"), and the same range is added to
 that week's assignments as a review task, one material per weekday. Links open the material's
 subtab and scroll to the range's first item (data-anchor="<prefix>-<n>" in app_logic.js).
+
+[일반 문법] is the exception in the assignments: its weekly homework follows the class dates, which only
+the page knows (regional cancellations come from D1), so the build hands over the per-week ranges
+(grammar_plan) and app_logic.js adds "review the last class's grammar / preview the next class's
+grammar" to every homework week -- including the weeks without a class.
 """
 
 COURSE_WEEKS = list(range(1, 17))
@@ -111,11 +116,23 @@ def add_general_materials(weeks, assignments, counts):
         if e.get("week") in plan and e.get("days"):
             days = [dict(d) for d in e["days"]]
             for kind, start, end in plan[e["week"]]:
+                if kind == "pdf_grammar":
+                    continue  # grammar homework is placed by the page along the class dates (grammar_plan)
                 day = days[MATERIAL_WEEKDAY[kind] % len(days)]
                 day["reviews"] = list(day.get("reviews") or []) + [{k: v for k, v in course_item(kind, start, end).items() if k != "page"}]
             e["days"] = days
         new_assignments.append(e)
     return new_weeks, new_assignments
+
+
+def grammar_plan(counts):
+    """{"label": {lang: "일반 문법"...}, "weeks": {week: [start, end]}} -- the [일반 문법] range of each class week."""
+    weeks = {}
+    for week, entries in week_items(counts).items():
+        for kind, start, end in entries:
+            if kind == "pdf_grammar":
+                weeks[str(week)] = [start, end]
+    return {"label": MATERIAL_LABELS["pdf_grammar"], "weeks": weeks}
 
 
 # [과정] items and week subtitles the JW profile does not show (class-event logistics rather than
