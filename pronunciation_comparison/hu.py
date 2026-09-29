@@ -398,10 +398,10 @@ A koreai zárhangok és zár-rés hangok hármas szembenállást alkotnak: lágy
 - th [tʰ]: zöngétlen és hehezetes, közel áll a ㅌ-hez. Nem az angol th [θ].
 ## g / c·k·q / kh és ㄱ / ㄲ / ㅋ
 - g·gh [ɣ]: zöngés réshang. Képzésmódja eltér a koreai ㄱ-től.
-- c·k·q [k]: zöngétlen, hehezet nélküli zárhang, ezért a ㄲ-hez hasonlít.
+- c·k·q [k]: zöngétlen, hehezet nélküli zárhang, ezért a ㄲ-hez hasonlít. Az a·ă·â·o·ô·ơ·u·ư előtt c-t, az e·ê·i·y előtt k-t írnak, de ugyanúgy ejtik őket. A q mindig u-val áll (qu), és [kw]-t jelöl (délen gyakran [w]-t).
 - kh [x]: nem zárhang, hanem zöngétlen réshang, amelyet a nyelvhát a lágy szájpadlás közelében képez. Nem pattan fel úgy, mint a ㅋ [kʰ].
 A g / c / kh tehát nem három, azonos módon képzett zárhang, mint a ㄱ/ㄲ/ㅋ, hanem egy zöngés réshang, egy hehezet nélküli zárhang és egy zöngétlen réshang.
-## b / p és ㅂ / ㅃ / ㅍ
+## b / p / ph és ㅂ / ㅃ / ㅍ
 - b [ɓ]: zöngés implozíva, mint a đ.
 - p [p]: hehezet nélküli, ezért a ㅃ-hez hasonlít, de főleg szótag végén áll (đáp); szó elején csak ritkán, jövevényszavakban (pin 'elem'). Sok beszélő az ilyen p-t [b]-nek ejti.
 - A ㅍ-hez hasonló, erősen hehezetes [pʰ] a mai vietnamiban nincs. A ph betűkapcsolat [f] (lásd lent: „A ph régen és ma”).

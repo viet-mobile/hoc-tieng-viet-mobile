@@ -398,10 +398,10 @@ Korejské plozivy a afrikáty tvoří trojí protiklad: měkké (lenis), napjat�
 - th [tʰ]: neznělé s přídechem, blízko ㅌ. Není to anglické th [θ].
 ## g / c·k·q / kh a ㄱ / ㄲ / ㅋ
 - g·gh [ɣ]: znělá frikativa. Způsobem tvoření se liší od korejského ㄱ.
-- c·k·q [k]: neznělá plozíva bez přídechu, zní proto blízko ㄲ.
+- c·k·q [k]: neznělá plozíva bez přídechu, zní proto blízko ㄲ. Před a·ă·â·o·ô·ơ·u·ư se píše c, před e·ê·i·y k, vyslovují se však stejně. q se píše vždy s u jako qu a označuje [kw] (na jihu často [w]).
 - kh [x]: není plozíva, ale neznělá frikativa tvořená zadní částí jazyka u měkkého patra. Nevyráží se jako ㅋ [kʰ].
 Takže g / c / kh nejsou tři plozivy tvořené stejným způsobem jako ㄱ/ㄲ/ㅋ, ale znělá frikativa, plozíva bez přídechu a neznělá frikativa.
-## b / p a ㅂ / ㅃ / ㅍ
+## b / p / ph a ㅂ / ㅃ / ㅍ
 - b [ɓ]: znělá implozíva, stejně jako đ.
 - p [p]: bez přídechu, proto zní blízko ㅃ, ale objevuje se hlavně na konci slabiky (đáp); na začátku jen vzácně v přejatých slovech (pin „baterie“). Mnoho mluvčích takové p vyslovuje jako [b].
 - Silně přídechové [pʰ] jako ㅍ v současné vietnamštině není. Pravopisné ph se čte [f] (viz „ph dříve a dnes“ níže).

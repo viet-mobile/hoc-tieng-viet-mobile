@@ -398,10 +398,10 @@ Les occlusives et affriquées coréennes forment une triple opposition : douces 
 - th [tʰ] : sourde et aspirée, proche de ㅌ. Ce n’est pas le th anglais [θ].
 ## g / c·k·q / kh et ㄱ / ㄲ / ㅋ
 - g·gh [ɣ] : une fricative sonore. Son mode d’articulation diffère du ㄱ coréen.
-- c·k·q [k] : une occlusive sourde non aspirée, qui paraît donc proche de ㄲ.
+- c·k·q [k] : une occlusive sourde non aspirée, qui paraît donc proche de ㄲ. On écrit c devant a·ă·â·o·ô·ơ·u·ư et k devant e·ê·i·y, mais la prononciation est la même. q s’écrit toujours avec u (qu) et note [kw] (souvent [w] dans le Sud).
 - kh [x] : non pas une occlusive mais une fricative sourde, produite avec le dos de la langue près du voile du palais. Elle n’explose pas comme ㅋ [kʰ].
 g / c / kh ne sont donc pas trois occlusives produites de la même façon comme ㄱ/ㄲ/ㅋ, mais une fricative sonore, une occlusive non aspirée et une fricative sourde.
-## b / p et ㅂ / ㅃ / ㅍ
+## b / p / ph et ㅂ / ㅃ / ㅍ
 - b [ɓ] : une implosive sonore, comme đ.
 - p [p] : non aspirée, donc proche de ㅃ, mais surtout en fin de syllabe (đáp) ; à l’initiale, seulement rarement dans des emprunts (pin « pile »). Beaucoup de locuteurs prononcent ce p comme [b].
 - Un [pʰ] fortement aspiré comme ㅍ n’existe pas en vietnamien moderne. La graphie ph se lit [f] (voir « ph, hier et aujourd’hui » ci-dessous).

@@ -398,10 +398,10 @@ Các chữ cái tiếng Hàn (ㄱ, ㄲ, ㅋ, v.v.) ghi kèm chỉ là gợi ý h
 - th [tʰ]: vô thanh, bật hơi, gần ㅌ. Không phải th [θ] của tiếng Anh.
 ## g / c·k·q / kh và ㄱ / ㄲ / ㅋ
 - g·gh [ɣ]: âm xát hữu thanh. Phương thức cấu âm khác ㄱ tiếng Hàn.
-- c·k·q [k]: âm tắc vô thanh không bật hơi, nên nghe gần ㄲ.
+- c·k·q [k]: âm tắc vô thanh không bật hơi, nên nghe gần ㄲ. Viết c trước a·ă·â·o·ô·ơ·u·ư, viết k trước e·ê·i·y, nhưng đọc giống nhau. q luôn đi với u thành qu, đọc là [kw] (ở miền Nam thường là [w]).
 - kh [x]: không phải âm tắc mà là âm xát vô thanh, gốc lưỡi đưa gần ngạc mềm. Không bật ra như ㅋ [kʰ].
 Vì vậy g / c / kh không phải ba âm tắc phát âm cùng một cách như ㄱ/ㄲ/ㅋ, mà là một âm xát hữu thanh, một âm tắc không bật hơi và một âm xát vô thanh.
-## b / p và ㅂ / ㅃ / ㅍ
+## b / p / ph và ㅂ / ㅃ / ㅍ
 - b [ɓ]: âm hút vào hữu thanh, giống đ.
 - p [p]: không bật hơi nên nghe gần ㅃ, nhưng chủ yếu đứng cuối âm tiết (đáp); ở đầu âm tiết chỉ hiếm khi xuất hiện trong từ vay mượn (pin). Nhiều người đọc âm p này như [b].
 - Âm [pʰ] bật hơi mạnh như ㅍ không có trong tiếng Việt hiện đại. Chữ ph đọc là [f] (xem "ph xưa và nay" bên dưới).

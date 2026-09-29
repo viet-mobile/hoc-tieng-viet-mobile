@@ -398,10 +398,10 @@ Korean stops and affricates contrast in three ways: lax, tense and aspirated (�
 - th [tʰ]: voiceless and aspirated, close to ㅌ. It is not English th [θ].
 ## g / c·k·q / kh and ㄱ / ㄲ / ㅋ
 - g·gh [ɣ]: a voiced fricative. Its manner of articulation differs from Korean ㄱ.
-- c·k·q [k]: a voiceless unaspirated stop, so it sounds close to ㄲ.
+- c·k·q [k]: a voiceless unaspirated stop, so it sounds close to ㄲ. c is written before a·ă·â·o·ô·ơ·u·ư and k before e·ê·i·y, but they sound the same. q is always written with u as qu, for [kw] (in the south often [w]).
 - kh [x]: not a stop but a voiceless fricative, made with the back of the tongue close to the soft palate. It is not released like ㅋ [kʰ].
 So g / c / kh are not three stops made the same way, like ㄱ/ㄲ/ㅋ, but a voiced fricative, an unaspirated stop and a voiceless fricative.
-## b / p and ㅂ / ㅃ / ㅍ
+## b / p / ph and ㅂ / ㅃ / ㅍ
 - b [ɓ]: a voiced implosive, like đ.
 - p [p]: unaspirated, so it sounds close to ㅃ, but it mostly comes at the end of a syllable (đáp); as an initial it appears only rarely, in loanwords (pin 'battery'). Many speakers pronounce such a p like [b].
 - A strongly aspirated [pʰ] like ㅍ does not exist in modern Vietnamese. The spelling ph is [f] (see "ph, past and present" below).

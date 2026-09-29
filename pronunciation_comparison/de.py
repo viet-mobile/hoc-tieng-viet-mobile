@@ -398,10 +398,10 @@ Koreanische Plosive und Affrikaten bilden einen dreifachen Gegensatz: lenis, for
 - th [tʰ]: stimmlos und behaucht, nah an ㅌ. Es ist nicht das englische th [θ].
 ## g / c·k·q / kh und ㄱ / ㄲ / ㅋ
 - g·gh [ɣ]: ein stimmhafter Frikativ. Die Artikulationsart unterscheidet sich von koreanischem ㄱ.
-- c·k·q [k]: ein stimmloser, unbehauchter Plosiv, klingt daher nah an ㄲ.
+- c·k·q [k]: ein stimmloser, unbehauchter Plosiv, klingt daher nah an ㄲ. Vor a·ă·â·o·ô·ơ·u·ư schreibt man c, vor e·ê·i·y k, gesprochen werden sie gleich. q steht immer mit u als qu und steht für [kw] (im Süden oft [w]).
 - kh [x]: kein Plosiv, sondern ein stimmloser Frikativ, gebildet mit dem Zungenrücken nahe am weichen Gaumen (wie das ch in „ach“). Er wird nicht wie ㅋ [kʰ] gesprengt.
 g / c / kh sind also nicht drei auf dieselbe Weise gebildete Plosive wie ㄱ/ㄲ/ㅋ, sondern ein stimmhafter Frikativ, ein unbehauchter Plosiv und ein stimmloser Frikativ.
-## b / p und ㅂ / ㅃ / ㅍ
+## b / p / ph und ㅂ / ㅃ / ㅍ
 - b [ɓ]: ein stimmhafter Implosiv, wie đ.
 - p [p]: unbehaucht, daher nah an ㅃ, steht aber vor allem am Silbenende (đáp); im Anlaut nur selten in Lehnwörtern (pin „Batterie“). Viele Sprecher sprechen ein solches p wie [b].
 - Ein stark behauchtes [pʰ] wie ㅍ gibt es im heutigen Vietnamesisch nicht. Die Schreibung ph steht für [f] (siehe „ph – früher und heute“ unten).

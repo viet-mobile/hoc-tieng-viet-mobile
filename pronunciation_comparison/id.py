@@ -398,10 +398,10 @@ Konsonan hambat dan afrikat bahasa Korea membentuk oposisi tiga arah: lenis, for
 - th [tʰ]: tak bersuara dan beraspirasi, dekat dengan ㅌ. Bukan th bahasa Inggris [θ].
 ## g / c·k·q / kh dan ㄱ / ㄲ / ㅋ
 - g·gh [ɣ]: frikatif bersuara. Cara artikulasinya berbeda dari ㄱ bahasa Korea.
-- c·k·q [k]: hambat tak bersuara tanpa aspirasi, sehingga terdengar dekat dengan ㄲ.
+- c·k·q [k]: hambat tak bersuara tanpa aspirasi, sehingga terdengar dekat dengan ㄲ. c ditulis sebelum a·ă·â·o·ô·ơ·u·ư dan k sebelum e·ê·i·y, tetapi pelafalannya sama. q selalu ditulis bersama u menjadi qu dan melambangkan [kw] (di Selatan sering [w]).
 - kh [x]: bukan konsonan hambat, melainkan frikatif tak bersuara yang dibentuk dengan pangkal lidah di dekat langit-langit lunak. Tidak dilepaskan seperti ㅋ [kʰ].
 Jadi g / c / kh bukan tiga konsonan hambat yang dibentuk dengan cara yang sama seperti ㄱ/ㄲ/ㅋ, melainkan frikatif bersuara, hambat tanpa aspirasi, dan frikatif tak bersuara.
-## b / p dan ㅂ / ㅃ / ㅍ
+## b / p / ph dan ㅂ / ㅃ / ㅍ
 - b [ɓ]: implosif bersuara, seperti đ.
 - p [p]: tidak beraspirasi sehingga terdengar dekat dengan ㅃ, tetapi terutama muncul di akhir suku kata (đáp); di awal kata hanya jarang, dalam kata serapan (pin 'baterai'). Banyak penutur melafalkan p semacam ini seperti [b].
 - [pʰ] beraspirasi kuat seperti ㅍ tidak ada dalam bahasa Vietnam modern. Ejaan ph dibaca [f] (lihat "ph dulu dan sekarang" di bawah).

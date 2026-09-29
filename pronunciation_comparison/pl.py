@@ -398,10 +398,10 @@ Koreańskie spółgłoski zwarte i zwarto-szczelinowe tworzą opozycję trójcz�
 - th [tʰ]: bezdźwięczna z przydechem, bliska ㅌ. To nie jest angielskie th [θ].
 ## g / c·k·q / kh oraz ㄱ / ㄲ / ㅋ
 - g·gh [ɣ]: dźwięczna szczelinowa. Sposobem artykulacji różni się od koreańskiego ㄱ.
-- c·k·q [k]: bezdźwięczna zwarta bez przydechu, dlatego brzmi podobnie do ㄲ.
+- c·k·q [k]: bezdźwięczna zwarta bez przydechu, dlatego brzmi podobnie do ㄲ. Przed a·ă·â·o·ô·ơ·u·ư pisze się c, przed e·ê·i·y k, ale wymowa jest taka sama. q występuje zawsze z u jako qu i oznacza [kw] (na południu często [w]).
 - kh [x]: nie zwarta, lecz bezdźwięczna szczelinowa, tworzona tylną częścią języka blisko podniebienia miękkiego (jak polskie ch). Nie jest „wybuchana” jak ㅋ [kʰ].
 g / c / kh nie są więc trzema zwartymi tworzonymi w ten sam sposób, jak ㄱ/ㄲ/ㅋ, lecz dźwięczną szczelinową, zwartą bez przydechu i bezdźwięczną szczelinową.
-## b / p oraz ㅂ / ㅃ / ㅍ
+## b / p / ph oraz ㅂ / ㅃ / ㅍ
 - b [ɓ]: dźwięczna implozywna, jak đ.
 - p [p]: bez przydechu, więc brzmi podobnie do ㅃ, ale występuje głównie na końcu sylaby (đáp); na początku tylko rzadko, w zapożyczeniach (pin „bateria”). Wiele osób wymawia takie p jak [b].
 - Silnie przydechowego [pʰ] jak ㅍ we współczesnym wietnamskim nie ma. Pisownia ph oznacza [f] (zob. „ph dawniej i dziś” poniżej).
