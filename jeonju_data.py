@@ -96,19 +96,19 @@ JEONJU_CLASS_ROSTER = [
 
 # Every class, from the preliminary meeting to graduation, opens and closes with a Vietnamese song and prayer.
 # Prayer assignments per class ("prelim" = 2026-10-03, then source week 1-16): [opening, closing], each
-# [Korean name, prayer language or None]. 한정우 (unbaptized publisher) is not assigned.
+# [Korean name, prayer language "ko"/"vi"]. 김한빈 always prays in Vietnamese. 한정우 (unbaptized publisher) is not assigned.
 _P = lambda name, lang=None: [name, lang]
 JEONJU_PRAYERS = {
-    "prelim": [_P("최찬호"), _P("이주복")],
-    "1": [_P("김동주"), _P("김종현")],
-    "2": [_P("김재윤"), _P("김한빈")],
-    "3": [_P("김종배"), _P("김대훈")],
-    "4": [_P("박정환"), _P("박준우")],
-    "5": [_P("박철현"), _P("최찬호")],
-    "6": [_P("송제홍"), _P("김한빈")],
-    "7": [_P("이종명"), _P("김종현")],
-    "8": [_P("한상현"), _P("김대훈")],
-    "9": [_P("한도희"), _P("박준우")],
+    "prelim": [_P("최찬호", "ko"), _P("이주복", "ko")],
+    "1": [_P("김동주", "ko"), _P("김종현", "ko")],
+    "2": [_P("김재윤", "ko"), _P("김한빈", "vi")],
+    "3": [_P("김종배", "ko"), _P("김대훈", "ko")],
+    "4": [_P("박정환", "ko"), _P("박준우", "ko")],
+    "5": [_P("박철현", "ko"), _P("최찬호", "ko")],
+    "6": [_P("송제홍", "ko"), _P("김한빈", "vi")],
+    "7": [_P("이종명", "ko"), _P("김종현", "ko")],
+    "8": [_P("한상현", "ko"), _P("김대훈", "ko")],
+    "9": [_P("한도희", "ko"), _P("박준우", "ko")],
     "10": [_P("이주복", "ko"), _P("김한빈", "vi")],
     "11": [_P("김동주", "vi"), _P("김재윤", "vi")],
     "12": [_P("김종배", "vi"), _P("박정환", "vi")],
