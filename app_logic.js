@@ -6075,7 +6075,16 @@
   }
   function curriculumDisplayItems(w) {
     var sourceReadingLabels = ["베트남어 출판물 읽기 연습 (행누, 랑제)", "행누책 읽기", "베트남어 읽기 연습"];
-    return w.items.filter(function (it) { return sourceReadingLabels.indexOf((it.text || {}).ko) < 0; }).concat(courseReadingItems(w.week));
+    // A stored copy of a generated reading item (the admin course synced to what students see) takes the
+    // generated item's place, so it keeps its position and its 12-language text.
+    var reading = courseReadingItems(w.week), byKo = {}, used = {};
+    reading.forEach(function (r) { byKo[r.text.ko] = r; });
+    var out = w.items.filter(function (it) { return sourceReadingLabels.indexOf((it.text || {}).ko) < 0; }).map(function (it) {
+      var r = byKo[(it.text || {}).ko];
+      if (r && !used[r.text.ko]) { used[r.text.ko] = 1; return r; }
+      return r ? null : it;
+    }).filter(Boolean);
+    return out.concat(reading.filter(function (r) { return !used[r.text.ko]; }));
   }
   function addCourseReadingAssignments(assign, reviewWeekKeys, previewWeekKey) {
     if (!assign || !assign.days || !assign.days.length) return assign;
@@ -6090,6 +6099,13 @@
     var reviewItems = [];
     (Array.isArray(reviewWeekKeys) ? reviewWeekKeys : [reviewWeekKeys]).forEach(function (weekKey) {
       reviewItems = reviewItems.concat(courseReadingItems(weekKey));
+    });
+    // Stored copies of these generated lines (a synced admin course) are replaced by the generated ones below.
+    var generatedKo = {};
+    reviewItems.concat(courseReadingItems(previewWeekKey)).forEach(function (it) { generatedKo[it.text.ko] = 1; });
+    days.forEach(function (d) {
+      d.reviews = d.reviews.filter(function (it) { return !generatedKo[(it.text || {}).ko]; });
+      d.previews = d.previews.filter(function (it) { return !generatedKo[(it.text || {}).ko]; });
     });
     reviewItems.forEach(function (item, index) {
       days[(index * 2) % days.length].reviews.push(item);
@@ -6341,9 +6357,10 @@
     var week0 = (CURR_WEEKS || []).filter(function (w) { return w.week === 0; })[0];
     if (!week0 || !week0.items) return [];
     var seen = {};
-    week1Items.forEach(function (it) { seen[curriculumItemText(it, 1).replace(/\s+/g, "")] = 1; });
+    function key(it) { return String((it.text && (it.text.ko || it.text)) || "").replace(/\s+/g, ""); }
+    week1Items.forEach(function (it) { seen[key(it)] = 1; });
     return curriculumDisplayItems({ week: 0, items: week0.items }).filter(function (it) {
-      return !seen[curriculumItemText(it, 0).replace(/\s+/g, "")];
+      return !seen[key(it)];
     }).map(function (it) { return Object.assign({}, it, { _wk: 0 }); });
   }
   // Opening / closing Vietnamese song and prayer of a class (REGIONAL_SCHEDULE.prayers, keyed "prelim" or the week).
@@ -6765,6 +6782,11 @@ function verifyDistribution(units, dist, pins) {
     staticUnits.forEach(function (u) {
       indexKo(u.title); indexKo(u.note);
       u.learning.concat(u.assignments).forEach(function (x) { indexKo(x.text); });
+    });
+    // The preliminary meeting's static items (week 0), which a synced admin course may list in unit 1.
+    ((typeof CURR_WEEKS !== "undefined" ? CURR_WEEKS : []).filter(function (w) { return w.week === 0; })[0] || { items: [] }).items.forEach(function (x) { indexKo(x.text); });
+    ((typeof CURR_ASSIGNMENTS !== "undefined" ? CURR_ASSIGNMENTS : []).filter(function (a) { return a.week === 0; })[0] || { days: [] }).days.forEach(function (d) {
+      [].concat(d.reviews || [], d.previews || [], d.vocab || []).forEach(function (x) { indexKo(x.text); });
     });
     // Several static texts can share one Korean source with different wording in other languages
     // ("오늘의 파수대 어휘 10개 학습"): the unit's own static text comes before the first one course-wide.
