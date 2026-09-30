@@ -494,10 +494,17 @@ def public_teaching_guide(region):
         guide = json.load(fh).get(region)
     if not guide:
         return None
-    labels = {m["id"]: {"label": m["label"], "hint": m.get("studentHint", "")} for m in guide["methods"]}
+    def i18n(ko, extra):
+        out = {"ko": ko}
+        out.update(extra or {})
+        return out
+
+    labels = {m["id"]: {"label": i18n(m["label"], m.get("labelI18n")), "hint": i18n(m.get("studentHint", ""), m.get("studentHintI18n"))}
+              for m in guide["methods"]}
+    mats = guide.get("materialsI18n", {})
 
     def entry(u):
-        return {"methods": [labels[i] for i in u["methods"]], "materials": list(u["studentMaterials"])}
+        return {"methods": [labels[i] for i in u["methods"]], "materials": [i18n(x, mats.get(x)) for x in u["studentMaterials"]]}
 
     return {
         "preliminary": entry(guide["preliminary"]) if guide.get("preliminary") else None,
