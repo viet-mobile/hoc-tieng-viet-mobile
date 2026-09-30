@@ -6389,7 +6389,7 @@
       var title = song ? String(song.title[l] || song.title.en || song.title.vi || "").replace(/^\d+\s+/, "") : "";
       text[l] = w + ": " + lab + (title ? " " + title : "");
     });
-    return { text: text, link: { tab: "curriculum", subAttr: "curriculum", subVal: "song", anchor: "song-" + num } };
+    return { text: text, link: { tab: "curriculum", subAttr: "curriculum", subVal: "song", anchor: "song-" + num }, _song: kind };
   }
   function courseSongItems(key) {
     var pair = (regionalFlag("songs") || {})[String(key)];
@@ -7369,9 +7369,13 @@ function verifyDistribution(units, dist, pins) {
             }
             displayItems = applyCourseVocabClass(displayItems, sched, slot.week);
             var classSongs = courseSongItems(slot.week).map(function (it) { return Object.assign(it, { _wk: slot.week }); });
-            displayItems = withoutSameKo(displayItems, classSongs).concat(displayItems.filter(function (it) {
+            // 시작 노래 first, 마치는 노래 last in the week's learning list.
+            var songsAdd = withoutSameKo(displayItems, classSongs);
+            var restItems = displayItems.filter(function (it) {
               return !classSongs.some(function (x) { return x.text.ko === ((it.text && it.text.ko) || it.text); });
-            }));
+            });
+            displayItems = songsAdd.filter(function (it) { return it._song !== "close"; }).concat(restItems,
+              songsAdd.filter(function (it) { return it._song === "close"; }));
             if (window.__COURSE_CAPTURE) window.__COURSE_CAPTURE.cls[slot.week] = JSON.parse(JSON.stringify(displayItems));
             if (!displayItems || displayItems.length === 0) {
               html += '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div>';
