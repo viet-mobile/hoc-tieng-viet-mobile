@@ -1937,6 +1937,12 @@
   // enough to sound like a deliberate re-read rather than a stutter, short enough not to feel
   // like a stall.
   var VI_REPEAT_GAP_MS = 450;
+  // macOS desktop (Safari and Chrome on system voices) reports the end of an utterance late or not at
+  // all, so the idle poll below decides when a step is over. There it polls faster and 전체 듣기 waits
+  // less between the Vietnamese and the translation, which otherwise left a long silence in between.
+  var IS_MAC_DESKTOP = /Macintosh|Mac OS X/i.test(navigator.userAgent || "") && !(navigator.maxTouchPoints > 1);
+  var SPEECH_IDLE_POLL_MS = IS_MAC_DESKTOP ? 120 : 250;
+  var READALL_STEP_GAP_MS = IS_MAC_DESKTOP ? 60 : 300;
   // Speaks opts.text (opts.lang/opts.rate/opts.voice optional) and calls onDone exactly once,
   // whether speech finishes normally, errors, or isn't available at all. Shared by every speech
   // call in the app -- individual speak-btns (via speakOnce below) AND 전체 듣기's chained
@@ -2031,7 +2037,7 @@
             try { busy = synth.speaking || synth.pending; } catch (eIdle) { /* no-op */ }
             if (busy) { seenBusy = true; idleChecks = 0; }
             else if (started || seenBusy) { if (++idleChecks >= 2) { callDone(); return; } }
-            setTimeout(pollIdle, 250);
+            setTimeout(pollIdle, SPEECH_IDLE_POLL_MS);
           })();
           // Retry once only if the engine silently dropped the utterance. Mobile engines (Samsung/
           // Google TTS on Android, iOS) often need well over 350 ms before onstart fires; cancelling
@@ -2324,7 +2330,7 @@
     var advance = function () {
       if (token !== readAllState.token) return;
       if (repsLeft > 1) setTimeout(function () { playReadAllVi(token, entry, repsLeft - 1); }, VI_REPEAT_GAP_MS);
-      else setTimeout(function () { playReadAllMeaning(token, entry); }, 300);
+      else setTimeout(function () { playReadAllMeaning(token, entry); }, READALL_STEP_GAP_MS);
     };
     robustSpeak(targetSpeechOpts(entry.vi), advance);
   }
@@ -3614,6 +3620,19 @@
   function readerUnitLabel(src, u) {
     var first = (u.rows[0] && (u.rows[0][currentLang] || u.rows[0].ko || u.rows[0].vi)) || "";
     if (src.id === "wt") return first;
+    // 사람들을 사랑하고 제자로 lessons: "1과 Bắt đầu cuộc trò chuyện 대화 시작하기 - Quan tâm 사람들에 대한 관심"
+    // (rows: 0 = part heading, 1 = "BÀI n", 2 = lesson title).
+    if (src.id === "lpd" && u.type === "lesson" && u.rows.length > 2) {
+      function both(row) {
+        var vi = String(row.vi || "").replace(/\u00a0/g, " ").trim();
+        if (vi && vi === vi.toUpperCase()) vi = vi.charAt(0) + vi.slice(1).toLowerCase();
+        var own = currentLang === "vi" ? "" : String(row[currentLang] || row.ko || "").trim();
+        return vi + (own ? " " + own : "");
+      }
+      var lesson = currentLang === "ko" && u.labelKo ? u.labelKo : String((u.rows[1][currentLang] || u.rows[1].vi || "")).replace(/\u00a0/g, " ").trim();
+      if (lesson === lesson.toUpperCase()) lesson = lesson.charAt(0) + lesson.slice(1).toLowerCase();
+      return lesson + " " + both(u.rows[0]) + " - " + both(u.rows[2]);
+    }
     var title = (u.rows[1] && (u.rows[1][currentLang] || u.rows[1].ko)) || "";
     return (u.labelKo && currentLang === "ko" ? u.labelKo : first) + (title ? " · " + title : "");
   }
