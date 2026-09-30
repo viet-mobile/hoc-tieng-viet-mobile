@@ -6627,24 +6627,8 @@ function verifyDistribution(units, dist, pins) {
     // shift when the static course gains items, otherwise the static text with the identical Korean
     // source. Text an admin rewrote has no static counterpart and is shown as stored.
     // Admin-added live items (ko/en only in D1): Vietnamese for the JEONJU course, English elsewhere.
-    var LIVE_I18N = [
-      [/^베트남어 달, 계절$/, "Tháng và mùa trong tiếng Việt", "Vietnamese months and seasons"],
-      [/^베트남어 어순 단원 (\S+)~(\S+)$/, "Trật tự từ tiếng Việt — bài $1–$2", "Vietnamese word order — units $1–$2"],
-      [/^베트남어 기초 핵심 문형 \(A1\/A2\) (\S+)~(\S+)$/, "Mẫu câu cơ bản tiếng Việt (A1/A2) $1–$2", "Core Vietnamese sentence patterns (A1/A2) $1–$2"],
-      [/^베트남어 B1\/B2 문형 (\S+)~(\S+) \(A–Z 문법 사전\)$/, "Mẫu câu B1/B2 $1–$2 (từ điển ngữ pháp A–Z)", "B1/B2 sentence patterns $1–$2 (A–Z grammar dictionary)"],
-      [/^위치 전치사와 길찾기 대화문$/, "Giới từ chỉ vị trí và hội thoại hỏi đường", "Prepositions of place and asking-directions dialogues"],
-      [/^움직임을 나타내는 동사$/, "Động từ chỉ chuyển động", "Verbs of motion"],
-      [/^연결사$/, "Từ nối", "Connectives"],
-      [/^파수대 집회 실연 리허설 \(사회, 낭독, 해설\)$/, "Tập dượt trình diễn buổi học Tháp Canh (điều khiển, đọc, bình luận)", "Watchtower Study demonstration rehearsal (conducting, reading, commenting)"],
-      [/^행누 1과로 성서 연구 사회 실습$/, "Tập điều khiển học hỏi Kinh Thánh với Vui sống mãi mãi bài 1", "Practice conducting a Bible study with Enjoy Life Forever lesson 1"],
-      [/^베트남어 노래 \((\d+)번\) 합창$/, "Cùng hát bài hát tiếng Việt số $1", "Sing Vietnamese song no. $1 together"],
-      [/^파수대 집회 실연 \(사회, 낭독, 발표\)$/, "Trình diễn buổi học Tháp Canh (điều khiển, đọc, bình luận)", "Watchtower Study demonstration (conducting, reading, commenting)"],
-      [/^졸업$/, "Tốt nghiệp", "Graduation"],
-      [/^파수대 집회 실연과 졸업$/, "Trình diễn buổi học Tháp Canh và tốt nghiệp", "Watchtower Study demonstration and graduation"],
-      [/^총복습과 파수대 집회 실연 리허설$/, "Ôn tập tổng quát và tập dượt trình diễn buổi học Tháp Canh", "General review and Watchtower Study demonstration rehearsal"],
-      [/^(\d+)주 \(총복습·실연 리허설\)$/, "Tuần $1 (ôn tập tổng quát · tập dượt trình diễn)", "Week $1 (general review · demonstration rehearsal)"],
-      [/^(\d+)주 \(파수대 집회 실연·졸업\)$/, "Tuần $1 (trình diễn buổi học Tháp Canh · tốt nghiệp)", "Week $1 (Watchtower Study demonstration · graduation)"]
-    ];
+    // (regional_admin/course_live_i18n.json, shared with the /admin Vietnamese view: [pattern, vi, en]).
+    var LIVE_I18N = (typeof LIVE_COURSE_I18N !== "undefined" ? LIVE_COURSE_I18N : []).map(function (r) { return [new RegExp(r[0]), r[1], r[2]]; });
     function liveTranslate(t) {
       if (!t || !t.ko) return null;
       var ko = String(t.ko).trim();

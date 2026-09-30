@@ -79,7 +79,8 @@ const STYLES = `
       border: 1px solid rgba(15, 82, 186, 0.2);
     }
     .header-title { font-size: 18px; font-weight: 800; }
-    .header-right { display: flex; align-items: center; gap: 12px; }
+    .header-right { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: flex-end; }
+    header { flex-wrap: wrap; gap: 8px; }
     .btn {
       padding: 7px 14px;
       border-radius: var(--radius);
@@ -293,6 +294,7 @@ const STYLES = `
       padding: 8px 10px;
       border-radius: 6px;
     }
+    .vi-hint { margin: -4px 0 8px 12px; }
     .item-row input {
       flex: 1;
     }
@@ -321,11 +323,21 @@ function loadTeachingGuide(regionId) {
   }
 }
 
+/** Course text translations for the Vietnamese view (optional: missing files mean Korean only). */
+function loadJson(name) {
+  try {
+    return require(name);
+  } catch (e) {
+    return name.indexOf('live') >= 0 ? [] : {};
+  }
+}
+
 function renderAdminHtml(regionId, regionName, currentUser = null, csrfToken = '', nonce = '') {
   const badge = regionId === 'jeonju' ? '전주' : (regionId === 'ulsan' ? '울산' : regionId);
   const title = `2026-2027 ${regionName} 관리자`;
   const nonceAttr = nonce ? ` nonce="${escapeHtml(nonce)}"` : '';
-  const boot = safeJson({ regionId, regionName, csrfToken: csrfToken || '', guide: loadTeachingGuide(regionId) });
+  const boot = safeJson({ regionId, regionName, csrfToken: csrfToken || '', guide: loadTeachingGuide(regionId),
+    courseVi: loadJson('./course_vi.json')[regionId] || {}, liveI18n: loadJson('./course_live_i18n.json') });
 
   return `<!DOCTYPE html>
 <html lang="ko">
@@ -344,6 +356,7 @@ function renderAdminHtml(regionId, regionName, currentUser = null, csrfToken = '
     <h1 class="header-title">${escapeHtml(title)}</h1>
   </div>
   <div class="header-right">
+    <select id="lang-select" class="btn" aria-label="Language / 언어"><option value="ko">한국어</option><option value="vi">Tiếng Việt</option></select>
     <span id="user-info" style="font-weight: 600; color: var(--ink-soft); font-size: 13px;"></span>
     <button type="button" class="btn btn-danger" id="logout-btn" style="display:none;" data-act="logout">로그아웃</button>
   </div>
