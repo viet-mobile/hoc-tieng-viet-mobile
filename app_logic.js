@@ -6179,6 +6179,122 @@
     return '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' +
       assignLabel(dateLabel) + '</span>' + currChev() + '</button><div class="curr-assign-body">' + body + '</div></div>';
   }
+  // ---- [과정] vocabulary schedule (COURSE_VOCAB, course_vocab_plan.py) ----
+  // The whole [어휘] tab is one stream. Every homework week (cancelled weeks too) previews the next slice in five
+  // equal daily parts and reviews last week's slice; each class learns what was previewed before it, the first
+  // classes a fixed amount and the later ones an equal share of the rest, so a break's previews are spread out.
+  var COURSE_VOCAB_ON = typeof COURSE_VOCAB !== "undefined" && COURSE_VOCAB && COURSE_VOCAB.stream;
+  function isVocabRangeItem(it) { var l = it && it.link; return !!(l && l.tab === "vocab" && l.vocabRange); }
+  // [베트남어 파수대 어휘 50개 학습] (removed from the course; the daily 10-word homework stays).
+  function isWt50Item(it) { var l = it && it.link, r = l && l.vocabRange; return !!(r && l.subVal === "wt" && r.end - r.start >= 50); }
+  function courseVocabItems(range, kind, week) {
+    var out = [], pos = 0;
+    if (!range || range[1] <= range[0]) return out;
+    COURSE_VOCAB.stream.forEach(function (seg) {
+      var len = seg[2] - seg[1], a = Math.max(range[0], pos), b = Math.min(range[1], pos + len);
+      if (a < b) {
+        var s0 = seg[1] + a - pos, e0 = seg[1] + b - pos, text = {};
+        Object.keys(COURSE_VOCAB[kind]).forEach(function (lang) {
+          text[lang] = COURSE_VOCAB[kind][lang].replace("{c}", (COURSE_VOCAB.cats[seg[0]] || {})[lang] || "")
+            .replace("{a}", s0 + 1).replace("{b}", e0).replace("{w}", week);
+        });
+        out.push({ text: text, link: { subAttr: "vocab", subVal: seg[0], tab: "vocab", vocabRange: { start: s0, end: e0 } } });
+      }
+      pos += len;
+    });
+    return out;
+  }
+  function splitVocabRange(range, n) {
+    var out = [], len = range ? range[1] - range[0] : 0;
+    for (var i = 0; i < n; i++) out.push(range ? [range[0] + Math.round(len * i / n), range[0] + Math.round(len * (i + 1) / n)] : null);
+    return out;
+  }
+  var courseVocabCache = null;
+  // {preview: {h: [a, b]}, review: {h: [a, b]}, cls: {week: [a, b]}}; h = 0 is the homework before the first
+  // class (welcome card), h = i + 1 the homework under schedule slot i.
+  function courseVocabPlan(sched) {
+    if (!COURSE_VOCAB_ON || !sched || sched.status !== "configured") return null;
+    if (courseVocabCache && courseVocabCache.sched === sched) return courseVocabCache.plan;
+    var V = COURSE_VOCAB, slots = sched.slots, weeks = [];
+    slots.forEach(function (s) { if (s.type === "instructional" && s.week <= V.lastClass) weeks.push(s.week); });
+    function nextClassAfter(i) {
+      for (var j = i + 1; j < slots.length; j++) if (slots[j].type === "instructional") return slots[j].week;
+      return null;
+    }
+    var hs = [{ h: 0, next: nextClassAfter(-1) }];
+    slots.forEach(function (s, i) { hs.push({ h: i + 1, next: nextClassAfter(i) }); });
+    hs = hs.filter(function (x) { return x.next !== null && x.next <= V.lastClass; });
+    var early = hs.filter(function (x) { return x.next <= V.earlyClasses; });
+    var late = hs.filter(function (x) { return x.next > V.earlyClasses; });
+    var earlyTotal = 0, amount = {};
+    early.forEach(function (x) {
+      var same = early.filter(function (y) { return y.next === x.next; }).length;
+      amount[x.h] = Math.round(V.earlyQuota / same); earlyTotal += amount[x.h];
+    });
+    earlyTotal = Math.min(earlyTotal, V.total);
+    late.forEach(function (x, i) {
+      amount[x.h] = Math.round((V.total - earlyTotal) * (i + 1) / late.length) - Math.round((V.total - earlyTotal) * i / late.length);
+    });
+    var plan = { preview: {}, review: {}, cls: {} }, pos = 0, prevH = null, previewedBefore = {};
+    hs.forEach(function (x) {
+      var end = Math.min(V.total, pos + (amount[x.h] || 0));
+      plan.preview[x.h] = [pos, end];
+      pos = end;
+      previewedBefore[x.next] = pos;
+    });
+    // review = the slice previewed in the previous homework week (every homework week, including after the last preview)
+    var ordered = [0].concat(slots.map(function (_, i) { return i + 1; }));
+    ordered.forEach(function (h) {
+      if (prevH !== null) plan.review[h] = plan.preview[prevH];
+      if (plan.preview[h]) prevH = h;
+    });
+    var learned = 0, earlyEnd = null, lateWeeks = weeks.filter(function (w) { return w > V.earlyClasses; });
+    weeks.forEach(function (w) {
+      var seen = 0;
+      Object.keys(previewedBefore).forEach(function (k) { if (+k <= w) seen = Math.max(seen, previewedBefore[k]); });
+      var target;
+      if (w === weeks[weeks.length - 1]) target = seen;
+      else if (w <= V.earlyClasses) target = V.earlyQuota * (weeks.indexOf(w) + 1);
+      else {
+        if (earlyEnd === null) earlyEnd = learned;
+        var n = lateWeeks.indexOf(w) + 1;
+        target = earlyEnd + Math.round((V.total - earlyEnd) * n / lateWeeks.length);
+      }
+      var end = Math.max(learned, Math.min(target, seen));
+      plan.cls[w] = [learned, end];
+      learned = end;
+    });
+    courseVocabCache = { sched: sched, plan: plan };
+    return plan;
+  }
+  // Homework: replace the stored daily vocabulary lines with the scheduled review/preview slices.
+  function applyCourseVocabHomework(assign, sched, h) {
+    var plan = courseVocabPlan(sched);
+    if (!plan || !assign || !assign.days || !assign.days.length) return assign;
+    function keep(list) { return (list || []).filter(function (it) { return !isVocabRangeItem(it) && !isWt50Item(it); }); }
+    var n = assign.days.length;
+    var rev = splitVocabRange(plan.review[h], n), pre = splitVocabRange(plan.preview[h], n);
+    return Object.assign({}, assign, { days: assign.days.map(function (d, i) {
+      return Object.assign({}, d, {
+        reviews: keep(d.reviews).concat(courseVocabItems(rev[i], "dayText")),
+        previews: keep(d.previews).concat(courseVocabItems(pre[i], "dayText")),
+        vocab: keep(d.vocab)
+      });
+    }) });
+  }
+  // Class items: the stored vocabulary lines (and the removed Watchtower 50-word lines) give way to this class's slice.
+  function applyCourseVocabClass(items, sched, week) {
+    var plan = courseVocabPlan(sched);
+    if (!plan) return items;
+    var out = [], at = -1;
+    items.forEach(function (it) {
+      if (isVocabRangeItem(it) || isWt50Item(it)) { if (at < 0) at = out.length; return; }
+      out.push(it);
+    });
+    var gen = courseVocabItems(plan.cls[week], "classText", week).map(function (it) { return Object.assign(it, { _wk: week }); });
+    if (at < 0) at = Math.min(1, out.length);
+    return out.slice(0, at).concat(gen, out.slice(at));
+  }
   function regionalFlag(key) {
     return typeof REGIONAL_SCHEDULE !== "undefined" && REGIONAL_SCHEDULE && REGIONAL_SCHEDULE[key] || null;
   }
@@ -6205,6 +6321,7 @@
       if (!s) return [];
       var shown = curriculumDisplayItems({ week: week, items: s.items || [] });
       if (week === 1 && regionalFlag("prelimItemsToWeek1")) shown = prelimItemsForWeek1(shown).concat(shown);
+      if (COURSE_VOCAB_ON) shown = shown.filter(function (it) { return !isVocabRangeItem(it) && !isWt50Item(it); });
       return shown.map(function (it) {
         var wk = it._wk === undefined ? week : it._wk;
         return { text: curriculumItemText(it, wk), link: it.link, _wk: wk };
@@ -7030,6 +7147,7 @@ function verifyDistribution(units, dist, pins) {
         var welcomeSeq = [{ cls: null }].concat(sched.slots.map(function (s) { return { cls: s.type === "instructional" ? grammarClassWeek(s.week) : null }; }));
         var welcomeSpan = grammarHomeworkSpan(welcomeSeq, 0);
         welcomeAssign = addGrammarHomework(welcomeAssign, null, welcomeSpan.preview, 0, welcomeSpan.parts);
+        welcomeAssign = applyCourseVocabHomework(welcomeAssign, sched, 0);
       }
       if (welcomeAssign) {
         html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + assignLabel(sched && sched.preliminaryMeeting && sched.preliminaryMeeting.calculatedDate) + '</span>' + currChev() + '</button><div class="curr-assign-body">';
@@ -7079,7 +7197,7 @@ function verifyDistribution(units, dist, pins) {
               currChev() + '</button>' +
               '<div class="group-body"><div class="curr-item-list">' +
               '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
-              '</div>' + grammarAssignCardHtml(addGrammarHomework(breakAssign(slot, instSlots), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), gramSpan.preview, slot.calculatedDate) +
+              '</div>' + grammarAssignCardHtml(applyCourseVocabHomework(addGrammarHomework(breakAssign(slot, instSlots), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), sched, slotIdx + 1), gramSpan.preview, slot.calculatedDate) +
               '</div></div>';
           } else {
             var badgeText = slot.week === 16 && !(courseGuideEntry(16) && !/총복습/.test((slot.title && (slot.title.ko || slot.title)) || "")) ?
@@ -7094,6 +7212,7 @@ function verifyDistribution(units, dist, pins) {
             if (slot.week === 1 && regionalFlag("prelimItemsToWeek1")) displayItems = prelimItemsForWeek1(displayItems).concat(displayItems);
             if (lastSplit && slot.week === lastSplit.week) displayItems = lastSplit.keep;
             else if (lastSplit && slot.week === lastSplit.week - 1) displayItems = displayItems.concat(lastSplit.move);
+            displayItems = applyCourseVocabClass(displayItems, sched, slot.week);
             if (!displayItems || displayItems.length === 0) {
               html += '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div>';
             } else {
@@ -7129,6 +7248,7 @@ function verifyDistribution(units, dist, pins) {
               }
               assign = addCourseReadingAssignments(assign, [prevInst ? prevInst.week : null, slot.week], nextInst ? nextInst.week : null);
               assign = addGrammarHomework(assign, gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts);
+              assign = applyCourseVocabHomework(assign, sched, slotIdx + 1);
             }
             if (assign) {
               html += '<div class="curr-assign-card" data-open="false">' +
