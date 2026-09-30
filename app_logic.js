@@ -2391,6 +2391,23 @@
     startReadAllSequence(btn.dataset.readall, btn);
   }, true);
 
+  // [어휘] 한자음 example line, Korean mode: "가수(歌手) — 가수" repeats itself, so when the meaning is the same
+  // Korean word only "가수(歌手)" is shown; with "·" alternatives the hanja follows the part it spells
+  // ("다과·종합진료(多科)" -> "다과(多科)·종합진료"). Otherwise "Korean(漢字) — meaning" as before.
+  function rwExampleKrHtml(kr, meaning) {
+    var m = /^(.*?)\(([^()]+)\)$/.exec(String(kr || "").trim());
+    var mean = String(meaning || "").trim();
+    if (m && mean && m[1].replace(/\s+/g, "") === mean.replace(/\s+/g, "")) {
+      var word = m[1].trim(), hanja = m[2], parts = word.split("·");
+      if (parts.length > 1) {
+        var at = -1;
+        parts.forEach(function (p, i) { if (at < 0 && p.trim().length === hanja.length) at = i; });
+        if (at >= 0) { parts[at] = parts[at] + "(" + hanja + ")"; return escapeHtml(parts.join("·")); }
+      }
+      return escapeHtml(word + "(" + hanja + ")");
+    }
+    return (kr ? escapeHtml(kr) + ' — ' : '') + escapeHtml(mean);
+  }
   function el(html) {
     var d = document.createElement("div");
     d.innerHTML = html.trim();
@@ -5181,7 +5198,7 @@
             '<div class="rhyme-word-ex"><span class="vn">' + escapeHtml(wd.example) + '</span>' +
             (wd.word_order_reversed ? '<span class="rw-order-flag">' + TU("[어순반대]") + '</span>' : '') +
             '<button class="speak-btn" data-speak="' + escapeAttr(wd.example) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
-            '<span class="rw-ex-kr">' + (currentLang === "ko" ? escapeHtml(wd.example_kr) + ' — ' : '') + escapeHtml(T(wd.example_mean)) +
+            '<span class="rw-ex-kr">' + (currentLang === "ko" ? rwExampleKrHtml(wd.example_kr, T(wd.example_mean)) : escapeHtml(T(wd.example_mean))) +
             (wd.alt_order_word ? ' (' + escapeHtml(altOrderNoteText(wd.alt_order_word)) + ')' : '') + '</span></div></div>';
         });
         html += '</div></div>';
@@ -8586,7 +8603,7 @@ function verifyDistribution(units, dist, pins) {
       }
       html += '<div class="rhyme-word-ex"><span class="vn">' + escapeHtml(wd.example) + '</span>' +
         '<button class="speak-btn" data-speak="' + escapeAttr(wd.example) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
-        '<span class="rw-ex-kr">' + (currentLang === "ko" && literalKr ? escapeHtml(literalKr) + ' — ' : '') + escapeHtml(T(wd.example_mean)) +
+        '<span class="rw-ex-kr">' + (currentLang === "ko" && literalKr ? rwExampleKrHtml(literalKr, T(wd.example_mean)) : escapeHtml(T(wd.example_mean))) +
         (wd.alt_order_word ? ' (' + escapeHtml(altOrderNoteText(wd.alt_order_word)) + ')' : '') + '</span></div></div>';
     });
     html += '</div>';
