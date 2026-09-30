@@ -36696,7 +36696,7 @@ const SONGS_DATA = [
       "id": "LAGU 93"
     },
     "title": {
-      "vi": "95 Xin Cha ban phước cho buổi nhóm họp",
+      "vi": "Xin Cha ban phước cho buổi nhóm họp",
       "ko": "우리의 모임을 축복하소서",
       "zh": "求你賜福給我們的聚會",
       "en": "Bless Our Meeting Together",
@@ -40256,7 +40256,7 @@ const SONGS_DATA = [
       "id": "LAGU 103"
     },
     "title": {
-      "vi": "105 Những anh chăn bầy—Món quà từ Đức Chúa Trời",
+      "vi": "Những anh chăn bầy—Món quà từ Đức Chúa Trời",
       "ko": "목자—사람들로 된 선물",
       "zh": "上帝賜下仁愛的牧人",
       "en": "Shepherds—Gifts in Men",
@@ -50302,7 +50302,7 @@ const SONGS_DATA = [
       "id": "LAGU 130"
     },
     "title": {
-      "vi": "150 Hãy tha thứ",
+      "vi": "Hãy tha thứ",
       "ko": "용서하는 사람이되리",
       "zh": "樂意寬恕",
       "en": "Be Forgiving",
@@ -51014,7 +51014,7 @@ const SONGS_DATA = [
       "id": "LAGU 132"
     },
     "title": {
-      "vi": "152 Từ nay chúng ta là một",
+      "vi": "Từ nay chúng ta là một",
       "ko": "이제 우리는 한 몸",
       "zh": "現在我們成為一體",
       "en": "Now We Are One",
@@ -51516,7 +51516,7 @@ const SONGS_DATA = [
       "id": "LAGU 134"
     },
     "title": {
-      "vi": "154 Con cái là sản nghiệp từ Đức Chúa Trời",
+      "vi": "Con cái là sản nghiệp từ Đức Chúa Trời",
       "ko": "자녀—하느님이 맡기신 재산",
       "zh": "兒女是上帝所託付的",
       "en": "Children Are a Trust From God",
@@ -53108,7 +53108,7 @@ const SONGS_DATA = [
       "id": "LAGU 138"
     },
     "title": {
-      "vi": "158 Tóc bạc là sự vinh hiển",
+      "vi": "Tóc bạc là sự vinh hiển",
       "ko": "백발이되어도 아름답다",
       "zh": "白髮是美麗的冠冕",
       "en": "Beauty in Gray-Headedness",
