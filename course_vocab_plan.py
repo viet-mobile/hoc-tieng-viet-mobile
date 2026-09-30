@@ -34,6 +34,37 @@ def vocab_stream():
     return out
 
 
+# [어휘] > [단어] merges the former 기본/상용/신권/인명 subtabs; the course studies them as one "단어" list.
+WORD_SUBVALS = ("basic", "freq", "theo", "names")
+WORD_TAG_ORDER = ("기본", "상용", "신권", "인명")
+WORD_CAT = {"ko": "단어", "vi": "Từ vựng", "cs": "Slova", "zh_cn": "词汇", "zh": "詞彙", "en": "Words", "fr": "Mots",
+            "de": "Wörter", "hu": "Szavak", "id": "Kata", "ja": "語彙", "pl": "Słowa"}
+
+
+def course_words(unified_words):
+    """UNIFIED_WORDS indices of the course's [단어] list: 기본, then 상용, 신권, 인명 (each word once, by its first
+    tag in that order; source order within a tag) -- the same words the [단어] tag filters show."""
+    out = []
+    for tag in WORD_TAG_ORDER:
+        for i, w in enumerate(unified_words):
+            tags = w.get("tags") or []
+            if tag in tags and not any(t in tags for t in WORD_TAG_ORDER[:WORD_TAG_ORDER.index(tag)]):
+                out.append(i)
+    return out
+
+
+def course_stream(words_len):
+    """vocab_stream() with the 기본/상용/신권/인명 pieces replaced by one "words" piece (after 반의)."""
+    out = []
+    for seg in vocab_stream():
+        if seg[0] in WORD_SUBVALS:
+            continue
+        out.append(seg)
+        if seg[0] == "antonym":
+            out.append(["words", 0, words_len])
+    return out
+
+
 def _template(text, cat, numbers):
     """A sample line -> template: its category name -> {c}, then the given numbers (in order) -> placeholders."""
     t = text.replace(cat, "{c}", 1)
@@ -44,7 +75,7 @@ def _template(text, cat, numbers):
     return t
 
 
-def course_vocab(course_values, early_classes=4, early_quota=170, last_class=15):
+def course_vocab(course_values, unified_words, early_classes=4, early_quota=170, last_class=15):
     """COURSE_VOCAB for app_logic.js, from the course's (12-language completed) weeks/assignments."""
     class_samples, day_samples = {}, {}
 
@@ -64,8 +95,9 @@ def course_vocab(course_values, early_classes=4, early_quota=170, last_class=15)
                 walk(x)
     walk(course_values)
 
-    stream = vocab_stream()
-    subvals = sorted({s[0] for s in stream})
+    words = course_words(unified_words)
+    stream = course_stream(len(words))
+    subvals = sorted({s[0] for s in stream} - {"words"})
     missing = [s for s in subvals if s not in class_samples]
     if missing or "rhyme" not in day_samples:
         raise SystemExit("course_vocab: no sample course line for %r" % (missing or ["rhyme (daily)"]))
@@ -76,6 +108,7 @@ def course_vocab(course_values, early_classes=4, early_quota=170, last_class=15)
             if not m:
                 raise SystemExit("course_vocab: no category in %r" % class_samples[sv][lang])
             cats[sv][lang] = m.group(1)
+    cats["words"] = dict(WORD_CAT)
 
     def sample_numbers(ko):
         week = re.search(r"(\d+)주차", ko)
@@ -90,6 +123,7 @@ def course_vocab(course_values, early_classes=4, early_quota=170, last_class=15)
         day_text[lang] = _template(day_samples["rhyme"][lang], _CAT.search(day_samples["rhyme"][lang]).group(1), [(db, "b"), (da, "a")])
     return {
         "stream": stream,
+        "words": words,
         "total": sum(e - s for _, s, e in stream),
         "cats": cats,
         "classText": class_text,
