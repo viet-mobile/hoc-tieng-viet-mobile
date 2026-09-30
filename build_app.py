@@ -885,13 +885,17 @@ def build_data_js(site):
     data_js = "".join(parts)
 
     if site == "general":
-        data_js += "const SONGS_DATA = [];\nconst SONG_MEANINGS = {};\n"
+        data_js += "const SONGS_DATA = [];\nconst SONG_MEANINGS = {};\nconst KID_SONGS = null;\n"
     else:
         # jw, jeonju, and ulsan get the full, identical Kingdom Songs source (same file, same
         # content) -- regional profiles are JW's full data set plus their own event layer.
         songs_data_js = open("songs_data.js", encoding="utf-8").read()
         song_meanings_js = open("song_meanings.js", encoding="utf-8").read()
         data_js += "\n" + songs_data_js + "\n" + song_meanings_js + "\n"
+        # 「여호와의 친구가 되세요」 songs: titles and jw.org links (kid_songs_data.json); lyric lines are filled only
+        # from the instructor's own spreadsheet, never typed in here.
+        with open("kid_songs_data.json", encoding="utf-8") as fh:
+            data_js += "const KID_SONGS = " + json.dumps(json.load(fh), ensure_ascii=False) + ";\n"
 
     return data_js
 
