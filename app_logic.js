@@ -4858,6 +4858,7 @@
     var filterEl = document.getElementById("vocab-tag-filters");
     if (filterEl) {
       filterEl.style.display = "";
+      filterEl.hidden = false;
       var presentTags = { all: true };
       words.forEach(function (w) { wordTagEntries(w).forEach(function (e) { presentTags[e.key] = true; }); });
       var shownTags = WORD_TAG_DEFS.filter(function (d) { return presentTags[d.key]; });
@@ -4988,7 +4989,9 @@
     var root = document.getElementById("vocab-root");
     var filterEl = document.getElementById("vocab-tag-filters");
     if (filterEl) {
+      // The tag row belongs to [단어] only; its CSS uses display:grid !important, so hide it with [hidden].
       filterEl.style.display = (vocabMode === "words") ? "" : "none";
+      filterEl.hidden = vocabMode !== "words";
     }
     if (vocabMode === "words") {
       renderVocabWords(root, q);
