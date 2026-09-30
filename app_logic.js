@@ -6363,6 +6363,50 @@
     if (at < 0) at = Math.min(1, out.length);
     return out.slice(0, at).concat(gen, out.slice(at));
   }
+  // ---- JEONJU: the opening/closing songs of each class (REGIONAL_SCHEDULE.songs) as course lines ----
+  // A class lists its two songs as study items; every homework week previews the next class's two songs
+  // and (from week 1) reviews the two songs of the last class. Each line links to that song in [문장] > [노래].
+  var COURSE_SONG_WORDS = {
+    open: { ko: "시작 노래", vi: "Bài hát mở đầu", en: "Opening song" },
+    close: { ko: "마치는 노래", vi: "Bài hát kết thúc", en: "Closing song" }
+  };
+  function courseSongItem(num, kind) {
+    var song = (typeof SONGS_DATA !== "undefined" ? SONGS_DATA : []).filter(function (x) { return x.number === num; })[0];
+    var text = {};
+    COURSE_READING_LANGS.forEach(function (l) {
+      var w = COURSE_SONG_WORDS[kind][l] || COURSE_SONG_WORDS[kind].en;
+      var lab = song ? (song.labels[l] || song.labels.en || song.labels.vi) : String(num);
+      var title = song ? (song.title[l] || song.title.en || song.title.vi) : "";
+      text[l] = w + ": " + lab + (title ? " " + title : "");
+    });
+    return { text: text, link: { tab: "curriculum", subAttr: "curriculum", subVal: "song", anchor: "song-" + num } };
+  }
+  function courseSongItems(key) {
+    var pair = (regionalFlag("songs") || {})[String(key)];
+    if (!pair) return [];
+    return [["open", pair[0]], ["close", pair[1]]].map(function (x) {
+      var n = parseInt(String(x[1]).replace(/^\D+/, ""), 10);
+      return n ? courseSongItem(n, x[0]) : null;
+    }).filter(Boolean);
+  }
+  function withoutSameKo(list, add) {
+    var have = {};
+    list.forEach(function (it) { have[(it.text && (it.text.ko || it.text)) || ""] = 1; });
+    return add.filter(function (it) { return !have[it.text.ko]; });
+  }
+  // Homework h (0 = before the first class, i + 1 = under schedule slot i): review the last class's songs,
+  // preview the next class's songs (Mon/Tue review, Wed/Thu preview).
+  function applyCourseSongHomework(assign, sched, h) {
+    if (!regionalFlag("songs") || !assign || !assign.days || assign.days.length < 4 || !sched || !sched.slots) return assign;
+    var slots = sched.slots, prev = null, next = null, i;
+    for (i = h - 1; i >= 0; i--) if (slots[i].type === "instructional") { prev = slots[i].week; break; }
+    for (i = h; i < slots.length; i++) if (slots[i].type === "instructional") { next = slots[i].week; break; }
+    var rev = prev === null ? [] : courseSongItems(prev), pre = next === null ? [] : courseSongItems(next);
+    var days = assign.days.map(function (d) { return Object.assign({}, d, { reviews: (d.reviews || []).slice(), previews: (d.previews || []).slice() }); });
+    rev.forEach(function (it, k) { var d = days[k]; d.reviews = withoutSameKo(d.reviews, [it]).concat(d.reviews); });
+    pre.forEach(function (it, k) { var d = days[2 + k]; d.previews = withoutSameKo(d.previews, [it]).concat(d.previews); });
+    return Object.assign({}, assign, { days: days });
+  }
   function regionalFlag(key) {
     return typeof REGIONAL_SCHEDULE !== "undefined" && REGIONAL_SCHEDULE && REGIONAL_SCHEDULE[key] || null;
   }
@@ -7199,7 +7243,17 @@ function verifyDistribution(units, dist, pins) {
       html += '</div>';
     }
 
-    if (sched && sched.preliminaryMeeting) html += courseServiceHtml("prelim");
+    if (sched && sched.preliminaryMeeting) {
+      html += courseServiceHtml("prelim");
+      var prelimSongs = courseSongItems("prelim");
+      if (prelimSongs.length) {
+        html += '<div class="curr-item-list curr-prelim-list">';
+        prelimSongs.forEach(function (it) {
+          html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(T(it.text)) + '</div>' + currLinkBtn(curriculumLinkForWeek(it.link, 0)) + '</div>';
+        });
+        html += '</div>';
+      }
+    }
     html += courseGuideHtml("preliminary");
     // JEONJU: the 10/3 preliminary meeting's own study items (CURR_WEEKS week 0), which otherwise only appear as homework.
     // When the meeting has no lesson (prelimItemsToWeek1) they are shown in the first class instead.
@@ -7223,7 +7277,7 @@ function verifyDistribution(units, dist, pins) {
         var welcomeSeq = [{ cls: null }].concat(sched.slots.map(function (s) { return { cls: s.type === "instructional" ? grammarClassWeek(s.week) : null }; }));
         var welcomeSpan = grammarHomeworkSpan(welcomeSeq, 0);
         welcomeAssign = addGrammarHomework(welcomeAssign, null, welcomeSpan.preview, 0, welcomeSpan.parts);
-        welcomeAssign = applyCourseVocabHomework(welcomeAssign, sched, 0);
+        welcomeAssign = applyCourseSongHomework(applyCourseVocabHomework(welcomeAssign, sched, 0), sched, 0);
         // Maintenance hook (tools/sync): a page that sets window.__COURSE_CAPTURE receives every card's items.
         if (window.__COURSE_CAPTURE && welcomeAssign) window.__COURSE_CAPTURE.hw[0] = JSON.parse(JSON.stringify(welcomeAssign));
       }
@@ -7275,7 +7329,7 @@ function verifyDistribution(units, dist, pins) {
               currChev() + '</button>' +
               '<div class="group-body"><div class="curr-item-list">' +
               '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
-              '</div>' + grammarAssignCardHtml(applyCourseVocabHomework(addGrammarHomework(breakAssign(slot, instSlots), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), sched, slotIdx + 1), gramSpan.preview, slot.calculatedDate) +
+              '</div>' + grammarAssignCardHtml(applyCourseSongHomework(applyCourseVocabHomework(addGrammarHomework(breakAssign(slot, instSlots), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), sched, slotIdx + 1), sched, slotIdx + 1), gramSpan.preview, slot.calculatedDate) +
               '</div></div>';
           } else {
             var badgeText = slot.week === 16 && !(courseGuideEntry(16) && !/총복습/.test((slot.title && (slot.title.ko || slot.title)) || "")) ?
@@ -7295,6 +7349,10 @@ function verifyDistribution(units, dist, pins) {
               displayItems = displayItems.concat(lastSplit.move.filter(function (it) { return !shownKo[(it.text && it.text.ko) || ""]; }));
             }
             displayItems = applyCourseVocabClass(displayItems, sched, slot.week);
+            var classSongs = courseSongItems(slot.week).map(function (it) { return Object.assign(it, { _wk: slot.week }); });
+            displayItems = withoutSameKo(displayItems, classSongs).concat(displayItems.filter(function (it) {
+              return !classSongs.some(function (x) { return x.text.ko === ((it.text && it.text.ko) || it.text); });
+            }));
             if (window.__COURSE_CAPTURE) window.__COURSE_CAPTURE.cls[slot.week] = JSON.parse(JSON.stringify(displayItems));
             if (!displayItems || displayItems.length === 0) {
               html += '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div>';
@@ -7332,6 +7390,7 @@ function verifyDistribution(units, dist, pins) {
               assign = addCourseReadingAssignments(assign, [prevInst ? prevInst.week : null, slot.week], nextInst ? nextInst.week : null);
               assign = addGrammarHomework(assign, gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts);
               assign = applyCourseVocabHomework(assign, sched, slotIdx + 1);
+              assign = applyCourseSongHomework(assign, sched, slotIdx + 1);
             }
             if (window.__COURSE_CAPTURE && assign) window.__COURSE_CAPTURE.hw[slot.week] = JSON.parse(JSON.stringify(assign));
             if (assign) {
