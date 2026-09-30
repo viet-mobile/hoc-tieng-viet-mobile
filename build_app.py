@@ -915,6 +915,7 @@ def build_data_js(site):
             "cancellations": jeonju_data.JEONJU_CANCELLATIONS,
             "reschedules": jeonju_data.JEONJU_RESCHEDULES,
             "prayers": jeonju_data.JEONJU_PRAYERS,
+            "songs": jeonju_data.JEONJU_SONGS,
             "breakAssignments": jeonju_data.JEONJU_BREAK_ASSIGNMENTS,
             "prelimItemsToWeek1": jeonju_data.JEONJU_PRELIM_ITEMS_TO_WEEK1,
             "lastWeekOnly": jeonju_data.JEONJU_LAST_WEEK_ONLY,

@@ -118,6 +118,27 @@ JEONJU_PRAYERS = {
     "16": [_P("이주복", "ko"), _P("김한빈", "vi")],
 }
 
+# Opening / closing Vietnamese song of each class (supplied by the user), keyed like JEONJU_PRAYERS.
+JEONJU_SONGS = {
+    "prelim": ['BÀI HÁT 133 Thờ phượng Đức Giê-hô-va trong thời thanh xuân', 'BÀI HÁT 46 Cảm tạ Cha Giê-hô-va'],
+    "1": ['BÀI HÁT 41 Xin nghe lời cầu nguyện của con', 'BÀI HÁT 80 “Nếm thử và nghiệm thấy Đức Giê-hô-va tốt thay!”'],
+    "2": ['BÀI HÁT 93 Xin Cha ban phước cho buổi nhóm họp', 'BÀI HÁT 17 “Tôi muốn”'],
+    "3": ['BÀI HÁT 47 Hãy cầu nguyện với Cha Giê-hô-va hằng ngày', 'BÀI HÁT 5 Các công việc kỳ diệu của Đức Chúa Trời'],
+    "4": ['BÀI HÁT 51 Chúng ta dâng mình cho Đức Chúa Trời!', 'BÀI HÁT 100 Hãy bày tỏ lòng hiếu khách'],
+    "5": ['BÀI HÁT 135 Đức Giê-hô-va mến gọi: ‘Hỡi con, hãy khôn ngoan!’', 'BÀI HÁT 67 “Hãy rao giảng lời Đức Chúa Trời”'],
+    "6": ['BÀI HÁT 54 “Đây là đường”', 'BÀI HÁT 73 Xin giúp chúng con dạn dĩ'],
+    "7": ['BÀI HÁT 70 Tìm kiếm những người xứng đáng', 'BÀI HÁT 59 Hãy cùng tôi ngợi khen Đức Giê-hô-va'],
+    "8": ['BÀI HÁT 96 Cuốn sách của Đức Chúa Trời—Kho tàng vô giá', 'BÀI HÁT 11 Công trình sáng tạo ngợi khen Đức Chúa Trời'],
+    "9": ['BÀI HÁT 41 Xin nghe lời cầu nguyện của con', 'BÀI HÁT 80 “Nếm thử và nghiệm thấy Đức Giê-hô-va tốt thay!”'],
+    "10": ['BÀI HÁT 93 Xin Cha ban phước cho buổi nhóm họp', 'BÀI HÁT 17 “Tôi muốn”'],
+    "11": ['BÀI HÁT 47 Hãy cầu nguyện với Cha Giê-hô-va hằng ngày', 'BÀI HÁT 5 Các công việc kỳ diệu của Đức Chúa Trời'],
+    "12": ['BÀI HÁT 51 Chúng ta dâng mình cho Đức Chúa Trời!', 'BÀI HÁT 100 Hãy bày tỏ lòng hiếu khách'],
+    "13": ['BÀI HÁT 135 Đức Giê-hô-va mến gọi: ‘Hỡi con, hãy khôn ngoan!’', 'BÀI HÁT 67 “Hãy rao giảng lời Đức Chúa Trời”'],
+    "14": ['BÀI HÁT 54 “Đây là đường”', 'BÀI HÁT 73 Xin giúp chúng con dạn dĩ'],
+    "15": ['BÀI HÁT 70 Tìm kiếm những người xứng đáng', 'BÀI HÁT 59 Hãy cùng tôi ngợi khen Đức Giê-hô-va'],
+    "16": ['BÀI HÁT 133 Thờ phượng Đức Giê-hô-va trong thời thanh xuân', 'BÀI HÁT 46 Cảm tạ Cha Giê-hô-va'],
+}
+
 # Homework for the weeks without class (keyed by the cancelled date): review the named source weeks'
 # study items and preview the next class's items, spread over Monday-Friday.
 JEONJU_BREAK_ASSIGNMENTS = {
