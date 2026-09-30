@@ -216,7 +216,8 @@
   // back to returning the Korean unchanged, same "never breaks, just shows Korean until
   // translated" philosophy as T() above -- this lets translation coverage grow incrementally.
   var I18N_UI = {
-    "예비 모임": {"vi": "Buổi họp chuẩn bị", "cs": "Úvodní setkání", "zh_cn": "预备聚会", "zh": "預備聚會", "en": "Preliminary meeting", "fr": "Réunion préparatoire", "de": "Vorbereitendes Treffen", "hu": "Előkészítő találkozó", "id": "Pertemuan persiapan", "ja": "準備の集まり", "pl": "Spotkanie wstępne"},
+    "여호와의 친구가 되세요": {"vi": "Trở thành bạn Đức Giê-hô-va", "cs": "Buď Jehovovým přítelem", "zh_cn": "成为耶和华的朋友", "zh": "成為耶和華的朋友", "en": "Become Jehovah's Friend", "fr": "Deviens l’ami de Jéhovah", "de": "Werde Jehovas Freund", "hu": "Légy Jehova barátja", "id": "Jadilah Sahabat Yehuwa", "ja": "エホバの友達になろう", "pl": "Zostań przyjacielem Jehowy"},
+    "jw.org의 어린이 노래예요. 곡 제목을 누르면 가사와 음성이 있는 jw.org 페이지가 열려요.": {"vi": "Các bài hát thiếu nhi trên jw.org. Bấm liên kết để mở trang jw.org có lời bài hát và âm thanh.", "cs": "Dětské písně z jw.org. Odkaz otevře stránku jw.org s textem a nahrávkou.", "zh_cn": "jw.org上的儿童歌曲。点击链接可打开有歌词和音频的jw.org页面。", "zh": "jw.org上的兒童歌曲。點擊連結可打開有歌詞和音訊的jw.org頁面。", "en": "Children's songs from jw.org. The links open the jw.org page with the lyrics and audio.", "fr": "Chants pour enfants de jw.org. Les liens ouvrent la page jw.org avec les paroles et l’audio.", "de": "Kinderlieder von jw.org. Die Links öffnen die jw.org-Seite mit Text und Audio.", "hu": "Gyerekénekek a jw.org-ról. A hivatkozás megnyitja a jw.org oldalt a szöveggel és a hanganyaggal.", "id": "Lagu anak-anak dari jw.org. Tautan membuka halaman jw.org yang berisi lirik dan audio.", "ja": "jw.orgの子ども向けの歌です。リンクを押すと歌詞と音声のあるjw.orgのページが開きます。", "pl": "Piosenki dla dzieci z jw.org. Odnośniki otwierają stronę jw.org z tekstem i nagraniem."},
     "대역 읽기": {"vi": "Đọc song ngữ", "cs": "Dvojjazyčné čtení", "zh_cn": "对照阅读", "zh": "對照閱讀", "en": "Parallel reading", "fr": "Lecture bilingue", "de": "Zweisprachig lesen", "hu": "Kétnyelvű olvasás", "id": "Bacaan dwibahasa", "ja": "対訳リーディング", "pl": "Czytanie dwujęzyczne"},
     "내 표현집": {"vi": "Sổ tay cụm từ", "cs": "Moje fráze", "zh_cn": "我的短语本", "zh": "我的短語本", "en": "My phrase book", "fr": "Mon carnet d’expressions", "de": "Mein Sprachführer", "hu": "Kifejezésfüzetem", "id": "Buku frasa saya", "ja": "マイ表現集", "pl": "Mój rozmówki"},
     "표현집에 추가": {"vi": "Thêm vào sổ tay", "cs": "Přidat do frází", "zh_cn": "加入短语本", "zh": "加入短語本", "en": "Add to phrase book", "fr": "Ajouter au carnet", "de": "Zum Sprachführer hinzufügen", "hu": "Hozzáadás a füzethez", "id": "Tambahkan ke buku frasa", "ja": "表現集に追加", "pl": "Dodaj do rozmówek"},
@@ -8548,6 +8549,35 @@ function verifyDistribution(units, dist, pins) {
     return s.charAt(0) === "(" || s.charAt(0) === "（";
   }
 
+  // 「여호와의 친구가 되세요」 songs (KID_SONGS): Vietnamese and Korean titles side by side, with links to the song
+  // pages on jw.org (lyrics, audio, video). Lyric lines appear here once they are supplied through the data file.
+  function kidSongsHtml() {
+    if (typeof KID_SONGS === "undefined" || !KID_SONGS || !(KID_SONGS.songs || []).length) return "";
+    var html = '<div class="p-section kid-songs" data-anchor="kid-songs"><h3>' + escapeHtml(TU("여호와의 친구가 되세요")) + '</h3>' +
+      '<div class="chain-note">' + escapeHtml(TU("jw.org의 어린이 노래예요. 곡 제목을 누르면 가사와 음성이 있는 jw.org 페이지가 열려요.")) + '</div><div class="kid-song-list">';
+    KID_SONGS.songs.forEach(function (s) {
+      var target = currentLang === "vi" ? "" : (s.title[currentLang] || s.title.ko || "");
+      html += '<div class="kid-song" data-anchor="kidsong-' + s.number + '"><div class="song-badge">' + s.number + '</div><div class="kid-song-info">' +
+        '<div class="song-item-vi vn">' + escapeHtml(s.title.vi) +
+        '<button type="button" class="speak-btn" data-speak="' + escapeAttr(s.title.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
+        (target ? '<div class="song-item-target">' + escapeHtml(target) + '</div>' : '') +
+        '<div class="kid-song-links"><a href="' + escapeAttr(s.url.vi) + '" target="_blank" rel="noopener">jw.org (Tiếng Việt)</a>' +
+        (s.url.ko ? '<a href="' + escapeAttr(s.url.ko) + '" target="_blank" rel="noopener">jw.org (한국어)</a>' : '') + '</div>';
+      if (s.lines && s.lines.length) {
+        html += '<div class="talk-lines kid-song-lines">';
+        s.lines.forEach(function (l) {
+          if (!l.vi) return;
+          var tr = currentLang === "vi" ? "" : (l[currentLang] || l.ko || "");
+          html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
+            '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
+            (tr ? '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(tr) + '</span></div>' : '') + '</div></div>';
+        });
+        html += '</div>';
+      }
+      html += '</div></div>';
+    });
+    return html + '</div></div>';
+  }
   function renderCurrSongs(targetSongNum) {
     var root = document.getElementById("curr-songs-root");
     if (!root) return;
@@ -8797,6 +8827,7 @@ function verifyDistribution(units, dist, pins) {
 
     html += '</div></div>'; // close dialog & modal
     html += '</div>'; // close p-section
+    html += kidSongsHtml();
 
     root.innerHTML = html;
     bindCurrSpeakBtns(root);
