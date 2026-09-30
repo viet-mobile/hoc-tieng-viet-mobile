@@ -411,8 +411,22 @@
     if (!list || !list.length) return '';
     return '<div class="guide-label">' + esc(label) + '</div><ul>' + list.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
   }
+  // Estimated minutes of each part of the class (teaching_guide.json timePlan, from the class-time simulation).
+  function guideTimePlan(u) {
+    if (!u.timePlan || !u.timePlan.length) return '';
+    var total = 0;
+    var rows = u.timePlan.map(function (p) {
+      total += p[1];
+      return '<tr><td>' + esc(p[0]) + '</td><td class="guide-time-min">' + esc(String(p[1])) + '</td></tr>';
+    }).join('');
+    return '<div class="guide-label">예상 시간 배분 (2시간 기준, 분)</div>' +
+      '<table class="guide-time"><tbody>' + rows + '<tr class="guide-time-total"><td>합계</td><td class="guide-time-min">' + total + '</td></tr></tbody></table>' +
+      '<p class="guide-time-note">일반 문법은 핵심 문형 3~4개, 이웃 대화는 앞부분 역할 읽기, 행누·랑제는 한 단락, 어휘는 약 100개만 수업에서 다루고 나머지는 과제입니다. 시간은 자료 분량으로 계산한 예상값입니다.</p>' +
+      guideList('과제로만 (수업에서 다루지 않음; 전주 예습 · 후주 복습)', u.homeworkOnly);
+  }
   function guideUnitBody(u) {
     return '<div class="guide-body">' + ((u.methods || []).length ? '<div class="guide-label">적용할 교수법</div><div>' + guideChips(u.methods) + '</div>' : '') +
+      guideTimePlan(u) +
       guideList('수업 적용', u.notes) + guideList('교사 준비물', u.teacherPrep) + guideList('학생 준비물 (학생 [과정]에 표시)', u.studentMaterials) + '</div>';
   }
   function guideUnitFor(week) {

@@ -6029,6 +6029,11 @@
   function cancellationReasonLabel(reason) {
     return typeof reason === "string" ? TU(reason) : T(reason);
   }
+  function curriculumItemTextKo(it, weekKey) {
+    var lang = currentLang;
+    currentLang = "ko";
+    try { return String(curriculumItemText(it, weekKey) || "").trim(); } finally { currentLang = lang; }
+  }
   function curriculumItemText(it, weekKey) {
     var text = T(it.text);
     if (currentLang !== "ko") return text;
@@ -6424,6 +6429,51 @@
     var days = assign.days.map(function (d) { return Object.assign({}, d, { reviews: (d.reviews || []).slice(), previews: (d.previews || []).slice() }); });
     rev.forEach(function (it, k) { var d = days[k]; d.reviews = withoutSameKo(d.reviews, [it]).concat(d.reviews); });
     pre.forEach(function (it, k) { var d = days[2 + k]; d.previews = withoutSameKo(d.previews, [it]).concat(d.previews); });
+    return Object.assign({}, assign, { days: days });
+  }
+  // ---- REGIONAL_SCHEDULE.classScope: what a 2-hour class covers (jeonju_data.JEONJU_CLASS_SCOPE) ----
+  function scopeKo(it) { var t = it && it.text; return String((t && typeof t === "object" ? t.ko : t) || "").trim(); }
+  function scopeWeek(week) { var sc = regionalFlag("classScope"); return (sc && sc.weeks && sc.weeks[String(week)]) || {}; }
+  // The note under a class item ("수업: 핵심 문형 3~4개 · 나머지는 과제"), or "".
+  function classScopeNote(it, week, shownKo) {
+    var sc = regionalFlag("classScope");
+    if (!sc) return "";
+    var ko = shownKo || scopeKo(it), key = (scopeWeek(week).notes || {})[ko] || "";
+    if (!key) (sc.rules || []).some(function (r) { return new RegExp(r[0]).test(ko) && (key = r[1]); });
+    if (key === "vocab") {
+      var vr = it.link && it.link.vocabRange;
+      if (!vr || vr.end - vr.start <= 100) return "";
+    }
+    return key && sc.notes[key] ? T(sc.notes[key]) : "";
+  }
+  function grammarRangeOf(ko) { var m = /^일반 문법 (\d+)(?:~(\d+))?번/.exec(ko || ""); return m ? [+m[1], +(m[2] || m[1])] : null; }
+  // A homework row is (part of) a homework-only item: the same Korean text, or a [일반 문법] range inside the item's range.
+  function sameScopeItem(rowKo, itemKo) {
+    if (rowKo === itemKo) return true;
+    var a = grammarRangeOf(rowKo), b = grammarRangeOf(itemKo);
+    return !!(a && b && a[0] >= b[0] && a[1] <= b[1]);
+  }
+  // Homework between two classes: the homework-only items of the class before it are reviewed (never previewed)
+  // and those of the class after it are previewed.
+  function applyHomeworkOnly(assign, reviewItems, previewItems) {
+    if (!assign || !assign.days || !assign.days.length || (!reviewItems.length && !previewItems.length)) return assign;
+    var days = assign.days.map(function (d) { return Object.assign({}, d, { reviews: (d.reviews || []).slice(), previews: (d.previews || []).slice() }); });
+    reviewItems.forEach(function (item, k) {
+      var found = false;
+      days.forEach(function (d) {
+        d.previews = d.previews.filter(function (x) {
+          if (!sameScopeItem(scopeKo(x), item.ko)) return true;
+          if (!days.some(function (e) { return e.reviews.some(function (y) { return scopeKo(y) === scopeKo(x); }); })) d.reviews.push(x);
+          found = true; return false;
+        });
+        if (d.reviews.some(function (x) { return sameScopeItem(scopeKo(x), item.ko); })) found = true;
+      });
+      if (!found) days[k % days.length].reviews.push(item.it);
+    });
+    previewItems.forEach(function (item, k) {
+      var found = days.some(function (d) { return d.previews.some(function (x) { return sameScopeItem(scopeKo(x), item.ko); }); });
+      if (!found) days[(k + 2) % days.length].previews.push(item.it);
+    });
     return Object.assign({}, assign, { days: days });
   }
   function regionalFlag(key) {
@@ -7265,6 +7315,15 @@ function verifyDistribution(units, dist, pins) {
     if (sched && sched.preliminaryMeeting) {
       html += courseServiceHtml("prelim");
       var prelimSongs = courseSongItems("prelim");
+      // classScope: what the first class hands over to this meeting (phone setup) sits between the two songs.
+      var toPrelim = scopeWeek(1).toPrelim || [];
+      if (toPrelim.length && rp && rp.identity) {
+        var firstSlot = sched.slots.filter(function (s) { return s.type === "instructional"; })[0];
+        var firstItems = firstSlot ? prelimItemsForWeek1(firstSlot.items || []).concat(firstSlot.items || []) : [];
+        var handed = firstItems.filter(function (it) { return toPrelim.indexOf(scopeKo(it)) >= 0; });
+        prelimSongs = prelimSongs.filter(function (it) { return it._song !== "close"; }).concat(handed,
+          prelimSongs.filter(function (it) { return it._song === "close"; }));
+      }
       if (prelimSongs.length) {
         html += '<div class="curr-item-list curr-prelim-list">';
         prelimSongs.forEach(function (it) {
@@ -7338,6 +7397,30 @@ function verifyDistribution(units, dist, pins) {
             (lastOnly.indexOf(String(ko || "").trim()) >= 0 ? lastSplit.keep : lastSplit.move).push(Object.assign({}, it, { _wk: lastSlot.week }));
           });
         }
+        // A class's study items before the songs are added (shared by the class card and the homework-only lookup).
+        var classItemsOf = function (slot) {
+          var list = curriculumDisplayItems({ week: slot.week, items: slot.items || [] });
+          if (slot.week === 1 && regionalFlag("prelimItemsToWeek1")) list = prelimItemsForWeek1(list).concat(list);
+          if (lastSplit && slot.week === lastSplit.week) list = lastSplit.keep;
+          else if (lastSplit && slot.week === lastSplit.week - 1) {
+            var shownKo = {};
+            list.forEach(function (it) { shownKo[(it.text && it.text.ko) || ""] = 1; });
+            list = list.concat(lastSplit.move.filter(function (it) { return !shownKo[(it.text && it.text.ko) || ""]; }));
+          }
+          return applyCourseVocabClass(list, sched, slot.week);
+        };
+        // classScope homework-only items per class week: [{ko, it}] with the item's text and link as the class would show it.
+        var homeworkOnlyOf = {};
+        instSlots.forEach(function (s) {
+          var names = scopeWeek(s.week).homeworkOnly || [];
+          if (!names.length) return;
+          var items = classItemsOf(s);
+          homeworkOnlyOf[s.week] = names.map(function (name) {
+            var it = items.filter(function (x) { return curriculumItemTextKo(x, x._wk === undefined ? s.week : x._wk) === name; })[0];
+            if (!it && grammarRangeOf(name)) { var r = grammarRangeOf(name); it = courseGrammarItem(r[0], r[1]); }
+            return it ? { ko: name, it: it } : null;
+          }).filter(Boolean);
+        });
         // welcome (homework before the first class), then every slot: where each homework week sits for [일반 문법]
         var gramSeq = [{ cls: null }].concat(sched.slots.map(function (s) { return { cls: s.type === "instructional" ? grammarClassWeek(s.week) : null }; }));
         sched.slots.forEach(function (slot, slotIdx) {
@@ -7359,15 +7442,13 @@ function verifyDistribution(units, dist, pins) {
               (slot.note ? '<span class="curr-week-note">' + escapeHtml(T(slot.note)) + '</span>' : '') + '</span>' +
               currChev() + '</button>' +
               '<div class="group-body">' + courseServiceHtml(slot.week) + courseGuideHtml(slot.week) + '<div class="curr-item-list">';
-            var displayItems = curriculumDisplayItems({ week: slot.week, items: slot.items || [] });
-            if (slot.week === 1 && regionalFlag("prelimItemsToWeek1")) displayItems = prelimItemsForWeek1(displayItems).concat(displayItems);
-            if (lastSplit && slot.week === lastSplit.week) displayItems = lastSplit.keep;
-            else if (lastSplit && slot.week === lastSplit.week - 1) {
-              var shownKo = {};
-              displayItems.forEach(function (it) { shownKo[(it.text && it.text.ko) || ""] = 1; });
-              displayItems = displayItems.concat(lastSplit.move.filter(function (it) { return !shownKo[(it.text && it.text.ko) || ""]; }));
-            }
-            displayItems = applyCourseVocabClass(displayItems, sched, slot.week);
+            var displayItems = classItemsOf(slot);
+            var scopeNow = scopeWeek(slot.week);
+            // classScope: homework-only items and what the preliminary meeting took over are not on the class card.
+            displayItems = displayItems.filter(function (it) {
+              var ko = curriculumItemTextKo(it, it._wk === undefined ? slot.week : it._wk);
+              return !(scopeNow.homeworkOnly || []).some(function (x) { return sameScopeItem(ko, x); }) && (scopeNow.toPrelim || []).indexOf(scopeKo(it)) < 0;
+            });
             var classSongs = courseSongItems(slot.week).map(function (it) { return Object.assign(it, { _wk: slot.week }); });
             // 시작 노래 first, 마치는 노래 last in the week's learning list.
             var songsAdd = withoutSameKo(displayItems, classSongs);
@@ -7382,8 +7463,10 @@ function verifyDistribution(units, dist, pins) {
             } else {
               displayItems.forEach(function (it) {
                 var itWeek = it._wk === undefined ? slot.week : it._wk;
+                var scopeNote = classScopeNote(it, slot.week, curriculumItemTextKo(it, itWeek));
                 html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, itWeek)) +
-                  (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') + '</div>' +
+                  (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') +
+                  (scopeNote ? '<span class="curr-item-scope">' + escapeHtml(scopeNote) + '</span>' : '') + '</div>' +
                   currLinkBtn(curriculumLinkForWeek(it.link, itWeek)) + '</div>';
               });
             }
@@ -7414,6 +7497,7 @@ function verifyDistribution(units, dist, pins) {
               assign = addGrammarHomework(assign, gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts);
               assign = applyCourseVocabHomework(assign, sched, slotIdx + 1);
               assign = applyCourseSongHomework(assign, sched, slotIdx + 1);
+              assign = applyHomeworkOnly(assign, homeworkOnlyOf[slot.week] || [], homeworkOnlyOf[nextInst.week] || []);
             }
             if (window.__COURSE_CAPTURE && assign) window.__COURSE_CAPTURE.hw[slot.week] = JSON.parse(JSON.stringify(assign));
             if (assign) {

@@ -154,6 +154,64 @@ JEONJU_PRELIM_ITEMS_TO_WEEK1 = True
 # The last class (2027-02-13) has only these; every other item of that week is done at the class before it.
 JEONJU_LAST_WEEK_ONLY = ["파수대 집회 실연 (사회, 낭독, 발표)", "졸업", "베트남어 노래 (46번) 합창"]
 
+# What each 2-hour class can actually cover (class-time simulation, 2026-10): some items are only started in class and
+# finished as homework, and a few are homework only. Applied by the page over the static or live curriculum.
+# - rules: [regex on the item's Korean text, note key] -> the note shown under the item in the class card.
+#   "vocab" is shown only on a vocabulary range of more than 100 words.
+# - weeks[source week]: "notes" {item Korean text: note key}; "homeworkOnly" [item Korean text or "일반 문법 a~b번"]:
+#   not taught in that class -- previewed in the homework before it and reviewed in the homework after it;
+#   "toPrelim": done at the preliminary meeting instead (phone setup).
+# - notes: the 12-language note texts.
+JEONJU_CLASS_SCOPE = {
+    "rules": [
+        ["^일반 문법 ", "grammar"],
+        ["^이웃 사람과의 대화 ", "neighbor"],
+        ["^(행누 \\d+과:|행누:|랑제 )", "reading"],
+        ["^베트남어 어휘 학습 ", "vocab"],
+    ],
+    "weeks": {
+        "1": {"toPrelim": ["베트남어 발음 설정"]},
+        "7": {"notes": {"베트남어로 일기쓰고 발표": "groups"}, "homeworkOnly": ["문장 생성기로 문장 만들기 연습"]},
+        "11": {"homeworkOnly": ["제공 연설 1,2,3,4 복습"]},
+        "15": {"homeworkOnly": ["일반 문법 197~209번", "이웃 사람과의 대화 11번", "베트남어 B1/B2 문형 16~20 (A–Z 문법 사전)",
+                                "문화 17번", "일상 생활 문장 180~190번", "제공 연설 전체 복습"]},
+    },
+    "notes": {
+        "grammar": {"ko": "수업: 핵심 문형 3~4개 · 나머지는 과제", "en": "In class: 3–4 key patterns · the rest is homework",
+                    "vi": "Trên lớp: 3–4 mẫu câu chính · phần còn lại là bài tập", "ja": "授業：重要文型3～4個・残りは宿題",
+                    "zh": "課堂：3～4個重點句型・其餘為作業", "zh_cn": "课堂：3～4个重点句型・其余为作业",
+                    "cs": "Na hodině: 3–4 hlavní vzorce · zbytek za domácí úkol", "de": "Im Unterricht: 3–4 Kernmuster · der Rest als Hausaufgabe",
+                    "fr": "En classe : 3 ou 4 structures clés · le reste en devoir", "hu": "Órán: 3–4 fő minta · a többi házi feladat",
+                    "id": "Di kelas: 3–4 pola utama · sisanya PR", "pl": "Na zajęciach: 3–4 główne wzorce · reszta jako zadanie domowe"},
+        "neighbor": {"ko": "수업: 앞부분만 역할 읽기 · 전체는 과제", "en": "In class: role-read the first part · the whole dialogue is homework",
+                     "vi": "Trên lớp: đọc phân vai phần đầu · cả bài là bài tập", "ja": "授業：前半だけ役割読み・全体は宿題",
+                     "zh": "課堂：只分角色朗讀前半・全文為作業", "zh_cn": "课堂：只分角色朗读前半・全文为作业",
+                     "cs": "Na hodině: čtení první části po rolích · celý rozhovor za úkol",
+                     "de": "Im Unterricht: ersten Teil mit verteilten Rollen lesen · das Ganze als Hausaufgabe",
+                     "fr": "En classe : lecture à rôles du début · le dialogue entier en devoir", "hu": "Órán: az eleje szerepek szerint · az egész házi feladat",
+                     "id": "Di kelas: baca berperan bagian awal · seluruh dialog PR", "pl": "Na zajęciach: początek z podziałem na role · całość jako zadanie domowe"},
+        "reading": {"ko": "수업: 한 단락만 함께 읽기 · 나머지는 과제", "en": "In class: read one paragraph together · the rest is homework",
+                    "vi": "Trên lớp: cùng đọc một đoạn · phần còn lại là bài tập", "ja": "授業：1段落だけ一緒に読む・残りは宿題",
+                    "zh": "課堂：只一起讀一段・其餘為作業", "zh_cn": "课堂：只一起读一段・其余为作业",
+                    "cs": "Na hodině: společně jeden odstavec · zbytek za úkol", "de": "Im Unterricht: einen Absatz gemeinsam lesen · der Rest als Hausaufgabe",
+                    "fr": "En classe : un paragraphe lu ensemble · le reste en devoir", "hu": "Órán: egy bekezdés közösen · a többi házi feladat",
+                    "id": "Di kelas: baca satu paragraf bersama · sisanya PR", "pl": "Na zajęciach: jeden akapit wspólnie · reszta jako zadanie domowe"},
+        "vocab": {"ko": "수업: 약 100개만 확인 · 나머지는 매일 어휘 과제", "en": "In class: about 100 words · the rest in the daily vocabulary homework",
+                  "vi": "Trên lớp: khoảng 100 từ · phần còn lại trong bài tập từ vựng hằng ngày", "ja": "授業：約100語だけ確認・残りは毎日の語彙の宿題",
+                  "zh": "課堂：只確認約100個・其餘在每日詞彙作業", "zh_cn": "课堂：只确认约100个・其余在每日词汇作业",
+                  "cs": "Na hodině: asi 100 slov · zbytek v denním úkolu ze slovíček", "de": "Im Unterricht: etwa 100 Wörter · der Rest in der täglichen Vokabelaufgabe",
+                  "fr": "En classe : une centaine de mots · le reste dans le devoir quotidien de vocabulaire", "hu": "Órán: kb. 100 szó · a többi a napi szókincsfeladatban",
+                  "id": "Di kelas: sekitar 100 kata · sisanya di PR kosakata harian", "pl": "Na zajęciach: około 100 słów · reszta w codziennym zadaniu ze słownictwa"},
+        "groups": {"ko": "수업: 조별 발표", "en": "In class: presentations in small groups", "vi": "Trên lớp: trình bày theo nhóm",
+                   "ja": "授業：グループ別発表", "zh": "課堂：分組發表", "zh_cn": "课堂：分组发表", "cs": "Na hodině: prezentace ve skupinách",
+                   "de": "Im Unterricht: Vorträge in Kleingruppen", "fr": "En classe : présentations par petits groupes",
+                   "hu": "Órán: bemutatás kiscsoportokban", "id": "Di kelas: presentasi per kelompok", "pl": "Na zajęciach: prezentacje w grupach"},
+    },
+}
+_LANGS12 = {"ko", "vi", "en", "ja", "zh", "zh_cn", "cs", "de", "fr", "hu", "id", "pl"}
+assert all(set(t) == _LANGS12 and all(t.values()) for t in JEONJU_CLASS_SCOPE["notes"].values())
+assert all(k in JEONJU_CLASS_SCOPE["notes"] for _, k in JEONJU_CLASS_SCOPE["rules"])
+
 # Regional editing boundary: [교과] / [16주 과정] overrides
 # When None, build_app.py inherits the shared JW CURR_WEEKS, CURR_WELCOME, CURR_PHASES, CURR_ASSIGNMENTS.
 JEONJU_CURR_WELCOME = None

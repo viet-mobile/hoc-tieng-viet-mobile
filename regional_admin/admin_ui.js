@@ -311,6 +311,11 @@ const STYLES = `
     .guide-unit summary { cursor: pointer; font-weight: 700; }
     .guide-chip { display: inline-block; background: var(--primary-light); color: var(--primary); border-radius: 12px; padding: 2px 9px; font-size: 12px; font-weight: 700; margin: 2px 4px 2px 0; }
     .guide-label { font-weight: 700; font-size: 12px; color: var(--ink-soft); margin-top: 8px; }
+    .guide-time { border-collapse: collapse; margin-top: 4px; font-size: 13px; width: 100%; max-width: 520px; }
+    .guide-time td { border-bottom: 1px solid var(--border); padding: 3px 8px 3px 0; }
+    .guide-time-min { text-align: right; width: 48px; font-variant-numeric: tabular-nums; }
+    .guide-time-total td { font-weight: 700; border-bottom: none; }
+    .guide-time-note { margin-top: 4px; }
     .guide-hint { background: #FFF8E6; border: 1px solid #FFE08A; border-radius: 6px; padding: 10px 12px; font-size: 13px; margin-bottom: 14px; }
 `;
 
