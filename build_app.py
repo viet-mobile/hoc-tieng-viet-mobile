@@ -487,6 +487,40 @@ if os.path.exists(jw_extraction_data_path):
 else:
     jw_extraction_data = None
 
+def _admin_json(name):
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "regional_admin", name), encoding="utf-8") as f:
+        return json.load(f)
+
+
+def write_admin_course_vi(region, values):
+    """regional_admin/course_vi.json[region]: Korean -> Vietnamese of every course text of this site, so /admin
+    (which only has D1's ko/en) can show the course in Vietnamese. Rewritten only when it changes."""
+    found = {}
+
+    def walk(v):
+        if isinstance(v, dict):
+            if isinstance(v.get("ko"), str) and isinstance(v.get("vi"), str) and v["vi"] and v["ko"] not in found:
+                found[v["ko"]] = v["vi"]
+            for x in v.values():
+                walk(x)
+        elif isinstance(v, list):
+            for x in v:
+                walk(x)
+    walk(values)
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "regional_admin", "course_vi.json")
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, ValueError):
+        data = {}
+    if data.get(region) == found:
+        return
+    data[region] = found
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1, sort_keys=True)
+        f.write("\n")
+
+
 def public_teaching_guide(region):
     """Student-facing subset of regional_admin/teaching_guide.json: method labels and materials per unit."""
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "regional_admin", "teaching_guide.json")
@@ -881,6 +915,9 @@ def build_data_js(site):
         # Teaching methods + student materials per source unit (regional_admin/teaching_guide.json, the same
         # file the /admin teacher's guide shows); students see only the method names and what to bring.
         parts.append(emit("JEONJU_TEACHING_GUIDE", public_teaching_guide("jeonju")))
+        # Vietnamese for admin-added course items, and ko->vi of every course text for the /admin Vietnamese view.
+        parts.append(emit("LIVE_COURSE_I18N", _admin_json("course_live_i18n.json")))
+        write_admin_course_vi("jeonju", [curr_welcome, curr_phases, curr_weeks, curr_assignments])
     elif site == "ulsan":
         import ulsan_data
         parts.append(emit("ULSAN_INFO", ulsan_data.ULSAN_INFO))

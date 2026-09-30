@@ -67,6 +67,13 @@ def bundle_regional_worker(region_id: str, region_name: str = None) -> str:
         "  " + json.dumps("./teaching_guide.json") + ": function (module, exports, require) {\n"
         "    module.exports = " + json.dumps(json.loads(_read("teaching_guide.json")), ensure_ascii=False) + ";\n  },"
     )
+    # Course text translations for the /admin Vietnamese view (course_vi.json is written by build_app.py).
+    for name in ("course_vi.json", "course_live_i18n.json"):
+        data = json.loads(_read(name)) if (ADMIN_DIR / name).exists() else {}
+        defs.append(
+            "  " + json.dumps("./" + name) + ": function (module, exports, require) {\n"
+            "    module.exports = " + json.dumps(data, ensure_ascii=False) + ";\n  },"
+        )
     for module_id, filename in _STRING_MODULES:
         defs.append(
             "  " + json.dumps(module_id) + ": function (module, exports, require) {\n"
