@@ -6396,7 +6396,16 @@
   }
   // Homework h (0 = before the first class, i + 1 = under schedule slot i): review the last class's songs,
   // preview the next class's songs (Mon/Tue review, Wed/Thu preview).
+  // [발음] > [설정] (베트남어 발음 설정) is set up once in class, not something to preview or review.
+  function isSetupItem(it) {
+    var l = it && it.link, ko = it && it.text && (it.text.ko || it.text);
+    return ko === "베트남어 발음 설정" || !!(l && l.tab === "pron" && l.subVal === "settings");
+  }
   function applyCourseSongHomework(assign, sched, h) {
+    if (assign && assign.days) assign = Object.assign({}, assign, { days: assign.days.map(function (d) {
+      return Object.assign({}, d, { reviews: (d.reviews || []).filter(function (x) { return !isSetupItem(x); }),
+        previews: (d.previews || []).filter(function (x) { return !isSetupItem(x); }), vocab: (d.vocab || []).filter(function (x) { return !isSetupItem(x); }) });
+    }) });
     if (!regionalFlag("songs") || !assign || !assign.days || assign.days.length < 4 || !sched || !sched.slots) return assign;
     var slots = sched.slots, prev = null, next = null, i;
     for (i = h - 1; i >= 0; i--) if (slots[i].type === "instructional") { prev = slots[i].week; break; }
