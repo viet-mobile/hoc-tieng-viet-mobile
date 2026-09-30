@@ -6428,6 +6428,8 @@
   function courseServiceHtml(key) {
     var pr = (regionalFlag("prayers") || {})[String(key)];
     if (!pr) return "";
+    var songs = (regionalFlag("songs") || {})[String(key)] || [];
+    function song(i) { return songs[i] ? '<span class="vn">' + escapeHtml(songs[i]) + '</span>' : escapeHtml(courseServiceWord("song")); }
     var address = {};
     (typeof CLASS_ROSTER !== "undefined" ? CLASS_ROSTER : []).forEach(function (g) { g.members.forEach(function (m) { address[m[0]] = m[2] || m[1]; }); });
     function who(p) {
@@ -6436,8 +6438,8 @@
       return escapeHtml(name) + (p[1] ? ' <span class="curr-service-lang">' + escapeHtml(courseServiceWord(p[1])) + '</span>' : '');
     }
     return '<div class="curr-service">' +
-      '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("open")) + '</span><span>' + escapeHtml(courseServiceWord("song")) + ' · ' + who(pr[0]) + '</span></div>' +
-      '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("close")) + '</span><span>' + escapeHtml(courseServiceWord("song")) + ' · ' + who(pr[1]) + '</span></div>' +
+      '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("open")) + '</span><span>' + song(0) + ' · ' + who(pr[0]) + '</span></div>' +
+      '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("close")) + '</span><span>' + song(1) + ' · ' + who(pr[1]) + '</span></div>' +
       '</div>';
   }
   function bindCurrGroupCards(root) {
