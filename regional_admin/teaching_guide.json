@@ -26,7 +26,15 @@
         ],
         "teacherMemo": [
           "역순 확장 예(교재 메모): 안녕하세요 → 요 → 세요 → 하세요 → 녕하세요 → 안녕하세요"
-        ]
+        ],
+        "labelI18n": {
+          "vi": "#1 Nghe–nói, giai đoạn 1",
+          "en": "#1 Audio-Lingual, stage 1"
+        },
+        "studentHintI18n": {
+          "vi": "Nghe và lặp lại, cả lớp rồi từng người",
+          "en": "Listen and repeat, class then individuals"
+        }
       },
       {
         "id": "1b",
@@ -51,7 +59,15 @@
           "대화문",
           "화이트보드"
         ],
-        "teacherMemo": []
+        "teacherMemo": [],
+        "labelI18n": {
+          "vi": "#1 Nghe–nói, giai đoạn 2",
+          "en": "#1 Audio-Lingual, stage 2"
+        },
+        "studentHintI18n": {
+          "vi": "Diễn mẫu hội thoại hai vai, thực hành theo cặp",
+          "en": "Two-part dialogue demonstrated and practiced in pairs"
+        }
       },
       {
         "id": "2",
@@ -75,7 +91,15 @@
         "materials": [
           "학생 공책"
         ],
-        "teacherMemo": []
+        "teacherMemo": [],
+        "labelI18n": {
+          "vi": "#2 Phương pháp giao tiếp",
+          "en": "#2 Communicative approach"
+        },
+        "studentHintI18n": {
+          "vi": "Phỏng vấn và giới thiệu nhau",
+          "en": "Interview and introduce one another"
+        }
       },
       {
         "id": "3",
@@ -97,7 +121,15 @@
         "materials": [
           "음성·영상 자료, 대본, 색 형광펜"
         ],
-        "teacherMemo": []
+        "teacherMemo": [],
+        "labelI18n": {
+          "vi": "#3 Tài liệu nghe nhìn",
+          "en": "#3 Audio-visual materials"
+        },
+        "studentHintI18n": {
+          "vi": "Nghe, xem âm thanh·video và lặp lại",
+          "en": "Listen to audio·video and repeat"
+        }
       },
       {
         "id": "4",
@@ -124,7 +156,15 @@
           "2명 또는 4명이 짝이 되어 표현집 문장으로 제공 실연을 해 본다.",
           "예: Anh/Chị có tin nơi Đức Chúa Trời không? / Theo anh/chị, ai đang cai trị thế giới? / Anh/Chị có nghĩ Đức Chúa Trời sẽ hành động không?",
           "사이트 [문장] > [내 표현집]에 모아 두게 한다."
-        ]
+        ],
+        "labelI18n": {
+          "vi": "#4 Sổ tay cụm từ cá nhân",
+          "en": "#4 Personal phrase book"
+        },
+        "studentHintI18n": {
+          "vi": "Tự làm sổ tay cụm từ của mình",
+          "en": "Make your own phrase book"
+        }
       },
       {
         "id": "5",
@@ -149,7 +189,15 @@
           "빈백 또는 공",
           "저글링 스카프(얇은 망사 천)"
         ],
-        "teacherMemo": []
+        "teacherMemo": [],
+        "labelI18n": {
+          "vi": "#5 Vận động học tập",
+          "en": "#5 Educational exercise"
+        },
+        "studentHintI18n": {
+          "vi": "Học bằng cử động với bóng bay·túi đậu",
+          "en": "Learn by moving with balloons·bean bags"
+        }
       },
       {
         "id": "6",
@@ -171,7 +219,15 @@
         ],
         "teacherMemo": [
           "대상 글자: d(이름 dê, 북부 /z/·남부 /j/), gi, r, đ, c/k/q, g/gh, ng/ngh, ph, tr/ch, s/x."
-        ]
+        ],
+        "labelI18n": {
+          "vi": "#6 Âm và chính tả",
+          "en": "#6 Sounds and spelling"
+        },
+        "studentHintI18n": {
+          "vi": "Phân biệt tên chữ cái và âm",
+          "en": "Tell letter names from their sounds"
+        }
       },
       {
         "id": "7",
@@ -194,7 +250,15 @@
         "materials": [
           "종이, 필기구"
         ],
-        "teacherMemo": []
+        "teacherMemo": [],
+        "labelI18n": {
+          "vi": "#7 Sơ đồ ý tưởng",
+          "en": "#7 Idea mapping"
+        },
+        "studentHintI18n": {
+          "vi": "Ghi lại điều nghe được bằng hình và từ",
+          "en": "Map what you hear with pictures and words"
+        }
       },
       {
         "id": "8",
@@ -225,7 +289,15 @@
           "교재 메모: 자매들을 도우미(helper)로 많이 활용한다. 예전 출판물(파수대·깨어라)의 사진·그림을 버리지 말고 쓴다.",
           "단어만 말하지 말고 \"Đây là ...\"(This is ...)로 문장화한다. 예: Đây là sông Ni-lơ khi nó biến thành máu.",
           "성경 속 인물·장소는 사건과, 음식·과일·야채는 가격과 연결한다."
-        ]
+        ],
+        "labelI18n": {
+          "vi": "#8 Thẻ hình",
+          "en": "#8 Flash cards"
+        },
+        "studentHintI18n": {
+          "vi": "Học từ mới bằng thẻ hình",
+          "en": "Learn new words with picture cards"
+        }
       },
       {
         "id": "9",
@@ -245,7 +317,15 @@
         "materials": [],
         "teacherMemo": [
           "베트남어 예: 한자어는 한국어 한자음과 연결한다(학문 học vấn, 교회 giáo hội). 사이트 [어휘] > [한자음]·[동일음]을 쓴다."
-        ]
+        ],
+        "labelI18n": {
+          "vi": "#9 Liên tưởng từ",
+          "en": "#9 Word associations"
+        },
+        "studentHintI18n": {
+          "vi": "Nhớ từ bằng âm và hình ảnh trong tiếng mẹ đẻ",
+          "en": "Remember words through native-language sounds and images"
+        }
       },
       {
         "id": "10a",
@@ -275,7 +355,15 @@
           "교재 메모: 최종 병기! 중요한 방법, 30분 수업. 문법은 설명하지 않는다.",
           "모든 명사는 동사 2개 이상과 결합한다. 매번 할 때마다 더 길어진다. 800단어를 이 방법으로 결합한다.",
           "봉사 주제 예: túi(가방)–mang, tạp chí(잡지)–đọc, xe(차)–lái, cửa(문)–gõ / 부사 nhanh(빨리)–chậm(천천히)."
-        ]
+        ],
+        "labelI18n": {
+          "vi": "#10 Phản xạ toàn thân (TPR), giai đoạn 1",
+          "en": "#10 Total Physical Response, stage 1"
+        },
+        "studentHintI18n": {
+          "vi": "Làm động tác theo mệnh lệnh thay vì nói",
+          "en": "Respond to commands with actions instead of words"
+        }
       },
       {
         "id": "10b",
@@ -297,7 +385,15 @@
           "대본(「나의 성서 이야기 책」이나 교재 어휘로 쓴 이야기)",
           "배경음악과 재생 장비"
         ],
-        "teacherMemo": []
+        "teacherMemo": [],
+        "labelI18n": {
+          "vi": "#10 Phản xạ toàn thân (TPR), giai đoạn 2",
+          "en": "#10 Total Physical Response, stage 2"
+        },
+        "studentHintI18n": {
+          "vi": "Nghe câu chuyện và diễn bằng động tác",
+          "en": "Act out a story as you hear it"
+        }
       },
       {
         "id": "11",
@@ -316,7 +412,15 @@
         "materials": [
           "생성표(주제별)"
         ],
-        "teacherMemo": []
+        "teacherMemo": [],
+        "labelI18n": {
+          "vi": "#11 Bảng tạo câu tổng quát",
+          "en": "#11 Universal language generation"
+        },
+        "studentHintI18n": {
+          "vi": "Tự đặt câu bằng bảng tạo câu",
+          "en": "Build your own sentences with the chart"
+        }
       },
       {
         "id": "12",
@@ -336,7 +440,15 @@
         ],
         "teacherMemo": [
           "사이트 [어휘] > [기본]·[상용]을 쓴다."
-        ]
+        ],
+        "labelI18n": {
+          "vi": "#12 Tần suất từ",
+          "en": "#12 Word frequency"
+        },
+        "studentHintI18n": {
+          "vi": "Học trước 100 từ thông dụng nhất",
+          "en": "Start with the 100 most frequent words"
+        }
       },
       {
         "id": "13",
@@ -362,7 +474,15 @@
         "teacherMemo": [
           "교재 메모: 20–30분. 교사 샘플 + 이야기 쓰기 15분, 공통어로 먼저 하고 다음에 목표어로 15분 동안 반복 연습.",
           "예: Tin mừng là tôi đã mua nhà. Tin buồn là …"
-        ]
+        ],
+        "labelI18n": {
+          "vi": "#13 Hài hước",
+          "en": "#13 Humor"
+        },
+        "studentHintI18n": {
+          "vi": "Học vui qua chuyện tin mừng·tin buồn",
+          "en": "Laugh and learn with good news·bad news stories"
+        }
       },
       {
         "id": "14",
@@ -388,7 +508,15 @@
           "왕국 노래(사이트 [문장] > [노래]의 절별 듣기)",
           "일시 정지 가능한 재생 장비"
         ],
-        "teacherMemo": []
+        "teacherMemo": [],
+        "labelI18n": {
+          "vi": "#14 Chép chính tả bài hát",
+          "en": "#14 Musical dictation"
+        },
+        "studentHintI18n": {
+          "vi": "Nghe và chép lời bài hát",
+          "en": "Listen to a song and write down the words"
+        }
       },
       {
         "id": "15",
@@ -412,7 +540,15 @@
         "teacherMemo": [
           "교재 메모: 첫 단어를 알려 주고 단어를 하나씩 더해 조립한다(①+②, ①②+③ …). 한 번에 7개 이상 단어를 동시에 주지 않는다.",
           "큰 동작과 함께 말하면 근육 기억이 도와 오래 남는다."
-        ]
+        ],
+        "labelI18n": {
+          "vi": "#15 Kể chuyện·nhật ký",
+          "en": "#15 Tell the story·diary"
+        },
+        "studentHintI18n": {
+          "vi": "Đặt câu về đời sống của mình và nói",
+          "en": "Make and share sentences about your own life"
+        }
       },
       {
         "id": "16",
@@ -439,7 +575,15 @@
           "교재 메모: 1) 눈과 손가락으로 따라가기 2) 한 단어 반복 3) 구 반복 4) 에코 리딩. 손가락으로(펜 X) 자동차 와이퍼처럼.",
           "교사가 속도를 높이면 학생도 따라서 손가락으로 따라가게 한다. 30시간 스스로 연습하면 유창하게 낭독하게 된다.",
           "협회 녹음은 초심자에게 조금 빠르므로 처음에는 교사가 읽는다. 사이트 [문장] > [대역 읽기]를 쓴다."
-        ]
+        ],
+        "labelI18n": {
+          "vi": "#16 Đọc và phát âm",
+          "en": "#16 Reading and pronunciation"
+        },
+        "studentHintI18n": {
+          "vi": "Dò theo bằng ngón tay và đọc đuổi",
+          "en": "Follow with your finger and echo-read"
+        }
       }
     ],
     "principles": [
@@ -1052,6 +1196,88 @@
           "노래 46 합창(#14)과 졸업."
         ]
       }
-    ]
+    ],
+    "materialsI18n": {
+      "11/7 집회 아이디어 맵": {
+        "vi": "Sơ đồ ý tưởng buổi nhóm họp 7/11",
+        "en": "Idea map from the Nov 7 meeting"
+      },
+      "3주간 쓴 일기(일기 노트)": {
+        "vi": "Nhật ký viết trong 3 tuần (sổ nhật ký)",
+        "en": "Three weeks of diary (journal notebook)"
+      },
+      "개인 표현집": {
+        "vi": "Sổ tay cụm từ cá nhân",
+        "en": "Personal phrase book"
+      },
+      "베트남어 성경": {
+        "vi": "Kinh Thánh tiếng Việt",
+        "en": "Vietnamese Bible"
+      },
+      "순회대회 아이디어 맵": {
+        "vi": "Sơ đồ ý tưởng hội nghị vòng quanh",
+        "en": "Circuit assembly idea map"
+      },
+      "스마트폰": {
+        "vi": "Điện thoại thông minh",
+        "en": "Smartphone"
+      },
+      "스마트폰(베트남어 음성 설치)": {
+        "vi": "Điện thoại thông minh (đã cài giọng đọc tiếng Việt)",
+        "en": "Smartphone (Vietnamese voice installed)"
+      },
+      "이번 주 파수대": {
+        "vi": "Tháp Canh tuần này",
+        "en": "This week's Watchtower"
+      },
+      "이번 주 파수대(베트남어)": {
+        "vi": "Tháp Canh tuần này (tiếng Việt)",
+        "en": "This week's Watchtower (Vietnamese)"
+      },
+      "이번 주 파수대(해설 준비)": {
+        "vi": "Tháp Canh tuần này (chuẩn bị bình luận)",
+        "en": "This week's Watchtower (comments prepared)"
+      },
+      "이어폰(집에서 듣기)": {
+        "vi": "Tai nghe (để nghe ở nhà)",
+        "en": "Earphones (for listening at home)"
+      },
+      "일기 노트(중)": {
+        "vi": "Sổ nhật ký (vừa)",
+        "en": "Journal notebook (medium)"
+      },
+      "일반 노트(대)": {
+        "vi": "Vở ghi chung (lớn)",
+        "en": "General notebook (large)"
+      },
+      "일반 노트(대, 받아쓰기)": {
+        "vi": "Vở ghi chung (lớn, chép chính tả)",
+        "en": "General notebook (large, dictation)"
+      },
+      "일반 노트(대, 인터뷰 기록)": {
+        "vi": "Vở ghi chung (lớn, ghi phỏng vấn)",
+        "en": "General notebook (large, interview notes)"
+      },
+      "표현 노트(소)": {
+        "vi": "Sổ cụm từ (nhỏ)",
+        "en": "Phrase notebook (small)"
+      },
+      "표현 노트(소, 개인 표현집 시작)": {
+        "vi": "Sổ cụm từ (nhỏ, bắt đầu sổ tay cụm từ)",
+        "en": "Phrase notebook (small, start your phrase book)"
+      },
+      "표현 노트(소, 기도 표현)": {
+        "vi": "Sổ cụm từ (nhỏ, cụm từ cầu nguyện)",
+        "en": "Phrase notebook (small, prayer expressions)"
+      },
+      "행누 책(또는 앱)": {
+        "vi": "Sách Vui sống mãi mãi (hoặc ứng dụng)",
+        "en": "Enjoy Life Forever book (or app)"
+      },
+      "형광펜·펜·연필": {
+        "vi": "Bút dạ quang·bút·bút chì",
+        "en": "Highlighters·pens·pencils"
+      }
+    }
   }
 }

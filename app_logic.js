@@ -6009,12 +6009,15 @@
   function courseGuideHtml(unit) {
     var g = courseGuideEntry(unit);
     if (!g) return "";
+    // Guide strings are {ko, vi, en}; other UI languages read English.
+    function gt(x) { return !x ? "" : typeof x === "string" ? x : (x[currentLang] || x.en || x.ko || ""); }
     var methods = (g.methods || []).map(function (m) {
-      return '<span class="curr-guide-chip">' + escapeHtml(m.label) + (m.hint ? '<span class="curr-guide-hint"> · ' + escapeHtml(m.hint) + '</span>' : '') + '</span>';
+      var hint = gt(m.hint);
+      return '<span class="curr-guide-chip">' + escapeHtml(gt(m.label)) + (hint ? '<span class="curr-guide-hint"> · ' + escapeHtml(hint) + '</span>' : '') + '</span>';
     }).join("");
     return '<div class="curr-guide">' +
       (methods ? '<div class="curr-guide-row"><span class="curr-guide-label">' + escapeHtml(T(COURSE_GUIDE_LABELS.methods)) + '</span><div class="curr-guide-chips">' + methods + '</div></div>' : '') +
-      ((g.materials || []).length ? '<div class="curr-guide-row"><span class="curr-guide-label">' + escapeHtml(T(COURSE_GUIDE_LABELS.materials)) + '</span><span class="curr-guide-text">' + escapeHtml(g.materials.join(", ")) + '</span></div>' : '') +
+      ((g.materials || []).length ? '<div class="curr-guide-row"><span class="curr-guide-label">' + escapeHtml(T(COURSE_GUIDE_LABELS.materials)) + '</span><span class="curr-guide-text">' + escapeHtml(g.materials.map(gt).join(", ")) + '</span></div>' : '') +
       '</div>';
   }
   function courseReadingPlan(weekKey) {
@@ -6547,6 +6550,36 @@ function verifyDistribution(units, dist, pins) {
     // the same uid when its Korean is unchanged -- and, because static uids are positional and can
     // shift when the static course gains items, otherwise the static text with the identical Korean
     // source. Text an admin rewrote has no static counterpart and is shown as stored.
+    // Admin-added live items (ko/en only in D1): Vietnamese for the JEONJU course, English elsewhere.
+    var LIVE_I18N = [
+      [/^베트남어 달, 계절$/, "Tháng và mùa trong tiếng Việt", "Vietnamese months and seasons"],
+      [/^베트남어 어순 단원 (\S+)~(\S+)$/, "Trật tự từ tiếng Việt — bài $1–$2", "Vietnamese word order — units $1–$2"],
+      [/^베트남어 기초 핵심 문형 \(A1\/A2\) (\S+)~(\S+)$/, "Mẫu câu cơ bản tiếng Việt (A1/A2) $1–$2", "Core Vietnamese sentence patterns (A1/A2) $1–$2"],
+      [/^베트남어 B1\/B2 문형 (\S+)~(\S+) \(A–Z 문법 사전\)$/, "Mẫu câu B1/B2 $1–$2 (từ điển ngữ pháp A–Z)", "B1/B2 sentence patterns $1–$2 (A–Z grammar dictionary)"],
+      [/^위치 전치사와 길찾기 대화문$/, "Giới từ chỉ vị trí và hội thoại hỏi đường", "Prepositions of place and asking-directions dialogues"],
+      [/^움직임을 나타내는 동사$/, "Động từ chỉ chuyển động", "Verbs of motion"],
+      [/^연결사$/, "Từ nối", "Connectives"],
+      [/^파수대 집회 실연 리허설 \(사회, 낭독, 해설\)$/, "Tập dượt trình diễn buổi học Tháp Canh (điều khiển, đọc, bình luận)", "Watchtower Study demonstration rehearsal (conducting, reading, commenting)"],
+      [/^행누 1과로 성서 연구 사회 실습$/, "Tập điều khiển học hỏi Kinh Thánh với Vui sống mãi mãi bài 1", "Practice conducting a Bible study with Enjoy Life Forever lesson 1"],
+      [/^베트남어 노래 \((\d+)번\) 합창$/, "Cùng hát bài hát tiếng Việt số $1", "Sing Vietnamese song no. $1 together"],
+      [/^총복습과 파수대 집회 실연 리허설$/, "Ôn tập tổng quát và tập dượt trình diễn buổi học Tháp Canh", "General review and Watchtower Study demonstration rehearsal"],
+      [/^(\d+)주 \(총복습·실연 리허설\)$/, "Tuần $1 (ôn tập tổng quát · tập dượt trình diễn)", "Week $1 (general review · demonstration rehearsal)"],
+      [/^(\d+)주 \(파수대 집회 실연·졸업\)$/, "Tuần $1 (trình diễn buổi học Tháp Canh · tốt nghiệp)", "Week $1 (Watchtower Study demonstration · graduation)"]
+    ];
+    function liveTranslate(t) {
+      if (!t || !t.ko) return null;
+      var ko = String(t.ko).trim();
+      for (var i = 0; i < LIVE_I18N.length; i++) {
+        var r = LIVE_I18N[i];
+        if (!r[0].test(ko)) continue;
+        var vi = ko.replace(r[0], r[1]), en = t.en || ko.replace(r[0], r[2]);
+        var out = {};
+        COURSE_READING_LANGS.forEach(function (l) { out[l] = en; });
+        out.ko = t.ko; out.vi = vi; out.en = en;
+        return out;
+      }
+      return null;
+    }
     var staticByKo = {};
     function indexKo(t) { if (t && t.ko && !staticByKo[t.ko]) staticByKo[t.ko] = t; }
     staticUnits.forEach(function (u) {
@@ -6559,7 +6592,7 @@ function verifyDistribution(units, dist, pins) {
       if (st && sameKo(st, t)) return st;
       var inUnit = null;
       if (su && t && t.ko) ((su.learning || []).concat(su.assignments || [])).some(function (y) { return sameKo(y.text, t) && (inUnit = y.text); });
-      return inUnit || (t && t.ko && staticByKo[t.ko]) || t || null;
+      return inUnit || (t && t.ko && staticByKo[t.ko]) || liveTranslate(t) || t || null;
     }
     var units = ((data.source && data.source.units) || []).map(function (u) {
       var su = staticUnits.filter(function (x) { return x.unit === u.unit; })[0] || {};
@@ -6890,9 +6923,9 @@ function verifyDistribution(units, dist, pins) {
     }
     // Class members' Korean / Vietnamese names (JEONJU), each Vietnamese name with a listen button.
     if (typeof CLASS_ROSTER !== "undefined" && CLASS_ROSTER.length) {
-      html += '<div class="curr-roster"><div class="curr-roster-head"><span>한국어 이름</span><span>Tên tiếng Việt</span></div>';
+      html += '<div class="curr-roster"><div class="curr-roster-head"><span>' + (currentLang === "vi" ? "Tên tiếng Hàn" : "한국어 이름") + '</span><span>Tên tiếng Việt</span></div>';
       CLASS_ROSTER.forEach(function (grp) {
-        html += '<div class="curr-roster-group"><div class="curr-roster-title">' + escapeHtml(grp.title.ko) +
+        html += '<div class="curr-roster-group"><div class="curr-roster-title">' + (currentLang === "vi" ? "" : escapeHtml(grp.title.ko)) +
           '<span class="curr-roster-title-vi vn">' + escapeHtml(grp.title.vi) + '</span></div>';
         grp.members.forEach(function (m) {
           html += '<div class="curr-roster-row"><span class="curr-roster-ko">' + escapeHtml(m[0]) + '</span>' +
