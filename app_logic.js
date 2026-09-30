@@ -1913,6 +1913,10 @@
     // so \b alone would wrongly fire inside e.g. "yêu" (between "y" and "ê"); explicit
     // whitespace/string-edge lookarounds avoid that false match.
     out = out.replace(/(^|\s)y(?=\s|$)/g, "$1i").replace(/(^|\s)Y(?=\s|$)/g, "$1I");
+    // Some Vietnamese voices read the lowercase syllable "ngân" (ngân hàng, bạc/ngân) as "nhân". The
+    // same syllable written as the common given name "Ngân" is read correctly, so speech uses that
+    // spelling; the text on screen is unchanged.
+    out = out.replace(/(^|[\s,.;:!?"“(])ngân(?=$|[\s,.;:!?"”)])/g, "$1Ngân");
     // Hyphenated foreign proper nouns (people/place names, Bible book names) transliterated into
     // Vietnamese syllable-by-syllable -- "Giê-hô-va", "Giê-su", "Lê-vi", "Ki-tô" and the like --
     // read unnaturally with a hard pause on every hyphen. Vietnamese TTS reads these smoothly
