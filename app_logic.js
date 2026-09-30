@@ -4857,6 +4857,10 @@
     }
     return WORD_TAG_DEFS.filter(function (d) { return has[d.key]; }).map(function (d) { return { key: d.key, text: has[d.key] }; });
   }
+  function courseWordsFocus(words) {
+    if (!vocabFocus || vocabFocus.mode !== "words" || typeof COURSE_VOCAB === "undefined" || !COURSE_VOCAB || !COURSE_VOCAB.words) return null;
+    return COURSE_VOCAB.words.slice(vocabFocus.start, vocabFocus.end).map(function (i) { return words[i]; }).filter(Boolean);
+  }
   function renderVocabWords(root, q) {
     var words = (typeof UNIFIED_WORDS !== "undefined" && UNIFIED_WORDS) || [];
     var filterEl = document.getElementById("vocab-tag-filters");
@@ -4878,6 +4882,7 @@
       filterEl.querySelectorAll(".tag-filter-btn[data-tag]").forEach(function (btn) {
         btn.addEventListener("click", function () {
           activeWordTag = btn.dataset.tag;
+          vocabFocus = null;
           wordsDisplayLimit = 80;
           renderVocabWords(root, document.getElementById("vocab-search").value.trim().toLowerCase());
         });
@@ -4901,8 +4906,10 @@
       return (m && typeof m === "object" && m[currentLang]) || "";
     }
 
-    var filtered = words.filter(function (w) {
-      if (activeWordTag !== "all" && !wordTagEntries(w).some(function (e) { return e.key === activeWordTag; })) return false;
+    // [과정] 바로가기: "단어 a~b" = COURSE_VOCAB.words (UNIFIED_WORDS indices) a..b, shown in that order.
+    var focused = courseWordsFocus(words);
+    var filtered = (focused || words).filter(function (w) {
+      if (!focused && activeWordTag !== "all" && !wordTagEntries(w).some(function (e) { return e.key === activeWordTag; })) return false;
       if (!q) return true;
       var meaningStr = getWordMeaning(w);
       return (w.vi && w.vi.toLowerCase().indexOf(q) >= 0) || meaningStr.toLowerCase().indexOf(q) >= 0;
@@ -4918,12 +4925,13 @@
     }
 
     if (!filtered.length) {
-      root.innerHTML = '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
+      root.innerHTML = vocabFocusBannerHtml("words") + '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
+      bindVocabFocusClear(root);
       return;
     }
 
-    var slice = filtered.slice(0, wordsDisplayLimit);
-    var html = '<div class="chain-note word-count-row">' +
+    var slice = focused ? filtered : filtered.slice(0, wordsDisplayLimit);
+    var html = vocabFocusBannerHtml("words") + '<div class="chain-note word-count-row">' +
       '<span class="word-count">' + escapeHtml((WORD_COUNT_FORMAT[currentLang] || WORD_COUNT_FORMAT.ko).replace("{n}", filtered.length)) + '</span>' +
       '<button type="button" class="tag-filter-btn word-sort-btn" data-sort="frequency" aria-pressed="' + (wordsSortByFrequency ? 'true' : 'false') + '">' + escapeHtml(WORD_SORT_LABEL[currentLang] || WORD_SORT_LABEL.ko) + '</button>' +
       '<button type="button" class="tag-filter-btn word-tag-toggle" aria-pressed="' + (wordsShowTags ? 'true' : 'false') + '">' +
@@ -4957,7 +4965,7 @@
     });
     html += '</div>';
 
-    if (filtered.length > wordsDisplayLimit) {
+    if (!focused && filtered.length > wordsDisplayLimit) {
       html += '<div style="text-align:center;padding:16px 0;">' +
         '<button id="vocab-words-more-btn" class="foot-btn secondary" style="min-width:180px;">' +
         TU("더 보기") + ' (' + slice.length + ' / ' + filtered.length + ')' +
@@ -4965,6 +4973,7 @@
     }
 
     root.innerHTML = html;
+    bindVocabFocusClear(root);
     root.querySelectorAll(".speak-btn").forEach(function (b) {
       b.addEventListener("click", function () { speak(b.dataset.speak); });
     });
@@ -5881,6 +5890,7 @@
       else if (subVal === "freq") { subVal = "words"; activeWordTag = "freq"; }
       else if (subVal === "theo") { subVal = "words"; activeWordTag = "theo"; }
       else if (subVal === "names") { subVal = "words"; activeWordTag = "names"; }
+      else if (subVal === "words" && vocabRange) activeWordTag = "all";
     }
     activateTab(tab, false);
     if (subAttr && subVal) {
@@ -9513,7 +9523,10 @@ function verifyDistribution(units, dist, pins) {
       if (!vocabFocus) return [];
       var mode = vocabFocus.mode, out = [];
       function push(vi, kr) { if (vi) out.push({ vi: vi, kr: kr }); }
-      if (mode === "theo") {
+      if (mode === "words") {
+        var cw = typeof UNIFIED_WORDS !== "undefined" ? courseWordsFocus(UNIFIED_WORDS) : null;
+        (cw || []).forEach(function (w) { var m = w.kr || w.meanings; push(w.vi, reviewMeaning(typeof m === "string" ? { ko: m } : m)); });
+      } else if (mode === "theo") {
         applyVocabFocus("theo", VOCAB_THEO).forEach(function (it) { push(it.word, reviewMeaning(it.meaning)); });
       } else if (mode === "freq") {
         applyVocabFocus("freq", FREQ_VOCAB).forEach(function (it) { push(it.vi, reviewMeaning(it.kr)); });

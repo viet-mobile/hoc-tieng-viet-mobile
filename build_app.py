@@ -928,7 +928,7 @@ def build_data_js(site):
         write_admin_course_vi("jeonju", [curr_welcome, curr_phases, curr_weeks, curr_assignments])
         # [과정] vocabulary: one stream over the whole [어휘] tab, cut against the real calendar in app_logic.js.
         from course_vocab_plan import course_vocab
-        parts.append(emit("COURSE_VOCAB", course_vocab([curr_weeks, curr_assignments])))
+        parts.append(emit("COURSE_VOCAB", course_vocab([curr_weeks, curr_assignments], unified_words)))
     elif site == "ulsan":
         import ulsan_data
         parts.append(emit("ULSAN_INFO", ulsan_data.ULSAN_INFO))
