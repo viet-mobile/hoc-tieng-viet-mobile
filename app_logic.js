@@ -1882,9 +1882,17 @@
   // trips most Vietnamese voices) -- spelling out chương/câu around the numbers fixes the
   // audio without touching what's shown on screen (only speak()'s utterance text runs
   // through this, never the DOM).
+  // "BÀI 01" / "LESSON 01" / "01과": a zero-padded lesson number is read as the number ("BÀI một", not
+  // "BÀI không một"). Only a two-digit "0N" right after a word (or before 과) -- never phone numbers,
+  // times, verses or decimals.
+  function stripLessonZerosForSpeech(text) {
+    return String(text)
+      .replace(/([A-Za-z\u00C0-\u1EF9][\s\u00a0]+)0(\d)(?![\d.,:\/])/g, "$1$2")
+      .replace(/(^|[^\d.,:\/])0(\d)(?=\s*과)/g, "$1$2");
+  }
   function prepareSpeechText(text) {
     if (!text) return text;
-    var out = stripSlashForSpeech(text.trim());
+    var out = stripLessonZerosForSpeech(stripSlashForSpeech(text.trim()));
     // A bare single letter/syllable with nothing else in the utterance -- a lone tone-mark
     // syllable like "á" (성조 탭), a single-letter alphabet name like "a"/"ư" (문자 탭), or a
     // word like "ý" (어휘 탭 한자음 意/뜻) -- trips many Vietnamese TTS voices' "spell out a
@@ -2160,6 +2168,7 @@
     if (!text) return text;
     var t = expandScriptureVersesForSpeech(stripHanjaParensForSpeech(stripSlashForSpeech(String(text).trim())));
     if (TARGET) t = stripLeadingZerosForSpeech(t);   // target sites: "01과" -> "1과" (see targetSpeechOpts)
+    else t = stripLessonZerosForSpeech(t);
     if (currentLang === "ko") {
       // Force the correct 된소리 reading for 영적 in Korean TTS; the displayed text remains unchanged.
       t = t.replace(/영적/g, "영쩍");
