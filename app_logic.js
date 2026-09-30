@@ -6376,7 +6376,7 @@
     COURSE_READING_LANGS.forEach(function (l) {
       var w = COURSE_SONG_WORDS[kind][l] || COURSE_SONG_WORDS[kind].en;
       var lab = song ? (song.labels[l] || song.labels.en || song.labels.vi) : String(num);
-      var title = song ? (song.title[l] || song.title.en || song.title.vi) : "";
+      var title = song ? String(song.title[l] || song.title.en || song.title.vi || "").replace(/^\d+\s+/, "") : "";
       text[l] = w + ": " + lab + (title ? " " + title : "");
     });
     return { text: text, link: { tab: "curriculum", subAttr: "curriculum", subVal: "song", anchor: "song-" + num } };
