@@ -6360,7 +6360,7 @@
     function key(it) { return String((it.text && (it.text.ko || it.text)) || "").replace(/\s+/g, ""); }
     week1Items.forEach(function (it) { seen[key(it)] = 1; });
     return curriculumDisplayItems({ week: 0, items: week0.items }).filter(function (it) {
-      return !seen[key(it)];
+      return !seen[key(it)] && !(COURSE_VOCAB_ON && (isVocabRangeItem(it) || isWt50Item(it)));
     }).map(function (it) { return Object.assign({}, it, { _wk: 0 }); });
   }
   // Opening / closing Vietnamese song and prayer of a class (REGIONAL_SCHEDULE.prayers, keyed "prelim" or the week).
@@ -7170,6 +7170,8 @@ function verifyDistribution(units, dist, pins) {
         var welcomeSpan = grammarHomeworkSpan(welcomeSeq, 0);
         welcomeAssign = addGrammarHomework(welcomeAssign, null, welcomeSpan.preview, 0, welcomeSpan.parts);
         welcomeAssign = applyCourseVocabHomework(welcomeAssign, sched, 0);
+        // Maintenance hook (tools/sync): a page that sets window.__COURSE_CAPTURE receives every card's items.
+        if (window.__COURSE_CAPTURE && welcomeAssign) window.__COURSE_CAPTURE.hw[0] = JSON.parse(JSON.stringify(welcomeAssign));
       }
       if (welcomeAssign) {
         html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + assignLabel(sched && sched.preliminaryMeeting && sched.preliminaryMeeting.calculatedDate) + '</span>' + currChev() + '</button><div class="curr-assign-body">';
@@ -7233,8 +7235,13 @@ function verifyDistribution(units, dist, pins) {
             var displayItems = curriculumDisplayItems({ week: slot.week, items: slot.items || [] });
             if (slot.week === 1 && regionalFlag("prelimItemsToWeek1")) displayItems = prelimItemsForWeek1(displayItems).concat(displayItems);
             if (lastSplit && slot.week === lastSplit.week) displayItems = lastSplit.keep;
-            else if (lastSplit && slot.week === lastSplit.week - 1) displayItems = displayItems.concat(lastSplit.move);
+            else if (lastSplit && slot.week === lastSplit.week - 1) {
+              var shownKo = {};
+              displayItems.forEach(function (it) { shownKo[(it.text && it.text.ko) || ""] = 1; });
+              displayItems = displayItems.concat(lastSplit.move.filter(function (it) { return !shownKo[(it.text && it.text.ko) || ""]; }));
+            }
             displayItems = applyCourseVocabClass(displayItems, sched, slot.week);
+            if (window.__COURSE_CAPTURE) window.__COURSE_CAPTURE.cls[slot.week] = JSON.parse(JSON.stringify(displayItems));
             if (!displayItems || displayItems.length === 0) {
               html += '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div>';
             } else {
@@ -7272,6 +7279,7 @@ function verifyDistribution(units, dist, pins) {
               assign = addGrammarHomework(assign, gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts);
               assign = applyCourseVocabHomework(assign, sched, slotIdx + 1);
             }
+            if (window.__COURSE_CAPTURE && assign) window.__COURSE_CAPTURE.hw[slot.week] = JSON.parse(JSON.stringify(assign));
             if (assign) {
               html += '<div class="curr-assign-card" data-open="false">' +
                 '<button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + assignLabel(slot.calculatedDate) + '</span>' + currChev() + '</button>' +

@@ -507,6 +507,13 @@ def write_admin_course_vi(region, values):
             for x in v:
                 walk(x)
     walk(values)
+    # Lines generated in the browser (vocabulary slices, reading lessons, grammar homework) that the admin course
+    # stores after a sync: course_vi_extra.json, captured from the rendered [과정].
+    extra_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "regional_admin", "course_vi_extra.json")
+    if os.path.exists(extra_path):
+        with open(extra_path, encoding="utf-8") as f:
+            for ko, vi in (json.load(f).get(region) or {}).items():
+                found.setdefault(ko, vi)
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "regional_admin", "course_vi.json")
     try:
         with open(path, encoding="utf-8") as f:
