@@ -1119,12 +1119,18 @@
   .curr-card p:last-child { margin-bottom: 0; }
   .curr-phase-grid { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
   .curr-roster { max-width: 640px; border: 1px solid var(--border); border-radius: var(--radius-m); overflow: hidden; margin-bottom: 18px; }
-  .curr-roster-head, .curr-roster-row { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.5fr); gap: 6px; align-items: center; padding: 4px 10px; }
+  .curr-roster-head, .curr-roster-row { display: grid; grid-template-columns: minmax(0, 0.62fr) minmax(0, 1fr) minmax(0, 1fr); gap: 4px; align-items: center; padding: 3px 8px; }
+  .curr-roster .speak-btn { min-width: 34px; min-height: 34px; width: 34px; height: 34px; margin-left: 2px; }
+  .curr-roster-head-ko { display: block; font-weight: 600; }
   .curr-roster-head { background: var(--chip-bg); font-size: 0.74rem; font-weight: 800; color: var(--ink-soft); }
   .curr-roster-title { background: var(--accent-soft); color: var(--ink); font-weight: 800; font-size: 0.82rem; padding: 8px 12px; }
   .curr-roster-title-vi { display: block; font-weight: 600; font-size: 0.74rem; color: var(--ink-soft); }
-  .curr-roster-row { border-top: 1px solid var(--border); font-size: 0.88rem; }
+  .curr-roster-row { border-top: 1px solid var(--border); font-size: 0.84rem; }
   .curr-roster-vi { display: flex; align-items: center; justify-content: space-between; min-width: 0; font-weight: 600; }
+  .curr-service { border: 1px solid var(--border); border-radius: var(--radius-m); padding: 6px 10px; margin-bottom: 10px; font-size: 0.84rem; }
+  .curr-service-row { display: flex; flex-wrap: wrap; gap: 2px 8px; padding: 2px 0; }
+  .curr-service-label { font-weight: 800; color: var(--accent); }
+  .curr-service-lang { font-size: 0.74rem; font-weight: 700; color: var(--ink-soft); background: var(--chip-bg); border-radius: 8px; padding: 0 6px; }
   .curr-phase-card {
     background: var(--accent-soft); border-radius: var(--radius-m); padding: 13px 16px;
   }

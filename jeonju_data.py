@@ -69,29 +69,69 @@ def _build_weeks():
 
 JEONJU_WEEKS = _build_weeks()
 
-# Members' Korean and Vietnamese names, shown in the [과정] welcome card (supplied by the user as a table).
-# Each Vietnamese name has a listen button; the label of each group is bilingual, as in the source.
+# Members' Korean name, Vietnamese name and Vietnamese form of address, shown in the [과정] welcome card
+# (supplied by the user as a table). The Vietnamese name and the form of address each have a listen button.
 JEONJU_CLASS_ROSTER = [
     {"title": {"ko": "2026–2027 전주 베트남어 학습반 성원", "vi": "Thành viên lớp học tiếng Việt Jeonju năm 2026–2027"},
      "members": [
-         ["김동주 형제", "anh Minh Phước"], ["김영임 자매", "chị Minh Thương"], ["김재윤 형제", "anh Tài Duẫn"],
-         ["오호경 자매", "chị Hồ Khánh"], ["김종배 형제", "anh Pháp"], ["최미순 자매", "chị Mỹ Xuân"],
-         ["박정환 형제", "anh Chinh Hoan"], ["원혜진 자매", "chị Huệ Trân"], ["박유나 어린이", "em Na"], ["박철현 형제", "anh Triết Hiền"],
-         ["송제홍 형제", "anh Lý"], ["이서희 자매", "chị Thụy Vy"], ["이수연 자매", "chị Xuyến"], ["이종명 형제", "anh Minh"],
-         ["이주옥 자매", "chị Ngọc"], ["이제희 어린이", "em Thiên Hy"], ["이제아 어린이", "em Thiên Nga"],
-         ["최영주 자매", "chị Châu"], ["한상현 형제", "anh Huyền"], ["한도희 형제", "anh Đạo"],
-         ["서주연 자매", "chị Quyên"], ["한정우 형제", "em Chinh Du"],
+         ["김동주", "Minh Phước", "anh Phước"], ["김영임", "Minh Thương", "chị Thương"], ["김재윤", "Tài Duẫn", "anh Duẫn"],
+         ["오호경", "Hồ Khánh", "chị Khánh"], ["김종배", "Pháp", "anh Pháp"], ["최미순", "Mỹ Xuân", "chị Xuân"],
+         ["박정환", "Chinh Hoan", "anh Hoan"], ["원혜진", "Huệ Trân", "chị Trân"], ["박유나", "Na", "em Na"],
+         ["박철현", "Triết Hiền", "anh Hiền"], ["송제홍", "Lý", "anh Lý"], ["이서희", "Thụy Vy", "chị Vy"],
+         ["이수연", "Xuyến", "chị Xuyến"], ["이종명", "Minh", "anh Minh"], ["이주옥", "Ngọc", "chị Ngọc"],
+         ["이제희", "Thiên Hy", "em Hy"], ["이제아", "Thiên Nga", "em Nga"], ["최영주", "Châu", "chị Châu"],
+         ["한상현", "Huyền", "anh Huyền"], ["한도희", "Đạo", "anh Đạo"], ["서주연", "Quyên", "chị Quyên"],
+         ["한정우", "Chinh Du", "em Du"],
      ]},
     {"title": {"ko": "전주 베트남어 집단 성원", "vi": "Thành viên nhóm tiếng Việt Jeonju"},
      "members": [
-         ["최찬호 형제", "anh Lam Phong"], ["이재순 자매", "chị Mỹ Duyên"], ["김한빈 형제", "anh Dương Bình"],
-         ["김수민 자매", "chị Ngọc Bích"], ["김예나 자매", "em Trang Thanh"], ["쩐응옥마이 자매", "chị Ngọc Mai"],
-         ["김소영 자매", "chị Mỹ Tâm"],
-         ["김종현 형제", "anh Minh Trường"], ["김대훈 형제", "anh Huấn"], ["박준우 형제", "anh Anh Duy"],
+         ["최찬호", "Lam Phong", "anh Phong"], ["이재순", "Mỹ Duyên", "chị Duyên"], ["김한빈", "Dương Bình", "anh Bình"],
+         ["김수민", "Ngọc Bích", "chị Bích"], ["김예나", "Trang Thanh", "em Thanh"], ["쩐응옥마이", "Ngọc Mai", "chị Mai"],
+         ["김소영", "Mỹ Tâm", "chị Tâm"], ["김종현", "Minh Trường", "anh Trường"], ["김대훈", "Huấn", "anh Huấn"],
+         ["박준우", "Duy", "anh Duy"],
      ]},
     {"title": {"ko": "강사", "vi": "Giảng viên"},
-     "members": [["이주복 형제", "anh Thành Trung"]]},
+     "members": [["이주복", "Thành Trung", "anh Trung"]]},
 ]
+
+# Every class, from the preliminary meeting to graduation, opens and closes with a Vietnamese song and prayer.
+# Prayer assignments per class ("prelim" = 2026-10-03, then source week 1-16): [opening, closing], each
+# [Korean name, prayer language or None]. 한정우 (unbaptized publisher) is not assigned.
+_P = lambda name, lang=None: [name, lang]
+JEONJU_PRAYERS = {
+    "prelim": [_P("최찬호"), _P("이주복")],
+    "1": [_P("김동주"), _P("김한빈")],
+    "2": [_P("김재윤"), _P("김종현")],
+    "3": [_P("김종배"), _P("김대훈")],
+    "4": [_P("박정환"), _P("박준우")],
+    "5": [_P("박철현"), _P("최찬호")],
+    "6": [_P("송제홍"), _P("김한빈")],
+    "7": [_P("이종명"), _P("김종현")],
+    "8": [_P("한상현"), _P("김대훈")],
+    "9": [_P("한도희"), _P("박준우")],
+    "10": [_P("이주복", "ko"), _P("김한빈", "vi")],
+    "11": [_P("김동주", "vi"), _P("김재윤", "vi")],
+    "12": [_P("김종배", "vi"), _P("박정환", "vi")],
+    "13": [_P("박철현", "vi"), _P("송제홍", "vi")],
+    "14": [_P("이종명", "vi"), _P("한상현", "vi")],
+    "15": [_P("한도희", "vi"), _P("김동주", "vi")],
+    "16": [_P("이주복", "ko"), _P("김한빈", "vi")],
+}
+
+# Homework for the weeks without class (keyed by the cancelled date): review the named source weeks'
+# study items and preview the next class's items, spread over Monday-Friday.
+JEONJU_BREAK_ASSIGNMENTS = {
+    "2026-11-07": {"review": [1, 2], "preview": 5},
+    "2026-11-28": {"review": [1, 2, 3, 4]},
+    "2026-12-05": {"review": [5, 6], "preview": 7},
+}
+
+# 2026-10-03 is a preliminary meeting without lessons: its study items are taught at the first class (10-10).
+# Its homework (10/5-9) stays in the welcome card.
+JEONJU_PRELIM_ITEMS_TO_WEEK1 = True
+
+# The last class (2027-02-13) has only these; every other item of that week is done at the class before it.
+JEONJU_LAST_WEEK_ONLY = ["파수대 집회 실연 (사회, 낭독, 발표)", "졸업", "베트남어 노래 (46번) 합창"]
 
 # Regional editing boundary: [교과] / [16주 과정] overrides
 # When None, build_app.py inherits the shared JW CURR_WEEKS, CURR_WELCOME, CURR_PHASES, CURR_ASSIGNMENTS.
