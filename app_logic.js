@@ -6015,6 +6015,7 @@
       var hint = gt(m.hint);
       return '<span class="curr-guide-chip">' + escapeHtml(gt(m.label)) + (hint ? '<span class="curr-guide-hint"> · ' + escapeHtml(hint) + '</span>' : '') + '</span>';
     }).join("");
+    if (!methods && !(g.materials || []).length) return "";
     return '<div class="curr-guide">' +
       (methods ? '<div class="curr-guide-row"><span class="curr-guide-label">' + escapeHtml(T(COURSE_GUIDE_LABELS.methods)) + '</span><div class="curr-guide-chips">' + methods + '</div></div>' : '') +
       ((g.materials || []).length ? '<div class="curr-guide-row"><span class="curr-guide-label">' + escapeHtml(T(COURSE_GUIDE_LABELS.materials)) + '</span><span class="curr-guide-text">' + escapeHtml(g.materials.map(gt).join(", ")) + '</span></div>' : '') +
@@ -6161,7 +6162,7 @@
     var base = (typeof CURR_ASSIGNMENTS !== "undefined" ? CURR_ASSIGNMENTS : []).filter(function (a) { return a.days && a.days.length === 5; })[0];
     return base ? { days: base.days.map(function (d) { return { day: d.day, reviews: [], previews: [] }; }) } : null;
   }
-  function grammarAssignCardHtml(assign, weekKey) {
+  function grammarAssignCardHtml(assign, weekKey, dateLabel) {
     if (!assign) return "";
     var body = "";
     assign.days.forEach(function (d) {
@@ -6169,14 +6170,89 @@
       [[d.reviews || [], "review", "복습"], [d.previews || [], "preview", "예습"]].forEach(function (group) {
         group[0].forEach(function (it) {
           rows += '<div class="curr-assign-row"><span class="curr-assign-kind ' + group[1] + '">' + TU(group[2]) + '</span><span class="curr-assign-text">' +
-            escapeHtml(T(it.text)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, weekKey)) + '</div>';
+            escapeHtml(T(it.text)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, it._wk === undefined ? weekKey : it._wk)) + '</div>';
         });
       });
       if (rows) body += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>' + rows + '</div>';
     });
     if (!body) return "";
     return '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' +
-      TU("주간 수행 과제") + '</span>' + currChev() + '</button><div class="curr-assign-body">' + body + '</div></div>';
+      assignLabel(dateLabel) + '</span>' + currChev() + '</button><div class="curr-assign-body">' + body + '</div></div>';
+  }
+  function regionalFlag(key) {
+    return typeof REGIONAL_SCHEDULE !== "undefined" && REGIONAL_SCHEDULE && REGIONAL_SCHEDULE[key] || null;
+  }
+  // "2026/10/05~09 주간 수행 과제": the Monday-Friday after the class (or meeting / cancelled class) on `date`.
+  function assignLabel(date) {
+    var m = /^(\d{4})[\/-](\d{2})[\/-](\d{2})$/.exec(date || "");
+    if (!m) return TU("주간 수행 과제");
+    var d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+    d.setUTCDate(d.getUTCDate() + ((8 - d.getUTCDay()) % 7 || 7));
+    var f = new Date(d.getTime() + 4 * 86400000);
+    function p2(n) { return (n < 10 ? "0" : "") + n; }
+    var from = d.getUTCFullYear() + "/" + p2(d.getUTCMonth() + 1) + "/" + p2(d.getUTCDate());
+    var to = (f.getUTCMonth() === d.getUTCMonth() ? "" : p2(f.getUTCMonth() + 1) + "/") + p2(f.getUTCDate());
+    return escapeHtml(from + "~" + to) + " " + TU("주간 수행 과제");
+  }
+  // Break-week homework (REGIONAL_SCHEDULE.breakAssignments): review earlier classes' study items and preview
+  // the next class's, spread over Monday-Friday; every other cancelled week keeps grammar-only homework.
+  function breakAssign(slot, instSlots) {
+    var cfg = (regionalFlag("breakAssignments") || {})[slot.date];
+    var base = grammarOnlyAssign();
+    if (!cfg || !base || !base.days || !base.days.length) return base;
+    function itemsOf(week) {
+      var s = instSlots.filter(function (x) { return x.week === week; })[0];
+      if (!s) return [];
+      var shown = curriculumDisplayItems({ week: week, items: s.items || [] });
+      if (week === 1 && regionalFlag("prelimItemsToWeek1")) shown = prelimItemsForWeek1(shown).concat(shown);
+      return shown.map(function (it) {
+        var wk = it._wk === undefined ? week : it._wk;
+        return { text: curriculumItemText(it, wk), link: it.link, _wk: wk };
+      });
+    }
+    function spread(list, i, n) { return list.filter(function (_, k) { return k % n === i; }); }
+    var reviews = [];
+    (cfg.review || []).forEach(function (w) { reviews = reviews.concat(itemsOf(w)); });
+    var previews = cfg.preview ? itemsOf(cfg.preview) : [];
+    var n = base.days.length;
+    return Object.assign({}, base, { days: base.days.map(function (d, i) {
+      return Object.assign({}, d, { reviews: spread(reviews, i, n).concat(d.reviews || []), previews: spread(previews, i, n).concat(d.previews || []) });
+    }) });
+  }
+  // The preliminary meeting's study items (CURR_WEEKS week 0), taught at the first class; duplicates of week-1 items are dropped.
+  function prelimItemsForWeek1(week1Items) {
+    var week0 = (CURR_WEEKS || []).filter(function (w) { return w.week === 0; })[0];
+    if (!week0 || !week0.items) return [];
+    var seen = {};
+    week1Items.forEach(function (it) { seen[curriculumItemText(it, 1).replace(/\s+/g, "")] = 1; });
+    return curriculumDisplayItems({ week: 0, items: week0.items }).filter(function (it) {
+      return !seen[curriculumItemText(it, 0).replace(/\s+/g, "")];
+    }).map(function (it) { return Object.assign({}, it, { _wk: 0 }); });
+  }
+  // Opening / closing Vietnamese song and prayer of a class (REGIONAL_SCHEDULE.prayers, keyed "prelim" or the week).
+  var COURSE_SERVICE_WORDS = {
+    open: { ko: "시작 노래·기도", vi: "Bài hát và cầu nguyện mở đầu", en: "Opening song and prayer" },
+    close: { ko: "마치는 노래·기도", vi: "Bài hát và cầu nguyện kết thúc", en: "Closing song and prayer" },
+    song: { ko: "베트남어 노래", vi: "Bài hát tiếng Việt", en: "Vietnamese song" },
+    ko: { ko: "한국어", vi: "tiếng Hàn", en: "in Korean" },
+    vi: { ko: "베트남어", vi: "tiếng Việt", en: "in Vietnamese" },
+    brother: { ko: "형제", vi: "", en: "" }
+  };
+  function courseServiceWord(k) { var w = COURSE_SERVICE_WORDS[k]; return w[currentLang] !== undefined ? w[currentLang] : w.en; }
+  function courseServiceHtml(key) {
+    var pr = (regionalFlag("prayers") || {})[String(key)];
+    if (!pr) return "";
+    var address = {};
+    (typeof CLASS_ROSTER !== "undefined" ? CLASS_ROSTER : []).forEach(function (g) { g.members.forEach(function (m) { address[m[0]] = m[2] || m[1]; }); });
+    function who(p) {
+      var addr = address[p[0]] || "";
+      var name = currentLang === "ko" ? p[0] + " " + courseServiceWord("brother") + (addr ? " (" + addr + ")" : "") : (addr || p[0]);
+      return escapeHtml(name) + (p[1] ? ' <span class="curr-service-lang">' + escapeHtml(courseServiceWord(p[1])) + '</span>' : '');
+    }
+    return '<div class="curr-service">' +
+      '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("open")) + '</span><span>' + escapeHtml(courseServiceWord("song")) + ' · ' + who(pr[0]) + '</span></div>' +
+      '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("close")) + '</span><span>' + escapeHtml(courseServiceWord("song")) + ' · ' + who(pr[1]) + '</span></div>' +
+      '</div>';
   }
   function bindCurrGroupCards(root) {
     root.querySelectorAll(".group-card").forEach(function (card) {
@@ -6562,6 +6638,9 @@ function verifyDistribution(units, dist, pins) {
       [/^파수대 집회 실연 리허설 \(사회, 낭독, 해설\)$/, "Tập dượt trình diễn buổi học Tháp Canh (điều khiển, đọc, bình luận)", "Watchtower Study demonstration rehearsal (conducting, reading, commenting)"],
       [/^행누 1과로 성서 연구 사회 실습$/, "Tập điều khiển học hỏi Kinh Thánh với Vui sống mãi mãi bài 1", "Practice conducting a Bible study with Enjoy Life Forever lesson 1"],
       [/^베트남어 노래 \((\d+)번\) 합창$/, "Cùng hát bài hát tiếng Việt số $1", "Sing Vietnamese song no. $1 together"],
+      [/^파수대 집회 실연 \(사회, 낭독, 발표\)$/, "Trình diễn buổi học Tháp Canh (điều khiển, đọc, bình luận)", "Watchtower Study demonstration (conducting, reading, commenting)"],
+      [/^졸업$/, "Tốt nghiệp", "Graduation"],
+      [/^파수대 집회 실연과 졸업$/, "Trình diễn buổi học Tháp Canh và tốt nghiệp", "Watchtower Study demonstration and graduation"],
       [/^총복습과 파수대 집회 실연 리허설$/, "Ôn tập tổng quát và tập dượt trình diễn buổi học Tháp Canh", "General review and Watchtower Study demonstration rehearsal"],
       [/^(\d+)주 \(총복습·실연 리허설\)$/, "Tuần $1 (ôn tập tổng quát · tập dượt trình diễn)", "Week $1 (general review · demonstration rehearsal)"],
       [/^(\d+)주 \(파수대 집회 실연·졸업\)$/, "Tuần $1 (trình diễn buổi học Tháp Canh · tốt nghiệp)", "Week $1 (Watchtower Study demonstration · graduation)"]
@@ -6923,23 +7002,31 @@ function verifyDistribution(units, dist, pins) {
     }
     // Class members' Korean / Vietnamese names (JEONJU), each Vietnamese name with a listen button.
     if (typeof CLASS_ROSTER !== "undefined" && CLASS_ROSTER.length) {
-      html += '<div class="curr-roster"><div class="curr-roster-head"><span>' + (currentLang === "vi" ? "Tên tiếng Hàn" : "한국어 이름") + '</span><span>Tên tiếng Việt</span></div>';
+      var rosterVi = currentLang === "vi";
+      html += '<div class="curr-roster"><div class="curr-roster-head"><span>' + (rosterVi ? "Tên tiếng Hàn" : "한국어 이름") + '</span>' +
+        '<span>Tên tiếng Việt' + (rosterVi ? '' : '<span class="curr-roster-head-ko">베트남어 이름</span>') + '</span>' +
+        '<span>Xưng hô tiếng Việt' + (rosterVi ? '' : '<span class="curr-roster-head-ko">베트남어 호칭</span>') + '</span></div>';
       CLASS_ROSTER.forEach(function (grp) {
         html += '<div class="curr-roster-group"><div class="curr-roster-title">' + (currentLang === "vi" ? "" : escapeHtml(grp.title.ko)) +
           '<span class="curr-roster-title-vi vn">' + escapeHtml(grp.title.vi) + '</span></div>';
         grp.members.forEach(function (m) {
-          html += '<div class="curr-roster-row"><span class="curr-roster-ko">' + escapeHtml(m[0]) + '</span>' +
-            '<span class="curr-roster-vi vn">' + escapeHtml(m[1]) +
-            '<button class="speak-btn" data-speak="' + escapeAttr(m[1]) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></span></div>';
+          html += '<div class="curr-roster-row"><span class="curr-roster-ko">' + escapeHtml(m[0]) + '</span>';
+          [m[1], m[2]].forEach(function (v) {
+            html += '<span class="curr-roster-vi vn">' + (v ? escapeHtml(v) +
+              '<button class="speak-btn" data-speak="' + escapeAttr(v) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' : '') + '</span>';
+          });
+          html += '</div>';
         });
         html += '</div>';
       });
       html += '</div>';
     }
 
+    if (sched && sched.preliminaryMeeting) html += courseServiceHtml("prelim");
     html += courseGuideHtml("preliminary");
     // JEONJU: the 10/3 preliminary meeting's own study items (CURR_WEEKS week 0), which otherwise only appear as homework.
-    if (sched && sched.preliminaryMeeting && courseGuideEntry("preliminary")) {
+    // When the meeting has no lesson (prelimItemsToWeek1) they are shown in the first class instead.
+    if (sched && sched.preliminaryMeeting && courseGuideEntry("preliminary") && !regionalFlag("prelimItemsToWeek1")) {
       var week0 = (CURR_WEEKS || []).filter(function (w) { return w.week === 0; })[0];
       if (week0 && week0.items && week0.items.length) {
         html += '<div class="curr-item-list curr-prelim-list"><div class="curr-guide-label" style="margin:4px 0 2px;">' + escapeHtml(TU("예비 모임")) + '</div>';
@@ -6961,7 +7048,7 @@ function verifyDistribution(units, dist, pins) {
         welcomeAssign = addGrammarHomework(welcomeAssign, null, welcomeSpan.preview, 0, welcomeSpan.parts);
       }
       if (welcomeAssign) {
-        html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button><div class="curr-assign-body">';
+        html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + assignLabel(sched && sched.preliminaryMeeting && sched.preliminaryMeeting.calculatedDate) + '</span>' + currChev() + '</button><div class="curr-assign-body">';
         welcomeAssign.days.forEach(function (d) {
           html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
           [[d.reviews || [], "review", "복습"], [d.previews || [], "preview", "예습"], [d.vocab || [], "vocab", "어휘"]].forEach(function (group) {
@@ -6988,6 +7075,16 @@ function verifyDistribution(units, dist, pins) {
       } else {
         // Configured Regional Schedule (e.g. Jeonju)
         var instSlots = sched.slots.filter(function (s) { return s.type === 'instructional'; });
+        // REGIONAL_SCHEDULE.lastWeekOnly: the last class keeps only these items; the rest move to the class before it.
+        var lastOnly = regionalFlag("lastWeekOnly"), lastSplit = null;
+        if (lastOnly && instSlots.length > 1) {
+          var lastSlot = instSlots[instSlots.length - 1];
+          lastSplit = { week: lastSlot.week, keep: [], move: [] };
+          curriculumDisplayItems({ week: lastSlot.week, items: lastSlot.items || [] }).forEach(function (it) {
+            var ko = it.text && typeof it.text === "object" ? it.text.ko : it.text;
+            (lastOnly.indexOf(String(ko || "").trim()) >= 0 ? lastSplit.keep : lastSplit.move).push(Object.assign({}, it, { _wk: lastSlot.week }));
+          });
+        }
         // welcome (homework before the first class), then every slot: where each homework week sits for [일반 문법]
         var gramSeq = [{ cls: null }].concat(sched.slots.map(function (s) { return { cls: s.type === "instructional" ? grammarClassWeek(s.week) : null }; }));
         sched.slots.forEach(function (slot, slotIdx) {
@@ -6998,7 +7095,7 @@ function verifyDistribution(units, dist, pins) {
               currChev() + '</button>' +
               '<div class="group-body"><div class="curr-item-list">' +
               '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
-              '</div>' + grammarAssignCardHtml(addGrammarHomework(grammarOnlyAssign(), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), gramSpan.preview) +
+              '</div>' + grammarAssignCardHtml(addGrammarHomework(breakAssign(slot, instSlots), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), gramSpan.preview, slot.calculatedDate) +
               '</div></div>';
           } else {
             var badgeText = slot.week === 16 && !(courseGuideEntry(16) && !/총복습/.test((slot.title && (slot.title.ko || slot.title)) || "")) ?
@@ -7008,15 +7105,19 @@ function verifyDistribution(units, dist, pins) {
               '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(badgeText) + '</span>' +
               (slot.note ? '<span class="curr-week-note">' + escapeHtml(T(slot.note)) + '</span>' : '') + '</span>' +
               currChev() + '</button>' +
-              '<div class="group-body">' + courseGuideHtml(slot.week) + '<div class="curr-item-list">';
+              '<div class="group-body">' + courseServiceHtml(slot.week) + courseGuideHtml(slot.week) + '<div class="curr-item-list">';
             var displayItems = curriculumDisplayItems({ week: slot.week, items: slot.items || [] });
+            if (slot.week === 1 && regionalFlag("prelimItemsToWeek1")) displayItems = prelimItemsForWeek1(displayItems).concat(displayItems);
+            if (lastSplit && slot.week === lastSplit.week) displayItems = lastSplit.keep;
+            else if (lastSplit && slot.week === lastSplit.week - 1) displayItems = displayItems.concat(lastSplit.move);
             if (!displayItems || displayItems.length === 0) {
               html += '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div>';
             } else {
               displayItems.forEach(function (it) {
-                html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, slot.week)) +
+                var itWeek = it._wk === undefined ? slot.week : it._wk;
+                html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, itWeek)) +
                   (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') + '</div>' +
-                  currLinkBtn(curriculumLinkForWeek(it.link, slot.week)) + '</div>';
+                  currLinkBtn(curriculumLinkForWeek(it.link, itWeek)) + '</div>';
               });
             }
             html += '</div>';
@@ -7047,7 +7148,7 @@ function verifyDistribution(units, dist, pins) {
             }
             if (assign) {
               html += '<div class="curr-assign-card" data-open="false">' +
-                '<button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button>' +
+                '<button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + assignLabel(slot.calculatedDate) + '</span>' + currChev() + '</button>' +
                 '<div class="curr-assign-body">';
               assign.days.forEach(function (d) {
                 html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
