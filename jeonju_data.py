@@ -212,6 +212,20 @@ _LANGS12 = {"ko", "vi", "en", "ja", "zh", "zh_cn", "cs", "de", "fr", "hu", "id",
 assert all(set(t) == _LANGS12 and all(t.values()) for t in JEONJU_CLASS_SCOPE["notes"].values())
 assert all(k in JEONJU_CLASS_SCOPE["notes"] for _, k in JEONJU_CLASS_SCOPE["rules"])
 
+# A task added to every weekday of the weekly homework for a run of weeks: "from" = the Monday of the first homework
+# week, "weeks" = how many consecutive homework weeks, "kind" = "preview" / "review".
+# 베트남어 일기 쓰기: the 12-12 class (7주) brings three weeks of diary (준비물: 3주간 쓴 일기), so 11/23-27,
+# 11/30-12/4 and 12/7-11 practise it every day.
+JEONJU_DAILY_TASKS = [
+    {"from": "2026-11-23", "weeks": 3, "kind": "preview",
+     "text": {"ko": "베트남어 일기 쓰기", "vi": "Viết nhật ký bằng tiếng Việt", "en": "Write a diary in Vietnamese",
+              "ja": "ベトナム語で日記を書く", "zh": "用越南語寫日記", "zh_cn": "用越南语写日记",
+              "cs": "Psaní deníku ve vietnamštině", "de": "Tagebuch auf Vietnamesisch schreiben",
+              "fr": "Écrire son journal en vietnamien", "hu": "Naplóírás vietnamiul",
+              "id": "Menulis buku harian dalam bahasa Vietnam", "pl": "Pisanie pamiętnika po wietnamsku"}},
+]
+assert all(set(t["text"]) == _LANGS12 and all(t["text"].values()) for t in JEONJU_DAILY_TASKS)
+
 # Regional editing boundary: [교과] / [16주 과정] overrides
 # When None, build_app.py inherits the shared JW CURR_WEEKS, CURR_WELCOME, CURR_PHASES, CURR_ASSIGNMENTS.
 JEONJU_CURR_WELCOME = None

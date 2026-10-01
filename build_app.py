@@ -920,6 +920,7 @@ def build_data_js(site):
             "prelimItemsToWeek1": jeonju_data.JEONJU_PRELIM_ITEMS_TO_WEEK1,
             "lastWeekOnly": jeonju_data.JEONJU_LAST_WEEK_ONLY,
             "classScope": jeonju_data.JEONJU_CLASS_SCOPE,
+            "dailyTasks": jeonju_data.JEONJU_DAILY_TASKS,
         }))
         # Teaching methods + student materials per source unit (regional_admin/teaching_guide.json, the same
         # file the /admin teacher's guide shows); students see only the method names and what to bring.

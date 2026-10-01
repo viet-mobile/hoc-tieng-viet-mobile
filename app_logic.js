@@ -6476,6 +6476,33 @@
     });
     return Object.assign({}, assign, { days: days });
   }
+  // REGIONAL_SCHEDULE.dailyTasks: a task on every weekday of the homework weeks it covers. `meetingDate` is the
+  // class / meeting / cancelled class the homework follows; its Monday is the next one (as in assignLabel).
+  function homeworkMonday(meetingDate) {
+    var m = /^(\d{4})[\/-](\d{2})[\/-](\d{2})$/.exec(meetingDate || "");
+    if (!m) return "";
+    var d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+    d.setUTCDate(d.getUTCDate() + ((8 - d.getUTCDay()) % 7 || 7));
+    return d.toISOString().slice(0, 10);
+  }
+  function applyDailyTasks(assign, meetingDate) {
+    var tasks = regionalFlag("dailyTasks");
+    var monday = homeworkMonday(meetingDate);
+    if (!tasks || !monday || !assign || !assign.days || !assign.days.length) return assign;
+    var due = tasks.filter(function (t) {
+      var from = Date.parse(t.from + "T00:00:00Z"), at = Date.parse(monday + "T00:00:00Z");
+      return at >= from && at < from + (t.weeks || 1) * 7 * 86400000;
+    });
+    if (!due.length) return assign;
+    return Object.assign({}, assign, { days: assign.days.map(function (d) {
+      var copy = Object.assign({}, d, { reviews: (d.reviews || []).slice(), previews: (d.previews || []).slice() });
+      due.forEach(function (t) {
+        var key = t.kind === "review" ? "reviews" : "previews";
+        if (!copy[key].some(function (x) { return scopeKo(x) === t.text.ko; })) copy[key].unshift({ text: t.text });
+      });
+      return copy;
+    }) });
+  }
   function regionalFlag(key) {
     return typeof REGIONAL_SCHEDULE !== "undefined" && REGIONAL_SCHEDULE && REGIONAL_SCHEDULE[key] || null;
   }
@@ -7356,6 +7383,7 @@ function verifyDistribution(units, dist, pins) {
         var welcomeSpan = grammarHomeworkSpan(welcomeSeq, 0);
         welcomeAssign = addGrammarHomework(welcomeAssign, null, welcomeSpan.preview, 0, welcomeSpan.parts);
         welcomeAssign = applyCourseSongHomework(applyCourseVocabHomework(welcomeAssign, sched, 0), sched, 0);
+        if (sched.preliminaryMeeting) welcomeAssign = applyDailyTasks(welcomeAssign, sched.preliminaryMeeting.date);
         // Maintenance hook (tools/sync): a page that sets window.__COURSE_CAPTURE receives every card's items.
         if (window.__COURSE_CAPTURE && welcomeAssign) window.__COURSE_CAPTURE.hw[0] = JSON.parse(JSON.stringify(welcomeAssign));
       }
@@ -7431,7 +7459,7 @@ function verifyDistribution(units, dist, pins) {
               currChev() + '</button>' +
               '<div class="group-body"><div class="curr-item-list">' +
               '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
-              '</div>' + grammarAssignCardHtml(applyCourseSongHomework(applyCourseVocabHomework(addGrammarHomework(breakAssign(slot, instSlots), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), sched, slotIdx + 1), sched, slotIdx + 1), gramSpan.preview, slot.calculatedDate) +
+              '</div>' + grammarAssignCardHtml(applyDailyTasks(applyCourseSongHomework(applyCourseVocabHomework(addGrammarHomework(breakAssign(slot, instSlots), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), sched, slotIdx + 1), sched, slotIdx + 1), slot.date), gramSpan.preview, slot.calculatedDate) +
               '</div></div>';
           } else {
             var badgeText = slot.week === 16 && !(courseGuideEntry(16) && !/총복습/.test((slot.title && (slot.title.ko || slot.title)) || "")) ?
@@ -7498,6 +7526,7 @@ function verifyDistribution(units, dist, pins) {
               assign = applyCourseVocabHomework(assign, sched, slotIdx + 1);
               assign = applyCourseSongHomework(assign, sched, slotIdx + 1);
               assign = applyHomeworkOnly(assign, homeworkOnlyOf[slot.week] || [], homeworkOnlyOf[nextInst.week] || []);
+              assign = applyDailyTasks(assign, slot.date);
             }
             if (window.__COURSE_CAPTURE && assign) window.__COURSE_CAPTURE.hw[slot.week] = JSON.parse(JSON.stringify(assign));
             if (assign) {
