@@ -42832,7 +42832,7 @@ const SONGS_DATA = [
       "id": "LAGU 110"
     },
     "title": {
-      "vi": "l10 “Niềm vui của Đức Giê-hô-va”",
+      "vi": "“Niềm vui của Đức Giê-hô-va”",
       "ko": "“여호와의기쁨”",
       "zh": "耶和華所賜的喜樂",
       "en": "“The Joy of Jehovah”",
@@ -44194,7 +44194,7 @@ const SONGS_DATA = [
       "id": "LAGU 113"
     },
     "title": {
-      "vi": "ll5 Sự bình an của dân Đức Chúa Trời",
+      "vi": "Sự bình an của dân Đức Chúa Trời",
       "ko": "평화—우리의 소유",
       "zh": "我們享有和平",
       "en": "Our Possession of Peace",
@@ -44990,7 +44990,7 @@ const SONGS_DATA = [
       "id": "LAGU 115"
     },
     "title": {
-      "vi": "Biết ơn Đức Chúa Trời vì sự kiên nhẫn của ngài ",
+      "vi": "Biết ơn Đức Chúa Trời vì sự kiên nhẫn của ngài",
       "ko": "하느님의 참으심에감사하리",
       "zh": "感激上帝表現耐心",
       "en": "Gratitude for Divine Patience",
@@ -50700,7 +50700,7 @@ const SONGS_DATA = [
       "id": "LAGU 131"
     },
     "title": {
-      "vi": "l51... Cuộc hôn nhân do Chúa tác hợp",
+      "vi": "Cuộc hôn nhân do Chúa tác hợp",
       "ko": "‘하느님께서 멍에를 함께 메게 하셨네'",
       "zh": "上帝使他們結合",
       "en": "“What God Has Yoked Together”",
@@ -51286,7 +51286,7 @@ const SONGS_DATA = [
       "id": "LAGU 133"
     },
     "title": {
-      "vi": "l55 Thờ phượng Đức Giê-hô-va trong thời thanh xuân",
+      "vi": "Thờ phượng Đức Giê-hô-va trong thời thanh xuân",
       "ko": "청소년 때 여호와를 숭배하라",
       "zh": "善用青春崇拜耶和華",
       "en": "Worship Jehovah During Youth",
@@ -52794,7 +52794,7 @@ const SONGS_DATA = [
       "id": "LAGU 137"
     },
     "title": {
-      "vi": "157... Những người nữ trung thành",
+      "vi": "Những người nữ trung thành",
       "ko": "충실한 여인들, 그리스도인 자매들",
       "zh": "忠心的女子，基督徒姐妹",
       "en": "Faithful Women, Christian Sisters",
@@ -54428,7 +54428,7 @@ const SONGS_DATA = [
       "id": "LAGU 141"
     },
     "title": {
-      "vi": "l41 Điều kỳ diệu của sự sống",
+      "vi": "Điều kỳ diệu của sự sống",
       "ko": "생명—하느님이 주신 선물",
       "zh": "生命是奇妙恩賜",
       "en": "The Miracle of Life",
