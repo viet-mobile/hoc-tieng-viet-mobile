@@ -81,7 +81,7 @@ JEONJU_CLASS_ROSTER = [
          ["이수연", "Xuyến", "chị Xuyến"], ["이종명", "Minh", "anh Minh"], ["이주옥", "Ngọc", "chị Ngọc"],
          ["이제희", "Thiên Hy", "em Hy"], ["이제아", "Thiên Nga", "em Nga"], ["최영주", "Châu", "chị Châu"],
          ["한상현", "Huyền", "anh Huyền"], ["한도희", "Đạo", "anh Đạo"], ["서주연", "Quyên", "chị Quyên"],
-         ["한정우", "Chinh Du", "em Du"],
+         ["한정우", "Chinh Du", "em Du"], ["유계화", "Hoa", "chị Hoa"],
      ]},
     {"title": {"ko": "전주 베트남어 집단 성원", "vi": "Thành viên nhóm tiếng Việt Jeonju"},
      "members": [
