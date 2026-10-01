@@ -1923,6 +1923,12 @@
     // once the hyphens are gone, same as if the syllables were simply space-separated; a hyphen
     // that already has spacing around it (a real dash, not a name-joiner) is left alone.
     out = out.replace(/([^\s-])-(?=[^\s-])/g, "$1 ");
+    // Psalms are numbered psalms, not chapters: "Thi thiên 54" is read "Thi thiên thư 54" and "Thi thiên 54:3"
+    // (also the abbreviation "Thi 54:3") "Thi thiên thư 54 câu 3", never "chương 54".
+    out = out.replace(/Thi thiên(?: thư)?\s+(\d+)(?:\s*:\s*(\d+(?:[\s,、–~-]+\d+)*))?(?![\d:])/g, function (m, ch, vs) {
+      return "Thi thiên thư " + ch + (vs ? " câu " + vs : "");
+    });
+    out = out.replace(/(^|[^\p{L}])Thi\s+(\d+)\s*:\s*(\d+(?:[\s,、–~-]+\d+)*)/gu, "$1Thi thiên thư $2 câu $3");
     out = out.replace(/(\d+)\s*:\s*(\d+(?:[\s,、–~-]+\d+)*)/g, "chương $1 câu $2");
     // In Vietnamese, "donate" (as in donate.jw.org) is an English borrowing. Vietnamese TTS
     // voices default to reading "donate" with Vietnamese phonetic rules ("đô-na-te"),
@@ -2173,6 +2179,13 @@
     }
   };
   function expandScriptureVersesForSpeech(text) {
+    if (currentLang === "ko" && text) {
+      // 시편 is counted in 편, not 장: "시편 54" -> "시편 오십사편", "시편 54:3" -> "시편 오십사편 삼절".
+      text = String(text).replace(/시편\s*(\d+)편/g, function (m, ch) { return "시편 " + sinoKoreanNumber(ch) + "편"; });
+      text = String(text).replace(/시편\s*(\d+)(?:\s*:\s*(\d+(?:[\s,、–~-]+\d+)*))?(?![\d:편장])/g, function (m, ch, vs) {
+        return "시편 " + sinoKoreanNumber(ch) + "편" + (vs ? " " + vs.replace(/\d+/g, function (d) { return sinoKoreanNumber(d); }) + "절" : "");
+      });
+    }
     var tpl = SCRIPTURE_VERSE_TEMPLATE[currentLang];
     if (tpl && text) {
       text = String(text).replace(/(\d+):(\d+(?:[\s,、–~-]+\d+)*)/g, function (m, ch, vs) { return tpl(ch, vs); });
