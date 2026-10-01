@@ -1955,6 +1955,17 @@
   var IS_MAC_DESKTOP = /Macintosh|Mac OS X/i.test(navigator.userAgent || "") && !(navigator.maxTouchPoints > 1);
   var SPEECH_IDLE_POLL_MS = IS_MAC_DESKTOP ? 120 : 250;
   var READALL_STEP_GAP_MS = IS_MAC_DESKTOP ? 60 : 300;
+  // macOS also keeps reporting `speaking` for a while after an utterance has ended, and drops a speak() issued
+  // shortly after cancel() without any event. 전체 듣기 then cancelled the finished Vietnamese, the translation's
+  // speak() was dropped, and the stale `speaking` flag kept the retry from re-speaking it: the translation was
+  // never heard. So: cancel only an utterance of ours that is still unfinished, and speak no sooner than
+  // SPEECH_CANCEL_SETTLE_MS after the last cancel().
+  var SPEECH_CANCEL_SETTLE_MS = IS_MAC_DESKTOP ? 300 : 30;
+  var lastSpeechCancelAt = 0;
+  function cancelSpeech() {
+    lastSpeechCancelAt = Date.now();
+    try { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); } catch (e) { /* no-op */ }
+  }
   // Speaks opts.text (opts.lang/opts.rate/opts.voice optional) and calls onDone exactly once,
   // whether speech finishes normally, errors, or isn't available at all. Shared by every speech
   // call in the app -- individual speak-btns (via speakOnce below) AND 전체 듣기's chained
@@ -2012,11 +2023,12 @@
       armWatchdog(estMs);
 
       try { if (synth.paused) synth.resume(); } catch (e1) { /* no-op */ }
-      var hadActiveSpeech = false;
+      // An utterance of ours that has not finished yet is interrupted; a finished one is not -- macOS keeps
+      // `speaking` true after the end, and cancelling there made it drop the next speak().
       try {
-        if (synth.speaking || synth.pending) {
-          hadActiveSpeech = true;
-          synth.cancel();
+        if ((synth.speaking || synth.pending) && window.__activeUtterances.length) {
+          window.__activeUtterances = [];
+          cancelSpeech();
         }
       } catch (eCancel) { /* no-op */ }
 
@@ -2031,7 +2043,7 @@
         return u;
       };
 
-      var delay = hadActiveSpeech ? 30 : 10;
+      var delay = Math.max(10, lastSpeechCancelAt + SPEECH_CANCEL_SETTLE_MS - Date.now());
       speakRetryTimer = setTimeout(function () {
         speakRetryTimer = null;
         try {
@@ -2048,7 +2060,7 @@
             var busy = false;
             try { busy = synth.speaking || synth.pending; } catch (eIdle) { /* no-op */ }
             if (busy) { seenBusy = true; idleChecks = 0; }
-            else if (started || seenBusy) { if (++idleChecks >= 2) { callDone(); return; } }
+            else if (started || (seenBusy && !IS_MAC_DESKTOP)) { if (++idleChecks >= 2) { callDone(); return; } }
             setTimeout(pollIdle, SPEECH_IDLE_POLL_MS);
           })();
           // Retry once only if the engine silently dropped the utterance. Mobile engines (Samsung/
@@ -2057,13 +2069,21 @@
           // so the check waits longer and treats a queued (pending) utterance as accepted.
           setTimeout(function () {
             if (started || doneCalled || !("speechSynthesis" in window)) return;
-            try { if (synth.speaking || synth.pending) return; } catch (eState) { /* no-op */ }
+            try { if (synth.pending || (synth.speaking && !IS_MAC_DESKTOP)) return; } catch (eState) { /* no-op */ }
             try {
-              synth.cancel();
-              currentU = buildUtterance();
+              if (IS_MAC_DESKTOP) {
+                var dropped = currentU;
+                currentU = buildUtterance();
+                currentU.onstart = function () { started = true; };
+                var di = window.__activeUtterances.indexOf(dropped);
+                if (di !== -1) window.__activeUtterances.splice(di, 1);
+              } else {
+                cancelSpeech();
+                currentU = buildUtterance();
+              }
               synth.speak(currentU);
             } catch (e3) { callDone(); }
-          }, 1200);
+          }, IS_MAC_DESKTOP ? 700 : 1200);
         } catch (e2) { callDone(); /* no-op: speech not available */ }
       }, delay);
     } catch (e) { if (onDone) onDone(); /* no-op: speech not available */ }
@@ -2319,7 +2339,7 @@
     if (readAllState.btn) setReadAllBtnPlaying(readAllState.btn, false);
     readAllState = { id: null, texts: [], idx: -1, btn: null, token: readAllState.token + 1 };
     window.__activeUtterances = [];
-    try { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); } catch (e) { /* no-op */ }
+    cancelSpeech();
   }
 
   var READALL_LANG_TAG = { vi: "vi-VN", cs: "cs-CZ", zh_cn: "zh-CN", zh: "zh-TW", en: "en-US", fr: "fr-FR", de: "de-DE", hu: "hu-HU", id: "id-ID", ja: "ja-JP", ko: "ko-KR", pl: "pl-PL" };
@@ -2374,7 +2394,8 @@
         if (window.__globalAudioCtx.state === "suspended") window.__globalAudioCtx.resume();
       }
     } catch (e0) { /* no-op */ }
-    try { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); } catch (e1) { /* no-op */ }
+    window.__activeUtterances = [];
+    cancelSpeech();
     if (speakRetryTimer) { clearTimeout(speakRetryTimer); speakRetryTimer = null; }
     var token = readAllState.token + 1;
     readAllState = { id: id, texts: texts, idx: -1, btn: btn, token: token };
@@ -10652,7 +10673,7 @@ function verifyDistribution(units, dist, pins) {
     }
 
     function goToReview(key, poolOverride) {
-      try { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); } catch (e) { /* no-op */ }
+      cancelSpeech();
       activateTab("review", false);
       selectCategory(key, "all", poolOverride);
     }
