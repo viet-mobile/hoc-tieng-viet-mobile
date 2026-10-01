@@ -74,7 +74,7 @@ JEONJU_WEEKS = _build_weeks()
 JEONJU_CLASS_ROSTER = [
     {"title": {"ko": "2026–2027 전주 베트남어 학습반 성원", "vi": "Thành viên lớp học tiếng Việt Jeonju năm 2026–2027"},
      "members": [
-         ["김동주", "Minh Phước", "anh Phước"], ["김영임", "Minh Thương", "chị Thương"], ["김재윤", "Tài Duẫn", "anh Duẫn"],
+         ["김동주", "Minh Phước", "anh Phước"], ["김영임", "Minh Thương", "chị Thương"], ["김재윤", "Thành Tín", "anh Tín"],
          ["오호경", "Hồ Khánh", "chị Khánh"], ["김종배", "Pháp", "anh Pháp"], ["최미순", "Mỹ Xuân", "chị Xuân"],
          ["박정환", "Hiếu", "anh Hiếu"], ["원혜진", "Hiền", "chị Hiền"], ["박유나", "Na", "em Na"],
          ["박철현", "Triết Hiền", "anh Hiền"], ["송제홍", "Lý", "anh Lý"], ["이서희", "Thụy Vy", "chị Vy"],
