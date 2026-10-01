@@ -76,7 +76,7 @@ JEONJU_CLASS_ROSTER = [
      "members": [
          ["김동주", "Minh Phước", "anh Phước"], ["김영임", "Minh Thương", "chị Thương"], ["김재윤", "Tài Duẫn", "anh Duẫn"],
          ["오호경", "Hồ Khánh", "chị Khánh"], ["김종배", "Pháp", "anh Pháp"], ["최미순", "Mỹ Xuân", "chị Xuân"],
-         ["박정환", "Chinh Hoan", "anh Hoan"], ["원혜진", "Huệ Trân", "chị Trân"], ["박유나", "Na", "em Na"],
+         ["박정환", "Hiếu", "anh Hiếu"], ["원혜진", "Hiền", "chị Hiền"], ["박유나", "Na", "em Na"],
          ["박철현", "Triết Hiền", "anh Hiền"], ["송제홍", "Lý", "anh Lý"], ["이서희", "Thụy Vy", "chị Vy"],
          ["이수연", "Xuyến", "chị Xuyến"], ["이종명", "Minh", "anh Minh"], ["이주옥", "Ngọc", "chị Ngọc"],
          ["이제희", "Thiên Hy", "em Hy"], ["이제아", "Thiên Nga", "em Nga"], ["최영주", "Châu", "chị Châu"],
