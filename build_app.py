@@ -904,6 +904,7 @@ def build_data_js(site):
         parts.append(emit("JEONJU_INFO", jeonju_data.JEONJU_INFO))
         parts.append(emit("JEONJU_WEEKS", getattr(jeonju_data, "JEONJU_WEEKS", [])))
         parts.append(emit("CLASS_ROSTER", jeonju_data.JEONJU_CLASS_ROSTER))
+        parts.append(emit("STUDY_GROUPS", jeonju_data.JEONJU_STUDY_GROUPS))
         # [발음] > [설정] "홈 화면에 추가" guide: JEONJU only, named after this profile's own title and domain.
         from site_profiles import SITES as _SITES
         parts.append(emit("HOME_SCREEN_GUIDE", home_screen_guide(_SITES["jeonju"]["title"], "https://" + _SITES["jeonju"]["domain"])))

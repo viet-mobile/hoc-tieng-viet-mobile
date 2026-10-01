@@ -94,6 +94,28 @@ JEONJU_CLASS_ROSTER = [
      "members": [["이주복", "Thành Trung", "anh Trung"]]},
 ]
 
+# Study groups (조편성), shown under the class roster in the [과정] welcome card. Each group is named after a
+# fruit of the spirit (+ humility), with a Vietnamese name (listen button), its Korean meaning, and its members as
+# [Vietnamese call name, Korean name]; the first member is the group leader (조장), who helps the others study Vietnamese.
+JEONJU_STUDY_GROUPS = {
+    "title": {"ko": "학습반 조편성", "vi": "Phân nhóm lớp học"},
+    "note": {"ko": "각 조의 조장이 조원들의 베트남어 학습을 도와줄거예요~^^",
+             "vi": "Trưởng nhóm sẽ giúp các thành viên trong nhóm học tiếng Việt nhé~^^"},
+    "naming": {"ko": "각 조의 이름을 영의 열매의 9가지 주요 특성 + 겸손으로 지어보았어요."},
+    "groups": [
+        {"name": "Yêu thương", "meaning": {"ko": "사랑"}, "members": [["Thanh", "김예나"], ["Na", "박유나"], ["Hy", "이제희"], ["Nga", "이제아"]]},
+        {"name": "Vui mừng", "meaning": {"ko": "기쁨"}, "members": [["Bình", "김한빈"], ["Hiếu", "박정환"], ["Tín", "김재윤"]]},
+        {"name": "Bình an", "meaning": {"ko": "평화"}, "members": [["Bích", "김수민"], ["Hiền", "원혜진"], ["Ngọc", "이주옥"]]},
+        {"name": "Kiên nhẫn", "meaning": {"ko": "오래 참음"}, "members": [["Duy", "박준우"], ["Đạo", "한도희"], ["Pháp", "김종배"]]},
+        {"name": "Nhân từ", "meaning": {"ko": "친절"}, "members": [["Huấn", "김대훈"], ["Hiến", "박철현"], ["Huy", "한상현"]]},
+        {"name": "Tốt lành", "meaning": {"ko": "선함"}, "members": [["Phong", "최찬호"], ["Minh", "이종명"], ["Lý", "송제홍"]]},
+        {"name": "Đức tin", "meaning": {"ko": "믿음"}, "members": [["Duyên", "이재순"], ["Thương", "김영임"], ["Hoa", "유계화"]]},
+        {"name": "Mềm mại", "meaning": {"ko": "온화"}, "members": [["Trường", "김종현"], ["Phước", "김동주"], ["Du", "한정우"]]},
+        {"name": "Tự chủ", "meaning": {"ko": "자제"}, "members": [["Tâm", "김소영"], ["Châu", "최영주"], ["Vy", "이서희"], ["Xuyến", "이수연"]]},
+        {"name": "Khiêm nhường", "meaning": {"ko": "겸손"}, "members": [["Mai", "쩐응옥마이"], ["Quyên", "서주연"], ["Khánh", "오호경"], ["Xuân", "최미순"]]},
+    ],
+}
+
 # Every class, from the preliminary meeting to graduation, opens and closes with a Vietnamese song and prayer.
 # Prayer assignments per class ("prelim" = 2026-10-03, then source week 1-16): [opening, closing], each
 # [Korean name, prayer language "ko"/"vi"]. 김한빈 always prays in Vietnamese. 한정우 (unbaptized publisher) is not assigned.

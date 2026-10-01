@@ -7338,6 +7338,28 @@ function verifyDistribution(units, dist, pins) {
       });
       html += '</div>';
     }
+    // Study groups (조편성): each group's Vietnamese name (fruit of the spirit) has a listen button; the first member leads.
+    if (typeof STUDY_GROUPS !== "undefined" && STUDY_GROUPS.groups && STUDY_GROUPS.groups.length) {
+      html += '<div class="curr-groups"><div class="curr-groups-head">' + (currentLang === "vi" ? "" : escapeHtml(T(STUDY_GROUPS.title))) +
+        '<span class="curr-groups-head-vi vn">' + escapeHtml(STUDY_GROUPS.title.vi) + '</span></div>';
+      var groupNote = T(STUDY_GROUPS.note);
+      if (groupNote) html += '<div class="curr-groups-note">' + escapeHtml(groupNote) + '</div>';
+      STUDY_GROUPS.groups.forEach(function (g, gi) {
+        var meaning = T(g.meaning);
+        html += '<div class="curr-group-row"><div class="curr-group-name"><span class="curr-group-num">' + (gi + 1) + '</span>' +
+          '<span class="curr-group-vi vn">' + escapeHtml(g.name) + '</span>' +
+          '<button class="speak-btn" data-speak="' + escapeAttr(g.name) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+          (meaning ? '<span class="curr-group-meaning">(' + escapeHtml(meaning) + ')</span>' : '') + '</div><div class="curr-group-members">';
+        g.members.forEach(function (m, mi) {
+          html += '<span class="curr-group-member' + (mi === 0 ? ' is-leader' : '') + '"><span class="vn">' + escapeHtml(m[0]) + '</span> ' +
+            '<span class="curr-group-ko">(' + escapeHtml(m[1]) + ')</span></span>';
+        });
+        html += '</div></div>';
+      });
+      var groupNaming = T(STUDY_GROUPS.naming);
+      if (groupNaming) html += '<div class="curr-groups-note">' + escapeHtml(groupNaming) + '</div>';
+      html += '</div>';
+    }
 
     if (sched && sched.preliminaryMeeting) {
       html += courseServiceHtml("prelim");
