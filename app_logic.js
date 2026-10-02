@@ -8542,7 +8542,7 @@ function verifyDistribution(units, dist, pins) {
           '<div class="group-head-row"><button class="group-head"><span>' +
           (label ? '<span class="syl">' + escapeHtml(label) + '</span> ' : '') +
           titleHtml + '</span>' + currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
-          '<div class="group-body"><div class="talk-lines">';
+          '<div class="group-body">' + jwFinderLinksHtml(lffJwDocid(rec)) + '<div class="talk-lines">';
         lineUnits.forEach(function (l) {
           html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
             '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
@@ -9166,19 +9166,31 @@ function verifyDistribution(units, dist, pins) {
       id: ["IN", "Bahasa Indonesia"], zh_cn: ["CHS", "简体中文"]
     }[lang] || null;
   }
-  function songJwUrl(number, lang) {
+  function jwFinderUrl(docid, lang) {
     var loc = songJwLocale(lang);
-    if (!loc || !(number >= 1 && number <= 163)) return "";
-    return "https://www.jw.org/finder?srcid=jwlshare&wtlocale=" + loc[0] + "&prefer=lang&docid=" + ((number <= 151 ? 1102016800 : 1102022800) + number);
+    return loc && docid ? "https://www.jw.org/finder?srcid=jwlshare&wtlocale=" + loc[0] + "&prefer=lang&docid=" + docid : "";
   }
-  // The Vietnamese page, and the current UI language's page when that is not Vietnamese.
-  function songJwLinksHtml(number) {
+  // Links to a jw.org document: the Vietnamese page, and the current UI language's page when that is not Vietnamese.
+  function jwFinderLinksHtml(docid) {
+    if (!docid) return "";
     var langs = currentLang === "vi" ? ["vi"] : ["vi", currentLang];
     var links = langs.map(function (l) {
-      var url = songJwUrl(number, l);
+      var url = jwFinderUrl(docid, l);
       return url ? '<a href="' + escapeAttr(url) + '" target="_blank" rel="noopener">jw.org (' + escapeHtml(songJwLocale(l)[1]) + ')</a>' : "";
     }).join("");
     return links ? '<div class="kid-song-links song-jw-links">' + links + '</div>' : "";
+  }
+  function songJwLinksHtml(number) {
+    if (!(number >= 1 && number <= 163)) return "";
+    return jwFinderLinksHtml((number <= 151 ? 1102016800 : 1102022800) + number);
+  }
+  // 「행복한 삶을 영원히」 on jw.org: lesson N is docid 1102021200 + N, the part N review 1102021301 + 10 N and
+  // "Am I Ready?" 1102021351 (checked on jw.org for the 12 languages, 2026-10).
+  function lffJwDocid(rec) {
+    if (rec.kind === "lesson" && rec.num >= 1 && rec.num <= 60) return 1102021200 + rec.num;
+    if (rec.kind === "review" && rec.part >= 1 && rec.part <= 4) return 1102021301 + rec.part * 10;
+    if (rec.kind === "ready") return 1102021351;
+    return 0;
   }
   function renderCurrSongs(targetSongNum) {
     var root = document.getElementById("curr-songs-root");
