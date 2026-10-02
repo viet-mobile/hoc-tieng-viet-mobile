@@ -9151,6 +9151,30 @@ function verifyDistribution(units, dist, pins) {
     });
     return html + '</div></div>';
   }
+  // jw.org page of a 왕국 노래 in each UI language (wtlocale per language). Songs 1-151 are docid 1102016800 + number;
+  // the songs added later, 152-163, are 1102022800 + number (checked on jw.org for all 12 languages, 2026-10).
+  // (a function, not a var: renderCurrSongs() first runs during start-up, before this point of the file is reached)
+  function songJwLocale(lang) {
+    return {
+      vi: ["VT", "Tiếng Việt"], ko: ["KO", "한국어"], en: ["E", "English"], zh: ["CH", "繁體中文"], ja: ["J", "日本語"],
+      de: ["X", "Deutsch"], fr: ["F", "Français"], pl: ["P", "Polski"], cs: ["B", "Čeština"], hu: ["H", "Magyar"],
+      id: ["IN", "Bahasa Indonesia"], zh_cn: ["CHS", "简体中文"]
+    }[lang] || null;
+  }
+  function songJwUrl(number, lang) {
+    var loc = songJwLocale(lang);
+    if (!loc || !(number >= 1 && number <= 163)) return "";
+    return "https://www.jw.org/finder?srcid=jwlshare&wtlocale=" + loc[0] + "&prefer=lang&docid=" + ((number <= 151 ? 1102016800 : 1102022800) + number);
+  }
+  // The Vietnamese page, and the current UI language's page when that is not Vietnamese.
+  function songJwLinksHtml(number) {
+    var langs = currentLang === "vi" ? ["vi"] : ["vi", currentLang];
+    var links = langs.map(function (l) {
+      var url = songJwUrl(number, l);
+      return url ? '<a href="' + escapeAttr(url) + '" target="_blank" rel="noopener">jw.org (' + escapeHtml(songJwLocale(l)[1]) + ')</a>' : "";
+    }).join("");
+    return links ? '<div class="kid-song-links song-jw-links">' + links + '</div>' : "";
+  }
   function renderCurrSongs(targetSongNum) {
     var root = document.getElementById("curr-songs-root");
     if (!root) return;
@@ -9300,6 +9324,7 @@ function verifyDistribution(units, dist, pins) {
         '<div class="song-detail-target-title">' + escapeHtml(targetTitle) + '</div>' +
         (viScripture ? '<div class="song-detail-vi-scripture vn">' + escapeHtml(viScripture) + '</div>' : '') +
         (targetScripture ? '<div class="song-detail-target-scripture">' + escapeHtml(targetScripture) + '</div>' : '') +
+        songJwLinksHtml(sel.number) +
       '</div>' +
       '<div class="song-detail-nav">' +
         readAllButtonHtml(songLines) +
