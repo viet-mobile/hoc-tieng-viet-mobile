@@ -1971,8 +1971,10 @@
     (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var SPEECH_CANCEL_SETTLE_MS = IS_APPLE_WEBKIT_SPEECH ? 300 : 30;
   var lastSpeechCancelAt = 0;
-  function cancelSpeech() {
+  // keepChain: robustSpeakOne() making room for its own next utterance -- the chunk chain it belongs to goes on.
+  function cancelSpeech(keepChain) {
     lastSpeechCancelAt = Date.now();
+    if (!keepChain) speechGeneration++;
     try { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); } catch (e) { /* no-op */ }
   }
   // Speaks opts.text (opts.lang/opts.rate/opts.voice optional) and calls onDone exactly once,
@@ -1991,7 +1993,46 @@
   // where speak() issued synchronously right after cancel() is dropped; the follow-up check
   // retries once if the engine never actually started.
   window.__activeUtterances = window.__activeUtterances || [];
+  // Long texts are spoken a sentence at a time. Chrome's network voices (e.g. Google Tiếng Việt, the default when no
+  // voice is picked) stop after about 15 s of audio without onend and keep `speaking` true, so a long paragraph
+  // ([대역 읽기] / 행누 / 랑제 / 이웃 대화 / 일반 문법) went silent and 전체 듣기 never moved on; macOS's length
+  // estimate is also far closer per sentence. Every speech call goes through here, so all of them benefit.
+  var SPEECH_CHUNK_MAX = 160;
+  var speechGeneration = 0;   // bumped by every new robustSpeak() and by cancelSpeech(): stale chunk chains stop
+  function speechChunks(text) {
+    var t = String(text || "").replace(/\s+/g, " ").trim();
+    if (t.length <= SPEECH_CHUNK_MAX) return [t];
+    var parts = t.match(/[^.!?;…。！？]+(?:[.!?;…。！？]+["”’»)\]]*|$)\s*/g) || [t];
+    var out = [];
+    parts.forEach(function (p) {
+      p = p.trim();
+      if (!p) return;
+      while (p.length > SPEECH_CHUNK_MAX) {          // a very long sentence: break at a comma, else at a space
+        var cut = p.lastIndexOf(", ", SPEECH_CHUNK_MAX);
+        if (cut < SPEECH_CHUNK_MAX / 3) cut = p.lastIndexOf(" ", SPEECH_CHUNK_MAX);
+        if (cut < SPEECH_CHUNK_MAX / 3) cut = SPEECH_CHUNK_MAX;
+        out.push(p.slice(0, cut + 1).trim());
+        p = p.slice(cut + 1).trim();
+      }
+      if (!p) return;
+      // short pieces join the one before as long as it stays under the limit
+      if (out.length && (out[out.length - 1] + " " + p).length <= SPEECH_CHUNK_MAX) out[out.length - 1] += " " + p;
+      else out.push(p);
+    });
+    return out.length ? out : [t];
+  }
   function robustSpeak(opts, onDone) {
+    var gen = ++speechGeneration;
+    var chunks = opts && opts.text ? speechChunks(opts.text) : [];
+    if (chunks.length <= 1) { robustSpeakOne(opts, onDone, gen); return; }
+    var i = 0;
+    (function nextChunk() {
+      if (gen !== speechGeneration) return;            // stopped, or another speech call took over
+      if (i >= chunks.length) { if (onDone) onDone(); return; }
+      robustSpeakOne(Object.assign({}, opts, { text: chunks[i++] }), nextChunk, gen);
+    })();
+  }
+  function robustSpeakOne(opts, onDone, gen) {
     try {
       if (!("speechSynthesis" in window) || !opts || !opts.text) { if (onDone) onDone(); return; }
       var synth = window.speechSynthesis;
@@ -2018,7 +2059,9 @@
       // the engine still reports speaking/pending, the watchdog re-arms, up to a hard cap.
       var textLen = (opts.text ? String(opts.text).length : 10);
       var estMs = Math.max(3500, textLen * 160);
-      var hardCapAt = Date.now() + estMs * 4 + 10000;
+      // estMs is about twice the real length; an engine still "speaking" well past it has stalled (Chrome's network
+      // voices after their 15 s limit), so the step ends at 1.5x instead of waiting minutes.
+      var hardCapAt = Date.now() + estMs * 1.5 + 3000;
       // macOS can keep `speaking` true for good and never send onend, so neither the idle poll nor a busy re-arm
       // ends the step there: 전체 듣기 read the first sentence and stopped. There the watchdog is an estimate of
       // the spoken length (CJK/Hangul read slower per character) and is not extended. Finishing a little early
@@ -2047,7 +2090,7 @@
       try {
         if ((synth.speaking || synth.pending) && window.__activeUtterances.length) {
           window.__activeUtterances = [];
-          cancelSpeech();
+          cancelSpeech(true);
         }
       } catch (eCancel) { /* no-op */ }
 
@@ -2090,7 +2133,7 @@
             if (started || doneCalled || !("speechSynthesis" in window)) return;
             try { if (synth.speaking || synth.pending) return; } catch (eState) { /* no-op */ }
             try {
-              cancelSpeech();
+              cancelSpeech(true);
               currentU = buildUtterance();
               synth.speak(currentU);
             } catch (e3) { callDone(); }
@@ -2340,12 +2383,12 @@
       if (!readAllState.id) { stopReadAllKeepAlive(); return; }
       try {
         var synth = window.speechSynthesis;
-        // Only Chrome's network voices (localService false) stop after ~15 s. On local voices -- macOS
-        // system voices, Safari -- pause()/resume() can lose the utterance's end event, which left 전체
-        // 듣기 waiting for the watchdog before the next (meaning) step.
+        // Chrome's network voices stop after ~15 s of audio; the nudge keeps them going. That includes the default
+        // voice when none is picked (utterance.voice null), which is usually a network voice in Chrome. Not on macOS:
+        // there pause()/resume() can lose the utterance's end event (texts are spoken a sentence at a time anyway).
         var active = window.__activeUtterances[window.__activeUtterances.length - 1];
-        var remote = active && active.voice && active.voice.localService === false;
-        if (synth.speaking && remote) { synth.pause(); synth.resume(); }
+        var local = active && active.voice && active.voice.localService === true;
+        if (synth.speaking && !local && !IS_MAC_DESKTOP) { synth.pause(); synth.resume(); }
       } catch (e) { /* no-op */ }
     }, 5000);
   }
