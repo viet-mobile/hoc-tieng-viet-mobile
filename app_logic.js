@@ -9172,6 +9172,17 @@ function verifyDistribution(units, dist, pins) {
 
   // 「여호와의 친구가 되세요」 songs (KID_SONGS): Vietnamese and Korean titles side by side, with links to the song
   // pages on jw.org (lyrics, audio, video). Lyric lines appear here once they are supplied through the data file.
+  // 「여호와의 친구가 되세요」 song on jw.org (finder lank pub-pkon_<track>_VIDEO; KID_SONG_TRACKS gives the jw.org
+  // track and the languages it exists in), for Vietnamese and the current UI language.
+  function kidSongLinksHtml(s) {
+    var tr = typeof KID_SONG_TRACKS !== "undefined" && KID_SONG_TRACKS ? KID_SONG_TRACKS[String(s.number)] : null;
+    if (!tr) return "";
+    var langs = (currentLang === "vi" ? ["vi"] : ["vi", currentLang]).filter(function (l) { return tr[1].indexOf(l) >= 0; });
+    var links = langs.map(function (l) {
+      return '<a href="' + escapeAttr(jwLankUrl("pub-pkon_" + tr[0] + "_VIDEO", l)) + '" target="_blank" rel="noopener">jw.org (' + escapeHtml(songJwLocale(l)[1]) + ')</a>';
+    }).join("");
+    return links ? '<div class="kid-song-links">' + links + '</div>' : "";
+  }
   function kidSongsHtml() {
     if (typeof KID_SONGS === "undefined" || !KID_SONGS || !(KID_SONGS.songs || []).length) return "";
     var html = '<div class="p-section kid-songs" data-anchor="kid-songs"><h3>' + escapeHtml(TU("여호와의 친구가 되세요")) + '</h3>' +
@@ -9182,8 +9193,7 @@ function verifyDistribution(units, dist, pins) {
         '<div class="song-item-vi vn">' + escapeHtml(s.title.vi) +
         '<button type="button" class="speak-btn" data-speak="' + escapeAttr(s.title.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
         (target ? '<div class="song-item-target">' + escapeHtml(target) + '</div>' : '') +
-        '<div class="kid-song-links"><a href="' + escapeAttr(s.url.vi) + '" target="_blank" rel="noopener">jw.org (Tiếng Việt)</a>' +
-        (s.url.ko ? '<a href="' + escapeAttr(s.url.ko) + '" target="_blank" rel="noopener">jw.org (한국어)</a>' : '') + '</div>';
+        kidSongLinksHtml(s);
       if (s.lines && s.lines.length) {
         html += '<div class="talk-lines kid-song-lines">';
         s.lines.forEach(function (l) {
@@ -9225,7 +9235,39 @@ function verifyDistribution(units, dist, pins) {
   }
   function songJwLinksHtml(number) {
     if (!(number >= 1 && number <= 163)) return "";
-    return jwFinderLinksHtml((number <= 151 ? 1102016800 : 1102022800) + number);
+    return jwFinderLinksHtml((number <= 151 ? 1102016800 : 1102022800) + number) + songMediaLinksHtml(number);
+  }
+  // jw.org media page by "lank" (pub-<code>_<track>_<VIDEO|AUDIO>) in one UI language.
+  function jwLankUrl(lank, lang) {
+    var loc = songJwLocale(lang);
+    return loc ? "https://www.jw.org/finder?srcid=jwlshare&wtlocale=" + loc[0] + "&lank=" + lank : "";
+  }
+  // (a function, like songJwLocale: renderCurrSongs() first runs during start-up, before this point is reached)
+  function songMediaKinds() {
+    return [
+      ["kidVideo", "pksjj", "VIDEO", { ko: "어린이 노래 동영상", vi: "Video bài hát thiếu nhi", en: "Children’s song video", ja: "子ども向けの歌のビデオ",
+        zh: "兒童詩歌影片", zh_cn: "儿童诗歌视频", de: "Kinderlied-Video", fr: "Vidéo pour enfants", pl: "Film z piosenką dla dzieci",
+        cs: "Video s písní pro děti", hu: "Gyermekének-videó", id: "Video lagu anak" }],
+      ["kidAudio", "pksjj", "AUDIO", { ko: "어린이 노래 오디오", vi: "Âm thanh bài hát thiếu nhi", en: "Children’s song audio", ja: "子ども向けの歌の音声",
+        zh: "兒童詩歌音頻", zh_cn: "儿童诗歌音频", de: "Kinderlied-Audio", fr: "Audio pour enfants", pl: "Nagranie piosenki dla dzieci",
+        cs: "Zvuková nahrávka písně pro děti", hu: "Gyermekének-hangfelvétel", id: "Audio lagu anak" }],
+      ["choir", "sjjc", "AUDIO", { ko: "합창 오디오", vi: "Âm thanh hợp xướng", en: "Choir audio", ja: "合唱の音声",
+        zh: "合唱音頻", zh_cn: "合唱音频", de: "Chor-Audio", fr: "Audio de la chorale", pl: "Nagranie chóru",
+        cs: "Nahrávka sboru", hu: "Kórusfelvétel", id: "Audio paduan suara" }]
+    ];
+  }
+  // Children's song video/audio and choir audio of a song: only the ones that exist on jw.org in that language
+  // (SONG_MEDIA, song_media_data.py), for Vietnamese and the current UI language.
+  function songMediaLinksHtml(number) {
+    if (typeof SONG_MEDIA === "undefined" || !SONG_MEDIA) return "";
+    var langs = currentLang === "vi" ? ["vi"] : ["vi", currentLang];
+    return songMediaKinds().map(function (k) {
+      var links = langs.filter(function (l) { return ((SONG_MEDIA[k[0]] || {})[l] || []).indexOf(number) >= 0; }).map(function (l) {
+        return '<a href="' + escapeAttr(jwLankUrl("pub-" + k[1] + "_" + number + "_" + k[2], l)) + '" target="_blank" rel="noopener">' +
+          escapeHtml(songJwLocale(l)[1]) + '</a>';
+      }).join("");
+      return links ? '<div class="kid-song-links song-media-links"><span class="song-media-label">' + escapeHtml(T(k[3])) + '</span>' + links + '</div>' : "";
+    }).join("");
   }
   // 「행복한 삶을 영원히」 on jw.org: lesson N is docid 1102021200 + N, the part N review 1102021301 + 10 N and
   // "Am I Ready?" 1102021351 (checked on jw.org for the 12 languages, 2026-10).

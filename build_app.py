@@ -960,7 +960,7 @@ def build_data_js(site):
     data_js = "".join(parts)
 
     if site == "general":
-        data_js += "const SONGS_DATA = [];\nconst SONG_MEANINGS = {};\nconst KID_SONGS = null;\n"
+        data_js += "const SONGS_DATA = [];\nconst SONG_MEANINGS = {};\nconst KID_SONGS = null;\nconst SONG_MEDIA = null;\nconst KID_SONG_TRACKS = null;\n"
     else:
         # jw, jeonju, and ulsan get the full, identical Kingdom Songs source (same file, same
         # content) -- regional profiles are JW's full data set plus their own event layer.
@@ -971,6 +971,19 @@ def build_data_js(site):
         # from the instructor's own spreadsheet, never typed in here.
         with open("kid_songs_data.json", encoding="utf-8") as fh:
             data_js += "const KID_SONGS = " + json.dumps(json.load(fh), ensure_ascii=False) + ";\n"
+        # Song media that exist on jw.org per UI language (song_media_data.py): children's video/audio and choir
+        # recordings of songs 1-163, and the jw.org track of each 「여호와의 친구가 되세요」 song.
+        from song_media_data import SONG_MEDIA, KID_SONG_TRACKS
+
+        def _numbers(spec):
+            out = []
+            for part in filter(None, spec.split(",")):
+                a, _, b = part.partition("-")
+                out.extend(range(int(a), int(b or a) + 1))
+            return out
+        song_media = {kind: {lang: _numbers(spec) for lang, spec in langs.items()} for kind, langs in SONG_MEDIA.items()}
+        data_js += "const SONG_MEDIA = " + json.dumps(song_media, separators=(",", ":")) + ";\n"
+        data_js += "const KID_SONG_TRACKS = " + json.dumps({str(k): v for k, v in KID_SONG_TRACKS.items()}, separators=(",", ":")) + ";\n"
 
     return data_js
 
