@@ -454,11 +454,24 @@ def enrich_curated_datasets(lff, lpd, wt, elf_raw, lpd_raw, wt_raw):
                 if (lang not in wk["date_range"] or not wk["date_range"][lang]) and r0.get(lang):
                     wk["date_range"][lang] = r0[lang]
 
+        # Date range languages the source sheet does not give yet (watchtower_article_titles.py); never overrides it.
+        from watchtower_article_titles import WT_DATE_RANGES_EXTRA
+        if week_num.isdigit() and isinstance(wk.get("date_range"), dict):
+            for lang, text in WT_DATE_RANGES_EXTRA.get(int(week_num), {}).items():
+                if not wk["date_range"].get(lang):
+                    wk["date_range"][lang] = text
+
         # Article title: each weekly sheet opens with the date line, the "BÀI HÁT <n> ..." song
         # line, then the article title -- only attached when that layout is actually present.
         if len(sheet_rows) >= 3 and (sheet_rows[1].get("vi") or "").startswith("BÀI HÁT"):
             title_row = sheet_rows[2]
             wk["article_title"] = {lang: title_row[lang] for lang in ["vi"] + target_langs if title_row.get(lang)}
+        # Weeks the source sheet has no title row for yet: the titles from jw.org (watchtower_article_titles.py).
+        if not wk.get("article_title"):
+            from watchtower_article_titles import WT_ARTICLE_TITLES_EXTRA
+            extra = WT_ARTICLE_TITLES_EXTRA.get(int(week_num)) if week_num.isdigit() else None
+            if extra:
+                wk["article_title"] = {lang: extra[lang] for lang in ["vi"] + target_langs if extra.get(lang)}
 
         # Word example sentences
         for word in wk.get("words", []):

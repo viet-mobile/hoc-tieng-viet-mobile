@@ -1,0 +1,105 @@
+# -*- coding: utf-8 -*-
+"""Watchtower study article titles for the [파수대] weeks whose source sheet has no title row yet.
+
+build_app.py uses these only when the weekly sheet does not give the article title (the sheet stays the
+source of truth). Taken from the article pages on jw.org in each of the 12 UI languages (2026-10):
+weeks 19-24 are the study articles of the November and December 2026 study editions (2027-01-04 ... 02-14).
+"""
+
+WT_ARTICLE_TITLES_EXTRA = {
+    19: {
+        "vi": "Một món quà đặc biệt giúp anh chị làm vui lòng Đức Giê-hô-va",
+        "ko": "양심을 계속 훈련하여 여호와를 기쁘게 해 드리는 결정을 내리십시오",
+        "en": "To Please Jehovah, Keep Training Your Conscience",
+        "ja": "良心はエホバからのギフト",
+        "zh": "鍛鍊良心，讓耶和華高興",
+        "zh_cn": "锻炼良心，让耶和华高兴",
+        "de": "Trainiere dein Gewissen und mach Jehova Freude",
+        "fr": "Pour plaire à Jéhovah, continue d’éduquer ta conscience",
+        "pl": "Szkol sumienie, żeby podobać się Jehowie",
+        "cs": "Chceš dělat radost Jehovovi? Škol si svoje svědomí",
+        "hu": "Miért fontos képezni a lelkiismeretünket?",
+        "id": "Teruslah Latih Hati Nurani Saudara",
+    },
+    20: {
+        "vi": "“Những người chăn thật sự chăn dắt”",
+        "ko": "장로 여러분, 훌륭한 목자가 되십시오",
+        "en": "“Shepherds Who Will Really Shepherd”",
+        "ja": "「しっかり世話する牧者たち」",
+        "zh": "長老們，要好好牧養羊群",
+        "zh_cn": "长老们，要好好牧养羊群",
+        "de": "Hirten, die wirklich hüten",
+        "fr": "Des bergers qui « prennent vraiment soin » des brebis",
+        "pl": "Starsi — bądźcie dobrymi pasterzami",
+        "cs": "Starší, buďte opravdoví pastýři",
+        "hu": "Vének, legyetek jó pásztorok!",
+        "id": "Gembala yang ”Benar-Benar Menggembalakan”",
+    },
+    21: {
+        "vi": "Vun đắp tình bạn với Đức Giê-hô-va và Chúa Giê-su",
+        "ko": "여호와와 예수와 우정을 키워 나가십시오",
+        "en": "Cultivate a Friendship With Jehovah and With Jesus",
+        "ja": "一番大事な友情を育てる",
+        "zh": "跟耶和華和耶穌培養深厚的友誼",
+        "zh_cn": "跟耶和华和耶稣培养深厚的友谊",
+        "de": "Deine Freundschaft mit Jehova und mit Jesus",
+        "fr": "Renforce ton amitié avec Jéhovah et Jésus",
+        "pl": "Rozwijaj przyjaźń z Jehową i z Jezusem",
+        "cs": "Jak můžeš rozvíjet přátelství s Jehovou a Ježíšem",
+        "hu": "Mit tehetsz, hogy szoros barátságban legyél Jehovával és Jézussal?",
+        "id": "Bersahabatlah dengan Yehuwa dan Yesus",
+    },
+    22: {
+        "vi": "Vun đắp tình bạn mật thiết với anh em đồng đạo",
+        "ko": "형제자매들과 우정을 키워 나가십시오",
+        "en": "Cultivate Meaningful Friendships With Your Brothers and Sisters",
+        "ja": "兄弟姉妹と本物の友情を育てる",
+        "zh": "跟弟兄姐妹培養深厚的友誼",
+        "zh_cn": "跟弟兄姐妹培养深厚的友谊",
+        "de": "Unsere Freundschaften in der Versammlung",
+        "fr": "Cultive de solides amitiés avec tes frères et sœurs",
+        "pl": "Rozwijaj bliskie przyjaźnie z braćmi i siostrami",
+        "cs": "Jak můžeš rozvíjet přátelství s bratry a sestrami",
+        "hu": "Mit tehetsz, hogy legyenek igaz barátaid?",
+        "id": "Bersahabatlah dengan Saudara-Saudari",
+    },
+    23: {
+        "vi": "Hãy tin chắc anh chị quý giá trước mắt Đức Giê-hô-va!",
+        "ko": "여호와의 시각으로 자신을 보십시오",
+        "en": "See Yourself as Jehovah Does",
+        "ja": "エホバの視点で見る",
+        "zh": "用耶和華的眼光看待自己",
+        "zh_cn": "用耶和华的眼光看待自己",
+        "de": "Sieh dich so, wie Jehova dich sieht",
+        "fr": "Te vois-tu comme Jéhovah te voit ?",
+        "pl": "Patrz na siebie oczami Jehowy",
+        "cs": "Vidíš sám sebe tak, jako tě vidí Jehova?",
+        "hu": "Lásd úgy magad, ahogy Jehova lát téged!",
+        "id": "Saudara Berharga bagi Yehuwa!",
+    },
+    24: {
+        "vi": "Hãy chú tâm vào “những điều không thấy được”",
+        "ko": "“보이지 않는 것”을 계속 바라보십시오",
+        "en": "Keep Your Eyes “on the Things Unseen”",
+        "ja": "「見えないもの」を見つめていれば…",
+        "zh": "要注視看不見的事",
+        "zh_cn": "要注视看不见的事",
+        "de": "Halte deinen Blick auf das gerichtet, „was man nicht sieht“",
+        "fr": "Fixe tes yeux « sur les choses qui ne se voient pas »",
+        "pl": "Kieruj wzrok „na to, co niewidoczne”",
+        "cs": "Zaměřuj se „na to, co není vidět“",
+        "hu": "Tartsd a szemed a láthatatlanokon!",
+        "id": "Berfokuslah pada ”Hal-Hal yang Tidak Kelihatan”",
+    },
+}
+
+# Date ranges of those weeks in the UI languages the source sheet does not give yet (en/ja/ko/zh it does),
+# written in the same layout as the source uses for the weeks before (e.g. de "21.-27. DEZEMBER 2026").
+WT_DATE_RANGES_EXTRA = {
+    19: {"zh_cn": "2027年1月4-10日", "cs": "4.–10. LEDNA 2027", "fr": "4-10 JANVIER 2027", "de": "4.-10. JANUAR 2027", "hu": "2027. JANUÁR 4–10.", "id": "4-10 JANUARI 2027", "pl": "4-10 STYCZNIA 2027"},
+    20: {"zh_cn": "2027年1月11-17日", "cs": "11.–17. LEDNA 2027", "fr": "11-17 JANVIER 2027", "de": "11.-17. JANUAR 2027", "hu": "2027. JANUÁR 11–17.", "id": "11-17 JANUARI 2027", "pl": "11-17 STYCZNIA 2027"},
+    21: {"zh_cn": "2027年1月18-24日", "cs": "18.–24. LEDNA 2027", "fr": "18-24 JANVIER 2027", "de": "18.-24. JANUAR 2027", "hu": "2027. JANUÁR 18–24.", "id": "18-24 JANUARI 2027", "pl": "18-24 STYCZNIA 2027"},
+    22: {"zh_cn": "2027年1月25-31日", "cs": "25.–31. LEDNA 2027", "fr": "25-31 JANVIER 2027", "de": "25.-31. JANUAR 2027", "hu": "2027. JANUÁR 25–31.", "id": "25-31 JANUARI 2027", "pl": "25-31 STYCZNIA 2027"},
+    23: {"zh_cn": "2027年2月1-7日", "cs": "1.–7. ÚNORA 2027", "fr": "1-7 FÉVRIER 2027", "de": "1.-7. FEBRUAR 2027", "hu": "2027. FEBRUÁR 1–7.", "id": "1-7 FEBRUARI 2027", "pl": "1-7 LUTEGO 2027"},
+    24: {"zh_cn": "2027年2月8-14日", "cs": "8.–14. ÚNORA 2027", "fr": "8-14 FÉVRIER 2027", "de": "8.-14. FEBRUAR 2027", "hu": "2027. FEBRUÁR 8–14.", "id": "8-14 FEBRUARI 2027", "pl": "8-14 LUTEGO 2027"},
+}

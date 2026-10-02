@@ -9192,12 +9192,13 @@ function verifyDistribution(units, dist, pins) {
     if (rec.kind === "appendix") return { A: 1102023316, B: 1102023317, C: 1102023318 }[rec.num] || 0;
     return 0;
   }
-  // 파수대 연구 기사 per [파수대] week (WATCHTOWER_VOCAB.week), matched on jw.org by article title (2026-10).
+  // 파수대 연구 기사 per [파수대] week (WATCHTOWER_VOCAB.week), matched on jw.org by article title and study week (2026-10).
   // Weeks without a known article (no article_title in the data yet) have no link.
   function wtJwDocid(week) {
     return {
       1: 2026445, 2: 2026482, 3: 2026483, 4: 2026484, 5: 2026485, 6: 2026520, 7: 2026521, 8: 2026522, 9: 2026523,
-      10: 2026560, 11: 2026561, 12: 2026562, 13: 2026565, 14: 2026566, 15: 2026601, 16: 2026602, 17: 2026604, 18: 2026605
+      10: 2026560, 11: 2026561, 12: 2026562, 13: 2026565, 14: 2026566, 15: 2026601, 16: 2026602, 17: 2026604, 18: 2026605,
+      19: 2026642, 20: 2026643, 21: 2026645, 22: 2026646, 23: 2026682, 24: 2026683
     }[week] || 0;
   }
   function lffJwDocid(rec) {
