@@ -1966,7 +1966,10 @@
   // speak() was dropped, and the stale `speaking` flag kept the retry from re-speaking it: the translation was
   // never heard. So: cancel only an utterance of ours that is still unfinished, and speak no sooner than
   // SPEECH_CANCEL_SETTLE_MS after the last cancel().
-  var SPEECH_CANCEL_SETTLE_MS = IS_MAC_DESKTOP ? 300 : 30;
+  // (iPhone/iPad run the same WebKit speech engine, so they wait as well.)
+  var IS_APPLE_WEBKIT_SPEECH = IS_MAC_DESKTOP || /iPhone|iPad|iPod/i.test(navigator.userAgent || "") ||
+    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var SPEECH_CANCEL_SETTLE_MS = IS_APPLE_WEBKIT_SPEECH ? 300 : 30;
   var lastSpeechCancelAt = 0;
   function cancelSpeech() {
     lastSpeechCancelAt = Date.now();
@@ -2016,6 +2019,16 @@
       var textLen = (opts.text ? String(opts.text).length : 10);
       var estMs = Math.max(3500, textLen * 160);
       var hardCapAt = Date.now() + estMs * 4 + 10000;
+      // macOS can keep `speaking` true for good and never send onend, so neither the idle poll nor a busy re-arm
+      // ends the step there: 전체 듣기 read the first sentence and stopped. There the watchdog is an estimate of
+      // the spoken length (CJK/Hangul read slower per character) and is not extended. Finishing a little early
+      // is harmless: the next step is queued behind the one still playing (only an unfinished utterance of
+      // ours is ever cancelled), so nothing is cut off.
+      if (IS_MAC_DESKTOP) {
+        var cjk = /[぀-ヿ㐀-鿿가-힯]/.test(String(opts.text || ""));
+        estMs = 700 + textLen * (cjk ? 190 : 85);
+        hardCapAt = 0;
+      }
       function armWatchdog(ms) {
         watchdogTimer = setTimeout(function () {
           watchdogTimer = null;
@@ -2066,7 +2079,7 @@
             var busy = false;
             try { busy = synth.speaking || synth.pending; } catch (eIdle) { /* no-op */ }
             if (busy) { seenBusy = true; idleChecks = 0; }
-            else if (started || (seenBusy && !IS_MAC_DESKTOP)) { if (++idleChecks >= 2) { callDone(); return; } }
+            else if (started || seenBusy) { if (++idleChecks >= 2) { callDone(); return; } }
             setTimeout(pollIdle, SPEECH_IDLE_POLL_MS);
           })();
           // Retry once only if the engine silently dropped the utterance. Mobile engines (Samsung/
@@ -2075,21 +2088,13 @@
           // so the check waits longer and treats a queued (pending) utterance as accepted.
           setTimeout(function () {
             if (started || doneCalled || !("speechSynthesis" in window)) return;
-            try { if (synth.pending || (synth.speaking && !IS_MAC_DESKTOP)) return; } catch (eState) { /* no-op */ }
+            try { if (synth.speaking || synth.pending) return; } catch (eState) { /* no-op */ }
             try {
-              if (IS_MAC_DESKTOP) {
-                var dropped = currentU;
-                currentU = buildUtterance();
-                currentU.onstart = function () { started = true; };
-                var di = window.__activeUtterances.indexOf(dropped);
-                if (di !== -1) window.__activeUtterances.splice(di, 1);
-              } else {
-                cancelSpeech();
-                currentU = buildUtterance();
-              }
+              cancelSpeech();
+              currentU = buildUtterance();
               synth.speak(currentU);
             } catch (e3) { callDone(); }
-          }, IS_MAC_DESKTOP ? 700 : 1200);
+          }, 1200);
         } catch (e2) { callDone(); /* no-op: speech not available */ }
       }, delay);
     } catch (e) { if (onDone) onDone(); /* no-op: speech not available */ }
