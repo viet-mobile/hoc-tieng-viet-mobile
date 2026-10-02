@@ -8606,7 +8606,7 @@ function verifyDistribution(units, dist, pins) {
         '<span class="syl">' + escapeHtml(lpdRecordLabel(rec)) + '</span> ' +
         '<span class="lpd-title' + (rec.kind === "appendix" ? " is-appendix-title" : "") + '"><span class="lpd-title-vi">' + escapeHtml(rec.title.vi) + '</span>' + (T(rec.title) ? ' <span class="lpd-title-translation">· ' + escapeHtml(T(rec.title)) + '</span>' : '') + '</span>' +
         '</span>' + currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
-        '<div class="group-body"><div class="talk-lines">';
+        '<div class="group-body">' + jwFinderLinksHtml(lpdJwDocid(rec)) + '<div class="talk-lines">';
       lineUnits.forEach(function (l) {
         html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
           '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
@@ -8949,7 +8949,7 @@ function verifyDistribution(units, dist, pins) {
         '<span class="cnt">' + wk.words.length + TU("개 단어") + '</span></span>' +
         '<span class="chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></button>' +
         readAllButtonHtml(readAllEntries) + '</div>' +
-        '<div class="group-body"><div class="rhyme-word-list">';
+        '<div class="group-body">' + (articleVi ? jwFinderLinksHtml(wtJwDocid(wk.week)) : '') + '<div class="rhyme-word-list">';
       wk.words.forEach(function (w) {
         html += '<div class="rhyme-word-row">' +
           '<div class="rhyme-word-main"><span class="rw-word vn">' + escapeHtml(w.vi) + '</span>' +
@@ -9186,6 +9186,20 @@ function verifyDistribution(units, dist, pins) {
   }
   // 「행복한 삶을 영원히」 on jw.org: lesson N is docid 1102021200 + N, the part N review 1102021301 + 10 N and
   // "Am I Ready?" 1102021351 (checked on jw.org for the 12 languages, 2026-10).
+  // 「사람들을 사랑하고 제자로」: lesson N is docid 1102023300 + N, appendix 가/나/다 (A/B/C) 1102023316-18.
+  function lpdJwDocid(rec) {
+    if (rec.kind === "lesson" && rec.num >= 1 && rec.num <= 12) return 1102023300 + rec.num;
+    if (rec.kind === "appendix") return { A: 1102023316, B: 1102023317, C: 1102023318 }[rec.num] || 0;
+    return 0;
+  }
+  // 파수대 연구 기사 per [파수대] week (WATCHTOWER_VOCAB.week), matched on jw.org by article title (2026-10).
+  // Weeks without a known article (no article_title in the data yet) have no link.
+  function wtJwDocid(week) {
+    return {
+      1: 2026445, 2: 2026482, 3: 2026483, 4: 2026484, 5: 2026485, 6: 2026520, 7: 2026521, 8: 2026522, 9: 2026523,
+      10: 2026560, 11: 2026561, 12: 2026562, 13: 2026565, 14: 2026566, 15: 2026601, 16: 2026602, 17: 2026604, 18: 2026605
+    }[week] || 0;
+  }
   function lffJwDocid(rec) {
     if (rec.kind === "lesson" && rec.num >= 1 && rec.num <= 60) return 1102021200 + rec.num;
     if (rec.kind === "review" && rec.part >= 1 && rec.part <= 4) return 1102021301 + rec.part * 10;
