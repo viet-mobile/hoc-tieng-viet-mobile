@@ -79,7 +79,7 @@ JEONJU_CLASS_ROSTER = [
          ["박정환", "Hiếu", "anh Hiếu"], ["원혜진", "Hiền", "chị Hiền"], ["박유나", "Na", "em Na"],
          ["박철현", "Trung Dũng", "anh Dũng"], ["송제홍", "Lý", "anh Lý"], ["이서희", "Thụy Vy", "chị Vy"],
          ["이수연", "Xuyến", "chị Xuyến"], ["이종명", "Minh", "anh Minh"], ["이주옥", "Ngọc", "chị Ngọc"],
-         ["이제희", "Thiên Hy", "em Hy"], ["이제아", "Thiên Nga", "em Nga"], ["최영주", "Ánh Châu", "chị Châu"],
+         ["이제희", "Thiên Vui", "em Vui"], ["이제아", "Thiên Nga", "em Nga"], ["최영주", "Ánh Châu", "chị Châu"],
          ["한상현", "Huy", "anh Huy"], ["한도희", "Đạo", "anh Đạo"], ["서주연", "Quyên", "chị Quyên"],
          ["한정우", "Chinh Du", "em Du"], ["유계화", "Hoa", "chị Hoa"],
      ]},
@@ -103,7 +103,7 @@ JEONJU_STUDY_GROUPS = {
              "vi": "Trưởng nhóm sẽ giúp các thành viên trong nhóm học tiếng Việt nhé~^^"},
     "naming": {"ko": "각 조의 이름을 영의 열매의 9가지 주요 특성 + 겸손으로 지어보았어요."},
     "groups": [
-        {"name": "Yêu thương", "meaning": {"ko": "사랑"}, "members": [["Thanh", "김예나"], ["Na", "박유나"], ["Hy", "이제희"], ["Nga", "이제아"]]},
+        {"name": "Yêu thương", "meaning": {"ko": "사랑"}, "members": [["Thanh", "김예나"], ["Na", "박유나"], ["Vui", "이제희"], ["Nga", "이제아"]]},
         {"name": "Vui mừng", "meaning": {"ko": "기쁨"}, "members": [["Bình", "김한빈"], ["Hiếu", "박정환"], ["Tín", "김재윤"]]},
         {"name": "Bình an", "meaning": {"ko": "평화"}, "members": [["Bích", "김수민"], ["Hiền", "원혜진"], ["Ngọc", "이주옥"]]},
         {"name": "Kiên nhẫn", "meaning": {"ko": "오래 참음"}, "members": [["Duy", "박준우"], ["Đạo", "한도희"], ["Pháp", "김종배"]]},
