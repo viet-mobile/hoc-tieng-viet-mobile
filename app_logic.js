@@ -2397,6 +2397,7 @@
   }
   function stopReadAllSequence() {
     stopReadAllKeepAlive();
+    stopReadAllQueuePoll();
     if (readAllState.btn) setReadAllBtnPlaying(readAllState.btn, false);
     readAllState = { id: null, texts: [], idx: -1, btn: null, token: readAllState.token + 1 };
     window.__activeUtterances = [];
@@ -2435,14 +2436,88 @@
   function playReadAllMeaning(token, entry) {
     if (token !== readAllState.token) return;
     if (!entry.mean) { playReadAllNext(token); return; }
+    var next = function () {
+      if (token === readAllState.token) setTimeout(function () { playReadAllNext(token); }, 300);
+    };
+    robustSpeak(readAllMeaningOpts(entry), next);
+  }
+  function readAllMeaningOpts(entry) {
     var lang = READALL_LANG_TAG[currentLang] || "en-US";
     var voice = null;
     var lv = selectedLangVoiceURI[currentLang];
     if (lv) voice = availableLangVoices.filter(function (x) { return voiceMatchKey(x) === lv; })[0] || null;
-    var next = function () {
-      if (token === readAllState.token) setTimeout(function () { playReadAllNext(token); }, 300);
-    };
-    robustSpeak({ text: prepareMeaningSpeechText(entry.mean), lang: lang, voice: voice }, next);
+    return { text: prepareMeaningSpeechText(entry.mean), lang: lang, voice: voice };
+  }
+
+  // iOS / iPadOS / macOS (Apple WebKit): the chained playback above (each next utterance spoken from the previous
+  // one's onend, or from a timer) is what stalls there -- the first Vietnamese is heard, then nothing: WebKit reports
+  // the end of an utterance late or not at all, and drops a speak() that is not made while the page still counts the
+  // tap as a user gesture. So here every utterance of the sequence is handed to the engine's own queue at once, from
+  // the tap itself, and the engine plays them one after another with no JS in between. Only the end is watched (and a
+  // queue that was dropped or stalled falls back to the chained playback from the entry it reached).
+  var readAllQueuePoll = null;
+  function stopReadAllQueuePoll() {
+    if (readAllQueuePoll) { clearInterval(readAllQueuePoll); readAllQueuePoll = null; }
+  }
+  function readAllQueueJobs(texts) {
+    var jobs = [];
+    texts.forEach(function (entry, ei) {
+      function add(opts) {
+        speechChunks(opts.text).forEach(function (c) { if (c) jobs.push({ ei: ei, opts: Object.assign({}, opts, { text: c }) }); });
+      }
+      if (entry.vi) {
+        var o = targetSpeechOpts(entry.vi);
+        for (var r = 0; r < viRepeatCount; r++) add(o);
+      }
+      if (entry.mean) add(readAllMeaningOpts(entry));
+    });
+    return jobs;
+  }
+  function enqueueReadAll(token, texts) {
+    if (token !== readAllState.token) return;
+    var synth = window.speechSynthesis;
+    var jobs = readAllQueueJobs(texts);
+    if (!jobs.length) { stopReadAllSequence(); return; }
+    var started = 0, sawBusy = false, idleChecks = 0, t0 = Date.now();
+    window.__activeUtterances = [];
+    function fallback(fromEntry) {
+      stopReadAllQueuePoll();
+      if (token !== readAllState.token) return;
+      readAllState.idx = fromEntry - 1;
+      cancelSpeech(true);
+      playReadAllNext(token);
+    }
+    try {
+      jobs.forEach(function (job, ji) {
+        var u = new SpeechSynthesisUtterance(job.opts.text);
+        if (job.opts.lang) u.lang = job.opts.lang;
+        if (job.opts.rate) u.rate = job.opts.rate;
+        if (job.opts.voice) { u.voice = job.opts.voice; u.lang = job.opts.voice.lang; }
+        u.onstart = function () {
+          if (token !== readAllState.token) return;
+          started = Math.max(started, ji + 1);
+          readAllState.idx = job.ei;
+        };
+        u.onend = u.onerror = function () {
+          if (token !== readAllState.token) return;
+          started = Math.max(started, ji + 1);
+          if (ji === jobs.length - 1) setTimeout(function () { if (token === readAllState.token) stopReadAllSequence(); }, 300);
+        };
+        window.__activeUtterances.push(u);   // strong references: WebKit stops reporting events for collected utterances
+        synth.speak(u);
+      });
+    } catch (eQ) { fallback(0); return; }
+    stopReadAllQueuePoll();
+    readAllQueuePoll = setInterval(function () {
+      if (token !== readAllState.token) { stopReadAllQueuePoll(); return; }
+      var busy = false;
+      try { busy = synth.speaking || synth.pending; } catch (eB) { /* no-op */ }
+      if (busy) { sawBusy = true; idleChecks = 0; return; }
+      if (!sawBusy) { if (Date.now() - t0 > 3500) fallback(0); return; }   // nothing ever started: the queue was dropped
+      if (++idleChecks < 3) return;                                          // idle for about 1.2 s: the queue is over
+      if (started > 0 && started < jobs.length) fallback(jobs[started].ei);  // ...but cut short: carry on chained
+      else { stopReadAllQueuePoll(); stopReadAllSequence(); }
+    }, 400);
   }
 
   function startReadAllSequence(id, btn) {
@@ -2456,13 +2531,21 @@
       }
     } catch (e0) { /* no-op */ }
     window.__activeUtterances = [];
-    cancelSpeech();
     if (speakRetryTimer) { clearTimeout(speakRetryTimer); speakRetryTimer = null; }
+    var queued = IS_APPLE_WEBKIT_SPEECH && "speechSynthesis" in window && typeof SpeechSynthesisUtterance !== "undefined";
+    var synthBusy = false;
+    try { synthBusy = !!(window.speechSynthesis.speaking || window.speechSynthesis.pending || window.speechSynthesis.paused); } catch (eS) { /* no-op */ }
+    // Apple: cancel() only when something is playing, so the queue can be filled right inside the tap.
+    if (!queued || synthBusy) cancelSpeech(); else speechGeneration++;
     var token = readAllState.token + 1;
     readAllState = { id: id, texts: texts, idx: -1, btn: btn, token: token };
     setReadAllBtnPlaying(btn, true);
     startReadAllKeepAlive();
-    playReadAllNext(token);
+    if (!queued) { playReadAllNext(token); return; }
+    try { if (window.speechSynthesis.paused) window.speechSynthesis.resume(); } catch (eR) { /* no-op */ }
+    if (!synthBusy) { enqueueReadAll(token, texts); return; }
+    // A cancel() just before speak() is swallowed by WebKit: wait it out (the tap still counts as a gesture for ~1 s).
+    setTimeout(function () { enqueueReadAll(token, texts); }, Math.max(10, lastSpeechCancelAt + SPEECH_CANCEL_SETTLE_MS - Date.now()));
   }
 
   // Capture phase: fires before any nearer-ancestor click handler (e.g. a .group-head card's
