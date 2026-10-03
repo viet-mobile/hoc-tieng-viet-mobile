@@ -1673,6 +1673,7 @@
   // selected" symptom reported for the 발음 > 설정 voice pickers. Folding name+lang into the key
   // guarantees two differently-named voices never collide, even when voiceURI itself is blank
   // or duplicated.
+  var LANG_DEFAULT_LOCALE = { vi: "vi-VN", cs: "cs-CZ", zh_cn: "zh-CN", zh: "zh-TW", en: "en-US", fr: "fr-FR", de: "de-DE", hu: "hu-HU", id: "id-ID", ja: "ja-JP", ko: "ko-KR", pl: "pl-PL" };
   function voiceMatchKey(v) {
     return (v.voiceURI || "") + "||" + (v.name || "") + "||" + (v.lang || "");
   }
@@ -1843,10 +1844,15 @@
       return;
     }
     var sel = selectedLangVoiceURI[currentLang];
+    // No voice picked yet: the one of the language's own locale (Traditional Chinese -> zh-TW, not whichever zh voice the
+    // device lists first), else the first.
+    var defaultLangVoice = availableLangVoices.filter(function (v) {
+      return String(v.lang).replace("_", "-").toLowerCase() === (LANG_DEFAULT_LOCALE[currentLang] || "").toLowerCase();
+    })[0] || availableLangVoices[0];
     var html = '<p class="p-desc">' + TU("전체 듣기에서 베트남어 다음에 단어 뜻이나 문장 해석을 읽어줄 때 사용할 목소리를 선택하세요. (기기·브라우저에 설치된, 현재 언어 모드에 맞는 음성만 표시돼요)") + '</p><div class="voice-grid">';
     availableLangVoices.forEach(function (v, i) {
       var key = voiceMatchKey(v);
-      var checked = sel === key || (!sel && i === 0);
+      var checked = sel === key || (!sel && v === defaultLangVoice);
       html += '<label class="voice-opt"><input type="radio" name="voice-pick-lang" value="' + escapeAttr(key) + '" ' + (checked ? "checked" : "") + '>' +
         '<span class="vname">' + escapeHtml(v.name) + '</span><span class="vmeta">' + escapeHtml(v.lang) + '</span></label>';
     });
@@ -1862,7 +1868,7 @@
     }
     html += '<p class="p-desc voice-download-note">' + TU("이미 기기에 다운로드한 음성인데도 여기에 보이지 않는다면, 이 브라우저 앱을 완전히 종료했다가 다시 열거나 기기를 재시작해 보세요. 특히 '고품질' 음성은 iOS/사파리에서 바로 인식되지 않는 경우가 있어요.") + '</p>';
     root.innerHTML = html;
-    if (!sel && availableLangVoices[0]) selectedLangVoiceURI[currentLang] = voiceMatchKey(availableLangVoices[0]);
+    if (!sel && defaultLangVoice) selectedLangVoiceURI[currentLang] = voiceMatchKey(defaultLangVoice);
     root.querySelectorAll('input[name="voice-pick-lang"]:not([disabled])').forEach(function (r) {
       r.addEventListener("change", function () { selectedLangVoiceURI[currentLang] = r.value; });
     });
@@ -2473,19 +2479,33 @@
     });
     return jobs;
   }
-  function enqueueReadAll(token, texts) {
+  // jobs: the utterances still to play (all of them on the first call). A queue that was dropped or cut short is
+  // handed to the engine again from the first job that never started (a few times, still queued: a slow voice -- an
+  // enhanced Chinese or Japanese one loading -- can leave a gap that looks like the end), and only then does the
+  // chained playback take over from that entry.
+  function enqueueReadAll(token, texts, jobs, attempt) {
     if (token !== readAllState.token) return;
     var synth = window.speechSynthesis;
-    var jobs = readAllQueueJobs(texts);
+    jobs = jobs || readAllQueueJobs(texts);
+    attempt = attempt || 0;
     if (!jobs.length) { stopReadAllSequence(); return; }
     var started = 0, sawBusy = false, idleChecks = 0, t0 = Date.now();
     window.__activeUtterances = [];
-    function fallback(fromEntry) {
+    function fallback() {
       stopReadAllQueuePoll();
       if (token !== readAllState.token) return;
-      readAllState.idx = fromEntry - 1;
+      var from = jobs[Math.min(started, jobs.length - 1)].ei;
+      readAllState.idx = from - 1;
       cancelSpeech(true);
       playReadAllNext(token);
+    }
+    function retry() {
+      stopReadAllQueuePoll();
+      if (token !== readAllState.token) return;
+      if (attempt >= 3) { fallback(); return; }
+      var rest = jobs.slice(started);
+      cancelSpeech(true);
+      setTimeout(function () { enqueueReadAll(token, texts, rest, attempt + 1); }, SPEECH_CANCEL_SETTLE_MS + 50);
     }
     try {
       jobs.forEach(function (job, ji) {
@@ -2506,16 +2526,24 @@
         window.__activeUtterances.push(u);   // strong references: WebKit stops reporting events for collected utterances
         synth.speak(u);
       });
-    } catch (eQ) { fallback(0); return; }
+    } catch (eQ) { fallback(); return; }
     stopReadAllQueuePoll();
+    var lastProgress = Date.now(), lastStarted = 0;
     readAllQueuePoll = setInterval(function () {
       if (token !== readAllState.token) { stopReadAllQueuePoll(); return; }
       var busy = false;
       try { busy = synth.speaking || synth.pending; } catch (eB) { /* no-op */ }
-      if (busy) { sawBusy = true; idleChecks = 0; return; }
-      if (!sawBusy) { if (Date.now() - t0 > 3500) fallback(0); return; }   // nothing ever started: the queue was dropped
-      if (++idleChecks < 3) return;                                          // idle for about 1.2 s: the queue is over
-      if (started > 0 && started < jobs.length) fallback(jobs[started].ei);  // ...but cut short: carry on chained
+      if (started !== lastStarted) { lastStarted = started; lastProgress = Date.now(); }
+      if (busy) {
+        sawBusy = true; idleChecks = 0;
+        // Events are arriving, yet one utterance has been "playing" for far too long (a voice that cannot start):
+        // skip past it rather than hang.
+        if (started > 0 && started < jobs.length && Date.now() - lastProgress > 20000) retry();
+        return;
+      }
+      if (!sawBusy) { if (Date.now() - t0 > 3500) (attempt >= 3 ? fallback : retry)(); return; }   // nothing ever started
+      if (++idleChecks < 4) return;                                                            // idle ~1.6 s: over...
+      if (started > 0 && started < jobs.length) retry();                                       // ...or cut short
       else { stopReadAllQueuePoll(); stopReadAllSequence(); }
     }, 400);
   }
