@@ -216,6 +216,26 @@
   // back to returning the Korean unchanged, same "never breaks, just shows Korean until
   // translated" philosophy as T() above -- this lets translation coverage grow incrementally.
   var I18N_UI = {
+    "간격 복습": {"vi": "Ôn cách quãng", "cs": "Rozložené opakování", "zh_cn": "间隔复习", "zh": "間隔複習", "en": "Spaced review", "fr": "Révision espacée", "de": "Verteilte Wiederholung", "hu": "Térközös ismétlés", "id": "Ulangan berjarak", "ja": "間隔復習", "pl": "Powtórki rozłożone"},
+    "간격 복습에 추가": {"vi": "Thêm vào ôn cách quãng", "cs": "Přidat do rozloženého opakování", "zh_cn": "加入间隔复习", "zh": "加入間隔複習", "en": "Add to spaced review", "fr": "Ajouter à la révision espacée", "de": "Zur verteilten Wiederholung hinzufügen", "hu": "Hozzáadás a térközös ismétléshez", "id": "Tambahkan ke ulangan berjarak", "ja": "間隔復習に追加", "pl": "Dodaj do powtórek rozłożonych"},
+    "간격 복습에 추가됨": {"vi": "Đã thêm vào ôn cách quãng", "cs": "Přidáno do rozloženého opakování", "zh_cn": "已加入间隔复习", "zh": "已加入間隔複習", "en": "Added to spaced review", "fr": "Ajouté à la révision espacée", "de": "Zur verteilten Wiederholung hinzugefügt", "hu": "Hozzáadva a térközös ismétléshez", "id": "Ditambahkan ke ulangan berjarak", "ja": "間隔復習に追加しました", "pl": "Dodano do powtórek rozłożonych"},
+    "오늘 복습할 단어": {"vi": "Từ cần ôn hôm nay", "cs": "Slova k opakování dnes", "zh_cn": "今天要复习的单词", "zh": "今天要複習的單字", "en": "Words due today", "fr": "Mots à revoir aujourd’hui", "de": "Heute fällige Wörter", "hu": "Ma esedékes szavak", "id": "Kata yang diulang hari ini", "ja": "今日復習する単語", "pl": "Słowa do powtórki dziś"},
+    "밀린 것부터": {"vi": "từ lâu nhất trước", "cs": "nejstarší napřed", "zh_cn": "最早到期的优先", "zh": "最早到期的優先", "en": "oldest first", "fr": "les plus anciens d’abord", "de": "älteste zuerst", "hu": "a legrégebbiek elöl", "id": "yang paling lama dulu", "ja": "古い順", "pl": "najstarsze najpierw"},
+    "복습 대기": {"vi": "Đang chờ ôn", "cs": "Čeká na opakování", "zh_cn": "等待复习", "zh": "等待複習", "en": "Waiting", "fr": "En attente", "de": "Wartend", "hu": "Várakozik", "id": "Menunggu", "ja": "待機中", "pl": "Oczekujące"},
+    "다음 예정일": {"vi": "ngày ôn tiếp theo", "cs": "další termín", "zh_cn": "下次复习日", "zh": "下次複習日", "en": "next due", "fr": "prochaine échéance", "de": "nächster Termin", "hu": "következő esedékesség", "id": "jadwal berikutnya", "ja": "次の予定日", "pl": "następny termin"},
+    "반복 완료": {"vi": "Đã ôn xong", "cs": "Dokončeno", "zh_cn": "已完成全部复习", "zh": "已完成全部複習", "en": "Finished", "fr": "Terminés", "de": "Abgeschlossen", "hu": "Befejezett", "id": "Selesai", "ja": "復習完了", "pl": "Ukończone"},
+    "오늘 복습 완료": {"vi": "Đã ôn xong hôm nay", "cs": "Dnešní opakování hotovo", "zh_cn": "今天的复习完成", "zh": "今天的複習完成", "en": "Mark today’s review done", "fr": "Révision du jour terminée", "de": "Heutige Wiederholung erledigt", "hu": "A mai ismétlés kész", "id": "Ulangan hari ini selesai", "ja": "今日の復習を完了", "pl": "Dzisiejsza powtórka zakończona"},
+    "간격 복습 안내": {"vi": "Mở phần từ vựng hôm nay từ [Khóa học] (nút Đi đến), học xong thì bấm “Thêm vào ôn cách quãng”. Các từ đó sẽ được ôn lại vào ngày hôm sau, sau 1 tuần và sau 4 tuần.", "cs": "Otevřete dnešní slovíčka z [Kurz] (tlačítko Přejít) a po naučení stiskněte „Přidat do rozloženého opakování“. Slova se vrátí další den, po 1 týdnu a po 4 týdnech.", "zh_cn": "从[课程]的快捷按钮打开今天的单词，学完后点“加入间隔复习”。这些单词会在第二天、1周后、4周后再次出现。", "zh": "從[課程]的快速按鈕打開今天的單字，學完後點「加入間隔複習」。這些單字會在第二天、1週後、4週後再次出現。", "en": "Open today’s words from [Course] (the Go button) and, once learned, tap “Add to spaced review”. They come back the next day, after 1 week and after 4 weeks.", "fr": "Ouvrez les mots du jour depuis [Cours] (bouton Aller) puis, une fois appris, touchez « Ajouter à la révision espacée ». Ils reviennent le lendemain, après 1 semaine et après 4 semaines.", "de": "Öffne die Wörter des Tages über [Kurs] (Schaltfläche „Gehe zu“) und tippe nach dem Lernen auf „Zur verteilten Wiederholung hinzufügen“. Sie kommen am nächsten Tag, nach 1 Woche und nach 4 Wochen wieder.", "hu": "Nyisd meg a mai szavakat a [Kurzus] Ugrás gombjával, és a tanulás után koppints a „Hozzáadás a térközös ismétléshez” gombra. Másnap, 1 hét és 4 hét múlva újra előkerülnek.", "id": "Buka kata hari ini dari [Kursus] (tombol Buka), lalu setelah dipelajari ketuk “Tambahkan ke ulangan berjarak”. Kata-kata itu muncul lagi besok, setelah 1 minggu, dan setelah 4 minggu.", "ja": "［コース］のショートカットから今日の単語を開き、学んだら「間隔復習に追加」を押してください。翌日、1週間後、4週間後にもう一度出てきます。", "ko": "[과정]의 바로가기로 오늘의 어휘를 열고 학습을 마친 뒤 「간격 복습에 추가」를 누르세요. 그 단어들은 다음날, 1주 뒤, 4주 뒤에 다시 복습할 차례가 됩니다.", "pl": "Otwórz dzisiejsze słowa z [Kurs] (przycisk Przejdź), a po nauce stuknij „Dodaj do powtórek rozłożonych”. Wrócą następnego dnia, po tygodniu i po 4 tygodniach."},
+    "오늘 복습할 단어가 없어요.": {"vi": "Hôm nay không có từ cần ôn.", "cs": "Dnes nejsou žádná slova k opakování.", "zh_cn": "今天没有要复习的单词。", "zh": "今天沒有要複習的單字。", "en": "No words are due today.", "fr": "Aucun mot à revoir aujourd’hui.", "de": "Heute sind keine Wörter fällig.", "hu": "Ma nincs esedékes szó.", "id": "Tidak ada kata yang perlu diulang hari ini.", "ja": "今日復習する単語はありません。", "pl": "Dziś nie ma słów do powtórki."},
+    "오리지널 송": {"vi": "Bài hát gốc", "cs": "Původní písně", "zh_cn": "原创歌曲", "zh": "原創歌曲", "en": "Original Songs", "fr": "Chants originaux", "de": "Originallieder", "hu": "Eredeti dalok", "id": "Lagu Orisinal", "ja": "オリジナルソング", "pl": "Piosenki oryginalne"},
+    "어린이 노래": {"vi": "Bài hát thiếu nhi", "cs": "Písně pro děti", "zh_cn": "儿童歌曲", "zh": "兒童歌曲", "en": "Children’s Songs", "fr": "Chants pour enfants", "de": "Kinderlieder", "hu": "Gyermekdalok", "id": "Lagu Anak", "ja": "子ども向けの歌", "pl": "Piosenki dla dzieci"},
+    "베트남어 미제공": {"vi": "Chưa có tiếng Việt", "cs": "Není ve vietnamštině", "zh_cn": "无越南语版", "zh": "無越南語版", "en": "Not in Vietnamese", "fr": "Pas en vietnamien", "de": "Nicht auf Vietnamesisch", "hu": "Vietnamiul nem elérhető", "id": "Tidak ada dalam bahasa Vietnam", "ja": "ベトナム語版なし", "pl": "Brak wersji wietnamskiej"},
+    "베트남어 가사 미제공": {"vi": "Chưa có lời bài hát tiếng Việt", "cs": "Vietnamský text není k dispozici", "zh_cn": "暂无越南语歌词", "zh": "暫無越南語歌詞", "en": "Vietnamese lyrics not available", "fr": "Paroles en vietnamien non disponibles", "de": "Kein vietnamesischer Liedtext", "hu": "Vietnami dalszöveg nem elérhető", "id": "Lirik bahasa Vietnam belum tersedia", "ja": "ベトナム語の歌詞はありません", "pl": "Brak tekstu po wietnamsku"},
+    "한국어 가사 미제공": {"vi": "Chưa có lời bài hát tiếng Hàn", "cs": "Korejský text není k dispozici", "zh_cn": "暂无韩语歌词", "zh": "暫無韓語歌詞", "en": "Korean lyrics not available", "fr": "Paroles en coréen non disponibles", "de": "Kein koreanischer Liedtext", "hu": "Koreai dalszöveg nem elérhető", "id": "Lirik bahasa Korea belum tersedia", "ja": "韓国語の歌詞はありません", "pl": "Brak tekstu po koreańsku"},
+    "베트남어 구절 듣기": {"vi": "Nghe câu tiếng Việt", "cs": "Poslechnout vietnamský verš", "zh_cn": "听越南语歌词", "zh": "聽越南語歌詞", "en": "Listen to the Vietnamese line", "fr": "Écouter la ligne en vietnamien", "de": "Vietnamesische Zeile anhören", "hu": "Vietnami sor meghallgatása", "id": "Dengarkan baris bahasa Vietnam", "ja": "ベトナム語の歌詞を聞く", "pl": "Posłuchaj wersu po wietnamsku"},
+    "한국어 구절 듣기": {"vi": "Nghe câu tiếng Hàn", "cs": "Poslechnout korejský verš", "zh_cn": "听韩语歌词", "zh": "聽韓語歌詞", "en": "Listen to the Korean line", "fr": "Écouter la ligne en coréen", "de": "Koreanische Zeile anhören", "hu": "Koreai sor meghallgatása", "id": "Dengarkan baris bahasa Korea", "ja": "韓国語の歌詞を聞く", "pl": "Posłuchaj wersu po koreańsku"},
+    "번호, 제목, 가사로 검색": {"vi": "Tìm theo số, tựa đề, lời bài hát", "cs": "Hledat podle čísla, názvu, textu", "zh_cn": "按编号、标题、歌词搜索", "zh": "按編號、標題、歌詞搜尋", "en": "Search by number, title or lyrics", "fr": "Rechercher par numéro, titre ou paroles", "de": "Nach Nummer, Titel oder Text suchen", "hu": "Keresés szám, cím vagy szöveg alapján", "id": "Cari menurut nomor, judul, atau lirik", "ja": "番号・タイトル・歌詞で検索", "pl": "Szukaj po numerze, tytule lub tekście"},
+    "곡": {"vi": "bài", "cs": "písní", "zh_cn": "首", "zh": "首", "en": "songs", "fr": "chants", "de": "Lieder", "hu": "dal", "id": "lagu", "ja": "曲", "pl": "piosenek"},
     "여호와의 친구가 되세요": {"vi": "Trở thành bạn Đức Giê-hô-va", "cs": "Buď Jehovovým přítelem", "zh_cn": "成为耶和华的朋友", "zh": "成為耶和華的朋友", "en": "Become Jehovah's Friend", "fr": "Deviens l’ami de Jéhovah", "de": "Werde Jehovas Freund", "hu": "Légy Jehova barátja", "id": "Jadilah Sahabat Yehuwa", "ja": "エホバの友達になろう", "pl": "Zostań przyjacielem Jehowy"},
     "jw.org의 어린이 노래예요. 곡 제목을 누르면 가사와 음성이 있는 jw.org 페이지가 열려요.": {"vi": "Các bài hát thiếu nhi trên jw.org. Bấm liên kết để mở trang jw.org có lời bài hát và âm thanh.", "cs": "Dětské písně z jw.org. Odkaz otevře stránku jw.org s textem a nahrávkou.", "zh_cn": "jw.org上的儿童歌曲。点击链接可打开有歌词和音频的jw.org页面。", "zh": "jw.org上的兒童歌曲。點擊連結可打開有歌詞和音訊的jw.org頁面。", "en": "Children's songs from jw.org. The links open the jw.org page with the lyrics and audio.", "fr": "Chants pour enfants de jw.org. Les liens ouvrent la page jw.org avec les paroles et l’audio.", "de": "Kinderlieder von jw.org. Die Links öffnen die jw.org-Seite mit Text und Audio.", "hu": "Gyerekénekek a jw.org-ról. A hivatkozás megnyitja a jw.org oldalt a szöveggel és a hanganyaggal.", "id": "Lagu anak-anak dari jw.org. Tautan membuka halaman jw.org yang berisi lirik dan audio.", "ja": "jw.orgの子ども向けの歌です。リンクを押すと歌詞と音声のあるjw.orgのページが開きます。", "pl": "Piosenki dla dzieci z jw.org. Odnośniki otwierają stronę jw.org z tekstem i nagraniem."},
     "대역 읽기": {"vi": "Đọc song ngữ", "cs": "Dvojjazyčné čtení", "zh_cn": "对照阅读", "zh": "對照閱讀", "en": "Parallel reading", "fr": "Lecture bilingue", "de": "Zweisprachig lesen", "hu": "Kétnyelvű olvasás", "id": "Bacaan dwibahasa", "ja": "対訳リーディング", "pl": "Czytanie dwujęzyczne"},
@@ -1976,6 +1996,18 @@
   var IS_APPLE_WEBKIT_SPEECH = IS_MAC_DESKTOP || /iPhone|iPad|iPod/i.test(navigator.userAgent || "") ||
     (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var SPEECH_CANCEL_SETTLE_MS = IS_APPLE_WEBKIT_SPEECH ? 300 : 30;
+  // iOS / iPadOS / macOS Safari: speech that is not started from a tap -- 복습 reading the first card out when the
+  // page opens on [복습] -- is dropped there, and can leave the engine silent for the rest of the visit. So on Apple
+  // WebKit nothing is spoken before the first real tap / key press (callers still get their onDone).
+  var speechUserActivated = false;
+  ["pointerdown", "touchend", "keydown", "click"].forEach(function (type) {
+    document.addEventListener(type, function (e) { if (e.isTrusted) speechUserActivated = true; }, { capture: true, passive: true });
+  });
+  function speechAllowed() {
+    if (!IS_APPLE_WEBKIT_SPEECH || speechUserActivated) return true;
+    try { if (navigator.userActivation && navigator.userActivation.hasBeenActive) return true; } catch (e) { /* no-op */ }
+    return false;
+  }
   var lastSpeechCancelAt = 0;
   // keepChain: robustSpeakOne() making room for its own next utterance -- the chunk chain it belongs to goes on.
   function cancelSpeech(keepChain) {
@@ -2029,12 +2061,14 @@
   }
   function robustSpeak(opts, onDone) {
     var gen = ++speechGeneration;
+    var finished = function () { if (gen === speechGeneration && onDone) onDone(); };
+    if (!speechAllowed()) { setTimeout(finished, 0); return; }
     var chunks = opts && opts.text ? speechChunks(opts.text) : [];
-    if (chunks.length <= 1) { robustSpeakOne(opts, onDone, gen); return; }
+    if (chunks.length <= 1) { robustSpeakOne(opts, finished, gen); return; }
     var i = 0;
     (function nextChunk() {
       if (gen !== speechGeneration) return;            // stopped, or another speech call took over
-      if (i >= chunks.length) { if (onDone) onDone(); return; }
+      if (i >= chunks.length) { finished(); return; }
       robustSpeakOne(Object.assign({}, opts, { text: chunks[i++] }), nextChunk, gen);
     })();
   }
@@ -2179,7 +2213,8 @@
     var repsLeft = (typeof _repsLeft === "number" && _repsLeft > 0) ? _repsLeft : viRepeatCount;
     speakOnce(text, function () {
       if (repsLeft > 1) {
-        setTimeout(function () { speak(text, onDone, repsLeft - 1); }, VI_REPEAT_GAP_MS);
+        var gen = speechGeneration;
+        setTimeout(function () { if (gen === speechGeneration) speak(text, onDone, repsLeft - 1); }, VI_REPEAT_GAP_MS);
       } else if (onDone) onDone();
     });
   }
@@ -2401,6 +2436,23 @@
   function stopReadAllKeepAlive() {
     if (readAllKeepAliveTimer) { clearInterval(readAllKeepAliveTimer); readAllKeepAliveTimer = null; }
   }
+  // Stops whatever is being read (a 전체 듣기 sequence, a single phrase, a pending repetition).
+  function stopAllSpeech() {
+    if (readAllState.id) { stopReadAllSequence(); return; }
+    if (speakRetryTimer) { clearTimeout(speakRetryTimer); speakRetryTimer = null; }
+    window.__activeUtterances = [];
+    var busy = false;
+    try { busy = "speechSynthesis" in window && (window.speechSynthesis.speaking || window.speechSynthesis.pending); } catch (e) { /* no-op */ }
+    if (busy) cancelSpeech(); else speechGeneration++;
+  }
+  // Moving to another tab or subtab, or leaving the page, ends the speech of the screen being left. Capture phase: it
+  // runs before the new screen's own handlers, so speech the new screen starts (복습 reading its first card) is kept.
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest(".tab-btn, .subtab-btn");
+    if (!b || b.getAttribute("aria-selected") === "true") return;
+    stopAllSpeech();
+  }, true);
+  window.addEventListener("pagehide", function () { stopAllSpeech(); });
   function stopReadAllSequence() {
     stopReadAllKeepAlive();
     stopReadAllQueuePoll();
@@ -3351,7 +3403,7 @@
           speakBtn.innerHTML = speakIcon();
           speakBtn.addEventListener("click", function (e) {
             e.stopPropagation();
-            speakText(row.vi, "vi");
+            speak(row.vi);
           });
           headerRow.appendChild(speakBtn);
         }
@@ -4917,6 +4969,70 @@
     words: "단어", rhyme: "한자음", orderrev: "어순반대", groups: "동일음", basic: "기본", antonym: "반의",
     freq: "상용", theo: "신권", names: "인명", chain: "끝말", dialect: "남북 단어", wt: "파수대"
   };
+  // ---- 간격 복습: spaced repetition of the words a learner has studied, kept in this browser (localStorage) ----
+  // "vn-app-srs-v1" = {v: 1, words: {<key>: {vi, kr, first, last, stage, done: [{stage, date}], next}}}
+  //   key    the Vietnamese word, NFC, lower case, single spaces: a word met in several lists has one schedule
+  //   first  the local date (YYYY-MM-DD) it was first studied; studying it again later keeps the first date
+  //   stage  reviews completed (0-3); next = first + [1, 7, 28][stage] days, or null once all three are done
+  //   kr     the meaning as shown when it was added (only a fallback: [복습] shows the current language's meaning)
+  // Dates are calendar dates in the learner's own time zone (local Date fields, never UTC), so a review never moves
+  // a day early or late around midnight. A review done late schedules the next one from the first date, but never
+  // earlier than tomorrow. New key, so no earlier progress is touched.
+  var SRS_STORAGE_KEY = "vn-app-srs-v1";
+  var SRS_INTERVALS = [1, 7, 28];
+  function srsPad(n) { return (n < 10 ? "0" : "") + n; }
+  function srsLocalIso(d) { return d.getFullYear() + "-" + srsPad(d.getMonth() + 1) + "-" + srsPad(d.getDate()); }
+  function srsToday() { return srsLocalIso(window.__srsNow ? window.__srsNow() : new Date()); }
+  function srsAddDays(iso, n) { var p = iso.split("-"); return srsLocalIso(new Date(+p[0], +p[1] - 1, +p[2] + n)); }
+  function srsKey(vi) { return String(vi || "").normalize("NFC").toLowerCase().replace(/\s+/g, " ").trim(); }
+  function srsLoad() {
+    try {
+      var o = JSON.parse(window.localStorage.getItem(SRS_STORAGE_KEY) || "null");
+      if (o && o.v === 1 && o.words && typeof o.words === "object") return o;
+    } catch (e) { /* no-op */ }
+    return { v: 1, words: {} };
+  }
+  function srsSave(o) { try { window.localStorage.setItem(SRS_STORAGE_KEY, JSON.stringify(o)); } catch (e) { /* no-op */ } }
+  // items [{vi, kr}] studied today; returns how many were new
+  function srsRecordStudied(items) {
+    var o = srsLoad(), today = srsToday(), added = 0;
+    (items || []).forEach(function (it) {
+      var k = srsKey(it && it.vi);
+      if (!k || o.words[k]) return;
+      o.words[k] = { vi: String(it.vi).trim(), kr: it.kr || "", first: today, last: null, stage: 0, done: [], next: srsAddDays(today, SRS_INTERVALS[0]) };
+      added++;
+    });
+    srsSave(o);
+    return added;
+  }
+  function srsMarkReviewed(vi) {
+    var o = srsLoad(), e = o.words[srsKey(vi)], today = srsToday();
+    if (!e || e.next === null || e.next > today) return false;
+    e.stage++;
+    e.done.push({ stage: e.stage, date: today });
+    e.last = today;
+    if (e.stage >= SRS_INTERVALS.length) e.next = null;
+    else {
+      var plan = srsAddDays(e.first, SRS_INTERVALS[e.stage]), tomorrow = srsAddDays(today, 1);
+      e.next = plan > tomorrow ? plan : tomorrow;
+    }
+    srsSave(o);
+    return true;
+  }
+  // due: next <= today, the longest overdue first; waiting: next > today, soonest first
+  function srsState() {
+    var o = srsLoad(), today = srsToday(), due = [], waiting = [], finished = 0;
+    Object.keys(o.words).forEach(function (k) {
+      var e = o.words[k];
+      if (e.next === null) finished++;
+      else if (e.next <= today) due.push(e);
+      else waiting.push(e);
+    });
+    function byNext(a, b) { return a.next < b.next ? -1 : a.next > b.next ? 1 : (a.first < b.first ? -1 : a.first > b.first ? 1 : 0); }
+    due.sort(byNext); waiting.sort(byNext);
+    return { today: today, due: due, waiting: waiting, finished: finished, total: Object.keys(o.words).length };
+  }
+  window.__srs = { state: srsState, record: srsRecordStudied, review: srsMarkReviewed, addDays: srsAddDays, key: SRS_STORAGE_KEY };
   function applyVocabFocus(mode, arr) {
     if (!vocabFocus || vocabFocus.mode !== mode) return arr;
     return arr.slice(vocabFocus.start, vocabFocus.end);
@@ -4927,6 +5043,7 @@
       ' ' + (vocabFocus.start + 1) + '~' + vocabFocus.end + '</span>' +
       '<div class="vocab-focus-banner-btns">' +
       '<button class="vocab-focus-scoped-review">' + TU("학습 범위내 복습 게임") + '</button>' +
+      (mode === "wt" ? '' : '<button class="vocab-focus-srs">' + TU("간격 복습에 추가") + '</button>') +
       '<button class="vocab-focus-clear">' + TU("전체 보기") + '</button></div></div>';
   }
   // renderFn (optional): which render function "전체 보기" should call after clearing the focus
@@ -4937,6 +5054,13 @@
     renderFn = renderFn || renderVocab;
     var b = root.querySelector(".vocab-focus-clear");
     if (b) b.addEventListener("click", function () { vocabFocus = null; renderFn(); });
+    var srs = root.querySelector(".vocab-focus-srs");
+    if (srs) srs.addEventListener("click", function () {
+      var items = typeof window.__vocabScopedPool === "function" ? window.__vocabScopedPool() : [];
+      srsRecordStudied(items);
+      srs.textContent = TU("간격 복습에 추가됨") + " (" + items.length + ")";
+      srs.disabled = true;
+    });
     var sr = root.querySelector(".vocab-focus-scoped-review");
     if (sr) sr.addEventListener("click", function () {
       if (typeof window.__goToScopedVocabReview === "function") window.__goToScopedVocabReview();
@@ -6543,20 +6667,52 @@
     courseVocabCache = { sched: sched, plan: plan };
     return plan;
   }
-  // Homework: replace the stored daily vocabulary lines with the scheduled review/preview slices.
+  // Homework: replace the stored daily vocabulary lines with the scheduled preview slices and their spaced reviews.
+  // Spaced repetition: the words heard on a study day come back three times -- on the next study day (Mon-Thu: the
+  // day after; Friday: the next Monday, Saturday being the class), one week later and four weeks later, on the same
+  // weekday. Homework week h (h = 0 before the first class, h = i + 1 under slot i) is the h-th week of the course
+  // calendar; its day i is study day g = 5 h + i, so the reviews of day g are the words of days g - 1, g - 5, g - 20.
+  // (Every week has homework, breaks included, so the calendar has no gaps; reviews past the course end are dropped.)
+  var VOCAB_SPACED_STEPS = [
+    [1, { ko: "다음 학습일 복습", vi: "ôn ngày học kế tiếp", en: "next study day review", ja: "次の学習日の復習", zh: "下一個學習日複習",
+      zh_cn: "下一个学习日复习", cs: "opakování další studijní den", de: "Wiederholung am nächsten Lerntag", fr: "révision le jour d’étude suivant",
+      hu: "ismétlés a következő tanulási napon", id: "ulang pada hari belajar berikutnya", pl: "powtórka w następny dzień nauki" }],
+    [5, { ko: "1주 뒤 복습", vi: "ôn sau 1 tuần", en: "review after 1 week", ja: "1週間後の復習", zh: "1週後複習", zh_cn: "1周后复习",
+      cs: "opakování po 1 týdnu", de: "Wiederholung nach 1 Woche", fr: "révision après 1 semaine", hu: "ismétlés 1 hét múlva",
+      id: "ulang setelah 1 minggu", pl: "powtórka po 1 tygodniu" }],
+    [20, { ko: "4주 뒤 복습", vi: "ôn sau 4 tuần", en: "review after 4 weeks", ja: "4週間後の復習", zh: "4週後複習", zh_cn: "4周后复习",
+      cs: "opakování po 4 týdnech", de: "Wiederholung nach 4 Wochen", fr: "révision après 4 semaines", hu: "ismétlés 4 hét múlva",
+      id: "ulang setelah 4 minggu", pl: "powtórka po 4 tygodniach" }]
+  ];
+  function courseVocabDayRange(plan, g, n) {
+    if (g < 0) return null;
+    var h = Math.floor(g / n);
+    return plan.preview[h] ? splitVocabRange(plan.preview[h], n)[g % n] : null;
+  }
   function applyCourseVocabHomework(assign, sched, h) {
     var plan = courseVocabPlan(sched);
     if (!plan || !assign || !assign.days || !assign.days.length) return assign;
     function keep(list) { return (list || []).filter(function (it) { return !isVocabRangeItem(it) && !isWt50Item(it); }); }
     var n = assign.days.length;
-    var rev = splitVocabRange(plan.review[h], n), pre = splitVocabRange(plan.preview[h], n);
-    return Object.assign({}, assign, { days: assign.days.map(function (d, i) {
+    var pre = splitVocabRange(plan.preview[h], n);
+    var out = Object.assign({}, assign, { days: assign.days.map(function (d, i) {
+      var g = h * n + i, spaced = [];
+      VOCAB_SPACED_STEPS.forEach(function (step) {
+        courseVocabItems(courseVocabDayRange(plan, g - step[0], n), "dayText").forEach(function (it) {
+          var text = {};
+          Object.keys(it.text).forEach(function (lang) { text[lang] = it.text[lang] + " · " + (step[1][lang] || step[1].en); });
+          spaced.push(Object.assign({}, it, { text: text, _spaced: step[0] }));
+        });
+      });
       return Object.assign({}, d, {
-        reviews: keep(d.reviews).concat(courseVocabItems(rev[i], "dayText")),
+        reviews: keep(d.reviews).concat(spaced),
         previews: keep(d.previews).concat(courseVocabItems(pre[i], "dayText")),
         vocab: keep(d.vocab)
       });
     }) });
+    // Maintenance/test hook (see window.__COURSE_CAPTURE below): every homework week by its index h, breaks included.
+    if (window.__COURSE_CAPTURE) (window.__COURSE_CAPTURE.vocab = window.__COURSE_CAPTURE.vocab || {})[h] = JSON.parse(JSON.stringify(out));
+    return out;
   }
   // Class items: the stored vocabulary lines (and the removed Watchtower 50-word lines) give way to this class's slice.
   function applyCourseVocabClass(items, sched, week) {
@@ -9281,45 +9437,6 @@ function verifyDistribution(units, dist, pins) {
     return s.charAt(0) === "(" || s.charAt(0) === "（";
   }
 
-  // 「여호와의 친구가 되세요」 songs (KID_SONGS): Vietnamese and Korean titles side by side, with links to the song
-  // pages on jw.org (lyrics, audio, video). Lyric lines appear here once they are supplied through the data file.
-  // 「여호와의 친구가 되세요」 song on jw.org (finder lank pub-pkon_<track>_VIDEO; KID_SONG_TRACKS gives the jw.org
-  // track and the languages it exists in), for Vietnamese and the current UI language.
-  function kidSongLinksHtml(s) {
-    var tr = typeof KID_SONG_TRACKS !== "undefined" && KID_SONG_TRACKS ? KID_SONG_TRACKS[String(s.number)] : null;
-    if (!tr) return "";
-    var langs = (currentLang === "vi" ? ["vi"] : ["vi", currentLang]).filter(function (l) { return tr[1].indexOf(l) >= 0; });
-    var links = langs.map(function (l) {
-      return '<a href="' + escapeAttr(jwLankUrl("pub-pkon_" + tr[0] + "_VIDEO", l)) + '" target="_blank" rel="noopener">jw.org (' + escapeHtml(songJwLocale(l)[1]) + ')</a>';
-    }).join("");
-    return links ? '<div class="kid-song-links">' + links + '</div>' : "";
-  }
-  function kidSongsHtml() {
-    if (typeof KID_SONGS === "undefined" || !KID_SONGS || !(KID_SONGS.songs || []).length) return "";
-    var html = '<div class="p-section kid-songs" data-anchor="kid-songs"><h3>' + escapeHtml(TU("여호와의 친구가 되세요")) + '</h3>' +
-      '<div class="chain-note">' + escapeHtml(TU("jw.org의 어린이 노래예요. 곡 제목을 누르면 가사와 음성이 있는 jw.org 페이지가 열려요.")) + '</div><div class="kid-song-list">';
-    KID_SONGS.songs.forEach(function (s) {
-      var target = currentLang === "vi" ? "" : (s.title[currentLang] || s.title.ko || "");
-      html += '<div class="kid-song" data-anchor="kidsong-' + s.number + '"><div class="song-badge">' + s.number + '</div><div class="kid-song-info">' +
-        '<div class="song-item-vi vn">' + escapeHtml(s.title.vi) +
-        '<button type="button" class="speak-btn" data-speak="' + escapeAttr(s.title.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-        (target ? '<div class="song-item-target">' + escapeHtml(target) + '</div>' : '') +
-        kidSongLinksHtml(s);
-      if (s.lines && s.lines.length) {
-        html += '<div class="talk-lines kid-song-lines">';
-        s.lines.forEach(function (l) {
-          if (!l.vi) return;
-          var tr = currentLang === "vi" ? "" : (l[currentLang] || l.ko || "");
-          html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
-            '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-            (tr ? '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(tr) + '</span></div>' : '') + '</div></div>';
-        });
-        html += '</div>';
-      }
-      html += '</div></div>';
-    });
-    return html + '</div></div>';
-  }
   // jw.org page of a 왕국 노래 in each UI language (wtlocale per language). Songs 1-151 are docid 1102016800 + number;
   // the songs added later, 152-163, are 1102022800 + number (checked on jw.org for all 12 languages, 2026-10).
   // (a function, not a var: renderCurrSongs() first runs during start-up, before this point of the file is reached)
@@ -9403,6 +9520,151 @@ function verifyDistribution(units, dist, pins) {
     if (rec.kind === "ready") return 1102021351;
     return 0;
   }
+  // ---- [노래] > [오리지널 송] / [어린이 노래] ----
+  // ORIGINAL_SONGS / CHILDREN_SONGS come from jw_original_songs_ko_vi.json / jw_childrens_songs_ko_vi.json (build_app.py
+  // song_collection): {id, track, vi|ko: {title, lines, url, available}}. One folding card per song; a card's lyrics are
+  // only rendered while it is open. Vietnamese and Korean lyrics are separate columns (their lines do not correspond
+  // one to one). Lines like "(코러스)" / "(ĐIỆP KHÚC)" are labels without a listen button; the listen text of a numbered
+  // verse drops its "1." (the shown text keeps it). Full-song links are the JSON's jw.org links, as given.
+  var songKindState = { kind: "kingdom", open: { original: {}, kids: {} }, q: { original: "", kids: "" } };
+  var songKindIndex = {};
+  function songKindData(kind) {
+    var d = kind === "original" ? (typeof ORIGINAL_SONGS !== "undefined" && ORIGINAL_SONGS) : (typeof CHILDREN_SONGS !== "undefined" && CHILDREN_SONGS);
+    return d || [];
+  }
+  function songKindSearchIndex(kind) {
+    if (!songKindIndex[kind]) {
+      songKindIndex[kind] = songKindData(kind).map(function (song) {
+        return { song: song, hay: [String(song.track), song.vi.title, song.ko.title, song.vi.lines.join(" "), song.ko.lines.join(" ")].join(" ").toLowerCase() };
+      });
+    }
+    return songKindIndex[kind];
+  }
+  function isSongLabelLine(line) { return /^\s*\([^()]*\)\s*$/.test(line); }
+  function songLineSpeechText(line) { return String(line).replace(/^\s*\d+\s*[.)]\s*/, "").trim(); }
+  function songKindRoot(kind) { return document.getElementById(kind === "original" ? "song-original-root" : "song-kids-root"); }
+  function songAccHeadHtml(kind, song, open) {
+    var bodyId = "songacc-" + song.id;
+    return '<button type="button" class="song-acc-head" aria-expanded="' + (open ? "true" : "false") + '" aria-controls="' + bodyId + '" data-song-acc="' + escapeAttr(song.id) + '">' +
+      '<span class="song-badge">' + song.track + '</span><span class="song-acc-titles">' +
+      (song.vi.title ? '<span class="song-acc-vi vn" lang="vi">' + escapeHtml(song.vi.title) + '</span>' : '<span class="song-acc-missing">' + escapeHtml(TU("베트남어 미제공")) + '</span>') +
+      '<span class="song-acc-ko" lang="ko">' + escapeHtml(song.ko.title) + '</span></span>' + currChev() + '</button>';
+  }
+  function songLyricColumnHtml(langKey, d) {
+    var name = songJwLocale(langKey)[1];
+    var html = '<section class="song-lyric-col" lang="' + langKey + '"><h4>' + escapeHtml(name) + '</h4>';
+    if (!d.available || !d.lines.length) {
+      return html + '<div class="song-lyric-missing">' + escapeHtml(TU(langKey === "vi" ? "베트남어 가사 미제공" : "한국어 가사 미제공")) + '</div></section>';
+    }
+    d.lines.forEach(function (line) {
+      if (!String(line).trim()) { html += '<div class="song-stanza-gap" aria-hidden="true"></div>'; return; }
+      if (isSongLabelLine(line)) { html += '<div class="song-line-label">' + escapeHtml(line) + '</div>'; return; }
+      var say = songLineSpeechText(line);
+      html += '<div class="song-line"><span class="song-line-text' + (langKey === "vi" ? ' vn' : '') + '">' + escapeHtml(line) + '</span>' +
+        (say ? '<button type="button" class="speak-btn" ' + (langKey === "vi" ? 'data-speak' : 'data-speak-ko') + '="' + escapeAttr(say) + '" aria-label="' +
+          escapeAttr(TU(langKey === "vi" ? "베트남어 구절 듣기" : "한국어 구절 듣기")) + '">' + speakIcon() + '</button>' : '') + '</div>';
+    });
+    return html + '</section>';
+  }
+  function songAccBodyHtml(song) {
+    var links = ["vi", "ko"].map(function (l) {
+      var d = song[l];
+      if (!d.url || !d.available) return "";
+      return '<a class="read-all-btn song-full-link" href="' + escapeAttr(d.url) + '" target="_blank" rel="noopener noreferrer">▶ ' +
+        escapeHtml(TU("전체 듣기")) + ' · ' + escapeHtml(songJwLocale(l)[1]) + '</a>';
+    }).join("");
+    return (links ? '<div class="song-full-links">' + links + '</div>' : '') +
+      '<div class="song-lyric-cols">' + songLyricColumnHtml("vi", song.vi) + songLyricColumnHtml("ko", song.ko) + '</div>';
+  }
+  function songAccHtml(kind, song) {
+    var open = !!songKindState.open[kind][song.id];
+    return '<div class="song-acc" data-song-id="' + escapeAttr(song.id) + '" data-anchor="' + kind + 'song-' + song.track + '">' +
+      songAccHeadHtml(kind, song, open) +
+      '<div class="song-acc-body" id="songacc-' + escapeAttr(song.id) + '"' + (open ? '' : ' hidden') + '>' + (open ? songAccBodyHtml(song) : '') + '</div></div>';
+  }
+  function renderSongKindList(kind) {
+    var root = songKindRoot(kind);
+    var list = root && root.querySelector(".song-kind-list");
+    if (!list) return;
+    var q = (songKindState.q[kind] || "").trim().toLowerCase();
+    var items = songKindSearchIndex(kind).filter(function (x) { return !q || x.hay.indexOf(q) >= 0; });
+    root.querySelector(".song-kind-count").textContent = items.length + " " + TU("곡");
+    list.innerHTML = items.length ? items.map(function (x) { return songAccHtml(kind, x.song); }).join("")
+      : '<div class="empty-state">' + escapeHtml(TU("검색 결과가 없어요.")) + '</div>';
+  }
+  function renderSongKind(kind) {
+    var root = songKindRoot(kind);
+    if (!root) return;
+    root.innerHTML = '<input type="search" class="search-box-input song-kind-search" placeholder="' + escapeAttr(TU("번호, 제목, 가사로 검색")) + '" aria-label="' +
+      escapeAttr(TU("번호, 제목, 가사로 검색")) + '" value="' + escapeAttr(songKindState.q[kind] || "") + '">' +
+      '<div class="song-kind-count"></div><div class="song-kind-list"></div>';
+    root.dataset.rendered = "true";
+    renderSongKindList(kind);
+  }
+  // Korean lyrics are read in a Korean voice whatever the UI language (the UI language's picked voice when that is Korean).
+  function speakKoreanLine(text) {
+    if (currentLang === "ko") { speakMeaning(text); return; }
+    if (readAllState.id) stopReadAllSequence();
+    var voice = null;
+    try { voice = window.speechSynthesis.getVoices().filter(function (v) { return /^ko(-|_|$)/i.test(v.lang) && !isNoveltyVoice(v); })[0] || null; } catch (e) { /* no-op */ }
+    robustSpeak({ text: text, lang: "ko-KR", voice: voice });
+  }
+  function selectSongKind(kind) {
+    if (["kingdom", "original", "kids"].indexOf(kind) < 0) kind = "kingdom";
+    songKindState.kind = kind;
+    document.querySelectorAll(".song-kind-tabs .subtab-btn").forEach(function (b) {
+      b.setAttribute("aria-selected", b.dataset.songkind === kind ? "true" : "false");
+    });
+    var panes = { kingdom: document.getElementById("curr-songs-root"), original: songKindRoot("original"), kids: songKindRoot("kids") };
+    Object.keys(panes).forEach(function (k) { if (panes[k]) panes[k].hidden = k !== kind; });
+    if (kind !== "kingdom" && panes[kind] && !panes[kind].dataset.rendered) renderSongKind(kind);
+  }
+  (function () {
+    var tabs = document.querySelector(".song-kind-tabs");
+    if (!tabs) return;
+    // No songs data on this site (GENERAL): only the kingdom pane, without the row of tabs.
+    if (!songKindData("original").length && !songKindData("kids").length) { tabs.remove(); return; }
+    tabs.querySelectorAll(".subtab-btn").forEach(function (b) {
+      b.addEventListener("click", function () { selectSongKind(b.dataset.songkind); });
+      b.addEventListener("keydown", function (e) {
+        if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+        var all = Array.prototype.slice.call(tabs.querySelectorAll(".subtab-btn"));
+        var next = all[(all.indexOf(b) + (e.key === "ArrowRight" ? 1 : all.length - 1)) % all.length];
+        next.focus(); next.click();
+      });
+    });
+    ["original", "kids"].forEach(function (kind) {
+      var root = songKindRoot(kind);
+      if (!root) return;
+      root.addEventListener("input", function (e) {
+        if (!e.target.classList.contains("song-kind-search")) return;
+        songKindState.q[kind] = e.target.value;
+        renderSongKindList(kind);
+      });
+      root.addEventListener("click", function (e) {
+        var head = e.target.closest && e.target.closest(".song-acc-head");
+        if (head) {
+          var id = head.dataset.songAcc, card = head.closest(".song-acc");
+          var song = songKindData(kind).filter(function (x) { return x.id === id; })[0];
+          if (!song || !card) return;
+          songKindState.open[kind][id] = !songKindState.open[kind][id];
+          card.outerHTML = songAccHtml(kind, song);
+          var again = root.querySelector('.song-acc[data-song-id="' + id + '"] .song-acc-head');
+          if (again) again.focus();
+          return;
+        }
+        var btn = e.target.closest && e.target.closest(".speak-btn");
+        if (!btn) return;
+        e.stopPropagation();
+        if (btn.dataset.speakKo) speakKoreanLine(btn.dataset.speakKo);
+        else if (btn.dataset.speak) speak(btn.dataset.speak);
+      });
+    });
+    selectSongKind("kingdom");
+    onLangChange(function () {
+      ["original", "kids"].forEach(function (kind) { var r = songKindRoot(kind); if (r && r.dataset.rendered) renderSongKind(kind); });
+    });
+  })();
   function renderCurrSongs(targetSongNum) {
     var root = document.getElementById("curr-songs-root");
     if (!root) return;
@@ -9437,6 +9699,7 @@ function verifyDistribution(units, dist, pins) {
 
     if (typeof targetSongNum === "number") {
       currentSelectedSong = targetSongNum;
+      if (typeof selectSongKind === "function") selectSongKind("kingdom");
     }
 
     // Find selected song or default to 1st song
@@ -9653,7 +9916,6 @@ function verifyDistribution(units, dist, pins) {
 
     html += '</div></div>'; // close dialog & modal
     html += '</div>'; // close p-section
-    html += kidSongsHtml();
 
     root.innerHTML = html;
     bindCurrSpeakBtns(root);
@@ -10845,6 +11107,7 @@ function verifyDistribution(units, dist, pins) {
 
     function renderReviewScopes(key, selectedScope) {
       if (!reviewScopeEl) return;
+      if (key === "srs") { renderSrsStatus(); return; }
       if (key === "song") {
         // [노래] has no category-level scope buttons: its whole row is the [전체] + per-range
         // dropdown row below.
@@ -10920,6 +11183,7 @@ function verifyDistribution(units, dist, pins) {
       var sameScope = Array.isArray(scope) && Array.isArray(studyState.scope)
         ? scope.join(",") === studyState.scope.join(",")
         : studyState.scope === scope;
+      if (key === "srs" && !poolOverride) poolOverride = srsDuePool();
       if (!poolOverride && studyState.tabKey === key && sameScope) return;
       var prevKey = studyState.tabKey;
       studyState.tabKey = key;
@@ -10945,6 +11209,39 @@ function verifyDistribution(units, dist, pins) {
     }
     // Exposed so the vocab-focus banner (built in a different IIFE) can launch a review session
     // scoped to just its currently-visible range; see vocabFocusBannerHtml()/bindVocabFocusClear().
+    window.__vocabScopedPool = vocabScopedPool;
+    // The due words with their meaning in the current language ([어휘] review pool), longest overdue first.
+    function srsDuePool() {
+      var byKey = {};
+      getPool("vocab", "all").forEach(function (it) { var k = srsKey(it.vi); if (k && !byKey[k]) byKey[k] = it; });
+      return srsState().due.map(function (e) {
+        var it = byKey[srsKey(e.vi)];
+        return { vi: e.vi, kr: (it && it.kr) || e.kr || "", meaning: (it && it.meaning) || "" };
+      });
+    }
+    function renderSrsStatus() {
+      var st = srsState();
+      reviewScopeEl.dataset.scopeCategory = "srs";
+      if (reviewSubscopeEl) { reviewSubscopeEl.style.display = "none"; reviewSubscopeEl.innerHTML = ""; }
+      reviewScopeEl.innerHTML = '<div class="srs-status">' +
+        '<div class="srs-row"><b>' + escapeHtml(TU("오늘 복습할 단어")) + ' ' + st.due.length + '</b>' +
+          (st.due.length ? ' <span class="srs-sub">(' + escapeHtml(TU("밀린 것부터")) + ')</span>' : '') + '</div>' +
+        '<div class="srs-row srs-sub">' + escapeHtml(TU("복습 대기")) + ' ' + st.waiting.length +
+          (st.waiting.length ? ' · ' + escapeHtml(TU("다음 예정일")) + ' ' + escapeHtml(st.waiting[0].next) : '') +
+          ' · ' + escapeHtml(TU("반복 완료")) + ' ' + st.finished + '</div>' +
+        (st.due.length ? '<button type="button" class="curr-link-btn srs-done-all">' + escapeHtml(TU("오늘 복습 완료")) + '</button>' : '') +
+        (st.total ? '' : '<div class="srs-row srs-sub">' + escapeHtml(TU("간격 복습 안내")) + '</div>') + '</div>';
+      var done = reviewScopeEl.querySelector(".srs-done-all");
+      if (done) done.addEventListener("click", function () {
+        srsState().due.forEach(function (e) { srsMarkReviewed(e.vi); });
+        selectCategory("srs", "all", srsDuePool());
+      });
+    }
+    // flashcards of [간격 복습]: seeing a card's answer counts as reviewing it
+    function srsCardSeen(item) {
+      if (studyState.tabKey !== "srs" || !item) return;
+      if (srsMarkReviewed(item.vi)) renderSrsStatus();
+    }
     window.__goToScopedVocabReview = function () {
       var key = (vocabFocus && vocabFocus.mode === "wt") ? "sentence" : "vocab";
       goToReview(key, vocabScopedPool());
@@ -10990,6 +11287,10 @@ function verifyDistribution(units, dist, pins) {
 
     function startMode() {
       clearAutoAdvanceTimer();
+      if (!modePool().length && studyState.tabKey === "srs") {
+        bodyEl.innerHTML = '<div class="study-empty">' + escapeHtml(TU("오늘 복습할 단어가 없어요.")) + '</div>';
+        return;
+      }
       if (!modePool().length) {
         // Material exists but none of it has a meaning in this language: only the TARGET_ONLY modes apply.
         var why = studyState.pool.length ? "선택한 언어의 뜻이 없는 자료예요. [어순 배열]과 [받아쓰기]로 복습할 수 있어요." : "이 탭에는 아직 복습할 자료가 없어요.";
@@ -11005,7 +11306,8 @@ function verifyDistribution(units, dist, pins) {
 
     /* ---------- flashcard ---------- */
     function startFlash() {
-      studyState.deck = shuffle(modePool());
+      // 간격 복습 keeps its order: the longest overdue word first
+      studyState.deck = studyState.tabKey === "srs" ? modePool().slice() : shuffle(modePool());
       studyState.idx = 0;
       studyState.flashDir = studyState.flashDir || "vi-to-target";
       renderFlash();
@@ -11013,6 +11315,7 @@ function verifyDistribution(units, dist, pins) {
     function revealFlash() {
       var item = studyState.current;
       if (!item) return;
+      srsCardSeen(item);
       var kr = document.getElementById("flash-kr");
       var hint = document.getElementById("flash-hint");
       if (kr) kr.style.display = "block";
@@ -11023,6 +11326,8 @@ function verifyDistribution(units, dist, pins) {
       });
     }
     function renderFlash() {
+      stopAllSpeech();
+      clearAutoAdvanceTimer();
       var item = studyState.deck[studyState.idx];
       studyState.current = item;
       var isRev = studyState.flashDir === "target-to-vi";
@@ -11054,6 +11359,7 @@ function verifyDistribution(units, dist, pins) {
         kr.style.display = showing ? "none" : "block";
         hint.textContent = showing ? (isRev ? TU("눌러서 베트남어 보기") : TU("눌러서 뜻 보기")) : TU("눌러서 가리기");
         if (!showing) {
+          srsCardSeen(item);
           if (isRev) {
             if (!isMuted("vi")) speak(item.vi);
           } else {
@@ -11111,6 +11417,7 @@ function verifyDistribution(units, dist, pins) {
       return item;
     }
     function nextMcq() {
+      stopAllSpeech();
       clearAutoAdvanceTimer();
       var pool = modePool();
       var item = pickRandomDistinctFromCurrent(pool);
@@ -11207,6 +11514,7 @@ function verifyDistribution(units, dist, pins) {
       nextLook();
     }
     function nextLook() {
+      stopAllSpeech();
       clearAutoAdvanceTimer();
       var pool = modePool();
       var item = pickRandomDistinctFromCurrent(pool);
@@ -11289,6 +11597,7 @@ function verifyDistribution(units, dist, pins) {
     /* ---------- word-order arrangement ---------- */
     function startOrder() { nextOrder(); }
     function nextOrder() {
+      stopAllSpeech();
       clearAutoAdvanceTimer();
       var candidates = modePool().filter(function (p) { return tokenize(p.vi).length >= 2; });
       var pool = candidates.length ? candidates : modePool();
@@ -11598,6 +11907,7 @@ function verifyDistribution(units, dist, pins) {
     /* ---------- typing / dictation ---------- */
     function startType() { nextType(); }
     function nextType() {
+      stopAllSpeech();
       clearAutoAdvanceTimer();
       var item = pickRandomDistinctFromCurrent(modePool());
       studyState.current = item;

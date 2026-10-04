@@ -341,8 +341,11 @@ function renderAdminHtml(regionId, regionName, currentUser = null, csrfToken = '
   const badge = regionId === 'jeonju' ? '전주' : (regionId === 'ulsan' ? '울산' : regionId);
   const title = `2026-2027 ${regionName} 관리자`;
   const nonceAttr = nonce ? ` nonce="${escapeHtml(nonce)}"` : '';
-  const boot = safeJson({ regionId, regionName, csrfToken: csrfToken || '', guide: loadTeachingGuide(regionId),
-    courseVi: loadJson('./course_vi.json')[regionId] || {}, liveI18n: loadJson('./course_live_i18n.json') });
+  // The teacher's guide (SECTION F) and the course translations go only to a signed-in account (any role).
+  const signedIn = !!currentUser;
+  const boot = safeJson({ regionId, regionName, csrfToken: csrfToken || '', role: signedIn ? currentUser.role : null,
+    guide: signedIn ? loadTeachingGuide(regionId) : null,
+    courseVi: signedIn ? (loadJson('./course_vi.json')[regionId] || {}) : {}, liveI18n: signedIn ? loadJson('./course_live_i18n.json') : [] });
 
   return `<!DOCTYPE html>
 <html lang="ko">

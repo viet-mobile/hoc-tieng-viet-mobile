@@ -2,7 +2,8 @@
 /**
  * Regional admin single-page client (runs in the browser; embedded into /admin by admin_ui.js).
  *
- * - Globals provided by admin_ui.js before this file: window.__ADMIN_BOOT ({regionId, regionName, csrfToken})
+ * - Globals provided by admin_ui.js before this file: window.__ADMIN_BOOT ({regionId, regionName, csrfToken, role, guide, ...};
+ *   guide and the course translations only when signed in)
  *   and calculateRegionalSchedule() (the SAME function the public site uses, from schedule_engine.js).
  * - No inline event handlers: everything is wired through delegated listeners (data-act / data-f),
  *   so the page can run under a nonce-only script CSP.
@@ -66,6 +67,9 @@
     '전주 베트남어 학습반': 'Lớp học tiếng Việt Jeonju', '울산 베트남어 학습반': 'Lớp học tiếng Việt Ulsan',
     '아이디': 'Tên đăng nhập', '비밀번호': 'Mật khẩu', '로그인': 'Đăng nhập',
     '로그인되었습니다.': 'Đã đăng nhập.', '로그인 실패': 'Đăng nhập thất bại', '서버 연결 실패': 'Không kết nối được máy chủ',
+    'SECTION F 읽기 전용': 'PHẦN F (chỉ đọc)', '이 계정은 SECTION F(교사용 지도서) 읽기 전용입니다.': 'Tài khoản này chỉ được đọc PHẦN F (Sách hướng dẫn giáo viên).',
+    '이 계정의 권한을 확인할 수 없습니다.': 'Không xác định được quyền của tài khoản này.',
+    '이 지역에는 교사용 지도서가 없습니다.': 'Khu vực này chưa có sách hướng dẫn giáo viên.',
     'SECTION A — 수업 기간': 'PHẦN A — Thời gian khóa học', 'SECTION B — 휴강 관리': 'PHẦN B — Quản lý ngày nghỉ học',
     'SECTION C — 원본 커리큘럼': 'PHẦN C — Chương trình gốc', 'SECTION D — 회차 배정': 'PHẦN D — Phân bổ buổi học',
     'SECTION E — 변경 이력 & 복구': 'PHẦN E — Lịch sử thay đổi & khôi phục', 'SECTION F — 교사용 지도서': 'PHẦN F — Sách hướng dẫn giáo viên',
@@ -311,8 +315,20 @@
       if (!r.ok) { renderLogin(); return; }
       state.user = r.data.user;
       if (r.data.csrfToken) boot.csrfToken = r.data.csrfToken;
-      $('user-info').textContent = state.user.username + ' 관리자님';
       $('logout-btn').style.display = 'inline-block';
+      if (isSectionFViewer()) {
+        // SECTION F only: the guide is in the page; the server refuses every /api/admin/* call for this role.
+        $('user-info').innerHTML = esc(state.user.username) + ' · <span>SECTION F 읽기 전용</span>';
+        if (!GUIDE) {
+          $('app-container').innerHTML = '<div class="card"><p class="help-text">이 지역에는 교사용 지도서가 없습니다.</p></div>';
+          return;
+        }
+        TABS = [['guide', 'SECTION F — 교사용 지도서']];
+        state.tab = 'guide';
+        renderApp();
+        return;
+      }
+      $('user-info').textContent = state.user.username + ' 관리자님';
       return loadData().then(renderApp);
     }).catch(renderLogin);
   }
@@ -353,8 +369,8 @@
     api('POST', '/api/auth/login', { username: u, password: p }).then(function (r) {
       if (r.ok) {
         if (r.data.csrfToken) boot.csrfToken = r.data.csrfToken;
-        toast('로그인되었습니다.');
-        init();
+        // Reload: the server embeds the teacher's guide only in a signed-in page.
+        location.reload();
       } else {
         toast(errText(r, '로그인 실패'), true);
       }
@@ -376,6 +392,7 @@
   ];
   var GUIDE = boot.guide || null;
   if (GUIDE) TABS.push(['guide', 'SECTION F — 교사용 지도서']);
+  function isSectionFViewer() { return !!(state.user && state.user.role === 'section_f_viewer'); }
 
   function renderApp() {
     var nav = TABS.map(function (t) {
@@ -961,6 +978,7 @@
       case 'logout': handleLogout(); break;
       case 'tab':
         if (!confirmDiscard()) break;
+        if (isSectionFViewer() && t.getAttribute('data-tab') !== 'guide') break;
         state.tab = t.getAttribute('data-tab');
         if (state.tab === 'curriculum') resetEdit();
         renderApp();

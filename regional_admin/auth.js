@@ -11,6 +11,8 @@
  *   Cf-Access-Authenticated-User-Email header is never trusted. Without CF_ACCESS_AUD and
  *   CF_ACCESS_TEAM_NAME the Access path is DISABLED (fail closed).
  * - Strict region isolation: Jeonju admin cannot mutate Ulsan; Ulsan cannot mutate Jeonju
+ * - Roles (admin_users.role): 'admin' = every section; 'section_f_viewer' = reads SECTION F (교사용 지도서) only.
+ *   Any other value is refused (fail closed).
  * - Brute-force protection keyed by cf-connecting-ip and by username (atomic counters, fail closed)
  */
 
@@ -126,6 +128,13 @@ function parseCookies(header) {
 }
 
 const SESSION_TTL_SECONDS = 8 * 3600;
+
+const ROLE_ADMIN = 'admin';
+const ROLE_SECTION_F_VIEWER = 'section_f_viewer';
+const ROLES = [ROLE_ADMIN, ROLE_SECTION_F_VIEWER];
+function isKnownRole(role) {
+  return ROLES.indexOf(role) >= 0;
+}
 
 function createSessionCookie(token, maxAgeSeconds = SESSION_TTL_SECONDS) {
   return `admin_session=${encodeURIComponent(token)}; Path=/; Max-Age=${maxAgeSeconds}; HttpOnly; Secure; SameSite=Strict`;
@@ -378,11 +387,14 @@ async function authenticateRequest(request, db, currentRegion, env = {}) {
     }
 
     const user = await db.prepare(
-      "SELECT id, username, email, allowed_region, is_active FROM admin_users WHERE lower(email) = ? AND is_active = 1"
+      "SELECT id, username, email, allowed_region, role, is_active FROM admin_users WHERE lower(email) = ? AND is_active = 1"
     ).bind(jwtResult.email).first();
 
     if (!user) {
       return { authorized: false, status: 403, error: 'Cloudflare Access identity is not registered as an admin.' };
+    }
+    if (!isKnownRole(user.role)) {
+      return { authorized: false, status: 403, error: 'Access Denied: unknown account role.' };
     }
     if (user.allowed_region !== '*' && user.allowed_region !== currentRegion) {
       return { authorized: false, status: 403, error: 'Access Denied: this account is not permitted for this region.' };
@@ -412,7 +424,7 @@ async function authenticateRequest(request, db, currentRegion, env = {}) {
 
   const sessionRow = await db.prepare(
     `SELECT s.token, s.csrf_token, s.expires_at, s.region_id,
-            u.id as user_id, u.username, u.email, u.allowed_region, u.is_active
+            u.id as user_id, u.username, u.email, u.allowed_region, u.role, u.is_active
      FROM admin_sessions s
      JOIN admin_users u ON s.user_id = u.id
      WHERE s.token = ? AND u.is_active = 1`
@@ -432,6 +444,9 @@ async function authenticateRequest(request, db, currentRegion, env = {}) {
   if (sessionRow.region_id !== currentRegion) {
     return { authorized: false, status: 403, error: 'Region Access Forbidden: this session belongs to another region.' };
   }
+  if (!isKnownRole(sessionRow.role)) {
+    return { authorized: false, status: 403, error: 'Access Denied: unknown account role.' };
+  }
   const userRegion = sessionRow.allowed_region;
   if (userRegion !== '*' && userRegion !== currentRegion) {
     return {
@@ -449,6 +464,7 @@ async function authenticateRequest(request, db, currentRegion, env = {}) {
       username: sessionRow.username,
       email: sessionRow.email,
       allowed_region: sessionRow.allowed_region,
+      role: sessionRow.role,
     },
     csrfToken: sessionRow.csrf_token,
     session: {
@@ -460,6 +476,10 @@ async function authenticateRequest(request, db, currentRegion, env = {}) {
 
 module.exports = {
   SESSION_TTL_SECONDS,
+  ROLE_ADMIN,
+  ROLE_SECTION_F_VIEWER,
+  ROLES,
+  isKnownRole,
   IP_FAIL_LIMIT,
   USER_FAIL_LIMIT,
   hashPassword,

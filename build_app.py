@@ -566,6 +566,29 @@ def public_teaching_guide(region):
     }
 
 
+def song_collection(path, expected_tracks):
+    """[노래] > [오리지널 송] / [어린이 노래]: the songs of jw_original_songs_ko_vi.json / jw_childrens_songs_ko_vi.json
+    (the source of truth, never edited here) in track order, with only what the page uses. The track numbers must be
+    exactly expected_tracks, ids unique and every Korean title present."""
+    with open(path, encoding="utf-8") as fh:
+        songs = json.load(fh)["songs"]
+    tracks = sorted(song["track"] for song in songs)
+    assert tracks == list(expected_tracks), (path, tracks[:3], tracks[-3:], len(tracks))
+    assert len({song["id"] for song in songs}) == len(songs), path
+    assert all((song.get("ko") or {}).get("title") for song in songs), path
+
+    from song_tab_links import SONG_LINKS_NOT_ON_JWORG
+
+    def lang(song, key):
+        d = song.get(key) or {}
+        lines = d.get("displayLines") or d.get("lines") or []
+        url = "" if (song["id"], key) in SONG_LINKS_NOT_ON_JWORG else (d.get("jwOrgUrl") or "")
+        return {"title": d.get("title") or "", "lines": [str(x) for x in lines], "url": url,
+                "available": d.get("available") is not False}
+    return [{"id": song["id"], "track": song["track"], "vi": lang(song, "vi"), "ko": lang(song, "ko")}
+            for song in sorted(songs, key=lambda x: x["track"])]
+
+
 def js_json(obj):
     return json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
@@ -960,7 +983,7 @@ def build_data_js(site):
     data_js = "".join(parts)
 
     if site == "general":
-        data_js += "const SONGS_DATA = [];\nconst SONG_MEANINGS = {};\nconst KID_SONGS = null;\nconst SONG_MEDIA = null;\nconst KID_SONG_TRACKS = null;\n"
+        data_js += "const SONGS_DATA = [];\nconst SONG_MEANINGS = {};\nconst KID_SONGS = null;\nconst SONG_MEDIA = null;\nconst KID_SONG_TRACKS = null;\nconst ORIGINAL_SONGS = null;\nconst CHILDREN_SONGS = null;\n"
     else:
         # jw, jeonju, and ulsan get the full, identical Kingdom Songs source (same file, same
         # content) -- regional profiles are JW's full data set plus their own event layer.
@@ -982,6 +1005,9 @@ def build_data_js(site):
                 out.extend(range(int(a), int(b or a) + 1))
             return out
         song_media = {kind: {lang: _numbers(spec) for lang, spec in langs.items()} for kind, langs in SONG_MEDIA.items()}
+        # [노래] > [오리지널 송] (117, OSG 1-117) and [어린이 노래] (36: the pk special song 0 and PKON 1-35).
+        data_js += "const ORIGINAL_SONGS = " + js_json(song_collection("jw_original_songs_ko_vi.json", range(1, 118))) + ";\n"
+        data_js += "const CHILDREN_SONGS = " + js_json(song_collection("jw_childrens_songs_ko_vi.json", range(0, 36))) + ";\n"
         data_js += "const SONG_MEDIA = " + json.dumps(song_media, separators=(",", ":")) + ";\n"
         data_js += "const KID_SONG_TRACKS = " + json.dumps({str(k): v for k, v in KID_SONG_TRACKS.items()}, separators=(",", ":")) + ";\n"
 

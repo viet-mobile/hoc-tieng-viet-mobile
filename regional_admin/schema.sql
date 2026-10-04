@@ -119,6 +119,9 @@ CREATE TABLE IF NOT EXISTS admin_users (
     password_hash TEXT NOT NULL,        -- pbkdf2:sha256:100000:<salt_hex>:<hash_hex>
     email TEXT,                         -- Cloudflare Access integration
     allowed_region TEXT NOT NULL,       -- 'jeonju', 'ulsan', or '*' (superadmin)
+    role TEXT NOT NULL DEFAULT 'admin' CHECK (role IN ('admin', 'section_f_viewer')),
+                                        -- admin: every section; section_f_viewer: reads SECTION F (교사용 지도서) only
+                                        -- (existing databases: migrations/0001_admin_role.sql)
     is_active INTEGER DEFAULT 1,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );

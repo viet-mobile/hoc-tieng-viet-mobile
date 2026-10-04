@@ -12,6 +12,9 @@
  * - CSRF: every state-changing request (login, logout, all /api/admin mutations) must be same-origin
  *   (Origin header) and, once authenticated, carry the per-session X-CSRF-Token.
  * - Brute force: limits keyed by cf-connecting-ip and by username; fails closed.
+ * - Roles: only 'admin' may use /api/admin/* (sections A-E, reads and writes). A 'section_f_viewer' gets the /admin
+ *   page with SECTION F (교사용 지도서, read-only data embedded in the page) and nothing else; SECTION F has no write
+ *   endpoint at all. The guide is embedded only for an authenticated account, never for an anonymous visitor.
  */
 
 const {
@@ -29,6 +32,8 @@ const {
   IP_FAIL_LIMIT,
   USER_FAIL_LIMIT,
   hashPassword,
+  ROLE_ADMIN,
+  isKnownRole,
 } = require('./auth');
 
 const db = require('./db');
@@ -149,7 +154,7 @@ async function handleLogin(request, env, url) {
 
   try {
     const user = await env.DB.prepare(
-      "SELECT id, username, password_hash, allowed_region, is_active FROM admin_users WHERE username = ? AND is_active = 1"
+      "SELECT id, username, password_hash, allowed_region, role, is_active FROM admin_users WHERE username = ? AND is_active = 1"
     ).bind(username).first();
 
     const valid = await verifyPassword(password, user ? user.password_hash : await getDummyHash());
@@ -162,6 +167,9 @@ async function handleLogin(request, env, url) {
     // Strict region check: a Jeonju admin cannot log into Ulsan and vice versa.
     if (user.allowed_region !== '*' && user.allowed_region !== REGION_ID) {
       return jsonResponse({ error: `이 계정은 '${REGION_NAME}' 관리 권한이 없습니다.` }, 403);
+    }
+    if (!isKnownRole(user.role)) {
+      return jsonResponse({ error: '이 계정의 권한을 확인할 수 없습니다.' }, 403);
     }
 
     await clearFailedLogins(env.DB, userKey);
@@ -180,7 +188,7 @@ async function handleLogin(request, env, url) {
     ]);
 
     return jsonResponse(
-      { success: true, user: { id: user.id, username: user.username, allowed_region: user.allowed_region }, csrfToken },
+      { success: true, user: { id: user.id, username: user.username, allowed_region: user.allowed_region, role: user.role }, csrfToken },
       200,
       { 'Set-Cookie': createSessionCookie(sessionToken) }
     );
@@ -268,6 +276,10 @@ async function handleRequest(request, env) {
       return jsonResponse({ error: authRes.error }, authRes.status);
     }
     const user = authRes.user;
+    // Sections A-E (every /api/admin/* route, reads and writes) are for full admins only.
+    if (user.role !== ROLE_ADMIN) {
+      return jsonResponse({ error: '이 계정은 SECTION F(교사용 지도서) 읽기 전용입니다.' }, 403);
+    }
 
     if (method !== 'GET' && method !== 'HEAD') {
       if (!isSameOrigin(request, url)) {

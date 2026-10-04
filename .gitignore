@@ -48,3 +48,6 @@ hanja_raw.json
 hanja_words.txt
 hanja_endless.txt
 parse_stage1.json
+
+# Admin account SQL made by scripts/create_admin_user.py (holds a password hash; delete after applying)
+sf.sql
