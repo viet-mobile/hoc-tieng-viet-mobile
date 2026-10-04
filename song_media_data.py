@@ -5,6 +5,8 @@ SONG_MEDIA[kind][lang] = song numbers (ranges "a-b") of 「기쁨으로 노래�
   kidVideo  children's song video   (finder lank pub-pksjj_<n>_VIDEO)
   kidAudio  children's song audio   (pub-pksjj_<n>_AUDIO)
   choir     choir recording         (pub-sjjc_<n>_AUDIO)
+  full      the song's own video    (pub-sjjm_<n>_VIDEO, judged by the jw.org finder link: 164 opens in 11 languages, not yet in vi;
+            zh_cn 162-163 go to the jw.org home page. Regenerate/compare: scripts/song_full_media.py)
 KID_SONG_TRACKS[kid song number in kid_songs_data.json] = [track of 「여호와의 친구가 되세요」 on jw.org (pub-pkon_<track>_VIDEO),
   the languages it exists in]; the kid song list is not in jw.org's track order, so tracks were matched by title.
 Only media listed here are linked, so the page never links to a page that does not exist.
@@ -52,6 +54,20 @@ SONG_MEDIA = {
         "cs": "1-4,6-7,18-20,22-23,25,33,38,40,48,51,54,56,74,76,81,108,117,119,122,124,133,137,140,145,151,153-163",
         "hu": "2-4,8,14,17,19,25,27-28,30,46,54,74,84,91-92,107,114,116,121,124,133,137,141,152-163",
         "id": "1-3,5-8,13-15,17-20,24,26,28-30,33,38-41,44-46,48,51-52,54-55,57,60,63-64,68,70,74,76,78,81-85,91-92,95,97-98,105,107-110,112,120-121,124,127-129,133-135,137,140,144-145,147,150-163",
+    },
+    "full": {
+        "vi": "1-163",
+        "ko": "1-164",
+        "en": "1-164",
+        "ja": "1-164",
+        "zh": "1-164",
+        "zh_cn": "1-161,164",
+        "de": "1-164",
+        "fr": "1-164",
+        "pl": "1-164",
+        "cs": "1-164",
+        "hu": "1-164",
+        "id": "1-164",
     },
 }
 

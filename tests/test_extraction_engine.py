@@ -2,7 +2,7 @@
 """
 Comprehensive automated test suite for the JW Learning Extraction Engine v1.
 Validates:
-1. Baseline Safety (SONG_MEANINGS = {}, 163 songs, WT 1-18 only)
+1. Baseline Safety (SONG_MEANINGS = {}, 164 songs, WT 1-18 only)
 2. Normalization & Segmentation Guardrails
 3. Manifest & Idempotency (0 spurious changes on re-run)
 4. Derived Data Integrity (vocab frequencies, grammar examples, learning sentences)
@@ -33,7 +33,7 @@ class TestJWExtractionEngine(unittest.TestCase):
 
     def test_authoritative_baseline_safety(self):
         """Verifies that authoritative baseline constraints are strictly preserved:
-        - SONGS_DATA = 163 songs
+        - SONGS_DATA = 164 songs (1-163 + 164)
         - SONG_MEANINGS = {} (0 restored/invented annotations)
         - WATCHTOWER_FULL contains 18 sheets (1-18 only, 19-24 deferred)
         """
@@ -48,7 +48,7 @@ class TestJWExtractionEngine(unittest.TestCase):
         match = re.search(r'const\s+SONGS_DATA\s*=\s*(\[.*\]);', songs_js, re.DOTALL)
         self.assertIsNotNone(match, "SONGS_DATA must be defined")
         songs = json.loads(match.group(1))
-        self.assertEqual(len(songs), 163, "SONGS_DATA must contain exactly 163 songs")
+        self.assertEqual(len(songs), 164, "SONGS_DATA must contain exactly 164 songs")
 
         # 3. Check watchtower_study_data.json
         wt_path = os.path.join(BASE_DIR, "watchtower_study_data.json")
@@ -94,13 +94,18 @@ class TestJWExtractionEngine(unittest.TestCase):
         extracted_docs = []
         for a in adapters:
             extracted_docs.extend(a.extract_documents())
-        self.assertEqual(len(extracted_docs), 291, "Real extraction must yield 291 documents")
+        self.assertEqual(len(extracted_docs), 292, "Real extraction must yield 292 documents")
 
         new_docs, changed_docs, unchanged_docs, removed_ids = mgr.diff_documents(extracted_docs)
-        self.assertEqual(len(new_docs), 0, "No new documents should be detected on unchanged corpus")
+        # TRANSITION STATE (intended): kingdom song 164 was added to SONGS_DATA after the manifest snapshot of 291 documents.
+        # The manifest and derived_jw_data.json are deliberately NOT regenerated for it: a rebuild with the current engine
+        # does not even reproduce the committed files from the 163-song corpus (vocab occurrences 116217 -> 126607, other word
+        # candidates), so regenerating would ship unrelated changes. Until a full corpus refresh is decided, song_164 must be
+        # the one and only new document: any other new, changed or removed document still fails below.
+        self.assertEqual([d.id for d in new_docs], ["song_164"], "Only song 164 may be new relative to the manifest")
         self.assertEqual(len(changed_docs), 0, "No changed documents should be detected on unchanged corpus")
         self.assertEqual(len(removed_ids), 0, "No removed documents should be detected on unchanged corpus")
-        self.assertEqual(len(unchanged_docs), 291, "All 291 real documents must match manifest hashes")
+        self.assertEqual(len(unchanged_docs), 291, "All 291 manifest documents must still match their hashes")
 
     def test_derived_jw_data_structure(self):
         """Verifies derived_jw_data.json integrity and constraints."""

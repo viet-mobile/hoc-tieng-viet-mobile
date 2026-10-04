@@ -14,7 +14,7 @@ It builds every site and runs, one at a time and in this order:
 1. build all sites (`build_app.py --site all`, `assemble_app.py --site all`)
 2. TTS: `tests/test_tts_behavior.js`
 3. spaced repetition: `tests/test_srs.js`
-4. song tabs: `tests/test_song_tabs.js` (kingdom 1–163, original 1–117, children 0–35, ids unique, nothing missing)
+4. song tabs: `tests/test_song_tabs.js` (kingdom 1–164, original 1–117, children 0–35, ids unique, nothing missing)
 5. song links on jw.org: `tests/check_song_links.py` (needs the network)
 6. regional admin: `tests/test_regional_admin.js`
 7. regional E2E: `tests/test_regional_e2e.js`
@@ -154,8 +154,26 @@ Promise.all([
 ## 3. Song data (before deploying)
 
 - [ ] `python tests/check_song_links.py` prints `OK: song_tab_links.py matches jw.org`
-- [ ] `tests/test_song_tabs.js` passes: kingdom 163 (1–163), original songs 117 (1–117), children's songs 36
+- [ ] `tests/test_song_tabs.js` passes: kingdom 164 (1–164), original songs 117 (1–117), children's songs 36
       (0–35, including 0 and 35), no duplicate or missing number
+
+### 왕국 노래 164 and the 전체 듣기 links — known state (2026-10-04)
+
+- Source: `songs_data.js` (164 songs). `tests/test_kingdom_song_164.py` checks 1–163 are unchanged (sha256), 164 against
+  `tests/fixtures/kingdom_song_164_update.json`, Japanese 164 empty (no translation, no Korean fallback in the song view
+  or the picker; the app's rule: missing learning translations stay empty in non-Korean languages).
+- `songs_data.json` (163 songs, untracked Excel conversion) is not read by any build or runtime code; it may stay at 163.
+- Full-listen links: `https://www.jw.org/finder?srcid=jwlshare&wtlocale=<code>&lank=pub-sjjm_<n>_VIDEO` (codes from
+  `songJwLocale` in `app_logic.js`). Buttons come from `SONG_MEDIA["full"]` in `song_media_data.py`, judged by the finder
+  (home-page redirect or 404 = hidden). Current gaps: Vietnamese 164 (not published yet), Simplified Chinese 162–163
+  (finder goes to the home page although the media API lists a file). Japanese 164 has a video link, no lyrics.
+  - check: `python tests/check_song_links.py --kingdom 164` (or `--kingdom all`); exit 2 = network problem, not "missing"
+  - refresh: `python scripts/song_full_media.py --write`, then `--check`; then update the expected gaps in
+    `tests/test_song_tabs.js` and `tests/test_kingdom_song_164.py` if jw.org changed.
+- No jw.org document link (docid) for 164: the docid rule is only verified for 1–163 and is not guessed.
+- Extraction: `jw_extraction/data/extraction_manifest.json` still records 291 documents; `song_164` is the one expected
+  new document (`tests/test_extraction_engine.py`, transition state). Not regenerated on purpose: a rebuild does not
+  reproduce the committed derived data even from 163 songs, so it would ship unrelated changes.
 
 ## 4. TTS / spaced repetition
 

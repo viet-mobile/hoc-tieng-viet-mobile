@@ -9431,6 +9431,14 @@ function verifyDistribution(units, dist, pins) {
     return str.replace(/예수님/g, "예수").replace(/주님/g, "주");
   }
 
+  // The UI language's own text of a song, else Korean (what this list has always done) -- except for a song the UI language has
+  // no lyrics for at all (164 in Japanese: jw.org has the video, the workbook no text). That one shows empty target rows and
+  // titles, like T(): "missing learning translations stay empty in every non-Korean language", never Korean under another
+  // language's name. Returns the language key to fall back to.
+  function songKoFallback(song) {
+    return song.lines.some(function (l) { return (l[currentLang] || "").trim(); }) ? "ko" : currentLang;
+  }
+
   function isSongSectionMarker(str) {
     if (!str) return false;
     var s = str.trim();
@@ -9462,8 +9470,9 @@ function verifyDistribution(units, dist, pins) {
     return links ? '<div class="kid-song-links song-jw-links">' + links + '</div>' : "";
   }
   function songJwLinksHtml(number) {
-    if (!(number >= 1 && number <= 163)) return "";
-    return jwFinderLinksHtml((number <= 151 ? 1102016800 : 1102022800) + number) + songMediaLinksHtml(number);
+    var full = songFullListenHtml(number);
+    if (!(number >= 1 && number <= 163)) return full;
+    return full + jwFinderLinksHtml((number <= 151 ? 1102016800 : 1102022800) + number) + songMediaLinksHtml(number);
   }
   // jw.org media page by "lank" (pub-<code>_<track>_<VIDEO|AUDIO>) in one UI language.
   function jwLankUrl(lank, lang) {
@@ -9483,6 +9492,18 @@ function verifyDistribution(units, dist, pins) {
         zh: "合唱音頻", zh_cn: "合唱音频", de: "Chor-Audio", fr: "Audio de la chorale", pl: "Nagranie chóru",
         cs: "Nahrávka sboru", hu: "Kórusfelvétel", id: "Audio paduan suara" }]
     ];
+  }
+  // 전체 듣기 of a 왕국 노래: its jw.org video (pub-sjjm_<n>_VIDEO) in Vietnamese and in the current UI language (one button
+  // when that is Vietnamese). Only the languages jw.org has the song in (SONG_MEDIA.full, scripts/song_full_media.py) get a
+  // button; none at all -> no 전체 듣기 area.
+  function songFullListenHtml(number) {
+    var have = (typeof SONG_MEDIA !== "undefined" && SONG_MEDIA && SONG_MEDIA.full) || {};
+    var langs = (currentLang === "vi" ? ["vi"] : ["vi", currentLang]).filter(function (l) { return (have[l] || []).indexOf(number) >= 0; });
+    if (!langs.length) return "";
+    return '<div class="song-full-links"><span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + langs.map(function (l) {
+      return '<a class="read-all-btn song-full-link" href="' + escapeAttr(jwLankUrl("pub-sjjm_" + number + "_VIDEO", l)) +
+        '" target="_blank" rel="noopener noreferrer">▶ ' + escapeHtml(songJwLocale(l)[1]) + '</a>';
+    }).join("") + '</div>';
   }
   // Children's song video/audio and choir audio of a song: only the ones that exist on jw.org in that language
   // (SONG_MEDIA, song_media_data.py), for Vietnamese and the current UI language.
@@ -9713,9 +9734,10 @@ function verifyDistribution(units, dist, pins) {
     var meaningsMap = (typeof SONG_MEANINGS !== "undefined" && SONG_MEANINGS[sNum]) || {};
 
     var viTitle = sel.title.vi || "";
-    var targetTitle = songSanitize(sel.title[currentLang] || sel.title.ko || "");
+    var koFallback = songKoFallback(sel);
+    var targetTitle = songSanitize(sel.title[currentLang] || sel.title[koFallback] || "");
     var viScripture = (sel.scripture && sel.scripture.vi) || "";
-    var targetScripture = songSanitize((sel.scripture && (sel.scripture[currentLang] || sel.scripture.ko)) || "");
+    var targetScripture = songSanitize((sel.scripture && (sel.scripture[currentLang] || sel.scripture[koFallback])) || "");
 
     // Build lyric units and readAll lines
     var songLines = [];
@@ -9728,7 +9750,7 @@ function verifyDistribution(units, dist, pins) {
     sel.lines.forEach(function (l, idx) {
       var vi = (l.vi || "").trim();
       if (!vi) return;
-      var target = songSanitize((l[currentLang] || l.ko || "").trim());
+      var target = songSanitize((l[currentLang] || l[koFallback] || "").trim());
 
       // Section marker (Chorus, Ending, Bridge, Pre-chorus) -- still shown as a marker (not a
       // regular lyric line), but a real, existing SONG_MEANINGS entry attached to this index
@@ -9774,7 +9796,7 @@ function verifyDistribution(units, dist, pins) {
 
     // Reference (if present at the end of the song)
     var viRef = (sel.reference && sel.reference.vi) ? sel.reference.vi.trim() : "";
-    var targetRef = (sel.reference && (sel.reference[currentLang] || sel.reference.ko)) ? songSanitize(sel.reference[currentLang] || sel.reference.ko).trim() : "";
+    var targetRef = (sel.reference && (sel.reference[currentLang] || sel.reference[koFallback])) ? songSanitize(sel.reference[currentLang] || sel.reference[koFallback]).trim() : "";
     if (viRef || targetRef) {
       lyricsHtml += '<div class="song-reference-card">' +
         (viRef ? '<div class="song-reference-vi vn">' + escapeHtml(viRef) + '</div>' : '') +
@@ -9885,7 +9907,7 @@ function verifyDistribution(units, dist, pins) {
     html += '<div class="song-picker-grid" id="song-picker-grid" style="' + (songPickerViewMode === "grid" ? "" : "display:none;") + '">';
     songs.forEach(function (s) {
       var isActive = s.number === sel.number;
-      var tTitle = songSanitize(s.title[currentLang] || s.title.ko || "");
+      var tTitle = songSanitize(s.title[currentLang] || s.title[songKoFallback(s)] || "");
       var vTitle = s.title.vi || "";
       var searchTerms = (s.number + " " + vTitle + " " + tTitle + " " + (s.title.ko || "")).toLowerCase();
       html += '<button type="button" class="song-grid-chip" data-song-num="' + s.number + '" data-active="' + (isActive ? "true" : "false") + '" data-search="' + escapeAttr(searchTerms) + '" title="' + s.number + '. ' + escapeAttr(tTitle) + '">' +
@@ -9898,7 +9920,7 @@ function verifyDistribution(units, dist, pins) {
     html += '<div class="song-picker-list" id="song-picker-list" style="' + (songPickerViewMode === "list" ? "" : "display:none;") + '">';
     songs.forEach(function (s) {
       var isActive = s.number === sel.number;
-      var tTitle = songSanitize(s.title[currentLang] || s.title.ko || "");
+      var tTitle = songSanitize(s.title[currentLang] || s.title[songKoFallback(s)] || "");
       var vTitle = s.title.vi || "";
       var searchTerms = (s.number + " " + vTitle + " " + tTitle + " " + (s.title.ko || "")).toLowerCase();
       html += '<button type="button" class="song-list-row" data-song-num="' + s.number + '" data-active="' + (isActive ? "true" : "false") + '" data-search="' + escapeAttr(searchTerms) + '">' +
