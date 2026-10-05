@@ -5,6 +5,7 @@
 //     a broken store reads as empty; no other localStorage key is touched;
 //   - the [과정] homework reviews each day's vocabulary on the next study day, one week later (same weekday) and four
 //     weeks later (same weekday); no errors.
+const PLATFORM = require('./helpers/platform');
 const {spawn} = require('child_process');
 const path = require('path');
 const {CDPClient} = require('./test_browser_runtime');
@@ -28,9 +29,9 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
 const eq = (a, b, msg) => ok(JSON.stringify(a) === JSON.stringify(b), msg + ': ' + JSON.stringify(a) + ' != ' + JSON.stringify(b));
 
 (async () => {
-  const server = spawn('python', ['-m', 'http.server', String(PORT), '--directory', path.join(ROOT, 'dist')], {stdio: 'ignore'});
-  const chrome = spawn('C:/Program Files/Google/Chrome/Application/chrome.exe', ['--headless=new', '--remote-debugging-port=' + (PORT + 1000),
-    '--no-first-run', '--user-data-dir=' + path.resolve(process.env.TEMP || '.', 'srs-' + process.pid)], {stdio: 'ignore'});
+  const server = spawn(PLATFORM.PYTHON, ['-m', 'http.server', String(PORT), '--directory', path.join(ROOT, 'dist')], {stdio: 'ignore'});
+  const chrome = spawn(PLATFORM.CHROME, ['--headless=new', '--remote-debugging-port=' + (PORT + 1000),
+    '--no-first-run', '--user-data-dir=' + path.resolve(PLATFORM.TMP, 'srs-' + process.pid)], {stdio: 'ignore'});
   try {
     let targets;
     for (let i = 0; i < 40 && !targets; i++) { try { targets = await (await fetch(`http://127.0.0.1:${PORT + 1000}/json/list`)).json(); } catch { await sleep(250); } }

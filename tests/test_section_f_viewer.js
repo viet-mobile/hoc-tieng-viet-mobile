@@ -11,6 +11,7 @@
  *    Vietnamese; an admin still sees SECTIONS A-F; no console errors.
  * Nothing here touches a production D1. Test passwords only; the real account's password is never in the repo.
  */
+const PLATFORM = require('./helpers/platform');
 const { spawn, spawnSync } = require('child_process');
 const http = require('http');
 const fs = require('fs');
@@ -23,7 +24,7 @@ const { makeRegionWorker, snapshot, USERS, REPO_ROOT } = require('./helpers/regi
 const VIEWER = { username: 'sectionf.viewer-test', password: 'Viewer-Test-Pass-1!' };
 const PORT = 8112;
 const CDP_PORT = 9335;
-const CHROME_PATH = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+const CHROME_PATH = PLATFORM.CHROME;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 let count = 0;
@@ -200,7 +201,7 @@ const ROUTES = [
   });
 
   await t('create_admin_user.py --role section_f_viewer: working PBKDF2 hash, no password in the SQL; admin SQL unchanged', async () => {
-    const run = (args, pw) => spawnSync('python', [path.join('scripts', 'create_admin_user.py'), ...args, '--password-env', 'SF_TEST_PW'],
+    const run = (args, pw) => spawnSync(PLATFORM.PYTHON, [path.join('scripts', 'create_admin_user.py'), ...args, '--password-env', 'SF_TEST_PW'],
       { cwd: REPO_ROOT, encoding: 'utf8', env: Object.assign({}, process.env, { SF_TEST_PW: pw }) });
     const r = run(['--username', 'sectionf.assistant', '--region', 'jeonju', '--role', 'section_f_viewer'], VIEWER.password);
     assert.strictEqual(r.status, 0, r.stderr);
@@ -249,7 +250,7 @@ const ROUTES = [
     });
     await new Promise(r => server.listen(PORT, '127.0.0.1', r));
     const chrome = spawn(CHROME_PATH, ['--headless=new', `--remote-debugging-port=${CDP_PORT}`, '--remote-allow-origins=*', '--disable-gpu', '--no-first-run',
-      '--host-resolver-rules=MAP jeonju.test 127.0.0.1', '--user-data-dir=' + path.join(process.env.TEMP || '.', 'section_f_profile_' + process.pid)], { stdio: 'ignore' });
+      '--host-resolver-rules=MAP jeonju.test 127.0.0.1', '--user-data-dir=' + path.join(PLATFORM.TMP, 'section_f_profile_' + process.pid)], { stdio: 'ignore' });
     const getJson = url => new Promise((res, rej) => http.get(url, r => { let d = ''; r.on('data', c => d += c); r.on('end', () => { try { res(JSON.parse(d)); } catch (e) { rej(e); } }); }).on('error', rej));
     const errors = [];
     let ws;

@@ -11,6 +11,7 @@
 //   - no console errors or exceptions.
 // The Apple engine keeps `speaking` true for a while after the end, sends onend late and drops a speak() issued just
 // after cancel() -- the behaviours behind the earlier "전체 듣기 stops after the first sentence" reports.
+const PLATFORM = require('./helpers/platform');
 const {spawn} = require('child_process');
 const path = require('path');
 const {CDPClient} = require('./test_browser_runtime');
@@ -58,9 +59,9 @@ let checks = 0;
 const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
 
 (async () => {
-  const server = spawn('python', ['-m', 'http.server', String(PORT), '--directory', path.join(ROOT, 'dist')], {stdio: 'ignore'});
-  const chrome = spawn('C:/Program Files/Google/Chrome/Application/chrome.exe', ['--headless=new', '--remote-debugging-port=' + (PORT + 1000),
-    '--no-first-run', '--user-data-dir=' + path.resolve(process.env.TEMP || '.', 'tts-beh-' + process.pid)], {stdio: 'ignore'});
+  const server = spawn(PLATFORM.PYTHON, ['-m', 'http.server', String(PORT), '--directory', path.join(ROOT, 'dist')], {stdio: 'ignore'});
+  const chrome = spawn(PLATFORM.CHROME, ['--headless=new', '--remote-debugging-port=' + (PORT + 1000),
+    '--no-first-run', '--user-data-dir=' + path.resolve(PLATFORM.TMP, 'tts-beh-' + process.pid)], {stdio: 'ignore'});
   try {
     let targets;
     for (let i = 0; i < 40 && !targets; i++) { try { targets = await (await fetch(`http://127.0.0.1:${PORT + 1000}/json/list`)).json(); } catch { await sleep(250); } }
@@ -89,6 +90,13 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
       await E("sessionStorage.removeItem('__ttsinit')", false);
       await sleep(900);
     };
+    // the learner's tap: a real (trusted) mouse press in an empty corner. It arms the page's speech session on Apple WebKit;
+    // CDP's userGesture evaluation alone is only a user activation while its synchronous part runs.
+    const tap = async () => {
+      await cdp.send('Input.dispatchMouseEvent', {type: 'mousePressed', x: 2, y: 2, button: 'left', clickCount: 1});
+      await cdp.send('Input.dispatchMouseEvent', {type: 'mouseReleased', x: 2, y: 2, button: 'left', clickCount: 1});
+      await sleep(100);
+    };
     const starts = log => (log || []).filter(x => x.ev === 'start');
 
     for (const prof of PROFILES) {
@@ -98,6 +106,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
       await load(prof, {'vn-app-last-place-v1': JSON.stringify({tab: 'review', subtabs: {}, scrollY: 0})});
       const pre = await E('window.__tts.filter(x=>x.ev==="speak").length', false);
       if (prof.apple) ok(pre === 0, `${n}: spoke ${pre} times before the first tap`);
+      await tap();
 
       // ---- first tap, rapid taps ----
       const r1 = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));
@@ -153,9 +162,14 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         const playingAtNext=window.speechSynthesis.speaking;
         const nextAt=Date.now(); document.getElementById('flash-next').click(); await sleep(2500);
         const log=window.__tts.slice();
-        return {playingAtNext, nextAt, log, cancelled: log.some(x=>x.ev==='cancel'&&x.t>=nextAt-5),
-          oldContinued: log.some(x=>x.ev==='end'&&x.t>nextAt+60&&log.find(y=>y.ev==='start'&&y.t<nextAt&&y.text===x.text))};})()`)) || {};
-      ok(r3 && !r3.err && r3.cancelled && !r3.oldContinued, `${n}: flashcard next stops the previous card ${JSON.stringify(r3 && (r3.err || {cancelled: r3.cancelled, cont: r3.oldContinued}))}`);
+        const spokenBefore=new Set(log.filter(x=>x.ev==='speak'&&x.t<nextAt).map(x=>x.text));
+        const playingBefore=log.some(x=>x.ev==='start'&&x.t<nextAt&&!log.some(y=>y.ev==='end'&&y.text===x.text&&y.t<nextAt));
+        return {playingAtNext, nextAt, log, playingBefore, cancelled: log.some(x=>x.ev==='cancel'&&x.t>=nextAt-5),
+          oldContinued: log.some(x=>x.ev==='end'&&x.t>nextAt+60&&log.find(y=>y.ev==='start'&&y.t<nextAt&&y.text===x.text)),
+          oldStartedLater: log.some(x=>x.ev==='start'&&x.t>nextAt+5&&spokenBefore.has(x.text))};})()`)) || {};
+      // the previous card's audio stops: it is cancelled when it was playing, and it never goes on or starts afterwards
+      ok(r3 && !r3.err && (r3.cancelled || !r3.playingBefore) && !r3.oldContinued && !r3.oldStartedLater,
+        `${n}: flashcard next stops the previous card ${JSON.stringify(r3 && (r3.err || {cancelled: r3.cancelled, playing: r3.playingBefore, cont: r3.oldContinued, later: r3.oldStartedLater}))}`);
 
       // ---- song lines: Vietnamese vi-VN, Korean ko-KR under an English UI ----
       const r4 = (await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));
@@ -172,6 +186,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
 
       // ---- 반복 2: another phrase between repetitions does not bring the old one back; pagehide stops ----
       await load(prof, {'vn-app-vi-repeat': '2'});
+      await tap();
       const r5 = (await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));
         window.setLang('ko');await sleep(200);
         document.querySelector('.tab-btn[data-tab="sentence"]').click();await sleep(300);

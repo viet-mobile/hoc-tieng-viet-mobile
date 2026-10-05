@@ -132,6 +132,14 @@
   var LANG_CHANGE_LISTENERS = [];
   function onLangChange(fn) { LANG_CHANGE_LISTENERS.push(fn); }
   window.setLang = setLang; // hook used by tests/test_browser_runtime.js
+  document.addEventListener("click", function (e) {
+    var row = e.target;
+    if (!row || !row.classList || !row.classList.contains("has-jw-badges")) return;
+    var btn = row.querySelector(".group-head, .song-acc-head");
+    if (btn) btn.click();
+  });
+  window.isAllowedJwOrgShareUrl = function (url) { return isAllowedJwOrgShareUrl(url); }; // hooks used by tests/test_jw_org_badges.js
+  window.jwOrgBadgeHtml = function (url, opts) { return jwOrgBadgeHtml(url, opts); };
   // GENERAL PDF learning material: the example character "Se-ho / 세호" is presented as "Min-su / 민수".
   (function renameGeneralPdfCharacters() {
     if (typeof GENERAL_PDF === "undefined" || !GENERAL_PDF) return;
@@ -227,7 +235,7 @@
     "오늘 복습 완료": {"vi": "Đã ôn xong hôm nay", "cs": "Dnešní opakování hotovo", "zh_cn": "今天的复习完成", "zh": "今天的複習完成", "en": "Mark today’s review done", "fr": "Révision du jour terminée", "de": "Heutige Wiederholung erledigt", "hu": "A mai ismétlés kész", "id": "Ulangan hari ini selesai", "ja": "今日の復習を完了", "pl": "Dzisiejsza powtórka zakończona"},
     "간격 복습 안내": {"vi": "Mở phần từ vựng hôm nay từ [Khóa học] (nút Đi đến), học xong thì bấm “Thêm vào ôn cách quãng”. Các từ đó sẽ được ôn lại vào ngày hôm sau, sau 1 tuần và sau 4 tuần.", "cs": "Otevřete dnešní slovíčka z [Kurz] (tlačítko Přejít) a po naučení stiskněte „Přidat do rozloženého opakování“. Slova se vrátí další den, po 1 týdnu a po 4 týdnech.", "zh_cn": "从[课程]的快捷按钮打开今天的单词，学完后点“加入间隔复习”。这些单词会在第二天、1周后、4周后再次出现。", "zh": "從[課程]的快速按鈕打開今天的單字，學完後點「加入間隔複習」。這些單字會在第二天、1週後、4週後再次出現。", "en": "Open today’s words from [Course] (the Go button) and, once learned, tap “Add to spaced review”. They come back the next day, after 1 week and after 4 weeks.", "fr": "Ouvrez les mots du jour depuis [Cours] (bouton Aller) puis, une fois appris, touchez « Ajouter à la révision espacée ». Ils reviennent le lendemain, après 1 semaine et après 4 semaines.", "de": "Öffne die Wörter des Tages über [Kurs] (Schaltfläche „Gehe zu“) und tippe nach dem Lernen auf „Zur verteilten Wiederholung hinzufügen“. Sie kommen am nächsten Tag, nach 1 Woche und nach 4 Wochen wieder.", "hu": "Nyisd meg a mai szavakat a [Kurzus] Ugrás gombjával, és a tanulás után koppints a „Hozzáadás a térközös ismétléshez” gombra. Másnap, 1 hét és 4 hét múlva újra előkerülnek.", "id": "Buka kata hari ini dari [Kursus] (tombol Buka), lalu setelah dipelajari ketuk “Tambahkan ke ulangan berjarak”. Kata-kata itu muncul lagi besok, setelah 1 minggu, dan setelah 4 minggu.", "ja": "［コース］のショートカットから今日の単語を開き、学んだら「間隔復習に追加」を押してください。翌日、1週間後、4週間後にもう一度出てきます。", "ko": "[과정]의 바로가기로 오늘의 어휘를 열고 학습을 마친 뒤 「간격 복습에 추가」를 누르세요. 그 단어들은 다음날, 1주 뒤, 4주 뒤에 다시 복습할 차례가 됩니다.", "pl": "Otwórz dzisiejsze słowa z [Kurs] (przycisk Przejdź), a po nauce stuknij „Dodaj do powtórek rozłożonych”. Wrócą następnego dnia, po tygodniu i po 4 tygodniach."},
     "오늘 복습할 단어가 없어요.": {"vi": "Hôm nay không có từ cần ôn.", "cs": "Dnes nejsou žádná slova k opakování.", "zh_cn": "今天没有要复习的单词。", "zh": "今天沒有要複習的單字。", "en": "No words are due today.", "fr": "Aucun mot à revoir aujourd’hui.", "de": "Heute sind keine Wörter fällig.", "hu": "Ma nincs esedékes szó.", "id": "Tidak ada kata yang perlu diulang hari ini.", "ja": "今日復習する単語はありません。", "pl": "Dziś nie ma słów do powtórki."},
-    "오리지널 송": {"vi": "Bài hát gốc", "cs": "Původní písně", "zh_cn": "原创歌曲", "zh": "原創歌曲", "en": "Original Songs", "fr": "Chants originaux", "de": "Originallieder", "hu": "Eredeti dalok", "id": "Lagu Orisinal", "ja": "オリジナルソング", "pl": "Piosenki oryginalne"},
+    "오리지널 송": {"vi": "Bài hát đặc sắc", "cs": "Písně z JW Broadcasting®", "zh_cn": "原创歌曲", "zh": "原創歌曲", "en": "Original Songs", "fr": "Chansons", "de": "Besondere Lieder", "hu": "Dalok", "id": "Lagu-Lagu", "ja": "オリジナルソング", "pl": "Piosenki"},
     "어린이 노래": {"vi": "Bài hát thiếu nhi", "cs": "Písně pro děti", "zh_cn": "儿童歌曲", "zh": "兒童歌曲", "en": "Children’s Songs", "fr": "Chants pour enfants", "de": "Kinderlieder", "hu": "Gyermekdalok", "id": "Lagu Anak", "ja": "子ども向けの歌", "pl": "Piosenki dla dzieci"},
     "베트남어 미제공": {"vi": "Chưa có tiếng Việt", "cs": "Není ve vietnamštině", "zh_cn": "无越南语版", "zh": "無越南語版", "en": "Not in Vietnamese", "fr": "Pas en vietnamien", "de": "Nicht auf Vietnamesisch", "hu": "Vietnamiul nem elérhető", "id": "Tidak ada dalam bahasa Vietnam", "ja": "ベトナム語版なし", "pl": "Brak wersji wietnamskiej"},
     "베트남어 가사 미제공": {"vi": "Chưa có lời bài hát tiếng Việt", "cs": "Vietnamský text není k dispozici", "zh_cn": "暂无越南语歌词", "zh": "暫無越南語歌詞", "en": "Vietnamese lyrics not available", "fr": "Paroles en vietnamien non disponibles", "de": "Kein vietnamesischer Liedtext", "hu": "Vietnami dalszöveg nem elérhető", "id": "Lirik bahasa Vietnam belum tersedia", "ja": "ベトナム語の歌詞はありません", "pl": "Brak tekstu po wietnamsku"},
@@ -236,7 +244,7 @@
     "한국어 구절 듣기": {"vi": "Nghe câu tiếng Hàn", "cs": "Poslechnout korejský verš", "zh_cn": "听韩语歌词", "zh": "聽韓語歌詞", "en": "Listen to the Korean line", "fr": "Écouter la ligne en coréen", "de": "Koreanische Zeile anhören", "hu": "Koreai sor meghallgatása", "id": "Dengarkan baris bahasa Korea", "ja": "韓国語の歌詞を聞く", "pl": "Posłuchaj wersu po koreańsku"},
     "번호, 제목, 가사로 검색": {"vi": "Tìm theo số, tựa đề, lời bài hát", "cs": "Hledat podle čísla, názvu, textu", "zh_cn": "按编号、标题、歌词搜索", "zh": "按編號、標題、歌詞搜尋", "en": "Search by number, title or lyrics", "fr": "Rechercher par numéro, titre ou paroles", "de": "Nach Nummer, Titel oder Text suchen", "hu": "Keresés szám, cím vagy szöveg alapján", "id": "Cari menurut nomor, judul, atau lirik", "ja": "番号・タイトル・歌詞で検索", "pl": "Szukaj po numerze, tytule lub tekście"},
     "곡": {"vi": "bài", "cs": "písní", "zh_cn": "首", "zh": "首", "en": "songs", "fr": "chants", "de": "Lieder", "hu": "dal", "id": "lagu", "ja": "曲", "pl": "piosenek"},
-    "여호와의 친구가 되세요": {"vi": "Trở thành bạn Đức Giê-hô-va", "cs": "Buď Jehovovým přítelem", "zh_cn": "成为耶和华的朋友", "zh": "成為耶和華的朋友", "en": "Become Jehovah's Friend", "fr": "Deviens l’ami de Jéhovah", "de": "Werde Jehovas Freund", "hu": "Légy Jehova barátja", "id": "Jadilah Sahabat Yehuwa", "ja": "エホバの友達になろう", "pl": "Zostań przyjacielem Jehowy"},
+    "여호와의 친구가 되세요": {"vi": "Trở thành bạn Đức Giê-hô-va", "cs": "Staň se Jehovovým přítelem", "zh_cn": "成为耶和华的朋友", "zh": "成為耶和華的朋友", "en": "Become Jehovah’s Friend", "fr": "Deviens l’ami de Jéhovah", "de": "Werde Jehovas Freund", "hu": "Legyél Jehova barátja!", "id": "Menjadi Sahabat Yehuwa", "ja": "エホバの友になろう", "pl": "Zostań przyjacielem Jehowy"},
     "jw.org의 어린이 노래예요. 곡 제목을 누르면 가사와 음성이 있는 jw.org 페이지가 열려요.": {"vi": "Các bài hát thiếu nhi trên jw.org. Bấm liên kết để mở trang jw.org có lời bài hát và âm thanh.", "cs": "Dětské písně z jw.org. Odkaz otevře stránku jw.org s textem a nahrávkou.", "zh_cn": "jw.org上的儿童歌曲。点击链接可打开有歌词和音频的jw.org页面。", "zh": "jw.org上的兒童歌曲。點擊連結可打開有歌詞和音訊的jw.org頁面。", "en": "Children's songs from jw.org. The links open the jw.org page with the lyrics and audio.", "fr": "Chants pour enfants de jw.org. Les liens ouvrent la page jw.org avec les paroles et l’audio.", "de": "Kinderlieder von jw.org. Die Links öffnen die jw.org-Seite mit Text und Audio.", "hu": "Gyerekénekek a jw.org-ról. A hivatkozás megnyitja a jw.org oldalt a szöveggel és a hanganyaggal.", "id": "Lagu anak-anak dari jw.org. Tautan membuka halaman jw.org yang berisi lirik dan audio.", "ja": "jw.orgの子ども向けの歌です。リンクを押すと歌詞と音声のあるjw.orgのページが開きます。", "pl": "Piosenki dla dzieci z jw.org. Odnośniki otwierają stronę jw.org z tekstem i nagraniem."},
     "대역 읽기": {"vi": "Đọc song ngữ", "cs": "Dvojjazyčné čtení", "zh_cn": "对照阅读", "zh": "對照閱讀", "en": "Parallel reading", "fr": "Lecture bilingue", "de": "Zweisprachig lesen", "hu": "Kétnyelvű olvasás", "id": "Bacaan dwibahasa", "ja": "対訳リーディング", "pl": "Czytanie dwujęzyczne"},
     "내 표현집": {"vi": "Sổ tay cụm từ", "cs": "Moje fráze", "zh_cn": "我的短语本", "zh": "我的短語本", "en": "My phrase book", "fr": "Mon carnet d’expressions", "de": "Mein Sprachführer", "hu": "Kifejezésfüzetem", "id": "Buku frasa saya", "ja": "マイ表現集", "pl": "Mój rozmówki"},
@@ -1606,7 +1614,7 @@
 
   // "베트남어 반복 듣기 횟수" -- a separate, likewise-persisted global setting controlling how
   // many times in a row speak() (every individual 발음 듣기 button throughout the app, plus
-  // 전체 듣기's Vietnamese half via playReadAllNext()) reads a Vietnamese phrase before moving
+  // 전체 듣기's Vietnamese half via readAllItems()) reads a Vietnamese phrase before moving
   // on, for learners who want extra repetition without re-tapping the listen button each time.
   // One shared global, same single-setting-with-multiple-synced-widgets pattern as activeDialect
   // above -- adjusting it from 발음 설정 or 복습 keeps both widgets (and every actual playback)
@@ -1650,11 +1658,71 @@
       VI_REPEAT_CHANGE_LISTENERS.forEach(function (fn) { fn(viRepeatCount); });
     });
   }
+  // 묵음(Mute): skips the automatic question-start playback in flash/look/order/type -- every
+  // one of those modes already shows the full question as text (the Vietnamese itself, or in
+  // order/type's case the meaning prompt), so the audio there is a convenience, not the
+  // question. Three sub-scopes let the learner mute just one language or both: 한/베/베한 (ko),
+  // 中文/越南語/全部 (zh), EN/VN/All (en), 日本語/ベトナム/全て (ja) -- i.e. "meaning", "vi", or
+  // "both". 듣기 4지선다 is special-cased: its Vietnamese audio IS the question, nothing else
+  // on screen identifies the item, so that mode only ever offers/honors the meaning-mute
+  // option (checking 묵음 there locks to it automatically) -- see isMuted() and the mcq
+  // handling in renderAutoAdvanceControls() below. Manual replay buttons (다시 듣기 / the
+  // speak-btn) are untouched either way; this only suppresses the automatic auto-play.
+  var MUTE_SCOPE_LABELS = {
+    meaning: { ko: "한", zh: "中", en: "EN", ja: "日語" },
+    vi: { ko: "베", zh: "越", en: "VN", ja: "ベト" },
+    both: { ko: "베한", zh: "全", en: "All", ja: "全て" }
+  };
+  function muteScopeLabel(key) { return (MUTE_SCOPE_LABELS[key] || {})[currentLang] || key; }
+  var muteScope = ""; // "" (off) | "meaning" | "vi" | "both"
+  try {
+    var savedMuteScope = window.localStorage && window.localStorage.getItem("vn-app-mute-scope");
+    if (savedMuteScope === "meaning" || savedMuteScope === "vi" || savedMuteScope === "both") {
+      muteScope = savedMuteScope;
+    } else if (window.localStorage && window.localStorage.getItem("vn-app-mute-autoplay") === "1") {
+      muteScope = "both"; // one-time migration from the old plain on/off checkbox
+    }
+  } catch (eMute) { /* no-op */ }
+  function saveMuteScopePref() {
+    try { window.localStorage && window.localStorage.setItem("vn-app-mute-scope", muteScope); } catch (e) { /* no-op */ }
+  }
+  // Which language's audio the 묵음 setting silences: kind "vi" or "meaning" (the UI language's meaning).
+  var lastNonMcqScope = (muteScope && muteScope !== "meaning") ? muteScope : "both";
+  function muteScopeSilences(kind) { return muteScope === "both" || muteScope === kind; }
+  // The 묵음 control of [복습] and [대역 읽기]: one checkbox + one scope select (한 / 베 / 베한 ...), same markup, same
+  // behaviour, same stored setting. inMcq: 듣기 4지선다 only has the meaning option.
+  function muteGroupHtml(inMcq, activeScope) {
+    var scopeKeys = inMcq ? ["meaning"] : ["meaning", "vi", "both"];
+    var optionsHtml = scopeKeys.map(function (k) {
+      return '<option value="' + k + '"' + (activeScope === k ? ' selected' : '') + '>' + escapeHtml(muteScopeLabel(k)) + '</option>';
+    }).join('');
+    return '<span class="mute-group">' +
+      '<label class="mute-autoplay-option"><input type="checkbox" class="mute-autoplay-toggle" ' + (muteScope ? "checked" : "") + '> ' + TU("묵음") + '</label>' +
+      '<select class="mute-scope-select" ' + (muteScope ? "" : "disabled") + (inMcq ? ' aria-readonly="true"' : '') + '>' +
+      optionsHtml +
+      '</select></span>';
+  }
+  function bindMuteGroup(root, inMcq, onChange) {
+    var toggle = root.querySelector(".mute-autoplay-toggle");
+    var select = root.querySelector(".mute-scope-select");
+    if (toggle) toggle.addEventListener("change", function (e) {
+      muteScope = e.target.checked ? (inMcq ? "meaning" : (lastNonMcqScope || "both")) : "";
+      saveMuteScopePref();
+      onChange();
+    });
+    if (select) select.addEventListener("change", function (e) {
+      if (inMcq) return;
+      muteScope = e.target.value;
+      lastNonMcqScope = muteScope;
+      saveMuteScopePref();
+      onChange();
+    });
+  }
   // Every widget instance (발음 설정, 복습) re-renders whenever the setting changes from ANY of
   // them, or the UI language changes (the "N회"/"N times" labels are translated) -- same
   // multi-widget-sync approach as renderAllDialectToggles() below.
   function renderAllViRepeatToggles() {
-    ["repeat-toggle-settings", "repeat-toggle-review"].forEach(function (id) {
+    ["repeat-toggle-settings", "repeat-toggle-review", "repeat-toggle-reader", "repeat-toggle-wt-words", "repeat-toggle-wt-sentences"].forEach(function (id) {
       var el = document.getElementById(id);
       if (el) renderViRepeatToggle(el);
     });
@@ -1848,7 +1916,7 @@
   };
 
   // Mirrors renderVoicePicker() above, but for the "meaning / translation" voice that reads the
-  // current UI language after each Vietnamese phrase during 전체 듣기 (see playReadAllNext()).
+  // current UI language after each Vietnamese phrase during 전체 듣기 (see readAllItems()).
   // Shows every voice this language could offer (LANG_VOICE_REFERENCE ∪ actually-detected voices),
   // with reference-only entries (known to exist, but not yet installed on this device) shown
   // disabled and tagged "다운로드 필요" rather than hidden, so the learner knows they can go get it.
@@ -1976,67 +2044,263 @@
     return out;
   }
 
-  var speakRetryTimer = null;
-  // Gap between repetitions of the same phrase, when viRepeatCount > 1 (see below) -- long
-  // enough to sound like a deliberate re-read rather than a stutter, short enough not to feel
-  // like a stall.
-  var VI_REPEAT_GAP_MS = 450;
-  // macOS desktop (Safari and Chrome on system voices) reports the end of an utterance late or not at
-  // all, so the idle poll below decides when a step is over. There it polls faster and 전체 듣기 waits
-  // less between the Vietnamese and the translation, which otherwise left a long silence in between.
+  // ======================= speech manager =======================
+  // ONE serial engine behind every speech call of the app: the listen buttons, 반복 듣기, 전체 듣기, 복습 (flashcards,
+  // auto-advance) and the song lines. What the app plays is a RUN: a list of utterances spoken strictly one at a time.
+  //   - the app's own state decides everything (run id, current item, cancelled): speechSynthesis.speaking / pending /
+  //     paused are NOT read to decide anything (WebKit keeps `speaking` true after an utterance, loses onend, ...);
+  //   - every utterance is a new SpeechSynthesisUtterance with lang (and a voice of that language, never another one),
+  //     strongly referenced until it is finished (WebKit stops reporting events for collected utterances);
+  //   - an utterance is settled exactly once: onend, onerror, or the watchdog -- whichever comes first. A late event of
+  //     an old utterance / old run does nothing (checked against the run and the current utterance);
+  //   - an utterance that never starts is cancelled and spoken again ONCE, then skipped; one that started but never
+  //     ends is taken as finished (no re-speaking: it was heard). Never an endless retry;
+  //   - after a cancel() the next speak() waits SPEECH_CANCEL_SETTLE_MS (WebKit drops a speak() right after cancel()).
+  // A run is started by a real tap (or a key) -- Apple WebKit refuses speech nothing asked for -- and everything the run
+  // plays after that (the next language, the repetitions, the next sentence) needs no new tap.
+  var VI_REPEAT_GAP_MS = 450;   // between repetitions of the same phrase
   var IS_MAC_DESKTOP = /Macintosh|Mac OS X/i.test(navigator.userAgent || "") && !(navigator.maxTouchPoints > 1);
-  var SPEECH_IDLE_POLL_MS = IS_MAC_DESKTOP ? 120 : 250;
   var READALL_STEP_GAP_MS = IS_MAC_DESKTOP ? 60 : 300;
-  // macOS also keeps reporting `speaking` for a while after an utterance has ended, and drops a speak() issued
-  // shortly after cancel() without any event. 전체 듣기 then cancelled the finished Vietnamese, the translation's
-  // speak() was dropped, and the stale `speaking` flag kept the retry from re-speaking it: the translation was
-  // never heard. So: cancel only an utterance of ours that is still unfinished, and speak no sooner than
-  // SPEECH_CANCEL_SETTLE_MS after the last cancel().
-  // (iPhone/iPad run the same WebKit speech engine, so they wait as well.)
+  // iPhone/iPad/Mac run the same WebKit speech engine.
   var IS_APPLE_WEBKIT_SPEECH = IS_MAC_DESKTOP || /iPhone|iPad|iPod/i.test(navigator.userAgent || "") ||
     (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var SPEECH_CANCEL_SETTLE_MS = IS_APPLE_WEBKIT_SPEECH ? 300 : 30;
-  // iOS / iPadOS / macOS Safari: speech that is not started from a tap -- 복습 reading the first card out when the
-  // page opens on [복습] -- is dropped there, and can leave the engine silent for the rest of the visit. So on Apple
-  // WebKit nothing is spoken before the first real tap / key press (callers still get their onDone).
-  var speechUserActivated = false;
+  var SPEECH_MIN_GAP_MS = IS_APPLE_WEBKIT_SPEECH ? 90 : 0;               // between the end of one utterance and the next speak()
+  var SPEECH_START_TIMEOUT_MS = IS_APPLE_WEBKIT_SPEECH ? 5000 : 3500;    // a voice may need seconds to load before onstart
+  // Watchdog for an utterance that started but never ended: generous, so a slow voice is not cut off (the Apple numbers
+  // are the estimate of the spoken length with some room; elsewhere onend is reliable and this is only the safety net).
+  function speechEndTimeoutMs(text) {
+    var t = String(text || ""), cjk = /[぀-ヿ㐀-鿿가-힯]/.test(t);
+    if (IS_APPLE_WEBKIT_SPEECH) return 1500 + t.length * (cjk ? 220 : 95);
+    return Math.max(3500, t.length * 160) * 1.5 + 3000;
+  }
+  // iOS / iPadOS / macOS Safari: speech that is not started from a tap -- 복습 reading the first card out when the page
+  // opens on [복습] -- is dropped there, and can leave the engine silent for the rest of the visit. So on Apple WebKit
+  // no run starts before a real tap / key press. The tap arms the page's speech session; leaving the page (pagehide, or
+  // the page going to the background) ends it, so nothing resumes by itself on return.
+  var speechArmed = false;
   ["pointerdown", "touchend", "keydown", "click"].forEach(function (type) {
-    document.addEventListener(type, function (e) { if (e.isTrusted) speechUserActivated = true; }, { capture: true, passive: true });
+    document.addEventListener(type, function (e) { if (e.isTrusted) speechArmed = true; }, { capture: true, passive: true });
   });
   function speechAllowed() {
-    if (!IS_APPLE_WEBKIT_SPEECH || speechUserActivated) return true;
-    try { if (navigator.userActivation && navigator.userActivation.hasBeenActive) return true; } catch (e) { /* no-op */ }
-    return false;
+    if (!IS_APPLE_WEBKIT_SPEECH) return true;
+    try { if (navigator.userActivation && navigator.userActivation.isActive) speechArmed = true; } catch (e) { /* no-op */ }
+    return speechArmed;
   }
+  // Debug trace (off by default): localStorage vn-app-tts-debug = "1" or ?ttsdebug=1 -> console.debug and window.__ttsDebug.
+  // Only run / item numbers, language and text length are logged, never the text.
+  var speechDebugOn = false;
+  try { speechDebugOn = window.localStorage.getItem("vn-app-tts-debug") === "1" || /[?&]ttsdebug=1/.test(location.search); } catch (eDbg) { /* no-op */ }
+  function speechLog(run, item, event, extra) {
+    if (!speechDebugOn) return;
+    var line = "run=" + (run ? run.id : "-") + " item=" + item + " event=" + event + (extra ? " " + extra : "");
+    try { (window.__ttsDebug = window.__ttsDebug || []).push(line); if (window.__ttsDebug.length > 300) window.__ttsDebug.shift(); console.debug("[tts] " + line); } catch (eLog) { /* no-op */ }
+  }
+  var speechRunSeq = 0;
+  var speechRun = null;          // the run in charge (it may already be finished)
   var lastSpeechCancelAt = 0;
-  // keepChain: robustSpeakOne() making room for its own next utterance -- the chunk chain it belongs to goes on.
-  function cancelSpeech(keepChain) {
-    lastSpeechCancelAt = Date.now();
-    if (!keepChain) speechGeneration++;
-    try { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); } catch (e) { /* no-op */ }
+  var lastSpeechEndAt = 0;
+  window.__activeUtterances = window.__activeUtterances || [];   // strong references of the utterances in flight
+  function speechSynth() { try { return "speechSynthesis" in window ? window.speechSynthesis : null; } catch (e) { return null; } }
+  function speechRunTimer(run, fn, ms) {
+    var t = setTimeout(function () {
+      var i = run.timers.indexOf(t); if (i >= 0) run.timers.splice(i, 1);
+      if (run.ended) return;
+      fn();
+    }, ms);
+    run.timers.push(t);
+    return t;
   }
-  // Speaks opts.text (opts.lang/opts.rate/opts.voice optional) and calls onDone exactly once,
-  // whether speech finishes normally, errors, or isn't available at all. Shared by every speech
-  // call in the app -- individual speak-btns (via speakOnce below) AND 전체 듣기's chained
-  // Vietnamese/meaning steps (playReadAllVi/playReadAllMeaning) -- because the workaround below
-  // isn't just a Chrome desktop quirk: iOS/iPadOS/Android/macOS WebKit has the same "silently
-  // swallows the next speak() call" failure mode, and it's *worse* for a chained sequence, since
-  // each step's speak() call happens from inside the previous utterance's onend handler rather
-  // than a fresh user gesture. Before this was unified, 전체 듣기 called synth.speak() directly
-  // with none of this protection, so on those platforms the very first entry played fine (a
-  // clean synth state) and every entry after it was dropped silently -- 전체 듣기 looked like it
-  // read one sentence and then went permanently silent, while individual speak-btns (already
-  // routed through this same defense) kept working. Resetting paused/speaking state before each
-  // call, and deferring the actual speak() by a tick after cancel(), works around the known race
-  // where speak() issued synchronously right after cancel() is dropped; the follow-up check
-  // retries once if the engine never actually started.
-  window.__activeUtterances = window.__activeUtterances || [];
+  // Ends a run: its timers, its callbacks (stale ones check run.ended) and, when it was still speaking, the engine.
+  // cancelEngine false leaves the engine alone (a run that finished by itself); a run that never spoke has nothing to cancel.
+  function endSpeechRun(run, cancelEngine) {
+    if (!run) return;
+    var live = !run.ended;
+    run.ended = true;
+    run.timers.forEach(clearTimeout);
+    run.timers = [];
+    run.cur = null;
+    window.__activeUtterances = [];
+    if (live && cancelEngine && run.spoke) {
+      lastSpeechCancelAt = Date.now();
+      var synth = speechSynth();
+      try { if (synth) synth.cancel(); } catch (e) { /* no-op */ }
+    }
+  }
+  function cancelSpeech() { endSpeechRun(speechRun, true); }
+  function newSpeechRun() {
+    endSpeechRun(speechRun, true);
+    speechRun = { id: ++speechRunSeq, ended: false, cur: null, timers: [], spoke: false };
+    return speechRun;
+  }
+  var SPEECH_BASE_RE = /[-_]/;
+  function speechBaseLang(l) { return String(l || "").toLowerCase().split(SPEECH_BASE_RE)[0]; }
+  // The voice for one utterance, chosen again from the voices the browser reports right now (they arrive late and change:
+  // voiceschanged). A picked voice is used only if it is still there and of the requested language -- never a Vietnamese
+  // voice for Korean or the other way round. No voice (the list is empty, none of that language) = no voice at all:
+  // utterance.lang alone lets the system choose. On Apple WebKit, without a picked voice, the best voice of exactly
+  // that locale (then the language) is chosen; elsewhere the browser's own default for the language is left alone.
+  function resolveSpeechVoice(lang, preferred) {
+    var base = speechBaseLang(lang);
+    if (!base) return null;
+    var voices = [];
+    try { var synth = speechSynth(); voices = synth ? (synth.getVoices() || []) : []; } catch (eV) { voices = []; }
+    if (preferred && speechBaseLang(preferred.lang) === base) {
+      var key = voiceMatchKey(preferred);
+      var hit = voices.filter(function (v) { return voiceMatchKey(v) === key; })[0];
+      if (hit) return hit;
+      if (!IS_APPLE_WEBKIT_SPEECH || !voices.length) return preferred;
+    }
+    if (!IS_APPLE_WEBKIT_SPEECH || !voices.length) return null;
+    var cands = voices.filter(function (v) { return speechBaseLang(v.lang) === base && !isNoveltyVoice(v); });
+    var want = String(lang).replace("_", "-").toLowerCase();
+    var exact = cands.filter(function (v) { return String(v.lang).replace("_", "-").toLowerCase() === want; });
+    var pool = exact.length ? exact : cands;
+    if (!pool.length) return null;
+    return pool.filter(function (v) { return v.default; })[0] || pool.filter(function (v) { return v.localService; })[0] || pool[0];
+  }
+  // Speaks one utterance of a run and calls done(reason) exactly once -- 'end', 'error', 'watchdog' or 'skip' -- unless
+  // the run ended meanwhile (then never). item: index inside the run, for the trace.
+  function speakStep(run, opts, item, done) {
+    var synth = speechSynth();
+    var settled = false, attempt = 0, cur = null, started = false;
+    var startTimer = null, endTimer = null;
+    function clearStepTimers() {
+      if (startTimer) { clearTimeout(startTimer); startTimer = null; }
+      if (endTimer) { clearTimeout(endTimer); endTimer = null; }
+    }
+    function release(u) {
+      var i = window.__activeUtterances.indexOf(u);
+      if (i >= 0) window.__activeUtterances.splice(i, 1);
+    }
+    function finish(reason) {
+      if (settled) return;
+      settled = true;
+      clearStepTimers();
+      if (cur) { release(cur); }
+      cur = null;
+      if (run.cur === stepToken) run.cur = null;
+      lastSpeechEndAt = Date.now();
+      speechLog(run, item, "settle", reason);
+      if (run.ended || speechRun !== run) return;
+      done(reason);
+    }
+    var stepToken = { settled: function () { return settled; } };
+    if (!synth || !opts || !opts.text || typeof SpeechSynthesisUtterance === "undefined") {
+      speechRunTimer(run, function () { finish("skip"); }, 0);
+      return;
+    }
+    // An utterance that was given up (never started, or stalled) and replaced: its late events are ignored.
+    function abandon() {
+      clearStepTimers();
+      if (cur) { release(cur); cur = null; }
+      started = false;
+    }
+    function speakNow() {
+      if (run.ended || settled) return;
+      var u = new SpeechSynthesisUtterance(opts.text);
+      if (opts.lang) u.lang = opts.lang;
+      if (opts.rate) u.rate = opts.rate;
+      var voice = resolveSpeechVoice(opts.lang, opts.voice);
+      if (voice) { u.voice = voice; if (voice.lang) u.lang = voice.lang; }
+      cur = u;
+      run.cur = stepToken;
+      run.spoke = true;
+      window.__activeUtterances.push(u);
+      u.onstart = function () {
+        if (cur !== u || run.ended || settled) return;
+        started = true;
+        speechLog(run, item, "start", "lang=" + (u.lang || "") + " len=" + String(opts.text).length);
+        if (startTimer) { clearTimeout(startTimer); startTimer = null; }
+        armEnd();
+      };
+      u.onend = function () { if (cur !== u) return; speechLog(run, item, "end"); finish("end"); };
+      u.onerror = function (ev) {
+        if (cur !== u) return;
+        speechLog(run, item, "error", ev && ev.error ? String(ev.error) : "");
+        finish("error");
+      };
+      try { synth.speak(u); } catch (eSpeak) { speechLog(run, item, "speak-threw"); finish("error"); return; }
+      speechLog(run, item, "speak", "attempt=" + attempt);
+      startTimer = setTimeout(onStartTimeout, SPEECH_START_TIMEOUT_MS);
+    }
+    function armEnd() {
+      if (endTimer) clearTimeout(endTimer);
+      endTimer = setTimeout(function () {
+        endTimer = null;
+        if (settled || run.ended) return;
+        // Started but no end: the engine lost onend (WebKit). It was heard, so it is not spoken again; whatever the
+        // engine still holds is cleared, and the next utterance waits out the cancel.
+        speechLog(run, item, "watchdog", "after-start");
+        abandon();
+        clearEngine();
+        finish("watchdog");
+      }, speechEndTimeoutMs(opts.text));
+    }
+    function clearEngine() {
+      lastSpeechCancelAt = Date.now();
+      try { synth.cancel(); } catch (e) { /* no-op */ }
+    }
+    function onStartTimeout() {
+      startTimer = null;
+      if (settled || run.ended || started) return;
+      // Nothing started within the time. If the engine is busy (diagnostic only) it may be playing without telling us:
+      // do not speak it twice, wait for the end watchdog instead.
+      var busy = false;
+      try { busy = !!(synth.speaking || synth.pending); } catch (eB) { /* no-op */ }
+      if (busy && attempt === 0) { speechLog(run, item, "no-start-but-busy"); armEnd(); return; }
+      abandon();
+      clearEngine();
+      if (attempt === 0) {
+        attempt = 1;
+        speechLog(run, item, "retry");
+        begin();
+      } else {
+        speechLog(run, item, "watchdog", "no-start");
+        finish("watchdog");
+      }
+    }
+    // When the engine is ready for this speak(): not just after a cancel(), not right after the previous utterance. The
+    // first utterance of a run is spoken inside the tap itself when nothing has to be waited out.
+    function begin() {
+      if (run.ended || settled) return;
+      var wait = Math.max(lastSpeechCancelAt + SPEECH_CANCEL_SETTLE_MS - Date.now(), lastSpeechEndAt + SPEECH_MIN_GAP_MS - Date.now(), 0);
+      if (wait <= 0) speakNow(); else speechRunTimer(run, speakNow, wait);
+    }
+    begin();
+  }
+  // Plays items = [{ opts, gap }] one after the other in a new run (gap: ms of silence after the item). handlers.onItem(i)
+  // is called when item i is about to be spoken, handlers.onDone() once when the whole run has been played; neither is
+  // called after the run was stopped or replaced. Returns the run.
+  function playSpeechRun(items, handlers) {
+    handlers = handlers || {};
+    var run = newSpeechRun();
+    var finishedRun = false;
+    function complete() {
+      if (finishedRun) return;
+      finishedRun = true;
+      endSpeechRun(run, false);
+      if (handlers.onDone) handlers.onDone();
+    }
+    if (!speechAllowed()) { speechLog(run, "-", "blocked-no-tap"); setTimeout(function () { if (!run.ended && speechRun === run) complete(); }, 0); return run; }
+    var i = 0;
+    (function next() {
+      if (run.ended) return;
+      if (i >= items.length) { complete(); return; }
+      var idx = i++, it = items[idx];
+      if (handlers.onItem) handlers.onItem(idx, it);
+      speakStep(run, it.opts, idx, function () {
+        if (it.gap > 0) speechRunTimer(run, next, it.gap); else next();
+      });
+    })();
+    return run;
+  }
+
   // Long texts are spoken a sentence at a time. Chrome's network voices (e.g. Google Tiếng Việt, the default when no
   // voice is picked) stop after about 15 s of audio without onend and keep `speaking` true, so a long paragraph
   // ([대역 읽기] / 행누 / 랑제 / 이웃 대화 / 일반 문법) went silent and 전체 듣기 never moved on; macOS's length
   // estimate is also far closer per sentence. Every speech call goes through here, so all of them benefit.
   var SPEECH_CHUNK_MAX = 160;
-  var speechGeneration = 0;   // bumped by every new robustSpeak() and by cancelSpeech(): stale chunk chains stop
   function speechChunks(text) {
     var t = String(text || "").replace(/\s+/g, " ").trim();
     if (t.length <= SPEECH_CHUNK_MAX) return [t];
@@ -2059,128 +2323,12 @@
     });
     return out.length ? out : [t];
   }
+  // Speaks opts.text (opts.lang / opts.rate / opts.voice optional), a sentence at a time when it is long, as a run of its
+  // own (it replaces whatever was being spoken), and calls onDone exactly once when it has been spoken -- also when speech
+  // is unavailable or refused. Never after the run was stopped or replaced by a newer one.
   function robustSpeak(opts, onDone) {
-    var gen = ++speechGeneration;
-    var finished = function () { if (gen === speechGeneration && onDone) onDone(); };
-    if (!speechAllowed()) { setTimeout(finished, 0); return; }
     var chunks = opts && opts.text ? speechChunks(opts.text) : [];
-    if (chunks.length <= 1) { robustSpeakOne(opts, finished, gen); return; }
-    var i = 0;
-    (function nextChunk() {
-      if (gen !== speechGeneration) return;            // stopped, or another speech call took over
-      if (i >= chunks.length) { finished(); return; }
-      robustSpeakOne(Object.assign({}, opts, { text: chunks[i++] }), nextChunk, gen);
-    })();
-  }
-  function robustSpeakOne(opts, onDone, gen) {
-    try {
-      if (!("speechSynthesis" in window) || !opts || !opts.text) { if (onDone) onDone(); return; }
-      var synth = window.speechSynthesis;
-      if (speakRetryTimer) { clearTimeout(speakRetryTimer); speakRetryTimer = null; }
-      var doneCalled = false;
-      var watchdogTimer = null;
-      var currentU = null;
-
-      function callDone() {
-        if (doneCalled) return;
-        doneCalled = true;
-        if (watchdogTimer) { clearTimeout(watchdogTimer); watchdogTimer = null; }
-        if (currentU) {
-          var idx = window.__activeUtterances.indexOf(currentU);
-          if (idx !== -1) window.__activeUtterances.splice(idx, 1);
-          currentU = null;
-        }
-        if (onDone) onDone();
-      }
-
-      // Watchdog for engines that never fire onend/onerror. It must not cut off an utterance that is
-      // still playing (a slow voice or a long sentence easily outlasts the estimate): cutting it
-      // short makes the next step cancel() mid-word, which is heard as a click/garbled noise. While
-      // the engine still reports speaking/pending, the watchdog re-arms, up to a hard cap.
-      var textLen = (opts.text ? String(opts.text).length : 10);
-      var estMs = Math.max(3500, textLen * 160);
-      // estMs is about twice the real length; an engine still "speaking" well past it has stalled (Chrome's network
-      // voices after their 15 s limit), so the step ends at 1.5x instead of waiting minutes.
-      var hardCapAt = Date.now() + estMs * 1.5 + 3000;
-      // macOS can keep `speaking` true for good and never send onend, so neither the idle poll nor a busy re-arm
-      // ends the step there: 전체 듣기 read the first sentence and stopped. There the watchdog is an estimate of
-      // the spoken length (CJK/Hangul read slower per character) and is not extended. Finishing a little early
-      // is harmless: the next step is queued behind the one still playing (only an unfinished utterance of
-      // ours is ever cancelled), so nothing is cut off.
-      if (IS_MAC_DESKTOP) {
-        var cjk = /[぀-ヿ㐀-鿿가-힯]/.test(String(opts.text || ""));
-        estMs = 700 + textLen * (cjk ? 190 : 85);
-        hardCapAt = 0;
-      }
-      function armWatchdog(ms) {
-        watchdogTimer = setTimeout(function () {
-          watchdogTimer = null;
-          if (doneCalled) return;
-          var busy = false;
-          try { busy = synth.speaking || synth.pending; } catch (eBusy) { /* no-op */ }
-          if (busy && Date.now() < hardCapAt) armWatchdog(1000);
-          else callDone();
-        }, ms);
-      }
-      armWatchdog(estMs);
-
-      try { if (synth.paused) synth.resume(); } catch (e1) { /* no-op */ }
-      // An utterance of ours that has not finished yet is interrupted; a finished one is not -- macOS keeps
-      // `speaking` true after the end, and cancelling there made it drop the next speak().
-      try {
-        if ((synth.speaking || synth.pending) && window.__activeUtterances.length) {
-          window.__activeUtterances = [];
-          cancelSpeech(true);
-        }
-      } catch (eCancel) { /* no-op */ }
-
-      var buildUtterance = function () {
-        var u = new SpeechSynthesisUtterance(opts.text);
-        if (opts.lang) u.lang = opts.lang;
-        if (opts.rate) u.rate = opts.rate;
-        if (opts.voice) { u.voice = opts.voice; u.lang = opts.voice.lang; }
-        u.onend = callDone;
-        u.onerror = callDone;
-        window.__activeUtterances.push(u);
-        return u;
-      };
-
-      var delay = Math.max(10, lastSpeechCancelAt + SPEECH_CANCEL_SETTLE_MS - Date.now());
-      speakRetryTimer = setTimeout(function () {
-        speakRetryTimer = null;
-        try {
-          currentU = buildUtterance();
-          var started = false;
-          currentU.onstart = function () { started = true; };
-          synth.speak(currentU);
-          // Some engines (macOS Safari / system voices in particular) drop or delay onend, and the watchdog
-          // below would then hold the next step for seconds. Once the utterance has started (or the engine
-          // was seen busy), two idle checks in a row (0.5 s) count as finished.
-          var seenBusy = false, idleChecks = 0;
-          (function pollIdle() {
-            if (doneCalled) return;
-            var busy = false;
-            try { busy = synth.speaking || synth.pending; } catch (eIdle) { /* no-op */ }
-            if (busy) { seenBusy = true; idleChecks = 0; }
-            else if (started || seenBusy) { if (++idleChecks >= 2) { callDone(); return; } }
-            setTimeout(pollIdle, SPEECH_IDLE_POLL_MS);
-          })();
-          // Retry once only if the engine silently dropped the utterance. Mobile engines (Samsung/
-          // Google TTS on Android, iOS) often need well over 350 ms before onstart fires; cancelling
-          // and re-speaking in that window restarted the audio (an audible click plus extra delay),
-          // so the check waits longer and treats a queued (pending) utterance as accepted.
-          setTimeout(function () {
-            if (started || doneCalled || !("speechSynthesis" in window)) return;
-            try { if (synth.speaking || synth.pending) return; } catch (eState) { /* no-op */ }
-            try {
-              cancelSpeech(true);
-              currentU = buildUtterance();
-              synth.speak(currentU);
-            } catch (e3) { callDone(); }
-          }, 1200);
-        } catch (e2) { callDone(); /* no-op: speech not available */ }
-      }, delay);
-    } catch (e) { if (onDone) onDone(); /* no-op: speech not available */ }
+    playSpeechRun(chunks.map(function (c) { return { opts: Object.assign({}, opts, { text: c }), gap: 0 }; }), { onDone: onDone });
   }
   // Speaks text ONE time (Vietnamese, current speak-voice) and calls onOnceDone when that single
   // utterance finishes -- the original body of speak() before 베트남어 반복 듣기 횟수 was added;
@@ -2206,17 +2354,17 @@
   // times in a row (설정 > 발음 설정 / 복습's "베트남어 반복 듣기 횟수"), back-to-back with a short
   // pause between reps, before finally calling onDone -- every speak-btn throughout the app goes
   // through this one function, so the setting takes effect everywhere Vietnamese is read aloud
-  // (전체 듣기's own Vietnamese step is handled separately by playReadAllNext(), since it chains
+  // (전체 듣기's own Vietnamese step is handled separately by readAllItems(), since it chains
   // through a shared token/state object rather than a plain callback).
-  function speak(text, onDone, _repsLeft) {
+  function speak(text, onDone) {
     if (readAllState.id) stopReadAllSequence();
-    var repsLeft = (typeof _repsLeft === "number" && _repsLeft > 0) ? _repsLeft : viRepeatCount;
-    speakOnce(text, function () {
-      if (repsLeft > 1) {
-        var gen = speechGeneration;
-        setTimeout(function () { if (gen === speechGeneration) speak(text, onDone, repsLeft - 1); }, VI_REPEAT_GAP_MS);
-      } else if (onDone) onDone();
-    });
+    var o = targetSpeechOpts(text), chunks = speechChunks(o.text), items = [];
+    for (var r = 0; r < viRepeatCount; r++) {
+      chunks.forEach(function (c, ci) {
+        items.push({ opts: Object.assign({}, o, { text: c }), gap: (ci === chunks.length - 1 && r < viRepeatCount - 1) ? VI_REPEAT_GAP_MS : 0 });
+      });
+    }
+    playSpeechRun(items, { onDone: onDone });
   }
 
   // Korean 뜻 text often annotates a Sino-Korean word with its hanja in parentheses right after
@@ -2363,7 +2511,7 @@
   // An entry is either a plain Vietnamese string (legacy call sites -- Vietnamese only, no
   // meaning/translation follow-up) or a [viText, meaningText] pair (meaningText already resolved
   // to the current UI language, e.g. via T(it.gloss)) -- normalized here to a single {vi, mean}
-  // shape so playReadAllNext() doesn't need to branch on the caller's original format.
+  // shape so readAllItems() doesn't need to branch on the caller's original format.
   function normalizeReadAllEntry(t) {
     if (t === null || t === undefined) return null;
     var vi, mean;
@@ -2439,11 +2587,7 @@
   // Stops whatever is being read (a 전체 듣기 sequence, a single phrase, a pending repetition).
   function stopAllSpeech() {
     if (readAllState.id) { stopReadAllSequence(); return; }
-    if (speakRetryTimer) { clearTimeout(speakRetryTimer); speakRetryTimer = null; }
-    window.__activeUtterances = [];
-    var busy = false;
-    try { busy = "speechSynthesis" in window && (window.speechSynthesis.speaking || window.speechSynthesis.pending); } catch (e) { /* no-op */ }
-    if (busy) cancelSpeech(); else speechGeneration++;
+    cancelSpeech();
   }
   // Moving to another tab or subtab, or leaving the page, ends the speech of the screen being left. Capture phase: it
   // runs before the new screen's own handlers, so speech the new screen starts (복습 reading its first card) is kept.
@@ -2452,53 +2596,21 @@
     if (!b || b.getAttribute("aria-selected") === "true") return;
     stopAllSpeech();
   }, true);
-  window.addEventListener("pagehide", function () { stopAllSpeech(); });
+  // Leaving the page ends the speech and the page's speech session. On Apple WebKit the page going to the background does
+  // too (the app is suspended, its callbacks come back stale): nothing resumes by itself on return, a new tap starts again.
+  window.addEventListener("pagehide", function () { stopAllSpeech(); speechArmed = false; });
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "hidden" && IS_APPLE_WEBKIT_SPEECH) { stopAllSpeech(); speechArmed = false; }
+  });
   function stopReadAllSequence() {
     stopReadAllKeepAlive();
-    stopReadAllQueuePoll();
     if (readAllState.btn) setReadAllBtnPlaying(readAllState.btn, false);
     readAllState = { id: null, texts: [], idx: -1, btn: null, token: readAllState.token + 1 };
-    window.__activeUtterances = [];
     cancelSpeech();
   }
 
   var READALL_LANG_TAG = { vi: "vi-VN", cs: "cs-CZ", zh_cn: "zh-CN", zh: "zh-TW", en: "en-US", fr: "fr-FR", de: "de-DE", hu: "hu-HU", id: "id-ID", ja: "ja-JP", ko: "ko-KR", pl: "pl-PL" };
 
-  function playReadAllNext(token) {
-    if (token !== readAllState.token) return; // a newer sequence (or a stop) superseded this one
-    readAllState.idx++;
-    if (readAllState.idx >= readAllState.texts.length) { stopReadAllSequence(); return; }
-    var entry = readAllState.texts[readAllState.idx];
-    playReadAllVi(token, entry, viRepeatCount);
-  }
-
-  // Speaks entry.vi, repeating it viRepeatCount times (설정 > 발음 설정 / 복습's "베트남어 반복
-  // 듣기 횟수") before moving on to entry.mean -- same repeat count 전체 듣기's Vietnamese step
-  // honors as every individual speak-btn's speak() call does, kept as its own chained-token
-  // function here (rather than reusing speak()) since 전체 듣기 threads its own token/state
-  // object through the whole sequence instead of a plain onDone callback.
-  function playReadAllVi(token, entry, repsLeft) {
-    if (token !== readAllState.token) return;
-    if (!entry.vi) { playReadAllMeaning(token, entry); return; }
-    var advance = function () {
-      if (token !== readAllState.token) return;
-      if (repsLeft > 1) setTimeout(function () { playReadAllVi(token, entry, repsLeft - 1); }, VI_REPEAT_GAP_MS);
-      else setTimeout(function () { playReadAllMeaning(token, entry); }, READALL_STEP_GAP_MS);
-    };
-    robustSpeak(targetSpeechOpts(entry.vi), advance);
-  }
-
-  // Reads entry.mean (the word's meaning / the sentence's translation, already resolved to the
-  // current UI language) in that language's own voice, then advances to the next entry -- or
-  // just advances immediately when this entry carries no meaning (legacy plain-string entries).
-  function playReadAllMeaning(token, entry) {
-    if (token !== readAllState.token) return;
-    if (!entry.mean) { playReadAllNext(token); return; }
-    var next = function () {
-      if (token === readAllState.token) setTimeout(function () { playReadAllNext(token); }, 300);
-    };
-    robustSpeak(readAllMeaningOpts(entry), next);
-  }
   function readAllMeaningOpts(entry) {
     var lang = READALL_LANG_TAG[currentLang] || "en-US";
     var voice = null;
@@ -2507,97 +2619,29 @@
     return { text: prepareMeaningSpeechText(entry.mean), lang: lang, voice: voice };
   }
 
-  // iOS / iPadOS / macOS (Apple WebKit): the chained playback above (each next utterance spoken from the previous
-  // one's onend, or from a timer) is what stalls there -- the first Vietnamese is heard, then nothing: WebKit reports
-  // the end of an utterance late or not at all, and drops a speak() that is not made while the page still counts the
-  // tap as a user gesture. So here every utterance of the sequence is handed to the engine's own queue at once, from
-  // the tap itself, and the engine plays them one after another with no JS in between. Only the end is watched (and a
-  // queue that was dropped or stalled falls back to the chained playback from the entry it reached).
-  var readAllQueuePoll = null;
-  function stopReadAllQueuePoll() {
-    if (readAllQueuePoll) { clearInterval(readAllQueuePoll); readAllQueuePoll = null; }
-  }
-  function readAllQueueJobs(texts) {
-    var jobs = [];
+  // 전체 듣기 = ONE run on every platform: per entry the Vietnamese (viRepeatCount times), then its meaning in the UI
+  // language, one utterance at a time with the same gaps as before. (Not a queue handed to the engine at once: Apple WebKit
+  // stalls after the first utterance of such a queue, and mixing voices in it makes it worse.)
+  function readAllItems(texts) {
+    var items = [];
     texts.forEach(function (entry, ei) {
-      function add(opts) {
-        speechChunks(opts.text).forEach(function (c) { if (c) jobs.push({ ei: ei, opts: Object.assign({}, opts, { text: c }) }); });
-      }
       if (entry.vi) {
-        var o = targetSpeechOpts(entry.vi);
-        for (var r = 0; r < viRepeatCount; r++) add(o);
+        var o = targetSpeechOpts(entry.vi), chunks = speechChunks(o.text);
+        for (var r = 0; r < viRepeatCount; r++) {
+          chunks.forEach(function (c, ci) {
+            var lastChunk = ci === chunks.length - 1;
+            items.push({ ei: ei, opts: Object.assign({}, o, { text: c }), gap: !lastChunk ? 0 : (r < viRepeatCount - 1 ? VI_REPEAT_GAP_MS : READALL_STEP_GAP_MS) });
+          });
+        }
       }
-      if (entry.mean) add(readAllMeaningOpts(entry));
+      if (entry.mean) {
+        var mo = readAllMeaningOpts(entry), mchunks = speechChunks(mo.text);
+        mchunks.forEach(function (c, ci) {
+          items.push({ ei: ei, opts: Object.assign({}, mo, { text: c }), gap: ci === mchunks.length - 1 ? 300 : 0 });
+        });
+      }
     });
-    return jobs;
-  }
-  // jobs: the utterances still to play (all of them on the first call). A queue that was dropped or cut short is
-  // handed to the engine again from the first job that never started (a few times, still queued: a slow voice -- an
-  // enhanced Chinese or Japanese one loading -- can leave a gap that looks like the end), and only then does the
-  // chained playback take over from that entry.
-  function enqueueReadAll(token, texts, jobs, attempt) {
-    if (token !== readAllState.token) return;
-    var synth = window.speechSynthesis;
-    jobs = jobs || readAllQueueJobs(texts);
-    attempt = attempt || 0;
-    if (!jobs.length) { stopReadAllSequence(); return; }
-    var started = 0, sawBusy = false, idleChecks = 0, t0 = Date.now();
-    window.__activeUtterances = [];
-    function fallback() {
-      stopReadAllQueuePoll();
-      if (token !== readAllState.token) return;
-      var from = jobs[Math.min(started, jobs.length - 1)].ei;
-      readAllState.idx = from - 1;
-      cancelSpeech(true);
-      playReadAllNext(token);
-    }
-    function retry() {
-      stopReadAllQueuePoll();
-      if (token !== readAllState.token) return;
-      if (attempt >= 3) { fallback(); return; }
-      var rest = jobs.slice(started);
-      cancelSpeech(true);
-      setTimeout(function () { enqueueReadAll(token, texts, rest, attempt + 1); }, SPEECH_CANCEL_SETTLE_MS + 50);
-    }
-    try {
-      jobs.forEach(function (job, ji) {
-        var u = new SpeechSynthesisUtterance(job.opts.text);
-        if (job.opts.lang) u.lang = job.opts.lang;
-        if (job.opts.rate) u.rate = job.opts.rate;
-        if (job.opts.voice) { u.voice = job.opts.voice; u.lang = job.opts.voice.lang; }
-        u.onstart = function () {
-          if (token !== readAllState.token) return;
-          started = Math.max(started, ji + 1);
-          readAllState.idx = job.ei;
-        };
-        u.onend = u.onerror = function () {
-          if (token !== readAllState.token) return;
-          started = Math.max(started, ji + 1);
-          if (ji === jobs.length - 1) setTimeout(function () { if (token === readAllState.token) stopReadAllSequence(); }, 300);
-        };
-        window.__activeUtterances.push(u);   // strong references: WebKit stops reporting events for collected utterances
-        synth.speak(u);
-      });
-    } catch (eQ) { fallback(); return; }
-    stopReadAllQueuePoll();
-    var lastProgress = Date.now(), lastStarted = 0;
-    readAllQueuePoll = setInterval(function () {
-      if (token !== readAllState.token) { stopReadAllQueuePoll(); return; }
-      var busy = false;
-      try { busy = synth.speaking || synth.pending; } catch (eB) { /* no-op */ }
-      if (started !== lastStarted) { lastStarted = started; lastProgress = Date.now(); }
-      if (busy) {
-        sawBusy = true; idleChecks = 0;
-        // Events are arriving, yet one utterance has been "playing" for far too long (a voice that cannot start):
-        // skip past it rather than hang.
-        if (started > 0 && started < jobs.length && Date.now() - lastProgress > 20000) retry();
-        return;
-      }
-      if (!sawBusy) { if (Date.now() - t0 > 3500) (attempt >= 3 ? fallback : retry)(); return; }   // nothing ever started
-      if (++idleChecks < 4) return;                                                            // idle ~1.6 s: over...
-      if (started > 0 && started < jobs.length) retry();                                       // ...or cut short
-      else { stopReadAllQueuePoll(); stopReadAllSequence(); }
-    }, 400);
+    return items;
   }
 
   function startReadAllSequence(id, btn) {
@@ -2610,22 +2654,15 @@
         if (window.__globalAudioCtx.state === "suspended") window.__globalAudioCtx.resume();
       }
     } catch (e0) { /* no-op */ }
-    window.__activeUtterances = [];
-    if (speakRetryTimer) { clearTimeout(speakRetryTimer); speakRetryTimer = null; }
-    var queued = IS_APPLE_WEBKIT_SPEECH && "speechSynthesis" in window && typeof SpeechSynthesisUtterance !== "undefined";
-    var synthBusy = false;
-    try { synthBusy = !!(window.speechSynthesis.speaking || window.speechSynthesis.pending || window.speechSynthesis.paused); } catch (eS) { /* no-op */ }
-    // Apple: cancel() only when something is playing, so the queue can be filled right inside the tap.
-    if (!queued || synthBusy) cancelSpeech(); else speechGeneration++;
+    if (readAllState.btn && readAllState.btn !== btn) setReadAllBtnPlaying(readAllState.btn, false);
     var token = readAllState.token + 1;
     readAllState = { id: id, texts: texts, idx: -1, btn: btn, token: token };
     setReadAllBtnPlaying(btn, true);
     startReadAllKeepAlive();
-    if (!queued) { playReadAllNext(token); return; }
-    try { if (window.speechSynthesis.paused) window.speechSynthesis.resume(); } catch (eR) { /* no-op */ }
-    if (!synthBusy) { enqueueReadAll(token, texts); return; }
-    // A cancel() just before speak() is swallowed by WebKit: wait it out (the tap still counts as a gesture for ~1 s).
-    setTimeout(function () { enqueueReadAll(token, texts); }, Math.max(10, lastSpeechCancelAt + SPEECH_CANCEL_SETTLE_MS - Date.now()));
+    playSpeechRun(readAllItems(texts), {
+      onItem: function (i, it) { if (token === readAllState.token) readAllState.idx = it.ei; },
+      onDone: function () { if (token === readAllState.token) stopReadAllSequence(); }
+    });
   }
 
   // Capture phase: fires before any nearer-ancestor click handler (e.g. a .group-head card's
@@ -3928,7 +3965,17 @@
     var pairs = unit.rows.filter(function (r) { return r.vi; }).map(function (r) {
       return [r.vi, currentLang === "vi" ? "" : (r[currentLang] || "")];
     });
-    html += '<div class="reader-toolbar">' + readAllButtonHtml(pairs.map(function (p) { return p[0]; })) + '</div><div class="reader-rows">';
+    // 전체 듣기 plays what [복습] would: Vietnamese (반복 듣기 times) then its translation in the UI language, each
+    // skipped when 묵음 silences it (한 = the translation, 베 = the Vietnamese, 베한 = both: no button).
+    var readEntries = [];
+    pairs.forEach(function (p) {
+      var vi = muteScopeSilences("vi") ? "" : p[0];
+      var mean = (p[1] && !muteScopeSilences("meaning")) ? p[1] : "";
+      if (vi || mean) readEntries.push([vi, mean]);
+    });
+    html += '<div class="reader-audio-row"><label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span id="repeat-toggle-reader"></span></label>' +
+      muteGroupHtml(false, muteScope || lastNonMcqScope || "both") + '</div>';
+    html += '<div class="reader-toolbar">' + readAllButtonHtml(readEntries) + '</div><div class="reader-rows">';
     pairs.forEach(function (p) {
       html += '<div class="reader-row"><div class="reader-text"><div class="vn reader-vi">' + escapeHtml(p[0]) + '</div>' +
         (p[1] ? '<div class="reader-tr">' + escapeHtml(p[1]) + '</div>' : '') + '</div>' +
@@ -3937,6 +3984,8 @@
     html += '</div>';
     root.innerHTML = html;
     bindReader(root);
+    renderViRepeatToggle(document.getElementById("repeat-toggle-reader"));
+    bindMuteGroup(root, false, renderBilingualReader);
   }
   function bindReader(root) {
     root.querySelectorAll("[data-reader-source]").forEach(function (b) {
@@ -5043,7 +5092,7 @@
       ' ' + (vocabFocus.start + 1) + '~' + vocabFocus.end + '</span>' +
       '<div class="vocab-focus-banner-btns">' +
       '<button class="vocab-focus-scoped-review">' + TU("학습 범위내 복습 게임") + '</button>' +
-      (mode === "wt" ? '' : '<button class="vocab-focus-srs">' + TU("간격 복습에 추가") + '</button>') +
+      '<button class="vocab-focus-srs">' + TU("간격 복습에 추가") + '</button>' +
       '<button class="vocab-focus-clear">' + TU("전체 보기") + '</button></div></div>';
   }
   // renderFn (optional): which render function "전체 보기" should call after clearing the focus
@@ -5150,7 +5199,7 @@
     { key: "wt", menu: {"vi": "WT", "cs": "WT", "zh_cn": "WT", "zh": "WT", "en": "WT", "fr": "WT", "de": "WT", "hu": "WT", "id": "WT", "ja": "WT", "ko": "WT", "pl": "WT"}, short: {"vi": "WT", "cs": "WT", "zh_cn": "WT", "zh": "WT", "en": "WT", "fr": "WT", "de": "WT", "hu": "WT", "id": "WT", "ja": "WT", "ko": "WT", "pl": "WT"} },
     { key: "ns", menu: {"vi": "Bắc Nam", "cs": "S/J", "zh_cn": "南北", "zh": "南北", "en": "N/S", "fr": "N/S", "de": "N/S", "hu": "É/D", "id": "U/S", "ja": "南北", "ko": "남북", "pl": "Pn/Pd"}, short: {"vi": "B-N", "cs": "S/J", "zh_cn": "南北", "zh": "南北", "en": "N/S", "fr": "N/S", "de": "N/S", "hu": "É/D", "id": "U/S", "ja": "南北", "ko": "남북", "pl": "Pn/Pd"} }
   ];
-  var WORD_TAG_KEY = { "기본": "base", "상용": "freq", "신권": "theo", "인명": "names", "한자음": "sino", "어순반대": "order", "동일음": "homo", "반의": "ant", "PDF": "daily", "남북": "ns" };
+  var WORD_TAG_KEY = { "기본": "base", "상용": "freq", "신권": "theo", "인명": "names", "한자음": "sino", "어순반대": "order", "동일음": "homo", "반의": "ant", "PDF": "daily", "남북": "ns", "WT": "wt", "행누": "elf" };
   var WORD_SOURCE_TAG = { song: "songs", wt: "watchtower", elf: "enjoyLifeForever" };
   function wordTagDef(key) { return WORD_TAG_DEFS.filter(function (d) { return d.key === key; })[0]; }
   function wordTagMenuLabel(key) { var d = wordTagDef(key); return d.menu[currentLang] || d.menu.ko; }
@@ -5325,6 +5374,10 @@
     }
     if (vocabMode === "words") {
       renderVocabWords(root, q);
+      return;
+    }
+    if (vocabMode === "wt") {
+      renderVocabWatchtower(root, q, "words");
       return;
     }
     if (vocabMode === "rhyme") {
@@ -6318,18 +6371,51 @@
     for (var i = 0; i < weekNumber - 1; i++) start += WATCHTOWER_VOCAB[i].words.length;
     return { start: start, end: start + WATCHTOWER_VOCAB[weekNumber - 1].words.length };
   }
+  // The Watchtower words of one collection, split over Monday-Friday: N words in 5 consecutive parts in their own order,
+  // the first N % 5 days one word longer (50 -> 10,10,10,10,10; 52 -> 11,11,10,10,10; 48 -> 10,10,10,9,9; 3 -> 1,1,1,0,0).
+  // Returns [[from, to], ...] (0-based, relative to the collection).
+  function wtDaySplit(n) {
+    var base = Math.floor(n / 5), rem = n % 5, out = [], pos = 0;
+    for (var i = 0; i < 5; i++) { var len = base + (rem > i ? 1 : 0); out.push([pos, pos + len]); pos += len; }
+    return out;
+  }
+  window.__wtDaySplit = wtDaySplit;   // test hook
+  // The whole collection a course week studies: JEONJU's class week N studies the JW course's N주차 collection
+  // (1주 = 245–295), one slot earlier than its own week key; week 0 (the welcome homework) keeps the first collection.
+  function wtWeekRange(weekKey) {
+    var slotKey = window.SITE_PROFILE === "jeonju" && Number(weekKey) >= 1 && Number(weekKey) <= 15 ?
+      Number(weekKey) - 1 : weekKey;
+    return watchtowerRange(courseWatchtowerWeek(slotKey));
+  }
+  // A "오늘의 파수대 어휘 N개" homework line (a Watchtower link shorter than the week's 50-word line): which weekday it
+  // is (the stored ranges run 0-10, 10-20, ... through the 50 words of a week) and the words of that day.
+  function wtDailyInfo(link, weekKey) {
+    var r = link && link.subVal === "wt" && link.vocabRange;
+    if (!r || r.end - r.start >= 50 || Number(weekKey) === 16) return null;   // week 16 is the review week: its line opens a review, not a slice
+    var week = wtWeekRange(weekKey);
+    if (!week) return null;
+    var day = Math.min(4, Math.floor((r.start % 50) / 10));
+    var part = wtDaySplit(week.end - week.start)[day];
+    return { day: day, n: part[1] - part[0], range: { start: week.start + part[0], end: week.start + part[1] } };
+  }
+  // The line's text with the real number of the day's words ("... 10개 ..." in every language), and the lines of a day
+  // that has no word at all are left out (never "0개").
+  function courseAssignText(it, weekKey) {
+    var text = T(it.text), daily = wtDailyInfo(it.link, weekKey);
+    return daily ? text.replace(/10/, String(daily.n)) : text;
+  }
+  function courseVisible(list, weekKey) {
+    return (list || []).filter(function (it) { var d = wtDailyInfo(it.link, weekKey === undefined ? it.unit : weekKey); return !d || d.n > 0; });
+  }
   function curriculumLinkForWeek(link, weekKey) {
     if (!link || link.subAttr !== "sentence" || link.subVal !== "wt") return link;
     if (Number(weekKey) === 16) return { tab: "review", reviewScope: "wt", reviewMode: "order" };
-    // JEONJU's class week N studies the JW course's N주차 collection (1주 = 245–295), one slot earlier than
-    // its own week key; week 0 (the welcome homework) keeps the first collection.
-    var slotKey = window.SITE_PROFILE === "jeonju" && Number(weekKey) >= 1 && Number(weekKey) <= 15 ?
-      Number(weekKey) - 1 : weekKey;
-    var range = watchtowerRange(courseWatchtowerWeek(slotKey));
+    var range = wtWeekRange(weekKey);
     if (!range) return null;
-    var adjusted = Object.assign({}, link);
-    adjusted.vocabRange = range;
-    return adjusted;
+    // The words of the Watchtower study are [어휘] > [파수대]; a daily line opens only that day's words.
+    var daily = wtDailyInfo(link, weekKey);
+    if (daily && daily.n < 1) return null;
+    return Object.assign({}, link, { tab: "vocab", subAttr: "vocab", subVal: "wt", vocabRange: daily ? daily.range : range });
   }
   // JW course (non-regional): all COURSE_SLOT_ORDER slots -- the 16 study weeks, the three former break slots and
   // the final review slot, each with its authored content -- are presented as one numbered 20-week course, without dates.
@@ -6573,10 +6659,10 @@
             escapeHtml(T(it.text)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, it._wk === undefined ? weekKey : it._wk)) + '</div>';
         });
       });
-      if (rows) body += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>' + rows + '</div>';
+      if (rows) body += '<div class="curr-assign-day-group"' + assignDayAttr(d.day) + '><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>' + rows + '</div>';
     });
     if (!body) return "";
-    return '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' +
+    return '<div class="curr-assign-card" data-open="false" data-hw-monday="' + assignMonday(dateLabel) + '"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' +
       assignLabel(dateLabel) + '</span>' + currChev() + '</button><div class="curr-assign-body">' + body + '</div></div>';
   }
   // ---- [과정] vocabulary schedule (COURSE_VOCAB, course_vocab_plan.py) ----
@@ -6854,6 +6940,19 @@
   }
   function regionalFlag(key) {
     return typeof REGIONAL_SCHEDULE !== "undefined" && REGIONAL_SCHEDULE && REGIONAL_SCHEDULE[key] || null;
+  }
+  // The Monday (YYYY-MM-DD) of the homework week that follows the class / meeting / cancelled class on `date`
+  // (the same day assignLabel() starts from); "" for a date that is not YYYY/MM/DD.
+  function assignMonday(date) {
+    var m = /^(\d{4})[\/-](\d{2})[\/-](\d{2})$/.exec(date || "");
+    if (!m) return "";
+    var d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+    d.setUTCDate(d.getUTCDate() + ((8 - d.getUTCDay()) % 7 || 7));
+    return d.toISOString().slice(0, 10);
+  }
+  function assignDayAttr(day) {
+    var ko = String((day && day.ko) || day || "").replace("요일", "");
+    return ko ? ' data-day="' + escapeAttr(ko) + '"' : "";
   }
   // "2026/10/05~09 주간 수행 과제": the Monday-Friday after the class (or meeting / cancelled class) on `date`.
   function assignLabel(date) {
@@ -7524,10 +7623,10 @@ function verifyDistribution(units, dist, pins) {
         ["월", "화", "수", "목", "금"].forEach(function (day) {
           var dayItems = sess.assignments.filter(function (x) { return x.day === day; });
           if (!dayItems.length) return;
-          html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(regionalDayLabel(day)) + '</div>';
+          html += '<div class="curr-assign-day-group" data-day="' + escapeAttr(day) + '"><div class="curr-assign-day-label">' + escapeHtml(regionalDayLabel(day)) + '</div>';
           [["review", "복습"], ["preview", "예습"], ["vocab", "어휘"]].forEach(function (g) {
-            dayItems.filter(function (x) { return x.category === g[0]; }).forEach(function (it) {
-              html += '<div class="curr-assign-row"><span class="curr-assign-kind ' + g[0] + '">' + TU(g[1]) + '</span><span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+            courseVisible(dayItems.filter(function (x) { return x.category === g[0]; })).forEach(function (it) {
+              html += '<div class="curr-assign-row"><span class="curr-assign-kind ' + g[0] + '">' + TU(g[1]) + '</span><span class="curr-assign-text">' + escapeHtml(courseAssignText(it, it.unit)) + '</span>' +
                 currLinkBtn(curriculumLinkForWeek(it.link, it.unit)) + '</div>';
             });
           });
@@ -7759,12 +7858,12 @@ function verifyDistribution(units, dist, pins) {
         if (window.__COURSE_CAPTURE && welcomeAssign) window.__COURSE_CAPTURE.hw[0] = JSON.parse(JSON.stringify(welcomeAssign));
       }
       if (welcomeAssign) {
-        html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + assignLabel(sched && sched.preliminaryMeeting && sched.preliminaryMeeting.calculatedDate) + '</span>' + currChev() + '</button><div class="curr-assign-body">';
+        html += '<div class="curr-assign-card" data-open="false" data-hw-monday="' + assignMonday(sched && sched.preliminaryMeeting && sched.preliminaryMeeting.calculatedDate) + '"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + assignLabel(sched && sched.preliminaryMeeting && sched.preliminaryMeeting.calculatedDate) + '</span>' + currChev() + '</button><div class="curr-assign-body">';
         welcomeAssign.days.forEach(function (d) {
-          html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
+          html += '<div class="curr-assign-day-group"' + assignDayAttr(d.day) + '><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
           [[d.reviews || [], "review", "복습"], [d.previews || [], "preview", "예습"], [d.vocab || [], "vocab", "어휘"]].forEach(function (group) {
-            group[0].forEach(function (it) {
-              html += '<div class="curr-assign-row"><span class="curr-assign-kind ' + group[1] + '">' + TU(group[2]) + '</span><span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, 0)) + '</div>';
+            courseVisible(group[0], 0).forEach(function (it) {
+              html += '<div class="curr-assign-row"><span class="curr-assign-kind ' + group[1] + '">' + TU(group[2]) + '</span><span class="curr-assign-text">' + escapeHtml(courseAssignText(it, 0)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, 0)) + '</div>';
             });
           });
           html += '</div>';
@@ -7901,27 +8000,27 @@ function verifyDistribution(units, dist, pins) {
             }
             if (window.__COURSE_CAPTURE && assign) window.__COURSE_CAPTURE.hw[slot.week] = JSON.parse(JSON.stringify(assign));
             if (assign) {
-              html += '<div class="curr-assign-card" data-open="false">' +
+              html += '<div class="curr-assign-card" data-open="false" data-hw-monday="' + assignMonday(slot.calculatedDate) + '">' +
                 '<button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + assignLabel(slot.calculatedDate) + '</span>' + currChev() + '</button>' +
                 '<div class="curr-assign-body">';
               assign.days.forEach(function (d) {
-                html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
-                (d.reviews || []).forEach(function (it) {
+                html += '<div class="curr-assign-day-group"' + assignDayAttr(d.day) + '><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
+                courseVisible(d.reviews, nextInst.week).forEach(function (it) {
                   html += '<div class="curr-assign-row">' +
                     '<span class="curr-assign-kind review">' + TU("복습") + '</span>' +
-                    '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                    '<span class="curr-assign-text">' + escapeHtml(courseAssignText(it, nextInst.week)) + '</span>' +
                     currLinkBtn(curriculumLinkForWeek(it.link, nextInst.week)) + '</div>';
                 });
-                (d.previews || []).forEach(function (it) {
+                courseVisible(d.previews, nextInst.week).forEach(function (it) {
                   html += '<div class="curr-assign-row">' +
                     '<span class="curr-assign-kind preview">' + TU("예습") + '</span>' +
-                    '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                    '<span class="curr-assign-text">' + escapeHtml(courseAssignText(it, nextInst.week)) + '</span>' +
                     currLinkBtn(curriculumLinkForWeek(it.link, nextInst.week)) + '</div>';
                 });
-                (d.vocab || []).forEach(function (it) {
+                courseVisible(d.vocab, nextInst.week).forEach(function (it) {
                   html += '<div class="curr-assign-row">' +
                     '<span class="curr-assign-kind vocab">' + TU("어휘") + '</span>' +
-                    '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                    '<span class="curr-assign-text">' + escapeHtml(courseAssignText(it, nextInst.week)) + '</span>' +
                     currLinkBtn(curriculumLinkForWeek(it.link, nextInst.week)) + '</div>';
                 });
                 html += '</div>';
@@ -7976,23 +8075,23 @@ function verifyDistribution(units, dist, pins) {
             '<button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button>' +
             '<div class="curr-assign-body">';
           assign.days.forEach(function (d) {
-            html += '<div class="curr-assign-day-group"><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
-            (d.reviews || []).forEach(function (it) {
+            html += '<div class="curr-assign-day-group"' + assignDayAttr(d.day) + '><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>';
+            courseVisible(d.reviews, nextSlot.week).forEach(function (it) {
               html += '<div class="curr-assign-row">' +
                 '<span class="curr-assign-kind review">' + TU("복습") + '</span>' +
-                '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                '<span class="curr-assign-text">' + escapeHtml(courseAssignText(it, nextSlot.week)) + '</span>' +
                 currLinkBtn(curriculumLinkForWeek(it.link, nextSlot.week)) + '</div>';
             });
-            (d.previews || []).forEach(function (it) {
+            courseVisible(d.previews, nextSlot.week).forEach(function (it) {
               html += '<div class="curr-assign-row">' +
                 '<span class="curr-assign-kind preview">' + TU("예습") + '</span>' +
-                '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                '<span class="curr-assign-text">' + escapeHtml(courseAssignText(it, nextSlot.week)) + '</span>' +
                 currLinkBtn(curriculumLinkForWeek(it.link, nextSlot.week)) + '</div>';
             });
-            (d.vocab || []).forEach(function (it) {
+            courseVisible(d.vocab, nextSlot.week).forEach(function (it) {
               html += '<div class="curr-assign-row">' +
                 '<span class="curr-assign-kind vocab">' + TU("어휘") + '</span>' +
-                '<span class="curr-assign-text">' + escapeHtml(T(it.text)) + '</span>' +
+                '<span class="curr-assign-text">' + escapeHtml(courseAssignText(it, nextSlot.week)) + '</span>' +
                 currLinkBtn(curriculumLinkForWeek(it.link, nextSlot.week)) + '</div>';
             });
             html += '</div>';
@@ -8848,11 +8947,12 @@ function verifyDistribution(units, dist, pins) {
         var titleHtml = rec.kind === "lesson"
           ? '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(titleVi) + '</span>' + titleTrSpan(rec.title) + '</span>'
           : '<span class="cnt">' + escapeHtml(titleVi) + (recTitleTr ? ' · ' + escapeHtml(recTitleTr) : '') + '</span>';
+        var lffBadges = jwTitleBadgesHtml(lffJwDocid(rec));
         html += '<div class="group-card" data-open="' + (openSyls["lff" + ri] ? "true" : "false") + '" data-syl="lff' + ri + '" data-anchor="lff' + ri + '">' +
-          '<div class="group-head-row"><button class="group-head"><span>' +
+          '<div class="group-head-row' + (lffBadges ? ' has-jw-badges' : '') + '"><button class="group-head"><span>' +
           (label ? '<span class="syl">' + escapeHtml(label) + '</span> ' : '') +
-          titleHtml + '</span>' + currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
-          '<div class="group-body">' + jwFinderLinksHtml(lffJwDocid(rec)) + '<div class="talk-lines">';
+          titleHtml + '</span>' + currChev() + '</button>' + lffBadges + readAllButtonHtml(readPairs) + '</div>' +
+          '<div class="group-body"><div class="talk-lines">';
         lineUnits.forEach(function (l) {
           html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
             '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
@@ -8911,12 +9011,13 @@ function verifyDistribution(units, dist, pins) {
         }
       });
       var readPairs = [[rec.title.vi, T(rec.title)]].concat(lineUnits.map(function (l) { return [l.vi, l.kr]; }));
+      var lpdBadges = jwTitleBadgesHtml(lpdJwDocid(rec));
       html += '<div class="group-card" data-open="' + (openSyls["lpd" + ri] ? "true" : "false") + '" data-syl="lpd' + ri + '" data-anchor="lpd' + ri + '">' +
-        '<div class="group-head-row"><button class="group-head"><span>' +
+        '<div class="group-head-row' + (lpdBadges ? ' has-jw-badges' : '') + '"><button class="group-head"><span>' +
         '<span class="syl">' + escapeHtml(lpdRecordLabel(rec)) + '</span> ' +
         '<span class="lpd-title' + (rec.kind === "appendix" ? " is-appendix-title" : "") + '"><span class="lpd-title-vi">' + escapeHtml(rec.title.vi) + '</span>' + (T(rec.title) ? ' <span class="lpd-title-translation">· ' + escapeHtml(T(rec.title)) + '</span>' : '') + '</span>' +
-        '</span>' + currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
-        '<div class="group-body">' + jwFinderLinksHtml(lpdJwDocid(rec)) + '<div class="talk-lines">';
+        '</span>' + currChev() + '</button>' + lpdBadges + readAllButtonHtml(readPairs) + '</div>' +
+        '<div class="group-body"><div class="talk-lines">';
       lineUnits.forEach(function (l) {
         html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
           '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
@@ -9200,7 +9301,27 @@ function verifyDistribution(units, dist, pins) {
     if (!firstMeetingPronouns()) return w.example;
     return applyLffListenerTerms(w.example);
   }
-  function renderVocabWatchtower(root, q) {
+  // view "words": [어휘] > [파수대] -- the study words of each week (word + meaning); view "sentences" (default):
+  // [문장] > [파수대] -- the example sentences of those words (sentence + meaning). Same week cards, same data, same
+  // range banner; a word's identity (its Vietnamese text, the SRS key) is what it always was.
+  // 전체 듣기 of a Watchtower week card: [title, its UI-language title] in front of the body entries, each language left
+  // out when 묵음 silences it.
+  function wtReadAllEntries(wk, body) {
+    var titleVi = wk.article_title && wk.article_title.vi;
+    var list = body;
+    if (titleVi) {
+      // A body that begins with the very same Vietnamese text (a study word spelled like the title) is not read twice:
+      // its Vietnamese is left out, its meaning stays.
+      var rest = body.length && vocabKey(body[0][0]) === vocabKey(titleVi) ? [["", body[0][1]]].concat(body.slice(1)) : body;
+      list = [[titleVi, currentLang === "vi" ? "" : T(wk.article_title)]].concat(rest);
+    }
+    return list.map(function (e) {
+      return [muteScopeSilences("vi") ? "" : e[0], muteScopeSilences("meaning") ? "" : (e[1] || "")];
+    }).filter(function (e) { return e[0] || e[1]; });
+  }
+  function vocabKey(x) { return String(x || "").normalize("NFC").replace(/\s+/g, " ").trim().toLowerCase(); }
+  function renderVocabWatchtower(root, q, view) {
+    var wordsView = view === "words";
     // The first five articles predate this class. From source article 6 onward, labels follow
     // the actual class calendar, including the three scheduled breaks.
     // JW has no class calendar: its headers are date + article title only. The regional sites
@@ -9228,47 +9349,59 @@ function verifyDistribution(units, dist, pins) {
       weeks = order.map(function (key) { return Object.assign({}, map[key].wk, { words: map[key].words }); });
     }
     var qWeeks = weeks.map(function (wk) {
-      if (!q) return wk;
       var words = wk.words.filter(function (w) {
-        return w.vi.toLowerCase().indexOf(q) >= 0 || T(w.mean).toLowerCase().indexOf(q) >= 0 || w.example.toLowerCase().indexOf(q) >= 0;
+        if (!wordsView && !(w.example && w.example_mean)) return false;
+        if (!q) return true;
+        return wordsView ? (w.vi.toLowerCase().indexOf(q) >= 0 || T(w.mean).toLowerCase().indexOf(q) >= 0)
+          : (w.example.toLowerCase().indexOf(q) >= 0 || T(w.example_mean).toLowerCase().indexOf(q) >= 0);
       });
       return words.length ? Object.assign({}, wk, { words: words }) : null;
     }).filter(Boolean);
-    if (!qWeeks.length) { root.innerHTML = vocabFocusBannerHtml("wt") + '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>'; bindVocabFocusClear(root, renderCurrWt); return; }
+    var clearRender = wordsView ? renderVocab : renderCurrWt;
+    if (!qWeeks.length) { root.innerHTML = vocabFocusBannerHtml("wt") + '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>'; bindVocabFocusClear(root, clearRender); return; }
     var openAll = !!q || (vocabFocus && vocabFocus.mode === "wt");
-    var html = vocabFocusBannerHtml("wt") + '<div class="chain-note">' + TU("이 주의 파수대 연구 기사에서 뽑은 어휘예요. 예문과 예문의 뜻도 함께 보여줘요.") + '</div>';
-    // Read-all order per word: 단어(vi) -> 단어 뜻 -> 예문(vi) -> 예문 뜻, so each word contributes
-    // two consecutive [vi, mean] pairs to the shared registry (playReadAllNext plays entries in
-    // array order, one at a time), rather than one.
+    var html = vocabFocusBannerHtml("wt");
+    // 반복 듣기 + 묵음 (the same controls as [복습] and [대역 읽기]): 전체 듣기 below follows them.
+    html += '<div class="reader-audio-row"><label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span id="repeat-toggle-wt-' + view + '"></span></label>' +
+      muteGroupHtml(false, muteScope || lastNonMcqScope || "both") + '</div>';
+    // Read-all order: the article's title first (Vietnamese, then the UI language's title -- from the Watchtower data,
+    // not from the page), then the body: the words view reads word -> meaning; the sentences view example -> its meaning
+    // (one [vi, mean] pair per row of the view, in the shared registry). 묵음 silences a language in all of it.
     qWeeks.forEach(function (wk) {
       var readAllEntries = [];
       wk.words.forEach(function (w) {
-        readAllEntries.push([w.vi, T(w.mean)]);
-        readAllEntries.push([wtExampleVi(w), w.example_mean ? T(w.example_mean) : ""]);
+        if (wordsView) readAllEntries.push([w.vi, T(w.mean)]);
+        else readAllEntries.push([wtExampleVi(w), w.example_mean ? T(w.example_mean) : ""]);
       });
+      readAllEntries = wtReadAllEntries(wk, readAllEntries);
       var weekLabel = watchtowerDisplayLabel(wk.week);
       var dateRangeTr = T(wk.date_range);
       var articleVi = wk.article_title && wk.article_title.vi;
       var articleTr = articleVi && currentLang !== "vi" ? T(wk.article_title) : "";
+      var wtBadges = articleVi ? jwTitleBadgesHtml(wtJwDocid(wk.week)) : '';
       html += '<div class="group-card" data-open="' + openAll + '" data-syl="wt' + wk.week + '">' +
-        '<div class="group-head-row"><button class="group-head"><span class="wt-head">' +
+        '<div class="group-head-row' + (wtBadges ? ' has-jw-badges' : '') + '"><button class="group-head"><span class="wt-head">' +
         (weekLabel ? '<span class="syl">' + escapeHtml(weekLabel) + '</span> ' : '') +
         (dateRangeTr ? '<span class="syl wt-date">' + escapeHtml(dateRangeTr) + '</span> ' : '') +
         (articleVi ? '<span class="wt-article"><span class="syl wt-article-vi">' + escapeHtml(articleVi) + '</span>' +
           (articleTr ? ' <span class="wt-article-tr">' + escapeHtml(articleTr) + '</span>' : '') + '</span> ' : '') +
-        '<span class="cnt">' + wk.words.length + TU("개 단어") + '</span></span>' +
+        '<span class="cnt">' + wk.words.length + (wordsView ? TU("개 단어") : TU("개 문장")) + '</span></span>' +
         '<span class="chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></button>' +
-        readAllButtonHtml(readAllEntries) + '</div>' +
-        '<div class="group-body">' + (articleVi ? jwFinderLinksHtml(wtJwDocid(wk.week)) : '') + '<div class="rhyme-word-list">';
+        wtBadges + readAllButtonHtml(readAllEntries) + '</div>' +
+        '<div class="group-body"><div class="rhyme-word-list">';
       wk.words.forEach(function (w) {
-        html += '<div class="rhyme-word-row">' +
-          '<div class="rhyme-word-main"><span class="rw-word vn">' + escapeHtml(w.vi) + '</span>' +
-          '<button class="speak-btn" data-speak="' + escapeAttr(w.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
-          '<span class="rw-gloss">' + escapeHtml(T(w.mean)) + '</span></div>' +
-          '<div class="rhyme-word-ex"><span class="vn">' + escapeHtml(wtExampleVi(w)) + '</span>' +
-          '<button class="speak-btn" data-speak="' + escapeAttr(wtExampleVi(w)) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-          (w.example_mean ? '<div class="rhyme-word-ex-mean">' + escapeHtml(T(w.example_mean)) + '</div>' : '') +
-          '</div>';
+        if (wordsView) {
+          html += '<div class="rhyme-word-row" data-wt-word="' + escapeAttr(w.vi) + '">' +
+            '<div class="rhyme-word-main"><span class="rw-word vn">' + escapeHtml(w.vi) + '</span>' +
+            '<button class="speak-btn" data-speak="' + escapeAttr(w.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+            '<span class="rw-gloss">' + escapeHtml(T(w.mean)) + '</span></div></div>';
+        } else {
+          html += '<div class="rhyme-word-row">' +
+            '<div class="rhyme-word-ex"><span class="vn">' + escapeHtml(wtExampleVi(w)) + '</span>' +
+            '<button class="speak-btn" data-speak="' + escapeAttr(wtExampleVi(w)) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
+            (w.example_mean ? '<div class="rhyme-word-ex-mean">' + escapeHtml(T(w.example_mean)) + '</div>' : '') +
+            '</div>';
+        }
       });
       html += '</div></div></div>';
     });
@@ -9279,8 +9412,11 @@ function verifyDistribution(units, dist, pins) {
       });
     });
     root.querySelectorAll(".speak-btn").forEach(function (b) { b.addEventListener("click", function (e) { e.stopPropagation(); speak(b.dataset.speak); }); });
-    bindVocabFocusClear(root, renderCurrWt);
+    bindVocabFocusClear(root, clearRender);
+    renderViRepeatToggle(document.getElementById("repeat-toggle-wt-" + view));
+    bindMuteGroup(root, false, function () { renderVocabWatchtowerAgain(root, q, view); });
   }
+  function renderVocabWatchtowerAgain(root, q, view) { renderVocabWatchtower(root, q, view); }
 
   // 파수대 moved from 어휘 into its own 문장 subtab (data-sentence="wt") -- this thin wrapper just
   // supplies renderVocabWatchtower() with the 문장 tab's own mount/search elements instead of
@@ -9292,7 +9428,7 @@ function verifyDistribution(units, dist, pins) {
       var searchEl = document.getElementById("wt-search");
       q = searchEl ? searchEl.value.trim().toLowerCase() : "";
     }
-    renderVocabWatchtower(root, q);
+    renderVocabWatchtower(root, q, "sentences");
   }
   (function () {
     var wtSearchInput = document.getElementById("wt-search");
@@ -9432,9 +9568,9 @@ function verifyDistribution(units, dist, pins) {
   }
 
   // The UI language's own text of a song, else Korean (what this list has always done) -- except for a song the UI language has
-  // no lyrics for at all (164 in Japanese: jw.org has the video, the workbook no text). That one shows empty target rows and
-  // titles, like T(): "missing learning translations stay empty in every non-Korean language", never Korean under another
-  // language's name. Returns the language key to fall back to.
+  // no lyrics for at all (none today: 164 in Japanese has its official lyrics since 2026-10-05). Such a song would show empty
+  // target rows and titles, like T(): "missing learning translations stay empty in every non-Korean language", never Korean
+  // under another language's name. Returns the language key to fall back to.
   function songKoFallback(song) {
     return song.lines.some(function (l) { return (l[currentLang] || "").trim(); }) ? "ko" : currentLang;
   }
@@ -9455,19 +9591,76 @@ function verifyDistribution(units, dist, pins) {
       id: ["IN", "Bahasa Indonesia"], zh_cn: ["CHS", "简体中文"]
     }[lang] || null;
   }
+  // ---- jw.org links: ONE strict policy for every jw.org publication / media / audio / video link a screen shows ----
+  // A link to jw.org is only ever rendered when it is a share link of the jw.org finder:
+  //   https://www.jw.org/finder?srcid=jwlshare&wtlocale=<code>&lank=<media key>      (a song, a video, an audio)
+  //   https://www.jw.org/finder?srcid=jwlshare&wtlocale=<code>&prefer=lang&docid=<id> (a publication page; its finder form
+  //                                                                                     has a docid where media have a lank)
+  // Article / locale-path addresses, direct media / CDN addresses, redirects and finder addresses without srcid=jwlshare or
+  // without wtlocale are rejected (jwOrgBadgeHtml() then returns "", so nothing can show them by mistake).
+  function isAllowedJwOrgShareUrl(url) {
+    if (!url || typeof url !== "string") return false;
+    var u;
+    try { u = new URL(url); } catch (e) { return false; }
+    if (u.protocol !== "https:" || (u.hostname !== "www.jw.org" && u.hostname !== "jw.org")) return false;
+    if (u.pathname !== "/finder" || u.username || u.password || u.port) return false;
+    var q = u.searchParams;
+    if (q.get("srcid") !== "jwlshare" || !q.get("wtlocale")) return false;
+    return !!(q.get("lank") || q.get("docid"));
+  }
+  // What a badge is for (tooltip / aria-label; the visible text is always just "JW.ORG").
+  function jwBadgeKindLabels() {
+    return {
+      "song-video": { ko: "노래 영상", vi: "Video bài hát", en: "Song video", ja: "歌のビデオ", zh: "詩歌影片", zh_cn: "诗歌视频", de: "Lied-Video",
+        fr: "Vidéo du cantique", pl: "Film z pieśnią", cs: "Video písně", hu: "Énekvideó", id: "Video lagu" },
+      "choir-audio": { ko: "JW 합창 오디오", vi: "Âm thanh hợp xướng JW", en: "JW choir audio", ja: "JW合唱の音声", zh: "JW合唱音頻", zh_cn: "JW合唱音频",
+        de: "JW-Chor-Audio", fr: "Audio de la chorale JW", pl: "Nagranie chóru JW", cs: "Nahrávka sboru JW", hu: "JW-kórusfelvétel", id: "Audio paduan suara JW" },
+      "choir-video": { ko: "JW 합창 비디오", vi: "Video hợp xướng JW", en: "JW choir video", ja: "JW合唱のビデオ", zh: "JW合唱影片", zh_cn: "JW合唱视频",
+        de: "JW-Chor-Video", fr: "Vidéo de la chorale JW", pl: "Film z chórem JW", cs: "Video sboru JW", hu: "JW-kórusvideó", id: "Video paduan suara JW" }
+    };
+  }
+  // The one badge every jw.org link uses: navy "JW.ORG". opts: kind (data-media-kind; song-video | choir-audio | choir-video |
+  // a children's / choir media kind | publication), label (the tooltip / aria text; default: the kind's label), lang (data-jw-lang).
+  // A URL that is not an allowed share link gives "" (fails closed). The text is never read aloud: speech comes from data-speak*.
+  function jwOrgBadgeHtml(url, opts) {
+    if (!isAllowedJwOrgShareUrl(url)) return "";
+    opts = opts || {};
+    var kind = opts.kind || "publication";
+    var kinds = jwBadgeKindLabels();
+    var label = opts.label || (kinds[kind] ? T(kinds[kind]) : "");
+    return '<a class="jw-org-badge" href="' + escapeAttr(url) + '" target="_blank" rel="noopener noreferrer" data-media-kind="' + escapeAttr(kind) + '"' +
+      (opts.lang ? ' data-jw-lang="' + escapeAttr(opts.lang) + '"' : '') +
+      ' aria-label="JW.ORG' + (label ? ' \u2014 ' + escapeAttr(label) : '') + '"' + (label ? ' title="' + escapeAttr(label) + '"' : '') + '>JW.ORG</a>';
+  }
+  function jwBadgeItemHtml(lang, badge) {
+    return badge ? '<span class="jw-badge-item"><span class="jw-badge-lang" lang="' + lang + '">' + escapeHtml(songJwLocale(lang)[1]) + '</span>' + badge + '</span>' : "";
+  }
   function jwFinderUrl(docid, lang) {
     var loc = songJwLocale(lang);
-    return loc && docid ? "https://www.jw.org/finder?srcid=jwlshare&wtlocale=" + loc[0] + "&prefer=lang&docid=" + docid : "";
+    var url = loc && docid ? "https://www.jw.org/finder?srcid=jwlshare&wtlocale=" + loc[0] + "&prefer=lang&docid=" + docid : "";
+    return isAllowedJwOrgShareUrl(url) ? url : "";
   }
-  // Links to a jw.org document: the Vietnamese page, and the current UI language's page when that is not Vietnamese.
+  // Badges for a jw.org publication page (a lesson of 「행복한 삶을 영원히」 / 「사람들을 사랑하고 제자로」, a 파수대 article, the page of a
+  // song): the Vietnamese page, and the current UI language's page when that is not Vietnamese. (They are in the opened card's
+  // first row: the card's title is a button, which cannot hold a link.)
+  // The same badges for the title row of a card: "title [JW.ORG]". The title is a <button> (it opens the card) and a link cannot be
+  // inside a button, so the badges are the button's sibling in the row (.group-head-row.has-jw-badges); the styles let the
+  // button shrink to its title so that the badge follows it. "" when the page has no allowed link.
+  function jwTitleBadgesHtml(docid) {
+    if (!docid) return "";
+    var langs = currentLang === "vi" ? ["vi"] : ["vi", currentLang];
+    var badges = langs.map(function (l) {
+      return jwOrgBadgeHtml(jwFinderUrl(docid, l), { kind: "publication", lang: l, label: songJwLocale(l)[1] });
+    }).join("");
+    return badges ? '<span class="jw-title-badges">' + badges + '</span>' : "";
+  }
   function jwFinderLinksHtml(docid) {
     if (!docid) return "";
     var langs = currentLang === "vi" ? ["vi"] : ["vi", currentLang];
-    var links = langs.map(function (l) {
-      var url = jwFinderUrl(docid, l);
-      return url ? '<a href="' + escapeAttr(url) + '" target="_blank" rel="noopener">jw.org (' + escapeHtml(songJwLocale(l)[1]) + ')</a>' : "";
+    var items = langs.map(function (l) {
+      return jwBadgeItemHtml(l, jwOrgBadgeHtml(jwFinderUrl(docid, l), { kind: "publication", lang: l, label: songJwLocale(l)[1] }));
     }).join("");
-    return links ? '<div class="kid-song-links song-jw-links">' + links + '</div>' : "";
+    return items ? '<div class="jw-badge-row song-jw-links">' + items + '</div>' : "";
   }
   function songJwLinksHtml(number) {
     var full = songFullListenHtml(number);
@@ -9477,7 +9670,24 @@ function verifyDistribution(units, dist, pins) {
   // jw.org media page by "lank" (pub-<code>_<track>_<VIDEO|AUDIO>) in one UI language.
   function jwLankUrl(lank, lang) {
     var loc = songJwLocale(lang);
-    return loc ? "https://www.jw.org/finder?srcid=jwlshare&wtlocale=" + loc[0] + "&lank=" + lank : "";
+    var url = loc ? "https://www.jw.org/finder?srcid=jwlshare&wtlocale=" + loc[0] + "&lank=" + lank : "";
+    return isAllowedJwOrgShareUrl(url) ? url : "";
+  }
+  // The badges that follow a 왕국 노래 title in one language: the song's video (pub-sjjm_<n>_VIDEO), the JW choir audio and video
+  // (pub-osg_<track>_AUDIO / _VIDEO) -- in that order, each only where jw.org has it in that language (SONG_MEDIA.full,
+  // CHOIR_OSG: scripts/song_full_media.py, scripts/song_choir_media.py). The osg track of a song is an explicit table
+  // (CHOIR_OSG.tracks, read from jw.org's media metadata), never computed from the song number.
+  function songTitleBadgesHtml(number, lang) {
+    var have = (typeof SONG_MEDIA !== "undefined" && SONG_MEDIA && SONG_MEDIA.full) || {};
+    var choir = (typeof CHOIR_OSG !== "undefined" && CHOIR_OSG) || null;
+    var html = "";
+    if ((have[lang] || []).indexOf(number) >= 0) html += jwOrgBadgeHtml(jwLankUrl("pub-sjjm_" + number + "_VIDEO", lang), { kind: "song-video", lang: lang });
+    var track = choir && choir.tracks && choir.tracks[String(number)];
+    if (track) {
+      if (((choir.audio || {})[lang] || []).indexOf(number) >= 0) html += jwOrgBadgeHtml(jwLankUrl("pub-osg_" + track + "_AUDIO", lang), { kind: "choir-audio", lang: lang });
+      if (((choir.video || {})[lang] || []).indexOf(number) >= 0) html += jwOrgBadgeHtml(jwLankUrl("pub-osg_" + track + "_VIDEO", lang), { kind: "choir-video", lang: lang });
+    }
+    return html;
   }
   // (a function, like songJwLocale: renderCurrSongs() first runs during start-up, before this point is reached)
   function songMediaKinds() {
@@ -9500,10 +9710,12 @@ function verifyDistribution(units, dist, pins) {
     var have = (typeof SONG_MEDIA !== "undefined" && SONG_MEDIA && SONG_MEDIA.full) || {};
     var langs = (currentLang === "vi" ? ["vi"] : ["vi", currentLang]).filter(function (l) { return (have[l] || []).indexOf(number) >= 0; });
     if (!langs.length) return "";
-    return '<div class="song-full-links"><span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + langs.map(function (l) {
-      return '<a class="read-all-btn song-full-link" href="' + escapeAttr(jwLankUrl("pub-sjjm_" + number + "_VIDEO", l)) +
-        '" target="_blank" rel="noopener noreferrer">▶ ' + escapeHtml(songJwLocale(l)[1]) + '</a>';
-    }).join("") + '</div>';
+    var buttons = langs.map(function (l) {
+      var url = jwLankUrl("pub-sjjm_" + number + "_VIDEO", l);
+      return url ? '<a class="read-all-btn song-full-link" href="' + escapeAttr(url) +
+        '" target="_blank" rel="noopener noreferrer">▶ ' + escapeHtml(songJwLocale(l)[1]) + '</a>' : "";
+    }).join("");
+    return buttons ? '<div class="song-full-links"><span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + buttons + '</div>' : "";
   }
   // Children's song video/audio and choir audio of a song: only the ones that exist on jw.org in that language
   // (SONG_MEDIA, song_media_data.py), for Vietnamese and the current UI language.
@@ -9512,10 +9724,9 @@ function verifyDistribution(units, dist, pins) {
     var langs = currentLang === "vi" ? ["vi"] : ["vi", currentLang];
     return songMediaKinds().map(function (k) {
       var links = langs.filter(function (l) { return ((SONG_MEDIA[k[0]] || {})[l] || []).indexOf(number) >= 0; }).map(function (l) {
-        return '<a href="' + escapeAttr(jwLankUrl("pub-" + k[1] + "_" + number + "_" + k[2], l)) + '" target="_blank" rel="noopener">' +
-          escapeHtml(songJwLocale(l)[1]) + '</a>';
+        return jwBadgeItemHtml(l, jwOrgBadgeHtml(jwLankUrl("pub-" + k[1] + "_" + number + "_" + k[2], l), { kind: k[0], lang: l, label: T(k[3]) }));
       }).join("");
-      return links ? '<div class="kid-song-links song-media-links"><span class="song-media-label">' + escapeHtml(T(k[3])) + '</span>' + links + '</div>' : "";
+      return links ? '<div class="jw-badge-row song-media-links"><span class="song-media-label">' + escapeHtml(T(k[3])) + '</span>' + links + '</div>' : "";
     }).join("");
   }
   // 「행복한 삶을 영원히」 on jw.org: lesson N is docid 1102021200 + N, the part N review 1102021301 + 10 N and
@@ -9568,39 +9779,59 @@ function verifyDistribution(units, dist, pins) {
     var bodyId = "songacc-" + song.id;
     return '<button type="button" class="song-acc-head" aria-expanded="' + (open ? "true" : "false") + '" aria-controls="' + bodyId + '" data-song-acc="' + escapeAttr(song.id) + '">' +
       '<span class="song-badge">' + song.track + '</span><span class="song-acc-titles">' +
-      (song.vi.title ? '<span class="song-acc-vi vn" lang="vi">' + escapeHtml(song.vi.title) + '</span>' : '<span class="song-acc-missing">' + escapeHtml(TU("베트남어 미제공")) + '</span>') +
-      '<span class="song-acc-ko" lang="ko">' + escapeHtml(song.ko.title) + '</span></span>' + currChev() + '</button>';
+      // The two titles are the typography of the song title of [왕국 노래] (.song-detail-vi-title / .song-detail-target-title),
+      // on one line with a real space between them (they wrap like text).
+      (song.vi.title ? '<span class="song-acc-vi song-detail-vi-title vn" lang="vi">' + escapeHtml(song.vi.title) + '</span>' : '<span class="song-acc-missing">' + escapeHtml(TU("베트남어 미제공")) + '</span>') +
+      (song.ko.title ? ' <span class="song-acc-ko song-detail-target-title" lang="ko">' + escapeHtml(song.ko.title) + '</span>' : '') + '</span>' + currChev() + '</button>';
   }
+  // "title [JW.ORG]": the title button and its badges (the JSON's own jwOrgUrl of each language) are siblings of one row.
+  function songAccHeadRowHtml(kind, song, open) {
+    var badges = ["vi", "ko"].map(function (l) {
+      var d = song[l];
+      return d.url && d.available ? jwOrgBadgeHtml(d.url, { kind: "song-video", lang: l }) : "";
+    }).join("");
+    return '<div class="song-acc-headrow' + (badges ? ' has-jw-badges' : '') + '">' + songAccHeadHtml(kind, song, open) +
+      (badges ? '<span class="jw-title-badges">' + badges + '</span>' : '') + '</div>';
+  }
+  // A language's lyrics, independent of the other language's (their lines do not correspond), in the line style of [왕국 노래]:
+  // every line a .lyric-unit (Vietnamese .lyric-vi, the other language .lyric-target), a "(코러스)" line the section marker.
   function songLyricColumnHtml(langKey, d) {
     var name = songJwLocale(langKey)[1];
+    var vi = langKey === "vi";
     var html = '<section class="song-lyric-col" lang="' + langKey + '"><h4>' + escapeHtml(name) + '</h4>';
     if (!d.available || !d.lines.length) {
-      return html + '<div class="song-lyric-missing">' + escapeHtml(TU(langKey === "vi" ? "베트남어 가사 미제공" : "한국어 가사 미제공")) + '</div></section>';
+      return html + '<div class="song-lyric-missing">' + escapeHtml(TU(vi ? "베트남어 가사 미제공" : "한국어 가사 미제공")) + '</div></section>';
     }
     d.lines.forEach(function (line) {
       if (!String(line).trim()) { html += '<div class="song-stanza-gap" aria-hidden="true"></div>'; return; }
-      if (isSongLabelLine(line)) { html += '<div class="song-line-label">' + escapeHtml(line) + '</div>'; return; }
+      if (isSongLabelLine(line)) {
+        html += '<div class="lyric-section-marker"><div class="' + (vi ? 'lyric-marker-vi vn' : 'lyric-marker-target') + '">' + escapeHtml(line) + '</div></div>';
+        return;
+      }
       var say = songLineSpeechText(line);
-      html += '<div class="song-line"><span class="song-line-text' + (langKey === "vi" ? ' vn' : '') + '">' + escapeHtml(line) + '</span>' +
-        (say ? '<button type="button" class="speak-btn" ' + (langKey === "vi" ? 'data-speak' : 'data-speak-ko') + '="' + escapeAttr(say) + '" aria-label="' +
-          escapeAttr(TU(langKey === "vi" ? "베트남어 구절 듣기" : "한국어 구절 듣기")) + '">' + speakIcon() + '</button>' : '') + '</div>';
+      html += '<div class="lyric-unit song-lyric-line"><div class="' + (vi ? 'lyric-vi-row' : 'lyric-target-row') + '">' +
+        '<div class="' + (vi ? 'lyric-vi vn' : 'lyric-target') + '">' + escapeHtml(line) + '</div>' +
+        (say ? '<button type="button" class="speak-btn" ' + (vi ? 'data-speak' : 'data-speak-ko') + '="' + escapeAttr(say) + '" aria-label="' +
+          escapeAttr(TU(vi ? "베트남어 구절 듣기" : "한국어 구절 듣기")) + '">' + speakIcon() + '</button>' : '') + '</div></div>';
     });
     return html + '</section>';
   }
+  // The links are the JSON's own jwOrgUrl of each language (Vietnamese and Korean are what these two collections hold), in the
+  // form of [왕국 노래]: the "전체 듣기" label and one "▶ <language>" button per language that has a valid link; none -> no row.
   function songAccBodyHtml(song) {
+    var usable = function (l) { var d = song[l]; return !!(d.url && d.available && isAllowedJwOrgShareUrl(d.url)); };
     var links = ["vi", "ko"].map(function (l) {
-      var d = song[l];
-      if (!d.url || !d.available) return "";
-      return '<a class="read-all-btn song-full-link" href="' + escapeAttr(d.url) + '" target="_blank" rel="noopener noreferrer">▶ ' +
-        escapeHtml(TU("전체 듣기")) + ' · ' + escapeHtml(songJwLocale(l)[1]) + '</a>';
+      if (!usable(l)) return "";
+      return '<a class="read-all-btn song-full-link" href="' + escapeAttr(song[l].url) + '" target="_blank" rel="noopener noreferrer">▶ ' +
+        escapeHtml(songJwLocale(l)[1]) + '</a>';
     }).join("");
-    return (links ? '<div class="song-full-links">' + links + '</div>' : '') +
+    return (links ? '<div class="song-full-links"><span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + links + '</div>' : '') +
       '<div class="song-lyric-cols">' + songLyricColumnHtml("vi", song.vi) + songLyricColumnHtml("ko", song.ko) + '</div>';
   }
   function songAccHtml(kind, song) {
     var open = !!songKindState.open[kind][song.id];
     return '<div class="song-acc" data-song-id="' + escapeAttr(song.id) + '" data-anchor="' + kind + 'song-' + song.track + '">' +
-      songAccHeadHtml(kind, song, open) +
+      songAccHeadRowHtml(kind, song, open) +
       '<div class="song-acc-body" id="songacc-' + escapeAttr(song.id) + '"' + (open ? '' : ' hidden') + '>' + (open ? songAccBodyHtml(song) : '') + '</div></div>';
   }
   function renderSongKindList(kind) {
@@ -9833,8 +10064,10 @@ function verifyDistribution(units, dist, pins) {
     html += '<div class="song-detail-header">' +
       '<div class="song-detail-title-group">' +
         '<div class="song-detail-number-badge">' + sel.number + TU("번") + '</div>' +
-        '<h3 class="song-detail-vi-title vn">' + escapeHtml(viTitle) + '</h3>' +
-        '<div class="song-detail-target-title">' + escapeHtml(targetTitle) + '</div>' +
+        '<div class="song-detail-title-line song-detail-title-line-vi"><h3 class="song-detail-vi-title vn">' + escapeHtml(viTitle) + '</h3>' +
+          (viTitle ? songTitleBadgesHtml(sel.number, "vi") : '') + '</div>' +
+        '<div class="song-detail-title-line song-detail-title-line-target"><div class="song-detail-target-title">' + escapeHtml(targetTitle) + '</div>' +
+          (targetTitle && currentLang !== "vi" ? songTitleBadgesHtml(sel.number, currentLang) : '') + '</div>' +
         (viScripture ? '<div class="song-detail-vi-scripture vn">' + escapeHtml(viScripture) + '</div>' : '') +
         (targetScripture ? '<div class="song-detail-target-scripture">' + escapeHtml(targetScripture) + '</div>' : '') +
         songJwLinksHtml(sel.number) +
@@ -10347,7 +10580,13 @@ function verifyDistribution(units, dist, pins) {
         // Every word of the [어휘] word list (UNIFIED_WORDS), with that list's meaning of the same word in the
         // current language -- words it holds beyond the lists above, and meanings those lists lack.
         if (typeof UNIFIED_WORDS !== "undefined" && UNIFIED_WORDS) {
-          UNIFIED_WORDS.forEach(function (w) { out.push({ vi: w.vi, kr: reviewMeaning(w.kr) }); });
+          // A word that only the Watchtower study has (tags WT / 행누, meanings in 4 languages) is reviewed in
+          // [복습] > [어휘] > [파수대], not in this pool of every [단어] entry.
+          UNIFIED_WORDS.forEach(function (w) {
+            var tg = w.tags || [];
+            if (tg.length && tg.every(function (x) { return x === "WT" || x === "행누"; })) return;
+            out.push({ vi: w.vi, kr: reviewMeaning(w.kr) });
+          });
         }
         return dedupeByVi(out);
       },
@@ -10563,7 +10802,7 @@ function verifyDistribution(units, dist, pins) {
       pron: ["all", "alphabet", "tones", "tonepairs", "nsdiff"],
       bible: ["all", "books", "numbers", "time", "days", "months"],
       wizard: ["all", "main", "reftable", "talks", "neighbor", "daily"],
-      vocab: ["all", "rhyme", "orderrev", "groups", "basic", "antonym", "freq", "theo", "names", "chain", "dialect"],
+      vocab: ["all", "rhyme", "orderrev", "groups", "basic", "antonym", "freq", "theo", "names", "chain", "dialect", "wt"],
       sentence: ["all", "wt"],
       grammar: ["all", "lessons", "special", "sentences"],
       song: ["all"]
@@ -10669,6 +10908,7 @@ function verifyDistribution(units, dist, pins) {
         else if (scope === "theo") VOCAB_THEO.forEach(function (w) { out.push({ vi: w.word, kr: reviewMeaning(w.meaning) }); });
         else if (scope === "names") BIBLE_NAMES.forEach(function (w) { out.push({ vi: w.vi, kr: reviewMeaning(w.kr) }); });
         else if (scope === "chain") VOCAB_CHAIN.forEach(function (w) { out.push({ vi: w.word, kr: reviewMeaning(w.meaning) }); });
+        else if (scope === "wt") WATCHTOWER_VOCAB.forEach(function (wk) { wk.words.forEach(function (w) { out.push({ vi: w.vi, kr: reviewMeaning(w.mean) }); }); });
         else if (scope === "dialect") DIALECT_WORDS.forEach(function (w) { out.push({ vi: w.north.replace(/[/].*$/, ""), kr: reviewMeaning(w.mean) }, { vi: w.south.replace(/[/].*$/, ""), kr: reviewMeaning(w.mean) }); });
       } else if (key === "grammar") {
         if (scope === "lessons") {
@@ -10742,10 +10982,10 @@ function verifyDistribution(units, dist, pins) {
     // as-long-as-it-takes audio. Each mode supplies a small "reveal" function (revealFlash/
     // revealLook/revealMcq/revealOrder/revealType) that does that mode's own reveal+speak+advance;
     // armAutoReveal()/speakThenAdvance() below are the shared plumbing every mode calls into.
-    var AUTO_ADV_SECONDS_OPTS = [3, 5, 8, 10, 15];
+    var AUTO_ADV_SECONDS_OPTS = [1, 3, 5, 8, 10, 15];
     var autoAdvanceEnabled = false;
     var autoNextOnCorrect = false;
-    var autoAdvanceSeconds = 5;
+    var autoAdvanceSeconds = 1;   // default 1 s; a saved valid choice of the user is kept (see the localStorage read below)
     try {
       var savedAutoAdv = window.localStorage && window.localStorage.getItem("vn-app-auto-adv");
       if (savedAutoAdv) {
@@ -10757,34 +10997,6 @@ function verifyDistribution(units, dist, pins) {
     } catch (e0) { /* no-op: localStorage unavailable */ }
     function saveAutoAdvancePref() {
       try { window.localStorage && window.localStorage.setItem("vn-app-auto-adv", JSON.stringify({ enabled: autoAdvanceEnabled, nextOnCorrect: autoNextOnCorrect, seconds: autoAdvanceSeconds })); } catch (e) { /* no-op */ }
-    }
-    // 묵음(Mute): skips the automatic question-start playback in flash/look/order/type -- every
-    // one of those modes already shows the full question as text (the Vietnamese itself, or in
-    // order/type's case the meaning prompt), so the audio there is a convenience, not the
-    // question. Three sub-scopes let the learner mute just one language or both: 한/베/베한 (ko),
-    // 中文/越南語/全部 (zh), EN/VN/All (en), 日本語/ベトナム/全て (ja) -- i.e. "meaning", "vi", or
-    // "both". 듣기 4지선다 is special-cased: its Vietnamese audio IS the question, nothing else
-    // on screen identifies the item, so that mode only ever offers/honors the meaning-mute
-    // option (checking 묵음 there locks to it automatically) -- see isMuted() and the mcq
-    // handling in renderAutoAdvanceControls() below. Manual replay buttons (다시 듣기 / the
-    // speak-btn) are untouched either way; this only suppresses the automatic auto-play.
-    var MUTE_SCOPE_LABELS = {
-      meaning: { ko: "한", zh: "中", en: "EN", ja: "日語" },
-      vi: { ko: "베", zh: "越", en: "VN", ja: "ベト" },
-      both: { ko: "베한", zh: "全", en: "All", ja: "全て" }
-    };
-    function muteScopeLabel(key) { return (MUTE_SCOPE_LABELS[key] || {})[currentLang] || key; }
-    var muteScope = ""; // "" (off) | "meaning" | "vi" | "both"
-    try {
-      var savedMuteScope = window.localStorage && window.localStorage.getItem("vn-app-mute-scope");
-      if (savedMuteScope === "meaning" || savedMuteScope === "vi" || savedMuteScope === "both") {
-        muteScope = savedMuteScope;
-      } else if (window.localStorage && window.localStorage.getItem("vn-app-mute-autoplay") === "1") {
-        muteScope = "both"; // one-time migration from the old plain on/off checkbox
-      }
-    } catch (eMute) { /* no-op */ }
-    function saveMuteScopePref() {
-      try { window.localStorage && window.localStorage.setItem("vn-app-mute-scope", muteScope); } catch (e) { /* no-op */ }
     }
     // kind: "vi" or "meaning" -- which language's audio is about to auto-play.
     function isMuted(kind) {
@@ -10872,7 +11084,6 @@ function verifyDistribution(units, dist, pins) {
       return revealType;
     }
     var autoAdvRoot = document.getElementById("study-auto-row");
-    var lastNonMcqScope = (muteScope && muteScope !== "meaning") ? muteScope : "both";
     function renderAutoAdvanceControls() {
       if (!autoAdvRoot) return;
       // 듣기 4지선다's Vietnamese audio IS the question, so only the (functionally silent
@@ -10883,46 +11094,18 @@ function verifyDistribution(units, dist, pins) {
         muteScope = "meaning";
         saveMuteScopePref();
       }
-      var scopeKeys = inMcq ? ["meaning"] : ["meaning", "vi", "both"];
-      var activeScope = inMcq ? "meaning" : (muteScope || lastNonMcqScope || "both");
-      var optionsHtml = scopeKeys.map(function (k) {
-        return '<option value="' + k + '"' + (activeScope === k ? ' selected' : '') + '>' + escapeHtml(muteScopeLabel(k)) + '</option>';
-      }).join('');
-      var muteHtml = '<span class="mute-group">' +
-        '<label class="mute-autoplay-option"><input type="checkbox" id="mute-autoplay-toggle" ' + (muteScope ? "checked" : "") + '> ' + TU("묵음") + '</label>' +
-        '<select id="mute-scope-select" class="mute-scope-select" ' + (muteScope ? "" : "disabled") + (inMcq ? ' aria-readonly="true"' : '') + '>' +
-        optionsHtml +
-        '</select></span>';
+      var muteHtml = muteGroupHtml(inMcq, inMcq ? "meaning" : (muteScope || lastNonMcqScope || "both"));
       var html = '<label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span id="repeat-toggle-review"></span></label>' +
         muteHtml +
         '<span class="auto-advance-group"><label class="auto-advance-option"><input type="checkbox" id="auto-advance-toggle" ' + (autoAdvanceEnabled ? "checked" : "") + '> ' + TU("자동 넘김") + '</label>' +
         '<select id="auto-advance-seconds" class="auto-seconds-select" ' + (autoAdvanceEnabled ? "" : "disabled") + '>' +
         AUTO_ADV_SECONDS_OPTS.map(function (s) { return '<option value="' + s + '"' + (s === autoAdvanceSeconds ? " selected" : "") + '>' + s + TU("초") + '</option>'; }).join("") +
-        '</select></span><label class="auto-correct-option"><input type="checkbox" id="auto-next-correct-toggle" ' + (autoNextOnCorrect ? "checked" : "") + '> ' + TU("정답 시 다음 문제") + '</label>';
+        '</select></span>';
+      // 정답 시 다음 문제 means nothing on a flashcard (there is no answer to get right): not shown there.
+      if (studyState.mode !== "flash") html += '<label class="auto-correct-option"><input type="checkbox" id="auto-next-correct-toggle" ' + (autoNextOnCorrect ? "checked" : "") + '> ' + TU("정답 시 다음 문제") + '</label>';
       autoAdvRoot.innerHTML = html;
       renderViRepeatToggle(document.getElementById("repeat-toggle-review"));
-      var muteToggle = document.getElementById("mute-autoplay-toggle");
-      var muteSelect = document.getElementById("mute-scope-select");
-      if (muteToggle) {
-        muteToggle.addEventListener("change", function (e) {
-          if (e.target.checked) {
-            muteScope = inMcq ? "meaning" : (lastNonMcqScope || "both");
-          } else {
-            muteScope = "";
-          }
-          saveMuteScopePref();
-          renderAutoAdvanceControls();
-        });
-      }
-      if (muteSelect) {
-        muteSelect.addEventListener("change", function (e) {
-          if (inMcq) return;
-          muteScope = e.target.value;
-          lastNonMcqScope = muteScope;
-          saveMuteScopePref();
-          renderAutoAdvanceControls();
-        });
-      }
+      bindMuteGroup(autoAdvRoot, inMcq, renderAutoAdvanceControls);
       document.getElementById("auto-advance-toggle").addEventListener("change", function (e) {
         autoAdvanceEnabled = e.target.checked;
         saveAutoAdvancePref();
@@ -10931,11 +11114,12 @@ function verifyDistribution(units, dist, pins) {
         else if (studyState.current) armAutoReveal(currentRevealFn());
       });
       document.getElementById("auto-advance-seconds").addEventListener("change", function (e) {
-        autoAdvanceSeconds = parseInt(e.target.value, 10) || 5;
+        autoAdvanceSeconds = parseInt(e.target.value, 10) || 1;
         saveAutoAdvancePref();
         if (autoAdvanceEnabled && studyState.current) armAutoReveal(currentRevealFn());
       });
-      document.getElementById("auto-next-correct-toggle").addEventListener("change", function (e) {
+      var nextCorrectToggle = document.getElementById("auto-next-correct-toggle");
+      if (nextCorrectToggle) nextCorrectToggle.addEventListener("change", function (e) {
         autoNextOnCorrect = e.target.checked;
         saveAutoAdvancePref();
       });
@@ -11147,7 +11331,7 @@ function verifyDistribution(units, dist, pins) {
       // forking REVIEW_SCOPES per profile: a scope only appears if its own subtab button still
       // exists somewhere in the document (or it's the always-present "all").
       scopes = scopes.filter(function (s) {
-        return s === "all" || s === "wt" || s.indexOf("lff:") === 0 || s.indexOf("lpd:") === 0 || /^\d+(?:-\d+)?$/.test(s) || !!document.querySelector('[data-' + key + '="' + s + '"]');
+        return s === "all" || (s === "wt" && key === "sentence") || s.indexOf("lff:") === 0 || s.indexOf("lpd:") === 0 || /^\d+(?:-\d+)?$/.test(s) || !!document.querySelector('[data-' + key + '="' + s + '"]');
       });
       reviewScopeEl.dataset.scopeCategory = key;
       // Scopes as picked, in pick order (a narrowed "wt:3"/"lff:12"/"lpd:A" stays as-is), and each
@@ -11221,6 +11405,7 @@ function verifyDistribution(units, dist, pins) {
       var modeToKeep = (prevKey === key && studyState.mode) ? studyState.mode : ((key === "grammar" || key === "wizard" || key === "sentence") ? "order" : "flash");
       modeTabsEl.querySelectorAll(".study-mode-btn").forEach(function (b) { b.setAttribute("aria-selected", b.dataset.mode === modeToKeep ? "true" : "false"); });
       studyState.mode = modeToKeep;
+      renderAutoAdvanceControls();   // 정답 시 다음 문제 is shown for every mode but the flashcard
       startMode();
     }
 
@@ -11236,6 +11421,9 @@ function verifyDistribution(units, dist, pins) {
     function srsDuePool() {
       var byKey = {};
       getPool("vocab", "all").forEach(function (it) { var k = srsKey(it.vi); if (k && !byKey[k]) byKey[k] = it; });
+      // The Watchtower-only words are not in the pool above ([복습] > [어휘] > 전체); a due one of them still shows this
+      // language's meaning (when the study list has one) instead of the one stored when it was first studied.
+      getPool("vocab", "wt").forEach(function (it) { var k = srsKey(it.vi); if (k && !byKey[k]) byKey[k] = it; });
       return srsState().due.map(function (e) {
         var it = byKey[srsKey(e.vi)];
         return { vi: e.vi, kr: (it && it.kr) || e.kr || "", meaning: (it && it.meaning) || "" };
@@ -11265,8 +11453,7 @@ function verifyDistribution(units, dist, pins) {
       if (srsMarkReviewed(item.vi)) renderSrsStatus();
     }
     window.__goToScopedVocabReview = function () {
-      var key = (vocabFocus && vocabFocus.mode === "wt") ? "sentence" : "vocab";
-      goToReview(key, vocabScopedPool());
+      goToReview("vocab", vocabScopedPool());
     };
 
     reviewBtns.forEach(function (btn) {
@@ -13630,6 +13817,63 @@ function verifyDistribution(units, dist, pins) {
     if (/Windows/i.test(ua)) return ["windows"];
     return [];
   }
+  // ---- JEONJU: opening the site lands on today's place in [과정] ----
+  // Today is the calendar date in Korea (Asia/Seoul, whatever the device's time zone). Monday-Friday: the homework week
+  // of that Monday is opened at that weekday's tasks; Saturday and Sunday belong to the same Monday-start week: its
+  // homework card is opened, no weekday picked. The landing happens once, when the site is opened without a link to
+  // somewhere else; nothing here runs again.
+  function courseTodayIso(nowMs) {
+    var parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit" })
+      .formatToParts(new Date(nowMs === undefined ? Date.now() : nowMs));
+    var p = {};
+    parts.forEach(function (x) { p[x.type] = x.value; });
+    return p.year + "-" + p.month + "-" + p.day;
+  }
+  // iso -> { monday: ISO date of that week's Monday, day: 0 (Mon) .. 4 (Fri), or -1 for Saturday / Sunday }
+  function courseWeekOf(iso) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+    var d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+    var back = (d.getUTCDay() + 6) % 7;      // days since Monday
+    d.setUTCDate(d.getUTCDate() - back);
+    return { monday: d.toISOString().slice(0, 10), day: back < 5 ? back : -1 };
+  }
+  window.__courseWeekOf = courseWeekOf;       // test hooks
+  window.__courseTodayIso = courseTodayIso;
+  var COURSE_DAY_KO = ["월", "화", "수", "목", "금"];
+  function isDefaultLanding() {
+    if (location.hash && location.hash !== "#") return false;
+    var benign = /^(fresh|source|utm_[a-z]+|ttsdebug|v|_)$/;
+    var ok = true;
+    new URLSearchParams(location.search).forEach(function (_, k) { if (!benign.test(k)) ok = false; });
+    return ok;
+  }
+  function goToTodayCourse() {
+    var week = courseWeekOf(courseTodayIso());
+    var card = document.querySelector('#panel-curriculum .curr-assign-card[data-hw-monday="' + week.monday + '"]');
+    if (!card) return false;
+    activateTab("curriculum", false);
+    var open = card.closest ? card.closest(".group-card") : null;
+    while (open) { open.dataset.open = "true"; open = open.parentElement && open.parentElement.closest ? open.parentElement.closest(".group-card") : null; }
+    card.dataset.open = "true";
+    var toggle = card.querySelector(".curr-assign-toggle");
+    if (toggle) toggle.setAttribute("aria-expanded", "true");
+    card.classList.add("curr-today-week");
+    var target = card;
+    if (week.day >= 0) {
+      var dayGroup = card.querySelector('.curr-assign-day-group[data-day="' + COURSE_DAY_KO[week.day] + '"]');
+      if (dayGroup) { dayGroup.classList.add("curr-today"); target = dayGroup; }
+    }
+    setTimeout(function () { try { target.scrollIntoView({ block: "center" }); } catch (e) { /* no-op */ } }, 120);
+    courseLanded = true;
+    return true;
+  }
+  // The live schedule of the regional worker arrives a moment after the page opened and re-draws [과정]: the landing is
+  // put back once for that, and only while the learner has not touched anything yet.
+  var courseLanded = false, courseLandTouched = false;
+  ["pointerdown", "keydown", "touchstart", "wheel"].forEach(function (type) {
+    document.addEventListener(type, function (e) { if (e.isTrusted) courseLandTouched = true; }, { capture: true, passive: true });
+  });
+  function reapplyCourseLanding() { if (courseLanded && !courseLandTouched) goToTodayCourse(); }
   // Default place: [발음] > [설정]. On a first visit, the device's own "add a Vietnamese voice"
   // guide is opened and scrolled into view.
   function goToDefaultPlace(openDeviceGuide) {
@@ -13649,6 +13893,8 @@ function verifyDistribution(units, dist, pins) {
     try {
       if (!window.localStorage) return;
       if (IS_FIRST_VISIT) { goToDefaultPlace(true); return; }
+      // JEONJU: today's place in [과정] (not for a visit that asks for somewhere else; no card for today -> the saved place).
+      if (window.SITE_PROFILE === "jeonju" && isDefaultLanding() && goToTodayCourse()) return;
       var saved = JSON.parse(SAVED_PLACE_RAW);
       // A place saved by an older version can name a tab or subtab that no longer exists.
       if (!saved || !saved.tab || !panels[saved.tab] || !document.querySelector('.tab-btn[data-tab="' + saved.tab + '"]')) {
@@ -14136,6 +14382,7 @@ function verifyDistribution(units, dist, pins) {
           if (data && data.config && data.source && Array.isArray(data.source.units)) {
             regionalLive = regionalMergeLive(data);
             renderCurrWeek16();
+            reapplyCourseLanding();
           }
         })
         .catch(function () {});

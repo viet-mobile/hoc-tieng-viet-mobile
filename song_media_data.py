@@ -99,3 +99,50 @@ KID_SONG_TRACKS = {
     25: [33, ["vi", "ko", "en", "zh", "ja", "de", "fr", "pl", "cs", "hu", "id", "zh_cn"]],
     26: [34, ["vi", "ko", "en", "zh", "ja", "de", "fr", "pl", "cs", "hu", "id", "zh_cn"]],
 }
+
+
+# BEGIN CHOIR_OSG (scripts/song_choir_media.py --write)
+"""CHOIR_OSG: JW choir recordings (jw.org Original Songs, pub-osg) of 왕국 노래, from jw.org media metadata -- never computed
+from the song number. tracks[song number] = osg track (titles agree in >= 10 of 12 languages); audio / video[lang] =
+song numbers whose finder link pub-osg_<track>_AUDIO / _VIDEO opens in that UI language."""
+CHOIR_OSG = {
+    "tracks": {
+        152: 40,
+        153: 50,
+        154: 60,
+        155: 72,
+        156: 75,
+        159: 100,
+        162: 109,
+        164: 126,
+    },
+    "audio": {
+        "vi": "152-156,159,162,164",
+        "ko": "152-156,159,162,164",
+        "en": "152-156,159,162,164",
+        "ja": "152-156,159,162,164",
+        "zh": "152-156,159,162,164",
+        "zh_cn": "152-156,159,162,164",
+        "de": "152-156,159,162,164",
+        "fr": "152-156,159,162,164",
+        "pl": "152-156,159,162,164",
+        "cs": "152-156,159,162,164",
+        "hu": "152-156,159,162,164",
+        "id": "152-156,159,162,164",
+    },
+    "video": {
+        "vi": "152-156,159,162,164",
+        "ko": "152-156,159,162,164",
+        "en": "152-156,159,162,164",
+        "ja": "152-156,159,162,164",
+        "zh": "152-156,159,162,164",
+        "zh_cn": "152-156,159,162,164",
+        "de": "152-156,159,162,164",
+        "fr": "152-156,159,162,164",
+        "pl": "152-156,159,162,164",
+        "cs": "152-156,159,162,164",
+        "hu": "152-156,159,162,164",
+        "id": "152-156,159,162,164",
+    },
+}
+# END CHOIR_OSG

@@ -10,12 +10,13 @@
 // 4. Tab clicking: vocab, sentence, grammar, review, wizard
 // 5. Zero console.error, zero pageerror, zero 404, zero horizontal overflow at 390px.
 
+const PLATFORM = require('./helpers/platform');
 const { spawn } = require('child_process');
 const http = require('http');
 
 const PORT = 8089;
 const CDP_PORT = 9223;
-const CHROME_PATH = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
+const CHROME_PATH = PLATFORM.CHROME;
 
 const CANONICAL_LANGS = ['vi', 'cs', 'zh_cn', 'zh', 'en', 'fr', 'de', 'hu', 'id', 'ja', 'ko', 'pl'];
 
@@ -182,7 +183,7 @@ class CDPClient {
 
 async function runTest() {
   console.log('[Browser Test] Starting HTTP server on port ' + PORT + '...');
-  const serverProc = spawn('python', ['-m', 'http.server', String(PORT), '--directory', 'dist'], { stdio: 'ignore' });
+  const serverProc = spawn(PLATFORM.PYTHON, ['-m', 'http.server', String(PORT), '--directory', 'dist'], { stdio: 'ignore' });
 
   console.log('[Browser Test] Launching Chrome Headless on CDP port ' + CDP_PORT + '...');
   const chromeProc = spawn(CHROME_PATH, [

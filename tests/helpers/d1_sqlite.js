@@ -9,6 +9,7 @@
  * Fault injection for atomicity tests: set `d1.fault = (sql, params, callIndex) => boolean`; when it
  * returns true the statement throws instead of executing.
  */
+const PLATFORM = require('./platform');
 const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
@@ -78,7 +79,7 @@ function createD1({ schema = true, seed = false } = {}) {
 /** The exact SQL scripts/seed_jeonju_d1.py would emit (content only, no credentials). */
 function generateSeedSql() {
   const res = spawnSync(
-    'python',
+    PLATFORM.PYTHON,
     ['-c', 'import sys; sys.path.insert(0, "."); from scripts.seed_jeonju_d1 import generate_seed_sql; sys.stdout.buffer.write(generate_seed_sql().encode("utf-8"))'],
     { cwd: REPO_ROOT, encoding: 'buffer', maxBuffer: 64 * 1024 * 1024 }
   );

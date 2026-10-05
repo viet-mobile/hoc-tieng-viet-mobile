@@ -3,6 +3,7 @@
 //     only JEONJU adds the home-screen card -- in all 12 UI languages, without raw markup or stray Hangul;
 //   - the help card opens by itself inside KakaoTalk (user agent "KAKAOTALK") and stays closed elsewhere;
 //   - no horizontal overflow at 390 / 430 / 1280 px in light and dark, no console or page errors.
+const PLATFORM = require('./helpers/platform');
 const {spawn} = require('child_process');
 const path = require('path');
 const {CDPClient} = require('./test_browser_runtime');
@@ -22,9 +23,9 @@ let checks = 0;
 const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
 
 (async () => {
-  const server = spawn('python', ['-m', 'http.server', String(PORT), '--directory', path.join(ROOT, 'dist')], {stdio: 'ignore'});
-  const chrome = spawn('C:/Program Files/Google/Chrome/Application/chrome.exe', ['--headless=new', '--remote-debugging-port=' + (PORT + 1000),
-    '--no-first-run', '--user-data-dir=' + path.resolve(process.env.TEMP || '.', 'tts-guide-' + process.pid)], {stdio: 'ignore'});
+  const server = spawn(PLATFORM.PYTHON, ['-m', 'http.server', String(PORT), '--directory', path.join(ROOT, 'dist')], {stdio: 'ignore'});
+  const chrome = spawn(PLATFORM.CHROME, ['--headless=new', '--remote-debugging-port=' + (PORT + 1000),
+    '--no-first-run', '--user-data-dir=' + path.resolve(PLATFORM.TMP, 'tts-guide-' + process.pid)], {stdio: 'ignore'});
   try {
     let targets;
     for (let i = 0; i < 40 && !targets; i++) { try { targets = await (await fetch(`http://127.0.0.1:${PORT + 1000}/json/list`)).json(); } catch { await sleep(250); } }

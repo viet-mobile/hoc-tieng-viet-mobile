@@ -5,8 +5,9 @@
   - Songs 1-163 are unchanged: sha256 of their canonical JSON (sorted keys) equals the one taken before 164 was added
     (this also protects the Japanese line breaks and the Chinese / Indonesian post-processing of 1-163).
   - 164 equals tests/fixtures/kingdom_song_164_update.json (the 164-only update file made from Songs(8).xlsx; the only
-    fixture, tracked), language by language; Japanese is empty (title, scripture, reference, every line) and its header
-    is the workbook's "164番". Nothing is translated or copied into Japanese.
+    fixture, tracked), language by language, for the 11 languages other than Japanese. Japanese is the official text of
+    tests/fixtures/kingdom_song_164_ja_update.json (Songs(9).xlsx, the Japanese-only update): title, scripture, 36 lines,
+    reference, exactly as given. Nothing is translated or re-broken.
   - songs_data.json (the 163-song Excel conversion of 2026-09-23, untracked) is not a source of anything: no build or
     runtime code opens it, so it may stay at 163. songs_data.js is the one source of SONGS_DATA.
   - Vietnamese, Korean and English titles; Korean / Vietnamese / the other nine languages have lyrics.
@@ -57,9 +58,7 @@ def main():
         for k, v in src.items():
             lang = SITE_KEY.get(k, k)
             if lang == "ja":
-                ok(not (v["title"] or v["reference"] or v["lyrics"] or v["lines"] or v["displayLines"]) and v["available"] is False and v["header"] == "164番",
-                   name + ": ja is empty in the source")
-                continue
+                continue  # the Songs(8) file had no Japanese; the Japanese comes from the Songs(9) update file below
             lines = v["lines"]
             ok(lines and lines == v["displayLines"], "%s %s: lines" % (name, lang))
             ok(rec["labels"][lang] == v["header"] and rec["title"][lang] == v["title"] and rec["scripture"][lang] == v["reference"], "%s %s: header / title / scripture" % (name, lang))
@@ -78,9 +77,23 @@ def main():
     ok(not readers, "songs_data.json is opened by: %s" % readers)
 
     ja = "ja"
-    ok(rec["labels"][ja] == "164番" and rec["title"][ja] == "" and rec["scripture"][ja] == "" and rec["reference"][ja] == "", "164 Japanese header only")
-    ok(len(rec["lines"]) == 36 and all(l[ja] == "" for l in rec["lines"]), "164 Japanese: 36 empty cells, no text")
-    ok(not any(l[ja] for l in rec["lines"]) and sum(1 for l in rec["lines"] if l[ja]) == 0, "164 Japanese lyrics: 0 lines")
+    jaupd = json.load(open(os.path.join(ROOT, "tests", "fixtures", "kingdom_song_164_ja_update.json"), encoding="utf-8"))
+    ok(jaupd["track"] == 164 and jaupd["language"] == "ja" and jaupd["doNotModifyTracks"] == "1-163" and jaupd["doNotModifyOtherLanguagesOnTrack164"] is True, "the Japanese update file is 164-only")
+    J = jaupd["ja"]
+    ok(J["header"] == "164番" and J["title"] == "私はあなたに頼る" and J["scripture"] == "（詩編 115:11）" and J["reference"] == "（詩 18:2; 119:114も参照。）" and len(J["lyrics"]) == 36,
+       "the Japanese update file: header / title / scripture / reference / 36 lyric lines")
+    ok(rec["labels"][ja] == J["header"] == "164番", "164 Japanese header exact")
+    ok(rec["title"][ja] == "私はあなたに頼る", "164 Japanese title exact: %r" % rec["title"][ja])
+    ok(rec["scripture"][ja] == "（詩編 115:11）", "164 Japanese scripture exact: %r" % rec["scripture"][ja])
+    ok(rec["reference"][ja] == "（詩 18:2; 119:114も参照。）", "164 Japanese reference exact: %r" % rec["reference"][ja])
+    ok(len(rec["lines"]) == 36 and [l[ja] for l in rec["lines"]] == J["lyrics"], "164 Japanese: the 36 lyric lines are exactly the update file's, in order")
+    ok(rec["lines"][0][ja] == "1.エホバは私の" and rec["lines"][-1][ja] == "離れない" and sum(1 for l in rec["lines"] if l[ja] == "（※ 繰り返し）") == 3, "164 Japanese first / last line and 3 （※ 繰り返し） markers")
+    ok(all(l[ja] for l in rec["lines"]), "164 Japanese: no empty line")
+    # cross-check with the 12-language workbook conversion (Songs(9).xlsx): Japanese 164 and the 11 other languages of 164
+    full = json.load(open(os.path.join(ROOT, "jw_kingdom_songs_1_164.json"), encoding="utf-8")) if os.path.exists(os.path.join(ROOT, "jw_kingdom_songs_1_164.json")) else None
+    if full:
+        s164 = [s for s in full["songs"] if s["track"] == 164][0]["languages"]
+        ok(s164["ja"]["lyrics"] == J["lyrics"] and s164["ja"]["title"] == J["title"] and s164["ja"]["scripture"] == J["scripture"], "cross-check: the full Songs(9) JSON agrees with the Japanese update file")
     for lang in rec["labels"]:
         if lang == ja:
             continue
@@ -106,7 +119,18 @@ def main():
     gaps = {l: sorted(set(range(1, 165)) - v) for l, v in sets.items() if set(range(1, 165)) - v}
     ok(gaps == {"vi": [164], "zh_cn": [162, 163]},
        "known jw.org state: Vietnamese 164 not published (finder -> home page), zh_cn 162-163 finder -> home page: %s" % gaps)
-    ok("ja" in sets and 164 in sets["ja"], "164 has a Japanese video link even though it has no Japanese lyrics")
+    ok("ja" in sets and 164 in sets["ja"], "164 has a Japanese video link (kept when the Japanese lyrics were added)")
+
+    # JW choir recordings (jw.org pub-osg): 164 -> osg 126 is an explicit table entry (scripts/song_choir_media.py), audio and video in Japanese
+    from song_media_data import CHOIR_OSG
+    ok(CHOIR_OSG["tracks"].get(164) == 126, "CHOIR_OSG: 164 -> osg 126")
+    for kind in ("audio", "video"):
+        spec = CHOIR_OSG[kind]["ja"]
+        nums_c = []
+        for part in spec.split(","):
+            x, _, y = part.partition("-")
+            nums_c.extend(range(int(x), int(y or x) + 1))
+        ok(164 in nums_c and set(nums_c) <= set(CHOIR_OSG["tracks"]), "CHOIR_OSG %s ja has 164 and only mapped songs" % kind)
 
     print("checks run: %d" % checks)
     if failures:

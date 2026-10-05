@@ -1,3 +1,4 @@
+const PLATFORM = require('./helpers/platform');
 const {spawn} = require('child_process');
 const path = require('path');
 const assert = require('assert');
@@ -6,8 +7,8 @@ const verify = require('./helpers/general_pdf_browser');
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 async function main() {
-  const server = spawn('python', ['-m', 'http.server', '8093', '--directory', 'dist'], {stdio: 'ignore'});
-  const chrome = spawn('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', [
+  const server = spawn(PLATFORM.PYTHON, ['-m', 'http.server', '8093', '--directory', 'dist'], {stdio: 'ignore'});
+  const chrome = spawn(PLATFORM.CHROME, [
     '--headless=new', '--remote-debugging-port=9227', '--no-first-run',
     '--user-data-dir=' + path.resolve('scratch', 'pdf-focused-' + process.pid),
   ], {stdio: 'ignore'});

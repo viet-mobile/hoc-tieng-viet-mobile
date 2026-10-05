@@ -288,7 +288,7 @@ NON_JW_HTML_REMOVALS = {
     "subtabs": [
         {"attr": "data-sentence", "values": ["lff", "lpd", "wt", "song", "prayer", "lff2", "lpd2", "wt2"]},
         {"attr": "data-wizard", "values": ["main", "talks", "neighbor"]},
-        {"attr": "data-vocab", "values": ["theo", "names"]},
+        {"attr": "data-vocab", "values": ["theo", "names", "wt"]},
         {"attr": "data-bible", "values": ["books"]},
         {"attr": "data-grammar", "values": ["lessons"]},
     ],

@@ -11,6 +11,7 @@
 //   - on screen, a card shows exactly that language's meaning.
 // JW Study sites: per language, source and mode the review shows exactly the rows the data allows, recall asks
 // with the row's own UI-language text, and listen/order never depend on a translation.
+const PLATFORM = require('./helpers/platform');
 const {spawn} = require('child_process');
 const path = require('path');
 const assert = require('assert');
@@ -224,8 +225,8 @@ async function jwMatrix(LANGS) {
 }
 
 async function main() {
-  const server = spawn('python', ['-m', 'http.server', '8095', '--directory', 'dist'], {stdio: 'ignore'});
-  const chrome = spawn('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', [
+  const server = spawn(PLATFORM.PYTHON, ['-m', 'http.server', '8095', '--directory', 'dist'], {stdio: 'ignore'});
+  const chrome = spawn(PLATFORM.CHROME, [
     '--headless=new', '--remote-debugging-port=9229', '--no-first-run',
     '--user-data-dir=' + path.resolve('scratch', 'review-languages-' + process.pid),
   ], {stdio: 'ignore'});

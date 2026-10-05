@@ -9,6 +9,7 @@
 //   - [남북 발음] d/gi/r, s/x and ch/tr: filled in all 12 UI languages, the same IPA facts as above, no "exactly the
 //     same" absolutes or one-to-one Korean letters, no overflow;
 //   - the other [발음] subtabs still render.
+const PLATFORM = require('./helpers/platform');
 const {spawn} = require('child_process');
 const path = require('path');
 const {CDPClient} = require('./test_browser_runtime');
@@ -24,9 +25,9 @@ let checks = 0;
 const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
 
 (async () => {
-  const server = spawn('python', ['-m', 'http.server', String(PORT), '--directory', path.join(ROOT, 'dist')], {stdio: 'ignore'});
-  const chrome = spawn('C:/Program Files/Google/Chrome/Application/chrome.exe', ['--headless=new', '--remote-debugging-port=' + (PORT + 1000),
-    '--no-first-run', '--user-data-dir=' + path.resolve(process.env.TEMP || '.', 'pron-cons-' + process.pid)], {stdio: 'ignore'});
+  const server = spawn(PLATFORM.PYTHON, ['-m', 'http.server', String(PORT), '--directory', path.join(ROOT, 'dist')], {stdio: 'ignore'});
+  const chrome = spawn(PLATFORM.CHROME, ['--headless=new', '--remote-debugging-port=' + (PORT + 1000),
+    '--no-first-run', '--user-data-dir=' + path.resolve(PLATFORM.TMP, 'pron-cons-' + process.pid)], {stdio: 'ignore'});
   try {
     let targets;
     for (let i = 0; i < 40 && !targets; i++) { try { targets = await (await fetch(`http://127.0.0.1:${PORT + 1000}/json/list`)).json(); } catch { await sleep(250); } }

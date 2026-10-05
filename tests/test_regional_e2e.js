@@ -10,6 +10,7 @@
  * Flow: public Jeonju parity (static vs hydrated) -> admin login -> change the period -> preview -> apply ->
  * public site shows the new session plan -> rollback -> ULSAN still "일정 미정". Fails on any console error / CSP violation.
  */
+const PLATFORM = require('./helpers/platform');
 const { spawn } = require('child_process');
 const http = require('http');
 const fs = require('fs');
@@ -19,7 +20,7 @@ const { makeRegionWorker, USERS, REPO_ROOT } = require('./helpers/regional_env')
 
 const PORT = 8110;
 const CDP_PORT = 9333;
-const CHROME_PATH = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+const CHROME_PATH = PLATFORM.CHROME;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.json': 'application/json', '.webmanifest': 'application/manifest+json', '.png': 'image/png', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.css': 'text/css' };
 
@@ -71,7 +72,7 @@ async function startServer(workers) {
 
   const chrome = spawn(CHROME_PATH, [
     '--headless=new', `--remote-debugging-port=${CDP_PORT}`, '--remote-allow-origins=*', '--disable-gpu', '--no-first-run', '--window-size=390,844',
-    '--host-resolver-rules=MAP jeonju.test 127.0.0.1,MAP ulsan.test 127.0.0.1', '--user-data-dir=' + path.join(process.env.TEMP || '.', 'regional_e2e_profile'),
+    '--host-resolver-rules=MAP jeonju.test 127.0.0.1,MAP ulsan.test 127.0.0.1', '--user-data-dir=' + path.join(PLATFORM.TMP, 'regional_e2e_profile'),
   ], { stdio: 'ignore' });
   const getJson = url => new Promise((res, rej) => http.get(url, r => { let d = ''; r.on('data', c => d += c); r.on('end', () => { try { res(JSON.parse(d)); } catch (e) { rej(e); } }); }).on('error', rej));
   for (let i = 0; i < 50; i++) { await sleep(300); try { const v = await getJson(`http://127.0.0.1:${CDP_PORT}/json/version`); if (v.webSocketDebuggerUrl) break; } catch (e) { /* not up yet */ } }

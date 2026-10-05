@@ -3,6 +3,7 @@
  * Test harness for the regional worker: builds the REAL _worker.js bundle (regional_admin/bundle_worker.py), imports it
  * as an ES module exactly like Cloudflare would, and drives it with real Request objects against a SQLite-backed D1.
  */
+const PLATFORM = require('./platform');
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
@@ -17,7 +18,7 @@ function buildBundle(region) {
   if (!bundleCache[region]) {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'regional-worker-'));
     const file = path.join(dir, `_worker_${region}.mjs`);
-    const res = spawnSync('python', [path.join('regional_admin', 'bundle_worker.py'), '--region', region, '--out', file], { cwd: REPO_ROOT, encoding: 'utf8' });
+    const res = spawnSync(PLATFORM.PYTHON, [path.join('regional_admin', 'bundle_worker.py'), '--region', region, '--out', file], { cwd: REPO_ROOT, encoding: 'utf8' });
     if (res.status !== 0) throw new Error('bundle build failed: ' + res.stderr);
     bundleCache[region] = file;
   }

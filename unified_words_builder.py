@@ -5,6 +5,7 @@ Builder for the unified [단어] vocabulary system with multi-tagging and precom
 
 import re
 import json
+import unicodedata
 
 VN_LETTERS = "a-zA-ZàáảãạăằắẳẵặâầấẩẫậèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵđÀÁẢÃẠĂẰẮẲẴẶÂẦẤẨẪẬÈÉẺẼẸÊỀẾỂỄỆÌÍỈĨỊÒÓỎÕỌÔỒỐỔỖỘƠỜỚỞỠỢÙÚỦŨỤƯỪỨỬỮỰỲÝỶỸỴĐ"
 BOUNDARY_PREFIX = r'(?<![' + VN_LETTERS + r'])'
@@ -117,6 +118,31 @@ def gather_learning_corpus(site, daily_conversations, offer_talks, neighbor_conv
 
     lines = common_lines if site == "general" else (common_lines + jw_only_lines)
     return " \n ".join(lines).lower()
+
+def vocab_key(vi):
+    """The canonical identity of a [단어] entry (the same one the SRS uses): NFC, lower case, single spaces."""
+    return re.sub(r"\s+", " ", unicodedata.normalize("NFC", str(vi or ""))).strip().lower()
+
+
+def occurrence_index(texts, max_tokens=7):
+    """Every run of 1..max_tokens words of `texts` (NFC, lower case, single spaces, separators kept) that starts and ends
+    on a word boundary -- the same boundary rule as the frequency count (a letter must not touch either end). A word or
+    expression of at most max_tokens words occurs in the texts exactly when its vocab_key is in the returned set."""
+    letter = re.compile("[" + VN_LETTERS + "]+")
+    found = set()
+    for text in texts:
+        t = re.sub(r"\s+", " ", unicodedata.normalize("NFC", str(text or ""))).lower()
+        spans = [m.span() for m in letter.finditer(t)]
+        for i, (a, _) in enumerate(spans):
+            for j in range(i, min(i + max_tokens, len(spans))):
+                found.add(t[a:spans[j][1]])
+    return found
+
+
+# Source tags of [어휘] > [단어] (JW sites only): the word occurs in the Watchtower study material (WT) / in Enjoy Life
+# Forever (행누). Stored on the word, in addition to the occurrence counts the page shows next to them.
+SOURCE_TAGS = ("WT", "행누")
+
 
 def build_unified_words(site, basic_word_groups, freq_vocab, vocab_theo, bible_names,
                         rhyme_groups, word_order_reversed, vocab_groups, antonym_pairs,
@@ -266,7 +292,7 @@ def build_unified_words(site, basic_word_groups, freq_vocab, vocab_theo, bible_n
         # Profile filtering for GENERAL
         if site == "general":
             # If word is strictly JW-only (신권 and/or 인명 only), skip
-            non_jw_tags = rec["tags"] - {"신권", "인명"}
+            non_jw_tags = rec["tags"] - {"신권", "인명", "WT", "행누"}
             if not non_jw_tags:
                 continue
             # Remove JW-only tags from remaining words
@@ -286,10 +312,58 @@ def build_unified_words(site, basic_word_groups, freq_vocab, vocab_theo, bible_n
             rec["frequency"] = 0
 
         # Convert tags set to sorted list
-        tag_order = ["기본", "상용", "신권", "인명", "한자음", "어순반대", "동일음", "반의", "PDF", "남북"]
+        tag_order = ["기본", "상용", "신권", "인명", "한자음", "어순반대", "동일음", "반의", "PDF", "남북", "WT", "행누"]
         rec["tags"] = sorted(list(rec["tags"]), key=lambda t: tag_order.index(t) if t in tag_order else 99)
         result.append(rec)
 
     # Sort deterministically
     result.sort(key=lambda r: vi_sort_key(r["vi"]))
     return result
+
+
+TAG_ORDER = ["기본", "상용", "신권", "인명", "한자음", "어순반대", "동일음", "반의", "PDF", "남북", "WT", "행누"]
+
+
+def add_source_words(words, n_sorted, site, watchtower_vocab, source_texts, corpus_text):
+    """Run AFTER merge_pdf_words (so every registered word -- the PDF-source ones too -- counts as registered).
+
+    - every word of WATCHTOWER_VOCAB (weeks of {vi, mean, ...}) is a [단어] entry tagged WT. One that is not registered yet
+      is added with the list's own meanings, in dictionary order inside the first n_sorted entries (the part build_unified_
+      words sorted; the PDF-source tail stays the tail); a registered one keeps its record untouched, only the tag is added;
+    - source_texts {"WT": [Vietnamese text], "행누": [...]}: every entry whose word occurs in such a text gets that tag
+      (the same boundary rule as the frequency count);
+    - nothing else about an existing entry changes (meaning, identity, position). JW sites only: GENERAL has neither source.
+    Returns the list (modified in place)."""
+    if site == "general":
+        return words
+    import bisect
+    registered = {vocab_key(w["vi"]) for w in words}
+    prefix_keys = [vi_sort_key(w["vi"]) for w in words[:n_sorted]]
+    for wk in (watchtower_vocab or []):
+        for w in wk.get("words", []):
+            vi_clean = (w.get("vi") or "").strip()
+            key = vocab_key(vi_clean)
+            if not key or key in registered:
+                continue
+            mean = dict(w["mean"]) if isinstance(w.get("mean"), dict) else {"ko": w.get("mean")}
+            rec = {"vi": vi_clean, "kr": mean, "tags": ["WT"], "hanja": "", "antonym": None, "antonymMeaning": None, "frequency": 0}
+            try:
+                rec["frequency"] = len(re.findall(BOUNDARY_PREFIX + re.escape(vi_clean.lower()) + BOUNDARY_SUFFIX, corpus_text))
+            except Exception:
+                pass
+            at = bisect.bisect_right(prefix_keys, vi_sort_key(vi_clean))
+            prefix_keys.insert(at, vi_sort_key(vi_clean))
+            words.insert(at, rec)
+            registered.add(key)
+    curated = {vocab_key(w.get("vi")) for wk in (watchtower_vocab or []) for w in wk.get("words", [])}
+    indexes = {tag: occurrence_index(texts) for tag, texts in (source_texts or {}).items() if tag in SOURCE_TAGS}
+    for rec in words:
+        k = vocab_key(rec["vi"])
+        add = [tag for tag, found in indexes.items() if k in found]
+        if k in curated:
+            add.append("WT")
+        for tag in add:
+            if tag not in rec["tags"]:
+                rec["tags"].append(tag)
+        rec["tags"].sort(key=lambda t: TAG_ORDER.index(t) if t in TAG_ORDER else 99)
+    return words

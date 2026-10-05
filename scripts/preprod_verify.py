@@ -22,11 +22,12 @@ import time
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ORDERED = [
-    ("1. build all sites", [["python", "build_app.py", "--site", "all"], ["python", "assemble_app.py", "--site", "all"]]),
+    ("1. build all sites", [[sys.executable, "build_app.py", "--site", "all"], [sys.executable, "assemble_app.py", "--site", "all"]]),
     ("2. TTS behaviour", [["node", "tests/test_tts_behavior.js"]]),
     ("3. spaced repetition (SRS)", [["node", "tests/test_srs.js"]]),
     ("4. song tabs (164 / 117 / 36)", [["node", "tests/test_song_tabs.js"]]),
-    ("5. song links on jw.org (network)", [["python", "tests/check_song_links.py"], ["python", "tests/check_song_links.py", "--kingdom", "all"]]),
+    ("5. song links on jw.org (network)", [[sys.executable, "tests/check_song_links.py"], [sys.executable, "tests/check_song_links.py", "--kingdom", "all"],
+                                        [sys.executable, "scripts/song_choir_media.py", "--check"]]),
     ("6. regional admin", [["node", "tests/test_regional_admin.js"]]),
     ("7. regional E2E (browser)", [["node", "tests/test_regional_e2e.js"]]),
     ("8. SECTION F: anonymous exposure + viewer authorization", [["node", "tests/test_section_f_viewer.js"]]),
@@ -40,7 +41,7 @@ def remaining_tests():
     for f in files:
         rel = "tests/" + os.path.basename(f)
         if rel not in done:
-            out.append(("9. " + os.path.basename(f), [["node" if f.endswith(".js") else "python", rel]]))
+            out.append(("9. " + os.path.basename(f), [["node" if f.endswith(".js") else sys.executable, rel]]))
     return out
 
 

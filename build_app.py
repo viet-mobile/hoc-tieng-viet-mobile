@@ -19,7 +19,7 @@ from grammar_lessons_ai_translations import apply_grammar_lessons_ai_translation
 GRAMMAR_INTRO = apply_grammar_lessons_ai_translations(GRAMMAR_INTRO)  # fills cs/zh_cn/hu/id only where missing
 GRAMMAR_UNITS = apply_grammar_lessons_ai_translations(GRAMMAR_UNITS)
 from user_words_data import USER_NEW_WORDS
-from unified_words_builder import gather_learning_corpus, build_unified_words
+from unified_words_builder import gather_learning_corpus, build_unified_words, add_source_words
 from word_meanings_extended import apply_extended_meanings, with_extended_meanings
 from sentence_builder_data import (SB_PRONOUNS, SB_NOUN_SUBJECTS, SB_INTRANS_VERBS, SB_TRANS_VERBS,
                                     SB_AUX_VERBS, SB_OBJECT_NOUNS, SB_ADJECTIVES, SB_CONNECTIVES,
@@ -92,6 +92,10 @@ from weekly_assignments_data import WEEKLY_ASSIGNMENTS
 from time_data import TIME_ORDER_NOTE, TIME_RUOI_KEM_NOTE, TIME_PERIODS, TIME_HOURS, TIME_EXAMPLES
 from vocab_study_plan_data import VOCAB_PLAN
 from watchtower_vocab_data import WATCHTOWER_VOCAB
+from watchtower_vocab_translations import apply_wt_translations
+apply_wt_translations(WATCHTOWER_VOCAB)   # cs / hu / id / zh_cn meanings of the 823 study words new to [단어] (only where a language is still empty)
+from watchtower_vocab_translations_fr_de_pl import apply_wt_translations_fr_de_pl
+apply_wt_translations_fr_de_pl(WATCHTOWER_VOCAB)   # fr / de / pl meanings of the study words that had none (only where a language is still empty)
 from usage_guide_data import USAGE_GUIDE_COMMON, USAGE_GUIDE_TABS
 from course_materials import add_general_materials, remove_jw_event_items, grammar_plan
 from course_i18n import complete_course_texts
@@ -901,10 +905,18 @@ def build_data_js(site):
         USER_NEW_WORDS, corpus_text, RELIGIOUS_FILTER_TERMS,
         dialect_words=DIALECT_WORDS
     )
+    n_sorted_words = len(unified_words)   # the dictionary-ordered part; merge_pdf_words appends its own entries after it
     from jw_extraction.engine import ExtractionEngine
     from general_pdf_data import merge_pdf_words
     pdf_learning = ExtractionEngine(profile="general").load_general_output()["learningData"]
     unified_words = merge_pdf_words(unified_words, pdf_learning["words"])
+    # [단어] source tags (JW sites only): the Watchtower study words are all [단어] entries tagged WT; a word that occurs in the
+    # Watchtower study material gets WT, one in Enjoy Life Forever gets 행누 (after the PDF merge: PDF-source words count too).
+    def unit_rows_vi(pub):
+        return [r.get("vi") for u in (pub or {}).get("units", []) for r in u.get("rows", []) if r.get("vi")]
+    wt_texts = unit_rows_vi(watchtower_full_data) + [x for wk in WATCHTOWER_VOCAB for w in wk["words"] for x in (w["vi"], w.get("example"))]
+    unified_words = add_source_words(unified_words, n_sorted_words, site, WATCHTOWER_VOCAB,
+                                     {"WT": wt_texts, "행누": unit_rows_vi(enjoy_life_forever_data)}, corpus_text)
     # Curated zh_cn/cs/hu/id meanings per "vi|ko" sense; fills missing languages only.
     apply_extended_meanings(unified_words)
     parts.append(emit("GENERAL_PDF", pdf_learning))
@@ -983,7 +995,7 @@ def build_data_js(site):
     data_js = "".join(parts)
 
     if site == "general":
-        data_js += "const SONGS_DATA = [];\nconst SONG_MEANINGS = {};\nconst KID_SONGS = null;\nconst SONG_MEDIA = null;\nconst KID_SONG_TRACKS = null;\nconst ORIGINAL_SONGS = null;\nconst CHILDREN_SONGS = null;\n"
+        data_js += "const SONGS_DATA = [];\nconst SONG_MEANINGS = {};\nconst KID_SONGS = null;\nconst SONG_MEDIA = null;\nconst CHOIR_OSG = null;\nconst KID_SONG_TRACKS = null;\nconst ORIGINAL_SONGS = null;\nconst CHILDREN_SONGS = null;\n"
     else:
         # jw, jeonju, and ulsan get the full, identical Kingdom Songs source (same file, same
         # content) -- regional profiles are JW's full data set plus their own event layer.
@@ -992,11 +1004,22 @@ def build_data_js(site):
         data_js += "\n" + songs_data_js + "\n" + song_meanings_js + "\n"
         # 「여호와의 친구가 되세요」 songs: titles and jw.org links (kid_songs_data.json); lyric lines are filled only
         # from the instructor's own spreadsheet, never typed in here.
+        # The jw.org page addresses of that file ("url", "collectionUrl": article pages, not jwlshare finder links) are
+        # provenance only and no screen links to them, so they are not shipped: every jw.org address in the built
+        # page is a finder link (tests/test_jw_org_badges.js).
         with open("kid_songs_data.json", encoding="utf-8") as fh:
-            data_js += "const KID_SONGS = " + json.dumps(json.load(fh), ensure_ascii=False) + ";\n"
+            kid_songs = json.load(fh)
+
+        def _without_page_urls(node):
+            if isinstance(node, dict):
+                return {k: _without_page_urls(v) for k, v in node.items() if k not in ("url", "collectionUrl")}
+            if isinstance(node, list):
+                return [_without_page_urls(v) for v in node]
+            return node
+        data_js += "const KID_SONGS = " + json.dumps(_without_page_urls(kid_songs), ensure_ascii=False) + ";\n"
         # Song media that exist on jw.org per UI language (song_media_data.py): children's video/audio and choir
         # recordings of songs 1-163, and the jw.org track of each 「여호와의 친구가 되세요」 song.
-        from song_media_data import SONG_MEDIA, KID_SONG_TRACKS
+        from song_media_data import SONG_MEDIA, KID_SONG_TRACKS, CHOIR_OSG
 
         def _numbers(spec):
             out = []
@@ -1009,6 +1032,12 @@ def build_data_js(site):
         data_js += "const ORIGINAL_SONGS = " + js_json(song_collection("jw_original_songs_ko_vi.json", range(1, 118))) + ";\n"
         data_js += "const CHILDREN_SONGS = " + js_json(song_collection("jw_childrens_songs_ko_vi.json", range(0, 36))) + ";\n"
         data_js += "const SONG_MEDIA = " + json.dumps(song_media, separators=(",", ":")) + ";\n"
+        # JW choir recordings (jw.org pub-osg) of some 왕국 노래: an explicit song -> osg track table plus the languages
+        # whose finder link opens (scripts/song_choir_media.py); never computed from the song number.
+        choir_osg = {"tracks": {str(k): v for k, v in CHOIR_OSG["tracks"].items()},
+                     "audio": {lang: _numbers(spec) for lang, spec in CHOIR_OSG["audio"].items()},
+                     "video": {lang: _numbers(spec) for lang, spec in CHOIR_OSG["video"].items()}}
+        data_js += "const CHOIR_OSG = " + json.dumps(choir_osg, separators=(",", ":")) + ";\n"
         data_js += "const KID_SONG_TRACKS = " + json.dumps({str(k): v for k, v in KID_SONG_TRACKS.items()}, separators=(",", ":")) + ";\n"
 
     return data_js

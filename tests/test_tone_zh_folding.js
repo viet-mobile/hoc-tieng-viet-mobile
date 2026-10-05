@@ -1,6 +1,7 @@
 // [발음] > [성조] "베트남어 성조 ↔ 중국어(표준중국어) 성조 대응": each correspondence (단평성 ↔ 1성, ...) is a card that
 // starts folded and opens / folds on its header, even though it sits inside another open card
 // (template.html: `.group-card[data-open="false"] > .group-body`). Run build_app.py / assemble_app.py first.
+const PLATFORM = require('./helpers/platform');
 const {spawn} = require('child_process');
 const path = require('path');
 const {CDPClient} = require('./test_browser_runtime');
@@ -13,9 +14,9 @@ let checks = 0;
 const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
 
 (async () => {
-  const server = spawn('python', ['-m', 'http.server', String(PORT), '--directory', path.join(ROOT, 'dist')], {stdio: 'ignore'});
-  const chrome = spawn('C:/Program Files/Google/Chrome/Application/chrome.exe', ['--headless=new', '--remote-debugging-port=' + (PORT + 1000),
-    '--no-first-run', '--user-data-dir=' + path.resolve(process.env.TEMP || '.', 'tone-zh-' + process.pid)], {stdio: 'ignore'});
+  const server = spawn(PLATFORM.PYTHON, ['-m', 'http.server', String(PORT), '--directory', path.join(ROOT, 'dist')], {stdio: 'ignore'});
+  const chrome = spawn(PLATFORM.CHROME, ['--headless=new', '--remote-debugging-port=' + (PORT + 1000),
+    '--no-first-run', '--user-data-dir=' + path.resolve(PLATFORM.TMP, 'tone-zh-' + process.pid)], {stdio: 'ignore'});
   try {
     let targets;
     for (let i = 0; i < 40 && !targets; i++) { try { targets = await (await fetch(`http://127.0.0.1:${PORT + 1000}/json/list`)).json(); } catch { await sleep(250); } }

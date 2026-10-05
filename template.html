@@ -1168,6 +1168,10 @@
   .reader-sources { margin-bottom: 8px; }
   .reader-unit-select { width: 100%; max-width: 100%; border: 1.5px solid var(--border); border-radius: 10px; padding: 8px 10px; background: var(--surface); color: var(--ink); font-size: 0.86rem; margin-bottom: 8px; }
   .reader-toolbar { display: flex; justify-content: flex-end; margin: 4px 0 8px; }
+  /* [대역 읽기]: 반복 듣기 + 묵음 -- the same controls as [복습] */
+  .reader-audio-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 6px 0 2px; }
+  .reader-audio-row .repeat-review-option, .reader-audio-row .mute-autoplay-option { display: inline-flex; align-items: center; gap: 4px; min-height: 40px; font-size: .75rem; font-weight: 700; color: var(--ink-soft); white-space: nowrap; }
+  .reader-audio-row .mute-autoplay-option input { margin: 0; flex: none; }
   .reader-rows { display: flex; flex-direction: column; gap: 6px; }
   .reader-row { display: flex; align-items: flex-start; gap: 6px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px; }
   .reader-text { flex: 1; min-width: 0; }
@@ -1192,8 +1196,8 @@
     padding: 10px 12px; cursor: pointer; color: var(--ink); font: inherit; min-height: 48px; }
   .song-acc-head:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
   .song-acc-titles { flex: 1; min-width: 0; overflow-wrap: anywhere; }
-  .song-acc-vi { font-weight: 700; line-height: 1.4; }
-  .song-acc-ko { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.4; margin-top: 2px; }
+  /* the titles are the song title of [왕국 노래] (.song-detail-vi-title / .song-detail-target-title): one line, a space between */
+  .song-acc-vi, .song-acc-ko { display: inline; }
   .song-acc-missing { display: inline-block; font-size: 0.72rem; font-weight: 700; color: var(--ink-faint); background: var(--chip-bg);
     border-radius: 999px; padding: 1px 8px; }
   .song-acc .chev { flex: none; transition: transform .15s; }
@@ -1201,13 +1205,12 @@
   .song-acc-body { padding: 4px 12px 12px; border-top: 1px solid var(--border); }
   .song-full-links { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
   .song-full-link { text-decoration: none; }
-  .song-lyric-cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
-  @media (max-width: 720px) { .song-lyric-cols { grid-template-columns: minmax(0, 1fr); gap: 10px; } }
+  /* one language under the other on every width, as in [왕국 노래] (no columns); the lines are its .lyric-unit boxes */
+  .song-lyric-cols { display: block; }
+  .song-lyric-col + .song-lyric-col { margin-top: 16px; }
   .song-lyric-col h4 { margin: 4px 0 6px; font-size: 0.8rem; color: var(--accent); font-weight: 800; }
-  .song-line { display: flex; align-items: flex-start; justify-content: space-between; gap: 6px; line-height: 1.6; padding: 1px 0; }
-  .song-line-text { flex: 1; min-width: 0; overflow-wrap: anywhere; }
-  .song-line .speak-btn { flex: none; }
-  .song-line-label { font-size: 0.78rem; font-weight: 800; color: var(--ink-faint); margin: 8px 0 2px; }
+  .song-lyric-line .lyric-vi, .song-lyric-line .lyric-target { min-width: 0; overflow-wrap: anywhere; }
+  .song-lyric-line .speak-btn { flex: none; }
   .song-stanza-gap { height: 10px; }
   .song-lyric-missing { font-size: 0.85rem; color: var(--ink-faint); padding: 6px 0; }
   .kid-song-list { display: flex; flex-direction: column; gap: 6px; }
@@ -1215,6 +1218,34 @@
   .kid-song-info { flex: 1; min-width: 0; }
   .kid-song .song-item-vi { white-space: normal; overflow: visible; text-overflow: clip; }
   .kid-song-links { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 4px; font-size: 0.78rem; }
+  /* JW.ORG badge: navy, white text; top-left and bottom-right corners rounded, the other two square */
+  .jw-org-badge { display: inline-block; background: #0b2a5b; color: #fff; border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 6px 0 6px 0;
+    padding: 3px 7px; font-family: var(--font-ui, system-ui, sans-serif); font-size: 0.66rem; font-weight: 800; letter-spacing: 0.04em; line-height: 1;
+    text-decoration: none; vertical-align: middle; white-space: nowrap; }
+  .jw-org-badge:hover { background: #123a7a; }
+  .jw-org-badge:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .jw-badge-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 6px 0 4px; font-size: 0.78rem; }
+  .jw-badge-item { display: inline-flex; align-items: center; gap: 6px; }
+  .jw-badge-lang { color: var(--ink-soft); font-weight: 700; }
+  /* "title [JW.ORG]" in a card header: the title button shrinks to its title, the badges are its sibling, the rest of the row still toggles */
+  .jw-title-badges { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px; flex: none; }
+  /* the row wraps: a title too long for the line keeps the full width and its badges continue on the next line */
+  .group-head-row.has-jw-badges { cursor: pointer; flex-wrap: wrap; row-gap: 0; }
+  .group-head-row.has-jw-badges .group-head { flex: 0 1 auto; width: auto; max-width: 100%; }
+  .group-head-row.has-jw-badges .read-all-btn { margin-left: auto; }
+  .song-acc-headrow { display: flex; align-items: flex-start; gap: 8px; }
+  .song-acc-headrow.has-jw-badges { cursor: pointer; flex-wrap: wrap; row-gap: 0; padding-right: 10px; }
+  .song-acc-headrow.has-jw-badges .song-acc-head { width: auto; flex: 0 1 auto; max-width: 100%; }
+  .song-acc-headrow.has-jw-badges .jw-title-badges { margin-top: 12px; }
+  @media (max-width: 600px) {
+    .group-head-row.has-jw-badges { padding-bottom: 8px; }
+    .group-head-row.has-jw-badges .jw-title-badges { margin-left: 15px; }
+    .song-acc-headrow.has-jw-badges .jw-title-badges { margin: 0 0 10px 12px; }
+  }
+  .song-detail-title-line { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 8px; }
+  .song-detail-title-line-vi { margin: 0 0 3px; }
+  .song-detail-title-line-target { margin: 0 0 6px; }
+  .song-detail-title-line .song-detail-vi-title, .song-detail-title-line .song-detail-target-title { margin: 0; }
   .song-media-label { color: var(--ink-soft); font-weight: 700; }
   .kid-song-lines { margin-top: 8px; }
   .curr-guide { background: var(--accent-soft); border-radius: 10px; padding: 9px 11px; margin: 2px 0 10px; display: flex; flex-direction: column; gap: 6px; }
@@ -1258,6 +1289,9 @@
   .curr-assign-card[data-open="true"] .curr-assign-body { display: block; }
   .curr-assign-day-group { padding: 8px 0; border-top: 1px solid var(--border); }
   .curr-assign-day-group:first-child { border-top: none; }
+  /* JEONJU landing: today's weekday in the opened homework week; on a weekend only the week's card is marked */
+  .curr-assign-day-group.curr-today { background: var(--accent-soft); border-radius: 8px; padding-left: 10px; padding-right: 10px; box-shadow: inset 3px 0 0 var(--accent); }
+  .curr-assign-card.curr-today-week > .curr-assign-toggle .curr-assign-label { font-weight: 800; }
   .curr-assign-day-label { font-size: 0.72rem; font-weight: 800; color: var(--ink-soft); margin-bottom: 4px; }
   .curr-assign-row {
     display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
@@ -1496,7 +1530,9 @@
   }
   .song-detail-vi-title {
     font-family: var(--font-vn);
-    font-size: 1.25rem;
+    /* what [왕국 노래] has always shown: its <h3> sits in a .p-section, whose `h3 { font-size: .95rem }` outranked 1.25rem here.
+       Stated here so that every use of this class (the [오리지널 송] / [어린이 노래] titles) renders the same. */
+    font-size: 0.95rem;
     font-weight: 800;
     color: var(--accent);
     margin: 0 0 3px;
@@ -3495,6 +3531,7 @@
         <button class="subtab-btn" data-vocab="orderrev" aria-selected="false" data-i18n="어순반대">어순반대</button>
         <button class="subtab-btn" data-vocab="groups" aria-selected="false" data-i18n="동일음">동일음</button>
         <button class="subtab-btn" data-vocab="words" aria-selected="true" data-i18n="단어">단어</button>
+        <button class="subtab-btn" data-vocab="wt" aria-selected="false" data-i18n="파수대">파수대</button>
         <button class="subtab-btn" data-vocab="antonym" aria-selected="false" data-i18n="반의">반의</button>
         <button class="subtab-btn" data-vocab="chain" aria-selected="false" data-i18n="끝말">끝말</button>
         <button class="subtab-btn" data-vocab="dialect" aria-selected="false" data-i18n="남북 단어">남북 단어</button>
@@ -3548,7 +3585,7 @@
         <div class="subtab-row song-kind-tabs" role="tablist" aria-label="노래">
           <button type="button" class="subtab-btn" role="tab" id="songkind-tab-kingdom" data-songkind="kingdom" aria-selected="true" aria-controls="curr-songs-root" data-i18n="왕국 노래">왕국 노래</button>
           <button type="button" class="subtab-btn" role="tab" id="songkind-tab-original" data-songkind="original" aria-selected="false" aria-controls="song-original-root" data-i18n="오리지널 송">오리지널 송</button>
-          <button type="button" class="subtab-btn" role="tab" id="songkind-tab-kids" data-songkind="kids" aria-selected="false" aria-controls="song-kids-root" data-i18n="어린이 노래">어린이 노래</button>
+          <button type="button" class="subtab-btn" role="tab" id="songkind-tab-kids" data-songkind="kids" aria-selected="false" aria-controls="song-kids-root" data-i18n="여호와의 친구가 되세요">여호와의 친구가 되세요</button>
         </div>
         <div id="curr-songs-root" role="tabpanel" aria-labelledby="songkind-tab-kingdom"></div>
         <div id="song-original-root" class="song-kind-root" role="tabpanel" aria-labelledby="songkind-tab-original" hidden></div>
