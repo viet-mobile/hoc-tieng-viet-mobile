@@ -40,11 +40,14 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
     await cdp.connect();
     await cdp.send('Runtime.enable');
     await cdp.send('Page.enable');
+    // the speech checks follow the serial engine of a desktop Windows browser, whatever machine runs the test
+    await cdp.send('Network.enable');
+    await cdp.send('Network.setUserAgentOverride', {userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36 Edg/129.0'});
     await cdp.send('Page.addScriptToEvaluateOnNewDocument', {source: FAKE_TTS});
     let errs = [];
     cdp.on('Runtime.exceptionThrown', e => errs.push('exception ' + e.exceptionDetails.text + ' ' + ((e.exceptionDetails.exception || {}).description || '')));
     cdp.on('Runtime.consoleAPICalled', e => { if (e.type === 'error') errs.push('console ' + e.args.map(a => a.value || a.description).join(' ')); });
-    const E = async expr => (await cdp.send('Runtime.evaluate', {expression: expr, awaitPromise: true, returnByValue: true})).result.value;
+    const E = async expr => (await cdp.send('Runtime.evaluate', {expression: expr, awaitPromise: true, returnByValue: true, userGesture: true})).result.value;
     const width = async w => cdp.send('Emulation.setDeviceMetricsOverride', {width: w, height: 900, deviceScaleFactor: 1, mobile: w < 600});
 
     for (const site of SITES) {
@@ -78,18 +81,18 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         out.labels116=[...c.querySelectorAll('.lyric-section-marker')].map(x=>x.textContent);
         out.labelBtns=[...c.querySelectorAll('.song-lyric-line')].filter(l=>/^\\s*\\([^()]*\\)\\s*$/.test(l.textContent)).length;
         window.__ttsLog.length=0;
-        const viBtn=c.querySelector('.song-lyric-col[lang="vi"] .speak-btn'), koBtn=c.querySelector('.song-lyric-col[lang="ko"] .speak-btn');
-        out.viLine=viBtn.closest('.song-lyric-line').textContent; viBtn.click(); await sleep(400);
-        out.koLine=koBtn.closest('.song-lyric-line').textContent; koBtn.click(); await sleep(400);
+        const row0=c.querySelector('.song-lyric-rows > .lyric-unit'), viBtn=row0.querySelector('.lyric-vi-row .speak-btn'), koBtn=row0.querySelector('.lyric-target-row .speak-btn');
+        out.viLine=row0.querySelector('.lyric-vi').textContent; viBtn.click(); await sleep(400);
+        out.koLine=row0.querySelector('.lyric-target').textContent; koBtn.click(); await sleep(400);
         out.tts=window.__ttsLog.slice();
         out.aria=[viBtn.getAttribute('aria-label'),koBtn.getAttribute('aria-label')];
         c.querySelector('.song-acc-head').click();await sleep(150);
         out.closed116=oroot.querySelector('.song-acc[data-song-id="osg-116"] .song-acc-head').getAttribute('aria-expanded')+'/'+oroot.querySelectorAll('.song-acc[data-song-id="osg-116"] .song-lyric-line').length;
         // a song without Vietnamese
-        const noVi=ORIGINAL_SONGS.find(s=>!s.vi.title&&s.ko.url); // (osg-1 has neither: its Korean link is not on jw.org)
+        const noVi=ORIGINAL_SONGS.find(s=>!s.vi.title&&s.ko.url); // (osg-1 has no Vietnamese; its Korean link is an AUDIO given as media data, not a url)
         oroot.querySelector('.song-acc[data-song-id="'+noVi.id+'"] .song-acc-head').click();await sleep(150);
         const cn=oroot.querySelector('.song-acc[data-song-id="'+noVi.id+'"]');
-        out.noVi={missing:!!cn.querySelector('.song-acc-missing'),viMsg:!!cn.querySelector('.song-lyric-col[lang="vi"] .song-lyric-missing'),viLink:[...cn.querySelectorAll('.song-full-link')].map(a=>a.textContent),koLines:cn.querySelectorAll('.song-lyric-col[lang="ko"] .song-lyric-line').length};
+        out.noVi={missing:!!cn.querySelector('.song-acc-missing'),viMsg:!!cn.querySelector('.song-lyric-missing'),viLink:[...cn.querySelectorAll('.song-full-link')].map(a=>a.textContent),koLines:cn.querySelectorAll('.song-lyric-line .lyric-target').length};
         oroot.querySelector('.song-acc[data-song-id="osg-117"] .song-acc-head').click();await sleep(150);
         out.lines117=oroot.querySelectorAll('.song-acc[data-song-id="osg-117"] .song-lyric-line').length;
         out.links117=oroot.querySelectorAll('.song-acc[data-song-id="osg-117"] .song-full-link').length;
@@ -107,7 +110,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         out.kidGapBtns=[...kroot.querySelectorAll('.song-stanza-gap .speak-btn')].length;
         const kNoLyr=CHILDREN_SONGS.find(s=>s.vi.title&&!s.vi.lines.length);
         if (kNoLyr){ kroot.querySelector('.song-acc[data-song-id="'+kNoLyr.id+'"] .song-acc-head').click(); await sleep(150);
-          out.kNoLyr=!!kroot.querySelector('.song-acc[data-song-id="'+kNoLyr.id+'"] .song-lyric-col[lang="vi"] .song-lyric-missing'); } else out.kNoLyr='none';
+          out.kNoLyr=!!kroot.querySelector('.song-acc[data-song-id="'+kNoLyr.id+'"] .song-lyric-missing'); } else out.kNoLyr='none';
         // other language, and back to the kingdom tab through a curriculum song link
         window.setLang('en');await sleep(300);
         out.enTabs=[...document.querySelectorAll('.song-kind-tabs [role="tab"]')].map(t=>t.textContent.trim());
@@ -138,7 +141,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
       ok(r.labels116.length > 0 && r.labelBtns === 0, n + ': structure labels without buttons');
       ok(r.tts.length === 2 && r.tts[0].lang === 'vi-VN' && r.tts[1].lang === 'ko-KR' && !/^\s*\d+\./.test(r.tts[0].text) && !/^\s*\d+\./.test(r.tts[1].text) &&
         r.viLine.indexOf(r.tts[0].text.slice(0, 6)) >= 0, n + ': line listen ' + JSON.stringify(r.tts) + ' / ' + r.viLine);
-      ok(r.aria.join() === '베트남어 구절 듣기,한국어 구절 듣기', n + ': aria ' + r.aria);
+      ok(r.aria.join() === '베트남어 구절 듣기,발음 듣기', n + ': aria ' + r.aria);
       ok(r.closed116 === 'false/0', n + ': closing removes the lyrics ' + r.closed116);
       ok(r.noVi.missing && r.noVi.viMsg && r.noVi.viLink.length === 1 && r.noVi.koLines > 0, n + ': song without Vietnamese ' + JSON.stringify(r.noVi));
       ok(r.lines117 > 5 && r.links117 === 0, n + ': OSG 117 (lyrics, no link: not on jw.org) ' + r.links117);
@@ -297,19 +300,19 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
             const card=()=>root.querySelector('.song-acc[data-song-id="'+id+'"]');
             if(!card()) { out.songs[id]={missing:true}; continue; }
             if(card().querySelector('.song-acc-head').getAttribute('aria-expanded')!=='true'){ card().querySelector('.song-acc-head').click(); await sleep(150); }
-            const c=card(), head=c.querySelector('.song-acc-head'), vi=c.querySelector('.song-acc-vi'), ko=c.querySelector('.song-acc-ko');
-            const secs=[...c.querySelectorAll('.song-lyric-col')];
-            const a=secs[0]&&secs[0].getBoundingClientRect(), b=secs[1]&&secs[1].getBoundingClientRect();
+            const c=card(), head=c.querySelector('.song-acc-head'), vi=c.querySelector('.song-acc-vi'), ko=c.querySelector('.song-acc-target');
+            const both=[...c.querySelectorAll('.song-lyric-rows > .lyric-unit')].find(u=>u.querySelector('.lyric-vi')&&u.querySelector('.lyric-target'));
+            const a=both&&both.querySelector('.lyric-vi').getBoundingClientRect(), b=both&&both.querySelector('.lyric-target').getBoundingClientRect();
             out.songs[id]={kind, viTitle:vi&&vi.textContent, koTitle:ko&&ko.textContent, titlesText:c.querySelector('.song-acc-titles').textContent,
               viCss:vi&&css(vi,K), koCss:ko&&css(ko,K), viCls:vi&&vi.className, koCls:ko&&ko.className,
               links:[...c.querySelectorAll('.song-full-links .song-full-link')].map(x=>({t:x.textContent,h:x.getAttribute('href'),tg:x.target,rel:x.rel})), label:(c.querySelector('.song-full-links .song-media-label')||{}).textContent,
-              order:secs.map(x=>x.getAttribute('lang')).join(), stacked:!!(a&&b&&b.top>=a.bottom-1&&Math.abs(a.left-b.left)<2), display:getComputedStyle(c.querySelector('.song-lyric-cols')).display,
+              order:both?(both.querySelector('.lyric-vi').compareDocumentPosition(both.querySelector('.lyric-target'))&Node.DOCUMENT_POSITION_FOLLOWING?'vi,ko':'ko,vi'):'', stacked:!!(a&&b&&b.top>=a.bottom-1&&Math.abs(a.left-b.left)<2), display:getComputedStyle(c.querySelector('.song-lyric-rows')).display,
               markerBtns:c.querySelectorAll('.lyric-section-marker .speak-btn').length, units:c.querySelectorAll('.song-lyric-line').length,
               aria:[head.getAttribute('aria-expanded'),!!document.getElementById(head.getAttribute('aria-controls'))]};
           }
         }
         return out;})()`);
-      const jsonOf = async id => E(`(()=>{const s=ORIGINAL_SONGS.concat(CHILDREN_SONGS).find(x=>x.id==='${id}'); return s&&{vi:{url:s.vi.url,available:s.vi.available,title:s.vi.title},ko:{url:s.ko.url,available:s.ko.available,title:s.ko.title}};})()`);
+      const jsonOf = async id => E(`(()=>{const s=ORIGINAL_SONGS.concat(CHILDREN_SONGS).find(x=>x.id==='${id}'); return s&&{media:s.media||null,vi:{url:s.vi.url,available:s.vi.available,title:s.vi.title},ko:{url:s.ko.url,available:s.ko.available,title:s.ko.title}};})()`);
       ok(ui && ui.kingdom, n + ': kingdom title styles read');
       for (const id of ['osg-1', 'osg-116', 'osg-117', 'pk-special-0', 'pkon-17', 'pkon-35']) {
         const o = ui && ui.songs[id], j = await jsonOf(id);
@@ -317,11 +320,14 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         ok((!j.vi.title || o.viCls.includes('song-detail-vi-title')) && o.koCls.includes('song-detail-target-title'), `${n}: ${id} titles use the Kingdom title classes`);
         ok((!j.vi.title || o.viCss === ui.kingdom.vi) && o.koCss === ui.kingdom.target, `${n}: ${id} title typography = Kingdom (${o.viCss} / ${o.koCss} vs ${ui.kingdom.vi} / ${ui.kingdom.target})`);
         ok(!j.vi.title || o.titlesText.trim() === j.vi.title + ' ' + j.ko.title, `${n}: ${id} exactly one space between the titles: "${o.titlesText}"`);
-        const want = ['vi', 'ko'].filter(l => j[l].url && j[l].available);
-        ok(o.links.length === want.length && o.links.every((x, i) => x.h === j[want[i]].url && x.tg === '_blank' && /noopener/.test(x.rel) && /noreferrer/.test(x.rel)), `${n}: ${id} links = the JSON's (${want}) ${JSON.stringify(o.links.map(x => x.t))}`);
+        // a link is the JSON's own jwOrgUrl, or (OSG 1) the finder link of its media key + the language's JW code
+        const JWCODE = {vi: 'VT', ko: 'KO'};
+        const hrefOf = l => j.media && j.media[l] ? 'https://www.jw.org/finder?srcid=jwlshare&wtlocale=' + JWCODE[l] + '&lank=' + j.media[l].mediaKey : j[l].url;
+        const want = ['vi', 'ko'].filter(l => hrefOf(l) && j[l].available);
+        ok(o.links.length === want.length && o.links.every((x, i) => x.h === hrefOf(want[i]) && x.tg === '_blank' && /noopener/.test(x.rel) && /noreferrer/.test(x.rel)), `${n}: ${id} links = the JSON's (${want}) ${JSON.stringify(o.links.map(x => x.t))}`);
         ok(o.links.length === 0 || (o.label === '전체 듣기' && o.links.every(x => /^▶ (Tiếng Việt|한국어)$/.test(x.t))), `${n}: ${id} links in the Kingdom form: ${o.label} ${JSON.stringify(o.links.map(x => x.t))}`);
         ok(new Set(o.links.map(x => x.t)).size === o.links.length, `${n}: ${id} duplicate link`);
-        ok(o.order === 'vi,ko' && o.stacked && o.display !== 'grid', `${n}: ${id} Vietnamese above Korean, no columns (${o.order}, stacked ${o.stacked}, ${o.display})`);
+        ok((!j.vi.title || (o.order === 'vi,ko' && o.stacked)) && o.display !== 'grid', `${n}: ${id} Vietnamese row above its Korean row, no columns (${o.order}, stacked ${o.stacked}, ${o.display})`);
         ok(o.markerBtns === 0 && o.units > 3 && o.aria[0] === 'true' && o.aria[1], `${n}: ${id} lyric units ${o.units}, markers without buttons, accordion aria ${o.aria}`);
       }
       // widths and the 12 UI languages: titles wrap, nothing runs over, the lyrics stay stacked
@@ -335,9 +341,9 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
               const root=document.getElementById(kind==='original'?'song-original-root':'song-kids-root'); const id=kind==='original'?'osg-116':'pk-special-0';
               const c=root.querySelector('.song-acc[data-song-id="'+id+'"]'); if(!c){out.push(l+kind+' missing');continue;}
               if(c.querySelector('.song-acc-head').getAttribute('aria-expanded')!=='true'){c.querySelector('.song-acc-head').click(); await sleep(100);}
-              const cc=root.querySelector('.song-acc[data-song-id="'+id+'"]'), secs=[...cc.querySelectorAll('.song-lyric-col')], a=secs[0].getBoundingClientRect(), b=secs[1].getBoundingClientRect();
+              const cc=root.querySelector('.song-acc[data-song-id="'+id+'"]'), bu=[...cc.querySelectorAll('.song-lyric-rows > .lyric-unit')].find(u=>u.querySelector('.lyric-vi')&&u.querySelector('.lyric-target')), a=bu&&bu.querySelector('.lyric-vi').getBoundingClientRect(), b=bu&&bu.querySelector('.lyric-target').getBoundingClientRect();
               const head=cc.querySelector('.song-acc-head');
-              if (!(b.top>=a.bottom-1) || head.scrollWidth>head.clientWidth+1 || document.documentElement.scrollWidth>innerWidth+1) out.push(l+' '+kind+' stacked='+(b.top>=a.bottom-1)+' head='+(head.scrollWidth>head.clientWidth+1)+' page='+(document.documentElement.scrollWidth>innerWidth+1));
+              if ((bu && !(b.top>=a.bottom-1)) || head.scrollWidth>head.clientWidth+1 || document.documentElement.scrollWidth>innerWidth+1) out.push(l+' '+kind+' stacked='+(!bu||b.top>=a.bottom-1)+' head='+(head.scrollWidth>head.clientWidth+1)+' page='+(document.documentElement.scrollWidth>innerWidth+1));
             }
           }
           window.setLang('ko'); return out;})()`);

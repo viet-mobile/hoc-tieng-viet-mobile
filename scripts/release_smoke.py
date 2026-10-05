@@ -26,6 +26,8 @@ STEPS = [
     ("JS syntax", [["node", "--check", "app_logic.js"]]),
     ("왕국 노래 164 data", [[PY, "tests/test_kingdom_song_164.py"]]),
     ("JW.ORG badges, publication views, console errors", [["node", "tests/test_jw_org_badges.js"]]),
+    ("Original / children's songs: bilingual rows, read-all, OSG 1 audio (jeonju)", [["node", "tests/test_song_bilingual_reading.js", "--sites=jeonju/"]]),
+    ("daily course landing: injected Tuesday 2026-10-06 -> week 2026/10/03", [["node", "tests/test_course_ux.js", "--smoke"]]),
     ("Watchtower read-all, title first", [["node", "tests/test_wt_listen_title.js"]]),
     ("regional admin basics", [["node", "tests/test_regional_admin.js"]]),
 ]

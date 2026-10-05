@@ -235,6 +235,7 @@
     "오늘 복습 완료": {"vi": "Đã ôn xong hôm nay", "cs": "Dnešní opakování hotovo", "zh_cn": "今天的复习完成", "zh": "今天的複習完成", "en": "Mark today’s review done", "fr": "Révision du jour terminée", "de": "Heutige Wiederholung erledigt", "hu": "A mai ismétlés kész", "id": "Ulangan hari ini selesai", "ja": "今日の復習を完了", "pl": "Dzisiejsza powtórka zakończona"},
     "간격 복습 안내": {"vi": "Mở phần từ vựng hôm nay từ [Khóa học] (nút Đi đến), học xong thì bấm “Thêm vào ôn cách quãng”. Các từ đó sẽ được ôn lại vào ngày hôm sau, sau 1 tuần và sau 4 tuần.", "cs": "Otevřete dnešní slovíčka z [Kurz] (tlačítko Přejít) a po naučení stiskněte „Přidat do rozloženého opakování“. Slova se vrátí další den, po 1 týdnu a po 4 týdnech.", "zh_cn": "从[课程]的快捷按钮打开今天的单词，学完后点“加入间隔复习”。这些单词会在第二天、1周后、4周后再次出现。", "zh": "從[課程]的快速按鈕打開今天的單字，學完後點「加入間隔複習」。這些單字會在第二天、1週後、4週後再次出現。", "en": "Open today’s words from [Course] (the Go button) and, once learned, tap “Add to spaced review”. They come back the next day, after 1 week and after 4 weeks.", "fr": "Ouvrez les mots du jour depuis [Cours] (bouton Aller) puis, une fois appris, touchez « Ajouter à la révision espacée ». Ils reviennent le lendemain, après 1 semaine et après 4 semaines.", "de": "Öffne die Wörter des Tages über [Kurs] (Schaltfläche „Gehe zu“) und tippe nach dem Lernen auf „Zur verteilten Wiederholung hinzufügen“. Sie kommen am nächsten Tag, nach 1 Woche und nach 4 Wochen wieder.", "hu": "Nyisd meg a mai szavakat a [Kurzus] Ugrás gombjával, és a tanulás után koppints a „Hozzáadás a térközös ismétléshez” gombra. Másnap, 1 hét és 4 hét múlva újra előkerülnek.", "id": "Buka kata hari ini dari [Kursus] (tombol Buka), lalu setelah dipelajari ketuk “Tambahkan ke ulangan berjarak”. Kata-kata itu muncul lagi besok, setelah 1 minggu, dan setelah 4 minggu.", "ja": "［コース］のショートカットから今日の単語を開き、学んだら「間隔復習に追加」を押してください。翌日、1週間後、4週間後にもう一度出てきます。", "ko": "[과정]의 바로가기로 오늘의 어휘를 열고 학습을 마친 뒤 「간격 복습에 추가」를 누르세요. 그 단어들은 다음날, 1주 뒤, 4주 뒤에 다시 복습할 차례가 됩니다.", "pl": "Otwórz dzisiejsze słowa z [Kurs] (przycisk Przejdź), a po nauce stuknij „Dodaj do powtórek rozłożonych”. Wrócą następnego dnia, po tygodniu i po 4 tygodniach."},
     "오늘 복습할 단어가 없어요.": {"vi": "Hôm nay không có từ cần ôn.", "cs": "Dnes nejsou žádná slova k opakování.", "zh_cn": "今天没有要复习的单词。", "zh": "今天沒有要複習的單字。", "en": "No words are due today.", "fr": "Aucun mot à revoir aujourd’hui.", "de": "Heute sind keine Wörter fällig.", "hu": "Ma nincs esedékes szó.", "id": "Tidak ada kata yang perlu diulang hari ini.", "ja": "今日復習する単語はありません。", "pl": "Dziś nie ma słów do powtórki."},
+    "이 언어의 가사는 제공되지 않아요": {"vi": "Chưa có lời bài hát bằng ngôn ngữ này.", "cs": "Text písně v tomto jazyce není k dispozici.", "zh_cn": "暂无此语言的歌词。", "zh": "暫無此語言的歌詞。", "en": "Lyrics in this language are not available.", "fr": "Les paroles dans cette langue ne sont pas disponibles.", "de": "Der Liedtext in dieser Sprache ist nicht verfügbar.", "hu": "Ezen a nyelven nem érhető el a dalszöveg.", "id": "Lirik dalam bahasa ini belum tersedia.", "ja": "この言語の歌詞はありません。", "pl": "Tekst piosenki w tym języku jest niedostępny."},
     "오리지널 송": {"vi": "Bài hát đặc sắc", "cs": "Písně z JW Broadcasting®", "zh_cn": "原创歌曲", "zh": "原創歌曲", "en": "Original Songs", "fr": "Chansons", "de": "Besondere Lieder", "hu": "Dalok", "id": "Lagu-Lagu", "ja": "オリジナルソング", "pl": "Piosenki"},
     "어린이 노래": {"vi": "Bài hát thiếu nhi", "cs": "Písně pro děti", "zh_cn": "儿童歌曲", "zh": "兒童歌曲", "en": "Children’s Songs", "fr": "Chants pour enfants", "de": "Kinderlieder", "hu": "Gyermekdalok", "id": "Lagu Anak", "ja": "子ども向けの歌", "pl": "Piosenki dla dzieci"},
     "베트남어 미제공": {"vi": "Chưa có tiếng Việt", "cs": "Není ve vietnamštině", "zh_cn": "无越南语版", "zh": "無越南語版", "en": "Not in Vietnamese", "fr": "Pas en vietnamien", "de": "Nicht auf Vietnamesisch", "hu": "Vietnamiul nem elérhető", "id": "Tidak ada dalam bahasa Vietnam", "ja": "ベトナム語版なし", "pl": "Brak wersji wietnamskiej"},
@@ -1722,7 +1723,7 @@
   // them, or the UI language changes (the "N회"/"N times" labels are translated) -- same
   // multi-widget-sync approach as renderAllDialectToggles() below.
   function renderAllViRepeatToggles() {
-    ["repeat-toggle-settings", "repeat-toggle-review", "repeat-toggle-reader", "repeat-toggle-wt-words", "repeat-toggle-wt-sentences"].forEach(function (id) {
+    ["repeat-toggle-settings", "repeat-toggle-review", "repeat-toggle-reader", "repeat-toggle-wt-words", "repeat-toggle-wt-sentences", "repeat-toggle-song-original", "repeat-toggle-song-kids"].forEach(function (id) {
       var el = document.getElementById(id);
       if (el) renderViRepeatToggle(el);
     });
@@ -2670,7 +2671,7 @@
   // never also toggles the card open/closed.
   document.addEventListener("click", function (e) {
     var btn = e.target.closest && e.target.closest(".read-all-btn");
-    if (!btn) return;
+    if (!btn || !btn.dataset.readall) return;   // a "▶ <language>" jw.org link shares the class: it must open
     e.preventDefault();
     e.stopPropagation();
     if (readAllState.btn === btn && readAllState.id === btn.dataset.readall) { stopReadAllSequence(); return; }
@@ -2775,6 +2776,7 @@
     var targetTop = (restoreScroll && tabScrollPos.hasOwnProperty(tab)) ? tabScrollPos[tab] : 0;
     window.scrollTo({ top: targetTop, behavior: "instant" in window ? "instant" : "auto" });
     saveLastPlace();
+    if (tab === "curriculum" && coursePendingScroll) { coursePendingScroll = false; scrollToCourseTarget(); }
   }
   tabButtons.forEach(function (btn) {
     btn.addEventListener("click", function () { activateTab(btn.dataset.tab, true); });
@@ -9613,6 +9615,8 @@ function verifyDistribution(units, dist, pins) {
     return {
       "song-video": { ko: "노래 영상", vi: "Video bài hát", en: "Song video", ja: "歌のビデオ", zh: "詩歌影片", zh_cn: "诗歌视频", de: "Lied-Video",
         fr: "Vidéo du cantique", pl: "Film z pieśnią", cs: "Video písně", hu: "Énekvideó", id: "Video lagu" },
+      "song-audio": { ko: "노래 오디오", vi: "Âm thanh bài hát", en: "Song audio", ja: "歌の音声", zh: "詩歌音訊", zh_cn: "诗歌音频", de: "Lied-Audio",
+        fr: "Audio du cantique", pl: "Nagranie pieśni", cs: "Audio písně", hu: "Énekhanganyag", id: "Audio lagu" },
       "choir-audio": { ko: "JW 합창 오디오", vi: "Âm thanh hợp xướng JW", en: "JW choir audio", ja: "JW合唱の音声", zh: "JW合唱音頻", zh_cn: "JW合唱音频",
         de: "JW-Chor-Audio", fr: "Audio de la chorale JW", pl: "Nagranie chóru JW", cs: "Nahrávka sboru JW", hu: "JW-kórusfelvétel", id: "Audio paduan suara JW" },
       "choir-video": { ko: "JW 합창 비디오", vi: "Video hợp xướng JW", en: "JW choir video", ja: "JW合唱のビデオ", zh: "JW合唱影片", zh_cn: "JW合唱视频",
@@ -9764,69 +9768,163 @@ function verifyDistribution(units, dist, pins) {
     var d = kind === "original" ? (typeof ORIGINAL_SONGS !== "undefined" && ORIGINAL_SONGS) : (typeof CHILDREN_SONGS !== "undefined" && CHILDREN_SONGS);
     return d || [];
   }
+  // The learner language of these two tabs is the UI language; with the Vietnamese UI there is no second language (the same
+  // rule as [왕국 노래]). A song only ever shows the data of that very language: no other language stands in for a missing one.
+  function songTargetLang() { return currentLang === "vi" ? "" : currentLang; }
+  function songLangData(song, l) { return l && song[l] && typeof song[l] === "object" ? song[l] : null; }   // (song.id is a string: "id" is also Indonesian)
+  function songLangHas(song, l) { var d = songLangData(song, l); return !!(d && d.available && d.lines.length); }
   function songKindSearchIndex(kind) {
-    if (!songKindIndex[kind]) {
-      songKindIndex[kind] = songKindData(kind).map(function (song) {
-        return { song: song, hay: [String(song.track), song.vi.title, song.ko.title, song.vi.lines.join(" "), song.ko.lines.join(" ")].join(" ").toLowerCase() };
-      });
+    var tl = songTargetLang();
+    if (!songKindIndex[kind] || songKindIndex[kind].lang !== tl) {
+      songKindIndex[kind] = { lang: tl, items: songKindData(kind).map(function (song) {
+        var t = songLangData(song, tl);
+        return { song: song, hay: [String(song.track), song.vi ? song.vi.title : "", t ? t.title : "", song.vi ? song.vi.lines.join(" ") : "", t ? t.lines.join(" ") : ""].join(" ").toLowerCase() };
+      }) };
     }
-    return songKindIndex[kind];
+    return songKindIndex[kind].items;
   }
   function isSongLabelLine(line) { return /^\s*\([^()]*\)\s*$/.test(line); }
   function songLineSpeechText(line) { return String(line).replace(/^\s*\d+\s*[.)]\s*/, "").trim(); }
   function songKindRoot(kind) { return document.getElementById(kind === "original" ? "song-original-root" : "song-kids-root"); }
+  // ---- row pairing ----
+  // The two languages' lyrics of these songs do not have the same number of lines, so the lines are not zipped by index over
+  // the whole song. Each side is cut into sections (a numbered verse, or a "(코러스)" / "(ĐIỆP KHÚC)" ... section marker: the
+  // kind of a marker is the same in every language), the sections are aligned in order (a monotonic alignment that only
+  // matches sections of the same kind, best total fit of their lengths), and the lines of two matched sections are paired by
+  // position. A line without a partner (an extra line, a section only one language has) is a row of its own: no line is lost
+  // and none is cut to the shorter side.
+  var SONG_MARKER_KINDS = [
+    ["prechorus", /프리\s*코러스|TIỀN ĐIỆP KHÚC/i], ["chorus", /코러스|ĐIỆP KHÚC/i], ["bridge", /브리지|ĐOẠN CHUYỂN/i],
+    ["ending", /엔딩|ĐOẠN KẾT/i], ["interlude", /간주|ĐOẠN NỐI/i], ["intro", /인트로|ĐOẠN DẠO ĐẦU/i], ["outro", /아웃트로/i]
+  ];
+  function songMarkerKind(line) {
+    for (var i = 0; i < SONG_MARKER_KINDS.length; i++) if (SONG_MARKER_KINDS[i][1].test(line)) return SONG_MARKER_KINDS[i][0];
+    return "marker";
+  }
+  function songSections(lines) {
+    var secs = [], cur = null;
+    function open(kind, marker) { cur = { kind: kind, marker: marker || "", lines: [] }; secs.push(cur); }
+    (lines || []).forEach(function (line) {
+      var s = String(line);
+      if (!s.trim()) return;
+      if (isSongLabelLine(s)) { open(songMarkerKind(s), s); return; }
+      if (/^\s*\d+\s*[.)]/.test(s) || !cur) open("verse", "");
+      cur.lines.push(s);
+    });
+    return secs;
+  }
+  function songAlignSections(a, b) {
+    var n = a.length, m = b.length, score = [], i, j;
+    for (i = 0; i <= n; i++) { score.push([]); for (j = 0; j <= m; j++) score[i].push(0); }
+    function fit(x, y) {
+      if (x.kind !== y.kind) return -1;
+      var la = Math.max(x.lines.length, 1), lb = Math.max(y.lines.length, 1);
+      return 1 + Math.min(la, lb) / Math.max(la, lb);
+    }
+    for (i = n - 1; i >= 0; i--) for (j = m - 1; j >= 0; j--) {
+      var best = Math.max(score[i + 1][j], score[i][j + 1]), f = fit(a[i], b[j]);
+      if (f > 0) best = Math.max(best, f + score[i + 1][j + 1]);
+      score[i][j] = best;
+    }
+    var pairs = []; i = 0; j = 0;
+    while (i < n || j < m) {
+      if (i < n && j < m) {
+        var f2 = fit(a[i], b[j]);
+        if (f2 > 0 && Math.abs(score[i][j] - (f2 + score[i + 1][j + 1])) < 1e-9) { pairs.push([a[i++], b[j++]]); continue; }
+      }
+      if (i < n && (j >= m || score[i][j] === score[i + 1][j])) pairs.push([a[i++], null]); else pairs.push([null, b[j++]]);
+    }
+    return pairs;
+  }
+  // -> rows: {marker: true, vi, target} | {vi, target} (either text may be ""), in the order they are shown and read.
+  function songRows(viLines, targetLines) {
+    var rows = [];
+    songAlignSections(songSections(viLines), songSections(targetLines)).forEach(function (p) {
+      var v = p[0], t = p[1];
+      if ((v && v.marker) || (t && t.marker)) rows.push({ marker: true, vi: v ? v.marker : "", target: t ? t.marker : "" });
+      var n = Math.max(v ? v.lines.length : 0, t ? t.lines.length : 0);
+      for (var k = 0; k < n; k++) rows.push({ vi: v && v.lines[k] || "", target: t && t.lines[k] || "" });
+    });
+    return rows;
+  }
+  // ---- media / links ----
+  var SONG_KIND_LABELS = { AUDIO: { ko: "오디오", vi: "Âm thanh", en: "Audio", ja: "音声", zh: "音訊", zh_cn: "音频", de: "Audio", fr: "Audio", pl: "Nagranie audio", cs: "Audio", hu: "Hanganyag", id: "Audio" } };
+  // The jw.org link of one language of a song: its official media by kind + media key (the finder link built with that
+  // language's JW code, songJwLocale), else the JSON's own jwOrgUrl. "" when the language has no such link.
+  function songLinkInfo(song, l) {
+    var d = songLangData(song, l);
+    if (!d || !d.available) return null;
+    var m = song.media && song.media[l];
+    if (m) {
+      var url = jwLankUrl(m.mediaKey, l), label = (SONG_KIND_LABELS[m.kind] || {})[currentLang] || "";
+      return url ? { url: url, kind: m.kind === "AUDIO" ? "song-audio" : "song-video", label: label ? songJwLocale(l)[1] + " — " + label : songJwLocale(l)[1] } : null;
+    }
+    return d.url && isAllowedJwOrgShareUrl(d.url) ? { url: d.url, kind: "song-video", label: "" } : null;
+  }
+  function songLangsShown() { var tl = songTargetLang(); return tl ? ["vi", tl] : ["vi"]; }
   function songAccHeadHtml(kind, song, open) {
-    var bodyId = "songacc-" + song.id;
+    var bodyId = "songacc-" + song.id, tl = songTargetLang(), t = songLangData(song, tl);
     return '<button type="button" class="song-acc-head" aria-expanded="' + (open ? "true" : "false") + '" aria-controls="' + bodyId + '" data-song-acc="' + escapeAttr(song.id) + '">' +
       '<span class="song-badge">' + song.track + '</span><span class="song-acc-titles">' +
       // The two titles are the typography of the song title of [왕국 노래] (.song-detail-vi-title / .song-detail-target-title),
       // on one line with a real space between them (they wrap like text).
-      (song.vi.title ? '<span class="song-acc-vi song-detail-vi-title vn" lang="vi">' + escapeHtml(song.vi.title) + '</span>' : '<span class="song-acc-missing">' + escapeHtml(TU("베트남어 미제공")) + '</span>') +
-      (song.ko.title ? ' <span class="song-acc-ko song-detail-target-title" lang="ko">' + escapeHtml(song.ko.title) + '</span>' : '') + '</span>' + currChev() + '</button>';
+      (song.vi && song.vi.title ? '<span class="song-acc-vi song-detail-vi-title vn" lang="vi">' + escapeHtml(song.vi.title) + '</span>' : '<span class="song-acc-missing">' + escapeHtml(TU("베트남어 미제공")) + '</span>') +
+      (t && t.title ? ' <span class="song-acc-target song-detail-target-title" lang="' + tl + '">' + escapeHtml(t.title) + '</span>' : '') + '</span>' + currChev() + '</button>';
   }
-  // "title [JW.ORG]": the title button and its badges (the JSON's own jwOrgUrl of each language) are siblings of one row.
+  // "VI title [JW.ORG] TARGET title [JW.ORG]": the title button and the badges (of the Vietnamese and of the UI language's
+  // own link) are siblings of one row.
   function songAccHeadRowHtml(kind, song, open) {
-    var badges = ["vi", "ko"].map(function (l) {
-      var d = song[l];
-      return d.url && d.available ? jwOrgBadgeHtml(d.url, { kind: "song-video", lang: l }) : "";
+    var badges = songLangsShown().map(function (l) {
+      var info = songLinkInfo(song, l);
+      return info ? jwOrgBadgeHtml(info.url, { kind: info.kind, lang: l, label: info.label }) : "";
     }).join("");
     return '<div class="song-acc-headrow' + (badges ? ' has-jw-badges' : '') + '">' + songAccHeadHtml(kind, song, open) +
       (badges ? '<span class="jw-title-badges">' + badges + '</span>' : '') + '</div>';
   }
-  // A language's lyrics, independent of the other language's (their lines do not correspond), in the line style of [왕국 노래]:
-  // every line a .lyric-unit (Vietnamese .lyric-vi, the other language .lyric-target), a "(코러스)" line the section marker.
-  function songLyricColumnHtml(langKey, d) {
-    var name = songJwLocale(langKey)[1];
-    var vi = langKey === "vi";
-    var html = '<section class="song-lyric-col" lang="' + langKey + '"><h4>' + escapeHtml(name) + '</h4>';
-    if (!d.available || !d.lines.length) {
-      return html + '<div class="song-lyric-missing">' + escapeHtml(TU(vi ? "베트남어 가사 미제공" : "한국어 가사 미제공")) + '</div></section>';
-    }
-    d.lines.forEach(function (line) {
-      if (!String(line).trim()) { html += '<div class="song-stanza-gap" aria-hidden="true"></div>'; return; }
-      if (isSongLabelLine(line)) {
-        html += '<div class="lyric-section-marker"><div class="' + (vi ? 'lyric-marker-vi vn' : 'lyric-marker-target') + '">' + escapeHtml(line) + '</div></div>';
-        return;
-      }
-      var say = songLineSpeechText(line);
-      html += '<div class="lyric-unit song-lyric-line"><div class="' + (vi ? 'lyric-vi-row' : 'lyric-target-row') + '">' +
-        '<div class="' + (vi ? 'lyric-vi vn' : 'lyric-target') + '">' + escapeHtml(line) + '</div>' +
-        (say ? '<button type="button" class="speak-btn" ' + (vi ? 'data-speak' : 'data-speak-ko') + '="' + escapeAttr(say) + '" aria-label="' +
-          escapeAttr(TU(vi ? "베트남어 구절 듣기" : "한국어 구절 듣기")) + '">' + speakIcon() + '</button>' : '') + '</div></div>';
+  // 전체 듣기 plan = the rows in the order shown: per row [Vietnamese, target]. readAllItems() reads the Vietnamese
+  // viRepeatCount times and then the target ONCE (in the UI language's voice, READALL_LANG_TAG); a language that 묵음 silences
+  // is left out of the entry, an entry without either is dropped (both silenced: nothing to read, no button).
+  function songReadAllEntries(rows) {
+    var out = [];
+    rows.forEach(function (r) {
+      if (r.marker) return;
+      var vi = r.vi && !muteScopeSilences("vi") ? songLineSpeechText(r.vi) : "";
+      var tg = r.target && !muteScopeSilences("meaning") ? songLineSpeechText(r.target) : "";
+      if (vi || tg) out.push([vi, tg]);
     });
-    return html + '</section>';
+    return out;
   }
-  // The links are the JSON's own jwOrgUrl of each language (Vietnamese and Korean are what these two collections hold), in the
-  // form of [왕국 노래]: the "전체 듣기" label and one "▶ <language>" button per language that has a valid link; none -> no row.
+  function songRowHtml(r) {
+    var tl = songTargetLang(), html;
+    if (r.marker) {
+      return '<div class="lyric-section-marker">' + (r.vi ? '<div class="lyric-marker-vi vn">' + escapeHtml(r.vi) + '</div>' : '') +
+        (r.target ? '<div class="lyric-marker-target">' + escapeHtml(r.target) + '</div>' : '') + '</div>';
+    }
+    html = '<div class="lyric-unit song-lyric-line">';
+    var vs = r.vi && songLineSpeechText(r.vi), ts = r.target && songLineSpeechText(r.target);
+    if (r.vi) html += '<div class="lyric-vi-row"><div class="lyric-vi vn" lang="vi">' + escapeHtml(r.vi) + '</div>' +
+      (vs ? '<button type="button" class="speak-btn" data-speak="' + escapeAttr(vs) + '" aria-label="' + escapeAttr(TU("베트남어 구절 듣기")) + '">' + speakIcon() + '</button>' : '') + '</div>';
+    if (r.target) html += '<div class="lyric-target-row"><div class="lyric-target" lang="' + tl + '">' + escapeHtml(r.target) + '</div>' +
+      (ts ? '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(ts) + '" aria-label="' + escapeAttr(TU("발음 듣기")) + '">' + speakIcon() + '</button>' : '') + '</div>';
+    return html + '</div>';
+  }
   function songAccBodyHtml(song) {
-    var usable = function (l) { var d = song[l]; return !!(d.url && d.available && isAllowedJwOrgShareUrl(d.url)); };
-    var links = ["vi", "ko"].map(function (l) {
-      if (!usable(l)) return "";
-      return '<a class="read-all-btn song-full-link" href="' + escapeAttr(song[l].url) + '" target="_blank" rel="noopener noreferrer">▶ ' +
-        escapeHtml(songJwLocale(l)[1]) + '</a>';
+    var tl = songTargetLang(), vi = song.vi, t = songLangData(song, tl);
+    var viOk = songLangHas(song, "vi"), tOk = songLangHas(song, tl);
+    var links = songLangsShown().map(function (l) {
+      var info = songLinkInfo(song, l);
+      return info ? '<a class="read-all-btn song-full-link" href="' + escapeAttr(info.url) + '" target="_blank" rel="noopener noreferrer" data-media-kind="' + info.kind + '">▶ ' +
+        escapeHtml(songJwLocale(l)[1]) + '</a>' : "";
     }).join("");
-    return (links ? '<div class="song-full-links"><span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + links + '</div>' : '') +
-      '<div class="song-lyric-cols">' + songLyricColumnHtml("vi", song.vi) + songLyricColumnHtml("ko", song.ko) + '</div>';
+    var rows = songRows(viOk ? vi.lines : [], tOk ? t.lines : []);
+    var notes = (viOk ? '' : '<div class="song-lyric-missing">' + escapeHtml(TU("베트남어 가사 미제공")) + '</div>') +
+      (tl && !tOk ? '<div class="song-lyric-missing">' + escapeHtml(TU("이 언어의 가사는 제공되지 않아요")) + '</div>' : '');
+    var html = '';
+    var readAll = readAllButtonHtml(songReadAllEntries(rows));
+    if (links || readAll) html += '<div class="song-full-links">' + (links ? '<span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + links : '') + readAll + '</div>';
+    html += notes + '<div class="song-lyric-rows">';
+    rows.forEach(function (r) { html += songRowHtml(r); });
+    return html + '</div>';
   }
   function songAccHtml(kind, song) {
     var open = !!songKindState.open[kind][song.id];
@@ -9847,19 +9945,16 @@ function verifyDistribution(units, dist, pins) {
   function renderSongKind(kind) {
     var root = songKindRoot(kind);
     if (!root) return;
+    // 반복 듣기 (Vietnamese only) + 묵음 (as in [대역 읽기]): the 전체 듣기 of a card follows them.
     root.innerHTML = '<input type="search" class="search-box-input song-kind-search" placeholder="' + escapeAttr(TU("번호, 제목, 가사로 검색")) + '" aria-label="' +
       escapeAttr(TU("번호, 제목, 가사로 검색")) + '" value="' + escapeAttr(songKindState.q[kind] || "") + '">' +
+      '<div class="reader-audio-row"><label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span id="repeat-toggle-song-' + kind + '"></span></label>' +
+      muteGroupHtml(false, muteScope || lastNonMcqScope || "both") + '</div>' +
       '<div class="song-kind-count"></div><div class="song-kind-list"></div>';
     root.dataset.rendered = "true";
+    renderViRepeatToggle(document.getElementById("repeat-toggle-song-" + kind));
+    bindMuteGroup(root, false, function () { renderSongKind(kind); });
     renderSongKindList(kind);
-  }
-  // Korean lyrics are read in a Korean voice whatever the UI language (the UI language's picked voice when that is Korean).
-  function speakKoreanLine(text) {
-    if (currentLang === "ko") { speakMeaning(text); return; }
-    if (readAllState.id) stopReadAllSequence();
-    var voice = null;
-    try { voice = window.speechSynthesis.getVoices().filter(function (v) { return /^ko(-|_|$)/i.test(v.lang) && !isNoveltyVoice(v); })[0] || null; } catch (e) { /* no-op */ }
-    robustSpeak({ text: text, lang: "ko-KR", voice: voice });
   }
   function selectSongKind(kind) {
     if (["kingdom", "original", "kids"].indexOf(kind) < 0) kind = "kingdom";
@@ -9908,7 +10003,7 @@ function verifyDistribution(units, dist, pins) {
         var btn = e.target.closest && e.target.closest(".speak-btn");
         if (!btn) return;
         e.stopPropagation();
-        if (btn.dataset.speakKo) speakKoreanLine(btn.dataset.speakKo);
+        if (btn.dataset.speakMeaning) speakMeaning(btn.dataset.speakMeaning);
         else if (btn.dataset.speak) speak(btn.dataset.speak);
       });
     });
@@ -13817,17 +13912,16 @@ function verifyDistribution(units, dist, pins) {
     if (/Windows/i.test(ua)) return ["windows"];
     return [];
   }
-  // ---- JEONJU: opening the site lands on today's place in [과정] ----
-  // Today is the calendar date in Korea (Asia/Seoul, whatever the device's time zone). Monday-Friday: the homework week
-  // of that Monday is opened at that weekday's tasks; Saturday and Sunday belong to the same Monday-start week: its
-  // homework card is opened, no weekday picked. The landing happens once, when the site is opened without a link to
-  // somewhere else; nothing here runs again.
+  // ---- JEONJU: the first visit of each day lands on today's place in [과정] ----
+  // Today is the learner's own calendar date (local Date fields like the SRS dates, never UTC; window.__srsNow overrides the
+  // clock for tests). Monday-Friday: the homework week that holds that date is opened at that weekday's tasks; Saturday and
+  // Sunday belong to the same Monday-start week: its homework card is opened, no weekday picked. The week is found among the
+  // cards the schedule engine drew (each card carries data-hw-monday, the Monday after its class / meeting / cancelled class
+  // date), never from a fixed offset. The landing happens once per local day (COURSE_AUTO_OPEN_KEY holds that date), when
+  // the site is opened without a link to somewhere else; later visits of the same day keep the learner's own place.
+  var COURSE_AUTO_OPEN_KEY = "vn-course-last-auto-open-date";
   function courseTodayIso(nowMs) {
-    var parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit" })
-      .formatToParts(new Date(nowMs === undefined ? Date.now() : nowMs));
-    var p = {};
-    parts.forEach(function (x) { p[x.type] = x.value; });
-    return p.year + "-" + p.month + "-" + p.day;
+    return srsLocalIso(new Date(nowMs !== undefined ? nowMs : (window.__srsNow ? window.__srsNow().getTime() : Date.now())));
   }
   // iso -> { monday: ISO date of that week's Monday, day: 0 (Mon) .. 4 (Fri), or -1 for Saturday / Sunday }
   function courseWeekOf(iso) {
@@ -13847,13 +13941,21 @@ function verifyDistribution(units, dist, pins) {
     new URLSearchParams(location.search).forEach(function (_, k) { if (!benign.test(k)) ok = false; });
     return ok;
   }
-  function goToTodayCourse() {
+  // Opens today's homework card (and the cards around it) and marks it; no tab change, no scroll. -> the element to bring into
+  // view (today's weekday, or the week card on Saturday / Sunday), or null when no card holds today.
+  function prepareTodayCourse() {
     var week = courseWeekOf(courseTodayIso());
     var card = document.querySelector('#panel-curriculum .curr-assign-card[data-hw-monday="' + week.monday + '"]');
-    if (!card) return false;
-    activateTab("curriculum", false);
-    var open = card.closest ? card.closest(".group-card") : null;
-    while (open) { open.dataset.open = "true"; open = open.parentElement && open.parentElement.closest ? open.parentElement.closest(".group-card") : null; }
+    if (!card) return null;
+    // Every folding card around it, whatever its kind (a week's .group-card, the first week's .curr-welcome-card): opened, with
+    // the aria-expanded of its own header.
+    var open = card.parentElement && card.parentElement.closest ? card.parentElement.closest("[data-open]") : null;
+    while (open) {
+      open.dataset.open = "true";
+      var head = open.querySelector("[aria-expanded]");
+      if (head) head.setAttribute("aria-expanded", "true");
+      open = open.parentElement && open.parentElement.closest ? open.parentElement.closest("[data-open]") : null;
+    }
     card.dataset.open = "true";
     var toggle = card.querySelector(".curr-assign-toggle");
     if (toggle) toggle.setAttribute("aria-expanded", "true");
@@ -13863,10 +13965,33 @@ function verifyDistribution(units, dist, pins) {
       var dayGroup = card.querySelector('.curr-assign-day-group[data-day="' + COURSE_DAY_KO[week.day] + '"]');
       if (dayGroup) { dayGroup.classList.add("curr-today"); target = dayGroup; }
     }
-    setTimeout(function () { try { target.scrollIntoView({ block: "center" }); } catch (e) { /* no-op */ } }, 120);
+    // the target to bring into view: today's weekday row; on Saturday / Sunday the week card's header (a card is taller than the
+    // screen, its top is what shows the week)
+    courseTarget = week.day >= 0 && target !== card ? target : card.querySelector(".curr-assign-toggle") || card;
+    return courseTarget;
+  }
+  // After the layout of the opened cards (two frames, no timer); instant, never an animated scroll.
+  function scrollToCourseTarget() {
+    var target = courseTarget;
+    if (!target) return;
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () { try { target.scrollIntoView({ block: target.classList.contains("curr-today") ? "center" : "start", behavior: "auto" }); } catch (e) { /* no-op */ } });
+    });
+  }
+  function goToTodayCourse() {
+    if (!prepareTodayCourse()) return false;
+    activateTab("curriculum", false);
+    scrollToCourseTarget();
     courseLanded = true;
     return true;
   }
+  function courseAutoOpenDone() {
+    try { return window.localStorage.getItem(COURSE_AUTO_OPEN_KEY) === courseTodayIso(); } catch (e) { return false; }
+  }
+  function markCourseAutoOpen() {
+    try { window.localStorage.setItem(COURSE_AUTO_OPEN_KEY, courseTodayIso()); } catch (e) { /* no-op */ }
+  }
+  var courseTarget = null, coursePendingScroll = false;
   // The live schedule of the regional worker arrives a moment after the page opened and re-draws [과정]: the landing is
   // put back once for that, and only while the learner has not touched anything yet.
   var courseLanded = false, courseLandTouched = false;
@@ -13892,9 +14017,16 @@ function verifyDistribution(units, dist, pins) {
   (function restoreLastPlace() {
     try {
       if (!window.localStorage) return;
-      if (IS_FIRST_VISIT) { goToDefaultPlace(true); return; }
-      // JEONJU: today's place in [과정] (not for a visit that asks for somewhere else; no card for today -> the saved place).
-      if (window.SITE_PROFILE === "jeonju" && isDefaultLanding() && goToTodayCourse()) return;
+      // JEONJU: today's place in [과정], on the first visit of the day (not for a visit that asks for somewhere else; no card
+      // for today -> the saved place). A very first visit keeps the voice set-up guide on screen: today's card is only
+      // opened and marked, and the scroll to it waits for the learner's first move to [과정] (activateTab).
+      var dailyCourse = window.SITE_PROFILE === "jeonju" && isDefaultLanding() && !courseAutoOpenDone();
+      if (IS_FIRST_VISIT) {
+        if (dailyCourse && prepareTodayCourse()) { coursePendingScroll = true; markCourseAutoOpen(); }
+        goToDefaultPlace(true);
+        return;
+      }
+      if (dailyCourse && goToTodayCourse()) { markCourseAutoOpen(); return; }
       var saved = JSON.parse(SAVED_PLACE_RAW);
       // A place saved by an older version can name a tab or subtab that no longer exists.
       if (!saved || !saved.tab || !panels[saved.tab] || !document.querySelector('.tab-btn[data-tab="' + saved.tab + '"]')) {

@@ -581,7 +581,7 @@ def song_collection(path, expected_tracks):
     assert len({song["id"] for song in songs}) == len(songs), path
     assert all((song.get("ko") or {}).get("title") for song in songs), path
 
-    from song_tab_links import SONG_LINKS_NOT_ON_JWORG
+    from song_tab_links import SONG_LINKS_NOT_ON_JWORG, SONG_MEDIA_KEYS, SONG_LANGS
 
     def lang(song, key):
         d = song.get(key) or {}
@@ -589,8 +589,24 @@ def song_collection(path, expected_tracks):
         url = "" if (song["id"], key) in SONG_LINKS_NOT_ON_JWORG else (d.get("jwOrgUrl") or "")
         return {"title": d.get("title") or "", "lines": [str(x) for x in lines], "url": url,
                 "available": d.get("available") is not False}
-    return [{"id": song["id"], "track": song["track"], "vi": lang(song, "vi"), "ko": lang(song, "ko")}
-            for song in sorted(songs, key=lambda x: x["track"])]
+
+    def entry(song):
+        # Every learner language the source file holds (today vi and ko only: the JSON files are *_ko_vi) -- the page shows
+        # the UI language's own data and never another language's in its place.
+        out = {"id": song["id"], "track": song["track"]}
+        for key in SONG_LANGS:
+            if isinstance(song.get(key), dict):   # (the song's own "id" is a string: not the Indonesian data)
+                out[key] = lang(song, key)
+        media = SONG_MEDIA_KEYS.get(song["id"])
+        if media:
+            # A song whose official media is given by kind + media key (never read off the URL): its jwOrgUrl of the file
+            # (a different kind of media) is dropped, the page builds the finder link of each language that has lyrics.
+            out["media"] = {k: {"kind": media["kind"], "mediaKey": media["mediaKey"]} for k in SONG_LANGS
+                            if isinstance(out.get(k), dict) and out[k]["available"] and out[k]["lines"]}
+            for k in out["media"]:
+                out[k]["url"] = ""
+        return out
+    return [entry(song) for song in sorted(songs, key=lambda x: x["track"])]
 
 
 def js_json(obj):

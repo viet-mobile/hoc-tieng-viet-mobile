@@ -7,7 +7,6 @@ them. The JSON files themselves stay as given. Re-check when jw.org adds languag
 """
 
 SONG_LINKS_NOT_ON_JWORG = {
-    ('osg-1', 'ko'),
     ('osg-112', 'ko'),
     ('osg-112', 'vi'),
     ('osg-117', 'ko'),
@@ -18,4 +17,14 @@ SONG_LINKS_NOT_ON_JWORG = {
     ('pkon-3', 'vi'),
     ('pkon-4', 'vi'),
     ('pkon-6', 'vi'),
+}
+
+# The 12 learner-language keys a song file may hold (the UI locale ids of the site).
+SONG_LANGS = ("vi", "cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko", "pl")
+
+# Official media of a song given as data: kind + jw.org media key. OSG 1 is an AUDIO (not a video): the finder link of each
+# language that has the song is jwlshare&wtlocale=<that language's JW code>&lank=pub-osg_1_AUDIO. Other songs keep their
+# own (verified) jwOrgUrl.
+SONG_MEDIA_KEYS = {
+    "osg-1": {"kind": "AUDIO", "mediaKey": "pub-osg_1_AUDIO"},
 }

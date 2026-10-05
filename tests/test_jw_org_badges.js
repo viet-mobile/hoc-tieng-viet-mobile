@@ -88,11 +88,14 @@ function staticChecks() {
     await cdp.connect();
     await cdp.send('Runtime.enable');
     await cdp.send('Page.enable');
+    // the speech checks follow the serial engine of a desktop Windows browser, whatever machine runs the test
+    await cdp.send('Network.enable');
+    await cdp.send('Network.setUserAgentOverride', {userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36 Edg/129.0'});
     await cdp.send('Page.addScriptToEvaluateOnNewDocument', {source: FAKE_TTS});
     let errs = [];
     cdp.on('Runtime.exceptionThrown', e => errs.push('exception ' + e.exceptionDetails.text + ' ' + ((e.exceptionDetails.exception || {}).description || '')));
     cdp.on('Runtime.consoleAPICalled', e => { if (e.type === 'error') errs.push('console ' + e.args.map(a => a.value || a.description).join(' ')); });
-    const E = async expr => (await cdp.send('Runtime.evaluate', {expression: expr, awaitPromise: true, returnByValue: true})).result.value;
+    const E = async expr => (await cdp.send('Runtime.evaluate', {expression: expr, awaitPromise: true, returnByValue: true, userGesture: true})).result.value;
     await cdp.send('Emulation.setDeviceMetricsOverride', {width: 1280, height: 900, deviceScaleFactor: 1, mobile: false});
 
     for (const site of SITES) {

@@ -62,6 +62,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
       const src = `if(!sessionStorage.getItem('__cuinit')){sessionStorage.setItem('__cuinit','1');${seed}}` + fake + FAKE_TTS(!!o.apple);
       script = (await cdp.send('Page.addScriptToEvaluateOnNewDocument', {source: src})).identifier;
       await cdp.send('Network.setUserAgentOverride', {userAgent: o.ua || UA.win});
+      await cdp.send('Emulation.setTimezoneOverride', {timezoneId: o.tz || 'Asia/Seoul'});   // the learner's own calendar day
       await cdp.send('Page.navigate', {url: `http://127.0.0.1:${PORT}/${o.site || 'jeonju'}/index.html${o.query || (o.hash ? '?fresh=' + Date.now() : '')}${o.hash || ''}`});
       for (let i = 0; i < 240; i++) { if (await E("document.readyState==='complete'&&typeof window.setLang==='function'", false)) break; await sleep(250); }
       await E("sessionStorage.removeItem('__cuinit')", false);
@@ -72,6 +73,82 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
     const addDays = (isoDate, n) => { const d = new Date(isoDate + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
     const kstNoon = isoDate => Date.parse(isoDate + 'T03:00:00Z');   // 12:00 in Seoul
 
+
+    // ============ 0. daily first entry (today's card opened, today's task marked, scrolled into view) ============
+    const SMOKE = process.argv.includes('--smoke');
+    const DAYNAME = ['월', '화', '수', '목', '금'];
+    const LANDED = `(()=>{const c=document.querySelector('#panel-curriculum .curr-assign-card.curr-today-week'), d=document.querySelector('#panel-curriculum .curr-today'), t=d||(c&&c.querySelector('.curr-assign-toggle')), r=t&&t.getBoundingClientRect(), g=c&&c.parentElement.closest('[data-open]');
+      return {tab:document.querySelector('.tab-btn[aria-selected="true"]').dataset.tab, monday:c&&c.dataset.hwMonday, open:c&&c.dataset.open, expanded:c&&c.querySelector('.curr-assign-toggle').getAttribute('aria-expanded'),
+        day:d&&d.dataset.day, dayCount:document.querySelectorAll('#panel-curriculum .curr-today').length, groupOpen:!!(g&&g.dataset.open==='true'), groupText:g?(g.querySelector('[aria-expanded]')||g).innerText.slice(0,200):'',
+        visible:!!r&&r.height>0&&r.top>=0&&r.bottom<=window.innerHeight+1, scrollY:window.scrollY, key:localStorage.getItem('vn-course-last-auto-open-date')};})()`;
+    {
+      // 2026-10-06 (Tuesday): the week card of 2026/10/03 "베트남어 학습반에 오신 여러분을 환영합니다!!", its Tuesday
+      await load({storage: {'vn-app-last-place-v1': SEEN}, nowMs: kstNoon('2026-10-06')});
+      const r = await E(LANDED, false) || {};
+      ok(r.tab === 'curriculum' && r.monday === '2026-10-05' && r.open === 'true' && r.expanded === 'true' && r.groupOpen, `2026-10-06 opens the week card: ${JSON.stringify(r)}`);
+      ok(/2026\/10\/03/.test(r.groupText || '') && /베트남어 학습반에 오신 여러분을 환영합니다/.test(r.groupText || ''), `2026-10-06 is the week card of 2026/10/03 (not a calendar guess): ${r.groupText}`);
+      ok(r.day === '화' && r.dayCount === 1, `Tuesday task highlighted, and only it: ${r.day}/${r.dayCount}`);
+      ok(r.visible && r.scrollY > 0, `Tuesday row scrolled into view (visible ${r.visible}, scrollY ${r.scrollY})`);
+      ok(r.key === '2026-10-06', `daily key stores the local date: ${r.key}`);
+      const lang = await E(`(()=>{const d=document.querySelector('#panel-curriculum .curr-today'); const b=getComputedStyle(d); return {bg:b.backgroundColor, shadow:b.boxShadow, anim:b.animationName};})()`, false);
+      ok(lang && lang.bg !== 'rgba(0, 0, 0, 0)' && lang.anim === 'none', `highlight is a calm background/accent, no animation: ${JSON.stringify(lang)}`);
+      if (SMOKE) {
+        // short release gate: injected Tuesday 2026-10-06 -> week 2026/10/03, Tuesday; nothing else
+        ok(!errs.length, `errors ${errs.join(' | ').slice(0, 500)}`);
+        cdp.close(); chrome.kill(); server.kill();
+        console.log(`checks run: ${checks}`);
+        if (failures.length) { failures.forEach(f => console.error('  [FAIL] ' + f)); console.error('--- COURSE UX SMOKE FAILED ---'); process.exit(1); }
+        console.log('--- COURSE UX SMOKE PASSED ---');
+        return;
+      }
+      // Monday ... Sunday of that week
+      for (let off = 0; off < 7; off++) {
+        const day = addDays('2026-10-05', off);
+        await load({storage: {'vn-app-last-place-v1': SEEN}, nowMs: kstNoon(day)});
+        const q = await E(LANDED, false) || {};
+        if (off < 5) ok(q.tab === 'curriculum' && q.monday === '2026-10-05' && q.open === 'true' && q.day === DAYNAME[off] && q.dayCount === 1 && q.visible, `${day}: ${DAYNAME[off]} highlighted and visible: ${JSON.stringify(q)}`);
+        else ok(q.tab === 'curriculum' && q.monday === '2026-10-05' && q.open === 'true' && q.groupOpen && !q.day && q.dayCount === 0 && q.visible, `${day}: weekend opens the week, no weekday highlighted: ${JSON.stringify(q)}`);
+      }
+      // the same day again: the learner's own place is respected (no pull back to [과정])
+      await load({storage: {'vn-app-last-place-v1': SEEN}, nowMs: kstNoon('2026-10-06')});
+      await E(`(async()=>{document.querySelector('.tab-btn[data-tab="sentence"]').click(); await new Promise(r=>setTimeout(r,300)); sessionStorage.setItem('__cuinit','1');})()`);   // (the seed of load() must not run again: this is the same learner)
+      await cdp.send('Page.navigate', {url: `http://127.0.0.1:${PORT}/jeonju/index.html`});
+      for (let i = 0; i < 240; i++) { if (await E("document.readyState==='complete'&&typeof window.setLang==='function'", false)) break; await sleep(250); }
+      await sleep(900);
+      const again = await E(`({tab:document.querySelector('.tab-btn[aria-selected="true"]').dataset.tab, key:localStorage.getItem('vn-course-last-auto-open-date'), today:document.querySelectorAll('#panel-curriculum .curr-today').length})`, false) || {};
+      ok(again.tab === 'sentence' && again.key === '2026-10-06' && again.today === 0, `second visit of the same day keeps [노래]/[문장]: ${JSON.stringify(again)}`);
+      // the next day: it runs again (Wednesday), the key moves on
+      await load({storage: {'vn-app-last-place-v1': SEEN, 'vn-course-last-auto-open-date': '2026-10-06'}, nowMs: kstNoon('2026-10-07')});
+      const next = await E(LANDED, false) || {};
+      ok(next.tab === 'curriculum' && next.day === '수' && next.visible && next.key === '2026-10-07', `next day lands on 수 and stores the new date: ${JSON.stringify(next)}`);
+      await load({storage: {'vn-app-last-place-v1': SEEN, 'vn-course-last-auto-open-date': '2026-10-06'}, nowMs: kstNoon('2026-10-06')});
+      ok(await E(`document.querySelector('.tab-btn[aria-selected="true"]').dataset.tab`, false) === 'vocab', 'the stored date of today: no landing');
+      // the local calendar day (not UTC): 16:00Z is 01:00 on Wednesday in Seoul but still Tuesday morning in Los Angeles
+      const inst = Date.parse('2026-10-06T16:00:00Z');
+      await load({storage: {'vn-app-last-place-v1': SEEN}, nowMs: inst, tz: 'Asia/Seoul'});
+      const seoul = await E(LANDED, false) || {};
+      await load({storage: {'vn-app-last-place-v1': SEEN}, nowMs: inst, tz: 'America/Los_Angeles'});
+      const la = await E(LANDED, false) || {};
+      ok(seoul.day === '수' && seoul.key === '2026-10-07' && la.day === '화' && la.key === '2026-10-06', `local date: Seoul ${seoul.day}/${seoul.key}, Los Angeles ${la.day}/${la.key}`);
+      // an explicit link keeps its place and does not use up the day
+      for (const [label, o] of [['hash', {hash: '#song-12'}], ['query', {query: '?review=1'}]]) {
+        await load(Object.assign({storage: {'vn-app-last-place-v1': SEEN}, nowMs: kstNoon('2026-10-06')}, o));
+        const d = await E(`({tab:document.querySelector('.tab-btn[aria-selected="true"]').dataset.tab, key:localStorage.getItem('vn-course-last-auto-open-date')})`, false) || {};
+        ok(d.tab === 'vocab' && !d.key, `a ${label} link keeps its place and does not use up the day: ${JSON.stringify(d)}`);
+      }
+      // a first visit keeps the voice guide; the card is ready (opened, marked) and the scroll comes with the first move to [과정]
+      await load({storage: {}, nowMs: kstNoon('2026-10-06')});
+      const fv = await E(`({tab:document.querySelector('.tab-btn[aria-selected="true"]').dataset.tab, guideOpen:!!document.querySelector('#panel-pron .group-card[data-open="true"]'), c:${LANDED}})`, false) || {};
+      ok(fv.tab === 'pron' && fv.guideOpen && fv.c.open === 'true' && fv.c.day === '화' && fv.c.key === '2026-10-06', `first visit: voice guide stays, today's card is prepared: ${JSON.stringify(fv)}`);
+      await E(`(async()=>{document.querySelector('.tab-btn[data-tab="curriculum"]').click(); await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))); await new Promise(r=>setTimeout(r,200));})()`);
+      const fv2 = await E(LANDED, false) || {};
+      ok(fv2.tab === 'curriculum' && fv2.open === 'true' && fv2.day === '화' && fv2.visible, `after the guide, [과정] shows today's task: ${JSON.stringify(fv2)}`);
+      // outside the course dates: nothing marked, the saved place is kept and the day is not used up
+      await load({storage: {'vn-app-last-place-v1': SEEN}, nowMs: Date.parse('2030-01-02T03:00:00Z')});
+      const out = await E(`({tab:document.querySelector('.tab-btn[aria-selected="true"]').dataset.tab, key:localStorage.getItem('vn-course-last-auto-open-date')})`, false) || {};
+      ok(out.tab === 'vocab' && !out.key, `outside the course: ${JSON.stringify(out)}`);
+    }
+    if (!SMOKE) {
     // ============ 1. date helpers (pure) ============
     await load({storage: {'vn-app-last-place-v1': SEEN}});
     const pure = await E(`(()=>{const w=window.__courseWeekOf, t=window.__courseTodayIso, o={};
@@ -96,7 +173,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         await load({storage: {'vn-app-last-place-v1': SEEN}, nowMs: kstNoon(day)});
         const r = await E(`(()=>{const c=document.querySelector('#panel-curriculum .curr-assign-card.curr-today-week'), d=document.querySelector('#panel-curriculum .curr-today');
           return {tab:document.querySelector('.tab-btn[aria-selected="true"]').dataset.tab, monday:c&&c.dataset.hwMonday, open:c&&c.dataset.open, day:d&&d.dataset.day, dayCard:d&&d.closest('.curr-assign-card').dataset.hwMonday,
-            groupOpen:!!(c&&c.closest('.group-card')&&c.closest('.group-card').dataset.open==='true')};})()`, false) || {};
+            groupOpen:!!(c&&c.parentElement.closest('[data-open]')&&c.parentElement.closest('[data-open]').dataset.open==='true')};})()`, false) || {};
         const weekday = off < 5 ? NAMES[off] : null;
         ok(r.tab === 'curriculum' && r.monday === M && r.open === 'true' && (weekday ? r.day === weekday && r.dayCard === M : !r.day),
           `${day} (+${off}) lands on ${M} ${weekday || 'week card'}: ${JSON.stringify(r)}`);
@@ -284,6 +361,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
           if (scope === 'vi') ok(L.length > 0 && L.every(x => x === 'ko-KR'), `${tag}: 베 muted -> only Korean: ${L}`);
         }
       }
+    }
     }
     ok(!errs.length, `errors ${errs.join(' | ').slice(0, 500)}`);
     cdp.close();
