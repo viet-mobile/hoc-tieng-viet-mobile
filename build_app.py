@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import re
 from site_profiles import (JW_ONLY_CONSTS, STRUCTURED_EMPTY_SHAPES, RELIGIOUS_FILTER_TERMS,
                             GENERAL_CONSTS_NEEDING_ENTRY_FILTER)
 from pronunciation_data import (TONES, ALPHABET, ALPHABET_NOTE, CONSONANTS_SIMPLE,
@@ -590,21 +591,46 @@ def song_collection(path, expected_tracks):
         return {"title": d.get("title") or "", "lines": [str(x) for x in lines], "url": url,
                 "available": d.get("available") is not False}
 
+    # The other UI languages: the official lyrics pages of jw.org, imported by scripts/import_song_languages.py into
+    # jw_songs_i18n.json (a language a song has no page in is simply absent: the page says so, it never shows another language).
+    i18n = {}
+    if os.path.exists("jw_songs_i18n.json"):
+        with open("jw_songs_i18n.json", encoding="utf-8") as fh:
+            i18n = json.load(fh)["songs"]
+    lank_re = re.compile(r"[?&]lank=(pub-[a-z]+_\d+_(VIDEO|AUDIO))(?:&|$)")
+
     def entry(song):
-        # Every learner language the source file holds (today vi and ko only: the JSON files are *_ko_vi) -- the page shows
-        # the UI language's own data and never another language's in its place.
-        out = {"id": song["id"], "track": song["track"]}
-        for key in SONG_LANGS:
-            if isinstance(song.get(key), dict):   # (the song's own "id" is a string: not the Indonesian data)
-                out[key] = lang(song, key)
-        media = SONG_MEDIA_KEYS.get(song["id"])
+        # Every learner language the page can show -- the page uses the UI language's own data, never another language's.
+        langs = {}
+        out = {"id": song["id"], "track": song["track"], "languages": langs}
+        media = {}
+        for key in ("vi", "ko"):
+            if isinstance(song.get(key), dict):
+                langs[key] = lang(song, key)
+                m = lank_re.search(langs[key]["url"])
+                if m:   # its media as data (kind + key); the page builds the finder link with the language's JW code
+                    media[key] = {"kind": m.group(2), "mediaKey": m.group(1)}
+                    langs[key]["url"] = ""
+        for key, d in (i18n.get(song["id"]) or {}).items():
+            if key in SONG_LANGS and key not in langs and d.get("available") and d.get("sections"):
+                langs[key] = {"title": d.get("title") or "", "sections": d["sections"], "url": "", "available": True}
+                media[key] = {"kind": d["media"]["kind"], "mediaKey": d["media"]["mediaKey"]}
+        fixed = SONG_MEDIA_KEYS.get(song["id"])
+        if fixed:
+            # A song whose official media is given by kind + media key (OSG 1: an AUDIO): that media of each language that has
+            # the song. A language imported from jw.org keeps it only when the finder page of exactly that key resolved there.
+            for k in list(media):
+                if k in ("vi", "ko"):
+                    if langs[k]["available"] and langs[k].get("lines"):
+                        media[k] = {"kind": fixed["kind"], "mediaKey": fixed["mediaKey"]}
+                    else:
+                        del media[k]
+                elif media[k]["mediaKey"] != fixed["mediaKey"]:
+                    del media[k]
+            if "ko" in langs and langs["ko"]["available"] and langs["ko"].get("lines"):
+                media["ko"] = {"kind": fixed["kind"], "mediaKey": fixed["mediaKey"]}
         if media:
-            # A song whose official media is given by kind + media key (never read off the URL): its jwOrgUrl of the file
-            # (a different kind of media) is dropped, the page builds the finder link of each language that has lyrics.
-            out["media"] = {k: {"kind": media["kind"], "mediaKey": media["mediaKey"]} for k in SONG_LANGS
-                            if isinstance(out.get(k), dict) and out[k]["available"] and out[k]["lines"]}
-            for k in out["media"]:
-                out[k]["url"] = ""
+            out["media"] = media
         return out
     return [entry(song) for song in sorted(songs, key=lambda x: x["track"])]
 

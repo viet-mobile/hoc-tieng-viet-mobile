@@ -66,14 +66,14 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         out.kingdomNums=SONGS_DATA.map(s=>s.number); out.kingdomPickers=document.querySelectorAll('#curr-songs-root .song-list-row').length;
         out.orig=ORIGINAL_SONGS.map(s=>s.track); out.kids=CHILDREN_SONGS.map(s=>s.track);
         out.origIds=new Set(ORIGINAL_SONGS.map(s=>s.id)).size; out.kidsIds=new Set(CHILDREN_SONGS.map(s=>s.id)).size;
-        out.koTitles=ORIGINAL_SONGS.concat(CHILDREN_SONGS).every(s=>s.ko.title);
+        out.koTitles=ORIGINAL_SONGS.concat(CHILDREN_SONGS).every(s=>s.languages.ko.title);
         // original songs
         tabs[1].click();await sleep(300);
         const oroot=document.getElementById('song-original-root');
         out.origVisible=!oroot.hidden&&document.getElementById('curr-songs-root').hidden;
         out.origCards=oroot.querySelectorAll('.song-acc').length; out.origBodiesRendered=oroot.querySelectorAll('.song-acc-body .song-lyric-line').length;
         const c116=oroot.querySelector('.song-acc[data-song-id="osg-116"]');const h=c116.querySelector('.song-acc-head');
-        out.h116=h.innerText; out.h116exp=h.getAttribute('aria-expanded'); out.h116ctl=!!document.getElementById(h.getAttribute('aria-controls'));
+        out.h116=c116.querySelector('.song-acc-headrow').innerText; out.h116exp=h.getAttribute('aria-expanded'); out.h116ctl=!!document.getElementById(h.getAttribute('aria-controls'));
         h.click();await sleep(150);
         const c=oroot.querySelector('.song-acc[data-song-id="osg-116"]');
         out.open116=c.querySelector('.song-acc-head').getAttribute('aria-expanded'); out.lines116=c.querySelectorAll('.song-lyric-line').length;
@@ -89,7 +89,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         c.querySelector('.song-acc-head').click();await sleep(150);
         out.closed116=oroot.querySelector('.song-acc[data-song-id="osg-116"] .song-acc-head').getAttribute('aria-expanded')+'/'+oroot.querySelectorAll('.song-acc[data-song-id="osg-116"] .song-lyric-line').length;
         // a song without Vietnamese
-        const noVi=ORIGINAL_SONGS.find(s=>!s.vi.title&&s.ko.url); // (osg-1 has no Vietnamese; its Korean link is an AUDIO given as media data, not a url)
+        const noVi=ORIGINAL_SONGS.find(s=>!s.languages.vi.title&&s.media&&s.media.ko); // (osg-1 has no Vietnamese; its Korean link is an AUDIO given as media data, not a url)
         oroot.querySelector('.song-acc[data-song-id="'+noVi.id+'"] .song-acc-head').click();await sleep(150);
         const cn=oroot.querySelector('.song-acc[data-song-id="'+noVi.id+'"]');
         out.noVi={missing:!!cn.querySelector('.song-acc-missing'),viMsg:!!cn.querySelector('.song-lyric-missing'),viLink:[...cn.querySelectorAll('.song-full-link')].map(a=>a.textContent),koLines:cn.querySelectorAll('.song-lyric-line .lyric-target').length};
@@ -105,10 +105,10 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         out.kidCards=kroot.querySelectorAll('.song-acc').length;
         for (const id of ['pk-special-0','pkon-35']) { kroot.querySelector('.song-acc[data-song-id="'+id+'"] .song-acc-head').click(); await sleep(150); }
         const k0=kroot.querySelector('.song-acc[data-song-id="pk-special-0"]'), k35=kroot.querySelector('.song-acc[data-song-id="pkon-35"]');
-        out.k0=k0.querySelector('.song-acc-head').innerText; out.k0links=[...k0.querySelectorAll('.song-full-link')].map(a=>a.href);
-        out.k35=k35.querySelector('.song-acc-head').innerText; out.k35links=[...k35.querySelectorAll('.song-full-link')].map(a=>a.href);
+        out.k0=k0.querySelector('.song-acc-headrow').innerText; out.k0links=[...k0.querySelectorAll('.song-full-link')].map(a=>a.href);
+        out.k35=k35.querySelector('.song-acc-headrow').innerText; out.k35links=[...k35.querySelectorAll('.song-full-link')].map(a=>a.href);
         out.kidGapBtns=[...kroot.querySelectorAll('.song-stanza-gap .speak-btn')].length;
-        const kNoLyr=CHILDREN_SONGS.find(s=>s.vi.title&&!s.vi.lines.length);
+        const kNoLyr=CHILDREN_SONGS.find(s=>s.languages.vi.title&&!s.languages.vi.lines.length);
         if (kNoLyr){ kroot.querySelector('.song-acc[data-song-id="'+kNoLyr.id+'"] .song-acc-head').click(); await sleep(150);
           out.kNoLyr=!!kroot.querySelector('.song-acc[data-song-id="'+kNoLyr.id+'"] .song-lyric-missing'); } else out.kNoLyr='none';
         // other language, and back to the kingdom tab through a curriculum song link
@@ -303,7 +303,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
             const c=card(), head=c.querySelector('.song-acc-head'), vi=c.querySelector('.song-acc-vi'), ko=c.querySelector('.song-acc-target');
             const both=[...c.querySelectorAll('.song-lyric-rows > .lyric-unit')].find(u=>u.querySelector('.lyric-vi')&&u.querySelector('.lyric-target'));
             const a=both&&both.querySelector('.lyric-vi').getBoundingClientRect(), b=both&&both.querySelector('.lyric-target').getBoundingClientRect();
-            out.songs[id]={kind, viTitle:vi&&vi.textContent, koTitle:ko&&ko.textContent, titlesText:c.querySelector('.song-acc-titles').textContent,
+            out.songs[id]={kind, viTitle:vi&&vi.textContent, koTitle:ko&&ko.textContent, titlesText:[...c.querySelectorAll('.song-acc-titles .song-title-link-group')].map(g=>g.firstElementChild.textContent).join(' '),
               viCss:vi&&css(vi,K), koCss:ko&&css(ko,K), viCls:vi&&vi.className, koCls:ko&&ko.className,
               links:[...c.querySelectorAll('.song-full-links .song-full-link')].map(x=>({t:x.textContent,h:x.getAttribute('href'),tg:x.target,rel:x.rel})), label:(c.querySelector('.song-full-links .song-media-label')||{}).textContent,
               order:both?(both.querySelector('.lyric-vi').compareDocumentPosition(both.querySelector('.lyric-target'))&Node.DOCUMENT_POSITION_FOLLOWING?'vi,ko':'ko,vi'):'', stacked:!!(a&&b&&b.top>=a.bottom-1&&Math.abs(a.left-b.left)<2), display:getComputedStyle(c.querySelector('.song-lyric-rows')).display,
@@ -312,7 +312,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
           }
         }
         return out;})()`);
-      const jsonOf = async id => E(`(()=>{const s=ORIGINAL_SONGS.concat(CHILDREN_SONGS).find(x=>x.id==='${id}'); return s&&{media:s.media||null,vi:{url:s.vi.url,available:s.vi.available,title:s.vi.title},ko:{url:s.ko.url,available:s.ko.available,title:s.ko.title}};})()`);
+      const jsonOf = async id => E(`(()=>{const s=ORIGINAL_SONGS.concat(CHILDREN_SONGS).find(x=>x.id==='${id}'); return s&&{media:s.media||null,vi:{url:s.languages.vi.url,available:s.languages.vi.available,title:s.languages.vi.title},ko:{url:s.languages.ko.url,available:s.languages.ko.available,title:s.languages.ko.title}};})()`);
       ok(ui && ui.kingdom, n + ': kingdom title styles read');
       for (const id of ['osg-1', 'osg-116', 'osg-117', 'pk-special-0', 'pkon-17', 'pkon-35']) {
         const o = ui && ui.songs[id], j = await jsonOf(id);
@@ -342,8 +342,8 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
               const c=root.querySelector('.song-acc[data-song-id="'+id+'"]'); if(!c){out.push(l+kind+' missing');continue;}
               if(c.querySelector('.song-acc-head').getAttribute('aria-expanded')!=='true'){c.querySelector('.song-acc-head').click(); await sleep(100);}
               const cc=root.querySelector('.song-acc[data-song-id="'+id+'"]'), bu=[...cc.querySelectorAll('.song-lyric-rows > .lyric-unit')].find(u=>u.querySelector('.lyric-vi')&&u.querySelector('.lyric-target')), a=bu&&bu.querySelector('.lyric-vi').getBoundingClientRect(), b=bu&&bu.querySelector('.lyric-target').getBoundingClientRect();
-              const head=cc.querySelector('.song-acc-head');
-              if ((bu && !(b.top>=a.bottom-1)) || head.scrollWidth>head.clientWidth+1 || document.documentElement.scrollWidth>innerWidth+1) out.push(l+' '+kind+' stacked='+(!bu||b.top>=a.bottom-1)+' head='+(head.scrollWidth>head.clientWidth+1)+' page='+(document.documentElement.scrollWidth>innerWidth+1));
+              const hr=cc.querySelector('.song-acc-headrow');
+              if ((bu && !(b.top>=a.bottom-1)) || hr.scrollWidth>hr.clientWidth+1 || document.documentElement.scrollWidth>innerWidth+1) out.push(l+' '+kind+' stacked='+(!bu||b.top>=a.bottom-1)+' head='+(hr.scrollWidth>hr.clientWidth+1)+' page='+(document.documentElement.scrollWidth>innerWidth+1));
             }
           }
           window.setLang('ko'); return out;})()`);

@@ -183,9 +183,13 @@ function staticChecks() {
 
       // ---- 오리지널 송 / 어린이 노래 ----
       const o = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));const out={};
-        const rows=root=>[...root.querySelectorAll('.song-acc-headrow .jw-title-badges a.jw-org-badge')].map(a=>({lang:a.dataset.jwLang,a:a.getAttribute('href'),kind:a.dataset.mediaKind,text:a.textContent}));
-        const struct=card=>{const hr=card.querySelector('.song-acc-headrow'),b=hr.querySelector('.song-acc-head'),w=hr.querySelector('.jw-title-badges'),a=w&&w.querySelector('a');
-          return {kids:[...hr.children].map(x=>x.tagName+'.'+x.className.split(' ')[0]),inBtn:card.querySelectorAll('button a').length,anchorInBtn:!!(a&&a.closest('button')),gap:a?Math.round(a.getBoundingClientRect().left-b.getBoundingClientRect().right):null,sameLine:a?Math.abs(a.getBoundingClientRect().top-b.getBoundingClientRect().top)<40:false,bodyRow:card.querySelectorAll('.song-acc-body .jw-badge-row').length};};
+        const rows=root=>[...root.querySelectorAll('.song-acc-headrow a.jw-org-badge')].map(a=>({lang:a.dataset.jwLang,a:a.getAttribute('href'),kind:a.dataset.mediaKind,text:a.textContent}));
+        const struct=card=>{const hr=card.querySelector('.song-acc-headrow'),b=hr.querySelector('.song-acc-head');
+          const groups=[...hr.querySelectorAll('.song-acc-titles > .song-title-link-group')].map(g=>{const ti=g.firstElementChild,a=g.querySelector('a.jw-org-badge');
+            if(!a) return {noBadge:true,title:ti.className};
+            const rs=ti.getClientRects(),last=rs[rs.length-1],ar=a.getBoundingClientRect();
+            return {title:ti.className.split(' ')[0],follows:a.previousElementSibling===ti,gap:Math.round(ar.left-last.right),sameLine:Math.abs(ar.top-last.top)<12,lang:a.dataset.jwLang};});
+          return {kids:[...hr.children].map(x=>x.tagName+'.'+String(x.className.baseVal!==undefined?x.className.baseVal:x.className).split(' ')[0]),inBtn:card.querySelectorAll('button a, a button').length,groups,bodyRow:card.querySelectorAll('.song-acc-body .jw-badge-row').length,btnInner:b.innerText.trim()};};
         document.querySelector('.song-kind-tabs [data-songkind="original"]').click();await sleep(250);
         let root=document.getElementById('song-original-root');
         const c=root.querySelector('.song-acc[data-song-id="osg-116"]'); c.querySelector('.song-acc-head').click();await sleep(150);
@@ -201,12 +205,15 @@ function staticChecks() {
       ok(!!o, n + ': original / children evaluation');
       if (o) {
         const js = o.osg116.json;
-        const want = ['vi', 'ko'].filter(l => js[l].url && js[l].available).map(l => js[l].url);
+        const CODE = {vi: 'VT', ko: 'KO'};
+        const want = ['vi', 'ko'].filter(l => js.media && js.media[l] && js.languages[l].available).map(l => FINDER + CODE[l] + '&lank=' + js.media[l].mediaKey);
         ok(want.length >= 1 && JSON.stringify(o.osg116.badges.map(b => b.a)) === JSON.stringify(want) && JSON.stringify(o.osg116.buttons) === JSON.stringify(want) && o.osg116.badges.every(b => b.text === 'JW.ORG' && b.kind === 'song-video'),
           `${n}: OSG 116 badges = the JSON's finder links ${JSON.stringify(o.osg116.badges.map(b => b.a))}`);
         const st = [o.osg116.struct, o.kid0struct];
-        ok(st.every(x => x.kids.join() === 'BUTTON.song-acc-head,SPAN.jw-title-badges' && !x.anchorInBtn && x.inBtn === 0 && x.bodyRow === 0), `${n}: Original / Children head row = title button + badge sibling (no link inside a button, no badge row in the body) ${JSON.stringify(st)}`);
-        ok(st.every(x => x.sameLine && x.gap >= 0 && x.gap <= 24), `${n}: the badge follows the title directly (gap ${st.map(x => x.gap)} px)`);
+        ok(st.every(x => x.kids[0] === 'BUTTON.song-acc-head' && x.kids[1] === 'SPAN.song-acc-titles' && x.inBtn === 0 && x.bodyRow === 0 && /^\d+$/.test(x.btnInner)),
+          `${n}: Original / Children head = toggle button (the number) + titles, no link inside a button, no <a><button>, no badge row in the body ${JSON.stringify(st)}`);
+        ok(st.every(x => x.groups.length === 2 && x.groups.every(g => g.follows && g.sameLine && g.gap >= 0 && g.gap <= 24)) && st.every(x => x.groups[0].lang === 'vi' && x.groups[1].lang === 'ko'),
+          `${n}: "VI title [JW.ORG] KO title [JW.ORG]": each badge directly after its own title ${JSON.stringify(st.map(x => x.groups))}`);
         ok(o.kid0.map(b => b.a).includes(FINDER + 'KO&lank=pub-pk_3_VIDEO') && o.kid0.every(b => allowed(b.a)), `${n}: children 0 keeps the pk_3 finder link ${JSON.stringify(o.kid0.map(b => b.a))}`);
         ok(o.kid35.length >= 1 && o.kid35.every(b => allowed(b.a) && /lank=pub-pkon_35_VIDEO$/.test(b.a)), `${n}: children 35 ${JSON.stringify(o.kid35.map(b => b.a))}`);
         ok(o.kidAll.concat(o.origAll).length >= 4 && o.kidAll.concat(o.origAll).every(allowed), `${n}: every clickable jw.org link of the Original / Children tabs is allowed`);
@@ -246,7 +253,8 @@ function staticChecks() {
     }
     cdp.close();
   } finally { chrome.kill(); server.kill(); }
-  ok(foundUrls > 100, 'the built pages were scanned (' + foundUrls + ' jw.org addresses)');
+  // (the song links of [오리지널 송] / [어린이 노래] are data -- kind + media key -- and built by the page, so they are not addresses in the bundle)
+  ok(foundUrls > 30, 'the built pages were scanned (' + foundUrls + ' jw.org addresses)');
   console.log(`checks run: ${checks}`);
   if (failures.length) { failures.forEach(f => console.error('  [FAIL] ' + f)); console.error('--- JW.ORG BADGES TEST FAILED ---'); process.exit(1); }
   console.log('--- JW.ORG BADGES TEST PASSED ---');

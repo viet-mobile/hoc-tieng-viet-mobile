@@ -54,7 +54,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
     // One song card of a locale: header, badges, lyric rows (in DOM order), read-all registry entries.
     const PROBE = `window.__probe = async (locale, kind, id) => {
       const sleep = ms => new Promise(r => setTimeout(r, ms));
-      window.setLang(locale); await sleep(120);
+      window.setLang(locale); await sleep(250);
       document.querySelector('.tab-btn[data-tab="sentence"]').click(); await sleep(60);
       document.querySelector('.subtab-btn[data-sentence="song"]').click(); await sleep(100);
       document.querySelector('.song-kind-tabs [data-songkind="' + kind + '"]').click(); await sleep(100);
@@ -65,6 +65,9 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
       return {
         head: card.querySelector('.song-acc-titles').innerText, headLangs: [...card.querySelectorAll('.song-acc-titles [lang]')].map(x => x.lang),
         badges: [...card.querySelectorAll('.song-acc-headrow .jw-org-badge')].map(a => ({href: a.href, text: a.textContent, aria: a.getAttribute('aria-label'), lang: a.dataset.jwLang, kind: a.dataset.mediaKind})),
+        groups: [...card.querySelectorAll('.song-acc-titles > .song-title-link-group')].map(g => [...g.children].map(c => c.tagName.toLowerCase() + (c.lang ? ':' + c.lang : '') + (c.classList.contains('jw-org-badge') ? ':badge:' + c.dataset.jwLang : ''))),
+        nest: card.querySelectorAll('button a, a button, a a').length, headButtons: card.querySelectorAll('.song-acc-headrow button').length,
+        btnName: card.querySelector('.song-acc-head').getAttribute('aria-label'),
         body: card.querySelector('.song-acc-body').innerText,
         order: [...card.querySelectorAll('.song-lyric-rows > *')].map(x => x.className.indexOf('lyric-unit') >= 0 ? [...x.children].map(c => c.className.split(' ')[0]).join('+') : 'marker'),
         units: units.map(u => ({vi: (u.querySelector('.lyric-vi') || {}).textContent || '', target: (u.querySelector('.lyric-target') || {}).textContent || '',
@@ -83,66 +86,130 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
       await sleep(600);
       await E(PROBE);
 
-      // ---- locale matrix ----
+      // ---- locale matrix: every locale shows ITS OWN data (never Korean outside the Korean UI) ----
+      const JWCODE = {vi: 'VT', ko: 'KO', en: 'E', zh: 'CH', ja: 'J', de: 'X', fr: 'F', pl: 'P', cs: 'B', hu: 'H', id: 'IN', zh_cn: 'CHS'};
+      const cov = await E(`(()=>{const o={};for(const s of ORIGINAL_SONGS.concat(CHILDREN_SONGS)){for(const l of ${JSON.stringify(LOCALES)}){const d=s.languages[l]||null; const c=(o[l]=o[l]||{n:0,total:0}); c.total++; if(d&&d.available) c.n++;}} return o;})()`);
+      console.log(n + ' coverage (songs with official lyrics in the language): ' + LOCALES.map(l => l + ' ' + cov[l].n + '/' + cov[l].total).join(', '));
+      ok(cov.vi.n >= 120 && cov.ko.n === 153 && LOCALES.filter(l => l !== 'vi' && l !== 'ko').every(l => cov[l].n >= 120), n + ': real data for every language ' + JSON.stringify(cov));
+      const DATA = (kind, id, loc) => `(()=>{const s=${kind === 'original' ? 'ORIGINAL_SONGS' : 'CHILDREN_SONGS'}.find(x=>x.id==='${id}'); const g=l=>{const d=s.languages[l]||null; if(!d||!d.available) return null;
+        const isLabel=x=>/^\\s*\\([^()]*\\)\\s*$/.test(x);
+        const lines=d.lines?d.lines.filter(x=>x.trim()&&!isLabel(x)):d.sections.flatMap(q=>q.lines);
+        const labels=d.lines?d.lines.filter(isLabel).length:d.sections.filter(q=>q.label).length;
+        return {title:d.title,lines,labels,media:(s.media&&s.media['${loc}'])||null};};
+        return {vi:g('vi'),t:g('${loc}')};})()`;
       const koRows = {};
       for (const loc of LOCALES) {
         for (const [kind, ids] of [['original', ORIGINAL], ['kids', KIDS]]) {
           for (const id of ids) {
             const r = await E(`window.__probe('${loc}','${kind}','${id}')`);
+            const D = await E(DATA(kind, id, loc));
             const tag = n + ' ' + loc + ' ' + id;
-            if (!r || !r.units) { ok(false, tag + ': probe failed ' + JSON.stringify(r)); continue; }
+            if (!r || !r.units || !D) { ok(false, tag + ': probe failed ' + JSON.stringify(r)); continue; }
             const vi = loc === 'vi', ko = loc === 'ko';
             if (ko) koRows[id] = r;
-            const allText = r.head + '\n' + r.body + '\n' + r.units.map(u => u.target).join('\n');
+            const T = vi ? null : D.t;
+            const allText = r.head + '\n' + r.units.map(u => u.target).join('\n');
             if (!ko) ok(!/[가-힣]/.test(allText), tag + ': Korean text in a non-Korean locale: ' + (allText.match(/[가-힣]+/) || [''])[0]);
-            if (ko) ok(r.units.some(u => u.target) && r.units.every(u => !u.target || u.targetLang === 'ko') && /[가-힣]/.test(r.head), tag + ': Korean data in the Korean UI');
-            else ok(r.units.every(u => !u.target), tag + ': no target line when the locale has no data (' + loc + ')');
+            // the target lines: exactly this locale's data, in order, in its language, nothing when it has none
+            const tLines = r.units.map(u => u.target).filter(Boolean);
+            if (T) {
+              ok(tLines.join('|') === T.lines.join('|'), tag + ': every ' + loc + ' line, in order (' + tLines.length + '/' + T.lines.length + ')');
+              ok(r.units.every(u => !u.target || u.targetLang === loc) && r.headLangs.includes(loc) && r.head.includes(T.title), tag + ': ' + loc + ' title / lang attributes ' + r.head);
+              ok(r.units.every(u => !u.target || u.tBtn), tag + ': a listen button on every ' + loc + ' line');
+            } else {
+              ok(tLines.length === 0 && !r.headLangs.includes(loc === 'vi' ? 'none' : loc), tag + ': no ' + loc + ' data -> no target line, no other language in its place');
+              if (!vi) ok(/\S/.test(r.body) && r.body.split('\n').some(x => x.length > 8) && r.units.every(u => !u.target), tag + ': a note instead');
+            }
+            // Vietnamese: all its lines, in order
+            ok(r.units.map(u => u.vi).filter(Boolean).join('|') === (D.vi ? D.vi.lines.join('|') : ''), tag + ': every Vietnamese line, in order');
             ok(r.units.every(u => !u.tBtn || u.target) && r.units.every(u => !u.viBtn || u.vi), tag + ': listen buttons belong to a line');
-            ok(!r.headLangs.includes('ko') || ko, tag + ': ko-lang title in ' + loc);
-            // badges: only of a language the page shows, never the Korean one outside the Korean UI
-            ok(r.badges.every(b => b.text === 'JW.ORG' && /srcid=jwlshare/.test(b.href) && /wtlocale=/.test(b.href) && /(lank|docid)=/.test(b.href)), tag + ': badges ' + JSON.stringify(r.badges));
+            // pairing: rows hold both languages wherever both have a line (most of a song), markers kept
+            if (T && D.vi) {
+              const both = r.units.filter(u => u.vi && u.target).length;
+              ok(both >= Math.min(D.vi.lines.length, T.lines.length) * 0.5, tag + ': most lines are paired (' + both + ')');
+              ok(r.markers.length >= Math.max(D.vi.labels, T.labels) && r.markers.length <= D.vi.labels + T.labels, tag + ': markers kept ' + r.markers.length + ' (' + D.vi.labels + '/' + T.labels + ')');
+              ok(r.order.some(o => o === 'lyric-vi-row+lyric-target-row'), tag + ': vi/target rows are one unit');
+            }
+            // badges: strict share links of the shown languages, with the language's own JW code and media key
+            ok(r.badges.every(b => b.text === 'JW.ORG' && /srcid=jwlshare/.test(b.href) && /wtlocale=/.test(b.href) && /lank=/.test(b.href)), tag + ': badges ' + JSON.stringify(r.badges));
             ok(r.badges.every(b => b.lang === 'vi' || b.lang === loc) && (ko || r.badges.every(b => !/wtlocale=KO/.test(b.href))), tag + ': badge language ' + JSON.stringify(r.badges.map(b => b.lang)));
-            // row order: unit = vi row, then the target row (never "all vi, then all target")
+            const tb = r.badges.find(b => b.lang === loc && !vi);
+            if (T && T.media) ok(tb && tb.href === `https://www.jw.org/finder?srcid=jwlshare&wtlocale=${JWCODE[loc]}&lank=${T.media.mediaKey}`, tag + ': target badge ' + (tb && tb.href));
+            else ok(!tb, tag + ': no target badge without media');
+            // header: "VI title [JW.ORG] TARGET title [JW.ORG]": each title is followed by its own badge, in one group; no nesting of controls
+            const want = [['span:vi'].concat(r.badges.some(b => b.lang === 'vi') ? ['a:badge:vi'] : [])];
+            if (T && T.title) want.push(['span:' + loc].concat(tb ? ['a:badge:' + loc] : []));
+            const viMissing = !D.vi || !D.vi.title;
+            ok(r.nest === 0 && r.headButtons === 1 && /\S/.test(r.btnName || ''), tag + ': one toggle button, no <button><a> nesting ' + r.nest + '/' + r.headButtons);
+            ok(JSON.stringify(viMissing ? r.groups.slice(1) : r.groups) === JSON.stringify(viMissing ? want.slice(1) : want), tag + ': title-badge groups ' + JSON.stringify(r.groups) + ' vs ' + JSON.stringify(want));
             ok(r.order.every(o => o === 'marker' || o === 'lyric-vi-row' || o === 'lyric-target-row' || o === 'lyric-vi-row+lyric-target-row'), tag + ': row order ' + [...new Set(r.order)]);
           }
         }
       }
-      // the Korean UI: exact pairing, no line lost
-      for (const id of ['osg-116', 'pkon-35', 'pk-special-0', 'pkon-17']) {
-        const r = koRows[id], kind = id.startsWith('osg') ? 'ORIGINAL_SONGS' : 'CHILDREN_SONGS';
-        const d = await E(`(()=>{const s=${kind}.find(x=>x.id==='${id}');const f=a=>a.filter(l=>l.trim()&&!/^\\s*\\([^()]*\\)\\s*$/.test(l));return {vi:f(s.vi.lines),ko:f(s.ko.lines),viMk:s.vi.lines.filter(l=>/^\\s*\\([^()]*\\)\\s*$/.test(l)).length,koMk:s.ko.lines.filter(l=>/^\\s*\\([^()]*\\)\\s*$/.test(l)).length};})()`);
-        ok(r.units.map(u => u.vi).filter(Boolean).join('|') === d.vi.join('|'), n + ' ' + id + ': every Vietnamese line, in order (' + r.units.filter(u => u.vi).length + '/' + d.vi.length + ')');
-        ok(r.units.map(u => u.target).filter(Boolean).join('|') === d.ko.join('|'), n + ' ' + id + ': every Korean line, in order (' + r.units.filter(u => u.target).length + '/' + d.ko.length + ')');
-        ok(r.units.filter(u => u.vi && u.target).length >= Math.min(d.vi.length, d.ko.length) * 0.5, n + ' ' + id + ': most lines are paired ' + r.units.filter(u => u.vi && u.target).length);
-        ok(r.markers.length >= Math.max(d.viMk, d.koMk) - 0 && r.markers.length <= d.viMk + d.koMk, n + ' ' + id + ': markers kept ' + r.markers.length);
-        ok(r.order.some(o => o === 'lyric-vi-row+lyric-target-row'), n + ' ' + id + ': vi/target rows are one unit');
-      }
       {
-        const r = koRows['osg-116'];
-        const first = r.units[0];
+        const r = koRows['osg-116'], first = r.units[0];
         ok(first.vi && first.target && first.viBtn && first.tBtn, n + ': OSG 116 first row = VI + target with buttons');
-        // aligned by section: the first "(코러스)" marker row carries the Vietnamese and the Korean marker together
         ok(r.markers.some(m => /ĐIỆP KHÚC/.test(m) && /코러스/.test(m)), n + ': a chorus marker row holds both languages ' + r.markers.slice(0, 3));
+        // an imported language: its chorus label sits in the row of the Vietnamese one
+        const en = await E(`window.__probe('en','original','osg-116')`);
+        ok(en.markers.some(m => /ĐIỆP KHÚC/.test(m) && /CHORUS/i.test(m)), n + ': English chorus label next to the Vietnamese one ' + en.markers.slice(0, 3));
+      }
+      // clicking a title toggles the card; clicking its badge does not; the toggle button is the keyboard control
+      {
+        const t = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms)); await window.__probe('ko','original','osg-116');
+          const root=document.getElementById('song-original-root'); const q=()=>root.querySelector('.song-acc[data-song-id="osg-116"]');
+          const st=()=>q().querySelector('.song-acc-head').getAttribute('aria-expanded');
+          const a=st(); q().querySelector('.song-acc-target').click(); await sleep(60); const b=st();
+          q().querySelector('.song-acc-vi').click(); await sleep(60); const c=st();
+          const badge=q().querySelector('.jw-org-badge'); badge.addEventListener('click',e=>e.preventDefault(),{once:true}); badge.click(); await sleep(60); const d=st();
+          q().querySelector('.song-acc-head').click(); await sleep(60); const e2=st();
+          return [a,b,c,d,e2, document.activeElement && document.activeElement.className];})()`);
+        ok(t && t.slice(0, 5).join() === 'true,false,true,true,false', n + ': title click toggles, badge click does not, button toggles ' + JSON.stringify(t));
       }
 
-      // ---- OSG 1: AUDIO, never VIDEO ----
+      // ---- OSG 1: AUDIO (pub-osg_1_AUDIO), never VIDEO, in every language that has the song ----
       {
-        const d = await E(`(()=>{const s=ORIGINAL_SONGS[0];return {id:s.id,media:s.media,koUrl:s.ko.url,viAvail:s.vi.available,json:JSON.stringify(ORIGINAL_SONGS.filter(x=>x.track!==1).map(x=>x.media||null).filter(Boolean))};})()`);
-        ok(d.id === 'osg-1' && JSON.stringify(d.media) === JSON.stringify({ko: {kind: 'AUDIO', mediaKey: 'pub-osg_1_AUDIO'}}) && d.koUrl === '' && d.viAvail === false && d.json === '[]',
-          n + ': OSG 1 data is kind AUDIO + media key, only in the language it exists (ko); no other song has it ' + JSON.stringify(d));
+        const d = await E(`(()=>{const s=ORIGINAL_SONGS[0];const m=s.media||{};const has=l=>!!(s.languages[l]&&s.languages[l].available&&(s.languages[l].lines||s.languages[l].sections));
+          return {id:s.id,media:m,langs:${JSON.stringify(LOCALES)}.filter(has),other:ORIGINAL_SONGS.slice(1).concat(CHILDREN_SONGS).filter(x=>x.media&&Object.values(x.media).some(v=>v.mediaKey==='pub-osg_1_AUDIO')).length,
+            urls:${JSON.stringify(LOCALES)}.map(l=>s.languages[l]?s.languages[l].url:'').join('')};})()`);
+        const mk = Object.keys(d.media);
+        ok(d.id === 'osg-1' && mk.length >= 9 && mk.every(l => d.media[l].kind === 'AUDIO' && d.media[l].mediaKey === 'pub-osg_1_AUDIO' && d.langs.includes(l)) && mk.includes('ko') && !mk.includes('vi') && d.other === 0 && d.urls === '',
+          n + ': OSG 1 is kind AUDIO + media key in ' + mk.join(',') + ' (languages with lyrics: ' + d.langs.join(',') + ')');
         for (const loc of LOCALES) {
           const r = await E(`window.__probe('${loc}','original','osg-1')`);
           if (!r || !r.badges) { ok(false, n + ' OSG 1 ' + loc + ': probe failed ' + errs.slice(-1)); continue; }
-          const exp = loc === 'ko' ? ['https://www.jw.org/finder?srcid=jwlshare&wtlocale=KO&lank=pub-osg_1_AUDIO'] : [];
+          const exp = loc !== 'vi' && d.media[loc] ? [`https://www.jw.org/finder?srcid=jwlshare&wtlocale=${JWCODE[loc]}&lank=pub-osg_1_AUDIO`] : [];
           ok(JSON.stringify(r.badges.map(b => b.href)) === JSON.stringify(exp), n + ' OSG 1 ' + loc + ' badges ' + JSON.stringify(r.badges.map(b => b.href)));
           ok(r.badges.every(b => b.kind === 'song-audio' && b.text === 'JW.ORG' && /^JW\.ORG — /.test(b.aria) && !/VIDEO/.test(b.href) && !/(비디오|동영상|영상|Video|video)/.test(b.aria)), n + ' OSG 1 ' + loc + ' audio badge ' + JSON.stringify(r.badges));
           ok(r.links.every(h => !/VIDEO/.test(h)), n + ' OSG 1 ' + loc + ' no video link in the body ' + r.links);
-          if (loc === 'ko') ok(/오디오/.test(r.badges[0].aria), n + ': OSG 1 aria says audio ' + r.badges[0].aria);
+          if (loc === 'ko') ok(r.badges.length === 1 && r.badges[0].href === 'https://www.jw.org/finder?srcid=jwlshare&wtlocale=KO&lank=pub-osg_1_AUDIO' && /오디오/.test(r.badges[0].aria), n + ': OSG 1 KO exact + aria says audio ' + JSON.stringify(r.badges));
         }
-        // the navy badge style
         await E(`window.__probe('ko','original','osg-1')`);
-        const css = await E(`(()=>{const a=document.querySelector('.song-acc[data-song-id="osg-1"] .jw-org-badge');const c=getComputedStyle(a);return {bg:c.backgroundColor,color:c.color,r:[c.borderTopLeftRadius,c.borderTopRightRadius,c.borderBottomRightRadius,c.borderBottomLeftRadius],after:!!a.closest('.song-acc-headrow').querySelector('.song-acc-head')};})()`);
-        ok(css && css.after && /rgb\(\s*(\d+),\s*(\d+),\s*(\d+)/.test(css.bg) && css.color === 'rgb(255, 255, 255)', n + ': OSG 1 badge is the common navy JW.ORG badge ' + JSON.stringify(css));
+        const css = await E(`(()=>{const a=document.querySelector('.song-acc[data-song-id="osg-1"] .jw-org-badge');const c=getComputedStyle(a);return {bg:c.backgroundColor,color:c.color,r:[c.borderTopLeftRadius,c.borderTopRightRadius,c.borderBottomRightRadius,c.borderBottomLeftRadius],after:!!a.closest('.song-title-link-group').querySelector('.song-acc-target')};})()`);
+        ok(css && css.after && css.bg === 'rgb(11, 42, 91)' && css.color === 'rgb(255, 255, 255)' && css.r.join() === '6px,0px,6px,0px', n + ': OSG 1 badge is the common navy JW.ORG badge ' + JSON.stringify(css));
+      }
+
+      // ---- every locale reads its own language: VI x2, then the target once, in the locale's TTS tag ----
+      for (const loc of LOCALES.filter(l => l !== 'vi')) {
+        for (const [kind, id] of [['original', 'osg-116'], ['kids', 'pkon-35']]) {
+          const tag = n + ' ' + loc + ' ' + id + ' read-all';
+          const r = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms)); localStorage.clear();
+            await window.__probe('${loc}','${kind}','${id}');
+            const root=document.getElementById('${kind === 'original' ? 'song-original-root' : 'song-kids-root'}');
+            const sel=root.querySelector('.repeat-count-select'); sel.value='2'; sel.dispatchEvent(new Event('change',{bubbles:true})); await sleep(30);
+            await window.__probe('${loc}','${kind}','${id}');
+            const btn=root.querySelector('.song-acc[data-song-id="${id}"] .song-full-links button.read-all-btn'); if(!btn) return {btn:false};
+            const reg=window.__READALL_REGISTRY[btn.dataset.readall]; window.__ttsLog.length=0; btn.click();
+            for(let i=0;i<300&&window.__ttsLog.length<10;i++) await sleep(20);
+            const log=window.__ttsLog.slice(); btn.click(); await sleep(60); return {btn:true,log,reg:reg.slice(0,2)};})()`);
+          const D = await E(DATA(kind, id, loc));
+          if (!D.t) { ok(!r || !r.btn || r.log.every(x => x.lang === 'vi-VN'), tag + ': no ' + loc + ' data -> only Vietnamese is read'); continue; }
+          const L = (r && r.log) || [];
+          const g = []; L.forEach(x => { const q = g[g.length - 1]; if (q && q.lang === x.lang) q.items.push(x.text); else g.push({lang: x.lang, items: [x.text]}); });
+          const half = g[0] ? g[0].items.length / 2 : 0;
+          ok(r && r.btn && g.length >= 2 && g[0].lang === 'vi-VN' && Number.isInteger(half) && g[0].items.slice(0, half).join('|') === g[0].items.slice(half).join('|') && g[1].lang === TTS_TAG[loc],
+            tag + ': VI twice, then the target once in ' + TTS_TAG[loc] + ' ' + JSON.stringify(g.map(x => x.lang + 'x' + x.items.length)));
+        }
       }
 
       // ---- 전체 듣기 plan: Vietnamese xN, target once; 묵음 matrix ----

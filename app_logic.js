@@ -9771,14 +9771,22 @@ function verifyDistribution(units, dist, pins) {
   // The learner language of these two tabs is the UI language; with the Vietnamese UI there is no second language (the same
   // rule as [왕국 노래]). A song only ever shows the data of that very language: no other language stands in for a missing one.
   function songTargetLang() { return currentLang === "vi" ? "" : currentLang; }
-  function songLangData(song, l) { return l && song[l] && typeof song[l] === "object" ? song[l] : null; }   // (song.id is a string: "id" is also Indonesian)
-  function songLangHas(song, l) { var d = songLangData(song, l); return !!(d && d.available && d.lines.length); }
+  function songLangData(song, l) { return l && song.languages && song.languages[l] ? song.languages[l] : null; }   // song.languages: {<UI language>: {title, lines | sections, available}}
+  // A language's lyrics as flat lines (the canonical vi / ko files hold "lines"; the languages imported from jw.org hold "sections").
+  function songLangLines(d) {
+    if (!d) return [];
+    if (d.lines) return d.lines;
+    var out = [];
+    (d.sections || []).forEach(function (sec) { if (sec.label) out.push(sec.label); sec.lines.forEach(function (l) { out.push(l); }); });
+    return out;
+  }
+  function songLangHas(song, l) { var d = songLangData(song, l); return !!(d && d.available && songLangLines(d).length); }
   function songKindSearchIndex(kind) {
     var tl = songTargetLang();
     if (!songKindIndex[kind] || songKindIndex[kind].lang !== tl) {
       songKindIndex[kind] = { lang: tl, items: songKindData(kind).map(function (song) {
         var t = songLangData(song, tl);
-        return { song: song, hay: [String(song.track), song.vi ? song.vi.title : "", t ? t.title : "", song.vi ? song.vi.lines.join(" ") : "", t ? t.lines.join(" ") : ""].join(" ").toLowerCase() };
+        return { song: song, hay: [String(song.track), (songLangData(song, "vi") || {}).title || "", t ? t.title : "", songLangLines(songLangData(song, "vi")).join(" "), songLangLines(t).join(" ")].join(" ").toLowerCase() };
       }) };
     }
     return songKindIndex[kind].items;
@@ -9801,6 +9809,16 @@ function verifyDistribution(units, dist, pins) {
     for (var i = 0; i < SONG_MARKER_KINDS.length; i++) if (SONG_MARKER_KINDS[i][1].test(line)) return SONG_MARKER_KINDS[i][0];
     return "marker";
   }
+  // A language imported from jw.org has its sections as the page prints them: a verse, or a block (jw.org gives a chorus, a bridge, a
+  // pre-chorus ... the same block class, and prints its label in the page's language, not always: Japanese has none), kind "block".
+  function songSectionsOf(d) {
+    if (d && d.sections) {
+      return d.sections.map(function (sec) {
+        return { kind: sec.kind === "verse" ? "verse" : "block", marker: sec.label || "", lines: sec.lines.slice() };
+      });
+    }
+    return songSections(d ? d.lines : []);
+  }
   function songSections(lines) {
     var secs = [], cur = null;
     function open(kind, marker) { cur = { kind: kind, marker: marker || "", lines: [] }; secs.push(cur); }
@@ -9817,9 +9835,11 @@ function verifyDistribution(units, dist, pins) {
     var n = a.length, m = b.length, score = [], i, j;
     for (i = 0; i <= n; i++) { score.push([]); for (j = 0; j <= m; j++) score[i].push(0); }
     function fit(x, y) {
-      if (x.kind !== y.kind) return -1;
+      var exact = x.kind === y.kind;
+      // a "block" (a section of the page that is not a verse) fits any marked section: the page does not tell which
+      if (!exact && !((x.kind === "block" && y.kind !== "verse") || (y.kind === "block" && x.kind !== "verse"))) return -1;
       var la = Math.max(x.lines.length, 1), lb = Math.max(y.lines.length, 1);
-      return 1 + Math.min(la, lb) / Math.max(la, lb);
+      return (exact ? 1 : 0.9) + Math.min(la, lb) / Math.max(la, lb);
     }
     for (i = n - 1; i >= 0; i--) for (j = m - 1; j >= 0; j--) {
       var best = Math.max(score[i + 1][j], score[i][j + 1]), f = fit(a[i], b[j]);
@@ -9837,9 +9857,27 @@ function verifyDistribution(units, dist, pins) {
     return pairs;
   }
   // -> rows: {marker: true, vi, target} | {vi, target} (either text may be ""), in the order they are shown and read.
-  function songRows(viLines, targetLines) {
+  // One side without any section structure (a single run of lines: the canonical Vietnamese of a children's song has no labels) against a
+  // sectioned side: no section can be matched, so the lines are paired by position along the sectioned side, its labels kept as marker
+  // rows where its sections begin; leftover lines of the other side follow.
+  function songRowsFlat(flatSide, sectioned, flatIsVi) {
+    var rows = [], pool = [];
+    flatSide.forEach(function (sec) { sec.lines.forEach(function (l) { pool.push(l); }); });
+    var at = 0;
+    function pair(sideLine) { var o = at < pool.length ? pool[at++] : ""; return flatIsVi ? { vi: o, target: sideLine } : { vi: sideLine, target: o }; }
+    sectioned.forEach(function (sec) {
+      if (sec.marker) rows.push({ marker: true, vi: flatIsVi ? "" : sec.marker, target: flatIsVi ? sec.marker : "" });
+      sec.lines.forEach(function (l) { rows.push(pair(l)); });
+    });
+    for (; at < pool.length; at++) rows.push(flatIsVi ? { vi: pool[at], target: "" } : { vi: "", target: pool[at] });
+    return rows;
+  }
+  function songRows(viSections, targetSections) {
     var rows = [];
-    songAlignSections(songSections(viLines), songSections(targetLines)).forEach(function (p) {
+    if (viSections.length && targetSections.length && (viSections.length <= 1) !== (targetSections.length <= 1)) {
+      return viSections.length <= 1 ? songRowsFlat(viSections, targetSections, true) : songRowsFlat(targetSections, viSections, false);
+    }
+    songAlignSections(viSections, targetSections).forEach(function (p) {
       var v = p[0], t = p[1];
       if ((v && v.marker) || (t && t.marker)) rows.push({ marker: true, vi: v ? v.marker : "", target: t ? t.marker : "" });
       var n = Math.max(v ? v.lines.length : 0, t ? t.lines.length : 0);
@@ -9857,29 +9895,31 @@ function verifyDistribution(units, dist, pins) {
     var m = song.media && song.media[l];
     if (m) {
       var url = jwLankUrl(m.mediaKey, l), label = (SONG_KIND_LABELS[m.kind] || {})[currentLang] || "";
-      return url ? { url: url, kind: m.kind === "AUDIO" ? "song-audio" : "song-video", label: label ? songJwLocale(l)[1] + " — " + label : songJwLocale(l)[1] } : null;
+      return url ? { url: url, kind: m.kind === "AUDIO" ? "song-audio" : "song-video", label: label ? songJwLocale(l)[1] + " \u2014 " + label : songJwLocale(l)[1] } : null;
     }
     return d.url && isAllowedJwOrgShareUrl(d.url) ? { url: d.url, kind: "song-video", label: "" } : null;
   }
   function songLangsShown() { var tl = songTargetLang(); return tl ? ["vi", tl] : ["vi"]; }
-  function songAccHeadHtml(kind, song, open) {
-    var bodyId = "songacc-" + song.id, tl = songTargetLang(), t = songLangData(song, tl);
-    return '<button type="button" class="song-acc-head" aria-expanded="' + (open ? "true" : "false") + '" aria-controls="' + bodyId + '" data-song-acc="' + escapeAttr(song.id) + '">' +
-      '<span class="song-badge">' + song.track + '</span><span class="song-acc-titles">' +
-      // The two titles are the typography of the song title of [왕국 노래] (.song-detail-vi-title / .song-detail-target-title),
-      // on one line with a real space between them (they wrap like text).
-      (song.vi && song.vi.title ? '<span class="song-acc-vi song-detail-vi-title vn" lang="vi">' + escapeHtml(song.vi.title) + '</span>' : '<span class="song-acc-missing">' + escapeHtml(TU("베트남어 미제공")) + '</span>') +
-      (t && t.title ? ' <span class="song-acc-target song-detail-target-title" lang="' + tl + '">' + escapeHtml(t.title) + '</span>' : '') + '</span>' + currChev() + '</button>';
+  // Header: [toggle button: the song number] "VI title [JW.ORG] TARGET title [JW.ORG]" [chevron]. A title and its own badge are one
+  // group (.song-title-link-group); the groups are siblings of the toggle button, never inside it (no <button><a>, no <a><button>).
+  // The button is the keyboard / screen-reader control and carries the titles as its accessible name; a click on the row outside
+  // the links toggles too (the click handler of the tab).
+  function songTitleGroupHtml(song, l, cls) {
+    var d = songLangData(song, l);
+    if (l === "vi" && !(d && d.title)) return '<span class="song-title-link-group"><span class="song-acc-missing">' + escapeHtml(TU("베트남어 미제공")) + '</span></span>';
+    if (!d || !d.title) return "";
+    var info = songLinkInfo(song, l);
+    return '<span class="song-title-link-group"><span class="' + cls + '" lang="' + l + '">' + escapeHtml(d.title) + '</span>' +
+      (info ? jwOrgBadgeHtml(info.url, { kind: info.kind, lang: l, label: info.label }) : '') + '</span>';
   }
-  // "VI title [JW.ORG] TARGET title [JW.ORG]": the title button and the badges (of the Vietnamese and of the UI language's
-  // own link) are siblings of one row.
   function songAccHeadRowHtml(kind, song, open) {
-    var badges = songLangsShown().map(function (l) {
-      var info = songLinkInfo(song, l);
-      return info ? jwOrgBadgeHtml(info.url, { kind: info.kind, lang: l, label: info.label }) : "";
-    }).join("");
-    return '<div class="song-acc-headrow' + (badges ? ' has-jw-badges' : '') + '">' + songAccHeadHtml(kind, song, open) +
-      (badges ? '<span class="jw-title-badges">' + badges + '</span>' : '') + '</div>';
+    var tl = songTargetLang(), bodyId = "songacc-" + song.id, vi = songLangData(song, "vi"), t = songLangData(song, tl);
+    var name = [song.track, vi && vi.title, t && t.title].filter(Boolean).join(" ");
+    return '<div class="song-acc-headrow" data-open="' + (open ? "true" : "false") + '">' +
+      '<button type="button" class="song-acc-head" aria-expanded="' + (open ? "true" : "false") + '" aria-controls="' + bodyId + '" aria-label="' + escapeAttr(name) + '" data-song-acc="' + escapeAttr(song.id) + '">' +
+      '<span class="song-badge">' + song.track + '</span></button>' +
+      '<span class="song-acc-titles">' + songTitleGroupHtml(song, "vi", "song-acc-vi song-detail-vi-title vn") +
+      (tl && songLangData(song, tl) && songLangData(song, tl).title ? " " : "") + (tl ? songTitleGroupHtml(song, tl, "song-acc-target song-detail-target-title") : "") + '</span>' + currChev() + '</div>';
   }
   // 전체 듣기 plan = the rows in the order shown: per row [Vietnamese, target]. readAllItems() reads the Vietnamese
   // viRepeatCount times and then the target ONCE (in the UI language's voice, READALL_LANG_TAG); a language that 묵음 silences
@@ -9909,14 +9949,14 @@ function verifyDistribution(units, dist, pins) {
     return html + '</div>';
   }
   function songAccBodyHtml(song) {
-    var tl = songTargetLang(), vi = song.vi, t = songLangData(song, tl);
+    var tl = songTargetLang(), vi = songLangData(song, "vi"), t = songLangData(song, tl);
     var viOk = songLangHas(song, "vi"), tOk = songLangHas(song, tl);
     var links = songLangsShown().map(function (l) {
       var info = songLinkInfo(song, l);
       return info ? '<a class="read-all-btn song-full-link" href="' + escapeAttr(info.url) + '" target="_blank" rel="noopener noreferrer" data-media-kind="' + info.kind + '">▶ ' +
         escapeHtml(songJwLocale(l)[1]) + '</a>' : "";
     }).join("");
-    var rows = songRows(viOk ? vi.lines : [], tOk ? t.lines : []);
+    var rows = songRows(viOk ? songSectionsOf(vi) : [], tOk ? songSectionsOf(t) : []);
     var notes = (viOk ? '' : '<div class="song-lyric-missing">' + escapeHtml(TU("베트남어 가사 미제공")) + '</div>') +
       (tl && !tOk ? '<div class="song-lyric-missing">' + escapeHtml(TU("이 언어의 가사는 제공되지 않아요")) + '</div>' : '');
     var html = '';
@@ -9990,6 +10030,8 @@ function verifyDistribution(units, dist, pins) {
       });
       root.addEventListener("click", function (e) {
         var head = e.target.closest && e.target.closest(".song-acc-head");
+        var headRow = e.target.closest && e.target.closest(".song-acc-headrow");
+        if (!head && headRow && !e.target.closest("a, button")) head = headRow.querySelector(".song-acc-head");   // the row toggles, its links do not
         if (head) {
           var id = head.dataset.songAcc, card = head.closest(".song-acc");
           var song = songKindData(kind).filter(function (x) { return x.id === id; })[0];

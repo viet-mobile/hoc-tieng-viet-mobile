@@ -20,6 +20,21 @@ import time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PY = sys.executable
+MIN_NODE = (22, 14)   # tests/helpers/d1_sqlite.js uses node:sqlite (unflagged from Node 22.13; 22.14 is the release baseline)
+
+
+def check_node():
+    """Fail at once, with the reason, instead of an obscure node:sqlite error in the last step."""
+    try:
+        out = subprocess.run(["node", "--version"], capture_output=True, text=True).stdout.strip()
+        got = tuple(int(x) for x in out.lstrip("v").split(".")[:2])
+    except (OSError, ValueError):
+        print("Node %d.%d+ required for release smoke (node not found)" % MIN_NODE)
+        return False
+    if got < MIN_NODE:
+        print("Node %d.%d+ required for release smoke (found %s)" % (MIN_NODE + (out,)))
+        return False
+    return True
 
 STEPS = [
     ("build (all sites)", [[PY, "build_app.py", "--site", "all"], [PY, "assemble_app.py", "--site", "all"]]),
@@ -34,6 +49,8 @@ STEPS = [
 
 
 def main():
+    if not check_node():
+        return 1
     steps = STEPS[1:] if "--no-build" in sys.argv else STEPS
     t0 = time.time()
     for i, (name, cmds) in enumerate(steps, 1):

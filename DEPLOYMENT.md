@@ -52,3 +52,12 @@ project through **Custom domains**. Do not add a Worker, Wrangler configuration,
 hostname-based runtime routing, or dependencies on another project -- domain-to-
 profile mapping is a deployment-config concern (this table / `DOMAIN_MAP`), not
 application logic.
+
+## Release tooling prerequisites
+
+- **Node >= 22.14** for `scripts/release_smoke.py`, `scripts/preprod_verify.py` and the `tests/*.js` browser tests
+  (`tests/helpers/d1_sqlite.js` uses `node:sqlite`). `release_smoke.py` stops at once with
+  `Node 22.14+ required for release smoke` on an older Node; it never installs or changes the system Node.
+- Python 3.9+, Google Chrome (or `CHROME_PATH`).
+- Official song lyrics of the other UI languages are imported with `python scripts/import_song_languages.py`
+  (jw.org finder pages -> `jw_songs_i18n.json`); the build reads that file, nothing is generated or translated.

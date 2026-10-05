@@ -1192,16 +1192,23 @@
   .song-kind-search { width: 100%; box-sizing: border-box; margin-bottom: 8px; }
   .song-kind-count { font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 8px; }
   .song-acc { border: 1px solid var(--border); border-radius: var(--radius-m); background: var(--surface); margin-bottom: 8px; overflow: hidden; }
-  .song-acc-head { display: flex; align-items: flex-start; gap: 10px; width: 100%; text-align: left; background: none; border: 0;
-    padding: 10px 12px; cursor: pointer; color: var(--ink); font: inherit; min-height: 48px; }
-  .song-acc-head:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  /* header: [toggle button: the song number] "VI title [JW.ORG] TARGET title [JW.ORG]" [chevron]. The titles and their badges are
+     NOT inside the button (a link cannot be inside a button): the button is the keyboard / screen-reader control, a click on the
+     row (outside the links) toggles too */
+  .song-acc-headrow { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; cursor: pointer; min-height: 48px; }
+  .song-acc-head { flex: none; display: flex; align-items: center; background: none; border: 0; padding: 0; cursor: pointer; color: var(--ink); font: inherit; }
+  .song-acc-head:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .song-acc-titles { flex: 1; min-width: 0; overflow-wrap: anywhere; }
   /* the titles are the song title of [왕국 노래] (.song-detail-vi-title / .song-detail-target-title): one line, a space between */
-  .song-acc-vi, .song-acc-ko { display: inline; }
+  .song-acc-vi, .song-acc-target { display: inline; }
+  /* a title and its badge stay together: each group is a unit that wraps as a whole (VI [JW.ORG] / TARGET [JW.ORG]) */
+  .song-title-link-group { display: inline-block; max-width: 100%; vertical-align: top; margin-right: 0.5em; }
+  .song-title-link-group .jw-org-badge { margin-left: 6px; }
   .song-acc-missing { display: inline-block; font-size: 0.72rem; font-weight: 700; color: var(--ink-faint); background: var(--chip-bg);
     border-radius: 999px; padding: 1px 8px; }
   .song-acc .chev { flex: none; transition: transform .15s; }
-  .song-acc-head[aria-expanded="true"] .chev { transform: rotate(180deg); }
+  .song-acc-headrow[data-open="true"] .chev { transform: rotate(180deg); }
+  .song-acc-headrow .chev { margin-top: 2px; }
   .song-acc-body { padding: 4px 12px 12px; border-top: 1px solid var(--border); }
   .song-full-links { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
   .song-full-link { text-decoration: none; }
@@ -1233,14 +1240,9 @@
   .group-head-row.has-jw-badges { cursor: pointer; flex-wrap: wrap; row-gap: 0; }
   .group-head-row.has-jw-badges .group-head { flex: 0 1 auto; width: auto; max-width: 100%; }
   .group-head-row.has-jw-badges .read-all-btn { margin-left: auto; }
-  .song-acc-headrow { display: flex; align-items: flex-start; gap: 8px; }
-  .song-acc-headrow.has-jw-badges { cursor: pointer; flex-wrap: wrap; row-gap: 0; padding-right: 10px; }
-  .song-acc-headrow.has-jw-badges .song-acc-head { width: auto; flex: 0 1 auto; max-width: 100%; }
-  .song-acc-headrow.has-jw-badges .jw-title-badges { margin-top: 12px; }
   @media (max-width: 600px) {
     .group-head-row.has-jw-badges { padding-bottom: 8px; }
     .group-head-row.has-jw-badges .jw-title-badges { margin-left: 15px; }
-    .song-acc-headrow.has-jw-badges .jw-title-badges { margin: 0 0 10px 12px; }
   }
   .song-detail-title-line { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 8px; }
   .song-detail-title-line-vi { margin: 0 0 3px; }
