@@ -11718,10 +11718,13 @@ function verifyDistribution(units, dist, pins) {
 
       var meaningHtml = item.meaning ? '<div class="study-flash-meaning"><span class="lyric-meaning-badge">' + TU("의미") + '</span> ' + escapeHtml(item.meaning) + '</div>' : '';
 
+      // [한자음] card: the example it reads (hanjaBackItems) is on the back too -- "ca sĩ  가수", the very record that is spoken
+      var exHtml = item.ex ? '<div class="study-flash-example"><span class="study-flash-ex-vi vn" lang="vi">' + escapeHtml(item.ex.vi) + '</span>' +
+        (item.ex.kr ? '<span class="study-flash-ex-kr">' + escapeHtml(item.ex.kr) + '</span>' : '') + '</div>' : '';
       var html = '<div class="study-progress">' + (studyState.idx + 1) + ' / ' + studyState.deck.length + '</div>';
       html += '<div class="study-flash-card" id="flash-card">' +
         '<div class="' + frontClass + '">' + escapeHtml(frontText) + '</div>' +
-        '<div class="' + backClass + '" id="flash-kr" style="display:none">' + escapeHtml(backText) + meaningHtml + '</div>' +
+        '<div class="' + backClass + '" id="flash-kr" style="display:none">' + escapeHtml(backText) + meaningHtml + exHtml + '</div>' +
         '<div class="study-flash-hint" id="flash-hint">' + (isRev ? TU("눌러서 베트남어 보기") : TU("눌러서 뜻 보기")) + '</div></div>';
       html += '<div class="study-flash-nav">' +
         '<button class="study-nav-btn" id="flash-prev" aria-label="' + TU("이전 카드") + '">' + chevronIcon("left") + '</button>' +

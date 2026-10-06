@@ -175,7 +175,8 @@ const clean = s => String(s || '').replace(/\s*\([^)]*\)\s*/g, ' ').replace(/\s*
         ok(await E(route === 'review' ? 'window.__hv.openReview()' : 'window.__hv.openCourse()'), `${n} ${route}: the 한자음 flashcard opens`);
         await E(`window.__hv.setting('both', 1, false)`);   // silent while looking for the card
         ok(await E(`window.__hv.seek('ca')`), `${n} ${route}: the card "ca" is in the deck`);
-        ok(await E(`document.getElementById('flash-kr').textContent`, false) === '노래 가(歌)', `${n} ${route}: the card shows the Korean meaning of its record`);
+        ok((await E(`document.getElementById('flash-kr').textContent`, false)).startsWith('노래 가(歌)'), `${n} ${route}: the card shows the Korean meaning of its record`);
+        ok(await E(`(()=>{const e=document.querySelector('#flash-kr .study-flash-example');return !!e&&e.textContent==='ca sĩ가수';})()`, false), `${n} ${route}: the back of the card shows the example: ca sĩ / 가수`);
         // ---- manual: flip says meaning + example; replay says the whole card ----
         for (const rep of [1, 2, 3]) {
           await E(`window.__hv.setting('', ${rep}, false)`);
@@ -268,6 +269,9 @@ const clean = s => String(s || '').replace(/\s*\([^)]*\)\s*/g, ' ').replace(/\s*
           await wait(`window.__tts.filter(x=>x.ev==='end').length>=${w.length}`); await sleep(300);
           const flip = spoken(await E('window.__tts.slice()', false));
           ok(eq(flip, w), `${loc} "${word}" back: ${fmt(flip)}  (want ${fmt(w)})`);
+          const shown = await E(`(()=>{const e=document.querySelector('#flash-kr .study-flash-example');return e?[...e.children].map(c=>c.textContent):null;})()`, false);
+          const wantShown = [W[word].example].concat(W[word].example_mean && W[word].example_mean[loc] ? [clean(W[word].example_mean[loc]).replace(/, /g, '/')] : []);
+          ok(shown && shown[0] === W[word].example && (shown[1] || '') === (wantShown[1] || '').replace(/\//g, '/') || (shown && shown[0] === W[word].example && (shown[1] || '').replace(/\s+/g, '') === (W[word].example_mean && W[word].example_mean[loc] || '').replace(/\s+/g, '')), `${loc} "${word}": the card shows its example ${JSON.stringify(shown)}`);
           await E('window.__tts.length=0; document.getElementById("flash-replay").click()'); await sleep(100);
           const wf = plan(word, loc, 2, '', true);
           await wait(`window.__tts.filter(x=>x.ev==='end').length>=${wf.length}`); await sleep(300);
