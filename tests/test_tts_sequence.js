@@ -12,6 +12,7 @@
 //   G. no speak() in the same tick as a cancel() (it waits SPEECH_CANCEL_SETTLE_MS)
 //   H. an utterance the engine drops without a trace is spoken once more, then skipped; the sequence is not lost
 //   I. 복습 UI: no [정답 시 다음 문제] on the flashcard (still there in the other modes); 자동 넘김 offers 1초 and defaults to it
+//   K. the gaps of a repeated bilingual read-all: repeat ~200 ms, Vietnamese -> target ~300 ms, row ~300 ms (measured from the real end)
 //   J. a manual next during the auto-advance wait cancels the timer (one move only); Apple: the page going to the background
 //      ends the speech and nothing comes back by itself
 // The fake engines are not Safari: the real iPhone / iPad / Mac check stays open (docs/pre_production_checklist.md).
@@ -283,6 +284,39 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
           const hideAt=Date.now(); await sleep(3000);
           return {startsAfter:window.__tts.filter(x=>x.ev==='start'&&x.t>hideAt+80).length, cancelled:window.__tts.some(x=>x.ev==='cancel'&&x.t>=hideAt-5)};})()`)) || {};
         ok(rJ2.startsAfter === 0 && rJ2.cancelled, `${n} J: Apple page in the background ends the speech ${JSON.stringify(rJ2)}`);
+      }
+      // ---- K. the gaps of a repeated, bilingual read-all (Original song 116, Korean UI, 반복 3): repeat ~200 ms, language ~300 ms, row ~300 ms ----
+      // measured from the engine's end to the next speak(): the timer only starts after the utterance has really finished
+      await load(prof, {'vn-app-vi-repeat': '3'});
+      const rK = (await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+        window.setLang('ko');await sleep(250);
+        document.querySelector('.tab-btn[data-tab="sentence"]').click();await sleep(200);
+        document.querySelector('.subtab-btn[data-sentence="song"]').click();await sleep(300);
+        document.querySelector('.song-kind-tabs [data-songkind="original"]').click();await sleep(300);
+        document.querySelector('.song-acc[data-song-id="osg-116"] .song-acc-head').click();await sleep(250);
+        const btn=document.querySelector('.song-acc[data-song-id="osg-116"] .song-full-links button.read-all-btn');
+        window.__tts.length=0; btn.click();
+        for(let i=0;i<400&&window.__tts.filter(x=>x.ev==='end').length<9;i++) await sleep(50);
+        const log=window.__tts.slice(); btn.click(); await sleep(100); return {log, repeat:localStorage.getItem('vn-app-vi-repeat')};})()`)) || {};
+      {
+        const ev = (rK.log || []).filter(x => x.ev === 'speak' || x.ev === 'end');
+        const spk = ev.filter(x => x.ev === 'speak'), gaps = [];
+        // gap i = engine end of utterance i -> speak() of utterance i+1 (Apple engines send onend 400 ms after the end: subtracted)
+        for (let i = 0; i + 1 < spk.length; i++) {
+          const end = ev.find(x => x.ev === 'end' && x.text === spk[i].text && x.t >= spk[i].t);
+          gaps.push(end ? spk[i + 1].t - end.t - (prof.apple ? 400 : 0) : null);
+        }
+        const langs = spk.map(x => x.lang);
+        console.log(`${n} K gaps (ms) repeat/repeat/language/row/repeat/repeat/language: ${gaps.slice(0, 7)}`);
+        // VI VI VI KO VI VI VI KO ...: utterances 0-2 Vietnamese, 3 Korean, 4-6 Vietnamese, 7 Korean
+        ok(langs.slice(0, 8).join() === 'vi-VN,vi-VN,vi-VN,ko-KR,vi-VN,vi-VN,vi-VN,ko-KR' && new Set(spk.slice(0, 8).map(x => x.text)).size === 4,
+          `${n} K: VI x3 then KO once, row after row (${langs.slice(0, 8)})`);
+        const mac = /Macintosh|Mac OS X/.test(prof.ua);   // (headless has no touch points: an iPhone UA is a desktop Mac to the page, as in the test's own fake)
+        const inR = (v, lo, hi) => v !== null && v >= lo && v <= hi;
+        ok(inR(gaps[0], 150, 380) && inR(gaps[1], 150, 380) && inR(gaps[4], 150, 380) && inR(gaps[5], 150, 380), `${n} K: repeat gap ~200 ms (was 450): ${gaps.slice(0, 6)}`);
+        ok(inR(gaps[2], mac ? 40 : 250, 480) && inR(gaps[6], mac ? 40 : 250, 480), `${n} K: Vietnamese -> Korean gap ~300 ms (macOS desktop keeps its shorter 60): ${gaps[2]} / ${gaps[6]}`);
+        ok(inR(gaps[3], 250, 480), `${n} K: Korean -> next row gap ~300 ms: ${gaps[3]}`);
+        ok(rK.repeat === '3' && !(rK.log || []).some(x => x.ev === 'dropped' || x.ev === 'ignored'), `${n} K: no dropped utterance`);
       }
       ok(!errs.length, `${n}: errors ${errs.join(' | ').slice(0, 400)}`);
     }

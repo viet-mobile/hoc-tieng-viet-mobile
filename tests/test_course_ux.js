@@ -76,6 +76,12 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
 
     // ============ 0. daily first entry (today's card opened, today's task marked, scrolled into view) ============
     const SMOKE = process.argv.includes('--smoke');
+    const B_navigate = async () => { await cdp.send('Page.navigate', {url: `http://127.0.0.1:${PORT}/jeonju/index.html`}); for (let i = 0; i < 240; i++) { if (await E("document.readyState==='complete'&&typeof window.setLang==='function'", false)) break; await sleep(250); } await sleep(1200); };
+    const SNAP = `(()=>{const c=document.querySelector('#panel-curriculum .curr-assign-card.curr-today-week'), d=document.querySelectorAll('#panel-curriculum .curr-today'), g=c&&c.parentElement.closest('[data-open]');
+      return {tab:document.querySelector('.tab-btn[aria-selected="true"]').dataset.tab, weeks:document.querySelectorAll('#panel-curriculum .curr-today-week').length, days:d.length, day:d[0]&&d[0].dataset.day, monday:c&&c.dataset.hwMonday,
+        open:c&&c.dataset.open, welcomeOpen:!!(g&&g.dataset.open==='true'), head:g?(g.querySelector('[aria-expanded]')||g).innerText.slice(0,100):'', expanded:g&&g.querySelector('[aria-expanded]').getAttribute('aria-expanded'),
+        visible:(()=>{const t=d[0]||(c&&c.querySelector('.curr-assign-toggle')), r=t&&t.getBoundingClientRect(); return !!r&&r.height>0&&r.top>=0&&r.bottom<=window.innerHeight+1;})()};})()`;
+    const RERENDER = `(async()=>{ window.__old=document.querySelector('#panel-curriculum .curr-assign-card'); window.__courseRerender(); await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))); await new Promise(r=>setTimeout(r,250)); return !document.contains(window.__old); })()`;
     const DAYNAME = ['월', '화', '수', '목', '금'];
     const LANDED = `(()=>{const c=document.querySelector('#panel-curriculum .curr-assign-card.curr-today-week'), d=document.querySelector('#panel-curriculum .curr-today'), t=d||(c&&c.querySelector('.curr-assign-toggle')), r=t&&t.getBoundingClientRect(), g=c&&c.parentElement.closest('[data-open]');
       return {tab:document.querySelector('.tab-btn[aria-selected="true"]').dataset.tab, monday:c&&c.dataset.hwMonday, open:c&&c.dataset.open, expanded:c&&c.querySelector('.curr-assign-toggle').getAttribute('aria-expanded'),
@@ -93,7 +99,14 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
       const lang = await E(`(()=>{const d=document.querySelector('#panel-curriculum .curr-today'); const b=getComputedStyle(d); return {bg:b.backgroundColor, shadow:b.boxShadow, anim:b.animationName};})()`, false);
       ok(lang && lang.bg !== 'rgba(0, 0, 0, 0)' && lang.anim === 'none', `highlight is a calm background/accent, no animation: ${JSON.stringify(lang)}`);
       if (SMOKE) {
-        // short release gate: injected Tuesday 2026-10-06 -> week 2026/10/03, Tuesday; nothing else
+        // short release gate: injected Tuesday 2026-10-06 -> week 2026/10/03, Tuesday, and the first-visit re-draw; nothing else
+      // the production sequence of a first visit: voice guide, today's card prepared, the regional answer re-draws [과정] (smoke case)
+      await load({storage: {}, nowMs: kstNoon('2026-10-06')});
+      const s1 = await E(SNAP) || {};
+      await E(RERENDER);
+      const s2 = await E(SNAP) || {};
+      ok(s1.tab === 'pron' && s1.weeks === 1 && s1.day === '화' && s1.welcomeOpen && s2.tab === 'pron' && s2.weeks === 1 && s2.days === 1 && s2.day === '화' && s2.welcomeOpen && /2026\/10\/03/.test(s2.head),
+        `first visit: week + 화 before AND after the re-draw ${JSON.stringify([s1, s2])}`);
         ok(!errs.length, `errors ${errs.join(' | ').slice(0, 500)}`);
         cdp.close(); chrome.kill(); server.kill();
         console.log(`checks run: ${checks}`);
@@ -143,6 +156,66 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
       await E(`(async()=>{document.querySelector('.tab-btn[data-tab="curriculum"]').click(); await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))); await new Promise(r=>setTimeout(r,200));})()`);
       const fv2 = await E(LANDED, false) || {};
       ok(fv2.tab === 'curriculum' && fv2.open === 'true' && fv2.day === '화' && fv2.visible, `after the guide, [과정] shows today's task: ${JSON.stringify(fv2)}`);
+      // ---- the production sequence of a first visit: the regional curriculum answer RE-DRAWS [과정] after the card was prepared ----
+      // (the local server has no /api/regional/curriculum: window.__courseRerender does what that answer does -- renders the section
+      // again, every card a new element, then puts today's state back)
+      await load({storage: {}, nowMs: kstNoon('2026-10-06')});     // fresh browser: no key, no saved place -> the voice guide
+      const a1 = await E(SNAP) || {};
+      ok(a1.tab === 'pron' && a1.weeks === 1 && a1.days === 1 && a1.day === '화' && a1.open === 'true' && a1.welcomeOpen, `first visit, before the re-draw: guide shown, week + 화 prepared ${JSON.stringify(a1)}`);
+      ok(await E(RERENDER) === true, 'the re-draw replaced the cards (new elements)');
+      const a2 = await E(SNAP) || {};
+      ok(a2.tab === 'pron' && a2.weeks === 1 && a2.days === 1 && a2.day === '화' && a2.open === 'true' && a2.welcomeOpen && a2.expanded === 'true' && /2026\/10\/03/.test(a2.head) && /환영합니다/.test(a2.head),
+        `first visit, AFTER the re-draw: still the 2026/10/03 welcome card open and 화 marked, the voice guide not left ${JSON.stringify(a2)}`);
+      await E(RERENDER); await E(RERENDER);
+      const a3 = await E(SNAP) || {};
+      ok(a3.weeks === 1 && a3.days === 1 && a3.day === '화' && a3.welcomeOpen && a3.tab === 'pron', `three re-draws: one week mark, one day mark, state kept ${JSON.stringify(a3)}`);
+      await E(`(async()=>{document.querySelector('.tab-btn[data-tab="curriculum"]').click(); await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))); await new Promise(r=>setTimeout(r,300));})()`);
+      const a4 = await E(SNAP) || {};
+      ok(a4.tab === 'curriculum' && a4.day === '화' && a4.welcomeOpen && a4.visible, `after the guide, [과정] shows the opened card and 화, in view ${JSON.stringify(a4)}`);
+      await E(RERENDER);
+      const a5 = await E(SNAP) || {};
+      ok(a5.tab === 'curriculum' && a5.days === 1 && a5.day === '화' && a5.welcomeOpen, `a re-draw while on [과정]: kept ${JSON.stringify(a5)}`);
+      // the learner goes elsewhere; a LATE answer must not pull them back, nor leave today's card folded for when they return
+      await E(`(async()=>{document.querySelector('.tab-btn[data-tab="sentence"]').click(); await new Promise(r=>setTimeout(r,300));})()`);
+      await E(RERENDER);
+      const a6 = await E(SNAP) || {};
+      ok(a6.tab === 'sentence' && a6.days === 1 && a6.welcomeOpen, `a late re-draw does not pull the learner back to [과정] (tab ${a6.tab}) and keeps the card ready ${JSON.stringify(a6)}`);
+      await E(`document.querySelector('.tab-btn[data-tab="curriculum"]').click()`);
+      ok((await E(SNAP) || {}).welcomeOpen === true, 'coming back to [과정]: today\'s card is open');
+      // a late answer on the voice guide, the learner already on another tab (never went to [과정])
+      await load({storage: {}, nowMs: kstNoon('2026-10-06')});
+      await E(`(async()=>{document.querySelector('.tab-btn[data-tab="vocab"]').click(); await new Promise(r=>setTimeout(r,300));})()`);
+      await E(RERENDER);
+      const a7 = await E(SNAP) || {};
+      ok(a7.tab === 'vocab' && a7.days === 1 && a7.welcomeOpen, `first visit, learner on [어휘], late re-draw: stays on [어휘] ${JSON.stringify(a7)}`);
+      // a returning visitor: landed on [과정], untouched -> a re-draw keeps the landing in view; touched elsewhere -> no pull back
+      await load({storage: {'vn-app-last-place-v1': SEEN}, nowMs: kstNoon('2026-10-06')});
+      await E(RERENDER);
+      const b1 = await E(SNAP) || {};
+      ok(b1.tab === 'curriculum' && b1.days === 1 && b1.day === '화' && b1.welcomeOpen && b1.visible, `returning visitor, re-draw: landing kept and in view ${JSON.stringify(b1)}`);
+      await E(`(async()=>{document.querySelector('.tab-btn[data-tab="sentence"]').click(); await new Promise(r=>setTimeout(r,300));})()`);
+      await E(RERENDER);
+      ok((await E(SNAP) || {}).tab === 'sentence', 'returning visitor who moved on: a re-draw does not pull back');
+      // the same day, second entry after all that: no landing, and a re-draw has nothing to put back
+      await E(`sessionStorage.setItem('__cuinit','1')`);
+      await B_navigate();
+      const c1 = await E(SNAP) || {};
+      ok(c1.tab === 'sentence' && c1.weeks === 0 && c1.days === 0, `same-day second entry: no landing ${JSON.stringify(c1)}`);
+      await E(RERENDER);
+      const c2 = await E(SNAP) || {};
+      ok(c2.tab === 'sentence' && c2.weeks === 0 && c2.days === 0, `same-day second entry, re-draw: nothing forced, nothing marked ${JSON.stringify(c2)}`);
+      // Saturday: the week card, no weekday, through a re-draw too
+      await load({storage: {}, nowMs: kstNoon('2026-10-10')});
+      await E(RERENDER);
+      const w1 = await E(SNAP) || {};
+      ok(w1.weeks === 1 && w1.days === 0 && w1.welcomeOpen && w1.monday === '2026-10-05', `Saturday, first visit, after the re-draw: the week open, no weekday marked ${JSON.stringify(w1)}`);
+      // a link (hash / query): no landing before, and a re-draw does not invent one
+      for (const [label, o] of [['hash', {hash: '#song-12'}], ['query', {query: '?review=1'}]]) {
+        await load(Object.assign({storage: {'vn-app-last-place-v1': SEEN}, nowMs: kstNoon('2026-10-06')}, o));
+        await E(RERENDER);
+        const d1 = await E(SNAP) || {};
+        ok(d1.tab === 'vocab' && d1.weeks === 0 && d1.days === 0, `a ${label} link: a re-draw does not start a landing ${JSON.stringify(d1)}`);
+      }
       // outside the course dates: nothing marked, the saved place is kept and the day is not used up
       await load({storage: {'vn-app-last-place-v1': SEEN}, nowMs: Date.parse('2030-01-02T03:00:00Z')});
       const out = await E(`({tab:document.querySelector('.tab-btn[aria-selected="true"]').dataset.tab, key:localStorage.getItem('vn-course-last-auto-open-date')})`, false) || {};

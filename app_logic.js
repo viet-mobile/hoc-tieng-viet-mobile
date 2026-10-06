@@ -2059,9 +2059,10 @@
   //   - after a cancel() the next speak() waits SPEECH_CANCEL_SETTLE_MS (WebKit drops a speak() right after cancel()).
   // A run is started by a real tap (or a key) -- Apple WebKit refuses speech nothing asked for -- and everything the run
   // plays after that (the next language, the repetitions, the next sentence) needs no new tap.
-  var VI_REPEAT_GAP_MS = 450;   // between repetitions of the same phrase
+  var VI_REPEAT_GAP_MS = 200;   // between repetitions of the same phrase (was 450)
   var IS_MAC_DESKTOP = /Macintosh|Mac OS X/i.test(navigator.userAgent || "") && !(navigator.maxTouchPoints > 1);
-  var READALL_STEP_GAP_MS = IS_MAC_DESKTOP ? 60 : 300;
+  var READALL_STEP_GAP_MS = IS_MAC_DESKTOP ? 60 : 300;   // Vietnamese -> the target language (and, with the target silenced, to the next row)
+  var READALL_ROW_GAP_MS = 300;                          // the target language -> the next row
   // iPhone/iPad/Mac run the same WebKit speech engine.
   var IS_APPLE_WEBKIT_SPEECH = IS_MAC_DESKTOP || /iPhone|iPad|iPod/i.test(navigator.userAgent || "") ||
     (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
@@ -2638,7 +2639,7 @@
       if (entry.mean) {
         var mo = readAllMeaningOpts(entry), mchunks = speechChunks(mo.text);
         mchunks.forEach(function (c, ci) {
-          items.push({ ei: ei, opts: Object.assign({}, mo, { text: c }), gap: ci === mchunks.length - 1 ? 300 : 0 });
+          items.push({ ei: ei, opts: Object.assign({}, mo, { text: c }), gap: ci === mchunks.length - 1 ? READALL_ROW_GAP_MS : 0 });
         });
       }
     });
@@ -14025,6 +14026,7 @@ function verifyDistribution(units, dist, pins) {
     activateTab("curriculum", false);
     scrollToCourseTarget();
     courseLanded = true;
+    courseLandActivate = true;
     return true;
   }
   function courseAutoOpenDone() {
@@ -14034,13 +14036,25 @@ function verifyDistribution(units, dist, pins) {
     try { window.localStorage.setItem(COURSE_AUTO_OPEN_KEY, courseTodayIso()); } catch (e) { /* no-op */ }
   }
   var courseTarget = null, coursePendingScroll = false;
-  // The live schedule of the regional worker arrives a moment after the page opened and re-draws [과정]: the landing is
-  // put back once for that, and only while the learner has not touched anything yet.
-  var courseLanded = false, courseLandTouched = false;
+  // The live schedule of the regional worker arrives a moment after the page opened and re-draws [과정] (every card is a new
+  // element): today's state is put back on the new cards. Two separate things:
+  //   courseLanded       today's card / day has been applied (landing, or prepared behind the first visit's voice guide) -> every
+  //                      re-draw gets it again (idempotent: the cards are new; a class added twice is one class)
+  //   courseLandActivate that landing moved the learner to [과정]; only then, only while the learner is still on [과정] and has
+  //                      touched nothing, the re-draw scrolls to today again -- never a move to another tab, and not when the learner
+  //                      went elsewhere (or is still on the voice guide: that scroll waits for the first move to [과정], coursePendingScroll)
+  // (the once-a-day rule is COURSE_AUTO_OPEN_KEY and is not involved: a re-draw is not a second landing)
+  var courseLanded = false, courseLandActivate = false, courseLandTouched = false;
   ["pointerdown", "keydown", "touchstart", "wheel"].forEach(function (type) {
     document.addEventListener(type, function (e) { if (e.isTrusted) courseLandTouched = true; }, { capture: true, passive: true });
   });
-  function reapplyCourseLanding() { if (courseLanded && !courseLandTouched) goToTodayCourse(); }
+  function reapplyCourseLanding() {
+    if (!courseLanded || !prepareTodayCourse()) return;
+    // only while the learner is still where the landing took them ([과정]) and has touched nothing: scroll to today again; never a
+    // move to another tab (a late answer does not pull the learner back)
+    if (courseLandActivate && !courseLandTouched && appRoot && appRoot.dataset.activeTab === "curriculum") scrollToCourseTarget();
+  }
+  window.__courseRerender = function () { renderCurrWeek16(); reapplyCourseLanding(); };   // test hook: what the regional answer does
   // Default place: [발음] > [설정]. On a first visit, the device's own "add a Vietnamese voice"
   // guide is opened and scrolled into view.
   function goToDefaultPlace(openDeviceGuide) {
@@ -14064,7 +14078,7 @@ function verifyDistribution(units, dist, pins) {
       // opened and marked, and the scroll to it waits for the learner's first move to [과정] (activateTab).
       var dailyCourse = window.SITE_PROFILE === "jeonju" && isDefaultLanding() && !courseAutoOpenDone();
       if (IS_FIRST_VISIT) {
-        if (dailyCourse && prepareTodayCourse()) { coursePendingScroll = true; markCourseAutoOpen(); }
+        if (dailyCourse && prepareTodayCourse()) { coursePendingScroll = true; courseLanded = true; markCourseAutoOpen(); }
         goToDefaultPlace(true);
         return;
       }
