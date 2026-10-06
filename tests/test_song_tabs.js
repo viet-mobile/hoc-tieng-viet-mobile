@@ -140,7 +140,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         r.links116.every(x => x.includes('_blank noopener noreferrer')), n + ': OSG 116 links ' + r.links116);
       ok(r.labels116.length > 0 && r.labelBtns === 0, n + ': structure labels without buttons');
       ok(r.tts.length === 2 && r.tts[0].lang === 'vi-VN' && r.tts[1].lang === 'ko-KR' && !/^\s*\d+\./.test(r.tts[0].text) && !/^\s*\d+\./.test(r.tts[1].text) &&
-        r.viLine.indexOf(r.tts[0].text.slice(0, 6)) >= 0, n + ': line listen ' + JSON.stringify(r.tts) + ' / ' + r.viLine);
+        r.viLine.indexOf(r.tts[0].text.replace(/\bzan\b/g, 'gian').slice(0, 6)) >= 0, n + ': line listen ' + JSON.stringify(r.tts) + ' / ' + r.viLine);
       ok(r.aria.join() === '베트남어 구절 듣기,발음 듣기', n + ': aria ' + r.aria);
       ok(r.closed116 === 'false/0', n + ': closing removes the lyrics ' + r.closed116);
       ok(r.noVi.missing && r.noVi.viMsg && r.noVi.viLink.length === 1 && r.noVi.koLines > 0, n + ': song without Vietnamese ' + JSON.stringify(r.noVi));

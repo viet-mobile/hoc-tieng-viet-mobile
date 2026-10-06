@@ -13,6 +13,7 @@
 //   H. an utterance the engine drops without a trace is spoken once more, then skipped; the sequence is not lost
 //   I. 복습 UI: no [정답 시 다음 문제] on the flashcard (still there in the other modes); 자동 넘김 offers 1초 and defaults to it
 //   K. the gaps of a repeated bilingual read-all: repeat ~50 ms, Vietnamese -> target ~120 ms, row ~200 ms (measured from the real end)
+//   M. [복습] [플래시카드] 반복 듣기: Vietnamese repeats chained at once (no timer, no cancel), the pause before the answer is only 자동 넘김
 //   J. a manual next during the auto-advance wait cancels the timer (one move only); Apple: the page going to the background
 //      ends the speech and nothing comes back by itself
 // The fake engines are not Safari: the real iPhone / iPad / Mac check stays open (docs/pre_production_checklist.md).
@@ -177,12 +178,18 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
       // ---- D. flashcard: 반복 2 + 자동 넘김 (1 s) card after card ----
       await load(prof, {'vn-app-vi-repeat': '2', 'vn-app-auto-adv': AUTO(1)});
       const rD = (await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-        window.__tts.length=0; await (${openFlash}); const card0=${cardNo}; let w=0; while(window.__tts.filter(x=>x.ev==='start'&&x.lang==='ko-KR').length<2&&w<25000){await sleep(100);w+=100;} await sleep(300);
+        window.__tts.length=0; await (${openFlash}); const card0=${cardNo}; let w=0; const koRuns=()=>{let n=0,prev='';for(const x of window.__tts.filter(x=>x.ev==='start')){if(x.lang==='ko-KR'&&prev!=='ko-KR')n++;prev=x.lang;}return n;}; while(koRuns()<2&&w<25000){await sleep(100);w+=100;} await sleep(300);   // two Korean RUNS (a long meaning is several utterances)
         return {log:window.__tts.slice(), card0, card1:${cardNo}};})()`)) || {};
       if (process.env.TTS_DEBUG) console.log(n, 'D speak/cancel:', JSON.stringify((rD.log || []).filter(x => x.ev === 'speak' || x.ev === 'cancel').map(x => [x.ev, String(x.text || '').slice(0, 24), x.lang])));
       const dl = rD.log || [], dStarts = starts(dl), dK = dStarts.findIndex(x => x.lang === 'ko-KR');
-      const sd = dStarts.slice(Math.max(0, dK - 2)).map(x => x.lang).join(',');   // from the 2 repetitions before the first Korean
-      ok(dK >= 2 && /^vi-VN,vi-VN,ko-KR,vi-VN,vi-VN,ko-KR/.test(sd), `${n} D: VI VI KO per card, card after card: ${sd}`);
+      // A card is one run of Vietnamese (the text x 반복 2) then one run of Korean. A text longer than SPEECH_CHUNK_MAX (160) is spoken a
+      // sentence at a time, so a long card of the shuffled deck has several utterances per run: the runs are judged, not a fixed count.
+      const dRunsOf = list => { const runs = []; list.forEach(x => { const q = runs[runs.length - 1]; if (q && q.lang === x.lang) q.items.push(x.text); else runs.push({lang: x.lang, items: [x.text]}); }); return runs; };
+      const dRuns = dRunsOf(dStarts.slice(dK >= 2 ? 0 : 0));
+      const viRunOk = r => r.lang === 'vi-VN' && r.items.length % 2 === 0 && r.items.slice(0, r.items.length / 2).join('|') === r.items.slice(r.items.length / 2).join('|');
+      const koRunOk = r => r.lang === 'ko-KR' && r.items.every((x, i) => i === 0 || x !== r.items[i - 1]);
+      const sd = dRuns.slice(0, 5).map(r => r.lang.slice(0, 2) + 'x' + r.items.length).join(',');
+      ok(dK >= 2 && dRuns.length >= 4 && viRunOk(dRuns[0]) && koRunOk(dRuns[1]) && viRunOk(dRuns[2]) && koRunOk(dRuns[3]), `${n} D: card = Vietnamese x2 then Korean once, card after card: ${sd}`);
       const lastEndBeforeKo = dK >= 0 ? dl.filter(x => x.ev === 'end' && x.t < dStarts[dK].t).pop() : null;
       const gapKo = lastEndBeforeKo ? dStarts[dK].t - lastEndBeforeKo.t : -1;
       ok(gapKo >= 900 && gapKo <= 2600, `${n} D: 1 s between the last Vietnamese and the Korean: ${gapKo} ms`);
@@ -254,7 +261,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         return out;})()`)) || {};
       ok(rI.flashToggle === false && rI.flashAgain === false, `${n} I: no 정답 시 다음 문제 on the flashcard ${JSON.stringify(rI)}`);
       ok(rI.look === true && rI.order === true && rI.type === true, `${n} I: still there in the other modes ${JSON.stringify(rI)}`);
-      ok(/^1,3,5,8,10,15$/.test(rI.opts || '') && rI.def === '1', `${n} I: 자동 넘김 1초 default ${rI.opts} / ${rI.def}`);
+      ok(/^0\.3,0\.5,1,3,5,8,10,15$/.test(rI.opts || '') && rI.def === '1', `${n} I: 자동 넘김 1초 default ${rI.opts} / ${rI.def}`);
       // a saved valid choice is kept; a saved invalid one falls back to 1 s
       await load(prof, {'vn-app-auto-adv': JSON.stringify({enabled: false, nextOnCorrect: false, seconds: 8})});
       const keep = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));document.querySelector('.tab-btn[data-tab="review"]').click();await sleep(500);return document.getElementById('auto-advance-seconds').value;})()`);
@@ -352,6 +359,27 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         const s2=document.getElementById('auto-card-repeats'); s2.value='10'; s2.dispatchEvent(new Event('change',{bubbles:true})); await sleep(100);
         o.saved=JSON.parse(localStorage.getItem('vn-app-auto-adv')).cardRepeats; return o;})()`)) || {};
       ok(rL2.disabled === true && rL2.value === '4' && rL2.enabled === true && rL2.saved === 10, `${n} L: disabled while 자동 넘김 is off, enabled with it, the choice is saved ${JSON.stringify(rL2)}`);
+      // ---- M. [복습] [플래시카드] 반복 듣기: Vietnamese repeats chained at once (0 ms timer), no cancel between them; the pause before the answer is only 자동 넘김 ----
+      await load(prof, {'vn-app-vi-repeat': '3', 'vn-app-auto-adv': JSON.stringify({enabled: true, nextOnCorrect: false, seconds: 0.5, cardRepeats: 1})});
+      const rM = (await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+        await (${openFlash});
+        document.querySelector('.subtab-btn[data-review="vocab"]').click(); await sleep(500);
+        const fb=document.querySelector('.study-mode-btn[data-mode="flash"]'); if(fb.getAttribute('aria-selected')!=='true') fb.click(); await sleep(300);
+        window.__tts.length=0; document.getElementById('flash-next').click();
+        for(let i=0;i<500&&window.__tts.filter(x=>x.ev==='end').length<4;i++) await sleep(40);
+        await sleep(200);
+        return {log:window.__tts.slice(), opts:[...document.getElementById('auto-advance-seconds').options].map(o=>o.value).join()};})()`)) || {};
+      {
+        const ev = (rM.log || []), spk = ev.filter(x => x.ev === 'speak'), ends = ev.filter(x => x.ev === 'end');
+        const adj = (a, b) => b && a ? b.t - a.t - (prof.apple ? 400 : 0) : null;   // Apple engines send onend 400 ms late in this fake
+        const g01 = adj(ends[0], spk[1]), g12 = adj(ends[1], spk[2]), lang = adj(ends[2], spk[3]);
+        ok(spk.length >= 4 && spk[0].lang === 'vi-VN' && spk[1].text === spk[0].text && spk[2].text === spk[0].text && spk[3].lang !== 'vi-VN', `${n} M: VI VI VI, then the meaning ${JSON.stringify(spk.slice(0, 4).map(x => x.text + '/' + x.lang))}`);
+        ok(g01 !== null && g01 <= (prof.apple ? 140 : 25) && g12 <= (prof.apple ? 140 : 25), `${n} M: VI -> VI gap ${g01} / ${g12} ms (no timer; Apple keeps its 90 ms engine floor)`);
+        ok(!ev.slice(ev.indexOf(spk[0]), ev.indexOf(spk[2]) + 1).some(x => x.ev === 'cancel'), `${n} M: no cancel() between the repetitions`);
+        ok(lang !== null && lang >= 400 && lang <= 900, `${n} M: question -> answer pause is the 자동 넘김 wait (0.5 s): ${lang} ms`);
+        ok(/^0\.3,0\.5,1,/.test(rM.opts || ''), `${n} M: 자동 넘김 offers 0.3 s and 0.5 s ${rM.opts}`);
+        console.log(`${n} M gaps (ms): VI-VI ${g01}/${g12}, question->answer ${lang}`);
+      }
       ok(!errs.length, `${n}: errors ${errs.join(' | ').slice(0, 400)}`);
     }
     cdp.close();

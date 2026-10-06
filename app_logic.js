@@ -118,7 +118,8 @@
   // as a bare, dangling "· " with nothing after it.
   function titleTrSpan(title) {
     var tr = T(title);
-    return tr ? ' <span class="lff-title-translation">· ' + escapeHtml(tr) + '</span>' : '';
+    if (currentLang === "vi" || tr === title.vi) return "";   // the Vietnamese UI has no second language: the title is not shown twice
+    return tr ? '<span class="lff-title-translation bilingual-title-target">' + escapeHtml(tr) + '</span>' : '';
   }
   function Tstrict(field) {
     // Review also rejects unlocalized plain-string meanings outside Korean.
@@ -2014,6 +2015,12 @@
     // same syllable written as the common given name "Ngân" is read correctly, so speech uses that
     // spelling; the text on screen is unchanged.
     out = out.replace(/(^|[\s,.;:!?"“(])ngân(?=$|[\s,.;:!?"”)])/g, "$1Ngân");
+    // "gian" (thời gian, không gian, trung gian, nhân gian ...): between two syllables the Vietnamese voices render the "gi" of
+    // this syllable as a weak voiced glide with no friction -- "thời gian" is heard as "thời lan" (measured with the macOS voice
+    // Linh: no fricative at all, while "zan" has the /z/; "gian" alone is fine). "gi" is the /z/ (north) / /j/ (south) of "d", and
+    // the letter z gives that fricative: speech reads "zan" (the screen keeps "gian"). Whole syllable only: "giang", "giàn"... and
+    // longer words are not touched.
+    out = out.replace(/(^|[\s,.;:!?"“(])(g)ian(?=$|[\s,.;:!?"”)])/gi, function (m, pre, g) { return pre + (g === "G" ? "Z" : "z") + "an"; });
     // Hyphenated foreign proper nouns (people/place names, Bible book names) transliterated into
     // Vietnamese syllable-by-syllable -- "Giê-hô-va", "Giê-su", "Lê-vi", "Ki-tô" and the like --
     // read unnaturally with a hard pause on every hyphen. Vietnamese TTS reads these smoothly
@@ -2064,12 +2071,19 @@
   var VI_REPEAT_GAP_MS = 50;    // between repetitions of the same phrase (450 -> 200 -> 50; Apple keeps its own SPEECH_MIN_GAP_MS floor)
   var IS_MAC_DESKTOP = /Macintosh|Mac OS X/i.test(navigator.userAgent || "") && !(navigator.maxTouchPoints > 1);
   var READALL_STEP_GAP_MS = IS_MAC_DESKTOP ? 60 : 120;   // Vietnamese -> the target language (and, with the target silenced, to the next row)
+  // [복습] [플래시카드]: its own, shorter gaps: the same Vietnamese repeated is chained with NO timer at all (0 ms: the next
+  // utterance is spoken from the previous one's onend), Vietnamese -> meaning 60 ms, meaning -> the example of a 한자음 card 120 ms.
+  // Apple keeps its engine floor (SPEECH_MIN_GAP_MS), which is not a delay of ours.
+  var FLASH_GAPS = { repeat: 0, language: 60, row: 120 };
   var READALL_ROW_GAP_MS = 200;                          // the target language -> the next row
   // iPhone/iPad/Mac run the same WebKit speech engine.
   var IS_APPLE_WEBKIT_SPEECH = IS_MAC_DESKTOP || /iPhone|iPad|iPod/i.test(navigator.userAgent || "") ||
     (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var SPEECH_CANCEL_SETTLE_MS = IS_APPLE_WEBKIT_SPEECH ? 300 : 30;
-  var SPEECH_MIN_GAP_MS = IS_APPLE_WEBKIT_SPEECH ? 90 : 0;               // between the end of one utterance and the next speak()
+  // Chrome / Edge on a Mac use their own engine, not WebKit's: the WebKit floor does not apply there (measured with the real macOS voice
+  // Linh in Chrome: utterance onend -> the next onstart is 1-5 ms when the next speak() follows at once). Safari / every iOS browser keep it.
+  var IS_CHROMIUM_ENGINE = /Chrome\/|Edg\//.test(navigator.userAgent || "") && !/CriOS|EdgiOS|FxiOS|OPiOS/.test(navigator.userAgent || "");
+  var SPEECH_MIN_GAP_MS = IS_APPLE_WEBKIT_SPEECH && !IS_CHROMIUM_ENGINE ? 90 : 0;   // between the end of one utterance and the next speak()
   var SPEECH_START_TIMEOUT_MS = IS_APPLE_WEBKIT_SPEECH ? 5000 : 3500;    // a voice may need seconds to load before onstart
   // Watchdog for an utterance that started but never ended: generous, so a slow voice is not cut off (the Apple numbers
   // are the estimate of the spoken length with some room; elsewhere onend is reliable and this is only the safety net).
@@ -2360,12 +2374,13 @@
   // through this one function, so the setting takes effect everywhere Vietnamese is read aloud
   // (전체 듣기's own Vietnamese step is handled separately by readAllItems(), since it chains
   // through a shared token/state object rather than a plain callback).
-  function speak(text, onDone) {
+  function speak(text, onDone, gaps) {
     if (readAllState.id) stopReadAllSequence();
     var o = targetSpeechOpts(text), chunks = speechChunks(o.text), items = [];
+    var repeatGap = gaps ? gaps.repeat : VI_REPEAT_GAP_MS;
     for (var r = 0; r < viRepeatCount; r++) {
       chunks.forEach(function (c, ci) {
-        items.push({ opts: Object.assign({}, o, { text: c }), gap: (ci === chunks.length - 1 && r < viRepeatCount - 1) ? VI_REPEAT_GAP_MS : 0 });
+        items.push({ opts: Object.assign({}, o, { text: c }), gap: (ci === chunks.length - 1 && r < viRepeatCount - 1) ? repeatGap : 0 });
       });
     }
     playSpeechRun(items, { onDone: onDone });
@@ -2626,22 +2641,23 @@
   // 전체 듣기 = ONE run on every platform: per entry the Vietnamese (viRepeatCount times), then its meaning in the UI
   // language, one utterance at a time with the same gaps as before. (Not a queue handed to the engine at once: Apple WebKit
   // stalls after the first utterance of such a queue, and mixing voices in it makes it worse.)
-  function readAllItems(texts) {
+  function readAllItems(texts, gaps) {
     var items = [];
+    var repeatGap = gaps ? gaps.repeat : VI_REPEAT_GAP_MS, languageGap = gaps ? gaps.language : READALL_STEP_GAP_MS, rowGap = gaps ? gaps.row : READALL_ROW_GAP_MS;
     texts.forEach(function (entry, ei) {
       if (entry.vi) {
         var o = targetSpeechOpts(entry.vi), chunks = speechChunks(o.text);
         for (var r = 0; r < viRepeatCount; r++) {
           chunks.forEach(function (c, ci) {
             var lastChunk = ci === chunks.length - 1;
-            items.push({ ei: ei, opts: Object.assign({}, o, { text: c }), gap: !lastChunk ? 0 : (r < viRepeatCount - 1 ? VI_REPEAT_GAP_MS : READALL_STEP_GAP_MS) });
+            items.push({ ei: ei, opts: Object.assign({}, o, { text: c }), gap: !lastChunk ? 0 : (r < viRepeatCount - 1 ? repeatGap : languageGap) });
           });
         }
       }
       if (entry.mean) {
         var mo = readAllMeaningOpts(entry), mchunks = speechChunks(mo.text);
         mchunks.forEach(function (c, ci) {
-          items.push({ ei: ei, opts: Object.assign({}, mo, { text: c }), gap: ci === mchunks.length - 1 ? READALL_ROW_GAP_MS : 0 });
+          items.push({ ei: ei, opts: Object.assign({}, mo, { text: c }), gap: ci === mchunks.length - 1 ? rowGap : 0 });
         });
       }
     });
@@ -8171,10 +8187,11 @@ function verifyDistribution(units, dist, pins) {
         var catLabel = cat ? T(cat) : Tstrict(a.category);
         if (catLabel) head += '<span class="culture-category-badge">' + escapeHtml(catLabel) + '</span>';
       }
-      return head + '<span class="culture-card-title">' +
-        (cardTitle && currentLang !== "vi" ? '<span class="ko">' + escapeHtml(cardTitle) + '</span> ' +
-          (a.titleVi ? '<span class="vi vn">(' + escapeHtml(a.titleVi) + ')</span>' : '')
-          : '<span class="vi vn">' + escapeHtml(a.titleVi || cardTitle || "") + '</span>') +
+      // Vietnamese title, then the learner language's (the same order, size and weight as every bilingual title)
+      return head + '<span class="culture-card-title bilingual-title">' +
+        (cardTitle && currentLang !== "vi" ? (a.titleVi ? '<span class="vi vn bilingual-title-vi">' + escapeHtml(a.titleVi) + '</span>' : '') +
+          '<span class="ko bilingual-title-target">' + escapeHtml(cardTitle) + '</span>'
+          : '<span class="vi vn bilingual-title-vi">' + escapeHtml(a.titleVi || cardTitle || "") + '</span>') +
         '</span>';
     }
     var html = "";
@@ -8654,7 +8671,7 @@ function verifyDistribution(units, dist, pins) {
       var readPairs = [[conv.title.vi, T(conv.title)]].concat(lineUnits.map(function (line) { return [line.vi, line.kr]; }));
       html += '<div class="group-card" data-open="' + (openSyls["nb" + ci] ? "true" : "false") + '" data-syl="nb' + ci + '" data-anchor="neighbor-' + (ci + 1) + '">' +
         '<div class="group-head-row"><button class="group-head"><span><span class="syl">' + (ci + 1) + '.</span> ' +
-        '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(conv.title.vi) + '</span>' + titleTrSpan(conv.title) + '</span></span>' +
+        '<span class="lff-title bilingual-title"><span class="lff-title-vi bilingual-title-vi">' + escapeHtml(conv.title.vi) + '</span>' + titleTrSpan(conv.title) + '</span></span>' +
         currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
         '<div class="group-body"><div class="talk-lines">';
       lineUnits.forEach(function (l) {
@@ -8719,7 +8736,7 @@ function verifyDistribution(units, dist, pins) {
       var readPairs = [[conv.title.vi, dailyMeaning(conv, conv.title)]].concat(turns.map(function (t) { return [t.vi, t.kr]; }));
       html += '<div class="group-card" data-open="' + (openSyls["dc" + ci] ? "true" : "false") + '" data-syl="dc' + ci + '" data-anchor="daily-' + (ci + 1) + '">' +
         '<div class="group-head-row"><button class="group-head"><span><span class="syl">' + (ci + 1) + '.</span> ' +
-        '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(conv.title.vi) + '</span>' + (currentLang === "vi" ? "" : titleTrSpan(conv.title)) + '</span></span>' +
+        '<span class="lff-title bilingual-title"><span class="lff-title-vi bilingual-title-vi">' + escapeHtml(conv.title.vi) + '</span>' + (currentLang === "vi" ? "" : titleTrSpan(conv.title)) + '</span></span>' +
         currChev() + '</button>' + readAllButtonHtml(readPairs) + '</div>' +
         '<div class="group-body"><div class="talk-lines">';
       turns.forEach(function (t) {
@@ -8950,7 +8967,7 @@ function verifyDistribution(units, dist, pins) {
         var label = lffRecordLabel(rec);
         var recTitleTr = T(rec.title);
         var titleHtml = rec.kind === "lesson"
-          ? '<span class="lff-title"><span class="lff-title-vi">' + escapeHtml(titleVi) + '</span>' + titleTrSpan(rec.title) + '</span>'
+          ? '<span class="lff-title bilingual-title"><span class="lff-title-vi bilingual-title-vi">' + escapeHtml(titleVi) + '</span>' + titleTrSpan(rec.title) + '</span>'
           : '<span class="cnt">' + escapeHtml(titleVi) + (recTitleTr ? ' · ' + escapeHtml(recTitleTr) : '') + '</span>';
         var lffBadges = jwTitleBadgesHtml(lffJwDocid(rec));
         html += '<div class="group-card" data-open="' + (openSyls["lff" + ri] ? "true" : "false") + '" data-syl="lff' + ri + '" data-anchor="lff' + ri + '">' +
@@ -9020,7 +9037,7 @@ function verifyDistribution(units, dist, pins) {
       html += '<div class="group-card" data-open="' + (openSyls["lpd" + ri] ? "true" : "false") + '" data-syl="lpd' + ri + '" data-anchor="lpd' + ri + '">' +
         '<div class="group-head-row' + (lpdBadges ? ' has-jw-badges' : '') + '"><button class="group-head"><span>' +
         '<span class="syl">' + escapeHtml(lpdRecordLabel(rec)) + '</span> ' +
-        '<span class="lpd-title' + (rec.kind === "appendix" ? " is-appendix-title" : "") + '"><span class="lpd-title-vi">' + escapeHtml(rec.title.vi) + '</span>' + (T(rec.title) ? ' <span class="lpd-title-translation">· ' + escapeHtml(T(rec.title)) + '</span>' : '') + '</span>' +
+        '<span class="lpd-title bilingual-title' + (rec.kind === "appendix" ? " is-appendix-title" : "") + '"><span class="lpd-title-vi bilingual-title-vi">' + escapeHtml(rec.title.vi) + '</span>' + (T(rec.title) && currentLang !== "vi" && T(rec.title) !== rec.title.vi ? '<span class="lpd-title-translation bilingual-title-target">' + escapeHtml(T(rec.title)) + '</span>' : '') + '</span>' +
         '</span>' + currChev() + '</button>' + lpdBadges + readAllButtonHtml(readPairs) + '</div>' +
         '<div class="group-body"><div class="talk-lines">';
       lineUnits.forEach(function (l) {
@@ -9388,8 +9405,8 @@ function verifyDistribution(units, dist, pins) {
         '<div class="group-head-row' + (wtBadges ? ' has-jw-badges' : '') + '"><button class="group-head"><span class="wt-head">' +
         (weekLabel ? '<span class="syl">' + escapeHtml(weekLabel) + '</span> ' : '') +
         (dateRangeTr ? '<span class="syl wt-date">' + escapeHtml(dateRangeTr) + '</span> ' : '') +
-        (articleVi ? '<span class="wt-article"><span class="syl wt-article-vi">' + escapeHtml(articleVi) + '</span>' +
-          (articleTr ? ' <span class="wt-article-tr">' + escapeHtml(articleTr) + '</span>' : '') + '</span> ' : '') +
+        (articleVi ? '<span class="wt-article bilingual-title"><span class="wt-article-vi bilingual-title-vi">' + escapeHtml(articleVi) + '</span>' +
+          (articleTr ? '<span class="wt-article-tr bilingual-title-target">' + escapeHtml(articleTr) + '</span>' : '') + '</span> ' : '') +
         '<span class="cnt">' + wk.words.length + (wordsView ? TU("개 단어") : TU("개 문장")) + '</span></span>' +
         '<span class="chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></button>' +
         wtBadges + readAllButtonHtml(readAllEntries) + '</div>' +
@@ -11133,7 +11150,7 @@ function verifyDistribution(units, dist, pins) {
     // as-long-as-it-takes audio. Each mode supplies a small "reveal" function (revealFlash/
     // revealLook/revealMcq/revealOrder/revealType) that does that mode's own reveal+speak+advance;
     // armAutoReveal()/speakThenAdvance() below are the shared plumbing every mode calls into.
-    var AUTO_ADV_SECONDS_OPTS = [1, 3, 5, 8, 10, 15];
+    var AUTO_ADV_SECONDS_OPTS = [0.3, 0.5, 1, 3, 5, 8, 10, 15];   // the pause between a question and its answer (1 s by default)
     var autoAdvanceEnabled = false;
     var autoNextOnCorrect = false;
     // [플래시카드] 자동 넘김: how many times in all one card is played (question, pause, answer) before the next card: 1-10
@@ -11207,9 +11224,10 @@ function verifyDistribution(units, dist, pins) {
     // autoAdvanceSeconds window entirely: the learner now gets the full playback PLUS a full
     // autoAdvanceSeconds to answer, rather than the two overlapping and the audio losing the race.
     function speakItemThenArm(vi, revealFn) {
+      var gaps = studyState.mode === "flash" ? FLASH_GAPS : undefined;
       if (reviewTabIsActive() && !isMuted("vi")) {
-        if (autoAdvanceEnabled) speak(vi, function () { if (reviewTabIsActive()) armAutoReveal(revealFn); });
-        else speak(vi);
+        if (autoAdvanceEnabled) speak(vi, function () { if (reviewTabIsActive()) armAutoReveal(revealFn); }, gaps);
+        else speak(vi, undefined, gaps);
       } else if (autoAdvanceEnabled) {
         // Background pre-render (see reviewTabIsActive()'s own comment), or 묵음 is on -- either
         // way no audio plays, so there's nothing to wait on; arm immediately same as before,
@@ -11275,7 +11293,7 @@ function verifyDistribution(units, dist, pins) {
         else if (studyState.current) armAutoReveal(currentRevealFn());
       });
       document.getElementById("auto-advance-seconds").addEventListener("change", function (e) {
-        autoAdvanceSeconds = parseInt(e.target.value, 10) || 1;
+        autoAdvanceSeconds = parseFloat(e.target.value) || 1;
         saveAutoAdvancePref();
         if (autoAdvanceEnabled && studyState.current) armAutoReveal(currentRevealFn());
       });
@@ -11701,7 +11719,7 @@ function verifyDistribution(units, dist, pins) {
       else if (isRev) entries.push([mv ? "" : item.vi, ""]);
       else entries.push(["", mm ? "" : gloss]);
       entries.push([mv ? "" : item.ex.vi, mm || !item.ex.kr ? "" : item.ex.kr]);   // (normalizeReadAllEntry: [vi, meaning] pairs)
-      return readAllItems(entries.map(normalizeReadAllEntry).filter(Boolean));
+      return readAllItems(entries.map(normalizeReadAllEntry).filter(Boolean), FLASH_GAPS);
     }
     // Plays it as ONE run (a new card / a manual next replaces it: nothing of the old card is said later) and calls doneFn once
     // everything, example included, has been said.
@@ -11776,7 +11794,7 @@ function verifyDistribution(units, dist, pins) {
           srsCardSeen(item);
           if (item.ex) speakHanjaBack(item, isRev, false);
           else if (isRev) {
-            if (!isMuted("vi")) speak(item.vi);
+            if (!isMuted("vi")) speak(item.vi, undefined, FLASH_GAPS);
           } else {
             if (!isMuted("meaning")) speakMeaning(item.kr);
           }
@@ -11802,10 +11820,10 @@ function verifyDistribution(units, dist, pins) {
         var krEl = document.getElementById("flash-kr"), revealed = !!(krEl && krEl.style.display !== "none");
         if (item.ex && revealed) speakHanjaBack(item, isRev, true);   // the whole card: headword, meaning, example, example meaning
         else if (isRev) {
-          if (revealed) speak(item.vi);
+          if (revealed) speak(item.vi, undefined, FLASH_GAPS);
           else speakMeaning(item.kr);
         } else {
-          speak(item.vi);
+          speak(item.vi, undefined, FLASH_GAPS);
         }
       });
       document.getElementById("flash-shuffle").addEventListener("click", function (e) { e.stopPropagation(); startFlash(); });
@@ -14044,6 +14062,7 @@ function verifyDistribution(units, dist, pins) {
     return { monday: d.toISOString().slice(0, 10), day: back < 5 ? back : -1 };
   }
   window.__courseWeekOf = courseWeekOf;       // test hooks
+  window.__prepareSpeechText = prepareSpeechText;
   window.__courseTodayIso = courseTodayIso;
   var COURSE_DAY_KO = ["월", "화", "수", "목", "금"];
   function isDefaultLanding() {

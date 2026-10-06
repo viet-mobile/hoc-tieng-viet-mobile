@@ -193,6 +193,16 @@ const clean = s => String(s || '').replace(/\s*\([^)]*\)\s*/g, ' ').replace(/\s*
           const full = spoken(await E('window.__tts.slice()', false));
           ok(eq(full, plan('ca', 'ko', rep, '', true)), `${n} ${route} repeat ${rep} whole card: ${fmt(full)}`);
           if (rep <= 2 && !apple) console.log(`${n} ${route} ca repeat ${rep}: ${fmt(full)}`);
+          if (rep === 3) {
+            // the gaps of the whole card (engine end -> next speak), flashcard profile: 0 / 60 / 120 ms (Apple: +90 ms engine floor, onend 400 ms late in the fake)
+            const lg = await E('window.__tts.slice()', false), sp2 = lg.filter(x => x.ev === 'speak'), en2 = lg.filter(x => x.ev === 'end');
+            const gp = sp2.slice(1).map((x, i) => en2[i] ? x.t - en2[i].t - (apple ? 400 : 0) : null);
+            // ca ca ca | 노래 가 | ca sĩ ca sĩ ca sĩ | 가수  ->  VI-VI, VI-VI, VI->meaning, meaning->example, ex-ex, ex-ex, ex->meaning
+            const lim = (a, b) => gp[a] !== null && gp[a] <= b;
+            ok(sp2.length === 8 && lim(0, apple ? 140 : 25) && lim(1, apple ? 140 : 25) && lim(2, apple ? 160 : 90) && lim(3, apple ? 200 : 150) && lim(4, apple ? 140 : 25) && lim(5, apple ? 140 : 25) && lim(6, apple ? 160 : 90),
+              `${n} ${route} repeat 3: gaps ca-ca ${gp[0]}/${gp[1]}, ca->meaning ${gp[2]}, meaning->example ${gp[3]}, ca sĩ-ca sĩ ${gp[4]}/${gp[5]}, ca sĩ->meaning ${gp[6]} ms`);
+            if (!apple && route === 'review') console.log(`${n} ca repeat 3 gaps (ms): ${gp.join(', ')}`);
+          }
           if (route === 'review' && !apple) ok(full.filter(x => x.text === 'ca').length === rep && full.filter(x => x.text === 'ca sĩ').length === rep && full.filter(x => x.lang === 'ko-KR').length === 2, `${n} ${route} repeat ${rep}: Vietnamese x${rep}, each meaning once`);
         }
         // ---- mute matrix (repeat 2, whole card) ----

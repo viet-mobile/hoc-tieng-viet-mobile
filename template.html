@@ -629,16 +629,10 @@
   .lff-part[data-open="true"] .lff-part-head .chev { transform: rotate(180deg); }
   .lff-part-body { display: none; padding-top: 9px; }
   .lff-part[data-open="true"] .lff-part-body { display: block; }
-  .lff-title { display: inline; }
-  .lff-title-vi { color: var(--ink); }
-  .lff-title-translation { color: var(--ink-faint); }
   /* The Love People—Make Disciples lesson headings keep the Vietnamese title
      visually equal to the BÀI label. Appendix C's long translation deliberately
      starts on its own line, aligned with the Vietnamese title rather than BÀI. */
-  .lpd-title { display: inline-block; vertical-align: top; }
-  .lpd-title-vi { color: var(--accent); font-family: var(--font-vn); font-weight: 800; font-size: 1.05rem; }
-  .lpd-title-translation { color: var(--ink-faint); }
-  .lpd-title.is-appendix-title .lpd-title-translation { display: block; margin-top: 2px; }
+  .lpd-title.is-appendix-title .lpd-title-translation { flex-basis: 100%; }
 
   .subtab-row {
     display: flex; flex-wrap: wrap; gap: 2px;
@@ -700,17 +694,12 @@
   /* [문장] > [파수대] week header: date and Vietnamese article title share the week label's
      type (.syl); the selected-language article title sits below them, one step quieter. */
   .wt-head > .syl:not(.wt-date) { margin-right: 0.5em; }
-  .wt-head .wt-article { display: block; margin-top: 2px; }
-  .wt-head .wt-article-tr { display: block; margin-top: 1px; font-size: 0.9rem; font-weight: 600; color: var(--ink-soft); }
+  .wt-head .wt-article { display: flex; margin-top: 2px; }
   .wt-head .cnt { display: block; margin-top: 2px; }
   /* [문장] > [행복한 삶을 영원히] lesson header: the Vietnamese title matches "Bài N" in size and
      weight, a clear gap follows the number, and the translation is one step below the title. */
   #curr-lff-root .group-head .syl { margin-right: 0.35em; }
-  #curr-lff-root .lff-title-vi { font-family: var(--font-vn); font-size: 1.05rem; font-weight: 800; }
-  #curr-lff-root .lff-title-translation { font-size: 0.95rem; font-weight: 600; }
   /* [대화] > [일상 회화] / [이웃 사람과의 대화]: the Vietnamese title in the number's type and color, a larger Korean line. */
-  #wizard-daily-pane .group-head .lff-title-vi, #wizard-neighbor-pane .group-head .lff-title-vi { font-family: var(--font-vn); font-size: 1.05rem; font-weight: 800; color: var(--accent); }
-  #wizard-daily-pane .group-head .lff-title-translation, #wizard-neighbor-pane .group-head .lff-title-translation { font-size: 0.95rem; font-weight: 600; }
   .group-head .chev { color: var(--ink-faint); transition: transform .15s; flex: none; }
   .group-card[data-open="true"] .chev { transform: rotate(180deg); }
   .group-body { display: none; padding: 0 15px 13px; }
@@ -1532,6 +1521,14 @@
     font-weight: 800;
     margin-bottom: 6px;
   }
+  /* ---- bilingual content titles: ONE typography for [대화] and [문장] (the Vietnamese title, then the learner language's) ----
+     Source of truth: the computed style of the song title of [문장] > [노래] > [왕국 노래] (.song-detail-vi-title / .song-detail-target-title):
+       Vietnamese  var(--font-vn) 0.95rem  weight 800  var(--accent)  line-height 1.35
+       learner     (its own language font) 1.05rem  weight 700  var(--accent)  line-height 1.35
+     A title never shrinks, is never cut: when both do not fit on a line, the learner's title (a group of its own) goes to the next line. */
+  .bilingual-title { display: inline-flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.5em; row-gap: 0.15em; min-width: 0; max-width: 100%; vertical-align: top; }
+  .bilingual-title-vi { font-family: var(--font-vn); font-size: 0.95rem; font-weight: 800; color: var(--accent); line-height: 1.35; margin: 0; min-width: 0; overflow-wrap: anywhere; }
+  .bilingual-title-target { font-size: 1.05rem; font-weight: 700; color: var(--accent); line-height: 1.35; margin: 0; min-width: 0; overflow-wrap: anywhere; }
   .song-detail-vi-title {
     font-family: var(--font-vn);
     /* what [왕국 노래] has always shown: its <h3> sits in a .p-section, whose `h3 { font-size: .95rem }` outranked 1.25rem here.
@@ -3128,7 +3125,7 @@
   .pron-cmp .ns-desc { flex: 1 1 12em; min-width: 0; overflow-wrap: anywhere; }
   /* Culture compact cards */
   .culture-fold .culture-fold-head { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; text-align: left; }
-  .culture-fold .culture-card-title { display: block; margin-bottom: 0; }
+  .culture-fold .culture-card-title { display: flex; margin-bottom: 0; }
   .culture-fold .culture-card { padding: 0 15px 12px; }
   .culture-category-badge {
     display: inline-block;
@@ -3140,17 +3137,7 @@
     color: var(--accent);
     margin-bottom: 6px;
   }
-  .culture-card-title {
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin-bottom: 4px;
-    color: var(--ink);
-  }
-  .culture-card-title .vi {
-    color: var(--accent);
-    font-size: 0.95rem;
-    font-weight: 600;
-  }
+  .culture-card-title { margin-bottom: 4px; }
   .culture-summary {
     font-size: 0.9rem;
     line-height: 1.5;
