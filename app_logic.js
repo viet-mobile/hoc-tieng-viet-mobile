@@ -10579,6 +10579,13 @@ function verifyDistribution(units, dist, pins) {
       return wd.hanja ? (g + "(" + wd.hanja + ")") : g;
     }
 
+    // A 한자음 word (RHYME_GROUPS) as a review item: the card's own record gives the example too -- the very fields the
+    // [어휘] > [한자음] tab shows (wd.example, wd.example_mean), no other source. ex.kr is the UI language's meaning of the example
+    // or null (never another language). Only 한자음 items carry `ex`; the flashcard then reads headword + example (hanjaBackItems).
+    function rhymeItem(wd) {
+      var ex = wd.example && String(wd.example).trim() ? { vi: String(wd.example).trim(), kr: reviewMeaning(wd.example_mean) } : null;
+      return { vi: wd.word, kr: krGlossWithHanja(wd), ex: ex };
+    }
     function dedupeByVi(arr) {
       var at = {}; var out = [];
       arr.forEach(function (it) {
@@ -10586,9 +10593,10 @@ function verifyDistribution(units, dist, pins) {
         var k = String(it.vi).trim();
         var m = it.kr ? String(it.kr).trim() : "";
         if (!k) return;
-        var entry = { vi: k, kr: m, meaning: it.meaning || "", songNo: it.songNo };
+        var entry = { vi: k, kr: m, meaning: it.meaning || "", songNo: it.songNo, ex: it.ex || null };
         if (!Object.prototype.hasOwnProperty.call(at, k)) { at[k] = out.length; out.push(entry); }
-        else if (m && !out[at[k]].kr) out[at[k]] = entry;
+        else if (m && !out[at[k]].kr) { if (!entry.ex) entry.ex = out[at[k]].ex; out[at[k]] = entry; }
+        else if (entry.ex && !out[at[k]].ex) out[at[k]].ex = entry.ex;
       });
       return out;
     }
@@ -10603,7 +10611,7 @@ function verifyDistribution(units, dist, pins) {
     function vocabScopedPool() {
       if (!vocabFocus) return [];
       var mode = vocabFocus.mode, out = [];
-      function push(vi, kr) { if (vi) out.push({ vi: vi, kr: kr }); }
+      function push(vi, kr, ex) { if (vi) out.push({ vi: vi, kr: kr, ex: ex || null }); }
       if (mode === "words") {
         var cw = typeof UNIFIED_WORDS !== "undefined" ? courseWordsFocus(UNIFIED_WORDS) : null;
         (cw || []).forEach(function (w) { var m = w.kr || w.meanings; push(w.vi, reviewMeaning(typeof m === "string" ? { ko: m } : m)); });
@@ -10629,7 +10637,7 @@ function verifyDistribution(units, dist, pins) {
       } else if (mode === "rhyme") {
         var rhymeFlat = [];
         RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (fam) { fam.words.forEach(function (wd) { rhymeFlat.push(wd); }); }); });
-        rhymeFlat.slice(vocabFocus.start, vocabFocus.end).forEach(function (wd) { push(wd.word, krGlossWithHanja(wd)); });
+        rhymeFlat.slice(vocabFocus.start, vocabFocus.end).forEach(function (wd) { var it = rhymeItem(wd); push(it.vi, it.kr, it.ex); });
       } else if (mode === "groups") {
         var groupsFlat = [];
         VOCAB_GROUPS.forEach(function (g) { g.words.forEach(function (w) { groupsFlat.push(w); }); });
@@ -10691,7 +10699,7 @@ function verifyDistribution(units, dist, pins) {
         var out = [];
         RHYME_GROUPS.forEach(function (g) {
           g.families.forEach(function (fam) {
-            fam.words.forEach(function (wd) { out.push({ vi: wd.word, kr: krGlossWithHanja(wd) }); });
+            fam.words.forEach(function (wd) { out.push(rhymeItem(wd)); });
           });
         });
         VOCAB_GROUPS.forEach(function (g) {
@@ -11037,7 +11045,7 @@ function verifyDistribution(units, dist, pins) {
           });
         }
       } else if (key === "vocab") {
-        if (scope === "rhyme") RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); });
+        if (scope === "rhyme") RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { out.push(rhymeItem(w)); }); }); });
         else if (scope === "orderrev") { RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { if (w.word_order_reversed) out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); }); if (typeof WORD_ORDER_REVERSED_EXTRA !== "undefined") WORD_ORDER_REVERSED_EXTRA.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }
         else if (scope === "groups") VOCAB_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.word, kr: reviewMeaning(w.meaning) }); }); });
         else if (scope === "basic") BASIC_WORD_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.vi, kr: reviewMeaning(w.kr) }); }); });
@@ -11533,7 +11541,7 @@ function verifyDistribution(units, dist, pins) {
       studyState.tabKey = key;
       studyState.scope = scope;
       studyState.pool = dedupeByVi((poolOverride || getPool(key, scope)).map(function (item) {
-        return { vi: stripReviewListMarker(item.vi), kr: stripReviewListMarker(item.kr), meaning: item.meaning || "", songNo: item.songNo };
+        return { vi: stripReviewListMarker(item.vi), kr: stripReviewListMarker(item.kr), meaning: item.meaning || "", songNo: item.songNo, ex: item.ex || null };
       }));
       studyState.score = { correct: 0, total: 0 };
       studyState.current = null;
@@ -11659,6 +11667,29 @@ function verifyDistribution(units, dist, pins) {
       studyState.flashDir = studyState.flashDir || "vi-to-target";
       renderFlash();
     }
+    // [한자음] flashcard (item.ex, see rhymeItem()): what the BACK of the card says is the meaning AND the card's example --
+    //   vi -> target:  meaning, example (Vietnamese xN), example meaning     target -> vi:  headword (xN), example (xN), example meaning
+    // built with readAllItems() (the 전체 듣기 plan: Vietnamese x repeat count, then the meaning once, the shared gaps), each
+    // language left out when 묵음 silences it, an example without a meaning in this language read without one (never another language).
+    // `full` (the replay of a revealed card) puts the headword in front: headword xN, meaning, example xN, example meaning.
+    function hanjaBackItems(item, isRev, full) {
+      var mv = isMuted("vi"), mm = isMuted("meaning"), entries = [];
+      // the meaning as the card shows it, without the trailing "(歌)" hanja note (it is for the eye; a voice reads it badly)
+      var gloss = String(item.kr || "").replace(/\s*\([\u3400-\u9FFF\uF900-\uFAFF]+\)\s*$/, "");
+      if (full) entries.push([mv ? "" : item.vi, mm ? "" : gloss]);
+      else if (isRev) entries.push([mv ? "" : item.vi, ""]);
+      else entries.push(["", mm ? "" : gloss]);
+      entries.push([mv ? "" : item.ex.vi, mm || !item.ex.kr ? "" : item.ex.kr]);   // (normalizeReadAllEntry: [vi, meaning] pairs)
+      return readAllItems(entries.map(normalizeReadAllEntry).filter(Boolean));
+    }
+    // Plays it as ONE run (a new card / a manual next replaces it: nothing of the old card is said later) and calls doneFn once
+    // everything, example included, has been said.
+    function speakHanjaBack(item, isRev, full, doneFn) {
+      var items = hanjaBackItems(item, isRev, full);
+      if (readAllState.id) stopReadAllSequence();
+      if (!items.length) { if (doneFn) doneFn(); return; }
+      playSpeechRun(items, { onDone: doneFn });
+    }
     function revealFlash() {
       var item = studyState.current;
       if (!item) return;
@@ -11668,9 +11699,9 @@ function verifyDistribution(units, dist, pins) {
       if (kr) kr.style.display = "block";
       var isRev = studyState.flashDir === "target-to-vi";
       if (hint) hint.textContent = TU("눌러서 가리기");
-      speakThenAdvance(isRev ? item.vi : item.kr, isRev, function () {
-        var b = document.getElementById("flash-next"); if (b) b.click();
-      });
+      function advance() { var b = document.getElementById("flash-next"); if (b) b.click(); }
+      if (item.ex) { speakHanjaBack(item, isRev, false, function () { if (reviewTabIsActive()) advance(); }); return; }
+      speakThenAdvance(isRev ? item.vi : item.kr, isRev, advance);
     }
     function renderFlash() {
       stopAllSpeech();
@@ -11707,7 +11738,8 @@ function verifyDistribution(units, dist, pins) {
         hint.textContent = showing ? (isRev ? TU("눌러서 베트남어 보기") : TU("눌러서 뜻 보기")) : TU("눌러서 가리기");
         if (!showing) {
           srsCardSeen(item);
-          if (isRev) {
+          if (item.ex) speakHanjaBack(item, isRev, false);
+          else if (isRev) {
             if (!isMuted("vi")) speak(item.vi);
           } else {
             if (!isMuted("meaning")) speakMeaning(item.kr);
@@ -11731,9 +11763,10 @@ function verifyDistribution(units, dist, pins) {
       });
       document.getElementById("flash-replay").addEventListener("click", function (e) {
         e.stopPropagation();
-        if (isRev) {
-          var krEl = document.getElementById("flash-kr");
-          if (krEl && krEl.style.display !== "none") speak(item.vi);
+        var krEl = document.getElementById("flash-kr"), revealed = !!(krEl && krEl.style.display !== "none");
+        if (item.ex && revealed) speakHanjaBack(item, isRev, true);   // the whole card: headword, meaning, example, example meaning
+        else if (isRev) {
+          if (revealed) speak(item.vi);
           else speakMeaning(item.kr);
         } else {
           speak(item.vi);
