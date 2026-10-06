@@ -12,7 +12,7 @@
 //   G. no speak() in the same tick as a cancel() (it waits SPEECH_CANCEL_SETTLE_MS)
 //   H. an utterance the engine drops without a trace is spoken once more, then skipped; the sequence is not lost
 //   I. 복습 UI: no [정답 시 다음 문제] on the flashcard (still there in the other modes); 자동 넘김 offers 1초 and defaults to it
-//   K. the gaps of a repeated bilingual read-all: repeat ~200 ms, Vietnamese -> target ~300 ms, row ~300 ms (measured from the real end)
+//   K. the gaps of a repeated bilingual read-all: repeat ~50 ms, Vietnamese -> target ~120 ms, row ~200 ms (measured from the real end)
 //   J. a manual next during the auto-advance wait cancels the timer (one move only); Apple: the page going to the background
 //      ends the speech and nothing comes back by itself
 // The fake engines are not Safari: the real iPhone / iPad / Mac check stays open (docs/pre_production_checklist.md).
@@ -313,11 +313,45 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
           `${n} K: VI x3 then KO once, row after row (${langs.slice(0, 8)})`);
         const mac = /Macintosh|Mac OS X/.test(prof.ua);   // (headless has no touch points: an iPhone UA is a desktop Mac to the page, as in the test's own fake)
         const inR = (v, lo, hi) => v !== null && v >= lo && v <= hi;
-        ok(inR(gaps[0], 150, 380) && inR(gaps[1], 150, 380) && inR(gaps[4], 150, 380) && inR(gaps[5], 150, 380), `${n} K: repeat gap ~200 ms (was 450): ${gaps.slice(0, 6)}`);
-        ok(inR(gaps[2], mac ? 40 : 250, 480) && inR(gaps[6], mac ? 40 : 250, 480), `${n} K: Vietnamese -> Korean gap ~300 ms (macOS desktop keeps its shorter 60): ${gaps[2]} / ${gaps[6]}`);
-        ok(inR(gaps[3], 250, 480), `${n} K: Korean -> next row gap ~300 ms: ${gaps[3]}`);
+        ok(inR(gaps[0], 30, 250) && inR(gaps[1], 30, 250) && inR(gaps[4], 30, 250) && inR(gaps[5], 30, 250), `${n} K: repeat gap ~50 ms (was 450, then 200): ${gaps.slice(0, 6)}`);
+        ok(inR(gaps[2], mac ? 40 : 90, 330) && inR(gaps[6], mac ? 40 : 90, 330), `${n} K: Vietnamese -> Korean gap ~120 ms (macOS desktop keeps its 60): ${gaps[2]} / ${gaps[6]}`);
+        ok(inR(gaps[3], 150, 380), `${n} K: Korean -> next row gap ~200 ms: ${gaps[3]}`);
         ok(rK.repeat === '3' && !(rK.log || []).some(x => x.ev === 'dropped' || x.ev === 'ignored'), `${n} K: no dropped utterance`);
       }
+      // ---- L. 자동 넘김 총 반복 횟수 (flashcard only, 1-10): a card is played N times in all, then the next card ----
+      await load(prof, {'vn-app-auto-adv': JSON.stringify({enabled: true, nextOnCorrect: false, seconds: 1, cardRepeats: 3})});
+      const rL = (await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms)); const o={};
+        await (${openFlash});
+        document.querySelector('.subtab-btn[data-review="vocab"]').click(); await sleep(500);   // short words: one utterance each
+        const fb2=document.querySelector('.study-mode-btn[data-mode="flash"]'); if(fb2.getAttribute('aria-selected')!=='true') fb2.click(); await sleep(300);
+        window.__tts.length=0; document.getElementById('flash-next').click(); await sleep(60);   // a fresh card: its first play starts the log
+        const sel=()=>document.getElementById('auto-card-repeats');
+        o.opts=sel()?[...sel().options].map(x=>x.value).join():null; o.value=sel()&&sel().value; o.disabled=sel()&&sel().disabled;
+        o.label=sel()&&sel().getAttribute('aria-label');
+        for(let i=0;i<900&&window.__tts.filter(x=>x.ev==='speak').length<14;i++) await sleep(40);
+        o.speaks=window.__tts.filter(x=>x.ev==='speak').map(x=>x.text);
+        // another mode: no such control
+        document.querySelector('.study-mode-btn[data-mode="look"]').click(); await sleep(400);
+        o.inLook=!!document.getElementById('auto-card-repeats');
+        document.querySelector('.study-mode-btn[data-mode="flash"]').click(); await sleep(400);
+        o.back=!!document.getElementById('auto-card-repeats');
+        return o;})()`)) || {};
+      ok(rL.opts === '1,2,3,4,5,6,7,8,9,10' && rL.value === '3' && rL.disabled === false && /\S/.test(rL.label || ''), `${n} L: the control offers 1-10, saved 3, enabled with 자동 넘김 ${JSON.stringify([rL.opts, rL.value, rL.disabled])}`);
+      const sp = rL.speaks || [];
+      // card 1 played three times (VI, KO [, example VI, example KO of a 한자음 card]) x3, then a different card
+      const P = sp.indexOf(sp[0], 1);   // one play = up to the second time its first utterance comes
+      ok(P >= 2 && sp.length > 3 * P && sp.slice(0, 3 * P).every((x, i) => x === sp[i % P]) && sp[3 * P] !== sp[0],
+        `${n} L: one card is played 3 times in all (${P} utterances each), then the next card ${JSON.stringify(sp.slice(0, 3 * P + 1))}`);
+      ok(rL.inLook === false && rL.back === true, `${n} L: only on the flashcard (look ${rL.inLook}, flash ${rL.back})`);
+      await load(prof, {'vn-app-auto-adv': JSON.stringify({enabled: false, nextOnCorrect: false, seconds: 1, cardRepeats: 4})});
+      const rL2 = (await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+        await (${openFlash});
+        const sel=document.getElementById('auto-card-repeats'); const o={disabled:sel.disabled,value:sel.value};
+        const a=document.getElementById('auto-advance-toggle'); a.checked=true; a.dispatchEvent(new Event('change',{bubbles:true})); await sleep(100);
+        o.enabled=!document.getElementById('auto-card-repeats').disabled;
+        const s2=document.getElementById('auto-card-repeats'); s2.value='10'; s2.dispatchEvent(new Event('change',{bubbles:true})); await sleep(100);
+        o.saved=JSON.parse(localStorage.getItem('vn-app-auto-adv')).cardRepeats; return o;})()`)) || {};
+      ok(rL2.disabled === true && rL2.value === '4' && rL2.enabled === true && rL2.saved === 10, `${n} L: disabled while 자동 넘김 is off, enabled with it, the choice is saved ${JSON.stringify(rL2)}`);
       ok(!errs.length, `${n}: errors ${errs.join(' | ').slice(0, 400)}`);
     }
     cdp.close();

@@ -1,0 +1,154 @@
+{
+ "_doc": "Meanings of the 한자음 EXAMPLE words (RHYME_GROUPS[].example_mean) in cs / hu / id that word_meanings_extended.json has no sense for, keyed \"example|ko\" exactly as the example's example_mean.ko; zh_cn_by_zh = OpenCC t2s of the example's zh. Only missing languages are filled (word_meanings_extended._fill_example_mean); methods as in word_meanings_extended.json (AI_VI_KO_CROSSCHECK_*: AI gloss from the Vietnamese example + Korean meaning, cross-checked with en/zh/ja/de/fr/pl).",
+ "entries": {
+  "cảm tạ|감사": {
+   "cs": "poděkování",
+   "hu": "köszönet",
+   "id": "terima kasih",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "phản đối|반대": {
+   "cs": "odpor, nesouhlas",
+   "hu": "ellenzés",
+   "id": "penolakan, oposisi",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "chú ý|주의": {
+   "cs": "pozornost, opatrnost",
+   "hu": "figyelem, óvatosság",
+   "id": "perhatian, kewaspadaan",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "tội ác|죄악": {
+   "cs": "zločin, hřích",
+   "hu": "bűn, bűncselekmény",
+   "id": "dosa, kejahatan",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "cảm giác|감각, 느낌": {
+   "cs": "pocit, cit",
+   "hu": "érzés, érzék",
+   "id": "perasaan, indra",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "chính xác|정확하다": {
+   "cs": "přesný",
+   "hu": "pontos",
+   "id": "tepat, akurat",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "đặc biệt|특별함": {
+   "cs": "výjimečnost, zvláštnost",
+   "hu": "különlegesség",
+   "id": "kekhususan",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "thích hợp|적합": {
+   "cs": "vhodnost",
+   "hu": "alkalmasság",
+   "id": "kecocokan",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "hạnh phúc|행복": {
+   "cs": "štěstí",
+   "hu": "boldogság",
+   "id": "kebahagiaan",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "trực tiếp|직접": {
+   "cs": "přímo",
+   "hu": "közvetlenül",
+   "id": "langsung",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "thứ nhất|첫째": {
+   "cs": "první",
+   "hu": "első",
+   "id": "pertama",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "đặc biệt|특별": {
+   "cs": "zvláštní, zvláště",
+   "hu": "különleges",
+   "id": "khusus",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "nhiệt tình|열정": {
+   "cs": "nadšení, zápal",
+   "hu": "lelkesedés",
+   "id": "semangat, antusiasme",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "tham gia|참가": {
+   "cs": "účast",
+   "hu": "részvétel",
+   "id": "partisipasi, keikutsertaan",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "phức tạp|복잡": {
+   "cs": "složitost",
+   "hu": "bonyolultság",
+   "id": "kerumitan",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "độc lập|독립": {
+   "cs": "nezávislost",
+   "hu": "függetlenség",
+   "id": "kemerdekaan, kemandirian",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "ảnh hưởng|영향": {
+   "cs": "vliv",
+   "hu": "hatás, befolyás",
+   "id": "pengaruh",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "tôn kính|존경": {
+   "cs": "úcta",
+   "hu": "tisztelet",
+   "id": "hormat",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "trung tâm|중심": {
+   "cs": "střed, centrum",
+   "hu": "központ",
+   "id": "pusat",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "số lượng|수량": {
+   "cs": "množství, počet",
+   "hu": "mennyiség",
+   "id": "jumlah",
+   "method": "AI_VI_KO_CROSSCHECK"
+  },
+  "bình thường|보통·평범함": {
+   "cs": "průměrnost, obyčejnost",
+   "hu": "átlagosság, szokásosság",
+   "id": "kelaziman, kebiasaan",
+   "method": "AI_VI_KO_CROSSCHECK"
+  }
+ },
+ "zh_cn_by_zh": {
+  "感謝": "感谢",
+  "反對": "反对",
+  "注意": "注意",
+  "罪惡": "罪恶",
+  "感覺": "感觉",
+  "正確": "正确",
+  "特別性": "特别性",
+  "適合": "适合",
+  "幸福": "幸福",
+  "直接": "直接",
+  "第一": "第一",
+  "特別": "特别",
+  "熱情": "热情",
+  "參加": "参加",
+  "複雜": "复杂",
+  "獨立": "独立",
+  "影響": "影响",
+  "尊敬": "尊敬",
+  "中心": "中心",
+  "數量": "数量",
+  "普通·平凡": "普通·平凡"
+ }
+}

@@ -264,6 +264,8 @@
     "눌러서 베트남어 보기": {"vi": "Bấm để xem tiếng Việt", "cs": "Klepnutím zobrazit vietnamštinu", "zh_cn": "点击查看越南语", "zh": "點擊查看越南語", "en": "Tap to see Vietnamese", "fr": "Appuyer pour voir le vietnamien", "de": "Tippen für Vietnamesisch", "hu": "Koppintson a vietnámihoz", "id": "Ketuk untuk Bahasa Vietnam", "ja": "タップしてベトナム語を見る", "pl": "Dotknij, aby zobaczyć wietnamski"},
     "전체 듣기": {"vi": "Tất cả", "cs": "Vše", "zh_cn": "全部播放", "zh": "全部播放", "en": "All", "fr": "Tout", "de": "Alles", "hu": "Összes", "id": "Semua", "ja": "すべて再生", "pl": "Wszystko"},
     "정지": {"vi": "Dừng", "cs": "Zastavit", "zh_cn": "停止", "zh": "停止", "en": "Stop", "fr": "Arrêter", "de": "Stopp", "hu": "Leállítás", "id": "Berhenti", "ja": "停止", "pl": "Zatrzymaj"},
+    "총 반복 횟수": {"vi": "Số lần lặp", "cs": "Počet opakování", "zh_cn": "总重复次数", "zh": "總重複次數", "en": "Total plays", "fr": "Nombre de lectures", "de": "Wiedergaben gesamt", "hu": "Lejátszások száma", "id": "Total pengulangan", "ja": "合計リピート回数", "pl": "Liczba odtworzeń"},
+    "자동 넘김시 총 반복 횟수": {"vi": "Số lần lặp mỗi thẻ khi tự động chuyển", "cs": "Celkový počet opakování karty při automatickém přehrávání", "zh_cn": "自动切换时每张卡片的总重复次数", "zh": "自動切換時每張卡片的總重複次數", "en": "Total plays of each card when auto-play is on", "fr": "Nombre total de lectures de chaque carte en lecture automatique", "de": "Wiedergaben je Karte bei automatischem Weiterschalten", "hu": "Egy kártya összes lejátszása automatikus lejátszáskor", "id": "Total pengulangan tiap kartu saat putar otomatis", "ja": "自動切り替え時の1枚あたりの合計リピート回数", "pl": "Łączna liczba odtworzeń każdej karty przy automatycznym przechodzeniu"},
     "자동 넘김": {"vi": "Tự động chuyển", "cs": "Automatické přehrávání", "zh_cn": "自动切换", "zh": "自動切換", "en": "Auto-play", "fr": "Défilement auto", "de": "Automatisch weiter", "hu": "Automatikus léptetés", "id": "Lanjut Otomatis", "ja": "自動送り", "pl": "Automatyczne przewijanie"},
     "정답 시 다음 문제": {"vi": "Đúng thì qua câu tiếp", "cs": "Při správné odpovědi na další otázku", "zh_cn": "答对后下一题", "zh": "答對後下一題", "en": "Next question when correct", "fr": "Question suivante si correct", "de": "Bei richtiger Antwort weiter", "hu": "Helyes válasz esetén következő kérdés", "id": "Lanjut jika Benar", "ja": "正解で次の問題", "pl": "Następne pytanie po poprawnej odpowiedzi"},
     "반복 듣기": {"vi": "Nghe lặp lại", "cs": "Opakovat", "zh_cn": "重复播放", "zh": "重複播放", "en": "Repeat", "fr": "Répéter l'écoute", "de": "Wiederholen", "hu": "Ismétlés", "id": "Ulangi", "ja": "繰り返し再生", "pl": "Powtarzaj odtwarzanie"},
@@ -2059,10 +2061,10 @@
   //   - after a cancel() the next speak() waits SPEECH_CANCEL_SETTLE_MS (WebKit drops a speak() right after cancel()).
   // A run is started by a real tap (or a key) -- Apple WebKit refuses speech nothing asked for -- and everything the run
   // plays after that (the next language, the repetitions, the next sentence) needs no new tap.
-  var VI_REPEAT_GAP_MS = 200;   // between repetitions of the same phrase (was 450)
+  var VI_REPEAT_GAP_MS = 50;    // between repetitions of the same phrase (450 -> 200 -> 50; Apple keeps its own SPEECH_MIN_GAP_MS floor)
   var IS_MAC_DESKTOP = /Macintosh|Mac OS X/i.test(navigator.userAgent || "") && !(navigator.maxTouchPoints > 1);
-  var READALL_STEP_GAP_MS = IS_MAC_DESKTOP ? 60 : 300;   // Vietnamese -> the target language (and, with the target silenced, to the next row)
-  var READALL_ROW_GAP_MS = 300;                          // the target language -> the next row
+  var READALL_STEP_GAP_MS = IS_MAC_DESKTOP ? 60 : 120;   // Vietnamese -> the target language (and, with the target silenced, to the next row)
+  var READALL_ROW_GAP_MS = 200;                          // the target language -> the next row
   // iPhone/iPad/Mac run the same WebKit speech engine.
   var IS_APPLE_WEBKIT_SPEECH = IS_MAC_DESKTOP || /iPhone|iPad|iPod/i.test(navigator.userAgent || "") ||
     (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
@@ -10584,6 +10586,9 @@ function verifyDistribution(units, dist, pins) {
     // or null (never another language). Only 한자음 items carry `ex`; the flashcard then reads headword + example (hanjaBackItems).
     function rhymeItem(wd) {
       var ex = wd.example && String(wd.example).trim() ? { vi: String(wd.example).trim(), kr: reviewMeaning(wd.example_mean) } : null;
+      // as the [어휘] > [한자음] tab shows the Korean example meaning: the hanja after the part it spells, "다과(多科)·종합진료"
+      // (only when the record gives that form; otherwise the plain meaning -- the tab's "kr — meaning" fallback is not for a card)
+      if (ex && ex.kr && currentLang === "ko") { var kh = rwExampleKrHtml(wd.example_kr, ex.kr); if (kh.indexOf(" \u2014 ") < 0) ex.krHtml = kh; }
       return { vi: wd.word, kr: krGlossWithHanja(wd), ex: ex };
     }
     function dedupeByVi(arr) {
@@ -11131,6 +11136,9 @@ function verifyDistribution(units, dist, pins) {
     var AUTO_ADV_SECONDS_OPTS = [1, 3, 5, 8, 10, 15];
     var autoAdvanceEnabled = false;
     var autoNextOnCorrect = false;
+    // [플래시카드] 자동 넘김: how many times in all one card is played (question, pause, answer) before the next card: 1-10
+    var AUTO_CARD_REPEAT_OPTS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    var autoCardRepeats = 1;
     var autoAdvanceSeconds = 1;   // default 1 s; a saved valid choice of the user is kept (see the localStorage read below)
     try {
       var savedAutoAdv = window.localStorage && window.localStorage.getItem("vn-app-auto-adv");
@@ -11139,10 +11147,11 @@ function verifyDistribution(units, dist, pins) {
         if (parsedAutoAdv && typeof parsedAutoAdv.enabled === "boolean") autoAdvanceEnabled = parsedAutoAdv.enabled;
         if (parsedAutoAdv && typeof parsedAutoAdv.nextOnCorrect === "boolean") autoNextOnCorrect = parsedAutoAdv.nextOnCorrect;
         if (parsedAutoAdv && AUTO_ADV_SECONDS_OPTS.indexOf(parsedAutoAdv.seconds) >= 0) autoAdvanceSeconds = parsedAutoAdv.seconds;
+        if (parsedAutoAdv && AUTO_CARD_REPEAT_OPTS.indexOf(parsedAutoAdv.cardRepeats) >= 0) autoCardRepeats = parsedAutoAdv.cardRepeats;
       }
     } catch (e0) { /* no-op: localStorage unavailable */ }
     function saveAutoAdvancePref() {
-      try { window.localStorage && window.localStorage.setItem("vn-app-auto-adv", JSON.stringify({ enabled: autoAdvanceEnabled, nextOnCorrect: autoNextOnCorrect, seconds: autoAdvanceSeconds })); } catch (e) { /* no-op */ }
+      try { window.localStorage && window.localStorage.setItem("vn-app-auto-adv", JSON.stringify({ enabled: autoAdvanceEnabled, nextOnCorrect: autoNextOnCorrect, seconds: autoAdvanceSeconds, cardRepeats: autoCardRepeats })); } catch (e) { /* no-op */ }
     }
     // kind: "vi" or "meaning" -- which language's audio is about to auto-play.
     function isMuted(kind) {
@@ -11246,7 +11255,11 @@ function verifyDistribution(units, dist, pins) {
         '<span class="auto-advance-group"><label class="auto-advance-option"><input type="checkbox" id="auto-advance-toggle" ' + (autoAdvanceEnabled ? "checked" : "") + '> ' + TU("자동 넘김") + '</label>' +
         '<select id="auto-advance-seconds" class="auto-seconds-select" ' + (autoAdvanceEnabled ? "" : "disabled") + '>' +
         AUTO_ADV_SECONDS_OPTS.map(function (s) { return '<option value="' + s + '"' + (s === autoAdvanceSeconds ? " selected" : "") + '>' + s + TU("초") + '</option>'; }).join("") +
-        '</select></span>';
+        '</select>' +
+        // flashcard only: one card N times in all (question, pause, answer) before the next card
+        (studyState.mode === "flash" ? '<label class="auto-card-repeat-option"><span>' + TU("총 반복 횟수") + '</span><select id="auto-card-repeats" class="auto-seconds-select" aria-label="' + escapeAttr(TU("자동 넘김시 총 반복 횟수")) + '" ' + (autoAdvanceEnabled ? "" : "disabled") + '>' +
+          AUTO_CARD_REPEAT_OPTS.map(function (n) { return '<option value="' + n + '"' + (n === autoCardRepeats ? " selected" : "") + '>' + timesLabel(n) + '</option>'; }).join("") + '</select></label>' : '') +
+        '</span>';
       // 정답 시 다음 문제 means nothing on a flashcard (there is no answer to get right): not shown there.
       if (studyState.mode !== "flash") html += '<label class="auto-correct-option"><input type="checkbox" id="auto-next-correct-toggle" ' + (autoNextOnCorrect ? "checked" : "") + '> ' + TU("정답 시 다음 문제") + '</label>';
       autoAdvRoot.innerHTML = html;
@@ -11256,6 +11269,8 @@ function verifyDistribution(units, dist, pins) {
         autoAdvanceEnabled = e.target.checked;
         saveAutoAdvancePref();
         document.getElementById("auto-advance-seconds").disabled = !autoAdvanceEnabled;
+        var cardRep = document.getElementById("auto-card-repeats");
+        if (cardRep) cardRep.disabled = !autoAdvanceEnabled;
         if (!autoAdvanceEnabled) clearAutoAdvanceTimer();
         else if (studyState.current) armAutoReveal(currentRevealFn());
       });
@@ -11263,6 +11278,12 @@ function verifyDistribution(units, dist, pins) {
         autoAdvanceSeconds = parseInt(e.target.value, 10) || 1;
         saveAutoAdvancePref();
         if (autoAdvanceEnabled && studyState.current) armAutoReveal(currentRevealFn());
+      });
+      var cardRepeatSel = document.getElementById("auto-card-repeats");
+      if (cardRepeatSel) cardRepeatSel.addEventListener("change", function (e) {
+        autoCardRepeats = parseInt(e.target.value, 10) || 1;
+        saveAutoAdvancePref();
+        studyState.cardCycle = 1;   // the card on screen starts counting again
       });
       var nextCorrectToggle = document.getElementById("auto-next-correct-toggle");
       if (nextCorrectToggle) nextCorrectToggle.addEventListener("change", function (e) {
@@ -11699,7 +11720,18 @@ function verifyDistribution(units, dist, pins) {
       if (kr) kr.style.display = "block";
       var isRev = studyState.flashDir === "target-to-vi";
       if (hint) hint.textContent = TU("눌러서 가리기");
-      function advance() { var b = document.getElementById("flash-next"); if (b) b.click(); }
+      // 자동 넘김 with a total of N plays of the card: the card is played again (hidden answer, question, pause, answer) until its
+      // N-th play has been said; only then the next card. A new card (renderFlash) starts at play 1.
+      function advance() {
+        if (autoAdvanceEnabled && (studyState.cardCycle || 1) < autoCardRepeats && studyState.current === item) {
+          studyState.cardCycle = (studyState.cardCycle || 1) + 1;
+          if (kr) kr.style.display = "none";
+          if (hint) hint.textContent = isRev ? TU("눌러서 베트남어 보기") : TU("눌러서 뜻 보기");
+          if (isRev) speakPromptThenArm(item.kr, revealFlash); else speakItemThenArm(item.vi, revealFlash);
+          return;
+        }
+        var b = document.getElementById("flash-next"); if (b) b.click();
+      }
       if (item.ex) { speakHanjaBack(item, isRev, false, function () { if (reviewTabIsActive()) advance(); }); return; }
       speakThenAdvance(isRev ? item.vi : item.kr, isRev, advance);
     }
@@ -11708,6 +11740,7 @@ function verifyDistribution(units, dist, pins) {
       clearAutoAdvanceTimer();
       var item = studyState.deck[studyState.idx];
       studyState.current = item;
+      studyState.cardCycle = 1;
       var isRev = studyState.flashDir === "target-to-vi";
       var frontText = isRev ? item.kr : item.vi;
       var backText = isRev ? item.vi : item.kr;
@@ -11720,7 +11753,7 @@ function verifyDistribution(units, dist, pins) {
 
       // [한자음] card: the example it reads (hanjaBackItems) is on the back too -- "ca sĩ  가수", the very record that is spoken
       var exHtml = item.ex ? '<div class="study-flash-example"><span class="study-flash-ex-vi vn" lang="vi">' + escapeHtml(item.ex.vi) + '</span>' +
-        (item.ex.kr ? '<span class="study-flash-ex-kr">' + escapeHtml(item.ex.kr) + '</span>' : '') + '</div>' : '';
+        (item.ex.kr ? '<span class="study-flash-ex-kr">' + (item.ex.krHtml || escapeHtml(item.ex.kr)) + '</span>' : '') + '</div>' : '';
       var html = '<div class="study-progress">' + (studyState.idx + 1) + ' / ' + studyState.deck.length + '</div>';
       html += '<div class="study-flash-card" id="flash-card">' +
         '<div class="' + frontClass + '">' + escapeHtml(frontText) + '</div>' +

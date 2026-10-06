@@ -121,6 +121,42 @@ def _fill_hanja_gloss(word, data):
         word["gloss"] = dict(gloss, **add)
 
 
+EXAMPLE_EXTRA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rhyme_example_meanings_extra.json")
+_EXTRA = None
+
+
+def _example_extra():
+    global _EXTRA
+    if _EXTRA is None:
+        with open(EXAMPLE_EXTRA_FILE, encoding="utf-8") as f:
+            _EXTRA = json.load(f)
+    return _EXTRA
+
+
+def _fill_example_mean(word, data):
+    """The missing zh_cn / cs / hu / id meanings of a 한자음 word's EXAMPLE (example_mean), from the curated sense of that
+    example word ("ca sĩ|가수"), then from rhyme_example_meanings_extra.json; zh_cn from the example's own zh. Existing
+    meanings are never replaced; an example without a sense stays without the language (the page reads no other language)."""
+    em = word.get("example_mean")
+    if not isinstance(em, dict) or not word.get("example") or not em.get("ko"):
+        return
+    key = f'{word["example"]}|{em["ko"]}'
+    extra = _example_extra()
+    entry = data["entries"].get(key)
+    add = {}
+    for lang in ("cs", "hu", "id"):
+        value = (entry and entry["m"].get(lang) and entry["m"][lang][0]) or extra["entries"].get(key, {}).get(lang)
+        if value and not em.get(lang):
+            add[lang] = value
+    if not em.get("zh_cn") and em.get("zh"):
+        zh_cn = data["zh_cn_by_zh"].get(em["zh"]) or extra["zh_cn_by_zh"].get(em["zh"]) or \
+            (entry and entry["m"].get("zh_cn") and entry["m"]["zh_cn"][0])
+        if zh_cn:
+            add["zh_cn"] = zh_cn
+    if add:
+        word["example_mean"] = dict(em, **add)
+
+
 def with_extended_meanings(name, dataset, data=None):
     """A copy of an [어휘] source list with missing zh_cn/cs/hu/id meanings filled (the original is untouched)."""
     data = data or load_extended_meanings()
@@ -130,6 +166,7 @@ def with_extended_meanings(name, dataset, data=None):
         words = [w for g in out for f in g["families"] for w in f["words"]] if shape == "rhyme_groups" else out
         for word in words:
             _fill_hanja_gloss(word, data)
+            _fill_example_mean(word, data)
         return out
     if shape == "groups":
         records = [w for g in out for w in g["words"]]

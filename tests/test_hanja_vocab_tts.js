@@ -150,7 +150,7 @@ const clean = s => String(s || '').replace(/\s*\([^)]*\)\s*/g, ' ').replace(/\s*
       o.words=uniq.map(w=>({word:w.word,hanja:w.hanja,gloss:w.gloss,example:w.example,example_mean:w.example_mean}));return o;})()`, false);
     console.log('한자음 data: fields ' + audit.fields.join(',') + '; ' + audit.total + ' records (' + audit.unique + ' distinct headwords), with example ' + audit.withExample + ', without ' + (audit.total - audit.withExample));
     for (const [l, c] of Object.entries(audit.perLang)) console.log('  ' + l + ': meaning ' + c.gloss + '/' + audit.unique + ', example meaning ' + c.exMeaning + '/' + audit.unique + ', both ' + c.both + ', headword meaning without example meaning ' + (c.gloss - c.both));
-    ok(audit.total === 313 && audit.withExample === 313 && audit.perLang.ko.both === audit.unique, 'every 한자음 record has an example; Korean has every meaning');
+    ok(audit.total === 313 && audit.withExample === 313 && Object.values(audit.perLang).every(c => c.both === audit.unique), 'every 한자음 record has an example, and every language (ko zh zh_cn en ja de fr pl cs hu id) has the meaning of the headword AND of the example');
     const W = Object.fromEntries(audit.words.map(w => [w.word, w]));
     // what a card of `word` must say in `loc`, with the settings (rep, mute): the card's own record only
     const plan = (word, loc, rep, mute, full) => {
@@ -176,7 +176,7 @@ const clean = s => String(s || '').replace(/\s*\([^)]*\)\s*/g, ' ').replace(/\s*
         await E(`window.__hv.setting('both', 1, false)`);   // silent while looking for the card
         ok(await E(`window.__hv.seek('ca')`), `${n} ${route}: the card "ca" is in the deck`);
         ok((await E(`document.getElementById('flash-kr').textContent`, false)).startsWith('노래 가(歌)'), `${n} ${route}: the card shows the Korean meaning of its record`);
-        ok(await E(`(()=>{const e=document.querySelector('#flash-kr .study-flash-example');return !!e&&e.textContent==='ca sĩ가수';})()`, false), `${n} ${route}: the back of the card shows the example: ca sĩ / 가수`);
+        ok(await E(`(()=>{const e=document.querySelector('#flash-kr .study-flash-example');return !!e&&e.textContent==='ca sĩ가수(歌手)';})()`, false), `${n} ${route}: the back of the card shows the example: ca sĩ / 가수`);
         // ---- manual: flip says meaning + example; replay says the whole card ----
         for (const rep of [1, 2, 3]) {
           await E(`window.__hv.setting('', ${rep}, false)`);
@@ -251,8 +251,8 @@ const clean = s => String(s || '').replace(/\s*\([^)]*\)\s*/g, ' ').replace(/\s*
 
       // ---------- other words, other learner languages (review route, whole card, repeat 2) ----------
       if (apple) continue;
-      const sample = ['ca', ...audit.words.filter((_, i) => i % 53 === 7).map(w => w.word)].filter((w, i, a) => a.indexOf(w) === i).slice(0, 7);
-      for (const loc of ['ko', 'ja', 'en', 'zh', 'cs']) {
+      const sample = ['ca', 'đa', ...audit.words.filter((_, i) => i % 53 === 7).map(w => w.word)].filter((w, i, a) => a.indexOf(w) === i).slice(0, 7);
+      for (const loc of ['ko', 'ja', 'en', 'zh', 'cs', 'hu', 'id', 'zh_cn']) {
         await load(prof, {'vn-app-auto-adv': JSON.stringify({enabled: false, nextOnCorrect: false, seconds: 1})});
         await E(`window.setLang('${loc}')`, false); await sleep(250);
         await E('window.__hv.openReview()');
@@ -271,7 +271,9 @@ const clean = s => String(s || '').replace(/\s*\([^)]*\)\s*/g, ' ').replace(/\s*
           ok(eq(flip, w), `${loc} "${word}" back: ${fmt(flip)}  (want ${fmt(w)})`);
           const shown = await E(`(()=>{const e=document.querySelector('#flash-kr .study-flash-example');return e?[...e.children].map(c=>c.textContent):null;})()`, false);
           const wantShown = [W[word].example].concat(W[word].example_mean && W[word].example_mean[loc] ? [clean(W[word].example_mean[loc]).replace(/, /g, '/')] : []);
-          ok(shown && shown[0] === W[word].example && (shown[1] || '') === (wantShown[1] || '').replace(/\//g, '/') || (shown && shown[0] === W[word].example && (shown[1] || '').replace(/\s+/g, '') === (W[word].example_mean && W[word].example_mean[loc] || '').replace(/\s+/g, '')), `${loc} "${word}": the card shows its example ${JSON.stringify(shown)}`);
+          if (loc === 'ko' && word === 'đa') ok(shown && shown[1] === '다과(多科)·종합진료', `ko "đa": the example reads "다과(多科)·종합진료" on the card: ${JSON.stringify(shown)}`);
+          const shownKr = (shown && shown[1] || '').replace(/\([^)]*\)/g, '').replace(/\s+/g, '');
+          ok(shown && shown[0] === W[word].example && shownKr === ((W[word].example_mean && W[word].example_mean[loc]) || '').replace(/\s+/g, ''), `${loc} "${word}": the card shows its example ${JSON.stringify(shown)}`);
           await E('window.__tts.length=0; document.getElementById("flash-replay").click()'); await sleep(100);
           const wf = plan(word, loc, 2, '', true);
           await wait(`window.__tts.filter(x=>x.ev==='end').length>=${wf.length}`); await sleep(300);
@@ -281,7 +283,7 @@ const clean = s => String(s || '').replace(/\s*\([^)]*\)\s*/g, ' ').replace(/\s*
           got.push(word + ':' + full.length);
           await E(`window.__hv.setting('both', 1, false)`);
         }
-        if (loc === 'cs') ok(!plan('ca', 'cs', 1, '', true).some(x => x.lang === 'ko-KR') && plan('ca', 'cs', 1, '', true).length === 3, 'cs: headword meaning + example, no example meaning (none in Czech), nothing in another language');
+        if (loc === 'cs') ok(plan('ca', 'cs', 1, '', true).length === 4 && plan('ca', 'cs', 1, '', true).every(x => x.lang === 'vi-VN' || x.lang === 'cs-CZ'), 'cs: headword, meaning, example, example meaning -- all in Czech now');
         console.log(`${loc}: ${got.join(' ')}`);
         ok(!errs.length, `${loc}: errors ${errs.join(' | ').slice(0, 300)}`);
         errs = [];
