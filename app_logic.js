@@ -2129,11 +2129,34 @@
     } catch (ePrime) { /* no-op */ }
   }
   var speechPrimedAt = 0;
+  // Audio session (iOS / iPadOS, Safari and every other browser there): speech that follows the ringer switch is silent with the
+  // switch on "silent", and a session the system has not been told is playback may be muted or ducked. Inside a tap the page asks
+  // for a playback session (Audio Session API, where it exists) and plays one silent sample through Web Audio -- the usual unlock.
+  // Harmless where unsupported; the diagnosis panel (?ttsdebug=1) reports what the device said.
+  var audioSessionNote = "";
+  function unlockAudioSession() {
+    if (!IS_IOS_DEVICE) return;
+    try {
+      if (navigator.audioSession && navigator.audioSession.type !== "playback") navigator.audioSession.type = "playback";
+      audioSessionNote = navigator.audioSession ? "audioSession.type=" + navigator.audioSession.type : "no audioSession API";
+    } catch (eAs) { audioSessionNote = "audioSession threw " + eAs; }
+    try {
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return;
+      if (!window.__globalAudioCtx) window.__globalAudioCtx = new AC();
+      var ctx = window.__globalAudioCtx;
+      if (ctx.state === "suspended") ctx.resume();
+      var src = ctx.createBufferSource();
+      src.buffer = ctx.createBuffer(1, 1, 22050);
+      src.connect(ctx.destination);
+      src.start(0);
+    } catch (eAc) { /* no-op */ }
+  }
   ["pointerdown", "touchend", "keydown", "click"].forEach(function (type) {
     document.addEventListener(type, function (e) {
       if (!e.isTrusted) return;
       speechArmed = true;
-      if (type === "touchend" || type === "click" || type === "keydown") primeSpeech();
+      if (type === "touchend" || type === "click" || type === "keydown") { unlockAudioSession(); primeSpeech(); }
     }, { capture: true, passive: true });
   });
   function speechAllowed() {
@@ -2186,7 +2209,7 @@
       b1.onclick = test("vi-VN", "Xin chào"); b2.onclick = test("en-US", "Hello");
       el.appendChild(b1); el.appendChild(b2); el.appendChild(out);
       document.body.appendChild(el);
-      speechDiagPanel("ua " + navigator.userAgent + "\napple=" + IS_APPLE_WEBKIT_SPEECH + " armed=" + speechArmed + " primed=" + speechPrimed);
+      speechDiagPanel("ua " + navigator.userAgent + "\napple=" + IS_APPLE_WEBKIT_SPEECH + " armed=" + speechArmed + " primed=" + speechPrimed + "\n" + (audioSessionNote || (navigator.audioSession ? "audioSession.type=" + navigator.audioSession.type + " (before the first tap)" : "no audioSession API")));
     }
     if (line) {
       var log = document.getElementById("tts-diag-log");
