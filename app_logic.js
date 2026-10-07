@@ -274,6 +274,9 @@
     "눌러서 베트남어 보기": {"vi": "Bấm để xem tiếng Việt", "cs": "Klepnutím zobrazit vietnamštinu", "zh_cn": "点击查看越南语", "zh": "點擊查看越南語", "en": "Tap to see Vietnamese", "fr": "Appuyer pour voir le vietnamien", "de": "Tippen für Vietnamesisch", "hu": "Koppintson a vietnámihoz", "id": "Ketuk untuk Bahasa Vietnam", "ja": "タップしてベトナム語を見る", "pl": "Dotknij, aby zobaczyć wietnamski"},
     "전체 듣기": {"vi": "Tất cả", "cs": "Vše", "zh_cn": "全部播放", "zh": "全部播放", "en": "All", "fr": "Tout", "de": "Alles", "hu": "Összes", "id": "Semua", "ja": "すべて再生", "pl": "Wszystko"},
     "정지": {"vi": "Dừng", "cs": "Zastavit", "zh_cn": "停止", "zh": "停止", "en": "Stop", "fr": "Arrêter", "de": "Stopp", "hu": "Leállítás", "id": "Berhenti", "ja": "停止", "pl": "Zatrzymaj"},
+    "실제 노래 소절 듣기": {"vi": "Nghe đoạn nhạc thật của câu này", "cs": "Přehrát tuto větu z nahrávky", "zh_cn": "播放这一句的原曲", "zh": "播放這一句的原曲", "en": "Play this line from the real recording", "fr": "Écouter cette ligne dans l'enregistrement", "de": "Diese Zeile aus der Aufnahme abspielen", "hu": "Sor lejátszása a felvételről", "id": "Putar baris ini dari rekaman asli", "ja": "この一節を原曲で聴く", "pl": "Odtwórz ten wers z nagrania"},
+    "실제 노래 소절 반복": {"vi": "Lặp lại đoạn nhạc thật của câu này", "cs": "Opakovat tuto větu z nahrávky", "zh_cn": "循环播放这一句的原曲", "zh": "循環播放這一句的原曲", "en": "Repeat this line from the real recording", "fr": "Répéter cette ligne de l'enregistrement", "de": "Diese Zeile der Aufnahme wiederholen", "hu": "Sor ismétlése a felvételről", "id": "Ulangi baris ini dari rekaman asli", "ja": "この一節を原曲でリピート", "pl": "Powtarzaj ten wers z nagrania"},
+    "소절 반복 정지": {"vi": "Dừng lặp", "cs": "Zastavit opakování", "zh_cn": "停止循环", "zh": "停止循環", "en": "Stop repeating", "fr": "Arrêter la répétition", "de": "Wiederholung stoppen", "hu": "Ismétlés leállítása", "id": "Hentikan pengulangan", "ja": "リピート停止", "pl": "Zatrzymaj powtarzanie"},
     "총 반복 횟수": {"vi": "Số lần lặp", "cs": "Počet opakování", "zh_cn": "总重复次数", "zh": "總重複次數", "en": "Total plays", "fr": "Nombre de lectures", "de": "Wiedergaben gesamt", "hu": "Lejátszások száma", "id": "Total pengulangan", "ja": "合計リピート回数", "pl": "Liczba odtworzeń"},
     "자동 넘김시 총 반복 횟수": {"vi": "Số lần lặp mỗi thẻ khi tự động chuyển", "cs": "Celkový počet opakování karty při automatickém přehrávání", "zh_cn": "自动切换时每张卡片的总重复次数", "zh": "自動切換時每張卡片的總重複次數", "en": "Total plays of each card when auto-play is on", "fr": "Nombre total de lectures de chaque carte en lecture automatique", "de": "Wiedergaben je Karte bei automatischem Weiterschalten", "hu": "Egy kártya összes lejátszása automatikus lejátszáskor", "id": "Total pengulangan tiap kartu saat putar otomatis", "ja": "自動切り替え時の1枚あたりの合計リピート回数", "pl": "Łączna liczba odtworzeń każdej karty przy automatycznym przechodzeniu"},
     "자동 넘김": {"vi": "Tự động chuyển", "cs": "Automatické přehrávání", "zh_cn": "自动切换", "zh": "自動切換", "en": "Auto-play", "fr": "Défilement auto", "de": "Automatisch weiter", "hu": "Automatikus léptetés", "id": "Lanjut Otomatis", "ja": "自動送り", "pl": "Automatyczne przewijanie"},
@@ -2327,6 +2330,7 @@
   }
   function cancelSpeech() { endSpeechRun(speechRun, true); }
   function newSpeechRun() {
+    songSegStop();
     endSpeechRun(speechRun, true);
     speechRun = { id: ++speechRunSeq, ended: false, cur: null, timers: [], spoke: false };
     return speechRun;
@@ -2805,6 +2809,7 @@
   }
   // Stops whatever is being read (a 전체 듣기 sequence, a single phrase, a pending repetition).
   function stopAllSpeech() {
+    songSegStop();   // the music of a line is part of what a screen change / a new reading ends
     if (readAllState.id) { stopReadAllSequence(); return; }
     cancelSpeech();
   }
@@ -10114,6 +10119,173 @@ function verifyDistribution(units, dist, pins) {
     });
     return rows;
   }
+  // ---- the real music of one lyric line (never TTS) ----
+  // The official jw.org audio of the song (MP3, streamed from jw.org's own CDN, nothing is stored or re-hosted here) has official timed
+  // metadata: jw.org's media API (GETPUBMEDIALINKS) lists, per song and language, the file and `markers` -- one {startTime, duration} per
+  // sung line. A line gets ▶ (that part of the music once) and ↻ (that part again and again) ONLY when the language's marker count equals the
+  // number of singable lines on screen; otherwise no button (no timing is ever guessed, split evenly or copied from another language, and the
+  // speech engine is never used instead). The audio of a language is the audio of that language: the Vietnamese row plays the Vietnamese
+  // recording, the target row the recording in the UI language.
+  var SONG_SEG_API = "https://b.jw-cdn.org/apis/pub-media/GETPUBMEDIALINKS?output=json&fileformat=MP3&alllangs=0";
+  var SONG_SEG_GAP_MS = 250;      // silence between two plays of the same part (the music's own, not the speech timings)
+  var SONG_SEG_PRE_MS = 40;       // a little before the marker so the first syllable is not clipped
+  var SONG_SEG_STRUCT = /^\s*(\(.*\)|（.*）|[\[【].*[\]】]|\d+\s*[.．。]?|[※＊*].*)\s*$/;   // a chorus label, a bare verse number ...: no sound of its own
+  function songSegSingable(t) { t = String(t || "").trim(); return !!t && !SONG_SEG_STRUCT.test(t); }
+  // [publication, track] of a song of a collection, as jw.org's media API names them (never computed from a position)
+  function songSegPubTrack(kind, key) {
+    var k = String(key), m;
+    if (kind === "kingdom") return ["sjjm", parseInt(k, 10)];
+    if (kind === "original" && (m = /^osg-(\d+)$/.exec(k))) return ["osg", parseInt(m[1], 10)];
+    if (kind === "children") {
+      if ((m = /^pkon-(\d+)$/.exec(k))) return ["pkon", parseInt(m[1], 10)];
+      if (k === "pk-special-0") return ["pk", 0];
+    }
+    return null;
+  }
+  function songSegTime(t) {
+    var m = /^(\d+):(\d+):(\d+(?:\.\d+)?)$/.exec(String(t || ""));
+    return m ? Math.round((parseInt(m[1], 10) * 3600 + parseInt(m[2], 10) * 60 + parseFloat(m[3])) * 1000) : NaN;
+  }
+  var songSegInfo = {};      // "kind|key|lang" -> { url, marks:[{s,e}] } once resolved, null when this song/language has none
+  var songSegAsk = {};
+  // Resolves (once) the official file and markers of a song in a language. null: unavailable / no markers / not plain ascending times.
+  function songSegResolve(kind, key, lang) {
+    var id = kind + "|" + key + "|" + lang;
+    if (songSegAsk[id]) return songSegAsk[id];
+    var pt = songSegPubTrack(kind, key), loc = songJwLocale(lang);
+    if (!pt || !loc || typeof fetch !== "function") return (songSegAsk[id] = Promise.resolve(null));
+    songSegAsk[id] = fetch(SONG_SEG_API + "&pub=" + pt[0] + "&track=" + pt[1] + "&langwritten=" + loc[0], { credentials: "omit" })
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (j) {
+        var f = j && j.files && j.files[loc[0]] && j.files[loc[0]].MP3 && j.files[loc[0]].MP3[0];
+        var url = f && f.file && f.file.url, mk = f && f.markers && f.markers.markers;
+        if (!url || !/^https:\/\/[a-z0-9.-]+\.jw-cdn\.org\//.test(url) || !mk || !mk.length) return null;
+        var marks = [], prev = -1;
+        for (var i = 0; i < mk.length; i++) {
+          var st = songSegTime(mk[i].startTime), du = songSegTime(mk[i].duration);
+          if (!(st >= prev) || !(du > 0)) return null;   // not ascending / no length: not usable as it is
+          marks.push({ s: st, e: st + du }); prev = st;
+        }
+        return { url: url, marks: marks };
+      })
+      .catch(function () { return null; })
+      .then(function (info) { songSegInfo[id] = info; return info; });
+    return songSegAsk[id];
+  }
+  var songSeg = { audio: null, token: 0, btn: null, loop: false, raf: 0, timer: 0 };
+  function songSegMarkUi(on) {
+    var b = songSeg.btn;
+    if (!b) return;
+    var unit = b.closest && b.closest(".lyric-unit");
+    if (unit) unit.classList.toggle("song-seg-active", on);
+    b.classList.toggle("is-playing", on);
+    if (b.getAttribute("data-seg") === "loop") {
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+      b.setAttribute("aria-label", TU(on ? "소절 반복 정지" : "실제 노래 소절 반복"));
+    }
+  }
+  // Ends whatever the segment player is doing (the only way a play or a repeat ends besides reaching its end): invalidates every pending
+  // timer / frame / callback of it by the token.
+  function songSegStop() {
+    songSeg.token++;
+    if (songSeg.raf) { cancelAnimationFrame(songSeg.raf); songSeg.raf = 0; }
+    if (songSeg.timer) { clearTimeout(songSeg.timer); songSeg.timer = 0; }
+    try { if (songSeg.audio && !songSeg.audio.paused) songSeg.audio.pause(); } catch (eP) { /* no-op */ }
+    songSegMarkUi(false);
+    songSeg.btn = null; songSeg.loop = false;
+  }
+  function songSegPlay(btn) {
+    var loop = btn.getAttribute("data-seg") === "loop";
+    if (songSeg.btn === btn) { songSegStop(); return; }   // the same button again: stop
+    var info = songSegInfo[btn.getAttribute("data-seg-id")], i = parseInt(btn.getAttribute("data-seg-i"), 10), mark = info && info.marks[i];
+    stopAllSpeech();   // speech (and 전체 듣기) and the music never run together
+    songSegStop();
+    if (!mark) return;
+    ensurePlaybackSession("song audio");
+    var my = songSeg.token;
+    songSeg.btn = btn; songSeg.loop = loop;
+    songSegMarkUi(true);
+    var a = songSeg.audio || (songSeg.audio = new Audio());
+    a.preload = "auto";
+    function alive() { return songSeg.token === my && btn.isConnected; }
+    function fail() { if (songSeg.token === my) songSegStop(); }
+    function watch() {
+      if (!alive()) { if (songSeg.token === my) songSegStop(); return; }
+      if (a.ended || a.currentTime * 1000 >= mark.e - 15) {
+        try { a.pause(); } catch (eW) { /* no-op */ }
+        songSeg.raf = 0;
+        if (!loop) { songSegStop(); return; }
+        songSeg.timer = setTimeout(function () { songSeg.timer = 0; if (alive()) cycle(); }, SONG_SEG_GAP_MS);
+        return;
+      }
+      songSeg.raf = requestAnimationFrame(watch);
+    }
+    function cycle() {
+      try {
+        a.currentTime = Math.max(0, mark.s - SONG_SEG_PRE_MS) / 1000;
+        var p = a.play();
+        if (p && p.catch) p.catch(fail);
+        songSeg.raf = requestAnimationFrame(watch);
+      } catch (eC) { fail(); }
+    }
+    a.onerror = fail;
+    if (a.getAttribute("data-url") === info.url && a.readyState >= 1) { a.muted = false; cycle(); return; }
+    // another file: start loading inside this tap (iOS lets a tap start audio), silent until it is seeked to the line
+    a.setAttribute("data-url", info.url);
+    a.muted = true; a.src = info.url;
+    var pl = a.play();
+    if (pl && pl.catch) pl.catch(fail);
+    a.addEventListener("loadedmetadata", function onMeta() {
+      a.removeEventListener("loadedmetadata", onMeta);
+      if (!alive()) return;
+      a.addEventListener("seeked", function onSeeked() { a.removeEventListener("seeked", onSeeked); if (alive()) { a.muted = false; songSeg.raf = requestAnimationFrame(watch); } });
+      try { a.currentTime = Math.max(0, mark.s - SONG_SEG_PRE_MS) / 1000; } catch (eS) { fail(); }
+    });
+  }
+  // Adds ▶ ↻ to the lines of one song box ([data-seg-kind][data-seg-key]); the box has the rows .lyric-vi-row / .lyric-target-row.
+  function songSegEnhance(box) {
+    box.setAttribute("data-seg-state", "1");
+    var kind = box.getAttribute("data-seg-kind"), key = box.getAttribute("data-seg-key");
+    var tl = box.getAttribute("data-seg-tl");   // "" = no target language row has its own language's lines
+    [["vi", ".lyric-vi-row", ".lyric-vi"], [tl, ".lyric-target-row", ".lyric-target"]].forEach(function (L) {
+      var lang = L[0];
+      if (!lang) return;
+      var rows = [];
+      box.querySelectorAll(L[1]).forEach(function (row) {
+        var t = row.querySelector(L[2]);
+        if (t && songSegSingable(t.textContent)) rows.push(row);
+      });
+      if (!rows.length) return;
+      songSegResolve(kind, key, lang).then(function (info) {
+        if (!info || info.marks.length !== rows.length || !box.isConnected) return;   // the counts must agree exactly: otherwise no button
+        var id = kind + "|" + key + "|" + lang;
+        rows.forEach(function (row, i) {
+          if (row.querySelector(".song-seg-btn")) return;
+          var common = ' data-seg-id="' + escapeAttr(id) + '" data-seg-i="' + i + '"';
+          row.insertAdjacentHTML("beforeend",
+            '<button type="button" class="song-seg-btn" data-seg="play"' + common + ' aria-label="' + escapeAttr(TU("실제 노래 소절 듣기")) + '">▶</button>' +
+            '<button type="button" class="song-seg-btn" data-seg="loop"' + common + ' aria-pressed="false" aria-label="' + escapeAttr(TU("실제 노래 소절 반복")) + '">↻</button>');
+        });
+      });
+    });
+  }
+  var songSegScanTimer = 0;
+  function songSegScan() {
+    songSegScanTimer = 0;
+    document.querySelectorAll("[data-seg-kind]:not([data-seg-state])").forEach(songSegEnhance);
+  }
+  if (typeof MutationObserver === "function" && document.body) {
+    new MutationObserver(function () { if (!songSegScanTimer) songSegScanTimer = setTimeout(songSegScan, 40); }).observe(document.body, { childList: true, subtree: true });
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest(".song-seg-btn");
+    if (b) { e.preventDefault(); songSegPlay(b); return; }
+    // another song opened / closed, another song picked: the music of the one before ends
+    if (e.target.closest && e.target.closest(".song-acc-head, .song-ctrl-bar, .song-picker-modal")) songSegStop();
+  });
+  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") songSegStop(); });
+  window.addEventListener("pagehide", songSegStop);
+  window.__songSeg = { audio: function () { return songSeg.audio; }, resolve: songSegResolve, stop: songSegStop, state: function () { return { btn: !!songSeg.btn, loop: songSeg.loop, token: songSeg.token }; }, info: songSegInfo };
   // ---- media / links ----
   var SONG_KIND_LABELS = { AUDIO: { ko: "오디오", vi: "Âm thanh", en: "Audio", ja: "音声", zh: "音訊", zh_cn: "音频", de: "Audio", fr: "Audio", pl: "Nagranie audio", cs: "Audio", hu: "Hanganyag", id: "Audio" } };
   // The jw.org link of one language of a song: its official media by kind + media key (the finder link built with that
@@ -10191,7 +10363,8 @@ function verifyDistribution(units, dist, pins) {
     var html = '';
     var readAll = readAllButtonHtml(songReadAllEntries(rows));
     if (links || readAll) html += '<div class="song-full-links">' + (links ? '<span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + links : '') + readAll + '</div>';
-    html += notes + '<div class="song-lyric-rows">';
+    var segKey = /^(osg|pkon|pk)-/.test(String(song.id)) ? String(song.id) : "", segKind = /^osg-/.test(String(song.id)) ? "original" : "children";
+    html += notes + '<div class="song-lyric-rows"' + (segKey ? ' data-seg-kind="' + segKind + '" data-seg-key="' + escapeAttr(segKey) + '" data-seg-tl="' + (tl && tOk ? escapeAttr(tl) : "") + '"' : '') + '>';
     rows.forEach(function (r) { html += songRowHtml(r); });
     return html + '</div>';
   }
@@ -10343,7 +10516,7 @@ function verifyDistribution(units, dist, pins) {
     if (viScripture) {
       songLines.push(targetScripture ? [viScripture, targetScripture] : viScripture);
     }
-    var lyricsHtml = "";
+    var lyricsHtml = "", segTargetOwn = true;
     sel.lines.forEach(function (l, idx) {
       var vi = (l.vi || "").trim();
       if (!vi) return;
@@ -10363,6 +10536,7 @@ function verifyDistribution(units, dist, pins) {
       }
 
       var lineMeaning = songSanitize((meaningsMap[String(idx)] && meaningsMap[String(idx)][currentLang]) || "");
+      if (!l[currentLang]) segTargetOwn = false;   // this row shows another language's line (the Korean fallback): no target music then
 
       songLines.push(target ? [vi, target] : vi);
 
@@ -10443,7 +10617,7 @@ function verifyDistribution(units, dist, pins) {
       '</div>' +
     '</div>';
 
-    html += '<div class="song-lyrics-container">' + lyricsHtml + '</div>';
+    html += '<div class="song-lyrics-container" data-seg-kind="kingdom" data-seg-key="' + sel.number + '" data-seg-tl="' + (segTargetOwn && currentLang !== "vi" ? currentLang : "") + '">' + lyricsHtml + '</div>';
 
     // Bottom Navigation
     html += '<div class="song-detail-bottom-nav">' +
