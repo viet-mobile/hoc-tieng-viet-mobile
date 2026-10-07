@@ -351,7 +351,7 @@ CONSONANTS_COMPLEX = [['ch, tr',
    'pl': 'Wymawia się jak zwykłe „g”, ale zapisuje się jako „gh” przed samogłoskami e, ê, i.'},
   'ghi, ghe'],
  ['ng, ngh',
-  {'ko': "한글의 '응으'에 해당하나 한국 사람이 발음하기 어려운 비음입니다. e, ê, i 등의 모음 앞에서는 ngh로 씁니다.",
+  {'ko': "한글의 '응'에 해당하나 한국 사람이 발음하기 어려운 비음입니다. e, ê, i 등의 모음 앞에서는 ngh로 씁니다.",
    'zh': '華語（國語）沒有這個音（華語的ng只出現在音節結尾），但閩南語（台語）中有以ng開頭的字，例如「硬」(ngē)，可以參考閩南語的發音方式。e, ê, i等元音前寫作ngh。',
    'en': 'English doesn\'t have this sound at the beginning of a word, only at the end (as in "sing"). Try saying '
          '"sing" and then just the "-ng" part, then move that sound to the front of a word. Before vowels such as e, '
