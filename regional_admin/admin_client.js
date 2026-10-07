@@ -357,7 +357,7 @@
       '<h2 style="font-size:20px;font-weight:800;margin-bottom:8px;text-align:center;">' + esc(boot.regionName) + ' 관리자 로그인</h2>' +
       '<p style="color:var(--ink-soft);font-size:13px;margin-bottom:20px;text-align:center;">' + esc(boot.regionName) + ' 지역 관리 권한을 가진 계정으로 로그인하세요.</p>' +
       '<form id="login-form">' +
-      '<div class="form-group"><label for="login-username">아이디</label><input type="text" id="login-username" class="form-control" required autocomplete="username"></div>' +
+      '<div class="form-group"><label for="login-username">아이디</label><input type="text" id="login-username" class="form-control" required autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false"></div>' +
       '<div class="form-group"><label for="login-password">비밀번호</label><input type="password" id="login-password" class="form-control" required autocomplete="current-password"></div>' +
       '<button type="submit" class="btn btn-primary" style="width:100%;padding:10px;margin-top:10px;">로그인</button>' +
       '</form></div>';
