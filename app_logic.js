@@ -2112,8 +2112,13 @@
   // session the engine has seen start from a gesture. Apple WebKit only, once per armed session (pagehide / background resets it).
   var IS_IOS_DEVICE = /iPhone|iPad|iPod/i.test(navigator.userAgent || "") || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var speechPrimed = false;
+  var SPEECH_PRIME_ON = false;
+  try { SPEECH_PRIME_ON = window.localStorage.getItem("vn-app-tts-prime") === "1" || /[?&]ttsprime=1/.test(location.search); } catch (ePrimeOn) { /* no-op */ }
   function primeSpeech() {
-    if (!IS_IOS_DEVICE || speechPrimed) return;   // iOS / iPadOS only: macOS Safari speaks as before
+    // OFF by default: on iOS 27.0.1 the diagnosis panel showed the engine "speaking" before the first real utterance and nothing
+    // after it starting (no start / end events, pending piling up) -- the silent "." utterance itself may never finish and then
+    // holds every real utterance behind it. ?ttsprime=1 (or localStorage vn-app-tts-prime = 1) turns it back on for comparison.
+    if (!SPEECH_PRIME_ON || !IS_IOS_DEVICE || speechPrimed) return;   // iOS / iPadOS only: macOS Safari speaks as before
     var synth = speechSynth();
     if (!synth || typeof SpeechSynthesisUtterance === "undefined") return;
     try {
@@ -2193,6 +2198,7 @@
           try { v = synth.getVoices() || []; } catch (e) { note.push("getVoices threw " + e); }
           var base = lang.slice(0, 2), mine = v.filter(function (x) { return String(x.lang).toLowerCase().replace("_", "-").indexOf(base) === 0; });
           note.push("voices " + v.length + ", " + base + ": " + mine.map(function (x) { return x.name + "/" + x.lang + (x.localService ? "/local" : ""); }).join(" | "));
+          note.push("prime=" + SPEECH_PRIME_ON + "/" + speechPrimed + ", " + (navigator.audioSession ? "audioSession.type=" + navigator.audioSession.type : "no audioSession API"));
           note.push("activation " + (navigator.userActivation ? (navigator.userActivation.isActive + "/" + navigator.userActivation.hasBeenActive) : "n/a") + ", speaking " + synth.speaking + ", pending " + synth.pending + ", paused " + synth.paused);
           try {
             var u = new SpeechSynthesisUtterance(text);
