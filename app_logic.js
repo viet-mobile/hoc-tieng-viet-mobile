@@ -2481,13 +2481,29 @@
   // through this one function, so the setting takes effect everywhere Vietnamese is read aloud
   // (전체 듣기's own Vietnamese step is handled separately by readAllItems(), since it chains
   // through a shared token/state object rather than a plain callback).
+  // 반복 듣기 on Apple Safari / iOS / iPadOS: every utterance of the run costs the engine's own start-up time on top of the app's gap,
+  // so the repetitions of a short phrase were heard far apart however small the gap was set. A phrase that fits in one chunk is
+  // therefore spoken as ONE utterance with the repetitions joined by a comma ("anh Hiếu, anh Hiếu, anh Hiếu"): no engine start-up
+  // between them, only the natural comma pause. Longer texts, and every other engine (small gap there), repeat utterance by utterance.
+  function repeatPlan(chunks) {
+    var reps = viRepeatCount;
+    if (reps > 1 && IS_APPLE_WEBKIT_SPEECH && !IS_CHROMIUM_ENGINE && chunks.length === 1) {
+      var t = chunks[0], tail = (/[.!?…]+$/.exec(t) || [""])[0], base = t.replace(/[\s.,;:!?…]+$/, "");
+      if (base && (base.length + 2) * reps <= SPEECH_CHUNK_MAX) {
+        var rep = [];
+        for (var k = 0; k < reps; k++) rep.push(base);
+        return { chunks: [rep.join(", ") + tail], reps: 1 };
+      }
+    }
+    return { chunks: chunks, reps: reps };
+  }
   function speak(text, onDone, gaps) {
     if (readAllState.id) stopReadAllSequence();
-    var o = targetSpeechOpts(text), chunks = speechChunks(o.text), items = [];
+    var o = targetSpeechOpts(text), plan = repeatPlan(speechChunks(o.text)), chunks = plan.chunks, items = [];
     var repeatGap = gaps ? gaps.repeat : VI_REPEAT_GAP_MS;
-    for (var r = 0; r < viRepeatCount; r++) {
+    for (var r = 0; r < plan.reps; r++) {
       chunks.forEach(function (c, ci) {
-        items.push({ opts: Object.assign({}, o, { text: c }), gap: (ci === chunks.length - 1 && r < viRepeatCount - 1) ? repeatGap : 0 });
+        items.push({ opts: Object.assign({}, o, { text: c }), gap: (ci === chunks.length - 1 && r < plan.reps - 1) ? repeatGap : 0 });
       });
     }
     playSpeechRun(items, { onDone: onDone });
@@ -2753,11 +2769,11 @@
     var repeatGap = gaps ? gaps.repeat : VI_REPEAT_GAP_MS, languageGap = gaps ? gaps.language : READALL_STEP_GAP_MS, rowGap = gaps ? gaps.row : READALL_ROW_GAP_MS;
     texts.forEach(function (entry, ei) {
       if (entry.vi) {
-        var o = targetSpeechOpts(entry.vi), chunks = speechChunks(o.text);
-        for (var r = 0; r < viRepeatCount; r++) {
+        var o = targetSpeechOpts(entry.vi), plan = repeatPlan(speechChunks(o.text)), chunks = plan.chunks;
+        for (var r = 0; r < plan.reps; r++) {
           chunks.forEach(function (c, ci) {
             var lastChunk = ci === chunks.length - 1;
-            items.push({ ei: ei, opts: Object.assign({}, o, { text: c }), gap: !lastChunk ? 0 : (r < viRepeatCount - 1 ? repeatGap : languageGap) });
+            items.push({ ei: ei, opts: Object.assign({}, o, { text: c }), gap: !lastChunk ? 0 : (r < plan.reps - 1 ? repeatGap : languageGap) });
           });
         }
       }
