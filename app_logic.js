@@ -2150,11 +2150,18 @@
       if (!AC) return;
       if (!window.__globalAudioCtx) window.__globalAudioCtx = new AC();
       var ctx = window.__globalAudioCtx;
-      if (ctx.state === "suspended") ctx.resume();
-      var src = ctx.createBufferSource();
-      src.buffer = ctx.createBuffer(1, 1, 22050);
-      src.connect(ctx.destination);
-      src.start(0);
+      if (ctx.state !== "running") ctx.resume();
+      // iOS 27.0.1: the test utterance was accepted (nothing busy before it) yet no start event came for 11 s, then 'canceled' --
+      // the engine seems to wait for an ACTIVE playback audio session. A one-sample buffer ends at once and the session goes idle
+      // again, so a silent oscillator (gain ~0) keeps the Web Audio graph -- and with it the page's playback session -- running.
+      if (!window.__silentKeep) {
+        var osc = ctx.createOscillator(), gain = ctx.createGain();
+        gain.gain.value = 0.00001;
+        osc.frequency.value = 20;
+        osc.connect(gain); gain.connect(ctx.destination);
+        osc.start(0);
+        window.__silentKeep = osc;
+      }
     } catch (eAc) { /* no-op */ }
   }
   ["pointerdown", "touchend", "keydown", "click"].forEach(function (type) {
@@ -2198,6 +2205,7 @@
           try { v = synth.getVoices() || []; } catch (e) { note.push("getVoices threw " + e); }
           var base = lang.slice(0, 2), mine = v.filter(function (x) { return String(x.lang).toLowerCase().replace("_", "-").indexOf(base) === 0; });
           note.push("voices " + v.length + ", " + base + ": " + mine.map(function (x) { return x.name + "/" + x.lang + (x.localService ? "/local" : ""); }).join(" | "));
+          note.push("webaudio=" + (window.__globalAudioCtx ? window.__globalAudioCtx.state : "none") + ", keep=" + !!window.__silentKeep);
           note.push("prime=" + SPEECH_PRIME_ON + "/" + speechPrimed + ", " + (navigator.audioSession ? "audioSession.type=" + navigator.audioSession.type : "no audioSession API"));
           note.push("activation " + (navigator.userActivation ? (navigator.userActivation.isActive + "/" + navigator.userActivation.hasBeenActive) : "n/a") + ", speaking " + synth.speaking + ", pending " + synth.pending + ", paused " + synth.paused);
           try {
@@ -2206,8 +2214,15 @@
             if (mine[0]) u.voice = mine[0];
             ["start", "end", "error", "pause", "resume"].forEach(function (t) { u["on" + t] = function (ev) { speechDiagPanel("TEST " + lang + " " + t + (ev && ev.error ? " " + ev.error : "")); }; });
             window.__activeUtterances.push(u);
+            var gotStart = false, prevStart = u.onstart;
+            u.onstart = function (ev) { gotStart = true; if (prevStart) prevStart(ev); };
             synth.speak(u);
             note.push("speak() called inside the tap");
+            setTimeout(function () {
+              var sp = false, pe = false;
+              try { sp = synth.speaking; pe = synth.pending; } catch (eT) { /* no-op */ }
+              speechDiagPanel("TEST " + lang + (gotStart ? " started within 3 s" : " NO START after 3 s") + " (speaking " + sp + ", pending " + pe + ", webaudio " + (window.__globalAudioCtx ? window.__globalAudioCtx.state : "none") + ")");
+            }, 3000);
           } catch (e) { note.push("speak threw " + e); }
           speechDiagPanel(note.join("\n"));
         };
