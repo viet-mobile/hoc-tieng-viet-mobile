@@ -2139,12 +2139,31 @@
   // for a playback session (Audio Session API, where it exists) and plays one silent sample through Web Audio -- the usual unlock.
   // Harmless where unsupported; the diagnosis panel (?ttsdebug=1) reports what the device said.
   var audioSessionNote = "";
+  // The Audio Session API (navigator.audioSession): where it exists, type "playback" is the media-playback session, which the ringer
+  // (silent) switch does not mute; the default ("auto") session follows the switch for speech. Nothing happens where it is missing.
+  function supportsAudioSession() {
+    try { return !!(navigator.audioSession && typeof navigator.audioSession.type === "string"); } catch (e) { return false; }
+  }
+  var audioSessionWatched = false;
+  // iOS / iPadOS only (macOS, Windows and Android are not touched): the session is made "playback" BEFORE any utterance is handed to the
+  // engine -- at a tap (unlockAudioSession), at the start of a speech run, and on coming back to the front -- and then simply stays: it is
+  // set only when it is not playback already, never cycled between runs or between the utterances of a run.
+  function ensurePlaybackSession(why) {
+    if (!IS_IOS_DEVICE || !supportsAudioSession()) { audioSessionNote = IS_IOS_DEVICE ? "no audioSession API" : audioSessionNote; return; }
+    try {
+      var before = navigator.audioSession.type;
+      if (before !== "playback") navigator.audioSession.type = "playback";
+      audioSessionNote = "audioSession.type=" + navigator.audioSession.type + " state=" + navigator.audioSession.state + " (" + why + (before !== "playback" ? ", was " + before : "") + ")";
+      if (speechDebugOn) speechDiagPanel("audioSession " + why + ": " + before + " -> " + navigator.audioSession.type + ", state " + navigator.audioSession.state);
+      if (!audioSessionWatched && navigator.audioSession.addEventListener) {
+        audioSessionWatched = true;
+        navigator.audioSession.addEventListener("statechange", function () { if (speechDebugOn) speechDiagPanel("audioSession statechange: state " + navigator.audioSession.state + ", type " + navigator.audioSession.type); });
+      }
+    } catch (eAs) { audioSessionNote = "audioSession threw " + eAs; }   // a refused assignment never stops the speech
+  }
   function unlockAudioSession() {
     if (!IS_IOS_DEVICE) return;
-    try {
-      if (navigator.audioSession && navigator.audioSession.type !== "playback") navigator.audioSession.type = "playback";
-      audioSessionNote = navigator.audioSession ? "audioSession.type=" + navigator.audioSession.type : "no audioSession API";
-    } catch (eAs) { audioSessionNote = "audioSession threw " + eAs; }
+    ensurePlaybackSession("tap");
     try {
       var AC = window.AudioContext || window.webkitAudioContext;
       if (!AC) return;
@@ -2197,11 +2216,20 @@
       el.style.cssText = "position:fixed;left:0;right:0;bottom:0;z-index:99999;max-height:42vh;overflow:auto;background:rgba(0,0,0,.88);color:#9f9;font:11px/1.35 monospace;padding:6px 8px;white-space:pre-wrap;";
       var b1 = document.createElement("button"), b2 = document.createElement("button"), out = document.createElement("div");
       b1.textContent = "TEST vi-VN"; b2.textContent = "TEST en-US";
-      [b1, b2].forEach(function (b) { b.style.cssText = "margin:0 6px 4px 0;padding:4px 8px;font:12px sans-serif;"; });
+      var b3 = document.createElement("button"), b4 = document.createElement("button");
+      b3.textContent = "A: vi DEFAULT session"; b4.textContent = "B: vi PLAYBACK session";
+      [b1, b2, b3, b4].forEach(function (b) { b.style.cssText = "margin:0 6px 4px 0;padding:4px 8px;font:12px sans-serif;"; });
       out.id = "tts-diag-log";
-      function test(lang, text) {
+      function test(lang, text, mode) {
         return function () {
           var synth = speechSynth(), v = [], note = [];
+          // mode "default": the session is put back to the system default ("auto") for this one test (A of the A/B); otherwise the helper
+          // of the app (playback) -- on a device with the ringer switch on silent: DEFAULT silent and PLAYBACK audible = the cause
+          try {
+            if (mode === "default") { if (supportsAudioSession()) navigator.audioSession.type = "auto"; }
+            else ensurePlaybackSession("TEST");
+            note.push("audioSession " + (supportsAudioSession() ? "supported, type " + navigator.audioSession.type + ", state " + navigator.audioSession.state : "NOT supported") + (mode === "default" ? " (DEFAULT test)" : ""));
+          } catch (eMode) { note.push("audioSession threw " + eMode); }
           try { v = synth.getVoices() || []; } catch (e) { note.push("getVoices threw " + e); }
           var base = lang.slice(0, 2), mine = v.filter(function (x) { return String(x.lang).toLowerCase().replace("_", "-").indexOf(base) === 0; });
           note.push("voices " + v.length + ", " + base + ": " + mine.map(function (x) { return x.name + "/" + x.lang + (x.localService ? "/local" : ""); }).join(" | "));
@@ -2228,7 +2256,8 @@
         };
       }
       b1.onclick = test("vi-VN", "Xin chào"); b2.onclick = test("en-US", "Hello");
-      el.appendChild(b1); el.appendChild(b2); el.appendChild(out);
+      b3.onclick = test("vi-VN", "Xin chào", "default"); b4.onclick = test("vi-VN", "Xin chào", "playback");
+      el.appendChild(b1); el.appendChild(b2); el.appendChild(b3); el.appendChild(b4); el.appendChild(out);
       document.body.appendChild(el);
       speechDiagPanel("ua " + navigator.userAgent + "\napple=" + IS_APPLE_WEBKIT_SPEECH + " armed=" + speechArmed + " primed=" + speechPrimed + "\n" + (audioSessionNote || (navigator.audioSession ? "audioSession.type=" + navigator.audioSession.type + " (before the first tap)" : "no audioSession API")));
     }
@@ -2420,6 +2449,7 @@
   // called after the run was stopped or replaced. Returns the run.
   function playSpeechRun(items, handlers) {
     handlers = handlers || {};
+    ensurePlaybackSession("run");   // before the first utterance of the run is handed to the engine
     var run = newSpeechRun();
     var finishedRun = false;
     function complete() {
@@ -14389,6 +14419,7 @@ function verifyDistribution(units, dist, pins) {
   var lastBuildCheck = 0;
   function onPageResume() {
     if (document.visibilityState === "hidden") return;
+    ensurePlaybackSession("back to the front");
     if (IS_APPLE_WEBKIT_SPEECH && (!speechRun || speechRun.ended)) {
       try { window.speechSynthesis.cancel(); } catch (eCancel) { /* no-op */ }
       lastSpeechCancelAt = Date.now();
