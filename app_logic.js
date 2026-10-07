@@ -2106,8 +2106,35 @@
   // no run starts before a real tap / key press. The tap arms the page's speech session; leaving the page (pagehide, or
   // the page going to the background) ends it, so nothing resumes by itself on return.
   var speechArmed = false;
+  // Speech unlock (iOS / iPadOS 27 stopped speaking after the system update while the same page still spoke on iOS 26 / macOS 26): on the
+  // first real tap of the page's session, inside that very tap, a silent utterance (volume 0) is handed to the engine, the way audio is
+  // unlocked on iOS -- later speak() calls of the runs (they follow from timers, after a settle, not inside a tap) then belong to a
+  // session the engine has seen start from a gesture. Apple WebKit only, once per armed session (pagehide / background resets it).
+  var IS_IOS_DEVICE = /iPhone|iPad|iPod/i.test(navigator.userAgent || "") || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var speechPrimed = false;
+  function primeSpeech() {
+    if (!IS_IOS_DEVICE || speechPrimed) return;   // iOS / iPadOS only: macOS Safari speaks as before
+    var synth = speechSynth();
+    if (!synth || typeof SpeechSynthesisUtterance === "undefined") return;
+    try {
+      var u = new SpeechSynthesisUtterance(".");
+      u.volume = 0;
+      u.lang = "vi-VN";
+      window.__activeUtterances.push(u);
+      var drop = function () { var i = window.__activeUtterances.indexOf(u); if (i >= 0) window.__activeUtterances.splice(i, 1); };
+      u.onend = drop; u.onerror = drop;
+      synth.speak(u);
+      speechPrimed = true;
+      speechPrimedAt = Date.now();
+    } catch (ePrime) { /* no-op */ }
+  }
+  var speechPrimedAt = 0;
   ["pointerdown", "touchend", "keydown", "click"].forEach(function (type) {
-    document.addEventListener(type, function (e) { if (e.isTrusted) speechArmed = true; }, { capture: true, passive: true });
+    document.addEventListener(type, function (e) {
+      if (!e.isTrusted) return;
+      speechArmed = true;
+      if (type === "touchend" || type === "click" || type === "keydown") primeSpeech();
+    }, { capture: true, passive: true });
   });
   function speechAllowed() {
     if (!IS_APPLE_WEBKIT_SPEECH) return true;
@@ -2122,6 +2149,52 @@
     if (!speechDebugOn) return;
     var line = "run=" + (run ? run.id : "-") + " item=" + item + " event=" + event + (extra ? " " + extra : "");
     try { (window.__ttsDebug = window.__ttsDebug || []).push(line); if (window.__ttsDebug.length > 300) window.__ttsDebug.shift(); console.debug("[tts] " + line); } catch (eLog) { /* no-op */ }
+    try { speechDiagPanel(line); } catch (eDiag) { /* no-op */ }
+  }
+  // On-screen speech diagnosis (only with ?ttsdebug=1): the last events of the speech manager, the voices the device offers, and a button that
+  // speaks with the bare engine from inside the tap -- to tell "this device / OS gives no speech" from "the app's runs do not start".
+  function speechDiagPanel(line) {
+    if (!speechDebugOn || !document.body) return;
+    var el = document.getElementById("tts-diag");
+    if (!el) {
+      el = document.createElement("div");
+      el.id = "tts-diag";
+      el.style.cssText = "position:fixed;left:0;right:0;bottom:0;z-index:99999;max-height:42vh;overflow:auto;background:rgba(0,0,0,.88);color:#9f9;font:11px/1.35 monospace;padding:6px 8px;white-space:pre-wrap;";
+      var b1 = document.createElement("button"), b2 = document.createElement("button"), out = document.createElement("div");
+      b1.textContent = "TEST vi-VN"; b2.textContent = "TEST en-US";
+      [b1, b2].forEach(function (b) { b.style.cssText = "margin:0 6px 4px 0;padding:4px 8px;font:12px sans-serif;"; });
+      out.id = "tts-diag-log";
+      function test(lang, text) {
+        return function () {
+          var synth = speechSynth(), v = [], note = [];
+          try { v = synth.getVoices() || []; } catch (e) { note.push("getVoices threw " + e); }
+          var base = lang.slice(0, 2), mine = v.filter(function (x) { return String(x.lang).toLowerCase().replace("_", "-").indexOf(base) === 0; });
+          note.push("voices " + v.length + ", " + base + ": " + mine.map(function (x) { return x.name + "/" + x.lang + (x.localService ? "/local" : ""); }).join(" | "));
+          note.push("activation " + (navigator.userActivation ? (navigator.userActivation.isActive + "/" + navigator.userActivation.hasBeenActive) : "n/a") + ", speaking " + synth.speaking + ", pending " + synth.pending + ", paused " + synth.paused);
+          try {
+            var u = new SpeechSynthesisUtterance(text);
+            u.lang = lang;
+            if (mine[0]) u.voice = mine[0];
+            ["start", "end", "error", "pause", "resume"].forEach(function (t) { u["on" + t] = function (ev) { speechDiagPanel("TEST " + lang + " " + t + (ev && ev.error ? " " + ev.error : "")); }; });
+            window.__activeUtterances.push(u);
+            synth.speak(u);
+            note.push("speak() called inside the tap");
+          } catch (e) { note.push("speak threw " + e); }
+          speechDiagPanel(note.join("\n"));
+        };
+      }
+      b1.onclick = test("vi-VN", "Xin chào"); b2.onclick = test("en-US", "Hello");
+      el.appendChild(b1); el.appendChild(b2); el.appendChild(out);
+      document.body.appendChild(el);
+      speechDiagPanel("ua " + navigator.userAgent + "\napple=" + IS_APPLE_WEBKIT_SPEECH + " armed=" + speechArmed + " primed=" + speechPrimed);
+    }
+    if (line) {
+      var log = document.getElementById("tts-diag-log");
+      if (log) { log.textContent += (new Date().toISOString().slice(11, 23)) + " " + line + "\n"; el.scrollTop = el.scrollHeight; }
+    }
+  }
+  if (speechDebugOn) {
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", function () { speechDiagPanel(""); }); else setTimeout(function () { speechDiagPanel(""); }, 0);
   }
   var speechRunSeq = 0;
   var speechRun = null;          // the run in charge (it may already be finished)
@@ -2245,6 +2318,8 @@
       u.onerror = function (ev) {
         if (cur !== u) return;
         speechLog(run, item, "error", ev && ev.error ? String(ev.error) : "");
+        // 'not-allowed': the engine did not take this speak() as started by a tap -> the next tap arms and unlocks the session again
+        if (ev && ev.error === "not-allowed") { speechArmed = false; speechPrimed = false; }
         finish("error");
       };
       try { synth.speak(u); } catch (eSpeak) { speechLog(run, item, "speak-threw"); finish("error"); return; }
@@ -2626,9 +2701,9 @@
   }, true);
   // Leaving the page ends the speech and the page's speech session. On Apple WebKit the page going to the background does
   // too (the app is suspended, its callbacks come back stale): nothing resumes by itself on return, a new tap starts again.
-  window.addEventListener("pagehide", function () { stopAllSpeech(); speechArmed = false; });
+  window.addEventListener("pagehide", function () { stopAllSpeech(); speechArmed = false; speechPrimed = false; });
   document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "hidden" && IS_APPLE_WEBKIT_SPEECH) { stopAllSpeech(); speechArmed = false; }
+    if (document.visibilityState === "hidden" && IS_APPLE_WEBKIT_SPEECH) { stopAllSpeech(); speechArmed = false; speechPrimed = false; }
   });
   function stopReadAllSequence() {
     stopReadAllKeepAlive();
