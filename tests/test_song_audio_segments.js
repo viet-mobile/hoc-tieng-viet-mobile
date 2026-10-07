@@ -52,36 +52,56 @@ const engine = apple => `(() => {
 
 const MOCK = `(() => {
   const SING = t => { t = String(t || '').trim(); return !!t && !/^\\s*(\\(.*\\)|（.*）|[\\[【].*[\\]】]|\\d+\\s*[.．。]?|[※＊*].*)\\s*$/.test(t); };
-  const cfg = window.__segCfg = {skew: {}, none: {}, dur: 0.4, step: 0.5};   // skew['pub:track:code'] = +n markers; none[...] = no file
+  // cfg.none['pub:track:code'] = that recording does not exist; cfg.skew[...] = +n sung markers; cfg.noMarkers[...]; cfg.interlude[...] = one
+  // line holds a 40 s interlude; cfg.seekTo = where a seek lands instead of its target (a broken seek); cfg.nomarks99 = no pid-99 markers
+  const cfg = window.__segCfg = {none: {}, skew: {}, noMarkers: {}, interlude: {}, outro99: {}, seekTo: null, dur: 0.4, step: 0.5};
   const realFetch = window.fetch.bind(window);
   window.fetch = function (u, o) {
     const m = /pub-media\\/GETPUBMEDIALINKS.*pub=(\\w+)&track=(\\d+)&langwritten=(\\w+)/.exec(String(u));
     if (!m) return realFetch(u, o);
     const [, pub, track, code] = m, key = pub + ':' + track + ':' + code;
     window.__segFetch = (window.__segFetch || []).concat(key);
-    const kind = pub === 'sjjm' ? 'kingdom' : pub === 'osg' ? 'original' : 'children';
+    const kind = pub === 'sjjc' || pub === 'pksjj' || pub === 'sjjm' || pub === 'sjji' ? 'kingdom' : pub === 'osg' ? 'original' : 'children';
     const bkey = kind === 'kingdom' ? track : pub === 'osg' ? 'osg-' + track : pub === 'pkon' ? 'pkon-' + track : 'pk-special-0';
     const box = document.querySelector('[data-seg-kind="' + kind + '"][data-seg-key="' + bkey + '"]');
     const sel = code === 'VT' ? '.lyric-vi-row .lyric-vi' : '.lyric-target-row .lyric-target';
     const n = box ? [...box.querySelectorAll(sel)].filter(e => SING(e.textContent)).length : 0;
-    if (cfg.none[key] || !n) return Promise.resolve({ok: true, json: () => Promise.resolve({files: {}})});
-    const cnt = n + (cfg.skew[key] || 0), marks = [];
-    for (let i = 0; i < cnt; i++) { const st = 1 + cfg.step * i; const f = x => { const h = Math.floor(x / 3600), mi = Math.floor(x % 3600 / 60), s = x % 60; return String(h).padStart(2, '0') + ':' + String(mi).padStart(2, '0') + ':' + s.toFixed(3).padStart(6, '0'); };
-      marks.push({startTime: f(st), duration: f(cfg.dur), mepsParagraphId: 4 + i}); }
-    const files = {}; files[code] = {MP3: [{file: {url: 'https://cfp2.jw-cdn.org/a/t/' + pub + '_' + code + '_' + track + '.mp3'}, markers: {markers: marks}, duration: 300}]};
+    // the Meetings edition exists everywhere (it must never be chosen); sjjc / pksjj exist unless cfg.none says otherwise; by default
+    // the children's recording has no markers (as on jw.org) and sjjc has markers
+    const exists = pub === 'sjjm' ? true : !cfg.none[key] && n > 0 && !(pub === 'pksjj' && cfg.none['pksjj:*']);
+    if (!exists) return Promise.resolve({ok: true, json: () => Promise.resolve({files: {}})});
+    const f = x => { const h = Math.floor(x / 3600), mi = Math.floor(x % 3600 / 60), s = x % 60; return String(h).padStart(2, '0') + ':' + String(mi).padStart(2, '0') + ':' + s.toFixed(3).padStart(6, '0'); };
+    let markers = null;
+    const hasMarkers = pub === 'pksjj' ? !!cfg.pksjjMarkers : !cfg.noMarkers[key];
+    if (hasMarkers) {
+      const cnt = n + (cfg.skew[key] || 0); markers = []; let t = 1 + (pub === 'sjjm' ? 100 : 0);   // sjjm times are far away: a wrong source is visible
+      for (let i = 0; i < cnt; i++) {
+        if (i === 2 && !cfg.nomarks99 && kind === 'kingdom') { markers.push({startTime: f(t), duration: f(3), mepsParagraphId: 99}); t += 3; }   // an interlude (non-vocal) between line 2 and 3
+        const d = (cfg.interlude[key] && i === 1) ? 40 : cfg.dur;
+        markers.push({startTime: f(t), duration: f(d), mepsParagraphId: 4 + i}); t += d; t = Math.round((t + (cfg.step - cfg.dur)) * 1000) / 1000;
+      }
+      if (kind === 'kingdom' || cfg.outro99[key]) markers.push({startTime: f(t), duration: f(2), mepsParagraphId: 99});   // the outro
+    }
+    const files = {}; files[code] = {MP3: [{file: {url: 'https://cfp2.jw-cdn.org/a/t/' + pub + '_' + code + '_' + track + '.mp3'}, markers: markers ? {markers} : null, duration: 300}]};
     return Promise.resolve({ok: true, json: () => Promise.resolve({files})});
   };
+  // an <audio> that behaves like a streamed MP3: metadata 15 ms after load(), seekable over the whole file then, a seek lands 5 ms later
+  // (at cfg.seekTo when set: a broken seek), currentTime advances in real time while playing; everything is logged into window.__aud
   window.__aud = [];
   window.Audio = function () {
-    const L = {}; let t = 0, since = 0, src = '', attrs = {};
+    const L = {}; let t = 0, since = 0, src = ''; let loaded = false;
+    const fire = n => (L[n] || []).slice().forEach(f => f());
     const a = { paused: true, muted: false, readyState: 0, ended: false, preload: '', onerror: null,
-      get src() { return src; }, set src(v) { src = v; a.readyState = 0; window.__aud.push({ev: 'src', v, t: Date.now()}); setTimeout(() => { a.readyState = 4; (L.loadedmetadata || []).slice().forEach(f => f()); }, 15); },
+      get src() { return src; }, set src(v) { src = v; loaded = false; a.readyState = 0; t = 0; window.__aud.push({ev: 'src', v, t: Date.now()}); },
+      load() { window.__aud.push({ev: 'load', t: Date.now()}); setTimeout(() => { if (loaded) return; loaded = true; a.readyState = 1; fire('loadedmetadata'); setTimeout(() => { a.readyState = 4; fire('canplay'); fire('progress'); }, 10); }, 15); },
+      get seekable() { return loaded ? {length: 1, start: () => 0, end: () => 300} : {length: 0}; },
       get currentTime() { return a.paused ? t : t + (performance.now() - since) / 1000; },
-      set currentTime(v) { t = v; since = performance.now(); window.__aud.push({ev: 'seek', v, t: Date.now()}); setTimeout(() => (L.seeked || []).slice().forEach(f => f()), 5); },
-      play() { window.__aud.push({ev: 'play', muted: a.muted, t: Date.now()}); if (a.paused) { a.paused = false; since = performance.now(); } return Promise.resolve(); },
+      set currentTime(v) { if (!loaded) { window.__aud.push({ev: 'seek-before-metadata', v, t: Date.now()}); t = 0; return; }
+        const land = cfg.seekTo != null ? cfg.seekTo : v; t = land; since = performance.now(); window.__aud.push({ev: 'seek', v, land, t: Date.now()}); setTimeout(() => fire('seeked'), 5); },
+      play() { window.__aud.push({ev: 'play', at: a.currentTime, ready: a.readyState, t: Date.now()}); if (!loaded) return Promise.reject(new Error('not loaded'));
+        if (a.paused) { a.paused = false; since = performance.now(); } return Promise.resolve(); },
       pause() { if (!a.paused) { t = a.currentTime; a.paused = true; window.__aud.push({ev: 'pause', at: t, t: Date.now()}); } },
-      addEventListener(n, f) { (L[n] = L[n] || []).push(f); }, removeEventListener(n, f) { L[n] = (L[n] || []).filter(x => x !== f); },
-      setAttribute(k, v) { attrs[k] = v; }, getAttribute(k) { return attrs[k] == null ? null : attrs[k]; } };
+      addEventListener(n, f) { (L[n] = L[n] || []).push(f); }, removeEventListener(n, f) { L[n] = (L[n] || []).filter(x => x !== f); } };
     window.__audio = a; return a;
   };
 })();`;
@@ -102,74 +122,123 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
     const errs = [];
     cdp.on('Runtime.exceptionThrown', e => errs.push('exception ' + e.exceptionDetails.text + ' ' + ((e.exceptionDetails.exception || {}).description || '').slice(0, 160)));
     const E = async expr => { const r = await cdp.send('Runtime.evaluate', {expression: expr, awaitPromise: true, returnByValue: true, userGesture: true}); if (r.exceptionDetails) errs.push('eval ' + ((r.exceptionDetails.exception || {}).description || '').slice(0, 200)); return r.result.value; };
-    for (const lang of ['ko', 'ja']) {
+    let cfgScript = null;
+    const NAV = async (cfgJs) => {
+      if (cfgScript) { await cdp.send('Page.removeScriptToEvaluateOnNewDocument', {identifier: cfgScript}); cfgScript = null; }
+      if (cfgJs) cfgScript = (await cdp.send('Page.addScriptToEvaluateOnNewDocument', {source: cfgJs})).identifier;
       await cdp.send('Page.navigate', {url: `http://127.0.0.1:${PORT}/jeonju/index.html?fresh=${Date.now()}`});
       for (let i = 0; i < 240; i++) { if (await E("document.readyState==='complete'&&typeof window.setLang==='function'")) break; await sleep(250); }
       await sleep(800);
       await cdp.send('Input.dispatchMouseEvent', {type: 'mousePressed', x: 2, y: 2, button: 'left', clickCount: 1});
       await cdp.send('Input.dispatchMouseEvent', {type: 'mouseReleased', x: 2, y: 2, button: 'left', clickCount: 1}); await sleep(150);
-      const r = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));const o={};const lang=${JSON.stringify(lang)};
-        window.setLang(lang);await sleep(300);
-        document.querySelector('.tab-btn[data-tab="sentence"]').click();await sleep(300);document.querySelector('.subtab-btn[data-sentence="song"]').click();await sleep(900);
-        const tts=()=>window.__tts.filter(x=>x.ev==='speak').length, aud=()=>window.__aud;
-        const box=()=>document.querySelector('[data-seg-kind="kingdom"]');
-        const btns=(sel)=>[...(box()||document).querySelectorAll('.song-seg-btn'+(sel||''))];
-        // 1. kingdom song 1: buttons on vi and target rows (the mock gives exactly as many markers as singable lines)
-        const rowsVi=[...box().querySelectorAll('.lyric-vi-row')].filter(r=>r.querySelector('.song-seg-btn')).length;
-        o.viRows=rowsVi; o.tgtRows=[...box().querySelectorAll('.lyric-target-row')].filter(r=>r.querySelector('.song-seg-btn')).length;
-        o.fetched=(window.__segFetch||[]).slice();
-        o.ids=btns('[data-seg="play"][data-seg-id$="|vi"]').map(b=>b.dataset.segI).join(',');
-        // 2. one play of vi line 3 (index 2): its own marker (start 1+0.5*2 = 2.0 s), ends at its end (2.4 s), no TTS
-        const b3=btns('[data-seg="play"][data-seg-id$="|vi"]')[2]; const t0=tts(); aud().length=0;
-        b3.click(); await sleep(900);
-        o.play=aud().map(x=>x.ev+(x.v!==undefined?':'+(typeof x.v==='number'?x.v.toFixed(2):x.v.split('/').pop()):'')+(x.at!==undefined?':'+x.at.toFixed(2):''));
+    };
+    // the mock's timeline of a song: line k (0-based, pid-99 markers left out) starts at 1 + 0.5k, plus a 3 s interlude before line 3
+    const START = k => 1 + 0.5 * k + (k >= 2 ? 3 : 0), TGT = k => (START(k) - 0.04).toFixed(2);
+    const OPEN = (lang, cfgJs) => `(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));window.setLang(${JSON.stringify(lang)});await sleep(300);${cfgJs || ''}
+      document.querySelector('.tab-btn[data-tab="sentence"]').click();await sleep(300);document.querySelector('.subtab-btn[data-sentence="song"]').click();await sleep(900);
+      const box=document.querySelector('[data-seg-kind="kingdom"]'); for(let i=0;i<40&&box&&!box.querySelector('.song-seg-btn');i++) await sleep(50); await sleep(100); return 1;})()`;
+    const HELP = `const tts=()=>window.__tts.filter(x=>x.ev==='speak').length, aud=()=>window.__aud, box=()=>document.querySelector('[data-seg-kind="kingdom"]'),
+      btns=(sel)=>[...(box()||document).querySelectorAll('.song-seg-btn'+(sel||''))], ev=()=>aud().map(x=>x.ev+(x.ev==='seek'?':'+x.v.toFixed(2)+'>'+x.land.toFixed(2):x.ev==='play'?':'+x.at.toFixed(2)+'/r'+x.ready:x.ev==='pause'?':'+x.at.toFixed(2):x.ev==='src'?':'+x.v.split('/').pop():'')),
+      untilPaused=async(ms)=>{const t0=Date.now();while(Date.now()-t0<ms&&!(window.__audio&&window.__audio.paused)) await sleep(20);};`;
+    for (const lang of ['ko', 'ja']) {
+      await NAV();
+      const r = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));const o={};const lang=${JSON.stringify(lang)};await (${OPEN(lang)});${HELP}
+        // 1. song 1: a ▶ ↻ pair on every singable line of each language, from the VOCALS recording (sjjc); the Meetings edition is never asked for
+        o.viRows=[...box().querySelectorAll('.lyric-vi-row')].filter(r=>r.querySelector('.song-seg-btn')).length;
+        o.tgtRows=[...box().querySelectorAll('.lyric-target-row')].filter(r=>r.querySelector('.song-seg-btn')).length;
+        o.fetched=(window.__segFetch||[]).slice(); o.srcs=[...new Set(btns().map(b=>b.dataset.segSrc+'/'+b.dataset.segKey))];
+        o.ids=btns('[data-seg="play"][data-seg-id$="|vi"]').map(b=>b.dataset.segI).join(','); o.markerIdx=btns('[data-seg="play"][data-seg-id$="|vi"]').map(b=>+b.dataset.segM);
+        // 2. lines 1, 2, 3 in a row (▶ each, waiting for its end): three different parts, each played from its own seek, never from 0
+        const t0=tts(); o.three=[];
+        for (const k of [0,1,2]) { aud().length=0; btns('[data-seg="play"][data-seg-id$="|vi"]')[k].click(); await sleep(150); await untilPaused(3000); await sleep(50); o.three.push(ev()); }
         o.ttsAfterPlay=tts()-t0; o.pressedAfter=document.querySelectorAll('.song-seg-btn.is-playing').length;
-        // 3. repeat of line 2 (index 1): same part again and again, aria-pressed while it runs
-        aud().length=0; const l2=btns('[data-seg="loop"][data-seg-id$="|vi"]')[1]; l2.click(); await sleep(1700);
-        o.loopPressed=l2.getAttribute('aria-pressed'); o.loopSeeks=aud().filter(x=>x.ev==='seek').map(x=>x.v.toFixed(2)); o.unit=!!l2.closest('.lyric-unit').classList.contains('song-seg-active');
+        // 3. repeat of line 2: the same part again and again (seek, seeked, play each cycle), aria-pressed while it runs
+        aud().length=0; const l2=btns('[data-seg="loop"][data-seg-id$="|vi"]')[1]; l2.click(); await sleep(2200);
+        o.loopPressed=l2.getAttribute('aria-pressed'); o.loop=ev(); o.unit=!!l2.closest('.lyric-unit').classList.contains('song-seg-active');
         // 4. another line while looping: the loop ends at once, only the new line follows
         aud().length=0; btns('[data-seg="play"][data-seg-id$="|vi"]')[5].click(); await sleep(150);
-        o.afterSwitch={pressed:l2.getAttribute('aria-pressed'),seeks:aud().filter(x=>x.ev==='seek').map(x=>x.v.toFixed(2))}; await sleep(900);
-        // 5. stop with the same button, then tab move ends a loop
+        o.afterSwitch={pressed:l2.getAttribute('aria-pressed'),ev:ev()}; await untilPaused(3000);
+        // 5. stop with the same button, then a tab move ends a loop
         const l4=btns('[data-seg="loop"][data-seg-id$="|vi"]')[3]; l4.click(); await sleep(700); l4.click(); await sleep(100);
         o.stopBtn={pressed:l4.getAttribute('aria-pressed'),paused:window.__audio.paused};
-        btns('[data-seg="loop"][data-seg-id$="|vi"]')[3].click(); await sleep(500);
-        const sw=document.querySelector('.subtab-btn[data-sentence="pdf"]'); sw.click(); await sleep(200);
+        l4.click(); await sleep(500);
+        document.querySelector('.subtab-btn[data-sentence="pdf"]').click(); await sleep(200);
         o.afterTab={paused:window.__audio.paused,pressed:document.querySelectorAll('.song-seg-btn[aria-pressed="true"]').length};
         document.querySelector('.subtab-btn[data-sentence="song"]').click(); await sleep(700);
-        // TTS button ends the music (and the music ends TTS)
+        // a speech button ends the music and speaks; the page going hidden ends the music
         btns('[data-seg="loop"][data-seg-id$="|vi"]')[0].click(); await sleep(400);
         const sp=[...box().querySelectorAll('.speak-btn[data-speak]')][4]; const tb=tts(); sp.click(); await sleep(1800);
-        o.ttsEndsMusic={paused:window.__audio.paused,tts:tts()-tb,log:(window.__ttsDebug||[]).slice(-4)};
-        // page hidden ends a loop
+        o.ttsEndsMusic={paused:window.__audio.paused,tts:tts()-tb};
         btns('[data-seg="loop"][data-seg-id$="|vi"]')[0].click(); await sleep(400);
         Object.defineProperty(document,'visibilityState',{value:'hidden',configurable:true}); document.dispatchEvent(new Event('visibilitychange')); await sleep(100);
         o.afterHidden=window.__audio.paused; Object.defineProperty(document,'visibilityState',{value:'visible',configurable:true});
         // 6. song 2 has repeated choruses: every sung line keeps its own marker index
-        const nums=[...document.querySelectorAll('#curr-songs-root .song-list-row')]; const r2=nums.find(r=>r.dataset.songNum==='2'); if(r2){ r2.click(); await sleep(900);} 
-        const v2=btns('[data-seg="play"][data-seg-id$="|vi"]'); o.song2={n:v2.length, idx:v2.map(b=>+b.dataset.segI), unique:new Set(v2.map(b=>b.dataset.segI)).size};
+        const r2=[...document.querySelectorAll('#curr-songs-root .song-list-row')].find(r=>r.dataset.songNum==='2'); if(r2){ r2.click(); await sleep(900);}
+        const v2=btns('[data-seg="play"][data-seg-id$="|vi"]'); o.song2={n:v2.length, idx:v2.map(b=>+b.dataset.segI), unique:new Set(v2.map(b=>b.dataset.segM)).size};
         return o;})()`);
       const tag = `kingdom ${lang}`;
-      ok(r.viRows >= 12 && r.viRows === r.song2 ? false : r.viRows >= 12, `${tag}: a ▶ ↻ pair on every singable Vietnamese line (${r.viRows})`);
+      ok(r.viRows >= 12, `${tag}: a ▶ ↻ pair on every singable Vietnamese line (${r.viRows})`);
       if (lang === 'ko') ok(r.tgtRows === r.viRows, `${tag}: and on every target line (${r.tgtRows} / ${r.viRows})`);
-      ok((r.fetched || []).some(x => x.startsWith('sjjm:1:VT')) && (lang === 'ko' ? r.fetched.some(x => x.startsWith('sjjm:1:KO')) : r.fetched.some(x => x.startsWith('sjjm:1:J'))), `${tag}: each language asked for its own recording ${JSON.stringify(r.fetched)}`);
-      ok(r.ids === Array.from({length: r.viRows}, (_, i) => i).join(','), `${tag}: marker index = lyric occurrence order ${r.ids}`);
-      ok(r.play[0].startsWith('src:') && r.play[0].includes('sjjm_VT_1.mp3'), `${tag}: the Vietnamese line plays the Vietnamese file ${JSON.stringify(r.play)}`);
-      ok(r.play.some(x => x === 'seek:1.96'), `${tag}: seeks to the line's own marker (2.0 s - pre-roll) ${JSON.stringify(r.play)}`);
-      const pz = r.play.find(x => x.startsWith('pause:'));
-      ok(pz && Math.abs(parseFloat(pz.split(':')[1]) - 2.4) < 0.12, `${tag}: stops at the end of the marker (2.4 s) ${pz}`);
+      ok(r.fetched.some(x => x.startsWith('sjjc:1:VT')) && r.fetched.some(x => x.startsWith('sjjc:1:' + (lang === 'ko' ? 'KO' : 'J'))), `${tag}: each language asked for its own VOCALS recording ${JSON.stringify(r.fetched)}`);
+      ok(!r.fetched.some(x => /^(sjjm|sjji):/.test(x)), `${tag}: the Meetings / Instrumental editions are never a source ${JSON.stringify(r.fetched)}`);
+      ok(r.srcs.every(x => x.startsWith('sjjc/pub-sjjc_1_AUDIO') || x.startsWith('sjjc/pub-sjjc_2_AUDIO')), `${tag}: the buttons carry their source (sjjc, its media key) ${JSON.stringify(r.srcs)}`);
+      ok(r.ids === Array.from({length: r.viRows}, (_, i) => i).join(','), `${tag}: line index = lyric occurrence order ${r.ids}`);
+      ok(r.markerIdx[2] === 3 && r.markerIdx[1] === 1, `${tag}: the interlude marker (pid 99) is skipped: line 3 is official marker 3 ${JSON.stringify(r.markerIdx.slice(0, 4))}`);
+      const seeks = r.three.map(e => e.filter(x => x.startsWith('seek:')).map(x => x.split(':')[1].split('>')[0]));
+      ok(seeks[0][0] === TGT(0) && seeks[1][0] === TGT(1) && seeks[2][0] === TGT(2), `${tag}: lines 1, 2, 3 seek to three different parts ${JSON.stringify(seeks)} (want ${TGT(0)}, ${TGT(1)}, ${TGT(2)})`);
+      ok(r.three[0][0].startsWith('src:') && r.three[0][0].includes('sjjc_VT_1.mp3') && r.three[0][1] === 'load', `${tag}: the Vietnamese line plays the Vietnamese VOCALS file, loaded first ${JSON.stringify(r.three[0])}`);
+      ok(r.three.every(e => !e.some(x => x === 'seek-before-metadata')), `${tag}: no seek before the metadata ${JSON.stringify(r.three[0])}`);
+      ok(r.three.every(e => { const iS = e.findIndex(x => x.startsWith('seek:')), iP = e.findIndex(x => x.startsWith('play:')); return iS >= 0 && iP > iS; }), `${tag}: seek, seeked, then play ${JSON.stringify(r.three[1])}`);
+      ok(r.three.every((e, k) => e.filter(x => x.startsWith('play:')).every(x => Math.abs(parseFloat(x.split(':')[1]) - parseFloat(TGT(k))) < 0.06)), `${tag}: every play starts at its line's seek target, never at 0 ${JSON.stringify(r.three.map(e => e.filter(x => x.startsWith('play:'))))}`);
+      ok(r.three.every((e, k) => { const pz = e.find(x => x.startsWith('pause:')); return pz && Math.abs(parseFloat(pz.split(':')[1]) - (START(k) + 0.4)) < 0.12; }), `${tag}: each stops at the end of its own marker ${JSON.stringify(r.three.map(e => e.find(x => x.startsWith('pause:'))))}`);
+      ok(r.three[1].length <= 4 && !r.three[1].some(x => x === 'load'), `${tag}: a second line of the same file only seeks (no reload) ${JSON.stringify(r.three[1])}`);
       ok(r.ttsAfterPlay === 0, `${tag}: no speech at all (${r.ttsAfterPlay})`);
       ok(r.pressedAfter === 0, `${tag}: a single play ends by itself (${r.pressedAfter} still marked)`);
       ok(r.loopPressed === 'true' && r.unit, `${tag}: the repeat button shows it runs (aria-pressed ${r.loopPressed}, unit marked ${r.unit})`);
-      ok(r.loopSeeks.length >= 2 && r.loopSeeks.every(x => x === '1.46'), `${tag}: the same part again and again ${JSON.stringify(r.loopSeeks)}`);
-      ok(r.afterSwitch.pressed === 'false' && r.afterSwitch.seeks.length >= 1 && r.afterSwitch.seeks.every(x => x === '3.46'), `${tag}: another line ends the loop at once and plays only itself ${JSON.stringify(r.afterSwitch)}`);
+      const loopSeeks = r.loop.filter(x => x.startsWith('seek:')), loopPlays = r.loop.filter(x => x.startsWith('play:'));
+      ok(loopSeeks.length >= 3 && loopSeeks.every(x => x.startsWith('seek:' + TGT(1))) && loopPlays.length === loopSeeks.length && loopPlays.every(x => Math.abs(parseFloat(x.split(':')[1]) - parseFloat(TGT(1))) < 0.06), `${tag}: the same part again and again, seek then play each cycle ${JSON.stringify(r.loop)}`);
+      ok(r.afterSwitch.pressed === 'false' && r.afterSwitch.ev.some(x => x.startsWith('seek:' + TGT(5))) && !r.afterSwitch.ev.some(x => x.startsWith('seek:' + TGT(1))), `${tag}: another line ends the loop at once and plays only itself ${JSON.stringify(r.afterSwitch)}`);
       ok(r.stopBtn.pressed === 'false' && r.stopBtn.paused, `${tag}: the same button stops the repeat ${JSON.stringify(r.stopBtn)}`);
       ok(r.afterTab.paused && r.afterTab.pressed === 0, `${tag}: a tab move ends the music ${JSON.stringify(r.afterTab)}`);
-      ok(r.afterHidden === true, `${tag}: the page going hidden ends the music`);
       ok(r.ttsEndsMusic.paused && r.ttsEndsMusic.tts >= 1, `${tag}: a speech button ends the music and speaks ${JSON.stringify(r.ttsEndsMusic)}`);
-      ok(r.song2.n >= 20 && r.song2.unique === r.song2.n && r.song2.idx.every((x, i) => x === i), `${tag}: song 2 (repeated chorus) keeps one index per sung line ${JSON.stringify(r.song2)}`);
+      ok(r.afterHidden === true, `${tag}: the page going hidden ends the music`);
+      ok(r.song2.n >= 20 && r.song2.unique === r.song2.n && r.song2.idx.every((x, i) => x === i), `${tag}: song 2 (repeated chorus) keeps one marker per sung line ${JSON.stringify(r.song2)}`);
       ok(!errs.length, `${tag}: errors ${errs.join(' | ').slice(0, 300)}`); errs.length = 0;
     }
+    // source priority and the fail-closed cases, each on a fresh page (a recording is resolved once per page)
+    const CASES = [
+      ['pksjj fallback with markers', "window.__segCfg.none['sjjc:1:VT']=true;window.__segCfg.pksjjMarkers=true;", q => ok(q.vi > 0 && q.viSrc === 'pksjj/pub-pksjj_1_AUDIO' && q.koSrc === 'sjjc/pub-sjjc_1_AUDIO' && q.fetched.includes('pksjj:1:VT') && !q.fetched.includes('pksjj:1:KO'), `no VOCALS in Vietnamese -> the CHILDREN recording, Korean keeps VOCALS; the children's one is only asked for when needed ${JSON.stringify(q)}`)],
+      ['pksjj fallback without markers (as on jw.org)', "window.__segCfg.none['sjjc:1:VT']=true;", q => ok(q.vi === 0 && q.ko > 0 && q.fetched.includes('pksjj:1:VT'), `the children's recording without markers gives no Vietnamese button, no timing is guessed ${JSON.stringify(q)}`)],
+      ['no vocal recording at all', "window.__segCfg.none['sjjc:1:VT']=true;window.__segCfg.none['pksjj:1:VT']=true;", q => ok(q.vi === 0 && q.ko > 0 && !q.fetched.some(x => x.startsWith('sjjm')), `no sung recording -> no button (the Meetings edition is not used instead) ${JSON.stringify(q)}`)],
+      ['marker count off by one', "window.__segCfg.skew['sjjc:1:KO']=1;", q => ok(q.vi > 0 && q.ko === 0, `one sung marker too many in Korean -> no Korean button, no trimming ${JSON.stringify(q)}`)],
+      ['a line that holds an interlude', "window.__segCfg.interlude['sjjc:1:KO']=true;", q => ok(q.vi > 0 && q.ko === q.vi - 1 && q.koMissing === '1', `a 40 s "line" (an interlude inside its marker) -> that Korean line alone has no button ${JSON.stringify(q)}`)],
+      ['no markers on the vocals', "window.__segCfg.noMarkers['sjjc:1:KO']=true;", q => ok(q.vi > 0 && q.ko === 0 && !q.fetched.includes('pksjj:1:KO'), `VOCALS without markers -> no button and no fall-through to the children's recording ${JSON.stringify(q)}`)],
+    ];
+    for (const [name, cfgJs, check] of CASES) {
+      await NAV(cfgJs);
+      const q = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));await (${OPEN('ko')});${HELP}
+        const src=sel=>{const b=btns(sel)[0];return b?b.dataset.segSrc+'/'+b.dataset.segKey:null;};
+        const koRows=[...box().querySelectorAll('.lyric-target-row')].filter(r=>r.querySelector('.lyric-target')&&r.querySelector('.lyric-target').textContent.trim()&&!/^\\s*(\\(.*\\)|\\d+\\s*[.．。]?)\\s*$/.test(r.querySelector('.lyric-target').textContent.trim()));
+        return {koMissing:koRows.map((r,i)=>r.querySelector('.song-seg-btn')?null:i).filter(x=>x!==null).join(','), vi:btns('[data-seg="play"][data-seg-id$="|vi"]').length, ko:btns('[data-seg="play"][data-seg-id$="|ko"]').length, viSrc:src('[data-seg-id$="|vi"]'), koSrc:src('[data-seg-id$="|ko"]'), fetched:(window.__segFetch||[]).slice()};})()`);
+      check(q);
+      ok(!errs.length, `${name}: errors ${errs.join(' | ').slice(0, 300)}`); errs.length = 0;
+    }
+    // a seek that does not land (the engine answers 0): checked after seeked, tried once more, then NO play (never the intro instead)
+    await NAV();
+    const z = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));await (${OPEN('ko')});${HELP}
+      window.__segCfg.seekTo=0; aud().length=0; btns('[data-seg="play"][data-seg-id$="|vi"]')[2].click(); await sleep(1200);
+      const o={ev:ev(), marked:document.querySelectorAll('.song-seg-btn.is-playing').length, paused:window.__audio.paused};
+      // the engine works again: a later tap plays normally
+      window.__segCfg.seekTo=null; aud().length=0; btns('[data-seg="play"][data-seg-id$="|vi"]')[2].click(); await sleep(400); o.after=ev(); return o;})()`);
+    ok(z.ev.filter(x => x.startsWith('seek:')).length === 2 && !z.ev.some(x => x.startsWith('play:')) && z.marked === 0 && z.paused, `a seek that lands at 0 is tried twice and never played ${JSON.stringify(z.ev)}`);
+    ok(z.after.some(x => x.startsWith('play:' + TGT(2).slice(0, 3))), `the next tap plays normally ${JSON.stringify(z.after)}`);
+    // a stale callback: line 1 tapped, then line 3 before the file's metadata arrived -> only line 3 is seeked and played
+    await NAV();
+    const st = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));await (${OPEN('ko')});${HELP}
+      aud().length=0; btns('[data-seg="play"][data-seg-id$="|vi"]')[0].click(); await sleep(3); btns('[data-seg="play"][data-seg-id$="|vi"]')[2].click(); await sleep(700);
+      return {ev:ev(), state:window.__songSeg.state()};})()`);
+    ok(st.ev.filter(x => x.startsWith('seek:')).every(x => x.startsWith('seek:' + TGT(2))) && st.ev.filter(x => x.startsWith('play:')).length === 1 && st.ev.some(x => x.startsWith('play:' + TGT(2).slice(0, 3))), `the first line's callbacks are stale: only the third line is seeked and played ${JSON.stringify(st.ev)}`);
+    ok(!errs.length, `errors ${errs.join(' | ').slice(0, 300)}`); errs.length = 0;
     // collections 2 and 3, a mismatch and a missing recording: no button and no speech
     await cdp.send('Page.navigate', {url: `http://127.0.0.1:${PORT}/jeonju/index.html?fresh=${Date.now()}`});
     for (let i = 0; i < 240; i++) { if (await E("document.readyState==='complete'&&typeof window.setLang==='function'")) break; await sleep(250); }
@@ -184,6 +253,9 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
       tabs[1].click();await sleep(400);const oroot=document.getElementById('song-original-root');
       oroot.querySelector('.song-acc[data-song-id="osg-1"] .song-acc-head').click();await sleep(1000);
       const ob=oroot.querySelector('.song-acc[data-song-id="osg-1"]'); o.osg1={vi:ob.querySelectorAll('.lyric-vi-row .song-seg-btn').length, ko:ob.querySelectorAll('.lyric-target-row .song-seg-btn').length, rows:ob.querySelectorAll('.song-lyric-line').length};
+      window.__segCfg.outro99['osg:117:VT']=true; window.__segCfg.outro99['osg:117:KO']=true;
+      oroot.querySelector('.song-acc[data-song-id="osg-117"] .song-acc-head').click();await sleep(1000);
+      const o117=oroot.querySelector('.song-acc[data-song-id="osg-117"]'); o.osg117={vi:o117.querySelectorAll('.lyric-vi-row .song-seg-btn').length, ko:o117.querySelectorAll('.lyric-target-row .song-seg-btn').length, rows:o117.querySelectorAll('.song-lyric-line').length};
       oroot.querySelector('.song-acc[data-song-id="osg-116"] .song-acc-head').click();await sleep(1000);
       const o116=oroot.querySelector('.song-acc[data-song-id="osg-116"]'); o.osg116={vi:o116.querySelectorAll('.lyric-vi-row .song-seg-btn').length, ko:o116.querySelectorAll('.lyric-target-row .song-seg-btn').length};
       tabs[2].click();await sleep(400);const kroot=document.getElementById('song-kids-root');
@@ -194,6 +266,7 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
       return o;})()`);
     ok(q.osg1.rows > 0 && q.osg1.ko === 0, `original 1: the Korean recording with a wrong marker count has no button (no timing guessed) ${JSON.stringify(q.osg1)}`);
     ok(q.osg116.vi > 0 && q.osg116.ko > 0, `original 116: both languages ${JSON.stringify(q.osg116)}`);
+    ok(q.osg117.rows > 0 && q.osg117.vi === 0 && q.osg117.ko === 0, `original 117: a recording with a non-vocal (pid 99) marker is held back in this release, no button ${JSON.stringify(q.osg117)}`);
     ok(q.kids.p1.vi === 0 && q.kids.p1.ko > 0, `children 1: the missing Vietnamese recording gives no button, no speech stands in ${JSON.stringify(q.kids.p1)}`);
     ok(q.kids.sp0.vi > 0 && q.kids.p35.vi > 0, `children special 0 / 35 ${JSON.stringify(q.kids)}`);
     ok(q.tts === 0, `no speech was used anywhere (${q.tts}) ${JSON.stringify(q.ttsTexts)}`);

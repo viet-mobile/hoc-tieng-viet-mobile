@@ -10120,25 +10120,33 @@ function verifyDistribution(units, dist, pins) {
     return rows;
   }
   // ---- the real music of one lyric line (never TTS) ----
-  // The official jw.org audio of the song (MP3, streamed from jw.org's own CDN, nothing is stored or re-hosted here) has official timed
-  // metadata: jw.org's media API (GETPUBMEDIALINKS) lists, per song and language, the file and `markers` -- one {startTime, duration} per
-  // sung line. A line gets ▶ (that part of the music once) and ↻ (that part again and again) ONLY when the language's marker count equals the
-  // number of singable lines on screen; otherwise no button (no timing is ever guessed, split evenly or copied from another language, and the
-  // speech engine is never used instead). The audio of a language is the audio of that language: the Vietnamese row plays the Vietnamese
-  // recording, the target row the recording in the UI language.
+  // The official jw.org recording of the song (MP3, streamed from jw.org's own CDN, nothing is stored or re-hosted here) comes with official
+  // timed metadata: jw.org's media API (GETPUBMEDIALINKS) lists, per publication, song and language, the file and its `markers`, one
+  // {startTime, duration, mepsParagraphId} per paragraph of the sung text. A line gets ▶ (that part of the music once) and ↻ (that part
+  // again and again) ONLY when the recording's sung markers are exactly as many as the singable lines on screen; otherwise no button (no
+  // timing is ever guessed, split evenly, trimmed or copied from another language or recording, and the speech engine never stands in).
+  // The audio of a language is the audio of that language: the Vietnamese row plays the Vietnamese recording, the target row the one in
+  // the UI language.
+  // WHICH recording (by jw.org's publication code, never by a file name) -- 왕국 노래: the choir that SINGS the words, "Sing Out Joyfully --
+  // Vocals" (sjjc); where that language has none, the children's "Sing With Us" (pksjj); nothing else: the Meetings (sjjm) and
+  // Instrumental (sjji) editions are not sung, so they are never a source. The markers used are always those of the selected recording.
   var SONG_SEG_API = "https://b.jw-cdn.org/apis/pub-media/GETPUBMEDIALINKS?output=json&fileformat=MP3&alllangs=0";
-  var SONG_SEG_GAP_MS = 250;      // silence between two plays of the same part (the music's own, not the speech timings)
-  var SONG_SEG_PRE_MS = 40;       // a little before the marker so the first syllable is not clipped
+  var SONG_SEG_GAP_MS = 250;        // silence between two plays of the same part (the music's own, not the speech timings)
+  var SONG_SEG_PRE_MS = 40;         // a little before the marker so the first syllable is not clipped
+  var SONG_SEG_SEEK_TOL_MS = 100;   // a seek that lands further from its target than this is not played (never "from 0 then")
+  var SONG_SEG_NON_VOCAL_PID = 99;  // jw.org's paragraph id of a marker that is no paragraph of the text: an interlude or the outro, no one sings there
+  var SONG_SEG_LONG_X = 2.5, SONG_SEG_LONG_MIN_MS = 15000;   // a "line" this much longer than the others holds an interlude / the outro: no button for it
   var SONG_SEG_STRUCT = /^\s*(\(.*\)|（.*）|[\[【].*[\]】]|\d+\s*[.．。]?|[※＊*].*)\s*$/;   // a chorus label, a bare verse number ...: no sound of its own
   function songSegSingable(t) { t = String(t || "").trim(); return !!t && !SONG_SEG_STRUCT.test(t); }
-  // [publication, track] of a song of a collection, as jw.org's media API names them (never computed from a position)
-  function songSegPubTrack(kind, key) {
+  // The recordings of a song of a collection, in order of priority: [[publication, track], ...] as jw.org's media API names them (never
+  // computed from a position in a list). The first that exists in the language is the recording; a later one is only for when it does not.
+  function songSegPubs(kind, key) {
     var k = String(key), m;
-    if (kind === "kingdom") return ["sjjm", parseInt(k, 10)];
-    if (kind === "original" && (m = /^osg-(\d+)$/.exec(k))) return ["osg", parseInt(m[1], 10)];
+    if (kind === "kingdom") return [["sjjc", parseInt(k, 10)], ["pksjj", parseInt(k, 10)]];
+    if (kind === "original" && (m = /^osg-(\d+)$/.exec(k))) return [["osg", parseInt(m[1], 10)]];
     if (kind === "children") {
-      if ((m = /^pkon-(\d+)$/.exec(k))) return ["pkon", parseInt(m[1], 10)];
-      if (k === "pk-special-0") return ["pk", 0];
+      if ((m = /^pkon-(\d+)$/.exec(k))) return [["pkon", parseInt(m[1], 10)]];
+      if (k === "pk-special-0") return [["pk", 0]];
     }
     return null;
   }
@@ -10146,33 +10154,65 @@ function verifyDistribution(units, dist, pins) {
     var m = /^(\d+):(\d+):(\d+(?:\.\d+)?)$/.exec(String(t || ""));
     return m ? Math.round((parseInt(m[1], 10) * 3600 + parseInt(m[2], 10) * 60 + parseFloat(m[3])) * 1000) : NaN;
   }
-  var songSegInfo = {};      // "kind|key|lang" -> { url, marks:[{s,e}] } once resolved, null when this song/language has none
+  // The sung markers of a recording: {s, e, m (index in the official list), pid[, long]}, without the non-vocal ones (pid 99); null with the
+  // reason when they cannot be used as they are (not ascending, no length).
+  function songSegMarks(mk) {
+    var marks = [], prev = -1, durs = [];
+    for (var i = 0; i < mk.length; i++) {
+      var st = songSegTime(mk[i].startTime), du = songSegTime(mk[i].duration), pid = parseInt(mk[i].mepsParagraphId, 10);
+      if (!(st >= prev) || !(du > 0)) return { marks: null, reason: "markers not ascending" };
+      prev = st;
+      if (pid === SONG_SEG_NON_VOCAL_PID) continue;
+      marks.push({ s: st, e: st + du, m: i, pid: pid }); durs.push(du);
+    }
+    if (!marks.length) return { marks: null, reason: "no sung marker", nonVocal: mk.length };
+    // a span far longer than the song's other lines holds an interlude or the outro besides its words: that line gets no button (the
+    // others keep theirs: their spans are the official ones), never a shortened guess of where the voice stops
+    durs.sort(function (x, y) { return x - y; });
+    var med = durs[Math.floor(durs.length / 2)];
+    for (var j = 0; j < marks.length; j++) {
+      var d = marks[j].e - marks[j].s;
+      if (d > SONG_SEG_LONG_MIN_MS && d > med * SONG_SEG_LONG_X) marks[j].long = Math.round(d / 1000);
+    }
+    return { marks: marks, reason: "", nonVocal: mk.length - marks.length };
+  }
+  // 오리지널 송 / 어린이 노래 in this release: a recording whose markers hold a non-vocal one (interlude / outro, pid 99) gets no button yet --
+  // its lines are only enabled by the coming alignment pass of those collections (왕국 노래 is corrected first; nothing there is widened).
+  var SONG_SEG_HOLD_NON_VOCAL = { original: true, children: true };
+  var songSegInfo = {};      // "kind|key|lang" -> { src, mediaKey, url, marks } once resolved; marks null (with .reason) = no button; null = no recording
   var songSegAsk = {};
-  // Resolves (once) the official file and markers of a song in a language. null: unavailable / no markers / not plain ascending times.
+  function songSegFetch(pub, track, code) {
+    return fetch(SONG_SEG_API + "&pub=" + pub + "&track=" + track + "&langwritten=" + code, { credentials: "omit" })
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (j) {
+        var f = j && j.files && j.files[code] && j.files[code].MP3 && j.files[code].MP3[0];
+        var url = f && f.file && f.file.url;
+        return url && /^https:\/\/[a-z0-9.-]+\.jw-cdn\.org\//.test(url) ? f : null;
+      })
+      .catch(function () { return null; });
+  }
+  // Resolves (once) the recording of a song in a language: the first publication of songSegPubs() that has the language, with that very
+  // recording's own markers (never another recording's, never another language's).
   function songSegResolve(kind, key, lang) {
     var id = kind + "|" + key + "|" + lang;
     if (songSegAsk[id]) return songSegAsk[id];
-    var pt = songSegPubTrack(kind, key), loc = songJwLocale(lang);
-    if (!pt || !loc || typeof fetch !== "function") return (songSegAsk[id] = Promise.resolve(null));
-    songSegAsk[id] = fetch(SONG_SEG_API + "&pub=" + pt[0] + "&track=" + pt[1] + "&langwritten=" + loc[0], { credentials: "omit" })
-      .then(function (res) { return res.ok ? res.json() : null; })
-      .then(function (j) {
-        var f = j && j.files && j.files[loc[0]] && j.files[loc[0]].MP3 && j.files[loc[0]].MP3[0];
-        var url = f && f.file && f.file.url, mk = f && f.markers && f.markers.markers;
-        if (!url || !/^https:\/\/[a-z0-9.-]+\.jw-cdn\.org\//.test(url) || !mk || !mk.length) return null;
-        var marks = [], prev = -1;
-        for (var i = 0; i < mk.length; i++) {
-          var st = songSegTime(mk[i].startTime), du = songSegTime(mk[i].duration);
-          if (!(st >= prev) || !(du > 0)) return null;   // not ascending / no length: not usable as it is
-          marks.push({ s: st, e: st + du }); prev = st;
-        }
-        return { url: url, marks: marks };
-      })
-      .catch(function () { return null; })
-      .then(function (info) { songSegInfo[id] = info; return info; });
+    var pubs = songSegPubs(kind, key), loc = songJwLocale(lang);
+    if (!pubs || !loc || typeof fetch !== "function") return (songSegAsk[id] = Promise.resolve(null));
+    var i = 0;
+    function next() {
+      if (i >= pubs.length) return Promise.resolve(null);
+      var pub = pubs[i][0], track = pubs[i][1]; i++;
+      return songSegFetch(pub, track, loc[0]).then(function (f) {
+        if (!f) return next();   // this language has no such recording: the next source, if any
+        var mk = f.markers && f.markers.markers, parsed = mk && mk.length ? songSegMarks(mk) : { marks: null, reason: "no markers" };
+        return { src: pub, mediaKey: "pub-" + pub + "_" + track + "_AUDIO", url: f.file.url, marks: parsed.marks, reason: parsed.reason, nonVocal: parsed.nonVocal || 0 };
+      });
+    }
+    songSegAsk[id] = next().then(function (info) { songSegInfo[id] = info; return info; });
     return songSegAsk[id];
   }
-  var songSeg = { audio: null, token: 0, btn: null, loop: false, raf: 0, timer: 0 };
+  var songSeg = { audio: null, token: 0, btn: null, loop: false, raf: 0, timer: 0, url: "" };
+  function songSegLog(line) { if (speechDebugOn) speechDiagPanel("song " + line); }
   function songSegMarkUi(on) {
     var b = songSeg.btn;
     if (!b) return;
@@ -10184,8 +10224,8 @@ function verifyDistribution(units, dist, pins) {
       b.setAttribute("aria-label", TU(on ? "소절 반복 정지" : "실제 노래 소절 반복"));
     }
   }
-  // Ends whatever the segment player is doing (the only way a play or a repeat ends besides reaching its end): invalidates every pending
-  // timer / frame / callback of it by the token.
+  // Ends whatever the segment player is doing (the only way a play or a repeat ends besides reaching its end): a new token makes every
+  // pending callback of the run before (metadata, seeked, play promise, the end watcher, the repeat timer) a no-op.
   function songSegStop() {
     songSeg.token++;
     if (songSeg.raf) { cancelAnimationFrame(songSeg.raf); songSeg.raf = 0; }
@@ -10194,10 +10234,15 @@ function verifyDistribution(units, dist, pins) {
     songSegMarkUi(false);
     songSeg.btn = null; songSeg.loop = false;
   }
+  // One line: [new file: src, load(), wait for the metadata and a seekable range that holds the line] -> pause -> currentTime = start ->
+  // the seeked event -> the position is checked (once more after canplay if it is off; still off: no play at all) -> play() -> a frame
+  // watcher pauses at the line's end -> (↻) 250 ms later the same seek -> seeked -> play. The file is set once; a repeat and another line
+  // of the same file only seek. load() inside the tap is what lets the later play() calls of this element (after the metadata, from the
+  // repeat timer) start sound on iOS.
   function songSegPlay(btn) {
     var loop = btn.getAttribute("data-seg") === "loop";
     if (songSeg.btn === btn) { songSegStop(); return; }   // the same button again: stop
-    var info = songSegInfo[btn.getAttribute("data-seg-id")], i = parseInt(btn.getAttribute("data-seg-i"), 10), mark = info && info.marks[i];
+    var info = songSegInfo[btn.getAttribute("data-seg-id")], i = parseInt(btn.getAttribute("data-seg-i"), 10), mark = info && info.marks && info.marks[i];
     stopAllSpeech();   // speech (and 전체 듣기) and the music never run together
     songSegStop();
     if (!mark) return;
@@ -10206,41 +10251,61 @@ function verifyDistribution(units, dist, pins) {
     songSeg.btn = btn; songSeg.loop = loop;
     songSegMarkUi(true);
     var a = songSeg.audio || (songSeg.audio = new Audio());
-    a.preload = "auto";
+    var target = Math.max(0, mark.s - SONG_SEG_PRE_MS) / 1000;
+    songSegLog((loop ? "↻" : "▶") + " " + info.src + " " + info.mediaKey + " line " + (i + 1) + " marker " + mark.m + " " + (mark.s / 1000).toFixed(3) + "-" + (mark.e / 1000).toFixed(3) + " s");
     function alive() { return songSeg.token === my && btn.isConnected; }
-    function fail() { if (songSeg.token === my) songSegStop(); }
+    function fail(why) { songSegLog("stopped: " + why); if (songSeg.token === my) songSegStop(); }
+    function once(ev, fn, ms) {   // the next event, or the guard after ms (fn(true) then); nothing once the run is over
+      var done = false, t = 0;
+      function h(byTimer) { if (done) return; done = true; a.removeEventListener(ev, h); if (t) clearTimeout(t); if (alive()) fn(!!byTimer); }
+      a.addEventListener(ev, function onEv() { a.removeEventListener(ev, onEv); h(false); });
+      if (ms) t = setTimeout(function () { h(true); }, ms);
+    }
     function watch() {
       if (!alive()) { if (songSeg.token === my) songSegStop(); return; }
       if (a.ended || a.currentTime * 1000 >= mark.e - 15) {
         try { a.pause(); } catch (eW) { /* no-op */ }
         songSeg.raf = 0;
+        songSegLog("end at " + a.currentTime.toFixed(3) + " s");
         if (!loop) { songSegStop(); return; }
-        songSeg.timer = setTimeout(function () { songSeg.timer = 0; if (alive()) cycle(); }, SONG_SEG_GAP_MS);
+        songSeg.timer = setTimeout(function () { songSeg.timer = 0; if (alive()) seekThenPlay(false); }, SONG_SEG_GAP_MS);
         return;
       }
       songSeg.raf = requestAnimationFrame(watch);
     }
-    function cycle() {
-      try {
-        a.currentTime = Math.max(0, mark.s - SONG_SEG_PRE_MS) / 1000;
-        var p = a.play();
-        if (p && p.catch) p.catch(fail);
+    function seekThenPlay(retried) {
+      try { if (!a.paused) a.pause(); } catch (eP) { /* no-op */ }
+      once("seeked", function (byTimer) {
+        var off = Math.abs(a.currentTime - target) * 1000;
+        if (off > SONG_SEG_SEEK_TOL_MS) {
+          songSegLog("seek landed at " + a.currentTime.toFixed(3) + " s, wanted " + target.toFixed(3) + (byTimer ? " (no seeked event)" : ""));
+          if (retried) { fail("seek failed twice"); return; }
+          if (a.readyState >= 3) seekThenPlay(true); else once("canplay", function () { seekThenPlay(true); }, 8000);
+          return;
+        }
+        songSegLog("seeked to " + a.currentTime.toFixed(3) + " s, play");
+        var p;
+        try { p = a.play(); } catch (ePl) { fail("play threw"); return; }
+        if (p && p.catch) p.catch(function () { fail("play refused"); });
         songSeg.raf = requestAnimationFrame(watch);
-      } catch (eC) { fail(); }
+      }, 2000);
+      try { a.currentTime = target; } catch (eS) { fail("seek threw"); }
     }
-    a.onerror = fail;
-    if (a.getAttribute("data-url") === info.url && a.readyState >= 1) { a.muted = false; cycle(); return; }
-    // another file: start loading inside this tap (iOS lets a tap start audio), silent until it is seeked to the line
-    a.setAttribute("data-url", info.url);
-    a.muted = true; a.src = info.url;
-    var pl = a.play();
-    if (pl && pl.catch) pl.catch(fail);
-    a.addEventListener("loadedmetadata", function onMeta() {
-      a.removeEventListener("loadedmetadata", onMeta);
+    function seekable() {
+      try { return a.seekable && a.seekable.length > 0 && a.seekable.end(a.seekable.length - 1) + 0.5 >= target; } catch (eR) { return false; }
+    }
+    function whenSeekable(tries) {
       if (!alive()) return;
-      a.addEventListener("seeked", function onSeeked() { a.removeEventListener("seeked", onSeeked); if (alive()) { a.muted = false; songSeg.raf = requestAnimationFrame(watch); } });
-      try { a.currentTime = Math.max(0, mark.s - SONG_SEG_PRE_MS) / 1000; } catch (eS) { fail(); }
-    });
+      if (seekable()) { seekThenPlay(false); return; }
+      if (tries <= 0) { fail("no seekable range for the line"); return; }
+      once("progress", function () { whenSeekable(tries - 1); }, 1000);
+    }
+    a.onerror = function () { fail("audio error"); };
+    if (songSeg.url === info.url && a.readyState >= 1) { whenSeekable(10); return; }
+    songSeg.url = info.url;
+    a.preload = "auto"; a.src = info.url;
+    try { a.load(); } catch (eL) { fail("load threw"); return; }
+    once("loadedmetadata", function (byTimer) { if (byTimer) { fail("no metadata"); return; } whenSeekable(10); }, 20000);
   }
   // Adds ▶ ↻ to the lines of one song box ([data-seg-kind][data-seg-key]); the box has the rows .lyric-vi-row / .lyric-target-row.
   function songSegEnhance(box) {
@@ -10257,11 +10322,19 @@ function verifyDistribution(units, dist, pins) {
       });
       if (!rows.length) return;
       songSegResolve(kind, key, lang).then(function (info) {
-        if (!info || info.marks.length !== rows.length || !box.isConnected) return;   // the counts must agree exactly: otherwise no button
-        var id = kind + "|" + key + "|" + lang;
+        if (!box.isConnected) return;
+        if (!info) { songSegLog(kind + " " + key + " " + lang + ": no sung recording"); return; }
+        if (info.marks && info.nonVocal && SONG_SEG_HOLD_NON_VOCAL[kind]) { songSegLog(kind + " " + key + " " + lang + ": held back (" + info.nonVocal + " non-vocal marker(s); this collection's alignment comes later)"); return; }
+        if (!info.marks || info.marks.length !== rows.length) {   // the counts must agree exactly: otherwise no button
+          songSegLog(kind + " " + key + " " + lang + " " + info.src + ": no buttons (" + (info.reason || (info.marks.length + " sung markers, " + rows.length + " lines")) + ")");
+          return;
+        }
+        var id = kind + "|" + key + "|" + lang, srcLabel = info.src === "pksjj" ? "CHILDREN" : "VOCALS";
         rows.forEach(function (row, i) {
           if (row.querySelector(".song-seg-btn")) return;
-          var common = ' data-seg-id="' + escapeAttr(id) + '" data-seg-i="' + i + '"';
+          if (info.marks[i].long) { songSegLog(kind + " " + key + " " + lang + " line " + (i + 1) + ": no button, its span holds an interlude / the outro (" + info.marks[i].long + " s)"); return; }
+          var common = ' data-seg-id="' + escapeAttr(id) + '" data-seg-i="' + i + '" data-seg-src="' + info.src + '" data-seg-key="' + escapeAttr(info.mediaKey) + '" data-seg-m="' + info.marks[i].m + '"' +
+            (speechDebugOn ? ' title="' + srcLabel + " " + escapeAttr(info.mediaKey) + '"' : '');
           row.insertAdjacentHTML("beforeend",
             '<button type="button" class="song-seg-btn" data-seg="play"' + common + ' aria-label="' + escapeAttr(TU("실제 노래 소절 듣기")) + '">▶</button>' +
             '<button type="button" class="song-seg-btn" data-seg="loop"' + common + ' aria-pressed="false" aria-label="' + escapeAttr(TU("실제 노래 소절 반복")) + '">↻</button>');
@@ -10285,7 +10358,7 @@ function verifyDistribution(units, dist, pins) {
   });
   document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") songSegStop(); });
   window.addEventListener("pagehide", songSegStop);
-  window.__songSeg = { audio: function () { return songSeg.audio; }, resolve: songSegResolve, stop: songSegStop, state: function () { return { btn: !!songSeg.btn, loop: songSeg.loop, token: songSeg.token }; }, info: songSegInfo };
+  window.__songSeg = { audio: function () { return songSeg.audio; }, resolve: songSegResolve, stop: songSegStop, state: function () { return { btn: !!songSeg.btn, loop: songSeg.loop, token: songSeg.token, url: songSeg.url }; }, info: songSegInfo };
   // ---- media / links ----
   var SONG_KIND_LABELS = { AUDIO: { ko: "오디오", vi: "Âm thanh", en: "Audio", ja: "音声", zh: "音訊", zh_cn: "音频", de: "Audio", fr: "Audio", pl: "Nagranie audio", cs: "Audio", hu: "Hanganyag", id: "Audio" } };
   // The jw.org link of one language of a song: its official media by kind + media key (the finder link built with that

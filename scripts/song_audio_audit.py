@@ -90,8 +90,13 @@ def audit(pubtrack, rows, label, ko_titles):
         if not f: rep["noAudio"] += 1; continue
         m = (f.get("markers") or {}).get("markers")
         if not m: rep["noMarkers"] += 1; continue
-        if len(m) == len(rows[k][lg]): rep["ok"] += 1; out.setdefault(str(k), {})[lg] = len(m)
-        else: rep["mismatch"] += 1; rep["review"].append("%s %s %s markers=%d rows=%d" % (label, k, lg, len(m), len(rows[k][lg])))
+        # the page's rules (songSegMarks): pid 99 = interlude / outro, not a sung line; a line far longer than the others holds an interlude
+        sung = [x for x in m if int(x.get("mepsParagraphId") or 0) != 99]
+        durs = sorted(int(round(float(x["duration"].split(":")[-1]) * 1000)) + 60000 * int(x["duration"].split(":")[-2]) for x in sung)
+        med = durs[len(durs) // 2] if durs else 0
+        if any(d > 15000 and d > med * 2.5 for d in durs): rep["interludeInLine"] = rep.get("interludeInLine", 0) + 1; continue
+        if len(sung) == len(rows[k][lg]): rep["ok"] += 1; out.setdefault(str(k), {})[lg] = len(sung)
+        else: rep["mismatch"] += 1; rep["review"].append("%s %s %s sung markers=%d (of %d) rows=%d" % (label, k, lg, len(sung), len(m), len(rows[k][lg])))
     return out, rep
 
 def titles(path):
