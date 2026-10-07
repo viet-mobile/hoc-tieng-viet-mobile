@@ -116,9 +116,13 @@
   // "· <translation>" suffix after the Vietnamese title. Now that T() can return "" for a
   // language a curated (non-Excel-full) dataset never covers, this keeps that gap from showing
   // as a bare, dangling "· " with nothing after it.
-  function titleTrSpan(title) {
+  // the learner language's title, or "" (the Vietnamese UI has no second language: the title is not shown twice)
+  function titleTrText(title) {
     var tr = T(title);
-    if (currentLang === "vi" || tr === title.vi) return "";   // the Vietnamese UI has no second language: the title is not shown twice
+    return currentLang === "vi" || !tr || tr === title.vi ? "" : tr;
+  }
+  function titleTrSpan(title) {
+    var tr = titleTrText(title);
     return tr ? '<span class="lff-title-translation bilingual-title-target">' + escapeHtml(tr) + '</span>' : '';
   }
   function Tstrict(field) {
@@ -133,6 +137,11 @@
   var LANG_CHANGE_LISTENERS = [];
   function onLangChange(fn) { LANG_CHANGE_LISTENERS.push(fn); }
   window.setLang = setLang; // hook used by tests/test_browser_runtime.js
+  // a click on the row of a publication header (outside its links and buttons) toggles the card, as on a song header
+  document.addEventListener("click", function (e) {
+    var pr = e.target && e.target.closest && e.target.closest(".pub-head-row");
+    if (pr && !e.target.closest("a, button")) { var tb = pr.querySelector(".group-head"); if (tb) tb.click(); }
+  });
   document.addEventListener("click", function (e) {
     var row = e.target;
     if (!row || !row.classList || !row.classList.contains("has-jw-badges")) return;
@@ -7055,6 +7064,7 @@
     root.querySelectorAll(".group-card").forEach(function (card) {
       card.querySelector(".group-head").addEventListener("click", function () {
         card.dataset.open = card.dataset.open === "true" ? "false" : "true";
+        if (this.hasAttribute("aria-expanded")) this.setAttribute("aria-expanded", card.dataset.open);
       });
     });
   }
@@ -8966,14 +8976,10 @@ function verifyDistribution(units, dist, pins) {
         var readPairs = [[titleVi, T(rec.title)]].concat(lineUnits.map(function (l) { return [l.vi, l.kr]; }));
         var label = lffRecordLabel(rec);
         var recTitleTr = T(rec.title);
-        var titleHtml = rec.kind === "lesson"
-          ? '<span class="lff-title bilingual-title"><span class="lff-title-vi bilingual-title-vi">' + escapeHtml(titleVi) + '</span>' + titleTrSpan(rec.title) + '</span>'
-          : '<span class="cnt">' + escapeHtml(titleVi) + (recTitleTr ? ' · ' + escapeHtml(recTitleTr) : '') + '</span>';
-        var lffBadges = jwTitleBadgesHtml(lffJwDocid(rec));
-        html += '<div class="group-card" data-open="' + (openSyls["lff" + ri] ? "true" : "false") + '" data-syl="lff' + ri + '" data-anchor="lff' + ri + '">' +
-          '<div class="group-head-row' + (lffBadges ? ' has-jw-badges' : '') + '"><button class="group-head"><span>' +
-          (label ? '<span class="syl">' + escapeHtml(label) + '</span> ' : '') +
-          titleHtml + '</span>' + currChev() + '</button>' + lffBadges + readAllButtonHtml(readPairs) + '</div>' +
+        var lffHead = pubHeadRowHtml({ open: !!openSyls["lff" + ri], label: label ? '<span class="syl">' + escapeHtml(label) + '</span>' : '', labelText: label,
+          vi: titleVi, tr: titleTrText(rec.title), viCls: "lff-title-vi bilingual-title-vi", trCls: "lff-title-translation bilingual-title-target",
+          docid: lffJwDocid(rec), readAll: readAllButtonHtml(readPairs) });
+        html += '<div class="group-card" data-open="' + (openSyls["lff" + ri] ? "true" : "false") + '" data-syl="lff' + ri + '" data-anchor="lff' + ri + '">' + lffHead +
           '<div class="group-body"><div class="talk-lines">';
         lineUnits.forEach(function (l) {
           html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
@@ -9033,12 +9039,10 @@ function verifyDistribution(units, dist, pins) {
         }
       });
       var readPairs = [[rec.title.vi, T(rec.title)]].concat(lineUnits.map(function (l) { return [l.vi, l.kr]; }));
-      var lpdBadges = jwTitleBadgesHtml(lpdJwDocid(rec));
-      html += '<div class="group-card" data-open="' + (openSyls["lpd" + ri] ? "true" : "false") + '" data-syl="lpd' + ri + '" data-anchor="lpd' + ri + '">' +
-        '<div class="group-head-row' + (lpdBadges ? ' has-jw-badges' : '') + '"><button class="group-head"><span>' +
-        '<span class="syl">' + escapeHtml(lpdRecordLabel(rec)) + '</span> ' +
-        '<span class="lpd-title bilingual-title' + (rec.kind === "appendix" ? " is-appendix-title" : "") + '"><span class="lpd-title-vi bilingual-title-vi">' + escapeHtml(rec.title.vi) + '</span>' + (T(rec.title) && currentLang !== "vi" && T(rec.title) !== rec.title.vi ? '<span class="lpd-title-translation bilingual-title-target">' + escapeHtml(T(rec.title)) + '</span>' : '') + '</span>' +
-        '</span>' + currChev() + '</button>' + lpdBadges + readAllButtonHtml(readPairs) + '</div>' +
+      var lpdHead = pubHeadRowHtml({ open: !!openSyls["lpd" + ri], label: '<span class="syl">' + escapeHtml(lpdRecordLabel(rec)) + '</span>', labelText: lpdRecordLabel(rec),
+        vi: rec.title.vi, tr: titleTrText(rec.title), viCls: "lpd-title-vi bilingual-title-vi", trCls: "lpd-title-translation bilingual-title-target",
+        titleCls: "lpd-title" + (rec.kind === "appendix" ? " is-appendix-title" : ""), docid: lpdJwDocid(rec), readAll: readAllButtonHtml(readPairs) });
+      html += '<div class="group-card" data-open="' + (openSyls["lpd" + ri] ? "true" : "false") + '" data-syl="lpd' + ri + '" data-anchor="lpd' + ri + '">' + lpdHead +
         '<div class="group-body"><div class="talk-lines">';
       lineUnits.forEach(function (l) {
         html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
@@ -9400,16 +9404,11 @@ function verifyDistribution(units, dist, pins) {
       var dateRangeTr = T(wk.date_range);
       var articleVi = wk.article_title && wk.article_title.vi;
       var articleTr = articleVi && currentLang !== "vi" ? T(wk.article_title) : "";
-      var wtBadges = articleVi ? jwTitleBadgesHtml(wtJwDocid(wk.week)) : '';
-      html += '<div class="group-card" data-open="' + openAll + '" data-syl="wt' + wk.week + '">' +
-        '<div class="group-head-row' + (wtBadges ? ' has-jw-badges' : '') + '"><button class="group-head"><span class="wt-head">' +
-        (weekLabel ? '<span class="syl">' + escapeHtml(weekLabel) + '</span> ' : '') +
-        (dateRangeTr ? '<span class="syl wt-date">' + escapeHtml(dateRangeTr) + '</span> ' : '') +
-        (articleVi ? '<span class="wt-article bilingual-title"><span class="wt-article-vi bilingual-title-vi">' + escapeHtml(articleVi) + '</span>' +
-          (articleTr ? '<span class="wt-article-tr bilingual-title-target">' + escapeHtml(articleTr) + '</span>' : '') + '</span> ' : '') +
-        '<span class="cnt">' + wk.words.length + (wordsView ? TU("개 단어") : TU("개 문장")) + '</span></span>' +
-        '<span class="chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></button>' +
-        wtBadges + readAllButtonHtml(readAllEntries) + '</div>' +
+      var wtHead = pubHeadRowHtml({ open: !!openAll, label: (weekLabel ? '<span class="syl">' + escapeHtml(weekLabel) + '</span>' : '') + (dateRangeTr ? ' <span class="syl wt-date">' + escapeHtml(dateRangeTr) + '</span>' : ''),
+        labelText: [weekLabel, dateRangeTr].filter(Boolean).join(" "), vi: articleVi || "", tr: articleTr, viCls: "wt-article-vi bilingual-title-vi", trCls: "wt-article-tr bilingual-title-target",
+        titleCls: "wt-article", rowCls: "titles-below", docid: articleVi ? wtJwDocid(wk.week) : "",
+        extra: '<span class="cnt pub-head-count">' + wk.words.length + (wordsView ? TU("개 단어") : TU("개 문장")) + '</span>', readAll: readAllButtonHtml(readAllEntries) });
+      html += '<div class="group-card" data-open="' + openAll + '" data-syl="wt' + wk.week + '">' + wtHead +
         '<div class="group-body"><div class="rhyme-word-list">';
       wk.words.forEach(function (w) {
         if (wordsView) {
@@ -9431,6 +9430,7 @@ function verifyDistribution(units, dist, pins) {
     root.querySelectorAll(".group-card").forEach(function (card) {
       card.querySelector(".group-head").addEventListener("click", function () {
         card.dataset.open = card.dataset.open === "true" ? "false" : "true";
+        if (this.hasAttribute("aria-expanded")) this.setAttribute("aria-expanded", card.dataset.open);
       });
     });
     root.querySelectorAll(".speak-btn").forEach(function (b) { b.addEventListener("click", function (e) { e.stopPropagation(); speak(b.dataset.speak); }); });
@@ -9670,6 +9670,24 @@ function verifyDistribution(units, dist, pins) {
   // The same badges for the title row of a card: "title [JW.ORG]". The title is a <button> (it opens the card) and a link cannot be
   // inside a button, so the badges are the button's sibling in the row (.group-head-row.has-jw-badges); the styles let the
   // button shrink to its title so that the badge follows it. "" when the page has no allowed link.
+  // Header of a publication card ([행복한 삶을 영원히] / [사람들을 사랑하고 제자로] / [파수대]) in the structure of a song header:
+  //   [toggle button: number / week + date]  "VI title [JW.ORG]"  "TARGET title [JW.ORG]"  [count]  [chevron]  [전체 듣기]
+  // each title and ITS OWN badge is one group (.title-link-group, a flex item of .bilingual-title: groups wrap as a whole); the
+  // groups are siblings of the toggle button, never inside it (no <button><a>, no <a><button>); a click on the row outside its
+  // links / buttons toggles too (the document click handler), the button is the keyboard / screen-reader control.
+  function jwTitleGroupHtml(text, cls, lang, docid) {
+    if (!text) return "";
+    var badge = docid ? jwOrgBadgeHtml(jwFinderUrl(docid, lang), { kind: "publication", lang: lang, label: songJwLocale(lang)[1] }) : "";
+    return '<span class="title-link-group"><span class="' + cls + '" lang="' + lang + '">' + escapeHtml(text) + '</span>' + badge + '</span>';
+  }
+  function pubHeadRowHtml(o) {
+    var name = [o.labelText, o.vi, o.tr].filter(Boolean).join(" ");
+    return '<div class="group-head-row pub-head-row' + (o.rowCls ? ' ' + o.rowCls : '') + '">' +
+      '<button type="button" class="group-head pub-toggle" aria-expanded="' + (o.open ? "true" : "false") + '" aria-label="' + escapeAttr(name) + '">' + o.label + '</button>' +
+      '<span class="pub-head-titles bilingual-title ' + (o.titleCls || "") + '">' + jwTitleGroupHtml(o.vi, o.viCls, "vi", o.docid) +
+      (currentLang !== "vi" ? jwTitleGroupHtml(o.tr, o.trCls, currentLang, o.docid) : "") + '</span>' +
+      (o.extra || "") + '<span class="pub-head-chev">' + currChev() + '</span>' + (o.readAll || "") + '</div>';
+  }
   function jwTitleBadgesHtml(docid) {
     if (!docid) return "";
     var langs = currentLang === "vi" ? ["vi"] : ["vi", currentLang];
@@ -11150,7 +11168,7 @@ function verifyDistribution(units, dist, pins) {
     // as-long-as-it-takes audio. Each mode supplies a small "reveal" function (revealFlash/
     // revealLook/revealMcq/revealOrder/revealType) that does that mode's own reveal+speak+advance;
     // armAutoReveal()/speakThenAdvance() below are the shared plumbing every mode calls into.
-    var AUTO_ADV_SECONDS_OPTS = [0.3, 0.5, 1, 3, 5, 8, 10, 15];   // the pause between a question and its answer (1 s by default)
+    var AUTO_ADV_SECONDS_OPTS = [0.3, 0.5, 1, 3];   // the pause between a question and its answer (1 s by default)
     var autoAdvanceEnabled = false;
     var autoNextOnCorrect = false;
     // [플래시카드] 자동 넘김: how many times in all one card is played (question, pause, answer) before the next card: 1-10
@@ -14225,6 +14243,34 @@ function verifyDistribution(units, dist, pins) {
       }
     } catch (e) { /* no-op */ }
   })();
+
+  // ---- a long-lived page comes back to the front (an open tab; the home-screen app, which iOS keeps in memory and resumes without loading) ----
+  //   1. Apple WebKit: the speech engine can stay silent after a stay in the background -> it is cleared (when nothing is being said), the
+  //      next run waits the settle; the next tap arms the session again
+  //   2. a newer build of the site is out (the <meta name="app-build"> of the live page differs) -> the page reloads itself, so a phone
+  //      or a Mac that has had the page open for days does not keep running the old code
+  //   3. JEONJU: the first return of a new day lands on today's [과정] like a first load (a resumed home-screen app never loads)
+  var APP_BUILD = (document.querySelector('meta[name="app-build"]') || {}).content || "";
+  var lastBuildCheck = 0;
+  function onPageResume() {
+    if (document.visibilityState === "hidden") return;
+    if (IS_APPLE_WEBKIT_SPEECH && (!speechRun || speechRun.ended)) {
+      try { window.speechSynthesis.cancel(); } catch (eCancel) { /* no-op */ }
+      lastSpeechCancelAt = Date.now();
+    }
+    var now = Date.now();
+    if (APP_BUILD && /^https?:$/.test(location.protocol) && navigator.onLine !== false && now - lastBuildCheck > 60000) {
+      lastBuildCheck = now;
+      fetch(location.pathname + "?build=" + now, { cache: "no-store", credentials: "omit" })
+        .then(function (res) { return res.ok ? res.text() : ""; })
+        .then(function (html) { var m = /<meta name="app-build" content="([^"]+)"/.exec(html || ""); if (m && m[1] !== APP_BUILD) location.reload(); })
+        .catch(function () { /* offline: keep this build */ });
+    }
+    if (window.SITE_PROFILE === "jeonju" && isDefaultLanding() && !courseAutoOpenDone() && goToTodayCourse()) markCourseAutoOpen();
+  }
+  document.addEventListener("visibilitychange", onPageResume);
+  window.addEventListener("pageshow", function (e) { if (e.persisted) onPageResume(); });
+  window.__onPageResume = onPageResume;   // test hook
 
   /* ================= TARGET ENGINE =================
      Runs instead of the Vietnamese modules on a site whose data block has TARGET_SITE

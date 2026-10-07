@@ -216,6 +216,18 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         const d1 = await E(SNAP) || {};
         ok(d1.tab === 'vocab' && d1.weeks === 0 && d1.days === 0, `a ${label} link: a re-draw does not start a landing ${JSON.stringify(d1)}`);
       }
+      // a home-screen app is resumed from memory (iOS): no page load, the day changed -> the first return of the new day lands on today's [과정]
+      await load({storage: {'vn-app-last-place-v1': SEEN, 'vn-course-last-auto-open-date': '2026-10-06'}, nowMs: kstNoon('2026-10-06')});
+      await E(`document.querySelector('.tab-btn[data-tab="sentence"]').click()`);
+      const rs0 = await E(SNAP) || {};
+      await E(`window.__srsNow=()=>new Date(${kstNoon('2026-10-07')}); window.__onPageResume()`); await sleep(500);
+      const rs1 = await E(SNAP) || {};
+      ok(rs0.tab === 'sentence' && rs1.tab === 'curriculum' && rs1.day === '수' && rs1.welcomeOpen && await E(`localStorage.getItem('vn-course-last-auto-open-date')`) === '2026-10-07', `resume on a new day lands on 수 of [과정] ${JSON.stringify([rs0.tab, rs1.tab, rs1.day])}`);
+      await E(`document.querySelector('.tab-btn[data-tab="sentence"]').click()`);
+      await E(`window.__onPageResume()`); await sleep(400);
+      ok((await E(SNAP) || {}).tab === 'sentence', 'a second return on the same day does not pull the learner back');
+      await E(`window.__srsNow=()=>new Date(${kstNoon('2026-10-08')}); history.replaceState(null,'','#song-12'); window.__onPageResume()`); await sleep(300);
+      ok((await E(SNAP) || {}).tab === 'sentence', 'a link (hash) on resume keeps the learner where they are');
       // outside the course dates: nothing marked, the saved place is kept and the day is not used up
       await load({storage: {'vn-app-last-place-v1': SEEN}, nowMs: Date.parse('2030-01-02T03:00:00Z')});
       const out = await E(`({tab:document.querySelector('.tab-btn[aria-selected="true"]').dataset.tab, key:localStorage.getItem('vn-course-last-auto-open-date')})`, false) || {};

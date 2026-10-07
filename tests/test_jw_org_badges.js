@@ -223,9 +223,12 @@ function staticChecks() {
       const p = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));const out={};
         const grab=pre=>{document.querySelectorAll('[data-open]').forEach(c=>c.dataset.open='true');
           const cards=[...document.querySelectorAll('.group-card[data-syl^="'+pre+'"]')];
-          const first=cards.find(c=>c.querySelector('.jw-title-badges'));
-          const geo=first?(()=>{const hr=first.querySelector('.group-head-row'),b=hr.querySelector('.group-head'),a=hr.querySelector('.jw-title-badges a');return {kids:[...hr.children].map(x=>x.tagName+'.'+x.className.split(' ')[0]),gap:Math.round(a.getBoundingClientRect().left-b.getBoundingClientRect().right),sameLine:Math.abs(a.getBoundingClientRect().top-b.getBoundingClientRect().top)<60,inBtn:hr.querySelectorAll('button a').length};})():null;
-          return {geo,bodyRows:cards.filter(c=>c.querySelector('.group-body .jw-badge-row')).length,rows:[...document.querySelectorAll('.group-card[data-syl^="'+pre+'"] .group-head-row.has-jw-badges > .jw-title-badges > a.jw-org-badge')].map(a=>({h:a.getAttribute('href'),t:a.textContent,k:a.dataset.mediaKind,l:a.dataset.jwLang})),
+          const first=cards.find(c=>c.querySelector('.pub-head-row .title-link-group .jw-org-badge'));
+          const geo=first?(()=>{const hr=first.querySelector('.pub-head-row');
+            const groups=[...hr.querySelectorAll('.title-link-group')].map(g=>{const ti=g.firstElementChild,a=g.querySelector('a.jw-org-badge');const rs=ti.getClientRects(),last=rs[rs.length-1]||ti.getBoundingClientRect(),ar=a.getBoundingClientRect();
+              return {follows:a.previousElementSibling===ti,gap:Math.round(ar.left-last.right),sameLine:Math.abs(ar.top-last.top)<12,lang:a.dataset.jwLang,titleLang:ti.lang};});
+            return {kids:[...hr.children].map(x=>x.tagName+'.'+x.className.split(' ')[0]),groups,inBtn:first.querySelectorAll('button a, a button').length,btn:hr.querySelector('button.group-head').getAttribute('aria-expanded')};})():null;
+          return {geo,bodyRows:cards.filter(c=>c.querySelector('.group-body .jw-badge-row')).length,rows:[...document.querySelectorAll('.group-card[data-syl^="'+pre+'"] .pub-head-row a.jw-org-badge')].map(a=>({h:a.getAttribute('href'),t:a.textContent,k:a.dataset.mediaKind,l:a.dataset.jwLang})),
             links:[...document.querySelectorAll('a[href*="jw.org"]')].map(a=>a.getAttribute('href')), oldStyle:document.querySelectorAll('.song-jw-links a:not(.jw-org-badge)').length};};
         window.setLang('ja');await sleep(300);
         document.querySelector('.tab-btn[data-tab="sentence"]').click();await sleep(300);
@@ -244,8 +247,9 @@ function staticChecks() {
         for (const key of ['lff', 'lpd', 'wt', 'vwt']) {
           if (!p[key]) continue;
           const g = p[key].geo;
-          ok(g && /^BUTTON\.group-head,SPAN\.jw-title-badges(,\w+\.read-all-btn)?$/.test(g.kids.join()) && g.inBtn === 0 && p[key].bodyRows === 0, `${n}: ${key}: header row = title button + badge sibling, no link inside the button, no badge row in the body ${g && g.kids}`);
-          ok(g && g.sameLine && g.gap >= 0 && g.gap <= 24, `${n}: ${key}: the badge follows the title directly (gap ${g && g.gap} px)`);
+          ok(g && /^BUTTON\.group-head,SPAN\.pub-head-titles(,SPAN\.cnt)?,SPAN\.pub-head-chev(,\w+\.read-all-btn)?$/.test(g.kids.join()) && g.inBtn === 0 && p[key].bodyRows === 0 && /^(true|false)$/.test(g.btn), `${n}: ${key}: header row = toggle button + title groups (+ count) + chevron (+ 전체 듣기); no link inside the button, no <a><button>, no badge row in the body ${g && g.kids}`);
+          ok(g && g.groups.length === 2 && g.groups[0].lang === 'vi' && g.groups[1].lang === 'ja' && g.groups.every(x => x.follows && x.sameLine && x.gap >= 0 && x.gap <= 24 && x.titleLang === x.lang),
+            `${n}: ${key}: "VI title [JW.ORG]" "TARGET title [JW.ORG]": each badge directly after its own title ${JSON.stringify(g && g.groups)}`);
           ok(p[key].links.every(allowed) && p[key].oldStyle === 0, `${n}: ${key}: every clickable jw.org link is an allowed share link (${p[key].links.filter(x => !allowed(x)).slice(0, 3)})`);
         }
       }

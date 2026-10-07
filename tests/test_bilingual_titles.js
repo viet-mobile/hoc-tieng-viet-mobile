@@ -83,6 +83,9 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
             }
             if (row.vi) ok(row.vi.r[2] <= r.iw + 1 && row.vi.r[0] >= -1, `${tag}: VI title inside the screen`);
           }
+          // a badge never stands alone on a line: it is on the line of the last line of its own title (publication headers)
+          const bd = await E(`(()=>{const out=[];document.querySelectorAll('#panel-${tab} .pub-head-titles .title-link-group, #panel-${tab} .song-title-link-group').forEach(g=>{if(!g.offsetParent)return;const a=g.querySelector('a.jw-org-badge');if(!a)return;const ti=g.firstElementChild,rs=ti.getClientRects(),last=rs[rs.length-1],ar=a.getBoundingClientRect();out.push(Math.abs(ar.top-last.top)<14||ar.top<last.bottom);});return out;})()`);
+          ok((bd || []).every(Boolean), `${tag}: no badge alone on a line (${(bd || []).filter(x => !x).length} of ${(bd || []).length})`);
           // wide enough: not always two lines
           if (width >= 820 && r.rows.some(x => x.vi && x.tg)) ok(sameLine > 0, `${tag}: at least one title pair on ONE line when there is room (${sameLine} one line / ${wrapped} wrapped)`);
           const key = `${loc} ${tab}:${sub}`; ok(true, ''); const lg = r.rows.filter(x => x.vi && x.tg).sort((x, y) => y.text - x.text)[0];

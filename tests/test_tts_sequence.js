@@ -261,13 +261,13 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         return out;})()`)) || {};
       ok(rI.flashToggle === false && rI.flashAgain === false, `${n} I: no 정답 시 다음 문제 on the flashcard ${JSON.stringify(rI)}`);
       ok(rI.look === true && rI.order === true && rI.type === true, `${n} I: still there in the other modes ${JSON.stringify(rI)}`);
-      ok(/^0\.3,0\.5,1,3,5,8,10,15$/.test(rI.opts || '') && rI.def === '1', `${n} I: 자동 넘김 1초 default ${rI.opts} / ${rI.def}`);
+      ok(/^0\.3,0\.5,1,3$/.test(rI.opts || '') && rI.def === '1', `${n} I: 자동 넘김 1초 default ${rI.opts} / ${rI.def}`);
       // a saved valid choice is kept; a saved invalid one falls back to 1 s
-      await load(prof, {'vn-app-auto-adv': JSON.stringify({enabled: false, nextOnCorrect: false, seconds: 8})});
+      await load(prof, {'vn-app-auto-adv': JSON.stringify({enabled: false, nextOnCorrect: false, seconds: 3})});
       const keep = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));document.querySelector('.tab-btn[data-tab="review"]').click();await sleep(500);return document.getElementById('auto-advance-seconds').value;})()`);
-      await load(prof, {'vn-app-auto-adv': JSON.stringify({enabled: false, nextOnCorrect: false, seconds: 7})});
+      await load(prof, {'vn-app-auto-adv': JSON.stringify({enabled: false, nextOnCorrect: false, seconds: 8})});   // (5 / 8 / 10 / 15 s are no longer offered)
       const bad = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));document.querySelector('.tab-btn[data-tab="review"]').click();await sleep(500);return document.getElementById('auto-advance-seconds').value;})()`);
-      ok(keep === '8' && bad === '1', `${n} I: saved choice kept (${keep}), invalid -> 1 (${bad})`);
+      ok(keep === '3' && bad === '1', `${n} I: saved choice kept (${keep}), invalid -> 1 (${bad})`);
 
       // ---- J. a manual next during the wait cancels the timer; Apple: background ends the speech ----
       await load(prof, {'vn-app-auto-adv': AUTO(3)});
@@ -377,7 +377,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         ok(g01 !== null && g01 <= (prof.apple ? 140 : 25) && g12 <= (prof.apple ? 140 : 25), `${n} M: VI -> VI gap ${g01} / ${g12} ms (no timer; Apple keeps its 90 ms engine floor)`);
         ok(!ev.slice(ev.indexOf(spk[0]), ev.indexOf(spk[2]) + 1).some(x => x.ev === 'cancel'), `${n} M: no cancel() between the repetitions`);
         ok(lang !== null && lang >= 400 && lang <= 900, `${n} M: question -> answer pause is the 자동 넘김 wait (0.5 s): ${lang} ms`);
-        ok(/^0\.3,0\.5,1,/.test(rM.opts || ''), `${n} M: 자동 넘김 offers 0.3 s and 0.5 s ${rM.opts}`);
+        ok(rM.opts === '0.3,0.5,1,3', `${n} M: 자동 넘김 offers 0.3 / 0.5 / 1 / 3 s (no 5, 8, 10, 15) ${rM.opts}`);
         console.log(`${n} M gaps (ms): VI-VI ${g01}/${g12}, question->answer ${lang}`);
       }
       ok(!errs.length, `${n}: errors ${errs.join(' | ').slice(0, 400)}`);

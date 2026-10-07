@@ -1192,8 +1192,11 @@
   /* the titles are the song title of [왕국 노래] (.song-detail-vi-title / .song-detail-target-title): one line, a space between */
   .song-acc-vi, .song-acc-target { display: inline; }
   /* a title and its badge stay together: each group is a unit that wraps as a whole (VI [JW.ORG] / TARGET [JW.ORG]) */
-  .song-title-link-group { display: inline-block; max-width: 100%; vertical-align: top; margin-right: 0.5em; }
-  .song-title-link-group .jw-org-badge { margin-left: 6px; }
+  /* a title and its badge: the title (it may wrap inside its own box, min-width 0) with the badge at the right of its last line -- the badge can
+     never stand on a line of its own */
+  .song-title-link-group { display: inline-flex; align-items: flex-end; max-width: 100%; vertical-align: top; margin-right: 0.5em; gap: 6px; }
+  .song-title-link-group > :first-child { min-width: 0; flex: 0 1 auto; }
+  .song-title-link-group .jw-org-badge { flex: none; margin: 0 0 0.2em; }
   .song-acc-missing { display: inline-block; font-size: 0.72rem; font-weight: 700; color: var(--ink-faint); background: var(--chip-bg);
     border-radius: 999px; padding: 1px 8px; }
   .song-acc .chev { flex: none; transition: transform .15s; }
@@ -1227,6 +1230,27 @@
   /* "title [JW.ORG]" in a card header: the title button shrinks to its title, the badges are its sibling, the rest of the row still toggles */
   .jw-title-badges { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px; flex: none; }
   /* the row wraps: a title too long for the line keeps the full width and its badges continue on the next line */
+  /* publication card header = a song header: [toggle button: number / week] "VI title [JW.ORG]" "TARGET title [JW.ORG]" [count] [chevron] [전체 듣기].
+     The title groups are siblings of the button (a link cannot be inside a button); a group wraps as a whole, never between a title and its badge. */
+  .pub-head-row { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.5em; row-gap: 0.15em; padding: 12px 12px 12px 15px; cursor: pointer; }
+  .pub-head-row .group-head.pub-toggle { flex: none; width: auto; padding: 0; justify-content: flex-start; background: none; }
+  .pub-head-row .group-head.pub-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .pub-head-row .pub-head-titles { display: flex; flex: 1 1 10em; min-width: 0; }
+  .title-link-group { display: inline-flex; align-items: flex-end; max-width: 100%; vertical-align: top; gap: 6px; }
+  .title-link-group > :first-child { min-width: 0; flex: 0 1 auto; }
+  .title-link-group .jw-org-badge { flex: none; margin: 0 0 0.2em; }
+  .pub-head-row .pub-head-count { margin-left: 2px; }
+  .pub-head-row .pub-head-chev { flex: none; align-self: center; margin-left: auto; }
+  .pub-head-row .chev { color: var(--ink-faint); transition: transform .15s; flex: none; display: inline-flex; }
+  .group-card[data-open="true"] > .pub-head-row .chev { transform: rotate(180deg); }
+  .pub-head-row .read-all-btn { margin: 0; align-self: center; }
+  .pub-head-row .lpd-title.is-appendix-title .lpd-title-translation { flex-basis: auto; }
+  /* [파수대]: week + date + count + chevron + 전체 듣기 on the first row, the two titles on a row of their own below (they are long) */
+  .pub-head-row.titles-below .group-head { order: 1; }
+  .pub-head-row.titles-below .pub-head-count { order: 2; margin-left: auto; }
+  .pub-head-row.titles-below .pub-head-chev { order: 3; margin-left: 0; }
+  .pub-head-row.titles-below .read-all-btn { order: 4; margin-left: auto; }
+  .pub-head-row.titles-below .pub-head-titles { order: 5; flex: 1 1 100%; }
   .group-head-row.has-jw-badges { cursor: pointer; flex-wrap: wrap; row-gap: 0; }
   .group-head-row.has-jw-badges .group-head { flex: 0 1 auto; width: auto; max-width: 100%; }
   .group-head-row.has-jw-badges .read-all-btn { margin-left: auto; }

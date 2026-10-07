@@ -290,7 +290,13 @@ def assemble_site(site):
             except OSError as exc:  # e.g. a local server holding the directory open on Windows
                 print(f"[general] WARNING: could not remove dist/{sub} ({exc}); do not deploy this local dist/ as GENERAL")
     data_tags = write_data_scripts(dist_dir, data_js)
-    open(dist_dir / "index.html", "w", encoding="utf-8").write(out.replace(DATA_PLACEHOLDER, data_tags, 1))
+    page_html = out.replace(DATA_PLACEHOLDER, data_tags, 1)
+    # The build id of this page: a long-lived page (an open tab, a home-screen app resumed from memory) compares it with the live one
+    # when it comes back to the front and reloads itself when a newer build is out (app_logic.js: onPageResume).
+    import hashlib
+    build_id = hashlib.sha1(page_html.encode("utf-8")).hexdigest()[:12]
+    page_html = page_html.replace('<meta charset="UTF-8">', '<meta charset="UTF-8">\n<meta name="app-build" content="%s">' % build_id, 1)
+    open(dist_dir / "index.html", "w", encoding="utf-8").write(page_html)
     if meta.get("brand"):
         # Only this site's own icons; the Vietnamese sites' logo (assets/) is not published here.
         _remove_tree(dist_dir / "assets")
