@@ -2161,6 +2161,27 @@
       }
     } catch (eAs) { audioSessionNote = "audioSession threw " + eAs; }   // a refused assignment never stops the speech
   }
+  // iOS / iPadOS 27.0.1: the API can say "playback" while the session's real category is stale (the ringer switch on "silent" still mutes the
+  // speech); the WebKit setter ignores a repeated "playback", so one ambient -> playback cycle is what makes the category real again. The
+  // cycle is done at most ONCE per user-initiated run -- never per utterance -- and only when it is due: at the first speech of the page
+  // session, and at the first one after the page came back to the front (appleSessionStale). `then` is called after the restore (in the next
+  // task), at once where there is nothing to do (not iOS / iPadOS, no API, not due).
+  var appleSessionStale = true;
+  function refreshApplePlaybackSession(why, then, force) {
+    if (!IS_IOS_DEVICE || !supportsAudioSession() || (!appleSessionStale && !force)) { ensurePlaybackSession(why); then(); return; }
+    var as = navigator.audioSession, before = "?";
+    try {
+      before = as.type;
+      appleSessionStale = false;
+      if (speechDebugOn) speechDiagPanel("audioSession before: " + before + " (" + why + ")");
+      as.type = "ambient";
+      if (speechDebugOn) speechDiagPanel("audioSession force refresh: ambient");
+    } catch (eAmb) { audioSessionNote = "audioSession threw " + eAmb; ensurePlaybackSession(why); then(); return; }
+    setTimeout(function () {
+      try { as.type = "playback"; if (speechDebugOn) speechDiagPanel("audioSession restored: " + as.type + ", state " + as.state); } catch (ePb) { audioSessionNote = "audioSession threw " + ePb; }
+      then();
+    }, 0);
+  }
   function unlockAudioSession() {
     if (!IS_IOS_DEVICE) return;
     ensurePlaybackSession("tap");
@@ -2217,7 +2238,7 @@
       var b1 = document.createElement("button"), b2 = document.createElement("button"), out = document.createElement("div");
       b1.textContent = "TEST vi-VN"; b2.textContent = "TEST en-US";
       var b3 = document.createElement("button"), b4 = document.createElement("button");
-      b3.textContent = "A: vi DEFAULT session"; b4.textContent = "B: vi PLAYBACK session";
+      b3.textContent = "A: vi DEFAULT session"; b4.textContent = "B: vi PLAYBACK session (+ category refresh)";
       [b1, b2, b3, b4].forEach(function (b) { b.style.cssText = "margin:0 6px 4px 0;padding:4px 8px;font:12px sans-serif;"; });
       out.id = "tts-diag-log";
       function test(lang, text, mode) {
@@ -2227,9 +2248,10 @@
           // of the app (playback) -- on a device with the ringer switch on silent: DEFAULT silent and PLAYBACK audible = the cause
           try {
             if (mode === "default") { if (supportsAudioSession()) navigator.audioSession.type = "auto"; }
-            else ensurePlaybackSession("TEST");
+            else if (!(IS_IOS_DEVICE && supportsAudioSession())) ensurePlaybackSession("TEST");
             note.push("audioSession " + (supportsAudioSession() ? "supported, type " + navigator.audioSession.type + ", state " + navigator.audioSession.state : "NOT supported") + (mode === "default" ? " (DEFAULT test)" : ""));
           } catch (eMode) { note.push("audioSession threw " + eMode); }
+          function rest() {
           try { v = synth.getVoices() || []; } catch (e) { note.push("getVoices threw " + e); }
           var base = lang.slice(0, 2), mine = v.filter(function (x) { return String(x.lang).toLowerCase().replace("_", "-").indexOf(base) === 0; });
           note.push("voices " + v.length + ", " + base + ": " + mine.map(function (x) { return x.name + "/" + x.lang + (x.localService ? "/local" : ""); }).join(" | "));
@@ -2253,6 +2275,9 @@
             }, 3000);
           } catch (e) { note.push("speak threw " + e); }
           speechDiagPanel(note.join("\n"));
+          }
+          // the same helper as every TTS start: the category cycle when it is due ("B" forces it), then the speech
+          if (mode === "default") rest(); else refreshApplePlaybackSession("TEST", rest, mode === "playback");
         };
       }
       b1.onclick = test("vi-VN", "Xin chào"); b2.onclick = test("en-US", "Hello");
@@ -2449,7 +2474,6 @@
   // called after the run was stopped or replaced. Returns the run.
   function playSpeechRun(items, handlers) {
     handlers = handlers || {};
-    ensurePlaybackSession("run");   // before the first utterance of the run is handed to the engine
     var run = newSpeechRun();
     var finishedRun = false;
     function complete() {
@@ -2460,7 +2484,7 @@
     }
     if (!speechAllowed()) { speechLog(run, "-", "blocked-no-tap"); setTimeout(function () { if (!run.ended && speechRun === run) complete(); }, 0); return run; }
     var i = 0;
-    (function next() {
+    function next() {
       if (run.ended) return;
       if (i >= items.length) { complete(); return; }
       var idx = i++, it = items[idx];
@@ -2468,7 +2492,9 @@
       speakStep(run, it.opts, idx, function () {
         if (it.gap > 0) speechRunTimer(run, next, it.gap); else next();
       });
-    })();
+    }
+    // the audio session is made playback (once cycled when it is due) BEFORE the first utterance of the run is handed to the engine
+    refreshApplePlaybackSession("run", function () { if (!run.ended) next(); });
     return run;
   }
 
@@ -11338,6 +11364,8 @@ function verifyDistribution(units, dist, pins) {
     var autoNextOnCorrect = false;
     // [플래시카드] 자동 넘김: how many times in all one card is played (question, pause, answer) before the next card: 1-10
     var AUTO_CARD_REPEAT_OPTS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    // the total number of plays of a card: always an integer 1..10 ("1" from a select or from localStorage included), anything else is 1
+    function normTotalRepeats(v) { var n = Number(v); return (isFinite(n) && n === Math.floor(n) && n >= 1 && n <= 10) ? n : 1; }
     var autoCardRepeats = 1;
     var autoAdvanceSeconds = 1;   // default 1 s; a saved valid choice of the user is kept (see the localStorage read below)
     try {
@@ -11347,7 +11375,7 @@ function verifyDistribution(units, dist, pins) {
         if (parsedAutoAdv && typeof parsedAutoAdv.enabled === "boolean") autoAdvanceEnabled = parsedAutoAdv.enabled;
         if (parsedAutoAdv && typeof parsedAutoAdv.nextOnCorrect === "boolean") autoNextOnCorrect = parsedAutoAdv.nextOnCorrect;
         if (parsedAutoAdv && AUTO_ADV_SECONDS_OPTS.indexOf(parsedAutoAdv.seconds) >= 0) autoAdvanceSeconds = parsedAutoAdv.seconds;
-        if (parsedAutoAdv && AUTO_CARD_REPEAT_OPTS.indexOf(parsedAutoAdv.cardRepeats) >= 0) autoCardRepeats = parsedAutoAdv.cardRepeats;
+        if (parsedAutoAdv) autoCardRepeats = normTotalRepeats(parsedAutoAdv.cardRepeats);
       }
     } catch (e0) { /* no-op: localStorage unavailable */ }
     function saveAutoAdvancePref() {
@@ -11458,7 +11486,7 @@ function verifyDistribution(units, dist, pins) {
         AUTO_ADV_SECONDS_OPTS.map(function (s) { return '<option value="' + s + '"' + (s === autoAdvanceSeconds ? " selected" : "") + '>' + s + TU("초") + '</option>'; }).join("") +
         '</select>' +
         // flashcard only: one card N times in all (question, pause, answer) before the next card
-        (studyState.mode === "flash" ? '<label class="auto-card-repeat-option"><span>' + TU("총 반복 횟수") + '</span><select id="auto-card-repeats" class="auto-seconds-select" aria-label="' + escapeAttr(TU("자동 넘김시 총 반복 횟수")) + '" ' + (autoAdvanceEnabled ? "" : "disabled") + '>' +
+        (studyState.mode === "flash" ? '<label class="auto-card-repeat-option auto-advance-option"><span>' + TU("총 반복 횟수") + '</span><select id="auto-card-repeats" class="auto-seconds-select" aria-label="' + escapeAttr(TU("자동 넘김시 총 반복 횟수")) + '" ' + (autoAdvanceEnabled ? "" : "disabled") + '>' +
           AUTO_CARD_REPEAT_OPTS.map(function (n) { return '<option value="' + n + '"' + (n === autoCardRepeats ? " selected" : "") + '>' + timesLabel(n) + '</option>'; }).join("") + '</select></label>' : '') +
         '</span>';
       // 정답 시 다음 문제 means nothing on a flashcard (there is no answer to get right): not shown there.
@@ -11473,16 +11501,16 @@ function verifyDistribution(units, dist, pins) {
         var cardRep = document.getElementById("auto-card-repeats");
         if (cardRep) cardRep.disabled = !autoAdvanceEnabled;
         if (!autoAdvanceEnabled) clearAutoAdvanceTimer();
-        else if (studyState.current) armAutoReveal(currentRevealFn());
+        else if (studyState.current) { studyState.autoRevealKey = null; armAutoReveal(currentRevealFn()); }
       });
       document.getElementById("auto-advance-seconds").addEventListener("change", function (e) {
         autoAdvanceSeconds = parseFloat(e.target.value) || 1;
         saveAutoAdvancePref();
-        if (autoAdvanceEnabled && studyState.current) armAutoReveal(currentRevealFn());
+        if (autoAdvanceEnabled && studyState.current) { studyState.autoRevealKey = null; armAutoReveal(currentRevealFn()); }
       });
       var cardRepeatSel = document.getElementById("auto-card-repeats");
       if (cardRepeatSel) cardRepeatSel.addEventListener("change", function (e) {
-        autoCardRepeats = parseInt(e.target.value, 10) || 1;
+        autoCardRepeats = normTotalRepeats(e.target.value);
         saveAutoAdvancePref();
         studyState.cardCycle = 1;   // the card on screen starts counting again
       });
@@ -11912,9 +11940,18 @@ function verifyDistribution(units, dist, pins) {
       if (!items.length) { if (doneFn) doneFn(); return; }
       playSpeechRun(items, { onDone: doneFn });
     }
+    // 총 반복 횟수 state, on the ?ttsdebug=1 panel: total, the play now running, the card
+    function flashDbg(msg) { if (speechDebugOn) speechDiagPanel("flash " + msg + " [total=" + autoCardRepeats + " cycle=" + (studyState.cardCycle || 1) + " card=" + studyState.idx + " auto=" + autoAdvanceEnabled + "]"); }
     function revealFlash() {
       var item = studyState.current;
       if (!item) return;
+      // one auto-reveal per play of a card: a second call for the same play (a late or doubled callback of the engine) must not play the
+      // answer again or advance twice
+      var revealKey = studyState.idx + ":" + (studyState.cardCycle || 1);
+      if (studyState.autoRevealKey === revealKey && studyState.autoRevealItem === item) { flashDbg("reveal ignored: this play was revealed already"); return; }
+      studyState.autoRevealKey = revealKey; studyState.autoRevealItem = item;
+      flashDbg("reveal");
+      var advanced = false;
       srsCardSeen(item);
       var kr = document.getElementById("flash-kr");
       var hint = document.getElementById("flash-hint");
@@ -11924,13 +11961,17 @@ function verifyDistribution(units, dist, pins) {
       // 자동 넘김 with a total of N plays of the card: the card is played again (hidden answer, question, pause, answer) until its
       // N-th play has been said; only then the next card. A new card (renderFlash) starts at play 1.
       function advance() {
+        if (advanced) { flashDbg("advance ignored: done already"); return; }
+        advanced = true;
         if (autoAdvanceEnabled && (studyState.cardCycle || 1) < autoCardRepeats && studyState.current === item) {
           studyState.cardCycle = (studyState.cardCycle || 1) + 1;
+          flashDbg("scheduleNextCycle");
           if (kr) kr.style.display = "none";
           if (hint) hint.textContent = isRev ? TU("눌러서 베트남어 보기") : TU("눌러서 뜻 보기");
           if (isRev) speakPromptThenArm(item.kr, revealFlash); else speakItemThenArm(item.vi, revealFlash);
           return;
         }
+        flashDbg("scheduleNextCard");
         var b = document.getElementById("flash-next"); if (b) b.click();
       }
       if (item.ex) { speakHanjaBack(item, isRev, false, function () { if (reviewTabIsActive()) advance(); }); return; }
@@ -14419,6 +14460,7 @@ function verifyDistribution(units, dist, pins) {
   var lastBuildCheck = 0;
   function onPageResume() {
     if (document.visibilityState === "hidden") return;
+    appleSessionStale = true;   // checked here, cycled at the next tap that starts speech (never a sound by itself)
     ensurePlaybackSession("back to the front");
     if (IS_APPLE_WEBKIT_SPEECH && (!speechRun || speechRun.ended)) {
       try { window.speechSynthesis.cancel(); } catch (eCancel) { /* no-op */ }

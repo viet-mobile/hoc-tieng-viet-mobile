@@ -1,6 +1,6 @@
 // The audio session of iOS / iPadOS (run build_app.py / assemble_app.py first): with the ringer switch on "silent" the speech is only
 // heard from a PLAYBACK session. Mock navigator.audioSession + the fake speech engine, one shared order log (window.__tts):
-//   - iPhone / iPad: type "playback" is assigned BEFORE the first utterance is handed to the engine, and only once (never cycled)
+//   - iPhone / iPad: ONE ambient -> playback category cycle before the first utterance of the page session (not per run / utterance), playback ends
 //   - no audioSession API: the speech works as before
 //   - an assignment that throws never stops the speech
 //   - macOS Safari, Windows, Android: the session is not touched at all
@@ -97,16 +97,23 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
           // a second and a third run: the session is not set again
           document.querySelectorAll('#panel-sentence .speak-btn[data-speak]')[1].click(); await sleep(700);
           document.querySelectorAll('#panel-sentence .speak-btn[data-speak]')[0].click(); await sleep(700);
-          return {first, all:window.__tts.slice(), type:navigator.audioSession&&navigator.audioSession.type};})()`);
+          const mid=window.__tts.filter(x=>x.ev==='audioSession'&&x.v==='ambient').length;
+          // back to the front: the NEXT tap that starts speech cycles once more, the return itself says nothing
+          window.__onPageResume(); const afterResume=window.__tts.filter(x=>x.ev==='audioSession'&&x.v==='ambient').length;
+          document.querySelectorAll('#panel-sentence .speak-btn[data-speak]')[1].click(); await sleep(700);
+          return {first, mid, afterResume, all:window.__tts.slice(), type:navigator.audioSession&&navigator.audioSession.type};})()`);
         const tag = `${name} audioSession ${mode}`;
         const ev = r.all || [], iOS = name === 'iphone' || name === 'ipad';
         const idxPlay = ev.findIndex(x => x.ev === 'audioSession' && x.v === 'playback'), idxSpeak = ev.findIndex(x => x.ev === 'speak');
         ok(idxSpeak >= 0, `${tag}: the speech still starts`);
         if (iOS && mode === 'ok') {
-          ok(idxPlay >= 0 && idxSpeak >= 0 && ev.every(x => x.ev !== 'audioSession' || x.v === 'playback') && r.type === 'playback', `${tag}: playback assigned ${JSON.stringify(ev.filter(x => x.ev === 'audioSession').map(x => x.v))}, final ${r.type}`);
-          ok(ev.filter(x => x.ev === 'audioSession').length <= 1, `${tag}: assigned at most once while it stays playback (no cycling): ${ev.filter(x => x.ev === 'audioSession').length}`);
-          ok(idxPlay < 0 || idxPlay < idxSpeak, `${tag}: the assignment comes before the first utterance`);
-        } else if (iOS && mode === 'throws') {
+          const seq = ev.filter(x => x.ev === 'audioSession' || x.ev === 'speak').map(x => x.ev === 'speak' ? 'S' : x.v[0]);   // a(mbient) p(layback) S(peak)
+          const amb = ev.filter(x => x.ev === 'audioSession' && x.v === 'ambient').length;
+          ok(r.type === 'playback', `${tag}: the session ends as playback (${r.type})`);
+          ok(r.mid === 1 && r.afterResume === 1 && amb === 2, `${tag}: ONE category cycle for three runs (${r.mid}), none at the return itself (${r.afterResume}), one at the next run (${amb}) ${seq.join('')}`);
+          const iA = seq.indexOf('a'), iS = seq.indexOf('S'), iPafter = seq.indexOf('p', iA);
+          ok(iA >= 0 && iPafter > iA && iPafter < iS, `${tag}: ambient, then playback, then the first utterance ${seq.join('')}`);
+        } else if (iOS && mode === 'throws') {        } else if (iOS && mode === 'throws') {
           ok(!errs.length, `${tag}: a refused assignment is caught (${errs.join(' | ').slice(0, 200)})`);
         } else if (iOS && mode === 'none') {
           ok(!errs.length, `${tag}: no API, no error`);
