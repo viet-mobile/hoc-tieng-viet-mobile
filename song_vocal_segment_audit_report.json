@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T05:23:39.824119+00:00",
+  "generated": "2026-10-08T07:16:37.729972+00:00",
   "fresh_network": false,
   "base_commit": "c7e3a3d",
   "source_priority": [
@@ -236,52 +236,52 @@
   },
   "totals": {
     "vi": {
-      "active_tracks": 45,
-      "enabled_lines": 877
+      "active_tracks": 46,
+      "enabled_lines": 913
     },
     "cs": {
-      "active_tracks": 20,
-      "enabled_lines": 460
+      "active_tracks": 21,
+      "enabled_lines": 496
     },
     "zh_cn": {
-      "active_tracks": 14,
-      "enabled_lines": 407
+      "active_tracks": 15,
+      "enabled_lines": 443
     },
     "zh": {
-      "active_tracks": 13,
-      "enabled_lines": 370
+      "active_tracks": 14,
+      "enabled_lines": 406
     },
     "en": {
       "active_tracks": 68,
-      "enabled_lines": 1449
+      "enabled_lines": 1452
     },
     "fr": {
-      "active_tracks": 20,
-      "enabled_lines": 401
+      "active_tracks": 21,
+      "enabled_lines": 437
     },
     "de": {
-      "active_tracks": 8,
-      "enabled_lines": 171
+      "active_tracks": 9,
+      "enabled_lines": 207
     },
     "hu": {
-      "active_tracks": 12,
-      "enabled_lines": 291
+      "active_tracks": 13,
+      "enabled_lines": 327
     },
     "id": {
-      "active_tracks": 29,
-      "enabled_lines": 608
+      "active_tracks": 30,
+      "enabled_lines": 644
     },
     "ja": {
-      "active_tracks": 7,
-      "enabled_lines": 85
+      "active_tracks": 8,
+      "enabled_lines": 121
     },
     "ko": {
-      "active_tracks": 36,
-      "enabled_lines": 871
+      "active_tracks": 37,
+      "enabled_lines": 907
     },
     "pl": {
-      "active_tracks": 8,
-      "enabled_lines": 175
+      "active_tracks": 9,
+      "enabled_lines": 211
     }
   },
   "rows": [
@@ -47639,405 +47639,333 @@
       ],
       "marker_count": 0,
       "singable_line_count": 36,
-      "active": false,
-      "buttons": 0,
-      "reason": "vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 36,
+      "reason": "user_supplied_line_boundaries",
       "lines": [
         {
-          "s": 1100,
-          "e": 13440,
-          "text": "Truyền ra khắp đất tin mừng Nước Cha",
-          "confidence": 0.4254,
-          "min_char_score": 0.0013,
+          "s": 10000,
+          "e": 13000,
           "m": 0,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Truyền ra khắp đất tin mừng Nước Cha",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 14360,
-          "e": 18360,
-          "text": "là đặc ân ta xem thật quý cao vô cùng.",
-          "confidence": 0.4555,
-          "min_char_score": 0.0005,
+          "s": 14000,
+          "e": 18000,
           "m": 1,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "là đặc ân ta xem thật quý cao vô cùng.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 19280,
-          "e": 22780,
-          "text": "Mình quyết rao truyền muôn dân biết hy vọng",
-          "confidence": 0.3749,
-          "min_char_score": 0.0007,
+          "s": 19000,
+          "e": 23000,
           "m": 2,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Mình quyết rao truyền muôn dân biết hy vọng",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 23880,
-          "e": 27460,
-          "text": "rằng Nước Chúa sẽ xuống phước, khắp nơi an bình.",
-          "confidence": 0.3966,
-          "min_char_score": 0.0013,
+          "s": 24000,
+          "e": 27000,
           "m": 3,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "rằng Nước Chúa sẽ xuống phước, khắp nơi an bình.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 27920,
-          "e": 29800,
-          "text": "Cùng rao Lời Cha,",
-          "confidence": 0.3808,
-          "min_char_score": 0.0707,
+          "s": 28000,
+          "e": 30000,
           "m": 4,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Cùng rao Lời Cha,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 30540,
-          "e": 32540,
-          "text": "hầu muôn dân khắp chốn đều hay.",
-          "confidence": 0.2574,
-          "min_char_score": 0.0011,
+          "s": 30000,
+          "e": 32000,
           "m": 5,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "hầu muôn dân khắp chốn đều hay.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 32860,
-          "e": 34340,
-          "text": "Rao Lời Cha,",
-          "confidence": 0.2505,
-          "min_char_score": 0.0035,
+          "s": 33000,
+          "e": 34000,
           "m": 6,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Rao Lời Cha,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 35140,
-          "e": 37100,
-          "text": "ngày thế gian suy tàn chẳng xa.",
-          "confidence": 0.2736,
-          "min_char_score": 0.0001,
+          "s": 35000,
+          "e": 37000,
           "m": 7,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "ngày thế gian suy tàn chẳng xa.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 37460,
-          "e": 38520,
-          "text": "Rao Lời Cha,",
-          "confidence": 0.3648,
-          "min_char_score": 0.0025,
+          "s": 38000,
+          "e": 39000,
           "m": 8,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Rao Lời Cha,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 39760,
-          "e": 41740,
-          "text": "dạy người khiêm nhu biết về Cha.",
-          "confidence": 0.5464,
-          "min_char_score": 0.062,
+          "s": 40000,
+          "e": 41000,
           "m": 9,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "dạy người khiêm nhu biết về Cha.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 42100,
-          "e": 43080,
-          "text": "Rao Lời Cha",
-          "confidence": 0.2489,
-          "min_char_score": 0.0067,
+          "s": 42000,
+          "e": 43000,
           "m": 10,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Rao Lời Cha",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 44060,
-          "e": 48560,
-          "text": "khắp nơi xa gần.",
-          "confidence": 0.2064,
-          "min_char_score": 0.0011,
+          "s": 44000,
+          "e": 45000,
           "m": 11,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "khắp nơi xa gần.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 49560,
-          "e": 52520,
-          "text": "Thời kỳ sau cuối bao điều khó khăn,",
-          "confidence": 0.3855,
-          "min_char_score": 0.0024,
+          "s": 49000,
+          "e": 53000,
           "m": 12,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Thời kỳ sau cuối bao điều khó khăn,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 53620,
-          "e": 56960,
-          "text": "nhiều người khinh khi hay thù ghét, ta không sợ.",
-          "confidence": 0.3811,
-          "min_char_score": 0.001,
+          "s": 53000,
+          "e": 57000,
           "m": 13,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "nhiều người khinh khi hay thù ghét, ta không sợ.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 58500,
-          "e": 61540,
-          "text": "Dù có ai cười chê, phỉ báng tin mừng,",
-          "confidence": 0.4025,
-          "min_char_score": 0.0003,
+          "s": 58000,
+          "e": 62000,
           "m": 14,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Dù có ai cười chê, phỉ báng tin mừng,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 63120,
-          "e": 66740,
-          "text": "mình quyết mãi mãi giữ vững đức tin nơi ngài.",
-          "confidence": 0.3262,
-          "min_char_score": 0.0009,
+          "s": 63000,
+          "e": 67000,
           "m": 15,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "mình quyết mãi mãi giữ vững đức tin nơi ngài.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 67160,
-          "e": 68480,
-          "text": "Cùng rao Lời Cha,",
-          "confidence": 0.3099,
-          "min_char_score": 0.0039,
+          "s": 67000,
+          "e": 68000,
           "m": 16,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Cùng rao Lời Cha,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 68840,
-          "e": 71700,
-          "text": "hầu muôn dân khắp chốn đều hay.",
-          "confidence": 0.271,
-          "min_char_score": 0.0001,
+          "s": 69000,
+          "e": 71000,
           "m": 17,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "hầu muôn dân khắp chốn đều hay.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 72060,
-          "e": 73420,
-          "text": "Rao Lời Cha,",
-          "confidence": 0.2502,
-          "min_char_score": 0.0083,
+          "s": 72000,
+          "e": 73000,
           "m": 18,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Rao Lời Cha,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 74320,
-          "e": 76300,
-          "text": "ngày thế gian suy tàn chẳng xa.",
-          "confidence": 0.3112,
-          "min_char_score": 0.0001,
+          "s": 74000,
+          "e": 76000,
           "m": 19,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "ngày thế gian suy tàn chẳng xa.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 76700,
-          "e": 78180,
-          "text": "Rao Lời Cha,",
-          "confidence": 0.2594,
-          "min_char_score": 0.01,
+          "s": 76000,
+          "e": 77000,
           "m": 20,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Rao Lời Cha,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 79000,
-          "e": 80920,
-          "text": "dạy người khiêm nhu biết về Cha.",
-          "confidence": 0.4495,
-          "min_char_score": 0.0009,
+          "s": 78000,
+          "e": 81000,
           "m": 21,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "dạy người khiêm nhu biết về Cha.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 81300,
-          "e": 82580,
-          "text": "Rao Lời Cha",
-          "confidence": 0.1937,
-          "min_char_score": 0.006,
+          "s": 81000,
+          "e": 82000,
           "m": 22,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Rao Lời Cha",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 82880,
-          "e": 88640,
-          "text": "khắp nơi xa gần.",
-          "confidence": 0.2727,
-          "min_char_score": 0.0031,
+          "s": 83000,
+          "e": 84000,
           "m": 23,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "khắp nơi xa gần.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 88780,
-          "e": 96520,
-          "text": "Thuận lợi hay khó khăn đều quyết tâm,",
-          "confidence": 0.1691,
-          "min_char_score": 0.0034,
+          "s": 93000,
+          "e": 97000,
           "m": 24,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Thuận lợi hay khó khăn đều quyết tâm,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 97460,
-          "e": 100800,
-          "text": "một lòng rao ra tin mừng Chúa cho bao người,",
-          "confidence": 0.3813,
-          "min_char_score": 0.0121,
+          "s": 98000,
+          "e": 101000,
           "m": 25,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "một lòng rao ra tin mừng Chúa cho bao người,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 102420,
-          "e": 105520,
-          "text": "dạy dỗ cho họ hay chân lý sáng ngời.",
-          "confidence": 0.2813,
-          "min_char_score": 0.0027,
+          "s": 102000,
+          "e": 106000,
           "m": 26,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "dạy dỗ cho họ hay chân lý sáng ngời.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 106980,
-          "e": 110120,
-          "text": "Nhờ thế các nước sẽ hát xướng khen danh ngài.",
-          "confidence": 0.2028,
-          "min_char_score": 0.0084,
+          "s": 107000,
+          "e": 110000,
           "m": 27,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Nhờ thế các nước sẽ hát xướng khen danh ngài.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
           "s": 111000,
-          "e": 111980,
-          "text": "Cùng rao Lời Cha,",
-          "confidence": 0.1404,
-          "min_char_score": 0.003,
+          "e": 113000,
           "m": 28,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Cùng rao Lời Cha,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 112680,
-          "e": 115520,
-          "text": "hầu muôn dân khắp chốn đều hay.",
-          "confidence": 0.2411,
-          "min_char_score": 0.0007,
+          "s": 113000,
+          "e": 115000,
           "m": 29,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "hầu muôn dân khắp chốn đều hay.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 115900,
-          "e": 116640,
-          "text": "Rao Lời Cha,",
-          "confidence": 0.2026,
-          "min_char_score": 0.0019,
+          "s": 116000,
+          "e": 117000,
           "m": 30,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Rao Lời Cha,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 117800,
-          "e": 120200,
-          "text": "ngày thế gian suy tàn chẳng xa.",
-          "confidence": 0.238,
-          "min_char_score": 0.0001,
+          "s": 118000,
+          "e": 120000,
           "m": 31,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "ngày thế gian suy tàn chẳng xa.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 120520,
-          "e": 121860,
-          "text": "Rao Lời Cha,",
-          "confidence": 0.1667,
-          "min_char_score": 0.0154,
+          "s": 120000,
+          "e": 122000,
           "m": 32,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Rao Lời Cha,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 122860,
-          "e": 124740,
-          "text": "dạy người khiêm nhu biết về Cha.",
-          "confidence": 0.3474,
-          "min_char_score": 0.0056,
+          "s": 122000,
+          "e": 124000,
           "m": 33,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "dạy người khiêm nhu biết về Cha.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 125160,
-          "e": 126020,
-          "text": "Rao Lời Cha",
-          "confidence": 0.2112,
-          "min_char_score": 0.0248,
+          "s": 124000,
+          "e": 128000,
           "m": 34,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Rao Lời Cha",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 128640,
-          "e": 132780,
-          "text": "khắp nơi xa gần.",
-          "confidence": 0.2256,
-          "min_char_score": 0.0008,
+          "s": 129000,
+          "e": 132000,
           "m": 35,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "khắp nơi xa gần.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/dcc9e6/1/o/pksjj_VT_067_r360P.mp4",
@@ -48045,12 +47973,10 @@
       "checksum": "a56f40d4dd684a1fd2889f85c0ab2ee6",
       "metadata_hash": null,
       "format": "MP4",
-      "timing_method": "vietnamese_ctc_same_recording",
+      "timing_method": "user_supplied_same_recording_line_boundaries",
       "general_audio_exists": false,
       "general_video_exists": false,
-      "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 36
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 67,
@@ -48058,8 +47984,343 @@
       "jw": "B",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_67_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_67_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 36,
+      "active": true,
+      "buttons": 36,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 13000,
+          "m": 0,
+          "pid": null,
+          "text": "Bůh dal nám úkol světem jít,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 14000,
+          "e": 18000,
+          "m": 1,
+          "pid": null,
+          "text": "pátrat po těch, kdo nad zlem vzdychají.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 19000,
+          "e": 23000,
+          "m": 2,
+          "pid": null,
+          "text": "A důvod jim pro naději dát,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 27000,
+          "m": 3,
+          "pid": null,
+          "text": "že veškeré zlo zmizí napořád.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 28000,
+          "e": 30000,
+          "m": 4,
+          "pid": null,
+          "text": "To říkej dál,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 32000,
+          "m": 5,
+          "pid": null,
+          "text": "ať to všichni uslyší.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 33000,
+          "e": 34000,
+          "m": 6,
+          "pid": null,
+          "text": "Říkej dál:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 35000,
+          "e": 37000,
+          "m": 7,
+          "pid": null,
+          "text": "Konec zla se přiblížil.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 38000,
+          "e": 39000,
+          "m": 8,
+          "pid": null,
+          "text": "Říkej dál:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 40000,
+          "e": 41000,
+          "m": 9,
+          "pid": null,
+          "text": "Boží slovo pravdu má.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 42000,
+          "e": 43000,
+          "m": 10,
+          "pid": null,
+          "text": "Říkej dál:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 44000,
+          "e": 45000,
+          "m": 11,
+          "pid": null,
+          "text": "Naději dá.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 49000,
+          "e": 53000,
+          "m": 12,
+          "pid": null,
+          "text": "Náročný čas když nastává,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 13,
+          "pid": null,
+          "text": "pomluvy se šíří, lež navrch má.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 62000,
+          "m": 14,
+          "pid": null,
+          "text": "To zdánlivě službu omezí.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 67000,
+          "m": 15,
+          "pid": null,
+          "text": "Nad světem ale víra vítězí.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 68000,
+          "m": 16,
+          "pid": null,
+          "text": "To říkej dál,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 69000,
+          "e": 71000,
+          "m": 17,
+          "pid": null,
+          "text": "ať to všichni uslyší.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 73000,
+          "m": 18,
+          "pid": null,
+          "text": "Říkej dál:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 74000,
+          "e": 76000,
+          "m": 19,
+          "pid": null,
+          "text": "Konec zla se přiblížil.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 77000,
+          "m": 20,
+          "pid": null,
+          "text": "Říkej dál:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 78000,
+          "e": 81000,
+          "m": 21,
+          "pid": null,
+          "text": "Boží slovo pravdu má.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 82000,
+          "m": 22,
+          "pid": null,
+          "text": "Říkej dál:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 83000,
+          "e": 84000,
+          "m": 23,
+          "pid": null,
+          "text": "Naději dá.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 93000,
+          "e": 97000,
+          "m": 24,
+          "pid": null,
+          "text": "Když přijde doba příznivá,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 98000,
+          "e": 101000,
+          "m": 25,
+          "pid": null,
+          "text": "velkou radost každý z nás prožívá.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 106000,
+          "m": 26,
+          "pid": null,
+          "text": "Všem k záchraně pomáháme jít,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 107000,
+          "e": 110000,
+          "m": 27,
+          "pid": null,
+          "text": "vždyť Jehovovo jméno chceme ctít.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 111000,
+          "e": 113000,
+          "m": 28,
+          "pid": null,
+          "text": "To říkej dál,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 113000,
+          "e": 115000,
+          "m": 29,
+          "pid": null,
+          "text": "ať to všichni uslyší.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 117000,
+          "m": 30,
+          "pid": null,
+          "text": "Říkej dál:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 120000,
+          "m": 31,
+          "pid": null,
+          "text": "Konec zla se přiblížil.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 122000,
+          "m": 32,
+          "pid": null,
+          "text": "Říkej dál:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 122000,
+          "e": 124000,
+          "m": 33,
+          "pid": null,
+          "text": "Boží slovo pravdu má.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 34,
+          "pid": null,
+          "text": "Říkej dál:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 132000,
+          "m": 35,
+          "pid": null,
+          "text": "Naději dá.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/0ad924/1/o/pksjj_B_067_r360P.mp4",
+      "checksum": "adeda4df985f906aa087963d641227d4",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 67,
@@ -48071,16 +48332,15 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 36,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/0ba83274/1/o/pksjj_B_067.mp3",
-      "document_id": null,
-      "checksum": "468648868b274fc5d425135ce786faaa",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_67_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 67,
@@ -48088,8 +48348,343 @@
       "jw": "CHS",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_67_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_67_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 36,
+      "active": true,
+      "buttons": 36,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 13000,
+          "m": 0,
+          "pid": null,
+          "text": "上帝的话要留心听，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 14000,
+          "e": 18000,
+          "m": 1,
+          "pid": null,
+          "text": "甘心乐意遵从天父命令。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 19000,
+          "e": 23000,
+          "m": 2,
+          "pid": null,
+          "text": "时刻准备好怎么回答，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 27000,
+          "m": 3,
+          "pid": null,
+          "text": "把心中的希望清楚表达。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 28000,
+          "e": 30000,
+          "m": 4,
+          "pid": null,
+          "text": "务要传道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 32000,
+          "m": 5,
+          "pid": null,
+          "text": "宣扬王国的信息；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 33000,
+          "e": 34000,
+          "m": 6,
+          "pid": null,
+          "text": "要传道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 35000,
+          "e": 37000,
+          "m": 7,
+          "pid": null,
+          "text": "邪恶制度快终止；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 38000,
+          "e": 39000,
+          "m": 8,
+          "pid": null,
+          "text": "要传道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 40000,
+          "e": 41000,
+          "m": 9,
+          "pid": null,
+          "text": "教导谦卑人学习；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 42000,
+          "e": 43000,
+          "m": 10,
+          "pid": null,
+          "text": "要传道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 44000,
+          "e": 45000,
+          "m": 11,
+          "pid": null,
+          "text": "传遍四境！",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 49000,
+          "e": 53000,
+          "m": 12,
+          "pid": null,
+          "text": "纵使逆境时常出现，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 13,
+          "pid": null,
+          "text": "饱受侮辱迫害、艰辛试炼。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 62000,
+          "m": 14,
+          "pid": null,
+          "text": "传道工作看似不合时，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 67000,
+          "m": 15,
+          "pid": null,
+          "text": "仍衷心信赖全能的上帝。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 68000,
+          "m": 16,
+          "pid": null,
+          "text": "务要传道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 69000,
+          "e": 71000,
+          "m": 17,
+          "pid": null,
+          "text": "宣扬王国的信息；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 73000,
+          "m": 18,
+          "pid": null,
+          "text": "要传道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 74000,
+          "e": 76000,
+          "m": 19,
+          "pid": null,
+          "text": "邪恶制度快终止；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 77000,
+          "m": 20,
+          "pid": null,
+          "text": "要传道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 78000,
+          "e": 81000,
+          "m": 21,
+          "pid": null,
+          "text": "教导谦卑人学习；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 82000,
+          "m": 22,
+          "pid": null,
+          "text": "要传道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 83000,
+          "e": 84000,
+          "m": 23,
+          "pid": null,
+          "text": "传遍四境！",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 93000,
+          "e": 97000,
+          "m": 24,
+          "pid": null,
+          "text": "把握和平顺利时期，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 98000,
+          "e": 101000,
+          "m": 25,
+          "pid": null,
+          "text": "全力教导别人圣经真理。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 106000,
+          "m": 26,
+          "pid": null,
+          "text": "热心宣扬拯救的信息，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 107000,
+          "e": 110000,
+          "m": 27,
+          "pid": null,
+          "text": "彰显耶和华伟大的圣名。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 111000,
+          "e": 113000,
+          "m": 28,
+          "pid": null,
+          "text": "务要传道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 113000,
+          "e": 115000,
+          "m": 29,
+          "pid": null,
+          "text": "宣扬王国的信息；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 117000,
+          "m": 30,
+          "pid": null,
+          "text": "要传道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 120000,
+          "m": 31,
+          "pid": null,
+          "text": "邪恶制度快终止；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 122000,
+          "m": 32,
+          "pid": null,
+          "text": "要传道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 122000,
+          "e": 124000,
+          "m": 33,
+          "pid": null,
+          "text": "教导谦卑人学习；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 34,
+          "pid": null,
+          "text": "要传道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 132000,
+          "m": 35,
+          "pid": null,
+          "text": "传遍四境！",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/414973/2/o/pksjj_CHS_067_r360P.mp4",
+      "checksum": "850ad9c5d0384251d8265358d9bf0ea1",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 67,
@@ -48101,16 +48696,15 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 36,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/602932/1/o/pksjj_CHS_067.mp3",
-      "document_id": null,
-      "checksum": "88994584f6d21010a179779d66c2bd46",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_67_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 67,
@@ -48118,8 +48712,343 @@
       "jw": "CH",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_67_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_67_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 36,
+      "active": true,
+      "buttons": 36,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 13000,
+          "m": 0,
+          "pid": null,
+          "text": "上帝的話要留心聽，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 14000,
+          "e": 18000,
+          "m": 1,
+          "pid": null,
+          "text": "甘心樂意遵從天父命令。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 19000,
+          "e": 23000,
+          "m": 2,
+          "pid": null,
+          "text": "時刻準備好怎麼回答，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 27000,
+          "m": 3,
+          "pid": null,
+          "text": "把心中的希望清楚表達。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 28000,
+          "e": 30000,
+          "m": 4,
+          "pid": null,
+          "text": "務要傳道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 32000,
+          "m": 5,
+          "pid": null,
+          "text": "宣揚王國的信息；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 33000,
+          "e": 34000,
+          "m": 6,
+          "pid": null,
+          "text": "要傳道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 35000,
+          "e": 37000,
+          "m": 7,
+          "pid": null,
+          "text": "邪惡制度快終止；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 38000,
+          "e": 39000,
+          "m": 8,
+          "pid": null,
+          "text": "要傳道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 40000,
+          "e": 41000,
+          "m": 9,
+          "pid": null,
+          "text": "教導謙卑人學習；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 42000,
+          "e": 43000,
+          "m": 10,
+          "pid": null,
+          "text": "要傳道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 44000,
+          "e": 45000,
+          "m": 11,
+          "pid": null,
+          "text": "傳遍四境！",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 49000,
+          "e": 53000,
+          "m": 12,
+          "pid": null,
+          "text": "縱使逆境時常出現，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 13,
+          "pid": null,
+          "text": "飽受侮辱迫害、艱辛試煉。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 62000,
+          "m": 14,
+          "pid": null,
+          "text": "傳道工作看似不合時，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 67000,
+          "m": 15,
+          "pid": null,
+          "text": "仍衷心信賴全能的上帝。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 68000,
+          "m": 16,
+          "pid": null,
+          "text": "務要傳道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 69000,
+          "e": 71000,
+          "m": 17,
+          "pid": null,
+          "text": "宣揚王國的信息；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 73000,
+          "m": 18,
+          "pid": null,
+          "text": "要傳道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 74000,
+          "e": 76000,
+          "m": 19,
+          "pid": null,
+          "text": "邪惡制度快終止；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 77000,
+          "m": 20,
+          "pid": null,
+          "text": "要傳道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 78000,
+          "e": 81000,
+          "m": 21,
+          "pid": null,
+          "text": "教導謙卑人學習；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 82000,
+          "m": 22,
+          "pid": null,
+          "text": "要傳道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 83000,
+          "e": 84000,
+          "m": 23,
+          "pid": null,
+          "text": "傳遍四境！",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 93000,
+          "e": 97000,
+          "m": 24,
+          "pid": null,
+          "text": "把握和平順利時期，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 98000,
+          "e": 101000,
+          "m": 25,
+          "pid": null,
+          "text": "全力教導別人聖經真理。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 106000,
+          "m": 26,
+          "pid": null,
+          "text": "熱心宣揚拯救的信息，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 107000,
+          "e": 110000,
+          "m": 27,
+          "pid": null,
+          "text": "彰顯耶和華偉大的聖名。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 111000,
+          "e": 113000,
+          "m": 28,
+          "pid": null,
+          "text": "務要傳道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 113000,
+          "e": 115000,
+          "m": 29,
+          "pid": null,
+          "text": "宣揚王國的信息；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 117000,
+          "m": 30,
+          "pid": null,
+          "text": "要傳道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 120000,
+          "m": 31,
+          "pid": null,
+          "text": "邪惡制度快終止；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 122000,
+          "m": 32,
+          "pid": null,
+          "text": "要傳道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 122000,
+          "e": 124000,
+          "m": 33,
+          "pid": null,
+          "text": "教導謙卑人學習；",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 34,
+          "pid": null,
+          "text": "要傳道，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 132000,
+          "m": 35,
+          "pid": null,
+          "text": "傳遍四境！",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/4ec370/2/o/pksjj_CH_067_r360P.mp4",
+      "checksum": "1b0c724f024fd80faf93550b5331f11d",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 67,
@@ -48131,368 +49060,374 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 36,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/10792e/1/o/pksjj_CH_067.mp3",
-      "document_id": null,
-      "checksum": "30ae5e70962cc6408daaf02319e1a522",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_67_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 67,
       "locale": "en",
       "jw": "E",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_67_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_67_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 36,
+      "active": true,
+      "buttons": 36,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 13000,
+          "m": 0,
+          "pid": null,
+          "text": "God has commanded us this day;",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 14000,
+          "e": 18000,
+          "m": 1,
+          "pid": null,
+          "text": "He has given us a charge to obey.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 19000,
+          "e": 23000,
+          "m": 2,
+          "pid": null,
+          "text": "At all times, be ready to impart",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 27000,
+          "m": 3,
+          "pid": null,
+          "text": "The reason for the hope within your heart.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 28000,
+          "e": 30000,
+          "m": 4,
+          "pid": null,
+          "text": "So preach the word",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 32000,
+          "m": 5,
+          "pid": null,
+          "text": "So that ev'ryone can hear!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 33000,
+          "e": 34000,
+          "m": 6,
+          "pid": null,
+          "text": "Preach the word,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 35000,
+          "e": 37000,
+          "m": 7,
+          "pid": null,
+          "text": "For we know the end is near.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 38000,
+          "e": 39000,
+          "m": 8,
+          "pid": null,
+          "text": "Preach the word,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 40000,
+          "e": 41000,
+          "m": 9,
+          "pid": null,
+          "text": "Help the meek to understand.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 42000,
+          "e": 43000,
+          "m": 10,
+          "pid": null,
+          "text": "Preach the word",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 44000,
+          "e": 45000,
+          "m": 11,
+          "pid": null,
+          "text": "Throughout the land!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 49000,
+          "e": 53000,
+          "m": 12,
+          "pid": null,
+          "text": "Seasons of trouble we will face;",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 13,
+          "pid": null,
+          "text": "Opposition may bring shame and disgrace.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 62000,
+          "m": 14,
+          "pid": null,
+          "text": "Though preaching may out of season seem,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 67000,
+          "m": 15,
+          "pid": null,
+          "text": "Our trust is in our God, who is supreme.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 68000,
+          "m": 16,
+          "pid": null,
+          "text": "So preach the word",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 69000,
+          "e": 71000,
+          "m": 17,
+          "pid": null,
+          "text": "So that ev'ryone can hear!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 73000,
+          "m": 18,
+          "pid": null,
+          "text": "Preach the word,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 74000,
+          "e": 76000,
+          "m": 19,
+          "pid": null,
+          "text": "For we know the end is near.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 77000,
+          "m": 20,
+          "pid": null,
+          "text": "Preach the word,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 78000,
+          "e": 81000,
+          "m": 21,
+          "pid": null,
+          "text": "Help the meek to understand.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 82000,
+          "m": 22,
+          "pid": null,
+          "text": "Preach the word",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 83000,
+          "e": 84000,
+          "m": 23,
+          "pid": null,
+          "text": "Throughout the land!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 93000,
+          "e": 97000,
+          "m": 24,
+          "pid": null,
+          "text": "Seasons of favor we will see,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 98000,
+          "e": 101000,
+          "m": 25,
+          "pid": null,
+          "text": "And the need for us to teach, there will be.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 106000,
+          "m": 26,
+          "pid": null,
+          "text": "The way to salvation we proclaim",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 107000,
+          "e": 110000,
+          "m": 27,
+          "pid": null,
+          "text": "And help to sanctify Jehovah's name.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 111000,
+          "e": 113000,
+          "m": 28,
+          "pid": null,
+          "text": "So preach the word",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 113000,
+          "e": 115000,
+          "m": 29,
+          "pid": null,
+          "text": "So that ev'ryone can hear!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 117000,
+          "m": 30,
+          "pid": null,
+          "text": "Preach the word,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 120000,
+          "m": 31,
+          "pid": null,
+          "text": "For we know the end is near.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 122000,
+          "m": 32,
+          "pid": null,
+          "text": "Preach the word,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 122000,
+          "e": 124000,
+          "m": 33,
+          "pid": null,
+          "text": "Help the meek to understand.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 34,
+          "pid": null,
+          "text": "Preach the word",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 132000,
+          "m": 35,
+          "pid": null,
+          "text": "Throughout the land!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/0d0124/1/o/pksjj_E_067_r360P.mp4",
+      "checksum": "5778dc2d42945f3c65abcae716bb1057",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 67,
           "state": "available"
         }
       ],
-      "marker_count": 38,
-      "singable_line_count": 36,
-      "active": true,
-      "buttons": 33,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 11653,
-          "e": 16553,
-          "m": 0,
-          "pid": 4,
-          "text": "God has commanded us this day;",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 16554,
-          "e": 22809,
-          "m": 1,
-          "pid": 5,
-          "text": "He has given us a charge to obey.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 22810,
-          "e": 28577,
-          "m": 2,
-          "pid": 6,
-          "text": "At all times, be ready to impart",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 28578,
-          "e": 33564,
-          "m": 3,
-          "pid": 7,
-          "text": "The reason for the hope within your heart.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 33565,
-          "e": 36841,
-          "m": 4,
-          "pid": 9,
-          "text": "So preach the word",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 36842,
-          "e": 39703,
-          "m": 5,
-          "pid": 10,
-          "text": "So that ev'ryone can hear!",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 39704,
-          "e": 42561,
-          "m": 6,
-          "pid": 11,
-          "text": "Preach the word,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 42562,
-          "e": 45561,
-          "m": 7,
-          "pid": 12,
-          "text": "For we know the end is near.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 45562,
-          "e": 48407,
-          "m": 8,
-          "pid": 13,
-          "text": "Preach the word,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 48408,
-          "e": 51343,
-          "m": 9,
-          "pid": 14,
-          "text": "Help the meek to understand.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 51344,
-          "e": 53781,
-          "m": 10,
-          "pid": 15,
-          "text": "Preach the word",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 53782,
-          "e": 56616,
-          "m": 11,
-          "pid": 16,
-          "text": "Throughout the land!",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
-        },
-        {
-          "s": 66509,
-          "e": 71599,
-          "m": 13,
-          "pid": 17,
-          "text": "Seasons of trouble we will face;",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 71600,
-          "e": 77697,
-          "m": 14,
-          "pid": 18,
-          "text": "Opposition may bring shame and disgrace.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 77698,
-          "e": 83487,
-          "m": 15,
-          "pid": 19,
-          "text": "Though preaching may out of season seem,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 83488,
-          "e": 88517,
-          "m": 16,
-          "pid": 20,
-          "text": "Our trust is in our God, who is supreme.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 88518,
-          "e": 91759,
-          "m": 17,
-          "pid": 22,
-          "text": "So preach the word",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 91760,
-          "e": 94700,
-          "m": 18,
-          "pid": 23,
-          "text": "So that ev'ryone can hear!",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 94701,
-          "e": 97583,
-          "m": 19,
-          "pid": 24,
-          "text": "Preach the word,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 97584,
-          "e": 100505,
-          "m": 20,
-          "pid": 25,
-          "text": "For we know the end is near.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 100506,
-          "e": 103385,
-          "m": 21,
-          "pid": 26,
-          "text": "Preach the word,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 103386,
-          "e": 106265,
-          "m": 22,
-          "pid": 27,
-          "text": "Help the meek to understand.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 106266,
-          "e": 108780,
-          "m": 23,
-          "pid": 28,
-          "text": "Preach the word",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 108781,
-          "e": 111552,
-          "m": 24,
-          "pid": 29,
-          "text": "Throughout the land!",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
-        },
-        {
-          "s": 121373,
-          "e": 126463,
-          "m": 26,
-          "pid": 30,
-          "text": "Seasons of favor we will see,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 126464,
-          "e": 132639,
-          "m": 27,
-          "pid": 31,
-          "text": "And the need for us to teach, there will be.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 132640,
-          "e": 138281,
-          "m": 28,
-          "pid": 32,
-          "text": "The way to salvation we proclaim",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 138282,
-          "e": 143380,
-          "m": 29,
-          "pid": 33,
-          "text": "And help to sanctify Jehovah's name.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 143381,
-          "e": 146745,
-          "m": 30,
-          "pid": 35,
-          "text": "So preach the word",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 146746,
-          "e": 149615,
-          "m": 31,
-          "pid": 36,
-          "text": "So that ev'ryone can hear!",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 149616,
-          "e": 152553,
-          "m": 32,
-          "pid": 37,
-          "text": "Preach the word,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 152554,
-          "e": 155401,
-          "m": 33,
-          "pid": 38,
-          "text": "For we know the end is near.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 155402,
-          "e": 158324,
-          "m": 34,
-          "pid": 39,
-          "text": "Preach the word,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 158325,
-          "e": 161225,
-          "m": 35,
-          "pid": 40,
-          "text": "Help the meek to understand.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 161226,
-          "e": 163777,
-          "m": 36,
-          "pid": 41,
-          "text": "Preach the word",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 163778,
-          "e": 167444,
-          "m": 37,
-          "pid": 42,
-          "text": "Throughout the land!",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_67_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/0d4adbb/1/o/sjjc_E_067.mp3",
-      "document_id": 1102016867,
-      "checksum": "ded3745fcf576f474bb0992f75d1e037",
-      "metadata_hash": "ded3745fcf576f474bb0992f75d1e037",
-      "official_lyrics_url": "https://www.jw.org/en/library/music-songs/sing-out-joyfully/67-preach-the-word/",
-      "sung_marker_count": 36
+      "disabled_line_reasons": {}
     },
     {
       "track": 67,
@@ -48500,8 +49435,343 @@
       "jw": "F",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_67_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_67_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 36,
+      "active": true,
+      "buttons": 36,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 13000,
+          "m": 0,
+          "pid": null,
+          "text": "Voici l'appel que Dieu te lance :",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 14000,
+          "e": 18000,
+          "m": 1,
+          "pid": null,
+          "text": "« Prêche la parole avec insistance.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 19000,
+          "e": 23000,
+          "m": 2,
+          "pid": null,
+          "text": "Tiens-toi toujours prêt à la défense",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 27000,
+          "m": 3,
+          "pid": null,
+          "text": "Devant qui contredit ton espérance. »",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 28000,
+          "e": 30000,
+          "m": 4,
+          "pid": null,
+          "text": "Va, messager !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 32000,
+          "m": 5,
+          "pid": null,
+          "text": "Prêche la parole à tous,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 33000,
+          "e": 34000,
+          "m": 6,
+          "pid": null,
+          "text": "Va prêcher !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 35000,
+          "e": 37000,
+          "m": 7,
+          "pid": null,
+          "text": "Car la fin est bientôt là,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 38000,
+          "e": 39000,
+          "m": 8,
+          "pid": null,
+          "text": "Va prêcher !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 40000,
+          "e": 41000,
+          "m": 9,
+          "pid": null,
+          "text": "Cherche les humbles et les doux,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 42000,
+          "e": 43000,
+          "m": 10,
+          "pid": null,
+          "text": "Va prêcher",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 44000,
+          "e": 45000,
+          "m": 11,
+          "pid": null,
+          "text": "À pleine voix !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 49000,
+          "e": 53000,
+          "m": 12,
+          "pid": null,
+          "text": "Lorsque l'époque est difficile,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 13,
+          "pid": null,
+          "text": "On méprise qui publie l'évangile.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 62000,
+          "m": 14,
+          "pid": null,
+          "text": "Mais toi, face aux outrages, aux périls,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 67000,
+          "m": 15,
+          "pid": null,
+          "text": "Loue Jéhovah, confiant, le cœur tranquille.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 68000,
+          "m": 16,
+          "pid": null,
+          "text": "Va, messager !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 69000,
+          "e": 71000,
+          "m": 17,
+          "pid": null,
+          "text": "Prêche la parole à tous,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 73000,
+          "m": 18,
+          "pid": null,
+          "text": "Va prêcher !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 74000,
+          "e": 76000,
+          "m": 19,
+          "pid": null,
+          "text": "Car la fin est bientôt là,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 77000,
+          "m": 20,
+          "pid": null,
+          "text": "Va prêcher !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 78000,
+          "e": 81000,
+          "m": 21,
+          "pid": null,
+          "text": "Cherche les humbles et les doux,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 82000,
+          "m": 22,
+          "pid": null,
+          "text": "Va prêcher",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 83000,
+          "e": 84000,
+          "m": 23,
+          "pid": null,
+          "text": "À pleine voix !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 93000,
+          "e": 97000,
+          "m": 24,
+          "pid": null,
+          "text": "Lorsque l'époque est favorable,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 98000,
+          "e": 101000,
+          "m": 25,
+          "pid": null,
+          "text": "Enseigne, exhorte, encourage, inlassable.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 106000,
+          "m": 26,
+          "pid": null,
+          "text": "Proclame le salut véritable,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 107000,
+          "e": 110000,
+          "m": 27,
+          "pid": null,
+          "text": "Célèbre le nom du Dieu admirable.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 111000,
+          "e": 113000,
+          "m": 28,
+          "pid": null,
+          "text": "Va, messager !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 113000,
+          "e": 115000,
+          "m": 29,
+          "pid": null,
+          "text": "Prêche la parole à tous,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 117000,
+          "m": 30,
+          "pid": null,
+          "text": "Va prêcher !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 120000,
+          "m": 31,
+          "pid": null,
+          "text": "Car la fin est bientôt là,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 122000,
+          "m": 32,
+          "pid": null,
+          "text": "Va prêcher !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 122000,
+          "e": 124000,
+          "m": 33,
+          "pid": null,
+          "text": "Cherche les humbles et les doux,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 34,
+          "pid": null,
+          "text": "Va prêcher",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 132000,
+          "m": 35,
+          "pid": null,
+          "text": "À pleine voix !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/114733/2/o/pksjj_F_067_r360P.mp4",
+      "checksum": "29d46d7012569765fbb58e070ffdb4dd",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 67,
@@ -48513,16 +49783,15 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 36,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/548aabd/1/o/pksjj_F_067.mp3",
-      "document_id": null,
-      "checksum": "dff1b9e290fbc60bf2da783066cc0b80",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_67_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 67,
@@ -48530,8 +49799,343 @@
       "jw": "X",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_67_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_67_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 36,
+      "active": true,
+      "buttons": 36,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 13000,
+          "m": 0,
+          "pid": null,
+          "text": "Gott es gebot für unsre Zeit:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 14000,
+          "e": 18000,
+          "m": 1,
+          "pid": null,
+          "text": "Predigt jederzeit mein Wort weit und breit!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 19000,
+          "e": 23000,
+          "m": 2,
+          "pid": null,
+          "text": "Damit man vom Königreich erfährt,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 27000,
+          "m": 3,
+          "pid": null,
+          "text": "den Grund für eure Hoffnung gern erklärt.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 28000,
+          "e": 30000,
+          "m": 4,
+          "pid": null,
+          "text": "Drum zieht hinaus!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 32000,
+          "m": 5,
+          "pid": null,
+          "text": "Von Jehova jeder hört.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 33000,
+          "e": 34000,
+          "m": 6,
+          "pid": null,
+          "text": "Ruft es aus!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 35000,
+          "e": 37000,
+          "m": 7,
+          "pid": null,
+          "text": "Bald herrscht Frieden ungestört.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 38000,
+          "e": 39000,
+          "m": 8,
+          "pid": null,
+          "text": "Zieht hinaus!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 40000,
+          "e": 41000,
+          "m": 9,
+          "pid": null,
+          "text": "Zeigt, was Gottes Wort enthält.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 42000,
+          "e": 43000,
+          "m": 10,
+          "pid": null,
+          "text": "Ruft es aus",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 44000,
+          "e": 45000,
+          "m": 11,
+          "pid": null,
+          "text": "vor aller Welt!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 49000,
+          "e": 53000,
+          "m": 12,
+          "pid": null,
+          "text": "Unruhe macht es uns oft schwer.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 13,
+          "pid": null,
+          "text": "Viele lästern und verhöhnen uns sehr.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 62000,
+          "m": 14,
+          "pid": null,
+          "text": "Wenn anscheinend predigen nicht lohnt:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 67000,
+          "m": 15,
+          "pid": null,
+          "text": "Wir Gott vertraun, der über allem thront.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 68000,
+          "m": 16,
+          "pid": null,
+          "text": "Drum zieht hinaus!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 69000,
+          "e": 71000,
+          "m": 17,
+          "pid": null,
+          "text": "Von Jehova jeder hört.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 73000,
+          "m": 18,
+          "pid": null,
+          "text": "Ruft es aus!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 74000,
+          "e": 76000,
+          "m": 19,
+          "pid": null,
+          "text": "Bald herrscht Frieden ungestört.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 77000,
+          "m": 20,
+          "pid": null,
+          "text": "Zieht hinaus!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 78000,
+          "e": 81000,
+          "m": 21,
+          "pid": null,
+          "text": "Zeigt, was Gottes Wort enthält.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 82000,
+          "m": 22,
+          "pid": null,
+          "text": "Ruft es aus",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 83000,
+          "e": 84000,
+          "m": 23,
+          "pid": null,
+          "text": "vor aller Welt!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 93000,
+          "e": 97000,
+          "m": 24,
+          "pid": null,
+          "text": "Günstige Zeiten wir noch sehn.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 98000,
+          "e": 101000,
+          "m": 25,
+          "pid": null,
+          "text": "Umso mehr wir helfen andern verstehn:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 106000,
+          "m": 26,
+          "pid": null,
+          "text": "Der Weg, den Jehova Gott uns lehrt,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 107000,
+          "e": 110000,
+          "m": 27,
+          "pid": null,
+          "text": "zur Rettung führt und seinen Namen ehrt.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 111000,
+          "e": 113000,
+          "m": 28,
+          "pid": null,
+          "text": "Drum zieht hinaus!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 113000,
+          "e": 115000,
+          "m": 29,
+          "pid": null,
+          "text": "Von Jehova jeder hört.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 117000,
+          "m": 30,
+          "pid": null,
+          "text": "Ruft es aus!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 120000,
+          "m": 31,
+          "pid": null,
+          "text": "Bald herrscht Frieden ungestört.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 122000,
+          "m": 32,
+          "pid": null,
+          "text": "Zieht hinaus!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 122000,
+          "e": 124000,
+          "m": 33,
+          "pid": null,
+          "text": "Zeigt, was Gottes Wort enthält.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 34,
+          "pid": null,
+          "text": "Ruft es aus",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 132000,
+          "m": 35,
+          "pid": null,
+          "text": "vor aller Welt!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/f193d9/2/o/pksjj_X_067_r360P.mp4",
+      "checksum": "678c5a9af7c1916d9a70c98ff85c3d30",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 67,
@@ -48543,17 +50147,15 @@
           "state": "available"
         }
       ],
-      "marker_count": 36,
-      "singable_line_count": 36,
-      "active": false,
-      "buttons": 0,
-      "reason": "marker_paragraph_not_lyric",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/220ed2/1/o/pksjj_X_067.mp3",
-      "document_id": 1102013555,
-      "checksum": "10f3f588dad4a48f76d04a9fe7ebe1cf",
-      "metadata_hash": "10f3f588dad4a48f76d04a9fe7ebe1cf",
-      "official_lyrics_url": "https://www.jw.org/de/bibliothek/videos/werde-jehovas-freund-sing-mit-uns/67-predige-das-wort/"
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_67_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 67,
@@ -48561,8 +50163,343 @@
       "jw": "H",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_67_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_67_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 36,
+      "active": true,
+      "buttons": 36,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 13000,
+          "m": 0,
+          "pid": null,
+          "text": "Halld, mit mond Jehova Atyánk,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 14000,
+          "e": 18000,
+          "m": 1,
+          "pid": null,
+          "text": "fontos feladatot bízott reánk.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 19000,
+          "e": 23000,
+          "m": 2,
+          "pid": null,
+          "text": "Csak állj készen hirdetni a szót,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 27000,
+          "m": 3,
+          "pid": null,
+          "text": "és védelmezd a hited kitartón!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 28000,
+          "e": 30000,
+          "m": 4,
+          "pid": null,
+          "text": "Ó, prédikáld",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 32000,
+          "m": 5,
+          "pid": null,
+          "text": "minden helyen Jah szavát!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 33000,
+          "e": 34000,
+          "m": 6,
+          "pid": null,
+          "text": "Prédikáld,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 35000,
+          "e": 37000,
+          "m": 7,
+          "pid": null,
+          "text": "hogy a napja közel már!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 38000,
+          "e": 39000,
+          "m": 8,
+          "pid": null,
+          "text": "Vidd e hírt,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 40000,
+          "e": 41000,
+          "m": 9,
+          "pid": null,
+          "text": "figyel rád a szelíd szív.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 42000,
+          "e": 43000,
+          "m": 10,
+          "pid": null,
+          "text": "Hirdesd hát",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 44000,
+          "e": 45000,
+          "m": 11,
+          "pid": null,
+          "text": "Isten szavát!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 49000,
+          "e": 53000,
+          "m": 12,
+          "pid": null,
+          "text": "Bár vannak nehéz napok még,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 13,
+          "pid": null,
+          "text": "sokszor átéljük a gúnyt, megvetést,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 62000,
+          "m": 14,
+          "pid": null,
+          "text": "mi nem félünk hirdetni a szót,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 67000,
+          "m": 15,
+          "pid": null,
+          "text": "hisz mellettünk van dicső alkotónk.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 68000,
+          "m": 16,
+          "pid": null,
+          "text": "Ó, prédikáld",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 69000,
+          "e": 71000,
+          "m": 17,
+          "pid": null,
+          "text": "minden helyen Jah szavát!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 73000,
+          "m": 18,
+          "pid": null,
+          "text": "Prédikáld,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 74000,
+          "e": 76000,
+          "m": 19,
+          "pid": null,
+          "text": "hogy a napja közel már!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 77000,
+          "m": 20,
+          "pid": null,
+          "text": "Vidd e hírt,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 78000,
+          "e": 81000,
+          "m": 21,
+          "pid": null,
+          "text": "figyel rád a szelíd szív.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 82000,
+          "m": 22,
+          "pid": null,
+          "text": "Hirdesd hát",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 83000,
+          "e": 84000,
+          "m": 23,
+          "pid": null,
+          "text": "Isten szavát!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 93000,
+          "e": 97000,
+          "m": 24,
+          "pid": null,
+          "text": "Járjanak jó vagy rossz idők,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 98000,
+          "e": 101000,
+          "m": 25,
+          "pid": null,
+          "text": "megyünk tanítani, ez sürgető.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 106000,
+          "m": 26,
+          "pid": null,
+          "text": "Így elmondjuk, mi ad szép reményt,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 107000,
+          "e": 110000,
+          "m": 27,
+          "pid": null,
+          "text": "és megszenteljük Jehova nevét.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 111000,
+          "e": 113000,
+          "m": 28,
+          "pid": null,
+          "text": "Ó, prédikáld",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 113000,
+          "e": 115000,
+          "m": 29,
+          "pid": null,
+          "text": "minden helyen Jah szavát!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 117000,
+          "m": 30,
+          "pid": null,
+          "text": "Prédikáld,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 120000,
+          "m": 31,
+          "pid": null,
+          "text": "hogy a napja közel már!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 122000,
+          "m": 32,
+          "pid": null,
+          "text": "Vidd e hírt,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 122000,
+          "e": 124000,
+          "m": 33,
+          "pid": null,
+          "text": "figyel rád a szelíd szív.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 34,
+          "pid": null,
+          "text": "Hirdesd hát",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 132000,
+          "m": 35,
+          "pid": null,
+          "text": "Isten szavát!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/925e13/1/o/pksjj_H_067_r360P.mp4",
+      "checksum": "8574fa114c63232de61e588478d0e902",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 67,
@@ -48574,16 +50511,15 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 36,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/f9a15d/1/o/pksjj_H_067.mp3",
-      "document_id": null,
-      "checksum": "c80fed3bd687da1e02b3baa24c1aaa49",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_67_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 67,
@@ -48591,8 +50527,343 @@
       "jw": "IN",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_67_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_67_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 36,
+      "active": true,
+      "buttons": 36,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 13000,
+          "m": 0,
+          "pid": null,
+          "text": "Allah berikan perintah",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 14000,
+          "e": 18000,
+          "m": 1,
+          "pid": null,
+          "text": "Dan tugas untuk kita jalankan.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 19000,
+          "e": 23000,
+          "m": 2,
+          "pid": null,
+          "text": "Kita siap beri jawaban",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 27000,
+          "m": 3,
+          "pid": null,
+          "text": "Tentang harapan kita yang cerah.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 28000,
+          "e": 30000,
+          "m": 4,
+          "pid": null,
+          "text": "B'ritakanlah",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 32000,
+          "m": 5,
+          "pid": null,
+          "text": "Ke seluruh dunia!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 33000,
+          "e": 34000,
+          "m": 6,
+          "pid": null,
+          "text": "B'ritakan",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 35000,
+          "e": 37000,
+          "m": 7,
+          "pid": null,
+          "text": "Sebelum akhir tiba.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 38000,
+          "e": 39000,
+          "m": 8,
+          "pid": null,
+          "text": "B'ritakan,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 40000,
+          "e": 41000,
+          "m": 9,
+          "pid": null,
+          "text": "Bantu yang lembut hati.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 42000,
+          "e": 43000,
+          "m": 10,
+          "pid": null,
+          "text": "B'ritakan",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 44000,
+          "e": 45000,
+          "m": 11,
+          "pid": null,
+          "text": "Seluasnya!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 49000,
+          "e": 53000,
+          "m": 12,
+          "pid": null,
+          "text": "Di masa penuh tentangan,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 13,
+          "pid": null,
+          "text": "Mungkin kita hadapi kecaman.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 62000,
+          "m": 14,
+          "pid": null,
+          "text": "Meski pengabaran dicela,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 67000,
+          "m": 15,
+          "pid": null,
+          "text": "Kita 'kan bersandar pada Allah.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 68000,
+          "m": 16,
+          "pid": null,
+          "text": "B'ritakanlah",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 69000,
+          "e": 71000,
+          "m": 17,
+          "pid": null,
+          "text": "Ke seluruh dunia!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 73000,
+          "m": 18,
+          "pid": null,
+          "text": "B'ritakan",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 74000,
+          "e": 76000,
+          "m": 19,
+          "pid": null,
+          "text": "Sebelum akhir tiba.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 77000,
+          "m": 20,
+          "pid": null,
+          "text": "B'ritakan,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 78000,
+          "e": 81000,
+          "m": 21,
+          "pid": null,
+          "text": "Bantu yang lembut hati.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 82000,
+          "m": 22,
+          "pid": null,
+          "text": "B'ritakan",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 83000,
+          "e": 84000,
+          "m": 23,
+          "pid": null,
+          "text": "Seluasnya!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 93000,
+          "e": 97000,
+          "m": 24,
+          "pid": null,
+          "text": "Di masa yang bahagia,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 98000,
+          "e": 101000,
+          "m": 25,
+          "pid": null,
+          "text": "Kita sibuk ajarkan Firman Yah,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 106000,
+          "m": 26,
+          "pid": null,
+          "text": "Tunjukkan jalan kes'lamatan,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 107000,
+          "e": 110000,
+          "m": 27,
+          "pid": null,
+          "text": "Ikut sucikan nama Yehuwa.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 111000,
+          "e": 113000,
+          "m": 28,
+          "pid": null,
+          "text": "B'ritakanlah",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 113000,
+          "e": 115000,
+          "m": 29,
+          "pid": null,
+          "text": "Ke seluruh dunia!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 117000,
+          "m": 30,
+          "pid": null,
+          "text": "B'ritakan",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 120000,
+          "m": 31,
+          "pid": null,
+          "text": "Sebelum akhir tiba.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 122000,
+          "m": 32,
+          "pid": null,
+          "text": "B'ritakan,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 122000,
+          "e": 124000,
+          "m": 33,
+          "pid": null,
+          "text": "Bantu yang lembut hati.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 34,
+          "pid": null,
+          "text": "B'ritakan",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 132000,
+          "m": 35,
+          "pid": null,
+          "text": "Seluasnya!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/a71ecd/2/o/pksjj_IN_067_r360P.mp4",
+      "checksum": "327fb4c1aacedae606b7a898bc48a355",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 67,
@@ -48604,16 +50875,15 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 36,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/a5e3ca/2/o/pksjj_IN_067.mp3",
-      "document_id": null,
-      "checksum": "32ab6f44fec102f5850b9a7e70480de4",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_67_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 67,
@@ -48621,8 +50891,343 @@
       "jw": "J",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_67_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_67_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 36,
+      "active": true,
+      "buttons": 36,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 13000,
+          "m": 0,
+          "pid": null,
+          "text": "今私たちに",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 14000,
+          "e": 18000,
+          "m": 1,
+          "pid": null,
+          "text": "エホバは命じている",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 19000,
+          "e": 23000,
+          "m": 2,
+          "pid": null,
+          "text": "準備を整えて",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 27000,
+          "m": 3,
+          "pid": null,
+          "text": "希望広めるように",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 28000,
+          "e": 30000,
+          "m": 4,
+          "pid": null,
+          "text": "知らせよう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 32000,
+          "m": 5,
+          "pid": null,
+          "text": "全ての人に",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 33000,
+          "e": 34000,
+          "m": 6,
+          "pid": null,
+          "text": "告げよう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 35000,
+          "e": 37000,
+          "m": 7,
+          "pid": null,
+          "text": "終わりは近い",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 38000,
+          "e": 39000,
+          "m": 8,
+          "pid": null,
+          "text": "話そう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 40000,
+          "e": 41000,
+          "m": 9,
+          "pid": null,
+          "text": "温和な人に",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 42000,
+          "e": 43000,
+          "m": 10,
+          "pid": null,
+          "text": "語ろう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 44000,
+          "e": 45000,
+          "m": 11,
+          "pid": null,
+          "text": "世界で",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 49000,
+          "e": 53000,
+          "m": 12,
+          "pid": null,
+          "text": "問題を抱え",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 13,
+          "pid": null,
+          "text": "迫害に遭う時も",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 62000,
+          "m": 14,
+          "pid": null,
+          "text": "奉仕を続けよう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 67000,
+          "m": 15,
+          "pid": null,
+          "text": "エホバの助けがある",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 68000,
+          "m": 16,
+          "pid": null,
+          "text": "知らせよう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 69000,
+          "e": 71000,
+          "m": 17,
+          "pid": null,
+          "text": "全ての人に",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 73000,
+          "m": 18,
+          "pid": null,
+          "text": "告げよう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 74000,
+          "e": 76000,
+          "m": 19,
+          "pid": null,
+          "text": "終わりは近い",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 77000,
+          "m": 20,
+          "pid": null,
+          "text": "話そう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 78000,
+          "e": 81000,
+          "m": 21,
+          "pid": null,
+          "text": "温和な人に",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 82000,
+          "m": 22,
+          "pid": null,
+          "text": "語ろう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 83000,
+          "e": 84000,
+          "m": 23,
+          "pid": null,
+          "text": "世界で",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 93000,
+          "e": 97000,
+          "m": 24,
+          "pid": null,
+          "text": "順調な時は",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 98000,
+          "e": 101000,
+          "m": 25,
+          "pid": null,
+          "text": "伝道に打ち込もう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 106000,
+          "m": 26,
+          "pid": null,
+          "text": "人々を助けて",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 107000,
+          "e": 110000,
+          "m": 27,
+          "pid": null,
+          "text": "神の名を賛美する",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 111000,
+          "e": 113000,
+          "m": 28,
+          "pid": null,
+          "text": "知らせよう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 113000,
+          "e": 115000,
+          "m": 29,
+          "pid": null,
+          "text": "全ての人に",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 117000,
+          "m": 30,
+          "pid": null,
+          "text": "告げよう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 120000,
+          "m": 31,
+          "pid": null,
+          "text": "終わりは近い",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 122000,
+          "m": 32,
+          "pid": null,
+          "text": "話そう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 122000,
+          "e": 124000,
+          "m": 33,
+          "pid": null,
+          "text": "温和な人に",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 34,
+          "pid": null,
+          "text": "語ろう",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 132000,
+          "m": 35,
+          "pid": null,
+          "text": "世界で",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/b7ee77/1/o/pksjj_J_067_r360P.mp4",
+      "checksum": "9667b16fc86c0b50edc29be8fe496442",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 67,
@@ -48634,16 +51239,15 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 36,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/181b64/1/o/pksjj_J_067.mp3",
-      "document_id": null,
-      "checksum": "13e13690e1d22aa7333c27d641976880",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_67_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 67,
@@ -48651,8 +51255,343 @@
       "jw": "KO",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_67_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_67_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 36,
+      "active": true,
+      "buttons": 36,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 13000,
+          "m": 0,
+          "pid": null,
+          "text": "하느님 우리 시대에",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 14000,
+          "e": 18000,
+          "m": 1,
+          "pid": null,
+          "text": "말씀 전파하라 명하셨네.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 19000,
+          "e": 23000,
+          "m": 2,
+          "pid": null,
+          "text": "'너희 품은 희망의 이유",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 27000,
+          "m": 3,
+          "pid": null,
+          "text": "변호할 준비 항상 하여라.'",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 28000,
+          "e": 30000,
+          "m": 4,
+          "pid": null,
+          "text": "전파하라,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 32000,
+          "m": 5,
+          "pid": null,
+          "text": "모든 사람 듣도록!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 33000,
+          "e": 34000,
+          "m": 6,
+          "pid": null,
+          "text": "전파해,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 35000,
+          "e": 37000,
+          "m": 7,
+          "pid": null,
+          "text": "끝이 가까웠으니.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 38000,
+          "e": 39000,
+          "m": 8,
+          "pid": null,
+          "text": "전파해,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 40000,
+          "e": 41000,
+          "m": 9,
+          "pid": null,
+          "text": "온유한 자 돕도록.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 42000,
+          "e": 43000,
+          "m": 10,
+          "pid": null,
+          "text": "전파해,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 44000,
+          "e": 45000,
+          "m": 11,
+          "pid": null,
+          "text": "온 땅으로!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 49000,
+          "e": 53000,
+          "m": 12,
+          "pid": null,
+          "text": "어려운 시기 직면해",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 13,
+          "pid": null,
+          "text": "반대받고 수치 겪게 되리.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 62000,
+          "m": 14,
+          "pid": null,
+          "text": "전하기 어려울 때라도",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 67000,
+          "m": 15,
+          "pid": null,
+          "text": "주 신뢰하며 계속 전하리.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 68000,
+          "m": 16,
+          "pid": null,
+          "text": "전파하라,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 69000,
+          "e": 71000,
+          "m": 17,
+          "pid": null,
+          "text": "모든 사람 듣도록!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 73000,
+          "m": 18,
+          "pid": null,
+          "text": "전파해,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 74000,
+          "e": 76000,
+          "m": 19,
+          "pid": null,
+          "text": "끝이 가까웠으니.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 77000,
+          "m": 20,
+          "pid": null,
+          "text": "전파해,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 78000,
+          "e": 81000,
+          "m": 21,
+          "pid": null,
+          "text": "온유한 자 돕도록.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 82000,
+          "m": 22,
+          "pid": null,
+          "text": "전파해,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 83000,
+          "e": 84000,
+          "m": 23,
+          "pid": null,
+          "text": "온 땅으로!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 93000,
+          "e": 97000,
+          "m": 24,
+          "pid": null,
+          "text": "모든 일 순조로울 때",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 98000,
+          "e": 101000,
+          "m": 25,
+          "pid": null,
+          "text": "말씀 전하는 것 당연한 일.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 106000,
+          "m": 26,
+          "pid": null,
+          "text": "구원의 길 널리 전하며",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 107000,
+          "e": 110000,
+          "m": 27,
+          "pid": null,
+          "text": "여호와 이름 거룩게 하리.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 111000,
+          "e": 113000,
+          "m": 28,
+          "pid": null,
+          "text": "전파하라,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 113000,
+          "e": 115000,
+          "m": 29,
+          "pid": null,
+          "text": "모든 사람 듣도록!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 117000,
+          "m": 30,
+          "pid": null,
+          "text": "전파해,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 120000,
+          "m": 31,
+          "pid": null,
+          "text": "끝이 가까웠으니.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 122000,
+          "m": 32,
+          "pid": null,
+          "text": "전파해,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 122000,
+          "e": 124000,
+          "m": 33,
+          "pid": null,
+          "text": "온유한 자 돕도록.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 34,
+          "pid": null,
+          "text": "전파해,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 132000,
+          "m": 35,
+          "pid": null,
+          "text": "온 땅으로!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/d9c180/3/o/pksjj_KO_067_r360P.mp4",
+      "checksum": "590972c7483f15871749f4f78411d375",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 67,
@@ -48664,42 +51603,374 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 36,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/67f76a/2/o/pksjj_KO_067.mp3",
-      "document_id": null,
-      "checksum": "d67223996c8b5d989943461bc5249b2f",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_67_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 67,
       "locale": "pl",
       "jw": "P",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_67_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_67_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 36,
+      "active": true,
+      "buttons": 36,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 13000,
+          "m": 0,
+          "pid": null,
+          "text": "Nasz Bóg, Jehowa, kazał iść",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 14000,
+          "e": 18000,
+          "m": 1,
+          "pid": null,
+          "text": "pilnie głosić, że Królestwo ma przyjść.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 19000,
+          "e": 23000,
+          "m": 2,
+          "pid": null,
+          "text": "Pragniemy po stronie prawdy stać",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 27000,
+          "m": 3,
+          "pid": null,
+          "text": "i mówić o nadziei, póki czas.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 28000,
+          "e": 30000,
+          "m": 4,
+          "pid": null,
+          "text": "Więc słowo głoś,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 32000,
+          "m": 5,
+          "pid": null,
+          "text": "czasu jest już coraz mniej!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 33000,
+          "e": 34000,
+          "m": 6,
+          "pid": null,
+          "text": "Słowo głoś,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 35000,
+          "e": 37000,
+          "m": 7,
+          "pid": null,
+          "text": "niech usłyszą wszyscy je!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 38000,
+          "e": 39000,
+          "m": 8,
+          "pid": null,
+          "text": "Słowo głoś,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 40000,
+          "e": 41000,
+          "m": 9,
+          "pid": null,
+          "text": "by potulni znali Jah.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 42000,
+          "e": 43000,
+          "m": 10,
+          "pid": null,
+          "text": "Słowo głoś —",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 44000,
+          "e": 45000,
+          "m": 11,
+          "pid": null,
+          "text": "każdego dnia.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 49000,
+          "e": 53000,
+          "m": 12,
+          "pid": null,
+          "text": "Czas końca trwa i ludzie źli",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 13,
+          "pid": null,
+          "text": "robią wszystko, by pozbawić nas sił.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 62000,
+          "m": 14,
+          "pid": null,
+          "text": "I choć ostry sprzeciw próbą jest,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 67000,
+          "m": 15,
+          "pid": null,
+          "text": "ufamy Bogu, nie zrażamy się.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 68000,
+          "m": 16,
+          "pid": null,
+          "text": "Więc słowo głoś,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 69000,
+          "e": 71000,
+          "m": 17,
+          "pid": null,
+          "text": "czasu jest już coraz mniej!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 73000,
+          "m": 18,
+          "pid": null,
+          "text": "Słowo głoś,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 74000,
+          "e": 76000,
+          "m": 19,
+          "pid": null,
+          "text": "niech usłyszą wszyscy je!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 77000,
+          "m": 20,
+          "pid": null,
+          "text": "Słowo głoś,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 78000,
+          "e": 81000,
+          "m": 21,
+          "pid": null,
+          "text": "by potulni znali Jah.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 82000,
+          "m": 22,
+          "pid": null,
+          "text": "Słowo głoś —",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 83000,
+          "e": 84000,
+          "m": 23,
+          "pid": null,
+          "text": "każdego dnia.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 93000,
+          "e": 97000,
+          "m": 24,
+          "pid": null,
+          "text": "Dni sprzyjające mamy też,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 98000,
+          "e": 101000,
+          "m": 25,
+          "pid": null,
+          "text": "więc uczymy bliźnich, że Stwórca chce",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 106000,
+          "m": 26,
+          "pid": null,
+          "text": "lojalnym bezkresne życie dać,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 107000,
+          "e": 110000,
+          "m": 27,
+          "pid": null,
+          "text": "uświęcić imię swe, przywrócić raj.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 111000,
+          "e": 113000,
+          "m": 28,
+          "pid": null,
+          "text": "Więc słowo głoś,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 113000,
+          "e": 115000,
+          "m": 29,
+          "pid": null,
+          "text": "czasu jest już coraz mniej!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 117000,
+          "m": 30,
+          "pid": null,
+          "text": "Słowo głoś,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 120000,
+          "m": 31,
+          "pid": null,
+          "text": "niech usłyszą wszyscy je!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 122000,
+          "m": 32,
+          "pid": null,
+          "text": "Słowo głoś,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 122000,
+          "e": 124000,
+          "m": 33,
+          "pid": null,
+          "text": "by potulni znali Jah.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 34,
+          "pid": null,
+          "text": "Słowo głoś —",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 132000,
+          "m": 35,
+          "pid": null,
+          "text": "każdego dnia.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/52e12c/1/o/pksjj_P_067_r360P.mp4",
+      "checksum": "97f6a819739ed24b14e74fa31469db85",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 67,
           "state": "available"
         }
       ],
-      "marker_count": 39,
-      "singable_line_count": 36,
-      "active": false,
-      "buttons": 0,
-      "reason": "marker_paragraph_not_lyric",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/f62308a/1/o/sjjc_P_067.mp3",
-      "document_id": 1102016867,
-      "checksum": "4c9ce27037b3d887d5a19265e51b64d1",
-      "metadata_hash": "4c9ce27037b3d887d5a19265e51b64d1",
-      "official_lyrics_url": "https://www.jw.org/pl/biblioteka/muzyka-pie%C5%9Bni/radosnie-spiewajmy-jehowie/67-glos-slowo-boze/"
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_67_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 68,

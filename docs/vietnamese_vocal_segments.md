@@ -32,8 +32,8 @@ ends stop at the next lyric start. Interlude/outro official paragraphs are held
 when voice end is unproven. Enabled clips can retain ordinary pauses within a
 sung line; no acoustic separation model or listening review is claimed.
 
-54 songs were analyzed; 45 have enabled Vietnamese lines (877 total). Entirely
-held: 28,67,80,89,93,140,141,144,152. Thus this does not claim all 54 songs'
+54 songs were analyzed; 46 have enabled Vietnamese lines (913 total). Entirely
+held: 28,80,89,93,140,141,144,152. Thus this does not claim all 54 songs'
 lines are verified. Additional review is needed before enabling held candidates.
 
 Reproduction: set VOCAL_WORK (selected-source JSON and local media), VOCAL_MODEL
@@ -71,3 +71,14 @@ line counts or intervals beyond duration hide buttons without choir fallback.
 Future pksjj manual tables opt in by default through applyLearnerChildren;
 legacy song 41 remains Vietnamese-only until requested. The audit regenerates
 each locale's identity and labels; the runtime checks locale and checksum.
+
+## User-supplied song 67 children times (2026-10-08)
+
+All 36 sung occurrences use the supplied intervals, including each of the three
+choruses. Vietnamese pub-pksjj_67_VIDEO is bound to checksum
+a56f40d4dd684a1fd2889f85c0ab2ee6. The 11 learner locales each have their own
+checksum-bound children video and 36 book lines. Identical intervals are reused
+under the user's standing authorization for children choir timing tables.
+Titles, scripture and chorus headings receive no buttons. Inter-stanza gaps
+are excluded by the supplied boundaries. These are user annotations, not new
+official markers, listening verification or independently aligned learner vocals.
