@@ -4242,14 +4242,18 @@
     if (i >= 0) list.splice(i, 1); else list.unshift({ vi: vi, meaning: meaning || "", added: Date.now() });
     savePhrases(list);
   }
-  // A ☆ after every sentence-length listen button in [대화] and [문장] (Jeonju only).
+  // A ☆ next to every sentence-length listen button in [대화] and [문장] (Jeonju only): after it, except in a song's lyric row, where it
+  // comes BEFORE the speaker (the row ends with the music buttons ▶ ↻, so the star would otherwise sit between the two kinds of buttons).
   function decoratePhraseStars(root) {
     if (!IS_JEONJU || !root) return;
     root.querySelectorAll(".speak-btn[data-speak]").forEach(function (b) {
       var vi = b.dataset.speak || "";
       if (vi.trim().split(/\s+/).length < 3 || b.closest("#phrasebook-root")) return;
-      var next = b.nextElementSibling;
-      if (next && next.classList.contains("phrase-star")) { next.dataset.on = String(hasPhrase(vi)); return; }
+      var inSong = !!b.closest(".lyric-vi-row, .lyric-target-row");
+      var near = inSong ? b.previousElementSibling : b.nextElementSibling;
+      if (near && near.classList.contains("phrase-star")) { near.dataset.on = String(hasPhrase(vi)); return; }
+      var other = inSong ? b.nextElementSibling : b.previousElementSibling;   // a star left on the other side by an earlier pass
+      if (other && other.classList.contains("phrase-star")) other.parentNode.removeChild(other);
       var star = document.createElement("button");
       star.type = "button";
       star.className = "phrase-star";
@@ -4257,7 +4261,7 @@
       star.dataset.on = String(hasPhrase(vi));
       star.setAttribute("aria-label", TU("표현집에 추가"));
       star.textContent = "★";
-      b.insertAdjacentElement("afterend", star);
+      b.insertAdjacentElement(inSong ? "beforebegin" : "afterend", star);
     });
   }
   if (IS_JEONJU) {

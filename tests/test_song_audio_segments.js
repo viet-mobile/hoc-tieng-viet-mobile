@@ -357,6 +357,12 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
           for(let i=0;i<items.length;i++)for(let j=i+1;j<items.length;j++)if(hit(items[i],items[j]))overlap++;});
         return {rows,overlap,overflow:document.documentElement.scrollWidth>innerWidth,textW:Math.round(document.querySelector('.lyric-vi-row .lyric-vi').getBoundingClientRect().width)};})()`);
       ok(g.rows > 0 && g.overlap === 0 && !g.overflow, `width ${w}: buttons beside the text, nothing overlaps, no horizontal overflow ${JSON.stringify(g)}`);
+      if (w === 1280) {
+        const st = await E(`(()=>{const rows=[...document.querySelectorAll('.lyric-vi-row')].filter(r=>r.querySelector('.phrase-star'));
+          return {n:rows.length, starFirst:rows.filter(r=>{const k=[...r.children];return k.indexOf(r.querySelector('.phrase-star'))<k.indexOf(r.querySelector('.speak-btn'));}).length,
+            order:rows[0]?[...rows[0].children].map(c=>c.className.split(' ')[0]).join(' > '):''};})()`);
+        ok(st.n > 0 && st.starFirst === st.n, `a song row: ★ (phrase book) comes before the speaker, then the music buttons (${st.order}; ${st.starFirst}/${st.n})`);
+      }
     }
     ok(!errs.length, `errors ${errs.join(' | ').slice(0, 300)}`);
     cdp.close();
