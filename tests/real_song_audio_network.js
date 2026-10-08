@@ -1,5 +1,5 @@
 // OPTIONAL network test (not in the default release gate): the real jw.org API + the real MP3 in headless Chrome, on the local build
-// (SITE=https://jeonju.hoc.tieng.viet.mobile/ node tests/real_song_audio_network.js for production; SONGS=1:ko,164:ja,... picks the songs).
+// (SITE=https://jeonju.hoc.tieng.viet.mobile/ node tests/real_song_audio_network.js for production; SONGS=1:ko,164:ja,osg-116:ko,pkon-35:ko,... picks the songs).
 // For representative songs / languages: which recording was chosen (sjjc / pksjj / none), and for lines 1, 2, 3 of the Vietnamese and the
 // UI-language rows: requested start, the position the play really started at, the position it stopped at -- three different parts, none at 0.
 const PLATFORM = require('./helpers/platform');
@@ -8,7 +8,7 @@ const path = require('path');
 const {CDPClient} = require('./test_browser_runtime');
 const PORT = 8985, sleep = ms => new Promise(r => setTimeout(r, ms));
 const SITE = process.env.SITE || `http://127.0.0.1:${PORT}/jeonju/index.html`;
-const SONGS = process.env.SONGS ? process.env.SONGS.split(',').map(x => { const [n, l] = x.split(':'); return [+n, l]; }) : [[1, 'ko'], [1, 'ja'], [28, 'ko'], [74, 'ko'], [151, 'ko'], [152, 'ko'], [155, 'ko'], [164, 'ko'], [5, 'en'], [1, 'en']];
+const SONGS = process.env.SONGS ? process.env.SONGS.split(',').map(x => { const [n, l] = x.split(':'); return [/^\d+$/.test(n) ? +n : n, l]; }) : [[1, 'ko'], [1, 'ja'], [28, 'ko'], [74, 'ko'], [151, 'ko'], [152, 'ko'], [155, 'ko'], [164, 'ko'], [5, 'en'], [1, 'en']];
 (async () => {
   const server = spawn(PLATFORM.PYTHON, ['-m', 'http.server', String(PORT), '--directory', path.join(__dirname, '..', 'dist')], {stdio: 'ignore'});
   const chrome = spawn(PLATFORM.CHROME, ['--headless=new', '--autoplay-policy=no-user-gesture-required', '--remote-debugging-port=' + (PORT + 1000), '--no-first-run', '--user-data-dir=' + path.resolve(PLATFORM.TMP, 'song-net-' + process.pid)], {stdio: 'ignore'});
@@ -27,14 +27,17 @@ const SONGS = process.env.SONGS ? process.env.SONGS.split(',').map(x => { const 
       for (let i = 0; i < 240; i++) { if (await E("document.readyState==='complete'&&typeof window.setLang==='function'")) break; await sleep(250); }
       await sleep(800);
       const already = [...measured];
-      const r = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));window.setLang(${JSON.stringify(lang)});await sleep(300);
+      const r = await E(`(async()=>{try{const sleep=ms=>new Promise(r=>setTimeout(r,ms));window.setLang(${JSON.stringify(lang)});await sleep(300);
         document.querySelector('.tab-btn[data-tab="sentence"]').click();await sleep(300);document.querySelector('.subtab-btn[data-sentence="song"]').click();await sleep(800);
-        const row=[...document.querySelectorAll('#curr-songs-root .song-list-row')].find(r=>r.dataset.songNum===${JSON.stringify(String(num))}); if(row){row.click();await sleep(600);}
-        const box=document.querySelector('[data-seg-kind="kingdom"]');
-        for(let i=0;i<80&&!(window.__songSeg.info['kingdom|${num}|vi']!==undefined&&window.__songSeg.info['kingdom|${num}|${lang}']!==undefined);i++) await sleep(100); await sleep(200);
-        const measured=${JSON.stringify(already)}; const out={song:${num},lang:${JSON.stringify(lang)},rows:{}};
+        const kind=${JSON.stringify(/^osg-/.test(String(num)) ? 'original' : /^(pkon-|pk-)/.test(String(num)) ? 'children' : 'kingdom')}, key=${JSON.stringify(String(num))};
+        if (kind === 'kingdom') { const row=[...document.querySelectorAll('#curr-songs-root .song-list-row')].find(r=>r.dataset.songNum===key); if(row){row.click();await sleep(600);} }
+        else { [...document.querySelectorAll('.song-kind-tabs [role="tab"]')][kind === 'original' ? 1 : 2].click(); await sleep(400);
+          const h=document.querySelector('.song-acc[data-song-id="'+key+'"] .song-acc-head'); if(h&&h.getAttribute('aria-expanded')!=='true'){h.click();await sleep(600);} }
+        const box=document.querySelector('[data-seg-kind="'+kind+'"][data-seg-key="'+key+'"]');
+        for(let i=0;i<80&&!(window.__songSeg.info[kind+'|'+key+'|vi']!==undefined&&window.__songSeg.info[kind+'|'+key+'|${lang}']!==undefined);i++) await sleep(100); await sleep(200);
+        const measured=${JSON.stringify(already)}; const out={song:${JSON.stringify(num)},lang:${JSON.stringify(lang)},rows:{}};
         for (const L of [...new Set(${JSON.stringify(process.env.LOCALES ? process.env.LOCALES.split(',') : null)} || ['vi',${JSON.stringify(lang)}])]) {
-          const info=window.__songSeg.info['kingdom|${num}|'+L]; const bs=[...box.querySelectorAll('.song-seg-btn[data-seg="play"][data-seg-id$="|'+L+'"]')];
+          const info=window.__songSeg.info[kind+'|'+key+'|'+L]; const bs=[...box.querySelectorAll('.song-seg-btn[data-seg="play"][data-seg-id$="|'+L+'"]')];
           const o={src:info?info.src:'none',reason:info?(info.marks?'':info.reason||(''+(info.marks&&info.marks.length)+' vs rows')):'no recording',buttons:bs.length,lines:[]};
           for (const k of (measured.includes('${num}|'+L) ? [] : ${process.env.ALL_LINES==='1' ? 'bs.map((_,i)=>i)' : '[0,1,2]'})) { const b=bs[k]; if(!b) continue; const mark=info.marks[+b.dataset.segI];
             b.click(); let started=null,stopped=null; const t0=Date.now();
@@ -50,7 +53,7 @@ const SONGS = process.env.SONGS ? process.env.SONGS.split(',').map(x => { const 
             b.click();o.repeat={starts,stopped:window.__songSeg.audio().paused,want:mark.s/1000};
           }
           out.rows[L]=o; }
-        return out;})()`);
+        return out;}catch(e){return {error:String(e&&e.stack||e),rows:{}};}})()`);
       results.push(r); console.log(JSON.stringify(r));
       for (const L of Object.keys(r.rows)) measured.add(num+'|'+L);
       for (const L of Object.keys(r.rows)) {

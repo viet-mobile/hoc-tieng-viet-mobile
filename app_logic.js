@@ -10189,9 +10189,6 @@ function verifyDistribution(units, dist, pins) {
     }
     return { marks: marks, reason: "", nonVocal: mk.length - marks.length };
   }
-  // 오리지널 송 / 어린이 노래 in this release: a recording whose markers hold a non-vocal one (interlude / outro, pid 99) gets no button yet --
-  // its lines are only enabled by the coming alignment pass of those collections (왕국 노래 is corrected first; nothing there is widened).
-  var SONG_SEG_HOLD_NON_VOCAL = { original: true, children: true };
   var songSegInfo = {};      // "kind|key|lang" -> { src, mediaKey, url, marks } once resolved; marks null (with .reason) = no button; null = no recording
   var songSegAsk = {};
   function songSegFetch(pub, track, code) {
@@ -10461,7 +10458,6 @@ function verifyDistribution(units, dist, pins) {
       songSegResolve(kind, key, lang).then(function (info) {
         if (!box.isConnected) return;
         if (!info) { songSegLog(kind + " " + key + " " + lang + ": no sung recording"); return; }
-        if (info.marks && info.nonVocal && SONG_SEG_HOLD_NON_VOCAL[kind]) { songSegLog(kind + " " + key + " " + lang + ": held back (" + info.nonVocal + " non-vocal marker(s); this collection's alignment comes later)"); return; }
         if (!info.marks || info.marks.length !== rows.length) {   // the counts must agree exactly: otherwise no button
           songSegLog(kind + " " + key + " " + lang + " " + info.src + ": no buttons (" + (info.reason || (info.marks.length + " sung markers, " + rows.length + " lines")) + ")");
           return;

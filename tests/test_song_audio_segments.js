@@ -181,8 +181,10 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
         Object.defineProperty(document,'visibilityState',{value:'hidden',configurable:true}); document.dispatchEvent(new Event('visibilitychange')); await sleep(100);
         o.afterHidden=window.__audio.paused; Object.defineProperty(document,'visibilityState',{value:'visible',configurable:true});
         // 6. song 2 has repeated choruses: every sung line keeps its own marker index
-        const r2=[...document.querySelectorAll('#curr-songs-root .song-list-row')].find(r=>r.dataset.songNum==='2'); if(r2){ r2.click(); await sleep(900);}
-        const v2=btns('[data-seg="play"][data-seg-id$="|vi"]'); o.song2={n:v2.length, idx:v2.map(b=>+b.dataset.segI), unique:new Set(v2.map(b=>b.dataset.segM)).size};
+        // a song with a repeated chorus whose Vietnamese has no user-supplied children table (that path asks jw.org's mediator, not mocked here)
+        const cand=SONGS_DATA.find(s=>s.number>1&&s.lines.some(l=>/ĐIỆP KHÚC/.test(l.vi||''))&&!((typeof KINGDOM_VOCAL_SEGMENTS!=='undefined'&&KINGDOM_VOCAL_SEGMENTS[s.number+'|vi'])||{}).manualChildrenOverride);
+        const r2=[...document.querySelectorAll('#curr-songs-root .song-list-row')].find(r=>r.dataset.songNum===String(cand.number)); if(r2){ r2.click(); await sleep(900);}
+        const v2=btns('[data-seg="play"][data-seg-id$="|vi"]'); o.song2={song:cand.number, n:v2.length, idx:v2.map(b=>+b.dataset.segI), unique:new Set(v2.map(b=>b.dataset.segM)).size, lines:cand.lines.filter(l=>l.vi&&l.vi.trim().charAt(0)!=='(').length};
         return o;})()`);
       if (!r || !r.fetched) throw Error(JSON.stringify({r,errs}));
       const tag = `kingdom ${lang}`;
@@ -211,7 +213,7 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
       ok(r.afterTab.paused && r.afterTab.pressed === 0, `${tag}: a tab move ends the music ${JSON.stringify(r.afterTab)}`);
       ok(r.ttsEndsMusic.paused && r.ttsEndsMusic.tts >= 1, `${tag}: a speech button ends the music and speaks ${JSON.stringify(r.ttsEndsMusic)}`);
       ok(r.afterHidden === true, `${tag}: the page going hidden ends the music`);
-      ok(r.song2.n >= 20 && r.song2.unique === r.song2.n && r.song2.idx.every((x, i) => x === i), `${tag}: song 2 (repeated chorus) keeps one marker per sung line ${JSON.stringify(r.song2)}`);
+      ok(r.song2.n >= 12 && r.song2.n === r.song2.lines && r.song2.unique === r.song2.n && r.song2.idx.every((x, i) => x === i), `${tag}: song ${r.song2.song} (repeated chorus) keeps one marker per sung line ${JSON.stringify(r.song2)}`);
       ok(!errs.length, `${tag}: errors ${errs.join(' | ').slice(0, 300)}`); errs.length = 0;
     }
     // source priority and the fail-closed cases, each on a fresh page (a recording is resolved once per page)
@@ -275,7 +277,7 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
       return o;})()`);
     ok(q.osg1.rows > 0 && q.osg1.ko === 0, `original 1: the Korean recording with a wrong marker count has no button (no timing guessed) ${JSON.stringify(q.osg1)}`);
     ok(q.osg116.vi > 0 && q.osg116.ko > 0, `original 116: both languages ${JSON.stringify(q.osg116)}`);
-    ok(q.osg117.rows > 0 && q.osg117.vi === 0 && q.osg117.ko === 0, `original 117: a recording with a non-vocal (pid 99) marker is held back in this release, no button ${JSON.stringify(q.osg117)}`);
+    ok(q.osg117.rows > 0 && q.osg117.vi === 2 * q.osg117.rows && q.osg117.ko === 2 * q.osg117.rows, `original 117: the outro marker (pid 99) is no line, every sung line has its button ${JSON.stringify(q.osg117)}`);
     ok(q.kids.p1.vi === 0 && q.kids.p1.ko > 0, `children 1: the missing Vietnamese recording gives no button, no speech stands in ${JSON.stringify(q.kids.p1)}`);
     ok(q.kids.sp0.vi > 0 && q.kids.p35.vi > 0, `children special 0 / 35 ${JSON.stringify(q.kids)}`);
     ok(q.tts === 0, `no speech was used anywhere (${q.tts}) ${JSON.stringify(q.ttsTexts)}`);
