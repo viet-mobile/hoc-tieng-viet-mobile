@@ -3585,7 +3585,8 @@
         "reason": "user_supplied_line_boundaries"
       }
     ],
-    "timingSource": "User-provided Vietnamese Kingdom song 41/46 timing table, 2026-10-08"
+    "timingSource": "User-provided Vietnamese Kingdom song 41/46 timing table, 2026-10-08",
+    "manualChildrenOverride": false
   },
   "46": {
     "src": "pksjj",
@@ -3627,7 +3628,7 @@
       },
       {
         "s": 46000,
-        "e": 56000,
+        "e": 57000,
         "m": 3,
         "pid": null,
         "text": "hầu chúng con cùng trao mọi lo lắng cho ngài.",
@@ -3635,7 +3636,7 @@
         "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 65000,
+        "s": 64000,
         "e": 75000,
         "m": 4,
         "pid": null,
@@ -3663,7 +3664,7 @@
       },
       {
         "s": 95000,
-        "e": 105000,
+        "e": 106000,
         "m": 7,
         "pid": null,
         "text": "hầu chúng con làm theo lời thề ước dâng mình.",
@@ -3707,7 +3708,8 @@
         "reason": "user_supplied_line_boundaries"
       }
     ],
-    "timingSource": "User-provided Vietnamese Kingdom song 41/46 timing table, 2026-10-08"
+    "timingSource": "User revised song 46 times and authorized identical times for learner-language children choirs, 2026-10-08",
+    "manualChildrenOverride": true
   },
   "47": {
     "src": "pksjj",

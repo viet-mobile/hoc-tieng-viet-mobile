@@ -85,6 +85,48 @@ def merge_vietnamese(report, manifest):
         manifest[key+'|vi'] = proof
 
 
+
+def merge_manual_children(report, manifest, rows):
+    """Explicit user permission: reuse supplied children times across learner locales.
+    Never substitute Vietnamese audio or a general choir for a missing local children video.
+    Future children timing tables opt in by default; old 41 annotation remains VI-only.
+    """
+    overrides = json.load(open(os.path.join(ROOT,'scripts/data/vi_vocal_manual_segments.json'),encoding='utf-8'))
+    for key, override in overrides.items():
+        vi = manifest.get(key+'|vi')
+        if not override.get('applyLearnerChildren',True) or not vi or vi['src'] != 'pksjj': continue
+        for row in report:
+            if str(row['track']) != key: continue
+            locale = row['locale']
+            if locale == 'vi': continue
+            row.update(selected_source='pksjj',media_key='pub-pksjj_'+key+'_VIDEO',format='MP4',marker_count=0,active=False,buttons=0,lines=[],reason='children_video_unavailable',timing_method='user_authorized_shared_children_line_boundaries')
+            row['default_source_probes'] = row.pop('source_probes', [])
+            for field in ('document_id','metadata_hash','official_lyrics_url','sung_marker_count'):
+                row.pop(field,None)
+            row['manual_children_override'] = True
+            manifest.pop(key+'|'+locale,None)
+            response = request('https://b.jw-cdn.org/apis/mediator/v1/media-items/'+CODES[locale]+'/'+row['media_key']+'?clientType=www')
+            row['source_probes'] = [{'source':'pksjj','media_key':row['media_key'],'http_status':response['status']}]
+            if response['status'] != 200:
+                if response['status'] != 404: row['reason']='children_video_request_failed'
+                continue
+            data = json.loads(response['body'])
+            if data.get('language',{}).get('languageCode') != CODES[locale]:
+                row['reason']='children_video_language_mismatch';continue
+            media = next((m for m in data.get('media',[]) if m.get('languageAgnosticNaturalKey')==row['media_key'] and '_'+CODES[locale]+'_' in m.get('naturalKey','')),None)
+            file = next((f for f in (media or {}).get('files',[]) if f.get('label')=='360p' and f.get('mimetype')=='video/mp4'),None)
+            if not file or not file.get('checksum') or not re.match(r'^https://[a-z0-9.-]+\.jw-cdn\.org/',file.get('progressiveDownloadURL','')):continue
+            lyrics = rows[int(key)][locale]
+            if len(lyrics) != len(override['lines']):
+                row['reason']='manual_children_line_count_mismatch';continue
+            if file.get('duration',0)*1000 < override['lines'][-1]['e']:
+                row['reason']='manual_children_times_exceed_duration';continue
+            lines = [dict(s=t['s'],e=t['e'],m=i,pid=None,text=norm(text),enabled=True,reason='user_authorized_shared_children_line_boundaries') for i,(text,t) in enumerate(zip(lyrics,override['lines']))]
+            proof = dict(src='pksjj',mediaKey=row['media_key'],format='MP4',checksum=file['checksum'],duration=file['duration'],url=file['progressiveDownloadURL'],timingMethod=row['timing_method'],timingSource=override['timingSource'],manualChildrenOverride=True,lines=lines)
+            manifest[key+'|'+locale]=proof
+            row.update(checksum=proof['checksum'],url=proof['url'],lines=lines,active=True,buttons=len(lines),reason='user_authorized_shared_children_line_boundaries',disabled_line_reasons={})
+
+
 def write_manifest(manifest, table):
     sources = json.load(open(os.path.join(ROOT,'scripts/data/kingdom_vi_vocal_sources.json'), encoding='utf-8'))
     fixes = {96:[['chỉ;','chi;']],100:[['†a','ta'],['đồ bao','đổ bao']],124:[['cạnh ngoài.','cạnh ngài.']],137:[['quỹ trọng','quý trọng']]}
@@ -193,8 +235,9 @@ def main():
             if entry: manifest[f"{row['track']}|{row['locale']}"] = entry
             if count % 100 == 0: print(f'{count}/{len(jobs)} audited', flush=True)
     merge_vietnamese(report, manifest)
+    merge_manual_children(report, manifest, rows)
     totals = {locale:{'active_tracks':sum(r['active'] for r in report if r['locale']==locale), 'enabled_lines':sum(r['buttons'] for r in report if r['locale']==locale)} for locale in CODES}
-    output = {'generated':datetime.datetime.now(datetime.timezone.utc).isoformat(), 'fresh_network': '--cache' not in sys.argv, 'base_commit':'c7e3a3d', 'source_priority':['general_choir_audio_or_video','pksjj'], 'explicit_exceptions':{'141|vi':'pub-jwbon_201511_2_VIDEO','163|vi':'pub-jwbcov26_1_VIDEO','164|vi':['pub-osg_126_AUDIO','pub-osg_126_VIDEO']}, 'attachment_sha256':hashlib.sha256(open(os.path.join(ROOT,'scripts/data/kingdom_vi_vocal_sources.txt'),'rb').read()).hexdigest(), 'vi_source_mapping':json.load(open(os.path.join(ROOT,'scripts/data/kingdom_vi_vocal_sources.json'),encoding='utf-8')), 'totals':totals,'rows':report}
+    output = {'generated':datetime.datetime.now(datetime.timezone.utc).isoformat(), 'fresh_network': '--cache' not in sys.argv, 'base_commit':'c7e3a3d', 'source_priority':['general_choir_audio_or_video','pksjj'], 'manual_children_priority': 'User-supplied children times override source priority for opted-in tracks and learner locales', 'explicit_exceptions':{'141|vi':'pub-jwbon_201511_2_VIDEO','163|vi':'pub-jwbcov26_1_VIDEO','164|vi':['pub-osg_126_AUDIO','pub-osg_126_VIDEO']}, 'attachment_sha256':hashlib.sha256(open(os.path.join(ROOT,'scripts/data/kingdom_vi_vocal_sources.txt'),'rb').read()).hexdigest(), 'vi_source_mapping':json.load(open(os.path.join(ROOT,'scripts/data/kingdom_vi_vocal_sources.json'),encoding='utf-8')), 'totals':totals,'rows':report}
     with open(os.path.join(ROOT,'song_vocal_segment_audit_report.json'),'w',encoding='utf-8') as stream: json.dump(output,stream,ensure_ascii=False,indent=2)
     write_manifest(manifest, table)
     print(json.dumps(totals,ensure_ascii=False),flush=True)

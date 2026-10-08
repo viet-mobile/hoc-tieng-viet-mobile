@@ -10124,7 +10124,7 @@ function verifyDistribution(units, dist, pins) {
   // timed metadata: jw.org's media API (GETPUBMEDIALINKS) lists, per publication, song and language, the file and its `markers`, one
   // {startTime, duration, mepsParagraphId} per paragraph of the sung text. A line gets ▶ (that part of the music once) and ↻ (that part
   // again and again) ONLY when the recording's sung markers are exactly as many as the singable lines on screen; otherwise no button (no
-  // timing is ever guessed, split evenly, trimmed or copied from another language or recording, and the speech engine never stands in).
+  // timing is guessed or split evenly; user-approved children tables may explicitly share intervals across locales).
   // The audio of a language is the audio of that language: the Vietnamese row plays the Vietnamese recording, the target row the one in
   // the UI language.
   // WHICH recording (by jw.org's publication code, never by a file name) -- 왕국 노래: the choir that SINGS the words, "Sing Out Joyfully --
@@ -10220,7 +10220,7 @@ function verifyDistribution(units, dist, pins) {
         return file;
       });
   }
-  // Vietnamese source-backed video/voice alignment. Audio markers are never transferred to a different recording.
+  // Vietnamese source-backed video/voice alignment; explicit user-approved children overrides resolve separately.
   // Check both general choir media before asking for children; a failed request is not evidence of absence.
   function songSegResolveVi(key) {
     var map = KINGDOM_VI_VOCAL_SOURCE_MAP[key], proof = KINGDOM_VOCAL_SEGMENTS[key + "|vi"];
@@ -10252,9 +10252,27 @@ function verifyDistribution(units, dist, pins) {
   }
   // Resolves (once) the recording of a song in a language: the first publication of songSegPubs() that has the language, with that very
   // recording's own markers (never another recording's, never another language's).
+  // User-authorized children-choir times take precedence for this song in every eligible locale.
+  // Each locale keeps its own identified JW recording and rendered lyric text.
+  function songSegResolveManualChildren(key, lang, proof) {
+    var loc = songJwLocale(lang);
+    if (!loc || proof.src !== "pksjj" || proof.format !== "MP4" || proof.mediaKey !== "pub-pksjj_" + key + "_VIDEO") return Promise.resolve({ marks: null, reason: "invalid manual children's recording" });
+    return songSegVideo(proof.mediaKey, loc[0]).then(function (file) {
+      if (!file || file.checksum !== proof.checksum || !(file.duration >= proof.lines[proof.lines.length - 1].e / 1000)) return { src: "pksjj", marks: null, reason: "manual children's recording unavailable or changed" };
+      return { src: "pksjj", mediaKey: proof.mediaKey, url: file.progressiveDownloadURL,
+        marks: proof.lines, reason: "", nonVocal: 0, timingMethod: proof.timingMethod };
+    });
+  }
   function songSegResolve(kind, key, lang) {
     var id = kind + "|" + key + "|" + lang;
     if (songSegAsk[id]) return songSegAsk[id];
+    var manual = kind === "kingdom" && typeof KINGDOM_VOCAL_SEGMENTS !== "undefined" && KINGDOM_VOCAL_SEGMENTS[key + "|" + lang];
+    if (manual && manual.manualChildrenOverride) {
+      songSegAsk[id] = songSegResolveManualChildren(String(key), lang, manual)
+        .catch(function () { return { marks: null, reason: "manual children's source request failed" }; })
+        .then(function (info) { songSegInfo[id] = info; return info; });
+      return songSegAsk[id];
+    }
     if (kind === "kingdom" && lang === "vi" && typeof KINGDOM_VI_VOCAL_SOURCE_MAP !== "undefined" && KINGDOM_VI_VOCAL_SOURCE_MAP && KINGDOM_VI_VOCAL_SOURCE_MAP[key]) {
       songSegAsk[id] = songSegResolveVi(String(key)).catch(function () { return { marks: null, reason: "vocal source request failed; no fallback" }; })
         .then(function (info) { songSegInfo[id] = info; return info; });

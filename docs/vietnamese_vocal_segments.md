@@ -57,3 +57,17 @@ They are bound to pub-pksjj_41_VIDEO and pub-pksjj_46_VIDEO and their current
 model-confidence approvals. Titles, scriptures and chorus headings get no clips.
 Manual overrides survive candidate repackaging and audit regeneration. Changed
 recordings or lyrics require review before these intervals can be reused.
+
+## Revised song 46 and shared children times (2026-10-08)
+
+Song 46 line 4 ends at 00:57, line 5 starts at 01:04, and line 8 ends
+at 01:46. The user explicitly authorized identical intervals in every learner
+language's own pksjj children choir, overriding general-choir priority for this
+manual annotation. All 12 locales have checksum-bound 360p children videos and
+12 matching book lines. This reuse is user-authorized, not independently
+measured cross-language vocal alignment. Missing/changed recordings, mismatched
+line counts or intervals beyond duration hide buttons without choir fallback.
+
+Future pksjj manual tables opt in by default through applyLearnerChildren;
+legacy song 41 remains Vietnamese-only until requested. The audit regenerates
+each locale's identity and labels; the runtime checks locale and checksum.

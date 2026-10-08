@@ -1,11 +1,12 @@
 {
-  "generated": "2026-10-08T04:41:01.154273+00:00",
+  "generated": "2026-10-08T05:23:39.824119+00:00",
   "fresh_network": false,
   "base_commit": "c7e3a3d",
   "source_priority": [
     "general_choir_audio_or_video",
     "pksjj"
   ],
+  "manual_children_priority": "User-supplied children times override source priority for opted-in tracks and learner locales",
   "explicit_exceptions": {
     "141|vi": "pub-jwbon_201511_2_VIDEO",
     "163|vi": "pub-jwbcov26_1_VIDEO",
@@ -239,48 +240,48 @@
       "enabled_lines": 877
     },
     "cs": {
-      "active_tracks": 19,
-      "enabled_lines": 448
+      "active_tracks": 20,
+      "enabled_lines": 460
     },
     "zh_cn": {
       "active_tracks": 14,
-      "enabled_lines": 406
+      "enabled_lines": 407
     },
     "zh": {
       "active_tracks": 13,
-      "enabled_lines": 369
+      "enabled_lines": 370
     },
     "en": {
       "active_tracks": 68,
-      "enabled_lines": 1446
+      "enabled_lines": 1449
     },
     "fr": {
       "active_tracks": 20,
-      "enabled_lines": 400
+      "enabled_lines": 401
     },
     "de": {
-      "active_tracks": 7,
-      "enabled_lines": 159
+      "active_tracks": 8,
+      "enabled_lines": 171
     },
     "hu": {
-      "active_tracks": 11,
-      "enabled_lines": 279
+      "active_tracks": 12,
+      "enabled_lines": 291
     },
     "id": {
-      "active_tracks": 28,
-      "enabled_lines": 596
+      "active_tracks": 29,
+      "enabled_lines": 608
     },
     "ja": {
       "active_tracks": 7,
-      "enabled_lines": 84
+      "enabled_lines": 85
     },
     "ko": {
       "active_tracks": 36,
-      "enabled_lines": 868
+      "enabled_lines": 871
     },
     "pl": {
-      "active_tracks": 7,
-      "enabled_lines": 163
+      "active_tracks": 8,
+      "enabled_lines": 175
     }
   },
   "rows": [
@@ -30592,7 +30593,7 @@
         },
         {
           "s": 46000,
-          "e": 56000,
+          "e": 57000,
           "m": 3,
           "pid": null,
           "text": "hầu chúng con cùng trao mọi lo lắng cho ngài.",
@@ -30600,7 +30601,7 @@
           "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 65000,
+          "s": 64000,
           "e": 75000,
           "m": 4,
           "pid": null,
@@ -30628,7 +30629,7 @@
         },
         {
           "s": 95000,
-          "e": 105000,
+          "e": 106000,
           "m": 7,
           "pid": null,
           "text": "hầu chúng con làm theo lời thề ước dâng mình.",
@@ -30688,8 +30689,127 @@
       "jw": "B",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_46_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_46_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 12,
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 16000,
+          "e": 26000,
+          "m": 0,
+          "pid": null,
+          "text": "My vzdáváme, náš Bože, díky ti své",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 26000,
+          "e": 36000,
+          "m": 1,
+          "pid": null,
+          "text": "za tvou pravdu, tvé světlo zářivé.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 46000,
+          "m": 2,
+          "pid": null,
+          "text": "Jsme rádi, že nám pozorně nasloucháš.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 46000,
+          "e": 57000,
+          "m": 3,
+          "pid": null,
+          "text": "Když trápení máme, jsi blízko nás.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 64000,
+          "e": 75000,
+          "m": 4,
+          "pid": null,
+          "text": "A díky za lásku, co k nám měl tvůj Syn.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 85000,
+          "m": 5,
+          "pid": null,
+          "text": "On vírou nad zlým světem zvítězil.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 85000,
+          "e": 95000,
+          "m": 6,
+          "pid": null,
+          "text": "My žít jako on chceme vždy s pokorou",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 106000,
+          "m": 7,
+          "pid": null,
+          "text": "a dál plnit svůj slib a vůli tvou.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 108000,
+          "e": 118000,
+          "m": 8,
+          "pid": null,
+          "text": "Je ctí, Otče náš, světem jít s poselstvím,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 128000,
+          "m": 9,
+          "pid": null,
+          "text": "že blízko je tvé slavné království.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 128000,
+          "e": 138000,
+          "m": 10,
+          "pid": null,
+          "text": "Až svou pravicí odstraníš všechno zlé,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 152000,
+          "m": 11,
+          "pid": null,
+          "text": "pak zem pocítí požehnání tvé.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/772026/1/o/pksjj_B_046_r360P.mp4",
+      "checksum": "ad41b950d9739f212c6eb2e1f5fd0f6c",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 46,
@@ -30701,560 +30821,587 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/41df1ea/1/o/pksjj_B_046.mp3",
-      "document_id": null,
-      "checksum": "d321883c47dbbab54af536a9f6457acc",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_46_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 46,
       "locale": "zh_cn",
       "jw": "CHS",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_46_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_46_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 12,
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 16000,
+          "e": 26000,
+          "m": 0,
+          "pid": null,
+          "text": "感谢耶和华发出真理之光，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 26000,
+          "e": 36000,
+          "m": 1,
+          "pid": null,
+          "text": "指引你仆人走正确方向。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 46000,
+          "m": 2,
+          "pid": null,
+          "text": "感谢耶和华让我们有荣幸",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 46000,
+          "e": 57000,
+          "m": 3,
+          "pid": null,
+          "text": "能通过祷告天天亲近你。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 64000,
+          "e": 75000,
+          "m": 4,
+          "pid": null,
+          "text": "感谢耶和华无私牺牲爱子，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 85000,
+          "m": 5,
+          "pid": null,
+          "text": "他忠心至死，战胜这世界。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 85000,
+          "e": 95000,
+          "m": 6,
+          "pid": null,
+          "text": "感谢你教导我们行你旨意，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 106000,
+          "m": 7,
+          "pid": null,
+          "text": "助我们实践献身的誓言。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 108000,
+          "e": 118000,
+          "m": 8,
+          "pid": null,
+          "text": "感谢耶和华让我们有荣幸",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 128000,
+          "m": 9,
+          "pid": null,
+          "text": "宣扬你圣名和圣经真理。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 128000,
+          "e": 138000,
+          "m": 10,
+          "pid": null,
+          "text": "感谢耶和华即将消除痛苦，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 152000,
+          "m": 11,
+          "pid": null,
+          "text": "王国会带来永恒的幸福。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/34bdab/2/o/pksjj_CHS_046_r360P.mp4",
+      "checksum": "515d80a245e6c67180a5a889ff07e392",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 46,
           "state": "available"
         }
       ],
-      "marker_count": 12,
-      "singable_line_count": 12,
-      "active": true,
-      "buttons": 11,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 14319,
-          "e": 30050,
-          "m": 0,
-          "pid": 4,
-          "text": "感谢耶和华发出真理之光，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 30247,
-          "e": 41255,
-          "m": 1,
-          "pid": 5,
-          "text": "指引你仆人走正确方向。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 41513,
-          "e": 54043,
-          "m": 2,
-          "pid": 6,
-          "text": "感谢耶和华让我们有荣幸",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 54240,
-          "e": 61671,
-          "m": 3,
-          "pid": 7,
-          "text": "能通过祷告天天亲近你。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 73727,
-          "e": 83510,
-          "m": 4,
-          "pid": 8,
-          "text": "感谢耶和华无私牺牲爱子，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 83827,
-          "e": 95942,
-          "m": 5,
-          "pid": 9,
-          "text": "他忠心至死，战胜这世界。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96159,
-          "e": 106772,
-          "m": 6,
-          "pid": 10,
-          "text": "感谢你教导我们行你旨意，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 107029,
-          "e": 113471,
-          "m": 7,
-          "pid": 11,
-          "text": "助我们实践献身的誓言。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 137663,
-          "e": 147782,
-          "m": 8,
-          "pid": 12,
-          "text": "感谢耶和华让我们有荣幸",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 148256,
-          "e": 158500,
-          "m": 9,
-          "pid": 13,
-          "text": "宣扬你圣名和圣经真理。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 158750,
-          "e": 169426,
-          "m": 10,
-          "pid": 14,
-          "text": "感谢耶和华即将消除痛苦，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 169790,
-          "e": 183345,
-          "m": 11,
-          "pid": 15,
-          "text": "王国会带来永恒的幸福。",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_46_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/265ef31/1/o/sjjc_CHS_046.mp3",
-      "document_id": 1102016846,
-      "checksum": "7a888b8b7e0af3ce6d685f8a55d9c581",
-      "metadata_hash": "7a888b8b7e0af3ce6d685f8a55d9c581",
-      "official_lyrics_url": "https://www.jw.org/cmn-hans/%E5%A4%9A%E5%AA%92%E4%BD%93%E5%9B%BE%E4%B9%A6%E9%A6%86/%E9%9F%B3%E4%B9%90/%E9%AB%98%E5%A3%B0%E6%AC%A2%E5%94%B1/46%E6%84%9F%E8%B0%A2%E8%80%B6%E5%92%8C%E5%8D%8E/",
-      "sung_marker_count": 12
+      "disabled_line_reasons": {}
     },
     {
       "track": 46,
       "locale": "zh",
       "jw": "CH",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_46_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_46_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 12,
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 16000,
+          "e": 26000,
+          "m": 0,
+          "pid": null,
+          "text": "感謝耶和華發出真理之光，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 26000,
+          "e": 36000,
+          "m": 1,
+          "pid": null,
+          "text": "指引你僕人走正確方向。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 46000,
+          "m": 2,
+          "pid": null,
+          "text": "感謝耶和華讓我們有榮幸",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 46000,
+          "e": 57000,
+          "m": 3,
+          "pid": null,
+          "text": "能通過禱告天天親近你。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 64000,
+          "e": 75000,
+          "m": 4,
+          "pid": null,
+          "text": "感謝耶和華無私犧牲愛子，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 85000,
+          "m": 5,
+          "pid": null,
+          "text": "他忠心至死，戰勝這世界。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 85000,
+          "e": 95000,
+          "m": 6,
+          "pid": null,
+          "text": "感謝你教導我們行你旨意，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 106000,
+          "m": 7,
+          "pid": null,
+          "text": "助我們實踐獻身的誓言。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 108000,
+          "e": 118000,
+          "m": 8,
+          "pid": null,
+          "text": "感謝耶和華讓我們有榮幸",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 128000,
+          "m": 9,
+          "pid": null,
+          "text": "宣揚你聖名和聖經真理。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 128000,
+          "e": 138000,
+          "m": 10,
+          "pid": null,
+          "text": "感謝耶和華即將消除痛苦，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 152000,
+          "m": 11,
+          "pid": null,
+          "text": "王國會帶來永恆的幸福。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/02f41b/2/o/pksjj_CH_046_r360P.mp4",
+      "checksum": "0a1eddd99cc78894c7bd7afdd1dc39a0",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 46,
           "state": "available"
         }
       ],
-      "marker_count": 12,
-      "singable_line_count": 12,
-      "active": true,
-      "buttons": 11,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 14319,
-          "e": 30050,
-          "m": 0,
-          "pid": 4,
-          "text": "感謝耶和華發出真理之光，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 30247,
-          "e": 41255,
-          "m": 1,
-          "pid": 5,
-          "text": "指引你僕人走正確方向。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 41513,
-          "e": 54043,
-          "m": 2,
-          "pid": 6,
-          "text": "感謝耶和華讓我們有榮幸",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 54240,
-          "e": 61671,
-          "m": 3,
-          "pid": 7,
-          "text": "能通過禱告天天親近你。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 73727,
-          "e": 83510,
-          "m": 4,
-          "pid": 8,
-          "text": "感謝耶和華無私犧牲愛子，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 83827,
-          "e": 95942,
-          "m": 5,
-          "pid": 9,
-          "text": "他忠心至死，戰勝這世界。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96159,
-          "e": 106772,
-          "m": 6,
-          "pid": 10,
-          "text": "感謝你教導我們行你旨意，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 107029,
-          "e": 113471,
-          "m": 7,
-          "pid": 11,
-          "text": "助我們實踐獻身的誓言。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 137663,
-          "e": 147782,
-          "m": 8,
-          "pid": 12,
-          "text": "感謝耶和華讓我們有榮幸",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 148256,
-          "e": 158500,
-          "m": 9,
-          "pid": 13,
-          "text": "宣揚你聖名和聖經真理。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 158750,
-          "e": 169426,
-          "m": 10,
-          "pid": 14,
-          "text": "感謝耶和華即將消除痛苦，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 169790,
-          "e": 183345,
-          "m": 11,
-          "pid": 15,
-          "text": "王國會帶來永恆的幸福。",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_46_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/a54651c/1/o/sjjc_CH_046.mp3",
-      "document_id": 1102016846,
-      "checksum": "0d0e34a6b3799f424c827dba4ba515af",
-      "metadata_hash": "0d0e34a6b3799f424c827dba4ba515af",
-      "official_lyrics_url": "https://www.jw.org/cmn-hant/%E5%A4%9A%E5%AA%92%E9%AB%94%E5%9C%96%E6%9B%B8%E9%A4%A8/%E9%9F%B3%E6%A8%82/%E9%AB%98%E8%81%B2%E6%AD%A1%E5%94%B1/46%E6%84%9F%E8%AC%9D%E8%80%B6%E5%92%8C%E8%8F%AF/",
-      "sung_marker_count": 12
+      "disabled_line_reasons": {}
     },
     {
       "track": 46,
       "locale": "en",
       "jw": "E",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_46_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_46_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 12,
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 16000,
+          "e": 26000,
+          "m": 0,
+          "pid": null,
+          "text": "We thank you, Jehovah, each day and each night,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 26000,
+          "e": 36000,
+          "m": 1,
+          "pid": null,
+          "text": "That you shed upon us your precious light.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 46000,
+          "m": 2,
+          "pid": null,
+          "text": "We thank you that we have the priv'lege of prayer,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 46000,
+          "e": 57000,
+          "m": 3,
+          "pid": null,
+          "text": "That we can approach you with ev'ry care.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 64000,
+          "e": 75000,
+          "m": 4,
+          "pid": null,
+          "text": "We thank you, Jehovah, for your loving Son,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 85000,
+          "m": 5,
+          "pid": null,
+          "text": "Who conquered the world; by his faith he won.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 85000,
+          "e": 95000,
+          "m": 6,
+          "pid": null,
+          "text": "We thank you for guidance in doing your will.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 106000,
+          "m": 7,
+          "pid": null,
+          "text": "You lovingly help us our vows fulfill.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 108000,
+          "e": 118000,
+          "m": 8,
+          "pid": null,
+          "text": "We thank you, our God, for the honor to preach",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 128000,
+          "m": 9,
+          "pid": null,
+          "text": "About your great name and the truth to teach.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 128000,
+          "e": 138000,
+          "m": 10,
+          "pid": null,
+          "text": "We thank you that soon all earth's woes will be past,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 152000,
+          "m": 11,
+          "pid": null,
+          "text": "While your Kingdom blessings forever last.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/0fa96c/1/o/pksjj_E_046_r360P.mp4",
+      "checksum": "c6d2971450b3732cdc794634be69a0c8",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 46,
           "state": "available"
         }
       ],
-      "marker_count": 14,
-      "singable_line_count": 12,
-      "active": true,
-      "buttons": 9,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 20282,
-          "e": 31919,
-          "m": 0,
-          "pid": 4,
-          "text": "We thank you, Jehovah, each day and each night,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 31920,
-          "e": 43572,
-          "m": 1,
-          "pid": 5,
-          "text": "That you shed upon us your precious light.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 43573,
-          "e": 54905,
-          "m": 2,
-          "pid": 6,
-          "text": "We thank you that we have the priv'lege of prayer,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 54906,
-          "e": 66100,
-          "m": 3,
-          "pid": 7,
-          "text": "That we can approach you with ev'ry care.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
-        },
-        {
-          "s": 74704,
-          "e": 85775,
-          "m": 5,
-          "pid": 8,
-          "text": "We thank you, Jehovah, for your loving Son,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 85776,
-          "e": 96985,
-          "m": 6,
-          "pid": 9,
-          "text": "Who conquered the world; by his faith he won.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96986,
-          "e": 108185,
-          "m": 7,
-          "pid": 10,
-          "text": "We thank you for guidance in doing your will.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 108186,
-          "e": 119145,
-          "m": 8,
-          "pid": 11,
-          "text": "You lovingly help us our vows fulfill.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
-        },
-        {
-          "s": 136074,
-          "e": 147780,
-          "m": 10,
-          "pid": 12,
-          "text": "We thank you, our God, for the honor to preach",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 147781,
-          "e": 159436,
-          "m": 11,
-          "pid": 13,
-          "text": "About your great name and the truth to teach.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 159437,
-          "e": 170801,
-          "m": 12,
-          "pid": 14,
-          "text": "We thank you that soon all earth's woes will be past,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 170802,
-          "e": 188500,
-          "m": 13,
-          "pid": 15,
-          "text": "While your Kingdom blessings forever last.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_46_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/7f1005/1/o/sjjc_E_046.mp3",
-      "document_id": 1102016846,
-      "checksum": "83ab39d3384762efe5a1e875a345d66e",
-      "metadata_hash": "83ab39d3384762efe5a1e875a345d66e",
-      "official_lyrics_url": "https://www.jw.org/en/library/music-songs/sing-out-joyfully/46-we-thank-you-jehovah/",
-      "sung_marker_count": 12
+      "disabled_line_reasons": {}
     },
     {
       "track": 46,
       "locale": "fr",
       "jw": "F",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_46_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_46_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 12,
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 16000,
+          "e": 26000,
+          "m": 0,
+          "pid": null,
+          "text": "Merci, Jéhovah, sois loué jour et nuit :",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 26000,
+          "e": 36000,
+          "m": 1,
+          "pid": null,
+          "text": "Tu nous illumines et tu nous conduis.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 46000,
+          "m": 2,
+          "pid": null,
+          "text": "Merci, car tu nous as donné la prière",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 46000,
+          "e": 57000,
+          "m": 3,
+          "pid": null,
+          "text": "Pour tout te confier, libres, à cœur ouvert.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 64000,
+          "e": 75000,
+          "m": 4,
+          "pid": null,
+          "text": "Merci, Jéhovah, pour ton Fils bien-aimé,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 85000,
+          "m": 5,
+          "pid": null,
+          "text": "Lui qui, de ce monde, a su triompher.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 85000,
+          "e": 95000,
+          "m": 6,
+          "pid": null,
+          "text": "Merci de guider nos efforts pour te plaire,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 106000,
+          "m": 7,
+          "pid": null,
+          "text": "Pour nous acquitter de nos vœux sincères !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 108000,
+          "e": 118000,
+          "m": 8,
+          "pid": null,
+          "text": "Merci, Jéhovah, pour l'honneur de prêcher",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 128000,
+          "m": 9,
+          "pid": null,
+          "text": "Tes voies, ton grand nom et ta vérité.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 128000,
+          "e": 138000,
+          "m": 10,
+          "pid": null,
+          "text": "Merci, car durant son glorieux millénaire,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 152000,
+          "m": 11,
+          "pid": null,
+          "text": "Ton Roi guérira les humains, la terre.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/19d18a/2/o/pksjj_F_046_r360P.mp4",
+      "checksum": "3fd412309cef3c4792f0dd0623a4b699",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 46,
           "state": "available"
         }
       ],
-      "marker_count": 13,
-      "singable_line_count": 12,
-      "active": true,
-      "buttons": 11,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 20160,
-          "e": 31529,
-          "m": 0,
-          "pid": 4,
-          "text": "Merci, Jéhovah, sois loué jour et nuit :",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 31530,
-          "e": 43305,
-          "m": 1,
-          "pid": 5,
-          "text": "Tu nous illumines et tu nous conduis.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 43306,
-          "e": 54591,
-          "m": 2,
-          "pid": 6,
-          "text": "Merci, car tu nous as donné la prière",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 54592,
-          "e": 74324,
-          "m": 3,
-          "pid": 7,
-          "text": "Pour tout te confier, libres, à cœur ouvert.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 74325,
-          "e": 85481,
-          "m": 4,
-          "pid": 8,
-          "text": "Merci, Jéhovah, pour ton Fils bien-aimé,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 85482,
-          "e": 96575,
-          "m": 5,
-          "pid": 9,
-          "text": "Lui qui, de ce monde, a su triompher.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96576,
-          "e": 107796,
-          "m": 6,
-          "pid": 10,
-          "text": "Merci de guider nos efforts pour te plaire,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 107797,
-          "e": 135679,
-          "m": 7,
-          "pid": 11,
-          "text": "Pour nous acquitter de nos vœux sincères !",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 135680,
-          "e": 147391,
-          "m": 8,
-          "pid": 12,
-          "text": "Merci, Jéhovah, pour l'honneur de prêcher",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 147392,
-          "e": 159145,
-          "m": 9,
-          "pid": 13,
-          "text": "Tes voies, ton grand nom et ta vérité.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 159146,
-          "e": 170516,
-          "m": 10,
-          "pid": 14,
-          "text": "Merci, car durant son glorieux millénaire,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 170517,
-          "e": 220500,
-          "m": 11,
-          "pid": 15,
-          "text": "Ton Roi guérira les humains, la terre.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_46_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/b2fc98/1/o/sjjc_F_046.mp3",
-      "document_id": 1102016846,
-      "checksum": "b654c283fbcc72b6ba69b362aa6bcecc",
-      "metadata_hash": "b654c283fbcc72b6ba69b362aa6bcecc",
-      "official_lyrics_url": "https://www.jw.org/fr/biblioth%C3%A8que/musique-chansons/chantons-joyeusement/46-merci-jehovah/",
-      "sung_marker_count": 12
+      "disabled_line_reasons": {}
     },
     {
       "track": 46,
@@ -31262,8 +31409,127 @@
       "jw": "X",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_46_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_46_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 12,
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 16000,
+          "e": 26000,
+          "m": 0,
+          "pid": null,
+          "text": "Hab Dank, Herr Jehova, bei Tag und bei Nacht!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 26000,
+          "e": 36000,
+          "m": 1,
+          "pid": null,
+          "text": "In kostbares Licht hast du uns gebracht.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 46000,
+          "m": 2,
+          "pid": null,
+          "text": "Hab Dank, wenn wir beten, bist du für uns da!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 46000,
+          "e": 57000,
+          "m": 3,
+          "pid": null,
+          "text": "In all unsren Sorgen bist du stets nah.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 64000,
+          "e": 75000,
+          "m": 4,
+          "pid": null,
+          "text": "Hab Dank, Herr Jehova, du gabst deinen Sohn!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 85000,
+          "m": 5,
+          "pid": null,
+          "text": "Die Welt er besiegte durch Glauben schon.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 85000,
+          "e": 95000,
+          "m": 6,
+          "pid": null,
+          "text": "Hab Dank, denn du hilfst uns zu tun deinen Willn!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 106000,
+          "m": 7,
+          "pid": null,
+          "text": "Ja unsre Gelübde wir gern erfülln.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 108000,
+          "e": 118000,
+          "m": 8,
+          "pid": null,
+          "text": "Hab Dank, Herr Jehova, du gabst uns dein Wort!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 128000,
+          "m": 9,
+          "pid": null,
+          "text": "Die Wahrheit wir tragen an jeden Ort.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 128000,
+          "e": 138000,
+          "m": 10,
+          "pid": null,
+          "text": "Hab Dank, denn vergangen sind bald Schmerz und Leid!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 152000,
+          "m": 11,
+          "pid": null,
+          "text": "Gesegnet sind wir dann in Ewigkeit.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/ad81b1/2/o/pksjj_X_046_r360P.mp4",
+      "checksum": "fc0573d416395029fea7f2091fbef245",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 46,
@@ -31275,341 +31541,587 @@
           "state": "available"
         }
       ],
-      "marker_count": 12,
-      "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "marker_paragraph_not_lyric",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/c32a22/1/o/pksjj_X_046.mp3",
-      "document_id": 1102013540,
-      "checksum": "c3d704bd1c096c1a41d91066fee17c97",
-      "metadata_hash": "c3d704bd1c096c1a41d91066fee17c97",
-      "official_lyrics_url": "https://www.jw.org/de/bibliothek/videos/werde-jehovas-freund-sing-mit-uns/lied-46-hab-dank-jehova/"
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_46_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 46,
       "locale": "hu",
       "jw": "H",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_46_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_46_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 12,
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 16000,
+          "e": 26000,
+          "m": 0,
+          "pid": null,
+          "text": "Ó, Jehova, hálás a szívünk neked,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 26000,
+          "e": 36000,
+          "m": 1,
+          "pid": null,
+          "text": "mert árasztod ránk drága fényedet.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 46000,
+          "m": 2,
+          "pid": null,
+          "text": "Nagy áldás, Atyánk, hogy imádkozhatunk,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 46000,
+          "e": 57000,
+          "m": 3,
+          "pid": null,
+          "text": "s hogy bármi a gondunk, elmondhatjuk.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 64000,
+          "e": 75000,
+          "m": 4,
+          "pid": null,
+          "text": "Ó, Jehova, hála a hű Fiadért,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 85000,
+          "m": 5,
+          "pid": null,
+          "text": "ki Sátán világát legyőzte rég!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 85000,
+          "e": 95000,
+          "m": 6,
+          "pid": null,
+          "text": "Oly jól vezetsz minket, Urunk, Istenünk,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 106000,
+          "m": 7,
+          "pid": null,
+          "text": "így teljesíthetjük, mit ígértünk.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 108000,
+          "e": 118000,
+          "m": 8,
+          "pid": null,
+          "text": "Ó, Jehova, hálás a szívünk azért,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 128000,
+          "m": 9,
+          "pid": null,
+          "text": "hogy hírt vihetünk neved népeként:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 128000,
+          "e": 138000,
+          "m": 10,
+          "pid": null,
+          "text": "eltűnik a földről a könnyhullatás,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 152000,
+          "m": 11,
+          "pid": null,
+          "text": "és végtelen áldások várnak ránk.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/0675be4/1/o/pksjj_H_046_r360P.mp4",
+      "checksum": "e97955316c91e0ce2c348b5a8ecae114",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 46,
           "state": "available"
         }
       ],
-      "marker_count": 14,
-      "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "metadata_audio_hash_mismatch",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/87421c2/1/o/sjjc_H_046.mp3",
-      "document_id": 1102016846,
-      "checksum": "198227660bf4cd8af63dd5d8042fa58b",
-      "metadata_hash": "291e0505810945ddaed94b2ed855af79"
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_46_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 46,
       "locale": "id",
       "jw": "IN",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_46_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_46_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 12,
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 16000,
+          "e": 26000,
+          "m": 0,
+          "pid": null,
+          "text": "Kami bersyukur pada-Mu, Yehuwa,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 26000,
+          "e": 36000,
+          "m": 1,
+          "pid": null,
+          "text": "Atas terang-Mu yang sangat mulia.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 46000,
+          "m": 2,
+          "pid": null,
+          "text": "Syukur kar'na kami dapat berdoa,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 46000,
+          "e": 57000,
+          "m": 3,
+          "pid": null,
+          "text": "Datang kepada-Mu kapan saja.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 64000,
+          "e": 75000,
+          "m": 4,
+          "pid": null,
+          "text": "Syukur atas Putra-Mu yang setia.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 85000,
+          "m": 5,
+          "pid": null,
+          "text": "Dia beriman, kalahkan dunia.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 85000,
+          "e": 95000,
+          "m": 6,
+          "pid": null,
+          "text": "Syukur atas petunjuk-Mu yang benar,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 106000,
+          "m": 7,
+          "pid": null,
+          "text": "Yang bantu kami penuhi ikrar.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 108000,
+          "e": 118000,
+          "m": 8,
+          "pid": null,
+          "text": "Syukur kar'na kami dapat b'ritakan",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 128000,
+          "m": 9,
+          "pid": null,
+          "text": "Tentang nama-Mu dan kebenaran.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 128000,
+          "e": 138000,
+          "m": 10,
+          "pid": null,
+          "text": "Syukur kar'na Kau 'kan hapus derita,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 152000,
+          "m": 11,
+          "pid": null,
+          "text": "Dan K'rajaan-Mu segera tiba.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/aa5ff9/3/o/pksjj_IN_046_r360P.mp4",
+      "checksum": "1ab663a320cf51e332d3b9a33603facd",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 46,
           "state": "available"
         }
       ],
-      "marker_count": 15,
-      "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "official_paragraph_text_mismatch",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/ca615f4/1/o/sjjc_IN_046.mp3",
-      "document_id": 1102016846,
-      "checksum": "e27f8b3e2b7b4f5cfdad7113d45de30e",
-      "metadata_hash": "e27f8b3e2b7b4f5cfdad7113d45de30e",
-      "official_lyrics_url": "https://www.jw.org/id/perpustakaan/musik-lagu/bernyanyi-sepenuh-hati/46-bersyukur-pada-yehuwa/",
-      "sung_marker_count": 12
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_46_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 46,
       "locale": "ja",
       "jw": "J",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_46_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_46_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 12,
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 16000,
+          "e": 26000,
+          "m": 0,
+          "pid": null,
+          "text": "感謝します 父エホバ",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 26000,
+          "e": 36000,
+          "m": 1,
+          "pid": null,
+          "text": "道を照らす光を",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 46000,
+          "m": 2,
+          "pid": null,
+          "text": "この祈りの贈り物",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 46000,
+          "e": 57000,
+          "m": 3,
+          "pid": null,
+          "text": "感謝します あなたに",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 64000,
+          "e": 75000,
+          "m": 4,
+          "pid": null,
+          "text": "感謝します 父エホバ",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 85000,
+          "m": 5,
+          "pid": null,
+          "text": "イエスによる犠牲を",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 85000,
+          "e": 95000,
+          "m": 6,
+          "pid": null,
+          "text": "誓い果たす導きを",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 106000,
+          "m": 7,
+          "pid": null,
+          "text": "感謝します あなたに",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 108000,
+          "e": 118000,
+          "m": 8,
+          "pid": null,
+          "text": "感謝します 父エホバ",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 128000,
+          "m": 9,
+          "pid": null,
+          "text": "真理告げる名誉を",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 128000,
+          "e": 138000,
+          "m": 10,
+          "pid": null,
+          "text": "とわに続く王国を",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 152000,
+          "m": 11,
+          "pid": null,
+          "text": "感謝します あなたに",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/e153a1/1/o/pksjj_J_046_r360P.mp4",
+      "checksum": "856631fe7f1516efd568f78873dedeb4",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 46,
           "state": "available"
         }
       ],
-      "marker_count": 12,
-      "singable_line_count": 12,
-      "active": true,
-      "buttons": 11,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 19501,
-          "e": 31142,
-          "m": 0,
-          "pid": 4,
-          "text": "感謝します 父エホバ",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 31143,
-          "e": 43096,
-          "m": 1,
-          "pid": 5,
-          "text": "道を照らす光を",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 43097,
-          "e": 54134,
-          "m": 2,
-          "pid": 6,
-          "text": "この祈りの贈り物",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 54136,
-          "e": 72652,
-          "m": 3,
-          "pid": 7,
-          "text": "感謝します あなたに",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 72653,
-          "e": 85058,
-          "m": 4,
-          "pid": 8,
-          "text": "感謝します 父エホバ",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 85060,
-          "e": 96288,
-          "m": 5,
-          "pid": 9,
-          "text": "イエスによる犠牲を",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96290,
-          "e": 107549,
-          "m": 6,
-          "pid": 10,
-          "text": "誓い果たす導きを",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 107550,
-          "e": 133685,
-          "m": 7,
-          "pid": 11,
-          "text": "感謝します あなたに",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 133686,
-          "e": 147112,
-          "m": 8,
-          "pid": 12,
-          "text": "感謝します 父エホバ",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 147113,
-          "e": 158819,
-          "m": 9,
-          "pid": 13,
-          "text": "真理告げる名誉を",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 158821,
-          "e": 170075,
-          "m": 10,
-          "pid": 14,
-          "text": "とわに続く王国を",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 170076,
-          "e": 220150,
-          "m": 11,
-          "pid": 15,
-          "text": "感謝します あなたに",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_46_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/77adb7/1/o/sjjc_J_046.mp3",
-      "document_id": 1102016846,
-      "checksum": "e495974639775c024f49ef84f54bf54e",
-      "metadata_hash": "e495974639775c024f49ef84f54bf54e",
-      "official_lyrics_url": "https://www.jw.org/ja/%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%83%BC/%E9%9F%B3%E6%A5%BD-%E6%AD%8C/%E5%96%9C%E3%81%B3%E3%81%AB%E3%81%82%E3%81%B5%E3%82%8C%E3%81%A6%E6%AD%8C%E3%81%86/46-%E3%82%A8%E3%83%9B%E3%83%90%E7%A7%81%E3%81%9F%E3%81%A1%E3%81%AF%E6%84%9F%E8%AC%9D%E3%81%97%E3%81%BE%E3%81%99/",
-      "sung_marker_count": 12
+      "disabled_line_reasons": {}
     },
     {
       "track": 46,
       "locale": "ko",
       "jw": "KO",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_46_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_46_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 12,
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 16000,
+          "e": 26000,
+          "m": 0,
+          "pid": null,
+          "text": "오, 감사합니다, 주 여호와여.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 26000,
+          "e": 36000,
+          "m": 1,
+          "pid": null,
+          "text": "이 소중한 빛 비춰 주시고,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 46000,
+          "m": 2,
+          "pid": null,
+          "text": "내 모든 염려를 말씀드리는",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 46000,
+          "e": 57000,
+          "m": 3,
+          "pid": null,
+          "text": "특권 주시니 감사합니다.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 64000,
+          "e": 75000,
+          "m": 4,
+          "pid": null,
+          "text": "오, 감사합니다. 아들 보내어",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 85000,
+          "m": 5,
+          "pid": null,
+          "text": "믿음의 승리 보여 주시고,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 85000,
+          "e": 95000,
+          "m": 6,
+          "pid": null,
+          "text": "우리의 서원을 이행하도록",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 106000,
+          "m": 7,
+          "pid": null,
+          "text": "도와주시니 감사합니다.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 108000,
+          "e": 118000,
+          "m": 8,
+          "pid": null,
+          "text": "오, 주의 이름과 왕국 알리는",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 128000,
+          "m": 9,
+          "pid": null,
+          "text": "영예 주시니 감사합니다.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 128000,
+          "e": 138000,
+          "m": 10,
+          "pid": null,
+          "text": "영원히 눈물을 없애시리니",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 152000,
+          "m": 11,
+          "pid": null,
+          "text": "오 여호와여, 감사합니다.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/d02a52/3/o/pksjj_KO_046_r360P.mp4",
+      "checksum": "078a75f8d96484535986f0e153193a0d",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 46,
           "state": "available"
         }
       ],
-      "marker_count": 15,
-      "singable_line_count": 12,
-      "active": true,
-      "buttons": 9,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 20282,
-          "e": 31919,
-          "m": 0,
-          "pid": 4,
-          "text": "오, 감사합니다, 주 여호와여.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 31920,
-          "e": 43572,
-          "m": 1,
-          "pid": 5,
-          "text": "이 소중한 빛 비춰 주시고,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 43573,
-          "e": 54905,
-          "m": 2,
-          "pid": 6,
-          "text": "내 모든 염려를 말씀드리는",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 54906,
-          "e": 66100,
-          "m": 3,
-          "pid": 7,
-          "text": "특권 주시니 감사합니다.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
-        },
-        {
-          "s": 74704,
-          "e": 85775,
-          "m": 5,
-          "pid": 8,
-          "text": "오, 감사합니다. 아들 보내어",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 85776,
-          "e": 96985,
-          "m": 6,
-          "pid": 9,
-          "text": "믿음의 승리 보여 주시고,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96986,
-          "e": 108185,
-          "m": 7,
-          "pid": 10,
-          "text": "우리의 서원을 이행하도록",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 108186,
-          "e": 119145,
-          "m": 8,
-          "pid": 11,
-          "text": "도와주시니 감사합니다.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
-        },
-        {
-          "s": 136074,
-          "e": 147780,
-          "m": 10,
-          "pid": 12,
-          "text": "오, 주의 이름과 왕국 알리는",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 147781,
-          "e": 159436,
-          "m": 11,
-          "pid": 13,
-          "text": "영예 주시니 감사합니다.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 159437,
-          "e": 170801,
-          "m": 12,
-          "pid": 14,
-          "text": "영원히 눈물을 없애시리니",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 170802,
-          "e": 188500,
-          "m": 13,
-          "pid": 15,
-          "text": "오 여호와여, 감사합니다.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_46_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/fe9d6f/1/o/sjjc_KO_046.mp3",
-      "document_id": 1102016846,
-      "checksum": "bc86f98ba1955b4b112170dcca7ce19c",
-      "metadata_hash": "bc86f98ba1955b4b112170dcca7ce19c",
-      "official_lyrics_url": "https://www.jw.org/ko/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/%EC%9D%8C%EC%95%85-%EB%85%B8%EB%9E%98/%EA%B8%B0%EC%81%A8%EC%9C%BC%EB%A1%9C-%EB%85%B8%EB%9E%98%ED%95%98%EB%9D%BC/46-%EC%97%AC%ED%98%B8%EC%99%80%EC%97%AC-%EA%B0%90%EC%82%AC%ED%95%A9%EB%8B%88%EB%8B%A4/",
-      "sung_marker_count": 12
+      "disabled_line_reasons": {}
     },
     {
       "track": 46,
@@ -31617,8 +32129,127 @@
       "jw": "P",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_46_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_46_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 12,
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 16000,
+          "e": 26000,
+          "m": 0,
+          "pid": null,
+          "text": "Dziękuję, Jehowo, za cenny Twój dar:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 26000,
+          "e": 36000,
+          "m": 1,
+          "pid": null,
+          "text": "za światło duchowe i prawdy skarb.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 46000,
+          "m": 2,
+          "pid": null,
+          "text": "Dziękuję Ci za to, że słyszysz mój głos,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 46000,
+          "e": 57000,
+          "m": 3,
+          "pid": null,
+          "text": "gdy co dzień w modlitwie pochylam skroń.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 64000,
+          "e": 75000,
+          "m": 4,
+          "pid": null,
+          "text": "Dziękuję, Jehowo, że przyszedł na świat",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 85000,
+          "m": 5,
+          "pid": null,
+          "text": "Twój Syn, który życie poświęcić chciał.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 85000,
+          "e": 95000,
+          "m": 6,
+          "pid": null,
+          "text": "Dziękuję Ci za to, że uczysz, jak żyć,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 106000,
+          "m": 7,
+          "pid": null,
+          "text": "by spełniać Twą wolę i Ciebie czcić.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 108000,
+          "e": 118000,
+          "m": 8,
+          "pid": null,
+          "text": "Dziękuję, Jehowo, że zaszczyt ten mam:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 118000,
+          "e": 128000,
+          "m": 9,
+          "pid": null,
+          "text": "rozgłaszać Twe imię, by świat je znał.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 128000,
+          "e": 138000,
+          "m": 10,
+          "pid": null,
+          "text": "Dziękuję, że wkrótce niebiański Twój rząd",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 152000,
+          "m": 11,
+          "pid": null,
+          "text": "usunie cierpienie i wszelkie zło.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/e15224/1/o/pksjj_P_046_r360P.mp4",
+      "checksum": "8a98dd141013fe2eb9657c08dc956279",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 46,
@@ -31630,17 +32261,15 @@
           "state": "available"
         }
       ],
-      "marker_count": 14,
-      "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "marker_paragraph_not_lyric",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/a77d8b/1/o/pksjj_P_046.mp3",
-      "document_id": 1102013540,
-      "checksum": "d6f59823a9411606cf7fac36a9fedb6d",
-      "metadata_hash": "d6f59823a9411606cf7fac36a9fedb6d",
-      "official_lyrics_url": "https://www.jw.org/pl/biblioteka/materia%C5%82y-wideo/zosta%C5%84-przyjacielem-jehowy-za%C5%9Bpiewajmy-razem/46-dzi%C4%99kuje-ci-jehowo/"
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_46_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 47,

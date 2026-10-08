@@ -40,8 +40,8 @@ const SONGS = process.env.SONGS ? process.env.SONGS.split(',').map(x => { const 
             b.click(); let started=null,stopped=null; const t0=Date.now();
             while(Date.now()-t0<25000){ await sleep(30); const a=window.__songSeg.audio(); if(a&&!a.paused&&started===null) { started=a.currentTime; if(${process.env.FAST_BOUNDARY === '1'}) a.currentTime=mark.e/1000-0.25; } if(started!==null&&a.paused){stopped=a.currentTime;break;} }
             o.lines.push({want:+(mark.s/1000).toFixed(3),end:+(mark.e/1000).toFixed(3),started:started===null?null:+started.toFixed(3),stopped:stopped===null?null:+stopped.toFixed(3)}); }
-          if (${Number(process.env.REPEAT_CYCLES||0)} && L==='vi' && bs.length) {
-            const b=box.querySelector('.song-seg-btn[data-seg="loop"][data-seg-id$="|vi"][data-seg-i="'+bs[0].dataset.segI+'"]');
+          if (${Number(process.env.REPEAT_CYCLES||0)} && (L==='vi' || ${process.env.REPEAT_ALL==='1'}) && bs.length) {
+            const b=box.querySelector('.song-seg-btn[data-seg="loop"][data-seg-id$="|'+L+'"][data-seg-i="'+bs[0].dataset.segI+'"]');
             const mark=info.marks[+b.dataset.segI];b.click();const starts=[];let prior=Infinity;
             const deadline=Date.now()+(${Number(process.env.REPEAT_CYCLES||0)}*(mark.e-mark.s+250)+40000);
             while(Date.now()<deadline&&starts.length<${Number(process.env.REPEAT_CYCLES||0)}) {

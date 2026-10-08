@@ -24,4 +24,5 @@ def apply_manual(proofs, root):
         proof['lines'] = lines
         proof['timingMethod'] = 'user_supplied_same_recording_line_boundaries'
         proof['timingSource'] = override['timingSource']
+        proof['manualChildrenOverride'] = override.get('applyLearnerChildren', True) and proof['src'] == 'pksjj'
         proof.pop('model', None)

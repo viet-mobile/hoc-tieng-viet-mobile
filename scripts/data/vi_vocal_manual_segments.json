@@ -65,13 +65,14 @@
         "s": 92000,
         "e": 101000
       }
-    ]
+    ],
+    "applyLearnerChildren": false
   },
   "46": {
     "mediaKey": "pub-pksjj_46_VIDEO",
     "checksum": "142ca4c422d2d0ce0672b516bf25a9b9",
     "format": "MP4",
-    "timingSource": "User-provided Vietnamese Kingdom song 41/46 timing table, 2026-10-08",
+    "timingSource": "User revised song 46 times and authorized identical times for learner-language children choirs, 2026-10-08",
     "lines": [
       {
         "text": "Lạy Cha Giê-hô-va, xin cám ơn Cha đêm ngày,",
@@ -91,11 +92,11 @@
       {
         "text": "hầu chúng con cùng trao mọi lo lắng cho ngài.",
         "s": 46000,
-        "e": 56000
+        "e": 57000
       },
       {
         "text": "Lạy Cha Giê-hô-va, xin cám ơn ban Con một,",
-        "s": 65000,
+        "s": 64000,
         "e": 75000
       },
       {
@@ -111,7 +112,7 @@
       {
         "text": "hầu chúng con làm theo lời thề ước dâng mình.",
         "s": 95000,
-        "e": 105000
+        "e": 106000
       },
       {
         "text": "Lạy Cha Giê-hô-va, xin cám ơn ban vinh dự",
@@ -133,6 +134,7 @@
         "s": 138000,
         "e": 152000
       }
-    ]
+    ],
+    "applyLearnerChildren": true
   }
 }
