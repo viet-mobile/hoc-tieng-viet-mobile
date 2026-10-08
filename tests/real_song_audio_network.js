@@ -37,9 +37,9 @@ const SONGS = process.env.SONGS ? process.env.SONGS.split(',').map(x => { const 
           const info=window.__songSeg.info['kingdom|${num}|'+L]; const bs=[...box.querySelectorAll('.song-seg-btn[data-seg="play"][data-seg-id$="|'+L+'"]')];
           const o={src:info?info.src:'none',reason:info?(info.marks?'':info.reason||(''+(info.marks&&info.marks.length)+' vs rows')):'no recording',buttons:bs.length,lines:[]};
           for (const k of (measured.includes('${num}|'+L) ? [] : [0,1,2])) { const b=bs[k]; if(!b) continue; const mark=info.marks[+b.dataset.segI];
-            b.click(); let started=0,stopped=0; const t0=Date.now();
-            while(Date.now()-t0<25000){ await sleep(30); const a=window.__songSeg.audio(); if(a&&!a.paused&&!started) { started=a.currentTime; if(${process.env.FAST_BOUNDARY === '1'}) a.currentTime=mark.e/1000-0.25; } if(started&&a.paused){stopped=a.currentTime;break;} }
-            o.lines.push({want:+(mark.s/1000).toFixed(3),end:+(mark.e/1000).toFixed(3),started:+started.toFixed(3),stopped:+stopped.toFixed(3)}); }
+            b.click(); let started=null,stopped=null; const t0=Date.now();
+            while(Date.now()-t0<25000){ await sleep(30); const a=window.__songSeg.audio(); if(a&&!a.paused&&started===null) { started=a.currentTime; if(${process.env.FAST_BOUNDARY === '1'}) a.currentTime=mark.e/1000-0.25; } if(started!==null&&a.paused){stopped=a.currentTime;break;} }
+            o.lines.push({want:+(mark.s/1000).toFixed(3),end:+(mark.e/1000).toFixed(3),started:started===null?null:+started.toFixed(3),stopped:stopped===null?null:+stopped.toFixed(3)}); }
           if (${Number(process.env.REPEAT_CYCLES||0)} && L==='vi' && bs.length) {
             const b=box.querySelector('.song-seg-btn[data-seg="loop"][data-seg-id$="|vi"][data-seg-i="'+bs[0].dataset.segI+'"]');
             const mark=info.marks[+b.dataset.segI];b.click();const starts=[];let prior=Infinity;
@@ -60,11 +60,11 @@ const SONGS = process.env.SONGS ? process.env.SONGS.split(',').map(x => { const 
         if (o.buttons === 0) continue;
         if (/^(sjjm|sjji)$/.test(o.src)) { bad++; console.log('  FAIL: a non-vocal source', L, o.src); }
         if(o.repeat && (o.repeat.starts.length!==Number(process.env.REPEAT_CYCLES)||!o.repeat.stopped||o.repeat.starts.some(x=>Math.abs(x-o.repeat.want)>.1))){bad++;console.log('FAIL repeat',o.repeat);}
-        const starts = o.lines.map(x => x.started);
+        const starts = o.lines.map(x => x.started===null ? -1 : x.started);
         if (new Set(starts.map(x => x.toFixed(1))).size !== o.lines.length) { bad++; console.log('  FAIL: lines 1/2/3 do not start at three different parts', L, starts); }
         for (const x of o.lines) {
-          if (x.started < 0.5 || Math.abs(x.started - x.want) > 0.1) { bad++; console.log('  FAIL: start', L, x); }
-          if (Math.abs(x.stopped - x.end) > 0.25) { bad++; console.log('  FAIL: end', L, x); }
+          if (x.started === null || Math.abs(x.started - x.want) > 0.1) { bad++; console.log('  FAIL: start', L, x); }
+          if (x.stopped === null || Math.abs(x.stopped - x.end) > 0.25) { bad++; console.log('  FAIL: end', L, x); }
         }
       }
     }
