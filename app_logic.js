@@ -10156,12 +10156,21 @@ function verifyDistribution(units, dist, pins) {
       }
       return sources;
     }
+    // 오리지널 송 / 어린이 노래: the publication and track of the song's own jw.org media key (the data's link), e.g. pk-special-0 is pub-pk_3_*
+    var own = /^pub-([a-z]+)_(\d+)_(?:VIDEO|AUDIO)$/.exec(songSegMediaKeyOf(kind, k, lang) || "");
+    if (own && (kind === "original" || kind === "children")) return [[own[1], parseInt(own[2], 10)]];
     if (kind === "original" && (m = /^osg-(\d+)$/.exec(k))) return [["osg", parseInt(m[1], 10)]];
     if (kind === "children") {
       if ((m = /^pkon-(\d+)$/.exec(k))) return [["pkon", parseInt(m[1], 10)]];
-      if (k === "pk-special-0") return [["pk", 0]];
     }
     return null;
+  }
+  // The jw.org media key the song's data holds for a language (its VIDEO as a rule), "" when none
+  function songSegMediaKeyOf(kind, key, lang) {
+    if (kind === "kingdom") return "";
+    var song = songKindData(kind).filter(function (x) { return String(x.id) === String(key); })[0];
+    var media = song && song.media, m = media && (media[lang] || media.vi || media.ko);
+    return m && m.mediaKey ? String(m.mediaKey) : "";
   }
   function songSegTime(t) {
     var m = /^(\d+):(\d+):(\d+(?:\.\d+)?)$/.exec(String(t || ""));
@@ -10179,6 +10188,7 @@ function verifyDistribution(units, dist, pins) {
       marks.push({ s: st, e: st + du, m: i, pid: pid }); durs.push(du);
     }
     if (!marks.length) return { marks: null, reason: "no sung marker", nonVocal: mk.length };
+    if (marks[0].s === 0 && marks[0].e - marks[0].s < 1500) return { marks: null, reason: "markers not timed to this recording (first line at 0:00, under 1.5 s)", nonVocal: mk.length - marks.length };
     // a span far longer than the song's other lines holds an interlude or the outro besides its words: that line gets no button (the
     // others keep theirs: their spans are the official ones), never a shortened guess of where the voice stops
     durs.sort(function (x, y) { return x - y; });
@@ -10204,7 +10214,7 @@ function verifyDistribution(units, dist, pins) {
   function songSegText(t) { return String(t || "").normalize("NFC").replace(/[‘’]/g, "\'").replace(/[“”]/g, '"').replace(/^\s*\d+[.．。]\s*/, "").replace(/\s+/g, " ").trim(); }
   function songSegVideo(key, code) {
     code = code || "VT";
-    if (!/^pub-(?:sjjc|pksjj|osg|jwbon|jwbcov[0-9]+)_[0-9_]+_VIDEO$/.test(key)) return Promise.reject(new Error("invalid vocal video key"));
+    if (!/^pub-(?:sjjc|pksjj|osg|pkon|pk|jwbon|jwbcov[0-9]+)_[0-9_]+_VIDEO$/.test(key)) return Promise.reject(new Error("invalid vocal video key"));
     return fetch("https://b.jw-cdn.org/apis/mediator/v1/media-items/" + code + "/" + key + "?clientType=www", { credentials: "omit" })
       .then(function (res) { if (res.status === 404) return null; if (!res.ok) throw new Error("video request failed"); return res.json(); })
       .then(function (j) {
@@ -10216,6 +10226,106 @@ function verifyDistribution(units, dist, pins) {
         if (!file || !/^https:\/\/[a-z0-9.-]+\.jw-cdn\.org\//.test(file.progressiveDownloadURL)) throw new Error("invalid vocal video file");
         return file;
       });
+  }
+  // The official lyric cues of a song VIDEO: jw.org's own WebVTT subtitles of that recording, {s, e, lines} per cue (a cue may hold two
+  // lines of the text). Played with that video's own audio (progressiveDownloadURL), never transferred to the MP3.
+  function songSegVttCues(vtt) {
+    var out = [], blocks = String(vtt || "").replace(/\r/g, "").split(/\n\n+/);
+    for (var i = 0; i < blocks.length; i++) {
+      var lines = blocks[i].split("\n"), t = -1, m;
+      for (var j = 0; j < lines.length; j++) { if ((m = /^(\d{2}):(\d{2}):(\d{2}\.\d{3})\s*-->\s*(\d{2}):(\d{2}):(\d{2}\.\d{3})/.exec(lines[j]))) { t = j; break; } }
+      if (t < 0) continue;
+      var st = Math.round((parseInt(m[1], 10) * 3600 + parseInt(m[2], 10) * 60 + parseFloat(m[3])) * 1000);
+      var en = Math.round((parseInt(m[4], 10) * 3600 + parseInt(m[5], 10) * 60 + parseFloat(m[6])) * 1000);
+      var texts = lines.slice(t + 1).map(function (x) { return x.replace(/<[^>]*>/g, "").trim(); }).filter(Boolean);
+      if (texts.length && en > st) out.push({ s: st, e: en, lines: texts });
+    }
+    return out;
+  }
+  function songSegCuesOf(kind, key, lang, code) {
+    var vkey = songSegMediaKeyOf(kind, key, lang);
+    if (!/_VIDEO$/.test(vkey)) return Promise.resolve(null);
+    return songSegVideo(vkey, code).then(function (file) {
+      var sub = file && file.subtitles && file.subtitles.url;
+      if (!sub || !/^https:\/\/[a-z0-9.-]+\.jw-cdn\.org\//.test(file.progressiveDownloadURL)) return null;
+      return fetch(sub, { credentials: "omit" }).then(function (res) { return res.ok ? res.text() : ""; }).then(function (vtt) {
+        var cues = songSegVttCues(vtt);
+        return cues.length ? { key: vkey, url: file.progressiveDownloadURL, checksum: file.checksum, duration: file.duration, cues: cues } : null;
+      });
+    }).catch(function () { return null; });
+  }
+  // Which timing a line gets (오리지널 송 / 어린이 노래), given the recording's MP3 markers and the video's official cues, for `rows` lines:
+  //   - the MP3's own markers when they are one per line AND, where the cues can be compared (as many cue lines as lines), their spans agree
+  //     with the cues' (a marker set that was never timed to this recording -- 어린이 노래 35: "lines" of 1-2 s from 0:00 -- is dropped);
+  //   - else the video's cues, played from the video's audio: a cue of one line is that line's part; the lines a cue holds together get no
+  //     button (their own boundaries are not official data), and a cue whose words differ from the text carries them (vocalText).
+  function songSegCuesAgree(marks, cues) {
+    var k = 0, rel = [];
+    for (var i = 0; i < cues.length; i++) {
+      var n = cues[i].lines.length, a = marks[k], b = marks[k + n - 1];
+      if (!a || !b) return false;
+      var span = b.e - a.s, dur = cues[i].e - cues[i].s;
+      rel.push(Math.abs(span - dur) / Math.max(dur, 1)); k += n;
+    }
+    rel.sort(function (x, y) { return x - y; });
+    return rel.length ? rel[Math.floor(rel.length / 2)] <= 0.25 : false;
+  }
+  // Lines of the page <-> lines of the video's cues, in order, by their words (NFC, case and punctuation ignored, a verse number dropped):
+  //   a page line = 1..3 consecutive cue lines (the subtitle split it)      -> its part spans those cues
+  //   a cue line  = 2..3 consecutive page lines (the subtitle joined them)  -> each of those lines plays that whole cue (no finer official data)
+  //   a page line and a cue line whose words differ, between exact matches  -> that cue's part, and the cue's words are shown (vocalText)
+  //   anything else                                                        -> no button
+  // Returns marks[] (one per page line, null = no button) with .ok / .sub / .grouped counts, or null when nothing aligns.
+  function songSegNormText(t) { return String(t || "").normalize("NFC").toLowerCase().replace(/^\s*\d+[.．。]\s*/, "").replace(/[^\p{L}\p{N}]/gu, ""); }
+  function songSegAlignCues(rowTexts, cues) {
+    var cl = [], i, j, k;
+    for (i = 0; i < cues.length; i++) for (j = 0; j < cues[i].lines.length; j++) cl.push({ s: cues[i].s, e: cues[i].e, text: cues[i].lines[j], c: i, n: cues[i].lines.length });
+    var R = rowTexts.map(songSegNormText), C = cl.map(function (x) { return songSegNormText(x.text); }), n = R.length, m = C.length;
+    if (!n || !m) return null;
+    var NEG = -1e9, best = [], back = [];
+    for (i = 0; i <= n; i++) { best.push([]); back.push([]); for (j = 0; j <= m; j++) { best[i].push(NEG); back[i].push(null); } }
+    best[0][0] = 0;
+    for (i = 0; i <= n; i++) for (j = 0; j <= m; j++) {
+      if (best[i][j] === NEG) continue;
+      var b = best[i][j], cat;
+      for (k = 1; k <= 3 && i < n && j + k <= m; k++) {   // one page line = k cue lines
+        cat = C.slice(j, j + k).join("");
+        if (cat && cat === R[i] && b + 2 > best[i + 1][j + k]) { best[i + 1][j + k] = b + 2; back[i + 1][j + k] = ["M", i, j, k]; }
+      }
+      for (k = 2; k <= 3 && i + k <= n && j < m; k++) {   // one cue line = k page lines
+        cat = R.slice(i, i + k).join("");
+        if (cat && cat === C[j] && b + 1 > best[i + k][j + 1]) { best[i + k][j + 1] = b + 1; back[i + k][j + 1] = ["G", i, j, k]; }
+      }
+      if (i < n && j < m && R[i] !== C[j] && b - 1 > best[i + 1][j + 1]) { best[i + 1][j + 1] = b - 1; back[i + 1][j + 1] = ["S", i, j, 1]; }
+    }
+    if (best[n][m] === NEG) return null;
+    var out = [], kind = [];
+    for (i = 0; i < n; i++) { out.push(null); kind.push(""); }
+    i = n; j = m;
+    while (i > 0 || j > 0) {
+      var st = back[i][j]; if (!st) return null;
+      var typ = st[0], pi = st[1], pj = st[2], kk = st[3];
+      if (typ === "M") { out[pi] = { s: cl[pj].s, e: cl[pj + kk - 1].e, m: cl[pj].c }; kind[pi] = "ok"; }
+      else if (typ === "G") { for (k = 0; k < kk; k++) { out[pi + k] = { s: cl[pj].s, e: cl[pj].e, m: cl[pj].c, group: kk }; kind[pi + k] = "grouped"; } }
+      else { out[pi] = { s: cl[pj].s, e: cl[pj].e, m: cl[pj].c, text: cl[pj].text }; kind[pi] = "sub"; }
+      i = pi; j = pj;
+    }
+    var res = { marks: out, ok: 0, sub: 0, grouped: 0, unsure: 0 };
+    for (i = 0; i < n; i++) {   // words that differ are trusted only between exact matches (or at an edge next to one)
+      if (kind[i] === "sub" && !((i === 0 || kind[i - 1] === "ok") && (i === n - 1 || kind[i + 1] === "ok"))) { out[i] = null; kind[i] = "unsure"; }
+      res[kind[i] || "unsure"]++;
+    }
+    return res.ok + res.sub + res.grouped ? res : null;
+  }
+  function songSegPickTiming(info, rowTexts) {
+    if (!info || !info.video || !info.video.cues) return info;
+    var rows = rowTexts.length, cues = info.video.cues, total = 0;
+    for (var i = 0; i < cues.length; i++) total += cues[i].lines.length;
+    var mp3ok = !!(info.marks && info.marks.length === rows);
+    if (mp3ok && (total !== rows || songSegCuesAgree(info.marks, cues))) return info;   // the MP3's own markers, one per line: the finer official data
+    var al = songSegAlignCues(rowTexts, cues);
+    if (!al) return info;
+    return { src: info.src, mediaKey: info.video.key, url: info.video.url, marks: al.marks, reason: "", nonVocal: 0, timing: "video-cues", counts: al, mp3Rejected: mp3ok, video: info.video };
   }
   // Vietnamese source-backed video/voice alignment; explicit user-approved children overrides resolve separately.
   // Check both general choir media before asking for children; a failed request is not evidence of absence.
@@ -10314,7 +10424,15 @@ function verifyDistribution(units, dist, pins) {
         return { src: pub, mediaKey: mediaKey, url: f.file.url, marks: parsed.marks, reason: parsed.reason, nonVocal: parsed.nonVocal || 0 };
       });
     }
-    songSegAsk[id] = next().catch(function () { return { marks: null, reason: "source request failed; fallback not authorized by absence" }; }).then(function (info) { songSegInfo[id] = info; return info; });
+    var cuesP = kind === "kingdom" ? Promise.resolve(null) : songSegCuesOf(kind, key, lang, loc[0]);
+    songSegAsk[id] = Promise.all([next().catch(function () { return { marks: null, reason: "source request failed; fallback not authorized by absence" }; }), cuesP]).then(function (both) {
+      var info = both[0], video = both[1];
+      if (kind !== "kingdom") {
+        if (!info && video) info = { src: pubs[0][0], mediaKey: "", url: "", marks: null, reason: "no recording with markers", nonVocal: 0 };
+        if (info) info.video = video;
+      }
+      songSegInfo[id] = info; return info;
+    });
     return songSegAsk[id];
   }
   var songSeg = { audio: null, token: 0, btn: null, loop: false, raf: 0, timer: 0, url: "", cleanups: [] };
@@ -10446,11 +10564,41 @@ function verifyDistribution(units, dist, pins) {
     if (words(mark.text) === words(mark.vocalText)) return "";
     return '<div class="song-children-lyric vn" lang="vi">(' + escapeHtml(mark.vocalText) + ')</div>';
   }
+  // The words of a cue when they differ from the line on screen (the recording sings other words): shown under the line in parentheses
+  function songSegCueLyricHtml(lang, rowText, cueText) {
+    if (!cueText) return "";
+    function words(t) { return String(t || "").normalize("NFC").toLowerCase().replace(/^\s*\d+[.．。]\s*/, "").replace(/[^\p{L}\p{N}]/gu, ""); }
+    if (words(rowText) === words(cueText)) return "";
+    return '<div class="song-children-lyric' + (lang === "vi" ? " vn" : "") + '" lang="' + escapeAttr(lang) + '">(' + escapeHtml(cueText) + ')</div>';
+  }
+  // 오리지널 송 / 어린이 노래, a learner language whose recording has official markers but not one per line on screen (a line the recording
+  // does not sing apart, a label the text has as a line ...): the other language on screen (Vietnamese for a learner language, the learner
+  // language for Vietnamese), when its markers are exactly one per line, tells which official PARAGRAPH (mepsParagraphId, the same text
+  // structure in every language) each line is; the language's OWN marker of that paragraph is then the line's part (its own recording's
+  // time, never the other language's time). A line whose paragraph the recording has no marker for, or whose marker is far longer or
+  // shorter than the reference one (two lines sung as one), gets no button. Returns the aligned marks (null = no button) or null.
+  var SONG_SEG_ALIGN_TOL = 0.25, SONG_SEG_ALIGN_TOL_MIN_MS = 400;
+  function songSegAlignByParagraph(viInfo, viRows, info, rows) {
+    if (!viInfo || !viInfo.marks || !info || !info.marks || viInfo.marks.length !== viRows || rows !== viRows) return null;
+    var byPid = {}, seen = {}, i;
+    for (i = 0; i < info.marks.length; i++) { var pid = info.marks[i].pid; if (byPid[pid]) return null; byPid[pid] = info.marks[i]; }   // ambiguous: no
+    for (i = 0; i < viInfo.marks.length; i++) { if (seen[viInfo.marks[i].pid]) return null; seen[viInfo.marks[i].pid] = 1; }
+    var out = [], n = 0, withheld = [];
+    for (i = 0; i < viInfo.marks.length; i++) {
+      var v = viInfo.marks[i], m = byPid[v.pid], dv = v.e - v.s;
+      if (!m || Math.abs((m.e - m.s) - dv) > Math.max(SONG_SEG_ALIGN_TOL_MIN_MS, dv * SONG_SEG_ALIGN_TOL)) { out.push(null); withheld.push(i + 1); continue; }
+      out.push(m); n++;
+    }
+    return n ? { marks: out, aligned: n, withheld: withheld } : null;
+  }
   // Adds ▶ ↻ to the lines of one song box ([data-seg-kind][data-seg-key]); the box has the rows .lyric-vi-row / .lyric-target-row.
   function songSegEnhance(box) {
     box.setAttribute("data-seg-state", "1");
     var kind = box.getAttribute("data-seg-kind"), key = box.getAttribute("data-seg-key");
     var tl = box.getAttribute("data-seg-tl");   // "" = no target language row has its own language's lines
+    var rowCount = { vi: 0 };
+    box.querySelectorAll(".lyric-vi-row .lyric-vi").forEach(function (t) { if (songSegSingable(t.textContent)) rowCount.vi++; });
+    if (tl) { rowCount[tl] = 0; box.querySelectorAll(".lyric-target-row .lyric-target").forEach(function (t) { if (songSegSingable(t.textContent)) rowCount[tl]++; }); }
     [["vi", ".lyric-vi-row", ".lyric-vi"], [tl, ".lyric-target-row", ".lyric-target"]].forEach(function (L) {
       var lang = L[0];
       if (!lang) return;
@@ -10460,7 +10608,34 @@ function verifyDistribution(units, dist, pins) {
         if (t && songSegSingable(t.textContent)) rows.push(row);
       });
       if (!rows.length) return;
-      songSegResolve(kind, key, lang).then(function (info) {
+      var ask = songSegResolve(kind, key, lang), ref = lang === "vi" ? tl : "vi";   // the other language on screen is the reference
+      var rowTexts = rows.map(function (row) { return row.querySelector(L[2]).textContent; });
+      if (kind !== "kingdom") ask = ask.then(function (info) {
+        var picked = songSegPickTiming(info, rowTexts);
+        if (picked !== info) {
+          var c = picked.counts;
+          songSegLog(kind + " " + key + " " + lang + ": official video cues (" + picked.mediaKey + ")" + (picked.mp3Rejected ? ", the MP3 markers disagree with them and are dropped" : "") +
+            ": " + c.ok + " lines match, " + c.sub + " with other words (shown), " + c.grouped + " inside a cue of several lines, " + c.unsure + " without a button");
+          songSegInfo[kind + "|" + key + "|" + lang] = picked;
+        }
+        return picked;
+      });
+      var refTexts = [];
+      if (ref) box.querySelectorAll(ref === "vi" ? ".lyric-vi-row .lyric-vi" : ".lyric-target-row .lyric-target").forEach(function (t) { if (songSegSingable(t.textContent)) refTexts.push(t.textContent); });
+      if (kind !== "kingdom" && ref && rowCount[ref]) ask = Promise.all([ask, songSegResolve(kind, key, ref)]).then(function (both) {
+        var info = both[0], refInfo = songSegPickTiming(both[1], refTexts);
+        if (refInfo && (!refInfo.marks || refInfo.marks.length !== rowCount[ref] || refInfo.timing)) refInfo = null;   // only a reference with its own MP3 markers, one per line
+        if (info && info.marks && info.marks.length !== rows.length) {
+          var al = songSegAlignByParagraph(refInfo, rowCount[ref], info, rows.length);
+          if (al) {
+            songSegLog(kind + " " + key + " " + lang + " " + info.src + ": " + al.aligned + " of " + rows.length + " lines by paragraph id (the " + ref + " recording's line order), own markers" + (al.withheld.length ? "; no button for line " + al.withheld.join(", ") : ""));
+            info = { src: info.src, mediaKey: info.mediaKey, url: info.url, marks: al.marks, reason: "", nonVocal: info.nonVocal, alignedBy: "paragraph-id" };
+            songSegInfo[kind + "|" + key + "|" + lang] = info;
+          }
+        }
+        return info;
+      });
+      ask.then(function (info) {
         if (!box.isConnected) return;
         if (!info) { songSegLog(kind + " " + key + " " + lang + ": no sung recording"); return; }
         if (!info.marks || info.marks.length !== rows.length) {   // the counts must agree exactly: otherwise no button
@@ -10472,12 +10647,13 @@ function verifyDistribution(units, dist, pins) {
         })) { songSegLog(kind + " " + key + " " + lang + ": official paragraph text differs from rendered lyric"); return; }
         var id = kind + "|" + key + "|" + lang, srcLabel = info.src === "pksjj" ? "CHILDREN" : "VOCALS";
         rows.forEach(function (row, i) {
-          var alternate = songChildrenLyricHtml(kind, lang, info, info.marks[i]);
+          var alternate = kind === "kingdom" ? songChildrenLyricHtml(kind, lang, info, info.marks[i]) : songSegCueLyricHtml(lang, row.querySelector(L[2]).textContent, info.marks[i] && info.marks[i].text);
           if (alternate && !row.parentElement.querySelector(".song-children-lyric")) row.insertAdjacentHTML("afterend", alternate);
           if (row.querySelector(".song-seg-btn")) return;
+          if (!info.marks[i]) return;   // a line aligned by paragraph id that has no marker of its own
           if (kind === "kingdom" && !info.marks[i].enabled) return;
           if (info.marks[i].long) { songSegLog(kind + " " + key + " " + lang + " line " + (i + 1) + ": no button, its span holds an interlude / the outro (" + info.marks[i].long + " s)"); return; }
-          var common = ' data-seg-id="' + escapeAttr(id) + '" data-seg-i="' + i + '" data-seg-src="' + info.src + '" data-seg-key="' + escapeAttr(info.mediaKey) + '" data-seg-m="' + info.marks[i].m + '"' +
+          var common = ' data-seg-id="' + escapeAttr(id) + '" data-seg-i="' + i + '" data-seg-src="' + info.src + '" data-seg-key="' + escapeAttr(info.mediaKey) + '" data-seg-m="' + info.marks[i].m + '"' + (info.marks[i].group ? ' data-seg-group="' + info.marks[i].group + '"' : '') +
             (speechDebugOn ? ' title="' + srcLabel + " " + escapeAttr(info.mediaKey) + '"' : '');
           row.insertAdjacentHTML("beforeend",
             '<button type="button" class="song-seg-btn" data-seg="play"' + common + ' aria-label="' + escapeAttr(TU("실제 노래 소절 듣기")) + '">▶</button>' +

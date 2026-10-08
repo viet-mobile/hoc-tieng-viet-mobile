@@ -42,7 +42,7 @@ const SONGS = process.env.SONGS ? process.env.SONGS.split(',').map(x => { const 
           for (const k of (measured.includes('${num}|'+L) ? [] : ${process.env.ALL_LINES==='1' ? 'bs.map((_,i)=>i)' : '[0,1,2]'})) { const b=bs[k]; if(!b) continue; const mark=info.marks[+b.dataset.segI];
             b.click(); let started=null,stopped=null; const t0=Date.now();
             while(Date.now()-t0<25000){ await sleep(30); const a=window.__songSeg.audio(); if(a&&!a.paused&&started===null) { started=a.currentTime; if(${process.env.FAST_BOUNDARY === '1'}) a.currentTime=mark.e/1000-0.25; } if(started!==null&&a.paused){stopped=a.currentTime;break;} }
-            o.lines.push({want:+(mark.s/1000).toFixed(3),end:+(mark.e/1000).toFixed(3),started:started===null?null:+started.toFixed(3),stopped:stopped===null?null:+stopped.toFixed(3)}); }
+            o.lines.push({want:+(mark.s/1000).toFixed(3),end:+(mark.e/1000).toFixed(3),started:started===null?null:+started.toFixed(3),stopped:stopped===null?null:+stopped.toFixed(3),cue:mark.m,timing:info.timing||'mp3-markers'}); }
           if (${Number(process.env.REPEAT_CYCLES||0)} && (L==='vi' || ${process.env.REPEAT_ALL==='1'}) && bs.length) {
             const b=box.querySelector('.song-seg-btn[data-seg="loop"][data-seg-id$="|'+L+'"][data-seg-i="'+bs[0].dataset.segI+'"]');
             const mark=info.marks[+b.dataset.segI];b.click();const starts=[];let prior=Infinity;
@@ -64,7 +64,9 @@ const SONGS = process.env.SONGS ? process.env.SONGS.split(',').map(x => { const 
         if (/^(sjjm|sjji)$/.test(o.src)) { bad++; console.log('  FAIL: a non-vocal source', L, o.src); }
         if(o.repeat && (o.repeat.starts.length!==Number(process.env.REPEAT_CYCLES)||!o.repeat.stopped||o.repeat.starts.some(x=>Math.abs(x-o.repeat.want)>.1))){bad++;console.log('FAIL repeat',o.repeat);}
         const starts = o.lines.map(x => x.started===null ? -1 : x.started);
-        if (new Set(starts.map(x => x.toFixed(1))).size !== o.lines.length) { bad++; console.log('  FAIL: lines 1/2/3 do not start at three different parts', L, starts); }
+        // lines sung inside one subtitle cue of the video share that cue's part (same cue index): equal starts are right there
+        const distinct = new Set(o.lines.map(x => x.timing === 'video-cues' ? 'cue' + x.cue : x.started.toFixed(1))).size;
+        if (distinct !== new Set(o.lines.map(x => x.timing === 'video-cues' ? 'cue' + x.cue : x.want)).size) { bad++; console.log('  FAIL: lines 1/2/3 do not start at their own parts', L, starts); }
         for (const x of o.lines) {
           if (x.started === null || Math.abs(x.started - x.want) > 0.1) { bad++; console.log('  FAIL: start', L, x); }
           if (x.stopped === null || Math.abs(x.stopped - x.end) > 0.25) { bad++; console.log('  FAIL: end', L, x); }

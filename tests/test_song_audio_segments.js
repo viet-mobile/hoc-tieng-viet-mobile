@@ -54,10 +54,32 @@ const MOCK = `(() => {
   const SING = t => { t = String(t || '').trim(); return !!t && !/^\\s*(\\(.*\\)|（.*）|[\\[【].*[\\]】]|\\d+\\s*[.．。]?|[※＊*].*)\\s*$/.test(t); };
   // cfg.none['pub:track:code'] = that recording does not exist; cfg.skew[...] = +n sung markers; cfg.noMarkers[...]; cfg.interlude[...] = one
   // line holds a 40 s interlude; cfg.seekTo = where a seek lands instead of its target (a broken seek); cfg.nomarks99 = no pid-99 markers
-  const cfg = window.__segCfg = {none: {}, skew: {}, noMarkers: {}, interlude: {}, outro99: {}, seekTo: null, dur: 0.4, step: 0.5};
+  const cfg = window.__segCfg = {none: {}, skew: {}, noMarkers: {}, interlude: {}, outro99: {}, dropPid: {}, doubleLine: {}, mp3Zero: {}, video: {}, seekTo: null, dur: 0.4, step: 0.5};
   const realFetch = window.fetch.bind(window);
   window.fetch = function (u, o) {
-    if(String(u).includes('/apis/mediator/')) return Promise.resolve({ok:true,status:200,json:()=>Promise.resolve({media:[]})});
+    if(String(u).includes('/apis/mediator/')) {
+      const mm = /media-items\\/(\\w+)\\/(pub-[a-z0-9_]+_VIDEO)/.exec(String(u)), v = mm && cfg.video[mm[2] + ':' + mm[1]];
+      if (!v) return Promise.resolve({ok:true,status:200,json:()=>Promise.resolve({media:[]})});
+      const [, code, key] = mm;
+      return Promise.resolve({ok:true,status:200,json:()=>Promise.resolve({language:{languageCode:code},media:[{languageAgnosticNaturalKey:key,naturalKey:key+'_'+code+'_r360P',title:'t',duration:300,
+        files:[{label:'360p',mimetype:'video/mp4',checksum:'vid1',duration:300,progressiveDownloadURL:'https://cfp2.jw-cdn.org/v/'+key+'_'+code+'.mp4',subtitles:v.vtt?{url:'https://cfp2.jw-cdn.org/vtt/'+key+'/'+code+'.vtt'}:null}]}]})});
+    }
+    if(String(u).includes('/vtt/')) {
+      const mm = /vtt\\/(pub-[a-z0-9_]+_VIDEO)\\/(\\w+)\\.vtt/.exec(String(u)), v = cfg.video[mm[1] + ':' + mm[2]], key = mm[1], code = mm[2];
+      const pub = key.split('_')[0].slice(4), track = key.split('_')[1];
+      const kind = pub === 'osg' ? 'original' : 'children', bkey = pub === 'osg' ? 'osg-' + track : pub === 'pkon' ? 'pkon-' + track : 'pk-special-0';
+      const box = document.querySelector('[data-seg-kind="' + kind + '"][data-seg-key="' + bkey + '"]');
+      const sel = code === 'VT' ? '.lyric-vi-row .lyric-vi' : '.lyric-target-row .lyric-target';
+      const texts = box ? [...box.querySelectorAll(sel)].filter(e => SING(e.textContent)).map(e => e.textContent.trim()) : [];
+      const f = x => { const h = Math.floor(x / 3600), mi = Math.floor(x % 3600 / 60), s = x % 60; return String(h).padStart(2, '0') + ':' + String(mi).padStart(2, '0') + ':' + s.toFixed(3).padStart(6, '0'); };
+      let t = v.start, out = 'WEBVTT\\r\\n\\r\\n', i = 0;
+      while (i < texts.length) { const g = (v.groups || []).find(g => g[0] === i); const n = g ? g.length : 1; const lines = texts.slice(i, i + n).map((x, k) => (v.alter || {})[i + k] || x);
+        if ((v.split || []).includes(i)) { const w = lines[0].split(' '), h = Math.ceil(w.length / 2);   // the subtitle shows this page line as two cues
+          out += f(t) + ' --> ' + f(t + v.dur) + ' line:90% position:50% align:center\\r\\n' + w.slice(0, h).join(' ') + '\\r\\n\\r\\n'; t += v.dur + 0.1;
+          out += f(t) + ' --> ' + f(t + v.dur) + ' line:90% position:50% align:center\\r\\n' + w.slice(h).join(' ') + '\\r\\n\\r\\n'; t += v.dur + 0.1; i += 1; continue; }
+        out += f(t) + ' --> ' + f(t + v.dur * n) + ' line:90% position:50% align:center\\r\\n' + lines.join('\\r\\n') + '\\r\\n\\r\\n'; t += v.dur * n + 0.1; i += n; }
+      return Promise.resolve({ok:true,status:200,text:()=>Promise.resolve(out)});
+    }
     const m = /pub-media\\/GETPUBMEDIALINKS.*pub=(\\w+)&track=(\\d+)&langwritten=(\\w+)/.exec(String(u));
     if (!m) return realFetch(u, o);
     const [, pub, track, code] = m, key = pub + ':' + track + ':' + code;
@@ -75,11 +97,12 @@ const MOCK = `(() => {
     let markers = null;
     const hasMarkers = pub === 'pksjj' ? !!cfg.pksjjMarkers : !cfg.noMarkers[key];
     if (hasMarkers) {
-      const cnt = n + (cfg.skew[key] || 0); markers = []; let t = 1 + (pub === 'sjjm' ? 100 : 0);   // sjjm times are far away: a wrong source is visible
+      const cnt = n + (cfg.skew[key] || 0); markers = []; let t = cfg.mp3Zero[key] ? 0 : 1 + (pub === 'sjjm' ? 100 : 0);   // sjjm times are far away: a wrong source is visible
       for (let i = 0; i < cnt; i++) {
         if (i === 2 && !cfg.nomarks99 && kind === 'kingdom') { markers.push({startTime: f(t), duration: f(3), mepsParagraphId: 99}); t += 3; }   // an interlude (non-vocal) between line 2 and 3
-        const d = (cfg.interlude[key] && i === 1) ? 40 : cfg.dur;
-        markers.push({startTime: f(t), duration: f(d), mepsParagraphId: 4 + i}); t += d; t = Math.round((t + (cfg.step - cfg.dur)) * 1000) / 1000;
+        const d = (cfg.interlude[key] && i === 1) ? 40 : (cfg.doubleLine[key] === i ? cfg.dur * 2.2 : cfg.dur);
+        if (cfg.dropPid[key] !== 4 + i) markers.push({startTime: f(t), duration: f(d), mepsParagraphId: 4 + i});   // dropPid: the recording has no marker of that paragraph
+        t += d; t = Math.round((t + (cfg.step - cfg.dur)) * 1000) / 1000;
       }
       if (kind === 'kingdom' || cfg.outro99[key]) markers.push({startTime: f(t), duration: f(2), mepsParagraphId: 99});   // the outro
     }
@@ -126,7 +149,10 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
     await cdp.connect(); await cdp.send('Runtime.enable'); await cdp.send('Page.enable'); await cdp.send('Network.enable');
     await cdp.send('Emulation.setDeviceMetricsOverride', {width: 1000, height: 1000, deviceScaleFactor: 1, mobile: false});
     await cdp.send('Network.setUserAgentOverride', {userAgent: UA});
-    await cdp.send('Page.addScriptToEvaluateOnNewDocument', {source: engine(true) + "Object.defineProperty(window, 'KINGDOM_VI_VOCAL_SOURCE_MAP', {get(){return null;},set(){},configurable:true});" + MOCK});
+    // the data's user-supplied children tables (manualChildrenOverride) go through jw.org's mediator, which this mock does not serve: they are
+    // dropped here so the kingdom cases exercise the shared source / marker / player logic with the mock's own proofs
+    await cdp.send('Page.addScriptToEvaluateOnNewDocument', {source: engine(true) + "Object.defineProperty(window, 'KINGDOM_VI_VOCAL_SOURCE_MAP', {get(){return null;},set(){},configurable:true});" +
+      "(function(){var store={};Object.defineProperty(window,'KINGDOM_VOCAL_SEGMENTS',{get(){return store;},set(v){for(var k in v){if(!v[k].manualChildrenOverride)store[k]=v[k];}},configurable:true});})();" + MOCK});
     const errs = [];
     cdp.on('Runtime.exceptionThrown', e => errs.push('exception ' + e.exceptionDetails.text + ' ' + ((e.exceptionDetails.exception || {}).description || '').slice(0, 160)));
     const E = async expr => { const r = await cdp.send('Runtime.evaluate', {expression: expr, awaitPromise: true, returnByValue: true, userGesture: true}); if (r.exceptionDetails) errs.push('eval ' + ((r.exceptionDetails.exception || {}).description || '').slice(0, 200)); return r.result.value; };
@@ -219,8 +245,10 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
     // source priority and the fail-closed cases, each on a fresh page (a recording is resolved once per page)
     const CASES = [
       ['pksjj fallback with markers', "window.__segCfg.none['sjjc:1:VT']=true;window.__segCfg.pksjjMarkers=true;", q => ok(q.vi > 0 && q.viSrc === 'pksjj/pub-pksjj_1_AUDIO' && q.koSrc === 'sjjc/pub-sjjc_1_AUDIO' && q.fetched.includes('pksjj:1:VT') && !q.fetched.includes('pksjj:1:KO'), `no VOCALS in Vietnamese -> the CHILDREN recording, Korean keeps VOCALS; the children's one is only asked for when needed ${JSON.stringify(q)}`)],
-      ['pksjj fallback without markers (as on jw.org)', "window.__segCfg.none['sjjc:1:VT']=true;", q => ok(q.vi === 0 && q.ko > 0 && q.fetched.includes('pksjj:1:VT'), `the children's recording without markers gives no Vietnamese button, no timing is guessed ${JSON.stringify(q)}`)],
-      ['no vocal recording at all', "window.__segCfg.none['sjjc:1:VT']=true;window.__segCfg.none['pksjj:1:VT']=true;", q => ok(q.vi === 0 && q.ko > 0 && !q.fetched.some(x => x.startsWith('sjjm')), `no sung recording -> no button (the Meetings edition is not used instead) ${JSON.stringify(q)}`)],
+      // (the Korean row is not asserted in the next two cases: once Vietnamese falls to the children's recording, the learner languages follow the
+      // user-authorized children-choir tables, which this mock does not serve)
+      ['pksjj fallback without markers (as on jw.org)', "window.__segCfg.none['sjjc:1:VT']=true;", q => ok(q.vi === 0 && q.fetched.includes('pksjj:1:VT'), `the children's recording without markers gives no Vietnamese button, no timing is guessed ${JSON.stringify(q)}`)],
+      ['no vocal recording at all', "window.__segCfg.none['sjjc:1:VT']=true;window.__segCfg.none['pksjj:1:VT']=true;", q => ok(q.vi === 0 && !q.fetched.some(x => x.startsWith('sjjm')), `no sung recording -> no button (the Meetings edition is not used instead) ${JSON.stringify(q)}`)],
       ['marker count off by one', "window.__segCfg.skew['sjjc:1:KO']=1;", q => ok(q.vi > 0 && q.ko === 0, `one sung marker too many in Korean -> no Korean button, no trimming ${JSON.stringify(q)}`)],
       ['a line that holds an interlude', "window.__segCfg.interlude['sjjc:1:KO']=true;", q => ok(q.vi > 0 && q.ko === q.vi - 1 && q.koMissing === '1', `a 40 s "line" (an interlude inside its marker) -> that Korean line alone has no button ${JSON.stringify(q)}`)],
       ['no markers on the vocals', "window.__segCfg.noMarkers['sjjc:1:KO']=true;", q => ok(q.vi > 0 && q.ko === 0 && !q.fetched.includes('pksjj:1:KO'), `VOCALS without markers -> no button and no fall-through to the children's recording ${JSON.stringify(q)}`)],
@@ -257,6 +285,7 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
     await cdp.send('Input.dispatchMouseEvent', {type: 'mousePressed', x: 2, y: 2, button: 'left', clickCount: 1});
     await cdp.send('Input.dispatchMouseEvent', {type: 'mouseReleased', x: 2, y: 2, button: 'left', clickCount: 1}); await sleep(150);
     const q = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));const o={};window.setLang('ko');await sleep(300);const tts0=window.__tts.filter(x=>x.ev==='speak').length;
+      const SINGX=t=>{t=String(t||'').trim();return !!t&&!/^\\s*(\\(.*\\)|（.*）|\\d+\\s*[.．。]?)\\s*$/.test(t);}; const aud=()=>window.__aud;
       document.querySelector('.tab-btn[data-tab="sentence"]').click();await sleep(300);document.querySelector('.subtab-btn[data-sentence="song"]').click();await sleep(800);
       const tabs=[...document.querySelectorAll('.song-kind-tabs [role="tab"]')];
       window.__segCfg.skew['osg:1:KO']=1;   // the Korean recording of original 1 has one marker too many
@@ -267,19 +296,52 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
       window.__segCfg.outro99['osg:117:VT']=true; window.__segCfg.outro99['osg:117:KO']=true;
       oroot.querySelector('.song-acc[data-song-id="osg-117"] .song-acc-head').click();await sleep(1000);
       const o117=oroot.querySelector('.song-acc[data-song-id="osg-117"]'); o.osg117={vi:o117.querySelectorAll('.lyric-vi-row .song-seg-btn').length, ko:o117.querySelectorAll('.lyric-target-row .song-seg-btn').length, rows:o117.querySelectorAll('.song-lyric-line').length};
-      oroot.querySelector('.song-acc[data-song-id="osg-116"] .song-acc-head').click();await sleep(1000);
-      const o116=oroot.querySelector('.song-acc[data-song-id="osg-116"]'); o.osg116={vi:o116.querySelectorAll('.lyric-vi-row .song-seg-btn').length, ko:o116.querySelectorAll('.lyric-target-row .song-seg-btn').length};
+      // osg-116 Vietnamese: the video's official cues agree with the MP3 markers (same spans) -> the MP3 markers stay (finer, one per line)
+      window.__segCfg.video['pub-osg_116_VIDEO:VT']={start:1,dur:0.4,vtt:true};
+      // osg-116: the Korean recording has no marker of paragraph 7 (line 4) and sings lines 6+7 as one -> those lines have no button, the rest do
+      window.__segCfg.dropPid['osg:116:KO']=7; window.__segCfg.doubleLine['osg:116:KO']=5;
+      oroot.querySelector('.song-acc[data-song-id="osg-116"] .song-acc-head').click();await sleep(1200);
+      const o116=oroot.querySelector('.song-acc[data-song-id="osg-116"]'); const koRows116=[...o116.querySelectorAll('.lyric-target-row')].filter(r=>r.querySelector('.lyric-target')&&r.querySelector('.lyric-target').textContent.trim()&&r.querySelector('.lyric-target').textContent.trim().charAt(0)!=='(');
+      o.osg116={vi:o116.querySelectorAll('.lyric-vi-row .song-seg-btn[data-seg=play]').length, ko:o116.querySelectorAll('.lyric-target-row .song-seg-btn[data-seg=play]').length, rows:koRows116.length,
+        koMissing:koRows116.map((r,i)=>r.querySelector('.song-seg-btn')?null:i+1).filter(Boolean).join(','), koLine5m:(koRows116[4].querySelector('.song-seg-btn')||{dataset:{}}).dataset.segM, aligned:(window.__songSeg.info['original|osg-116|ko']||{}).alignedBy,
+        viUrl:(window.__songSeg.info['original|osg-116|vi']||{}).url, viTiming:(window.__songSeg.info['original|osg-116|vi']||{}).timing||'mp3-markers', viCues:!!((window.__songSeg.info['original|osg-116|vi']||{}).video)};
+      // pkon-35: MP3 markers one per line but timed to nothing (1-2 s "lines" from 0:00) while the video's official cues start at 9.78 s and hold
+      // lines 1+2 and 3+4 together -> the cues win, played from the video; those grouped lines have no button; a cue whose words differ shows them
+      window.__segCfg.mp3Zero['pkon:35:VT']=true; window.__segCfg.mp3Zero['pkon:35:KO']=true;
+      window.__segCfg.video['pub-pkon_35_VIDEO:VT']={start:9.78,dur:2.0,groups:[[0,1],[2,3]],alter:{4:'LỜI HÁT KHÁC của dòng năm'},vtt:true};
+      window.__segCfg.video['pub-pkon_35_VIDEO:KO']={start:9.38,dur:2.0,vtt:true};
+      // pk-special-0 (pub-pk_3_*): the MP3 has no markers; the Vietnamese video has cues, the Korean video none
+      window.__segCfg.noMarkers['pk:3:VT']=true; window.__segCfg.noMarkers['pk:3:KO']=true;
+      window.__segCfg.video['pub-pk_3_VIDEO:VT']={start:9.23,dur:3.0,split:[1],vtt:true}; window.__segCfg.video['pub-pk_3_VIDEO:KO']={start:9.23,dur:3.0,vtt:false};
       tabs[2].click();await sleep(400);const kroot=document.getElementById('song-kids-root');
       for (const id of ['pk-special-0','pkon-1','pkon-35']) { kroot.querySelector('.song-acc[data-song-id="'+id+'"] .song-acc-head').click(); await sleep(1000); }
       const cnt=(id,s)=>kroot.querySelector('.song-acc[data-song-id="'+id+'"]').querySelectorAll(s).length;
-      o.kids={sp0:{vi:cnt('pk-special-0','.lyric-vi-row .song-seg-btn'),ko:cnt('pk-special-0','.lyric-target-row .song-seg-btn')}, p1:{vi:cnt('pkon-1','.lyric-vi-row .song-seg-btn'),ko:cnt('pkon-1','.lyric-target-row .song-seg-btn')}, p35:{vi:cnt('pkon-35','.lyric-vi-row .song-seg-btn'),ko:cnt('pkon-35','.lyric-target-row .song-seg-btn')}};
+      const inf=id=>window.__songSeg.info['children|'+id+'|vi']||{}; const k35=kroot.querySelector('.song-acc[data-song-id="pkon-35"]');
+      const viRows35=[...k35.querySelectorAll('.lyric-vi-row')].filter(r=>SINGX(r.querySelector('.lyric-vi').textContent));
+      const sp0m=(inf('pk-special-0').marks||[]);
+      o.kids={sp0:{vi:cnt('pk-special-0','.lyric-vi-row .song-seg-btn[data-seg=play]'),ko:cnt('pk-special-0','.lyric-target-row .song-seg-btn[data-seg=play]'),rows:cnt('pk-special-0','.song-lyric-line'),timing:inf('pk-special-0').timing,url:inf('pk-special-0').url,fetched:(window.__segFetch||[]).filter(x=>x.startsWith('pk:')),
+          line2:sp0m[1]&&{s:sp0m[1].s,e:sp0m[1].e}, line3:sp0m[2]&&{s:sp0m[2].s,e:sp0m[2].e}},
+        p1:{vi:cnt('pkon-1','.lyric-vi-row .song-seg-btn'),ko:cnt('pkon-1','.lyric-target-row .song-seg-btn')},
+        p35:{vi:cnt('pkon-35','.lyric-vi-row .song-seg-btn[data-seg=play]'),ko:cnt('pkon-35','.lyric-target-row .song-seg-btn[data-seg=play]'),rows:viRows35.length,timing:inf('pkon-35').timing,rejected:inf('pkon-35').mp3Rejected,url:inf('pkon-35').url,
+          missing:viRows35.map((r,i)=>r.querySelector('.song-seg-btn')?null:i+1).filter(Boolean).join(','), alt:(k35.querySelector('.song-children-lyric')||{}).textContent, altCount:k35.querySelectorAll('.song-children-lyric').length,
+          m:(inf('pkon-35').marks||[]).slice(0,5).map(x=>x&&[x.s,x.e,x.group||0,x.m]), reason:inf('pkon-35').reason, counts:inf('pkon-35').counts, koTiming:(window.__songSeg.info['children|pkon-35|ko']||{}).timing}};
+      // ▶ on the 2nd line of pkon-35 (Vietnamese), sung inside the first cue of two lines: the video's audio, seeked to that cue
+      aud().length=0; k35.querySelectorAll('.lyric-vi-row .song-seg-btn[data-seg=play]')[1].click(); await sleep(300); o.kids.p35.play=aud().map(x=>x.ev+(x.ev==='src'?':'+x.v.split('/').pop():x.ev==='seek'?':'+x.v.toFixed(2):x.ev==='play'?':'+x.at.toFixed(2):''));
       o.tts=window.__tts.filter(x=>x.ev==='speak').length-tts0; o.ttsTexts=window.__tts.filter(x=>x.ev==='speak').map(x=>x.text.slice(0,30)); o.overflow=document.documentElement.scrollWidth>innerWidth;
       return o;})()`);
     ok(q.osg1.rows > 0 && q.osg1.ko === 0, `original 1: the Korean recording with a wrong marker count has no button (no timing guessed) ${JSON.stringify(q.osg1)}`);
-    ok(q.osg116.vi > 0 && q.osg116.ko > 0, `original 116: both languages ${JSON.stringify(q.osg116)}`);
+    ok(q.osg116.vi === q.osg116.rows && q.osg116.ko === q.osg116.rows - 2 && q.osg116.koMissing === '4,6' && q.osg116.aligned === 'paragraph-id' && q.osg116.koLine5m === '3', `original 116: Korean markers not one per line -> aligned by paragraph id with the Vietnamese line order, own markers; lines 4 (no marker) and 6 (sung with 7) have no button ${JSON.stringify(q.osg116)}`);
     ok(q.osg117.rows > 0 && q.osg117.vi === 2 * q.osg117.rows && q.osg117.ko === 2 * q.osg117.rows, `original 117: the outro marker (pid 99) is no line, every sung line has its button ${JSON.stringify(q.osg117)}`);
     ok(q.kids.p1.vi === 0 && q.kids.p1.ko > 0, `children 1: the missing Vietnamese recording gives no button, no speech stands in ${JSON.stringify(q.kids.p1)}`);
-    ok(q.kids.sp0.vi > 0 && q.kids.p35.vi > 0, `children special 0 / 35 ${JSON.stringify(q.kids)}`);
+    ok(q.osg116.viCues && q.osg116.viTiming === 'mp3-markers' && /\.mp3$/.test(q.osg116.viUrl) && q.osg116.vi === q.osg116.rows, `original 116 Vietnamese: cues that agree with the MP3 markers leave the MP3 markers in place ${JSON.stringify({cues: q.osg116.viCues, t: q.osg116.viTiming, url: q.osg116.viUrl, vi: q.osg116.vi})}`);
+    const p35 = q.kids.p35;
+    ok(p35.timing === 'video-cues' && /pub-pkon_35_VIDEO_VT\.mp4$/.test(p35.url) && p35.m[0] && p35.m[0][0] === 9780 && p35.m[0][1] === 13780 && p35.m[1][0] === 9780 && p35.m[2][0] === 13880 && p35.m[3][0] === 13880 && p35.m[4][0] === 17980, `children 35: MP3 markers from 0:00 of 0.4 s are not timings of this recording -> dropped; the lines come from the video's cues (lines 1+2 share the first cue, 3+4 the second) ${JSON.stringify({timing: p35.timing, url: p35.url, m: p35.m, reason: p35.reason})}`);
+    ok(p35.vi === p35.rows && p35.missing === '' && p35.counts && p35.counts.ok === p35.rows - 1 && p35.counts.sub === 1, `children 35: every line has a button; a line inside a two-line cue plays that cue; one line sung with other words ${JSON.stringify({vi: p35.vi, rows: p35.rows, missing: p35.missing, counts: {ok: p35.counts.ok, sub: p35.counts.sub, grouped: p35.counts.grouped, unsure: p35.counts.unsure}})}`);
+    ok(p35.altCount === 1 && /LỜI HÁT KHÁC/.test(p35.alt || ''), `children 35: a cue whose words differ from the text shows the sung words under the line ${JSON.stringify({alt: p35.alt, n: p35.altCount})}`);
+    ok(p35.koTiming === 'video-cues' && p35.ko === p35.rows, `children 35 Korean: cues one per line -> every line, from the video ${JSON.stringify({ko: p35.ko, rows: p35.rows, t: p35.koTiming})}`);
+    ok(p35.play && p35.play[0] === 'src:pub-pkon_35_VIDEO_VT.mp4' && p35.play.some(x => x.startsWith('seek:9.78')) && p35.play.some(x => x.startsWith('play:9.78')), `children 35: ▶ on line 2 seeks the video's audio to its cue (9.78 s) and plays there ${JSON.stringify(p35.play)}`);
+    ok(q.kids.sp0.timing === 'video-cues' && q.kids.sp0.vi === q.kids.sp0.rows && q.kids.sp0.ko === 0 && q.kids.sp0.fetched.includes('pk:3:VT'), `children special 0: pub-pk track 3 (the data's own media key); no MP3 markers -> the Vietnamese video's cues, the Korean video has none ${JSON.stringify(q.kids.sp0)}`);
+    ok(q.kids.sp0.line2 && q.kids.sp0.line2.s === 9230 + 3100 && q.kids.sp0.line2.e === 9230 + 3100 + 3000 + 100 + 3000 && q.kids.sp0.line3 && q.kids.sp0.line3.s === 9230 + 3100 * 3, `children special 0: a page line the subtitle shows as two cues spans both cues ${JSON.stringify({l2: q.kids.sp0.line2, l3: q.kids.sp0.line3})}`);
     ok(q.tts === 0, `no speech was used anywhere (${q.tts}) ${JSON.stringify(q.ttsTexts)}`);
     ok(!q.overflow, 'no horizontal overflow');
     // widths: no overlap between a line's text and its buttons, no horizontal overflow
