@@ -132,3 +132,16 @@ choruses. Vietnamese pksjj_2_VIDEO checksum d600878667c8c9129f346df2967f2293
 and the other 11 locales each bind their own children recording. Identical times
 are user-authorized, not independent cross-language vocal alignment. The intro,
 01:29–01:31 inter-stanza gap and outro stay outside the supplied segments.
+
+## Standing shared children policy (2026-10-08)
+
+The user explicitly expanded shared children selection to all Vietnamese pksjj
+Kingdom songs (including 1, 2 and 5), regardless of whether times came from a
+manual table, official captions or gated same-recording analysis. For all 37
+children selections, each learner locale uses its own identified pksjj video.
+The s/e times and enabled flags are identical to Vietnamese; unverified
+Vietnamese occurrences remain disabled. Missing recordings or different book
+line counts hide learner buttons without falling back to general choir.
+This standing instruction supersedes earlier general-choir priority and the
+legacy Vietnamese-only song 41 annotation for these learner rows. It is user-
+authorized timing reuse, not independent cross-language vocal alignment.

@@ -10255,7 +10255,7 @@ function verifyDistribution(units, dist, pins) {
     var loc = songJwLocale(lang);
     if (!loc || proof.src !== "pksjj" || proof.format !== "MP4" || proof.mediaKey !== "pub-pksjj_" + key + "_VIDEO") return Promise.resolve({ marks: null, reason: "invalid manual children's recording" });
     return songSegVideo(proof.mediaKey, loc[0]).then(function (file) {
-      if (!file || file.checksum !== proof.checksum || !(file.duration >= proof.lines[proof.lines.length - 1].e / 1000)) return { src: "pksjj", marks: null, reason: "manual children's recording unavailable or changed" };
+      if (!file || file.checksum !== proof.checksum || !(file.duration >= Math.max.apply(Math, proof.lines.filter(function (line) { return line.enabled; }).map(function (line) { return line.e / 1000; }).concat([0])))) return { src: "pksjj", marks: null, reason: "manual children's recording unavailable or changed" };
       return { src: "pksjj", mediaKey: proof.mediaKey, url: file.progressiveDownloadURL,
         marks: proof.lines, reason: "", nonVocal: 0, timingMethod: proof.timingMethod };
     });
@@ -10264,6 +10264,11 @@ function verifyDistribution(units, dist, pins) {
     var id = kind + "|" + key + "|" + lang;
     if (songSegAsk[id]) return songSegAsk[id];
     var manual = kind === "kingdom" && typeof KINGDOM_VOCAL_SEGMENTS !== "undefined" && KINGDOM_VOCAL_SEGMENTS[key + "|" + lang];
+    var viChildren = kind === "kingdom" && typeof KINGDOM_VOCAL_SEGMENTS !== "undefined" && KINGDOM_VOCAL_SEGMENTS[key + "|vi"];
+    var shareChildren = lang !== "vi" && viChildren && viChildren.src === "pksjj";
+    if (shareChildren && (!manual || !manual.manualChildrenOverride)) {
+      return (songSegAsk[id] = Promise.resolve({ src: "pksjj", marks: null, reason: "learner children recording or matching Vietnamese intervals unavailable" }).then(function (info) { songSegInfo[id] = info; return info; }));
+    }
     if (manual && manual.manualChildrenOverride) {
       songSegAsk[id] = songSegResolveManualChildren(String(key), lang, manual)
         .catch(function () { return { marks: null, reason: "manual children's source request failed" }; })
