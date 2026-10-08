@@ -300,7 +300,7 @@ const ROUTES = [
       assert.deepStrictEqual(await tabs(), ['SECTION F — 교사용 지도서']);
       const ko = await E(`document.getElementById('tab-content').innerText`);
       assert(ko.includes('주별 지도 계획') && ko.includes('교수법 16가지') && /1주/.test(ko), 'Korean guide: ' + ko.slice(0, 120));
-      assert(ko.includes('시작 노래') && ko.includes('마치는 노래') && ko.includes('41번') && ko.includes('80번'), 'Section F course song pair');
+      assert(ko.includes('시작 노래') && ko.includes('마치는 노래') && ko.includes('41번') && ko.includes('46번'), 'Section F course song pair');
       assert.strictEqual(await E(`document.querySelectorAll('[data-course-songs]').length`),17,'preliminary + 16 weeks');
       assert(/SECTION F 읽기 전용/.test(await E(`document.getElementById('user-info').innerText`)));
       assert.strictEqual(await E(`document.querySelectorAll('#tab-content input, #tab-content textarea, #tab-content select, #tab-content [data-act="restore"]').length`), 0, 'no editing controls');
@@ -345,7 +345,7 @@ const ROUTES = [
       await E(`document.querySelector('[data-act="tab"][data-tab="curriculum"]').click()`);
       await sleep(200);
       const course = await E(`document.querySelector('#tab-content [data-course-songs]').innerText`);
-      assert(course.includes('시작 노래') && course.includes('마치는 노래') && course.includes('41번') && course.includes('80번'), 'Section C same week 1 song pair');
+      assert(course.includes('시작 노래') && course.includes('마치는 노래') && course.includes('41번') && course.includes('46번'), 'Section C same week 1 song pair');
       assert(/관리자님/.test(await E(`document.getElementById('user-info').innerText`)));
       await E(`document.getElementById('logout-btn').click()`);
       await sleep(500);

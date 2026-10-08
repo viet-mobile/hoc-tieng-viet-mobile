@@ -143,7 +143,7 @@ JEONJU_PRAYERS = {
 # Opening / closing Vietnamese song of each class (supplied by the user), keyed like JEONJU_PRAYERS.
 JEONJU_SONGS = {
     "prelim": ['BÀI HÁT 133 Thờ phượng Đức Giê-hô-va trong thời thanh xuân', 'BÀI HÁT 46 Cảm tạ Cha Giê-hô-va'],
-    "1": ['BÀI HÁT 41 Xin nghe lời cầu nguyện của con', 'BÀI HÁT 80 “Nếm thử và nghiệm thấy Đức Giê-hô-va tốt thay!”'],
+    "1": ['BÀI HÁT 41 Xin nghe lời cầu nguyện của con', 'BÀI HÁT 46 Cảm tạ Cha Giê-hô-va'],
     "2": ['BÀI HÁT 93 Xin Cha ban phước cho buổi nhóm họp', 'BÀI HÁT 17 “Tôi muốn”'],
     "3": ['BÀI HÁT 47 Hãy cầu nguyện với Cha Giê-hô-va hằng ngày', 'BÀI HÁT 5 Các công việc kỳ diệu của Đức Chúa Trời'],
     "4": ['BÀI HÁT 51 Chúng ta dâng mình cho Đức Chúa Trời!', 'BÀI HÁT 100 Hãy bày tỏ lòng hiếu khách'],
