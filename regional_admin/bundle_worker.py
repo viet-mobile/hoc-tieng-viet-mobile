@@ -9,6 +9,7 @@ exactly the code the tests exercise. The only text substitution is the two regio
 The static site is served by falling through to env.ASSETS.fetch(request) inside worker.js.
 """
 import json
+import sys
 from pathlib import Path
 
 ADMIN_DIR = Path(__file__).parent
@@ -68,6 +69,10 @@ def bundle_regional_worker(region_id: str, region_name: str = None) -> str:
         "    module.exports = " + json.dumps(json.loads(_read("teaching_guide.json")), ensure_ascii=False) + ";\n  },"
     )
     # Course text translations for the /admin Vietnamese view (course_vi.json is written by build_app.py).
+    if str(ADMIN_DIR.parent) not in sys.path: sys.path.insert(0, str(ADMIN_DIR.parent))
+    from regional_admin.course_songs import course_songs
+    defs.append("  " + json.dumps("./course_songs.json") + ": function (module, exports, require) {\n"
+                "    module.exports = " + json.dumps(course_songs(), ensure_ascii=False) + ";\n  },")
     for name in ("course_vi.json", "course_live_i18n.json"):
         data = json.loads(_read(name)) if (ADMIN_DIR / name).exists() else {}
         defs.append(

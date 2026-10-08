@@ -1,0 +1,310 @@
+{
+  "jeonju": {
+    "prelim": [
+      {
+        "kind": "open",
+        "number": 133,
+        "text": {
+          "ko": "133번 청소년 때 여호와를 숭배하라",
+          "vi": "BÀI HÁT 133 Thờ phượng Đức Giê-hô-va trong thời thanh xuân"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 46,
+        "text": {
+          "ko": "46번 여호와여, 감사합니다",
+          "vi": "BÀI HÁT 46 Cảm tạ Cha Giê-hô-va"
+        }
+      }
+    ],
+    "1": [
+      {
+        "kind": "open",
+        "number": 41,
+        "text": {
+          "ko": "41번 내 기도를 들어 주소서",
+          "vi": "BÀI HÁT 41 Xin nghe lời cầu nguyện của con"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 80,
+        "text": {
+          "ko": "80번 ‘여호와의 선하심을 맛보아 알아라'",
+          "vi": "BÀI HÁT 80 \"Nếm thử và nghiệm thấy Đức Giê-hô-va tốt thay!\""
+        }
+      }
+    ],
+    "2": [
+      {
+        "kind": "open",
+        "number": 93,
+        "text": {
+          "ko": "93번 우리의 모임을 축복하소서",
+          "vi": "BÀI HÁT 93 Xin Cha ban phước cho buổi nhóm họp"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 17,
+        "text": {
+          "ko": "17번 \"내가 원합니다\"",
+          "vi": "BÀI HÁT 17 \"Tôi muốn\""
+        }
+      }
+    ],
+    "3": [
+      {
+        "kind": "open",
+        "number": 47,
+        "text": {
+          "ko": "47번 여호와께 날마다 기도하라",
+          "vi": "BÀI HÁT 47 Hãy cầu nguyện với Cha Giê-hô-va hằng ngày"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 5,
+        "text": {
+          "ko": "5번 하느님의 놀라운 일들",
+          "vi": "BÀI HÁT 5 Các công việc kỳ diệu của Đức Chúa Trời"
+        }
+      }
+    ],
+    "4": [
+      {
+        "kind": "open",
+        "number": 51,
+        "text": {
+          "ko": "51번 우리는 하느님께 헌신했네!",
+          "vi": "BÀI HÁT 51 Chúng ta dâng mình cho Đức Chúa Trời!"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 100,
+        "text": {
+          "ko": "100번 그들을 맞아들여 후대하라",
+          "vi": "BÀI HÁT 100 Hãy bày tỏ lòng hiếu khách"
+        }
+      }
+    ],
+    "5": [
+      {
+        "kind": "open",
+        "number": 135,
+        "text": {
+          "ko": "135번 여호와께서 호소하시네, “내 아들아, 지혜롭게 되어라”",
+          "vi": "BÀI HÁT 135 Đức Giê-hô-va mến gọi: ‘Hỡi con, hãy khôn ngoan!'"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 67,
+        "text": {
+          "ko": "67번 \"말씀을 전파하라\"",
+          "vi": "BÀI HÁT 67 \"Hãy rao giảng lời Đức Chúa Trời\""
+        }
+      }
+    ],
+    "6": [
+      {
+        "kind": "open",
+        "number": 54,
+        "text": {
+          "ko": "54번 ‘바로 이 길이다'",
+          "vi": "BÀI HÁT 54 \"Đây là đường\""
+        }
+      },
+      {
+        "kind": "close",
+        "number": 73,
+        "text": {
+          "ko": "73번 담대함을 주소서",
+          "vi": "BÀI HÁT 73 Xin giúp chúng con dạn dĩ"
+        }
+      }
+    ],
+    "7": [
+      {
+        "kind": "open",
+        "number": 70,
+        "text": {
+          "ko": "70번 합당한 사람들을 찾으라",
+          "vi": "BÀI HÁT 70 Tìm kiếm những người xứng đáng"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 59,
+        "text": {
+          "ko": "59번 우리 함께 여호와를 찬양하세",
+          "vi": "BÀI HÁT 59 Hãy cùng tôi ngợi khen Đức Giê-hô-va"
+        }
+      }
+    ],
+    "8": [
+      {
+        "kind": "open",
+        "number": 96,
+        "text": {
+          "ko": "96번 하느님의 책—보물",
+          "vi": "BÀI HÁT 96 Cuốn sách của Đức Chúa Trời—Kho tàng vô giá"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 11,
+        "text": {
+          "ko": "11번 창조물이 하느님을 찬양하네",
+          "vi": "BÀI HÁT 11 Công trình sáng tạo ngợi khen Đức Chúa Trời"
+        }
+      }
+    ],
+    "9": [
+      {
+        "kind": "open",
+        "number": 41,
+        "text": {
+          "ko": "41번 내 기도를 들어 주소서",
+          "vi": "BÀI HÁT 41 Xin nghe lời cầu nguyện của con"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 80,
+        "text": {
+          "ko": "80번 ‘여호와의 선하심을 맛보아 알아라'",
+          "vi": "BÀI HÁT 80 \"Nếm thử và nghiệm thấy Đức Giê-hô-va tốt thay!\""
+        }
+      }
+    ],
+    "10": [
+      {
+        "kind": "open",
+        "number": 93,
+        "text": {
+          "ko": "93번 우리의 모임을 축복하소서",
+          "vi": "BÀI HÁT 93 Xin Cha ban phước cho buổi nhóm họp"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 17,
+        "text": {
+          "ko": "17번 \"내가 원합니다\"",
+          "vi": "BÀI HÁT 17 \"Tôi muốn\""
+        }
+      }
+    ],
+    "11": [
+      {
+        "kind": "open",
+        "number": 47,
+        "text": {
+          "ko": "47번 여호와께 날마다 기도하라",
+          "vi": "BÀI HÁT 47 Hãy cầu nguyện với Cha Giê-hô-va hằng ngày"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 5,
+        "text": {
+          "ko": "5번 하느님의 놀라운 일들",
+          "vi": "BÀI HÁT 5 Các công việc kỳ diệu của Đức Chúa Trời"
+        }
+      }
+    ],
+    "12": [
+      {
+        "kind": "open",
+        "number": 51,
+        "text": {
+          "ko": "51번 우리는 하느님께 헌신했네!",
+          "vi": "BÀI HÁT 51 Chúng ta dâng mình cho Đức Chúa Trời!"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 100,
+        "text": {
+          "ko": "100번 그들을 맞아들여 후대하라",
+          "vi": "BÀI HÁT 100 Hãy bày tỏ lòng hiếu khách"
+        }
+      }
+    ],
+    "13": [
+      {
+        "kind": "open",
+        "number": 135,
+        "text": {
+          "ko": "135번 여호와께서 호소하시네, “내 아들아, 지혜롭게 되어라”",
+          "vi": "BÀI HÁT 135 Đức Giê-hô-va mến gọi: ‘Hỡi con, hãy khôn ngoan!'"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 67,
+        "text": {
+          "ko": "67번 \"말씀을 전파하라\"",
+          "vi": "BÀI HÁT 67 \"Hãy rao giảng lời Đức Chúa Trời\""
+        }
+      }
+    ],
+    "14": [
+      {
+        "kind": "open",
+        "number": 54,
+        "text": {
+          "ko": "54번 ‘바로 이 길이다'",
+          "vi": "BÀI HÁT 54 \"Đây là đường\""
+        }
+      },
+      {
+        "kind": "close",
+        "number": 73,
+        "text": {
+          "ko": "73번 담대함을 주소서",
+          "vi": "BÀI HÁT 73 Xin giúp chúng con dạn dĩ"
+        }
+      }
+    ],
+    "15": [
+      {
+        "kind": "open",
+        "number": 70,
+        "text": {
+          "ko": "70번 합당한 사람들을 찾으라",
+          "vi": "BÀI HÁT 70 Tìm kiếm những người xứng đáng"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 59,
+        "text": {
+          "ko": "59번 우리 함께 여호와를 찬양하세",
+          "vi": "BÀI HÁT 59 Hãy cùng tôi ngợi khen Đức Giê-hô-va"
+        }
+      }
+    ],
+    "16": [
+      {
+        "kind": "open",
+        "number": 133,
+        "text": {
+          "ko": "133번 청소년 때 여호와를 숭배하라",
+          "vi": "BÀI HÁT 133 Thờ phượng Đức Giê-hô-va trong thời thanh xuân"
+        }
+      },
+      {
+        "kind": "close",
+        "number": 46,
+        "text": {
+          "ko": "46번 여호와여, 감사합니다",
+          "vi": "BÀI HÁT 46 Cảm tạ Cha Giê-hô-va"
+        }
+      }
+    ]
+  }
+}

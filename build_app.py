@@ -830,6 +830,8 @@ def build_data_js(site):
 
     if site == "jeonju":
         import jeonju_data
+        from regional_admin.course_songs import write_course_songs
+        write_course_songs()
         if getattr(jeonju_data, "JEONJU_CURR_WELCOME", None) is not None:
             curr_welcome = jeonju_data.JEONJU_CURR_WELCOME
         if getattr(jeonju_data, "JEONJU_CURR_PHASES", None) is not None:

@@ -345,6 +345,7 @@ function renderAdminHtml(regionId, regionName, currentUser = null, csrfToken = '
   const signedIn = !!currentUser;
   const boot = safeJson({ regionId, regionName, csrfToken: csrfToken || '', role: signedIn ? currentUser.role : null,
     guide: signedIn ? loadTeachingGuide(regionId) : null,
+    courseSongs: signedIn ? (loadJson('./course_songs.json')[regionId] || {}) : {},
     courseVi: signedIn ? (loadJson('./course_vi.json')[regionId] || {}) : {}, liveI18n: signedIn ? loadJson('./course_live_i18n.json') : [] });
 
   return `<!DOCTYPE html>

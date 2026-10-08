@@ -300,6 +300,8 @@ const ROUTES = [
       assert.deepStrictEqual(await tabs(), ['SECTION F — 교사용 지도서']);
       const ko = await E(`document.getElementById('tab-content').innerText`);
       assert(ko.includes('주별 지도 계획') && ko.includes('교수법 16가지') && /1주/.test(ko), 'Korean guide: ' + ko.slice(0, 120));
+      assert(ko.includes('시작 노래') && ko.includes('마치는 노래') && ko.includes('41번') && ko.includes('80번'), 'Section F course song pair');
+      assert.strictEqual(await E(`document.querySelectorAll('[data-course-songs]').length`),17,'preliminary + 16 weeks');
       assert(/SECTION F 읽기 전용/.test(await E(`document.getElementById('user-info').innerText`)));
       assert.strictEqual(await E(`document.querySelectorAll('#tab-content input, #tab-content textarea, #tab-content select, #tab-content [data-act="restore"]').length`), 0, 'no editing controls');
       // a forged tab click does nothing
@@ -319,6 +321,7 @@ const ROUTES = [
       assert.deepStrictEqual(await tabs(), ['PHẦN F — Sách hướng dẫn giáo viên']);
       const vi = await E(`document.getElementById('tab-content').innerText`);
       assert(vi.includes('Hướng dẫn cho giáo viên — Áp dụng Teaching Method #1–#16'), 'Vietnamese guide title: ' + vi.slice(0, 200));
+      assert(vi.includes('Bài hát mở đầu') && vi.includes('Bài hát kết thúc') && /BÀI HÁT\s*41/.test(vi), 'Vietnamese course songs');
       assert(/Tuần 1/.test(vi), 'Vietnamese week labels');
       assert(/PHẦN F \(chỉ đọc\)/.test(await E(`document.getElementById('user-info').innerText`)));
       // back to Korean
@@ -339,6 +342,10 @@ const ROUTES = [
       assert.deepStrictEqual(await tabs(), ['SECTION A — 수업 기간', 'SECTION B — 휴강 관리', 'SECTION C — 원본 커리큘럼', 'SECTION D — 회차 배정',
         'SECTION E — 변경 이력 & 복구', 'SECTION F — 교사용 지도서']);
       assert(await E(`!!document.getElementById('sett-start')`), 'admin sees SECTION A form');
+      await E(`document.querySelector('[data-act="tab"][data-tab="curriculum"]').click()`);
+      await sleep(200);
+      const course = await E(`document.querySelector('#tab-content [data-course-songs]').innerText`);
+      assert(course.includes('시작 노래') && course.includes('마치는 노래') && course.includes('41번') && course.includes('80번'), 'Section C same week 1 song pair');
       assert(/관리자님/.test(await E(`document.getElementById('user-info').innerText`)));
       await E(`document.getElementById('logout-btn').click()`);
       await sleep(500);

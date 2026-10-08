@@ -441,8 +441,16 @@
       '<p class="guide-time-note">일반 문법은 핵심 문형 3~4개, 이웃 대화는 앞부분 역할 읽기, 행누·랑제는 한 단락, 어휘는 약 100개만 수업에서 다루고 나머지는 과제입니다. 시간은 자료 분량으로 계산한 예상값입니다.</p>' +
       guideList('과제로만 (수업에서 다루지 않음; 전주 예습 · 후주 복습)', u.homeworkOnly);
   }
-  function guideUnitBody(u) {
-    return '<div class="guide-body">' + ((u.methods || []).length ? '<div class="guide-label">적용할 교수법</div><div>' + guideChips(u.methods) + '</div>' : '') +
+  function courseSongsHtml(week) {
+    var songs = (boot.courseSongs || {})[String(week)] || [];
+    if (!songs.length) return '';
+    return '<div class="course-songs" data-course-songs="' + esc(week) + '">' + songs.map(function (song) {
+      var label = LANG === 'vi' ? (song.kind === 'open' ? 'Bài hát mở đầu' : 'Bài hát kết thúc') : (song.kind === 'open' ? '시작 노래' : '마치는 노래');
+      return '<p><strong>' + esc(label) + '</strong>: ' + esc(song.text[LANG] || song.text.ko) + '</p>';
+    }).join('') + '</div>';
+  }
+  function guideUnitBody(u, hideSongs) {
+    return '<div class="guide-body">' + (hideSongs ? '' : courseSongsHtml(u.unit === undefined ? 'prelim' : u.unit)) + ((u.methods || []).length ? '<div class="guide-label">적용할 교수법</div><div>' + guideChips(u.methods) + '</div>' : '') +
       guideTimePlan(u) +
       guideList('수업 적용', u.notes) + guideList('교사 준비물', u.teacherPrep) + guideList('학생 준비물 (학생 [과정]에 표시)', u.studentMaterials) + '</div>';
   }
@@ -757,7 +765,8 @@
     c.innerHTML =
       '<div class="card"><div class="card-title">원본 커리큘럼 단위 선택 (1 ~ 16)</div>' + nav +
       '<p class="help-text">여기는 전체 학습 분량(원본 커리큘럼)입니다. 실제 수업 회차 수와 무관하며, 일정이 바뀌어도 이 내용은 바뀌지 않습니다. 회차별 배정은 SECTION D에서 자동 계산됩니다.</p></div>' +
-      (guideUnitFor(state.week) ? '<div class="card"><div class="card-title"><span>교사용 지도서 — ' + state.week + '주</span> <button type="button" class="btn move-btn" data-act="tab" data-tab="guide">전체 보기</button></div>' + guideUnitBody(guideUnitFor(state.week)) + '</div>' : '') +
+      (courseSongsHtml(state.week) ? '<div class="card">' + courseSongsHtml(state.week) + '</div>' : '') +
+      (guideUnitFor(state.week) ? '<div class="card"><div class="card-title"><span>교사용 지도서 — ' + state.week + '주</span> <button type="button" class="btn move-btn" data-act="tab" data-tab="guide">전체 보기</button></div>' + guideUnitBody(guideUnitFor(state.week), true) + '</div>' : '') +
       '<div class="card"><div class="card-title">원본 단위 ' + state.week + ' — 학습 자료 및 수행 과제 편집' + (state.dirty ? ' <span class="tag tag-cancel">저장 안 됨</span>' : '') + '</div>' +
       '<form id="week-form">' +
       '<div class="form-group"><label for="week-title">단위 제목</label><input type="text" id="week-title" class="form-control" data-f="title" maxlength="200" value="' + esc(e.title.ko) + '">' + viHint(e.title.ko) + '</div>' +
