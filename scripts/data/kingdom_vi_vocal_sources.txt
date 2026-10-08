@@ -1,0 +1,55 @@
+베트남어 음원 및 영상 (합창)	
+1	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_1_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_1_VIDEO
+2	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_2_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_2_VIDEO
+5	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_5_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_5_VIDEO
+11	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_11_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_11_VIDEO
+17	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_17_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_17_VIDEO
+20	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_20_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_20_VIDEO
+26	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_26_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_26_VIDEO
+28	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_28_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_28_VIDEO
+38	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_38_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_38_VIDEO
+40	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_40_AUDIO	
+41	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_41_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_41_VIDEO
+46	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_46_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_46_VIDEO
+47	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_47_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_47_VIDEO
+51	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_51_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_51_VIDEO
+53	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_53_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_53_VIDEO
+54	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_54_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_54_VIDEO
+56	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_56_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_56_VIDEO
+57	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_57_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_57_VIDEO
+58	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_58_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_58_VIDEO
+59	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_59_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_59_VIDEO
+67	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_67_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_67_VIDEO
+70	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_70_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_70_VIDEO
+73	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_73_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_73_VIDEO
+76	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_76_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_76_VIDEO
+80	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_80_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_80_VIDEO
+84	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_84_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_84_VIDEO
+89	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_89_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_89_VIDEO
+93	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_93_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_93_VIDEO
+96	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_96_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_96_VIDEO
+100	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_100_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_100_VIDEO
+107	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_107_AUDIO	
+124	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_124_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_124_VIDEO
+129	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_129_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_129_VIDEO
+130	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_130_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_130_VIDEO
+133	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_133_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_133_VIDEO
+135	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_135_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_135_VIDEO
+137	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_137_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_137_VIDEO
+140	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_140_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_140_VIDEO
+141		https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-jwbon_201511_2_VIDEO
+144	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_144_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_144_VIDEO
+147	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_147_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-pksjj_147_VIDEO
+152	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_152_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-osg_40_VIDEO
+153	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_153_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-osg_50_VIDEO
+154	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_154_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-osg_60_VIDEO
+155	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_155_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-osg_72_VIDEO
+156	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_156_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-osg_75_VIDEO
+157	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_157_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-osg_83_VIDEO
+158	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_158_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-jwbcov23_1_VIDEO
+159	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_159_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-osg_100_VIDEO
+160	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_160_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-osg_94_VIDEO
+161	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_161_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-osg_103_VIDEO
+162	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_162_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-osg_109_VIDEO
+163	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-sjjc_163_AUDIO	https://www.jw.org/finder?srcid=share&wtlocale=VT&lank=pub-jwbcov26_1_VIDEO
+164	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-osg_126_AUDIO	https://www.jw.org/finder?srcid=jwlshare&wtlocale=VT&lank=pub-osg_126_VIDEO

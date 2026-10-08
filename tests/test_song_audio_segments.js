@@ -57,6 +57,7 @@ const MOCK = `(() => {
   const cfg = window.__segCfg = {none: {}, skew: {}, noMarkers: {}, interlude: {}, outro99: {}, seekTo: null, dur: 0.4, step: 0.5};
   const realFetch = window.fetch.bind(window);
   window.fetch = function (u, o) {
+    if(String(u).includes('/apis/mediator/')) return Promise.resolve({ok:true,status:200,json:()=>Promise.resolve({media:[]})});
     const m = /pub-media\\/GETPUBMEDIALINKS.*pub=(\\w+)&track=(\\d+)&langwritten=(\\w+)/.exec(String(u));
     if (!m) return realFetch(u, o);
     const [, pub, track, code] = m, key = pub + ':' + track + ':' + code;
@@ -82,7 +83,14 @@ const MOCK = `(() => {
       }
       if (kind === 'kingdom' || cfg.outro99[key]) markers.push({startTime: f(t), duration: f(2), mepsParagraphId: 99});   // the outro
     }
-    const files = {}; files[code] = {MP3: [{file: {url: 'https://cfp2.jw-cdn.org/a/t/' + pub + '_' + code + '_' + track + '.mp3'}, markers: markers ? {markers} : null, duration: 300}]};
+    // Synthetic same-recording paragraph proof: only for the mocked player test.
+    const locale = code === 'VT' ? 'vi' : ({KO:'ko',J:'ja',E:'en'})[code];
+    const texts = box ? [...box.querySelectorAll(sel)].filter(e => SING(e.textContent)).map(e => e.textContent.normalize('NFC').replace(/[‘’]/g, String.fromCharCode(39)).replace(/[“”]/g,String.fromCharCode(34)).replace(/^\\s*\\d+[.．。]\\s*/, '').replace(/\\s+/g,' ').trim()) : [];
+    const proof = (markers || []).map((m,i) => ({s:0,e:0,m:i,pid:m.mepsParagraphId})).filter(m => m.pid !== 99);
+    const toMs = x => { const [h,m,se]=x.split(':').map(Number);return Math.round((h*3600+m*60+se)*1000); };
+    proof.forEach((m,i) => { m.s=toMs(markers[m.m].startTime);m.e=m.s+toMs(markers[m.m].duration);m.text=texts[i];m.enabled=true;if(cfg.interlude[key]&&i===1){m.enabled=false;m.long=40;} });
+    if(kind==='kingdom' && typeof KINGDOM_VOCAL_SEGMENTS !== 'undefined') KINGDOM_VOCAL_SEGMENTS[track+'|'+locale]={mediaKey:'pub-'+pub+'_'+track+'_AUDIO',checksum:'fixture',documentId:123,signature:(markers||[]).map(m=>[m.startTime,m.duration,m.mepsParagraphId]),lines:proof};
+    const files = {}; files[code] = {MP3: [{pub,track:+track,file: {checksum:'fixture',url: 'https://cfp2.jw-cdn.org/a/t/' + pub + '_' + code + '_' + track + '.mp3'}, markers: markers ? {markers,hash:'fixture',documentId:123,mepsLanguageSpoken:code,mepsLanguageWritten:code} : null, duration: 300}]};
     return Promise.resolve({ok: true, json: () => Promise.resolve({files})});
   };
   // an <audio> that behaves like a streamed MP3: metadata 15 ms after load(), seekable over the whole file then, a seek lands 5 ms later
@@ -118,7 +126,7 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
     await cdp.connect(); await cdp.send('Runtime.enable'); await cdp.send('Page.enable'); await cdp.send('Network.enable');
     await cdp.send('Emulation.setDeviceMetricsOverride', {width: 1000, height: 1000, deviceScaleFactor: 1, mobile: false});
     await cdp.send('Network.setUserAgentOverride', {userAgent: UA});
-    await cdp.send('Page.addScriptToEvaluateOnNewDocument', {source: engine(true) + MOCK});
+    await cdp.send('Page.addScriptToEvaluateOnNewDocument', {source: engine(true) + "Object.defineProperty(window, 'KINGDOM_VI_VOCAL_SOURCE_MAP', {get(){return null;},set(){},configurable:true});" + MOCK});
     const errs = [];
     cdp.on('Runtime.exceptionThrown', e => errs.push('exception ' + e.exceptionDetails.text + ' ' + ((e.exceptionDetails.exception || {}).description || '').slice(0, 160)));
     const E = async expr => { const r = await cdp.send('Runtime.evaluate', {expression: expr, awaitPromise: true, returnByValue: true, userGesture: true}); if (r.exceptionDetails) errs.push('eval ' + ((r.exceptionDetails.exception || {}).description || '').slice(0, 200)); return r.result.value; };
@@ -133,7 +141,7 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
       await cdp.send('Input.dispatchMouseEvent', {type: 'mouseReleased', x: 2, y: 2, button: 'left', clickCount: 1}); await sleep(150);
     };
     // the mock's timeline of a song: line k (0-based, pid-99 markers left out) starts at 1 + 0.5k, plus a 3 s interlude before line 3
-    const START = k => 1 + 0.5 * k + (k >= 2 ? 3 : 0), TGT = k => (START(k) - 0.04).toFixed(2);
+    const START = k => 1 + 0.5 * k + (k >= 2 ? 3 : 0), TGT = k => (START(k) - 0).toFixed(2);
     const OPEN = (lang, cfgJs) => `(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));window.setLang(${JSON.stringify(lang)});await sleep(300);${cfgJs || ''}
       document.querySelector('.tab-btn[data-tab="sentence"]').click();await sleep(300);document.querySelector('.subtab-btn[data-sentence="song"]').click();await sleep(900);
       const box=document.querySelector('[data-seg-kind="kingdom"]'); for(let i=0;i<40&&box&&!box.querySelector('.song-seg-btn');i++) await sleep(50); await sleep(100); return 1;})()`;
@@ -176,6 +184,7 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
         const r2=[...document.querySelectorAll('#curr-songs-root .song-list-row')].find(r=>r.dataset.songNum==='2'); if(r2){ r2.click(); await sleep(900);}
         const v2=btns('[data-seg="play"][data-seg-id$="|vi"]'); o.song2={n:v2.length, idx:v2.map(b=>+b.dataset.segI), unique:new Set(v2.map(b=>b.dataset.segM)).size};
         return o;})()`);
+      if (!r || !r.fetched) throw Error(JSON.stringify({r,errs}));
       const tag = `kingdom ${lang}`;
       ok(r.viRows >= 12, `${tag}: a ▶ ↻ pair on every singable Vietnamese line (${r.viRows})`);
       if (lang === 'ko') ok(r.tgtRows === r.viRows, `${tag}: and on every target line (${r.tgtRows} / ${r.viRows})`);

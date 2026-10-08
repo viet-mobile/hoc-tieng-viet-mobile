@@ -1044,6 +1044,7 @@ def build_data_js(site):
         songs_data_js = open("songs_data.js", encoding="utf-8").read()
         song_meanings_js = open("song_meanings.js", encoding="utf-8").read()
         data_js += "\n" + songs_data_js + "\n" + song_meanings_js + "\n"
+        data_js += open("song_vocal_segments.js", encoding="utf-8").read() + "\n"
         # 「여호와의 친구가 되세요」 songs: titles and jw.org links (kid_songs_data.json); lyric lines are filled only
         # from the instructor's own spreadsheet, never typed in here.
         # The jw.org page addresses of that file ("url", "collectionUrl": article pages, not jwlshare finder links) are

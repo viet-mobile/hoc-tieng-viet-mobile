@@ -10132,7 +10132,7 @@ function verifyDistribution(units, dist, pins) {
   // Instrumental (sjji) editions are not sung, so they are never a source. The markers used are always those of the selected recording.
   var SONG_SEG_API = "https://b.jw-cdn.org/apis/pub-media/GETPUBMEDIALINKS?output=json&fileformat=MP3&alllangs=0";
   var SONG_SEG_GAP_MS = 250;        // silence between two plays of the same part (the music's own, not the speech timings)
-  var SONG_SEG_PRE_MS = 40;         // a little before the marker so the first syllable is not clipped
+  var SONG_SEG_PRE_MS = 0;          // never include unverified audio before the official vocal marker
   var SONG_SEG_SEEK_TOL_MS = 100;   // a seek that lands further from its target than this is not played (never "from 0 then")
   var SONG_SEG_NON_VOCAL_PID = 99;  // jw.org's paragraph id of a marker that is no paragraph of the text: an interlude or the outro, no one sings there
   var SONG_SEG_LONG_X = 2.5, SONG_SEG_LONG_MIN_MS = 15000;   // a "line" this much longer than the others holds an interlude / the outro: no button for it
@@ -10140,9 +10140,22 @@ function verifyDistribution(units, dist, pins) {
   function songSegSingable(t) { t = String(t || "").trim(); return !!t && !SONG_SEG_STRUCT.test(t); }
   // The recordings of a song of a collection, in order of priority: [[publication, track], ...] as jw.org's media API names them (never
   // computed from a position in a list). The first that exists in the language is the recording; a later one is only for when it does not.
-  function songSegPubs(kind, key) {
+  function songSegPubs(kind, key, lang) {
     var k = String(key), m;
-    if (kind === "kingdom") return [["sjjc", parseInt(k, 10)], ["pksjj", parseInt(k, 10)]];
+    if (kind === "kingdom") {
+      if (!/^(?:[1-9]|[1-9][0-9]|1[0-5][0-9]|16[0-4])$/.test(k)) return null;
+      // Attachment's explicit exception is a different publication, not Kingdom track 164.
+      if (lang === "vi" && k === "164") return [["osg", 126]];
+      var sources = [["sjjc", parseInt(k, 10)], ["pksjj", parseInt(k, 10)]];
+      var listed = typeof KINGDOM_VI_VOCAL_SOURCES !== "undefined" && lang === "vi" && KINGDOM_VI_VOCAL_SOURCES[k];
+      if (listed) {
+        var match = /^pub-(sjjc|pksjj)_(\d+)_AUDIO$/.exec(listed);
+        if (!match || parseInt(match[2], 10) !== parseInt(k, 10)) return null;
+        sources = [["sjjc", parseInt(k, 10)]];
+        sources.push(["pksjj", parseInt(match[2], 10)]);
+      }
+      return sources;
+    }
     if (kind === "original" && (m = /^osg-(\d+)$/.exec(k))) return [["osg", parseInt(m[1], 10)]];
     if (kind === "children") {
       if ((m = /^pkon-(\d+)$/.exec(k))) return [["pkon", parseInt(m[1], 10)]];
@@ -10183,35 +10196,108 @@ function verifyDistribution(units, dist, pins) {
   var songSegAsk = {};
   function songSegFetch(pub, track, code) {
     return fetch(SONG_SEG_API + "&pub=" + pub + "&track=" + track + "&langwritten=" + code, { credentials: "omit" })
-      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (res) { if (res.status === 404) return null; if (!res.ok) throw new Error("media request failed"); return res.json(); })
       .then(function (j) {
-        var f = j && j.files && j.files[code] && j.files[code].MP3 && j.files[code].MP3[0];
+        var files = j && j.files && j.files[code] && j.files[code].MP3;
+        var f = files && files.filter(function (x) { return x.pub === pub && x.track === track; })[0];
         var url = f && f.file && f.file.url;
         return url && /^https:\/\/[a-z0-9.-]+\.jw-cdn\.org\//.test(url) ? f : null;
-      })
-      .catch(function () { return null; });
+      });
+  }
+  function songSegText(t) { return String(t || "").normalize("NFC").replace(/[‘’]/g, "\'").replace(/[“”]/g, '"').replace(/^\s*\d+[.．。]\s*/, "").replace(/\s+/g, " ").trim(); }
+  function songSegVideo(key, code) {
+    code = code || "VT";
+    if (!/^pub-(?:sjjc|pksjj|osg|jwbon|jwbcov[0-9]+)_[0-9_]+_VIDEO$/.test(key)) return Promise.reject(new Error("invalid vocal video key"));
+    return fetch("https://b.jw-cdn.org/apis/mediator/v1/media-items/" + code + "/" + key + "?clientType=www", { credentials: "omit" })
+      .then(function (res) { if (res.status === 404) return null; if (!res.ok) throw new Error("video request failed"); return res.json(); })
+      .then(function (j) {
+        if (!j || !j.media || !j.media.length) return null;
+        if (!j.language || j.language.languageCode !== code) throw new Error("video language mismatch");
+        var media = j.media.filter(function (m) { return m.languageAgnosticNaturalKey === key && m.naturalKey.indexOf("_" + code + "_") >= 0; })[0];
+        if (!media) throw new Error("video identity mismatch");
+        var file = media.files.filter(function (f) { return f.label === "360p" && f.mimetype === "video/mp4"; })[0];
+        if (!file || !/^https:\/\/[a-z0-9.-]+\.jw-cdn\.org\//.test(file.progressiveDownloadURL)) throw new Error("invalid vocal video file");
+        return file;
+      });
+  }
+  // Vietnamese source-backed video/voice alignment. Audio markers are never transferred to a different recording.
+  // Check both general choir media before asking for children; a failed request is not evidence of absence.
+  function songSegResolveVi(key) {
+    var map = KINGDOM_VI_VOCAL_SOURCE_MAP[key], proof = KINGDOM_VOCAL_SEGMENTS[key + "|vi"];
+    var adultVideo = map.video && map.video.indexOf("pub-pksjj_") !== 0 ? map.video : null;
+    var adultAudio = key === "164" ? ["osg", 126] : ["sjjc", parseInt(key, 10)];
+    return Promise.all([songSegFetch(adultAudio[0], adultAudio[1], "VT"), songSegVideo("pub-sjjc_" + key + "_VIDEO"), adultVideo ? songSegVideo(adultVideo) : Promise.resolve(null)])
+      .then(function (general) {
+        var hasGeneral = !!(general[0] || general[1] || general[2]);
+        function validated(file, video) {
+          if (!proof || !file || proof.format !== (video ? "MP4" : "MP3") || proof.checksum !== (video ? file.checksum : file.file.checksum)) {
+            return { src: hasGeneral ? "sjjc" : "pksjj", marks: null, reason: "vocal alignment missing or recording changed" };
+          }
+          return { src: proof.src, mediaKey: proof.mediaKey, url: video ? file.progressiveDownloadURL : file.file.url,
+            marks: proof.lines, reason: "", nonVocal: 0, timingMethod: proof.timingMethod };
+        }
+        if (hasGeneral) {
+          if (!proof || proof.src === "pksjj") return { src: "sjjc", marks: null, reason: "general choir exists; children not eligible" };
+          if (proof.format === "MP3" && proof.mediaKey === "pub-" + adultAudio[0] + "_" + adultAudio[1] + "_AUDIO") return validated(general[0], false);
+          if (proof.mediaKey === adultVideo) return validated(general[2], true);
+          if (proof.mediaKey === "pub-sjjc_" + key + "_VIDEO") return validated(general[1], true);
+          return { src: "sjjc", marks: null, reason: "selected general choir recording unavailable" };
+        }
+        // No general choir audio OR video exists: only now is a children's recording eligible.
+        if (!proof || proof.src !== "pksjj") return { src: "pksjj", marks: null, reason: "no validated children's vocal alignment" };
+        if (proof.format === "MP4" && proof.mediaKey === map.video && map.video === "pub-pksjj_" + key + "_VIDEO") return songSegVideo(map.video).then(function (file) { return validated(file, true); });
+        if (proof.format === "MP3" && proof.mediaKey === "pub-pksjj_" + key + "_AUDIO") return songSegFetch("pksjj", parseInt(key, 10), "VT").then(function (file) { return validated(file, false); });
+        return { src: "pksjj", marks: null, reason: "unverified children's recording identity" };
+      });
   }
   // Resolves (once) the recording of a song in a language: the first publication of songSegPubs() that has the language, with that very
   // recording's own markers (never another recording's, never another language's).
   function songSegResolve(kind, key, lang) {
     var id = kind + "|" + key + "|" + lang;
     if (songSegAsk[id]) return songSegAsk[id];
-    var pubs = songSegPubs(kind, key), loc = songJwLocale(lang);
+    if (kind === "kingdom" && lang === "vi" && typeof KINGDOM_VI_VOCAL_SOURCE_MAP !== "undefined" && KINGDOM_VI_VOCAL_SOURCE_MAP && KINGDOM_VI_VOCAL_SOURCE_MAP[key]) {
+      songSegAsk[id] = songSegResolveVi(String(key)).catch(function () { return { marks: null, reason: "vocal source request failed; no fallback" }; })
+        .then(function (info) { songSegInfo[id] = info; return info; });
+      return songSegAsk[id];
+    }
+    var pubs = songSegPubs(kind, key, lang), loc = songJwLocale(lang);
     if (!pubs || !loc || typeof fetch !== "function") return (songSegAsk[id] = Promise.resolve(null));
     var i = 0;
     function next() {
       if (i >= pubs.length) return Promise.resolve(null);
       var pub = pubs[i][0], track = pubs[i][1]; i++;
-      return songSegFetch(pub, track, loc[0]).then(function (f) {
+      var fileRequest;
+      if (kind === "kingdom" && pub === "pksjj") {
+        fileRequest = songSegVideo("pub-sjjc_" + key + "_VIDEO", loc[0]).then(function (video) {
+          if (video) return { generalVideoOnly: true };
+          return songSegFetch(pub, track, loc[0]);
+        });
+      } else fileRequest = songSegFetch(pub, track, loc[0]);
+      return fileRequest.then(function (f) {
+        if (f && f.generalVideoOnly) return { src: "sjjc", marks: null, reason: "general choir video exists; no validated same-recording alignment" };
         if (!f) return next();   // this language has no such recording: the next source, if any
         var mk = f.markers && f.markers.markers, parsed = mk && mk.length ? songSegMarks(mk) : { marks: null, reason: "no markers" };
-        return { src: pub, mediaKey: "pub-" + pub + "_" + track + "_AUDIO", url: f.file.url, marks: parsed.marks, reason: parsed.reason, nonVocal: parsed.nonVocal || 0 };
+        var mediaKey = "pub-" + pub + "_" + track + "_AUDIO";
+        if (kind === "kingdom") {
+          var verified = typeof KINGDOM_VOCAL_SEGMENTS !== "undefined" && KINGDOM_VOCAL_SEGMENTS[key + "|" + lang];
+          var signature = (mk || []).map(function (m) { return [m.startTime, m.duration, m.mepsParagraphId]; });
+          var meta = f.markers || {};
+          if (!verified || verified.mediaKey !== mediaKey || verified.checksum !== f.file.checksum ||
+              meta.hash !== f.file.checksum || meta.documentId !== verified.documentId ||
+              meta.mepsLanguageSpoken !== loc[0] || meta.mepsLanguageWritten !== loc[0] ||
+              JSON.stringify(signature) !== JSON.stringify(verified.signature)) {
+            parsed = { marks: null, reason: "unverified vocal paragraph mapping or changed recording" };
+          } else {
+            parsed = { marks: verified.lines, reason: "", nonVocal: parsed.nonVocal };
+          }
+        }
+        return { src: pub, mediaKey: mediaKey, url: f.file.url, marks: parsed.marks, reason: parsed.reason, nonVocal: parsed.nonVocal || 0 };
       });
     }
-    songSegAsk[id] = next().then(function (info) { songSegInfo[id] = info; return info; });
+    songSegAsk[id] = next().catch(function () { return { marks: null, reason: "source request failed; fallback not authorized by absence" }; }).then(function (info) { songSegInfo[id] = info; return info; });
     return songSegAsk[id];
   }
-  var songSeg = { audio: null, token: 0, btn: null, loop: false, raf: 0, timer: 0, url: "" };
+  var songSeg = { audio: null, token: 0, btn: null, loop: false, raf: 0, timer: 0, url: "", cleanups: [] };
   function songSegLog(line) { if (speechDebugOn) speechDiagPanel("song " + line); }
   function songSegMarkUi(on) {
     var b = songSeg.btn;
@@ -10228,6 +10314,7 @@ function verifyDistribution(units, dist, pins) {
   // pending callback of the run before (metadata, seeked, play promise, the end watcher, the repeat timer) a no-op.
   function songSegStop() {
     songSeg.token++;
+    songSeg.cleanups.splice(0).forEach(function (cancel) { cancel(); });
     if (songSeg.raf) { cancelAnimationFrame(songSeg.raf); songSeg.raf = 0; }
     if (songSeg.timer) { clearTimeout(songSeg.timer); songSeg.timer = 0; }
     try { if (songSeg.audio && !songSeg.audio.paused) songSeg.audio.pause(); } catch (eP) { /* no-op */ }
@@ -10245,7 +10332,7 @@ function verifyDistribution(units, dist, pins) {
     var info = songSegInfo[btn.getAttribute("data-seg-id")], i = parseInt(btn.getAttribute("data-seg-i"), 10), mark = info && info.marks && info.marks[i];
     stopAllSpeech();   // speech (and 전체 듣기) and the music never run together
     songSegStop();
-    if (!mark) return;
+    if (!mark || (btn.getAttribute("data-seg-id").indexOf("kingdom|") === 0 && !mark.enabled)) return;
     ensurePlaybackSession("song audio");
     var my = songSeg.token;
     songSeg.btn = btn; songSeg.loop = loop;
@@ -10255,11 +10342,21 @@ function verifyDistribution(units, dist, pins) {
     songSegLog((loop ? "↻" : "▶") + " " + info.src + " " + info.mediaKey + " line " + (i + 1) + " marker " + mark.m + " " + (mark.s / 1000).toFixed(3) + "-" + (mark.e / 1000).toFixed(3) + " s");
     function alive() { return songSeg.token === my && btn.isConnected; }
     function fail(why) { songSegLog("stopped: " + why); if (songSeg.token === my) songSegStop(); }
-    function once(ev, fn, ms) {   // the next event, or the guard after ms (fn(true) then); nothing once the run is over
+    function once(ev, fn, ms) {
       var done = false, t = 0;
-      function h(byTimer) { if (done) return; done = true; a.removeEventListener(ev, h); if (t) clearTimeout(t); if (alive()) fn(!!byTimer); }
-      a.addEventListener(ev, function onEv() { a.removeEventListener(ev, onEv); h(false); });
-      if (ms) t = setTimeout(function () { h(true); }, ms);
+      function cleanup() {
+        a.removeEventListener(ev, onEvent);
+        if (t) clearTimeout(t);
+        var i = songSeg.cleanups.indexOf(cancel);
+        if (i >= 0) songSeg.cleanups.splice(i, 1);
+      }
+      function finish(byTimer) { if (done) return; done = true; cleanup(); if (alive()) fn(byTimer); }
+      function onEvent() { finish(false); }
+      function cancel() { done = true; cleanup(); }
+      songSeg.cleanups.push(cancel);
+      a.addEventListener(ev, onEvent);
+      if (ms) t = setTimeout(function () { finish(true); }, ms);
+      return cancel;
     }
     function watch() {
       if (!alive()) { if (songSeg.token === my) songSegStop(); return; }
@@ -10274,25 +10371,36 @@ function verifyDistribution(units, dist, pins) {
       songSeg.raf = requestAnimationFrame(watch);
     }
     function seekThenPlay(retried) {
+      if (!alive()) return;
+      if (!seekable()) { fail("line outside seekable ranges"); return; }
       try { if (!a.paused) a.pause(); } catch (eP) { /* no-op */ }
       once("seeked", function (byTimer) {
+        if (byTimer || a.seeking) { fail("no completed seeked event"); return; }
         var off = Math.abs(a.currentTime - target) * 1000;
         if (off > SONG_SEG_SEEK_TOL_MS) {
           songSegLog("seek landed at " + a.currentTime.toFixed(3) + " s, wanted " + target.toFixed(3) + (byTimer ? " (no seeked event)" : ""));
           if (retried) { fail("seek failed twice"); return; }
-          if (a.readyState >= 3) seekThenPlay(true); else once("canplay", function () { seekThenPlay(true); }, 8000);
+          if (a.readyState >= 3) seekThenPlay(true); else once("canplay", function (timedOut) { if (timedOut) fail("no canplay"); else seekThenPlay(true); }, 8000);
           return;
         }
         songSegLog("seeked to " + a.currentTime.toFixed(3) + " s, play");
         var p;
         try { p = a.play(); } catch (ePl) { fail("play threw"); return; }
-        if (p && p.catch) p.catch(function () { fail("play refused"); });
-        songSeg.raf = requestAnimationFrame(watch);
+        if (p && p.then) p.then(function () {
+          if (alive()) songSeg.raf = requestAnimationFrame(watch);
+          else if (!songSeg.btn) a.pause();
+        }, function () { fail("play refused"); });
+        else if (alive()) songSeg.raf = requestAnimationFrame(watch);
       }, 2000);
       try { a.currentTime = target; } catch (eS) { fail("seek threw"); }
     }
     function seekable() {
-      try { return a.seekable && a.seekable.length > 0 && a.seekable.end(a.seekable.length - 1) + 0.5 >= target; } catch (eR) { return false; }
+      try {
+        for (var r = 0; a.seekable && r < a.seekable.length; r++) {
+          if (a.seekable.start(r) <= target && a.seekable.end(r) >= mark.e / 1000) return true;
+        }
+        return false;
+      } catch (eR) { return false; }
     }
     function whenSeekable(tries) {
       if (!alive()) return;
@@ -10301,11 +10409,16 @@ function verifyDistribution(units, dist, pins) {
       once("progress", function () { whenSeekable(tries - 1); }, 1000);
     }
     a.onerror = function () { fail("audio error"); };
-    if (songSeg.url === info.url && a.readyState >= 1) { whenSeekable(10); return; }
+    if (songSeg.url === info.url) {
+      if (a.readyState >= 1) whenSeekable(10);
+      else once("loadedmetadata", function (byTimer) { if (byTimer) fail("no metadata"); else whenSeekable(10); }, 20000);
+      return;
+    }
     songSeg.url = info.url;
     a.preload = "auto"; a.src = info.url;
-    try { a.load(); } catch (eL) { fail("load threw"); return; }
+    // Register first: load() can dispatch metadata synchronously from a warm cache.
     once("loadedmetadata", function (byTimer) { if (byTimer) { fail("no metadata"); return; } whenSeekable(10); }, 20000);
+    try { a.load(); } catch (eL) { fail("load threw"); return; }
   }
   // Adds ▶ ↻ to the lines of one song box ([data-seg-kind][data-seg-key]); the box has the rows .lyric-vi-row / .lyric-target-row.
   function songSegEnhance(box) {
@@ -10329,9 +10442,13 @@ function verifyDistribution(units, dist, pins) {
           songSegLog(kind + " " + key + " " + lang + " " + info.src + ": no buttons (" + (info.reason || (info.marks.length + " sung markers, " + rows.length + " lines")) + ")");
           return;
         }
+        if (kind === "kingdom" && info.marks.some(function (mark, i) {
+          return mark.text !== songSegText(rows[i].querySelector(L[2]).textContent);
+        })) { songSegLog(kind + " " + key + " " + lang + ": official paragraph text differs from rendered lyric"); return; }
         var id = kind + "|" + key + "|" + lang, srcLabel = info.src === "pksjj" ? "CHILDREN" : "VOCALS";
         rows.forEach(function (row, i) {
           if (row.querySelector(".song-seg-btn")) return;
+          if (kind === "kingdom" && !info.marks[i].enabled) return;
           if (info.marks[i].long) { songSegLog(kind + " " + key + " " + lang + " line " + (i + 1) + ": no button, its span holds an interlude / the outro (" + info.marks[i].long + " s)"); return; }
           var common = ' data-seg-id="' + escapeAttr(id) + '" data-seg-i="' + i + '" data-seg-src="' + info.src + '" data-seg-key="' + escapeAttr(info.mediaKey) + '" data-seg-m="' + info.marks[i].m + '"' +
             (speechDebugOn ? ' title="' + srcLabel + " " + escapeAttr(info.mediaKey) + '"' : '');
@@ -10592,6 +10709,8 @@ function verifyDistribution(units, dist, pins) {
     var lyricsHtml = "", segTargetOwn = true;
     sel.lines.forEach(function (l, idx) {
       var vi = (l.vi || "").trim();
+      var viFixes = typeof KINGDOM_VI_LYRIC_FIXES !== "undefined" && KINGDOM_VI_LYRIC_FIXES[sNum];
+      if (viFixes) viFixes.forEach(function (fix) { vi = vi.split(fix[0]).join(fix[1]); });
       if (!vi) return;
       var target = songSanitize((l[currentLang] || l[koFallback] || "").trim());
 
