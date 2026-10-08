@@ -32,8 +32,8 @@ ends stop at the next lyric start. Interlude/outro official paragraphs are held
 when voice end is unproven. Enabled clips can retain ordinary pauses within a
 sung line; no acoustic separation model or listening review is claimed.
 
-54 songs were analyzed; 46 have enabled Vietnamese lines (913 total). Entirely
-held: 28,80,89,93,140,141,144,152. Thus this does not claim all 54 songs'
+54 songs were analyzed; 49 have enabled Vietnamese lines (977 total). Entirely
+held: 28,80,93,144,152. Thus this does not claim all 54 songs'
 lines are verified. Additional review is needed before enabling held candidates.
 
 Reproduction: set VOCAL_WORK (selected-source JSON and local media), VOCAL_MODEL
@@ -82,3 +82,38 @@ under the user's standing authorization for children choir timing tables.
 Titles, scripture and chorus headings receive no buttons. Inter-stanza gaps
 are excluded by the supplied boundaries. These are user annotations, not new
 official markers, listening verification or independently aligned learner vocals.
+
+## User-supplied song 89 children times (2026-10-08)
+
+The supplied 24 intervals cover three verses and three chorus occurrences.
+Vietnamese pub-pksjj_89_VIDEO is bound to checksum
+8c435816181a2b3d71c66c965fa7ce33. Learner locales use their own identified
+children choir videos with the same user-authorized times. The 02:07–02:29
+interlude is outside every interval. Titles, scripture and chorus labels get
+no buttons. Timings are user annotations, not official marker data or an
+independent cross-language vocal alignment.
+
+## Song 140 and alternate children lyrics (2026-10-08)
+
+Song 140 uses the user's 24 intervals, bound to Vietnamese children video
+pub-pksjj_140_VIDEO checksum 8cd2953b6e71ddbf4cebf64776db06a1. Each learner
+locale uses its own children recording with the user-authorized same intervals.
+
+Optional manual line vocalText and vocalTextSource hold confirmed alternate
+Vietnamese sung words. They remain separate from book text, TTS and row matching.
+The runtime displays differing words in parentheses below the Vietnamese book
+row only for a checksum-validated children recording. Punctuation-only differences
+do not create duplicate lyrics. Unconfirmed words are never inferred from forced
+alignment. Current supplied tables contain no alternate words; examples requested.
+
+## Explicit song 141 children selection (2026-10-08)
+
+The user's Korean pksjj_141 AUDIO/VIDEO links and 16 intervals explicitly
+select children choir, overriding the existing jwbon_201511_2 general video.
+Vietnamese uses its own pksjj_141_VIDEO checksum
+72cd81bcc46e28b172b5f998a0b9de3b; Korean and other learner locales keep their
+own checksum-bound children videos. selectedRecording/replacesMediaKey persist
+the explicit transition when rebuilding old general-video candidates. A changed
+children recording still fails identity validation. All 12 locales have 16 book
+lines and use the user-authorized same times. No subtitles, acoustic analysis
+or independent learner-language listening verification is claimed for this table.

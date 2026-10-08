@@ -26,7 +26,7 @@ async function run({track=1,adult=false,video=false,badHash=false,error=false}={
   assert.equal(lyrics.length,proof.lines.length);
   lyrics.forEach((text,i)=>{for(const [a,b]of fixes)text=text.split(a).join(b);assert.equal(normalize(text),proof.lines[i].text,track+':'+i);});
   assert.ok(!['sjjm','sjji'].includes(proof.src));assert.ok(proof.checksum);assert.ok(proof.lines.length);
-  if(proof.src==='pksjj')assert.ok(!proof.general_audio_exists&&!proof.general_video_exists);
+  if(proof.src==='pksjj'&&!proof.manualChildrenOverride)assert.ok(!proof.general_audio_exists&&!proof.general_video_exists);
   let end=0;for(const l of proof.lines){if(!l.enabled)continue;assert.ok(l.s>=end&&l.e>l.s&&l.e<=proof.duration*1000);end=l.e;}checks++;
  }
  console.log(`${checks} video source / manifest checks passed`);

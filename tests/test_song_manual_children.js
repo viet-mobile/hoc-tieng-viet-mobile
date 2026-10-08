@@ -15,13 +15,13 @@ async function run(lang,mode='ok',track=46) {
  }});vm.runInContext(section,ctx);return {info:await ctx.songSegResolve('kingdom',track,lang),calls,proof};
 }
 (async()=>{
- for(const track of [46,67]) for(const lang of Object.keys(codes)) {
+ for(const track of Object.keys(manuals).filter(k=>manuals[k].applyLearnerChildren!==false).map(Number)) for(const lang of Object.keys(codes)) {
   const r=await run(lang,'ok',track);assert.equal(r.info.src,'pksjj');assert.equal(r.info.marks.length,manuals[track].lines.length);
   assert.deepEqual(Array.from(r.info.marks,l=>[l.s,l.e]),manuals[track].lines.map(l=>[l.s,l.e]));
   assert.equal(r.calls.length,1);assert.ok(r.calls[0].includes('/'+codes[lang]+'/pub-pksjj_'+track+'_VIDEO'));
   assert.ok(r.proof.lines.every(l=>l.text&&l.enabled));checks++;
  }
- for(const track of [46,67]) for(const mode of ['offline','missing','changed','wrong-language','short']) {const r=await run('ko',mode,track);assert.equal(r.info.marks,null);assert.equal(r.calls.length,1);checks++;}
+ for(const track of Object.keys(manuals).filter(k=>manuals[k].applyLearnerChildren!==false).map(Number)) for(const mode of ['offline','missing','changed','wrong-language','short']) {const r=await run('ko',mode,track);assert.equal(r.info.marks,null);assert.equal(r.calls.length,1);checks++;}
  assert.equal(manual.lines[3].e,57000);assert.equal(manual.lines[4].s,64000);assert.equal(manual.lines[7].e,106000);checks++;
  console.log(checks+' shared children timing / locale identity checks passed');
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -10438,6 +10438,12 @@ function verifyDistribution(units, dist, pins) {
     once("loadedmetadata", function (byTimer) { if (byTimer) { fail("no metadata"); return; } whenSeekable(10); }, 20000);
     try { a.load(); } catch (eL) { fail("load threw"); return; }
   }
+  function songChildrenLyricHtml(kind, lang, info, mark) {
+    if (kind !== "kingdom" || lang !== "vi" || info.src !== "pksjj" || !mark.vocalText || !mark.vocalTextSource) return "";
+    function words(text) { return songSegText(text).toLocaleLowerCase("vi").replace(/[^a-zà-ỹđ]/g, ""); }
+    if (words(mark.text) === words(mark.vocalText)) return "";
+    return '<div class="song-children-lyric vn" lang="vi">(' + escapeHtml(mark.vocalText) + ')</div>';
+  }
   // Adds ▶ ↻ to the lines of one song box ([data-seg-kind][data-seg-key]); the box has the rows .lyric-vi-row / .lyric-target-row.
   function songSegEnhance(box) {
     box.setAttribute("data-seg-state", "1");
@@ -10465,6 +10471,8 @@ function verifyDistribution(units, dist, pins) {
         })) { songSegLog(kind + " " + key + " " + lang + ": official paragraph text differs from rendered lyric"); return; }
         var id = kind + "|" + key + "|" + lang, srcLabel = info.src === "pksjj" ? "CHILDREN" : "VOCALS";
         rows.forEach(function (row, i) {
+          var alternate = songChildrenLyricHtml(kind, lang, info, info.marks[i]);
+          if (alternate && !row.parentElement.querySelector(".song-children-lyric")) row.insertAdjacentHTML("afterend", alternate);
           if (row.querySelector(".song-seg-btn")) return;
           if (kind === "kingdom" && !info.marks[i].enabled) return;
           if (info.marks[i].long) { songSegLog(kind + " " + key + " " + lang + " line " + (i + 1) + ": no button, its span holds an interlude / the outro (" + info.marks[i].long + " s)"); return; }
