@@ -32,8 +32,8 @@ ends stop at the next lyric start. Interlude/outro official paragraphs are held
 when voice end is unproven. Enabled clips can retain ordinary pauses within a
 sung line; no acoustic separation model or listening review is claimed.
 
-54 songs were analyzed; 49 have enabled Vietnamese lines (977 total). Entirely
-held: 28,80,93,144,152. Thus this does not claim all 54 songs'
+54 songs were analyzed; 50 have enabled Vietnamese lines (993 total). Entirely
+held: 28,80,93,152. Thus this does not claim all 54 songs'
 lines are verified. Additional review is needed before enabling held candidates.
 
 Reproduction: set VOCAL_WORK (selected-source JSON and local media), VOCAL_MODEL
@@ -117,3 +117,10 @@ the explicit transition when rebuilding old general-video candidates. A changed
 children recording still fails identity validation. All 12 locales have 16 book
 lines and use the user-authorized same times. No subtitles, acoustic analysis
 or independent learner-language listening verification is claimed for this table.
+
+## User-supplied song 144 children times (2026-10-08)
+
+All 16 sung lines use the supplied bounds, including both chorus occurrences.
+Each of the 12 locales uses its own identified pksjj_144_VIDEO children recording
+with the user-authorized same times. The 01:04–01:08 interlude is excluded.
+Recording checksum, exact book row count and total duration remain mandatory.

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T07:55:30.057470+00:00",
+  "generated": "2026-10-08T08:03:19.184440+00:00",
   "fresh_network": false,
   "base_commit": "c7e3a3d",
   "source_priority": [
@@ -236,52 +236,52 @@
   },
   "totals": {
     "vi": {
-      "active_tracks": 49,
-      "enabled_lines": 977
+      "active_tracks": 50,
+      "enabled_lines": 993
     },
     "cs": {
-      "active_tracks": 24,
-      "enabled_lines": 560
+      "active_tracks": 25,
+      "enabled_lines": 576
     },
     "zh_cn": {
-      "active_tracks": 18,
-      "enabled_lines": 507
+      "active_tracks": 19,
+      "enabled_lines": 523
     },
     "zh": {
-      "active_tracks": 17,
-      "enabled_lines": 470
+      "active_tracks": 18,
+      "enabled_lines": 486
     },
     "en": {
       "active_tracks": 71,
-      "enabled_lines": 1516
+      "enabled_lines": 1518
     },
     "fr": {
       "active_tracks": 24,
-      "enabled_lines": 501
+      "enabled_lines": 503
     },
     "de": {
-      "active_tracks": 12,
-      "enabled_lines": 271
+      "active_tracks": 13,
+      "enabled_lines": 287
     },
     "hu": {
-      "active_tracks": 16,
-      "enabled_lines": 391
+      "active_tracks": 17,
+      "enabled_lines": 407
     },
     "id": {
       "active_tracks": 33,
-      "enabled_lines": 708
+      "enabled_lines": 710
     },
     "ja": {
-      "active_tracks": 11,
-      "enabled_lines": 185
+      "active_tracks": 12,
+      "enabled_lines": 201
     },
     "ko": {
       "active_tracks": 40,
-      "enabled_lines": 971
+      "enabled_lines": 973
     },
     "pl": {
-      "active_tracks": 12,
-      "enabled_lines": 275
+      "active_tracks": 13,
+      "enabled_lines": 291
     }
   },
   "rows": [
@@ -20486,8 +20486,8 @@
       "general_audio_exists": false,
       "general_video_exists": false,
       "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 9,
-        "lyric_occurrence_omitted_in_selected_recording": 5
+        "lyric_occurrence_omitted_in_selected_recording": 5,
+        "vocal_boundary_requires_review": 9
       }
     },
     {
@@ -57604,8 +57604,8 @@
       "general_audio_exists": false,
       "general_video_exists": false,
       "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 20,
-        "lyric_occurrence_omitted_in_selected_recording": 4
+        "lyric_occurrence_omitted_in_selected_recording": 4,
+        "vocal_boundary_requires_review": 20
       }
     },
     {
@@ -104130,185 +104130,153 @@
       ],
       "marker_count": 0,
       "singable_line_count": 16,
-      "active": false,
-      "buttons": 0,
-      "reason": "vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 16,
+      "reason": "user_supplied_line_boundaries",
       "lines": [
         {
-          "s": 3420,
-          "e": 15500,
-          "text": "Mọi người điếc mừng rỡ nay nghe trở lại.",
-          "confidence": 0.3973,
-          "min_char_score": 0.0003,
+          "s": 9000,
+          "e": 15000,
           "m": 0,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Mọi người điếc mừng rỡ nay nghe trở lại.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 16220,
-          "e": 25820,
-          "text": "Người mù sẽ nhìn thấy ngàn ánh ban mai.",
-          "confidence": 0.3572,
-          "min_char_score": 0.0,
+          "s": 16000,
+          "e": 22000,
           "m": 1,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Người mù sẽ nhìn thấy ngàn ánh ban mai.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 26280,
-          "e": 44000,
-          "text": "Bao tiếng hát trẻ thơ rộn vang đây đó.",
-          "confidence": 0.4559,
-          "min_char_score": 0.0,
+          "s": 23000,
+          "e": 29000,
           "m": 2,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Bao tiếng hát trẻ thơ rộn vang đây đó.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 45400,
-          "e": 61240,
-          "text": "Khắp chốn an vui, điệu nhạc hân hoan.",
-          "confidence": 0.5413,
-          "min_char_score": 0.0001,
+          "s": 30000,
+          "e": 36000,
           "m": 3,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Khắp chốn an vui, điệu nhạc hân hoan.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 61620,
-          "e": 80320,
-          "text": "Địa cầu chẳng còn cảnh đau thương, lệ nhòa.",
-          "confidence": 0.418,
-          "min_char_score": 0.0001,
+          "s": 36000,
+          "e": 43000,
           "m": 4,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Địa cầu chẳng còn cảnh đau thương, lệ nhòa.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 80920,
-          "e": 93800,
-          "text": "Người đã khuất được sống lại với thân nhân.",
-          "confidence": 0.3791,
-          "min_char_score": 0.0002,
+          "s": 43000,
+          "e": 49000,
           "m": 5,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Người đã khuất được sống lại với thân nhân.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 94140,
-          "e": 114400,
-          "text": "Ta sẽ thấy tương lai huy hoàng trên đất,",
-          "confidence": 0.4034,
-          "min_char_score": 0.0,
+          "s": 50000,
+          "e": 57000,
           "m": 6,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Ta sẽ thấy tương lai huy hoàng trên đất,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 117280,
-          "e": 121420,
-          "text": "nếu ta đặt phần thưởng trước mặt luôn.",
-          "confidence": 0.3773,
-          "min_char_score": 0.0032,
+          "s": 58000,
+          "e": 64000,
           "m": 7,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "nếu ta đặt phần thưởng trước mặt luôn.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 124500,
-          "e": 133300,
-          "text": "Kìa bầy gấu sưởi nắng bên cạnh đàn bò,",
-          "confidence": 0.3142,
-          "min_char_score": 0.0032,
+          "s": 68000,
+          "e": 74000,
           "m": 8,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Kìa bầy gấu sưởi nắng bên cạnh đàn bò,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 133960,
-          "e": 140040,
-          "text": "và cừu sẽ cùng sói đùa giỡn, ăn chung.",
-          "confidence": 0.2653,
-          "min_char_score": 0.0,
+          "s": 75000,
+          "e": 81000,
           "m": 9,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "và cừu sẽ cùng sói đùa giỡn, ăn chung.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 140760,
-          "e": 147700,
-          "text": "Khi đứa bé tung tăng chạy chơi với chúng,",
-          "confidence": 0.2508,
-          "min_char_score": 0.0,
+          "s": 82000,
+          "e": 88000,
           "m": 10,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Khi đứa bé tung tăng chạy chơi với chúng,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 148000,
-          "e": 153380,
-          "text": "chúng bước đi theo lời gọi thơ ngây.",
-          "confidence": 0.3192,
-          "min_char_score": 0.0012,
+          "s": 88000,
+          "e": 94000,
           "m": 11,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "chúng bước đi theo lời gọi thơ ngây.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 154240,
-          "e": 159680,
-          "text": "Vào ngày ấy nào thấy than van, buồn rầu;",
-          "confidence": 0.277,
-          "min_char_score": 0.0,
+          "s": 95000,
+          "e": 101000,
           "m": 12,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Vào ngày ấy nào thấy than van, buồn rầu;",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 159880,
-          "e": 167100,
-          "text": "mọi sợ hãi, đau đớn thuộc thuở xa xưa.",
-          "confidence": 0.2813,
-          "min_char_score": 0.0008,
+          "s": 102000,
+          "e": 108000,
           "m": 13,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "mọi sợ hãi, đau đớn thuộc thuở xa xưa.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 167780,
-          "e": 173800,
-          "text": "Ta sẽ thấy tương lai huy hoàng trên đất,",
-          "confidence": 0.1606,
-          "min_char_score": 0.0,
+          "s": 109000,
+          "e": 115000,
           "m": 14,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Ta sẽ thấy tương lai huy hoàng trên đất,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 177020,
-          "e": 186520,
-          "text": "nếu ta đặt phần thưởng trước mặt luôn.",
-          "confidence": 0.4155,
-          "min_char_score": 0.0006,
+          "s": 116000,
+          "e": 123000,
           "m": 15,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "nếu ta đặt phần thưởng trước mặt luôn.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/b8286d/2/o/pksjj_VT_144_r360P.mp4",
@@ -104316,12 +104284,10 @@
       "checksum": "e0b075606e8dd7c98ae4608a89e133e8",
       "metadata_hash": null,
       "format": "MP4",
-      "timing_method": "vietnamese_ctc_same_recording",
+      "timing_method": "user_supplied_same_recording_line_boundaries",
       "general_audio_exists": false,
       "general_video_exists": false,
-      "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 16
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 144,
@@ -104329,8 +104295,163 @@
       "jw": "B",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_144_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_144_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 16,
+      "active": true,
+      "buttons": 16,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 9000,
+          "e": 15000,
+          "m": 0,
+          "pid": null,
+          "text": "Až se vrátí zpátky mládí tvé,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 16000,
+          "e": 22000,
+          "m": 1,
+          "pid": null,
+          "text": "budeš vnímat krásy úžasné –",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 23000,
+          "e": 29000,
+          "m": 2,
+          "pid": null,
+          "text": "jak jsou z pouště tůně s rákosím,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 36000,
+          "m": 3,
+          "pid": null,
+          "text": "jak dítě zpívá, flétny zní.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 43000,
+          "m": 4,
+          "pid": null,
+          "text": "Mocný Bůh tvé blízké vzkřísí rád,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 49000,
+          "m": 5,
+          "pid": null,
+          "text": "život v míru, lásce nám chce dát.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 50000,
+          "e": 57000,
+          "m": 6,
+          "pid": null,
+          "text": "Tenhle krásný ráj všem slíbený",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 64000,
+          "m": 7,
+          "pid": null,
+          "text": "měj dál před sebou jako cíl.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 68000,
+          "e": 74000,
+          "m": 8,
+          "pid": null,
+          "text": "Bude lvíče s kůzletem si hrát,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 81000,
+          "m": 9,
+          "pid": null,
+          "text": "tele s medvědem na slunci spát,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 82000,
+          "e": 88000,
+          "m": 10,
+          "pid": null,
+          "text": "až je dítě z dálky zavolá,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 88000,
+          "e": 94000,
+          "m": 11,
+          "pid": null,
+          "text": "tak půjdou s ním, jsou poslušná.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 101000,
+          "m": 12,
+          "pid": null,
+          "text": "Tvoje trápení i neštěstí",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 108000,
+          "m": 13,
+          "pid": null,
+          "text": "jako jarní sníh se rozpustí.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 109000,
+          "e": 115000,
+          "m": 14,
+          "pid": null,
+          "text": "Tenhle krásný ráj všem slíbený",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 123000,
+          "m": 15,
+          "pid": null,
+          "text": "měj dál před sebou jako cíl.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/4b27dc/1/o/pksjj_B_144_r360P.mp4",
+      "checksum": "3f2252c06a7df4c68f119a2e67f69b8f",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 144,
@@ -104342,16 +104463,15 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 16,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/d32d17/1/o/pksjj_B_144.mp3",
-      "document_id": null,
-      "checksum": "1f9220ad311586f0c5edabfa21fd2d22",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_144_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 144,
@@ -104359,8 +104479,163 @@
       "jw": "CHS",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_144_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_144_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 16,
+      "active": true,
+      "buttons": 16,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 9000,
+          "e": 15000,
+          "m": 0,
+          "pid": null,
+          "text": "新世界映入盲人眼帘，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 16000,
+          "e": 22000,
+          "m": 1,
+          "pid": null,
+          "text": "欢笑声回荡聋人耳边，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 23000,
+          "e": 29000,
+          "m": 2,
+          "pid": null,
+          "text": "听孩童歌声飘扬原野，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 36000,
+          "m": 3,
+          "pid": null,
+          "text": "弥漫欢乐幸福滋味。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 43000,
+          "m": 4,
+          "pid": null,
+          "text": "看去世至亲重回身边，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 49000,
+          "m": 5,
+          "pid": null,
+          "text": "生活在平安美丽家园。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 50000,
+          "e": 57000,
+          "m": 6,
+          "pid": null,
+          "text": "要注视未来美好奖赏，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 64000,
+          "m": 7,
+          "pid": null,
+          "text": "上帝必实现这希望。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 68000,
+          "e": 74000,
+          "m": 8,
+          "pid": null,
+          "text": "阳光下母熊陪伴小牛，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 81000,
+          "m": 9,
+          "pid": null,
+          "text": "草原上野狼小羊同卧。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 82000,
+          "e": 88000,
+          "m": 10,
+          "pid": null,
+          "text": "在孩童呼唤带领之下，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 88000,
+          "e": 94000,
+          "m": 11,
+          "pid": null,
+          "text": "野兽既温驯又听话。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 101000,
+          "m": 12,
+          "pid": null,
+          "text": "将悲伤眼泪留给昨天，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 108000,
+          "m": 13,
+          "pid": null,
+          "text": "用欢笑喜悦迎接明天。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 109000,
+          "e": 115000,
+          "m": 14,
+          "pid": null,
+          "text": "要注视未来美好奖赏，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 123000,
+          "m": 15,
+          "pid": null,
+          "text": "上帝必实现这希望。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/d7c966/2/o/pksjj_CHS_144_r360P.mp4",
+      "checksum": "52849ef0fa28e24fb396161b2eea0dc5",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 144,
@@ -104372,16 +104647,15 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 16,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/38ddd2/1/o/pksjj_CHS_144.mp3",
-      "document_id": null,
-      "checksum": "52a4ccb0758a0b7114f5cfca2635ab7a",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_144_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 144,
@@ -104389,8 +104663,163 @@
       "jw": "CH",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_144_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_144_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 16,
+      "active": true,
+      "buttons": 16,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 9000,
+          "e": 15000,
+          "m": 0,
+          "pid": null,
+          "text": "新世界映入盲人眼簾，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 16000,
+          "e": 22000,
+          "m": 1,
+          "pid": null,
+          "text": "歡笑聲迴盪聾人耳邊，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 23000,
+          "e": 29000,
+          "m": 2,
+          "pid": null,
+          "text": "聽孩童歌聲飄揚原野，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 36000,
+          "m": 3,
+          "pid": null,
+          "text": "瀰漫歡樂幸福滋味。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 43000,
+          "m": 4,
+          "pid": null,
+          "text": "看去世至親重回身邊，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 49000,
+          "m": 5,
+          "pid": null,
+          "text": "生活在平安美麗家園。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 50000,
+          "e": 57000,
+          "m": 6,
+          "pid": null,
+          "text": "要注視未來美好獎賞，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 64000,
+          "m": 7,
+          "pid": null,
+          "text": "上帝必實現這希望。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 68000,
+          "e": 74000,
+          "m": 8,
+          "pid": null,
+          "text": "陽光下母熊陪伴小牛，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 81000,
+          "m": 9,
+          "pid": null,
+          "text": "草原上野狼小羊同臥。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 82000,
+          "e": 88000,
+          "m": 10,
+          "pid": null,
+          "text": "在孩童呼喚帶領之下，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 88000,
+          "e": 94000,
+          "m": 11,
+          "pid": null,
+          "text": "野獸既溫馴又聽話。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 101000,
+          "m": 12,
+          "pid": null,
+          "text": "將悲傷眼淚留給昨天，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 108000,
+          "m": 13,
+          "pid": null,
+          "text": "用歡笑喜悅迎接明天。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 109000,
+          "e": 115000,
+          "m": 14,
+          "pid": null,
+          "text": "要注視未來美好獎賞，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 123000,
+          "m": 15,
+          "pid": null,
+          "text": "上帝必實現這希望。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/a8daaf/2/o/pksjj_CH_144_r360P.mp4",
+      "checksum": "a7e886f3e0e981ba83a65c24928e6445",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 144,
@@ -104402,360 +104831,373 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 16,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/ca1a68/1/o/pksjj_CH_144.mp3",
-      "document_id": null,
-      "checksum": "6528d7bbc5f2a51c75d88798d7a75e02",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_144_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 144,
       "locale": "en",
       "jw": "E",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_144_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_144_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 16,
+      "active": true,
+      "buttons": 16,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 9000,
+          "e": 15000,
+          "m": 0,
+          "pid": null,
+          "text": "When the eyes of blind ones see again",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 16000,
+          "e": 22000,
+          "m": 1,
+          "pid": null,
+          "text": "And the ears of deaf ones hear again,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 23000,
+          "e": 29000,
+          "m": 2,
+          "pid": null,
+          "text": "When the songs of children fill the air",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 36000,
+          "m": 3,
+          "pid": null,
+          "text": "And joy and peace are ev'rywhere,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 43000,
+          "m": 4,
+          "pid": null,
+          "text": "When our loved ones will return to life,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 49000,
+          "m": 5,
+          "pid": null,
+          "text": "To an earth that's free from sin and strife,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 50000,
+          "e": 57000,
+          "m": 6,
+          "pid": null,
+          "text": "You will see how God these things supplies,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 64000,
+          "m": 7,
+          "pid": null,
+          "text": "If you keep your eyes on the prize.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 68000,
+          "e": 74000,
+          "m": 8,
+          "pid": null,
+          "text": "When the wolves and lambs will feed as one,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 81000,
+          "m": 9,
+          "pid": null,
+          "text": "When the bears and calves bask in the sun,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 82000,
+          "e": 88000,
+          "m": 10,
+          "pid": null,
+          "text": "Then a mere young boy will lead them all,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 88000,
+          "e": 94000,
+          "m": 11,
+          "pid": null,
+          "text": "And they will heed his childish call.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 101000,
+          "m": 12,
+          "pid": null,
+          "text": "When our tears belong to yesterday,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 108000,
+          "m": 13,
+          "pid": null,
+          "text": "When our fears and pain have passed away,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 109000,
+          "e": 115000,
+          "m": 14,
+          "pid": null,
+          "text": "You will see how God these things supplies,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 123000,
+          "m": 15,
+          "pid": null,
+          "text": "If you keep your eyes on the prize.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/39cd1b/1/o/pksjj_E_144_r360P.mp4",
+      "checksum": "9d73215840ad93133d281e3d624dd514",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 144,
           "state": "available"
         }
       ],
-      "marker_count": 17,
-      "singable_line_count": 16,
-      "active": true,
-      "buttons": 14,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 20173,
-          "e": 26967,
-          "m": 0,
-          "pid": 4,
-          "text": "When the eyes of blind ones see again",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 26968,
-          "e": 33665,
-          "m": 1,
-          "pid": 5,
-          "text": "And the ears of deaf ones hear again,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 33666,
-          "e": 40452,
-          "m": 2,
-          "pid": 6,
-          "text": "When the songs of children fill the air",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 40453,
-          "e": 47089,
-          "m": 3,
-          "pid": 7,
-          "text": "And joy and peace are ev'rywhere,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 47090,
-          "e": 53807,
-          "m": 4,
-          "pid": 8,
-          "text": "When our loved ones will return to life,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 53808,
-          "e": 60529,
-          "m": 5,
-          "pid": 9,
-          "text": "To an earth that's free from sin and strife,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 60530,
-          "e": 69052,
-          "m": 6,
-          "pid": 11,
-          "text": "You will see how God these things supplies,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 69053,
-          "e": 89476,
-          "m": 7,
-          "pid": 12,
-          "text": "If you keep your eyes on the prize.",
-          "enabled": false,
-          "reason": "possible_embedded_instrumental_span"
-        },
-        {
-          "s": 89477,
-          "e": 96233,
-          "m": 8,
-          "pid": 13,
-          "text": "When the wolves and lambs will feed as one,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96234,
-          "e": 102956,
-          "m": 9,
-          "pid": 14,
-          "text": "When the bears and calves bask in the sun,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 102957,
-          "e": 109636,
-          "m": 10,
-          "pid": 15,
-          "text": "Then a mere young boy will lead them all,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 109637,
-          "e": 116396,
-          "m": 11,
-          "pid": 16,
-          "text": "And they will heed his childish call.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 116397,
-          "e": 123223,
-          "m": 12,
-          "pid": 17,
-          "text": "When our tears belong to yesterday,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 123224,
-          "e": 130009,
-          "m": 13,
-          "pid": 18,
-          "text": "When our fears and pain have passed away,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 130010,
-          "e": 141375,
-          "m": 14,
-          "pid": 20,
-          "text": "You will see how God these things supplies,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 141376,
-          "e": 152707,
-          "m": 15,
-          "pid": 21,
-          "text": "If you keep your eyes on the prize.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_144_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/ac0e89/1/o/sjjc_E_144.mp3",
-      "document_id": 1102016944,
-      "checksum": "206e52a473b51d31e74f852b6ad84d60",
-      "metadata_hash": "206e52a473b51d31e74f852b6ad84d60",
-      "official_lyrics_url": "https://www.jw.org/en/library/music-songs/sing-out-joyfully/144-keep-eye-on-the-prize/",
-      "sung_marker_count": 16
+      "disabled_line_reasons": {}
     },
     {
       "track": 144,
       "locale": "fr",
       "jw": "F",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_144_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_144_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 16,
+      "active": true,
+      "buttons": 16,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 9000,
+          "e": 15000,
+          "m": 0,
+          "pid": null,
+          "text": "Quand l'aveugle enfin aura la vue,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 16000,
+          "e": 22000,
+          "m": 1,
+          "pid": null,
+          "text": "Quand le sourd dira « j'entends ! », ému,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 23000,
+          "e": 29000,
+          "m": 2,
+          "pid": null,
+          "text": "Quand l'enfant rira dans l'air léger,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 36000,
+          "m": 3,
+          "pid": null,
+          "text": "La joie, la paix de tous côtés,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 43000,
+          "m": 4,
+          "pid": null,
+          "text": "Quand se lèveront nos êtres chers",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 49000,
+          "m": 5,
+          "pid": null,
+          "text": "Dans un monde sans péché ni guerre...",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 50000,
+          "e": 57000,
+          "m": 6,
+          "pid": null,
+          "text": "Serons-nous présents ce jour béni ?",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 64000,
+          "m": 7,
+          "pid": null,
+          "text": "Fixons nos regards sur le prix !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 68000,
+          "e": 74000,
+          "m": 8,
+          "pid": null,
+          "text": "Quand le loup boira près de l'agneau,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 81000,
+          "m": 9,
+          "pid": null,
+          "text": "Que l'ourson jouera avec le veau,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 82000,
+          "e": 88000,
+          "m": 10,
+          "pid": null,
+          "text": "Un petit garçon pour les guider,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 88000,
+          "e": 94000,
+          "m": 11,
+          "pid": null,
+          "text": "Sa jeune voix pour les mener,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 101000,
+          "m": 12,
+          "pid": null,
+          "text": "Quand surtout les larmes vont tarir,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 108000,
+          "m": 13,
+          "pid": null,
+          "text": "Les douleurs, les peurs s'évanouir...",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 109000,
+          "e": 115000,
+          "m": 14,
+          "pid": null,
+          "text": "Serons-nous présents ce jour béni ?",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 123000,
+          "m": 15,
+          "pid": null,
+          "text": "Fixons nos regards sur le prix !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/88c31d/2/o/pksjj_F_144_r360P.mp4",
+      "checksum": "d1dcc32269ced8d898170ab52e260542",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 144,
           "state": "available"
         }
       ],
-      "marker_count": 16,
-      "singable_line_count": 16,
-      "active": true,
-      "buttons": 14,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 19707,
-          "e": 26601,
-          "m": 0,
-          "pid": 4,
-          "text": "Quand l'aveugle enfin aura la vue,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 26602,
-          "e": 33219,
-          "m": 1,
-          "pid": 5,
-          "text": "Quand le sourd dira « j'entends ! », ému,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 33220,
-          "e": 40139,
-          "m": 2,
-          "pid": 6,
-          "text": "Quand l'enfant rira dans l'air léger,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 40140,
-          "e": 46922,
-          "m": 3,
-          "pid": 7,
-          "text": "La joie, la paix de tous côtés,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 46923,
-          "e": 53549,
-          "m": 4,
-          "pid": 8,
-          "text": "Quand se lèveront nos êtres chers",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 53550,
-          "e": 60248,
-          "m": 5,
-          "pid": 9,
-          "text": "Dans un monde sans péché ni guerre...",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 60249,
-          "e": 68695,
-          "m": 6,
-          "pid": 11,
-          "text": "Serons-nous présents ce jour béni ?",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 68696,
-          "e": 89079,
-          "m": 7,
-          "pid": 12,
-          "text": "Fixons nos regards sur le prix !",
-          "enabled": false,
-          "reason": "possible_embedded_instrumental_span"
-        },
-        {
-          "s": 89080,
-          "e": 95949,
-          "m": 8,
-          "pid": 13,
-          "text": "Quand le loup boira près de l'agneau,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 95950,
-          "e": 102635,
-          "m": 9,
-          "pid": 14,
-          "text": "Que l'ourson jouera avec le veau,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 102636,
-          "e": 109434,
-          "m": 10,
-          "pid": 15,
-          "text": "Un petit garçon pour les guider,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 109435,
-          "e": 116115,
-          "m": 11,
-          "pid": 16,
-          "text": "Sa jeune voix pour les mener,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 116116,
-          "e": 122988,
-          "m": 12,
-          "pid": 17,
-          "text": "Quand surtout les larmes vont tarir,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 122989,
-          "e": 129611,
-          "m": 13,
-          "pid": 18,
-          "text": "Les douleurs, les peurs s'évanouir...",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 129612,
-          "e": 141176,
-          "m": 14,
-          "pid": 20,
-          "text": "Serons-nous présents ce jour béni ?",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 141177,
-          "e": 173501,
-          "m": 15,
-          "pid": 21,
-          "text": "Fixons nos regards sur le prix !",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_144_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/5c6a5e/1/o/sjjc_F_144.mp3",
-      "document_id": 1102016944,
-      "checksum": "cabb14361d7c68610b355c62a8e74f68",
-      "metadata_hash": "cabb14361d7c68610b355c62a8e74f68",
-      "official_lyrics_url": "https://www.jw.org/fr/biblioth%C3%A8que/musique-chansons/chantons-joyeusement/144-fixons-nos-regards-sur-le-prix/",
-      "sung_marker_count": 16
+      "disabled_line_reasons": {}
     },
     {
       "track": 144,
@@ -104763,8 +105205,163 @@
       "jw": "X",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_144_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_144_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 16,
+      "active": true,
+      "buttons": 16,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 9000,
+          "e": 15000,
+          "m": 0,
+          "pid": null,
+          "text": "Wenn der Blinde Farben sehen kann,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 16000,
+          "e": 22000,
+          "m": 1,
+          "pid": null,
+          "text": "wenn der Taube Lieder hören kann,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 23000,
+          "e": 29000,
+          "m": 2,
+          "pid": null,
+          "text": "jedes Kind dann freudig lacht und springt,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 36000,
+          "m": 3,
+          "pid": null,
+          "text": "vor Herzensfreude jeder singt.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 43000,
+          "m": 4,
+          "pid": null,
+          "text": "Wenn die Auferweckten du dann siehst,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 49000,
+          "m": 5,
+          "pid": null,
+          "text": "deine Lieben in die Arme schließt.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 50000,
+          "e": 57000,
+          "m": 6,
+          "pid": null,
+          "text": "Unser Gott verspricht uns diese Zeit.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 64000,
+          "m": 7,
+          "pid": null,
+          "text": "Schau fest auf das Ziel! Sei bereit!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 68000,
+          "e": 74000,
+          "m": 8,
+          "pid": null,
+          "text": "Friedlich weiden sieht man Wolf und Lamm,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 81000,
+          "m": 9,
+          "pid": null,
+          "text": "sogar Bär und Löwe werden zahm.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 82000,
+          "e": 88000,
+          "m": 10,
+          "pid": null,
+          "text": "Und ein kleiner Junge führt sie fort,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 88000,
+          "e": 94000,
+          "m": 11,
+          "pid": null,
+          "text": "sie hören willig auf sein Wort.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 101000,
+          "m": 12,
+          "pid": null,
+          "text": "Schmerz und Tränen längst Vergangenheit,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 108000,
+          "m": 13,
+          "pid": null,
+          "text": "jedes Herz von Leid und Angst befreit.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 109000,
+          "e": 115000,
+          "m": 14,
+          "pid": null,
+          "text": "Unser Gott verspricht uns diese Zeit.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 123000,
+          "m": 15,
+          "pid": null,
+          "text": "Schau fest auf das Ziel! Sei bereit!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/e2b290/2/o/pksjj_X_144_r360P.mp4",
+      "checksum": "27a3f0e65b1f16adfde9d6b953de368e",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 144,
@@ -104776,16 +105373,15 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 16,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/831cc40/1/o/pksjj_X_144.mp3",
-      "document_id": null,
-      "checksum": "c153c39f9864841746b3b41bdde8fae5",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_144_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 144,
@@ -104793,8 +105389,163 @@
       "jw": "H",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_144_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_144_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 16,
+      "active": true,
+      "buttons": 16,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 9000,
+          "e": 15000,
+          "m": 0,
+          "pid": null,
+          "text": "Mikor látni fog, ki most még vak,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 16000,
+          "e": 22000,
+          "m": 1,
+          "pid": null,
+          "text": "és a hallássérült mindent hall,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 23000,
+          "e": 29000,
+          "m": 2,
+          "pid": null,
+          "text": "mikor gyermekdaltól zeng a rét,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 36000,
+          "m": 3,
+          "pid": null,
+          "text": "és béke lesz a föld színén,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 43000,
+          "m": 4,
+          "pid": null,
+          "text": "ha majd újra él, kit gyászoltál,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 49000,
+          "m": 5,
+          "pid": null,
+          "text": "és a bűn megszűnt, már nincs halál,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 50000,
+          "e": 57000,
+          "m": 6,
+          "pid": null,
+          "text": "Isten jóságát átélheted.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 64000,
+          "m": 7,
+          "pid": null,
+          "text": "A díjra szegezd szemedet!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 68000,
+          "e": 74000,
+          "m": 8,
+          "pid": null,
+          "text": "Hogyha bárány s farkas együtt lesz,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 81000,
+          "m": 9,
+          "pid": null,
+          "text": "hogyha medve s borjú ott pihen,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 82000,
+          "e": 88000,
+          "m": 10,
+          "pid": null,
+          "text": "ha egy gyermek őrzi őket majd,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 88000,
+          "e": 94000,
+          "m": 11,
+          "pid": null,
+          "text": "s mindegyik szépen szót fogad,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 101000,
+          "m": 12,
+          "pid": null,
+          "text": "ha a tenger könny a múlté lesz,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 108000,
+          "m": 13,
+          "pid": null,
+          "text": "és nem érez senki félelmet,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 109000,
+          "e": 115000,
+          "m": 14,
+          "pid": null,
+          "text": "Isten jóságát átélheted.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 123000,
+          "m": 15,
+          "pid": null,
+          "text": "A díjra szegezd szemedet!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/6924ae/1/o/pksjj_H_144_r360P.mp4",
+      "checksum": "b3e3ea4235a1e05153f1e0933ddf0238",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 144,
@@ -104806,188 +105557,194 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 16,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/21366f/1/o/pksjj_H_144.mp3",
-      "document_id": null,
-      "checksum": "81fb494332bed1c081a6ee13af2d82f1",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_144_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 144,
       "locale": "id",
       "jw": "IN",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_144_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_144_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 16,
+      "active": true,
+      "buttons": 16,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 9000,
+          "e": 15000,
+          "m": 0,
+          "pid": null,
+          "text": "Terbuka mata orang buta,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 16000,
+          "e": 22000,
+          "m": 1,
+          "pid": null,
+          "text": "Terbuka telinga yang tuli.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 23000,
+          "e": 29000,
+          "m": 2,
+          "pid": null,
+          "text": "Semua anak nyanyi riang.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 36000,
+          "m": 3,
+          "pid": null,
+          "text": "Bumi damai, sungguh senang.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 43000,
+          "m": 4,
+          "pid": null,
+          "text": "Manusia bebas dari dosa.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 49000,
+          "m": 5,
+          "pid": null,
+          "text": "Bangkitlah orang yang 'ku cinta.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 50000,
+          "e": 57000,
+          "m": 6,
+          "pid": null,
+          "text": "Itulah upah dari Allah.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 64000,
+          "m": 7,
+          "pid": null,
+          "text": "Akan kuingat upahku.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 68000,
+          "e": 74000,
+          "m": 8,
+          "pid": null,
+          "text": "S'rigala main dengan domba,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 81000,
+          "m": 9,
+          "pid": null,
+          "text": "Beruang, sapi bersahabat",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 82000,
+          "e": 88000,
+          "m": 10,
+          "pid": null,
+          "text": "Dan patuh ketika dipanggil",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 88000,
+          "e": 94000,
+          "m": 11,
+          "pid": null,
+          "text": "Oleh suara anak kecil.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 101000,
+          "m": 12,
+          "pid": null,
+          "text": "'Ku takkan sakit atau takut.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 108000,
+          "m": 13,
+          "pid": null,
+          "text": "Lenyaplah duka di hatiku.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 109000,
+          "e": 115000,
+          "m": 14,
+          "pid": null,
+          "text": "Itulah upah dari Allah.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 123000,
+          "m": 15,
+          "pid": null,
+          "text": "Akan kuingat upahku.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/c99189/2/o/pksjj_IN_144_r360P.mp4",
+      "checksum": "8b4b7b4b7e43a0581d7a10227f881a3f",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 144,
           "state": "available"
         }
       ],
-      "marker_count": 17,
-      "singable_line_count": 16,
-      "active": true,
-      "buttons": 14,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 20173,
-          "e": 26967,
-          "m": 0,
-          "pid": 4,
-          "text": "Terbuka mata orang buta,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 26968,
-          "e": 33665,
-          "m": 1,
-          "pid": 5,
-          "text": "Terbuka telinga yang tuli.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 33666,
-          "e": 40452,
-          "m": 2,
-          "pid": 6,
-          "text": "Semua anak nyanyi riang.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 40453,
-          "e": 47089,
-          "m": 3,
-          "pid": 7,
-          "text": "Bumi damai, sungguh senang.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 47090,
-          "e": 53807,
-          "m": 4,
-          "pid": 8,
-          "text": "Manusia bebas dari dosa.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 53808,
-          "e": 60529,
-          "m": 5,
-          "pid": 9,
-          "text": "Bangkitlah orang yang 'ku cinta.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 60530,
-          "e": 69052,
-          "m": 6,
-          "pid": 11,
-          "text": "Itulah upah dari Allah.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 69053,
-          "e": 89476,
-          "m": 7,
-          "pid": 12,
-          "text": "Akan kuingat upahku.",
-          "enabled": false,
-          "reason": "possible_embedded_instrumental_span"
-        },
-        {
-          "s": 89477,
-          "e": 96233,
-          "m": 8,
-          "pid": 13,
-          "text": "S'rigala main dengan domba,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96234,
-          "e": 102956,
-          "m": 9,
-          "pid": 14,
-          "text": "Beruang, sapi bersahabat",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 102957,
-          "e": 109636,
-          "m": 10,
-          "pid": 15,
-          "text": "Dan patuh ketika dipanggil",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 109637,
-          "e": 116396,
-          "m": 11,
-          "pid": 16,
-          "text": "Oleh suara anak kecil.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 116397,
-          "e": 123223,
-          "m": 12,
-          "pid": 17,
-          "text": "'Ku takkan sakit atau takut.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 123224,
-          "e": 130009,
-          "m": 13,
-          "pid": 18,
-          "text": "Lenyaplah duka di hatiku.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 130010,
-          "e": 141375,
-          "m": 14,
-          "pid": 20,
-          "text": "Itulah upah dari Allah.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 141376,
-          "e": 152707,
-          "m": 15,
-          "pid": 21,
-          "text": "Akan kuingat upahku.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_144_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/8062fb7/1/o/sjjc_IN_144.mp3",
-      "document_id": 1102016944,
-      "checksum": "8103a59dda20f29119fa0f6e8e59151d",
-      "metadata_hash": "8103a59dda20f29119fa0f6e8e59151d",
-      "official_lyrics_url": "https://www.jw.org/id/perpustakaan/musik-lagu/bernyanyi-sepenuh-hati/144-kuingat-upahku/",
-      "sung_marker_count": 16
+      "disabled_line_reasons": {}
     },
     {
       "track": 144,
@@ -104995,8 +105752,163 @@
       "jw": "J",
       "attachment_media_key": null,
       "selected_source": "pksjj",
-      "media_key": "pub-pksjj_144_AUDIO",
-      "source_probes": [
+      "media_key": "pub-pksjj_144_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 16,
+      "active": true,
+      "buttons": 16,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 9000,
+          "e": 15000,
+          "m": 0,
+          "pid": null,
+          "text": "光失くした人",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 16000,
+          "e": 22000,
+          "m": 1,
+          "pid": null,
+          "text": "豊かな色を見る",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 23000,
+          "e": 29000,
+          "m": 2,
+          "pid": null,
+          "text": "音を失くした人",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 36000,
+          "m": 3,
+          "pid": null,
+          "text": "歌声聞こえる",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 43000,
+          "m": 4,
+          "pid": null,
+          "text": "再び命得た",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 49000,
+          "m": 5,
+          "pid": null,
+          "text": "家族を抱き締める",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 50000,
+          "e": 57000,
+          "m": 6,
+          "pid": null,
+          "text": "そこにあなたもいる",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 64000,
+          "m": 7,
+          "pid": null,
+          "text": "報い見つめれば",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 68000,
+          "e": 74000,
+          "m": 8,
+          "pid": null,
+          "text": "羊とライオンが",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 81000,
+          "m": 9,
+          "pid": null,
+          "text": "草の上で遊ぶ",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 82000,
+          "e": 88000,
+          "m": 10,
+          "pid": null,
+          "text": "痛みも傷もない",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 88000,
+          "e": 94000,
+          "m": 11,
+          "pid": null,
+          "text": "悩みも病も",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 101000,
+          "m": 12,
+          "pid": null,
+          "text": "悲しみの涙が",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 108000,
+          "m": 13,
+          "pid": null,
+          "text": "笑顔に変わる時",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 109000,
+          "e": 115000,
+          "m": 14,
+          "pid": null,
+          "text": "そこにあなたもいる",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 123000,
+          "m": 15,
+          "pid": null,
+          "text": "報い見つめれば",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/bd8db5/1/o/pksjj_J_144_r360P.mp4",
+      "checksum": "5e565bc5a8c9b0c8afa6c9fb1f37fbe9",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 144,
@@ -105008,214 +105920,373 @@
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 16,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/f28a3e/1/o/pksjj_J_144.mp3",
-      "document_id": null,
-      "checksum": "da5678c8de9ea040a20197d29f75e56e",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_144_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 144,
       "locale": "ko",
       "jw": "KO",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_144_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_144_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 16,
+      "active": true,
+      "buttons": 16,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 9000,
+          "e": 15000,
+          "m": 0,
+          "pid": null,
+          "text": "눈먼 사람 다시 앞 보며",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 16000,
+          "e": 22000,
+          "m": 1,
+          "pid": null,
+          "text": "듣지 못하던 귀 열리고,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 23000,
+          "e": 29000,
+          "m": 2,
+          "pid": null,
+          "text": "아이들의 노랫소리와",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 36000,
+          "m": 3,
+          "pid": null,
+          "text": "평화와 기쁨 넘칠 때,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 43000,
+          "m": 4,
+          "pid": null,
+          "text": "사랑하는 사람 되찾고",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 49000,
+          "m": 5,
+          "pid": null,
+          "text": "죄와 죽음 다 사라지리.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 50000,
+          "e": 57000,
+          "m": 6,
+          "pid": null,
+          "text": "이 모든 일 성취되리니,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 64000,
+          "m": 7,
+          "pid": null,
+          "text": "계속 상을 바라보라.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 68000,
+          "e": 74000,
+          "m": 8,
+          "pid": null,
+          "text": "양과 이리 함께 먹으며",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 81000,
+          "m": 9,
+          "pid": null,
+          "text": "소와 곰이 햇살 즐기고,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 82000,
+          "e": 88000,
+          "m": 10,
+          "pid": null,
+          "text": "어린아이의 목소리에",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 88000,
+          "e": 94000,
+          "m": 11,
+          "pid": null,
+          "text": "모든 동물이 따를 때,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 101000,
+          "m": 12,
+          "pid": null,
+          "text": "눈물은 다 어제 일 되며",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 108000,
+          "m": 13,
+          "pid": null,
+          "text": "근심 고통 다 사라지리.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 109000,
+          "e": 115000,
+          "m": 14,
+          "pid": null,
+          "text": "이 모든 일 성취되리니,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 123000,
+          "m": 15,
+          "pid": null,
+          "text": "계속 상을 바라보라.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/d8229a/3/o/pksjj_KO_144_r360P.mp4",
+      "checksum": "5962535e5fccd86edf8b914a042859a7",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 144,
           "state": "available"
         }
       ],
-      "marker_count": 17,
-      "singable_line_count": 16,
-      "active": true,
-      "buttons": 14,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 20008,
-          "e": 26802,
-          "m": 0,
-          "pid": 4,
-          "text": "눈먼 사람 다시 앞 보며",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 26803,
-          "e": 33500,
-          "m": 1,
-          "pid": 5,
-          "text": "듣지 못하던 귀 열리고,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 33501,
-          "e": 40287,
-          "m": 2,
-          "pid": 6,
-          "text": "아이들의 노랫소리와",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 40288,
-          "e": 46924,
-          "m": 3,
-          "pid": 7,
-          "text": "평화와 기쁨 넘칠 때,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 46925,
-          "e": 53642,
-          "m": 4,
-          "pid": 8,
-          "text": "사랑하는 사람 되찾고",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 53643,
-          "e": 60364,
-          "m": 5,
-          "pid": 9,
-          "text": "죄와 죽음 다 사라지리.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 60365,
-          "e": 68887,
-          "m": 6,
-          "pid": 11,
-          "text": "이 모든 일 성취되리니,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 68887,
-          "e": 89310,
-          "m": 7,
-          "pid": 12,
-          "text": "계속 상을 바라보라.",
-          "enabled": false,
-          "reason": "possible_embedded_instrumental_span"
-        },
-        {
-          "s": 89312,
-          "e": 96068,
-          "m": 8,
-          "pid": 13,
-          "text": "양과 이리 함께 먹으며",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96068,
-          "e": 102790,
-          "m": 9,
-          "pid": 14,
-          "text": "소와 곰이 햇살 즐기고,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 102791,
-          "e": 109470,
-          "m": 10,
-          "pid": 15,
-          "text": "어린아이의 목소리에",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 109472,
-          "e": 116231,
-          "m": 11,
-          "pid": 16,
-          "text": "모든 동물이 따를 때,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 116232,
-          "e": 123058,
-          "m": 12,
-          "pid": 17,
-          "text": "눈물은 다 어제 일 되며",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 123059,
-          "e": 129844,
-          "m": 13,
-          "pid": 18,
-          "text": "근심 고통 다 사라지리.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 129845,
-          "e": 141210,
-          "m": 14,
-          "pid": 20,
-          "text": "이 모든 일 성취되리니,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 141211,
-          "e": 152542,
-          "m": 15,
-          "pid": 21,
-          "text": "계속 상을 바라보라.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_144_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/c3e887e/1/o/sjjc_KO_144.mp3",
-      "document_id": 1102016944,
-      "checksum": "0418f274d7bed1f1146477ee2056e4d1",
-      "metadata_hash": "0418f274d7bed1f1146477ee2056e4d1",
-      "official_lyrics_url": "https://www.jw.org/ko/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/%EC%9D%8C%EC%95%85-%EB%85%B8%EB%9E%98/%EA%B8%B0%EC%81%A8%EC%9C%BC%EB%A1%9C-%EB%85%B8%EB%9E%98%ED%95%98%EB%9D%BC/144-%EC%83%81%EC%9D%84-%EA%B3%84%EC%86%8D-%EB%B0%94%EB%9D%BC%EB%B3%B4%EB%9D%BC/",
-      "sung_marker_count": 16
+      "disabled_line_reasons": {}
     },
     {
       "track": 144,
       "locale": "pl",
       "jw": "P",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_144_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_144_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 16,
+      "active": true,
+      "buttons": 16,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 9000,
+          "e": 15000,
+          "m": 0,
+          "pid": null,
+          "text": "Bóg przywróci wkrótce głuchym słuch,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 16000,
+          "e": 22000,
+          "m": 1,
+          "pid": null,
+          "text": "niewidomi będą widzieć znów",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 23000,
+          "e": 29000,
+          "m": 2,
+          "pid": null,
+          "text": "i radosny zabrzmi dzieci śmiech,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 30000,
+          "e": 36000,
+          "m": 3,
+          "pid": null,
+          "text": "w spokoju spać położysz się.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 36000,
+          "e": 43000,
+          "m": 4,
+          "pid": null,
+          "text": "Twoich bliskich wskrzesi dobry Bóg,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 49000,
+          "m": 5,
+          "pid": null,
+          "text": "będą żyć na ziemi wiecznie już.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 50000,
+          "e": 57000,
+          "m": 6,
+          "pid": null,
+          "text": "Takich darów Bożych poznasz smak,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 58000,
+          "e": 64000,
+          "m": 7,
+          "pid": null,
+          "text": "gdy wciąż przed oczami masz raj.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 68000,
+          "e": 74000,
+          "m": 8,
+          "pid": null,
+          "text": "Wilk z barankiem razem będzie jadł,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 75000,
+          "e": 81000,
+          "m": 9,
+          "pid": null,
+          "text": "a z cielęciem — lew się w słońcu grzał.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 82000,
+          "e": 88000,
+          "m": 10,
+          "pid": null,
+          "text": "Mały chłopiec poprowadzi je,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 88000,
+          "e": 94000,
+          "m": 11,
+          "pid": null,
+          "text": "by obok siebie pasły się.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 95000,
+          "e": 101000,
+          "m": 12,
+          "pid": null,
+          "text": "Zapomnimy, czym jest ból i lęk,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 102000,
+          "e": 108000,
+          "m": 13,
+          "pid": null,
+          "text": "nikt nie będzie ronił gorzkich łez.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 109000,
+          "e": 115000,
+          "m": 14,
+          "pid": null,
+          "text": "Takich darów Bożych poznasz smak,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 116000,
+          "e": 123000,
+          "m": 15,
+          "pid": null,
+          "text": "gdy wciąż przed oczami masz raj.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/fbe77a/1/o/pksjj_P_144_r360P.mp4",
+      "checksum": "7c880d39b725b91d1d559fb32dc32147",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 144,
           "state": "available"
         }
       ],
-      "marker_count": 18,
-      "singable_line_count": 16,
-      "active": false,
-      "buttons": 0,
-      "reason": "marker_paragraph_not_lyric",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/2c8401e/1/o/sjjc_P_144.mp3",
-      "document_id": 1102016944,
-      "checksum": "0987396657479eb6eb4bfefe71fccc38",
-      "metadata_hash": "0987396657479eb6eb4bfefe71fccc38",
-      "official_lyrics_url": "https://www.jw.org/pl/biblioteka/muzyka-pie%C5%9Bni/radosnie-spiewajmy-jehowie/144-wypartuj-rajskiego-swiata/"
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_144_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 145,

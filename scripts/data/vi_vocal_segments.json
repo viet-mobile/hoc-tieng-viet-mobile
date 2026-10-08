@@ -13384,193 +13384,159 @@
     "mediaKey": "pub-pksjj_144_VIDEO",
     "format": "MP4",
     "checksum": "e0b075606e8dd7c98ae4608a89e133e8",
-    "timingMethod": "vietnamese_ctc_same_recording",
+    "timingMethod": "user_supplied_same_recording_line_boundaries",
     "duration": 199.576,
     "url": "https://cfp2.jw-cdn.org/a/b8286d/2/o/pksjj_VT_144_r360P.mp4",
     "general_audio_exists": false,
     "general_video_exists": false,
-    "model": {
-      "model": "nguyenvulebinh/wav2vec2-base-vietnamese-250h",
-      "revision": "69e9000591623e5a4fc2f502407860bcdc0de0b2"
-    },
     "lines": [
       {
-        "s": 3420,
-        "e": 15500,
-        "text": "Mọi người điếc mừng rỡ nay nghe trở lại.",
-        "confidence": 0.3973,
-        "min_char_score": 0.0003,
+        "s": 9000,
+        "e": 15000,
         "m": 0,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Mọi người điếc mừng rỡ nay nghe trở lại.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 16220,
-        "e": 25820,
-        "text": "Người mù sẽ nhìn thấy ngàn ánh ban mai.",
-        "confidence": 0.3572,
-        "min_char_score": 0.0,
+        "s": 16000,
+        "e": 22000,
         "m": 1,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Người mù sẽ nhìn thấy ngàn ánh ban mai.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 26280,
-        "e": 44000,
-        "text": "Bao tiếng hát trẻ thơ rộn vang đây đó.",
-        "confidence": 0.4559,
-        "min_char_score": 0.0,
+        "s": 23000,
+        "e": 29000,
         "m": 2,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Bao tiếng hát trẻ thơ rộn vang đây đó.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 45400,
-        "e": 61240,
-        "text": "Khắp chốn an vui, điệu nhạc hân hoan.",
-        "confidence": 0.5413,
-        "min_char_score": 0.0001,
+        "s": 30000,
+        "e": 36000,
         "m": 3,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Khắp chốn an vui, điệu nhạc hân hoan.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 61620,
-        "e": 80320,
-        "text": "Địa cầu chẳng còn cảnh đau thương, lệ nhòa.",
-        "confidence": 0.418,
-        "min_char_score": 0.0001,
+        "s": 36000,
+        "e": 43000,
         "m": 4,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Địa cầu chẳng còn cảnh đau thương, lệ nhòa.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 80920,
-        "e": 93800,
-        "text": "Người đã khuất được sống lại với thân nhân.",
-        "confidence": 0.3791,
-        "min_char_score": 0.0002,
+        "s": 43000,
+        "e": 49000,
         "m": 5,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Người đã khuất được sống lại với thân nhân.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 94140,
-        "e": 114400,
-        "text": "Ta sẽ thấy tương lai huy hoàng trên đất,",
-        "confidence": 0.4034,
-        "min_char_score": 0.0,
+        "s": 50000,
+        "e": 57000,
         "m": 6,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Ta sẽ thấy tương lai huy hoàng trên đất,",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 117280,
-        "e": 121420,
-        "text": "nếu ta đặt phần thưởng trước mặt luôn.",
-        "confidence": 0.3773,
-        "min_char_score": 0.0032,
+        "s": 58000,
+        "e": 64000,
         "m": 7,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "nếu ta đặt phần thưởng trước mặt luôn.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 124500,
-        "e": 133300,
-        "text": "Kìa bầy gấu sưởi nắng bên cạnh đàn bò,",
-        "confidence": 0.3142,
-        "min_char_score": 0.0032,
+        "s": 68000,
+        "e": 74000,
         "m": 8,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Kìa bầy gấu sưởi nắng bên cạnh đàn bò,",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 133960,
-        "e": 140040,
-        "text": "và cừu sẽ cùng sói đùa giỡn, ăn chung.",
-        "confidence": 0.2653,
-        "min_char_score": 0.0,
+        "s": 75000,
+        "e": 81000,
         "m": 9,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "và cừu sẽ cùng sói đùa giỡn, ăn chung.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 140760,
-        "e": 147700,
-        "text": "Khi đứa bé tung tăng chạy chơi với chúng,",
-        "confidence": 0.2508,
-        "min_char_score": 0.0,
+        "s": 82000,
+        "e": 88000,
         "m": 10,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Khi đứa bé tung tăng chạy chơi với chúng,",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 148000,
-        "e": 153380,
-        "text": "chúng bước đi theo lời gọi thơ ngây.",
-        "confidence": 0.3192,
-        "min_char_score": 0.0012,
+        "s": 88000,
+        "e": 94000,
         "m": 11,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "chúng bước đi theo lời gọi thơ ngây.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 154240,
-        "e": 159680,
-        "text": "Vào ngày ấy nào thấy than van, buồn rầu;",
-        "confidence": 0.277,
-        "min_char_score": 0.0,
+        "s": 95000,
+        "e": 101000,
         "m": 12,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Vào ngày ấy nào thấy than van, buồn rầu;",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 159880,
-        "e": 167100,
-        "text": "mọi sợ hãi, đau đớn thuộc thuở xa xưa.",
-        "confidence": 0.2813,
-        "min_char_score": 0.0008,
+        "s": 102000,
+        "e": 108000,
         "m": 13,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "mọi sợ hãi, đau đớn thuộc thuở xa xưa.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 167780,
-        "e": 173800,
-        "text": "Ta sẽ thấy tương lai huy hoàng trên đất,",
-        "confidence": 0.1606,
-        "min_char_score": 0.0,
+        "s": 109000,
+        "e": 115000,
         "m": 14,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Ta sẽ thấy tương lai huy hoàng trên đất,",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
-        "s": 177020,
-        "e": 186520,
-        "text": "nếu ta đặt phần thưởng trước mặt luôn.",
-        "confidence": 0.4155,
-        "min_char_score": 0.0006,
+        "s": 116000,
+        "e": 123000,
         "m": 15,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "nếu ta đặt phần thưởng trước mặt luôn.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       }
-    ]
+    ],
+    "timingSource": "User-provided Vietnamese Kingdom song 144 children choir timing table, 2026-10-08; identical learner children intervals explicitly authorized",
+    "manualChildrenOverride": true
   },
   "147": {
     "src": "pksjj",

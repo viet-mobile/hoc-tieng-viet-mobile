@@ -681,5 +681,94 @@
         "e": 132000
       }
     ]
+  },
+  "144": {
+    "mediaKey": "pub-pksjj_144_VIDEO",
+    "checksum": "e0b075606e8dd7c98ae4608a89e133e8",
+    "format": "MP4",
+    "timingSource": "User-provided Vietnamese Kingdom song 144 children choir timing table, 2026-10-08; identical learner children intervals explicitly authorized",
+    "applyLearnerChildren": true,
+    "lines": [
+      {
+        "text": "Mọi người điếc mừng rỡ nay nghe trở lại.",
+        "s": 9000,
+        "e": 15000
+      },
+      {
+        "text": "Người mù sẽ nhìn thấy ngàn ánh ban mai.",
+        "s": 16000,
+        "e": 22000
+      },
+      {
+        "text": "Bao tiếng hát trẻ thơ rộn vang đây đó.",
+        "s": 23000,
+        "e": 29000
+      },
+      {
+        "text": "Khắp chốn an vui, điệu nhạc hân hoan.",
+        "s": 30000,
+        "e": 36000
+      },
+      {
+        "text": "Địa cầu chẳng còn cảnh đau thương, lệ nhòa.",
+        "s": 36000,
+        "e": 43000
+      },
+      {
+        "text": "Người đã khuất được sống lại với thân nhân.",
+        "s": 43000,
+        "e": 49000
+      },
+      {
+        "text": "Ta sẽ thấy tương lai huy hoàng trên đất,",
+        "s": 50000,
+        "e": 57000
+      },
+      {
+        "text": "nếu ta đặt phần thưởng trước mặt luôn.",
+        "s": 58000,
+        "e": 64000
+      },
+      {
+        "text": "Kìa bầy gấu sưởi nắng bên cạnh đàn bò,",
+        "s": 68000,
+        "e": 74000
+      },
+      {
+        "text": "và cừu sẽ cùng sói đùa giỡn, ăn chung.",
+        "s": 75000,
+        "e": 81000
+      },
+      {
+        "text": "Khi đứa bé tung tăng chạy chơi với chúng,",
+        "s": 82000,
+        "e": 88000
+      },
+      {
+        "text": "chúng bước đi theo lời gọi thơ ngây.",
+        "s": 88000,
+        "e": 94000
+      },
+      {
+        "text": "Vào ngày ấy nào thấy than van, buồn rầu;",
+        "s": 95000,
+        "e": 101000
+      },
+      {
+        "text": "mọi sợ hãi, đau đớn thuộc thuở xa xưa.",
+        "s": 102000,
+        "e": 108000
+      },
+      {
+        "text": "Ta sẽ thấy tương lai huy hoàng trên đất,",
+        "s": 109000,
+        "e": 115000
+      },
+      {
+        "text": "nếu ta đặt phần thưởng trước mặt luôn.",
+        "s": 116000,
+        "e": 123000
+      }
+    ]
   }
 }
