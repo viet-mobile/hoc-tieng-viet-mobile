@@ -770,5 +770,174 @@
         "e": 123000
       }
     ]
+  },
+  "2": {
+    "mediaKey": "pub-pksjj_2_VIDEO",
+    "checksum": "d600878667c8c9129f346df2967f2293",
+    "format": "MP4",
+    "timingSource": "User-provided Vietnamese Kingdom song 2 children choir timing table, 2026-10-08; identical learner children intervals explicitly authorized",
+    "applyLearnerChildren": true,
+    "lines": [
+      {
+        "text": "Vật muôn nơi Cha tạo ra",
+        "s": 10000,
+        "e": 14000
+      },
+      {
+        "text": "biểu dương khôn ngoan, uy quyền Cha.",
+        "s": 15000,
+        "e": 19000
+      },
+      {
+        "text": "Từ xưa qua bao đời ghi nhớ",
+        "s": 20000,
+        "e": 24000
+      },
+      {
+        "text": "về thánh danh Giê-hô-va.",
+        "s": 24000,
+        "e": 29000
+      },
+      {
+        "text": "Mừng vui khi mang đặc ân",
+        "s": 29000,
+        "e": 33000
+      },
+      {
+        "text": "sánh vai chung tay cùng dân Chúa.",
+        "s": 34000,
+        "e": 38000
+      },
+      {
+        "text": "Đến muôn nơi, cho dù xa gần,",
+        "s": 39000,
+        "e": 43000
+      },
+      {
+        "text": "truyền rao danh Cha thánh khiết.",
+        "s": 43000,
+        "e": 47000
+      },
+      {
+        "text": "Giê-hô-va, Giê-hô-va,",
+        "s": 48000,
+        "e": 53000
+      },
+      {
+        "text": "là Đấng Tối Cao muôn đời.",
+        "s": 53000,
+        "e": 57000
+      },
+      {
+        "text": "Nơi tầng trời cao hay là mặt đất,",
+        "s": 57000,
+        "e": 62000
+      },
+      {
+        "text": "chỉ có Cha không ai bằng.",
+        "s": 63000,
+        "e": 66000
+      },
+      {
+        "text": "Thần gian dối sao so được với Cha,",
+        "s": 67000,
+        "e": 71000
+      },
+      {
+        "text": "người người muôn nơi phải biết.",
+        "s": 72000,
+        "e": 76000
+      },
+      {
+        "text": "Giê-hô-va, Giê-hô-va,",
+        "s": 76000,
+        "e": 81000
+      },
+      {
+        "text": "thành kính ca khen danh Cha đời đời.",
+        "s": 81000,
+        "e": 89000
+      },
+      {
+        "text": "Trở nên như công cụ Cha,",
+        "s": 91000,
+        "e": 95000
+      },
+      {
+        "text": "chúng con luôn vâng theo lệnh Cha,",
+        "s": 96000,
+        "e": 100000
+      },
+      {
+        "text": "thực thi bao nhiêu điều Cha muốn,",
+        "s": 101000,
+        "e": 105000
+      },
+      {
+        "text": "làm thánh danh Giê-hô-va.",
+        "s": 105000,
+        "e": 109000
+      },
+      {
+        "text": "Nhờ Cha yêu thương, từ nhân,",
+        "s": 110000,
+        "e": 114000
+      },
+      {
+        "text": "chúng con mang danh hiệu Nhân Chứng.",
+        "s": 115000,
+        "e": 119000
+      },
+      {
+        "text": "Sướng vui, hân hoan và vinh dự",
+        "s": 120000,
+        "e": 123000
+      },
+      {
+        "text": "làm dân mang danh thánh Chúa.",
+        "s": 124000,
+        "e": 128000
+      },
+      {
+        "text": "Giê-hô-va, Giê-hô-va,",
+        "s": 129000,
+        "e": 133000
+      },
+      {
+        "text": "là Đấng Tối Cao muôn đời.",
+        "s": 134000,
+        "e": 137000
+      },
+      {
+        "text": "Nơi tầng trời cao hay là mặt đất,",
+        "s": 138000,
+        "e": 142000
+      },
+      {
+        "text": "chỉ có Cha không ai bằng.",
+        "s": 143000,
+        "e": 147000
+      },
+      {
+        "text": "Thần gian dối sao so được với Cha,",
+        "s": 148000,
+        "e": 152000
+      },
+      {
+        "text": "người người muôn nơi phải biết.",
+        "s": 153000,
+        "e": 157000
+      },
+      {
+        "text": "Giê-hô-va, Giê-hô-va,",
+        "s": 157000,
+        "e": 161000
+      },
+      {
+        "text": "thành kính ca khen danh Cha đời đời.",
+        "s": 162000,
+        "e": 172000
+      }
+    ]
   }
 }

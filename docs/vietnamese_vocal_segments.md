@@ -32,7 +32,7 @@ ends stop at the next lyric start. Interlude/outro official paragraphs are held
 when voice end is unproven. Enabled clips can retain ordinary pauses within a
 sung line; no acoustic separation model or listening review is claimed.
 
-54 songs were analyzed; 50 have enabled Vietnamese lines (993 total). Entirely
+54 songs were analyzed; 50 have enabled Vietnamese lines (1022 total). Entirely
 held: 28,80,93,152. Thus this does not claim all 54 songs'
 lines are verified. Additional review is needed before enabling held candidates.
 
@@ -124,3 +124,11 @@ All 16 sung lines use the supplied bounds, including both chorus occurrences.
 Each of the 12 locales uses its own identified pksjj_144_VIDEO children recording
 with the user-authorized same times. The 01:04–01:08 interlude is excluded.
 Recording checksum, exact book row count and total duration remain mandatory.
+
+## User-supplied song 2 children times (2026-10-08)
+
+All 32 sung occurrences use the supplied intervals, including both complete
+choruses. Vietnamese pksjj_2_VIDEO checksum d600878667c8c9129f346df2967f2293
+and the other 11 locales each bind their own children recording. Identical times
+are user-authorized, not independent cross-language vocal alignment. The intro,
+01:29–01:31 inter-stanza gap and outro stay outside the supplied segments.

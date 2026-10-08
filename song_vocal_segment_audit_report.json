@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T08:03:19.184440+00:00",
+  "generated": "2026-10-08T08:48:19.721575+00:00",
   "fresh_network": false,
   "base_commit": "c7e3a3d",
   "source_priority": [
@@ -237,51 +237,51 @@
   "totals": {
     "vi": {
       "active_tracks": 50,
-      "enabled_lines": 993
+      "enabled_lines": 1022
     },
     "cs": {
       "active_tracks": 25,
-      "enabled_lines": 576
+      "enabled_lines": 578
     },
     "zh_cn": {
       "active_tracks": 19,
-      "enabled_lines": 523
+      "enabled_lines": 525
     },
     "zh": {
       "active_tracks": 18,
-      "enabled_lines": 486
+      "enabled_lines": 488
     },
     "en": {
       "active_tracks": 71,
-      "enabled_lines": 1518
+      "enabled_lines": 1520
     },
     "fr": {
-      "active_tracks": 24,
-      "enabled_lines": 503
+      "active_tracks": 25,
+      "enabled_lines": 535
     },
     "de": {
-      "active_tracks": 13,
-      "enabled_lines": 287
+      "active_tracks": 14,
+      "enabled_lines": 319
     },
     "hu": {
       "active_tracks": 17,
-      "enabled_lines": 407
+      "enabled_lines": 409
     },
     "id": {
-      "active_tracks": 33,
-      "enabled_lines": 710
+      "active_tracks": 34,
+      "enabled_lines": 742
     },
     "ja": {
-      "active_tracks": 12,
-      "enabled_lines": 201
+      "active_tracks": 13,
+      "enabled_lines": 233
     },
     "ko": {
       "active_tracks": 40,
-      "enabled_lines": 973
+      "enabled_lines": 975
     },
     "pl": {
-      "active_tracks": 13,
-      "enabled_lines": 291
+      "active_tracks": 14,
+      "enabled_lines": 323
     }
   },
   "rows": [
@@ -1294,360 +1294,296 @@
       "marker_count": 0,
       "singable_line_count": 32,
       "active": true,
-      "buttons": 3,
-      "reason": "same_recording_vocal_analysis",
+      "buttons": 32,
+      "reason": "user_supplied_line_boundaries",
       "lines": [
         {
-          "s": 10440,
-          "e": 13420,
-          "text": "Vật muôn nơi Cha tạo ra",
-          "confidence": 0.4172,
-          "min_char_score": 0.0017,
+          "s": 10000,
+          "e": 14000,
           "m": 0,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Vật muôn nơi Cha tạo ra",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 15140,
-          "e": 18900,
-          "text": "biểu dương khôn ngoan, uy quyền Cha.",
-          "confidence": 0.4828,
-          "min_char_score": 0.0012,
+          "s": 15000,
+          "e": 19000,
           "m": 1,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "biểu dương khôn ngoan, uy quyền Cha.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 19920,
-          "e": 22180,
-          "text": "Từ xưa qua bao đời ghi nhớ",
-          "confidence": 0.6989,
-          "min_char_score": 0.0084,
+          "s": 20000,
+          "e": 24000,
           "m": 2,
           "pid": null,
+          "text": "Từ xưa qua bao đời ghi nhớ",
           "enabled": true,
-          "reason": "video_vocal_ctc_alignment"
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 24620,
-          "e": 28520,
-          "text": "về thánh danh Giê-hô-va.",
-          "confidence": 0.4477,
-          "min_char_score": 0.0123,
+          "s": 24000,
+          "e": 29000,
           "m": 3,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "về thánh danh Giê-hô-va.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 29420,
-          "e": 33080,
-          "text": "Mừng vui khi mang đặc ân",
-          "confidence": 0.4848,
-          "min_char_score": 0.004,
+          "s": 29000,
+          "e": 33000,
           "m": 4,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Mừng vui khi mang đặc ân",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 34180,
-          "e": 37580,
-          "text": "sánh vai chung tay cùng dân Chúa.",
-          "confidence": 0.6162,
-          "min_char_score": 0.0018,
+          "s": 34000,
+          "e": 38000,
           "m": 5,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "sánh vai chung tay cùng dân Chúa.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 38900,
-          "e": 42480,
-          "text": "Đến muôn nơi, cho dù xa gần,",
-          "confidence": 0.5413,
-          "min_char_score": 0.0003,
+          "s": 39000,
+          "e": 43000,
           "m": 6,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Đến muôn nơi, cho dù xa gần,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 43640,
-          "e": 46600,
-          "text": "truyền rao danh Cha thánh khiết.",
-          "confidence": 0.2633,
-          "min_char_score": 0.0002,
+          "s": 43000,
+          "e": 47000,
           "m": 7,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "truyền rao danh Cha thánh khiết.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 48100,
-          "e": 52620,
-          "text": "Giê-hô-va, Giê-hô-va,",
-          "confidence": 0.353,
-          "min_char_score": 0.0004,
+          "s": 48000,
+          "e": 53000,
           "m": 8,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Giê-hô-va, Giê-hô-va,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 53160,
-          "e": 56800,
-          "text": "là Đấng Tối Cao muôn đời.",
-          "confidence": 0.5795,
-          "min_char_score": 0.0006,
+          "s": 53000,
+          "e": 57000,
           "m": 9,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "là Đấng Tối Cao muôn đời.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 57620,
-          "e": 62100,
-          "text": "Nơi tầng trời cao hay là mặt đất,",
-          "confidence": 0.5186,
-          "min_char_score": 0.0028,
+          "s": 57000,
+          "e": 62000,
           "m": 10,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Nơi tầng trời cao hay là mặt đất,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 62680,
-          "e": 66320,
-          "text": "chỉ có Cha không ai bằng.",
-          "confidence": 0.6004,
-          "min_char_score": 0.0006,
+          "s": 63000,
+          "e": 66000,
           "m": 11,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "chỉ có Cha không ai bằng.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 67100,
-          "e": 71200,
-          "text": "Thần gian dối sao so được với Cha,",
-          "confidence": 0.5213,
-          "min_char_score": 0.0177,
+          "s": 67000,
+          "e": 71000,
           "m": 12,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Thần gian dối sao so được với Cha,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 71860,
-          "e": 75660,
-          "text": "người người muôn nơi phải biết.",
-          "confidence": 0.3334,
-          "min_char_score": 0.0,
+          "s": 72000,
+          "e": 76000,
           "m": 13,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "người người muôn nơi phải biết.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 76620,
-          "e": 81060,
-          "text": "Giê-hô-va, Giê-hô-va,",
-          "confidence": 0.2897,
-          "min_char_score": 0.0007,
+          "s": 76000,
+          "e": 81000,
           "m": 14,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Giê-hô-va, Giê-hô-va,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 81640,
-          "e": 88680,
-          "text": "thành kính ca khen danh Cha đời đời.",
-          "confidence": 0.4346,
-          "min_char_score": 0.0035,
+          "s": 81000,
+          "e": 89000,
           "m": 15,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "thành kính ca khen danh Cha đời đời.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 91200,
-          "e": 94860,
-          "text": "Trở nên như công cụ Cha,",
-          "confidence": 0.6619,
-          "min_char_score": 0.0557,
+          "s": 91000,
+          "e": 95000,
           "m": 16,
           "pid": null,
+          "text": "Trở nên như công cụ Cha,",
           "enabled": true,
-          "reason": "video_vocal_ctc_alignment"
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 95960,
-          "e": 99680,
-          "text": "chúng con luôn vâng theo lệnh Cha,",
-          "confidence": 0.7603,
-          "min_char_score": 0.043,
+          "s": 96000,
+          "e": 100000,
           "m": 17,
           "pid": null,
+          "text": "chúng con luôn vâng theo lệnh Cha,",
           "enabled": true,
-          "reason": "video_vocal_ctc_alignment"
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 100680,
-          "e": 103140,
-          "text": "thực thi bao nhiêu điều Cha muốn,",
-          "confidence": 0.6057,
-          "min_char_score": 0.0035,
+          "s": 101000,
+          "e": 105000,
           "m": 18,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "thực thi bao nhiêu điều Cha muốn,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 105420,
-          "e": 109240,
-          "text": "làm thánh danh Giê-hô-va.",
-          "confidence": 0.3847,
-          "min_char_score": 0.0007,
+          "s": 105000,
+          "e": 109000,
           "m": 19,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "làm thánh danh Giê-hô-va.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 110200,
+          "s": 110000,
           "e": 114000,
-          "text": "Nhờ Cha yêu thương, từ nhân,",
-          "confidence": 0.476,
-          "min_char_score": 0.0003,
           "m": 20,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Nhờ Cha yêu thương, từ nhân,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
           "s": 115000,
-          "e": 118760,
-          "text": "chúng con mang danh hiệu Nhân Chứng.",
-          "confidence": 0.497,
-          "min_char_score": 0.0002,
+          "e": 119000,
           "m": 21,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "chúng con mang danh hiệu Nhân Chứng.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 119740,
-          "e": 122580,
-          "text": "Sướng vui, hân hoan và vinh dự",
-          "confidence": 0.3656,
-          "min_char_score": 0.0001,
+          "s": 120000,
+          "e": 123000,
           "m": 22,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Sướng vui, hân hoan và vinh dự",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 124460,
-          "e": 128200,
-          "text": "làm dân mang danh thánh Chúa.",
-          "confidence": 0.3364,
-          "min_char_score": 0.0004,
+          "s": 124000,
+          "e": 128000,
           "m": 23,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "làm dân mang danh thánh Chúa.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 128880,
-          "e": 133420,
-          "text": "Giê-hô-va, Giê-hô-va,",
-          "confidence": 0.3037,
-          "min_char_score": 0.0008,
+          "s": 129000,
+          "e": 133000,
           "m": 24,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Giê-hô-va, Giê-hô-va,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 133900,
-          "e": 137620,
-          "text": "là Đấng Tối Cao muôn đời.",
-          "confidence": 0.342,
-          "min_char_score": 0.003,
+          "s": 134000,
+          "e": 137000,
           "m": 25,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "là Đấng Tối Cao muôn đời.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 138440,
-          "e": 142900,
-          "text": "Nơi tầng trời cao hay là mặt đất,",
-          "confidence": 0.5243,
-          "min_char_score": 0.0028,
+          "s": 138000,
+          "e": 142000,
           "m": 26,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Nơi tầng trời cao hay là mặt đất,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 143480,
-          "e": 147240,
-          "text": "chỉ có Cha không ai bằng.",
-          "confidence": 0.5145,
-          "min_char_score": 0.0,
+          "s": 143000,
+          "e": 147000,
           "m": 27,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "chỉ có Cha không ai bằng.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 147900,
-          "e": 152080,
-          "text": "Thần gian dối sao so được với Cha,",
-          "confidence": 0.4876,
-          "min_char_score": 0.0158,
+          "s": 148000,
+          "e": 152000,
           "m": 28,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Thần gian dối sao so được với Cha,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 152640,
-          "e": 155860,
-          "text": "người người muôn nơi phải biết.",
-          "confidence": 0.4712,
-          "min_char_score": 0.0002,
+          "s": 153000,
+          "e": 157000,
           "m": 29,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "người người muôn nơi phải biết.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 157380,
-          "e": 161920,
-          "text": "Giê-hô-va, Giê-hô-va,",
-          "confidence": 0.2359,
-          "min_char_score": 0.0026,
+          "s": 157000,
+          "e": 161000,
           "m": 30,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Giê-hô-va, Giê-hô-va,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 162480,
-          "e": 171340,
-          "text": "thành kính ca khen danh Cha đời đời.",
-          "confidence": 0.3238,
-          "min_char_score": 0.0002,
+          "s": 162000,
+          "e": 172000,
           "m": 31,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "thành kính ca khen danh Cha đời đời.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/b0ce42/2/o/pksjj_VT_002_r360P.mp4",
@@ -1655,2038 +1591,3563 @@
       "checksum": "d600878667c8c9129f346df2967f2293",
       "metadata_hash": null,
       "format": "MP4",
-      "timing_method": "vietnamese_ctc_same_recording",
+      "timing_method": "user_supplied_same_recording_line_boundaries",
       "general_audio_exists": false,
       "general_video_exists": false,
-      "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 29
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 2,
       "locale": "cs",
       "jw": "B",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_2_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_2_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 32,
+      "active": true,
+      "buttons": 32,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 14000,
+          "m": 0,
+          "pid": null,
+          "text": "Ty, Jehovo, jsi Bůh,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 15000,
+          "e": 19000,
+          "m": 1,
+          "pid": null,
+          "text": "máš jméno jedinečné,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 20000,
+          "e": 24000,
+          "m": 2,
+          "pid": null,
+          "text": "je nádherné a věčné,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 29000,
+          "m": 3,
+          "pid": null,
+          "text": "to tvůj lid dávno ví.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 29000,
+          "e": 33000,
+          "m": 4,
+          "pid": null,
+          "text": "A všichni uslyší,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 34000,
+          "e": 38000,
+          "m": 5,
+          "pid": null,
+          "text": "jak zemi rozeznívá,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 39000,
+          "e": 43000,
+          "m": 6,
+          "pid": null,
+          "text": "když naše srdce zpívá:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 47000,
+          "m": 7,
+          "pid": null,
+          "text": "„Náš Bůh je úžasný.\"",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 48000,
+          "e": 53000,
+          "m": 8,
+          "pid": null,
+          "text": "Jsi náš Bůh, jsi náš Bůh",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 9,
+          "pid": null,
+          "text": "a krásné jméno máš.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 57000,
+          "e": 62000,
+          "m": 10,
+          "pid": null,
+          "text": "Není žádný stejně moudrý,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 66000,
+          "m": 11,
+          "pid": null,
+          "text": "jsi Králem soucitným.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 71000,
+          "m": 12,
+          "pid": null,
+          "text": "Jen ty sám jsi všemohoucí,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 76000,
+          "m": 13,
+          "pid": null,
+          "text": "ty sám jsi nejvyšší.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 81000,
+          "m": 14,
+          "pid": null,
+          "text": "Jsi náš Bůh, jsi náš Bůh,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 89000,
+          "m": 15,
+          "pid": null,
+          "text": "jak rádi máme jméno tvé.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 91000,
+          "e": 95000,
+          "m": 16,
+          "pid": null,
+          "text": "Tvé jméno zaručí,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 96000,
+          "e": 100000,
+          "m": 17,
+          "pid": null,
+          "text": "že každý z nás se stává",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 101000,
+          "e": 105000,
+          "m": 18,
+          "pid": null,
+          "text": "tím, co tvůj záměr žádá,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 105000,
+          "e": 109000,
+          "m": 19,
+          "pid": null,
+          "text": "co vůle tvá být má.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 110000,
+          "e": 114000,
+          "m": 20,
+          "pid": null,
+          "text": "Jsme tvoji svědkové,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 115000,
+          "e": 119000,
+          "m": 21,
+          "pid": null,
+          "text": "jsme, Jehovo, tak šťastní,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 123000,
+          "m": 22,
+          "pid": null,
+          "text": "že jako lid nás vlastníš,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 23,
+          "pid": null,
+          "text": "své jméno dal jsi nám.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 133000,
+          "m": 24,
+          "pid": null,
+          "text": "Jsi náš Bůh, jsi náš Bůh",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 134000,
+          "e": 137000,
+          "m": 25,
+          "pid": null,
+          "text": "a krásné jméno máš.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 142000,
+          "m": 26,
+          "pid": null,
+          "text": "Není žádný stejně moudrý,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 143000,
+          "e": 147000,
+          "m": 27,
+          "pid": null,
+          "text": "jsi Králem soucitným.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 148000,
+          "e": 152000,
+          "m": 28,
+          "pid": null,
+          "text": "Jen ty sám jsi všemohoucí,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 153000,
+          "e": 157000,
+          "m": 29,
+          "pid": null,
+          "text": "ty sám jsi nejvyšší.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 157000,
+          "e": 161000,
+          "m": 30,
+          "pid": null,
+          "text": "Jsi náš Bůh, jsi náš Bůh,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 162000,
+          "e": 172000,
+          "m": 31,
+          "pid": null,
+          "text": "jak rádi máme jméno tvé.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/bb9399/1/o/pksjj_B_002_r360P.mp4",
+      "checksum": "668d17c115dbc3dc0b1df59bcc0d4786",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 2,
           "state": "available"
         }
       ],
-      "marker_count": 34,
-      "singable_line_count": 32,
-      "active": true,
-      "buttons": 30,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 20196,
-          "e": 25060,
-          "m": 0,
-          "pid": 4,
-          "text": "Ty, Jehovo, jsi Bůh,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 25060,
-          "e": 30336,
-          "m": 1,
-          "pid": 5,
-          "text": "máš jméno jedinečné,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 30337,
-          "e": 35352,
-          "m": 2,
-          "pid": 6,
-          "text": "je nádherné a věčné,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 35352,
-          "e": 40610,
-          "m": 3,
-          "pid": 7,
-          "text": "to tvůj lid dávno ví.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 40612,
-          "e": 45580,
-          "m": 4,
-          "pid": 8,
-          "text": "A všichni uslyší,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 45581,
-          "e": 50591,
-          "m": 5,
-          "pid": 9,
-          "text": "jak zemi rozeznívá,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 50592,
-          "e": 55762,
-          "m": 6,
-          "pid": 10,
-          "text": "když naše srdce zpívá:",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 55763,
-          "e": 60580,
-          "m": 7,
-          "pid": 11,
-          "text": "„Náš Bůh je úžasný.\"",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 60581,
-          "e": 66037,
-          "m": 8,
-          "pid": 13,
-          "text": "Jsi náš Bůh, jsi náš Bůh",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 66038,
-          "e": 70460,
-          "m": 9,
-          "pid": 14,
-          "text": "a krásné jméno máš.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 70461,
-          "e": 75917,
-          "m": 10,
-          "pid": 15,
-          "text": "Není žádný stejně moudrý,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 75918,
-          "e": 80665,
-          "m": 11,
-          "pid": 16,
-          "text": "jsi Králem soucitným.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 80666,
-          "e": 86209,
-          "m": 12,
-          "pid": 17,
-          "text": "Jen ty sám jsi všemohoucí,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 86210,
-          "e": 91068,
-          "m": 13,
-          "pid": 18,
-          "text": "ty sám jsi nejvyšší.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 91069,
-          "e": 96223,
-          "m": 14,
-          "pid": 19,
-          "text": "Jsi náš Bůh, jsi náš Bůh,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96223,
-          "e": 104935,
-          "m": 15,
-          "pid": 20,
-          "text": "jak rádi máme jméno tvé.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
-        },
-        {
-          "s": 111409,
-          "e": 116360,
-          "m": 17,
-          "pid": 21,
-          "text": "Tvé jméno zaručí,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 116361,
-          "e": 121422,
-          "m": 18,
-          "pid": 22,
-          "text": "že každý z nás se stává",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 121423,
-          "e": 126525,
-          "m": 19,
-          "pid": 23,
-          "text": "tím, co tvůj záměr žádá,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 126526,
-          "e": 131558,
-          "m": 20,
-          "pid": 24,
-          "text": "co vůle tvá být má.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 131558,
-          "e": 136445,
-          "m": 21,
-          "pid": 25,
-          "text": "Jsme tvoji svědkové,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 136446,
-          "e": 141553,
-          "m": 22,
-          "pid": 26,
-          "text": "jsme, Jehovo, tak šťastní,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 141555,
-          "e": 146511,
-          "m": 23,
-          "pid": 27,
-          "text": "že jako lid nás vlastníš,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 146512,
-          "e": 151722,
-          "m": 24,
-          "pid": 28,
-          "text": "své jméno dal jsi nám.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 151723,
-          "e": 156960,
-          "m": 25,
-          "pid": 30,
-          "text": "Jsi náš Bůh, jsi náš Bůh",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 156961,
-          "e": 161581,
-          "m": 26,
-          "pid": 31,
-          "text": "a krásné jméno máš.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 161582,
-          "e": 166649,
-          "m": 27,
-          "pid": 32,
-          "text": "Není žádný stejně moudrý,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 166650,
-          "e": 171630,
-          "m": 28,
-          "pid": 33,
-          "text": "jsi Králem soucitným.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 171630,
-          "e": 177160,
-          "m": 29,
-          "pid": 34,
-          "text": "Jen ty sám jsi všemohoucí,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 177161,
-          "e": 182020,
-          "m": 30,
-          "pid": 35,
-          "text": "ty sám jsi nejvyšší.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 182021,
-          "e": 187210,
-          "m": 31,
-          "pid": 36,
-          "text": "Jsi náš Bůh, jsi náš Bůh,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 187211,
-          "e": 201235,
-          "m": 32,
-          "pid": 37,
-          "text": "jak rádi máme jméno tvé.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_2_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/0f39e56/1/o/sjjc_B_002.mp3",
-      "document_id": 1102016802,
-      "checksum": "a838883c62409454fb6310fe43db461f",
-      "metadata_hash": "a838883c62409454fb6310fe43db461f",
-      "official_lyrics_url": "https://www.jw.org/cs/knihovna/hudba-pisne/radostne-zpivejme/2-tve-jmeno-je-jehova/",
-      "sung_marker_count": 32
+      "disabled_line_reasons": {}
     },
     {
       "track": 2,
       "locale": "zh_cn",
       "jw": "CHS",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_2_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_2_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 32,
+      "active": true,
+      "buttons": 32,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 14000,
+          "m": 0,
+          "pid": null,
+          "text": "永恒的耶和华，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 15000,
+          "e": 19000,
+          "m": 1,
+          "pid": null,
+          "text": "万物都因你存在。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 20000,
+          "e": 24000,
+          "m": 2,
+          "pid": null,
+          "text": "你的名从不更改，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 29000,
+          "m": 3,
+          "pid": null,
+          "text": "流传千秋万代。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 29000,
+          "e": 33000,
+          "m": 4,
+          "pid": null,
+          "text": "我们多么荣幸，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 34000,
+          "e": 38000,
+          "m": 5,
+          "pid": null,
+          "text": "成为你名下子民，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 39000,
+          "e": 43000,
+          "m": 6,
+          "pid": null,
+          "text": "向人宣扬你圣名，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 47000,
+          "m": 7,
+          "pid": null,
+          "text": "荣耀赞美上帝。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 48000,
+          "e": 53000,
+          "m": 8,
+          "pid": null,
+          "text": "耶和华，耶和华，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 9,
+          "pid": null,
+          "text": "没有别神像你。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 57000,
+          "e": 62000,
+          "m": 10,
+          "pid": null,
+          "text": "天地之间你是唯一，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 66000,
+          "m": 11,
+          "pid": null,
+          "text": "谁能与你相比？",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 71000,
+          "m": 12,
+          "pid": null,
+          "text": "全人类都当称颂你，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 76000,
+          "m": 13,
+          "pid": null,
+          "text": "至高全能上帝。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 81000,
+          "m": 14,
+          "pid": null,
+          "text": "耶和华，耶和华，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 89000,
+          "m": 15,
+          "pid": null,
+          "text": "你永远是独一上帝。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 91000,
+          "e": 95000,
+          "m": 16,
+          "pid": null,
+          "text": "永恒的耶和华",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 96000,
+          "e": 100000,
+          "m": 17,
+          "pid": null,
+          "text": "能按照自己心意，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 101000,
+          "e": 105000,
+          "m": 18,
+          "pid": null,
+          "text": "赐我们所需能力，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 105000,
+          "e": 109000,
+          "m": 19,
+          "pid": null,
+          "text": "达成伟大旨意。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 110000,
+          "e": 114000,
+          "m": 20,
+          "pid": null,
+          "text": "我们多么感恩，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 115000,
+          "e": 119000,
+          "m": 21,
+          "pid": null,
+          "text": "拥有这独特身分，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 123000,
+          "m": 22,
+          "pid": null,
+          "text": "为你的名作见证，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 23,
+          "pid": null,
+          "text": "敬奉崇拜真神。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 133000,
+          "m": 24,
+          "pid": null,
+          "text": "耶和华，耶和华，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 134000,
+          "e": 137000,
+          "m": 25,
+          "pid": null,
+          "text": "没有别神像你。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 142000,
+          "m": 26,
+          "pid": null,
+          "text": "天地之间你是唯一，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 143000,
+          "e": 147000,
+          "m": 27,
+          "pid": null,
+          "text": "谁能与你相比？",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 148000,
+          "e": 152000,
+          "m": 28,
+          "pid": null,
+          "text": "全人类都当称颂你，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 153000,
+          "e": 157000,
+          "m": 29,
+          "pid": null,
+          "text": "至高全能上帝。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 157000,
+          "e": 161000,
+          "m": 30,
+          "pid": null,
+          "text": "耶和华，耶和华，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 162000,
+          "e": 172000,
+          "m": 31,
+          "pid": null,
+          "text": "你永远是独一上帝。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/af0bca3/1/o/pksjj_CHS_002_r360P.mp4",
+      "checksum": "58710444bdb2b73b2f37e7a757d8b00f",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 2,
           "state": "available"
         }
       ],
-      "marker_count": 34,
-      "singable_line_count": 32,
-      "active": true,
-      "buttons": 30,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 20480,
-          "e": 25513,
-          "m": 0,
-          "pid": 4,
-          "text": "永恒的耶和华，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 25514,
-          "e": 30638,
-          "m": 1,
-          "pid": 5,
-          "text": "万物都因你存在。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 30639,
-          "e": 35535,
-          "m": 2,
-          "pid": 6,
-          "text": "你的名从不更改，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 35536,
-          "e": 40649,
-          "m": 3,
-          "pid": 7,
-          "text": "流传千秋万代。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 40650,
-          "e": 45641,
-          "m": 4,
-          "pid": 8,
-          "text": "我们多么荣幸，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 45642,
-          "e": 50809,
-          "m": 5,
-          "pid": 9,
-          "text": "成为你名下子民，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 50810,
-          "e": 55812,
-          "m": 6,
-          "pid": 10,
-          "text": "向人宣扬你圣名，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 55813,
-          "e": 60777,
-          "m": 7,
-          "pid": 11,
-          "text": "荣耀赞美上帝。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 60778,
-          "e": 65892,
-          "m": 8,
-          "pid": 13,
-          "text": "耶和华，耶和华，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 65893,
-          "e": 70585,
-          "m": 9,
-          "pid": 14,
-          "text": "没有别神像你。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 70586,
-          "e": 75996,
-          "m": 10,
-          "pid": 15,
-          "text": "天地之间你是唯一，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 75997,
-          "e": 80747,
-          "m": 11,
-          "pid": 16,
-          "text": "谁能与你相比？",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 80748,
-          "e": 86068,
-          "m": 12,
-          "pid": 17,
-          "text": "全人类都当称颂你，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 86069,
-          "e": 91177,
-          "m": 13,
-          "pid": 18,
-          "text": "至高全能上帝。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 91178,
-          "e": 96283,
-          "m": 14,
-          "pid": 19,
-          "text": "耶和华，耶和华，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96284,
-          "e": 106203,
-          "m": 15,
-          "pid": 20,
-          "text": "你永远是独一上帝。",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
-        },
-        {
-          "s": 111370,
-          "e": 116474,
-          "m": 17,
-          "pid": 21,
-          "text": "永恒的耶和华",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 116475,
-          "e": 121492,
-          "m": 18,
-          "pid": 22,
-          "text": "能按照自己心意，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 121493,
-          "e": 126515,
-          "m": 19,
-          "pid": 23,
-          "text": "赐我们所需能力，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 126516,
-          "e": 131627,
-          "m": 20,
-          "pid": 24,
-          "text": "达成伟大旨意。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 131628,
-          "e": 136649,
-          "m": 21,
-          "pid": 25,
-          "text": "我们多么感恩，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 136650,
-          "e": 141711,
-          "m": 22,
-          "pid": 26,
-          "text": "拥有这独特身分，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 141712,
-          "e": 146681,
-          "m": 23,
-          "pid": 27,
-          "text": "为你的名作见证，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 146682,
-          "e": 151887,
-          "m": 24,
-          "pid": 28,
-          "text": "敬奉崇拜真神。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 151888,
-          "e": 156891,
-          "m": 25,
-          "pid": 30,
-          "text": "耶和华，耶和华，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 156892,
-          "e": 161535,
-          "m": 26,
-          "pid": 31,
-          "text": "没有别神像你。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 161536,
-          "e": 166996,
-          "m": 27,
-          "pid": 32,
-          "text": "天地之间你是唯一，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 166997,
-          "e": 171652,
-          "m": 28,
-          "pid": 33,
-          "text": "谁能与你相比？",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 171653,
-          "e": 177103,
-          "m": 29,
-          "pid": 34,
-          "text": "全人类都当称颂你，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 177104,
-          "e": 182015,
-          "m": 30,
-          "pid": 35,
-          "text": "至高全能上帝。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 182016,
-          "e": 187145,
-          "m": 31,
-          "pid": 36,
-          "text": "耶和华，耶和华，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 187146,
-          "e": 199714,
-          "m": 32,
-          "pid": 37,
-          "text": "你永远是独一上帝。",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_2_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/c3b94d/2/o/sjjc_CHS_002.mp3",
-      "document_id": 1102016802,
-      "checksum": "ae1f8be3ff04a2a897be573313a87cde",
-      "metadata_hash": "ae1f8be3ff04a2a897be573313a87cde",
-      "official_lyrics_url": "https://www.jw.org/cmn-hans/%E5%A4%9A%E5%AA%92%E4%BD%93%E5%9B%BE%E4%B9%A6%E9%A6%86/%E9%9F%B3%E4%B9%90/%E9%AB%98%E5%A3%B0%E6%AC%A2%E5%94%B1/2%E4%BD%A0%E7%9A%84%E5%90%8D%E6%98%AF%E8%80%B6%E5%92%8C%E5%8D%8E/",
-      "sung_marker_count": 32
+      "disabled_line_reasons": {}
     },
     {
       "track": 2,
       "locale": "zh",
       "jw": "CH",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_2_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_2_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 32,
+      "active": true,
+      "buttons": 32,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 14000,
+          "m": 0,
+          "pid": null,
+          "text": "永恆的耶和華，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 15000,
+          "e": 19000,
+          "m": 1,
+          "pid": null,
+          "text": "萬物都因你存在。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 20000,
+          "e": 24000,
+          "m": 2,
+          "pid": null,
+          "text": "你的名從不更改，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 29000,
+          "m": 3,
+          "pid": null,
+          "text": "流傳千秋萬代。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 29000,
+          "e": 33000,
+          "m": 4,
+          "pid": null,
+          "text": "我們多麼榮幸，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 34000,
+          "e": 38000,
+          "m": 5,
+          "pid": null,
+          "text": "成為你名下子民，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 39000,
+          "e": 43000,
+          "m": 6,
+          "pid": null,
+          "text": "向人宣揚你聖名，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 47000,
+          "m": 7,
+          "pid": null,
+          "text": "榮耀讚美上帝。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 48000,
+          "e": 53000,
+          "m": 8,
+          "pid": null,
+          "text": "耶和華，耶和華，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 9,
+          "pid": null,
+          "text": "沒有別神像你。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 57000,
+          "e": 62000,
+          "m": 10,
+          "pid": null,
+          "text": "天地之間你是唯一，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 66000,
+          "m": 11,
+          "pid": null,
+          "text": "誰能與你相比？",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 71000,
+          "m": 12,
+          "pid": null,
+          "text": "全人類都當稱頌你，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 76000,
+          "m": 13,
+          "pid": null,
+          "text": "至高全能上帝。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 81000,
+          "m": 14,
+          "pid": null,
+          "text": "耶和華，耶和華，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 89000,
+          "m": 15,
+          "pid": null,
+          "text": "你永遠是獨一上帝。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 91000,
+          "e": 95000,
+          "m": 16,
+          "pid": null,
+          "text": "永恆的耶和華",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 96000,
+          "e": 100000,
+          "m": 17,
+          "pid": null,
+          "text": "能按照自己心意，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 101000,
+          "e": 105000,
+          "m": 18,
+          "pid": null,
+          "text": "賜我們所需能力，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 105000,
+          "e": 109000,
+          "m": 19,
+          "pid": null,
+          "text": "達成偉大旨意。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 110000,
+          "e": 114000,
+          "m": 20,
+          "pid": null,
+          "text": "我們多麼感恩，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 115000,
+          "e": 119000,
+          "m": 21,
+          "pid": null,
+          "text": "擁有這獨特身分，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 123000,
+          "m": 22,
+          "pid": null,
+          "text": "為你的名作見證，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 23,
+          "pid": null,
+          "text": "敬奉崇拜真神。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 133000,
+          "m": 24,
+          "pid": null,
+          "text": "耶和華，耶和華，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 134000,
+          "e": 137000,
+          "m": 25,
+          "pid": null,
+          "text": "沒有別神像你。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 142000,
+          "m": 26,
+          "pid": null,
+          "text": "天地之間你是唯一，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 143000,
+          "e": 147000,
+          "m": 27,
+          "pid": null,
+          "text": "誰能與你相比？",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 148000,
+          "e": 152000,
+          "m": 28,
+          "pid": null,
+          "text": "全人類都當稱頌你，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 153000,
+          "e": 157000,
+          "m": 29,
+          "pid": null,
+          "text": "至高全能上帝。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 157000,
+          "e": 161000,
+          "m": 30,
+          "pid": null,
+          "text": "耶和華，耶和華，",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 162000,
+          "e": 172000,
+          "m": 31,
+          "pid": null,
+          "text": "你永遠是獨一上帝。",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/9c19de/1/o/pksjj_CH_002_r360P.mp4",
+      "checksum": "9e2053964965d238c85d85378f2a021a",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 2,
           "state": "available"
         }
       ],
-      "marker_count": 34,
-      "singable_line_count": 32,
-      "active": true,
-      "buttons": 30,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 20480,
-          "e": 25513,
-          "m": 0,
-          "pid": 4,
-          "text": "永恆的耶和華，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 25514,
-          "e": 30638,
-          "m": 1,
-          "pid": 5,
-          "text": "萬物都因你存在。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 30639,
-          "e": 35535,
-          "m": 2,
-          "pid": 6,
-          "text": "你的名從不更改，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 35536,
-          "e": 40649,
-          "m": 3,
-          "pid": 7,
-          "text": "流傳千秋萬代。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 40650,
-          "e": 45641,
-          "m": 4,
-          "pid": 8,
-          "text": "我們多麼榮幸，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 45642,
-          "e": 50809,
-          "m": 5,
-          "pid": 9,
-          "text": "成為你名下子民，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 50810,
-          "e": 55812,
-          "m": 6,
-          "pid": 10,
-          "text": "向人宣揚你聖名，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 55813,
-          "e": 60777,
-          "m": 7,
-          "pid": 11,
-          "text": "榮耀讚美上帝。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 60778,
-          "e": 65892,
-          "m": 8,
-          "pid": 13,
-          "text": "耶和華，耶和華，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 65893,
-          "e": 70585,
-          "m": 9,
-          "pid": 14,
-          "text": "沒有別神像你。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 70586,
-          "e": 75996,
-          "m": 10,
-          "pid": 15,
-          "text": "天地之間你是唯一，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 75997,
-          "e": 80747,
-          "m": 11,
-          "pid": 16,
-          "text": "誰能與你相比？",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 80748,
-          "e": 86068,
-          "m": 12,
-          "pid": 17,
-          "text": "全人類都當稱頌你，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 86069,
-          "e": 91177,
-          "m": 13,
-          "pid": 18,
-          "text": "至高全能上帝。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 91178,
-          "e": 96283,
-          "m": 14,
-          "pid": 19,
-          "text": "耶和華，耶和華，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96284,
-          "e": 106203,
-          "m": 15,
-          "pid": 20,
-          "text": "你永遠是獨一上帝。",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
-        },
-        {
-          "s": 111370,
-          "e": 116474,
-          "m": 17,
-          "pid": 21,
-          "text": "永恆的耶和華",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 116475,
-          "e": 121492,
-          "m": 18,
-          "pid": 22,
-          "text": "能按照自己心意，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 121493,
-          "e": 126515,
-          "m": 19,
-          "pid": 23,
-          "text": "賜我們所需能力，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 126516,
-          "e": 131627,
-          "m": 20,
-          "pid": 24,
-          "text": "達成偉大旨意。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 131628,
-          "e": 136649,
-          "m": 21,
-          "pid": 25,
-          "text": "我們多麼感恩，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 136650,
-          "e": 141711,
-          "m": 22,
-          "pid": 26,
-          "text": "擁有這獨特身分，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 141712,
-          "e": 146681,
-          "m": 23,
-          "pid": 27,
-          "text": "為你的名作見證，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 146682,
-          "e": 151887,
-          "m": 24,
-          "pid": 28,
-          "text": "敬奉崇拜真神。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 151888,
-          "e": 156891,
-          "m": 25,
-          "pid": 30,
-          "text": "耶和華，耶和華，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 156892,
-          "e": 161535,
-          "m": 26,
-          "pid": 31,
-          "text": "沒有別神像你。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 161536,
-          "e": 166996,
-          "m": 27,
-          "pid": 32,
-          "text": "天地之間你是唯一，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 166997,
-          "e": 171652,
-          "m": 28,
-          "pid": 33,
-          "text": "誰能與你相比？",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 171653,
-          "e": 177103,
-          "m": 29,
-          "pid": 34,
-          "text": "全人類都當稱頌你，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 177104,
-          "e": 182015,
-          "m": 30,
-          "pid": 35,
-          "text": "至高全能上帝。",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 182016,
-          "e": 187145,
-          "m": 31,
-          "pid": 36,
-          "text": "耶和華，耶和華，",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 187146,
-          "e": 199714,
-          "m": 32,
-          "pid": 37,
-          "text": "你永遠是獨一上帝。",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_2_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/2b5a5bb/2/o/sjjc_CH_002.mp3",
-      "document_id": 1102016802,
-      "checksum": "508626e883d1d11477b90f14d5bf2614",
-      "metadata_hash": "508626e883d1d11477b90f14d5bf2614",
-      "official_lyrics_url": "https://www.jw.org/cmn-hant/%E5%A4%9A%E5%AA%92%E9%AB%94%E5%9C%96%E6%9B%B8%E9%A4%A8/%E9%9F%B3%E6%A8%82/%E9%AB%98%E8%81%B2%E6%AD%A1%E5%94%B1/2%E4%BD%A0%E7%9A%84%E5%90%8D%E6%98%AF%E8%80%B6%E5%92%8C%E8%8F%AF/",
-      "sung_marker_count": 32
+      "disabled_line_reasons": {}
     },
     {
       "track": 2,
       "locale": "en",
       "jw": "E",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_2_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_2_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 32,
+      "active": true,
+      "buttons": 32,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 14000,
+          "m": 0,
+          "pid": null,
+          "text": "The living and true God—",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 15000,
+          "e": 19000,
+          "m": 1,
+          "pid": null,
+          "text": "The God of all creation",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 20000,
+          "e": 24000,
+          "m": 2,
+          "pid": null,
+          "text": "In ev'ry generation—",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 29000,
+          "m": 3,
+          "pid": null,
+          "text": "Jehovah is your name.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 29000,
+          "e": 33000,
+          "m": 4,
+          "pid": null,
+          "text": "We're honored and we're proud",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 34000,
+          "e": 38000,
+          "m": 5,
+          "pid": null,
+          "text": "To be your congregation.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 39000,
+          "e": 43000,
+          "m": 6,
+          "pid": null,
+          "text": "In ev'ry tribe and nation,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 47000,
+          "m": 7,
+          "pid": null,
+          "text": "Your glory we proclaim.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 48000,
+          "e": 53000,
+          "m": 8,
+          "pid": null,
+          "text": "Jehovah, Jehovah,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 9,
+          "pid": null,
+          "text": "There is no God like you.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 57000,
+          "e": 62000,
+          "m": 10,
+          "pid": null,
+          "text": "There's no other in the heavens",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 66000,
+          "m": 11,
+          "pid": null,
+          "text": "Or on the earth below.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 71000,
+          "m": 12,
+          "pid": null,
+          "text": "You alone are God Almighty,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 76000,
+          "m": 13,
+          "pid": null,
+          "text": "And this all men must know.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 81000,
+          "m": 14,
+          "pid": null,
+          "text": "Jehovah, Jehovah,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 89000,
+          "m": 15,
+          "pid": null,
+          "text": "We have no other God but you.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 91000,
+          "e": 95000,
+          "m": 16,
+          "pid": null,
+          "text": "You cause us to become",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 96000,
+          "e": 100000,
+          "m": 17,
+          "pid": null,
+          "text": "Whatever you desire,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 101000,
+          "e": 105000,
+          "m": 18,
+          "pid": null,
+          "text": "To do as you require—",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 105000,
+          "e": 109000,
+          "m": 19,
+          "pid": null,
+          "text": "Jehovah is your name.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 110000,
+          "e": 114000,
+          "m": 20,
+          "pid": null,
+          "text": "And Witnesses for you",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 115000,
+          "e": 119000,
+          "m": 21,
+          "pid": null,
+          "text": "Is what you've kindly named us.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 123000,
+          "m": 22,
+          "pid": null,
+          "text": "We're honored you have claimed us—",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 23,
+          "pid": null,
+          "text": "A people for your name.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 133000,
+          "m": 24,
+          "pid": null,
+          "text": "Jehovah, Jehovah,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 134000,
+          "e": 137000,
+          "m": 25,
+          "pid": null,
+          "text": "There is no God like you.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 142000,
+          "m": 26,
+          "pid": null,
+          "text": "There's no other in the heavens",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 143000,
+          "e": 147000,
+          "m": 27,
+          "pid": null,
+          "text": "Or on the earth below.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 148000,
+          "e": 152000,
+          "m": 28,
+          "pid": null,
+          "text": "You alone are God Almighty,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 153000,
+          "e": 157000,
+          "m": 29,
+          "pid": null,
+          "text": "And this all men must know.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 157000,
+          "e": 161000,
+          "m": 30,
+          "pid": null,
+          "text": "Jehovah, Jehovah,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 162000,
+          "e": 172000,
+          "m": 31,
+          "pid": null,
+          "text": "We have no other God but you.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/f52a5f/1/o/pksjj_E_002_r360P.mp4",
+      "checksum": "d670397d20e13c22a5c2bca831bf498b",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 2,
           "state": "available"
         }
       ],
-      "marker_count": 34,
-      "singable_line_count": 32,
-      "active": true,
-      "buttons": 30,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 20480,
-          "e": 25513,
-          "m": 0,
-          "pid": 4,
-          "text": "The living and true God—",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 25514,
-          "e": 30638,
-          "m": 1,
-          "pid": 5,
-          "text": "The God of all creation",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 30639,
-          "e": 35535,
-          "m": 2,
-          "pid": 6,
-          "text": "In ev'ry generation—",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 35536,
-          "e": 40649,
-          "m": 3,
-          "pid": 7,
-          "text": "Jehovah is your name.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 40650,
-          "e": 45641,
-          "m": 4,
-          "pid": 8,
-          "text": "We're honored and we're proud",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 45642,
-          "e": 50809,
-          "m": 5,
-          "pid": 9,
-          "text": "To be your congregation.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 50810,
-          "e": 55812,
-          "m": 6,
-          "pid": 10,
-          "text": "In ev'ry tribe and nation,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 55813,
-          "e": 60777,
-          "m": 7,
-          "pid": 11,
-          "text": "Your glory we proclaim.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 60778,
-          "e": 65892,
-          "m": 8,
-          "pid": 13,
-          "text": "Jehovah, Jehovah,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 65893,
-          "e": 70585,
-          "m": 9,
-          "pid": 14,
-          "text": "There is no God like you.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 70586,
-          "e": 75996,
-          "m": 10,
-          "pid": 15,
-          "text": "There's no other in the heavens",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 75997,
-          "e": 80747,
-          "m": 11,
-          "pid": 16,
-          "text": "Or on the earth below.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 80748,
-          "e": 86068,
-          "m": 12,
-          "pid": 17,
-          "text": "You alone are God Almighty,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 86069,
-          "e": 91177,
-          "m": 13,
-          "pid": 18,
-          "text": "And this all men must know.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 91178,
-          "e": 96283,
-          "m": 14,
-          "pid": 19,
-          "text": "Jehovah, Jehovah,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96284,
-          "e": 106203,
-          "m": 15,
-          "pid": 20,
-          "text": "We have no other God but you.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
-        },
-        {
-          "s": 111370,
-          "e": 116474,
-          "m": 17,
-          "pid": 21,
-          "text": "You cause us to become",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 116475,
-          "e": 121492,
-          "m": 18,
-          "pid": 22,
-          "text": "Whatever you desire,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 121493,
-          "e": 126515,
-          "m": 19,
-          "pid": 23,
-          "text": "To do as you require—",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 126516,
-          "e": 131627,
-          "m": 20,
-          "pid": 24,
-          "text": "Jehovah is your name.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 131628,
-          "e": 136649,
-          "m": 21,
-          "pid": 25,
-          "text": "And Witnesses for you",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 136650,
-          "e": 141711,
-          "m": 22,
-          "pid": 26,
-          "text": "Is what you've kindly named us.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 141712,
-          "e": 146681,
-          "m": 23,
-          "pid": 27,
-          "text": "We're honored you have claimed us—",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 146682,
-          "e": 151887,
-          "m": 24,
-          "pid": 28,
-          "text": "A people for your name.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 151888,
-          "e": 156891,
-          "m": 25,
-          "pid": 30,
-          "text": "Jehovah, Jehovah,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 156892,
-          "e": 161535,
-          "m": 26,
-          "pid": 31,
-          "text": "There is no God like you.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 161536,
-          "e": 166996,
-          "m": 27,
-          "pid": 32,
-          "text": "There's no other in the heavens",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 166997,
-          "e": 171652,
-          "m": 28,
-          "pid": 33,
-          "text": "Or on the earth below.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 171653,
-          "e": 177103,
-          "m": 29,
-          "pid": 34,
-          "text": "You alone are God Almighty,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 177104,
-          "e": 182015,
-          "m": 30,
-          "pid": 35,
-          "text": "And this all men must know.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 182016,
-          "e": 187145,
-          "m": 31,
-          "pid": 36,
-          "text": "Jehovah, Jehovah,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 187146,
-          "e": 199714,
-          "m": 32,
-          "pid": 37,
-          "text": "We have no other God but you.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_2_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/e620da4/1/o/sjjc_E_002.mp3",
-      "document_id": 1102016802,
-      "checksum": "b282516a4bb0e7620056dcd1d3709ffd",
-      "metadata_hash": "b282516a4bb0e7620056dcd1d3709ffd",
-      "official_lyrics_url": "https://www.jw.org/en/library/music-songs/sing-out-joyfully/2-jehovah-is-your-name/",
-      "sung_marker_count": 32
+      "disabled_line_reasons": {}
     },
     {
       "track": 2,
       "locale": "fr",
       "jw": "F",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_2_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_2_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 32,
+      "active": true,
+      "buttons": 32,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 14000,
+          "m": 0,
+          "pid": null,
+          "text": "Seigneur et Dieu vivant,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 15000,
+          "e": 19000,
+          "m": 1,
+          "pid": null,
+          "text": "Ô Créateur tout-puissant,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 20000,
+          "e": 24000,
+          "m": 2,
+          "pid": null,
+          "text": "Ô toi qui es de tout temps,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 29000,
+          "m": 3,
+          "pid": null,
+          "text": "Ton nom est Jéhovah.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 29000,
+          "e": 33000,
+          "m": 4,
+          "pid": null,
+          "text": "Nous sommes vraiment fiers",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 34000,
+          "e": 38000,
+          "m": 5,
+          "pid": null,
+          "text": "De t'adorer sans frontières",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 39000,
+          "e": 43000,
+          "m": 6,
+          "pid": null,
+          "text": "Et de t'avoir pour seul Père.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 47000,
+          "m": 7,
+          "pid": null,
+          "text": "Ta gloire nous disons.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 48000,
+          "e": 53000,
+          "m": 8,
+          "pid": null,
+          "text": "Jéhovah, Jéhovah,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 9,
+          "pid": null,
+          "text": "Quel dieu est comme toi ?",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 57000,
+          "e": 62000,
+          "m": 10,
+          "pid": null,
+          "text": "Ni sur la terre, ni dans le ciel,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 66000,
+          "m": 11,
+          "pid": null,
+          "text": "À toi nul n'est pareil.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 71000,
+          "m": 12,
+          "pid": null,
+          "text": "Tous les hommes doivent apprendre",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 76000,
+          "m": 13,
+          "pid": null,
+          "text": "Que tu es le Très-Haut.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 81000,
+          "m": 14,
+          "pid": null,
+          "text": "Jéhovah, Jéhovah,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 89000,
+          "m": 15,
+          "pid": null,
+          "text": "Un seul est notre Dieu : c'est toi.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 91000,
+          "e": 95000,
+          "m": 16,
+          "pid": null,
+          "text": "Tu nous fais devenir",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 96000,
+          "e": 100000,
+          "m": 17,
+          "pid": null,
+          "text": "Tout ce qui fait ton plaisir,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 101000,
+          "e": 105000,
+          "m": 18,
+          "pid": null,
+          "text": "Pour toujours mieux t'obéir :",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 105000,
+          "e": 109000,
+          "m": 19,
+          "pid": null,
+          "text": "Ton nom est Jéhovah.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 110000,
+          "e": 114000,
+          "m": 20,
+          "pid": null,
+          "text": "Et grâce à ta faveur,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 115000,
+          "e": 119000,
+          "m": 21,
+          "pid": null,
+          "text": "Nous sommes tes serviteurs,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 123000,
+          "m": 22,
+          "pid": null,
+          "text": "Témoins aimés de ton cœur.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 23,
+          "pid": null,
+          "text": "Un peuple pour ton nom !",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 133000,
+          "m": 24,
+          "pid": null,
+          "text": "Jéhovah, Jéhovah,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 134000,
+          "e": 137000,
+          "m": 25,
+          "pid": null,
+          "text": "Quel dieu est comme toi ?",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 142000,
+          "m": 26,
+          "pid": null,
+          "text": "Ni sur la terre, ni dans le ciel,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 143000,
+          "e": 147000,
+          "m": 27,
+          "pid": null,
+          "text": "À toi nul n'est pareil.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 148000,
+          "e": 152000,
+          "m": 28,
+          "pid": null,
+          "text": "Tous les hommes doivent apprendre",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 153000,
+          "e": 157000,
+          "m": 29,
+          "pid": null,
+          "text": "Que tu es le Très-Haut.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 157000,
+          "e": 161000,
+          "m": 30,
+          "pid": null,
+          "text": "Jéhovah, Jéhovah,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 162000,
+          "e": 172000,
+          "m": 31,
+          "pid": null,
+          "text": "Un seul est notre Dieu : c'est toi.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/65ef07/2/o/pksjj_F_002_r360P.mp4",
+      "checksum": "0a5602bfd03067d32010cf3077efa73c",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 2,
           "state": "available"
         }
       ],
-      "marker_count": 33,
-      "singable_line_count": 32,
-      "active": false,
-      "buttons": 0,
-      "reason": "invalid_or_overlapping_markers",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/3ae0514/1/o/sjjc_F_002.mp3",
-      "document_id": 1102016802,
-      "checksum": "764a836022fca54e2236e6fc5607a586",
-      "metadata_hash": "764a836022fca54e2236e6fc5607a586",
-      "official_lyrics_url": "https://www.jw.org/fr/biblioth%C3%A8que/musique-chansons/chantons-joyeusement/2-ton-nom-est-jehovah/"
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_2_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 2,
       "locale": "de",
       "jw": "X",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_2_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_2_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 32,
+      "active": true,
+      "buttons": 32,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 14000,
+          "m": 0,
+          "pid": null,
+          "text": "O Höchster in den Höhn,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 15000,
+          "e": 19000,
+          "m": 1,
+          "pid": null,
+          "text": "Jehova ist dein Name.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 20000,
+          "e": 24000,
+          "m": 2,
+          "pid": null,
+          "text": "Den Himmel und die Erde",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 29000,
+          "m": 3,
+          "pid": null,
+          "text": "du schufst vor langer Zeit.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 29000,
+          "e": 33000,
+          "m": 4,
+          "pid": null,
+          "text": "Wie innig du uns liebst!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 34000,
+          "e": 38000,
+          "m": 5,
+          "pid": null,
+          "text": "Wir wollen für dich leben,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 39000,
+          "e": 43000,
+          "m": 6,
+          "pid": null,
+          "text": "als Zeugen von dir reden,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 47000,
+          "m": 7,
+          "pid": null,
+          "text": "von deiner Herrlichkeit.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 48000,
+          "e": 53000,
+          "m": 8,
+          "pid": null,
+          "text": "Jehova, Jehova,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 9,
+          "pid": null,
+          "text": "das Herz dir jubelt zu.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 57000,
+          "e": 62000,
+          "m": 10,
+          "pid": null,
+          "text": "Alle Menschen solln erkennen:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 66000,
+          "m": 11,
+          "pid": null,
+          "text": "Der wahre Gott bist du.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 71000,
+          "m": 12,
+          "pid": null,
+          "text": "Du allein bist ja allmächtig,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 76000,
+          "m": 13,
+          "pid": null,
+          "text": "für dich wir stehen ein.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 81000,
+          "m": 14,
+          "pid": null,
+          "text": "Jehova, Jehova,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 89000,
+          "m": 15,
+          "pid": null,
+          "text": "nur du bist Gott und wir sind dein.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 91000,
+          "e": 95000,
+          "m": 16,
+          "pid": null,
+          "text": "Was immer dir gefällt,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 96000,
+          "e": 100000,
+          "m": 17,
+          "pid": null,
+          "text": "zu dem lässt du uns werden.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 101000,
+          "e": 105000,
+          "m": 18,
+          "pid": null,
+          "text": "Jehova ist dein Name,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 105000,
+          "e": 109000,
+          "m": 19,
+          "pid": null,
+          "text": "nach dir sind wir benannt.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 110000,
+          "e": 114000,
+          "m": 20,
+          "pid": null,
+          "text": "Wir fühlen uns geehrt.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 115000,
+          "e": 119000,
+          "m": 21,
+          "pid": null,
+          "text": "Hast uns erwählt als Zeugen.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 123000,
+          "m": 22,
+          "pid": null,
+          "text": "Als Volk für deinen Namen",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 23,
+          "pid": null,
+          "text": "wir machen ihn bekannt.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 133000,
+          "m": 24,
+          "pid": null,
+          "text": "Jehova, Jehova,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 134000,
+          "e": 137000,
+          "m": 25,
+          "pid": null,
+          "text": "das Herz dir jubelt zu.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 142000,
+          "m": 26,
+          "pid": null,
+          "text": "Alle Menschen solln erkennen:",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 143000,
+          "e": 147000,
+          "m": 27,
+          "pid": null,
+          "text": "Der wahre Gott bist du.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 148000,
+          "e": 152000,
+          "m": 28,
+          "pid": null,
+          "text": "Du allein bist ja allmächtig,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 153000,
+          "e": 157000,
+          "m": 29,
+          "pid": null,
+          "text": "für dich wir stehen ein.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 157000,
+          "e": 161000,
+          "m": 30,
+          "pid": null,
+          "text": "Jehova, Jehova,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 162000,
+          "e": 172000,
+          "m": 31,
+          "pid": null,
+          "text": "nur du bist Gott und wir sind dein.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/ef179d5/2/o/pksjj_X_002_r360P.mp4",
+      "checksum": "a1161e1222e8a94aa2875491c4a66b43",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 2,
           "state": "available"
         }
       ],
-      "marker_count": 33,
-      "singable_line_count": 32,
-      "active": false,
-      "buttons": 0,
-      "reason": "marker_paragraph_not_lyric",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/211db07/1/o/sjjc_X_002.mp3",
-      "document_id": 1102016802,
-      "checksum": "12b105d44240b3fbd104549dd84e926f",
-      "metadata_hash": "12b105d44240b3fbd104549dd84e926f",
-      "official_lyrics_url": "https://www.jw.org/de/bibliothek/musik-lieder/singt-voller-freude/2-jehova-ist-dein-name/"
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_2_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 2,
       "locale": "hu",
       "jw": "H",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_2_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_2_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 32,
+      "active": true,
+      "buttons": 32,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 14000,
+          "m": 0,
+          "pid": null,
+          "text": "Ó, dicső Jehova,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 15000,
+          "e": 19000,
+          "m": 1,
+          "pid": null,
+          "text": "a kezed műve minden.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 20000,
+          "e": 24000,
+          "m": 2,
+          "pid": null,
+          "text": "Hogy ki az igaz Isten,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 29000,
+          "m": 3,
+          "pid": null,
+          "text": "feltártad réges-rég.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 29000,
+          "e": 33000,
+          "m": 4,
+          "pid": null,
+          "text": "Nagy megtiszteltetés,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 34000,
+          "e": 38000,
+          "m": 5,
+          "pid": null,
+          "text": "hogy mi lehetünk néped,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 39000,
+          "e": 43000,
+          "m": 6,
+          "pid": null,
+          "text": "mely ragyogtatja fényed",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 47000,
+          "m": 7,
+          "pid": null,
+          "text": "a nemzetek felé.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 48000,
+          "e": 53000,
+          "m": 8,
+          "pid": null,
+          "text": "Jehova, milyen szép,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 9,
+          "pid": null,
+          "text": "mily fenséges neved!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 57000,
+          "e": 62000,
+          "m": 10,
+          "pid": null,
+          "text": "Egymagad vagy a legfőbb Úr",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 66000,
+          "m": 11,
+          "pid": null,
+          "text": "az ég s a föld felett.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 71000,
+          "m": 12,
+          "pid": null,
+          "text": "Az egész világ megtudja,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 76000,
+          "m": 13,
+          "pid": null,
+          "text": "és látni fogja ezt.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 81000,
+          "m": 14,
+          "pid": null,
+          "text": "Jehova, neved szent,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 89000,
+          "m": 15,
+          "pid": null,
+          "text": "csak néked zengünk éneket!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 91000,
+          "e": 95000,
+          "m": 16,
+          "pid": null,
+          "text": "A neved Jehova,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 96000,
+          "e": 100000,
+          "m": 17,
+          "pid": null,
+          "text": "így elő is idézed,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 101000,
+          "e": 105000,
+          "m": 18,
+          "pid": null,
+          "text": "hogy azzá váljunk érted,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 105000,
+          "e": 109000,
+          "m": 19,
+          "pid": null,
+          "text": "mit célod megkíván.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 110000,
+          "e": 114000,
+          "m": 20,
+          "pid": null,
+          "text": "A tanúid vagyunk;",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 115000,
+          "e": 119000,
+          "m": 21,
+          "pid": null,
+          "text": "mily nagy a kedvességed!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 123000,
+          "m": 22,
+          "pid": null,
+          "text": "Te hívtad el e népet,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 23,
+          "pid": null,
+          "text": "mely érted él, imád.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 133000,
+          "m": 24,
+          "pid": null,
+          "text": "Jehova, milyen szép,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 134000,
+          "e": 137000,
+          "m": 25,
+          "pid": null,
+          "text": "mily fenséges neved!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 142000,
+          "m": 26,
+          "pid": null,
+          "text": "Egymagad vagy a legfőbb Úr",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 143000,
+          "e": 147000,
+          "m": 27,
+          "pid": null,
+          "text": "az ég s a föld felett.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 148000,
+          "e": 152000,
+          "m": 28,
+          "pid": null,
+          "text": "Az egész világ megtudja,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 153000,
+          "e": 157000,
+          "m": 29,
+          "pid": null,
+          "text": "és látni fogja ezt.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 157000,
+          "e": 161000,
+          "m": 30,
+          "pid": null,
+          "text": "Jehova, neved szent,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 162000,
+          "e": 172000,
+          "m": 31,
+          "pid": null,
+          "text": "csak néked zengünk éneket!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/9e87e5/1/o/pksjj_H_002_r360P.mp4",
+      "checksum": "efbe9e66f8569cf8e8941d70aa8a1a89",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 2,
           "state": "available"
         }
       ],
-      "marker_count": 34,
-      "singable_line_count": 32,
-      "active": true,
-      "buttons": 30,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 20480,
-          "e": 25513,
-          "m": 0,
-          "pid": 4,
-          "text": "Ó, dicső Jehova,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 25514,
-          "e": 30638,
-          "m": 1,
-          "pid": 5,
-          "text": "a kezed műve minden.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 30639,
-          "e": 35535,
-          "m": 2,
-          "pid": 6,
-          "text": "Hogy ki az igaz Isten,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 35536,
-          "e": 40649,
-          "m": 3,
-          "pid": 7,
-          "text": "feltártad réges-rég.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 40650,
-          "e": 45641,
-          "m": 4,
-          "pid": 8,
-          "text": "Nagy megtiszteltetés,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 45642,
-          "e": 50809,
-          "m": 5,
-          "pid": 9,
-          "text": "hogy mi lehetünk néped,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 50810,
-          "e": 55812,
-          "m": 6,
-          "pid": 10,
-          "text": "mely ragyogtatja fényed",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 55813,
-          "e": 60777,
-          "m": 7,
-          "pid": 11,
-          "text": "a nemzetek felé.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 60778,
-          "e": 65892,
-          "m": 8,
-          "pid": 13,
-          "text": "Jehova, milyen szép,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 65893,
-          "e": 70585,
-          "m": 9,
-          "pid": 14,
-          "text": "mily fenséges neved!",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 70586,
-          "e": 75996,
-          "m": 10,
-          "pid": 15,
-          "text": "Egymagad vagy a legfőbb Úr",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 75997,
-          "e": 80747,
-          "m": 11,
-          "pid": 16,
-          "text": "az ég s a föld felett.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 80748,
-          "e": 86068,
-          "m": 12,
-          "pid": 17,
-          "text": "Az egész világ megtudja,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 86069,
-          "e": 91177,
-          "m": 13,
-          "pid": 18,
-          "text": "és látni fogja ezt.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 91178,
-          "e": 96283,
-          "m": 14,
-          "pid": 19,
-          "text": "Jehova, neved szent,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96284,
-          "e": 106203,
-          "m": 15,
-          "pid": 20,
-          "text": "csak néked zengünk éneket!",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
-        },
-        {
-          "s": 111370,
-          "e": 116474,
-          "m": 17,
-          "pid": 21,
-          "text": "A neved Jehova,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 116475,
-          "e": 121492,
-          "m": 18,
-          "pid": 22,
-          "text": "így elő is idézed,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 121493,
-          "e": 126515,
-          "m": 19,
-          "pid": 23,
-          "text": "hogy azzá váljunk érted,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 126516,
-          "e": 131627,
-          "m": 20,
-          "pid": 24,
-          "text": "mit célod megkíván.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 131628,
-          "e": 136649,
-          "m": 21,
-          "pid": 25,
-          "text": "A tanúid vagyunk;",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 136650,
-          "e": 141711,
-          "m": 22,
-          "pid": 26,
-          "text": "mily nagy a kedvességed!",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 141712,
-          "e": 146681,
-          "m": 23,
-          "pid": 27,
-          "text": "Te hívtad el e népet,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 146682,
-          "e": 151887,
-          "m": 24,
-          "pid": 28,
-          "text": "mely érted él, imád.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 151888,
-          "e": 156891,
-          "m": 25,
-          "pid": 30,
-          "text": "Jehova, milyen szép,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 156892,
-          "e": 161535,
-          "m": 26,
-          "pid": 31,
-          "text": "mily fenséges neved!",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 161536,
-          "e": 166996,
-          "m": 27,
-          "pid": 32,
-          "text": "Egymagad vagy a legfőbb Úr",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 166997,
-          "e": 171652,
-          "m": 28,
-          "pid": 33,
-          "text": "az ég s a föld felett.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 171653,
-          "e": 177103,
-          "m": 29,
-          "pid": 34,
-          "text": "Az egész világ megtudja,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 177104,
-          "e": 182015,
-          "m": 30,
-          "pid": 35,
-          "text": "és látni fogja ezt.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 182016,
-          "e": 187145,
-          "m": 31,
-          "pid": 36,
-          "text": "Jehova, neved szent,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 187146,
-          "e": 199714,
-          "m": 32,
-          "pid": 37,
-          "text": "csak néked zengünk éneket!",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_2_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/033f13/1/o/sjjc_H_002.mp3",
-      "document_id": 1102016802,
-      "checksum": "ec23fce8459c4e064f42ba2a1bbe4af5",
-      "metadata_hash": "ec23fce8459c4e064f42ba2a1bbe4af5",
-      "official_lyrics_url": "https://www.jw.org/hu/konyvtar/zene-enekek/enekeljunk-orommel/2-a-neved-jehova/",
-      "sung_marker_count": 32
+      "disabled_line_reasons": {}
     },
     {
       "track": 2,
       "locale": "id",
       "jw": "IN",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_2_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_2_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 32,
+      "active": true,
+      "buttons": 32,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 14000,
+          "m": 0,
+          "pid": null,
+          "text": "Allah yang sejati,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 15000,
+          "e": 19000,
+          "m": 1,
+          "pid": null,
+          "text": "Pencipta langit, bumi,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 20000,
+          "e": 24000,
+          "m": 2,
+          "pid": null,
+          "text": "Kau Allah yang abadi.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 29000,
+          "m": 3,
+          "pid": null,
+          "text": "Yehuwa nama-Mu.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 29000,
+          "e": 33000,
+          "m": 4,
+          "pid": null,
+          "text": "Kami sungguh bangga",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 34000,
+          "e": 38000,
+          "m": 5,
+          "pid": null,
+          "text": "Jadi umat milik-Mu.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 39000,
+          "e": 43000,
+          "m": 6,
+          "pid": null,
+          "text": "Di tiap suku bangsa,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 47000,
+          "m": 7,
+          "pid": null,
+          "text": "Kami muliakan-Mu.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 48000,
+          "e": 53000,
+          "m": 8,
+          "pid": null,
+          "text": "Yehuwa, Yehuwa,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 9,
+          "pid": null,
+          "text": "Kau Allah yang esa.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 57000,
+          "e": 62000,
+          "m": 10,
+          "pid": null,
+          "text": "Tidak ada allah lain",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 66000,
+          "m": 11,
+          "pid": null,
+          "text": "Yang seperti Engkau.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 71000,
+          "m": 12,
+          "pid": null,
+          "text": "Engkaulah Yang Mahakuasa,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 76000,
+          "m": 13,
+          "pid": null,
+          "text": "Dunia harus tahu.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 81000,
+          "m": 14,
+          "pid": null,
+          "text": "Yehuwa, Yehuwa,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 89000,
+          "m": 15,
+          "pid": null,
+          "text": "Hanya Engkau Allah kami.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 91000,
+          "e": 95000,
+          "m": 16,
+          "pid": null,
+          "text": "Kau membuat kami",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 96000,
+          "e": 100000,
+          "m": 17,
+          "pid": null,
+          "text": "Sanggup jadi apa pun.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 101000,
+          "e": 105000,
+          "m": 18,
+          "pid": null,
+          "text": "Kehendak-Mu terjadi.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 105000,
+          "e": 109000,
+          "m": 19,
+          "pid": null,
+          "text": "Yehuwa nama-Mu.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 110000,
+          "e": 114000,
+          "m": 20,
+          "pid": null,
+          "text": "Kau memilih kami",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 115000,
+          "e": 119000,
+          "m": 21,
+          "pid": null,
+          "text": "Jadi Saksi-Saksi-Mu.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 123000,
+          "m": 22,
+          "pid": null,
+          "text": "Hati kami terharu",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 23,
+          "pid": null,
+          "text": "Wakili nama-Mu.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 133000,
+          "m": 24,
+          "pid": null,
+          "text": "Yehuwa, Yehuwa,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 134000,
+          "e": 137000,
+          "m": 25,
+          "pid": null,
+          "text": "Kau Allah yang esa.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 142000,
+          "m": 26,
+          "pid": null,
+          "text": "Tidak ada allah lain",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 143000,
+          "e": 147000,
+          "m": 27,
+          "pid": null,
+          "text": "Yang seperti Engkau.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 148000,
+          "e": 152000,
+          "m": 28,
+          "pid": null,
+          "text": "Engkaulah Yang Mahakuasa,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 153000,
+          "e": 157000,
+          "m": 29,
+          "pid": null,
+          "text": "Dunia harus tahu.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 157000,
+          "e": 161000,
+          "m": 30,
+          "pid": null,
+          "text": "Yehuwa, Yehuwa,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 162000,
+          "e": 172000,
+          "m": 31,
+          "pid": null,
+          "text": "Hanya Engkau Allah kami.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/f5f2e3/1/o/pksjj_IN_002_r360P.mp4",
+      "checksum": "7c414c1f64c9604ceb49e13f0c0c14ce",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 2,
           "state": "available"
         }
       ],
-      "marker_count": 0,
-      "singable_line_count": 32,
-      "active": false,
-      "buttons": 0,
-      "reason": "no_official_timed_metadata",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/59224b/1/o/sjjc_IN_002.mp3",
-      "document_id": null,
-      "checksum": "c5a55a666d847327c0af47be0aaa969c",
-      "metadata_hash": null
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_2_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 2,
       "locale": "ja",
       "jw": "J",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_2_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_2_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 32,
+      "active": true,
+      "buttons": 32,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 14000,
+          "m": 0,
+          "pid": null,
+          "text": "天地全て",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 15000,
+          "e": 19000,
+          "m": 1,
+          "pid": null,
+          "text": "創造された",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 20000,
+          "e": 24000,
+          "m": 2,
+          "pid": null,
+          "text": "永遠の神",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 29000,
+          "m": 3,
+          "pid": null,
+          "text": "それはエホバ",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 29000,
+          "e": 33000,
+          "m": 4,
+          "pid": null,
+          "text": "あなたの名を",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 34000,
+          "e": 38000,
+          "m": 5,
+          "pid": null,
+          "text": "誇りに思い",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 39000,
+          "e": 43000,
+          "m": 6,
+          "pid": null,
+          "text": "広く告げます",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 47000,
+          "m": 7,
+          "pid": null,
+          "text": "心込めて",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 48000,
+          "e": 53000,
+          "m": 8,
+          "pid": null,
+          "text": "エホバ エホバ",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 9,
+          "pid": null,
+          "text": "あなただけが",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 57000,
+          "e": 62000,
+          "m": 10,
+          "pid": null,
+          "text": "全てを治める",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 66000,
+          "m": 11,
+          "pid": null,
+          "text": "至高の神",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 71000,
+          "m": 12,
+          "pid": null,
+          "text": "地上に輝く",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 76000,
+          "m": 13,
+          "pid": null,
+          "text": "その栄光",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 81000,
+          "m": 14,
+          "pid": null,
+          "text": "エホバ エホバ",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 89000,
+          "m": 15,
+          "pid": null,
+          "text": "あなただけが神",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 91000,
+          "e": 95000,
+          "m": 16,
+          "pid": null,
+          "text": "望むものに",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 96000,
+          "e": 100000,
+          "m": 17,
+          "pid": null,
+          "text": "人をならせる",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 101000,
+          "e": 105000,
+          "m": 18,
+          "pid": null,
+          "text": "全能の神",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 105000,
+          "e": 109000,
+          "m": 19,
+          "pid": null,
+          "text": "それはエホバ",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 110000,
+          "e": 114000,
+          "m": 20,
+          "pid": null,
+          "text": "あなたの名を",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 115000,
+          "e": 119000,
+          "m": 21,
+          "pid": null,
+          "text": "語る名誉を",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 123000,
+          "m": 22,
+          "pid": null,
+          "text": "今 心から",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 23,
+          "pid": null,
+          "text": "感謝します",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 133000,
+          "m": 24,
+          "pid": null,
+          "text": "エホバ エホバ",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 134000,
+          "e": 137000,
+          "m": 25,
+          "pid": null,
+          "text": "あなただけが",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 142000,
+          "m": 26,
+          "pid": null,
+          "text": "全てを治める",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 143000,
+          "e": 147000,
+          "m": 27,
+          "pid": null,
+          "text": "至高の神",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 148000,
+          "e": 152000,
+          "m": 28,
+          "pid": null,
+          "text": "地上に輝く",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 153000,
+          "e": 157000,
+          "m": 29,
+          "pid": null,
+          "text": "その栄光",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 157000,
+          "e": 161000,
+          "m": 30,
+          "pid": null,
+          "text": "エホバ エホバ",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 162000,
+          "e": 172000,
+          "m": 31,
+          "pid": null,
+          "text": "あなただけが神",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/7e3927/1/o/pksjj_J_002_r360P.mp4",
+      "checksum": "84776be605f51dde319ebaab868a9efb",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 2,
           "state": "available"
         }
       ],
-      "marker_count": 17,
-      "singable_line_count": 32,
-      "active": false,
-      "buttons": 0,
-      "reason": "paragraph_line_count_mismatch",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/de2f36/1/o/sjjc_J_002.mp3",
-      "document_id": 1102016802,
-      "checksum": "7c64fac2eba0d5db9fed6cca7cbba93a",
-      "metadata_hash": "7c64fac2eba0d5db9fed6cca7cbba93a",
-      "official_lyrics_url": "https://www.jw.org/ja/%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%83%BC/%E9%9F%B3%E6%A5%BD-%E6%AD%8C/%E5%96%9C%E3%81%B3%E3%81%AB%E3%81%82%E3%81%B5%E3%82%8C%E3%81%A6%E6%AD%8C%E3%81%86/2-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E5%90%8D%E3%81%AF%E3%82%A8%E3%83%9B%E3%83%90/",
-      "sung_marker_count": 16
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_2_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 2,
       "locale": "ko",
       "jw": "KO",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_2_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_2_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 32,
+      "active": true,
+      "buttons": 32,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 14000,
+          "m": 0,
+          "pid": null,
+          "text": "만물을 지으신",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 15000,
+          "e": 19000,
+          "m": 1,
+          "pid": null,
+          "text": "살아 계신 하느님,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 20000,
+          "e": 24000,
+          "m": 2,
+          "pid": null,
+          "text": "영원토록 기억될",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 29000,
+          "m": 3,
+          "pid": null,
+          "text": "주 이름 여호와.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 29000,
+          "e": 33000,
+          "m": 4,
+          "pid": null,
+          "text": "주의 회중 되는",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 34000,
+          "e": 38000,
+          "m": 5,
+          "pid": null,
+          "text": "큰 영예 주셨으니",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 39000,
+          "e": 43000,
+          "m": 6,
+          "pid": null,
+          "text": "주 영광 알리는 일",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 47000,
+          "m": 7,
+          "pid": null,
+          "text": "온 힘 다하리다.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 48000,
+          "e": 53000,
+          "m": 8,
+          "pid": null,
+          "text": "여호와, 여호와,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 9,
+          "pid": null,
+          "text": "오, 주와 같은 분",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 57000,
+          "e": 62000,
+          "m": 10,
+          "pid": null,
+          "text": "땅과 하늘 어디에도",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 66000,
+          "m": 11,
+          "pid": null,
+          "text": "결코 없나이다.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 71000,
+          "m": 12,
+          "pid": null,
+          "text": "모두가 알게 하소서,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 76000,
+          "m": 13,
+          "pid": null,
+          "text": "주 전능한 능력.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 81000,
+          "m": 14,
+          "pid": null,
+          "text": "여호와, 여호와,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 89000,
+          "m": 15,
+          "pid": null,
+          "text": "여호와만 섬기리다.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 91000,
+          "e": 95000,
+          "m": 16,
+          "pid": null,
+          "text": "주께서 원하는",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 96000,
+          "e": 100000,
+          "m": 17,
+          "pid": null,
+          "text": "무엇이든 되도록",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 101000,
+          "e": 105000,
+          "m": 18,
+          "pid": null,
+          "text": "우리를 도우시는",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 105000,
+          "e": 109000,
+          "m": 19,
+          "pid": null,
+          "text": "주 이름 여호와.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 110000,
+          "e": 114000,
+          "m": 20,
+          "pid": null,
+          "text": "주의 증인 되는",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 115000,
+          "e": 119000,
+          "m": 21,
+          "pid": null,
+          "text": "친절 베푸셨으니",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 123000,
+          "m": 22,
+          "pid": null,
+          "text": "그 이름 지닌 우린",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 23,
+          "pid": null,
+          "text": "주 백성입니다.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 133000,
+          "m": 24,
+          "pid": null,
+          "text": "여호와, 여호와,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 134000,
+          "e": 137000,
+          "m": 25,
+          "pid": null,
+          "text": "오, 주와 같은 분",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 142000,
+          "m": 26,
+          "pid": null,
+          "text": "땅과 하늘 어디에도",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 143000,
+          "e": 147000,
+          "m": 27,
+          "pid": null,
+          "text": "결코 없나이다.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 148000,
+          "e": 152000,
+          "m": 28,
+          "pid": null,
+          "text": "모두가 알게 하소서,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 153000,
+          "e": 157000,
+          "m": 29,
+          "pid": null,
+          "text": "주 전능한 능력.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 157000,
+          "e": 161000,
+          "m": 30,
+          "pid": null,
+          "text": "여호와, 여호와,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 162000,
+          "e": 172000,
+          "m": 31,
+          "pid": null,
+          "text": "여호와만 섬기리다.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/2746b63/3/o/pksjj_KO_002_r360P.mp4",
+      "checksum": "8518e658c0e0313a0c2ab07d6fa21090",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 2,
           "state": "available"
         }
       ],
-      "marker_count": 34,
-      "singable_line_count": 32,
-      "active": true,
-      "buttons": 30,
-      "reason": "verified_official_paragraphs",
-      "lines": [
+      "manual_children_override": true,
+      "source_probes": [
         {
-          "s": 20480,
-          "e": 25513,
-          "m": 0,
-          "pid": 4,
-          "text": "만물을 지으신",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 25514,
-          "e": 30638,
-          "m": 1,
-          "pid": 5,
-          "text": "살아 계신 하느님,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 30639,
-          "e": 35535,
-          "m": 2,
-          "pid": 6,
-          "text": "영원토록 기억될",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 35536,
-          "e": 40649,
-          "m": 3,
-          "pid": 7,
-          "text": "주 이름 여호와.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 40650,
-          "e": 45641,
-          "m": 4,
-          "pid": 8,
-          "text": "주의 회중 되는",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 45642,
-          "e": 50809,
-          "m": 5,
-          "pid": 9,
-          "text": "큰 영예 주셨으니",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 50810,
-          "e": 55812,
-          "m": 6,
-          "pid": 10,
-          "text": "주 영광 알리는 일",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 55813,
-          "e": 60777,
-          "m": 7,
-          "pid": 11,
-          "text": "온 힘 다하리다.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 60778,
-          "e": 65892,
-          "m": 8,
-          "pid": 13,
-          "text": "여호와, 여호와,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 65893,
-          "e": 70585,
-          "m": 9,
-          "pid": 14,
-          "text": "오, 주와 같은 분",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 70586,
-          "e": 75996,
-          "m": 10,
-          "pid": 15,
-          "text": "땅과 하늘 어디에도",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 75997,
-          "e": 80747,
-          "m": 11,
-          "pid": 16,
-          "text": "결코 없나이다.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 80748,
-          "e": 86068,
-          "m": 12,
-          "pid": 17,
-          "text": "모두가 알게 하소서,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 86069,
-          "e": 91177,
-          "m": 13,
-          "pid": 18,
-          "text": "주 전능한 능력.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 91178,
-          "e": 96283,
-          "m": 14,
-          "pid": 19,
-          "text": "여호와, 여호와,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 96284,
-          "e": 106203,
-          "m": 15,
-          "pid": 20,
-          "text": "여호와만 섬기리다.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
-        },
-        {
-          "s": 111370,
-          "e": 116474,
-          "m": 17,
-          "pid": 21,
-          "text": "주께서 원하는",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 116475,
-          "e": 121492,
-          "m": 18,
-          "pid": 22,
-          "text": "무엇이든 되도록",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 121493,
-          "e": 126515,
-          "m": 19,
-          "pid": 23,
-          "text": "우리를 도우시는",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 126516,
-          "e": 131627,
-          "m": 20,
-          "pid": 24,
-          "text": "주 이름 여호와.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 131628,
-          "e": 136649,
-          "m": 21,
-          "pid": 25,
-          "text": "주의 증인 되는",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 136650,
-          "e": 141711,
-          "m": 22,
-          "pid": 26,
-          "text": "친절 베푸셨으니",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 141712,
-          "e": 146681,
-          "m": 23,
-          "pid": 27,
-          "text": "그 이름 지닌 우린",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 146682,
-          "e": 151887,
-          "m": 24,
-          "pid": 28,
-          "text": "주 백성입니다.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 151888,
-          "e": 156891,
-          "m": 25,
-          "pid": 30,
-          "text": "여호와, 여호와,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 156892,
-          "e": 161535,
-          "m": 26,
-          "pid": 31,
-          "text": "오, 주와 같은 분",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 161536,
-          "e": 166996,
-          "m": 27,
-          "pid": 32,
-          "text": "땅과 하늘 어디에도",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 166997,
-          "e": 171652,
-          "m": 28,
-          "pid": 33,
-          "text": "결코 없나이다.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 171653,
-          "e": 177103,
-          "m": 29,
-          "pid": 34,
-          "text": "모두가 알게 하소서,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 177104,
-          "e": 182015,
-          "m": 30,
-          "pid": 35,
-          "text": "주 전능한 능력.",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 182016,
-          "e": 187145,
-          "m": 31,
-          "pid": 36,
-          "text": "여호와, 여호와,",
-          "enabled": true,
-          "reason": "verified_official_paragraph"
-        },
-        {
-          "s": 187146,
-          "e": 199714,
-          "m": 32,
-          "pid": 37,
-          "text": "여호와만 섬기리다.",
-          "enabled": false,
-          "reason": "vocal_end_before_interlude_or_outro_unproven"
+          "source": "pksjj",
+          "media_key": "pub-pksjj_2_VIDEO",
+          "http_status": 200
         }
       ],
-      "url": "https://cfp2.jw-cdn.org/a/9f3a3b/1/o/sjjc_KO_002.mp3",
-      "document_id": 1102016802,
-      "checksum": "76c7221d65fa44b158867c17d71daea3",
-      "metadata_hash": "76c7221d65fa44b158867c17d71daea3",
-      "official_lyrics_url": "https://www.jw.org/ko/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/%EC%9D%8C%EC%95%85-%EB%85%B8%EB%9E%98/%EA%B8%B0%EC%81%A8%EC%9C%BC%EB%A1%9C-%EB%85%B8%EB%9E%98%ED%95%98%EB%9D%BC/2-%EC%A3%BC%EC%9D%98-%EC%9D%B4%EB%A6%84-%EC%97%AC%ED%98%B8%EC%99%80/",
-      "sung_marker_count": 32
+      "disabled_line_reasons": {}
     },
     {
       "track": 2,
       "locale": "pl",
       "jw": "P",
       "attachment_media_key": null,
-      "selected_source": "sjjc",
-      "media_key": "pub-sjjc_2_AUDIO",
-      "source_probes": [
+      "selected_source": "pksjj",
+      "media_key": "pub-pksjj_2_VIDEO",
+      "marker_count": 0,
+      "singable_line_count": 32,
+      "active": true,
+      "buttons": 32,
+      "reason": "user_authorized_shared_children_line_boundaries",
+      "lines": [
+        {
+          "s": 10000,
+          "e": 14000,
+          "m": 0,
+          "pid": null,
+          "text": "Prawdziwy Boże nasz",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 15000,
+          "e": 19000,
+          "m": 1,
+          "pid": null,
+          "text": "i Stwórco całej ziemi,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 20000,
+          "e": 24000,
+          "m": 2,
+          "pid": null,
+          "text": "Ty nigdy się nie zmienisz —",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 24000,
+          "e": 29000,
+          "m": 3,
+          "pid": null,
+          "text": "Jehowa imię Twe!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 29000,
+          "e": 33000,
+          "m": 4,
+          "pid": null,
+          "text": "Jesteśmy dumni, bo",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 34000,
+          "e": 38000,
+          "m": 5,
+          "pid": null,
+          "text": "imieniem Twym nazwani,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 39000,
+          "e": 43000,
+          "m": 6,
+          "pid": null,
+          "text": "każdego zapraszamy,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 43000,
+          "e": 47000,
+          "m": 7,
+          "pid": null,
+          "text": "by Tobie oddał cześć.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 48000,
+          "e": 53000,
+          "m": 8,
+          "pid": null,
+          "text": "Jehowo, Jehowo,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 53000,
+          "e": 57000,
+          "m": 9,
+          "pid": null,
+          "text": "nikt nie dorówna Ci.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 57000,
+          "e": 62000,
+          "m": 10,
+          "pid": null,
+          "text": "Nie ma w niebie ni na ziemi",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 63000,
+          "e": 66000,
+          "m": 11,
+          "pid": null,
+          "text": "drugiego tak jak Ty.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 67000,
+          "e": 71000,
+          "m": 12,
+          "pid": null,
+          "text": "Że wszechmocnym jesteś Bogiem,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 72000,
+          "e": 76000,
+          "m": 13,
+          "pid": null,
+          "text": "niech wszyscy słyszą dziś.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 76000,
+          "e": 81000,
+          "m": 14,
+          "pid": null,
+          "text": "Jehowo, Jehowo,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 81000,
+          "e": 89000,
+          "m": 15,
+          "pid": null,
+          "text": "oddani chcemy Tobie być.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 91000,
+          "e": 95000,
+          "m": 16,
+          "pid": null,
+          "text": "Ty powodujesz, że",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 96000,
+          "e": 100000,
+          "m": 17,
+          "pid": null,
+          "text": "stajemy się, czym trzeba,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 101000,
+          "e": 105000,
+          "m": 18,
+          "pid": null,
+          "text": "by wolę Twoją spełniać —",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 105000,
+          "e": 109000,
+          "m": 19,
+          "pid": null,
+          "text": "Jehowa imię Twe!",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 110000,
+          "e": 114000,
+          "m": 20,
+          "pid": null,
+          "text": "Możemy służyć Ci",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 115000,
+          "e": 119000,
+          "m": 21,
+          "pid": null,
+          "text": "i być świadkami Twymi.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 120000,
+          "e": 123000,
+          "m": 22,
+          "pid": null,
+          "text": "Jak zaszczyt ten cenimy,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 124000,
+          "e": 128000,
+          "m": 23,
+          "pid": null,
+          "text": "niech każdy o tym wie.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 129000,
+          "e": 133000,
+          "m": 24,
+          "pid": null,
+          "text": "Jehowo, Jehowo,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 134000,
+          "e": 137000,
+          "m": 25,
+          "pid": null,
+          "text": "nikt nie dorówna Ci.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 138000,
+          "e": 142000,
+          "m": 26,
+          "pid": null,
+          "text": "Nie ma w niebie ni na ziemi",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 143000,
+          "e": 147000,
+          "m": 27,
+          "pid": null,
+          "text": "drugiego tak jak Ty.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 148000,
+          "e": 152000,
+          "m": 28,
+          "pid": null,
+          "text": "Że wszechmocnym jesteś Bogiem,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 153000,
+          "e": 157000,
+          "m": 29,
+          "pid": null,
+          "text": "niech wszyscy słyszą dziś.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 157000,
+          "e": 161000,
+          "m": 30,
+          "pid": null,
+          "text": "Jehowo, Jehowo,",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        },
+        {
+          "s": 162000,
+          "e": 172000,
+          "m": 31,
+          "pid": null,
+          "text": "oddani chcemy Tobie być.",
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
+        }
+      ],
+      "url": "https://cfp2.jw-cdn.org/a/bbb595/3/o/pksjj_P_002_r360P.mp4",
+      "checksum": "4eca3f1fb30d71a39ed9d8d08bbda1f0",
+      "format": "MP4",
+      "timing_method": "user_authorized_shared_children_line_boundaries",
+      "default_source_probes": [
         {
           "source": "sjjc",
           "track": 2,
           "state": "available"
         }
       ],
-      "marker_count": 34,
-      "singable_line_count": 32,
-      "active": false,
-      "buttons": 0,
-      "reason": "marker_paragraph_not_lyric",
-      "lines": [],
-      "url": "https://cfp2.jw-cdn.org/a/11d3ef/1/o/sjjc_P_002.mp3",
-      "document_id": 1102016802,
-      "checksum": "988b5dd287803a49be2bb2719f8240db",
-      "metadata_hash": "988b5dd287803a49be2bb2719f8240db",
-      "official_lyrics_url": "https://www.jw.org/pl/biblioteka/muzyka-pie%C5%9Bni/radosnie-spiewajmy-jehowie/2-jehowa-to-twoje-imie/"
+      "manual_children_override": true,
+      "source_probes": [
+        {
+          "source": "pksjj",
+          "media_key": "pub-pksjj_2_VIDEO",
+          "http_status": 200
+        }
+      ],
+      "disabled_line_reasons": {}
     },
     {
       "track": 3,
