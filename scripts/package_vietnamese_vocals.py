@@ -18,6 +18,8 @@ for key,source in sources.items():
   if line['s']<0 or line['e']<=line['s'] or line['e']>d['duration']*1000:
    line['enabled']=False;line['reason']='invalid_vocal_boundary'
  proofs[key]={'src':source['src'],'mediaKey':source['mediaKey'],'format':'MP4' if source['kind']=='video' else 'MP3','checksum':source['checksum'],'timingMethod':d['method'],'duration':d['duration'],'url':source['url'],'general_audio_exists':source['general_audio_exists'],'general_video_exists':source['general_video_exists'],'model':d['model'],'lines':lines}
+from apply_vocal_manual_segments import apply_manual
+apply_manual(proofs,R)
 json.dump(proofs,open(R+'/scripts/data/vi_vocal_segments.json','w'),ensure_ascii=False,indent=2)
 print('tracks',len(proofs),'active',sum(any(x['enabled'] for x in p['lines']) for p in proofs.values()),'lines',sum(x['enabled'] for p in proofs.values() for x in p['lines']))
 print('held tracks',[k for k,p in proofs.items() if not any(x['enabled'] for x in p['lines'])])

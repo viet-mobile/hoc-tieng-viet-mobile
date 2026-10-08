@@ -71,6 +71,8 @@ def merge_vietnamese(report, manifest):
     path = os.path.join(ROOT,'scripts/data/vi_vocal_segments.json')
     if not os.path.exists(path): return
     proofs = json.load(open(path, encoding='utf-8'))
+    from apply_vocal_manual_segments import apply_manual
+    apply_manual(proofs,ROOT)
     for row in report:
         key = str(row['track'])
         if row['locale'] != 'vi' or key not in proofs: continue
@@ -78,7 +80,7 @@ def merge_vietnamese(report, manifest):
         row.update(selected_source=proof['src'],media_key=proof['mediaKey'],format=proof['format'],checksum=proof['checksum'],url=proof['url'],timing_method=proof['timingMethod'],lines=proof['lines'],buttons=sum(line['enabled'] for line in proof['lines']),general_audio_exists=proof['general_audio_exists'],general_video_exists=proof['general_video_exists'])
         row['disabled_line_reasons'] = {reason:sum(line['reason']==reason for line in proof['lines'] if not line['enabled']) for reason in {line['reason'] for line in proof['lines'] if not line['enabled']}}
         row['active'] = row['buttons'] > 0
-        row['reason'] = 'same_recording_vocal_analysis' if row['active'] else 'vocal_boundary_requires_review'
+        row['reason'] = ('user_supplied_line_boundaries' if proof['timingMethod']=='user_supplied_same_recording_line_boundaries' else 'same_recording_vocal_analysis') if row['active'] else 'vocal_boundary_requires_review'
         if proof['format']=='MP4':row['marker_count']=0
         manifest[key+'|vi'] = proof
 

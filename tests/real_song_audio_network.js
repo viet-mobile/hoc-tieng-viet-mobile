@@ -36,7 +36,7 @@ const SONGS = process.env.SONGS ? process.env.SONGS.split(',').map(x => { const 
         for (const L of [...new Set(${JSON.stringify(process.env.LOCALES ? process.env.LOCALES.split(',') : null)} || ['vi',${JSON.stringify(lang)}])]) {
           const info=window.__songSeg.info['kingdom|${num}|'+L]; const bs=[...box.querySelectorAll('.song-seg-btn[data-seg="play"][data-seg-id$="|'+L+'"]')];
           const o={src:info?info.src:'none',reason:info?(info.marks?'':info.reason||(''+(info.marks&&info.marks.length)+' vs rows')):'no recording',buttons:bs.length,lines:[]};
-          for (const k of (measured.includes('${num}|'+L) ? [] : [0,1,2])) { const b=bs[k]; if(!b) continue; const mark=info.marks[+b.dataset.segI];
+          for (const k of (measured.includes('${num}|'+L) ? [] : ${process.env.ALL_LINES==='1' ? 'bs.map((_,i)=>i)' : '[0,1,2]'})) { const b=bs[k]; if(!b) continue; const mark=info.marks[+b.dataset.segI];
             b.click(); let started=null,stopped=null; const t0=Date.now();
             while(Date.now()-t0<25000){ await sleep(30); const a=window.__songSeg.audio(); if(a&&!a.paused&&started===null) { started=a.currentTime; if(${process.env.FAST_BOUNDARY === '1'}) a.currentTime=mark.e/1000-0.25; } if(started!==null&&a.paused){stopped=a.currentTime;break;} }
             o.lines.push({want:+(mark.s/1000).toFixed(3),end:+(mark.e/1000).toFixed(3),started:started===null?null:+started.toFixed(3),stopped:stopped===null?null:+stopped.toFixed(3)}); }

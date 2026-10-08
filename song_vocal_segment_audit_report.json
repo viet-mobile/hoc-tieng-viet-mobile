@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T03:38:50.257978+00:00",
+  "generated": "2026-10-08T04:41:01.154273+00:00",
   "fresh_network": false,
   "base_commit": "c7e3a3d",
   "source_priority": [
@@ -235,8 +235,8 @@
   },
   "totals": {
     "vi": {
-      "active_tracks": 43,
-      "enabled_lines": 853
+      "active_tracks": 45,
+      "enabled_lines": 877
     },
     "cs": {
       "active_tracks": 19,
@@ -20485,8 +20485,8 @@
       "general_audio_exists": false,
       "general_video_exists": false,
       "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 9,
-        "lyric_occurrence_omitted_in_selected_recording": 5
+        "lyric_occurrence_omitted_in_selected_recording": 5,
+        "vocal_boundary_requires_review": 9
       }
     },
     {
@@ -28485,141 +28485,117 @@
       ],
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_supplied_line_boundaries",
       "lines": [
         {
-          "s": 2260,
-          "e": 8140,
-          "text": "Xin Giê-hô-va lắng nghe con ngợi khen.",
-          "confidence": 0.3519,
-          "min_char_score": 0.0053,
+          "s": 1000,
+          "e": 8000,
           "m": 0,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Xin Giê-hô-va lắng nghe con ngợi khen.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 9460,
-          "e": 15540,
-          "text": "Cha cao quý là đấng con hằng kính thờ.",
-          "confidence": 0.3017,
-          "min_char_score": 0.0147,
+          "s": 9000,
+          "e": 16000,
           "m": 1,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Cha cao quý là đấng con hằng kính thờ.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 16660,
-          "e": 22960,
-          "text": "Thật không chi sánh cho bằng danh cao cả.",
-          "confidence": 0.6059,
-          "min_char_score": 0.0021,
+          "s": 17000,
+          "e": 23000,
           "m": 2,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Thật không chi sánh cho bằng danh cao cả.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 23800,
-          "e": 29440,
-          "text": "Xin nghe con khấn nguyện, hỡi Cha nhân từ.",
-          "confidence": 0.4638,
-          "min_char_score": 0.0039,
+          "s": 24000,
+          "e": 31000,
           "m": 3,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Xin nghe con khấn nguyện, hỡi Cha nhân từ.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 36460,
-          "e": 42140,
-          "text": "Con xin cảm tạ Chúa cho con ngày nay,",
-          "confidence": 0.5478,
-          "min_char_score": 0.0032,
+          "s": 36000,
+          "e": 43000,
           "m": 4,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Con xin cảm tạ Chúa cho con ngày nay,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 43620,
-          "e": 49780,
-          "text": "cho con sống và dẫn đưa con suốt đời.",
-          "confidence": 0.4756,
-          "min_char_score": 0.0012,
+          "s": 44000,
+          "e": 50000,
           "m": 5,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "cho con sống và dẫn đưa con suốt đời.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 50900,
-          "e": 56880,
-          "text": "Được Cha chăm sóc, con mừng vui khôn xiết.",
-          "confidence": 0.401,
-          "min_char_score": 0.002,
+          "s": 51000,
+          "e": 57000,
           "m": 6,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Được Cha chăm sóc, con mừng vui khôn xiết.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 58040,
-          "e": 69000,
-          "text": "Xin nghe con khấn nguyện, hỡi Cha nhân từ.",
-          "confidence": 0.3073,
-          "min_char_score": 0.0022,
+          "s": 58000,
+          "e": 64000,
           "m": 7,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Xin nghe con khấn nguyện, hỡi Cha nhân từ.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 70660,
-          "e": 76360,
-          "text": "Con ao ước làm đúng theo như Lời Cha.",
-          "confidence": 0.1449,
-          "min_char_score": 0.003,
+          "s": 70000,
+          "e": 77000,
           "m": 8,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Con ao ước làm đúng theo như Lời Cha.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 77820,
-          "e": 84080,
-          "text": "Xin Cha giúp để bước đi trong lối ngài.",
-          "confidence": 0.271,
-          "min_char_score": 0.0007,
+          "s": 78000,
+          "e": 84000,
           "m": 9,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Xin Cha giúp để bước đi trong lối ngài.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 85040,
-          "e": 91360,
-          "text": "Cầu Cha ban sức con vượt qua gian khó.",
-          "confidence": 0.2241,
-          "min_char_score": 0.0001,
+          "s": 85000,
+          "e": 91000,
           "m": 10,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Cầu Cha ban sức con vượt qua gian khó.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 92240,
-          "e": 99020,
-          "text": "Xin nghe con khấn nguyện, hỡi Cha nhân từ.",
-          "confidence": 0.2492,
-          "min_char_score": 0.0004,
+          "s": 92000,
+          "e": 101000,
           "m": 11,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Xin nghe con khấn nguyện, hỡi Cha nhân từ.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/ef46d7/2/o/pksjj_VT_041_r360P.mp4",
@@ -28627,12 +28603,10 @@
       "checksum": "0b3e92394a6ff0c12a33c46f669d1ccb",
       "metadata_hash": null,
       "format": "MP4",
-      "timing_method": "vietnamese_ctc_same_recording",
+      "timing_method": "user_supplied_same_recording_line_boundaries",
       "general_audio_exists": false,
       "general_video_exists": false,
-      "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 41,
@@ -30585,141 +30559,117 @@
       ],
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_supplied_line_boundaries",
       "lines": [
         {
-          "s": 16420,
-          "e": 25400,
-          "text": "Lạy Cha Giê-hô-va, xin cám ơn Cha đêm ngày,",
-          "confidence": 0.5996,
-          "min_char_score": 0.0019,
+          "s": 16000,
+          "e": 26000,
           "m": 0,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Lạy Cha Giê-hô-va, xin cám ơn Cha đêm ngày,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 26740,
-          "e": 35700,
-          "text": "sự sáng Cha chiếu rọi trên chúng con rạng ngời.",
-          "confidence": 0.551,
-          "min_char_score": 0.0005,
+          "s": 26000,
+          "e": 36000,
           "m": 1,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "sự sáng Cha chiếu rọi trên chúng con rạng ngời.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 36880,
-          "e": 45980,
-          "text": "Tạ ơn Cha hết lòng vì phước ân kêu cầu ngài,",
-          "confidence": 0.4473,
-          "min_char_score": 0.0013,
+          "s": 36000,
+          "e": 46000,
           "m": 2,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Tạ ơn Cha hết lòng vì phước ân kêu cầu ngài,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 47040,
-          "e": 56320,
-          "text": "hầu chúng con cùng trao mọi lo lắng cho ngài.",
-          "confidence": 0.453,
-          "min_char_score": 0.004,
+          "s": 46000,
+          "e": 56000,
           "m": 3,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "hầu chúng con cùng trao mọi lo lắng cho ngài.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 64980,
-          "e": 74160,
-          "text": "Lạy Cha Giê-hô-va, xin cám ơn ban Con một,",
-          "confidence": 0.3354,
-          "min_char_score": 0.0005,
+          "s": 65000,
+          "e": 75000,
           "m": 4,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Lạy Cha Giê-hô-va, xin cám ơn ban Con một,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 75200,
-          "e": 84260,
-          "text": "do đức tin vững mạnh, nay thắng thế gian rồi.",
-          "confidence": 0.3264,
-          "min_char_score": 0.0005,
+          "s": 75000,
+          "e": 85000,
           "m": 5,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "do đức tin vững mạnh, nay thắng thế gian rồi.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 85360,
-          "e": 94520,
-          "text": "Tạ ơn Cha dắt dìu, dạy chúng con theo đường ngài",
-          "confidence": 0.3351,
-          "min_char_score": 0.003,
+          "s": 85000,
+          "e": 95000,
           "m": 6,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Tạ ơn Cha dắt dìu, dạy chúng con theo đường ngài",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 95580,
-          "e": 106480,
-          "text": "hầu chúng con làm theo lời thề ước dâng mình.",
-          "confidence": 0.3148,
-          "min_char_score": 0.0047,
+          "s": 95000,
+          "e": 105000,
           "m": 7,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "hầu chúng con làm theo lời thề ước dâng mình.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 108320,
-          "e": 117740,
-          "text": "Lạy Cha Giê-hô-va, xin cám ơn ban vinh dự",
-          "confidence": 0.2954,
-          "min_char_score": 0.0008,
+          "s": 108000,
+          "e": 118000,
           "m": 8,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Lạy Cha Giê-hô-va, xin cám ơn ban vinh dự",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 118620,
-          "e": 127080,
-          "text": "rao báo danh thánh ngài, chân lý cho bao người.",
-          "confidence": 0.2834,
-          "min_char_score": 0.0041,
+          "s": 118000,
+          "e": 128000,
           "m": 9,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "rao báo danh thánh ngài, chân lý cho bao người.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 128760,
-          "e": 138100,
-          "text": "Tạ ơn Cha xóa sạch mọi khổ đau mai không còn,",
-          "confidence": 0.2539,
-          "min_char_score": 0.0002,
+          "s": 128000,
+          "e": 138000,
           "m": 10,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Tạ ơn Cha xóa sạch mọi khổ đau mai không còn,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 138340,
-          "e": 154600,
-          "text": "và Nước trên trời mang lại ân phước muôn đời.",
-          "confidence": 0.2092,
-          "min_char_score": 0.0005,
+          "s": 138000,
+          "e": 152000,
           "m": 11,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "và Nước trên trời mang lại ân phước muôn đời.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/50d1fa/2/o/pksjj_VT_046_r360P.mp4",
@@ -30727,12 +30677,10 @@
       "checksum": "142ca4c422d2d0ce0672b516bf25a9b9",
       "metadata_hash": null,
       "format": "MP4",
-      "timing_method": "vietnamese_ctc_same_recording",
+      "timing_method": "user_supplied_same_recording_line_boundaries",
       "general_audio_exists": false,
       "general_video_exists": false,
-      "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 46,
@@ -53756,8 +53704,8 @@
       "general_audio_exists": false,
       "general_video_exists": false,
       "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 20,
-        "lyric_occurrence_omitted_in_selected_recording": 4
+        "lyric_occurrence_omitted_in_selected_recording": 4,
+        "vocal_boundary_requires_review": 20
       }
     },
     {

@@ -32,8 +32,8 @@ ends stop at the next lyric start. Interlude/outro official paragraphs are held
 when voice end is unproven. Enabled clips can retain ordinary pauses within a
 sung line; no acoustic separation model or listening review is claimed.
 
-54 songs were analyzed; 43 have enabled Vietnamese lines (853 total). Entirely
-held: 28,41,46,67,80,89,93,140,141,144,152. Thus this does not claim all 54 songs'
+54 songs were analyzed; 45 have enabled Vietnamese lines (877 total). Entirely
+held: 28,67,80,89,93,140,141,144,152. Thus this does not claim all 54 songs'
 lines are verified. Additional review is needed before enabling held candidates.
 
 Reproduction: set VOCAL_WORK (selected-source JSON and local media), VOCAL_MODEL
@@ -48,3 +48,12 @@ invalidate pending events, promises, frame callbacks and timers. Same repeat
 button, another line, TTS, tab/song changes and hidden stop playback. Returning
 to foreground never auto-starts. Headless position tests verify mechanics, not
 actual audible vocal identity or physical iPhone/iPad behavior.
+
+## User-supplied song 41/46 boundaries (2026-10-08)
+
+All 12 sung lines of each song use the supplied second-resolution intervals.
+They are bound to pub-pksjj_41_VIDEO and pub-pksjj_46_VIDEO and their current
+360p file checksums. These are user-supplied timings, not official markers or
+model-confidence approvals. Titles, scriptures and chorus headings get no clips.
+Manual overrides survive candidate repackaging and audit regeneration. Changed
+recordings or lyrics require review before these intervals can be reused.
