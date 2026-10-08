@@ -6,7 +6,7 @@ const PLATFORM = require('./helpers/platform');
 const {spawn} = require('child_process');
 const path = require('path');
 const {CDPClient} = require('./test_browser_runtime');
-const PORT = 8985, sleep = ms => new Promise(r => setTimeout(r, ms));
+const PORT = Number(process.env.SONG_TEST_PORT || 8985), sleep = ms => new Promise(r => setTimeout(r, ms));
 const SITE = process.env.SITE || `http://127.0.0.1:${PORT}/jeonju/index.html`;
 const SONGS = process.env.SONGS ? process.env.SONGS.split(',').map(x => { const [n, l] = x.split(':'); return [/^\d+$/.test(n) ? +n : n, l]; }) : [[1, 'ko'], [1, 'ja'], [28, 'ko'], [74, 'ko'], [151, 'ko'], [152, 'ko'], [155, 'ko'], [164, 'ko'], [5, 'en'], [1, 'en']];
 (async () => {
