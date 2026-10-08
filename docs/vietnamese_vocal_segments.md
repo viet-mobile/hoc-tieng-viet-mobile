@@ -32,8 +32,8 @@ ends stop at the next lyric start. Interlude/outro official paragraphs are held
 when voice end is unproven. Enabled clips can retain ordinary pauses within a
 sung line; no acoustic separation model or listening review is claimed.
 
-54 songs were analyzed; 50 have enabled Vietnamese lines (1022 total). Entirely
-held: 28,80,93,152. Thus this does not claim all 54 songs'
+54 songs were analyzed; 51 have enabled Vietnamese lines (1046 total). Entirely
+held: 80,93,152. Thus this does not claim all 54 songs'
 lines are verified. Additional review is needed before enabling held candidates.
 
 Reproduction: set VOCAL_WORK (selected-source JSON and local media), VOCAL_MODEL
@@ -145,3 +145,13 @@ line counts hide learner buttons without falling back to general choir.
 This standing instruction supersedes earlier general-choir priority and the
 legacy Vietnamese-only song 41 annotation for these learner rows. It is user-
 authorized timing reuse, not independent cross-language vocal alignment.
+
+## Precise song 28 user times (2026-10-08)
+
+The user's 24 decimal-second boundaries replace unverified CTC candidates for
+pub-pksjj_28_VIDEO, Vietnamese checksum 03ba12ec40fb16a13684bb783550ad36.
+Decimal arithmetic records exact integer milliseconds without rounding drift.
+All learner locales use the same supplied bounds in their own checksum-bound
+children videos under the standing shared-children instruction. These are user
+annotations; network position checks do not independently verify audible vocal
+start/end identity. The prior 24 held Vietnamese lines are now enabled.

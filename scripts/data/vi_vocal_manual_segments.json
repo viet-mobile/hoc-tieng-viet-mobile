@@ -939,5 +939,134 @@
         "e": 172000
       }
     ]
+  },
+  "28": {
+    "mediaKey": "pub-pksjj_28_VIDEO",
+    "checksum": "03ba12ec40fb16a13684bb783550ad36",
+    "format": "MP4",
+    "timingSource": "User-provided precise Vietnamese Kingdom song 28 children choir 24-line timing table, 2026-10-08; identical learner children intervals explicitly authorized",
+    "applyLearnerChildren": true,
+    "lines": [
+      {
+        "text": "Ai được kết bạn với Chúa?",
+        "s": 11800,
+        "e": 15200
+      },
+      {
+        "text": "Ai được ở lều của Cha?",
+        "s": 15600,
+        "e": 19400
+      },
+      {
+        "text": "Những ai Chúa tin cậy, mãi luôn mến thương?",
+        "s": 19800,
+        "e": 24000
+      },
+      {
+        "text": "Những ai trở nên bạn Cha?",
+        "s": 24300,
+        "e": 28000
+      },
+      {
+        "text": "Ấy ai hết lòng theo Chúa,",
+        "s": 28300,
+        "e": 32100
+      },
+      {
+        "text": "quý yêu các lời Thánh Kinh,",
+        "s": 32500,
+        "e": 36400
+      },
+      {
+        "text": "đức tin vững nơi ngài, tín trung chẳng lay,",
+        "s": 36800,
+        "e": 41000
+      },
+      {
+        "text": "bước theo lối Cha suốt đời.",
+        "s": 41300,
+        "e": 46000
+      },
+      {
+        "text": "Ai được kết bạn với Chúa,",
+        "s": 49200,
+        "e": 52900
+      },
+      {
+        "text": "có ân phước cầu đến Cha?",
+        "s": 53200,
+        "e": 57100
+      },
+      {
+        "text": "Những ai Chúa yêu chuộng, vẫn luôn nhớ tên?",
+        "s": 57400,
+        "e": 61800
+      },
+      {
+        "text": "Những ai khiến Cha mừng vui?",
+        "s": 62100,
+        "e": 65900
+      },
+      {
+        "text": "Ấy ai kính sợ danh thánh,",
+        "s": 66200,
+        "e": 70000
+      },
+      {
+        "text": "lắng nghe các lời Chúa khuyên,",
+        "s": 70400,
+        "e": 74200
+      },
+      {
+        "text": "quyết luôn sống trung thành, có tâm thẳng ngay,",
+        "s": 74600,
+        "e": 78900
+      },
+      {
+        "text": "nói năng đáng tin, chân thật.",
+        "s": 79200,
+        "e": 83800
+      },
+      {
+        "text": "Biết bao gánh nặng, lo lắng,",
+        "s": 87100,
+        "e": 90800
+      },
+      {
+        "text": "thiết tha giãi bày với Cha,",
+        "s": 91200,
+        "e": 95000
+      },
+      {
+        "text": "chúng con kính yêu và biết Cha rõ hơn,",
+        "s": 95300,
+        "e": 99800
+      },
+      {
+        "text": "đấng chăm sóc ân cần thay.",
+        "s": 100100,
+        "e": 103900
+      },
+      {
+        "text": "Chúng con muốn gần Cha mãi,",
+        "s": 104200,
+        "e": 108000
+      },
+      {
+        "text": "ước ao kết bạn với Cha",
+        "s": 108400,
+        "e": 112200
+      },
+      {
+        "text": "bởi Cha tốt vô cùng, hỡi Giê-hô-va,",
+        "s": 112600,
+        "e": 116900
+      },
+      {
+        "text": "chẳng ai sánh được với ngài.",
+        "s": 117200,
+        "e": 123200
+      }
+    ]
   }
 }

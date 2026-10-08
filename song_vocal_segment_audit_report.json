@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T09:22:32.765978+00:00",
+  "generated": "2026-10-08T13:17:03.257796+00:00",
   "fresh_network": false,
   "base_commit": "c7e3a3d",
   "source_priority": [
@@ -236,52 +236,52 @@
   },
   "totals": {
     "vi": {
-      "active_tracks": 50,
-      "enabled_lines": 1022
+      "active_tracks": 51,
+      "enabled_lines": 1046
     },
     "cs": {
-      "active_tracks": 50,
-      "enabled_lines": 1070
+      "active_tracks": 51,
+      "enabled_lines": 1094
     },
     "zh_cn": {
-      "active_tracks": 46,
-      "enabled_lines": 1050
+      "active_tracks": 47,
+      "enabled_lines": 1074
     },
     "zh": {
-      "active_tracks": 45,
-      "enabled_lines": 1013
+      "active_tracks": 46,
+      "enabled_lines": 1037
     },
     "en": {
-      "active_tracks": 84,
-      "enabled_lines": 1765
+      "active_tracks": 85,
+      "enabled_lines": 1789
     },
     "fr": {
-      "active_tracks": 50,
-      "enabled_lines": 1033
+      "active_tracks": 51,
+      "enabled_lines": 1057
     },
     "de": {
-      "active_tracks": 35,
-      "enabled_lines": 734
+      "active_tracks": 36,
+      "enabled_lines": 758
     },
     "hu": {
-      "active_tracks": 41,
-      "enabled_lines": 870
+      "active_tracks": 42,
+      "enabled_lines": 894
     },
     "id": {
-      "active_tracks": 55,
-      "enabled_lines": 1161
+      "active_tracks": 56,
+      "enabled_lines": 1185
     },
     "ja": {
-      "active_tracks": 39,
-      "enabled_lines": 741
+      "active_tracks": 40,
+      "enabled_lines": 765
     },
     "ko": {
-      "active_tracks": 63,
-      "enabled_lines": 1409
+      "active_tracks": 64,
+      "enabled_lines": 1433
     },
     "pl": {
-      "active_tracks": 40,
-      "enabled_lines": 839
+      "active_tracks": 41,
+      "enabled_lines": 863
     }
   },
   "rows": [
@@ -30170,8 +30170,8 @@
       "general_audio_exists": false,
       "general_video_exists": false,
       "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 9,
-        "lyric_occurrence_omitted_in_selected_recording": 5
+        "lyric_occurrence_omitted_in_selected_recording": 5,
+        "vocal_boundary_requires_review": 9
       }
     },
     {
@@ -33354,273 +33354,225 @@
       ],
       "marker_count": 0,
       "singable_line_count": 24,
-      "active": false,
-      "buttons": 0,
-      "reason": "vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 24,
+      "reason": "user_supplied_line_boundaries",
       "lines": [
         {
-          "s": 10620,
-          "e": 13900,
-          "text": "Ai được kết bạn với Chúa?",
-          "confidence": 0.4239,
-          "min_char_score": 0.0007,
+          "s": 11800,
+          "e": 15200,
           "m": 0,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Ai được kết bạn với Chúa?",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 15500,
-          "e": 18880,
-          "text": "Ai được ở lều của Cha?",
-          "confidence": 0.5436,
-          "min_char_score": 0.0002,
+          "s": 15600,
+          "e": 19400,
           "m": 1,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Ai được ở lều của Cha?",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 19960,
-          "e": 23980,
-          "text": "Những ai Chúa tin cậy, mãi luôn mến thương?",
-          "confidence": 0.4973,
-          "min_char_score": 0.0041,
+          "s": 19800,
+          "e": 24000,
           "m": 2,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Những ai Chúa tin cậy, mãi luôn mến thương?",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 24740,
-          "e": 28140,
-          "text": "Những ai trở nên bạn Cha?",
-          "confidence": 0.5749,
-          "min_char_score": 0.002,
+          "s": 24300,
+          "e": 28000,
           "m": 3,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Những ai trở nên bạn Cha?",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 29880,
-          "e": 33580,
-          "text": "Ấy ai hết lòng theo Chúa,",
-          "confidence": 0.5708,
-          "min_char_score": 0.003,
+          "s": 28300,
+          "e": 32100,
           "m": 4,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Ấy ai hết lòng theo Chúa,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 34480,
-          "e": 37860,
-          "text": "quý yêu các lời Thánh Kinh,",
-          "confidence": 0.5606,
-          "min_char_score": 0.0006,
+          "s": 32500,
+          "e": 36400,
           "m": 5,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "quý yêu các lời Thánh Kinh,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 39300,
-          "e": 43300,
-          "text": "đức tin vững nơi ngài, tín trung chẳng lay,",
-          "confidence": 0.4209,
-          "min_char_score": 0.0,
+          "s": 36800,
+          "e": 41000,
           "m": 6,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "đức tin vững nơi ngài, tín trung chẳng lay,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 44180,
-          "e": 47620,
-          "text": "bước theo lối Cha suốt đời.",
-          "confidence": 0.5059,
-          "min_char_score": 0.0054,
+          "s": 41300,
+          "e": 46000,
           "m": 7,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "bước theo lối Cha suốt đời.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 56740,
-          "e": 59140,
-          "text": "Ai được kết bạn với Chúa,",
-          "confidence": 0.3053,
-          "min_char_score": 0.0019,
+          "s": 49200,
+          "e": 52900,
           "m": 8,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Ai được kết bạn với Chúa,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 61140,
-          "e": 64720,
-          "text": "có ân phước cầu đến Cha?",
-          "confidence": 0.355,
-          "min_char_score": 0.0003,
+          "s": 53200,
+          "e": 57100,
           "m": 9,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "có ân phước cầu đến Cha?",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 66060,
-          "e": 70000,
-          "text": "Những ai Chúa yêu chuộng, vẫn luôn nhớ tên?",
-          "confidence": 0.406,
-          "min_char_score": 0.0022,
+          "s": 57400,
+          "e": 61800,
           "m": 10,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Những ai Chúa yêu chuộng, vẫn luôn nhớ tên?",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 70920,
-          "e": 73760,
-          "text": "Những ai khiến Cha mừng vui?",
-          "confidence": 0.2925,
-          "min_char_score": 0.0011,
+          "s": 62100,
+          "e": 65900,
           "m": 11,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Những ai khiến Cha mừng vui?",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 75920,
-          "e": 79420,
-          "text": "Ấy ai kính sợ danh thánh,",
-          "confidence": 0.2988,
-          "min_char_score": 0.0014,
+          "s": 66200,
+          "e": 70000,
           "m": 12,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Ấy ai kính sợ danh thánh,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 80540,
-          "e": 84220,
-          "text": "lắng nghe các lời Chúa khuyên,",
-          "confidence": 0.4842,
-          "min_char_score": 0.0031,
+          "s": 70400,
+          "e": 74200,
           "m": 13,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "lắng nghe các lời Chúa khuyên,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 85400,
-          "e": 89400,
-          "text": "quyết luôn sống trung thành, có tâm thẳng ngay,",
-          "confidence": 0.2944,
-          "min_char_score": 0.0001,
+          "s": 74600,
+          "e": 78900,
           "m": 14,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "quyết luôn sống trung thành, có tâm thẳng ngay,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 90260,
-          "e": 93440,
-          "text": "nói năng đáng tin, chân thật.",
-          "confidence": 0.3648,
-          "min_char_score": 0.0003,
+          "s": 79200,
+          "e": 83800,
           "m": 15,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "nói năng đáng tin, chân thật.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 97500,
-          "e": 99840,
-          "text": "Biết bao gánh nặng, lo lắng,",
-          "confidence": 0.2767,
-          "min_char_score": 0.0007,
+          "s": 87100,
+          "e": 90800,
           "m": 16,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Biết bao gánh nặng, lo lắng,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 102360,
-          "e": 105720,
-          "text": "thiết tha giãi bày với Cha,",
-          "confidence": 0.2518,
-          "min_char_score": 0.0015,
+          "s": 91200,
+          "e": 95000,
           "m": 17,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "thiết tha giãi bày với Cha,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 107200,
-          "e": 111260,
-          "text": "chúng con kính yêu và biết Cha rõ hơn,",
-          "confidence": 0.1928,
-          "min_char_score": 0.0013,
+          "s": 95300,
+          "e": 99800,
           "m": 18,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "chúng con kính yêu và biết Cha rõ hơn,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 112040,
-          "e": 114880,
-          "text": "đấng chăm sóc ân cần thay.",
-          "confidence": 0.2725,
-          "min_char_score": 0.0006,
+          "s": 100100,
+          "e": 103900,
           "m": 19,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "đấng chăm sóc ân cần thay.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 116920,
-          "e": 120520,
-          "text": "Chúng con muốn gần Cha mãi,",
-          "confidence": 0.229,
-          "min_char_score": 0.0021,
+          "s": 104200,
+          "e": 108000,
           "m": 20,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Chúng con muốn gần Cha mãi,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 121960,
-          "e": 127340,
-          "text": "ước ao kết bạn với Cha",
-          "confidence": 0.2358,
-          "min_char_score": 0.0033,
+          "s": 108400,
+          "e": 112200,
           "m": 21,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "ước ao kết bạn với Cha",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 127800,
-          "e": 139620,
-          "text": "bởi Cha tốt vô cùng, hỡi Giê-hô-va,",
-          "confidence": 0.2762,
-          "min_char_score": 0.0002,
+          "s": 112600,
+          "e": 116900,
           "m": 22,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "bởi Cha tốt vô cùng, hỡi Giê-hô-va,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 142600,
-          "e": 147940,
-          "text": "chẳng ai sánh được với ngài.",
-          "confidence": 0.3063,
-          "min_char_score": 0.0005,
+          "s": 117200,
+          "e": 123200,
           "m": 23,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "chẳng ai sánh được với ngài.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/fe5130/3/o/pksjj_VT_028_r360P.mp4",
@@ -33628,12 +33580,10 @@
       "checksum": "03ba12ec40fb16a13684bb783550ad36",
       "metadata_hash": null,
       "format": "MP4",
-      "timing_method": "vietnamese_ctc_same_recording",
+      "timing_method": "user_supplied_same_recording_line_boundaries",
       "general_audio_exists": false,
       "general_video_exists": false,
-      "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 24
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 28,
@@ -33644,225 +33594,225 @@
       "media_key": "pub-pksjj_28_VIDEO",
       "marker_count": 0,
       "singable_line_count": 24,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 24,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 10620,
-          "e": 13900,
+          "s": 11800,
+          "e": 15200,
           "m": 0,
           "pid": null,
           "text": "Kdo může, Otče náš,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 15500,
-          "e": 18880,
+          "s": 15600,
+          "e": 19400,
           "m": 1,
           "pid": null,
           "text": "tvým přítelem se stát?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 19960,
-          "e": 23980,
+          "s": 19800,
+          "e": 24000,
           "m": 2,
           "pid": null,
           "text": "Ve stanu tvém kdo smí hostem být,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24740,
-          "e": 28140,
+          "s": 24300,
+          "e": 28000,
           "m": 3,
           "pid": null,
           "text": "důvěrně tebe znát?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 29880,
-          "e": 33580,
+          "s": 28300,
+          "e": 32100,
           "m": 4,
           "pid": null,
           "text": "Ten, kdo čte Slovo",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 34480,
-          "e": 37860,
+          "s": 32500,
+          "e": 36400,
           "m": 5,
           "pid": null,
           "text": "tvé a v tebe víru má,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 39300,
-          "e": 43300,
+          "s": 36800,
+          "e": 41000,
           "m": 6,
           "pid": null,
           "text": "ten, kdo je věrný, právo chce znát,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44180,
-          "e": 47620,
+          "s": 41300,
+          "e": 46000,
           "m": 7,
           "pid": null,
           "text": "tvou pravdou žije rád.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 56740,
-          "e": 59140,
+          "s": 49200,
+          "e": 52900,
           "m": 8,
           "pid": null,
           "text": "Kdo přítelem je",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 61140,
-          "e": 64720,
+          "s": 53200,
+          "e": 57100,
           "m": 9,
           "pid": null,
           "text": "tvým, Jehovo, Nejvyšší?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 66060,
-          "e": 70000,
+          "s": 57400,
+          "e": 61800,
           "m": 10,
           "pid": null,
           "text": "Kdo k tvému trůnu blíž přijít smí",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 70920,
-          "e": 73760,
+          "s": 62100,
+          "e": 65900,
           "m": 11,
           "pid": null,
           "text": "a kdo tě potěší?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 75920,
-          "e": 79420,
+          "s": 66200,
+          "e": 70000,
           "m": 12,
           "pid": null,
           "text": "Ten, kdo tvé jméno",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 80540,
-          "e": 84220,
+          "s": 70400,
+          "e": 74200,
           "m": 13,
           "pid": null,
           "text": "ctí, tvé Slovo poslouchá,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85400,
-          "e": 89400,
+          "s": 74600,
+          "e": 78900,
           "m": 14,
           "pid": null,
           "text": "ten, kdo je čestný a oddaný,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 90260,
-          "e": 93440,
+          "s": 79200,
+          "e": 83800,
           "m": 15,
           "pid": null,
           "text": "kdo pravdu vždy říká.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 97500,
-          "e": 99840,
+          "s": 87100,
+          "e": 90800,
           "m": 16,
           "pid": null,
           "text": "Své obavy ti říct",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 102360,
-          "e": 105720,
+          "s": 91200,
+          "e": 95000,
           "m": 17,
           "pid": null,
           "text": "můžeme modlitbou,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 107200,
-          "e": 111260,
+          "s": 95300,
+          "e": 99800,
           "m": 18,
           "pid": null,
           "text": "blíž ti být smíme, den co den mít",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 112040,
-          "e": 114880,
+          "s": 100100,
+          "e": 103900,
           "m": 19,
           "pid": null,
           "text": "lásku a péči tvou.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 116920,
-          "e": 120520,
+          "s": 104200,
+          "e": 108000,
           "m": 20,
           "pid": null,
           "text": "Toužíme, Bože náš, žít",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 121960,
-          "e": 127340,
+          "s": 108400,
+          "e": 112200,
           "m": 21,
           "pid": null,
           "text": "s tebou v přátelství.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 127800,
-          "e": 139620,
+          "s": 112600,
+          "e": 116900,
           "m": 22,
           "pid": null,
           "text": "Dál, Jehovo, stůj blízko při nás.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 142600,
-          "e": 147940,
+          "s": 117200,
+          "e": 123200,
           "m": 23,
           "pid": null,
           "text": "Přítel jsi nejlepší.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/d80af9/1/o/pksjj_B_028_r360P.mp4",
@@ -33889,9 +33839,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 24
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 28,
@@ -33902,225 +33850,225 @@
       "media_key": "pub-pksjj_28_VIDEO",
       "marker_count": 0,
       "singable_line_count": 24,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 24,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 10620,
-          "e": 13900,
+          "s": 11800,
+          "e": 15200,
           "m": 0,
           "pid": null,
           "text": "耶和华，谁能够",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 15500,
-          "e": 18880,
+          "s": 15600,
+          "e": 19400,
           "m": 1,
           "pid": null,
           "text": "成为你的朋友？",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 19960,
-          "e": 23980,
+          "s": 19800,
+          "e": 24000,
           "m": 2,
           "pid": null,
           "text": "谁能够在你圣幕居住，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24740,
-          "e": 28140,
+          "s": 24300,
+          "e": 28000,
           "m": 3,
           "pid": null,
           "text": "得你信任赐福？",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 29880,
-          "e": 33580,
+          "s": 28300,
+          "e": 32100,
           "m": 4,
           "pid": null,
           "text": "就是显出信心、",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 34480,
-          "e": 37860,
+          "s": 32500,
+          "e": 36400,
           "m": 5,
           "pid": null,
           "text": "喜爱真理的人，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 39300,
-          "e": 43300,
+          "s": 36800,
+          "e": 41000,
           "m": 6,
           "pid": null,
           "text": "他对你忠贞，为人正义，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44180,
-          "e": 47620,
+          "s": 41300,
+          "e": 46000,
           "m": 7,
           "pid": null,
           "text": "按你话语而行。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 56740,
-          "e": 59140,
+          "s": 49200,
+          "e": 52900,
           "m": 8,
           "pid": null,
           "text": "耶和华，谁能够",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 61140,
-          "e": 64720,
+          "s": 53200,
+          "e": 57100,
           "m": 9,
           "pid": null,
           "text": "靠近你的宝座？",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 66060,
-          "e": 70000,
+          "s": 57400,
+          "e": 61800,
           "m": 10,
           "pid": null,
           "text": "谁能与你有良好关系，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 70920,
-          "e": 73760,
+          "s": 62100,
+          "e": 65900,
           "m": 11,
           "pid": null,
           "text": "让你的心欢喜？",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 75920,
-          "e": 79420,
+          "s": 66200,
+          "e": 70000,
           "m": 12,
           "pid": null,
           "text": "就是听从圣经、",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 80540,
-          "e": 84220,
+          "s": 70400,
+          "e": 74200,
           "m": 13,
           "pid": null,
           "text": "称颂你名的人，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85400,
-          "e": 89400,
+          "s": 74600,
+          "e": 78900,
           "m": 14,
           "pid": null,
           "text": "他诚实可靠，待人忠信，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 90260,
-          "e": 93440,
+          "s": 79200,
+          "e": 83800,
           "m": 15,
           "pid": null,
           "text": "总是心口如一。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 97500,
-          "e": 99840,
+          "s": 87100,
+          "e": 90800,
           "m": 16,
           "pid": null,
           "text": "卸下一切烦忧，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 102360,
-          "e": 105720,
+          "s": 91200,
+          "e": 95000,
           "m": 17,
           "pid": null,
           "text": "向你尽情倾诉。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 107200,
-          "e": 111260,
+          "s": 95300,
+          "e": 99800,
           "m": 18,
           "pid": null,
           "text": "天天亲近你，在你爱里，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 112040,
-          "e": 114880,
+          "s": 100100,
+          "e": 103900,
           "m": 19,
           "pid": null,
           "text": "受你呵护关心。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 116920,
-          "e": 120520,
+          "s": 104200,
+          "e": 108000,
           "m": 20,
           "pid": null,
           "text": "渴望与你为友，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 121960,
-          "e": 127340,
+          "s": 108400,
+          "e": 112200,
           "m": 21,
           "pid": null,
           "text": "但愿友谊长久，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 127800,
-          "e": 139620,
+          "s": 112600,
+          "e": 116900,
           "m": 22,
           "pid": null,
           "text": "你是我真正知心好友，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 142600,
-          "e": 147940,
+          "s": 117200,
+          "e": 123200,
           "m": 23,
           "pid": null,
           "text": "直到天长地久。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/8c8a5d/1/o/pksjj_CHS_028_r360P.mp4",
@@ -34147,9 +34095,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 24
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 28,
@@ -34160,225 +34106,225 @@
       "media_key": "pub-pksjj_28_VIDEO",
       "marker_count": 0,
       "singable_line_count": 24,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 24,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 10620,
-          "e": 13900,
+          "s": 11800,
+          "e": 15200,
           "m": 0,
           "pid": null,
           "text": "耶和華，誰能夠",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 15500,
-          "e": 18880,
+          "s": 15600,
+          "e": 19400,
           "m": 1,
           "pid": null,
           "text": "成為你的朋友？",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 19960,
-          "e": 23980,
+          "s": 19800,
+          "e": 24000,
           "m": 2,
           "pid": null,
           "text": "誰能夠在你聖幕居住，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24740,
-          "e": 28140,
+          "s": 24300,
+          "e": 28000,
           "m": 3,
           "pid": null,
           "text": "得你信任賜福？",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 29880,
-          "e": 33580,
+          "s": 28300,
+          "e": 32100,
           "m": 4,
           "pid": null,
           "text": "就是顯出信心、",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 34480,
-          "e": 37860,
+          "s": 32500,
+          "e": 36400,
           "m": 5,
           "pid": null,
           "text": "喜愛真理的人，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 39300,
-          "e": 43300,
+          "s": 36800,
+          "e": 41000,
           "m": 6,
           "pid": null,
           "text": "他對你忠貞，為人正義，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44180,
-          "e": 47620,
+          "s": 41300,
+          "e": 46000,
           "m": 7,
           "pid": null,
           "text": "按你話語而行。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 56740,
-          "e": 59140,
+          "s": 49200,
+          "e": 52900,
           "m": 8,
           "pid": null,
           "text": "耶和華，誰能夠",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 61140,
-          "e": 64720,
+          "s": 53200,
+          "e": 57100,
           "m": 9,
           "pid": null,
           "text": "靠近你的寶座？",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 66060,
-          "e": 70000,
+          "s": 57400,
+          "e": 61800,
           "m": 10,
           "pid": null,
           "text": "誰能與你有良好關係，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 70920,
-          "e": 73760,
+          "s": 62100,
+          "e": 65900,
           "m": 11,
           "pid": null,
           "text": "讓你的心歡喜？",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 75920,
-          "e": 79420,
+          "s": 66200,
+          "e": 70000,
           "m": 12,
           "pid": null,
           "text": "就是聽從聖經、",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 80540,
-          "e": 84220,
+          "s": 70400,
+          "e": 74200,
           "m": 13,
           "pid": null,
           "text": "稱頌你名的人，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85400,
-          "e": 89400,
+          "s": 74600,
+          "e": 78900,
           "m": 14,
           "pid": null,
           "text": "他誠實可靠，待人忠信，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 90260,
-          "e": 93440,
+          "s": 79200,
+          "e": 83800,
           "m": 15,
           "pid": null,
           "text": "總是心口如一。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 97500,
-          "e": 99840,
+          "s": 87100,
+          "e": 90800,
           "m": 16,
           "pid": null,
           "text": "卸下一切煩憂，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 102360,
-          "e": 105720,
+          "s": 91200,
+          "e": 95000,
           "m": 17,
           "pid": null,
           "text": "向你盡情傾訴。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 107200,
-          "e": 111260,
+          "s": 95300,
+          "e": 99800,
           "m": 18,
           "pid": null,
           "text": "天天親近你，在你愛裡，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 112040,
-          "e": 114880,
+          "s": 100100,
+          "e": 103900,
           "m": 19,
           "pid": null,
           "text": "受你呵護關心。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 116920,
-          "e": 120520,
+          "s": 104200,
+          "e": 108000,
           "m": 20,
           "pid": null,
           "text": "渴望與你為友，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 121960,
-          "e": 127340,
+          "s": 108400,
+          "e": 112200,
           "m": 21,
           "pid": null,
           "text": "但願友誼長久，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 127800,
-          "e": 139620,
+          "s": 112600,
+          "e": 116900,
           "m": 22,
           "pid": null,
           "text": "你是我真正知心好友，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 142600,
-          "e": 147940,
+          "s": 117200,
+          "e": 123200,
           "m": 23,
           "pid": null,
           "text": "直到天長地久。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/e23a41/1/o/pksjj_CH_028_r360P.mp4",
@@ -34405,9 +34351,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 24
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 28,
@@ -34418,225 +34362,225 @@
       "media_key": "pub-pksjj_28_VIDEO",
       "marker_count": 0,
       "singable_line_count": 24,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 24,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 10620,
-          "e": 13900,
+          "s": 11800,
+          "e": 15200,
           "m": 0,
           "pid": null,
           "text": "Who is your friend, O God?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 15500,
-          "e": 18880,
+          "s": 15600,
+          "e": 19400,
           "m": 1,
           "pid": null,
           "text": "Who in your tent may dwell?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 19960,
-          "e": 23980,
+          "s": 19800,
+          "e": 24000,
           "m": 2,
           "pid": null,
           "text": "Who gains your friendship? Who gains your trust?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24740,
-          "e": 28140,
+          "s": 24300,
+          "e": 28000,
           "m": 3,
           "pid": null,
           "text": "Who really knows you well?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 29880,
-          "e": 33580,
+          "s": 28300,
+          "e": 32100,
           "m": 4,
           "pid": null,
           "text": "All who embrace your Word,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 34480,
-          "e": 37860,
+          "s": 32500,
+          "e": 36400,
           "m": 5,
           "pid": null,
           "text": "All who have faith in you,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 39300,
-          "e": 43300,
+          "s": 36800,
+          "e": 41000,
           "m": 6,
           "pid": null,
           "text": "All who are loyal, all who are just,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44180,
-          "e": 47620,
+          "s": 41300,
+          "e": 46000,
           "m": 7,
           "pid": null,
           "text": "Living the truth for you.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 56740,
-          "e": 59140,
+          "s": 49200,
+          "e": 52900,
           "m": 8,
           "pid": null,
           "text": "Who is your friend, O God?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 61140,
-          "e": 64720,
+          "s": 53200,
+          "e": 57100,
           "m": 9,
           "pid": null,
           "text": "Who may approach your throne?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 66060,
-          "e": 70000,
+          "s": 57400,
+          "e": 61800,
           "m": 10,
           "pid": null,
           "text": "Who brings delight and makes you rejoice?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 70920,
-          "e": 73760,
+          "s": 62100,
+          "e": 65900,
           "m": 11,
           "pid": null,
           "text": "Whose name to you is known?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 75920,
-          "e": 79420,
+          "s": 66200,
+          "e": 70000,
           "m": 12,
           "pid": null,
           "text": "All who exalt your name,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 80540,
-          "e": 84220,
+          "s": 70400,
+          "e": 74200,
           "m": 13,
           "pid": null,
           "text": "All who your Word obey,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85400,
-          "e": 89400,
+          "s": 74600,
+          "e": 78900,
           "m": 14,
           "pid": null,
           "text": "All who are faithful, honest in heart,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 90260,
-          "e": 93440,
+          "s": 79200,
+          "e": 83800,
           "m": 15,
           "pid": null,
           "text": "Truthful in all they say.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 97500,
-          "e": 99840,
+          "s": 87100,
+          "e": 90800,
           "m": 16,
           "pid": null,
           "text": "Throwing our cares on you,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 102360,
-          "e": 105720,
+          "s": 91200,
+          "e": 95000,
           "m": 17,
           "pid": null,
           "text": "Baring our hearts in prayer,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 107200,
-          "e": 111260,
+          "s": 95300,
+          "e": 99800,
           "m": 18,
           "pid": null,
           "text": "Drawing us closer, bonding in love,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 112040,
-          "e": 114880,
+          "s": 100100,
+          "e": 103900,
           "m": 19,
           "pid": null,
           "text": "Feeling your daily care,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 116920,
-          "e": 120520,
+          "s": 104200,
+          "e": 108000,
           "m": 20,
           "pid": null,
           "text": "We yearn to be your friend.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 121960,
-          "e": 127340,
+          "s": 108400,
+          "e": 112200,
           "m": 21,
           "pid": null,
           "text": "Long may our friendship grow.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 127800,
-          "e": 139620,
+          "s": 112600,
+          "e": 116900,
           "m": 22,
           "pid": null,
           "text": "No greater Friend could we ever gain,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 142600,
-          "e": 147940,
+          "s": 117200,
+          "e": 123200,
           "m": 23,
           "pid": null,
           "text": "No greater Friend we\"ll know.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/e786ef/1/o/pksjj_E_028_r360P.mp4",
@@ -34658,9 +34602,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 24
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 28,
@@ -34671,225 +34613,225 @@
       "media_key": "pub-pksjj_28_VIDEO",
       "marker_count": 0,
       "singable_line_count": 24,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 24,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 10620,
-          "e": 13900,
+          "s": 11800,
+          "e": 15200,
           "m": 0,
           "pid": null,
           "text": "Qui, ô Dieu Jéhovah,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 15500,
-          "e": 18880,
+          "s": 15600,
+          "e": 19400,
           "m": 1,
           "pid": null,
           "text": "Logera sous ta tente ?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 19960,
-          "e": 23980,
+          "s": 19800,
+          "e": 24000,
           "m": 2,
           "pid": null,
           "text": "Qui agrées-tu ? Qui est ton ami ?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24740,
-          "e": 28140,
+          "s": 24300,
+          "e": 28000,
           "m": 3,
           "pid": null,
           "text": "Qui te connaît vraiment ?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 29880,
-          "e": 33580,
+          "s": 28300,
+          "e": 32100,
           "m": 4,
           "pid": null,
           "text": "Celui qui lit ta loi,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 34480,
-          "e": 37860,
+          "s": 32500,
+          "e": 36400,
           "m": 5,
           "pid": null,
           "text": "Qui garde l'espérance.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 39300,
-          "e": 43300,
+          "s": 36800,
+          "e": 41000,
           "m": 6,
           "pid": null,
           "text": "Juste et fidèle, sincère et droit,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44180,
-          "e": 47620,
+          "s": 41300,
+          "e": 46000,
           "m": 7,
           "pid": null,
           "text": "Il vit la vérité.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 56740,
-          "e": 59140,
+          "s": 49200,
+          "e": 52900,
           "m": 8,
           "pid": null,
           "text": "Dieu, qui est ton ami ?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 61140,
-          "e": 64720,
+          "s": 53200,
+          "e": 57100,
           "m": 9,
           "pid": null,
           "text": "Qui vient devant ton trône ?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 66060,
-          "e": 70000,
+          "s": 57400,
+          "e": 61800,
           "m": 10,
           "pid": null,
           "text": "De qui, ô Jah, connais-tu le nom ?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 70920,
-          "e": 73760,
+          "s": 62100,
+          "e": 65900,
           "m": 11,
           "pid": null,
           "text": "Qui réjouit ton cœur ?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 75920,
-          "e": 79420,
+          "s": 66200,
+          "e": 70000,
           "m": 12,
           "pid": null,
           "text": "Celui qui loue ton nom,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 80540,
-          "e": 84220,
+          "s": 70400,
+          "e": 74200,
           "m": 13,
           "pid": null,
           "text": "Soumis à ta Parole.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85400,
-          "e": 89400,
+          "s": 74600,
+          "e": 78900,
           "m": 14,
           "pid": null,
           "text": "Pur et intègre, honnête et vrai,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 90260,
-          "e": 93440,
+          "s": 79200,
+          "e": 83800,
           "m": 15,
           "pid": null,
           "text": "Il dit la vérité.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 97500,
-          "e": 99840,
+          "s": 87100,
+          "e": 90800,
           "m": 16,
           "pid": null,
           "text": "Dieu, nous t'ouvrons nos cœurs,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 102360,
-          "e": 105720,
+          "s": 91200,
+          "e": 95000,
           "m": 17,
           "pid": null,
           "text": "Nous te confions nos peines.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 107200,
-          "e": 111260,
+          "s": 95300,
+          "e": 99800,
           "m": 18,
           "pid": null,
           "text": "Par la prière, nous t'approchons,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 112040,
-          "e": 114880,
+          "s": 100100,
+          "e": 103900,
           "m": 19,
           "pid": null,
           "text": "Toi qui as soin de nous.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 116920,
-          "e": 120520,
+          "s": 104200,
+          "e": 108000,
           "m": 20,
           "pid": null,
           "text": "Car nous te recherchons,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 121960,
-          "e": 127340,
+          "s": 108400,
+          "e": 112200,
           "m": 21,
           "pid": null,
           "text": "Certains de ne connaître",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 127800,
-          "e": 139620,
+          "s": 112600,
+          "e": 116900,
           "m": 22,
           "pid": null,
           "text": "Jamais au monde plus grand Ami,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 142600,
-          "e": 147940,
+          "s": 117200,
+          "e": 123200,
           "m": 23,
           "pid": null,
           "text": "Ni plus belle amitié.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/3b49c7/2/o/pksjj_F_028_r360P.mp4",
@@ -34911,9 +34853,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 24
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 28,
@@ -34924,225 +34864,225 @@
       "media_key": "pub-pksjj_28_VIDEO",
       "marker_count": 0,
       "singable_line_count": 24,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 24,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 10620,
-          "e": 13900,
+          "s": 11800,
+          "e": 15200,
           "m": 0,
           "pid": null,
           "text": "Wer ist Jehovas Freund?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 15500,
-          "e": 18880,
+          "s": 15600,
+          "e": 19400,
           "m": 1,
           "pid": null,
           "text": "Wer wohnt in seinem Zelt?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 19960,
-          "e": 23980,
+          "s": 19800,
+          "e": 24000,
           "m": 2,
           "pid": null,
           "text": "Wer ist ihm nahe? Wen kennt er gut?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24740,
-          "e": 28140,
+          "s": 24300,
+          "e": 28000,
           "m": 3,
           "pid": null,
           "text": "Weißt du, wer Gott gefällt?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 29880,
-          "e": 33580,
+          "s": 28300,
+          "e": 32100,
           "m": 4,
           "pid": null,
           "text": "Jeder, der ihm vertraut",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 34480,
-          "e": 37860,
+          "s": 32500,
+          "e": 36400,
           "m": 5,
           "pid": null,
           "text": "und der sein Wort sehr liebt.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 39300,
-          "e": 43300,
+          "s": 36800,
+          "e": 41000,
           "m": 6,
           "pid": null,
           "text": "Jeder Loyale, der für ihn lebt.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44180,
-          "e": 47620,
+          "s": 41300,
+          "e": 46000,
           "m": 7,
           "pid": null,
           "text": "Jeder, der gern vergibt.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 56740,
-          "e": 59140,
+          "s": 49200,
+          "e": 52900,
           "m": 8,
           "pid": null,
           "text": "Wer ist Jehovas Freund?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 61140,
-          "e": 64720,
+          "s": 53200,
+          "e": 57100,
           "m": 9,
           "pid": null,
           "text": "Wen lädt als Gast er ein?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 66060,
-          "e": 70000,
+          "s": 57400,
+          "e": 61800,
           "m": 10,
           "pid": null,
           "text": "Wer macht ihn glücklich? Wer macht ihn froh?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 70920,
-          "e": 73760,
+          "s": 62100,
+          "e": 65900,
           "m": 11,
           "pid": null,
           "text": "Sag mir, wer kann das sein?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 75920,
-          "e": 79420,
+          "s": 66200,
+          "e": 70000,
           "m": 12,
           "pid": null,
           "text": "Die seinen Namen ehrn",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 80540,
-          "e": 84220,
+          "s": 70400,
+          "e": 74200,
           "m": 13,
           "pid": null,
           "text": "und hörn auf seinen Rat.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85400,
-          "e": 89400,
+          "s": 74600,
+          "e": 78900,
           "m": 14,
           "pid": null,
           "text": "Alle, die gut und aufrichtig sind,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 90260,
-          "e": 93440,
+          "s": 79200,
+          "e": 83800,
           "m": 15,
           "pid": null,
           "text": "ehrlich in Wort und Tat.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 97500,
-          "e": 99840,
+          "s": 87100,
+          "e": 90800,
           "m": 16,
           "pid": null,
           "text": "Hör uns, Jehova Gott.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 102360,
-          "e": 105720,
+          "s": 91200,
+          "e": 95000,
           "m": 17,
           "pid": null,
           "text": "Dir wir vertraun uns an.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 107200,
-          "e": 111260,
+          "s": 95300,
+          "e": 99800,
           "m": 18,
           "pid": null,
           "text": "Liebevoll sorgst du täglich für uns,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 112040,
-          "e": 114880,
+          "s": 100100,
+          "e": 103900,
           "m": 19,
           "pid": null,
           "text": "hilfst, wenn Probleme nahn.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 116920,
-          "e": 120520,
+          "s": 104200,
+          "e": 108000,
           "m": 20,
           "pid": null,
           "text": "Dich, unsern besten Freund,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 121960,
-          "e": 127340,
+          "s": 108400,
+          "e": 112200,
           "m": 21,
           "pid": null,
           "text": "demütig bitten wir:",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 127800,
-          "e": 139620,
+          "s": 112600,
+          "e": 116900,
           "m": 22,
           "pid": null,
           "text": "Stärk doch in uns den sehnlichen Wunsch,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 142600,
-          "e": 147940,
+          "s": 117200,
+          "e": 123200,
           "m": 23,
           "pid": null,
           "text": "Freunde zu sein von dir.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/24c82f/2/o/pksjj_X_028_r360P.mp4",
@@ -35164,9 +35104,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 24
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 28,
@@ -35177,225 +35115,225 @@
       "media_key": "pub-pksjj_28_VIDEO",
       "marker_count": 0,
       "singable_line_count": 24,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 24,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 10620,
-          "e": 13900,
+          "s": 11800,
+          "e": 15200,
           "m": 0,
           "pid": null,
           "text": "Mondd, ki lehet vendég",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 15500,
-          "e": 18880,
+          "s": 15600,
+          "e": 19400,
           "m": 1,
           "pid": null,
           "text": "sátradban, jó Atyánk?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 19960,
-          "e": 23980,
+          "s": 19800,
+          "e": 24000,
           "m": 2,
           "pid": null,
           "text": "Égi Urunk, ó, mondd, ki lehet",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24740,
-          "e": 28140,
+          "s": 24300,
+          "e": 28000,
           "m": 3,
           "pid": null,
           "text": "drága barátoddá?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 29880,
-          "e": 33580,
+          "s": 28300,
+          "e": 32100,
           "m": 4,
           "pid": null,
           "text": "Az, ki tehozzád hű;",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 34480,
-          "e": 37860,
+          "s": 32500,
+          "e": 36400,
           "m": 5,
           "pid": null,
           "text": "mindaz, ki téged fél.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 39300,
-          "e": 43300,
+          "s": 36800,
+          "e": 41000,
           "m": 6,
           "pid": null,
           "text": "Az, ki szívébe zárta szavad,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44180,
-          "e": 47620,
+          "s": 41300,
+          "e": 46000,
           "m": 7,
           "pid": null,
           "text": "és aszerint is él.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 56740,
-          "e": 59140,
+          "s": 49200,
+          "e": 52900,
           "m": 8,
           "pid": null,
           "text": "Trónod elé, mely szent,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 61140,
-          "e": 64720,
+          "s": 53200,
+          "e": 57100,
           "m": 9,
           "pid": null,
           "text": "mondd, ki mehet, Atyánk?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 66060,
-          "e": 70000,
+          "s": 57400,
+          "e": 61800,
           "m": 10,
           "pid": null,
           "text": "Ó, ki dicsőít úgy, ahogy kell,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 70920,
-          "e": 73760,
+          "s": 62100,
+          "e": 65900,
           "m": 11,
           "pid": null,
           "text": "mondd, ki tesz boldoggá?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 75920,
-          "e": 79420,
+          "s": 66200,
+          "e": 70000,
           "m": 12,
           "pid": null,
           "text": "Mindaz, ki hallgat rád,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 80540,
-          "e": 84220,
+          "s": 70400,
+          "e": 74200,
           "m": 13,
           "pid": null,
           "text": "áldja neved, dicsér;",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85400,
-          "e": 89400,
+          "s": 74600,
+          "e": 78900,
           "m": 14,
           "pid": null,
           "text": "szívében sem szól ő hazug szót;",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 90260,
-          "e": 93440,
+          "s": 79200,
+          "e": 83800,
           "m": 15,
           "pid": null,
           "text": "színigazat beszél.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 97500,
-          "e": 99840,
+          "s": 87100,
+          "e": 90800,
           "m": 16,
           "pid": null,
           "text": "Rád vetjük azt, mi fáj,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 102360,
-          "e": 105720,
+          "s": 91200,
+          "e": 95000,
           "m": 17,
           "pid": null,
           "text": "terheink nagy súlyát.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 107200,
-          "e": 111260,
+          "s": 95300,
+          "e": 99800,
           "m": 18,
           "pid": null,
           "text": "Gondot viselsz ránk nap nap után;",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 112040,
-          "e": 114880,
+          "s": 100100,
+          "e": 103900,
           "m": 19,
           "pid": null,
           "text": "úgy szeretünk, Atyánk!",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 116920,
-          "e": 120520,
+          "s": 104200,
+          "e": 108000,
           "m": 20,
           "pid": null,
           "text": "Légy a barátunk hát",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 121960,
-          "e": 127340,
+          "s": 108400,
+          "e": 112200,
           "m": 21,
           "pid": null,
           "text": "mindörökké immár!",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 127800,
-          "e": 139620,
+          "s": 112600,
+          "e": 116900,
           "m": 22,
           "pid": null,
           "text": "Nálad kiválóbb, érzőbb barát",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 142600,
-          "e": 147940,
+          "s": 117200,
+          "e": 123200,
           "m": 23,
           "pid": null,
           "text": "nem lehet senki más!",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/49df9c0/1/o/pksjj_H_028_r360P.mp4",
@@ -35417,9 +35355,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 24
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 28,
@@ -35430,225 +35366,225 @@
       "media_key": "pub-pksjj_28_VIDEO",
       "marker_count": 0,
       "singable_line_count": 24,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 24,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 10620,
-          "e": 13900,
+          "s": 11800,
+          "e": 15200,
           "m": 0,
           "pid": null,
           "text": "Siapa teman-Mu, Yah?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 15500,
-          "e": 18880,
+          "s": 15600,
+          "e": 19400,
           "m": 1,
           "pid": null,
           "text": "Siapa sahabat-Mu?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 19960,
-          "e": 23980,
+          "s": 19800,
+          "e": 24000,
           "m": 2,
           "pid": null,
           "text": "Siapa yang tinggal di kemah-Mu",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24740,
-          "e": 28140,
+          "s": 24300,
+          "e": 28000,
           "m": 3,
           "pid": null,
           "text": "Serta mengenal-Mu?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 29880,
-          "e": 33580,
+          "s": 28300,
+          "e": 32100,
           "m": 4,
           "pid": null,
           "text": "Orang yang beriman,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 34480,
-          "e": 37860,
+          "s": 32500,
+          "e": 36400,
           "m": 5,
           "pid": null,
           "text": "Yang cintai Firman,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 39300,
-          "e": 43300,
+          "s": 36800,
+          "e": 41000,
           "m": 6,
           "pid": null,
           "text": "Yang tanpa cela, yang setia,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44180,
-          "e": 47620,
+          "s": 41300,
+          "e": 46000,
           "m": 7,
           "pid": null,
           "text": "Yang benar jalannya.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 56740,
-          "e": 59140,
+          "s": 49200,
+          "e": 52900,
           "m": 8,
           "pid": null,
           "text": "Siapa teman-Mu, Yah?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 61140,
-          "e": 64720,
+          "s": 53200,
+          "e": 57100,
           "m": 9,
           "pid": null,
           "text": "Siapa yang Kau kenal?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 66060,
-          "e": 70000,
+          "s": 57400,
+          "e": 61800,
           "m": 10,
           "pid": null,
           "text": "Siapa yang senangkan hati-Mu",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 70920,
-          "e": 73760,
+          "s": 62100,
+          "e": 65900,
           "m": 11,
           "pid": null,
           "text": "Dan dekat dengan-Mu?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 75920,
-          "e": 79420,
+          "s": 66200,
+          "e": 70000,
           "m": 12,
           "pid": null,
           "text": "Semua yang taat,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 80540,
-          "e": 84220,
+          "s": 70400,
+          "e": 74200,
           "m": 13,
           "pid": null,
           "text": "Yang junjung nama-Mu,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85400,
-          "e": 89400,
+          "s": 74600,
+          "e": 78900,
           "m": 14,
           "pid": null,
           "text": "Yang tetap jujur tiap saat,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 90260,
-          "e": 93440,
+          "s": 79200,
+          "e": 83800,
           "m": 15,
           "pid": null,
           "text": "Yang hatinya tulus.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 97500,
-          "e": 99840,
+          "s": 87100,
+          "e": 90800,
           "m": 16,
           "pid": null,
           "text": "Kubuka hatiku,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 102360,
-          "e": 105720,
+          "s": 91200,
+          "e": 95000,
           "m": 17,
           "pid": null,
           "text": "Berdoa pada-Mu.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 107200,
-          "e": 111260,
+          "s": 95300,
+          "e": 99800,
           "m": 18,
           "pid": null,
           "text": "'Ku semakin dekat dengan-Mu,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 112040,
-          "e": 114880,
+          "s": 100100,
+          "e": 103900,
           "m": 19,
           "pid": null,
           "text": "Rasakan kasih-Mu.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 116920,
-          "e": 120520,
+          "s": 104200,
+          "e": 108000,
           "m": 20,
           "pid": null,
           "text": "Jadi sahabat-Mu,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 121960,
-          "e": 127340,
+          "s": 108400,
+          "e": 112200,
           "m": 21,
           "pid": null,
           "text": "Itu yang kumau.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 127800,
-          "e": 139620,
+          "s": 112600,
+          "e": 116900,
           "m": 22,
           "pid": null,
           "text": "Takkan ada Sahabat lain",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 142600,
-          "e": 147940,
+          "s": 117200,
+          "e": 123200,
           "m": 23,
           "pid": null,
           "text": "Yang lebihi Engkau.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/c90317/1/o/pksjj_IN_028_r360P.mp4",
@@ -35670,9 +35606,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 24
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 28,
@@ -35683,225 +35617,225 @@
       "media_key": "pub-pksjj_28_VIDEO",
       "marker_count": 0,
       "singable_line_count": 24,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 24,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 10620,
-          "e": 13900,
+          "s": 11800,
+          "e": 15200,
           "m": 0,
           "pid": null,
           "text": "神の友",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 15500,
-          "e": 18880,
+          "s": 15600,
+          "e": 19400,
           "m": 1,
           "pid": null,
           "text": "はどんな人",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 19960,
-          "e": 23980,
+          "s": 19800,
+          "e": 24000,
           "m": 2,
           "pid": null,
           "text": "神が愛するの",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24740,
-          "e": 28140,
+          "s": 24300,
+          "e": 28000,
           "m": 3,
           "pid": null,
           "text": "はどんな人",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 29880,
-          "e": 33580,
+          "s": 28300,
+          "e": 32100,
           "m": 4,
           "pid": null,
           "text": "聖書学び",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 34480,
-          "e": 37860,
+          "s": 32500,
+          "e": 36400,
           "m": 5,
           "pid": null,
           "text": "信仰持ち",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 39300,
-          "e": 43300,
+          "s": 36800,
+          "e": 41000,
           "m": 6,
           "pid": null,
           "text": "変わらずに正しく",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44180,
-          "e": 47620,
+          "s": 41300,
+          "e": 46000,
           "m": 7,
           "pid": null,
           "text": "生きる人",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 56740,
-          "e": 59140,
+          "s": 49200,
+          "e": 52900,
           "m": 8,
           "pid": null,
           "text": "神の友",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 61140,
-          "e": 64720,
+          "s": 53200,
+          "e": 57100,
           "m": 9,
           "pid": null,
           "text": "はどんな人",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 66060,
-          "e": 70000,
+          "s": 57400,
+          "e": 61800,
           "m": 10,
           "pid": null,
           "text": "神が喜ぶの",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 70920,
-          "e": 73760,
+          "s": 62100,
+          "e": 65900,
           "m": 11,
           "pid": null,
           "text": "はどんな人",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 75920,
-          "e": 79420,
+          "s": 66200,
+          "e": 70000,
           "m": 12,
           "pid": null,
           "text": "神をたたえ",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 80540,
-          "e": 84220,
+          "s": 70400,
+          "e": 74200,
           "m": 13,
           "pid": null,
           "text": "よく従い",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85400,
-          "e": 89400,
+          "s": 74600,
+          "e": 78900,
           "m": 14,
           "pid": null,
           "text": "正直で心の",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 90260,
-          "e": 93440,
+          "s": 79200,
+          "e": 83800,
           "m": 15,
           "pid": null,
           "text": "清い人",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 97500,
-          "e": 99840,
+          "s": 87100,
+          "e": 90800,
           "m": 16,
           "pid": null,
           "text": "祈りにより",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 102360,
-          "e": 105720,
+          "s": 91200,
+          "e": 95000,
           "m": 17,
           "pid": null,
           "text": "悩み委ね",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 107200,
-          "e": 111260,
+          "s": 95300,
+          "e": 99800,
           "m": 18,
           "pid": null,
           "text": "すぐそばに感じる",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 112040,
-          "e": 114880,
+          "s": 100100,
+          "e": 103900,
           "m": 19,
           "pid": null,
           "text": "神の愛",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 116920,
-          "e": 120520,
+          "s": 104200,
+          "e": 108000,
           "m": 20,
           "pid": null,
           "text": "今日も明日も",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 121960,
-          "e": 127340,
+          "s": 108400,
+          "e": 112200,
           "m": 21,
           "pid": null,
           "text": "どんな時も",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 127800,
-          "e": 139620,
+          "s": 112600,
+          "e": 116900,
           "m": 22,
           "pid": null,
           "text": "エホバこそ",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 142600,
-          "e": 147940,
+          "s": 117200,
+          "e": 123200,
           "m": 23,
           "pid": null,
           "text": "私の真の友",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/587fc0/1/o/pksjj_J_028_r360P.mp4",
@@ -35923,9 +35857,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 24
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 28,
@@ -35936,225 +35868,225 @@
       "media_key": "pub-pksjj_28_VIDEO",
       "marker_count": 0,
       "singable_line_count": 24,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 24,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 10620,
-          "e": 13900,
+          "s": 11800,
+          "e": 15200,
           "m": 0,
           "pid": null,
           "text": "오, 우리 하느님,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 15500,
-          "e": 18880,
+          "s": 15600,
+          "e": 19400,
           "m": 1,
           "pid": null,
           "text": "주 집에 거하며",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 19960,
-          "e": 23980,
+          "s": 19800,
+          "e": 24000,
           "m": 2,
           "pid": null,
           "text": "주 신뢰받고 주 아는 벗,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24740,
-          "e": 28140,
+          "s": 24300,
+          "e": 28000,
           "m": 3,
           "pid": null,
           "text": "그 누구입니까?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 29880,
-          "e": 33580,
+          "s": 28300,
+          "e": 32100,
           "m": 4,
           "pid": null,
           "text": "말씀 받아들여",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 34480,
-          "e": 37860,
+          "s": 32500,
+          "e": 36400,
           "m": 5,
           "pid": null,
           "text": "믿음 나타내고",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 39300,
-          "e": 43300,
+          "s": 36800,
+          "e": 41000,
           "m": 6,
           "pid": null,
           "text": "충성과 진리 사랑하는",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44180,
-          "e": 47620,
+          "s": 41300,
+          "e": 46000,
           "m": 7,
           "pid": null,
           "text": "사람들입니다.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 56740,
-          "e": 59140,
+          "s": 49200,
+          "e": 52900,
           "m": 8,
           "pid": null,
           "text": "하느님 벗 되어",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 61140,
-          "e": 64720,
+          "s": 53200,
+          "e": 57100,
           "m": 9,
           "pid": null,
           "text": "주 곁에 다가가",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 66060,
-          "e": 70000,
+          "s": 57400,
+          "e": 61800,
           "m": 10,
           "pid": null,
           "text": "즐거움, 기쁨 드리는 이,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 70920,
-          "e": 73760,
+          "s": 62100,
+          "e": 65900,
           "m": 11,
           "pid": null,
           "text": "그 누구입니까?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 75920,
-          "e": 79420,
+          "s": 66200,
+          "e": 70000,
           "m": 12,
           "pid": null,
           "text": "주 이름 높이며",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 80540,
-          "e": 84220,
+          "s": 70400,
+          "e": 74200,
           "m": 13,
           "pid": null,
           "text": "말씀 순종하고",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85400,
-          "e": 89400,
+          "s": 74600,
+          "e": 78900,
           "m": 14,
           "pid": null,
           "text": "진실 말하고 마음 참된",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 90260,
-          "e": 93440,
+          "s": 79200,
+          "e": 83800,
           "m": 15,
           "pid": null,
           "text": "사람들입니다.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 97500,
-          "e": 99840,
+          "s": 87100,
+          "e": 90800,
           "m": 16,
           "pid": null,
           "text": "날마다 기도로",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 102360,
-          "e": 105720,
+          "s": 91200,
+          "e": 95000,
           "m": 17,
           "pid": null,
           "text": "염려 내맡기고",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 107200,
-          "e": 111260,
+          "s": 95300,
+          "e": 99800,
           "m": 18,
           "pid": null,
           "text": "주 가까이서 주의",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 112040,
-          "e": 114880,
+          "s": 100100,
+          "e": 103900,
           "m": 19,
           "pid": null,
           "text": "사랑 매일 느끼려고",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 116920,
-          "e": 120520,
+          "s": 104200,
+          "e": 108000,
           "m": 20,
           "pid": null,
           "text": "주의 벗이 되어",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 121960,
-          "e": 127340,
+          "s": 108400,
+          "e": 112200,
           "m": 21,
           "pid": null,
           "text": "늘 머물렵니다.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 127800,
-          "e": 139620,
+          "s": 112600,
+          "e": 116900,
           "m": 22,
           "pid": null,
           "text": "더 훌륭한 벗 또 없으니",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 142600,
-          "e": 147940,
+          "s": 117200,
+          "e": 123200,
           "m": 23,
           "pid": null,
           "text": "벗 되어 주소서.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/4693f8/3/o/pksjj_KO_028_r360P.mp4",
@@ -36176,9 +36108,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 24
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 28,
@@ -36189,225 +36119,225 @@
       "media_key": "pub-pksjj_28_VIDEO",
       "marker_count": 0,
       "singable_line_count": 24,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 24,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 10620,
-          "e": 13900,
+          "s": 11800,
+          "e": 15200,
           "m": 0,
           "pid": null,
           "text": "Ojcze, kto godny jest",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 15500,
-          "e": 18880,
+          "s": 15600,
+          "e": 19400,
           "m": 1,
           "pid": null,
           "text": "z Tobą przyjaźnić się?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 19960,
-          "e": 23980,
+          "s": 19800,
+          "e": 24000,
           "m": 2,
           "pid": null,
           "text": "Czyje imiona znane Ci są?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24740,
-          "e": 28140,
+          "s": 24300,
+          "e": 28000,
           "m": 3,
           "pid": null,
           "text": "Kto cieszy serce Twe?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 29880,
-          "e": 33580,
+          "s": 28300,
+          "e": 32100,
           "m": 4,
           "pid": null,
           "text": "Każdy, kto słucha Cię,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 34480,
-          "e": 37860,
+          "s": 32500,
+          "e": 36400,
           "m": 5,
           "pid": null,
           "text": "śmiało też głosi dziś,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 39300,
-          "e": 43300,
+          "s": 36800,
+          "e": 41000,
           "m": 6,
           "pid": null,
           "text": "bliźnich szanuje, nie krzywdzi ich",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44180,
-          "e": 47620,
+          "s": 41300,
+          "e": 46000,
           "m": 7,
           "pid": null,
           "text": "i chce uczciwie żyć.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 56740,
-          "e": 59140,
+          "s": 49200,
+          "e": 52900,
           "m": 8,
           "pid": null,
           "text": "Kto przyjacielem Twym",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 61140,
-          "e": 64720,
+          "s": 53200,
+          "e": 57100,
           "m": 9,
           "pid": null,
           "text": "może na zawsze być?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 66060,
-          "e": 70000,
+          "s": 57400,
+          "e": 61800,
           "m": 10,
           "pid": null,
           "text": "Kto tak naprawdę dobrze Cię zna?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 70920,
-          "e": 73760,
+          "s": 62100,
+          "e": 65900,
           "m": 11,
           "pid": null,
           "text": "Kto Ciebie godnie czci?",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 75920,
-          "e": 79420,
+          "s": 66200,
+          "e": 70000,
           "m": 12,
           "pid": null,
           "text": "Każdy, kto wierzy Ci,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 80540,
-          "e": 84220,
+          "s": 70400,
+          "e": 74200,
           "m": 13,
           "pid": null,
           "text": "słów Twoich trzyma się,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85400,
-          "e": 89400,
+          "s": 74600,
+          "e": 78900,
           "m": 14,
           "pid": null,
           "text": "kto w nienaganny sposób chce żyć",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 90260,
-          "e": 93440,
+          "s": 79200,
+          "e": 83800,
           "m": 15,
           "pid": null,
           "text": "i prawdomówny jest.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 97500,
-          "e": 99840,
+          "s": 87100,
+          "e": 90800,
           "m": 16,
           "pid": null,
           "text": "Ty nasze troski znasz,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 102360,
-          "e": 105720,
+          "s": 91200,
+          "e": 95000,
           "m": 17,
           "pid": null,
           "text": "słyszysz modlitwy szept",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 107200,
-          "e": 111260,
+          "s": 95300,
+          "e": 99800,
           "m": 18,
           "pid": null,
           "text": "i coraz bliższy stajesz się nam",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 112040,
-          "e": 114880,
+          "s": 100100,
+          "e": 103900,
           "m": 19,
           "pid": null,
           "text": "z każdym kolejnym dniem.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 116920,
-          "e": 120520,
+          "s": 104200,
+          "e": 108000,
           "m": 20,
           "pid": null,
           "text": "Łączy nas cenna więź,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 121960,
-          "e": 127340,
+          "s": 108400,
+          "e": 112200,
           "m": 21,
           "pid": null,
           "text": "chcemy więc o nią dbać.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 127800,
-          "e": 139620,
+          "s": 112600,
+          "e": 116900,
           "m": 22,
           "pid": null,
           "text": "Oby po wieczność każdy z nas mógł",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 142600,
-          "e": 147940,
+          "s": 117200,
+          "e": 123200,
           "m": 23,
           "pid": null,
           "text": "być Twej przyjaźni wart!",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/929c8d/1/o/pksjj_P_028_r360P.mp4",
@@ -36434,9 +36364,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 24
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 29,
@@ -99395,8 +99323,8 @@
       "general_audio_exists": false,
       "general_video_exists": false,
       "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 20,
-        "lyric_occurrence_omitted_in_selected_recording": 4
+        "lyric_occurrence_omitted_in_selected_recording": 4,
+        "vocal_boundary_requires_review": 20
       }
     },
     {
