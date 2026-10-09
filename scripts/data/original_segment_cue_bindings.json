@@ -1,0 +1,97 @@
+{
+  "osg-36|vi": {
+    "mediaKey": "pub-osg_36_VIDEO",
+    "checksum": "11e44f17eb125fd33f5ba7d756425e16",
+    "source": "Reviewed primary lyric sequence between the exact second chorus and third verse; official VTT includes alternate words and backing vocals.",
+    "bindings": [
+      {
+        "line": 33,
+        "text": "Lúc ấy hãy nhớ chung vui hết lòng.",
+        "cues": [
+          {
+            "s": 117312,
+            "e": 122000,
+            "lines": [
+              "Lúc ấy trí óc không nên phân tâm."
+            ]
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "text": "Vì trên mạng bao điều ta đọc thấy",
+        "cues": [
+          {
+            "s": 129770,
+            "e": 134603,
+            "lines": [
+              "Vì bao điều trên mạng,",
+              "(Bè: Vì trên mạng bao thông tin tràn lan)"
+            ]
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "text": "chẳng thể biết những chi là đúng, điều chi bởi thêu dệt.",
+        "cues": [
+          {
+            "s": 134603,
+            "e": 139145,
+            "lines": [
+              "chẳng thể biết thông tin nào đúng,",
+              "hoặc có lẽ chỉ thêu dệt."
+            ]
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "text": "Hằng muôn người trên mạng ta nào biết.",
+        "cues": [
+          {
+            "s": 139145,
+            "e": 144270,
+            "lines": [
+              "Người xa lạ ta gặp trên mạng",
+              "(không như anh em yêu thương hết lòng)"
+            ]
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "text": "Vậy ta đừng nên nghiện chơi mạng ảo, đừng cho điện thoại kia chi phối trong đời.",
+        "cues": [
+          {
+            "s": 144270,
+            "e": 147520,
+            "lines": [
+              "Vậy ta đừng nên nghiện chơi mạng ảo,"
+            ]
+          },
+          {
+            "s": 147520,
+            "e": 154000,
+            "lines": [
+              "đừng cho điện thoại gây phân tán trí tâm."
+            ]
+          }
+        ]
+      },
+      {
+        "line": 55,
+        "text": "chớ say mê",
+        "cues": [
+          {
+            "s": 219020,
+            "e": 221187,
+            "lines": [
+              "Chớ say mê"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

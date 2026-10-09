@@ -1,0 +1,147 @@
+{
+  "osg-16|vi": {
+    "mediaKey": "pub-osg_16_AUDIO",
+    "checksum": "8d8422a461789292724bf58d8f3051a1",
+    "source": "User supplied line boundaries, 2026-10-09",
+    "lines": [
+      {
+        "text": "“Cám ơn, cám ơn Cha vì bao ân phước!”.",
+        "occurrence": 1,
+        "s": 192000,
+        "e": 200000
+      }
+    ]
+  },
+  "osg-27|vi": {
+    "mediaKey": "pub-osg_27_AUDIO",
+    "checksum": "764f2a8478d3fd816ab4ff367c6b4f02",
+    "source": "User supplied line boundaries, 2026-10-09",
+    "lines": [
+      {
+        "text": "Suốt trong đời này.",
+        "occurrence": 1,
+        "s": 212000,
+        "e": 219000
+      }
+    ]
+  },
+  "osg-33|vi": {
+    "mediaKey": "pub-osg_33_AUDIO",
+    "checksum": "22c38c19568a992e354c2c683d14a939",
+    "source": "User supplied line boundaries, 2026-10-09",
+    "lines": [
+      {
+        "text": "Hằng trông mong tương lai sáng tươi đầy ân phước đến trong nay mai.",
+        "occurrence": 1,
+        "s": 232000,
+        "e": 243000
+      }
+    ]
+  },
+  "osg-35|vi": {
+    "mediaKey": "pub-osg_35_AUDIO",
+    "checksum": "d44fcbd7aee52b7dc4de598e53ec2efa",
+    "source": "User supplied line boundaries, 2026-10-09",
+    "lines": [
+      {
+        "text": "Tiến lên chẳng thôi.",
+        "occurrence": 1,
+        "s": 231000,
+        "e": 237000
+      }
+    ]
+  },
+  "osg-31|vi": {
+    "mediaKey": "pub-osg_31_AUDIO",
+    "checksum": "69225499a379bd806cd2c1c5c0e1be1e",
+    "source": "User supplied line boundaries, 2026-10-09",
+    "lines": [
+      {
+        "text": "Con phải đi đường lối nao là đúng?",
+        "occurrence": 1,
+        "s": 78000,
+        "e": 83000
+      },
+      {
+        "text": "Giê-hô-va hãy nghe con khẩn xin.",
+        "occurrence": 1,
+        "s": 84000,
+        "e": 88000
+      },
+      {
+        "text": "Lời Cha đã khuyên dạy, quyết không rời.",
+        "occurrence": 2,
+        "s": 163000,
+        "e": 167000
+      },
+      {
+        "text": "Mãi theo đường Chúa dẫn đưa đến muôn đời.",
+        "occurrence": 2,
+        "s": 167000,
+        "e": 173000
+      },
+      {
+        "text": "Biết bao lời Chúa khuyên dạy, quyết không rời.",
+        "occurrence": 1,
+        "s": 220000,
+        "e": 224000
+      },
+      {
+        "text": "Con nguyện luôn bước theo ngài đến muôn đời.",
+        "occurrence": 1,
+        "s": 225000,
+        "e": 230000
+      }
+    ]
+  },
+  "osg-40|vi": {
+    "mediaKey": "pub-osg_40_AUDIO",
+    "checksum": "fe4e2f30c56a7fe207996fc63810709e",
+    "source": "User supplied line boundaries, 2026-10-09",
+    "lines": [
+      {
+        "text": "1.Lạy Cha, ngự ngôi thánh cao trọng trên trời,",
+        "occurrence": 1,
+        "s": 19000,
+        "e": 23000
+      },
+      {
+        "text": "Chính nơi đây mang lại bao ngợi khen.",
+        "occurrence": 1,
+        "s": 91000,
+        "e": 95000
+      },
+      {
+        "text": "Chính nơi đây mang lại bao ngợi khen.",
+        "occurrence": 2,
+        "s": 171000,
+        "e": 180000
+      }
+    ]
+  },
+  "osg-40|ko": {
+    "mediaKey": "pub-osg_40_AUDIO",
+    "checksum": "1e3e2cca63da24f5bd9871c440e21f8d",
+    "source": "User supplied line boundaries, 2026-10-09",
+    "lines": [
+      {
+        "text": "1. 저 하늘도 모실 수 없는",
+        "occurrence": 1,
+        "s": 19000,
+        "e": 23000
+      },
+      {
+        "text": "우리의 찬양 노래로.",
+        "occurrence": 1,
+        "s": 91000,
+        "e": 95000
+      },
+      {
+        "text": "우리의 찬양 노래로.",
+        "occurrence": 2,
+        "s": 171000,
+        "e": 180000
+      }
+    ]
+  }
+}
