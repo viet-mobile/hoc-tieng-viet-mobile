@@ -79,7 +79,7 @@
     // SECTION F
     '적용할 교수법': 'Phương pháp giảng dạy áp dụng', '수업 적용': 'Áp dụng trong lớp', '교사 준비물': 'Giáo viên chuẩn bị',
     '학생 준비물 (학생 [과정]에 표시)': 'Học viên chuẩn bị (hiện trong [Khóa học] của học viên)',
-    '시간': 'Thời gian', '활동': 'Hoạt động', '교수법': 'Phương pháp giảng dạy', '단계': 'Các bước', '변형': 'Biến thể', '준비물': 'Đồ cần chuẩn bị',
+    '분': 'phút', '시간': 'Thời gian', '활동': 'Hoạt động', '교수법': 'Phương pháp giảng dạy', '단계': 'Các bước', '변형': 'Biến thể', '준비물': 'Đồ cần chuẩn bị',
     '교재 메모·베트남어 적용': 'Ghi chú sách hướng dẫn · áp dụng cho tiếng Việt', '출처:': 'Nguồn:', '예비 모임': 'Buổi gặp mặt chuẩn bị', '예비': 'Chuẩn bị',
     '이 내용은 읽기 전용이며 코드(regional_admin/teaching_guide.json)에서 관리합니다. 각 주의 교수법과 학생 준비물은 학생용 [과정] 카드에도 표시됩니다.':
       'Nội dung này chỉ để đọc và được quản lý trong mã nguồn (regional_admin/teaching_guide.json). Phương pháp giảng dạy và đồ học viên cần chuẩn bị của mỗi tuần cũng hiện trên thẻ [Khóa học] của học viên.',
@@ -428,16 +428,43 @@
     if (!list || !list.length) return '';
     return '<div class="guide-label">' + esc(label) + '</div><ul>' + list.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
   }
-  // Estimated minutes of each part of the class (teaching_guide.json timePlan, from the class-time simulation).
+  // Estimated minutes of each part of the class (teaching_guide.json timePlan, from the class-time simulation). An entry is
+  // [name, minutes, minutes of instructor A (null = break), reason key]; B takes the rest. guide.instructors describes A and B.
+  function instrText(o) { return o ? (LANG === 'vi' ? (o.vi || o.ko) : (o.ko || o.vi)) || '' : ''; }
+  function guideInstructorLegend() {
+    var ins = GUIDE && GUIDE.instructors;
+    if (!ins) return '';
+    function who(k) {
+      var i = ins[k];
+      return '<div class="guide-ins guide-ins-' + k.toLowerCase() + '"><span class="guide-ins-badge">' + esc(k) + '</span><span><strong>' + esc(instrText(i.label)) + '</strong> · ' +
+        esc(instrText(i.profile)) + '<br><span class="guide-ins-strong">' + esc(instrText(i.strengths)) + '</span></span></div>';
+    }
+    return '<div class="guide-label">' + esc(instrText(ins.title)) + '</div><div class="guide-ins-box">' + who('A') + who('B') +
+      '<p class="guide-time-note">' + esc(instrText(ins.note)) + '</p></div>';
+  }
   function guideTimePlan(u) {
     if (!u.timePlan || !u.timePlan.length) return '';
-    var total = 0;
+    var ins = GUIDE && GUIDE.instructors;
+    var split = !!ins && u.timePlan.every(function (p) { return p.length >= 3; });
+    var total = 0, ta = 0, tb = 0, brk = 0;
     var rows = u.timePlan.map(function (p) {
       total += p[1];
-      return '<tr><td>' + esc(p[0]) + '</td><td class="guide-time-min">' + esc(String(p[1])) + '</td></tr>';
+      if (!split) return '<tr><td>' + esc(p[0]) + '</td><td class="guide-time-min">' + esc(String(p[1])) + '</td></tr>';
+      var a = p[2], b = a === null ? null : p[1] - a;
+      if (a === null) brk += p[1]; else { ta += a; tb += b; }
+      // The reason describes how A and B share the item: only shown where both of them really take part (or the item is one-sided by nature).
+      var oneSided = { open: 1, close: 1, homework: 1, ceremony: 1, 'break': 1 };
+      var showWhy = oneSided[p[3]] || (p[1] >= 3 && a > 0 && b > 0);
+      var reason = showWhy && ins.reasons && ins.reasons[p[3]] ? '<div class="guide-time-why">' + esc(instrText(ins.reasons[p[3]])) + '</div>' : '';
+      return '<tr><td>' + esc(p[0]) + reason + '</td><td class="guide-time-min">' + esc(String(p[1])) + '</td>' +
+        (a === null ? '<td class="guide-time-min guide-time-brk" colspan="2">' + esc(tr('휴식')) + '</td>'
+          : '<td class="guide-time-min guide-time-a' + (a ? '' : ' guide-time-zero') + '">' + a + '</td><td class="guide-time-min guide-time-b' + (b ? '' : ' guide-time-zero') + '">' + b + '</td>') + '</tr>';
     }).join('');
-    return '<div class="guide-label">예상 시간 배분 (2시간 기준, 분)</div>' +
-      '<table class="guide-time"><tbody>' + rows + '<tr class="guide-time-total"><td>합계</td><td class="guide-time-min">' + total + '</td></tr></tbody></table>' +
+    var head = split ? '<tr class="guide-time-head"><td></td><td class="guide-time-min">' + esc(tr('분')) + '</td><td class="guide-time-min guide-time-a">A</td><td class="guide-time-min guide-time-b">B</td></tr>' : '';
+    var foot = '<tr class="guide-time-total"><td>' + esc(tr('합계')) + '</td><td class="guide-time-min">' + total + '</td>' +
+      (split ? '<td class="guide-time-min guide-time-a">' + (ta + brk / 2) + '</td><td class="guide-time-min guide-time-b">' + (tb + brk / 2) + '</td>' : '') + '</tr>';
+    return guideInstructorLegend() + '<div class="guide-label">예상 시간 배분 (2시간 기준, 분)</div>' +
+      '<table class="guide-time"><tbody>' + head + rows + foot + '</tbody></table>' +
       '<p class="guide-time-note">일반 문법은 핵심 문형 3~4개, 이웃 대화는 앞부분 역할 읽기, 행누·랑제는 한 단락, 어휘는 약 100개만 수업에서 다루고 나머지는 과제입니다. 시간은 자료 분량으로 계산한 예상값입니다.</p>' +
       guideList('과제로만 (수업에서 다루지 않음; 전주 예습 · 후주 복습)', u.homeworkOnly);
   }

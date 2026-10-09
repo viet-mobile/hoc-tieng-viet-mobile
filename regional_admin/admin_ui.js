@@ -316,6 +316,20 @@ const STYLES = `
     .guide-time-min { text-align: right; width: 48px; font-variant-numeric: tabular-nums; }
     .guide-time-total td { font-weight: 700; border-bottom: none; }
     .guide-time-note { margin-top: 4px; }
+    .guide-time { max-width: 640px; }
+    .guide-time-head td { font-weight: 700; font-size: 12px; color: var(--ink-soft); }
+    .guide-time-why { font-size: 11px; color: var(--ink-faint); line-height: 1.35; margin-top: 1px; }
+    .guide-time-a, .guide-time-b { width: 38px; font-weight: 700; }
+    .guide-time-a { color: #1d5fb8; background: rgba(29, 95, 184, 0.07); }
+    .guide-time-b { color: #b8571d; background: rgba(184, 87, 29, 0.07); }
+    .guide-time-zero { opacity: 0.3; font-weight: 400; }
+    .guide-time-brk { text-align: center; color: var(--ink-faint); font-weight: 400; }
+    .guide-ins-box { border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; max-width: 640px; font-size: 13px; }
+    .guide-ins { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 6px; }
+    .guide-ins-badge { flex: none; width: 24px; height: 24px; border-radius: 12px; text-align: center; line-height: 24px; font-weight: 800; color: #fff; }
+    .guide-ins-a .guide-ins-badge { background: #1d5fb8; }
+    .guide-ins-b .guide-ins-badge { background: #b8571d; }
+    .guide-ins-strong { color: var(--ink-soft); font-size: 12px; }
     .guide-hint { background: #FFF8E6; border: 1px solid #FFE08A; border-radius: 6px; padding: 10px 12px; font-size: 13px; margin-bottom: 14px; }
 `;
 
