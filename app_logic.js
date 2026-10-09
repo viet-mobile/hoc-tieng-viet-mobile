@@ -10438,7 +10438,7 @@ function verifyDistribution(units, dist, pins) {
     rowTexts.forEach(function (text, i) {
       var norm = songSegNormText(text); occurrence[norm] = (occurrence[norm] || 0) + 1;
       var supplied = manual.lines.filter(function (line) { return songSegNormText(line.text) === norm && line.occurrence === occurrence[norm]; })[0];
-      if (!supplied || (marks[i] && !marks[i].long && !marks[i].group)) return;
+      if (!supplied || (!supplied.force && marks[i] && !marks[i].long && !marks[i].group)) return;   // force: the user listened and corrected a marker that exists
       if (!(supplied.s >= 0 && supplied.s < supplied.e && supplied.e <= info.duration * 1000)) return;
       marks[i] = { s: supplied.s, e: supplied.e, m: i, manual: true };
     });

@@ -143,5 +143,19 @@
         "e": 180000
       }
     ]
+  },
+  "osg-23|ko": {
+    "mediaKey": "pub-osg_23_AUDIO",
+    "checksum": "741f1f7b38eb15cf6bce1d95f720a2e0",
+    "source": "User listened and supplied the boundary of sung line 21, 2026-10-09 (1:43-1:49; the official marker 1:42.4-1:56.4 holds an interlude). The Vietnamese recording plays the same times through song_timing_copy.json.",
+    "lines": [
+      {
+        "text": "내 맘을 꼭 지킬 거야.",
+        "occurrence": 1,
+        "s": 103000,
+        "e": 109000,
+        "force": true
+      }
+    ]
   }
 }
