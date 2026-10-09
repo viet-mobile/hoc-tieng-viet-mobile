@@ -10257,14 +10257,19 @@ function verifyDistribution(units, dist, pins) {
   }
   // The sung markers of a recording: {s, e, m (index in the official list), pid[, long]}, without the non-vocal ones (pid 99); null with the
   // reason when they cannot be used as they are (not ascending, no length).
-  function songSegMarks(mk) {
+  function songSegMarks(mk, orderByTime) {
+    // Some OSG endpoints serialize paragraph keys lexicographically (10 ... 4 ...).
+    // Retain the API index for identity, but read those official intervals chronologically.
+    var indexed = mk.map(function (mark, index) { return { mark: mark, index: index }; });
+    if (orderByTime) indexed.sort(function (a, b) { return songSegTime(a.mark.startTime) - songSegTime(b.mark.startTime) || a.index - b.index; });
     var marks = [], prev = -1, durs = [];
     for (var i = 0; i < mk.length; i++) {
-      var st = songSegTime(mk[i].startTime), du = songSegTime(mk[i].duration), pid = parseInt(mk[i].mepsParagraphId, 10);
+      var mark = indexed[i].mark;
+      var st = songSegTime(mark.startTime), du = songSegTime(mark.duration), pid = parseInt(mark.mepsParagraphId, 10);
       if (!(st >= prev) || !(du > 0)) return { marks: null, reason: "markers not ascending" };
       prev = st;
       if (pid === SONG_SEG_NON_VOCAL_PID) continue;
-      marks.push({ s: st, e: st + du, m: i, pid: pid }); durs.push(du);
+      marks.push({ s: st, e: st + du, m: indexed[i].index, pid: pid }); durs.push(du);
     }
     if (!marks.length) return { marks: null, reason: "no sung marker", nonVocal: mk.length };
     if (marks[0].s === 0 && marks[0].e - marks[0].s < 1500) return { marks: null, reason: "markers not timed to this recording (first line at 0:00, under 1.5 s)", nonVocal: mk.length - marks.length };
@@ -10312,10 +10317,10 @@ function verifyDistribution(units, dist, pins) {
     var out = [], blocks = String(vtt || "").replace(/\r/g, "").split(/\n\n+/);
     for (var i = 0; i < blocks.length; i++) {
       var lines = blocks[i].split("\n"), t = -1, m;
-      for (var j = 0; j < lines.length; j++) { if ((m = /^(\d{2}):(\d{2}):(\d{2}\.\d{3})\s*-->\s*(\d{2}):(\d{2}):(\d{2}\.\d{3})/.exec(lines[j]))) { t = j; break; } }
+      for (var j = 0; j < lines.length; j++) { if ((m = /^(?:(\d{2,}):)?(\d{2}):(\d{2}\.\d{3})\s*-->\s*(?:(\d{2,}):)?(\d{2}):(\d{2}\.\d{3})/.exec(lines[j]))) { t = j; break; } }
       if (t < 0) continue;
-      var st = Math.round((parseInt(m[1], 10) * 3600 + parseInt(m[2], 10) * 60 + parseFloat(m[3])) * 1000);
-      var en = Math.round((parseInt(m[4], 10) * 3600 + parseInt(m[5], 10) * 60 + parseFloat(m[6])) * 1000);
+      var st = Math.round((parseInt(m[1] || "0", 10) * 3600 + parseInt(m[2], 10) * 60 + parseFloat(m[3])) * 1000);
+      var en = Math.round((parseInt(m[4] || "0", 10) * 3600 + parseInt(m[5], 10) * 60 + parseFloat(m[6])) * 1000);
       var texts = lines.slice(t + 1).map(function (x) { return x.replace(/<[^>]*>/g, "").trim(); }).filter(Boolean);
       if (texts.length && en > st) out.push({ s: st, e: en, lines: texts });
     }
@@ -10356,7 +10361,7 @@ function verifyDistribution(units, dist, pins) {
   //   a page line and a cue line whose words differ, between exact matches  -> that cue's part, and the cue's words are shown (vocalText)
   //   anything else                                                        -> no button
   // Returns marks[] (one per page line, null = no button) with .ok / .sub / .grouped counts, or null when nothing aligns.
-  function songSegNormText(t) { return String(t || "").normalize("NFC").toLowerCase().replace(/^\s*\d+[.．。]\s*/, "").replace(/[^\p{L}\p{N}]/gu, ""); }
+  function songSegNormText(t) { return String(t || "").normalize("NFC").toLowerCase().replace(/ð/g, "đ").replace(/^\s*\d+[.．。]\s*/, "").replace(/[^\p{L}\p{N}]/gu, ""); }
   // How alike two normalized texts are (Dice coefficient of their character pairs, 0..1): the sung words of a line against the text
   function songSegAlike(a, b) {
     if (!a || !b) return 0;
@@ -10366,7 +10371,7 @@ function verifyDistribution(units, dist, pins) {
     for (i = 0; i + 1 < b.length; i++) { var k2 = b.substr(i, 2); if (bag[k2]) { bag[k2]--; hit++; } }
     return n + Math.max(b.length - 1, 0) ? 2 * hit / (n + Math.max(b.length - 1, 0)) : 0;
   }
-  function songSegAlignCues(rowTexts, cues) {
+  function songSegAlignCues(rowTexts, cues, exactOnly) {
     var cl = [], i, j, k;
     for (i = 0; i < cues.length; i++) for (j = 0; j < cues[i].lines.length; j++) cl.push({ s: cues[i].s, e: cues[i].e, text: cues[i].lines[j], c: i, n: cues[i].lines.length });
     var R = rowTexts.map(songSegNormText), C = cl.map(function (x) { return songSegNormText(x.text); }), n = R.length, m = C.length;
@@ -10377,17 +10382,20 @@ function verifyDistribution(units, dist, pins) {
     for (i = 0; i <= n; i++) for (j = 0; j <= m; j++) {
       if (best[i][j] === NEG) continue;
       var b = best[i][j], cat;
+      // Missing verses/cues should disable those rows, not discard every exact match.
+      if (i < n && b - 2 > best[i + 1][j]) { best[i + 1][j] = b - 2; back[i + 1][j] = ["D", i, j, 1]; }
+      if (j < m && b - 2 > best[i][j + 1]) { best[i][j + 1] = b - 2; back[i][j + 1] = ["I", i, j, 1]; }
       for (k = 1; k <= 3 && i < n && j + k <= m; k++) {   // one page line = k cue lines
         cat = C.slice(j, j + k).join("");
         if (cat && cat === R[i] && b + 2 > best[i + 1][j + k]) { best[i + 1][j + k] = b + 2; back[i + 1][j + k] = ["M", i, j, k]; }
         // the same, with other words sung in part of it (a line of two cues where one cue's words differ): alike enough, kept only between matches
-        else if (k > 1 && cat && songSegAlike(cat, R[i]) >= 0.6 && b - 1 > best[i + 1][j + k]) { best[i + 1][j + k] = b - 1; back[i + 1][j + k] = ["S", i, j, k]; }
+        else if (!exactOnly && k > 1 && cat && songSegAlike(cat, R[i]) >= 0.6 && b - 1 > best[i + 1][j + k]) { best[i + 1][j + k] = b - 1; back[i + 1][j + k] = ["S", i, j, k]; }
       }
       for (k = 2; k <= 3 && i + k <= n && j < m; k++) {   // one cue line = k page lines
         cat = R.slice(i, i + k).join("");
         if (cat && cat === C[j] && b + 1 > best[i + k][j + 1]) { best[i + k][j + 1] = b + 1; back[i + k][j + 1] = ["G", i, j, k]; }
       }
-      if (i < n && j < m && R[i] !== C[j] && b - 1 > best[i + 1][j + 1]) { best[i + 1][j + 1] = b - 1; back[i + 1][j + 1] = ["S", i, j, 1]; }
+      if (!exactOnly && i < n && j < m && R[i] !== C[j] && b - 1 > best[i + 1][j + 1]) { best[i + 1][j + 1] = b - 1; back[i + 1][j + 1] = ["S", i, j, 1]; }
     }
     if (best[n][m] === NEG) return null;
     var out = [], kind = [];
@@ -10398,25 +10406,107 @@ function verifyDistribution(units, dist, pins) {
       var typ = st[0], pi = st[1], pj = st[2], kk = st[3];
       if (typ === "M") { out[pi] = { s: cl[pj].s, e: cl[pj + kk - 1].e, m: cl[pj].c }; kind[pi] = "ok"; }
       else if (typ === "G") { for (k = 0; k < kk; k++) { out[pi + k] = { s: cl[pj].s, e: cl[pj].e, m: cl[pj].c, group: kk }; kind[pi + k] = "grouped"; } }
-      else { out[pi] = { s: cl[pj].s, e: cl[pj + kk - 1].e, m: cl[pj].c, text: cl.slice(pj, pj + kk).map(function (x) { return x.text; }).join(" ") }; kind[pi] = "sub"; }
+      else if (typ === "S") { out[pi] = { s: cl[pj].s, e: cl[pj + kk - 1].e, m: cl[pj].c, text: cl.slice(pj, pj + kk).map(function (x) { return x.text; }).join(" ") }; kind[pi] = "sub"; }
       i = pi; j = pj;
     }
     var res = { marks: out, ok: 0, sub: 0, grouped: 0, unsure: 0 };
     for (i = 0; i < n; i++) {   // words that differ are trusted only between exact matches (or at an edge next to one)
-      if (kind[i] === "sub" && !((i === 0 || kind[i - 1] === "ok") && (i === n - 1 || kind[i + 1] === "ok"))) { out[i] = null; kind[i] = "unsure"; }
+      if (kind[i] === "sub" && !((i === 0 || kind[i - 1] === "ok" || kind[i - 1] === "grouped") && (i === n - 1 || kind[i + 1] === "ok" || kind[i + 1] === "grouped"))) { out[i] = null; kind[i] = "unsure"; }
       res[kind[i] || "unsure"]++;
     }
     return res.ok + res.sub + res.grouped ? res : null;
   }
-  function songSegPickTiming(info, rowTexts) {
+  function songSegOwnParagraphTiming(info, rowTexts) {
+    if (!info || !info.paragraphs || !info.marks) return info;
+    var original = info.marks;
+    var cues = original.map(function (m) { return { s: m.s, e: m.e, lines: [info.paragraphs[String(m.pid)] || ""] }; });
+    var aligned = songSegAlignCues(rowTexts, cues, true);
+    if (!aligned) return Object.assign({}, info, { marks: rowTexts.map(function () { return null; }) });
+    var marks = aligned.marks.map(function (m) {
+      if (!m) return null;
+      var first = original[m.m], result = Object.assign({}, m, { m: first.m, pid: first.pid });
+      if (original.some(function (part) { return part.long && part.s >= m.s && part.s < m.e; })) result.long = Math.round((m.e - m.s) / 1000);
+      return result;
+    });
+    return Object.assign({}, info, { marks: marks, alignedBy: "own-official-paragraphs" });
+  }
+  function songSegApplyOriginalManual(info, rowTexts, key, lang) {
+    var manual = typeof ORIGINAL_SEGMENT_MANUAL !== "undefined" && ORIGINAL_SEGMENT_MANUAL[key + "|" + lang];
+    if (!manual || !info || manual.mediaKey !== info.mediaKey || manual.checksum !== info.checksum) return info;
+    var marks = info.marks && info.marks.length === rowTexts.length ? info.marks.slice() : rowTexts.map(function () { return null; });
+    var occurrence = {};
+    rowTexts.forEach(function (text, i) {
+      var norm = songSegNormText(text); occurrence[norm] = (occurrence[norm] || 0) + 1;
+      var supplied = manual.lines.filter(function (line) { return songSegNormText(line.text) === norm && line.occurrence === occurrence[norm]; })[0];
+      if (!supplied || (marks[i] && !marks[i].long && !marks[i].group)) return;
+      if (!(supplied.s >= 0 && supplied.s < supplied.e && supplied.e <= info.duration * 1000)) return;
+      marks[i] = { s: supplied.s, e: supplied.e, m: i, manual: true };
+    });
+    return Object.assign({}, info, { marks: marks });
+  }
+  function songSegApplyCueBindings(aligned, info, rowTexts, key, lang) {
+    var proof = typeof ORIGINAL_SEGMENT_CUE_BINDINGS !== "undefined" && ORIGINAL_SEGMENT_CUE_BINDINGS[key + "|" + lang];
+    if (!aligned || !proof || !info.video || proof.mediaKey !== info.video.key || proof.checksum !== info.video.checksum) return aligned;
+    proof.bindings.forEach(function (binding) {
+      var index = binding.line - 1;
+      if (songSegNormText(rowTexts[index]) !== songSegNormText(binding.text)) return;
+      var actual = binding.cues.map(function (expected) { return info.video.cues.find(function (cue) { return cue.s === expected.s && cue.e === expected.e && JSON.stringify(cue.lines) === JSON.stringify(expected.lines); }); });
+      if (!actual.length || actual.some(function (cue) { return !cue; })) return;
+      var old = aligned.marks[index];
+      if (!old) { aligned.unsure--; aligned.sub++; }
+      aligned.marks[index] = { s: actual[0].s, e: actual[actual.length - 1].e,
+        m: info.video.cues.indexOf(actual[0]), text: actual.map(function (cue) { return cue.lines.join(" "); }).join(" ") };
+    });
+    return aligned;
+  }
+  function songSegPickTiming(info, rowTexts, kind, key, lang) {
+    if (kind === "original") {
+      info = songSegOwnParagraphTiming(info, rowTexts);
+      info = songSegApplyOriginalManual(info, rowTexts, key, lang);
+    }
     if (!info || !info.video || !info.video.cues || !info.video.cues.length) return info;
     var rows = rowTexts.length, cues = info.video.cues, total = 0;
     for (var i = 0; i < cues.length; i++) total += cues[i].lines.length;
     var mp3ok = !!(info.marks && info.marks.length === rows);
-    if (mp3ok && (total !== rows || songSegCuesAgree(info.marks, cues))) return info;   // the MP3's own markers, one per line: the finer official data
+    // Text-bound official paragraph matches stay on MP3 even when other rows lack a marker.
+    if (mp3ok && (info.paragraphs || info.marks.some(function (m) { return m && m.manual; }))) {
+      var ownFallback = songSegAlignCues(rowTexts, cues);
+      if (!ownFallback) return info;
+      return Object.assign({}, info, { marks: info.marks.map(function (m, i) {
+        return (!m || m.long) && ownFallback.marks[i] ? Object.assign({}, ownFallback.marks[i], { url: info.video.url, timingSource: "video-cues" }) : m;
+      }), mixedVideoCues: true });
+    }
+    if (mp3ok && (total !== rows || songSegCuesAgree(info.marks, cues))) {
+      if (!info.marks.some(function (m) { return !m || m.long; })) return info;
+      var fallback = songSegAlignCues(rowTexts, cues);
+      if (!fallback) return info;
+      var mixed = info.marks.map(function (m, i) {
+        return (!m || m.long) && fallback.marks[i] ? Object.assign({}, fallback.marks[i], { url: info.video.url, timingSource: "video-cues" }) : m;
+      });
+      return Object.assign({}, info, { marks: mixed, mixedVideoCues: true });
+    }   // valid MP3 markers keep priority; only unavailable vocal boundaries use the own video's cues
     var al = songSegAlignCues(rowTexts, cues);
+    if (kind === "original") al = songSegApplyCueBindings(al, info, rowTexts, key, lang);
     if (!al) return info;
-    return { src: info.src, mediaKey: info.video.key, url: info.video.url, marks: al.marks, reason: "", nonVocal: 0, timing: "video-cues", counts: al, mp3Rejected: mp3ok, video: info.video };
+    return { src: info.src, mediaKey: info.video.key, url: info.video.url, mp3Url: info.mp3Url || info.url,
+      mp3Duration: info.mp3Duration || info.duration, marks: al.marks, reason: "", nonVocal: 0, timing: "video-cues", counts: al, mp3Rejected: mp3ok, video: info.video };
+  }
+  function songSegCopyTiming(info, refInfo, rows, refRows, copy) {
+    if (!copy || !info || !refInfo || !refInfo.marks || rows !== refRows || refInfo.marks.length !== refRows) return info;
+    var marks = info.marks && info.marks.length === rows ? info.marks.slice() : Array.from({ length: rows }, function () { return null; }), count = 0;
+    (copy.lines || marks.map(function (_, i) { return i + 1; })).forEach(function (line) {
+      var index = line - 1, src = refInfo.marks[index], own = marks[index];
+      if (!src || src.long || src.enabled === false || !(index >= 0 && index < rows)) return;
+      if (copy.preferOwnMarkers && own && !own.long && !own.group && info.timing !== "video-cues" && own.timingSource !== "video-cues") return;
+      var video = refInfo.timing === "video-cues" || src.timingSource === "video-cues";
+      var url = video ? info.video && info.video.url : info.mp3Url || (info.timing !== "video-cues" && info.url);
+      var duration = video ? info.video && info.video.duration : info.mp3Duration || info.duration;
+      if (!url || !(duration * 1000 >= src.e) || !(src.s >= 0 && src.e > src.s)) return;
+      marks[index] = { s: src.s, e: src.e, m: src.m, url: url, copiedFrom: copy.from };
+      if (src.group) marks[index].group = src.group;
+      count++;
+    });
+    return count ? Object.assign({}, info, { marks: marks, copiedLines: count, reason: "" }) : info;
   }
   // Vietnamese source-backed video/voice alignment; explicit user-approved children overrides resolve separately.
   // Check both general choir media before asking for children; a failed request is not evidence of absence.
@@ -10497,7 +10587,7 @@ function verifyDistribution(units, dist, pins) {
       return fileRequest.then(function (f) {
         if (f && f.generalVideoOnly) return { src: "sjjc", marks: null, reason: "general choir video exists; no validated same-recording alignment" };
         if (!f) return next();   // this language has no such recording: the next source, if any
-        var mk = f.markers && f.markers.markers, parsed = mk && mk.length ? songSegMarks(mk) : { marks: null, reason: "no markers" };
+        var mk = f.markers && f.markers.markers, parsed = mk && mk.length ? songSegMarks(mk, kind === "original") : { marks: null, reason: "no markers" };
         var mediaKey = "pub-" + pub + "_" + track + "_AUDIO";
         if (kind === "kingdom") {
           var verified = typeof KINGDOM_VOCAL_SEGMENTS !== "undefined" && KINGDOM_VOCAL_SEGMENTS[key + "|" + lang];
@@ -10512,7 +10602,12 @@ function verifyDistribution(units, dist, pins) {
             parsed = { marks: verified.lines, reason: "", nonVocal: parsed.nonVocal };
           }
         }
-        return { src: pub, mediaKey: mediaKey, url: f.file.url, marks: parsed.marks, reason: parsed.reason, nonVocal: parsed.nonVocal || 0 };
+        var paragraphs = kind === "original" && typeof ORIGINAL_SEGMENT_PARAGRAPHS !== "undefined" && ORIGINAL_SEGMENT_PARAGRAPHS[key + "|" + lang];
+        var originalMeta = f.markers || {};
+        if (paragraphs && (paragraphs.checksum !== f.file.checksum || originalMeta.hash !== paragraphs.markerHash ||
+            paragraphs.documentId !== originalMeta.documentId || originalMeta.mepsLanguageSpoken !== loc[0] || originalMeta.mepsLanguageWritten !== loc[0] ||
+            JSON.stringify(paragraphs.signature) !== JSON.stringify((mk || []).map(function (m) { return [m.startTime, m.duration, m.mepsParagraphId]; })))) paragraphs = null;
+        return { src: pub, mediaKey: mediaKey, url: f.file.url, mp3Url: f.file.url, checksum: f.file.checksum, duration: f.duration, mp3Duration: f.duration, paragraphs: paragraphs && paragraphs.paragraphs, marks: parsed.marks, reason: parsed.reason, nonVocal: parsed.nonVocal || 0 };
       });
     }
     var cuesP = kind === "kingdom" ? Promise.resolve(null) : songSegCuesOf(kind, key, lang, loc[0]);
@@ -10672,6 +10767,7 @@ function verifyDistribution(units, dist, pins) {
   var SONG_SEG_ALIGN_TOL = 0.25, SONG_SEG_ALIGN_TOL_MIN_MS = 400;
   function songSegAlignByParagraph(viInfo, viRows, info, rows) {
     if (!viInfo || !viInfo.marks || !info || !info.marks || viInfo.marks.length !== viRows || rows !== viRows) return null;
+    if (viInfo.marks.some(function (m) { return !m || m.pid == null || m.url; }) || info.marks.some(function (m) { return !m || m.pid == null; })) return null;
     var byPid = {}, seen = {}, i;
     for (i = 0; i < info.marks.length; i++) { var pid = info.marks[i].pid; if (byPid[pid]) return null; byPid[pid] = info.marks[i]; }   // ambiguous: no
     for (i = 0; i < viInfo.marks.length; i++) { if (seen[viInfo.marks[i].pid]) return null; seen[viInfo.marks[i].pid] = 1; }
@@ -10703,10 +10799,10 @@ function verifyDistribution(units, dist, pins) {
       var ask = songSegResolve(kind, key, lang), ref = lang === "vi" ? tl : "vi";   // the other language on screen is the reference
       var rowTexts = rows.map(function (row) { return row.querySelector(L[2]).textContent; });
       if (kind !== "kingdom") ask = ask.then(function (info) {
-        var picked = songSegPickTiming(info, rowTexts);
+        var picked = songSegPickTiming(info, rowTexts, kind, key, lang);
         if (picked !== info) {
           var c = picked.counts;
-          songSegLog(kind + " " + key + " " + lang + ": official video cues (" + picked.mediaKey + ")" + (picked.mp3Rejected ? ", the MP3 markers disagree with them and are dropped" : "") +
+          if (c) songSegLog(kind + " " + key + " " + lang + ": official video cues (" + picked.mediaKey + ")" + (picked.mp3Rejected ? ", the MP3 markers disagree with them and are dropped" : "") +
             ": " + c.ok + " lines match, " + c.sub + " with other words (shown), " + c.grouped + " inside a cue of several lines, " + c.unsure + " without a button");
           songSegInfo[kind + "|" + key + "|" + lang] = picked;
         }
@@ -10715,24 +10811,16 @@ function verifyDistribution(units, dist, pins) {
       var refTexts = [];
       if (ref) box.querySelectorAll(ref === "vi" ? ".lyric-vi-row .lyric-vi" : ".lyric-target-row .lyric-target").forEach(function (t) { if (songSegSingable(t.textContent)) refTexts.push(t.textContent); });
       if (kind !== "kingdom" && ref && rowCount[ref]) ask = Promise.all([ask, songSegResolve(kind, key, ref)]).then(function (both) {
-        var info = both[0], refInfo = songSegPickTiming(both[1], refTexts);
+        var info = both[0], refInfo = songSegPickTiming(both[1], refTexts, kind, key, ref);
         // user-authorized copy (SONG_TIMING_COPY): this language's own recording, at the other language's line times (the same medium: the
         // video when those times are the video's cues, else the MP3); only the listed lines, or every line
         var copy = typeof SONG_TIMING_COPY !== "undefined" && SONG_TIMING_COPY[kind + "|" + key + "|" + lang];
-        if (copy && copy.from === ref && refInfo && refInfo.marks && rowCount[ref] === rows.length) {
-          var ownUrl = refInfo.timing === "video-cues" ? (info && info.video && info.video.url) : (info && info.url);
-          if (!ownUrl) songSegLog(kind + " " + key + " " + lang + ": no own " + (refInfo.timing === "video-cues" ? "video" : "MP3") + " to play the " + ref + " line times on");
-          else {
-            var marks = (info && info.marks && info.marks.length === rows.length) ? info.marks.slice() : rows.map(function () { return null; }), n = 0;
-            (copy.lines || rows.map(function (_, i) { return i + 1; })).forEach(function (ln) {
-              var src = refInfo.marks[ln - 1];
-              if (src) { marks[ln - 1] = { s: src.s, e: src.e, m: src.m, url: ownUrl, copiedFrom: ref }; n++; }
-            });
-            if (n) {
-              songSegLog(kind + " " + key + " " + lang + ": " + n + " line(s) at the " + ref + " recording's times, played from this language's own " + (refInfo.timing === "video-cues" ? "video" : "MP3") + " (user-authorized copy)");
-              info = { src: info ? info.src : "", mediaKey: info ? info.mediaKey : "", url: info ? info.url : ownUrl, marks: marks, reason: "", nonVocal: 0, timing: (info && info.timing) || "mp3-markers", copiedLines: n, video: info && info.video };
-              songSegInfo[kind + "|" + key + "|" + lang] = info;
-            }
+        if (copy && copy.from === ref) {
+          var copied = songSegCopyTiming(info, refInfo, rows.length, rowCount[ref], copy);
+          if (copied !== info) {
+            info = copied;
+            songSegLog(kind + " " + key + " " + lang + ": " + info.copiedLines + " user-authorized line times on this language's own recording");
+            songSegInfo[kind + "|" + key + "|" + lang] = info;
           }
         }
         if (refInfo && (!refInfo.marks || refInfo.marks.length !== rowCount[ref] || refInfo.timing)) refInfo = null;   // only a reference with its own MP3 markers, one per line

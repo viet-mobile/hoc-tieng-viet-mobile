@@ -27,4 +27,10 @@ SONG_LANGS = ("vi", "cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko
 # own (verified) jwOrgUrl.
 SONG_MEDIA_KEYS = {
     "osg-1": {"kind": "AUDIO", "mediaKey": "pub-osg_1_AUDIO"},
+    # Their VIDEO finder links are unavailable, but their official AUDIO exists.
+    "osg-18|ko": {"kind": "AUDIO", "mediaKey": "pub-osg_18_AUDIO"},
+    "osg-112|ko": {"kind": "AUDIO", "mediaKey": "pub-osg_112_AUDIO"},
+    "osg-112|vi": {"kind": "AUDIO", "mediaKey": "pub-osg_112_AUDIO"},
+    "osg-117|ko": {"kind": "AUDIO", "mediaKey": "pub-osg_117_AUDIO"},
+    "osg-117|vi": {"kind": "AUDIO", "mediaKey": "pub-osg_117_AUDIO"},
 }

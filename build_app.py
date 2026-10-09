@@ -642,6 +642,12 @@ def song_collection(path, expected_tracks):
                 media["ko"] = {"kind": fixed["kind"], "mediaKey": fixed["mediaKey"]}
         if media:
             out["media"] = media
+        for key, language in langs.items():
+            fixed_language = SONG_MEDIA_KEYS.get(song["id"] + "|" + key)
+            if fixed_language and language["available"] and language.get("lines"):
+                media[key] = dict(fixed_language)
+                out["media"] = media
+                language["url"] = ""
         return out
     return [entry(song) for song in sorted(songs, key=lambda x: x["track"])]
 
@@ -1092,6 +1098,11 @@ def build_data_js(site):
         with open("song_timing_copy.json", encoding="utf-8") as fh:
             timing_copy = {k: v for k, v in json.load(fh).items() if not k.startswith("_")}
         data_js += "const SONG_TIMING_COPY = " + json.dumps(timing_copy, separators=(",", ":")) + ";\n"
+        for name, path in (("ORIGINAL_SEGMENT_PARAGRAPHS", "scripts/data/original_segment_paragraphs.json"),
+                           ("ORIGINAL_SEGMENT_CUE_BINDINGS", "scripts/data/original_segment_cue_bindings.json"),
+                           ("ORIGINAL_SEGMENT_MANUAL", "scripts/data/original_segment_manual.json")):
+            with open(path, encoding="utf-8") as fh:
+                data_js += "const " + name + " = " + js_json(json.load(fh)) + ";\n"
         # JW choir recordings (jw.org pub-osg) of some 왕국 노래: an explicit song -> osg track table plus the languages
         # whose finder link opens (scripts/song_choir_media.py); never computed from the song number.
         choir_osg = {"tracks": {str(k): v for k, v in CHOIR_OSG["tracks"].items()},

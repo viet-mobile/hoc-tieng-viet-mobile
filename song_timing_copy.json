@@ -1,11 +1,430 @@
 {
   "_doc": "Line timing copied from another language's recording of the same song (user-authorized, 2026-10-09): the language's OWN recording is played at the other language's line times. from = the language whose line times are used; lines = 1-based lines (omitted: every line). Rows must be the same in both languages. Applies to 오리지널 송 / 어린이 노래 only.",
-  "children|pk-special-0|ko": {"from": "vi"},
-  "children|pkon-7|vi": {"from": "ko"},
-  "children|pkon-8|vi": {"from": "ko"},
-  "children|pkon-19|ko": {"from": "vi", "lines": [1, 2]},
-  "children|pkon-20|vi": {"from": "ko"},
-  "children|pkon-22|vi": {"from": "ko"},
-  "children|pkon-23|vi": {"from": "ko"},
-  "children|pkon-27|vi": {"from": "ko"}
+  "children|pk-special-0|ko": {
+    "from": "vi"
+  },
+  "children|pkon-7|vi": {
+    "from": "ko"
+  },
+  "children|pkon-8|vi": {
+    "from": "ko"
+  },
+  "children|pkon-19|ko": {
+    "from": "vi",
+    "lines": [
+      1,
+      2
+    ]
+  },
+  "children|pkon-20|vi": {
+    "from": "ko"
+  },
+  "children|pkon-22|vi": {
+    "from": "ko"
+  },
+  "children|pkon-23|vi": {
+    "from": "ko"
+  },
+  "children|pkon-27|vi": {
+    "from": "ko"
+  },
+  "original|osg-13|ko": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-13|en": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-13|zh": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-13|zh_cn": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-13|ja": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-13|de": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-13|fr": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-13|pl": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-13|cs": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-13|hu": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-13|id": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-16|ko": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-16|en": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-16|zh": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-16|zh_cn": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-16|ja": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-16|de": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-16|fr": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-16|pl": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-16|cs": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-16|hu": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-16|id": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-27|ko": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-27|en": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-27|zh": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-27|zh_cn": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-27|ja": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-27|de": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-27|fr": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-27|pl": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-27|cs": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-27|hu": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-27|id": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-28|ko": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-28|en": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-28|zh": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-28|zh_cn": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-28|ja": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-28|de": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-28|fr": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-28|pl": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-28|cs": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-28|hu": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-28|id": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-30|ko": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-30|en": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-30|zh": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-30|zh_cn": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-30|ja": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-30|de": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-30|fr": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-30|pl": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-30|cs": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-30|hu": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-30|id": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-31|ko": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-31|en": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-31|zh": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-31|zh_cn": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-31|ja": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-31|de": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-31|fr": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-31|pl": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-31|cs": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-31|hu": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-31|id": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-33|ko": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-33|en": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-33|zh": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-33|zh_cn": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-33|ja": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-33|de": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-33|fr": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-33|pl": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-33|cs": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-33|hu": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-33|id": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-35|ko": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-35|en": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-35|zh": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-35|zh_cn": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-35|ja": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-35|de": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-35|fr": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-35|pl": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-35|cs": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-35|hu": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-35|id": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-41|ko": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-41|en": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-41|zh": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-41|zh_cn": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-41|ja": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-41|de": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-41|fr": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-41|pl": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-41|cs": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-41|hu": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-41|id": {
+    "from": "vi",
+    "preferOwnMarkers": true
+  },
+  "original|osg-23|vi": {
+    "from": "ko"
+  }
 }

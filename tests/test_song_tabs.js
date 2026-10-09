@@ -144,7 +144,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
       ok(r.aria.join() === '베트남어 구절 듣기,발음 듣기', n + ': aria ' + r.aria);
       ok(r.closed116 === 'false/0', n + ': closing removes the lyrics ' + r.closed116);
       ok(r.noVi.missing && r.noVi.viMsg && r.noVi.viLink.length === 1 && r.noVi.koLines > 0, n + ': song without Vietnamese ' + JSON.stringify(r.noVi));
-      ok(r.lines117 > 5 && r.links117 === 0, n + ': OSG 117 (lyrics, no link: not on jw.org) ' + r.links117);
+      ok(r.lines117 > 5 && r.links117 === 2, n + ': OSG 117 official AUDIO links in Vietnamese and Korean ' + r.links117);
       ok(r.search.join() === 'osg-116', n + ': search ' + r.search);
       ok(r.kidCards === 36, n + ': children cards ' + r.kidCards);
       ok(/Cầu nguyện mọi lúc/.test(r.k0) && /언제나 기도할 거예요/.test(r.k0) && r.k0links.length === 2 && r.k0links.every(u => u.includes('pub-pk_3_VIDEO')), n + ': kid 0 ' + r.k0links);
