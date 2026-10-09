@@ -10311,6 +10311,15 @@ function verifyDistribution(units, dist, pins) {
   //   anything else                                                        -> no button
   // Returns marks[] (one per page line, null = no button) with .ok / .sub / .grouped counts, or null when nothing aligns.
   function songSegNormText(t) { return String(t || "").normalize("NFC").toLowerCase().replace(/^\s*\d+[.．。]\s*/, "").replace(/[^\p{L}\p{N}]/gu, ""); }
+  // How alike two normalized texts are (Dice coefficient of their character pairs, 0..1): the sung words of a line against the text
+  function songSegAlike(a, b) {
+    if (!a || !b) return 0;
+    if (a === b) return 1;
+    var bag = {}, n = 0, hit = 0, i;
+    for (i = 0; i + 1 < a.length; i++) { var k = a.substr(i, 2); bag[k] = (bag[k] || 0) + 1; n++; }
+    for (i = 0; i + 1 < b.length; i++) { var k2 = b.substr(i, 2); if (bag[k2]) { bag[k2]--; hit++; } }
+    return n + Math.max(b.length - 1, 0) ? 2 * hit / (n + Math.max(b.length - 1, 0)) : 0;
+  }
   function songSegAlignCues(rowTexts, cues) {
     var cl = [], i, j, k;
     for (i = 0; i < cues.length; i++) for (j = 0; j < cues[i].lines.length; j++) cl.push({ s: cues[i].s, e: cues[i].e, text: cues[i].lines[j], c: i, n: cues[i].lines.length });
@@ -10325,6 +10334,8 @@ function verifyDistribution(units, dist, pins) {
       for (k = 1; k <= 3 && i < n && j + k <= m; k++) {   // one page line = k cue lines
         cat = C.slice(j, j + k).join("");
         if (cat && cat === R[i] && b + 2 > best[i + 1][j + k]) { best[i + 1][j + k] = b + 2; back[i + 1][j + k] = ["M", i, j, k]; }
+        // the same, with other words sung in part of it (a line of two cues where one cue's words differ): alike enough, kept only between matches
+        else if (k > 1 && cat && songSegAlike(cat, R[i]) >= 0.6 && b - 1 > best[i + 1][j + k]) { best[i + 1][j + k] = b - 1; back[i + 1][j + k] = ["S", i, j, k]; }
       }
       for (k = 2; k <= 3 && i + k <= n && j < m; k++) {   // one cue line = k page lines
         cat = R.slice(i, i + k).join("");
@@ -10341,7 +10352,7 @@ function verifyDistribution(units, dist, pins) {
       var typ = st[0], pi = st[1], pj = st[2], kk = st[3];
       if (typ === "M") { out[pi] = { s: cl[pj].s, e: cl[pj + kk - 1].e, m: cl[pj].c }; kind[pi] = "ok"; }
       else if (typ === "G") { for (k = 0; k < kk; k++) { out[pi + k] = { s: cl[pj].s, e: cl[pj].e, m: cl[pj].c, group: kk }; kind[pi + k] = "grouped"; } }
-      else { out[pi] = { s: cl[pj].s, e: cl[pj].e, m: cl[pj].c, text: cl[pj].text }; kind[pi] = "sub"; }
+      else { out[pi] = { s: cl[pj].s, e: cl[pj + kk - 1].e, m: cl[pj].c, text: cl.slice(pj, pj + kk).map(function (x) { return x.text; }).join(" ") }; kind[pi] = "sub"; }
       i = pi; j = pj;
     }
     var res = { marks: out, ok: 0, sub: 0, grouped: 0, unsure: 0 };

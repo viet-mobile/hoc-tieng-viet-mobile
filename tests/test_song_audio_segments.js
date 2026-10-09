@@ -309,6 +309,7 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
       // lines 1+2 and 3+4 together -> the cues win, played from the video; those grouped lines have no button; a cue whose words differ shows them
       window.__segCfg.mp3Zero['pkon:35:VT']=true; window.__segCfg.mp3Zero['pkon:35:KO']=true;
       window.__segCfg.video['pub-pkon_35_VIDEO:VT']={start:9.78,dur:2.0,groups:[[0,1],[2,3]],alter:{4:'LỜI HÁT KHÁC của dòng năm'},vtt:true};
+      // (after the user's merge every line of 35 is one cue of two lines in the subtitle -> the mock groups them in pairs as the real VTT does)
       window.__segCfg.video['pub-pkon_35_VIDEO:KO']={start:9.38,dur:2.0,vtt:true};
       // pk-special-0 (pub-pk_3_*): the MP3 has no markers; the Vietnamese video has cues, the Korean video none
       window.__segCfg.noMarkers['pk:3:VT']=true; window.__segCfg.noMarkers['pk:3:KO']=true;
