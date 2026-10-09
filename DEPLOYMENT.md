@@ -53,6 +53,21 @@ hostname-based runtime routing, or dependencies on another project -- domain-to-
 profile mapping is a deployment-config concern (this table / `DOMAIN_MAP`), not
 application logic.
 
+## Before every production push: the clean-clone gate
+
+```
+targeted tests -> python3 scripts/release_clean_clone_check.py -> git status / staged file review -> commit
+  -> fast-forward push to multi-cs-hu -> short production smoke
+```
+
+`scripts/release_clean_clone_check.py` (about a minute, no browser) checks out the committed HEAD alone (`git archive`, no untracked or
+modified files) and runs the Cloudflare build of the jeonju, jw and general profiles there; then it runs the build once in the working
+tree with an audit hook and fails with `ERROR: build dependency is not tracked: <path>` for every repo file the build READS that is not
+in `git ls-files`. Caches, review documents and scratch files the build never reads (`jw_extraction/`, `docs/*review*`,
+`song_audio_ok.json` ...) neither block a release nor need to be tracked. `--self-test` proves the gate fails on an untracked build
+dependency. (2026-10-09: a push whose build read three untracked `scripts/data/original_segment_*.json` made the Cloudflare build fail;
+the previous deployment kept serving, so there was no outage. This gate reproduces that failure.) Never force-push `multi-cs-hu`.
+
 ## Release tooling prerequisites
 
 - **Node >= 22.14** for `scripts/release_smoke.py`, `scripts/preprod_verify.py` and the `tests/*.js` browser tests
