@@ -9,7 +9,11 @@ Sino-Vietnamese / Sino-Korean vocabulary, Bible book names), runs homework, game
 Instructor B: native Vietnamese speaker, not very fluent in Korean -- pronunciation and tone models, songs, conversation,
 natural phrasing, reading aloud, feedback on what the students say.
 
-Every timePlan entry becomes [name, minutes, minutes of instructor A, reason key]; minutes of B = minutes - A. A break has
+Class structure (guide['classStructure']): 50 minutes of teaching, the 10-minute break exactly at minute 50, then 60 minutes
+that start with the 10-minute walk-around conversation practice (every class) and end with homework and the closing
+song/prayer. A teaching item that straddles minute 50 is split in two ("... (이어서)" for the second part).
+
+Every timePlan entry becomes [name, minutes, minutes of instructor A, reason key, posture]; minutes of B = minutes - A. A break has
 A = null (nobody teaches). The break counts 5 + 5 minutes towards the instructors' totals, so each class comes out near
 60 min for A and 60 min for B (the tolerance is TOLERANCE minutes). The reason keys are explained in guide['instructors'].
 """
@@ -24,6 +28,7 @@ BREAK_KEY = "break"
 
 # (regex on the item name, share of the minutes taken by A (0..1), reason key, fixed = not moved by the balancing)
 RULES = [
+    (r"^돌아다니며 상호 대화 실습", 0.5, "mingle", True),
     (r"^시작 노래·기도$", 0.0, "open", True),
     (r"^마치는 노래·기도$", 1.0, "close", True),
     (r"^과제 확인·안내$", 1.0, "homework", True),
@@ -53,6 +58,8 @@ RULES = [
 ]
 
 REASONS = {
+    "mingle": {"ko": "두 강사가 함께 돌아다니며 학생들의 대화를 듣고 발음과 표현을 바로잡아 줍니다.",
+               "vi": "Hai giảng viên cùng đi quanh lớp nghe học viên trò chuyện và sửa phát âm, cách diễn đạt."},
     "open": {"ko": "원어민이 선창해 발음·억양의 본보기를 보입니다.",
              "vi": "Người bản ngữ dẫn hát, làm mẫu phát âm và ngữ điệu."},
     "close": {"ko": "과제 안내와 이어서 한국어로 마무리합니다.",
@@ -101,12 +108,14 @@ REASONS = {
 
 INSTRUCTORS = {
     "title": {"ko": "강사 분담 (A · B)", "vi": "Phân công giảng viên (A · B)"},
-    "A": {"label": {"ko": "A 강사", "vi": "Giảng viên A"},
+    "A": {"label": {"ko": "A 강사", "vi": "Giảng viên A", "en": "Instructor A"},
+          "short": {"ko": "한국어 설명·문법", "vi": "giải thích tiếng Hàn, ngữ pháp", "en": "Korean explanations, grammar"},
           "profile": {"ko": "한국인 · 베트남어 학습 23년 이상",
                       "vi": "Người Hàn · học tiếng Việt hơn 23 năm"},
           "strengths": {"ko": "한국어 설명 · 문법 · 한자어 어휘 · 과제·게임·행사 진행",
                         "vi": "Giải thích bằng tiếng Hàn · ngữ pháp · từ Hán · bài tập, trò chơi, nghi thức"}},
-    "B": {"label": {"ko": "B 강사", "vi": "Giảng viên B"},
+    "B": {"label": {"ko": "B 강사", "vi": "Giảng viên B", "en": "Instructor B"},
+          "short": {"ko": "원어민 발음·회화", "vi": "phát âm, hội thoại bản ngữ", "en": "native pronunciation & conversation"},
           "profile": {"ko": "베트남 원어민 · 한국어는 아주 유창하지 않음",
                       "vi": "Người Việt bản ngữ · tiếng Hàn chưa thật lưu loát"},
           "strengths": {"ko": "발음·성조 시범 · 노래 · 회화 · 읽기 · 자연스러운 표현 교정",
@@ -117,6 +126,143 @@ INSTRUCTORS = {
 }
 
 
+# ---- class structure -------------------------------------------------------------------------------------------------
+FIRST_BLOCK = 50       # minutes of teaching before the break
+BREAK_MIN = 10
+CLASS_MIN = 120
+MINGLE_MIN = 10
+MINGLE_NAME = "돌아다니며 상호 대화 실습 (오늘 배운 표현으로)"
+SLACK_NAME = "항목 전환·여유"
+SLACK_MIN = 4          # at least this much transition time stays in a class
+SPLIT_SUFFIX = " (이어서)"
+OPEN_NAME, CLOSE_NAME, HOMEWORK_NAME, BREAK_NAME = "시작 노래·기도", "마치는 노래·기도", "과제 확인·안내", "휴식"
+STRUCTURAL = {OPEN_NAME, CLOSE_NAME, HOMEWORK_NAME, BREAK_NAME, SLACK_NAME, MINGLE_NAME}
+
+# posture of the students: stand / sit / move (walking around and talking with each other); the first match wins
+POSTURES = [
+    (r"^돌아다니며 상호 대화", "move"),
+    (r"복습 게임|숫자 복습|끝말잇기|대화 연습", "move"),
+    (r"^시작 노래·기도$|^마치는 노래·기도$", "stand"),
+    (r"집회 실연|집회 리허설|사회 표현|졸업", "stand"),
+    (r"노래|합창", "stand"),
+    (r"제공 연설", "stand"),
+    (r"일상 회화|일상 생활 문장|이웃 사람과의 대화|위치 전치사", "stand"),
+    (r"어휘 학습|어순반대 한자어", "stand"),         # choral repetition of the words, standing (method #1)
+    (r"발음|성조|숫자|요일|날짜|달, 계절|시간|책명|신권 용어", "stand"),
+]
+DEFAULT_POSTURE = "sit"
+
+CLASS_STRUCTURE = {
+    "firstBlock": FIRST_BLOCK, "break": BREAK_MIN, "secondBlock": CLASS_MIN - FIRST_BLOCK - BREAK_MIN, "mingle": MINGLE_MIN,
+    "postures": {
+        "stand": {"ko": "서서", "vi": "đứng", "en": "Standing"},
+        "sit": {"ko": "앉아서", "vi": "ngồi", "en": "Seated"},
+        "move": {"ko": "돌아다니며 대화", "vi": "đi lại trò chuyện", "en": "Walking & talking"},
+        "flex": {"ko": "상황에 따라", "vi": "tùy tình huống", "en": "As needed"},
+    },
+    "note": {"ko": "수업은 정확히 50분 진행한 뒤 10분 쉬고, 이어서 60분을 합니다. 휴식 직후 10분은 학생들이 돌아다니며 서로 대화하는 실습입니다.",
+             "vi": "Dạy đúng 50 phút rồi nghỉ 10 phút, sau đó học tiếp 60 phút. 10 phút ngay sau giờ nghỉ là thực hành đi lại trò chuyện với nhau.",
+             "en": "Teaching runs exactly 50 minutes, then a 10-minute break, then 60 more minutes. The 10 minutes right after the break are a walk-around conversation practice."},
+}
+
+
+def posture_of(name):
+    if name == BREAK_NAME:
+        return "rest"
+    if name == SLACK_NAME:
+        return "flex"          # spare minutes between items: whatever the class needs, not counted as sitting
+    for pattern, posture in POSTURES:
+        if re.search(pattern, name):
+            return posture
+    return DEFAULT_POSTURE
+
+
+MAX_SIT_RUN = 24       # minutes of sitting in a row, at most (where the class has another item to pull forward)
+MAX_ACTIVE_RUN = 28    # ... and of standing / walking in a row
+
+
+def kind_of(name):
+    return "sit" if posture_of(name) == "sit" else ("active" if posture_of(name) in ("stand", "move") else "flex")
+
+
+def spread_sitting(content):
+    """Keeps the order inside each kind but pulls a later item of the other kind forward when the students would sit more than
+    MAX_SIT_RUN, or stand / walk more than MAX_ACTIVE_RUN, minutes in a row. The run restarts at the break (about minute 54
+    of the content; the walk-around practice that follows the break counts as 10 active minutes)."""
+    rest = [list(i) for i in content]
+    out, run, run_kind, cum = [], 4, "active", 4          # the opening song / prayer is standing
+    limit = {"sit": MAX_SIT_RUN, "active": MAX_ACTIVE_RUN}
+    while rest:
+        pick = 0
+        k0 = kind_of(rest[0][0])
+        if k0 in limit and run_kind == k0 and run + rest[0][1] > limit[k0]:
+            for k, it in enumerate(rest):
+                if kind_of(it[0]) not in (k0, "flex"):
+                    pick = k
+                    break
+        it = rest.pop(pick)
+        out.append(it)
+        k = kind_of(it[0])
+        if k == run_kind:
+            run += it[1]
+        else:
+            run_kind, run = k, it[1]
+        cum += it[1]
+        if cum >= FIRST_BLOCK + 4 and cum - it[1] < FIRST_BLOCK + 4:
+            run_kind, run = "active", MINGLE_MIN
+    return out
+
+
+def restructure(plan):
+    """plan: the unit's current timePlan (any earlier shape) -> [[name, minutes], ...] in the new order: 50 min, break, 60 min."""
+    items = []
+    for entry in plan:
+        name, minutes = entry[0], entry[1]
+        if name.endswith(SPLIT_SUFFIX) and items and items[-1][0] == name[:-len(SPLIT_SUFFIX)]:
+            items[-1][1] += minutes                      # re-run: the two parts of a split item are one item again
+        else:
+            items.append([name, minutes])
+    content = [i for i in items if i[0] not in STRUCTURAL]
+    fixed = 4 + 5 + 4 + BREAK_MIN + MINGLE_MIN           # open + homework + close + break + mingle
+    c = sum(i[1] for i in content)
+    while CLASS_MIN - fixed - c < SLACK_MIN:             # not enough room: the largest teaching item gives a minute
+        biggest = max(content, key=lambda i: i[1])
+        biggest[1] -= 1
+        c -= 1
+    slack = CLASS_MIN - fixed - c
+
+    content = spread_sitting(content)
+
+    first, cum = [[OPEN_NAME, 4]], 4
+    rest = [list(i) for i in content]
+    while rest and cum + rest[0][1] <= FIRST_BLOCK:
+        first.append(rest.pop(0))
+        cum += first[-1][1]
+    gap = FIRST_BLOCK - cum
+    slack1 = min(gap, max(0, slack - 3)) if rest else min(gap, slack)
+    if slack1:
+        first.append([SLACK_NAME, slack1])
+        cum += slack1
+    gap = FIRST_BLOCK - cum
+    if gap and rest:                                     # an item straddles the break: split it
+        head, tail = rest[0], rest[0]
+        first.append([head[0], gap])
+        rest[0] = [head[0] + SPLIT_SUFFIX, head[1] - gap]
+    second = [[BREAK_NAME, BREAK_MIN], [MINGLE_NAME, MINGLE_MIN]] + rest
+    slack2 = slack - slack1
+    if slack2:
+        second.append([SLACK_NAME, slack2])
+    second += [[HOMEWORK_NAME, 5], [CLOSE_NAME, 4]]
+    out = first + second
+    assert sum(m for _, m in out) == CLASS_MIN, (sum(m for _, m in out), out)
+    cum = 0
+    for name, m in out:
+        if name == BREAK_NAME:
+            assert cum == FIRST_BLOCK, (cum, out)
+        cum += m
+    return out
+
+
 def classify(name):
     for pattern, share, key, fixed in RULES:
         if re.search(pattern, name):
@@ -125,7 +271,7 @@ def classify(name):
 
 
 def split_unit(plan):
-    """plan: [[name, minutes, ...], ...] -> [[name, minutes, a_minutes_or_None, reason_key], ...]"""
+    """plan: [[name, minutes, ...], ...] -> [[name, minutes, a_minutes_or_None, reason_key, fixed], ...]"""
     rows = []   # [name, minutes, a, key, fixed]
     flip = 0
     for entry in plan:
@@ -178,11 +324,21 @@ def main():
         data = json.load(f)
     guide = data["jeonju"]
     for u in guide["units"]:
-        rows, (ta, tb) = split_unit(u["timePlan"])
+        rows, (ta, tb) = split_unit(restructure(u["timePlan"]))
         total = sum(r[1] for r in rows)
-        print("unit %2d %s  total %3d  A %5.1f  B %5.1f" % (u["unit"], u["date"], total, ta, tb))
-        u["timePlan"] = [[r[0], r[1], r[2], r[3]] for r in rows]
+        by = {}
+        sit_run = longest = 0
+        for r in rows:
+            post = posture_of(r[0])
+            by[post] = by.get(post, 0) + r[1]
+            sit_run = sit_run + r[1] if post in ("sit",) else 0
+            longest = max(longest, sit_run)
+        print("unit %2d %s  total %3d  A %5.1f  B %5.1f  stand %2d sit %2d move %2d flex %2d  longest sitting run %2d" %
+              (u["unit"], u["date"], total, ta, tb, by.get("stand", 0), by.get("sit", 0), by.get("move", 0), by.get("flex", 0), longest))
+        u["timePlan"] = [[r[0], r[1], r[2], r[3], posture_of(r[0])] for r in rows]
     guide["instructors"] = INSTRUCTORS
+    guide["classStructure"] = CLASS_STRUCTURE
+    guide.setdefault("viText", {})[MINGLE_NAME] = "Đi lại trò chuyện với nhau (dùng các mẫu câu vừa học)"
     if not report:
         with open(PATH, "w", encoding="utf-8") as f:
             f.write(json.dumps(data, ensure_ascii=False, indent=2) + "\n")

@@ -329,6 +329,14 @@ const STYLES = `
     .guide-ins-badge { flex: none; width: 24px; height: 24px; border-radius: 12px; text-align: center; line-height: 24px; font-weight: 800; color: #fff; }
     .guide-ins-a .guide-ins-badge { background: #1d5fb8; }
     .guide-ins-b .guide-ins-badge { background: #b8571d; }
+    .guide-time-at { width: 58px; font-size: 11px; color: var(--ink-faint); font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top; }
+    .guide-time-breakrow td { background: rgba(0, 0, 0, 0.04); font-weight: 700; }
+    .guide-post { display: inline-block; font-size: 11px; line-height: 1.5; padding: 0 6px; border-radius: 9px; white-space: nowrap; background: rgba(0, 0, 0, 0.06); color: var(--ink-soft); }
+    .guide-post-stand { background: rgba(46, 125, 50, 0.12); color: #2e7d32; }
+    .guide-post-sit { background: rgba(110, 110, 110, 0.14); color: #5f6368; }
+    .guide-post-move { background: rgba(156, 39, 176, 0.12); color: #8e24aa; }
+    .guide-post-flex { background: rgba(255, 160, 0, 0.14); color: #b26a00; }
+    .guide-post-sum { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0; }
     .guide-ins-strong { color: var(--ink-soft); font-size: 12px; }
     .guide-hint { background: #FFF8E6; border: 1px solid #FFE08A; border-radius: 6px; padding: 10px 12px; font-size: 13px; margin-bottom: 14px; }
 `;

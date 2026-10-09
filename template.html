@@ -1276,6 +1276,28 @@
   .curr-guide-row { display: flex; gap: 8px; align-items: flex-start; font-size: 0.8rem; line-height: 1.5; }
   .curr-guide-label { flex: none; font-weight: 800; color: var(--accent); min-width: 5.5em; }
   .curr-guide-chips { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+  .curr-plan { margin: 6px 0 8px; border: 1px solid var(--border); border-radius: var(--radius-m); background: var(--surface); }
+  .curr-plan > summary { cursor: pointer; padding: 7px 10px; font-size: 0.82rem; font-weight: 700; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+  .curr-plan > summary::-webkit-details-marker { display: none; }
+  .curr-plan > summary::before { content: "\25B8"; color: var(--ink-faint); }
+  .curr-plan[open] > summary::before { content: "\25BE"; }
+  .curr-plan-body { padding: 2px 10px 8px; font-size: 0.8rem; }
+  .curr-plan-a, .curr-plan-b { display: inline-block; font-weight: 800; padding: 0 6px; border-radius: 9px; font-size: 0.74rem; }
+  .curr-plan-a { color: #1d5fb8; background: rgba(29, 95, 184, 0.10); }
+  .curr-plan-b { color: #b8571d; background: rgba(184, 87, 29, 0.10); }
+  .curr-plan-legend { display: flex; flex-wrap: wrap; gap: 4px; margin: 2px 0 6px; }
+  .curr-plan-chip { font-size: 0.72rem; padding: 0 7px; border-radius: 9px; background: var(--chip-bg); }
+  .curr-plan-chip-stand { background: rgba(46, 125, 50, 0.12); color: #2e7d32; }
+  .curr-plan-chip-sit { background: rgba(110, 110, 110, 0.14); color: #5f6368; }
+  .curr-plan-chip-move { background: rgba(156, 39, 176, 0.12); color: #8e24aa; }
+  .curr-plan-roles { font-size: 0.72rem; color: var(--ink-soft); margin-bottom: 4px; }
+  .curr-plan-row { display: grid; grid-template-columns: 52px 22px minmax(0, 1fr) auto; gap: 4px; align-items: start; padding: 3px 0; border-top: 1px solid var(--border); }
+  .curr-plan-t { font-size: 0.7rem; color: var(--ink-faint); font-variant-numeric: tabular-nums; white-space: nowrap; padding-top: 1px; }
+  .curr-plan-p { text-align: center; }
+  .curr-plan-ab { display: flex; gap: 3px; white-space: nowrap; }
+  .curr-plan-break { background: var(--chip-bg); font-weight: 700; }
+  .curr-plan-move .curr-plan-n { font-weight: 700; color: #8e24aa; }
+  .curr-plan-cont, .curr-plan-note { font-size: 0.72rem; color: var(--ink-faint); }
   .curr-guide-chip { background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 1px 9px; font-weight: 700; }
   .curr-guide-hint { font-weight: 400; color: var(--ink-soft); }
   .curr-guide-text { color: var(--ink); }

@@ -562,12 +562,23 @@ def public_teaching_guide(region):
               for m in guide["methods"]}
     mats = guide.get("materialsI18n", {})
 
-    def entry(u):
-        return {"methods": [labels[i] for i in u["methods"]], "materials": [i18n(x, mats.get(x)) for x in u["studentMaterials"]]}
+    vi_text = guide.get("viText", {})
 
+    def entry(u):
+        out = {"methods": [labels[i] for i in u["methods"]], "materials": [i18n(x, mats.get(x)) for x in u["studentMaterials"]]}
+        # The class timetable: [name, minutes, minutes of instructor A (null = break), posture stand/sit/move/flex/rest, Vietnamese name or null]
+        if u.get("timePlan") and all(len(p) >= 5 for p in u["timePlan"]):
+            out["plan"] = [[p[0], p[1], p[2], p[4], vi_text.get(p[0])] for p in u["timePlan"]]
+        return out
+
+    ins = guide.get("instructors") or {}
+    structure = guide.get("classStructure") or {}
     return {
         "preliminary": entry(guide["preliminary"]) if guide.get("preliminary") else None,
         "units": {str(u["unit"]): entry(u) for u in guide["units"]},
+        "instructors": {k: {"label": ins[k]["label"], "short": ins[k].get("short")} for k in ("A", "B") if k in ins} or None,
+        "structure": {"firstBlock": structure.get("firstBlock"), "break": structure.get("break"), "postures": structure.get("postures"),
+                      "note": structure.get("note")} if structure else None,
     }
 
 

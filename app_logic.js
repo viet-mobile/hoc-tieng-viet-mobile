@@ -6733,6 +6733,51 @@
     if (unit === "preliminary") return JEONJU_TEACHING_GUIDE.preliminary || null;
     return (JEONJU_TEACHING_GUIDE.units || {})[String(unit)] || null;
   }
+  // The class timetable of a unit (regional_admin/teaching_guide.json timePlan): when each part is, whether the students stand, sit or
+  // walk around talking with each other, and how many minutes instructor A and instructor B teach. Content names stay Korean
+  // (Vietnamese where the guide has a translation); only the labels follow the UI language.
+  var COURSE_PLAN_LABELS = {
+    title: { ko: "수업 시간표", vi: "Thời khóa biểu buổi học", en: "Class timetable" },
+    minutes: { ko: "분", vi: " phút", en: " min" },
+    brk: { ko: "휴식", vi: "Nghỉ giải lao", en: "Break" },
+    cont: { ko: "(이어서)", vi: "(tiếp)", en: "(continued)" }
+  };
+  var COURSE_PLAN_ICON = { stand: "\uD83E\uDDCD", sit: "\uD83E\uDE91", move: "\uD83D\uDEB6", flex: "\u23F3", rest: "\u2615" };
+  function courseClassPlanHtml(g) {
+    if (!g || !g.plan || !g.plan.length || typeof JEONJU_TEACHING_GUIDE === "undefined" || !JEONJU_TEACHING_GUIDE) return "";
+    function gt(x) { return !x ? "" : typeof x === "string" ? x : (x[currentLang] || x.en || x.ko || ""); }
+    var ins = JEONJU_TEACHING_GUIDE.instructors || null, st = JEONJU_TEACHING_GUIDE.structure || {}, posts = st.postures || {};
+    var min = gt(COURSE_PLAN_LABELS.minutes);
+    var ta = 0, tb = 0, brk = 0, clock = 0, by = {};
+    var rows = g.plan.map(function (p) {
+      var start = clock; clock += p[1];
+      by[p[3]] = (by[p[3]] || 0) + p[1];
+      var name = p[0], cont = false;
+      if (/ \(이어서\)$/.test(name)) { name = name.replace(/ \(이어서\)$/, ""); cont = true; }
+      var shown = (currentLang === "vi" && p[4]) ? p[4] : name;
+      if (currentLang === "vi" && !p[4] && cont) shown = name;
+      if (p[2] === null) {
+        brk += p[1];
+        return '<div class="curr-plan-row curr-plan-break"><span class="curr-plan-t">' + start + '\u2013' + clock + '</span><span class="curr-plan-p">' + COURSE_PLAN_ICON.rest + '</span><span class="curr-plan-n">' + escapeHtml(gt(COURSE_PLAN_LABELS.brk)) + '</span><span class="curr-plan-ab">' + p[1] + escapeHtml(min) + '</span></div>';
+      }
+      var a = p[2], b = p[1] - a;
+      ta += a; tb += b;
+      var plabel = gt(posts[p[3]]);
+      return '<div class="curr-plan-row curr-plan-' + escapeAttr(p[3]) + '"><span class="curr-plan-t">' + start + '\u2013' + clock + '</span>' +
+        '<span class="curr-plan-p" title="' + escapeAttr(plabel) + '" aria-label="' + escapeAttr(plabel) + '">' + (COURSE_PLAN_ICON[p[3]] || "") + '</span>' +
+        '<span class="curr-plan-n">' + escapeHtml(shown) + (cont ? ' <span class="curr-plan-cont">' + escapeHtml(gt(COURSE_PLAN_LABELS.cont)) + '</span>' : '') + '</span>' +
+        '<span class="curr-plan-ab">' + (a ? '<b class="curr-plan-a">A ' + a + '</b>' : '') + (b ? '<b class="curr-plan-b">B ' + b + '</b>' : '') + '</span></div>';
+    }).join("");
+    var hasIns = ins && ins.A && ins.B;
+    var who = hasIns ? '<b class="curr-plan-a">' + escapeHtml(gt(ins.A.label)) + ' ' + (ta + brk / 2) + escapeHtml(min) + '</b> <b class="curr-plan-b">' + escapeHtml(gt(ins.B.label)) + ' ' + (tb + brk / 2) + escapeHtml(min) + '</b>' : '';
+    var legend = ["stand", "sit", "move"].filter(function (k) { return by[k]; }).map(function (k) {
+      return '<span class="curr-plan-chip curr-plan-chip-' + k + '">' + COURSE_PLAN_ICON[k] + ' ' + escapeHtml(gt(posts[k])) + ' ' + by[k] + escapeHtml(min) + '</span>';
+    }).join(" ");
+    var roles = hasIns ? '<div class="curr-plan-roles"><b class="curr-plan-a">A</b> ' + escapeHtml(gt(ins.A.short)) + ' \u00B7 <b class="curr-plan-b">B</b> ' + escapeHtml(gt(ins.B.short)) + '</div>' : '';
+    return '<details class="curr-plan"><summary><span class="curr-plan-title">' + escapeHtml(gt(COURSE_PLAN_LABELS.title)) + '</span> ' + who + '</summary>' +
+      '<div class="curr-plan-body">' + (legend ? '<div class="curr-plan-legend">' + legend + '</div>' : '') + roles + rows +
+      (st.note ? '<p class="curr-plan-note">' + escapeHtml(gt(st.note)) + '</p>' : '') + '</div></details>';
+  }
   function courseGuideHtml(unit) {
     var g = courseGuideEntry(unit);
     if (!g) return "";
@@ -6742,8 +6787,9 @@
       var hint = gt(m.hint);
       return '<span class="curr-guide-chip">' + escapeHtml(gt(m.label)) + (hint ? '<span class="curr-guide-hint"> · ' + escapeHtml(hint) + '</span>' : '') + '</span>';
     }).join("");
-    if (!methods && !(g.materials || []).length) return "";
-    return '<div class="curr-guide">' +
+    var plan = courseClassPlanHtml(g);
+    if (!methods && !(g.materials || []).length && !plan) return "";
+    return '<div class="curr-guide">' + plan +
       (methods ? '<div class="curr-guide-row"><span class="curr-guide-label">' + escapeHtml(T(COURSE_GUIDE_LABELS.methods)) + '</span><div class="curr-guide-chips">' + methods + '</div></div>' : '') +
       ((g.materials || []).length ? '<div class="curr-guide-row"><span class="curr-guide-label">' + escapeHtml(T(COURSE_GUIDE_LABELS.materials)) + '</span><span class="curr-guide-text">' + escapeHtml(g.materials.map(gt).join(", ")) + '</span></div>' : '') +
       '</div>';
