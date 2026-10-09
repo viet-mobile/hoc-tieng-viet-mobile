@@ -321,6 +321,9 @@ def assemble_site(site):
         with open(worker_path, "w", encoding="utf-8", newline="\n") as fh:
             fh.write(worker_code)
         print(f"[{site}] regional worker artifact:", worker_path, f"({len(worker_code)} bytes)")
+        # What the song editor in /admin starts from: every song as the build shows it (songs_baseline.json, same-origin static file).
+        from regional_admin.songs_baseline import write_songs_baseline
+        print(f"[{site}] songs_baseline.json:", write_songs_baseline(dist_dir), "songs")
     else:
         if worker_path.exists():
             worker_path.unlink()

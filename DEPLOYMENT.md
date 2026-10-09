@@ -68,6 +68,23 @@ in `git ls-files`. Caches, review documents and scratch files the build never re
 dependency. (2026-10-09: a push whose build read three untracked `scripts/data/original_segment_*.json` made the Cloudflare build fail;
 the previous deployment kept serving, so there was no outage. This gate reproduces that failure.) Never force-push `multi-cs-hu`.
 
+## Song editor (admin SECTION G) -- database migration
+
+The /admin tab **SECTION G -- 노래 편집·게시** (jeonju and ulsan only) stores song edits in D1 (`song_edits`, `song_history`,
+`song_site_state`; `regional_admin/schema.sql`, `regional_admin/migrations/0002_song_edits.sql`). A production D1 that was created
+before this feature needs the migration ONCE per region database:
+
+```
+npx wrangler d1 execute <DB_NAME> --remote --file regional_admin/migrations/0002_song_edits.sql
+```
+
+The migration only creates tables (`CREATE TABLE IF NOT EXISTS`), so it is safe to run twice and before or after the deploy. Until it
+has run, the public site simply shows the build's songs (`/api/regional/songs` answers "nothing published") and the song tab of /admin
+reports an error; nothing else is affected. Published edits are applied by the public page at run time (no redeploy); the build's own
+song data (`songs_data.js`, the `jw_*_songs_ko_vi.json` files) is never modified by the editor. `songs_baseline.json` (what the editor
+starts from) is generated into `dist/jeonju` and `dist/ulsan` by `assemble_app.py`; GENERAL and JW carry no editor, no baseline and no
+song-edit code.
+
 ## Release tooling prerequisites
 
 - **Node >= 22.14** for `scripts/release_smoke.py`, `scripts/preprod_verify.py` and the `tests/*.js` browser tests

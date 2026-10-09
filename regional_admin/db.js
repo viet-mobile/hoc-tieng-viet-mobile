@@ -19,6 +19,7 @@
  */
 
 const scheduleEngine = require('./schedule_engine');
+const songRules = require('./song_rules');
 const distributionEngine = require('./distribution_engine');
 
 const DAY_NAMES = ['월', '화', '수', '목', '금'];
@@ -1043,6 +1044,264 @@ async function restoreAuditSnapshot(db, regionId, logId, user) {
   return { success: true, restoredAction: log.action };
 }
 
+/* ---------------- songs (SECTION G): drafts, publishing, history ---------------- */
+/*
+ * song_edits holds, per song, a DRAFT (the working copy) and the PUBLISHED copy (what the public site applies over the build's data at
+ * run time). Every change of a row bumps `version`; saving with a stale `baseVersion` is refused (409), so two open editors cannot
+ * silently overwrite each other. Each write is ONE db.batch(): the row, its history entry, the site revision (publish/unpublish) and the
+ * audit-log entry succeed or fail together.
+ */
+
+function songKeyOrThrow(songKeyStr) {
+  const parsed = songRules.parseSongKey(songKeyStr);
+  if (!parsed) throw new ValidationError('노래 주소가 올바르지 않습니다.');
+  return parsed;
+}
+
+function songEditOf(text) { return parseJson(text, null); }
+
+function songSummary(edit) {
+  if (!edit) return null;
+  const titles = edit.titles || {};
+  return { title: titles.ko || titles.vi || '', langs: Object.keys(edit.langs || {}) };
+}
+
+function songHistoryStatement(db, regionId, songKeyStr, action, data, user) {
+  return db.prepare(
+    `INSERT INTO song_history (region_id, song_key, action, data, username) VALUES (?, ?, ?, ?, ?)`
+  ).bind(regionId, songKeyStr, action, data === null ? null : (typeof data === 'string' ? data : JSON.stringify(data)), user ? user.username : 'system');
+}
+
+function songRevisionStatement(db, regionId) {
+  return db.prepare(
+    `INSERT INTO song_site_state (region_id, revision) VALUES (?, 1)
+     ON CONFLICT(region_id) DO UPDATE SET revision = revision + 1`
+  ).bind(regionId);
+}
+
+async function songRow(db, regionId, songKeyStr) {
+  return db.prepare(
+    `SELECT song_key, kind, is_new, draft, draft_by, draft_at, published, published_by, published_at, version
+       FROM song_edits WHERE region_id = ? AND song_key = ?`
+  ).bind(regionId, songKeyStr).first();
+}
+
+function songRowOut(row, history) {
+  return {
+    songKey: row.song_key, kind: row.kind, isNew: !!row.is_new, version: row.version,
+    draft: songEditOf(row.draft), draftBy: row.draft_by, draftAt: row.draft_at,
+    published: songEditOf(row.published), publishedBy: row.published_by, publishedAt: row.published_at,
+    history: history || undefined,
+  };
+}
+
+async function getSongRevision(db, regionId) {
+  try {
+    const row = await db.prepare('SELECT revision FROM song_site_state WHERE region_id = ?').bind(regionId).first();
+    return row ? row.revision : 0;
+  } catch (e) { return 0; }   // the migration has not been applied yet: nothing is published
+}
+
+/** One line per edited song (no bodies). */
+async function listSongEdits(db, regionId) {
+  const rows = (await db.prepare(
+    `SELECT song_key, kind, is_new, draft, published, draft_by, draft_at, published_by, published_at, version
+       FROM song_edits WHERE region_id = ? ORDER BY kind, song_key`
+  ).bind(regionId).all()).results || [];
+  return {
+    revision: await getSongRevision(db, regionId),
+    songs: rows.map(r => {
+      const draft = songEditOf(r.draft), published = songEditOf(r.published);
+      return {
+        songKey: r.song_key, kind: r.kind, isNew: !!r.is_new, version: r.version,
+        hasDraft: !!draft, hasPublished: !!published,
+        unpublishedChanges: !!draft && r.draft !== r.published,
+        title: (songSummary(draft || published) || {}).title || '',
+        draftBy: r.draft_by, draftAt: r.draft_at, publishedBy: r.published_by, publishedAt: r.published_at,
+      };
+    }),
+  };
+}
+
+async function getSongEdit(db, regionId, songKeyStr) {
+  songKeyOrThrow(songKeyStr);
+  const row = await songRow(db, regionId, songKeyStr);
+  const history = (await db.prepare(
+    `SELECT id, action, data, username, created_at FROM song_history WHERE region_id = ? AND song_key = ? ORDER BY id DESC LIMIT 30`
+  ).bind(regionId, songKeyStr).all()).results || [];
+  const hist = history.map(h => ({ id: h.id, action: h.action, username: h.username, createdAt: h.created_at, restorable: !!h.data, summary: songSummary(songEditOf(h.data)) }));
+  if (!row) return { songKey: songKeyStr, kind: songKeyOrThrow(songKeyStr).kind, isNew: false, version: 0, draft: null, published: null, history: hist };
+  return songRowOut(row, hist);
+}
+
+/** Saves the working copy. `baseVersion` = the version the editor loaded (0 for a song that has no row yet). */
+async function saveSongDraft(db, regionId, songKeyStr, input, baseVersion, user) {
+  const parsed = songKeyOrThrow(songKeyStr);
+  let edit;
+  try { edit = songRules.normalizeSongEdit(input, parsed); }
+  catch (e) { if (e && e.songEditError) throw new ValidationError(e.message); throw e; }
+  const row = await songRow(db, regionId, songKeyStr);
+  const current = row ? row.version : 0;
+  if (baseVersion !== undefined && baseVersion !== null && Number(baseVersion) !== current) {
+    throw new ValidationError('다른 곳에서 이 노래가 먼저 저장되었습니다. 새로고침한 뒤 다시 수정해 주세요.', 409);
+  }
+  const json = JSON.stringify(edit);
+  const statements = [
+    db.prepare(
+      `INSERT INTO song_edits (region_id, song_key, kind, is_new, draft, draft_by, draft_at, version)
+       VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, 1)
+       ON CONFLICT(region_id, song_key) DO UPDATE SET draft = excluded.draft, draft_by = excluded.draft_by, draft_at = CURRENT_TIMESTAMP,
+         is_new = excluded.is_new, version = song_edits.version + 1`
+    ).bind(regionId, songKeyStr, parsed.kind, edit.isNew ? 1 : 0, json, user ? user.username : 'system'),
+    songHistoryStatement(db, regionId, songKeyStr, 'draft', json, user),
+    auditStatement(db, regionId, user, 'song_save_draft', { songKey: songKeyStr, langs: Object.keys(edit.langs), changes: songRules.diffEdits(songEditOf(row ? (row.draft || row.published) : null), edit).slice(0, 200) }),
+  ];
+  await runAtomic(db, statements);
+  return songRowOut(await songRow(db, regionId, songKeyStr));
+}
+
+/** Makes the draft the published copy (the public site applies it from now on). */
+async function publishSong(db, regionId, songKeyStr, baseVersion, user) {
+  songKeyOrThrow(songKeyStr);
+  const row = await songRow(db, regionId, songKeyStr);
+  if (!row || !row.draft) throw new ValidationError('게시할 초안이 없습니다.');
+  if (baseVersion !== undefined && baseVersion !== null && Number(baseVersion) !== row.version) {
+    throw new ValidationError('다른 곳에서 이 노래가 먼저 저장되었습니다. 새로고침한 뒤 다시 확인해 주세요.', 409);
+  }
+  await runAtomic(db, [
+    db.prepare(
+      `UPDATE song_edits SET published = draft, published_by = ?, published_at = CURRENT_TIMESTAMP, version = version + 1
+        WHERE region_id = ? AND song_key = ?`
+    ).bind(user ? user.username : 'system', regionId, songKeyStr),
+    songRevisionStatement(db, regionId),
+    songHistoryStatement(db, regionId, songKeyStr, 'publish', row.draft, user),
+    auditStatement(db, regionId, user, 'song_publish', { songKey: songKeyStr }),
+  ]);
+  return songRowOut(await songRow(db, regionId, songKeyStr));
+}
+
+/** Publishes every draft that differs from its published copy; returns the song keys. */
+async function publishAllSongs(db, regionId, user) {
+  const rows = (await db.prepare(
+    `SELECT song_key, draft FROM song_edits WHERE region_id = ? AND draft IS NOT NULL AND (published IS NULL OR published <> draft) ORDER BY song_key`
+  ).bind(regionId).all()).results || [];
+  if (!rows.length) return { published: [] };
+  const statements = [];
+  rows.forEach(r => {
+    statements.push(db.prepare(
+      `UPDATE song_edits SET published = draft, published_by = ?, published_at = CURRENT_TIMESTAMP, version = version + 1 WHERE region_id = ? AND song_key = ?`
+    ).bind(user ? user.username : 'system', regionId, r.song_key));
+    statements.push(songHistoryStatement(db, regionId, r.song_key, 'publish', r.draft, user));
+  });
+  statements.push(songRevisionStatement(db, regionId));
+  statements.push(auditStatement(db, regionId, user, 'song_publish_all', { songKeys: rows.map(r => r.song_key) }));
+  await runAtomic(db, statements);
+  return { published: rows.map(r => r.song_key) };
+}
+
+/** The song goes back to the build's own data (a new song disappears). The draft stays. */
+async function unpublishSong(db, regionId, songKeyStr, user) {
+  songKeyOrThrow(songKeyStr);
+  const row = await songRow(db, regionId, songKeyStr);
+  if (!row || !row.published) throw new ValidationError('게시된 내용이 없습니다.');
+  await runAtomic(db, [
+    db.prepare(
+      `UPDATE song_edits SET published = NULL, published_by = NULL, published_at = NULL, version = version + 1 WHERE region_id = ? AND song_key = ?`
+    ).bind(regionId, songKeyStr),
+    songRevisionStatement(db, regionId),
+    songHistoryStatement(db, regionId, songKeyStr, 'unpublish', null, user),
+    auditStatement(db, regionId, user, 'song_unpublish', { songKey: songKeyStr }),
+  ]);
+  return songRowOut(await songRow(db, regionId, songKeyStr));
+}
+
+/** Drops the working copy. A row with neither a draft nor a published copy is deleted. */
+async function discardSongDraft(db, regionId, songKeyStr, user) {
+  songKeyOrThrow(songKeyStr);
+  const row = await songRow(db, regionId, songKeyStr);
+  if (!row || !row.draft) throw new ValidationError('버릴 초안이 없습니다.');
+  const statements = [
+    songHistoryStatement(db, regionId, songKeyStr, 'discard', null, user),
+    auditStatement(db, regionId, user, 'song_discard_draft', { songKey: songKeyStr }),
+  ];
+  if (row.published) {
+    statements.unshift(db.prepare(`UPDATE song_edits SET draft = NULL, draft_by = NULL, draft_at = NULL, version = version + 1 WHERE region_id = ? AND song_key = ?`).bind(regionId, songKeyStr));
+  } else {
+    statements.unshift(db.prepare(`DELETE FROM song_edits WHERE region_id = ? AND song_key = ?`).bind(regionId, songKeyStr));
+  }
+  await runAtomic(db, statements);
+  const after = await songRow(db, regionId, songKeyStr);
+  return after ? songRowOut(after) : { songKey: songKeyStr, version: 0, draft: null, published: null, deleted: true };
+}
+
+/** An earlier saved / published copy becomes the working copy again (it is NOT published by this). */
+async function restoreSongVersion(db, regionId, songKeyStr, historyId, user) {
+  const parsed = songKeyOrThrow(songKeyStr);
+  const h = await db.prepare(
+    `SELECT id, data FROM song_history WHERE id = ? AND region_id = ? AND song_key = ?`
+  ).bind(historyId, regionId, songKeyStr).first();
+  if (!h || !h.data) throw new ValidationError('복원할 수 있는 이력이 아닙니다.', 404);
+  const edit = songRules.normalizeSongEdit(songEditOf(h.data), parsed);
+  const json = JSON.stringify(edit);
+  await runAtomic(db, [
+    db.prepare(
+      `INSERT INTO song_edits (region_id, song_key, kind, is_new, draft, draft_by, draft_at, version)
+       VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, 1)
+       ON CONFLICT(region_id, song_key) DO UPDATE SET draft = excluded.draft, draft_by = excluded.draft_by, draft_at = CURRENT_TIMESTAMP,
+         is_new = excluded.is_new, version = song_edits.version + 1`
+    ).bind(regionId, songKeyStr, parsed.kind, edit.isNew ? 1 : 0, json, user ? user.username : 'system'),
+    songHistoryStatement(db, regionId, songKeyStr, 'restore', json, user),
+    auditStatement(db, regionId, user, 'song_restore', { songKey: songKeyStr, historyId }),
+  ]);
+  return songRowOut(await songRow(db, regionId, songKeyStr));
+}
+
+/**
+ * What the public site reads: every PUBLISHED edit (and, for an admin who asks for it, the drafts over them). Never throws: a database
+ * without the song tables yet (migration pending) answers "nothing published".
+ */
+async function getPublicSongs(db, regionId, { includeDrafts = false } = {}) {
+  try {
+    const rows = (await db.prepare(
+      `SELECT song_key, draft, published FROM song_edits WHERE region_id = ? AND (published IS NOT NULL OR draft IS NOT NULL)`
+    ).bind(regionId).all()).results || [];
+    const songs = {};
+    rows.forEach(r => {
+      const text = includeDrafts && r.draft ? r.draft : r.published;
+      const edit = songEditOf(text);
+      if (edit) songs[r.song_key] = edit;
+    });
+    return { revision: await getSongRevision(db, regionId), songs, drafts: !!includeDrafts };
+  } catch (e) {
+    return { revision: 0, songs: {}, drafts: false };
+  }
+}
+
+/**
+ * The official markers of a jw.org recording (the editor's "공식 마커 불러오기"): the file URL and the marker list of
+ * GETPUBMEDIALINKS for one publication / track / language. The host is fixed; only [a-z] publication codes, digits and a
+ * language code are accepted, so this cannot be pointed anywhere else.
+ */
+async function fetchOfficialSongMarkers(params) {
+  const pub = String(params.get('pub') || ''), track = String(params.get('track') || ''), lang = String(params.get('lang') || '');
+  if (!/^[a-z]{2,10}$/.test(pub) || !/^\d{1,4}$/.test(track) || !/^[A-Z]{1,4}$/.test(lang)) throw new ValidationError('출판물·트랙·언어 코드가 올바르지 않습니다.');
+  let res;
+  try {
+    res = await fetch(`https://b.jw-cdn.org/apis/pub-media/GETPUBMEDIALINKS?output=json&fileformat=MP3&alllangs=0&pub=${pub}&track=${track}&langwritten=${lang}`, { headers: { Accept: 'application/json' } });
+  } catch (e) { throw new ValidationError('jw.org에 연결하지 못했습니다.', 502); }
+  if (res.status === 404) throw new ValidationError('jw.org에 이 언어의 음원이 없습니다.', 404);
+  if (!res.ok) throw new ValidationError('jw.org가 오류를 돌려주었습니다(' + res.status + ').', 502);
+  const json = await res.json();
+  const files = json && json.files && json.files[lang] && json.files[lang].MP3;
+  const f = files && files.filter(x => x.pub === pub && String(x.track) === track)[0];
+  const fileUrl = f && f.file && f.file.url;
+  if (!fileUrl || !songRules.isJwCdnUrl(fileUrl)) throw new ValidationError('이 음원을 찾지 못했습니다.', 404);
+  const toMs = t => { const m = /^(\d+):(\d+):(\d+(?:\.\d+)?)$/.exec(String(t || '')); return m ? Math.round((+m[1] * 3600 + +m[2] * 60 + parseFloat(m[3])) * 1000) : null; };
+  const markers = ((f.markers && f.markers.markers) || []).map((m, i) => ({ index: i, pid: parseInt(m.mepsParagraphId, 10), s: toMs(m.startTime), d: toMs(m.duration) }))
+    .filter(m => m.s !== null && m.d !== null);
+  return { url: fileUrl, duration: f.duration || null, mediaKey: `pub-${pub}_${track}_AUDIO`, markers };
+}
+
 module.exports = {
   ValidationError,
   DAY_NAMES,
@@ -1066,4 +1325,14 @@ module.exports = {
   getAuditLogs,
   restoreAuditSnapshot,
   logAudit,
+  listSongEdits,
+  getSongEdit,
+  saveSongDraft,
+  publishSong,
+  publishAllSongs,
+  unpublishSong,
+  discardSongDraft,
+  restoreSongVersion,
+  getPublicSongs,
+  fetchOfficialSongMarkers,
 };

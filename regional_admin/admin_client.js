@@ -389,7 +389,8 @@
     ['cancellations', 'SECTION B — 휴강 관리'],
     ['curriculum', 'SECTION C — 원본 커리큘럼'],
     ['plan', 'SECTION D — 회차 배정'],
-    ['audit', 'SECTION E — 변경 이력 & 복구']
+    ['audit', 'SECTION E — 변경 이력 & 복구'],
+    ['songs', 'SECTION G — 노래 편집·게시']
   ];
   var GUIDE = boot.guide || null;
   if (GUIDE) TABS.push(['guide', 'SECTION F — 교사용 지도서']);
@@ -411,6 +412,7 @@
     else if (state.tab === 'curriculum') renderCurriculum(c);
     else if (state.tab === 'plan') renderPlan(c);
     else if (state.tab === 'audit') renderAudit(c);
+    else if (state.tab === 'songs') window.SongsAdmin.render(c, { api: api, esc: esc, toast: toast });
     else if (state.tab === 'guide') renderGuide(c);
   }
 

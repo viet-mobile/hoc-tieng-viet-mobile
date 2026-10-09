@@ -45,6 +45,8 @@ STEPS = [
     ("daily course landing: injected Tuesday 2026-10-06 -> week 2026/10/03", [["node", "tests/test_course_ux.js", "--smoke"]]),
     ("Watchtower read-all, title first", [["node", "tests/test_wt_listen_title.js"]]),
     ("regional admin basics", [["node", "tests/test_regional_admin.js"]]),
+    ("song editor (SECTION G): rules, drafts, publish, history, markers proxy", [["node", "tests/test_song_admin.js"]]),
+    ("song editor in the browser: edit, publish, public applies, unpublish", [["node", "tests/test_song_admin_e2e.js"]]),
 ]
 
 

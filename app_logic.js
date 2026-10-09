@@ -9868,6 +9868,8 @@ function verifyDistribution(units, dist, pins) {
   // no lyrics for at all (none today: 164 in Japanese has its official lyrics since 2026-10-05). Such a song would show empty
   // target rows and titles, like T(): "missing learning translations stay empty in every non-Korean language", never Korean
   // under another language's name. Returns the language key to fall back to.
+  // 왕국 노래 rows an admin edit rebuilt carry the index of the build's row their meaning note belongs to (-1: none)
+  function songEditMeaningIdx(row, idx) { return row && row._meaning !== undefined ? row._meaning : idx; }
   function songKoFallback(song) {
     return song.lines.some(function (l) { return (l[currentLang] || "").trim(); }) ? "ko" : currentLang;
   }
@@ -10285,6 +10287,7 @@ function verifyDistribution(units, dist, pins) {
   }
   var songSegInfo = {};      // "kind|key|lang" -> { src, mediaKey, url, marks } once resolved; marks null (with .reason) = no button; null = no recording
   var songSegAsk = {};
+  var songEditTimings = {};  // "kind|key|lang" -> { lines, times, url, mediaKey }: line times a published admin edit gives a language (regional sites; {} elsewhere)
   function songSegFetch(pub, track, code) {
     return fetch(SONG_SEG_API + "&pub=" + pub + "&track=" + track + "&langwritten=" + code, { credentials: "omit" })
       .then(function (res) { if (res.status === 404) return null; if (!res.ok) throw new Error("media request failed"); return res.json(); })
@@ -10460,6 +10463,7 @@ function verifyDistribution(units, dist, pins) {
     return aligned;
   }
   function songSegPickTiming(info, rowTexts, kind, key, lang) {
+    if (info && info.admin) return info;   // an admin edit's own times are final
     if (kind === "original") {
       info = songSegOwnParagraphTiming(info, rowTexts);
       info = songSegApplyOriginalManual(info, rowTexts, key, lang);
@@ -10554,6 +10558,18 @@ function verifyDistribution(units, dist, pins) {
   function songSegResolve(kind, key, lang) {
     var id = kind + "|" + key + "|" + lang;
     if (songSegAsk[id]) return songSegAsk[id];
+    var edited = songEditTimings[id];
+    if (edited) {   // a published admin edit: its own recording and its own line times, nothing of the build's markers
+      var sung = edited.lines.filter(songSegSingable);
+      var editMarks = sung.map(function (t, i) {
+        var tm = edited.times[i];
+        if (!tm) return kind === "kingdom" ? { s: 0, e: 0, m: i, pid: i, enabled: false, text: "" } : null;
+        return { s: tm.s, e: tm.e, m: i, pid: i, enabled: true, text: songSegText(t) };
+      });
+      var editInfo = { src: "admin", mediaKey: edited.mediaKey || "", url: edited.url, mp3Url: edited.url, marks: editMarks, reason: "", nonVocal: 0, admin: true, timing: "admin" };
+      songSegInfo[id] = editInfo;
+      return (songSegAsk[id] = Promise.resolve(editInfo));
+    }
     var manual = kind === "kingdom" && typeof KINGDOM_VOCAL_SEGMENTS !== "undefined" && KINGDOM_VOCAL_SEGMENTS[key + "|" + lang];
     var viChildren = kind === "kingdom" && typeof KINGDOM_VOCAL_SEGMENTS !== "undefined" && KINGDOM_VOCAL_SEGMENTS[key + "|vi"];
     var shareChildren = lang !== "vi" && viChildren && viChildren.src === "pksjj";
@@ -10815,7 +10831,7 @@ function verifyDistribution(units, dist, pins) {
         // user-authorized copy (SONG_TIMING_COPY): this language's own recording, at the other language's line times (the same medium: the
         // video when those times are the video's cues, else the MP3); only the listed lines, or every line
         var copy = typeof SONG_TIMING_COPY !== "undefined" && SONG_TIMING_COPY[kind + "|" + key + "|" + lang];
-        if (copy && copy.from === ref) {
+        if (copy && copy.from === ref && !(info && info.admin)) {
           var copied = songSegCopyTiming(info, refInfo, rows.length, rowCount[ref], copy);
           if (copied !== info) {
             info = copied;
@@ -10841,7 +10857,7 @@ function verifyDistribution(units, dist, pins) {
           songSegLog(kind + " " + key + " " + lang + " " + info.src + ": no buttons (" + (info.reason || (info.marks.length + " sung markers, " + rows.length + " lines")) + ")");
           return;
         }
-        if (kind === "kingdom" && info.marks.some(function (mark, i) {
+        if (kind === "kingdom" && !info.admin && info.marks.some(function (mark, i) {
           return mark.text !== songSegText(rows[i].querySelector(L[2]).textContent);
         })) { songSegLog(kind + " " + key + " " + lang + ": official paragraph text differs from rendered lyric"); return; }
         var id = kind + "|" + key + "|" + lang, srcLabel = info.src === "pksjj" ? "CHILDREN" : "VOCALS";
@@ -11119,7 +11135,7 @@ function verifyDistribution(units, dist, pins) {
       // regular lyric line), but a real, existing SONG_MEANINGS entry attached to this index
       // must not become silently unreachable just because its line is a marker.
       if (isSongSectionMarker(vi)) {
-        var markerMeaning = songSanitize((meaningsMap[String(idx)] && meaningsMap[String(idx)][currentLang]) || "");
+        var markerMeaning = songSanitize((meaningsMap[String(songEditMeaningIdx(l, idx))] && meaningsMap[String(songEditMeaningIdx(l, idx))][currentLang]) || "");
         lyricsHtml += '<div class="lyric-section-marker">' +
           '<div class="lyric-marker-vi vn">' + escapeHtml(vi) + '</div>' +
           (target ? '<div class="lyric-marker-target">' + escapeHtml(target) + '</div>' : '') +
@@ -11128,7 +11144,7 @@ function verifyDistribution(units, dist, pins) {
         return;
       }
 
-      var lineMeaning = songSanitize((meaningsMap[String(idx)] && meaningsMap[String(idx)][currentLang]) || "");
+      var lineMeaning = songSanitize((meaningsMap[String(songEditMeaningIdx(l, idx))] && meaningsMap[String(songEditMeaningIdx(l, idx))][currentLang]) || "");
       if (!l[currentLang]) segTargetOwn = false;   // this row shows another language's line (the Korean fallback): no target music then
 
       songLines.push(target ? [vi, target] : vi);
@@ -15685,7 +15701,109 @@ function verifyDistribution(units, dist, pins) {
           }
         })
         .catch(function () {});
+      songEditsFetch();
     }
+  }
+  /* ---- published song edits (admin SECTION G): applied over the build's song data at run time ----
+     /api/regional/songs answers the PUBLISHED edits (with ?songdraft=1 in the page address and an admin session: the drafts too, for the
+     editor's preview). Unpublishing an edit removes it from the answer and the song returns to the build's own data. Failure changes nothing. */
+  var songEditBackup = {}, songEditApplied = false;
+  var SONG_EDIT_LANGS = ["vi", "cs", "zh_cn", "zh", "en", "fr", "de", "hu", "id", "ja", "ko", "pl"];
+  function songEditClone(v) { return JSON.parse(JSON.stringify(v)); }
+  function songEditTarget(kind) { return kind === "kingdom" ? ((typeof SONGS_DATA !== "undefined" && SONGS_DATA) || null) : (kind === "original" ? songKindData("original") : songKindData("kids")); }
+  function songEditFind(arr, kind, key) {
+    for (var i = 0; i < arr.length; i++) if (kind === "kingdom" ? String(arr[i].number) === key : String(arr[i].id) === key) return i;
+    return -1;
+  }
+  function songEditsRevert() {
+    Object.keys(songEditBackup).forEach(function (sk) {
+      var kind = sk.split(":")[0], key = sk.slice(kind.length + 1), arr = songEditTarget(kind), at = arr ? songEditFind(arr, kind, key) : -1, saved = songEditBackup[sk];
+      if (!arr) return;
+      if (saved === null) { if (at >= 0) arr.splice(at, 1); }
+      else if (at >= 0) arr[at] = saved;
+    });
+    songEditBackup = {};
+    Object.keys(songEditTimings).forEach(function (k) { delete songEditTimings[k]; });
+  }
+  function songEditApplyKingdom(entry, edit) {
+    SONG_EDIT_LANGS.forEach(function (lg) {
+      if (edit.titles && edit.titles[lg]) entry.title[lg] = edit.titles[lg];
+      if (edit.scripture && edit.scripture[lg]) { entry.scripture = entry.scripture || {}; entry.scripture[lg] = edit.scripture[lg]; }
+    });
+    var vi = edit.langs.vi && edit.langs.vi.lines;
+    if (!vi) return;
+    var orig = [];
+    entry.lines.forEach(function (l, i) { if ((l.vi || "").trim()) orig.push({ l: l, i: i }); });
+    var same = orig.length === vi.length;
+    entry.lines = vi.map(function (t, r) {
+      var row = { _meaning: same ? orig[r].i : -1 };
+      SONG_EDIT_LANGS.forEach(function (lg) {
+        var ov = edit.langs[lg] && edit.langs[lg].lines;
+        if (ov) row[lg] = ov[r]; else if (same && orig[r].l[lg]) row[lg] = orig[r].l[lg];
+      });
+      row.vi = t;
+      return row;
+    });
+  }
+  function songEditApplyCollection(entry, edit) {
+    entry.languages = entry.languages || {};
+    SONG_EDIT_LANGS.forEach(function (lg) {
+      var title = edit.titles && edit.titles[lg], e = edit.langs[lg], d = entry.languages[lg];
+      if (title && !(e && e.lines)) { if (d) d.title = title; else entry.languages[lg] = { title: title, lines: [], url: "", available: false }; }
+      if (e && e.lines) {
+        entry.languages[lg] = { title: title || (d && d.title) || "", lines: e.lines.slice(), url: "", available: true };
+      }
+      if (e && e.link) { entry.media = entry.media || {}; entry.media[lg] = { kind: e.link.kind, mediaKey: e.link.mediaKey }; }
+    });
+  }
+  function songEditsApply(payload) {
+    var songs = payload && payload.songs ? payload.songs : {}, keys = Object.keys(songs);
+    if (!keys.length && !songEditApplied) return;   // nothing published, nothing applied before: the page stays as built
+    songSegStop();
+    songEditsRevert();
+    Object.keys(songSegAsk).forEach(function (k) { delete songSegAsk[k]; });
+    Object.keys(songSegInfo).forEach(function (k) { delete songSegInfo[k]; });
+    keys.forEach(function (sk) {
+      var edit = songs[sk], kind = edit && edit.kind, key = edit && String(edit.key);
+      if (!edit || sk !== kind + ":" + key) return;
+      var arr = songEditTarget(kind);
+      if (!arr) return;
+      var at = songEditFind(arr, kind, key), entry = at >= 0 ? arr[at] : null;
+      if (!entry && !edit.isNew) return;   // an edit of a song this build does not have (and not marked new): ignored
+      songEditBackup[sk] = entry ? songEditClone(entry) : null;
+      if (!entry) {
+        var n = edit.number || parseInt(key.replace(/\D+/g, ""), 10) || 0;
+        entry = kind === "kingdom"
+          ? { number: n, sourceSheet: "", labels: { vi: "BÀI HÁT " + n, ko: n + "번", en: "SONG " + n }, title: {}, scripture: {}, lines: [], reference: {} }
+          : { id: key, track: n, languages: {}, media: {} };
+        arr.push(entry);
+      } else {
+        arr[at] = entry = songEditClone(entry);   // the build's own object stays untouched in the backup
+      }
+      if (kind === "kingdom") songEditApplyKingdom(entry, edit); else songEditApplyCollection(entry, edit);
+      var segKind = kind === "kingdom" ? "kingdom" : (kind === "original" ? "original" : "children");
+      Object.keys(edit.langs || {}).forEach(function (lg) {
+        var e = edit.langs[lg];
+        if (e.times && e.audio && e.audio.url && e.lines) {
+          songEditTimings[segKind + "|" + key + "|" + lg] = { lines: e.lines.slice(), times: e.times, url: e.audio.url, mediaKey: (e.link && e.link.mediaKey) || "" };
+        }
+      });
+    });
+    ["kingdom", "original", "kids"].forEach(function (k) {
+      var a = songEditTarget(k);
+      if (a && a.length > 1) a.sort(function (x, y) { return k === "kingdom" ? x.number - y.number : x.track - y.track; });
+    });
+    Object.keys(songKindIndex).forEach(function (k) { delete songKindIndex[k]; });
+    songEditApplied = keys.length > 0;
+    try { renderCurrSongs(); } catch (eK) { /* the page may not show songs */ }
+    ["original", "kids"].forEach(function (k) { var r = songKindRoot(k); if (r && r.dataset.rendered) renderSongKind(k); });
+  }
+  function songEditsFetch() {
+    var draft = /[?&]songdraft=1(?:&|$)/.test(window.location.search || "");
+    fetch("/api/regional/songs" + (draft ? "?draft=1" : ""), { credentials: draft ? "same-origin" : "omit" })
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (data) { if (data && data.songs) songEditsApply(data); })
+      .catch(function () {});
   }
 /* END REGIONAL-HYDRATION */
 

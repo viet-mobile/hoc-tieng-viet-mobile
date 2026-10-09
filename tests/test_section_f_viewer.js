@@ -340,7 +340,7 @@ const ROUTES = [
       // admin: all six sections
       await login(USERS.jeonju);
       assert.deepStrictEqual(await tabs(), ['SECTION A — 수업 기간', 'SECTION B — 휴강 관리', 'SECTION C — 원본 커리큘럼', 'SECTION D — 회차 배정',
-        'SECTION E — 변경 이력 & 복구', 'SECTION F — 교사용 지도서']);
+        'SECTION E — 변경 이력 & 복구', 'SECTION G — 노래 편집·게시', 'SECTION F — 교사용 지도서']);
       assert(await E(`!!document.getElementById('sett-start')`), 'admin sees SECTION A form');
       await E(`document.querySelector('[data-act="tab"][data-tab="curriculum"]').click()`);
       await sleep(200);

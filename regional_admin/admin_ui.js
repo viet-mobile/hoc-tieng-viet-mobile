@@ -404,6 +404,8 @@ function renderAdminHtml(regionId, regionName, currentUser = null, csrfToken = '
 window.__ADMIN_BOOT = ${boot};
 ${loadSource('schedule_engine')}
 ${loadSource('distribution_engine')}
+${loadSource('song_rules')}
+${loadSource('songs_admin_client')}
 ${loadSource('admin_client')}
 </script>
 </body>

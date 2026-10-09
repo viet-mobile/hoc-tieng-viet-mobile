@@ -19,6 +19,7 @@ _CODE_MODULES = (
     ("./schedule_engine", "schedule_engine.js"),
     ("./distribution_engine", "distribution_engine.js"),
     ("./auth", "auth.js"),
+    ("./song_rules", "song_rules.js"),
     ("./db", "db.js"),
     ("./admin_ui", "admin_ui.js"),
     ("./worker", "worker.js"),
@@ -28,6 +29,8 @@ _CODE_MODULES = (
 _STRING_MODULES = (
     ("./admin_client_source", "admin_client.js"),
     ("./schedule_engine_source", "schedule_engine.js"),
+    ("./song_rules_source", "song_rules.js"),
+    ("./songs_admin_client_source", "songs_admin_client.js"),
     ("./distribution_engine_source", "distribution_engine.js"),
 )
 

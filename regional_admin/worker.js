@@ -51,7 +51,7 @@ const SECURITY_HEADERS = {
   'Referrer-Policy': 'same-origin',
 };
 function adminPageCsp(nonce) {
-  return `default-src 'self'; script-src 'nonce-${nonce}'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'`;
+  return `default-src 'self'; script-src 'nonce-${nonce}'; style-src 'unsafe-inline'; img-src 'self' data:; media-src https://*.jw-cdn.org; connect-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'`;
 }
 
 function jsonResponse(data, status = 200, headers = {}) {
@@ -269,6 +269,22 @@ async function handleRequest(request, env) {
     }
   }
 
+  // 3b. Public song edits (read-only): the PUBLISHED song edits the site applies over its build data. `?draft=1` adds the drafts, but only
+  // for a signed-in admin (the editor's preview); anyone else gets the published copy.
+  if (path === '/api/regional/songs' && method === 'GET') {
+    if (!env.DB) return jsonResponse({ error: 'Database binding missing' }, 500);
+    try {
+      let includeDrafts = false;
+      if (url.searchParams.get('draft') === '1') {
+        const authRes = await authenticateRequest(request, env.DB, REGION_ID, env);
+        includeDrafts = !!(authRes.authorized && authRes.user.role === ROLE_ADMIN);
+      }
+      return jsonResponse(await db.getPublicSongs(env.DB, REGION_ID, { includeDrafts }), 200, { 'Cache-Control': 'no-cache' });
+    } catch (e) {
+      return errorResponse(e);
+    }
+  }
+
   // 4. Admin mutation & query routes (authenticated)
   if (path.startsWith('/api/admin/')) {
     const authRes = await authenticateRequest(request, env.DB, REGION_ID, env);
@@ -345,6 +361,34 @@ async function handleRequest(request, env) {
 
       if (path === '/api/admin/plan/pin' && method === 'PUT') {
         return jsonResponse(await db.setPlanPin(env.DB, REGION_ID, await readJson(request), user));
+      }
+
+      if (path === '/api/admin/song-markers' && method === 'GET') {
+        return jsonResponse(await db.fetchOfficialSongMarkers(url.searchParams));
+      }
+      if (path === '/api/admin/songs' && method === 'GET') {
+        return jsonResponse(await db.listSongEdits(env.DB, REGION_ID));
+      }
+      if (path === '/api/admin/songs/publish-all' && method === 'POST') {
+        return jsonResponse(await db.publishAllSongs(env.DB, REGION_ID, user));
+      }
+      const songMatch = path.match(/^\/api\/admin\/songs\/([^/]+)(?:\/(publish|unpublish|discard|restore))?$/);
+      if (songMatch) {
+        let songKey;
+        try { songKey = decodeURIComponent(songMatch[1]); } catch (e) { songKey = ''; }
+        const action = songMatch[2];
+        if (!action && method === 'GET') return jsonResponse(await db.getSongEdit(env.DB, REGION_ID, songKey));
+        if (!action && method === 'PUT') {
+          const body = await readJson(request);
+          return jsonResponse(await db.saveSongDraft(env.DB, REGION_ID, songKey, body && body.edit, body && body.baseVersion, user));
+        }
+        if (action && method === 'POST') {
+          const body = await readJson(request);
+          if (action === 'publish') return jsonResponse(await db.publishSong(env.DB, REGION_ID, songKey, body && body.baseVersion, user));
+          if (action === 'unpublish') return jsonResponse(await db.unpublishSong(env.DB, REGION_ID, songKey, user));
+          if (action === 'discard') return jsonResponse(await db.discardSongDraft(env.DB, REGION_ID, songKey, user));
+          if (action === 'restore') return jsonResponse(await db.restoreSongVersion(env.DB, REGION_ID, songKey, parseInt(body && body.historyId, 10) || 0, user));
+        }
       }
 
       if (path === '/api/admin/audit' && method === 'GET') {
