@@ -20,7 +20,14 @@
   var JW_CODE = { vi: 'VT', ko: 'KO', en: 'E', ja: 'J', zh: 'CH', zh_cn: 'CHS', fr: 'F', de: 'X', pl: 'P', cs: 'B', hu: 'H', id: 'I' };
   var ACTION_LABEL = { draft: '초안 저장', publish: '게시', unpublish: '게시 취소', discard: '초안 버림', restore: '이전 버전 복원' };
 
-  var ctx = null, root = null;
+  var ctx = null, root = null, VIEW_KEY = 'admin-songs-view';
+  // A reload shows the song screen it was reloaded on (collection, search, the open song); unsaved edits are not kept.
+  function saveView() {
+    try { localStorage.setItem(VIEW_KEY, JSON.stringify({ kind: S.kind, q: S.q, open: S.cur ? { kind: S.cur.kind, key: S.cur.key, lang: S.cur.lang } : null })); } catch (e) { /* no storage */ }
+  }
+  function savedView() {
+    try { return JSON.parse(localStorage.getItem(VIEW_KEY) || 'null'); } catch (e) { return null; }
+  }
   var S = {
     baseline: null, byKey: {}, edits: {}, revision: 0, kind: 'original', q: '', loading: false,
     cur: null,   // the open editor: { songKey, kind, key, isNew, number, titles, scripture, note, langs: {lang: L}, lang, version, published, history, dirty }
@@ -128,11 +135,24 @@
   }
   function render(container, c) {
     ctx = c; root = container;
-    if (!S.baseline && !S.loading && !S.error) { root.innerHTML = '<div class="card">노래 목록을 불러오는 중...</div>'; loadAll().then(draw); return; }
+    if (!S.baseline && !S.loading && !S.error) {
+      root.innerHTML = '<div class="card">노래 목록을 불러오는 중...</div>';
+      var v = savedView();
+      if (v && R.KINDS.indexOf(v.kind) >= 0) { S.kind = v.kind; S.q = typeof v.q === 'string' ? v.q : ''; }
+      loadAll().then(function () {
+        if (v && v.open && R.validKey(v.open.kind, String(v.open.key))) {
+          return openSong(v.open.kind, String(v.open.key), false).then(function () {
+            if (v.open.lang && S.cur.langs[v.open.lang]) S.cur.lang = v.open.lang;
+          }).catch(function () { S.cur = null; });
+        }
+      }).then(draw);
+      return;
+    }
     draw();
   }
   function draw() {
     if (!root || !root.isConnected) return;
+    saveView();
     if (S.error) { root.innerHTML = '<div class="card"><div class="card-title">노래 편집</div><p>' + esc(S.error) + '</p><button type="button" class="btn" data-sg="reload">다시 시도</button></div>'; return; }
     root.innerHTML = S.cur ? editorHtml() : listHtml();
     if (S.cur) loadAudioInto(false);

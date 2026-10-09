@@ -160,6 +160,7 @@ async function startServer(workers) {
     /* ---------- 1. admin: songs tab lists the baseline; open osg-5 ---------- */
     await goto(`http://jeonju.test:${PORT}/admin`);
     await waitFor(`!!document.getElementById('login-form')`, 'login form');
+    await E(`localStorage.removeItem('admin-view'); localStorage.removeItem('admin-songs-view');`);
     await E(`document.getElementById('login-username').value = ${JSON.stringify(USERS.jeonju.username)}; document.getElementById('login-password').value = ${JSON.stringify(USERS.jeonju.password)}; document.querySelector('#login-form button[type=submit]').click()`);
     await waitFor(`!!document.querySelector('.tabs-nav')`, 'admin app');
     await E(`document.querySelector('[data-act="tab"][data-tab="songs"]').click()`);
@@ -172,6 +173,20 @@ async function startServer(workers) {
     await E(`document.querySelector('[data-sg="lang"][data-lang="ko"]').click()`);
     await waitFor(`document.querySelectorAll('textarea[data-sg-f="t"]').length === ${koLines.length}`, 'ko lines');
     ok(await E(`document.querySelector('textarea[data-sg-f="t"]').value`) === koLines[0], 'editor starts from the build text');
+
+    /* ---------- 1a. a reload shows the screen it was reloaded on ---------- */
+    await send('Page.navigate', { url: `http://jeonju.test:${PORT}/admin` }); await sleep(300);
+    await waitFor(`document.readyState === 'complete' && !!document.querySelector('.tabs-nav')`, 'admin after reload');
+    await waitFor(`!!document.querySelector('textarea[data-sg-f="t"]')`, 'song editor restored');
+    ok(await E(`document.querySelector('.tab-item.active').getAttribute('data-tab')`) === 'songs', 'reload keeps the songs tab');
+    ok(await E(`document.querySelector('.sg-langs .active').getAttribute('data-lang')`) === 'ko', 'reload keeps the open language');
+    ok(await E(`document.querySelectorAll('textarea[data-sg-f="t"]').length`) === koLines.length, 'reload keeps the open song (osg-5)');
+    await E(`document.querySelector('[data-act="tab"][data-tab="audit"]').click()`);
+    await send('Page.navigate', { url: `http://jeonju.test:${PORT}/admin` }); await sleep(300);
+    await waitFor(`document.readyState === 'complete' && !!document.querySelector('.tabs-nav')`, 'admin after reload 2');
+    ok(await E(`document.querySelector('.tab-item.active').getAttribute('data-tab')`) === 'audit', 'reload keeps the audit tab');
+    await E(`document.querySelector('[data-act="tab"][data-tab="songs"]').click()`);
+    await waitFor(`!!document.querySelector('textarea[data-sg-f="t"]')`, 'song editor back');
 
     /* ---------- 1b. split and merge keep the line list and the times consistent ---------- */
     const splitAt = koLines.findIndex(l => rules.isSingable(l) && / /.test(l));
@@ -206,6 +221,7 @@ async function startServer(workers) {
     await goto(`http://jeonju.test:${PORT}/admin`);
     await waitFor(`!!document.querySelector('.tabs-nav')`, 'admin again');
     await E(`document.querySelector('[data-act="tab"][data-tab="songs"]').click()`);
+    await E(`(function(){ var b = document.querySelector('[data-sg="back"]'); if (b) b.click(); })()`);
     await waitFor(`!!document.querySelector('[data-sg="kind"]')`, 'songs');
     await E(`document.querySelector('[data-sg="kind"][data-kind="original"]').click()`);
     await waitFor(`!!document.querySelector('[data-sg="open"][data-key="osg-5"]')`, 'osg-5 row again');
@@ -227,6 +243,7 @@ async function startServer(workers) {
     await goto(`http://jeonju.test:${PORT}/admin`);
     await waitFor(`!!document.querySelector('.tabs-nav')`, 'admin 3');
     await E(`document.querySelector('[data-act="tab"][data-tab="songs"]').click()`);
+    await E(`(function(){ var b = document.querySelector('[data-sg="back"]'); if (b) b.click(); })()`);
     await waitFor(`!!document.querySelector('[data-sg="kind"]')`, 'songs 3');
     await E(`document.querySelector('[data-sg="kind"][data-kind="original"]').click()`);
     await waitFor(`!!document.querySelector('[data-sg="open"][data-key="osg-5"]')`, 'osg-5 row 3');

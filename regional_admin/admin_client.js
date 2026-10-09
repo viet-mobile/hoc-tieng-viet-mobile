@@ -330,8 +330,22 @@
         return;
       }
       $('user-info').textContent = state.user.username + ' 관리자님';
-      return loadData().then(renderApp);
+      return loadData().then(function () { restoreView(); renderApp(); });
     }).catch(renderLogin);
+  }
+
+  // A reload shows the screen it was reloaded on: the tab and the curriculum week are remembered in this browser (unsaved edits are not).
+  var VIEW_KEY = 'admin-view';
+  function saveView() {
+    try { localStorage.setItem(VIEW_KEY, JSON.stringify({ tab: state.tab, week: state.week, user: state.user && state.user.username })); } catch (e) { /* no storage */ }
+  }
+  function restoreView() {
+    try {
+      var v = JSON.parse(localStorage.getItem(VIEW_KEY) || 'null');
+      if (!v || v.user !== (state.user && state.user.username)) return;
+      if (TABS.some(function (t) { return t[0] === v.tab; })) state.tab = v.tab;
+      if (v.week >= 1 && v.week <= 99 && state.curriculum.some(function (w) { return w.week === v.week; })) state.week = v.week;
+    } catch (e) { /* ignore */ }
   }
 
   function loadData() {
@@ -1035,12 +1049,14 @@
         if (isSectionFViewer() && t.getAttribute('data-tab') !== 'guide') break;
         state.tab = t.getAttribute('data-tab');
         if (state.tab === 'curriculum') resetEdit();
+        saveView();
         renderApp();
         break;
       case 'week':
         if (!confirmDiscard()) break;
         state.week = +t.getAttribute('data-w');
         resetEdit();
+        saveView();
         renderTab();
         break;
       case 'cancel-edit': state.editingCancel = +id; renderTab(); break;
