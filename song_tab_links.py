@@ -33,4 +33,6 @@ SONG_MEDIA_KEYS = {
     "osg-112|vi": {"kind": "AUDIO", "mediaKey": "pub-osg_112_AUDIO"},
     "osg-117|ko": {"kind": "AUDIO", "mediaKey": "pub-osg_117_AUDIO"},
     "osg-117|vi": {"kind": "AUDIO", "mediaKey": "pub-osg_117_AUDIO"},
+    "osg-63|ko": {"kind": "AUDIO", "mediaKey": "pub-osg_63_AUDIO"},
+    "osg-63|vi": {"kind": "AUDIO", "mediaKey": "pub-osg_63_AUDIO"},
 }
