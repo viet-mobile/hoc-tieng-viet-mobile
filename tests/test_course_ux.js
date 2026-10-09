@@ -429,7 +429,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
             const root=document.getElementById('bilingual-reader-root'), o={};
             o.repeat=(root.querySelector('.repeat-count-select')||{}).value; o.toggle=!!root.querySelector('.mute-autoplay-toggle'); o.scopeOpts=[...root.querySelectorAll('.mute-scope-select option')].map(x=>x.textContent).join('/');
             o.checked=!!(root.querySelector('.mute-autoplay-toggle')||{}).checked; o.sel=(root.querySelector('.mute-scope-select')||{}).value;
-            const btn=root.querySelector('.reader-toolbar .read-all-btn'); o.hasBtn=!!btn; o.entries=btn?window.__READALL_REGISTRY[btn.dataset.readall].length:0;
+            const btn=root.querySelector('.reader-audio-row .read-all-btn'); o.hasBtn=!!btn; o.entries=btn?window.__READALL_REGISTRY[btn.dataset.readall].length:0;
             if (btn) { window.__tts.length=0; const first=window.__READALL_REGISTRY[btn.dataset.readall][0]; o.first=first; btn.click(); let w=0; while(!window.__tts.some(x=>x.ev==='start'&&x.t===undefined)&&w<0){w++;}
               await sleep(4500); btn.dataset.playing==='true' && btn.click(); o.log=window.__tts.filter(x=>x.ev==='start').map(x=>x.lang).slice(0,8); o.texts=window.__tts.filter(x=>x.ev==='start').map(x=>x.text.slice(0,12)).slice(0,8); }
             return o;})()`) || {};

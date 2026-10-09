@@ -1724,14 +1724,37 @@
     if (toggle) toggle.addEventListener("change", function (e) {
       muteScope = e.target.checked ? (inMcq ? "meaning" : (lastNonMcqScope || "both")) : "";
       saveMuteScopePref();
-      onChange();
+      onChange(); syncAudioOptions();
     });
     if (select) select.addEventListener("change", function (e) {
       if (inMcq) return;
       muteScope = e.target.value;
       lastNonMcqScope = muteScope;
       saveMuteScopePref();
-      onChange();
+      onChange(); syncAudioOptions();
+    });
+  }
+  // [반복 듣기] + [묵음] beside a 전체 듣기 button, the same controls and the same stored settings as [복습]: audioOptionsHtml() in the row's
+  // HTML, bindAudioOptions(root) once that HTML is in the page. Every instance on the page shows the same values (syncAudioOptions).
+  function audioOptionsHtml() {
+    return '<span class="audio-options"><label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span class="repeat-toggle-slot"></span></label>' +
+      muteGroupHtml(false, muteScope || lastNonMcqScope || "both") + '</span>';
+  }
+  function syncAudioOptions() {
+    document.querySelectorAll(".audio-options .repeat-toggle-slot").forEach(renderViRepeatToggle);
+    document.querySelectorAll(".audio-options .mute-group").forEach(function (g) {
+      var t = g.querySelector(".mute-autoplay-toggle"), sel = g.querySelector(".mute-scope-select");
+      if (t) t.checked = !!muteScope;
+      if (sel) { sel.disabled = !muteScope; if (muteScope) sel.value = muteScope; }
+    });
+  }
+  function bindAudioOptions(root) {
+    if (!root) return;
+    root.querySelectorAll(".audio-options").forEach(function (box) {
+      if (box.dataset.bound) return;
+      box.dataset.bound = "1";
+      renderViRepeatToggle(box.querySelector(".repeat-toggle-slot"));
+      bindMuteGroup(box, false, syncAudioOptions);
     });
   }
   // Every widget instance (발음 설정, 복습) re-renders whenever the setting changes from ANY of
@@ -1742,6 +1765,7 @@
       var el = document.getElementById(id);
       if (el) renderViRepeatToggle(el);
     });
+    syncAudioOptions();
   }
   onViRepeatChange(renderAllViRepeatToggles);
   onLangChange(renderAllViRepeatToggles);
@@ -2080,14 +2104,18 @@
   //   - after a cancel() the next speak() waits SPEECH_CANCEL_SETTLE_MS (WebKit drops a speak() right after cancel()).
   // A run is started by a real tap (or a key) -- Apple WebKit refuses speech nothing asked for -- and everything the run
   // plays after that (the next language, the repetitions, the next sentence) needs no new tap.
-  var VI_REPEAT_GAP_MS = 50;    // between repetitions of the same phrase (450 -> 200 -> 50; Apple keeps its own SPEECH_MIN_GAP_MS floor)
   var IS_MAC_DESKTOP = /Macintosh|Mac OS X/i.test(navigator.userAgent || "") && !(navigator.maxTouchPoints > 1);
-  var READALL_STEP_GAP_MS = IS_MAC_DESKTOP ? 60 : 120;   // Vietnamese -> the target language (and, with the target silenced, to the next row)
+  // Apple's voices (Linh, Yuna, ... on iPhone / iPad / Mac, in every browser there) end each utterance with ~210-220 ms of silence of their
+  // own (measured on the rendered audio), so the pauses the page adds on Apple are 0 / 0 / 60 ms where Windows and Android get 50 / 120 / 200:
+  // what is heard then is about the same. (WebKit starts the next utterance ~2 ms after the previous one's end when speak() follows at once.)
+  var IS_APPLE_VOICES = IS_MAC_DESKTOP || /iPhone|iPad|iPod/i.test(navigator.userAgent || "") || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var VI_REPEAT_GAP_MS = IS_APPLE_VOICES ? 0 : 50;    // between repetitions of the same phrase (450 -> 200 -> 50)
+  var READALL_STEP_GAP_MS = IS_APPLE_VOICES ? 0 : 120;   // Vietnamese -> the target language (and, with the target silenced, to the next row)
   // [복습] [플래시카드]: its own, shorter gaps: the same Vietnamese repeated is chained with NO timer at all (0 ms: the next
   // utterance is spoken from the previous one's onend), Vietnamese -> meaning 60 ms, meaning -> the example of a 한자음 card 120 ms.
   // Apple keeps its engine floor (SPEECH_MIN_GAP_MS), which is not a delay of ours.
   var FLASH_GAPS = { repeat: 0, language: 60, row: 120 };
-  var READALL_ROW_GAP_MS = 200;                          // the target language -> the next row
+  var READALL_ROW_GAP_MS = IS_APPLE_VOICES ? 60 : 200;   // the target language -> the next row
   // iPhone/iPad/Mac run the same WebKit speech engine.
   var IS_APPLE_WEBKIT_SPEECH = IS_MAC_DESKTOP || /iPhone|iPad|iPod/i.test(navigator.userAgent || "") ||
     (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
@@ -2095,7 +2123,7 @@
   // Chrome / Edge on a Mac use their own engine, not WebKit's: the WebKit floor does not apply there (measured with the real macOS voice
   // Linh in Chrome: utterance onend -> the next onstart is 1-5 ms when the next speak() follows at once). Safari / every iOS browser keep it.
   var IS_CHROMIUM_ENGINE = /Chrome\/|Edg\//.test(navigator.userAgent || "") && !/CriOS|EdgiOS|FxiOS|OPiOS/.test(navigator.userAgent || "");
-  var SPEECH_MIN_GAP_MS = IS_APPLE_WEBKIT_SPEECH && !IS_CHROMIUM_ENGINE ? 90 : 0;   // between the end of one utterance and the next speak()
+  var SPEECH_MIN_GAP_MS = 0;   // between the end of one utterance and the next speak(): none (WebKit too: 12/12 utterances chained at 0 ms start ~2 ms later)
   var SPEECH_START_TIMEOUT_MS = IS_APPLE_WEBKIT_SPEECH ? 5000 : 3500;    // a voice may need seconds to load before onstart
   // Watchdog for an utterance that started but never ended: generous, so a slow voice is not cut off (the Apple numbers
   // are the estimate of the spoken length with some room; elsewhere onend is reliable and this is only the safety net).
@@ -2849,7 +2877,9 @@
   function readAllItems(texts, gaps) {
     var items = [];
     var repeatGap = gaps ? gaps.repeat : VI_REPEAT_GAP_MS, languageGap = gaps ? gaps.language : READALL_STEP_GAP_MS, rowGap = gaps ? gaps.row : READALL_ROW_GAP_MS;
+    var muteVi = muteScopeSilences("vi") && gaps !== FLASH_GAPS, muteMean = muteScopeSilences("meaning") && gaps !== FLASH_GAPS;   // [묵음]: the same setting in every tab (the flashcard filters by its own rule)
     texts.forEach(function (entry, ei) {
+      if (muteVi || muteMean) entry = Object.assign({}, entry, { vi: muteVi ? "" : entry.vi, mean: muteMean ? "" : entry.mean });
       if (entry.vi) {
         var o = targetSpeechOpts(entry.vi), plan = repeatPlan(speechChunks(o.text)), chunks = plan.chunks;
         for (var r = 0; r < plan.reps; r++) {
@@ -4199,9 +4229,7 @@
       var mean = (p[1] && !muteScopeSilences("meaning")) ? p[1] : "";
       if (vi || mean) readEntries.push([vi, mean]);
     });
-    html += '<div class="reader-audio-row"><label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span id="repeat-toggle-reader"></span></label>' +
-      muteGroupHtml(false, muteScope || lastNonMcqScope || "both") + '</div>';
-    html += '<div class="reader-toolbar">' + readAllButtonHtml(readEntries) + '</div><div class="reader-rows">';
+    html += '<div class="reader-audio-row">' + audioOptionsHtml() + readAllButtonHtml(readEntries) + '</div><div class="reader-rows">';
     pairs.forEach(function (p) {
       html += '<div class="reader-row"><div class="reader-text"><div class="vn reader-vi">' + escapeHtml(p[0]) + '</div>' +
         (p[1] ? '<div class="reader-tr">' + escapeHtml(p[1]) + '</div>' : '') + '</div>' +
@@ -4210,8 +4238,7 @@
     html += '</div>';
     root.innerHTML = html;
     bindReader(root);
-    renderViRepeatToggle(document.getElementById("repeat-toggle-reader"));
-    bindMuteGroup(root, false, renderBilingualReader);
+    bindAudioOptions(root);
   }
   function bindReader(root) {
     root.querySelectorAll("[data-reader-source]").forEach(function (b) {
@@ -4242,17 +4269,15 @@
     if (i >= 0) list.splice(i, 1); else list.unshift({ vi: vi, meaning: meaning || "", added: Date.now() });
     savePhrases(list);
   }
-  // A ☆ next to every sentence-length listen button in [대화] and [문장] (Jeonju only): after it, except in a song's lyric row, where it
-  // comes BEFORE the speaker (the row ends with the music buttons ▶ ↻, so the star would otherwise sit between the two kinds of buttons).
+  // A ★ BEFORE every sentence-length listen button in [대화] and [문장] (Jeonju only), in every tab the same way: star, then the speaker.
   function decoratePhraseStars(root) {
     if (!IS_JEONJU || !root) return;
     root.querySelectorAll(".speak-btn[data-speak]").forEach(function (b) {
       var vi = b.dataset.speak || "";
       if (vi.trim().split(/\s+/).length < 3 || b.closest("#phrasebook-root")) return;
-      var inSong = !!b.closest(".lyric-vi-row, .lyric-target-row");
-      var near = inSong ? b.previousElementSibling : b.nextElementSibling;
+      var near = b.previousElementSibling;
       if (near && near.classList.contains("phrase-star")) { near.dataset.on = String(hasPhrase(vi)); return; }
-      var other = inSong ? b.nextElementSibling : b.previousElementSibling;   // a star left on the other side by an earlier pass
+      var other = b.nextElementSibling;   // a star after the speaker, left by an earlier pass
       if (other && other.classList.contains("phrase-star")) other.parentNode.removeChild(other);
       var star = document.createElement("button");
       star.type = "button";
@@ -4261,7 +4286,7 @@
       star.dataset.on = String(hasPhrase(vi));
       star.setAttribute("aria-label", TU("표현집에 추가"));
       star.textContent = "★";
-      b.insertAdjacentElement(inSong ? "beforebegin" : "afterend", star);
+      b.insertAdjacentElement("beforebegin", star);
     });
   }
   if (IS_JEONJU) {
@@ -4297,7 +4322,7 @@
       '<button type="submit" class="curr-link-btn">' + escapeHtml(TU("추가")) + '</button></form>';
     if (!list.length) html += '<div class="empty-state">' + escapeHtml(TU("저장한 표현이 없어요. ★를 누르거나 직접 추가하세요.")) + '</div>';
     else {
-      html += '<div class="reader-toolbar">' + readAllButtonHtml(list.map(function (p) { return p.meaning ? [p.vi, p.meaning] : p.vi; })) + '</div><div class="reader-rows">';
+      html += '<div class="reader-audio-row">' + audioOptionsHtml() + readAllButtonHtml(list.map(function (p) { return p.meaning ? [p.vi, p.meaning] : p.vi; })) + '</div><div class="reader-rows">';
       list.forEach(function (p, i) {
         html += '<div class="reader-row"><div class="reader-text"><div class="vn reader-vi">' + escapeHtml(p.vi) + '</div>' +
           '<input type="text" class="phrase-meaning" data-i="' + i + '" value="' + escapeAttr(p.meaning || "") + '" placeholder="' + escapeAttr(TU("뜻(선택)")) + '" maxlength="300"></div>' +
@@ -4307,6 +4332,7 @@
       html += '</div>';
     }
     root.innerHTML = html;
+    bindAudioOptions(root);
     root.querySelector(".phrase-add").addEventListener("submit", function (e) {
       e.preventDefault();
       var vi = e.target.vi.value.trim();
@@ -5045,8 +5071,9 @@
     });
     turnsHtml += '</div>';
     var html = '<div class="stage-title" style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap"><span>' +
-      (currentStageIdx + 1) + '. ' + escapeHtml(shortTitle) + '</span>' + readAllButtonHtml(stageTexts) + '</div>' + turnsHtml;
+      (currentStageIdx + 1) + '. ' + escapeHtml(shortTitle) + '</span><span class="stage-audio">' + audioOptionsHtml() + readAllButtonHtml(stageTexts) + '</span></div>' + turnsHtml;
     body.innerHTML = html;
+    bindAudioOptions(body);
 
     body.querySelectorAll(".speak-btn").forEach(function (b) {
       b.addEventListener("click", function (e) {
@@ -9159,7 +9186,7 @@ function verifyDistribution(units, dist, pins) {
       recordsByPart[rec.part].push({ rec: rec, ri: ri, lineUnits: lineUnits, titleVi: titleVi });
     });
 
-    var html = "";
+    var html = '<div class="reader-audio-row">' + audioOptionsHtml() + '</div>';
     [1, 2, 3, 4].forEach(function (partNumber) {
       var records = recordsByPart[partNumber];
       if (!records || !records.length) return;
@@ -9194,6 +9221,7 @@ function verifyDistribution(units, dist, pins) {
     });
     if (q && !html) html = '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
     root.innerHTML = html;
+    bindAudioOptions(root);
     bindCurrGroupCards(root);
     root.querySelectorAll(".lff-part-head").forEach(function (button) {
       button.addEventListener("click", function () {
@@ -9225,7 +9253,7 @@ function verifyDistribution(units, dist, pins) {
     }
     root.dataset.rendered = "true";
 
-    var html = "";
+    var html = '<div class="reader-audio-row">' + audioOptionsHtml() + '</div>';
     LPD_LESSONS.forEach(function (rec, ri) {
       var lineUnits = [];
       rec.lines.forEach(function (line) {
@@ -9254,6 +9282,7 @@ function verifyDistribution(units, dist, pins) {
       html += '</div></div></div>';
     });
     root.innerHTML = html;
+    bindAudioOptions(root);
     bindCurrGroupCards(root);
     bindCurrSpeakBtns(root);
   }
@@ -10250,11 +10279,12 @@ function verifyDistribution(units, dist, pins) {
     var vkey = songSegMediaKeyOf(kind, key, lang);
     if (!/_VIDEO$/.test(vkey)) return Promise.resolve(null);
     return songSegVideo(vkey, code).then(function (file) {
-      var sub = file && file.subtitles && file.subtitles.url;
-      if (!sub || !/^https:\/\/[a-z0-9.-]+\.jw-cdn\.org\//.test(file.progressiveDownloadURL)) return null;
+      if (!file || !/^https:\/\/[a-z0-9.-]+\.jw-cdn\.org\//.test(file.progressiveDownloadURL)) return null;
+      var base = { key: vkey, url: file.progressiveDownloadURL, checksum: file.checksum, duration: file.duration, cues: [] };
+      var sub = file.subtitles && file.subtitles.url;
+      if (!sub) return base;
       return fetch(sub, { credentials: "omit" }).then(function (res) { return res.ok ? res.text() : ""; }).then(function (vtt) {
-        var cues = songSegVttCues(vtt);
-        return cues.length ? { key: vkey, url: file.progressiveDownloadURL, checksum: file.checksum, duration: file.duration, cues: cues } : null;
+        base.cues = songSegVttCues(vtt); return base;
       });
     }).catch(function () { return null; });
   }
@@ -10322,7 +10352,7 @@ function verifyDistribution(units, dist, pins) {
     return res.ok + res.sub + res.grouped ? res : null;
   }
   function songSegPickTiming(info, rowTexts) {
-    if (!info || !info.video || !info.video.cues) return info;
+    if (!info || !info.video || !info.video.cues || !info.video.cues.length) return info;
     var rows = rowTexts.length, cues = info.video.cues, total = 0;
     for (var i = 0; i < cues.length; i++) total += cues[i].lines.length;
     var mp3ok = !!(info.marks && info.marks.length === rows);
@@ -10480,6 +10510,7 @@ function verifyDistribution(units, dist, pins) {
     songSeg.btn = btn; songSeg.loop = loop;
     songSegMarkUi(true);
     var a = songSeg.audio || (songSeg.audio = new Audio());
+    var fileUrl = mark.url || info.url;
     var target = Math.max(0, mark.s - SONG_SEG_PRE_MS) / 1000;
     songSegLog((loop ? "↻" : "▶") + " " + info.src + " " + info.mediaKey + " line " + (i + 1) + " marker " + mark.m + " " + (mark.s / 1000).toFixed(3) + "-" + (mark.e / 1000).toFixed(3) + " s");
     function alive() { return songSeg.token === my && btn.isConnected; }
@@ -10551,13 +10582,13 @@ function verifyDistribution(units, dist, pins) {
       once("progress", function () { whenSeekable(tries - 1); }, 1000);
     }
     a.onerror = function () { fail("audio error"); };
-    if (songSeg.url === info.url) {
+    if (songSeg.url === fileUrl) {
       if (a.readyState >= 1) whenSeekable(10);
       else once("loadedmetadata", function (byTimer) { if (byTimer) fail("no metadata"); else whenSeekable(10); }, 20000);
       return;
     }
-    songSeg.url = info.url;
-    a.preload = "auto"; a.src = info.url;
+    songSeg.url = fileUrl;
+    a.preload = "auto"; a.src = fileUrl;
     // Register first: load() can dispatch metadata synchronously from a warm cache.
     once("loadedmetadata", function (byTimer) { if (byTimer) { fail("no metadata"); return; } whenSeekable(10); }, 20000);
     try { a.load(); } catch (eL) { fail("load threw"); return; }
@@ -10628,6 +10659,25 @@ function verifyDistribution(units, dist, pins) {
       if (ref) box.querySelectorAll(ref === "vi" ? ".lyric-vi-row .lyric-vi" : ".lyric-target-row .lyric-target").forEach(function (t) { if (songSegSingable(t.textContent)) refTexts.push(t.textContent); });
       if (kind !== "kingdom" && ref && rowCount[ref]) ask = Promise.all([ask, songSegResolve(kind, key, ref)]).then(function (both) {
         var info = both[0], refInfo = songSegPickTiming(both[1], refTexts);
+        // user-authorized copy (SONG_TIMING_COPY): this language's own recording, at the other language's line times (the same medium: the
+        // video when those times are the video's cues, else the MP3); only the listed lines, or every line
+        var copy = typeof SONG_TIMING_COPY !== "undefined" && SONG_TIMING_COPY[kind + "|" + key + "|" + lang];
+        if (copy && copy.from === ref && refInfo && refInfo.marks && rowCount[ref] === rows.length) {
+          var ownUrl = refInfo.timing === "video-cues" ? (info && info.video && info.video.url) : (info && info.url);
+          if (!ownUrl) songSegLog(kind + " " + key + " " + lang + ": no own " + (refInfo.timing === "video-cues" ? "video" : "MP3") + " to play the " + ref + " line times on");
+          else {
+            var marks = (info && info.marks && info.marks.length === rows.length) ? info.marks.slice() : rows.map(function () { return null; }), n = 0;
+            (copy.lines || rows.map(function (_, i) { return i + 1; })).forEach(function (ln) {
+              var src = refInfo.marks[ln - 1];
+              if (src) { marks[ln - 1] = { s: src.s, e: src.e, m: src.m, url: ownUrl, copiedFrom: ref }; n++; }
+            });
+            if (n) {
+              songSegLog(kind + " " + key + " " + lang + ": " + n + " line(s) at the " + ref + " recording's times, played from this language's own " + (refInfo.timing === "video-cues" ? "video" : "MP3") + " (user-authorized copy)");
+              info = { src: info ? info.src : "", mediaKey: info ? info.mediaKey : "", url: info ? info.url : ownUrl, marks: marks, reason: "", nonVocal: 0, timing: (info && info.timing) || "mp3-markers", copiedLines: n, video: info && info.video };
+              songSegInfo[kind + "|" + key + "|" + lang] = info;
+            }
+          }
+        }
         if (refInfo && (!refInfo.marks || refInfo.marks.length !== rowCount[ref] || refInfo.timing)) refInfo = null;   // only a reference with its own MP3 markers, one per line
         if (info && info.marks && info.marks.length !== rows.length) {
           var al = songSegAlignByParagraph(refInfo, rowCount[ref], info, rows.length);
@@ -10759,7 +10809,7 @@ function verifyDistribution(units, dist, pins) {
       (tl && !tOk ? '<div class="song-lyric-missing">' + escapeHtml(TU("이 언어의 가사는 제공되지 않아요")) + '</div>' : '');
     var html = '';
     var readAll = readAllButtonHtml(songReadAllEntries(rows));
-    if (links || readAll) html += '<div class="song-full-links">' + (links ? '<span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + links : '') + readAll + '</div>';
+    if (links || readAll) html += '<div class="song-full-links">' + (links ? '<span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + links : '') + (readAll ? audioOptionsHtml() + readAll : '') + '</div>';
     var segKey = /^(osg|pkon|pk)-/.test(String(song.id)) ? String(song.id) : "", segKind = /^osg-/.test(String(song.id)) ? "original" : "children";
     html += notes + '<div class="song-lyric-rows"' + (segKey ? ' data-seg-kind="' + segKind + '" data-seg-key="' + escapeAttr(segKey) + '" data-seg-tl="' + (tl && tOk ? escapeAttr(tl) : "") + '"' : '') + '>';
     rows.forEach(function (r) { html += songRowHtml(r); });
@@ -10780,19 +10830,16 @@ function verifyDistribution(units, dist, pins) {
     root.querySelector(".song-kind-count").textContent = items.length + " " + TU("곡");
     list.innerHTML = items.length ? items.map(function (x) { return songAccHtml(kind, x.song); }).join("")
       : '<div class="empty-state">' + escapeHtml(TU("검색 결과가 없어요.")) + '</div>';
+    bindAudioOptions(list);
   }
   function renderSongKind(kind) {
     var root = songKindRoot(kind);
     if (!root) return;
-    // 반복 듣기 (Vietnamese only) + 묵음 (as in [대역 읽기]): the 전체 듣기 of a card follows them.
+    // 반복 듣기 (Vietnamese only) + 묵음 (as in [대역 읽기]) sit in each open card's 전체 듣기 row (songAccBodyHtml).
     root.innerHTML = '<input type="search" class="search-box-input song-kind-search" placeholder="' + escapeAttr(TU("번호, 제목, 가사로 검색")) + '" aria-label="' +
       escapeAttr(TU("번호, 제목, 가사로 검색")) + '" value="' + escapeAttr(songKindState.q[kind] || "") + '">' +
-      '<div class="reader-audio-row"><label class="repeat-review-option"><span>' + TU("반복 듣기") + '</span><span id="repeat-toggle-song-' + kind + '"></span></label>' +
-      muteGroupHtml(false, muteScope || lastNonMcqScope || "both") + '</div>' +
       '<div class="song-kind-count"></div><div class="song-kind-list"></div>';
     root.dataset.rendered = "true";
-    renderViRepeatToggle(document.getElementById("repeat-toggle-song-" + kind));
-    bindMuteGroup(root, false, function () { renderSongKind(kind); });
     renderSongKindList(kind);
   }
   function selectSongKind(kind) {
@@ -10837,7 +10884,9 @@ function verifyDistribution(units, dist, pins) {
           if (!song || !card) return;
           songKindState.open[kind][id] = !songKindState.open[kind][id];
           card.outerHTML = songAccHtml(kind, song);
-          var again = root.querySelector('.song-acc[data-song-id="' + id + '"] .song-acc-head');
+          var fresh = root.querySelector('.song-acc[data-song-id="' + id + '"]');
+          if (fresh) bindAudioOptions(fresh);   // the open card's 전체 듣기 row carries [반복 듣기] [묵음]
+          var again = fresh && fresh.querySelector(".song-acc-head");
           if (again) again.focus();
           return;
         }
@@ -11011,7 +11060,7 @@ function verifyDistribution(units, dist, pins) {
         (targetScripture ? '<div class="song-detail-target-scripture">' + escapeHtml(targetScripture) + '</div>' : '') +
         songJwLinksHtml(sel.number) +
       '</div>' +
-      '<div class="song-detail-nav">' +
+      '<div class="song-detail-nav">' + audioOptionsHtml() +
         readAllButtonHtml(songLines) +
       '</div>' +
     '</div>';
@@ -11112,6 +11161,7 @@ function verifyDistribution(units, dist, pins) {
     html += '</div>'; // close p-section
 
     root.innerHTML = html;
+    bindAudioOptions(root);
     bindCurrSpeakBtns(root);
 
     // Filter logic for modal
@@ -11286,7 +11336,7 @@ function verifyDistribution(units, dist, pins) {
     var root = document.getElementById("curr-prayer-root");
     if (!root) return;
     var prayerLines = PRAYER_TEMPLATE.lines.map(function (l) { return [l.vi, T(l.kr)]; });
-    var html = '<div class="p-section" data-anchor="prayer-prep"><div class="curr-dict-head"><h3 style="margin:0">' + TU("기도 준비하기") + '</h3>' + readAllButtonHtml(prayerLines) + '</div><div class="curr-card">';
+    var html = '<div class="p-section" data-anchor="prayer-prep"><div class="curr-dict-head"><h3 style="margin:0">' + TU("기도 준비하기") + '</h3><span class="head-audio">' + audioOptionsHtml() + readAllButtonHtml(prayerLines) + '</span></div><div class="curr-card">';
     if (PRAYER_TEMPLATE.note) html += '<p>' + escapeHtml(T(PRAYER_TEMPLATE.note)) + '</p>';
     html += '<div class="talk-lines">';
     PRAYER_TEMPLATE.lines.forEach(function (l) {
@@ -11299,6 +11349,7 @@ function verifyDistribution(units, dist, pins) {
     html += '</div></div></div>';
 
     root.innerHTML = html;
+    bindAudioOptions(root);
     bindCurrSpeakBtns(root);
   }
 

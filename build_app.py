@@ -1039,7 +1039,7 @@ def build_data_js(site):
     data_js = "".join(parts)
 
     if site == "general":
-        data_js += "const SONGS_DATA = [];\nconst SONG_MEANINGS = {};\nconst KID_SONGS = null;\nconst SONG_MEDIA = null;\nconst CHOIR_OSG = null;\nconst KID_SONG_TRACKS = null;\nconst ORIGINAL_SONGS = null;\nconst CHILDREN_SONGS = null;\n"
+        data_js += "const SONGS_DATA = [];\nconst SONG_MEANINGS = {};\nconst KID_SONGS = null;\nconst SONG_MEDIA = null;\nconst SONG_TIMING_COPY = {};\nconst CHOIR_OSG = null;\nconst KID_SONG_TRACKS = null;\nconst ORIGINAL_SONGS = null;\nconst CHILDREN_SONGS = null;\n"
     else:
         # jw, jeonju, and ulsan get the full, identical Kingdom Songs source (same file, same
         # content) -- regional profiles are JW's full data set plus their own event layer.
@@ -1077,6 +1077,10 @@ def build_data_js(site):
         data_js += "const ORIGINAL_SONGS = " + js_json(song_collection("jw_original_songs_ko_vi.json", range(1, 118))) + ";\n"
         data_js += "const CHILDREN_SONGS = " + js_json(song_collection("jw_childrens_songs_ko_vi.json", range(0, 36))) + ";\n"
         data_js += "const SONG_MEDIA = " + json.dumps(song_media, separators=(",", ":")) + ";\n"
+        # line timing one language borrows from another language's recording of the same song (song_timing_copy.json, user-authorized)
+        with open("song_timing_copy.json", encoding="utf-8") as fh:
+            timing_copy = {k: v for k, v in json.load(fh).items() if not k.startswith("_")}
+        data_js += "const SONG_TIMING_COPY = " + json.dumps(timing_copy, separators=(",", ":")) + ";\n"
         # JW choir recordings (jw.org pub-osg) of some 왕국 노래: an explicit song -> osg track table plus the languages
         # whose finder link opens (scripts/song_choir_media.py); never computed from the song number.
         choir_osg = {"tracks": {str(k): v for k, v in CHOIR_OSG["tracks"].items()},

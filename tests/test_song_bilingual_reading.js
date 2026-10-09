@@ -142,7 +142,8 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
             const viMissing = !D.vi || !D.vi.title;
             ok(r.nest === 0 && r.headButtons === 1 && /\S/.test(r.btnName || ''), tag + ': one toggle button, no <button><a> nesting ' + r.nest + '/' + r.headButtons);
             ok(JSON.stringify(viMissing ? r.groups.slice(1) : r.groups) === JSON.stringify(viMissing ? want.slice(1) : want), tag + ': title-badge groups ' + JSON.stringify(r.groups) + ' vs ' + JSON.stringify(want));
-            ok(r.order.every(o => o === 'marker' || o === 'lyric-vi-row' || o === 'lyric-target-row' || o === 'lyric-vi-row+lyric-target-row'), tag + ': row order ' + [...new Set(r.order)]);
+            // (a .song-children-lyric under a Vietnamese row = the words the recording sings when they differ from the text; it is part of that row)
+            ok(r.order.map(o => o.replace(/\+song-children-lyric/g, '')).every(o => o === 'marker' || o === 'lyric-vi-row' || o === 'lyric-target-row' || o === 'lyric-vi-row+lyric-target-row'), tag + ': row order ' + [...new Set(r.order)]);
           }
         }
       }
@@ -232,12 +233,12 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
               const card=root.querySelector('.song-acc[data-song-id="${id}"]');
               const btn=card.querySelector('.song-full-links button.read-all-btn');
               const out={btn:!!btn, rep:root.querySelector('.repeat-count-select').value};
-              if(btn){ const reg=window.__READALL_REGISTRY[btn.dataset.readall]; out.reg=reg.slice(0,3); out.regN=reg.length; window.__ttsLog.length=0; btn.click();
+              if(btn){ const reg=window.__READALL_REGISTRY[btn.dataset.readall]; out.reg=reg.slice(0,3); out.regN=reg.length; out.prep={}; reg.slice(0,3).forEach(e=>{ if(e.vi&&window.__prepareSpeechText) out.prep[e.vi]=window.__prepareSpeechText(e.vi); }); window.__ttsLog.length=0; btn.click();
                 for(let i=0;i<300&&window.__ttsLog.length<14;i++) await sleep(20);
                 out.log=window.__ttsLog.slice(); btn.click(); await sleep(60); }
               return out;})()`);
             if (!r) { ok(false, tag + ': evaluation failed'); continue; }
-            ok(r.rep === String(rep), tag + ': repeat select');
+            ok(r.rep === String(rep), tag + ': repeat select (' + JSON.stringify({rep: r.rep, btn: r.btn, regN: r.regN}) + ')');
             if (mute === 'both') { ok(!r.btn, tag + ': both muted -> empty plan, no read-all button'); continue; }
             ok(r.btn && r.reg.length >= 2, tag + ': read-all button + plan');
             if (!r.btn) continue;
@@ -247,7 +248,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
             const norm = s => String(s).replace(/\s+/g, '');
             const exp = [];
             r.reg.slice(0, 2).forEach(e => {
-              if (e.vi) exp.push({lang: 'vi-VN', text: norm(e.vi).repeat(rep)});
+              if (e.vi) exp.push({lang: 'vi-VN', text: norm(r.prep ? r.prep[e.vi] || e.vi : e.vi).repeat(rep)});   // the spoken form (speech respellings such as gian -> zan)
               if (e.mean) exp.push({lang: 'ko-KR', text: norm(e.mean)});
             });
             ok(mute !== 'vi' || r.reg.every(e => !e.vi), tag + ': Vietnamese silenced in the plan');

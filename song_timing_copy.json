@@ -1,0 +1,11 @@
+{
+  "_doc": "Line timing copied from another language's recording of the same song (user-authorized, 2026-10-09): the language's OWN recording is played at the other language's line times. from = the language whose line times are used; lines = 1-based lines (omitted: every line). Rows must be the same in both languages. Applies to 오리지널 송 / 어린이 노래 only.",
+  "children|pk-special-0|ko": {"from": "vi"},
+  "children|pkon-7|vi": {"from": "ko"},
+  "children|pkon-8|vi": {"from": "ko"},
+  "children|pkon-19|ko": {"from": "vi", "lines": [1, 2]},
+  "children|pkon-20|vi": {"from": "ko"},
+  "children|pkon-22|vi": {"from": "ko"},
+  "children|pkon-23|vi": {"from": "ko"},
+  "children|pkon-27|vi": {"from": "ko"}
+}

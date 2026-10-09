@@ -1162,6 +1162,14 @@
   .reader-audio-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 6px 0 2px; }
   .reader-audio-row .repeat-review-option, .reader-audio-row .mute-autoplay-option { display: inline-flex; align-items: center; gap: 4px; min-height: 40px; font-size: .75rem; font-weight: 700; color: var(--ink-soft); white-space: nowrap; }
   .reader-audio-row .mute-autoplay-option input { margin: 0; flex: none; }
+  .reader-audio-row .read-all-btn { margin-left: auto; }
+  /* [반복 듣기] + [묵음] beside a 전체 듣기 button (audioOptionsHtml), wherever that button is */
+  .audio-options { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; }
+  .audio-options .repeat-review-option, .audio-options .mute-autoplay-option { display: inline-flex; align-items: center; gap: 4px; min-height: 40px; font-size: .75rem; font-weight: 700; color: var(--ink-soft); white-space: nowrap; }
+  .audio-options .mute-autoplay-option input { margin: 0; flex: none; }
+  .song-full-links .audio-options { margin-left: auto; }
+  .stage-audio, .head-audio { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-left: auto; }
+  .song-detail-nav .audio-options { margin-right: 8px; }
   .reader-rows { display: flex; flex-direction: column; gap: 6px; }
   .reader-row { display: flex; align-items: flex-start; gap: 6px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px; }
   .reader-text { flex: 1; min-width: 0; }

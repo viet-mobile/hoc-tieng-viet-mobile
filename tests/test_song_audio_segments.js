@@ -318,8 +318,13 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
       const cnt=(id,s)=>kroot.querySelector('.song-acc[data-song-id="'+id+'"]').querySelectorAll(s).length;
       const inf=id=>window.__songSeg.info['children|'+id+'|vi']||{}; const k35=kroot.querySelector('.song-acc[data-song-id="pkon-35"]');
       const viRows35=[...k35.querySelectorAll('.lyric-vi-row')].filter(r=>SINGX(r.querySelector('.lyric-vi').textContent));
-      const sp0m=(inf('pk-special-0').marks||[]);
+      const sp0m=(inf('pk-special-0').marks||[]); const sp0k=(window.__songSeg.info['children|pk-special-0|ko']||{}); const sp0km=sp0k.marks||[];
+      window.__segCfg.video['pub-pkon_19_VIDEO:VT']={start:7.5,dur:3.0,vtt:true}; window.__segCfg.video['pub-pkon_19_VIDEO:KO']={start:7.5,dur:3.0,vtt:false};
+      kroot.querySelector('.song-acc[data-song-id="pkon-19"] .song-acc-head').click(); await sleep(1200);
+      const k19=kroot.querySelector('.song-acc[data-song-id="pkon-19"]'), k19i=window.__songSeg.info['children|pkon-19|ko']||{}, k19m=k19i.marks||[];
+      o.k19={ko:cnt('pkon-19','.lyric-target-row .song-seg-btn[data-seg=play]'), rows:cnt('pkon-19','.song-lyric-line'), copied:k19i.copiedLines, l1:k19m[0]&&{s:k19m[0].s,url:k19m[0].url,from:k19m[0].copiedFrom}, l3:k19m[2]&&{s:k19m[2].s,url:k19m[2].url||null}};
       o.kids={sp0:{vi:cnt('pk-special-0','.lyric-vi-row .song-seg-btn[data-seg=play]'),ko:cnt('pk-special-0','.lyric-target-row .song-seg-btn[data-seg=play]'),rows:cnt('pk-special-0','.song-lyric-line'),timing:inf('pk-special-0').timing,url:inf('pk-special-0').url,fetched:(window.__segFetch||[]).filter(x=>x.startsWith('pk:')),
+          koCopied:sp0k.copiedLines, koL1:sp0km[0]&&{s:sp0km[0].s,url:sp0km[0].url,from:sp0km[0].copiedFrom}, viL1:sp0m[0]&&sp0m[0].s,
           line2:sp0m[1]&&{s:sp0m[1].s,e:sp0m[1].e}, line3:sp0m[2]&&{s:sp0m[2].s,e:sp0m[2].e}},
         p1:{vi:cnt('pkon-1','.lyric-vi-row .song-seg-btn'),ko:cnt('pkon-1','.lyric-target-row .song-seg-btn')},
         p35:{vi:cnt('pkon-35','.lyric-vi-row .song-seg-btn[data-seg=play]'),ko:cnt('pkon-35','.lyric-target-row .song-seg-btn[data-seg=play]'),rows:viRows35.length,timing:inf('pkon-35').timing,rejected:inf('pkon-35').mp3Rejected,url:inf('pkon-35').url,
@@ -340,7 +345,9 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
     ok(p35.altCount === 1 && /LỜI HÁT KHÁC/.test(p35.alt || ''), `children 35: a cue whose words differ from the text shows the sung words under the line ${JSON.stringify({alt: p35.alt, n: p35.altCount})}`);
     ok(p35.koTiming === 'video-cues' && p35.ko === p35.rows, `children 35 Korean: cues one per line -> every line, from the video ${JSON.stringify({ko: p35.ko, rows: p35.rows, t: p35.koTiming})}`);
     ok(p35.play && p35.play[0] === 'src:pub-pkon_35_VIDEO_VT.mp4' && p35.play.some(x => x.startsWith('seek:9.78')) && p35.play.some(x => x.startsWith('play:9.78')), `children 35: ▶ on line 2 seeks the video's audio to its cue (9.78 s) and plays there ${JSON.stringify(p35.play)}`);
-    ok(q.kids.sp0.timing === 'video-cues' && q.kids.sp0.vi === q.kids.sp0.rows && q.kids.sp0.ko === 0 && q.kids.sp0.fetched.includes('pk:3:VT'), `children special 0: pub-pk track 3 (the data's own media key); no MP3 markers -> the Vietnamese video's cues, the Korean video has none ${JSON.stringify(q.kids.sp0)}`);
+    ok(q.kids.sp0.timing === 'video-cues' && q.kids.sp0.vi === q.kids.sp0.rows && q.kids.sp0.fetched.includes('pk:3:VT'), `children special 0: pub-pk track 3 (the data's own media key); no MP3 markers -> the Vietnamese video's cues ${JSON.stringify({t: q.kids.sp0.timing, vi: q.kids.sp0.vi, rows: q.kids.sp0.rows, fetched: q.kids.sp0.fetched})}`);
+    ok(q.kids.sp0.ko === q.kids.sp0.rows && q.kids.sp0.koCopied === q.kids.sp0.rows && q.kids.sp0.koL1 && q.kids.sp0.koL1.from === 'vi' && q.kids.sp0.koL1.s === q.kids.sp0.viL1 && /pub-pk_3_VIDEO_KO\.mp4$/.test(q.kids.sp0.koL1.url), `children special 0 Korean (no subtitles): every line at the Vietnamese cue times, played from the Korean video (SONG_TIMING_COPY) ${JSON.stringify({ko: q.kids.sp0.ko, copied: q.kids.sp0.koCopied, l1: q.kids.sp0.koL1, viL1: q.kids.sp0.viL1})}`);
+    ok(q.k19.ko === q.k19.rows && q.k19.copied === 2 && q.k19.l1 && q.k19.l1.from === 'vi' && q.k19.l1.s === 7500 && /pub-pkon_19_VIDEO_KO\.mp4$/.test(q.k19.l1.url) && q.k19.l3 && q.k19.l3.url === null, `children 19 Korean: lines 1-2 at the Vietnamese times on the Korean video, the other lines on the Korean MP3's own markers ${JSON.stringify(q.k19)}`);
     ok(q.kids.sp0.line2 && q.kids.sp0.line2.s === 9230 + 3100 && q.kids.sp0.line2.e === 9230 + 3100 + 3000 + 100 + 3000 && q.kids.sp0.line3 && q.kids.sp0.line3.s === 9230 + 3100 * 3, `children special 0: a page line the subtitle shows as two cues spans both cues ${JSON.stringify({l2: q.kids.sp0.line2, l3: q.kids.sp0.line3})}`);
     ok(q.tts === 0, `no speech was used anywhere (${q.tts}) ${JSON.stringify(q.ttsTexts)}`);
     ok(!q.overflow, 'no horizontal overflow');
