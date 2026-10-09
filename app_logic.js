@@ -10809,7 +10809,7 @@ function verifyDistribution(units, dist, pins) {
       (tl && !tOk ? '<div class="song-lyric-missing">' + escapeHtml(TU("이 언어의 가사는 제공되지 않아요")) + '</div>' : '');
     var html = '';
     var readAll = readAllButtonHtml(songReadAllEntries(rows));
-    if (links || readAll) html += '<div class="song-full-links">' + (links ? '<span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + links : '') + (readAll ? audioOptionsHtml() + readAll : '') + '</div>';
+    html += '<div class="song-full-links">' + (links ? '<span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + links : '') + audioOptionsHtml() + readAll + '</div>';
     var segKey = /^(osg|pkon|pk)-/.test(String(song.id)) ? String(song.id) : "", segKind = /^osg-/.test(String(song.id)) ? "original" : "children";
     html += notes + '<div class="song-lyric-rows"' + (segKey ? ' data-seg-kind="' + segKind + '" data-seg-key="' + escapeAttr(segKey) + '" data-seg-tl="' + (tl && tOk ? escapeAttr(tl) : "") + '"' : '') + '>';
     rows.forEach(function (r) { html += songRowHtml(r); });
