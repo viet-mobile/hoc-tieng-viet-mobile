@@ -6,7 +6,7 @@ from site_profiles import (JW_ONLY_CONSTS, STRUCTURED_EMPTY_SHAPES, RELIGIOUS_FI
                             GENERAL_CONSTS_NEEDING_ENTRY_FILTER)
 from pronunciation_data import (TONES, ALPHABET, ALPHABET_NOTE, CONSONANTS_SIMPLE,
                                  CONSONANTS_COMPLEX, VOWELS_SIMPLE, VOWELS_COMPLEX,
-                                 NORTH_SOUTH_DIFFS, NORTH_SOUTH_NOTE, NORTH_SOUTH_EXTRA_NOTES, HANOI_CHART)
+                                 NORTH_SOUTH_DIFFS, NORTH_SOUTH_NOTE, NORTH_SOUTH_EXTRA_NOTES, HANOI_CHART, TELEX_GUIDE)
 from rhyme_data import RHYME_GROUPS, TONE_ZH_CORR
 from bible_numbers_data import (BIBLE_BOOKS_OT, BIBLE_BOOKS_NT, NUMBERS_BASIC, NUMBERS_TEEN,
                                  NUMBERS_TENS, NUMBERS_TENS_NOTE, NUMBERS_HUNDREDS,
@@ -807,6 +807,7 @@ def build_data_js(site):
     parts.append(emit("VOW_SIMPLE", VOWELS_SIMPLE))
     parts.append(emit("VOW_COMPLEX", VOWELS_COMPLEX))
     parts.append(emit("HANOI_CHART", HANOI_CHART))
+    parts.append(emit("TELEX_GUIDE", TELEX_GUIDE))
     parts.append(emit("NS_DIFFS", NORTH_SOUTH_DIFFS))
     parts.append(emit("NS_NOTE", NORTH_SOUTH_NOTE))
     parts.append(emit("NS_EXTRA_NOTES", NORTH_SOUTH_EXTRA_NOTES))

@@ -6466,8 +6466,21 @@
       return h + '</tbody></table>';
     }
 
+    /* -- 베트남어 TELEX 키보드 입력법 (Korean UI only) -- */
+    function telexGuideHtml() {
+      if (typeof TELEX_GUIDE === "undefined" || currentLang !== "ko") return "";
+      function row(r) { return '<tr><td class="telex-keys">' + escapeHtml(r[0]) + '</td><td class="hanoi-letter vn">' + escapeHtml(r[1]) +
+        '<button class="speak-btn" data-speak="' + escapeAttr(r[1]) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></td></tr>'; }
+      var h = '<table class="hanoi-table"><thead><tr><th>입력</th><th>결과</th></tr></thead><tbody>' + TELEX_GUIDE.letters.map(row).join("") + '</tbody></table>' +
+        '<table class="hanoi-table"><thead><tr><th>성조 입력</th><th>결과</th></tr></thead><tbody>' + TELEX_GUIDE.tones.map(row).join("") +
+        '<tr><td class="telex-keys">' + escapeHtml(TELEX_GUIDE.cancel[0]) + '</td><td class="hanoi-ko">' + escapeHtml(TELEX_GUIDE.cancel[1]) + '</td></tr></tbody></table>' +
+        '<p class="p-desc">' + escapeHtml(TELEX_GUIDE.note) + '</p>';
+      return h;
+    }
+
     var jamoHtml = '<div class="p-section">' +
       (currentLang === "ko" && typeof HANOI_CHART !== "undefined" ? groupSection("hanoi", "하노이 발음표", hanoiChartHtml(), true) : "") +
+      (currentLang === "ko" && typeof TELEX_GUIDE !== "undefined" ? groupSection("telex", "베트남어 TELEX 키보드 입력법", telexGuideHtml(), false) : "") +
       groupSection("alphabet", TU("문자"), alphabetHtml, true) +
       groupSection("vowels", TU("모음"), vowelsHtml, false) +
       groupSection("consonants", TU("자음"), consHtml, false) +

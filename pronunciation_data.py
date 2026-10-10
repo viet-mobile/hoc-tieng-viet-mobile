@@ -1340,3 +1340,12 @@ HANOI_CHART = {
     ],
     "finals": [["-c", "-ㄱ"], ["-ch", "-익"], ["-m", "-ㅁ"], ["-n", "-ㄴ"], ["-nh", "-인"], ["-ng", "-ㅇ"], ["-p", "-ㅂ"], ["-t", "-ㅅ"]],
 }
+
+
+# [발음] > [자모]: how to type Vietnamese with a TELEX keyboard (supplied by the user; Korean only). Rows: [keys typed, result].
+TELEX_GUIDE = {
+    "letters": [["a+a", "â"], ["e+e", "ê"], ["o+o", "ô"], ["a+w", "ă"], ["o+w", "ơ"], ["u+w", "ư"], ["w", "ư"], ["uo+w", "ươ"], ["d+d", "đ"]],
+    "tones": [["a+s", "á"], ["a+f", "à"], ["a+r", "ả"], ["a+x", "ã"], ["a+j", "ạ"]],
+    "cancel": ["z", "성조 취소"],
+    "note": "성조는 모음 바로 뒤에서 찍으셔도 되고 단어를 다 찍고 나서 찍어도 됩니다.",
+}
