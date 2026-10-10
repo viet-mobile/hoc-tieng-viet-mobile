@@ -8089,7 +8089,8 @@ function verifyDistribution(units, dist, pins) {
         html += '<div class="curr-roster-group"><div class="curr-roster-title">' + (currentLang === "vi" ? "" : escapeHtml(grp.title.ko)) +
           '<span class="curr-roster-title-vi vn">' + escapeHtml(grp.title.vi) + '</span></div>';
         grp.members.forEach(function (m) {
-          html += '<div class="curr-roster-row"><span class="curr-roster-ko">' + escapeHtml(m[0]) + '</span>';
+          html += '<div class="curr-roster-row"><span class="curr-roster-ko">' + escapeHtml(m[0]) +
+            (m[3] ? '<span class="curr-roster-role">' + escapeHtml(rosterVi ? m[3].vi : m[3].ko) + '</span>' : '') + '</span>';
           [m[1], m[2]].forEach(function (v) {
             html += '<span class="curr-roster-vi vn">' + (v ? escapeHtml(v) +
               '<button class="speak-btn" data-speak="' + escapeAttr(v) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' : '') + '</span>';

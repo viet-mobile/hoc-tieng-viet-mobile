@@ -87,7 +87,7 @@ JEONJU_CLASS_ROSTER = [
      "members": [
          ["최찬호", "Lam Phong", "anh Phong"], ["이재순", "Mỹ Duyên", "chị Duyên"], ["김한빈", "Dương Bình", "anh Bình"],
          ["김수민", "Ngọc Bích", "chị Bích"], ["김예나", "Trang Thanh", "em Thanh"], ["쩐응옥마이", "Ngọc Mai", "chị Mai"],
-         ["김소영", "Mỹ Tâm", "chị Tâm"], ["김종현", "Minh Trường", "anh Trường"], ["김대훈", "Huấn", "anh Huấn"],
+         ["김소영", "Mỹ Tâm", "chị Tâm"], ["김종현", "Minh Trường", "anh Trường", {"ko": "오디오/비디오 담당", "vi": "Phụ trách âm thanh/video"}], ["김대훈", "Huấn", "anh Huấn"],
          ["박준우", "Duy", "anh Duy"],
      ]},
     {"title": {"ko": "강사", "vi": "Giảng viên"},
