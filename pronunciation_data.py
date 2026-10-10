@@ -1279,3 +1279,64 @@ NORTH_SOUTH_EXTRA_NOTES = [{'ko': '하노이 발음을 기준으로, 파열음 /
   'pl': 'Samogłoski i, ư, u ([i], [ɨ], [u]) przed spółgłoskami k oraz ng wymawia się jako [ɪ], [ɪ̈], [ʊ]. Zapis '
         'samogłosek w praktyce nie zawsze bywa w pełni jednolity, toteż przy dyftongach lub samogłoskach ze spółgłoską '
         'końcową mogą pojawiać się subtelne niuanse brzmieniowe.'}]
+
+
+# [발음] > [자모]: the Hanoi (northern) pronunciation chart of the Vietnamese initials, vowels and finals in Hangul, as supplied by the user
+# (a table: Korean only -- a Hangul reading aid, shown only in the Korean UI). A row of initials/vowels carries a tone class
+# ("a" = peach, "b" = green: the colour bands of the supplied table); a vowel's reading is parts [text, 1 = small note].
+HANOI_CHART = {
+    "initials": [
+        {"letters": [["g-", "a"], ["gh-", "b"]], "ko": "ㄱ-"},
+        {"letters": [["c-", "a"], ["k-", "b"]], "ko": "ㄲ-"},
+        {"letters": [["qu-", ""]], "ko": "꾸-"},
+        {"letters": [["kh-", ""]], "ko": "ㅋ-"},
+        {"letters": [["d-", ""], ["gi-", ""]], "ko": "ㅈ-"},
+        {"letters": [["ch-", ""], ["tr-", ""]], "ko": "ㅉ-"},
+        {"letters": [["đ-", ""]], "ko": "ㄷ-"},
+        {"letters": [["t-", ""]], "ko": "ㄸ-"},
+        {"letters": [["th-", ""]], "ko": "ㅌ-"},
+        {"letters": [["b-", ""]], "ko": "ㅂ-"},
+        {"letters": [["p-", ""]], "ko": "ㅃ-"},
+        {"letters": [["ph-", ""]], "ko": "ㅍ-"},
+        {"letters": [["s-", ""], ["x-", ""]], "ko": "ㅆ-"},
+        {"letters": [["r-", ""]], "ko": "ㅈ-"},
+        {"letters": [["v-", ""]], "ko": "붕-"},
+        {"letters": [["l-", ""]], "ko": "ㄹ-"},
+        {"letters": [["m-", ""]], "ko": "ㅁ-"},
+        {"letters": [["n-", ""]], "ko": "ㄴ-"},
+        {"letters": [["ng-", ""]], "ko": "응-"},
+        {"letters": [["nh-", ""]], "ko": "니-"},
+    ],
+    "vowels": [
+        ["a", "a", [["ㅏ", 0]]],
+        ["ă", "a", [["ㅏ", 0], ["(뒤에 반드시 받침)", 1]]],
+        ["â", "a", [["ㅓ", 0], ["(뒤에 반드시 받침)", 1]]],
+        ["e", "b", [["ㅐ", 0]]],
+        ["ê", "b", [["ㅔ", 0]]],
+        ["i", "b", [["ㅣ", 0]]],
+        ["ia", "b", [["ㅣ어", 0], ["(뒤에 받침 없음)", 1]]],
+        ["iê", "b", [["ㅣ에", 0], ["(뒤에 반드시 받침)", 1]]],
+        ["o", "a", [["ㅗ", 0], ["와", 1], ["ㅓ", 0], ["의 중간", 1]]],
+        ["oa", "a", [["ㅗ아", 0]]],
+        ["oă", "a", [["ㅗ아", 0], ["(뒤에 반드시 받침)", 1]]],
+        ["oe", "a", [["ㅗ애", 0]]],
+        ["ô", "a", [["ㅗ", 0]]],
+        ["ơ", "a", [["ㅓ", 0]]],
+        ["u", "b", [["ㅜ", 0]]],
+        ["ua", "b", [["ㅜ아", 0]]],
+        ["uă", "b", [["ㅜ아", 0], ["(뒤에 반드시 받침)", 1]]],
+        ["uâ", "b", [["ㅜ어", 0], ["(뒤에 반드시 받침)", 1]]],
+        ["ue", "b", [["ㅜ애", 0]]],
+        ["uê", "b", [["ㅜ에", 0]]],
+        ["uơ", "b", [["ㅜ어", 0]]],
+        ["uy", "b", [["ㅜ이", 0]]],
+        ["uya", "b", [["ㅜ이야", 0]]],
+        ["uyê", "b", [["ㅜ이에", 0]]],
+        ["ư", "b", [["ㅡ", 0]]],
+        ["ưa", "b", [["ㅡ어", 0]]],
+        ["ươ", "b", [["ㅡ어", 0]]],
+        ["y", "a", [["ㅣ", 0]]],
+        ["yê", "a", [["ㅣ에", 0], ["(뒤에 반드시 받침)", 1]]],
+    ],
+    "finals": [["-c", "-ㄱ"], ["-ch", "-익"], ["-m", "-ㅁ"], ["-n", "-ㄴ"], ["-nh", "-인"], ["-ng", "-ㅇ"], ["-p", "-ㅂ"], ["-t", "-ㅅ"]],
+}

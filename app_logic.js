@@ -6441,7 +6441,33 @@
         '<div class="group-body">' + contentHtml + '</div></div>';
     }
 
+    /* -- 하노이 발음표 (Hangul reading aid: Korean UI only) -- */
+    function hanoiChartHtml() {
+      if (typeof HANOI_CHART === "undefined" || currentLang !== "ko") return "";
+      function btn(speak) { return '<button class="speak-btn" data-speak="' + escapeAttr(speak) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>'; }
+      function tone(t) { return t ? " hanoi-tone-" + t : ""; }
+      var h = '<p class="p-desc">하노이(북부) 발음을 한글로 나타낸 표입니다. 글자를 눌러 소리를 들어 보세요.</p>';
+      h += '<table class="hanoi-table"><thead><tr><th>베트남어 자음</th><th>하노이 발음</th></tr></thead><tbody>';
+      HANOI_CHART.initials.forEach(function (g) {
+        g.letters.forEach(function (l, i) {
+          h += '<tr><td class="hanoi-letter vn' + tone(l[1]) + '">' + escapeHtml(l[0]) + btn(l[0].replace(/-$/, "") + "ơ") + '</td>' +
+            (i === 0 ? '<td class="hanoi-ko" rowspan="' + g.letters.length + '">' + escapeHtml(g.ko) + '</td>' : '') + '</tr>';
+        });
+      });
+      h += '</tbody></table><table class="hanoi-table"><thead><tr><th>베트남어 모음</th><th>하노이 발음</th></tr></thead><tbody>';
+      HANOI_CHART.vowels.forEach(function (v) {
+        h += '<tr class="hanoi-vrow' + tone(v[1]) + '"><td class="hanoi-letter vn">' + escapeHtml(v[0]) + btn(v[0]) + '</td><td class="hanoi-ko">' +
+          v[2].map(function (p) { return p[1] ? '<small>' + escapeHtml(p[0]) + '</small>' : escapeHtml(p[0]); }).join("") + '</td></tr>';
+      });
+      h += '</tbody></table><table class="hanoi-table"><thead><tr><th>베트남어 받침</th><th>하노이 발음</th></tr></thead><tbody>';
+      HANOI_CHART.finals.forEach(function (f) {
+        h += '<tr><td class="hanoi-letter vn">' + escapeHtml(f[0]) + '</td><td class="hanoi-ko">' + escapeHtml(f[1]) + '</td></tr>';
+      });
+      return h + '</tbody></table>';
+    }
+
     var jamoHtml = '<div class="p-section">' +
+      (currentLang === "ko" && typeof HANOI_CHART !== "undefined" ? groupSection("hanoi", "하노이 발음표", hanoiChartHtml(), true) : "") +
       groupSection("alphabet", TU("문자"), alphabetHtml, true) +
       groupSection("vowels", TU("모음"), vowelsHtml, false) +
       groupSection("consonants", TU("자음"), consHtml, false) +

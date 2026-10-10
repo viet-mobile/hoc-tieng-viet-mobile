@@ -800,6 +800,21 @@
   .tone-mark .nm { font-size: 0.62rem; color: var(--ink-faint); font-weight: 700; }
   .tone-info .kr { font-weight: 700; font-size: 0.86rem; }
   .tone-info .d { font-size: 0.78rem; color: var(--ink-soft); margin-top: 2px; line-height: 1.5; }
+  .hanoi-table { width: 100%; border-collapse: collapse; margin: 0 0 14px; background: var(--surface); }
+  .hanoi-table th { background: var(--chip-bg); font-size: 0.74rem; font-weight: 800; color: var(--ink-soft); padding: 4px 6px; border: 1px solid var(--border); }
+  .hanoi-table td { border: 1px solid var(--border); padding: 4px 8px; text-align: center; }
+  .hanoi-letter { font-weight: 800; font-size: 1.15rem; white-space: nowrap; }
+  .hanoi-letter .speak-btn { min-width: 30px; min-height: 30px; width: 30px; height: 30px; margin-left: 4px; vertical-align: middle; }
+  .hanoi-ko { font-weight: 800; font-size: 1.25rem; }
+  .hanoi-ko small { font-size: 0.64rem; font-weight: 600; color: var(--ink-soft); margin: 0 1px; }
+  .hanoi-tone-a, .hanoi-vrow.hanoi-tone-a td { background: #FCE0D4; }
+  .hanoi-tone-b, .hanoi-vrow.hanoi-tone-b td { background: #C6EFCE; }
+  :root[data-theme="dark"] .hanoi-tone-a, :root[data-theme="dark"] .hanoi-vrow.hanoi-tone-a td { background: #5a3a2d; }
+  :root[data-theme="dark"] .hanoi-tone-b, :root[data-theme="dark"] .hanoi-vrow.hanoi-tone-b td { background: #2f5a3a; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .hanoi-tone-a, :root:not([data-theme="light"]) .hanoi-vrow.hanoi-tone-a td { background: #5a3a2d; }
+    :root:not([data-theme="light"]) .hanoi-tone-b, :root:not([data-theme="light"]) .hanoi-vrow.hanoi-tone-b td { background: #2f5a3a; }
+  }
   .pron-table { display: flex; flex-direction: column; gap: 8px; }
   .pron-row {
     background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-m);
