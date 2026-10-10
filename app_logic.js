@@ -3000,6 +3000,7 @@
       var activeTab = (appRoot && appRoot.dataset.activeTab) || "review";
       lastPlaceState.tab = activeTab;
       lastPlaceState.scrollY = window.scrollY || 0;
+      if (typeof songPlaceState === "function") lastPlaceState.songs = songPlaceState();
       window.localStorage.setItem(LAST_PLACE_STORAGE_KEY, JSON.stringify(lastPlaceState));
     } catch (e) { /* no-op */ }
   }
@@ -3053,6 +3054,15 @@
     lastPlaceScrollTimer = setTimeout(saveLastPlace, 400);
   }, { passive: true });
   window.addEventListener("beforeunload", saveLastPlace);
+  window.addEventListener("pagehide", saveLastPlace);   // phones / the home-screen app do not always fire beforeunload
+  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") saveLastPlace(); });
+  // [노래]: which collection, which 왕국 노래, which cards are open, the searches -- saved after the click that changed them
+  document.addEventListener("click", function (e) {
+    if (e.target.closest && e.target.closest(".song-acc-head, .song-kind-tabs, .song-picker-modal, .song-ctrl-bar")) setTimeout(saveLastPlace, 50);
+  });
+  document.addEventListener("input", function (e) {
+    if (e.target.closest && e.target.closest(".song-kind-search")) setTimeout(saveLastPlace, 50);
+  });
 
   // Shared selection state for the WIZARD (대화 subtab) -- declared here (ahead of the WIZARD
   // section below, where it used to live) because renderCurrTalks() is invoked once,
@@ -10079,6 +10089,28 @@ function verifyDistribution(units, dist, pins) {
   // verse drops its "1." (the shown text keeps it). Full-song links are the JSON's jw.org links, as given.
   var songKindState = { kind: "kingdom", open: { original: {}, kids: {} }, q: { original: "", kids: "" } };
   var songKindIndex = {};
+  function songPlaceState() {
+    if (typeof songKindState === "undefined" || !songKindState) return null;   // called before this section ran
+    var open = { original: {}, kids: {} };
+    ["original", "kids"].forEach(function (k) { Object.keys(songKindState.open[k] || {}).forEach(function (id) { if (songKindState.open[k][id]) open[k][id] = true; }); });
+    return { kind: songKindState.kind, kingdom: currentSelectedSong, open: open, q: { original: songKindState.q.original || "", kids: songKindState.q.kids || "" } };
+  }
+  // The [노래] screen of the place saved by the previous visit (a reload comes back to the same collection, song and open cards)
+  function songPlaceRestore(p) {
+    if (!p || typeof p !== "object") return;
+    if (typeof p.kingdom === "number" && p.kingdom >= 1 && p.kingdom <= 999) currentSelectedSong = p.kingdom;
+    ["original", "kids"].forEach(function (k) {
+      if (p.open && p.open[k] && typeof p.open[k] === "object") {
+        songKindState.open[k] = {};
+        Object.keys(p.open[k]).forEach(function (id) { if (p.open[k][id] === true && /^[\w-]{1,20}$/.test(id)) songKindState.open[k][id] = true; });
+      }
+      if (p.q && typeof p.q[k] === "string") songKindState.q[k] = p.q[k].slice(0, 100);
+    });
+    if (["kingdom", "original", "kids"].indexOf(p.kind) < 0) return;
+    try { renderCurrSongs(); } catch (e) { /* the page may not show songs */ }
+    selectSongKind(p.kind);
+    ["original", "kids"].forEach(function (k) { var r = songKindRoot(k); if (r && r.dataset.rendered) renderSongKind(k); });
+  }
   function songKindData(kind) {
     var d = kind === "original" ? (typeof ORIGINAL_SONGS !== "undefined" && ORIGINAL_SONGS) : (typeof CHILDREN_SONGS !== "undefined" && CHILDREN_SONGS);
     return d || [];
@@ -15224,6 +15256,7 @@ function verifyDistribution(units, dist, pins) {
           }
         });
       }
+      if (saved.songs && typeof songPlaceRestore === "function") songPlaceRestore(saved.songs);
       if (saved.tab && panels[saved.tab]) {
         activateTab(saved.tab, false);
       }

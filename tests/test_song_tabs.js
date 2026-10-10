@@ -53,6 +53,9 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
     for (const site of SITES) {
       errs = [];
       await width(1280);
+      // a fresh visitor: the page saves the place it leaves (a reload comes back to it), so the origin's storage is cleared from a blank page
+      await cdp.send('Page.navigate', {url: 'about:blank'}); await sleep(200);
+      await cdp.send('Storage.clearDataForOrigin', {origin: `http://127.0.0.1:${PORT}`, storageTypes: 'local_storage'});
       await cdp.send('Page.navigate', {url: `http://127.0.0.1:${PORT}/${site}index.html`});
       for (let i = 0; i < 240; i++) { if (await E("document.readyState==='complete'&&typeof window.setLang==='function'")) break; await sleep(250); }
       await sleep(600);

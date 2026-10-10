@@ -157,9 +157,13 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
     cdp.on('Runtime.exceptionThrown', e => errs.push('exception ' + e.exceptionDetails.text + ' ' + ((e.exceptionDetails.exception || {}).description || '').slice(0, 160)));
     const E = async expr => { const r = await cdp.send('Runtime.evaluate', {expression: expr, awaitPromise: true, returnByValue: true, userGesture: true}); if (r.exceptionDetails) errs.push('eval ' + ((r.exceptionDetails.exception || {}).description || '').slice(0, 200)); return r.result.value; };
     let cfgScript = null;
+    // the saved place keeps everything but the [노래] screen (a reload comes back to it; here every case must start on 왕국 노래 1 again):
+    // a pagehide listener registered after the page's own removes it from what the page saves as it is left
+    const FORGET_SONG_PLACE = () => E("window.addEventListener('pagehide', () => { try { const k = 'vn-app-last-place-v1', p = JSON.parse(localStorage.getItem(k)); delete p.songs; localStorage.setItem(k, JSON.stringify(p)); } catch (e) { /* none */ } }); 1").catch(() => 0);
     const NAV = async (cfgJs) => {
       if (cfgScript) { await cdp.send('Page.removeScriptToEvaluateOnNewDocument', {identifier: cfgScript}); cfgScript = null; }
       if (cfgJs) cfgScript = (await cdp.send('Page.addScriptToEvaluateOnNewDocument', {source: cfgJs})).identifier;
+      await FORGET_SONG_PLACE(); await cdp.send('Page.navigate', {url: 'about:blank'}); await new Promise(r => setTimeout(r, 200));   // the page saves the [노래] screen it leaves; these cases start on 왕국 노래 1 again
       await cdp.send('Page.navigate', {url: `http://127.0.0.1:${PORT}/jeonju/index.html?fresh=${Date.now()}`});
       for (let i = 0; i < 240; i++) { if (await E("document.readyState==='complete'&&typeof window.setLang==='function'")) break; await sleep(250); }
       await sleep(800);
@@ -279,6 +283,7 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
     ok(st.ev.filter(x => x.startsWith('seek:')).every(x => x.startsWith('seek:' + TGT(2))) && st.ev.filter(x => x.startsWith('play:')).length === 1 && st.ev.some(x => x.startsWith('play:' + TGT(2).slice(0, 3))), `the first line's callbacks are stale: only the third line is seeked and played ${JSON.stringify(st.ev)}`);
     ok(!errs.length, `errors ${errs.join(' | ').slice(0, 300)}`); errs.length = 0;
     // collections 2 and 3, a mismatch and a missing recording: no button and no speech
+    await FORGET_SONG_PLACE(); await cdp.send('Page.navigate', {url: 'about:blank'}); await new Promise(r => setTimeout(r, 200));   // the page saves the [노래] screen it leaves; these cases start on 왕국 노래 1 again
     await cdp.send('Page.navigate', {url: `http://127.0.0.1:${PORT}/jeonju/index.html?fresh=${Date.now()}`});
     for (let i = 0; i < 240; i++) { if (await E("document.readyState==='complete'&&typeof window.setLang==='function'")) break; await sleep(250); }
     await sleep(800);
@@ -353,6 +358,7 @@ const ok = (c, m) => { checks++; if (!c) failures.push(m); };
     ok(q.tts === 0, `no speech was used anywhere (${q.tts}) ${JSON.stringify(q.ttsTexts)}`);
     ok(!q.overflow, 'no horizontal overflow');
     // widths: no overlap between a line's text and its buttons, no horizontal overflow
+    await FORGET_SONG_PLACE(); await cdp.send('Page.navigate', {url: 'about:blank'}); await new Promise(r => setTimeout(r, 200));   // the page saves the [노래] screen it leaves; these cases start on 왕국 노래 1 again
     await cdp.send('Page.navigate', {url: `http://127.0.0.1:${PORT}/jeonju/index.html?fresh=${Date.now()}`});
     for (let i = 0; i < 240; i++) { if (await E("document.readyState==='complete'&&typeof window.setLang==='function'")) break; await sleep(250); }
     await sleep(800);

@@ -101,6 +101,7 @@ function staticChecks() {
     for (const site of SITES) {
       errs = [];
       const n = site.replace('/', '');
+      await cdp.send('Page.navigate', {url: 'about:blank'}); await new Promise(r => setTimeout(r, 200)); await cdp.send('Storage.clearDataForOrigin', {origin: `http://127.0.0.1:${PORT}`, storageTypes: 'local_storage'});   // a fresh visitor (the page saves the place it leaves)
       await cdp.send('Page.navigate', {url: `http://127.0.0.1:${PORT}/${site}index.html`});
       for (let i = 0; i < 240; i++) { if (await E("document.readyState==='complete'&&typeof window.isAllowedJwOrgShareUrl==='function'")) break; await sleep(250); }
       await sleep(600);
