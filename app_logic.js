@@ -6325,6 +6325,19 @@
       return html + '</div>';
     }
 
+    // 네이버 베트남어 사전 (Korean UI only: a Korean-Vietnamese dictionary): the app / site of each device
+    var NAVER_DICT_LINKS = [
+      ["안드로이드용", "https://play.google.com/store/apps/details?id=com.nhn.android.naverdic&hl=ko&pli=1"],
+      ["아이폰/아이패드용", "https://apps.apple.com/app/id673085116"],
+      ["윈도우/맥북에서 접속", "https://dict.naver.com/vikodict/#/main"]
+    ];
+    function naverDictHtml() {
+      if (currentLang !== "ko") return "";
+      return '<div class="p-section"><h3>네이버 베트남어 사전</h3><div class="dict-links">' + NAVER_DICT_LINKS.map(function (l) {
+        return '<a class="dict-link" href="' + escapeAttr(l[1]) + '" target="_blank" rel="noopener noreferrer"><span class="dict-link-label">' + escapeHtml(l[0]) + '</span><span class="dict-link-url">' + escapeHtml(l[1]) + '</span></a>';
+      }).join("") + '</div></div>';
+    }
+
     var settingsHtml =
       '<div class="p-section"><div id="vi-region-settings" hidden><h3>' + TU("발음 듣기 목소리") + '</h3>' +
       '<div class="p-subsection"><h4>' + TU("지금 사용할 지역") + '</h4><div id="dialect-toggle-settings"></div></div>' +
@@ -6336,7 +6349,7 @@
       '<div class="p-subsection" id="language-voice-settings" hidden><h4>' + TU("언어 모드") + ' TTS (' + TU("뜻·해석 읽기 목소리") + ')</h4>' +
       '<p class="p-desc">' + TU("전체 듣기에서 단어 뜻이나 문장 해석도 함께 읽어드려요. 아래에서 현재 언어 모드(한국어·中文·English·日本語)로 읽어줄 목소리를 선택하세요.") + '</p>' +
       '<div id="voice-picker-lang"></div></div></div>' +
-      ttsGuideHtml();
+      ttsGuideHtml() + naverDictHtml();
 
     /* -- 베트남어 문자의 명칭 (own subtab) -- letter NAMEs (a[1], e.g. "bê", "xê") are read, not
        the bare letters themselves, both for 전체 듣기 and each cell's individual listen button. */
