@@ -293,6 +293,10 @@
     "원문": {"vi": "Nguyên văn", "cs": "Originál", "zh_cn": "原文", "zh": "原文", "en": "Original", "fr": "Texte original", "de": "Originaltext", "hu": "Eredeti szöveg", "id": "Teks asli", "ja": "原文", "pl": "Tekst oryginalny"},
     "초": {"vi": "giây", "cs": "s", "zh_cn": "秒", "zh": "秒", "en": "s", "fr": "s", "de": "s", "hu": "mp", "id": "dtk", "ja": "秒", "pl": "s"},
     "회": {"vi": "lần", "cs": "krát", "zh_cn": "次", "zh": "次", "en": "time", "fr": "fois", "de": "Mal", "hu": "alkalom", "id": "kali", "ja": "回", "pl": "razy"},
+    "읽기 속도": {"vi": "Tốc độ đọc", "cs": "Rychlost čtení", "zh_cn": "朗读速度", "zh": "朗讀速度", "en": "Reading speed", "fr": "Vitesse de lecture", "de": "Lesegeschwindigkeit", "hu": "Olvasási sebesség", "id": "Kecepatan membaca", "ja": "読み上げ速度", "pl": "Szybkość czytania"},
+    "이 기기의 운영체제에 맞춰 베트남어 읽기 속도를 정합니다. 뜻을 읽는 목소리에는 적용되지 않습니다. 1.00이 기본 속도입니다.": {"vi": "Đặt tốc độ đọc tiếng Việt theo hệ điều hành của thiết bị này. Không áp dụng cho giọng đọc nghĩa. 1.00 là tốc độ mặc định.", "cs": "Rychlost čtení vietnamštiny podle operačního systému tohoto zařízení. Netýká se hlasu pro význam. 1.00 je výchozí rychlost.", "zh_cn": "按本设备的操作系统设置越南语朗读速度。不影响读释义的声音。1.00 为默认速度。", "zh": "依本裝置的作業系統設定越南語朗讀速度。不影響讀釋義的聲音。1.00 為預設速度。", "en": "Sets the Vietnamese reading speed for this device’s operating system. It does not affect the voice that reads meanings. 1.00 is the default speed.", "fr": "Règle la vitesse de lecture du vietnamien pour le système de cet appareil. Sans effet sur la voix des traductions. 1.00 est la vitesse par défaut.", "de": "Stellt die Lesegeschwindigkeit des Vietnamesischen für das Betriebssystem dieses Geräts ein. Die Stimme für Bedeutungen bleibt unberührt. 1.00 ist die Standardgeschwindigkeit.", "hu": "A vietnámi olvasási sebességet állítja be az eszköz operációs rendszeréhez. A jelentést felolvasó hangra nem hat. Az 1.00 az alapértelmezett sebesség.", "id": "Mengatur kecepatan membaca bahasa Vietnam untuk sistem operasi perangkat ini. Tidak memengaruhi suara pembaca arti. 1.00 adalah kecepatan default.", "ja": "この端末のOSに合わせてベトナム語の読み上げ速度を設定します。意味を読む音声には影響しません。1.00が標準の速さです。", "pl": "Ustawia szybkość czytania wietnamskiego dla systemu tego urządzenia. Nie dotyczy głosu czytającego znaczenia. 1.00 to prędkość domyślna."},
+    "이 기기": {"vi": "Thiết bị này", "cs": "Toto zařízení", "zh_cn": "本设备", "zh": "本裝置", "en": "This device", "fr": "Cet appareil", "de": "Dieses Gerät", "hu": "Ez az eszköz", "id": "Perangkat ini", "ja": "この端末", "pl": "To urządzenie"},
+    "들어보기": {"vi": "Nghe thử", "cs": "Vyzkoušet", "zh_cn": "试听", "zh": "試聽", "en": "Try it", "fr": "Écouter", "de": "Probehören", "hu": "Meghallgatás", "id": "Coba dengar", "ja": "試し聞き", "pl": "Posłuchaj"},
     "베트남어 반복 듣기 횟수": {"vi": "Số lần nghe lặp lại tiếng Việt", "cs": "Počet opakování vietnamštiny", "zh_cn": "越南语重复播放次数", "zh": "越南語重複播放次數", "en": "Vietnamese repeat count", "fr": "Nombre de répétitions audio en vietnamien", "de": "Wiederholungen des vietnamesischen Audios", "hu": "Vietnámi ismétlések száma", "id": "Jumlah pengulangan bahasa Vietnam", "ja": "ベトナム語の繰り返し再生回数", "pl": "Liczba powtórzeń nagrania wietnamskiego"},
     "발음 듣기 버튼을 누르면 베트남어를 몇 번 반복해서 들려줄지 선택하세요.": {"vi": "Chọn số lần phát lại tiếng Việt mỗi khi bạn nhấn nút nghe phát âm.", "cs": "Vyberte, kolikrát se má vietnamský text zopakovat po stisknutí tlačítka poslechu.", "zh_cn": "选择按下发音按钮时，越南语要重复播放几次。", "zh": "選擇按下發音按鈕時，越南語要重複播放幾次。", "en": "Choose how many times Vietnamese audio repeats each time you press a listen button.", "fr": "Choisissez combien de fois répéter l'audio vietnamien lorsque vous appuyez sur le bouton d'écoute.", "de": "Wählen Sie, wie oft das vietnamesische Audio beim Tippen auf die Audio-Schaltfläche wiederholt werden soll.", "hu": "Válassza ki, hányszor ismétlődjön meg a vietnámi szöveg a meghallgatás gomb megnyomásakor.", "id": "Pilih berapa kali audio bahasa Vietnam diulang setiap kali menekan tombol dengarkan.", "ja": "発音を聞くボタンを押したときに、ベトナム語を何回繰り返して再生するか選んでください。", "pl": "Wybierz, ile razy ma być powtórzone nagranie wietnamskie po naciśnięciu przycisku odsłuchu."},
     "베트남어 성조 ↔ 중국어(표준중국어) 성조 대응": {"vi": "Tương ứng thanh điệu tiếng Việt ↔ thanh điệu tiếng Trung (tiếng phổ thông)", "cs": "Korespondence vietnamských a mandarínských tónů", "zh_cn": "越南语声调 ↔ 中文（普通话）声调对应", "zh": "越南語聲調 ↔ 中文（普通話）聲調對應", "en": "Vietnamese Tone ↔ Mandarin Chinese Tone Correspondence", "fr": "Correspondance des tons : vietnamien ↔ mandarin standard", "de": "Vietnamesische Töne ↔ Mandarin-Töne Entsprechung", "hu": "Vietnámi tónusok és a mandarin tónusok megfelelése", "id": "Kesesuaian Nada Vietnam ↔ Mandarin", "ja": "ベトナム語の声調 ↔ 中国語（普通話）の声調対応", "pl": "Odpowiedniość tonów: wietnamski ↔ standardowy mandaryński"},
@@ -1765,10 +1769,46 @@
       var el = document.getElementById(id);
       if (el) renderViRepeatToggle(el);
     });
+    renderTtsRateSettings();
     syncAudioOptions();
   }
   onViRepeatChange(renderAllViRepeatToggles);
   onLangChange(renderAllViRepeatToggles);
+
+  // 읽기 속도: one slider per operating system (this device's row is marked and the only one that is heard here)
+  function renderTtsRateSettings() {
+    var root = document.getElementById("tts-rate-settings");
+    if (!root) return;
+    var mine = ttsDeviceOs(), list = TTS_OS_LIST.filter(function (o) { return o[0] === mine; });
+    if (!list.length) list.push([mine, TU("이 기기")]);   // another system (Linux, ChromeOS ...)
+    function fmt(v) { return v.toFixed(2); }
+    root.innerHTML = '<div class="tts-rate-list">' + list.map(function (o) {
+      var v = typeof ttsRates[o[0]] === "number" ? ttsRates[o[0]] : 1;
+      return '<div class="tts-rate-row' + (o[0] === mine ? " is-mine" : "") + '" data-os="' + o[0] + '">' +
+        '<span class="tts-rate-os">' + escapeHtml(o[1]) + '</span>' +
+        '<input type="range" class="tts-rate-slider" min="' + TTS_RATE_MIN + '" max="' + TTS_RATE_MAX + '" step="0.05" value="' + v + '" aria-label="' + escapeAttr(o[1] + " " + TU("읽기 속도")) + '">' +
+        '<span class="tts-rate-val">' + fmt(v) + '</span>' +
+        '<button type="button" class="tts-rate-reset" aria-label="' + escapeAttr(TU("기본")) + '">' + TU("기본") + '</button>' +
+        (o[0] === mine ? '<button type="button" class="tts-rate-try">' + TU("들어보기") + '</button>' : '') + '</div>';
+    }).join("") + '</div>';
+    root.querySelectorAll(".tts-rate-row").forEach(function (row) {
+      var os = row.getAttribute("data-os"), slider = row.querySelector(".tts-rate-slider"), val = row.querySelector(".tts-rate-val");
+      slider.addEventListener("input", function () {
+        var v = Math.round(parseFloat(slider.value) * 100) / 100;
+        if (!(v >= TTS_RATE_MIN && v <= TTS_RATE_MAX)) return;
+        if (v === 1) delete ttsRates[os]; else ttsRates[os] = v;
+        saveTtsRates();
+        val.textContent = fmt(v);
+      });
+      row.querySelector(".tts-rate-reset").addEventListener("click", function () {
+        delete ttsRates[os]; saveTtsRates(); slider.value = 1; val.textContent = fmt(1);
+      });
+      var tryBtn = row.querySelector(".tts-rate-try");
+      if (tryBtn) tryBtn.addEventListener("click", function () { stopAllSpeech(); speakOnce("Xin chào, tôi đang học tiếng Việt."); });
+    });
+  }
+  onLangChange(renderTtsRateSettings);
+  window.__ttsRates = { os: ttsDeviceOs, factor: ttsRateFactor, render: renderTtsRateSettings, speak: function (o) { robustSpeak(o, function () {}); } };   // test hook
 
   // "전체 듣기" (read-all) can also read a word's meaning / a sentence's translation right after
   // the Vietnamese, in whichever UI language mode (ko/zh/en/ja) is currently active -- this is a
@@ -2142,6 +2182,29 @@
   // unlocked on iOS -- later speak() calls of the runs (they follow from timers, after a settle, not inside a tap) then belong to a
   // session the engine has seen start from a gesture. Apple WebKit only, once per armed session (pagehide / background resets it).
   var IS_IOS_DEVICE = /iPhone|iPad|iPod/i.test(navigator.userAgent || "") || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  // Reading speed of the Vietnamese, set in 발음 > 설정 for the operating system of this device: a factor on the app's own rate (1 = the
+  // default, 0.92). Only the Vietnamese is affected, never the meaning / translation voices. Each system keeps its own factor (a stored
+  // browser only ever shows and uses its own).
+  var TTS_RATE_KEY = "vn-app-tts-rate-v1", TTS_RATE_MIN = 0.5, TTS_RATE_MAX = 1.5;
+  var TTS_OS_LIST = [["windows", "Windows"], ["mac", "macOS"], ["ios", "iPhone·iPad"], ["android", "Android"]];
+  function ttsDeviceOs() {
+    var ua = navigator.userAgent || "";
+    if (IS_IOS_DEVICE) return "ios";
+    if (IS_MAC_DESKTOP) return "mac";
+    if (/Android/i.test(ua)) return "android";
+    if (/Windows/i.test(ua)) return "windows";
+    return "other";
+  }
+  var ttsRates = {};
+  try {
+    var savedTtsRates = JSON.parse(window.localStorage.getItem(TTS_RATE_KEY) || "{}");
+    Object.keys(savedTtsRates || {}).forEach(function (k) {
+      var v = savedTtsRates[k];
+      if (typeof v === "number" && v >= TTS_RATE_MIN && v <= TTS_RATE_MAX) ttsRates[k] = v;
+    });
+  } catch (eTtsRate) { /* no-op */ }
+  function saveTtsRates() { try { window.localStorage.setItem(TTS_RATE_KEY, JSON.stringify(ttsRates)); } catch (e) { /* no-op */ } }
+  function ttsRateFactor() { var v = ttsRates[ttsDeviceOs()]; return typeof v === "number" ? v : 1; }
   var speechPrimed = false;
   var SPEECH_PRIME_ON = false;
   try { SPEECH_PRIME_ON = window.localStorage.getItem("vn-app-tts-prime") === "1" || /[?&]ttsprime=1/.test(location.search); } catch (ePrimeOn) { /* no-op */ }
@@ -2430,7 +2493,9 @@
       if (run.ended || settled) return;
       var u = new SpeechSynthesisUtterance(opts.text);
       if (opts.lang) u.lang = opts.lang;
-      if (opts.rate) u.rate = opts.rate;
+      // the reading speed of this device's system (발음 > 설정) is for the Vietnamese only: the meaning / translation voices keep their own rate
+      var rateFactor = /^vi(-|_|$)/i.test(opts.lang || "") ? ttsRateFactor() : 1;
+      if (opts.rate || rateFactor !== 1) u.rate = Math.min(2, Math.max(0.3, (opts.rate || 1) * rateFactor));
       var voice = resolveSpeechVoice(opts.lang, opts.voice);
       if (voice) { u.voice = voice; if (voice.lang) u.lang = voice.lang; }
       cur = u;
@@ -6346,6 +6411,9 @@
       '<div class="p-subsection"><h4>' + TU("베트남어 반복 듣기 횟수") + '</h4>' +
       '<p class="p-desc">' + TU("발음 듣기 버튼을 누르면 베트남어를 몇 번 반복해서 들려줄지 선택하세요.") + '</p>' +
       '<div id="repeat-toggle-settings"></div></div>' +
+      '<div class="p-subsection"><h4>' + TU("읽기 속도") + '</h4>' +
+      '<p class="p-desc">' + TU("이 기기의 운영체제에 맞춰 베트남어 읽기 속도를 정합니다. 뜻을 읽는 목소리에는 적용되지 않습니다. 1.00이 기본 속도입니다.") + '</p>' +
+      '<div id="tts-rate-settings"></div></div>' +
       '<div class="p-subsection" id="language-voice-settings" hidden><h4>' + TU("언어 모드") + ' TTS (' + TU("뜻·해석 읽기 목소리") + ')</h4>' +
       '<p class="p-desc">' + TU("전체 듣기에서 단어 뜻이나 문장 해석도 함께 읽어드려요. 아래에서 현재 언어 모드(한국어·中文·English·日本語)로 읽어줄 목소리를 선택하세요.") + '</p>' +
       '<div id="voice-picker-lang"></div></div></div>' +
