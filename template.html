@@ -815,6 +815,14 @@
   .hanoi-table { width: 100%; border-collapse: collapse; margin: 0 0 14px; background: var(--surface); }
   .hanoi-table th { background: var(--chip-bg); font-size: 0.74rem; font-weight: 800; color: var(--ink-soft); padding: 4px 6px; border: 1px solid var(--border); }
   .hanoi-table td { border: 1px solid var(--border); padding: 4px 8px; text-align: center; }
+  .hanoi-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; align-items: start; }
+  .hanoi-col { min-width: 0; }
+  .hanoi-grid .hanoi-table { margin-bottom: 8px; }
+  .hanoi-grid .hanoi-table th { font-size: 0.6rem; line-height: 1.25; padding: 3px 3px; }
+  .hanoi-grid .hanoi-table td { padding: 3px 4px; }
+  .hanoi-grid .hanoi-letter { font-size: 0.95rem; }
+  .hanoi-grid .hanoi-letter .speak-btn { min-width: 26px; min-height: 26px; width: 26px; height: 26px; margin-left: 2px; }
+  .hanoi-grid .hanoi-ko { font-size: 1.05rem; }
   .hanoi-letter { font-weight: 800; font-size: 1.15rem; white-space: nowrap; }
   .hanoi-letter .speak-btn { min-width: 30px; min-height: 30px; width: 30px; height: 30px; margin-left: 4px; vertical-align: middle; }
   .hanoi-ko { font-weight: 800; font-size: 1.25rem; }
