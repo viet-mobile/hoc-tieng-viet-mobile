@@ -3755,11 +3755,17 @@
         card.dataset.anchor = "pdf-sentence-" + (rowIndex + 1);
 
         var headerRow = document.createElement("div");
-        headerRow.style.cssText = "display:flex;align-items:flex-start;justify-content:space-between;gap:8px;";
+        headerRow.className = "pdf-sent-head";   // number, sentence (takes the rest), then ★ and the speaker side by side at the right edge
+
+        // the sentence's number in the list (the same number as its anchor "pdf-sentence-N"), so a sentence can be named
+        var numBadge = document.createElement("span");
+        numBadge.className = "pdf-sent-num";
+        numBadge.textContent = String(rowIndex + 1);
+        headerRow.appendChild(numBadge);
 
         var viText = document.createElement("div");
         viText.className = "vn font-bold";
-        viText.style.cssText = "font-size:1.05rem;line-height:1.45;color:var(--ink);";
+        viText.style.cssText = "font-size:1.05rem;line-height:1.45;color:var(--ink);flex:1;min-width:0;";
         viText.textContent = row.vi || "";
         headerRow.appendChild(viText);
 
@@ -4349,7 +4355,8 @@
     if (!IS_JEONJU || !root) return;
     root.querySelectorAll(".speak-btn[data-speak]").forEach(function (b) {
       var vi = b.dataset.speak || "";
-      if (vi.trim().split(/\s+/).length < 3 || b.closest("#phrasebook-root")) return;
+      // every sentence of [문장] > [일상 생활] gets a star (a two-word sentence too), so the column of stars is complete
+      if ((vi.trim().split(/\s+/).length < 3 && !b.closest(".pdf-sent-head")) || b.closest("#phrasebook-root")) return;
       var near = b.previousElementSibling;
       if (near && near.classList.contains("phrase-star")) { near.dataset.on = String(hasPhrase(vi)); return; }
       var other = b.nextElementSibling;   // a star after the speaker, left by an earlier pass
