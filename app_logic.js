@@ -6273,6 +6273,31 @@
   // [발음] > [차이]: PRON_COMPARISON (pronunciation_comparison/ at build time) in the UI
   // language. The section comparing Vietnamese with the UI language comes first and starts open;
   // the rest follow in PRON_COMPARISON.order (the order the Vietnamese UI uses as is).
+  /* -- [발음][차이]: 하노이 발음에 가장 가까운 한국어 표기 방식, under the Korean / Vietnamese consonants (Korean UI only) -- */
+  function hanoiChartHtml() {
+    if (typeof HANOI_CHART === "undefined" || currentLang !== "ko") return "";
+    function btn(speak) { return '<button class="speak-btn" data-speak="' + escapeAttr(speak) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>'; }
+    function tone(t) { return t ? " hanoi-tone-" + t : ""; }
+    var h = '<p class="p-desc">하노이(북부) 발음에 가장 가까운 한국어 표기를 나타낸 표입니다. 글자를 눌러 소리를 들어 보세요.</p>';
+    h += '<table class="hanoi-table"><thead><tr><th>베트남어 자음</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
+    HANOI_CHART.initials.forEach(function (g) {
+      g.letters.forEach(function (l, i) {
+        h += '<tr><td class="hanoi-letter vn' + tone(l[1]) + '">' + escapeHtml(l[0]) + btn(l[0].replace(/-$/, "") + "ơ") + '</td>' +
+          (i === 0 ? '<td class="hanoi-ko" rowspan="' + g.letters.length + '">' + escapeHtml(g.ko) + '</td>' : '') + '</tr>';
+      });
+    });
+    h += '</tbody></table><table class="hanoi-table"><thead><tr><th>베트남어 모음</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
+    HANOI_CHART.vowels.forEach(function (v) {
+      h += '<tr class="hanoi-vrow' + tone(v[1]) + '"><td class="hanoi-letter vn">' + escapeHtml(v[0]) + btn(v[0]) + '</td><td class="hanoi-ko">' +
+        v[2].map(function (p) { return p[1] ? '<small>' + escapeHtml(p[0]) + '</small>' : escapeHtml(p[0]); }).join("") + '</td></tr>';
+    });
+    h += '</tbody></table><table class="hanoi-table"><thead><tr><th>베트남어 받침</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
+    HANOI_CHART.finals.forEach(function (f) {
+      h += '<tr><td class="hanoi-letter vn">' + escapeHtml(f[0]) + '</td><td class="hanoi-ko">' + escapeHtml(f[1]) + '</td></tr>';
+    });
+    return h + '</tbody></table>';
+  }
+
   function pronDiffHtml() {
     if (typeof PRON_COMPARISON === "undefined" || !PRON_COMPARISON || !PRON_COMPARISON.langs) return "";
     var content = PRON_COMPARISON.langs[currentLang] || PRON_COMPARISON.langs.en;
@@ -6291,10 +6316,15 @@
         '<div class="group-head-row"><button class="group-head"><span class="pron-cmp-title">' + escapeHtml(title) + '</span>' + currChev() + '</button></div>' +
         '<div class="group-body">' + bodyHtml + '</div></div>';
     }
+    // the Hanoi chart (Korean UI only) sits right under the Korean / Vietnamese consonants comparison
+    function hanoiCardHtml() {
+      var chart = hanoiChartHtml();
+      return chart ? card("pron-cmp-part", "하노이 발음에 가장 가까운 한국어 표기 방식", chart, false) : "";
+    }
     function partsHtml(sec) {
       return card("pron-cmp-part", content.ui.common, blocksHtml(sec.common), true) +
         card("pron-cmp-part", content.ui.diff, blocksHtml(sec.diff), true) +
-        (sec.consonants ? consonantsHtml(sec.consonants) : "");
+        (sec.consonants ? consonantsHtml(sec.consonants) + hanoiCardHtml() : "");
     }
     // Korean <-> Vietnamese consonant systems (pronunciation_comparison CONSONANTS): one folding part with a folding
     // card per topic; regional comparisons reuse the [남북 발음] cards; example words are read in Vietnamese only
@@ -6522,31 +6552,6 @@
         '<div class="group-body">' + contentHtml + '</div></div>';
     }
 
-    /* -- 하노이 발음에 가장 가까운 한국어 표기 (Hangul reading aid: Korean UI only) -- */
-    function hanoiChartHtml() {
-      if (typeof HANOI_CHART === "undefined" || currentLang !== "ko") return "";
-      function btn(speak) { return '<button class="speak-btn" data-speak="' + escapeAttr(speak) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>'; }
-      function tone(t) { return t ? " hanoi-tone-" + t : ""; }
-      var h = '<p class="p-desc">하노이(북부) 발음에 가장 가까운 한국어 표기를 나타낸 표입니다. 글자를 눌러 소리를 들어 보세요.</p>';
-      h += '<table class="hanoi-table"><thead><tr><th>베트남어 자음</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
-      HANOI_CHART.initials.forEach(function (g) {
-        g.letters.forEach(function (l, i) {
-          h += '<tr><td class="hanoi-letter vn' + tone(l[1]) + '">' + escapeHtml(l[0]) + btn(l[0].replace(/-$/, "") + "ơ") + '</td>' +
-            (i === 0 ? '<td class="hanoi-ko" rowspan="' + g.letters.length + '">' + escapeHtml(g.ko) + '</td>' : '') + '</tr>';
-        });
-      });
-      h += '</tbody></table><table class="hanoi-table"><thead><tr><th>베트남어 모음</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
-      HANOI_CHART.vowels.forEach(function (v) {
-        h += '<tr class="hanoi-vrow' + tone(v[1]) + '"><td class="hanoi-letter vn">' + escapeHtml(v[0]) + btn(v[0]) + '</td><td class="hanoi-ko">' +
-          v[2].map(function (p) { return p[1] ? '<small>' + escapeHtml(p[0]) + '</small>' : escapeHtml(p[0]); }).join("") + '</td></tr>';
-      });
-      h += '</tbody></table><table class="hanoi-table"><thead><tr><th>베트남어 받침</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
-      HANOI_CHART.finals.forEach(function (f) {
-        h += '<tr><td class="hanoi-letter vn">' + escapeHtml(f[0]) + '</td><td class="hanoi-ko">' + escapeHtml(f[1]) + '</td></tr>';
-      });
-      return h + '</tbody></table>';
-    }
-
     /* -- 베트남어 TELEX 키보드 입력법 (Korean UI only) -- */
     function telexGuideHtml() {
       if (typeof TELEX_GUIDE === "undefined" || currentLang !== "ko") return "";
@@ -6560,7 +6565,6 @@
     }
 
     var jamoHtml = '<div class="p-section">' +
-      (currentLang === "ko" && typeof HANOI_CHART !== "undefined" ? groupSection("hanoi", "하노이 발음에 가장 가까운 한국어 표기 방식", hanoiChartHtml(), true) : "") +
       (currentLang === "ko" && typeof TELEX_GUIDE !== "undefined" ? groupSection("telex", "베트남어 TELEX 키보드 입력법", telexGuideHtml(), false) : "") +
       groupSection("alphabet", TU("문자"), alphabetHtml, true) +
       groupSection("vowels", TU("모음"), vowelsHtml, false) +
