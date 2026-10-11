@@ -8243,6 +8243,33 @@ function verifyDistribution(units, dist, pins) {
       if (groupNaming) html += '<div class="curr-groups-note">' + escapeHtml(groupNaming) + '</div>';
       html += '</div>';
     }
+    // 강사 면담 (JEONJU): who is interviewed after which class (15 minutes); a past date is dimmed, the next one is marked.
+    if (typeof INSTRUCTOR_INTERVIEWS !== "undefined" && INSTRUCTOR_INTERVIEWS.slots && INSTRUCTOR_INTERVIEWS.slots.length) {
+      var callNames = {};
+      if (typeof STUDY_GROUPS !== "undefined" && STUDY_GROUPS.groups) STUDY_GROUPS.groups.forEach(function (g) { g.members.forEach(function (m) { callNames[m[1]] = m[0]; }); });
+      var nowD = new Date(), todayIso = nowD.getFullYear() + "-" + ("0" + (nowD.getMonth() + 1)).slice(-2) + "-" + ("0" + nowD.getDate()).slice(-2);
+      var nextIso = "";
+      INSTRUCTOR_INTERVIEWS.slots.forEach(function (sl) { if (!nextIso && sl.date >= todayIso) nextIso = sl.date; });
+      var intLocale = { zh_cn: "zh-CN", zh: "zh-TW" }[currentLang] || currentLang;
+      function interviewDay(iso) {
+        var p = iso.split("-"), d = new Date(+p[0], +p[1] - 1, +p[2], 12);
+        try { return d.toLocaleDateString(intLocale, { month: "numeric", day: "numeric", weekday: "short" }); } catch (eDay) { return iso; }
+      }
+      var intTitle = T(INSTRUCTOR_INTERVIEWS.title), intNote = T(INSTRUCTOR_INTERVIEWS.note);
+      html += '<div class="curr-groups curr-interviews"><div class="curr-groups-head">' + escapeHtml(intTitle) +
+        (currentLang === "ko" ? '<span class="curr-groups-head-vi vn">' + escapeHtml(INSTRUCTOR_INTERVIEWS.title.vi) + '</span>' : '') + '</div>';
+      if (intNote) html += '<div class="curr-groups-note">' + escapeHtml(intNote) + '</div>';
+      INSTRUCTOR_INTERVIEWS.slots.forEach(function (sl) {
+        html += '<div class="curr-group-row curr-interview-row' + (sl.date < todayIso ? " is-past" : "") + (sl.date === nextIso ? " is-next" : "") + '">' +
+          '<div class="curr-interview-date">' + escapeHtml(interviewDay(sl.date)) + '</div><div class="curr-group-members">';
+        sl.members.forEach(function (name) {
+          html += '<span class="curr-group-member"><span class="vn">' + escapeHtml(callNames[name] || name) + '</span>' +
+            (callNames[name] ? ' <span class="curr-group-ko">(' + escapeHtml(name) + ')</span>' : '') + '</span>';
+        });
+        html += '</div></div>';
+      });
+      html += '</div>';
+    }
 
     if (sched && sched.preliminaryMeeting) {
       html += courseServiceHtml("prelim");

@@ -116,6 +116,43 @@ JEONJU_STUDY_GROUPS = {
     ],
 }
 
+
+# 강사 면담 (instructor interviews): every class from 2026-10-17, 15 minutes after the class, in this order of the listed names (one line
+# per class). No interview on 2026-10-31 or on a cancelled class day; a moved class (JEONJU_RESCHEDULES) keeps its interview on the new
+# date. The dates follow the class calendar above, so a changed cancellation / move shows up here by editing those lists only.
+_INTERVIEW_FROM = "2026-10-17"
+_INTERVIEW_SKIP = {"2026-10-31"}
+_INTERVIEW_ORDER = [
+    ["이종명", "이주옥", "이제희", "이제아"], ["한도희", "서주연", "한정우"], ["김종배", "최미순"], ["박정환", "원혜진", "박유나"],
+    ["이수연"], ["최영주"], ["이서희"], ["유계화"], ["박철현"], ["한상현"], ["송제홍"], ["김동주"], ["김영임"], ["김재윤", "오호경"],
+]
+
+
+def _interview_dates():
+    moved = {r["date"]: r["newDate"] for r in JEONJU_RESCHEDULES}
+    cancelled = {c["date"] for c in JEONJU_CANCELLATIONS}
+    out, cur = [], JEONJU_START
+    while cur <= JEONJU_END:
+        iso = cur.isoformat()
+        cur += datetime.timedelta(days=JEONJU_INTERVAL_DAYS)
+        if iso in cancelled:
+            continue
+        iso = moved.get(iso, iso)
+        if iso >= _INTERVIEW_FROM and iso not in _INTERVIEW_SKIP:
+            out.append(iso)
+    return out
+
+
+_INTERVIEW_DATES = _interview_dates()
+assert len(_INTERVIEW_DATES) == len(_INTERVIEW_ORDER), (len(_INTERVIEW_DATES), len(_INTERVIEW_ORDER))
+JEONJU_INTERVIEWS = {
+    "title": {"ko": "강사 면담", "vi": "Gặp riêng giảng viên", "en": "Instructor interviews"},
+    "note": {"ko": "매주 수업을 마치고 15분간 진행합니다. (10월 31일과 휴강일에는 면담이 없습니다.)",
+             "vi": "Mỗi tuần sau buổi học, kéo dài 15 phút. (Không có buổi gặp vào ngày 31/10 và những ngày nghỉ học.)",
+             "en": "Held for 15 minutes after each class. (No interviews on October 31 or on cancelled class days.)"},
+    "slots": [{"date": d, "members": m} for d, m in zip(_INTERVIEW_DATES, _INTERVIEW_ORDER)],
+}
+
 # Every class, from the preliminary meeting to graduation, opens and closes with a Vietnamese song and prayer.
 # Prayer assignments per class ("prelim" = 2026-10-03, then source week 1-16): [opening, closing], each
 # [Korean name, prayer language "ko"/"vi"]. 김한빈 always prays in Vietnamese. 한정우 (unbaptized publisher) is not assigned.
