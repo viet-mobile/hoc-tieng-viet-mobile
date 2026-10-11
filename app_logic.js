@@ -6273,7 +6273,7 @@
   // [발음] > [차이]: PRON_COMPARISON (pronunciation_comparison/ at build time) in the UI
   // language. The section comparing Vietnamese with the UI language comes first and starts open;
   // the rest follow in PRON_COMPARISON.order (the order the Vietnamese UI uses as is).
-  /* -- [발음][차이]: 하노이 발음에 가장 가까운 한국어 표기 방식, under the Korean / Vietnamese consonants (Korean UI only) -- */
+  /* -- [발음][자모]: 하노이 발음에 가장 가까운 한국어 표기 방식, under [자음] (Korean UI only) -- */
   function hanoiChartHtml() {
     if (typeof HANOI_CHART === "undefined" || currentLang !== "ko") return "";
     function btn(speak) { return '<button class="speak-btn" data-speak="' + escapeAttr(speak) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>'; }
@@ -6316,15 +6316,10 @@
         '<div class="group-head-row"><button class="group-head"><span class="pron-cmp-title">' + escapeHtml(title) + '</span>' + currChev() + '</button></div>' +
         '<div class="group-body">' + bodyHtml + '</div></div>';
     }
-    // the Hanoi chart (Korean UI only) sits right under the Korean / Vietnamese consonants comparison
-    function hanoiCardHtml() {
-      var chart = hanoiChartHtml();
-      return chart ? card("pron-cmp-part", "하노이 발음에 가장 가까운 한국어 표기 방식", chart, false) : "";
-    }
     function partsHtml(sec) {
       return card("pron-cmp-part", content.ui.common, blocksHtml(sec.common), true) +
         card("pron-cmp-part", content.ui.diff, blocksHtml(sec.diff), true) +
-        (sec.consonants ? consonantsHtml(sec.consonants) + hanoiCardHtml() : "");
+        (sec.consonants ? consonantsHtml(sec.consonants) : "");
     }
     // Korean <-> Vietnamese consonant systems (pronunciation_comparison CONSONANTS): one folding part with a folding
     // card per topic; regional comparisons reuse the [남북 발음] cards; example words are read in Vietnamese only
@@ -6569,6 +6564,7 @@
       groupSection("alphabet", TU("문자"), alphabetHtml, true) +
       groupSection("vowels", TU("모음"), vowelsHtml, false) +
       groupSection("consonants", TU("자음"), consHtml, false) +
+      (currentLang === "ko" && typeof HANOI_CHART !== "undefined" ? groupSection("hanoi", "하노이 발음에 가장 가까운 한국어 표기 방식", hanoiChartHtml(), false) : "") +
       '</div>';
 
     var tonesCombinedHtml = '<div class="p-section">' +
