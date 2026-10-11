@@ -6291,7 +6291,8 @@
     h += '</tbody></table>';
     h += '<table class="hanoi-table"><thead><tr><th>베트남어 받침</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
     HANOI_CHART.finals.forEach(function (f) {
-      h += '<tr><td class="hanoi-letter vn">' + escapeHtml(f[0]) + '</td><td class="hanoi-ko">' + escapeHtml(f[1]) + '</td></tr>';
+      h += '<tr><td class="hanoi-letter vn">' + escapeHtml(f[0]) + '</td><td class="hanoi-ko">' + escapeHtml(f[1]) +
+        (f[2] ? '<small class="hanoi-final-note">' + escapeHtml(f[2]) + '</small>' : '') + '</td></tr>';
     });
     h += '</tbody></table></div><div class="hanoi-col">';
     h += '<table class="hanoi-table"><thead><tr><th>베트남어 모음</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
@@ -6300,6 +6301,7 @@
         v[2].map(function (p) { return p[1] ? '<small>' + escapeHtml(p[0]) + '</small>' : escapeHtml(p[0]); }).join("") + '</td></tr>';
     });
     h += '</tbody></table></div></div>';
+    if (HANOI_CHART.footnote) h += '<p class="p-desc hanoi-footnote">' + escapeHtml(HANOI_CHART.footnote) + '</p>';
     if (typeof HANOI_EXAMPLES !== "undefined" && HANOI_EXAMPLES.length) {
       h += '<table class="hanoi-table hanoi-examples"><thead><tr><th>베트남어 예제</th><th>하노이 발음에 가장 가까운 한국어 표기</th><th>뜻</th></tr></thead><tbody>' +
         HANOI_EXAMPLES.map(function (r) {
