@@ -6299,7 +6299,14 @@
       h += '<tr class="hanoi-vrow' + tone(v[1]) + '"><td class="hanoi-letter vn">' + escapeHtml(v[0]) + btn(v[0]) + '</td><td class="hanoi-ko">' +
         v[2].map(function (p) { return p[1] ? '<small>' + escapeHtml(p[0]) + '</small>' : escapeHtml(p[0]); }).join("") + '</td></tr>';
     });
-    return h + '</tbody></table></div></div>';
+    h += '</tbody></table></div></div>';
+    if (typeof HANOI_EXAMPLES !== "undefined" && HANOI_EXAMPLES.length) {
+      h += '<table class="hanoi-table hanoi-examples"><thead><tr><th>베트남어 예제</th><th>하노이 발음에 가장 가까운 한국어 표기</th><th>뜻</th></tr></thead><tbody>' +
+        HANOI_EXAMPLES.map(function (r) {
+          return '<tr><td class="hanoi-ex-vi vn">' + escapeHtml(r[0]) + btn(r[0]) + '</td><td class="hanoi-ko">' + escapeHtml(r[1]) + '</td><td class="hanoi-ex-mean">' + escapeHtml(r[2]) + '</td></tr>';
+        }).join("") + '</tbody></table>';
+    }
+    return h;
   }
 
   function pronDiffHtml() {

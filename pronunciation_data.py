@@ -1349,3 +1349,19 @@ TELEX_GUIDE = {
     "cancel": ["z", "성조 취소"],
     "note": "성조는 모음 바로 뒤에서 찍으셔도 되고 단어를 다 찍고 나서 찍어도 됩니다.",
 }
+
+
+# [발음][자모] "하노이 발음에 가장 가까운 한국어 표기 방식": the Vietnamese examples under the chart, as supplied (an image: [example, notation, meaning]).
+HANOI_EXAMPLES = [
+    ["Tháp Canh", "탑까인", "파수대"],
+    ["Nhân Chứng", "년쯩", "증인"],
+    ["Giê-hô-va", "제호ㅸㅏ", "여호와"],
+    ["Kinh Thánh", "낀 타인", "성경"],
+    ["hội thánh", "호이 타인", "회중"],
+    ["nhóm họp", "뇸 홉", "집회"],
+    ["bài hát", "바이 핫", "노래"],
+    ["tiếng Việt", "띠엥 ㅸㅣ엣", "베트남어"],
+    ["học hỏi", "혹 호이", "공부하다"],
+    ["chúng ta", "쭘 따", "우리"],
+    ["anh chị", "아인 찌", "형제 자매"],
+]
