@@ -152,11 +152,12 @@ def apply_brand(html_text, site):
              f'<link rel="icon" type="image/png" sizes="32x32" href="brand/{BRAND_ICON_FILES["png32"]}">\n'
              f'<link rel="apple-touch-icon" sizes="180x180" href="brand/{BRAND_ICON_FILES["apple"]}">')
     html_text = html_text.replace(VIETNAMESE_ICON_LINKS, links, 1)
-    # Simplified Chinese glyphs (the shared font link has only KR/TC/JP): Noto Sans SC for zh-CN text.
-    tc = "&family=Noto+Sans+TC:"
-    if tc not in html_text:
-        raise SystemExit(f"[{site}] template.html: Google Fonts link without Noto Sans TC")
-    html_text = html_text.replace(tc, "&family=Noto+Sans+SC:wght@400;500;600;700;900" + tc, 1)
+    # Simplified Chinese glyphs (the shared font link has only Be Vietnam Pro / KR; TC / JP are added by app_logic.js when needed):
+    # Noto Sans SC for zh-CN text.
+    kr = "&family=Noto+Sans+KR:"
+    if kr not in html_text:
+        raise SystemExit(f"[{site}] template.html: Google Fonts link without Noto Sans KR")
+    html_text = html_text.replace(kr, "&family=Noto+Sans+SC:wght@400;500;600;700;900" + kr, 1)
     return html_text.replace(VIETNAMESE_THEME_META, f'<meta name="theme-color" content="{brand["color"]}">', 1)
 
 
@@ -311,6 +312,9 @@ def assemble_site(site):
             shutil.copyfile(Path(meta["pwa"]["icons_dir"]) / name, dist_dir / "brand" / name)
     open(dist_dir / "manifest.webmanifest", "w", encoding="utf-8").write(build_manifest(site))
     shutil.copyfile("_redirects", dist_dir / "_redirects")
+    # The data files carry their content hash in the name: a browser may keep them for a year without asking again (a reload then
+    # revalidates only index.html). Cloudflare Pages' default is max-age=14400 + must-revalidate.
+    (dist_dir / "_headers").write_text("/data.*\n  Cache-Control: public, max-age=31536000, immutable\n", encoding="utf-8")
 
     # Physical build isolation: _worker.js is generated ONLY for regional sites (jeonju, ulsan).
     # general and jw are 100% static sites with 0 admin UI bytes, 0 API routes, and NO _worker.js.

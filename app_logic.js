@@ -174,9 +174,22 @@
       if (r.translations && typeof r.translations.ko === "string") r.translations.ko = simplifyKo(r.translations.ko);
     });
   })();
+  // Noto Sans TC / JP are only needed when the page is shown in Japanese or Chinese: their stylesheet (hundreds of unicode-range faces)
+  // was the largest CSS of every page load, parsed for nothing in the other languages. Added once, the first time one of them is used.
+  var cjkFontsRequested = false;
+  function ensureCjkFonts(lang) {
+    if (cjkFontsRequested || (lang !== "ja" && lang !== "zh" && lang !== "zh_cn") || !document.head) return;
+    cjkFontsRequested = true;
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;600;700;900&display=swap";
+    document.head.appendChild(link);
+  }
+  ensureCjkFonts(typeof currentLang === "string" ? currentLang : "");
   function setLang(lang) {
     if (VALID_LANGS.indexOf(lang) < 0) return;
     currentLang = lang;
+    ensureCjkFonts(lang);
     try { window.localStorage && window.localStorage.setItem("vn-app-lang", lang); } catch (e) { /* no-op */ }
     var htmlLang = lang === "vi" ? "vi" : lang === "cs" ? "cs" : lang === "zh_cn" ? "zh-Hans" : lang === "zh" ? "zh-Hant" : lang === "en" ? "en" : lang === "fr" ? "fr" : lang === "de" ? "de" : lang === "hu" ? "hu" : lang === "id" ? "id" : lang === "ja" ? "ja" : lang === "ko" ? "ko" : lang === "pl" ? "pl" : "en";
     document.documentElement.setAttribute("lang", htmlLang);
@@ -201,27 +214,38 @@
   // dropdowns, study modes), so e.g. every row's first button shares the top row's first hue.
   var PASTEL_SLOT_COUNT = 10;
   var PASTEL_SLOT_SELECTOR = ".tab-btn, .subtab-btn, .study-mode-btn, .foot-btn, .review-dd";
-  function assignPastelSlots() {
-    document.querySelectorAll(PASTEL_SLOT_SELECTOR).forEach(function (el) {
-      if (el.hasAttribute("data-pastel")) return;
-      var position = 0;
-      var siblings = el.parentNode ? el.parentNode.children : [el];
-      for (var i = 0; i < siblings.length; i++) {
-        if (siblings[i].matches(PASTEL_SLOT_SELECTOR)) position += 1;
-        if (siblings[i] === el) break;
-      }
-      el.setAttribute("data-pastel", String(((position - 1) % PASTEL_SLOT_COUNT) + 1));
-    });
+  function assignPastelSlot(el) {
+    if (el.hasAttribute("data-pastel")) return;
+    var position = 0;
+    var siblings = el.parentNode ? el.parentNode.children : [el];
+    for (var i = 0; i < siblings.length; i++) {
+      if (siblings[i].matches(PASTEL_SLOT_SELECTOR)) position += 1;
+      if (siblings[i] === el) break;
+    }
+    el.setAttribute("data-pastel", String(((position - 1) % PASTEL_SLOT_COUNT) + 1));
+  }
+  // root = the part of the page to look through (the whole document at start; afterwards only what was just added -- a scan of the
+  // whole page after every change was the biggest single cost of a page load: the page holds ~150,000 elements)
+  function assignPastelSlots(root) {
+    root = root || document;
+    if (root.nodeType === 1 && root.matches(PASTEL_SLOT_SELECTOR)) assignPastelSlot(root);
+    root.querySelectorAll(PASTEL_SLOT_SELECTOR).forEach(assignPastelSlot);
   }
   assignPastelSlots();
   if (typeof MutationObserver !== "undefined" && document.body) {
+    var pastelAdded = [];
     var pastelScanQueued = false;
-    var pastelObserver = new MutationObserver(function () {
-      if (pastelScanQueued) return;
+    var pastelObserver = new MutationObserver(function (records) {
+      records.forEach(function (rec) {
+        for (var i = 0; i < rec.addedNodes.length; i++) if (rec.addedNodes[i].nodeType === 1) pastelAdded.push(rec.addedNodes[i]);
+      });
+      if (pastelScanQueued || !pastelAdded.length) return;
       pastelScanQueued = true;
       (window.requestAnimationFrame || window.setTimeout)(function () {
         pastelScanQueued = false;
-        assignPastelSlots();
+        var nodes = pastelAdded;
+        pastelAdded = [];
+        nodes.forEach(function (n) { if (n.isConnected) assignPastelSlots(n); });
       });
     });
     pastelObserver.observe(document.body, { childList: true, subtree: true });
@@ -3078,6 +3102,7 @@
 
   function activateTab(tab, restoreScroll) {
     if (!panels[tab]) return;
+    if (typeof flushDeferredRenders === "function" && typeof deferredRenders !== "undefined" && deferredRenders) flushDeferredRenders(tab);
     var prevTab = appRoot ? appRoot.dataset.activeTab : null;
     if (prevTab) tabScrollPos[prevTab] = window.scrollY;
     tabButtons.forEach(function (b) { b.setAttribute("aria-selected", b.dataset.tab === tab ? "true" : "false"); });
@@ -3096,6 +3121,7 @@
     var targetTop = (restoreScroll && tabScrollPos.hasOwnProperty(tab)) ? tabScrollPos[tab] : 0;
     window.scrollTo({ top: targetTop, behavior: "instant" in window ? "instant" : "auto" });
     saveLastPlace();
+    if (typeof songSegScheduleScan === "function") songSegScheduleScan();   // a song box of the tab now shown
     if (tab === "curriculum" && coursePendingScroll) { coursePendingScroll = false; scrollToCourseTarget(); }
   }
   tabButtons.forEach(function (btn) {
@@ -4353,7 +4379,9 @@
   // A ★ BEFORE every sentence-length listen button in [대화] and [문장] (Jeonju only), in every tab the same way: star, then the speaker.
   function decoratePhraseStars(root) {
     if (!IS_JEONJU || !root) return;
-    root.querySelectorAll(".speak-btn[data-speak]").forEach(function (b) {
+    var buttons = Array.prototype.slice.call(root.querySelectorAll(".speak-btn[data-speak]"));
+    if (root.matches && root.matches(".speak-btn[data-speak]")) buttons.unshift(root);
+    buttons.forEach(function (b) {
       var vi = b.dataset.speak || "";
       // every sentence of [문장] > [일상 생활] gets a star (a two-word sentence too), so the column of stars is complete
       if ((vi.trim().split(/\s+/).length < 3 && !b.closest(".pdf-sent-head")) || b.closest("#phrasebook-root")) return;
@@ -4382,18 +4410,28 @@
       document.querySelectorAll('.phrase-star').forEach(function (s) { if (s.dataset.vi === star.dataset.vi) s.dataset.on = String(hasPhrase(s.dataset.vi)); });
       renderPhrasebook();
     }, true);
-    var starTimer = null;
-    var starObserver = new MutationObserver(function () {
-      if (starTimer) return;
+    var starTimer = null, starAdded = [];
+    // only what was just added is looked through (a pass over both whole panels after every change cost ~100 ms per page load)
+    var starObserver = new MutationObserver(function (records) {
+      records.forEach(function (rec) {
+        for (var i = 0; i < rec.addedNodes.length; i++) if (rec.addedNodes[i].nodeType === 1 && !(rec.addedNodes[i].classList && rec.addedNodes[i].classList.contains("phrase-star"))) starAdded.push(rec.addedNodes[i]);
+      });
+      if (starTimer || !starAdded.length) return;
       starTimer = setTimeout(function () {
         starTimer = null;
-        ["panel-sentence", "panel-wizard"].forEach(function (id) { decoratePhraseStars(document.getElementById(id)); });
+        var nodes = starAdded;
+        starAdded = [];
+        nodes.forEach(function (n) { if (n.isConnected) decoratePhraseStars(n); });
       }, 150);
     });
     ["panel-sentence", "panel-wizard"].forEach(function (id) {
       var el = document.getElementById(id);
       if (el) starObserver.observe(el, { childList: true, subtree: true });
     });
+    // what was rendered before this observer existed: one pass over both panels once the script has finished starting up
+    setTimeout(function () {
+      ["panel-sentence", "panel-wizard"].forEach(function (id) { decoratePhraseStars(document.getElementById(id)); });
+    }, 0);
   }
   function renderPhrasebook() {
     var root = document.getElementById("phrasebook-root");
@@ -4440,7 +4478,43 @@
     onLangChange(function () { renderBilingualReader(); renderPhrasebook(); });
   }
 
-  renderGeneralPdf();
+  // Start-up rendering of panes that are not on screen is deferred: the page held ~150,000 elements (75,000 in [문장], 30,000 in [문법])
+  // built synchronously before anything could be touched. A deferred job runs when its tab is shown (activateTab) or, in small steps,
+  // once the page has loaded -- whichever comes first; each job runs once. Language changes re-render as before.
+  var deferredRenders = { sentence: [], grammar: [] };
+  var deferredIdleTimer = 0;
+  function runDeferredJob(job) {
+    if (job.done) return;
+    job.done = true;
+    try { job.fn(); } catch (eJob) { /* a pane that failed to render must not stop the others */ }
+  }
+  function flushDeferredRenders(tab) {
+    var list = deferredRenders[tab];
+    if (!list || !list.length) return;
+    deferredRenders[tab] = [];
+    list.forEach(runDeferredJob);
+  }
+  function deferredIdleStep() {
+    deferredIdleTimer = 0;
+    var job = null;
+    Object.keys(deferredRenders).some(function (tab) {
+      while (deferredRenders[tab].length) { var j = deferredRenders[tab].shift(); if (!j.done) { job = j; return true; } }
+      return false;
+    });
+    if (!job) return;
+    runDeferredJob(job);
+    deferredIdleTimer = setTimeout(deferredIdleStep, 40);
+  }
+  function deferRender(tabs, fn) {
+    var job = { fn: fn, done: false };
+    tabs.forEach(function (t) { deferredRenders[t].push(job); });
+    if (!deferredIdleTimer) {
+      var start = function () { deferredIdleTimer = setTimeout(deferredIdleStep, 40); };
+      deferredIdleTimer = -1;   // armed: the steps start once the page has loaded
+      if (document.readyState === "complete") start(); else window.addEventListener("load", function () { setTimeout(start, 600); }, { once: true });
+    }
+  }
+  deferRender(["sentence", "grammar"], renderGeneralPdf);
   onLangChange(renderGeneralPdf);
   (function () {
     var panes = {
@@ -4471,11 +4545,7 @@
         if (btn.dataset.sentence === "phrases") renderPhrasebook();
       });
     });
-    renderCurrLff();
-    renderCurrLpd();
-    renderCurrWt();
-    renderCurrSongs();
-    renderCurrPrayer();
+    [renderCurrLff, renderCurrLpd, renderCurrWt, renderCurrSongs, renderCurrPrayer].forEach(function (fn) { deferRender(["sentence"], fn); });
     if (btns.length === 1) {
       // Only one subtab left (GENERAL): show its content directly under [문장] and drop the lone subtab button.
       btns[0].click();
@@ -6262,7 +6332,7 @@
       });
     });
   }
-  renderGrammar();
+  deferRender(["grammar"], renderGrammar);
 
   /* ================= PRONUNCIATION ================= */
   // Stable pane element references, built once. Both the re-runnable content-builder
@@ -11080,13 +11150,22 @@ function verifyDistribution(units, dist, pins) {
   var songSegScanTimer = 0;
   function songSegScan() {
     songSegScanTimer = 0;
-    document.querySelectorAll("[data-seg-kind]:not([data-seg-state])").forEach(songSegEnhance);
+    document.querySelectorAll("[data-seg-kind]:not([data-seg-state])").forEach(function (box) {
+      if (box.offsetParent === null && !box.getClientRects().length) return;   // not displayed (a hidden tab / pane)
+      songSegEnhance(box);
+    });
   }
   if (typeof MutationObserver === "function" && document.body) {
+  // Only a song box that is on screen is enhanced (it asks jw.org for the recording and its markers): the song of the 왕국 노래 tab used
+  // to make ~8 requests to jw.org on every page load whichever tab the learner was on. A tab / subtab that is shown later schedules a scan.
     new MutationObserver(function () { if (!songSegScanTimer) songSegScanTimer = setTimeout(songSegScan, 40); }).observe(document.body, { childList: true, subtree: true });
   }
   document.addEventListener("click", function (e) {
     var b = e.target.closest && e.target.closest(".song-seg-btn");
+  function songSegScheduleScan() { if (!songSegScanTimer) songSegScanTimer = setTimeout(songSegScan, 60); }
+  document.addEventListener("click", function (e) {
+    if (e.target.closest && e.target.closest(".tab-btn, .subtab-btn, .song-kind-tabs, .song-acc-head")) songSegScheduleScan();
+  });
     if (b) { e.preventDefault(); songSegPlay(b); return; }
     // another song opened / closed, another song picked: the music of the one before ends
     if (e.target.closest && e.target.closest(".song-acc-head, .song-ctrl-bar, .song-picker-modal")) songSegStop();
@@ -15186,8 +15265,7 @@ function verifyDistribution(units, dist, pins) {
         if (btn.dataset.grammar === "pdf") renderGeneralPdf();
       });
     });
-    renderCurrSentences();
-    renderCurrGrammar();
+    deferRender(["grammar"], function () { renderCurrSentences(); renderCurrGrammar(); });
     var grammarSearch = document.getElementById("curr-grammar-search");
     if (grammarSearch) grammarSearch.addEventListener("input", renderCurrGrammar);
   })();
@@ -15323,12 +15401,24 @@ function verifyDistribution(units, dist, pins) {
     activateTab("curriculum", false);
     scrollToCourseTarget();
     courseLanded = true;
+  // Web fonts that arrive after the landing change the height of the text above today's row, and the row slid out of the middle of the
+  // screen (more often now that the page starts faster). For a few seconds, each time a font finishes loading, today's row is brought back
+  // into view -- only while the learner is still there and has touched nothing (the same rule as a re-draw).
+  function keepCourseLanding() {
+    if (!document.fonts || typeof document.fonts.addEventListener !== "function") return;
+    function again() {
+      if (courseLandActivate && !courseLandTouched && appRoot && appRoot.dataset.activeTab === "curriculum") scrollToCourseTarget();
+    }
+    document.fonts.addEventListener("loadingdone", again);
+    setTimeout(function () { document.fonts.removeEventListener("loadingdone", again); }, 5000);
+  }
     courseLandActivate = true;
     return true;
   }
   function courseAutoOpenDone() {
     try { return window.localStorage.getItem(COURSE_AUTO_OPEN_KEY) === courseTodayIso(); } catch (e) { return false; }
   }
+    keepCourseLanding();
   function markCourseAutoOpen() {
     try { window.localStorage.setItem(COURSE_AUTO_OPEN_KEY, courseTodayIso()); } catch (e) { /* no-op */ }
   }
