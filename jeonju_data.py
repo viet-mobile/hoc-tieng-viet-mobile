@@ -291,3 +291,14 @@ JEONJU_CURR_WELCOME = None
 JEONJU_CURR_PHASES = None
 JEONJU_CURR_WEEKS = None
 JEONJU_CURR_ASSIGNMENTS = None
+
+
+# [대화] > [문화]: jw.org articles listed at the bottom (JEONJU). Each article by its jw.org docid (shown with the finder share link of the
+# learner's language; every language jw.org has it in -- all 12 here, checked 2026-10-12) and its title in each language.
+JEONJU_CULTURE_JW_ARTICLES = [
+    {"docid": "101999365", "titles": {"vi": "Tham quan Vịnh Hạ Long ở Việt Nam", "ko": "베트남의 ‘용이 내려온 만’을 찾아가다", "en": "Visiting Vietnam’s Bay of the Descending Dragon", "ja": "ベトナムの下竜湾を訪ねる", "zh": "暢遊越南的下龍灣", "zh_cn": "畅游越南的下龙湾", "de": "Ein Besuch in Vietnams Bucht des herabsteigenden Drachen", "fr": "Viêt Nam : excursion au “ lieu de la descente du Dragon ”", "pl": "Wycieczka do wietnamskiej Zatoki Zstępującego Smoka", "cs": "Navštívili jsme vietnamský záliv Snášejícího se draka", "hu": "Meglátogatjuk a vietnami Leszálló Sárkány öblét", "id": "Mengunjungi Teluk Ha Long di Vietnam"}},
+    {"docid": "102005764", "titles": {"vi": "Cuộc chiến làm thay đổi đời tôi", "ko": "내 삶을 바꾸어 놓은 전쟁", "en": "A Conflict That Changed My Life", "ja": "戦争に行って私の人生は変わった", "zh": "一場戰爭改變了我的一生", "zh_cn": "一场战争改变了我的一生", "de": "Ein Krieg, der mein Leben veränderte", "fr": "Un conflit qui a changé ma vie", "pl": "Konflikt, który zmienił moje życie", "cs": "Válka, která změnila můj život", "hu": "Egy háború, amely megváltoztatta az életem", "id": "Konflik yang Mengubah Kehidupan Saya"}},
+    {"docid": "102006409", "titles": {"vi": "Dòng sông vĩ đại Mekong", "ko": "메콩 강—그 장대한 물줄기를 따라", "en": "Meet the Mighty Mekong", "ja": "大河メコンの恵み", "zh": "壯麗的湄公河", "zh_cn": "壮丽的湄公河", "de": "Eindrücke vom mächtigen Mekong", "fr": "Le généreux Mékong", "pl": "Potężny Mekong", "cs": "Majestátní řeka Mekong", "hu": "Látogass el a hatalmas Mekonghoz!", "id": "Inilah Dia, si Perkasa Mekong"}},
+    {"docid": "102001771", "titles": {"vi": "Thú lạ của Việt Nam", "ko": "베트남의 숨겨져 있던 동물들", "en": "Vietnam’s Hidden Animals", "ja": "ベトナムの知られざる動物たち", "zh": "鮮為人知的動物", "zh_cn": "鲜为人知的动物", "de": "Vietnams verborgene Tiere", "fr": "La mystérieuse faune du Viêt Nam", "pl": "Nieznane zwierzęta Wietnamu", "cs": "Dosud neznámá vietnamská zvířata", "hu": "Vietnam ismeretlen állatai", "id": "Satwa Vietnam yang Belum Dikenal"}},
+    {"docid": "2015361", "titles": {"vi": "Nhớ về tình yêu thương lúc ban đầu đã giúp tôi chịu đựng", "ko": "처음 사랑을 기억하며 인내해 온 삶", "en": "Remembering My First Love Has Helped Me to Endure", "ja": "最初の愛を忘れないことが力になりました", "zh": "牢記最初為什麼會愛耶和華", "zh_cn": "牢记最初为什么会爱耶和华", "de": "Ich habe meine erste Liebe bewahrt", "fr": "Me rappeler mon amour du début m’aide à endurer", "pl": "Pamiętanie o mojej pierwszej miłości pomaga mi trwać", "cs": "Stále si připomínám svou první lásku k Jehovovi", "hu": "Segített kitartani, hogy megőriztem az első szeretetemet", "id": "Bertekun Karena Ingat Kasih kepada Yehuwa"}},
+]

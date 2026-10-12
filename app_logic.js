@@ -321,6 +321,7 @@
     "이 기기의 운영체제에 맞춰 베트남어 읽기 속도를 정합니다. 뜻을 읽는 목소리에는 적용되지 않습니다. 1.00이 기본 속도입니다.": {"vi": "Đặt tốc độ đọc tiếng Việt theo hệ điều hành của thiết bị này. Không áp dụng cho giọng đọc nghĩa. 1.00 là tốc độ mặc định.", "cs": "Rychlost čtení vietnamštiny podle operačního systému tohoto zařízení. Netýká se hlasu pro význam. 1.00 je výchozí rychlost.", "zh_cn": "按本设备的操作系统设置越南语朗读速度。不影响读释义的声音。1.00 为默认速度。", "zh": "依本裝置的作業系統設定越南語朗讀速度。不影響讀釋義的聲音。1.00 為預設速度。", "en": "Sets the Vietnamese reading speed for this device’s operating system. It does not affect the voice that reads meanings. 1.00 is the default speed.", "fr": "Règle la vitesse de lecture du vietnamien pour le système de cet appareil. Sans effet sur la voix des traductions. 1.00 est la vitesse par défaut.", "de": "Stellt die Lesegeschwindigkeit des Vietnamesischen für das Betriebssystem dieses Geräts ein. Die Stimme für Bedeutungen bleibt unberührt. 1.00 ist die Standardgeschwindigkeit.", "hu": "A vietnámi olvasási sebességet állítja be az eszköz operációs rendszeréhez. A jelentést felolvasó hangra nem hat. Az 1.00 az alapértelmezett sebesség.", "id": "Mengatur kecepatan membaca bahasa Vietnam untuk sistem operasi perangkat ini. Tidak memengaruhi suara pembaca arti. 1.00 adalah kecepatan default.", "ja": "この端末のOSに合わせてベトナム語の読み上げ速度を設定します。意味を読む音声には影響しません。1.00が標準の速さです。", "pl": "Ustawia szybkość czytania wietnamskiego dla systemu tego urządzenia. Nie dotyczy głosu czytającego znaczenia. 1.00 to prędkość domyślna."},
     "이 기기": {"vi": "Thiết bị này", "cs": "Toto zařízení", "zh_cn": "本设备", "zh": "本裝置", "en": "This device", "fr": "Cet appareil", "de": "Dieses Gerät", "hu": "Ez az eszköz", "id": "Perangkat ini", "ja": "この端末", "pl": "To urządzenie"},
     "들어보기": {"vi": "Nghe thử", "cs": "Vyzkoušet", "zh_cn": "试听", "zh": "試聽", "en": "Try it", "fr": "Écouter", "de": "Probehören", "hu": "Meghallgatás", "id": "Coba dengar", "ja": "試し聞き", "pl": "Posłuchaj"},
+    "jw.org에서 더 읽어 보기": {"vi": "Đọc thêm trên jw.org", "cs": "Více na jw.org", "zh_cn": "在 jw.org 上阅读更多", "zh": "在 jw.org 閱讀更多", "en": "Read more on jw.org", "fr": "Pour aller plus loin sur jw.org", "de": "Mehr auf jw.org lesen", "hu": "További olvasnivaló a jw.org-on", "id": "Baca lebih lanjut di jw.org", "ja": "jw.orgでさらに読む", "pl": "Więcej na jw.org"},
     "베트남어 반복 듣기 횟수": {"vi": "Số lần nghe lặp lại tiếng Việt", "cs": "Počet opakování vietnamštiny", "zh_cn": "越南语重复播放次数", "zh": "越南語重複播放次數", "en": "Vietnamese repeat count", "fr": "Nombre de répétitions audio en vietnamien", "de": "Wiederholungen des vietnamesischen Audios", "hu": "Vietnámi ismétlések száma", "id": "Jumlah pengulangan bahasa Vietnam", "ja": "ベトナム語の繰り返し再生回数", "pl": "Liczba powtórzeń nagrania wietnamskiego"},
     "발음 듣기 버튼을 누르면 베트남어를 몇 번 반복해서 들려줄지 선택하세요.": {"vi": "Chọn số lần phát lại tiếng Việt mỗi khi bạn nhấn nút nghe phát âm.", "cs": "Vyberte, kolikrát se má vietnamský text zopakovat po stisknutí tlačítka poslechu.", "zh_cn": "选择按下发音按钮时，越南语要重复播放几次。", "zh": "選擇按下發音按鈕時，越南語要重複播放幾次。", "en": "Choose how many times Vietnamese audio repeats each time you press a listen button.", "fr": "Choisissez combien de fois répéter l'audio vietnamien lorsque vous appuyez sur le bouton d'écoute.", "de": "Wählen Sie, wie oft das vietnamesische Audio beim Tippen auf die Audio-Schaltfläche wiederholt werden soll.", "hu": "Válassza ki, hányszor ismétlődjön meg a vietnámi szöveg a meghallgatás gomb megnyomásakor.", "id": "Pilih berapa kali audio bahasa Vietnam diulang setiap kali menekan tombol dengarkan.", "ja": "発音を聞くボタンを押したときに、ベトナム語を何回繰り返して再生するか選んでください。", "pl": "Wybierz, ile razy ma być powtórzone nagranie wietnamskie po naciśnięciu przycisku odsłuchu."},
     "베트남어 성조 ↔ 중국어(표준중국어) 성조 대응": {"vi": "Tương ứng thanh điệu tiếng Việt ↔ thanh điệu tiếng Trung (tiếng phổ thông)", "cs": "Korespondence vietnamských a mandarínských tónů", "zh_cn": "越南语声调 ↔ 中文（普通话）声调对应", "zh": "越南語聲調 ↔ 中文（普通話）聲調對應", "en": "Vietnamese Tone ↔ Mandarin Chinese Tone Correspondence", "fr": "Correspondance des tons : vietnamien ↔ mandarin standard", "de": "Vietnamesische Töne ↔ Mandarin-Töne Entsprechung", "hu": "Vietnámi tónusok és a mandarin tónusok megfelelése", "id": "Kesesuaian Nada Vietnam ↔ Mandarin", "ja": "ベトナム語の声調 ↔ 中国語（普通話）の声調対応", "pl": "Odpowiedniość tonów: wietnamski ↔ standardowy mandaryński"},
@@ -8767,6 +8768,23 @@ function verifyDistribution(units, dist, pins) {
         html += '</div></div></div>';
       }
     });
+    // jw.org articles at the bottom (JEONJU): the Vietnamese title and the learner language's, each with its JW.ORG finder badge
+    if (typeof CULTURE_JW_ARTICLES !== "undefined" && CULTURE_JW_ARTICLES.length) {
+      var target = currentLang === "vi" ? "" : currentLang;
+      function articleLine(a, lg, cls) {
+        var title = a.titles && a.titles[lg], loc = songJwLocale(lg);
+        if (!title || !loc) return "";
+        var url = "https://www.jw.org/finder?srcid=jwlshare&wtlocale=" + loc[0] + "&prefer=lang&docid=" + a.docid;
+        return '<div class="culture-jw-line ' + cls + '"><span class="culture-jw-title' + (lg === "vi" ? " vn" : "") + '"' + (lg === "vi" ? "" : ' lang="' + escapeAttr(lg) + '"') + '>' +
+          escapeHtml(title) + '</span>' + jwOrgBadgeHtml(url, { kind: "publication", lang: lg }) + '</div>';
+      }
+      html += '<div class="culture-jw-articles"><h3>' + TU("jw.org에서 더 읽어 보기") + '</h3>';
+      CULTURE_JW_ARTICLES.forEach(function (a) {
+        var lines = articleLine(a, "vi", "culture-jw-vi") + (target ? articleLine(a, target, "culture-jw-target") : "");
+        if (lines) html += '<div class="culture-jw-item">' + lines + '</div>';
+      });
+      html += '</div>';
+    }
     root.innerHTML = html;
     bindCurrGroupCards(root);
     bindCurrSpeakBtns(root);
