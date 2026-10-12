@@ -8150,10 +8150,15 @@ function verifyDistribution(units, dist, pins) {
       });
       html += rows || '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div>';
       html += '</div>';
-      if (sess.assignments.length) {
-        html += '<div class="curr-assign-card" data-open="false"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + TU("주간 수행 과제") + '</span>' + currChev() + '</button><div class="curr-assign-body">';
+      // The weekly assignments are done AFTER the class of the card: the Monday-Friday that follows its date -- and they prepare the NEXT
+      // class, so they are the assignments of the next session (the card of class 1 on 2026/10/10 shows 2026/10/12~16, the tasks that
+      // lead to class 2; the welcome card of the meeting on 2026/10/03 shows 2026/10/05~09, those of class 1). The last class has none.
+      var nextSession = bySession[slot.session + 1];
+      var hwItems = nextSession ? nextSession.assignments : [];
+      if (hwItems.length) {
+        html += '<div class="curr-assign-card" data-open="false" data-hw-monday="' + assignMonday(slot.calculatedDate) + '"><button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + assignLabel(slot.calculatedDate) + '</span>' + currChev() + '</button><div class="curr-assign-body">';
         ["월", "화", "수", "목", "금"].forEach(function (day) {
-          var dayItems = sess.assignments.filter(function (x) { return x.day === day; });
+          var dayItems = hwItems.filter(function (x) { return x.day === day; });
           if (!dayItems.length) return;
           html += '<div class="curr-assign-day-group" data-day="' + escapeAttr(day) + '"><div class="curr-assign-day-label">' + escapeHtml(regionalDayLabel(day)) + '</div>';
           [["review", "복습"], ["preview", "예습"], ["vocab", "어휘"]].forEach(function (g) {

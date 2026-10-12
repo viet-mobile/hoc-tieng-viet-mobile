@@ -210,6 +210,12 @@ async function startServer(workers) {
     ok(info.cancels.length === 3, `public shows the 3 in-period cancellations, got ${info.cancels.length}`);
     ok(info.sessions[0] === '2026/10/10 - 1회차' && info.sessions[6] === '2026/12/12 - 7회차', 'session badges are "N회차" with dates: ' + JSON.stringify([info.sessions[0], info.sessions[6]]));
     ok(info.sessions[4] === '2026/11/15 - 5회차 (토요일 본부 대표자 특별 방문 집회로 인해 일요일 오후 2시)', 'the moved class keeps its Sunday date on a generated plan: ' + info.sessions[4]);
+    // the weekly assignments are done the Monday-Friday AFTER the class of the card (and lead to the next class)
+    const labels = await E(`(function(){ var out = {}; ['s1','s2','s5','s7'].forEach(function(id){ var c = document.querySelector('#curr-week16-root .group-card[data-syl="' + id + '"] .curr-assign-card'); out[id] = c ? [c.querySelector('.curr-assign-label').textContent, c.dataset.hwMonday] : null; }); return out; })()`);
+    ok(labels.s1 && labels.s1[0] === '2026/10/12~16 주간 수행 과제' && labels.s1[1] === '2026-10-12', 'class 1 (10/10): assignments are 2026/10/12~16: ' + JSON.stringify(labels.s1));
+    ok(labels.s2 && labels.s2[0] === '2026/10/19~23 주간 수행 과제' && labels.s2[1] === '2026-10-19', 'class 2 (10/17): ' + JSON.stringify(labels.s2));
+    ok(labels.s5 && labels.s5[0] === '2026/11/16~20 주간 수행 과제' && labels.s5[1] === '2026-11-16', 'the Sunday class 2026/11/15: ' + JSON.stringify(labels.s5));
+    ok(labels.s7 === null, 'the last class has no assignment card (nothing follows it): ' + JSON.stringify(labels.s7));
     ok(!(await E(`document.getElementById('curr-week16-root').innerText`)).match(/undefined|NaN/), 'no undefined in public course');
     const firstCardItems = await E(`document.querySelector('#curr-week16-root .group-card[data-syl="s1"] .curr-item-list').children.length`);
     ok(firstCardItems > 5, 'session 1 carries its share of learning items (' + firstCardItems + ')');
