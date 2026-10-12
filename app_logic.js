@@ -6386,7 +6386,9 @@
       h += '<table class="hanoi-table hanoi-examples"><thead><tr><th>베트남어 예제</th><th>하노이 발음에 가장 가까운 한국어 표기 및 ' + southBadge + '에 가장 가까운 한국어 표기</th><th>뜻</th></tr></thead><tbody>' +
         HANOI_EXAMPLES.map(function (r) {
           return '<tr><td class="hanoi-ex-vi vn">' + escapeHtml(r[0]) + btn(r[0]) + '</td><td class="hanoi-ko">' + escapeHtml(r[1]) +
-            (r[3] ? ' <span class="hanoi-south">(<span class="ns-tag south">' + escapeHtml(r[4] || "남부 발음") + '</span>: ' + escapeHtml(r[3]) + ')</span>' : '') +
+            (r[3] ? ' <span class="hanoi-south">(' + (Array.isArray(r[3]) ? r[3] : [[r[4] || "남부 발음", r[3]]]).map(function (sv) {
+              return '<span class="ns-tag south">' + escapeHtml(sv[0]) + '</span>: ' + escapeHtml(sv[1]);
+            }).join(", ") + ')</span>' : '') +
             '</td><td class="hanoi-ex-mean">' + escapeHtml(r[2]) + '</td></tr>';
         }).join("") + '</tbody></table>';
     }

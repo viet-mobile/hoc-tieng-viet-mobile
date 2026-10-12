@@ -1356,7 +1356,7 @@ TELEX_GUIDE = {
 
 
 # [발음][자모] "하노이 발음에 가장 가까운 한국어 표기 방식": the Vietnamese examples under the chart, as supplied: [example, Hanoi notation, meaning[, southern
-# notation[, badge label: default "남부 발음"]]] (the southern notation, where given, is shown with the pink 남부 badge of [남북 발음]).
+# notation[, badge label: default "남부 발음"]]] -- the southern part may also be a list of [badge label, notation] pairs (the southern notation, where given, is shown with the pink 남부 badge of [남북 발음]).
 HANOI_EXAMPLES = [
     ["Tháp Canh", "탑 까인", "파수대(⬅ 탑 탑 塔 경계할 경 警)", "탑 깐"],
     ["Nhân Chứng", "년쯩", "증인(⬅ 사람 인 人 증거할 증 證)"],
@@ -1367,7 +1367,7 @@ HANOI_EXAMPLES = [
     ["bài hát", "바이 핫", "노래"],
     ["cầu nguyện", "꺼우 응우옌", "기도(⬅ 구할 구 求 바랄 원 願)"],
     ["đọc sách", "돕 사익", "책을 읽다(⬅ 읽을 독 讀 책 책 冊)", "돕 삭"],
-    ["tiếng Việt", "띠엥 ㅸㅣ엣", "베트남어(⬅ 소리 성 聲 넘을 월 越)"],
+    ["tiếng Việt", "띠엥 ㅸㅣ엣", "베트남어(⬅ 소리 성 聲 넘을 월 越)", [["남부 발음", "띠엥 이엣"], ["남부 일부 발음", "띠엥 지엣"]]],
     ["học hỏi", "홉 호이", "공부하다(⬅ 배울 학 學 묻다 hỏi)"],
     ["chúng ta", "쭘 따", "우리(⬅ 무리 중 眾 나 ta)"],
     ["anh chị", "아인 찌", "형제 자매(⬅ 형 형 兄 손윗누이 자 姊)", "안 찌"],
