@@ -827,7 +827,16 @@
   .hanoi-examples th .ns-tag { font-size: 0.62rem; padding: 1px 6px; vertical-align: middle; }
   .hanoi-ex-vi .speak-btn { min-width: 28px; min-height: 28px; width: 28px; height: 28px; margin-left: 4px; vertical-align: middle; }
   .hanoi-examples .hanoi-ko { font-size: 1.05rem; }
-  .hanoi-ex-mean { font-weight: 600; white-space: nowrap; }
+  .hanoi-ex-mean { font-weight: 600; font-size: 0.8rem; text-align: left; overflow-wrap: anywhere; }
+  /* a narrow screen: the meaning (long: it carries the Hanja / word-part note) goes on its own line under the other two columns */
+  @media (max-width: 640px) {
+    .hanoi-examples, .hanoi-examples tbody { display: block; width: 100%; }
+    .hanoi-examples thead { display: none; }
+    .hanoi-examples tr { display: grid; grid-template-columns: minmax(0, 34%) minmax(0, 1fr); border-bottom: 1px solid var(--border); }
+    .hanoi-examples td { border: none; }
+    .hanoi-examples td.hanoi-ex-mean { grid-column: 1 / -1; padding: 2px 8px 8px; font-size: 0.82rem; color: var(--ink-soft); text-align: left; }
+    .hanoi-examples .hanoi-ex-mean::before { content: "뜻 "; font-weight: 800; color: var(--ink); }
+  }
   .hanoi-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; align-items: start; }
   .hanoi-col { min-width: 0; }
   .hanoi-grid .hanoi-table { margin-bottom: 8px; }
