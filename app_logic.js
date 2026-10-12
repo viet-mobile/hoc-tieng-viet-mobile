@@ -6362,7 +6362,9 @@
     HANOI_CHART.initials.forEach(function (g) {
       g.letters.forEach(function (l, i) {
         h += '<tr><td class="hanoi-letter vn' + tone(l[1]) + '">' + escapeHtml(l[0]) + btn(l[0].replace(/-$/, "") + "ơ") + '</td>' +
-          (i === 0 ? '<td class="hanoi-ko" rowspan="' + g.letters.length + '">' + escapeHtml(g.ko) + '</td>' : '') + '</tr>';
+          (i === 0 ? '<td class="hanoi-ko" rowspan="' + g.letters.length + '">' + (g.parts
+            ? g.parts.map(function (p) { return p[1] ? '<small class="hanoi-final-note">' + escapeHtml(p[0]) + '</small>' : '<div>' + escapeHtml(p[0]) + '</div>'; }).join("")
+            : escapeHtml(g.ko)) + '</td>' : '') + '</tr>';
       });
     });
     h += '</tbody></table>';
@@ -6380,9 +6382,12 @@
     h += '</tbody></table></div></div>';
     if (HANOI_CHART.footnote) h += '<p class="p-desc hanoi-footnote">' + escapeHtml(HANOI_CHART.footnote) + '</p>';
     if (typeof HANOI_EXAMPLES !== "undefined" && HANOI_EXAMPLES.length) {
-      h += '<table class="hanoi-table hanoi-examples"><thead><tr><th>베트남어 예제</th><th>하노이 발음에 가장 가까운 한국어 표기</th><th>뜻</th></tr></thead><tbody>' +
+      var southBadge = '<span class="ns-tag south">남부 발음</span>';
+      h += '<table class="hanoi-table hanoi-examples"><thead><tr><th>베트남어 예제</th><th>하노이 발음에 가장 가까운 한국어 표기 및 ' + southBadge + '에 가장 가까운 한국어 표기</th><th>뜻</th></tr></thead><tbody>' +
         HANOI_EXAMPLES.map(function (r) {
-          return '<tr><td class="hanoi-ex-vi vn">' + escapeHtml(r[0]) + btn(r[0]) + '</td><td class="hanoi-ko">' + escapeHtml(r[1]) + '</td><td class="hanoi-ex-mean">' + escapeHtml(r[2]) + '</td></tr>';
+          return '<tr><td class="hanoi-ex-vi vn">' + escapeHtml(r[0]) + btn(r[0]) + '</td><td class="hanoi-ko">' + escapeHtml(r[1]) +
+            (r[3] ? ' <span class="hanoi-south">(<span class="ns-tag south">' + escapeHtml(r[4] || "남부 발음") + '</span>: ' + escapeHtml(r[3]) + ')</span>' : '') +
+            '</td><td class="hanoi-ex-mean">' + escapeHtml(r[2]) + '</td></tr>';
         }).join("") + '</tbody></table>';
     }
     return h;
@@ -11148,6 +11153,8 @@ function verifyDistribution(units, dist, pins) {
     });
   }
   var songSegScanTimer = 0;
+  // Only a song box that is on screen is enhanced (it asks jw.org for the recording and its markers): the song of the 왕국 노래 tab used
+  // to make ~8 requests to jw.org on every page load whichever tab the learner was on. A tab / subtab that is shown later schedules a scan.
   function songSegScan() {
     songSegScanTimer = 0;
     document.querySelectorAll("[data-seg-kind]:not([data-seg-state])").forEach(function (box) {
@@ -11155,17 +11162,15 @@ function verifyDistribution(units, dist, pins) {
       songSegEnhance(box);
     });
   }
-  if (typeof MutationObserver === "function" && document.body) {
-  // Only a song box that is on screen is enhanced (it asks jw.org for the recording and its markers): the song of the 왕국 노래 tab used
-  // to make ~8 requests to jw.org on every page load whichever tab the learner was on. A tab / subtab that is shown later schedules a scan.
-    new MutationObserver(function () { if (!songSegScanTimer) songSegScanTimer = setTimeout(songSegScan, 40); }).observe(document.body, { childList: true, subtree: true });
-  }
-  document.addEventListener("click", function (e) {
-    var b = e.target.closest && e.target.closest(".song-seg-btn");
   function songSegScheduleScan() { if (!songSegScanTimer) songSegScanTimer = setTimeout(songSegScan, 60); }
   document.addEventListener("click", function (e) {
     if (e.target.closest && e.target.closest(".tab-btn, .subtab-btn, .song-kind-tabs, .song-acc-head")) songSegScheduleScan();
   });
+  if (typeof MutationObserver === "function" && document.body) {
+    new MutationObserver(function () { if (!songSegScanTimer) songSegScanTimer = setTimeout(songSegScan, 40); }).observe(document.body, { childList: true, subtree: true });
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest(".song-seg-btn");
     if (b) { e.preventDefault(); songSegPlay(b); return; }
     // another song opened / closed, another song picked: the music of the one before ends
     if (e.target.closest && e.target.closest(".song-acc-head, .song-ctrl-bar, .song-picker-modal")) songSegStop();
@@ -15396,11 +15401,6 @@ function verifyDistribution(units, dist, pins) {
       requestAnimationFrame(function () { try { target.scrollIntoView({ block: target.classList.contains("curr-today") ? "center" : "start", behavior: "auto" }); } catch (e) { /* no-op */ } });
     });
   }
-  function goToTodayCourse() {
-    if (!prepareTodayCourse()) return false;
-    activateTab("curriculum", false);
-    scrollToCourseTarget();
-    courseLanded = true;
   // Web fonts that arrive after the landing change the height of the text above today's row, and the row slid out of the middle of the
   // screen (more often now that the page starts faster). For a few seconds, each time a font finishes loading, today's row is brought back
   // into view -- only while the learner is still there and has touched nothing (the same rule as a re-draw).
@@ -15412,13 +15412,18 @@ function verifyDistribution(units, dist, pins) {
     document.fonts.addEventListener("loadingdone", again);
     setTimeout(function () { document.fonts.removeEventListener("loadingdone", again); }, 5000);
   }
+  function goToTodayCourse() {
+    if (!prepareTodayCourse()) return false;
+    activateTab("curriculum", false);
+    scrollToCourseTarget();
+    courseLanded = true;
     courseLandActivate = true;
+    keepCourseLanding();
     return true;
   }
   function courseAutoOpenDone() {
     try { return window.localStorage.getItem(COURSE_AUTO_OPEN_KEY) === courseTodayIso(); } catch (e) { return false; }
   }
-    keepCourseLanding();
   function markCourseAutoOpen() {
     try { window.localStorage.setItem(COURSE_AUTO_OPEN_KEY, courseTodayIso()); } catch (e) { /* no-op */ }
   }
