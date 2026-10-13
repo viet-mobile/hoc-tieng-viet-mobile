@@ -568,7 +568,7 @@ def public_teaching_guide(region):
         out = {"methods": [labels[i] for i in u["methods"]], "materials": [i18n(x, mats.get(x)) for x in u["studentMaterials"]]}
         # The class timetable: [name, minutes, minutes of instructor A (null = break), posture stand/sit/move/flex/rest, Vietnamese name or null]
         if u.get("timePlan") and all(len(p) >= 5 for p in u["timePlan"]):
-            out["plan"] = [[p[0], p[1], p[2], p[4], vi_text.get(p[0])] for p in u["timePlan"]]
+            out["plan"] = [[p[0], p[1], p[2], p[4], vi_text.get(p[0].removesuffix(" (이어서)")) or vi_text.get(p[0])] for p in u["timePlan"]]
         return out
 
     ins = guide.get("instructors") or {}
