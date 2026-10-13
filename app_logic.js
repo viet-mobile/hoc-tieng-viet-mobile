@@ -6733,7 +6733,7 @@
     var letterCls = "pron-letters vn" + (big ? " big-letters" : "");
     var firstToken = r[0].split(",")[0].trim();
     var letterSpeak = mode === "consonant" ? (firstToken + "ơ") : firstToken;
-    return '<div class="' + rowCls + '"><div class="' + letterCls + '">' + escapeHtml(r[0]) +
+    return '<div class="' + rowCls + '"><div class="' + letterCls + '"><span class="pron-letter-text">' + escapeHtml(r[0]) + '</span>' +
       '<button class="speak-btn" data-speak="' + escapeAttr(letterSpeak) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
       '<div><div class="pron-desc">' + escapeHtml(T(r[1])) + '</div><div class="pron-ex">' + TU("예: ") + escapeHtml(r[2]) +
       '<button class="speak-btn" data-speak="' + escapeAttr(r[2]) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div></div></div>';

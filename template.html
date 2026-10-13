@@ -883,6 +883,17 @@
     display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
     gap: 2px 4px; text-align: center; min-width: 0;
   }
+  /* [발음] [모음] / [자음]: the letters are left-aligned in one column and every listen button sits in the next column of the same
+     list, right after the widest letters of that list ("c, k, q", "iê, yê", ...): the rows share the table's columns (subgrid). */
+  @supports (grid-template-columns: subgrid) {
+    .pron-table { display: grid; grid-template-columns: max-content max-content minmax(0, 1fr); gap: 8px 0; }
+    .pron-table > .pron-row { display: grid; grid-template-columns: subgrid; grid-column: 1 / -1; column-gap: 0; align-items: center; }
+    .pron-table .pron-letters, .pron-table .pron-letters.big-letters { display: contents; }
+    .pron-table .pron-letter-text { grid-column: 1; text-align: left; white-space: nowrap; padding-right: 6px; font-family: var(--font-vn); color: var(--accent); }
+    .pron-table .big-letters .pron-letter-text { font-size: 1.3rem; font-weight: 700; }
+    .pron-table .pron-row > .pron-letters > .speak-btn { grid-column: 2; margin-right: 8px; }
+    .pron-table .pron-row > div:not(.pron-letters) { grid-column: 3; min-width: 0; }
+  }
   .pron-desc { font-size: 0.83rem; color: var(--ink-soft); line-height: 1.55; }
   .ns-list { display: flex; flex-direction: column; gap: 10px; }
   .ns-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-m); padding: 13px 15px; }
