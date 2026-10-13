@@ -568,7 +568,7 @@ def public_teaching_guide(region):
         out = {"methods": [labels[i] for i in u["methods"]], "materials": [i18n(x, mats.get(x)) for x in u["studentMaterials"]]}
         # The class timetable: [name, minutes, minutes of instructor A (null = break), posture stand/sit/move/flex/rest, Vietnamese name or null]
         if u.get("timePlan") and all(len(p) >= 5 for p in u["timePlan"]):
-            out["plan"] = [[p[0], p[1], p[2], p[4], vi_text.get(p[0].removesuffix(" (이어서)")) or vi_text.get(p[0])] for p in u["timePlan"]]
+            out["plan"] = [[p[0], p[1], p[2], p[4], vi_text.get(p[0].removesuffix(" (이어서)")) or vi_text.get(p[0])] + ([p[5]] if len(p)>5 else []) for p in u["timePlan"]]
         return out
 
     ins = guide.get("instructors") or {}
@@ -1043,6 +1043,7 @@ def build_data_js(site):
         # Vietnamese for admin-added course items, and ko->vi of every course text for the /admin Vietnamese view.
         parts.append(emit("LIVE_COURSE_I18N", _admin_json("course_live_i18n.json")))
         write_admin_course_vi("jeonju", [curr_welcome, curr_phases, curr_weeks, curr_assignments])
+        parts.append(emit("LIVE_COURSE_VI", _admin_json("course_vi.json").get("jeonju", {})))
         # [과정] vocabulary: one stream over the whole [어휘] tab, cut against the real calendar in app_logic.js.
         from course_vocab_plan import course_vocab
         parts.append(emit("COURSE_VOCAB", course_vocab([curr_weeks, curr_assignments], unified_words)))

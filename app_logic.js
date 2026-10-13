@@ -7040,7 +7040,7 @@
     cont: { ko: "(이어서)", vi: "(tiếp)", en: "(continued)" }
   };
   var COURSE_PLAN_ICON = { stand: "\uD83E\uDDCD", sit: "\uD83E\uDE91", move: "\uD83D\uDEB6", flex: "\u23F3", rest: "\u2615" };
-  function courseClassPlanHtml(g) {
+  function courseClassPlanHtml(g, timetable) {
     if (!g || !g.plan || !g.plan.length || typeof JEONJU_TEACHING_GUIDE === "undefined" || !JEONJU_TEACHING_GUIDE) return "";
     function gt(x) { return !x ? "" : typeof x === "string" ? x : (x[currentLang] || x.en || x.ko || ""); }
     var ins = JEONJU_TEACHING_GUIDE.instructors || null, st = JEONJU_TEACHING_GUIDE.structure || {}, posts = st.postures || {};
@@ -7053,6 +7053,32 @@
       if (/ \(이어서\)$/.test(name)) { name = name.replace(/ \(이어서\)$/, ""); cont = true; }
       var shown = (currentLang === "vi" && p[4]) ? p[4] : name;
       if (currentLang === "vi" && !p[4] && cont) shown = name;
+      var grouping = p[5], descriptions = [], count = null;
+      if (grouping && timetable) {
+        if (grouping.kind === "course-vocab") {
+          var vocabPlan = courseVocabPlan(timetable.sched);
+          var classRange = vocabPlan && vocabPlan.cls[timetable.week];
+          var dailyRange = classRange && splitVocabRange(classRange, 5)[grouping.part];
+          if (dailyRange) {
+            count = dailyRange[1] - dailyRange[0];
+            courseVocabItems(dailyRange, "dayText").forEach(function (item) {
+              var r = item.link.vocabRange;
+              descriptions.push(T(COURSE_VOCAB.cats[item.link.subVal]) + " " + (r.start + 1) + "–" + r.end);
+            });
+          }
+        } else if (grouping.kind === "watchtower-vocab") {
+          var wtRange = wtWeekRange(timetable.week);
+          if (wtRange) {
+            var part = wtDaySplit(wtRange.end - wtRange.start)[grouping.part];
+            count = part[1] - part[0];
+            descriptions.push((part[0] + 1) + "–" + part[1]);
+          }
+        }
+        if (count !== null) {
+          var units = { ko: "개", vi: " từ", en: " words", ja: "語", zh: "個", zh_cn: "个", cs: " slov", de: " Wörter", fr: " mots", pl: " słów", hu: " szó", id: " kata" };
+          shown += " · " + descriptions.join("; ") + " (" + count + (units[currentLang] || units.en) + ")";
+        }
+      }
       if (p[2] === null) {
         brk += p[1];
         return '<div class="curr-plan-row curr-plan-break"><span class="curr-plan-t">' + start + '\u2013' + clock + '</span><span class="curr-plan-p">' + COURSE_PLAN_ICON.rest + '</span><span class="curr-plan-n">' + escapeHtml(gt(COURSE_PLAN_LABELS.brk)) + '</span><span class="curr-plan-ab">' + p[1] + escapeHtml(min) + '</span></div>';
@@ -7060,7 +7086,7 @@
       var a = p[2], b = p[1] - a;
       ta += a; tb += b;
       var plabel = gt(posts[p[3]]);
-      return '<div class="curr-plan-row curr-plan-' + escapeAttr(p[3]) + '"><span class="curr-plan-t">' + start + '\u2013' + clock + '</span>' +
+      return '<div class="curr-plan-row curr-plan-' + escapeAttr(p[3]) + '"' + (grouping ? ' data-plan-kind="' + escapeAttr(grouping.kind) + '" data-plan-part="' + grouping.part + '"' : '') + '><span class="curr-plan-t">' + start + '\u2013' + clock + '</span>' +
         '<span class="curr-plan-p" title="' + escapeAttr(plabel) + '" aria-label="' + escapeAttr(plabel) + '">' + (COURSE_PLAN_ICON[p[3]] || "") + '</span>' +
         '<span class="curr-plan-n">' + escapeHtml(shown) + (cont ? ' <span class="curr-plan-cont">' + escapeHtml(gt(COURSE_PLAN_LABELS.cont)) + '</span>' : '') + '</span>' +
         '<span class="curr-plan-ab">' + (a ? '<b class="curr-plan-a">A ' + a + '</b>' : '') + (b ? '<b class="curr-plan-b">B ' + b + '</b>' : '') + '</span></div>';
@@ -7075,7 +7101,7 @@
       '<div class="curr-plan-body">' + (legend ? '<div class="curr-plan-legend">' + legend + '</div>' : '') + roles + rows +
       (st.note ? '<p class="curr-plan-note">' + escapeHtml(gt(st.note)) + '</p>' : '') + '</div></details>';
   }
-  function courseGuideHtml(unit) {
+  function courseGuideHtml(unit, sched, classWeek) {
     var g = courseGuideEntry(unit);
     if (!g) return "";
     // Guide strings are {ko, vi, en}; other UI languages read English.
@@ -7084,7 +7110,7 @@
       var hint = gt(m.hint);
       return '<span class="curr-guide-chip">' + escapeHtml(gt(m.label)) + (hint ? '<span class="curr-guide-hint"> · ' + escapeHtml(hint) + '</span>' : '') + '</span>';
     }).join("");
-    var plan = courseClassPlanHtml(g);
+    var plan = courseClassPlanHtml(g, sched ? { sched: sched, week: classWeek === undefined ? Number(unit) : classWeek } : null);
     if (!methods && !(g.materials || []).length && !plan) return "";
     return '<div class="curr-guide">' + plan +
       (methods ? '<div class="curr-guide-row"><span class="curr-guide-label">' + escapeHtml(T(COURSE_GUIDE_LABELS.methods)) + '</span><div class="curr-guide-chips">' + methods + '</div></div>' : '') +
@@ -8009,6 +8035,8 @@ function verifyDistribution(units, dist, pins) {
     function liveTranslate(t) {
       if (!t || !t.ko) return null;
       var ko = String(t.ko).trim();
+      var knownVi = typeof LIVE_COURSE_VI !== "undefined" && LIVE_COURSE_VI[ko];
+      if (knownVi) return Object.assign({}, t, { vi: knownVi });
       for (var i = 0; i < LIVE_I18N.length; i++) {
         var r = LIVE_I18N[i];
         if (!r[0].test(ko)) continue;
@@ -8205,7 +8233,7 @@ function verifyDistribution(units, dist, pins) {
       html += '<div class="group-card" data-open="' + (slot.session === 1 ? "true" : "false") + '" data-syl="s' + slot.session + '">' +
         '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " - " + sessionBadge(slot.session) + slotDateNote(slot)) + '</span>' +
         (notes.length ? '<span class="curr-week-note">' + escapeHtml(T(notes[0])) + '</span>' : '') + '</span>' + currChev() + '</button>' +
-        '<div class="group-body">' + (sess.units.length ? courseGuideHtml(sess.units[0]) : '') + '<div class="curr-item-list">';
+        '<div class="group-body">' + (sess.units.length ? courseGuideHtml(sess.units[0], rp.sched, slot.week) : '') + '<div class="curr-item-list">';
       var rows = "";
       sess.learning.forEach(function (it) {
         if (readingLabels.indexOf((it.text || {}).ko) >= 0) return;
@@ -8573,7 +8601,7 @@ function verifyDistribution(units, dist, pins) {
               '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(badgeText) + '</span>' +
               (slot.note ? '<span class="curr-week-note">' + escapeHtml(T(slot.note)) + '</span>' : '') + '</span>' +
               currChev() + '</button>' +
-              '<div class="group-body">' + courseServiceHtml(slot.week) + courseGuideHtml(slot.week) + '<div class="curr-item-list">';
+              '<div class="group-body">' + courseServiceHtml(slot.week) + courseGuideHtml(slot.week, sched, slot.week) + '<div class="curr-item-list">';
             var displayItems = classItemsOf(slot);
             var scopeNow = scopeWeek(slot.week);
             // classScope: homework-only items and what the preliminary meeting took over are not on the class card.
@@ -8615,8 +8643,8 @@ function verifyDistribution(units, dist, pins) {
                 copy.previews = (d.previews || []).slice();
                 if (!copy.reviews.length && slot.items.length) copy.reviews.push(slot.items[dayIndex % slot.items.length]);
                 if (!copy.previews.length && nextInst.items.length) copy.previews.push(nextInst.items[dayIndex % nextInst.items.length]);
-                if (!copy.reviews.length) copy.reviews.push({ text: { ko: "이번 주 학습 내용 복습", zh: "複習本週學習內容", en: "Review this week’s study", ja: "今週の学習内容を復習" }, link: { tab: "review" } });
-                if (!copy.previews.length) copy.previews.push({ text: { ko: "다음 주 학습 내용 예습", zh: "預習下週學習內容", en: "Preview next week’s study", ja: "来週の学習内容を予習" }, link: { tab: "curriculum" } });
+                if (!copy.reviews.length) copy.reviews.push({ text: { ko: "이번 주 학습 내용 복습", vi: "Ôn lại nội dung học tuần này", zh: "複習本週學習內容", en: "Review this week’s study", ja: "今週の学習内容を復習" }, link: { tab: "review" } });
+                if (!copy.previews.length) copy.previews.push({ text: { ko: "다음 주 학습 내용 예습", vi: "Xem trước nội dung học tuần tới", zh: "預習下週學習內容", en: "Preview next week’s study", ja: "来週の学習内容を予習" }, link: { tab: "curriculum" } });
                 return copy;
               }) });
               if (slot.week === 15) {
@@ -8690,8 +8718,8 @@ function verifyDistribution(units, dist, pins) {
             copy.previews = (d.previews || []).slice();
             if (!copy.reviews.length && w.items.length) copy.reviews.push(w.items[dayIndex % w.items.length]);
             if (!copy.previews.length && nextSlot.items.length) copy.previews.push(nextSlot.items[dayIndex % nextSlot.items.length]);
-            if (!copy.reviews.length) copy.reviews.push({ text: { ko: "이번 주 학습 내용 복습", zh: "複習本週學習內容", en: "Review this week’s study", ja: "今週の学習内容を復習" }, link: { tab: "review" } });
-            if (!copy.previews.length) copy.previews.push({ text: { ko: "다음 주 학습 내용 예습", zh: "預習下週學習內容", en: "Preview next week’s study", ja: "来週の学習内容を予習" }, link: { tab: "curriculum" } });
+            if (!copy.reviews.length) copy.reviews.push({ text: { ko: "이번 주 학습 내용 복습", vi: "Ôn lại nội dung học tuần này", zh: "複習本週學習內容", en: "Review this week’s study", ja: "今週の学習内容を復習" }, link: { tab: "review" } });
+            if (!copy.previews.length) copy.previews.push({ text: { ko: "다음 주 학습 내용 예습", vi: "Xem trước nội dung học tuần tới", zh: "預習下週學習內容", en: "Preview next week’s study", ja: "来週の学習内容を予習" }, link: { tab: "curriculum" } });
             return copy;
           }) });
           if (w.week === 15) {

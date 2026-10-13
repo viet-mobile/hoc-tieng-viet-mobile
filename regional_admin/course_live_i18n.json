@@ -83,5 +83,285 @@
   "^(\\d+)주 \\(파수대 집회 실연·졸업\\)$",
   "Tuần $1 (trình diễn buổi học Tháp Canh · tốt nghiệp)",
   "Week $1 (Watchtower Study demonstration · graduation)"
+ ],
+ [
+  "^일반 문법 (\\d+)[~–-](\\d+)번$",
+  "Ngữ pháp tổng quát $1–$2",
+  "General Grammar $1–$2"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(한자음 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng hôm nay (Hán Việt $1–$2)",
+  "Today's vocabulary study (Sino-Vietnamese $1–$2)"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(한자음 (\\d+)[~–-](\\d+)번\\) · 다음 학습일 복습$",
+  "Học từ vựng hôm nay (Hán Việt $1–$2) · ôn ngày học kế tiếp",
+  "Today's vocabulary study (Sino-Vietnamese $1–$2) · next study day review"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(한자음 (\\d+)[~–-](\\d+)번\\) · 1주 뒤 복습$",
+  "Học từ vựng hôm nay (Hán Việt $1–$2) · ôn sau 1 tuần",
+  "Today's vocabulary study (Sino-Vietnamese $1–$2) · review after 1 week"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(한자음 (\\d+)[~–-](\\d+)번\\) · 4주 뒤 복습$",
+  "Học từ vựng hôm nay (Hán Việt $1–$2) · ôn sau 4 tuần",
+  "Today's vocabulary study (Sino-Vietnamese $1–$2) · review after 4 weeks"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(동일음 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng hôm nay (đồng âm $1–$2)",
+  "Today's vocabulary study (same-sound words $1–$2)"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(동일음 (\\d+)[~–-](\\d+)번\\) · 다음 학습일 복습$",
+  "Học từ vựng hôm nay (đồng âm $1–$2) · ôn ngày học kế tiếp",
+  "Today's vocabulary study (same-sound words $1–$2) · next study day review"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(동일음 (\\d+)[~–-](\\d+)번\\) · 1주 뒤 복습$",
+  "Học từ vựng hôm nay (đồng âm $1–$2) · ôn sau 1 tuần",
+  "Today's vocabulary study (same-sound words $1–$2) · review after 1 week"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(동일음 (\\d+)[~–-](\\d+)번\\) · 4주 뒤 복습$",
+  "Học từ vựng hôm nay (đồng âm $1–$2) · ôn sau 4 tuần",
+  "Today's vocabulary study (same-sound words $1–$2) · review after 4 weeks"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(어순반대 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng hôm nay (đảo trật tự $1–$2)",
+  "Today's vocabulary study (reversed word order $1–$2)"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(어순반대 (\\d+)[~–-](\\d+)번\\) · 다음 학습일 복습$",
+  "Học từ vựng hôm nay (đảo trật tự $1–$2) · ôn ngày học kế tiếp",
+  "Today's vocabulary study (reversed word order $1–$2) · next study day review"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(어순반대 (\\d+)[~–-](\\d+)번\\) · 1주 뒤 복습$",
+  "Học từ vựng hôm nay (đảo trật tự $1–$2) · ôn sau 1 tuần",
+  "Today's vocabulary study (reversed word order $1–$2) · review after 1 week"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(어순반대 (\\d+)[~–-](\\d+)번\\) · 4주 뒤 복습$",
+  "Học từ vựng hôm nay (đảo trật tự $1–$2) · ôn sau 4 tuần",
+  "Today's vocabulary study (reversed word order $1–$2) · review after 4 weeks"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(반의 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng hôm nay (trái nghĩa $1–$2)",
+  "Today's vocabulary study (antonyms $1–$2)"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(반의 (\\d+)[~–-](\\d+)번\\) · 다음 학습일 복습$",
+  "Học từ vựng hôm nay (trái nghĩa $1–$2) · ôn ngày học kế tiếp",
+  "Today's vocabulary study (antonyms $1–$2) · next study day review"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(반의 (\\d+)[~–-](\\d+)번\\) · 1주 뒤 복습$",
+  "Học từ vựng hôm nay (trái nghĩa $1–$2) · ôn sau 1 tuần",
+  "Today's vocabulary study (antonyms $1–$2) · review after 1 week"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(반의 (\\d+)[~–-](\\d+)번\\) · 4주 뒤 복습$",
+  "Học từ vựng hôm nay (trái nghĩa $1–$2) · ôn sau 4 tuần",
+  "Today's vocabulary study (antonyms $1–$2) · review after 4 weeks"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(단어 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng hôm nay (từ vựng $1–$2)",
+  "Today's vocabulary study (words $1–$2)"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(단어 (\\d+)[~–-](\\d+)번\\) · 다음 학습일 복습$",
+  "Học từ vựng hôm nay (từ vựng $1–$2) · ôn ngày học kế tiếp",
+  "Today's vocabulary study (words $1–$2) · next study day review"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(단어 (\\d+)[~–-](\\d+)번\\) · 1주 뒤 복습$",
+  "Học từ vựng hôm nay (từ vựng $1–$2) · ôn sau 1 tuần",
+  "Today's vocabulary study (words $1–$2) · review after 1 week"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(단어 (\\d+)[~–-](\\d+)번\\) · 4주 뒤 복습$",
+  "Học từ vựng hôm nay (từ vựng $1–$2) · ôn sau 4 tuần",
+  "Today's vocabulary study (words $1–$2) · review after 4 weeks"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(끝말 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng hôm nay (nối từ $1–$2)",
+  "Today's vocabulary study (word chain $1–$2)"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(끝말 (\\d+)[~–-](\\d+)번\\) · 다음 학습일 복습$",
+  "Học từ vựng hôm nay (nối từ $1–$2) · ôn ngày học kế tiếp",
+  "Today's vocabulary study (word chain $1–$2) · next study day review"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(끝말 (\\d+)[~–-](\\d+)번\\) · 1주 뒤 복습$",
+  "Học từ vựng hôm nay (nối từ $1–$2) · ôn sau 1 tuần",
+  "Today's vocabulary study (word chain $1–$2) · review after 1 week"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(끝말 (\\d+)[~–-](\\d+)번\\) · 4주 뒤 복습$",
+  "Học từ vựng hôm nay (nối từ $1–$2) · ôn sau 4 tuần",
+  "Today's vocabulary study (word chain $1–$2) · review after 4 weeks"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(남북 단어 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng hôm nay (từ Bắc/Nam $1–$2)",
+  "Today's vocabulary study (North/South words $1–$2)"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(남북 단어 (\\d+)[~–-](\\d+)번\\) · 다음 학습일 복습$",
+  "Học từ vựng hôm nay (từ Bắc/Nam $1–$2) · ôn ngày học kế tiếp",
+  "Today's vocabulary study (North/South words $1–$2) · next study day review"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(남북 단어 (\\d+)[~–-](\\d+)번\\) · 1주 뒤 복습$",
+  "Học từ vựng hôm nay (từ Bắc/Nam $1–$2) · ôn sau 1 tuần",
+  "Today's vocabulary study (North/South words $1–$2) · review after 1 week"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(남북 단어 (\\d+)[~–-](\\d+)번\\) · 4주 뒤 복습$",
+  "Học từ vựng hôm nay (từ Bắc/Nam $1–$2) · ôn sau 4 tuần",
+  "Today's vocabulary study (North/South words $1–$2) · review after 4 weeks"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(상용 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng hôm nay (thông dụng $1–$2)",
+  "Today's vocabulary study (common words $1–$2)"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(상용 (\\d+)[~–-](\\d+)번\\) · 다음 학습일 복습$",
+  "Học từ vựng hôm nay (thông dụng $1–$2) · ôn ngày học kế tiếp",
+  "Today's vocabulary study (common words $1–$2) · next study day review"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(상용 (\\d+)[~–-](\\d+)번\\) · 1주 뒤 복습$",
+  "Học từ vựng hôm nay (thông dụng $1–$2) · ôn sau 1 tuần",
+  "Today's vocabulary study (common words $1–$2) · review after 1 week"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(상용 (\\d+)[~–-](\\d+)번\\) · 4주 뒤 복습$",
+  "Học từ vựng hôm nay (thông dụng $1–$2) · ôn sau 4 tuần",
+  "Today's vocabulary study (common words $1–$2) · review after 4 weeks"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(기본 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng hôm nay (cơ bản $1–$2)",
+  "Today's vocabulary study (basic words $1–$2)"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(기본 (\\d+)[~–-](\\d+)번\\) · 다음 학습일 복습$",
+  "Học từ vựng hôm nay (cơ bản $1–$2) · ôn ngày học kế tiếp",
+  "Today's vocabulary study (basic words $1–$2) · next study day review"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(기본 (\\d+)[~–-](\\d+)번\\) · 1주 뒤 복습$",
+  "Học từ vựng hôm nay (cơ bản $1–$2) · ôn sau 1 tuần",
+  "Today's vocabulary study (basic words $1–$2) · review after 1 week"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(기본 (\\d+)[~–-](\\d+)번\\) · 4주 뒤 복습$",
+  "Học từ vựng hôm nay (cơ bản $1–$2) · ôn sau 4 tuần",
+  "Today's vocabulary study (basic words $1–$2) · review after 4 weeks"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(신권 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng hôm nay (thần quyền $1–$2)",
+  "Today's vocabulary study (theocratic terms $1–$2)"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(신권 (\\d+)[~–-](\\d+)번\\) · 다음 학습일 복습$",
+  "Học từ vựng hôm nay (thần quyền $1–$2) · ôn ngày học kế tiếp",
+  "Today's vocabulary study (theocratic terms $1–$2) · next study day review"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(신권 (\\d+)[~–-](\\d+)번\\) · 1주 뒤 복습$",
+  "Học từ vựng hôm nay (thần quyền $1–$2) · ôn sau 1 tuần",
+  "Today's vocabulary study (theocratic terms $1–$2) · review after 1 week"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(신권 (\\d+)[~–-](\\d+)번\\) · 4주 뒤 복습$",
+  "Học từ vựng hôm nay (thần quyền $1–$2) · ôn sau 4 tuần",
+  "Today's vocabulary study (theocratic terms $1–$2) · review after 4 weeks"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(인명 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng hôm nay (tên riêng $1–$2)",
+  "Today's vocabulary study (personal names $1–$2)"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(인명 (\\d+)[~–-](\\d+)번\\) · 다음 학습일 복습$",
+  "Học từ vựng hôm nay (tên riêng $1–$2) · ôn ngày học kế tiếp",
+  "Today's vocabulary study (personal names $1–$2) · next study day review"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(인명 (\\d+)[~–-](\\d+)번\\) · 1주 뒤 복습$",
+  "Học từ vựng hôm nay (tên riêng $1–$2) · ôn sau 1 tuần",
+  "Today's vocabulary study (personal names $1–$2) · review after 1 week"
+ ],
+ [
+  "^오늘의 어휘 학습 \\(인명 (\\d+)[~–-](\\d+)번\\) · 4주 뒤 복습$",
+  "Học từ vựng hôm nay (tên riêng $1–$2) · ôn sau 4 tuần",
+  "Today's vocabulary study (personal names $1–$2) · review after 4 weeks"
+ ],
+ [
+  "^베트남어 어휘 학습 (\\d+)주차 \\(한자음 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng tiếng Việt tuần $1 (Hán Việt $2–$3)",
+  "Vietnamese vocabulary week $1 (Sino-Vietnamese $2–$3)"
+ ],
+ [
+  "^베트남어 어휘 학습 (\\d+)주차 \\(동일음 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng tiếng Việt tuần $1 (đồng âm $2–$3)",
+  "Vietnamese vocabulary week $1 (same-sound words $2–$3)"
+ ],
+ [
+  "^베트남어 어휘 학습 (\\d+)주차 \\(어순반대 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng tiếng Việt tuần $1 (đảo trật tự $2–$3)",
+  "Vietnamese vocabulary week $1 (reversed word order $2–$3)"
+ ],
+ [
+  "^베트남어 어휘 학습 (\\d+)주차 \\(반의 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng tiếng Việt tuần $1 (trái nghĩa $2–$3)",
+  "Vietnamese vocabulary week $1 (antonyms $2–$3)"
+ ],
+ [
+  "^베트남어 어휘 학습 (\\d+)주차 \\(단어 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng tiếng Việt tuần $1 (từ vựng $2–$3)",
+  "Vietnamese vocabulary week $1 (words $2–$3)"
+ ],
+ [
+  "^베트남어 어휘 학습 (\\d+)주차 \\(끝말 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng tiếng Việt tuần $1 (nối từ $2–$3)",
+  "Vietnamese vocabulary week $1 (word chain $2–$3)"
+ ],
+ [
+  "^베트남어 어휘 학습 (\\d+)주차 \\(남북 단어 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng tiếng Việt tuần $1 (từ Bắc/Nam $2–$3)",
+  "Vietnamese vocabulary week $1 (North/South words $2–$3)"
+ ],
+ [
+  "^베트남어 어휘 학습 (\\d+)주차 \\(상용 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng tiếng Việt tuần $1 (thông dụng $2–$3)",
+  "Vietnamese vocabulary week $1 (common words $2–$3)"
+ ],
+ [
+  "^베트남어 어휘 학습 (\\d+)주차 \\(기본 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng tiếng Việt tuần $1 (cơ bản $2–$3)",
+  "Vietnamese vocabulary week $1 (basic words $2–$3)"
+ ],
+ [
+  "^베트남어 어휘 학습 (\\d+)주차 \\(신권 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng tiếng Việt tuần $1 (thần quyền $2–$3)",
+  "Vietnamese vocabulary week $1 (theocratic terms $2–$3)"
+ ],
+ [
+  "^베트남어 어휘 학습 (\\d+)주차 \\(인명 (\\d+)[~–-](\\d+)번\\)$",
+  "Học từ vựng tiếng Việt tuần $1 (tên riêng $2–$3)",
+  "Vietnamese vocabulary week $1 (personal names $2–$3)"
  ]
 ]

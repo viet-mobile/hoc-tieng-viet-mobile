@@ -497,7 +497,7 @@
       '<div class="guide-label">예상 시간 배분 (2시간 기준, 분)</div>' +
       '<div class="guide-post-sum">' + sum + '</div>' +
       '<table class="guide-time"><tbody>' + head + rows + foot + '</tbody></table>' +
-      '<p class="guide-time-note">일반 문법은 핵심 문형 3~4개, 이웃 대화는 앞부분 역할 읽기, 행누·랑제는 한 단락, 어휘는 약 100개만 수업에서 다루고 나머지는 과제입니다. 시간은 자료 분량으로 계산한 예상값입니다.</p>' +
+      '<p class="guide-time-note">일반 문법은 핵심 문형 3~4개, 이웃 대화는 앞부분 역할 읽기, 행누·랑제는 한 단락을 다룹니다. 어휘는 주간 과제 범위를 5개 묶음으로 나누어 일반 어휘 7분, 파수대 어휘 2분씩 반복 학습합니다. 2시간 수업에 맞춰 다른 항목의 시간을 조정했습니다.</p>' +
       guideList('과제로만 (수업에서 다루지 않음; 전주 예습 · 후주 복습)', u.homeworkOnly);
   }
   function courseSongsHtml(week) {
