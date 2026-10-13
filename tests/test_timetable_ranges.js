@@ -5,6 +5,7 @@ const guide={instructors:data.instructors,structure:data.classStructure,units:Ob
 const ctx=vm.createContext({window:{},currentLang:'ko',JEONJU_TEACHING_GUIDE:guide,
  escapeHtml:t=>String(t),escapeAttr:t=>String(t),
  COURSE_VOCAB:{stream:[['hanja',0,146],['reverse',0,15],['same',0,9]],cats:{hanja:{ko:'한자음',vi:'Hán Việt'},reverse:{ko:'어순반대',vi:'đảo trật tự'},same:{ko:'동일음',vi:'đồng âm'}},dayText:{ko:'{c} {a}–{b}',vi:'{c} {a}–{b}'}}});
+ctx.TU=()=>ctx.currentLang==='vi'?'Mở':'바로가기';ctx.currLinkBtn=l=>'<button>'+JSON.stringify(l)+'</button>';ctx.coursePlanLocalButton=()=>'<button>바로가기</button>';
 ctx.T=o=>o[ctx.currentLang]||o.en||o.ko;
 vm.runInContext(source.slice(source.indexOf('  function wtDaySplit('),source.indexOf('  window.__wtDaySplit')),ctx);
 vm.runInContext(source.slice(source.indexOf('  var COURSE_VOCAB_ON ='),source.indexOf('  var courseVocabCache =')),ctx);

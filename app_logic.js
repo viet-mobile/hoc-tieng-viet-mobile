@@ -6297,7 +6297,7 @@
 
     var unitsHtml = '<div class="gr-unit-list">';
     GRAMMAR_UNITS.forEach(function (u, ui) {
-      unitsHtml += '<div class="group-card" data-open="' + (ui === 0 ? "true" : "false") + '" data-syl="gru' + ui + '">' +
+      unitsHtml += '<div class="group-card" data-open="' + (ui === 0 ? "true" : "false") + '" data-syl="gru' + ui + '" data-anchor="grammar-unit-' + ui + '">' +
         '<div class="group-head-row"><button class="group-head"><span><span class="syl">' + escapeHtml(T(u.title)) + '</span></span>' +
         '<span class="chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></button>' +
         readAllButtonHtml([["", T(u.note)]].concat(u.steps.map(function (s) { return [s.vi, T(s.kr)]; }))) + '</div>' +
@@ -6324,7 +6324,7 @@
       // meaning line rather than the Korean one.
       GRAMMAR_A1_A2_PATTERNS.forEach(function (pat, pi) {
         var patMeaning = Tstrict(pat.meaning || pat.meaningKo);
-        a1a2Html += '<div class="group-card" data-open="false" data-syl="gra1a2_' + pi + '">' +
+        a1a2Html += '<div class="group-card" data-open="false" data-syl="gra1a2_' + pi + '" data-anchor="grammar-a1a2-' + pi + '">' +
           '<div class="group-head-row"><button class="group-head"><span><span class="syl vn font-bold">' + escapeHtml(pat.pattern) + '</span> <span class="badge">' + escapeHtml(pat.level) + '</span>' + (patMeaning ? ' - ' + escapeHtml(patMeaning) : '') + '</span>' +
           '<span class="chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></button>' +
           readAllButtonHtml([["", patMeaning || ""]].concat(pat.examples.map(function (ex) { return [ex.vi, Tstrict(ex.tr || ex.ko) || ""]; }))) + '</div>' +
@@ -7040,6 +7040,36 @@
     cont: { ko: "(이어서)", vi: "(tiếp)", en: "(continued)" }
   };
   var COURSE_PLAN_ICON = { stand: "\uD83E\uDDCD", sit: "\uD83E\uDE91", move: "\uD83D\uDEB6", flex: "\u23F3", rest: "\u2615" };
+  function coursePlanLinks(name) {
+    var items = [];
+    (typeof CURR_WEEKS !== "undefined" ? CURR_WEEKS : []).forEach(function (w) { items = items.concat(w.items || []); });
+    var exact = items.filter(function (it) { return it.text && it.text.ko === name && it.link; })[0];
+    if (exact) return [exact.link];
+    function link(tab, sub, anchor) { return { tab: tab, subAttr: tab, subVal: sub, anchor: anchor }; }
+    var m;
+    if ((m = /^베트남어 제공 연설 (\d+)/.exec(name))) return [Object.assign(link("wizard", "talks"), { talkNums: [+m[1]] })];
+    if ((m = /^베트남어 노래 \((\d+)/.exec(name))) return [link("sentence", "song", "song-" + m[1])];
+    if ((m = /^행누 (\d+)과/.exec(name))) return [link("sentence", "lff", "lff" + (+m[1] - 1))];
+    if (/^행누: 1부/.test(name)) return [link("sentence", "lff", "lff12")];
+    if ((m = /^랑제 (\d+)과/.exec(name))) return [link("sentence", "lpd", "lpd" + (+m[1] - 1))];
+    if (/^랑제 부록/.test(name)) return [link("sentence", "lpd", "lpd12")];
+    if ((m = /A1\/A2\) (\d+)/.exec(name))) return [link("grammar", "lessons", "grammar-a1a2-" + (+m[1] - 1))];
+    if ((m = /어순 단원 (\d+)/.exec(name))) return [link("grammar", "lessons", "grammar-unit-" + (+m[1] - 1))];
+    if ((m = /B1\/B2 문형 (\d+)/.exec(name))) return [link("grammar", "special", "grammar-b1b2-" + (+m[1] - 1))];
+    var aliases = {
+      "범용언어 생성법 소개": ["grammar", "sentences"], "베트남어 문법 예문": ["grammar", "lessons"],
+      "베트남어 남북 발음 차이": ["pron", "nsdiff"], "숫자 복습 (3,6,9 게임)": ["bible", "numbers"],
+      "베트남어 성경 찾기 시험": ["bible", "books"], "베트남어 호칭": ["wizard", "main"],
+      "연결사": ["grammar", "special"], "움직임을 나타내는 동사": ["grammar", "special"],
+      "위치 전치사와 길찾기 대화문": ["grammar", "special"], "베트남어로 일기쓰고 발표": ["sentence", "phrases"],
+      "돌아다니며 상호 대화 실습 (오늘 배운 표현으로)": ["wizard", "main"], "상황별 실연 준비": ["wizard", "main"],
+      "행누 1과로 성서 연구 사회 실습": ["sentence", "lff", "lff0"]
+    };
+    return aliases[name] ? [link.apply(null, aliases[name])] : [];
+  }
+  function coursePlanLocalButton(action, note) {
+    return '<button class="curr-link-btn" data-plan-action="' + action + '"' + (note ? ' data-plan-note="' + escapeAttr(note) + '"' : '') + '>' + TU("바로가기") + '</button>';
+  }
   function courseClassPlanHtml(g, timetable, serviceKey) {
     if (!g || !g.plan || !g.plan.length || typeof JEONJU_TEACHING_GUIDE === "undefined" || !JEONJU_TEACHING_GUIDE) return "";
     function gt(x) { return !x ? "" : typeof x === "string" ? x : (x[currentLang] || x.en || x.ko || ""); }
@@ -7055,7 +7085,7 @@
       if (currentLang === "vi" && !p[4] && cont) shown = name;
       var serviceKind = name === "시작 노래·기도" ? "open" : name === "마치는 노래·기도" ? "close" : null;
       var service = serviceKind && typeof courseTimetableService === "function" ? courseTimetableService(serviceKey === undefined && timetable ? timetable.week : serviceKey, serviceKind) : null;
-      var grouping = p[5], descriptions = [], count = null;
+      var grouping = p[5], descriptions = [], count = null, planLinks = [];
       if (grouping && timetable) {
         if (grouping.kind === "course-vocab") {
           var vocabPlan = courseVocabPlan(timetable.sched);
@@ -7065,6 +7095,7 @@
             count = dailyRange[1] - dailyRange[0];
             courseVocabItems(dailyRange, "dayText").forEach(function (item) {
               var r = item.link.vocabRange;
+              planLinks.push(item.link);
               descriptions.push(T(COURSE_VOCAB.cats[item.link.subVal]) + " " + (r.start + 1) + "–" + r.end);
             });
           }
@@ -7074,6 +7105,7 @@
             var part = wtDaySplit(wtRange.end - wtRange.start)[grouping.part];
             count = part[1] - part[0];
             descriptions.push((part[0] + 1) + "–" + part[1]);
+            planLinks.push({tab:"vocab",subAttr:"vocab",subVal:"wt",vocabRange:{start:wtRange.start+part[0],end:wtRange.start+part[1]}});
           }
         }
         if (count !== null) {
@@ -7081,16 +7113,35 @@
           shown += " · " + descriptions.join("; ") + " (" + count + (units[currentLang] || units.en) + ")";
         }
       }
+      var shortcut = "";
+      if (!service && typeof coursePlanLinks === "function") {
+        if (!grouping) planLinks = coursePlanLinks(name);
+        if (/파수대|집회 사회|베트남어 집회 리허설/.test(name) && !grouping) {
+          var articleRange = timetable && (Number(timetable.week) === 16 ? watchtowerRange(24) : wtWeekRange(timetable.week));
+          planLinks = [{tab:"sentence",subAttr:"sentence",subVal:"wt",vocabRange:articleRange || undefined}];
+        }
+        shortcut = planLinks.map(currLinkBtn).join(" ");
+        if (!shortcut) {
+          var activityNotes = {
+            "휴식": {ko:"휴식 후 다음 시간표 항목부터 수업을 계속합니다.",vi:"Nghỉ giải lao, sau đó tiếp tục mục kế tiếp trong thời khóa biểu.",en:"Take a break, then continue with the next timetable item."},
+            "항목 전환·여유": {ko:"다음 순서의 담당자와 자료를 준비합니다.",vi:"Chuẩn bị người phụ trách và tài liệu cho phần tiếp theo.",en:"Prepare the participants and materials for the next part."},
+            "졸업식 준비 (임명)": {ko:"졸업식 순서와 각 역할의 담당자를 확인하고 준비합니다.",vi:"Xác nhận chương trình lễ tốt nghiệp và người phụ trách từng phần.",en:"Confirm the graduation programme and the assigned participants."},
+            "졸업": {ko:"강사의 안내에 따라 졸업 순서를 진행합니다.",vi:"Tiến hành lễ tốt nghiệp theo hướng dẫn của giảng viên.",en:"Follow the instructor’s guidance for graduation."}
+          };
+          var note = activityNotes[name] ? (activityNotes[name][currentLang] || activityNotes[name].en) : currentLang === "vi" ? "Làm theo hướng dẫn của giảng viên trong thời gian đã ghi." : currentLang === "ko" ? "표시된 시간 동안 강사의 안내에 따라 진행합니다." : "Follow the instructor’s guidance during the allotted time.";
+          shortcut = coursePlanLocalButton(name === "과제 확인·안내" ? "homework" : "instructions", note);
+        }
+      }
       if (p[2] === null) {
         brk += p[1];
-        return '<div class="curr-plan-row curr-plan-break"><span class="curr-plan-t">' + start + '\u2013' + clock + '</span><span class="curr-plan-p">' + COURSE_PLAN_ICON.rest + '</span><span class="curr-plan-n">' + escapeHtml(gt(COURSE_PLAN_LABELS.brk)) + '</span><span class="curr-plan-ab">' + p[1] + escapeHtml(min) + '</span></div>';
+        return '<div class="curr-plan-row curr-plan-break"><span class="curr-plan-t">' + start + '\u2013' + clock + '</span><span class="curr-plan-p">' + COURSE_PLAN_ICON.rest + '</span><span class="curr-plan-n">' + escapeHtml(gt(COURSE_PLAN_LABELS.brk)) + " " + shortcut + '</span><span class="curr-plan-ab">' + p[1] + escapeHtml(min) + '</span></div>';
       }
       var a = p[2], b = p[1] - a;
       ta += a; tb += b;
       var plabel = gt(posts[p[3]]);
       return '<div class="curr-plan-row curr-plan-' + escapeAttr(p[3]) + '"' + (grouping ? ' data-plan-kind="' + escapeAttr(grouping.kind) + '" data-plan-part="' + grouping.part + '"' : '') + '><span class="curr-plan-t">' + start + '\u2013' + clock + '</span>' +
         '<span class="curr-plan-p" title="' + escapeAttr(plabel) + '" aria-label="' + escapeAttr(plabel) + '">' + (COURSE_PLAN_ICON[p[3]] || "") + '</span>' +
-        '<span class="curr-plan-n">' + (service ? service.html : escapeHtml(shown)) + (cont ? ' <span class="curr-plan-cont">' + escapeHtml(gt(COURSE_PLAN_LABELS.cont)) + '</span>' : '') + '</span>' +
+        '<span class="curr-plan-n">' + (service ? service.html : escapeHtml(shown) + " " + shortcut) + (cont ? ' <span class="curr-plan-cont">' + escapeHtml(gt(COURSE_PLAN_LABELS.cont)) + '</span>' : '') + '</span>' +
         '<span class="curr-plan-ab">' + (a ? '<b class="curr-plan-a">A ' + a + '</b>' : '') + (b ? '<b class="curr-plan-b">B ' + b + '</b>' : '') + '</span></div>';
     }).join("");
     var hasIns = ins && ins.A && ins.B;
@@ -7657,7 +7708,7 @@
     var person = prayers && prayers[kind === "open" ? 0 : 1];
     if (!item && !person) return null;
     var text = item ? T(item.text) : courseServiceWord(kind);
-    return { html: escapeHtml(text) + (person ? ' · ' + escapeHtml(TU("기도")) + ': ' + coursePrayerPersonHtml(person) : '') + (item ? ' ' + currLinkBtn(item.link) : '') };
+    return { html: escapeHtml(text) + (item ? ' ' + currLinkBtn(item.link) : '') + (person ? ' · ' + escapeHtml(TU("기도")) + ': ' + coursePrayerPersonHtml(person) + ' ' + currLinkBtn({tab:"sentence",subAttr:"sentence",subVal:"prayer",anchor:"prayer-prep"}) : '') };
   }
   function courseServiceHtml(key) {
     var pr = (regionalFlag("prayers") || {})[String(key)];
@@ -7681,6 +7732,19 @@
     root.querySelectorAll(".curr-link-btn").forEach(function (b) {
       b.addEventListener("click", function (e) {
         e.stopPropagation();
+        if (b.dataset.planAction) {
+          var card = b.closest(".group-card"), target = card && card.querySelector(".curr-assign-card");
+          if (b.dataset.planAction === "homework" && target) {
+            target.dataset.open = "true";
+            var toggle = target.querySelector(".curr-assign-toggle"); if (toggle) toggle.setAttribute("aria-expanded", "true");
+            target.scrollIntoView({behavior:"smooth",block:"start"});
+          } else {
+            var row = b.closest(".curr-plan-row"), note = row.querySelector(".curr-plan-instructions");
+            if (!note) { note = document.createElement("span"); note.className = "curr-plan-instructions"; note.style.display = "block"; note.textContent = b.dataset.planNote; row.querySelector(".curr-plan-n").appendChild(note); }
+            else { note.hidden = !note.hidden; note.style.display = note.hidden ? "none" : "block"; }
+          }
+          return;
+        }
         if (b.dataset.gotoReviewScope) {
           activateTab("review", false);
           var reviewTab = document.querySelector('.subtab-btn[data-review="sentence"]');
@@ -10207,7 +10271,7 @@ function verifyDistribution(units, dist, pins) {
     html += '<div class="p-section"><h3>' + TU("A–Z 문법 사전") + '</h3>';
     if (!dict.length) html += '<div class="empty-state">' + TU("검색 결과가 없어요.") + '</div>';
     dict.forEach(function (g) {
-      html += '<div class="curr-card"><div class="curr-dict-head"><span class="curr-dict-word">' + escapeHtml(g.headword) + '</span>' +
+      html += '<div class="curr-card"' + (typeof GRAMMAR_B1_B2_PATTERNS !== "undefined" && GRAMMAR_B1_B2_PATTERNS.indexOf(g)>=0 ? ' data-anchor="grammar-b1b2-' + GRAMMAR_B1_B2_PATTERNS.indexOf(g) + '"' : '') + '><div class="curr-dict-head"><span class="curr-dict-word">' + escapeHtml(g.headword) + '</span>' +
         (g.pos ? '<span class="curr-dict-pos">' + escapeHtml(T(g.pos)) + '</span>' : '') +
         readAllButtonHtml(g.examples.map(function (e) { return [e.vi, T(e.kr)]; })) + '</div>' +
         '<div class="curr-dict-meaning">' + escapeHtml(T(g.meaning)) + '</div><div class="curr-ex-list">';
