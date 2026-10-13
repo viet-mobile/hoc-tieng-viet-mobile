@@ -7040,7 +7040,7 @@
     cont: { ko: "(이어서)", vi: "(tiếp)", en: "(continued)" }
   };
   var COURSE_PLAN_ICON = { stand: "\uD83E\uDDCD", sit: "\uD83E\uDE91", move: "\uD83D\uDEB6", flex: "\u23F3", rest: "\u2615" };
-  function courseClassPlanHtml(g, timetable) {
+  function courseClassPlanHtml(g, timetable, serviceKey) {
     if (!g || !g.plan || !g.plan.length || typeof JEONJU_TEACHING_GUIDE === "undefined" || !JEONJU_TEACHING_GUIDE) return "";
     function gt(x) { return !x ? "" : typeof x === "string" ? x : (x[currentLang] || x.en || x.ko || ""); }
     var ins = JEONJU_TEACHING_GUIDE.instructors || null, st = JEONJU_TEACHING_GUIDE.structure || {}, posts = st.postures || {};
@@ -7053,6 +7053,8 @@
       if (/ \(이어서\)$/.test(name)) { name = name.replace(/ \(이어서\)$/, ""); cont = true; }
       var shown = (currentLang === "vi" && p[4]) ? p[4] : name;
       if (currentLang === "vi" && !p[4] && cont) shown = name;
+      var serviceKind = name === "시작 노래·기도" ? "open" : name === "마치는 노래·기도" ? "close" : null;
+      var service = serviceKind && typeof courseTimetableService === "function" ? courseTimetableService(serviceKey === undefined && timetable ? timetable.week : serviceKey, serviceKind) : null;
       var grouping = p[5], descriptions = [], count = null;
       if (grouping && timetable) {
         if (grouping.kind === "course-vocab") {
@@ -7088,7 +7090,7 @@
       var plabel = gt(posts[p[3]]);
       return '<div class="curr-plan-row curr-plan-' + escapeAttr(p[3]) + '"' + (grouping ? ' data-plan-kind="' + escapeAttr(grouping.kind) + '" data-plan-part="' + grouping.part + '"' : '') + '><span class="curr-plan-t">' + start + '\u2013' + clock + '</span>' +
         '<span class="curr-plan-p" title="' + escapeAttr(plabel) + '" aria-label="' + escapeAttr(plabel) + '">' + (COURSE_PLAN_ICON[p[3]] || "") + '</span>' +
-        '<span class="curr-plan-n">' + escapeHtml(shown) + (cont ? ' <span class="curr-plan-cont">' + escapeHtml(gt(COURSE_PLAN_LABELS.cont)) + '</span>' : '') + '</span>' +
+        '<span class="curr-plan-n">' + (service ? service.html : escapeHtml(shown)) + (cont ? ' <span class="curr-plan-cont">' + escapeHtml(gt(COURSE_PLAN_LABELS.cont)) + '</span>' : '') + '</span>' +
         '<span class="curr-plan-ab">' + (a ? '<b class="curr-plan-a">A ' + a + '</b>' : '') + (b ? '<b class="curr-plan-b">B ' + b + '</b>' : '') + '</span></div>';
     }).join("");
     var hasIns = ins && ins.A && ins.B;
@@ -7110,7 +7112,7 @@
       var hint = gt(m.hint);
       return '<span class="curr-guide-chip">' + escapeHtml(gt(m.label)) + (hint ? '<span class="curr-guide-hint"> · ' + escapeHtml(hint) + '</span>' : '') + '</span>';
     }).join("");
-    var plan = courseClassPlanHtml(g, sched ? { sched: sched, week: classWeek === undefined ? Number(unit) : classWeek } : null);
+    var plan = courseClassPlanHtml(g, sched ? { sched: sched, week: classWeek === undefined ? Number(unit) : classWeek } : null, unit === "preliminary" ? "prelim" : (classWeek === undefined ? unit : classWeek));
     if (!methods && !(g.materials || []).length && !plan) return "";
     return '<div class="curr-guide">' + plan +
       (methods ? '<div class="curr-guide-row"><span class="curr-guide-label">' + escapeHtml(T(COURSE_GUIDE_LABELS.methods)) + '</span><div class="curr-guide-chips">' + methods + '</div></div>' : '') +
@@ -7639,21 +7641,32 @@
     brother: { ko: "형제", vi: "", en: "" }
   };
   function courseServiceWord(k) { var w = COURSE_SERVICE_WORDS[k]; return w[currentLang] !== undefined ? w[currentLang] : w.en; }
+  function coursePrayerPersonHtml(person) {
+    var address = {};
+    (typeof CLASS_ROSTER !== "undefined" ? CLASS_ROSTER : []).forEach(function (g) { g.members.forEach(function (m) { address[m[0]] = m[2] || m[1]; }); });
+    var p = person;
+    if (!p || !p[0]) return "";
+    var addr = address[p[0]] || "";
+    var name = currentLang === "ko" ? p[0] + " " + courseServiceWord("brother") + (addr ? " (" + addr + ")" : "") : (addr || p[0]);
+    return escapeHtml(name) + (p[1] ? ' <span class="curr-service-lang">' + escapeHtml(courseServiceWord(p[1])) + '</span>' : '');
+  }
+  function courseTimetableService(key, kind) {
+    if (key === undefined || key === null) return null;
+    var prayers = (regionalFlag("prayers") || {})[String(key)];
+    var item = courseSongItems(key).filter(function (it) { return it._song === kind; })[0];
+    var person = prayers && prayers[kind === "open" ? 0 : 1];
+    if (!item && !person) return null;
+    var text = item ? T(item.text) : courseServiceWord(kind);
+    return { html: escapeHtml(text) + (person ? ' · ' + escapeHtml(TU("기도")) + ': ' + coursePrayerPersonHtml(person) : '') + (item ? ' ' + currLinkBtn(item.link) : '') };
+  }
   function courseServiceHtml(key) {
     var pr = (regionalFlag("prayers") || {})[String(key)];
     if (!pr) return "";
     var songs = (regionalFlag("songs") || {})[String(key)] || [];
     function song(i) { return songs[i] ? '<span class="vn">' + escapeHtml(songs[i]) + '</span>' : escapeHtml(courseServiceWord("song")); }
-    var address = {};
-    (typeof CLASS_ROSTER !== "undefined" ? CLASS_ROSTER : []).forEach(function (g) { g.members.forEach(function (m) { address[m[0]] = m[2] || m[1]; }); });
-    function who(p) {
-      var addr = address[p[0]] || "";
-      var name = currentLang === "ko" ? p[0] + " " + courseServiceWord("brother") + (addr ? " (" + addr + ")" : "") : (addr || p[0]);
-      return escapeHtml(name) + (p[1] ? ' <span class="curr-service-lang">' + escapeHtml(courseServiceWord(p[1])) + '</span>' : '');
-    }
     return '<div class="curr-service">' +
-      '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("open")) + '</span><span>' + song(0) + ' · ' + who(pr[0]) + '</span></div>' +
-      '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("close")) + '</span><span>' + song(1) + ' · ' + who(pr[1]) + '</span></div>' +
+      '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("open")) + '</span><span>' + song(0) + ' · ' + coursePrayerPersonHtml(pr[0]) + '</span></div>' +
+      '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("close")) + '</span><span>' + song(1) + ' · ' + coursePrayerPersonHtml(pr[1]) + '</span></div>' +
       '</div>';
   }
   function bindCurrGroupCards(root) {
