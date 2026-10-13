@@ -2179,7 +2179,7 @@
   // [복습] [플래시카드]: its own, shorter gaps: the same Vietnamese repeated is chained with NO timer at all (0 ms: the next
   // utterance is spoken from the previous one's onend), Vietnamese -> meaning 60 ms, meaning -> the example of a 한자음 card 120 ms.
   // Apple keeps its engine floor (SPEECH_MIN_GAP_MS), which is not a delay of ours.
-  var FLASH_GAPS = { repeat: 0, language: 60, row: 120 };
+  var FLASH_GAPS = { repeat: 0, language: IS_APPLE_VOICES ? 0 : 60, row: 120 };   // Apple: the Vietnamese -> meaning step has no timer of ours at all (the 60 ms was on top of the voice's own trailing silence)
   var READALL_ROW_GAP_MS = IS_APPLE_VOICES ? 60 : 200;   // the target language -> the next row
   // iPhone/iPad/Mac run the same WebKit speech engine.
   var IS_APPLE_WEBKIT_SPEECH = IS_MAC_DESKTOP || /iPhone|iPad|iPod/i.test(navigator.userAgent || "") ||
@@ -2417,6 +2417,7 @@
   var speechRun = null;          // the run in charge (it may already be finished)
   var lastSpeechCancelAt = 0;
   var lastSpeechEndAt = 0;
+  var lastStartedSpeechLang = "";   // base language of the last utterance the engine started (to tell a change of language / voice)
   window.__activeUtterances = window.__activeUtterances || [];   // strong references of the utterances in flight
   function speechSynth() { try { return "speechSynthesis" in window ? window.speechSynthesis : null; } catch (e) { return null; } }
   function speechRunTimer(run, fn, ms) {
@@ -2527,10 +2528,24 @@
       run.cur = stepToken;
       run.spoke = true;
       window.__activeUtterances.push(u);
+      // Where the time goes at a change of language (Apple: Vietnamese -> the learner's language): `ours` = ms from the end of the
+      // previous utterance to this speak() call (the page's own share), `engine` = ms from speak() to the start event (the engine
+      // loading the other voice). Always collected (a few numbers), written to the diagnosis panel with ?ttsdebug=1 and kept in
+      // window.__ttsLatency.
+      var tSpeak = (window.performance && performance.now) ? performance.now() : Date.now();
+      var oursMs = lastSpeechEndAt ? Date.now() - lastSpeechEndAt : -1;
+      var uLang = speechBaseLang(u.lang), switched = !!(lastStartedSpeechLang && lastStartedSpeechLang !== uLang);
       u.onstart = function () {
         if (cur !== u || run.ended || settled) return;
         started = true;
-        speechLog(run, item, "start", "lang=" + (u.lang || "") + " len=" + String(opts.text).length);
+        var engineMs = Math.round(((window.performance && performance.now) ? performance.now() : Date.now()) - tSpeak);
+        lastStartedSpeechLang = uLang;
+        try {
+          var rec = { lang: u.lang || "", voice: (u.voice && u.voice.name) || "", switched: switched, oursMs: oursMs, engineMs: engineMs };
+          (window.__ttsLatency = window.__ttsLatency || []).push(rec);
+          if (window.__ttsLatency.length > 60) window.__ttsLatency.shift();
+        } catch (eLat) { /* no-op */ }
+        speechLog(run, item, "start", "lang=" + (u.lang || "") + " len=" + String(opts.text).length + " switch=" + (switched ? "yes" : "no") + " ours=" + oursMs + "ms engine=" + engineMs + "ms");
         if (startTimer) { clearTimeout(startTimer); startTimer = null; }
         armEnd();
       };
