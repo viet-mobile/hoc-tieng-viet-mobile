@@ -1304,7 +1304,7 @@ HANOI_CHART = {
         {"letters": [["l-", ""]], "ko": "ㄹ-"},
         {"letters": [["m-", ""]], "ko": "ㅁ-"},
         {"letters": [["n-", ""]], "ko": "ㄴ-"},
-        {"letters": [["ng-", ""]], "ko": "응-"},
+        {"letters": [["ng-", "a"], ["ngh-", "b"]], "ko": "응-"},
         {"letters": [["nh-", ""]], "ko": "니-"},
     ],
     "vowels": [
