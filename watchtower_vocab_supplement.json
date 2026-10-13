@@ -1,0 +1,1367 @@
+{
+  "21": [
+    {
+      "vi": "người thân yêu",
+      "mean": {
+        "en": "loved one",
+        "ja": "愛する人",
+        "ko": "사랑하는 사람",
+        "zh": "摯愛的人"
+      },
+      "example": "Chúng ta cần vun đắp mối quan hệ với những người thân yêu hàng ngày.",
+      "example_mean": {
+        "en": "We need to cultivate our relationships with loved ones every day.",
+        "ja": "私たちは毎日、大切な人との関係を育む必要があります。",
+        "ko": "우리는 매일 사랑하는 사람들과의 관계를 가꾸어 나가야 합니다.",
+        "zh": "我们需要每天培养与所爱之人的关系。"
+      }
+    },
+    {
+      "vi": "kiến thức",
+      "mean": {
+        "en": "knowledge",
+        "ja": "知識",
+        "ko": "식견(識見), 지식",
+        "zh": "知識"
+      },
+      "example": "Người thầy của tôi rất rộng rãi trong việc chia sẻ kiến thức.",
+      "example_mean": {
+        "en": "My teacher is very generous in sharing knowledge.",
+        "ja": "私の先生は知識を分け与えることにとても気前がいいです。",
+        "ko": "우리 선생님은 지식을 나누는 데 매우 후하십니다.",
+        "zh": "我的老师在分享知识方面非常慷慨。"
+      }
+    },
+    {
+      "vi": "chia sẻ",
+      "mean": {
+        "en": "to share",
+        "ja": "分かち合う",
+        "ko": "나누다",
+        "zh": "分享",
+        "cs": "dělit se",
+        "hu": "megoszt",
+        "id": "berbagi",
+        "zh_cn": "分享",
+        "fr": "partager",
+        "de": "teilen",
+        "pl": "dzielić się"
+      },
+      "example": "Người thầy của tôi rất rộng rãi trong việc chia sẻ kiến thức.",
+      "example_mean": {
+        "en": "My teacher is very generous in sharing knowledge.",
+        "ja": "私の先生は知識を分け与えることにとても気前がいいです。",
+        "ko": "우리 선생님은 지식을 나누는 데 매우 후하십니다.",
+        "zh": "我的老师在分享知识方面非常慷慨。"
+      }
+    },
+    {
+      "vi": "lo lắng",
+      "mean": {
+        "en": "to worry, be anxious",
+        "ja": "心配する",
+        "ko": "염려하다",
+        "zh": "憂慮"
+      },
+      "example": "Bạn tôi thường tâm sự những lo lắng của mình.",
+      "example_mean": {
+        "en": "My friend often confides his worries to me.",
+        "ja": "私の友人はよく自分の心配事を打ち明けます。",
+        "ko": "내 친구는 자주 자기 걱정거리를 털어놓습니다.",
+        "zh": "我的朋友经常向我倾诉他的担忧。"
+      }
+    },
+    {
+      "vi": "cầu nguyện",
+      "mean": {
+        "en": "to pray",
+        "ja": "祈る",
+        "ko": "기도하다",
+        "zh": "禱告"
+      },
+      "example": "Đức Giê-hô-va lắng nghe và đáp lại lời cầu nguyện chân thành.",
+      "example_mean": {
+        "en": "Jehovah listens to and responds to sincere prayers.",
+        "ja": "エホバは誠実な祈りに耳を傾け,それに応じてくださいます。",
+        "ko": "여호와께서는 진실한 기도를 들으시고 응답해 주십니다.",
+        "zh": "耶和华会聆听并回应真诚的祷告。"
+      }
+    },
+    {
+      "vi": "chân thành",
+      "mean": {
+        "en": "sincere, genuine",
+        "ja": "誠実さ",
+        "ko": "진실하다",
+        "zh": "真誠"
+      },
+      "example": "Đức Giê-hô-va lắng nghe và đáp lại lời cầu nguyện chân thành.",
+      "example_mean": {
+        "en": "Jehovah listens to and responds to sincere prayers.",
+        "ja": "エホバは誠実な祈りに耳を傾け,それに応じてくださいます。",
+        "ko": "여호와께서는 진실한 기도를 들으시고 응답해 주십니다.",
+        "zh": "耶和华会聆听并回应真诚的祷告。"
+      }
+    },
+    {
+      "vi": "lắng nghe",
+      "mean": {
+        "en": "to listen attentively",
+        "ja": "耳を傾ける",
+        "ko": "귀 기울여 듣다",
+        "zh": "用心聆聽"
+      },
+      "example": "Đức Giê-hô-va lắng nghe và đáp lại lời cầu nguyện chân thành.",
+      "example_mean": {
+        "en": "Jehovah listens to and responds to sincere prayers.",
+        "ja": "エホバは誠実な祈りに耳を傾け,それに応じてくださいます。",
+        "ko": "여호와께서는 진실한 기도를 들으시고 응답해 주십니다.",
+        "zh": "耶和华会聆听并回应真诚的祷告。"
+      }
+    },
+    {
+      "vi": "trung thành",
+      "mean": {
+        "en": "loyal/faithful",
+        "ja": "忠実",
+        "ko": "충성",
+        "zh": "忠誠"
+      },
+      "example": "Đức Giê-hô-va không bỏ rơi những tôi tớ trung thành của ngài.",
+      "example_mean": {
+        "en": "Jehovah does not abandon his faithful servants.",
+        "ja": "エホバは忠実な僕たちを決して見捨てません。",
+        "ko": "여호와께서는 자신의 충실한 종들을 저버리지 않으십니다.",
+        "zh": "耶和华绝不会离弃他忠心的仆人。"
+      }
+    },
+    {
+      "vi": "tôi tớ",
+      "mean": {
+        "en": "servant",
+        "ja": "僕",
+        "ko": "종",
+        "zh": "僕人"
+      },
+      "example": "Đức Giê-hô-va không bỏ rơi những tôi tớ trung thành của ngài.",
+      "example_mean": {
+        "en": "Jehovah does not abandon his faithful servants.",
+        "ja": "エホバは忠実な僕たちを決して見捨てません。",
+        "ko": "여호와께서는 자신의 충실한 종들을 저버리지 않으십니다.",
+        "zh": "耶和华绝不会离弃他忠心的仆人。"
+      }
+    },
+    {
+      "vi": "bỏ rơi",
+      "mean": {
+        "en": "to abandon",
+        "ja": "見捨てる",
+        "ko": "버리고 떠나다",
+        "zh": "拋棄",
+        "cs": "opustit",
+        "hu": "elhagy, cserbenhagy",
+        "id": "meninggalkan",
+        "zh_cn": "抛弃",
+        "fr": "abandonner",
+        "de": "im Stich lassen",
+        "pl": "opuścić"
+      },
+      "example": "Đức Giê-hô-va không bỏ rơi những tôi tớ trung thành của ngài.",
+      "example_mean": {
+        "en": "Jehovah does not abandon his faithful servants.",
+        "ja": "エホバは忠実な僕たちを決して見捨てません。",
+        "ko": "여호와께서는 자신의 충실한 종들을 저버리지 않으십니다.",
+        "zh": "耶和华绝不会离弃他忠心的仆人。"
+      }
+    },
+    {
+      "vi": "lời khuyên",
+      "mean": {
+        "en": "advice, counsel",
+        "ja": "助言",
+        "ko": "조언",
+        "zh": "建議"
+      },
+      "example": "Sự hướng dẫn từ Đức Giê-hô-va vượt trội hơn lời khuyên của con người.",
+      "example_mean": {
+        "en": "Guidance from Jehovah surpasses human advice.",
+        "ja": "エホバからの導きは人間の助言に勝ります。",
+        "ko": "여호와께서 주시는 인도는 사람의 조언보다 뛰어납니다.",
+        "zh": "耶和华的指引胜过人的意见。"
+      }
+    },
+    {
+      "vi": "tình bạn",
+      "mean": {
+        "en": "friendship",
+        "ja": "友情",
+        "ko": "우정",
+        "zh": "友誼"
+      },
+      "example": "Sự kiên trì là chìa khóa để vun đắp tình bạn bền vững.",
+      "example_mean": {
+        "en": "Perseverance is the key to cultivating a lasting friendship.",
+        "ja": "忍耐強さは、長続きする友情を育む鍵です。",
+        "ko": "끈기는 변함없는 우정을 가꾸는 열쇠입니다.",
+        "zh": "坚忍是培养持久友谊的关键。"
+      }
+    },
+    {
+      "vi": "tin cậy",
+      "mean": {
+        "en": "trust",
+        "ja": "信頼する",
+        "ko": "신뢰하다",
+        "zh": "信賴",
+        "cs": "důvěřovat",
+        "hu": "bízik",
+        "id": "percaya",
+        "zh_cn": "信赖",
+        "fr": "faire confiance",
+        "de": "vertrauen",
+        "pl": "ufać"
+      },
+      "example": "Đức Giê-hô-va nâng cao phẩm giá của những ai tin cậy ngài.",
+      "example_mean": {
+        "en": "Jehovah raises the dignity of those who trust in him.",
+        "ja": "エホバはご自分を信頼する人の尊厳を高めてくださいます。",
+        "ko": "여호와께서는 자신을 신뢰하는 사람들의 존엄성을 높여 주십니다.",
+        "zh": "耶和华会提升信靠他之人的尊严。"
+      }
+    },
+    {
+      "vi": "lời hứa",
+      "mean": {
+        "en": "promise",
+        "ja": "約束",
+        "ko": "약속",
+        "zh": "承諾"
+      },
+      "example": "Chúng ta phải thực hiện những lời hứa của mình.",
+      "example_mean": {
+        "en": "We must fulfill our promises.",
+        "ja": "私たちは自分の約束を果たさなければなりません。",
+        "ko": "우리는 자신이 한 약속을 이행해야 합니다.",
+        "zh": "我们必须履行自己的承诺。"
+      }
+    },
+    {
+      "vi": "hoàn cảnh",
+      "mean": {
+        "en": "circumstance, background",
+        "ja": "環境",
+        "ko": "환경",
+        "zh": "環境"
+      },
+      "example": "Không nên chế nhạo những người khác vì hoàn cảnh của họ.",
+      "example_mean": {
+        "en": "One should not mock others because of their circumstances.",
+        "ja": "他の人の境遇のことで彼らをあざけるべきではありません。",
+        "ko": "다른 사람의 처지 때문에 그들을 비웃어서는 안 됩니다.",
+        "zh": "不应该因为别人的处境而嘲笑他们。"
+      }
+    },
+    {
+      "vi": "quyết định",
+      "mean": {
+        "en": "decision",
+        "ja": "決定",
+        "ko": "결정(決定)하다",
+        "zh": "決定"
+      },
+      "example": "Tôi băn khoăn về quyết định nào sẽ tốt nhất.",
+      "example_mean": {
+        "en": "I am wondering which decision would be best.",
+        "ja": "どの決定が一番良いか思い悩んでいます。",
+        "ko": "나는 어떤 결정이 가장 좋을지 고민하고 있습니다.",
+        "zh": "我在犹豫哪个决定才是最好的。"
+      }
+    },
+    {
+      "vi": "hy sinh",
+      "mean": {
+        "en": "to sacrifice",
+        "ja": "犠牲にする",
+        "ko": "희생하다",
+        "zh": "犧牲"
+      },
+      "example": "Chúa Giê-su hy sinh mạng sống mình vì loài người.",
+      "example_mean": {
+        "en": "Jesus sacrificed his own life for humankind.",
+        "ja": "イエスは人類のためにご自分の命を犠牲にされました。",
+        "ko": "예수께서는 인류를 위해 자신의 목숨을 희생하셨습니다.",
+        "zh": "耶稣为人类牺牲了自己的性命。"
+      }
+    },
+    {
+      "vi": "sẵn lòng",
+      "mean": {
+        "en": "willing",
+        "ja": "進んで～する",
+        "ko": "기꺼이 ~하는",
+        "zh": "樂意",
+        "cs": "ochotný",
+        "hu": "készséges",
+        "id": "rela, bersedia",
+        "zh_cn": "乐意",
+        "fr": "disposé",
+        "de": "bereitwillig",
+        "pl": "chętny"
+      },
+      "example": "Khiêm tốn giúp chúng ta sẵn lòng nhận lời khuyên.",
+      "example_mean": {
+        "en": "Humility helps us be willing to accept counsel.",
+        "ja": "謙遜であることは,助言を進んで受け入れる助けになります。",
+        "ko": "겸손함은 조언을 기꺼이 받아들이는 데 도움이 됩니다.",
+        "zh": "谦逊使我们乐意接受劝告。"
+      }
+    },
+    {
+      "vi": "quyền năng",
+      "mean": {
+        "en": "power",
+        "ja": "力",
+        "ko": "권능",
+        "zh": "權能",
+        "cs": "moc",
+        "hu": "hatalom",
+        "id": "kuasa",
+        "zh_cn": "力量",
+        "fr": "puissance",
+        "de": "Macht",
+        "pl": "moc"
+      },
+      "example": "Danh hiệu của Đức Giê-hô-va cho thấy quyền năng của ngài.",
+      "example_mean": {
+        "en": "Jehovah's title shows his power.",
+        "ja": "エホバの称号はその力を示しています。",
+        "ko": "여호와의 칭호는 그분의 권능을 보여 줍니다.",
+        "zh": "耶和华的称号显明了他的权能。"
+      }
+    },
+    {
+      "vi": "ban phước",
+      "mean": {
+        "en": "to bless",
+        "ja": "祝福する",
+        "ko": "복을 주다",
+        "zh": "賜福",
+        "cs": "požehnat",
+        "hu": "megáld",
+        "id": "memberkati",
+        "zh_cn": "赐福",
+        "fr": "bénir",
+        "de": "segnen",
+        "pl": "błogosławić"
+      },
+      "example": "Đức Giê-hô-va ban phước cho những ai trung thành với ngài.",
+      "example_mean": {
+        "en": "Jehovah blesses those who are faithful to him.",
+        "ja": "エホバはご自分に忠実な人を祝福してくださいます。",
+        "ko": "여호와께서는 자신에게 충실한 사람들에게 복을 주십니다.",
+        "zh": "耶和华会赐福给那些对他忠心的人。"
+      }
+    }
+  ],
+  "22": [
+    {
+      "vi": "anh em đồng đạo",
+      "mean": {
+        "en": "fellow believer",
+        "ja": "信仰の仲間",
+        "ko": "형제자매",
+        "zh": "信仰上的弟兄姊妹",
+        "cs": "spoluvěřící",
+        "hu": "hittárs",
+        "id": "rekan seiman",
+        "zh_cn": "信仰上的弟兄姊妹",
+        "fr": "compagnon chrétien",
+        "de": "Glaubensbruder",
+        "pl": "współwyznawca"
+      },
+      "example": "Làm thế nào chúng ta có thể vun đắp tình bạn mật thiết với anh em đồng đạo?",
+      "example_mean": {
+        "en": "How can we cultivate close friendships with our fellow believers?",
+        "ja": "兄弟姉妹と親密な友情をどのように育むことができますか。",
+        "ko": "우리는 어떻게 형제자매들과 친밀한 우정을 키워 나갈 수 있습니까?",
+        "zh": "我们怎样才能跟弟兄姐妹培养出亲密的友谊?"
+      }
+    },
+    {
+      "vi": "mật thiết",
+      "mean": {
+        "en": "close/intimate",
+        "ja": "親密な",
+        "ko": "밀절(密切)한, 가깝게 지내는",
+        "zh": "親密",
+        "cs": "blízký, důvěrný",
+        "hu": "szoros, meghitt",
+        "id": "akrab, dekat",
+        "zh_cn": "亲密",
+        "fr": "intime",
+        "de": "eng",
+        "pl": "bliski"
+      },
+      "example": "Làm thế nào chúng ta có thể vun đắp tình bạn mật thiết với anh em đồng đạo?",
+      "example_mean": {
+        "en": "How can we cultivate close friendships with our fellow believers?",
+        "ja": "兄弟姉妹と親密な友情をどのように育むことができますか。",
+        "ko": "우리는 어떻게 형제자매들과 친밀한 우정을 키워 나갈 수 있습니까?",
+        "zh": "我们怎样才能跟弟兄姐妹培养出亲密的友谊?"
+      }
+    },
+    {
+      "vi": "vun đắp",
+      "mean": {
+        "en": "to cultivate, to build up",
+        "ja": "育む",
+        "ko": "가꾸다, 쌓아 가다",
+        "zh": "培养",
+        "cs": "pěstovat, rozvíjet",
+        "hu": "ápol, épít",
+        "id": "memupuk, membina",
+        "zh_cn": "培养",
+        "fr": "cultiver",
+        "de": "aufbauen",
+        "pl": "pielęgnować"
+      },
+      "example": "Làm thế nào chúng ta có thể vun đắp tình bạn mật thiết với anh em đồng đạo?",
+      "example_mean": {
+        "en": "How can we cultivate close friendships with our fellow believers?",
+        "ja": "兄弟姉妹と親密な友情をどのように育むことができますか。",
+        "ko": "우리는 어떻게 형제자매들과 친밀한 우정을 키워 나갈 수 있습니까?",
+        "zh": "我们怎样才能跟弟兄姐妹培养出亲密的友谊?"
+      }
+    },
+    {
+      "vi": "khuynh hướng",
+      "mean": {
+        "en": "tendency",
+        "ja": "傾向",
+        "ko": "경향",
+        "zh": "傾向"
+      },
+      "example": "Nhiều người ngày nay có khuynh hướng xem mình là trên hết.",
+      "example_mean": {
+        "en": "Many people today tend to put themselves first.",
+        "ja": "今日、多くの人は自己中心的になりがちです。",
+        "ko": "오늘날 많은 사람은 자기중심적인 태도를 가지는 경향이 있습니다.",
+        "zh": "現今很多人都傾向於以自我為中心。"
+      }
+    },
+    {
+      "vi": "lợi ích",
+      "mean": {
+        "en": "benefit",
+        "ja": "益",
+        "ko": "유익",
+        "zh": "益處"
+      },
+      "example": "Chúng ta nên học cách quan tâm đến lợi ích của người khác.",
+      "example_mean": {
+        "en": "We should learn to take an interest in the interests of others.",
+        "ja": "私たちは他の人の益に関心を向けることを学ぶべきです。",
+        "ko": "우리는 다른 사람들의 유익에 관심을 가지는 법을 배워야 합니다.",
+        "zh": "我们应该学习关心别人的利益。"
+      }
+    },
+    {
+      "vi": "quan tâm",
+      "mean": {
+        "en": "to care about",
+        "ja": "関心を持つ",
+        "ko": "관심(關心)을 갖다",
+        "zh": "關心"
+      },
+      "example": "Chúng ta nên học cách quan tâm đến lợi ích của người khác.",
+      "example_mean": {
+        "en": "We should learn to take an interest in the interests of others.",
+        "ja": "私たちは他の人の益に関心を向けることを学ぶべきです。",
+        "ko": "우리는 다른 사람들의 유익에 관심을 가지는 법을 배워야 합니다.",
+        "zh": "我们应该学习关心别人的利益。"
+      }
+    },
+    {
+      "vi": "bản thân",
+      "mean": {
+        "en": "oneself",
+        "ja": "自分自身",
+        "ko": "자기 자신",
+        "zh": "自己,本身",
+        "cs": "sám sebe, sám sobě",
+        "hu": "önmaga, magunk",
+        "id": "diri sendiri",
+        "zh_cn": "自己，本身",
+        "fr": "soi-même",
+        "de": "sich selbst",
+        "pl": "sam siebie"
+      },
+      "example": "Khi cô lập bản thân, chúng ta sẽ trở nên lo lắng hơn.",
+      "example_mean": {
+        "en": "When we isolate ourselves, we become more anxious.",
+        "ja": "自分を孤立させると、もっと不安になります。",
+        "ko": "자신을 고립시키면 우리는 더 불안해질 것입니다.",
+        "zh": "孤立自己会使我们变得更焦虑。"
+      }
+    },
+    {
+      "vi": "kết hợp",
+      "mean": {
+        "en": "associate with",
+        "ja": "交わる",
+        "ko": "어울리다",
+        "zh": "交往"
+      },
+      "example": "Hãy dành thời gian để kết hợp trực tiếp với anh em đồng đạo.",
+      "example_mean": {
+        "en": "Take time to associate in person with your fellow believers.",
+        "ja": "兄弟姉妹と直接会って交わる時間を取りましょう。",
+        "ko": "형제자매들과 직접 만나서 교제하는 데 시간을 내십시오.",
+        "zh": "要抽出时间跟弟兄姐妹直接见面交往。"
+      }
+    },
+    {
+      "vi": "cảm xúc",
+      "mean": {
+        "en": "emotion, feeling",
+        "ja": "感情",
+        "ko": "감정",
+        "zh": "感情"
+      },
+      "example": "Tại sao việc chia sẻ cảm xúc với người khác là điều quan trọng?",
+      "example_mean": {
+        "en": "Why is it important to share our feelings with others?",
+        "ja": "他の人と気持ちを分かち合うことがなぜ大切なのですか。",
+        "ko": "다른 사람들에게 자신의 감정을 나누는 것이 왜 중요합니까?",
+        "zh": "为什么跟别人分享自己的感受很重要?"
+      }
+    },
+    {
+      "vi": "chia sẻ",
+      "mean": {
+        "en": "to share",
+        "ja": "分かち合う",
+        "ko": "나누다",
+        "zh": "分享",
+        "cs": "dělit se",
+        "hu": "megoszt",
+        "id": "berbagi",
+        "zh_cn": "分享",
+        "fr": "partager",
+        "de": "teilen",
+        "pl": "dzielić się"
+      },
+      "example": "Tại sao việc chia sẻ cảm xúc với người khác là điều quan trọng?",
+      "example_mean": {
+        "en": "Why is it important to share our feelings with others?",
+        "ja": "他の人と気持ちを分かち合うことがなぜ大切なのですか。",
+        "ko": "다른 사람들에게 자신의 감정을 나누는 것이 왜 중요합니까?",
+        "zh": "为什么跟别人分享自己的感受很重要?"
+      }
+    },
+    {
+      "vi": "gắn bó",
+      "mean": {
+        "en": "to remain devoted/loyally attached",
+        "ja": "忠実に付き従う",
+        "ko": "친밀하다",
+        "zh": "忠心追隨",
+        "cs": "zůstat věrně oddaný",
+        "hu": "hűségesen ragaszkodik hozzá",
+        "id": "loyal, setia terpaut",
+        "zh_cn": "忠心追随",
+        "fr": "attaché",
+        "de": "eng verbunden",
+        "pl": "związany"
+      },
+      "example": "Chúng ta gắn bó với bạn bè cả lúc thuận lợi lẫn lúc khó khăn.",
+      "example_mean": {
+        "en": "We stick close to our friends both in favorable times and in difficult ones.",
+        "ja": "順調な時も大変な時も、私たちは友達のそばにいます。",
+        "ko": "우리는 순조로운 때든 어려운 때든 친구 곁에 있어 줍니다.",
+        "zh": "无论顺利还是困难的时候,我们都跟朋友在一起。"
+      }
+    }
+  ],
+  "23": [
+    {
+      "vi": "xứng đáng",
+      "mean": {
+        "en": "deserving",
+        "ja": "値する",
+        "ko": "마땅하다",
+        "zh": "應得",
+        "cs": "zasloužit si, být hoden",
+        "hu": "megérdemel, méltó",
+        "id": "layak, patut",
+        "zh_cn": "应得",
+        "fr": "digne",
+        "de": "würdig",
+        "pl": "godny"
+      },
+      "example": "Đôi khi chúng ta cảm thấy mình không xứng đáng được Đức Giê-hô-va yêu thương.",
+      "example_mean": {
+        "en": "Sometimes we feel we are unworthy of Jehovah’s love.",
+        "ja": "時々、私たちはエホバの愛を受けるにふさわしくないと感じることがあります。",
+        "ko": "때때로 우리는 여호와의 사랑을 받을 자격이 없다고 느낍니다.",
+        "zh": "有时我们会觉得自己不配得到耶和华的爱。"
+      }
+    },
+    {
+      "vi": "bất toàn",
+      "mean": {
+        "en": "imperfect",
+        "ja": "不完全",
+        "ko": "불완전한",
+        "zh": "不完美"
+      },
+      "example": "Sự bất toàn có thể ảnh hưởng đến cách chúng ta nhìn bản thân.",
+      "example_mean": {
+        "en": "Imperfection can affect how we view ourselves.",
+        "ja": "不完全さは私たちが自分自身をどう見るかに影響を与えることがあります。",
+        "ko": "불완전함은 우리가 자신을 보는 방식에 영향을 줄 수 있습니다.",
+        "zh": "不完美可能会影响我们看待自己的方式。"
+      }
+    },
+    {
+      "vi": "ảnh hưởng",
+      "mean": {
+        "en": "influence",
+        "ja": "影響",
+        "ko": "영향(影響)을 미치다",
+        "zh": "影響"
+      },
+      "example": "Sự bất toàn có thể ảnh hưởng đến cách chúng ta nhìn bản thân.",
+      "example_mean": {
+        "en": "Imperfection can affect how we view ourselves.",
+        "ja": "不完全さは私たちが自分自身をどう見るかに影響を与えることがあります。",
+        "ko": "불완전함은 우리가 자신을 보는 방식에 영향을 줄 수 있습니다.",
+        "zh": "不完美可能会影响我们看待自己的方式。"
+      }
+    },
+    {
+      "vi": "tranh đấu",
+      "mean": {
+        "en": "struggle, fight against",
+        "ja": "戦う",
+        "ko": "투쟁(鬪爭)하다, 맞서 싸우다",
+        "zh": "爭戰",
+        "fr": "lutter",
+        "de": "kämpfen",
+        "pl": "walczyć"
+      },
+      "example": "Ngay cả sứ đồ Phao-lô cũng tranh đấu với cảm giác tội lỗi.",
+      "example_mean": {
+        "en": "Even the apostle Paul struggled with feelings of guilt.",
+        "ja": "使徒パウロでさえ罪悪感と闘いました。",
+        "ko": "사도 바울도 죄책감과 씨름했습니다.",
+        "zh": "使徒保罗也曾与内疚感搏斗。"
+      }
+    },
+    {
+      "vi": "sứ đồ",
+      "mean": {
+        "en": "apostle",
+        "ja": "使徒",
+        "ko": "사도",
+        "zh": "使徒",
+        "cs": "apoštol",
+        "hu": "apostol",
+        "id": "rasul",
+        "zh_cn": "使徒",
+        "fr": "apôtre",
+        "de": "Apostel",
+        "pl": "apostoł"
+      },
+      "example": "Ngay cả sứ đồ Phao-lô cũng tranh đấu với cảm giác tội lỗi.",
+      "example_mean": {
+        "en": "Even the apostle Paul struggled with feelings of guilt.",
+        "ja": "使徒パウロでさえ罪悪感と闘いました。",
+        "ko": "사도 바울도 죄책감과 씨름했습니다.",
+        "zh": "使徒保罗也曾与内疚感搏斗。"
+      }
+    },
+    {
+      "vi": "tiêu chuẩn",
+      "mean": {
+        "en": "standard",
+        "ja": "基準",
+        "ko": "표준",
+        "zh": "標準"
+      },
+      "example": "Chúng ta có thể cảm thấy mình không đạt đến tiêu chuẩn công chính của Đức Giê-hô-va.",
+      "example_mean": {
+        "en": "We may feel that we fall short of Jehovah’s righteous standards.",
+        "ja": "私たちはエホバの義にかなった規準に届かないと感じることがあります。",
+        "ko": "우리는 여호와의 의로운 표준에 미치지 못한다고 느낄 수 있습니다.",
+        "zh": "我们可能会觉得自己达不到耶和华公义的标准。"
+      }
+    },
+    {
+      "vi": "công chính",
+      "mean": {
+        "en": "righteousness",
+        "ja": "義",
+        "ko": "의(義), 의롭다",
+        "zh": "公義"
+      },
+      "example": "Chúng ta có thể cảm thấy mình không đạt đến tiêu chuẩn công chính của Đức Giê-hô-va.",
+      "example_mean": {
+        "en": "We may feel that we fall short of Jehovah’s righteous standards.",
+        "ja": "私たちはエホバの義にかなった規準に届かないと感じることがあります。",
+        "ko": "우리는 여호와의 의로운 표준에 미치지 못한다고 느낄 수 있습니다.",
+        "zh": "我们可能会觉得自己达不到耶和华公义的标准。"
+      }
+    },
+    {
+      "vi": "ăn năn",
+      "mean": {
+        "en": "repent",
+        "ja": "悔い改める",
+        "ko": "회개하다",
+        "zh": "悔改"
+      },
+      "example": "Đức Giê-hô-va xem những tín đồ đã ăn năn là trong sạch.",
+      "example_mean": {
+        "en": "Jehovah views repentant ones as clean.",
+        "ja": "エホバは悔い改めた人を清い者とみなされます。",
+        "ko": "여호와께서는 회개한 사람들을 깨끗하다고 보십니다.",
+        "zh": "耶和华视已经悔改的信徒为洁净的。"
+      }
+    },
+    {
+      "vi": "đặc biệt",
+      "mean": {
+        "en": "especially",
+        "ja": "特に",
+        "ko": "특별(特別)히, 특히",
+        "zh": "特別"
+      },
+      "example": "Anh chị là một phần của sản nghiệp đặc biệt của Đức Giê-hô-va.",
+      "example_mean": {
+        "en": "You are part of Jehovah’s special possession.",
+        "ja": "あなたはエホバの特別な所有物の一部です。",
+        "ko": "당신은 여호와의 특별한 소유의 일부입니다.",
+        "zh": "你是耶和华特别产业的一部分。"
+      }
+    },
+    {
+      "vi": "nói dối",
+      "mean": {
+        "en": "lie, falsehood",
+        "ja": "嘘",
+        "ko": "거짓말",
+        "zh": "謊言",
+        "cs": "lež",
+        "hu": "hazugság",
+        "id": "kebohongan, dusta",
+        "zh_cn": "谎言",
+        "fr": "mensonge",
+        "de": "Lüge",
+        "pl": "kłamstwo"
+      },
+      "example": "Đức Giê-hô-va, Đức Chúa Trời chân thật, không bao giờ nói dối.",
+      "example_mean": {
+        "en": "Jehovah, the true God, never lies.",
+        "ja": "真実の神エホバは決して嘘をつかれません。",
+        "ko": "참되신 하느님 여호와께서는 결코 거짓말을 하지 않으십니다.",
+        "zh": "真实的上帝耶和华绝不会说谎。"
+      }
+    },
+    {
+      "vi": "xem xét",
+      "mean": {
+        "en": "to consider",
+        "ja": "考慮する",
+        "ko": "고려하다",
+        "zh": "考慮",
+        "cs": "zvažovat, posuzovat",
+        "hu": "megvizsgál, mérlegel",
+        "id": "mempertimbangkan",
+        "zh_cn": "考虑",
+        "fr": "examiner",
+        "de": "in Betracht ziehen",
+        "pl": "rozważać"
+      },
+      "example": "Hãy dùng Lời Đức Chúa Trời như một cái gương để xem xét bản thân.",
+      "example_mean": {
+        "en": "Use God’s Word like a mirror to examine yourself.",
+        "ja": "神の言葉を鏡のように使って自分を吟味しましょう。",
+        "ko": "하느님의 말씀을 거울처럼 사용해 자신을 살펴보십시오.",
+        "zh": "要把上帝的话语当作镜子来省察自己。"
+      }
+    },
+    {
+      "vi": "an ủi",
+      "mean": {
+        "en": "comfort",
+        "ja": "慰め",
+        "ko": "안위, 위로",
+        "zh": "安慰"
+      },
+      "example": "Hãy sưu tầm những câu Kinh Thánh an ủi để dùng khi cần.",
+      "example_mean": {
+        "en": "Collect comforting scriptures to use when needed.",
+        "ja": "必要な時のために、慰めとなる聖句を集めておきましょう。",
+        "ko": "필요할 때 사용할 수 있도록 위로가 되는 성구를 모아 두십시오.",
+        "zh": "要搜集一些安慰人心的经文，在需要时使用。"
+      }
+    }
+  ],
+  "24": [
+    {
+      "vi": "đức giê-hô-va",
+      "mean": {
+        "en": "Jehovah",
+        "ja": "エホバ",
+        "ko": "여호와",
+        "zh": "耶和華",
+        "cs": "Jehova",
+        "hu": "Jehova",
+        "id": "Yehuwa",
+        "zh_cn": "耶和华",
+        "fr": "Jéhovah",
+        "de": "Jehova",
+        "pl": "Jehowa"
+      },
+      "example": "Việc có đức tin mạnh nơi lời hứa của Đức Giê-hô-va về tương lai có thể giúp ích cho chúng ta ngay trong hiện tại.",
+      "example_mean": {
+        "en": "Having strong faith in Jehovah's promises about the future can help us right now.",
+        "ja": "エホバの将来に関する約束に強い信仰を持つことは,今の私たちを助けてくれます。",
+        "ko": "여호와의 미래에 관한 약속에 강한 믿음을 갖는 것은 지금 우리에게 도움이 될 수 있습니다.",
+        "zh": "對耶和華有關未來的承諾懷有堅定的信心,可以在現在幫助我們。"
+      }
+    },
+    {
+      "vi": "hứa",
+      "mean": {
+        "en": "promise",
+        "ja": "約束",
+        "ko": "약속하다",
+        "zh": "應許",
+        "cs": "slíbit",
+        "hu": "megígér",
+        "id": "berjanji",
+        "zh_cn": "应许",
+        "fr": "promettre",
+        "de": "versprechen",
+        "pl": "obiecać"
+      },
+      "example": "Việc có đức tin mạnh nơi lời hứa của Đức Giê-hô-va về tương lai có thể giúp ích cho chúng ta ngay trong hiện tại.",
+      "example_mean": {
+        "en": "Having strong faith in Jehovah's promises about the future can help us right now.",
+        "ja": "エホバの将来に関する約束に強い信仰を持つことは,今の私たちを助けてくれます。",
+        "ko": "여호와의 미래에 관한 약속에 강한 믿음을 갖는 것은 지금 우리에게 도움이 될 수 있습니다.",
+        "zh": "對耶和華有關未來的承諾懷有堅定的信心,可以在現在幫助我們。"
+      }
+    },
+    {
+      "vi": "đức tin mạnh",
+      "mean": {
+        "en": "strong faith",
+        "ja": "強い信仰",
+        "ko": "강한 믿음",
+        "zh": "堅強的信心",
+        "cs": "silná víra",
+        "hu": "erős hit",
+        "id": "iman yang kuat",
+        "zh_cn": "坚强的信心",
+        "fr": "foi solide",
+        "de": "starker Glaube",
+        "pl": "silna wiara"
+      },
+      "example": "Việc có đức tin mạnh nơi lời hứa của Đức Giê-hô-va về tương lai có thể giúp ích cho chúng ta ngay trong hiện tại.",
+      "example_mean": {
+        "en": "Having strong faith in Jehovah's promises about the future can help us right now.",
+        "ja": "エホバの将来に関する約束に強い信仰を持つことは,今の私たちを助けてくれます。",
+        "ko": "여호와의 미래에 관한 약속에 강한 믿음을 갖는 것은 지금 우리에게 도움이 될 수 있습니다.",
+        "zh": "對耶和華有關未來的承諾懷有堅定的信心,可以在現在幫助我們。"
+      }
+    },
+    {
+      "vi": "đức tin",
+      "mean": {
+        "en": "faith",
+        "ja": "信仰",
+        "ko": "믿음",
+        "zh": "信心"
+      },
+      "example": "Việc có đức tin mạnh nơi lời hứa của Đức Giê-hô-va về tương lai có thể giúp ích cho chúng ta ngay trong hiện tại.",
+      "example_mean": {
+        "en": "Having strong faith in Jehovah's promises about the future can help us right now.",
+        "ja": "エホバの将来に関する約束に強い信仰を持つことは,今の私たちを助けてくれます。",
+        "ko": "여호와의 미래에 관한 약속에 강한 믿음을 갖는 것은 지금 우리에게 도움이 될 수 있습니다.",
+        "zh": "對耶和華有關未來的承諾懷有堅定的信心,可以在現在幫助我們。"
+      }
+    },
+    {
+      "vi": "tương lai",
+      "mean": {
+        "en": "future",
+        "ja": "将来",
+        "ko": "장래(將來), 미래",
+        "zh": "未來"
+      },
+      "example": "Việc có đức tin mạnh nơi lời hứa của Đức Giê-hô-va về tương lai có thể giúp ích cho chúng ta ngay trong hiện tại.",
+      "example_mean": {
+        "en": "Having strong faith in Jehovah's promises about the future can help us right now.",
+        "ja": "エホバの将来に関する約束に強い信仰を持つことは,今の私たちを助けてくれます。",
+        "ko": "여호와의 미래에 관한 약속에 강한 믿음을 갖는 것은 지금 우리에게 도움이 될 수 있습니다.",
+        "zh": "對耶和華有關未來的承諾懷有堅定的信心,可以在現在幫助我們。"
+      }
+    },
+    {
+      "vi": "tín đồ",
+      "mean": {
+        "en": "Christian, believer",
+        "ja": "クリスチャン",
+        "ko": "신도(信徒), 그리스도인",
+        "zh": "基督徒",
+        "cs": "křesťan",
+        "hu": "keresztény",
+        "id": "orang Kristen",
+        "zh_cn": "基督徒",
+        "fr": "chrétien",
+        "de": "Christ",
+        "pl": "chrześcijanin"
+      },
+      "example": "Các tín đồ vào thế kỷ thứ nhất phải chịu nhiều khó khăn gian khổ.",
+      "example_mean": {
+        "en": "First-century Christians had to endure much hardship.",
+        "ja": "1世紀のクリスチャンは多くの苦難に耐えなければなりませんでした。",
+        "ko": "1세기 그리스도인들은 많은 고난을 견뎌야 했습니다.",
+        "zh": "一世紀的基督徒必須忍受許多艱辛。"
+      }
+    },
+    {
+      "vi": "thế kỷ thứ nhất",
+      "mean": {
+        "en": "first century",
+        "ja": "1世紀",
+        "ko": "1세기",
+        "zh": "第一世紀",
+        "cs": "první století",
+        "hu": "első század",
+        "id": "abad pertama",
+        "zh_cn": "1世纪",
+        "fr": "premier siècle",
+        "de": "erstes Jahrhundert",
+        "pl": "pierwszy wiek"
+      },
+      "example": "Các tín đồ vào thế kỷ thứ nhất phải chịu nhiều khó khăn gian khổ.",
+      "example_mean": {
+        "en": "First-century Christians had to endure much hardship.",
+        "ja": "1世紀のクリスチャンは多くの苦難に耐えなければなりませんでした。",
+        "ko": "1세기 그리스도인들은 많은 고난을 견뎌야 했습니다.",
+        "zh": "一世紀的基督徒必須忍受許多艱辛。"
+      }
+    },
+    {
+      "vi": "hy vọng",
+      "mean": {
+        "en": "hope",
+        "ja": "希望",
+        "ko": "희망(希望)",
+        "zh": "希望"
+      },
+      "example": "Niềm hy vọng ấy đối với Áp-ra-ham và Sa-ra có thật như những tiện nghi họ có.",
+      "example_mean": {
+        "en": "That hope was just as real to Abraham and Sarah as the comforts they had.",
+        "ja": "その希望は,アブラハムとサラにとって,自分たちが持っていた快適さと同じくらい現実的なものでした。",
+        "ko": "아브라함과 사라에게 그 희망은 그들이 누리던 안락함만큼이나 현실적인 것이었습니다.",
+        "zh": "對亞伯拉罕和撒拉來說,那個希望就像他們擁有的舒適生活一樣真實。"
+      }
+    },
+    {
+      "vi": "dâng",
+      "mean": {
+        "en": "to offer (a sacrifice)",
+        "ja": "献げる",
+        "ko": "바치다",
+        "zh": "獻上",
+        "cs": "obětovat",
+        "hu": "bemutat",
+        "id": "mempersembahkan",
+        "zh_cn": "奉献",
+        "fr": "offrir",
+        "de": "darbringen",
+        "pl": "ofiarować"
+      },
+      "example": "Tại sao Áp-ra-ham sẵn sàng vâng theo mệnh lệnh của Đức Giê-hô-va là dâng Y-sác?",
+      "example_mean": {
+        "en": "Why was Abraham willing to obey Jehovah's command to offer up Isaac?",
+        "ja": "アブラハムはなぜ,イサクをささげよというエホバの命令に喜んで従ったのですか。",
+        "ko": "아브라함은 왜 이삭을 바치라는 여호와의 명령에 기꺼이 순종했습니까?",
+        "zh": "亞伯拉罕為什麼樂意服從耶和華獻上以撒的命令?"
+      }
+    },
+    {
+      "vi": "mệnh lệnh",
+      "mean": {
+        "en": "command",
+        "ja": "命令",
+        "ko": "명령(命令)",
+        "zh": "命令",
+        "cs": "příkaz",
+        "hu": "parancs",
+        "id": "perintah",
+        "zh_cn": "命令",
+        "fr": "ordre",
+        "de": "Befehl",
+        "pl": "nakaz"
+      },
+      "example": "Tại sao Áp-ra-ham sẵn sàng vâng theo mệnh lệnh của Đức Giê-hô-va là dâng Y-sác?",
+      "example_mean": {
+        "en": "Why was Abraham willing to obey Jehovah's command to offer up Isaac?",
+        "ja": "アブラハムはなぜ,イサクをささげよというエホバの命令に喜んで従ったのですか。",
+        "ko": "아브라함은 왜 이삭을 바치라는 여호와의 명령에 기꺼이 순종했습니까?",
+        "zh": "亞伯拉罕為什麼樂意服從耶和華獻上以撒的命令?"
+      }
+    },
+    {
+      "vi": "môi-se",
+      "mean": {
+        "en": "Moses",
+        "ja": "モーセ",
+        "ko": "모세",
+        "zh": "摩西"
+      },
+      "example": "Việc được góp phần vào sự ứng nghiệm có ý nghĩa với Môi-se hơn mọi sự giàu sang và địa vị.",
+      "example_mean": {
+        "en": "Contributing to that fulfillment meant more to Moses than all the wealth and position he could have had.",
+        "ja": "その成就に貢献することは,モーセにとって,あらゆる富や地位よりも意味のあることでした。",
+        "ko": "성취에 이바지하는 것이 모세에게는 모든 부와 지위보다 더 의미가 있었습니다.",
+        "zh": "對摩西來說,能夠參與應許的實現,比一切財富和地位更有意義。"
+      }
+    },
+    {
+      "vi": "ứng nghiệm",
+      "mean": {
+        "en": "be fulfilled",
+        "ja": "成就する",
+        "ko": "응험(應驗)하다, 성취되다",
+        "zh": "應驗",
+        "cs": "splnit se",
+        "hu": "beteljesedik",
+        "id": "menjadi kenyataan",
+        "zh_cn": "应验",
+        "fr": "s'accomplir",
+        "de": "sich erfüllen",
+        "pl": "spełnić się"
+      },
+      "example": "Việc được góp phần vào sự ứng nghiệm có ý nghĩa với Môi-se hơn mọi sự giàu sang và địa vị.",
+      "example_mean": {
+        "en": "Contributing to that fulfillment meant more to Moses than all the wealth and position he could have had.",
+        "ja": "その成就に貢献することは,モーセにとって,あらゆる富や地位よりも意味のあることでした。",
+        "ko": "성취에 이바지하는 것이 모세에게는 모든 부와 지위보다 더 의미가 있었습니다.",
+        "zh": "對摩西來說,能夠參與應許的實現,比一切財富和地位更有意義。"
+      }
+    },
+    {
+      "vi": "góp phần",
+      "mean": {
+        "en": "contribute",
+        "ja": "貢献する",
+        "ko": "기여하다",
+        "zh": "做出貢獻",
+        "cs": "podílet se",
+        "hu": "kiveszi a részét",
+        "id": "ikut berperan",
+        "zh_cn": "尽一分力",
+        "fr": "contribuer",
+        "de": "beitragen",
+        "pl": "przyczyniać się"
+      },
+      "example": "Việc được góp phần vào sự ứng nghiệm có ý nghĩa với Môi-se hơn mọi sự giàu sang và địa vị.",
+      "example_mean": {
+        "en": "Contributing to that fulfillment meant more to Moses than all the wealth and position he could have had.",
+        "ja": "その成就に貢献することは,モーセにとって,あらゆる富や地位よりも意味のあることでした。",
+        "ko": "성취에 이바지하는 것이 모세에게는 모든 부와 지위보다 더 의미가 있었습니다.",
+        "zh": "對摩西來說,能夠參與應許的實現,比一切財富和地位更有意義。"
+      }
+    },
+    {
+      "vi": "ngược đãi",
+      "mean": {
+        "en": "mistreatment, persecution",
+        "ja": "虐待",
+        "ko": "박해",
+        "zh": "虐待",
+        "cs": "pronásledování, špatné zacházení",
+        "hu": "üldözés, bántalmazás",
+        "id": "aniaya, perlakuan kejam",
+        "zh_cn": "虐待",
+        "fr": "persécution",
+        "de": "Misshandlung",
+        "pl": "prześladowanie"
+      },
+      "example": "Ông chọn 'bị ngược đãi cùng dân Đức Chúa Trời' hơn mọi sự giàu sang.",
+      "example_mean": {
+        "en": "He chose to be mistreated with the people of God rather than have all the riches.",
+        "ja": "彼はあらゆる富よりも,「神の民と共に虐待されること」を選びました。",
+        "ko": "그는 모든 부귀보다 \"하느님의 백성과 함께 학대받는 것\"을 선택했습니다.",
+        "zh": "他選擇「跟上帝的子民一同受苦」,也不願享有一切財富。"
+      }
+    },
+    {
+      "vi": "đức chúa trời",
+      "mean": {
+        "en": "God",
+        "ja": "神",
+        "ko": "하느님",
+        "zh": "上帝",
+        "cs": "Bůh",
+        "hu": "Isten",
+        "id": "Allah",
+        "zh_cn": "上帝",
+        "fr": "Dieu",
+        "de": "Gott",
+        "pl": "Bóg"
+      },
+      "example": "Ông chọn 'bị ngược đãi cùng dân Đức Chúa Trời' hơn mọi sự giàu sang.",
+      "example_mean": {
+        "en": "He chose to be mistreated with the people of God rather than have all the riches.",
+        "ja": "彼はあらゆる富よりも,「神の民と共に虐待されること」を選びました。",
+        "ko": "그는 모든 부귀보다 \"하느님의 백성과 함께 학대받는 것\"을 선택했습니다.",
+        "zh": "他選擇「跟上帝的子民一同受苦」,也不願享有一切財富。"
+      }
+    },
+    {
+      "vi": "dân đức chúa trời",
+      "mean": {
+        "en": "God's people",
+        "ja": "神の民",
+        "ko": "하느님의 백성",
+        "zh": "上帝的子民",
+        "cs": "Boží lid",
+        "hu": "Isten népe",
+        "id": "umat Allah",
+        "zh_cn": "上帝的子民",
+        "fr": "peuple de Dieu",
+        "de": "Volk Gottes",
+        "pl": "lud Boży"
+      },
+      "example": "Ông chọn 'bị ngược đãi cùng dân Đức Chúa Trời' hơn mọi sự giàu sang.",
+      "example_mean": {
+        "en": "He chose to be mistreated with the people of God rather than have all the riches.",
+        "ja": "彼はあらゆる富よりも,「神の民と共に虐待されること」を選びました。",
+        "ko": "그는 모든 부귀보다 \"하느님의 백성과 함께 학대받는 것\"을 선택했습니다.",
+        "zh": "他選擇「跟上帝的子民一同受苦」,也不願享有一切財富。"
+      }
+    },
+    {
+      "vi": "quyết định",
+      "mean": {
+        "en": "decision",
+        "ja": "決定",
+        "ko": "결정(決定)하다",
+        "zh": "決定"
+      },
+      "example": "Những quyết định quan trọng trong đời sống mà chúng ta đưa ra ngay bây giờ.",
+      "example_mean": {
+        "en": "The important decisions that we make in life right now.",
+        "ja": "私たちが今の生活の中で下す重要な決断。",
+        "ko": "우리가 바로 지금 삶에서 내리는 중요한 결정들.",
+        "zh": "我們現在在生活中所作的重要決定。"
+      }
+    },
+    {
+      "vi": "hoàn hảo",
+      "mean": {
+        "en": "perfect",
+        "ja": "完全",
+        "ko": "완전한",
+        "zh": "完美"
+      },
+      "example": "Đời sống của chúng ta sẽ tuyệt vời thế nào khi sống trong tình trạng sức khỏe hoàn hảo?",
+      "example_mean": {
+        "en": "How wonderful our life will be when we are living in perfect health!",
+        "ja": "完全な健康の状態で生活できるなら,私たちの生活はどんなに素晴らしいものになるでしょうか。",
+        "ko": "완전한 건강을 누리며 살아갈 때 우리의 삶은 얼마나 멋질까요?",
+        "zh": "當我們在完全健康的狀態下生活時,我們的生活將會多麼美好呢?"
+      }
+    },
+    {
+      "vi": "sức khỏe",
+      "mean": {
+        "en": "health",
+        "ja": "健康",
+        "ko": "건강",
+        "zh": "健康",
+        "fr": "santé",
+        "de": "Gesundheit",
+        "pl": "zdrowie"
+      },
+      "example": "Đời sống của chúng ta sẽ tuyệt vời thế nào khi sống trong tình trạng sức khỏe hoàn hảo?",
+      "example_mean": {
+        "en": "How wonderful our life will be when we are living in perfect health!",
+        "ja": "完全な健康の状態で生活できるなら,私たちの生活はどんなに素晴らしいものになるでしょうか。",
+        "ko": "완전한 건강을 누리며 살아갈 때 우리의 삶은 얼마나 멋질까요?",
+        "zh": "當我們在完全健康的狀態下生活時,我們的生活將會多麼美好呢?"
+      }
+    },
+    {
+      "vi": "nền tảng",
+      "mean": {
+        "en": "basis",
+        "ja": "基盤",
+        "ko": "기초",
+        "zh": "根據"
+      },
+      "example": "Đức tin của chúng ta cần dựa trên một nền tảng vững chắc.",
+      "example_mean": {
+        "en": "Our faith needs to be based on a solid foundation.",
+        "ja": "私たちの信仰はしっかりした土台に基づく必要があります。",
+        "ko": "우리의 믿음은 튼튼한 기초 위에 세워져야 합니다.",
+        "zh": "我們的信心需要建立在穩固的基礎上。"
+      }
+    },
+    {
+      "vi": "lựa chọn",
+      "mean": {
+        "en": "choice",
+        "ja": "選択肢",
+        "ko": "선택",
+        "zh": "選擇",
+        "cs": "volba",
+        "hu": "választás",
+        "id": "pilihan",
+        "zh_cn": "选择",
+        "fr": "choix",
+        "de": "Wahl",
+        "pl": "wybór"
+      },
+      "example": "Hãy nghĩ đến những lựa chọn của chúng ta trong việc giải trí.",
+      "example_mean": {
+        "en": "Think about the choices we make regarding entertainment.",
+        "ja": "娯楽に関して私たちがする選択について考えてみましょう。",
+        "ko": "우리가 오락을 선택하는 것에 대해 생각해 보십시오.",
+        "zh": "想想我們在娛樂方面所作的選擇。"
+      }
+    },
+    {
+      "vi": "tràn lan",
+      "mean": {
+        "en": "widespread",
+        "ja": "広まる",
+        "ko": "널리 퍼지다",
+        "zh": "氾濫",
+        "cs": "rozmáhat se",
+        "hu": "elterjedt",
+        "id": "merajalela",
+        "zh_cn": "泛滥",
+        "fr": "répandu",
+        "de": "weit verbreitet",
+        "pl": "powszechny"
+      },
+      "example": "Những nội dung suy đồi xuất hiện tràn lan trong các bộ phim, âm nhạc.",
+      "example_mean": {
+        "en": "Degrading content is found throughout movies and music.",
+        "ja": "退廃的な内容が映画や音楽にあふれています。",
+        "ko": "타락한 내용이 영화와 음악에 넘쳐나고 있습니다.",
+        "zh": "墮落的內容充斥在電影和音樂中。"
+      }
+    },
+    {
+      "vi": "đưa ra quyết định",
+      "mean": {
+        "en": "to make a decision",
+        "ja": "決定を下す",
+        "ko": "결정(決定)을 내리다",
+        "zh": "做決定",
+        "cs": "udělat rozhodnutí",
+        "hu": "döntést hoz",
+        "id": "membuat keputusan",
+        "zh_cn": "做决定",
+        "fr": "prendre une décision",
+        "de": "eine Entscheidung treffen",
+        "pl": "podjąć decyzję"
+      },
+      "example": "Mỗi tín đồ cần đưa ra quyết định cá nhân về cách sử dụng thời gian thư giãn.",
+      "example_mean": {
+        "en": "Each Christian needs to make a personal decision about how to use relaxation time.",
+        "ja": "クリスチャンはそれぞれ,気晴らしの時間をどう使うか個人的に決める必要があります。",
+        "ko": "각 그리스도인은 여가 시간을 어떻게 사용할지에 대해 개인적으로 결정해야 합니다.",
+        "zh": "每個基督徒都需要就如何運用空閒時間作出個人的決定。"
+      }
+    },
+    {
+      "vi": "của cải",
+      "mean": {
+        "en": "wealth, possessions",
+        "ja": "財産",
+        "ko": "자산",
+        "zh": "財物"
+      },
+      "example": "Đức tin nơi lời hứa của Đức Chúa Trời cũng giúp chúng ta về của cải vật chất.",
+      "example_mean": {
+        "en": "Faith in God's promise also helps us when it comes to material possessions.",
+        "ja": "神の約束に対する信仰は,物質的な面でも私たちを助けてくれます。",
+        "ko": "하느님의 약속에 대한 믿음은 물질적인 면에서도 우리에게 도움이 됩니다.",
+        "zh": "對上帝應許的信心也在物質方面幫助我們。"
+      }
+    },
+    {
+      "vi": "nước trời",
+      "mean": {
+        "en": "God's Kingdom",
+        "ja": "神の王国",
+        "ko": "하늘 왕국",
+        "zh": "上帝的王國"
+      },
+      "example": "Chúng ta sẽ đặt quyền lợi Nước Trời lên hàng đầu trong đời sống.",
+      "example_mean": {
+        "en": "We will put Kingdom interests first in our life.",
+        "ja": "私たちは生活の中で王国の関心事を第一にします。",
+        "ko": "우리는 삶에서 왕국의 이익을 최우선으로 둘 것입니다.",
+        "zh": "我們會在生活中把王國的權益放在首位。"
+      }
+    },
+    {
+      "vi": "tưởng tượng",
+      "mean": {
+        "ko": "상상하다",
+        "zh": "想像",
+        "en": "to imagine",
+        "ja": "想像する",
+        "de": "sich vorstellen, imaginieren",
+        "fr": "imaginer; imagination",
+        "pl": "wyobrażać sobie",
+        "cs": "představit si",
+        "hu": "elképzel",
+        "id": "membayangkan",
+        "zh_cn": "想像"
+      },
+      "example": "Đức tin của chúng ta không nên chỉ dựa vào trí tưởng tượng sống động.",
+      "example_mean": {
+        "en": "Our faith should not be based merely on a vivid imagination.",
+        "ja": "私たちの信仰は,鮮やかな想像力だけに基づくべきではありません。",
+        "ko": "우리의 믿음은 생생한 상상력에만 근거해서는 안 됩니다.",
+        "zh": "我們的信心不應該只建立在生動的想像力上。"
+      }
+    },
+    {
+      "vi": "âm nhạc",
+      "mean": {
+        "ko": "음악",
+        "zh": "音樂",
+        "en": "music",
+        "ja": "音楽",
+        "de": "Musik",
+        "fr": "musique",
+        "pl": "muzyka",
+        "cs": "hudba",
+        "hu": "zene",
+        "id": "musik",
+        "zh_cn": "音乐"
+      },
+      "example": "Những nội dung suy đồi xuất hiện tràn lan trong các bộ phim, âm nhạc.",
+      "example_mean": {
+        "en": "Degrading content is found throughout movies and music.",
+        "ja": "退廃的な内容が映画や音楽にあふれています。",
+        "ko": "타락한 내용이 영화와 음악에 넘쳐나고 있습니다.",
+        "zh": "墮落的內容充斥在電影和音樂中。"
+      }
+    }
+  ]
+}

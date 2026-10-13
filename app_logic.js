@@ -12012,10 +12012,11 @@ function verifyDistribution(units, dist, pins) {
       var at = {}; var out = [];
       arr.forEach(function (it) {
         if (!it || !it.vi) return;
-        var k = String(it.vi).trim();
+        var vi = String(it.vi).trim();
+        var k = it.reviewId || vi;
         var m = it.kr ? String(it.kr).trim() : "";
-        if (!k) return;
-        var entry = { vi: k, kr: m, meaning: it.meaning || "", songNo: it.songNo, ex: it.ex || null };
+        if (!vi) return;
+        var entry = { vi: vi, reviewId: it.reviewId, kr: m, meaning: it.meaning || "", songNo: it.songNo, ex: it.ex || null };
         if (!Object.prototype.hasOwnProperty.call(at, k)) { at[k] = out.length; out.push(entry); }
         else if (m && !out[at[k]].kr) { if (!entry.ex) entry.ex = out[at[k]].ex; out[at[k]] = entry; }
         else if (entry.ex && !out[at[k]].ex) out[at[k]].ex = entry.ex;
@@ -12033,7 +12034,8 @@ function verifyDistribution(units, dist, pins) {
     function vocabScopedPool() {
       if (!vocabFocus) return [];
       var mode = vocabFocus.mode, out = [];
-      function push(vi, kr, ex) { if (vi) out.push({ vi: vi, kr: kr, ex: ex || null }); }
+      // Keep each assigned record: homophones can have different hanja, meanings and examples.
+      function push(vi, kr, ex) { if (vi) out.push({ vi: vi, kr: kr, ex: ex || null, reviewId: "focus:" + mode + ":" + vocabFocus.start + ":" + out.length }); }
       if (mode === "words") {
         var cw = typeof UNIFIED_WORDS !== "undefined" ? courseWordsFocus(UNIFIED_WORDS) : null;
         (cw || []).forEach(function (w) { var m = w.kr || w.meanings; push(w.vi, reviewMeaning(typeof m === "string" ? { ko: m } : m)); });
@@ -12982,7 +12984,7 @@ function verifyDistribution(units, dist, pins) {
       studyState.tabKey = key;
       studyState.scope = scope;
       studyState.pool = dedupeByVi((poolOverride || getPool(key, scope)).map(function (item) {
-        return { vi: stripReviewListMarker(item.vi), kr: stripReviewListMarker(item.kr), meaning: item.meaning || "", songNo: item.songNo, ex: item.ex || null };
+        return { vi: stripReviewListMarker(item.vi), reviewId: item.reviewId, kr: stripReviewListMarker(item.kr), meaning: item.meaning || "", songNo: item.songNo, ex: item.ex || null };
       }));
       studyState.score = { correct: 0, total: 0 };
       studyState.current = null;
