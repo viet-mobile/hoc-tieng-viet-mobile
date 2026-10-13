@@ -6352,6 +6352,20 @@
   // language. The section comparing Vietnamese with the UI language comes first and starts open;
   // the rest follow in PRON_COMPARISON.order (the order the Vietnamese UI uses as is).
   /* -- [발음][자모]: 하노이 발음에 가장 가까운 한국어 표기 방식, under [자음] (Korean UI only) -- */
+  // A vowel reading: [text, 1 = small note] parts. A reading that starts with a note ("(뒤에 받침이 없으면)ㅜ어 (뒤에 받침이 있으면)ㅜ아") is
+  // cut into one unbreakable group per note + reading, so on a narrow screen each case is its own line (and stays on one line when wide).
+  function hanoiVowelParts(parts) {
+    function one(p) { return p[1] ? '<small>' + escapeHtml(p[0]) + '</small>' : escapeHtml(p[0]); }
+    if (!parts.length || !parts[0][1]) return parts.map(one).join("");
+    var groups = [], cur = "", sawBig = false;
+    parts.forEach(function (p) {
+      if (p[1] && sawBig) { groups.push(cur); cur = ""; sawBig = false; }
+      cur += one(p);
+      if (!p[1]) sawBig = true;
+    });
+    if (cur) groups.push(cur);
+    return groups.map(function (g) { return '<span class="hanoi-grp">' + g + '</span>'; }).join(" ");
+  }
   function hanoiChartHtml() {
     if (typeof HANOI_CHART === "undefined" || currentLang !== "ko") return "";
     function btn(speak) { return '<button class="speak-btn" data-speak="' + escapeAttr(speak) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>'; }
@@ -6378,7 +6392,7 @@
     h += '<table class="hanoi-table"><thead><tr><th>베트남어 모음</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
     HANOI_CHART.vowels.forEach(function (v) {
       h += '<tr class="hanoi-vrow' + tone(v[1]) + '"><td class="hanoi-letter vn">' + escapeHtml(v[0]) + btn(v[0]) + '</td><td class="hanoi-ko">' +
-        v[2].map(function (p) { return p[1] ? '<small>' + escapeHtml(p[0]) + '</small>' : escapeHtml(p[0]); }).join("") + '</td></tr>';
+        hanoiVowelParts(v[2]) + '</td></tr>';
     });
     h += '</tbody></table></div></div>';
     if (HANOI_CHART.footnote) h += '<p class="p-desc hanoi-footnote">' + escapeHtml(HANOI_CHART.footnote) + '</p>';
