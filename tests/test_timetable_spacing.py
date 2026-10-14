@@ -62,6 +62,8 @@ assert [has_rhyme(1, i) for i in range(5)] == [True] * 5 and [has_rhyme(2, i) fo
 last = guide['units'][-1]['timePlan']
 assert next(p for p in last if p[0].startswith('파수대 집회 실연'))[1] == 60
 assert [(p[0], p[1], p[2]) for p in last if '격려사' in p[0]] == [('A 강사 격려사', 15, 'A'), ('B 강사 격려사', 15, 'B')]
-assert not any(p[3] in ('mingle', 'homework') for p in last) and last[-1][0] == '마치는 노래·기도'
+assert not any(p[3] in ('mingle', 'homework', 'break') or p[0].startswith('졸업') for p in last)
+assert [p[0] for p in last if p[0].startswith('학생들 경험담')] == ['학생들 경험담 발표', '학생들 경험담 재연']
+assert last[-1][0] == '마치는 노래·기도'
 assert not any(has_rhyme(3, i) for i in range(5))
 print('16 class timetables: one owner per item, 4 owners, group leaders for blocks 2-4, every item one piece, B takes talks/conversations from 10/31, 7 / 4:30 / 1:30 vocabulary blocks, spacing, 120 min, 11/15 Bình verified.')

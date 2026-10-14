@@ -31,6 +31,7 @@ RHYME_WORDS, EARLY_CLASSES, EARLY_QUOTA = 316, 4, 170   # [어휘] stream starts
 
 LEADER_PARTS = (1, 2, 3)                        # vocabulary blocks 2-4 are led by the group leaders; 1 and 5 by Mai / Bình
 
+EXPERIENCE, REENACT = "학생들 경험담 발표", "학생들 경험담 재연"
 ENCOURAGE_A, ENCOURAGE_B, ENCOURAGE_MIN = "A 강사 격려사", "B 강사 격려사", 15
 REHEARSAL, REHEARSAL_MIN = "파수대 집회 실연", 60      # the last class: one hour, break afterwards
 B_TALK_FROM_UNIT = 4                            # class of 2026-10-31
@@ -188,18 +189,16 @@ def rebuild(plan, unit):
             row(name, size / 2, reason, posture)
         place(post, ideal, [3, 4], 140 + G)
     else:
-        # The last class (no vocabulary blocks, no walk-around practice, no homework): the Watchtower meeting rehearsal is one
-        # 60-minute piece, the break comes after it, then graduation and one 15-minute encouragement talk from each instructor.
-        # The closing song of the class is the graduation song (46), so the separate chorus item is that closing song.
+        # The last class (no vocabulary blocks, no break, no walk-around practice, no homework briefing): the Watchtower meeting
+        # rehearsal is one 60-minute piece, then the students' experience presentations and their re-enactments, then one
+        # 15-minute encouragement talk from each instructor. The class closes with the graduation song (the closing song).
         row(OPEN, 4, "open", "stand")
         lead = [n for n in order if n.startswith(REHEARSAL)]
         for n in lead:
             row(n, REHEARSAL_MIN, core[n][1], core[n][2])
-        row(BREAK, 10, "break", "rest")
-        grad = [n for n in order if n.startswith("졸업")]
-        fixed_left = 120 - 4 - REHEARSAL_MIN * len(lead) - 10 - 2 * ENCOURAGE_MIN - 4
-        for n in grad:
-            row(n, fixed_left, core[n][1], core[n][2])
+        left = 120 - 4 - REHEARSAL_MIN * len(lead) - 2 * ENCOURAGE_MIN - 4
+        row(EXPERIENCE, left // 2, "rehearsal", "stand")
+        row(REENACT, left - left // 2, "rehearsal", "stand")
         row(ENCOURAGE_A, ENCOURAGE_MIN, "encourage", "stand")
         row(ENCOURAGE_B, ENCOURAGE_MIN, "encourage", "stand")
         row(CLOSE, 4, "close", "stand")
@@ -264,9 +263,9 @@ CLASS_NOTE = {
 
 
 LAST_CLASS_NOTE = {
-    "ko": "이 회차는 파수대 집회 실연을 60분 진행한 뒤 10분 쉬고, 졸업과 A강사·B강사의 격려사(각 15분)로 마칩니다. 돌아다니며 하는 대화와 과제 확인 안내는 없습니다.",
-    "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút rồi nghỉ 10 phút, sau đó là lễ tốt nghiệp và lời khích lệ của giảng viên A và B (mỗi người 15 phút). Không có hoạt động đi lại trò chuyện và không giao bài tập.",
-    "en": "This class rehearses the Watchtower meeting for 60 minutes, then a 10-minute break, then graduation and a 15-minute encouragement talk from each instructor. There is no walk-around practice and no homework briefing.",
+    "ko": "이 회차는 파수대 집회 실연 60분 뒤 학생들의 경험담 발표와 재연을 하고, A강사·B강사의 격려사(각 15분)로 마칩니다. 휴식, 돌아다니며 하는 대화, 졸업, 과제 확인 안내는 없습니다.",
+    "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút, rồi học viên trình bày và tái hiện kinh nghiệm, kết thúc bằng lời khích lệ của giảng viên A và B (mỗi người 15 phút). Không nghỉ giải lao, không hoạt động đi lại trò chuyện, không lễ tốt nghiệp và không giao bài tập.",
+    "en": "This class rehearses the Watchtower meeting for 60 minutes, then students present and re-enact their experiences, and closes with a 15-minute encouragement talk from each instructor. There is no break, no walk-around practice, no graduation item and no homework briefing.",
 }
 
 
@@ -280,7 +279,7 @@ def main():
         u["timePlan"] = rebuild(u["timePlan"], u["unit"])
         if u["unit"] == 16:
             u["classNote"] = LAST_CLASS_NOTE
-            guide.setdefault("viText", {}).update({ENCOURAGE_A: "Lời khích lệ của giảng viên A", ENCOURAGE_B: "Lời khích lệ của giảng viên B"})
+            guide.setdefault("viText", {}).update({EXPERIENCE: "Học viên trình bày kinh nghiệm", REENACT: "Học viên tái hiện kinh nghiệm", ENCOURAGE_A: "Lời khích lệ của giảng viên A", ENCOURAGE_B: "Lời khích lệ của giảng viên B"})
         who = ASSISTANT_SUBSTITUTE.get(u["date"])
         if who:
             u["assistant"] = who
