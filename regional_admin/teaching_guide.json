@@ -4709,32 +4709,25 @@
             "rest"
           ],
           [
-            "돌아다니며 상호 대화 실습 (오늘 배운 표현으로)",
-            10,
-            "group",
-            "mingle",
-            "move"
-          ],
-          [
             "졸업",
-            20,
+            12,
             "A",
             "ceremony",
             "stand"
           ],
           [
-            "베트남어 노래 (46번) 합창",
-            7,
-            "B",
-            "model",
+            "A 강사 격려사",
+            15,
+            "A",
+            "encourage",
             "stand"
           ],
           [
-            "과제 확인·안내",
-            5,
-            "A",
-            "homework",
-            "sit"
+            "B 강사 격려사",
+            15,
+            "B",
+            "encourage",
+            "stand"
           ],
           [
             "마치는 노래·기도",
@@ -4745,9 +4738,9 @@
           ]
         ],
         "classNote": {
-          "ko": "이 회차는 파수대 집회 실연을 60분 진행한 뒤 10분 쉬고, 이어서 돌아다니며 대화하는 조별 활동을 합니다.",
-          "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút rồi nghỉ 10 phút, sau đó là hoạt động nhóm đi lại trò chuyện.",
-          "en": "This class rehearses the Watchtower meeting for 60 minutes, then takes a 10-minute break, then the walk-around group activity."
+          "ko": "이 회차는 파수대 집회 실연을 60분 진행한 뒤 10분 쉬고, 졸업과 A강사·B강사의 격려사(각 15분)로 마칩니다. 돌아다니며 하는 대화와 과제 확인 안내는 없습니다.",
+          "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút rồi nghỉ 10 phút, sau đó là lễ tốt nghiệp và lời khích lệ của giảng viên A và B (mỗi người 15 phút). Không có hoạt động đi lại trò chuyện và không giao bài tập.",
+          "en": "This class rehearses the Watchtower meeting for 60 minutes, then a 10-minute break, then graduation and a 15-minute encouragement talk from each instructor. There is no walk-around practice and no homework briefing."
         }
       }
     ],
@@ -5484,7 +5477,9 @@
       "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)": "Học từ vựng Tháp Canh · nhóm bài tập thứ Năm (4/5)",
       "베트남어 어휘 학습 · 금요일 과제 묶음 (5/5)": "Học từ vựng tiếng Việt · nhóm bài tập thứ Sáu (5/5)",
       "파수대 어휘 학습 · 금요일 과제 묶음 (5/5)": "Học từ vựng Tháp Canh · nhóm bài tập thứ Sáu (5/5)",
-      "일반 문법은 핵심 문형 3~4개, 이웃 대화는 앞부분 역할 읽기, 행누·랑제는 한 단락을 다룹니다. 어휘는 주간 과제 범위를 5개 묶음으로 나누어 일반 어휘 7분, 파수대 어휘 2분씩 반복 학습합니다. 2시간 수업에 맞춰 다른 항목의 시간을 조정했습니다.": "Trên lớp học 3–4 mẫu ngữ pháp chính, đọc phân vai phần đầu hội thoại với người hàng xóm và một đoạn của mỗi ấn phẩm. Chia phạm vi từ vựng trong bài tập tuần thành 5 nhóm; mỗi lần học 7 phút từ vựng chung và 2 phút từ vựng Tháp Canh. Thời gian các mục khác được điều chỉnh để buổi học vẫn kéo dài 2 giờ."
+      "일반 문법은 핵심 문형 3~4개, 이웃 대화는 앞부분 역할 읽기, 행누·랑제는 한 단락을 다룹니다. 어휘는 주간 과제 범위를 5개 묶음으로 나누어 일반 어휘 7분, 파수대 어휘 2분씩 반복 학습합니다. 2시간 수업에 맞춰 다른 항목의 시간을 조정했습니다.": "Trên lớp học 3–4 mẫu ngữ pháp chính, đọc phân vai phần đầu hội thoại với người hàng xóm và một đoạn của mỗi ấn phẩm. Chia phạm vi từ vựng trong bài tập tuần thành 5 nhóm; mỗi lần học 7 phút từ vựng chung và 2 phút từ vựng Tháp Canh. Thời gian các mục khác được điều chỉnh để buổi học vẫn kéo dài 2 giờ.",
+      "A 강사 격려사": "Lời khích lệ của giảng viên A",
+      "B 강사 격려사": "Lời khích lệ của giảng viên B"
     },
     "instructors": {
       "title": {
@@ -5611,6 +5606,10 @@
         "wtvocab": {
           "ko": "B 강사가 파수대 어휘를 하나씩 3번 읽고 학생들이 따라 읽습니다.",
           "vi": "Giảng viên B đọc từng từ Tháp Canh 3 lần, học viên đọc theo."
+        },
+        "encourage": {
+          "ko": "해당 강사가 학습자들에게 격려사를 전합니다(15분).",
+          "vi": "Giảng viên phụ trách gửi lời khích lệ đến học viên (15 phút)."
         },
         "tone": {
           "ko": "B 강사가 각 단어를 3번씩 읽어 줍니다.",

@@ -31,6 +31,7 @@ RHYME_WORDS, EARLY_CLASSES, EARLY_QUOTA = 316, 4, 170   # [어휘] stream starts
 
 LEADER_PARTS = (1, 2, 3)                        # vocabulary blocks 2-4 are led by the group leaders; 1 and 5 by Mai / Bình
 
+ENCOURAGE_A, ENCOURAGE_B, ENCOURAGE_MIN = "A 강사 격려사", "B 강사 격려사", 15
 REHEARSAL, REHEARSAL_MIN = "파수대 집회 실연", 60      # the last class: one hour, break afterwards
 B_TALK_FROM_UNIT = 4                            # class of 2026-10-31
 B_TALK_RULES = re.compile(r"제공 연설|일상 회화|일상 생활 문장|이웃 사람과의 대화")
@@ -49,6 +50,10 @@ def owner_of(name, posture, meta=None, unit=0):
         if meta["part"] in LEADER_PARTS:
             return "group"                        # the group leaders lead blocks 2-4
         return "assist" if kind == "course-vocab" else "B"
+    if base == ENCOURAGE_A:
+        return "A"
+    if base == ENCOURAGE_B:
+        return "B"
     if posture == "move" or base == MINGLE:
         return "group"
     if unit >= B_TALK_FROM_UNIT and B_TALK_RULES.search(base):
@@ -183,34 +188,20 @@ def rebuild(plan, unit):
             row(name, size / 2, reason, posture)
         place(post, ideal, [3, 4], 140 + G)
     else:
-        # A class without vocabulary blocks (the last class): the Watchtower meeting rehearsal is one 60-minute piece and the
-        # break comes after it; the other items keep their order and give back what the longer rehearsal needs.
+        # The last class (no vocabulary blocks, no walk-around practice, no homework): the Watchtower meeting rehearsal is one
+        # 60-minute piece, the break comes after it, then graduation and one 15-minute encouragement talk from each instructor.
+        # The closing song of the class is the graduation song (46), so the separate chorus item is that closing song.
         row(OPEN, 4, "open", "stand")
         lead = [n for n in order if n.startswith(REHEARSAL)]
-        rest = [n for n in order if n not in lead]
         for n in lead:
             row(n, REHEARSAL_MIN, core[n][1], core[n][2])
         row(BREAK, 10, "break", "rest")
-        row(MINGLE, 10, "mingle", "move")
-        room = 120 - sum(FIXED_MIN.values()) - REHEARSAL_MIN * len(lead)          # minutes for the remaining items + slack
-        sizes = [core[n][0] for n in rest]
-        over = sum(sizes) + slack - room
-        cut = min(slack, max(over, 0))
-        slack -= cut
-        over -= cut
-        k = len(sizes) - 1
-        while over > 0 and k >= 0:                 # still too long: the last items give the rest back
-            take = min(over, sizes[k] - 1)
-            sizes[k] -= take
-            over -= take
-            k -= 1
-        for n, sz in zip(rest, sizes):
-            row(n, sz, core[n][1], core[n][2])
-        if room - sum(sizes) - slack > 0:
-            slack += room - sum(sizes) - slack
-        if slack:
-            row(SLACK, slack, "slack", "flex")
-        row(HOMEWORK, 5, "homework", "sit")
+        grad = [n for n in order if n.startswith("졸업")]
+        fixed_left = 120 - 4 - REHEARSAL_MIN * len(lead) - 10 - 2 * ENCOURAGE_MIN - 4
+        for n in grad:
+            row(n, fixed_left, core[n][1], core[n][2])
+        row(ENCOURAGE_A, ENCOURAGE_MIN, "encourage", "stand")
+        row(ENCOURAGE_B, ENCOURAGE_MIN, "encourage", "stand")
         row(CLOSE, 4, "close", "stand")
         assert sum(p[1] for p in out) == 120, sum(p[1] for p in out)
         return out
@@ -259,6 +250,7 @@ INSTRUCTORS = {
         "leadvocab": {"ko": "각 조 조장이 이끌어 조원들이 단어를 하나씩 3번 읽습니다.", "vi": "Tổ trưởng từng nhóm dẫn dắt, các thành viên đọc từng từ 3 lần."},
         "leadwtvocab": {"ko": "각 조 조장이 이끌어 조원들이 파수대 어휘를 하나씩 3번 읽습니다.", "vi": "Tổ trưởng từng nhóm dẫn dắt, các thành viên đọc từng từ Tháp Canh 3 lần."},
         "wtvocab": {"ko": "B 강사가 파수대 어휘를 하나씩 3번 읽고 학생들이 따라 읽습니다.", "vi": "Giảng viên B đọc từng từ Tháp Canh 3 lần, học viên đọc theo."},
+        "encourage": {"ko": "해당 강사가 학습자들에게 격려사를 전합니다(15분).", "vi": "Giảng viên phụ trách gửi lời khích lệ đến học viên (15 phút)."},
         "tone": {"ko": "B 강사가 각 단어를 3번씩 읽어 줍니다.", "vi": "Giảng viên B đọc mỗi từ 3 lần."},
         "bookname": {"ko": "보조자가 각 책명을 3번씩 읽어 줍니다.", "vi": "Trợ giảng đọc mỗi tên sách 3 lần."},
     },
@@ -272,9 +264,9 @@ CLASS_NOTE = {
 
 
 LAST_CLASS_NOTE = {
-    "ko": "이 회차는 파수대 집회 실연을 60분 진행한 뒤 10분 쉬고, 이어서 돌아다니며 대화하는 조별 활동을 합니다.",
-    "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút rồi nghỉ 10 phút, sau đó là hoạt động nhóm đi lại trò chuyện.",
-    "en": "This class rehearses the Watchtower meeting for 60 minutes, then takes a 10-minute break, then the walk-around group activity.",
+    "ko": "이 회차는 파수대 집회 실연을 60분 진행한 뒤 10분 쉬고, 졸업과 A강사·B강사의 격려사(각 15분)로 마칩니다. 돌아다니며 하는 대화와 과제 확인 안내는 없습니다.",
+    "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút rồi nghỉ 10 phút, sau đó là lễ tốt nghiệp và lời khích lệ của giảng viên A và B (mỗi người 15 phút). Không có hoạt động đi lại trò chuyện và không giao bài tập.",
+    "en": "This class rehearses the Watchtower meeting for 60 minutes, then a 10-minute break, then graduation and a 15-minute encouragement talk from each instructor. There is no walk-around practice and no homework briefing.",
 }
 
 
@@ -288,6 +280,7 @@ def main():
         u["timePlan"] = rebuild(u["timePlan"], u["unit"])
         if u["unit"] == 16:
             u["classNote"] = LAST_CLASS_NOTE
+            guide.setdefault("viText", {}).update({ENCOURAGE_A: "Lời khích lệ của giảng viên A", ENCOURAGE_B: "Lời khích lệ của giảng viên B"})
         who = ASSISTANT_SUBSTITUTE.get(u["date"])
         if who:
             u["assistant"] = who
