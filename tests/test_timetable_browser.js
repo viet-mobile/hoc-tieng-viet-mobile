@@ -1,6 +1,6 @@
 const {spawn}=require('node:child_process'),path=require('node:path'),assert=require('node:assert/strict');
 const PLATFORM=require('./helpers/platform'),{CDPClient}=require('./test_browser_runtime');
-const ROOT=path.resolve(__dirname,'..'),PORT=8996,sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const GUIDE=JSON.parse(require('fs').readFileSync(path.resolve(__dirname,'..','regional_admin','teaching_guide.json'),'utf8')).jeonju;const ROOT=path.resolve(__dirname,'..'),PORT=8996,sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const fixtureArg=process.argv.find(a=>a.startsWith('--live-fixture='));
 const fixture=fixtureArg?JSON.parse(require('fs').readFileSync(fixtureArg.slice('--live-fixture='.length),'utf8')):null;
 (async()=>{
@@ -23,16 +23,18 @@ const fixture=fixtureArg?JSON.parse(require('fs').readFileSync(fixtureArg.slice(
    assert.equal(result.length,15,`${lang}: 15 timetable classes`);
    for(const card of result){
     const general=card.rows.filter(r=>r.kind==='course-vocab'),wt=card.rows.filter(r=>r.kind==='watchtower-vocab');
-    assert.deepEqual(general.map(r=>r.time),['8–15','22–29','36–43','70–77','84–91']);
-    assert.deepEqual(wt.map(r=>r.time),['15–17','29–31','43–45','77–79','91–93']);
+    const plan=GUIDE.units.find(u=>u.unit===card.week).timePlan;let at=0;const exp={'course-vocab':[],'watchtower-vocab':[]};
+    for(const p of plan){const f=n=>Number.isInteger(n)?String(n):String(n);if(p[5]&&p[5].kind)exp[p[5].kind].push(f(at)+'–'+f(at+p[1]));at+=p[1];}
+    assert.deepEqual(general.map(r=>r.time),exp['course-vocab']);
+    assert.deepEqual(wt.map(r=>r.time),exp['watchtower-vocab']);
     assert.deepEqual(general.map(r=>r.part),[0,1,2,3,4]);
     if(card.week<=4){
-     const has34=general.every(r=>lang==='ko'?r.text.endsWith('(34개)'):r.text.endsWith('(34 từ)'));
+     const has34=general.every(r=>lang==='ko'?/\(34개\)/.test(r.text):/\(34 từ\)/.test(r.text));
      if(!has34)console.log({lang,week:card.week,general:general.map(r=>r.text)});
      assert(has34);
     }
     if(lang==='vi')assert(!/[가-힣]/.test(card.text),`Vietnamese timetable week ${card.week}`);
-    assert.equal((card.summary.match(/60/g)||[]).length,2);checked++;
+    assert(/(A 강사|GV A)/.test(card.summary)&&/(보조자|Trợ giảng)/.test(card.summary),'four-owner totals');checked++;
    }
    if(lang==='vi'){
     const blanks=await E("[...document.querySelectorAll('.curr-assign-text')].filter(e=>!e.textContent.trim()).length");
@@ -43,6 +45,6 @@ const fixture=fixtureArg?JSON.parse(require('fs').readFileSync(fixtureArg.slice(
   await cdp.send('Emulation.setDeviceMetricsOverride',{width:390,height:900,deviceScaleFactor:1,mobile:true});
   await E("(()=>{const plan=document.querySelector('.curr-plan');const card=plan.closest('.group-card');if(card?.dataset.open==='false')card.querySelector('.group-head').click();plan.open=true;})()");await sleep(200);
   assert(await E('document.documentElement.scrollWidth<=window.innerWidth+1'));
-  assert.deepEqual(errors,[]);console.log(`${checked} rendered timetable checks passed: all five ranges, durations, A/B totals, Vietnamese, phone layout; runtime exceptions 0.`);
+  assert.deepEqual(errors,[]);console.log(`${checked} rendered timetable checks passed: all five ranges, durations, owner totals, Vietnamese, phone layout; runtime exceptions 0.`);
  }finally{cdp?.close();chrome.kill();server.kill();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

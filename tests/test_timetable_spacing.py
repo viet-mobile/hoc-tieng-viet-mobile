@@ -1,35 +1,58 @@
 import json, sys
 from pathlib import Path
-ROOT=Path(__file__).resolve().parent.parent
-sys.path.insert(0,str(ROOT))
-from regional_admin.timetable_spaced import reflow
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+from regional_admin.timetable_owners import rebuild, owner_of, has_rhyme
 
-def verify(plan):
-    clock=0; general=[]; wt=[]; a=0; rest=0
+OWNERS = {'A', 'B', 'assist', 'group', None}
+
+
+def verify(plan, unit):
+    clock = 0; general = []; wt = []; after_mingle = False; seen_vocab_after = False
     for p in plan:
-        assert p[1]>0
-        if p[2] is None: assert clock==50 and p[1]==10;rest+=p[1]
-        else: assert 0<=p[2]<=p[1];a+=p[2]
-        if p[3]=='mingle': assert clock==60 and p[1]==10
-        if len(p)>5:
-            if p[5]['kind']=='course-vocab':general.append((clock,p[1],p[5]['part']))
-            else:wt.append((clock,p[1],p[5]['part']))
-        clock+=p[1]
-    assert clock==120 and a+rest/2==60
-    assert general==[(s,7,i)for i,s in enumerate([8,22,36,70,84])]
-    assert wt==[(s+7,2,i)for i,s in enumerate([8,22,36,70,84])]
-    # The break and mandatory conversation practice pause the retrieval cadence.
-    active=[s-(20 if s>=70 else 0)for s,_,_ in general]
-    assert all(13<=b-a<=15 for a,b in zip(active,active[1:]))
+        assert p[1] > 0 and (p[1] * 2) % 1 == 0
+        assert p[2] in OWNERS
+        if p[2] is None:
+            assert clock == 50 and p[1] == 10
+        if p[3] == 'mingle':
+            assert clock == 60 and p[1] == 10 and p[2] == 'group'
+            after_mingle = True
+        elif len(p) > 5:
+            if after_mingle:
+                seen_vocab_after = True
+            (general if p[5]['kind'] == 'course-vocab' else wt).append((clock, p[1], p[5]['part'], p[2]))
+        elif p[2] == 'group':
+            # a walk-around activity is one piece, directly after the walk-around practice, never cut by a vocabulary block
+            assert after_mingle and not seen_vocab_after and not p[0].endswith(' (이어서)'), p[0]
+        clock += p[1]
+    assert clock == 120
+    if general:
+        block = 7 if unit <= 2 else 4.5
+        g = sum(p[1] for p in plan if len(p) == 5 and p[2] == 'group' and p[3] != 'mingle')
+        starts = [8, 22, 36, 70 + g, 84 + g]
+        owners = ['assist', 'group', 'group', 'group', 'assist']
+        assert general == [(s, block, i, owners[i]) for i, s in enumerate(starts)]
+        assert wt == [(s + block, 1.5, i, 'B' if owners[i] == 'assist' else 'group') for i, s in enumerate(starts)]
+        assert all(13 <= b - a <= 15 for a, b in zip(starts[:3], starts[1:3])) and 13 <= 84 - 70 + 0 <= 15
 
-original=json.loads((ROOT/'tests/fixtures/timetable_week1_before_spacing.json').read_text())
-spaced=reflow(original);verify(spaced);assert reflow(spaced)==spaced
-fixed={'open','close','homework','mingle','break','vocab','slack'}
-topics={p[0].removesuffix(' (이어서)')for p in original if p[3]not in fixed}
-assert topics=={p[0].removesuffix(' (이어서)')for p in spaced if p[3]not in fixed}
-guide=json.loads((ROOT/'regional_admin/teaching_guide.json').read_text())['jeonju']
+
+guide = json.loads((ROOT / 'regional_admin/teaching_guide.json').read_text())['jeonju']
 for u in guide['units']:
-    if u['unit']<=15:verify(u['timePlan'])
-    for p in u['timePlan']:assert guide['viText'].get(p[0].removesuffix(' (이어서)'))
-assert not any(len(p)>5 for p in guide['units'][-1]['timePlan'])
-print('15 class timetables: spaced retrieval, 120 minutes, A/B balance, all topics, and Vietnamese labels verified.')
+    verify(u['timePlan'], u['unit'])
+    assert rebuild(u['timePlan'], u['unit']) == u['timePlan']
+    for p in u['timePlan']:
+        assert guide['viText'].get(p[0].removesuffix(' (이어서)'))
+        base = p[0].removesuffix(' (이어서)')
+        # user's principles
+        if base.startswith('성조연습'):
+            assert p[2] == 'B'
+        if '성경 책명 읽기 연습' in base:
+            assert p[2] == 'assist'
+        if any(k in base for k in ('문화', '제공 연설', '일상 회화', '일상 생활 문장', '일반 문법', '과제 확인', '마치는 노래')):
+            assert p[2] == 'A', base
+        if p[4] == 'move':
+            assert p[2] == 'group', base
+    assert u.get('assistant') == ('Bình' if u['date'] == '2026-11-15' else None)
+assert [has_rhyme(1, i) for i in range(5)] == [True] * 5 and [has_rhyme(2, i) for i in range(5)] == [True] * 5
+assert not any(has_rhyme(3, i) for i in range(5))
+print('16 class timetables: one owner per item, 4 owners, group leaders for blocks 2-4, whole group activities, 7 / 4:30 / 1:30 vocabulary blocks, spacing, 120 min, 11/15 Bình verified.')

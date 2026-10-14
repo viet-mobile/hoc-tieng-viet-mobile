@@ -448,15 +448,26 @@
   // Estimated minutes of each part of the class (teaching_guide.json timePlan, from the class-time simulation). An entry is
   // [name, minutes, minutes of instructor A (null = break), reason key]; B takes the rest. guide.instructors describes A and B.
   function instrText(o) { return o ? (LANG === 'vi' ? (o.vi || o.ko) : (o.ko || o.vi)) || '' : ''; }
+  var OWNER_KEYS = ['A', 'B', 'assist', 'group'];
+  function ownerLabel(k, unit) {
+    var ins = GUIDE && GUIDE.instructors, l = ins && ins[k] ? instrText(ins[k].label) : k;
+    if (k === 'assist' && unit && unit.assistant) l = l.replace(/Mai/, unit.assistant);
+    return l;
+  }
+  function ownerShort(k) {
+    return { A: 'A', B: 'B', assist: LANG === 'vi' ? 'TG' : '보조', group: LANG === 'vi' ? 'Nhóm' : '조별' }[k] || k;
+  }
+  function fmtMin(m) { return m % 1 ? Math.floor(m) + ':30' : String(m); }
   function guideInstructorLegend() {
     var ins = GUIDE && GUIDE.instructors;
     if (!ins) return '';
     function who(k) {
       var i = ins[k];
-      return '<div class="guide-ins guide-ins-' + k.toLowerCase() + '"><span class="guide-ins-badge">' + esc(k) + '</span><span><strong>' + esc(instrText(i.label)) + '</strong> · ' +
+      if (!i) return '';
+      return '<div class="guide-ins guide-ins-' + k.toLowerCase() + '"><span class="guide-ins-badge">' + esc(ownerShort(k)) + '</span><span><strong>' + esc(instrText(i.label)) + '</strong> · ' +
         esc(instrText(i.profile)) + '<br><span class="guide-ins-strong">' + esc(instrText(i.strengths)) + '</span></span></div>';
     }
-    return '<div class="guide-label">' + esc(instrText(ins.title)) + '</div><div class="guide-ins-box">' + who('A') + who('B') +
+    return '<div class="guide-label">' + esc(instrText(ins.title)) + '</div><div class="guide-ins-box">' + OWNER_KEYS.map(who).join('') +
       '<p class="guide-time-note">' + esc(instrText(ins.note)) + '</p></div>';
   }
   var POSTURE_ICON = { stand: '\uD83E\uDDCD', sit: '\uD83E\uDE91', move: '\uD83D\uDEB6', flex: '\u23F3', rest: '\u2615' };
@@ -467,37 +478,36 @@
   function guideTimePlan(u) {
     if (!u.timePlan || !u.timePlan.length) return '';
     var ins = GUIDE && GUIDE.instructors, cs = GUIDE && GUIDE.classStructure;
-    var split = !!ins && u.timePlan.every(function (p) { return p.length >= 3; });
-    var total = 0, ta = 0, tb = 0, brk = 0, clock = 0, by = {};
+    var total = 0, tot = { A: 0, B: 0, assist: 0, group: 0 }, brk = 0, clock = 0, by = {};
     var rows = u.timePlan.map(function (p) {
       var start = clock, post = p[4] || '';
       total += p[1]; clock += p[1];
       by[post] = (by[post] || 0) + p[1];
-      var when = '<td class="guide-time-at">' + start + '–' + clock + '</td>';
+      var when = '<td class="guide-time-at">' + fmtMin(start) + '–' + fmtMin(clock) + '</td>';
       var who = post && post !== 'rest' ? '<span class="guide-post guide-post-' + esc(post) + '" title="' + esc(postureLabel(post)) + '">' + (POSTURE_ICON[post] || '') + ' ' + esc(postureLabel(post)) + '</span> ' : '';
-      if (!split) return '<tr>' + when + '<td>' + who + esc(p[0]) + '</td><td class="guide-time-min">' + esc(String(p[1])) + '</td></tr>';
-      var a = p[2], b = a === null ? null : p[1] - a;
-      if (a === null) brk += p[1]; else { ta += a; tb += b; }
-      // The reason describes how A and B share the item: only shown where both of them really take part (or the item is one-sided by nature).
-      var oneSided = { open: 1, close: 1, homework: 1, ceremony: 1, 'break': 1 };
-      var showWhy = oneSided[p[3]] || (p[1] >= 3 && a > 0 && b > 0);
-      var reason = showWhy && ins.reasons && ins.reasons[p[3]] ? '<div class="guide-time-why">' + esc(instrText(ins.reasons[p[3]])) + '</div>' : '';
-      return '<tr class="' + (a === null ? 'guide-time-breakrow' : '') + '">' + when + '<td>' + (a === null ? '' : who) + esc(p[0]) + reason + '</td><td class="guide-time-min">' + esc(String(p[1])) + '</td>' +
-        (a === null ? '<td class="guide-time-min guide-time-brk" colspan="2">' + POSTURE_ICON.rest + ' ' + esc(tr('휴식')) + '</td>'
-          : '<td class="guide-time-min guide-time-a' + (a ? '' : ' guide-time-zero') + '">' + a + '</td><td class="guide-time-min guide-time-b' + (b ? '' : ' guide-time-zero') + '">' + b + '</td>') + '</tr>';
+      var o = p[2];
+      if (o === null) {
+        brk += p[1];
+        return '<tr class="guide-time-breakrow">' + when + '<td>' + esc(p[0]) + '</td><td class="guide-time-min">' + fmtMin(p[1]) + '</td><td class="guide-time-min guide-time-brk">' + POSTURE_ICON.rest + ' ' + esc(tr('휴식')) + '</td></tr>';
+      }
+      tot[o] = (tot[o] || 0) + p[1];
+      var reason = ins && ins.reasons && ins.reasons[p[3]] ? '<div class="guide-time-why">' + esc(instrText(ins.reasons[p[3]])) + '</div>' : '';
+      return '<tr>' + when + '<td>' + who + esc(p[0]) + reason + '</td><td class="guide-time-min">' + fmtMin(p[1]) + '</td>' +
+        '<td class="guide-time-min guide-time-o guide-time-o-' + esc(o) + '">' + esc(ownerLabel(o, u)) + '</td></tr>';
     }).join('');
-    var head = '<tr class="guide-time-head"><td>' + esc(tr('시간')) + ' (' + esc(tr('분')) + ')</td><td></td><td class="guide-time-min">' + esc(tr('분')) + '</td>' +
-      (split ? '<td class="guide-time-min guide-time-a">A</td><td class="guide-time-min guide-time-b">B</td>' : '') + '</tr>';
-    var foot = '<tr class="guide-time-total"><td></td><td>' + esc(tr('합계')) + '</td><td class="guide-time-min">' + total + '</td>' +
-      (split ? '<td class="guide-time-min guide-time-a">' + (ta + brk / 2) + '</td><td class="guide-time-min guide-time-b">' + (tb + brk / 2) + '</td>' : '') + '</tr>';
+    var head = '<tr class="guide-time-head"><td>' + esc(tr('시간')) + ' (' + esc(tr('분')) + ')</td><td></td><td class="guide-time-min">' + esc(tr('분')) + '</td><td class="guide-time-min">' + (LANG === 'vi' ? 'Phụ trách' : '담당') + '</td></tr>';
+    var foot = '<tr class="guide-time-total"><td></td><td>' + esc(tr('합계')) + '</td><td class="guide-time-min">' + fmtMin(total) + '</td><td class="guide-time-min">' +
+      OWNER_KEYS.filter(function (k) { return tot[k]; }).map(function (k) { return esc(ownerShort(k)) + ' ' + fmtMin(tot[k]); }).join(' · ') + (brk ? ' · ' + esc(tr('휴식')) + ' ' + fmtMin(brk) : '') + '</td></tr>';
     var sum = ['stand', 'sit', 'move'].filter(function (k) { return by[k]; }).map(function (k) {
-      return '<span class="guide-post guide-post-' + k + '">' + POSTURE_ICON[k] + ' ' + esc(postureLabel(k)) + ' ' + by[k] + esc(tr('분')) + '</span>';
+      return '<span class="guide-post guide-post-' + k + '">' + POSTURE_ICON[k] + ' ' + esc(postureLabel(k)) + ' ' + fmtMin(by[k]) + esc(tr('분')) + '</span>';
     }).join(' ');
-    return guideInstructorLegend() + (cs && cs.note ? '<p class="guide-time-note">' + esc(instrText(cs.note)) + '</p>' : '') +
+    var subs = cs && cs.assistantSubstitute, subNote = '';
+    if (subs && u.assistant) subNote = '<p class="guide-time-note">' + esc((ins.assist.substitute || {})[LANG === 'vi' ? 'vi' : 'ko'].replace('{date}', u.date)) + '</p>';
+    return guideInstructorLegend() + (cs && cs.note ? '<p class="guide-time-note">' + esc(instrText(cs.note)) + '</p>' : '') + subNote +
       '<div class="guide-label">예상 시간 배분 (2시간 기준, 분)</div>' +
       '<div class="guide-post-sum">' + sum + '</div>' +
       '<table class="guide-time"><tbody>' + head + rows + foot + '</tbody></table>' +
-      '<p class="guide-time-note">일반 문법은 핵심 문형 3~4개, 이웃 대화는 앞부분 역할 읽기, 행누·랑제는 한 단락을 다룹니다. 어휘는 주간 과제 범위를 5개 묶음으로 나누어 일반 어휘 7분, 파수대 어휘 2분씩 반복 학습합니다. 2시간 수업에 맞춰 다른 항목의 시간을 조정했습니다.</p>' +
+      '<p class="guide-time-note">일반 문법은 핵심 문형 3~4개, 이웃 대화는 앞부분 역할 읽기, 행누·랑제는 한 단락을 다룹니다. 어휘는 주간 과제 범위를 5개 묶음으로 나누어 보조자가 각 단어를 3번씩 읽습니다(한자음 34개 7분, 그 외 34개 4분 30초). 파수대 어휘 10개는 B 강사가 1분 30초 동안 읽습니다.</p>' +
       guideList('과제로만 (수업에서 다루지 않음; 전주 예습 · 후주 복습)', u.homeworkOnly);
   }
   function courseSongsHtml(week) {

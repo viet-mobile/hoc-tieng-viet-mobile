@@ -329,6 +329,14 @@ const STYLES = `
     .guide-ins-badge { flex: none; width: 24px; height: 24px; border-radius: 12px; text-align: center; line-height: 24px; font-weight: 800; color: #fff; }
     .guide-ins-a .guide-ins-badge { background: #1d5fb8; }
     .guide-ins-b .guide-ins-badge { background: #b8571d; }
+    .guide-ins-assist .guide-ins-badge { background: #1e7a5a; }
+    .guide-ins-group .guide-ins-badge { background: #8e24aa; }
+    .guide-ins-badge { min-width: 24px; padding: 0 4px; width: auto; border-radius: 12px; }
+    .guide-time-o { width: auto; white-space: nowrap; font-weight: 700; font-size: 12px; }
+    .guide-time-o-A { color: #1d5fb8; background: rgba(29, 95, 184, 0.07); }
+    .guide-time-o-B { color: #b8571d; background: rgba(184, 87, 29, 0.07); }
+    .guide-time-o-assist { color: #1e7a5a; background: rgba(30, 122, 90, 0.09); }
+    .guide-time-o-group { color: #8e24aa; background: rgba(156, 39, 176, 0.09); }
     .guide-time-at { width: 58px; font-size: 11px; color: var(--ink-faint); font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top; }
     .guide-time-breakrow td { background: rgba(0, 0, 0, 0.04); font-weight: 700; }
     .guide-post { display: inline-block; font-size: 11px; line-height: 1.5; padding: 0 6px; border-radius: 9px; white-space: nowrap; background: rgba(0, 0, 0, 0.06); color: var(--ink-soft); }

@@ -5903,6 +5903,8 @@
       root.querySelectorAll(".speak-btn").forEach(function (b) { b.addEventListener("click", function () { speak(b.dataset.speak); }); });
       bindVocabFocusClear(root);
     } else {
+      // [동일음] shows the Korean meaning with the Hanja of its Sino-Korean parts ("치안(治安)·안녕(安寧)"); speech and search keep meaning.ko.
+      function groupMeaningText(w) { return currentLang === "ko" && w.koHanja ? w.koHanja : T(w.meaning); }
       var focusGroups = VOCAB_GROUPS;
       if (vocabFocus && vocabFocus.mode === "groups") {
         var fullFlat = [];
@@ -5918,7 +5920,7 @@
       }
       var groups = focusGroups.map(function (g) {
         if (!q) return g;
-        var words = g.words.filter(function (w) { return w.word.toLowerCase().indexOf(q) >= 0 || T(w.meaning).toLowerCase().indexOf(q) >= 0; });
+        var words = g.words.filter(function (w) { return w.word.toLowerCase().indexOf(q) >= 0 || T(w.meaning).toLowerCase().indexOf(q) >= 0 || groupMeaningText(w).toLowerCase().indexOf(q) >= 0; });
         if (g.syllable.toLowerCase().indexOf(q) >= 0) return g;
         return words.length ? Object.assign({}, g, { words: words }) : null;
       }).filter(Boolean);
@@ -5933,7 +5935,7 @@
           '<div class="group-body">';
         g.words.forEach(function (w) {
           html += '<div class="word-row"><span><span class="w">' + escapeHtml(w.word) + '</span>' + (w.hanja ? '<span class="h">(' + w.hanja + ')</span>' : '') +
-            '<button class="speak-btn" data-speak="' + escapeAttr(w.word) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></span><span class="m">' + escapeHtml(T(w.meaning)) + '</span></div>';
+            '<button class="speak-btn" data-speak="' + escapeAttr(w.word) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></span><span class="m">' + escapeHtml(groupMeaningText(w)) + '</span></div>';
         });
         html += '</div></div>';
       });
@@ -7037,8 +7039,16 @@
     title: { ko: "수업 시간표", vi: "Thời khóa biểu buổi học", en: "Class timetable" },
     minutes: { ko: "분", vi: " phút", en: " min" },
     brk: { ko: "휴식", vi: "Nghỉ giải lao", en: "Break" },
-    cont: { ko: "(이어서)", vi: "(tiếp)", en: "(continued)" }
+    cont: { ko: "(이어서)", vi: "(tiếp)", en: "(continued)" },
+    owners: {
+      A: { ko: "A 강사", vi: "GV A", en: "Instr. A" }, B: { ko: "B 강사", vi: "GV B", en: "Instr. B" },
+      assist: { ko: "보조자", vi: "Trợ giảng", en: "Assistant" }, group: { ko: "조별 활동", vi: "Hoạt động nhóm", en: "Group activity" }
+    },
+    sec: { ko: "초", vi: " giây", en: " s" },
+    substitute: { ko: "{date}에는 Mai 자매 대신 {name} 형제가 읽습니다.", vi: "Ngày {date}, anh {name} đọc thay chị Mai.", en: "On {date}, {name} reads instead of Mai." }
   };
+  // Minutes may be halves (4.5 = 4 min 30 s).
+  function planMinutes(m, min, sec) { return (m % 1 ? Math.floor(m) + min + " 30" + sec : m + min); }
   var COURSE_PLAN_ICON = { stand: "\uD83E\uDDCD", sit: "\uD83E\uDE91", move: "\uD83D\uDEB6", flex: "\u23F3", rest: "\u2615" };
   function coursePlanLinks(name) {
     var items = [];
@@ -7075,7 +7085,9 @@
     function gt(x) { return !x ? "" : typeof x === "string" ? x : (x[currentLang] || x.en || x.ko || ""); }
     var ins = JEONJU_TEACHING_GUIDE.instructors || null, st = JEONJU_TEACHING_GUIDE.structure || {}, posts = st.postures || {};
     var min = gt(COURSE_PLAN_LABELS.minutes);
-    var ta = 0, tb = 0, brk = 0, clock = 0, by = {};
+    var tot = { A: 0, B: 0, assist: 0, group: 0 }, brk = 0, clock = 0, by = {};
+    var sec = gt(COURSE_PLAN_LABELS.sec), helper = g.assistant || "Mai";
+    function ownerName(o) { return o === "assist" ? gt(COURSE_PLAN_LABELS.owners.assist) + " " + helper : gt(COURSE_PLAN_LABELS.owners[o]); }
     var rows = g.plan.map(function (p) {
       var start = clock; clock += p[1];
       by[p[3]] = (by[p[3]] || 0) + p[1];
@@ -7115,7 +7127,7 @@
       }
       var shortcut = "";
       if (!service && typeof coursePlanLinks === "function") {
-        if (!grouping) planLinks = coursePlanLinks(name);
+        if (!grouping || !grouping.kind) planLinks = coursePlanLinks(name);
         if (/파수대|집회 사회|베트남어 집회 리허설/.test(name) && !grouping) {
           var articleRange = timetable && (Number(timetable.week) === 16 ? watchtowerRange(24) : wtWeekRange(timetable.week));
           planLinks = [{tab:"sentence",subAttr:"sentence",subVal:"wt",vocabRange:articleRange || undefined}];
@@ -7134,24 +7146,35 @@
       }
       if (p[2] === null) {
         brk += p[1];
-        return '<div class="curr-plan-row curr-plan-break"><span class="curr-plan-t">' + start + '\u2013' + clock + '</span><span class="curr-plan-p">' + COURSE_PLAN_ICON.rest + '</span><span class="curr-plan-n">' + escapeHtml(gt(COURSE_PLAN_LABELS.brk)) + " " + shortcut + '</span><span class="curr-plan-ab">' + p[1] + escapeHtml(min) + '</span></div>';
+        return '<div class="curr-plan-row curr-plan-break"><span class="curr-plan-t">' + start + '\u2013' + clock + '</span><span class="curr-plan-p">' + COURSE_PLAN_ICON.rest + '</span><span class="curr-plan-n">' + escapeHtml(gt(COURSE_PLAN_LABELS.brk)) + " " + shortcut + '</span><span class="curr-plan-ab">' + escapeHtml(planMinutes(p[1], min, sec)) + '</span></div>';
       }
-      var a = p[2], b = p[1] - a;
-      ta += a; tb += b;
+      var owner = p[2];
+      tot[owner] = (tot[owner] || 0) + p[1];
       var plabel = gt(posts[p[3]]);
-      return '<div class="curr-plan-row curr-plan-' + escapeAttr(p[3]) + '"' + (grouping ? ' data-plan-kind="' + escapeAttr(grouping.kind) + '" data-plan-part="' + grouping.part + '"' : '') + '><span class="curr-plan-t">' + start + '\u2013' + clock + '</span>' +
+      return '<div class="curr-plan-row curr-plan-' + escapeAttr(p[3]) + '"' + (grouping && grouping.kind ? ' data-plan-kind="' + escapeAttr(grouping.kind) + '" data-plan-part="' + grouping.part + '"' : '') + '><span class="curr-plan-t">' + start + '\u2013' + clock + '</span>' +
         '<span class="curr-plan-p" title="' + escapeAttr(plabel) + '" aria-label="' + escapeAttr(plabel) + '">' + (COURSE_PLAN_ICON[p[3]] || "") + '</span>' +
         '<span class="curr-plan-n">' + (service ? service.html : escapeHtml(shown) + " " + shortcut) + (cont ? ' <span class="curr-plan-cont">' + escapeHtml(gt(COURSE_PLAN_LABELS.cont)) + '</span>' : '') + '</span>' +
-        '<span class="curr-plan-ab">' + (a ? '<b class="curr-plan-a">A ' + a + '</b>' : '') + (b ? '<b class="curr-plan-b">B ' + b + '</b>' : '') + '</span></div>';
+        '<span class="curr-plan-ab"><b class="curr-plan-o curr-plan-o-' + escapeAttr(owner) + '">' + escapeHtml(ownerName(owner)) + '</b> ' + escapeHtml(planMinutes(p[1], min, sec)) + '</span></div>';
     }).join("");
-    var hasIns = ins && ins.A && ins.B;
-    var who = hasIns ? '<b class="curr-plan-a">' + escapeHtml(gt(ins.A.label)) + ' ' + (ta + brk / 2) + escapeHtml(min) + '</b> <b class="curr-plan-b">' + escapeHtml(gt(ins.B.label)) + ' ' + (tb + brk / 2) + escapeHtml(min) + '</b>' : '';
+    var hasIns = !!(ins && ins.A && ins.B);
+    var who = hasIns ? ["A", "B", "assist", "group"].filter(function (o) { return tot[o]; }).map(function (o) {
+      return '<b class="curr-plan-o curr-plan-o-' + o + '">' + escapeHtml(ownerName(o)) + ' ' + escapeHtml(planMinutes(tot[o], min, sec)) + '</b>';
+    }).join(" ") : '';
     var legend = ["stand", "sit", "move"].filter(function (k) { return by[k]; }).map(function (k) {
-      return '<span class="curr-plan-chip curr-plan-chip-' + k + '">' + COURSE_PLAN_ICON[k] + ' ' + escapeHtml(gt(posts[k])) + ' ' + by[k] + escapeHtml(min) + '</span>';
+      return '<span class="curr-plan-chip curr-plan-chip-' + k + '">' + COURSE_PLAN_ICON[k] + ' ' + escapeHtml(gt(posts[k])) + ' ' + escapeHtml(planMinutes(by[k], min, sec)) + '</span>';
     }).join(" ");
-    var roles = hasIns ? '<div class="curr-plan-roles"><b class="curr-plan-a">A</b> ' + escapeHtml(gt(ins.A.short)) + ' \u00B7 <b class="curr-plan-b">B</b> ' + escapeHtml(gt(ins.B.short)) + '</div>' : '';
+    var roles = hasIns ? '<div class="curr-plan-roles">' + ["A", "B", "assist", "group"].filter(function (o) { return ins[o]; }).map(function (o) {
+      return '<b class="curr-plan-o curr-plan-o-' + o + '">' + escapeHtml(ownerName(o)) + '</b> ' + escapeHtml(gt(ins[o].short));
+    }).join(' \u00B7 ') + '</div>' : '';
+    var subs = (st.assistantSubstitute || {}), subNote = "";
+    Object.keys(subs).forEach(function (d) {
+      if (g.assistant && subs[d] === g.assistant) {
+        var dm = d.split("-"), dateText = currentLang === "ko" ? Number(dm[1]) + "월 " + Number(dm[2]) + "일" : Number(dm[2]) + "/" + Number(dm[1]);
+        subNote = '<p class="curr-plan-note">' + escapeHtml(gt(COURSE_PLAN_LABELS.substitute).replace("{date}", dateText).replace("{name}", g.assistant)) + '</p>';
+      }
+    });
     return '<details class="curr-plan"><summary><span class="curr-plan-title">' + escapeHtml(gt(COURSE_PLAN_LABELS.title)) + '</span> ' + who + '</summary>' +
-      '<div class="curr-plan-body">' + (legend ? '<div class="curr-plan-legend">' + legend + '</div>' : '') + roles + rows +
+      '<div class="curr-plan-body">' + (legend ? '<div class="curr-plan-legend">' + legend + '</div>' : '') + roles + subNote + rows +
       (st.note ? '<p class="curr-plan-note">' + escapeHtml(gt(st.note)) + '</p>' : '') + '</div></details>';
   }
   function courseGuideHtml(unit, sched, classWeek) {
