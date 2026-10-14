@@ -14,7 +14,8 @@
           "de": "Sicherheit",
           "fr": "sécurité",
           "pl": "bezpieczeństwo"
-        }
+        },
+        "koHanja": "안전(安全)"
       },
       {
         "word": "an ninh",
@@ -27,7 +28,8 @@
           "de": "öffentliche Sicherheit, Frieden",
           "fr": "sécurité publique, paix",
           "pl": "bezpieczeństwo publiczne, spokój"
-        }
+        },
+        "koHanja": "치안(治安)·안녕(安寧)"
       },
       {
         "word": "an tâm",
@@ -40,7 +42,8 @@
           "de": "Beruhigung, Seelenfrieden",
           "fr": "tranquillité d'esprit, sérénité",
           "pl": "spokój ducha, ulga"
-        }
+        },
+        "koHanja": "안심(安心)"
       },
       {
         "word": "an ủi",
@@ -53,7 +56,8 @@
           "de": "Trost, trösten",
           "fr": "consolation, réconfort",
           "pl": "pocieszenie, otucha"
-        }
+        },
+        "koHanja": "위로(慰勞)"
       },
       {
         "word": "an cư",
@@ -66,7 +70,8 @@
           "de": "Niederlassung, Sesshaftigkeit",
           "fr": "établissement, sédentarisation",
           "pl": "osiedlenie się, ustatkowanie"
-        }
+        },
+        "koHanja": "안주(安居)·정착(定着)"
       },
       {
         "word": "an nhàn",
@@ -79,7 +84,8 @@
           "de": "Muße, Geruhsamkeit",
           "fr": "loisir, quiétude",
           "pl": "spokój, wolny czas"
-        }
+        },
+        "koHanja": "한가(閑暇)함"
       },
       {
         "word": "an sinh",
@@ -92,7 +98,8 @@
           "de": "soziale Wohlfahrt",
           "fr": "bien-être social, protection sociale",
           "pl": "opieka społeczna, dobrobyt"
-        }
+        },
+        "koHanja": "복지(福祉)"
       }
     ]
   },
@@ -111,7 +118,8 @@
           "de": "Musik",
           "fr": "musique",
           "pl": "muzyka"
-        }
+        },
+        "koHanja": "음악(音樂)"
       },
       {
         "word": "âm thanh",
@@ -124,7 +132,8 @@
           "de": "Klang, Ton, Laut",
           "fr": "son, acoustique",
           "pl": "dźwięk, akustyka"
-        }
+        },
+        "koHanja": "음향(音聲)·소리"
       },
       {
         "word": "âm lượng",
@@ -137,7 +146,8 @@
           "de": "Lautstärke",
           "fr": "volume sonore",
           "pl": "głośność"
-        }
+        },
+        "koHanja": "음량(音量)"
       },
       {
         "word": "âm mưu",
@@ -150,7 +160,8 @@
           "de": "Verschwörung, Komplott",
           "fr": "complot, conspiration",
           "pl": "spisek, intryga"
-        }
+        },
+        "koHanja": "음모(陰謀)"
       },
       {
         "word": "âm thầm",
@@ -163,7 +174,8 @@
           "de": "heimlich, im Verborgenen",
           "fr": "en secret, silencieusement",
           "pl": "potajemnie, po cichu"
-        }
+        },
+        "koHanja": "은밀(隱密)히·조용히"
       },
       {
         "word": "âm điệu",
@@ -176,7 +188,8 @@
           "de": "Tonart, Melodie",
           "fr": "tonalité, mélodie",
           "pl": "melodia, tonacja"
-        }
+        },
+        "koHanja": "음조(音調)·가락"
       },
       {
         "word": "âm tính",
@@ -189,7 +202,8 @@
           "de": "negativ (Testergebnis)",
           "fr": "négatif (résultat de test)",
           "pl": "ujemny (wynik badania)"
-        }
+        },
+        "koHanja": "음성(陰性, 검사결과)"
       }
     ]
   },
@@ -208,7 +222,8 @@
           "de": "Schutz, beschützen",
           "fr": "protection, protéger",
           "pl": "ochrona, chronić"
-        }
+        },
+        "koHanja": "보호(保衛)"
       },
       {
         "word": "bảo hiểm",
@@ -221,7 +236,8 @@
           "de": "Versicherung",
           "fr": "assurance",
           "pl": "ubezpieczenie"
-        }
+        },
+        "koHanja": "보험(保險)"
       },
       {
         "word": "bảo đảm",
@@ -234,7 +250,8 @@
           "de": "Garantie, Gewährleistung, Sicherstellung",
           "fr": "garantie, assurance",
           "pl": "gwarancja, zapewnienie"
-        }
+        },
+        "koHanja": "보장(保擔)·보증(保證)"
       },
       {
         "word": "bảo quản",
@@ -247,7 +264,8 @@
           "de": "Aufbewahrung, Lagerung",
           "fr": "conservation, stockage",
           "pl": "przechowywanie, konserwacja"
-        }
+        },
+        "koHanja": "보관(保管)"
       },
       {
         "word": "bảo tồn",
@@ -260,7 +278,8 @@
           "de": "Erhaltung, Bewahrung",
           "fr": "préservation, conservation",
           "pl": "ochrona, zachowanie"
-        }
+        },
+        "koHanja": "보존(保存)"
       },
       {
         "word": "bảo trì",
@@ -273,7 +292,8 @@
           "de": "Wartung, Instandhaltung",
           "fr": "maintenance, entretien",
           "pl": "konserwacja, utrzymanie"
-        }
+        },
+        "koHanja": "보수(保持)·유지(維持)"
       },
       {
         "word": "bảo hành",
@@ -286,7 +306,8 @@
           "de": "Garantie, Gewährleistung",
           "fr": "garantie, service après-vente",
           "pl": "gwarancja, serwis posprzedażowy"
-        }
+        },
+        "koHanja": "보증(保證)·AS"
       }
     ]
   },
@@ -305,7 +326,8 @@
           "de": "normal, gewöhnlich",
           "fr": "normal, ordinaire",
           "pl": "zwykły, normalny"
-        }
+        },
+        "koHanja": "보통(普通)·평범(平凡)"
       },
       {
         "word": "bình tĩnh",
@@ -318,7 +340,8 @@
           "de": "Ruhe, Gelassenheit",
           "fr": "calme, sérénité",
           "pl": "spokój, opanowanie"
-        }
+        },
+        "koHanja": "침착(沈着)"
       },
       {
         "word": "bình luận",
@@ -331,7 +354,8 @@
           "de": "Kommentar, Rezension",
           "fr": "commentaire, critique",
           "pl": "komentarz, recenzja"
-        }
+        },
+        "koHanja": "평론(評論)·댓글"
       },
       {
         "word": "bình đẳng",
@@ -344,7 +368,8 @@
           "de": "Gleichberechtigung, Gleichheit",
           "fr": "égalité",
           "pl": "równość"
-        }
+        },
+        "koHanja": "평등(平等)"
       },
       {
         "word": "bình an",
@@ -357,7 +382,8 @@
           "de": "Frieden, wohlbehalten",
           "fr": "paix, tranquillité",
           "pl": "pokój, spokój"
-        }
+        },
+        "koHanja": "평안(平安)"
       },
       {
         "word": "bình dân",
@@ -370,7 +396,8 @@
           "de": "volkstümlich, bürgerlich",
           "fr": "populaire, démocratique",
           "pl": "ludowy, popularny"
-        }
+        },
+        "koHanja": "서민적(庶民的)·대중적(大衆的)"
       },
       {
         "word": "hòa bình",
@@ -383,7 +410,8 @@
           "de": "Frieden",
           "fr": "paix",
           "pl": "pokój"
-        }
+        },
+        "koHanja": "평화(平和)"
       }
     ]
   },
@@ -402,7 +430,8 @@
           "de": "Reform",
           "fr": "réforme",
           "pl": "reforma"
-        }
+        },
+        "koHanja": "개혁(改革)"
       },
       {
         "word": "cải thiện",
@@ -415,7 +444,8 @@
           "de": "Verbesserung, Optimierung",
           "fr": "amélioration, optimiser",
           "pl": "poprawa, polepszenie"
-        }
+        },
+        "koHanja": "개선(改善)"
       },
       {
         "word": "cải tạo",
@@ -428,7 +458,8 @@
           "de": "Umbau, Neugestaltung",
           "fr": "rénovation, transformation",
           "pl": "przebudowa, modernizacja"
-        }
+        },
+        "koHanja": "개조(改造)"
       },
       {
         "word": "cải tiến",
@@ -441,20 +472,22 @@
           "de": "Verbesserung, Weiterentwicklung",
           "fr": "perfectionnement, modernisation",
           "pl": "udoskonalenie, ulepszenie"
-        }
+        },
+        "koHanja": "개선(改善)·개량(改良)"
       },
       {
         "word": "cải chính",
         "hanja": "改正",
         "meaning": {
-          "ko": "정정·시정",
+          "ko": "개정",
           "zh": "訂正·糾正",
           "en": "correction/rectification",
           "ja": "訂正・是正",
           "de": "Richtigstellung, Korrektur",
           "fr": "rectification, correction",
           "pl": "sprostowanie, korekta"
-        }
+        },
+        "koHanja": "개정(改正)"
       }
     ]
   },
@@ -473,7 +506,8 @@
           "de": "Gefühl, Empfindung",
           "fr": "sensation, sentiment",
           "pl": "uczucie, wrażenie"
-        }
+        },
+        "koHanja": "감각(感覺)·느낌"
       },
       {
         "word": "cảm xúc",
@@ -486,7 +520,8 @@
           "de": "Emotion, Gefühl",
           "fr": "émotion, sentiment",
           "pl": "emocja, uczucie"
-        }
+        },
+        "koHanja": "감정(感觸)"
       },
       {
         "word": "cảm ơn",
@@ -499,7 +534,8 @@
           "de": "Danke, Dankbarkeit",
           "fr": "merci, gratitude",
           "pl": "dziękuję, wdzięczność"
-        }
+        },
+        "koHanja": "감사(感謝)"
       },
       {
         "word": "cảm động",
@@ -512,7 +548,8 @@
           "de": "berührt sein, Ergriffenheit",
           "fr": "ému, touché, émotion",
           "pl": "wzruszenie"
-        }
+        },
+        "koHanja": "감동(感動)"
       },
       {
         "word": "cảm thông",
@@ -525,7 +562,8 @@
           "de": "Mitgefühl, Verständnis",
           "fr": "empathie, compassion",
           "pl": "empatia, zrozumienie"
-        }
+        },
+        "koHanja": "공감(共感)·이해(理解)"
       },
       {
         "word": "cảm hứng",
@@ -538,7 +576,8 @@
           "de": "Inspiration",
           "fr": "inspiration",
           "pl": "natchnienie, inspiracja"
-        }
+        },
+        "koHanja": "영감(靈感)"
       },
       {
         "word": "tình cảm",
@@ -551,7 +590,8 @@
           "de": "Gefühl, Zuneigung",
           "fr": "sentiment, affection",
           "pl": "uczucie, sympatia"
-        }
+        },
+        "koHanja": "감정(感情)"
       }
     ]
   },
@@ -570,7 +610,8 @@
           "de": "Rang, Dienstgrad",
           "fr": "rang, grade, échelon",
           "pl": "stopień, ranga"
-        }
+        },
+        "koHanja": "등급(等級)·계급(階級)"
       },
       {
         "word": "cấp cứu",
@@ -583,7 +624,8 @@
           "de": "Erste Hilfe, Notfall",
           "fr": "premiers secours, urgences",
           "pl": "pogotowie ratunkowe, pierwsza pomoc"
-        }
+        },
+        "koHanja": "응급(急救)"
       },
       {
         "word": "cấp tốc",
@@ -596,7 +638,8 @@
           "de": "beschleunigt, im Eiltempo",
           "fr": "express, accéléré, rapide",
           "pl": "ekspresowy, przyspieszony"
-        }
+        },
+        "koHanja": "속성(速成)·급속(急速)"
       },
       {
         "word": "cấp phát",
@@ -609,7 +652,8 @@
           "de": "Ausgabe, Zuteilung",
           "fr": "distribution, délivrance, allocation",
           "pl": "wydawanie, wypłata"
-        }
+        },
+        "koHanja": "지급(支給)·발급(發給)"
       },
       {
         "word": "cấp thiết",
@@ -622,7 +666,8 @@
           "de": "dringend, vordringlich",
           "fr": "urgent, pressant",
           "pl": "pilny, naglący"
-        }
+        },
+        "koHanja": "시급(時急)함"
       },
       {
         "word": "khẩn cấp",
@@ -635,7 +680,8 @@
           "de": "dringend, Notfall",
           "fr": "urgent, urgence",
           "pl": "pilny, nagły wypadek"
-        }
+        },
+        "koHanja": "긴급(緊急)"
       },
       {
         "word": "đẳng cấp",
@@ -648,7 +694,8 @@
           "de": "Klasse, Rang",
           "fr": "classe, standing, rang",
           "pl": "klasa, poziom"
-        }
+        },
+        "koHanja": "등급(等級)"
       },
       {
         "word": "cung cấp",
@@ -661,7 +708,8 @@
           "de": "liefern, Versorgung",
           "fr": "fournir, approvisionner",
           "pl": "zaopatrzenie, dostawa"
-        }
+        },
+        "koHanja": "공급(供給)"
       }
     ]
   },
@@ -680,7 +728,8 @@
           "de": "aufrichtig, herzlich",
           "fr": "sincère, chaleureux",
           "pl": "szczery, serdeczny"
-        }
+        },
+        "koHanja": "진심(真誠)·성실(誠實)"
       },
       {
         "word": "chân thật",
@@ -693,7 +742,8 @@
           "de": "wahrhaftig, aufrichtig",
           "fr": "véridique, authentique",
           "pl": "prawdomówny, autentyczny"
-        }
+        },
+        "koHanja": "진실(眞實)함"
       },
       {
         "word": "chân lý",
@@ -706,7 +756,8 @@
           "de": "Wahrheit",
           "fr": "vérité",
           "pl": "prawda"
-        }
+        },
+        "koHanja": "진리(真理)"
       },
       {
         "word": "chân dung",
@@ -719,7 +770,8 @@
           "de": "Porträt, Bildnis",
           "fr": "portrait, effigie",
           "pl": "portret, wizerunek"
-        }
+        },
+        "koHanja": "초상(肖像)·모습"
       },
       {
         "word": "chân tướng",
@@ -732,7 +784,8 @@
           "de": "wahre Sachlage, Wahrheit",
           "fr": "vérité des faits, réalité",
           "pl": "prawda o sprawie, stan faktyczny"
-        }
+        },
+        "koHanja": "진상(真相)"
       },
       {
         "word": "chân chính",
@@ -745,7 +798,8 @@
           "de": "echt, wahrhaftig",
           "fr": "authentique, véritable",
           "pl": "autentyczny, prawdziwy"
-        }
+        },
+        "koHanja": "참됨·진정(眞正)한"
       }
     ]
   },
@@ -764,7 +818,8 @@
           "de": "Qualität",
           "fr": "qualité",
           "pl": "jakość"
-        }
+        },
+        "koHanja": "품질(品質)"
       },
       {
         "word": "chất liệu",
@@ -777,7 +832,8 @@
           "de": "Material, Werkstoff",
           "fr": "matière, matériau",
           "pl": "tworzywo, materiał"
-        }
+        },
+        "koHanja": "재질(材質)·소재(素材)"
       },
       {
         "word": "chất vấn",
@@ -790,7 +846,8 @@
           "de": "Befragung, Verhör",
           "fr": "interpellation, interrogatoire",
           "pl": "interpelacja, przesłuchanie"
-        }
+        },
+        "koHanja": "질의(質問)·추궁(追窮)"
       },
       {
         "word": "chất phác",
@@ -803,7 +860,8 @@
           "de": "schlicht, einfach, natürlich",
           "fr": "simple, rustique, naturel",
           "pl": "prostota, naturalność"
-        }
+        },
+        "koHanja": "소박(素朴)함"
       },
       {
         "word": "chất độc",
@@ -816,7 +874,8 @@
           "de": "Giftstoff, Gift",
           "fr": "substance toxique, poison",
           "pl": "toksyna, trucizna"
-        }
+        },
+        "koHanja": "독소(毒素)·유독물질(有毒物質)"
       },
       {
         "word": "vật chất",
@@ -829,7 +888,8 @@
           "de": "Materie, Stoff",
           "fr": "matière, matériel",
           "pl": "materia, substancja"
-        }
+        },
+        "koHanja": "물질(物質)"
       }
     ]
   },
@@ -848,7 +908,8 @@
           "de": "Kosten, Ausgaben",
           "fr": "coût, dépenses, frais",
           "pl": "koszt, wydatki"
-        }
+        },
+        "koHanja": "비용(費用)"
       },
       {
         "word": "chi tiết",
@@ -861,7 +922,8 @@
           "de": "Detail, Einzelheit",
           "fr": "détail, précision",
           "pl": "szczegóły"
-        }
+        },
+        "koHanja": "세부사항(細部事項)"
       },
       {
         "word": "chi nhánh",
@@ -874,7 +936,8 @@
           "de": "Filiale, Zweigstelle",
           "fr": "succursale, filiale, agence",
           "pl": "filia, oddział"
-        }
+        },
+        "koHanja": "지점(支店)·지사(支社)"
       },
       {
         "word": "chi tiêu",
@@ -887,7 +950,8 @@
           "de": "Ausgaben, Konsumausgaben",
           "fr": "dépenses, consommation",
           "pl": "wydatki"
-        }
+        },
+        "koHanja": "지출(支銷)"
       },
       {
         "word": "chi viện",
@@ -900,7 +964,8 @@
           "de": "Unterstützung, Verstärkung",
           "fr": "renfort, soutien",
           "pl": "wsparcie, posiłki"
-        }
+        },
+        "koHanja": "지원(支援)·증원(增員)"
       }
     ]
   },
@@ -919,7 +984,8 @@
           "de": "Krieg",
           "fr": "guerre",
           "pl": "wojna"
-        }
+        },
+        "koHanja": "전쟁(戰爭)"
       },
       {
         "word": "chiến thắng",
@@ -932,7 +998,8 @@
           "de": "Sieg",
           "fr": "victoire",
           "pl": "zwycięstwo"
-        }
+        },
+        "koHanja": "승리(勝利)"
       },
       {
         "word": "chiến lược",
@@ -945,7 +1012,8 @@
           "de": "Strategie",
           "fr": "stratégie",
           "pl": "strategia"
-        }
+        },
+        "koHanja": "전략(戰略)"
       },
       {
         "word": "chiến đấu",
@@ -958,7 +1026,8 @@
           "de": "Kampf, Gefecht",
           "fr": "combat, lutter",
           "pl": "bitwa, walka"
-        }
+        },
+        "koHanja": "전투(戰鬥)"
       },
       {
         "word": "chiến dịch",
@@ -971,7 +1040,8 @@
           "de": "Kampagne, Operation",
           "fr": "campagne, opération",
           "pl": "kampania, operacja"
-        }
+        },
+        "koHanja": "작전(作戰)·캠페인"
       },
       {
         "word": "chiến sĩ",
@@ -984,7 +1054,8 @@
           "de": "Kämpfer, Soldat",
           "fr": "combattant, soldat",
           "pl": "wojownik, żołnierz"
-        }
+        },
+        "koHanja": "전사(戰士)·군인(軍人)"
       }
     ]
   },
@@ -1003,7 +1074,8 @@
           "de": "Regierung",
           "fr": "gouvernement",
           "pl": "rząd"
-        }
+        },
+        "koHanja": "정부(政府)"
       },
       {
         "word": "chính trị",
@@ -1016,7 +1088,8 @@
           "de": "Politik",
           "fr": "politique",
           "pl": "polityka"
-        }
+        },
+        "koHanja": "정치(政治)"
       },
       {
         "word": "chính sách",
@@ -1029,7 +1102,8 @@
           "de": "Politik, Richtlinie",
           "fr": "politique, directive",
           "pl": "polityka, wytyczne"
-        }
+        },
+        "koHanja": "정책(政策)"
       },
       {
         "word": "chính thức",
@@ -1042,7 +1116,8 @@
           "de": "offiziell, formell",
           "fr": "officiel, formel",
           "pl": "oficjalny, formalny"
-        }
+        },
+        "koHanja": "정식(正式)·공식(公式)"
       },
       {
         "word": "chính xác",
@@ -1055,7 +1130,8 @@
           "de": "präzise, genau",
           "fr": "précis, exact",
           "pl": "dokładność, precyzja"
-        }
+        },
+        "koHanja": "정확(正確)"
       },
       {
         "word": "chính đáng",
@@ -1068,7 +1144,8 @@
           "de": "gerechtfertigt, legitim",
           "fr": "légitime, justifié",
           "pl": "sprawiedliwy, uzasadniony"
-        }
+        },
+        "koHanja": "정당(正當)함"
       }
     ]
   },
@@ -1087,7 +1164,8 @@
           "de": "Arbeit, Aufgabe",
           "fr": "travail, tâche, emploi",
           "pl": "praca, zadanie"
-        }
+        },
+        "koHanja": "일·업무(業務)"
       },
       {
         "word": "công ty",
@@ -1100,7 +1178,8 @@
           "de": "Firma, Unternehmen",
           "fr": "entreprise, société",
           "pl": "firma, przedsiębiorstwo"
-        }
+        },
+        "koHanja": "회사(會社)"
       },
       {
         "word": "công dân",
@@ -1113,7 +1192,8 @@
           "de": "Bürger, Staatsbürger",
           "fr": "citoyen",
           "pl": "obywatel"
-        }
+        },
+        "koHanja": "공민(公民)·시민(市民)"
       },
       {
         "word": "công cộng",
@@ -1126,7 +1206,8 @@
           "de": "öffentlich",
           "fr": "public, commun",
           "pl": "publiczny"
-        }
+        },
+        "koHanja": "공공(公共)"
       },
       {
         "word": "công nghiệp",
@@ -1139,7 +1220,8 @@
           "de": "Industrie",
           "fr": "industrie",
           "pl": "przemysł"
-        }
+        },
+        "koHanja": "공업(工業)"
       },
       {
         "word": "công bằng",
@@ -1152,7 +1234,8 @@
           "de": "Gerechtigkeit, Fairness",
           "fr": "justice, équité",
           "pl": "sprawiedliwość, bezstronność"
-        }
+        },
+        "koHanja": "공평(公平)·공정(公正)"
       },
       {
         "word": "công nhận",
@@ -1165,7 +1248,8 @@
           "de": "Anerkennung, Zulassung",
           "fr": "reconnaissance, homologation",
           "pl": "uznanie, autoryzacja"
-        }
+        },
+        "koHanja": "공인(公認)·인정(認定)"
       },
       {
         "word": "công khai",
@@ -1178,7 +1262,8 @@
           "de": "öffentlich, offenlegen",
           "fr": "public, divulguer, ouvert",
           "pl": "jawny, publiczny"
-        }
+        },
+        "koHanja": "공개(公開)"
       },
       {
         "word": "công lao",
@@ -1191,7 +1276,8 @@
           "de": "Verdienst, Leistung",
           "fr": "mérite, contribution",
           "pl": "zasługa, wkład"
-        }
+        },
+        "koHanja": "공로(功勞)"
       },
       {
         "word": "công nhân",
@@ -1204,7 +1290,8 @@
           "de": "Arbeiter",
           "fr": "ouvrier, travailleur",
           "pl": "robotnik"
-        }
+        },
+        "koHanja": "노동자(勞動者)"
       },
       {
         "word": "công chức",
@@ -1217,7 +1304,8 @@
           "de": "Beamter, Staatsdiener",
           "fr": "fonctionnaire, agent public",
           "pl": "urzędnik państwowy"
-        }
+        },
+        "koHanja": "공무원(公務員)"
       },
       {
         "word": "công viên",
@@ -1230,7 +1318,8 @@
           "de": "Park, Parkanlage",
           "fr": "parc, jardin public",
           "pl": "park"
-        }
+        },
+        "koHanja": "공원(公園)"
       }
     ]
   },
@@ -1249,7 +1338,8 @@
           "de": "Gelegenheit, Chance",
           "fr": "opportunité, occasion",
           "pl": "szansa, okazja"
-        }
+        },
+        "koHanja": "기회(機會)"
       },
       {
         "word": "cơ bản",
@@ -1262,7 +1352,8 @@
           "de": "Grundlage, elementar",
           "fr": "de base, fondamental, élémentaire",
           "pl": "podstawowy"
-        }
+        },
+        "koHanja": "기본(基本)"
       },
       {
         "word": "cơ quan",
@@ -1275,7 +1366,8 @@
           "de": "Behörde, Institution, Organ",
           "fr": "organisme, institution, organe",
           "pl": "instytucja, organ"
-        }
+        },
+        "koHanja": "기관(機關)"
       },
       {
         "word": "cơ sở",
@@ -1288,7 +1380,8 @@
           "de": "Basis, Grundlage, Einrichtung",
           "fr": "base, fondement, établissement",
           "pl": "baza, fundament"
-        }
+        },
+        "koHanja": "기초(基礎)·토대(土臺)"
       },
       {
         "word": "cơ cấu",
@@ -1301,7 +1394,8 @@
           "de": "Struktur, Gefüge",
           "fr": "structure, mécanisme",
           "pl": "struktura"
-        }
+        },
+        "koHanja": "구조(構造)"
       },
       {
         "word": "cơ chế",
@@ -1314,7 +1408,8 @@
           "de": "Mechanismus",
           "fr": "mécanisme",
           "pl": "mechanizm"
-        }
+        },
+        "koHanja": "기제(機制)·메커니즘"
       },
       {
         "word": "cơ thể",
@@ -1327,7 +1422,8 @@
           "de": "Körper, Organismus",
           "fr": "corps, organisme",
           "pl": "ciało, organizm"
-        }
+        },
+        "koHanja": "신체(肌體)·몸"
       }
     ]
   },
@@ -1346,7 +1442,8 @@
           "de": "Nomen, Substantiv",
           "fr": "nom, substantif",
           "pl": "rzeczownik"
-        }
+        },
+        "koHanja": "명사(名詞)"
       },
       {
         "word": "danh dự",
@@ -1359,7 +1456,8 @@
           "de": "Ehre",
           "fr": "honneur",
           "pl": "honor"
-        }
+        },
+        "koHanja": "명예(名譽)"
       },
       {
         "word": "danh sách",
@@ -1372,7 +1470,8 @@
           "de": "Liste, Namensliste",
           "fr": "liste, répertoire",
           "pl": "lista nazwisk"
-        }
+        },
+        "koHanja": "명단(名冊)"
       },
       {
         "word": "danh nghĩa",
@@ -1385,7 +1484,8 @@
           "de": "im Namen von, nominell",
           "fr": "au nom de, à titre nominal",
           "pl": "nominalny, tytularny"
-        }
+        },
+        "koHanja": "명의(名義)·명목(名目)"
       },
       {
         "word": "danh tiếng",
@@ -1398,7 +1498,8 @@
           "de": "Ruf, Ruhm, Ansehen",
           "fr": "réputation, renommée",
           "pl": "sława, reputacja"
-        }
+        },
+        "koHanja": "명성(名聲)"
       }
     ]
   },
@@ -1417,7 +1518,8 @@
           "de": "Demokratie",
           "fr": "démocratie",
           "pl": "demokracja"
-        }
+        },
+        "koHanja": "민주(民主)"
       },
       {
         "word": "dân tộc",
@@ -1430,7 +1532,8 @@
           "de": "Volk, Ethnie, Nation",
           "fr": "ethnie, peuple, nation",
           "pl": "naród, grupa etniczna"
-        }
+        },
+        "koHanja": "민족(民族)"
       },
       {
         "word": "dân số",
@@ -1443,7 +1546,8 @@
           "de": "Bevölkerung, Einwohnerzahl",
           "fr": "population",
           "pl": "ludność, populacja"
-        }
+        },
+        "koHanja": "인구(人口)"
       },
       {
         "word": "dân sự",
@@ -1456,7 +1560,8 @@
           "de": "Zivilrecht, zivil",
           "fr": "civil, droit civil",
           "pl": "cywilny (prawo)"
-        }
+        },
+        "koHanja": "민사(民事)"
       },
       {
         "word": "dân gian",
@@ -1469,7 +1574,8 @@
           "de": "volkstümlich, Volks-",
           "fr": "populaire, folklorique",
           "pl": "ludowy, folklorystyczny"
-        }
+        },
+        "koHanja": "민간(民間)"
       },
       {
         "word": "dân trí",
@@ -1482,7 +1588,8 @@
           "de": "Bildungsniveau der Bevölkerung",
           "fr": "niveau d'instruction publique, conscience civique",
           "pl": "świadomość społeczna, poziom oświaty"
-        }
+        },
+        "koHanja": "민도(民度)·국민(國民) 지식수준(知識水準)"
       },
       {
         "word": "nhân dân",
@@ -1495,7 +1602,8 @@
           "de": "Volk, Bevölkerung",
           "fr": "peuple, population",
           "pl": "lud"
-        }
+        },
+        "koHanja": "인민(人民)"
       }
     ]
   },
@@ -1527,7 +1635,8 @@
           "de": "Epidemie, Seuche",
           "fr": "épidémie, maladie contagieuse",
           "pl": "epidemia, zaraza"
-        }
+        },
+        "koHanja": "전염병(傳染病)·역병(疫病)"
       },
       {
         "word": "dịch giả",
@@ -1540,7 +1649,8 @@
           "de": "Übersetzer",
           "fr": "traducteur, traductrice",
           "pl": "tłumacz"
-        }
+        },
+        "koHanja": "번역가(翻譯家)"
       },
       {
         "word": "dịch thuật",
@@ -1553,7 +1663,8 @@
           "de": "Übersetzung",
           "fr": "traduction",
           "pl": "tłumaczenie"
-        }
+        },
+        "koHanja": "번역(翻譯)"
       },
       {
         "word": "dịch tễ",
@@ -1566,7 +1677,8 @@
           "de": "Epidemiologie",
           "fr": "épidémiologie",
           "pl": "epidemiologia"
-        }
+        },
+        "koHanja": "역학(疫學, 질병)"
       }
     ]
   },
@@ -1585,7 +1697,8 @@
           "de": "Reisen, Tourismus",
           "fr": "tourisme, voyage",
           "pl": "podróż, turystyka"
-        }
+        },
+        "koHanja": "여행(遊歷)"
       },
       {
         "word": "du học",
@@ -1598,7 +1711,8 @@
           "de": "Auslandsstudium",
           "fr": "études à l'étranger",
           "pl": "studia za granicą"
-        }
+        },
+        "koHanja": "유학(留學)"
       },
       {
         "word": "du khách",
@@ -1611,7 +1725,8 @@
           "de": "Tourist, Reisender",
           "fr": "touriste, voyageur",
           "pl": "turysta"
-        }
+        },
+        "koHanja": "관광객(觀光客)"
       },
       {
         "word": "du hành",
@@ -1624,7 +1739,8 @@
           "de": "Reise, Reiseverlauf",
           "fr": "voyage, périple",
           "pl": "podróż, wędrówka"
-        }
+        },
+        "koHanja": "여행(遊行)·비행(飛行)"
       },
       {
         "word": "du nhập",
@@ -1637,7 +1753,8 @@
           "de": "Einführung, Einzug, Übernahme",
           "fr": "introduction, importation, adoption",
           "pl": "napływ, wprowadzenie"
-        }
+        },
+        "koHanja": "유입(輸入)·도입(導入)"
       },
       {
         "word": "du côn",
@@ -1650,7 +1767,8 @@
           "de": "Schläger, Raufbold",
           "fr": "voyou, bandit",
           "pl": "chuligan, opryszek"
-        }
+        },
+        "koHanja": "불량배(不良輩)·건달"
       }
     ]
   },
@@ -1669,7 +1787,8 @@
           "de": "Projekt, Vorhaben",
           "fr": "projet",
           "pl": "projekt, przedsięwzięcie"
-        }
+        },
+        "koHanja": "프로젝트·사업(事業)"
       },
       {
         "word": "dự báo",
@@ -1682,7 +1801,8 @@
           "de": "Vorhersage, Prognose",
           "fr": "prévision, pronostic",
           "pl": "prognoza"
-        }
+        },
+        "koHanja": "예보(預報)"
       },
       {
         "word": "dự đoán",
@@ -1695,7 +1815,8 @@
           "de": "Vorhersage, Prognose",
           "fr": "prédiction, prévision",
           "pl": "przewidywanie"
-        }
+        },
+        "koHanja": "예측(預斷)"
       },
       {
         "word": "dự định",
@@ -1708,7 +1829,8 @@
           "de": "Vorhaben, Planung",
           "fr": "intention, projet, planifier",
           "pl": "plan, zamiar"
-        }
+        },
+        "koHanja": "예정(預定)·계획(計劃)"
       },
       {
         "word": "dự trữ",
@@ -1721,7 +1843,8 @@
           "de": "Reserve, Vorrat",
           "fr": "réserve, stock",
           "pl": "rezerwa, zapasy"
-        }
+        },
+        "koHanja": "비축(備蓄)"
       },
       {
         "word": "dự phòng",
@@ -1734,7 +1857,8 @@
           "de": "Vorbeugung, Vorsorge",
           "fr": "prévention, précaution",
           "pl": "profilaktyka, zapobieganie"
-        }
+        },
+        "koHanja": "예방(預防)·대비(對備)"
       }
     ]
   },
@@ -1753,7 +1877,8 @@
           "de": "Universität",
           "fr": "université",
           "pl": "uniwersytet"
-        }
+        },
+        "koHanja": "대학(大學)"
       },
       {
         "word": "đại diện",
@@ -1766,7 +1891,8 @@
           "de": "Vertreter, Repräsentant",
           "fr": "représentant, délégué",
           "pl": "przedstawiciel, delegat"
-        }
+        },
+        "koHanja": "대표(代面)"
       },
       {
         "word": "đại sứ",
@@ -1779,7 +1905,8 @@
           "de": "Botschafter",
           "fr": "ambassadeur",
           "pl": "ambasador"
-        }
+        },
+        "koHanja": "대사(大使)"
       },
       {
         "word": "đại chúng",
@@ -1792,7 +1919,8 @@
           "de": "Öffentlichkeit, Massen",
           "fr": "grand public, masses",
           "pl": "ogół społeczeństwa, masy"
-        }
+        },
+        "koHanja": "대중(大眾)"
       },
       {
         "word": "đại lý",
@@ -1805,7 +1933,8 @@
           "de": "Agentur, Vertretung",
           "fr": "agence, concessionnaire",
           "pl": "agencja, przedstawicielstwo handlowe"
-        }
+        },
+        "koHanja": "대리점(代理店)"
       },
       {
         "word": "đại gia",
@@ -1818,7 +1947,8 @@
           "de": "Magnat, Großverdiener",
           "fr": "magnat, grande fortune",
           "pl": "magnat, zamożna osoba"
-        }
+        },
+        "koHanja": "부호(富豪)·큰손"
       },
       {
         "word": "đại đồng",
@@ -1831,7 +1961,8 @@
           "de": "große Harmonie, allgemeine Eintracht",
           "fr": "grande concorde, harmonie universelle",
           "pl": "wielka jedność, powszechna harmonia"
-        }
+        },
+        "koHanja": "대동(大同)·큰 조화(調和)"
       },
       {
         "word": "thời đại",
@@ -1844,7 +1975,8 @@
           "de": "Epoche, Ära",
           "fr": "époque, ère, âge",
           "pl": "epoka, era"
-        }
+        },
+        "koHanja": "시대(時代)"
       }
     ]
   },
@@ -1863,7 +1995,8 @@
           "de": "Moral",
           "fr": "morale, moralité",
           "pl": "moralność"
-        }
+        },
+        "koHanja": "도덕(道德)"
       },
       {
         "word": "đạo diễn",
@@ -1876,7 +2009,8 @@
           "de": "Regisseur, Regie",
           "fr": "réalisateur, mise en scène",
           "pl": "reżyser, reżyseria"
-        }
+        },
+        "koHanja": "감독(導演)·연출(演出)"
       },
       {
         "word": "đạo lý",
@@ -1889,7 +2023,8 @@
           "de": "Sittenlehre, moralische Prinzipien",
           "fr": "morale, principes moraux",
           "pl": "zasady moralne, powinność"
-        }
+        },
+        "koHanja": "도리(道理)"
       },
       {
         "word": "đạo văn",
@@ -1902,7 +2037,8 @@
           "de": "Plagiat",
           "fr": "plagiat",
           "pl": "plagiat"
-        }
+        },
+        "koHanja": "표절(剽竊)"
       },
       {
         "word": "đạo cụ",
@@ -1915,7 +2051,8 @@
           "de": "Requisite",
           "fr": "accessoire (de théâtre)",
           "pl": "rekwizyt teatralny"
-        }
+        },
+        "koHanja": "소품(小品)"
       },
       {
         "word": "đạo Phật",
@@ -1928,7 +2065,8 @@
           "de": "Buddhismus",
           "fr": "bouddhisme",
           "pl": "buddyzm"
-        }
+        },
+        "koHanja": "불교(佛敎)"
       }
     ]
   },
@@ -1947,7 +2085,8 @@
           "de": "Investition, anlegen",
           "fr": "investissement, investir",
           "pl": "inwestycja, inwestowanie"
-        }
+        },
+        "koHanja": "투자(投資)"
       },
       {
         "word": "đầu tiên",
@@ -1973,7 +2112,8 @@
           "de": "Kapitulation",
           "fr": "capitulation, se rendre",
           "pl": "kapitulacja"
-        }
+        },
+        "koHanja": "항복(降伏)"
       },
       {
         "word": "đầu độc",
@@ -1986,7 +2126,8 @@
           "de": "vergiften, Vergiftung",
           "fr": "empoisonnement, empoisonner",
           "pl": "otrucie, zatruć"
-        }
+        },
+        "koHanja": "독살(毒殺)·해치다"
       },
       {
         "word": "đầu bếp",
@@ -1999,7 +2140,8 @@
           "de": "Koch, Chefkoch",
           "fr": "cuisinier, chef cuisinier",
           "pl": "kucharz, szef kuchni"
-        }
+        },
+        "koHanja": "요리사(料理師)"
       }
     ]
   },
@@ -2018,7 +2160,8 @@
           "de": "Definition",
           "fr": "définition",
           "pl": "definicja"
-        }
+        },
+        "koHanja": "정의(定義)"
       },
       {
         "word": "định kỳ",
@@ -2031,7 +2174,8 @@
           "de": "regelmäßig, periodisch",
           "fr": "périodique, régulier",
           "pl": "okresowy, regularny"
-        }
+        },
+        "koHanja": "정기적(定期的)"
       },
       {
         "word": "định hướng",
@@ -2044,7 +2188,8 @@
           "de": "Orientierung, Ausrichtung",
           "fr": "orientation, directif",
           "pl": "orientacja, ukierunkowanie"
-        }
+        },
+        "koHanja": "방향설정(方向設定)"
       },
       {
         "word": "định mức",
@@ -2057,7 +2202,8 @@
           "de": "Norm, Richtwert, Quote",
           "fr": "quota, norme, barème",
           "pl": "norma, limit, przydział"
-        }
+        },
+        "koHanja": "할당량(割當量)·기준치(基準値)"
       },
       {
         "word": "định luật",
@@ -2070,7 +2216,8 @@
           "de": "Gesetzmäßigkeit, Prinzip",
           "fr": "loi, principe scientifique",
           "pl": "prawo (naukowe), reguła"
-        }
+        },
+        "koHanja": "법칙(法則)"
       },
       {
         "word": "định cư",
@@ -2083,7 +2230,8 @@
           "de": "Sesshaftwerdung, Niederlassung",
           "fr": "s'établir, sédentarisation",
           "pl": "osiedlenie się, stały pobyt"
-        }
+        },
+        "koHanja": "정착(定着)"
       },
       {
         "word": "quyết định",
@@ -2096,7 +2244,8 @@
           "de": "Entscheidung, Beschluss",
           "fr": "décision",
           "pl": "decyzja"
-        }
+        },
+        "koHanja": "결정(決定)"
       }
     ]
   },
@@ -2115,7 +2264,8 @@
           "de": "Zustimmung, Einverständnis",
           "fr": "accord, consentement",
           "pl": "zgoda, porozumienie"
-        }
+        },
+        "koHanja": "동의(同意)"
       },
       {
         "word": "đồng nghiệp",
@@ -2128,7 +2278,8 @@
           "de": "Kollege, Arbeitskollege",
           "fr": "collègue",
           "pl": "kolega z pracy"
-        }
+        },
+        "koHanja": "동료(同僚)"
       },
       {
         "word": "đồng thời",
@@ -2141,7 +2292,8 @@
           "de": "gleichzeitig",
           "fr": "en même temps, simultanément",
           "pl": "jednocześnie, równocześnie"
-        }
+        },
+        "koHanja": "동시(同時)에"
       },
       {
         "word": "đồng hồ",
@@ -2154,7 +2306,8 @@
           "de": "Uhr, Armbanduhr",
           "fr": "horloge, montre",
           "pl": "zegar, zegarek"
-        }
+        },
+        "koHanja": "시계(銅壺)"
       },
       {
         "word": "đồng minh",
@@ -2167,7 +2320,8 @@
           "de": "Allianz, Verbündeter",
           "fr": "allié, alliance",
           "pl": "sojusz, koalicja"
-        }
+        },
+        "koHanja": "동맹(同盟)"
       },
       {
         "word": "đồng bào",
@@ -2180,7 +2334,8 @@
           "de": "Landsleute, Mitbürger",
           "fr": "compatriotes",
           "pl": "rodacy"
-        }
+        },
+        "koHanja": "동포(同胞)"
       }
     ]
   },
@@ -2199,7 +2354,8 @@
           "de": "Tier",
           "fr": "animal",
           "pl": "zwierzę"
-        }
+        },
+        "koHanja": "동물(動物)"
       },
       {
         "word": "động cơ",
@@ -2212,7 +2368,8 @@
           "de": "Motiv, Motor",
           "fr": "motif, moteur",
           "pl": "motyw, silnik"
-        }
+        },
+        "koHanja": "동기(動機)·엔진"
       },
       {
         "word": "động lực",
@@ -2225,7 +2382,8 @@
           "de": "Antrieb, Triebkraft, Motivation",
           "fr": "force motrice, motivation",
           "pl": "siła napędowa, motywacja"
-        }
+        },
+        "koHanja": "동력(動力)"
       },
       {
         "word": "động tác",
@@ -2238,7 +2396,8 @@
           "de": "Bewegung, Handlung",
           "fr": "mouvement, geste",
           "pl": "ruch, gest"
-        }
+        },
+        "koHanja": "동작(動作)"
       },
       {
         "word": "động viên",
@@ -2251,7 +2410,8 @@
           "de": "Ermutigung, ermutigen",
           "fr": "encouragement, encourager",
           "pl": "zachęta, mobilizacja"
-        }
+        },
+        "koHanja": "격려(激勵)·독려(督勵)"
       },
       {
         "word": "động đất",
@@ -2264,7 +2424,8 @@
           "de": "Erdbeben",
           "fr": "séisme, tremblement de terre",
           "pl": "trzęsienie ziemi"
-        }
+        },
+        "koHanja": "지진(地震)"
       },
       {
         "word": "động từ",
@@ -2277,7 +2438,8 @@
           "de": "Verb, Zeitwort",
           "fr": "verbe",
           "pl": "czasownik"
-        }
+        },
+        "koHanja": "동사(動詞)"
       },
       {
         "word": "vận động",
@@ -2290,7 +2452,8 @@
           "de": "Bewegung, Sport",
           "fr": "exercice physique, mouvement",
           "pl": "ćwiczenia fizyczne, ruch"
-        }
+        },
+        "koHanja": "운동(運動)"
       }
     ]
   },
@@ -2309,7 +2472,8 @@
           "de": "einfach, simpel",
           "fr": "simple",
           "pl": "prosty"
-        }
+        },
+        "koHanja": "간단(單簡)"
       },
       {
         "word": "đơn vị",
@@ -2322,7 +2486,8 @@
           "de": "Einheit",
           "fr": "unité",
           "pl": "jednostka"
-        }
+        },
+        "koHanja": "단위(單位)"
       },
       {
         "word": "đơn độc",
@@ -2335,7 +2500,8 @@
           "de": "allein, einsam",
           "fr": "seul, isolé, solitaire",
           "pl": "samotność, odosobnienie"
-        }
+        },
+        "koHanja": "고독(孤獨)·외로움"
       },
       {
         "word": "đơn thuần",
@@ -2348,7 +2514,8 @@
           "de": "schlicht, rein, einfach",
           "fr": "pur et simple, naïf",
           "pl": "prostota, czysty"
-        }
+        },
+        "koHanja": "단순(單純)함"
       },
       {
         "word": "đơn phương",
@@ -2361,7 +2528,8 @@
           "de": "einseitig",
           "fr": "unilatéral",
           "pl": "jednostronny"
-        }
+        },
+        "koHanja": "일방적(一方的)"
       }
     ]
   },
@@ -2380,7 +2548,8 @@
           "de": "Tugend, Charakterzug",
           "fr": "vertu, trait de caractère",
           "pl": "cnota, zaleta charakteru"
-        }
+        },
+        "koHanja": "덕성(德性)·성품(性品)"
       },
       {
         "word": "đức hạnh",
@@ -2393,7 +2562,8 @@
           "de": "tugendhaftes Verhalten, Tugend",
           "fr": "vertu, conduite vertueuse",
           "pl": "cnotliwe postępowanie"
-        }
+        },
+        "koHanja": "덕행(德行)"
       },
       {
         "word": "đức độ",
@@ -2406,7 +2576,8 @@
           "de": "Tugendhaftigkeit, moralische Autorität",
           "fr": "vertu, autorité morale",
           "pl": "autorytet moralny, prawość"
-        }
+        },
+        "koHanja": "덕망(德度)"
       },
       {
         "word": "đức tin",
@@ -2419,7 +2590,8 @@
           "de": "Glaube, Glaubensüberzeugung",
           "fr": "foi, croyance",
           "pl": "wiara"
-        }
+        },
+        "koHanja": "신앙(信仰)·믿음"
       },
       {
         "word": "đức dục",
@@ -2432,7 +2604,8 @@
           "de": "moralische Erziehung, Charakterbildung",
           "fr": "éducation morale",
           "pl": "wychowanie moralne"
-        }
+        },
+        "koHanja": "덕육(德育, 도덕교육)"
       },
       {
         "word": "đạo đức",
@@ -2445,7 +2618,8 @@
           "de": "Moral, Sittlichkeit",
           "fr": "morale, éthique",
           "pl": "moralność, etyka"
-        }
+        },
+        "koHanja": "도덕(道德)"
       }
     ]
   },
@@ -2464,7 +2638,8 @@
           "de": "Familie",
           "fr": "famille, foyer",
           "pl": "rodzina, dom"
-        }
+        },
+        "koHanja": "가정(家庭)"
       },
       {
         "word": "gia tăng",
@@ -2477,7 +2652,8 @@
           "de": "Zunahme, ansteigen",
           "fr": "augmentation, accroissement",
           "pl": "wzrost, przyrost"
-        }
+        },
+        "koHanja": "증가(加增)"
       },
       {
         "word": "gia súc",
@@ -2490,7 +2666,8 @@
           "de": "Nutzvieh, Haustier",
           "fr": "bétail, animaux d'élevage",
           "pl": "zwierzęta gospodarskie, inwentarz"
-        }
+        },
+        "koHanja": "가축(家畜)"
       },
       {
         "word": "gia vị",
@@ -2516,7 +2693,8 @@
           "de": "Vermögen, Besitz",
           "fr": "patrimoine, fortune",
           "pl": "majątek rodzinny, fortuna"
-        }
+        },
+        "koHanja": "재산(財産)"
       },
       {
         "word": "gia sư",
@@ -2529,7 +2707,8 @@
           "de": "Nachhilfelehrer, Hauslehrer",
           "fr": "professeur particulier, tuteur",
           "pl": "korepetytor"
-        }
+        },
+        "koHanja": "과외선생(課外先生)"
       },
       {
         "word": "gia truyền",
@@ -2542,7 +2721,8 @@
           "de": "familiär überliefert, Tradition-",
           "fr": "recette traditionnelle familiale",
           "pl": "tradycja rodzinna (przekazywana)"
-        }
+        },
+        "koHanja": "가전(家傳, 집안 대대로)"
       },
       {
         "word": "gia bảo",
@@ -2555,7 +2735,8 @@
           "de": "Familienerbstück",
           "fr": "trésor de famille, joyau familial",
           "pl": "skarb rodzinny, pamiątka"
-        }
+        },
+        "koHanja": "가보(家寶)"
       },
       {
         "word": "gia giáo",
@@ -2568,7 +2749,8 @@
           "de": "gute Kinderstube, Erziehung",
           "fr": "bonne éducation familiale",
           "pl": "dobre wychowanie w rodzinie"
-        }
+        },
+        "koHanja": "가정교육(家庭敎育)이 반듯함"
       },
       {
         "word": "tăng gia",
@@ -2581,7 +2763,8 @@
           "de": "Produktionssteigerung, Vermehrung",
           "fr": "accroissement de production",
           "pl": "zwiększenie produkcji"
-        }
+        },
+        "koHanja": "증가(增加)"
       }
     ]
   },
@@ -2600,7 +2783,8 @@
           "de": "Preis, Preise",
           "fr": "prix, tarif",
           "pl": "cena"
-        }
+        },
+        "koHanja": "가격(價格)"
       },
       {
         "word": "giá trị",
@@ -2613,7 +2797,8 @@
           "de": "Wert",
           "fr": "valeur",
           "pl": "wartość"
-        }
+        },
+        "koHanja": "가치(價值)"
       },
       {
         "word": "giá thành",
@@ -2626,7 +2811,8 @@
           "de": "Selbstkosten, Gestehungskosten",
           "fr": "prix de revient, coût de production",
           "pl": "koszt własny"
-        }
+        },
+        "koHanja": "원가(原價)"
       },
       {
         "word": "giá vé",
@@ -2639,7 +2825,8 @@
           "de": "Fahrpreis, Eintrittspreis",
           "fr": "tarif, prix du billet",
           "pl": "cena biletu, taryfa"
-        }
+        },
+        "koHanja": "요금(料金, 표값)"
       },
       {
         "word": "giá tiền",
@@ -2652,7 +2839,8 @@
           "de": "Preis, Geldbetrag",
           "fr": "prix, montant",
           "pl": "cena, kwota"
-        }
+        },
+        "koHanja": "값·가격(價格)"
       },
       {
         "word": "vật giá",
@@ -2665,7 +2853,8 @@
           "de": "Lebenshaltungskosten, Güterpreise",
           "fr": "prix des denrées, coût de la vie",
           "pl": "ceny towarów, koszty życia"
-        }
+        },
+        "koHanja": "물가(物價)"
       }
     ]
   },
@@ -2684,7 +2873,8 @@
           "de": "Lösung, Lösungsansatz",
           "fr": "solution",
           "pl": "rozwiązanie problemu"
-        }
+        },
+        "koHanja": "해법(解法)"
       },
       {
         "word": "giải thích",
@@ -2697,7 +2887,8 @@
           "de": "Erklärung, erläutern",
           "fr": "explication, expliquer",
           "pl": "wyjaśnienie, tłumaczenie"
-        }
+        },
+        "koHanja": "설명(說明)"
       },
       {
         "word": "giải trí",
@@ -2710,7 +2901,8 @@
           "de": "Unterhaltung, Freizeitbeschäftigung",
           "fr": "divertissement, loisir",
           "pl": "rozrywka"
-        }
+        },
+        "koHanja": "오락(娛樂)"
       },
       {
         "word": "giải quyết",
@@ -2723,7 +2915,8 @@
           "de": "Lösung, beilegen",
           "fr": "résoudre, règlement",
           "pl": "załatwienie, rozwiązanie"
-        }
+        },
+        "koHanja": "해결(解決)"
       },
       {
         "word": "giải phóng",
@@ -2736,7 +2929,8 @@
           "de": "Befreiung, freisetzen",
           "fr": "libération, émancipation",
           "pl": "wyzwolenie, emancypacja"
-        }
+        },
+        "koHanja": "해방(解放)"
       },
       {
         "word": "giải lao",
@@ -2749,7 +2943,8 @@
           "de": "Pause, Erholung",
           "fr": "pause, récréation",
           "pl": "przerwa, odpoczynek"
-        }
+        },
+        "koHanja": "휴식(休息)·쉬는 시간"
       }
     ]
   },
@@ -2768,7 +2963,8 @@
           "de": "Bildung, Erziehung",
           "fr": "éducation, enseignement",
           "pl": "edukacja, nauczanie"
-        }
+        },
+        "koHanja": "교육(教育)"
       },
       {
         "word": "giáo viên",
@@ -2781,7 +2977,8 @@
           "de": "Lehrer, Lehrkraft",
           "fr": "enseignant, professeur",
           "pl": "nauczyciel"
-        }
+        },
+        "koHanja": "교사(敎師)"
       },
       {
         "word": "giáo sư",
@@ -2794,7 +2991,8 @@
           "de": "Professor, Dozent",
           "fr": "professeur (d'université)",
           "pl": "profesor"
-        }
+        },
+        "koHanja": "교수(教師)"
       },
       {
         "word": "giáo trình",
@@ -2807,7 +3005,8 @@
           "de": "Lehrbuch, Lehrplan",
           "fr": "manuel scolaire, programme de cours",
           "pl": "podręcznik, program nauczania"
-        }
+        },
+        "koHanja": "교재(敎材)·커리큘럼"
       },
       {
         "word": "giáo hội",
@@ -2820,7 +3019,8 @@
           "de": "Kirche, Kirchengemeinde",
           "fr": "Église, congrégation",
           "pl": "Kościół"
-        }
+        },
+        "koHanja": "교회(教會)"
       },
       {
         "word": "giáo lý",
@@ -2833,7 +3033,8 @@
           "de": "Lehre, Glaubenslehre",
           "fr": "doctrine religieuse, dogme",
           "pl": "doktryna religijna, dogmat"
-        }
+        },
+        "koHanja": "교리(教理)"
       }
     ]
   },
@@ -2852,7 +3053,8 @@
           "de": "Vorstellung, Einführung, empfehlen",
           "fr": "présenter, recommander, introduction",
           "pl": "przedstawienie, wstęp"
-        }
+        },
+        "koHanja": "소개(介紹)"
       },
       {
         "word": "giới hạn",
@@ -2865,7 +3067,8 @@
           "de": "Grenze, Begrenzung",
           "fr": "limite, restriction",
           "pl": "granica, zakres"
-        }
+        },
+        "koHanja": "한계(界限)·범위(範圍)"
       },
       {
         "word": "giới tính",
@@ -2878,7 +3081,8 @@
           "de": "Geschlecht",
           "fr": "sexe, genre",
           "pl": "płeć"
-        }
+        },
+        "koHanja": "성별(性別)"
       },
       {
         "word": "giới trẻ",
@@ -2891,7 +3095,8 @@
           "de": "Jugend, junge Generation",
           "fr": "jeunesse, jeunes",
           "pl": "młodzież, młode pokolenie"
-        }
+        },
+        "koHanja": "젊은층(層)"
       },
       {
         "word": "giới nghiêm",
@@ -2904,7 +3109,8 @@
           "de": "Ausgangssperre, Belagerungszustand",
           "fr": "couvre-feu, état de siège",
           "pl": "godzina policyjna, stan wyjątkowy"
-        }
+        },
+        "koHanja": "계엄(戒嚴)"
       }
     ]
   },
@@ -2923,7 +3129,8 @@
           "de": "Einschränkung, beschränken",
           "fr": "restriction, limiter",
           "pl": "ograniczenie"
-        }
+        },
+        "koHanja": "제한(制限)"
       },
       {
         "word": "hạn hán",
@@ -2936,7 +3143,8 @@
           "de": "Dürre, Trockenheit",
           "fr": "sécheresse",
           "pl": "susza"
-        }
+        },
+        "koHanja": "가뭄(旱暵)"
       },
       {
         "word": "hạn ngạch",
@@ -2949,7 +3157,8 @@
           "de": "Quote, Kontingent",
           "fr": "quota, contingent",
           "pl": "kwota, kontyngent"
-        }
+        },
+        "koHanja": "할당량(割當量)·쿼터"
       },
       {
         "word": "hạn định",
@@ -2962,7 +3171,8 @@
           "de": "Fristsetzung",
           "fr": "délai fixé, fixation d'un terme",
           "pl": "wyznaczenie terminu"
-        }
+        },
+        "koHanja": "기한설정(期限設定)"
       },
       {
         "word": "hạn mức",
@@ -2975,7 +3185,8 @@
           "de": "Kreditlinie, Höchstgrenze",
           "fr": "plafond, limite maximale",
           "pl": "limit, pułap"
-        }
+        },
+        "koHanja": "한도(限度)"
       }
     ]
   },
@@ -2994,7 +3205,8 @@
           "de": "Ware, Güter",
           "fr": "marchandise, biens",
           "pl": "towar"
-        }
+        },
+        "koHanja": "상품(商品)"
       },
       {
         "word": "hàng ngày",
@@ -3007,7 +3219,8 @@
           "de": "täglich, jeden Tag",
           "fr": "quotidiennement, tous les jours",
           "pl": "codziennie"
-        }
+        },
+        "koHanja": "매일(每日)"
       },
       {
         "word": "hàng xóm",
@@ -3033,7 +3246,8 @@
           "de": "Luftfahrt",
           "fr": "aviation, aéronautique",
           "pl": "lotnictwo"
-        }
+        },
+        "koHanja": "항공(航空)"
       },
       {
         "word": "hàng loạt",
@@ -3046,7 +3260,8 @@
           "de": "seriell, massenhaft, reihenweise",
           "fr": "en série, massif, en masse",
           "pl": "masowy, szereg"
-        }
+        },
+        "koHanja": "대량(大量)·일련(一連)의"
       }
     ]
   },
@@ -3065,7 +3280,8 @@
           "de": "Handlung, Aktion, handeln",
           "fr": "action, agir",
           "pl": "działanie, czyn"
-        }
+        },
+        "koHanja": "행동(行動)"
       },
       {
         "word": "hành chính",
@@ -3078,7 +3294,8 @@
           "de": "Verwaltung",
           "fr": "administration, administratif",
           "pl": "administracja"
-        }
+        },
+        "koHanja": "행정(行政)"
       },
       {
         "word": "hành trình",
@@ -3091,7 +3308,8 @@
           "de": "Reiseroute, Reise",
           "fr": "itinéraire, parcours",
           "pl": "podróż, trasa"
-        }
+        },
+        "koHanja": "여정(旅程)"
       },
       {
         "word": "hành lý",
@@ -3104,7 +3322,8 @@
           "de": "Gepäck, Reisegepäck",
           "fr": "bagages",
           "pl": "bagaż"
-        }
+        },
+        "koHanja": "수하물(手荷物)"
       },
       {
         "word": "hành vi",
@@ -3117,7 +3336,8 @@
           "de": "Verhalten, Benehmen, Tat",
           "fr": "comportement, conduite, acte",
           "pl": "czyn, postępek"
-        }
+        },
+        "koHanja": "행위(行為)"
       }
     ]
   },
@@ -3136,7 +3356,8 @@
           "de": "Gegenwart, gegenwärtig",
           "fr": "présent, actuel, actuellement",
           "pl": "teraźniejszość, obecny"
-        }
+        },
+        "koHanja": "현재(現在)"
       },
       {
         "word": "hiện đại",
@@ -3149,7 +3370,8 @@
           "de": "moderne Zeit, Gegenwart",
           "fr": "moderne, contemporain",
           "pl": "nowoczesny, współczesny"
-        }
+        },
+        "koHanja": "현대(現代)"
       },
       {
         "word": "hiện tượng",
@@ -3162,7 +3384,8 @@
           "de": "Phänomen, Erscheinung",
           "fr": "phénomène",
           "pl": "zjawisko, fenomen"
-        }
+        },
+        "koHanja": "현상(現象)"
       },
       {
         "word": "hiện thực",
@@ -3175,7 +3398,8 @@
           "de": "Wirklichkeit, Realität",
           "fr": "réalité",
           "pl": "rzeczywistość"
-        }
+        },
+        "koHanja": "현실(現實)"
       },
       {
         "word": "hiện trường",
@@ -3188,7 +3412,8 @@
           "de": "Schauplatz, Tatort",
           "fr": "lieu des faits, sur place",
           "pl": "miejsce zdarzenia"
-        }
+        },
+        "koHanja": "현장(現場)"
       },
       {
         "word": "hiện diện",
@@ -3201,7 +3426,8 @@
           "de": "Anwesenheit, Gegenwart",
           "fr": "présence, être présent",
           "pl": "obecność"
-        }
+        },
+        "koHanja": "현존(現存)·참석(參席)"
       },
       {
         "word": "hiện hành",
@@ -3214,7 +3440,8 @@
           "de": "geltend, gegenwärtig",
           "fr": "en vigueur, actuel",
           "pl": "obowiązujący, aktualny"
-        }
+        },
+        "koHanja": "현행(現行)"
       }
     ]
   },
@@ -3233,7 +3460,8 @@
           "de": "Frieden",
           "fr": "paix",
           "pl": "pokój"
-        }
+        },
+        "koHanja": "평화(平和)"
       },
       {
         "word": "hòa giải",
@@ -3246,7 +3474,8 @@
           "de": "Aussöhnung, Schlichtung",
           "fr": "réconciliation, médiation",
           "pl": "pojednanie, mediacja"
-        }
+        },
+        "koHanja": "화해(和解)"
       },
       {
         "word": "hòa hợp",
@@ -3259,7 +3488,8 @@
           "de": "Harmonie, Eintracht",
           "fr": "harmonie, concorde",
           "pl": "harmonia, zgoda"
-        }
+        },
+        "koHanja": "화합(和合)"
       },
       {
         "word": "hòa nhập",
@@ -3272,7 +3502,8 @@
           "de": "Integration, Eingliederung",
           "fr": "intégration, s'intégrer",
           "pl": "integracja, asymilacja"
-        }
+        },
+        "koHanja": "융화(融和)·편입(編入)"
       },
       {
         "word": "hòa tan",
@@ -3285,7 +3516,8 @@
           "de": "auflösen, Lösen (in Flüssigkeit)",
           "fr": "dissoudre, dissolution",
           "pl": "rozpuszczanie"
-        }
+        },
+        "koHanja": "용해(溶解)·녹임"
       }
     ]
   },
@@ -3304,7 +3536,8 @@
           "de": "Chemie",
           "fr": "chimie",
           "pl": "chemia"
-        }
+        },
+        "koHanja": "화학(化學)"
       },
       {
         "word": "hóa đơn",
@@ -3317,7 +3550,8 @@
           "de": "Rechnung, Beleg",
           "fr": "facture, reçu",
           "pl": "rachunek, faktura"
-        }
+        },
+        "koHanja": "영수증(領收證)·청구서(請求書)"
       },
       {
         "word": "hóa trang",
@@ -3330,7 +3564,8 @@
           "de": "Maske, Kostümierung",
           "fr": "déguisement, maquillage",
           "pl": "przebranie, makijaż"
-        }
+        },
+        "koHanja": "분장(扮裝)"
       },
       {
         "word": "hóa thân",
@@ -3343,7 +3578,8 @@
           "de": "Verkörperung, Inkarnation",
           "fr": "incarnation, métamorphose",
           "pl": "wcielenie, metamorfoza"
-        }
+        },
+        "koHanja": "화신(化身)·변신(變身)"
       },
       {
         "word": "hóa giải",
@@ -3356,7 +3592,8 @@
           "de": "auflösen, entschärfen, schlichten",
           "fr": "désamorcer, neutraliser, apaiser",
           "pl": "załagodzić, rozładować"
-        }
+        },
+        "koHanja": "해소(解消)·풀다"
       },
       {
         "word": "hóa chất",
@@ -3369,7 +3606,8 @@
           "de": "Chemikalie",
           "fr": "produit chimique",
           "pl": "substancja chemiczna"
-        }
+        },
+        "koHanja": "화학물질(化學物質)"
       },
       {
         "word": "văn hóa",
@@ -3382,7 +3620,8 @@
           "de": "Kultur",
           "fr": "culture",
           "pl": "kultura"
-        }
+        },
+        "koHanja": "문화(文化)"
       }
     ]
   },
@@ -3401,7 +3640,8 @@
           "de": "Vollendung, abschließen",
           "fr": "achever, accomplir, terminer",
           "pl": "ukończenie, wykonanie"
-        }
+        },
+        "koHanja": "완성(完成)·완료(完了)"
       },
       {
         "word": "hoàn cảnh",
@@ -3414,7 +3654,8 @@
           "de": "Lebensumstände, Verhältnisse",
           "fr": "circonstances, environnement, situation",
           "pl": "okoliczności, środowisko"
-        }
+        },
+        "koHanja": "환경(環境)·처지(處地)"
       },
       {
         "word": "hoàn hảo",
@@ -3427,7 +3668,8 @@
           "de": "vollkommen, tadellos",
           "fr": "parfait, impeccable",
           "pl": "doskonałość"
-        }
+        },
+        "koHanja": "완벽(完好)"
       },
       {
         "word": "hoàn toàn",
@@ -3440,7 +3682,8 @@
           "de": "völlig, vollkommen, ganz",
           "fr": "totalement, complètement",
           "pl": "całkowicie, zupełnie"
-        }
+        },
+        "koHanja": "완전(完全)히"
       },
       {
         "word": "hoàn thiện",
@@ -3453,7 +3696,8 @@
           "de": "vervollkommnen, optimieren",
           "fr": "perfectionner, optimiser",
           "pl": "udoskonalenie, uzupełnienie"
-        }
+        },
+        "koHanja": "완비(完備)·보완(補完)"
       },
       {
         "word": "hoàn trả",
@@ -3466,7 +3710,8 @@
           "de": "Rückzahlung, erstatten",
           "fr": "restituer, rembourser",
           "pl": "zwrot, spłata"
-        }
+        },
+        "koHanja": "반환(返還)·상환(償還)"
       },
       {
         "word": "hoàn công",
@@ -3479,7 +3724,8 @@
           "de": "Fertigstellung (Bau)",
           "fr": "achèvement des travaux",
           "pl": "zakończenie budowy"
-        }
+        },
+        "koHanja": "준공(竣工)"
       }
     ]
   },
@@ -3498,7 +3744,8 @@
           "de": "Schüler",
           "fr": "élève, écolier",
           "pl": "uczeń"
-        }
+        },
+        "koHanja": "학생(學生)"
       },
       {
         "word": "học tập",
@@ -3511,7 +3758,8 @@
           "de": "Lernen, Studium",
           "fr": "apprendre, études",
           "pl": "nauka, uczenie się"
-        }
+        },
+        "koHanja": "학습(學習)"
       },
       {
         "word": "học phí",
@@ -3524,7 +3772,8 @@
           "de": "Schulgeld, Studiengebühren",
           "fr": "frais de scolarité",
           "pl": "czesne"
-        }
+        },
+        "koHanja": "학비(學費)"
       },
       {
         "word": "học kỳ",
@@ -3537,7 +3786,8 @@
           "de": "Semester, Schulhalbjahr",
           "fr": "semestre, trimestre scolaire",
           "pl": "semestr"
-        }
+        },
+        "koHanja": "학기(學期)"
       },
       {
         "word": "học viện",
@@ -3550,7 +3800,8 @@
           "de": "Akademie, Institut",
           "fr": "académie, institut",
           "pl": "akademia, instytut"
-        }
+        },
+        "koHanja": "학원(學院)·학교(學校)"
       },
       {
         "word": "học bổng",
@@ -3563,7 +3814,8 @@
           "de": "Stipendium",
           "fr": "bourse d'études",
           "pl": "stypendium"
-        }
+        },
+        "koHanja": "장학금(奬學金)"
       },
       {
         "word": "học giả",
@@ -3576,7 +3828,8 @@
           "de": "Gelehrter, Wissenschaftler",
           "fr": "érudit, savant",
           "pl": "uczony"
-        }
+        },
+        "koHanja": "학자(學者)"
       },
       {
         "word": "học lực",
@@ -3589,7 +3842,8 @@
           "de": "Schulleistung, Bildungsstand",
           "fr": "niveau scolaire, compétences académiques",
           "pl": "wyniki w nauce"
-        }
+        },
+        "koHanja": "학력(學力)"
       },
       {
         "word": "học văn",
@@ -3602,7 +3856,8 @@
           "de": "Literaturstudium",
           "fr": "études littéraires",
           "pl": "studia literackie"
-        }
+        },
+        "koHanja": "문학(文學) 공부(工夫)"
       },
       {
         "word": "học y",
@@ -3615,7 +3870,8 @@
           "de": "Medizinstudium",
           "fr": "études de médecine",
           "pl": "studia medyczne"
-        }
+        },
+        "koHanja": "의학(醫學) 공부(工夫)"
       }
     ]
   },
@@ -3634,7 +3890,8 @@
           "de": "Konferenz, Tagung",
           "fr": "conférence, réunion",
           "pl": "konferencja, spotkanie"
-        }
+        },
+        "koHanja": "회의(會議)"
       },
       {
         "word": "hội thảo",
@@ -3647,7 +3904,8 @@
           "de": "Seminar, Symposium",
           "fr": "séminaire, colloque",
           "pl": "seminarium, sympozjum"
-        }
+        },
+        "koHanja": "세미나·학술대회(學術大會)"
       },
       {
         "word": "hội đồng",
@@ -3660,7 +3918,8 @@
           "de": "Rat, Ausschuss",
           "fr": "conseil, comité",
           "pl": "rada, komitet"
-        }
+        },
+        "koHanja": "위원회(委員會)·평의회(評議會)"
       },
       {
         "word": "hội viên",
@@ -3673,7 +3932,8 @@
           "de": "Mitglied",
           "fr": "membre, adhérent",
           "pl": "członek"
-        }
+        },
+        "koHanja": "회원(會員)"
       },
       {
         "word": "hội trường",
@@ -3686,7 +3946,8 @@
           "de": "Konferenzsaal, Aula",
           "fr": "salle de conférence, amphithéâtre",
           "pl": "sala konferencyjna, aula"
-        }
+        },
+        "koHanja": "회관(會館)·강당(講堂)"
       },
       {
         "word": "hội chợ",
@@ -3699,7 +3960,8 @@
           "de": "Messe, Jahrmarkt",
           "fr": "foire, salon",
           "pl": "targi, wystawa"
-        }
+        },
+        "koHanja": "박람회(博覽會)"
       }
     ]
   },
@@ -3718,7 +3980,8 @@
           "de": "Ehe, Heirat",
           "fr": "mariage",
           "pl": "małżeństwo"
-        }
+        },
+        "koHanja": "혼인(婚姻)"
       },
       {
         "word": "hôn lễ",
@@ -3731,7 +3994,8 @@
           "de": "Hochzeitsfeier, Trauung",
           "fr": "cérémonie de mariage, noces",
           "pl": "ceremonia ślubna"
-        }
+        },
+        "koHanja": "혼례(婚禮)"
       },
       {
         "word": "hôn thê",
@@ -3744,7 +4008,8 @@
           "de": "Verlobte",
           "fr": "fiancée",
           "pl": "narzeczona"
-        }
+        },
+        "koHanja": "약혼녀(約婚女)"
       },
       {
         "word": "hôn phối",
@@ -3757,7 +4022,8 @@
           "de": "Eheschließung, Ehepartner",
           "fr": "conjoint, mariage",
           "pl": "małżeństwo, współmałżonek"
-        }
+        },
+        "koHanja": "혼인(婚配)·배우자(配偶者)"
       },
       {
         "word": "hôn ước",
@@ -3770,7 +4036,8 @@
           "de": "Verlobung, Eheversprechen",
           "fr": "fiançailles, promesse de mariage",
           "pl": "zaręczyny"
-        }
+        },
+        "koHanja": "혼약(婚約)"
       }
     ]
   },
@@ -3789,7 +4056,8 @@
           "de": "Zusammenarbeit, Kooperation",
           "fr": "coopération, collaboration",
           "pl": "współpraca"
-        }
+        },
+        "koHanja": "협력(協力)"
       },
       {
         "word": "hợp đồng",
@@ -3802,7 +4070,8 @@
           "de": "Vertrag",
           "fr": "contrat",
           "pl": "kontrakt, umowa"
-        }
+        },
+        "koHanja": "계약(契約)"
       },
       {
         "word": "hợp lý",
@@ -3815,7 +4084,8 @@
           "de": "vernünftig, plausibel",
           "fr": "raisonnable, rationnel",
           "pl": "rozsądny, racjonalny"
-        }
+        },
+        "koHanja": "합리적(合理的)"
       },
       {
         "word": "hợp pháp",
@@ -3828,7 +4098,8 @@
           "de": "legal, rechtmäßig",
           "fr": "légal, légitime",
           "pl": "legalny, zgodny z prawem"
-        }
+        },
+        "koHanja": "합법(合法)"
       },
       {
         "word": "hợp nhất",
@@ -3841,7 +4112,8 @@
           "de": "Fusion, Vereinigung",
           "fr": "fusion, unification",
           "pl": "fuzja, zjednoczenie"
-        }
+        },
+        "koHanja": "합병(合一)·통합(統合)"
       },
       {
         "word": "hợp lệ",
@@ -3854,7 +4126,8 @@
           "de": "gültig, ordnungsgemäß",
           "fr": "valide, conforme, régulier",
           "pl": "ważny, prawomocny"
-        }
+        },
+        "koHanja": "유효(有效)·적법(適法)"
       },
       {
         "word": "phù hợp",
@@ -3886,7 +4159,8 @@
           "de": "Plan, Planung",
           "fr": "plan, projet",
           "pl": "plan, projekt"
-        }
+        },
+        "koHanja": "계획(計劃)"
       },
       {
         "word": "kế toán",
@@ -3899,7 +4173,8 @@
           "de": "Buchhaltung, Rechnungswesen",
           "fr": "comptabilité",
           "pl": "księgowość"
-        }
+        },
+        "koHanja": "회계(會計)"
       },
       {
         "word": "kế tiếp",
@@ -3912,7 +4187,8 @@
           "de": "folgend, anschließend",
           "fr": "suivant, consécutif",
           "pl": "kolejny, następny"
-        }
+        },
+        "koHanja": "계속(繼續)되는·다음"
       },
       {
         "word": "kế thừa",
@@ -3925,7 +4201,8 @@
           "de": "Erbschaft, Nachfolge",
           "fr": "héritage, succession",
           "pl": "dziedziczenie, sukcesja"
-        }
+        },
+        "koHanja": "계승(繼承)"
       },
       {
         "word": "kế nghiệp",
@@ -3938,7 +4215,8 @@
           "de": "Betriebsnachfolge, Familientradition fortführen",
           "fr": "reprise de l'entreprise familiale, succession",
           "pl": "przejęcie firmy rodzinnej"
-        }
+        },
+        "koHanja": "가업(家業) 계승(繼承)"
       }
     ]
   },
@@ -3957,7 +4235,8 @@
           "de": "Ergebnis, Resultat",
           "fr": "résultat",
           "pl": "wynik, rezultat"
-        }
+        },
+        "koHanja": "결과(結果)"
       },
       {
         "word": "kết luận",
@@ -3970,7 +4249,8 @@
           "de": "Schlussfolgerung, Fazit",
           "fr": "conclusion",
           "pl": "wniosek, konkluzja"
-        }
+        },
+        "koHanja": "결론(結論)"
       },
       {
         "word": "kết hôn",
@@ -3983,7 +4263,8 @@
           "de": "Heirat, Ehe",
           "fr": "se marier, mariage",
           "pl": "małżeństwo, ślub"
-        }
+        },
+        "koHanja": "결혼(結婚)"
       },
       {
         "word": "kết thúc",
@@ -3996,7 +4277,8 @@
           "de": "Abschluss, Ende",
           "fr": "fin, terminer, clôture",
           "pl": "zakończenie, koniec"
-        }
+        },
+        "koHanja": "종결(終結)·끝"
       },
       {
         "word": "kết nối",
@@ -4009,7 +4291,8 @@
           "de": "Verbindung, Verknüpfung",
           "fr": "connexion, relier",
           "pl": "połączenie, łączenie"
-        }
+        },
+        "koHanja": "연결(連結)"
       },
       {
         "word": "kết hợp",
@@ -4022,7 +4305,8 @@
           "de": "Kombination, verbinden",
           "fr": "combiner, association, allier",
           "pl": "kombinacja, połączenie"
-        }
+        },
+        "koHanja": "결합(結合)"
       }
     ]
   },
@@ -4041,7 +4325,8 @@
           "de": "Kunde, Kundschaft",
           "fr": "client, clientèle",
           "pl": "klient"
-        }
+        },
+        "koHanja": "고객(顧客)"
       },
       {
         "word": "khách sạn",
@@ -4067,7 +4352,8 @@
           "de": "objektiv, Sachlichkeit",
           "fr": "objectif, objectivité",
           "pl": "obiektywizm"
-        }
+        },
+        "koHanja": "객관(客觀)"
       },
       {
         "word": "khách mời",
@@ -4080,7 +4366,8 @@
           "de": "Gast, Ehrengast",
           "fr": "invité",
           "pl": "gość"
-        }
+        },
+        "koHanja": "초대(招待)손님"
       },
       {
         "word": "khách trọ",
@@ -4093,7 +4380,8 @@
           "de": "Hotelgast, Übernachtungsgast",
           "fr": "client d'hôtel, pensionnaire",
           "pl": "gość hotelowy"
-        }
+        },
+        "koHanja": "투숙객(投宿客)"
       },
       {
         "word": "lữ khách",
@@ -4106,7 +4394,8 @@
           "de": "Reisender, Fahrgast",
           "fr": "voyageur, passager",
           "pl": "podróżny, pasażer"
-        }
+        },
+        "koHanja": "여객(旅客)"
       }
     ]
   },
@@ -4125,7 +4414,8 @@
           "de": "Klima",
           "fr": "climat",
           "pl": "klimat"
-        }
+        },
+        "koHanja": "기후(氣候)"
       },
       {
         "word": "khí thế",
@@ -4138,7 +4428,8 @@
           "de": "Elan, Schwung, Kampfgeist",
           "fr": "élan, ardeur, dynamisme",
           "pl": "rozmach, zapał"
-        }
+        },
+        "koHanja": "기세(氣勢)"
       },
       {
         "word": "khí chất",
@@ -4151,7 +4442,8 @@
           "de": "Temperament, Veranlagung",
           "fr": "tempérament",
           "pl": "temperament"
-        }
+        },
+        "koHanja": "기질(氣質)"
       },
       {
         "word": "khí công",
@@ -4164,7 +4456,8 @@
           "de": "Qigong",
           "fr": "qigong (gymnastique énergétique)",
           "pl": "qigong (gimnastyka energetyczna)"
-        }
+        },
+        "koHanja": "기공(氣功)"
       },
       {
         "word": "khí phách",
@@ -4177,7 +4470,8 @@
           "de": "Entschlossenheit, Heldenmut",
           "fr": "courage, force d'âme, héroïsme",
           "pl": "hart ducha, odwaga"
-        }
+        },
+        "koHanja": "기백(氣魄)"
       }
     ]
   },
@@ -4196,7 +4490,8 @@
           "de": "Wirtschaft, Ökonomie",
           "fr": "économie",
           "pl": "gospodarka, ekonomia"
-        }
+        },
+        "koHanja": "경제(經濟)"
       },
       {
         "word": "kinh nghiệm",
@@ -4209,7 +4504,8 @@
           "de": "Erfahrung",
           "fr": "expérience",
           "pl": "doświadczenie"
-        }
+        },
+        "koHanja": "경험(經驗)"
       },
       {
         "word": "kinh doanh",
@@ -4222,7 +4518,8 @@
           "de": "Geschäftstätigkeit, Gewerbe",
           "fr": "commerce, affaires, gestion",
           "pl": "biznes, zarządzanie"
-        }
+        },
+        "koHanja": "경영(經營)"
       },
       {
         "word": "kinh phí",
@@ -4235,7 +4532,8 @@
           "de": "Kosten, Aufwand, Spesen",
           "fr": "frais, budget, dépenses",
           "pl": "koszty, wydatki"
-        }
+        },
+        "koHanja": "경비(經費)·비용(費用)"
       },
       {
         "word": "kinh ngạc",
@@ -4248,7 +4546,8 @@
           "de": "Erstaunen, Verblüffung",
           "fr": "stupéfaction, étonnement",
           "pl": "zdumienie, zaszokowanie"
-        }
+        },
+        "koHanja": "경악(驚愕)"
       },
       {
         "word": "kinh điển",
@@ -4261,7 +4560,8 @@
           "de": "Klassiker, klassisch",
           "fr": "classique",
           "pl": "klasyka, pismo święte"
-        }
+        },
+        "koHanja": "경전(經典)·고전(古典)"
       },
       {
         "word": "Bắc Kinh",
@@ -4274,7 +4574,8 @@
           "de": "Peking",
           "fr": "Pékin",
           "pl": "Pekin"
-        }
+        },
+        "koHanja": "북경(北京)"
       }
     ]
   },
@@ -4293,7 +4594,8 @@
           "de": "Technologie, Technik",
           "fr": "technique, technologie",
           "pl": "technologia, technika"
-        }
+        },
+        "koHanja": "기술(技術)"
       },
       {
         "word": "kỹ năng",
@@ -4306,7 +4608,8 @@
           "de": "Fertigkeit, Kompetenz",
           "fr": "compétence, savoir-faire",
           "pl": "umiejętność, kwalifikacja"
-        }
+        },
+        "koHanja": "기능(技能)·스킬"
       },
       {
         "word": "kỹ sư",
@@ -4332,7 +4635,8 @@
           "de": "Kunsthandwerk, Technologie",
           "fr": "artisanat, technologie industrielle",
           "pl": "rzemiosło przemysłowe"
-        }
+        },
+        "koHanja": "공업(工業)·기예(技藝)"
       },
       {
         "word": "kỹ xảo",
@@ -4345,7 +4649,8 @@
           "de": "Kunstgriff, Technik, Raffinesse",
           "fr": "artifice, technique raffinée, effets spéciaux",
           "pl": "kunszt, technika wykonania"
-        }
+        },
+        "koHanja": "기교(技巧)"
       }
     ]
   },
@@ -4364,7 +4669,8 @@
           "de": "Fest, Festival",
           "fr": "fête, festival",
           "pl": "święto, festiwal"
-        }
+        },
+        "koHanja": "축제(祝祭)"
       },
       {
         "word": "lễ nghi",
@@ -4377,7 +4683,8 @@
           "de": "Ritual, Zeremoniell, Etikette",
           "fr": "rituel, étiquette, cérémonie",
           "pl": "etykieta, ceremoniał"
-        }
+        },
+        "koHanja": "예의(禮儀)·의례(儀禮)"
       },
       {
         "word": "lễ phép",
@@ -4390,7 +4697,8 @@
           "de": "Höflichkeit, artig",
           "fr": "poli, politesse",
           "pl": "uprzejmość"
-        }
+        },
+        "koHanja": "예의(禮儀)바름"
       },
       {
         "word": "lễ vật",
@@ -4403,7 +4711,8 @@
           "de": "Gabe, Opfergabe, Geschenk",
           "fr": "offrande, présent, don",
           "pl": "dar, ofiara"
-        }
+        },
+        "koHanja": "예물(禮物)"
       },
       {
         "word": "lễ tân",
@@ -4416,7 +4725,8 @@
           "de": "Empfang, Rezeption",
           "fr": "réception, accueil",
           "pl": "recepcja, powitanie"
-        }
+        },
+        "koHanja": "리셉션·접객(接客)"
       },
       {
         "word": "lễ độ",
@@ -4429,7 +4739,8 @@
           "de": "Anstand, Wohlerzogenheit",
           "fr": "courtoisie, bienséance",
           "pl": "dobre maniery, kurtuazja"
-        }
+        },
+        "koHanja": "예의(禮儀)"
       }
     ]
   },
@@ -4448,7 +4759,8 @@
           "de": "Geschichte, Historie",
           "fr": "histoire",
           "pl": "historia"
-        }
+        },
+        "koHanja": "역사(歷史)"
       },
       {
         "word": "lịch sự",
@@ -4461,7 +4773,8 @@
           "de": "höflich, Manieren",
           "fr": "poli, courtois",
           "pl": "uprzejmy, dobrze wychowany"
-        }
+        },
+        "koHanja": "예의(禮儀)바름"
       },
       {
         "word": "lịch trình",
@@ -4474,7 +4787,8 @@
           "de": "Zeitplan, Ablauf",
           "fr": "calendrier, itinéraire",
           "pl": "harmonogram, plan"
-        }
+        },
+        "koHanja": "일정(日程)"
       },
       {
         "word": "lịch lãm",
@@ -4487,7 +4801,8 @@
           "de": "weltgewandt, kultiviert",
           "fr": "raffiné, expérimenté, cultivé",
           "pl": "obyty, doświadczony"
-        }
+        },
+        "koHanja": "세련(洗鍊)됨·경험(經驗) 많음"
       },
       {
         "word": "lịch thiệp",
@@ -4500,7 +4815,8 @@
           "de": "höflich und weltmännisch, charmant",
           "fr": "élégant, courtois, affable",
           "pl": "elegancki, szarmancki"
-        }
+        },
+        "koHanja": "예의(禮儀)바르고 세련(洗鍊)됨"
       }
     ]
   },
@@ -4519,7 +4835,8 @@
           "de": "Kontakt, Verbindung",
           "fr": "contact, liaison",
           "pl": "kontakt, łączność"
-        }
+        },
+        "koHanja": "연계(聯繫)·연락(連絡)"
       },
       {
         "word": "liên kết",
@@ -4532,7 +4849,8 @@
           "de": "Verknüpfung, vernetzen",
           "fr": "lier, connecter, liaison",
           "pl": "połączenie, wiązanie"
-        }
+        },
+        "koHanja": "연결(聯結)"
       },
       {
         "word": "liên minh",
@@ -4545,7 +4863,8 @@
           "de": "Bündnis, Allianz",
           "fr": "alliance, coalition, ligue",
           "pl": "sojusz, koalicja"
-        }
+        },
+        "koHanja": "연맹(聯盟)·동맹(同盟)"
       },
       {
         "word": "liên tục",
@@ -4558,7 +4877,8 @@
           "de": "ununterbrochen, kontinuierlich",
           "fr": "continu, sans interruption",
           "pl": "ciągły, nieustanny"
-        }
+        },
+        "koHanja": "연속(連續)·계속(繼續)"
       },
       {
         "word": "liên quan",
@@ -4571,7 +4891,8 @@
           "de": "bezüglich, zusammenhängend",
           "fr": "lié, concerné, relatif à",
           "pl": "związany, dotyczący"
-        }
+        },
+        "koHanja": "관련(關聯)"
       },
       {
         "word": "liên hoan",
@@ -4584,7 +4905,8 @@
           "de": "Feier, Festlichkeit",
           "fr": "fête, célébration, réjouissance",
           "pl": "przyjęcie, świętowanie"
-        }
+        },
+        "koHanja": "연회(聯歡)·모임"
       }
     ]
   },
@@ -4603,7 +4925,8 @@
           "de": "Nutzen, Vorteil, Interesse",
           "fr": "intérêt, avantage, bénéfice",
           "pl": "korzyść, pożytek"
-        }
+        },
+        "koHanja": "이익(利益)"
       },
       {
         "word": "lợi nhuận",
@@ -4616,7 +4939,8 @@
           "de": "Gewinn, Profit",
           "fr": "profit, bénéfice",
           "pl": "zysk"
-        }
+        },
+        "koHanja": "이윤(利潤)"
       },
       {
         "word": "lợi dụng",
@@ -4629,7 +4953,8 @@
           "de": "ausnutzen, nutzen",
           "fr": "exploiter, profiter de, abuser de",
           "pl": "wykorzystywać, nadużywać"
-        }
+        },
+        "koHanja": "이용(利用)·악용(惡用)"
       },
       {
         "word": "lợi thế",
@@ -4642,7 +4967,8 @@
           "de": "Vorteil, Überlegenheit",
           "fr": "avantage, atout",
           "pl": "przewaga, atut"
-        }
+        },
+        "koHanja": "우위(優位)·이점(利點)"
       },
       {
         "word": "lợi hại",
@@ -4655,7 +4981,8 @@
           "de": "Vor- und Nachteile, schlagkräftig",
           "fr": "avantages et inconvénients, redoutable",
           "pl": "wady i zalety, rachunek zysków i strat"
-        }
+        },
+        "koHanja": "이해(利害)·장단점(長短點)"
       }
     ]
   },
@@ -4674,7 +5001,8 @@
           "de": "Grund, Ursache, Anlass",
           "fr": "raison, motif",
           "pl": "powód, przyczyna"
-        }
+        },
+        "koHanja": "이유(理由)"
       },
       {
         "word": "lý luận",
@@ -4687,7 +5015,8 @@
           "de": "Theorie, Argumentation",
           "fr": "théorie, argumentation",
           "pl": "teoria, logika"
-        }
+        },
+        "koHanja": "이론(理論)·논리(論理)"
       },
       {
         "word": "lý tưởng",
@@ -4700,7 +5029,8 @@
           "de": "Ideal, Wunschvorstellung",
           "fr": "idéal",
           "pl": "ideał"
-        }
+        },
+        "koHanja": "이상(理想)"
       },
       {
         "word": "lý thuyết",
@@ -4713,7 +5043,8 @@
           "de": "Theorie",
           "fr": "théorie",
           "pl": "teoria"
-        }
+        },
+        "koHanja": "이론(理論)"
       },
       {
         "word": "lý trí",
@@ -4726,7 +5057,8 @@
           "de": "Vernunft, Verstand",
           "fr": "raison, intellect",
           "pl": "rozsądek, rozum"
-        }
+        },
+        "koHanja": "이성(理性)"
       },
       {
         "word": "lý lịch",
@@ -4739,7 +5071,8 @@
           "de": "Lebenslauf, Werdegang",
           "fr": "curriculum vitae, biographie",
           "pl": "życiorys, CV"
-        }
+        },
+        "koHanja": "이력(履歷)"
       }
     ]
   },
@@ -4758,7 +5091,8 @@
           "de": "transparent, eindeutig, klar",
           "fr": "transparent, limpide, clair",
           "pl": "jasny, przejrzysty"
-        }
+        },
+        "koHanja": "명백(明白)·투명(透明)"
       },
       {
         "word": "minh chứng",
@@ -4771,7 +5105,8 @@
           "de": "Beweis, Beleg",
           "fr": "preuve, témoignage",
           "pl": "dowód, świadectwo"
-        }
+        },
+        "koHanja": "명증(明證)·증거(證據)"
       },
       {
         "word": "minh oan",
@@ -4784,7 +5119,8 @@
           "de": "Rehabilitation, Unschuld beweisen",
           "fr": "innocenter, réhabiliter",
           "pl": "oczyszczenie z zarzutów"
-        }
+        },
+        "koHanja": "누명(陋名)을 벗음"
       },
       {
         "word": "minh họa",
@@ -4797,7 +5133,8 @@
           "de": "Illustration, anschaulich machen",
           "fr": "illustration, illustrer",
           "pl": "ilustracja, przykład"
-        }
+        },
+        "koHanja": "삽화(揷畫)·예시(例示)"
       },
       {
         "word": "minh triết",
@@ -4810,7 +5147,8 @@
           "de": "Weisheit, Urteilskraft",
           "fr": "sagesse, clairvoyance",
           "pl": "mądrość, roztropność"
-        }
+        },
+        "koHanja": "명철(明哲)함·지혜(智慧)"
       },
       {
         "word": "văn minh",
@@ -4823,7 +5161,8 @@
           "de": "Zivilisation",
           "fr": "civilisation",
           "pl": "cywilizacja"
-        }
+        },
+        "koHanja": "문명(文明)"
       }
     ]
   },
@@ -4842,7 +5181,8 @@
           "de": "bildende Kunst",
           "fr": "beaux-arts",
           "pl": "sztuki piękne"
-        }
+        },
+        "koHanja": "미술(美術)"
       },
       {
         "word": "mỹ phẩm",
@@ -4855,7 +5195,8 @@
           "de": "Kosmetik, Schönheitspflege",
           "fr": "cosmétique, produits de beauté",
           "pl": "kosmetyki"
-        }
+        },
+        "koHanja": "화장품(化粧品)"
       },
       {
         "word": "mỹ nhân",
@@ -4868,7 +5209,8 @@
           "de": "Schönheit, schöne Frau",
           "fr": "beauté, belle femme",
           "pl": "piękność, piękna kobieta"
-        }
+        },
+        "koHanja": "미인(美人)"
       },
       {
         "word": "mỹ mãn",
@@ -4881,7 +5223,8 @@
           "de": "vollkommen zufriedenstellend",
           "fr": "parfaitement satisfaisant, comblé",
           "pl": "w pełni zadowalający"
-        }
+        },
+        "koHanja": "만족(滿足)스러움·원만(圓滿)함"
       },
       {
         "word": "mỹ cảm",
@@ -4894,7 +5237,8 @@
           "de": "Schönheitssinn, Ästhetik",
           "fr": "sens esthétique",
           "pl": "zmysł estetyczny"
-        }
+        },
+        "koHanja": "미감(美感)"
       }
     ]
   },
@@ -4913,7 +5257,8 @@
           "de": "Bank",
           "fr": "banque",
           "pl": "bank"
-        }
+        },
+        "koHanja": "은행(銀行)"
       },
       {
         "word": "ngân sách",
@@ -4926,7 +5271,8 @@
           "de": "Haushalt, Budget",
           "fr": "budget",
           "pl": "budżet"
-        }
+        },
+        "koHanja": "예산(豫算)"
       },
       {
         "word": "ngân khố",
@@ -4939,7 +5285,8 @@
           "de": "Staatskasse, Fiskus",
           "fr": "trésor public",
           "pl": "skarb państwa"
-        }
+        },
+        "koHanja": "국고(國庫)"
       },
       {
         "word": "ngân phiếu",
@@ -4952,7 +5299,8 @@
           "de": "Bankscheck, Scheck",
           "fr": "chèque bancaire",
           "pl": "czek bankowy"
-        }
+        },
+        "koHanja": "수표(手票)"
       },
       {
         "word": "ngân quỹ",
@@ -4965,7 +5313,8 @@
           "de": "Kassenbestand, Geldmittel",
           "fr": "fonds, trésorerie",
           "pl": "fundusz, kapitał"
-        }
+        },
+        "koHanja": "기금(基金)·자금(資金)"
       }
     ]
   },
@@ -4984,7 +5333,8 @@
           "de": "Diplomatie",
           "fr": "diplomatie",
           "pl": "dyplomacja"
-        }
+        },
+        "koHanja": "외교(外交)"
       },
       {
         "word": "ngoại ngữ",
@@ -4997,7 +5347,8 @@
           "de": "Fremdsprache",
           "fr": "langue étrangère",
           "pl": "język obcy"
-        }
+        },
+        "koHanja": "외국어(外國語)"
       },
       {
         "word": "ngoại tệ",
@@ -5010,7 +5361,8 @@
           "de": "Devisen, Fremdwährung",
           "fr": "devise étrangère",
           "pl": "waluta obca"
-        }
+        },
+        "koHanja": "외화(外幣)"
       },
       {
         "word": "ngoại quốc",
@@ -5023,7 +5375,8 @@
           "de": "Ausland, fremdes Land",
           "fr": "pays étranger, étranger",
           "pl": "zagranica, obcy kraj"
-        }
+        },
+        "koHanja": "외국(外國)"
       },
       {
         "word": "ngoại hình",
@@ -5036,7 +5389,8 @@
           "de": "Aussehen, äußere Erscheinung",
           "fr": "apparence physique, aspect extérieur",
           "pl": "chirurgia"
-        }
+        },
+        "koHanja": "외모(外形)"
       },
       {
         "word": "ngoại ô",
@@ -5049,7 +5403,8 @@
           "de": "Vorort, Stadtrand",
           "fr": "banlieue, périphérie",
           "pl": "wygląd zewnętrzny"
-        }
+        },
+        "koHanja": "외곽(外廓)·교외(郊外)"
       }
     ]
   },
@@ -5068,7 +5423,8 @@
           "de": "Ursache, Anlass",
           "fr": "cause, raison",
           "pl": "zasada, reguła"
-        }
+        },
+        "koHanja": "원인(原因)"
       },
       {
         "word": "nguyên tắc",
@@ -5081,7 +5437,8 @@
           "de": "Prinzip, Grundsatz",
           "fr": "principe, règle",
           "pl": "przyczyna, powód"
-        }
+        },
+        "koHanja": "원칙(原則)"
       },
       {
         "word": "nguyên liệu",
@@ -5094,7 +5451,8 @@
           "de": "Rohstoff, Rohmaterial",
           "fr": "matière première",
           "pl": "surowiec"
-        }
+        },
+        "koHanja": "원료(原料)"
       },
       {
         "word": "nguyên tử",
@@ -5107,7 +5465,8 @@
           "de": "Atom",
           "fr": "atome",
           "pl": "atom"
-        }
+        },
+        "koHanja": "원자(原子)"
       },
       {
         "word": "nguyên vẹn",
@@ -5133,7 +5492,8 @@
           "de": "ursprünglich, urzeitlich",
           "fr": "primitif, originel",
           "pl": "głowa państwa"
-        }
+        },
+        "koHanja": "원시(原始)"
       },
       {
         "word": "nguyên tố",
@@ -5146,7 +5506,8 @@
           "de": "chemisches Element",
           "fr": "élément chimique",
           "pl": "pierwiastek chemiczny"
-        }
+        },
+        "koHanja": "원소(元素)"
       }
     ]
   },
@@ -5165,7 +5526,8 @@
           "de": "Volk, Bevölkerung",
           "fr": "peuple",
           "pl": "lud"
-        }
+        },
+        "koHanja": "인민(人民)"
       },
       {
         "word": "nhân viên",
@@ -5178,7 +5540,8 @@
           "de": "Mitarbeiter, Angestellter",
           "fr": "employé, personnel",
           "pl": "pracownik, personel"
-        }
+        },
+        "koHanja": "직원(職員)"
       },
       {
         "word": "nhân vật",
@@ -5191,7 +5554,8 @@
           "de": "Persönlichkeit, Figur",
           "fr": "personnage, personnalité",
           "pl": "postać, osobistość"
-        }
+        },
+        "koHanja": "인물(人物)"
       },
       {
         "word": "nhân loại",
@@ -5204,7 +5568,8 @@
           "de": "Menschheit",
           "fr": "humanité, genre humain",
           "pl": "ludzkość"
-        }
+        },
+        "koHanja": "인류(人類)"
       },
       {
         "word": "nhân cách",
@@ -5217,7 +5582,8 @@
           "de": "Persönlichkeit, Charakter",
           "fr": "personnalité, dignité morale",
           "pl": "osobowość, charakter"
-        }
+        },
+        "koHanja": "인격(人格)"
       },
       {
         "word": "nhân quyền",
@@ -5230,7 +5596,8 @@
           "de": "Menschenrechte",
           "fr": "droits de l'homme",
           "pl": "prawa człowieka"
-        }
+        },
+        "koHanja": "인권(人權)"
       },
       {
         "word": "nhân duyên",
@@ -5243,7 +5610,8 @@
           "de": "Schicksalsverbindung, Fügung",
           "fr": "affinité prédestinée, lien du destin",
           "pl": "przeznaczenie, więź losu"
-        }
+        },
+        "koHanja": "인연(因緣)"
       },
       {
         "word": "nhân đạo",
@@ -5256,7 +5624,8 @@
           "de": "humanitär, menschenfreundlich",
           "fr": "humanitaire, humain",
           "pl": "humanitarny"
-        }
+        },
+        "koHanja": "인도적(人道的)"
       },
       {
         "word": "nhân tài",
@@ -5269,7 +5638,8 @@
           "de": "Fachkraft, Talent",
           "fr": "talent, personne compétente",
           "pl": "talent, uzdolniona osoba"
-        }
+        },
+        "koHanja": "인재(人才)"
       },
       {
         "word": "nhân công",
@@ -5282,7 +5652,8 @@
           "de": "Arbeitskraft, Personalkosten",
           "fr": "main-d'œuvre, coût de travail",
           "pl": "siła robocza, koszty pracy"
-        }
+        },
+        "koHanja": "인건비(人件費)·노동력(勞動力)"
       }
     ]
   },
@@ -5301,7 +5672,8 @@
           "de": "Gesetz, Rechtsordnung",
           "fr": "loi, législation",
           "pl": "prawo, kodeks"
-        }
+        },
+        "koHanja": "법률(法律)"
       },
       {
         "word": "pháp lý",
@@ -5314,7 +5686,8 @@
           "de": "Rechtslehre, juristisch",
           "fr": "juridique, droit",
           "pl": "prawny, zasada prawa"
-        }
+        },
+        "koHanja": "법리(法理)·법적(法的)"
       },
       {
         "word": "pháp y",
@@ -5327,7 +5700,8 @@
           "de": "Rechtsmedizin",
           "fr": "médecine légale",
           "pl": "medycyna sądowa"
-        }
+        },
+        "koHanja": "법의학(法醫學)"
       },
       {
         "word": "pháp quyền",
@@ -5340,7 +5714,8 @@
           "de": "Rechtsordnung, Rechtsstaatlichkeit",
           "fr": "État de droit, autorité de la loi",
           "pl": "państwo prawa, praworządność"
-        }
+        },
+        "koHanja": "법권(法權)·법치(法治)"
       },
       {
         "word": "pháp chế",
@@ -5353,7 +5728,8 @@
           "de": "Gesetzgebung, Rechtsordnung",
           "fr": "régime juridique, législation",
           "pl": "porządek prawny, prawodawstwo"
-        }
+        },
+        "koHanja": "법제(法制)"
       }
     ]
   },
@@ -5372,7 +5748,8 @@
           "de": "Entwicklung, entfalten",
           "fr": "développement, développer",
           "pl": "rozwój, postęp"
-        }
+        },
+        "koHanja": "발전(發展)"
       },
       {
         "word": "phát biểu",
@@ -5385,7 +5762,8 @@
           "de": "Redebeitrag, Äußerung, vortragen",
           "fr": "prendre la parole, discours",
           "pl": "wystąpienie, oświadczenie"
-        }
+        },
+        "koHanja": "발표(發表)·발언(發言)"
       },
       {
         "word": "phát hiện",
@@ -5398,7 +5776,8 @@
           "de": "Entdeckung, entdecken",
           "fr": "découverte, découvrir",
           "pl": "odkrycie"
-        }
+        },
+        "koHanja": "발견(發見)"
       },
       {
         "word": "phát minh",
@@ -5411,7 +5790,8 @@
           "de": "Erfindung, erfinden",
           "fr": "invention, inventer",
           "pl": "wynalazek"
-        }
+        },
+        "koHanja": "발명(發明)"
       },
       {
         "word": "phát sinh",
@@ -5424,7 +5804,8 @@
           "de": "Entstehung, auftreten",
           "fr": "survenir, se produire",
           "pl": "powstanie, wystąpienie"
-        }
+        },
+        "koHanja": "발생(發生)"
       },
       {
         "word": "phát hành",
@@ -5437,7 +5818,8 @@
           "de": "Herausgabe, Veröffentlichung",
           "fr": "publication, émission, diffusion",
           "pl": "publikacja, emisja"
-        }
+        },
+        "koHanja": "발행(發行)"
       },
       {
         "word": "phát âm",
@@ -5450,7 +5832,8 @@
           "de": "Aussprache",
           "fr": "prononciation",
           "pl": "wymowa"
-        }
+        },
+        "koHanja": "발음(發音)"
       }
     ]
   },
@@ -5469,7 +5852,8 @@
           "de": "Stil, Fasson",
           "fr": "style, allure",
           "pl": "styl, prezencja"
-        }
+        },
+        "koHanja": "스타일·풍격(風格)"
       },
       {
         "word": "phong tục",
@@ -5482,7 +5866,8 @@
           "de": "Brauch, Sitte",
           "fr": "coutume, mœurs",
           "pl": "zwyczaje, obyczaje"
-        }
+        },
+        "koHanja": "풍속(風俗)"
       },
       {
         "word": "phong trào",
@@ -5495,7 +5880,8 @@
           "de": "Bewegung, Strömung",
           "fr": "mouvement, courant",
           "pl": "ruch społeczny, nurt"
-        }
+        },
+        "koHanja": "운동(運動)·풍조(風潮)"
       },
       {
         "word": "phong phú",
@@ -5508,7 +5894,8 @@
           "de": "reichhaltig, vielfältig",
           "fr": "riche, abondant, varié",
           "pl": "bogaty, obfity"
-        }
+        },
+        "koHanja": "풍부(豐富)"
       },
       {
         "word": "phong cảnh",
@@ -5521,7 +5908,8 @@
           "de": "Landschaft, Szenerie",
           "fr": "paysage",
           "pl": "krajobraz"
-        }
+        },
+        "koHanja": "풍경(風景)"
       },
       {
         "word": "phong ba",
@@ -5534,7 +5922,8 @@
           "de": "Sturm, Fährnisse, Wirren",
           "fr": "tempête, vicissitudes",
           "pl": "wichura, burza"
-        }
+        },
+        "koHanja": "풍파(風波)"
       },
       {
         "word": "phong kiến",
@@ -5547,7 +5936,8 @@
           "de": "feudal, Feudalismus",
           "fr": "féodal, féodalité",
           "pl": "feudalny, feudalizm"
-        }
+        },
+        "koHanja": "봉건(封建)"
       }
     ]
   },
@@ -5566,7 +5956,8 @@
           "de": "Methode, Verfahren",
           "fr": "méthode, procédé",
           "pl": "metoda"
-        }
+        },
+        "koHanja": "방법(方法)"
       },
       {
         "word": "phương tiện",
@@ -5579,7 +5970,8 @@
           "de": "Mittel, Verkehrsmittel, Werkzeug",
           "fr": "moyen, véhicule, instrument",
           "pl": "środek, narzędzie"
-        }
+        },
+        "koHanja": "수단(手段)·도구(道具)"
       },
       {
         "word": "phương hướng",
@@ -5592,7 +5984,8 @@
           "de": "Richtung, Orientierung",
           "fr": "direction, orientation",
           "pl": "kierunek"
-        }
+        },
+        "koHanja": "방향(方向)"
       },
       {
         "word": "phương án",
@@ -5605,7 +5998,8 @@
           "de": "Entwurf, Konzept, Plan",
           "fr": "plan, proposition, projet",
           "pl": "plan, projekt"
-        }
+        },
+        "koHanja": "방안(方案)"
       },
       {
         "word": "phương diện",
@@ -5618,7 +6012,8 @@
           "de": "Hinsicht, Aspekt, Seite",
           "fr": "aspect, domaine, point de vue",
           "pl": "aspekt, dziedzina"
-        }
+        },
+        "koHanja": "방면(方面)·측면(側面)"
       },
       {
         "word": "phương thức",
@@ -5631,7 +6026,8 @@
           "de": "Art und Weise, Methode",
           "fr": "mode, méthode, modalité",
           "pl": "sposób, metoda"
-        }
+        },
+        "koHanja": "방식(方式)"
       }
     ]
   },
@@ -5650,7 +6046,8 @@
           "de": "Beziehung, Verhältnis",
           "fr": "relation, rapport",
           "pl": "relacja, stosunek"
-        }
+        },
+        "koHanja": "관계(關係)"
       },
       {
         "word": "quan điểm",
@@ -5663,7 +6060,8 @@
           "de": "Standpunkt, Ansicht",
           "fr": "point de vue, opinion",
           "pl": "punkt widzenia"
-        }
+        },
+        "koHanja": "관점(觀點)"
       },
       {
         "word": "quan tâm",
@@ -5676,7 +6074,8 @@
           "de": "Interesse, Aufmerksamkeit",
           "fr": "s'intéresser, attention, sollicitude",
           "pl": "zainteresowanie, uwaga"
-        }
+        },
+        "koHanja": "관심(關心)"
       },
       {
         "word": "quan trọng",
@@ -5689,7 +6088,8 @@
           "de": "wichtig, bedeutend",
           "fr": "important, primordial",
           "pl": "ważny"
-        }
+        },
+        "koHanja": "중요(重要)"
       },
       {
         "word": "quan sát",
@@ -5702,7 +6102,8 @@
           "de": "Beobachtung, beobachten",
           "fr": "observation, observer",
           "pl": "obserwacja"
-        }
+        },
+        "koHanja": "관찰(觀察)"
       },
       {
         "word": "quan chức",
@@ -5715,7 +6116,8 @@
           "de": "Beamter, Regierungsbeamter",
           "fr": "fonctionnaire, haut responsable",
           "pl": "wysoki urzędnik"
-        }
+        },
+        "koHanja": "관료(官職)·공직자(公職者)"
       }
     ]
   },
@@ -5734,7 +6136,8 @@
           "de": "Nation, Staat",
           "fr": "pays, nation, État",
           "pl": "naród, państwo"
-        }
+        },
+        "koHanja": "국가(國家)"
       },
       {
         "word": "quốc tế",
@@ -5747,7 +6150,8 @@
           "de": "international",
           "fr": "international",
           "pl": "międzynarodowy"
-        }
+        },
+        "koHanja": "국제(國際)"
       },
       {
         "word": "quốc hội",
@@ -5760,7 +6164,8 @@
           "de": "Nationalversammlung, Parlament",
           "fr": "Assemblée nationale, parlement",
           "pl": "Zgromadzenie Narodowe, parlament"
-        }
+        },
+        "koHanja": "국회(國會)"
       },
       {
         "word": "quốc phòng",
@@ -5773,7 +6178,8 @@
           "de": "Landesverteidigung",
           "fr": "défense nationale",
           "pl": "obrona narodowa"
-        }
+        },
+        "koHanja": "국방(國防)"
       },
       {
         "word": "quốc ca",
@@ -5786,7 +6192,8 @@
           "de": "Nationalhymne",
           "fr": "hymne national",
           "pl": "hymn narodowy"
-        }
+        },
+        "koHanja": "국가(國歌, 애국가)"
       },
       {
         "word": "quốc kỳ",
@@ -5799,7 +6206,8 @@
           "de": "Nationalflagge",
           "fr": "drapeau national",
           "pl": "flaga narodowa"
-        }
+        },
+        "koHanja": "국기(國旗)"
       },
       {
         "word": "quốc tịch",
@@ -5812,7 +6220,8 @@
           "de": "Staatsangehörigkeit, Staatsbürgerschaft",
           "fr": "nationalité",
           "pl": "obywatelstwo"
-        }
+        },
+        "koHanja": "국적(國籍)"
       }
     ]
   },
@@ -5831,7 +6240,8 @@
           "de": "Rechte, Anspruch",
           "fr": "droits, intérêts, prérogatives",
           "pl": "prawa, uprawnienia"
-        }
+        },
+        "koHanja": "권리(權利)"
       },
       {
         "word": "quyền lực",
@@ -5844,7 +6254,8 @@
           "de": "Macht, Gewalt",
           "fr": "pouvoir, puissance",
           "pl": "władza, potęga"
-        }
+        },
+        "koHanja": "권력(權力)"
       },
       {
         "word": "quyền hạn",
@@ -5857,7 +6268,8 @@
           "de": "Befugnis, Kompetenz",
           "fr": "compétence, autorité, attributions",
           "pl": "kompetencja, uprawnienia"
-        }
+        },
+        "koHanja": "권한(權限)"
       },
       {
         "word": "quyền uy",
@@ -5870,7 +6282,8 @@
           "de": "Autorität, Machtbefugnis",
           "fr": "autorité, prestige",
           "pl": "autorytet, prestiż"
-        }
+        },
+        "koHanja": "권위(權威)"
       },
       {
         "word": "quyền hành",
@@ -5883,7 +6296,8 @@
           "de": "Amtsbefugnis, Vollmacht",
           "fr": "pouvoir exécutif, autorité légale",
           "pl": "władza wykonawcza, jurysdykcja"
-        }
+        },
+        "koHanja": "권한(權衡)·직권(職權)"
       }
     ]
   },
@@ -5902,7 +6316,8 @@
           "de": "Schöpfung, Kreativität",
           "fr": "création, créativité",
           "pl": "tworzenie, kreacja"
-        }
+        },
+        "koHanja": "창조(創造)"
       },
       {
         "word": "sáng tác",
@@ -5915,7 +6330,8 @@
           "de": "künstlerisches Schaffen, Werk",
           "fr": "créer, œuvre artistique, composer",
           "pl": "twórczość artystyczna"
-        }
+        },
+        "koHanja": "창작(創作)"
       },
       {
         "word": "sáng kiến",
@@ -5928,7 +6344,8 @@
           "de": "Initiative, Einfall, Idee",
           "fr": "initiative, idée originale",
           "pl": "inicjatywa, pomysł"
-        }
+        },
+        "koHanja": "발상(發想)·아이디어"
       },
       {
         "word": "sáng lập",
@@ -5941,7 +6358,8 @@
           "de": "Gründung, ins Leben rufen",
           "fr": "fonder, créer, établissement",
           "pl": "założenie, utworzenie"
-        }
+        },
+        "koHanja": "창립(創立)"
       },
       {
         "word": "sáng suốt",
@@ -5954,7 +6372,8 @@
           "de": "scharfsinnig, weise, besonnen",
           "fr": "perspicace, clairvoyant, lucide",
           "pl": "mądry, przenikliwy"
-        }
+        },
+        "koHanja": "현명(賢明)함"
       },
       {
         "word": "sáng chế",
@@ -5967,7 +6386,8 @@
           "de": "Erfindung, Patent",
           "fr": "invention, brevet",
           "pl": "wynalazek, patent"
-        }
+        },
+        "koHanja": "발명(發明)·특허(特許)"
       }
     ]
   },
@@ -5986,7 +6406,8 @@
           "de": "Student, Studentin",
           "fr": "étudiant, étudiante",
           "pl": "student"
-        }
+        },
+        "koHanja": "대학생(大學生)"
       },
       {
         "word": "sinh nhật",
@@ -5999,7 +6420,8 @@
           "de": "Geburtstag",
           "fr": "anniversaire",
           "pl": "urodziny"
-        }
+        },
+        "koHanja": "생일(生日)"
       },
       {
         "word": "sinh hoạt",
@@ -6012,7 +6434,8 @@
           "de": "Alltag, Lebensweise, Aktivität",
           "fr": "vie quotidienne, activités",
           "pl": "życie codzienne, zajęcia"
-        }
+        },
+        "koHanja": "생활(生活)"
       },
       {
         "word": "sinh vật",
@@ -6025,7 +6448,8 @@
           "de": "Lebewesen, Organismus",
           "fr": "être vivant, organisme",
           "pl": "istota żywa, organizm"
-        }
+        },
+        "koHanja": "생물(生物)"
       },
       {
         "word": "sinh động",
@@ -6038,7 +6462,8 @@
           "de": "lebendig, anschaulich",
           "fr": "vivant, animé",
           "pl": "pełen życia, żywy"
-        }
+        },
+        "koHanja": "생동감(生動感)"
       },
       {
         "word": "sinh mệnh",
@@ -6051,7 +6476,8 @@
           "de": "Leben, Existenz",
           "fr": "vie, existence",
           "pl": "życie"
-        }
+        },
+        "koHanja": "생명(生命)"
       },
       {
         "word": "sinh sản",
@@ -6064,7 +6490,8 @@
           "de": "Fortpflanzung, Vermehrung",
           "fr": "reproduction, procréation",
           "pl": "rozmnażanie, reprodukcja"
-        }
+        },
+        "koHanja": "생산(生產)·번식(繁殖)"
       },
       {
         "word": "học sinh",
@@ -6077,7 +6504,8 @@
           "de": "Schüler, Schülerin",
           "fr": "élève, écolier",
           "pl": "uczeń"
-        }
+        },
+        "koHanja": "학생(學生)"
       }
     ]
   },
@@ -6096,7 +6524,8 @@
           "de": "Ereignis, Vorfall, Event",
           "fr": "événement, incident",
           "pl": "wydarzenie, incydent"
-        }
+        },
+        "koHanja": "사건(事件)"
       },
       {
         "word": "sự thật",
@@ -6109,7 +6538,8 @@
           "de": "Wahrheit, Tatsache, Fakt",
           "fr": "vérité, fait, réalité",
           "pl": "prawda, fakt"
-        }
+        },
+        "koHanja": "사실(事實)"
       },
       {
         "word": "sự nghiệp",
@@ -6122,7 +6552,8 @@
           "de": "Karriere, Lebenswerk",
           "fr": "carrière, œuvre de vie",
           "pl": "kariera, dorobek życiowy"
-        }
+        },
+        "koHanja": "사업(事業)·경력(經歷)"
       },
       {
         "word": "sự cố",
@@ -6135,7 +6566,8 @@
           "de": "Störung, Zwischenfall, Panne",
           "fr": "incident, panne, problème",
           "pl": "awaria, usterka"
-        }
+        },
+        "koHanja": "사고(事故)·문제(問題)"
       },
       {
         "word": "sự việc",
@@ -6148,7 +6580,8 @@
           "de": "Vorfall, Sachverhalt, Angelegenheit",
           "fr": "affaire, fait, événement",
           "pl": "sprawa, zdarzenie"
-        }
+        },
+        "koHanja": "사건(事件)·일"
       },
       {
         "word": "sự thể",
@@ -6161,7 +6594,8 @@
           "de": "Sachlage, Umstände",
           "fr": "situation, état des choses",
           "pl": "stan rzeczy, sytuacja"
-        }
+        },
+        "koHanja": "사태(事態)·형편(形便)"
       }
     ]
   },
@@ -6180,7 +6614,8 @@
           "de": "Autor, Verfasser",
           "fr": "auteur",
           "pl": "autor"
-        }
+        },
+        "koHanja": "작가(作家)"
       },
       {
         "word": "tác phẩm",
@@ -6193,7 +6628,8 @@
           "de": "Kunstwerk, Werk",
           "fr": "œuvre (d'art)",
           "pl": "dzieło sztuki"
-        }
+        },
+        "koHanja": "작품(作品)"
       },
       {
         "word": "tác dụng",
@@ -6206,7 +6642,8 @@
           "de": "Wirkung, Effekt",
           "fr": "effet, action, utilité",
           "pl": "działanie, efekt"
-        }
+        },
+        "koHanja": "작용(作用)·효과(效果)"
       },
       {
         "word": "tác động",
@@ -6219,7 +6656,8 @@
           "de": "Einwirkung, Einfluss",
           "fr": "impact, influence, effet",
           "pl": "wpływ, oddziaływanie"
-        }
+        },
+        "koHanja": "영향(影響)·작용(作用)"
       },
       {
         "word": "tác chiến",
@@ -6232,7 +6670,8 @@
           "de": "Operation, Gefecht",
           "fr": "combat, opération militaire",
           "pl": "działania bojowe, operacja"
-        }
+        },
+        "koHanja": "작전(作戰)"
       },
       {
         "word": "tác phong",
@@ -6245,7 +6684,8 @@
           "de": "Arbeitsweise, Auftreten",
           "fr": "style de travail, allure, tenue",
           "pl": "styl pracy, postawa"
-        }
+        },
+        "koHanja": "태도(態度)·기풍(氣風)"
       }
     ]
   },
@@ -6264,7 +6704,8 @@
           "de": "Finanzen, Finanzwesen",
           "fr": "finances",
           "pl": "finanse"
-        }
+        },
+        "koHanja": "재정(財政)·금융(金融)"
       },
       {
         "word": "tài năng",
@@ -6277,7 +6718,8 @@
           "de": "Talent, Begabung",
           "fr": "talent, don",
           "pl": "talent, dar"
-        }
+        },
+        "koHanja": "재능(才能)"
       },
       {
         "word": "tài sản",
@@ -6290,7 +6732,8 @@
           "de": "Vermögen, Eigentum",
           "fr": "patrimoine, biens, propriété",
           "pl": "majątek, własność"
-        }
+        },
+        "koHanja": "재산(財產)"
       },
       {
         "word": "tài liệu",
@@ -6303,7 +6746,8 @@
           "de": "Unterlagen, Material, Dokument",
           "fr": "document, données, documentation",
           "pl": "dokumentacja, materiały"
-        }
+        },
+        "koHanja": "자료(材料)"
       },
       {
         "word": "tài trợ",
@@ -6316,7 +6760,8 @@
           "de": "Sponsoring, finanzielle Unterstützung",
           "fr": "subventionner, sponsoriser, parrainage",
           "pl": "sponsorowanie, wsparcie"
-        }
+        },
+        "koHanja": "후원(後援)·지원(支援)"
       },
       {
         "word": "tài nguyên",
@@ -6329,7 +6774,8 @@
           "de": "Ressourcen, Bodenschätze",
           "fr": "ressources",
           "pl": "zasoby"
-        }
+        },
+        "koHanja": "자원(自願)"
       }
     ]
   },
@@ -6348,7 +6794,8 @@
           "de": "Psychologie, Seelenleben",
           "fr": "psychologie, état d'esprit",
           "pl": "psychologia, stan umysłu"
-        }
+        },
+        "koHanja": "심리(心理)"
       },
       {
         "word": "tâm trạng",
@@ -6361,7 +6808,8 @@
           "de": "Gemütszustand, Stimmung",
           "fr": "humeur, état d'âme",
           "pl": "nastrój, usposobienie"
-        }
+        },
+        "koHanja": "심정(心狀)·기분(氣分)"
       },
       {
         "word": "tâm hồn",
@@ -6374,7 +6822,8 @@
           "de": "Seele, Gemüt",
           "fr": "âme, esprit",
           "pl": "dusza, umysł"
-        }
+        },
+        "koHanja": "마음·영혼(靈魂)"
       },
       {
         "word": "tâm sự",
@@ -6387,7 +6836,8 @@
           "de": "Herzensgedanken, Sorgen anvertrauen",
           "fr": "confidences, confier ses pensées",
           "pl": "zwierzenia, intymne myśli"
-        }
+        },
+        "koHanja": "속마음·고민(苦悶)토로(吐露)"
       },
       {
         "word": "tâm huyết",
@@ -6400,7 +6850,8 @@
           "de": "Herzblut, Hingabe",
           "fr": "dévouement, cœur à l'ouvrage",
           "pl": "serce włożone w pracę, poświęcenie"
-        }
+        },
+        "koHanja": "심혈(心血)"
       },
       {
         "word": "tâm linh",
@@ -6413,7 +6864,8 @@
           "de": "Spiritualität, seelisch",
           "fr": "spirituel, spiritualité",
           "pl": "duchowy, duchowość"
-        }
+        },
+        "koHanja": "심령(心靈)"
       },
       {
         "word": "tâm đắc",
@@ -6426,7 +6878,8 @@
           "de": "begeistert, verinnerlicht",
           "fr": "satisfait, intime conviction",
           "pl": "zadowolony, przekonany"
-        }
+        },
+        "koHanja": "마음에 듦·터득(攄得)함"
       },
       {
         "word": "tâm tính",
@@ -6439,7 +6892,8 @@
           "de": "Gemüt, Wesensart",
           "fr": "caractère, tempérament",
           "pl": "charakter, usposobienie"
-        }
+        },
+        "koHanja": "심성(心性)·성격(性格)"
       }
     ]
   },
@@ -6458,7 +6912,8 @@
           "de": "Konzentration, fokussieren",
           "fr": "se concentrer, concentration",
           "pl": "skupienie, koncentracja"
-        }
+        },
+        "koHanja": "집중(集中)"
       },
       {
         "word": "tập thể",
@@ -6471,7 +6926,8 @@
           "de": "Kollektiv, Gruppe",
           "fr": "collectif, groupe",
           "pl": "zbiorowość, grupa"
-        }
+        },
+        "koHanja": "집단(集團)·단체(團體)"
       },
       {
         "word": "tập quán",
@@ -6484,7 +6940,8 @@
           "de": "Gewohnheit, Brauch",
           "fr": "coutume, habitude",
           "pl": "zwyczaj, nawyk"
-        }
+        },
+        "koHanja": "습관(習慣)·관습(慣習)"
       },
       {
         "word": "tập luyện",
@@ -6497,7 +6954,8 @@
           "de": "Training, Übung",
           "fr": "entraînement, s'exercer",
           "pl": "trening, ćwiczenia"
-        }
+        },
+        "koHanja": "훈련(訓練)·연습(練習)"
       },
       {
         "word": "tập đoàn",
@@ -6510,7 +6968,8 @@
           "de": "Konzern, Unternehmensgruppe",
           "fr": "groupe, conglomérat",
           "pl": "grupa kapitałowa, koncern"
-        }
+        },
+        "koHanja": "그룹·기업집단(企業集團)"
       },
       {
         "word": "học tập",
@@ -6523,7 +6982,8 @@
           "de": "Lernen, Studium",
           "fr": "étudier, apprentissage",
           "pl": "nauka, studiowanie"
-        }
+        },
+        "koHanja": "학습(學習)"
       }
     ]
   },
@@ -6542,7 +7002,8 @@
           "de": "Erfolg",
           "fr": "succès, réussite",
           "pl": "sukces"
-        }
+        },
+        "koHanja": "성공(成功)"
       },
       {
         "word": "thành phố",
@@ -6555,7 +7016,8 @@
           "de": "Stadt, Großstadt",
           "fr": "ville",
           "pl": "miasto"
-        }
+        },
+        "koHanja": "도시(城鋪)"
       },
       {
         "word": "thành viên",
@@ -6568,7 +7030,8 @@
           "de": "Mitglied",
           "fr": "membre",
           "pl": "członek"
-        }
+        },
+        "koHanja": "구성원(構成員)"
       },
       {
         "word": "thành tích",
@@ -6581,7 +7044,8 @@
           "de": "Leistung, Errungenschaft",
           "fr": "résultats, accomplissement, performance",
           "pl": "osiągnięcia, wyniki"
-        }
+        },
+        "koHanja": "성적(成績)·업적(業績)"
       },
       {
         "word": "thành lập",
@@ -6594,7 +7058,8 @@
           "de": "Gründung, Errichtung",
           "fr": "fonder, créer, établissement",
           "pl": "założenie, utworzenie"
-        }
+        },
+        "koHanja": "설립(設立)"
       },
       {
         "word": "thành thật",
@@ -6607,7 +7072,8 @@
           "de": "ehrlich, aufrichtig",
           "fr": "sincère, honnête",
           "pl": "szczerość, uczciwość"
-        }
+        },
+        "koHanja": "성실(誠實)함"
       },
       {
         "word": "thành thạo",
@@ -6620,7 +7086,8 @@
           "de": "versiert, meisterhaft, routiniert",
           "fr": "compétent, maîtriser, chevronné",
           "pl": "biegły, wprawny"
-        }
+        },
+        "koHanja": "숙달(熟達)됨"
       },
       {
         "word": "chân thành",
@@ -6633,7 +7100,8 @@
           "de": "aufrichtig, herzlich",
           "fr": "sincère, du fond du cœur",
           "pl": "szczery, z głębi serca"
-        }
+        },
+        "koHanja": "진심(眞心) 어림"
       }
     ]
   },
@@ -6652,7 +7120,8 @@
           "de": "Welt",
           "fr": "monde",
           "pl": "świat"
-        }
+        },
+        "koHanja": "세계(世界)"
       },
       {
         "word": "thế kỷ",
@@ -6665,7 +7134,8 @@
           "de": "Jahrhundert",
           "fr": "siècle",
           "pl": "stulecie, wiek"
-        }
+        },
+        "koHanja": "세기(世紀)"
       },
       {
         "word": "thế hệ",
@@ -6678,7 +7148,8 @@
           "de": "Generation",
           "fr": "génération",
           "pl": "pokolenie"
-        }
+        },
+        "koHanja": "세대(世系)"
       },
       {
         "word": "thế lực",
@@ -6691,7 +7162,8 @@
           "de": "Macht, Einfluss",
           "fr": "force, influence, puissance",
           "pl": "wpływ, potęga"
-        }
+        },
+        "koHanja": "세력(勢力)"
       },
       {
         "word": "thế sự",
@@ -6704,7 +7176,8 @@
           "de": "Zeitgeschehen, Weltgeschehen",
           "fr": "affaires du monde, actualité",
           "pl": "sprawy tego świata"
-        }
+        },
+        "koHanja": "세상사(世上事)·시사(時事)"
       }
     ]
   },
@@ -6723,7 +7196,8 @@
           "de": "Sport",
           "fr": "sport",
           "pl": "rynek"
-        }
+        },
+        "koHanja": "체육(體操)·스포츠"
       },
       {
         "word": "thể hiện",
@@ -6736,7 +7210,8 @@
           "de": "Ausdruck, Darstellung",
           "fr": "exprimer, manifester, refléter",
           "pl": "wzrok"
-        }
+        },
+        "koHanja": "표현(表現)·나타냄"
       },
       {
         "word": "thể chất",
@@ -6749,7 +7224,8 @@
           "de": "Konstitution, Körperbau",
           "fr": "constitution physique",
           "pl": "obszar miejski, miasto"
-        }
+        },
+        "koHanja": "체질(體質)·체격(體格)"
       },
       {
         "word": "thể loại",
@@ -6762,7 +7238,8 @@
           "de": "Genre, Gattung",
           "fr": "genre, catégorie",
           "pl": "rynek miejski, rynek zbytu"
-        }
+        },
+        "koHanja": "장르·종류(種類)"
       },
       {
         "word": "thể lực",
@@ -6775,7 +7252,8 @@
           "de": "physische Kraft, Ausdauer",
           "fr": "force physique, endurance",
           "pl": "upodobanie, gust"
-        }
+        },
+        "koHanja": "체력(體力)"
       },
       {
         "word": "thể chế",
@@ -6788,7 +7266,8 @@
           "de": "System, Staatsform, Ordnung",
           "fr": "régime, institution, système politique",
           "pl": "kontrola, inspekcja"
-        }
+        },
+        "koHanja": "체제(體制)"
       }
     ]
   },
@@ -6807,7 +7286,8 @@
           "de": "Markt",
           "fr": "marché",
           "pl": "rynek"
-        }
+        },
+        "koHanja": "시장(市場)"
       },
       {
         "word": "thị trấn",
@@ -6820,7 +7300,8 @@
           "de": "Kleinstadt, Ortschaft",
           "fr": "bourg, petite ville",
           "pl": "epoka, era"
-        }
+        },
+        "koHanja": "읍(邑)·소도시(小都市)"
       },
       {
         "word": "thị xã",
@@ -6833,7 +7314,8 @@
           "de": "Kreisstadt, Kleinstadt",
           "fr": "commune urbaine, ville moyenne",
           "pl": "pogoda"
-        }
+        },
+        "koHanja": "시사(市社, 소도시)"
       },
       {
         "word": "thị lực",
@@ -6846,7 +7328,8 @@
           "de": "Sehkraft, Sehschärfe",
           "fr": "acuité visuelle, vue",
           "pl": "okres, faza"
-        }
+        },
+        "koHanja": "시력(視力)"
       },
       {
         "word": "thị giác",
@@ -6859,7 +7342,8 @@
           "de": "Sehsinn, Sehkraft",
           "fr": "vue, sens visuel",
           "pl": "moda, trend"
-        }
+        },
+        "koHanja": "시각(視覺)"
       }
     ]
   },
@@ -6878,7 +7362,8 @@
           "de": "Information, Nachricht",
           "fr": "information, nouvelles",
           "pl": "informacja"
-        }
+        },
+        "koHanja": "정보(情報)"
       },
       {
         "word": "thông báo",
@@ -6891,7 +7376,8 @@
           "de": "Mitteilung, Bekanntmachung",
           "fr": "annonce, avis, notification",
           "pl": "komunikacja, transport"
-        }
+        },
+        "koHanja": "통보(通報)·공지(公知)"
       },
       {
         "word": "thông minh",
@@ -6917,7 +7403,8 @@
           "de": "gewöhnlich, üblich, normal",
           "fr": "habituel, ordinaire, courant",
           "pl": "inteligentny, bystry"
-        }
+        },
+        "koHanja": "보통(普通)·일반적(一般的)"
       },
       {
         "word": "thông cảm",
@@ -6930,7 +7417,8 @@
           "de": "Verständnis, Einfühlungsvermögen",
           "fr": "compréhension, sympathie",
           "pl": "zwykły, powszechny"
-        }
+        },
+        "koHanja": "이해(理解)·공감(共感)"
       },
       {
         "word": "thông qua",
@@ -6943,7 +7431,8 @@
           "de": "billigen, verabschieden, passieren",
           "fr": "adopter, approuver, franchir",
           "pl": "tłumacz ustny"
-        }
+        },
+        "koHanja": "통과(通過)"
       }
     ]
   },
@@ -6962,7 +7451,8 @@
           "de": "Zeit",
           "fr": "temps",
           "pl": "stolica"
-        }
+        },
+        "koHanja": "시간(時間)"
       },
       {
         "word": "thời tiết",
@@ -7001,7 +7491,8 @@
           "de": "Tagesgeschehen, aktuelle Nachrichten",
           "fr": "actualités",
           "pl": "przywódca, wódz"
-        }
+        },
+        "koHanja": "시사(時事)"
       },
       {
         "word": "thời đại",
@@ -7014,7 +7505,8 @@
           "de": "Epoche, Zeitalter, Ära",
           "fr": "époque, ère",
           "pl": "rękodzieło"
-        }
+        },
+        "koHanja": "시대(時代)"
       },
       {
         "word": "thời cơ",
@@ -7027,7 +7519,8 @@
           "de": "Gelegenheit, günstiger Moment",
           "fr": "opportunité, occasion propice",
           "pl": "sprzyjająca okazja, szansa"
-        }
+        },
+        "koHanja": "시기(時機)·기회(機會)"
       }
     ]
   },
@@ -7046,7 +7539,8 @@
           "de": "Einkommen, Einnahmen",
           "fr": "revenu, recettes",
           "pl": "dochód, przychód"
-        }
+        },
+        "koHanja": "수입(收入)"
       },
       {
         "word": "thu hoạch",
@@ -7059,7 +7553,8 @@
           "de": "Ernte, ernten",
           "fr": "récolte, récolter",
           "pl": "zbiory, żniwa"
-        }
+        },
+        "koHanja": "수확(收穫)"
       },
       {
         "word": "thu hút",
@@ -7072,7 +7567,8 @@
           "de": "anziehen, faszinieren",
           "fr": "attirer, séduire",
           "pl": "przyciąganie, urok"
-        }
+        },
+        "koHanja": "끌어들임·매료(魅了)"
       },
       {
         "word": "thu thập",
@@ -7085,7 +7581,8 @@
           "de": "sammeln, erfassen",
           "fr": "collecter, recueillir",
           "pl": "zbieranie, gromadzenie"
-        }
+        },
+        "koHanja": "수집(收集)"
       },
       {
         "word": "thu ngân",
@@ -7098,7 +7595,8 @@
           "de": "Kassierer, Kasse",
           "fr": "caissier, caissière",
           "pl": "kasjer"
-        }
+        },
+        "koHanja": "계산원(計算員)·수납원(收納員)"
       }
     ]
   },
@@ -7117,7 +7615,8 @@
           "de": "Verfahren, Formalität",
           "fr": "procédure, formalité",
           "pl": "procedura, formalność"
-        }
+        },
+        "koHanja": "수속(手續)·절차(節次)"
       },
       {
         "word": "thủ đô",
@@ -7130,7 +7629,8 @@
           "de": "Hauptstadt",
           "fr": "capitale",
           "pl": "stolica"
-        }
+        },
+        "koHanja": "수도(首都)"
       },
       {
         "word": "thủ tướng",
@@ -7143,7 +7643,8 @@
           "de": "Premierminister, Regierungschef",
           "fr": "Premier ministre",
           "pl": "Premier"
-        }
+        },
+        "koHanja": "총리(總理)"
       },
       {
         "word": "thủ lĩnh",
@@ -7156,7 +7657,8 @@
           "de": "Anführer, Oberhaupt",
           "fr": "chef, leader",
           "pl": "przywódca, wódz"
-        }
+        },
+        "koHanja": "수령(首領)·우두머리"
       },
       {
         "word": "thủ công",
@@ -7169,7 +7671,8 @@
           "de": "Handarbeit, Handwerk",
           "fr": "artisanat, fait main",
           "pl": "rękodzieło"
-        }
+        },
+        "koHanja": "수공(手工)"
       }
     ]
   },
@@ -7188,7 +7691,8 @@
           "de": "Fortschritt, fortschrittlich",
           "fr": "progrès, progresser",
           "pl": "postęp"
-        }
+        },
+        "koHanja": "진보(進步)"
       },
       {
         "word": "tiến hành",
@@ -7201,7 +7705,8 @@
           "de": "durchführen, vornehmen",
           "fr": "procéder à, effectuer",
           "pl": "przeprowadzać, realizować"
-        }
+        },
+        "koHanja": "진행(進行)"
       },
       {
         "word": "tiến sĩ",
@@ -7214,7 +7719,8 @@
           "de": "Doktor (PhD)",
           "fr": "docteur (doctorat)",
           "pl": "doktor (nauk)"
-        }
+        },
+        "koHanja": "박사(博士)"
       },
       {
         "word": "tiến trình",
@@ -7227,7 +7733,8 @@
           "de": "Verlauf, Prozess",
           "fr": "processus, déroulement",
           "pl": "proces, przebieg"
-        }
+        },
+        "koHanja": "진행과정(進行過程)"
       },
       {
         "word": "tiến độ",
@@ -7240,7 +7747,8 @@
           "de": "Fortschrittstempo, Zeitplan",
           "fr": "rythme d'avancement, calendrier",
           "pl": "tempo postępów"
-        }
+        },
+        "koHanja": "진도(進度)"
       },
       {
         "word": "tiến triển",
@@ -7253,7 +7761,8 @@
           "de": "Entwicklung, Fortschreiten",
           "fr": "évolution, progression",
           "pl": "postęp, ewolucja"
-        }
+        },
+        "koHanja": "진전(進展)"
       }
     ]
   },
@@ -7285,7 +7794,8 @@
           "de": "Freundschaft",
           "fr": "amitié",
           "pl": "przyjaźń"
-        }
+        },
+        "koHanja": "우정(友情)"
       },
       {
         "word": "tình cảm",
@@ -7298,7 +7808,8 @@
           "de": "Gefühl, Zuneigung, Emotion",
           "fr": "sentiment, affection, émotion",
           "pl": "uczucie, sympatia"
-        }
+        },
+        "koHanja": "감정(感情)·정(情)"
       },
       {
         "word": "tình huống",
@@ -7311,7 +7822,8 @@
           "de": "Situation, Sachlage",
           "fr": "situation, circonstance",
           "pl": "sytuacja"
-        }
+        },
+        "koHanja": "상황(狀況)"
       },
       {
         "word": "tình hình",
@@ -7324,7 +7836,8 @@
           "de": "Lage, Umstände",
           "fr": "situation, état des lieux",
           "pl": "stan rzeczy, sytuacja"
-        }
+        },
+        "koHanja": "정세(情勢)·상황(狀況)"
       },
       {
         "word": "tình nguyện",
@@ -7337,7 +7850,8 @@
           "de": "freiwillig, ehrenamtlich",
           "fr": "bénévole, volontariat",
           "pl": "wolontariat, ochotnik"
-        }
+        },
+        "koHanja": "자원(自願)·자원봉사(自願奉仕)"
       },
       {
         "word": "tình nghĩa",
@@ -7350,7 +7864,8 @@
           "de": "Verbundenheit, Loyalität, Zuneigung",
           "fr": "attachement, loyauté, fidélité",
           "pl": "lojalność, przywiązanie"
-        }
+        },
+        "koHanja": "정의(情義)·의리(義理)"
       },
       {
         "word": "tình nhân",
@@ -7363,7 +7878,8 @@
           "de": "Liebhaber, Geliebte(r)",
           "fr": "amant, amoureuse",
           "pl": "ukochana, kochanek"
-        }
+        },
+        "koHanja": "연인(戀人)"
       },
       {
         "word": "cảm tình",
@@ -7376,7 +7892,8 @@
           "de": "Zuneigung, Wohlwollen",
           "fr": "sympathie, affection",
           "pl": "sympatia, sentyment"
-        }
+        },
+        "koHanja": "감정(感情)"
       }
     ]
   },
@@ -7395,7 +7912,8 @@
           "de": "Religion",
           "fr": "religion",
           "pl": "religia"
-        }
+        },
+        "koHanja": "종교(宗教)"
       },
       {
         "word": "tôn trọng",
@@ -7408,7 +7926,8 @@
           "de": "Respekt, respektieren",
           "fr": "respect, respecter",
           "pl": "szacunek, poważanie"
-        }
+        },
+        "koHanja": "존중(尊重)"
       },
       {
         "word": "tôn sùng",
@@ -7421,7 +7940,8 @@
           "de": "Verehrung, anbeten",
           "fr": "vénérer, culte, adorer",
           "pl": "czcić, wielbić"
-        }
+        },
+        "koHanja": "숭배(崇拜)"
       },
       {
         "word": "tôn vinh",
@@ -7434,7 +7954,8 @@
           "de": "ehren, preisen, würdigen",
           "fr": "honorer, célébrer, glorifier",
           "pl": "uhonorowanie, wysławianie"
-        }
+        },
+        "koHanja": "영예(榮譽)·기림"
       },
       {
         "word": "tôn ti",
@@ -7447,7 +7968,8 @@
           "de": "Rangordnung, Hierarchie",
           "fr": "hiérarchie, ordre hiérarchique",
           "pl": "hierarchia, kolejność starszeństwa"
-        }
+        },
+        "koHanja": "위계(位階)·서열(序列)"
       }
     ]
   },
@@ -7466,7 +7988,8 @@
           "de": "Präsident, Staatspräsident",
           "fr": "président (de la République)",
           "pl": "prezydent"
-        }
+        },
+        "koHanja": "대통령(大統領)"
       },
       {
         "word": "tổng hợp",
@@ -7479,7 +8002,8 @@
           "de": "umfassend, Synthese",
           "fr": "synthèse, synthétique",
           "pl": "synteza, kompleksowy"
-        }
+        },
+        "koHanja": "종합(綜合)"
       },
       {
         "word": "tổng cộng",
@@ -7492,7 +8016,8 @@
           "de": "insgesamt, Summe",
           "fr": "au total, somme totale",
           "pl": "suma, w sumie"
-        }
+        },
+        "koHanja": "합계(合計)·총(總)"
       },
       {
         "word": "tổng kết",
@@ -7505,7 +8030,8 @@
           "de": "Zusammenfassung, Fazit",
           "fr": "bilan, récapitulation, conclure",
           "pl": "podsumowanie, bilans"
-        }
+        },
+        "koHanja": "총결(總結)·총정리(總整理)"
       },
       {
         "word": "tổng thể",
@@ -7518,7 +8044,8 @@
           "de": "Gesamtheit, gesamt",
           "fr": "ensemble, global, globalité",
           "pl": "całość, globalny"
-        }
+        },
+        "koHanja": "전체(全體)"
       }
     ]
   },
@@ -7537,7 +8064,8 @@
           "de": "Kleidung, Tracht, Bekleidung",
           "fr": "tenue, vêtement, costume",
           "pl": "strój, ubiór"
-        }
+        },
+        "koHanja": "복장(服裝)"
       },
       {
         "word": "trang bị",
@@ -7550,7 +8078,8 @@
           "de": "Ausrüstung, Ausstattung",
           "fr": "équipement, équiper",
           "pl": "wyposażenie, sprzęt"
-        }
+        },
+        "koHanja": "장비(裝備)·갖춤"
       },
       {
         "word": "trang trí",
@@ -7563,7 +8092,8 @@
           "de": "Dekoration, Verzierung",
           "fr": "décoration, ornement",
           "pl": "dekoracja, ozdoba"
-        }
+        },
+        "koHanja": "장식(裝置)"
       },
       {
         "word": "trang nghiêm",
@@ -7576,7 +8106,8 @@
           "de": "feierlich, würdevoll, erhaben",
           "fr": "solennel, digne, imposant",
           "pl": "uroczysty, majestatyczny"
-        }
+        },
+        "koHanja": "장엄(莊嚴)함"
       },
       {
         "word": "trang sức",
@@ -7589,7 +8120,8 @@
           "de": "Schmuck, Zierde",
           "fr": "bijou, parure",
           "pl": "biżuteria, ozdoby"
-        }
+        },
+        "koHanja": "장신구(裝身具)·액세서리"
       }
     ]
   },
@@ -7608,7 +8140,8 @@
           "de": "Wissen, Intellektuelle",
           "fr": "intellectuel, connaissances",
           "pl": "intelektualista, wiedza"
-        }
+        },
+        "koHanja": "지식(智識)·지식인(知識人)"
       },
       {
         "word": "trí tuệ",
@@ -7621,7 +8154,8 @@
           "de": "Weisheit, Klugheit",
           "fr": "sagesse, intelligence",
           "pl": "mądrość, inteligencja"
-        }
+        },
+        "koHanja": "지혜(智慧)"
       },
       {
         "word": "trí nhớ",
@@ -7634,7 +8168,8 @@
           "de": "Gedächtnis, Erinnerungsvermögen",
           "fr": "mémoire",
           "pl": "pamięć"
-        }
+        },
+        "koHanja": "기억력(記憶力)"
       },
       {
         "word": "trí óc",
@@ -7647,7 +8182,8 @@
           "de": "Verstand, Gehirn",
           "fr": "esprit, intellect, cerveau",
           "pl": "umysł, mózg"
-        }
+        },
+        "koHanja": "두뇌(頭腦)"
       },
       {
         "word": "trí lực",
@@ -7660,7 +8196,8 @@
           "de": "Geisteskraft, Intellekt",
           "fr": "force intellectuelle, capacité mentale",
           "pl": "sprawność umysłowa"
-        }
+        },
+        "koHanja": "지력(智力)"
       }
     ]
   },
@@ -7679,7 +8216,8 @@
           "de": "Niveau, Bildungsgrad",
           "fr": "niveau, qualification",
           "pl": "poziom, kwalifikacje"
-        }
+        },
+        "koHanja": "수준(水準)"
       },
       {
         "word": "trình bày",
@@ -7692,7 +8230,8 @@
           "de": "darlegen, vortragen, präsentieren",
           "fr": "présenter, exposer, énoncer",
           "pl": "prezentacja, przedstawienie"
-        }
+        },
+        "koHanja": "설명(說明)·제시(提示)"
       },
       {
         "word": "trình diễn",
@@ -7705,7 +8244,8 @@
           "de": "Aufführung, Vorführung",
           "fr": "représentation, spectacle",
           "pl": "występ, pokaz"
-        }
+        },
+        "koHanja": "공연(公演)·시연(試演)"
       },
       {
         "word": "trình tự",
@@ -7718,7 +8258,8 @@
           "de": "Reihenfolge, Ablauf, Prozedur",
           "fr": "ordre, séquence, procédure",
           "pl": "kolejność, procedura"
-        }
+        },
+        "koHanja": "순서(順序)·절차(節次)"
       },
       {
         "word": "trình duyệt",
@@ -7750,7 +8291,8 @@
           "de": "Zentrum, Mittelpunkt",
           "fr": "centre, milieu",
           "pl": "centrum, środek"
-        }
+        },
+        "koHanja": "중심(中心)·센터"
       },
       {
         "word": "trung thành",
@@ -7763,7 +8305,8 @@
           "de": "loyal, treu, Loyalität",
           "fr": "loyal, fidèle, loyauté",
           "pl": "lojalny, wierny"
-        }
+        },
+        "koHanja": "충성(忠誠)"
       },
       {
         "word": "trung thực",
@@ -7776,7 +8319,8 @@
           "de": "ehrlich, aufrichtig",
           "fr": "honnête, sincère",
           "pl": "uczciwy, szczery"
-        }
+        },
+        "koHanja": "정직(正直)"
       },
       {
         "word": "trung bình",
@@ -7789,7 +8333,8 @@
           "de": "durchschnittlich, Mittelwert",
           "fr": "moyen, moyenne",
           "pl": "średni, przeciętny"
-        }
+        },
+        "koHanja": "평균(平均)"
       },
       {
         "word": "trung lập",
@@ -7802,7 +8347,8 @@
           "de": "neutral, Neutralität",
           "fr": "neutre, neutralité",
           "pl": "neutralny, neutralność"
-        }
+        },
+        "koHanja": "중립(中立)"
       },
       {
         "word": "trung gian",
@@ -7815,7 +8361,8 @@
           "de": "Vermittler, Zwischenstation",
           "fr": "intermédiaire, médiateur",
           "pl": "pośrednik, mediacja"
-        }
+        },
+        "koHanja": "중개(仲介)·매개(媒介)"
       }
     ]
   },
@@ -7834,7 +8381,8 @@
           "de": "Tradition, traditionell",
           "fr": "tradition, traditionnel",
           "pl": "tradycja"
-        }
+        },
+        "koHanja": "전통(傳統)"
       },
       {
         "word": "truyền thông",
@@ -7847,7 +8395,8 @@
           "de": "Medien, Kommunikation",
           "fr": "médias, communication",
           "pl": "media, komunikacja"
-        }
+        },
+        "koHanja": "미디어·전달(傳達)"
       },
       {
         "word": "truyền hình",
@@ -7873,7 +8422,8 @@
           "de": "Legende, Überlieferung",
           "fr": "légende, mythe",
           "pl": "legenda, mit"
-        }
+        },
+        "koHanja": "전설(傳說)"
       },
       {
         "word": "truyền nhiễm",
@@ -7886,7 +8436,8 @@
           "de": "Ansteckung, Infektion",
           "fr": "contagion, contagieux",
           "pl": "zarażenie, infekcja"
-        }
+        },
+        "koHanja": "전염(傳染)"
       },
       {
         "word": "truyền đạt",
@@ -7899,7 +8450,8 @@
           "de": "übermitteln, mitteilen",
           "fr": "transmettre, communiquer",
           "pl": "przekazywanie"
-        }
+        },
+        "koHanja": "전달(傳達)"
       }
     ]
   },
@@ -7918,7 +8470,8 @@
           "de": "Schule",
           "fr": "école",
           "pl": "szkoła"
-        }
+        },
+        "koHanja": "학교(學校)"
       },
       {
         "word": "trường hợp",
@@ -7931,7 +8484,8 @@
           "de": "Fall, Situation",
           "fr": "cas, situation",
           "pl": "przypadek, sytuacja"
-        }
+        },
+        "koHanja": "경우(境遇)"
       },
       {
         "word": "trường kỳ",
@@ -7944,7 +8498,8 @@
           "de": "langfristig, langwierig",
           "fr": "à long terme, prolongé",
           "pl": "długoterminowy"
-        }
+        },
+        "koHanja": "장기적(長期的)"
       },
       {
         "word": "trường thọ",
@@ -7957,7 +8512,8 @@
           "de": "Langlebigkeit, langes Leben",
           "fr": "longévité",
           "pl": "długowieczność"
-        }
+        },
+        "koHanja": "장수(長壽)"
       },
       {
         "word": "trường ca",
@@ -7970,7 +8526,8 @@
           "de": "Epos, episches Langgedicht",
           "fr": "poème épique, épopée",
           "pl": "poemat epicki, epopeja"
-        }
+        },
+        "koHanja": "장가(長歌, 서사시)"
       },
       {
         "word": "thị trường",
@@ -7983,7 +8540,8 @@
           "de": "Markt",
           "fr": "marché",
           "pl": "rynek"
-        }
+        },
+        "koHanja": "시장(市場)"
       },
       {
         "word": "hiệu trưởng",
@@ -7996,7 +8554,8 @@
           "de": "Schulleiter, Rektor",
           "fr": "directeur d'école, proviseur",
           "pl": "dyrektor szkoły"
-        }
+        },
+        "koHanja": "교장(校長)"
       }
     ]
   },
@@ -8015,7 +8574,8 @@
           "de": "Denken, Denkweise",
           "fr": "pensée, mode de pensée",
           "pl": "myślenie, rozumowanie"
-        }
+        },
+        "koHanja": "사유(思維)·사고(思考)"
       },
       {
         "word": "tư tưởng",
@@ -8028,7 +8588,8 @@
           "de": "Ideologie, Gedankengut",
           "fr": "pensée, idéologie",
           "pl": "myśl, ideologia"
-        }
+        },
+        "koHanja": "사상(思想)"
       },
       {
         "word": "tư cách",
@@ -8041,7 +8602,8 @@
           "de": "Qualifikation, Eignung, Status",
           "fr": "qualité, titre, statut",
           "pl": "kwalifikacje, status"
-        }
+        },
+        "koHanja": "자격(資格)"
       },
       {
         "word": "tư vấn",
@@ -8054,7 +8616,8 @@
           "de": "Beratung, konsultieren",
           "fr": "consultation, conseil",
           "pl": "doradztwo, konsultacja"
-        }
+        },
+        "koHanja": "자문(諮詢)·상담(相談)"
       },
       {
         "word": "tư nhân",
@@ -8067,7 +8630,8 @@
           "de": "privat, Privatperson",
           "fr": "privé, particulier",
           "pl": "prywatny"
-        }
+        },
+        "koHanja": "사적(私的)·민간(民間)"
       },
       {
         "word": "tư liệu",
@@ -8080,7 +8644,8 @@
           "de": "Materialien, Dokumente",
           "fr": "documents, données",
           "pl": "materiały, dane"
-        }
+        },
+        "koHanja": "자료(資料)"
       }
     ]
   },
@@ -8099,7 +8664,8 @@
           "de": "Wörterbuch",
           "fr": "dictionnaire",
           "pl": "słownik"
-        }
+        },
+        "koHanja": "사전(辭典)"
       },
       {
         "word": "từ ngữ",
@@ -8112,7 +8678,8 @@
           "de": "Wortschatz, Begriffe",
           "fr": "vocabulaire, termes",
           "pl": "słownictwo, wyrazy"
-        }
+        },
+        "koHanja": "어휘(語彙)·단어(單語)"
       },
       {
         "word": "từ chối",
@@ -8125,7 +8692,8 @@
           "de": "ablehnen, abweisen",
           "fr": "refuser, décliner",
           "pl": "odmowa"
-        }
+        },
+        "koHanja": "거절(拒絕)"
       },
       {
         "word": "từ thiện",
@@ -8138,7 +8706,8 @@
           "de": "Wohltätigkeit, Nächstenliebe",
           "fr": "charité, bienfaisance",
           "pl": "dobroczynność, charytatywność"
-        }
+        },
+        "koHanja": "자선(慈善)"
       },
       {
         "word": "từ tâm",
@@ -8151,7 +8720,8 @@
           "de": "Barmherzigkeit, Mitgefühl",
           "fr": "compassion, cœur bienveillant",
           "pl": "współczucie, litość"
-        }
+        },
+        "koHanja": "자비심(慈悲心)"
       }
     ]
   },
@@ -8170,7 +8740,8 @@
           "de": "Freiheit, frei",
           "fr": "liberté, libre",
           "pl": "wolność"
-        }
+        },
+        "koHanja": "자유(自由)"
       },
       {
         "word": "tự tin",
@@ -8183,7 +8754,8 @@
           "de": "Selbstvertrauen, zuversichtlich",
           "fr": "confiance en soi, confiant",
           "pl": "pewność siebie"
-        }
+        },
+        "koHanja": "자신감(自信感)"
       },
       {
         "word": "tự nhiên",
@@ -8196,7 +8768,8 @@
           "de": "Natur, natürlich",
           "fr": "nature, naturel",
           "pl": "natura, naturalny"
-        }
+        },
+        "koHanja": "자연(自然)"
       },
       {
         "word": "tự động",
@@ -8209,7 +8782,8 @@
           "de": "automatisch",
           "fr": "automatique",
           "pl": "automatyczny"
-        }
+        },
+        "koHanja": "자동(自動)"
       },
       {
         "word": "tự giác",
@@ -8222,7 +8796,8 @@
           "de": "selbstbewusst, eigenverantwortlich",
           "fr": "conscient, volontaire",
           "pl": "świadomy, dobrowolny"
-        }
+        },
+        "koHanja": "자각(自覺)·자발적(自發的)"
       },
       {
         "word": "tự trọng",
@@ -8235,7 +8810,8 @@
           "de": "Selbstachtung, Würde",
           "fr": "amour-propre, dignité",
           "pl": "poczucie własnej godności"
-        }
+        },
+        "koHanja": "자존심(自尊心)"
       },
       {
         "word": "văn tự",
@@ -8248,7 +8824,8 @@
           "de": "Schrift, Schriftzeichen",
           "fr": "écriture, caractères",
           "pl": "pismo, litery"
-        }
+        },
+        "koHanja": "문자(文字)"
       }
     ]
   },
@@ -8267,7 +8844,8 @@
           "de": "Kultur",
           "fr": "culture",
           "pl": "kultura"
-        }
+        },
+        "koHanja": "문화(文化)"
       },
       {
         "word": "văn học",
@@ -8280,7 +8858,8 @@
           "de": "Literatur",
           "fr": "littérature",
           "pl": "literatura"
-        }
+        },
+        "koHanja": "문학(文學)"
       },
       {
         "word": "văn phòng",
@@ -8293,7 +8872,8 @@
           "de": "Büro",
           "fr": "bureau",
           "pl": "biuro"
-        }
+        },
+        "koHanja": "사무실(事務室)"
       },
       {
         "word": "văn bản",
@@ -8306,7 +8886,8 @@
           "de": "Dokument, Textfassung",
           "fr": "texte, document officiel",
           "pl": "dokument, pismo urzędowe"
-        }
+        },
+        "koHanja": "문서(文書)"
       },
       {
         "word": "văn minh",
@@ -8319,7 +8900,8 @@
           "de": "Zivilisation",
           "fr": "civilisation",
           "pl": "cywilizacja"
-        }
+        },
+        "koHanja": "문명(文明)"
       },
       {
         "word": "văn nghệ",
@@ -8332,7 +8914,8 @@
           "de": "Kunst und Kultur, Literatur",
           "fr": "arts et lettres, culture artistique",
           "pl": "sztuka i literatura"
-        }
+        },
+        "koHanja": "문예(文藝)"
       }
     ]
   },
@@ -8351,7 +8934,8 @@
           "de": "Werkstoff, Material",
           "fr": "matériau, matière",
           "pl": "tworzywo, materiał"
-        }
+        },
+        "koHanja": "재료(材料)"
       },
       {
         "word": "vật chất",
@@ -8364,7 +8948,8 @@
           "de": "Materie, Sachwerte",
           "fr": "matière, matériel",
           "pl": "materia, substancja"
-        }
+        },
+        "koHanja": "물질(物質)"
       },
       {
         "word": "vật giá",
@@ -8377,7 +8962,8 @@
           "de": "Lebenshaltungskosten, Preisniveau",
           "fr": "prix des marchandises, coût de la vie",
           "pl": "ceny towarów"
-        }
+        },
+        "koHanja": "물가(物價)"
       },
       {
         "word": "vật lý",
@@ -8390,7 +8976,8 @@
           "de": "Physik",
           "fr": "physique",
           "pl": "fizyka"
-        }
+        },
+        "koHanja": "물리(物理)"
       },
       {
         "word": "vật nuôi",
@@ -8403,7 +8990,8 @@
           "de": "Haustier, Nutztier",
           "fr": "animal domestique, animal d'élevage",
           "pl": "zwierzę domowe, inwentarz"
-        }
+        },
+        "koHanja": "가축(家畜)·반려동물(伴侶動物)"
       }
     ]
   },
@@ -8422,7 +9010,8 @@
           "de": "Export, Ausfuhr",
           "fr": "exporter, exportation",
           "pl": "eksport"
-        }
+        },
+        "koHanja": "수출(輸出)"
       },
       {
         "word": "xuất bản",
@@ -8435,7 +9024,8 @@
           "de": "Veröffentlichung, publizieren",
           "fr": "éditer, publication, édition",
           "pl": "publikacja, wydanie"
-        }
+        },
+        "koHanja": "출판(出版)"
       },
       {
         "word": "xuất hiện",
@@ -8448,7 +9038,8 @@
           "de": "Erscheinen, Auftauchen",
           "fr": "apparaître, apparition",
           "pl": "pojawienie się, wyłonienie"
-        }
+        },
+        "koHanja": "출현(出現)"
       },
       {
         "word": "xuất phát",
@@ -8461,7 +9052,8 @@
           "de": "Abfahrt, Start",
           "fr": "partir, départ",
           "pl": "odjazd, wyruszenie"
-        }
+        },
+        "koHanja": "출발(出發)"
       },
       {
         "word": "xuất sắc",
@@ -8474,7 +9066,8 @@
           "de": "hervorragend, ausgezeichnet",
           "fr": "excellent, brillant, remarquable",
           "pl": "doskonałość, wybitność"
-        }
+        },
+        "koHanja": "우수(優秀)함·뛰어남"
       },
       {
         "word": "xuất xứ",
@@ -8487,7 +9080,8 @@
           "de": "Herkunft, Ursprung",
           "fr": "origine, provenance, source",
           "pl": "pochodzenie, źródło"
-        }
+        },
+        "koHanja": "출처(出處)·원산지(原産地)"
       },
       {
         "word": "xuất thần",
@@ -8519,7 +9113,8 @@
           "de": "Gesundheitswesen, medizinische Versorgung",
           "fr": "santé publique, soins médicaux",
           "pl": "opieka medyczna, służba zdrowia"
-        }
+        },
+        "koHanja": "의료(醫療)"
       },
       {
         "word": "y học",
@@ -8532,7 +9127,8 @@
           "de": "Medizin (Wissenschaft)",
           "fr": "médecine (science)",
           "pl": "medycyna (nauka)"
-        }
+        },
+        "koHanja": "의학(醫學)"
       },
       {
         "word": "y tá",
@@ -8545,7 +9141,8 @@
           "de": "Krankenpfleger, Krankenschwester",
           "fr": "infirmier, infirmière",
           "pl": "pielęgniarka"
-        }
+        },
+        "koHanja": "간호사(看護師)"
       },
       {
         "word": "y sĩ",
@@ -8558,7 +9155,8 @@
           "de": "Arzt, Mediziner",
           "fr": "médecin, praticien",
           "pl": "lekarz"
-        }
+        },
+        "koHanja": "의사(醫士)"
       },
       {
         "word": "y phục",
@@ -8571,7 +9169,8 @@
           "de": "Kleidung, Gewand",
           "fr": "vêtement, tenue vestimentaire",
           "pl": "ubiór, odzież"
-        }
+        },
+        "koHanja": "의복(衣服)"
       }
     ]
   },
@@ -8590,7 +9189,8 @@
           "de": "Bedeutung, Sinn",
           "fr": "sens, signification",
           "pl": "znaczenie, sens"
-        }
+        },
+        "koHanja": "의미(意味)"
       },
       {
         "word": "ý kiến",
@@ -8603,7 +9203,8 @@
           "de": "Meinung, Ansicht",
           "fr": "avis, opinion",
           "pl": "opinia, pogląd"
-        }
+        },
+        "koHanja": "의견(意見)"
       },
       {
         "word": "ý thức",
@@ -8616,7 +9217,8 @@
           "de": "Bewusstsein",
           "fr": "conscience",
           "pl": "świadomość"
-        }
+        },
+        "koHanja": "의식(意識)"
       },
       {
         "word": "ý chí",
@@ -8629,7 +9231,8 @@
           "de": "Wille, Willenskraft",
           "fr": "volonté",
           "pl": "wola"
-        }
+        },
+        "koHanja": "의지(意志)"
       },
       {
         "word": "ý định",
@@ -8642,7 +9245,8 @@
           "de": "Absicht, Vorhaben",
           "fr": "intention, dessein",
           "pl": "zamiar, intencja"
-        }
+        },
+        "koHanja": "의도(意圖)"
       },
       {
         "word": "ý tưởng",
@@ -8655,7 +9259,8 @@
           "de": "Idee, Gedanke",
           "fr": "idée, concept",
           "pl": "pomysł, idea"
-        }
+        },
+        "koHanja": "아이디어·발상(發想)"
       }
     ]
   }
