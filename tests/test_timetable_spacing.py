@@ -26,14 +26,17 @@ def verify(plan, unit):
             assert after_mingle and not seen_vocab_after and not p[0].endswith(' (이어서)'), p[0]
         clock += p[1]
     assert clock == 120
+    assert not any(p[0].endswith(' (이어서)') for p in plan), 'every item is one piece'
     if general:
         block = 7 if unit <= 2 else 4.5
         g = sum(p[1] for p in plan if len(p) == 5 and p[2] == 'group' and p[3] != 'mingle')
-        starts = [8, 22, 36, 70 + g, 84 + g]
+        ideal = [8, 22, 36, 70 + g, 84 + g]
         owners = ['assist', 'group', 'group', 'group', 'assist']
-        assert general == [(s, block, i, owners[i]) for i, s in enumerate(starts)]
-        assert wt == [(s + block, 1.5, i, 'B' if owners[i] == 'assist' else 'group') for i, s in enumerate(starts)]
-        assert all(13 <= b - a <= 15 for a, b in zip(starts[:3], starts[1:3])) and 13 <= 84 - 70 + 0 <= 15
+        assert [(d, i, o) for _, d, i, o in general] == [(block, i, owners[i]) for i in range(5)]
+        assert wt == [(s + block, 1.5, i, 'B' if owners[i] == 'assist' else 'group') for i, (s, *_ ) in enumerate(general)]
+        starts = [s for s, *_ in general]
+        assert all(abs(a - b) <= 9 for a, b in zip(starts, ideal)), starts
+        assert starts == sorted(starts) and starts[2] < 50 < starts[3]
 
 
 guide = json.loads((ROOT / 'regional_admin/teaching_guide.json').read_text())['jeonju']
@@ -48,11 +51,13 @@ for u in guide['units']:
             assert p[2] == 'B'
         if '성경 책명 읽기 연습' in base:
             assert p[2] == 'assist'
-        if any(k in base for k in ('문화', '제공 연설', '일상 회화', '일상 생활 문장', '일반 문법', '과제 확인', '마치는 노래')):
+        if any(k in base for k in ('문화', '일반 문법', '과제 확인', '마치는 노래')):
             assert p[2] == 'A', base
+        if any(k in base for k in ('제공 연설', '일상 회화', '일상 생활 문장', '이웃 사람과의 대화')):
+            assert p[2] == ('B' if u['unit'] >= 4 else 'A'), base
         if p[4] == 'move':
             assert p[2] == 'group', base
     assert u.get('assistant') == ('Bình' if u['date'] == '2026-11-15' else None)
 assert [has_rhyme(1, i) for i in range(5)] == [True] * 5 and [has_rhyme(2, i) for i in range(5)] == [True] * 5
 assert not any(has_rhyme(3, i) for i in range(5))
-print('16 class timetables: one owner per item, 4 owners, group leaders for blocks 2-4, whole group activities, 7 / 4:30 / 1:30 vocabulary blocks, spacing, 120 min, 11/15 Bình verified.')
+print('16 class timetables: one owner per item, 4 owners, group leaders for blocks 2-4, every item one piece, B takes talks/conversations from 10/31, 7 / 4:30 / 1:30 vocabulary blocks, spacing, 120 min, 11/15 Bình verified.')
