@@ -571,6 +571,8 @@ def public_teaching_guide(region):
             out["plan"] = [[p[0], p[1], p[2], p[4], vi_text.get(p[0].removesuffix(" (이어서)")) or vi_text.get(p[0])] + ([p[5]] if len(p)>5 else []) for p in u["timePlan"]]
             if u.get("assistant"):
                 out["assistant"] = u["assistant"]
+            if u.get("classNote"):
+                out["note"] = u["classNote"]
         return out
 
     ins = guide.get("instructors") or {}

@@ -31,6 +31,7 @@ RHYME_WORDS, EARLY_CLASSES, EARLY_QUOTA = 316, 4, 170   # [어휘] stream starts
 
 LEADER_PARTS = (1, 2, 3)                        # vocabulary blocks 2-4 are led by the group leaders; 1 and 5 by Mai / Bình
 
+REHEARSAL, REHEARSAL_MIN = "파수대 집회 실연", 60      # the last class: one hour, break afterwards
 B_TALK_FROM_UNIT = 4                            # class of 2026-10-31
 B_TALK_RULES = re.compile(r"제공 연설|일상 회화|일상 생활 문장|이웃 사람과의 대화")
 
@@ -182,35 +183,36 @@ def rebuild(plan, unit):
             row(name, size / 2, reason, posture)
         place(post, ideal, [3, 4], 140 + G)
     else:
-        # A class without vocabulary blocks: whole items in order; an item that would cross minute 50 is cut to the window,
-        # its remaining minutes become transition time at the end.
+        # A class without vocabulary blocks (the last class): the Watchtower meeting rehearsal is one 60-minute piece and the
+        # break comes after it; the other items keep their order and give back what the longer rehearsal needs.
         row(OPEN, 4, "open", "stand")
-        window, extra = 92, 0
-        names = list(order)
-        pre_names, used = [], 0
-        for n in names:
-            size = 2 * core[n][0]
-            if used >= window:
-                break
-            if used + size > window:
-                extra += used + size - window
-                core[n][0] = (window - used) / 2
-                size = window - used
-            pre_names.append(n)
-            used += size
-        if used < window:
-            slack += (window - used) / 2
-        for n in pre_names:
-            row(n, core[n][0], core[n][1], core[n][2])
+        lead = [n for n in order if n.startswith(REHEARSAL)]
+        rest = [n for n in order if n not in lead]
+        for n in lead:
+            row(n, REHEARSAL_MIN, core[n][1], core[n][2])
         row(BREAK, 10, "break", "rest")
         row(MINGLE, 10, "mingle", "move")
-        for n in names[len(pre_names):]:
-            row(n, core[n][0], core[n][1], core[n][2])
-        slack += extra / 2
+        room = 120 - sum(FIXED_MIN.values()) - REHEARSAL_MIN * len(lead)          # minutes for the remaining items + slack
+        sizes = [core[n][0] for n in rest]
+        over = sum(sizes) + slack - room
+        cut = min(slack, max(over, 0))
+        slack -= cut
+        over -= cut
+        k = len(sizes) - 1
+        while over > 0 and k >= 0:                 # still too long: the last items give the rest back
+            take = min(over, sizes[k] - 1)
+            sizes[k] -= take
+            over -= take
+            k -= 1
+        for n, sz in zip(rest, sizes):
+            row(n, sz, core[n][1], core[n][2])
+        if room - sum(sizes) - slack > 0:
+            slack += room - sum(sizes) - slack
         if slack:
             row(SLACK, slack, "slack", "flex")
         row(HOMEWORK, 5, "homework", "sit")
         row(CLOSE, 4, "close", "stand")
+        assert sum(p[1] for p in out) == 120, sum(p[1] for p in out)
         return out
     row(HOMEWORK, 5, "homework", "sit")
     row(CLOSE, 4, "close", "stand")
@@ -269,6 +271,13 @@ CLASS_NOTE = {
 }
 
 
+LAST_CLASS_NOTE = {
+    "ko": "이 회차는 파수대 집회 실연을 60분 진행한 뒤 10분 쉬고, 이어서 돌아다니며 대화하는 조별 활동을 합니다.",
+    "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút rồi nghỉ 10 phút, sau đó là hoạt động nhóm đi lại trò chuyện.",
+    "en": "This class rehearses the Watchtower meeting for 60 minutes, then takes a 10-minute break, then the walk-around group activity.",
+}
+
+
 def main():
     import json
     import os
@@ -277,6 +286,8 @@ def main():
     guide = data["jeonju"]
     for u in guide["units"]:
         u["timePlan"] = rebuild(u["timePlan"], u["unit"])
+        if u["unit"] == 16:
+            u["classNote"] = LAST_CLASS_NOTE
         who = ASSISTANT_SUBSTITUTE.get(u["date"])
         if who:
             u["assistant"] = who

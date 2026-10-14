@@ -13,9 +13,9 @@ def verify(plan, unit):
         assert p[1] > 0 and (p[1] * 2) % 1 == 0
         assert p[2] in OWNERS
         if p[2] is None:
-            assert clock == 50 and p[1] == 10
+            assert clock == (64 if unit == 16 else 50) and p[1] == 10
         if p[3] == 'mingle':
-            assert clock == 60 and p[1] == 10 and p[2] == 'group'
+            assert clock == (74 if unit == 16 else 60) and p[1] == 10 and p[2] == 'group'
             after_mingle = True
         elif len(p) > 5:
             if after_mingle:
@@ -59,5 +59,6 @@ for u in guide['units']:
             assert p[2] == 'group', base
     assert u.get('assistant') == ('Bình' if u['date'] == '2026-11-15' else None)
 assert [has_rhyme(1, i) for i in range(5)] == [True] * 5 and [has_rhyme(2, i) for i in range(5)] == [True] * 5
+assert next(p for p in guide['units'][-1]['timePlan'] if p[0].startswith('파수대 집회 실연'))[1] == 60
 assert not any(has_rhyme(3, i) for i in range(5))
 print('16 class timetables: one owner per item, 4 owners, group leaders for blocks 2-4, every item one piece, B takes talks/conversations from 10/31, 7 / 4:30 / 1:30 vocabulary blocks, spacing, 120 min, 11/15 Bình verified.')

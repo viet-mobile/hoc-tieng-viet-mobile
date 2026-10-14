@@ -503,7 +503,7 @@
     }).join(' ');
     var subs = cs && cs.assistantSubstitute, subNote = '';
     if (subs && u.assistant) subNote = '<p class="guide-time-note">' + esc((ins.assist.substitute || {})[LANG === 'vi' ? 'vi' : 'ko'].replace('{date}', u.date)) + '</p>';
-    return guideInstructorLegend() + (cs && cs.note ? '<p class="guide-time-note">' + esc(instrText(cs.note)) + '</p>' : '') + subNote +
+    return guideInstructorLegend() + ((u.classNote || (cs && cs.note)) ? '<p class="guide-time-note">' + esc(instrText(u.classNote || cs.note)) + '</p>' : '') + subNote +
       '<div class="guide-label">예상 시간 배분 (2시간 기준, 분)</div>' +
       '<div class="guide-post-sum">' + sum + '</div>' +
       '<table class="guide-time"><tbody>' + head + rows + foot + '</tbody></table>' +

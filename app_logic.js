@@ -7175,7 +7175,7 @@
     });
     return '<details class="curr-plan"><summary><span class="curr-plan-title">' + escapeHtml(gt(COURSE_PLAN_LABELS.title)) + '</span> ' + who + '</summary>' +
       '<div class="curr-plan-body">' + (legend ? '<div class="curr-plan-legend">' + legend + '</div>' : '') + roles + subNote + rows +
-      (st.note ? '<p class="curr-plan-note">' + escapeHtml(gt(st.note)) + '</p>' : '') + '</div></details>';
+      ((g.note || st.note) ? '<p class="curr-plan-note">' + escapeHtml(gt(g.note || st.note)) + '</p>' : '') + '</div></details>';
   }
   function courseGuideHtml(unit, sched, classWeek) {
     var g = courseGuideEntry(unit);

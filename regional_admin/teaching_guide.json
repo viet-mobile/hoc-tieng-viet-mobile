@@ -4696,7 +4696,7 @@
           ],
           [
             "파수대 집회 실연 (사회, 낭독, 발표)",
-            46,
+            60,
             "A",
             "rehearsal",
             "stand"
@@ -4724,17 +4724,10 @@
           ],
           [
             "베트남어 노래 (46번) 합창",
-            8,
+            7,
             "B",
             "model",
             "stand"
-          ],
-          [
-            "항목 전환·여유",
-            13,
-            "A",
-            "slack",
-            "flex"
           ],
           [
             "과제 확인·안내",
@@ -4750,7 +4743,12 @@
             "close",
             "stand"
           ]
-        ]
+        ],
+        "classNote": {
+          "ko": "이 회차는 파수대 집회 실연을 60분 진행한 뒤 10분 쉬고, 이어서 돌아다니며 대화하는 조별 활동을 합니다.",
+          "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút rồi nghỉ 10 phút, sau đó là hoạt động nhóm đi lại trò chuyện.",
+          "en": "This class rehearses the Watchtower meeting for 60 minutes, then takes a 10-minute break, then the walk-around group activity."
+        }
       }
     ],
     "materialsI18n": {
