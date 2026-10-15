@@ -36,8 +36,16 @@ const UAS = {
         await sleep(5600);
         const after = await E('window.__silentMedia.paused');
         ok(after === true, 'iphone: paused again ~5 s after the last run');
+        // the helper can be switched off in 발음 > 설정: no playing element for a run any more
+        await E(`localStorage.setItem('vn-app-silent-media','off');document.querySelector('.tts-rate-try').click();0`);
+        await sleep(600);
+        ok((await E('window.__silentMedia.paused')) === true, 'iphone: helper switched off -> the element stays paused');
+        await E(`localStorage.removeItem('vn-app-silent-media');0`);
+        const box = await E(`!!document.querySelector('.tts-silent-toggle')`);
+        ok(box === true, 'iphone: the helper toggle is in the settings');
       } else {
         ok(!during.exists, `${name}: no silent media element at all ${JSON.stringify(during)}`);
+        ok(!(await E(`!!document.querySelector('.tts-silent-toggle')`)), `${name}: no helper toggle`);
       }
     }
     cdp.close();

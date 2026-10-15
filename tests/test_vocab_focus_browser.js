@@ -23,6 +23,10 @@ const fixture=fixtureArg?JSON.parse(require('fs').readFileSync(fixtureArg.slice(
    assert.equal(await E('window.__vocabScopedPool().length'),34);
    await E("document.querySelector('.vocab-focus-scoped-review').click()");await sleep(100);
    const text=await E("document.querySelector('#study-body .study-progress').textContent");assert(/\/ 34$/.test(text),JSON.stringify({r,text}));
+   // the scoped review game keeps the studied order (never shuffled)
+   const expected=await E("window.__vocabScopedPool().map(x=>x.vi)");const seen=[];
+   for(let i=0;i<8;i++){seen.push(await E("document.querySelector('#study-body .study-flash-vi').textContent.trim()"));await E("document.querySelector('#flash-next').click()");await sleep(30);}
+   assert.deepEqual(seen,expected.slice(0,8),'flash cards in studied order');
   }
   await E("window.setLang('vi');document.querySelector('[data-tab=\"vocab\"]').click();document.querySelector('[data-vocab=\"rhyme\"]').click()");await sleep(100);
   const titles=await E("[...document.querySelectorAll('#vocab-root .group-head .syl')].map(e=>e.textContent)");assert.equal(titles.length,7);assert(titles.every(t=>t.trim()&&!/[가-힣]/.test(t)));

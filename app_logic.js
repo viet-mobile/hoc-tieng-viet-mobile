@@ -320,6 +320,8 @@
     "읽기 속도": {"vi": "Tốc độ đọc", "cs": "Rychlost čtení", "zh_cn": "朗读速度", "zh": "朗讀速度", "en": "Reading speed", "fr": "Vitesse de lecture", "de": "Lesegeschwindigkeit", "hu": "Olvasási sebesség", "id": "Kecepatan membaca", "ja": "読み上げ速度", "pl": "Szybkość czytania"},
     "이 기기의 운영체제에 맞춰 베트남어 읽기 속도를 정합니다. 뜻을 읽는 목소리에는 적용되지 않습니다. 1.00이 기본 속도입니다.": {"vi": "Đặt tốc độ đọc tiếng Việt theo hệ điều hành của thiết bị này. Không áp dụng cho giọng đọc nghĩa. 1.00 là tốc độ mặc định.", "cs": "Rychlost čtení vietnamštiny podle operačního systému tohoto zařízení. Netýká se hlasu pro význam. 1.00 je výchozí rychlost.", "zh_cn": "按本设备的操作系统设置越南语朗读速度。不影响读释义的声音。1.00 为默认速度。", "zh": "依本裝置的作業系統設定越南語朗讀速度。不影響讀釋義的聲音。1.00 為預設速度。", "en": "Sets the Vietnamese reading speed for this device’s operating system. It does not affect the voice that reads meanings. 1.00 is the default speed.", "fr": "Règle la vitesse de lecture du vietnamien pour le système de cet appareil. Sans effet sur la voix des traductions. 1.00 est la vitesse par défaut.", "de": "Stellt die Lesegeschwindigkeit des Vietnamesischen für das Betriebssystem dieses Geräts ein. Die Stimme für Bedeutungen bleibt unberührt. 1.00 ist die Standardgeschwindigkeit.", "hu": "A vietnámi olvasási sebességet állítja be az eszköz operációs rendszeréhez. A jelentést felolvasó hangra nem hat. Az 1.00 az alapértelmezett sebesség.", "id": "Mengatur kecepatan membaca bahasa Vietnam untuk sistem operasi perangkat ini. Tidak memengaruhi suara pembaca arti. 1.00 adalah kecepatan default.", "ja": "この端末のOSに合わせてベトナム語の読み上げ速度を設定します。意味を読む音声には影響しません。1.00が標準の速さです。", "pl": "Ustawia szybkość czytania wietnamskiego dla systemu tego urządzenia. Nie dotyczy głosu czytającego znaczenia. 1.00 to prędkość domyślna."},
     "이 기기": {"vi": "Thiết bị này", "cs": "Toto zařízení", "zh_cn": "本设备", "zh": "本裝置", "en": "This device", "fr": "Cet appareil", "de": "Dieses Gerät", "hu": "Ez az eszköz", "id": "Perangkat ini", "ja": "この端末", "pl": "To urządzenie"},
+    "무음 스위치 보조 재생 (iPhone·iPad)": {"vi": "Phát âm thanh hỗ trợ khi bật chế độ im lặng (iPhone·iPad)", "cs": "Pomocné přehrávání při ztlumení (iPhone·iPad)", "zh_cn": "静音开关辅助播放 (iPhone·iPad)", "zh": "靜音開關輔助播放 (iPhone·iPad)", "en": "Silent-switch helper playback (iPhone·iPad)", "fr": "Lecture d'appoint en mode silencieux (iPhone·iPad)", "de": "Hilfswiedergabe bei Stummschaltung (iPhone·iPad)", "hu": "Segéd-lejátszás néma módban (iPhone·iPad)", "id": "Pemutaran bantu saat mode senyap (iPhone·iPad)", "ja": "消音スイッチ補助再生 (iPhone·iPad)", "pl": "Odtwarzanie pomocnicze w trybie cichym (iPhone·iPad)"},
+    "끄면 학습자 언어로 넘어갈 때 더 빠를 수 있지만, 기기가 무음 상태일 때는 소리가 나지 않습니다.": {"vi": "Khi tắt, việc chuyển sang ngôn ngữ của bạn có thể nhanh hơn, nhưng sẽ không có tiếng khi máy ở chế độ im lặng.", "cs": "Po vypnutí může být přechod do vašeho jazyka rychlejší, ale při ztlumeném zařízení nebude slyšet zvuk.", "zh_cn": "关闭后切换到学习者语言可能更快，但设备静音时将没有声音。", "zh": "關閉後切換到學習者語言可能更快，但裝置靜音時將沒有聲音。", "en": "Turning it off may make the change to your language faster, but there is no sound while the device is on silent.", "fr": "Désactivé, le passage à votre langue peut être plus rapide, mais il n'y a pas de son quand l'appareil est en mode silencieux.", "de": "Ausgeschaltet kann der Wechsel in Ihre Sprache schneller sein, aber bei stummgeschaltetem Gerät ist nichts zu hören.", "hu": "Kikapcsolva gyorsabb lehet az átváltás az Ön nyelvére, de néma módban nem szól a hang.", "id": "Jika dimatikan, peralihan ke bahasa Anda bisa lebih cepat, tetapi tidak ada suara saat perangkat dalam mode senyap.", "ja": "オフにすると学習者の言語への切り替えが速くなることがありますが、端末が消音のときは音が出ません。", "pl": "Po wyłączeniu przejście na Twój język może być szybsze, ale przy wyciszonym urządzeniu nie będzie dźwięku."},
     "들어보기": {"vi": "Nghe thử", "cs": "Vyzkoušet", "zh_cn": "试听", "zh": "試聽", "en": "Try it", "fr": "Écouter", "de": "Probehören", "hu": "Meghallgatás", "id": "Coba dengar", "ja": "試し聞き", "pl": "Posłuchaj"},
     "jw.org에서 더 읽어 보기": {"vi": "Đọc thêm trên jw.org", "cs": "Více na jw.org", "zh_cn": "在 jw.org 上阅读更多", "zh": "在 jw.org 閱讀更多", "en": "Read more on jw.org", "fr": "Pour aller plus loin sur jw.org", "de": "Mehr auf jw.org lesen", "hu": "További olvasnivaló a jw.org-on", "id": "Baca lebih lanjut di jw.org", "ja": "jw.orgでさらに読む", "pl": "Więcej na jw.org"},
     "베트남어 반복 듣기 횟수": {"vi": "Số lần nghe lặp lại tiếng Việt", "cs": "Počet opakování vietnamštiny", "zh_cn": "越南语重复播放次数", "zh": "越南語重複播放次數", "en": "Vietnamese repeat count", "fr": "Nombre de répétitions audio en vietnamien", "de": "Wiederholungen des vietnamesischen Audios", "hu": "Vietnámi ismétlések száma", "id": "Jumlah pengulangan bahasa Vietnam", "ja": "ベトナム語の繰り返し再生回数", "pl": "Liczba powtórzeń nagrania wietnamskiego"},
@@ -1816,6 +1818,17 @@
         '<button type="button" class="tts-rate-reset" aria-label="' + escapeAttr(TU("기본")) + '">' + TU("기본") + '</button>' +
         (o[0] === mine ? '<button type="button" class="tts-rate-try">' + TU("들어보기") + '</button>' : '') + '</div>';
     }).join("") + '</div>';
+    if (IS_IOS_DEVICE) {
+      var helper = document.createElement("label");
+      helper.className = "tts-silent-helper";
+      helper.innerHTML = '<input type="checkbox" class="tts-silent-toggle"' + (silentMediaEnabled() ? " checked" : "") + '> <span>' + TU("무음 스위치 보조 재생 (iPhone·iPad)") + '</span>' +
+        '<span class="tts-silent-note">' + TU("끄면 학습자 언어로 넘어갈 때 더 빠를 수 있지만, 기기가 무음 상태일 때는 소리가 나지 않습니다.") + '</span>';
+      root.appendChild(helper);
+      helper.querySelector("input").addEventListener("change", function (e) {
+        try { window.localStorage.setItem(SILENT_MEDIA_KEY, e.target.checked ? "on" : "off"); } catch (eSv) { /* no-op */ }
+        if (!e.target.checked) stopSilentMedia();
+      });
+    }
     root.querySelectorAll(".tts-rate-row").forEach(function (row) {
       var os = row.getAttribute("data-os"), slider = row.querySelector(".tts-rate-slider"), val = row.querySelector(".tts-rate-val");
       slider.addEventListener("input", function () {
@@ -2309,12 +2322,22 @@
   var SILENT_WAV_SRC = "data:audio/wav;base64,UklGRmQfAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YUAfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==";
   var silentMedia = null, silentMediaIdleTimer = 0;
   function silentMediaPlaying() { return !!(silentMedia && !silentMedia.paused && !silentMedia.ended); }
+  // The helper can be switched off (발음 > 설정, iPhone / iPad only): where it makes a change of language slower on a device, speech then
+  // follows the ringer switch again. Stored on this device only.
+  var SILENT_MEDIA_KEY = "vn-app-silent-media";
+  function silentMediaEnabled() {
+    try { return window.localStorage.getItem(SILENT_MEDIA_KEY) !== "off"; } catch (eSe) { return true; }
+  }
+  var silentMediaWanted = false;      // speech is running or was running a moment ago: the element should be playing
+  var silentMediaStartedOnce = false; // the element was started in a tap before: later starts do not hold a run back
+  var lastSilentWaitMs = 0;           // how long the last run waited for the element (shown in __ttsLatency)
   function startSilentMedia(then) {
     if (silentMediaIdleTimer) { clearTimeout(silentMediaIdleTimer); silentMediaIdleTimer = 0; }
-    if (!IS_IOS_DEVICE || typeof Audio === "undefined") { if (then) then(); return; }
-    if (silentMediaPlaying()) { if (then) then(); return; }
-    var called = false;
-    function go() { if (called) return; called = true; if (then) then(); }
+    if (!IS_IOS_DEVICE || typeof Audio === "undefined" || !silentMediaEnabled()) { lastSilentWaitMs = 0; if (then) then(); return; }
+    silentMediaWanted = true;
+    if (silentMediaPlaying()) { lastSilentWaitMs = 0; if (then) then(); return; }
+    var called = false, t0 = Date.now();
+    function go() { if (called) return; called = true; lastSilentWaitMs = Date.now() - t0; if (then) then(); }
     try {
       if (!silentMedia) {
         silentMedia = new Audio(SILENT_WAV_SRC);
@@ -2322,13 +2345,27 @@
         silentMedia.preload = "auto";
         silentMedia.setAttribute("playsinline", "");
         silentMedia.setAttribute("aria-hidden", "true");
+        // the system may pause the element (an interruption while speech starts): it is resumed at once, in the background,
+        // as long as speech is wanted -- the next run never has to wait for a cold start
+        silentMedia.addEventListener("pause", function () {
+          if (silentMediaWanted && !silentMediaStoppedByUs) { try { var rp = silentMedia.play(); if (rp && rp.catch) rp.catch(function () {}); } catch (eRp) { /* no-op */ } }
+        });
         window.__silentMedia = silentMedia;
       }
+      silentMediaStoppedByUs = false;
+      var warm = silentMediaStartedOnce;
+      silentMediaStartedOnce = true;
       var p = silentMedia.play();
+      if (warm) {                     // a run that follows another one: speech is not held back for the element
+        if (p && p.catch) p.catch(function () {});
+        go();
+        return;
+      }
       if (p && typeof p.then === "function") p.then(go, go); else go();
-      setTimeout(go, 400);   // never hold a speech run back for more than a moment (a refused play() still lets it speak)
+      setTimeout(go, 250);   // never hold a speech run back for more than a moment (a refused play() still lets it speak)
     } catch (eSm) { go(); }
   }
+  var silentMediaStoppedByUs = false;
   function scheduleSilentMediaStop() {
     if (!silentMedia) return;
     if (silentMediaIdleTimer) clearTimeout(silentMediaIdleTimer);
@@ -2336,6 +2373,9 @@
   }
   function stopSilentMedia() {
     if (silentMediaIdleTimer) { clearTimeout(silentMediaIdleTimer); silentMediaIdleTimer = 0; }
+    silentMediaWanted = false;
+    silentMediaStoppedByUs = true;
+    silentMediaStartedOnce = false;   // after our own stop, the next run waits for a cold start again
     try { if (silentMedia) silentMedia.pause(); } catch (eP) { /* no-op */ }
   }
   function unlockAudioSession() {
@@ -2580,7 +2620,7 @@
         var engineMs = Math.round(((window.performance && performance.now) ? performance.now() : Date.now()) - tSpeak);
         lastStartedSpeechLang = uLang;
         try {
-          var rec = { lang: u.lang || "", voice: (u.voice && u.voice.name) || "", switched: switched, oursMs: oursMs, engineMs: engineMs };
+          var rec = { lang: u.lang || "", voice: (u.voice && u.voice.name) || "", switched: switched, oursMs: oursMs, engineMs: engineMs, silentMs: lastSilentWaitMs, silentPlaying: silentMediaPlaying() };
           (window.__ttsLatency = window.__ttsLatency || []).push(rec);
           if (window.__ttsLatency.length > 60) window.__ttsLatency.shift();
         } catch (eLat) { /* no-op */ }
@@ -13055,7 +13095,10 @@ function verifyDistribution(units, dist, pins) {
     // getPool(key) pool -- used by the "[학습 범위내 복습 게임]" vocab-focus-banner button so it
     // can show the "어휘" subtab as selected (key stays "vocab") while only testing the words in
     // the currently-scoped range, without touching/polluting getPool()'s poolCache for "vocab".
+    var scopedOrdered = false;
     function selectCategory(key, scope, poolOverride) {
+      var ordered = scopedOrdered;
+      scopedOrdered = false;
       scope = scope || "all";
       if (Array.isArray(scope)) scope = scope.filter(Boolean).filter(function (s, i, a) { return a.indexOf(s) === i; });
       // Guards every entry point into this function (button clicks, the boot-time default,
@@ -13083,6 +13126,7 @@ function verifyDistribution(units, dist, pins) {
       var prevKey = studyState.tabKey;
       studyState.tabKey = key;
       studyState.scope = scope;
+      studyState.ordered = ordered;
       studyState.pool = dedupeByVi((poolOverride || getPool(key, scope)).map(function (item) {
         return { vi: stripReviewListMarker(item.vi), reviewId: item.reviewId, kr: stripReviewListMarker(item.kr), meaning: item.meaning || "", songNo: item.songNo, ex: item.ex || null };
       }));
@@ -13142,6 +13186,7 @@ function verifyDistribution(units, dist, pins) {
       if (srsMarkReviewed(item.vi)) renderSrsStatus();
     }
     window.__goToScopedVocabReview = function () {
+      scopedOrdered = true;      // [학습 범위내 복습 게임]: the words come in the order they were studied, never shuffled
       goToReview("vocab", vocabScopedPool());
     };
 
@@ -13205,7 +13250,7 @@ function verifyDistribution(units, dist, pins) {
     /* ---------- flashcard ---------- */
     function startFlash() {
       // 간격 복습 keeps its order: the longest overdue word first
-      studyState.deck = studyState.tabKey === "srs" ? modePool().slice() : shuffle(modePool());
+      studyState.deck = studyState.tabKey === "srs" || studyState.ordered ? modePool().slice() : shuffle(modePool());
       studyState.idx = 0;
       studyState.flashDir = studyState.flashDir || "vi-to-target";
       renderFlash();
@@ -13357,6 +13402,11 @@ function verifyDistribution(units, dist, pins) {
       nextMcq();
     }
     function pickRandomDistinctFromCurrent(pool) {
+      if (studyState.ordered && pool.length) {       // a scoped review keeps the studied order (and starts over after the last word)
+        var at = -1;
+        if (studyState.current) pool.some(function (p, i) { if (p.vi === studyState.current.vi) { at = i; return true; } return false; });
+        return pool[(at + 1) % pool.length];
+      }
       var item = pool[Math.floor(Math.random() * pool.length)];
       if (studyState.current && pool.length > 1) {
         var tries = 0;
