@@ -600,6 +600,8 @@
     "자음 발음 — 단자음": {"vi": "Phát âm phụ âm — phụ âm đơn", "cs": "Výslovnost souhlásek — jednoduché souhlásky", "zh_cn": "子音发音——单子音", "zh": "子音發音——單子音", "en": "Consonant Pronunciation — Single Consonants", "fr": "Prononciation des consonnes — Consonnes simples", "de": "Konsonantenaussprache — Einfache Konsonanten", "hu": "Mássalhangzók kiejtése — egyszerű mássalhangzók", "id": "Pelafalan Konsonan — Konsonan Tunggal", "ja": "子音の発音 — 単子音", "pl": "Wymowa spółgłosek — Spółgłoski pojedyncze"},
     "자음 발음 — 복자음": {"vi": "Phát âm phụ âm — phụ âm ghép", "cs": "Výslovnost souhlásek — spřežky", "zh_cn": "子音发音——复合子音", "zh": "子音發音——複合子音", "en": "Consonant Pronunciation — Consonant Clusters", "fr": "Prononciation des consonnes — Groupes de consonnes", "de": "Konsonantenaussprache — Konsonantenverbindungen", "hu": "Mássalhangzók kiejtése — összetett mássalhangzók", "id": "Pelafalan Konsonan — Konsonan Ganda", "ja": "子音の発音 — 複合子音", "pl": "Wymowa spółgłosek — Zbitki spółgłoskowe"},
     "성조 (6개)": {"vi": "Thanh điệu (6)", "cs": "Tóny (6)", "zh_cn": "声调（6个）", "zh": "聲調（6個）", "en": "Tones (6)", "fr": "Tons (6)", "de": "Töne (6)", "hu": "Tónusok (6)", "id": "Nada (6)", "ja": "声調（6つ）", "pl": "Tony (6)"},
+    "베트남어 6성조 안내": {"vi": "Hướng dẫn 6 thanh điệu tiếng Việt", "cs": "Průvodce 6 vietnamskými tóny", "zh_cn": "越南语6声调指南", "zh": "越南語6聲調指南", "en": "Guide to the 6 Vietnamese Tones", "fr": "Guide des 6 tons vietnamiens", "de": "Leitfaden zu den 6 vietnamesischen Tönen", "hu": "Útmutató a 6 vietnámi tónushoz", "id": "Panduan 6 Nada Bahasa Vietnam", "ja": "ベトナム語6声調案内", "pl": "Przewodnik po 6 tonach języka wietnamskiego"},
+    "설명: ": {"vi": "Giải thích: ", "cs": "Popis: ", "zh_cn": "说明：", "zh": "說明：", "en": "Description: ", "fr": "Description : ", "de": "Beschreibung: ", "hu": "Leírás: ", "id": "Penjelasan: ", "ja": "説明：", "pl": "Opis: "},
     "베트남어에는 음의 높낮이를 구별하는 6개의 성조가 있어요. 같은 글자라도 성조에 따라 완전히 다른 단어가 됩니다.": {"vi": "Tiếng Việt có 6 thanh điệu phân biệt độ cao của âm. Cùng một chữ nhưng khác thanh điệu sẽ thành những từ hoàn toàn khác nhau.", "cs": "Vietnamština má 6 tónů rozlišujících výšku hlasu. Stejná písmena mají podle tónu zcela odlišný význam.", "zh_cn": "越南语有6个用来区分音高的声调。就算是同一个字母，依声调不同也会变成完全不同的单字。", "zh": "越南語有6個用來區分音高的聲調。就算是同一個字母，依聲調不同也會變成完全不同的單字。", "en": "Vietnamese has six tones that distinguish pitch. Even the same letters can become completely different words depending on the tone.", "fr": "Le vietnamien compte six tons qui distinguent la hauteur musicale. Les mêmes lettres forment des mots entièrement différents selon le ton.", "de": "Im Vietnamesischen gibt es 6 Töne, die die Tonhöhe bestimmen. Dieselben Buchstaben ergeben je nach Ton völlig unterschiedliche Wörter.", "hu": "A vietnámi nyelvben 6 hangmagasság-megkülönböztető tónus létezik. Ugyanaz a szó tónustól függően teljesen mást jelenthet.", "id": "Bahasa Vietnam memiliki 6 nada yang membedakan tinggi nada. Huruf yang sama dapat menjadi kata yang berbeda tergantung nadanya.", "ja": "ベトナム語には音の高低を区別する6つの声調があります。同じ文字でも声調によって全く違う単語になります。", "pl": "W języku wietnamskim występuje 6 tonów różnicujących wysokość głosu. Te same litery tworzą zupełnie inne słowa w zależności od tonu."},
     "성조 조합 연습 (36가지)": {"vi": "Luyện tổ hợp thanh điệu (36 tổ hợp)", "cs": "Cvičení kombinací tónů (36 kombinací)", "zh_cn": "声调组合练习（36种）", "zh": "聲調組合練習（36種）", "en": "Tone Combination Practice (36 Combinations)", "fr": "Pratique des combinaisons de tons (36 combinaisons)", "de": "Tonkombinationen üben (36 Paare)", "hu": "Tónuskombinációk gyakorlása (36 változat)", "id": "Latihan Kombinasi Nada (36 Variasi)", "ja": "声調の組み合わせ練習（36通り）", "pl": "Ćwiczenie kombinacji tonów (36 par)"},
     "두 음절의 성조를 조합하면 6×6 = 36가지 경우가 나와요. 앞 음절의 성조별로 묶었으니 눌러서 열어 보고, 실생활에서 자주 쓰는 단어로 성조 조합을 듣고 연습해 보세요.": {"vi": "Kết hợp thanh điệu của hai âm tiết sẽ có 6×6 = 36 trường hợp. Các tổ hợp được nhóm theo thanh điệu của âm tiết đầu — hãy nhấn để mở từng nhóm, rồi nghe và luyện tập với những từ thường dùng trong đời sống.", "cs": "Kombinací tónů dvou slabik získáte 6×6 = 36 možných dvojic. Jsou seskupeny podle tónu první slabiky.", "zh_cn": "将两个音节的声调组合起来，会有6×6＝36种情况。已依前一音节的声调分组，点选展开查看，并用日常生活中常用的单字聆听、练习声调组合吧。", "zh": "將兩個音節的聲調組合起來，會有6×6＝36種情況。已依前一音節的聲調分組，點選展開查看，並用日常生活中常用的單字聆聽、練習聲調組合吧。", "en": "Combining the tones of two syllables gives you 6×6 = 36 possible pairs. They're grouped by the first syllable's tone — tap to expand each group, and listen to and practice the tone combinations using words commonly used in everyday life.", "fr": "En combinant les tons de deux syllabes, on obtient 6×6 = 36 possibilités. Regroupées par le ton de la première syllabe, ouvrez chaque groupe pour écouter et pratiquer avec des mots de la vie courante.", "de": "Die Kombination zweier Silbentöne ergibt 6×6 = 36 Möglichkeiten. Sie sind nach dem Ton der ersten Silbe gruppiert – öffnen Sie jede Gruppe und üben Sie mit Wörtern aus dem Alltag.", "hu": "Két szótag tónusainak kombinálásával 6×6 = 36 lehetséges pár jön létre. Az első szótag tónusa szerint vannak csoportosítva.", "id": "Menggabungkan nada dua suku kata menghasilkan 6×6 = 36 pasangan. Dikelompokkan berdasarkan nada suku kata pertama.", "ja": "2つの音節の声調を組み合わせると、6×6＝36通りになります。前の音節の声調ごとにまとめてあるので、タップして開き、日常生活でよく使う単語で声調の組み合わせを聞いて練習してみましょう。", "pl": "Kombinacja tonów dwóch sylab daje 6×6 = 36 możliwości. Pogrupowano je według tonu pierwszej sylaby — rozwiń grupy, aby słuchać i ćwiczyć popularne słowa z życia codziennego."},
@@ -1435,10 +1437,14 @@
   // 'ko' value (stable across UI languages, since translated text alone can't be mapped back to
   // a tone) rather than needing every one of TONES/TONE_PAIRS/TONE_ZH_CORR's data shapes to also
   // carry a raw tone-key field.
-  var TONE_VI_NAME = { "단평성": "ngang", "상성": "sắc", "장평성": "huyền", "회성": "hỏi", "거성": "ngã", "하성": "nặng" };
+  var TONE_VI_NAME = {
+    "단평성": "ngang", "상성": "sắc", "장평성": "huyền", "회성": "hỏi", "거성": "ngã", "하성": "nặng",
+    "평성": "ngang", "현성": "huyền", "예성": "sắc", "문성": "hỏi", "질성": "ngã", "중성": "nặng"
+  };
   function toneNameWithVi(krDict) {
     var label = T(krDict);
     var vi = krDict && TONE_VI_NAME[krDict.ko];
+    if (currentLang === "vi" && vi) return label || ("thanh " + vi);
     return vi ? label + "(thanh " + vi + ")" : label;
   }
 
@@ -6698,10 +6704,13 @@
 
     /* -- 성조 -- */
     var tonesHtml = '<div class="p-section"><div class="p-section-head"><h3>' + TU("성조 (6개)") + '</h3>' +
-      readAllButtonHtml(TONES.map(function (t) { return t.mark; })) + '</div><p class="p-desc">' + TU("베트남어에는 음의 높낮이를 구별하는 6개의 성조가 있어요. 같은 글자라도 성조에 따라 완전히 다른 단어가 됩니다.") + '</p><div class="tone-list">';
+      readAllButtonHtml(TONES.map(function (t) { return t.mark; })) + '</div><p class="p-desc">' + TU("베트남어에는 음의 높낮이를 구별하는 6개의 성조가 있어요. 같은 글자라도 성조에 따라 완전히 다른 단어가 됩니다.") + '</p>' +
+      '<div class="tone-chart-wrap"><img class="tone-chart-img" src="assets/thanh-dieu-tieng-viet.png" alt="Thanh điệu Tiếng Việt" loading="lazy"></div>' +
+      '<h4 class="tone-guide-head">' + TU("베트남어 6성조 안내") + '</h4><div class="tone-list">';
     TONES.forEach(function (t) {
+      var titleText = t.title ? T(t.title) : (t.name + ' · ' + T(t.symbol));
       tonesHtml += '<div class="tone-row"><div class="tone-mark"><div class="ch vn">' + t.mark + '<button class="speak-btn" data-speak="' + escapeAttr(t.mark) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div><div class="nm">' + escapeHtml(toneNameWithVi(t.kr)) + '</div></div>' +
-        '<div class="tone-info"><div class="kr">' + t.name + ' · ' + escapeHtml(T(t.symbol)) + '</div><div class="d">' + escapeHtml(T(t.desc)) + '</div></div></div>';
+        '<div class="tone-info"><div class="kr">' + escapeHtml(titleText) + '</div><div class="d">' + TU("설명: ") + escapeHtml(T(t.desc)) + '</div></div></div>';
     });
     tonesHtml += '</div></div>';
     tonesHtml += renderToneZhCorr();
