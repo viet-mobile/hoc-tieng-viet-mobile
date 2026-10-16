@@ -8255,6 +8255,18 @@ function verifyDistribution(units, dist, pins) {
     var units = ((data.source && data.source.units) || []).map(function (u) {
       var su = staticUnits.filter(function (x) { return x.unit === u.unit; })[0] || {};
       function atom(x, kind) {
+        // Stored admin plans can still carry the old complete 15-word order-reversal range.
+        // Upgrade that legacy full range before matching the current multilingual source text.
+        // Partial ranges are intentional and must retain their own bounds.
+        if (x.link && x.link.subVal === "orderrev" && x.link.vocabRange &&
+            x.link.vocabRange.start === 0 && x.link.vocabRange.end === 15) {
+          var text = {};
+          Object.keys(x.text || {}).forEach(function (lang) {
+            var value = x.text[lang];
+            text[lang] = typeof value === "string" ? value.replace(/1(\s*[~–—-]\s*)15(?![0-9])/g, function (_, dash) { return "1" + dash + "22"; }) : value;
+          });
+          x = Object.assign({}, x, {text: text, link: Object.assign({}, x.link, {vocabRange: {start: 0, end: 22}})});
+        }
         var st = staticByUid[x.uid];
         var out = { uid: x.uid, unit: u.unit, kind: kind, text: liveText(st && st.text, x.text, su), link: x.link || null };
         if (kind === "learning") out.page = x.page || null; else { out.day = x.day; out.category = x.category; }
