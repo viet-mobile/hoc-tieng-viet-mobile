@@ -6622,11 +6622,11 @@
   // [발음] > [성조]: the six Vietnamese tones as pitch contours (drawn here as SVG, not a picture): 1 level, 2 falling, 3 rising,
   // 4 dipping, 5 broken rising, 6 short heavy fall. The dotted parts are where the voice breaks off (5, 6).
   function toneChartSvg() {
-    var F = "Verdana, Tahoma, 'Segoe UI', sans-serif", S = "Georgia, 'Times New Roman', serif";
+    var F = "Arial, 'Helvetica Neue', 'Noto Sans', sans-serif", S = "'Times New Roman', Times, 'Noto Serif', serif";   // both carry every Vietnamese letter (Georgia / Verdana do not on some devices)
     function lab(x, y, color, text) { return '<text x="' + x + '" y="' + y + '" font-family="' + F + '" font-size="70" fill="' + color + '">' + text + '</text>'; }
     function leg(x, y, text) { return '<text x="' + x + '" y="' + y + '" font-family="' + S + '" font-size="50" font-weight="700" fill="#222">' + text + '</text>'; }
     var dot = ' fill="none" stroke="#222" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="0.1 9"';
-    return '<svg class="tone-chart-svg" viewBox="0 0 1206 1251" role="img" aria-label="Thanh điệu Tiếng Việt" xmlns="http://www.w3.org/2000/svg">' +
+    var svg = '<svg class="tone-chart-svg" viewBox="0 0 1206 1251" role="img" aria-label="Thanh điệu Tiếng Việt" xmlns="http://www.w3.org/2000/svg">' +
       '<rect x="28" y="20" width="1132" height="1202" fill="#fff" stroke="#222" stroke-width="2"/>' +
       '<text x="565" y="180" text-anchor="middle" font-family="' + F + '" font-size="84" fill="#2b2b2b">Thanh điệu Tiếng Việt</text>' +
       '<path d="M36 288V852H1026" fill="none" stroke="#222" stroke-width="9"/>' +
@@ -6646,6 +6646,7 @@
       leg(98, 960, "1. Thanh ngang") + leg(98, 1060, "2. Thanh huyền") + leg(98, 1160, "3. Thanh sắc") +
       leg(615, 960, "4. Thanh hỏi") + leg(615, 1060, "5. Thanh ngã") + leg(615, 1160, "6. Thanh nặng") +
       '</svg>';
+    return svg.normalize ? svg.normalize("NFC") : svg;
   }
   function renderPron() {
     if (!PRON_PANE_ELS.settings) return;
