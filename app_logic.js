@@ -322,6 +322,8 @@
     "이 기기": {"vi": "Thiết bị này", "cs": "Toto zařízení", "zh_cn": "本设备", "zh": "本裝置", "en": "This device", "fr": "Cet appareil", "de": "Dieses Gerät", "hu": "Ez az eszköz", "id": "Perangkat ini", "ja": "この端末", "pl": "To urządzenie"},
     "무음 스위치 보조 재생 (iPhone·iPad)": {"vi": "Phát âm thanh hỗ trợ khi bật chế độ im lặng (iPhone·iPad)", "cs": "Pomocné přehrávání při ztlumení (iPhone·iPad)", "zh_cn": "静音开关辅助播放 (iPhone·iPad)", "zh": "靜音開關輔助播放 (iPhone·iPad)", "en": "Silent-switch helper playback (iPhone·iPad)", "fr": "Lecture d'appoint en mode silencieux (iPhone·iPad)", "de": "Hilfswiedergabe bei Stummschaltung (iPhone·iPad)", "hu": "Segéd-lejátszás néma módban (iPhone·iPad)", "id": "Pemutaran bantu saat mode senyap (iPhone·iPad)", "ja": "消音スイッチ補助再生 (iPhone·iPad)", "pl": "Odtwarzanie pomocnicze w trybie cichym (iPhone·iPad)"},
     "끄면 학습자 언어로 넘어갈 때 더 빠를 수 있지만, 기기가 무음 상태일 때는 소리가 나지 않습니다.": {"vi": "Khi tắt, việc chuyển sang ngôn ngữ của bạn có thể nhanh hơn, nhưng sẽ không có tiếng khi máy ở chế độ im lặng.", "cs": "Po vypnutí může být přechod do vašeho jazyka rychlejší, ale při ztlumeném zařízení nebude slyšet zvuk.", "zh_cn": "关闭后切换到学习者语言可能更快，但设备静音时将没有声音。", "zh": "關閉後切換到學習者語言可能更快，但裝置靜音時將沒有聲音。", "en": "Turning it off may make the change to your language faster, but there is no sound while the device is on silent.", "fr": "Désactivé, le passage à votre langue peut être plus rapide, mais il n'y a pas de son quand l'appareil est en mode silencieux.", "de": "Ausgeschaltet kann der Wechsel in Ihre Sprache schneller sein, aber bei stummgeschaltetem Gerät ist nichts zu hören.", "hu": "Kikapcsolva gyorsabb lehet az átváltás az Ön nyelvére, de néma módban nem szól a hang.", "id": "Jika dimatikan, peralihan ke bahasa Anda bisa lebih cepat, tetapi tidak ada suara saat perangkat dalam mode senyap.", "ja": "オフにすると学習者の言語への切り替えが速くなることがありますが、端末が消音のときは音が出ません。", "pl": "Po wyłączeniu przejście na Twój język może być szybsze, ale przy wyciszonym urządzeniu nie będzie dźwięku."},
+    "전환 속도 측정": {"vi": "Đo tốc độ chuyển ngôn ngữ", "cs": "Změřit rychlost přepnutí", "zh_cn": "测量切换速度", "zh": "測量切換速度", "en": "Measure language switch", "fr": "Mesurer le changement de langue", "de": "Sprachwechsel messen", "hu": "Nyelvváltás mérése", "id": "Ukur peralihan bahasa", "ja": "切り替え速度を測る", "pl": "Zmierz przełączanie języka"},
+    "안녕하세요, 저는 베트남어를 배우고 있습니다.": {"vi": "Xin chào, tôi đang học tiếng Việt.", "cs": "Dobrý den, učím se vietnamsky.", "zh_cn": "你好，我在学越南语。", "zh": "你好，我在學越南語。", "en": "Hello, I am learning Vietnamese.", "fr": "Bonjour, j'apprends le vietnamien.", "de": "Hallo, ich lerne Vietnamesisch.", "hu": "Helló, vietnámiul tanulok.", "id": "Halo, saya sedang belajar bahasa Vietnam.", "ja": "こんにちは、ベトナム語を勉強しています。", "pl": "Cześć, uczę się wietnamskiego."},
     "들어보기": {"vi": "Nghe thử", "cs": "Vyzkoušet", "zh_cn": "试听", "zh": "試聽", "en": "Try it", "fr": "Écouter", "de": "Probehören", "hu": "Meghallgatás", "id": "Coba dengar", "ja": "試し聞き", "pl": "Posłuchaj"},
     "jw.org에서 더 읽어 보기": {"vi": "Đọc thêm trên jw.org", "cs": "Více na jw.org", "zh_cn": "在 jw.org 上阅读更多", "zh": "在 jw.org 閱讀更多", "en": "Read more on jw.org", "fr": "Pour aller plus loin sur jw.org", "de": "Mehr auf jw.org lesen", "hu": "További olvasnivaló a jw.org-on", "id": "Baca lebih lanjut di jw.org", "ja": "jw.orgでさらに読む", "pl": "Więcej na jw.org"},
     "베트남어 반복 듣기 횟수": {"vi": "Số lần nghe lặp lại tiếng Việt", "cs": "Počet opakování vietnamštiny", "zh_cn": "越南语重复播放次数", "zh": "越南語重複播放次數", "en": "Vietnamese repeat count", "fr": "Nombre de répétitions audio en vietnamien", "de": "Wiederholungen des vietnamesischen Audios", "hu": "Vietnámi ismétlések száma", "id": "Jumlah pengulangan bahasa Vietnam", "ja": "ベトナム語の繰り返し再生回数", "pl": "Liczba powtórzeń nagrania wietnamskiego"},
@@ -1818,6 +1820,25 @@
         '<button type="button" class="tts-rate-reset" aria-label="' + escapeAttr(TU("기본")) + '">' + TU("기본") + '</button>' +
         (o[0] === mine ? '<button type="button" class="tts-rate-try">' + TU("들어보기") + '</button>' : '') + '</div>';
     }).join("") + '</div>';
+    // self-test of the Vietnamese -> learner-language step on this device: the page's own share and the engine's share, with the voices
+    var probe = document.createElement("div");
+    probe.className = "tts-switch-probe";
+    probe.innerHTML = '<button type="button" class="tts-switch-test">' + TU("전환 속도 측정") + '</button> <span class="tts-switch-result" aria-live="polite"></span>';
+    root.appendChild(probe);
+    probe.querySelector(".tts-switch-test").addEventListener("click", function () {
+      var out = probe.querySelector(".tts-switch-result");
+      stopAllSpeech();
+      var mo = readAllMeaningOpts({ mean: TU("안녕하세요, 저는 베트남어를 배우고 있습니다.") });
+      var from = (window.__ttsLatency || []).length;
+      out.textContent = "…";
+      playSpeechRun([{ opts: targetSpeechOpts("Xin chào, tôi đang học tiếng Việt."), gap: 0 }, { opts: mo, gap: 0 }], {
+        onDone: function () {
+          var recs = (window.__ttsLatency || []).slice(from), sw = recs.filter(function (r) { return r.switched; })[0] || recs[recs.length - 1];
+          out.textContent = sw ? sw.lang + " · " + (sw.voice || "-") + " · " + sw.oursMs + " ms + " + sw.engineMs + " ms" +
+            (sw.silentMs ? " (" + sw.silentMs + " ms)" : "") : "-";
+        }
+      });
+    });
     if (IS_IOS_DEVICE) {
       var helper = document.createElement("label");
       helper.className = "tts-silent-helper";
@@ -2328,13 +2349,15 @@
   function silentMediaEnabled() {
     try { return window.localStorage.getItem(SILENT_MEDIA_KEY) !== "off"; } catch (eSe) { return true; }
   }
-  var silentMediaWanted = false;      // speech is running or was running a moment ago: the element should be playing
-  var silentMediaStartedOnce = false; // the element was started in a tap before: later starts do not hold a run back
   var lastSilentWaitMs = 0;           // how long the last run waited for the element (shown in __ttsLatency)
+  // Cold start (the element is not playing: first speech of the visit, or after the idle stop): the engine's audio session needs a
+  // moment after play() resolves before it really is the media-playback session. Speech handed over earlier is muted by the ringer
+  // switch for its first part -- with 3 repetitions only the last one was heard. So a cold start waits for play() AND this settle time.
+  // While the element keeps playing (the following runs) nothing is waited for.
+  var SILENT_MEDIA_SETTLE_MS = 350, SILENT_MEDIA_GATE_MAX_MS = 900, SILENT_MEDIA_IDLE_MS = 20000;
   function startSilentMedia(then) {
     if (silentMediaIdleTimer) { clearTimeout(silentMediaIdleTimer); silentMediaIdleTimer = 0; }
     if (!IS_IOS_DEVICE || typeof Audio === "undefined" || !silentMediaEnabled()) { lastSilentWaitMs = 0; if (then) then(); return; }
-    silentMediaWanted = true;
     if (silentMediaPlaying()) { lastSilentWaitMs = 0; if (then) then(); return; }
     var called = false, t0 = Date.now();
     function go() { if (called) return; called = true; lastSilentWaitMs = Date.now() - t0; if (then) then(); }
@@ -2345,37 +2368,21 @@
         silentMedia.preload = "auto";
         silentMedia.setAttribute("playsinline", "");
         silentMedia.setAttribute("aria-hidden", "true");
-        // the system may pause the element (an interruption while speech starts): it is resumed at once, in the background,
-        // as long as speech is wanted -- the next run never has to wait for a cold start
-        silentMedia.addEventListener("pause", function () {
-          if (silentMediaWanted && !silentMediaStoppedByUs) { try { var rp = silentMedia.play(); if (rp && rp.catch) rp.catch(function () {}); } catch (eRp) { /* no-op */ } }
-        });
         window.__silentMedia = silentMedia;
       }
-      silentMediaStoppedByUs = false;
-      var warm = silentMediaStartedOnce;
-      silentMediaStartedOnce = true;
       var p = silentMedia.play();
-      if (warm) {                     // a run that follows another one: speech is not held back for the element
-        if (p && p.catch) p.catch(function () {});
-        go();
-        return;
-      }
-      if (p && typeof p.then === "function") p.then(go, go); else go();
-      setTimeout(go, 250);   // never hold a speech run back for more than a moment (a refused play() still lets it speak)
+      function settled() { setTimeout(go, SILENT_MEDIA_SETTLE_MS); }
+      if (p && typeof p.then === "function") p.then(settled, go); else settled();   // a refused play() lets the speech go at once
+      setTimeout(go, SILENT_MEDIA_GATE_MAX_MS);   // never hold a speech run back for more than a moment
     } catch (eSm) { go(); }
   }
-  var silentMediaStoppedByUs = false;
   function scheduleSilentMediaStop() {
     if (!silentMedia) return;
     if (silentMediaIdleTimer) clearTimeout(silentMediaIdleTimer);
-    silentMediaIdleTimer = setTimeout(stopSilentMedia, 5000);
+    silentMediaIdleTimer = setTimeout(stopSilentMedia, SILENT_MEDIA_IDLE_MS);
   }
   function stopSilentMedia() {
     if (silentMediaIdleTimer) { clearTimeout(silentMediaIdleTimer); silentMediaIdleTimer = 0; }
-    silentMediaWanted = false;
-    silentMediaStoppedByUs = true;
-    silentMediaStartedOnce = false;   // after our own stop, the next run waits for a cold start again
     try { if (silentMedia) silentMedia.pause(); } catch (eP) { /* no-op */ }
   }
   function unlockAudioSession() {
@@ -12721,6 +12728,7 @@ function verifyDistribution(units, dist, pins) {
       return muteScope === "both" || muteScope === kind;
     }
     var autoAdvanceTimer = null;
+    var autoAdvanceGen = 0;   // raised when 자동 넘김 is switched off: callbacks of the older chain do nothing
     function clearAutoAdvanceTimer() {
       if (autoAdvanceTimer) { clearTimeout(autoAdvanceTimer); autoAdvanceTimer = null; }
     }
@@ -12748,7 +12756,9 @@ function verifyDistribution(units, dist, pins) {
     // the answer, then move to the next question" tail every mode's auto-advance uses, whether
     // reached via a manual answer or via armAutoReveal's own cold reveal.
     function speakThenAdvance(text, isVi, advanceFn) {
-      function go() { if (reviewTabIsActive()) advanceFn(); }
+      var gen = autoAdvanceGen;
+      // switching 자동 넘김 off ends what was already under way: a read-aloud that finishes later moves nothing
+      function go() { if (gen === autoAdvanceGen && reviewTabIsActive()) advanceFn(); }
       var kind = isVi ? "vi" : "meaning";
       if (isMuted(kind)) {
         go();
@@ -12833,7 +12843,7 @@ function verifyDistribution(units, dist, pins) {
         document.getElementById("auto-advance-seconds").disabled = !autoAdvanceEnabled;
         var cardRep = document.getElementById("auto-card-repeats");
         if (cardRep) cardRep.disabled = !autoAdvanceEnabled;
-        if (!autoAdvanceEnabled) clearAutoAdvanceTimer();
+        if (!autoAdvanceEnabled) { autoAdvanceGen++; clearAutoAdvanceTimer(); }
         else if (studyState.current) { studyState.autoRevealKey = null; armAutoReveal(currentRevealFn()); }
       });
       document.getElementById("auto-advance-seconds").addEventListener("change", function (e) {
@@ -13300,6 +13310,7 @@ function verifyDistribution(units, dist, pins) {
       // N-th play has been said; only then the next card. A new card (renderFlash) starts at play 1.
       function advance() {
         if (advanced) { flashDbg("advance ignored: done already"); return; }
+        if (!autoAdvanceEnabled) { flashDbg("advance ignored: 자동 넘김 is off"); return; }
         advanced = true;
         if (autoAdvanceEnabled && (studyState.cardCycle || 1) < autoCardRepeats && studyState.current === item) {
           studyState.cardCycle = (studyState.cardCycle || 1) + 1;

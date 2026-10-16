@@ -33,9 +33,9 @@ const UAS = {
       if (name === 'iphone') {
         ok(during.exists && !during.paused && during.loop && /^data:audio\/wav/.test(during.src), `iphone: a silent looping audio element plays while speech runs ${JSON.stringify(during)}`);
         await E(`document.querySelector('.tab-btn[data-tab="curriculum"]').click()`);   // ends the run
-        await sleep(5600);
+        await sleep(20600);
         const after = await E('window.__silentMedia.paused');
-        ok(after === true, 'iphone: paused again ~5 s after the last run');
+        ok(after === true, 'iphone: paused again ~20 s after the last run');
         // the helper can be switched off in 발음 > 설정: no playing element for a run any more
         await E(`localStorage.setItem('vn-app-silent-media','off');document.querySelector('.tts-rate-try').click();0`);
         await sleep(600);
