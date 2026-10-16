@@ -6822,28 +6822,16 @@ RHYME_GROUPS = [{'final_class': {'vi': 'Không có phụ âm cuối (âm tiết 
 
 
 _VN_TONE_MARK_TO_KEY = {'̀': 'huyen', '́': 'sac', '̃': 'nga', '̉': 'hoi', '̣': 'nang'}
-_VN_TONE_KEY_TO_KR = {'ngang': {'ko': '단평성', 'zh': '橫聲', 'en': 'level tone', 'ja': '横声', 'de': 'Ebener Ton', 'fr': 'Ton égal', 'pl': 'ton równy'},
- 'sac': {'ko': '상성', 'zh': '銳聲', 'en': 'rising tone', 'ja': '鋭声', 'de': 'Steigender Ton', 'fr': 'Ton montant', 'pl': 'ton wznoszący'},
- 'huyen': {'ko': '장평성', 'zh': '玄聲', 'en': 'falling tone', 'ja': '玄声', 'de': 'Fallender Ton', 'fr': 'Ton descendant', 'pl': 'ton opadający'},
- 'hoi': {'ko': '회성',
-         'zh': '問聲',
-         'en': 'dipping tone',
-         'ja': '問声',
-         'de': 'Fallend-steigender Ton',
-         'fr': 'Ton descendant-montant',
-         'pl': 'ton pytający (opadająco-wznoszący)'},
- 'nga': {'ko': '거성',
-         'zh': '跌聲',
-         'en': 'creaky-rising tone',
-         'ja': '跌声',
-         'de': 'Gebrochen steigender Ton',
-         'fr': 'Ton montant glottalisé',
-         'pl': 'ton krtaniowy wznoszący'},
- 'nang': {'ko': '하성', 'zh': '重聲', 'en': 'heavy tone', 'ja': '重声', 'de': 'Schwerer Ton', 'fr': 'Ton lourd', 'pl': 'ton ciężki (opadający krótki)'}}
-_ZH_TONE_LABEL = {1: {'ko': '1성', 'zh': '一聲', 'en': 'Tone 1', 'ja': '第一声', 'de': '1. Ton', 'fr': '1er ton', 'pl': '1. ton'},
- 2: {'ko': '2성', 'zh': '二聲', 'en': 'Tone 2', 'ja': '第二声', 'de': '2. Ton', 'fr': '2e ton', 'pl': '2. ton'},
- 3: {'ko': '3성', 'zh': '三聲', 'en': 'Tone 3', 'ja': '第三声', 'de': '3. Ton', 'fr': '3e ton', 'pl': '3. ton'},
- 4: {'ko': '4성', 'zh': '四聲', 'en': 'Tone 4', 'ja': '第四声', 'de': '4. Ton', 'fr': '4e ton', 'pl': '4. ton'}}
+# Use the same translated Vietnamese tone names as the six-tone pronunciation guide.
+# Keep labels in one source so this correspondence table cannot retain old names.
+from pronunciation_data import TONES as _PRON_TONES
+_VN_TONE_KEY_TO_KR = {key: dict(tone['kr']) for key, tone in zip(
+    ('ngang', 'huyen', 'sac', 'hoi', 'nga', 'nang'), _PRON_TONES
+)}
+_ZH_TONE_LABEL = {1: {'ko': '1성(음평)', 'zh': '一聲（陰平）', 'zh_cn': '一声（阴平）', 'en': 'Tone 1', 'ja': '第一声', 'de': '1. Ton', 'fr': '1er ton', 'pl': '1. ton'},
+ 2: {'ko': '2성(양평)', 'zh': '二聲（陽平）', 'zh_cn': '二声（阳平）', 'en': 'Tone 2', 'ja': '第二声', 'de': '2. Ton', 'fr': '2e ton', 'pl': '2. ton'},
+ 3: {'ko': '3성(상성)', 'zh': '三聲（上聲）', 'zh_cn': '三声（上声）', 'en': 'Tone 3', 'ja': '第三声', 'de': '3. Ton', 'fr': '3e ton', 'pl': '3. ton'},
+ 4: {'ko': '4성(거성)', 'zh': '四聲（去聲）', 'zh_cn': '四声（去声）', 'en': 'Tone 4', 'ja': '第四声', 'de': '4. Ton', 'fr': '4e ton', 'pl': '4. ton'}}
 
 
 def _vn_tone_key(word):
@@ -6869,17 +6857,16 @@ def _build_tone_zh_corr():
     all_words = [wd for grp in RHYME_GROUPS for fam in grp['families'] for wd in fam['words']]
     buckets = {}
     for wd in all_words:
-        key = (_VN_TONE_KEY_TO_KR[_vn_tone_key(wd['word'])]['ko'], _zh_tone_num(wd['pinyin']))
+        key = (_vn_tone_key(wd['word']), _zh_tone_num(wd['pinyin']))
         buckets.setdefault(key, []).append(wd)
     # The 9 pairings the user asked for, in the exact order given.
-    requested = [('단평성', 1), ('단평성', 2), ('상성', 2), ('상성', 4), ('장평성', 2),
-                 ('회성', 3), ('거성', 3), ('하성', 4), ('하성', 2)]
-    vn_kr_by_label = {v['ko']: v for v in _VN_TONE_KEY_TO_KR.values()}
+    requested = [('ngang', 1), ('ngang', 2), ('sac', 2), ('sac', 4), ('huyen', 2),
+                 ('hoi', 3), ('nga', 3), ('nang', 4), ('nang', 2)]
     out = []
     for vn_label, zh_num in requested:
         words = buckets.get((vn_label, zh_num), [])
         out.append({
-            'vn_tone': vn_kr_by_label[vn_label],
+            'vn_tone': _VN_TONE_KEY_TO_KR[vn_label],
             'zh_tone': zh_num,
             'zh_tone_label': _ZH_TONE_LABEL[zh_num],
             'words': [{'word': w['word'], 'hanja': w['hanja'], 'pinyin': w['pinyin'],
