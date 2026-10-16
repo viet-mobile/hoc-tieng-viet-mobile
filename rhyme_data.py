@@ -6828,10 +6828,10 @@ from pronunciation_data import TONES as _PRON_TONES
 _VN_TONE_KEY_TO_KR = {key: dict(tone['kr']) for key, tone in zip(
     ('ngang', 'huyen', 'sac', 'hoi', 'nga', 'nang'), _PRON_TONES
 )}
-_ZH_TONE_LABEL = {1: {'ko': '1성(음평)', 'zh': '一聲（陰平）', 'zh_cn': '一声（阴平）', 'en': 'Tone 1', 'ja': '第一声', 'de': '1. Ton', 'fr': '1er ton', 'pl': '1. ton'},
- 2: {'ko': '2성(양평)', 'zh': '二聲（陽平）', 'zh_cn': '二声（阳平）', 'en': 'Tone 2', 'ja': '第二声', 'de': '2. Ton', 'fr': '2e ton', 'pl': '2. ton'},
- 3: {'ko': '3성(상성)', 'zh': '三聲（上聲）', 'zh_cn': '三声（上声）', 'en': 'Tone 3', 'ja': '第三声', 'de': '3. Ton', 'fr': '3e ton', 'pl': '3. ton'},
- 4: {'ko': '4성(거성)', 'zh': '四聲（去聲）', 'zh_cn': '四声（去声）', 'en': 'Tone 4', 'ja': '第四声', 'de': '4. Ton', 'fr': '4e ton', 'pl': '4. ton'}}
+_ZH_TONE_LABEL = {1: {'ko': '1성', 'zh': '一聲', 'zh_cn': '一声', 'en': 'Tone 1', 'ja': '第一声', 'de': '1. Ton', 'fr': '1er ton', 'pl': '1. ton'},
+ 2: {'ko': '2성', 'zh': '二聲', 'zh_cn': '二声', 'en': 'Tone 2', 'ja': '第二声', 'de': '2. Ton', 'fr': '2e ton', 'pl': '2. ton'},
+ 3: {'ko': '3성', 'zh': '三聲', 'zh_cn': '三声', 'en': 'Tone 3', 'ja': '第三声', 'de': '3. Ton', 'fr': '3e ton', 'pl': '3. ton'},
+ 4: {'ko': '4성', 'zh': '四聲', 'zh_cn': '四声', 'en': 'Tone 4', 'ja': '第四声', 'de': '4. Ton', 'fr': '4e ton', 'pl': '4. ton'}}
 
 
 def _vn_tone_key(word):
