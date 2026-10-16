@@ -336,7 +336,7 @@ WEEK16_TOC = [{'items': [{'link': {'subAttr': 'pron', 'subVal': 'settings', 'tab
              'page': None,
              'text': {'en': 'Vietnamese Vocabulary Study – Week 1 (Reversed Order 1-15)',
                       'ja': 'ベトナム語語彙学習 1週目（語順が逆 1~15）',
-                      'ko': '베트남어 어휘 학습 1주차 (어순반대 1~15번)',
+                      'ko': '베트남어 어휘 학습 1주차 (어순반대 1~22번)',
                       'zh': '越南語詞彙學習 第1週（語序相反 1~15）',
                       'de': 'Vietnamesischer Wortschatz – Woche 1 (Umgekehrte Wortstellung 1–15)',
                       'fr': 'Vocabulaire vietnamien – Semaine 1 (Ordre inverse 1–15)',
