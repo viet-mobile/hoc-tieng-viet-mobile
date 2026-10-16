@@ -12139,6 +12139,19 @@ function verifyDistribution(units, dist, pins) {
     // Single-hanja vocab words (한자음/어순반대, from RHYME_GROUPS / WORD_ORDER_REVERSED_EXTRA)
     // carry a 'hanja' field the other vocab sources don't -- on their review flashcards we show
     // the hanja in parens right after the Korean gloss, e.g. "이룰 성(成)".
+    // An [어순반대] word as a review card: the compound is the question, and the three lines of the [어순반대] tab are its steps, in the order they
+    // are shown AND read: first syllable -> its reading gloss, second syllable -> its gloss, the compound -> its real meaning
+    // ("gia 더할 가(加)", "tăng 오를 증(增)", "gia tăng 증가"). The hanja in parentheses is for the eye; speech never says it.
+    function orderRevItem(wd) {
+      var steps = [];
+      function gl(g, h) { var m = reviewMeaning(g); return m ? (h ? m + "(" + h + ")" : m) : ""; }
+      steps.push({ vi: wd.word, kr: gl(wd.gloss, wd.hanja) });
+      if (wd.second_word) steps.push({ vi: wd.second_word, kr: gl(wd.second_gloss, wd.second_hanja) });
+      var mean = reviewMeaning(wd.example_mean);
+      if (wd.example) steps.push({ vi: wd.example, kr: mean || "" });
+      var item = { vi: wd.example || wd.word, kr: mean || krGlossWithHanja(wd), steps: steps };
+      return item;
+    }
     function krGlossWithHanja(wd) {
       var g = reviewMeaning(wd.gloss);
       if (!g) return null;
@@ -12163,7 +12176,7 @@ function verifyDistribution(units, dist, pins) {
         var k = it.reviewId || vi;
         var m = it.kr ? String(it.kr).trim() : "";
         if (!vi) return;
-        var entry = { vi: vi, reviewId: it.reviewId, kr: m, meaning: it.meaning || "", songNo: it.songNo, ex: it.ex || null };
+        var entry = { vi: vi, reviewId: it.reviewId, kr: m, meaning: it.meaning || "", songNo: it.songNo, ex: it.ex || null, steps: it.steps || null };
         if (!Object.prototype.hasOwnProperty.call(at, k)) { at[k] = out.length; out.push(entry); }
         else if (m && !out[at[k]].kr) { if (!entry.ex) entry.ex = out[at[k]].ex; out[at[k]] = entry; }
         else if (entry.ex && !out[at[k]].ex) out[at[k]].ex = entry.ex;
@@ -12182,7 +12195,7 @@ function verifyDistribution(units, dist, pins) {
       if (!vocabFocus) return [];
       var mode = vocabFocus.mode, out = [];
       // Keep each assigned record: homophones can have different hanja, meanings and examples.
-      function push(vi, kr, ex) { if (vi) out.push({ vi: vi, kr: kr, ex: ex || null, reviewId: "focus:" + mode + ":" + vocabFocus.start + ":" + out.length }); }
+      function push(vi, kr, ex, steps) { if (vi) out.push({ vi: vi, kr: kr, ex: ex || null, steps: steps || null, reviewId: "focus:" + mode + ":" + vocabFocus.start + ":" + out.length }); }
       if (mode === "words") {
         var cw = typeof UNIFIED_WORDS !== "undefined" ? courseWordsFocus(UNIFIED_WORDS) : null;
         (cw || []).forEach(function (w) { var m = w.kr || w.meanings; push(w.vi, reviewMeaning(typeof m === "string" ? { ko: m } : m)); });
@@ -12217,7 +12230,7 @@ function verifyDistribution(units, dist, pins) {
         var orItems = [];
         RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (fam) { fam.words.forEach(function (wd) { if (wd.word_order_reversed) orItems.push(wd); }); }); });
         if (typeof WORD_ORDER_REVERSED_EXTRA !== "undefined") orItems = orItems.concat(WORD_ORDER_REVERSED_EXTRA);
-        orItems.slice(vocabFocus.start, vocabFocus.end).forEach(function (wd) { push(wd.word, krGlossWithHanja(wd)); });
+        orItems.slice(vocabFocus.start, vocabFocus.end).forEach(function (wd) { var oi = orderRevItem(wd); push(oi.vi, oi.kr, null, oi.steps); });
       } else if (mode === "wt") {
         var wtFlat = [];
         WATCHTOWER_VOCAB.forEach(function (wk) { wk.words.forEach(function (w) { wtFlat.push(w); }); });
@@ -12617,7 +12630,7 @@ function verifyDistribution(units, dist, pins) {
         }
       } else if (key === "vocab") {
         if (scope === "rhyme") RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { out.push(rhymeItem(w)); }); }); });
-        else if (scope === "orderrev") { RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { if (w.word_order_reversed) out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }); }); if (typeof WORD_ORDER_REVERSED_EXTRA !== "undefined") WORD_ORDER_REVERSED_EXTRA.forEach(function (w) { out.push({ vi: w.word, kr: krGlossWithHanja(w) }); }); }
+        else if (scope === "orderrev") { RHYME_GROUPS.forEach(function (g) { g.families.forEach(function (f) { f.words.forEach(function (w) { if (w.word_order_reversed) out.push(orderRevItem(w)); }); }); }); if (typeof WORD_ORDER_REVERSED_EXTRA !== "undefined") WORD_ORDER_REVERSED_EXTRA.forEach(function (w) { out.push(orderRevItem(w)); }); }
         else if (scope === "groups") VOCAB_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.word, kr: reviewMeaning(w.meaning) }); }); });
         else if (scope === "basic") BASIC_WORD_GROUPS.forEach(function (g) { g.words.forEach(function (w) { out.push({ vi: w.vi, kr: reviewMeaning(w.kr) }); }); });
         else if (scope === "antonym") ANTONYM_PAIRS.forEach(function (p) { out.push({ vi: p.vi1, kr: reviewMeaning(p.kr1) }, { vi: p.vi2, kr: reviewMeaning(p.kr2) }); });
@@ -13138,7 +13151,7 @@ function verifyDistribution(units, dist, pins) {
       studyState.scope = scope;
       studyState.ordered = ordered;
       studyState.pool = dedupeByVi((poolOverride || getPool(key, scope)).map(function (item) {
-        return { vi: stripReviewListMarker(item.vi), reviewId: item.reviewId, kr: stripReviewListMarker(item.kr), meaning: item.meaning || "", songNo: item.songNo, ex: item.ex || null };
+        return { vi: stripReviewListMarker(item.vi), reviewId: item.reviewId, kr: stripReviewListMarker(item.kr), meaning: item.meaning || "", songNo: item.songNo, ex: item.ex || null, steps: item.steps || null };
       }));
       studyState.score = { correct: 0, total: 0 };
       studyState.current = null;
@@ -13272,6 +13285,13 @@ function verifyDistribution(units, dist, pins) {
     // `full` (the replay of a revealed card) puts the headword in front: headword xN, meaning, example xN, example meaning.
     function hanjaBackItems(item, isRev, full) {
       var mv = isMuted("vi"), mm = isMuted("meaning"), entries = [];
+      if (item.steps) {   // [어순반대]: syllable, its gloss / syllable, its gloss / compound, its meaning -- in this order, hanja never read
+        item.steps.forEach(function (st) {
+          var g = String(st.kr || "").replace(/\s*\([\u3400-\u9FFF\uF900-\uFAFF]+\)\s*$/, "");
+          entries.push([mv ? "" : st.vi, mm || !g ? "" : g]);
+        });
+        return readAllItems(entries.map(normalizeReadAllEntry).filter(Boolean), FLASH_GAPS);
+      }
       // the meaning as the card shows it, without the trailing "(歌)" hanja note (it is for the eye; a voice reads it badly)
       var gloss = String(item.kr || "").replace(/\s*\([\u3400-\u9FFF\uF900-\uFAFF]+\)\s*$/, "");
       if (full) entries.push([mv ? "" : item.vi, mm ? "" : gloss]);
@@ -13323,7 +13343,7 @@ function verifyDistribution(units, dist, pins) {
         flashDbg("scheduleNextCard");
         var b = document.getElementById("flash-next"); if (b) b.click();
       }
-      if (item.ex) { speakHanjaBack(item, isRev, false, function () { if (reviewTabIsActive()) advance(); }); return; }
+      if (item.ex || item.steps) { speakHanjaBack(item, isRev, false, function () { if (reviewTabIsActive()) advance(); }); return; }
       speakThenAdvance(isRev ? item.vi : item.kr, isRev, advance);
     }
     function renderFlash() {
@@ -13345,10 +13365,14 @@ function verifyDistribution(units, dist, pins) {
       // [한자음] card: the example it reads (hanjaBackItems) is on the back too -- "ca sĩ  가수", the very record that is spoken
       var exHtml = item.ex ? '<div class="study-flash-example"><span class="study-flash-ex-vi vn" lang="vi">' + escapeHtml(item.ex.vi) + '</span>' +
         (item.ex.kr ? '<span class="study-flash-ex-kr">' + (item.ex.krHtml || escapeHtml(item.ex.kr)) + '</span>' : '') + '</div>' : '';
+      // [어순반대] card: the three lines of the [어순반대] tab are the back of the card, in the order they are read
+      var stepsHtml = item.steps ? '<div class="study-flash-steps">' + item.steps.map(function (st) {
+        return '<div class="study-flash-step"><span class="study-flash-step-vi vn" lang="vi">' + escapeHtml(st.vi) + '</span><span class="study-flash-step-kr">' + escapeHtml(st.kr) + '</span></div>';
+      }).join("") + '</div>' : '';
       var html = '<div class="study-progress">' + (studyState.idx + 1) + ' / ' + studyState.deck.length + '</div>';
       html += '<div class="study-flash-card" id="flash-card">' +
         '<div class="' + frontClass + '">' + escapeHtml(frontText) + '</div>' +
-        '<div class="' + backClass + '" id="flash-kr" style="display:none">' + escapeHtml(backText) + meaningHtml + exHtml + '</div>' +
+        '<div class="' + backClass + '" id="flash-kr" style="display:none">' + (item.steps ? stepsHtml : escapeHtml(backText)) + meaningHtml + exHtml + '</div>' +
         '<div class="study-flash-hint" id="flash-hint">' + (isRev ? TU("눌러서 베트남어 보기") : TU("눌러서 뜻 보기")) + '</div></div>';
       html += '<div class="study-flash-nav">' +
         '<button class="study-nav-btn" id="flash-prev" aria-label="' + TU("이전 카드") + '">' + chevronIcon("left") + '</button>' +
@@ -13365,7 +13389,7 @@ function verifyDistribution(units, dist, pins) {
         hint.textContent = showing ? (isRev ? TU("눌러서 베트남어 보기") : TU("눌러서 뜻 보기")) : TU("눌러서 가리기");
         if (!showing) {
           srsCardSeen(item);
-          if (item.ex) speakHanjaBack(item, isRev, false);
+          if (item.ex || item.steps) speakHanjaBack(item, isRev, false);
           else if (isRev) {
             if (!isMuted("vi")) speak(item.vi, undefined, FLASH_GAPS);
           } else {
