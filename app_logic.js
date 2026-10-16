@@ -6619,6 +6619,34 @@
     function part(x) { return '<h4>' + escapeHtml(x.title) + '</h4>' + ttsGuideList(x.steps) + (x.note ? '<div class="tts-tip">' + ttsGuideMarkup(x.note) + '</div>' : ''); }
     return ttsGuideCard("home", g.title, '<p class="p-desc">' + escapeHtml(g.lead) + '</p>' + part(g.ios) + part(g.android), false);
   }
+  // [발음] > [성조]: the six Vietnamese tones as pitch contours (drawn here as SVG, not a picture): 1 level, 2 falling, 3 rising,
+  // 4 dipping, 5 broken rising, 6 short heavy fall. The dotted parts are where the voice breaks off (5, 6).
+  function toneChartSvg() {
+    var F = "Verdana, Tahoma, 'Segoe UI', sans-serif", S = "Georgia, 'Times New Roman', serif";
+    function lab(x, y, color, text) { return '<text x="' + x + '" y="' + y + '" font-family="' + F + '" font-size="70" fill="' + color + '">' + text + '</text>'; }
+    function leg(x, y, text) { return '<text x="' + x + '" y="' + y + '" font-family="' + S + '" font-size="50" font-weight="700" fill="#222">' + text + '</text>'; }
+    var dot = ' fill="none" stroke="#222" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="0.1 9"';
+    return '<svg class="tone-chart-svg" viewBox="0 0 1206 1251" role="img" aria-label="Thanh điệu Tiếng Việt" xmlns="http://www.w3.org/2000/svg">' +
+      '<rect x="28" y="20" width="1132" height="1202" fill="#fff" stroke="#222" stroke-width="2"/>' +
+      '<text x="565" y="180" text-anchor="middle" font-family="' + F + '" font-size="84" fill="#2b2b2b">Thanh điệu Tiếng Việt</text>' +
+      '<path d="M36 288V852H1026" fill="none" stroke="#222" stroke-width="9"/>' +
+      '<g fill="none" stroke-width="5" stroke-linecap="round">' +
+      '<path d="M36 524H970" stroke="#5b3a7a"/>' +
+      '<path d="M36 736H690C800 736 900 770 955 825" stroke="#a233f2"/>' +
+      '<path d="M36 577L828 296" stroke="#66bb33"/>' +
+      '<path d="M36 577C70 568 120 562 170 570C300 592 420 700 520 770C570 805 620 822 660 810C710 795 740 700 770 600" stroke="#8e3b3b"/>' +
+      '<path d="M36 577C50 555 62 530 78 512" stroke="#3a7af5"/>' +
+      '<path d="M292 527C310 490 330 400 345 282" stroke="#3a7af5"/>' +
+      '<path d="M36 690C48 715 60 740 78 768" stroke="#3b9b7d"/>' +
+      '</g>' +
+      '<path d="M78 512C95 490 110 482 128 481C170 480 190 520 215 548C240 570 270 560 292 527"' + dot + '/>' +
+      '<path d="M78 768C85 785 92 800 96 812"' + dot + '/>' +
+      lab(372, 303, "#3a7af5", "5.mã") + lab(855, 315, "#66bb33", "3.má") + lab(995, 535, "#5b3a7a", "1.ma") +
+      lab(795, 630, "#8e3b3b", "4.mả") + lab(980, 822, "#a233f2", "2.mà") + lab(118, 822, "#3b9b7d", "6.mạ") +
+      leg(98, 960, "1. Thanh ngang") + leg(98, 1060, "2. Thanh huyền") + leg(98, 1160, "3. Thanh sắc") +
+      leg(615, 960, "4. Thanh hỏi") + leg(615, 1060, "5. Thanh ngã") + leg(615, 1160, "6. Thanh nặng") +
+      '</svg>';
+  }
   function renderPron() {
     if (!PRON_PANE_ELS.settings) return;
 
@@ -6705,7 +6733,7 @@
     /* -- 성조 -- */
     var tonesHtml = '<div class="p-section"><div class="p-section-head"><h3>' + TU("성조 (6개)") + '</h3>' +
       readAllButtonHtml(TONES.map(function (t) { return t.mark; })) + '</div><p class="p-desc">' + TU("베트남어에는 음의 높낮이를 구별하는 6개의 성조가 있어요. 같은 글자라도 성조에 따라 완전히 다른 단어가 됩니다.") + '</p>' +
-      '<div class="tone-chart-wrap"><img class="tone-chart-img" src="assets/thanh-dieu-tieng-viet.png" alt="Thanh điệu Tiếng Việt" loading="lazy"></div>' +
+      '<div class="tone-chart-wrap">' + toneChartSvg() + '</div>' +
       '<h4 class="tone-guide-head">' + TU("베트남어 6성조 안내") + '</h4><div class="tone-list">';
     TONES.forEach(function (t) {
       var titleText = t.title ? T(t.title) : (t.name + ' · ' + T(t.symbol));
