@@ -8859,7 +8859,7 @@ function verifyDistribution(units, dist, pins) {
               '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(badgeText) + '</span>' +
               (slot.note ? '<span class="curr-week-note">' + escapeHtml(T(slot.note)) + '</span>' : '') + '</span>' +
               currChev() + '</button>' +
-              '<div class="group-body">' + courseServiceHtml(slot.week) + courseGuideHtml(slot.week, sched, slot.week) + (classHasTimetable(slot.week) ? '' : '<div class="curr-item-list">');
+              '<div class="group-body">' + (classHasTimetable(slot.week) ? '' : courseServiceHtml(slot.week)) + courseGuideHtml(slot.week, sched, slot.week) + (classHasTimetable(slot.week) ? '' : '<div class="curr-item-list">');
             var displayItems = classItemsOf(slot);
             var scopeNow = scopeWeek(slot.week);
             // classScope: homework-only items and what the preliminary meeting took over are not on the class card.
