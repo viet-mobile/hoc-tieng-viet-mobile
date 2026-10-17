@@ -21,7 +21,7 @@ def verify(plan, unit):
             if after_mingle:
                 seen_vocab_after = True
             (general if p[5]['kind'] == 'course-vocab' else wt).append((clock, p[1], p[5]['part'], p[2]))
-        elif p[2] == 'group':
+        elif p[2] == 'group' and p[4] == 'move':
             # a walk-around activity is one piece, directly after the walk-around practice, never cut by a vocabulary block
             assert after_mingle and not seen_vocab_after and not p[0].endswith(' (이어서)'), p[0]
         clock += p[1]
@@ -29,7 +29,7 @@ def verify(plan, unit):
     assert not any(p[0].endswith(' (이어서)') for p in plan), 'every item is one piece'
     if general:
         block = 6.5 if unit <= 2 else 4.5
-        g = sum(p[1] for p in plan if len(p) == 5 and p[2] == 'group' and p[3] != 'mingle')
+        g = sum(p[1] for p in plan if len(p) == 5 and p[2] == 'group' and p[4] == 'move' and p[3] != 'mingle')
         ideal = [8, 22, 36, 70 + g, 84 + g]
         owners = ['assist'] * 5
         assert [(d, i, o) for _, d, i, o in general] == [(block, i, owners[i]) for i in range(5)]
@@ -48,7 +48,9 @@ for u in guide['units']:
         base = p[0].removesuffix(' (이어서)')
         # user's principles
         if base.startswith('성조연습'):
-            assert p[2] == 'B'
+            assert p[2] == ('group' if base == '성조연습, 연속성조' else 'B')
+        if base in ('성조연습, 연속성조', '베트남어 발음 – 자음, 모음 복습'):
+            assert p[2] == 'group' and p[4] == 'stand' and p[3] == 'groupdrill', base
         if '성경 책명 읽기 연습' in base:
             assert p[2] == ('A' if base.endswith('복습') else 'assist')
         if any(k in base for k in ('문화', '일반 문법', '과제 확인', '마치는 노래')):
@@ -65,7 +67,7 @@ for u in guide['units']:
         if b == '성조연습, 연속성조': assert p[1] == 8, b
     if u['date'] == '2026-10-17':
         names = [p[0] for p in u['timePlan']]
-        assert names[1] == '베트남어 발음 – 자음, 모음 복습' and u['timePlan'][1][1:3] == [5, 'B']
+        assert names[1] == '베트남어 발음 – 자음, 모음 복습' and u['timePlan'][1][1:3] == [5, 'group']
         assert dict((p[0], p[1:3]) for p in u['timePlan'])['베트남어 숫자 복습'] == [7, 'B']
         assert dict((p[0], p[1:3]) for p in u['timePlan'])['베트남어 성경 책명 읽기 연습 1 (창세기-시편) 복습'] == [7, 'A']
     assert u.get('assistant') == ('Bình' if u['date'] == '2026-11-15' else None)

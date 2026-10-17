@@ -1024,8 +1024,8 @@
           [
             "베트남어 발음 – 자음, 모음 복습",
             5,
-            "B",
-            "pron",
+            "group",
+            "groupdrill",
             "stand"
           ],
           [
@@ -1053,8 +1053,8 @@
           [
             "성조연습, 연속성조",
             8,
-            "B",
-            "tone",
+            "group",
+            "groupdrill",
             "stand"
           ],
           [
@@ -1299,8 +1299,8 @@
           [
             "성조연습, 연속성조",
             8,
-            "B",
-            "tone",
+            "group",
+            "groupdrill",
             "stand"
           ],
           [
@@ -1554,8 +1554,8 @@
           [
             "성조연습, 연속성조",
             8,
-            "B",
-            "tone",
+            "group",
+            "groupdrill",
             "stand"
           ],
           [
@@ -1814,8 +1814,8 @@
           [
             "성조연습, 연속성조",
             8,
-            "B",
-            "tone",
+            "group",
+            "groupdrill",
             "stand"
           ],
           [
@@ -2068,8 +2068,8 @@
           [
             "성조연습, 연속성조",
             8,
-            "B",
-            "tone",
+            "group",
+            "groupdrill",
             "stand"
           ],
           [
@@ -2328,8 +2328,8 @@
           [
             "성조연습, 연속성조",
             8,
-            "B",
-            "tone",
+            "group",
+            "groupdrill",
             "stand"
           ],
           [
@@ -2597,8 +2597,8 @@
           [
             "성조연습, 연속성조",
             8,
-            "B",
-            "tone",
+            "group",
+            "groupdrill",
             "stand"
           ],
           [
@@ -5544,8 +5544,8 @@
           "vi": "Người Việt bản ngữ · tiếng Hàn chưa thật lưu loát"
         },
         "strengths": {
-          "ko": "성조연습·연속성조와 모든(월~금) 파수대 어휘 학습에서 각 단어를 3번씩 읽고, 10/31 수업부터 제공 연설·일상 회화·일상 생활 문장·이웃 사람과의 대화를 맡습니다",
-          "vi": "Đọc mỗi từ 3 lần trong luyện thanh điệu, thanh điệu liên tiếp và tất cả các phần từ vựng Tháp Canh (thứ Hai đến thứ Sáu)"
+          "ko": "모든(월~금) 파수대 어휘 학습에서 각 단어를 3번씩 읽고, 10/31 수업부터 제공 연설·일상 회화·일상 생활 문장·이웃 사람과의 대화를 맡습니다",
+          "vi": "Đọc mỗi từ 3 lần trong tất cả các phần từ vựng Tháp Canh (thứ Hai đến thứ Sáu)"
         }
       },
       "assist": {
@@ -5588,7 +5588,7 @@
           "vi": "Học viên hoạt động theo nhóm"
         },
         "strengths": {
-          "ko": "돌아다니며 하는 모든 활동을 조별 활동으로 분류하며, 조장이 조원을 개별적으로 도와줍니다",
+          "ko": "돌아다니며 하는 모든 활동과 자음·모음 복습, 성조연습·연속성조를 조별 활동으로 분류하며, 조장이 조원을 개별적으로 도와줍니다",
           "vi": "Mọi hoạt động đi lại tính là hoạt động nhóm; tổ trưởng giúp từng thành viên"
         }
       },
@@ -5632,6 +5632,10 @@
         "encourage": {
           "ko": "해당 강사가 학습자들에게 격려사를 전합니다(15분).",
           "vi": "Giảng viên phụ trách gửi lời khích lệ đến học viên (15 phút)."
+        },
+        "groupdrill": {
+          "ko": "조별로 연습하고 조장이 조원을 개별적으로 도와줍니다.",
+          "vi": "Luyện tập theo nhóm, tổ trưởng giúp từng thành viên."
         },
         "tone": {
           "ko": "B 강사가 각 단어를 3번씩 읽어 줍니다.",

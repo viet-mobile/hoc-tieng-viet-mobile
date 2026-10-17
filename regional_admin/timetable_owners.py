@@ -4,12 +4,12 @@
 Time is allotted to exactly four owners, never split inside an item:
     A       instructor A (Korean): culture, offered talks, daily conversation / sentences, general grammar, homework
             instructions, opening / closing song announcement, and every item not named below
-    B       instructor B Bình (native): tone / continuous-tone practice, all five Watchtower vocabulary blocks (each word 3 times),
+    B       instructor B Bình (native): the first tone practice, all five Watchtower vocabulary blocks (each word 3 times),
             pronunciation, numbers, songs
     assist  native assistant Mai (Bình on the days listed in ASSISTANT_SUBSTITUTE): all five vocabulary blocks (Monday to Friday)
             and the Bible-book reading practice, each word / book name 3 times
-    group   group activity: everything where the students walk around (mingle, games, conversation practice); the group leaders
-            help their members one by one
+    group   group activity: everything where the students walk around (mingle, games, conversation practice) and the group drills
+            (consonant / vowel review, tone and continuous-tone practice); the group leaders help their members one by one
 A row is [name, minutes, owner|None (break), reason key, posture] (+ {kind, part} for the vocabulary blocks).
 Minutes may be half minutes (4.5 = 4 min 30 s).
 
@@ -52,6 +52,8 @@ PINNED = (
     (re.compile(r"성경 책명 읽기 연습 1 \(창세기-시편\) 복습$"), 7),
 )
 FIRST_ITEM = "베트남어 발음 – 자음, 모음 복습"   # taught right after the opening prayer (no vocabulary block before it)
+# practised in groups (students stay in place; the group leaders help their members one by one)
+GROUP_DRILL = re.compile(r"^베트남어 발음 – 자음, 모음 복습$|^성조연습, 연속성조$")
 B_RULES = re.compile(r"성조|발음|숫자|요일|날짜|달, 계절|시간|신권 용어|남북|노래|합창")
 
 
@@ -68,7 +70,7 @@ def owner_of(name, posture, meta=None, unit=0):
         return "A"
     if base == ENCOURAGE_B:
         return "B"
-    if posture == "move" or base == MINGLE:
+    if posture == "move" or base == MINGLE or GROUP_DRILL.search(base):
         return "group"
     if unit >= B_TALK_FROM_UNIT and B_TALK_RULES.search(base):
         return "B"                                # from the 31 Oct class on, B takes these talk / conversation items
@@ -87,6 +89,8 @@ def reason_of(name, meta=None):
     if kind in ("course-vocab", "watchtower-vocab"):
         lead = meta["part"] in LEADER_PARTS
         return ("leadvocab" if kind == "course-vocab" else "leadwtvocab") if lead else ("vocab" if kind == "course-vocab" else "wtvocab")
+    if GROUP_DRILL.search(base):
+        return "groupdrill"
     if re.search(r"성조", base):
         return "tone"
     if BOOK_REVIEW.search(base):
@@ -174,7 +178,7 @@ def rebuild(plan, unit):
     if vocab_class:
         sizes = _apportion([2 * core[n][0] for n in order], content, 2, [_pinned(n) for n in order])   # half minutes, at least 1 min each
         items = [[n, sz, core[n][1], core[n][2], _pinned(n)] for n, sz in zip(order, sizes)]
-        group_items = [it for it in items if owner_of(it[0], it[3], None, unit) == "group"]
+        group_items = [it for it in items if it[3] == "move"]
         items = [it for it in items if it not in group_items]
         G = sum(it[1] for it in group_items)
         pre_total = 100 - 8 - sum(block_h[:3])           # half minutes of teaching before the break
@@ -272,8 +276,8 @@ INSTRUCTORS = {
     "B": {"label": {"ko": "B 강사 (Bình 형제)", "vi": "Giảng viên B (anh Bình)", "en": "Instructor B (Bình)"},
           "short": {"ko": "성조·파수대 어휘·발음", "vi": "thanh điệu, từ vựng Tháp Canh, phát âm", "en": "tones, Watchtower vocabulary, pronunciation"},
           "profile": {"ko": "베트남 원어민 · 한국어는 아주 유창하지 않음", "vi": "Người Việt bản ngữ · tiếng Hàn chưa thật lưu loát"},
-          "strengths": {"ko": "성조연습·연속성조와 모든(월~금) 파수대 어휘 학습에서 각 단어를 3번씩 읽고, 10/31 수업부터 제공 연설·일상 회화·일상 생활 문장·이웃 사람과의 대화를 맡습니다",
-                        "vi": "Đọc mỗi từ 3 lần trong luyện thanh điệu, thanh điệu liên tiếp và tất cả các phần từ vựng Tháp Canh (thứ Hai đến thứ Sáu)"}},
+          "strengths": {"ko": "모든(월~금) 파수대 어휘 학습에서 각 단어를 3번씩 읽고, 10/31 수업부터 제공 연설·일상 회화·일상 생활 문장·이웃 사람과의 대화를 맡습니다",
+                        "vi": "Đọc mỗi từ 3 lần trong tất cả các phần từ vựng Tháp Canh (thứ Hai đến thứ Sáu)"}},
     "assist": {"label": {"ko": "원어민 보조자 (Mai 자매)", "vi": "Trợ giảng bản ngữ (chị Mai)", "en": "Native assistant (Mai)"},
                "short": {"ko": "어휘·성경 책명 읽기", "vi": "đọc từ vựng, tên sách Kinh Thánh", "en": "vocabulary and Bible book names"},
                "profile": {"ko": "베트남 원어민 보조자", "vi": "Trợ giảng người Việt bản ngữ"},
@@ -283,7 +287,7 @@ INSTRUCTORS = {
     "group": {"label": {"ko": "조별 활동", "vi": "Hoạt động nhóm", "en": "Group activity"},
               "short": {"ko": "조장이 조원을 개별적으로 도와준다", "vi": "tổ trưởng giúp từng thành viên trong nhóm", "en": "group leaders help their members one by one"},
               "profile": {"ko": "학습자 조별 활동", "vi": "Học viên hoạt động theo nhóm"},
-              "strengths": {"ko": "돌아다니며 하는 모든 활동을 조별 활동으로 분류하며, 조장이 조원을 개별적으로 도와줍니다",
+              "strengths": {"ko": "돌아다니며 하는 모든 활동과 자음·모음 복습, 성조연습·연속성조를 조별 활동으로 분류하며, 조장이 조원을 개별적으로 도와줍니다",
                           "vi": "Mọi hoạt động đi lại tính là hoạt động nhóm; tổ trưởng giúp từng thành viên"}},
     "note": {"ko": "시간은 A 강사, B 강사, 보조자, 조별 활동 중 한 곳에만 배정하며, 한 항목을 둘로 나누지 않습니다. 월~금 어휘 학습은 모두 보조자(Mai)가, 월~금 파수대 어휘 학습은 모두 B 강사가 읽습니다. 조별 활동에서는 조장이 조원을 개별적으로 도와줍니다. 어휘는 한자음 34개에 6분 30초, 그 외 34개에 4분 30초, 파수대 어휘 10개에 1분 30초를 잡았습니다.",
              "vi": "Mỗi mục chỉ giao cho một bên: giảng viên A, giảng viên B, trợ giảng hoặc hoạt động nhóm; mọi phần từ vựng (thứ Hai đến thứ Sáu) do trợ giảng Mai đọc, mọi phần từ vựng Tháp Canh do giảng viên B đọc; trong hoạt động nhóm, tổ trưởng giúp từng thành viên. 34 từ Hán Việt 6 phút 30 giây, 34 từ khác 4 phút 30 giây, 10 từ Tháp Canh 1 phút 30 giây."},
@@ -297,6 +301,7 @@ INSTRUCTORS = {
         "leadwtvocab": {"ko": "각 조 조장이 이끌어 조원들이 파수대 어휘를 하나씩 3번 읽습니다.", "vi": "Tổ trưởng từng nhóm dẫn dắt, các thành viên đọc từng từ Tháp Canh 3 lần."},
         "wtvocab": {"ko": "B 강사가 파수대 어휘를 하나씩 3번 읽고 학생들이 따라 읽습니다.", "vi": "Giảng viên B đọc từng từ Tháp Canh 3 lần, học viên đọc theo."},
         "encourage": {"ko": "해당 강사가 학습자들에게 격려사를 전합니다(15분).", "vi": "Giảng viên phụ trách gửi lời khích lệ đến học viên (15 phút)."},
+        "groupdrill": {"ko": "조별로 연습하고 조장이 조원을 개별적으로 도와줍니다.", "vi": "Luyện tập theo nhóm, tổ trưởng giúp từng thành viên."},
         "tone": {"ko": "B 강사가 각 단어를 3번씩 읽어 줍니다.", "vi": "Giảng viên B đọc mỗi từ 3 lần."},
         "bookreview": {"ko": "A 강사가 책명 복습을 이끌고 학생들이 풍선을 튕기며 책명을 읽습니다(#5).", "vi": "Giảng viên A hướng dẫn ôn tên sách, học viên vừa tung bóng vừa đọc (#5)."},
         "bookname": {"ko": "보조자가 각 책명을 3번씩 읽어 줍니다.", "vi": "Trợ giảng đọc mỗi tên sách 3 lần."},
