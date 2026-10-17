@@ -11814,6 +11814,21 @@ function verifyDistribution(units, dist, pins) {
     "âm u": "캄캄한, 어두운, 암울한"
 };
   var LYRIC_WORD_KO_PRON = {"luôn": "루온", "quyền năng": "꾸옌 낭", "lúc": "룩ㅂ", "khuynh hướng": "쿠인 흐엉", "gì": "지", "muôn": "무온"};
+  // Apply curated pronunciations inside longer selected expressions too (muôn dân, etc.).
+  function lyricKoreanWord(text) {
+    var words = String(text || "").trim().split(/\s+/), out = [];
+    for (var i = 0; i < words.length;) {
+      var matched = false;
+      for (var n = Math.min(3, words.length - i); n >= 1; n--) {
+        var key = lyricWordKey(words.slice(i, i + n).join(" "));
+        if (LYRIC_WORD_KO_PRON[key] && (koreanNotationRegion !== "saigon" || ["lúc", "khuynh hướng", "gì", "muôn"].indexOf(key) >= 0)) {
+          out.push(LYRIC_WORD_KO_PRON[key]); i += n; matched = true; break;
+        }
+      }
+      if (!matched) { out.push(hanoiKoreanWord(words[i], koreanNotationRegion)); i++; }
+    }
+    return out.some(function (p) { return !p; }) ? "" : out.join(" ");
+  }
   function lyricWordDictionary() {
     if (lyricWordDict) return lyricWordDict;
     var d = { meaning: {}, pron: {} };
@@ -11827,7 +11842,7 @@ function verifyDistribution(units, dist, pins) {
     (typeof HANOI_EXAMPLES !== "undefined" && HANOI_EXAMPLES || []).forEach(function (r) {
       var k = lyricWordKey(r[0]);
       // Pronunciation is generated from the selected chart; the example table stays as supplied.
-      d.pron[k] = hanoiKoreanWord(r[0], koreanNotationRegion);
+      d.pron[k] = lyricKoreanWord(r[0]);
       if (!d.meaning[k]) d.meaning[k] = String(r[2]).replace(/\(.*$/, "").trim();
     });
     Object.keys(LYRIC_WORD_KO_MEANINGS).forEach(function (word) { d.meaning[lyricWordKey(word)] = LYRIC_WORD_KO_MEANINGS[word]; });
@@ -11865,7 +11880,7 @@ function verifyDistribution(units, dist, pins) {
   function lyricWordClose() { if (lyricWordPop) { lyricWordPop.remove(); lyricWordPop = null; } }
   function lyricWordShow(word) {
     var dict = lyricWordDictionary(), key = lyricWordKey(word.text);
-    var pron = dict.pron[key] || hanoiKoreanWord(word.text, koreanNotationRegion);
+    var pron = dict.pron[key] || lyricKoreanWord(word.text);
     if (!pron) return;
     var mean = dict.meaning[key] || "";
     lyricWordClose();

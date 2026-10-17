@@ -74,6 +74,8 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
       await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);
       const result=await tap(word);eq(result&&result.mean,meaning,'new meaning '+word);
     }
+    await E("document.getElementById('lyr').textContent='muôn dân'");
+    const muonDan=await tap('muôn');ok(muonDan&&muonDan.ko.startsWith('무온 ')&&muonDan.mean==='만민, 모든 사람','curated syllable pronunciation inside longer compound');
     // Three separate folding cards, with the examples moved rather than copied.
     ok(await E("!!document.querySelector('[data-anchor=\"pron-saigon\"]')&&!!document.querySelector('[data-anchor=\"pron-notation-examples\"]')&&!document.querySelector('[data-anchor=\"pron-hanoi\"] .hanoi-examples')&&document.querySelectorAll('[data-anchor=\"pron-notation-examples\"] .hanoi-examples tbody tr').length===22"),'separate Hanoi/Saigon/example folding cards');
     eq(await E("document.getElementById('korean-notation-region').value"),'hanoi','default Hanoi');
