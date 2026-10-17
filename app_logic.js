@@ -7130,8 +7130,11 @@
       assist: { ko: "보조자", vi: "Trợ giảng", en: "Assistant" }, group: { ko: "조별 활동", vi: "Hoạt động nhóm", en: "Group activity" }
     },
     sec: { ko: "초", vi: " giây", en: " s" },
+    ex5: { ko: "#5 교육용 운동", vi: "#5 Vận động học tập", en: "#5 Educational exercise" },
     substitute: { ko: "{date}에는 Mai 자매 대신 {name} 형제가 읽습니다.", vi: "Ngày {date}, anh {name} đọc thay chị Mai.", en: "On {date}, {name} reads instead of Mai." }
   };
+  // The number review and the Bible-book review are done with the #5 balloon exercise.
+  var COURSE_PLAN_EX5 = /^베트남어 숫자 복습$|성경 책명 읽기 연습 \d \([^)]*\) 복습$/;
   // Minutes may be halves (4.5 = 4 min 30 s).
   function planMinutes(m, min, sec) { return (m % 1 ? Math.floor(m) + min + " 30" + sec : m + min); }
   var COURSE_PLAN_ICON = { stand: "\uD83E\uDDCD", sit: "\uD83E\uDE91", move: "\uD83D\uDEB6", flex: "\u23F3", rest: "\u2615" };
@@ -7238,7 +7241,7 @@
       var plabel = gt(posts[p[3]]);
       return '<div class="curr-plan-row curr-plan-' + escapeAttr(p[3]) + '"' + (grouping && grouping.kind ? ' data-plan-kind="' + escapeAttr(grouping.kind) + '" data-plan-part="' + grouping.part + '"' : '') + '><span class="curr-plan-t">' + start + '\u2013' + clock + '</span>' +
         '<span class="curr-plan-p" title="' + escapeAttr(plabel) + '" aria-label="' + escapeAttr(plabel) + '">' + (COURSE_PLAN_ICON[p[3]] || "") + '</span>' +
-        '<span class="curr-plan-n">' + (service ? service.html : escapeHtml(shown) + " " + shortcut) + (cont ? ' <span class="curr-plan-cont">' + escapeHtml(gt(COURSE_PLAN_LABELS.cont)) + '</span>' : '') + '</span>' +
+        '<span class="curr-plan-n">' + (service ? service.html : escapeHtml(shown) + " " + shortcut + (COURSE_PLAN_EX5.test(name) ? ' <span class="curr-guide-chip">' + escapeHtml(gt(COURSE_PLAN_LABELS.ex5)) + '</span>' : '')) + (cont ? ' <span class="curr-plan-cont">' + escapeHtml(gt(COURSE_PLAN_LABELS.cont)) + '</span>' : '') + '</span>' +
         '<span class="curr-plan-ab"><b class="curr-plan-o curr-plan-o-' + escapeAttr(owner) + '">' + escapeHtml(ownerName(owner)) + '</b> ' + escapeHtml(planMinutes(p[1], min, sec)) + '</span></div>';
     }).join("");
     var hasIns = !!(ins && ins.A && ins.B);

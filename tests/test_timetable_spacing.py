@@ -50,7 +50,7 @@ for u in guide['units']:
         if base.startswith('성조연습'):
             assert p[2] == 'B'
         if '성경 책명 읽기 연습' in base:
-            assert p[2] == 'assist'
+            assert p[2] == ('A' if base.endswith('복습') else 'assist')
         if any(k in base for k in ('문화', '일반 문법', '과제 확인', '마치는 노래')):
             assert p[2] == 'A', base
         if any(k in base for k in ('제공 연설', '일상 회화', '일상 생활 문장', '이웃 사람과의 대화')):
@@ -67,7 +67,7 @@ for u in guide['units']:
         names = [p[0] for p in u['timePlan']]
         assert names[1] == '베트남어 발음 – 자음, 모음 복습' and u['timePlan'][1][1:3] == [5, 'B']
         assert dict((p[0], p[1:3]) for p in u['timePlan'])['베트남어 숫자 복습'] == [7, 'B']
-        assert dict((p[0], p[1:3]) for p in u['timePlan'])['베트남어 성경 책명 읽기 연습 1 (창세기-시편) 복습'] == [7, 'assist']
+        assert dict((p[0], p[1:3]) for p in u['timePlan'])['베트남어 성경 책명 읽기 연습 1 (창세기-시편) 복습'] == [7, 'A']
     assert u.get('assistant') == ('Bình' if u['date'] == '2026-11-15' else None)
 assert [has_rhyme(1, i) for i in range(5)] == [True] * 5 and [has_rhyme(2, i) for i in range(5)] == [True] * 5
 last = guide['units'][-1]['timePlan']

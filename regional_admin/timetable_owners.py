@@ -38,6 +38,7 @@ REHEARSAL, REHEARSAL_MIN = "파수대 집회 실연", 60      # the last class: 
 B_TALK_FROM_UNIT = 4                            # class of 2026-10-31
 B_TALK_RULES = re.compile(r"제공 연설|일상 회화|일상 생활 문장|이웃 사람과의 대화")
 
+BOOK_REVIEW = re.compile(r"성경 책명 읽기 연습 \d \([^)]*\) 복습$")   # the Bible-book review is led by instructor A, not the assistant
 A_RULES = re.compile(r"^시작 노래·기도$|^마치는 노래·기도$|제공 연설|^문화|일상 회화|일상 생활 문장|일반 문법|^과제 확인")
 ASSIST_RULES = re.compile(r"어휘 학습|성경 책명 읽기 연습")
 # Items whose length is fixed (minutes); every other teaching item shares the remaining time in proportion to its earlier length.
@@ -71,7 +72,7 @@ def owner_of(name, posture, meta=None, unit=0):
         return "group"
     if unit >= B_TALK_FROM_UNIT and B_TALK_RULES.search(base):
         return "B"                                # from the 31 Oct class on, B takes these talk / conversation items
-    if A_RULES.search(base):
+    if A_RULES.search(base) or BOOK_REVIEW.search(base):
         return "A"
     if ASSIST_RULES.search(base):
         return "assist"
@@ -88,6 +89,8 @@ def reason_of(name, meta=None):
         return ("leadvocab" if kind == "course-vocab" else "leadwtvocab") if lead else ("vocab" if kind == "course-vocab" else "wtvocab")
     if re.search(r"성조", base):
         return "tone"
+    if BOOK_REVIEW.search(base):
+        return "bookreview"
     if re.search(r"성경 책명 읽기 연습", base):
         return "bookname"
     return None
@@ -264,7 +267,7 @@ INSTRUCTORS = {
     "A": {"label": {"ko": "A 강사", "vi": "Giảng viên A", "en": "Instructor A"},
           "short": {"ko": "한국어 설명·문법·안내", "vi": "giải thích tiếng Hàn, ngữ pháp, hướng dẫn", "en": "Korean explanations, grammar, instructions"},
           "profile": {"ko": "한국인 · 베트남어 학습 23년 이상", "vi": "Người Hàn · học tiếng Việt hơn 23 năm"},
-          "strengths": {"ko": "문화 · 일반 문법 · 과제 확인 안내 · 마치는 노래 안내 (10/31 수업부터 제공 연설·일상 회화·일상 생활 문장·이웃 사람과의 대화는 B 강사)",
+          "strengths": {"ko": "문화 · 일반 문법 · 성경 책명 복습 · 과제 확인 안내 · 마치는 노래 안내 (10/31 수업부터 제공 연설·일상 회화·일상 생활 문장·이웃 사람과의 대화는 B 강사)",
                         "vi": "Văn hóa · ngữ pháp · hướng dẫn bài tập · giới thiệu bài hát kết thúc (từ buổi 31/10, bài nói chuyện, hội thoại, câu sinh hoạt và đối thoại với hàng xóm do giảng viên B phụ trách)"}},
     "B": {"label": {"ko": "B 강사 (Bình 형제)", "vi": "Giảng viên B (anh Bình)", "en": "Instructor B (Bình)"},
           "short": {"ko": "성조·파수대 어휘·발음", "vi": "thanh điệu, từ vựng Tháp Canh, phát âm", "en": "tones, Watchtower vocabulary, pronunciation"},
@@ -295,6 +298,7 @@ INSTRUCTORS = {
         "wtvocab": {"ko": "B 강사가 파수대 어휘를 하나씩 3번 읽고 학생들이 따라 읽습니다.", "vi": "Giảng viên B đọc từng từ Tháp Canh 3 lần, học viên đọc theo."},
         "encourage": {"ko": "해당 강사가 학습자들에게 격려사를 전합니다(15분).", "vi": "Giảng viên phụ trách gửi lời khích lệ đến học viên (15 phút)."},
         "tone": {"ko": "B 강사가 각 단어를 3번씩 읽어 줍니다.", "vi": "Giảng viên B đọc mỗi từ 3 lần."},
+        "bookreview": {"ko": "A 강사가 책명 복습을 이끌고 학생들이 풍선을 튕기며 책명을 읽습니다(#5).", "vi": "Giảng viên A hướng dẫn ôn tên sách, học viên vừa tung bóng vừa đọc (#5)."},
         "bookname": {"ko": "보조자가 각 책명을 3번씩 읽어 줍니다.", "vi": "Trợ giảng đọc mỗi tên sách 3 lần."},
     },
 }
