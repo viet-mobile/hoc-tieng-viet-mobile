@@ -27,7 +27,7 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     await sleep(600);
     // ---- the chart's rules (examples that follow them exactly) ----
     const rules = await E(`(()=>{const w=window.__hanoiKo.word;return ['Tháp Canh','Nhân Chứng','Đức Giê-hô-va','Kinh Thánh','hội thánh','nhóm họp','bài hát','cầu nguyện','tiếng Việt','học hỏi','chúng ta','anh chị','quan trọng','tin mừng','Nước Trời','Đức Chúa Trời','bạn của ngài','người Hàn','thần khí thánh','không'].map(x=>w(x));})()`);
-    eq(rules, ['탑 까인', '년 쯩', '득 제호ㅸㅏ', '낀 타인', '호이 타인', '뇸 홉', '바이 핫', '꺼우 응우옌', '띠엥 ㅸㅣ엣', '홉 호이', '쭘 따', '아인 찌', '꽌 쫌', '띤 믕', '느억 쩌이', '득 쭈어 쩌이', '반 꾸어 응아이', '응어이 한', '턴 키 타인', '컴'], 'chart rules');
+    eq(rules, ['탑 까인ㅇ', '년 쯩', '득 제호ㅸㅏ', '낀ㅇ 타인ㅇ', '호이 타인ㅇ', '뇸 홉', '바이 핫', '꺼우 응우옌', '띠엥 ㅸㅣ엣', '혹ㅂ 호이', '쭝ㅁ 따', '아인ㅇ 찌', '꽌 쫑ㅁ', '띤 믕', '느억 쩌이', '득 쭈어 쩌이', '반 꾸어 응아이', '응어이 한', '턴 키 타인ㅇ', '컴'], 'chart rules');
     // ---- a lyric line in the page ----
     await E(`(()=>{const d=document.createElement('div');d.id='lyr';d.className='lyric-vi vn';d.lang='vi';d.style.cssText='position:fixed;left:20px;top:200px;font-size:22px;white-space:nowrap;background:#fff;z-index:1';d.textContent='Đọc sách, Kinh Thánh và Giê-hô-va, xin cầu nguyện';document.body.appendChild(d);})()`);
     const tap = async word => E(`(async()=>{const el=document.getElementById('lyr'),tn=el.firstChild,i=tn.data.indexOf(${JSON.stringify(word)});const r=document.createRange();r.setStart(tn,i);r.setEnd(tn,i+${JSON.stringify(word)}.length);const b=r.getBoundingClientRect();
@@ -35,9 +35,9 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
       const p=document.querySelector('.lyric-word-pop');return p?{ko:p.querySelector('.lyric-word-ko').textContent,mean:(p.querySelector('.lyric-word-mean')||{}).textContent||'',n:document.querySelectorAll('.lyric-word-pop').length,top:p.getBoundingClientRect().top,bottom:p.getBoundingClientRect().bottom}:null;})()`);
     await E("window.setLang('ko')"); await sleep(200);
     let r = await tap('Kinh');
-    ok(r && r.ko === '낀 타인' && r.mean && r.n === 1, 'Kinh -> the 2-syllable word Kinh Thánh: ' + JSON.stringify(r));
-    r = await tap('Thánh'); ok(r && r.ko === '낀 타인' && r.n === 1, 'tapping the second syllable gives the same word, one popup: ' + JSON.stringify(r));
-    r = await tap('sách'); ok(r && r.ko === '돕 사익', 'chart example wins for its exact word (đọc sách): ' + JSON.stringify(r));
+    ok(r && r.ko === '낀ㅇ 타인ㅇ' && r.mean && r.n === 1, 'Kinh -> the 2-syllable word Kinh Thánh: ' + JSON.stringify(r));
+    r = await tap('Thánh'); ok(r && r.ko === '낀ㅇ 타인ㅇ' && r.n === 1, 'tapping the second syllable gives the same word, one popup: ' + JSON.stringify(r));
+    r = await tap('sách'); ok(r && r.ko === '독ㅂ 사익', 'updated lip closure and preserved sách exception: ' + JSON.stringify(r));
     r = await tap('Giê-hô-va'); ok(r && r.ko === '제호ㅸㅏ' && /여호와/.test(r.mean), 'hyphenated name: ' + JSON.stringify(r));
     r = await tap('xin'); ok(r && r.ko === '씬', 'one syllable: ' + JSON.stringify(r));
     ok(r && r.top >= 0 && r.bottom <= await E('window.innerHeight'), 'popup inside the viewport');
@@ -69,6 +69,24 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     const longer=await tap('cầu');ok(longer&&longer.mean&&longer.mean!==overrides['cầu'],'longer existing cầu nguyện wins over cầu: '+JSON.stringify(longer));
     await E("document.getElementById('lyr').textContent='chúng ta'");
     const longerTa=await tap('ta');ok(longerTa&&longerTa.mean&&longerTa.mean!==overrides['ta'],'longer chúng ta wins over ta: '+JSON.stringify(longerTa));
+    const addedMeanings = {"nẻo": "길, 방법, 방향", "đường": "길", "dù": "비록 -하더라도", "dò": "살피다", "tư tưởng": "생각, 사상", "đang": "-(하)고 있다", "làm": "하다, 만들다", "ngay": "곧, -하자마자", "đếm": "세다", "cả": "다, 모두", "tôn vinh": "영광을 돌리다", "ôi": "(감탄사) 오!", "siêu phàm": "평범함을 아득히 벗어나는, 초월하는", "thay": "대단히, 너무나", "muôn dân": "만민, 모든 사람", "kinh hãi": "두려워하다", "tăm tối": "깜깜하다", "đêm đen": "어두운 밤", "vây phủ": "덮다", "vững": "굳건하다", "soi": "비추다", "lối": "길, 방향", "khuất": "숨다", "khỏi": "-로부터", "vùng": "지역, 장소", "kín": "은밀한", "khiến": "-로 하여금 -하게 하다", "chẳng hề": "전혀 (부정어)", "được": "-할 수 있다, 되다", "thật": "참으로; 참된", "chẳng": "결코 (부정어)", "tận": "(심지어) -까지도", "mênh mông": "광대한", "lòng": "마음, 속", "mộ": "무덤", "âm u": "캄캄한, 어두운, 암울한"};
+    for(const [word,meaning] of Object.entries(addedMeanings)){
+      await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);
+      const result=await tap(word);eq(result&&result.mean,meaning,'new meaning '+word);
+    }
+    // Three separate folding cards, with the examples moved rather than copied.
+    ok(await E("!!document.querySelector('[data-anchor=\"pron-saigon\"]')&&!!document.querySelector('[data-anchor=\"pron-notation-examples\"]')&&!document.querySelector('[data-anchor=\"pron-hanoi\"] .hanoi-examples')&&document.querySelectorAll('[data-anchor=\"pron-notation-examples\"] .hanoi-examples tbody tr').length===22"),'separate Hanoi/Saigon/example folding cards');
+    eq(await E("document.getElementById('korean-notation-region').value"),'hanoi','default Hanoi');
+    for(const [word,pron] of [['lúc','룩ㅂ'],['khuynh hướng','쿠인 흐엉'],['gì','지'],['muôn','무온']]){
+      await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);eq((await tap(word))?.ko,pron,'explicit pronunciation '+word);
+    }
+    await E("const select=document.getElementById('korean-notation-region');select.value='saigon';select.dispatchEvent(new Event('change'))");
+    for(const [word,pron] of [['dân','영ㄴ'],['về','예이'],['trời','ㅉ러이'],['sông','송ㅁ'],['sách','삿'],['chia','찌아'],['chết','쩍']]){
+      await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);eq((await tap(word))?.ko,pron,'Saigon popup '+word);
+    }
+    eq(await E("localStorage.getItem('vi-korean-notation-region')"),'saigon','selection saved');
+    await E("window.setLang('en');window.setLang('ko')");eq(await E("document.getElementById('korean-notation-region').value"),'saigon','selection survives rerender');
+    await E("document.getElementById('korean-notation-region').value='hanoi';document.getElementById('korean-notation-region').dispatchEvent(new Event('change'))");
     // the real [노래] lyrics
     await E("document.getElementById('lyr').remove()");
     await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));document.querySelector('.tab-btn[data-tab="sentence"]').click();await sleep(400);document.querySelector('.subtab-btn[data-sentence="song"]').click();await sleep(800);})()`);
@@ -77,6 +95,20 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
       el.dispatchEvent(new MouseEvent('click',{bubbles:true,clientX:b.left+b.width/2,clientY:b.top+b.height/2}));
       const p=document.querySelector('.lyric-word-pop');return p?p.querySelector('.lyric-word-ko').textContent:'';})()`);
     ok(real && /[가-힣ㅸㆄ]/.test(real), 'a real song lyric word opens the popup: ' + real);
+    // The delegated popup covers all song collections and both notation settings.
+    for(const region of ['hanoi','saigon'])for(const kind of ['original','kids']){
+      await E(`(()=>{const select=document.getElementById('korean-notation-region');select.value='${region}';select.dispatchEvent(new Event('change'));document.querySelector('[data-songkind="${kind}"]').click();const root=[...document.querySelectorAll('.song-kind-list')].find(e=>e.offsetParent);const songs='${kind}'==='original'?ORIGINAL_SONGS:CHILDREN_SONGS;const song=songs.find(s=>s.languages?.vi?.available&&(s.languages.vi.lines?.length||s.languages.vi.sections?.length));window.__lyricTestSongId=song.id;root.querySelector('[data-song-id=\"'+song.id+'\"] .song-acc-head').click();})()`);await sleep(150);
+      const popup=await E(`(async()=>{const el=[...document.querySelectorAll('.song-acc .lyric-vi')].find(e=>e.offsetParent);if(!el)return null;el.scrollIntoView({block:'center'});await new Promise(r=>setTimeout(r,80));const tn=el.firstChild,m=/[\\p{L}\\p{M}]+/u.exec(tn.data),r=document.createRange();r.setStart(tn,m.index);r.setEnd(tn,m.index+m[0].length);const b=r.getBoundingClientRect();el.dispatchEvent(new MouseEvent('click',{bubbles:true,clientX:b.left+b.width/2,clientY:b.top+b.height/2}));return document.querySelector('.lyric-word-ko')?.textContent;})()`);
+      ok(!!popup,region+' '+kind+' real lyric popup');
+      // Close the card before checking the next region so the same first card opens again.
+      await E("document.querySelector('[data-song-id=\"'+window.__lyricTestSongId+'\"] .song-acc-head').click()");
+    }
+    await cdp.send('Page.reload');await sleep(600);
+    for(let i=0;i<240;i++){if(await E("document.readyState==='complete'&&typeof window.setLang==='function'&&!!window.__hanoiKo"))break;await sleep(100);}
+    await E("window.setLang('ko')");eq(await E("document.getElementById('korean-notation-region').value"),'saigon','selection survives reload');
+    await cdp.send('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
+    await E("document.querySelector('[data-tab=\"pron\"]').click();document.querySelector('[data-pron=\"jamo\"]').click();const card=document.querySelector('[data-anchor=\"pron-saigon\"]');card.dataset.open='true';card.scrollIntoView({block:'start'})");await sleep(200);
+    ok(await E('document.documentElement.scrollWidth<=window.innerWidth+1'),'phone layout fits the viewport');
     ok(errs.length === 0, 'no runtime errors: ' + errs.join(' | '));
   } finally { chrome.kill(); server.close(); }
   console.log('lyric word popup: ' + checks + ' checks, ' + failures.length + ' failures');

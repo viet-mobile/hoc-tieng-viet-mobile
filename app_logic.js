@@ -6476,15 +6476,17 @@
     if (cur) groups.push(cur);
     return groups.map(function (g) { return '<span class="hanoi-grp">' + g + '</span>'; }).join(" ");
   }
-  function hanoiChartHtml() {
+  function hanoiChartHtml(chart, city) {
+    chart = chart || HANOI_CHART;
+    city = city || "하노이";
     if (typeof HANOI_CHART === "undefined" || currentLang !== "ko") return "";
     function btn(speak) { return '<button class="speak-btn" data-speak="' + escapeAttr(speak) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>'; }
     function tone(t) { return t ? " hanoi-tone-" + t : ""; }
-    var h = '<p class="p-desc">하노이(북부) 발음에 가장 가까운 한국어 표기를 나타낸 표입니다. 글자를 눌러 소리를 들어 보세요.</p>';
+    var h = '<p class="p-desc">' + city + ' 발음에 가장 가까운 한국어 표기를 나타낸 표입니다. 글자를 눌러 소리를 들어 보세요.</p>';
     // two tables side by side: [자음 over 받침] on the left, [모음] on the right
     h += '<div class="hanoi-grid"><div class="hanoi-col">';
     h += '<table class="hanoi-table"><thead><tr><th>베트남어 자음</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
-    HANOI_CHART.initials.forEach(function (g) {
+    chart.initials.forEach(function (g) {
       g.letters.forEach(function (l, i) {
         h += '<tr><td class="hanoi-letter vn' + tone(l[1]) + '">' + escapeHtml(l[0]) + btn(l[0].replace(/-$/, "") + "ơ") + '</td>' +
           (i === 0 ? '<td class="hanoi-ko" rowspan="' + g.letters.length + '">' + (g.parts
@@ -6494,18 +6496,23 @@
     });
     h += '</tbody></table>';
     h += '<table class="hanoi-table"><thead><tr><th>베트남어 받침</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
-    HANOI_CHART.finals.forEach(function (f) {
+    chart.finals.forEach(function (f) {
       h += '<tr><td class="hanoi-letter vn">' + escapeHtml(f[0]) + '</td><td class="hanoi-ko">' + escapeHtml(f[1]) +
         (f[2] ? '<small class="hanoi-final-note">' + escapeHtml(f[2]) + '</small>' : '') + '</td></tr>';
     });
     h += '</tbody></table></div><div class="hanoi-col">';
     h += '<table class="hanoi-table"><thead><tr><th>베트남어 모음</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
-    HANOI_CHART.vowels.forEach(function (v) {
+    chart.vowels.forEach(function (v) {
       h += '<tr class="hanoi-vrow' + tone(v[1]) + '"><td class="hanoi-letter vn">' + escapeHtml(v[0]) + btn(v[0]) + '</td><td class="hanoi-ko">' +
         hanoiVowelParts(v[2]) + '</td></tr>';
     });
     h += '</tbody></table></div></div>';
-    if (HANOI_CHART.footnote) h += '<p class="p-desc hanoi-footnote">' + escapeHtml(HANOI_CHART.footnote) + '</p>';
+    if (chart.footnote) h += '<p class="p-desc hanoi-footnote">' + escapeHtml(chart.footnote) + '</p>';
+    return h.replace(/하노이 발음에 가장 가까운 한국어 표기/g, city + ' 발음에 가장 가까운 한국어 표기');
+  }
+  function hanoiSaigonExamplesHtml() {
+    function btn(speak) { return '<button class="speak-btn" data-speak="' + escapeAttr(speak) + '">' + speakIcon() + '</button>'; }
+    var h = "";
     if (typeof HANOI_EXAMPLES !== "undefined" && HANOI_EXAMPLES.length) {
       var southBadge = '<span class="ns-tag south">남부 발음</span>';
       h += '<table class="hanoi-table hanoi-examples"><thead><tr><th>베트남어 예제</th><th>하노이 발음에 가장 가까운 한국어 표기 및 ' + southBadge + '에 가장 가까운 한국어 표기</th><th>뜻</th></tr></thead><tbody>' +
@@ -6647,6 +6654,12 @@
       leg(615, 960, "4. Thanh hỏi") + leg(615, 1060, "5. Thanh ngã") + leg(615, 1160, "6. Thanh nặng") +
       '</svg>';
     return svg.normalize ? svg.normalize("NFC") : svg;
+  }
+  var koreanNotationRegion = "hanoi";
+  try { koreanNotationRegion = localStorage.getItem("vi-korean-notation-region") === "saigon" ? "saigon" : "hanoi"; } catch (_) {}
+  function koreanNotationSettingsHtml() {
+    if (currentLang !== "ko") return "";
+    return '<div class="p-section"><h3>한국어 발음 표기 설정</h3><label>한국어 발음 표기 <select id="korean-notation-region"><option value="hanoi"' + (koreanNotationRegion === "hanoi" ? ' selected' : '') + '>하노이</option><option value="saigon"' + (koreanNotationRegion === "saigon" ? ' selected' : '') + '>사이공</option></select></label><p class="p-desc">노래 가사 단어 팝업의 한국어 발음 표기에 적용됩니다.</p></div>';
   }
   function renderPron() {
     if (!PRON_PANE_ELS.settings) return;
@@ -6818,7 +6831,9 @@
       groupSection("alphabet", TU("문자"), alphabetHtml, true) +
       groupSection("vowels", TU("모음"), vowelsHtml, false) +
       groupSection("consonants", TU("자음"), consHtml, false) +
-      (currentLang === "ko" && typeof HANOI_CHART !== "undefined" ? groupSection("hanoi", "하노이 발음에 가장 가까운 한국어 표기 방식", hanoiChartHtml(), false) : "") +
+      (currentLang === "ko" && typeof HANOI_CHART !== "undefined" ? groupSection("hanoi", "하노이 발음에 가장 가까운 한국어 표기 방식", hanoiChartHtml(), false) +
+        groupSection("saigon", "사이공 발음에 가장 가까운 한국어 표기 방식", hanoiChartHtml(SAIGON_CHART, "사이공"), false) +
+        groupSection("notation-examples", "하노이 및 사이공 발음에 가장 가까운 한국어 표기 예제", hanoiSaigonExamplesHtml(), false) : "") +
       '</div>';
 
     var tonesCombinedHtml = '<div class="p-section">' +
@@ -6827,7 +6842,7 @@
       '</div>';
 
     var PRON_PANES_HTML = {
-      settings: settingsHtml,
+      settings: koreanNotationSettingsHtml() + settingsHtml,
       diff: pronDiffHtml(),
       jamo: jamoHtml,
       tones: tonesCombinedHtml,
@@ -6846,6 +6861,13 @@
         }
       });
       el.querySelectorAll("[data-speak]").forEach(function (b) { b.addEventListener("click", function (e) { e.stopPropagation(); speak(b.dataset.speak); }); });
+    });
+    var notationSelect = document.getElementById("korean-notation-region");
+    if (notationSelect) notationSelect.addEventListener("change", function () {
+      koreanNotationRegion = this.value === "saigon" ? "saigon" : "hanoi";
+      try { localStorage.setItem("vi-korean-notation-region", koreanNotationRegion); } catch (_) {}
+      lyricWordDict = null;
+      lyricWordClose();
     });
     renderVoicePicker();
     renderLangVoicePicker();
@@ -11636,30 +11658,46 @@ function verifyDistribution(units, dist, pins) {
     return String.fromCharCode(0xAC00 + (HANOI_CHO.indexOf(cho) * 21 + HANOI_JUNG.indexOf(jung)) * 28 + HANOI_JONG.indexOf(jong || ""));
   }
   // The Korean notation of one syllable (any tone), or "" when it is not a Vietnamese syllable.
-  function hanoiKoreanSyllable(syl) {
+  function hanoiKoreanSyllable(syl, region) {
+    var south = region === "saigon";
+    var chartExceptions = {"sách":"사익", "su":"수", "giảng":"쟝"};
+    if (!south && chartExceptions[String(syl || "").toLowerCase().normalize("NFC")]) return chartExceptions[String(syl).toLowerCase().normalize("NFC")];
     var s = String(syl || "").toLowerCase().normalize("NFD").replace(/[̣̀́̃̉]/g, "").normalize("NFC");
     if (!s) return "";
     if (s === "không") return "컴";
     var initial = "";
     for (var i = 0; i < HANOI_INITIALS.length; i++) if (s.indexOf(HANOI_INITIALS[i]) === 0) { initial = HANOI_INITIALS[i]; break; }
     var rest = s.slice(initial.length);
+    if (initial === "gi" && !rest) rest = "i";
     if (initial === "gi" && (!rest || !/^[aăâeêiioôơuưy]/.test(rest))) { initial = "g"; rest = s.slice(1); }
     var fin = "", m = /(ch|nh|ng|c|m|n|p|t)$/.exec(rest);
     if (m && rest.length > m[0].length) { fin = m[0]; rest = rest.slice(0, -fin.length); }
     var nm = HANOI_NUCLEUS.exec(rest);
     if (!nm) return "";
     var main = nm[1], J = HANOI_MAIN[main].slice(), glide = nm[2] ? HANOI_OFFGLIDE[nm[2]] : "";
+    if (south && main === "ia") J = ["ㅣ", "ㅏ"];
+    if (south && main === "ê") J = fin ? ["ㅓ"] : ["ㅔ", "ㅣ"];
+    // The chart describes â as between ㅏ and ㅓ; Hangul has no intermediate vowel.
     var round = /^[oôu]$/.test(main);
     var jong = "", extra = "";
-    if (fin === "c") jong = round ? "ㅂ" : "ㄱ";
-    else if (fin === "ng") jong = round ? "ㅁ" : "ㅇ";
+    var tail = "";
+    if (fin === "c") { jong = "ㄱ"; if (round) tail = "ㅂ"; }
+    else if (fin === "ng") { jong = "ㅇ"; if (round) tail = "ㅁ"; }
     else if (fin === "m") jong = "ㅁ";
-    else if (fin === "n") jong = "ㄴ";
+    else if (fin === "n") { jong = south ? "ㅇ" : "ㄴ"; if (south) tail = "ㄴ"; }
     else if (fin === "p") jong = "ㅂ";
-    else if (fin === "t") jong = "ㅅ";
-    else if (fin === "nh") { if (main === "i") jong = "ㄴ"; else extra = hanoiBlock("ㅇ", "ㅣ", "ㄴ"); }
-    else if (fin === "ch") extra = hanoiBlock("ㅇ", "ㅣ", "ㄱ");
+    else if (fin === "t") jong = south ? "ㄱ" : "ㅅ";
+    else if (fin === "nh") {
+      if (south) jong = "ㄴ";
+      else { if (main === "i") jong = "ㄴ"; else extra = hanoiBlock("ㅇ", "ㅣ", "ㄴ"); tail = "ㅇ"; }
+    }
+    else if (fin === "ch") { if (south) jong = "ㅅ"; else extra = hanoiBlock("ㅇ", "ㅣ", "ㄱ"); }
     var cho = initial ? HANOI_INITIAL_KO[initial] : "ㅇ", prefix = "", out = [];
+    if (south) {
+      if (["d", "gi", "v"].indexOf(initial) >= 0) cho = "y";
+      if (initial === "s") cho = "ㅅ";
+      if (initial === "r" || initial === "tr") cho = "ㄹ";
+    }
     // blocks as [cho, jung]; the last one takes the final
     var blocks = J.map(function (j) { return ["ㅇ", j]; });
     if (cho === "ng") {
@@ -11670,8 +11708,12 @@ function verifyDistribution(units, dist, pins) {
       else if (HANOI_NH_MERGE[J[0]]) { blocks[0] = ["ㄴ", HANOI_NH_MERGE[J[0]]]; }
       else prefix = hanoiBlock("ㄴ", "ㅣ");
     } else if (cho === "qu") {
-      if (HANOI_QU_MERGE[J[0]]) blocks[0] = ["ㄲ", HANOI_QU_MERGE[J[0]]];
-      else { prefix = hanoiBlock("ㄲ", "ㅜ"); }
+      if (HANOI_QU_MERGE[J[0]]) blocks[0] = [south ? "ㄱ" : "ㄲ", HANOI_QU_MERGE[J[0]]];
+      else { prefix = hanoiBlock(south ? "ㄱ" : "ㄲ", "ㅜ"); }
+    } else if (cho === "y") {
+      var yVowel = {"ㅏ":"ㅑ","ㅓ":"ㅕ","ㅗ":"ㅛ","ㅜ":"ㅠ","ㅐ":"ㅒ","ㅔ":"ㅖ"};
+      if (yVowel[J[0]]) blocks[0][1] = yVowel[J[0]];
+      else if (J[0] !== "ㅣ") prefix = "이";
     } else if (cho === "ㅸ" || cho === "ㆄ") {
       prefix = cho;
     } else blocks[0][0] = cho;
@@ -11683,12 +11725,12 @@ function verifyDistribution(units, dist, pins) {
     });
     if (glide) out.push(hanoiBlock("ㅇ", glide, ""));
     if (extra) out.push(extra);
-    return prefix + out.join("");
+    return (south && initial === "tr" ? "ㅉ" : "") + prefix + out.join("") + tail;
   }
   // A word of 1-3 syllables ("Kinh Thánh", "Giê-hô-va"): spaces between syllables, none inside a hyphenated name.
-  function hanoiKoreanWord(text) {
+  function hanoiKoreanWord(text, region) {
     var parts = String(text || "").trim().split(/\s+/).map(function (tok) {
-      return tok.split("-").map(hanoiKoreanSyllable).join("");
+      return tok.split("-").map(function (s) { return hanoiKoreanSyllable(s, region); }).join("");
     });
     return parts.some(function (p) { return !p; }) ? "" : parts.join(" ");
   }
@@ -11733,9 +11775,45 @@ function verifyDistribution(units, dist, pins) {
     "đoái": "돌아보다, 보살피다",
     "lo": "걱정하다, 염려하다",
     "vì": "때문에, 이니까",
-    "Chúa": "주(主)"
+    "Chúa": "주(主)",
+    "nẻo": "길, 방법, 방향",
+    "đường": "길",
+    "dù": "비록 -하더라도",
+    "dò": "살피다",
+    "tư tưởng": "생각, 사상",
+    "đang": "-(하)고 있다",
+    "làm": "하다, 만들다",
+    "ngay": "곧, -하자마자",
+    "đếm": "세다",
+    "cả": "다, 모두",
+    "tôn vinh": "영광을 돌리다",
+    "ôi": "(감탄사) 오!",
+    "siêu phàm": "평범함을 아득히 벗어나는, 초월하는",
+    "thay": "대단히, 너무나",
+    "muôn dân": "만민, 모든 사람",
+    "kinh hãi": "두려워하다",
+    "tăm tối": "깜깜하다",
+    "đêm đen": "어두운 밤",
+    "vây phủ": "덮다",
+    "vững": "굳건하다",
+    "soi": "비추다",
+    "lối": "길, 방향",
+    "khuất": "숨다",
+    "khỏi": "-로부터",
+    "vùng": "지역, 장소",
+    "kín": "은밀한",
+    "khiến": "-로 하여금 -하게 하다",
+    "chẳng hề": "전혀 (부정어)",
+    "được": "-할 수 있다, 되다",
+    "thật": "참으로; 참된",
+    "chẳng": "결코 (부정어)",
+    "tận": "(심지어) -까지도",
+    "mênh mông": "광대한",
+    "lòng": "마음, 속",
+    "mộ": "무덤",
+    "âm u": "캄캄한, 어두운, 암울한"
 };
-  var LYRIC_WORD_KO_PRON = {"luôn": "루온", "quyền năng": "꾸옌 낭"};
+  var LYRIC_WORD_KO_PRON = {"luôn": "루온", "quyền năng": "꾸옌 낭", "lúc": "룩ㅂ", "khuynh hướng": "쿠인 흐엉", "gì": "지", "muôn": "무온"};
   function lyricWordDictionary() {
     if (lyricWordDict) return lyricWordDict;
     var d = { meaning: {}, pron: {} };
@@ -11748,11 +11826,13 @@ function verifyDistribution(units, dist, pins) {
     });
     (typeof HANOI_EXAMPLES !== "undefined" && HANOI_EXAMPLES || []).forEach(function (r) {
       var k = lyricWordKey(r[0]);
-      d.pron[k] = String(r[1]).replace(/\(.*$/, "").replace(/\s+/g, " ").trim();
+      // Pronunciation is generated from the selected chart; the example table stays as supplied.
+      d.pron[k] = hanoiKoreanWord(r[0], koreanNotationRegion);
       if (!d.meaning[k]) d.meaning[k] = String(r[2]).replace(/\(.*$/, "").trim();
     });
     Object.keys(LYRIC_WORD_KO_MEANINGS).forEach(function (word) { d.meaning[lyricWordKey(word)] = LYRIC_WORD_KO_MEANINGS[word]; });
-    Object.keys(LYRIC_WORD_KO_PRON).forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
+    if (koreanNotationRegion !== "saigon") Object.keys(LYRIC_WORD_KO_PRON).forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
+    ["lúc", "khuynh hướng", "gì", "muôn"].forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
     lyricWordDict = d;
     return d;
   }
@@ -11785,7 +11865,7 @@ function verifyDistribution(units, dist, pins) {
   function lyricWordClose() { if (lyricWordPop) { lyricWordPop.remove(); lyricWordPop = null; } }
   function lyricWordShow(word) {
     var dict = lyricWordDictionary(), key = lyricWordKey(word.text);
-    var pron = dict.pron[key] || hanoiKoreanWord(word.text);
+    var pron = dict.pron[key] || hanoiKoreanWord(word.text, koreanNotationRegion);
     if (!pron) return;
     var mean = dict.meaning[key] || "";
     lyricWordClose();

@@ -1528,11 +1528,29 @@ HANOI_CHART = {
         ["yê", "a", [["ㅣ에", 0], ["(뒤에 반드시 받침)", 1]]],
     ],
     # a final may carry a note (third item) shown small after the notation
-    "finals": [["-c", "-ㄱ", "(-ôc, -oc은 [옵], -ục은 [웁]처럼 입술을 닫은 채 입속에 공기를 가두어 볼이 부풀게 발음)"], ["-ch", "-익"], ["-m", "-ㅁ"], ["-n", "-ㄴ"], ["-nh", "-인"],
-               ["-ng", "-ㅇ", "(-ông, -ong은 [옴], -ung은 [움]처럼 입술을 닫은 채 입속에 공기를 가두어 볼이 부풀게 발음)"], ["-p", "-ㅂ"], ["-t", "-ㅅ"]],
+    "finals": [["-c", "-ㄱ", "(-ôc, -oc은 [옥ㅂ], -ục은 [욱ㅂ]처럼 입술을 닫은 채 입속에 공기를 가두어 볼이 부풀게 발음)"], ["-ch", "-익"], ["-m", "-ㅁ"], ["-n", "-ㄴ"], ["-nh", "-인ㅇ"],
+               ["-ng", "-ㅇ", "(-ông, -ong은 [옹ㅁ], -ung은 [웅ㅁ]처럼 입술을 닫은 채 입속에 공기를 가두어 볼이 부풀게 발음)"], ["-p", "-ㅂ"], ["-t", "-ㅅ"]],
     # a note under the tables (outside them)
     "footnote": "(không은 부정어(-이 아니다)나 의문종결사(-입니까?)나 숫자 0을 의미할 때는 [컴]처럼 발음하고, 공기(không khí), 항공(hàng không) 등의 단어에서 사용될 때는 [콤]처럼 발음한다.)",
 }
+
+
+# Saigon notation inherits every unchanged Hanoi rule.
+from copy import deepcopy as _deepcopy
+SAIGON_CHART = _deepcopy(HANOI_CHART)
+_SAIGON_INITIALS = {"qu-":"구-", "d-":"이(반모음)", "gi-":"이(반모음)", "ch-":"ㅉ-", "tr-":"ㅉㄹ-", "s-":"ㅅ-", "x-":"ㅆ-", "r-":"ㄹ- (혀를 떨어서 내는 ㄹ)", "v-":"이(반모음)"}
+SAIGON_CHART["initials"] = [
+    {"letters":[letter],"ko":_SAIGON_INITIALS.get(letter[0], group["ko"])}
+    if letter[0] in _SAIGON_INITIALS else dict(_deepcopy(group), letters=[letter])
+    for group in HANOI_CHART["initials"] for letter in group["letters"]
+]
+for _vowel in SAIGON_CHART["vowels"]:
+    if _vowel[0] == "â": _vowel[2] = [["ㅏ와 ㅓ의 중간",0]]
+    if _vowel[0] == "ê": _vowel[2] = [["(뒤에 받침 없으면)",1],["ㅔ이",0],["(뒤에 받침 있으면)",1],["ㅓ",0]]
+    if _vowel[0] == "ia": _vowel[2] = [["ㅣ아",0],["(뒤에 받침 없음)",1]]
+for _final in SAIGON_CHART["finals"]:
+    if _final[0] in {"-ch","-n","-nh","-t"}:
+        _final[1] = {"-ch":"-ㅅ","-n":"-ㅇㄴ","-nh":"-ㄴ","-t":"-ㄱ"}[_final[0]]
 
 
 # [발음] > [자모]: how to type Vietnamese with a TELEX keyboard (supplied by the user; Korean only). Rows: [keys typed, result].
