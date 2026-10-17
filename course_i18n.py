@@ -46,6 +46,7 @@ def _range(a, b, lang):
     return "%s~%s" % (a, b) if lang == "zh_cn" else "%s–%s" % (a, b)
 
 
+BOOK_RANGE = {"1": " (Sáng-thế Ký – Thi-thiên)", "2": " (Châm-ngôn – Ma-la-chi)", "3": " (Ma-thi-ơ – Khải-huyền)"}   # book-name practice ranges (Vietnamese book names)
 COURSE_TEMPLATES = [
     (re.compile(r"^오늘의 어휘 학습 \((.+?) (\d+)~(\d+)번\)$"), lambda m, l: {
         "vi": "Học từ vựng hôm nay ({c} {r})", "cs": "Dnešní slovíčka ({c} {r})", "zh_cn": "今日词汇学习（{c} {r}）",
@@ -82,10 +83,10 @@ COURSE_TEMPLATES = [
     (re.compile(r"^베트남어 노래 \((\d+)번\)$"), lambda m, l: {
         "vi": "Bài hát tiếng Việt (số {n})", "cs": "Vietnamská píseň č. {n}", "zh_cn": "越南语诗歌（第{n}首）",
         "hu": "Vietnami ének ({n}.)", "id": "Lagu bahasa Vietnam (no. {n})"}[l].format(n=m.group(1))),
-    (re.compile(r"^베트남어 성경 책명 읽기 연습 (\d+)$"), lambda m, l: {
+    (re.compile(r"^베트남어 성경 책명 읽기 연습 (\d+)(?: \(.+\))?$"), lambda m, l: {
         "vi": "Luyện đọc tên các sách Kinh Thánh tiếng Việt {n}", "cs": "Čtení názvů biblických knih ve vietnamštině {n}",
         "zh_cn": "越南语圣经书名朗读练习 {n}", "hu": "Vietnami bibliai könyvnevek olvasása {n}.",
-        "id": "Latihan membaca nama kitab Alkitab bahasa Vietnam {n}"}[l].format(n=m.group(1))),
+        "id": "Latihan membaca nama kitab Alkitab bahasa Vietnam {n}"}[l].format(n=m.group(1)) + BOOK_RANGE.get(m.group(1), "")),
     (re.compile(r"^(\d+)-(\d+)주$"), lambda m, l: {
         "vi": "Tuần {a}–{b}", "cs": "{a}.–{b}. týden", "zh_cn": "第{a}–{b}周", "hu": "{a}–{b}. hét",
         "id": "Minggu {a}–{b}"}[l].format(a=m.group(1), b=m.group(2))),

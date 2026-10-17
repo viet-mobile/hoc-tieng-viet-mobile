@@ -12,7 +12,7 @@ Time is allotted to exactly four owners, never split inside an item:
 A row is [name, minutes, owner|None (break), reason key, posture] (+ {kind, part} for the vocabulary blocks).
 Minutes may be half minutes (4.5 = 4 min 30 s).
 
-Vocabulary blocks: 34 words x 3 readings. 한자음 (rhyme) words take 7 min per block, any other 34 words 4 min 30 s; the
+Vocabulary blocks: 34 words x 3 readings. 한자음 (rhyme) words take 6 min 30 s per block, any other 34 words 4 min 30 s; the
 10 Watchtower words of a block (ordinary words) take 1 min 30 s at the same rate.
 """
 import math
@@ -24,7 +24,7 @@ SUFFIX = " (이어서)"
 STARTS = (8, 22, 36, 70, 84)                    # start minute of the five vocabulary blocks (spaced retrieval)
 DAYS = ("월요일", "화요일", "수요일", "목요일", "금요일")
 FIXED_MIN = {OPEN: 4, CLOSE: 4, HOMEWORK: 5, MINGLE: 10, BREAK: 10}
-RHYME_BLOCK, OTHER_BLOCK, WT_BLOCK = 7, 4.5, 1.5
+RHYME_BLOCK, OTHER_BLOCK, WT_BLOCK = 6.5, 4.5, 1.5
 ASSISTANT = "Mai"
 ASSISTANT_SUBSTITUTE = {"2026-11-15": "Bình"}   # date -> who reads in the assistant's place
 RHYME_WORDS, EARLY_CLASSES, EARLY_QUOTA = 316, 4, 170   # [어휘] stream starts with the 316 한자음 words (course_vocab_plan)
@@ -39,6 +39,17 @@ B_TALK_RULES = re.compile(r"제공 연설|일상 회화|일상 생활 문장|이
 
 A_RULES = re.compile(r"^시작 노래·기도$|^마치는 노래·기도$|제공 연설|^문화|일상 회화|일상 생활 문장|일반 문법|^과제 확인")
 ASSIST_RULES = re.compile(r"어휘 학습|성경 책명 읽기 연습")
+# Items whose length is fixed (minutes); every other teaching item shares the remaining time in proportion to its earlier length.
+PINNED = (
+    (re.compile(r"^베트남어 발음 – 자음, 모음 복습$"), 5),
+    (re.compile(r"^성조연습, 연속성조$"), 8),
+    (re.compile(r"^베트남어 제공 연설 \d+"), 5),
+    (re.compile(r"성경 책명 읽기 연습 \d \([^)]*\)$"), 5),
+    (re.compile(r"^신권 용어, 주요 인물 발음 연습"), 5),
+    (re.compile(r"^베트남어 숫자 복습$"), 7),
+    (re.compile(r"성경 책명 읽기 연습 1 \(창세기-시편\) 복습$"), 7),
+)
+FIRST_ITEM = "베트남어 발음 – 자음, 모음 복습"   # taught right after the opening prayer (no vocabulary block before it)
 B_RULES = re.compile(r"성조|발음|숫자|요일|날짜|달, 계절|시간|신권 용어|남북|노래|합창")
 
 
@@ -90,15 +101,34 @@ def has_rhyme(unit, part):
     return a < RHYME_WORDS
 
 
-def _apportion(weights, total, minimum):
-    remaining = total - minimum * len(weights)
+def _pinned(name):
+    for rx, minutes in PINNED:
+        if rx.search(name):
+            return int(minutes * 2)
+    return None
+
+
+def _apportion(weights, total, minimum, fixed=None):
+    """Split `total` half minutes by weight (at least `minimum` each); entries of `fixed` that are not None keep that size."""
+    fixed = fixed or [None] * len(weights)
+    free = [i for i, f in enumerate(fixed) if f is None]
+    left = total - sum(f for f in fixed if f is not None)
+    out = [f if f is not None else 0 for f in fixed]
+    if not free:
+        if left != 0:
+            raise ValueError("fixed items do not fill the window")
+        return out
+    w = [weights[i] for i in free]
+    remaining = left - minimum * len(w)
     if remaining < 0:
         raise ValueError("too many teaching items for the available time")
-    extra = [max(0, w - minimum) for w in weights]
-    raw = [remaining * w / sum(extra) for w in extra]
-    out = [minimum + math.floor(v) for v in raw]
-    for i in sorted(range(len(out)), key=lambda i: (-(raw[i] % 1), i))[:total - sum(out)]:
-        out[i] += 1
+    extra = [max(0, x - minimum) for x in w]
+    raw = [remaining * x / sum(extra) for x in extra] if sum(extra) else [remaining / len(w)] * len(w)
+    sz = [minimum + math.floor(v) for v in raw]
+    for i in sorted(range(len(sz)), key=lambda i: (-(raw[i] % 1), i))[:left - sum(sz)]:
+        sz[i] += 1
+    for i, v in zip(free, sz):
+        out[i] = v
     return out
 
 
@@ -138,30 +168,43 @@ def rebuild(plan, unit):
         block_h = []
         content = 0
     if vocab_class:
-        sizes = _apportion([2 * core[n][0] for n in order], content, 2)      # half minutes, at least 1 min each
-        items = [[n, sz, core[n][1], core[n][2]] for n, sz in zip(order, sizes)]
+        sizes = _apportion([2 * core[n][0] for n in order], content, 2, [_pinned(n) for n in order])   # half minutes, at least 1 min each
+        items = [[n, sz, core[n][1], core[n][2], _pinned(n)] for n, sz in zip(order, sizes)]
         group_items = [it for it in items if owner_of(it[0], it[3], None, unit) == "group"]
         items = [it for it in items if it not in group_items]
         G = sum(it[1] for it in group_items)
         pre_total = 100 - 8 - sum(block_h[:3])           # half minutes of teaching before the break
         # whole items before the break: the prefix whose total is nearest to the window, rescaled to fill it exactly
-        best, cum = None, 0
+        # (pinned items keep their length; a prefix whose pinned items alone cannot fit the window is skipped)
+        post_total_all = content - G - pre_total
+        cands, cum = [], 0
         for k in range(1, len(items)):
             cum += items[k - 1][1]
-            if best is None or abs(cum - pre_total) < best[0]:
-                best = (abs(cum - pre_total), k)
-        k = best[1] if best else len(items)
-        post_total = content - G - pre_total
+            cands.append((abs(cum - pre_total), k))
+        k = len(items)
+        for _, kk in sorted(cands):
+            try:
+                _apportion([it[1] for it in items[:kk]], pre_total, 2, [it[4] for it in items[:kk]])
+                _apportion([it[1] for it in items[kk:]], post_total_all, 2, [it[4] for it in items[kk:]])
+            except ValueError:
+                continue
+            k = kk
+            break
+        post_total = post_total_all
         if k < len(items):
-            pre_sz = _apportion([it[1] for it in items[:k]], pre_total, 2)
-            post_sz = _apportion([it[1] for it in items[k:]], post_total, 2)
+            pre_sz = _apportion([it[1] for it in items[:k]], pre_total, 2, [it[4] for it in items[:k]])
+            post_sz = _apportion([it[1] for it in items[k:]], post_total, 2, [it[4] for it in items[k:]])
             for it, sz in zip(items, pre_sz + post_sz):
                 it[1] = sz
         pre, post = items[:k], items[k:]
 
         def place(seq, ideal, pending, clock):
             """Items whole; before an item, the pending blocks whose ideal time is nearer to now than to the item's end."""
-            for name, size, reason, posture in seq:
+            for name, size, reason, posture, _pin in seq:
+                if name == FIRST_ITEM:
+                    row(name, size / 2, reason, posture)
+                    clock += size
+                    continue
                 while pending and abs(ideal[pending[0]] - clock) <= abs(ideal[pending[0]] - (clock + size)):
                     emit_block(pending.pop(0))
                     clock += block_h[len(done) - 1]
@@ -185,7 +228,7 @@ def rebuild(plan, unit):
         place(pre, ideal, [0, 1, 2], 8)
         row(BREAK, 10, "break", "rest")
         row(MINGLE, 10, "mingle", "move")
-        for name, size, reason, posture in group_items:
+        for name, size, reason, posture, _pin in group_items:
             row(name, size / 2, reason, posture)
         place(post, ideal, [3, 4], 140 + G)
     else:
@@ -238,8 +281,8 @@ INSTRUCTORS = {
               "profile": {"ko": "학습자 조별 활동", "vi": "Học viên hoạt động theo nhóm"},
               "strengths": {"ko": "돌아다니며 하는 모든 활동과, 둘째~넷째 어휘 학습(각 조 조장이 이끎)을 조별 활동으로 분류합니다",
                           "vi": "Mọi hoạt động đi lại và phần học từ vựng thứ hai đến thứ tư (do tổ trưởng dẫn dắt) tính là hoạt động nhóm"}},
-    "note": {"ko": "시간은 A 강사, B 강사, 보조자, 조별 활동 중 한 곳에만 배정하며, 한 항목을 둘로 나누지 않습니다. 첫째·다섯째 어휘는 보조자·B 강사가, 둘째~넷째는 각 조 조장이 이끕니다. 어휘는 한자음 34개에 7분, 그 외 34개에 4분 30초, 파수대 어휘 10개에 1분 30초를 잡았습니다.",
-             "vi": "Mỗi mục chỉ giao cho một bên: giảng viên A, giảng viên B, trợ giảng hoặc hoạt động nhóm; từ vựng thứ hai đến thứ tư do tổ trưởng dẫn dắt. 34 từ Hán Việt 7 phút, 34 từ khác 4 phút 30 giây, 10 từ Tháp Canh 1 phút 30 giây."},
+    "note": {"ko": "시간은 A 강사, B 강사, 보조자, 조별 활동 중 한 곳에만 배정하며, 한 항목을 둘로 나누지 않습니다. 첫째·다섯째 어휘는 보조자·B 강사가, 둘째~넷째는 각 조 조장이 이끕니다. 어휘는 한자음 34개에 6분 30초, 그 외 34개에 4분 30초, 파수대 어휘 10개에 1분 30초를 잡았습니다.",
+             "vi": "Mỗi mục chỉ giao cho một bên: giảng viên A, giảng viên B, trợ giảng hoặc hoạt động nhóm; từ vựng thứ hai đến thứ tư do tổ trưởng dẫn dắt. 34 từ Hán Việt 6 phút 30 giây, 34 từ khác 4 phút 30 giây, 10 từ Tháp Canh 1 phút 30 giây."},
     "reasons": {
         "open": {"ko": "A 강사가 시작 노래와 기도를 안내합니다.", "vi": "Giảng viên A hướng dẫn bài hát và lời cầu nguyện mở đầu."},
         "close": {"ko": "A 강사가 마치는 노래를 안내합니다.", "vi": "Giảng viên A hướng dẫn bài hát kết thúc."},
