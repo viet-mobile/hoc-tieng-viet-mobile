@@ -1,0 +1,642 @@
+{
+  "checked": "2026-10-18",
+  "lines": 8537,
+  "click_positions": 61777,
+  "before_blank": 13059,
+  "after_blank": 635,
+  "note": "사전에서 가사 문맥의 한국어 뜻을 확인하지 못한 표기. 복합어의 일부 음절, 고유명사, 오타 의심 표기 포함. 가사 원문은 변경하지 않음.",
+  "remaining": [
+    {
+      "word": "ủi",
+      "count": 46
+    },
+    {
+      "word": "thái",
+      "count": 41
+    },
+    {
+      "word": "phán",
+      "count": 37
+    },
+    {
+      "word": "cất",
+      "count": 33
+    },
+    {
+      "word": "hiển",
+      "count": 23
+    },
+    {
+      "word": "dương",
+      "count": 20
+    },
+    {
+      "word": "giông",
+      "count": 16
+    },
+    {
+      "word": "đớn",
+      "count": 13
+    },
+    {
+      "word": "nhiên",
+      "count": 12
+    },
+    {
+      "word": "bồi",
+      "count": 12
+    },
+    {
+      "word": "khiêm",
+      "count": 12
+    },
+    {
+      "word": "vầng",
+      "count": 11
+    },
+    {
+      "word": "âu",
+      "count": 11
+    },
+    {
+      "word": "lùi",
+      "count": 10
+    },
+    {
+      "word": "a",
+      "count": 9
+    },
+    {
+      "word": "mối",
+      "count": 9
+    },
+    {
+      "word": "thỏa",
+      "count": 8
+    },
+    {
+      "word": "làn",
+      "count": 8
+    },
+    {
+      "word": "khiết",
+      "count": 7
+    },
+    {
+      "word": "cố",
+      "count": 7
+    },
+    {
+      "word": "hoan",
+      "count": 7
+    },
+    {
+      "word": "nô",
+      "count": 6
+    },
+    {
+      "word": "quản",
+      "count": 6
+    },
+    {
+      "word": "quy",
+      "count": 6
+    },
+    {
+      "word": "tăm",
+      "count": 5
+    },
+    {
+      "word": "chóc",
+      "count": 5
+    },
+    {
+      "word": "nhằn",
+      "count": 5
+    },
+    {
+      "word": "khúc",
+      "count": 5
+    },
+    {
+      "word": "hào",
+      "count": 5
+    },
+    {
+      "word": "hà",
+      "count": 5
+    },
+    {
+      "word": "can",
+      "count": 5
+    },
+    {
+      "word": "lung",
+      "count": 5
+    },
+    {
+      "word": "tra",
+      "count": 4
+    },
+    {
+      "word": "triều",
+      "count": 4
+    },
+    {
+      "word": "chu",
+      "count": 4
+    },
+    {
+      "word": "huyền",
+      "count": 4
+    },
+    {
+      "word": "diệu",
+      "count": 4
+    },
+    {
+      "word": "nức",
+      "count": 4
+    },
+    {
+      "word": "khiên",
+      "count": 4
+    },
+    {
+      "word": "hoạn",
+      "count": 4
+    },
+    {
+      "word": "bôn",
+      "count": 4
+    },
+    {
+      "word": "trân",
+      "count": 4
+    },
+    {
+      "word": "ưu",
+      "count": 4
+    },
+    {
+      "word": "nhàng",
+      "count": 4
+    },
+    {
+      "word": "hiên",
+      "count": 4
+    },
+    {
+      "word": "phục",
+      "count": 3
+    },
+    {
+      "word": "dẫy",
+      "count": 3
+    },
+    {
+      "word": "dạt",
+      "count": 3
+    },
+    {
+      "word": "khao",
+      "count": 3
+    },
+    {
+      "word": "thao",
+      "count": 3
+    },
+    {
+      "word": "trương",
+      "count": 3
+    },
+    {
+      "word": "báng",
+      "count": 3
+    },
+    {
+      "word": "siêng",
+      "count": 3
+    },
+    {
+      "word": "chấp",
+      "count": 3
+    },
+    {
+      "word": "lứa",
+      "count": 3
+    },
+    {
+      "word": "lóc",
+      "count": 3
+    },
+    {
+      "word": "thảo",
+      "count": 3
+    },
+    {
+      "word": "đắn",
+      "count": 3
+    },
+    {
+      "word": "vơ",
+      "count": 3
+    },
+    {
+      "word": "bổ",
+      "count": 3
+    },
+    {
+      "word": "chấn",
+      "count": 3
+    },
+    {
+      "word": "bính",
+      "count": 2
+    },
+    {
+      "word": "bọn",
+      "count": 2
+    },
+    {
+      "word": "khỏa",
+      "count": 2
+    },
+    {
+      "word": "xá",
+      "count": 2
+    },
+    {
+      "word": "khăng",
+      "count": 2
+    },
+    {
+      "word": "thê",
+      "count": 2
+    },
+    {
+      "word": "dãi",
+      "count": 2
+    },
+    {
+      "word": "hề",
+      "count": 2
+    },
+    {
+      "word": "dật",
+      "count": 2
+    },
+    {
+      "word": "noài",
+      "count": 2
+    },
+    {
+      "word": "nhoi",
+      "count": 2
+    },
+    {
+      "word": "caol",
+      "count": 2
+    },
+    {
+      "word": "điệu",
+      "count": 2
+    },
+    {
+      "word": "vĩ",
+      "count": 2
+    },
+    {
+      "word": "bết-lê-hem",
+      "count": 2
+    },
+    {
+      "word": "giô-đanh",
+      "count": 2
+    },
+    {
+      "word": "lãng",
+      "count": 2
+    },
+    {
+      "word": "nề",
+      "count": 2
+    },
+    {
+      "word": "hoà",
+      "count": 2
+    },
+    {
+      "word": "tích",
+      "count": 2
+    },
+    {
+      "word": "bồng",
+      "count": 2
+    },
+    {
+      "word": "chắng",
+      "count": 2
+    },
+    {
+      "word": "ngào",
+      "count": 2
+    },
+    {
+      "word": "sét",
+      "count": 2
+    },
+    {
+      "word": "yeah",
+      "count": 2
+    },
+    {
+      "word": "đẽ",
+      "count": 2
+    },
+    {
+      "word": "nè",
+      "count": 2
+    },
+    {
+      "word": "tử",
+      "count": 2
+    },
+    {
+      "word": "si-ôn",
+      "count": 1
+    },
+    {
+      "word": "trá",
+      "count": 1
+    },
+    {
+      "word": "tụy",
+      "count": 1
+    },
+    {
+      "word": "ngăm",
+      "count": 1
+    },
+    {
+      "word": "mạ",
+      "count": 1
+    },
+    {
+      "word": "bợ",
+      "count": 1
+    },
+    {
+      "word": "sáo",
+      "count": 1
+    },
+    {
+      "word": "cheo",
+      "count": 1
+    },
+    {
+      "word": "chinh",
+      "count": 1
+    },
+    {
+      "word": "sỉ",
+      "count": 1
+    },
+    {
+      "word": "răn",
+      "count": 1
+    },
+    {
+      "word": "nơời",
+      "count": 1
+    },
+    {
+      "word": "ly-đi",
+      "count": 1
+    },
+    {
+      "word": "tương",
+      "count": 1
+    },
+    {
+      "word": "đãng",
+      "count": 1
+    },
+    {
+      "word": "giềng",
+      "count": 1
+    },
+    {
+      "word": "mô",
+      "count": 1
+    },
+    {
+      "word": "tú",
+      "count": 1
+    },
+    {
+      "word": "đội",
+      "count": 1
+    },
+    {
+      "word": "mầm",
+      "count": 1
+    },
+    {
+      "word": "giê-ru-sa-lem",
+      "count": 1
+    },
+    {
+      "word": "lộng",
+      "count": 1
+    },
+    {
+      "word": "lẫy",
+      "count": 1
+    },
+    {
+      "word": "đà",
+      "count": 1
+    },
+    {
+      "word": "nôn",
+      "count": 1
+    },
+    {
+      "word": "dạo",
+      "count": 1
+    },
+    {
+      "word": "ngút",
+      "count": 1
+    },
+    {
+      "word": "vò",
+      "count": 1
+    },
+    {
+      "word": "tuần",
+      "count": 1
+    },
+    {
+      "word": "like",
+      "count": 1
+    },
+    {
+      "word": "tần",
+      "count": 1
+    },
+    {
+      "word": "tảo",
+      "count": 1
+    },
+    {
+      "word": "líu",
+      "count": 1
+    },
+    {
+      "word": "mạch",
+      "count": 1
+    },
+    {
+      "word": "fiji",
+      "count": 1
+    },
+    {
+      "word": "đài",
+      "count": 1
+    },
+    {
+      "word": "mê-xi-cô",
+      "count": 1
+    },
+    {
+      "word": "mỉa",
+      "count": 1
+    },
+    {
+      "word": "róc",
+      "count": 1
+    },
+    {
+      "word": "thản",
+      "count": 1
+    },
+    {
+      "word": "vênh",
+      "count": 1
+    },
+    {
+      "word": "khắn",
+      "count": 1
+    },
+    {
+      "word": "lẽo",
+      "count": 1
+    },
+    {
+      "word": "bon",
+      "count": 1
+    },
+    {
+      "word": "xu",
+      "count": 1
+    },
+    {
+      "word": "đạn",
+      "count": 1
+    },
+    {
+      "word": "ren",
+      "count": 1
+    },
+    {
+      "word": "cời",
+      "count": 1
+    },
+    {
+      "word": "mơn",
+      "count": 1
+    },
+    {
+      "word": "nai",
+      "count": 1
+    },
+    {
+      "word": "gay",
+      "count": 1
+    },
+    {
+      "word": "tức",
+      "count": 1
+    },
+    {
+      "word": "tán",
+      "count": 1
+    },
+    {
+      "word": "hanh",
+      "count": 1
+    },
+    {
+      "word": "ức",
+      "count": 1
+    },
+    {
+      "word": "lóng",
+      "count": 1
+    },
+    {
+      "word": "đơm",
+      "count": 1
+    },
+    {
+      "word": "sưa",
+      "count": 1
+    },
+    {
+      "word": "ôn",
+      "count": 1
+    },
+    {
+      "word": "mên",
+      "count": 1
+    },
+    {
+      "word": "đước",
+      "count": 1
+    },
+    {
+      "word": "bại",
+      "count": 1
+    },
+    {
+      "word": "fphans",
+      "count": 1
+    },
+    {
+      "word": "ga-li-lê",
+      "count": 1
+    },
+    {
+      "word": "khổng",
+      "count": 1
+    },
+    {
+      "word": "lồ",
+      "count": 1
+    },
+    {
+      "word": "hởi",
+      "count": 1
+    },
+    {
+      "word": "mắn",
+      "count": 1
+    },
+    {
+      "word": "cối",
+      "count": 1
+    }
+  ]
+}

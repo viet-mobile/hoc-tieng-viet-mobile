@@ -76,6 +76,13 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     }
     await E("document.getElementById('lyr').textContent='muôn dân'");
     const muonDan=await tap('muôn');ok(muonDan&&muonDan.ko.startsWith('무온 ')&&muonDan.mean==='만민, 모든 사람','curated syllable pronunciation inside longer compound');
+    // Dictionary additions must use the lyric sense and work through the same click path.
+    for (const [word, meaning] of [['theo','따르다. 뒤따르다'],['mãi','계속'],['mai','내일'],['hát','노래 부르다'],['lệ','눈물'],['nghiền ngẫm','숙고하다. 마음에 새기다'],['khoảnh khắc','순간. 찰나, 아주짧은 시간']]) {
+      await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);
+      eq((await tap(word.split(' ').pop()))?.mean,meaning,'Naver supplement '+word);
+    }
+    await E("document.getElementById('lyr').textContent='noài'");
+    eq((await tap('noài'))?.mean,'','unverified lyric spelling gets no invented meaning');
     // Three separate folding cards, with the examples moved rather than copied.
     ok(await E("!!document.querySelector('[data-anchor=\"pron-saigon\"]')&&!!document.querySelector('[data-anchor=\"pron-notation-examples\"]')&&!document.querySelector('[data-anchor=\"pron-hanoi\"] .hanoi-examples')&&document.querySelectorAll('[data-anchor=\"pron-notation-examples\"] .hanoi-examples tbody tr').length===22"),'separate Hanoi/Saigon/example folding cards');
     eq(await E("document.getElementById('korean-notation-region').value"),'hanoi','default Hanoi');

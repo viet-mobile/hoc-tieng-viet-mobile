@@ -1,0 +1,4526 @@
+{
+  "description": "노래 가사의 기존 뜻이 비어 있을 때만 사용하는 베트남어–한국어 보완 사전. 성조를 구별하며 기존 단어·사용자 지정 뜻을 덮어쓰지 않음. 확인할 수 없는 음절·오타는 추가하지 않음.",
+  "checked": "2026-10-18",
+  "dictionary": "https://dict.naver.com/vikodict/#/main",
+  "entries": [
+    {
+      "vi": "theo",
+      "ko": "따르다. 뒤따르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ec047c62086845a184c3f58cbe39ad3d"
+    },
+    {
+      "vi": "đời",
+      "ko": "일생. 삶",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/089a5730453a4e93b86f15dc99bbfc0d"
+    },
+    {
+      "vi": "đòi",
+      "ko": "요구하다. 청구하다. 조르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0ea1c453056d4ee8aac696d98e152bb1"
+    },
+    {
+      "vi": "mãi",
+      "ko": "계속",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/37f9b59e74224421a4dd21fe8d15dfea"
+    },
+    {
+      "vi": "mai",
+      "ko": "내일",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/50015abc75ce43849b2234678fc919f4"
+    },
+    {
+      "vi": "ngày",
+      "ko": "날",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/01d0beaa9d4e4cb1b66db59f45df07a4"
+    },
+    {
+      "vi": "bên",
+      "ko": "편, 면, 옆, 이웃한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b5be7ebc9fa443f89bbce673e3307d7d"
+    },
+    {
+      "vi": "bền",
+      "ko": "지속적인. 질긴. 견고한. 내구력있는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1527e528eca3472aa52630f1fa2aacbe"
+    },
+    {
+      "vi": "bến",
+      "ko": "정거장. 부두",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b4e28627bb794af8956e785ba467354c"
+    },
+    {
+      "vi": "nhau",
+      "ko": "서로. 함께",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/dcdaf7d2f9b946ac81aea36634df7092"
+    },
+    {
+      "vi": "nay",
+      "ko": "지금. 현재",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/eb6fbe6e668341f392ad6de14dbdc120"
+    },
+    {
+      "vi": "nảy",
+      "ko": "솟아나다. (일 등이) 발생하기 시작하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/013076fa5f214e718d0f8b5ef4043ee8"
+    },
+    {
+      "vi": "yêu",
+      "ko": "사랑하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e29c3b4ddf264732add1506d0b19d567"
+    },
+    {
+      "vi": "những",
+      "ko": "앞에서 복수를 나타내는 말",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a119f1bc81c64128b05044982b51cfb6"
+    },
+    {
+      "vi": "rao",
+      "ko": "큰소리로 알리다. 말하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/92f57b598d9146138f3872770d0bcd34"
+    },
+    {
+      "vi": "sướng",
+      "ko": "기분좋은",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/865e384a36204e8ca715cc1a941d3584"
+    },
+    {
+      "vi": "sương",
+      "ko": "이슬",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e733ca61ff8145b9a141e40786877574"
+    },
+    {
+      "vi": "muôn",
+      "ko": "만(10,000)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/990185e502ad4a7ca25a16fa19b6e7cd"
+    },
+    {
+      "vi": "hằng",
+      "ko": "항상, 언제나",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d7f5b14f801c4736815aa04c082304da"
+    },
+    {
+      "vi": "quý",
+      "ko": "귀중한, 소중히 여기다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/305932b9bcf14159b6b8fb1f098dc42b",
+      "note": "전체 뜻풀이의 세 번째 뜻(귀한·귀중한)을 가사에 맞게 우선."
+    },
+    {
+      "vi": "quỹ",
+      "ko": "금고",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6575ac485c874849a779af37c9c47093"
+    },
+    {
+      "vi": "chúng",
+      "ko": "그들, 사람들",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/af551e46bc4348f580db6083985a3098"
+    },
+    {
+      "vi": "chừng",
+      "ko": "한도. 절도. 계량",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/23df341a3e9b4303bf3af0b974c13217"
+    },
+    {
+      "vi": "hết",
+      "ko": "모두, 끝나다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6bcf3f2f25e24dd69caf83e6934d2e39"
+    },
+    {
+      "vi": "vua",
+      "ko": "왕",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/dd3ef76bb72743eba9b580db4ff6b053"
+    },
+    {
+      "vi": "vừa",
+      "ko": "맞다. 어울리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d9c02e6572d14297b465c04ce4584aba"
+    },
+    {
+      "vi": "thôi",
+      "ko": "단지…이다, 다만 …이다, 중단하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1fb955f0613f44099de4af2076d9a56b"
+    },
+    {
+      "vi": "hát",
+      "ko": "노래 부르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/af4013e710f84ebfb041866da6ec7f5f"
+    },
+    {
+      "vi": "sức",
+      "ko": "힘. 능력",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d3406ca62587426fb42d20c0197d0fba"
+    },
+    {
+      "vi": "mang",
+      "ko": "운반하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f0ec1c3c3185419bb28caaf512b43858"
+    },
+    {
+      "vi": "màng",
+      "ko": "해부 (얇은) 막",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4165d12ad2054e5da4945f12e6ab16f9"
+    },
+    {
+      "vi": "việc",
+      "ko": "일. 사항",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/eebc8a119f214029a60136a291daeb34"
+    },
+    {
+      "vi": "còn",
+      "ko": "여전히, 아직; 남다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b5a8daad89fb41c4b0d2a45571cc0ee0"
+    },
+    {
+      "vi": "cơn",
+      "ko": "상태·감정·자연 현상 앞에 쓰는 말",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c62b5e14188e41b0bb1cdc14457f9d25"
+    },
+    {
+      "vi": "mừng",
+      "ko": "기뻐하다, 축하하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/cede8347d9ae474385322dd5226c8972"
+    },
+    {
+      "vi": "kiên",
+      "ko": "동요하지 않는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/82c97f761b9b4cc3b70ee9a02f92e29a"
+    },
+    {
+      "vi": "xưa",
+      "ko": "옛날",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/be8e323b70bf4c988fbb330f4f01b449"
+    },
+    {
+      "vi": "xua",
+      "ko": "(손으로) 내쫓다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/09bd5b87d78f40bf9d46f885a7cd1980"
+    },
+    {
+      "vi": "ân",
+      "ko": "은혜. 감사",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/75d15c20c19d41d588b0a1daf675fbb6"
+    },
+    {
+      "vi": "suốt",
+      "ko": "완전히. 모두. 처음부터, 끝까지. 죽",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1db109b2162e44549716003a033342dd"
+    },
+    {
+      "vi": "dẫu",
+      "ko": "비록 …이지만",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/cd952cccaa1749ad9c13569dff3f1375"
+    },
+    {
+      "vi": "thì",
+      "ko": "때",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/94ba320bce584f2db56d9cedde6493dd"
+    },
+    {
+      "vi": "mến",
+      "ko": "애호하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1a1d6f54bded4a22802c2ece8d031fa3"
+    },
+    {
+      "vi": "cạnh",
+      "ko": "모퉁이. 가장자리. 면(面)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7ed58c5e8d7b4805b618e7ce8eb26c96"
+    },
+    {
+      "vi": "hăng",
+      "ko": "생기있는. (말이) 기운찬. 쾌활한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/61bf57762a224fe78ebfc78dd9f5df48"
+    },
+    {
+      "vi": "tuyệt",
+      "ko": "자르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a9d84f3ef579437183b8a056dc367d86"
+    },
+    {
+      "vi": "tựa",
+      "ko": "의지하다, 기대다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d74d5f6100e941bcb32c85f414224b9c"
+    },
+    {
+      "vi": "lay",
+      "ko": "흔들리다. 흔들다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/06a03e797a3944a1aea5952ccc4ce79f"
+    },
+    {
+      "vi": "hằn",
+      "ko": "흔적. 자국",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1f903033281f45858631d73961613601"
+    },
+    {
+      "vi": "rời",
+      "ko": "떨어진. 분리된. 흐트러진",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f41f42a53f3f44ea8cf502b92c1e31a0"
+    },
+    {
+      "vi": "rối",
+      "ko": "흐트러진. 얽힌",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6cb801abfd1b4216bc07e830ef79272a"
+    },
+    {
+      "vi": "rằng",
+      "ko": "-라고, -다는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a8b2004047144f158d7eb04aefa7ab5c"
+    },
+    {
+      "vi": "vời",
+      "ko": "아주 먼",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/63a00a26f21d4500ad4a840558369b59"
+    },
+    {
+      "vi": "vội",
+      "ko": "서둘러. 급히",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b9291851721a4840bd15ba17a01457d6"
+    },
+    {
+      "vi": "hầu",
+      "ko": "-하기 위하여; 거의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2a9b9e4deac4479ba0e5085d7afeb370",
+      "note": "전체 뜻풀이의 세 번째·네 번째 뜻을 가사 문맥에 맞게 선택."
+    },
+    {
+      "vi": "hậu",
+      "ko": "뒤(쪽). 후부",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a073448ae5644b728b73ff75acfd5bbe"
+    },
+    {
+      "vi": "ngôi",
+      "ko": "지위, 계급",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/53a504d3a2dc490eb022ef69bac133c0"
+    },
+    {
+      "vi": "ngơi",
+      "ko": "쉬다. 휴식하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/da0d25b4e0b54e958cc10e2c9ed994bc"
+    },
+    {
+      "vi": "đều",
+      "ko": "규칙적인. 고른",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f9ba5f6eeb824b6882909538941aaec5"
+    },
+    {
+      "vi": "bởi",
+      "ko": "…에 의해",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0c03cdff29624642bf6ecb1977797f55"
+    },
+    {
+      "vi": "mau",
+      "ko": "빠른",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6204666425a142a8a5011df4c5d338e4"
+    },
+    {
+      "vi": "lành",
+      "ko": "좋은, 온유한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1e89b096448549908ffb5d22061830ad"
+    },
+    {
+      "vi": "lanh",
+      "ko": "재빠른. 민첩한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ddbb444f2fbc4165be5a572cd9dc968b"
+    },
+    {
+      "vi": "lúc",
+      "ko": "짧은 시간. 순간. 찰나",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e1c1582dfb914677a1af8ff29dc8eac6"
+    },
+    {
+      "vi": "cứ",
+      "ko": "계속하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e2f8abd66d7e45c5ac388750d99df799"
+    },
+    {
+      "vi": "trọn",
+      "ko": "완전히. 완벽하게",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c851515f0585473fa826838fa9d800d6"
+    },
+    {
+      "vi": "đấng",
+      "ko": "높은 인물에게 붙이는 존칭",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/86d878d337f74d5aa7bf75f200f7f1fa"
+    },
+    {
+      "vi": "dáng",
+      "ko": "외형. 모습",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4ad564a7566a464080da1e0af4d7d056"
+    },
+    {
+      "vi": "đằng",
+      "ko": "방면. 측",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9eb82fbc4cf0420fbefd5a2245e043fc"
+    },
+    {
+      "vi": "chốn",
+      "ko": "장소",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3c310d961cab4e0d87581811ce6b58ec"
+    },
+    {
+      "vi": "ngợi",
+      "ko": "칭찬하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1ec261a6ab464a9f894af343fa22e526"
+    },
+    {
+      "vi": "vang",
+      "ko": "울려 퍼지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2e81f743e9db4381a2f01c9e5109b11b"
+    },
+    {
+      "vi": "giảng",
+      "ko": "설명하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c04d499548df40788c6c44645095f187"
+    },
+    {
+      "vi": "đôi",
+      "ko": "쌍, 커플",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a4139c65326e488fba3e565d12afc239"
+    },
+    {
+      "vi": "hỡi",
+      "ko": "-여! (부르는 말)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/637f68a2043047cc82cc09466fa50787"
+    },
+    {
+      "vi": "hồi",
+      "ko": "(연극의) 막",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/87059665297340dc93f87169f9fb2627"
+    },
+    {
+      "vi": "quanh",
+      "ko": "주위. 주변",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/22fbf01c331f4b339604686f9be7c004"
+    },
+    {
+      "vi": "khuyên",
+      "ko": "충고하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1b014d7ddd7f46109d56c67da30ce5d7"
+    },
+    {
+      "vi": "khuyến",
+      "ko": "권하다. 충고하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4a03e74d92bb4d6486f4afd1eee08ba8"
+    },
+    {
+      "vi": "ngời",
+      "ko": "빛나다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fd29a8df60be4d6486514564653dd73a"
+    },
+    {
+      "vi": "kề",
+      "ko": "가까이. 근처에",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b4d8092df92249eda0989a9e8dd03a20"
+    },
+    {
+      "vi": "kẻ",
+      "ko": "사람",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fb4c75f9f7be4168bdab0e6cd8d615b2"
+    },
+    {
+      "vi": "hiến",
+      "ko": "헌상(獻上)하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/db6c8d9a1e714e29a0b2187be4f2d1f0"
+    },
+    {
+      "vi": "say",
+      "ko": "…에 취하다. (연애·색정 등) 에 빠지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ccb855c17ac74fa2ab119dba7978b986"
+    },
+    {
+      "vi": "tan",
+      "ko": "녹다. 액체상태로 되다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c40a3358041944d285fd08ecb15d7420"
+    },
+    {
+      "vi": "tàn",
+      "ko": "시들다. 떨어지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/598766eb19bd4435948846024c92b817"
+    },
+    {
+      "vi": "phiền",
+      "ko": "방해하다. 폐를 끼치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/03602aa538f345519b84a3ce17da4ff5"
+    },
+    {
+      "vi": "nan",
+      "ko": "어려움",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8521b82000a3454395ed96dd619a8927"
+    },
+    {
+      "vi": "nản",
+      "ko": "낙담한. 낙심한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2d3c756458ae48c189a5965841199e2e"
+    },
+    {
+      "vi": "nắn",
+      "ko": "(손으로) 만지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d2985adbf9694baab1ea56c3d19cc8af"
+    },
+    {
+      "vi": "ngàn",
+      "ko": "천(1,000)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2f6e5d78b82f429c99e76d0611dcae6c"
+    },
+    {
+      "vi": "nâng",
+      "ko": "들어올리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a3799a7fcf574560b5fe20af04aca966"
+    },
+    {
+      "vi": "nàng",
+      "ko": "그녀. 당신. 아가씨. 부인이라는 뜻의 호칭",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/132a4a19d76e46c7966c8559c2b7eb03"
+    },
+    {
+      "vi": "rạng",
+      "ko": "밝아지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c55ba2fcdc264e5da717d36ba1518f71"
+    },
+    {
+      "vi": "chia",
+      "ko": "나누다. 분배하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0aa8f3a545014847a7984f78bd96290c"
+    },
+    {
+      "vi": "chìa",
+      "ko": "쭉 뻗다. 내밀다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/24af9a033bbf4aa99f7b0f852bcdc307"
+    },
+    {
+      "vi": "lạy",
+      "ko": "엎드리다. 엎드려 머리를 조아리다. 아부하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7341ecd2706844a8b9d8f48717fd760b"
+    },
+    {
+      "vi": "khẩn",
+      "ko": "긴박한. 급박한. 긴급한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6221724796fe47b99eda95ff882fe525"
+    },
+    {
+      "vi": "thai",
+      "ko": "태아",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c7262f50fb174cb1ac3e8b5cc56d909a"
+    },
+    {
+      "vi": "nguy",
+      "ko": "위험한. 위험이 많은",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/72806e13cb3b474db0d7d226de1eb950"
+    },
+    {
+      "vi": "vây",
+      "ko": "에워싸다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/56a89214c8604b87aeda71245ead57a4"
+    },
+    {
+      "vi": "vàn",
+      "ko": "만(萬). vạn의 변한음(音)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2b69fff98e214603b36f18d27ea557f7"
+    },
+    {
+      "vi": "vân",
+      "ko": "무늬. 결",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b5e9de9713a84685933aa9088271cc33"
+    },
+    {
+      "vi": "vấn",
+      "ko": "감다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c3a6e433133b4f9594857761826ff3f5"
+    },
+    {
+      "vi": "dư",
+      "ko": "남아있는. 여분의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7cba63a362f040839694b177bec2e2d2"
+    },
+    {
+      "vi": "xây",
+      "ko": "건축하다. 건설하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f9ad35fcafa8445bbacdf15de33865d9"
+    },
+    {
+      "vi": "xảy",
+      "ko": "발생하다. 생기다. 일어나다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/de643a14ef25400795c5f0b91965659f"
+    },
+    {
+      "vi": "chiếu",
+      "ko": "비추다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a2447ee3f9f1466b802929d80d1d40d8"
+    },
+    {
+      "vi": "chiều",
+      "ko": "오후",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7609fac7064949d1966262614c326fd7"
+    },
+    {
+      "vi": "ngẫm",
+      "ko": "사고하다. 숙고하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b022c771278a4d8a9e8c657276433827"
+    },
+    {
+      "vi": "cậy",
+      "ko": "의지하다. 의존하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7df546acd3404054bc431c6c20a6117e"
+    },
+    {
+      "vi": "cay",
+      "ko": "매운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a502fe3f03b240a3bd067589742ccdb6"
+    },
+    {
+      "vi": "kiếm",
+      "ko": "찾다; 칼",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a3b2737a982d4f7bbe19e800722c50ff"
+    },
+    {
+      "vi": "kiềm",
+      "ko": "집게. 족집게",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1cdf00828ac5454283e351eca0237d70"
+    },
+    {
+      "vi": "dường",
+      "ko": "…처럼 보이다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4add4bf8acf84c0ca3cf2717c3315659"
+    },
+    {
+      "vi": "sát",
+      "ko": "근접한. 가까운. (운수. 운명) 죽을 운세인. 살생기가 들은",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bbda0a9cfca04709998e0ff528775d6c"
+    },
+    {
+      "vi": "khôn",
+      "ko": "슬기로운, 지혜로운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/310c0d2056734a02b6b10668a2505083"
+    },
+    {
+      "vi": "khốn",
+      "ko": "곤란을 당하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ce7524323c974687800ec5ada14b699b"
+    },
+    {
+      "vi": "thuở",
+      "ko": "시간. 시기",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e04845af8a9a4e7aacd7c8b3260a31f6"
+    },
+    {
+      "vi": "gánh",
+      "ko": "메다. 짊어지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d482a569d9d6428ba13f6dba3f3aa245"
+    },
+    {
+      "vi": "trôi",
+      "ko": "표류하다, 흐르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ef7b5bb08ba74cf3927ec325c56d5a27"
+    },
+    {
+      "vi": "thơ",
+      "ko": "어린; 시",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/94d68382843b4caa9f2ac06c162b1a85"
+    },
+    {
+      "vi": "thợ",
+      "ko": "수공예 등에 종사하는 사람의 총칭",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/138a9f936d77417d9438c281561cb979"
+    },
+    {
+      "vi": "chở",
+      "ko": "수송하다. 운반하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6ed7e5b0946c423889cd493f2a62d17c"
+    },
+    {
+      "vi": "chắc",
+      "ko": "확실한. 확신한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9efc39efbe4d4c13a97129b149e3e657"
+    },
+    {
+      "vi": "dồn",
+      "ko": "쌓다. 저축하다. 모으다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3326679080864cd8aea08f6472468cb1"
+    },
+    {
+      "vi": "xóa",
+      "ko": "말소하다. 삭제하다. 지우다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1cfd1c8e93c34f59b90bd70538236122"
+    },
+    {
+      "vi": "sẻ",
+      "ko": "나누다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c066f59f8eef47328b59860e9ad14bad"
+    },
+    {
+      "vi": "se",
+      "ko": "건조한. 마른",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ffed89fa89f442af8015b70583f9a258"
+    },
+    {
+      "vi": "lẻ",
+      "ko": "나머지 수. 소수점 이하 또는 큰수에 비해 작은 수",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/01772269a1bd4c2ab88ad00750e35137"
+    },
+    {
+      "vi": "lẽ",
+      "ko": "이유. 동기. 도리(道理)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/618b04470566453ba4b6068d09ed41d5"
+    },
+    {
+      "vi": "dựng",
+      "ko": "세우다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/42a5b07e5bc8462fade1a89dce21130a"
+    },
+    {
+      "vi": "dung",
+      "ko": "허용하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8c0c4145c4da42aaac2f36f5ac421c72"
+    },
+    {
+      "vi": "càng",
+      "ko": "더욱더",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3d60ed1c9625447ca7ba587cb2572419"
+    },
+    {
+      "vi": "căng",
+      "ko": "잡아당기다. 팽팽하게 하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/04d74aedd05d4e02804eff9cdfc0c172"
+    },
+    {
+      "vi": "nguồn",
+      "ko": "(강 따위의) 근원. 발원지. 수원지",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e93079c321b44a4ba586c6fb42ae89d5"
+    },
+    {
+      "vi": "hoàng",
+      "ko": "황제(皇帝)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ea21802c8d674a72bca44ff527740598"
+    },
+    {
+      "vi": "hoang",
+      "ko": "황폐한. 방기(放棄)한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0ad4ac36f87a4eb99041b4ba38dd9330"
+    },
+    {
+      "vi": "thấu",
+      "ko": "완전한. 철저한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8cf90a0cb3a3450894af9742f530973e"
+    },
+    {
+      "vi": "thâu",
+      "ko": "처음부터 끝까지",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bdfeaacaca594fadb9ba19532098e12c"
+    },
+    {
+      "vi": "nao",
+      "ko": "시어(詩語)에서 의문사로 쓰는 말",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/803e4263c2f94026a40965761b90e356"
+    },
+    {
+      "vi": "cứu",
+      "ko": "구하다. 구제하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/eb319879ac8544d6a8d310484dc666e0"
+    },
+    {
+      "vi": "cừu",
+      "ko": "동물 양",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4ee27173d56a4b0b8f86b38a06f27913"
+    },
+    {
+      "vi": "cưu",
+      "ko": "(마음) 지니다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f8fcb6fda0a84604a213475cd1600b4d"
+    },
+    {
+      "vi": "kìa",
+      "ko": "저기에. 저쪽에. 건너편에(약간뒤 먼곳을 가리킴)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/aef28364e90645248376a2f213c45dce"
+    },
+    {
+      "vi": "tỏ",
+      "ko": "밝다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6087afa8482049fe9cc9f0401be306fb"
+    },
+    {
+      "vi": "tố",
+      "ko": "폭풍",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6126ee948c1d47ad97cfdac2e47b2cb3"
+    },
+    {
+      "vi": "xuân",
+      "ko": "봄",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3211f882530a4ce69d3185b849099895"
+    },
+    {
+      "vi": "hái",
+      "ko": "낫",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/774528f6c7df42c386b9bc9f9807060d"
+    },
+    {
+      "vi": "hai",
+      "ko": "둘",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/11624ba6bb53405f9e6297be48fb4853"
+    },
+    {
+      "vi": "thắm",
+      "ko": "색이 진한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2cb92b9eaeb847d6bd9d6c7d27b63eb6"
+    },
+    {
+      "vi": "phai",
+      "ko": "(색이) 바래다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e398dbe03e754492803b94933cb0f3cb"
+    },
+    {
+      "vi": "loài",
+      "ko": "생물의 종. 분류. 종별(種別)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/15b3930e073147c7958136d3b5733554"
+    },
+    {
+      "vi": "hủy",
+      "ko": "파괴하다. 부수다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e1b23ea40ebf44bb9041a4807f55c421"
+    },
+    {
+      "vi": "cuộc",
+      "ko": "모임 등에 쓰이는 말",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/efde2e95c1ca46b1a0da31eafaf593ee"
+    },
+    {
+      "vi": "nương",
+      "ko": "의지하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/dd57ce44cf6f49239512ee8dadc592ed"
+    },
+    {
+      "vi": "rõ",
+      "ko": "파악하다. 이해하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/600866e9ccda497696fd9b5b4022cdd3"
+    },
+    {
+      "vi": "ngập",
+      "ko": "침수하다. 넘치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/687dab9dc6e547259469e4515bc217df"
+    },
+    {
+      "vi": "đắp",
+      "ko": "덮다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4b674d88c9244a3ab3c0a792b5b25fd0"
+    },
+    {
+      "vi": "đập",
+      "ko": "댐. 둑",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/aa4a3f99a0f24d1eabfce987947ff1ce"
+    },
+    {
+      "vi": "đáng",
+      "ko": "…할 가치가 있다. ~해야 마땅하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/78380ff57aad43a091d9f0f03f626d69"
+    },
+    {
+      "vi": "tới",
+      "ko": "도착하다. 오다. 닿다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f50f7254358241059874a139e93ec005"
+    },
+    {
+      "vi": "gây",
+      "ko": "…을 야기하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8ce126cfbd3949598d9dddb48949845f"
+    },
+    {
+      "vi": "giây",
+      "ko": "초. 순간",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f095f900574e417d924b90745b5d0d70"
+    },
+    {
+      "vi": "loan",
+      "ko": "알리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bb2ec3ba720a48afae3305bc87a0519f"
+    },
+    {
+      "vi": "biến",
+      "ko": "사라지다. 증발하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/319dae4459e14e4791fefaf09aa1c490"
+    },
+    {
+      "vi": "biện",
+      "ko": "준비하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/cf68b2045f8446a5ab6db16567c8f889"
+    },
+    {
+      "vi": "giản",
+      "ko": "간단한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d2d029450d7743138c0443af8c89b92f"
+    },
+    {
+      "vi": "vơi",
+      "ko": "충분치 못한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/af3a0b0bc0a746be8e188f015ad17ba0"
+    },
+    {
+      "vi": "chịu",
+      "ko": "참다. 이겨내다. 맡다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e88baf666db84c3a866d1de2de9e25fc"
+    },
+    {
+      "vi": "trao",
+      "ko": "주다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0a5af0e778e648498467e56168093531"
+    },
+    {
+      "vi": "trào",
+      "ko": "넘치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/aa9fdc8ecfc542eaadf181ac53c84a96"
+    },
+    {
+      "vi": "dành",
+      "ko": "대비해두다. 저축하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bbf29294bdae468fb467f7856357a60d"
+    },
+    {
+      "vi": "sánh",
+      "ko": "비교하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/78d77eeeefd942f1a6d213bc30e6c6d7"
+    },
+    {
+      "vi": "ao",
+      "ko": "연못. 늪. 수렁. 웅덩이",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5e7600c086d845e5a28d4201991291c8"
+    },
+    {
+      "vi": "ảo",
+      "ko": "틀린. 착각의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2c3ad2fc878548839bc6e87ffc5e3db7"
+    },
+    {
+      "vi": "phó",
+      "ko": "맡기다, 부탁하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/89b33f57127a47d58e870b0a1a7b161d"
+    },
+    {
+      "vi": "phố",
+      "ko": "거리",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6115ac8d2dd349109deedfb91a3f82ea"
+    },
+    {
+      "vi": "bủa",
+      "ko": "(주위를) 싸다. 펼치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/340f45f3d4744f908122afb9fe9c0fce"
+    },
+    {
+      "vi": "bữa",
+      "ko": "낮, 주간",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8d6fddf69e7244b29d4f071761f94fcb"
+    },
+    {
+      "vi": "dang",
+      "ko": "(손·발을) 펴다. 뻗다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e7434165ae8c4f729251a72737bcf42f"
+    },
+    {
+      "vi": "hoài",
+      "ko": "언제나. 항상",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0823c51fd41845a887b9ffee6134bc9c"
+    },
+    {
+      "vi": "hoại",
+      "ko": "파괴하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9c88259005ad4be0a8a2a8c95e309663"
+    },
+    {
+      "vi": "đàn",
+      "ko": "무리. 떼",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6836c815fe3c42dcb76295a641dbf037"
+    },
+    {
+      "vi": "đong",
+      "ko": "(체력, 물량을) 재다. 측정하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8fe0380d5f9d4886a11347f2f6f8f200"
+    },
+    {
+      "vi": "dòng",
+      "ko": "물결. 전류",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7846b2dbea63424a9034c885a37a790e"
+    },
+    {
+      "vi": "bấy",
+      "ko": "그때, 그만큼",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1e59448d2ad44e468c29748aecd66bca"
+    },
+    {
+      "vi": "bây",
+      "ko": "너(예의바르지 않은 표현). 네놈들",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d77fe976d40440f08515a3ff2563d0fa"
+    },
+    {
+      "vi": "bày",
+      "ko": "드러내다. 전시하다. 보이다. 배치하다. 가르쳐주다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5312ba0a456f48539418f6f70f9d028a"
+    },
+    {
+      "vi": "bẫy",
+      "ko": "올가미. 덫",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/cdec9ffea66b4aa8b72a16c737bf59ab"
+    },
+    {
+      "vi": "lệ",
+      "ko": "눈물",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/61caf13d21394a00a784fc2c20e489d4"
+    },
+    {
+      "vi": "thoái",
+      "ko": "후퇴하다. 물러나다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/cb36c8be587e448abf11dbddafbfeafe"
+    },
+    {
+      "vi": "thoại",
+      "ko": "대화",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/af476484927e4d3f998495fdbbc45e8d"
+    },
+    {
+      "vi": "thoải",
+      "ko": "완만한. 약간 언덕진",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/72845e377572484e9c4812a189ffb6f1"
+    },
+    {
+      "vi": "gắng",
+      "ko": "노력하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c59b26eb388f450aa79771e372ed0eea"
+    },
+    {
+      "vi": "tiếc",
+      "ko": "후회하다. 유감으로 생각하다. 아쉬워하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ffca961471fc46f287b7825aa40d2cab"
+    },
+    {
+      "vi": "đua",
+      "ko": "경쟁하다. 겨루다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0fe0c685d026450a8ae5ff5827b094b9"
+    },
+    {
+      "vi": "đứa",
+      "ko": "아이·손아랫사람에게 붙이는 말",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/610a517605084cd0b98fde82858faadf"
+    },
+    {
+      "vi": "chăm",
+      "ko": "열중하다. 심취하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c26333f8502b4d2d8e481d321825632e"
+    },
+    {
+      "vi": "bị",
+      "ko": "-을 당하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b224ea1336ff4d69abd04bcf83111072"
+    },
+    {
+      "vi": "chim",
+      "ko": "새",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0a3daad18cf44302bc4bb0578574b8ed"
+    },
+    {
+      "vi": "chìm",
+      "ko": "(물속에) 가라앉다. (분위기) 축 처지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/87a5c80fe1a14add97a9e4a7af9bf52e"
+    },
+    {
+      "vi": "bất",
+      "ko": "…이 아닌",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/835b51483b6d413387e4cb43127c6256"
+    },
+    {
+      "vi": "bớt",
+      "ko": "줄이다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0ea5bb73ef17452f8461a4e1dba98db2"
+    },
+    {
+      "vi": "chút",
+      "ko": "소량. 조금",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9f000ca574bb4edf8f42303f0d9d1139"
+    },
+    {
+      "vi": "đậm",
+      "ko": "진한(색)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c92f49b619804867a826522b1bc5d17c"
+    },
+    {
+      "vi": "sầu",
+      "ko": "비탄. 슬픔",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e8d1cf83d3654ee8920c4cad91cfa276"
+    },
+    {
+      "vi": "sắp",
+      "ko": "(근접 미래 조동사 역할) 막 …하려 하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f64700367c70469d8cd01f703ea7b262"
+    },
+    {
+      "vi": "chuyên",
+      "ko": "전공의, 전문의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/44b6b5750d7d42db8cfe4866cc7c829f"
+    },
+    {
+      "vi": "giọng",
+      "ko": "억양",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/471f58cccec54e51959ad62b56011654"
+    },
+    {
+      "vi": "tỏa",
+      "ko": "퍼지다. 전개하다. 펴다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d1562f2dfe864ed4894a2f45721e12b6"
+    },
+    {
+      "vi": "non",
+      "ko": "젊은. 미숙한. 갓태어난",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1c74a16d2c7f4de5a74bb33ab04b3cf3"
+    },
+    {
+      "vi": "ngã",
+      "ko": "넘어지다. 굴러떨어지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3d8685b2d26c42fab574f866bfd3d2c2"
+    },
+    {
+      "vi": "nga",
+      "ko": "지명 러시아(사회주의 연방 공화국)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a9df880e5737404c89332f5904c6ee37"
+    },
+    {
+      "vi": "ngả",
+      "ko": "길(방향). 노정",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/031274838eae406c99047f06dccb1945"
+    },
+    {
+      "vi": "ngớt",
+      "ko": "약해지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/72fc7893c7e44173a3080e104d2eab61"
+    },
+    {
+      "vi": "nhu",
+      "ko": "부드럽고 온화한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/569165d2b8884cabbfa58d2cf8396fe7"
+    },
+    {
+      "vi": "ngươi",
+      "ko": "아랫 사람에게 사용하는 2인칭. 너. 자네 등",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f23bb4bf041e43439d211abfbd594dcc"
+    },
+    {
+      "vi": "bão",
+      "ko": "태풍",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/23a5548561a749739539c014fb0a111a"
+    },
+    {
+      "vi": "thăng",
+      "ko": "되(용량의 단위, 升). 높은 음표",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f51bc808c9f445ad98bd7b3a6c32ac13"
+    },
+    {
+      "vi": "van",
+      "ko": "간원하다. 간청하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/99d83efa9d5546c09a89048861d5ec66"
+    },
+    {
+      "vi": "xinh",
+      "ko": "귀여운. 예쁜",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a81c4953f20d4c40a96e25678060bcdc"
+    },
+    {
+      "vi": "bé",
+      "ko": "작은",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c7550de63904404eb8f5a06403a6b950"
+    },
+    {
+      "vi": "bể",
+      "ko": "바다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/79a4e8bccda24f219be707a5702970e4"
+    },
+    {
+      "vi": "rỡ",
+      "ko": "밝다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/70e58cc2e3044cf5b08ad0baabfeafe4"
+    },
+    {
+      "vi": "ngự",
+      "ko": "어(황제에 대한 존칭)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/905766bf3c804a66954394baf3397d26"
+    },
+    {
+      "vi": "khổ",
+      "ko": "불행한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/400f4fbe335541729cb63a4c01354e30"
+    },
+    {
+      "vi": "kho",
+      "ko": "창고. 보관소",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/371be89a4a964933aff66f40bedcdd37"
+    },
+    {
+      "vi": "trút",
+      "ko": "쏟다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/133a79bd847841fc931e6a17dcdb923c"
+    },
+    {
+      "vi": "chứa",
+      "ko": "담고있다. 저장하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/aa4247d0355d4a56a7f27dde3737ea97"
+    },
+    {
+      "vi": "ngại",
+      "ko": "걱정하는. 두려운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/595314fc7a7246b087f716193897ae84"
+    },
+    {
+      "vi": "mưu",
+      "ko": "계획. 기획. 모의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/be19741543f04a288a123ec9fb709181"
+    },
+    {
+      "vi": "toan",
+      "ko": "…할 예정이다. 즉시 …을 시도하다. 꾀하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/40c6371c27a6434ba9ddd93554961eff"
+    },
+    {
+      "vi": "giấc",
+      "ko": "잠. 수면",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/57220a7b7a634246a4ee65eeccdc3690"
+    },
+    {
+      "vi": "giặc",
+      "ko": "도적",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/30ebe5aae4f34c3f9c7c35ec538d830a"
+    },
+    {
+      "vi": "trăng",
+      "ko": "달",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1f9fd388ca32477c81e935628c379aff"
+    },
+    {
+      "vi": "ơi",
+      "ko": "-아, -야 (부르는 말)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3f916e18991e4bd1b63bf4a2dfccdc72"
+    },
+    {
+      "vi": "lui",
+      "ko": "물러서다. 후퇴하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7828a1dc5dbc4b7c86a05289bdc49614"
+    },
+    {
+      "vi": "lụi",
+      "ko": "찌르다. 꿰뚫다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5b40176c6b394084aaa70163e4560965"
+    },
+    {
+      "vi": "phía",
+      "ko": "방향. 쪽",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a166b735fe6c4aceb39145b4691589de"
+    },
+    {
+      "vi": "rọi",
+      "ko": "(햇빛이) 들어오다. 비추다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3863dc69325e41a6a67b71777f113cee"
+    },
+    {
+      "vi": "dịu",
+      "ko": "감미로운. 온화한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/239be06f1fd7436fa93fadb997b1fb93"
+    },
+    {
+      "vi": "dìu",
+      "ko": "부축하여 데리고 가다. 부축하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c91f40b4403b4bb190cc658ea0697b73"
+    },
+    {
+      "vi": "quen",
+      "ko": "알다. 친하게 지내다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a0ee2fdebf1a4207a3ca26e18726b706"
+    },
+    {
+      "vi": "đặt",
+      "ko": "두다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/11b59046261d44b28e5086161ffa9dbd"
+    },
+    {
+      "vi": "dắt",
+      "ko": "(손을 잡고) 데리고 가다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/db3c5bc6dc384eca96caa133289be0dd"
+    },
+    {
+      "vi": "niềm",
+      "ko": "감정을 나타내는 명사 앞에 쓰는 말",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/52ccf416abac4b8998d5bb4082ea5dba"
+    },
+    {
+      "vi": "hãi",
+      "ko": "무서워 벌벌 떨다. 두려워하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3368588abf14401da6747a390eac72dd"
+    },
+    {
+      "vi": "vấp",
+      "ko": "부딪치다. 채어서 비틀거리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d844bd81211f43d49df83122889d0627"
+    },
+    {
+      "vi": "vấp chân",
+      "ko": "비틀거리다. …가 (발에) 채이다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/41f665236d044bd48773069bab03f1a9"
+    },
+    {
+      "vi": "lầm",
+      "ko": "잘못 생각하다. 오해하다. 혼동하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/77bb94e2a3bd4cf393fa157983db1d59"
+    },
+    {
+      "vi": "hiểm",
+      "ko": "(지형이) 험난한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a07b1bb6ac264792b690e39d3a2d10f7"
+    },
+    {
+      "vi": "thù",
+      "ko": "원한. 적시(敵視)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1ff25841b5704a1a99d0e92e38cc8124"
+    },
+    {
+      "vi": "thú",
+      "ko": "동물. 짐승. 야수",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f1964f44444d4da986852bbd7f358529"
+    },
+    {
+      "vi": "dạn",
+      "ko": "익숙해지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/27ecb880bf26402e89e4d007b950e86c"
+    },
+    {
+      "vi": "hại",
+      "ko": "손상하다. 손해를 끼치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b1b5f15333fd41c08b97b6e88714c929"
+    },
+    {
+      "vi": "lỗi",
+      "ko": "과실. 실수. 잘못",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e1982dcc701548d49c2f371bd01a5828"
+    },
+    {
+      "vi": "khiếm",
+      "ko": "부족한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/89cbdb6f39424d3ba933c9e5d73520c9"
+    },
+    {
+      "vi": "nồng",
+      "ko": "더운. (냄새·색깔 따위가) 강렬한. 진한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/73adad1a40a24a6dae00e8e303a716da"
+    },
+    {
+      "vi": "đáy",
+      "ko": "바닥. 밑바닥",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/385daad82ead4f008d9339743cbc85a7"
+    },
+    {
+      "vi": "chông",
+      "ko": "창, 작살",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/db7a166f80f14611aeb515f54a25c11d"
+    },
+    {
+      "vi": "chống",
+      "ko": "반대하다. 저항하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8adf391fd00843fbbab76d032b5bcf2b"
+    },
+    {
+      "vi": "gai",
+      "ko": "가시",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/15c962eefe8d4879906172cd17073767"
+    },
+    {
+      "vi": "vẹn",
+      "ko": "완전한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8e80a5022eb34112a26a3279444a5ab9"
+    },
+    {
+      "vi": "xiết",
+      "ko": "문지르다. 비비다. (물) 빠르고 세게 흐르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3fbd354f4ae740b281cea292c638fbee"
+    },
+    {
+      "vi": "báu",
+      "ko": "매우 귀중한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/63fe983311c54b229c3a7c988060fa54"
+    },
+    {
+      "vi": "bầu",
+      "ko": "기운. 분위기",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b80fb5227eea46c5a333b5f73c23c7dc"
+    },
+    {
+      "vi": "nỗi",
+      "ko": "사정. 심경",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5ce26e8faf22467a9cb6db4e70649e11"
+    },
+    {
+      "vi": "nổi",
+      "ko": "(기름이) 뜨다. 표류하다. (물위에) 떠다니다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/69d97f2eddff45ea833e4b59e05332c6"
+    },
+    {
+      "vi": "vượt",
+      "ko": "넘다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e496c5879603477d8dcb7ff743ba7049"
+    },
+    {
+      "vi": "vuốt",
+      "ko": "쓰다듬다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/05dd47a61fea47b293b56159622318ca"
+    },
+    {
+      "vi": "thuận",
+      "ko": "찬성하다. 동의하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2c67e691e77143f3b36026d6b794f5ce"
+    },
+    {
+      "vi": "nghiện",
+      "ko": "중독이 되다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6a4495c98c7a41e193e79e94b040a963"
+    },
+    {
+      "vi": "thầm",
+      "ko": "비밀스럽게. 몰래",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7156c826b34a43e296ed8f65c6209ce0"
+    },
+    {
+      "vi": "ngần",
+      "ko": "절제하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/47dcfe87fad14edd9cae138372acd0cf"
+    },
+    {
+      "vi": "dõi",
+      "ko": "혈통. 대(를 잇다)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b91aef5c000b47faa3d5e8485d329074"
+    },
+    {
+      "vi": "mỏi",
+      "ko": "지친",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/64dc750185904043be358dc54c1c0af3"
+    },
+    {
+      "vi": "ngắm",
+      "ko": "주시하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f12003c433024eebae89a48aae2789c7"
+    },
+    {
+      "vi": "run",
+      "ko": "(무릎·손) 떨림. (목소리·땅) 떨림",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/de3cb0c435d145d5956950c7f84f84c8"
+    },
+    {
+      "vi": "rộn",
+      "ko": "번잡한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e5c95e9b7d2645c88791c832b30e119e"
+    },
+    {
+      "vi": "tồn",
+      "ko": "존재하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/090a9b836c8e4eacac87f49d0baf9381"
+    },
+    {
+      "vi": "tốn",
+      "ko": "소비하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/22cb5a49b86a4c16a1f9b3a6ac26ae02"
+    },
+    {
+      "vi": "tổn",
+      "ko": "소비하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a80604b3c1be45199975db03b7981a57"
+    },
+    {
+      "vi": "trùng",
+      "ko": "일치하는. …와 동시에 일어나는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d5bdc7613e4f4d0798b0d5d08f3297b6"
+    },
+    {
+      "vi": "khinh",
+      "ko": "경시하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/190a0e3205cb4b8882a94a8679fd8163"
+    },
+    {
+      "vi": "ngọn",
+      "ko": "선단",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fb05f94ac0134c38bad9b75a17abb17a"
+    },
+    {
+      "vi": "sưởi",
+      "ko": "(몸을) 따뜻하게 하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/59831ebeb3404fca89f72d5d96687a34"
+    },
+    {
+      "vi": "suối",
+      "ko": "샘. 원천",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3e1e7742002a49f99c7c9e5ddaf9a51c"
+    },
+    {
+      "vi": "gác",
+      "ko": "놓다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2ff4e11d61524be9b5aede3a5eb41231"
+    },
+    {
+      "vi": "buông",
+      "ko": "풀어놓다. 놓다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ae411705a3c8452191dfcdb7de42f95d"
+    },
+    {
+      "vi": "thoát",
+      "ko": "탈출하다. 나가다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6b2ae8c52a7849279f6e0ae62350beb3"
+    },
+    {
+      "vi": "chê",
+      "ko": "험담하다, 비난하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c518a488448744bf9b3e7d8ae6c5f6a6"
+    },
+    {
+      "vi": "xót",
+      "ko": "아픔을 느끼다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d856952e01ab4ae7a2e7518ff3fcdbe0"
+    },
+    {
+      "vi": "dẹp",
+      "ko": "정리하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f43dde05f35141d6b8d82bb98ef0cd5f"
+    },
+    {
+      "vi": "chóng",
+      "ko": "빠른",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/22d0dc765a024872af53e547571ac198"
+    },
+    {
+      "vi": "mê",
+      "ko": "아주 좋아하다, 동경하다, 숭배하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a30ca6317c33460c8a1ca6a3a982960b"
+    },
+    {
+      "vi": "kể",
+      "ko": "일일히 세다. 열거하다. 말하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/83b95ca2f2f142cdbb09336b12e9b6ec"
+    },
+    {
+      "vi": "thẳm",
+      "ko": "깊은",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2ecfff0a70964f9d88b967c0ba3de7ff"
+    },
+    {
+      "vi": "trầm",
+      "ko": "가라앉다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/91e66dc55a8b41f3965e8d1caa75f675"
+    },
+    {
+      "vi": "trăm",
+      "ko": "백(100)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4e4c6c340c4440b9bbdc3569ecaca825"
+    },
+    {
+      "vi": "núng",
+      "ko": "약해지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5cfdac3f14f840fdb71ce9ccc7b39f2e"
+    },
+    {
+      "vi": "khiếp",
+      "ko": "두려워하다. 무서워하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/41e5d34d9a1c4de3beb691a9117734bf"
+    },
+    {
+      "vi": "khiếp sợ",
+      "ko": "놀란. 겁먹은",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1a8796ff6b114e928654ef0d4373e252"
+    },
+    {
+      "vi": "sang",
+      "ko": "건너다. 지나다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/93cc6fbe8ab440f08e09e1c9f5d126a7"
+    },
+    {
+      "vi": "êm",
+      "ko": "부드러운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1d5ef51e41ab48308c51959db87bad0a"
+    },
+    {
+      "vi": "á",
+      "ko": "고통, 놀람 등을 나타내는 말",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e80ab66c834249eebf488762d77aa7e6"
+    },
+    {
+      "vi": "đề",
+      "ko": "표제. 주제",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/caf5e10e21794f218e3c2e794eff87c4"
+    },
+    {
+      "vi": "nhòa",
+      "ko": "얼룩지다. 안개가 끼다. 희미해지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/49de590f85c14510b264283c1ca590ae"
+    },
+    {
+      "vi": "noi",
+      "ko": "따르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e70bd16530a6460eb57ceb1a3c2ea388"
+    },
+    {
+      "vi": "sờn",
+      "ko": "(옷 따위가) 헤어진",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f598c22acde343cfb27d23de92649bc9"
+    },
+    {
+      "vi": "bá",
+      "ko": "100(독자적으로 쓰이지 못함)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2fc001893dbb4f04b7f52a1bb9fc38ac"
+    },
+    {
+      "vi": "tụng",
+      "ko": "암송하다. 염불을 외다. 성가를 부르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d56d1c5102c04346b9e50a3dc3cdc25f"
+    },
+    {
+      "vi": "tung",
+      "ko": "던지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/07e8a9b30e7a45c384148b63ce2b5715"
+    },
+    {
+      "vi": "tùng",
+      "ko": "소나무. 전나무",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6f41e50ca542462695d4caacfa42b363"
+    },
+    {
+      "vi": "vọng",
+      "ko": "울리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/58db06eca38d40e390df93c16cc6de02"
+    },
+    {
+      "vi": "vong",
+      "ko": "잃다. 죽다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e0aed253408d4aa9a625856b5fb76a58"
+    },
+    {
+      "vi": "lan",
+      "ko": "퍼지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8a67401becb44d04849f9da5d234ff6e"
+    },
+    {
+      "vi": "lẫn",
+      "ko": "혼동하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a2009b2d45db46cb87fc8cfadd0ed03e"
+    },
+    {
+      "vi": "no",
+      "ko": "너무 많이 먹은. 포식한. 배가 부른",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e33c7640adf447dea43ded11d88985ef"
+    },
+    {
+      "vi": "đem",
+      "ko": "들고 가다. 가지고 오다(가다)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2104aa2eaf17477eb2b0fb7c8a481e59"
+    },
+    {
+      "vi": "họp",
+      "ko": "모이다. 집합하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4ae6a6de337848978bfe1cdfd937b0b9"
+    },
+    {
+      "vi": "tượng",
+      "ko": "형상. 조상(彫像)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8883cb46592447fba085046585e958d4"
+    },
+    {
+      "vi": "chuộng",
+      "ko": "좋아하다. 애호하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ae83d6eca4a24bc9b19b63948d508cc7"
+    },
+    {
+      "vi": "xét",
+      "ko": "고찰하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9f8eb65b13d04578afad08d3216f8f67"
+    },
+    {
+      "vi": "nhọc",
+      "ko": "몸이 나른한. 피곤한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6bbe2066b2964be18e0c6aba1ef66bd8"
+    },
+    {
+      "vi": "lấp",
+      "ko": "막다. 메우다. 폐쇄하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1aafee8db7f54911a8cb61e3d26a4eed"
+    },
+    {
+      "vi": "mạng",
+      "ko": "일생. 생명",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/807f2baef54f454d82b80471862fdaee"
+    },
+    {
+      "vi": "gieo",
+      "ko": "뿌리다. 퍼뜨리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3b7dc15a6c1547c8a388058e4bb15c57"
+    },
+    {
+      "vi": "hạ",
+      "ko": "내리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/db903b8b0bf24cfca947fb0d99a9cf0d"
+    },
+    {
+      "vi": "hả",
+      "ko": "(친밀함을 나타내는) 의문사",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/548cc66921df4f07b7fa2a6f4bc89f78"
+    },
+    {
+      "vi": "vầy",
+      "ko": "모이다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6ee452c122334843b78d49ff3af9f9ef"
+    },
+    {
+      "vi": "nuôi",
+      "ko": "기르다, 키우다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1eacab53ad8f4146aa3595ca2b6793b2"
+    },
+    {
+      "vi": "lạ",
+      "ko": "낯선",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9537005815eb45038f631cb1aca4982f"
+    },
+    {
+      "vi": "la",
+      "ko": "외치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ffa26d91f8f4412ab0cab345bef176a5"
+    },
+    {
+      "vi": "oán",
+      "ko": "원망하다. 원한을 품다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/45b24583f9b64da98afeb1a9f2ff72e2"
+    },
+    {
+      "vi": "oan",
+      "ko": "사실이 아닌. 거짓의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5125e8747af144c581477e7c2610d262"
+    },
+    {
+      "vi": "tia",
+      "ko": "광선",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6c4380d66be64de5aeb80328f32498a3"
+    },
+    {
+      "vi": "tuôn",
+      "ko": "흘러나오다, 넘쳐나다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e9e1832c14594e729e645089f04d9741"
+    },
+    {
+      "vi": "dĩ",
+      "ko": "사용하다. 취하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e469e908ed7541d79fe06af0a43fc637"
+    },
+    {
+      "vi": "di",
+      "ko": "옮기다. 옮아가다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bc3ef7c260de4246a71cf3d855e7d46a"
+    },
+    {
+      "vi": "vãng",
+      "ko": "가다. 지나가다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8e3b6440f36c4999973882a57261190b"
+    },
+    {
+      "vi": "phôi",
+      "ko": "형성 시작 단계의 생물의 신체, 태아",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d53eccf955134cbaaca37d655d673f86"
+    },
+    {
+      "vi": "hối",
+      "ko": "후회하다. 뉘우치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/92288ce50b5e42ee9fbca2a8606bcb06"
+    },
+    {
+      "vi": "gốc",
+      "ko": "기원. 원천. 뿌리",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e39489797c0442b9aee7bbe979e2f838"
+    },
+    {
+      "vi": "giành",
+      "ko": "쟁취하다. 다투다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/28f599c94f434a14b35891ce559baa3a"
+    },
+    {
+      "vi": "rã",
+      "ko": "흩어지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ed45937d629f432d88aa0277b0dfdd02"
+    },
+    {
+      "vi": "mờ",
+      "ko": "흐린",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/56a9d91f98ac444f9e3f1d35e2f01e14"
+    },
+    {
+      "vi": "mơ",
+      "ko": "꿈꾸다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5814f0662f4f4f7fb6b82b043a070746"
+    },
+    {
+      "vi": "tháp",
+      "ko": "탑. 전망대",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/798bb22a1e3c426f9d15abe5193d3a13"
+    },
+    {
+      "vi": "thắp",
+      "ko": "불을 밝히다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a6c6333ef107406684daa7477e4bc3eb"
+    },
+    {
+      "vi": "ẩn",
+      "ko": "숨겨진",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/db33026b9d9b4d6b86b2d9220c08493b"
+    },
+    {
+      "vi": "luyện",
+      "ko": "단련하다. 연습하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/23a00b3569e748df8127f43a983600cb"
+    },
+    {
+      "vi": "luyến",
+      "ko": "사랑하다. 몹시 동경하다. 매력을 느끼다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/989ce49c9c014504a0e3694bd3243183"
+    },
+    {
+      "vi": "trỗi",
+      "ko": "일어나다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/837ba4d77e4e4bcfba050706e6160c10"
+    },
+    {
+      "vi": "tội",
+      "ko": "죄. 과오. 과실. 죄과",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d67cfa12975e49fb8ea21ca7d92218d0"
+    },
+    {
+      "vi": "chuộc",
+      "ko": "대속하다. 몸값을 치르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/93b865b45ebf407fb91b5683a4d46612"
+    },
+    {
+      "vi": "chuốc",
+      "ko": "술을 따르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/85b2932d6b5a410793e70f9920b7f276"
+    },
+    {
+      "vi": "lãnh",
+      "ko": "수령(受領)하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a6c629d68cee41b08e9d57374e87482c"
+    },
+    {
+      "vi": "hữu",
+      "ko": "있다. 가지다. 소유하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5647933af2a645478328353082f5105e"
+    },
+    {
+      "vi": "ngước",
+      "ko": "눈을 들다. 위를 향해 보다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c2fd18a0052347669e3ed9d661a2b52a"
+    },
+    {
+      "vi": "ngược",
+      "ko": "반대의. 역의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b09f3ff90a81422784e9063c20fc4575"
+    },
+    {
+      "vi": "đồi",
+      "ko": "언덕",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5b66626e1a204a818cd25cc15e78490d"
+    },
+    {
+      "vi": "lơ",
+      "ko": "숨기다. 감추다. 모르는 체하다. 잘못을 눈감아 주다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/da1d185819314d748975895f1bf68685"
+    },
+    {
+      "vi": "pha",
+      "ko": "섞다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ebef1cbe5de541458381de24aadce73e"
+    },
+    {
+      "vi": "đoàn",
+      "ko": "단체. 무리",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/33779efaeb634c79a5f7931fb2018650"
+    },
+    {
+      "vi": "đoạn",
+      "ko": "부분조각",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c0c37b5d71d843bfbb8480640f0d1dda"
+    },
+    {
+      "vi": "tránh",
+      "ko": "옆으로 비키다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ff4b6ab47f404a8ab41cb1f620ed31fa"
+    },
+    {
+      "vi": "sùng",
+      "ko": "숭배하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/895dc208912640858e367ec8f40f5215"
+    },
+    {
+      "vi": "xướng",
+      "ko": "제창하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c1d21b8ab7ee4e74ac4f629f4dc2881f"
+    },
+    {
+      "vi": "chăng",
+      "ko": "의문을 나타내는 말",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/73a4e23e323546fb9fe6e9ff4f10762b"
+    },
+    {
+      "vi": "chàng",
+      "ko": "그. 3인칭 남자",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1159bda8952343d0a5e3cf8c5b10a5ce"
+    },
+    {
+      "vi": "thảy",
+      "ko": "모두, 전부",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/81937f7648384a2fa7c749ea1edcf6d0"
+    },
+    {
+      "vi": "thầy",
+      "ko": "교사. 선생",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b45b43bdcf9c4ebcb3404f8afe43e875"
+    },
+    {
+      "vi": "đổ",
+      "ko": "붓다. 쏟다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6df7e922f46a4f20939c40ec32ebfe92"
+    },
+    {
+      "vi": "gươm",
+      "ko": "검. 칼",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/468476bcf6824c2caa634dbe804ab40c"
+    },
+    {
+      "vi": "nhạt",
+      "ko": "(맛이) 엷은. 싱거운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bbee9549ef6f4d858d57c88282dad1b9"
+    },
+    {
+      "vi": "truân",
+      "ko": "고난",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a808c8cf378e4abe8cd91a33e03943c7"
+    },
+    {
+      "vi": "trú ẩn",
+      "ko": "피난하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0aa4cb44a6bc47adb85b5520eea1fdc6"
+    },
+    {
+      "vi": "ngây",
+      "ko": "천진난만한. 순진한. 소박한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/01c91d5b37494aa38fd30bb191eea3bf"
+    },
+    {
+      "vi": "sum vầy",
+      "ko": "만나다. 모이다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/14c5016bc5ca49f9844f493e00086fbb"
+    },
+    {
+      "vi": "bí",
+      "ko": "해결하기 힘든",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e8bc85e5338642768b6eabb6805b2755"
+    },
+    {
+      "vi": "cái",
+      "ko": "사물 앞에 쓰는 분류사",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/072a9a9d7bea4d15866d401bd8f6e89b"
+    },
+    {
+      "vi": "cai",
+      "ko": "직장(職長). 십장. (군대의) 상병(上兵)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/eb20309e1b0a44c2895dce20a5a1146e"
+    },
+    {
+      "vi": "long",
+      "ko": "헐렁헐렁한. 흔들리는. 물렁한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1b56e45ce0eb473792e501590233fd76"
+    },
+    {
+      "vi": "ngóng",
+      "ko": "희망하다. 대망하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ebfca776f1324d31b2b2a97376ac6275"
+    },
+    {
+      "vi": "lệnh",
+      "ko": "명령. 호령",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e349ddb09dba49c4a7ea912139f96824"
+    },
+    {
+      "vi": "vút",
+      "ko": "매우",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6e8e3c94c67640959994946d068f5bc4"
+    },
+    {
+      "vi": "trú",
+      "ko": "주류하다. 잠시 체재하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fd971a73a00e42cf88eafa29f4d9d8cc"
+    },
+    {
+      "vi": "trụ",
+      "ko": "기둥",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/313b582ecdcc454b87be38d1ae5a07da"
+    },
+    {
+      "vi": "mốt",
+      "ko": "모레",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2d3ce9ff53e94de3860ee8124acd5c23"
+    },
+    {
+      "vi": "mồ",
+      "ko": "무덤",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/921a0d3765c64022ba1d79998eddb6f1"
+    },
+    {
+      "vi": "huyết",
+      "ko": "혈액. 피",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6d6a8a3857c543a7bf5589846c599ce1"
+    },
+    {
+      "vi": "dội",
+      "ko": "붓다. 쏟다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/35933b2644de4cecbcd4e23411ce2434"
+    },
+    {
+      "vi": "lều",
+      "ko": "오두막집",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a61a6dbd6af549279a128288ba38ff6d"
+    },
+    {
+      "vi": "diệt",
+      "ko": "(단독으로 쓰이지 않음) 망하게 하다. 파괴하다. 근절시키다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2c4961c8147e489cb202b1e8c05293ef"
+    },
+    {
+      "vi": "hao",
+      "ko": "소모하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/625180f9672d4421bba66b979b755f02"
+    },
+    {
+      "vi": "bông",
+      "ko": "꽃",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/14b14c4e54374ec5836e5e37abab593c"
+    },
+    {
+      "vi": "xuôi",
+      "ko": "내려가다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2b4607ef8bd547f6acb9bcce237f7bbd"
+    },
+    {
+      "vi": "nghịch",
+      "ko": "장난의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7309e191c94a4a168832ec230c739a3b"
+    },
+    {
+      "vi": "màn",
+      "ko": "커텐",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/162bb0d9a3564bdbb7c7ec22cd011ac2"
+    },
+    {
+      "vi": "man",
+      "ko": "만",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2ff1dd66d3944010ad89e9eee6c2baeb"
+    },
+    {
+      "vi": "mãn",
+      "ko": "가득한, 충만한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ac394e6064b0422587d1e1ef8a67173e"
+    },
+    {
+      "vi": "neo",
+      "ko": "닻을 내리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4d8ed743210343acba1586c6d80e7d76"
+    },
+    {
+      "vi": "đỗi",
+      "ko": "정도",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c434cf2447fa44c0878a296a2a5ae619"
+    },
+    {
+      "vi": "tô",
+      "ko": "사발, 주발",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/040c67dbcc734b05bd16407082ccb274"
+    },
+    {
+      "vi": "cuồng",
+      "ko": "미친. 이성을 잃은. 무모한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b1e6b996018f4fcd9c29abc266613fbf"
+    },
+    {
+      "vi": "lặng",
+      "ko": "조용한. 잔잔한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/96df9cb4a1c5402d9cf0ddbae3427237"
+    },
+    {
+      "vi": "ngang",
+      "ko": "가로의, 횡단하는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/73fcd2f247ea46dcacc77a45547ef820"
+    },
+    {
+      "vi": "sớt",
+      "ko": "(음식 따위를 다른 용기에) 옮기다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b7e2000c3cef40c3afe6b715c03fb530"
+    },
+    {
+      "vi": "sót",
+      "ko": "남겨두다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2d51733811984abfba5f86792018edfc"
+    },
+    {
+      "vi": "ngoảnh",
+      "ko": "뒤돌아 보다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f640b60ae0a64988a1a9033485db1492"
+    },
+    {
+      "vi": "nụ",
+      "ko": "식물 꽃눈",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d72b089dabcc4cf8bd3505e667402668"
+    },
+    {
+      "vi": "bừng",
+      "ko": "갑자기 열리다. 갑자기 분출하다. 갑자기 번지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d1e4449581b14672a88297bd96c93d61"
+    },
+    {
+      "vi": "chệch",
+      "ko": "비스듬한. 경사진. 원래위치에서 벗어난",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2de3a46193674083aaec6309f341430c"
+    },
+    {
+      "vi": "thơm",
+      "ko": "향기를 내다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e3a162e15a2e4eecbf3ac8d741a11c36"
+    },
+    {
+      "vi": "chối",
+      "ko": "부인하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/77be7068f8f94d5bbeed740cb09f4b04"
+    },
+    {
+      "vi": "tạm",
+      "ko": "일시적인. 잠깐동안의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6420f60f3b504a9fbf1ec45953cfab5d"
+    },
+    {
+      "vi": "chốc",
+      "ko": "순간",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/33610af962444c2d85c8a0b504ccee4f"
+    },
+    {
+      "vi": "háo",
+      "ko": "갈망하다. 열망하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/edbc3ecaa0f74cf999f473776a1ea31c"
+    },
+    {
+      "vi": "ách",
+      "ko": "재앙. 속박",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/42abff935e7a4239a49458a3b9915056"
+    },
+    {
+      "vi": "bánh",
+      "ko": "빵. 케이크. 떡",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ec49ae9b01ba40089b70c51a984bd806"
+    },
+    {
+      "vi": "đền",
+      "ko": "보상하다, 갚다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bc05afd19d6c4021bfa939061997ca7e"
+    },
+    {
+      "vi": "hùng",
+      "ko": "기세가 강한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2c0ff77091fc46f3822af00cad4b4b62"
+    },
+    {
+      "vi": "hứng",
+      "ko": "영감. 인스피레이션",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8439f68879864cbdbd73944281411b26"
+    },
+    {
+      "vi": "hung",
+      "ko": "흉악한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5821f9ca60094ce186201f551f55c383"
+    },
+    {
+      "vi": "hừng",
+      "ko": "흥하다. 일어나다. 타오르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e4cad2b7618343b3941751b7b764d775"
+    },
+    {
+      "vi": "lắng",
+      "ko": "(액체를) 저장하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/45daa42876b04a30840ffd6fea87694b"
+    },
+    {
+      "vi": "nhạo",
+      "ko": "비웃다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2ca279e16bfc41e7b593a75067deb006"
+    },
+    {
+      "vi": "khơi",
+      "ko": "광활한 바다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8c18609b8d6b46008c6f2e46fc38e852"
+    },
+    {
+      "vi": "phản",
+      "ko": "반대하다, 배신하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a208c367b3f4425190db4c9b602d7aa7"
+    },
+    {
+      "vi": "tỉnh",
+      "ko": "깨다, 깨닫다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c5a0a950e8b948c897d9acbfa12f25fe"
+    },
+    {
+      "vi": "tàng",
+      "ko": "저장하다. 감추다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/81874b8e03c84045bbbec3a5b46f12e1"
+    },
+    {
+      "vi": "huynh",
+      "ko": "형",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1f380ea5c80344b5b39d9e20923555fb"
+    },
+    {
+      "vi": "đệ",
+      "ko": "남동생",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3604a3daf6214f269c9ac063b0bddf8e"
+    },
+    {
+      "vi": "thưởng",
+      "ko": "보상하다. 보답하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/21515f2efd4949a08fd41c8d36873f80"
+    },
+    {
+      "vi": "nạn",
+      "ko": "위험. 재난",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/efb37b1f6e684338bf282db5a5df84b2"
+    },
+    {
+      "vi": "hiệp",
+      "ko": "합치다. 모으다. 결합하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f064d0d15ddd489c93e4450c051707fc"
+    },
+    {
+      "vi": "gắn",
+      "ko": "긴밀하게 하다. 아교를 붙이다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/dfa70aaa72ec4da9aa61372eaf24528e"
+    },
+    {
+      "vi": "vách",
+      "ko": "대나무 담장. 벽",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4516e2faf078444994b048b09b25abdd"
+    },
+    {
+      "vi": "trì",
+      "ko": "유지하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8f1fe41f94874947b9999b1cd77997ba"
+    },
+    {
+      "vi": "khoe",
+      "ko": "자부하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9cc5b506aaba4260926e34563084c26c"
+    },
+    {
+      "vi": "chợt",
+      "ko": "갑자기",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bcebccdbc14f44e79c938e14123faac0"
+    },
+    {
+      "vi": "chót",
+      "ko": "정상. 선단. 끝부분",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f46a1df67f604122a9525a38bc990ee7"
+    },
+    {
+      "vi": "thoáng",
+      "ko": "넓직한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b86d1653e6ec465196acaed2d344095a"
+    },
+    {
+      "vi": "lưng",
+      "ko": "등. 잔등",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c86dca23c9734cc383ec9589d54cb3ea"
+    },
+    {
+      "vi": "lùng",
+      "ko": "수색(탐색)하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e346713448e84856adcd70ba82116e72"
+    },
+    {
+      "vi": "lửng",
+      "ko": "미완성의. 덜 끝낸. 어중간한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/21aa0007a5ef498f88781f09d5287ee4"
+    },
+    {
+      "vi": "linh",
+      "ko": "영혼",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/350ac97099194775a14ee2b283bcb0ae"
+    },
+    {
+      "vi": "dấn",
+      "ko": "…에 (몸을) 두다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5838f07ea9104a4e895f486470d15d2f"
+    },
+    {
+      "vi": "lật",
+      "ko": "뒤엎다. 뒤집다(배 따위). 타도하다. (정부를) 전복시키다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7feed665157c4b05a04d0477a80d5ec5"
+    },
+    {
+      "vi": "lát",
+      "ko": "조각",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3a1cff87a6bb45019af79ff811285611"
+    },
+    {
+      "vi": "keo",
+      "ko": "풀",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5fcab86defc54a7a8f9d0b299ddf296a"
+    },
+    {
+      "vi": "gối",
+      "ko": "베개",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a264e43c340044a493e9abc808fcbc66"
+    },
+    {
+      "vi": "thốt",
+      "ko": "말하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/36bf1d228d8d48d5b70c7f2cf0e1478c"
+    },
+    {
+      "vi": "buổi",
+      "ko": "하루 중의 한때",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2601024650fe445f9227f231ea278434"
+    },
+    {
+      "vi": "trả",
+      "ko": "돌려주다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/201dd8759fca47798e0a82a6c6e93716"
+    },
+    {
+      "vi": "đám",
+      "ko": "떼. 무리",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/77af0d6d2c2843879ee91081de02a7e9"
+    },
+    {
+      "vi": "làng",
+      "ko": "마을",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/816e85e0e6ff465695f0350a2fbf62ef"
+    },
+    {
+      "vi": "khuôn",
+      "ko": "모양, 형태, 패턴, 틀",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1f319627902c474698f545de109c26d8"
+    },
+    {
+      "vi": "quăng",
+      "ko": "던지다. 팽개치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/aa59bbec765144859b3eebc6749a656c"
+    },
+    {
+      "vi": "song",
+      "ko": "그렇지만",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a6e6628942df420ab898b8538ed135e7"
+    },
+    {
+      "vi": "xông",
+      "ko": "돌진하다, 돌격하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c7a3dc30cd6a44cda21d0fd1a95b8cd8"
+    },
+    {
+      "vi": "xong",
+      "ko": "끝난. 완성된",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1527cfab6f5346eeb91a87502391cbe4"
+    },
+    {
+      "vi": "phủ",
+      "ko": "덮다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6122018489d249e2bd11f981a601b2af"
+    },
+    {
+      "vi": "manh",
+      "ko": "조각(1편)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/eaa3d5f82ca8498aa335fb6c2bbd4c51"
+    },
+    {
+      "vi": "khấn",
+      "ko": "묵념을 올리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/70053ff07ab147d992f678384168152d"
+    },
+    {
+      "vi": "vun",
+      "ko": "흙으로 덮다. 흙을 북돋아주다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/587d6631b01c4121a9ecde3e36aeac13"
+    },
+    {
+      "vi": "tớ",
+      "ko": "나",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/60c77e954cd0477dafc4eb4c41dd5b18"
+    },
+    {
+      "vi": "trở",
+      "ko": "돌아가다(오다)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/608a2e8e1acc4124ae23eb52f93e5926"
+    },
+    {
+      "vi": "trò",
+      "ko": "생도(生徒). học trò의 약어(略)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d9bab38e2248416993f25cdea06548bc"
+    },
+    {
+      "vi": "đe",
+      "ko": "(대장간의) 모루",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f747fd36d1f64cf6b3c95b9e66544093"
+    },
+    {
+      "vi": "dọa",
+      "ko": "위협하다. 협박하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f0ac8920da324b5685c2505390a6678e"
+    },
+    {
+      "vi": "đóa",
+      "ko": "떨기",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1970c1799bfa4e8cae6ab81e32beb88f"
+    },
+    {
+      "vi": "diện",
+      "ko": "(단독으로 쓰이지 않음) 얼굴. 표면. 면",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/87b6caa155794cefb35c359ba4e3eec1"
+    },
+    {
+      "vi": "tổ",
+      "ko": "선조. 조상",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d1a246d97eb846efb0b9880b6ed457ba"
+    },
+    {
+      "vi": "nấy",
+      "ko": "그것. 그것들. 그",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a25fb1f1ad684953ba3976bad8d5da89"
+    },
+    {
+      "vi": "trách",
+      "ko": "책망하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8548542bc50e4f3ca1b9376577d57a90"
+    },
+    {
+      "vi": "đắm",
+      "ko": "(배가) 가라앉다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3631395a2fe4426da688381be0cf5161"
+    },
+    {
+      "vi": "trĩu",
+      "ko": "무거운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9daabb43f5984c22872181591a6c7699"
+    },
+    {
+      "vi": "tríu",
+      "ko": "‘붙다’의 강조어",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5f739f44383847399cda665743c72263"
+    },
+    {
+      "vi": "phiên",
+      "ko": "(의무적인) 차례, 순서",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/574a2c6c95e24a03bc8a36c36a6947dd"
+    },
+    {
+      "vi": "kiêu",
+      "ko": "거만한, 오만한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a4480c5dbe7a4185bff55791f96acd66"
+    },
+    {
+      "vi": "kiều",
+      "ko": "아름다운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9132a75e9fc24a40a96ac6376f8207f4"
+    },
+    {
+      "vi": "lau",
+      "ko": "닦다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/405ef1d9f76641bf9575544ddb81cd13"
+    },
+    {
+      "vi": "hờn",
+      "ko": "삐치다. 토라지다. 원한을 품다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/18ab28822c6c48ac8c7701dc4929016a"
+    },
+    {
+      "vi": "sa",
+      "ko": "떨어지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/043537f1fdd84b669ea9266ae9343951"
+    },
+    {
+      "vi": "sá",
+      "ko": "길, 도로",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fc4afc2d289242fd9ebe21e553120b24"
+    },
+    {
+      "vi": "khiển",
+      "ko": "문책(견책)하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7019cc964d714a66b4ee79387d04483e"
+    },
+    {
+      "vi": "mù",
+      "ko": "안개",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/800e8b9a835447da8c8d0a5dc3b6c14f"
+    },
+    {
+      "vi": "ngọc",
+      "ko": "옥. 보석",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d0bcd8de90b74bfab6e7a42bbdfb9173"
+    },
+    {
+      "vi": "múa",
+      "ko": "춤추다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/68acc956af9f4691b0513f1e90112847"
+    },
+    {
+      "vi": "nhoài",
+      "ko": "피곤해서 녹초가 되다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a635feca8a704c7e8847ddfdd5584167"
+    },
+    {
+      "vi": "thua",
+      "ko": "(전쟁에서) 지다. 패하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/dc197ce487fd4a11aad102ebce0c39a4"
+    },
+    {
+      "vi": "vẫy",
+      "ko": "흔들다. 손짓하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/34031b09fe3a4111b04f2058a63c1c57"
+    },
+    {
+      "vi": "rừng",
+      "ko": "숲. 산림",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/15315de294ec4d27bde0329a7748cc3c"
+    },
+    {
+      "vi": "rụng",
+      "ko": "떨어지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d6cc16c8e9fc44d4acf7fd0f4779259f"
+    },
+    {
+      "vi": "nhắn",
+      "ko": "전해주다. 전갈을 보내다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7e15291eb49247a2a2b17477e6f5dfeb"
+    },
+    {
+      "vi": "láng",
+      "ko": "광택이 나고. 부드러운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fff983b3bf6f47888d2ee0d3fa600a94"
+    },
+    {
+      "vi": "cận",
+      "ko": "이웃의. 부근의. 인접하는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c0f4e6b3ee944817b2eb17fef82be75e"
+    },
+    {
+      "vi": "chuỗi",
+      "ko": "줄에 꿴 구슬",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/acb95439f8b44921ab5207adf01219cf"
+    },
+    {
+      "vi": "gập",
+      "ko": "접다. 완전히 몸을 구부리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/51b6212d415846dd95c2eb637ee3f910"
+    },
+    {
+      "vi": "ghềnh",
+      "ko": "낙수. 급류. 비탈진 물도랑",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/62b1c7396416406789201f1ab13941ae"
+    },
+    {
+      "vi": "chôn",
+      "ko": "묻다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3d43462512264d4990a823e8f19d9958"
+    },
+    {
+      "vi": "vùi",
+      "ko": "(땅에) 묻다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/482238545fbd40b7b339cb1c0fa679fa"
+    },
+    {
+      "vi": "hố",
+      "ko": "깊은 구멍. 무덤",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/81b0be3698d245498980853fb4d4157e"
+    },
+    {
+      "vi": "lỡ",
+      "ko": "(기차 따위) 놓치다. 시간에 대지 못하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/55e4fca1fafc4dc6b6deca8ec892a2ec"
+    },
+    {
+      "vi": "đẫm",
+      "ko": "흠뻑 젖다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/440aa4f5388a45e0a86d3834ef3bacc5"
+    },
+    {
+      "vi": "ngoan",
+      "ko": "품행이 좋은. 착한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9dfdf34bcca946d6ae0afabefe677367"
+    },
+    {
+      "vi": "vạn",
+      "ko": "만(10,000)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2b695931b15b49e39f77a779a4611026"
+    },
+    {
+      "vi": "so",
+      "ko": "비교하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/397cf2576adb42268ba830565c2660b7"
+    },
+    {
+      "vi": "day",
+      "ko": "돌리다. 돌다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4c4ae81b2c334daca2ba635ba132bc18"
+    },
+    {
+      "vi": "nghiêng",
+      "ko": "동사, 형용사 비스듬한, 기울어진",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f9ca7a29ab9243bdb9a0e543dc73ada1"
+    },
+    {
+      "vi": "trổi",
+      "ko": "뛰어난. 우수한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8e60ba4e1979497398d77edb8a80f158"
+    },
+    {
+      "vi": "giam",
+      "ko": "투옥하다. 수용하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f68b81dd27bd4d52ba8117eac6784384"
+    },
+    {
+      "vi": "lũ",
+      "ko": "무리. (많은 수의) 사람들",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/83a97d207abf488ca92ff0b865e2d86c"
+    },
+    {
+      "vi": "lu",
+      "ko": "독. 항아리",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6eebf623bedf4a688a00fbe009aec16b"
+    },
+    {
+      "vi": "tà",
+      "ko": "(옷의) 길이",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/13f877bd05904607a798181cfd029927"
+    },
+    {
+      "vi": "lộ",
+      "ko": "길. 거리. 국도(國道). quốc lộ의 약(略)어",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9278fc8b3c9d4effaa674b14e26636ee"
+    },
+    {
+      "vi": "tụ",
+      "ko": "모으다. 집합시키다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4c8552d4fe204d219302c002e188a931"
+    },
+    {
+      "vi": "trận",
+      "ko": "싸움. 전쟁. 전투",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fb9e90a2f4a94e6ea4ef190b7ed6bb3b"
+    },
+    {
+      "vi": "giãi",
+      "ko": "설명하다. 표명하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6637498cec414b428cab636e1b293aa5"
+    },
+    {
+      "vi": "góp",
+      "ko": "수집하다. 모으다. 기부하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/84d9608a4d8f4445bbe6b2d8308fad55"
+    },
+    {
+      "vi": "ích",
+      "ko": "이익",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/55294e6b92e3475dadb462cd2a944343"
+    },
+    {
+      "vi": "u",
+      "ko": "어둡다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/421cebea984140b19d7527ef42a1ad50"
+    },
+    {
+      "vi": "thạo",
+      "ko": "전문가",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a911142845d743129d09918e13207150"
+    },
+    {
+      "vi": "thấm",
+      "ko": "깊이 이해하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6076a56957b646c7a52223e648b4726d"
+    },
+    {
+      "vi": "căm",
+      "ko": "원한을 품다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d46b38ddac264171a804c71d1cce6f47"
+    },
+    {
+      "vi": "cầm",
+      "ko": "손에 들다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ebdf04e67b9b4ccb9d6ff2664584c666"
+    },
+    {
+      "vi": "câm",
+      "ko": "바퀴의 살",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2181ac85bb944b5997957f34e65e2e66"
+    },
+    {
+      "vi": "tộc",
+      "ko": "일족. 가족. 종족",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2fe432c8b94a4736819309f615e6c484"
+    },
+    {
+      "vi": "gầm",
+      "ko": "(맹수가) 포효하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/316a8df141ee4cd19a8bd9f4c27eceb8"
+    },
+    {
+      "vi": "lúa",
+      "ko": "벼. (곁겨가 붙어 있는) 쌀",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/154812c924af4d8a801229f267925105"
+    },
+    {
+      "vi": "lựa",
+      "ko": "선택",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6d695222c16943cf8594c22fd6f4d61a"
+    },
+    {
+      "vi": "lừa",
+      "ko": "속이다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1bfcaf5fe9864f2e98bc3e7a0ba5627f"
+    },
+    {
+      "vi": "tấm",
+      "ko": "(종이 등의) …장",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c9d261d953214f7e9155859ce4a85071"
+    },
+    {
+      "vi": "gom",
+      "ko": "모으다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6d158d2808d74cd59afdd2b967c526b0"
+    },
+    {
+      "vi": "gớm",
+      "ko": "구역질나는. 정말 싫은",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/451fb9b5fcfb4471a5db4c3a1ae37dca"
+    },
+    {
+      "vi": "đảm",
+      "ko": "부담하다. 담당하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b1dd3d40a52446e3886cadfa9617182b"
+    },
+    {
+      "vi": "tông",
+      "ko": "가계, 혈통",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/20cb4b83635c4623b21c8367b4c1e360"
+    },
+    {
+      "vi": "tống",
+      "ko": "배웅하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5abb8e15872843b78cfdca1d7be75f6b"
+    },
+    {
+      "vi": "nếm",
+      "ko": "(음식. 음료수 등을) 맛보다. 시음하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/612dd7c2d91843c2b2ae11686941c3b6"
+    },
+    {
+      "vi": "ném",
+      "ko": "던지다. 가볍게치다. 집어던지다. 내던지다. 던져버리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bcd8e5462ff340bcb9fe6b7634508742"
+    },
+    {
+      "vi": "xôi",
+      "ko": "찹쌀밥",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/67614d85478343078ec140b2ef2cb09c"
+    },
+    {
+      "vi": "cuốn",
+      "ko": "감다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c48b83487ec84cebb991f2e63a9d8d3b"
+    },
+    {
+      "vi": "bội",
+      "ko": "배반하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8e279b1af0e8494aaa560c9f877319a3"
+    },
+    {
+      "vi": "bề",
+      "ko": "크기. 가장자리",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e487fa13377741dd9c12a51063f49026"
+    },
+    {
+      "vi": "nhịp",
+      "ko": "박자. 리듬",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/74f6497f968f4e34a392f497c098125e"
+    },
+    {
+      "vi": "dạng",
+      "ko": "외견. 형상",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6fe03e9d2f5b451291965fb82bd7e6e8"
+    },
+    {
+      "vi": "cư",
+      "ko": "거주하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2f739985ef8c45869fae3648995676f3"
+    },
+    {
+      "vi": "xử",
+      "ko": "대처하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a03c14ddcc0544dfa90a43d3d2cf1baf"
+    },
+    {
+      "vi": "lưu",
+      "ko": "멈추다. 머물다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/341d11127e954f5b94e6085ee5594b6a"
+    },
+    {
+      "vi": "thủy",
+      "ko": "절개 있는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f27eaf207d0d4ce5a7362d978c4c28e5"
+    },
+    {
+      "vi": "góa",
+      "ko": "과부(또는 홀아비)의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/16c7da0d875d4e59b0dd57c4fd4caaae"
+    },
+    {
+      "vi": "ngát",
+      "ko": "향기가 나는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2fc7154a9ac4432fa8e901e1230b597d"
+    },
+    {
+      "vi": "ngất",
+      "ko": "높게 솟은 것",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9b326d93f0734e199a38c289991a0fb7"
+    },
+    {
+      "vi": "gấu",
+      "ko": "곰",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7a55219d968443ce97476fb5196b4541"
+    },
+    {
+      "vi": "ngờ",
+      "ko": "의심하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a984bb310fe74da48eb170974678ff5a"
+    },
+    {
+      "vi": "vài",
+      "ko": "몇몇의. 두셋의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0f6d54a22a7e429f8876b1e76dc8dec8"
+    },
+    {
+      "vi": "sân",
+      "ko": "안마당. 안뜰",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7c988614611f4e58b2a1ed4993acd246"
+    },
+    {
+      "vi": "sẵn",
+      "ko": "준비하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3e26f64ed6844829b2d0f00ac73a46c2"
+    },
+    {
+      "vi": "ngỡ",
+      "ko": "생각하다. 상상하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fec45a837fce40349683746eb905504f"
+    },
+    {
+      "vi": "hót",
+      "ko": "(새가) 지저귀다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/15a20efae93f4a7f81880d3f6cad9772"
+    },
+    {
+      "vi": "thừng",
+      "ko": "밧줄. 노끈",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/16296b5be335415aba8b7834edb0970b"
+    },
+    {
+      "vi": "thung",
+      "ko": "산골짜기",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b256a1f2a15549e8becbee65ba022a43"
+    },
+    {
+      "vi": "bện",
+      "ko": "(머리를) 땋다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3ca67524aa0b4a6f9460f4a59d492db4"
+    },
+    {
+      "vi": "lôi",
+      "ko": "끌다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c38ec24ae8e14b89b9c6dab804073c57"
+    },
+    {
+      "vi": "lơi",
+      "ko": "풀리다. 해이해지다. (속도·힘) 늦추다. 느슨하게 하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a064c2e3cced4a9f99048867a62ef5ce"
+    },
+    {
+      "vi": "nén",
+      "ko": "제지하다. 제한하다. 억제하다. 보류하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fa44ef4e6bed4169891fd4e6af9c571c"
+    },
+    {
+      "vi": "vã",
+      "ko": "(땀에) 흠뻑 젖다. 적시다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bff86adea72d42a69e9cdd61616013da"
+    },
+    {
+      "vi": "va",
+      "ko": "맞부딪치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3df349273895409f8ec7a7e53c9b6511"
+    },
+    {
+      "vi": "hồn",
+      "ko": "혼. 영혼. 유령. 정신",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0f8fae30e02d483d95c9ad528826ecbf"
+    },
+    {
+      "vi": "phi",
+      "ko": "[지명] 아프리카",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5f094a3c6b0a4f1597ab5c2b28a99c19"
+    },
+    {
+      "vi": "phỉ",
+      "ko": "만족한 흡족한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ad976f86dcde4b69ba63e6b435ca7ecd"
+    },
+    {
+      "vi": "gốm",
+      "ko": "도기",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ceb8cc1d2fc3489cac25a7891e8085f6"
+    },
+    {
+      "vi": "lướt",
+      "ko": "스치다. 스치고 지나가다. 대강 훑고 스치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f41a42e95ec943d9827ee7fa3ed36df6"
+    },
+    {
+      "vi": "ô",
+      "ko": "우산, 양산",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/01ac9a0c01cb4ea2ae2ac0a6724a88fa"
+    },
+    {
+      "vi": "dẻo",
+      "ko": "부드러운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2e418efec7e145728a5aa4da53c598e0"
+    },
+    {
+      "vi": "đeo",
+      "ko": "걸다. 끼다. 붙이다. 붙어다니다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4e543e79094f42cbb9acb4044649b509"
+    },
+    {
+      "vi": "dai",
+      "ko": "강한. 질긴",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a1a91a0fc0ca430aba85139aae006f31"
+    },
+    {
+      "vi": "ong",
+      "ko": "벌",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b718306b63674a1f95c80ccc98fdb789"
+    },
+    {
+      "vi": "tao",
+      "ko": "나(자신을 스스로 높힘말). 짐(임금이 자칭할때)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/cc0c78ce3f7240df9f7f60925b0e0b5a"
+    },
+    {
+      "vi": "gọn",
+      "ko": "정돈된. 가지런한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5820547f72134a98a43357f9af956960"
+    },
+    {
+      "vi": "cớ",
+      "ko": "이유. 원인. 동기",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3ce634defa3a46948a161b9271e9e1f6"
+    },
+    {
+      "vi": "ròng",
+      "ko": "순수",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/28ddeb42f27a4321815c32df4e4d48fc"
+    },
+    {
+      "vi": "dâu",
+      "ko": "며느리. 새색시",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2ec7ff62b5804e10af7c04cd786afdaf"
+    },
+    {
+      "vi": "bè",
+      "ko": "뗏목",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/291918224e7f401984cc8bc33403b56a"
+    },
+    {
+      "vi": "hò",
+      "ko": "큰소리로 고함치다. 환호하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c661f0a23c8b475ba296c161a70bba36"
+    },
+    {
+      "vi": "liền",
+      "ko": "잇따른. 계속되는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1202ec4c2a6c40cda47bd39aa20ae63a"
+    },
+    {
+      "vi": "kèn",
+      "ko": "나팔",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e9f786d3381642a2b82a182509154e37"
+    },
+    {
+      "vi": "bạo",
+      "ko": "과감한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9a6d57d36f4846efa298c5289fdb5720"
+    },
+    {
+      "vi": "xứng",
+      "ko": "알맞다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f837b5da932a41eeab49ad09bf85834f"
+    },
+    {
+      "vi": "xung",
+      "ko": "성난. 격노한. 광포한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2c553f4a5d4f4bdba2918d53f511e4e9"
+    },
+    {
+      "vi": "xưng",
+      "ko": "칭하다. 이름 부르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c05c6cfc15f441eeafc2c8b8cb3caaf6"
+    },
+    {
+      "vi": "vu",
+      "ko": "비방하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c31292e3a1b6459fab05940c374bc8ad"
+    },
+    {
+      "vi": "vực",
+      "ko": "영역",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fd32dfb823f44ba08c8fcce4722ebe73"
+    },
+    {
+      "vi": "khéo",
+      "ko": "능숙한. 교묘한. 솜씨좋은. 훌륭한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b7cf12cd39cb498aa4859f288759a58f"
+    },
+    {
+      "vi": "hắn",
+      "ko": "(친밀함 또는 무시하는 의미의) 그(3인칭)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/535b0b8400a34279b7fb466e2653a54c"
+    },
+    {
+      "vi": "nhục",
+      "ko": "부끄럽게 여기다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0d4e56dcf93c4cbb8be03343a437d1b5"
+    },
+    {
+      "vi": "nát",
+      "ko": "구겨진. 으스러진",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/65f3e8f2488a4e16a8a1cc49c036286b"
+    },
+    {
+      "vi": "nạt",
+      "ko": "협박하다. 큰소리로 욱박지르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/88a7a257516e401b954bb53ac60d154c"
+    },
+    {
+      "vi": "rền",
+      "ko": "(소리가 짙게) 여운을 남기다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d4b6f08ab22e4c90bc347d74af5de798"
+    },
+    {
+      "vi": "rèn",
+      "ko": "갈고닦다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a59f0fb1528b4b99936eba295f5961ba"
+    },
+    {
+      "vi": "bêu",
+      "ko": "다른 사람들에게 거울이 되게 보여주다. 전시하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3c8f5e3affc843c898f226453eaa6ffa"
+    },
+    {
+      "vi": "chín",
+      "ko": "아홉; 익은",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/dafece5d74d945c997e7b284826bbae4"
+    },
+    {
+      "vi": "gặt",
+      "ko": "… 수확하다. …을 베다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/762066034fdb437398bc516a342616b0"
+    },
+    {
+      "vi": "gạt",
+      "ko": "밀어내다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/22fac6b33eaa4490a39e5ece38388a00"
+    },
+    {
+      "vi": "gắt",
+      "ko": "강한. 강렬한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/630406c7104e471e8feff80005bc1052"
+    },
+    {
+      "vi": "tấn",
+      "ko": "톤(1,000킬로그램)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e96d3c51991545aea2279e5220709f4f"
+    },
+    {
+      "vi": "viếng",
+      "ko": "방문하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3a0ca61a2fab440091e067f8dcc069a4"
+    },
+    {
+      "vi": "viếng thăm",
+      "ko": "방문하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/07fa444d03614ba0897e9b594948704b"
+    },
+    {
+      "vi": "hỗ",
+      "ko": "서로서로",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d749744a990f49c491b2798b2dd36755"
+    },
+    {
+      "vi": "dưỡng",
+      "ko": "기르다. 키우다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/cb6479652bb3449590687c9f247a1cf9"
+    },
+    {
+      "vi": "đuốc",
+      "ko": "횃불",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/19099c3c03bf4bb595c1da3c5360d325"
+    },
+    {
+      "vi": "e",
+      "ko": "걱정하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/752b80bc1a854514ab7655fd969d5daa"
+    },
+    {
+      "vi": "thiêu",
+      "ko": "화장하다, 태우다, 소각하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8f2b70c3e9f943faa746c92d036067e3"
+    },
+    {
+      "vi": "đốt",
+      "ko": "태우다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/89a1d0ea2c3a42af9e84e6ceb275386e"
+    },
+    {
+      "vi": "ló",
+      "ko": "나타내다. 얼굴을 내밀다. 명백하게 되다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/606eade878624ab4a65a4860a73a5214"
+    },
+    {
+      "vi": "sệt",
+      "ko": "두꺼운. 끈적끈적한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c94533e87e0a4bf089bf7ed50e2c20ed"
+    },
+    {
+      "vi": "bồ",
+      "ko": "동지. 친구",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/facf8e87bfa14e14ad245fca984717db"
+    },
+    {
+      "vi": "tiêu",
+      "ko": "소비하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b402cc05c1de401988cc97c4a6153875"
+    },
+    {
+      "vi": "lòa",
+      "ko": "확실히 보이지 않다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3c0df2745c8c4bcc966759131a38a8a9"
+    },
+    {
+      "vi": "xô",
+      "ko": "밀다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b09acb34aa7b42cb9bf581ad4e95bafa"
+    },
+    {
+      "vi": "lê",
+      "ko": "끌며 걷다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ad32f7edf8d34c92913c1d5ab3c4250d"
+    },
+    {
+      "vi": "ơ",
+      "ko": "놀람을 나타내는 감탄사",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/852b461bee6e4e1dbb50c889347c6191"
+    },
+    {
+      "vi": "tẩy",
+      "ko": "씻다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b10a70824f5747ae8a09cd7029adc094"
+    },
+    {
+      "vi": "thênh thang",
+      "ko": "넓은, 거대한, 막대한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/79124fa301ec4383bcec5f884954ca27"
+    },
+    {
+      "vi": "cổng",
+      "ko": "문. 입구",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0831864a37174653ad51f12c55a0f272"
+    },
+    {
+      "vi": "hẹp",
+      "ko": "폭이 좁은. 제한된",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/37f2412a09674e12828f13b1b32c3d81"
+    },
+    {
+      "vi": "chạm",
+      "ko": "새기다. 조각하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ef7a00e105b24d8b863e11591fe212eb"
+    },
+    {
+      "vi": "quây",
+      "ko": "둘러싸다. 휘감다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/56141a57d122495691c104b95047d94b"
+    },
+    {
+      "vi": "héo",
+      "ko": "마른(시든)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/73a9deec6e204c24850a6b39d50435fb"
+    },
+    {
+      "vi": "gồng",
+      "ko": "짊어지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9f0b7af04a83426e94fb516e73a9bb95"
+    },
+    {
+      "vi": "lường",
+      "ko": "계량하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f22d0e6e485f48b7946a80f357351003"
+    },
+    {
+      "vi": "ràng",
+      "ko": "묶다. 죄다. 고정하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8465fce7737840c2a5e5c1f8f72cb954"
+    },
+    {
+      "vi": "thói",
+      "ko": "습관. 습성",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9a0d4f5e035d437bac703b802b8c5780"
+    },
+    {
+      "vi": "mòn",
+      "ko": "닳다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7866a2507345425da87bf49064e44406"
+    },
+    {
+      "vi": "món",
+      "ko": "아이템. 항목. 요리",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2b4e91d780d84d0b9bd52163d936698d"
+    },
+    {
+      "vi": "chường",
+      "ko": "드러내 보이다. 쑥 내밀다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/32d4603a7fb24c7c8d19d550fb313c10"
+    },
+    {
+      "vi": "vươn",
+      "ko": "기지개를 펴다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9fcf4a0c7fd8468a90f8c414c2dd5430"
+    },
+    {
+      "vi": "kịp",
+      "ko": "시간안에 닿다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f28b6ca8c0f84c2698d95041db5fb87a"
+    },
+    {
+      "vi": "cành",
+      "ko": "가지",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/85473766a5f643e59e7a262d1a641d3b"
+    },
+    {
+      "vi": "xòe",
+      "ko": "넓히다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/43e6435101b64bb1b6bc5a6746104301"
+    },
+    {
+      "vi": "nêu",
+      "ko": "제시하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9261e462e2d7428b81c8b64dd7c9efc0"
+    },
+    {
+      "vi": "úa",
+      "ko": "시들다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/45f39460c5cb4f7585dfb975116c5794"
+    },
+    {
+      "vi": "chen",
+      "ko": "떼밀다. 밀어부치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f87ed3313c8e49f2aba859bf9679f844"
+    },
+    {
+      "vi": "ẵm",
+      "ko": "(아이를) 손으로 감싸주다. (어린아이를) 품에 안다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ad61d616763f46a1af1ced57816e0914"
+    },
+    {
+      "vi": "chặng",
+      "ko": "항정(航程)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8d45c24ae4e846b5b14c0defac5609b2"
+    },
+    {
+      "vi": "ắp",
+      "ko": "가득하게. 찰랑찰랑하게. 넘칠 정도로",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a8e0587f945a43f4a08687e841e7c381"
+    },
+    {
+      "vi": "ngạo",
+      "ko": "교만한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4949be0e72e04812a6d4e144e7fc2c82"
+    },
+    {
+      "vi": "bộn",
+      "ko": "바쁜",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e3d544d7665a4f168a5779abfa81bfd1"
+    },
+    {
+      "vi": "tuy",
+      "ko": "…에도 불구하고. 비록 …일지라도(tuy ~ nhưng …의 구문형식)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/460d01fdaf344e88beb07bc4243a9905"
+    },
+    {
+      "vi": "lánh",
+      "ko": "피하다. 가까이 하지 않다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8176e551a1fd47d98b89cc3bdf14331e"
+    },
+    {
+      "vi": "đấy",
+      "ko": "저기. 그쪽",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8e3e91382a904f6391a84ec452fa0539"
+    },
+    {
+      "vi": "gậy",
+      "ko": "막대기. 지팡이",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1ed107578d654eb3b48ba4af6771b239"
+    },
+    {
+      "vi": "mật",
+      "ko": "꿀",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f48522c2430f40ad8d6efc788e36f124"
+    },
+    {
+      "vi": "quỳ",
+      "ko": "무릎 꿇다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/16d935884f824975883abe035375af13"
+    },
+    {
+      "vi": "hô",
+      "ko": "외치다, 부르짖다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/cb9d4d9089c1488bb8e0d11089ef20a8"
+    },
+    {
+      "vi": "cõi",
+      "ko": "지방. 영역. 분야",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6c7e190d524042bab92c098497e720a0"
+    },
+    {
+      "vi": "chiếc",
+      "ko": "차량·옷 등의 앞에 쓰는 분류사",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a3a35110a3254fd29a9f4cb8bbc6c32a"
+    },
+    {
+      "vi": "nắp",
+      "ko": "겉표지. 표지. 뚜껑",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e6ae376a0adf487f9c867eb4f02759c8"
+    },
+    {
+      "vi": "san",
+      "ko": "평평하게 하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7ac07d6cdeb44fecb7bb3d3712b4858d"
+    },
+    {
+      "vi": "vánh",
+      "ko": "빠르게",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/aa471001bef54f73a7c16f9f01df2ca6"
+    },
+    {
+      "vi": "sải",
+      "ko": "[수영] (양 손 또는 두 팔을) 펼친 길이",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1c637368e85942e39b4c8bf429aef1af"
+    },
+    {
+      "vi": "gièm",
+      "ko": "깔보다. 얕보다. 욕을 하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ab96f0d7d79d47938431b8154182799c"
+    },
+    {
+      "vi": "cạm",
+      "ko": "덫(올가미)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a063fce4f12042538007c486cdf8bcc1"
+    },
+    {
+      "vi": "hão",
+      "ko": "무익한. 허무한. 공허한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b77074fd20044069857b145b5b585537"
+    },
+    {
+      "vi": "rủ",
+      "ko": "유혹하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9c236f5801644c879d6898e33ddca580"
+    },
+    {
+      "vi": "ngụ",
+      "ko": "임시 거처하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7771261d55a243a48119e60e7c30d1ed"
+    },
+    {
+      "vi": "nịnh",
+      "ko": "아첨하다. 아양떨다. 비위맞추다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/60af46b11b574fd594774c6da5fc5a2a"
+    },
+    {
+      "vi": "thiệt",
+      "ko": "혀",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4bb2e17a6f7444248109a8b4b74d388e"
+    },
+    {
+      "vi": "giết",
+      "ko": "살인하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5c699be8b0c741d5b431bc8cac5857b9"
+    },
+    {
+      "vi": "trưa",
+      "ko": "정오. 낮",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/55fa0f97d9de4594ba93c7a3e46fd643"
+    },
+    {
+      "vi": "thôn",
+      "ko": "촌, 마을",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0af77238220c4e78b76c6e6c62617b39"
+    },
+    {
+      "vi": "soạn",
+      "ko": "편찬하다. 편집하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e69e7bd8021a4a2cb7a0eb57cd0e1267"
+    },
+    {
+      "vi": "hạc",
+      "ko": "학. 두루미. 장수(長壽)를 상징함",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b349e4663ad04d419cd9f013a5dea08a"
+    },
+    {
+      "vi": "nhuốc",
+      "ko": "더러운. 불결한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/df2438ce58da437fa5f9d13b0bb5487a"
+    },
+    {
+      "vi": "nhơ",
+      "ko": "더러운. 비열한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/40745ddbf9af4d85992f06027d6520e4"
+    },
+    {
+      "vi": "bôi",
+      "ko": "지우다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ce42044e2ac34dd3bf427ff87c74b581"
+    },
+    {
+      "vi": "nhọ",
+      "ko": "더러워진",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d3fb657775e442289d9a8bd6f55485bc"
+    },
+    {
+      "vi": "mầu",
+      "ko": "기름진. 신비한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0ced6c77fcc9451887585ea0ff31a9e3"
+    },
+    {
+      "vi": "triển",
+      "ko": "넓어지다. 늘이다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/07579669a7cb4978b867ec6e25d2bda4"
+    },
+    {
+      "vi": "sắm",
+      "ko": "준비하다. 구입하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0990878253f5456ba968b8296390b8b3"
+    },
+    {
+      "vi": "giũ",
+      "ko": "흔들다. 떨다. (먼지, 물기) 털어서 떨어지게하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/90c311512e3b4951b2676d6862541c02"
+    },
+    {
+      "vi": "nêm",
+      "ko": "맛을 내다, 가미하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/682fb01f6b3646fd9b6971fa7cc13d76"
+    },
+    {
+      "vi": "hoen",
+      "ko": "더럽혀진. 얼룩진",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/62beb1fd528a4b5ca9244678c45dae56"
+    },
+    {
+      "vi": "hoen ố",
+      "ko": "더럽혀지다. 얼룩지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/642bf8c1fc2d4f2ea5319f2845574145"
+    },
+    {
+      "vi": "ố",
+      "ko": "증오하다. 싫어하다. 혐오하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/15c25390ce154782add4b6ecd503dd05"
+    },
+    {
+      "vi": "đào",
+      "ko": "복숭아",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/95d12b5d31d84b1f900c4064269f9e0b"
+    },
+    {
+      "vi": "gót",
+      "ko": "(발. 신발) 뒷꿈치",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/334c88af263d4dd29b4e28fffbccaf52"
+    },
+    {
+      "vi": "biếc",
+      "ko": "하늘색의. 푸른",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/da1fc31065fd4a218078e8076ea64085"
+    },
+    {
+      "vi": "khuyết",
+      "ko": "결핍된",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1011c5356f974e7cbc22a569189dda32"
+    },
+    {
+      "vi": "dũng",
+      "ko": "용기",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5a50524c192c48c49722fdceae53965d"
+    },
+    {
+      "vi": "nom",
+      "ko": "보다. 주시하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7bfed0d2ceaa447abfb02bdff56a607b"
+    },
+    {
+      "vi": "trích",
+      "ko": "정어리의 일종",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b1f1d3c51c854407bccd7eb7587e9966"
+    },
+    {
+      "vi": "ưng",
+      "ko": "동의하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/08c7574c2f4a44e6b580735e65dc2850"
+    },
+    {
+      "vi": "liệng",
+      "ko": "(돌 따위) 던지다. 팽개치다. 집어던지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6622beda515444d1bfcecbb30a45ebb9"
+    },
+    {
+      "vi": "xui",
+      "ko": "불행한; 부추기다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ae350b4a7b6f400d87f5a22f7e74c078"
+    },
+    {
+      "vi": "giã",
+      "ko": "찧다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/462564a3190a47c4a18283d62d056cbc"
+    },
+    {
+      "vi": "nghiệt",
+      "ko": "가혹한. 엄한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/007e623be644498a9f90ce5f9f1143ad"
+    },
+    {
+      "vi": "cay nghiệt",
+      "ko": "거친. 가혹한. 호된",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9f2907aa7d83430f804671bdf8c39529"
+    },
+    {
+      "vi": "liềm",
+      "ko": "낫",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3b19cf14012247c19190d992e836a3b6"
+    },
+    {
+      "vi": "xúc",
+      "ko": "푸다. 퍼내다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b8492b64db7847e08b02e71cb0b4dc33"
+    },
+    {
+      "vi": "xức",
+      "ko": "(기름을) 바르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0100a6d2b8e04d8c9b8b2bab61100cf2"
+    },
+    {
+      "vi": "nhịn",
+      "ko": "삼가다. 참다. 억제하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/200a9d661e8242cf9736ff11c5134571"
+    },
+    {
+      "vi": "xóm",
+      "ko": "부락. 작은 마을",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4a6a9c5d6338490db640bf839168b249"
+    },
+    {
+      "vi": "mỏ",
+      "ko": "주둥이",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/06bd31795572495196e2dc3e33562545"
+    },
+    {
+      "vi": "phù",
+      "ko": "돕다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fcf976ca08f64761a3c10e163d55e5e8"
+    },
+    {
+      "vi": "dặn",
+      "ko": "충고하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9a4e69bb068b4e50bccb2f74adc76c4b"
+    },
+    {
+      "vi": "rắc",
+      "ko": "흩뿌리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/73ce8bb822854a20ab8c5f5df87052e0"
+    },
+    {
+      "vi": "dựa",
+      "ko": "기대다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fb3f831e51f14b14ab227fdc3346a8e9"
+    },
+    {
+      "vi": "lừng",
+      "ko": "울려퍼지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/16c8c93cdb8843a0837d9cc113753dda"
+    },
+    {
+      "vi": "điếc",
+      "ko": "귀머거리의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/649fd00dada6439ebb7ed7ffcc99fbda"
+    },
+    {
+      "vi": "sói",
+      "ko": "늑대",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/18b107d13f3f45dbb637ba4cbb805ee6"
+    },
+    {
+      "vi": "ngà",
+      "ko": "상아",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1e10eb67256a4d5fa1a16d0c6699ae26"
+    },
+    {
+      "vi": "chói",
+      "ko": "눈부시다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1f477d4063dc41ff9cc786444bd8e1ab"
+    },
+    {
+      "vi": "cập",
+      "ko": "미치다(이르다),",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a8812ba2d3f34089b3f10543bd964494"
+    },
+    {
+      "vi": "bỗng",
+      "ko": "돌연",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0f331cad0a564814b107414dc6e4cfe7"
+    },
+    {
+      "vi": "khởi",
+      "ko": "시작하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9a055a9925c241b6ae495405e8f4b013"
+    },
+    {
+      "vi": "bênh",
+      "ko": "편들다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5071f06f62a24268a75aec7b377f31da"
+    },
+    {
+      "vi": "dằn",
+      "ko": "눌러놓다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/713b7f6b2dcb4e139608aba8e57556c9"
+    },
+    {
+      "vi": "vặt",
+      "ko": "적은. 하찮은",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/75f3fdca4b134e08bea4e09e086848ee"
+    },
+    {
+      "vi": "áng",
+      "ko": "문학 혹은 문학적 의미를 가진 명사앞에 붙이는 말",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c2a9525da14d4d3684e4fa81b97b780b"
+    },
+    {
+      "vi": "khai",
+      "ko": "…을 선언하다. 주장하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f83e61f38d0f45f3897e6c78956d8e2e"
+    },
+    {
+      "vi": "bù",
+      "ko": "보상하다. 갚다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c04a0e5fa391410db5e59035b44d7ee6"
+    },
+    {
+      "vi": "gỡ",
+      "ko": "풀다. 해방하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/33d7a873a0684323b5dea288c7a224cd"
+    },
+    {
+      "vi": "thêu",
+      "ko": "수를 놓다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ec1e37e38635412496163334716585ab"
+    },
+    {
+      "vi": "dệt",
+      "ko": "방직",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2689d56d38144127ade5f12721f8ab47"
+    },
+    {
+      "vi": "lẩn",
+      "ko": "살짝 가버리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/db18964884944735b035bef860c91f6a"
+    },
+    {
+      "vi": "trốn",
+      "ko": "피하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6115833bb4054d968390bdd6952e35cf"
+    },
+    {
+      "vi": "chùng",
+      "ko": "느슨한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6f483a3b47bb4f94bae7c0dda390e23b"
+    },
+    {
+      "vi": "chiếm",
+      "ko": "장악하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4ea290d7eb3f4e30936eb45625515ebd"
+    },
+    {
+      "vi": "chị em",
+      "ko": "자매",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fc1ebc6489b4461e8a3c2cd3f83e6ce8"
+    },
+    {
+      "vi": "bùi",
+      "ko": "향기로운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3b847ff16bf4470a82e76652bcfaa827"
+    },
+    {
+      "vi": "đâm",
+      "ko": "찌르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8ac6a8d6a46c4edd9fab7298bd2bbce6"
+    },
+    {
+      "vi": "hòng",
+      "ko": "…하고자 하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/043f91fa8a534e448e230c073d211e61"
+    },
+    {
+      "vi": "hồng",
+      "ko": "장밋빛",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7ad8464804dd4fe999ac83691a7712a0"
+    },
+    {
+      "vi": "nhằm",
+      "ko": "겨냥하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2f6ef670ad504eeba9558fe030fe57f5"
+    },
+    {
+      "vi": "nhàm",
+      "ko": "성가신",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/55d3a920f05549d7a7df8ba1954df2e7"
+    },
+    {
+      "vi": "nhành",
+      "ko": "나뭇가지",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/38aa961a5d7140e594b9ced74e32a8f6"
+    },
+    {
+      "vi": "dặm",
+      "ko": "거리의 단위",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9bdea4ce4460408193ad14d3aa46fd4a"
+    },
+    {
+      "vi": "canada",
+      "ko": "캐나다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1efac4ce43e34dcfa1c2019f72cad753"
+    },
+    {
+      "vi": "úc",
+      "ko": "호주",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/dcbb877ff3f1412089ffd3220b7eb2a7"
+    },
+    {
+      "vi": "châu",
+      "ko": "대륙",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/56e439d092f4493ca86a5aed9eaf1cc4"
+    },
+    {
+      "vi": "rách",
+      "ko": "찢어진",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8372452681a943c4a793cc950ee8b015"
+    },
+    {
+      "vi": "thềm",
+      "ko": "베란다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/47980c97ac274962ab2fce2870ae3368"
+    },
+    {
+      "vi": "hãm",
+      "ko": "브레이크를 걸다. 제어하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0505758a4a3d47f481c16da623f6d380"
+    },
+    {
+      "vi": "bám",
+      "ko": "꽉잡다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/290ced2422214325a65a2e72edf436d4"
+    },
+    {
+      "vi": "than",
+      "ko": "한탄하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5d9e8311b3274fb587b207246e7f9ce0"
+    },
+    {
+      "vi": "thận",
+      "ko": "해부 신장",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/256cdb1e4c354881a7a35182e0ac3e35"
+    },
+    {
+      "vi": "nguôi",
+      "ko": "가라앉은",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3ae57206571c4ff080327f0199456588"
+    },
+    {
+      "vi": "gợi",
+      "ko": "깨우다. 소생하다. 회복시키다. 자극하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/cf5fabfc491542968a9ebffb0878e38d"
+    },
+    {
+      "vi": "giằng",
+      "ko": "당기다. 잡아당기다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/cb0f75af21cc488f8d9001277f89dab5"
+    },
+    {
+      "vi": "khít",
+      "ko": "틈이 없는. 조밀한. 팽팽한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/998bf05d31914ce3aca2c30f08ee9e6c"
+    },
+    {
+      "vi": "chủng",
+      "ko": "인종. 종족",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6c7a38ce88824b23973f3acc2d27b23e"
+    },
+    {
+      "vi": "rập",
+      "ko": "복사하다. 본뜨다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e693328d11574cf2a62f5b14058182c6"
+    },
+    {
+      "vi": "dứt",
+      "ko": "끝내다. 끝나다. 끊다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5fda44c032b943dab2e4c38262f3d92a"
+    },
+    {
+      "vi": "núp",
+      "ko": "피난(대피)하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0d480194639948418a1eeb0a1fc88661"
+    },
+    {
+      "vi": "xíu",
+      "ko": "극소의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0d7153ea032a456d9976b03b1c3c2cf3"
+    },
+    {
+      "vi": "thâm",
+      "ko": "검은. 검은색의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8343ad80cea04d38b4350d64b22f314d"
+    },
+    {
+      "vi": "bom",
+      "ko": "폭탄",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/daf538fb5b044080b0efb506581b7257"
+    },
+    {
+      "vi": "thán",
+      "ko": "한탄하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9e5d4784886947ec97749ee5a00e03d0"
+    },
+    {
+      "vi": "mò",
+      "ko": "손으로 더듬다. 느끼다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b1737530840d4ae9bb10a25dc1d45201"
+    },
+    {
+      "vi": "òa",
+      "ko": "충돌했을 때 지르는 소리",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9bc8d4ecc6f24aa0a6dc56442ec355a9"
+    },
+    {
+      "vi": "nài",
+      "ko": "간청하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ddb5c4e5d2594361bab6bd0bf79e8c8a"
+    },
+    {
+      "vi": "quẳng",
+      "ko": "내던지다. 내팽개치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5a34efa2b08b4c948aa79730cb4f2ec3"
+    },
+    {
+      "vi": "vắng",
+      "ko": "고요한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c80e4fe6a9e343c39c04759a3b304114"
+    },
+    {
+      "vi": "lấn",
+      "ko": "침식하다. 깎아내다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a782bf04f6b4407697a4bd6b0ccf978d"
+    },
+    {
+      "vi": "dữ",
+      "ko": "사나운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8e32454a7adc4ff79a7520564b24490c"
+    },
+    {
+      "vi": "lớp",
+      "ko": "급(級). 학급. 학년",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d9ca5b3d2ad641d794152f88c6ebf2c7"
+    },
+    {
+      "vi": "nhủ",
+      "ko": "충고하다. 상담하다. 논하다. 권유하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/dc9b52923970499c9c91d7b4ec709ba6"
+    },
+    {
+      "vi": "lội",
+      "ko": "헤엄치다. 수영하다. (물) 건너다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8092e40a37734ab49569940010e4edea"
+    },
+    {
+      "vi": "hôm",
+      "ko": "날, 일",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/68f245e146d14696b6af1e7f4546e6b0"
+    },
+    {
+      "vi": "co",
+      "ko": "줄어들다. 수축하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1bf6159c5be448f6927795677b596e82"
+    },
+    {
+      "vi": "bực",
+      "ko": "화가 난",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b51605b59912449081633ec02f46838c"
+    },
+    {
+      "vi": "tục",
+      "ko": "세속의. 현세의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c5054bb5f09a4a3c8c524c0c3c7e7334"
+    },
+    {
+      "vi": "củi",
+      "ko": "장작. 땔나무",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8ebe098bd53544a983cf1f079cf84544"
+    },
+    {
+      "vi": "vợi",
+      "ko": "감소하다. 줄어들다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1b5f2ceb15f34e38a93c1cbfc559f156"
+    },
+    {
+      "vi": "bùn",
+      "ko": "진흙",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f23605bfe13a4962949748b674482634"
+    },
+    {
+      "vi": "đam",
+      "ko": "빠지다. 열중하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c42827ee35494dd3880e0a032356c0fb"
+    },
+    {
+      "vi": "loay hoay",
+      "ko": "애쓰다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/aa7f55dde28947229f25ebc14007d2cb"
+    },
+    {
+      "vi": "chứng",
+      "ko": "증명. 증언",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/11fd5b4d2b274ef49ad7cabe12b63bd3"
+    },
+    {
+      "vi": "kìm",
+      "ko": "집게. 뺀지",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f26ec487e91f44febd1d448eaf605e54"
+    },
+    {
+      "vi": "uẩn",
+      "ko": "축적하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e18e5ba79ec2422ab495dcafabcc5dba"
+    },
+    {
+      "vi": "dám",
+      "ko": "감히 …하다. 대담하게 …하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e4f92543675f49c593ef96d10f4404a6"
+    },
+    {
+      "vi": "nhiễm",
+      "ko": "감염되다. 감염시키다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/752a2c7c10a744fe96efa1d67760fa5f"
+    },
+    {
+      "vi": "thinh",
+      "ko": "침묵하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0e91359d560c4669b0e142dcb27d0fe0"
+    },
+    {
+      "vi": "đống",
+      "ko": "(돌, 진흙, 나무 등의) 더미",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/badafa1558ca43568464c8cf9a0a8c0e"
+    },
+    {
+      "vi": "tro",
+      "ko": "재",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1a4ba5e87f104be1a889958302ffcd49"
+    },
+    {
+      "vi": "phũ",
+      "ko": "매우 거칠게. 매우 사납게. 잔인하게",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e267161940ec4a51935e725bb440d607"
+    },
+    {
+      "vi": "phàng",
+      "ko": "잔인한. 지독한.)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/23b6a6d760044fe9a8d427bc356fb67d"
+    },
+    {
+      "vi": "vẻ",
+      "ko": "모양(모습, 태도, 기색 등의)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2e63303ab9bb4fabb42bff6798f89154"
+    },
+    {
+      "vi": "dọc",
+      "ko": "길이",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/6bc678fbf20348aa81f66e02463f77da"
+    },
+    {
+      "vi": "măng",
+      "ko": "죽순",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b380ce29eba0438c82a2a42a18ebfc46"
+    },
+    {
+      "vi": "đúc",
+      "ko": "주조하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/46c3086b890f40d896a9b09aded6e78f"
+    },
+    {
+      "vi": "mười",
+      "ko": "열(10)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/8d38df2f2efb4fcdb3c322d6488a2100"
+    },
+    {
+      "vi": "máng",
+      "ko": "홈통(지붕의 물받이)",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7279b42721264c2abf1c19b7b7640d95"
+    },
+    {
+      "vi": "móng",
+      "ko": "손톱. 발톱",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5d173ba8ee304de2b2cd6d69cbbbaf90"
+    },
+    {
+      "vi": "nhé",
+      "ko": "권유·제의를 나타내는 말",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9664b3e584344550b5814a05a167b198"
+    },
+    {
+      "vi": "dỗ",
+      "ko": "감언으로 설득하다. 어르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c7b68185fbca4335981abb67ce77912c"
+    },
+    {
+      "vi": "cưng",
+      "ko": "하고싶은대로 하게 하다. 비위를 맞추다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e7ec0fec585d48f190917768c30d8590"
+    },
+    {
+      "vi": "xé",
+      "ko": "찢다. 찢어 버리다. 종이를 찢다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ff7f87775fe44bf8887ba1c7b9d03c4a"
+    },
+    {
+      "vi": "xe",
+      "ko": "차. 운반하는 것. 탈것",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/817fd5b86d46427ca4831064342430a9"
+    },
+    {
+      "vi": "chênh",
+      "ko": "~쪽으로 기운, 같지않은, 어울리지 않은",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7325d9a5cf774ce991ccf6355fa3f7bf"
+    },
+    {
+      "vi": "tươi",
+      "ko": "신선한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/21f1e513657d4217826d3d83b3a4f4b7"
+    },
+    {
+      "vi": "tươi tắn",
+      "ko": "즐거운. 유쾌한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/cc24547f27a54accb983e731f65a42e4"
+    },
+    {
+      "vi": "hân hoan",
+      "ko": "대단히 기쁘다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/28cce1d0efed4ac58d0c250ea2761a55"
+    },
+    {
+      "vi": "vinh hiển",
+      "ko": "명예로운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d30b41f112314d8bb534d44bf67f838c"
+    },
+    {
+      "vi": "chí",
+      "ko": "의지",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c62d139817dc487fb69c9b13a2320311"
+    },
+    {
+      "vi": "bền chí",
+      "ko": "참는. 인내하는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f6bb25b602da4632b467815ef5d600aa"
+    },
+    {
+      "vi": "chan hòa",
+      "ko": "넘쳐흐르다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1acafae8e2c949708770b26be81f387b"
+    },
+    {
+      "vi": "chan",
+      "ko": "담그다, 처넣다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ffb00b3a40a54de6bab59c6d09c3d35c"
+    },
+    {
+      "vi": "chứa chan",
+      "ko": "넘치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2435e0aa152146c18fdededcaeaa6453"
+    },
+    {
+      "vi": "lẻ loi",
+      "ko": "홀로. 혼자서. 고독한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/efeaca7fc3884c99b633349020bfa944"
+    },
+    {
+      "vi": "huy hoàng",
+      "ko": "눈부시게 아름다운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bf2050d30b57499ea22bfb3c1d95dd6e"
+    },
+    {
+      "vi": "thanh khiết",
+      "ko": "청결한. 순수한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3fff7813ba5044c3b045d7751022a551"
+    },
+    {
+      "vi": "oai nghi",
+      "ko": "위엄에 찬. 당당한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/757972ee41444c2d849830064f457957"
+    },
+    {
+      "vi": "oai",
+      "ko": "위엄있는. 장엄한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/45c9f50c701844fd9f10b187fe04b65b"
+    },
+    {
+      "vi": "nô lệ",
+      "ko": "노예",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9ecd8c409fc94ad1910f340a46de3575"
+    },
+    {
+      "vi": "hiên ngang",
+      "ko": "위엄있는, 불굴의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e8a1053c665043f3b8331fabca257e4d"
+    },
+    {
+      "vi": "khoan dung",
+      "ko": "관대한. 아량있는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a3d1b94ca68f4865bca2256d90d50162"
+    },
+    {
+      "vi": "khoan",
+      "ko": "송곳. 구멍뚫기",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b7386ac1f9784eccb3b4697ba5858896"
+    },
+    {
+      "vi": "đắn đo",
+      "ko": "심사숙고 하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/df49d2d81d934ce7aa0cbbcda5a98e0f"
+    },
+    {
+      "vi": "phàm",
+      "ko": "평범한. 보통의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/24177efeb3704b84a3994cedef46c29c"
+    },
+    {
+      "vi": "phàm nhân",
+      "ko": "범인. 보통사람",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5d0de72ef82d485a90b25c7f5037eb9b"
+    },
+    {
+      "vi": "uy nghi",
+      "ko": "위엄이 있는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1bb48ac06a0545cbb16c7e82c3c90eec"
+    },
+    {
+      "vi": "uy",
+      "ko": "권위. 위신. 권한. 위력",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/823d7cf396364251b3f45d0b4f02fc4d"
+    },
+    {
+      "vi": "háo hức",
+      "ko": "기대하다. 갈망하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7a07d467feb946afa0d2bfb8d9cd7a90"
+    },
+    {
+      "vi": "quên lãng",
+      "ko": "망각의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c31afda459bd4c9384f1f696ac2482a6"
+    },
+    {
+      "vi": "hiếu khách",
+      "ko": "손님을 환대하는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a2ae3fe94f1748749f6a6ebc4991163e"
+    },
+    {
+      "vi": "hiếu",
+      "ko": "효",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/854ebd9b21f243778bd2bc4f68b299c4"
+    },
+    {
+      "vi": "êm đềm",
+      "ko": "평온한, 조용한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/d0928dc3d3104b66949ea485bde93bb9"
+    },
+    {
+      "vi": "gọn gàng",
+      "ko": "단정한. 깨끗한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/569661937065411c98f9f72bcd6a11e5"
+    },
+    {
+      "vi": "triền miên",
+      "ko": "끝없는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/615611a7732347e5bc3b2439b77926cc"
+    },
+    {
+      "vi": "miên man",
+      "ko": "끊임없는, 끝이 없는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/1959d2cc6dee40f9b40721eb66b9fc43"
+    },
+    {
+      "vi": "già nua",
+      "ko": "늙은. 노약의. 노쇠한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/060d0c5c26d44bdc868516d5ce581fcb"
+    },
+    {
+      "vi": "rối bời",
+      "ko": "헝클어지다. 복잡해지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f812af0d435c4c80a2a76bc88fefb77d"
+    },
+    {
+      "vi": "ngổn ngang",
+      "ko": "무질서한. 혼란한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c70db8c2ebf4417eb72db86d2890c8f4"
+    },
+    {
+      "vi": "thắc mắc",
+      "ko": "의문을 갖다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7dee961f16634677bd2c531af0f9c28c"
+    },
+    {
+      "vi": "hiền hòa",
+      "ko": "상냥하고 덕이 있는. 온순하고 붙임성 있는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7903ea025e5543b49ce613bcc7f85442"
+    },
+    {
+      "vi": "chới với",
+      "ko": "허둥대다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2160354aa43b4d91a26acff553d4a8ee"
+    },
+    {
+      "vi": "chơi vơi",
+      "ko": "불안한. 외로운",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/49dd9b23c7e340ef89f670d0ab53890d"
+    },
+    {
+      "vi": "nâng niu",
+      "ko": "달래다. 애무하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f989c689bfe44203b3d1325d03b6d8d1"
+    },
+    {
+      "vi": "mỉm cười",
+      "ko": "미소짓다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/45e7c22d210545478bb8a65d5bc08c8b"
+    },
+    {
+      "vi": "mồ côi",
+      "ko": "고아가 되다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0e7008f6141b410482c38d32c5370beb"
+    },
+    {
+      "vi": "tấp nập",
+      "ko": "북적이는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0672e1555db0450b9903852195fa2f35"
+    },
+    {
+      "vi": "tan tành",
+      "ko": "조각조각 부서지다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/03e4de1272c244959d4fdcac5a24477e"
+    },
+    {
+      "vi": "bấp bênh",
+      "ko": "불균 형인, 불안정한, 불확실한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c0c94e84fd2849f7a7a936f8e059eb95"
+    },
+    {
+      "vi": "nhấp nhô",
+      "ko": "높낮이가 있는, 굽이치는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/5382ce7b0b7f4971820ca06e894a5fa2"
+    },
+    {
+      "vi": "veo",
+      "ko": "남김없이 완전히. 깨끗하게. 아주",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/0b6b1ec72a5749ddbd2a7cf45f66c382"
+    },
+    {
+      "vi": "khải hoàn",
+      "ko": "승리하여 돌아오다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e4d7b912e30840f5b3fbfa97764a91a2"
+    },
+    {
+      "vi": "chi phối",
+      "ko": "지배하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/aaf7a335ff804d28826bc781bb2a16d0"
+    },
+    {
+      "vi": "chập chùng",
+      "ko": "층층이 둘러친. (언덕, 산) 하나의 맥을 이루고 있는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e566c2f8d4bf468883213ab95bff6e5c"
+    },
+    {
+      "vi": "chập",
+      "ko": "잠시, 순간",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/440dcbb84e484517b392986a08f3c424"
+    },
+    {
+      "vi": "mịt mờ",
+      "ko": "어렴풋한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c934da232dca49dea97c24de58ec75eb"
+    },
+    {
+      "vi": "lái buôn",
+      "ko": "무역업자, 상인",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2497378e5c864715a1ad93bebbbf8fd9"
+    },
+    {
+      "vi": "chim muông",
+      "ko": "새와 짐승의 총칭",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bde720ac9b5446548aeb3501b9f4c9bc"
+    },
+    {
+      "vi": "hy lạp",
+      "ko": "그리스",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/315339f3cc5241ba9db15cd6a55c07dd"
+    },
+    {
+      "vi": "nguôi ngoai",
+      "ko": "점점 줄어들다, 가라앉다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/b0e7cfab98784611a617569f34113a6b"
+    },
+    {
+      "vi": "mò mẫm",
+      "ko": "더듬어서 찾다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9eea2697f97b407f9fd26f7c04e715e1"
+    },
+    {
+      "vi": "hãnh diện",
+      "ko": "자랑스러워하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/824ce2cc36f0462191f0f74ddf0bc790"
+    },
+    {
+      "vi": "ca khúc",
+      "ko": "노래. 가곡",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/a7e5dafec4244f569145f6f322f5b7c7"
+    },
+    {
+      "vi": "tương trợ",
+      "ko": "서로 돕다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c9077f66a5914b64bbd1fb4548ea6b4c"
+    },
+    {
+      "vi": "lai láng",
+      "ko": "범람하다, 넘치다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f3b7ebb736f740aa9c512e5d28eaf869"
+    },
+    {
+      "vi": "lắng tai",
+      "ko": "…을 듣다. 귀를 쫑긋 세우다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/05dcb73117c84b0f9c731d06f3e42990"
+    },
+    {
+      "vi": "ưu tiên",
+      "ko": "우선의",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/121aa70fe86548a7b573b42ad689a7a5"
+    },
+    {
+      "vi": "tuyệt vời",
+      "ko": "대단히 훌륭한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/447437d7fe1247c98e2099ecfe6eebf7"
+    },
+    {
+      "vi": "mạnh mẽ",
+      "ko": "강력한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/634c993c40824cfb8b90848bf28f39d9"
+    },
+    {
+      "vi": "an ủi",
+      "ko": "위로하다. 위안하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f7fe810b9d674281811c527670c3e417"
+    },
+    {
+      "vi": "ưu phiền",
+      "ko": "근심하고 번민하다. 슬프게하다. 괴롭히다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fb845259e5874774b7205cb1b5958c73"
+    },
+    {
+      "vi": "suy tàn",
+      "ko": "쇠퇴하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3b3e8f3c732f4650bd3ac04fb5be6a16"
+    },
+    {
+      "vi": "lo âu",
+      "ko": "걱정하는. 불안한. 염려하는",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3d3ae3c1006c42b3a19f05aea9e89159"
+    },
+    {
+      "vi": "đau đớn",
+      "ko": "괴로워하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/c3e4d4e30bf14cc1a1c13ab5a3f9fbeb"
+    },
+    {
+      "vi": "thuộc về",
+      "ko": "속하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/4c92ba20813c4542aa2675de50c7992e"
+    },
+    {
+      "vi": "ngăn cản",
+      "ko": "저지하다. 차단하다. 방해하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ab45d21b8d3e4167aeff535daa4eb1e3"
+    },
+    {
+      "vi": "thỏa nguyện",
+      "ko": "뜻대로 하게 하다. 요구를 만족시키다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/093aea2fb46741d3b006655c977d85c6"
+    },
+    {
+      "vi": "dần dần",
+      "ko": "차차로. 점차로",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/92cf8193ef044c678ec566d480c441d5"
+    },
+    {
+      "vi": "chiến thắng",
+      "ko": "승리",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2fd147fc19694a309a772a2ff7adf275"
+    },
+    {
+      "vi": "nghiền ngẫm",
+      "ko": "숙고하다. 마음에 새기다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/9b687f27e57246ffa9a3358555ff6c11"
+    },
+    {
+      "vi": "răn bảo",
+      "ko": "충고하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/3eed937362854446ac8b7d4f899f5847"
+    },
+    {
+      "vi": "khoảnh khắc",
+      "ko": "순간. 찰나, 아주짧은 시간",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/390235a222944817894d4c7aed67ac5d"
+    },
+    {
+      "vi": "cai quản",
+      "ko": "감독하다. 경영하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bd68aeff1af3443db84db296e8556f92"
+    },
+    {
+      "vi": "khao khát",
+      "ko": "…을 갈망하다. 원하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f85f662f5b0945ccb82c60176577a849"
+    },
+    {
+      "vi": "cố gắng",
+      "ko": "노력하다. (힘을) 쓰다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/ae30e3f1a61f439a88726df10e922417"
+    },
+    {
+      "vi": "đội quân",
+      "ko": "군대",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/f6eff7c7a49c4b7da91b1609b90fbfd2"
+    },
+    {
+      "vi": "trân trọng",
+      "ko": "정중하게. 예의바르게",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/46340914e2bb45a8b78f132475e99fb2"
+    },
+    {
+      "vi": "lạc lõng",
+      "ko": "헤매다. 방황하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/e5cd0fcac9e8409e8a8577f0a89398cc"
+    },
+    {
+      "vi": "hào quang",
+      "ko": "후광",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/54e0da3d65c543938052ccf961687ceb"
+    },
+    {
+      "vi": "ấm áp",
+      "ko": "부드러운. 유순한. 편안한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bbebe3f7018f44c2887e01cf396e8f65"
+    },
+    {
+      "vi": "ôn hòa",
+      "ko": "성격이 온화한",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/7385620a58cb40f7bf7ec373e80eac9e"
+    },
+    {
+      "vi": "reo",
+      "ko": "환호하다, 울리다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/fe500af66d324919a42535ca2a3a2d68",
+      "note": "첫 번째 뜻 대신 가사 문맥과 일치하는 전체 뜻풀이·예문에서 확인한 뜻."
+    },
+    {
+      "vi": "dần",
+      "ko": "점차, 서서히",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bc1f0b6fbf4342fc9ee9488d33c425f8",
+      "note": "첫 번째 뜻 대신 가사 문맥과 일치하는 전체 뜻풀이·예문에서 확인한 뜻."
+    },
+    {
+      "vi": "thắng",
+      "ko": "이기다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bfaee3e8193d4670a68420dc9156d4b9",
+      "note": "첫 번째 뜻 대신 가사 문맥과 일치하는 전체 뜻풀이·예문에서 확인한 뜻."
+    },
+    {
+      "vi": "suy tư",
+      "ko": "깊이 생각하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/kovi/d12f361645c34c94b2df77f97cc54697",
+      "note": "가사 문맥에 맞는 한국어 대역어·예문으로 확인."
+    },
+    {
+      "vi": "suy ngẫm",
+      "ko": "숙고하다, 묵상하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/kovi/9729f49956a24ce4a16f5a33335357f7",
+      "note": "가사 문맥에 맞는 한국어 대역어·예문으로 확인."
+    },
+    {
+      "vi": "khuyên răn",
+      "ko": "훈계하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/kovi/f0284992f56a40be9cd761a673d1f9ac",
+      "note": "가사 문맥에 맞는 한국어 대역어·예문으로 확인."
+    },
+    {
+      "vi": "ngăn",
+      "ko": "막다",
+      "source": "https://dict.naver.com/vikodict/#/entry/kovi/e36d951c95494959b4fa4362dc6d8d85",
+      "note": "가사 문맥에 맞는 한국어 대역어·예문으로 확인."
+    },
+    {
+      "vi": "không hề",
+      "ko": "전혀 -않다",
+      "source": "https://dict.naver.com/vikodict/#/entry/kovi/9252fecc4e0c4b2cb1b06c8011fb348c",
+      "note": "가사 문맥에 맞는 한국어 대역어·예문으로 확인."
+    },
+    {
+      "vi": "can trường",
+      "ko": "용감한, 담력 있는",
+      "source": "https://dict.naver.com/vikodict/#/entry/kovi/4d55ce7719a84c5f8ec10a928da6c833",
+      "note": "가사 문맥에 맞는 한국어 대역어·예문으로 확인."
+    },
+    {
+      "vi": "biểu dương",
+      "ko": "드러내다, 칭찬하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/52bde9c859b7493386732ef0d319bd5f",
+      "note": "가사 문맥에 맞는 한국어 대역어·예문으로 확인."
+    },
+    {
+      "vi": "suy",
+      "ko": "헤아리다, 깊이 생각하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/bb7832fc07e74d718dcf0b542e8a1586",
+      "note": "가사 문맥과 일치하는 전체 뜻풀이·예문에서 확인."
+    },
+    {
+      "vi": "thuộc",
+      "ko": "속하다",
+      "source": "https://dict.naver.com/vikodict/#/entry/viko/2b3ed0e17cc54ed9b865c1730dd576aa",
+      "note": "가사 문맥과 일치하는 전체 뜻풀이·예문에서 확인."
+    }
+  ]
+}

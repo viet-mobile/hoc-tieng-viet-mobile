@@ -11845,6 +11845,13 @@ function verifyDistribution(units, dist, pins) {
       d.pron[k] = lyricKoreanWord(r[0]);
       if (!d.meaning[k]) d.meaning[k] = String(r[2]).replace(/\(.*$/, "").trim();
     });
+    // Offline Naver dictionary supplement: fill gaps only. Existing vocabulary and
+    // the user's song-context meanings retain priority over dictionary senses.
+    var supplement = typeof LYRIC_MEANINGS_KO !== "undefined" && LYRIC_MEANINGS_KO || {};
+    Object.keys(supplement).forEach(function (word) {
+      var k = lyricWordKey(word);
+      if (!d.meaning[k]) d.meaning[k] = supplement[word];
+    });
     Object.keys(LYRIC_WORD_KO_MEANINGS).forEach(function (word) { d.meaning[lyricWordKey(word)] = LYRIC_WORD_KO_MEANINGS[word]; });
     if (koreanNotationRegion !== "saigon") Object.keys(LYRIC_WORD_KO_PRON).forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
     ["lúc", "khuynh hướng", "gì", "muôn"].forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
