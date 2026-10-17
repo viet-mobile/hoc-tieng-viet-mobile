@@ -11612,6 +11612,174 @@ function verifyDistribution(units, dist, pins) {
     });
     return out;
   }
+  /* HANOI-KO-BEGIN */
+  // Vietnamese syllable -> the Korean notation closest to the Hanoi pronunciation, by the rules of the [발음][자모] chart
+  // (HANOI_CHART): initials, vowels and finals as listed there; a vowel that is a glide + vowel (ia, ua, ươ ...) or ends in
+  // an off-glide (i, y, u, o) is written as separate blocks (쭈어, 바이, 꺼우); 응 (ng) and 니 (nh) are blocks of their own
+  // (응어이, 년); 받침 -ch / -nh are the blocks 익 / 인 (-inh is 인 as in 낀); -c, -ng after o, ô, u close the lips (옵, 옴, 웁, 움);
+  // v- / ph- are the letters ㅸ / ㆄ which stand beside the vowel (ㅸㅏ, ㅸㅣ엣).
+  var HANOI_CHO = ["ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
+  var HANOI_JUNG = ["ㅏ", "ㅐ", "ㅑ", "ㅒ", "ㅓ", "ㅔ", "ㅕ", "ㅖ", "ㅗ", "ㅘ", "ㅙ", "ㅚ", "ㅛ", "ㅜ", "ㅝ", "ㅞ", "ㅟ", "ㅠ", "ㅡ", "ㅢ", "ㅣ"];
+  var HANOI_JONG = ["", "ㄱ", "ㄲ", "ㄳ", "ㄴ", "ㄵ", "ㄶ", "ㄷ", "ㄹ", "ㄺ", "ㄻ", "ㄼ", "ㄽ", "ㄾ", "ㄿ", "ㅀ", "ㅁ", "ㅂ", "ㅄ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
+  var HANOI_INITIALS = ["ngh", "ng", "nh", "ch", "tr", "th", "kh", "ph", "gh", "gi", "qu", "g", "c", "k", "d", "đ", "t", "b", "p", "s", "x", "r", "v", "l", "m", "n", "h"];
+  var HANOI_INITIAL_KO = { ngh: "ng", ng: "ng", nh: "nh", ch: "ㅉ", tr: "ㅉ", th: "ㅌ", kh: "ㅋ", ph: "ㆄ", gh: "ㄱ", gi: "ㅈ", qu: "qu", g: "ㄱ", c: "ㄲ", k: "ㄲ",
+    d: "ㅈ", "đ": "ㄷ", t: "ㄸ", b: "ㅂ", p: "ㅃ", s: "ㅆ", x: "ㅆ", r: "ㅈ", v: "ㅸ", l: "ㄹ", m: "ㅁ", n: "ㄴ", h: "ㅎ" };
+  var HANOI_MAIN = { a: ["ㅏ"], "ă": ["ㅏ"], "â": ["ㅓ"], e: ["ㅐ"], "ê": ["ㅔ"], i: ["ㅣ"], y: ["ㅣ"], o: ["ㅗ"], "ô": ["ㅗ"], "ơ": ["ㅓ"], u: ["ㅜ"], "ư": ["ㅡ"],
+    ia: ["ㅣ", "ㅓ"], "iê": ["ㅣ", "ㅔ"], "yê": ["ㅣ", "ㅔ"], ua: ["ㅜ", "ㅓ"], "uô": ["ㅜ", "ㅓ"], "uâ": ["ㅜ", "ㅓ"], "uă": ["ㅜ", "ㅏ"], "uê": ["ㅜ", "ㅔ"],
+    ue: ["ㅜ", "ㅐ"], "uơ": ["ㅜ", "ㅓ"], "ưa": ["ㅡ", "ㅓ"], "ươ": ["ㅡ", "ㅓ"], oa: ["ㅗ", "ㅏ"], "oă": ["ㅗ", "ㅏ"], oe: ["ㅗ", "ㅐ"], uy: ["ㅜ", "ㅣ"],
+    uya: ["ㅜ", "ㅑ"], "uyê": ["ㅜ", "ㅖ"] };
+  var HANOI_OFFGLIDE = { i: "ㅣ", y: "ㅣ", u: "ㅜ", o: "ㅗ" };
+  var HANOI_NH_MERGE = { "ㅏ": "ㅑ", "ㅓ": "ㅕ", "ㅗ": "ㅛ", "ㅜ": "ㅠ", "ㅐ": "ㅒ", "ㅔ": "ㅖ" };
+  var HANOI_QU_MERGE = { "ㅏ": "ㅘ", "ㅓ": "ㅝ", "ㅐ": "ㅙ", "ㅔ": "ㅞ", "ㅣ": "ㅟ" };
+  var HANOI_NUCLEUS = /^(uyê|uya|uy|ươ|ưa|uô|iê|yê|ia|ua|uâ|uă|uê|ue|uơ|oa|oă|oe|[aăâeêioôơuưy])([iyuo])?$/;
+  function hanoiBlock(cho, jung, jong) {
+    return String.fromCharCode(0xAC00 + (HANOI_CHO.indexOf(cho) * 21 + HANOI_JUNG.indexOf(jung)) * 28 + HANOI_JONG.indexOf(jong || ""));
+  }
+  // The Korean notation of one syllable (any tone), or "" when it is not a Vietnamese syllable.
+  function hanoiKoreanSyllable(syl) {
+    var s = String(syl || "").toLowerCase().normalize("NFD").replace(/[̣̀́̃̉]/g, "").normalize("NFC");
+    if (!s) return "";
+    if (s === "không") return "컴";
+    var initial = "";
+    for (var i = 0; i < HANOI_INITIALS.length; i++) if (s.indexOf(HANOI_INITIALS[i]) === 0) { initial = HANOI_INITIALS[i]; break; }
+    var rest = s.slice(initial.length);
+    if (initial === "gi" && (!rest || !/^[aăâeêiioôơuưy]/.test(rest))) { initial = "g"; rest = s.slice(1); }
+    var fin = "", m = /(ch|nh|ng|c|m|n|p|t)$/.exec(rest);
+    if (m && rest.length > m[0].length) { fin = m[0]; rest = rest.slice(0, -fin.length); }
+    var nm = HANOI_NUCLEUS.exec(rest);
+    if (!nm) return "";
+    var main = nm[1], J = HANOI_MAIN[main].slice(), glide = nm[2] ? HANOI_OFFGLIDE[nm[2]] : "";
+    var round = /^[oôu]$/.test(main);
+    var jong = "", extra = "";
+    if (fin === "c") jong = round ? "ㅂ" : "ㄱ";
+    else if (fin === "ng") jong = round ? "ㅁ" : "ㅇ";
+    else if (fin === "m") jong = "ㅁ";
+    else if (fin === "n") jong = "ㄴ";
+    else if (fin === "p") jong = "ㅂ";
+    else if (fin === "t") jong = "ㅅ";
+    else if (fin === "nh") { if (main === "i") jong = "ㄴ"; else extra = hanoiBlock("ㅇ", "ㅣ", "ㄴ"); }
+    else if (fin === "ch") extra = hanoiBlock("ㅇ", "ㅣ", "ㄱ");
+    var cho = initial ? HANOI_INITIAL_KO[initial] : "ㅇ", prefix = "", out = [];
+    // blocks as [cho, jung]; the last one takes the final
+    var blocks = J.map(function (j) { return ["ㅇ", j]; });
+    if (cho === "ng") {
+      prefix = hanoiBlock("ㅇ", "ㅡ", "ㅇ");
+      if (J.length > 1 && J[0] === "ㅡ") blocks.shift();      // 응 already holds the ㅡ of ươ / ưa
+    } else if (cho === "nh") {
+      if (J[0] === "ㅣ") blocks[0][0] = "ㄴ";
+      else if (HANOI_NH_MERGE[J[0]]) { blocks[0] = ["ㄴ", HANOI_NH_MERGE[J[0]]]; }
+      else prefix = hanoiBlock("ㄴ", "ㅣ");
+    } else if (cho === "qu") {
+      if (HANOI_QU_MERGE[J[0]]) blocks[0] = ["ㄲ", HANOI_QU_MERGE[J[0]]];
+      else { prefix = hanoiBlock("ㄲ", "ㅜ"); }
+    } else if (cho === "ㅸ" || cho === "ㆄ") {
+      prefix = cho;
+    } else blocks[0][0] = cho;
+    var last = blocks.length - 1, letter = prefix === "ㅸ" || prefix === "ㆄ";
+    blocks.forEach(function (b, k) {
+      var withJong = k === last && !glide && !extra ? jong : "";
+      if (letter && k === 0 && !withJong) { out.push(b[1]); return; }       // ㅸ / ㆄ stands beside the bare vowel letter
+      out.push(hanoiBlock(b[0], b[1], withJong));
+    });
+    if (glide) out.push(hanoiBlock("ㅇ", glide, ""));
+    if (extra) out.push(extra);
+    return prefix + out.join("");
+  }
+  // A word of 1-3 syllables ("Kinh Thánh", "Giê-hô-va"): spaces between syllables, none inside a hyphenated name.
+  function hanoiKoreanWord(text) {
+    var parts = String(text || "").trim().split(/\s+/).map(function (tok) {
+      return tok.split("-").map(hanoiKoreanSyllable).join("");
+    });
+    return parts.some(function (p) { return !p; }) ? "" : parts.join(" ");
+  }
+  /* HANOI-KO-END */
+  // ---- [노래] (Korean UI only): tap a word of a Vietnamese lyric line -> a small popup with its Hanoi Korean notation and its meaning ----
+  // The word is the longest 1-3 syllable word of the [어휘] word list (UNIFIED_WORDS) or of the [발음] examples that contains the tapped
+  // syllable; a syllable that belongs to no listed word is a word of its own. The lyric text is never changed: the tapped word is found
+  // from the caret position under the finger.
+  var lyricWordDict = null, lyricWordPop = null;
+  function lyricWordKey(s) { return String(s || "").normalize("NFC").toLowerCase().replace(/\s+/g, " ").trim(); }
+  function lyricWordMeaning(w) {
+    var m = w && (w.kr || w.meanings);
+    var v = typeof m === "string" ? m : (m && typeof m === "object" ? m.ko : "");
+    v = String(v || "").split(/[;；]/)[0].replace(/\s+/g, " ").trim();
+    return v.length > 40 ? v.slice(0, 39) + "…" : v;
+  }
+  function lyricWordDictionary() {
+    if (lyricWordDict) return lyricWordDict;
+    var d = { meaning: {}, pron: {} };
+    (typeof UNIFIED_WORDS !== "undefined" && UNIFIED_WORDS || []).forEach(function (w) {
+      var mean = lyricWordMeaning(w);
+      String(w.vi || "").replace(/\([^)]*\)/g, "").split(/[,/]/).forEach(function (v) {
+        var k = lyricWordKey(v);
+        if (k && k.split(" ").length <= 3 && mean && !d.meaning[k]) d.meaning[k] = mean;
+      });
+    });
+    (typeof HANOI_EXAMPLES !== "undefined" && HANOI_EXAMPLES || []).forEach(function (r) {
+      var k = lyricWordKey(r[0]);
+      d.pron[k] = String(r[1]).replace(/\(.*$/, "").replace(/\s+/g, " ").trim();
+      if (!d.meaning[k]) d.meaning[k] = String(r[2]).replace(/\(.*$/, "").trim();
+    });
+    lyricWordDict = d;
+    return d;
+  }
+  // The tapped word of a lyric element at client point (x, y): {text, rect} or null.
+  function lyricWordAt(el, x, y) {
+    var node = null, off = 0;
+    if (document.caretPositionFromPoint) { var cp = document.caretPositionFromPoint(x, y); if (cp) { node = cp.offsetNode; off = cp.offset; } }
+    else if (document.caretRangeFromPoint) { var cr = document.caretRangeFromPoint(x, y); if (cr) { node = cr.startContainer; off = cr.startOffset; } }
+    if (!node || node.nodeType !== 3 || !el.contains(node)) return null;
+    var text = node.data, re = /[\p{L}\p{M}]+(?:[-'’][\p{L}\p{M}]+)*/gu, toks = [], m;
+    while ((m = re.exec(text))) toks.push({ s: m.index, e: m.index + m[0].length, t: m[0] });
+    function rectOf(a, b) { var r = document.createRange(); r.setStart(node, toks[a].s); r.setEnd(node, toks[b].e); return r.getBoundingClientRect(); }
+    var hit = -1;
+    toks.forEach(function (t, i) { if (off >= t.s && off <= t.e && (hit < 0 || off < t.e)) hit = i; });
+    if (hit < 0) return null;
+    var box = rectOf(hit, hit);
+    if (x < box.left - 4 || x > box.right + 4 || y < box.top - 4 || y > box.bottom + 4) return null;
+    // words of up to three syllables around the tapped one: neighbours must be separated by blanks only
+    var dict = lyricWordDictionary(), best = [hit, hit];
+    function joined(a, b) { for (var i = a; i < b; i++) if (!/^\s+$/.test(text.slice(toks[i].e, toks[i + 1].s))) return null; return text.slice(toks[a].s, toks[b].e); }
+    function syllables(a, b) { return joined(a, b) === null ? 99 : toks.slice(a, b + 1).reduce(function (n, t) { return n + t.t.split("-").length; }, 0); }
+    outer: for (var len = 3; len >= 2; len--) {
+      for (var a = Math.max(0, hit - len + 1); a <= hit && a + len - 1 < toks.length; a++) {
+        var b = a + len - 1, j = joined(a, b);
+        if (j !== null && syllables(a, b) <= 3 && (dict.meaning[lyricWordKey(j)] || dict.pron[lyricWordKey(j)])) { best = [a, b]; break outer; }
+      }
+    }
+    return { text: joined(best[0], best[1]) || toks[best[0]].t, rect: rectOf(best[0], best[1]) };
+  }
+  function lyricWordClose() { if (lyricWordPop) { lyricWordPop.remove(); lyricWordPop = null; } }
+  function lyricWordShow(word) {
+    var dict = lyricWordDictionary(), key = lyricWordKey(word.text);
+    var pron = dict.pron[key] || hanoiKoreanWord(word.text);
+    if (!pron) return;
+    var mean = dict.meaning[key] || "";
+    lyricWordClose();
+    var pop = document.createElement("div");
+    pop.className = "lyric-word-pop";
+    pop.setAttribute("role", "tooltip");
+    pop.innerHTML = '<div class="lyric-word-ko">' + escapeHtml(pron) + '</div>' +
+      (mean ? '<div class="lyric-word-mean">' + escapeHtml(mean) + '</div>' : '');
+    document.body.appendChild(pop);
+    var w = pop.offsetWidth, h = pop.offsetHeight, r = word.rect;
+    var left = Math.min(Math.max(8, r.left + r.width / 2 - w / 2), window.innerWidth - w - 8);
+    var top = r.top - h - 8 >= 8 ? r.top - h - 8 : Math.min(r.bottom + 8, window.innerHeight - h - 8);
+    pop.style.left = left + "px";
+    pop.style.top = top + "px";
+    lyricWordPop = pop;
+  }
+  document.addEventListener("click", function (e) {
+    if (lyricWordPop && e.target.closest && !e.target.closest(".lyric-word-pop")) lyricWordClose();
+    if (currentLang !== "ko" || !e.target.closest) return;
+    var el = e.target.closest(".lyric-vi");
+    if (!el || (window.getSelection && String(window.getSelection()).length)) return;
+    var word = lyricWordAt(el, e.clientX, e.clientY);
+    if (word) lyricWordShow(word);
+  });
+  window.__hanoiKo = { syllable: hanoiKoreanSyllable, word: hanoiKoreanWord };   // tests/test_lyric_word_popup.js
+  window.addEventListener("scroll", lyricWordClose, true);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") lyricWordClose(); });
   function songRowHtml(r) {
     var tl = songTargetLang(), html;
     if (r.marker) {
