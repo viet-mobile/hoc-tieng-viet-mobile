@@ -77,7 +77,7 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     await E("document.getElementById('lyr').textContent='muôn dân'");
     const muonDan=await tap('muôn');ok(muonDan&&muonDan.ko.startsWith('무온 ')&&muonDan.mean==='만민, 모든 사람','curated syllable pronunciation inside longer compound');
     // Dictionary additions must use the lyric sense and work through the same click path.
-    for (const [word, meaning] of [['theo','따르다. 뒤따르다'],['mãi','계속'],['mai','내일'],['hát','노래 부르다'],['lệ','눈물'],['nghiền ngẫm','숙고하다. 마음에 새기다'],['khoảnh khắc','순간. 찰나, 아주짧은 시간']]) {
+    for (const [word, meaning] of [['theo','따르다. 뒤따르다'],['mãi','계속'],['mai','내일'],['hát','노래 부르다'],['lệ','눈물'],['nghiền ngẫm','숙고하다. 마음에 새기다'],['khoảnh khắc','순간. 찰나, 아주짧은 시간'],['non','산; 어린'],['thì','그러면, 그때는'],['bầu trời','하늘'],['cất tiếng','목소리를 높이다']]) {
       await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);
       eq((await tap(word.split(' ').pop()))?.mean,meaning,'Naver supplement '+word);
     }

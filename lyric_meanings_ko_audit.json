@@ -3,7 +3,7 @@
   "lines": 8537,
   "click_positions": 61777,
   "before_blank": 13059,
-  "after_blank": 635,
+  "after_blank": 703,
   "note": "사전에서 가사 문맥의 한국어 뜻을 확인하지 못한 표기. 복합어의 일부 음절, 고유명사, 오타 의심 표기 포함. 가사 원문은 변경하지 않음.",
   "remaining": [
     {
@@ -19,8 +19,8 @@
       "count": 37
     },
     {
-      "word": "cất",
-      "count": 33
+      "word": "phiền",
+      "count": 23
     },
     {
       "word": "hiển",
@@ -33,6 +33,10 @@
     {
       "word": "giông",
       "count": 16
+    },
+    {
+      "word": "cất",
+      "count": 13
     },
     {
       "word": "đớn",
@@ -51,12 +55,20 @@
       "count": 12
     },
     {
+      "word": "ngần",
+      "count": 11
+    },
+    {
       "word": "vầng",
       "count": 11
     },
     {
       "word": "âu",
       "count": 11
+    },
+    {
+      "word": "trùng",
+      "count": 10
     },
     {
       "word": "lùi",
@@ -71,7 +83,15 @@
       "count": 9
     },
     {
+      "word": "bá",
+      "count": 8
+    },
+    {
       "word": "thỏa",
+      "count": 8
+    },
+    {
+      "word": "phôi",
       "count": 8
     },
     {
@@ -116,6 +136,10 @@
     },
     {
       "word": "khúc",
+      "count": 5
+    },
+    {
+      "word": "khơi",
       "count": 5
     },
     {
@@ -231,6 +255,10 @@
       "count": 3
     },
     {
+      "word": "hoàng",
+      "count": 3
+    },
+    {
       "word": "thảo",
       "count": 3
     },
@@ -243,12 +271,28 @@
       "count": 3
     },
     {
+      "word": "bầu",
+      "count": 3
+    },
+    {
+      "word": "lắng",
+      "count": 3
+    },
+    {
       "word": "bổ",
       "count": 3
     },
     {
       "word": "chấn",
       "count": 3
+    },
+    {
+      "word": "tao",
+      "count": 3
+    },
+    {
+      "word": "bè",
+      "count": 2
     },
     {
       "word": "bính",
@@ -395,6 +439,10 @@
       "count": 1
     },
     {
+      "word": "bôi",
+      "count": 1
+    },
+    {
       "word": "chinh",
       "count": 1
     },
@@ -416,6 +464,14 @@
     },
     {
       "word": "tương",
+      "count": 1
+    },
+    {
+      "word": "giã",
+      "count": 1
+    },
+    {
+      "word": "xúc",
       "count": 1
     },
     {
@@ -535,11 +591,19 @@
       "count": 1
     },
     {
+      "word": "rập",
+      "count": 1
+    },
+    {
       "word": "bon",
       "count": 1
     },
     {
       "word": "xu",
+      "count": 1
+    },
+    {
+      "word": "thâm",
       "count": 1
     },
     {
@@ -559,7 +623,15 @@
       "count": 1
     },
     {
+      "word": "man",
+      "count": 1
+    },
+    {
       "word": "nai",
+      "count": 1
+    },
+    {
+      "word": "bữa",
       "count": 1
     },
     {
@@ -616,6 +688,14 @@
     },
     {
       "word": "ga-li-lê",
+      "count": 1
+    },
+    {
+      "word": "máng",
+      "count": 1
+    },
+    {
+      "word": "móng",
       "count": 1
     },
     {
