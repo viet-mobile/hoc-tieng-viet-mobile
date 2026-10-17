@@ -4,11 +4,12 @@
 Time is allotted to exactly four owners, never split inside an item:
     A       instructor A (Korean): culture, offered talks, daily conversation / sentences, general grammar, homework
             instructions, opening / closing song announcement, and every item not named below
-    B       instructor B Bình (native): tone / continuous-tone practice, Watchtower vocabulary (each word 3 times),
+    B       instructor B Bình (native): tone / continuous-tone practice, all five Watchtower vocabulary blocks (each word 3 times),
             pronunciation, numbers, songs
-    assist  native assistant Mai (Bình on the days listed in ASSISTANT_SUBSTITUTE): every vocabulary study and the
-            Bible-book reading practice, each word / book name 3 times
-    group   group activity: everything where the students walk around (mingle, games, conversation practice)
+    assist  native assistant Mai (Bình on the days listed in ASSISTANT_SUBSTITUTE): all five vocabulary blocks (Monday to Friday)
+            and the Bible-book reading practice, each word / book name 3 times
+    group   group activity: everything where the students walk around (mingle, games, conversation practice); the group leaders
+            help their members one by one
 A row is [name, minutes, owner|None (break), reason key, posture] (+ {kind, part} for the vocabulary blocks).
 Minutes may be half minutes (4.5 = 4 min 30 s).
 
@@ -29,7 +30,7 @@ ASSISTANT = "Mai"
 ASSISTANT_SUBSTITUTE = {"2026-11-15": "Bình"}   # date -> who reads in the assistant's place
 RHYME_WORDS, EARLY_CLASSES, EARLY_QUOTA = 316, 4, 170   # [어휘] stream starts with the 316 한자음 words (course_vocab_plan)
 
-LEADER_PARTS = (1, 2, 3)                        # vocabulary blocks 2-4 are led by the group leaders; 1 and 5 by Mai / Bình
+LEADER_PARTS = ()                               # every vocabulary block is read by Mai (Bình) and every Watchtower block by B
 
 EXPERIENCE, REENACT = "학생들 경험담 발표", "학생들 경험담 재연"
 ENCOURAGE_A, ENCOURAGE_B, ENCOURAGE_MIN = "A 강사 격려사", "B 강사 격려사", 15
@@ -268,21 +269,21 @@ INSTRUCTORS = {
     "B": {"label": {"ko": "B 강사 (Bình 형제)", "vi": "Giảng viên B (anh Bình)", "en": "Instructor B (Bình)"},
           "short": {"ko": "성조·파수대 어휘·발음", "vi": "thanh điệu, từ vựng Tháp Canh, phát âm", "en": "tones, Watchtower vocabulary, pronunciation"},
           "profile": {"ko": "베트남 원어민 · 한국어는 아주 유창하지 않음", "vi": "Người Việt bản ngữ · tiếng Hàn chưa thật lưu loát"},
-          "strengths": {"ko": "성조연습·연속성조와 첫째·다섯째 파수대 어휘 학습에서 각 단어를 3번씩 읽고, 10/31 수업부터 제공 연설·일상 회화·일상 생활 문장·이웃 사람과의 대화를 맡습니다",
-                        "vi": "Đọc mỗi từ 3 lần trong luyện thanh điệu, thanh điệu liên tiếp và phần từ vựng Tháp Canh thứ nhất và thứ năm"}},
+          "strengths": {"ko": "성조연습·연속성조와 모든(월~금) 파수대 어휘 학습에서 각 단어를 3번씩 읽고, 10/31 수업부터 제공 연설·일상 회화·일상 생활 문장·이웃 사람과의 대화를 맡습니다",
+                        "vi": "Đọc mỗi từ 3 lần trong luyện thanh điệu, thanh điệu liên tiếp và tất cả các phần từ vựng Tháp Canh (thứ Hai đến thứ Sáu)"}},
     "assist": {"label": {"ko": "원어민 보조자 (Mai 자매)", "vi": "Trợ giảng bản ngữ (chị Mai)", "en": "Native assistant (Mai)"},
                "short": {"ko": "어휘·성경 책명 읽기", "vi": "đọc từ vựng, tên sách Kinh Thánh", "en": "vocabulary and Bible book names"},
                "profile": {"ko": "베트남 원어민 보조자", "vi": "Trợ giảng người Việt bản ngữ"},
-               "strengths": {"ko": "첫째·다섯째 베트남어 어휘 학습과 성경 책명 읽기 연습에서 각 단어(책명)를 3번씩 읽어 줍니다",
-                             "vi": "Đọc mỗi từ (tên sách) 3 lần trong phần học từ vựng thứ nhất và thứ năm và luyện đọc tên sách Kinh Thánh"},
+               "strengths": {"ko": "모든(월~금) 베트남어 어휘 학습과 성경 책명 읽기 연습에서 각 단어(책명)를 3번씩 읽어 줍니다",
+                             "vi": "Đọc mỗi từ (tên sách) 3 lần trong tất cả các phần học từ vựng (thứ Hai đến thứ Sáu) và luyện đọc tên sách Kinh Thánh"},
                "substitute": {"ko": "{date}에는 Mai 자매 대신 Bình 형제가 읽습니다.", "vi": "Ngày {date}, anh Bình đọc thay chị Mai."}},
     "group": {"label": {"ko": "조별 활동", "vi": "Hoạt động nhóm", "en": "Group activity"},
-              "short": {"ko": "돌아다니며 하는 활동", "vi": "hoạt động đi lại", "en": "walk-around activities"},
+              "short": {"ko": "조장이 조원을 개별적으로 도와준다", "vi": "tổ trưởng giúp từng thành viên trong nhóm", "en": "group leaders help their members one by one"},
               "profile": {"ko": "학습자 조별 활동", "vi": "Học viên hoạt động theo nhóm"},
-              "strengths": {"ko": "돌아다니며 하는 모든 활동과, 둘째~넷째 어휘 학습(각 조 조장이 이끎)을 조별 활동으로 분류합니다",
-                          "vi": "Mọi hoạt động đi lại và phần học từ vựng thứ hai đến thứ tư (do tổ trưởng dẫn dắt) tính là hoạt động nhóm"}},
-    "note": {"ko": "시간은 A 강사, B 강사, 보조자, 조별 활동 중 한 곳에만 배정하며, 한 항목을 둘로 나누지 않습니다. 첫째·다섯째 어휘는 보조자·B 강사가, 둘째~넷째는 각 조 조장이 이끕니다. 어휘는 한자음 34개에 6분 30초, 그 외 34개에 4분 30초, 파수대 어휘 10개에 1분 30초를 잡았습니다.",
-             "vi": "Mỗi mục chỉ giao cho một bên: giảng viên A, giảng viên B, trợ giảng hoặc hoạt động nhóm; từ vựng thứ hai đến thứ tư do tổ trưởng dẫn dắt. 34 từ Hán Việt 6 phút 30 giây, 34 từ khác 4 phút 30 giây, 10 từ Tháp Canh 1 phút 30 giây."},
+              "strengths": {"ko": "돌아다니며 하는 모든 활동을 조별 활동으로 분류하며, 조장이 조원을 개별적으로 도와줍니다",
+                          "vi": "Mọi hoạt động đi lại tính là hoạt động nhóm; tổ trưởng giúp từng thành viên"}},
+    "note": {"ko": "시간은 A 강사, B 강사, 보조자, 조별 활동 중 한 곳에만 배정하며, 한 항목을 둘로 나누지 않습니다. 월~금 어휘 학습은 모두 보조자(Mai)가, 월~금 파수대 어휘 학습은 모두 B 강사가 읽습니다. 조별 활동에서는 조장이 조원을 개별적으로 도와줍니다. 어휘는 한자음 34개에 6분 30초, 그 외 34개에 4분 30초, 파수대 어휘 10개에 1분 30초를 잡았습니다.",
+             "vi": "Mỗi mục chỉ giao cho một bên: giảng viên A, giảng viên B, trợ giảng hoặc hoạt động nhóm; mọi phần từ vựng (thứ Hai đến thứ Sáu) do trợ giảng Mai đọc, mọi phần từ vựng Tháp Canh do giảng viên B đọc; trong hoạt động nhóm, tổ trưởng giúp từng thành viên. 34 từ Hán Việt 6 phút 30 giây, 34 từ khác 4 phút 30 giây, 10 từ Tháp Canh 1 phút 30 giây."},
     "reasons": {
         "open": {"ko": "A 강사가 시작 노래와 기도를 안내합니다.", "vi": "Giảng viên A hướng dẫn bài hát và lời cầu nguyện mở đầu."},
         "close": {"ko": "A 강사가 마치는 노래를 안내합니다.", "vi": "Giảng viên A hướng dẫn bài hát kết thúc."},

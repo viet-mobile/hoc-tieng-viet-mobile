@@ -798,8 +798,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             6.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -809,8 +809,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -827,8 +827,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             6.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -838,8 +838,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -870,8 +870,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             6.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -881,8 +881,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -1060,8 +1060,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             6.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -1071,8 +1071,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -1082,8 +1082,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             6.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -1093,8 +1093,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -1132,8 +1132,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             6.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -1143,8 +1143,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -1313,8 +1313,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -1324,8 +1324,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -1349,8 +1349,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -1360,8 +1360,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -1420,8 +1420,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -1431,8 +1431,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -1568,8 +1568,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -1579,8 +1579,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -1597,8 +1597,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -1608,8 +1608,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -1647,8 +1647,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -1658,8 +1658,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -1828,8 +1828,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -1839,8 +1839,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -1857,8 +1857,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -1868,8 +1868,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -1900,8 +1900,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -1911,8 +1911,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -2082,8 +2082,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -2093,8 +2093,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -2111,8 +2111,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -2122,8 +2122,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -2161,8 +2161,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -2172,8 +2172,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -2342,8 +2342,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -2353,8 +2353,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -2364,8 +2364,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -2375,8 +2375,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -2407,8 +2407,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -2418,8 +2418,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -2611,8 +2611,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -2622,8 +2622,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -2633,8 +2633,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -2644,8 +2644,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -2676,8 +2676,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -2687,8 +2687,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -2893,8 +2893,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -2904,8 +2904,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -2915,8 +2915,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -2926,8 +2926,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -2958,8 +2958,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -2969,8 +2969,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -3166,8 +3166,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -3177,8 +3177,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -3195,8 +3195,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -3206,8 +3206,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -3245,8 +3245,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -3256,8 +3256,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -3448,8 +3448,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -3459,8 +3459,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -3477,8 +3477,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -3488,8 +3488,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -3520,8 +3520,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -3531,8 +3531,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -3717,8 +3717,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -3728,8 +3728,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -3746,8 +3746,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -3757,8 +3757,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -3789,8 +3789,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -3800,8 +3800,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -3993,8 +3993,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -4004,8 +4004,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -4022,8 +4022,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -4033,8 +4033,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -4058,8 +4058,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -4069,8 +4069,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -4247,8 +4247,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -4258,8 +4258,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -4283,8 +4283,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -4294,8 +4294,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -4340,8 +4340,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -4351,8 +4351,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -4507,8 +4507,8 @@
           [
             "베트남어 어휘 학습 · 화요일 과제 묶음 (2/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -4518,8 +4518,8 @@
           [
             "파수대 어휘 학습 · 화요일 과제 묶음 (2/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -4529,8 +4529,8 @@
           [
             "베트남어 어휘 학습 · 수요일 과제 묶음 (3/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -4540,8 +4540,8 @@
           [
             "파수대 어휘 학습 · 수요일 과제 묶음 (3/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -4579,8 +4579,8 @@
           [
             "베트남어 어휘 학습 · 목요일 과제 묶음 (4/5)",
             4.5,
-            "group",
-            "leadvocab",
+            "assist",
+            "vocab",
             "stand",
             {
               "kind": "course-vocab",
@@ -4590,8 +4590,8 @@
           [
             "파수대 어휘 학습 · 목요일 과제 묶음 (4/5)",
             1.5,
-            "group",
-            "leadwtvocab",
+            "B",
+            "wtvocab",
             "stand",
             {
               "kind": "watchtower-vocab",
@@ -5544,8 +5544,8 @@
           "vi": "Người Việt bản ngữ · tiếng Hàn chưa thật lưu loát"
         },
         "strengths": {
-          "ko": "성조연습·연속성조와 첫째·다섯째 파수대 어휘 학습에서 각 단어를 3번씩 읽고, 10/31 수업부터 제공 연설·일상 회화·일상 생활 문장·이웃 사람과의 대화를 맡습니다",
-          "vi": "Đọc mỗi từ 3 lần trong luyện thanh điệu, thanh điệu liên tiếp và phần từ vựng Tháp Canh thứ nhất và thứ năm"
+          "ko": "성조연습·연속성조와 모든(월~금) 파수대 어휘 학습에서 각 단어를 3번씩 읽고, 10/31 수업부터 제공 연설·일상 회화·일상 생활 문장·이웃 사람과의 대화를 맡습니다",
+          "vi": "Đọc mỗi từ 3 lần trong luyện thanh điệu, thanh điệu liên tiếp và tất cả các phần từ vựng Tháp Canh (thứ Hai đến thứ Sáu)"
         }
       },
       "assist": {
@@ -5564,8 +5564,8 @@
           "vi": "Trợ giảng người Việt bản ngữ"
         },
         "strengths": {
-          "ko": "첫째·다섯째 베트남어 어휘 학습과 성경 책명 읽기 연습에서 각 단어(책명)를 3번씩 읽어 줍니다",
-          "vi": "Đọc mỗi từ (tên sách) 3 lần trong phần học từ vựng thứ nhất và thứ năm và luyện đọc tên sách Kinh Thánh"
+          "ko": "모든(월~금) 베트남어 어휘 학습과 성경 책명 읽기 연습에서 각 단어(책명)를 3번씩 읽어 줍니다",
+          "vi": "Đọc mỗi từ (tên sách) 3 lần trong tất cả các phần học từ vựng (thứ Hai đến thứ Sáu) và luyện đọc tên sách Kinh Thánh"
         },
         "substitute": {
           "ko": "{date}에는 Mai 자매 대신 Bình 형제가 읽습니다.",
@@ -5579,22 +5579,22 @@
           "en": "Group activity"
         },
         "short": {
-          "ko": "돌아다니며 하는 활동",
-          "vi": "hoạt động đi lại",
-          "en": "walk-around activities"
+          "ko": "조장이 조원을 개별적으로 도와준다",
+          "vi": "tổ trưởng giúp từng thành viên trong nhóm",
+          "en": "group leaders help their members one by one"
         },
         "profile": {
           "ko": "학습자 조별 활동",
           "vi": "Học viên hoạt động theo nhóm"
         },
         "strengths": {
-          "ko": "돌아다니며 하는 모든 활동과, 둘째~넷째 어휘 학습(각 조 조장이 이끎)을 조별 활동으로 분류합니다",
-          "vi": "Mọi hoạt động đi lại và phần học từ vựng thứ hai đến thứ tư (do tổ trưởng dẫn dắt) tính là hoạt động nhóm"
+          "ko": "돌아다니며 하는 모든 활동을 조별 활동으로 분류하며, 조장이 조원을 개별적으로 도와줍니다",
+          "vi": "Mọi hoạt động đi lại tính là hoạt động nhóm; tổ trưởng giúp từng thành viên"
         }
       },
       "note": {
-        "ko": "시간은 A 강사, B 강사, 보조자, 조별 활동 중 한 곳에만 배정하며, 한 항목을 둘로 나누지 않습니다. 첫째·다섯째 어휘는 보조자·B 강사가, 둘째~넷째는 각 조 조장이 이끕니다. 어휘는 한자음 34개에 6분 30초, 그 외 34개에 4분 30초, 파수대 어휘 10개에 1분 30초를 잡았습니다.",
-        "vi": "Mỗi mục chỉ giao cho một bên: giảng viên A, giảng viên B, trợ giảng hoặc hoạt động nhóm; từ vựng thứ hai đến thứ tư do tổ trưởng dẫn dắt. 34 từ Hán Việt 6 phút 30 giây, 34 từ khác 4 phút 30 giây, 10 từ Tháp Canh 1 phút 30 giây."
+        "ko": "시간은 A 강사, B 강사, 보조자, 조별 활동 중 한 곳에만 배정하며, 한 항목을 둘로 나누지 않습니다. 월~금 어휘 학습은 모두 보조자(Mai)가, 월~금 파수대 어휘 학습은 모두 B 강사가 읽습니다. 조별 활동에서는 조장이 조원을 개별적으로 도와줍니다. 어휘는 한자음 34개에 6분 30초, 그 외 34개에 4분 30초, 파수대 어휘 10개에 1분 30초를 잡았습니다.",
+        "vi": "Mỗi mục chỉ giao cho một bên: giảng viên A, giảng viên B, trợ giảng hoặc hoạt động nhóm; mọi phần từ vựng (thứ Hai đến thứ Sáu) do trợ giảng Mai đọc, mọi phần từ vựng Tháp Canh do giảng viên B đọc; trong hoạt động nhóm, tổ trưởng giúp từng thành viên. 34 từ Hán Việt 6 phút 30 giây, 34 từ khác 4 phút 30 giây, 10 từ Tháp Canh 1 phút 30 giây."
       },
       "reasons": {
         "open": {

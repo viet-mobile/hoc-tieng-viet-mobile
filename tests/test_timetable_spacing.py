@@ -31,9 +31,9 @@ def verify(plan, unit):
         block = 6.5 if unit <= 2 else 4.5
         g = sum(p[1] for p in plan if len(p) == 5 and p[2] == 'group' and p[3] != 'mingle')
         ideal = [8, 22, 36, 70 + g, 84 + g]
-        owners = ['assist', 'group', 'group', 'group', 'assist']
+        owners = ['assist'] * 5
         assert [(d, i, o) for _, d, i, o in general] == [(block, i, owners[i]) for i in range(5)]
-        assert wt == [(s + block, 1.5, i, 'B' if owners[i] == 'assist' else 'group') for i, (s, *_ ) in enumerate(general)]
+        assert wt == [(s + block, 1.5, i, 'B') for i, (s, *_ ) in enumerate(general)]
         starts = [s for s, *_ in general]
         assert all(abs(a - b) <= 9 for a, b in zip(starts, ideal)), starts
         assert starts == sorted(starts) and starts[2] < 50 < starts[3]
@@ -77,4 +77,4 @@ assert not any(p[3] in ('mingle', 'homework', 'break') or p[0].startswith('졸�
 assert [p[0] for p in last if p[0].startswith('학생들 경험담')] == ['학생들 경험담 발표', '학생들 경험담 재연']
 assert last[-1][0] == '마치는 노래·기도'
 assert not any(has_rhyme(3, i) for i in range(5))
-print('16 class timetables: one owner per item, 4 owners, group leaders for blocks 2-4, every item one piece, B takes talks/conversations from 10/31, 6:30 / 4:30 / 1:30 vocabulary blocks, spacing, 120 min, 11/15 Bình verified.')
+print('16 class timetables: one owner per item, 4 owners, Mai reads every vocabulary block and B every Watchtower block, every item one piece, B takes talks/conversations from 10/31, 6:30 / 4:30 / 1:30 vocabulary blocks, spacing, 120 min, 11/15 Bình verified.')

@@ -7497,45 +7497,33 @@
     var hs = [{ h: 0, next: nextClassAfter(-1) }];
     slots.forEach(function (s, i) { hs.push({ h: i + 1, next: nextClassAfter(i) }); });
     hs = hs.filter(function (x) { return x.next !== null && x.next <= V.lastClass; });
-    var early = hs.filter(function (x) { return x.next <= V.earlyClasses; });
-    var late = hs.filter(function (x) { return x.next > V.earlyClasses; });
-    var earlyTotal = 0, amount = {};
-    early.forEach(function (x) {
-      var same = early.filter(function (y) { return y.next === x.next; }).length;
-      amount[x.h] = Math.round(V.earlyQuota / same); earlyTotal += amount[x.h];
-    });
-    earlyTotal = Math.min(earlyTotal, V.total);
-    late.forEach(function (x, i) {
-      amount[x.h] = Math.round((V.total - earlyTotal) * (i + 1) / late.length) - Math.round((V.total - earlyTotal) * i / late.length);
-    });
-    var plan = { preview: {}, review: {}, cls: {} }, pos = 0, prevH = null, previewedBefore = {};
-    hs.forEach(function (x) {
-      var end = Math.min(V.total, pos + (amount[x.h] || 0));
-      plan.preview[x.h] = [pos, end];
-      pos = end;
-      previewedBefore[x.next] = pos;
-    });
-    // review = the slice previewed in the previous homework week (every homework week, including after the last preview)
-    var ordered = [0].concat(slots.map(function (_, i) { return i + 1; }));
-    ordered.forEach(function (h) {
-      if (prevH !== null) plan.review[h] = plan.preview[prevH];
-      if (plan.preview[h]) prevH = h;
-    });
+    // The class timetable is the reference: each class learns its slice (the first classes a fixed amount, the later ones an
+    // equal share of the rest, the last one the remainder), and the slice is previewed -- as the five Mon-Fri study bundles the
+    // timetable shows -- in the homework week right before that class. Earlier homework weeks (a break) preview nothing new.
+    var plan = { preview: {}, review: {}, cls: {} }, prevH = null;
     var learned = 0, earlyEnd = null, lateWeeks = weeks.filter(function (w) { return w > V.earlyClasses; });
     weeks.forEach(function (w) {
-      var seen = 0;
-      Object.keys(previewedBefore).forEach(function (k) { if (+k <= w) seen = Math.max(seen, previewedBefore[k]); });
       var target;
-      if (w === weeks[weeks.length - 1]) target = seen;
+      if (w === weeks[weeks.length - 1]) target = V.total;
       else if (w <= V.earlyClasses) target = V.earlyQuota * (weeks.indexOf(w) + 1);
       else {
         if (earlyEnd === null) earlyEnd = learned;
         var n = lateWeeks.indexOf(w) + 1;
         target = earlyEnd + Math.round((V.total - earlyEnd) * n / lateWeeks.length);
       }
-      var end = Math.max(learned, Math.min(target, seen));
+      var end = Math.max(learned, Math.min(target, V.total));
       plan.cls[w] = [learned, end];
       learned = end;
+    });
+    hs.forEach(function (x) {
+      var last = hs.filter(function (y) { return y.next === x.next; }).pop();
+      if (last === x && plan.cls[x.next]) plan.preview[x.h] = plan.cls[x.next];
+    });
+    // review = the slice previewed in the previous homework week (every homework week, including after the last preview)
+    var ordered = [0].concat(slots.map(function (_, i) { return i + 1; }));
+    ordered.forEach(function (h) {
+      if (prevH !== null) plan.review[h] = plan.preview[prevH];
+      if (plan.preview[h]) prevH = h;
     });
     courseVocabCache = { sched: sched, plan: plan };
     return plan;
@@ -8798,7 +8786,7 @@ function verifyDistribution(units, dist, pins) {
               '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(badgeText) + '</span>' +
               (slot.note ? '<span class="curr-week-note">' + escapeHtml(T(slot.note)) + '</span>' : '') + '</span>' +
               currChev() + '</button>' +
-              '<div class="group-body">' + courseServiceHtml(slot.week) + courseGuideHtml(slot.week, sched, slot.week) + '<div class="curr-item-list">';
+              '<div class="group-body">' + courseServiceHtml(slot.week) + courseGuideHtml(slot.week, sched, slot.week).replace('<details class="curr-plan">', '<details class="curr-plan" open>') + '<div class="curr-item-list">';
             var displayItems = classItemsOf(slot);
             var scopeNow = scopeWeek(slot.week);
             // classScope: homework-only items and what the preliminary meeting took over are not on the class card.
@@ -8815,7 +8803,11 @@ function verifyDistribution(units, dist, pins) {
             displayItems = songsAdd.filter(function (it) { return it._song !== "close"; }).concat(restItems,
               songsAdd.filter(function (it) { return it._song === "close"; }));
             if (window.__COURSE_CAPTURE) window.__COURSE_CAPTURE.cls[slot.week] = JSON.parse(JSON.stringify(displayItems));
-            if (!displayItems || displayItems.length === 0) {
+            // The class timetable (open above) replaces the stored list of the week's study materials.
+            var classGuide = courseGuideEntry(slot.week), timetableReplaces = !!(classGuide && classGuide.plan && classGuide.plan.length);
+            if (timetableReplaces) {
+              // nothing: the timetable lists every part of the class with its own range and shortcut
+            } else if (!displayItems || displayItems.length === 0) {
               html += '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div>';
             } else {
               displayItems.forEach(function (it) {
