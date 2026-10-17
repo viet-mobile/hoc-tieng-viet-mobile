@@ -6656,10 +6656,10 @@
     return svg.normalize ? svg.normalize("NFC") : svg;
   }
   var koreanNotationRegion = "hanoi";
-  try { koreanNotationRegion = localStorage.getItem("vi-korean-notation-region") === "saigon" ? "saigon" : "hanoi"; } catch (_) {}
+  try { var savedNotationRegion = localStorage.getItem("vi-korean-notation-region"); koreanNotationRegion = ["none", "hanoi", "saigon"].indexOf(savedNotationRegion) >= 0 ? savedNotationRegion : "hanoi"; } catch (_) {}
   function koreanNotationSettingsHtml() {
     if (currentLang !== "ko") return "";
-    return '<div class="p-section"><h3>한국어 발음 표기 설정</h3><label>한국어 발음 표기 <select id="korean-notation-region"><option value="hanoi"' + (koreanNotationRegion === "hanoi" ? ' selected' : '') + '>하노이</option><option value="saigon"' + (koreanNotationRegion === "saigon" ? ' selected' : '') + '>사이공</option></select></label><p class="p-desc">노래 가사 단어 팝업의 한국어 발음 표기에 적용됩니다.</p></div>';
+    return '<div class="p-section"><h3>한국어 발음 표기 설정</h3><label>한국어 발음 표기 <select id="korean-notation-region"><option value="none"' + (koreanNotationRegion === "none" ? ' selected' : '') + '>없음</option><option value="hanoi"' + (koreanNotationRegion === "hanoi" ? ' selected' : '') + '>하노이</option><option value="saigon"' + (koreanNotationRegion === "saigon" ? ' selected' : '') + '>사이공</option></select></label><p class="p-desc">노래 가사 단어 팝업의 한국어 발음 표기에 적용됩니다.</p></div>';
   }
   function renderPron() {
     if (!PRON_PANE_ELS.settings) return;
@@ -6864,7 +6864,7 @@
     });
     var notationSelect = document.getElementById("korean-notation-region");
     if (notationSelect) notationSelect.addEventListener("change", function () {
-      koreanNotationRegion = this.value === "saigon" ? "saigon" : "hanoi";
+      koreanNotationRegion = ["none", "hanoi", "saigon"].indexOf(this.value) >= 0 ? this.value : "hanoi";
       try { localStorage.setItem("vi-korean-notation-region", koreanNotationRegion); } catch (_) {}
       lyricWordDict = null;
       lyricWordClose();
@@ -11887,14 +11887,14 @@ function verifyDistribution(units, dist, pins) {
   function lyricWordClose() { if (lyricWordPop) { lyricWordPop.remove(); lyricWordPop = null; } }
   function lyricWordShow(word) {
     var dict = lyricWordDictionary(), key = lyricWordKey(word.text);
-    var pron = dict.pron[key] || lyricKoreanWord(word.text);
-    if (!pron) return;
+    var pron = koreanNotationRegion === "none" ? "" : dict.pron[key] || lyricKoreanWord(word.text);
     var mean = dict.meaning[key] || "";
+    if (!pron && !mean) return;
     lyricWordClose();
     var pop = document.createElement("div");
     pop.className = "lyric-word-pop";
     pop.setAttribute("role", "tooltip");
-    pop.innerHTML = '<div class="lyric-word-ko">' + escapeHtml(pron) + '</div>' +
+    pop.innerHTML = (pron ? '<div class="lyric-word-ko">' + escapeHtml(pron) + '</div>' : '') +
       (mean ? '<div class="lyric-word-mean">' + escapeHtml(mean) + '</div>' : '');
     document.body.appendChild(pop);
     var w = pop.offsetWidth, h = pop.offsetHeight, r = word.rect;

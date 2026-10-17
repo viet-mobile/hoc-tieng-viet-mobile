@@ -32,7 +32,7 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     await E(`(()=>{const d=document.createElement('div');d.id='lyr';d.className='lyric-vi vn';d.lang='vi';d.style.cssText='position:fixed;left:20px;top:200px;font-size:22px;white-space:nowrap;background:#fff;z-index:1';d.textContent='Đọc sách, Kinh Thánh và Giê-hô-va, xin cầu nguyện';document.body.appendChild(d);})()`);
     const tap = async word => E(`(async()=>{const el=document.getElementById('lyr'),tn=el.firstChild,i=tn.data.indexOf(${JSON.stringify(word)});const r=document.createRange();r.setStart(tn,i);r.setEnd(tn,i+${JSON.stringify(word)}.length);const b=r.getBoundingClientRect();
       el.dispatchEvent(new MouseEvent('click',{bubbles:true,clientX:b.left+b.width/2,clientY:b.top+b.height/2}));
-      const p=document.querySelector('.lyric-word-pop');return p?{ko:p.querySelector('.lyric-word-ko').textContent,mean:(p.querySelector('.lyric-word-mean')||{}).textContent||'',n:document.querySelectorAll('.lyric-word-pop').length,top:p.getBoundingClientRect().top,bottom:p.getBoundingClientRect().bottom}:null;})()`);
+      const p=document.querySelector('.lyric-word-pop');return p?{ko:p.querySelector('.lyric-word-ko')?.textContent||'',mean:(p.querySelector('.lyric-word-mean')||{}).textContent||'',n:document.querySelectorAll('.lyric-word-pop').length,top:p.getBoundingClientRect().top,bottom:p.getBoundingClientRect().bottom}:null;})()`);
     await E("window.setLang('ko')"); await sleep(200);
     let r = await tap('Kinh');
     ok(r && r.ko === '낀ㅇ 타인ㅇ' && r.mean && r.n === 1, 'Kinh -> the 2-syllable word Kinh Thánh: ' + JSON.stringify(r));
@@ -86,6 +86,15 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     // Three separate folding cards, with the examples moved rather than copied.
     ok(await E("!!document.querySelector('[data-anchor=\"pron-saigon\"]')&&!!document.querySelector('[data-anchor=\"pron-notation-examples\"]')&&!document.querySelector('[data-anchor=\"pron-hanoi\"] .hanoi-examples')&&document.querySelectorAll('[data-anchor=\"pron-notation-examples\"] .hanoi-examples tbody tr').length===22"),'separate Hanoi/Saigon/example folding cards');
     eq(await E("document.getElementById('korean-notation-region').value"),'hanoi','default Hanoi');
+    eq(await E("[...document.getElementById('korean-notation-region').options].map(o=>o.textContent)"),['없음','하노이','사이공'],'three notation choices in requested order');
+    await E("document.getElementById('korean-notation-region').value='none';document.getElementById('korean-notation-region').dispatchEvent(new Event('change'));document.getElementById('lyr').textContent='Kinh Thánh'");
+    const meaningOnly=await tap('Kinh');ok(meaningOnly&&meaningOnly.mean&&!meaningOnly.ko,'none hides pronunciation and keeps compound meaning');
+    ok(await E("!document.querySelector('.lyric-word-ko')"),'none omits the pronunciation row');
+    await E("document.getElementById('lyr').textContent='noài'");eq(await tap('noài'),null,'none with no meaning creates no empty popup');
+    eq(await E("localStorage.getItem('vi-korean-notation-region')"),'none','none selection saved');
+    await E("window.setLang('en');window.setLang('ko')");eq(await E("document.getElementById('korean-notation-region').value"),'none','none survives rerender');
+    await E("document.getElementById('korean-notation-region').value='hanoi';document.getElementById('korean-notation-region').dispatchEvent(new Event('change'))");
+
     for(const [word,pron] of [['lúc','룩ㅂ'],['khuynh hướng','쿠인 흐엉'],['gì','지'],['muôn','무온']]){
       await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);eq((await tap(word))?.ko,pron,'explicit pronunciation '+word);
     }
@@ -115,6 +124,10 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     await cdp.send('Page.reload');await sleep(600);
     for(let i=0;i<240;i++){if(await E("document.readyState==='complete'&&typeof window.setLang==='function'&&!!window.__hanoiKo"))break;await sleep(100);}
     await E("window.setLang('ko')");eq(await E("document.getElementById('korean-notation-region').value"),'saigon','selection survives reload');
+    await E("document.getElementById('korean-notation-region').value='none';document.getElementById('korean-notation-region').dispatchEvent(new Event('change'))");
+    await cdp.send('Page.reload');await sleep(600);
+    for(let i=0;i<240;i++){if(await E("document.readyState==='complete'&&typeof window.setLang==='function'&&!!window.__hanoiKo"))break;await sleep(100);}
+    await E("window.setLang('ko')");eq(await E("document.getElementById('korean-notation-region').value"),'none','none survives reload');
     await cdp.send('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
     await E("document.querySelector('[data-tab=\"pron\"]').click();document.querySelector('[data-pron=\"jamo\"]').click();const card=document.querySelector('[data-anchor=\"pron-saigon\"]');card.dataset.open='true';card.scrollIntoView({block:'start'})");await sleep(200);
     ok(await E('document.documentElement.scrollWidth<=window.innerWidth+1'),'phone layout fits the viewport');
