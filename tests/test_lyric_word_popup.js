@@ -51,6 +51,24 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     await E("window.setLang('en')"); await sleep(200);
     ok((await tap('Kinh')) === null, 'English UI: no popup');
     await E("window.setLang('ko')"); await sleep(200);
+    // Requested song-context overrides, with complete punctuation and longer-word priority.
+    const overrides = {"hãy": "-하라", "luôn": "항상", "ân huệ": "은혜(恩惠)", "cho": "-에게", "bao": "얼마나; 불특정다수의", "thờ": "숭배하다", "vậy": "그러므로", "ta": "나", "giao": "사귈 교(交)", "ngài": "당신(2, 3인칭 존칭), -님", "náu": "피하다", "cầu": "구하다, 간구하다, 청하다; 다리", "điều": "것", "đã": "과거 시제를 나타내는 조동사", "ban": "주시다, 베푸시다", "cúi": "몸을 굽히다", "tha": "용서하다, 사하다", "vô tình": "무심코", "xưng tội": "죄를 고백하다", "nhớ": "기억하다", "chi": "무엇, -한 것", "khó khăn": "어려운", "lìa": "버리고 떠나다", "đoái": "돌아보다, 보살피다", "lo": "걱정하다, 염려하다", "vì": "때문에, 이니까", "Chúa": "주(主)"};
+    for (const [word, meaning] of Object.entries(overrides)) {
+      await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);
+      const result=await tap(word);eq(result&&result.mean,meaning,'song meaning '+word);
+    }
+    for (const [word, pron] of [['luôn','루온'],['quyền năng','꾸옌 낭']]) {
+      await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);
+      const result=await tap(word);eq(result&&result.ko,pron,'song pronunciation '+word);
+    }
+    for (const phrase of ['ân huệ','vô tình','xưng tội','khó khăn']) {
+      await E(`document.getElementById('lyr').textContent=${JSON.stringify(phrase)}`);
+      for(const syllable of phrase.split(' ')){const result=await tap(syllable);eq(result&&result.mean,overrides[phrase],'compound syllable '+syllable);}
+    }
+    await E("document.getElementById('lyr').textContent='cầu nguyện'");
+    const longer=await tap('cầu');ok(longer&&longer.mean&&longer.mean!==overrides['cầu'],'longer existing cầu nguyện wins over cầu: '+JSON.stringify(longer));
+    await E("document.getElementById('lyr').textContent='chúng ta'");
+    const longerTa=await tap('ta');ok(longerTa&&longerTa.mean&&longerTa.mean!==overrides['ta'],'longer chúng ta wins over ta: '+JSON.stringify(longerTa));
     // the real [노래] lyrics
     await E("document.getElementById('lyr').remove()");
     await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));document.querySelector('.tab-btn[data-tab="sentence"]').click();await sleep(400);document.querySelector('.subtab-btn[data-sentence="song"]').click();await sleep(800);})()`);

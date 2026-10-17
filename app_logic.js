@@ -11705,6 +11705,37 @@ function verifyDistribution(units, dist, pins) {
     v = String(v || "").split(/[;；]/)[0].replace(/\s+/g, " ").trim();
     return v.length > 40 ? v.slice(0, 39) + "…" : v;
   }
+  // Curated song-context meanings; longer dictionary entries still win during word selection.
+  var LYRIC_WORD_KO_MEANINGS = {
+    "hãy": "-하라",
+    "luôn": "항상",
+    "ân huệ": "은혜(恩惠)",
+    "cho": "-에게",
+    "bao": "얼마나; 불특정다수의",
+    "thờ": "숭배하다",
+    "vậy": "그러므로",
+    "ta": "나",
+    "giao": "사귈 교(交)",
+    "ngài": "당신(2, 3인칭 존칭), -님",
+    "náu": "피하다",
+    "cầu": "구하다, 간구하다, 청하다; 다리",
+    "điều": "것",
+    "đã": "과거 시제를 나타내는 조동사",
+    "ban": "주시다, 베푸시다",
+    "cúi": "몸을 굽히다",
+    "tha": "용서하다, 사하다",
+    "vô tình": "무심코",
+    "xưng tội": "죄를 고백하다",
+    "nhớ": "기억하다",
+    "chi": "무엇, -한 것",
+    "khó khăn": "어려운",
+    "lìa": "버리고 떠나다",
+    "đoái": "돌아보다, 보살피다",
+    "lo": "걱정하다, 염려하다",
+    "vì": "때문에, 이니까",
+    "Chúa": "주(主)"
+};
+  var LYRIC_WORD_KO_PRON = {"luôn": "루온", "quyền năng": "꾸옌 낭"};
   function lyricWordDictionary() {
     if (lyricWordDict) return lyricWordDict;
     var d = { meaning: {}, pron: {} };
@@ -11720,6 +11751,8 @@ function verifyDistribution(units, dist, pins) {
       d.pron[k] = String(r[1]).replace(/\(.*$/, "").replace(/\s+/g, " ").trim();
       if (!d.meaning[k]) d.meaning[k] = String(r[2]).replace(/\(.*$/, "").trim();
     });
+    Object.keys(LYRIC_WORD_KO_MEANINGS).forEach(function (word) { d.meaning[lyricWordKey(word)] = LYRIC_WORD_KO_MEANINGS[word]; });
+    Object.keys(LYRIC_WORD_KO_PRON).forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
     lyricWordDict = d;
     return d;
   }
