@@ -7261,7 +7261,7 @@
         subNote = '<p class="curr-plan-note">' + escapeHtml(gt(COURSE_PLAN_LABELS.substitute).replace("{date}", dateText).replace("{name}", g.assistant)) + '</p>';
       }
     });
-    return '<details class="curr-plan"><summary><span class="curr-plan-title">' + escapeHtml(gt(COURSE_PLAN_LABELS.title)) + '</span> ' + who + '</summary>' +
+    return '<details class="curr-plan curr-plan-fixed" open><summary><span class="curr-plan-title">' + escapeHtml(gt(COURSE_PLAN_LABELS.title)) + '</span> ' + who + '</summary>' +
       '<div class="curr-plan-body">' + (legend ? '<div class="curr-plan-legend">' + legend + '</div>' : '') + roles + subNote + rows +
       ((g.note || st.note) ? '<p class="curr-plan-note">' + escapeHtml(gt(g.note || st.note)) + '</p>' : '') + '</div></details>';
   }
@@ -7631,6 +7631,7 @@
     });
     return parts;
   }
+  function classHasTimetable(week) { var g = courseGuideEntry(week); return !!(g && g.plan && g.plan.length); }
   function courseTimetableOn() { return typeof JEONJU_TEACHING_GUIDE !== "undefined" && !!JEONJU_TEACHING_GUIDE && !!JEONJU_TEACHING_GUIDE.units; }
   function courseTimetableAssign(assign, sched, h) {
     if (!assign || !assign.days || !assign.days.length || !courseTimetableOn() || !sched || sched.status !== "configured") return assign;
@@ -7871,7 +7872,22 @@
       '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("close")) + '</span><span>' + song(1) + ' · ' + coursePrayerPersonHtml(pr[1]) + '</span></div>' +
       '</div>';
   }
+  // The class card that is open on load: today's class, else the next one (the last class once the course is over).
+  function currentClassKey(slots, keyOf) {
+    var today = srsToday(), open = null, last = null;
+    slots.forEach(function (s) {
+      if (s.type !== "instructional") return;
+      last = keyOf(s);
+      if (open === null && s.date >= today) open = keyOf(s);
+    });
+    return open !== null ? open : last;
+  }
   function bindCurrGroupCards(root) {
+    // The class timetable stays open.
+    root.querySelectorAll(".curr-plan-fixed > summary").forEach(function (sum) {
+      sum.setAttribute("tabindex", "-1");
+      sum.addEventListener("click", function (e) { e.preventDefault(); });
+    });
     root.querySelectorAll(".group-card").forEach(function (card) {
       card.querySelector(".group-head").addEventListener("click", function () {
         card.dataset.open = card.dataset.open === "true" ? "false" : "true";
@@ -8454,6 +8470,7 @@ function verifyDistribution(units, dist, pins) {
     var bySession = {};
     rp.sessions.forEach(function (s) { bySession[s.session] = s; });
     var units = regionalUnits();
+    var openSession = currentClassKey(rp.sched.slots, function (s) { return s.session; });
     rp.sched.slots.forEach(function (slot) {
       if (slot.type === "cancellation") {
         html += '<div class="group-card curr-vacation-card" data-open="false" data-syl="cancel-' + slot.date + '">' +
@@ -8470,7 +8487,7 @@ function verifyDistribution(units, dist, pins) {
         var u = units.filter(function (x) { return x.unit === n; })[0];
         if (u && u.note && notes.length < 1) notes.push(u.note);
       });
-      html += '<div class="group-card" data-open="' + (slot.session === 1 ? "true" : "false") + '" data-syl="s' + slot.session + '">' +
+      html += '<div class="group-card" data-open="' + (slot.session === openSession ? "true" : "false") + '" data-syl="s' + slot.session + '">' +
         '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " - " + sessionBadge(slot.session) + slotDateNote(slot)) + '</span>' +
         (notes.length ? '<span class="curr-week-note">' + escapeHtml(T(notes[0])) + '</span>' : '') + '</span>' + currChev() + '</button>' +
         '<div class="group-body">' + (sess.units.length ? courseGuideHtml(sess.units[0], rp.sched, slot.week) : '') + '<div class="curr-item-list">';
@@ -8823,6 +8840,7 @@ function verifyDistribution(units, dist, pins) {
         });
         // welcome (homework before the first class), then every slot: where each homework week sits for [일반 문법]
         var gramSeq = [{ cls: null }].concat(sched.slots.map(function (s) { return { cls: s.type === "instructional" ? grammarClassWeek(s.week) : null }; }));
+        var openWeek = currentClassKey(sched.slots, function (s) { return s.week; });
         sched.slots.forEach(function (slot, slotIdx) {
           var gramSpan = grammarHomeworkSpan(gramSeq, slotIdx + 1);
           if (slot.type === 'cancellation') {
@@ -8837,11 +8855,11 @@ function verifyDistribution(units, dist, pins) {
             var badgeText = slot.week === 16 && !(courseGuideEntry(16) && !/총복습/.test((slot.title && (slot.title.ko || slot.title)) || "")) ?
               (slot.calculatedDate + " - " + TU("총복습")) :
               (slot.calculatedDate + " - " + weekBadge(slot.week) + slotDateNote(slot));
-            html += '<div class="group-card" data-open="' + (slot.week === 1 ? "true" : "false") + '" data-syl="wk' + slot.week + '">' +
+            html += '<div class="group-card" data-open="' + (slot.week === openWeek ? "true" : "false") + '" data-syl="wk' + slot.week + '">' +
               '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(badgeText) + '</span>' +
               (slot.note ? '<span class="curr-week-note">' + escapeHtml(T(slot.note)) + '</span>' : '') + '</span>' +
               currChev() + '</button>' +
-              '<div class="group-body">' + courseServiceHtml(slot.week) + courseGuideHtml(slot.week, sched, slot.week).replace('<details class="curr-plan">', '<details class="curr-plan" open>') + '<div class="curr-item-list">';
+              '<div class="group-body">' + courseServiceHtml(slot.week) + courseGuideHtml(slot.week, sched, slot.week) + (classHasTimetable(slot.week) ? '' : '<div class="curr-item-list">');
             var displayItems = classItemsOf(slot);
             var scopeNow = scopeWeek(slot.week);
             // classScope: homework-only items and what the preliminary meeting took over are not on the class card.
@@ -8859,7 +8877,7 @@ function verifyDistribution(units, dist, pins) {
               songsAdd.filter(function (it) { return it._song === "close"; }));
             if (window.__COURSE_CAPTURE) window.__COURSE_CAPTURE.cls[slot.week] = JSON.parse(JSON.stringify(displayItems));
             // The class timetable (open above) replaces the stored list of the week's study materials.
-            var classGuide = courseGuideEntry(slot.week), timetableReplaces = !!(classGuide && classGuide.plan && classGuide.plan.length);
+            var timetableReplaces = classHasTimetable(slot.week);
             if (timetableReplaces) {
               // nothing: the timetable lists every part of the class with its own range and shortcut
             } else if (!displayItems || displayItems.length === 0) {
@@ -8874,7 +8892,7 @@ function verifyDistribution(units, dist, pins) {
                   currLinkBtn(curriculumLinkForWeek(it.link, itWeek)) + '</div>';
               });
             }
-            html += '</div>';
+            if (!timetableReplaces) html += '</div>';
 
             // Assignments for next instructional week
             var nextInst = instSlots.find(function (s) { return s.week === slot.week + 1; });
