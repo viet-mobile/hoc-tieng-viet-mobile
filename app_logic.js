@@ -11665,7 +11665,7 @@ function verifyDistribution(units, dist, pins) {
   // Vietnamese syllable -> the Korean notation closest to the Hanoi pronunciation, by the rules of the [발음][자모] chart
   // (HANOI_CHART): initials, vowels and finals as listed there; a vowel that is a glide + vowel (ia, ua, ươ ...) or ends in
   // an off-glide (i, y, u, o) is written as separate blocks (쭈어, 바이, 꺼우); 응 (ng) and 니 (nh) are blocks of their own
-  // (응어이, 년); oa = ㅘ, uy = ㅟ, yê = ㅖ, uyê = ㅜ예 (the chart); 받침 -ch / -nh are the blocks 익 / 인 (-inh is 인 as in 낀); -c, -ng after o, ô, u close the lips (옵, 옴, 웁, 움);
+  // (응어이, 년); oa = ㅘ, uy = ㅟ, yê = ㅖ, uyê = ㅜ예 (the chart); uô = ㅜ오 (nguồn 응우온; not ㅜ어 like ua); 받침 -ch / -nh are the blocks 익 / 인 (-inh is 인 as in 낀); -c, -ng after o, ô, u close the lips (옵, 옴, 웁, 움);
   // v- / ph- are the letters ㅸ / ㆄ which stand beside the vowel (ㅸㅏ, ㅸㅣ엣).
   var HANOI_CHO = ["ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
   var HANOI_JUNG = ["ㅏ", "ㅐ", "ㅑ", "ㅒ", "ㅓ", "ㅔ", "ㅕ", "ㅖ", "ㅗ", "ㅘ", "ㅙ", "ㅚ", "ㅛ", "ㅜ", "ㅝ", "ㅞ", "ㅟ", "ㅠ", "ㅡ", "ㅢ", "ㅣ"];
@@ -11674,7 +11674,7 @@ function verifyDistribution(units, dist, pins) {
   var HANOI_INITIAL_KO = { ngh: "ng", ng: "ng", nh: "nh", ch: "ㅉ", tr: "ㅉ", th: "ㅌ", kh: "ㅋ", ph: "ㆄ", gh: "ㄱ", gi: "ㅈ", qu: "qu", g: "ㄱ", c: "ㄲ", k: "ㄲ",
     d: "ㅈ", "đ": "ㄷ", t: "ㄸ", b: "ㅂ", p: "ㅃ", s: "ㅅ", x: "ㅆ", r: "ㅈ", v: "ㅸ", l: "ㄹ", m: "ㅁ", n: "ㄴ", h: "ㅎ" };
   var HANOI_MAIN = { a: ["ㅏ"], "ă": ["ㅏ"], "â": ["ㅓ"], e: ["ㅐ"], "ê": ["ㅔ"], i: ["ㅣ"], y: ["ㅣ"], o: ["ㅗ"], "ô": ["ㅗ"], "ơ": ["ㅓ"], u: ["ㅜ"], "ư": ["ㅡ"],
-    ia: ["ㅣ", "ㅓ"], "iê": ["ㅣ", "ㅔ"], "yê": ["ㅖ"], ua: ["ㅜ", "ㅓ"], "uô": ["ㅜ", "ㅓ"], "uâ": ["ㅜ", "ㅓ"], "uă": ["ㅜ", "ㅏ"], "uê": ["ㅜ", "ㅔ"],
+    ia: ["ㅣ", "ㅓ"], "iê": ["ㅣ", "ㅔ"], "yê": ["ㅖ"], ua: ["ㅜ", "ㅓ"], "uô": ["ㅜ", "ㅗ"], "uâ": ["ㅜ", "ㅓ"], "uă": ["ㅜ", "ㅏ"], "uê": ["ㅜ", "ㅔ"],
     ue: ["ㅜ", "ㅐ"], "uơ": ["ㅜ", "ㅓ"], "ưa": ["ㅡ", "ㅓ"], "ươ": ["ㅡ", "ㅓ"], oa: ["ㅘ"], "oă": ["ㅗ", "ㅏ"], oe: ["ㅗ", "ㅐ"], uy: ["ㅟ"],
     uya: ["ㅜ", "ㅑ"], "uyê": ["ㅜ", "ㅖ"] };
   var HANOI_OFFGLIDE = { i: "ㅣ", y: "ㅣ", u: "ㅜ", o: "ㅗ" };
@@ -11705,13 +11705,13 @@ function verifyDistribution(units, dist, pins) {
     if (south && main === "ia") J = ["ㅣ", "ㅏ"];
     if (south && main === "ê") J = fin ? ["ㅓ"] : ["ㅔ", "ㅣ"];
     // The chart describes â as between ㅏ and ㅓ; Hangul has no intermediate vowel.
-    var round = /^[oôu]$/.test(main);
+    var round = /^(?:[oôu]|uô)$/.test(main);   // uô ends in ô: -uôc / -uông close the lips too
     var jong = "", extra = "";
     var tail = "";
     if (fin === "c") { jong = "ㄱ"; if (round) tail = "ㅂ"; }
     else if (fin === "ng") { jong = "ㅇ"; if (round) tail = "ㅁ"; }
     else if (fin === "m") jong = "ㅁ";
-    else if (fin === "n") { jong = south ? "ㅇ" : "ㄴ"; if (south) tail = "ㄴ"; }
+    else if (fin === "n") { jong = south && !/ô$/.test(main) ? "ㅇ" : "ㄴ"; if (south && !/ô$/.test(main)) tail = "ㄴ"; }   // -ôn is 온 in Saigon too
     else if (fin === "p") jong = "ㅂ";
     else if (fin === "t") jong = south ? "ㄱ" : "ㅅ";
     else if (fin === "nh") {
@@ -11865,7 +11865,7 @@ function verifyDistribution(units, dist, pins) {
     "mộ": "무덤",
     "âm u": "캄캄한, 어두운, 암울한"
 };
-  var LYRIC_WORD_KO_PRON = {"luôn": "루온", "quyền năng": "꾸옌 낭", "lúc": "룩ㅂ", "khuynh hướng": "쿠인 흐엉", "gì": "지", "muôn": "무온"};
+  var LYRIC_WORD_KO_PRON = {"quyền năng": "꾸옌 낭", "lúc": "룩ㅂ", "khuynh hướng": "쿠인 흐엉", "gì": "지"};
   // Apply curated pronunciations inside longer selected expressions too (muôn dân, etc.).
   function lyricKoreanWord(text) {
     var words = String(text || "").trim().split(/\s+/), out = [];
@@ -11873,7 +11873,7 @@ function verifyDistribution(units, dist, pins) {
       var matched = false;
       for (var n = Math.min(3, words.length - i); n >= 1; n--) {
         var key = lyricWordKey(words.slice(i, i + n).join(" "));
-        if (LYRIC_WORD_KO_PRON[key] && (koreanNotationRegion !== "saigon" || ["lúc", "khuynh hướng", "gì", "muôn"].indexOf(key) >= 0)) {
+        if (LYRIC_WORD_KO_PRON[key] && (koreanNotationRegion !== "saigon" || ["lúc", "khuynh hướng", "gì"].indexOf(key) >= 0)) {
           out.push(LYRIC_WORD_KO_PRON[key]); i += n; matched = true; break;
         }
       }
@@ -11909,7 +11909,7 @@ function verifyDistribution(units, dist, pins) {
     Object.keys(approved).forEach(function (word) { d.meaning[lyricWordKey(word)] = approved[word]; });
     Object.keys(LYRIC_WORD_KO_MEANINGS).forEach(function (word) { d.meaning[lyricWordKey(word)] = LYRIC_WORD_KO_MEANINGS[word]; });
     if (koreanNotationRegion !== "saigon") Object.keys(LYRIC_WORD_KO_PRON).forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
-    ["lúc", "khuynh hướng", "gì", "muôn"].forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
+    ["lúc", "khuynh hướng", "gì"].forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
     // Meanings the user entered for [노래] lyric words (LYRIC_WORD_MEANINGS) come last: they win over the supplement and the older curated list.
     Object.keys(LYRIC_WORD_MEANINGS).forEach(function (k) { d.meaning[lyricWordKey(k)] = LYRIC_WORD_MEANINGS[k]; });
     // Verbs and adjectives whose meaning was written as a noun (cầu nguyện 기도 -> 기도하다): the predicate form comes last and wins over every list above.

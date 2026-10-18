@@ -13,6 +13,8 @@ const rules = {
   'người Hàn': '응어이 한', 'thần khí thánh': '턴 키 타인ㅇ', 'không': '컴',
   // uy = ㅟ, uyê = ㅜ예, yê = ㅖ (the chart, 2026-10-18)
   'huy': '휘', 'quy': '뀌', 'nguy': '응위', 'tuy': '뛰', 'uy': '위', 'yêu': '예우', 'yên': '옌', 'yết': '옛', 'tuyệt': '뚜옛', 'quyền': '뀌에 ㄴ'.replace(' ㄴ', 'ㄴ'),
+  // uô = ㅜ오 (not ㅜ어): -uôn = 우온, Hanoi
+  'nguồn': '응우온', 'muốn': '무온', 'luôn': '루온', 'muôn': '무온', 'buồn': '부온', 'uốn': '우온', 'ôn': '온', 'cuộc': '꾸옥ㅂ', 'uống': '우옹ㅁ', 'suối': '수오이', 'tuổi': '뚜오이',
   // oa = ㅘ
   'ngoan': '응완', 'hoa': '화', 'toán': '똰', 'loài': '롸이',
   // s- = ㅅ (x- stays ㅆ), Hanoi and Saigon
@@ -28,6 +30,8 @@ assert.strictEqual(w('quyền'), '꾸옌', 'quyền');
 assert.strictEqual(w('sáng', 'saigon'), '상', 'Saigon s- = ㅅ');
 assert.strictEqual(w('sao', 'saigon'), '사오');
 assert.strictEqual(w('hoa', 'saigon'), '화', 'Saigon oa = ㅘ');
+for (const word of ['nguồn', 'muốn', 'luôn', 'muôn', 'buồn', 'uốn', 'ôn', 'khuôn', 'tuôn']) assert.strictEqual(w(word, 'saigon'), w(word, 'hanoi'), 'Saigon -ôn is 온 as in Hanoi: ' + word);
+assert.strictEqual(w('nguồn', 'saigon'), '응우온', 'nguồn');
 assert.strictEqual(w('ngoan', 'saigon'), '응왕ㄴ', 'Saigon oa = ㅘ (final -n is ㅇㄴ there)');
 assert.strictEqual(w('xin', 'saigon'), '씽ㄴ', 'Saigon x- = ㅆ (final -n is ㅇㄴ there)');
 assert.strictEqual(s('xyz'), '', 'not a Vietnamese syllable');

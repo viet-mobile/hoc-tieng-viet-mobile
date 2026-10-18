@@ -1514,6 +1514,7 @@ HANOI_CHART = {
         ["ơ", "a", [["ㅓ", 0]]],
         ["u", "b", [["ㅜ", 0]]],
         ["ua", "b", [["(뒤에 받침이 없으면)", 1], ["ㅜ어", 0], ["(뒤에 받침이 있으면)", 1], ["ㅜ아", 0]]],
+        ["uô", "b", [["ㅜ오", 0]]],
         ["uă", "b", [["ㅜ아", 0], ["(뒤에 반드시 받침)", 1]]],
         ["uâ", "b", [["ㅜ어", 0], ["(뒤에 반드시 받침)", 1]]],
         ["ue", "b", [["ㅜ애", 0]]],
@@ -1552,6 +1553,8 @@ for _vowel in SAIGON_CHART["vowels"]:
 for _final in SAIGON_CHART["finals"]:
     if _final[0] in {"-ch","-n","-nh","-t"}:
         _final[1] = {"-ch":"-ㅅ","-n":"-ㅇㄴ","-nh":"-ㄴ","-t":"-ㄱ"}[_final[0]]
+    if _final[0] == "-n":
+        _final.append("(-ôn은 [온]처럼 ㄴ으로 적음)")
 
 
 # [발음] > [자모]: how to type Vietnamese with a TELEX keyboard (supplied by the user; Korean only). Rows: [keys typed, result].

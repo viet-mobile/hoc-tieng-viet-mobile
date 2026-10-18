@@ -15,3 +15,6 @@ print("hanoi / saigon chart: s- = ㅅ-, x- = ㅆ-")
 for chart in (HANOI_CHART, SAIGON_CHART):
     assert {row[0]: row[2] for row in chart["vowels"]}["oa"] == [["ㅘ", 0]]
 print("hanoi / saigon chart: oa = ㅘ")
+for chart in (HANOI_CHART, SAIGON_CHART):
+    assert {row[0]: row[2] for row in chart["vowels"]}["uô"] == [["ㅜ오", 0]]
+print("hanoi / saigon chart: uô = ㅜ오")
