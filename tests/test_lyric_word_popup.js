@@ -54,7 +54,7 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     ok((await tap('Kinh')) === null, 'English UI: no popup');
     await E("window.setLang('ko')"); await sleep(200);
     // Requested song-context overrides, with complete punctuation and longer-word priority.
-    const overrides = {"hãy": "-하라", "luôn": "항상", "ân huệ": "은혜(恩惠)", "cho": "-에게", "bao": "얼마나; 불특정다수의", "thờ": "숭배하다", "vậy": "그러므로", "ta": "나", "giao": "사귈 교(交)", "ngài": "당신(2, 3인칭 존칭), -님", "náu": "피하다", "cầu": "구하다, 간구하다, 청하다; 다리", "điều": "것", "đã": "과거 시제를 나타내는 조동사", "ban": "주시다, 베푸시다", "cúi": "몸을 굽히다", "tha": "용서하다, 사하다", "vô tình": "무심코", "xưng tội": "죄를 고백하다", "nhớ": "기억하다", "chi": "무엇, -한 것", "khó khăn": "어려운", "lìa": "버리고 떠나다", "đoái": "돌아보다, 보살피다", "lo": "걱정하다, 염려하다", "vì": "때문에, 이니까", "Chúa": "주(主)"};
+    const overrides = {"hãy": "-하라", "luôn": "항상", "ân huệ": "은혜(恩惠)", "cho": "-에게", "bao": "얼마나; 불특정다수의", "thờ": "숭배하다", "vậy": "그러므로", "ta": "나", "giao": "사귈 교(交)", "ngài": "당신(2인칭 존칭), 그분(3인칭 존칭)", "náu": "피하다", "cầu": "구하다, 간구하다, 청하다; 다리", "điều": "것", "đã": "과거 시제를 나타내는 조동사", "ban": "주시다, 베푸시다", "cúi": "몸을 굽히다", "tha": "용서하다, 사하다", "vô tình": "무심코", "xưng tội": "죄를 고백하다", "nhớ": "기억하다", "chi": "무엇, -한 것", "khó khăn": "어려운", "lìa": "버리고 떠나다", "đoái": "돌아보다, 보살피다", "lo": "걱정하다, 염려하다", "vì": "때문에, 이니까", "Chúa": "주(主)"};
     for (const [word, meaning] of Object.entries(overrides)) {
       await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);
       const result=await tap(word);eq(result&&result.mean,meaning,'song meaning '+word);
@@ -79,9 +79,9 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     await E("document.getElementById('lyr').textContent='muôn dân'");
     const muonDan=await tap('muôn');ok(muonDan&&muonDan.ko.startsWith('무온 ')&&muonDan.mean==='만민, 모든 사람','curated syllable pronunciation inside longer compound');
     // Dictionary additions must use the lyric sense and work through the same click path.
-    for (const [word, meaning] of [['theo','따르다. 뒤따르다'],['mãi','계속'],['mai','내일'],['hát','노래 부르다'],['lệ','눈물'],['nghiền ngẫm','숙고하다. 마음에 새기다'],['khoảnh khắc','순간. 찰나, 아주짧은 시간'],['non','산; 어린'],['thì','그러면, 그때는'],['bầu trời','하늘'],['cất tiếng','목소리를 높이다']]) {
+    for (const [word, meaning] of [['theo','따르다'],['mãi','계속, 영원히'],['mai','아침, 내일'],['hát','노래하다'],['lệ','눈물, 규칙'],['nghiền ngẫm','숙고하다, 마음에 새기다'],['khoảnh khắc','순간, 찰나, 아주짧은 시간'],['non','산(núi non), 어린'],['thì','~는/은(주제), ~이면'],['bầu trời','하늘'],['cất tiếng','목소리를 높이다']]) {
       await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);
-      eq((await tap(word.split(' ').pop()))?.mean,meaning,'Naver supplement '+word);
+      eq((await tap(word.split(' ').pop()))?.mean,meaning,'dictionary meaning (approved list over the Naver supplement) '+word);
     }
     await E("document.getElementById('lyr').textContent='noài'");
     eq((await tap('noài'))?.mean,'','unverified lyric spelling gets no invented meaning');

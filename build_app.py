@@ -818,6 +818,9 @@ def build_data_js(site):
     with open(os.path.join(os.path.dirname(__file__), "lyric_meanings_ko.json"), encoding="utf-8") as fh:
         lyric_meanings = json.load(fh)
     parts.append(emit("LYRIC_MEANINGS_KO", {r["vi"]: r["ko"] for r in lyric_meanings["entries"]}))
+    with open(os.path.join(os.path.dirname(__file__), "lyric_meanings_approved_ko.json"), encoding="utf-8") as fh:
+        lyric_approved = json.load(fh)
+    parts.append(emit("LYRIC_MEANINGS_APPROVED_KO", {r["vi"]: r["ko"] for r in lyric_approved["entries"]}))
     parts.append(emit("NS_DIFFS", NORTH_SOUTH_DIFFS))
     parts.append(emit("NS_NOTE", NORTH_SOUTH_NOTE))
     parts.append(emit("NS_EXTRA_NOTES", NORTH_SOUTH_EXTRA_NOTES))

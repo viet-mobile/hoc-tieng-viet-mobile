@@ -1,0 +1,5785 @@
+{
+ "description": "노래 가사 단어 뜻 승인 목록(2026-10-18, 사용자 승인): 가사 어순대로 적은 단어와 그 뜻. 한국외국어대학교 베트남어-한국어 사전·문예림 입문 사전(네이버 베트남어 사전)에서 찾고, 사전에 없거나 가사와 맞지 않으면 가사 문맥에 맞춰 보정했다. 사용자가 직접 지정한 뜻(LYRIC_WORD_MEANINGS, LYRIC_WORD_KO_MEANINGS)이 이 목록보다 우선한다.",
+ "approved": "2026-10-18",
+ "dictionary": "https://dict.naver.com/vikodict/#/main",
+ "entries": [
+  {
+   "vi": "chúng con",
+   "ko": "우리(자식들을 가리킬 때), 너희들",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "vui sướng",
+   "ko": "기쁜, 행복한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "sướng vui",
+   "ko": "기쁜, 행복한",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "mỗi ngày",
+   "ko": "매일",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "mừng vui",
+   "ko": "즐거운, 유쾌한",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "đời đời",
+   "ko": "대대로, 영원히",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "cùng nhau",
+   "ko": "함께",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "khó khăn",
+   "ko": "어려운, 어려움, 곤란, 장애, 난국, 지장",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "đi theo",
+   "ko": "동행하다, 따라가다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "bên nhau",
+   "ko": "서로 곁에, 함께",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "tuyệt vời",
+   "ko": "훌륭한, 대단히",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "trung kiên",
+   "ko": "충성스러운, 충신의",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "mãi mãi",
+   "ko": "영원히",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "biết bao",
+   "ko": "매우, 얼마나 (감탄문에서 사용),",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "suốt đời",
+   "ko": "일생, 일생동안",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "khen ngợi",
+   "ko": "칭찬하다, …을 축하하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "bên cạnh",
+   "ko": "옆의",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "hăng say",
+   "ko": "적극적으로 …하다, …에 몰두하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "chuyển lay",
+   "ko": "흔들리다, 동요하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "làm theo",
+   "ko": "따라 하다, 본받다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "cậy trông",
+   "ko": "바라다, 의지하다",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "vô vàn",
+   "ko": "셀 수도 없는, 엄청나게 많은, 무수한",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "mạnh mẽ",
+   "ko": "강력한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "mai sau",
+   "ko": "후일에",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "chở che",
+   "ko": "막다, 보호하다, 지키다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "khuyên dạy",
+   "ko": "충고하고 가르치다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "hết lòng",
+   "ko": "마음을 다해서, 마음으로부터",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dường bao",
+   "ko": "극히, 매우",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "vâng theo",
+   "ko": "복종하다, 따르다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nay mai",
+   "ko": "곧, 하루 이틀 내에",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "cao qúy",
+   "ko": "고귀한, 고매한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tươi sáng",
+   "ko": "선명한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "sẻ chia",
+   "ko": "…을 분배하다, (기쁨·고통을) 나누다, 공유하다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "gian nan",
+   "ko": "어려운",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "đổi thay",
+   "ko": "변하다, 바꾸다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "đời sống",
+   "ko": "생활",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ngày đêm",
+   "ko": "낮과 밤",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "hăng hái",
+   "ko": "열성적인, 열렬한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "những ai",
+   "ko": "누구나",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nâng đỡ",
+   "ko": "돕다, 지원하다, 격려하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "huy hòang",
+   "ko": "눈부시게 아름다운",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "không hề",
+   "ko": "전혀 ~ 않다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "suốt trong",
+   "ko": "~동안 내내",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "kiên quyết",
+   "ko": "결의가 굳은, 단호한",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "tha thiết",
+   "ko": "진심으로, 진지하게",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "mang lại",
+   "ko": "가져오다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "ngày ngày",
+   "ko": "매일",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "khẩn cầu",
+   "ko": "…에게 간청하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "chan hòa",
+   "ko": "넘쳐흐르다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "giản đơn",
+   "ko": "간단한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dù cho",
+   "ko": "…라 할지라도",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "sáng tươi",
+   "ko": "선명한",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "mến thương",
+   "ko": "애정을 갖다, 열망하다, 사랑하는",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "trẻ thơ",
+   "ko": "유아, 어린아이",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "đứng vững",
+   "ko": "견고하게 서다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "đường ngay",
+   "ko": "곧은 길, 바른 길",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "ngẫm suy",
+   "ko": "숙고하다, 묵상하다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "bền vững",
+   "ko": "쉽게 흔들리지 않는",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nguy nan",
+   "ko": "위험하고 어려운, 위험과 곤란",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "bủa vây",
+   "ko": "둘러싸다, 포위하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "mang đến",
+   "ko": "가지고 가다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "theo sát",
+   "ko": "바짝 뒤따르다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tháng ngày",
+   "ko": "세월, 나날",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "xung quanh",
+   "ko": "둘레, 주변, 주위",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "bấy lâu",
+   "ko": "오랜동안",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "mến yêu",
+   "ko": "소중이 여기다, 사랑하다",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "rời xa",
+   "ko": "멀리 떠나다, 이탈하다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "ưu tiên",
+   "ko": "우선의",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "lòai người",
+   "ko": "인종, 인류",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "cuộc đời",
+   "ko": "삶, 생애, 생활",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "vây quanh",
+   "ko": "둘러싸다, 에워 싸다, 포위하다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "đường lối",
+   "ko": "길, 방식",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "thứ tha",
+   "ko": "용서하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "không còn",
+   "ko": "더 이상 ~ 않다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "thương mến",
+   "ko": "사랑하다, 소중히 하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tựa như",
+   "ko": "마치, …과 같은",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "loan báo",
+   "ko": "알리다, 공표하다, 통고하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ngập tràn",
+   "ko": "넘치다, 범람하다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "ngày tháng",
+   "ko": "세월, 날짜",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "lối đi",
+   "ko": "도로, 길",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tiếng hát",
+   "ko": "노래소리",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thờ kính",
+   "ko": "존경하다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "đau đớn",
+   "ko": "괴로워하다, 아프다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thuở trước",
+   "ko": "전에, 옛날에",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "đậm sâu",
+   "ko": "깊은",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "muôn năm",
+   "ko": "만세",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "ban mai",
+   "ko": "(문어) 이른 아침, 이른 아침에",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "bao dung",
+   "ko": "포용력있는",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "đường đời",
+   "ko": "인생길",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nghe theo",
+   "ko": "~에 복종하다, 충고하다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "chăm lo",
+   "ko": "열중하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thiết tha",
+   "ko": "열심인, 열렬한, 진심으로",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dấu yêu",
+   "ko": "사랑스러운, 소중한",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "thắm thiết",
+   "ko": "다정한, 친밀한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "bao lâu",
+   "ko": "얼마나, 얼마동안",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tốt lành",
+   "ko": "좋은",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "khi xưa",
+   "ko": "이전, 옛날",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tăm tối",
+   "ko": "어두운, 모호한, 희망이 없는, 어리석은",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "mai đây",
+   "ko": "머지않아, 앞으로",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "đỡ nâng",
+   "ko": "돕다, 지원하다, 격려하다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "than van",
+   "ko": "불평하다, 슬퍼하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thanh xuân",
+   "ko": "청춘, 젊음",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "vững mạnh",
+   "ko": "견실한, 견고한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "vững vàng",
+   "ko": "확실한, 안정된",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "sáng ngời",
+   "ko": "빛나는, 눈부신",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "lâu nay",
+   "ko": "(이전부터 지금까지) 오랫동안, 요새",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ân cần",
+   "ko": "주의깊은, 사리가 깊은, 정성을 다한, 열심히",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ao ước",
+   "ko": "간절히 바라다, 동경하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "việc làm",
+   "ko": "활동, 행동",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nương náu",
+   "ko": "(몸을) 피하다, 도망하다, 숨기다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "sát cánh",
+   "ko": "나란히, 날개를 나란히 하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dựng xây",
+   "ko": "건설하다, 건설적인",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "vững tâm",
+   "ko": "마음이 굳건하다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "bền lòng",
+   "ko": "인내하는",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "đêm ngày",
+   "ko": "낮과 밤",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "cạnh bên",
+   "ko": "옆의",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "hiểm nguy",
+   "ko": "위험한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "xa rời",
+   "ko": "이탈한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tỏ bày",
+   "ko": "설명하다, 서술하다, 발표하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "hiểu thấu",
+   "ko": "통달하다, 완전히 이해하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thuộc về",
+   "ko": "속하다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "mạnh dạn",
+   "ko": "건강한, 대담한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "vững chắc",
+   "ko": "견고한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "xưa kia",
+   "ko": "옛날에, 일찌기",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thuở xưa",
+   "ko": "옛날에",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "chông gai",
+   "ko": "창과 가시, 고통, 어려움",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "tận tâm",
+   "ko": "헌신하다, 마음을 다하다, 마음에서부터, 마음을 다해",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "kiên cường",
+   "ko": "확고 부동한, 완고한, 단호한",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "vấp ngã",
+   "ko": "(…에 걸려) 넘어지다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "khổ đau",
+   "ko": "고통을 겪다, 힘든, 고통스러운",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "giao phó",
+   "ko": "교부하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "hòa thuận",
+   "ko": "(가정이) 화목한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nghiền ngẫm",
+   "ko": "숙고하다, 마음에 새기다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "hòai nghi",
+   "ko": "회의하다, 의심을 품다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "trường tồn",
+   "ko": "영구하다, 오랫동안 존재하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ân huệ",
+   "ko": "은혜, 호의",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ân tình",
+   "ko": "은정, 감사하는 마음",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thóai chí",
+   "ko": "실망하다, 낙담하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "hát ca",
+   "ko": "노래하다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "ca hát",
+   "ko": "노래하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "người ta",
+   "ko": "사람들, 그들",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tìm kiếm",
+   "ko": "찾다, 조사하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dung tha",
+   "ko": "용서하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "sắp đến",
+   "ko": "접근하다, 다가오다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "trôi qua",
+   "ko": "(시간이) 지나다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "giây phút",
+   "ko": "분초, 순간, 잠시",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "tòan thắng",
+   "ko": "전승하다, 완전히 승리하다, 전승, 완승",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tỏa sáng",
+   "ko": "빛나다, 번쩍거리다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "xây đắp",
+   "ko": "건설하다, 쌓아 올리다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "thức giấc",
+   "ko": "잠에서 깨다, 일어나다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "sánh vai",
+   "ko": "나란히, 병행하여, 어깨를 나란히 하다, 어울리다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ban tặng",
+   "ko": "증여하다, 수여하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "mang ơn",
+   "ko": "(타인의 은혜를) 빚진, ~에게 빚지다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "noi theo",
+   "ko": "닮다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ngời sáng",
+   "ko": "빛나는, 눈부신",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "ngày càng",
+   "ko": "날이 갈수록, 날로",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "kiếm tìm",
+   "ko": "찾다, 조사하다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "cách ngăn",
+   "ko": "구분하다, 가르다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "khốn khó",
+   "ko": "고된",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "xót thương",
+   "ko": "불쌍하다, 불쌍하게 여기다, 마음이 아프다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "với nhau",
+   "ko": "함께",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thương nhau",
+   "ko": "서로 사랑하다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "chịu chết",
+   "ko": "죽음을 견디다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dâng hiến",
+   "ko": "봉헌하다, 헌신하다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "khóc than",
+   "ko": "한탄하며 울다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "gánh nặng",
+   "ko": "무거운 짐을 지다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "cúi xin",
+   "ko": "애원하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nao núng",
+   "ko": "겁먹고 물러서다, 주춤거리다, 마음이 동요하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "bồi đắp",
+   "ko": "보충하다, 보강하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "run sợ",
+   "ko": "(공포나 근심으로) 떨다, 무서워서 떨다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "giông tố",
+   "ko": "폭풍우",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "khỏanh khắc",
+   "ko": "순간, 찰나, 아주짧은 시간",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "muôn vàn",
+   "ko": "무수한, 셀수없는",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "mừng rỡ",
+   "ko": "무척 기뻐하다, 기뻐서 날뛰다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dõi theo",
+   "ko": "지켜보다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "theo gương",
+   "ko": "본받다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "lo toan",
+   "ko": "책임 의식을 가지고 일을 걱정하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "một ngày",
+   "ko": "하루",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "hết sức",
+   "ko": "진력하다, 힘을 다하다, 열심히 …하다, 최고로, 가장, 매우",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "quyết chí",
+   "ko": "결의하다, 결정하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "trọn vẹn",
+   "ko": "완전히, 전부, 전체적으로",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "mọi việc",
+   "ko": "모든 것",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "xinh tươi",
+   "ko": "유쾌한, 밝은, 생기있는",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "cầu khẩn",
+   "ko": "구걸하다, 간청하다, 간구하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "kính mến",
+   "ko": "존경하다, 존중하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thóai lui",
+   "ko": "물러서다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "khinh khi",
+   "ko": "경시하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dĩ vãng",
+   "ko": "과거, 이전의 시간, 과거의, 기왕의",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "đi ngay",
+   "ko": "즉시 가다, 당장 가다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "xiết bao",
+   "ko": "얼마나, 정말로",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "xa xưa",
+   "ko": "(먼) 옛날",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "như xưa",
+   "ko": "예전에, 예전처럼",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "đời này",
+   "ko": "이 세대, 요즘",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "lo sợ",
+   "ko": "걱정되는, 염려되는, 걱정하다, 공포를 느끼다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ngày qua",
+   "ko": "지나간 날들",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "ước ao",
+   "ko": "희망하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "kinh hãi",
+   "ko": "두려워하다, 무서워하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tận tình",
+   "ko": "마음을 다해서, 충성으로",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ngàn năm",
+   "ko": "천년",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dạy khuyên",
+   "ko": "충고하고 가르치다",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "khốn cùng",
+   "ko": "곤궁한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tôn thờ",
+   "ko": "찬양하다, 숭배하다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "vang tiếng",
+   "ko": "메아리 치다, 울려퍼지다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "một mai",
+   "ko": "머지않아",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "yêu chuộng",
+   "ko": "귀히여기다, 존중하다; 사랑하다, 좋아하다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "thân yêu",
+   "ko": "친애하는, 그리운",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "rã rời",
+   "ko": "흩어지다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tiến tới",
+   "ko": "전진하다, 나아가다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "phó thác",
+   "ko": "부탁하다, 의뢰하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "sâu thẳm",
+   "ko": "바닥이 깊은, 속이 깊은",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "sùng kính",
+   "ko": "우러러 존경하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "hối tiếc",
+   "ko": "유감이다, 후회하다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "thăng trầm",
+   "ko": "성쇠, 흥망성쇠",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "xoa dịu",
+   "ko": "(다른 사람의 분노 또는 고통을) 경감하다, 가볍게하다, 가라 앉히다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dành cho",
+   "ko": "위한",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "sum vầy",
+   "ko": "만나다, 모이다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "mỏi mệt",
+   "ko": "매우 피곤한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "gian truân",
+   "ko": "어렵고 불쌍한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "bão tố",
+   "ko": "격렬한 폭풍, 커다란 변동, 혹독한 시련",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "lạc lõng",
+   "ko": "헤매다, 방황하다, 고독한, 고립된",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tin vững",
+   "ko": "확신하는",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "ban ơn",
+   "ko": "은혜를 베풀다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "đã qua",
+   "ko": "과거의, 지나간",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ngày sau",
+   "ko": "후일, 장래",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "chẳng ai",
+   "ko": "아무도 ~않다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "bất cứ",
+   "ko": "…이든지 모두",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nản chí",
+   "ko": "낙담한, 낙심한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "soi sáng",
+   "ko": "밝게 비추어 나타내다, (무엇·누구에게) 불을 비추다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "làm việc",
+   "ko": "일을 하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "hát xướng",
+   "ko": "노래",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "khuyên răn",
+   "ko": "충고하고 가르치다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "rạng rỡ",
+   "ko": "빛나다, 환하다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "những người",
+   "ko": "사람들",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "ca ngợi",
+   "ko": "칭송하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ca tụng",
+   "ko": "칭찬하다, 칭송하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "kính thờ",
+   "ko": "존경하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dội vang",
+   "ko": "울려퍼지다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "mai mốt",
+   "ko": "곧",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "bởi thế",
+   "ko": "그래서",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "hết thảy",
+   "ko": "모두, 예외없이",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "oai nghi",
+   "ko": "위엄에 찬, 당당한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tin yêu",
+   "ko": "믿고 사랑하다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "rẽ chia",
+   "ko": "분리하다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "than khóc",
+   "ko": "슬퍼하다, 한탄하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nhận lãnh",
+   "ko": "받다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nhu mì",
+   "ko": "온화한, 부드러운",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "kề vai",
+   "ko": "서로 돕다, 어깨를 나란히하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tỏ ra",
+   "ko": "밝히다, 노출하다, 알리다, 나타내다, 보이다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "cảm mến",
+   "ko": "호감을 느끼다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "đàn chim",
+   "ko": "새떼",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "phút giây",
+   "ko": "순간",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "khoan dung",
+   "ko": "관대한, 아량있는, 참다, 인내하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "chứa chan",
+   "ko": "넘치다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ấm áp",
+   "ko": "부드러운, 유순한, 편안한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "núi non",
+   "ko": "산",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "đội quân",
+   "ko": "군대",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "quá đỗi",
+   "ko": "대단히 몹시",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "bí quyết",
+   "ko": "비결",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "gốc gác",
+   "ko": "기원, 원천",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nụ cười",
+   "ko": "미소, 웃음, 웃다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "xưa nay",
+   "ko": "옛날부터 오늘날까지",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tối tăm",
+   "ko": "어두운, 모호한, 희망이 없는, 어리석은",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "soi rọi",
+   "ko": "빛을 비추다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "giọng hát",
+   "ko": "음색",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "phản chiếu",
+   "ko": "반사하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "háo hức",
+   "ko": "기대하다, 갈망하다, 열광적인, 열성적인, 열망하는",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "suy tàn",
+   "ko": "쇠퇴하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thắm nồng",
+   "ko": "열렬한, 열정적인",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "nhạt phai",
+   "ko": "색이 변하다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "huynh đệ",
+   "ko": "형제",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "lung linh",
+   "ko": "반짝이다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "vững bền",
+   "ko": "견고한, 확고한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "chuỗi ngày",
+   "ko": "연일",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dù rằng",
+   "ko": "~라 할지라도",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "say mê",
+   "ko": "~에 심취하다, 열정을 내다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "sáng soi",
+   "ko": "밝게 비추어 나타내다, (무엇·누구에게) 불을 비추다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "qúy mến",
+   "ko": "경애하다, 존경하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "trân qúy",
+   "ko": "진귀한, 귀중한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ẩn náu",
+   "ko": "몸을 숨기다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "cứu thóat",
+   "ko": "돕다, 구조하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ngợi ca",
+   "ko": "칭송하다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "lầm than",
+   "ko": "비참한, 가엾은",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dẹp tan",
+   "ko": "진압하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "xua tan",
+   "ko": "쫒아버리다, 떨쳐버리다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "xông pha",
+   "ko": "위험 속으로 돌진하다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "mưu hại",
+   "ko": "모해하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "chan chứa",
+   "ko": "(감정) 충만하다, 가득찬, (감정) 충만한, 넘치는",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thơ ngây",
+   "ko": "어린이 같은",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "êm dịu",
+   "ko": "친절한, 상냥한",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "đắp xây",
+   "ko": "건설하다, 쌓아 올리다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "hiên ngang",
+   "ko": "위엄있는, 불굴의",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "đắn đo",
+   "ko": "심사숙고 하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "lai láng",
+   "ko": "범람하다, 넘치다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "gập ghềnh",
+   "ko": "울퉁불퉁한, 거칠은, 어려운",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nhẹ nhàng",
+   "ko": "가벼운",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "lắng lo",
+   "ko": "걱정스러운, 불안한, 마음에 걸리는, 걱정(고민)하다, 염려하다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "nỗi niềm",
+   "ko": "(개인적인) 심경",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nương sức",
+   "ko": "…의 수고를 덜다, 힘을 아끼다, 몸을 아끼다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "phai mờ",
+   "ko": "희미해지다, 퇴색하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "trong suốt",
+   "ko": "투명한",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "rọi soi",
+   "ko": "빛을 비추다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "bất tận",
+   "ko": "그칠줄 모르는, 끈기있는",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "mênh mông",
+   "ko": "매우 큰, 거대한",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "xong việc",
+   "ko": "(일을) 완성하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "qúy cao",
+   "ko": "고귀한, 고매한",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "khẩn trương",
+   "ko": "팽팽한, 긴장된, 신속히",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tiếng vang",
+   "ko": "메아리, 반향",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "lầm lỗi",
+   "ko": "잘못되다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "xóa nhòa",
+   "ko": "희미해지다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tàn suy",
+   "ko": "쇠퇴하다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "tàn phai",
+   "ko": "사라지다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tỏ lộ",
+   "ko": "확실히 말하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tỏ rõ",
+   "ko": "표명하다, 확실히 보여주다, 명백히, 솔직히, 똑똑히, 분명히",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "giãi bày",
+   "ko": "생각이나 사상 등을 아는 것, 입증하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dạt trôi",
+   "ko": "표류하다, 떠내려가다, 흘러가다",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "dìu dắt",
+   "ko": "이끌다, 안내하다, 인도하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thầm lặng",
+   "ko": "조용한, 고요한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "giây lát",
+   "ko": "즉시",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ngược xuôi",
+   "ko": "동에 번쩍 서에 번쩍하다, 바삐 움직이다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "buông xuôi",
+   "ko": "운명에 따르다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "đe dọa",
+   "ko": "협박하다, 위협하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ngại ngần",
+   "ko": "망설이다",
+   "kind": "compound",
+   "basis": "수정·보충(가사 맥락)"
+  },
+  {
+   "vi": "lứa đôi",
+   "ko": "짝, 커플",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "êm đềm",
+   "ko": "평온한, 조용한",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "cư xử",
+   "ko": "행동하다, 대처하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ngất ngây",
+   "ko": "(기뻐서) 미칠 지경이다, (정신) 어질어질한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "đúng đắn",
+   "ko": "바르다, 올바른, 규정대로",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dồn nén",
+   "ko": "억제하다, 억누르다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "vội vã",
+   "ko": "서두르다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "hồn nhiên",
+   "ko": "혼연의, 순수한",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "dẻo dai",
+   "ko": "꾸준한, 강인한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "gọn gàng",
+   "ko": "단정한, 깨끗한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "vai sánh",
+   "ko": "나란히, 병행하여, 어깨를 나란히 하다, 어울리다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "ơn ban",
+   "ko": "은혜를 베풀다",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "mê say",
+   "ko": "열정을 내다, 정열을 느끼다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "tươi xinh",
+   "ko": "유쾌한, 밝은, 생기있는",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "náu nương",
+   "ko": "(몸을) 피하다, 도망하다, 숨기다",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "ngăn cách",
+   "ko": "구분하다, 가르다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nâng niu",
+   "ko": "달래다, 애무하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "quên lãng",
+   "ko": "망각의",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "lãng quên",
+   "ko": "망각하다, 잊어버리다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "nặng gánh",
+   "ko": "무거운 짐, 무거운 짐을 지다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thẳm sâu",
+   "ko": "바닥이 깊은, 속이 깊은",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "phai nhạt",
+   "ko": "색이 변하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dịu êm",
+   "ko": "친절한, 상냥한",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "sợ run",
+   "ko": "(공포로 인하여) 떨다, 두려움에 떨다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thênh thang",
+   "ko": "넓은, 거대한, 막대한",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "rối bời",
+   "ko": "헝클어지다, 복잡해지다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "ngổn ngang",
+   "ko": "무질서한, 혼란한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "thắc mắc",
+   "ko": "의문을 갖다, 복잡한, 여려운, 불편한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "chới với",
+   "ko": "허둥대다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "đẹp đẽ",
+   "ko": "아름다운",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "mỉm cười",
+   "ko": "미소짓다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "trông cậy",
+   "ko": "바라다, 의지하다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "lay chuyển",
+   "ko": "흔들리다, 동요하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "mồ côi",
+   "ko": "고아가 되다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "côi đơn",
+   "ko": "고아의",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "lãnh nhận",
+   "ko": "수락하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tan tành",
+   "ko": "조각조각 부서지다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "tấp nập",
+   "ko": "요란스럽다, 시끄럽다, 요란한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "dắt dìu",
+   "ko": "이끌다, 안내하다, 인도하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "chim muông",
+   "ko": "새와 짐승의 총칭",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "nồng thắm",
+   "ko": "열렬한, 열정적인",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "hãnh diện",
+   "ko": "뽐낸 얼굴을 하다, 자랑, 행운",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "triền miên",
+   "ko": "끝없는",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "miên man",
+   "ko": "끊임없는, 끝이 없는",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "sáng tỏa",
+   "ko": "빛나다, 번쩍거리다",
+   "kind": "compound",
+   "basis": "문예림 입문사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "lê thê",
+   "ko": "매우 긴",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "sâu đậm",
+   "ko": "깊은",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "bấp bênh",
+   "ko": "불균 형인, 불안정한, 불확실한",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "nhấp nhô",
+   "ko": "기복하다, 굽이치다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "ca khải",
+   "ko": "개가, 개선가",
+   "kind": "compound",
+   "basis": "한국외대 사전 + 어순 뒤집기"
+  },
+  {
+   "vi": "khải hòan",
+   "ko": "금의환양, 개선하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "chi phối",
+   "ko": "지배하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "lái buôn",
+   "ko": "무역업자, 상인",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "hy lạp",
+   "ko": "그리스",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "nguôi ngoai",
+   "ko": "점점 줄어들다, 가라앉다",
+   "kind": "compound",
+   "basis": "문예림 입문사전"
+  },
+  {
+   "vi": "mò mẫm",
+   "ko": "더듬어서 찾다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "loay hoay",
+   "ko": "기를 쓰는, 애쓰는, 고생스레 …하다, 열심히 …하다",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "khổng lồ",
+   "ko": "거대한",
+   "kind": "compound",
+   "basis": "한국외대 사전"
+  },
+  {
+   "vi": "lẻ loi",
+   "ko": "홀로, 외로운",
+   "kind": "compound",
+   "basis": "보충(가사 맥락)"
+  },
+  {
+   "vi": "nô lệ",
+   "ko": "노예",
+   "kind": "compound",
+   "basis": "보충(가사 맥락)"
+  },
+  {
+   "vi": "ta",
+   "ko": "우리, 나",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngài",
+   "ko": "그분(상대를 존경해서 하는 말)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bao",
+   "ko": "얼마나(감탄)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "luôn",
+   "ko": "항상, 늘",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chúa",
+   "ko": "주, 신",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "theo",
+   "ko": "따르다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đời",
+   "ko": "삶, 일생",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mãi",
+   "ko": "계속, 영원히",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ban",
+   "ko": "주다, 하사하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngày",
+   "ko": "날",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bên",
+   "ko": "옆, 곁",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chẳng",
+   "ko": "결코 ~ 아니다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dù",
+   "ko": "비록, 어쨌든",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hãy",
+   "ko": "~하자, ~하라",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "điều",
+   "ko": "일, 것",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thay",
+   "ko": "바꾸다, 대신하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nhau",
+   "ko": "서로",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "muôn",
+   "ko": "만(萬), 수많은",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đã",
+   "ko": "이미 ~했다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nay",
+   "ko": "지금, 현재",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "yêu",
+   "ko": "사랑하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "những",
+   "ko": "~들(복수 표지)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "rao",
+   "ko": "큰소리로 알리다, 선포하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sướng",
+   "ko": "기분 좋은, 행복한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lối",
+   "ko": "길, 방법",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "qúy",
+   "ko": "귀한, 존중하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hằng",
+   "ko": "항상, 언제나",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vững",
+   "ko": "견고한, 안정된",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mai",
+   "ko": "아침, 내일",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chúng",
+   "ko": "그들, ~들",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hết",
+   "ko": "모두, 다하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đang",
+   "ko": "~하는 중이다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vua",
+   "ko": "왕",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thôi",
+   "ko": "그만두다, ~일 뿐이다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hát",
+   "ko": "노래하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sức",
+   "ko": "힘, 능력",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mang",
+   "ko": "가져오다, 운반하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "việc",
+   "ko": "일",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "còn",
+   "ko": "남다, 아직",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ân",
+   "ko": "은혜",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mừng",
+   "ko": "기뻐하다, 축하하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tươi",
+   "ko": "신선한, 싱싱한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "kiên",
+   "ko": "굳건한, 동요하지 않는",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vậy",
+   "ko": "그렇게, 그와 같이",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xưa",
+   "ko": "옛날",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "suốt",
+   "ko": "내내, 처음부터 끝까지",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dẫu",
+   "ko": "비록 ~이지만",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mến",
+   "ko": "사랑하다, 애호하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thì",
+   "ko": "~는/은(주제), ~이면",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cạnh",
+   "ko": "옆, 가장자리",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thờ",
+   "ko": "숭배하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lo",
+   "ko": "걱정하다, 근심하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hăng",
+   "ko": "열성적인, 기운찬",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tựa",
+   "ko": "기대다, 의지하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tuyệt",
+   "ko": "절묘한, 뛰어난",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lay",
+   "ko": "흔들리다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "rời",
+   "ko": "떠나다, 떨어지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "soi",
+   "ko": "빛을 비추다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "rằng",
+   "ko": "~라고(접속사)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vời",
+   "ko": "아주 먼",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngay",
+   "ko": "곧은, 즉시",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nhớ",
+   "ko": "기억하다, 그리워하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hầu",
+   "ko": "시중들다, 섬기다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khăn",
+   "ko": "수건",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngôi",
+   "ko": "지위, 보좌",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đều",
+   "ko": "고르게, 모두",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bởi",
+   "ko": "~때문에, ~에 의해",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mau",
+   "ko": "빠른, 빨리",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tha",
+   "ko": "용서하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lành",
+   "ko": "좋은, 온유한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lúc",
+   "ko": "때, 순간",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cứ",
+   "ko": "계속하다, 그대로",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đấng",
+   "ko": "분(큰 일을 하는 인물에 붙는 말)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trọn",
+   "ko": "완전히, 온전히",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chốn",
+   "ko": "곳, 장소",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngợi",
+   "ko": "칭찬하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vang",
+   "ko": "울려 퍼지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "giảng",
+   "ko": "설명하다, 전하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đôi",
+   "ko": "쌍, 한 쌍",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hỡi",
+   "ko": "~여(부르는 말)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngời",
+   "ko": "빛나다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "quanh",
+   "ko": "주위, 둘레",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khuyên",
+   "ko": "충고하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "kề",
+   "ko": "가까이",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ôi",
+   "ko": "아!, 오!(감탄사)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "say",
+   "ko": "취하다, 빠지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khiến",
+   "ko": "~하게 하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tan",
+   "ko": "녹다, 흩어지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nan",
+   "ko": "어려움",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nâng",
+   "ko": "들어올리다, 받들다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bền",
+   "ko": "지속적인, 견고한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngàn",
+   "ko": "천(千)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "rạng",
+   "ko": "밝아지다, 빛나다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chia",
+   "ko": "나누다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vây",
+   "ko": "에워싸다, 둘러싸다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lạy",
+   "ko": "엎드려 절하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khẩn",
+   "ko": "긴급한, 간절한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nguy",
+   "ko": "위험한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vàn",
+   "ko": "만(萬), 셀 수 없이 많은",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "than",
+   "ko": "한탄하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dư",
+   "ko": "남아있는, 넉넉한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "suy",
+   "ko": "헤아리다, 생각하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xây",
+   "ko": "건설하다, 세우다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hề",
+   "ko": "전혀(không hề)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chiếu",
+   "ko": "비추다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngẫm",
+   "ko": "숙고하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cậy",
+   "ko": "의지하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chí",
+   "ko": "뜻, 의지",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tận",
+   "ko": "다하다, 끝까지",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "kiếm",
+   "ko": "찾다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dường",
+   "ko": "~처럼 보이다(dường bao 얼마나)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khôn",
+   "ko": "슬기로운, 끝없는(khôn cùng)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thuở",
+   "ko": "시절, 때",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "giao",
+   "ko": "맡기다, 인도하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gánh",
+   "ko": "짊어지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trôi",
+   "ko": "흐르다, (시간이) 지나다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thơ",
+   "ko": "시, 어린(trẻ thơ)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "náu",
+   "ko": "숨다, 피하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chắc",
+   "ko": "확실한, 견고한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xóa",
+   "ko": "지우다, 없애다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lẻ",
+   "ko": "홀로, 외로운(lẻ loi)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dựng",
+   "ko": "세우다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "càng",
+   "ko": "더욱더",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nguồn",
+   "ko": "근원, 발원지",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hòang",
+   "ko": "찬란한(huy hoàng), 황제",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thấu",
+   "ko": "꿰뚫다, 철저한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nao",
+   "ko": "동요하다, 마음을 어지럽히다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cứu",
+   "ko": "구하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "kìa",
+   "ko": "저기를 보라(감탄사)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thuộc",
+   "ko": "속하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "loi",
+   "ko": "외로운(lẻ loi)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xuân",
+   "ko": "봄, 청춘",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thắm",
+   "ko": "짙은, 진한(thắm thiết 다정한)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lòai",
+   "ko": "종류, 생물(loài người 인류)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cuộc",
+   "ko": "(행사·모임 등을 세는 말)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nương",
+   "ko": "의지하다, 피하다(nương náu)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngập",
+   "ko": "넘치다, 잠기다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngăn",
+   "ko": "막다, 가르다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đáng",
+   "ko": "~할 만하다, 마땅하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tới",
+   "ko": "이르다, 다가오다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ưu",
+   "ko": "우수한, 근심(ưu phiền)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tàn",
+   "ko": "시들다, 쇠하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gây",
+   "ko": "일으키다, 야기하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "giây",
+   "ko": "초, 순간",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "loan",
+   "ko": "알리다(loan báo)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "biến",
+   "ko": "사라지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vơi",
+   "ko": "줄어들다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khỏi",
+   "ko": "~에서 벗어나다, (병이) 낫다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chịu",
+   "ko": "참다, 견디다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trao",
+   "ko": "주다, 건네다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dành",
+   "ko": "마련해 두다, 바치다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sánh",
+   "ko": "비교하다, 견주다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "reo",
+   "ko": "환호하다(reo hò)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hãi",
+   "ko": "두려워하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "phai",
+   "ko": "바래다, 시들다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dang",
+   "ko": "펴다, 뻗다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hòai",
+   "ko": "줄곧, 언제나",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dần",
+   "ko": "점점(dần dần)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đong",
+   "ko": "재다, 가득 담다(đong đầy)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lệ",
+   "ko": "눈물, 규칙",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gắng",
+   "ko": "노력하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tiếc",
+   "ko": "아쉬워하다, 후회하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đua",
+   "ko": "경쟁하다, 경주하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chăm",
+   "ko": "열중하다, 돌보다(chăm lo)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bị",
+   "ko": "당하다(수동 표지)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chim",
+   "ko": "새",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "kẻ",
+   "ko": "사람, 자(者)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bất",
+   "ko": "~이 아닌(bất cứ 어떤 ~이든)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bớt",
+   "ko": "줄이다, 덜다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chút",
+   "ko": "조금",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sầu",
+   "ko": "슬픔, 근심",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sắp",
+   "ko": "막 ~하려 하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chuyên",
+   "ko": "전념하는(chuyên tâm)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tỏa",
+   "ko": "퍼지다, 빛을 발하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "non",
+   "ko": "산(núi non), 어린",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngã",
+   "ko": "넘어지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngớt",
+   "ko": "그치다, 약해지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngươi",
+   "ko": "너(아랫사람에게 쓰는 2인칭)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thắng",
+   "ko": "이기다, 승리하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dòng",
+   "ko": "물결, 흐름",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xinh",
+   "ko": "예쁜",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bé",
+   "ko": "작은",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngự",
+   "ko": "(임금이) 자리에 앉다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khổ",
+   "ko": "괴로운, 고통(khổ đau)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trút",
+   "ko": "쏟아붓다, 따르다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chứa",
+   "ko": "담다, 품다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngại",
+   "ko": "걱정하다, 두려워하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mưu",
+   "ko": "계획, 꾀(mưu hại 해치려 꾀하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "toan",
+   "ko": "걱정하다(lo toan), 꾀하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "giấc",
+   "ko": "잠, 꿈",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trăng",
+   "ko": "달",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ơi",
+   "ko": "~여, ~야(부르는 말)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đóai",
+   "ko": "돌아보다, 돌보다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lui",
+   "ko": "물러서다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "phía",
+   "ko": "쪽, 방향",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hai",
+   "ko": "둘",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "rọi",
+   "ko": "비추다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "quen",
+   "ko": "알다, 친숙한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đặt",
+   "ko": "두다, 놓다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "niềm",
+   "ko": "감정 명사 앞에 붙는 종별사(niềm tin 믿음)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lầm",
+   "ko": "잘못하다, 그릇되다(lầm lạc)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "giọng",
+   "ko": "목소리, 억양",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thù",
+   "ko": "원수, 원한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hại",
+   "ko": "해치다, 해로운",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lỗi",
+   "ko": "잘못, 허물",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nồng",
+   "ko": "진한, 뜨거운",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đáy",
+   "ko": "바닥, 밑바닥",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vẹn",
+   "ko": "온전한(trọn vẹn)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xiết",
+   "ko": "얼마나(xiết bao), 끝없이",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "báu",
+   "ko": "귀중한, 보배로운",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nỗi",
+   "ko": "(감정·사정 앞에 붙는 말)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vượt",
+   "ko": "넘다, 뛰어넘다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thầm",
+   "ko": "은밀히, 마음속으로",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dõi",
+   "ko": "지켜보다, 뒤쫓다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thâu",
+   "ko": "거두다, 모으다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "kho",
+   "ko": "창고, 곳간",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mỏi",
+   "ko": "지친",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngắm",
+   "ko": "바라보다, 주시하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "rộn",
+   "ko": "바쁜, 분주한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đếm",
+   "ko": "세다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khinh",
+   "ko": "경멸하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khúc",
+   "ko": "곡(khúc ca 노래), 후렴(điệp khúc)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đàn",
+   "ko": "무리, 악기를 연주하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngọn",
+   "ko": "끝, 꼭대기, (횃불 따위를 세는 말)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sưởi",
+   "ko": "쬐다, 따뜻하게 하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gác",
+   "ko": "제쳐 두다, 놓다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "buông",
+   "ko": "놓다, 풀어놓다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "răn",
+   "ko": "훈계하다(khuyên răn)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thóat",
+   "ko": "벗어나다, 탈출하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chê",
+   "ko": "비난하다, 조롱하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dẹp",
+   "ko": "없애다, 치우다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chóng",
+   "ko": "빠른, 곧",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dìu",
+   "ko": "부축하여 이끌다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mê",
+   "ko": "빠지다, 미혹되다(u mê 어리석다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lìa",
+   "ko": "떠나다, 헤어지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "kể",
+   "ko": "말하다, 열거하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trầm",
+   "ko": "잠기다, 가라앉다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xua",
+   "ko": "쫓아내다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khiếp",
+   "ko": "두려워하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sang",
+   "ko": "건너다, (때가) 오다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đề",
+   "ko": "쓰다, 제목",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nhòa",
+   "ko": "희미해지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sờn",
+   "ko": "해지다, 지치다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vội",
+   "ko": "서두르다, 급히",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "suối",
+   "ko": "샘, 시냇물",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "phàm",
+   "ko": "평범한(siêu phàm 비범한)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "u",
+   "ko": "어두운(âm u)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tụng",
+   "ko": "찬송하다(chúc tụng)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vọng",
+   "ko": "울리다, 메아리치다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lan",
+   "ko": "퍼지다, 난초",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "no",
+   "ko": "배부른, 풍족한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "oai",
+   "ko": "위엄 있는",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đem",
+   "ko": "가져가다, 가져오다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tội",
+   "ko": "죄",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "họp",
+   "ko": "모이다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tương",
+   "ko": "서로(tương trợ 서로 돕다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xét",
+   "ko": "살피다, 판단하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lấp",
+   "ko": "메우다, 덮다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đổ",
+   "ko": "붓다, 쏟다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mạng",
+   "ko": "생명, 목숨",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gieo",
+   "ko": "뿌리다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hạ",
+   "ko": "낮추다, 내리다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nuôi",
+   "ko": "기르다, 먹이다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lạ",
+   "ko": "낯선, 이상한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "óan",
+   "ko": "원망하다, 원한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tia",
+   "ko": "광선, 빛줄기",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tuôn",
+   "ko": "흘러나오다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gốc",
+   "ko": "근원, 뿌리",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "giành",
+   "ko": "쟁취하다, 얻어내다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngơi",
+   "ko": "쉬다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mờ",
+   "ko": "흐릿한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dò",
+   "ko": "살피다, 탐색하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tháp",
+   "ko": "탑, 망대",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ẩn",
+   "ko": "숨다(ẩn náu)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "luyện",
+   "ko": "단련하다, 정련하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trỗi",
+   "ko": "일어나다, 높이 울리다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chuộc",
+   "ko": "대속하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khao",
+   "ko": "갈망하다(khao khát)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hữu",
+   "ko": "있다, 소유하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngước",
+   "ko": "눈을 들다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đồi",
+   "ko": "언덕",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lơ",
+   "ko": "소홀한(lơ là)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "pha",
+   "ko": "섞다, 타다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đòan",
+   "ko": "단체, 무리",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dắt",
+   "ko": "이끌다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tránh",
+   "ko": "피하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chăng",
+   "ko": "~일까?(의문)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thắp",
+   "ko": "밝히다, 불을 붙이다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hoan",
+   "ko": "기쁜, 환희(hoan ca)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gươm",
+   "ko": "검, 칼",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cái",
+   "ko": "~개(사물을 세는 종별사), 아이(con cái 자녀)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngóng",
+   "ko": "기다리다, 고대하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dương",
+   "ko": "태양(vầng dương), 양(陽)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lệnh",
+   "ko": "명령",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vùng",
+   "ko": "지역, 곳",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vút",
+   "ko": "높이 솟은",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lẽ",
+   "ko": "이치, 도리",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trú",
+   "ko": "머무르다, 거하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bẫy",
+   "ko": "덫, 올가미",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bầu",
+   "ko": "(하늘 등) 둥근 공간(bầu trời 하늘)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mồ",
+   "ko": "무덤",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "huyết",
+   "ko": "피, 혈액",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lều",
+   "ko": "천막, 오두막",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "diệt",
+   "ko": "멸하다, 파괴하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bông",
+   "ko": "꽃",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nghịch",
+   "ko": "거역하다, 대적하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "màn",
+   "ko": "장막, 휘장",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "neo",
+   "ko": "닻",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ôn",
+   "ko": "온화한(ôn hòa), 복습하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hao",
+   "ko": "소모되다, 줄어들다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tung",
+   "ko": "던지다, 흩뿌리다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sương",
+   "ko": "이슬, 안개",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tô",
+   "ko": "칠하다, 꾸미다(điểm tô)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cuồng",
+   "ko": "광란의, 미친(cuồng phong 폭풍)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lặng",
+   "ko": "조용한, 잠잠한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thỏa",
+   "ko": "만족하다, 충족하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thú",
+   "ko": "짐승, 기쁨",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sớt",
+   "ko": "나누어 덜다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngỏanh",
+   "ko": "뒤돌아보다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bừng",
+   "ko": "확 일어나다, 환하게 밝아지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chệch",
+   "ko": "벗어나다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "phủ",
+   "ko": "덮다, 에워싸다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thơm",
+   "ko": "향기로운",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "uy",
+   "ko": "위엄, 권위(uy nghi)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chối",
+   "ko": "거부하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nàng",
+   "ko": "그녀, 아가씨",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lẫn",
+   "ko": "섞이다, ~과 (A lẫn B)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ách",
+   "ko": "멍에, 속박",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bánh",
+   "ko": "빵",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đền",
+   "ko": "성전, 보상하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hùng",
+   "ko": "강한, 웅장한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lắng",
+   "ko": "가라앉다, 귀 기울이다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vừa",
+   "ko": "막, 방금, 알맞다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngược",
+   "ko": "거꾸로, 반대로",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nhạo",
+   "ko": "조롱하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hào",
+   "ko": "자랑스러운(tự hào)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thầy",
+   "ko": "스승, 선생",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tỉnh",
+   "ko": "깨다, 정신을 차리다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tàng",
+   "ko": "감추다, 저장하다(kho tàng 보물)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cay",
+   "ko": "매운, 신랄한(cay nghiệt 모질다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thưởng",
+   "ko": "상을 주다, 보상하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "can",
+   "ko": "마음속(tâm can), 말리다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hiệp",
+   "ko": "합치다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gắn",
+   "ko": "붙이다, 결속하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vách",
+   "ko": "절벽, 벽",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trì",
+   "ko": "유지하다(kiên trì 끈기)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khoe",
+   "ko": "뽐내다, 자랑하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chợt",
+   "ko": "갑자기",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thóang",
+   "ko": "언뜻, 얼핏(thấp thoáng)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dấn",
+   "ko": "몸을 던지다(dấn thân)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lật",
+   "ko": "뒤집다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "keo",
+   "ko": "풀, 아교(keo sơn 굳은 결속)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gối",
+   "ko": "베개",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thốt",
+   "ko": "말하다, 내뱉다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "buổi",
+   "ko": "시간대, 모임(buổi thờ phượng)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nẻo",
+   "ko": "길",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "kín",
+   "ko": "은밀한, 깊이 감춰진",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đám",
+   "ko": "무리(đám đông 군중)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chìm",
+   "ko": "가라앉다, 잠기다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khuôn",
+   "ko": "틀, 본보기",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "quăng",
+   "ko": "던지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "song",
+   "ko": "그러나, (song hành 나란히 가다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "manh",
+   "ko": "(gian manh 간교하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chừng",
+   "ko": "정도, 한도",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khấn",
+   "ko": "기원하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vun",
+   "ko": "북돋우다(vun bồi)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tớ",
+   "ko": "종(đầy tớ), 나",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cơn",
+   "ko": "(비·발작 등 갑작스러운 현상 앞에 붙는 말)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trở",
+   "ko": "돌아가다, 방해하다(ngăn trở)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "phố",
+   "ko": "거리",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "diện",
+   "ko": "얼굴, 모습(nhận diện 알아보다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tổ",
+   "ko": "조상, 둥지",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nấy",
+   "ko": "각각(ai nấy 저마다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trách",
+   "ko": "책망하다(chê trách)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đắm",
+   "ko": "빠지다, 잠기다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trĩu",
+   "ko": "무겁게 처진",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "phiên",
+   "ko": "차례, 회기(phiên họp 회의)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "kiêu",
+   "ko": "교만한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lau",
+   "ko": "닦다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hờn",
+   "ko": "원한, 토라짐",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sa",
+   "ko": "떨어지다(sa ngã 넘어지다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chàng",
+   "ko": "그이, 청년",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mù",
+   "ko": "눈먼, 어두운",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngọc",
+   "ko": "옥, 보석",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "múa",
+   "ko": "춤추다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trào",
+   "ko": "솟아 넘치다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nhòai",
+   "ko": "지쳐 늘어지다(mệt nhoài)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thua",
+   "ko": "지다, 뒤지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vẫy",
+   "ko": "흔들다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "rừng",
+   "ko": "숲",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sá",
+   "ko": "개의하다(có sá chi 개의치 않는다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nhắn",
+   "ko": "전하다, 메시지를 보내다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ảo",
+   "ko": "가상의, 허상의",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cận",
+   "ko": "가까운(kề cận 가까이 있다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thái",
+   "ko": "지나친(thái quá)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nga",
+   "ko": "읊조리다(ngân nga)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chôn",
+   "ko": "묻다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vùi",
+   "ko": "파묻다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hố",
+   "ko": "구덩이",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lỡ",
+   "ko": "그르치다, 실수로 ~하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đẫm",
+   "ko": "흠뻑 젖다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngoan",
+   "ko": "착한, 순한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vạn",
+   "ko": "만(萬), 온갖(vạn vật 만물)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "so",
+   "ko": "비교하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "phục",
+   "ko": "복종하다(vâng phục)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dẫy",
+   "ko": "가득하다(đầy dẫy)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tượng",
+   "ko": "형상, 우상(thần tượng)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nghiêng",
+   "ko": "기울이다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trổi",
+   "ko": "높이 울려 퍼지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trò",
+   "ko": "역할(vai trò), 제자",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "giam",
+   "ko": "가두다(tống giam)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lũ",
+   "ko": "무리, 패거리(bè lũ)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tà",
+   "ko": "사악한(tà gian)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tụ",
+   "ko": "모이다(đoàn tụ 재결합)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trận",
+   "ko": "전투",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "góp",
+   "ko": "보태다, 기여하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ích",
+   "ko": "유익한(có ích)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thao",
+   "ko": "뒤척이다(thao thức)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thấm",
+   "ko": "스며들다, 깊이 배다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "căm",
+   "ko": "증오하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chống",
+   "ko": "반대하다, 대적하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tộc",
+   "ko": "종족, 민족(sắc tộc)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "màng",
+   "ko": "개의하다(không màng 개의치 않다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gầm",
+   "ko": "포효하다, 으르렁거리다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lúa",
+   "ko": "벼, 곡식",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tấm",
+   "ko": "(장·조각을 세는 말)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gom",
+   "ko": "모으다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đảm",
+   "ko": "맡다, 감당하다(đảm đương)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tông",
+   "ko": "혈통(tổ tông 조상)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "báng",
+   "ko": "모독하다(phỉ báng)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "siêng",
+   "ko": "부지런하다(siêng năng)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xảy",
+   "ko": "일어나다, 생기다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khăng",
+   "ko": "(khăng khăng 고집스럽게)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nếm",
+   "ko": "맛보다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xôi",
+   "ko": "(xa xôi 멀다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chấp",
+   "ko": "받아들이다(chấp nhận)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cuốn",
+   "ko": "(책을 세는 말), 감다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hiếu",
+   "ko": "좋아하다(hiếu khách 환대)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bội",
+   "ko": "곱절(bội thu 풍작)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nhọc",
+   "ko": "수고로운, 피곤한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bề",
+   "ko": "면, 방면(bề ngoài 겉모습)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nhịp",
+   "ko": "박자, 리듬",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dạng",
+   "ko": "모양(ló dạng 모습을 드러내다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lưu",
+   "ko": "남기다, 머물다(lưu lại)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thủy",
+   "ko": "변치 않는(chung thủy 신실하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "góa",
+   "ko": "과부",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngát",
+   "ko": "향기 가득한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gấu",
+   "ko": "곰",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lóc",
+   "ko": "(khóc lóc 울부짖다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngờ",
+   "ko": "의심하다, 예상하다(không ngờ 뜻밖에)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thảo",
+   "ko": "풀, 초목(thảo nguyên 초원)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vài",
+   "ko": "몇몇의",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sân",
+   "ko": "마당",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngỡ",
+   "ko": "마치 ~인 듯하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hót",
+   "ko": "(새가) 지저귀다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vân",
+   "ko": "(phân vân 망설이다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vơ",
+   "ko": "(bơ vơ 외로이)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thừng",
+   "ko": "밧줄",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bện",
+   "ko": "꼬다, 엮다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lôi",
+   "ko": "끌다(lôi kéo 꾀어 끌다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khơi",
+   "ko": "먼 바다(biển khơi)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lưng",
+   "ko": "등, 중턱(lưng trời)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vầng",
+   "ko": "(해·달 등 둥근 것을 세는 말)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "phôi",
+   "ko": "(phôi pha 바래다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "làn",
+   "ko": "(바람·물결을 세는 말)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bổ",
+   "ko": "보충하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "phi",
+   "ko": "비범한(phi thường), 달리다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thợ",
+   "ko": "장인, 일꾼",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gốm",
+   "ko": "도자기",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lướt",
+   "ko": "스치듯 지나가다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ô",
+   "ko": "오!(감탄사), 우산",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chấn",
+   "ko": "(phấn chấn 고무되다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ong",
+   "ko": "벌",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tao",
+   "ko": "(thanh tao 고상하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cớ",
+   "ko": "까닭, 이유",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "siêu",
+   "ko": "초월한(siêu phàm), 매우",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ròng",
+   "ko": "순수한(vàng ròng 순금)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dâu",
+   "ko": "며느리(nàng dâu 신부)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bè",
+   "ko": "(bè lũ 패거리)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hò",
+   "ko": "외치다, 환호하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "liền",
+   "ko": "곧, 즉시",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bính",
+   "ko": "(quyền bính 권세)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "kèn",
+   "ko": "나팔",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sót",
+   "ko": "남다, 빠지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bạo",
+   "ko": "포악한(bạo tàn)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xứng",
+   "ko": "걸맞다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vu",
+   "ko": "모함하다(vu oan)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "oan",
+   "ko": "억울한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bọn",
+   "ko": "무리, 패거리",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "di",
+   "ko": "(di truyền 유전) 옮기다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vực",
+   "ko": "깊은 구렁(vực sâu)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khỏa",
+   "ko": "(khỏa lấp 메우다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "khéo",
+   "ko": "능숙한, 솜씨 좋은",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hắn",
+   "ko": "그(낮춰 부르는 3인칭)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nhục",
+   "ko": "(nhục mạ 모욕) 수치",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xá",
+   "ko": "(phố xá 거리)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nát",
+   "ko": "부서진",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "rền",
+   "ko": "우렁차게 울리다(vang rền)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bêu",
+   "ko": "(bêu xấu 욕되게 하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chín",
+   "ko": "아홉, 익은",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gặt",
+   "ko": "수확하다, 거두다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tấn",
+   "ko": "(tấn tới 나아가다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "viếng",
+   "ko": "방문하다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sẵn",
+   "ko": "이미 마련된, 준비된",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nua",
+   "ko": "(già nua 늙은)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hung",
+   "ko": "흉악한",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dãi",
+   "ko": "(dãi dầu 비바람을 맞다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dật",
+   "ko": "(dư dật 풍족하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hỗ",
+   "ko": "(hỗ trợ 돕다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "căng",
+   "ko": "(kiêu căng 교만하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "dưỡng",
+   "ko": "(nuôi dưỡng 양육하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đuốc",
+   "ko": "횃불",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "e",
+   "ko": "걱정하다, ~할까 두렵다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thiêu",
+   "ko": "불사르다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đốt",
+   "ko": "태우다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ló",
+   "ko": "(모습을) 드러내다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "rèn",
+   "ko": "단련하다, 벼리다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sệt",
+   "ko": "(sợ sệt 겁먹다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nhoi",
+   "ko": "(nhỏ nhoi 보잘것없다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bồ",
+   "ko": "(bồ nhiệm 임명하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "qũy",
+   "ko": "귀한(quý의 표기 변형)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tiêu",
+   "ko": "(tiêu hao 소모되다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "điệu",
+   "ko": "가락, 곡조(điệu nhạc)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lòa",
+   "ko": "(chói lòa 눈부시다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xô",
+   "ko": "밀다, 밀려오다(sóng xô)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hủy",
+   "ko": "파괴하다(hủy diệt)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chốc",
+   "ko": "잠깐(phút chốc 순식간)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vĩ",
+   "ko": "(hùng vĩ 웅장한)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ơ",
+   "ko": "(thờ ơ 냉담하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tẩy",
+   "ko": "씻어내다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cổng",
+   "ko": "문",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hẹp",
+   "ko": "좁은",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chạm",
+   "ko": "닿다, 건드리다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bến",
+   "ko": "부두, 나루(bờ bến)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "quây",
+   "ko": "(quây quần 모여들다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "héo",
+   "ko": "시들다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lửng",
+   "ko": "(lửng lơ 둥둥 떠 있다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nề",
+   "ko": "(nặng nề 무겁다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trăm",
+   "ko": "백(百)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "gồng",
+   "ko": "(gánh gồng 짊어지다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lường",
+   "ko": "(khôn lường 헤아릴 수 없다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ràng",
+   "ko": "(rộn ràng 들뜨다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thói",
+   "ko": "습관",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mòn",
+   "ko": "닳다(lối mòn 오솔길)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chường",
+   "ko": "(chán chường 싫증 나다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tích",
+   "ko": "쌓다(gốc tích 근원)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "vươn",
+   "ko": "뻗다, 일어서다(vươn lên)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "kịp",
+   "ko": "제때 미치다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cành",
+   "ko": "가지",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chiều",
+   "ko": "저녁, 오후",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "trùng",
+   "ko": "겹치다(vượt trùng dương 대양을 건너)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lơi",
+   "ko": "(buông lơi 늦추다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "thai",
+   "ko": "(khoan thai 느긋하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "xòe",
+   "ko": "펼치다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nêu",
+   "ko": "제시하다, 들다(nêu gương 모범을 세우다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hằn",
+   "ko": "깊이 패다, 새겨지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "úa",
+   "ko": "시들다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "cầm",
+   "ko": "쥐다(giam cầm 감금)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mơ",
+   "ko": "꿈꾸다(tinh mơ 이른 새벽)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chen",
+   "ko": "(bon chen 다투다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bồng",
+   "ko": "안다(bồng ẵm)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ẵm",
+   "ko": "품에 안다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ắp",
+   "ko": "(đầy ắp 가득하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ngào",
+   "ko": "(ngọt ngào 달콤하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "bộn",
+   "ko": "(bộn bề 어수선하다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lụi",
+   "ko": "사그라들다(tàn lụi)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "sét",
+   "ko": "(đất sét 찰흙)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "rụng",
+   "ko": "떨어지다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tuy",
+   "ko": "비록 ~이지만",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "yeah",
+   "ko": "예~(영어 감탄사)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "lánh",
+   "ko": "피하다(lóng lánh 반짝이다)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "chìa",
+   "ko": "내밀다",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "nè",
+   "ko": "여기, 봐라(감탄·강조)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "hậu",
+   "ko": "왕비(hoàng hậu), 뒤",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tử",
+   "ko": "죽다(sư tử 사자)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "đấy",
+   "ko": "거기, ~이다(강조)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "ly-đi",
+   "ko": "루디아(성서 인물)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "tú",
+   "ko": "빼어난, 아름다운(nữ tú)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "like",
+   "ko": "좋아요(영어 like)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "mịt",
+   "ko": "아득한(mịt mờ)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  },
+  {
+   "vi": "fiji",
+   "ko": "피지(나라 이름)",
+   "kind": "single",
+   "basis": "맥락 선택"
+  }
+ ]
+}

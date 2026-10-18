@@ -11810,7 +11810,7 @@ function verifyDistribution(units, dist, pins) {
     "vậy": "그러므로",
     "ta": "나",
     "giao": "사귈 교(交)",
-    "ngài": "당신(2, 3인칭 존칭), -님",
+    "ngài": "당신(2인칭 존칭), 그분(3인칭 존칭)",
     "náu": "피하다",
     "cầu": "구하다, 간구하다, 청하다; 다리",
     "điều": "것",
@@ -11904,6 +11904,9 @@ function verifyDistribution(units, dist, pins) {
       var k = lyricWordKey(word);
       if (!d.meaning[k]) d.meaning[k] = supplement[word];
     });
+    // The approved word list (lyric_meanings_approved_ko.json) replaces the dictionary supplement; the meanings the user entered by hand come after it.
+    var approved = typeof LYRIC_MEANINGS_APPROVED_KO !== "undefined" && LYRIC_MEANINGS_APPROVED_KO || {};
+    Object.keys(approved).forEach(function (word) { d.meaning[lyricWordKey(word)] = approved[word]; });
     Object.keys(LYRIC_WORD_KO_MEANINGS).forEach(function (word) { d.meaning[lyricWordKey(word)] = LYRIC_WORD_KO_MEANINGS[word]; });
     if (koreanNotationRegion !== "saigon") Object.keys(LYRIC_WORD_KO_PRON).forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
     ["lúc", "khuynh hướng", "gì", "muôn"].forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });

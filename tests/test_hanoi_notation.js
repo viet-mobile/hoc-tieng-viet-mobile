@@ -6,11 +6,11 @@ const block = src.slice(src.indexOf('/* HANOI-KO-BEGIN */'), src.indexOf('/* HAN
 assert(block.length > 500, 'converter block found');
 const {w, s} = new Function(block + ';return {w:hanoiKoreanWord,s:hanoiKoreanSyllable};')();
 const rules = {
-  // the chart's own examples that follow its rules
-  'Tháp Canh': '탑 까인', 'Nhân Chứng': '년 쯩', 'Đức Giê-hô-va': '득 제호ㅸㅏ', 'Kinh Thánh': '낀 타인', 'hội thánh': '호이 타인', 'nhóm họp': '뇸 홉',
-  'bài hát': '바이 핫', 'cầu nguyện': '꺼우 응우옌', 'tiếng Việt': '띠엥 ㅸㅣ엣', 'học hỏi': '홉 호이', 'chúng ta': '쭘 따', 'anh chị': '아인 찌',
-  'quan trọng': '꽌 쫌', 'tin mừng': '띤 믕', 'Nước Trời': '느억 쩌이', 'Đức Chúa Trời': '득 쭈어 쩌이', 'bạn của ngài': '반 꾸어 응아이',
-  'người Hàn': '응어이 한', 'thần khí thánh': '턴 키 타인', 'không': '컴',
+  // the chart's own examples that follow its rules (final -nh = 인ㅇ, -c / -ng after o, ô, u = ㅂ / ㅁ tails: the updated chart)
+  'Tháp Canh': '탑 까인ㅇ', 'Nhân Chứng': '년 쯩', 'Đức Giê-hô-va': '득 제호ㅸㅏ', 'Kinh Thánh': '낀ㅇ 타인ㅇ', 'hội thánh': '호이 타인ㅇ', 'nhóm họp': '뇸 홉',
+  'bài hát': '바이 핫', 'cầu nguyện': '꺼우 응우옌', 'tiếng Việt': '띠엥 ㅸㅣ엣', 'học hỏi': '혹ㅂ 호이', 'chúng ta': '쭝ㅁ 따', 'anh chị': '아인ㅇ 찌',
+  'quan trọng': '꽌 쫑ㅁ', 'tin mừng': '띤 믕', 'Nước Trời': '느억 쩌이', 'Đức Chúa Trời': '득 쭈어 쩌이', 'bạn của ngài': '반 꾸어 응아이',
+  'người Hàn': '응어이 한', 'thần khí thánh': '턴 키 타인ㅇ', 'không': '컴',
   // uy = ㅟ, uyê = ㅜ예, yê = ㅖ (the chart, 2026-10-18)
   'huy': '휘', 'quy': '뀌', 'nguy': '응위', 'tuy': '뛰', 'uy': '위', 'yêu': '예우', 'yên': '옌', 'yết': '옛', 'tuyệt': '뚜옛', 'quyền': '뀌에 ㄴ'.replace(' ㄴ', 'ㄴ'),
   'nguyện': '응우옌', 'khuyên': '쿠옌', 'chuyện': '쭈옌'
