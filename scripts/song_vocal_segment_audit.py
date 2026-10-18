@@ -134,7 +134,7 @@ def merge_manual_children(report, manifest, rows):
 
 def write_manifest(manifest, table):
     sources = json.load(open(os.path.join(ROOT,'scripts/data/kingdom_vi_vocal_sources.json'), encoding='utf-8'))
-    fixes = {90: [['†a', 'ta']], 91: [['nơời', 'ngời']], 96: [['chỉ;', 'chi;']], 100: [['†a', 'ta'], ['đồ bao', 'đổ bao']], 101: [['†a', 'ta']], 102: [['noài', 'ngài'], ['†a', 'ta']], 109: [['†a', 'ta']], 111: [['†a', 'ta']], 117: [['đãng', 'đấng']], 123: [['†a', 'ta']], 124: [['cạnh ngoài.', 'cạnh ngài.']], 128: [['†a', 'ta']], 137: [['quỹ trọng', 'quý trọng']], 142: [['caol', 'cao'], ['noài', 'ngài']]}
+    fixes = {90: [['†a', 'ta']], 91: [['nơời', 'ngời']], 94: [['phần quyết', 'phán quyết']], 96: [['chỉ;', 'chi;']], 100: [['†a', 'ta'], ['đồ bao', 'đổ bao']], 101: [['†a', 'ta']], 102: [['noài', 'ngài'], ['†a', 'ta']], 109: [['†a', 'ta']], 111: [['†a', 'ta']], 117: [['đãng', 'đấng']], 123: [['†a', 'ta']], 124: [['cạnh ngoài.', 'cạnh ngài.']], 128: [['†a', 'ta']], 137: [['quỹ trọng', 'quý trọng']], 142: [['caol', 'cao'], ['noài', 'ngài']]}
     with open(os.path.join(ROOT,'song_vocal_segments.js'),'w',encoding='utf-8') as stream:
         stream.write('// Generated same-recording official cues / vocal alignment; uncertain lines disabled.\n')
         for name,data in [('KINGDOM_VI_VOCAL_SOURCES',table),('KINGDOM_VI_VOCAL_SOURCE_MAP',sources),('KINGDOM_VI_LYRIC_FIXES',fixes),('KINGDOM_VOCAL_SEGMENTS',manifest)]:

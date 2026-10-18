@@ -29,7 +29,7 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     const rules = await E(`(()=>{const w=window.__hanoiKo.word;return ['Tháp Canh','Nhân Chứng','Đức Giê-hô-va','Kinh Thánh','hội thánh','nhóm họp','bài hát','cầu nguyện','tiếng Việt','học hỏi','chúng ta','anh chị','quan trọng','tin mừng','Nước Trời','Đức Chúa Trời','bạn của ngài','người Hàn','thần khí thánh','không'].map(x=>w(x));})()`);
     eq(rules, ['탑 까인ㅇ', '년 쯩', '득 제호ㅸㅏ', '낀ㅇ 타인ㅇ', '호이 타인ㅇ', '뇸 홉', '바이 핫', '꺼우 응우옌', '띠엥 ㅸㅣ엣', '혹ㅂ 호이', '쭝ㅁ 따', '아인ㅇ 찌', '꽌 쫑ㅁ', '띤 믕', '느억 쩌이', '득 쭈어 쩌이', '반 꾸어 응아이', '응어이 한', '턴 키 타인ㅇ', '컴'], 'chart rules');
     // ---- a lyric line in the page ----
-    await E(`(()=>{const d=document.createElement('div');d.id='lyr';d.className='lyric-vi vn';d.lang='vi';d.style.cssText='position:fixed;left:20px;top:200px;font-size:22px;white-space:nowrap;background:#fff;z-index:1';d.textContent='Đọc sách, Kinh Thánh và Giê-hô-va, xin cầu nguyện';document.body.appendChild(d);})()`);
+    await E(`(()=>{const d=document.createElement('div');d.id='lyr';d.className='lyric-vi vn';d.lang='vi';d.style.cssText='position:fixed;left:20px;top:200px;font-size:15px;white-space:nowrap;background:#fff;z-index:1';d.textContent='Đọc sách, Kinh Thánh và Giê-hô-va, xin cầu nguyện, phán quyết, phán xét';document.body.appendChild(d);})()`);
     const tap = async word => E(`(async()=>{const el=document.getElementById('lyr'),tn=el.firstChild,i=tn.data.indexOf(${JSON.stringify(word)});const r=document.createRange();r.setStart(tn,i);r.setEnd(tn,i+${JSON.stringify(word)}.length);const b=r.getBoundingClientRect();
       el.dispatchEvent(new MouseEvent('click',{bubbles:true,clientX:b.left+b.width/2,clientY:b.top+b.height/2}));
       const p=document.querySelector('.lyric-word-pop');return p?{ko:p.querySelector('.lyric-word-ko')?.textContent||'',mean:(p.querySelector('.lyric-word-mean')||{}).textContent||'',n:document.querySelectorAll('.lyric-word-pop').length,top:p.getBoundingClientRect().top,bottom:p.getBoundingClientRect().bottom}:null;})()`);
@@ -39,6 +39,8 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     r = await tap('Thánh'); ok(r && r.ko === '낀ㅇ 타인ㅇ' && r.n === 1, 'tapping the second syllable gives the same word, one popup: ' + JSON.stringify(r));
     r = await tap('sách'); ok(r && r.ko === '독ㅂ 사익', 'updated lip closure and preserved sách exception: ' + JSON.stringify(r));
     r = await tap('Giê-hô-va'); ok(r && r.ko === '제호ㅸㅏ' && /여호와/.test(r.mean), 'hyphenated name: ' + JSON.stringify(r));
+    r = await tap('quyết'); ok(r && /판결/.test(r.mean), 'set meaning of a 2-syllable lyric word: ' + JSON.stringify(r));
+    r = await tap('xét'); ok(r && /심판하다/.test(r.mean), 'phán xét: ' + JSON.stringify(r));
     r = await tap('xin'); ok(r && r.ko === '씬', 'one syllable: ' + JSON.stringify(r));
     ok(r && r.top >= 0 && r.bottom <= await E('window.innerHeight'), 'popup inside the viewport');
     await E(`document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape'}))`);

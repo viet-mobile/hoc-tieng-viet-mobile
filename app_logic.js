@@ -3161,6 +3161,24 @@
       var h = tabbarEl.getBoundingClientRect().height;
       if (h > 0) document.documentElement.style.setProperty("--tabbar-h", h + "px");
     }
+    // The sticky sub-tab row of the open panel (--subtab-h): things that stick below the tab bar (the song bar) start under it.
+    function syncSubtabHeight() {
+      var h = 0;
+      document.querySelectorAll(".panel > .subtab-row").forEach(function (row) {
+        if (row.offsetParent !== null && getComputedStyle(row).position === "sticky") h = Math.max(h, row.getBoundingClientRect().height);
+      });
+      document.documentElement.style.setProperty("--subtab-h", h + "px");
+    }
+    function syncStickyHeights() { syncTabbarHeight(); syncSubtabHeight(); }
+    if (window.ResizeObserver) {
+      var stickyObserver = new ResizeObserver(syncStickyHeights);
+      stickyObserver.observe(tabbarEl);
+      document.querySelectorAll(".panel > .subtab-row").forEach(function (row) { stickyObserver.observe(row); });
+    }
+    document.addEventListener("click", function (e) { if (e.target.closest && e.target.closest(".tab-btn, .subtab-btn")) setTimeout(syncStickyHeights, 60); });
+    window.addEventListener("load", syncStickyHeights);
+    setTimeout(syncStickyHeights, 600);
+    window.addEventListener("resize", syncSubtabHeight);
     syncTabbarHeight();
     window.addEventListener("resize", syncTabbarHeight);
     window.addEventListener("orientationchange", syncTabbarHeight);
@@ -10633,18 +10651,22 @@ function verifyDistribution(units, dist, pins) {
     }).join("");
     return badges ? '<span class="jw-title-badges">' + badges + '</span>' : "";
   }
-  function jwFinderLinksHtml(docid) {
+  function jwFinderItemsHtml(docid) {
     if (!docid) return "";
     var langs = currentLang === "vi" ? ["vi"] : ["vi", currentLang];
-    var items = langs.map(function (l) {
+    return langs.map(function (l) {
       return jwBadgeItemHtml(l, jwOrgBadgeHtml(jwFinderUrl(docid, l), { kind: "publication", lang: l, label: songJwLocale(l)[1] }));
     }).join("");
+  }
+  function jwFinderLinksHtml(docid) {
+    var items = jwFinderItemsHtml(docid);
     return items ? '<div class="jw-badge-row song-jw-links">' + items + '</div>' : "";
   }
+  // Everything jw.org offers for a 왕국 노래 -- 전체 듣기, the jw.org pages, the children's / choir recordings -- sits in ONE wrapping row.
   function songJwLinksHtml(number) {
-    var full = songFullListenHtml(number);
-    if (!(number >= 1 && number <= 163)) return full;
-    return full + jwFinderLinksHtml((number <= 151 ? 1102016800 : 1102022800) + number) + songMediaLinksHtml(number);
+    var parts = songFullListenHtml(number, true);
+    if (number >= 1 && number <= 163) parts += '<span class="song-media-group">' + jwFinderItemsHtml((number <= 151 ? 1102016800 : 1102022800) + number) + '</span>' + songMediaLinksHtml(number, true);
+    return parts ? '<div class="song-full-links song-jw-one-row">' + parts + '</div>' : "";
   }
   // jw.org media page by "lank" (pub-<code>_<track>_<VIDEO|AUDIO>) in one UI language.
   function jwLankUrl(lank, lang) {
@@ -10685,7 +10707,7 @@ function verifyDistribution(units, dist, pins) {
   // 전체 듣기 of a 왕국 노래: its jw.org video (pub-sjjm_<n>_VIDEO) in Vietnamese and in the current UI language (one button
   // when that is Vietnamese). Only the languages jw.org has the song in (SONG_MEDIA.full, scripts/song_full_media.py) get a
   // button; none at all -> no 전체 듣기 area.
-  function songFullListenHtml(number) {
+  function songFullListenHtml(number, inner) {
     var have = (typeof SONG_MEDIA !== "undefined" && SONG_MEDIA && SONG_MEDIA.full) || {};
     var langs = (currentLang === "vi" ? ["vi"] : ["vi", currentLang]).filter(function (l) { return (have[l] || []).indexOf(number) >= 0; });
     if (!langs.length) return "";
@@ -10694,18 +10716,22 @@ function verifyDistribution(units, dist, pins) {
       return url ? '<a class="read-all-btn song-full-link" href="' + escapeAttr(url) +
         '" target="_blank" rel="noopener noreferrer">▶ ' + escapeHtml(songJwLocale(l)[1]) + '</a>' : "";
     }).join("");
-    return buttons ? '<div class="song-full-links"><span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + buttons + '</div>' : "";
+    if (!buttons) return "";
+    var group = '<span class="song-media-group"><span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + buttons + '</span>';
+    return inner ? group : '<div class="song-full-links">' + group + '</div>';
   }
   // Children's song video/audio and choir audio of a song: only the ones that exist on jw.org in that language
   // (SONG_MEDIA, song_media_data.py), for Vietnamese and the current UI language.
-  function songMediaLinksHtml(number) {
+  function songMediaLinksHtml(number, inner) {
     if (typeof SONG_MEDIA === "undefined" || !SONG_MEDIA) return "";
     var langs = currentLang === "vi" ? ["vi"] : ["vi", currentLang];
     return songMediaKinds().map(function (k) {
       var links = langs.filter(function (l) { return ((SONG_MEDIA[k[0]] || {})[l] || []).indexOf(number) >= 0; }).map(function (l) {
         return jwBadgeItemHtml(l, jwOrgBadgeHtml(jwLankUrl("pub-" + k[1] + "_" + number + "_" + k[2], l), { kind: k[0], lang: l, label: T(k[3]) }));
       }).join("");
-      return links ? '<div class="jw-badge-row song-media-links"><span class="song-media-label">' + escapeHtml(T(k[3])) + '</span>' + links + '</div>' : "";
+      if (!links) return "";
+      return inner ? '<span class="song-media-group"><span class="song-media-label">' + escapeHtml(T(k[3])) + '</span>' + links + '</span>' :
+        '<div class="jw-badge-row song-media-links"><span class="song-media-label">' + escapeHtml(T(k[3])) + '</span>' + links + '</div>';
     }).join("");
   }
   // 「행복한 삶을 영원히」 on jw.org: lesson N is docid 1102021200 + N, the part N review 1102021301 + 10 N and
@@ -11638,7 +11664,7 @@ function verifyDistribution(units, dist, pins) {
   // Vietnamese syllable -> the Korean notation closest to the Hanoi pronunciation, by the rules of the [발음][자모] chart
   // (HANOI_CHART): initials, vowels and finals as listed there; a vowel that is a glide + vowel (ia, ua, ươ ...) or ends in
   // an off-glide (i, y, u, o) is written as separate blocks (쭈어, 바이, 꺼우); 응 (ng) and 니 (nh) are blocks of their own
-  // (응어이, 년); 받침 -ch / -nh are the blocks 익 / 인 (-inh is 인 as in 낀); -c, -ng after o, ô, u close the lips (옵, 옴, 웁, 움);
+  // (응어이, 년); uy = ㅟ, yê = ㅖ, uyê = ㅜ예 (the chart); 받침 -ch / -nh are the blocks 익 / 인 (-inh is 인 as in 낀); -c, -ng after o, ô, u close the lips (옵, 옴, 웁, 움);
   // v- / ph- are the letters ㅸ / ㆄ which stand beside the vowel (ㅸㅏ, ㅸㅣ엣).
   var HANOI_CHO = ["ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
   var HANOI_JUNG = ["ㅏ", "ㅐ", "ㅑ", "ㅒ", "ㅓ", "ㅔ", "ㅕ", "ㅖ", "ㅗ", "ㅘ", "ㅙ", "ㅚ", "ㅛ", "ㅜ", "ㅝ", "ㅞ", "ㅟ", "ㅠ", "ㅡ", "ㅢ", "ㅣ"];
@@ -11647,8 +11673,8 @@ function verifyDistribution(units, dist, pins) {
   var HANOI_INITIAL_KO = { ngh: "ng", ng: "ng", nh: "nh", ch: "ㅉ", tr: "ㅉ", th: "ㅌ", kh: "ㅋ", ph: "ㆄ", gh: "ㄱ", gi: "ㅈ", qu: "qu", g: "ㄱ", c: "ㄲ", k: "ㄲ",
     d: "ㅈ", "đ": "ㄷ", t: "ㄸ", b: "ㅂ", p: "ㅃ", s: "ㅆ", x: "ㅆ", r: "ㅈ", v: "ㅸ", l: "ㄹ", m: "ㅁ", n: "ㄴ", h: "ㅎ" };
   var HANOI_MAIN = { a: ["ㅏ"], "ă": ["ㅏ"], "â": ["ㅓ"], e: ["ㅐ"], "ê": ["ㅔ"], i: ["ㅣ"], y: ["ㅣ"], o: ["ㅗ"], "ô": ["ㅗ"], "ơ": ["ㅓ"], u: ["ㅜ"], "ư": ["ㅡ"],
-    ia: ["ㅣ", "ㅓ"], "iê": ["ㅣ", "ㅔ"], "yê": ["ㅣ", "ㅔ"], ua: ["ㅜ", "ㅓ"], "uô": ["ㅜ", "ㅓ"], "uâ": ["ㅜ", "ㅓ"], "uă": ["ㅜ", "ㅏ"], "uê": ["ㅜ", "ㅔ"],
-    ue: ["ㅜ", "ㅐ"], "uơ": ["ㅜ", "ㅓ"], "ưa": ["ㅡ", "ㅓ"], "ươ": ["ㅡ", "ㅓ"], oa: ["ㅗ", "ㅏ"], "oă": ["ㅗ", "ㅏ"], oe: ["ㅗ", "ㅐ"], uy: ["ㅜ", "ㅣ"],
+    ia: ["ㅣ", "ㅓ"], "iê": ["ㅣ", "ㅔ"], "yê": ["ㅖ"], ua: ["ㅜ", "ㅓ"], "uô": ["ㅜ", "ㅓ"], "uâ": ["ㅜ", "ㅓ"], "uă": ["ㅜ", "ㅏ"], "uê": ["ㅜ", "ㅔ"],
+    ue: ["ㅜ", "ㅐ"], "uơ": ["ㅜ", "ㅓ"], "ưa": ["ㅡ", "ㅓ"], "ươ": ["ㅡ", "ㅓ"], oa: ["ㅗ", "ㅏ"], "oă": ["ㅗ", "ㅏ"], oe: ["ㅗ", "ㅐ"], uy: ["ㅟ"],
     uya: ["ㅜ", "ㅑ"], "uyê": ["ㅜ", "ㅖ"] };
   var HANOI_OFFGLIDE = { i: "ㅣ", y: "ㅣ", u: "ㅜ", o: "ㅗ" };
   var HANOI_NH_MERGE = { "ㅏ": "ㅑ", "ㅓ": "ㅕ", "ㅗ": "ㅛ", "ㅜ": "ㅠ", "ㅐ": "ㅒ", "ㅔ": "ㅖ" };
@@ -11739,8 +11765,25 @@ function verifyDistribution(units, dist, pins) {
   // The word is the longest 1-3 syllable word of the [어휘] word list (UNIFIED_WORDS) or of the [발음] examples that contains the tapped
   // syllable; a syllable that belongs to no listed word is a word of its own. The lyric text is never changed: the tapped word is found
   // from the caret position under the finger.
+  // Meanings set for lyric words (they replace the word list's meaning; a longer word's meaning always wins over a shorter one's).
+  var LYRIC_WORD_MEANINGS = {
+    "ủi an": "위안, 위로", "an ủi": "안위, 위로", "thái an": "크나큰 평안", "thái bình": "크나큰 평화", "thư thái": "편안하다",
+    "phán quyết": "판결", "phán": "(높은 분이) 말씀하시다", "phán xét": "심판하다", "phiền": "번민하다", "ưu phiền": "근심과 번민",
+    "muộn phiền": "슬픔과 번민", "vinh hiển": "영광, 영광스러운", "hiển vinh": "영광, 영광스러운",
+    "du dương": "귀에 듣기 좋은, 음악적인, 아름다운 선율의", "đại dương": "대양(大洋), 큰 바다", "ánh dương": "햇빛", "vầng dương": "태양",
+    "giông bão": "폭풍", "bão giông": "폭풍", "cất": "세우다, 짓다, 건축하다", "đớn đau": "괴로워하다", "an nhiên": "평온하다, 근심걱정없다",
+    "bồi": "보충하다, 강화하다, 기르다", "khiêm nhu": "온유하다", "khiêm hoà": "온화하다", "vô ngần": "한없다, 비길데없다",
+    "lo âu": "걱정하다, 불안하다, 염려하다", "âu lo": "걱정하다, 불안하다, 염려하다", "muôn trùng": "셀 수 없이 많다", "lùi": "물러서다",
+    "mối": "관계 및 감정, 단서에 관련된 단어 앞에 오는 종별사(種別詞)", "truyền bá": "전파하다", "thoả tâm": "만족하다", "thoả nguyện": "만족하다",
+    "phai phôi": "퇴색되다", "phôi phai": "퇴색되다", "làn gió": "돌풍"
+  };
   var lyricWordDict = null, lyricWordPop = null;
-  function lyricWordKey(s) { return String(s || "").normalize("NFC").toLowerCase().replace(/\s+/g, " ").trim(); }
+  // Lookup key: lower case, and the tone mark of oa / oe / uy written on the first vowel (hoà = hòa, thoả = thỏa).
+  var LYRIC_TONE_MOVE = { "oà": "òa", "oá": "óa", "oả": "ỏa", "oã": "õa", "oạ": "ọa", "oè": "òe", "oé": "óe", "oẻ": "ỏe", "oẽ": "õe", "oẹ": "ọe",
+    "uỳ": "ùy", "uý": "úy", "uỷ": "ủy", "uỹ": "ũy", "uỵ": "ụy" };
+  function lyricWordKey(s) {
+    return String(s || "").normalize("NFC").toLowerCase().replace(/[ou][àáảãạèéẻẽẹỳýỷỹỵ]/g, function (m) { return LYRIC_TONE_MOVE[m] || m; }).replace(/\s+/g, " ").trim();
+  }
   function lyricWordMeaning(w) {
     var m = w && (w.kr || w.meanings);
     var v = typeof m === "string" ? m : (m && typeof m === "object" ? m.ko : "");
@@ -11855,6 +11898,8 @@ function verifyDistribution(units, dist, pins) {
     Object.keys(LYRIC_WORD_KO_MEANINGS).forEach(function (word) { d.meaning[lyricWordKey(word)] = LYRIC_WORD_KO_MEANINGS[word]; });
     if (koreanNotationRegion !== "saigon") Object.keys(LYRIC_WORD_KO_PRON).forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
     ["lúc", "khuynh hướng", "gì", "muôn"].forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
+    // Meanings the user entered for [노래] lyric words (LYRIC_WORD_MEANINGS) come last: they win over the supplement and the older curated list.
+    Object.keys(LYRIC_WORD_MEANINGS).forEach(function (k) { d.meaning[lyricWordKey(k)] = LYRIC_WORD_MEANINGS[k]; });
     lyricWordDict = d;
     return d;
   }

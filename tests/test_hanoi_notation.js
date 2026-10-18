@@ -1,0 +1,40 @@
+// The Korean notation closest to the Hanoi pronunciation (app_logic.js, hanoiKoreanSyllable / hanoiKoreanWord) follows the [발음][자모] chart
+// (pronunciation_data.HANOI_CHART). Runs without a browser: the converter block is cut out of app_logic.js between its markers.
+const fs = require('fs'), path = require('path'), assert = require('assert');
+const src = fs.readFileSync(path.resolve(__dirname, '..', 'app_logic.js'), 'utf8');
+const block = src.slice(src.indexOf('/* HANOI-KO-BEGIN */'), src.indexOf('/* HANOI-KO-END */'));
+assert(block.length > 500, 'converter block found');
+const {w, s} = new Function(block + ';return {w:hanoiKoreanWord,s:hanoiKoreanSyllable};')();
+const rules = {
+  // the chart's own examples that follow its rules
+  'Tháp Canh': '탑 까인', 'Nhân Chứng': '년 쯩', 'Đức Giê-hô-va': '득 제호ㅸㅏ', 'Kinh Thánh': '낀 타인', 'hội thánh': '호이 타인', 'nhóm họp': '뇸 홉',
+  'bài hát': '바이 핫', 'cầu nguyện': '꺼우 응우옌', 'tiếng Việt': '띠엥 ㅸㅣ엣', 'học hỏi': '홉 호이', 'chúng ta': '쭘 따', 'anh chị': '아인 찌',
+  'quan trọng': '꽌 쫌', 'tin mừng': '띤 믕', 'Nước Trời': '느억 쩌이', 'Đức Chúa Trời': '득 쭈어 쩌이', 'bạn của ngài': '반 꾸어 응아이',
+  'người Hàn': '응어이 한', 'thần khí thánh': '턴 키 타인', 'không': '컴',
+  // uy = ㅟ, uyê = ㅜ예, yê = ㅖ (the chart, 2026-10-18)
+  'huy': '휘', 'quy': '뀌', 'nguy': '응위', 'tuy': '뛰', 'uy': '위', 'yêu': '예우', 'yên': '옌', 'yết': '옛', 'tuyệt': '뚜옛', 'quyền': '뀌에 ㄴ'.replace(' ㄴ', 'ㄴ'),
+  'nguyện': '응우옌', 'khuyên': '쿠옌', 'chuyện': '쭈옌'
+};
+// 'quyền' = qu + yê + n: ㄲ+ㅟ then ㅖ? -> the qu block takes the first vowel of the nucleus, which is ㅖ alone (no merge) -> 꾸 + 옌
+for (const [vi, ko] of Object.entries(rules)) {
+  if (vi === 'quyền') continue;
+  assert.strictEqual(w(vi), ko, vi + ' -> ' + w(vi) + ' (want ' + ko + ')');
+}
+assert.strictEqual(w('quyền'), '꾸옌', 'quyền');
+assert.strictEqual(s('xyz'), '', 'not a Vietnamese syllable');
+// the meanings set for lyric words
+const m = /var LYRIC_WORD_MEANINGS = \{([\s\S]*?)\n  \};/.exec(src);
+assert(m, 'LYRIC_WORD_MEANINGS found');
+const table = new Function('return {' + m[1] + '}')();
+assert.strictEqual(Object.keys(table).length, 37, 'all 37 words');
+assert.strictEqual(table['phán quyết'], '판결');
+assert.strictEqual(table['phán'], '(높은 분이) 말씀하시다');
+assert.strictEqual(table['làn gió'], '돌풍');
+assert(table['mối'].endsWith('종별사(種別詞)'));
+// hoà / hòa, thoả / thỏa: one key
+const keyFn = new Function(src.slice(src.indexOf('var LYRIC_TONE_MOVE'), src.indexOf('function lyricWordMeaning')) + ';return lyricWordKey;')();
+assert.strictEqual(keyFn('Thoả Nguyện'), keyFn('thỏa nguyện'));
+assert.strictEqual(keyFn('khiêm hoà'), keyFn('Khiêm Hòa'));
+assert.strictEqual(keyFn('thuý'), keyFn('thúy'));
+assert.notStrictEqual(keyFn('hoa'), keyFn('hòa'));
+console.log('hanoi notation: ' + Object.keys(rules).length + ' words, 37 lyric meanings checked');

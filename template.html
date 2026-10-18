@@ -1310,6 +1310,8 @@
   .song-acc-body { padding: 4px 12px 12px; border-top: 1px solid var(--border); }
   .song-full-links { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
   .song-full-link { text-decoration: none; }
+  .song-media-group { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+  .song-jw-one-row { align-items: center; gap: 6px 14px; }
   /* one language under the other on every width, as in [왕국 노래] (no columns); the lines are its .lyric-unit boxes */
   .song-lyric-cols { display: block; }
   .song-lyric-col + .song-lyric-col { margin-top: 16px; }
@@ -1551,7 +1553,7 @@
     padding: 6px 10px;
     box-shadow: var(--shadow);
     position: sticky;
-    top: calc(var(--tabbar-h, 60px) + 8px);
+    top: calc(var(--tabbar-h, 60px) + var(--subtab-h, 0px) + 8px);   /* below the tab bar and the sticky sub-tab row */
     z-index: 20;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
