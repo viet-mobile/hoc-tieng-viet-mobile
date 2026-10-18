@@ -11697,7 +11697,7 @@ function verifyDistribution(units, dist, pins) {
     return String.fromCharCode(0xAC00 + (HANOI_CHO.indexOf(cho) * 21 + HANOI_JUNG.indexOf(jung)) * 28 + HANOI_JONG.indexOf(jong || ""));
   }
   // The Korean notation of one syllable (any tone), or "" when it is not a Vietnamese syllable.
-  function hanoiKoreanSyllable(syl, region) {
+  function hanoiKoreanSyllable(syl, region, foreign) {
     var south = region === "saigon";
     var chartExceptions = {"sách":"사익", "su":"수", "giảng":"쟝"};
     if (!south && chartExceptions[String(syl || "").toLowerCase().normalize("NFC")]) return chartExceptions[String(syl).toLowerCase().normalize("NFC")];
@@ -11715,7 +11715,7 @@ function verifyDistribution(units, dist, pins) {
     if (!nm) return "";
     var main = nm[1], J = HANOI_MAIN[main].slice(), glide = nm[2] ? HANOI_OFFGLIDE[nm[2]] : "";
     if (south && main === "ia") J = ["ㅣ", "ㅏ"];
-    if (south && main === "ê") J = fin ? ["ㅓ"] : ["ㅔ", "ㅣ"];
+    if (south && main === "ê") J = fin ? ["ㅓ"] : foreign ? ["ㅔ"] : ["ㅔ", "ㅣ"];   // Saigon: open ê = ㅔ이, but ㅔ in a foreign name (Giê-hô-va 예호야)
     // The chart describes â as between ㅏ and ㅓ; Hangul has no intermediate vowel.
     var round = /^(?:[oôu]|uô)$/.test(main);   // uô ends in ô: -uôc / -uông close the lips too
     var jong = "", extra = "";
@@ -11768,7 +11768,8 @@ function verifyDistribution(units, dist, pins) {
   // A word of 1-3 syllables ("Kinh Thánh", "Giê-hô-va"): spaces between syllables, none inside a hyphenated name.
   function hanoiKoreanWord(text, region) {
     var parts = String(text || "").trim().split(/\s+/).map(function (tok) {
-      return tok.split("-").map(function (s) { return hanoiKoreanSyllable(s, region); }).join("");
+      var name = tok.indexOf("-") >= 0;   // a hyphenated token is a foreign name (Giê-hô-va, Ga-li-lê)
+      return tok.split("-").map(function (s) { return hanoiKoreanSyllable(s, region, name); }).join("");
     });
     return parts.some(function (p) { return !p; }) ? "" : parts.join(" ");
   }

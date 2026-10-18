@@ -18,3 +18,6 @@ print("hanoi / saigon chart: oa = ㅘ")
 for chart in (HANOI_CHART, SAIGON_CHART):
     assert {row[0]: row[2] for row in chart["vowels"]}["uô"] == [["ㅜ오", 0]]
 print("hanoi / saigon chart: uô = ㅜ오")
+ê = {row[0]: row[2] for row in SAIGON_CHART["vowels"]}["ê"]
+assert ["ㅔ이", 0] in ê and any("외국어 인명" in part[0] and "Giê-hô-va 예호야" in part[0] for part in ê), ê
+print("saigon chart: open ê = ㅔ이, foreign names ㅔ (summary on the ê row)")

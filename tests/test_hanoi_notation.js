@@ -33,6 +33,11 @@ assert.strictEqual(w('hoa', 'saigon'), '화', 'Saigon oa = ㅘ');
 // Saigon: final -n is ㅇㄴ also after ô (-ôn = 옹ㄴ); Hanoi -ôn = 온
 for (const [word, ko] of [['nguồn', '응우옹ㄴ'], ['muốn', '무옹ㄴ'], ['luôn', '루옹ㄴ'], ['buồn', '부옹ㄴ'], ['ôn', '옹ㄴ']]) assert.strictEqual(w(word, 'saigon'), ko, 'Saigon -ôn: ' + word);
 assert.strictEqual(w('nguồn', 'hanoi'), '응우온', 'Hanoi nguồn');
+// Saigon: an open ê is ㅔ이 in a Vietnamese word but plain ㅔ in a foreign (hyphenated) name
+assert.strictEqual(w('về', 'saigon'), '예이', 'Saigon open ê = ㅔ이');
+for (const [name, ko] of [['Giê-hô-va', '예호야'], ['Giê-su', '예수'], ['Giê-ru-sa-lem', '예루사램'], ['Ga-li-lê', '가리레'], ['Nô-ê', '노에'], ['Tha-đê', '타데'], ['Ba-tô-lô-mê', '바또로메']]) assert.strictEqual(w(name, 'saigon'), ko, 'Saigon name ' + name);
+assert.strictEqual(w('Giê-hô-va', 'hanoi'), '제호ㅸㅏ', 'Hanoi name unchanged');
+assert.strictEqual(w('Bết-lê-hem', 'saigon'), '벅레햄', 'closed ê in a name keeps the ordinary rule');
 assert.strictEqual(w('ngoan', 'saigon'), '응왕ㄴ', 'Saigon oa = ㅘ (final -n is ㅇㄴ there)');
 assert.strictEqual(w('xin', 'saigon'), '씽ㄴ', 'Saigon x- = ㅆ (final -n is ㅇㄴ there)');
 assert.strictEqual(s('xyz'), '', 'not a Vietnamese syllable');

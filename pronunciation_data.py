@@ -1548,7 +1548,7 @@ SAIGON_CHART["initials"] = [
 ]
 for _vowel in SAIGON_CHART["vowels"]:
     if _vowel[0] == "â": _vowel[2] = [["ㅏ와 ㅓ의 중간",0]]
-    if _vowel[0] == "ê": _vowel[2] = [["(뒤에 받침 없으면)",1],["ㅔ이",0],["(뒤에 받침 있으면)",1],["ㅓ",0]]
+    if _vowel[0] == "ê": _vowel[2] = [["(뒤에 받침 없으면)",1],["ㅔ이",0],["(뒤에 받침 있으면)",1],["ㅓ",0],["(외국어 인명·지명은 받침이 없어도 ㅔ: Giê-hô-va 예호야)",1]]
     if _vowel[0] == "ia": _vowel[2] = [["ㅣ아",0],["(뒤에 받침 없음)",1]]
 for _final in SAIGON_CHART["finals"]:
     if _final[0] in {"-ch","-n","-nh","-t"}:
