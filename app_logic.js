@@ -6677,7 +6677,7 @@
   try { var savedNotationRegion = localStorage.getItem("vi-korean-notation-region"); koreanNotationRegion = ["none", "hanoi", "saigon"].indexOf(savedNotationRegion) >= 0 ? savedNotationRegion : "hanoi"; } catch (_) {}
   function koreanNotationSettingsHtml() {
     if (currentLang !== "ko") return "";
-    return '<div class="p-section"><h3>한국어 발음 표기 설정</h3><label>한국어 발음 표기 <select id="korean-notation-region"><option value="none"' + (koreanNotationRegion === "none" ? ' selected' : '') + '>없음</option><option value="hanoi"' + (koreanNotationRegion === "hanoi" ? ' selected' : '') + '>하노이</option><option value="saigon"' + (koreanNotationRegion === "saigon" ? ' selected' : '') + '>사이공</option></select></label><p class="p-desc">노래 가사 단어 팝업의 한국어 발음 표기에 적용됩니다.</p></div>';
+    return '<div class="p-section"><h3>한국어 발음 표기 설정</h3><div class="p-subsection"><h4>한국어 발음 표기</h4><p class="p-desc">노래 가사 단어 팝업의 한국어 발음 표기에 적용됩니다.</p><select id="korean-notation-region" class="repeat-count-select" aria-label="한국어 발음 표기"><option value="none"' + (koreanNotationRegion === "none" ? ' selected' : '') + '>없음</option><option value="hanoi"' + (koreanNotationRegion === "hanoi" ? ' selected' : '') + '>하노이</option><option value="saigon"' + (koreanNotationRegion === "saigon" ? ' selected' : '') + '>사이공</option></select></div></div>';
   }
   function renderPron() {
     if (!PRON_PANE_ELS.settings) return;
