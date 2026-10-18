@@ -106,7 +106,7 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
       await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);eq((await tap(word))?.ko,pron,'explicit pronunciation '+word);
     }
     await E("const select=document.getElementById('korean-notation-region');select.value='saigon';select.dispatchEvent(new Event('change'))");
-    for(const [word,pron] of [['dân','영ㄴ'],['về','예이'],['trời','ㅉ러이'],['sông','송ㅁ'],['sách','삿'],['chia','찌아'],['chết','쩍']]){
+    for(const [word,pron] of [['dân','영ㄴ'],['về','예이'],['trời','ㅉ러이'],['sông','송ㅁ'],['sách','삿'],['chia','찌아'],['chết','쩍'],['luôn','루옹ㄴ'],['muôn','무옹ㄴ'],['nguồn','응우옹ㄴ']]){
       await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);eq((await tap(word))?.ko,pron,'Saigon popup '+word);
     }
     eq(await E("localStorage.getItem('vi-korean-notation-region')"),'saigon','selection saved');
