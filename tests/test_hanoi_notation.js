@@ -13,6 +13,8 @@ const rules = {
   'người Hàn': '응어이 한', 'thần khí thánh': '턴 키 타인ㅇ', 'không': '컴',
   // uy = ㅟ, uyê = ㅜ예, yê = ㅖ (the chart, 2026-10-18)
   'huy': '휘', 'quy': '뀌', 'nguy': '응위', 'tuy': '뛰', 'uy': '위', 'yêu': '예우', 'yên': '옌', 'yết': '옛', 'tuyệt': '뚜옛', 'quyền': '뀌에 ㄴ'.replace(' ㄴ', 'ㄴ'),
+  // oa = ㅘ
+  'ngoan': '응완', 'hoa': '화', 'toán': '똰', 'loài': '롸이',
   // s- = ㅅ (x- stays ㅆ), Hanoi and Saigon
   'ánh sáng': '아인ㅇ 상', 'sao': '사오', 'xin': '씬',
   'nguyện': '응우옌', 'khuyên': '쿠옌', 'chuyện': '쭈옌'
@@ -25,6 +27,8 @@ for (const [vi, ko] of Object.entries(rules)) {
 assert.strictEqual(w('quyền'), '꾸옌', 'quyền');
 assert.strictEqual(w('sáng', 'saigon'), '상', 'Saigon s- = ㅅ');
 assert.strictEqual(w('sao', 'saigon'), '사오');
+assert.strictEqual(w('hoa', 'saigon'), '화', 'Saigon oa = ㅘ');
+assert.strictEqual(w('ngoan', 'saigon'), '응왕ㄴ', 'Saigon oa = ㅘ (final -n is ㅇㄴ there)');
 assert.strictEqual(w('xin', 'saigon'), '씽ㄴ', 'Saigon x- = ㅆ (final -n is ㅇㄴ there)');
 assert.strictEqual(s('xyz'), '', 'not a Vietnamese syllable');
 // the meanings set for lyric words

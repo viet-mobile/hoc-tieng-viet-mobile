@@ -12,3 +12,6 @@ for chart in (HANOI_CHART, SAIGON_CHART):
     ini = {g["letters"][0][0]: g["ko"] for g in chart["initials"]}
     assert ini["s-"] == "ㅅ-" and ini["x-"] == "ㅆ-", (ini["s-"], ini["x-"])
 print("hanoi / saigon chart: s- = ㅅ-, x- = ㅆ-")
+for chart in (HANOI_CHART, SAIGON_CHART):
+    assert {row[0]: row[2] for row in chart["vowels"]}["oa"] == [["ㅘ", 0]]
+print("hanoi / saigon chart: oa = ㅘ")

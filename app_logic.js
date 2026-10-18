@@ -11664,7 +11664,7 @@ function verifyDistribution(units, dist, pins) {
   // Vietnamese syllable -> the Korean notation closest to the Hanoi pronunciation, by the rules of the [발음][자모] chart
   // (HANOI_CHART): initials, vowels and finals as listed there; a vowel that is a glide + vowel (ia, ua, ươ ...) or ends in
   // an off-glide (i, y, u, o) is written as separate blocks (쭈어, 바이, 꺼우); 응 (ng) and 니 (nh) are blocks of their own
-  // (응어이, 년); uy = ㅟ, yê = ㅖ, uyê = ㅜ예 (the chart); 받침 -ch / -nh are the blocks 익 / 인 (-inh is 인 as in 낀); -c, -ng after o, ô, u close the lips (옵, 옴, 웁, 움);
+  // (응어이, 년); oa = ㅘ, uy = ㅟ, yê = ㅖ, uyê = ㅜ예 (the chart); 받침 -ch / -nh are the blocks 익 / 인 (-inh is 인 as in 낀); -c, -ng after o, ô, u close the lips (옵, 옴, 웁, 움);
   // v- / ph- are the letters ㅸ / ㆄ which stand beside the vowel (ㅸㅏ, ㅸㅣ엣).
   var HANOI_CHO = ["ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
   var HANOI_JUNG = ["ㅏ", "ㅐ", "ㅑ", "ㅒ", "ㅓ", "ㅔ", "ㅕ", "ㅖ", "ㅗ", "ㅘ", "ㅙ", "ㅚ", "ㅛ", "ㅜ", "ㅝ", "ㅞ", "ㅟ", "ㅠ", "ㅡ", "ㅢ", "ㅣ"];
@@ -11674,7 +11674,7 @@ function verifyDistribution(units, dist, pins) {
     d: "ㅈ", "đ": "ㄷ", t: "ㄸ", b: "ㅂ", p: "ㅃ", s: "ㅅ", x: "ㅆ", r: "ㅈ", v: "ㅸ", l: "ㄹ", m: "ㅁ", n: "ㄴ", h: "ㅎ" };
   var HANOI_MAIN = { a: ["ㅏ"], "ă": ["ㅏ"], "â": ["ㅓ"], e: ["ㅐ"], "ê": ["ㅔ"], i: ["ㅣ"], y: ["ㅣ"], o: ["ㅗ"], "ô": ["ㅗ"], "ơ": ["ㅓ"], u: ["ㅜ"], "ư": ["ㅡ"],
     ia: ["ㅣ", "ㅓ"], "iê": ["ㅣ", "ㅔ"], "yê": ["ㅖ"], ua: ["ㅜ", "ㅓ"], "uô": ["ㅜ", "ㅓ"], "uâ": ["ㅜ", "ㅓ"], "uă": ["ㅜ", "ㅏ"], "uê": ["ㅜ", "ㅔ"],
-    ue: ["ㅜ", "ㅐ"], "uơ": ["ㅜ", "ㅓ"], "ưa": ["ㅡ", "ㅓ"], "ươ": ["ㅡ", "ㅓ"], oa: ["ㅗ", "ㅏ"], "oă": ["ㅗ", "ㅏ"], oe: ["ㅗ", "ㅐ"], uy: ["ㅟ"],
+    ue: ["ㅜ", "ㅐ"], "uơ": ["ㅜ", "ㅓ"], "ưa": ["ㅡ", "ㅓ"], "ươ": ["ㅡ", "ㅓ"], oa: ["ㅘ"], "oă": ["ㅗ", "ㅏ"], oe: ["ㅗ", "ㅐ"], uy: ["ㅟ"],
     uya: ["ㅜ", "ㅑ"], "uyê": ["ㅜ", "ㅖ"] };
   var HANOI_OFFGLIDE = { i: "ㅣ", y: "ㅣ", u: "ㅜ", o: "ㅗ" };
   var HANOI_NH_MERGE = { "ㅏ": "ㅑ", "ㅓ": "ㅕ", "ㅗ": "ㅛ", "ㅜ": "ㅠ", "ㅐ": "ㅒ", "ㅔ": "ㅖ" };
