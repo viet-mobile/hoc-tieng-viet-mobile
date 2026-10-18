@@ -11782,7 +11782,7 @@ function verifyDistribution(units, dist, pins) {
     "can trường": "담대하다", "lung lay": "동요하다", "tra": "조사하다", "triều đại": "통치기간", "chu toàn": "주도면밀하게 수행하다",
     "hão huyền": "헛되다", "huyền diệu": "신묘막측하다", "tuyệt diệu": "절묘하다", "nức lòng": "열심히", "nô nức": "생기발랄하다", "khiên": "방패",
     "hoạn nạn": "환난", "bôn ba": "동분서주하다", "trân trọng": "아끼다, 소중히 여기다", "bết-lê-hem": "베들레헴", "giô-đanh": "요단",
-    "si-ôn": "시온", "giê-ru-sa-lem": "예루살렘", "mê-xi-cô": "멕시코", "ga-li-lê": "갈릴리"
+    "si-ôn": "시온", "giê-ru-sa-lem": "예루살렘", "mê-xi-cô": "멕시코", "ga-li-lê": "갈릴리", "rõ": "명확하다"
   };
   var lyricWordDict = null, lyricWordPop = null;
   // Lookup key: lower case, and the tone mark of oa / oe / uy written on the first vowel (hoà = hòa, thoả = thỏa).
