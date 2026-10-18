@@ -11711,7 +11711,7 @@ function verifyDistribution(units, dist, pins) {
     if (fin === "c") { jong = "ㄱ"; if (round) tail = "ㅂ"; }
     else if (fin === "ng") { jong = "ㅇ"; if (round) tail = "ㅁ"; }
     else if (fin === "m") jong = "ㅁ";
-    else if (fin === "n") { jong = south && !/ô$/.test(main) ? "ㅇ" : "ㄴ"; if (south && !/ô$/.test(main)) tail = "ㄴ"; }   // -ôn is 온 in Saigon too
+    else if (fin === "n") { jong = south ? "ㅇ" : "ㄴ"; if (south) tail = "ㄴ"; }   // Saigon -n is ㅇㄴ, also after ô (-ôn = 옹ㄴ); Hanoi -ôn = 온
     else if (fin === "p") jong = "ㅂ";
     else if (fin === "t") jong = south ? "ㄱ" : "ㅅ";
     else if (fin === "nh") {

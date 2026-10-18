@@ -30,8 +30,9 @@ assert.strictEqual(w('quyền'), '꾸옌', 'quyền');
 assert.strictEqual(w('sáng', 'saigon'), '상', 'Saigon s- = ㅅ');
 assert.strictEqual(w('sao', 'saigon'), '사오');
 assert.strictEqual(w('hoa', 'saigon'), '화', 'Saigon oa = ㅘ');
-for (const word of ['nguồn', 'muốn', 'luôn', 'muôn', 'buồn', 'uốn', 'ôn', 'khuôn', 'tuôn']) assert.strictEqual(w(word, 'saigon'), w(word, 'hanoi'), 'Saigon -ôn is 온 as in Hanoi: ' + word);
-assert.strictEqual(w('nguồn', 'saigon'), '응우온', 'nguồn');
+// Saigon: final -n is ㅇㄴ also after ô (-ôn = 옹ㄴ); Hanoi -ôn = 온
+for (const [word, ko] of [['nguồn', '응우옹ㄴ'], ['muốn', '무옹ㄴ'], ['luôn', '루옹ㄴ'], ['buồn', '부옹ㄴ'], ['ôn', '옹ㄴ']]) assert.strictEqual(w(word, 'saigon'), ko, 'Saigon -ôn: ' + word);
+assert.strictEqual(w('nguồn', 'hanoi'), '응우온', 'Hanoi nguồn');
 assert.strictEqual(w('ngoan', 'saigon'), '응왕ㄴ', 'Saigon oa = ㅘ (final -n is ㅇㄴ there)');
 assert.strictEqual(w('xin', 'saigon'), '씽ㄴ', 'Saigon x- = ㅆ (final -n is ㅇㄴ there)');
 assert.strictEqual(s('xyz'), '', 'not a Vietnamese syllable');

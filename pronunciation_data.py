@@ -1553,8 +1553,6 @@ for _vowel in SAIGON_CHART["vowels"]:
 for _final in SAIGON_CHART["finals"]:
     if _final[0] in {"-ch","-n","-nh","-t"}:
         _final[1] = {"-ch":"-ㅅ","-n":"-ㅇㄴ","-nh":"-ㄴ","-t":"-ㄱ"}[_final[0]]
-    if _final[0] == "-n":
-        _final.append("(-ôn은 [온]처럼 ㄴ으로 적음)")
 
 
 # [발음] > [자모]: how to type Vietnamese with a TELEX keyboard (supplied by the user; Korean only). Rows: [keys typed, result].
