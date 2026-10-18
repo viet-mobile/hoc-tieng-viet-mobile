@@ -11671,7 +11671,7 @@ function verifyDistribution(units, dist, pins) {
   var HANOI_JONG = ["", "ㄱ", "ㄲ", "ㄳ", "ㄴ", "ㄵ", "ㄶ", "ㄷ", "ㄹ", "ㄺ", "ㄻ", "ㄼ", "ㄽ", "ㄾ", "ㄿ", "ㅀ", "ㅁ", "ㅂ", "ㅄ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
   var HANOI_INITIALS = ["ngh", "ng", "nh", "ch", "tr", "th", "kh", "ph", "gh", "gi", "qu", "g", "c", "k", "d", "đ", "t", "b", "p", "s", "x", "r", "v", "l", "m", "n", "h"];
   var HANOI_INITIAL_KO = { ngh: "ng", ng: "ng", nh: "nh", ch: "ㅉ", tr: "ㅉ", th: "ㅌ", kh: "ㅋ", ph: "ㆄ", gh: "ㄱ", gi: "ㅈ", qu: "qu", g: "ㄱ", c: "ㄲ", k: "ㄲ",
-    d: "ㅈ", "đ": "ㄷ", t: "ㄸ", b: "ㅂ", p: "ㅃ", s: "ㅆ", x: "ㅆ", r: "ㅈ", v: "ㅸ", l: "ㄹ", m: "ㅁ", n: "ㄴ", h: "ㅎ" };
+    d: "ㅈ", "đ": "ㄷ", t: "ㄸ", b: "ㅂ", p: "ㅃ", s: "ㅅ", x: "ㅆ", r: "ㅈ", v: "ㅸ", l: "ㄹ", m: "ㅁ", n: "ㄴ", h: "ㅎ" };
   var HANOI_MAIN = { a: ["ㅏ"], "ă": ["ㅏ"], "â": ["ㅓ"], e: ["ㅐ"], "ê": ["ㅔ"], i: ["ㅣ"], y: ["ㅣ"], o: ["ㅗ"], "ô": ["ㅗ"], "ơ": ["ㅓ"], u: ["ㅜ"], "ư": ["ㅡ"],
     ia: ["ㅣ", "ㅓ"], "iê": ["ㅣ", "ㅔ"], "yê": ["ㅖ"], ua: ["ㅜ", "ㅓ"], "uô": ["ㅜ", "ㅓ"], "uâ": ["ㅜ", "ㅓ"], "uă": ["ㅜ", "ㅏ"], "uê": ["ㅜ", "ㅔ"],
     ue: ["ㅜ", "ㅐ"], "uơ": ["ㅜ", "ㅓ"], "ưa": ["ㅡ", "ㅓ"], "ươ": ["ㅡ", "ㅓ"], oa: ["ㅗ", "ㅏ"], "oă": ["ㅗ", "ㅏ"], oe: ["ㅗ", "ㅐ"], uy: ["ㅟ"],
@@ -11721,7 +11721,6 @@ function verifyDistribution(units, dist, pins) {
     var cho = initial ? HANOI_INITIAL_KO[initial] : "ㅇ", prefix = "", out = [];
     if (south) {
       if (["d", "gi", "v"].indexOf(initial) >= 0) cho = "y";
-      if (initial === "s") cho = "ㅅ";
       if (initial === "r" || initial === "tr") cho = "ㄹ";
     }
     // blocks as [cho, jung]; the last one takes the final

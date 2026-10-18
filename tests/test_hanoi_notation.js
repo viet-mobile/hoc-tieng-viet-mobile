@@ -13,6 +13,8 @@ const rules = {
   'người Hàn': '응어이 한', 'thần khí thánh': '턴 키 타인ㅇ', 'không': '컴',
   // uy = ㅟ, uyê = ㅜ예, yê = ㅖ (the chart, 2026-10-18)
   'huy': '휘', 'quy': '뀌', 'nguy': '응위', 'tuy': '뛰', 'uy': '위', 'yêu': '예우', 'yên': '옌', 'yết': '옛', 'tuyệt': '뚜옛', 'quyền': '뀌에 ㄴ'.replace(' ㄴ', 'ㄴ'),
+  // s- = ㅅ (x- stays ㅆ), Hanoi and Saigon
+  'ánh sáng': '아인ㅇ 상', 'sao': '사오', 'xin': '씬',
   'nguyện': '응우옌', 'khuyên': '쿠옌', 'chuyện': '쭈옌'
 };
 // 'quyền' = qu + yê + n: ㄲ+ㅟ then ㅖ? -> the qu block takes the first vowel of the nucleus, which is ㅖ alone (no merge) -> 꾸 + 옌
@@ -21,6 +23,9 @@ for (const [vi, ko] of Object.entries(rules)) {
   assert.strictEqual(w(vi), ko, vi + ' -> ' + w(vi) + ' (want ' + ko + ')');
 }
 assert.strictEqual(w('quyền'), '꾸옌', 'quyền');
+assert.strictEqual(w('sáng', 'saigon'), '상', 'Saigon s- = ㅅ');
+assert.strictEqual(w('sao', 'saigon'), '사오');
+assert.strictEqual(w('xin', 'saigon'), '씽ㄴ', 'Saigon x- = ㅆ (final -n is ㅇㄴ there)');
 assert.strictEqual(s('xyz'), '', 'not a Vietnamese syllable');
 // the meanings set for lyric words
 const m = /var LYRIC_WORD_MEANINGS = \{([\s\S]*?)\n  \};/.exec(src);
