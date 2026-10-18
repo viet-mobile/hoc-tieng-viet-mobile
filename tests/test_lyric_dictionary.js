@@ -30,10 +30,17 @@ for (const badSpelling of ['noài','caol','nơời','fphans']) assert(!after.mea
 // user entered by hand (LYRIC_WORD_KO_MEANINGS, LYRIC_WORD_MEANINGS) come after it.
 const approved = JSON.parse(fs.readFileSync('lyric_meanings_approved_ko.json', 'utf8'));
 const typed = vm.runInContext('(function(){var o={};[LYRIC_WORD_KO_MEANINGS, LYRIC_WORD_MEANINGS].forEach(function(m){Object.keys(m).forEach(function(k){o[lyricWordKey(k)]=m[k];});});return o;})()', after.context);
+// Verbs / adjectives whose meaning had been written as a noun get their predicate form (lyric_meanings_predicate_ko.json); it is applied last.
+const predicate = JSON.parse(fs.readFileSync('lyric_meanings_predicate_ko.json', 'utf8'));
+const predicateBy = {};
+for (const entry of predicate.entries) predicateBy[after.key(entry.vi)] = entry.ko;
 for (const entry of approved.entries) {
   const key = after.key(entry.vi);
-  assert.equal(after.meaning[key], typed[key] || entry.ko, 'Approved meaning: ' + entry.vi);
+  assert.equal(after.meaning[key], predicateBy[key] || typed[key] || entry.ko, 'Approved meaning: ' + entry.vi);
 }
+for (const entry of predicate.entries) assert.equal(after.meaning[after.key(entry.vi)], entry.ko, 'Predicate form: ' + entry.vi);
+assert.equal(after.meaning['cầu nguyện'], '기도하다');
+assert(predicate.entries.every(e => /(다|ㄴ|은|의)(, |$|\()|다,|의$/.test(e.ko) || /[다한은의]$/.test(e.ko)), 'every fix ends in a predicate form');
 assert.equal(approved.entries.length, 963);
 assert.equal(after.meaning['mãi'],'계속, 영원히');
 assert.equal(after.meaning['lệ'],'눈물, 규칙');

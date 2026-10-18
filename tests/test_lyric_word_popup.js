@@ -69,6 +69,11 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     }
     await E("document.getElementById('lyr').textContent='cầu nguyện'");
     const longer=await tap('cầu');ok(longer&&longer.mean&&longer.mean!==overrides['cầu'],'longer existing cầu nguyện wins over cầu: '+JSON.stringify(longer));
+    { const cn=await tap('nguyện'); eq(cn&&[cn.ko,cn.mean],['꺼우 응우옌','기도하다'],'cầu nguyện is a verb: 기도하다 (not 기도)'); }
+    for (const [word, mean] of [['an ủi','위로하다, 위안하다'],['trung thành','충성스럽다, 충성하다'],['chọn','선택하다, 고르다']]) {
+      await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);
+      eq((await tap(word.split(' ').pop()))?.mean,mean,'predicate form '+word);
+    }
     await E("document.getElementById('lyr').textContent='chúng ta'");
     const longerTa=await tap('ta');ok(longerTa&&longerTa.mean&&longerTa.mean!==overrides['ta'],'longer chúng ta wins over ta: '+JSON.stringify(longerTa));
     const addedMeanings = {"nẻo": "길, 방법, 방향", "đường": "길", "dù": "비록 -하더라도", "dò": "살피다", "tư tưởng": "생각, 사상", "đang": "-(하)고 있다", "làm": "하다, 만들다", "ngay": "곧, -하자마자", "đếm": "세다", "cả": "다, 모두", "tôn vinh": "영광을 돌리다", "ôi": "(감탄사) 오!", "siêu phàm": "평범함을 아득히 벗어나는, 초월하는", "thay": "대단히, 너무나", "muôn dân": "만민, 모든 사람", "kinh hãi": "두려워하다", "tăm tối": "깜깜하다", "đêm đen": "어두운 밤", "vây phủ": "덮다", "vững": "굳건하다", "soi": "비추다", "lối": "길, 방향", "khuất": "숨다", "khỏi": "-로부터", "vùng": "지역, 장소", "kín": "은밀한", "khiến": "-로 하여금 -하게 하다", "chẳng hề": "전혀 (부정어)", "được": "-할 수 있다, 되다", "thật": "참으로; 참된", "chẳng": "결코 (부정어)", "tận": "(심지어) -까지도", "mênh mông": "광대한", "lòng": "마음, 속", "mộ": "무덤", "âm u": "캄캄한, 어두운, 암울한"};

@@ -11912,6 +11912,9 @@ function verifyDistribution(units, dist, pins) {
     ["lúc", "khuynh hướng", "gì", "muôn"].forEach(function (word) { d.pron[lyricWordKey(word)] = LYRIC_WORD_KO_PRON[word]; });
     // Meanings the user entered for [노래] lyric words (LYRIC_WORD_MEANINGS) come last: they win over the supplement and the older curated list.
     Object.keys(LYRIC_WORD_MEANINGS).forEach(function (k) { d.meaning[lyricWordKey(k)] = LYRIC_WORD_MEANINGS[k]; });
+    // Verbs and adjectives whose meaning was written as a noun (cầu nguyện 기도 -> 기도하다): the predicate form comes last and wins over every list above.
+    var predicate = typeof LYRIC_MEANINGS_PREDICATE_KO !== "undefined" && LYRIC_MEANINGS_PREDICATE_KO || {};
+    Object.keys(predicate).forEach(function (word) { d.meaning[lyricWordKey(word)] = predicate[word]; });
     lyricWordDict = d;
     return d;
   }
