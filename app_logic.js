@@ -11376,6 +11376,7 @@ function verifyDistribution(units, dist, pins) {
   // repeat timer) start sound on iOS.
   function songSegPlay(btn) {
     var loop = btn.getAttribute("data-seg") === "loop";
+    var reps = viRepeatCount, played = 0;   // ▶ plays the line "베트남어 반복 듣기 횟수" times (the setting of 발음 설정 / 복습); ↻ repeats until it is stopped
     if (songSeg.btn === btn) { songSegStop(); return; }   // the same button again: stop
     var info = songSegInfo[btn.getAttribute("data-seg-id")], i = parseInt(btn.getAttribute("data-seg-i"), 10), mark = info && info.marks && info.marks[i];
     stopAllSpeech();   // speech (and 전체 듣기) and the music never run together
@@ -11413,7 +11414,7 @@ function verifyDistribution(units, dist, pins) {
         try { a.pause(); } catch (eW) { /* no-op */ }
         songSeg.raf = 0;
         songSegLog("end at " + a.currentTime.toFixed(3) + " s");
-        if (!loop) { songSegStop(); return; }
+        if (!loop && ++played >= reps) { songSegStop(); return; }
         songSeg.timer = setTimeout(function () { songSeg.timer = 0; if (alive()) seekThenPlay(false); }, SONG_SEG_GAP_MS);
         return;
       }
