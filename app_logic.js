@@ -11775,7 +11775,14 @@ function verifyDistribution(units, dist, pins) {
     "bồi": "보충하다, 강화하다, 기르다", "khiêm nhu": "온유하다", "khiêm hoà": "온화하다", "vô ngần": "한없다, 비길데없다",
     "lo âu": "걱정하다, 불안하다, 염려하다", "âu lo": "걱정하다, 불안하다, 염려하다", "muôn trùng": "셀 수 없이 많다", "lùi": "물러서다",
     "mối": "관계 및 감정, 단서에 관련된 단어 앞에 오는 종별사(種別詞)", "truyền bá": "전파하다", "thoả tâm": "만족하다", "thoả nguyện": "만족하다",
-    "phai phôi": "퇴색되다", "phôi phai": "퇴색되다", "làn gió": "돌풍"
+    "phai phôi": "퇴색되다", "phôi phai": "퇴색되다", "làn gió": "돌풍",
+    "thánh khiết": "거룩하다", "thanh khiết": "깨끗하다, 순수하다", "cố": "애쓰다", "cố gắng": "노력하다", "hân hoan": "대단히 기쁘다", "nô": "노예",
+    "cai quản": "감독하다", "quản": "우려하다", "quy": "(공이나 영광을 -에게) 돌리다", "chết chóc": "죽다", "chóc": "말라서 단단해지다",
+    "nhọc nhằn": "매우 지치다", "ngàn khơi": "광활한 바다", "hào quang": "후광", "hào hứng": "흥겹다", "hằng hà": "셀 수 없이 많은",
+    "can trường": "담대하다", "lung lay": "동요하다", "tra": "조사하다", "triều đại": "통치기간", "chu toàn": "주도면밀하게 수행하다",
+    "hão huyền": "헛되다", "huyền diệu": "신묘막측하다", "tuyệt diệu": "절묘하다", "nức lòng": "열심히", "nô nức": "생기발랄하다", "khiên": "방패",
+    "hoạn nạn": "환난", "bôn ba": "동분서주하다", "trân trọng": "아끼다, 소중히 여기다", "bết-lê-hem": "베들레헴", "giô-đanh": "요단",
+    "si-ôn": "시온", "giê-ru-sa-lem": "예루살렘", "mê-xi-cô": "멕시코", "ga-li-lê": "갈릴리"
   };
   var lyricWordDict = null, lyricWordPop = null;
   // Lookup key: lower case, and the tone mark of oa / oe / uy written on the first vowel (hoà = hòa, thoả = thỏa).
