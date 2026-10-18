@@ -6673,11 +6673,23 @@
       '</svg>';
     return svg.normalize ? svg.normalize("NFC") : svg;
   }
-  var koreanNotationRegion = "hanoi";
-  try { var savedNotationRegion = localStorage.getItem("vi-korean-notation-region"); koreanNotationRegion = ["none", "hanoi", "saigon"].indexOf(savedNotationRegion) >= 0 ? savedNotationRegion : "hanoi"; } catch (_) {}
+  // The notation of the lyric word popup: none | hanoi-ipa | saigon-ipa | hanoi (Korean letters) | saigon (Korean letters).
+  // koreanNotationRegion is the region (none / hanoi / saigon); koreanNotationIpa tells IPA from Korean letters.
+  var KOREAN_NOTATION_MODES = ["none", "hanoi-ipa", "saigon-ipa", "hanoi", "saigon"];
+  var koreanNotationRegion = "hanoi", koreanNotationIpa = false;
+  function setKoreanNotationMode(mode) {
+    if (KOREAN_NOTATION_MODES.indexOf(mode) < 0) mode = "hanoi";
+    koreanNotationIpa = /-ipa$/.test(mode);
+    koreanNotationRegion = mode.replace(/-ipa$/, "");
+    return mode;
+  }
+  function koreanNotationMode() { return koreanNotationRegion === "none" ? "none" : koreanNotationRegion + (koreanNotationIpa ? "-ipa" : ""); }
+  try { setKoreanNotationMode(localStorage.getItem("vi-korean-notation-region")); } catch (_) {}
   function koreanNotationSettingsHtml() {
     if (currentLang !== "ko") return "";
-    return '<div class="p-section"><h3>한국어 발음 표기 설정</h3><div class="p-subsection"><h4>한국어 발음 표기</h4><p class="p-desc">노래 가사 단어 팝업의 한국어 발음 표기에 적용됩니다.</p><select id="korean-notation-region" class="repeat-count-select" aria-label="한국어 발음 표기"><option value="none"' + (koreanNotationRegion === "none" ? ' selected' : '') + '>없음</option><option value="hanoi"' + (koreanNotationRegion === "hanoi" ? ' selected' : '') + '>하노이</option><option value="saigon"' + (koreanNotationRegion === "saigon" ? ' selected' : '') + '>사이공</option></select></div></div>';
+    var labels = { "none": "없음", "hanoi-ipa": "하노이 IPA", "saigon-ipa": "사이공 IPA", "hanoi": "하노이 한글", "saigon": "사이공 한글" };
+    return '<div class="p-section"><h3>한국어 발음 표기 설정</h3><div class="p-subsection"><h4>한국어 발음 표기</h4><p class="p-desc">노래 가사 단어 팝업의 발음 표기(한글 또는 IPA)에 적용됩니다.</p><select id="korean-notation-region" class="repeat-count-select" aria-label="한국어 발음 표기">' +
+      KOREAN_NOTATION_MODES.map(function (m) { return '<option value="' + m + '"' + (koreanNotationMode() === m ? ' selected' : '') + '>' + labels[m] + '</option>'; }).join("") + '</select></div></div>';
   }
   function renderPron() {
     if (!PRON_PANE_ELS.settings) return;
@@ -6882,8 +6894,8 @@
     });
     var notationSelect = document.getElementById("korean-notation-region");
     if (notationSelect) notationSelect.addEventListener("change", function () {
-      koreanNotationRegion = ["none", "hanoi", "saigon"].indexOf(this.value) >= 0 ? this.value : "hanoi";
-      try { localStorage.setItem("vi-korean-notation-region", koreanNotationRegion); } catch (_) {}
+      var mode = setKoreanNotationMode(this.value);
+      try { localStorage.setItem("vi-korean-notation-region", mode); } catch (_) {}
       lyricWordDict = null;
       lyricWordClose();
     });
@@ -11761,6 +11773,64 @@ function verifyDistribution(units, dist, pins) {
     return parts.some(function (p) { return !p; }) ? "" : parts.join(" ");
   }
   /* HANOI-KO-END */
+  /* VI-IPA-BEGIN */
+  // Vietnamese syllable -> IPA (narrow, with tone letters) for the lyric word popup: Hanoi (northern) and Saigon (southern) pronunciation.
+  // Hanoi: d, gi, r = [z]; tr = ch = [c]; s, x = [s]; -nh = [ɲ], -ch = [c̚]. Saigon (as the Saigon Korean notation): d, gi, v = [j]; r = [r];
+  // s = [ʂ], x = [s]; tr = [ʈ]; -n = [ŋ], -nh = [n], -t = [k̚], -ch = [t̚]. Both: -c, -ng after o, ô, u (uô) are labialised ([k͡p̚], [ŋ͡m]).
+  var IPA_INITIALS = ["ngh", "ng", "nh", "ch", "tr", "th", "kh", "ph", "gh", "gi", "qu", "g", "c", "k", "d", "đ", "t", "b", "p", "s", "x", "r", "v", "l", "m", "n", "h"];
+  var IPA_INITIAL = {
+    hanoi: { ngh: "ŋ", ng: "ŋ", nh: "ɲ", ch: "c", tr: "c", th: "tʰ", kh: "x", ph: "f", gh: "ɣ", gi: "z", qu: "kw", g: "ɣ", c: "k", k: "k", d: "z", "đ": "ɗ", t: "t", b: "ɓ", p: "p", s: "s", x: "s", r: "z", v: "v", l: "l", m: "m", n: "n", h: "h" },
+    saigon: { ngh: "ŋ", ng: "ŋ", nh: "ɲ", ch: "c", tr: "ʈ", th: "tʰ", kh: "x", ph: "f", gh: "ɣ", gi: "j", qu: "kw", g: "ɣ", c: "k", k: "k", d: "j", "đ": "ɗ", t: "t", b: "ɓ", p: "p", s: "ʂ", x: "s", r: "r", v: "j", l: "l", m: "m", n: "n", h: "h" }
+  };
+  var IPA_NUCLEUS = { a: "aː", "ă": "ă", "â": "ə̆", e: "ɛ", "ê": "e", i: "i", y: "i", o: "ɔ", "ô": "o", "ơ": "əː", u: "u", "ư": "ɨ",
+    ia: "iə", "iê": "iə", "yê": "iə", ua: "uə", "uô": "uə", "ưa": "ɨə", "ươ": "ɨə", oa: "waː", "oă": "wă", oe: "wɛ", ue: "wɛ", "uê": "we", uy: "wi", uya: "wiə", "uyê": "wiə",
+    "uâ": "wə̆", "uă": "wă", "uơ": "wəː" };
+  var IPA_TONE = {
+    hanoi: { none: "˧", huyen: "˨˩", sac: "˧˥", hoi: "˧˩˧", nga: "˧ˀ˥", nang: "˨ˀ˩" },
+    saigon: { none: "˧", huyen: "˨˩", sac: "˦˥", hoi: "˨˩˦", nga: "˨˩˦", nang: "˨˩ˀ" }
+  };
+  var IPA_FINAL = {
+    hanoi: { p: "p̚", t: "t̚", c: "k̚", ch: "c̚", m: "m", n: "n", ng: "ŋ", nh: "ɲ" },
+    saigon: { p: "p̚", t: "k̚", c: "k̚", ch: "t̚", m: "m", n: "ŋ", ng: "ŋ", nh: "n" }
+  };
+  // The IPA of one syllable (any tone), or "" when it is not a Vietnamese syllable.
+  function viIpaSyllable(syl, region) {
+    var south = region === "saigon", reg = south ? "saigon" : "hanoi";
+    var low = String(syl || "").toLowerCase().normalize("NFC");
+    var nfd = low.normalize("NFD"), tone = "none";
+    if (/̀/.test(nfd)) tone = "huyen"; else if (/́/.test(nfd)) tone = "sac"; else if (/̉/.test(nfd)) tone = "hoi"; else if (/̃/.test(nfd)) tone = "nga"; else if (/̣/.test(nfd)) tone = "nang";
+    var s = nfd.replace(/[̣̀́̃̉]/g, "").normalize("NFC");
+    if (!s) return "";
+    var initial = "";
+    for (var i = 0; i < IPA_INITIALS.length; i++) if (s.indexOf(IPA_INITIALS[i]) === 0) { initial = IPA_INITIALS[i]; break; }
+    var rest = s.slice(initial.length);
+    if (initial === "gi" && !rest) rest = "i";
+    if (initial === "gi" && !/^[aăâeêiioôơuưy]/.test(rest)) { initial = "g"; rest = s.slice(1); }
+    var fin = "", m = /(ch|nh|ng|c|m|n|p|t)$/.exec(rest);
+    if (m && rest.length > m[0].length) { fin = m[0]; rest = rest.slice(0, -fin.length); }
+    var nm = HANOI_NUCLEUS.exec(rest);
+    if (!nm) return "";
+    var main = nm[1], glide = nm[2] || "", nuc = IPA_NUCLEUS[main];
+    if (!south && main === "a" && (fin === "nh" || fin === "ch")) nuc = "ɛ";      // Hanoi: anh, ach
+    if (main === "a" && (glide === "y" || glide === "u")) nuc = "ă";             // ay, au are short
+    var onset = initial ? IPA_INITIAL[reg][initial] : "ʔ";
+    if (initial === "qu" && nuc.charAt(0) === "w") nuc = nuc.slice(1);            // qu already holds the w
+    var offglide = glide ? (glide === "i" || glide === "y" ? "j" : "w") : "";
+    var round = /^(?:[oôu]|uô)$/.test(main);
+    var coda = "";
+    if (fin) {
+      coda = IPA_FINAL[reg][fin];
+      if (round && fin === "c") coda = "k͡p̚";
+      if (round && fin === "ng") coda = "ŋ͡m";
+    }
+    return onset + nuc + offglide + coda + IPA_TONE[reg][tone];
+  }
+  // A word of 1-3 syllables ("Kinh Thánh", "Giê-hô-va"): the syllables' IPA separated by blanks.
+  function viIpaWord(text, region) {
+    var parts = String(text || "").trim().split(/[\s-]+/).map(function (syl) { return viIpaSyllable(syl, region); });
+    return parts.some(function (p) { return !p; }) ? "" : parts.join(" ");
+  }
+  /* VI-IPA-END */
   // ---- [노래] (Korean UI only): tap a word of a Vietnamese lyric line -> a small popup with its Hanoi Korean notation and its meaning ----
   // The word is the longest 1-3 syllable word of the [어휘] word list (UNIFIED_WORDS) or of the [발음] examples that contains the tapped
   // syllable; a syllable that belongs to no listed word is a word of its own. The lyric text is never changed: the tapped word is found
@@ -11947,7 +12017,7 @@ function verifyDistribution(units, dist, pins) {
   function lyricWordClose() { if (lyricWordPop) { lyricWordPop.remove(); lyricWordPop = null; } }
   function lyricWordShow(word) {
     var dict = lyricWordDictionary(), key = lyricWordKey(word.text);
-    var pron = koreanNotationRegion === "none" ? "" : dict.pron[key] || lyricKoreanWord(word.text);
+    var pron = koreanNotationRegion === "none" ? "" : koreanNotationIpa ? viIpaWord(word.text, koreanNotationRegion) : dict.pron[key] || lyricKoreanWord(word.text);
     var mean = dict.meaning[key] || "";
     if (!pron && !mean) return;
     lyricWordClose();
@@ -11972,7 +12042,7 @@ function verifyDistribution(units, dist, pins) {
     var word = lyricWordAt(el, e.clientX, e.clientY);
     if (word) lyricWordShow(word);
   });
-  window.__hanoiKo = { syllable: hanoiKoreanSyllable, word: hanoiKoreanWord };   // tests/test_lyric_word_popup.js
+  window.__hanoiKo = { syllable: hanoiKoreanSyllable, word: hanoiKoreanWord, ipa: viIpaWord, ipaSyllable: viIpaSyllable };   // tests/test_lyric_word_popup.js
   window.addEventListener("scroll", lyricWordClose, true);
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") lyricWordClose(); });
   function songRowHtml(r) {

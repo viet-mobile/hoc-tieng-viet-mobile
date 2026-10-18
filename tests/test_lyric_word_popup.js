@@ -93,7 +93,7 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     // Three separate folding cards, with the examples moved rather than copied.
     ok(await E("!!document.querySelector('[data-anchor=\"pron-saigon\"]')&&!!document.querySelector('[data-anchor=\"pron-notation-examples\"]')&&!document.querySelector('[data-anchor=\"pron-hanoi\"] .hanoi-examples')&&document.querySelectorAll('[data-anchor=\"pron-notation-examples\"] .hanoi-examples tbody tr').length===22"),'separate Hanoi/Saigon/example folding cards');
     eq(await E("document.getElementById('korean-notation-region').value"),'hanoi','default Hanoi');
-    eq(await E("[...document.getElementById('korean-notation-region').options].map(o=>o.textContent)"),['없음','하노이','사이공'],'three notation choices in requested order');
+    eq(await E("[...document.getElementById('korean-notation-region').options].map(o=>o.textContent)"),['없음','하노이 IPA','사이공 IPA','하노이 한글','사이공 한글'],'five notation choices in requested order');
     await E("document.getElementById('korean-notation-region').value='none';document.getElementById('korean-notation-region').dispatchEvent(new Event('change'));document.getElementById('lyr').textContent='Kinh Thánh'");
     const meaningOnly=await tap('Kinh');ok(meaningOnly&&meaningOnly.mean&&!meaningOnly.ko,'none hides pronunciation and keeps compound meaning');
     ok(await E("!document.querySelector('.lyric-word-ko')"),'none omits the pronunciation row');
@@ -110,6 +110,15 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
       await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);eq((await tap(word))?.ko,pron,'Saigon popup '+word);
     }
     eq(await E("localStorage.getItem('vi-korean-notation-region')"),'saigon','selection saved');
+    // IPA notation (Hanoi / Saigon): the popup shows the IPA instead of the Korean letters, the meaning stays
+    await E("document.getElementById('lyr').textContent='nguồn'");
+    for (const [mode, ipa] of [['hanoi-ipa','ŋuən˨˩'],['saigon-ipa','ŋuəŋ˨˩']]) {
+      await E(`(()=>{const select=document.getElementById('korean-notation-region');select.value='${mode}';select.dispatchEvent(new Event('change'));})()`);
+      const r = await tap('nguồn'); eq(r&&r.ko,ipa,mode+' popup'); ok(r&&r.mean,mode+' keeps the meaning');
+      eq(await E("localStorage.getItem('vi-korean-notation-region')"),mode,mode+' saved');
+      await E("window.setLang('en');window.setLang('ko')");eq(await E("document.getElementById('korean-notation-region').value"),mode,mode+' survives rerender');
+    }
+    await E("(()=>{const select=document.getElementById('korean-notation-region');select.value='saigon';select.dispatchEvent(new Event('change'));})()");
     await E("window.setLang('en');window.setLang('ko')");eq(await E("document.getElementById('korean-notation-region').value"),'saigon','selection survives rerender');
     await E("document.getElementById('korean-notation-region').value='hanoi';document.getElementById('korean-notation-region').dispatchEvent(new Event('change'))");
     // the real [노래] lyrics
