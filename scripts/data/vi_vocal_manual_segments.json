@@ -1068,5 +1068,74 @@
         "e": 123200
       }
     ]
+  },
+  "93": {
+    "mediaKey": "pub-pksjj_93_VIDEO",
+    "checksum": "a4ebf7aff0767c1f275f9514c344c5c6",
+    "format": "MP4",
+    "timingSource": "Song 93 children choir (pub-pksjj_93_VIDEO): line boundaries set at the breath / pause valleys of the recording's own audio level that the Vietnamese and the Korean children choir recordings share (the Korean recording's official WebVTT cues lead those valleys by 0.5-0.9 s consistently), 2026-10-19; no listening verification is claimed",
+    "applyLearnerChildren": true,
+    "lines": [
+      {
+        "text": "Lạy Giê-hô-va, chúng con họp lại,",
+        "s": 12400,
+        "e": 17700
+      },
+      {
+        "text": "cầu Cha ban phước nhóm hôm nay.",
+        "s": 17820,
+        "e": 23200
+      },
+      {
+        "text": "Bao câu cảm tạ, dâng Cha hết lòng.",
+        "s": 23320,
+        "e": 28420
+      },
+      {
+        "text": "Nguyện thần khí Cha ngự tại đây.",
+        "s": 28520,
+        "e": 36240
+      },
+      {
+        "text": "Cầu Cha giúp chúng con nên tỉnh luyện,",
+        "s": 44000,
+        "e": 49420
+      },
+      {
+        "text": "Lời Cha ghi khắc trong tâm tư.",
+        "s": 49520,
+        "e": 54620
+      },
+      {
+        "text": "Xin Cha huấn luyện cho tôi tớ ngài",
+        "s": 54720,
+        "e": 60390
+      },
+      {
+        "text": "rao tin Nước Trời thành thạo hơn.",
+        "s": 60490,
+        "e": 66120
+      },
+      {
+        "text": "Cầu Cha chúc phước cho phiên họp này,",
+        "s": 79850,
+        "e": 85100
+      },
+      {
+        "text": "bình an xin xuống khắp dân Cha.",
+        "s": 85200,
+        "e": 90760
+      },
+      {
+        "text": "Mong luôn hết lòng tôn Vua Tối Thượng",
+        "s": 90860,
+        "e": 96320
+      },
+      {
+        "text": "qua câu nói hay trong việc làm.",
+        "s": 96420,
+        "e": 105100
+      }
+    ]
   }
 }

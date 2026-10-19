@@ -80,7 +80,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         h.click();await sleep(150);
         const c=oroot.querySelector('.song-acc[data-song-id="osg-116"]');
         out.open116=c.querySelector('.song-acc-head').getAttribute('aria-expanded'); out.lines116=c.querySelectorAll('.song-lyric-line').length;
-        out.links116=[...c.querySelectorAll('.song-full-link')].map(a=>a.href+' '+a.target+' '+a.rel);
+        out.links116=[...c.querySelectorAll('.song-acc-titles a.jw-org-badge')].map(a=>a.href+' '+a.target+' '+a.rel);
         out.labels116=[...c.querySelectorAll('.lyric-section-marker')].map(x=>x.textContent);
         out.labelBtns=[...c.querySelectorAll('.song-lyric-line')].filter(l=>/^\\s*\\([^()]*\\)\\s*$/.test(l.textContent)).length;
         window.__ttsLog.length=0;
@@ -95,10 +95,10 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         const noVi=ORIGINAL_SONGS.find(s=>!s.languages.vi.title&&s.media&&s.media.ko); // (osg-1 has no Vietnamese; its Korean link is an AUDIO given as media data, not a url)
         oroot.querySelector('.song-acc[data-song-id="'+noVi.id+'"] .song-acc-head').click();await sleep(150);
         const cn=oroot.querySelector('.song-acc[data-song-id="'+noVi.id+'"]');
-        out.noVi={missing:!!cn.querySelector('.song-acc-missing'),viMsg:!!cn.querySelector('.song-lyric-missing'),viLink:[...cn.querySelectorAll('.song-full-link')].map(a=>a.textContent),koLines:cn.querySelectorAll('.song-lyric-line .lyric-target').length};
+        out.noVi={missing:!!cn.querySelector('.song-acc-missing'),viMsg:!!cn.querySelector('.song-lyric-missing'),viLink:[...cn.querySelectorAll('.song-acc-titles a.jw-org-badge')].map(a=>a.textContent),koLines:cn.querySelectorAll('.song-lyric-line .lyric-target').length};
         oroot.querySelector('.song-acc[data-song-id="osg-117"] .song-acc-head').click();await sleep(150);
         out.lines117=oroot.querySelectorAll('.song-acc[data-song-id="osg-117"] .song-lyric-line').length;
-        out.links117=oroot.querySelectorAll('.song-acc[data-song-id="osg-117"] .song-full-link').length;
+        out.links117=oroot.querySelectorAll('.song-acc[data-song-id="osg-117"] .song-acc-titles a.jw-org-badge').length;
         // search
         const inp=oroot.querySelector('.song-kind-search'); inp.value='여전히 소중한'; inp.dispatchEvent(new Event('input',{bubbles:true}));await sleep(100);
         out.search=[...oroot.querySelectorAll('.song-acc')].map(x=>x.dataset.songId); inp.value=''; inp.dispatchEvent(new Event('input',{bubbles:true}));
@@ -108,8 +108,8 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         out.kidCards=kroot.querySelectorAll('.song-acc').length;
         for (const id of ['pk-special-0','pkon-35']) { kroot.querySelector('.song-acc[data-song-id="'+id+'"] .song-acc-head').click(); await sleep(150); }
         const k0=kroot.querySelector('.song-acc[data-song-id="pk-special-0"]'), k35=kroot.querySelector('.song-acc[data-song-id="pkon-35"]');
-        out.k0=k0.querySelector('.song-acc-headrow').innerText; out.k0links=[...k0.querySelectorAll('.song-full-link')].map(a=>a.href);
-        out.k35=k35.querySelector('.song-acc-headrow').innerText; out.k35links=[...k35.querySelectorAll('.song-full-link')].map(a=>a.href);
+        out.k0=k0.querySelector('.song-acc-headrow').innerText; out.k0links=[...k0.querySelectorAll('.song-acc-titles a.jw-org-badge')].map(a=>a.href);
+        out.k35=k35.querySelector('.song-acc-headrow').innerText; out.k35links=[...k35.querySelectorAll('.song-acc-titles a.jw-org-badge')].map(a=>a.href);
         out.kidGapBtns=[...kroot.querySelectorAll('.song-stanza-gap .speak-btn')].length;
         const kNoLyr=CHILDREN_SONGS.find(s=>s.languages.vi.title&&!s.languages.vi.lines.length);
         if (kNoLyr){ kroot.querySelector('.song-acc[data-song-id="'+kNoLyr.id+'"] .song-acc-head').click(); await sleep(150);
@@ -169,7 +169,8 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
           window.setLang(l);await sleep(250);
           const card=document.getElementById('song-detail-card');
           out.byLang[l]={n:card.querySelector('.song-detail-number-badge').textContent,
-            links:[...card.querySelectorAll('.song-full-links .song-full-link')].map(a=>a.getAttribute('href')+'|'+a.textContent+'|'+a.className+'|'+a.target+'|'+a.rel).filter(x=>x.indexOf('sjjm')>=0)};
+            links:[...card.querySelectorAll('.song-full-link')].length,
+            menu:[...card.querySelectorAll('.song-detail-nav .song-jw-menu option')].map(o=>o.value).filter(Boolean)};
         }
         window.setLang('ko');await sleep(200);
         return out;})()`);
@@ -177,12 +178,11 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
       ok(full && full.langs === 12 && full.noLang.length === 0 && JSON.stringify(full.gaps) === JSON.stringify({vi: [164], zh_cn: [162, 163]}), n + ': SONG_MEDIA.full gaps: only vi 164 and zh_cn 162-163 (finder goes to the jw.org home page) ' + (full && JSON.stringify(full.gaps)));
       const exp = {ko: ['KO', '한국어'], en: ['E', 'English'], ja: ['J', '日本語'], zh: ['CH', '繁體中文'], zh_cn: ['CHS', '简体中文'], de: ['X', 'Deutsch'],
         fr: ['F', 'Français'], pl: ['P', 'Polski'], cs: ['B', 'Čeština'], hu: ['H', 'Magyar'], id: ['IN', 'Bahasa Indonesia']};
-      for (const l of Object.keys(exp)) {
-        const b = full && full.byLang[l], num = b && b.n.replace(/\D/g, '');
-        ok(b && b.links.length === 2 && b.links[0].startsWith(sj('VT', num) + '|▶ Tiếng Việt|read-all-btn song-full-link|_blank|noopener noreferrer') &&
-          b.links[1].startsWith(sj(exp[l][0], num) + '|▶ ' + exp[l][1] + '|'), n + ': song ' + num + ' links in ' + l + ' ' + (b && b.links));
+      // the old 전체 듣기 ▶ links under the title are gone (the page's own [전체 듣기] button replaces them); the song's jw.org pages sit in one pull-down menu
+      for (const l of Object.keys(exp).concat(['vi'])) {
+        const b = full && full.byLang[l];
+        ok(b && b.links === 0 && !b.menu.some(u => /sjjm/.test(u)) && b.menu.length > 0 && b.menu.every(u => /^https:\/\/www\.jw\.org\//.test(u)), n + ': song ' + (b && b.n) + ' in ' + l + ': no 전체 듣기 links, a menu of ' + (b && b.menu.length) + ' jw.org items');
       }
-      ok(full && full.byLang.vi.links.length === 1 && full.byLang.vi.links[0].startsWith(sj('VT', full.byLang.vi.n.replace(/\D/g, '')) + '|▶ Tiếng Việt'), n + ': Vietnamese UI has one button');
       // 왕국 노래 164 (added after 1-163): titles, lyrics, line/full listen buttons, Japanese (the official lyrics of Songs(9).xlsx)
       const s164 = await E(`(async()=>{const sleep=ms=>new Promise(r=>setTimeout(r,ms));const out={};
         document.querySelector('.tab-btn[data-tab="sentence"]').click();await sleep(200);
@@ -239,8 +239,8 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
       ok(s164 && s164.sKo.join() === '164' && s164.sVi.join() === '164' && s164.sEn.join() === '164', n + ': search by Korean/Vietnamese/English title ' + (s164 && [s164.sKo, s164.sVi, s164.sEn]));
       ok(s164 && /^164/.test(s164.ko.n) && s164.ko.vi === 'Con tin cậy ngài' && s164.ko.target === '당신을 신뢰합니다' && s164.ko.units > 20 && s164.ko.markers === 3 &&
         s164.ko.markerBtns === 0 && s164.ko.btns === s164.ko.units * 2 && /^1\. /.test(s164.ko.firstTarget) && s164.ko.ref, n + ': 164 detail view ' + (s164 && JSON.stringify(s164.ko)));
-      ok(s164 && s164.ko.full.join() === sj('KO', 164), n + ': 164 full listen in Korean UI: only 한국어 (the Vietnamese video is not on jw.org yet) ' + (s164 && s164.ko.full));
-      ok(s164 && s164.en.target === 'I Trust In You' && s164.en.full.join() === sj('E', 164), n + ': 164 in English ' + (s164 && JSON.stringify(s164.en)));
+      ok(s164 && s164.ko.full.length === 0, n + ': 164 has no 전체 듣기 links under the title ' + (s164 && s164.ko.full));
+      ok(s164 && s164.en.target === 'I Trust In You' && s164.en.full.length === 0, n + ': 164 in English ' + (s164 && JSON.stringify(s164.en)));
       ok(s164 && s164.pickEn.target === 'I Trust In You' && s164.pickJa.vi === 'Con tin cậy ngài' && s164.pickJa.target === JA164.title && !/당신을/.test(s164.pickJa.gridTitle) &&
         s164.pickJa163.target === 'あなたたちの目は見るので幸せです', n + ': picker: 164 shows the Japanese title (no Korean fallback), 163 unchanged ' + (s164 && JSON.stringify([s164.pickJa, s164.pickJa163])));
       {
@@ -249,7 +249,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         ok(jv && JSON.stringify(jv.targetTexts) === JSON.stringify(JA164.lyrics), n + ': 164 detail in Japanese shows the 36 patch lines in order (no Korean fallback) ' + (jv && jv.targetTexts.length));
         ok(jv && jv.targetRows === lyr.length && jv.markerTargets === mk.length && jv.lyricTargetBtns === lyr.length && JSON.stringify(jv.speakJa) === JSON.stringify(lyr) && jv.markerBtns === 0,
           n + ': 164 Japanese lyric lines have a listen button (' + (jv && jv.lyricTargetBtns) + ' of ' + lyr.length + '), the （※ 繰り返し） markers have none (' + (jv && jv.markerBtns) + ')');
-        ok(jv && jv.viBtns > 20 && jv.full.join() === sj('J', 164), n + ': 164 in Japanese: Vietnamese lines and the Japanese video link kept ' + (jv && JSON.stringify(jv.full)));
+        ok(jv && jv.viBtns > 20 && jv.full.length === 0, n + ': 164 in Japanese: Vietnamese lines kept, no 전체 듣기 links ' + (jv && JSON.stringify(jv.full)));
       }
       // The tab names of [오리지널 송] and [여호와의 친구가 되세요] in all 12 UI languages, character for character (no fallback to
       // another language), and song 164 in the kingdom list in every one of them.
@@ -308,7 +308,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
             const a=both&&both.querySelector('.lyric-vi').getBoundingClientRect(), b=both&&both.querySelector('.lyric-target').getBoundingClientRect();
             out.songs[id]={kind, viTitle:vi&&vi.textContent, koTitle:ko&&ko.textContent, titlesText:[...c.querySelectorAll('.song-acc-titles .song-title-link-group')].map(g=>g.firstElementChild.textContent).join(' '),
               viCss:vi&&css(vi,K), koCss:ko&&css(ko,K), viCls:vi&&vi.className, koCls:ko&&ko.className,
-              links:[...c.querySelectorAll('.song-full-links .song-full-link')].map(x=>({t:x.textContent,h:x.getAttribute('href'),tg:x.target,rel:x.rel})), label:(c.querySelector('.song-full-links .song-media-label')||{}).textContent,
+              links:[...c.querySelectorAll('.song-acc-titles a.jw-org-badge')].map(x=>({t:x.getAttribute('href'),h:x.getAttribute('href'),tg:x.target,rel:x.rel})), oldLinks:c.querySelectorAll('.song-full-link').length,
               order:both?(both.querySelector('.lyric-vi').compareDocumentPosition(both.querySelector('.lyric-target'))&Node.DOCUMENT_POSITION_FOLLOWING?'vi,ko':'ko,vi'):'', stacked:!!(a&&b&&b.top>=a.bottom-1&&Math.abs(a.left-b.left)<2), display:getComputedStyle(c.querySelector('.song-lyric-rows')).display,
               markerBtns:c.querySelectorAll('.lyric-section-marker .speak-btn').length, units:c.querySelectorAll('.song-lyric-line').length,
               aria:[head.getAttribute('aria-expanded'),!!document.getElementById(head.getAttribute('aria-controls'))]};
@@ -328,7 +328,7 @@ const ok = (cond, msg) => { checks++; if (!cond) failures.push(msg); };
         const hrefOf = l => j.media && j.media[l] ? 'https://www.jw.org/finder?srcid=jwlshare&wtlocale=' + JWCODE[l] + '&lank=' + j.media[l].mediaKey : j[l].url;
         const want = ['vi', 'ko'].filter(l => hrefOf(l) && j[l].available);
         ok(o.links.length === want.length && o.links.every((x, i) => x.h === hrefOf(want[i]) && x.tg === '_blank' && /noopener/.test(x.rel) && /noreferrer/.test(x.rel)), `${n}: ${id} links = the JSON's (${want}) ${JSON.stringify(o.links.map(x => x.t))}`);
-        ok(o.links.length === 0 || (o.label === '전체 듣기' && o.links.every(x => /^▶ (Tiếng Việt|한국어)$/.test(x.t))), `${n}: ${id} links in the Kingdom form: ${o.label} ${JSON.stringify(o.links.map(x => x.t))}`);
+        ok(o.oldLinks === 0, `${n}: ${id} no 전체 듣기 ▶ links in the song body (the title badges carry the jw.org links)`);
         ok(new Set(o.links.map(x => x.t)).size === o.links.length, `${n}: ${id} duplicate link`);
         ok((!j.vi.title || (o.order === 'vi,ko' && o.stacked)) && o.display !== 'grid', `${n}: ${id} Vietnamese row above its Korean row, no columns (${o.order}, stacked ${o.stacked}, ${o.display})`);
         ok(o.markerBtns === 0 && o.units > 3 && o.aria[0] === 'true' && o.aria[1], `${n}: ${id} lyric units ${o.units}, markers without buttons, accordion aria ${o.aria}`);

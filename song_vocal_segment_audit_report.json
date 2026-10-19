@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T13:17:03.257796+00:00",
+  "generated": "2026-10-19T00:42:47.272820+00:00",
   "fresh_network": false,
   "base_commit": "c7e3a3d",
   "source_priority": [
@@ -236,52 +236,52 @@
   },
   "totals": {
     "vi": {
-      "active_tracks": 51,
-      "enabled_lines": 1046
+      "active_tracks": 52,
+      "enabled_lines": 1058
     },
     "cs": {
-      "active_tracks": 51,
-      "enabled_lines": 1094
+      "active_tracks": 52,
+      "enabled_lines": 1106
     },
     "zh_cn": {
-      "active_tracks": 47,
-      "enabled_lines": 1074
+      "active_tracks": 48,
+      "enabled_lines": 1086
     },
     "zh": {
-      "active_tracks": 46,
-      "enabled_lines": 1037
+      "active_tracks": 47,
+      "enabled_lines": 1049
     },
     "en": {
-      "active_tracks": 85,
-      "enabled_lines": 1789
+      "active_tracks": 86,
+      "enabled_lines": 1801
     },
     "fr": {
-      "active_tracks": 51,
-      "enabled_lines": 1057
+      "active_tracks": 52,
+      "enabled_lines": 1069
     },
     "de": {
-      "active_tracks": 36,
-      "enabled_lines": 758
+      "active_tracks": 37,
+      "enabled_lines": 770
     },
     "hu": {
-      "active_tracks": 42,
-      "enabled_lines": 894
+      "active_tracks": 43,
+      "enabled_lines": 906
     },
     "id": {
-      "active_tracks": 56,
-      "enabled_lines": 1185
+      "active_tracks": 57,
+      "enabled_lines": 1197
     },
     "ja": {
-      "active_tracks": 40,
-      "enabled_lines": 765
+      "active_tracks": 41,
+      "enabled_lines": 777
     },
     "ko": {
-      "active_tracks": 64,
-      "enabled_lines": 1433
+      "active_tracks": 65,
+      "enabled_lines": 1445
     },
     "pl": {
-      "active_tracks": 41,
-      "enabled_lines": 863
+      "active_tracks": 42,
+      "enabled_lines": 875
     }
   },
   "rows": [
@@ -30170,8 +30170,8 @@
       "general_audio_exists": false,
       "general_video_exists": false,
       "disabled_line_reasons": {
-        "lyric_occurrence_omitted_in_selected_recording": 5,
-        "vocal_boundary_requires_review": 9
+        "vocal_boundary_requires_review": 9,
+        "lyric_occurrence_omitted_in_selected_recording": 5
       }
     },
     {
@@ -99323,8 +99323,8 @@
       "general_audio_exists": false,
       "general_video_exists": false,
       "disabled_line_reasons": {
-        "lyric_occurrence_omitted_in_selected_recording": 4,
-        "vocal_boundary_requires_review": 20
+        "vocal_boundary_requires_review": 20,
+        "lyric_occurrence_omitted_in_selected_recording": 4
       }
     },
     {
@@ -117704,141 +117704,117 @@
       ],
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_supplied_line_boundaries",
       "lines": [
         {
-          "s": 4120,
-          "e": 18040,
-          "text": "Lạy Giê-hô-va, chúng con họp lại,",
-          "confidence": 0.3026,
-          "min_char_score": 0.0,
+          "s": 12400,
+          "e": 17700,
           "m": 0,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Lạy Giê-hô-va, chúng con họp lại,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 18120,
-          "e": 22280,
-          "text": "cầu Cha ban phước nhóm hôm nay.",
-          "confidence": 0.3958,
-          "min_char_score": 0.0,
+          "s": 17820,
+          "e": 23200,
           "m": 1,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "cầu Cha ban phước nhóm hôm nay.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 24060,
-          "e": 29560,
-          "text": "Bao câu cảm tạ, dâng Cha hết lòng.",
-          "confidence": 0.3345,
-          "min_char_score": 0.0,
+          "s": 23320,
+          "e": 28420,
           "m": 2,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Bao câu cảm tạ, dâng Cha hết lòng.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 30220,
-          "e": 41660,
-          "text": "Nguyện thần khí Cha ngự tại đây.",
-          "confidence": 0.2237,
-          "min_char_score": 0.0,
+          "s": 28520,
+          "e": 36240,
           "m": 3,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Nguyện thần khí Cha ngự tại đây.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 44120,
-          "e": 49060,
-          "text": "Cầu Cha giúp chúng con nên tỉnh luyện,",
-          "confidence": 0.3227,
-          "min_char_score": 0.0002,
+          "s": 44000,
+          "e": 49420,
           "m": 4,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Cầu Cha giúp chúng con nên tỉnh luyện,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 49580,
-          "e": 55220,
-          "text": "Lời Cha ghi khắc trong tâm tư.",
-          "confidence": 0.2581,
-          "min_char_score": 0.0,
+          "s": 49520,
+          "e": 54620,
           "m": 5,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Lời Cha ghi khắc trong tâm tư.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 55380,
-          "e": 60080,
-          "text": "Xin Cha huấn luyện cho tôi tớ ngài",
-          "confidence": 0.1688,
-          "min_char_score": 0.0,
+          "s": 54720,
+          "e": 60390,
           "m": 6,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Xin Cha huấn luyện cho tôi tớ ngài",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 60620,
-          "e": 65280,
-          "text": "rao tin Nước Trời thành thạo hơn.",
-          "confidence": 0.2294,
-          "min_char_score": 0.0011,
+          "s": 60490,
+          "e": 66120,
           "m": 7,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "rao tin Nước Trời thành thạo hơn.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 79960,
-          "e": 84880,
-          "text": "Cầu Cha chúc phước cho phiên họp này,",
-          "confidence": 0.2545,
-          "min_char_score": 0.0003,
+          "s": 79850,
+          "e": 85100,
           "m": 8,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Cầu Cha chúc phước cho phiên họp này,",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 85440,
-          "e": 90080,
-          "text": "bình an xin xuống khắp dân Cha.",
-          "confidence": 0.2395,
-          "min_char_score": 0.0013,
+          "s": 85200,
+          "e": 90760,
           "m": 9,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "bình an xin xuống khắp dân Cha.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 91000,
-          "e": 96020,
-          "text": "Mong luôn hết lòng tôn Vua Tối Thượng",
-          "confidence": 0.4596,
-          "min_char_score": 0.0116,
+          "s": 90860,
+          "e": 96320,
           "m": 10,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "Mong luôn hết lòng tôn Vua Tối Thượng",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         },
         {
-          "s": 96460,
-          "e": 126580,
-          "text": "qua câu nói hay trong việc làm.",
-          "confidence": 0.3633,
-          "min_char_score": 0.0002,
+          "s": 96420,
+          "e": 105100,
           "m": 11,
           "pid": null,
-          "enabled": false,
-          "reason": "vocal_boundary_requires_review"
+          "text": "qua câu nói hay trong việc làm.",
+          "enabled": true,
+          "reason": "user_supplied_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/95ac968/2/o/pksjj_VT_093_r360P.mp4",
@@ -117846,12 +117822,10 @@
       "checksum": "a4ebf7aff0767c1f275f9514c344c5c6",
       "metadata_hash": null,
       "format": "MP4",
-      "timing_method": "vietnamese_ctc_same_recording",
+      "timing_method": "user_supplied_same_recording_line_boundaries",
       "general_audio_exists": false,
       "general_video_exists": false,
-      "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 93,
@@ -117862,117 +117836,117 @@
       "media_key": "pub-pksjj_93_VIDEO",
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 4120,
-          "e": 18040,
+          "s": 12400,
+          "e": 17700,
           "m": 0,
           "pid": null,
           "text": "Žehnej našim shromážděním,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 18120,
-          "e": 22280,
+          "s": 17820,
+          "e": 23200,
           "m": 1,
           "pid": null,
           "text": "prosíme tě, Bože náš.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24060,
-          "e": 29560,
+          "s": 23320,
+          "e": 28420,
           "m": 2,
           "pid": null,
           "text": "Moc ti za ně děkujeme,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 30220,
-          "e": 41660,
+          "s": 28520,
+          "e": 36240,
           "m": 3,
           "pid": null,
           "text": "duchem svým nám pomáháš.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44120,
-          "e": 49060,
+          "s": 44000,
+          "e": 49420,
           "m": 4,
           "pid": null,
           "text": "Jehovo náš milovaný,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 49580,
-          "e": 55220,
+          "s": 49520,
+          "e": 54620,
           "m": 5,
           "pid": null,
           "text": "toužíme tě správně ctít,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 55380,
-          "e": 60080,
+          "s": 54720,
+          "e": 60390,
           "m": 6,
           "pid": null,
           "text": "s láskou k tobě, k lidem, k pravdě",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 60620,
-          "e": 65280,
+          "s": 60490,
+          "e": 66120,
           "m": 7,
           "pid": null,
           "text": "na službu se připravit.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 79960,
-          "e": 84880,
+          "s": 79850,
+          "e": 85100,
           "m": 8,
           "pid": null,
           "text": "Žehnej nám, když scházíme se,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85440,
-          "e": 90080,
+          "s": 85200,
+          "e": 90760,
           "m": 9,
           "pid": null,
           "text": "pokojem a jednotou.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 91000,
-          "e": 96020,
+          "s": 90860,
+          "e": 96320,
           "m": 10,
           "pid": null,
           "text": "Chceme slovy, také skutky",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 96460,
-          "e": 126580,
+          "s": 96420,
+          "e": 105100,
           "m": 11,
           "pid": null,
           "text": "chválit svrchovanost tvou.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/9389c5/1/o/pksjj_B_093_r360P.mp4",
@@ -117999,9 +117973,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 93,
@@ -118012,117 +117984,117 @@
       "media_key": "pub-pksjj_93_VIDEO",
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 4120,
-          "e": 18040,
+          "s": 12400,
+          "e": 17700,
           "m": 0,
           "pid": null,
           "text": "上帝，我们聚在一起，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 18120,
-          "e": 22280,
+          "s": 17820,
+          "e": 23200,
           "m": 1,
           "pid": null,
           "text": "祷告感谢赞美你。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24060,
-          "e": 29560,
+          "s": 23320,
+          "e": 28420,
           "m": 2,
           "pid": null,
           "text": "参加聚会，得你力量，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 30220,
-          "e": 41660,
+          "s": 28520,
+          "e": 36240,
           "m": 3,
           "pid": null,
           "text": "真理中扎根茁壮。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44120,
-          "e": 49060,
+          "s": 44000,
+          "e": 49420,
           "m": 4,
           "pid": null,
           "text": "求你教导我们真理，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 49580,
-          "e": 55220,
+          "s": 49520,
+          "e": 54620,
           "m": 5,
           "pid": null,
           "text": "使我们合你心意。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 55380,
-          "e": 60080,
+          "s": 54720,
+          "e": 60390,
           "m": 6,
           "pid": null,
           "text": "训练我们传好消息，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 60620,
-          "e": 65280,
+          "s": 60490,
+          "e": 66120,
           "m": 7,
           "pid": null,
           "text": "表现真挚的爱心。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 79960,
-          "e": 84880,
+          "s": 79850,
+          "e": 85100,
           "m": 8,
           "pid": null,
           "text": "慈爱天父，求你赐福，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85440,
-          "e": 90080,
+          "s": 85200,
+          "e": 90760,
           "m": 9,
           "pid": null,
           "text": "让我们团结和睦。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 91000,
-          "e": 96020,
+          "s": 90860,
+          "e": 96320,
           "m": 10,
           "pid": null,
           "text": "但愿我们言行一致，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 96460,
-          "e": 126580,
+          "s": 96420,
+          "e": 105100,
           "m": 11,
           "pid": null,
           "text": "拥护你正义统治。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/b63910/2/o/pksjj_CHS_093_r360P.mp4",
@@ -118149,9 +118121,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 93,
@@ -118162,117 +118132,117 @@
       "media_key": "pub-pksjj_93_VIDEO",
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 4120,
-          "e": 18040,
+          "s": 12400,
+          "e": 17700,
           "m": 0,
           "pid": null,
           "text": "上帝，我們聚在一起，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 18120,
-          "e": 22280,
+          "s": 17820,
+          "e": 23200,
           "m": 1,
           "pid": null,
           "text": "禱告感謝讚美你。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24060,
-          "e": 29560,
+          "s": 23320,
+          "e": 28420,
           "m": 2,
           "pid": null,
           "text": "參加聚會，得你力量，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 30220,
-          "e": 41660,
+          "s": 28520,
+          "e": 36240,
           "m": 3,
           "pid": null,
           "text": "真理中扎根茁壯。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44120,
-          "e": 49060,
+          "s": 44000,
+          "e": 49420,
           "m": 4,
           "pid": null,
           "text": "求你教導我們真理，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 49580,
-          "e": 55220,
+          "s": 49520,
+          "e": 54620,
           "m": 5,
           "pid": null,
           "text": "使我們合你心意。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 55380,
-          "e": 60080,
+          "s": 54720,
+          "e": 60390,
           "m": 6,
           "pid": null,
           "text": "訓練我們傳好消息，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 60620,
-          "e": 65280,
+          "s": 60490,
+          "e": 66120,
           "m": 7,
           "pid": null,
           "text": "表現真摯的愛心。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 79960,
-          "e": 84880,
+          "s": 79850,
+          "e": 85100,
           "m": 8,
           "pid": null,
           "text": "慈愛天父，求你賜福，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85440,
-          "e": 90080,
+          "s": 85200,
+          "e": 90760,
           "m": 9,
           "pid": null,
           "text": "讓我們團結和睦。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 91000,
-          "e": 96020,
+          "s": 90860,
+          "e": 96320,
           "m": 10,
           "pid": null,
           "text": "但願我們言行一致，",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 96460,
-          "e": 126580,
+          "s": 96420,
+          "e": 105100,
           "m": 11,
           "pid": null,
           "text": "擁護你正義統治。",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/63f834/2/o/pksjj_CH_093_r360P.mp4",
@@ -118299,9 +118269,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 93,
@@ -118312,117 +118280,117 @@
       "media_key": "pub-pksjj_93_VIDEO",
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 4120,
-          "e": 18040,
+          "s": 12400,
+          "e": 17700,
           "m": 0,
           "pid": null,
           "text": "Bless us as we meet together,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 18120,
-          "e": 22280,
+          "s": 17820,
+          "e": 23200,
           "m": 1,
           "pid": null,
           "text": "O Jehovah, we now pray.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24060,
-          "e": 29560,
+          "s": 23320,
+          "e": 28420,
           "m": 2,
           "pid": null,
           "text": "We are thankful for our meetings;",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 30220,
-          "e": 41660,
+          "s": 28520,
+          "e": 36240,
           "m": 3,
           "pid": null,
           "text": "May your spirit with us stay.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44120,
-          "e": 49060,
+          "s": 44000,
+          "e": 49420,
           "m": 4,
           "pid": null,
           "text": "Help us, Lord, refine our worship;",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 49580,
-          "e": 55220,
+          "s": 49520,
+          "e": 54620,
           "m": 5,
           "pid": null,
           "text": "With your Word, oh, do us fill.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 55380,
-          "e": 60080,
+          "s": 54720,
+          "e": 60390,
           "m": 6,
           "pid": null,
           "text": "Train our minds and tongues to witness;",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 60620,
-          "e": 65280,
+          "s": 60490,
+          "e": 66120,
           "m": 7,
           "pid": null,
           "text": "Love within our hearts instill.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 79960,
-          "e": 84880,
+          "s": 79850,
+          "e": 85100,
           "m": 8,
           "pid": null,
           "text": "Loving Father, bless our meetings;",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85440,
-          "e": 90080,
+          "s": 85200,
+          "e": 90760,
           "m": 9,
           "pid": null,
           "text": "Grant us peace and unity.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 91000,
-          "e": 96020,
+          "s": 90860,
+          "e": 96320,
           "m": 10,
           "pid": null,
           "text": "May our words and may our actions",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 96460,
-          "e": 126580,
+          "s": 96420,
+          "e": 105100,
           "m": 11,
           "pid": null,
           "text": "Magnify your Sov'reignty.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/49caab/1/o/pksjj_E_093_r360P.mp4",
@@ -118444,9 +118412,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 93,
@@ -118457,117 +118423,117 @@
       "media_key": "pub-pksjj_93_VIDEO",
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 4120,
-          "e": 18040,
+          "s": 12400,
+          "e": 17700,
           "m": 0,
           "pid": null,
           "text": "Heureux d'être tous ensemble,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 18120,
-          "e": 22280,
+          "s": 17820,
+          "e": 23200,
           "m": 1,
           "pid": null,
           "text": "Jéhovah, nous te prions",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24060,
-          "e": 29560,
+          "s": 23320,
+          "e": 28420,
           "m": 2,
           "pid": null,
           "text": "Pour que ton esprit préside",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 30220,
-          "e": 41660,
+          "s": 28520,
+          "e": 36240,
           "m": 3,
           "pid": null,
           "text": "Sur notre congrégation.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44120,
-          "e": 49060,
+          "s": 44000,
+          "e": 49420,
           "m": 4,
           "pid": null,
           "text": "Remplis-nous de ta Parole,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 49580,
-          "e": 55220,
+          "s": 49520,
+          "e": 54620,
           "m": 5,
           "pid": null,
           "text": "Purifie-nous dans tes cours.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 55380,
-          "e": 60080,
+          "s": 54720,
+          "e": 60390,
           "m": 6,
           "pid": null,
           "text": "Forme-nous au ministère,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 60620,
-          "e": 65280,
+          "s": 60490,
+          "e": 66120,
           "m": 7,
           "pid": null,
           "text": "Insuffle en nos cœurs l'amour.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 79960,
-          "e": 84880,
+          "s": 79850,
+          "e": 85100,
           "m": 8,
           "pid": null,
           "text": "Tu nous veux unis, paisibles ;",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85440,
-          "e": 90080,
+          "s": 85200,
+          "e": 90760,
           "m": 9,
           "pid": null,
           "text": "Père, bénis notre assemblée.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 91000,
-          "e": 96020,
+          "s": 90860,
+          "e": 96320,
           "m": 10,
           "pid": null,
           "text": "Que nos actes et nos paroles",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 96460,
-          "e": 126580,
+          "s": 96420,
+          "e": 105100,
           "m": 11,
           "pid": null,
           "text": "Louent ta souveraineté.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/41762e/2/o/pksjj_F_093_r360P.mp4",
@@ -118594,9 +118560,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 93,
@@ -118607,117 +118571,117 @@
       "media_key": "pub-pksjj_93_VIDEO",
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 4120,
-          "e": 18040,
+          "s": 12400,
+          "e": 17700,
           "m": 0,
           "pid": null,
           "text": "Vater, wir sind hier versammelt,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 18120,
-          "e": 22280,
+          "s": 17820,
+          "e": 23200,
           "m": 1,
           "pid": null,
           "text": "schenke uns doch deinen Geist.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24060,
-          "e": 29560,
+          "s": 23320,
+          "e": 28420,
           "m": 2,
           "pid": null,
           "text": "Du belehrst uns mit viel Liebe,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 30220,
-          "e": 41660,
+          "s": 28520,
+          "e": 36240,
           "m": 3,
           "pid": null,
           "text": "du den Weg zum Leben zeigst.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44120,
-          "e": 49060,
+          "s": 44000,
+          "e": 49420,
           "m": 4,
           "pid": null,
           "text": "Lass uns mutig von dir sprechen,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 49580,
-          "e": 55220,
+          "s": 49520,
+          "e": 54620,
           "m": 5,
           "pid": null,
           "text": "ja auch hier an diesem Ort.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 55380,
-          "e": 60080,
+          "s": 54720,
+          "e": 60390,
           "m": 6,
           "pid": null,
           "text": "Bitte öffne unsre Herzen,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 60620,
-          "e": 65280,
+          "s": 60490,
+          "e": 66120,
           "m": 7,
           "pid": null,
           "text": "stärke uns mit deinem Wort.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 79960,
-          "e": 84880,
+          "s": 79850,
+          "e": 85100,
           "m": 8,
           "pid": null,
           "text": "Wir erbitten deinen Segen,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85440,
-          "e": 90080,
+          "s": 85200,
+          "e": 90760,
           "m": 9,
           "pid": null,
           "text": "lassen uns von dir gern führn.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 91000,
-          "e": 96020,
+          "s": 90860,
+          "e": 96320,
           "m": 10,
           "pid": null,
           "text": "Herr Jehova, lass doch bitte",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 96460,
-          "e": 126580,
+          "s": 96420,
+          "e": 105100,
           "m": 11,
           "pid": null,
           "text": "deinen Frieden uns hier spürn.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/afc6b5/2/o/pksjj_X_093_r360P.mp4",
@@ -118739,9 +118703,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 93,
@@ -118752,117 +118714,117 @@
       "media_key": "pub-pksjj_93_VIDEO",
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 4120,
-          "e": 18040,
+          "s": 12400,
+          "e": 17700,
           "m": 0,
           "pid": null,
           "text": "Jehova, ó, áldd meg, kérünk,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 18120,
-          "e": 22280,
+          "s": 17820,
+          "e": 23200,
           "m": 1,
           "pid": null,
           "text": "összejövetelünket!",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24060,
-          "e": 29560,
+          "s": 23320,
+          "e": 28420,
           "m": 2,
           "pid": null,
           "text": "Hálás szívvel kérünk téged,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 30220,
-          "e": 41660,
+          "s": 28520,
+          "e": 36240,
           "m": 3,
           "pid": null,
           "text": "áraszd ránk a szellemed!",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44120,
-          "e": 49060,
+          "s": 44000,
+          "e": 49420,
           "m": 4,
           "pid": null,
           "text": "Adj szívünkbe szeretetet,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 49580,
-          "e": 55220,
+          "s": 49520,
+          "e": 54620,
           "m": 5,
           "pid": null,
           "text": "képezz minket, jó Atyánk!",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 55380,
-          "e": 60080,
+          "s": 54720,
+          "e": 60390,
           "m": 6,
           "pid": null,
           "text": "Add, hogy bátran hírül adjuk,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 60620,
-          "e": 65280,
+          "s": 60490,
+          "e": 66120,
           "m": 7,
           "pid": null,
           "text": "mit tanít a Szentírás!",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 79960,
-          "e": 84880,
+          "s": 79850,
+          "e": 85100,
           "m": 8,
           "pid": null,
           "text": "Áldj meg minket, kérve kérünk,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85440,
-          "e": 90080,
+          "s": 85200,
+          "e": 90760,
           "m": 9,
           "pid": null,
           "text": "békével és egységgel!",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 91000,
-          "e": 96020,
+          "s": 90860,
+          "e": 96320,
           "m": 10,
           "pid": null,
           "text": "Leghőbb vágyunk: szóban s tettben",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 96460,
-          "e": 126580,
+          "s": 96420,
+          "e": 105100,
           "m": 11,
           "pid": null,
           "text": "dicsérni nagy nevedet.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/9683b6/1/o/pksjj_H_093_r360P.mp4",
@@ -118889,9 +118851,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 93,
@@ -118902,117 +118862,117 @@
       "media_key": "pub-pksjj_93_VIDEO",
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 4120,
-          "e": 18040,
+          "s": 12400,
+          "e": 17700,
           "m": 0,
           "pid": null,
           "text": "Ya Yehuwa, t'rima kasih",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 18120,
-          "e": 22280,
+          "s": 17820,
+          "e": 23200,
           "m": 1,
           "pid": null,
           "text": "Kami dapat berhimpun.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24060,
-          "e": 29560,
+          "s": 23320,
+          "e": 28420,
           "m": 2,
           "pid": null,
           "text": "Curahkanlah kuasa-Mu",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 30220,
-          "e": 41660,
+          "s": 28520,
+          "e": 36240,
           "m": 3,
           "pid": null,
           "text": "Dan berkatilah kami.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44120,
-          "e": 49060,
+          "s": 44000,
+          "e": 49420,
           "m": 4,
           "pid": null,
           "text": "Murnikanlah diri kami,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 49580,
-          "e": 55220,
+          "s": 49520,
+          "e": 54620,
           "m": 5,
           "pid": null,
           "text": "Tanamkanlah Firman-Mu.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 55380,
-          "e": 60080,
+          "s": 54720,
+          "e": 60390,
           "m": 6,
           "pid": null,
           "text": "Perkuatlah kasih kami,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 60620,
-          "e": 65280,
+          "s": 60490,
+          "e": 66120,
           "m": 7,
           "pid": null,
           "text": "Latih kami bersaksi.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 79960,
-          "e": 84880,
+          "s": 79850,
+          "e": 85100,
           "m": 8,
           "pid": null,
           "text": "Bapak, tolong bantu kami",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85440,
-          "e": 90080,
+          "s": 85200,
+          "e": 90760,
           "m": 9,
           "pid": null,
           "text": "Bersatu dalam damai,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 91000,
-          "e": 96020,
+          "s": 90860,
+          "e": 96320,
           "m": 10,
           "pid": null,
           "text": "Berbicara dan bertindak",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 96460,
-          "e": 126580,
+          "s": 96420,
+          "e": 105100,
           "m": 11,
           "pid": null,
           "text": "Demi kemuliaan-Mu.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/1a3658/2/o/pksjj_IN_093_r360P.mp4",
@@ -119039,9 +118999,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 93,
@@ -119052,117 +119010,117 @@
       "media_key": "pub-pksjj_93_VIDEO",
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 4120,
-          "e": 18040,
+          "s": 12400,
+          "e": 17700,
           "m": 0,
           "pid": null,
           "text": "喜びもたらす",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 18120,
-          "e": 22280,
+          "s": 17820,
+          "e": 23200,
           "m": 1,
           "pid": null,
           "text": "この集会に",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24060,
-          "e": 29560,
+          "s": 23320,
+          "e": 28420,
           "m": 2,
           "pid": null,
           "text": "支えと祝福",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 30220,
-          "e": 41660,
+          "s": 28520,
+          "e": 36240,
           "m": 3,
           "pid": null,
           "text": "ありますように",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44120,
-          "e": 49060,
+          "s": 44000,
+          "e": 49420,
           "m": 4,
           "pid": null,
           "text": "教えてください",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 49580,
-          "e": 55220,
+          "s": 49520,
+          "e": 54620,
           "m": 5,
           "pid": null,
           "text": "あなたの言葉",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 55380,
-          "e": 60080,
+          "s": 54720,
+          "e": 60390,
           "m": 6,
           "pid": null,
           "text": "正しい崇拝",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 60620,
-          "e": 65280,
+          "s": 60490,
+          "e": 66120,
           "m": 7,
           "pid": null,
           "text": "捧げるために",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 79960,
-          "e": 84880,
+          "s": 79850,
+          "e": 85100,
           "m": 8,
           "pid": null,
           "text": "与えてください",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85440,
-          "e": 90080,
+          "s": 85200,
+          "e": 90760,
           "m": 9,
           "pid": null,
           "text": "平和と一致",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 91000,
-          "e": 96020,
+          "s": 90860,
+          "e": 96320,
           "m": 10,
           "pid": null,
           "text": "あなたの主権を",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 96460,
-          "e": 126580,
+          "s": 96420,
+          "e": 105100,
           "m": 11,
           "pid": null,
           "text": "たたえるために",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/7622b3/1/o/pksjj_J_093_r360P.mp4",
@@ -119189,9 +119147,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 93,
@@ -119202,117 +119158,117 @@
       "media_key": "pub-pksjj_93_VIDEO",
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 4120,
-          "e": 18040,
+          "s": 12400,
+          "e": 17700,
           "m": 0,
           "pid": null,
           "text": "여호와여, 우리",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 18120,
-          "e": 22280,
+          "s": 17820,
+          "e": 23200,
           "m": 1,
           "pid": null,
           "text": "모임 크게 축복하소서.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24060,
-          "e": 29560,
+          "s": 23320,
+          "e": 28420,
           "m": 2,
           "pid": null,
           "text": "모든 집회 감사하니",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 30220,
-          "e": 41660,
+          "s": 28520,
+          "e": 36240,
           "m": 3,
           "pid": null,
           "text": "주의 영을 주소서.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44120,
-          "e": 49060,
+          "s": 44000,
+          "e": 49420,
           "m": 4,
           "pid": null,
           "text": "주여, 우릴 말씀으로",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 49580,
-          "e": 55220,
+          "s": 49520,
+          "e": 54620,
           "m": 5,
           "pid": null,
           "text": "순결하게 하소서.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 55380,
-          "e": 60080,
+          "s": 54720,
+          "e": 60390,
           "m": 6,
           "pid": null,
           "text": "사랑으로 전파하게",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 60620,
-          "e": 65280,
+          "s": 60490,
+          "e": 66120,
           "m": 7,
           "pid": null,
           "text": "가르침을 주소서.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 79960,
-          "e": 84880,
+          "s": 79850,
+          "e": 85100,
           "m": 8,
           "pid": null,
           "text": "아버지여, 이 모임에",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85440,
-          "e": 90080,
+          "s": 85200,
+          "e": 90760,
           "m": 9,
           "pid": null,
           "text": "평화, 연합 주소서.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 91000,
-          "e": 96020,
+          "s": 90860,
+          "e": 96320,
           "m": 10,
           "pid": null,
           "text": "언행으로 주의 주권",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 96460,
-          "e": 126580,
+          "s": 96420,
+          "e": 105100,
           "m": 11,
           "pid": null,
           "text": "드높이게 하소서.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/6860f5d/3/o/pksjj_KO_093_r360P.mp4",
@@ -119339,9 +119295,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 93,
@@ -119352,117 +119306,117 @@
       "media_key": "pub-pksjj_93_VIDEO",
       "marker_count": 0,
       "singable_line_count": 12,
-      "active": false,
-      "buttons": 0,
-      "reason": "vietnamese_vocal_boundary_requires_review",
+      "active": true,
+      "buttons": 12,
+      "reason": "user_authorized_shared_children_line_boundaries",
       "lines": [
         {
-          "s": 4120,
-          "e": 18040,
+          "s": 12400,
+          "e": 17700,
           "m": 0,
           "pid": null,
           "text": "Panie nasz, Jehowo Boże,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 18120,
-          "e": 22280,
+          "s": 17820,
+          "e": 23200,
           "m": 1,
           "pid": null,
           "text": "śpiewa Tobie wdzięczny lud.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 24060,
-          "e": 29560,
+          "s": 23320,
+          "e": 28420,
           "m": 2,
           "pid": null,
           "text": "Dziękujemy za zebrania;",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 30220,
-          "e": 41660,
+          "s": 28520,
+          "e": 36240,
           "m": 3,
           "pid": null,
           "text": "oby wspierał nas Twój duch.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 44120,
-          "e": 49060,
+          "s": 44000,
+          "e": 49420,
           "m": 4,
           "pid": null,
           "text": "Pomóż nam umacniać wiarę",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 49580,
-          "e": 55220,
+          "s": 49520,
+          "e": 54620,
           "m": 5,
           "pid": null,
           "text": "i rozumieć Słowo Twe.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 55380,
-          "e": 60080,
+          "s": 54720,
+          "e": 60390,
           "m": 6,
           "pid": null,
           "text": "Ucz, jak głosić prawdę z Biblii,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 60620,
-          "e": 65280,
+          "s": 60490,
+          "e": 66120,
           "m": 7,
           "pid": null,
           "text": "miłość wlej do naszych serc.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 79960,
-          "e": 84880,
+          "s": 79850,
+          "e": 85100,
           "m": 8,
           "pid": null,
           "text": "Pobłogosław więc zebraniom,",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 85440,
-          "e": 90080,
+          "s": 85200,
+          "e": 90760,
           "m": 9,
           "pid": null,
           "text": "pomóż nam w jedności żyć.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 91000,
-          "e": 96020,
+          "s": 90860,
+          "e": 96320,
           "m": 10,
           "pid": null,
           "text": "Chcemy słowem oraz czynem",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         },
         {
-          "s": 96460,
-          "e": 126580,
+          "s": 96420,
+          "e": 105100,
           "m": 11,
           "pid": null,
           "text": "wciąż przysparzać Tobie czci.",
-          "enabled": false,
-          "reason": "vietnamese_line_unverified"
+          "enabled": true,
+          "reason": "user_authorized_shared_children_line_boundaries"
         }
       ],
       "url": "https://cfp2.jw-cdn.org/a/cd7ba7/1/o/pksjj_P_093_r360P.mp4",
@@ -119489,9 +119443,7 @@
           "http_status": 200
         }
       ],
-      "disabled_line_reasons": {
-        "vietnamese_line_unverified": 12
-      }
+      "disabled_line_reasons": {}
     },
     {
       "track": 94,

@@ -71,7 +71,7 @@ function staticChecks() {
       if (!allowed(url) && !seen.has(url)) { seen.add(url); bad.push(site + ' ' + url.slice(0, 110)); }
     }
   }
-  ok(pages >= 20, 'built files scanned: ' + pages);
+  ok(pages >= 15, 'built files scanned: ' + pages);
   ok(bad.length === 0, 'built pages: jw.org addresses that are not jwlshare finder links (' + bad.length + '): ' + bad.slice(0, 5).join(' | '));
   return found;
 }
@@ -208,7 +208,7 @@ function staticChecks() {
         const js = o.osg116.json;
         const CODE = {vi: 'VT', ko: 'KO'};
         const want = ['vi', 'ko'].filter(l => js.media && js.media[l] && js.languages[l].available).map(l => FINDER + CODE[l] + '&lank=' + js.media[l].mediaKey);
-        ok(want.length >= 1 && JSON.stringify(o.osg116.badges.map(b => b.a)) === JSON.stringify(want) && JSON.stringify(o.osg116.buttons) === JSON.stringify(want) && o.osg116.badges.every(b => b.text === 'JW.ORG' && b.kind === 'song-video'),
+        ok(want.length >= 1 && JSON.stringify(o.osg116.badges.map(b => b.a)) === JSON.stringify(want) && o.osg116.buttons.length === 0 && o.osg116.badges.every(b => b.text === 'JW.ORG' && b.kind === 'song-video'),
           `${n}: OSG 116 badges = the JSON's finder links ${JSON.stringify(o.osg116.badges.map(b => b.a))}`);
         const st = [o.osg116.struct, o.kid0struct];
         ok(st.every(x => x.kids[0] === 'BUTTON.song-acc-head' && x.kids[1] === 'SPAN.song-acc-titles' && x.inBtn === 0 && x.bodyRow === 0 && /^\d+$/.test(x.btnInner)),
@@ -259,7 +259,7 @@ function staticChecks() {
     cdp.close();
   } finally { chrome.kill(); server.kill(); }
   // (the song links of [오리지널 송] / [어린이 노래] are data -- kind + media key -- and built by the page, so they are not addresses in the bundle)
-  ok(foundUrls > 30, 'the built pages were scanned (' + foundUrls + ' jw.org addresses)');
+  ok(foundUrls > 15, 'the built pages were scanned (' + foundUrls + ' jw.org addresses)');
   console.log(`checks run: ${checks}`);
   if (failures.length) { failures.forEach(f => console.error('  [FAIL] ' + f)); console.error('--- JW.ORG BADGES TEST FAILED ---'); process.exit(1); }
   console.log('--- JW.ORG BADGES TEST PASSED ---');

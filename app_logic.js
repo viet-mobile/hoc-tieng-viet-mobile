@@ -10709,11 +10709,40 @@ function verifyDistribution(units, dist, pins) {
     var items = jwFinderItemsHtml(docid);
     return items ? '<div class="jw-badge-row song-jw-links">' + items + '</div>' : "";
   }
-  // Everything jw.org offers for a 왕국 노래 -- 전체 듣기, the jw.org pages, the children's / choir recordings -- sits in ONE wrapping row.
-  function songJwLinksHtml(number) {
-    var parts = songFullListenHtml(number, true);
-    if (number >= 1 && number <= 163) parts += '<span class="song-media-group">' + jwFinderItemsHtml((number <= 151 ? 1102016800 : 1102022800) + number) + '</span>' + songMediaLinksHtml(number, true);
-    return parts ? '<div class="song-full-links song-jw-one-row">' + parts + '</div>' : "";
+  // ONE pull-down menu for every jw.org recording / page of a song (it replaces the former row of 6+ links). It sits left of [반복 듣기].
+  // items: [{group, label, url}] -- chosen option opens the jw.org page in a new tab and the menu returns to its title.
+  var SONG_JW_MENU_TITLE = { ko: "JW.ORG 음원", vi: "Nguồn JW.ORG", en: "JW.ORG sources", ja: "JW.ORG の音源", zh: "JW.ORG 音源", zh_cn: "JW.ORG 音源",
+    de: "JW.ORG-Quellen", fr: "Sources JW.ORG", pl: "Źródła JW.ORG", cs: "Zdroje JW.ORG", hu: "JW.ORG források", id: "Sumber JW.ORG" };
+  function songJwMenuHtml(items) {
+    items = (items || []).filter(function (it) { return it && it.url && isAllowedJwOrgShareUrl(it.url); });
+    if (!items.length) return "";
+    var title = SONG_JW_MENU_TITLE[currentLang] || SONG_JW_MENU_TITLE.en, groups = [], html = "";
+    items.forEach(function (it) {
+      var g = groups.filter(function (x) { return x.name === it.group; })[0];
+      if (!g) groups.push(g = { name: it.group, items: [] });
+      g.items.push(it);
+    });
+    groups.forEach(function (g) {
+      html += '<optgroup label="' + escapeAttr(g.name) + '">' + g.items.map(function (it) {
+        return '<option value="' + escapeAttr(it.url) + '" data-media-kind="' + escapeAttr(it.kind || "") + '">' + escapeHtml(it.label) + '</option>';
+      }).join("") + '</optgroup>';
+    });
+    return '<select class="song-jw-menu repeat-count-select" aria-label="' + escapeAttr(title) + '"><option value="" selected>' + escapeHtml(title) + '</option>' + html + '</select>';
+  }
+  // The items of a 왕국 노래: the jw.org song page and the children's / choir recordings, in Vietnamese and the UI language (the 전체 듣기 button of the page replaces the old 전체 듣기 links).
+  function songJwMenuItems(number) {
+    var items = [], langs = currentLang === "vi" ? ["vi"] : ["vi", currentLang], media = (typeof SONG_MEDIA !== "undefined" && SONG_MEDIA) || {};
+    function has(kind, l) { return ((media[kind] || {})[l] || []).indexOf(number) >= 0; }
+    if (number >= 1 && number <= 163) {
+      var docid = (number <= 151 ? 1102016800 : 1102022800) + number;
+      langs.forEach(function (l) { items.push({ group: "JW.ORG", label: songJwLocale(l)[1], url: jwFinderUrl(docid, l), kind: "publication" }); });
+      songMediaKinds().forEach(function (k) {
+        langs.forEach(function (l) {
+          if (has(k[0], l)) items.push({ group: T(k[3]), label: songJwLocale(l)[1], url: jwLankUrl("pub-" + k[1] + "_" + number + "_" + k[2], l), kind: k[0] });
+        });
+      });
+    }
+    return items;
   }
   // jw.org media page by "lank" (pub-<code>_<track>_<VIDEO|AUDIO>) in one UI language.
   function jwLankUrl(lank, lang) {
@@ -10750,36 +10779,6 @@ function verifyDistribution(units, dist, pins) {
         zh: "合唱音頻", zh_cn: "合唱音频", de: "Chor-Audio", fr: "Audio de la chorale", pl: "Nagranie chóru",
         cs: "Nahrávka sboru", hu: "Kórusfelvétel", id: "Audio paduan suara" }]
     ];
-  }
-  // 전체 듣기 of a 왕국 노래: its jw.org video (pub-sjjm_<n>_VIDEO) in Vietnamese and in the current UI language (one button
-  // when that is Vietnamese). Only the languages jw.org has the song in (SONG_MEDIA.full, scripts/song_full_media.py) get a
-  // button; none at all -> no 전체 듣기 area.
-  function songFullListenHtml(number, inner) {
-    var have = (typeof SONG_MEDIA !== "undefined" && SONG_MEDIA && SONG_MEDIA.full) || {};
-    var langs = (currentLang === "vi" ? ["vi"] : ["vi", currentLang]).filter(function (l) { return (have[l] || []).indexOf(number) >= 0; });
-    if (!langs.length) return "";
-    var buttons = langs.map(function (l) {
-      var url = jwLankUrl("pub-sjjm_" + number + "_VIDEO", l);
-      return url ? '<a class="read-all-btn song-full-link" href="' + escapeAttr(url) +
-        '" target="_blank" rel="noopener noreferrer">▶ ' + escapeHtml(songJwLocale(l)[1]) + '</a>' : "";
-    }).join("");
-    if (!buttons) return "";
-    var group = '<span class="song-media-group"><span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + buttons + '</span>';
-    return inner ? group : '<div class="song-full-links">' + group + '</div>';
-  }
-  // Children's song video/audio and choir audio of a song: only the ones that exist on jw.org in that language
-  // (SONG_MEDIA, song_media_data.py), for Vietnamese and the current UI language.
-  function songMediaLinksHtml(number, inner) {
-    if (typeof SONG_MEDIA === "undefined" || !SONG_MEDIA) return "";
-    var langs = currentLang === "vi" ? ["vi"] : ["vi", currentLang];
-    return songMediaKinds().map(function (k) {
-      var links = langs.filter(function (l) { return ((SONG_MEDIA[k[0]] || {})[l] || []).indexOf(number) >= 0; }).map(function (l) {
-        return jwBadgeItemHtml(l, jwOrgBadgeHtml(jwLankUrl("pub-" + k[1] + "_" + number + "_" + k[2], l), { kind: k[0], lang: l, label: T(k[3]) }));
-      }).join("");
-      if (!links) return "";
-      return inner ? '<span class="song-media-group"><span class="song-media-label">' + escapeHtml(T(k[3])) + '</span>' + links + '</span>' :
-        '<div class="jw-badge-row song-media-links"><span class="song-media-label">' + escapeHtml(T(k[3])) + '</span>' + links + '</div>';
-    }).join("");
   }
   // 「행복한 삶을 영원히」 on jw.org: lesson N is docid 1102021200 + N, the part N review 1102021301 + 10 N and
   // "Am I Ready?" 1102021351 (checked on jw.org for the 12 languages, 2026-10).
@@ -11875,7 +11874,7 @@ function verifyDistribution(units, dist, pins) {
     "hoạn nạn": "환난", "bôn ba": "동분서주하다", "trân trọng": "아끼다, 소중히 여기다", "bết-lê-hem": "베들레헴", "giô-đanh": "요단",
     "si-ôn": "시온", "giê-ru-sa-lem": "예루살렘", "mê-xi-cô": "멕시코", "ga-li-lê": "갈릴리", "rõ": "명확하다",
     "ngài": "당신(2인칭 존칭), 그분(3인칭 존칭)", "chúng con": "저희들", "vui sướng": "기쁜, 행복한", "sướng vui": "기쁜, 행복한",
-    "tuyệt vời": "훌륭한, 대단히", "ta": "나"
+    "tuyệt vời": "훌륭한, 대단히", "ta": "나", "hay": "또는; 듣다; 좋다"
   };
   var lyricWordDict = null, lyricWordPop = null;
   // Lookup key: lower case, and the tone mark of oa / oe / uy written on the first vowel (hoà = hòa, thoả = thỏa).
@@ -12063,6 +12062,13 @@ function verifyDistribution(units, dist, pins) {
     var word = lyricWordAt(el, e.clientX, e.clientY);
     if (word) lyricWordShow(word);
   });
+  document.addEventListener("change", function (e) {
+    var menu = e.target;
+    if (!menu || !menu.classList || !menu.classList.contains("song-jw-menu")) return;
+    var url = menu.value;
+    menu.value = "";
+    if (url && isAllowedJwOrgShareUrl(url)) window.open(url, "_blank", "noopener,noreferrer");
+  });
   window.__hanoiKo = { syllable: hanoiKoreanSyllable, word: hanoiKoreanWord, ipa: viIpaWord, ipaSyllable: viIpaSyllable };   // tests/test_lyric_word_popup.js
   window.addEventListener("scroll", lyricWordClose, true);
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") lyricWordClose(); });
@@ -12083,17 +12089,12 @@ function verifyDistribution(units, dist, pins) {
   function songAccBodyHtml(song) {
     var tl = songTargetLang(), vi = songLangData(song, "vi"), t = songLangData(song, tl);
     var viOk = songLangHas(song, "vi"), tOk = songLangHas(song, tl);
-    var links = songLangsShown().map(function (l) {
-      var info = songLinkInfo(song, l);
-      return info ? '<a class="read-all-btn song-full-link" href="' + escapeAttr(info.url) + '" target="_blank" rel="noopener noreferrer" data-media-kind="' + info.kind + '">▶ ' +
-        escapeHtml(songJwLocale(l)[1]) + '</a>' : "";
-    }).join("");
     var rows = songRows(viOk ? songSectionsOf(vi) : [], tOk ? songSectionsOf(t) : []);
     var notes = (viOk ? '' : '<div class="song-lyric-missing">' + escapeHtml(TU("베트남어 가사 미제공")) + '</div>') +
       (tl && !tOk ? '<div class="song-lyric-missing">' + escapeHtml(TU("이 언어의 가사는 제공되지 않아요")) + '</div>' : '');
     var html = '';
     var readAll = readAllButtonHtml(songReadAllEntries(rows));
-    html += '<div class="song-full-links">' + (links ? '<span class="song-media-label">' + escapeHtml(TU("전체 듣기")) + '</span>' + links : '') + audioOptionsHtml() + readAll + '</div>';
+    html += '<div class="song-full-links">' + audioOptionsHtml() + readAll + '</div>';   // the recording links are the [JW.ORG] badges of the title lines
     var segKey = /^(osg|pkon|pk)-/.test(String(song.id)) ? String(song.id) : "", segKind = /^osg-/.test(String(song.id)) ? "original" : "children";
     html += notes + '<div class="song-lyric-rows"' + (segKey ? ' data-seg-kind="' + segKind + '" data-seg-key="' + escapeAttr(segKey) + '" data-seg-tl="' + (tl && tOk ? escapeAttr(tl) : "") + '"' : '') + '>';
     rows.forEach(function (r) { html += songRowHtml(r); });
@@ -12342,9 +12343,8 @@ function verifyDistribution(units, dist, pins) {
           (targetTitle && currentLang !== "vi" ? songTitleBadgesHtml(sel.number, currentLang) : '') + '</div>' +
         (viScripture ? '<div class="song-detail-vi-scripture vn">' + escapeHtml(viScripture) + '</div>' : '') +
         (targetScripture ? '<div class="song-detail-target-scripture">' + escapeHtml(targetScripture) + '</div>' : '') +
-        songJwLinksHtml(sel.number) +
       '</div>' +
-      '<div class="song-detail-nav">' + audioOptionsHtml() +
+      '<div class="song-detail-nav">' + songJwMenuHtml(songJwMenuItems(sel.number)) + audioOptionsHtml() +
         readAllButtonHtml(songLines) +
       '</div>' +
     '</div>';

@@ -155,3 +155,16 @@ All learner locales use the same supplied bounds in their own checksum-bound
 children videos under the standing shared-children instruction. These are user
 annotations; network position checks do not independently verify audible vocal
 start/end identity. The prior 24 held Vietnamese lines are now enabled.
+
+## Song 93 children choir line boundaries (2026-10-19)
+
+Song 93 had been entirely held: the CTC candidates of pub-pksjj_93_VIDEO scored 0.17-0.46 and no official cue file exists for
+the Vietnamese recording. The 12 sung lines are now enabled in all 12 locales from boundaries read off the recordings' own audio
+level (20 ms RMS, 7-frame smoothing). The Vietnamese (checksum a4ebf7aff0767c1f275f9514c344c5c6, 127.59 s) and the Korean
+(27b0b52c18e1e7e82161529db2b3b095, 126.59 s) children recordings share the same breath / pause valleys to within 0.02-0.3 s
+(17.8, 23.3, 28.5, 36.3, 49.5, 54.7, 60.4, 66.1, 85.2, 90.8, 96.4 s ...), so one table fits both under the standing shared
+children policy; each learner locale still binds its own checksum-bound recording. The Korean recording's official WebVTT cues
+(pksjj_KO_093.vtt) lead those valleys by a steady 0.5-0.9 s (they are display times), which supports reading the valleys as
+the line boundaries. Entrances after the instrumental breaks (12.4, 44.0 and 79.85 s) are the sharp rises of the level.
+Boundaries sit 50 ms inside the valleys; the last line ends at 105.1 s, before the outro. These are measured from the audio
+level, not from forced alignment or a listening review.
