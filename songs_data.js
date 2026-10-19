@@ -36726,7 +36726,9 @@ const SONGS_DATA = [
     "lines": [
       {
         "vi": "1. Lạy Giê-hô-va, chúng con họp lại,",
-        "ko": "1. 여호와여, 우리",
+        "ko": "1. 여호와여, 우리 모임",
+        "vi_old": "Cầu xin Giê-hô-va Cha cao thượng,",
+        "ko_old": "함께 모여 기도하니",
         "zh": "1．上帝，我們聚在一起，",
         "en": "1. Bless us as we meet together,",
         "ja": "1. 喜びもたらす",
@@ -36740,7 +36742,9 @@ const SONGS_DATA = [
       },
       {
         "vi": "cầu Cha ban phước nhóm hôm nay.",
-        "ko": "모임 크게 축복하소서.",
+        "ko": "크게 축복하소서.",
+        "vi_old": "nguyện Cha ban phước nhóm hôm nay.",
+        "ko_old": "주여 축복하소서.",
         "zh": "禱告感謝讚美你。",
         "en": "O Jehovah, we now pray.",
         "ja": "この集会に",
@@ -36755,6 +36759,8 @@ const SONGS_DATA = [
       {
         "vi": "Bao câu cảm tạ, dâng Cha hết lòng.",
         "ko": "모든 집회 감사하니",
+        "vi_old": "Ơn Cha rất nhiều cho nay nhóm họp,",
+        "ko_old": "집회들을 감사하니",
         "zh": "參加聚會，得你力量，",
         "en": "We are thankful for our meetings;",
         "ja": "支えと祝福",
@@ -36769,6 +36775,8 @@ const SONGS_DATA = [
       {
         "vi": "Nguyện thần khí Cha ngự tại đây.",
         "ko": "주의 영을 주소서.",
+        "vi_old": "xin cho chúng con nghe Lời Cha.",
+        "ko_old": "영이 함께하소서.",
         "zh": "真理中扎根茁壯。",
         "en": "May your spirit with us stay.",
         "ja": "ありますように",
@@ -36783,6 +36791,8 @@ const SONGS_DATA = [
       {
         "vi": "2. Cầu Cha giúp chúng con nên tỉnh luyện,",
         "ko": "2. 주여, 우릴 말씀으로",
+        "vi_old": "Cầu Cha giúp chúng con năng thờ phượng.",
+        "ko_old": "우리 숭배 정결토록",
         "zh": "2．求你教導我們真理，",
         "en": "2. Help us, Lord, refine our worship;",
         "ja": "2. 教えてください ",
@@ -36797,6 +36807,8 @@ const SONGS_DATA = [
       {
         "vi": "Lời Cha ghi khắc trong tâm tư.",
         "ko": "순결하게 하소서.",
+        "vi_old": "Lời Cha xin phủ kín tâm tư,",
+        "ko_old": "말씀 가득 주소서.",
         "zh": "使我們合你心意。",
         "en": "With your Word, oh, do us fill.",
         "ja": "あなたの言葉",
@@ -36811,6 +36823,8 @@ const SONGS_DATA = [
       {
         "vi": "Xin Cha huấn luyện cho tôi tớ ngài",
         "ko": "사랑으로 전파하게",
+        "vi_old": "yêu thương lấp đầy trong tâm mỗi người,",
+        "ko_old": "사랑으로 전파하게",
         "zh": "訓練我們傳好消息，",
         "en": "Train our minds and tongues to witness;",
         "ja": "正しい崇拝",
@@ -36825,6 +36839,8 @@ const SONGS_DATA = [
       {
         "vi": "rao tin Nước Trời thành thạo hơn.",
         "ko": "가르침을 주소서.",
+        "vi_old": "rao tin Chúa thêm thành thạo hơn.",
+        "ko_old": "훈련시켜 주소서.",
         "zh": "表現真摯的愛心。",
         "en": "Love within our hearts instill.",
         "ja": "捧げるために",
@@ -36839,6 +36855,8 @@ const SONGS_DATA = [
       {
         "vi": "3. Cầu Cha chúc phước cho phiên họp này,",
         "ko": "3. 아버지여, 이 모임에",
+        "vi_old": "Cầu Cha chúc phước cho phiên họp này,",
+        "ko_old": "아버지여, 이 모임에",
         "zh": "3．慈愛天父，求你賜福，",
         "en": "3. Loving Father, bless our meetings;",
         "ja": "3. 与えてください ",
@@ -36853,6 +36871,8 @@ const SONGS_DATA = [
       {
         "vi": "bình an xin xuống khắp dân Cha.",
         "ko": "평화, 연합 주소서.",
+        "vi_old": "bình an xin xuống khắp dân Cha.",
+        "ko_old": "평화, 연합 주소서.",
         "zh": "讓我們團結和睦。",
         "en": "Grant us peace and unity.",
         "ja": "平和と一致",
@@ -36867,6 +36887,8 @@ const SONGS_DATA = [
       {
         "vi": "Mong luôn hết lòng tôn Vua Tối Thượng",
         "ko": "언행으로 주의 주권",
+        "vi_old": "Mong luôn hết lòng tôn Vua Tối Thượng",
+        "ko_old": "우리 언행 주의 주권",
         "zh": "但願我們言行一致，",
         "en": "May our words and may our actions",
         "ja": "あなたの主権を",
@@ -36881,6 +36903,8 @@ const SONGS_DATA = [
       {
         "vi": "qua câu nói hay trong việc làm.",
         "ko": "드높이게 하소서.",
+        "vi_old": "trong câu nói, qua hành động luôn.",
+        "ko_old": "돋보이게 하소서.",
         "zh": "擁護你正義統治。",
         "en": "Magnify your Sov'reignty.",
         "ja": "たたえるために",

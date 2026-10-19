@@ -12277,6 +12277,7 @@ function verifyDistribution(units, dist, pins) {
       // Line 1: Vietnamese Original (Prominent font-weight, largest)
       lyricsHtml += '<div class="lyric-vi-row">' +
         '<div class="lyric-vi vn">' + escapeHtml(vi) + '</div>' +
+        (l.vi_old ? '<span class="lyric-old" lang="vi">(' + escapeHtml(l.vi_old) + ')</span>' : '') +
         '<button type="button" class="speak-btn" data-speak="' + escapeAttr(vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
         '</div>';
 
@@ -12284,6 +12285,7 @@ function verifyDistribution(units, dist, pins) {
       if (target) {
         lyricsHtml += '<div class="lyric-target-row">' +
           '<div class="lyric-target">' + escapeHtml(target) + '</div>' +
+          (currentLang === "ko" && l.ko_old ? '<span class="lyric-old">(' + escapeHtml(l.ko_old) + ')</span>' : '') +
           '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(target) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
           '</div>';
       }

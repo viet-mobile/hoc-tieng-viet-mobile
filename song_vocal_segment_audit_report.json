@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T00:42:47.272820+00:00",
+  "generated": "2026-10-19T01:34:18.415194+00:00",
   "fresh_network": false,
   "base_commit": "c7e3a3d",
   "source_priority": [
@@ -30170,8 +30170,8 @@
       "general_audio_exists": false,
       "general_video_exists": false,
       "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 9,
-        "lyric_occurrence_omitted_in_selected_recording": 5
+        "lyric_occurrence_omitted_in_selected_recording": 5,
+        "vocal_boundary_requires_review": 9
       }
     },
     {
@@ -99323,8 +99323,8 @@
       "general_audio_exists": false,
       "general_video_exists": false,
       "disabled_line_reasons": {
-        "vocal_boundary_requires_review": 20,
-        "lyric_occurrence_omitted_in_selected_recording": 4
+        "lyric_occurrence_omitted_in_selected_recording": 4,
+        "vocal_boundary_requires_review": 20
       }
     },
     {
@@ -119167,7 +119167,7 @@
           "e": 17700,
           "m": 0,
           "pid": null,
-          "text": "여호와여, 우리",
+          "text": "여호와여, 우리 모임",
           "enabled": true,
           "reason": "user_authorized_shared_children_line_boundaries"
         },
@@ -119176,7 +119176,7 @@
           "e": 23200,
           "m": 1,
           "pid": null,
-          "text": "모임 크게 축복하소서.",
+          "text": "크게 축복하소서.",
           "enabled": true,
           "reason": "user_authorized_shared_children_line_boundaries"
         },
