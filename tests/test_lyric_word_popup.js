@@ -70,7 +70,7 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     await E("document.getElementById('lyr').textContent='cầu nguyện'");
     const longer=await tap('cầu');ok(longer&&longer.mean&&longer.mean!==overrides['cầu'],'longer existing cầu nguyện wins over cầu: '+JSON.stringify(longer));
     { const cn=await tap('nguyện'); eq(cn&&[cn.ko,cn.mean],['꺼우 응우옌','기도하다'],'cầu nguyện is a verb: 기도하다 (not 기도)'); }
-    for (const [word, mean] of [['an ủi','위로하다, 위안하다'],['trung thành','충성스럽다, 충성하다'],['chọn','선택하다, 고르다']]) {
+    for (const [word, mean] of [['an ủi','위로하다, 위안하다'],['trung thành','충성스럽다, 충실하다'],['thành trung','충성스럽다, 충실하다'],['chọn','선택하다, 고르다']]) {
       await E(`document.getElementById('lyr').textContent=${JSON.stringify(word)}`);
       eq((await tap(word.split(' ').pop()))?.mean,mean,'predicate form '+word);
     }
