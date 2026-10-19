@@ -16,7 +16,7 @@ const rules = {
   // uô = ㅜ오 (not ㅜ어): -uôn = 우온, Hanoi
   'nguồn': '응우온', 'muốn': '무온', 'luôn': '루온', 'muôn': '무온', 'buồn': '부온', 'uốn': '우온', 'ôn': '온', 'cuộc': '꾸옥ㅂ', 'uống': '우옹ㅁ', 'suối': '수오이', 'tuổi': '뚜오이',
   // oa = ㅘ
-  'ngoan': '응완', 'hoa': '화', 'toán': '똰', 'loài': '롸이',
+  'ngoan': '응완', 'hoa': '화', 'toán': '또안', 'loài': '로아이', 'ngoài': '응와이', 'hoặc': '확', 'khoắn': '콴',
   // s- = ㅅ (x- stays ㅆ), Hanoi and Saigon
   'ánh sáng': '아인ㅇ 상', 'sao': '사오', 'xin': '씬',
   'nguyện': '응우옌', 'khuyên': '쿠옌', 'chuyện': '쭈옌'
@@ -38,7 +38,8 @@ assert.strictEqual(w('về', 'saigon'), '예이', 'Saigon open ê = ㅔ이');
 for (const [name, ko] of [['Giê-hô-va', '예호야'], ['Giê-su', '예수'], ['Giê-ru-sa-lem', '예루사램'], ['Ga-li-lê', '가리레'], ['Nô-ê', '노에'], ['Tha-đê', '타데'], ['Ba-tô-lô-mê', '바또로메']]) assert.strictEqual(w(name, 'saigon'), ko, 'Saigon name ' + name);
 assert.strictEqual(w('Giê-hô-va', 'hanoi'), '제호ㅸㅏ', 'Hanoi name unchanged');
 assert.strictEqual(w('Bết-lê-hem', 'saigon'), '벅레햄', 'closed ê in a name keeps the ordinary rule');
-assert.strictEqual(w('ngoan', 'saigon'), '응왕ㄴ', 'Saigon oa = ㅘ (final -n is ㅇㄴ there)');
+assert.strictEqual(w('ngoan', 'saigon'), '응왕ㄴ', 'Saigon ngoan = ㅘ after ng (final -n is ㅇㄴ there)');
+assert.strictEqual(w('toán', 'saigon'), '또앙ㄴ', 'Saigon oa before a final = ㅗ아');
 assert.strictEqual(w('xin', 'saigon'), '씽ㄴ', 'Saigon x- = ㅆ (final -n is ㅇㄴ there)');
 assert.strictEqual(s('xyz'), '', 'not a Vietnamese syllable');
 // the meanings set for lyric words

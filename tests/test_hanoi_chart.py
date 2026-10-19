@@ -13,8 +13,9 @@ for chart in (HANOI_CHART, SAIGON_CHART):
     assert ini["s-"] == "ㅅ-" and ini["x-"] == "ㅆ-", (ini["s-"], ini["x-"])
 print("hanoi / saigon chart: s- = ㅅ-, x- = ㅆ-")
 for chart in (HANOI_CHART, SAIGON_CHART):
-    assert {row[0]: row[2] for row in chart["vowels"]}["oa"] == [["ㅘ", 0]]
-print("hanoi / saigon chart: oa = ㅘ")
+    assert {row[0]: row[2] for row in chart["vowels"]}["oa"] == [["(뒤에 받침이나 모음이 있으면)", 1], ["ㅗ아", 0], ["(ng가 앞에 오거나 뒤에 받침이나 모음이 없으면)", 1], ["ㅘ", 0]]
+    assert {row[0]: row[2] for row in chart["vowels"]}["oă"] == [["ㅘ", 0], ["(뒤에 반드시 받침)", 1]]
+print("hanoi / saigon chart: oa = ㅗ아 / ㅘ (ng 앞), oă = ㅘ")
 for chart in (HANOI_CHART, SAIGON_CHART):
     assert {row[0]: row[2] for row in chart["vowels"]}["uô"] == [["ㅜ오", 0]]
 print("hanoi / saigon chart: uô = ㅜ오")
