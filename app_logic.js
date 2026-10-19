@@ -6494,13 +6494,48 @@
     if (cur) groups.push(cur);
     return groups.map(function (g) { return '<span class="hanoi-grp">' + g + '</span>'; }).join(" ");
   }
+  /* VI-IPA-DATA-BEGIN */
+  // IPA tables (the IPA notation of the lyric popup and the IPA beside the rules of the Hanoi / Saigon charts).
+  var IPA_INITIALS = ["ngh", "ng", "nh", "ch", "tr", "th", "kh", "ph", "gh", "gi", "qu", "g", "c", "k", "d", "đ", "t", "b", "p", "s", "x", "r", "v", "l", "m", "n", "h"];
+  var IPA_INITIAL = {
+    hanoi: { ngh: "ŋ", ng: "ŋ", nh: "ɲ", ch: "c", tr: "c", th: "tʰ", kh: "x", ph: "f", gh: "ɣ", gi: "z", qu: "kw", g: "ɣ", c: "k", k: "k", d: "z", "đ": "ɗ", t: "t", b: "ɓ", p: "p", s: "s", x: "s", r: "z", v: "v", l: "l", m: "m", n: "n", h: "h" },
+    saigon: { ngh: "ŋ", ng: "ŋ", nh: "ɲ", ch: "c", tr: "ʈ", th: "tʰ", kh: "x", ph: "f", gh: "ɣ", gi: "j", qu: "kw", g: "ɣ", c: "k", k: "k", d: "j", "đ": "ɗ", t: "t", b: "ɓ", p: "p", s: "ʂ", x: "s", r: "r", v: "j", l: "l", m: "m", n: "n", h: "h" }
+  };
+  var IPA_NUCLEUS = { a: "aː", "ă": "ă", "â": "ə̆", e: "ɛ", "ê": "e", i: "i", y: "i", o: "ɔ", "ô": "o", "ơ": "əː", u: "u", "ư": "ɨ",
+    ia: "iə", "iê": "iə", "yê": "iə", ua: "uə", "uô": "uə", "ưa": "ɨə", "ươ": "ɨə", oa: "waː", "oă": "wă", oe: "wɛ", ue: "wɛ", "uê": "we", uy: "wi", uya: "wiə", "uyê": "wiə",
+    "uâ": "wə̆", "uă": "wă", "uơ": "wəː" };
+  var IPA_TONE = {
+    hanoi: { none: "˧", huyen: "˨˩", sac: "˧˥", hoi: "˧˩˧", nga: "˧ˀ˥", nang: "˨ˀ˩" },
+    saigon: { none: "˧", huyen: "˨˩", sac: "˦˥", hoi: "˨˩˦", nga: "˨˩˦", nang: "˨˩ˀ" }
+  };
+  var IPA_FINAL = {
+    hanoi: { p: "p̚", t: "t̚", c: "k̚", ch: "c̚", m: "m", n: "n", ng: "ŋ", nh: "ɲ" },
+    saigon: { p: "p̚", t: "k̚", c: "k̚", ch: "t̚", m: "m", n: "ŋ", ng: "ŋ", nh: "n" }
+  };
+  /* VI-IPA-DATA-END */
   function hanoiChartHtml(chart, city) {
     chart = chart || HANOI_CHART;
     city = city || "하노이";
     if (typeof HANOI_CHART === "undefined" || currentLang !== "ko") return "";
     function btn(speak) { return '<button class="speak-btn" data-speak="' + escapeAttr(speak) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>'; }
     function tone(t) { return t ? " hanoi-tone-" + t : ""; }
-    var h = '<p class="p-desc">' + city + ' 발음에 가장 가까운 한국어 표기를 나타낸 표입니다. 글자를 눌러 소리를 들어 보세요.</p>';
+    // The IPA of every rule, written beside its Korean notation (the same tables as the lyric popup's IPA notation).
+    var reg = city === "사이공" ? "saigon" : "hanoi";
+    function ipaTag(list) {
+      var seen = [];
+      list.forEach(function (x) { if (x && seen.indexOf(x) < 0) seen.push(x); });
+      return seen.length ? ' <span class="hanoi-ipa">[' + escapeHtml(seen.join(", ")) + ']</span>' : "";
+    }
+    function initialIpa(letters) { return ipaTag(letters.map(function (l) { return IPA_INITIAL[reg][l[0].replace(/-$/, "")]; })); }
+    var SAIGON_VOWEL_IPA = { "ê": "ej ~ ə", "ia": "ia" };
+    function vowelIpa(v) { return ipaTag([reg === "saigon" && SAIGON_VOWEL_IPA[v[0]] || IPA_NUCLEUS[v[0]]]); }
+    function finalIpa(f) {
+      var key = f[0].replace(/^-/, ""), base = IPA_FINAL[reg][key];
+      if (!base) return "";
+      var labial = key === "c" ? "k͡p̚" : key === "ng" ? "ŋ͡m" : "";
+      return ipaTag([base]) + (labial ? ' <span class="hanoi-ipa">(o·ô·u 뒤 [' + labial + '])</span>' : "");
+    }
+    var h = '<p class="p-desc">' + city + ' 발음에 가장 가까운 한국어 표기를 나타낸 표입니다(IPA 병기). 글자를 눌러 소리를 들어 보세요.</p>';
     // two tables side by side: [자음 over 받침] on the left, [모음] on the right
     h += '<div class="hanoi-grid"><div class="hanoi-col">';
     h += '<table class="hanoi-table"><thead><tr><th>베트남어 자음</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
@@ -6509,20 +6544,20 @@
         h += '<tr><td class="hanoi-letter vn' + tone(l[1]) + '">' + escapeHtml(l[0]) + btn(l[0].replace(/-$/, "") + "ơ") + '</td>' +
           (i === 0 ? '<td class="hanoi-ko" rowspan="' + g.letters.length + '">' + (g.parts
             ? g.parts.map(function (p) { return p[1] ? '<small class="hanoi-final-note">' + escapeHtml(p[0]) + '</small>' : '<div>' + escapeHtml(p[0]) + '</div>'; }).join("")
-            : escapeHtml(g.ko)) + '</td>' : '') + '</tr>';
+            : escapeHtml(g.ko)) + initialIpa(g.letters) + '</td>' : '') + '</tr>';
       });
     });
     h += '</tbody></table>';
     h += '<table class="hanoi-table"><thead><tr><th>베트남어 받침</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
     chart.finals.forEach(function (f) {
-      h += '<tr><td class="hanoi-letter vn">' + escapeHtml(f[0]) + '</td><td class="hanoi-ko">' + escapeHtml(f[1]) +
+      h += '<tr><td class="hanoi-letter vn">' + escapeHtml(f[0]) + '</td><td class="hanoi-ko">' + escapeHtml(f[1]) + finalIpa(f) +
         (f[2] ? '<small class="hanoi-final-note">' + escapeHtml(f[2]) + '</small>' : '') + '</td></tr>';
     });
     h += '</tbody></table></div><div class="hanoi-col">';
     h += '<table class="hanoi-table"><thead><tr><th>베트남어 모음</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
     chart.vowels.forEach(function (v) {
       h += '<tr class="hanoi-vrow' + tone(v[1]) + '"><td class="hanoi-letter vn">' + escapeHtml(v[0]) + btn(v[0]) + '</td><td class="hanoi-ko">' +
-        hanoiVowelParts(v[2]) + '</td></tr>';
+        hanoiVowelParts(v[2]) + vowelIpa(v) + '</td></tr>';
     });
     h += '</tbody></table></div></div>';
     if (chart.footnote) h += '<p class="p-desc hanoi-footnote">' + escapeHtml(chart.footnote) + '</p>';
@@ -11778,22 +11813,6 @@ function verifyDistribution(units, dist, pins) {
   // Vietnamese syllable -> IPA (narrow, with tone letters) for the lyric word popup: Hanoi (northern) and Saigon (southern) pronunciation.
   // Hanoi: d, gi, r = [z]; tr = ch = [c]; s, x = [s]; -nh = [ɲ], -ch = [c̚]. Saigon (as the Saigon Korean notation): d, gi, v = [j]; r = [r];
   // s = [ʂ], x = [s]; tr = [ʈ]; -n = [ŋ], -nh = [n], -t = [k̚], -ch = [t̚]. Both: -c, -ng after o, ô, u (uô) are labialised ([k͡p̚], [ŋ͡m]).
-  var IPA_INITIALS = ["ngh", "ng", "nh", "ch", "tr", "th", "kh", "ph", "gh", "gi", "qu", "g", "c", "k", "d", "đ", "t", "b", "p", "s", "x", "r", "v", "l", "m", "n", "h"];
-  var IPA_INITIAL = {
-    hanoi: { ngh: "ŋ", ng: "ŋ", nh: "ɲ", ch: "c", tr: "c", th: "tʰ", kh: "x", ph: "f", gh: "ɣ", gi: "z", qu: "kw", g: "ɣ", c: "k", k: "k", d: "z", "đ": "ɗ", t: "t", b: "ɓ", p: "p", s: "s", x: "s", r: "z", v: "v", l: "l", m: "m", n: "n", h: "h" },
-    saigon: { ngh: "ŋ", ng: "ŋ", nh: "ɲ", ch: "c", tr: "ʈ", th: "tʰ", kh: "x", ph: "f", gh: "ɣ", gi: "j", qu: "kw", g: "ɣ", c: "k", k: "k", d: "j", "đ": "ɗ", t: "t", b: "ɓ", p: "p", s: "ʂ", x: "s", r: "r", v: "j", l: "l", m: "m", n: "n", h: "h" }
-  };
-  var IPA_NUCLEUS = { a: "aː", "ă": "ă", "â": "ə̆", e: "ɛ", "ê": "e", i: "i", y: "i", o: "ɔ", "ô": "o", "ơ": "əː", u: "u", "ư": "ɨ",
-    ia: "iə", "iê": "iə", "yê": "iə", ua: "uə", "uô": "uə", "ưa": "ɨə", "ươ": "ɨə", oa: "waː", "oă": "wă", oe: "wɛ", ue: "wɛ", "uê": "we", uy: "wi", uya: "wiə", "uyê": "wiə",
-    "uâ": "wə̆", "uă": "wă", "uơ": "wəː" };
-  var IPA_TONE = {
-    hanoi: { none: "˧", huyen: "˨˩", sac: "˧˥", hoi: "˧˩˧", nga: "˧ˀ˥", nang: "˨ˀ˩" },
-    saigon: { none: "˧", huyen: "˨˩", sac: "˦˥", hoi: "˨˩˦", nga: "˨˩˦", nang: "˨˩ˀ" }
-  };
-  var IPA_FINAL = {
-    hanoi: { p: "p̚", t: "t̚", c: "k̚", ch: "c̚", m: "m", n: "n", ng: "ŋ", nh: "ɲ" },
-    saigon: { p: "p̚", t: "k̚", c: "k̚", ch: "t̚", m: "m", n: "ŋ", ng: "ŋ", nh: "n" }
-  };
   // The IPA of one syllable (any tone), or "" when it is not a Vietnamese syllable.
   function viIpaSyllable(syl, region) {
     var south = region === "saigon", reg = south ? "saigon" : "hanoi";
