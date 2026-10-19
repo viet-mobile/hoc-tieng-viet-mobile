@@ -93,10 +93,11 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
     // Every rule of the Hanoi and Saigon charts has its IPA beside the Korean notation
     const ipaRows = await E(`(()=>{const o={};for(const id of ['pron-hanoi','pron-saigon']){const card=document.querySelector('[data-anchor="'+id+'"]');const rows=[...card.querySelectorAll('.hanoi-grid tbody tr')];
       const row=l=>(rows.find(r=>r.querySelector('.hanoi-letter')&&r.querySelector('.hanoi-letter').textContent.trim()===l)||{textContent:''}).textContent.replace(/\\s+/g,' ');
-      o[id]={rows:rows.length,ipa:card.querySelectorAll('.hanoi-ipa').length,s:row('s-'),tr:row('tr-'),ch:row('ch-'),ng:row('ng-'),nuo:row('uô'),n:row('-n')};}return o;})()`);
+      o[id]={rows:rows.length,ipa:card.querySelectorAll('.hanoi-ipa').length,s:row('s-'),tr:row('tr-'),ch:row('ch-'),ng:row('ng-'),nuo:row('uô'),n:row('-n'),fch:row('-ch'),fnh:row('-nh')};}return o;})()`);
     ok(ipaRows['pron-hanoi'].rows > 50 && ipaRows['pron-hanoi'].ipa >= 45 && ipaRows['pron-saigon'].ipa >= 45, 'IPA beside the rules: ' + JSON.stringify(ipaRows));
     ok(/\[s\]/.test(ipaRows['pron-hanoi'].s) && /\[ʂ\]/.test(ipaRows['pron-saigon'].s), 'Hanoi s- [s], Saigon s- [ʂ]');
     ok(/\[c\]/.test(ipaRows['pron-hanoi'].ch) && /\[ʈ\]/.test(ipaRows['pron-saigon'].tr), 'Hanoi ch-/tr- [c], Saigon tr- [ʈ]');
+    ok(/\[jk̟̚\]/.test(ipaRows['pron-hanoi'].fch)&&/\[jŋ̟\]/.test(ipaRows['pron-hanoi'].fnh),'Hanoi -ch [jk̟̚], -nh [jŋ̟]: '+ipaRows['pron-hanoi'].fch+' / '+ipaRows['pron-hanoi'].fnh);
     ok(/\[uə\]/.test(ipaRows['pron-hanoi'].nuo) && /\[n\]/.test(ipaRows['pron-hanoi'].n) && /\[ŋ\]/.test(ipaRows['pron-saigon'].n), 'uô [uə]; -n Hanoi [n], Saigon [ŋ]');
     // Three separate folding cards, with the examples moved rather than copied.
     ok(await E("!!document.querySelector('[data-anchor=\"pron-saigon\"]')&&!!document.querySelector('[data-anchor=\"pron-notation-examples\"]')&&!document.querySelector('[data-anchor=\"pron-hanoi\"] .hanoi-examples')&&document.querySelectorAll('[data-anchor=\"pron-notation-examples\"] .hanoi-examples tbody tr').length===22"),'separate Hanoi/Saigon/example folding cards');

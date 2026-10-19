@@ -6509,7 +6509,7 @@
     saigon: { none: "˧", huyen: "˨˩", sac: "˦˥", hoi: "˨˩˦", nga: "˨˩˦", nang: "˨˩ˀ" }
   };
   var IPA_FINAL = {
-    hanoi: { p: "p̚", t: "t̚", c: "k̚", ch: "c̚", m: "m", n: "n", ng: "ŋ", nh: "ɲ" },
+    hanoi: { p: "p̚", t: "t̚", c: "k̚", ch: "jk̟̚", m: "m", n: "n", ng: "ŋ", nh: "jŋ̟" },
     saigon: { p: "p̚", t: "k̚", c: "k̚", ch: "t̚", m: "m", n: "ŋ", ng: "ŋ", nh: "n" }
   };
   /* VI-IPA-DATA-END */
@@ -11811,7 +11811,7 @@ function verifyDistribution(units, dist, pins) {
   /* HANOI-KO-END */
   /* VI-IPA-BEGIN */
   // Vietnamese syllable -> IPA (narrow, with tone letters) for the lyric word popup: Hanoi (northern) and Saigon (southern) pronunciation.
-  // Hanoi: d, gi, r = [z]; tr = ch = [c]; s, x = [s]; -nh = [ɲ], -ch = [c̚]. Saigon (as the Saigon Korean notation): d, gi, v = [j]; r = [r];
+  // Hanoi: d, gi, r = [z]; tr = ch = [c]; s, x = [s]; -nh = [jŋ̟], -ch = [jk̟̚] (-inh [iŋ̟], -ich [ik̟̚]). Saigon (as the Saigon Korean notation): d, gi, v = [j]; r = [r];
   // s = [ʂ], x = [s]; tr = [ʈ]; -n = [ŋ], -nh = [n], -t = [k̚], -ch = [t̚]. Both: -c, -ng after o, ô, u (uô) are labialised ([k͡p̚], [ŋ͡m]).
   // The IPA of one syllable (any tone), or "" when it is not a Vietnamese syllable.
   function viIpaSyllable(syl, region) {
@@ -11831,7 +11831,7 @@ function verifyDistribution(units, dist, pins) {
     var nm = HANOI_NUCLEUS.exec(rest);
     if (!nm) return "";
     var main = nm[1], glide = nm[2] || "", nuc = IPA_NUCLEUS[main];
-    if (!south && main === "a" && (fin === "nh" || fin === "ch")) nuc = "ɛ";      // Hanoi: anh, ach
+    if (!south && main === "a" && (fin === "nh" || fin === "ch")) nuc = "a";      // Hanoi: anh [ajŋ̟], ach [ajk̟̚]
     if (main === "a" && (glide === "y" || glide === "u")) nuc = "ă";             // ay, au are short
     var onset = initial ? IPA_INITIAL[reg][initial] : "ʔ";
     if (initial === "qu" && nuc.charAt(0) === "w") nuc = nuc.slice(1);            // qu already holds the w
@@ -11842,6 +11842,7 @@ function verifyDistribution(units, dist, pins) {
       coda = IPA_FINAL[reg][fin];
       if (round && fin === "c") coda = "k͡p̚";
       if (round && fin === "ng") coda = "ŋ͡m";
+      if (!south && /^[iy]$/.test(main) && (fin === "nh" || fin === "ch")) coda = coda.slice(1);   // inh [iŋ̟], ich [ik̟̚]: the i is the vowel itself
     }
     return onset + nuc + offglide + coda + IPA_TONE[reg][tone];
   }

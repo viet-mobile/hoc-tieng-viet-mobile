@@ -4,7 +4,7 @@ const src = fs.readFileSync(path.resolve(__dirname, '..', 'app_logic.js'), 'utf8
 const cut = (a, b) => src.slice(src.indexOf(a), src.indexOf(b));
 const {w, s} = new Function(cut('/* HANOI-KO-BEGIN */', '/* HANOI-KO-END */') + cut('/* VI-IPA-DATA-BEGIN */', '/* VI-IPA-DATA-END */') + cut('/* VI-IPA-BEGIN */', '/* VI-IPA-END */') + ';return {w:viIpaWord,s:viIpaSyllable};')();
 const hanoi = {
-  'nguồn': 'ŋuən˨˩', 'ngài': 'ŋaːj˨˩', 'Chúa': 'cuə˧˥', 'tình': 'tiɲ˨˩', 'sách': 'sɛc̚˧˥', 'không': 'xoŋ͡m˧', 'muốn': 'muən˧˥', 'cầu nguyện': 'kə̆w˨˩ ŋwiən˨ˀ˩',
+  'nguồn': 'ŋuən˨˩', 'ngài': 'ŋaːj˨˩', 'Chúa': 'cuə˧˥', 'tình': 'tiŋ̟˨˩', 'sách': 'sajk̟̚˧˥', 'anh': 'ʔajŋ̟˧', 'ích': 'ʔik̟̚˧˥', 'bệnh': 'ɓejŋ̟˨ˀ˩', 'không': 'xoŋ͡m˧', 'muốn': 'muən˧˥', 'cầu nguyện': 'kə̆w˨˩ ŋwiən˨ˀ˩',
   'Đức': 'ɗɨk̚˧˥', 'yêu thương': 'ʔiəw˧ tʰɨəŋ˧', 'quyền năng': 'kwiən˨˩ năŋ˧', 'uống': 'ʔuəŋ͡m˧˥', 'Giê-hô-va': 'ze˧ ho˧ vaː˧', 'đời': 'ɗəːj˨˩', 'hỏi': 'hɔj˧˩˧', 'ngã': 'ŋaː˧ˀ˥', 'học': 'hɔk͡p̚˨ˀ˩'
 };
 const saigon = { 'nguồn': 'ŋuəŋ˨˩', 'Chúa': 'cuə˦˥', 'tình': 'tin˨˩', 'sách': 'ʂaːt̚˦˥', 'muốn': 'muəŋ˦˥', 'Giê-hô-va': 'je˧ ho˧ jaː˧', 'hỏi': 'hɔj˨˩˦', 'ngã': 'ŋaː˨˩˦', 'trời': 'ʈəːj˨˩', 'rao': 'raːw˧' };
