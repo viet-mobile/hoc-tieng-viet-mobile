@@ -11551,8 +11551,19 @@ function verifyDistribution(units, dist, pins) {
     return n ? { marks: out, aligned: n, withheld: withheld } : null;
   }
   // Adds ▶ ↻ to the lines of one song box ([data-seg-kind][data-seg-key]); the box has the rows .lyric-vi-row / .lyric-target-row.
+  // Old-version lyrics in parentheses: the lyric text keeps its own width (the widest line of the box) so the parentheses start in one column.
+  function songOldAlign(box) {
+    var texts = [].slice.call(box.querySelectorAll(".lyric-main > .lyric-vi, .lyric-main > .lyric-target"));
+    if (!texts.length) return;
+    texts.forEach(function (t) { t.style.flex = "0 0 auto"; t.style.width = "auto"; });
+    var w = Math.max.apply(null, texts.map(function (t) { return t.offsetWidth; }));
+    var room = texts[0].parentNode.clientWidth - 44;     // the ★ is added later; the parentheses need about 14 em beside the text
+    if (w + 14 * 16 > room) { texts.forEach(function (t) { t.style.flex = ""; t.style.width = ""; }); return; }   // narrow: the parentheses wrap below the line
+    texts.forEach(function (t) { t.style.width = w + "px"; });
+  }
   function songSegEnhance(box) {
     box.setAttribute("data-seg-state", "1");
+    songOldAlign(box);
     var kind = box.getAttribute("data-seg-kind"), key = box.getAttribute("data-seg-key");
     var tl = box.getAttribute("data-seg-tl");   // "" = no target language row has its own language's lines
     var rowCount = { vi: 0 };
@@ -12276,16 +12287,18 @@ function verifyDistribution(units, dist, pins) {
       lyricsHtml += '<div class="lyric-unit">';
       // Line 1: Vietnamese Original (Prominent font-weight, largest)
       lyricsHtml += '<div class="lyric-vi-row">' +
+        (l.vi_old ? '<div class="lyric-main">' : '') +
         '<div class="lyric-vi vn">' + escapeHtml(vi) + '</div>' +
-        (l.vi_old ? '<span class="lyric-old" lang="vi">(' + escapeHtml(l.vi_old) + ')</span>' : '') +
+        (l.vi_old ? '<span class="lyric-old lyric-old-vi vn" lang="vi">(' + escapeHtml(l.vi_old) + ')</span></div>' : '') +
         '<button type="button" class="speak-btn" data-speak="' + escapeAttr(vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
         '</div>';
 
       // Line 2: Target official song lyric
       if (target) {
         lyricsHtml += '<div class="lyric-target-row">' +
+          (currentLang === "ko" && l.ko_old ? '<div class="lyric-main">' : '') +
           '<div class="lyric-target">' + escapeHtml(target) + '</div>' +
-          (currentLang === "ko" && l.ko_old ? '<span class="lyric-old">(' + escapeHtml(l.ko_old) + ')</span>' : '') +
+          (currentLang === "ko" && l.ko_old ? '<span class="lyric-old lyric-old-target">(' + escapeHtml(l.ko_old) + ')</span></div>' : '') +
           '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(target) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
           '</div>';
       }

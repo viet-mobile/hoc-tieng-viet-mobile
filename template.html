@@ -2148,7 +2148,11 @@
   .lyric-word-pop { position: fixed; z-index: 10000; box-sizing: border-box; max-width: min(260px, calc(100vw - 16px)); padding: 7px 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); color: var(--ink); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22); text-align: center; pointer-events: none; }
   .lyric-word-ko { font-size: 1.05rem; font-weight: 800; line-height: 1.35; }
   .lyric-word-mean { margin-top: 2px; font-size: 0.82rem; color: var(--ink-soft); line-height: 1.35; }
-  .lyric-old { flex: 0 1 auto; margin-left: 8px; font-size: 0.82em; color: var(--muted, #888); align-self: center; }
+  .lyric-main { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; align-items: flex-start; }
+  .lyric-main > .lyric-vi, .lyric-main > .lyric-target { flex: 1 1 100%; max-width: 100%; }
+  .lyric-old { flex: 1 1 7em; min-width: 0; margin-left: 1em; text-align: left; line-height: 1.48; overflow-wrap: anywhere; }
+  .lyric-old-vi { font-size: 1.05rem; font-weight: 700; color: var(--ink); }
+  .lyric-old-target { font-size: 0.91rem; font-weight: 500; color: var(--ink-soft); line-height: 1.42; }
   .lyric-vi-row {
     display: flex;
     align-items: flex-start;
