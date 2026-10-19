@@ -7763,7 +7763,7 @@
     return add.filter(function (it) { return !have[it.text.ko]; });
   }
   // Homework h (0 = before the first class, i + 1 = under schedule slot i): review the last class's songs,
-  // preview the next class's songs (Mon/Tue review, Wed/Thu preview).
+  // preview the next class's songs (Mon/Tue review: last class's opening/closing song; Thu/Fri preview: next class's opening/closing song).
   // [발음] > [설정] (베트남어 발음 설정) is set up once in class, not something to preview or review.
   function isSetupItem(it) {
     var l = it && it.link, ko = it && it.text && (it.text.ko || it.text);
@@ -7774,14 +7774,14 @@
       return Object.assign({}, d, { reviews: (d.reviews || []).filter(function (x) { return !isSetupItem(x); }),
         previews: (d.previews || []).filter(function (x) { return !isSetupItem(x); }), vocab: (d.vocab || []).filter(function (x) { return !isSetupItem(x); }) });
     }) });
-    if (!regionalFlag("songs") || !assign || !assign.days || assign.days.length < 4 || !sched || !sched.slots) return assign;
+    if (!regionalFlag("songs") || !assign || !assign.days || assign.days.length < 5 || !sched || !sched.slots) return assign;
     var slots = sched.slots, prev = null, next = null, i;
     for (i = h - 1; i >= 0; i--) if (slots[i].type === "instructional") { prev = slots[i].week; break; }
     for (i = h; i < slots.length; i++) if (slots[i].type === "instructional") { next = slots[i].week; break; }
     var rev = prev === null ? [] : courseSongItems(prev), pre = next === null ? [] : courseSongItems(next);
     var days = assign.days.map(function (d) { return Object.assign({}, d, { reviews: (d.reviews || []).slice(), previews: (d.previews || []).slice() }); });
     rev.forEach(function (it, k) { var d = days[k]; d.reviews = withoutSameKo(d.reviews, [it]).concat(d.reviews); });
-    pre.forEach(function (it, k) { var d = days[2 + k]; d.previews = withoutSameKo(d.previews, [it]).concat(d.previews); });
+    pre.forEach(function (it, k) { var d = days[3 + k]; d.previews = withoutSameKo(d.previews, [it]).concat(d.previews); });
     return Object.assign({}, assign, { days: days });
   }
   // ---- REGIONAL_SCHEDULE.classScope: what a 2-hour class covers (jeonju_data.JEONJU_CLASS_SCOPE) ----
