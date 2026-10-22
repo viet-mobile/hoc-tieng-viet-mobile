@@ -123,7 +123,7 @@
     '추가 실패': 'Thêm thất bại', '휴강 정보가 수정되었습니다.': 'Đã sửa thông tin ngày nghỉ học.', '수정 실패': 'Sửa thất bại',
     '이 휴강 일자를 삭제하시겠습니까? 삭제 시 이후 일정이 다시 앞당겨집니다.': 'Xóa ngày nghỉ học này? Nếu xóa, lịch học sau đó sẽ được dời lên sớm hơn.',
     '휴강 일자가 삭제되었습니다.': 'Đã xóa ngày nghỉ học.', '삭제 실패': 'Xóa thất bại',
-    '휴강': 'Nghỉ học', '군산 한국어 순회대회': 'Hội nghị vòng quanh tiếng Hàn Gunsan', '천안 베트남어 순회대회 파이오니아 모임': 'Buổi họp tiên phong – hội nghị vòng quanh tiếng Việt Cheonan',
+    '휴강': 'Nghỉ học', '군산 한국어 순회대회': 'Hội nghị vòng quanh tiếng Hàn Gunsan', '왕국전도학교': 'Trường dành cho người công bố Nước Trời', '천안 베트남어 순회대회 파이오니아 모임': 'Buổi họp tiên phong – hội nghị vòng quanh tiếng Việt Cheonan',
     // SECTION C
     '페이지': 'Trang', '내용': 'Nội dung', '위로 이동': 'Chuyển lên', '아래로 이동': 'Chuyển xuống', '등록된 학습 내용이 없습니다.': 'Chưa có nội dung học.', '+ 추가': '+ Thêm',
     '원본 커리큘럼 단위 선택 (1 ~ 16)': 'Chọn đơn vị chương trình gốc (1 ~ 16)',

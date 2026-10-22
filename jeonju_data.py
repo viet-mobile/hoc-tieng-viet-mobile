@@ -10,19 +10,21 @@ explicit "not yet set" state, never a fabricated placeholder sentence.
 import datetime
 
 JEONJU_START = datetime.date(2026, 10, 3)
-JEONJU_END = datetime.date(2027, 2, 13)
+JEONJU_END = datetime.date(2027, 2, 20)
 
 JEONJU_PRELIMINARY_DATE = "2026-10-03"
 JEONJU_COURSE_START_DATE = "2026-10-10"
-# Last possible class opportunity. With weekly classes from 2026-10-10 that is 19 opportunities; the three
-# cancellations below leave exactly 16 instructional sessions ending on 2027-02-13 (= the authoritative timeline).
+# Last possible class opportunity. With weekly classes from 2026-10-10 that is 20 opportunities; the four
+# cancellations below leave exactly 16 instructional sessions ending on 2027-02-20 (the 16th class is the graduation ceremony).
 JEONJU_COURSE_END_DATE = JEONJU_END.isoformat()
 JEONJU_INTERVAL_DAYS = 7
 JEONJU_CANCELLATIONS = [
     {"date": "2026-11-07", "reason": "휴강"},
     {"date": "2026-11-28", "reason": "군산 한국어 순회대회"},
     {"date": "2026-12-05", "reason": "천안 베트남어 순회대회 파이오니아 모임"},
+    {"date": "2027-02-13", "reason": "왕국전도학교"},
 ]
+# (A rescheduling whose newDate equals its date only adds the note to the card: 2027-02-20 graduation ceremony.)
 # One-off moves of a class to another day, shown on the session card ("2026/11/15 - 5주 (...)"). The schedule
 # engine still counts the class on its weekly slot (`date`); only the shown date and the note change. D1 has no
 # field for this, so it is site data layered over the static or live configuration (note: all 12 UI languages).
@@ -40,6 +42,20 @@ JEONJU_RESCHEDULES = [
          "id": "Hari Minggu pukul 14.00 karena ada perhimpunan istimewa kunjungan wakil kantor pusat pada hari Sabtu",
          "ja": "土曜日の本部代表者の特別訪問の集会のため、日曜日午後2時",
          "pl": "W niedzielę o 14:00 z powodu sobotniego specjalnego zebrania z okazji wizyty przedstawiciela Biura Światowego",
+     }},
+     {"date": "2027-02-20", "newDate": "2027-02-20", "note": {
+         "ko": "졸업식 · 오후 3시 · 전주 서신 왕국회관 2층",
+         "vi": "Lễ tốt nghiệp, 3 giờ chiều, tầng 2 Phòng Nước Trời Seosin (Jeonju)",
+         "cs": "Slavnostní ukončení kurzu v 15:00, 2. patro Sálu Království Seosin (Jeonju)",
+         "zh_cn": "毕业典礼，下午3点，全州西新王国聚会所2楼",
+         "zh": "畢業典禮，下午3點，全州西新王國聚會所2樓",
+         "en": "Graduation ceremony, 3:00 p.m., 2nd floor of the Seosin Kingdom Hall in Jeonju",
+         "fr": "Cérémonie de fin de cours à 15 h, 2e étage de la Salle du Royaume de Seosin (Jeonju)",
+         "de": "Abschlussfeier um 15 Uhr, 2. Stock des Königreichssaals Seosin (Jeonju)",
+         "hu": "Ballagás 15 órakor, a jeonjui Szeosin Királyság-terem 2. emelete",
+         "id": "Wisuda pukul 15.00, lantai 2 Balai Kerajaan Seosin, Jeonju",
+         "ja": "卒業式、午後3時、全州・書新の王国会館2階",
+         "pl": "Zakończenie kursu o 15:00, 2. piętro Sali Królestwa Seosin w Jeonju",
      }},
 ]
 
@@ -210,7 +226,7 @@ JEONJU_BREAK_ASSIGNMENTS = {
 # Its homework (10/5-9) stays in the welcome card.
 JEONJU_PRELIM_ITEMS_TO_WEEK1 = True
 
-# The last class (2027-02-13) has only these; every other item of that week is done at the class before it.
+# The last class (2027-02-20) has only these; every other item of that week is done at the class before it.
 JEONJU_LAST_WEEK_ONLY = ["파수대 집회 실연 (사회, 낭독, 발표)", "졸업", "베트남어 노래 (46번) 합창"]
 
 # What each 2-hour class can actually cover (class-time simulation, 2026-10): some items are only started in class and

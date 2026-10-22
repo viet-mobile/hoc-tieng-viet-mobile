@@ -143,17 +143,17 @@ async function startServer(workers) {
       ok(staticHtml.length > 5000, `static ${lang} course html rendered`);
       ok(staticHtml === liveHtml, `JEONJU (${lang}): hydrated public course section must equal the static rendering byte for byte`);
       const info = await cardInfo();
-      ok(info.sessions.length === 16 && info.cancels.length === 3, `JEONJU (${lang}) shows 16 sessions + 3 cancellations, got ${info.sessions.length}/${info.cancels.length}`);
+      ok(info.sessions.length === 16 && info.cancels.length === 4, `JEONJU (${lang}) shows 16 sessions + 4 cancellations, got ${info.sessions.length}/${info.cancels.length}`);
       ok(!info.overflow, `no horizontal overflow (${lang})`);
       // Week label: CJK counters attach to the number, the other languages lead with the word ("Week 1", "Tuần 1").
       const firstBadge = { ko: '2026/10/10 - 1주', en: '2026/10/10 - Week 1', vi: '2026/10/10 - Tuần 1', ja: '2026/10/10 - 1週' }[lang];
       ok(info.sessions[0] === firstBadge, `first card badge (${lang}) is "${firstBadge}", got ` + info.sessions[0]);
       if (lang === 'ko') {
         ok(/^2026\/10\/10 - 1주$/.test(info.sessions[0]), 'first card badge is "2026/10/10 - 1주", got ' + info.sessions[0]);
-        ok(/2027\/2\/13|2027\/02\/13/.test(info.sessions[15]) && /총복습/.test(info.sessions[15]), 'last card is the 2027/02/13 총복습, got ' + info.sessions[15]);
+        ok(/2027\/2\/20|2027\/02\/20/.test(info.sessions[15]) && /총복습/.test(info.sessions[15]), 'last card is the 2027/02/20 총복습, got ' + info.sessions[15]);
         ok(info.sessions[4] === '2026/11/15 - 5주 (토요일 본부 대표자 특별 방문 집회로 인해 일요일 오후 2시)', 'the moved 5th class shows its Sunday date and reason, got ' + info.sessions[4]);
         ok(info.sessions[6] === '2026/12/12 - 7주' && info.sessions[8] === '2026/12/26 - 9주', 'classes 7-9 follow the 11/28 break, got ' + JSON.stringify(info.sessions.slice(6, 9)));
-        ok(JSON.stringify(info.cancels) === JSON.stringify(['2026/11/07 휴강', '2026/11/28 군산 한국어 순회대회', '2026/12/05 천안 베트남어 순회대회 파이오니아 모임']), 'cancellation cards: ' + JSON.stringify(info.cancels));
+        ok(JSON.stringify(info.cancels) === JSON.stringify(['2026/11/07 휴강', '2026/11/28 군산 한국어 순회대회', '2026/12/05 천안 베트남어 순회대회 파이오니아 모임', '2027/02/13 왕국전도학교']), 'cancellation cards: ' + JSON.stringify(info.cancels));
       }
     }
     await E(`localStorage.removeItem('vn-app-lang')`);
@@ -166,9 +166,9 @@ async function startServer(workers) {
     await waitFor(`!!document.querySelector('.tabs-nav')`, 'admin app after login');
     await waitFor(`!!document.getElementById('course-summary')`, 'summary');
     let summary = await E(`document.getElementById('course-summary').innerText`);
-    ok(/19회/.test(summary) && /3회/.test(summary) && /16회/.test(summary), 'summary shows 19 opportunities / 3 cancellations / 16 sessions: ' + summary.replace(/\s+/g, ' '));
+    ok(/20회/.test(summary) && /4회/.test(summary) && /16회/.test(summary), 'summary shows 20 opportunities / 4 cancellations / 16 sessions: ' + summary.replace(/\s+/g, ' '));
     ok(!/undefined|NaN|\[object/.test(await E(`document.body.innerText`)), 'no undefined/NaN in admin UI');
-    ok(await E(`document.getElementById('sett-end').value`) === '2027-02-13', 'end date field shows 2027-02-13');
+    ok(await E(`document.getElementById('sett-end').value`) === '2027-02-20', 'end date field shows 2027-02-20');
     ok(!(await E(`document.body.innerText.includes('적용되지 않은')`)), 'no pending banner before any change');
 
     // live recalculation while typing (no save yet)
@@ -248,7 +248,7 @@ async function startServer(workers) {
     await hydrationDone();
     await courseHtml();
     info = await cardInfo();
-    ok(info.sessions.length === 16 && info.cancels.length === 3, `after rollback the public site shows 16 sessions + 3 cancellations again, got ${info.sessions.length}/${info.cancels.length}`);
+    ok(info.sessions.length === 16 && info.cancels.length === 4, `after rollback the public site shows 16 sessions + 4 cancellations again, got ${info.sessions.length}/${info.cancels.length}`);
     ok(/^2026\/10\/10 - 1주$/.test(info.sessions[0]), 'rolled-back public card badge is the original one');
 
     /* ---------- 5. ULSAN stays unconfigured: 일정 미정 / 자료 미정, no fabricated rows ---------- */

@@ -367,6 +367,7 @@
     "휴강": {"vi": "Nghỉ học", "cs": "Výuka se nekoná", "zh_cn": "休课", "zh": "停課", "en": "No Class", "fr": "Pas de cours", "de": "Unterrichtsausfall", "hu": "Nincs tanítás", "id": "Libur kelas", "ja": "休講", "pl": "Brak zajęć"},
     "천안 베트남어 순회대회 파이오니아 모임": {"vi": "Buổi họp tiên phong – hội nghị vòng quanh tiếng Việt Cheonan", "cs": "Setkání průkopníků – vietnamský krajský sjezd v Čchonanu", "zh_cn": "天安越南语分区大会先驱聚会", "zh": "天安越南語分區大會先驅聚會", "en": "Pioneer meeting – Cheonan Vietnamese circuit assembly", "fr": "Réunion des pionniers – assemblée de circonscription en vietnamien de Cheonan", "de": "Pioniertreffen – vietnamesischer Kreiskongress Cheonan", "hu": "Úttörő-összejövetel – csonani vietnami körzetkongresszus", "id": "Pertemuan perintis – kebaktian wilayah bahasa Vietnam Cheonan", "ja": "天安ベトナム語巡回大会 開拓者の集まり", "pl": "Spotkanie pionierów – wietnamskie zgromadzenie obwodowe w Czonan"},
     "군산 한국어 순회대회": {"vi": "Hội nghị vòng quanh tiếng Hàn Gunsan", "cs": "Korejský krajský sjezd v Kunsanu", "zh_cn": "群山韩语分区大会", "zh": "群山韓語分區大會", "en": "Gunsan Korean circuit assembly", "fr": "Assemblée de circonscription en coréen de Gunsan", "de": "Koreanischer Kreiskongress Gunsan", "hu": "Kunszani koreai körzetkongresszus", "id": "Kebaktian wilayah bahasa Korea Gunsan", "ja": "群山韓国語巡回大会", "pl": "Koreańskie zgromadzenie obwodowe w Kunsan"},
+    "왕국전도학교": {"vi": "Trường dành cho người công bố Nước Trời", "cs": "Škola pro zvěstovatele Království", "zh_cn": "王国传道员学校", "zh": "王國傳道員學校", "en": "Kingdom Evangelizers School", "fr": "École des proclamateurs du Royaume", "de": "Schule für Königreichsverkündiger", "hu": "Királyság-hirdetők Iskolája", "id": "Sekolah Penyiar Kerajaan", "ja": "王国伝道者学校", "pl": "Szkoła Głosicieli Królestwa"},
     "총복습": {"vi": "Tổng ôn tập", "cs": "Celkové opakování", "zh_cn": "总复习", "zh": "總複習", "en": "Comprehensive Review", "fr": "Révision générale", "de": "Gesamtwiederholung", "hu": "Összefoglaló ismétlés", "id": "Tinjauan menyeluruh", "ja": "総復習", "pl": "Powtórzenie całościowe"},
     "예비 모임": {"vi": "Buổi gặp mặt chuẩn bị", "cs": "Přípravné setkání", "zh_cn": "预备聚会", "zh": "預備聚會", "en": "Preliminary Meeting", "fr": "Réunion préparatoire", "de": "Vorbereitungstreffen", "hu": "Előkészítő találkozó", "id": "Pertemuan persiapan", "ja": "予備の集まり", "pl": "Spotkanie wstępne"},
     "문화": {"vi": "Văn hóa", "cs": "Kultura", "zh_cn": "文化", "zh": "文化", "en": "Culture", "fr": "Culture", "de": "Kultur", "hu": "Kultúra", "id": "Budaya", "ja": "文化", "pl": "Kultura"},
@@ -8940,7 +8941,7 @@ function verifyDistribution(units, dist, pins) {
               '</div></div>';
           } else {
             var badgeText = slot.week === 16 && !(courseGuideEntry(16) && !/총복습/.test((slot.title && (slot.title.ko || slot.title)) || "")) ?
-              (slot.calculatedDate + " - " + TU("총복습")) :
+              (slot.calculatedDate + " - " + TU("총복습") + slotDateNote(slot)) :
               (slot.calculatedDate + " - " + weekBadge(slot.week) + slotDateNote(slot));
             html += '<div class="group-card" data-open="' + (slot.week === openWeek ? "true" : "false") + '" data-syl="wk' + slot.week + '">' +
               '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(badgeText) + '</span>' +

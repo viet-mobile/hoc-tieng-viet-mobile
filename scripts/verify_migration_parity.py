@@ -52,7 +52,7 @@ def run_parity_check():
     j_prelim, j_start, j_end, j_interval = cursor.fetchone()
     assert j_prelim == JEONJU_PRELIMINARY_DATE, f"Preliminary date mismatch: {j_prelim} vs {JEONJU_PRELIMINARY_DATE}"
     assert j_start == JEONJU_COURSE_START_DATE, f"Course start date mismatch: {j_start} vs {JEONJU_COURSE_START_DATE}"
-    assert j_end == JEONJU_COURSE_END_DATE == "2027-02-13", f"Course end date mismatch: {j_end}"
+    assert j_end == JEONJU_COURSE_END_DATE == "2027-02-20", f"Course end date mismatch: {j_end}"
     assert j_interval == 7
     print(f"  • Preliminary Meeting Date: {j_prelim} (MATCH)")
     print(f"  • Course Start Date:        {j_start} (MATCH)")
@@ -152,7 +152,7 @@ def run_parity_check():
     assert cursor.fetchone()[0] == 0, "assignment plan rows must be identity"
     print(f"  • Active Plan:              16 sessions, identity mapping of {len(j_learning_db)} learning + {len(j_assign_db)} assignment items")
 
-    # 4G. Timeline (19 weekly opportunities - 3 cancellations = 16 sessions ending 2027-02-13) is verified against the
+    # 4G. Timeline (20 weekly opportunities - 4 cancellations = 16 sessions ending 2027-02-20) is verified against the
     #     schedule engine in tests/test_schedule_engine.js (case P) and tests/test_regional_admin.js.
     import datetime
     start = datetime.date.fromisoformat(JEONJU_COURSE_START_DATE)
@@ -160,8 +160,8 @@ def run_parity_check():
     cancelled = {c["date"] for c in JEONJU_CANCELLATIONS}
     opportunities = [start + datetime.timedelta(days=7 * k) for k in range(((end - start).days // 7) + 1)]
     sessions = [d for d in opportunities if d.isoformat() not in cancelled]
-    assert (len(opportunities), len(sessions), sessions[-1].isoformat()) == (19, 16, "2027-02-13")
-    print("  • Public Dynamic Timeline:  19 opportunities - 3 cancellations = 16 sessions, completion 2027-02-13 (MATCH)")
+    assert (len(opportunities), len(sessions), sessions[-1].isoformat()) == (20, 16, "2027-02-20")
+    print("  • Public Dynamic Timeline:  20 opportunities - 4 cancellations = 16 sessions, completion 2027-02-20 (MATCH)")
 
     # 4H. Content-only seed: no credentials, non-destructive
     assert "admin_users" not in seed_sql and "password" not in seed_sql.lower(), "seed must not contain accounts"
