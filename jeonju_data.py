@@ -190,7 +190,7 @@ JEONJU_PRAYERS = {
     "13": [_P("박철현", "vi"), _P("송제홍", "vi")],
     "14": [_P("이종명", "vi"), _P("한상현", "vi")],
     "15": [_P("한도희", "vi"), _P("김동주", "vi")],
-    "16": [_P("이주복", "ko"), _P("김한빈", "vi")],
+    "16": [_P("이주복", "ko"), _P("순회감독자", "ko")],   # the circuit overseer closes the graduation
 }
 
 # Opening / closing Vietnamese song of each class (supplied by the user), keyed like JEONJU_PRAYERS.

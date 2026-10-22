@@ -7929,7 +7929,8 @@
     song: { ko: "베트남어 노래", vi: "Bài hát tiếng Việt", en: "Vietnamese song" },
     ko: { ko: "한국어", vi: "tiếng Hàn", en: "in Korean" },
     vi: { ko: "베트남어", vi: "tiếng Việt", en: "in Vietnamese" },
-    brother: { ko: "형제", vi: "", en: "" }
+    brother: { ko: "형제", vi: "", en: "" },
+    circuit: { ko: "순회감독자", vi: "Anh giám thị vòng quanh", en: "Circuit overseer" }
   };
   function courseServiceWord(k) { var w = COURSE_SERVICE_WORDS[k]; return w[currentLang] !== undefined ? w[currentLang] : w.en; }
   function coursePrayerPersonHtml(person) {
@@ -7938,6 +7939,7 @@
     var p = person;
     if (!p || !p[0]) return "";
     var addr = address[p[0]] || "";
+    if (p[0] === "순회감독자") return escapeHtml(courseServiceWord("circuit")) + (p[1] ? ' <span class="curr-service-lang">' + escapeHtml(courseServiceWord(p[1])) + '</span>' : "");
     var name = currentLang === "ko" ? p[0] + " " + courseServiceWord("brother") + (addr ? " (" + addr + ")" : "") : (addr || p[0]);
     return escapeHtml(name) + (p[1] ? ' <span class="curr-service-lang">' + escapeHtml(courseServiceWord(p[1])) + '</span>' : '');
   }

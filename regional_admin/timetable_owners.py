@@ -33,7 +33,8 @@ RHYME_WORDS, EARLY_CLASSES, EARLY_QUOTA = 316, 4, 170   # [어휘] stream starts
 LEADER_PARTS = ()                               # every vocabulary block is read by Mai (Bình) and every Watchtower block by B
 
 EXPERIENCE, REENACT = "학생들 경험담 발표", "학생들 경험담 재연"
-ENCOURAGE_A, ENCOURAGE_B, ENCOURAGE_MIN = "A 강사 격려사", "B 강사 격려사", 15
+ENCOURAGE_CO, ENCOURAGE_A, ENCOURAGE_B, ENCOURAGE_MIN = "순회감독자 격려사", "A 강사 격려사", "B 강사 격려사", 10
+LAST_SERVICE_MIN = 5                            # the last class: opening / closing song and prayer
 REHEARSAL, REHEARSAL_MIN = "파수대 집회 실연", 60      # the last class: one hour, break afterwards
 B_TALK_FROM_UNIT = 4                            # class of 2026-10-31
 B_TALK_RULES = re.compile(r"제공 연설|일상 회화|일상 생활 문장|이웃 사람과의 대화")
@@ -66,6 +67,8 @@ def owner_of(name, posture, meta=None, unit=0):
         if meta["part"] in LEADER_PARTS:
             return "group"                        # the group leaders lead blocks 2-4
         return "assist" if kind == "course-vocab" else "B"
+    if base == ENCOURAGE_CO:
+        return None
     if base == ENCOURAGE_A:
         return "A"
     if base == ENCOURAGE_B:
@@ -243,16 +246,17 @@ def rebuild(plan, unit):
         # The last class (no vocabulary blocks, no break, no walk-around practice, no homework briefing): the Watchtower meeting
         # rehearsal is one 60-minute piece, then the students' experience presentations and their re-enactments, then one
         # 15-minute encouragement talk from each instructor. The class closes with the graduation song (the closing song).
-        row(OPEN, 4, "open", "stand")
+        row(OPEN, LAST_SERVICE_MIN, "open", "stand")
         lead = [n for n in order if n.startswith(REHEARSAL)]
         for n in lead:
             row(n, REHEARSAL_MIN, core[n][1], core[n][2])
-        left = 120 - 4 - REHEARSAL_MIN * len(lead) - 2 * ENCOURAGE_MIN - 4
+        left = 120 - 2 * LAST_SERVICE_MIN - REHEARSAL_MIN * len(lead) - 3 * ENCOURAGE_MIN
         row(EXPERIENCE, left // 2, "rehearsal", "stand")
         row(REENACT, left - left // 2, "rehearsal", "stand")
+        row(ENCOURAGE_CO, ENCOURAGE_MIN, "encourageco", "stand")
         row(ENCOURAGE_A, ENCOURAGE_MIN, "encourage", "stand")
         row(ENCOURAGE_B, ENCOURAGE_MIN, "encourage", "stand")
-        row(CLOSE, 4, "close", "stand")
+        row(CLOSE, LAST_SERVICE_MIN, "close", "stand")
         assert sum(p[1] for p in out) == 120, sum(p[1] for p in out)
         return out
     row(HOMEWORK, 5, "homework", "sit")
@@ -300,7 +304,8 @@ INSTRUCTORS = {
         "leadvocab": {"ko": "각 조 조장이 이끌어 조원들이 단어를 하나씩 3번 읽습니다.", "vi": "Tổ trưởng từng nhóm dẫn dắt, các thành viên đọc từng từ 3 lần."},
         "leadwtvocab": {"ko": "각 조 조장이 이끌어 조원들이 파수대 어휘를 하나씩 3번 읽습니다.", "vi": "Tổ trưởng từng nhóm dẫn dắt, các thành viên đọc từng từ Tháp Canh 3 lần."},
         "wtvocab": {"ko": "B 강사가 파수대 어휘를 하나씩 3번 읽고 학생들이 따라 읽습니다.", "vi": "Giảng viên B đọc từng từ Tháp Canh 3 lần, học viên đọc theo."},
-        "encourage": {"ko": "해당 강사가 학습자들에게 격려사를 전합니다(15분).", "vi": "Giảng viên phụ trách gửi lời khích lệ đến học viên (15 phút)."},
+        "encourage": {"ko": "해당 강사가 학습자들에게 격려사를 전합니다(10분).", "vi": "Giảng viên phụ trách gửi lời khích lệ đến học viên (10 phút)."},
+        "encourageco": {"ko": "순회감독자가 학습자들에게 격려사를 전합니다(10분).", "vi": "Anh giám thị vòng quanh gửi lời khích lệ đến học viên (10 phút)."},
         "groupdrill": {"ko": "조별로 연습하고 조장이 조원을 개별적으로 도와줍니다.", "vi": "Luyện tập theo nhóm, tổ trưởng giúp từng thành viên."},
         "tone": {"ko": "B 강사가 각 단어를 3번씩 읽어 줍니다.", "vi": "Giảng viên B đọc mỗi từ 3 lần."},
         "bookreview": {"ko": "A 강사가 책명 복습을 이끌고 학생들이 풍선을 튕기며 책명을 읽습니다(#5).", "vi": "Giảng viên A hướng dẫn ôn tên sách, học viên vừa tung bóng vừa đọc (#5)."},
@@ -316,9 +321,9 @@ CLASS_NOTE = {
 
 
 LAST_CLASS_NOTE = {
-    "ko": "이 회차는 파수대 집회 실연 60분 뒤 학생들의 경험담 발표와 재연을 하고, A강사·B강사의 격려사(각 15분)로 마칩니다. 휴식, 돌아다니며 하는 대화, 졸업, 과제 확인 안내는 없습니다.",
-    "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút, rồi học viên trình bày và tái hiện kinh nghiệm, kết thúc bằng lời khích lệ của giảng viên A và B (mỗi người 15 phút). Không nghỉ giải lao, không hoạt động đi lại trò chuyện, không lễ tốt nghiệp và không giao bài tập.",
-    "en": "This class rehearses the Watchtower meeting for 60 minutes, then students present and re-enact their experiences, and closes with a 15-minute encouragement talk from each instructor. There is no break, no walk-around practice, no graduation item and no homework briefing.",
+    "ko": "이 회차는 파수대 집회 실연 60분 뒤 학생들의 경험담 발표와 재연을 하고, 순회감독자, A강사, B강사의 격려사(각 10분)로 마칩니다 (마치는 기도는 순회감독자). 휴식, 돌아다니며 하는 대화, 졸업, 과제 확인 안내는 없습니다.",
+    "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút, rồi học viên trình bày và tái hiện kinh nghiệm, kết thúc bằng lời khích lệ của giám thị vòng quanh, giảng viên A và B (mỗi người 10 phút; giám thị vòng quanh cầu nguyện kết thúc). Không nghỉ giải lao, không hoạt động đi lại trò chuyện, không lễ tốt nghiệp và không giao bài tập.",
+    "en": "This class rehearses the Watchtower meeting for 60 minutes, then students present and re-enact their experiences, and closes with a 10-minute encouragement talk from the circuit overseer and each instructor (the circuit overseer gives the closing prayer). There is no break, no walk-around practice, no graduation item and no homework briefing.",
 }
 
 
@@ -332,7 +337,7 @@ def main():
         u["timePlan"] = rebuild(u["timePlan"], u["unit"])
         if u["unit"] == 16:
             u["classNote"] = LAST_CLASS_NOTE
-            guide.setdefault("viText", {}).update({EXPERIENCE: "Học viên trình bày kinh nghiệm", REENACT: "Học viên tái hiện kinh nghiệm", ENCOURAGE_A: "Lời khích lệ của giảng viên A", ENCOURAGE_B: "Lời khích lệ của giảng viên B"})
+            guide.setdefault("viText", {}).update({EXPERIENCE: "Học viên trình bày kinh nghiệm", REENACT: "Học viên tái hiện kinh nghiệm", ENCOURAGE_CO: "Lời khích lệ của giám thị vòng quanh", ENCOURAGE_A: "Lời khích lệ của giảng viên A", ENCOURAGE_B: "Lời khích lệ của giảng viên B"})
         who = ASSISTANT_SUBSTITUTE.get(u["date"])
         if who:
             u["assistant"] = who

@@ -4705,7 +4705,7 @@
         "timePlan": [
           [
             "시작 노래·기도",
-            4,
+            5,
             "A",
             "open",
             "stand"
@@ -4719,44 +4719,51 @@
           ],
           [
             "학생들 경험담 발표",
-            11,
+            10,
             "A",
             "rehearsal",
             "stand"
           ],
           [
             "학생들 경험담 재연",
-            11,
+            10,
             "A",
             "rehearsal",
             "stand"
           ],
           [
+            "순회감독자 격려사",
+            10,
+            null,
+            "encourageco",
+            "stand"
+          ],
+          [
             "A 강사 격려사",
-            15,
+            10,
             "A",
             "encourage",
             "stand"
           ],
           [
             "B 강사 격려사",
-            15,
+            10,
             "B",
             "encourage",
             "stand"
           ],
           [
             "마치는 노래·기도",
-            4,
+            5,
             "A",
             "close",
             "stand"
           ]
         ],
         "classNote": {
-          "ko": "이 회차는 파수대 집회 실연 60분 뒤 학생들의 경험담 발표와 재연을 하고, A강사·B강사의 격려사(각 15분)로 마칩니다. 휴식, 돌아다니며 하는 대화, 졸업, 과제 확인 안내는 없습니다.",
-          "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút, rồi học viên trình bày và tái hiện kinh nghiệm, kết thúc bằng lời khích lệ của giảng viên A và B (mỗi người 15 phút). Không nghỉ giải lao, không hoạt động đi lại trò chuyện, không lễ tốt nghiệp và không giao bài tập.",
-          "en": "This class rehearses the Watchtower meeting for 60 minutes, then students present and re-enact their experiences, and closes with a 15-minute encouragement talk from each instructor. There is no break, no walk-around practice, no graduation item and no homework briefing."
+          "ko": "이 회차는 파수대 집회 실연 60분 뒤 학생들의 경험담 발표와 재연을 하고, 순회감독자, A강사, B강사의 격려사(각 10분)로 마칩니다 (마치는 기도는 순회감독자). 휴식, 돌아다니며 하는 대화, 졸업, 과제 확인 안내는 없습니다.",
+          "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút, rồi học viên trình bày và tái hiện kinh nghiệm, kết thúc bằng lời khích lệ của giám thị vòng quanh, giảng viên A và B (mỗi người 10 phút; giám thị vòng quanh cầu nguyện kết thúc). Không nghỉ giải lao, không hoạt động đi lại trò chuyện, không lễ tốt nghiệp và không giao bài tập.",
+          "en": "This class rehearses the Watchtower meeting for 60 minutes, then students present and re-enact their experiences, and closes with a 10-minute encouragement talk from the circuit overseer and each instructor (the circuit overseer gives the closing prayer). There is no break, no walk-around practice, no graduation item and no homework briefing."
         }
       }
     ],
@@ -5501,7 +5508,8 @@
       "베트남어 숫자 복습": "Ôn tập số đếm tiếng Việt",
       "베트남어 성경 책명 읽기 연습 1 (창세기-시편) 복습": "Ôn tập luyện đọc tên các sách Kinh Thánh tiếng Việt 1 (Sáng-thế Ký – Thi-thiên)",
       "#5 풍선: 베트남어 숫자 복습과 성경 책명 읽기 연습 1(창세기-시편) 복습을 풍선을 튕기며 각각 7분씩 한다.": "#5 Bóng bay: ôn tập số đếm tiếng Việt và luyện đọc tên sách Kinh Thánh 1 (Sáng-thế Ký – Thi-thiên) khi tung bóng, mỗi phần 7 phút.",
-      "수업은 B 강사의 자음·모음 발음 복습(5분)으로 시작한다.": "Buổi học bắt đầu bằng phần ôn phát âm phụ âm, nguyên âm của giảng viên B (5 phút)."
+      "수업은 B 강사의 자음·모음 발음 복습(5분)으로 시작한다.": "Buổi học bắt đầu bằng phần ôn phát âm phụ âm, nguyên âm của giảng viên B (5 phút).",
+      "순회감독자 격려사": "Lời khích lệ của giám thị vòng quanh"
     },
     "instructors": {
       "title": {
@@ -5630,8 +5638,12 @@
           "vi": "Giảng viên B đọc từng từ Tháp Canh 3 lần, học viên đọc theo."
         },
         "encourage": {
-          "ko": "해당 강사가 학습자들에게 격려사를 전합니다(15분).",
-          "vi": "Giảng viên phụ trách gửi lời khích lệ đến học viên (15 phút)."
+          "ko": "해당 강사가 학습자들에게 격려사를 전합니다(10분).",
+          "vi": "Giảng viên phụ trách gửi lời khích lệ đến học viên (10 phút)."
+        },
+        "encourageco": {
+          "ko": "순회감독자가 학습자들에게 격려사를 전합니다(10분).",
+          "vi": "Anh giám thị vòng quanh gửi lời khích lệ đến học viên (10 phút)."
         },
         "groupdrill": {
           "ko": "조별로 연습하고 조장이 조원을 개별적으로 도와줍니다.",
