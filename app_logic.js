@@ -7214,6 +7214,7 @@
     brk: { ko: "휴식", vi: "Nghỉ giải lao", en: "Break" },
     cont: { ko: "(이어서)", vi: "(tiếp)", en: "(continued)" },
     owners: {
+      circuit: { vi: "Giám thị vòng quanh", cs: "Krajský dozorce", zh_cn: "分区监督员", zh: "分區監督員", en: "Circuit overseer", fr: "Surveillant de circonscription", de: "Kreisaufseher", hu: "Körzetfelvigyázó", id: "Pengawas wilayah", ja: "巡回監督", ko: "순회감독자", pl: "Nadzorca obwodu" },
       A: { ko: "A 강사", vi: "GV A", en: "Instr. A" }, B: { ko: "B 강사", vi: "GV B", en: "Instr. B" },
       assist: { ko: "보조자", vi: "Trợ giảng", en: "Assistant" }, group: { ko: "조별 활동", vi: "Hoạt động nhóm", en: "Group activity" }
     },
@@ -7261,7 +7262,7 @@
     function gt(x) { return !x ? "" : typeof x === "string" ? x : (x[currentLang] || x.en || x.ko || ""); }
     var ins = JEONJU_TEACHING_GUIDE.instructors || null, st = JEONJU_TEACHING_GUIDE.structure || {}, posts = st.postures || {};
     var min = gt(COURSE_PLAN_LABELS.minutes);
-    var tot = { A: 0, B: 0, assist: 0, group: 0 }, brk = 0, clock = 0, by = {};
+    var tot = { A: 0, B: 0, assist: 0, group: 0, circuit: 0 }, brk = 0, clock = 0, by = {};
     var sec = gt(COURSE_PLAN_LABELS.sec), helper = g.assistant || "Mai";
     function ownerName(o) { return o === "assist" ? gt(COURSE_PLAN_LABELS.owners.assist) + " " + helper : gt(COURSE_PLAN_LABELS.owners[o]); }
     var rows = g.plan.map(function (p) {
@@ -7333,7 +7334,7 @@
         '<span class="curr-plan-ab"><b class="curr-plan-o curr-plan-o-' + escapeAttr(owner) + '">' + escapeHtml(ownerName(owner)) + '</b> ' + escapeHtml(planMinutes(p[1], min, sec)) + '</span></div>';
     }).join("");
     var hasIns = !!(ins && ins.A && ins.B);
-    var who = hasIns ? ["A", "B", "assist", "group"].filter(function (o) { return tot[o]; }).map(function (o) {
+    var who = hasIns ? ["A", "B", "assist", "group", "circuit"].filter(function (o) { return tot[o]; }).map(function (o) {
       return '<b class="curr-plan-o curr-plan-o-' + o + '">' + escapeHtml(ownerName(o)) + ' ' + escapeHtml(planMinutes(tot[o], min, sec)) + '</b>';
     }).join(" ") : '';
     var legend = ["stand", "sit", "move"].filter(function (k) { return by[k]; }).map(function (k) {

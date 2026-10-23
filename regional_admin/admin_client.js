@@ -448,14 +448,15 @@
   // Estimated minutes of each part of the class (teaching_guide.json timePlan, from the class-time simulation). An entry is
   // [name, minutes, minutes of instructor A (null = break), reason key]; B takes the rest. guide.instructors describes A and B.
   function instrText(o) { return o ? (LANG === 'vi' ? (o.vi || o.ko) : (o.ko || o.vi)) || '' : ''; }
-  var OWNER_KEYS = ['A', 'B', 'assist', 'group'];
+  var OWNER_KEYS = ['A', 'B', 'assist', 'group', 'circuit'];
   function ownerLabel(k, unit) {
+    if (k === 'circuit') return LANG === 'vi' ? 'Giám thị vòng quanh' : '순회감독자';
     var ins = GUIDE && GUIDE.instructors, l = ins && ins[k] ? instrText(ins[k].label) : k;
     if (k === 'assist' && unit && unit.assistant) l = l.replace(/Mai/, unit.assistant);
     return l;
   }
   function ownerShort(k) {
-    return { A: 'A', B: 'B', assist: LANG === 'vi' ? 'TG' : '보조', group: LANG === 'vi' ? 'Nhóm' : '조별' }[k] || k;
+    return { A: 'A', B: 'B', assist: LANG === 'vi' ? 'TG' : '보조', group: LANG === 'vi' ? 'Nhóm' : '조별', circuit: 'CO' }[k] || k;
   }
   function fmtMin(m) { return m % 1 ? Math.floor(m) + ':30' : String(m); }
   function guideInstructorLegend() {
@@ -478,7 +479,7 @@
   function guideTimePlan(u) {
     if (!u.timePlan || !u.timePlan.length) return '';
     var ins = GUIDE && GUIDE.instructors, cs = GUIDE && GUIDE.classStructure;
-    var total = 0, tot = { A: 0, B: 0, assist: 0, group: 0 }, brk = 0, clock = 0, by = {};
+    var total = 0, tot = { A: 0, B: 0, assist: 0, group: 0, circuit: 0 }, brk = 0, clock = 0, by = {};
     var rows = u.timePlan.map(function (p) {
       var start = clock, post = p[4] || '';
       total += p[1]; clock += p[1];

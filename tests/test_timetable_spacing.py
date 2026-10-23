@@ -4,7 +4,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from regional_admin.timetable_owners import rebuild, owner_of, has_rhyme
 
-OWNERS = {'A', 'B', 'assist', 'group', None}
+OWNERS = {'A', 'B', 'assist', 'group', 'circuit', None}
 
 
 def verify(plan, unit):
@@ -75,7 +75,7 @@ assert [has_rhyme(1, i) for i in range(5)] == [True] * 5 and [has_rhyme(2, i) fo
 last = guide['units'][-1]['timePlan']
 assert next(p for p in last if p[0].startswith('파수대 집회 실연'))[1] == 60
 assert [(p[0], p[1], p[2]) for p in last if '격려사' in p[0]] == [
-    ('순회감독자 격려사', 10, None), ('A 강사 격려사', 10, 'A'), ('B 강사 격려사', 10, 'B')
+    ('순회감독자 격려사', 10, 'circuit'), ('A 강사 격려사', 10, 'A'), ('B 강사 격려사', 10, 'B')
 ]
 assert next(i for i, p in enumerate(last) if p[0] == '순회감독자 격려사') < next(
     i for i, p in enumerate(last) if p[0] == 'A 강사 격려사'
@@ -84,6 +84,7 @@ assert all(p[4] == 'sit' for p in last if p[0].startswith('파수대 집회 실�
     '학생들 경험담 발표', '순회감독자 격려사', 'A 강사 격려사', 'B 강사 격려사'
 ))
 assert not any(p[3] in ('mingle', 'homework', 'break') or p[0].startswith('졸업') for p in last)
+assert not any(p[2] is None for p in last)
 assert [p[0] for p in last if p[0].startswith('학생들 경험담')] == ['학생들 경험담 발표', '학생들 경험담 재연']
 assert last[-1][0] == '마치는 노래·기도'
 assert not any(has_rhyme(3, i) for i in range(5))

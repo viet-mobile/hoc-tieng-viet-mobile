@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Class timetable with ONE responsible person per item (teaching_guide.json units[].timePlan).
 
-Time is allotted to exactly four owners, never split inside an item:
+Time is allotted to four regular owners and, in the last class, the circuit overseer; items are never split:
     A       instructor A (Korean): culture, offered talks, daily conversation / sentences, general grammar, homework
             instructions, opening / closing song announcement, and every item not named below
     B       instructor B Bình (native): the first tone practice, all five Watchtower vocabulary blocks (each word 3 times),
@@ -68,7 +68,7 @@ def owner_of(name, posture, meta=None, unit=0):
             return "group"                        # the group leaders lead blocks 2-4
         return "assist" if kind == "course-vocab" else "B"
     if base == ENCOURAGE_CO:
-        return None
+        return "circuit"
     if base == ENCOURAGE_A:
         return "A"
     if base == ENCOURAGE_B:

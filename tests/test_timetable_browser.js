@@ -18,7 +18,7 @@ const fixture=fixtureArg?JSON.parse(require('fs').readFileSync(fixtureArg.slice(
   let checked=0;
   for(const lang of ['ko','vi']){
    await E(`window.setLang('${lang}');document.querySelector('[data-tab="curriculum"]').click()`);await sleep(500);
-   const result=await E(`(()=>{const out=[];for(const card of document.querySelectorAll('[data-syl]')){const plan=card.querySelector('.curr-plan');if(!plan||!plan.querySelector('[data-plan-kind]'))continue;out.push({week:Number(card.dataset.syl.replace(/^(wk|s)/,'')),summary:plan.querySelector('summary').textContent,rows:[...plan.querySelectorAll('[data-plan-kind]')].map(row=>({kind:row.dataset.planKind,part:Number(row.dataset.planPart),time:row.querySelector('.curr-plan-t').textContent,text:row.querySelector('.curr-plan-n').textContent})),text:plan.textContent});}return out;})()`);
+   const result=await E(`(()=>{const out=[];for(const card of document.querySelectorAll('[data-syl]')){const plan=card.querySelector('.curr-plan');if(!plan||!plan.querySelector('[data-plan-kind]'))continue;out.push({week:Number(card.dataset.syl.replace(/^(wk|s)/,'')),summary:plan.querySelector('summary').textContent,rows:[...plan.querySelectorAll('[data-plan-kind]')].map(row=>({kind:row.dataset.planKind,part:Number(row.dataset.planPart),time:row.querySelector('.curr-plan-t').textContent,text:row.querySelector('.curr-plan-n').textContent})),planRows:[...plan.querySelectorAll('.curr-plan-row')].map(row=>({text:row.querySelector('.curr-plan-n').textContent,sit:row.classList.contains('curr-plan-sit'),isBreak:row.classList.contains('curr-plan-break')})),text:plan.textContent});}return out;})()`);
    if(result.length!==15)console.log(await E("({errors:"+JSON.stringify(errors)+",plans:document.querySelectorAll('.curr-plan').length,cards:document.querySelectorAll('[data-syl]').length,guide:typeof JEONJU_TEACHING_GUIDE})"));
    assert.equal(result.length,15,`${lang}: 15 timetable classes`);
    for(const card of result){
@@ -28,6 +28,19 @@ const fixture=fixtureArg?JSON.parse(require('fs').readFileSync(fixtureArg.slice(
     assert.deepEqual(general.map(r=>r.time),exp['course-vocab']);
     assert.deepEqual(wt.map(r=>r.time),exp['watchtower-vocab']);
     assert.deepEqual(general.map(r=>r.part),[0,1,2,3,4]);
+    if(card.week===16){
+     const labels=card.planRows.map(r=>r.text);
+     const circuit=labels.findIndex(t=>lang==='ko'?t.includes('순회감독자 격려사'):t.includes('giám thị vòng quanh'));
+     const instructorA=labels.findIndex(t=>t.includes(lang==='ko'?'A 강사 격려사':'giảng viên A'));
+     assert(circuit>=0&&instructorA>circuit,`${lang}: circuit overseer talk precedes instructor A`);
+     assert.equal(card.planRows.filter(r=>r.isBreak).length,0,`${lang}: final class has no break`);
+     const seatedRows=card.planRows.filter(r=>/파수대 집회 실연|학생들 경험담 발표|격려사|Trình diễn buổi học Tháp Canh|Học viên trình bày kinh nghiệm|Lời khích lệ/.test(r.text));
+     assert.equal(seatedRows.length,5,`${lang}: rehearsal, experience sharing, and three encouragement talks`);
+     for(const row of seatedRows){
+      assert(row.sit,`${lang}: seated final-class item: ${row.text}`);
+     }
+     assert(card.summary.includes(lang==='ko'?'순회감독자 10분':'Giám thị vòng quanh 10 phút'),`${lang}: circuit overseer owner total`);
+    }
     if(card.week<=4){
      const has34=general.every(r=>lang==='ko'?/\(34개\)/.test(r.text):/\(34 từ\)/.test(r.text));
      if(!has34)console.log({lang,week:card.week,general:general.map(r=>r.text)});
