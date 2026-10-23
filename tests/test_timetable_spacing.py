@@ -13,7 +13,7 @@ def verify(plan, unit):
         assert p[1] > 0 and (p[1] * 2) % 1 == 0
         assert p[2] in OWNERS
         if p[2] is None:
-            assert clock == (64 if unit == 16 else 50) and p[1] == 10
+            assert clock == (85 if unit == 16 else 50) and p[1] == 10
         if p[3] == 'mingle':
             assert clock == (74 if unit == 16 else 60) and p[1] == 10 and p[2] == 'group'
             after_mingle = True
@@ -74,7 +74,15 @@ for u in guide['units']:
 assert [has_rhyme(1, i) for i in range(5)] == [True] * 5 and [has_rhyme(2, i) for i in range(5)] == [True] * 5
 last = guide['units'][-1]['timePlan']
 assert next(p for p in last if p[0].startswith('파수대 집회 실연'))[1] == 60
-assert [(p[0], p[1], p[2]) for p in last if '격려사' in p[0]] == [('A 강사 격려사', 15, 'A'), ('B 강사 격려사', 15, 'B')]
+assert [(p[0], p[1], p[2]) for p in last if '격려사' in p[0]] == [
+    ('순회감독자 격려사', 10, None), ('A 강사 격려사', 10, 'A'), ('B 강사 격려사', 10, 'B')
+]
+assert next(i for i, p in enumerate(last) if p[0] == '순회감독자 격려사') < next(
+    i for i, p in enumerate(last) if p[0] == 'A 강사 격려사'
+)
+assert all(p[4] == 'sit' for p in last if p[0].startswith('파수대 집회 실연') or p[0] in (
+    '학생들 경험담 발표', '순회감독자 격려사', 'A 강사 격려사', 'B 강사 격려사'
+))
 assert not any(p[3] in ('mingle', 'homework', 'break') or p[0].startswith('졸업') for p in last)
 assert [p[0] for p in last if p[0].startswith('학생들 경험담')] == ['학생들 경험담 발표', '학생들 경험담 재연']
 assert last[-1][0] == '마치는 노래·기도'

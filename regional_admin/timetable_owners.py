@@ -35,7 +35,7 @@ LEADER_PARTS = ()                               # every vocabulary block is read
 EXPERIENCE, REENACT = "학생들 경험담 발표", "학생들 경험담 재연"
 ENCOURAGE_CO, ENCOURAGE_A, ENCOURAGE_B, ENCOURAGE_MIN = "순회감독자 격려사", "A 강사 격려사", "B 강사 격려사", 10
 LAST_SERVICE_MIN = 5                            # the last class: opening / closing song and prayer
-REHEARSAL, REHEARSAL_MIN = "파수대 집회 실연", 60      # the last class: one hour, break afterwards
+REHEARSAL, REHEARSAL_MIN = "파수대 집회 실연", 60      # the last class: one hour, no break
 B_TALK_FROM_UNIT = 4                            # class of 2026-10-31
 B_TALK_RULES = re.compile(r"제공 연설|일상 회화|일상 생활 문장|이웃 사람과의 대화")
 
@@ -243,19 +243,18 @@ def rebuild(plan, unit):
             row(name, size / 2, reason, posture)
         place(post, ideal, [3, 4], 140 + G)
     else:
-        # The last class (no vocabulary blocks, no break, no walk-around practice, no homework briefing): the Watchtower meeting
-        # rehearsal is one 60-minute piece, then the students' experience presentations and their re-enactments, then one
-        # 15-minute encouragement talk from each instructor. The class closes with the graduation song (the closing song).
+        # The last class (no vocabulary blocks, break, walk-around practice, or homework briefing): the Watchtower meeting
+        # rehearsal is one 60-minute seated piece, followed by students' experiences and encouragement talks.
         row(OPEN, LAST_SERVICE_MIN, "open", "stand")
         lead = [n for n in order if n.startswith(REHEARSAL)]
         for n in lead:
-            row(n, REHEARSAL_MIN, core[n][1], core[n][2])
+            row(n, REHEARSAL_MIN, core[n][1], "sit")
         left = 120 - 2 * LAST_SERVICE_MIN - REHEARSAL_MIN * len(lead) - 3 * ENCOURAGE_MIN
-        row(EXPERIENCE, left // 2, "rehearsal", "stand")
+        row(EXPERIENCE, left // 2, "rehearsal", "sit")
         row(REENACT, left - left // 2, "rehearsal", "stand")
-        row(ENCOURAGE_CO, ENCOURAGE_MIN, "encourageco", "stand")
-        row(ENCOURAGE_A, ENCOURAGE_MIN, "encourage", "stand")
-        row(ENCOURAGE_B, ENCOURAGE_MIN, "encourage", "stand")
+        row(ENCOURAGE_CO, ENCOURAGE_MIN, "encourageco", "sit")
+        row(ENCOURAGE_A, ENCOURAGE_MIN, "encourage", "sit")
+        row(ENCOURAGE_B, ENCOURAGE_MIN, "encourage", "sit")
         row(CLOSE, LAST_SERVICE_MIN, "close", "stand")
         assert sum(p[1] for p in out) == 120, sum(p[1] for p in out)
         return out

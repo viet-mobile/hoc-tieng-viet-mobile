@@ -4715,14 +4715,14 @@
             60,
             "A",
             "rehearsal",
-            "stand"
+            "sit"
           ],
           [
             "학생들 경험담 발표",
             10,
             "A",
             "rehearsal",
-            "stand"
+            "sit"
           ],
           [
             "학생들 경험담 재연",
@@ -4736,21 +4736,21 @@
             10,
             null,
             "encourageco",
-            "stand"
+            "sit"
           ],
           [
             "A 강사 격려사",
             10,
             "A",
             "encourage",
-            "stand"
+            "sit"
           ],
           [
             "B 강사 격려사",
             10,
             "B",
             "encourage",
-            "stand"
+            "sit"
           ],
           [
             "마치는 노래·기도",
@@ -4761,9 +4761,9 @@
           ]
         ],
         "classNote": {
-          "ko": "이 회차는 파수대 집회 실연 60분 뒤 학생들의 경험담 발표와 재연을 하고, 순회감독자, A강사, B강사의 격려사(각 10분)로 마칩니다 (마치는 기도는 순회감독자). 휴식, 돌아다니며 하는 대화, 졸업, 과제 확인 안내는 없습니다.",
-          "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút, rồi học viên trình bày và tái hiện kinh nghiệm, kết thúc bằng lời khích lệ của giám thị vòng quanh, giảng viên A và B (mỗi người 10 phút; giám thị vòng quanh cầu nguyện kết thúc). Không nghỉ giải lao, không hoạt động đi lại trò chuyện, không lễ tốt nghiệp và không giao bài tập.",
-          "en": "This class rehearses the Watchtower meeting for 60 minutes, then students present and re-enact their experiences, and closes with a 10-minute encouragement talk from the circuit overseer and each instructor (the circuit overseer gives the closing prayer). There is no break, no walk-around practice, no graduation item and no homework briefing."
+          "vi": "Buổi này diễn tập buổi họp Tháp Canh 60 phút, rồi học viên trình bày và tái hiện kinh nghiệm. Phần diễn tập, trình bày kinh nghiệm và lời khích lệ 10 phút của giám thị vòng quanh, giảng viên A và B đều được thực hiện khi ngồi; lời khích lệ của giám thị vòng quanh đứng trước phần của giảng viên A. Giám thị vòng quanh cầu nguyện kết thúc. Không nghỉ giải lao, không hoạt động đi lại trò chuyện, không lễ tốt nghiệp và không giao bài tập.",
+          "en": "This class rehearses the Watchtower meeting for 60 minutes, then students present and re-enact their experiences. The rehearsal, experience presentation, and 10-minute encouragement talks by the circuit overseer and instructors A and B are seated; the circuit overseer's talk comes before instructor A's. The circuit overseer gives the closing prayer. There is no break, walk-around practice, graduation item, or homework briefing.",
+          "ko": "이 회차는 파수대 집회 실연 60분 뒤 학생들의 경험담 발표와 재연을 합니다. 실연, 경험담 발표, 순회감독자·A강사·B강사의 격려사(각 10분)는 앉아서 진행하며, 순회감독자 격려사는 A강사 격려사 앞에 합니다. 마치는 기도는 순회감독자가 합니다. 휴식, 돌아다니며 하는 대화, 졸업, 과제 확인 안내는 없습니다."
         }
       }
     ],
