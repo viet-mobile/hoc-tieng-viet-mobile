@@ -7523,19 +7523,49 @@
   function grammarClassWeek(week) {
     return typeof COURSE_GRAMMAR !== "undefined" && COURSE_GRAMMAR && COURSE_GRAMMAR.weeks[String(week)] ? week : null;
   }
+  var COURSE_ASSIGN_FALLBACK_REVIEW = {
+    vi: "Ôn lại nội dung đã học trước đó",
+    cs: "Opakování dříve probírané látky",
+    zh_cn: "复习之前学过的内容",
+    zh: "複習之前學過的內容",
+    en: "Review previously learned study content",
+    fr: "Révision des contenus étudiés précédemment",
+    de: "Wiederholung des zuvor gelernten Stoffs",
+    hu: "Korábban tanult anyag átismétlése",
+    id: "Meninjau kembali materi yang telah dipelajari sebelumnya",
+    ja: "これまでに学習した内容を復習",
+    ko: "이전에 배운 학습 내용 복습",
+    pl: "Powtórka wcześniej poznanego materiału"
+  };
+  var COURSE_ASSIGN_FALLBACK_PREVIEW = {
+    vi: "Chuẩn bị trước bài học tuần sau",
+    cs: "Příprava na látku příštího týdne",
+    zh_cn: "预习下周学习内容",
+    zh: "預習下週學習內容",
+    en: "Preview next week’s study",
+    fr: "Préparation de la leçon de la semaine prochaine",
+    de: "Vorbereitung auf den Stoff der nächsten Woche",
+    hu: "Felkészülés a következő heti anyagra",
+    id: "Mempersiapkan materi pelajaran minggu depan",
+    ja: "来週の学習内容を予習",
+    ko: "다음 주 학습 내용 예습",
+    pl: "Przygotowanie materiału na następny tydzień"
+  };
   function grammarOnlyAssign() {
     var base = (typeof CURR_ASSIGNMENTS !== "undefined" ? CURR_ASSIGNMENTS : []).filter(function (a) { return a.days && a.days.length === 5; })[0];
     return base ? { days: base.days.map(function (d) { return { day: d.day, reviews: [], previews: [] }; }) } : null;
   }
   function grammarAssignCardHtml(assign, weekKey, dateLabel) {
-    if (!assign) return "";
+    if (!assign || !assign.days || !assign.days.length) return "";
+    var wk = weekKey || 1;
     var body = "";
     assign.days.forEach(function (d) {
       var rows = "";
-      [[d.reviews || [], "review", "복습"], [d.previews || [], "preview", "예습"]].forEach(function (group) {
-        group[0].forEach(function (it) {
+      [[d.reviews || [], "review", "복습"], [d.previews || [], "preview", "예습"], [d.vocab || [], "vocab", "어휘"]].forEach(function (group) {
+        courseVisible(group[0], wk).forEach(function (it) {
+          var targetWk = it._wk === undefined ? wk : it._wk;
           rows += '<div class="curr-assign-row"><span class="curr-assign-kind ' + group[1] + '">' + TU(group[2]) + '</span><span class="curr-assign-text">' +
-            escapeHtml(T(it.text)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, it._wk === undefined ? weekKey : it._wk)) + '</div>';
+            escapeHtml(courseAssignText(it, targetWk)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, targetWk)) + '</div>';
         });
       });
       if (rows) body += '<div class="curr-assign-day-group"' + assignDayAttr(d.day) + '><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>' + rows + '</div>';
@@ -7889,11 +7919,11 @@
   // Break-week homework (REGIONAL_SCHEDULE.breakAssignments): review earlier classes' study items and preview
   // the next class's, spread over Monday-Friday; every other cancelled week keeps grammar-only homework.
   function breakAssign(slot, instSlots) {
-    var cfg = (regionalFlag("breakAssignments") || {})[slot.date];
     var base = grammarOnlyAssign();
-    if (!cfg || !base || !base.days || !base.days.length) return base;
+    if (!base || !base.days || !base.days.length) return base;
+    var cfg = (regionalFlag("breakAssignments") || {})[slot.date];
     function itemsOf(week) {
-      var s = instSlots.filter(function (x) { return x.week === week; })[0];
+      var s = (instSlots || []).filter(function (x) { return x.week === week; })[0];
       if (!s) return [];
       var shown = curriculumDisplayItems({ week: week, items: s.items || [] });
       if (week === 1 && regionalFlag("prelimItemsToWeek1")) shown = prelimItemsForWeek1(shown).concat(shown);
@@ -7904,12 +7934,50 @@
       });
     }
     function spread(list, i, n) { return list.filter(function (_, k) { return k % n === i; }); }
+
+    var prevInst = null, nextInst = null;
+    (instSlots || []).forEach(function (s) {
+      if (s.date < slot.date) {
+        if (!prevInst || s.date > prevInst.date) prevInst = s;
+      } else if (s.date > slot.date) {
+        if (!nextInst || s.date < nextInst.date) nextInst = s;
+      }
+    });
+
+    var reviewWeeks = [];
+    if (cfg && cfg.review !== undefined) {
+      reviewWeeks = Array.isArray(cfg.review) ? cfg.review : [cfg.review];
+    } else {
+      reviewWeeks = (instSlots || []).filter(function (s) { return s.date < slot.date; }).map(function (s) { return s.week; });
+      if (!reviewWeeks.length && prevInst) reviewWeeks = [prevInst.week];
+    }
+
+    var previewWeeks = [];
+    if (cfg && cfg.preview !== undefined) {
+      previewWeeks = Array.isArray(cfg.preview) ? cfg.preview : [cfg.preview];
+    } else {
+      if (nextInst) previewWeeks = [nextInst.week];
+    }
+
     var reviews = [];
-    (cfg.review || []).forEach(function (w) { reviews = reviews.concat(itemsOf(w)); });
-    var previews = cfg.preview ? itemsOf(cfg.preview) : [];
+    reviewWeeks.forEach(function (w) { reviews = reviews.concat(itemsOf(w)); });
+    if (!reviews.length) reviews = [{ text: COURSE_ASSIGN_FALLBACK_REVIEW, link: { tab: "review" } }];
+
+    var previews = [];
+    previewWeeks.forEach(function (w) { previews = previews.concat(itemsOf(w)); });
+    if (!previews.length) previews = [{ text: COURSE_ASSIGN_FALLBACK_PREVIEW, link: { tab: "curriculum" } }];
+
     var n = base.days.length;
     return Object.assign({}, base, { days: base.days.map(function (d, i) {
-      return Object.assign({}, d, { reviews: spread(reviews, i, n).concat(d.reviews || []), previews: spread(previews, i, n).concat(d.previews || []) });
+      var dayReviews = spread(reviews, i, n);
+      if (!dayReviews.length && reviews.length > 0) dayReviews = [reviews[i % reviews.length]];
+      var dayPreviews = spread(previews, i, n);
+      if (!dayPreviews.length && previews.length > 0) dayPreviews = [previews[i % previews.length]];
+      return Object.assign({}, d, {
+        reviews: dayReviews.concat(d.reviews || []),
+        previews: dayPreviews.concat(d.previews || []),
+        vocab: d.vocab || []
+      });
     }) });
   }
   // The preliminary meeting's study items (CURR_WEEKS week 0), taught at the first class; duplicates of week-1 items are dropped.
@@ -8562,14 +8630,107 @@ function verifyDistribution(units, dist, pins) {
     rp.sessions.forEach(function (s) { bySession[s.session] = s; });
     var units = regionalUnits();
     var openSession = currentClassKey(rp.sched.slots, function (s) { return s.session; });
-    rp.sched.slots.forEach(function (slot) {
+    rp.sched.slots.forEach(function (slot, slotIdx) {
       if (slot.type === "cancellation") {
+        var prevSlot = null, nextSlot = null;
+        for (var pi = slotIdx - 1; pi >= 0; pi--) {
+          if (rp.sched.slots[pi].type === "instructional") { prevSlot = rp.sched.slots[pi]; break; }
+        }
+        for (var ni = slotIdx + 1; ni < rp.sched.slots.length; ni++) {
+          if (rp.sched.slots[ni].type === "instructional") { nextSlot = rp.sched.slots[ni]; break; }
+        }
+        var prevSess = prevSlot ? bySession[prevSlot.session] : null;
+        var nextSess = nextSlot ? bySession[nextSlot.session] : null;
+
+        var reviewItems = [];
+        if (prevSess && prevSess.learning) {
+          reviewItems = prevSess.learning.filter(function (it) {
+            return readingLabels.indexOf((it.text || {}).ko) < 0;
+          });
+        }
+        if (!reviewItems.length) {
+          for (var pi2 = slotIdx - 1; pi2 >= 0; pi2--) {
+            if (rp.sched.slots[pi2].type === "instructional" && bySession[rp.sched.slots[pi2].session]) {
+              var l2 = (bySession[rp.sched.slots[pi2].session].learning || []).filter(function (it) {
+                return readingLabels.indexOf((it.text || {}).ko) < 0;
+              });
+              if (l2.length) { reviewItems = l2; break; }
+            }
+          }
+        }
+        if (!reviewItems.length) {
+          reviewItems = [{ text: COURSE_ASSIGN_FALLBACK_REVIEW, link: { tab: "review" }, unit: 1 }];
+        }
+
+        var previewItems = [];
+        if (nextSess && nextSess.learning) {
+          previewItems = nextSess.learning.filter(function (it) {
+            return readingLabels.indexOf((it.text || {}).ko) < 0;
+          });
+        }
+        if (!previewItems.length) {
+          for (var ni2 = slotIdx + 1; ni2 < rp.sched.slots.length; ni2++) {
+            if (rp.sched.slots[ni2].type === "instructional" && bySession[rp.sched.slots[ni2].session]) {
+              var l3 = (bySession[rp.sched.slots[ni2].session].learning || []).filter(function (it) {
+                return readingLabels.indexOf((it.text || {}).ko) < 0;
+              });
+              if (l3.length) { previewItems = l3; break; }
+            }
+          }
+        }
+        if (!previewItems.length) {
+          previewItems = [{ text: COURSE_ASSIGN_FALLBACK_PREVIEW, link: { tab: "curriculum" }, unit: nextSlot ? nextSlot.session : 1 }];
+        }
+
+        var nextAssigns = (nextSess && nextSess.assignments) || [];
+        var cancelAssignBody = "";
+        var daysList = ["월", "화", "수", "목", "금"];
+        var nDays = daysList.length;
+
+        daysList.forEach(function (day, dayIdx) {
+          var dayReviews = reviewItems.filter(function (_, k) { return k % nDays === dayIdx; });
+          if (!dayReviews.length && reviewItems.length > 0) dayReviews = [reviewItems[dayIdx % reviewItems.length]];
+
+          var dayPreviews = previewItems.filter(function (_, k) { return k % nDays === dayIdx; });
+          if (!dayPreviews.length && previewItems.length > 0) dayPreviews = [previewItems[dayIdx % previewItems.length]];
+
+          var dayVocab = nextAssigns.filter(function (x) { return x.category === "vocab" && x.day === day; });
+
+          var dayRows = "";
+          courseVisible(dayReviews).forEach(function (it) {
+            var u = it.unit || (prevSlot ? prevSlot.session : 1);
+            dayRows += '<div class="curr-assign-row"><span class="curr-assign-kind review">' + TU("복습") + '</span><span class="curr-assign-text">' +
+              escapeHtml(courseAssignText(it, u)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, u)) + '</div>';
+          });
+          courseVisible(dayPreviews).forEach(function (it) {
+            var u = it.unit || (nextSlot ? nextSlot.session : 1);
+            dayRows += '<div class="curr-assign-row"><span class="curr-assign-kind preview">' + TU("예습") + '</span><span class="curr-assign-text">' +
+              escapeHtml(courseAssignText(it, u)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, u)) + '</div>';
+          });
+          courseVisible(dayVocab).forEach(function (it) {
+            var u = it.unit || (nextSlot ? nextSlot.session : 1);
+            dayRows += '<div class="curr-assign-row"><span class="curr-assign-kind vocab">' + TU("어휘") + '</span><span class="curr-assign-text">' +
+              escapeHtml(courseAssignText(it, u)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, u)) + '</div>';
+          });
+
+          if (dayRows) {
+            cancelAssignBody += '<div class="curr-assign-day-group" data-day="' + escapeAttr(day) + '"><div class="curr-assign-day-label">' + escapeHtml(regionalDayLabel(day)) + '</div>' + dayRows + '</div>';
+          }
+        });
+
+        var cancelAssignCard = "";
+        if (cancelAssignBody) {
+          cancelAssignCard = '<div class="curr-assign-card" data-open="false" data-hw-monday="' + assignMonday(slot.calculatedDate) + '">' +
+            '<button class="curr-assign-toggle" aria-expanded="false"><span class="curr-assign-label">' + assignLabel(slot.calculatedDate) + '</span>' + currChev() + '</button>' +
+            '<div class="curr-assign-body">' + cancelAssignBody + '</div></div>';
+        }
+
         html += '<div class="group-card curr-vacation-card" data-open="false" data-syl="cancel-' + slot.date + '">' +
           '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " " + (cancellationReasonLabel(slot.reason) || TU("휴강"))) + '</span></span>' +
           currChev() + '</button>' +
           '<div class="group-body"><div class="curr-item-list">' +
           '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
-          '</div></div></div>';
+          '</div>' + cancelAssignCard + '</div></div>';
         return;
       }
       var sess = bySession[slot.session] || { session: slot.session, units: [], learning: [], assignments: [] };
@@ -8935,12 +9096,17 @@ function verifyDistribution(units, dist, pins) {
         sched.slots.forEach(function (slot, slotIdx) {
           var gramSpan = grammarHomeworkSpan(gramSeq, slotIdx + 1);
           if (slot.type === 'cancellation') {
+            var nextInstForCancel = null;
+            for (var ni = slotIdx + 1; ni < sched.slots.length; ni++) {
+              if (sched.slots[ni].type === "instructional") { nextInstForCancel = sched.slots[ni]; break; }
+            }
+            var cancelWk = gramSpan.preview || (nextInstForCancel ? nextInstForCancel.week : 1);
             html += '<div class="group-card curr-vacation-card" data-open="false" data-syl="cancel-' + slot.date + '">' +
               '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " " + (cancellationReasonLabel(slot.reason) || TU("휴강"))) + '</span></span>' +
               currChev() + '</button>' +
               '<div class="group-body"><div class="curr-item-list">' +
               '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
-              '</div>' + grammarAssignCardHtml(applyDailyTasks(applyCourseSongHomework(applyCourseVocabHomework(addGrammarHomework(courseTimetableAssign(breakAssign(slot, instSlots), sched, slotIdx + 1), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), sched, slotIdx + 1), sched, slotIdx + 1), slot.date), gramSpan.preview, slot.calculatedDate) +
+              '</div>' + grammarAssignCardHtml(applyDailyTasks(applyCourseSongHomework(applyCourseVocabHomework(addGrammarHomework(courseTimetableAssign(breakAssign(slot, instSlots), sched, slotIdx + 1), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), sched, slotIdx + 1), sched, slotIdx + 1), slot.date), cancelWk, slot.calculatedDate) +
               '</div></div>';
           } else {
             var badgeText = slot.week === 16 && !(courseGuideEntry(16) && !/총복습/.test((slot.title && (slot.title.ko || slot.title)) || "")) ?
@@ -8996,8 +9162,8 @@ function verifyDistribution(units, dist, pins) {
                 copy.previews = (d.previews || []).slice();
                 if (!copy.reviews.length && slot.items.length) copy.reviews.push(slot.items[dayIndex % slot.items.length]);
                 if (!copy.previews.length && nextInst.items.length) copy.previews.push(nextInst.items[dayIndex % nextInst.items.length]);
-                if (!copy.reviews.length) copy.reviews.push({ text: { ko: "이번 주 학습 내용 복습", vi: "Ôn lại nội dung học tuần này", zh: "複習本週學習內容", en: "Review this week’s study", ja: "今週の学習内容を復習" }, link: { tab: "review" } });
-                if (!copy.previews.length) copy.previews.push({ text: { ko: "다음 주 학습 내용 예습", vi: "Xem trước nội dung học tuần tới", zh: "預習下週學習內容", en: "Preview next week’s study", ja: "来週の学習内容を予習" }, link: { tab: "curriculum" } });
+                if (!copy.reviews.length) copy.reviews.push({ text: COURSE_ASSIGN_FALLBACK_REVIEW, link: { tab: "review" } });
+                if (!copy.previews.length) copy.previews.push({ text: COURSE_ASSIGN_FALLBACK_PREVIEW, link: { tab: "curriculum" } });
                 return copy;
               }) });
               if (slot.week === 15) {
@@ -9072,8 +9238,8 @@ function verifyDistribution(units, dist, pins) {
             copy.previews = (d.previews || []).slice();
             if (!copy.reviews.length && w.items.length) copy.reviews.push(w.items[dayIndex % w.items.length]);
             if (!copy.previews.length && nextSlot.items.length) copy.previews.push(nextSlot.items[dayIndex % nextSlot.items.length]);
-            if (!copy.reviews.length) copy.reviews.push({ text: { ko: "이번 주 학습 내용 복습", vi: "Ôn lại nội dung học tuần này", zh: "複習本週學習內容", en: "Review this week’s study", ja: "今週の学習内容を復習" }, link: { tab: "review" } });
-            if (!copy.previews.length) copy.previews.push({ text: { ko: "다음 주 학습 내용 예습", vi: "Xem trước nội dung học tuần tới", zh: "預習下週學習內容", en: "Preview next week’s study", ja: "来週の学習内容を予習" }, link: { tab: "curriculum" } });
+            if (!copy.reviews.length) copy.reviews.push({ text: COURSE_ASSIGN_FALLBACK_REVIEW, link: { tab: "review" } });
+            if (!copy.previews.length) copy.previews.push({ text: COURSE_ASSIGN_FALLBACK_PREVIEW, link: { tab: "curriculum" } });
             return copy;
           }) });
           if (w.week === 15) {
@@ -16255,6 +16421,8 @@ function verifyDistribution(units, dist, pins) {
   window.__courseWeekOf = courseWeekOf;       // test hooks
   window.__prepareSpeechText = prepareSpeechText;
   window.__courseTodayIso = courseTodayIso;
+  window.__regionalSessionCards = regionalSessionCards;
+  window.__breakAssign = breakAssign;
   var COURSE_DAY_KO = ["월", "화", "수", "목", "금"];
   function isDefaultLanding() {
     if (location.hash && location.hash !== "#") return false;

@@ -218,7 +218,7 @@ JEONJU_SONGS = {
 # study items and preview the next class's items, spread over Monday-Friday.
 JEONJU_BREAK_ASSIGNMENTS = {
     "2026-11-07": {"review": [1, 2], "preview": 5},
-    "2026-11-28": {"review": [1, 2, 3, 4]},
+    "2026-11-28": {"review": [1, 2, 3, 4], "preview": 7},
     "2026-12-05": {"review": [5, 6], "preview": 7},
 }
 
