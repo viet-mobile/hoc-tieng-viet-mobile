@@ -1137,5 +1137,134 @@
         "e": 105100
       }
     ]
+  },
+  "135": {
+    "mediaKey": "pub-pksjj_135_VIDEO",
+    "checksum": "5131ca6b71d47ba216565953adf1e0d3",
+    "format": "MP4",
+    "timingSource": "User-supplied Vietnamese Kingdom song 135 children choir 24-line timing table, 2026-11-13; identical learner children intervals authorized",
+    "applyLearnerChildren": true,
+    "lines": [
+      {
+        "text": "Nam thanh và nữ tú,",
+        "s": 5560,
+        "e": 10180
+      },
+      {
+        "text": "hãy trao dâng trọn lòng cho Cha;",
+        "s": 10420,
+        "e": 13720
+      },
+      {
+        "text": "kẻ thù hiện đang bêu xấu danh Cha",
+        "s": 14600,
+        "e": 19360
+      },
+      {
+        "text": "rồi phải nhận ra.",
+        "s": 19640,
+        "e": 20900
+      },
+      {
+        "text": "Con dâng trọn cho Cha tuổi thanh xuân,",
+        "s": 21720,
+        "e": 26260
+      },
+      {
+        "text": "trung tín đến cùng;",
+        "s": 26740,
+        "e": 27860
+      },
+      {
+        "text": "cả thế gian sẽ biết con muốn sống",
+        "s": 28880,
+        "e": 33540
+      },
+      {
+        "text": "làm đẹp lòng Cha.",
+        "s": 33920,
+        "e": 35280
+      },
+      {
+        "text": "Hãy khôn ngoan con, làm cho Cha vui lòng",
+        "s": 37520,
+        "e": 43760
+      },
+      {
+        "text": "và quyết trung kiên cùng Cha suốt đời.",
+        "s": 44900,
+        "e": 50460
+      },
+      {
+        "text": "Con hãy tôn vinh Cha với cả tấm lòng,",
+        "s": 52060,
+        "e": 57300
+      },
+      {
+        "text": "ngợi khen Cha mãi bởi đường con chọn.",
+        "s": 58900,
+        "e": 66160
+      },
+      {
+        "text": "Mong con mừng vui bước mãi theo Cha,",
+        "s": 73440,
+        "e": 78240
+      },
+      {
+        "text": "chọn thờ tôn Cha.",
+        "s": 78460,
+        "e": 79760
+      },
+      {
+        "text": "Dẫu đường đời con vấp ngã,",
+        "s": 80540,
+        "e": 83880
+      },
+      {
+        "text": "tay Cha liền dìu con lên.",
+        "s": 84040,
+        "e": 86880
+      },
+      {
+        "text": "Xung quanh người quay lưng,",
+        "s": 87720,
+        "e": 90300
+      },
+      {
+        "text": "kẻ mưu gian, con chớ lo sợ",
+        "s": 90600,
+        "e": 94020
+      },
+      {
+        "text": "mà hãy tin chắc chắn Cha quý mến",
+        "s": 94820,
+        "e": 99420
+      },
+      {
+        "text": "và trợ lực con.",
+        "s": 99880,
+        "e": 102220
+      },
+      {
+        "text": "Hãy khôn ngoan con, làm cho Cha vui lòng",
+        "s": 103460,
+        "e": 110840
+      },
+      {
+        "text": "và quyết trung kiên cùng Cha suốt đời.",
+        "s": 111000,
+        "e": 116260
+      },
+      {
+        "text": "Con hãy tôn vinh Cha với cả tấm lòng,",
+        "s": 118000,
+        "e": 123520
+      },
+      {
+        "text": "ngợi khen Cha mãi bởi đường con chọn.",
+        "s": 124820,
+        "e": 133900
+      }
+    ]
   }
 }

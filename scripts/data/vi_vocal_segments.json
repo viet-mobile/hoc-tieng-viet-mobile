@@ -12356,7 +12356,7 @@
     "mediaKey": "pub-pksjj_135_VIDEO",
     "format": "MP4",
     "checksum": "5131ca6b71d47ba216565953adf1e0d3",
-    "timingMethod": "vietnamese_ctc_same_recording",
+    "timingMethod": "user_supplied_same_recording_line_boundaries",
     "duration": 145.589,
     "url": "https://cfp2.jw-cdn.org/a/eabff8f/2/o/pksjj_VT_135_r360P.mp4",
     "general_audio_exists": false,
@@ -12369,268 +12369,222 @@
       {
         "s": 5560,
         "e": 10180,
-        "text": "Nam thanh và nữ tú,",
-        "confidence": 0.6266,
-        "min_char_score": 0.0576,
         "m": 0,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Nam thanh và nữ tú,",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 10420,
         "e": 13720,
-        "text": "hãy trao dâng trọn lòng cho Cha;",
-        "confidence": 0.5211,
-        "min_char_score": 0.0082,
         "m": 1,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "hãy trao dâng trọn lòng cho Cha;",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 14600,
         "e": 19360,
-        "text": "kẻ thù hiện đang bêu xấu danh Cha",
-        "confidence": 0.4517,
-        "min_char_score": 0.0,
         "m": 2,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "kẻ thù hiện đang bêu xấu danh Cha",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 19640,
         "e": 20900,
-        "text": "rồi phải nhận ra.",
-        "confidence": 0.6338,
-        "min_char_score": 0.0033,
         "m": 3,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "rồi phải nhận ra.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 21720,
         "e": 26260,
-        "text": "Con dâng trọn cho Cha tuổi thanh xuân,",
-        "confidence": 0.5092,
-        "min_char_score": 0.0014,
         "m": 4,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Con dâng trọn cho Cha tuổi thanh xuân,",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 26740,
         "e": 27860,
-        "text": "trung tín đến cùng;",
-        "confidence": 0.3708,
-        "min_char_score": 0.0113,
         "m": 5,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "trung tín đến cùng;",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 28880,
         "e": 33540,
-        "text": "cả thế gian sẽ biết con muốn sống",
-        "confidence": 0.3613,
-        "min_char_score": 0.0013,
         "m": 6,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "cả thế gian sẽ biết con muốn sống",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 33920,
         "e": 35280,
-        "text": "làm đẹp lòng Cha.",
-        "confidence": 0.6394,
-        "min_char_score": 0.0631,
         "m": 7,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "làm đẹp lòng Cha.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 37520,
         "e": 43760,
-        "text": "Hãy khôn ngoan con, làm cho Cha vui lòng",
-        "confidence": 0.2868,
-        "min_char_score": 0.0005,
         "m": 8,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Hãy khôn ngoan con, làm cho Cha vui lòng",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 44900,
         "e": 50460,
-        "text": "và quyết trung kiên cùng Cha suốt đời.",
-        "confidence": 0.2946,
-        "min_char_score": 0.0001,
         "m": 9,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "và quyết trung kiên cùng Cha suốt đời.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 52060,
         "e": 57300,
-        "text": "Con hãy tôn vinh Cha với cả tấm lòng,",
-        "confidence": 0.4366,
-        "min_char_score": 0.006,
         "m": 10,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Con hãy tôn vinh Cha với cả tấm lòng,",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 58900,
-        "e": 68840,
-        "text": "ngợi khen Cha mãi bởi đường con chọn.",
-        "confidence": 0.354,
-        "min_char_score": 0.0001,
+        "e": 66160,
         "m": 11,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "ngợi khen Cha mãi bởi đường con chọn.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 73440,
         "e": 78240,
-        "text": "Mong con mừng vui bước mãi theo Cha,",
-        "confidence": 0.3922,
-        "min_char_score": 0.0087,
         "m": 12,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Mong con mừng vui bước mãi theo Cha,",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 78460,
         "e": 79760,
-        "text": "chọn thờ tôn Cha.",
-        "confidence": 0.3484,
-        "min_char_score": 0.0416,
         "m": 13,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "chọn thờ tôn Cha.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 80540,
         "e": 83880,
-        "text": "Dẫu đường đời con vấp ngã,",
-        "confidence": 0.3219,
-        "min_char_score": 0.0,
         "m": 14,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Dẫu đường đời con vấp ngã,",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 84040,
         "e": 86880,
-        "text": "tay Cha liền dìu con lên.",
-        "confidence": 0.3344,
-        "min_char_score": 0.0205,
         "m": 15,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "tay Cha liền dìu con lên.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 87720,
         "e": 90300,
-        "text": "Xung quanh người quay lưng,",
-        "confidence": 0.8355,
-        "min_char_score": 0.1087,
         "m": 16,
         "pid": null,
+        "text": "Xung quanh người quay lưng,",
         "enabled": true,
-        "reason": "video_vocal_ctc_alignment"
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 90600,
         "e": 94020,
-        "text": "kẻ mưu gian, con chớ lo sợ",
-        "confidence": 0.5709,
-        "min_char_score": 0.0088,
         "m": 17,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "kẻ mưu gian, con chớ lo sợ",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 94820,
         "e": 99420,
-        "text": "mà hãy tin chắc chắn Cha quý mến",
-        "confidence": 0.2206,
-        "min_char_score": 0.0,
         "m": 18,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "mà hãy tin chắc chắn Cha quý mến",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 99880,
         "e": 102220,
-        "text": "và trợ lực con.",
-        "confidence": 0.1532,
-        "min_char_score": 0.0001,
         "m": 19,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "và trợ lực con.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 103460,
         "e": 110840,
-        "text": "Hãy khôn ngoan con, làm cho Cha vui lòng",
-        "confidence": 0.4214,
-        "min_char_score": 0.002,
         "m": 20,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Hãy khôn ngoan con, làm cho Cha vui lòng",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 111000,
         "e": 116260,
-        "text": "và quyết trung kiên cùng Cha suốt đời.",
-        "confidence": 0.2319,
-        "min_char_score": 0.0,
         "m": 21,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "và quyết trung kiên cùng Cha suốt đời.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 118000,
         "e": 123520,
-        "text": "Con hãy tôn vinh Cha với cả tấm lòng,",
-        "confidence": 0.3866,
-        "min_char_score": 0.0033,
         "m": 22,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "Con hãy tôn vinh Cha với cả tấm lòng,",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       },
       {
         "s": 124820,
-        "e": 141000,
-        "text": "ngợi khen Cha mãi bởi đường con chọn.",
-        "confidence": 0.3413,
-        "min_char_score": 0.0002,
+        "e": 133900,
         "m": 23,
         "pid": null,
-        "enabled": false,
-        "reason": "vocal_boundary_requires_review"
+        "text": "ngợi khen Cha mãi bởi đường con chọn.",
+        "enabled": true,
+        "reason": "user_supplied_line_boundaries"
       }
-    ]
+    ],
+    "timingSource": "User-supplied Vietnamese Kingdom song 135 children choir 24-line timing table, 2026-11-13; identical learner children intervals authorized",
+    "manualChildrenOverride": true
   },
   "137": {
     "src": "sjjc",
