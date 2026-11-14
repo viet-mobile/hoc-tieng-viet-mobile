@@ -52080,6 +52080,7 @@ const SONGS_DATA = [
       },
       {
         "vi": "cả thế gian sẽ biết con muốn sống",
+        "vi_old": "cả thế gian sẽ biết con quyết sống",
         "ko": "온 세상 보리라,",
         "zh": "向全世界證明",
         "en": "You show all the world",
@@ -52136,6 +52137,7 @@ const SONGS_DATA = [
       },
       {
         "vi": "và quyết trung kiên cùng Cha suốt đời.",
+        "vi_old": "và quyết tâm theo hầu Cha suốt đời.",
         "ko": "지혜롭게 되어 다오.",
         "zh": "一生令我的心歡悅。",
         "en": "Be wise and make my heart rejoice,",
@@ -52164,6 +52166,7 @@ const SONGS_DATA = [
       },
       {
         "vi": "ngợi khen Cha mãi bởi đường con chọn.",
+        "vi_old": "mọi dân khen Chúa bởi đường con chọn.",
         "ko": "나를 기쁘게 해 다오.",
         "zh": "與我同行，與我為友。",
         "en": "And offer praise by your own choice.",
@@ -52206,6 +52209,7 @@ const SONGS_DATA = [
       },
       {
         "vi": "Dẫu đường đời con vấp ngã,",
+        "vi_old": "Suốt đời dù con vấp ngã,",
         "ko": "너 넘어질 때도",
         "zh": "就算失足跌倒，",
         "en": "And though you may stumble,",
@@ -52262,6 +52266,7 @@ const SONGS_DATA = [
       },
       {
         "vi": "mà hãy tin chắc chắn Cha quý mến",
+        "vi_old": "vì chính Cha sẽ giúp con",
         "ko": "넌 내게 소중하니",
         "zh": "我會永遠守護著你，",
         "en": "Take comfort in knowing",
@@ -52276,6 +52281,7 @@ const SONGS_DATA = [
       },
       {
         "vi": "và trợ lực con.",
+        "vi_old": "vững chí và được bình an.",
         "ko": "힘을 내어라.",
         "zh": "絕不遺忘。",
         "en": "I’ll always cherish you.",
@@ -52318,6 +52324,7 @@ const SONGS_DATA = [
       },
       {
         "vi": "và quyết trung kiên cùng Cha suốt đời.",
+        "vi_old": "và quyết tâm theo hầu Cha suốt đời.",
         "ko": "지혜롭게 되어 다오.",
         "zh": "一生令我的心歡悅。",
         "en": "Be wise and make my heart rejoice,",
@@ -52346,6 +52353,7 @@ const SONGS_DATA = [
       },
       {
         "vi": "ngợi khen Cha mãi bởi đường con chọn.",
+        "vi_old": "mọi dân khen Chúa bởi đường con chọn.",
         "ko": "나를 기쁘게 해 다오.",
         "zh": "與我同行，與我為友。",
         "en": "And offer praise by your own choice.",
