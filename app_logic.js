@@ -12051,6 +12051,7 @@ function verifyDistribution(units, dist, pins) {
   // from the caret position under the finger.
   // Meanings set for lyric words (they replace the word list's meaning; a longer word's meaning always wins over a shorter one's).
   var LYRIC_WORD_MEANINGS = {
+    "ra": "밖으로",
     "ủi an": "위안, 위로", "an ủi": "안위, 위로", "thái an": "크나큰 평안", "thái bình": "크나큰 평화", "thư thái": "편안하다",
     "phán quyết": "판결", "phán": "(높은 분이) 말씀하시다", "phán xét": "심판하다", "phiền": "번민하다", "ưu phiền": "근심과 번민",
     "muộn phiền": "슬픔과 번민", "vinh hiển": "영광, 영광스러운", "hiển vinh": "영광, 영광스러운",
@@ -12085,6 +12086,7 @@ function verifyDistribution(units, dist, pins) {
   }
   // Curated song-context meanings; longer dictionary entries still win during word selection.
   var LYRIC_WORD_KO_MEANINGS = {
+    "ra": "밖으로",
     "hãy": "-하라",
     "luôn": "항상",
     "ân huệ": "은혜(恩惠)",
@@ -12165,7 +12167,8 @@ function verifyDistribution(units, dist, pins) {
     }
     return out.some(function (p) { return !p; }) ? "" : out.join(" ");
   }
-  function lyricWordDictionary() {
+  // Internal Vietnamese Terminology Dictionary (내부 베트남어 용어 사전)
+  function vietWordDictionary() {
     if (lyricWordDict) return lyricWordDict;
     var d = { meaning: {}, pron: {} };
     (typeof UNIFIED_WORDS !== "undefined" && UNIFIED_WORDS || []).forEach(function (w) {
@@ -12188,6 +12191,12 @@ function verifyDistribution(units, dist, pins) {
       var k = lyricWordKey(word);
       if (!d.meaning[k]) d.meaning[k] = supplement[word];
     });
+    // Internal Vietnamese Terminology Dictionary supplement
+    var termDict = typeof VIET_TERMINOLOGY_DICT !== "undefined" && VIET_TERMINOLOGY_DICT || {};
+    Object.keys(termDict).forEach(function (word) {
+      var k = lyricWordKey(word);
+      if (!d.meaning[k]) d.meaning[k] = termDict[word];
+    });
     // The approved word list (lyric_meanings_approved_ko.json) replaces the dictionary supplement; the meanings the user entered by hand come after it.
     var approved = typeof LYRIC_MEANINGS_APPROVED_KO !== "undefined" && LYRIC_MEANINGS_APPROVED_KO || {};
     Object.keys(approved).forEach(function (word) { d.meaning[lyricWordKey(word)] = approved[word]; });
@@ -12199,15 +12208,19 @@ function verifyDistribution(units, dist, pins) {
     // Verbs and adjectives whose meaning was written as a noun (cầu nguyện 기도 -> 기도하다): the predicate form comes last and wins over every list above.
     var predicate = typeof LYRIC_MEANINGS_PREDICATE_KO !== "undefined" && LYRIC_MEANINGS_PREDICATE_KO || {};
     Object.keys(predicate).forEach(function (word) { d.meaning[lyricWordKey(word)] = predicate[word]; });
+    // Explicit terminology definition
+    d.meaning["ra"] = "밖으로";
     lyricWordDict = d;
     return d;
   }
+  var lyricWordDictionary = vietWordDictionary;
   // The tapped word of a lyric element at client point (x, y): {text, rect} or null.
   function lyricWordAt(el, x, y) {
     var node = null, off = 0;
     if (document.caretPositionFromPoint) { var cp = document.caretPositionFromPoint(x, y); if (cp) { node = cp.offsetNode; off = cp.offset; } }
     else if (document.caretRangeFromPoint) { var cr = document.caretRangeFromPoint(x, y); if (cr) { node = cr.startContainer; off = cr.startOffset; } }
     if (!node || node.nodeType !== 3 || !el.contains(node)) return null;
+    if (node.parentElement && node.parentElement.closest("button, a, input, select, textarea, .speak-btn, .phrase-star, .phrase-del, .card-translation, .talk-kr, .reader-tr, .rhyme-word-ex-mean, .rw-gloss, .song-target-row, .lyric-target, .lyric-target-row, .pdf-sent-num")) return null;
     var text = node.data, re = /[\p{L}\p{M}]+(?:[-'’][\p{L}\p{M}]+)*/gu, toks = [], m;
     while ((m = re.exec(text))) toks.push({ s: m.index, e: m.index + m[0].length, t: m[0] });
     function rectOf(a, b) { var r = document.createRange(); r.setStart(node, toks[a].s); r.setEnd(node, toks[b].e); return r.getBoundingClientRect(); }
@@ -12217,7 +12230,7 @@ function verifyDistribution(units, dist, pins) {
     var box = rectOf(hit, hit);
     if (x < box.left - 4 || x > box.right + 4 || y < box.top - 4 || y > box.bottom + 4) return null;
     // words of up to three syllables around the tapped one: neighbours must be separated by blanks only
-    var dict = lyricWordDictionary(), best = [hit, hit];
+    var dict = vietWordDictionary(), best = [hit, hit];
     function joined(a, b) { for (var i = a; i < b; i++) if (!/^\s+$/.test(text.slice(toks[i].e, toks[i + 1].s))) return null; return text.slice(toks[a].s, toks[b].e); }
     function syllables(a, b) { return joined(a, b) === null ? 99 : toks.slice(a, b + 1).reduce(function (n, t) { return n + t.t.split("-").length; }, 0); }
     outer: for (var len = 3; len >= 2; len--) {
@@ -12230,7 +12243,7 @@ function verifyDistribution(units, dist, pins) {
   }
   function lyricWordClose() { if (lyricWordPop) { lyricWordPop.remove(); lyricWordPop = null; } }
   function lyricWordShow(word) {
-    var dict = lyricWordDictionary(), key = lyricWordKey(word.text);
+    var dict = vietWordDictionary(), key = lyricWordKey(word.text);
     var pron = koreanNotationRegion === "none" ? "" : koreanNotationIpa ? viIpaWord(word.text, koreanNotationRegion) : dict.pron[key] || lyricKoreanWord(word.text);
     var mean = dict.meaning[key] || "";
     if (!pron && !mean) return;
@@ -12251,7 +12264,9 @@ function verifyDistribution(units, dist, pins) {
   document.addEventListener("click", function (e) {
     if (lyricWordPop && e.target.closest && !e.target.closest(".lyric-word-pop")) lyricWordClose();
     if (currentLang !== "ko" || !e.target.closest) return;
-    var el = e.target.closest(".lyric-vi");
+    if (e.target.closest("button, a, input, select, textarea, .speak-btn, .phrase-star, .phrase-del, .curr-link-btn, .jw-link, .dict-link, .reading-btn, .lff-part-head, .group-head, .subtab-btn, .tab-btn")) return;
+    if (e.target.closest(".talk-kr, .reader-tr, .card-translation, .rhyme-word-ex-mean, .rw-gloss, .song-target-row, .lyric-target, .lyric-target-row, .pdf-sent-num")) return;
+    var el = e.target.closest(".lyric-vi, .talk-vi, .reader-vi, .pdf-sent-head, .rhyme-word-ex, .rhyme-word-main, .bilingual-title-vi, .wt-article-vi, .lff-title-vi, .lpd-title-vi, #panel-sentence .vn, #panel-sentence .curr-item-text, [data-sentence='wt'] .vn, [data-vocab='wt'] .vn, #curr-wt-root .vn, #curr-lff-root .vn, #curr-lpd-root .vn");
     if (!el || (window.getSelection && String(window.getSelection()).length)) return;
     var word = lyricWordAt(el, e.clientX, e.clientY);
     if (word) lyricWordShow(word);
@@ -12263,6 +12278,16 @@ function verifyDistribution(units, dist, pins) {
     menu.value = "";
     if (url && isAllowedJwOrgShareUrl(url)) window.open(url, "_blank", "noopener,noreferrer");
   });
+  window.__vietDictionary = vietWordDictionary;
+  window.vietWordDictionary = vietWordDictionary;
+  window.lyricWordDictionary = vietWordDictionary;
+  window.getVietMeaning = function (word) {
+    var dict = vietWordDictionary();
+    return (dict && dict.meaning && dict.meaning[lyricWordKey(word)]) || "";
+  };
+  window.lyricWordAt = lyricWordAt;
+  window.lyricWordShow = lyricWordShow;
+  window.lyricWordClose = lyricWordClose;
   window.__hanoiKo = { syllable: hanoiKoreanSyllable, word: hanoiKoreanWord, ipa: viIpaWord, ipaSyllable: viIpaSyllable };   // tests/test_lyric_word_popup.js
   window.addEventListener("scroll", lyricWordClose, true);
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") lyricWordClose(); });
