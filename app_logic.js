@@ -6724,7 +6724,7 @@
   function koreanNotationSettingsHtml() {
     if (currentLang !== "ko") return "";
     var labels = { "none": "없음", "hanoi-ipa": "하노이 IPA", "saigon-ipa": "사이공 IPA", "hanoi": "하노이 한글", "saigon": "사이공 한글" };
-    return '<div class="p-section"><h3>한국어 발음 표기 설정</h3><div class="p-subsection"><h4>한국어 발음 표기</h4><p class="p-desc">노래 가사 단어 팝업의 발음 표기(한글 또는 IPA)에 적용됩니다.</p><select id="korean-notation-region" class="repeat-count-select" aria-label="한국어 발음 표기">' +
+    return '<div class="p-section"><div class="p-subsection"><h4>한국어 발음 표기</h4><p class="p-desc">단어 팝업의 발음 표기(한글 또는 IPA)에 적용됩니다.</p><select id="korean-notation-region" class="repeat-count-select" aria-label="한국어 발음 표기">' +
       KOREAN_NOTATION_MODES.map(function (m) { return '<option value="' + m + '"' + (koreanNotationMode() === m ? ' selected' : '') + '>' + labels[m] + '</option>'; }).join("") + '</select></div></div>';
   }
   function renderPron() {
