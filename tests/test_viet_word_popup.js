@@ -164,7 +164,68 @@ const eq = (a, b, m) => ok(JSON.stringify(a) === JSON.stringify(b), m + ': ' + J
 
     await E(`document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }))`);
 
-    // 6. Test that clicking buttons does NOT open popup
+    // 6. Test 2-syllable compound words (từ ghép): "chúng ta" -> "우리 (화자+청자 포함)"
+    res = await tapWordInElem('test-reader-vi', 'Chúng');
+    ok(res && res.ko.includes('쭝ㅁ 따') && res.mean.includes('우리'), 'reader-vi tap "Chúng" in "Chúng ta" matches 2-syllable compound "chúng ta": ' + JSON.stringify(res));
+
+    await E(`document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }))`);
+
+    res = await tapWordInElem('test-reader-vi', 'ta');
+    ok(res && res.ko.includes('쭝ㅁ 따') && res.mean.includes('우리'), 'reader-vi tap "ta" in "Chúng ta" matches 2-syllable compound "chúng ta": ' + JSON.stringify(res));
+
+    await E(`document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }))`);
+
+    // 7. Test Site-wide popup in [과정] (Curriculum: .curr-item-vi)
+    await E(`(() => {
+      const d = document.createElement('div');
+      d.id = 'test-curr-vi';
+      d.className = 'curr-item-vi';
+      d.style.cssText = 'position:fixed;left:20px;top:300px;font-size:16px;background:#fff;z-index:99999;';
+      d.textContent = 'Đức Giê-hô-va luôn yêu thương chúng ta';
+      document.body.appendChild(d);
+    })()`);
+
+    res = await tapWordInElem('test-curr-vi', 'Giê-hô-va');
+    ok(res && res.mean.includes('여호와 하느님'), 'curr-item-vi tap "Giê-hô-va" -> "여호와 하느님": ' + JSON.stringify(res));
+
+    await E(`document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }))`);
+
+    // 8. Test Site-wide popup in [단어] (Vocabulary: .vocab-vi)
+    await E(`(() => {
+      const d = document.createElement('div');
+      d.id = 'test-vocab-vi';
+      d.className = 'vocab-vi';
+      d.style.cssText = 'position:fixed;left:20px;top:350px;font-size:16px;background:#fff;z-index:99999;';
+      d.textContent = 'Gia đình là điều quan trọng';
+      document.body.appendChild(d);
+    })()`);
+
+    res = await tapWordInElem('test-vocab-vi', 'Gia');
+    ok(res && res.mean.includes('가족'), 'vocab-vi tap "Gia đình" -> "가족, 가정": ' + JSON.stringify(res));
+
+    await E(`document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }))`);
+
+    res = await tapWordInElem('test-vocab-vi', 'quan');
+    ok(res && res.mean.includes('중요한'), 'vocab-vi tap "quan trọng" -> "중요한": ' + JSON.stringify(res));
+
+    await E(`document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }))`);
+
+    // 9. Test Site-wide popup in [문법] (Grammar: .grammar-vi)
+    await E(`(() => {
+      const d = document.createElement('div');
+      d.id = 'test-grammar-vi';
+      d.className = 'grammar-vi';
+      d.style.cssText = 'position:fixed;left:20px;top:400px;font-size:16px;background:#fff;z-index:99999;';
+      d.textContent = 'Tôi bắt đầu học tập';
+      document.body.appendChild(d);
+    })()`);
+
+    res = await tapWordInElem('test-grammar-vi', 'bắt');
+    ok(res && res.mean.includes('시작하다'), 'grammar-vi tap "bắt đầu" -> "시작하다": ' + JSON.stringify(res));
+
+    await E(`document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }))`);
+
+    // 10. Test that clicking buttons does NOT open popup
     const btnClicked = await E(`(() => {
       const btn = document.querySelector('#test-talk-vi .speak-btn');
       const b = btn.getBoundingClientRect();

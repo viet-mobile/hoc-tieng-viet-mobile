@@ -12195,7 +12195,7 @@ function verifyDistribution(units, dist, pins) {
     var termDict = typeof VIET_TERMINOLOGY_DICT !== "undefined" && VIET_TERMINOLOGY_DICT || {};
     Object.keys(termDict).forEach(function (word) {
       var k = lyricWordKey(word);
-      if (!d.meaning[k]) d.meaning[k] = termDict[word];
+      if (!d.meaning[k] || k.indexOf(" ") > 0) d.meaning[k] = termDict[word];
     });
     // The approved word list (lyric_meanings_approved_ko.json) replaces the dictionary supplement; the meanings the user entered by hand come after it.
     var approved = typeof LYRIC_MEANINGS_APPROVED_KO !== "undefined" && LYRIC_MEANINGS_APPROVED_KO || {};
@@ -12221,7 +12221,9 @@ function verifyDistribution(units, dist, pins) {
     else if (document.caretRangeFromPoint) { var cr = document.caretRangeFromPoint(x, y); if (cr) { node = cr.startContainer; off = cr.startOffset; } }
     if (!node || node.nodeType !== 3 || !el.contains(node)) return null;
     if (node.parentElement && node.parentElement.closest("button, a, input, select, textarea, .speak-btn, .phrase-star, .phrase-del, .card-translation, .talk-kr, .reader-tr, .rhyme-word-ex-mean, .rw-gloss, .song-target-row, .lyric-target, .lyric-target-row, .pdf-sent-num")) return null;
-    var text = node.data, re = /[\p{L}\p{M}]+(?:[-'’][\p{L}\p{M}]+)*/gu, toks = [], m;
+    var text = node.data;
+    if (/[\uac00-\ud7a3]/.test(text)) return null;
+    var re = /[\p{L}\p{M}]+(?:[-'’][\p{L}\p{M}]+)*/gu, toks = [], m;
     while ((m = re.exec(text))) toks.push({ s: m.index, e: m.index + m[0].length, t: m[0] });
     function rectOf(a, b) { var r = document.createRange(); r.setStart(node, toks[a].s); r.setEnd(node, toks[b].e); return r.getBoundingClientRect(); }
     var hit = -1;
@@ -12229,14 +12231,14 @@ function verifyDistribution(units, dist, pins) {
     if (hit < 0) return null;
     var box = rectOf(hit, hit);
     if (x < box.left - 4 || x > box.right + 4 || y < box.top - 4 || y > box.bottom + 4) return null;
-    // words of up to three syllables around the tapped one: neighbours must be separated by blanks only
+    // words of up to four syllables around the tapped one: neighbours must be separated by blanks only
     var dict = vietWordDictionary(), best = [hit, hit];
     function joined(a, b) { for (var i = a; i < b; i++) if (!/^\s+$/.test(text.slice(toks[i].e, toks[i + 1].s))) return null; return text.slice(toks[a].s, toks[b].e); }
     function syllables(a, b) { return joined(a, b) === null ? 99 : toks.slice(a, b + 1).reduce(function (n, t) { return n + t.t.split("-").length; }, 0); }
-    outer: for (var len = 3; len >= 2; len--) {
+    outer: for (var len = 4; len >= 2; len--) {
       for (var a = Math.max(0, hit - len + 1); a <= hit && a + len - 1 < toks.length; a++) {
         var b = a + len - 1, j = joined(a, b);
-        if (j !== null && syllables(a, b) <= 3 && (dict.meaning[lyricWordKey(j)] || dict.pron[lyricWordKey(j)])) { best = [a, b]; break outer; }
+        if (j !== null && syllables(a, b) <= 5 && (dict.meaning[lyricWordKey(j)] || dict.pron[lyricWordKey(j)])) { best = [a, b]; break outer; }
       }
     }
     return { text: joined(best[0], best[1]) || toks[best[0]].t, rect: rectOf(best[0], best[1]) };
@@ -12264,12 +12266,17 @@ function verifyDistribution(units, dist, pins) {
   document.addEventListener("click", function (e) {
     if (lyricWordPop && e.target.closest && !e.target.closest(".lyric-word-pop")) lyricWordClose();
     if (currentLang !== "ko" || !e.target.closest) return;
-    if (e.target.closest("button, a, input, select, textarea, .speak-btn, .phrase-star, .phrase-del, .curr-link-btn, .jw-link, .dict-link, .reading-btn, .lff-part-head, .group-head, .subtab-btn, .tab-btn")) return;
-    if (e.target.closest(".talk-kr, .reader-tr, .card-translation, .rhyme-word-ex-mean, .rw-gloss, .song-target-row, .lyric-target, .lyric-target-row, .pdf-sent-num")) return;
-    var el = e.target.closest(".lyric-vi, .talk-vi, .reader-vi, .pdf-sent-head, .rhyme-word-ex, .rhyme-word-main, .bilingual-title-vi, .wt-article-vi, .lff-title-vi, .lpd-title-vi, #panel-sentence .vn, #panel-sentence .curr-item-text, [data-sentence='wt'] .vn, [data-vocab='wt'] .vn, #curr-wt-root .vn, #curr-lff-root .vn, #curr-lpd-root .vn");
-    if (!el || (window.getSelection && String(window.getSelection()).length)) return;
+    if (e.target.closest("button, a, input, select, textarea, .speak-btn, .phrase-star, .phrase-del, .curr-link-btn, .jw-link, .dict-link, .reading-btn, .lff-part-head, .group-head, .subtab-btn, .tab-btn, .nav-item, .pill-btn, .btn, .icon-btn")) return;
+    if (e.target.closest(".talk-kr, .reader-tr, .card-translation, .rhyme-word-ex-mean, .rw-gloss, .song-target-row, .lyric-target, .lyric-target-row, .pdf-sent-num, .target-lang, .target-translation, .tr-text, .tr-row")) return;
+    if (window.getSelection && String(window.getSelection()).length) return;
+    var el = e.target.closest(".lyric-vi, .talk-vi, .reader-vi, .pdf-sent-head, .rhyme-word-ex, .rhyme-word-main, .bilingual-title-vi, .wt-article-vi, .lff-title-vi, .lpd-title-vi, .vocab-vi, .word-vi, .term-vi, .example-vi, .curr-item-vi, .curr-text-vi, .curr-title-vi, .curr-item-text, .conv-vi, .dial-vi, .grammar-vi, .grammar-ex-vi, .pattern-vi, .sb-vi, .scripture-vi, .verse-vi, [lang='vi'], .vn, .vietnamese-text") || e.target;
     var word = lyricWordAt(el, e.clientX, e.clientY);
-    if (word) lyricWordShow(word);
+    if (!word) return;
+    var dict = vietWordDictionary(), key = lyricWordKey(word.text);
+    var isLyric = !!(el.closest && el.closest(".lyric-vi"));
+    if (isLyric || (dict && dict.meaning && dict.meaning[key])) {
+      lyricWordShow(word);
+    }
   });
   document.addEventListener("change", function (e) {
     var menu = e.target;
