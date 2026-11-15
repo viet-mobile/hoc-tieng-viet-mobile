@@ -8930,32 +8930,44 @@ function verifyDistribution(units, dist, pins) {
       });
       html += '</div>';
     }
-    // Study groups (조편성): each group's Vietnamese name (fruit of the spirit) has a listen button; the first member leads.
-    if (typeof STUDY_GROUPS !== "undefined" && STUDY_GROUPS.groups && STUDY_GROUPS.groups.length) {
-      html += '<div class="curr-groups"><div class="curr-groups-head">' + (currentLang === "vi" ? "" : escapeHtml(T(STUDY_GROUPS.title))) +
-        '<span class="curr-groups-head-vi vn">' + escapeHtml(STUDY_GROUPS.title.vi) + '</span></div>';
-      var groupNote = T(STUDY_GROUPS.note);
-      if (groupNote) html += '<div class="curr-groups-note">' + escapeHtml(groupNote) + '</div>';
-      STUDY_GROUPS.groups.forEach(function (g, gi) {
+    // Study groups (조편성 / 임시 조편성): each group's Vietnamese name (fruit of the spirit) has a listen button; the first member leads.
+    function renderStudyGroupsBlock(sg) {
+      if (!sg || !sg.groups || !sg.groups.length) return "";
+      var out = '<div class="curr-groups"><div class="curr-groups-head">' + (currentLang === "vi" ? "" : escapeHtml(T(sg.title))) +
+        (sg.title && sg.title.vi ? '<span class="curr-groups-head-vi vn">' + escapeHtml(sg.title.vi) + '</span>' : '') + '</div>';
+      var groupNote = T(sg.note);
+      if (groupNote) out += '<div class="curr-groups-note">' + escapeHtml(groupNote) + '</div>';
+      sg.groups.forEach(function (g, gi) {
         var meaning = T(g.meaning);
-        html += '<div class="curr-group-row"><div class="curr-group-name"><span class="curr-group-num">' + (gi + 1) + '</span>' +
+        var num = g.num != null ? g.num : (gi + 1);
+        out += '<div class="curr-group-row"><div class="curr-group-name"><span class="curr-group-num">' + num + '</span>' +
           '<span class="curr-group-vi vn">' + escapeHtml(g.name) + '</span>' +
           '<button class="speak-btn" data-speak="' + escapeAttr(g.name) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
           (meaning ? '<span class="curr-group-meaning">(' + escapeHtml(meaning) + ')</span>' : '') + '</div><div class="curr-group-members">';
         g.members.forEach(function (m, mi) {
-          html += '<span class="curr-group-member' + (mi === 0 ? ' is-leader' : '') + '"><span class="vn">' + escapeHtml(m[0]) + '</span> ' +
+          out += '<span class="curr-group-member' + (mi === 0 ? ' is-leader' : '') + '"><span class="vn">' + escapeHtml(m[0]) + '</span> ' +
             '<span class="curr-group-ko">(' + escapeHtml(m[1]) + ')</span></span>';
         });
-        html += '</div></div>';
+        out += '</div></div>';
       });
-      var groupNaming = T(STUDY_GROUPS.naming);
-      if (groupNaming) html += '<div class="curr-groups-note">' + escapeHtml(groupNaming) + '</div>';
-      html += '</div>';
+      var groupNaming = T(sg.naming);
+      if (groupNaming) out += '<div class="curr-groups-note">' + escapeHtml(groupNaming) + '</div>';
+      out += '</div>';
+      return out;
+    }
+    if (typeof TEMP_STUDY_GROUPS !== "undefined" && TEMP_STUDY_GROUPS) {
+      (Array.isArray(TEMP_STUDY_GROUPS) ? TEMP_STUDY_GROUPS : [TEMP_STUDY_GROUPS]).forEach(function (sg) { html += renderStudyGroupsBlock(sg); });
+    }
+    if (typeof STUDY_GROUPS !== "undefined" && STUDY_GROUPS) {
+      (Array.isArray(STUDY_GROUPS) ? STUDY_GROUPS : [STUDY_GROUPS]).forEach(function (sg) { html += renderStudyGroupsBlock(sg); });
     }
     // 강사 면담 (JEONJU): who is interviewed after which class (15 minutes); a past date is dimmed, the next one is marked.
     if (typeof INSTRUCTOR_INTERVIEWS !== "undefined" && INSTRUCTOR_INTERVIEWS.slots && INSTRUCTOR_INTERVIEWS.slots.length) {
       var callNames = {};
-      if (typeof STUDY_GROUPS !== "undefined" && STUDY_GROUPS.groups) STUDY_GROUPS.groups.forEach(function (g) { g.members.forEach(function (m) { callNames[m[1]] = m[0]; }); });
+      var allGroupSets = [];
+      if (typeof TEMP_STUDY_GROUPS !== "undefined" && TEMP_STUDY_GROUPS) allGroupSets = allGroupSets.concat(Array.isArray(TEMP_STUDY_GROUPS) ? TEMP_STUDY_GROUPS : [TEMP_STUDY_GROUPS]);
+      if (typeof STUDY_GROUPS !== "undefined" && STUDY_GROUPS) allGroupSets = allGroupSets.concat(Array.isArray(STUDY_GROUPS) ? STUDY_GROUPS : [STUDY_GROUPS]);
+      allGroupSets.forEach(function (sg) { if (sg && sg.groups) sg.groups.forEach(function (g) { g.members.forEach(function (m) { if (!callNames[m[1]]) callNames[m[1]] = m[0]; }); }); });
       var nowD = new Date(), todayIso = nowD.getFullYear() + "-" + ("0" + (nowD.getMonth() + 1)).slice(-2) + "-" + ("0" + nowD.getDate()).slice(-2);
       var nextIso = "";
       INSTRUCTOR_INTERVIEWS.slots.forEach(function (sl) { if (!nextIso && sl.date >= todayIso) nextIso = sl.date; });

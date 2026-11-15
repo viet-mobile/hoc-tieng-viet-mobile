@@ -1031,6 +1031,7 @@ def build_data_js(site):
         parts.append(emit("JEONJU_INFO", jeonju_data.JEONJU_INFO))
         parts.append(emit("JEONJU_WEEKS", getattr(jeonju_data, "JEONJU_WEEKS", [])))
         parts.append(emit("CLASS_ROSTER", jeonju_data.JEONJU_CLASS_ROSTER))
+        parts.append(emit("TEMP_STUDY_GROUPS", getattr(jeonju_data, "JEONJU_TEMP_STUDY_GROUPS", None)))
         parts.append(emit("STUDY_GROUPS", jeonju_data.JEONJU_STUDY_GROUPS))
         parts.append(emit("INSTRUCTOR_INTERVIEWS", jeonju_data.JEONJU_INTERVIEWS))
         parts.append(emit("CULTURE_JW_ARTICLES", jeonju_data.JEONJU_CULTURE_JW_ARTICLES))
