@@ -201,7 +201,7 @@ JEONJU_TEMP_STUDY_GROUPS = {
                 "ko": "오래 참음",
                 "pl": "cierpliwość",
             },
-            "members": [["Duy", "박준우"], ["Huy", "한상현"], ["Dũng", "박철현"]],
+            "members": [["Duy", "박준우"], ["Dũng", "박철현"], ["Huy", "한상현"], ["Du", "한정우"]],
         },
         {
             "num": 5,
@@ -239,7 +239,7 @@ JEONJU_TEMP_STUDY_GROUPS = {
                 "ko": "온화",
                 "pl": "łagodność",
             },
-            "members": [["Trung", "이주복"], ["Pháp", "김종배"], ["Xuân", "최미순"], ["Lý", "송제홍"], ["Du", "한정우"]],
+            "members": [["Trung", "이주복"], ["Pháp", "김종배"], ["Xuân", "최미순"], ["Lý", "송제홍"]],
         },
         {
             "num": 9,
