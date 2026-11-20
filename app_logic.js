@@ -8968,6 +8968,14 @@ function verifyDistribution(units, dist, pins) {
       if (typeof TEMP_STUDY_GROUPS !== "undefined" && TEMP_STUDY_GROUPS) allGroupSets = allGroupSets.concat(Array.isArray(TEMP_STUDY_GROUPS) ? TEMP_STUDY_GROUPS : [TEMP_STUDY_GROUPS]);
       if (typeof STUDY_GROUPS !== "undefined" && STUDY_GROUPS) allGroupSets = allGroupSets.concat(Array.isArray(STUDY_GROUPS) ? STUDY_GROUPS : [STUDY_GROUPS]);
       allGroupSets.forEach(function (sg) { if (sg && sg.groups) sg.groups.forEach(function (g) { g.members.forEach(function (m) { if (!callNames[m[1]]) callNames[m[1]] = m[0]; }); }); });
+      if (typeof CLASS_ROSTER !== "undefined" && CLASS_ROSTER) {
+        CLASS_ROSTER.forEach(function (sec) {
+          if (sec && sec.members) sec.members.forEach(function (m) {
+            var ko = m[0], vn = m[2] ? m[2].replace(/^(anh|chị|em)\s+/i, "") : (m[1] ? m[1].split(" ").pop() : "");
+            if (ko && vn && !callNames[ko]) callNames[ko] = vn;
+          });
+        });
+      }
       var nowD = new Date(), todayIso = nowD.getFullYear() + "-" + ("0" + (nowD.getMonth() + 1)).slice(-2) + "-" + ("0" + nowD.getDate()).slice(-2);
       var nextIso = "";
       INSTRUCTOR_INTERVIEWS.slots.forEach(function (sl) { if (!nextIso && sl.date >= todayIso) nextIso = sl.date; });

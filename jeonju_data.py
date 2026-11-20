@@ -287,9 +287,9 @@ JEONJU_STUDY_GROUPS = {
 
 
 # 강사 면담 (instructor interviews): 15 minutes after the class, in this order of the listed names (one line
-# per class). Past dates are removed. No interview on cancelled class days or graduation day (2027-02-20).
+# per class). Past dates are removed. No interview on cancelled class days, 2027-01-30, or graduation day (2027-02-20).
 _INTERVIEW_FROM = "2026-11-21"
-_INTERVIEW_SKIP = {"2026-10-31", "2027-02-20"}
+_INTERVIEW_SKIP = {"2026-10-31", "2027-01-30", "2027-02-20"}
 _INTERVIEW_ORDER = [
     ["이서희"],
     ["이수연", "최영주"],
@@ -299,8 +299,7 @@ _INTERVIEW_ORDER = [
     ["박철현"],
     ["한상현"],
     ["송제홍"],
-    ["김동주"],
-    ["김영임"],
+    ["김동주", "쩐응옥마이", "김종현", "김영임"],
 ]
 
 
@@ -337,18 +336,18 @@ JEONJU_INTERVIEWS = {
         "pl": "Rozmowy z wykładowcą",
     },
     "note": {
-        "vi": "Mỗi tuần sau buổi học, kéo dài 15 phút. (Không có buổi gặp vào những ngày nghỉ học và ngày 20/02.)",
-        "cs": "Koná se 15 minut po každé hodině. (Ve dnech volna a 20. února se pohovory nekonají.)",
-        "zh_cn": "每周课后进行15分钟。（停课日及2月20日无面谈。）",
-        "zh": "每週課後進行15分鐘。（停課日及2月20日無面談。）",
-        "en": "Held for 15 minutes after each class. (No interviews on cancelled class days and February 20.)",
-        "fr": "Se déroule pendant 15 minutes après chaque cours. (Pas d'entretiens les jours sans cours et le 20 février.)",
-        "de": "Findet 15 Minuten nach jedem Unterricht statt. (An unterrichtsfreien Tagen und am 20. Februar finden keine Gespräche statt.)",
-        "hu": "Minden óra után 15 percig tart. (Szünetnapokon és február 20-án nincs beszélgetés.)",
-        "id": "Berlangsung selama 15 menit setelah setiap kelas. (Tidak ada wawancara pada hari libur dan 20 Februari.)",
-        "ja": "毎週の授業終了後15分間行われます。（休講日および2月20日には面談はありません。）",
-        "ko": "매주 수업을 마치고 15분간 진행합니다. (휴강일과 2월 20일에는 면담이 없습니다.)",
-        "pl": "Odbywa się przez 15 minut po każdych zajęciach. (W dni wolne od zajęć oraz 20 lutego rozmowy nie odbywają się.)",
+        "vi": "Mỗi tuần sau buổi học, kéo dài 15 phút. (Không có buổi gặp vào những ngày nghỉ học, ngày 30/01 và 20/02.)",
+        "cs": "Koná se 15 minut po každé hodině. (Ve dnech volna, 30. ledna a 20. února se pohovory nekonají.)",
+        "zh_cn": "每周课后进行15分钟。（停课日、1月30日及2月20日无面谈。）",
+        "zh": "每週課後進行15分鐘。（停課日、1月30日及2月20日無面談。）",
+        "en": "Held for 15 minutes after each class. (No interviews on cancelled class days, January 30, and February 20.)",
+        "fr": "Se déroule pendant 15 minutes après chaque cours. (Pas d'entretiens les jours sans cours, le 30 janvier et le 20 février.)",
+        "de": "Findet 15 Minuten nach jedem Unterricht statt. (An unterrichtsfreien Tagen, am 30. Januar und am 20. Februar finden keine Gespräche statt.)",
+        "hu": "Minden óra után 15 percig tart. (Szünetnapokon, január 30-án és február 20-án nincs beszélgetés.)",
+        "id": "Berlangsung selama 15 menit setelah setiap kelas. (Tidak ada wawancara pada hari libur, 30 Januari, dan 20 Februari.)",
+        "ja": "毎週の授業終了後15分間行われます。（休講日、1月30日および2月20日には面談はありません。）",
+        "ko": "매주 수업을 마치고 15분간 진행합니다. (휴강일, 1월 30일, 2월 20일에는 면담이 없습니다.)",
+        "pl": "Odbywa się przez 15 minut po każdych zajęciach. (W dni wolne od zajęć, 30 stycznia oraz 20 lutego rozmowy nie odbywają się.)",
     },
     "slots": [{"date": d, "members": m} for d, m in zip(_INTERVIEW_DATES, _INTERVIEW_ORDER)],
 }
