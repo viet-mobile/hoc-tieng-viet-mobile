@@ -452,7 +452,13 @@
   function ownerLabel(k, unit) {
     if (k === 'circuit') return LANG === 'vi' ? 'Giám thị vòng quanh' : '순회감독자';
     var ins = GUIDE && GUIDE.instructors, l = ins && ins[k] ? instrText(ins[k].label) : k;
-    if (k === 'assist' && unit && unit.assistant) l = l.replace(/Mai/, unit.assistant);
+    if (k === 'assist' && unit && unit.assistant) {
+      if (unit.assistant === 'A 강사') {
+        l = LANG === 'vi' ? 'Trợ giảng GV A' : '보조자 A 강사';
+      } else {
+        l = l.replace(/Mai/, unit.assistant);
+      }
+    }
     return l;
   }
   function ownerShort(k) {
@@ -503,7 +509,11 @@
       return '<span class="guide-post guide-post-' + k + '">' + POSTURE_ICON[k] + ' ' + esc(postureLabel(k)) + ' ' + fmtMin(by[k]) + esc(tr('분')) + '</span>';
     }).join(' ');
     var subs = cs && cs.assistantSubstitute, subNote = '';
-    if (subs && u.assistant) subNote = '<p class="guide-time-note">' + esc((ins.assist.substitute || {})[LANG === 'vi' ? 'vi' : 'ko'].replace('{date}', u.date)) + '</p>';
+    if (subs && u.assistant) {
+      var subObj = (u.assistant === 'A 강사' && ins.assist.substituteA) ? ins.assist.substituteA : (ins.assist.substitute || {});
+      var subTpl = subObj[LANG === 'vi' ? 'vi' : 'ko'] || '';
+      subNote = '<p class="guide-time-note">' + esc(subTpl.replace('{date}', u.date)) + '</p>';
+    }
     return guideInstructorLegend() + ((u.classNote || (cs && cs.note)) ? '<p class="guide-time-note">' + esc(instrText(u.classNote || cs.note)) + '</p>' : '') + subNote +
       '<div class="guide-label">예상 시간 배분 (2시간 기준, 분)</div>' +
       '<div class="guide-post-sum">' + sum + '</div>' +

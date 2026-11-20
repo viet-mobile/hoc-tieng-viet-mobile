@@ -7215,12 +7215,41 @@
     cont: { ko: "(이어서)", vi: "(tiếp)", en: "(continued)" },
     owners: {
       circuit: { vi: "Giám thị vòng quanh", cs: "Krajský dozorce", zh_cn: "分区监督员", zh: "分區監督員", en: "Circuit overseer", fr: "Surveillant de circonscription", de: "Kreisaufseher", hu: "Körzetfelvigyázó", id: "Pengawas wilayah", ja: "巡回監督", ko: "순회감독자", pl: "Nadzorca obwodu" },
-      A: { ko: "A 강사", vi: "GV A", en: "Instr. A" }, B: { ko: "B 강사", vi: "GV B", en: "Instr. B" },
-      assist: { ko: "보조자", vi: "Trợ giảng", en: "Assistant" }, group: { ko: "조별 활동", vi: "Hoạt động nhóm", en: "Group activity" }
+      A: { vi: "GV A", cs: "Lektor A", zh_cn: "A导师", zh: "A導師", en: "Instr. A", fr: "Ens. A", de: "Dozent A", hu: "A oktató", id: "Pengajar A", ja: "A講師", ko: "A 강사", pl: "Wykładowca A" },
+      B: { vi: "GV B", cs: "Lektor B", zh_cn: "B导师", zh: "B導師", en: "Instr. B", fr: "Ens. B", de: "Dozent B", hu: "B oktató", id: "Pengajar B", ja: "B講師", ko: "B 강사", pl: "Wykładowca B" },
+      assist: { vi: "Trợ giảng", cs: "Asistent", zh_cn: "助教", zh: "助教", en: "Assistant", fr: "Assistant", de: "Assistent", hu: "Asszisztens", id: "Asisten", ja: "アシスタント", ko: "보조자", pl: "Asystent" },
+      group: { vi: "Hoạt động nhóm", cs: "Skupinová aktivita", zh_cn: "分组活动", zh: "分組活動", en: "Group activity", fr: "Activité de groupe", de: "Gruppenaktivität", hu: "Csoportos tevékenység", id: "Aktivitas kelompok", ja: "グループ活動", ko: "조별 활동", pl: "Aktywność grupowa" }
     },
     sec: { ko: "초", vi: " giây", en: " s" },
     ex5: { ko: "#5 교육용 운동", vi: "#5 Vận động học tập", en: "#5 Educational exercise" },
-    substitute: { ko: "{date}에는 Mai 자매 대신 {name} 형제가 읽습니다.", vi: "Ngày {date}, anh {name} đọc thay chị Mai.", en: "On {date}, {name} reads instead of Mai." }
+    substitute: {
+      vi: "Ngày {date}, anh {name} đọc thay chị Mai.",
+      cs: "Dne {date} bratr {name} čte místo sestry Mai.",
+      zh_cn: "{date}由{name}弟兄代替Mai姊妹朗读。",
+      zh: "{date}由{name}弟兄代替Mai姊妹朗讀。",
+      en: "On {date}, Brother {name} reads instead of Sister Mai.",
+      fr: "Le {date}, frère {name} lit à la place de sœur Mai.",
+      de: "Am {date} liest Bruder {name} anstelle von Schwester Mai.",
+      hu: "{date}-n {name} testvér olvas fel Mai testvérnő helyett.",
+      id: "Pada {date}, Saudara {name} membaca menggantikan Saudari Mai.",
+      ja: "{date}はマイ姉妹の代わりに{name}兄弟が朗読します。",
+      ko: "{date}에는 Mai 자매 대신 {name} 형제가 읽습니다.",
+      pl: "W dniu {date} brat {name} czyta zamiast siostry Mai."
+    },
+    substituteA: {
+      vi: "Ngày {date}, do trợ giảng chị Mai vắng mặt nên giảng viên A dạy thay.",
+      cs: "Dne {date} z důvodu nepřítomnosti asistentky sestry Mai zastupuje lektor A.",
+      zh_cn: "{date}因助教Mai姊妹缺席，由A导师代课。",
+      zh: "{date}因助教Mai姊妹缺席，由A導師代課。",
+      en: "On {date}, Instructor A substitutes due to the absence of assistant Mai.",
+      fr: "Le {date}, en raison de l'absence de l'assistante sœur Mai, l'enseignant A la remplace.",
+      de: "Am {date} vertritt Dozent A wegen der Abwesenheit von Assistentin Schwester Mai.",
+      hu: "{date}-n Mai testvérnő hiányzása miatt A oktató helyettesít.",
+      id: "Pada {date}, Pengajar A menggantikan karena asisten Saudari Mai berhalangan hadir.",
+      ja: "{date}はアシスタントのマイ姉妹が欠席のため、A講師が代講します。",
+      ko: "{date}에는 보조자 Mai 자매 불참으로 A 강사가 대신합니다.",
+      pl: "W dniu {date} z powodu nieobecności asystentki siostry Mai zastępuje wykładowca A."
+    }
   };
   // The number review and the Bible-book review are done with the #5 balloon exercise.
   var COURSE_PLAN_EX5 = /^베트남어 숫자 복습$|성경 책명 읽기 연습 \d \([^)]*\) 복습$/;
@@ -7263,7 +7292,7 @@
     var ins = JEONJU_TEACHING_GUIDE.instructors || null, st = JEONJU_TEACHING_GUIDE.structure || {}, posts = st.postures || {};
     var min = gt(COURSE_PLAN_LABELS.minutes);
     var tot = { A: 0, B: 0, assist: 0, group: 0, circuit: 0 }, brk = 0, clock = 0, by = {};
-    var sec = gt(COURSE_PLAN_LABELS.sec), helper = g.assistant || "Mai";
+    var sec = gt(COURSE_PLAN_LABELS.sec), helper = (g.assistant === "A 강사" || (g.assistant && g.assistant.ko === "A 강사")) ? gt(COURSE_PLAN_LABELS.owners.A) : (g.assistant || "Mai");
     function ownerName(o) { return o === "assist" ? gt(COURSE_PLAN_LABELS.owners.assist) + " " + helper : gt(COURSE_PLAN_LABELS.owners[o]); }
     var rows = g.plan.map(function (p) {
       var start = clock; clock += p[1];
@@ -7345,9 +7374,13 @@
     }).join(' \u00B7 ') + '</div>' : '';
     var subs = (st.assistantSubstitute || {}), subNote = "";
     Object.keys(subs).forEach(function (d) {
-      if (g.assistant && subs[d] === g.assistant) {
+      if (g.assistant && (subs[d] === g.assistant || (typeof subs[d] === "object" && subs[d].ko === g.assistant))) {
         var dm = d.split("-"), dateText = currentLang === "ko" ? Number(dm[1]) + "월 " + Number(dm[2]) + "일" : Number(dm[2]) + "/" + Number(dm[1]);
-        subNote = '<p class="curr-plan-note">' + escapeHtml(gt(COURSE_PLAN_LABELS.substitute).replace("{date}", dateText).replace("{name}", g.assistant)) + '</p>';
+        if (g.assistant === "A 강사" || (typeof g.assistant === "object" && g.assistant.ko === "A 강사")) {
+          subNote = '<p class="curr-plan-note">' + escapeHtml(gt(COURSE_PLAN_LABELS.substituteA).replace("{date}", dateText)) + '</p>';
+        } else {
+          subNote = '<p class="curr-plan-note">' + escapeHtml(gt(COURSE_PLAN_LABELS.substitute).replace("{date}", dateText).replace("{name}", helper)) + '</p>';
+        }
       }
     });
     return '<details class="curr-plan curr-plan-fixed" open><summary><span class="curr-plan-title">' + escapeHtml(gt(COURSE_PLAN_LABELS.title)) + '</span> ' + who + '</summary>' +

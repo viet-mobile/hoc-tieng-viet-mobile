@@ -70,7 +70,7 @@ for u in guide['units']:
         assert names[1] == '베트남어 발음 – 자음, 모음 복습' and u['timePlan'][1][1:3] == [5, 'group']
         assert dict((p[0], p[1:3]) for p in u['timePlan'])['베트남어 숫자 복습'] == [7, 'B']
         assert dict((p[0], p[1:3]) for p in u['timePlan'])['베트남어 성경 책명 읽기 연습 1 (창세기-시편) 복습'] == [7, 'A']
-    assert u.get('assistant') == ('Bình' if u['date'] == '2026-11-15' else None)
+    assert u.get('assistant') == ('Bình' if u['date'] == '2026-11-15' else ('A 강사' if u['date'] == '2026-11-21' else None))
 assert [has_rhyme(1, i) for i in range(5)] == [True] * 5 and [has_rhyme(2, i) for i in range(5)] == [True] * 5
 last = guide['units'][-1]['timePlan']
 assert next(p for p in last if p[0].startswith('파수대 집회 실연'))[1] == 60

@@ -27,7 +27,7 @@ DAYS = ("월요일", "화요일", "수요일", "목요일", "금요일")
 FIXED_MIN = {OPEN: 4, CLOSE: 4, HOMEWORK: 5, MINGLE: 10, BREAK: 10}
 RHYME_BLOCK, OTHER_BLOCK, WT_BLOCK = 6.5, 4.5, 1.5
 ASSISTANT = "Mai"
-ASSISTANT_SUBSTITUTE = {"2026-11-15": "Bình"}   # date -> who reads in the assistant's place
+ASSISTANT_SUBSTITUTE = {"2026-11-15": "Bình", "2026-11-21": "A 강사"}   # date -> who reads in the assistant's place
 RHYME_WORDS, EARLY_CLASSES, EARLY_QUOTA = 316, 4, 170   # [어휘] stream starts with the 316 한자음 words (course_vocab_plan)
 
 LEADER_PARTS = ()                               # every vocabulary block is read by Mai (Bình) and every Watchtower block by B
@@ -286,7 +286,8 @@ INSTRUCTORS = {
                "profile": {"ko": "베트남 원어민 보조자", "vi": "Trợ giảng người Việt bản ngữ"},
                "strengths": {"ko": "모든(월~금) 베트남어 어휘 학습과 성경 책명 읽기 연습에서 각 단어(책명)를 3번씩 읽어 줍니다",
                              "vi": "Đọc mỗi từ (tên sách) 3 lần trong tất cả các phần học từ vựng (thứ Hai đến thứ Sáu) và luyện đọc tên sách Kinh Thánh"},
-               "substitute": {"ko": "{date}에는 Mai 자매 대신 Bình 형제가 읽습니다.", "vi": "Ngày {date}, anh Bình đọc thay chị Mai."}},
+               "substitute": {"ko": "{date}에는 Mai 자매 대신 Bình 형제가 읽습니다.", "vi": "Ngày {date}, anh Bình đọc thay chị Mai."},
+               "substituteA": {"ko": "{date}에는 보조자 Mai 자매 불참으로 A 강사가 대신합니다.", "vi": "Ngày {date}, do trợ giảng chị Mai vắng mặt nên giảng viên A dạy thay."}},
     "group": {"label": {"ko": "조별 활동", "vi": "Hoạt động nhóm", "en": "Group activity"},
               "short": {"ko": "조장이 조원을 개별적으로 도와준다", "vi": "tổ trưởng giúp từng thành viên trong nhóm", "en": "group leaders help their members one by one"},
               "profile": {"ko": "학습자 조별 활동", "vi": "Học viên hoạt động theo nhóm"},
