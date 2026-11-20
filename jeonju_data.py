@@ -286,14 +286,21 @@ JEONJU_STUDY_GROUPS = {
 }
 
 
-# 강사 면담 (instructor interviews): every class from 2026-10-17, 15 minutes after the class, in this order of the listed names (one line
-# per class). No interview on 2026-10-31 or on a cancelled class day; a moved class (JEONJU_RESCHEDULES) keeps its interview on the new
-# date. The dates follow the class calendar above, so a changed cancellation / move shows up here by editing those lists only.
-_INTERVIEW_FROM = "2026-10-17"
-_INTERVIEW_SKIP = {"2026-10-31"}
+# 강사 면담 (instructor interviews): 15 minutes after the class, in this order of the listed names (one line
+# per class). Past dates are removed. No interview on cancelled class days or graduation day (2027-02-20).
+_INTERVIEW_FROM = "2026-11-21"
+_INTERVIEW_SKIP = {"2026-10-31", "2027-02-20"}
 _INTERVIEW_ORDER = [
-    ["김종배", "최미순"], ["이종명", "이주옥", "이제희", "이제아"], ["한도희", "서주연", "한정우"], ["이서희"],
-    ["이수연"], ["최영주"], ["박정환", "원혜진", "박유나"], ["유계화"], ["박철현"], ["한상현"], ["송제홍"], ["김동주"], ["김영임"], ["김재윤", "오호경"],
+    ["이서희"],
+    ["이수연", "최영주"],
+    ["김종배", "최미순", "김재윤", "오호경"],
+    ["박정환", "원혜진", "박유나"],
+    ["유계화"],
+    ["박철현"],
+    ["한상현"],
+    ["송제홍"],
+    ["김동주"],
+    ["김영임"],
 ]
 
 
@@ -315,10 +322,34 @@ def _interview_dates():
 _INTERVIEW_DATES = _interview_dates()
 assert len(_INTERVIEW_DATES) == len(_INTERVIEW_ORDER), (len(_INTERVIEW_DATES), len(_INTERVIEW_ORDER))
 JEONJU_INTERVIEWS = {
-    "title": {"ko": "강사 면담", "vi": "Gặp riêng giảng viên", "en": "Instructor interviews"},
-    "note": {"ko": "매주 수업을 마치고 15분간 진행합니다. (10월 31일과 휴강일에는 면담이 없습니다.)",
-             "vi": "Mỗi tuần sau buổi học, kéo dài 15 phút. (Không có buổi gặp vào ngày 31/10 và những ngày nghỉ học.)",
-             "en": "Held for 15 minutes after each class. (No interviews on October 31 or on cancelled class days.)"},
+    "title": {
+        "vi": "Gặp riêng giảng viên",
+        "cs": "Rozhovory s lektorem",
+        "zh_cn": "导师面谈",
+        "zh": "導師面談",
+        "en": "Instructor interviews",
+        "fr": "Entretiens avec l'enseignant",
+        "de": "Dozentengespräche",
+        "hu": "Oktatói megbeszélések",
+        "id": "Wawancara pengajar",
+        "ja": "講師面談",
+        "ko": "강사 면담",
+        "pl": "Rozmowy z wykładowcą",
+    },
+    "note": {
+        "vi": "Mỗi tuần sau buổi học, kéo dài 15 phút. (Không có buổi gặp vào những ngày nghỉ học và ngày 20/02.)",
+        "cs": "Koná se 15 minut po každé hodině. (Ve dnech volna a 20. února se pohovory nekonají.)",
+        "zh_cn": "每周课后进行15分钟。（停课日及2月20日无面谈。）",
+        "zh": "每週課後進行15分鐘。（停課日及2月20日無面談。）",
+        "en": "Held for 15 minutes after each class. (No interviews on cancelled class days and February 20.)",
+        "fr": "Se déroule pendant 15 minutes après chaque cours. (Pas d'entretiens les jours sans cours et le 20 février.)",
+        "de": "Findet 15 Minuten nach jedem Unterricht statt. (An unterrichtsfreien Tagen und am 20. Februar finden keine Gespräche statt.)",
+        "hu": "Minden óra után 15 percig tart. (Szünetnapokon és február 20-án nincs beszélgetés.)",
+        "id": "Berlangsung selama 15 menit setelah setiap kelas. (Tidak ada wawancara pada hari libur dan 20 Februari.)",
+        "ja": "毎週の授業終了後15分間行われます。（休講日および2月20日には面談はありません。）",
+        "ko": "매주 수업을 마치고 15분간 진행합니다. (휴강일과 2월 20일에는 면담이 없습니다.)",
+        "pl": "Odbywa się przez 15 minut po każdych zajęciach. (W dni wolne od zajęć oraz 20 lutego rozmowy nie odbywają się.)",
+    },
     "slots": [{"date": d, "members": m} for d, m in zip(_INTERVIEW_DATES, _INTERVIEW_ORDER)],
 }
 
