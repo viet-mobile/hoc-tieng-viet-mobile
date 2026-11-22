@@ -41,12 +41,17 @@ assert.strictEqual(w('Bết-lê-hem', 'saigon'), '벅레햄', 'closed ê in a na
 assert.strictEqual(w('ngoan', 'saigon'), '응왕ㄴ', 'Saigon ngoan = ㅘ after ng (final -n is ㅇㄴ there)');
 assert.strictEqual(w('toán', 'saigon'), '또앙ㄴ', 'Saigon oa before a final = ㅗ아');
 assert.strictEqual(w('xin', 'saigon'), '씽ㄴ', 'Saigon x- = ㅆ (final -n is ㅇㄴ there)');
+// Saigon: -inh is pronounced [-은] (bình 븐, minh 믄, kinh 끈)
+for (const [word, ko] of [['bình', '븐'], ['minh', '믄'], ['kinh', '끈'], ['Kinh Thánh', '끈 탄'], ['chính', '쯘'], ['linh', '른'], ['sinh', '슨']]) {
+  assert.strictEqual(w(word, 'saigon'), ko, 'Saigon -inh: ' + word);
+}
 assert.strictEqual(s('xyz'), '', 'not a Vietnamese syllable');
 // the meanings set for lyric words
 const m = /var LYRIC_WORD_MEANINGS = \{([\s\S]*?)\n  \};/.exec(src);
 assert(m, 'LYRIC_WORD_MEANINGS found');
 const table = new Function('return {' + m[1] + '}')();
-assert.strictEqual(Object.keys(table).length, 83, 'all 83 words');
+assert.strictEqual(Object.keys(table).length, 84, 'all 84 words');
+assert.strictEqual(table['ra'], '밖으로');
 assert.strictEqual(table['phán quyết'], '판결');
 assert.strictEqual(table['phán'], '(높은 분이) 말씀하시다');
 assert.strictEqual(table['làn gió'], '돌풍');

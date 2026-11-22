@@ -6539,7 +6539,7 @@
     var h = '<p class="p-desc">' + city + ' 발음에 가장 가까운 한국어 표기를 나타낸 표입니다(IPA 병기). 글자를 눌러 소리를 들어 보세요.</p>';
     // two tables side by side: [자음 over 받침] on the left, [모음] on the right
     h += '<div class="hanoi-grid"><div class="hanoi-col">';
-    h += '<table class="hanoi-table"><thead><tr><th>베트남어 자음</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
+    h += '<table class="hanoi-table"><thead><tr><th>베트남어 자음</th><th>' + city + ' 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
     chart.initials.forEach(function (g) {
       g.letters.forEach(function (l, i) {
         h += '<tr><td class="hanoi-letter vn' + tone(l[1]) + '">' + escapeHtml(l[0]) + btn(l[0].replace(/-$/, "") + "ơ") + '</td>' +
@@ -6549,20 +6549,21 @@
       });
     });
     h += '</tbody></table>';
-    h += '<table class="hanoi-table"><thead><tr><th>베트남어 받침</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
+    var finalColHeader = city === "사이공" ? "사이공 발음에 가장 가까운 한국어 받침 표기" : (city + " 발음에 가장 가까운 한국어 표기");
+    h += '<table class="hanoi-table"><thead><tr><th>베트남어 받침</th><th>' + finalColHeader + '</th></tr></thead><tbody>';
     chart.finals.forEach(function (f) {
       h += '<tr><td class="hanoi-letter vn">' + escapeHtml(f[0]) + '</td><td class="hanoi-ko">' + escapeHtml(f[1]) + finalIpa(f) +
         (f[2] ? '<small class="hanoi-final-note">' + escapeHtml(f[2]) + '</small>' : '') + '</td></tr>';
     });
     h += '</tbody></table></div><div class="hanoi-col">';
-    h += '<table class="hanoi-table"><thead><tr><th>베트남어 모음</th><th>하노이 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
+    h += '<table class="hanoi-table"><thead><tr><th>베트남어 모음</th><th>' + city + ' 발음에 가장 가까운 한국어 표기</th></tr></thead><tbody>';
     chart.vowels.forEach(function (v) {
       h += '<tr class="hanoi-vrow' + tone(v[1]) + '"><td class="hanoi-letter vn">' + escapeHtml(v[0]) + btn(v[0]) + '</td><td class="hanoi-ko">' +
         hanoiVowelParts(v[2]) + vowelIpa(v) + '</td></tr>';
     });
     h += '</tbody></table></div></div>';
     if (chart.footnote) h += '<p class="p-desc hanoi-footnote">' + escapeHtml(chart.footnote) + '</p>';
-    return h.replace(/하노이 발음에 가장 가까운 한국어 표기/g, city + ' 발음에 가장 가까운 한국어 표기');
+    return h;
   }
   function hanoiSaigonExamplesHtml() {
     function btn(speak) { return '<button class="speak-btn" data-speak="' + escapeAttr(speak) + '">' + speakIcon() + '</button>'; }
@@ -11985,6 +11986,7 @@ function verifyDistribution(units, dist, pins) {
     if (south && main === "ia") J = ["ㅣ", "ㅏ"];
     if (main === "oa" && (fin || nm[2]) && initial !== "ng" && initial !== "ngh") J = ["ㅗ", "ㅏ"];   // oa before a final or a vowel = ㅗ아; open oa, or after ng = ㅘ (oă: ㅘ)
     if (south && main === "ê") J = fin ? ["ㅓ"] : foreign ? ["ㅔ"] : ["ㅔ", "ㅣ"];   // Saigon: open ê = ㅔ이, but ㅔ in a foreign name (Giê-hô-va 예호야)
+    if (south && main === "i" && fin === "nh") J = ["ㅡ"];   // Saigon: -inh is pronounced [-은] (bình -> 븐, minh -> 믄, kinh -> 끈)
     // The chart describes â as between ㅏ and ㅓ; Hangul has no intermediate vowel.
     var round = /^(?:[oôu]|uô)$/.test(main);   // uô ends in ô: -uôc / -uông close the lips too
     var jong = "", extra = "";

@@ -22,3 +22,7 @@ print("hanoi / saigon chart: uô = ㅜ오")
 ê = {row[0]: row[2] for row in SAIGON_CHART["vowels"]}["ê"]
 assert ["ㅔ이", 0] in ê and any("외국어 인명" in part[0] and "Giê-hô-va 예호야" in part[0] for part in ê), ê
 print("saigon chart: open ê = ㅔ이, foreign names ㅔ (summary on the ê row)")
+saigon_finals = {row[0]: row for row in SAIGON_CHART["finals"]}
+assert saigon_finals["-nh"][1] == "-ㄴ", saigon_finals["-nh"]
+assert len(saigon_finals["-nh"]) > 2 and saigon_finals["-nh"][2] == "(-inh는 [-은]에 가깝게 발음)", saigon_finals["-nh"]
+print("saigon chart: -nh = -ㄴ with note (-inh는 [-은]에 가깝게 발음)")
