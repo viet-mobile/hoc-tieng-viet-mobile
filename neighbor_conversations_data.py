@@ -297,7 +297,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '제가 그런 질문을 한 건 시편 37:29에 이런 내용이 나오기 때문인데요, 이 구절을 한번 읽어 주시겠습니까?',
              'pl': 'Chciałbym panu pokazać, co mówi Psalm 37:29. Mógłby pan przeczytać ten fragment?'},
             {'who': 'HOUSEHOLDER',
-             'vi': 'Được. “Người công-bình sẽ nhận được đất, và ở tại đó đời đời”.',
+             'vi': 'Được. “Người công chính sẽ hưởng trái đất và được sống trên đó mãi mãi”.',
              'cs': 'Dobře. „Spravedliví budou vlastnit zemi a budou na ní přebývat navždy.“',
              'zh_cn': '行。这里说：“义人必得着大地，永远在地上安居。”',
              'zh': '行。這裡說：「義人必得著大地，永遠在地上安居。」',
@@ -715,8 +715,8 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Wcześniej czytaliśmy już Psalm 37, werset 29. A teraz popatrzmy na wersety 10 i 11. Czy mógłby pan '
                    'przeczytać?'},
             {'who': 'HOUSEHOLDER',
-             'vi': '“Một chút nữa kẻ ác không còn. Ngươi sẽ xem-xét chỗ hắn, thật không còn nữa. Song người hiền-từ sẽ '
-                   'nhận được đất làm cơ-nghiệp, và được khoái-lạc về bình-yên dư-dật”.',
+             'vi': '“Ít lâu nữa, kẻ ác sẽ không còn; xem chỗ chúng, sẽ chẳng thấy chúng đâu. Nhưng người khiêm hòa sẽ '
+                   'được hưởng trái đất, sẽ hoan hỉ trong bình an dư dật”.',
              'cs': 'Určitě. „A ještě chvilku, a ničemný již nebude; a jistě budeš věnovat pozornost jeho místu, a on '
                    'nebude. Ale mírní, ti budou vlastnit zemi a vskutku naleznou své největší potěšení v hojnosti '
                    'pokoje.“',
@@ -757,8 +757,8 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '고맙습니다. 11절을 보면, “온유한 자들” 즉 선한 사람들은 어디에서 살게 되나요?',
              'pl': 'Dziękuję. Proszę spojrzeć na werset 11. Gdzie będą żyć potulni, czyli dobrzy ludzie?'},
             {'who': 'HOUSEHOLDER',
-             'vi': 'Ở đây nói là họ “sẽ nhận được đất làm cơ-nghiệp”. Nhưng tôi thấy là câu này áp dụng ngay bây giờ, '
-                   'tại vì thời nay vẫn có người tốt sống trên đất mà.',
+             'vi': 'Ở đây nói là họ “sẽ được hưởng trái đất”. Nhưng tôi thấy là câu này áp dụng ngay bây giờ, tại vì '
+                   'thời nay vẫn có người tốt sống trên đất mà.',
              'cs': 'Říká se tady, že „budou vlastnit zemi“. Já si ale myslím, že tento verš se týká současnosti, '
                    'protože na zemi přece žijí dobří lidé.',
              'zh_cn': '经文说，他们“必得着大地”。可是，我觉得这节经文谈的是现在。今天不是也有好人在地上生活吗？',
@@ -5253,8 +5253,8 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Popatrzmy teraz, co Bóg powiedział, gdy Adam i Ewa zgrzeszyli. Czy mógłby pan przeczytać Księgę '
                    'Rodzaju 3:19?'},
             {'who': 'HOUSEHOLDER',
-             'vi': 'Được. “Ngươi sẽ làm đổ mồ-hôi trán mới có mà ăn, cho đến ngày nào ngươi trở về đất, là nơi mà có '
-                   'ngươi ra; vì ngươi là bụi, ngươi sẽ trở về bụi”.',
+             'vi': 'Được. “Con phải làm đổ mồ hôi trán mới có miếng ăn, cho đến khi con trở về đất, vì con từ đó mà '
+                   'ra. Con là bụi đất, con sẽ trở về bụi đất”.',
              'cs': 'Určitě. Je tady: „V potu své tváře budeš jíst chléb, dokud se nevrátíš do zemské půdy, neboť z ní '
                    'jsi byl vzat. Jsi totiž prach a do prachu se vrátíš.“',
              'zh_cn': '好的。这里说：“你必汗流满面才有食物吃，直到你归了土，因为你是出于土的。你既是尘土，就要归回尘土。”',
@@ -5787,7 +5787,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
                    'chciałbym pokazać panu jeszcze jeden werset, który to potwierdza — Psalm 37:9. Czy zechciałby pan '
                    'go przeczytać?'},
             {'who': 'HOUSEHOLDER',
-             'vi': 'Được. “Những kẻ làm ác sẽ bị diệt; còn kẻ nào trông-đợi Đức Giê-hô-va sẽ được đất làm cơ-nghiệp”.',
+             'vi': 'Được. “Bởi kẻ dữ rồi sẽ bị diệt mất, còn ai trông cậy Đức Giê-hô-va sẽ được hưởng trái đất”.',
              'cs': 'Ano, píše se tady: „Zločinci budou odříznuti, ale ti, kdo doufají v Jehovu, ti budou vlastnit '
                    'zemi.“',
              'zh_cn': '可以。这里说：“作恶的人必被剪除，仰望耶和华的人却必得着大地。”',
@@ -5831,7 +5831,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '그들을 끊어 버리실 거라고 했네요.',
              'pl': 'Tu powiedziano, że zostaną wytraceni.'},
             {'who': 'PUBLISHER',
-             'vi': 'Đúng thế. Ngài sẽ hủy diệt họ vĩnh viễn. Nhưng người tốt, tức những người “trông-đợi Đức '
+             'vi': 'Đúng thế. Ngài sẽ hủy diệt họ vĩnh viễn. Nhưng người tốt, tức những người “trông cậy Đức '
                    'Giê-hô-va”, sẽ vui hưởng đời sống mãi mãi ngay trên trái đất này. Chắc điều này sẽ khiến anh có '
                    'nhiều thắc mắc. Chẳng hạn như tại sao Đức Chúa Trời không cản người ta làm điều ác ngay từ đầu? '
                    'Hoặc nếu ngài thật sự có ý định trừng phạt người ác thì tại sao ngài chưa làm?',
@@ -7520,8 +7520,8 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '한 가지 예를 보여 드릴게요. 탈출기 3:7인데 좀 읽어 주시겠어요?',
              'pl': 'Dziękuję. Czy zgodnie z tymi słowami Bóg zauważa nasze cierpienia?'},
             {'who': 'HOUSEHOLDER',
-             'vi': 'Ở đây nói: “Đức Giê-hô-va phán rằng: Ta đã thấy rõ-ràng sự cực-khổ của dân ta tại xứ Ê-díp-tô, và '
-                   'có nghe thấu tiếng kêu-rêu vì cớ người đốc-công của nó; phải, ta biết được nỗi đau-đớn của nó”.',
+             'vi': 'Ở đây nói: “Đức Giê-hô-va nói tiếp: ‘Ta thật đã thấy sự khốn khổ của dân ta tại xứ Ai Cập và nghe '
+                   'tiếng kêu than vì cớ những kẻ ép họ làm lao dịch, ta hiểu rõ nỗi đau đớn họ phải chịu’”.',
              'cs': 'No to ne.',
              'zh_cn': '应该不是的。',
              'zh': '好的。「耶和華說：『我的子民在埃及的苦況，我實在看見了；他們在監工手下發出的呼號，我也聽見了。我清楚知道他們所受的痛苦。』」',
@@ -7572,8 +7572,8 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Raczej nie.'},
             {'who': 'PUBLISHER',
              'vi': 'Và ngài không chỉ thấy những điều xảy ra. Hãy xem lại phần cuối của câu. Đức Chúa Trời nói: “Ta '
-                   'biết được nỗi đau-đớn của nó”. Theo chị, một Đức Chúa Trời lạnh lùng hoặc xa cách sẽ nói những lời '
-                   'như thế không?',
+                   'hiểu rõ nỗi đau đớn họ phải chịu”. Theo chị, một Đức Chúa Trời lạnh lùng hoặc xa cách sẽ nói những '
+                   'lời như thế không?',
              'cs': 'Podívejme se ještě na jiný případ, kdy Boží lid trpěl. Je to zapsáno u Izajáše 63:9. V první části '
                    'toho verše se říká: „Během vší jejich tísně to bylo tísnivé pro něho.“ Řekla byste, že na Boha '
                    'utrpení jeho lidu působilo?',
@@ -7751,8 +7751,8 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Zastanówmy się nad tym przez chwilę: Czy do stworzenia bezkresnego wszechświata Bóg nie '
                    'potrzebował olbrzymiej mocy?'},
             {'who': 'HOUSEHOLDER',
-             'vi': 'Dạ. Câu này nói: “Chính Đức Giê-hô-va đã làm nên đất bởi quyền-năng Ngài, đã lập thế-gian bởi sự '
-                   'khôn-ngoan Ngài, đã giương các từng trời ra bởi sự thông-sáng Ngài”.',
+             'vi': 'Dạ. Câu này nói: “Ngài là Đấng Sáng Tạo của trái đất nhờ vào quyền năng ngài, là đấng lập nên địa '
+                   'cầu bởi sự khôn ngoan ngài và giăng các tầng trời ra bởi sự hiểu biết ngài”.',
              'cs': 'Ano.',
              'zh_cn': '对啊。',
              'zh': '行。「上帝憑能力創造大地，憑智慧堅立世界，憑辨識力展開高天。」',
@@ -8321,8 +8321,8 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
             {'who': 'PUBLISHER',
              'vi': 'Hãy chú ý đến điều chúng ta đọc trong câu kế tiếp. Đa-ni-ên 12:9 nói: “những lời ấy phải được giữ '
                    'kín và niêm phong cho đến thời kỳ cuối cùng”. Vì thế, những lời tiên tri này chỉ được hiểu nhiều '
-                   'hơn sau đó, tức trong “kỳ cuối-cùng”. Như chúng ta sẽ xem xét trong buổi thảo luận sau này, mọi '
-                   'bằng chứng cho thấy chúng ta hiện đang sống trong thời kỳ ấy.',
+                   'hơn sau đó, tức trong “thời kỳ cuối cùng”. Như chúng ta sẽ xem xét trong buổi thảo luận sau này, '
+                   'mọi bằng chứng cho thấy chúng ta hiện đang sống trong thời kỳ ấy.',
              'cs': 'Všimněte si, co čteme hned v následujícím verši. Daniel 12:9 říká: „Ta slova jsou utajena a '
                    'zapečetěna až do času konce.“ Lidé tedy měli těmto proroctvím porozumět daleko později, až v „čase '
                    'konce“. A jak o tom budeme brzy mluvit při našem studiu Bible, všechno nasvědčuje tomu, že my v '
@@ -8573,7 +8573,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'vi': 'Trước hết, chúng ta nhận ra dấu hiệu trong chính lời tiên tri này. Theo Đa-ni-ên 4:17, lời tiên '
                    'tri này được tuyên bố “để mọi người đang sống biết rằng Đấng Tối Cao là Đấng Cai Trị các vương '
                    'quốc của nhân loại, ngài sẽ ban quyền cai trị cho người nào ngài muốn”. Anh có để ý đến cụm từ '
-                   '“nước của loài người” không?',
+                   '“các vương quốc của nhân loại” không?',
              'cs': 'Především to vyplývá z proroctví samotného. Podle Daniela 4:17 bylo toto proroctví proneseno '
                    'proto, „aby žijící lidé poznali, že Nejvyšší je Panovníkem v království lidstva a že je dává tomu, '
                    'komu chce“. Všiml jste si toho výrazu „království lidstva“?',
@@ -8605,7 +8605,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
                    'poznali, że Najwyższy jest Władcą w królestwie ludzkim i że je daje, komu chce”. Zauważył pan '
                    'wyrażenie „królestwo ludzkie”?'},
             {'who': 'HOUSEHOLDER',
-             'vi': 'Vâng, ở đây nói “Đấng Rất Cao cai-trị trong nước của loài người”.',
+             'vi': 'Vâng, ở đây nói “Đấng Tối Cao là Đấng Cai Trị các vương quốc của nhân loại”.',
              'cs': 'Ano, píše se tady, že „Nejvyšší je Panovníkem v království lidstva“.',
              'zh_cn': '没错，这里说“至高者拥有统治人类的王权”。',
              'zh': '沒錯，這裡說「至高者擁有統治人類的王權」。',
@@ -8618,7 +8618,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '네, “가장 높으신 분이 인간 왕국의 통치자”라고 했네요.',
              'pl': 'Tak, tutaj napisano, że „Najwyższy jest Władcą w królestwie ludzkim”.'},
             {'who': 'PUBLISHER',
-             'vi': 'Đúng rồi. Theo anh, “Đấng Rất Cao” là ai?',
+             'vi': 'Đúng rồi. Theo anh, “Đấng Tối Cao” là ai?',
              'cs': 'Správně. Kdo je podle vás ten „Nejvyšší“?',
              'zh_cn': '对。你认为“至高者”是指谁呢？',
              'zh': '對。你認為「至高者」是指誰呢？',
@@ -8646,8 +8646,8 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Chyba chodzi o Boga.'},
             {'who': 'PUBLISHER',
              'vi': 'Chính xác. Câu này cho chúng ta biết lời tiên tri ấy không chỉ nói về vua Nê-bu-cát-nết-sa, mà còn '
-                   'liên quan đến “nước của loài người”, tức quyền cai trị của Đức Chúa Trời trên nhân loại. Và điều '
-                   'này hợp lý khi chúng ta xem xét lời tiên tri trong bối cảnh ấy.',
+                   'liên quan đến “các vương quốc của nhân loại”, tức quyền cai trị của Đức Chúa Trời trên nhân loại. '
+                   'Và điều này hợp lý khi chúng ta xem xét lời tiên tri trong bối cảnh ấy.',
              'cs': 'Přesně tak. Z toho vidíme, že se proroctví netýkalo jenom Nebukadnecara. Týká se také „království '
                    'lidstva“, tedy Božího panování nad lidstvem. A když vezmete v úvahu kontext tohoto proroctví, '
                    'zjistíte, že je to velmi logické.',
@@ -8717,9 +8717,9 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
                    'ustanowieniu Królestwa Bożego pod rządami Jezusa. Cofnijmy się kilka rozdziałów. Mógłby pan '
                    'przeczytać Daniela 2:44?'},
             {'who': 'HOUSEHOLDER',
-             'vi': 'Vâng. “Trong đời các vua nầy, Chúa trên trời sẽ dựng nên một nước không bao giờ bị hủy-diệt, quyền '
-                   'nước ấy không bao giờ để cho một dân-tộc khác; song nó sẽ đánh tan và hủy-diệt hết các nước trước '
-                   'kia, mà mình thì đứng đời đời”.',
+             'vi': 'Vâng. “Trong thời các vua này, Đức Chúa Trời của các tầng trời sẽ lập nên một vương quốc không bao '
+                   'giờ bị hủy diệt và sẽ không bao giờ bị trao cho một dân khác. Vương quốc ấy sẽ nghiền nát và chấm '
+                   'dứt mọi vương quốc kia, còn mình thì đứng vững muôn đời”.',
              'cs': 'Dobře. Píše se tady: „A za dnů těch králů zřídí nebeský Bůh království, které nebude nikdy '
                    'zničeno. A království nebude přeneseno na žádný jiný lid. Rozdrtí a ukončí všechna tato království '
                    'a samo bude stát na neurčité časy.“',
@@ -8776,8 +8776,8 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '글쎄요, 잘 모르겠는데요.',
              'pl': 'Hm. Nie jestem pewien.'},
             {'who': 'PUBLISHER',
-             'vi': 'Hãy chú ý câu này nói là Nước ấy sẽ “đứng đời đời”. Điều này đúng với Nước Đức Chúa Trời, nhưng '
-                   'không thể nói như vậy về chính phủ loài người phải không?',
+             'vi': 'Hãy chú ý câu này nói là vương quốc ấy sẽ “đứng vững muôn đời”. Điều này đúng với Nước Đức Chúa '
+                   'Trời, nhưng không thể nói như vậy về chính phủ loài người phải không?',
              'cs': 'Všimněte si, že se o tomto království říká, že „bude stát na neurčité časy“, tedy navěky. To se '
                    'nedá říct o žádné lidské vládě, ale o Božím království to platí, viďte?',
              'zh_cn': '经文说“这个王国会永远长存”。只有上帝的王国才能永远存在，人设立的政府没有一个能做到这一点，对吗？',
@@ -8873,8 +8873,9 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '왕국이라는 말이 나오는군요.',
              'pl': 'Tu też jest mowa o królestwie.'},
             {'who': 'PUBLISHER',
-             'vi': 'Đúng rồi, nhưng không phải bất cứ nước nào. Hãy lưu ý câu này cho biết Nước ấy sẽ nắm quyền trên '
-                   '“các dân, các nước, các thứ tiếng”. Nói cách khác, Nước ấy sẽ cai trị khắp đất.',
+             'vi': 'Đúng rồi, nhưng không phải bất cứ vương quốc nào. Hãy lưu ý câu này cho biết vương quốc ấy sẽ nắm '
+                   'quyền trên “các dân, các nước và các nhóm ngôn ngữ”. Nói cách khác, vương quốc ấy sẽ cai trị khắp '
+                   'đất.',
              'cs': 'Je to tak. A nejde jen o ledajaké království. Všimněte si, že toto království má mít autoritu nad '
                    '„národy, národnostními skupinami a jazyky“. Jinými slovy, má vládnout celému světu.',
              'zh_cn': '没错。这里说的不是一般的王国，因为经文提到，这个王国统治的是“各民族、国家、语言的人”，也就是全世界。',
@@ -8909,9 +8910,9 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '그런 뜻인 줄은 몰랐는데, 맞는 말이네요. 정말 성구에 그렇게 나오는군요.',
              'pl': 'Faktycznie. Nie wyłapałem tego wcześniej.'},
             {'who': 'PUBLISHER',
-             'vi': 'Cũng hãy lưu ý lời tiên tri nói thêm: “Quyền-thế người là quyền-thế đời đời chẳng qua đi, và nước '
-                   'người không bao giờ phải hủy-phá”. Anh có đồng ý là lời tiên tri này có vẻ rất giống lời tiên tri '
-                   'mà chúng ta đã xem nơi Đa-ni-ên 2:44 không?',
+             'vi': 'Cũng hãy lưu ý lời tiên tri nói thêm: “Quyền cai trị của người là quyền cai trị mãi mãi, chẳng bao '
+                   'giờ chấm dứt, và vương quốc của người không bao giờ bị hủy diệt”. Anh có đồng ý là lời tiên tri '
+                   'này có vẻ rất giống lời tiên tri mà chúng ta đã xem nơi Đa-ni-ên 2:44 không?',
              'cs': 'A také si všimněte, že v proroctví se ještě říká: „Jeho panství je panství trvající na neurčito, '
                    'které nepomine, a jeho království je království, které nebude zničeno.“ Nezní to hodně podobně '
                    'jako to, co jsme před chvílí četli u Daniela 2:44?',
@@ -8953,11 +8954,11 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'No rzeczywiście.'},
             {'who': 'PUBLISHER',
              'vi': 'Chúng ta hãy ôn lại những gì vừa thảo luận. Lời tiên tri nơi Đa-ni-ên chương 4 được tuyên bố để '
-                   'người ta biết “Đấng Rất Cao cai-trị trong nước của loài người”. Rõ ràng, những lời này cho thấy '
-                   'lời tiên tri ấy được ứng nghiệm rộng hơn sự ứng nghiệm liên quan đến Nê-bu-cát-nết-sa. Và qua toàn '
-                   'bộ sách Đa-ni-ên, chúng ta thấy những lời tiên tri về sự thiết lập Nước Đức Chúa Trời dưới sự cai '
-                   'trị của Con ngài. Vậy theo anh, có hợp lý để kết luận rằng lời tiên tri này trong sách Đa-ni-ên '
-                   'chương 4 cũng liên quan đến Nước Đức Chúa Trời không?',
+                   'người ta biết “Đấng Tối Cao là Đấng Cai Trị các vương quốc của nhân loại”. Rõ ràng, những lời này '
+                   'cho thấy lời tiên tri ấy được ứng nghiệm rộng hơn sự ứng nghiệm liên quan đến Nê-bu-cát-nết-sa. Và '
+                   'qua toàn bộ sách Đa-ni-ên, chúng ta thấy những lời tiên tri về sự thiết lập Nước Đức Chúa Trời '
+                   'dưới sự cai trị của Con ngài. Vậy theo anh, có hợp lý để kết luận rằng lời tiên tri này trong sách '
+                   'Đa-ni-ên chương 4 cũng liên quan đến Nước Đức Chúa Trời không?',
              'cs': 'Když tedy shrnu, o čem jsme zatím mluvili: Proroctví ve 4. kapitole Daniela bylo proneseno proto, '
                    'aby lidé poznali, že „Nejvyšší je Panovníkem v království lidstva“. Z toho je zřejmé, že proroctví '
                    'má nějaké větší splnění než jen to, které se týkalo Nebukadnecara. A v celé Danielově knize '
@@ -9252,12 +9253,12 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'vi': 'Khi làm công việc truyền giảng trên đất, Chúa Giê-su cho thấy bảy kỳ vẫn chưa chấm dứt. Thế nên, '
                    'hẳn là thời kỳ này kéo dài rất lâu. Bảy kỳ đã bắt đầu hàng trăm năm trước khi Chúa Giê-su xuống '
                    'đất, và tiếp tục kéo dài cho đến thời điểm nào đó sau khi ngài trở về trời. Cũng hãy nhớ là ý '
-                   'nghĩa của các lời tiên tri trong sách Đa-ni-ên không được hiểu rõ cho đến “kỳ cuối-cùng”. Thật thú '
-                   'vị, vào cuối thế kỷ 19, các học viên Kinh Thánh chân thật được thôi thúc để xem xét kỹ lưỡng điều '
-                   'này và các lời tiên tri khác. Họ bắt đầu nhận ra là bảy kỳ sẽ chấm dứt vào năm 1914. Hơn nữa, kể '
-                   'từ lúc đó, các biến cố lớn trên thế giới chứng tỏ năm 1914 chính là năm Nước Đức Chúa Trời bắt đầu '
-                   'cai trị trên trời. Đây là lúc thế giới này bước vào những ngày sau cùng, tức thời kỳ cuối cùng. '
-                   'Vậy, tôi biết anh có nhiều điều mới để suy nghĩ đến.',
+                   'nghĩa của các lời tiên tri trong sách Đa-ni-ên không được hiểu rõ cho đến “thời kỳ cuối cùng”. '
+                   'Thật thú vị, vào cuối thế kỷ 19, các học viên Kinh Thánh chân thật được thôi thúc để xem xét kỹ '
+                   'lưỡng điều này và các lời tiên tri khác. Họ bắt đầu nhận ra là bảy kỳ sẽ chấm dứt vào năm 1914. '
+                   'Hơn nữa, kể từ lúc đó, các biến cố lớn trên thế giới chứng tỏ năm 1914 chính là năm Nước Đức Chúa '
+                   'Trời bắt đầu cai trị trên trời. Đây là lúc thế giới này bước vào những ngày sau cùng, tức thời kỳ '
+                   'cuối cùng. Vậy, tôi biết anh có nhiều điều mới để suy nghĩ đến.',
              'cs': 'Když Ježíš žil zde na zemi, ukázal, že těch sedm časů ještě neskončilo. Musí to tedy být velmi '
                    'dlouhé období. Začalo několik staletí před tím, než Ježíš přišel na zem, a pokračovalo ještě '
                    'nějakou dobu po tom, co se vrátil do nebe. Vzpomeňte si také, že významu Danielových proroctví '
@@ -10917,8 +10918,8 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
                    'wzajemne relacje?'},
             {'who': 'HOUSEHOLDER',
              'vi': 'Cũng được. Câu này nói: “Vợ hãy vâng phục chồng như vâng phục Chúa; vì chồng là đầu vợ, như Đấng '
-                   'Ki-tô là đầu hội thánh, tức thân thể ngài, và ngài là đấng cứu rỗi thân thể ấy”. Câu 28: “Cũng một '
-                   'thể ấy, chồng phải yêu vợ như chính thân mình. Ai yêu vợ là yêu chính mình”.',
+                   'Ki-tô là đầu hội thánh, tức thân thể ngài, và ngài là đấng cứu rỗi của thân thể ấy”. Câu 28: “Cũng '
+                   'một thể ấy, chồng phải yêu vợ như chính thân mình. Ai yêu vợ là yêu chính mình”.',
              'cs': 'No, pár minut ještě mám.',
              'zh_cn': '嗯，说起来是容易，但要做起来就难了。',
              'zh': '好的。這裡說：「做妻子的，該順服自己的丈夫，好像順服主，因為丈夫是妻子的頭，正如基督是會眾的頭；會眾是身體，基督是這個身體的救主。」28節說：「照樣，丈夫應該愛妻子，好像愛自己的身體。愛妻子就是愛自己了。」',
