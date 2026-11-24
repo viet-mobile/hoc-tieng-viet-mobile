@@ -11,8 +11,8 @@ EXPECTED = {
  },
  "osg-98": {
   "7": [
-   "2.Hằng ngày gắng tử tế, ôn hòa với tất cả, dẫu nơi công ty hay trường lớp,",
-   "2.Hàng ngày gắng tử tế, ôn hòa với tất cả, dẫu nơi công ty hay trường lớp,"
+   "2. Hằng ngày gắng tử tế, ôn hòa với tất cả, dẫu nơi công ty hay trường lớp,",
+   "2. Hàng ngày gắng tử tế, ôn hòa với tất cả, dẫu nơi công ty hay trường lớp,"
   ]
  },
  "osg-99": {
