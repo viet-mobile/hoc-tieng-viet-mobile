@@ -9842,7 +9842,7 @@ function verifyDistribution(units, dist, pins) {
     // Vụ.", "—Matthew 5:5, King James Version.") when a householder cites a Bible other than the
     // New World Translation. That trailing clause must itself start with a capital letter (a
     // proper-noun title) so a real sentence that happens to continue past a citation in lower-
-    // case prose -- "Kinh Thánh Thi-thiên 37:29 cho biết như sau." (the Bible, at Psalm 37:29,
+    // case prose -- "Kinh Thánh Thi thiên 37:29 cho biết như sau." (the Bible, at Psalm 37:29,
     // says the following) -- is never mistaken for one.
     return /^\d{0,2}\s*[A-ZÀ-Ỹ][^".!?“”‘’]*\d+:\d+[\d,;:\-–\s]*(?:,\s*[A-ZÀ-Ỹ][^".!?“”‘’]*)?\.?$/.test(s);
   }

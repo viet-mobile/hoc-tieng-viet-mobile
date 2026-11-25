@@ -282,7 +282,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '그렇게 믿고 있는 기독교인은 본 적이 없는데요.',
              'pl': 'Chyba nie ma chrześcijanina, który nie wierzyłby w niebo.'},
             {'who': 'PUBLISHER',
-             'vi': 'Tôi nêu ra câu hỏi đó vì có một điều chúng ta đọc được nơi bài Thánh vịnh, hay Thi-thiên 37:29. '
+             'vi': 'Tôi nêu ra câu hỏi đó vì có một điều chúng ta đọc được nơi bài Thánh vịnh, hay Thi thiên 37:29. '
                    'Anh có thể đọc câu này không?',
              'cs': 'Ptám se vás kvůli tomu, co je napsáno v Žalmu 37:29. Mohl byste prosím tento verš přečíst?',
              'zh_cn': '我提出这个问题，是因为我留意到诗篇37:29所说的话。可以请你读出这节经文吗？',
@@ -694,7 +694,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '네, 잠깐이면 괜찮아요.',
              'pl': 'Mam jeszcze parę minut.'},
             {'who': 'PUBLISHER',
-             'vi': 'Khi nãy chúng ta đã đọc bài Thi-thiên số 37, câu 29. Hãy trở lại bài Thi-thiên đó. Lần này chúng '
+             'vi': 'Khi nãy chúng ta đã đọc bài Thi thiên số 37, câu 29. Hãy trở lại bài Thi thiên đó. Lần này chúng '
                    'ta hãy xem câu 10 và 11. Anh có thể đọc những câu này không?',
              'cs': 'Už jsme si z 37. žalmu četli 29. verš. Podívejme se tentokrát na verš 10 a 11. Mohl byste to '
                    'prosím přečíst?',
@@ -1273,7 +1273,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Zawsze tak mnie uczono.'},
             {'who': 'PUBLISHER',
              'vi': 'Chúng ta hãy cùng xem một đoạn Kinh Thánh giúp hiểu rõ thần khí thánh có phải là một nhân vật hay '
-                   'không. Có lẽ anh đã quen thuộc với đoạn Kinh Thánh nơi Công-vụ 2:1-4: “Vào ngày Lễ Ngũ Tuần, hết '
+                   'không. Có lẽ anh đã quen thuộc với đoạn Kinh Thánh nơi Công vụ 2:1-4: “Vào ngày Lễ Ngũ Tuần, hết '
                    'thảy họ nhóm lại một chỗ. Thình lình, từ trời có tiếng động như tiếng gió thổi mạnh ùa vào, đầy cả '
                    'căn nhà họ đang ngồi. Họ thấy có gì như những lưỡi lửa xuất hiện rồi tách ra, mỗi cái đậu trên một '
                    'người. Tất cả đều được tràn đầy thần khí thánh và bắt đầu nói những ngôn ngữ khác, theo như thần '
@@ -1776,7 +1776,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Chyba tak. Nawet zgadzałoby się to z tym, co czytał pan wcześniej — o tym wylewaniu ducha. Ale '
                    'skoro to nie jest osoba, to w takim razie co?'},
             {'who': 'PUBLISHER',
-             'vi': 'Nơi Công-vụ 1:8, Chúa Giê-su cho chúng ta biết thần khí thánh là gì. Anh có muốn đọc không?',
+             'vi': 'Nơi Công vụ 1:8, Chúa Giê-su cho chúng ta biết thần khí thánh là gì. Anh có muốn đọc không?',
              'cs': 'Ježíš o tom mluví ve Skutcích 1:8. Mohl byste to prosím přečíst?',
              'zh_cn': '使徒行传1:8记载了耶稣的一句话，我们看看就可以知道圣灵是什么。请您读读这节经文，好吗？',
              'zh': '使徒行傳1:8記載了耶穌的一句話，我們看看就可以知道聖靈是什麼。請您讀讀這節經文，好嗎？',
@@ -5103,7 +5103,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '네. 하느님이 그들에게 어떤 나무의 열매를 먹지 말라고 하셨는데 그들은 그 말씀을 듣지 않았지요.',
              'pl': 'O zakazanym owocu, tak?'},
             {'who': 'PUBLISHER',
-             'vi': 'Đúng vậy. Hãy cùng xem câu chuyện này nơi Sáng-thế Ký 2:16, 17: “Giê-hô-va Đức Chúa Trời cũng '
+             'vi': 'Đúng vậy. Hãy cùng xem câu chuyện này nơi Sáng thế Ký 2:16, 17: “Giê-hô-va Đức Chúa Trời cũng '
                    'truyền cho ông mệnh lệnh này: ‘Con được ăn thỏa thuê mọi cây trong vườn. Nhưng về cây biết điều '
                    'thiện và điều ác, con không được phép ăn, vì vào ngày con ăn, chắc chắn con sẽ chết’”. Đức Chúa '
                    'Trời nói điều gì sẽ xảy ra nếu A-đam ăn trái cấm?',
@@ -5233,7 +5233,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '그렇긴 하죠.',
              'pl': 'Faktycznie.'},
             {'who': 'PUBLISHER',
-             'vi': 'Cũng hãy xem Đức Chúa Trời nói gì với A-đam và Ê-va sau khi họ phạm tội. Anh có thể đọc Sáng-thế '
+             'vi': 'Cũng hãy xem Đức Chúa Trời nói gì với A-đam và Ê-va sau khi họ phạm tội. Anh có thể đọc Sáng thế '
                    'Ký 3:19 được không?',
              'cs': 'Podívejme se také, co Bůh řekl Adamovi a Evě potom, co zhřešili. Mohl byste přečíst 1. Mojžíšovu '
                    '3:19?',
@@ -5758,7 +5758,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Wie pan, że nigdy nie myślałem o tym w ten sposób!'},
             {'who': 'PUBLISHER',
              'vi': 'Nhưng anh cứ yên tâm. Đức Chúa Trời sẽ ra tay trừng phạt những người ác không chịu thay đổi. Tôi '
-                   'xin chia sẻ với anh câu Kinh Thánh cuối cùng để làm rõ điểm này. Mời anh đọc Thi-thiên 37:9 được '
+                   'xin chia sẻ với anh câu Kinh Thánh cuối cùng để làm rõ điểm này. Mời anh đọc Thi thiên 37:9 được '
                    'không?',
              'cs': 'Můžeme si být ale jisti, že Bůh proti nenapravitelným lidem, kteří páchají zlo, zasáhne. Možná '
                    'bych vám mohl ukázat ještě jeden verš, který o tom mluví. Je to Žalm 37:9. Můžu vás zase poprosit '
@@ -6210,7 +6210,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
                    'to zmienić?'},
             {'who': 'PUBLISHER',
              'vi': 'Chúng ta có thể bắt đầu tìm lời giải đáp cho câu hỏi của chị bằng cách xem lại sách đầu tiên của '
-                   'Kinh Thánh là Sáng-thế Ký. Chị có\xa0biết\xa0lời tường thuật về A-đam, Ê-va và trái cấm không?',
+                   'Kinh Thánh là Sáng thế Ký. Chị có\xa0biết\xa0lời tường thuật về A-đam, Ê-va và trái cấm không?',
              'cs': 'Odpověď na tuto otázku můžeme zčásti najít v první knize Bible, 1. Mojžíšově. Znáte příběh o '
                    'Adamovi a Evě a zakázaném ovoci?',
              'zh_cn': '我们看看圣经的头一本书创世记，就可以找到答案了。你听过亚当和夏娃吃禁果的事吗？',
@@ -6257,7 +6257,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Tak, znam. Bóg powiedział, żeby nie jedli z drzewa, ale oni Go nie posłuchali i zjedli.'},
             {'who': 'PUBLISHER',
              'vi': 'Đúng rồi. Bây giờ chúng ta chú ý đến những sự kiện dẫn đến việc A-đam và Ê-va phạm tội. Các sự '
-                   'kiện này liên quan trực tiếp đến câu hỏi tại sao chúng ta đau khổ. Chị có muốn đọc Sáng-thế Ký '
+                   'kiện này liên quan trực tiếp đến câu hỏi tại sao chúng ta đau khổ. Chị có muốn đọc Sáng thế Ký '
                    'chương 3, câu 1 đến 5 không?',
              'cs': 'Správně. Zaměřme se teď na to, co hříchu Adama a Evy předcházelo. Tyto události přímo souvisí s '
                    'otázkou, proč trpíme. Mohla byste prosím přečíst 1. Mojžíšovu, 3. kapitolu, verše 1 až 5?',
@@ -6623,7 +6623,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '정말 그렇겠네요.',
              'pl': 'Brzmi rozsądnie.'},
             {'who': 'PUBLISHER',
-             'vi': 'Bây giờ, hãy xem lại lời tường thuật nơi Sáng-thế Ký. Sa-tan có cho rằng hắn mạnh hơn Đức Chúa '
+             'vi': 'Bây giờ, hãy xem lại lời tường thuật nơi Sáng thế Ký. Sa-tan có cho rằng hắn mạnh hơn Đức Chúa '
                    'Trời không?',
              'cs': 'Podívejme se teď zpátky do 1. Mojžíšovy. Tvrdil Satan, že je silnější než Bůh?',
              'zh_cn': '现在，我们再来想想创世记的记载。撒但有没有说自己的能力比上帝大呢？',
@@ -6884,9 +6884,9 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Tak? Jakie?'},
             {'who': 'PUBLISHER',
              'vi': 'Kinh Thánh cho biết hai sự thật tuyệt vời về Đức Chúa Trời. Thứ nhất, Đức Giê-hô-va quan tâm đến '
-                   'chúng ta khi chúng ta gặp đau khổ. Chẳng hạn, hãy xem những lời của vua Đa-vít được ghi nơi '
-                   'Thi-thiên 31:7. Đa-vít trải qua nhiều đau khổ trong đời, nhưng hãy xem ông đã cầu nguyện với Đức '
-                   'Chúa Trời như thế nào. Chị có thể đọc câu này không?',
+                   'chúng ta khi chúng ta gặp đau khổ. Chẳng hạn, hãy xem những lời của vua Đa-vít được ghi nơi Thi '
+                   'thiên 31:7. Đa-vít trải qua nhiều đau khổ trong đời, nhưng hãy xem ông đã cầu nguyện với Đức Chúa '
+                   'Trời như thế nào. Chị có thể đọc câu này không?',
              'cs': 'Dozvídáme se tam o Bohu dvě nádherné pravdy. Zaprvé, když trpíme, Jehova je nám nablízku. Uvažujme '
                    'například o slovech krále Davida, která jsou zapsána v Žalmu 31:7. David zažil mnoho utrpení, ale '
                    'všimněte si, co ve své modlitbě řekl Bohu. Mohla byste prosím tento verš přečíst?',
@@ -10487,7 +10487,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '그러세요. 그런데 저는 성경이 없는데요.',
              'pl': 'Jaki to ma związek z dokładnością historyczną?'},
             {'who': 'PUBLISHER',
-             'vi': 'Không sao. Anh có thể xem chung với tôi. Ví dụ đầu tiên nằm ở 1 Sử-ký chương 29, câu 26 và 27. Câu '
+             'vi': 'Không sao. Anh có thể xem chung với tôi. Ví dụ đầu tiên nằm ở 1 Sử ký chương 29, câu 26 và 27. Câu '
                    'này nói: “Như vậy, Đa-vít con trai Giê-sê đã trị vì trên cả Y-sơ-ra-ên. Thời gian ông trị vì '
                    'Y-sơ-ra-ên là 40 năm. Ông cai trị 7 năm tại Hếp-rôn và 33 năm tại Giê-ru-sa-lem”.',
              'cs': 'Kromě Bible totiž nebylo o jeho životě moc důkazů. Ale v roce 1993 našel tým archeologů velmi '
