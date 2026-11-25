@@ -46,7 +46,7 @@ def _range(a, b, lang):
     return "%s~%s" % (a, b) if lang == "zh_cn" else "%s–%s" % (a, b)
 
 
-BOOK_RANGE = {"1": " (Sáng thế Ký – Thi thiên)", "2": " (Châm ngôn – Ma-la-chi)", "3": " (Ma-thi-ơ – Khải huyền)"}   # book-name practice ranges (Vietnamese book names)
+BOOK_RANGE = {"1": " (Sáng thế – Thi thiên)", "2": " (Châm ngôn – Ma-la-chi)", "3": " (Ma-thi-ơ – Khải huyền)"}   # book-name practice ranges (Vietnamese book names)
 COURSE_TEMPLATES = [
     (re.compile(r"^오늘의 어휘 학습 \((.+?) (\d+)~(\d+)번\)$"), lambda m, l: {
         "vi": "Học từ vựng hôm nay ({c} {r})", "cs": "Dnešní slovíčka ({c} {r})", "zh_cn": "今日词汇学习（{c} {r}）",

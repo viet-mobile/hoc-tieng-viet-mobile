@@ -1861,7 +1861,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Od Boga Ojca?'},
             {'who': 'PUBLISHER',
              'vi': 'Đúng vậy. thần khí thánh là lực mà Đức Chúa Trời dùng để tạo dựng vũ trụ. Câu thứ hai trong Kinh '
-                   'Thánh cho biết điều này. Sáng thế Ký 1:2 nói: “thần khí của Đức Chúa Trời chuyển động qua lại trên '
+                   'Thánh cho biết điều này. Sáng thế 1:2 nói: “thần khí của Đức Chúa Trời chuyển động qua lại trên '
                    'mặt nước”. “Thần” hay thần khí thánh Đức Chúa Trời là lực vô hình mà Đức Chúa Trời dùng để thực '
                    'hiện ý định và tiết lộ ý muốn của Ngài. Hãy xem thêm một câu Kinh Thánh nữa. Xin mời anh đọc Lu-ca '
                    '11:13.',
@@ -5103,10 +5103,10 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '네. 하느님이 그들에게 어떤 나무의 열매를 먹지 말라고 하셨는데 그들은 그 말씀을 듣지 않았지요.',
              'pl': 'O zakazanym owocu, tak?'},
             {'who': 'PUBLISHER',
-             'vi': 'Đúng vậy. Hãy cùng xem câu chuyện này nơi Sáng thế Ký 2:16, 17: “Giê-hô-va Đức Chúa Trời cũng '
-                   'truyền cho ông mệnh lệnh này: ‘Con được ăn thỏa thuê mọi cây trong vườn. Nhưng về cây biết điều '
-                   'thiện và điều ác, con không được phép ăn, vì vào ngày con ăn, chắc chắn con sẽ chết’”. Đức Chúa '
-                   'Trời nói điều gì sẽ xảy ra nếu A-đam ăn trái cấm?',
+             'vi': 'Đúng vậy. Hãy cùng xem câu chuyện này nơi Sáng thế 2:16, 17: “Giê-hô-va Đức Chúa Trời cũng truyền '
+                   'cho ông mệnh lệnh này: ‘Con được ăn thỏa thuê mọi cây trong vườn. Nhưng về cây biết điều thiện và '
+                   'điều ác, con không được phép ăn, vì vào ngày con ăn, chắc chắn con sẽ chết’”. Đức Chúa Trời nói '
+                   'điều gì sẽ xảy ra nếu A-đam ăn trái cấm?',
              'cs': 'Přesně tak. Podívejme se na to společně do Bible. Je to v 1. Mojžíšově 2:16, 17. Říká se tady: '
                    '„Jehova Bůh také člověku uložil tento příkaz: ‚Z každého stromu zahrady smíš do sytosti jíst. Ale '
                    'pokud jde o strom poznání dobrého a špatného, z toho jíst nebudeš, neboť v den, kdy z něho pojíš, '
@@ -5234,7 +5234,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Faktycznie.'},
             {'who': 'PUBLISHER',
              'vi': 'Cũng hãy xem Đức Chúa Trời nói gì với A-đam và Ê-va sau khi họ phạm tội. Anh có thể đọc Sáng thế '
-                   'Ký 3:19 được không?',
+                   '3:19 được không?',
              'cs': 'Podívejme se také, co Bůh řekl Adamovi a Evě potom, co zhřešili. Mohl byste přečíst 1. Mojžíšovu '
                    '3:19?',
              'zh_cn': '请也留意，上帝在亚当和夏娃犯罪后对他们说了些什么，请你读创世记3:19。',
@@ -6210,7 +6210,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
                    'to zmienić?'},
             {'who': 'PUBLISHER',
              'vi': 'Chúng ta có thể bắt đầu tìm lời giải đáp cho câu hỏi của chị bằng cách xem lại sách đầu tiên của '
-                   'Kinh Thánh là Sáng thế Ký. Chị có\xa0biết\xa0lời tường thuật về A-đam, Ê-va và trái cấm không?',
+                   'Kinh Thánh là Sáng thế. Chị có\xa0biết\xa0lời tường thuật về A-đam, Ê-va và trái cấm không?',
              'cs': 'Odpověď na tuto otázku můžeme zčásti najít v první knize Bible, 1. Mojžíšově. Znáte příběh o '
                    'Adamovi a Evě a zakázaném ovoci?',
              'zh_cn': '我们看看圣经的头一本书创世记，就可以找到答案了。你听过亚当和夏娃吃禁果的事吗？',
@@ -6257,8 +6257,8 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'pl': 'Tak, znam. Bóg powiedział, żeby nie jedli z drzewa, ale oni Go nie posłuchali i zjedli.'},
             {'who': 'PUBLISHER',
              'vi': 'Đúng rồi. Bây giờ chúng ta chú ý đến những sự kiện dẫn đến việc A-đam và Ê-va phạm tội. Các sự '
-                   'kiện này liên quan trực tiếp đến câu hỏi tại sao chúng ta đau khổ. Chị có muốn đọc Sáng thế Ký '
-                   'chương 3, câu 1 đến 5 không?',
+                   'kiện này liên quan trực tiếp đến câu hỏi tại sao chúng ta đau khổ. Chị có muốn đọc Sáng thế chương '
+                   '3, câu 1 đến 5 không?',
              'cs': 'Správně. Zaměřme se teď na to, co hříchu Adama a Evy předcházelo. Tyto události přímo souvisí s '
                    'otázkou, proč trpíme. Mohla byste prosím přečíst 1. Mojžíšovu, 3. kapitolu, verše 1 až 5?',
              'zh_cn': '没错。现在我们来看看亚当和夏娃犯罪前发生了什么事，这样就会明白为什么世上有那么多苦难了。请你把创世记的第3章1到5节读出来好吗？',
@@ -6623,8 +6623,8 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
              'ko': '정말 그렇겠네요.',
              'pl': 'Brzmi rozsądnie.'},
             {'who': 'PUBLISHER',
-             'vi': 'Bây giờ, hãy xem lại lời tường thuật nơi Sáng thế Ký. Sa-tan có cho rằng hắn mạnh hơn Đức Chúa '
-                   'Trời không?',
+             'vi': 'Bây giờ, hãy xem lại lời tường thuật nơi Sáng thế. Sa-tan có cho rằng hắn mạnh hơn Đức Chúa Trời '
+                   'không?',
              'cs': 'Podívejme se teď zpátky do 1. Mojžíšovy. Tvrdil Satan, že je silnější než Bůh?',
              'zh_cn': '现在，我们再来想想创世记的记载。撒但有没有说自己的能力比上帝大呢？',
              'zh': '現在，我們再來想想創世記的記載。撒但有沒有說自己的能力比上帝大呢？',
@@ -7501,7 +7501,7 @@ NEIGHBOR_CONVERSATIONS = [{'id': '2012569',
                    'ich krzyk z powodu tych, którzy ich poganiają do pracy; gdyż dobrze znam boleści, jakich '
                    'doznają’”.'},
             {'who': 'PUBLISHER',
-             'vi': 'Chúng ta hãy xem một ví dụ nơi Xuất Ê-díp-tô Ký 3:7. Mời chị đọc câu này.',
+             'vi': 'Chúng ta hãy xem một ví dụ nơi Xuất Ai Cập 3:7. Mời chị đọc câu này.',
              'cs': 'Není to tak, že by měl jen rámcovou představu o tom, co se děje. Podívejte se znovu do druhé části '
                    'tohoto verše. Bůh tam říká: „Dobře znám bolesti, jimiž trpí.“ Působí to na vás jako slova '
                    'lhostejného a odtažitého Boha?',
