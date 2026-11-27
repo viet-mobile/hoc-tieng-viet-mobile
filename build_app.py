@@ -837,6 +837,11 @@ def build_data_js(site):
     if os.path.exists(os.path.join(os.path.dirname(__file__), "bible_cited_verses.json")):
         with open(os.path.join(os.path.dirname(__file__), "bible_cited_verses.json"), encoding="utf-8") as fh:
             parts.append(emit("BIBLE_CITED_VERSES", json.load(fh)))
+    try:
+        from circuit_assembly_data import CIRCUIT_ASSEMBLIES
+        parts.append(emit("CIRCUIT_ASSEMBLY_PROGRAMS", CIRCUIT_ASSEMBLIES))
+    except Exception as e:
+        print("Warning loading circuit_assembly_data:", e)
     parts.append(emit("NUM_BASIC", NUMBERS_BASIC))
     parts.append(emit("NUM_TEEN", NUMBERS_TEEN))
     parts.append(emit("NUM_TENS", NUMBERS_TENS))

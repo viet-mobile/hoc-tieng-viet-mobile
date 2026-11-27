@@ -21,7 +21,7 @@ JEONJU_INTERVAL_DAYS = 7
 JEONJU_CANCELLATIONS = [
     {"date": "2026-11-07", "reason": "휴강"},
     {"date": "2026-11-28", "reason": "군산 한국어 순회대회"},
-    {"date": "2026-12-05", "reason": "천안 베트남어 순회대회 파이오니아 모임"},
+    {"date": "2026-12-05", "reason": "천안 다언어 순회대회"},
     {"date": "2027-02-13", "reason": "왕국전도학교"},
 ]
 # (A rescheduling whose newDate equals its date only adds the note to the card: 2027-02-20 graduation ceremony.)

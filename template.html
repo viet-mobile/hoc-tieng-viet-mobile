@@ -3633,6 +3633,208 @@
   .btn-jw-scripture:hover {
     background: #003366;
   }
+
+  /* Circuit Assembly Program & Questions */
+  .curr-assembly-box {
+    margin-top: 10px;
+    padding: 14px;
+    background: var(--surface-1, #f8fafc);
+    border: 1px solid var(--border, #e2e8f0);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .assembly-banner {
+    padding: 12px 14px;
+    background: var(--surface, #ffffff);
+    border-left: 4px solid var(--primary, #1a56db);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  .assembly-badge-row {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--primary, #1a56db);
+    margin-bottom: 4px;
+  }
+  .assembly-theme-row {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--ink, #1e293b);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .assembly-theme-label {
+    color: var(--ink-muted, #64748b);
+    font-size: 0.9em;
+  }
+  .assembly-subtheme-row {
+    font-size: 0.88rem;
+    color: var(--ink-muted, #64748b);
+    margin-top: 4px;
+  }
+  .assembly-links-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .assembly-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+  .assembly-section {
+    background: var(--surface, #ffffff);
+    border: 1px solid var(--border, #e2e8f0);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .assembly-sec-head {
+    padding: 10px 14px;
+    background: var(--surface-2, #f1f5f9);
+    border-bottom: 1px solid var(--border, #e2e8f0);
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: var(--ink, #1e293b);
+  }
+  .assembly-schedule-wrap {
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .assembly-sub-head {
+    font-weight: 700;
+    font-size: 0.86rem;
+    color: var(--primary, #1a56db);
+    border-bottom: 1px dashed var(--border, #cbd5e1);
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+  }
+  .assembly-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .assembly-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .assembly-time {
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 0.82rem;
+    color: var(--ink-muted, #64748b);
+    width: 44px;
+    font-variant-numeric: tabular-nums;
+  }
+  .assembly-item-body {
+    flex: 1;
+  }
+  .assembly-item-main {
+    font-weight: 600;
+    color: var(--ink, #1e293b);
+  }
+  .assembly-item-sub {
+    font-size: 0.82rem;
+    color: var(--ink-muted, #64748b);
+    margin-top: 2px;
+  }
+  .assembly-song-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 1px 8px;
+    border-radius: 12px;
+    background: rgba(16, 185, 129, 0.1);
+    color: #059669;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    vertical-align: baseline;
+    transition: background 0.15s ease;
+  }
+  .assembly-song-pill:hover {
+    background: rgba(16, 185, 129, 0.2);
+    text-decoration: underline;
+  }
+  .assembly-symposium-parts {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    border-left: 2px solid var(--border, #cbd5e1);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .assembly-symposium-part {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+  .assembly-part-text {
+    font-weight: 500;
+  }
+  .assembly-part-sub {
+    font-size: 0.8em;
+    color: var(--ink-muted, #64748b);
+  }
+  .assembly-questions-list {
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .assembly-q-card {
+    padding: 10px 12px;
+    background: var(--surface-1, #f8fafc);
+    border: 1px solid var(--border, #e2e8f0);
+    border-radius: 8px;
+  }
+  .assembly-q-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .assembly-q-badge {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--primary, #1a56db);
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .assembly-q-body {
+    flex: 1;
+  }
+  .assembly-q-main {
+    font-weight: 600;
+    color: var(--ink, #1e293b);
+    line-height: 1.55;
+    font-size: 0.92rem;
+  }
+  .assembly-q-sub {
+    font-size: 0.84rem;
+    color: var(--ink-muted, #64748b);
+    margin-top: 4px;
+    line-height: 1.5;
+  }
 </style>
 
 <div class="app" data-active-tab="review">

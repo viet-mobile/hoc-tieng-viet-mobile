@@ -366,6 +366,7 @@
     "일정 미정": {"vi": "Chưa xác định lịch", "cs": "Rozvrh dosud nestanoven", "zh_cn": "日程未定", "zh": "日程未定", "en": "Schedule TBD", "fr": "Calendrier à déterminer", "de": "Termin noch offen", "hu": "Időbeosztás még nincs meghatározva", "id": "Jadwal belum ditentukan", "ja": "日程未定", "pl": "Harmonogram do ustalenia"},
     "휴강": {"vi": "Nghỉ học", "cs": "Výuka se nekoná", "zh_cn": "休课", "zh": "停課", "en": "No Class", "fr": "Pas de cours", "de": "Unterrichtsausfall", "hu": "Nincs tanítás", "id": "Libur kelas", "ja": "休講", "pl": "Brak zajęć"},
     "천안 베트남어 순회대회 파이오니아 모임": {"vi": "Buổi họp tiên phong – hội nghị vòng quanh tiếng Việt Cheonan", "cs": "Setkání průkopníků – vietnamský krajský sjezd v Čchonanu", "zh_cn": "天安越南语分区大会先驱聚会", "zh": "天安越南語分區大會先驅聚會", "en": "Pioneer meeting – Cheonan Vietnamese circuit assembly", "fr": "Réunion des pionniers – assemblée de circonscription en vietnamien de Cheonan", "de": "Pioniertreffen – vietnamesischer Kreiskongress Cheonan", "hu": "Úttörő-összejövetel – csonani vietnami körzetkongresszus", "id": "Pertemuan perintis – kebaktian wilayah bahasa Vietnam Cheonan", "ja": "天安ベトナム語巡回大会 開拓者の集まり", "pl": "Spotkanie pionierów – wietnamskie zgromadzenie obwodowe w Czonan"},
+    "천안 다언어 순회대회": {"vi": "Hội nghị vòng quanh đa ngôn ngữ Cheonan", "cs": "Vícejazyčný krajský sjezd v Čchonanu", "zh_cn": "天安多语种分区大会", "zh": "天安多語種分區大會", "en": "Cheonan Multilingual Circuit Assembly", "fr": "Assemblée de circonscription multilingue de Cheonan", "de": "Mehrsprachiger Kreiskongress Cheonan", "hu": "Cshonani többnyelvű körzetkongresszus", "id": "Kebaktian wilayah multibahasa Cheonan", "ja": "天安多言語巡回大会", "pl": "Wielojęzyczne zgromadzenie obwodowe w Cheonan"},
     "군산 한국어 순회대회": {"vi": "Hội nghị vòng quanh tiếng Hàn Gunsan", "cs": "Korejský krajský sjezd v Kunsanu", "zh_cn": "群山韩语分区大会", "zh": "群山韓語分區大會", "en": "Gunsan Korean circuit assembly", "fr": "Assemblée de circonscription en coréen de Gunsan", "de": "Koreanischer Kreiskongress Gunsan", "hu": "Kunszani koreai körzetkongresszus", "id": "Kebaktian wilayah bahasa Korea Gunsan", "ja": "群山韓国語巡回大会", "pl": "Koreańskie zgromadzenie obwodowe w Kunsan"},
     "왕국전도학교": {"vi": "Trường dành cho người công bố Nước Trời", "cs": "Škola pro zvěstovatele Království", "zh_cn": "王国传道员学校", "zh": "王國傳道員學校", "en": "Kingdom Evangelizers School", "fr": "École des proclamateurs du Royaume", "de": "Schule für Königreichsverkündiger", "hu": "Királyság-hirdetők Iskolája", "id": "Sekolah Penyiar Kerajaan", "ja": "王国伝道者学校", "pl": "Szkoła Głosicieli Królestwa"},
     "총복습": {"vi": "Tổng ôn tập", "cs": "Celkové opakování", "zh_cn": "总复习", "zh": "總複習", "en": "Comprehensive Review", "fr": "Révision générale", "de": "Gesamtwiederholung", "hu": "Összefoglaló ismétlés", "id": "Tinjauan menyeluruh", "ja": "総復習", "pl": "Powtórzenie całościowe"},
@@ -8759,12 +8760,17 @@ function verifyDistribution(units, dist, pins) {
             '<div class="curr-assign-body">' + cancelAssignBody + '</div></div>';
         }
 
+        var assemblyHtml = "";
+        if (typeof CIRCUIT_ASSEMBLY_PROGRAMS !== "undefined" && CIRCUIT_ASSEMBLY_PROGRAMS && CIRCUIT_ASSEMBLY_PROGRAMS[slot.date]) {
+          assemblyHtml = renderCircuitAssemblyHtml(CIRCUIT_ASSEMBLY_PROGRAMS[slot.date], slot.calculatedDate);
+        }
+
         html += '<div class="group-card curr-vacation-card" data-open="false" data-syl="cancel-' + slot.date + '">' +
           '<button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(slot.calculatedDate + " " + (cancellationReasonLabel(slot.reason) || TU("휴강"))) + '</span></span>' +
           currChev() + '</button>' +
           '<div class="group-body"><div class="curr-item-list">' +
           '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
-          '</div>' + cancelAssignCard + '</div></div>';
+          '</div>' + assemblyHtml + cancelAssignCard + '</div></div>';
         return;
       }
       var sess = bySession[slot.session] || { session: slot.session, units: [], learning: [], assignments: [] };
@@ -9282,6 +9288,10 @@ function verifyDistribution(units, dist, pins) {
             currLinkBtn(curriculumLinkForWeek(it.link, w.week)) + '</div>';
         });
         html += '</div>';
+        if (w.vacation && typeof CIRCUIT_ASSEMBLY_PROGRAMS !== "undefined" && CIRCUIT_ASSEMBLY_PROGRAMS) {
+          var wAsm = (w.week === -2.5) ? CIRCUIT_ASSEMBLY_PROGRAMS["2026-12-05"] : ((w.week === -3.5) ? CIRCUIT_ASSEMBLY_PROGRAMS["2026-11-28"] : null);
+          if (wAsm) html += renderCircuitAssemblyHtml(wAsm);
+        }
         var previousSlot = courseWeeks[wi - 1];
         var nextSlot = courseWeeks[wi + 1];
         var assign = (typeof CURR_ASSIGNMENTS !== "undefined" && nextSlot) ? CURR_ASSIGNMENTS.filter(function (a) { return a.week === nextSlot.week; })[0] : null;
@@ -10856,6 +10866,125 @@ function verifyDistribution(units, dist, pins) {
     if (q.get("srcid") !== "jwlshare" || !q.get("wtlocale")) return false;
     return !!(q.get("lank") || q.get("docid") || (q.get("pub") && q.get("bible")));
   }
+  // --- Circuit Assembly Program & Review Questions ---
+  function renderCircuitAssemblyHtml(assembly, dateStr) {
+    if (!assembly) return "";
+    var isVi = assembly.primary_lang === "vi";
+
+    var themeText = isVi ? assembly.theme.vi : assembly.theme.ko;
+    var subThemeText = isVi ? assembly.theme.ko : assembly.theme.vi;
+    var scriptureText = isVi ? (assembly.theme.scripture || "") : (assembly.theme.scripture || "");
+    var scriptureBadge = typeof formatScriptureHtml === "function" ? formatScriptureHtml(escapeHtml(scriptureText)) : escapeHtml(scriptureText);
+
+    var html = '<div class="curr-assembly-box">';
+
+    // 1. Header Banner
+    var locTitle = isVi ? ((assembly.title && assembly.title.vi) || T(assembly.title) || assembly.location) : (T(assembly.title) || assembly.location);
+    html += '<div class="assembly-banner">' +
+      '<div class="assembly-badge-row">' +
+        '<span class="assembly-loc-badge">📍 ' + escapeHtml(locTitle) + '</span>' +
+      '</div>' +
+      '<div class="assembly-theme-row">' +
+        '<span class="assembly-theme-label">' + (isVi ? 'Chủ đề' : TU('주제')) + ':</span> ' +
+        '<span class="assembly-theme-title' + (isVi ? ' vn' : '') + '"' + (isVi ? ' lang="vi"' : '') + '>' + escapeHtml(themeText) + '</span> ' +
+        (scriptureBadge ? '<span class="assembly-theme-sc">' + scriptureBadge + '</span>' : '') +
+        '<button type="button" class="speak-btn sc-speak-btn" data-speak="' + escapeAttr(themeText) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+      '</div>' +
+      (subThemeText ? '<div class="assembly-subtheme-row">' + escapeHtml(subThemeText) + '</div>' : '') +
+    '</div>';
+
+    // 2. Official JW.ORG Links
+    if (assembly.links) {
+      html += '<div class="assembly-links-row">';
+      if (assembly.links.program) {
+        html += '<a class="btn-jw-scripture assembly-link-btn" href="' + escapeAttr(assembly.links.program) + '" target="_blank" rel="noopener noreferrer">' +
+          '<span>📖</span> JW.ORG ' + TU("순회대회 프로그램") + ' ↗</a>';
+      }
+      if (assembly.links.questions) {
+        html += '<a class="btn-jw-scripture assembly-link-btn" href="' + escapeAttr(assembly.links.questions) + '" target="_blank" rel="noopener noreferrer">' +
+          '<span>❓</span> JW.ORG ' + TU("복습 질문") + ' ↗</a>';
+      }
+      html += '</div>';
+    }
+
+    // 3. Program Schedule
+    html += '<div class="assembly-section">' +
+      '<div class="assembly-sec-head"><span>🗓️ ' + TU("순회대회 프로그램") + '</span></div>' +
+      '<div class="assembly-schedule-wrap">';
+
+    (assembly.schedule || []).forEach(function (sec) {
+      var secTitle = isVi ? (sec.section.vi || sec.section) : (sec.section.ko || sec.section);
+      html += '<div class="assembly-sub-head">' + escapeHtml(secTitle) + '</div><div class="assembly-items-list">';
+      (sec.items || []).forEach(function (item) {
+        var itemMain = isVi ? item.vi : item.ko;
+        var itemSub = isVi ? item.ko : item.vi;
+        var songLink = "";
+        if (item.songNum) {
+          songLink = '<span class="assembly-song-pill" data-song-num="' + item.songNum + '" role="button" tabindex="0">🎵 ' + item.songNum + (isVi ? '' : TU('번')) + '</span>';
+        }
+        var formattedMain = typeof formatScriptureHtml === "function" ? formatScriptureHtml(escapeHtml(itemMain)) : escapeHtml(itemMain);
+        html += '<div class="assembly-row' + (item.type === "symposium" ? ' symposium-head' : '') + '">' +
+          '<span class="assembly-time">' + escapeHtml(item.time) + '</span>' +
+          '<div class="assembly-item-body">' +
+            '<div class="assembly-item-main' + (isVi ? ' vn' : '') + '"' + (isVi ? ' lang="vi"' : '') + '>' +
+              formattedMain +
+              (songLink ? ' ' + songLink : '') +
+              '<button type="button" class="speak-btn" data-speak="' + escapeAttr(itemMain) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+            '</div>' +
+            (itemSub && itemSub !== itemMain ? '<div class="assembly-item-sub">' + escapeHtml(itemSub) + '</div>' : '');
+
+        if (item.parts && item.parts.length) {
+          html += '<div class="assembly-symposium-parts">';
+          item.parts.forEach(function (p) {
+            var pMain = isVi ? p.vi : p.ko;
+            var pSub = isVi ? p.ko : p.vi;
+            html += '<div class="assembly-symposium-part">' +
+              '<span class="assembly-part-dot">•</span> ' +
+              '<span class="assembly-part-text' + (isVi ? ' vn' : '') + '"' + (isVi ? ' lang="vi"' : '') + '>' + escapeHtml(pMain) + '</span>' +
+              '<button type="button" class="speak-btn" data-speak="' + escapeAttr(pMain) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+              (pSub ? '<span class="assembly-part-sub">(' + escapeHtml(pSub) + ')</span>' : '') +
+            '</div>';
+          });
+          html += '</div>';
+        }
+
+        html += '</div></div>';
+      });
+      html += '</div>';
+    });
+    html += '</div></div>';
+
+    // 4. Review Questions
+    html += '<div class="assembly-section">' +
+      '<div class="assembly-sec-head"><span>❓ ' + TU("복습 질문") + '</span></div>' +
+      '<div class="assembly-questions-list">';
+
+    (assembly.questions || []).forEach(function (q) {
+      var qMain = isVi ? q.vi : q.ko;
+      var qSub = isVi ? q.ko : q.vi;
+      var formattedMain = typeof formatScriptureHtml === "function" ? formatScriptureHtml(escapeHtml(qMain)) : escapeHtml(qMain);
+      var formattedSub = typeof formatScriptureHtml === "function" ? formatScriptureHtml(escapeHtml(qSub)) : escapeHtml(qSub);
+
+      html += '<div class="assembly-q-card">' +
+        '<div class="assembly-q-row">' +
+          '<span class="assembly-q-badge">' + q.num + '</span>' +
+          '<div class="assembly-q-body">' +
+            '<div class="assembly-q-main' + (isVi ? ' vn' : '') + '"' + (isVi ? ' lang="vi"' : '') + '>' +
+              formattedMain +
+              '<button type="button" class="speak-btn" data-speak="' + escapeAttr(qMain) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+            '</div>' +
+            (qSub && qSub !== qMain ? '<div class="assembly-q-sub">' + formattedSub + '</div>' : '') +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    });
+
+    html += '</div></div>';
+
+    html += '</div>';
+    return html;
+  }
+
   // --- Scripture Citations and Mini Popup Modal ---
   var cachedBibleCitationRegex = null;
   function getBibleCitationRegex() {
@@ -12575,6 +12704,17 @@ function verifyDistribution(units, dist, pins) {
   document.addEventListener("click", function (e) {
     if (lyricWordPop && e.target.closest && !e.target.closest(".lyric-word-pop")) lyricWordClose();
     if (!e.target.closest) return;
+    var songPill = e.target.closest(".assembly-song-pill");
+    if (songPill) {
+      e.preventDefault();
+      var sNum = songPill.dataset.songNum;
+      if (sNum) {
+        var sBtn = document.querySelector('.tab-btn[data-tab="song"], .nav-item[data-tab="song"]');
+        if (sBtn) sBtn.click();
+        if (typeof selectKingdomSong === "function") selectKingdomSong(Number(sNum));
+      }
+      return;
+    }
     var scBadge = e.target.closest(".scripture-badge");
     if (scBadge) {
       e.preventDefault();
@@ -12621,6 +12761,7 @@ function verifyDistribution(units, dist, pins) {
   window.closeScripturePopup = closeScripturePopup;
   window.formatScriptureHtml = formatScriptureHtml;
   window.parseScriptureRef = parseScriptureRef;
+  window.renderCircuitAssemblyHtml = renderCircuitAssemblyHtml;
   window.__hanoiKo = { syllable: hanoiKoreanSyllable, word: hanoiKoreanWord, ipa: viIpaWord, ipaSyllable: viIpaSyllable };   // tests/test_lyric_word_popup.js
   window.addEventListener("scroll", lyricWordClose, true);
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") lyricWordClose(); });
