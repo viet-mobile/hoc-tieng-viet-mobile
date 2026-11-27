@@ -626,6 +626,7 @@
     "길찾기 대화문": {"vi": "Hội thoại hỏi đường", "cs": "Dialogy pro orientaci a hledání cesty", "zh_cn": "问路对话", "zh": "問路對話", "en": "Asking-for-Directions Dialogue", "fr": "Dialogues pour demander son chemin", "de": "Wegbeschreibungs-Dialoge", "hu": "Útbaigazítási beszélgetések", "id": "Percakapan Petunjuk Arah", "ja": "道案内の会話文", "pl": "Dialogi dotyczące pytania o drogę"},
     "A–Z 문법 사전": {"vi": "Từ điển ngữ pháp A–Z", "cs": "Mluvnický slovník A–Z", "zh_cn": "A–Z 文法辞典", "zh": "A–Z 文法辭典", "en": "A–Z Grammar Dictionary", "fr": "Dictionnaire de grammaire de A à Z", "de": "A–Z Grammatiklexikon", "hu": "A–Z nyelvtani szótár", "id": "Kamus Tata Bahasa A–Z", "ja": "A–Z 文法辞典", "pl": "Leksykon gramatyczny od A do Z"},
     "왕국 노래": {"vi": "Bài hát Nước Trời", "cs": "Písně Království", "zh_cn": "王国诗歌", "zh": "王國詩歌", "en": "Kingdom Songs", "fr": "Cantiques du Royaume", "de": "Königreichslieder", "hu": "Királyság-énekek", "id": "Lagu Kerajaan", "ja": "王国の歌", "pl": "Pieśni Królestwa"},
+    "왕국 노래로 이동": {"vi": "Đi đến Bài hát Nước Trời", "cs": "Přejít na Píseň Království", "zh_cn": "前往王国诗歌", "zh": "前往王國詩歌", "en": "Go to Kingdom Song", "fr": "Aller au cantique du Royaume", "de": "Zum Königreichslied", "hu": "Ugrás a Királyság-énekhez", "id": "Buka Lagu Kerajaan", "ja": "王国の歌へ移動", "pl": "Przejdź do Pieśni Królestwa"},
     "번": {"vi": "", "cs": "×", "zh_cn": "首", "zh": "首", "en": "", "fr": "", "de": "", "hu": "×", "id": "×", "ja": "番", "pl": ""},
     "기도 준비하기": {"vi": "Chuẩn bị lời cầu nguyện", "cs": "Příprava k modlitbě", "zh_cn": "准备祷告", "zh": "準備禱告", "en": "Preparing a Prayer", "fr": "Préparer une prière", "de": "Ein Gebet vorbereiten", "hu": "Felkészülés az imára", "id": "Mempersiapkan Doa", "ja": "祈りを準備する", "pl": "Przygotowanie modlitwy"},
     "맞음": {"vi": "đúng", "cs": "Správně", "zh_cn": "答对", "zh": "答對", "en": "correct", "fr": "correct", "de": "Richtig", "hu": "Helyes", "id": "Benar", "ja": "正解", "pl": "Prawidłowo"},
@@ -7000,8 +7001,9 @@
     }
     if (anchor && anchor.indexOf('song-') === 0) {
       var snum = parseInt(anchor.replace('song-', ''), 10);
-      if (snum && typeof renderCurrSongs === "function") {
-        renderCurrSongs(snum);
+      if (snum && typeof selectKingdomSong === "function") {
+        selectKingdomSong(snum);
+        return;
       }
     }
     // For links that point at one specific sub-section of a subtab's content (e.g. a particular
@@ -7599,8 +7601,11 @@
       [[d.reviews || [], "review", "복습"], [d.previews || [], "preview", "예습"], [d.vocab || [], "vocab", "어휘"]].forEach(function (group) {
         courseVisible(group[0], wk).forEach(function (it) {
           var targetWk = it._wk === undefined ? wk : it._wk;
+          var sMatch = (it.link && it.link.anchor && String(it.link.anchor).match(/^song-(\d+)$/));
+          var songNum = it.songNum || (sMatch ? parseInt(sMatch[1], 10) : null);
+          var pill = songNum ? ' <span class="assembly-song-pill" data-song-num="' + songNum + '" role="button" tabindex="0" title="' + songNum + (currentLang === "vi" ? '' : TU('번')) + ' ' + TU('왕국 노래로 이동') + '">🎵 ' + songNum + (currentLang === "vi" ? '' : TU('번')) + '</span>' : '';
           rows += '<div class="curr-assign-row"><span class="curr-assign-kind ' + group[1] + '">' + TU(group[2]) + '</span><span class="curr-assign-text">' +
-            escapeHtml(courseAssignText(it, targetWk)) + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, targetWk)) + '</div>';
+            escapeHtml(courseAssignText(it, targetWk)) + pill + '</span>' + currLinkBtn(curriculumLinkForWeek(it.link, targetWk)) + '</div>';
         });
       });
       if (rows) body += '<div class="curr-assign-day-group"' + assignDayAttr(d.day) + '><div class="curr-assign-day-label">' + escapeHtml(T(d.day)) + '</div>' + rows + '</div>';
@@ -7814,7 +7819,7 @@
       var title = song ? String(song.title[l] || song.title.en || song.title.vi || "").replace(/^\d+\s+/, "") : "";
       text[l] = w + ": " + lab + (title ? " " + title : "");
     });
-    return { text: text, link: { tab: "curriculum", subAttr: "curriculum", subVal: "song", anchor: "song-" + num }, _song: kind };
+    return { text: text, link: { tab: "curriculum", subAttr: "curriculum", subVal: "song", anchor: "song-" + num }, _song: kind, songNum: num };
   }
   function courseSongItems(key) {
     var pair = (regionalFlag("songs") || {})[String(key)];
@@ -8054,13 +8059,23 @@
     var person = prayers && prayers[kind === "open" ? 0 : 1];
     if (!item && !person) return null;
     var text = item ? T(item.text) : courseServiceWord(kind);
-    return { html: escapeHtml(text) + (item ? ' ' + currLinkBtn(item.link) : '') + (person ? ' · ' + escapeHtml(TU("기도")) + ': ' + coursePrayerPersonHtml(person) + ' ' + currLinkBtn({tab:"sentence",subAttr:"sentence",subVal:"prayer",anchor:"prayer-prep"}) : '') };
+    var pill = (item && item.songNum) ? ' <span class="assembly-song-pill" data-song-num="' + item.songNum + '" role="button" tabindex="0" title="' + item.songNum + (currentLang === "vi" ? '' : TU('번')) + ' ' + TU('왕국 노래로 이동') + '">🎵 ' + item.songNum + (currentLang === "vi" ? '' : TU('번')) + '</span>' : '';
+    return { html: escapeHtml(text) + pill + (item ? ' ' + currLinkBtn(item.link) : '') + (person ? ' · ' + escapeHtml(TU("기도")) + ': ' + coursePrayerPersonHtml(person) + ' ' + currLinkBtn({tab:"sentence",subAttr:"sentence",subVal:"prayer",anchor:"prayer-prep"}) : '') };
   }
   function courseServiceHtml(key) {
     var pr = (regionalFlag("prayers") || {})[String(key)];
     if (!pr) return "";
     var songs = (regionalFlag("songs") || {})[String(key)] || [];
-    function song(i) { return songs[i] ? '<span class="vn">' + escapeHtml(songs[i]) + '</span>' : escapeHtml(courseServiceWord("song")); }
+    function song(i) {
+      var s = songs[i];
+      if (!s) return escapeHtml(courseServiceWord("song"));
+      var m = String(s).match(/(\d+)/);
+      var num = m ? parseInt(m[1], 10) : 0;
+      if (num) {
+        return '<span class="assembly-song-pill" data-song-num="' + num + '" role="button" tabindex="0" title="' + num + (currentLang === "vi" ? '' : TU('번')) + ' ' + TU('왕국 노래로 이동') + '">🎵 ' + escapeHtml(s) + '</span>';
+      }
+      return '<span class="vn">' + escapeHtml(s) + '</span>';
+    }
     return '<div class="curr-service">' +
       '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("open")) + '</span><span>' + song(0) + ' · ' + coursePrayerPersonHtml(pr[0]) + '</span></div>' +
       '<div class="curr-service-row"><span class="curr-service-label">' + escapeHtml(courseServiceWord("close")) + '</span><span>' + song(1) + ' · ' + coursePrayerPersonHtml(pr[1]) + '</span></div>' +
@@ -8652,7 +8667,10 @@ function verifyDistribution(units, dist, pins) {
       TU("자료 미정") + '</div></div></div></div></div>';
   }
   function regionalLearningRow(it, unit) {
-    return '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, unit)) +
+    var sMatch = (it.link && it.link.anchor && String(it.link.anchor).match(/^song-(\d+)$/));
+    var songNum = it.songNum || (sMatch ? parseInt(sMatch[1], 10) : null);
+    var pill = songNum ? ' <span class="assembly-song-pill" data-song-num="' + songNum + '" role="button" tabindex="0" title="' + songNum + (currentLang === "vi" ? '' : TU('번')) + ' ' + TU('왕국 노래로 이동') + '">🎵 ' + songNum + (currentLang === "vi" ? '' : TU('번')) + '</span>' : '';
+    return '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, unit)) + pill +
       (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') + '</div>' +
       currLinkBtn(curriculumLinkForWeek(it.link, unit)) + '</div>';
   }
@@ -9203,7 +9221,10 @@ function verifyDistribution(units, dist, pins) {
               displayItems.forEach(function (it) {
                 var itWeek = it._wk === undefined ? slot.week : it._wk;
                 var scopeNote = classScopeNote(it, slot.week, curriculumItemTextKo(it, itWeek));
-                html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, itWeek)) +
+                var sMatch = (it.link && it.link.anchor && String(it.link.anchor).match(/^song-(\d+)$/));
+                var songNum = it.songNum || (sMatch ? parseInt(sMatch[1], 10) : null);
+                var pill = songNum ? ' <span class="assembly-song-pill" data-song-num="' + songNum + '" role="button" tabindex="0" title="' + songNum + (currentLang === "vi" ? '' : TU('번')) + ' ' + TU('왕국 노래로 이동') + '">🎵 ' + songNum + (currentLang === "vi" ? '' : TU('번')) + '</span>' : '';
+                html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, itWeek)) + pill +
                   (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') +
                   (scopeNote ? '<span class="curr-item-scope">' + escapeHtml(scopeNote) + '</span>' : '') + '</div>' +
                   currLinkBtn(curriculumLinkForWeek(it.link, itWeek)) + '</div>';
@@ -9283,7 +9304,10 @@ function verifyDistribution(units, dist, pins) {
           currChev() + '</button>' +
           '<div class="group-body"><div class="curr-item-list">';
         curriculumDisplayItems(w).forEach(function (it) {
-          html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, w.week)) +
+          var sMatch = (it.link && it.link.anchor && String(it.link.anchor).match(/^song-(\d+)$/));
+          var songNum = it.songNum || (sMatch ? parseInt(sMatch[1], 10) : null);
+          var pill = songNum ? ' <span class="assembly-song-pill" data-song-num="' + songNum + '" role="button" tabindex="0" title="' + songNum + (currentLang === "vi" ? '' : TU('번')) + ' ' + TU('왕국 노래로 이동') + '">🎵 ' + songNum + (currentLang === "vi" ? '' : TU('번')) + '</span>' : '';
+          html += '<div class="curr-item-row"><div class="curr-item-text">' + escapeHtml(curriculumItemText(it, w.week)) + pill +
             (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') + '</div>' +
             currLinkBtn(curriculumLinkForWeek(it.link, w.week)) + '</div>';
         });
@@ -10938,19 +10962,19 @@ function verifyDistribution(units, dist, pins) {
         var itemSub = isVi ? item.ko : item.vi;
         var songLink = "";
         if (item.songNum) {
-          songLink = '<span class="assembly-song-pill" data-song-num="' + item.songNum + '" role="button" tabindex="0">🎵 ' + item.songNum + (isVi ? '' : TU('번')) + '</span>';
+          songLink = '<span class="assembly-song-pill" data-song-num="' + item.songNum + '" role="button" tabindex="0" title="' + item.songNum + (isVi ? '' : TU('번')) + ' ' + TU('왕국 노래로 이동') + '">🎵 ' + item.songNum + (isVi ? '' : TU('번')) + '</span>';
         }
         var formattedMain = typeof formatScriptureHtml === "function" ? formatScriptureHtml(escapeHtml(itemMain)) : escapeHtml(itemMain);
         var formattedSub = typeof formatScriptureHtml === "function" ? formatScriptureHtml(escapeHtml(itemSub)) : escapeHtml(itemSub);
         html += '<div class="assembly-row' + (item.type === "symposium" ? ' symposium-head' : '') + '">' +
           '<span class="assembly-time">' + escapeHtml(item.time) + '</span>' +
           '<div class="assembly-item-body">' +
-            '<div class="assembly-item-main' + (isVi ? ' vn' : '') + '"' + (isVi ? ' lang="vi"' : '') + '>' +
+            '<div class="assembly-item-main' + (isVi ? ' vn' : '') + (item.songNum ? ' assembly-song-title' : '') + '"' + (isVi ? ' lang="vi"' : '') + (item.songNum ? ' data-song-num="' + item.songNum + '" role="button" tabindex="0" title="' + item.songNum + (isVi ? '' : TU('번')) + ' ' + TU('왕국 노래로 이동') + '"' : '') + '>' +
               formattedMain +
               (songLink ? ' ' + songLink : '') +
               '<button type="button" class="speak-btn" data-speak="' + escapeAttr(itemMain) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
             '</div>' +
-            (itemSub && itemSub !== itemMain ? '<div class="assembly-item-sub' + (!isVi ? ' vn' : '') + '"' + (!isVi ? ' lang="vi"' : '') + '>' + formattedSub + '</div>' : '');
+            (itemSub && itemSub !== itemMain ? '<div class="assembly-item-sub' + (!isVi ? ' vn' : '') + '"' + (!isVi ? ' lang="vi"' : '') + (item.songNum ? ' data-song-num="' + item.songNum + '" role="button" tabindex="0" style="cursor:pointer;"' : '') + '>' + formattedSub + '</div>' : '');
 
         if (item.parts && item.parts.length) {
           html += '<div class="assembly-symposium-parts">';
@@ -12720,19 +12744,92 @@ function verifyDistribution(units, dist, pins) {
     pop.style.top = top + "px";
     lyricWordPop = pop;
   }
+  function selectKingdomSong(songNum) {
+    var num = parseInt(songNum, 10);
+    if (!num) return;
+    if (typeof cancelSpeech === "function") cancelSpeech();
+    if (typeof songSegStop === "function") songSegStop();
+    if (typeof lyricWordClose === "function") lyricWordClose();
+    var modal = document.getElementById("song-picker-modal");
+    if (modal) {
+      modal.style.display = "none";
+      modal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    // 1. Activate main [문장] tab
+    activateTab("sentence", false);
+
+    // 2. Activate subtab [노래]
+    var songSubBtn = document.querySelector('.subtab-btn[data-sentence="song"]');
+    var panes = {
+      pdf: document.getElementById("sentence-pdf-pane"),
+      lff: document.getElementById("sentence-lff-pane"),
+      lpd: document.getElementById("sentence-lpd-pane"),
+      wt: document.getElementById("sentence-wt-pane"),
+      song: document.getElementById("sentence-song-pane"),
+      prayer: document.getElementById("sentence-prayer-pane"),
+      reader: document.getElementById("sentence-reader-pane"),
+      phrases: document.getElementById("sentence-phrases-pane")
+    };
+    var sentenceBtns = document.querySelectorAll(".subtab-btn[data-sentence]");
+    if (sentenceBtns.length) {
+      sentenceBtns.forEach(function (b) { b.setAttribute("aria-selected", "false"); });
+    }
+    if (songSubBtn) {
+      songSubBtn.setAttribute("aria-selected", "true");
+    }
+    Object.keys(panes).forEach(function (k) {
+      if (panes[k]) panes[k].style.display = (k === "song") ? "" : "none";
+    });
+    recordSubtab("sentence", "song");
+
+    // 3. Select [왕국 노래] kind
+    if (typeof selectSongKind === "function") {
+      selectSongKind("kingdom");
+    }
+
+    // 4. Render the song
+    if (typeof renderCurrSongs === "function") {
+      renderCurrSongs(num);
+    }
+
+    // 5. Scroll to the song
+    setTimeout(function () {
+      var target = document.getElementById("song-detail-card") ||
+                   document.querySelector('[data-anchor="song-' + num + '"]') ||
+                   document.getElementById("curr-songs-root");
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 60);
+  }
+  window.selectKingdomSong = selectKingdomSong;
+
   document.addEventListener("click", function (e) {
     if (lyricWordPop && e.target.closest && !e.target.closest(".lyric-word-pop")) lyricWordClose();
     if (!e.target.closest) return;
-    var songPill = e.target.closest(".assembly-song-pill");
-    if (songPill) {
+    var songPill = e.target.closest(".assembly-song-pill, [data-song-num]:not(.song-grid-chip):not(.song-list-row)");
+    if (songPill && !songPill.closest(".song-picker-modal")) {
       e.preventDefault();
+      e.stopPropagation();
       var sNum = songPill.dataset.songNum;
       if (sNum) {
-        var sBtn = document.querySelector('.tab-btn[data-tab="song"], .nav-item[data-tab="song"]');
-        if (sBtn) sBtn.click();
-        if (typeof selectKingdomSong === "function") selectKingdomSong(Number(sNum));
+        selectKingdomSong(Number(sNum));
       }
       return;
+    }
+    var songRow = e.target.closest && e.target.closest(".curr-item-row, .curr-assign-row");
+    if (songRow && !e.target.closest("button, a, input, select, textarea, .speak-btn")) {
+      var songBtn = songRow.querySelector('.curr-link-btn[data-goto-anchor^="song-"]');
+      if (songBtn && songBtn.dataset.gotoAnchor) {
+        var rowSongNum = parseInt(songBtn.dataset.gotoAnchor.replace('song-', ''), 10);
+        if (rowSongNum) {
+          e.preventDefault();
+          selectKingdomSong(rowSongNum);
+          return;
+        }
+      }
     }
     var scBadge = e.target.closest(".scripture-badge");
     if (scBadge) {
@@ -12757,6 +12854,14 @@ function verifyDistribution(units, dist, pins) {
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && activeScriptureModal) {
       closeScripturePopup();
+    }
+    if (e.key === "Enter" || e.key === " ") {
+      var pill = e.target && e.target.closest && e.target.closest(".assembly-song-pill, [data-song-num]:not(.song-grid-chip):not(.song-list-row)");
+      if (pill && !pill.closest(".song-picker-modal")) {
+        e.preventDefault();
+        var sNum = pill.dataset.songNum;
+        if (sNum) selectKingdomSong(Number(sNum));
+      }
     }
   });
   document.addEventListener("change", function (e) {
@@ -12905,6 +13010,7 @@ function verifyDistribution(units, dist, pins) {
 
     var songs = (typeof SONGS_DATA !== "undefined" && SONGS_DATA) || [];
     if (!songs.length) {
+      if (typeof selectSongKind === "function") selectSongKind("kingdom");
       var htmlFallback = '<div class="p-section"><h3>' + TU("왕국 노래") + '</h3>';
       KINGDOM_SONGS.forEach(function (s) {
         var songLines = [];
