@@ -10873,8 +10873,10 @@ function verifyDistribution(units, dist, pins) {
 
     var themeText = isVi ? assembly.theme.vi : assembly.theme.ko;
     var subThemeText = isVi ? assembly.theme.ko : assembly.theme.vi;
-    var scriptureText = isVi ? (assembly.theme.scripture || "") : (assembly.theme.scripture || "");
+    var scriptureText = isVi ? (assembly.theme.scripture || assembly.theme.scripture_vi || "") : (assembly.theme.scripture || assembly.theme.scripture_ko || "");
+    var subScriptureText = isVi ? (assembly.theme.scripture_ko || "") : (assembly.theme.scripture_vi || "");
     var scriptureBadge = typeof formatScriptureHtml === "function" ? formatScriptureHtml(escapeHtml(scriptureText)) : escapeHtml(scriptureText);
+    var subScriptureBadge = typeof formatScriptureHtml === "function" ? formatScriptureHtml(escapeHtml(subScriptureText)) : escapeHtml(subScriptureText);
 
     var html = '<div class="curr-assembly-box">';
 
@@ -10890,12 +10892,28 @@ function verifyDistribution(units, dist, pins) {
         (scriptureBadge ? '<span class="assembly-theme-sc">' + scriptureBadge + '</span>' : '') +
         '<button type="button" class="speak-btn sc-speak-btn" data-speak="' + escapeAttr(themeText) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
       '</div>' +
-      (subThemeText ? '<div class="assembly-subtheme-row">' + escapeHtml(subThemeText) + '</div>' : '') +
+      (subThemeText ? '<div class="assembly-subtheme-row">' + escapeHtml(subThemeText) + (subScriptureBadge ? ' <span class="assembly-theme-sc">' + subScriptureBadge + '</span>' : '') + '</div>' : '') +
     '</div>';
 
     // 2. Official JW.ORG Links
     if (assembly.links) {
       html += '<div class="assembly-links-row">';
+      if (assembly.links.program_vi) {
+        html += '<a class="btn-jw-scripture assembly-link-btn" href="' + escapeAttr(assembly.links.program_vi) + '" target="_blank" rel="noopener noreferrer">' +
+          '<span>📖</span> JW.ORG ' + TU("순회대회 프로그램") + ' (VI) ↗</a>';
+      }
+      if (assembly.links.questions_vi) {
+        html += '<a class="btn-jw-scripture assembly-link-btn" href="' + escapeAttr(assembly.links.questions_vi) + '" target="_blank" rel="noopener noreferrer">' +
+          '<span>❓</span> JW.ORG ' + TU("복습 질문") + ' (VI) ↗</a>';
+      }
+      if (assembly.links.program_ko) {
+        html += '<a class="btn-jw-scripture assembly-link-btn" href="' + escapeAttr(assembly.links.program_ko) + '" target="_blank" rel="noopener noreferrer">' +
+          '<span>📖</span> JW.ORG ' + TU("순회대회 프로그램") + ' (KO) ↗</a>';
+      }
+      if (assembly.links.questions_ko) {
+        html += '<a class="btn-jw-scripture assembly-link-btn" href="' + escapeAttr(assembly.links.questions_ko) + '" target="_blank" rel="noopener noreferrer">' +
+          '<span>❓</span> JW.ORG ' + TU("복습 질문") + ' (KO) ↗</a>';
+      }
       if (assembly.links.program) {
         html += '<a class="btn-jw-scripture assembly-link-btn" href="' + escapeAttr(assembly.links.program) + '" target="_blank" rel="noopener noreferrer">' +
           '<span>📖</span> JW.ORG ' + TU("순회대회 프로그램") + ' ↗</a>';
@@ -10923,6 +10941,7 @@ function verifyDistribution(units, dist, pins) {
           songLink = '<span class="assembly-song-pill" data-song-num="' + item.songNum + '" role="button" tabindex="0">🎵 ' + item.songNum + (isVi ? '' : TU('번')) + '</span>';
         }
         var formattedMain = typeof formatScriptureHtml === "function" ? formatScriptureHtml(escapeHtml(itemMain)) : escapeHtml(itemMain);
+        var formattedSub = typeof formatScriptureHtml === "function" ? formatScriptureHtml(escapeHtml(itemSub)) : escapeHtml(itemSub);
         html += '<div class="assembly-row' + (item.type === "symposium" ? ' symposium-head' : '') + '">' +
           '<span class="assembly-time">' + escapeHtml(item.time) + '</span>' +
           '<div class="assembly-item-body">' +
@@ -10931,7 +10950,7 @@ function verifyDistribution(units, dist, pins) {
               (songLink ? ' ' + songLink : '') +
               '<button type="button" class="speak-btn" data-speak="' + escapeAttr(itemMain) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
             '</div>' +
-            (itemSub && itemSub !== itemMain ? '<div class="assembly-item-sub">' + escapeHtml(itemSub) + '</div>' : '');
+            (itemSub && itemSub !== itemMain ? '<div class="assembly-item-sub' + (!isVi ? ' vn' : '') + '"' + (!isVi ? ' lang="vi"' : '') + '>' + formattedSub + '</div>' : '');
 
         if (item.parts && item.parts.length) {
           html += '<div class="assembly-symposium-parts">';
@@ -10942,7 +10961,7 @@ function verifyDistribution(units, dist, pins) {
               '<span class="assembly-part-dot">•</span> ' +
               '<span class="assembly-part-text' + (isVi ? ' vn' : '') + '"' + (isVi ? ' lang="vi"' : '') + '>' + escapeHtml(pMain) + '</span>' +
               '<button type="button" class="speak-btn" data-speak="' + escapeAttr(pMain) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
-              (pSub ? '<span class="assembly-part-sub">(' + escapeHtml(pSub) + ')</span>' : '') +
+              (pSub ? '<span class="assembly-part-sub' + (!isVi ? ' vn' : '') + '"' + (!isVi ? ' lang="vi"' : '') + '>(' + escapeHtml(pSub) + ')</span>' : '') +
             '</div>';
           });
           html += '</div>';
@@ -10973,7 +10992,7 @@ function verifyDistribution(units, dist, pins) {
               formattedMain +
               '<button type="button" class="speak-btn" data-speak="' + escapeAttr(qMain) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
             '</div>' +
-            (qSub && qSub !== qMain ? '<div class="assembly-q-sub">' + formattedSub + '</div>' : '') +
+            (qSub && qSub !== qMain ? '<div class="assembly-q-sub' + (!isVi ? ' vn' : '') + '"' + (!isVi ? ' lang="vi"' : '') + '>' + formattedSub + '</div>' : '') +
           '</div>' +
         '</div>' +
       '</div>';
@@ -12722,7 +12741,7 @@ function verifyDistribution(units, dist, pins) {
       openScripturePopup(ref);
       return;
     }
-    if (currentLang !== "ko" && !e.target.closest(".scripture-vi, .verse-vi")) return;
+    if (currentLang !== "ko" && !e.target.closest(".scripture-vi, .verse-vi, .assembly-item-main, .assembly-q-main, .assembly-part-text, .assembly-theme-title, .assembly-item-sub.vn, .assembly-q-sub.vn")) return;
     if (e.target.closest("button, a, input, select, textarea, .speak-btn, .phrase-star, .phrase-del, .curr-link-btn, .jw-link, .dict-link, .reading-btn, .lff-part-head, .group-head, .subtab-btn, .tab-btn, .nav-item, .pill-btn, .btn, .icon-btn")) return;
     if (e.target.closest(".talk-kr, .reader-tr, .card-translation, .rhyme-word-ex-mean, .rw-gloss, .song-target-row, .lyric-target, .lyric-target-row, .pdf-sent-num, .target-lang, .target-translation, .tr-text, .tr-row, .box-target")) return;
     if (window.getSelection && String(window.getSelection()).length) return;
@@ -12730,7 +12749,7 @@ function verifyDistribution(units, dist, pins) {
     var word = lyricWordAt(el, e.clientX, e.clientY);
     if (!word) return;
     var dict = vietWordDictionary(), key = lyricWordKey(word.text);
-    var isLyricOrScripture = !!(el.closest && el.closest(".lyric-vi, .scripture-vi, .verse-vi"));
+    var isLyricOrScripture = !!(el.closest && el.closest(".lyric-vi, .scripture-vi, .verse-vi, .assembly-item-main, .assembly-q-main, .assembly-part-text, .assembly-theme-title, .assembly-item-sub.vn, .assembly-q-sub.vn"));
     if (isLyricOrScripture || (dict && dict.meaning && dict.meaning[key])) {
       lyricWordShow(word);
     }
