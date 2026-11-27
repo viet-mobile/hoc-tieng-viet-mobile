@@ -3849,39 +3849,50 @@
   /* MWB Program Card & Student Assignment Slots */
   .mwb-program-card {
     border-left: 4px solid var(--accent, #00897b);
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 12px;
+    margin-bottom: 14px;
+    background: var(--surface, #ffffff);
   }
   .mwb-head-badge {
     background: rgba(0, 137, 123, 0.12) !important;
     color: #00796b !important;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 0.98rem;
   }
   .mwb-card-intro {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 8px;
-    padding: 8px 12px;
+    gap: 10px;
+    padding: 10px 14px;
     background: var(--surface-sunken, #f8fafc);
     border-radius: 8px;
     margin-bottom: 12px;
-    font-size: 0.88rem;
+  }
+  .mwb-reading-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }
   .mwb-reading-line {
     color: var(--ink, #1e293b);
+    font-size: 0.96rem;
   }
   .mwb-reading-val {
     color: #00796b;
-    font-weight: 600;
+    font-weight: 700;
+  }
+  .mwb-reading-ko {
+    font-size: 0.86rem;
+    color: var(--ink-soft, #64748b);
   }
   .mwb-wol-links {
     display: flex;
     gap: 12px;
   }
   .mwb-wol-link {
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     color: #00796b;
     text-decoration: none;
     font-weight: 600;
@@ -3889,102 +3900,160 @@
   .mwb-wol-link:hover {
     text-decoration: underline;
   }
+  .mwb-officers-card {
+    margin: 8px 0 14px 0;
+    padding: 10px 14px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+  }
+  .mwb-officer-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+  }
+  .mwb-officer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+    min-width: 140px;
+  }
+  .mwb-officer-lbl-vi {
+    font-size: 0.94rem;
+    font-weight: 700;
+    color: #166534;
+  }
+  .mwb-officer-lbl-ko {
+    font-size: 0.82rem;
+    color: #4b5563;
+  }
   .mwb-section {
-    margin-top: 14px;
-    padding-top: 10px;
+    margin-top: 16px;
+    padding-top: 12px;
     border-top: 1px dashed var(--border-soft, #e2e8f0);
   }
   .mwb-sec-title {
-    font-weight: 700;
-    font-size: 0.92rem;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
-  .mwb-sec-treasures .mwb-sec-title {
+  .mwb-sec-title-vi {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .mwb-sec-title-ko {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--ink-soft, #64748b);
+    margin-top: 2px;
+  }
+  .mwb-sec-treasures .mwb-sec-title-vi {
     color: #00796b;
   }
-  .mwb-sec-ministry .mwb-sec-title {
+  .mwb-sec-ministry .mwb-sec-title-vi {
     color: #b78103;
   }
-  .mwb-sec-living .mwb-sec-title {
+  .mwb-sec-living .mwb-sec-title-vi {
     color: #8e24aa;
   }
   .mwb-song-row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 6px;
-    padding: 6px 10px;
-    margin: 6px 0;
-    font-size: 0.88rem;
+    gap: 8px;
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-size: 0.94rem;
     background: rgba(0, 0, 0, 0.03);
     border-radius: 6px;
   }
   .mwb-song-vi {
-    color: var(--ink-soft, #64748b);
-    font-size: 0.82rem;
+    color: var(--ink, #1e293b);
+    font-weight: 600;
+    font-size: 0.92rem;
   }
   .mwb-time-badge {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--ink-soft, #64748b);
   }
   .mwb-item-block {
-    padding: 8px 10px;
-    margin-bottom: 8px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
     background: var(--surface-card, #ffffff);
     border: 1px solid var(--border-soft, #e2e8f0);
-    border-radius: 6px;
+    border-radius: 8px;
   }
   .mwb-item-head {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--ink, #1e293b);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
   }
   .mwb-item-num {
+    font-size: 1.08rem;
     font-weight: 700;
     color: #00796b;
+    line-height: 1.35;
+    flex-shrink: 0;
+  }
+  .mwb-item-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
   }
   .mwb-item-title-vi {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--ink, #1e293b);
+    line-height: 1.35;
+  }
+  .mwb-item-title-ko {
+    font-size: 0.9rem;
+    font-weight: 500;
     color: var(--ink-soft, #64748b);
-    font-weight: 400;
-    font-size: 0.85rem;
+    line-height: 1.35;
   }
   .mwb-item-details {
-    margin-top: 6px;
-    font-size: 0.84rem;
-    line-height: 1.45;
+    margin-top: 8px;
+    line-height: 1.5;
   }
   .mwb-detail-row {
-    margin-top: 4px;
+    margin-top: 6px;
     padding-left: 10px;
-    border-left: 2px solid var(--border-soft, #cbd5e1);
-  }
-  .mwb-detail-ko {
-    color: var(--ink, #334155);
+    border-left: 3px solid var(--border-soft, #cbd5e1);
   }
   .mwb-detail-vi {
+    color: var(--ink, #1e293b);
+    font-size: 0.96rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  .mwb-detail-ko {
     color: var(--ink-soft, #64748b);
-    font-style: italic;
-    font-size: 0.8rem;
+    font-size: 0.88rem;
+    margin-top: 3px;
+    line-height: 1.45;
   }
   .mwb-student-slot {
-    margin-top: 8px;
-    padding: 6px 10px;
+    margin-top: 10px;
+    padding: 8px 12px;
     background: rgba(183, 129, 3, 0.08);
     border: 1px dashed #d97706;
     border-radius: 6px;
-    font-size: 0.84rem;
+    font-size: 0.92rem;
   }
   .mwb-student-slot.cbs-slot {
     background: rgba(142, 36, 170, 0.08);
     border-color: #8e24aa;
   }
   .mwb-slot-header {
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
   .mwb-slot-tag {
     font-weight: 700;
     color: #b45309;
-    font-size: 0.82rem;
+    font-size: 0.88rem;
   }
   .mwb-student-slot.cbs-slot .mwb-slot-tag {
     color: #7b1fa2;
@@ -3993,20 +4062,22 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px;
   }
   .mwb-slot-field-label {
     font-weight: 600;
     color: var(--ink, #1e293b);
+    font-size: 0.9rem;
   }
   .mwb-slot-field-val {
-    padding: 2px 6px;
+    padding: 3px 8px;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 0.92rem;
     transition: background 0.15s ease;
   }
   .mwb-slot-field-val:hover {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.08);
     text-decoration: underline;
   }
   .mwb-slot-field-val.empty {
@@ -4016,14 +4087,14 @@
   .mwb-slot-field-val.assigned {
     color: #065f46;
     font-weight: 600;
-    background: rgba(16, 185, 129, 0.15);
+    background: rgba(16, 185, 129, 0.18);
   }
   .mwb-slot-divider {
     color: var(--border-soft, #cbd5e1);
   }
   .mwb-closing-comments {
     width: 100%;
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     color: var(--ink-soft, #64748b);
     margin-bottom: 4px;
   }

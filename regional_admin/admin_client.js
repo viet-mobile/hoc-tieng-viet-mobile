@@ -404,7 +404,8 @@
     ['curriculum', 'SECTION C — 원본 커리큘럼'],
     ['plan', 'SECTION D — 회차 배정'],
     ['audit', 'SECTION E — 변경 이력 & 복구'],
-    ['songs', 'SECTION G — 노래 편집·게시']
+    ['songs', 'SECTION G — 노래 편집·게시'],
+    ['mwb', 'SECTION H — 생활과 봉사 집회 임명']
   ];
   var GUIDE = boot.guide || null;
   if (GUIDE) TABS.push(['guide', 'SECTION F — 교사용 지도서']);
@@ -428,6 +429,7 @@
     else if (state.tab === 'audit') renderAudit(c);
     else if (state.tab === 'songs') window.SongsAdmin.render(c, { api: api, esc: esc, toast: toast });
     else if (state.tab === 'guide') renderGuide(c);
+    else if (state.tab === 'mwb') renderMwb(c);
   }
 
   /* ---------------- SECTION F: teacher's guide (read-only, teaching_guide.json) ---------------- */
@@ -1038,6 +1040,26 @@
   document.addEventListener('change', function (ev) {
     var t = ev.target;
     if (t && t.getAttribute && t.getAttribute('data-f') === 'pin') pinItem(t.getAttribute('data-uid'), t.value);
+    if (t && t.getAttribute && t.getAttribute('data-act') === 'mwb-assign-change') {
+      var sKey = t.getAttribute('data-slot-key');
+      var sVal = t.value.trim();
+      var mwbMap = getMwbAssignmentsMap();
+      if (sVal) mwbMap[sKey] = sVal;
+      else delete mwbMap[sKey];
+      saveMwbAssignmentsMap(mwbMap);
+      toast('임명이 변경되었습니다: ' + (sVal || '(미정)'));
+    }
+    if (t && t.getAttribute && t.getAttribute('data-act') === 'mwb-role-toggle') {
+      var mIdx = +t.getAttribute('data-member-idx');
+      var rName = t.getAttribute('data-role');
+      var rList = getMwbRoster();
+      if (rList[mIdx]) {
+        if (!rList[mIdx].roles) rList[mIdx].roles = {};
+        rList[mIdx].roles[rName] = t.checked ? 1 : 0;
+        saveMwbRoster(rList);
+        toast('자격이 변경되었습니다.');
+      }
+    }
   });
 
   document.addEventListener('input', function (ev) {
@@ -1098,8 +1120,489 @@
       case 'a-del': listFor(t).splice(i, 1); state.dirty = true; renderTab(); break;
       case 'restore': restore(id); break;
       case 'plan-apply': applyPlan(t.getAttribute('data-token'), t.getAttribute('data-from'), t.getAttribute('data-to')); break;
+      case 'mwb-subtab':
+        state.mwbSubTab = t.getAttribute('data-subtab');
+        renderTab();
+        break;
+      case 'mwb-auto-assign':
+        var resCounts = executeAutoAssignment();
+        toast('11주차 집회 임명 자동 배정이 완료되었습니다!');
+        renderTab();
+        break;
+      case 'mwb-add-member':
+        state.mwbShowAdd = true;
+        state.mwbEditingIdx = undefined;
+        renderTab();
+        break;
+      case 'mwb-edit-member':
+        state.mwbEditingIdx = +t.getAttribute('data-idx');
+        state.mwbShowAdd = true;
+        renderTab();
+        break;
+      case 'mwb-cancel-member':
+        state.mwbShowAdd = false;
+        state.mwbEditingIdx = undefined;
+        renderTab();
+        break;
+      case 'mwb-save-member':
+        var editIdx = t.getAttribute('data-idx');
+        var ko = ($('mwb-in-ko') && $('mwb-in-ko').value.trim()) || '';
+        var vi = ($('mwb-in-vi') && $('mwb-in-vi').value.trim()) || '';
+        var call = ($('mwb-in-call') && $('mwb-in-call').value.trim()) || '';
+        var gender = ($('mwb-in-gender') && $('mwb-in-gender').value) || 'M';
+        var spouse = ($('mwb-in-spouse') && $('mwb-in-spouse').value.trim()) || undefined;
+        var pOfRaw = ($('mwb-in-parentOf') && $('mwb-in-parentOf').value.trim()) || '';
+        var pOf = pOfRaw ? pOfRaw.split(',').map(function(s){return s.trim();}).filter(Boolean) : undefined;
+        if (!ko) { toast('한국어 성명을 입력해주세요.', true); break; }
+        var curRoster = getMwbRoster();
+        if (editIdx !== '' && curRoster[+editIdx]) {
+          var targetMem = curRoster[+editIdx];
+          targetMem.ko = ko; targetMem.vi = vi; targetMem.call = call; targetMem.gender = gender;
+          if (spouse) targetMem.spouse = spouse; else delete targetMem.spouse;
+          if (pOf && pOf.length) targetMem.parentOf = pOf; else delete targetMem.parentOf;
+        } else {
+          curRoster.push({
+            ko: ko, vi: vi, call: call, gender: gender,
+            spouse: spouse, parentOf: pOf,
+            roles: { ministry: 1, prayer: gender === 'M' ? 1 : 0, gems: gender === 'M' ? 1 : 0, reading: gender === 'M' ? 1 : 0 }
+          });
+        }
+        saveMwbRoster(curRoster);
+        state.mwbShowAdd = false;
+        state.mwbEditingIdx = undefined;
+        toast('성원 정보가 저장되었습니다.');
+        renderTab();
+        break;
+      case 'mwb-del-member':
+        var delIdx = +t.getAttribute('data-idx');
+        var curRoster2 = getMwbRoster();
+        if (curRoster2[delIdx]) {
+          if (confirm(curRoster2[delIdx].ko + ' 성원을 명단에서 삭제하시겠습니까?')) {
+            curRoster2.splice(delIdx, 1);
+            saveMwbRoster(curRoster2);
+            toast('삭제되었습니다.');
+            renderTab();
+          }
+        }
+        break;
+      case 'mwb-reset-roster':
+        if (confirm('성원 명단을 초기 33명 기본값으로 복원하시겠습니까?')) {
+          localStorage.removeItem('jeonju_mwb_roster');
+          toast('성원 명단이 기본값으로 복원되었습니다.');
+          renderTab();
+        }
+        break;
+      case 'mwb-reset-assign':
+        if (confirm('배정표를 기본 자동 배정 값으로 복원하시겠습니까?')) {
+          localStorage.removeItem('jeonju_mwb_assignments');
+          executeAutoAssignment();
+          toast('배정표가 기본값으로 복원되었습니다.');
+          renderTab();
+        }
+        break;
     }
   });
 
   window.addEventListener('DOMContentLoaded', function () { startTranslation(); init(); });
+
+
+  /* ---------------- SECTION H: Christian Life and Ministry Meeting Assignments (생활과 봉사 집회 임명) ---------------- */
+
+  var DEFAULT_MWB_MEMBERS = [{"ko": "김재윤", "vi": "Thành Tín", "call": "anh Tín", "gender": "M", "roles": {"chairman": 0, "prayer": 1, "talk10": 0, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "오호경"}, {"ko": "오호경", "vi": "Hồ Khánh", "call": "chị Khánh", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "김재윤"}, {"ko": "김종배", "vi": "Pháp", "call": "anh Pháp", "gender": "M", "roles": {"chairman": 0, "prayer": 1, "talk10": 0, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "최미순"}, {"ko": "최미순", "vi": "Mỹ Xuân", "call": "chị Xuân", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "김종배"}, {"ko": "박정환", "vi": "Hiếu", "call": "anh Hiếu", "gender": "M", "roles": {"chairman": 0, "prayer": 1, "talk10": 0, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "원혜진", "parentOf": ["박준우", "박유나"]}, {"ko": "원혜진", "vi": "Hiền", "call": "chị Hiền", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "박정환", "parentOf": ["박준우", "박유나"]}, {"ko": "박유나", "vi": "Na", "call": "em Na", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "childOf": ["박정환", "원혜진"]}, {"ko": "박철현", "vi": "Trung Dũng", "call": "anh Dũng", "gender": "M", "roles": {"chairman": 0, "prayer": 1, "talk10": 0, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 0, "cbsRead": 0}}, {"ko": "송제홍", "vi": "Lý", "call": "anh Lý", "gender": "M", "roles": {"chairman": 0, "prayer": 1, "talk10": 0, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "이서희"}, {"ko": "이서희", "vi": "Thụy Vy", "call": "chị Vy", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "송제홍"}, {"ko": "이수연", "vi": "Xuyến", "call": "chị Xuyến", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}}, {"ko": "이종명", "vi": "Minh", "call": "anh Minh", "gender": "M", "roles": {"chairman": 0, "prayer": 1, "talk10": 0, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "이주옥", "parentOf": ["이제희", "이제아"]}, {"ko": "이주옥", "vi": "Ngọc", "call": "chị Ngọc", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "이종명", "parentOf": ["이제희", "이제아"]}, {"ko": "이제희", "vi": "Thiên Vui", "call": "em Vui", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "childOf": ["이종명", "이주옥"]}, {"ko": "이제아", "vi": "Thiên Nga", "call": "em Nga", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "childOf": ["이종명", "이주옥"]}, {"ko": "최영주", "vi": "Ánh Châu", "call": "chị Châu", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}}, {"ko": "한상현", "vi": "Huy", "call": "anh Huy", "gender": "M", "roles": {"chairman": 0, "prayer": 1, "talk10": 0, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 0, "cbsRead": 0}}, {"ko": "한도희", "vi": "Đạo", "call": "anh Đạo", "gender": "M", "roles": {"chairman": 0, "prayer": 1, "talk10": 0, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "서주연", "parentOf": ["한정우"]}, {"ko": "서주연", "vi": "Quyên", "call": "chị Quyên", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "한도희", "parentOf": ["한정우"]}, {"ko": "한정우", "vi": "Chinh Du", "call": "em Du", "gender": "M", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "childOf": ["한도희", "서주연"]}, {"ko": "유계화", "vi": "Hoa", "call": "chị Hoa", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}}, {"ko": "최찬호", "vi": "Lam Phong", "call": "anh Phong", "gender": "M", "roles": {"chairman": 1, "prayer": 1, "talk10": 1, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 1, "cbsRead": 1}, "spouse": "이재순"}, {"ko": "이재순", "vi": "Mỹ Duyên", "call": "chị Duyên", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "최찬호"}, {"ko": "김한빈", "vi": "Dương Bình", "call": "anh Bình", "gender": "M", "roles": {"chairman": 1, "prayer": 1, "talk10": 1, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 1, "cbsRead": 1}, "spouse": "김수민", "parentOf": ["김예나"]}, {"ko": "김수민", "vi": "Ngọc Bích", "call": "chị Bích", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "spouse": "김한빈", "parentOf": ["김예나"]}, {"ko": "김예나", "vi": "Trang Thanh", "call": "em Thanh", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}, "childOf": ["김한빈", "김수민"]}, {"ko": "김동주", "vi": "Minh Phước", "call": "anh Phước", "gender": "M", "roles": {"chairman": 0, "prayer": 1, "talk10": 0, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 0, "cbsRead": 0}}, {"ko": "쩐응옥마이", "vi": "Ngọc Mai", "call": "chị Mai", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}}, {"ko": "김소영", "vi": "Mỹ Tâm", "call": "chị Tâm", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}}, {"ko": "김종현", "vi": "Minh Trường", "call": "anh Trường", "gender": "M", "roles": {"chairman": 1, "prayer": 1, "talk10": 1, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 1, "cbsRead": 1}}, {"ko": "김영임", "vi": "Minh Thương", "call": "chị Thương", "gender": "F", "roles": {"chairman": 0, "prayer": 0, "talk10": 0, "gems": 0, "reading": 0, "ministry": 1, "cbsCond": 0, "cbsRead": 0}}, {"ko": "김대훈", "vi": "Huấn", "call": "anh Huấn", "gender": "M", "roles": {"chairman": 1, "prayer": 1, "talk10": 1, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 1, "cbsRead": 1}}, {"ko": "박준우", "vi": "Duy", "call": "anh Duy", "gender": "M", "roles": {"chairman": 1, "prayer": 1, "talk10": 1, "gems": 1, "reading": 1, "ministry": 1, "cbsCond": 1, "cbsRead": 1}, "childOf": ["박정환", "원혜진"]}];
+  var DEFAULT_MWB_PROGRAMS = [{"meta": {"startDate": "2026-12-07", "endDate": "2026-12-13", "classDate": "2026-12-12", "weekNum": 7, "docid": "202026406"}, "date": {"vi": "NGÀY 7-13 THÁNG 12", "ko": "12월 7-13일"}, "reading": {"vi": "Ê-XÊ-CHI-ÊN 3, 4", "ko": "에스겔 3-4장"}, "songs": [71, 161, 7], "chairman": "김대훈 (Huấn, anh Huấn)", "opening_prayer": "박철현 (Trung Dũng, anh Dũng)", "closing_prayer": "한상현 (Huy, anh Huy)", "items": [{"num": 1, "section": 1, "title": {"vi": "Tại sao chúng ta dạn dĩ rao giảng?", "ko": "우리가 두려움 없이 전파하는 이유"}, "isStudent": false, "isCbs": false, "speaker": "김한빈 (Dương Bình, anh Bình)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 2, "section": 1, "title": {"vi": "Viên ngọc thiêng liêng", "ko": "영적 보물 찾기"}, "isStudent": false, "isCbs": false, "speaker": "최찬호 (Lam Phong, anh Phong)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 3, "section": 1, "title": {"vi": "Đọc Kinh Thánh", "ko": "성경 낭독"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "한도희 (Đạo, anh Đạo)", "assistant": null, "conductor": null, "reader": null}, {"num": 4, "section": 2, "title": {"vi": "Bắt đầu cuộc trò chuyện", "ko": "대화 시작하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김재윤 (Thành Tín, anh Tín)", "assistant": "오호경 (Hồ Khánh, chị Khánh)", "conductor": null, "reader": null}, {"num": 5, "section": 2, "title": {"vi": "Bắt đầu cuộc trò chuyện", "ko": "대화 시작하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김종배 (Pháp, anh Pháp)", "assistant": "최미순 (Mỹ Xuân, chị Xuân)", "conductor": null, "reader": null}, {"num": 6, "section": 2, "title": {"vi": "Đào tạo môn đồ", "ko": "제자가 되도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "박정환 (Hiếu, anh Hiếu)", "assistant": "원혜진 (Hiền, chị Hiền)", "conductor": null, "reader": null}, {"num": 7, "section": 3, "title": {"vi": "Nhu cầu địa phương", "ko": "회중의 필요"}, "isStudent": false, "isCbs": false, "speaker": null, "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 8, "section": 3, "title": {"vi": "Phần học Kinh Thánh của hội thánh", "ko": "회중 성서 연구"}, "isStudent": false, "isCbs": true, "speaker": null, "assignee": null, "assistant": null, "conductor": "김종현 (Minh Trường, anh Trường)", "reader": "박준우 (Duy, anh Duy)"}]}, {"meta": {"startDate": "2026-12-14", "endDate": "2026-12-20", "classDate": "2026-12-19", "weekNum": 8, "docid": "202026407"}, "date": {"vi": "NGÀY 14-20 THÁNG 12", "ko": "12월 14-20일"}, "reading": {"vi": "Ê-XÊ-CHI-ÊN 5, 6", "ko": "에스겔 5-6장"}, "songs": [49, 153, 133], "chairman": "김한빈 (Dương Bình, anh Bình)", "opening_prayer": "최찬호 (Lam Phong, anh Phong)", "closing_prayer": "한도희 (Đạo, anh Đạo)", "items": [{"num": 1, "section": 1, "title": {"vi": "Những người thờ thần tượng khiến ‘lòng Đức Giê-hô-va đau đớn’", "ko": "우상 숭배는 여호와의 마음을 아프게 합니다"}, "isStudent": false, "isCbs": false, "speaker": "김대훈 (Huấn, anh Huấn)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 2, "section": 1, "title": {"vi": "Viên ngọc thiêng liêng", "ko": "영적 보물 찾기"}, "isStudent": false, "isCbs": false, "speaker": "이종명 (Minh, anh Minh)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 3, "section": 1, "title": {"vi": "Đọc Kinh Thánh", "ko": "성경 낭독"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김동주 (Minh Phước, anh Phước)", "assistant": null, "conductor": null, "reader": null}, {"num": 4, "section": 2, "title": {"vi": "Bắt đầu cuộc trò chuyện", "ko": "대화 시작하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "박유나 (Na, em Na)", "assistant": "이서희 (Thụy Vy, chị Vy)", "conductor": null, "reader": null}, {"num": 5, "section": 2, "title": {"vi": "Thăm lại", "ko": "관심이 자라도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "송제홍 (Lý, anh Lý)", "assistant": "한정우 (Chinh Du, em Du)", "conductor": null, "reader": null}, {"num": 6, "section": 2, "title": {"vi": "Anh chị sẽ nói gì?", "ko": "뭐라고 말할 것입니까?"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "이수연 (Xuyến, chị Xuyến)", "assistant": "이주옥 (Ngọc, chị Ngọc)", "conductor": null, "reader": null}, {"num": 7, "section": 3, "title": {"vi": "Tại sao cần tránh tham gia các nghi lễ quốc gia?", "ko": "그리스도인이 애국 의식에 참여하지 않는 이유"}, "isStudent": false, "isCbs": false, "speaker": null, "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 8, "section": 3, "title": {"vi": "Phần học Kinh Thánh của hội thánh", "ko": "회중 성서 연구"}, "isStudent": false, "isCbs": true, "speaker": null, "assignee": null, "assistant": null, "conductor": "박준우 (Duy, anh Duy)", "reader": "김종현 (Minh Trường, anh Trường)"}]}, {"meta": {"startDate": "2026-12-21", "endDate": "2026-12-27", "classDate": "2026-12-26", "weekNum": 9, "docid": "202026408"}, "date": {"vi": "NGÀY 21-27 THÁNG 12", "ko": "12월 21-27일"}, "reading": {"vi": "Ê-XÊ-CHI-ÊN 7, 8", "ko": "에스겔 7-8장"}, "songs": [128, 139, 154], "chairman": "김종현 (Minh Trường, anh Trường)", "opening_prayer": "박정환 (Hiếu, anh Hiếu)", "closing_prayer": "이종명 (Minh, anh Minh)", "items": [{"num": 1, "section": 1, "title": {"vi": "Ngày của Đức Giê-hô-va sẽ đến vào đúng thời điểm", "ko": "여호와의 날은 정해진 때에 올 것입니다"}, "isStudent": false, "isCbs": false, "speaker": "박준우 (Duy, anh Duy)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 2, "section": 1, "title": {"vi": "Viên ngọc thiêng liêng", "ko": "영적 보물 찾기"}, "isStudent": false, "isCbs": false, "speaker": "김종배 (Pháp, anh Pháp)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 3, "section": 1, "title": {"vi": "Đọc Kinh Thánh", "ko": "성경 낭독"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김재윤 (Thành Tín, anh Tín)", "assistant": null, "conductor": null, "reader": null}, {"num": 4, "section": 2, "title": {"vi": "Bắt đầu cuộc trò chuyện", "ko": "대화 시작하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "이제희 (Thiên Vui, em Vui)", "assistant": "이제아 (Thiên Nga, em Nga)", "conductor": null, "reader": null}, {"num": 5, "section": 2, "title": {"vi": "Thăm lại", "ko": "관심이 자라도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "최영주 (Ánh Châu, chị Châu)", "assistant": "서주연 (Quyên, chị Quyên)", "conductor": null, "reader": null}, {"num": 6, "section": 2, "title": {"vi": "Đào tạo môn đồ", "ko": "제자가 되도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "유계화 (Hoa, chị Hoa)", "assistant": "이재순 (Mỹ Duyên, chị Duyên)", "conductor": null, "reader": null}, {"num": 7, "section": 3, "title": {"vi": "Nghĩ đến kết cuộc", "ko": "결과를 미리 생각해 보십시오"}, "isStudent": false, "isCbs": false, "speaker": null, "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 8, "section": 3, "title": {"vi": "Phần học Kinh Thánh của hội thánh", "ko": "회중 성서 연구"}, "isStudent": false, "isCbs": true, "speaker": null, "assignee": null, "assistant": null, "conductor": "김대훈 (Huấn, anh Huấn)", "reader": "김한빈 (Dương Bình, anh Bình)"}]}, {"meta": {"startDate": "2026-12-28", "endDate": "2027-01-03", "classDate": "2027-01-02", "weekNum": 10, "docid": "202026409"}, "date": {"vi": "NGÀY 28 THÁNG 12 NĂM 2026–NGÀY 3 THÁNG 1 NĂM 2027", "ko": "2026년 12월 28일–2027년 1월 3일"}, "reading": {"vi": "Ê-XÊ-CHI-ÊN 9, 10", "ko": "에스겔 9-10장"}, "songs": [119, 60, 135], "chairman": "최찬호 (Lam Phong, anh Phong)", "opening_prayer": "김동주 (Minh Phước, anh Phước)", "closing_prayer": "송제홍 (Lý, anh Lý)", "items": [{"num": 1, "section": 1, "title": {"vi": "Giúp người khác sống sót qua Ha-ma-ghê-đôn", "ko": "다른 사람들이 아마겟돈에서 생존하도록 도우십시오"}, "isStudent": false, "isCbs": false, "speaker": "김종현 (Minh Trường, anh Trường)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 2, "section": 1, "title": {"vi": "Viên ngọc thiêng liêng", "ko": "영적 보물 찾기"}, "isStudent": false, "isCbs": false, "speaker": "박철현 (Trung Dũng, anh Dũng)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 3, "section": 1, "title": {"vi": "Đọc Kinh Thánh", "ko": "성경 낭독"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "한상현 (Huy, anh Huy)", "assistant": null, "conductor": null, "reader": null}, {"num": 4, "section": 2, "title": {"vi": "Bắt đầu cuộc trò chuyện", "ko": "대화 시작하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김수민 (Ngọc Bích, chị Bích)", "assistant": "김예나 (Trang Thanh, em Thanh)", "conductor": null, "reader": null}, {"num": 5, "section": 2, "title": {"vi": "Thăm lại", "ko": "관심이 자라도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "쩐응옥마이 (Ngọc Mai, chị Mai)", "assistant": "김소영 (Mỹ Tâm, chị Tâm)", "conductor": null, "reader": null}, {"num": 6, "section": 2, "title": {"vi": "Giải thích niềm tin", "ko": "우리의 신앙 설명하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김영임 (Minh Thương, chị Thương)", "assistant": "오호경 (Hồ Khánh, chị Khánh)", "conductor": null, "reader": null}, {"num": 7, "section": 3, "title": {"vi": "Cứu chính mình và những người lắng nghe mình", "ko": "우리 자신과 우리의 소식을 듣는 사람들을 구원하는 방법"}, "isStudent": false, "isCbs": false, "speaker": null, "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 8, "section": 3, "title": {"vi": "Phần học Kinh Thánh của hội thánh", "ko": "회중 성서 연구"}, "isStudent": false, "isCbs": true, "speaker": null, "assignee": null, "assistant": null, "conductor": "김한빈 (Dương Bình, anh Bình)", "reader": "김대훈 (Huấn, anh Huấn)"}]}, {"meta": {"startDate": "2027-01-04", "endDate": "2027-01-10", "classDate": "2027-01-09", "weekNum": 11, "docid": "202027001"}, "date": {"vi": "NGÀY 4-10 THÁNG 1", "ko": "1월 4-10일"}, "reading": {"vi": "Ê-XÊ-CHI-ÊN 11, 12", "ko": "에스겔 11-12장"}, "songs": [83, 2, 164], "chairman": "박준우 (Duy, anh Duy)", "opening_prayer": "김재윤 (Thành Tín, anh Tín)", "closing_prayer": "박정환 (Hiếu, anh Hiếu)", "items": [{"num": 1, "section": 1, "title": {"vi": "“Biết đâu chúng sẽ để ý”", "ko": "‘그들이 혹시 유의해서 볼지도 모른다’"}, "isStudent": false, "isCbs": false, "speaker": "최찬호 (Lam Phong, anh Phong)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 2, "section": 1, "title": {"vi": "Viên ngọc thiêng liêng", "ko": "영적 보물 찾기"}, "isStudent": false, "isCbs": false, "speaker": "한도희 (Đạo, anh Đạo)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 3, "section": 1, "title": {"vi": "Đọc Kinh Thánh", "ko": "성경 낭독"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김종배 (Pháp, anh Pháp)", "assistant": null, "conductor": null, "reader": null}, {"num": 4, "section": 2, "title": {"vi": "Thăm lại", "ko": "관심이 자라도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "최미순 (Mỹ Xuân, chị Xuân)", "assistant": "원혜진 (Hiền, chị Hiền)", "conductor": null, "reader": null}, {"num": 5, "section": 2, "title": {"vi": "Thăm lại", "ko": "관심이 자라도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "박유나 (Na, em Na)", "assistant": "이수연 (Xuyến, chị Xuyến)", "conductor": null, "reader": null}, {"num": 6, "section": 2, "title": {"vi": "Anh chị sẽ nói gì?", "ko": "뭐라고 말할 것입니까?"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "이서희 (Thụy Vy, chị Vy)", "assistant": "이주옥 (Ngọc, chị Ngọc)", "conductor": null, "reader": null}, {"num": 7, "section": 3, "title": {"vi": "Nhu cầu địa phương", "ko": "회중의 필요"}, "isStudent": false, "isCbs": false, "speaker": null, "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 8, "section": 3, "title": {"vi": "Phần học Kinh Thánh của hội thánh", "ko": "회중 성서 연구"}, "isStudent": false, "isCbs": true, "speaker": null, "assignee": null, "assistant": null, "conductor": "김대훈 (Huấn, anh Huấn)", "reader": "김한빈 (Dương Bình, anh Bình)"}]}, {"meta": {"startDate": "2027-01-11", "endDate": "2027-01-17", "classDate": "2027-01-16", "weekNum": 12, "docid": "202027002"}, "date": {"vi": "NGÀY 11-17 THÁNG 1", "ko": "1월 11-17일"}, "reading": {"vi": "Ê-XÊ-CHI-ÊN 13, 14", "ko": "에스겔 13-14장"}, "songs": [39, 56, 98], "chairman": "김종현 (Minh Trường, anh Trường)", "opening_prayer": "김동주 (Minh Phước, anh Phước)", "closing_prayer": "송제홍 (Lý, anh Lý)", "items": [{"num": 1, "section": 1, "title": {"vi": "Đức Giê-hô-va vui khi anh chị làm điều đúng", "ko": "여호와께서는 옳은 일을 하려는 우리의 노력을 소중히 여기십니다"}, "isStudent": false, "isCbs": false, "speaker": "박준우 (Duy, anh Duy)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 2, "section": 1, "title": {"vi": "Viên ngọc thiêng liêng", "ko": "영적 보물 찾기"}, "isStudent": false, "isCbs": false, "speaker": "한상현 (Huy, anh Huy)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 3, "section": 1, "title": {"vi": "Đọc Kinh Thánh", "ko": "성경 낭독"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "박철현 (Trung Dũng, anh Dũng)", "assistant": null, "conductor": null, "reader": null}, {"num": 4, "section": 2, "title": {"vi": "Bắt đầu cuộc trò chuyện", "ko": "대화 시작하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "이제희 (Thiên Vui, em Vui)", "assistant": "최영주 (Ánh Châu, chị Châu)", "conductor": null, "reader": null}, {"num": 5, "section": 2, "title": {"vi": "Thăm lại", "ko": "관심이 자라도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "이제아 (Thiên Nga, em Nga)", "assistant": "서주연 (Quyên, chị Quyên)", "conductor": null, "reader": null}, {"num": 6, "section": 2, "title": {"vi": "Giải thích niềm tin", "ko": "우리의 신앙 설명하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "한정우 (Chinh Du, em Du)", "assistant": "이종명 (Minh, anh Minh)", "conductor": null, "reader": null}, {"num": 7, "section": 3, "title": {"vi": "Hãy củng cố niềm tin chắc nơi những điều mình tin khi còn trẻ", "ko": "어릴 때부터 이 길이 옳다는 확신을 기르십시오"}, "isStudent": false, "isCbs": false, "speaker": null, "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 8, "section": 3, "title": {"vi": "Phần học Kinh Thánh của hội thánh", "ko": "회중 성서 연구"}, "isStudent": false, "isCbs": true, "speaker": null, "assignee": null, "assistant": null, "conductor": "최찬호 (Lam Phong, anh Phong)", "reader": "김대훈 (Huấn, anh Huấn)"}]}, {"meta": {"startDate": "2027-01-18", "endDate": "2027-01-24", "classDate": "2027-01-23", "weekNum": 13, "docid": "202027003"}, "date": {"vi": "NGÀY 18-24 THÁNG 1", "ko": "1월 18-24일"}, "reading": {"vi": "Ê-XÊ-CHI-ÊN 15, 16", "ko": "에스겔 15-16장"}, "songs": [130, 58, 159], "chairman": "김한빈 (Dương Bình, anh Bình)", "opening_prayer": "김종배 (Pháp, anh Pháp)", "closing_prayer": "한도희 (Đạo, anh Đạo)", "items": [{"num": 1, "section": 1, "title": {"vi": "“Ta sẽ… không cảm thấy bị xúc phạm nữa”", "ko": "“내가 다시는 노하지 않을 것이다”"}, "isStudent": false, "isCbs": false, "speaker": "김종현 (Minh Trường, anh Trường)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 2, "section": 1, "title": {"vi": "Viên ngọc thiêng liêng", "ko": "영적 보물 찾기"}, "isStudent": false, "isCbs": false, "speaker": "김재윤 (Thành Tín, anh Tín)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 3, "section": 1, "title": {"vi": "Đọc Kinh Thánh", "ko": "성경 낭독"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "박정환 (Hiếu, anh Hiếu)", "assistant": null, "conductor": null, "reader": null}, {"num": 4, "section": 2, "title": {"vi": "Bắt đầu cuộc trò chuyện", "ko": "대화 시작하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "유계화 (Hoa, chị Hoa)", "assistant": "김수민 (Ngọc Bích, chị Bích)", "conductor": null, "reader": null}, {"num": 5, "section": 2, "title": {"vi": "Thăm lại", "ko": "관심이 자라도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "이재순 (Mỹ Duyên, chị Duyên)", "assistant": "김예나 (Trang Thanh, em Thanh)", "conductor": null, "reader": null}, {"num": 6, "section": 2, "title": {"vi": "Giải thích niềm tin", "ko": "우리의 신앙 설명하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "쩐응옥마이 (Ngọc Mai, chị Mai)", "assistant": "김영임 (Minh Thương, chị Thương)", "conductor": null, "reader": null}, {"num": 7, "section": 3, "title": {"vi": "Đừng quên trở lại", "ko": "잊지 말고 다시 찾아가십시오"}, "isStudent": false, "isCbs": false, "speaker": null, "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 8, "section": 3, "title": {"vi": "Phần học Kinh Thánh của hội thánh", "ko": "회중 성서 연구"}, "isStudent": false, "isCbs": true, "speaker": null, "assignee": null, "assistant": null, "conductor": "박준우 (Duy, anh Duy)", "reader": "최찬호 (Lam Phong, anh Phong)"}]}, {"meta": {"startDate": "2027-01-25", "endDate": "2027-01-31", "classDate": "2027-01-30", "weekNum": 14, "docid": "202027004"}, "date": {"vi": "NGÀY 25-31 THÁNG 1", "ko": "1월 25-31일"}, "reading": {"vi": "Ê-XÊ-CHI-ÊN 17, 18", "ko": "에스겔 17-18장"}, "songs": [30, 3, 94], "chairman": "김대훈 (Huấn, anh Huấn)", "opening_prayer": "박철현 (Trung Dũng, anh Dũng)", "closing_prayer": "한상현 (Huy, anh Huy)", "items": [{"num": 1, "section": 1, "title": {"vi": "Chúng ta chịu trách nhiệm trước mặt Đức Giê-hô-va về hành động của mình", "ko": "우리는 자신의 행동에 대해 여호와께 책임을 져야 합니다"}, "isStudent": false, "isCbs": false, "speaker": "김한빈 (Dương Bình, anh Bình)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 2, "section": 1, "title": {"vi": "Viên ngọc thiêng liêng", "ko": "영적 보물 찾기"}, "isStudent": false, "isCbs": false, "speaker": "김동주 (Minh Phước, anh Phước)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 3, "section": 1, "title": {"vi": "Đọc Kinh Thánh", "ko": "성경 낭독"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "이종명 (Minh, anh Minh)", "assistant": null, "conductor": null, "reader": null}, {"num": 4, "section": 2, "title": {"vi": "Đào tạo môn đồ", "ko": "제자가 되도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김소영 (Mỹ Tâm, chị Tâm)", "assistant": "오호경 (Hồ Khánh, chị Khánh)", "conductor": null, "reader": null}, {"num": 5, "section": 2, "title": {"vi": "Đào tạo môn đồ", "ko": "제자가 되도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "최미순 (Mỹ Xuân, chị Xuân)", "assistant": "박유나 (Na, em Na)", "conductor": null, "reader": null}, {"num": 6, "section": 2, "title": {"vi": "Đào tạo môn đồ", "ko": "제자가 되도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "원혜진 (Hiền, chị Hiền)", "assistant": "이서희 (Thụy Vy, chị Vy)", "conductor": null, "reader": null}, {"num": 7, "section": 2, "title": {"vi": "Đào tạo môn đồ", "ko": "제자가 되도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "이수연 (Xuyến, chị Xuyến)", "assistant": "이제희 (Thiên Vui, em Vui)", "conductor": null, "reader": null}, {"num": 8, "section": 3, "title": {"vi": "Nương cậy Đức Giê-hô-va khi đương đầu với vấn đề sức khỏe", "ko": "건강 문제가 있을 때 여호와를 의지하십시오"}, "isStudent": false, "isCbs": false, "speaker": null, "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 9, "section": 3, "title": {"vi": "Phần học Kinh Thánh của hội thánh", "ko": "회중 성서 연구"}, "isStudent": false, "isCbs": true, "speaker": null, "assignee": null, "assistant": null, "conductor": "김종현 (Minh Trường, anh Trường)", "reader": "박준우 (Duy, anh Duy)"}]}, {"meta": {"startDate": "2027-02-01", "endDate": "2027-02-07", "classDate": "2027-02-06", "weekNum": 15, "docid": "202027005"}, "date": {"vi": "NGÀY 1-7 THÁNG 2", "ko": "2월 1-7일"}, "reading": {"vi": "Ê-XÊ-CHI-ÊN 19, 20", "ko": "에스겔 19-20장"}, "songs": [11, 76, 128], "chairman": "최찬호 (Lam Phong, anh Phong)", "opening_prayer": "김종배 (Pháp, anh Pháp)", "closing_prayer": "김재윤 (Thành Tín, anh Tín)", "items": [{"num": 1, "section": 1, "title": {"vi": "‘Ta hành động vì cớ danh ta’", "ko": "“나는 내 이름을 위해 행동하였다”"}, "isStudent": false, "isCbs": false, "speaker": "김대훈 (Huấn, anh Huấn)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 2, "section": 1, "title": {"vi": "Viên ngọc thiêng liêng", "ko": "영적 보물 찾기"}, "isStudent": false, "isCbs": false, "speaker": "송제홍 (Lý, anh Lý)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 3, "section": 1, "title": {"vi": "Đọc Kinh Thánh", "ko": "성경 낭독"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "한도희 (Đạo, anh Đạo)", "assistant": null, "conductor": null, "reader": null}, {"num": 4, "section": 2, "title": {"vi": "Anh chị sẽ nói gì?", "ko": "뭐라고 말할 것입니까?"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "이주옥 (Ngọc, chị Ngọc)", "assistant": "이제아 (Thiên Nga, em Nga)", "conductor": null, "reader": null}, {"num": 5, "section": 2, "title": {"vi": "Thăm lại", "ko": "관심이 자라도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "최영주 (Ánh Châu, chị Châu)", "assistant": "유계화 (Hoa, chị Hoa)", "conductor": null, "reader": null}, {"num": 6, "section": 2, "title": {"vi": "Bài giảng", "ko": "연설"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "한정우 (Chinh Du, em Du)", "assistant": null, "conductor": null, "reader": null}, {"num": 7, "section": 3, "title": {"vi": "Làm thế nào để duy trì lòng sốt sắng trong thánh chức?", "ko": "봉사의 직무에 대한 열심을 유지하는 방법"}, "isStudent": false, "isCbs": false, "speaker": null, "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 8, "section": 3, "title": {"vi": "Phần học Kinh Thánh của hội thánh", "ko": "회중 성서 연구"}, "isStudent": false, "isCbs": true, "speaker": null, "assignee": null, "assistant": null, "conductor": "김한빈 (Dương Bình, anh Bình)", "reader": "김종현 (Minh Trường, anh Trường)"}]}, {"meta": {"startDate": "2027-02-08", "endDate": "2027-02-14", "classDate": "2027-02-13", "weekNum": null, "docid": "202027006", "note": "2027-02-13 휴강 (왕국전도학교)"}, "date": {"vi": "NGÀY 8-14 THÁNG 2", "ko": "2월 8-14일"}, "reading": {"vi": "Ê-XÊ-CHI-ÊN 21, 22", "ko": "에스겔 21-22장"}, "songs": [122, 104, 114], "chairman": "박준우 (Duy, anh Duy)", "opening_prayer": "이종명 (Minh, anh Minh)", "closing_prayer": "박철현 (Trung Dũng, anh Dũng)", "items": [{"num": 1, "section": 1, "title": {"vi": "Giữ thanh sạch về đạo đức trong một thế gian bại hoại", "ko": "도덕적으로 타락한 세상에서 깨끗한 상태를 유지하십시오"}, "isStudent": false, "isCbs": false, "speaker": "최찬호 (Lam Phong, anh Phong)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 2, "section": 1, "title": {"vi": "Viên ngọc thiêng liêng", "ko": "영적 보물 찾기"}, "isStudent": false, "isCbs": false, "speaker": "박정환 (Hiếu, anh Hiếu)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 3, "section": 1, "title": {"vi": "Đọc Kinh Thánh", "ko": "성경 낭독"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "송제홍 (Lý, anh Lý)", "assistant": null, "conductor": null, "reader": null}, {"num": 4, "section": 2, "title": {"vi": "Bắt đầu cuộc trò chuyện", "ko": "대화 시작하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "서주연 (Quyên, chị Quyên)", "assistant": "이재순 (Mỹ Duyên, chị Duyên)", "conductor": null, "reader": null}, {"num": 5, "section": 2, "title": {"vi": "Thăm lại", "ko": "관심이 자라도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김수민 (Ngọc Bích, chị Bích)", "assistant": "쩐응옥마이 (Ngọc Mai, chị Mai)", "conductor": null, "reader": null}, {"num": 6, "section": 2, "title": {"vi": "Giải thích niềm tin", "ko": "우리의 신앙 설명하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김예나 (Trang Thanh, em Thanh)", "assistant": "김소영 (Mỹ Tâm, chị Tâm)", "conductor": null, "reader": null}, {"num": 7, "section": 3, "title": {"vi": "Đừng để bất cứ điều gì cản trở anh chị phụng sự Đức Giê-hô-va với lương tâm trong sạch", "ko": "깨끗한 양심으로 여호와를 섬기십시오"}, "isStudent": false, "isCbs": false, "speaker": null, "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 8, "section": 3, "title": {"vi": "Phần học Kinh Thánh của hội thánh", "ko": "회중 성서 연구"}, "isStudent": false, "isCbs": true, "speaker": null, "assignee": null, "assistant": null, "conductor": "김대훈 (Huấn, anh Huấn)", "reader": "김한빈 (Dương Bình, anh Bình)"}]}, {"meta": {"startDate": "2027-02-15", "endDate": "2027-02-21", "classDate": "2027-02-20", "weekNum": 16, "docid": "202027007", "note": "2027-02-20 졸업식"}, "date": {"vi": "NGÀY 15-21 THÁNG 2", "ko": "2월 15-21일"}, "reading": {"vi": "Ê-XÊ-CHI-ÊN 23, 24", "ko": "에스겔 23-24장"}, "songs": [49, 73, 124], "chairman": "김종현 (Minh Trường, anh Trường)", "opening_prayer": "한도희 (Đạo, anh Đạo)", "closing_prayer": "김종배 (Pháp, anh Pháp)", "items": [{"num": 1, "section": 1, "title": {"vi": "Học từ minh họa về Ô-hô-la và Ô-hô-li-ba", "ko": "오홀라와 오홀리바의 비유에서 배울 수 있는 교훈"}, "isStudent": false, "isCbs": false, "speaker": "박준우 (Duy, anh Duy)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 2, "section": 1, "title": {"vi": "Viên ngọc thiêng liêng", "ko": "영적 보물 찾기"}, "isStudent": false, "isCbs": false, "speaker": "한상현 (Huy, anh Huy)", "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 3, "section": 1, "title": {"vi": "Đọc Kinh Thánh", "ko": "성경 낭독"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김동주 (Minh Phước, anh Phước)", "assistant": null, "conductor": null, "reader": null}, {"num": 4, "section": 2, "title": {"vi": "Bắt đầu cuộc trò chuyện", "ko": "대화 시작하기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김영임 (Minh Thương, chị Thương)", "assistant": "최미순 (Mỹ Xuân, chị Xuân)", "conductor": null, "reader": null}, {"num": 5, "section": 2, "title": {"vi": "Thăm lại", "ko": "관심이 자라도록 돕기"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "한정우 (Chinh Du, em Du)", "assistant": "서주연 (Quyên, chị Quyên)", "conductor": null, "reader": null}, {"num": 6, "section": 2, "title": {"vi": "Bài giảng", "ko": "연설"}, "isStudent": true, "isCbs": false, "speaker": null, "assignee": "김재윤 (Thành Tín, anh Tín)", "assistant": null, "conductor": null, "reader": null}, {"num": 7, "section": 3, "title": {"vi": "Báo cáo công tác hằng năm", "ko": "연례 봉사 보고"}, "isStudent": false, "isCbs": false, "speaker": null, "assignee": null, "assistant": null, "conductor": null, "reader": null}, {"num": 8, "section": 3, "title": {"vi": "Phần học Kinh Thánh của hội thánh", "ko": "회중 성서 연구"}, "isStudent": false, "isCbs": true, "speaker": null, "assignee": null, "assistant": null, "conductor": "최찬호 (Lam Phong, anh Phong)", "reader": "김대훈 (Huấn, anh Huấn)"}]}];
+
+  function getMwbPrograms() {
+    return (typeof window !== 'undefined' && window.JEONJU_MWB_PROGRAMS && window.JEONJU_MWB_PROGRAMS.length)
+      ? window.JEONJU_MWB_PROGRAMS
+      : DEFAULT_MWB_PROGRAMS;
+  }
+
+  function getMwbRoster() {
+    try {
+      var raw = localStorage.getItem('jeonju_mwb_roster');
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch(e) {}
+    return JSON.parse(JSON.stringify(DEFAULT_MWB_MEMBERS));
+  }
+
+  function saveMwbRoster(list) {
+    try {
+      localStorage.setItem('jeonju_mwb_roster', JSON.stringify(list));
+    } catch(e) {}
+  }
+
+  function getMwbAssignmentsMap() {
+    try {
+      var raw = localStorage.getItem('jeonju_mwb_assignments');
+      return raw ? JSON.parse(raw) : {};
+    } catch(e) { return {}; }
+  }
+
+  function saveMwbAssignmentsMap(map) {
+    try {
+      localStorage.setItem('jeonju_mwb_assignments', JSON.stringify(map));
+    } catch(e) {}
+  }
+
+  function formatMember(m) {
+    if (!m) return '';
+    return m.ko + ' (' + m.vi + ', ' + m.call + ')';
+  }
+
+  function canPairMembers(m1, m2) {
+    if (!m1 || !m2 || m1.ko === m2.ko) return false;
+    if (m1.gender === m2.gender) return true;
+    if (m1.spouse === m2.ko || m2.spouse === m1.ko) return true;
+    if ((m1.parentOf || []).indexOf(m2.ko) >= 0 || (m2.parentOf || []).indexOf(m1.ko) >= 0) return true;
+    if ((m1.childOf || []).indexOf(m2.ko) >= 0 || (m2.childOf || []).indexOf(m1.ko) >= 0) return true;
+    return false;
+  }
+
+  function executeAutoAssignment() {
+    var roster = getMwbRoster();
+    var programs = getMwbPrograms();
+    var counts = {};
+    var roleCounts = {};
+    var usedPairs = {};
+
+    roster.forEach(function (m) {
+      counts[m.ko] = 0;
+      roleCounts[m.ko] = {};
+    });
+
+    var assignments = getMwbAssignmentsMap();
+
+    programs.forEach(function (prog) {
+      var meta = prog.meta || {};
+      var sDate = meta.startDate;
+      var weekAssigned = {};
+
+      function pickCandidate(candList, roleName) {
+        var available = candList.filter(function (c) { return !weekAssigned[c.ko]; });
+        if (!available.length) available = candList.slice();
+        available.sort(function (a, b) {
+          var ca = counts[a.ko] || 0;
+          var cb = counts[b.ko] || 0;
+          if (ca !== cb) return ca - cb;
+          var rca = (roleCounts[a.ko] && roleCounts[a.ko][roleName]) || 0;
+          var rcb = (roleCounts[b.ko] && roleCounts[b.ko][roleName]) || 0;
+          return rca - rcb;
+        });
+        var chosen = available[0];
+        if (chosen) {
+          weekAssigned[chosen.ko] = true;
+          counts[chosen.ko] = (counts[chosen.ko] || 0) + 1;
+          roleCounts[chosen.ko][roleName] = ((roleCounts[chosen.ko] && roleCounts[chosen.ko][roleName]) || 0) + 1;
+        }
+        return chosen;
+      }
+
+      // 1. Chairman
+      var chairCands = roster.filter(function (m) { return m.roles && m.roles.chairman; });
+      var chosenChair = pickCandidate(chairCands, 'chairman');
+      if (chosenChair) assignments[sDate + '-chairman'] = formatMember(chosenChair);
+
+      // 2. 10-min Talk (Item 1)
+      var talkCands = roster.filter(function (m) { return m.roles && m.roles.talk10; });
+      var chosenTalk = pickCandidate(talkCands, 'talk10');
+      if (chosenTalk) assignments[sDate + '-item-1-speaker'] = formatMember(chosenTalk);
+
+      // 3. CBS Conductor
+      var cbsCondCands = roster.filter(function (m) { return m.roles && m.roles.cbsCond; });
+      var chosenCbsCond = pickCandidate(cbsCondCands, 'cbsCond');
+      if (chosenCbsCond) assignments[sDate + '-cbs-conductor'] = formatMember(chosenCbsCond);
+
+      // 4. CBS Reader
+      var cbsReadCands = roster.filter(function (m) { return m.roles && m.roles.cbsRead; });
+      var chosenCbsRead = pickCandidate(cbsReadCands, 'cbsRead');
+      if (chosenCbsRead) assignments[sDate + '-cbs-reader'] = formatMember(chosenCbsRead);
+
+      // 5. Gems (Item 2)
+      var gemsCands = roster.filter(function (m) { return m.roles && m.roles.gems; });
+      var chosenGems = pickCandidate(gemsCands, 'gems');
+      if (chosenGems) assignments[sDate + '-item-2-speaker'] = formatMember(chosenGems);
+
+      // 6. Bible Reading (Item 3)
+      var readingCands = roster.filter(function (m) { return m.roles && m.roles.reading; });
+      var chosenReading = pickCandidate(readingCands, 'reading');
+      if (chosenReading) assignments[sDate + '-item-3-student'] = formatMember(chosenReading);
+
+      // 7. Ministry items (Section 2)
+      (prog.items || []).forEach(function (it) {
+        if (it.section === 2) {
+          var tKo = (it.title && it.title.ko) || '';
+          var tVi = (it.title && it.title.vi) || '';
+          var isTalk = (tKo.indexOf('연설') >= 0 || tVi.indexOf('Bài giảng') >= 0);
+          if (isTalk) {
+            var brotherCands = roster.filter(function (m) { return m.gender === 'M'; });
+            var sp = pickCandidate(brotherCands, 'ministry_talk');
+            if (sp) assignments[sDate + '-item-' + it.num + '-student'] = formatMember(sp);
+          } else {
+            var ministryCands = roster.filter(function (m) { return m.roles && m.roles.ministry; });
+            var st = pickCandidate(ministryCands, 'ministry');
+            if (st) {
+              assignments[sDate + '-item-' + it.num + '-student'] = formatMember(st);
+
+              var availAssts = roster.filter(function (m) {
+                return !weekAssigned[m.ko] && canPairMembers(st, m);
+              });
+              if (!availAssts.length) {
+                availAssts = roster.filter(function (m) {
+                  return m.ko !== st.ko && canPairMembers(st, m);
+                });
+              }
+
+              availAssts.sort(function (a, b) {
+                var pKeyA = [st.ko, a.ko].sort().join(':');
+                var pKeyB = [st.ko, b.ko].sort().join(':');
+                var usedA = usedPairs[pKeyA] ? 1 : 0;
+                var usedB = usedPairs[pKeyB] ? 1 : 0;
+                if (usedA !== usedB) return usedA - usedB;
+                var ca = counts[a.ko] || 0;
+                var cb = counts[b.ko] || 0;
+                return ca - cb;
+              });
+
+              var asst = availAssts[0];
+              if (asst) {
+                weekAssigned[asst.ko] = true;
+                counts[asst.ko] = (counts[asst.ko] || 0) + 1;
+                roleCounts[asst.ko]['ministry'] = ((roleCounts[asst.ko] && roleCounts[asst.ko]['ministry']) || 0) + 1;
+                usedPairs[[st.ko, asst.ko].sort().join(':')] = true;
+                assignments[sDate + '-item-' + it.num + '-assistant'] = formatMember(asst);
+              }
+            }
+          }
+        }
+      });
+
+      // 8. Opening Prayer
+      var prayerCands = roster.filter(function (m) { return m.roles && m.roles.prayer; });
+      var chosenOpenPrayer = pickCandidate(prayerCands, 'prayer');
+      if (chosenOpenPrayer) assignments[sDate + '-open-prayer'] = formatMember(chosenOpenPrayer);
+
+      // 9. Closing Prayer
+      var chosenClosePrayer = pickCandidate(prayerCands, 'prayer');
+      if (chosenClosePrayer) assignments[sDate + '-close-prayer'] = formatMember(chosenClosePrayer);
+    });
+
+    saveMwbAssignmentsMap(assignments);
+    return counts;
+  }
+
+  function renderMwb(c) {
+    if (!state.mwbSubTab) state.mwbSubTab = 'schedule';
+    var roster = getMwbRoster();
+    var programs = getMwbPrograms();
+    var assignments = getMwbAssignmentsMap();
+
+    // Calculate participation stats
+    var memberCounts = {};
+    roster.forEach(function (m) { memberCounts[m.ko] = 0; });
+    Object.keys(assignments).forEach(function (k) {
+      var val = assignments[k] || '';
+      roster.forEach(function (m) {
+        if (val.indexOf(m.ko) >= 0) memberCounts[m.ko] = (memberCounts[m.ko] || 0) + 1;
+      });
+    });
+
+    var subTabNav = '<div style="display:flex;gap:8px;margin-bottom:14px;">' +
+      '<button type="button" class="btn ' + (state.mwbSubTab === 'schedule' ? 'btn-primary' : 'btn-secondary') + '" data-act="mwb-subtab" data-subtab="schedule">📅 주차별 배정표 (11주간)</button>' +
+      '<button type="button" class="btn ' + (state.mwbSubTab === 'roster' ? 'btn-primary' : 'btn-secondary') + '" data-act="mwb-subtab" data-subtab="roster">👥 성원 명단 및 역할 자격 (' + roster.length + '명)</button>' +
+      '<button type="button" class="btn btn-primary" data-act="mwb-auto-assign" style="margin-left:auto;background:#059669;border-color:#059669;color:#fff;font-weight:700;">⚡ 자동 배정 실행 (Auto-Assign)</button>' +
+      '</div>';
+
+    var headerCard = '<div class="card">' +
+      '<div class="card-title" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">' +
+      '<span>📖 그리스도인 생활과 봉사 집회 임명 관리 (Lối sống và thánh chức)</span>' +
+      '<span class="tag tag-active" style="background:#e0f2fe;color:#0369a1;font-weight:600;">2026-12-07 ~ 2027-02-15 (11주간)</span>' +
+      '</div>' +
+      '<p class="help-text" style="margin-bottom:12px;">동일 주간 중복 임명 금지(1인 1임명 우선), 2인 짝 과제 파트너 순환, 가족 짝 규칙(부부·부모자녀 첫방문 가능, 그 외 동성 짝) 및 전체 성원 공평 분배 알고리즘이 적용됩니다.</p>' +
+      subTabNav +
+      '</div>';
+
+    if (state.mwbSubTab === 'roster') {
+      var rosterHtml = renderMwbRosterTab(roster, memberCounts);
+      c.innerHTML = headerCard + rosterHtml;
+    } else {
+      var scheduleHtml = renderMwbScheduleTab(programs, roster, assignments, memberCounts);
+      c.innerHTML = headerCard + scheduleHtml;
+    }
+  }
+
+  function renderMwbRosterTab(roster, counts) {
+    var editIdx = state.mwbEditingIdx;
+    var formHtml = '';
+    if (state.mwbShowAdd || editIdx !== undefined) {
+      var mem = (editIdx !== undefined && roster[editIdx]) ? roster[editIdx] : { ko: '', vi: '', call: 'anh', gender: 'M', roles: { ministry: 1 } };
+      formHtml = '<div class="card" style="border:2px solid var(--primary);background:#f8fafc;margin-bottom:16px;">' +
+        '<div class="card-title">' + (editIdx !== undefined ? '성원 정보 수정' : '신규 성원 추가') + '</div>' +
+        '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:12px;">' +
+        '<div><label style="font-size:12px;font-weight:600;">한국어 성명</label><input type="text" id="mwb-in-ko" class="form-control" value="' + esc(mem.ko) + '"></div>' +
+        '<div><label style="font-size:12px;font-weight:600;">베트남어 이름</label><input type="text" id="mwb-in-vi" class="form-control" value="' + esc(mem.vi) + '"></div>' +
+        '<div><label style="font-size:12px;font-weight:600;">호칭 (anh/chị/em)</label><input type="text" id="mwb-in-call" class="form-control" value="' + esc(mem.call) + '"></div>' +
+        '<div><label style="font-size:12px;font-weight:600;">성별</label><select id="mwb-in-gender" class="form-control"><option value="M"' + (mem.gender === 'M' ? ' selected' : '') + '>형제 (M)</option><option value="F"' + (mem.gender === 'F' ? ' selected' : '') + '>자매 (F)</option></select></div>' +
+        '<div><label style="font-size:12px;font-weight:600;">배우자 성명 (선택)</label><input type="text" id="mwb-in-spouse" class="form-control" value="' + esc(mem.spouse || '') + '"></div>' +
+        '<div><label style="font-size:12px;font-weight:600;">자녀 성명 (쉼표 구분)</label><input type="text" id="mwb-in-parentOf" class="form-control" value="' + esc((mem.parentOf || []).join(',')) + '"></div>' +
+        '</div>' +
+        '<div style="display:flex;gap:8px;">' +
+        '<button type="button" class="btn btn-primary" data-act="mwb-save-member" data-idx="' + (editIdx !== undefined ? editIdx : '') + '">저장</button>' +
+        '<button type="button" class="btn btn-secondary" data-act="mwb-cancel-member">취소</button>' +
+        '</div></div>';
+    }
+
+    var rows = roster.map(function (m, idx) {
+      var r = m.roles || {};
+      var rel = [];
+      if (m.spouse) rel.push('배우자: ' + m.spouse);
+      if (m.parentOf && m.parentOf.length) rel.push('자녀: ' + m.parentOf.join(','));
+      if (m.childOf && m.childOf.length) rel.push('부모: ' + m.childOf.join(','));
+      var relText = rel.join(' · ') || '-';
+
+      return '<tr>' +
+        '<td><strong>' + esc(m.ko) + '</strong><br><span style="font-size:12px;color:var(--ink-soft);">' + esc(m.vi) + ' (' + esc(m.call) + ')</span></td>' +
+        '<td><span class="tag ' + (m.gender === 'M' ? 'tag-active' : 'tag-cancel') + '">' + (m.gender === 'M' ? '형제' : '자매') + '</span></td>' +
+        '<td style="font-size:12px;color:var(--ink-soft);">' + esc(relText) + '</td>' +
+        '<td style="text-align:center;"><input type="checkbox" data-act="mwb-role-toggle" data-member-idx="' + idx + '" data-role="chairman"' + (r.chairman ? ' checked' : '') + (m.gender === 'F' ? ' disabled' : '') + '></td>' +
+        '<td style="text-align:center;"><input type="checkbox" data-act="mwb-role-toggle" data-member-idx="' + idx + '" data-role="prayer"' + (r.prayer ? ' checked' : '') + (m.gender === 'F' ? ' disabled' : '') + '></td>' +
+        '<td style="text-align:center;"><input type="checkbox" data-act="mwb-role-toggle" data-member-idx="' + idx + '" data-role="talk10"' + (r.talk10 ? ' checked' : '') + (m.gender === 'F' ? ' disabled' : '') + '></td>' +
+        '<td style="text-align:center;"><input type="checkbox" data-act="mwb-role-toggle" data-member-idx="' + idx + '" data-role="gems"' + (r.gems ? ' checked' : '') + (m.gender === 'F' ? ' disabled' : '') + '></td>' +
+        '<td style="text-align:center;"><input type="checkbox" data-act="mwb-role-toggle" data-member-idx="' + idx + '" data-role="reading"' + (r.reading ? ' checked' : '') + (m.gender === 'F' ? ' disabled' : '') + '></td>' +
+        '<td style="text-align:center;"><input type="checkbox" data-act="mwb-role-toggle" data-member-idx="' + idx + '" data-role="ministry"' + (r.ministry ? ' checked' : '') + '></td>' +
+        '<td style="text-align:center;"><input type="checkbox" data-act="mwb-role-toggle" data-member-idx="' + idx + '" data-role="cbsCond"' + (r.cbsCond ? ' checked' : '') + (m.gender === 'F' ? ' disabled' : '') + '></td>' +
+        '<td style="text-align:center;"><input type="checkbox" data-act="mwb-role-toggle" data-member-idx="' + idx + '" data-role="cbsRead"' + (r.cbsRead ? ' checked' : '') + (m.gender === 'F' ? ' disabled' : '') + '></td>' +
+        '<td style="text-align:center;"><span class="badge" style="background:#f1f5f9;font-weight:700;">' + (counts[m.ko] || 0) + '회</span></td>' +
+        '<td>' +
+        '<button type="button" class="btn move-btn" data-act="mwb-edit-member" data-idx="' + idx + '">수정</button> ' +
+        '<button type="button" class="btn move-btn" style="color:var(--danger);" data-act="mwb-del-member" data-idx="' + idx + '">삭제</button>' +
+        '</td>' +
+        '</tr>';
+    }).join('');
+
+    return formHtml + '<div class="card">' +
+      '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px;">' +
+      '<div class="card-title" style="margin:0;">성원 자격 및 가족 관계 명단 (' + roster.length + '명)</div>' +
+      '<div style="display:flex;gap:8px;">' +
+      '<button type="button" class="btn btn-primary" data-act="mwb-add-member">➕ 성원 추가</button>' +
+      '<button type="button" class="btn btn-secondary" data-act="mwb-reset-roster">초기 명단 복원</button>' +
+      '</div></div>' +
+      '<div style="overflow-x:auto;">' +
+      '<table class="table" style="font-size:13px;">' +
+      '<thead><tr>' +
+      '<th>성명 (한/베)</th><th>성별</th><th>가족 관계</th>' +
+      '<th>사회</th><th>기도</th><th>10분</th><th>보물</th><th>낭독</th><th>봉사</th><th>회중사회</th><th>회중낭독</th>' +
+      '<th>배정수</th><th>관리</th>' +
+      '</tr></thead>' +
+      '<tbody>' + rows + '</tbody>' +
+      '</table></div></div>';
+  }
+
+  function renderMwbScheduleTab(programs, roster, assignments, counts) {
+    function personSelect(slotKey, currentVal, filterRole, brotherOnly) {
+      var opts = '<option value="">-- 미정 --</option>';
+      roster.forEach(function (m) {
+        if (brotherOnly && m.gender !== 'M') return;
+        if (filterRole && (!m.roles || !m.roles[filterRole])) return;
+        var formatted = formatMember(m);
+        var sel = (currentVal === formatted || currentVal.indexOf(m.ko) >= 0) ? ' selected' : '';
+        opts += '<option value="' + esc(formatted) + '"' + sel + '>' + esc(formatted) + '</option>';
+      });
+      return '<select class="form-control" style="font-size:12px;padding:3px 6px;height:auto;max-width:260px;" data-act="mwb-assign-change" data-slot-key="' + esc(slotKey) + '">' + opts + '</select>';
+    }
+
+    var cards = programs.map(function (prog, pIdx) {
+      var meta = prog.meta || {};
+      var sDate = meta.startDate;
+      var d = prog.date || {};
+      var rd = prog.reading || {};
+
+      var chairVal = assignments[sDate + '-chairman'] || prog.chairman || '';
+      var openPrVal = assignments[sDate + '-open-prayer'] || prog.opening_prayer || '';
+      var closePrVal = assignments[sDate + '-close-prayer'] || prog.closing_prayer || '';
+
+      var rowsHtml = '';
+
+      // Officer row
+      rowsHtml += '<tr style="background:#f0fdf4;">' +
+        '<td colspan="2"><strong>Chủ tọa (집회 사회자)</strong></td>' +
+        '<td>' + personSelect(sDate + '-chairman', chairVal, 'chairman', true) + '</td>' +
+        '<td></td></tr>';
+      rowsHtml += '<tr style="background:#f0fdf4;">' +
+        '<td colspan="2"><strong>Cầu nguyện mở đầu (시작 기도)</strong></td>' +
+        '<td>' + personSelect(sDate + '-open-prayer', openPrVal, 'prayer', true) + '</td>' +
+        '<td></td></tr>';
+
+      (prog.items || []).forEach(function (it) {
+        var num = it.num;
+        var tKo = (it.title && it.title.ko) || '';
+        var tVi = (it.title && it.title.vi) || '';
+        var secName = it.section === 1 ? '💎 보물' : (it.section === 2 ? '🌾 봉사' : '🐑 생활');
+
+        if (num === 1) {
+          var t10Val = assignments[sDate + '-item-1-speaker'] || it.speaker || '';
+          rowsHtml += '<tr>' +
+            '<td><span class="tag" style="background:#ecfdf5;color:#047857;">' + secName + '</span> ' + num + '. ' + esc(tVi) + '<br><span style="font-size:12px;color:var(--ink-soft);">' + esc(tKo) + '</span></td>' +
+            '<td>Diễn giả (10분 연설)</td>' +
+            '<td>' + personSelect(sDate + '-item-1-speaker', t10Val, 'talk10', true) + '</td>' +
+            '<td></td></tr>';
+        } else if (num === 2) {
+          var gemsVal = assignments[sDate + '-item-2-speaker'] || it.speaker || '';
+          rowsHtml += '<tr>' +
+            '<td><span class="tag" style="background:#ecfdf5;color:#047857;">' + secName + '</span> ' + num + '. ' + esc(tVi) + '<br><span style="font-size:12px;color:var(--ink-soft);">' + esc(tKo) + '</span></td>' +
+            '<td>Người hướng dẫn (영적 보물)</td>' +
+            '<td>' + personSelect(sDate + '-item-2-speaker', gemsVal, 'gems', true) + '</td>' +
+            '<td></td></tr>';
+        } else if (num === 3) {
+          var rdVal = assignments[sDate + '-item-3-student'] || it.assignee || '';
+          rowsHtml += '<tr>' +
+            '<td><span class="tag" style="background:#ecfdf5;color:#047857;">' + secName + '</span> ' + num + '. ' + esc(tVi) + '<br><span style="font-size:12px;color:var(--ink-soft);">' + esc(tKo) + '</span></td>' +
+            '<td>Người đọc (성경 낭독)</td>' +
+            '<td>' + personSelect(sDate + '-item-3-student', rdVal, 'reading', true) + '</td>' +
+            '<td></td></tr>';
+        } else if (it.section === 2) {
+          var isTalk = (tKo.indexOf('연설') >= 0 || tVi.indexOf('Bài giảng') >= 0);
+          var stVal = assignments[sDate + '-item-' + num + '-student'] || it.assignee || '';
+          var asstVal = assignments[sDate + '-item-' + num + '-assistant'] || it.assistant || '';
+          rowsHtml += '<tr>' +
+            '<td><span class="tag" style="background:#fef3c7;color:#b45309;">' + secName + '</span> ' + num + '. ' + esc(tVi) + '<br><span style="font-size:12px;color:var(--ink-soft);">' + esc(tKo) + '</span></td>' +
+            '<td>' + (isTalk ? 'Bài giảng (연설)' : 'Học viên (학생)') + '</td>' +
+            '<td>' + personSelect(sDate + '-item-' + num + '-student', stVal, 'ministry', isTalk) + '</td>' +
+            '<td>' + (isTalk ? '-' : personSelect(sDate + '-item-' + num + '-assistant', asstVal, 'ministry', false)) + '</td></tr>';
+        } else if (it.isCbs) {
+          var condVal = assignments[sDate + '-cbs-conductor'] || it.conductor || '';
+          var cbsRdVal = assignments[sDate + '-cbs-reader'] || it.reader || '';
+          rowsHtml += '<tr style="background:#faf5ff;">' +
+            '<td><span class="tag" style="background:#f3e8ff;color:#7e22ce;">' + secName + '</span> ' + num + '. ' + esc(tVi) + '<br><span style="font-size:12px;color:var(--ink-soft);">' + esc(tKo) + '</span></td>' +
+            '<td>회중 성서 연구 (Chủ tọa/Người đọc)</td>' +
+            '<td>사회: ' + personSelect(sDate + '-cbs-conductor', condVal, 'cbsCond', true) + '</td>' +
+            '<td>낭독: ' + personSelect(sDate + '-cbs-reader', cbsRdVal, 'cbsRead', true) + '</td></tr>';
+        }
+      });
+
+      rowsHtml += '<tr style="background:#f0fdf4;">' +
+        '<td colspan="2"><strong>Cầu nguyện kết thúc (마치는 기도)</strong></td>' +
+        '<td>' + personSelect(sDate + '-close-prayer', closePrVal, 'prayer', true) + '</td>' +
+        '<td></td></tr>';
+
+      return '<div class="card" style="margin-bottom:16px;">' +
+        '<div class="card-title" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">' +
+        '<span>📅 ' + esc(d.vi || '') + ' (' + esc(d.ko || '') + ') — <span style="font-weight:400;color:var(--ink-soft);">' + esc(rd.vi || '') + '</span></span>' +
+        '<span class="tag tag-active" style="background:#dcfce7;color:#166534;">' + sDate + '</span>' +
+        '</div>' +
+        '<div style="overflow-x:auto;">' +
+        '<table class="table" style="font-size:13px;">' +
+        '<thead><tr><th>순서 및 항목</th><th>역할</th><th>담당자 (배정자)</th><th>보조자 / 낭독자</th></tr></thead>' +
+        '<tbody>' + rowsHtml + '</tbody>' +
+        '</table></div></div>';
+    }).join('');
+
+    return '<div style="margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;">' +
+      '<div><strong>전체 11주차 집회 임명표</strong> (총 ' + programs.length + '주간)</div>' +
+      '<button type="button" class="btn btn-secondary" data-act="mwb-reset-assign">기본 배정 복원</button>' +
+      '</div>' + cards;
+  }
+
 })();

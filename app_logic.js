@@ -8720,10 +8720,17 @@ function verifyDistribution(units, dist, pins) {
     var readingKo = rd.ko || "";
     var readingVi = rd.vi || "";
     
-    var headTitle = "📖 " + (currentLang === "vi" 
-      ? "Lối sống và thánh chức · 그리스도인 생활과 봉사 (" + (dateLabelVi || dateLabelKo) + ")"
-      : "그리스도인 생활과 봉사 · Lối sống và thánh chức (" + (dateLabelKo || dateLabelVi) + ")");
-    var headSub = readingKo && readingVi ? readingKo + " · " + readingVi : (readingKo || readingVi);
+    var headTitleVi = "Lối sống và thánh chức (" + (dateLabelVi || dateLabelKo) + ")";
+    var headTitleKo = "그리스도인 생활과 봉사 (" + (dateLabelKo || dateLabelVi) + ")";
+    var readingViLine = readingVi || "";
+    var readingKoLine = readingKo || "";
+
+    var chairmanKey = meta.startDate + '-chairman';
+    var openPrayerKey = meta.startDate + '-open-prayer';
+    var closePrayerKey = meta.startDate + '-close-prayer';
+    var assignedChairman = getMwbAssignment(chairmanKey) || mwb.chairman || '';
+    var assignedOpenPrayer = getMwbAssignment(openPrayerKey) || mwb.opening_prayer || '';
+    var assignedClosePrayer = getMwbAssignment(closePrayerKey) || mwb.closing_prayer || '';
 
     var treasuresHtml = "";
     var ministryHtml = "";
@@ -8749,8 +8756,10 @@ function verifyDistribution(units, dist, pins) {
       var itemHtml = '<div class="mwb-item-block" data-item-num="' + num + '">';
       itemHtml += '<div class="mwb-item-head">';
       itemHtml += '<span class="mwb-item-num">' + num + '.</span> ';
-      itemHtml += '<span class="mwb-item-title-ko">' + escapeHtml(titleKo) + '</span>';
-      itemHtml += '<span class="mwb-item-title-vi"> (' + escapeHtml(titleVi) + ')</span>';
+      itemHtml += '<div class="mwb-item-titles">';
+      itemHtml += '<div class="mwb-item-title-vi">' + escapeHtml(titleVi) + '</div>';
+      if (titleKo) itemHtml += '<div class="mwb-item-title-ko">' + escapeHtml(titleKo) + '</div>';
+      itemHtml += '</div>';
       itemHtml += '</div>';
 
       var maxParas = Math.max(parasKo.length, parasVi.length);
@@ -8760,32 +8769,66 @@ function verifyDistribution(units, dist, pins) {
           var pKo = parasKo[pi] || "";
           var pVi = parasVi[pi] || "";
           itemHtml += '<div class="mwb-detail-row">';
-          if (pKo) itemHtml += '<div class="mwb-detail-ko">' + escapeHtml(pKo) + '</div>';
           if (pVi) itemHtml += '<div class="mwb-detail-vi">' + escapeHtml(pVi) + '</div>';
+          if (pKo) itemHtml += '<div class="mwb-detail-ko">' + escapeHtml(pKo) + '</div>';
           itemHtml += '</div>';
         }
         itemHtml += '</div>';
       }
 
-      if (isStudent) {
+      if (num === 1) {
+        var talkKey = meta.startDate + '-item-1-speaker';
+        var assignedSpeaker = getMwbAssignment(talkKey) || item.speaker || '';
+        itemHtml += '<div class="mwb-student-slot" data-mwb-slot="' + meta.startDate + '-1">';
+        itemHtml += '<div class="mwb-slot-header"><span class="mwb-slot-tag">🎤 Diễn giả (10분 연설)</span></div>';
+        itemHtml += '<div class="mwb-slot-fields">';
+        itemHtml += '<span class="mwb-slot-field-label">연설자 (Diễn giả):</span> ';
+        itemHtml += '<span class="mwb-slot-field-val' + (assignedSpeaker ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + talkKey + '" data-slot-type="speaker" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công diễn giả" : "클릭하여 연설자 배정/수정") + '">';
+        itemHtml += assignedSpeaker ? escapeHtml(assignedSpeaker) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "미정") + ' ]');
+        itemHtml += '</span>';
+        itemHtml += '</div></div>';
+      } else if (num === 2) {
+        var gemsKey = meta.startDate + '-item-2-speaker';
+        var assignedGems = getMwbAssignment(gemsKey) || item.speaker || '';
+        itemHtml += '<div class="mwb-student-slot" data-mwb-slot="' + meta.startDate + '-2">';
+        itemHtml += '<div class="mwb-slot-header"><span class="mwb-slot-tag">💎 Người hướng dẫn (영적 보물 찾기)</span></div>';
+        itemHtml += '<div class="mwb-slot-fields">';
+        itemHtml += '<span class="mwb-slot-field-label">인도자 (Người hướng dẫn):</span> ';
+        itemHtml += '<span class="mwb-slot-field-val' + (assignedGems ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + gemsKey + '" data-slot-type="speaker" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công người hướng dẫn" : "클릭하여 보물찾기 인도자 배정/수정") + '">';
+        itemHtml += assignedGems ? escapeHtml(assignedGems) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "미정") + ' ]');
+        itemHtml += '</span>';
+        itemHtml += '</div></div>';
+      } else if (num === 3) {
+        var readKey = meta.startDate + '-item-3-student';
+        var assignedReader = getMwbAssignment(readKey) || item.assignee || '';
+        itemHtml += '<div class="mwb-student-slot" data-mwb-slot="' + meta.startDate + '-3">';
+        itemHtml += '<div class="mwb-slot-header"><span class="mwb-slot-tag">📖 Đọc Kinh Thánh (성경 낭독)</span></div>';
+        itemHtml += '<div class="mwb-slot-fields">';
+        itemHtml += '<span class="mwb-slot-field-label">낭독자 (Người đọc):</span> ';
+        itemHtml += '<span class="mwb-slot-field-val' + (assignedReader ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + readKey + '" data-slot-type="student" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công người đọc Kinh Thánh" : "클릭하여 성경 낭독자 배정/수정") + '">';
+        itemHtml += assignedReader ? escapeHtml(assignedReader) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "미정") + ' ]');
+        itemHtml += '</span>';
+        itemHtml += '</div></div>';
+      } else if (isStudent) {
         var studentKey = meta.startDate + '-item-' + num + '-student';
         var assistantKey = meta.startDate + '-item-' + num + '-assistant';
         var assignedStudent = getMwbAssignment(studentKey) || item.assignee || '';
         var assignedAssistant = getMwbAssignment(assistantKey) || item.assistant || '';
+        var isTalkMinistry = (titleVi && titleVi.indexOf('Bài giảng') >= 0) || (titleKo && titleKo.indexOf('연설') >= 0);
 
         itemHtml += '<div class="mwb-student-slot" data-mwb-slot="' + meta.startDate + '-' + num + '">';
         itemHtml += '<div class="mwb-slot-header">';
-        itemHtml += '<span class="mwb-slot-tag">👤 ' + (currentLang === "vi" ? "Phân công học viên" : "학생 과제 배정") + '</span>';
+        itemHtml += '<span class="mwb-slot-tag">' + (isTalkMinistry ? '🎤 Bài giảng (학생 연설)' : '👤 Phân công học viên (학생 과제 배정)') + '</span>';
         itemHtml += '</div>';
         itemHtml += '<div class="mwb-slot-fields">';
-        itemHtml += '<span class="mwb-slot-field-label">' + (currentLang === "vi" ? "Học viên:" : "배정 학생:") + '</span> ';
+        itemHtml += '<span class="mwb-slot-field-label">' + (isTalkMinistry ? '연설자 (Học viên):' : 'Học viên (배정 학생):') + '</span> ';
         itemHtml += '<span class="mwb-slot-field-val' + (assignedStudent ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + studentKey + '" data-slot-type="student" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công học viên" : "클릭하여 학생 배정/수정") + '">';
         itemHtml += assignedStudent ? escapeHtml(assignedStudent) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "배정 대상자 미정") + ' ]');
         itemHtml += '</span>';
 
-        if (item.section === 2) {
+        if (!isTalkMinistry && (item.section === 2 || assignedAssistant || item.assistant)) {
           itemHtml += '<span class="mwb-slot-divider">·</span>';
-          itemHtml += '<span class="mwb-slot-field-label">' + (currentLang === "vi" ? "Trợ thủ:" : "보조자:") + '</span> ';
+          itemHtml += '<span class="mwb-slot-field-label">Trợ thủ (보조자):</span> ';
           itemHtml += '<span class="mwb-slot-field-val' + (assignedAssistant ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + assistantKey + '" data-slot-type="assistant" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công trợ thủ" : "클릭하여 보조자 배정/수정") + '">';
           itemHtml += assignedAssistant ? escapeHtml(assignedAssistant) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "보조자 미정") + ' ]');
           itemHtml += '</span>';
@@ -8794,23 +8837,23 @@ function verifyDistribution(units, dist, pins) {
         itemHtml += '</div>';
       } else if (isCbs) {
         var conductorKey = meta.startDate + '-cbs-conductor';
-        var readerKey = meta.startDate + '-cbs-reader';
+        var cbsReaderKey = meta.startDate + '-cbs-reader';
         var assignedConductor = getMwbAssignment(conductorKey) || item.conductor || '';
-        var assignedReader = getMwbAssignment(readerKey) || item.reader || '';
+        var assignedCbsReader = getMwbAssignment(cbsReaderKey) || item.reader || '';
 
         itemHtml += '<div class="mwb-student-slot cbs-slot" data-mwb-slot="' + meta.startDate + '-' + num + '">';
         itemHtml += '<div class="mwb-slot-header">';
-        itemHtml += '<span class="mwb-slot-tag">📖 ' + (currentLang === "vi" ? "Phần học Kinh Thánh" : "회중 성서 연구 배정") + '</span>';
+        itemHtml += '<span class="mwb-slot-tag">📖 Phần học Kinh Thánh của hội thánh (회중 성서 연구 배정)</span>';
         itemHtml += '</div>';
         itemHtml += '<div class="mwb-slot-fields">';
-        itemHtml += '<span class="mwb-slot-field-label">' + (currentLang === "vi" ? "Chủ tọa:" : "사회자:") + '</span> ';
+        itemHtml += '<span class="mwb-slot-field-label">Chủ tọa (사회자):</span> ';
         itemHtml += '<span class="mwb-slot-field-val' + (assignedConductor ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + conductorKey + '" data-slot-type="conductor" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công chủ tọa" : "클릭하여 사회자 배정/수정") + '">';
         itemHtml += assignedConductor ? escapeHtml(assignedConductor) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "미정") + ' ]');
         itemHtml += '</span>';
         itemHtml += '<span class="mwb-slot-divider">·</span>';
-        itemHtml += '<span class="mwb-slot-field-label">' + (currentLang === "vi" ? "Người đọc:" : "낭독자:") + '</span> ';
-        itemHtml += '<span class="mwb-slot-field-val' + (assignedReader ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + readerKey + '" data-slot-type="reader" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công người đọc" : "클릭하여 낭독자 배정/수정") + '">';
-        itemHtml += assignedReader ? escapeHtml(assignedReader) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "미정") + ' ]');
+        itemHtml += '<span class="mwb-slot-field-label">Người đọc (낭독자):</span> ';
+        itemHtml += '<span class="mwb-slot-field-val' + (assignedCbsReader ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + cbsReaderKey + '" data-slot-type="reader" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công người đọc" : "클릭하여 낭독자 배정/수정") + '">';
+        itemHtml += assignedCbsReader ? escapeHtml(assignedCbsReader) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "미정") + ' ]');
         itemHtml += '</span>';
         itemHtml += '</div>';
         itemHtml += '</div>';
@@ -8841,36 +8884,74 @@ function verifyDistribution(units, dist, pins) {
         '</div>';
     }
 
+    var officersHtml = '<div class="mwb-officers-card">' +
+      '<div class="mwb-officer-row">' +
+      '<div class="mwb-officer-col">' +
+      '<span class="mwb-officer-lbl-vi">Chủ tọa</span>' +
+      '<span class="mwb-officer-lbl-ko">사회자</span>' +
+      '<span class="mwb-slot-field-val' + (assignedChairman ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + chairmanKey + '" data-slot-type="chairman" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công chủ tọa buổi họp" : "클릭하여 집회 사회자 배정/수정") + '">' +
+      (assignedChairman ? escapeHtml(assignedChairman) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "미정") + ' ]')) +
+      '</span>' +
+      '</div>' +
+      '<div class="mwb-officer-col">' +
+      '<span class="mwb-officer-lbl-vi">Cầu nguyện mở đầu</span>' +
+      '<span class="mwb-officer-lbl-ko">시작 기도</span>' +
+      '<span class="mwb-slot-field-val' + (assignedOpenPrayer ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + openPrayerKey + '" data-slot-type="prayer" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công cầu nguyện mở đầu" : "클릭하여 시작 기도 배정/수정") + '">' +
+      (assignedOpenPrayer ? escapeHtml(assignedOpenPrayer) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "미정") + ' ]')) +
+      '</span>' +
+      '</div>' +
+      '<div class="mwb-officer-col">' +
+      '<span class="mwb-officer-lbl-vi">Cầu nguyện kết thúc</span>' +
+      '<span class="mwb-officer-lbl-ko">마치는 기도</span>' +
+      '<span class="mwb-slot-field-val' + (assignedClosePrayer ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + closePrayerKey + '" data-slot-type="prayer" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công cầu nguyện kết thúc" : "클릭하여 마치는 기도 배정/수정") + '">' +
+      (assignedClosePrayer ? escapeHtml(assignedClosePrayer) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "미정") + ' ]')) +
+      '</span>' +
+      '</div>' +
+      '</div>' +
+      '</div>';
+
     var card = '<div class="group-card mwb-program-card" data-open="false" data-mwb-date="' + escapeAttr(meta.classDate || meta.startDate) + '">' +
       '<button class="group-head">' +
       '<span class="curr-week-head">' +
-      '<span class="curr-week-badge mwb-head-badge">' + escapeHtml(headTitle) + '</span>' +
-      '<span class="curr-week-note">' + escapeHtml(headSub) + '</span>' +
+      '<span class="curr-week-badge mwb-head-badge">📖 ' + escapeHtml(headTitleVi) + '</span>' +
+      '<span class="curr-week-note">' + escapeHtml(headTitleKo) + ' · ' + escapeHtml(readingViLine || readingKoLine) + '</span>' +
       '</span>' +
       currChev() +
       '</button>' +
       '<div class="group-body">' +
       '<div class="mwb-card-intro">' +
-      '<div class="mwb-reading-line">📖 <strong>' + (currentLang === "vi" ? "Đọc Kinh Thánh:" : "성경 읽기:") + '</strong> ' +
-      '<span class="mwb-reading-val">' + escapeHtml(readingKo) + ' · ' + escapeHtml(readingVi) + '</span></div>' +
-      '<div class="mwb-wol-links">' +
-      '<a href="' + escapeAttr(mwb.url_ko || "") + '" target="_blank" rel="noopener noreferrer" class="mwb-wol-link">🔗 WOL 한국어 교재</a>' +
-      '<a href="' + escapeAttr(mwb.url_vi || "") + '" target="_blank" rel="noopener noreferrer" class="mwb-wol-link">🔗 WOL Tiếng Việt</a>' +
+      '<div class="mwb-reading-box">' +
+      '<div class="mwb-reading-line">📖 <strong>Đọc Kinh Thánh:</strong> <span class="mwb-reading-val">' + escapeHtml(readingVi) + '</span></div>' +
+      (readingKo ? '<div class="mwb-reading-ko">성경 읽기: ' + escapeHtml(readingKo) + '</div>' : '') +
       '</div>' +
-      '</div>';
+      '<div class="mwb-wol-links">' +
+      '<a href="' + escapeAttr(mwb.url_vi || "") + '" target="_blank" rel="noopener noreferrer" class="mwb-wol-link">🔗 WOL Tiếng Việt</a>' +
+      '<a href="' + escapeAttr(mwb.url_ko || "") + '" target="_blank" rel="noopener noreferrer" class="mwb-wol-link">🔗 WOL 한국어 교재</a>' +
+      '</div>' +
+      '</div>' +
+      officersHtml;
 
     card += '<div class="mwb-section mwb-sec-treasures">' +
-      '<div class="mwb-sec-title">💎 ' + (currentLang === "vi" ? "KHO BÁU TỪ KINH THÁNH (하느님의 말씀에 담긴 보물)" : "하느님의 말씀에 담긴 보물 (KHO BÁU TỪ KINH THÁNH)") + '</div>' +
+      '<div class="mwb-sec-title">' +
+      '<div class="mwb-sec-title-vi">💎 KHO BÁU TỪ KINH THÁNH</div>' +
+      '<div class="mwb-sec-title-ko">하느님의 말씀에 담긴 보물</div>' +
+      '</div>' +
       treasuresHtml +
       '</div>';
 
     card += '<div class="mwb-section mwb-sec-ministry">' +
-      '<div class="mwb-sec-title">🌾 ' + (currentLang === "vi" ? "CẢI THIỆN THÁNH CHỨC (야외 봉사에 힘쓰십시오)" : "야외 봉사에 힘쓰십시오 (CẢI THIỆN THÁNH CHỨC)") + '</div>' +
+      '<div class="mwb-sec-title">' +
+      '<div class="mwb-sec-title-vi">🌾 CẢI THIỆN THÁNH CHỨC</div>' +
+      '<div class="mwb-sec-title-ko">야외 봉사에 힘쓰십시오</div>' +
+      '</div>' +
       ministryHtml +
       '</div>';
 
     card += '<div class="mwb-section mwb-sec-living">' +
-      '<div class="mwb-sec-title">🐑 ' + (currentLang === "vi" ? "LỐI SỐNG CỦA MỘT TÍN ĐỒ (그리스도인 생활)" : "그리스도인 생활 (LỐI SỐNG CỦA MỘT TÍN ĐỒ)") + '</div>' +
+      '<div class="mwb-sec-title">' +
+      '<div class="mwb-sec-title-vi">🐑 LỐI SỐNG CỦA MỘT TÍN ĐỒ</div>' +
+      '<div class="mwb-sec-title-ko">그리스도인 생활 (회중 성서 연구만 베트남어로 진행)</div>' +
+      '</div>' +
       livingHtml +
       '</div>';
 
@@ -8888,6 +8969,10 @@ function verifyDistribution(units, dist, pins) {
     var units = regionalUnits();
     var openSession = currentClassKey(rp.sched.slots, function (s) { return s.session; });
     rp.sched.slots.forEach(function (slot, slotIdx) {
+      var mwb = findMwbProgram(slot.date, slot.calculatedDate);
+      if (mwb) {
+        html += renderMeetingWorkbookHtml(mwb);
+      }
       if (slot.type === "cancellation") {
         var prevSlot = null, nextSlot = null;
         for (var pi = slotIdx - 1; pi >= 0; pi--) {
@@ -8993,10 +9078,6 @@ function verifyDistribution(units, dist, pins) {
           '<div class="group-body"><div class="curr-item-list">' +
           '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
           '</div>' + assemblyHtml + cancelAssignCard + '</div></div>';
-        var mwbCancel = findMwbProgram(slot.date, slot.calculatedDate);
-        if (mwbCancel) {
-          html += renderMeetingWorkbookHtml(mwbCancel);
-        }
         return;
       }
       var sess = bySession[slot.session] || { session: slot.session, units: [], learning: [], assignments: [] };
@@ -9044,10 +9125,6 @@ function verifyDistribution(units, dist, pins) {
         html += '</div></div>';
       }
       html += '</div></div>';
-      var mwb = findMwbProgram(slot.date, slot.calculatedDate);
-      if (mwb) {
-        html += renderMeetingWorkbookHtml(mwb);
-      }
     });
     if (!rp.sessions.length) {
       html += '<div class="group-card" data-open="true"><button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(TU("일정 미정")) + '</span></span>' + currChev() + '</button><div class="group-body"><div class="curr-item-list"><div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div></div></div></div>';
@@ -9384,6 +9461,10 @@ function verifyDistribution(units, dist, pins) {
         var gramSeq = [{ cls: null }].concat(sched.slots.map(function (s) { return { cls: s.type === "instructional" ? grammarClassWeek(s.week) : null }; }));
         var openWeek = currentClassKey(sched.slots, function (s) { return s.week; });
         sched.slots.forEach(function (slot, slotIdx) {
+          var mwb = findMwbProgram(slot.date, slot.calculatedDate);
+          if (mwb) {
+            html += renderMeetingWorkbookHtml(mwb);
+          }
           var gramSpan = grammarHomeworkSpan(gramSeq, slotIdx + 1);
           if (slot.type === 'cancellation') {
             var nextInstForCancel = null;
@@ -9398,10 +9479,6 @@ function verifyDistribution(units, dist, pins) {
               '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
               '</div>' + grammarAssignCardHtml(applyDailyTasks(applyCourseSongHomework(applyCourseVocabHomework(addGrammarHomework(courseTimetableAssign(breakAssign(slot, instSlots), sched, slotIdx + 1), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), sched, slotIdx + 1), sched, slotIdx + 1), slot.date), cancelWk, slot.calculatedDate) +
               '</div></div>';
-            var mwbCancel = findMwbProgram(slot.date, slot.calculatedDate);
-            if (mwbCancel) {
-              html += renderMeetingWorkbookHtml(mwbCancel);
-            }
           } else {
             var badgeText = slot.week === 16 && !(courseGuideEntry(16) && !/총복습/.test((slot.title && (slot.title.ko || slot.title)) || "")) ?
               (slot.calculatedDate + " - " + TU("총복습") + slotDateNote(slot)) :
@@ -9507,10 +9584,6 @@ function verifyDistribution(units, dist, pins) {
               html += '</div></div>';
             }
             html += '</div></div>';
-            var mwb = findMwbProgram(slot.date, slot.calculatedDate);
-            if (mwb) {
-              html += renderMeetingWorkbookHtml(mwb);
-            }
           }
         });
       }
@@ -13067,6 +13140,9 @@ function verifyDistribution(units, dist, pins) {
       var roleName = (slotType === "assistant") ? (currentLang === "vi" ? "trợ thủ" : "보조자") :
                      (slotType === "conductor") ? (currentLang === "vi" ? "chủ tọa" : "사회자") :
                      (slotType === "reader") ? (currentLang === "vi" ? "người đọc" : "낭독자") :
+                     (slotType === "chairman") ? (currentLang === "vi" ? "chủ tọa buổi họp" : "집회 사회자") :
+                     (slotType === "prayer") ? (currentLang === "vi" ? "người cầu nguyện" : "기도 담당자") :
+                     (slotType === "speaker") ? (currentLang === "vi" ? "diễn giả / người hướng dẫn" : "연설자 / 인도자") :
                      (currentLang === "vi" ? "học viên" : "학생");
       var promptMsg = (currentLang === "vi" 
         ? "Phân công " + roleName + " (nhập tên hoặc để trống để hủy):"
@@ -13082,7 +13158,7 @@ function verifyDistribution(units, dist, pins) {
         } else {
           var unassignedText = (currentLang === "vi") ? "Chưa chỉ định" :
                                (slotType === "assistant") ? "보조자 미정" :
-                               (slotType === "conductor" || slotType === "reader") ? "미정" : "배정 대상자 미정";
+                               (slotType === "conductor" || slotType === "reader" || slotType === "chairman" || slotType === "prayer" || slotType === "speaker") ? "미정" : "배정 대상자 미정";
           mwbSlotVal.textContent = "[ " + unassignedText + " ]";
           mwbSlotVal.classList.add("empty");
           mwbSlotVal.classList.remove("assigned");
