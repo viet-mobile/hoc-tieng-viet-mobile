@@ -834,6 +834,9 @@ def build_data_js(site):
     parts.append(emit("TTS_GUIDE", {"order": TTS_GUIDE_ORDER, "langs": TTS_GUIDE}))
     parts.append(emit("BIBLE_OT", BIBLE_BOOKS_OT))
     parts.append(emit("BIBLE_NT", BIBLE_BOOKS_NT))
+    if os.path.exists(os.path.join(os.path.dirname(__file__), "bible_cited_verses.json")):
+        with open(os.path.join(os.path.dirname(__file__), "bible_cited_verses.json"), encoding="utf-8") as fh:
+            parts.append(emit("BIBLE_CITED_VERSES", json.load(fh)))
     parts.append(emit("NUM_BASIC", NUMBERS_BASIC))
     parts.append(emit("NUM_TEEN", NUMBERS_TEEN))
     parts.append(emit("NUM_TENS", NUMBERS_TENS))

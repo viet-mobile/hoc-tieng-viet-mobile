@@ -4466,8 +4466,8 @@
     });
     html += '<div class="reader-audio-row">' + audioOptionsHtml() + readAllButtonHtml(readEntries) + '</div><div class="reader-rows">';
     pairs.forEach(function (p) {
-      html += '<div class="reader-row"><div class="reader-text"><div class="vn reader-vi">' + escapeHtml(p[0]) + '</div>' +
-        (p[1] ? '<div class="reader-tr">' + escapeHtml(p[1]) + '</div>' : '') + '</div>' +
+      html += '<div class="reader-row"><div class="reader-text"><div class="vn reader-vi">' + formatScriptureHtml(escapeHtml(p[0])) + '</div>' +
+        (p[1] ? '<div class="reader-tr">' + formatScriptureHtml(escapeHtml(p[1])) + '</div>' : '') + '</div>' +
         '<button class="speak-btn" data-speak="' + escapeAttr(p[0]) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>';
     });
     html += '</div>';
@@ -9908,9 +9908,9 @@ function verifyDistribution(units, dist, pins) {
         '<div class="group-body"><div class="talk-lines">';
       lineUnits.forEach(function (l) {
         html += '<div class="talk-line"><span class="talk-who">' + escapeHtml(neighborWhoLabel(l.who)) + '</span>' +
-          '<div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
+          '<div class="talk-body"><div class="talk-vi">' + formatScriptureHtml(formatScriptureHtml(escapeHtml(l.vi))) +
           '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-          '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(l.kr) + '</span>' +
+          '<div class="talk-kr"><span class="talk-kr-text">' + formatScriptureHtml(formatScriptureHtml(escapeHtml(l.kr))) + '</span>' +
           '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(l.kr) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
           '</div></div></div>';
       });
@@ -9973,9 +9973,9 @@ function verifyDistribution(units, dist, pins) {
         '<div class="group-body"><div class="talk-lines">';
       turns.forEach(function (t) {
         html += '<div class="talk-line"><span class="talk-who">' + escapeHtml(dailyWhoLabel(t.who)) + '</span>' +
-          '<div class="talk-body"><div class="talk-vi">' + escapeHtml(t.vi) +
+          '<div class="talk-body"><div class="talk-vi">' + formatScriptureHtml(escapeHtml(t.vi)) +
           '<button class="speak-btn" data-speak="' + escapeAttr(t.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-          (t.kr ? '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(t.kr) + '</span>' +
+          (t.kr ? '<div class="talk-kr"><span class="talk-kr-text">' + formatScriptureHtml(escapeHtml(t.kr)) + '</span>' +
           '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(t.kr) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
           '</div>' : '') + '</div></div>';
       });
@@ -10204,9 +10204,9 @@ function verifyDistribution(units, dist, pins) {
         html += '<div class="group-card" data-open="' + (openSyls["lff" + ri] ? "true" : "false") + '" data-syl="lff' + ri + '" data-anchor="lff' + ri + '">' + lffHead +
           '<div class="group-body"><div class="talk-lines">';
         lineUnits.forEach(function (l) {
-          html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + escapeHtml(l.vi) +
+          html += '<div class="talk-line"><div class="talk-body"><div class="talk-vi">' + formatScriptureHtml(escapeHtml(l.vi)) +
             '<button class="speak-btn" data-speak="' + escapeAttr(l.vi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-            '<div class="talk-kr"><span class="talk-kr-text">' + escapeHtml(l.kr) + '</span>' +
+            '<div class="talk-kr"><span class="talk-kr-text">' + formatScriptureHtml(escapeHtml(l.kr)) + '</span>' +
             '<button type="button" class="speak-btn speak-meaning-btn" data-speak-meaning="' + escapeAttr(l.kr) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
             '</div></div></div>';
         });
@@ -10642,9 +10642,9 @@ function verifyDistribution(units, dist, pins) {
             '<span class="rw-gloss">' + escapeHtml(T(w.mean)) + '</span></div></div>';
         } else {
           html += '<div class="rhyme-word-row">' +
-            '<div class="rhyme-word-ex"><span class="vn">' + escapeHtml(wtExampleVi(w)) + '</span>' +
+            '<div class="rhyme-word-ex"><span class="vn">' + formatScriptureHtml(escapeHtml(wtExampleVi(w))) + '</span>' +
             '<button class="speak-btn" data-speak="' + escapeAttr(wtExampleVi(w)) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>' +
-            (w.example_mean ? '<div class="rhyme-word-ex-mean">' + escapeHtml(T(w.example_mean)) + '</div>' : '') +
+            (w.example_mean ? '<div class="rhyme-word-ex-mean">' + formatScriptureHtml(escapeHtml(T(w.example_mean))) + '</div>' : '') +
             '</div>';
         }
       });
@@ -10854,8 +10854,274 @@ function verifyDistribution(units, dist, pins) {
     if (u.pathname !== "/finder" || u.username || u.password || u.port) return false;
     var q = u.searchParams;
     if (q.get("srcid") !== "jwlshare" || !q.get("wtlocale")) return false;
-    return !!(q.get("lank") || q.get("docid"));
+    return !!(q.get("lank") || q.get("docid") || (q.get("pub") && q.get("bible")));
   }
+  // --- Scripture Citations and Mini Popup Modal ---
+  var cachedBibleCitationRegex = null;
+  function getBibleCitationRegex() {
+    if (cachedBibleCitationRegex) return cachedBibleCitationRegex;
+    if (typeof BIBLE_CITED_VERSES === "undefined" || !BIBLE_CITED_VERSES.aliases) return null;
+    var keys = Object.keys(BIBLE_CITED_VERSES.aliases).sort(function (a, b) { return b.length - a.length; });
+    var esc = keys.map(function (a) { return a.replace(/[\^$*+?.()|[\]{}\\/]/g, "\\$&"); }).join("|");
+    try {
+      cachedBibleCitationRegex = new RegExp("(^|[^\\p{L}\\p{M}\\d_])(" + esc + ")\\s+(\\d+)(?:\\s*:\\s*([\\d\\s,–~-]+(?:\\b|\\d)))?", "gui");
+    } catch (e) {
+      cachedBibleCitationRegex = null;
+    }
+    return cachedBibleCitationRegex;
+  }
+
+  function formatScriptureHtml(html) {
+    if (!html || typeof html !== "string") return html;
+    var re = getBibleCitationRegex();
+    if (!re) return html;
+    var parts = html.split(/(<[^>]+>)/g);
+    for (var i = 0; i < parts.length; i += 2) {
+      if (!parts[i]) continue;
+      parts[i] = parts[i].replace(re, function (match, pre, book, ch, vs) {
+        var citation = (book + " " + ch + (vs ? ":" + vs.trim() : "")).trim();
+        return (pre || "") + '<span class="scripture-badge" data-scripture-ref="' + escapeAttr(citation) + '" role="button" tabindex="0">' + escapeHtml(citation) + '</span>';
+      });
+    }
+    return parts.join("");
+  }
+
+  var ONE_CHAPTER_BOOKS = [31, 57, 63, 64, 65];
+
+  function parseScriptureRef(refStr) {
+    if (!refStr || typeof refStr !== "string") return null;
+    var s = refStr.trim().replace(/^[\(\[\{\s“"'\.,—]+|[\)\]\}\s“"'\.,—]+$/g, "");
+    var m = s.match(/^([123]\s+[^\d:]+|[^\d:]+)\s+(\d+)(?:\s*:\s*(.*))?$/);
+    if (!m) return null;
+    var bNameRaw = m[1].trim();
+    var chNum = parseInt(m[2], 10);
+    var vPart = m[3] ? m[3].trim() : "";
+
+    if (typeof BIBLE_CITED_VERSES === "undefined") return null;
+    var aliases = BIBLE_CITED_VERSES.aliases || {};
+    var bNum = aliases[bNameRaw.toLowerCase()];
+    if (!bNum) {
+      bNum = aliases[bNameRaw.toLowerCase().replace(/-/g, " ").replace(/\s+/g, " ").trim()];
+    }
+    if (!bNum) return null;
+
+    var chapter = chNum;
+    var verses = [];
+    if (ONE_CHAPTER_BOOKS.indexOf(bNum) >= 0 && !vPart) {
+      chapter = 1;
+      verses = [chNum];
+    } else if (vPart) {
+      var parts = vPart.split(/[,;、]/);
+      parts.forEach(function (p) {
+        p = p.trim();
+        if (!p) return;
+        var mRange = p.match(/^(\d+)\s*[-–~]\s*(\d+)$/);
+        if (mRange) {
+          var start = parseInt(mRange[1], 10), end = parseInt(mRange[2], 10);
+          if (start <= end && end - start <= 50) {
+            for (var v = start; v <= end; v++) verses.push(v);
+          }
+        } else {
+          var mSingle = p.match(/^(\d+)/);
+          if (mSingle) verses.push(parseInt(mSingle[1], 10));
+        }
+      });
+      verses = Array.from(new Set(verses)).sort(function (a, b) { return a - b; });
+    } else {
+      verses = [1];
+    }
+
+    return {
+      book: bNum,
+      chapter: chapter,
+      verses: verses,
+      raw: refStr
+    };
+  }
+
+  // 12 Standard Languages (GEMINI.md standard order A~L)
+  var SCRIPTURE_STD_LANGS = [
+    { code: "vi", letter: "A", name: "Tiếng Việt", wt: "VT" },
+    { code: "cs", letter: "B", name: "Čeština", wt: "B" },
+    { code: "zh_cn", letter: "C", name: "简体中文", wt: "CHS" },
+    { code: "zh", letter: "D", name: "繁體中文", wt: "CH" },
+    { code: "en", letter: "E", name: "English", wt: "E" },
+    { code: "fr", letter: "F", name: "Français", wt: "F" },
+    { code: "de", letter: "G", name: "Deutsch", wt: "X" },
+    { code: "hu", letter: "H", name: "Magyar", wt: "H" },
+    { code: "id", letter: "I", name: "Bahasa Indonesia", wt: "IN" },
+    { code: "ja", letter: "J", name: "日本語", wt: "J" },
+    { code: "ko", letter: "K", name: "한국어", wt: "KO" },
+    { code: "pl", letter: "L", name: "Polski", wt: "P" }
+  ];
+
+  var activeScriptureModal = null;
+
+  function closeScripturePopup() {
+    if (activeScriptureModal) {
+      activeScriptureModal.remove();
+      activeScriptureModal = null;
+    }
+  }
+
+  function openScripturePopup(refStr) {
+    closeScripturePopup();
+    if (typeof BIBLE_CITED_VERSES === "undefined") return;
+    var parsed = parseScriptureRef(refStr);
+    if (!parsed) return;
+
+    var bNum = parsed.book;
+    var chapter = parsed.chapter;
+    var verses = parsed.verses;
+
+    var selTargetLang = (currentLang && currentLang !== "vi") ? currentLang : "ko";
+    if (!SCRIPTURE_STD_LANGS.some(function (l) { return l.code === selTargetLang; })) {
+      selTargetLang = "ko";
+    }
+
+    var backdrop = document.createElement("div");
+    backdrop.className = "scripture-popup-backdrop";
+    backdrop.setAttribute("role", "dialog");
+    backdrop.setAttribute("aria-modal", "true");
+
+    var card = document.createElement("div");
+    card.className = "scripture-popup-card";
+
+    function padZero(n, width) {
+      var s = String(n);
+      while (s.length < width) s = "0" + s;
+      return s;
+    }
+
+    function getJwShareUrl(langCode) {
+      var langObj = SCRIPTURE_STD_LANGS.find(function (l) { return l.code === langCode; }) || SCRIPTURE_STD_LANGS[0];
+      var wtLocale = langObj.wt || "VT";
+      var firstV = verses[0] || 1;
+      var bibleCode = padZero(bNum, 2) + padZero(chapter, 3) + padZero(firstV, 3);
+      return "https://www.jw.org/finder?srcid=jwlshare&wtlocale=" + wtLocale + "&prefer=lang&pub=nwt&bible=" + bibleCode;
+    }
+
+    function renderModalContent() {
+      var viBookName = (BIBLE_CITED_VERSES.books["vi"] && BIBLE_CITED_VERSES.books["vi"][String(bNum)]) || ("Sách " + bNum);
+      var targetLangObj = SCRIPTURE_STD_LANGS.find(function (l) { return l.code === selTargetLang; }) || SCRIPTURE_STD_LANGS[10];
+      var targetBookName = (BIBLE_CITED_VERSES.books[selTargetLang] && BIBLE_CITED_VERSES.books[selTargetLang][String(bNum)]) || viBookName;
+
+      var versesText = verses.length > 1 ? (verses[0] + "-" + verses[verses.length - 1]) : String(verses[0] || 1);
+      if (verses.length > 1 && (verses[verses.length - 1] - verses[0] + 1 !== verses.length)) {
+        versesText = verses.join(", ");
+      }
+      var viTitleRef = viBookName + " " + chapter + ":" + versesText;
+      var targetTitleRef = targetBookName + " " + chapter + ":" + versesText;
+
+      var viLines = [];
+      var viFullSpeech = [];
+      verses.forEach(function (v) {
+        var key = bNum + ":" + chapter + ":" + v;
+        var vData = BIBLE_CITED_VERSES.verses[key];
+        var text = (vData && vData["vi"]) || "";
+        if (text) {
+          viLines.push('<div class="scripture-verse-line"><span class="scripture-vnum">' + v + '</span>' + escapeHtml(text) + '</div>');
+          viFullSpeech.push(text);
+        }
+      });
+      if (!viLines.length) {
+        viLines.push('<div class="scripture-verse-line">' + escapeHtml(refStr) + '</div>');
+      }
+
+      var targetLines = [];
+      var targetFullSpeech = [];
+      verses.forEach(function (v) {
+        var key = bNum + ":" + chapter + ":" + v;
+        var vData = BIBLE_CITED_VERSES.verses[key];
+        var text = (vData && vData[selTargetLang]) || "";
+        if (text) {
+          targetLines.push('<div class="scripture-verse-line"><span class="scripture-vnum">' + v + '</span>' + escapeHtml(text) + '</div>');
+          targetFullSpeech.push(text);
+        }
+      });
+      if (!targetLines.length) {
+        targetLines.push('<div class="scripture-verse-line" style="color:var(--ink-muted); font-style:italic;">' + TU("해당 언어의 성구 본문은 아래 JW.ORG 바로가기에서 확인할 수 있습니다.") + '</div>');
+      }
+
+      var jwUrl = getJwShareUrl(selTargetLang);
+
+      var langPillsHtml = SCRIPTURE_STD_LANGS.map(function (l) {
+        var isSelected = l.code === selTargetLang;
+        return '<button type="button" class="scripture-lang-pill" data-sc-lang="' + l.code + '" aria-selected="' + (isSelected ? "true" : "false") + '">' +
+          l.letter + ': ' + escapeHtml(l.name) + '</button>';
+      }).join("");
+
+      var html = '<div class="scripture-popup-head">' +
+        '<h3 class="scripture-popup-title"><span>📖</span> ' + escapeHtml(viTitleRef) + ' <span style="font-size:0.85em;color:var(--ink-muted);font-weight:normal;">/ ' + escapeHtml(targetTitleRef) + '</span></h3>' +
+        '<button type="button" class="scripture-popup-close" aria-label="' + TU("닫기") + '">✕</button>' +
+        '</div>' +
+        '<div class="scripture-lang-bar">' + langPillsHtml + '</div>' +
+        '<div class="scripture-popup-body">' +
+          '<div class="scripture-section">' +
+            '<div class="scripture-section-head">' +
+              '<span>A: Tiếng Việt (신세계역)</span>' +
+              '<button type="button" class="speak-btn sc-speak-vi" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' +
+            '</div>' +
+            '<div class="scripture-box box-vi scripture-vi vn" lang="vi">' + viLines.join("") + '</div>' +
+            '<div class="scripture-hint">' + TU("💡 베트남어 단어를 터치하면 발음과 뜻을 확인할 수 있습니다.") + '</div>' +
+          '</div>' +
+          '<div class="scripture-section">' +
+            '<div class="scripture-section-head">' +
+              '<span>' + targetLangObj.letter + ': ' + escapeHtml(targetLangObj.name) + ' (' + TU("신세계역") + ')</span>' +
+              (targetFullSpeech.length ? '<button type="button" class="speak-btn sc-speak-target" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' : '') +
+            '</div>' +
+            '<div class="scripture-box box-target">' + targetLines.join("") + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="scripture-popup-foot">' +
+          '<button type="button" class="btn btn-secondary btn-sm sc-btn-dismiss">' + TU("닫기") + '</button>' +
+          '<a class="btn-jw-scripture" href="' + escapeAttr(jwUrl) + '" target="_blank" rel="noopener noreferrer">JW.ORG ' + escapeHtml(targetLangObj.name) + ' 바로가기 ↗</a>' +
+        '</div>';
+
+      card.innerHTML = html;
+
+      card.querySelector(".scripture-popup-close").addEventListener("click", closeScripturePopup);
+      card.querySelector(".sc-btn-dismiss").addEventListener("click", closeScripturePopup);
+
+      var viSpeakBtn = card.querySelector(".sc-speak-vi");
+      if (viSpeakBtn) {
+        viSpeakBtn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          speak(viFullSpeech.join(" "));
+        });
+      }
+
+      var targetSpeakBtn = card.querySelector(".sc-speak-target");
+      if (targetSpeakBtn) {
+        targetSpeakBtn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          try {
+            var tag = READALL_LANG_TAG[selTargetLang] || "en-US";
+            robustSpeak({ text: targetFullSpeech.join(" "), lang: tag });
+          } catch (err) {}
+        });
+      }
+
+      card.querySelectorAll(".scripture-lang-pill").forEach(function (pill) {
+        pill.addEventListener("click", function (e) {
+          e.stopPropagation();
+          selTargetLang = pill.dataset.scLang;
+          renderModalContent();
+        });
+      });
+    }
+
+    renderModalContent();
+    backdrop.appendChild(card);
+
+    backdrop.addEventListener("click", function (e) {
+      if (e.target === backdrop) closeScripturePopup();
+    });
+
+    document.body.appendChild(backdrop);
+    activeScriptureModal = backdrop;
+  }
+
   // What a badge is for (tooltip / aria-label; the visible text is always just "JW.ORG").
   function jwBadgeKindLabels() {
     return {
@@ -12308,17 +12574,30 @@ function verifyDistribution(units, dist, pins) {
   }
   document.addEventListener("click", function (e) {
     if (lyricWordPop && e.target.closest && !e.target.closest(".lyric-word-pop")) lyricWordClose();
-    if (currentLang !== "ko" || !e.target.closest) return;
+    if (!e.target.closest) return;
+    var scBadge = e.target.closest(".scripture-badge");
+    if (scBadge) {
+      e.preventDefault();
+      var ref = scBadge.dataset.scriptureRef || scBadge.textContent.trim();
+      openScripturePopup(ref);
+      return;
+    }
+    if (currentLang !== "ko" && !e.target.closest(".scripture-vi, .verse-vi")) return;
     if (e.target.closest("button, a, input, select, textarea, .speak-btn, .phrase-star, .phrase-del, .curr-link-btn, .jw-link, .dict-link, .reading-btn, .lff-part-head, .group-head, .subtab-btn, .tab-btn, .nav-item, .pill-btn, .btn, .icon-btn")) return;
-    if (e.target.closest(".talk-kr, .reader-tr, .card-translation, .rhyme-word-ex-mean, .rw-gloss, .song-target-row, .lyric-target, .lyric-target-row, .pdf-sent-num, .target-lang, .target-translation, .tr-text, .tr-row")) return;
+    if (e.target.closest(".talk-kr, .reader-tr, .card-translation, .rhyme-word-ex-mean, .rw-gloss, .song-target-row, .lyric-target, .lyric-target-row, .pdf-sent-num, .target-lang, .target-translation, .tr-text, .tr-row, .box-target")) return;
     if (window.getSelection && String(window.getSelection()).length) return;
     var el = e.target.closest(".lyric-vi, .talk-vi, .reader-vi, .pdf-sent-head, .rhyme-word-ex, .rhyme-word-main, .bilingual-title-vi, .wt-article-vi, .lff-title-vi, .lpd-title-vi, .vocab-vi, .word-vi, .term-vi, .example-vi, .curr-item-vi, .curr-text-vi, .curr-title-vi, .curr-item-text, .conv-vi, .dial-vi, .grammar-vi, .grammar-ex-vi, .pattern-vi, .sb-vi, .scripture-vi, .verse-vi, [lang='vi'], .vn, .vietnamese-text") || e.target;
     var word = lyricWordAt(el, e.clientX, e.clientY);
     if (!word) return;
     var dict = vietWordDictionary(), key = lyricWordKey(word.text);
-    var isLyric = !!(el.closest && el.closest(".lyric-vi"));
-    if (isLyric || (dict && dict.meaning && dict.meaning[key])) {
+    var isLyricOrScripture = !!(el.closest && el.closest(".lyric-vi, .scripture-vi, .verse-vi"));
+    if (isLyricOrScripture || (dict && dict.meaning && dict.meaning[key])) {
       lyricWordShow(word);
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && activeScriptureModal) {
+      closeScripturePopup();
     }
   });
   document.addEventListener("change", function (e) {
@@ -12338,6 +12617,10 @@ function verifyDistribution(units, dist, pins) {
   window.lyricWordAt = lyricWordAt;
   window.lyricWordShow = lyricWordShow;
   window.lyricWordClose = lyricWordClose;
+  window.openScripturePopup = openScripturePopup;
+  window.closeScripturePopup = closeScripturePopup;
+  window.formatScriptureHtml = formatScriptureHtml;
+  window.parseScriptureRef = parseScriptureRef;
   window.__hanoiKo = { syllable: hanoiKoreanSyllable, word: hanoiKoreanWord, ipa: viIpaWord, ipaSyllable: viIpaSyllable };   // tests/test_lyric_word_popup.js
   window.addEventListener("scroll", lyricWordClose, true);
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") lyricWordClose(); });
@@ -12614,8 +12897,8 @@ function verifyDistribution(units, dist, pins) {
           (viTitle ? songTitleBadgesHtml(sel.number, "vi") : '') + '</div>' +
         '<div class="song-detail-title-line song-detail-title-line-target"><div class="song-detail-target-title">' + escapeHtml(targetTitle) + '</div>' +
           (targetTitle && currentLang !== "vi" ? songTitleBadgesHtml(sel.number, currentLang) : '') + '</div>' +
-        (viScripture ? '<div class="song-detail-vi-scripture vn">' + escapeHtml(viScripture) + '</div>' : '') +
-        (targetScripture ? '<div class="song-detail-target-scripture">' + escapeHtml(targetScripture) + '</div>' : '') +
+        (viScripture ? '<div class="song-detail-vi-scripture vn">' + formatScriptureHtml(escapeHtml(viScripture)) + '</div>' : '') +
+        (targetScripture ? '<div class="song-detail-target-scripture">' + formatScriptureHtml(escapeHtml(targetScripture)) + '</div>' : '') +
       '</div>' +
       '<div class="song-detail-nav">' + songJwMenuHtml(songJwMenuItems(sel.number)) + audioOptionsHtml() +
         readAllButtonHtml(songLines) +

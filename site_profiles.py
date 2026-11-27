@@ -24,7 +24,7 @@ JW_ONLY_CONSTS = {
     "CASES",                    # app_data.json -- 형/동생 address-term practice dialogues; heavily
                                  # religious example content (626 여호와/성경/왕국/Giê-hô-va hits)
     "VOCAB_THEO",                # vocab_theo.json -- "신권" (theocratic) vocabulary
-    "BIBLE_OT", "BIBLE_NT",      # bible_numbers_data.py -- 66 Bible book names (the *_NUM_* half
+    "BIBLE_OT", "BIBLE_NT", "BIBLE_CITED_VERSES",  # bible_numbers_data.py, bible_cited_verses.json
                                  # of that same file is general Vietnamese numbers, kept)
     "GRAMMAR_INTRO", "GRAMMAR_UNITS",  # grammar_data.py -- pervasive religious example sentences
     "CURR_WELCOME", "CURR_PHASES", "CURR_WEEKS",  # curriculum_data.py -- JW course source;

@@ -3432,6 +3432,207 @@
   .tg-result.ok { color: var(--good); font-weight: 700; display: flex; align-items: center; gap: 6px; }
   .tg-result.bad { color: var(--danger); font-weight: 700; }
   .tg-nav .foot-btn { display: inline-flex; align-items: center; justify-content: center; gap: 4px; }
+
+  /* Scripture Citations & Mini Popup Window */
+  .scripture-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 1px 7px;
+    margin: 0 3px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--primary, #1a56db);
+    background: rgba(26, 86, 219, 0.08);
+    border: 1px solid rgba(26, 86, 219, 0.25);
+    border-radius: 6px;
+    cursor: pointer;
+    vertical-align: baseline;
+    line-height: 1.35;
+    transition: all 0.15s ease;
+    user-select: text;
+  }
+  .scripture-badge:hover, .scripture-badge:focus-visible {
+    background: rgba(26, 86, 219, 0.18);
+    border-color: rgba(26, 86, 219, 0.5);
+    text-decoration: underline;
+  }
+  .scripture-popup-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    box-sizing: border-box;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    animation: scFadeIn 0.18s ease-out;
+  }
+  @keyframes scFadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes scPopIn { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  .scripture-popup-card {
+    background: var(--surface, #ffffff);
+    color: var(--ink, #1f2937);
+    border: 1px solid var(--border, #e5e7eb);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 620px;
+    max-height: min(88vh, 760px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    animation: scPopIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .scripture-popup-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--border, #e5e7eb);
+    background: var(--surface-2, #f9fafb);
+  }
+  .scripture-popup-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary, #1a56db);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+  }
+  .scripture-popup-close {
+    border: none;
+    background: transparent;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--ink-muted, #6b7280);
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: background 0.15s ease;
+  }
+  .scripture-popup-close:hover {
+    background: rgba(0, 0, 0, 0.08);
+    color: var(--ink, #111827);
+  }
+  .scripture-lang-bar {
+    display: flex;
+    gap: 6px;
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--border, #e5e7eb);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    background: var(--surface-1, #f3f4f6);
+  }
+  .scripture-lang-bar::-webkit-scrollbar { display: none; }
+  .scripture-lang-pill {
+    flex-shrink: 0;
+    border: 1px solid var(--border, #d1d5db);
+    background: var(--surface, #ffffff);
+    color: var(--ink, #374151);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+  }
+  .scripture-lang-pill:hover {
+    border-color: var(--primary, #1a56db);
+    color: var(--primary, #1a56db);
+  }
+  .scripture-lang-pill[aria-selected="true"] {
+    background: var(--primary, #1a56db);
+    color: #ffffff;
+    border-color: var(--primary, #1a56db);
+  }
+  .scripture-popup-body {
+    padding: 16px 18px;
+    overflow-y: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .scripture-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .scripture-section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--ink-muted, #4b5563);
+  }
+  .scripture-box {
+    padding: 12px 14px;
+    border-radius: 10px;
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+  .scripture-box.box-vi {
+    background: rgba(26, 86, 219, 0.04);
+    border-left: 4px solid var(--primary, #1a56db);
+  }
+  .scripture-box.box-target {
+    background: var(--surface-2, #f9fafb);
+    border-left: 4px solid var(--accent, #059669);
+  }
+  .scripture-verse-line {
+    margin-bottom: 6px;
+  }
+  .scripture-verse-line:last-child {
+    margin-bottom: 0;
+  }
+  .scripture-vnum {
+    font-weight: 700;
+    color: var(--primary, #1a56db);
+    font-size: 0.8em;
+    vertical-align: super;
+    margin-right: 4px;
+    user-select: none;
+  }
+  .scripture-hint {
+    font-size: 0.78rem;
+    color: var(--ink-muted, #6b7280);
+    margin-top: 4px;
+    padding-left: 4px;
+  }
+  .scripture-popup-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18px;
+    border-top: 1px solid var(--border, #e5e7eb);
+    background: var(--surface-2, #f9fafb);
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .btn-jw-scripture {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 8px;
+    background: #002244;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 0.84rem;
+    text-decoration: none !important;
+    transition: background 0.15s ease;
+  }
+  .btn-jw-scripture:hover {
+    background: #003366;
+  }
 </style>
 
 <div class="app" data-active-tab="review">
