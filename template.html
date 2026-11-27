@@ -540,8 +540,7 @@
   }
   .speak-btn svg { width: 13px; height: 13px; }
   .speak-btn:hover { background: var(--accent-soft); color: var(--accent); }
-  .speak-meaning-btn { opacity: 0.85; }
-  .speak-meaning-btn:hover { opacity: 1; }
+  .speak-meaning-btn { display: none !important; }
   .sb-result-kr { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
   .stage-foot-nav { display: flex; justify-content: space-between; gap: 10px; margin-top: 16px; }
   .foot-btn {
@@ -4110,6 +4109,18 @@
       background: rgba(192, 132, 252, 0.14);
       border-color: #c084fc;
     }
+  }
+  .mwb-speak-btn {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    min-height: 28px;
+    margin-left: 6px;
+    display: inline-flex;
+    vertical-align: middle;
+  }
+  .mwb-speak-btn::before {
+    inset: 2px;
   }
   .mwb-slot-header {
     margin-bottom: 6px;

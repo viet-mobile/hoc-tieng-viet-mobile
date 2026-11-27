@@ -8757,7 +8757,9 @@ function verifyDistribution(units, dist, pins) {
       itemHtml += '<div class="mwb-item-head">';
       itemHtml += '<span class="mwb-item-num">' + num + '.</span> ';
       itemHtml += '<div class="mwb-item-titles">';
-      itemHtml += '<div class="mwb-item-title-vi">' + escapeHtml(titleVi) + '</div>';
+      itemHtml += '<div class="mwb-item-title-vi">' + escapeHtml(titleVi) +
+        (titleVi ? ' <button type="button" class="speak-btn mwb-speak-btn" data-speak="' + escapeAttr(titleVi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' : '') +
+        '</div>';
       if (titleKo) itemHtml += '<div class="mwb-item-title-ko">' + escapeHtml(titleKo) + '</div>';
       itemHtml += '</div>';
       itemHtml += '</div>';
@@ -8769,7 +8771,8 @@ function verifyDistribution(units, dist, pins) {
           var pKo = parasKo[pi] || "";
           var pVi = parasVi[pi] || "";
           itemHtml += '<div class="mwb-detail-row">';
-          if (pVi) itemHtml += '<div class="mwb-detail-vi">' + escapeHtml(pVi) + '</div>';
+          if (pVi) itemHtml += '<div class="mwb-detail-vi">' + escapeHtml(pVi) +
+            ' <button type="button" class="speak-btn mwb-speak-btn" data-speak="' + escapeAttr(pVi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button></div>';
           if (pKo) itemHtml += '<div class="mwb-detail-ko">' + escapeHtml(pKo) + '</div>';
           itemHtml += '</div>';
         }
@@ -8921,7 +8924,9 @@ function verifyDistribution(units, dist, pins) {
       '<div class="group-body">' +
       '<div class="mwb-card-intro">' +
       '<div class="mwb-reading-box">' +
-      '<div class="mwb-reading-line">📖 <strong>Đọc Kinh Thánh:</strong> <span class="mwb-reading-val">' + escapeHtml(readingVi) + '</span></div>' +
+      '<div class="mwb-reading-line">📖 <strong>Đọc Kinh Thánh:</strong> <span class="mwb-reading-val">' + escapeHtml(readingVi) + '</span>' +
+      (readingVi ? ' <button type="button" class="speak-btn mwb-speak-btn" data-speak="' + escapeAttr(readingVi) + '" aria-label="' + TU("발음 듣기") + '">' + speakIcon() + '</button>' : '') +
+      '</div>' +
       (readingKo ? '<div class="mwb-reading-ko">성경 읽기: ' + escapeHtml(readingKo) + '</div>' : '') +
       '</div>' +
       '<div class="mwb-wol-links">' +
@@ -9683,7 +9688,7 @@ function verifyDistribution(units, dist, pins) {
     });
     bindCurrGroupCards(root);
     bindGotoButtons(root);
-    if (welcomeCard) bindCurrSpeakBtns(welcomeCard);
+    bindCurrSpeakBtns(root);
   }
 
   function renderCurrCulture() {
