@@ -18,6 +18,10 @@ JEONJU_COURSE_START_DATE = "2026-10-10"
 # cancellations below leave exactly 16 instructional sessions ending on 2027-02-20 (the 16th class is the graduation ceremony).
 JEONJU_COURSE_END_DATE = JEONJU_END.isoformat()
 JEONJU_INTERVAL_DAYS = 7
+
+import jeonju_mwb_data
+JEONJU_MWB_PROGRAMS = jeonju_mwb_data.JEONJU_MWB_PROGRAMS
+
 JEONJU_CANCELLATIONS = [
     {"date": "2026-11-07", "reason": "휴강"},
     {"date": "2026-11-28", "reason": "군산 한국어 순회대회"},

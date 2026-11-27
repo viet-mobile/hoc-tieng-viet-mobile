@@ -3846,6 +3846,187 @@
     margin-top: 4px;
     line-height: 1.5;
   }
+  /* MWB Program Card & Student Assignment Slots */
+  .mwb-program-card {
+    border-left: 4px solid var(--accent, #00897b);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .mwb-head-badge {
+    background: rgba(0, 137, 123, 0.12) !important;
+    color: #00796b !important;
+    font-weight: 600;
+  }
+  .mwb-card-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: var(--surface-sunken, #f8fafc);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 0.88rem;
+  }
+  .mwb-reading-line {
+    color: var(--ink, #1e293b);
+  }
+  .mwb-reading-val {
+    color: #00796b;
+    font-weight: 600;
+  }
+  .mwb-wol-links {
+    display: flex;
+    gap: 12px;
+  }
+  .mwb-wol-link {
+    font-size: 0.82rem;
+    color: #00796b;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .mwb-wol-link:hover {
+    text-decoration: underline;
+  }
+  .mwb-section {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border-soft, #e2e8f0);
+  }
+  .mwb-sec-title {
+    font-weight: 700;
+    font-size: 0.92rem;
+    margin-bottom: 8px;
+  }
+  .mwb-sec-treasures .mwb-sec-title {
+    color: #00796b;
+  }
+  .mwb-sec-ministry .mwb-sec-title {
+    color: #b78103;
+  }
+  .mwb-sec-living .mwb-sec-title {
+    color: #8e24aa;
+  }
+  .mwb-song-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px 10px;
+    margin: 6px 0;
+    font-size: 0.88rem;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 6px;
+  }
+  .mwb-song-vi {
+    color: var(--ink-soft, #64748b);
+    font-size: 0.82rem;
+  }
+  .mwb-time-badge {
+    font-size: 0.8rem;
+    color: var(--ink-soft, #64748b);
+  }
+  .mwb-item-block {
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    background: var(--surface-card, #ffffff);
+    border: 1px solid var(--border-soft, #e2e8f0);
+    border-radius: 6px;
+  }
+  .mwb-item-head {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ink, #1e293b);
+  }
+  .mwb-item-num {
+    font-weight: 700;
+    color: #00796b;
+  }
+  .mwb-item-title-vi {
+    color: var(--ink-soft, #64748b);
+    font-weight: 400;
+    font-size: 0.85rem;
+  }
+  .mwb-item-details {
+    margin-top: 6px;
+    font-size: 0.84rem;
+    line-height: 1.45;
+  }
+  .mwb-detail-row {
+    margin-top: 4px;
+    padding-left: 10px;
+    border-left: 2px solid var(--border-soft, #cbd5e1);
+  }
+  .mwb-detail-ko {
+    color: var(--ink, #334155);
+  }
+  .mwb-detail-vi {
+    color: var(--ink-soft, #64748b);
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+  .mwb-student-slot {
+    margin-top: 8px;
+    padding: 6px 10px;
+    background: rgba(183, 129, 3, 0.08);
+    border: 1px dashed #d97706;
+    border-radius: 6px;
+    font-size: 0.84rem;
+  }
+  .mwb-student-slot.cbs-slot {
+    background: rgba(142, 36, 170, 0.08);
+    border-color: #8e24aa;
+  }
+  .mwb-slot-header {
+    margin-bottom: 4px;
+  }
+  .mwb-slot-tag {
+    font-weight: 700;
+    color: #b45309;
+    font-size: 0.82rem;
+  }
+  .mwb-student-slot.cbs-slot .mwb-slot-tag {
+    color: #7b1fa2;
+  }
+  .mwb-slot-fields {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .mwb-slot-field-label {
+    font-weight: 600;
+    color: var(--ink, #1e293b);
+  }
+  .mwb-slot-field-val {
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .mwb-slot-field-val:hover {
+    background: rgba(0, 0, 0, 0.05);
+    text-decoration: underline;
+  }
+  .mwb-slot-field-val.empty {
+    color: var(--ink-soft, #94a3b8);
+    font-style: italic;
+  }
+  .mwb-slot-field-val.assigned {
+    color: #065f46;
+    font-weight: 600;
+    background: rgba(16, 185, 129, 0.15);
+  }
+  .mwb-slot-divider {
+    color: var(--border-soft, #cbd5e1);
+  }
+  .mwb-closing-comments {
+    width: 100%;
+    font-size: 0.82rem;
+    color: var(--ink-soft, #64748b);
+    margin-bottom: 4px;
+  }
 </style>
 
 <div class="app" data-active-tab="review">

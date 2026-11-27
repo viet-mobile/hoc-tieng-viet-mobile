@@ -8674,6 +8674,210 @@ function verifyDistribution(units, dist, pins) {
       (it.page ? '<span class="curr-item-page">p.' + it.page + '</span>' : '') + '</div>' +
       currLinkBtn(curriculumLinkForWeek(it.link, unit)) + '</div>';
   }
+
+  function getMwbAssignment(slotKey) {
+    try {
+      var raw = localStorage.getItem("jeonju_mwb_assignments");
+      var map = raw ? JSON.parse(raw) : {};
+      return map[slotKey] || "";
+    } catch(e) { return ""; }
+  }
+  function setMwbAssignment(slotKey, val) {
+    try {
+      var raw = localStorage.getItem("jeonju_mwb_assignments");
+      var map = raw ? JSON.parse(raw) : {};
+      if (val) map[slotKey] = val;
+      else delete map[slotKey];
+      localStorage.setItem("jeonju_mwb_assignments", JSON.stringify(map));
+    } catch(e) {}
+  }
+
+  function findMwbProgram(slotDate, calcDate) {
+    if (typeof JEONJU_MWB_PROGRAMS === "undefined" || !JEONJU_MWB_PROGRAMS || !JEONJU_MWB_PROGRAMS.length) return null;
+    var normDate = (slotDate || "").trim();
+    var normCalc = (calcDate || "").replace(/\//g, "-").trim();
+    for (var i = 0; i < JEONJU_MWB_PROGRAMS.length; i++) {
+      var p = JEONJU_MWB_PROGRAMS[i];
+      var m = p.meta || {};
+      if (m.classDate === normDate || m.classDate === normCalc) return p;
+      if (m.startDate === normDate || m.startDate === normCalc) return p;
+    }
+    return null;
+  }
+
+  function renderMeetingWorkbookHtml(mwb) {
+    if (!mwb) return "";
+    var d = mwb.date || {};
+    var rd = mwb.reading || {};
+    var meta = mwb.meta || {};
+    var songs = mwb.songs || [];
+    var openSong = songs[0] || "";
+    var midSong = songs[1] || "";
+    var closeSong = songs[2] || "";
+    
+    var dateLabelKo = d.ko || "";
+    var dateLabelVi = d.vi || "";
+    var readingKo = rd.ko || "";
+    var readingVi = rd.vi || "";
+    
+    var headTitle = "📖 " + (currentLang === "vi" 
+      ? "Lối sống và thánh chức · 그리스도인 생활과 봉사 (" + (dateLabelVi || dateLabelKo) + ")"
+      : "그리스도인 생활과 봉사 · Lối sống và thánh chức (" + (dateLabelKo || dateLabelVi) + ")");
+    var headSub = readingKo && readingVi ? readingKo + " · " + readingVi : (readingKo || readingVi);
+
+    var treasuresHtml = "";
+    var ministryHtml = "";
+    var livingHtml = "";
+
+    if (openSong) {
+      treasuresHtml += '<div class="mwb-song-row">' +
+        '🎵 <span class="assembly-song-pill" data-song-num="' + openSong + '" role="button" tabindex="0" title="' + TU("노래") + ' ' + openSong + '">' +
+        TU("노래") + ' ' + openSong + '</span> <span class="mwb-song-vi">(Bài hát ' + openSong + ')</span>' +
+        ' <span class="mwb-time-badge">| ' + (currentLang === "vi" ? "cầu nguyện & bình luận mở đầu (1 phút)" : "기도 및 여는 말 (1분)") + '</span>' +
+        '</div>';
+    }
+
+    (mwb.items || []).forEach(function(item) {
+      var num = item.num;
+      var titleKo = (item.title || {}).ko || "";
+      var titleVi = (item.title || {}).vi || "";
+      var parasKo = item.details_ko || [];
+      var parasVi = item.details_vi || [];
+      var isStudent = item.isStudent;
+      var isCbs = item.isCbs;
+      
+      var itemHtml = '<div class="mwb-item-block" data-item-num="' + num + '">';
+      itemHtml += '<div class="mwb-item-head">';
+      itemHtml += '<span class="mwb-item-num">' + num + '.</span> ';
+      itemHtml += '<span class="mwb-item-title-ko">' + escapeHtml(titleKo) + '</span>';
+      itemHtml += '<span class="mwb-item-title-vi"> (' + escapeHtml(titleVi) + ')</span>';
+      itemHtml += '</div>';
+
+      var maxParas = Math.max(parasKo.length, parasVi.length);
+      if (maxParas > 0) {
+        itemHtml += '<div class="mwb-item-details">';
+        for (var pi = 0; pi < maxParas; pi++) {
+          var pKo = parasKo[pi] || "";
+          var pVi = parasVi[pi] || "";
+          itemHtml += '<div class="mwb-detail-row">';
+          if (pKo) itemHtml += '<div class="mwb-detail-ko">' + escapeHtml(pKo) + '</div>';
+          if (pVi) itemHtml += '<div class="mwb-detail-vi">' + escapeHtml(pVi) + '</div>';
+          itemHtml += '</div>';
+        }
+        itemHtml += '</div>';
+      }
+
+      if (isStudent) {
+        var studentKey = meta.startDate + '-item-' + num + '-student';
+        var assistantKey = meta.startDate + '-item-' + num + '-assistant';
+        var assignedStudent = getMwbAssignment(studentKey) || item.assignee || '';
+        var assignedAssistant = getMwbAssignment(assistantKey) || item.assistant || '';
+
+        itemHtml += '<div class="mwb-student-slot" data-mwb-slot="' + meta.startDate + '-' + num + '">';
+        itemHtml += '<div class="mwb-slot-header">';
+        itemHtml += '<span class="mwb-slot-tag">👤 ' + (currentLang === "vi" ? "Phân công học viên" : "학생 과제 배정") + '</span>';
+        itemHtml += '</div>';
+        itemHtml += '<div class="mwb-slot-fields">';
+        itemHtml += '<span class="mwb-slot-field-label">' + (currentLang === "vi" ? "Học viên:" : "배정 학생:") + '</span> ';
+        itemHtml += '<span class="mwb-slot-field-val' + (assignedStudent ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + studentKey + '" data-slot-type="student" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công học viên" : "클릭하여 학생 배정/수정") + '">';
+        itemHtml += assignedStudent ? escapeHtml(assignedStudent) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "배정 대상자 미정") + ' ]');
+        itemHtml += '</span>';
+
+        if (item.section === 2) {
+          itemHtml += '<span class="mwb-slot-divider">·</span>';
+          itemHtml += '<span class="mwb-slot-field-label">' + (currentLang === "vi" ? "Trợ thủ:" : "보조자:") + '</span> ';
+          itemHtml += '<span class="mwb-slot-field-val' + (assignedAssistant ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + assistantKey + '" data-slot-type="assistant" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công trợ thủ" : "클릭하여 보조자 배정/수정") + '">';
+          itemHtml += assignedAssistant ? escapeHtml(assignedAssistant) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "보조자 미정") + ' ]');
+          itemHtml += '</span>';
+        }
+        itemHtml += '</div>';
+        itemHtml += '</div>';
+      } else if (isCbs) {
+        var conductorKey = meta.startDate + '-cbs-conductor';
+        var readerKey = meta.startDate + '-cbs-reader';
+        var assignedConductor = getMwbAssignment(conductorKey) || item.conductor || '';
+        var assignedReader = getMwbAssignment(readerKey) || item.reader || '';
+
+        itemHtml += '<div class="mwb-student-slot cbs-slot" data-mwb-slot="' + meta.startDate + '-' + num + '">';
+        itemHtml += '<div class="mwb-slot-header">';
+        itemHtml += '<span class="mwb-slot-tag">📖 ' + (currentLang === "vi" ? "Phần học Kinh Thánh" : "회중 성서 연구 배정") + '</span>';
+        itemHtml += '</div>';
+        itemHtml += '<div class="mwb-slot-fields">';
+        itemHtml += '<span class="mwb-slot-field-label">' + (currentLang === "vi" ? "Chủ tọa:" : "사회자:") + '</span> ';
+        itemHtml += '<span class="mwb-slot-field-val' + (assignedConductor ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + conductorKey + '" data-slot-type="conductor" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công chủ tọa" : "클릭하여 사회자 배정/수정") + '">';
+        itemHtml += assignedConductor ? escapeHtml(assignedConductor) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "미정") + ' ]');
+        itemHtml += '</span>';
+        itemHtml += '<span class="mwb-slot-divider">·</span>';
+        itemHtml += '<span class="mwb-slot-field-label">' + (currentLang === "vi" ? "Người đọc:" : "낭독자:") + '</span> ';
+        itemHtml += '<span class="mwb-slot-field-val' + (assignedReader ? ' assigned' : ' empty') + '" data-mwb-slot-key="' + readerKey + '" data-slot-type="reader" role="button" tabindex="0" title="' + (currentLang === "vi" ? "Nhấp để phân công người đọc" : "클릭하여 낭독자 배정/수정") + '">';
+        itemHtml += assignedReader ? escapeHtml(assignedReader) : ('[ ' + (currentLang === "vi" ? "Chưa chỉ định" : "미정") + ' ]');
+        itemHtml += '</span>';
+        itemHtml += '</div>';
+        itemHtml += '</div>';
+      }
+
+      itemHtml += '</div>';
+
+      if (item.section === 1) treasuresHtml += itemHtml;
+      else if (item.section === 2) ministryHtml += itemHtml;
+      else livingHtml += itemHtml;
+    });
+
+    var livingPrefix = "";
+    if (midSong) {
+      livingPrefix += '<div class="mwb-song-row">' +
+        '🎵 <span class="assembly-song-pill" data-song-num="' + midSong + '" role="button" tabindex="0" title="' + TU("노래") + ' ' + midSong + '">' +
+        TU("노래") + ' ' + midSong + '</span> <span class="mwb-song-vi">(Bài hát ' + midSong + ')</span>' +
+        '</div>';
+    }
+    livingHtml = livingPrefix + livingHtml;
+
+    if (closeSong) {
+      livingHtml += '<div class="mwb-song-row mwb-close-song">' +
+        '<div class="mwb-closing-comments">💬 ' + (currentLang === "vi" ? "Bình luận kết thúc (3 phút)" : "맺음말 (3분)") + '</div>' +
+        '🎵 <span class="assembly-song-pill" data-song-num="' + closeSong + '" role="button" tabindex="0" title="' + TU("노래") + ' ' + closeSong + '">' +
+        TU("노래") + ' ' + closeSong + '</span> <span class="mwb-song-vi">(Bài hát ' + closeSong + ')</span>' +
+        ' <span class="mwb-time-badge">| ' + (currentLang === "vi" ? "cầu nguyện kết thúc" : "마치는 기도") + '</span>' +
+        '</div>';
+    }
+
+    var card = '<div class="group-card mwb-program-card" data-open="false" data-mwb-date="' + escapeAttr(meta.classDate || meta.startDate) + '">' +
+      '<button class="group-head">' +
+      '<span class="curr-week-head">' +
+      '<span class="curr-week-badge mwb-head-badge">' + escapeHtml(headTitle) + '</span>' +
+      '<span class="curr-week-note">' + escapeHtml(headSub) + '</span>' +
+      '</span>' +
+      currChev() +
+      '</button>' +
+      '<div class="group-body">' +
+      '<div class="mwb-card-intro">' +
+      '<div class="mwb-reading-line">📖 <strong>' + (currentLang === "vi" ? "Đọc Kinh Thánh:" : "성경 읽기:") + '</strong> ' +
+      '<span class="mwb-reading-val">' + escapeHtml(readingKo) + ' · ' + escapeHtml(readingVi) + '</span></div>' +
+      '<div class="mwb-wol-links">' +
+      '<a href="' + escapeAttr(mwb.url_ko || "") + '" target="_blank" rel="noopener noreferrer" class="mwb-wol-link">🔗 WOL 한국어 교재</a>' +
+      '<a href="' + escapeAttr(mwb.url_vi || "") + '" target="_blank" rel="noopener noreferrer" class="mwb-wol-link">🔗 WOL Tiếng Việt</a>' +
+      '</div>' +
+      '</div>';
+
+    card += '<div class="mwb-section mwb-sec-treasures">' +
+      '<div class="mwb-sec-title">💎 ' + (currentLang === "vi" ? "KHO BÁU TỪ KINH THÁNH (하느님의 말씀에 담긴 보물)" : "하느님의 말씀에 담긴 보물 (KHO BÁU TỪ KINH THÁNH)") + '</div>' +
+      treasuresHtml +
+      '</div>';
+
+    card += '<div class="mwb-section mwb-sec-ministry">' +
+      '<div class="mwb-sec-title">🌾 ' + (currentLang === "vi" ? "CẢI THIỆN THÁNH CHỨC (야외 봉사에 힘쓰십시오)" : "야외 봉사에 힘쓰십시오 (CẢI THIỆN THÁNH CHỨC)") + '</div>' +
+      ministryHtml +
+      '</div>';
+
+    card += '<div class="mwb-section mwb-sec-living">' +
+      '<div class="mwb-sec-title">🐑 ' + (currentLang === "vi" ? "LỐI SỐNG CỦA MỘT TÍN ĐỒ (그리스도인 생활)" : "그리스도인 생활 (LỐI SỐNG CỦA MỘT TÍN ĐỒ)") + '</div>' +
+      livingHtml +
+      '</div>';
+
+    card += '</div></div>';
+    return card;
+  }
+
   // Variable-length session cards: one card per generated instructional session (and per cancellation), in date order.
   function regionalSessionCards(rp) {
     var html = "";
@@ -8789,6 +8993,10 @@ function verifyDistribution(units, dist, pins) {
           '<div class="group-body"><div class="curr-item-list">' +
           '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
           '</div>' + assemblyHtml + cancelAssignCard + '</div></div>';
+        var mwbCancel = findMwbProgram(slot.date, slot.calculatedDate);
+        if (mwbCancel) {
+          html += renderMeetingWorkbookHtml(mwbCancel);
+        }
         return;
       }
       var sess = bySession[slot.session] || { session: slot.session, units: [], learning: [], assignments: [] };
@@ -8836,6 +9044,10 @@ function verifyDistribution(units, dist, pins) {
         html += '</div></div>';
       }
       html += '</div></div>';
+      var mwb = findMwbProgram(slot.date, slot.calculatedDate);
+      if (mwb) {
+        html += renderMeetingWorkbookHtml(mwb);
+      }
     });
     if (!rp.sessions.length) {
       html += '<div class="group-card" data-open="true"><button class="group-head"><span class="curr-week-head"><span class="curr-week-badge">' + escapeHtml(TU("일정 미정")) + '</span></span>' + currChev() + '</button><div class="group-body"><div class="curr-item-list"><div class="curr-item-row"><div class="curr-item-text" style="color:var(--ink-soft); font-style:italic;">' + TU("자료 미정") + '</div></div></div></div></div>';
@@ -9186,6 +9398,10 @@ function verifyDistribution(units, dist, pins) {
               '<div class="curr-item-row"><div class="curr-item-text" style="color:var(--warm); font-weight:600;">' + TU("휴강") + ': ' + escapeHtml(cancellationReasonLabel(slot.reason)) + '</div></div>' +
               '</div>' + grammarAssignCardHtml(applyDailyTasks(applyCourseSongHomework(applyCourseVocabHomework(addGrammarHomework(courseTimetableAssign(breakAssign(slot, instSlots), sched, slotIdx + 1), gramSpan.review, gramSpan.preview, gramSpan.part, gramSpan.parts), sched, slotIdx + 1), sched, slotIdx + 1), slot.date), cancelWk, slot.calculatedDate) +
               '</div></div>';
+            var mwbCancel = findMwbProgram(slot.date, slot.calculatedDate);
+            if (mwbCancel) {
+              html += renderMeetingWorkbookHtml(mwbCancel);
+            }
           } else {
             var badgeText = slot.week === 16 && !(courseGuideEntry(16) && !/총복습/.test((slot.title && (slot.title.ko || slot.title)) || "")) ?
               (slot.calculatedDate + " - " + TU("총복습") + slotDateNote(slot)) :
@@ -9291,6 +9507,10 @@ function verifyDistribution(units, dist, pins) {
               html += '</div></div>';
             }
             html += '</div></div>';
+            var mwb = findMwbProgram(slot.date, slot.calculatedDate);
+            if (mwb) {
+              html += renderMeetingWorkbookHtml(mwb);
+            }
           }
         });
       }
@@ -12838,6 +13058,38 @@ function verifyDistribution(units, dist, pins) {
       openScripturePopup(ref);
       return;
     }
+    var mwbSlotVal = e.target.closest && e.target.closest(".mwb-slot-field-val");
+    if (mwbSlotVal) {
+      e.preventDefault();
+      var slotKey = mwbSlotVal.dataset.mwbSlotKey;
+      var slotType = mwbSlotVal.dataset.slotType || "student";
+      var currentVal = getMwbAssignment(slotKey) || "";
+      var roleName = (slotType === "assistant") ? (currentLang === "vi" ? "trợ thủ" : "보조자") :
+                     (slotType === "conductor") ? (currentLang === "vi" ? "chủ tọa" : "사회자") :
+                     (slotType === "reader") ? (currentLang === "vi" ? "người đọc" : "낭독자") :
+                     (currentLang === "vi" ? "học viên" : "학생");
+      var promptMsg = (currentLang === "vi" 
+        ? "Phân công " + roleName + " (nhập tên hoặc để trống để hủy):"
+        : roleName + " 과제 배정 (성명 입력 또는 삭제하려면 빈칸):");
+      var input = window.prompt(promptMsg, currentVal);
+      if (input !== null) {
+        var cleanInput = input.trim();
+        setMwbAssignment(slotKey, cleanInput);
+        if (cleanInput) {
+          mwbSlotVal.textContent = cleanInput;
+          mwbSlotVal.classList.remove("empty");
+          mwbSlotVal.classList.add("assigned");
+        } else {
+          var unassignedText = (currentLang === "vi") ? "Chưa chỉ định" :
+                               (slotType === "assistant") ? "보조자 미정" :
+                               (slotType === "conductor" || slotType === "reader") ? "미정" : "배정 대상자 미정";
+          mwbSlotVal.textContent = "[ " + unassignedText + " ]";
+          mwbSlotVal.classList.add("empty");
+          mwbSlotVal.classList.remove("assigned");
+        }
+      }
+      return;
+    }
     if (currentLang !== "ko" && !e.target.closest(".scripture-vi, .verse-vi, .assembly-item-main, .assembly-q-main, .assembly-part-text, .assembly-theme-title, .assembly-item-sub.vn, .assembly-q-sub.vn")) return;
     if (e.target.closest("button, a, input, select, textarea, .speak-btn, .phrase-star, .phrase-del, .curr-link-btn, .jw-link, .dict-link, .reading-btn, .lff-part-head, .group-head, .subtab-btn, .tab-btn, .nav-item, .pill-btn, .btn, .icon-btn")) return;
     if (e.target.closest(".talk-kr, .reader-tr, .card-translation, .rhyme-word-ex-mean, .rw-gloss, .song-target-row, .lyric-target, .lyric-target-row, .pdf-sent-num, .target-lang, .target-translation, .tr-text, .tr-row, .box-target")) return;
@@ -12861,6 +13113,11 @@ function verifyDistribution(units, dist, pins) {
         e.preventDefault();
         var sNum = pill.dataset.songNum;
         if (sNum) selectKingdomSong(Number(sNum));
+      }
+      var mwbSlot = e.target && e.target.closest && e.target.closest(".mwb-slot-field-val");
+      if (mwbSlot) {
+        e.preventDefault();
+        mwbSlot.click();
       }
     }
   });
