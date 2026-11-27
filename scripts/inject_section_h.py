@@ -75,6 +75,12 @@ section_h_code = """
   var DEFAULT_MWB_MEMBERS = """ + json.dumps(default_members, ensure_ascii=False) + """;
   var DEFAULT_MWB_PROGRAMS = """ + json.dumps(slim_weeks, ensure_ascii=False) + """;
 
+  var STUDENTS_KO = {
+    '김재윤': 1, '오호경': 1, '김종배': 1, '최미순': 1, '박정환': 1, '원혜진': 1, '박유나': 1,
+    '박철현': 1, '이서희': 1, '이수연': 1, '이종명': 1, '이주옥': 1, '이제희': 1, '이제아': 1,
+    '최영주': 1, '한상현': 1, '한도희': 1, '서주연': 1, '한정우': 1, '유계화': 1, '김동주': 1
+  };
+
   function getMwbPrograms() {
     return (typeof window !== 'undefined' && window.JEONJU_MWB_PROGRAMS && window.JEONJU_MWB_PROGRAMS.length)
       ? window.JEONJU_MWB_PROGRAMS
@@ -113,11 +119,17 @@ section_h_code = """
 
   function formatMember(m) {
     if (!m) return '';
-    return m.ko + ' (' + m.vi + ', ' + m.call + ')';
+    var suffix = (m.gender === 'M') ? '형제' : '자매';
+    return m.call + '(' + m.ko + ' ' + suffix + ')';
   }
 
-  function canPairMembers(m1, m2) {
+  function canPairMembers(m1, m2, isStart) {
     if (!m1 || !m2 || m1.ko === m2.ko) return false;
+    // Return visit (Thăm lại / 재방문) and Disciple making (Đào tạo môn đồ / 제자삼기): SAME GENDER ONLY
+    if (!isStart) {
+      return m1.gender === m2.gender;
+    }
+    // Conversation starter (Bắt đầu cuộc trò chuyện): family allowed (spouse, parent-child), otherwise same gender
     if (m1.gender === m2.gender) return true;
     if (m1.spouse === m2.ko || m2.spouse === m1.ko) return true;
     if ((m1.parentOf || []).indexOf(m2.ko) >= 0 || (m2.parentOf || []).indexOf(m1.ko) >= 0) return true;
@@ -142,11 +154,19 @@ section_h_code = """
     programs.forEach(function (prog) {
       var meta = prog.meta || {};
       var sDate = meta.startDate;
+      var isDecember = (sDate.indexOf('2026-12') === 0);
+      var availPool = isDecember
+        ? roster.filter(function (m) { return !STUDENTS_KO[m.ko]; })
+        : roster;
+
       var weekAssigned = {};
 
       function pickCandidate(candList, roleName) {
-        var available = candList.filter(function (c) { return !weekAssigned[c.ko]; });
-        if (!available.length) available = candList.slice();
+        var cands = candList.filter(function (c) {
+          return availPool.some(function (ap) { return ap.ko === c.ko; });
+        });
+        var available = cands.filter(function (c) { return !weekAssigned[c.ko]; });
+        if (!available.length) available = cands.slice();
         available.sort(function (a, b) {
           var ca = counts[a.ko] || 0;
           var cb = counts[b.ko] || 0;
@@ -159,7 +179,8 @@ section_h_code = """
         if (chosen) {
           weekAssigned[chosen.ko] = true;
           counts[chosen.ko] = (counts[chosen.ko] || 0) + 1;
-          roleCounts[chosen.ko][roleName] = ((roleCounts[chosen.ko] && roleCounts[chosen.ko][roleName]) || 0) + 1;
+          if (!roleCounts[chosen.ko]) roleCounts[chosen.ko] = {};
+          roleCounts[chosen.ko][roleName] = (roleCounts[chosen.ko][roleName] || 0) + 1;
         }
         return chosen;
       }
@@ -200,22 +221,24 @@ section_h_code = """
           var tKo = (it.title && it.title.ko) || '';
           var tVi = (it.title && it.title.vi) || '';
           var isTalk = (tKo.indexOf('연설') >= 0 || tVi.indexOf('Bài giảng') >= 0);
+          var isStart = (tKo.indexOf('대화 시작하기') >= 0 || tKo.indexOf('첫방문') >= 0 || tVi.indexOf('Bắt đầu') >= 0);
+
           if (isTalk) {
-            var brotherCands = roster.filter(function (m) { return m.gender === 'M'; });
+            var brotherCands = availPool.filter(function (m) { return m.gender === 'M'; });
             var sp = pickCandidate(brotherCands, 'ministry_talk');
             if (sp) assignments[sDate + '-item-' + it.num + '-student'] = formatMember(sp);
           } else {
-            var ministryCands = roster.filter(function (m) { return m.roles && m.roles.ministry; });
+            var ministryCands = availPool.filter(function (m) { return m.roles && m.roles.ministry; });
             var st = pickCandidate(ministryCands, 'ministry');
             if (st) {
               assignments[sDate + '-item-' + it.num + '-student'] = formatMember(st);
 
-              var availAssts = roster.filter(function (m) {
-                return !weekAssigned[m.ko] && canPairMembers(st, m);
+              var availAssts = availPool.filter(function (m) {
+                return !weekAssigned[m.ko] && canPairMembers(st, m, isStart);
               });
               if (!availAssts.length) {
-                availAssts = roster.filter(function (m) {
-                  return m.ko !== st.ko && canPairMembers(st, m);
+                availAssts = availPool.filter(function (m) {
+                  return m.ko !== st.ko && canPairMembers(st, m, isStart);
                 });
               }
 
@@ -234,7 +257,8 @@ section_h_code = """
               if (asst) {
                 weekAssigned[asst.ko] = true;
                 counts[asst.ko] = (counts[asst.ko] || 0) + 1;
-                roleCounts[asst.ko]['ministry'] = ((roleCounts[asst.ko] && roleCounts[asst.ko]['ministry']) || 0) + 1;
+                if (!roleCounts[asst.ko]) roleCounts[asst.ko] = {};
+                roleCounts[asst.ko]['ministry'] = (roleCounts[asst.ko]['ministry'] || 0) + 1;
                 usedPairs[[st.ko, asst.ko].sort().join(':')] = true;
                 assignments[sDate + '-item-' + it.num + '-assistant'] = formatMember(asst);
               }
@@ -273,7 +297,7 @@ section_h_code = """
       });
     });
 
-    var subTabNav = '<div style="display:flex;gap:8px;margin-bottom:14px;">' +
+    var subTabNav = '<div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">' +
       '<button type="button" class="btn ' + (state.mwbSubTab === 'schedule' ? 'btn-primary' : 'btn-secondary') + '" data-act="mwb-subtab" data-subtab="schedule">📅 주차별 배정표 (11주간)</button>' +
       '<button type="button" class="btn ' + (state.mwbSubTab === 'roster' ? 'btn-primary' : 'btn-secondary') + '" data-act="mwb-subtab" data-subtab="roster">👥 성원 명단 및 역할 자격 (' + roster.length + '명)</button>' +
       '<button type="button" class="btn btn-primary" data-act="mwb-auto-assign" style="margin-left:auto;background:#059669;border-color:#059669;color:#fff;font-weight:700;">⚡ 자동 배정 실행 (Auto-Assign)</button>' +
@@ -284,7 +308,10 @@ section_h_code = """
       '<span>📖 그리스도인 생활과 봉사 집회 임명 관리 (Lối sống và thánh chức)</span>' +
       '<span class="tag tag-active" style="background:#e0f2fe;color:#0369a1;font-weight:600;">2026-12-07 ~ 2027-02-15 (11주간)</span>' +
       '</div>' +
-      '<p class="help-text" style="margin-bottom:12px;">동일 주간 중복 임명 금지(1인 1임명 우선), 2인 짝 과제 파트너 순환, 가족 짝 규칙(부부·부모자녀 첫방문 가능, 그 외 동성 짝) 및 전체 성원 공평 분배 알고리즘이 적용됩니다.</p>' +
+      '<p class="help-text" style="margin-bottom:12px;">' +
+      '12월(4주간)은 학생을 제외하고 교사/봉사자가 임명을 수행하며, 2027년 1월부터 학생 임명이 시작됩니다. ' +
+      '재방문·제자삼기는 동성끼리만 짝을 배정하며, 대화 시작하기는 가족(부부/부모자녀) 또는 동성 짝이 배정됩니다.' +
+      '</p>' +
       subTabNav +
       '</div>';
 
@@ -325,9 +352,10 @@ section_h_code = """
       if (m.parentOf && m.parentOf.length) rel.push('자녀: ' + m.parentOf.join(','));
       if (m.childOf && m.childOf.length) rel.push('부모: ' + m.childOf.join(','));
       var relText = rel.join(' · ') || '-';
+      var isStu = !!STUDENTS_KO[m.ko];
 
       return '<tr>' +
-        '<td><strong>' + esc(m.ko) + '</strong><br><span style="font-size:12px;color:var(--ink-soft);">' + esc(m.vi) + ' (' + esc(m.call) + ')</span></td>' +
+        '<td><strong>' + esc(formatMember(m)) + '</strong><br><span style="font-size:12px;' + (isStu ? 'color:#0284c7;' : 'color:#059669;') + '">' + (isStu ? '학습반 학생 (1월부터 배정)' : '교사/봉사자 (12월부터 배정)') + '</span></td>' +
         '<td><span class="tag ' + (m.gender === 'M' ? 'tag-active' : 'tag-cancel') + '">' + (m.gender === 'M' ? '형제' : '자매') + '</span></td>' +
         '<td style="font-size:12px;color:var(--ink-soft);">' + esc(relText) + '</td>' +
         '<td style="text-align:center;"><input type="checkbox" data-act="mwb-role-toggle" data-member-idx="' + idx + '" data-role="chairman"' + (r.chairman ? ' checked' : '') + (m.gender === 'F' ? ' disabled' : '') + '></td>' +
@@ -356,7 +384,7 @@ section_h_code = """
       '<div style="overflow-x:auto;">' +
       '<table class="table" style="font-size:13px;">' +
       '<thead><tr>' +
-      '<th>성명 (한/베)</th><th>성별</th><th>가족 관계</th>' +
+      '<th>성명 (호칭·이름)</th><th>성별</th><th>가족 관계</th>' +
       '<th>사회</th><th>기도</th><th>10분</th><th>보물</th><th>낭독</th><th>봉사</th><th>회중사회</th><th>회중낭독</th>' +
       '<th>배정수</th><th>관리</th>' +
       '</tr></thead>' +
@@ -473,163 +501,16 @@ section_h_code = """
 with open('regional_admin/admin_client.js', 'r', encoding='utf-8') as f:
     client_code = f.read()
 
-# 1. Update TABS
-old_tabs = """  var TABS = [
-    ['schedule', 'SECTION A — 수업 기간'],
-    ['cancellations', 'SECTION B — 휴강 관리'],
-    ['curriculum', 'SECTION C — 원본 커리큘럼'],
-    ['plan', 'SECTION D — 회차 배정'],
-    ['audit', 'SECTION E — 변경 이력 & 복구'],
-    ['songs', 'SECTION G — 노래 편집·게시']
-  ];"""
-
-new_tabs = """  var TABS = [
-    ['schedule', 'SECTION A — 수업 기간'],
-    ['cancellations', 'SECTION B — 휴강 관리'],
-    ['curriculum', 'SECTION C — 원본 커리큘럼'],
-    ['plan', 'SECTION D — 회차 배정'],
-    ['audit', 'SECTION E — 변경 이력 & 복구'],
-    ['songs', 'SECTION G — 노래 편집·게시'],
-    ['mwb', 'SECTION H — 생활과 봉사 집회 임명']
-  ];"""
-
-client_code = client_code.replace(old_tabs, new_tabs)
-
-# 2. Update renderTab
-old_rendertab = """    else if (state.tab === 'songs') window.SongsAdmin.render(c, { api: api, esc: esc, toast: toast });
-    else if (state.tab === 'guide') renderGuide(c);"""
-
-new_rendertab = """    else if (state.tab === 'songs') window.SongsAdmin.render(c, { api: api, esc: esc, toast: toast });
-    else if (state.tab === 'guide') renderGuide(c);
-    else if (state.tab === 'mwb') renderMwb(c);"""
-
-client_code = client_code.replace(old_rendertab, new_rendertab)
-
-# 3. Add event handlers into click listener and change listener
-old_click_switch = """      case 'restore': restore(id); break;
-      case 'plan-apply': applyPlan(t.getAttribute('data-token'), t.getAttribute('data-from'), t.getAttribute('data-to')); break;"""
-
-new_click_switch = """      case 'restore': restore(id); break;
-      case 'plan-apply': applyPlan(t.getAttribute('data-token'), t.getAttribute('data-from'), t.getAttribute('data-to')); break;
-      case 'mwb-subtab':
-        state.mwbSubTab = t.getAttribute('data-subtab');
-        renderTab();
-        break;
-      case 'mwb-auto-assign':
-        var resCounts = executeAutoAssignment();
-        toast('11주차 집회 임명 자동 배정이 완료되었습니다!');
-        renderTab();
-        break;
-      case 'mwb-add-member':
-        state.mwbShowAdd = true;
-        state.mwbEditingIdx = undefined;
-        renderTab();
-        break;
-      case 'mwb-edit-member':
-        state.mwbEditingIdx = +t.getAttribute('data-idx');
-        state.mwbShowAdd = true;
-        renderTab();
-        break;
-      case 'mwb-cancel-member':
-        state.mwbShowAdd = false;
-        state.mwbEditingIdx = undefined;
-        renderTab();
-        break;
-      case 'mwb-save-member':
-        var editIdx = t.getAttribute('data-idx');
-        var ko = ($('mwb-in-ko') && $('mwb-in-ko').value.trim()) || '';
-        var vi = ($('mwb-in-vi') && $('mwb-in-vi').value.trim()) || '';
-        var call = ($('mwb-in-call') && $('mwb-in-call').value.trim()) || '';
-        var gender = ($('mwb-in-gender') && $('mwb-in-gender').value) || 'M';
-        var spouse = ($('mwb-in-spouse') && $('mwb-in-spouse').value.trim()) || undefined;
-        var pOfRaw = ($('mwb-in-parentOf') && $('mwb-in-parentOf').value.trim()) || '';
-        var pOf = pOfRaw ? pOfRaw.split(',').map(function(s){return s.trim();}).filter(Boolean) : undefined;
-        if (!ko) { toast('한국어 성명을 입력해주세요.', true); break; }
-        var curRoster = getMwbRoster();
-        if (editIdx !== '' && curRoster[+editIdx]) {
-          var targetMem = curRoster[+editIdx];
-          targetMem.ko = ko; targetMem.vi = vi; targetMem.call = call; targetMem.gender = gender;
-          if (spouse) targetMem.spouse = spouse; else delete targetMem.spouse;
-          if (pOf && pOf.length) targetMem.parentOf = pOf; else delete targetMem.parentOf;
-        } else {
-          curRoster.push({
-            ko: ko, vi: vi, call: call, gender: gender,
-            spouse: spouse, parentOf: pOf,
-            roles: { ministry: 1, prayer: gender === 'M' ? 1 : 0, gems: gender === 'M' ? 1 : 0, reading: gender === 'M' ? 1 : 0 }
-          });
-        }
-        saveMwbRoster(curRoster);
-        state.mwbShowAdd = false;
-        state.mwbEditingIdx = undefined;
-        toast('성원 정보가 저장되었습니다.');
-        renderTab();
-        break;
-      case 'mwb-del-member':
-        var delIdx = +t.getAttribute('data-idx');
-        var curRoster2 = getMwbRoster();
-        if (curRoster2[delIdx]) {
-          if (confirm(curRoster2[delIdx].ko + ' 성원을 명단에서 삭제하시겠습니까?')) {
-            curRoster2.splice(delIdx, 1);
-            saveMwbRoster(curRoster2);
-            toast('삭제되었습니다.');
-            renderTab();
-          }
-        }
-        break;
-      case 'mwb-reset-roster':
-        if (confirm('성원 명단을 초기 33명 기본값으로 복원하시겠습니까?')) {
-          localStorage.removeItem('jeonju_mwb_roster');
-          toast('성원 명단이 기본값으로 복원되었습니다.');
-          renderTab();
-        }
-        break;
-      case 'mwb-reset-assign':
-        if (confirm('배정표를 기본 자동 배정 값으로 복원하시겠습니까?')) {
-          localStorage.removeItem('jeonju_mwb_assignments');
-          executeAutoAssignment();
-          toast('배정표가 기본값으로 복원되었습니다.');
-          renderTab();
-        }
-        break;"""
-
-client_code = client_code.replace(old_click_switch, new_click_switch)
-
-# 4. Add change listener for mwb-assign-change and mwb-role-toggle
-old_change = """  document.addEventListener('change', function (ev) {
-    var t = ev.target;
-    if (t && t.getAttribute && t.getAttribute('data-f') === 'pin') pinItem(t.getAttribute('data-uid'), t.value);"""
-
-new_change = """  document.addEventListener('change', function (ev) {
-    var t = ev.target;
-    if (t && t.getAttribute && t.getAttribute('data-f') === 'pin') pinItem(t.getAttribute('data-uid'), t.value);
-    if (t && t.getAttribute && t.getAttribute('data-act') === 'mwb-assign-change') {
-      var sKey = t.getAttribute('data-slot-key');
-      var sVal = t.value.trim();
-      var mwbMap = getMwbAssignmentsMap();
-      if (sVal) mwbMap[sKey] = sVal;
-      else delete mwbMap[sKey];
-      saveMwbAssignmentsMap(mwbMap);
-      toast('임명이 변경되었습니다: ' + (sVal || '(미정)'));
-    }
-    if (t && t.getAttribute && t.getAttribute('data-act') === 'mwb-role-toggle') {
-      var mIdx = +t.getAttribute('data-member-idx');
-      var rName = t.getAttribute('data-role');
-      var rList = getMwbRoster();
-      if (rList[mIdx]) {
-        if (!rList[mIdx].roles) rList[mIdx].roles = {};
-        rList[mIdx].roles[rName] = t.checked ? 1 : 0;
-        saveMwbRoster(rList);
-        toast('자격이 변경되었습니다.');
-      }
-    }"""
-
-client_code = client_code.replace(old_change, new_change)
-
-# 5. Insert section_h_code before closing IIFE
-last_paren = client_code.rfind('})();')
-client_code = client_code[:last_paren] + section_h_code + "\n})();\n"
+# Replace Section H in client_code
+idx_sec_h = client_code.find('/* ---------------- SECTION H:')
+if idx_sec_h != -1:
+    last_paren = client_code.rfind('})();')
+    client_code = client_code[:idx_sec_h] + section_h_code.strip() + "\n})();\n"
+else:
+    last_paren = client_code.rfind('})();')
+    client_code = client_code[:last_paren] + section_h_code.strip() + "\n})();\n"
 
 with open('regional_admin/admin_client.js', 'w', encoding='utf-8') as f:
     f.write(client_code)
 
-print("Injected Section H into regional_admin/admin_client.js successfully!")
+print("Updated Section H in regional_admin/admin_client.js successfully!")
