@@ -2132,6 +2132,79 @@
       .replace(/([A-Za-z\u00C0-\u1EF9][\s\u00a0]+)0(\d)(?![\d.,:\/])/g, "$1$2")
       .replace(/(^|[^\d.,:\/])0(\d)(?=\s*과)/g, "$1$2");
   }
+  // Official Vietnamese Bible Book Abbreviations mapping (from jw.org)
+  var VI_BIBLE_ABBR_MAP = {
+    "STK": "Sáng-thế Ký",
+    "Xu": "Xuất Ê-díp-tô Ký",
+    "Lê": "Lê-vi Ký",
+    "Dân": "Dân-số Ký",
+    "Phu": "Phục-truyền Luật-lệ Ký",
+    "Gs": "Giô-suê",
+    "QX": "Các Quan Xét",
+    "Ru": "Ru-tơ",
+    "1Sa": "1 Sa-mu-ên", "1 Sa": "1 Sa-mu-ên",
+    "2Sa": "2 Sa-mu-ên", "2 Sa": "2 Sa-mu-ên",
+    "1V": "1 Các Vua", "1 V": "1 Các Vua", "1 Vua": "1 Các Vua",
+    "2V": "2 Các Vua", "2 V": "2 Các Vua", "2 Vua": "2 Các Vua",
+    "1Sử": "1 Sử-ký", "1 Sử": "1 Sử-ký",
+    "2Sử": "2 Sử-ký", "2 Sử": "2 Sử-ký",
+    "Exr": "E-xơ-ra",
+    "Nê": "Nê-hê-mi",
+    "Êxt": "Ê-xơ-tê",
+    "Gp": "Gióp",
+    "Ch": "Châm-ngôn",
+    "Tr": "Truyền-đạo",
+    "Nhã": "Nhã-ca",
+    "Ês": "Ê-sai",
+    "Giê": "Giê-rê-mi",
+    "Ca": "Ca-thương",
+    "Êxê": "Ê-xê-chi-ên", "Ê-xê": "Ê-xê-chi-ên",
+    "Đa": "Đa-ni-ên",
+    "Ôsê": "Ô-sê",
+    "Gê": "Giô-ên",
+    "Am": "A-mốt",
+    "Áp": "Áp-đia",
+    "Gn": "Giô-na",
+    "Mi": "Mi-chê",
+    "Na": "Na-hum",
+    "Ha": "Ha-ba-cúc",
+    "Sô": "Sô-phô-ni",
+    "Ag": "A-ghê",
+    "Xa": "Xa-cha-ri",
+    "Mal": "Ma-la-chi",
+    "Mt": "Ma-thi-ơ", "Mat": "Ma-thi-ơ",
+    "Mác": "Mác",
+    "Lu": "Lu-ca",
+    "Gi": "Giăng",
+    "Cv": "Công vụ",
+    "Rm": "Rô-ma", "Rô": "Rô-ma",
+    "1Cô": "1 Cô-rinh-tô", "1 Cô": "1 Cô-rinh-tô",
+    "2Cô": "2 Cô-rinh-tô", "2 Cô": "2 Cô-rinh-tô",
+    "Ga": "Ga-la-ti",
+    "Êph": "Ê-phê-sô",
+    "Phl": "Phi-líp",
+    "Cô": "Cô-lô-se",
+    "1Tê": "1 Tê-sa-lô-ni-ca", "1 Tê": "1 Tê-sa-lô-ni-ca",
+    "2Tê": "2 Tê-sa-lô-ni-ca", "2 Tê": "2 Tê-sa-lô-ni-ca",
+    "1Ti": "1 Ti-mô-thê", "1 Ti": "1 Ti-mô-thê",
+    "2Ti": "2 Ti-mô-thê", "2 Ti": "2 Ti-mô-thê",
+    "Tít": "Tít",
+    "Phm": "Phi-lê-môn",
+    "Hê": "Hê-bơ-rơ",
+    "Gia": "Gia-cơ",
+    "1Ph": "1 Phi-e-rơ", "1 Ph": "1 Phi-e-rơ",
+    "2Ph": "2 Phi-e-rơ", "2 Ph": "2 Phi-e-rơ",
+    "1Gi": "1 Giăng", "1 Gi": "1 Giăng",
+    "2Gi": "2 Giăng", "2 Gi": "2 Giăng",
+    "3Gi": "3 Giăng", "3 Gi": "3 Giăng",
+    "Giu": "Giu-đe",
+    "Kh": "Khải huyền"
+  };
+  var VI_BIBLE_ABBR_KEYS = Object.keys(VI_BIBLE_ABBR_MAP).sort(function (a, b) { return b.length - a.length; });
+  var VI_BIBLE_ABBR_RE = new RegExp("(^|[^\\p{L}\\d])(" + VI_BIBLE_ABBR_KEYS.map(function (k) {
+    return k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s+");
+  }).join("|") + ")\\s+(\\d+)", "gu");
+
   function prepareSpeechText(text) {
     if (!text) return text;
     var out = stripLessonZerosForSpeech(stripSlashForSpeech(text.trim()));
@@ -2165,6 +2238,37 @@
     // the letter z gives that fricative: speech reads "zan" (the screen keeps "gian"). Whole syllable only: "giang", "giàn"... and
     // longer words are not touched.
     out = out.replace(/(^|[\s,.;:!?"“(])(g)ian(?=$|[\s,.;:!?"”)])/gi, function (m, pre, g) { return pre + (g === "G" ? "Z" : "z") + "an"; });
+    // Strip zero-width & narrow non-breaking spaces from WOL / JW content
+    out = out.replace(/[\u200B\u202F\uFEFF]/g, "");
+
+    // Expand Watchtower references: wYY.MM -> Tháp Canh tháng M năm YYYY
+    out = out.replace(/\bw(\d{2,4})\.(\d{1,2})\b/gi, function (m, yStr, mStr) {
+      var y = parseInt(yStr, 10), mo = parseInt(mStr, 10);
+      var yr = y >= 50 && y < 100 ? (1900 + y) : y < 50 ? (2000 + y) : y;
+      return "Tháp Canh tháng " + mo + " năm " + yr;
+    });
+    // Expand Watchtower date references: wYY D/M -> Tháp Canh ngày D tháng M năm YYYY
+    out = out.replace(/\bw(\d{2,4})\s+(\d{1,2})\/(\d{1,2})\b/gi, function (m, yStr, dStr, mStr) {
+      var y = parseInt(yStr, 10), d = parseInt(dStr, 10), mo = parseInt(mStr, 10);
+      var yr = y >= 50 && y < 100 ? (1900 + y) : y < 50 ? (2000 + y) : y;
+      return "Tháp Canh ngày " + d + " tháng " + mo + " năm " + yr;
+    });
+    // Expand MWB meeting workbook references: mwbYY.MM -> Lối sống và thánh chức tháng M năm YYYY
+    out = out.replace(/\bmwb(\d{2,4})\.(\d{1,2})\b/gi, function (m, yStr, mStr) {
+      var y = parseInt(yStr, 10), mo = parseInt(mStr, 10);
+      var yr = y >= 50 && y < 100 ? (1900 + y) : y < 50 ? (2000 + y) : y;
+      return "Lối sống và thánh chức tháng " + mo + " năm " + yr;
+    });
+    // Expand publication page and paragraph abbreviations: trg -> trang, đ. -> đoạn
+    out = out.replace(/(^|[^\p{L}\d])trg\b/giu, "$1trang");
+    out = out.replace(/(^|[^\p{L}\d])đ\.\s*(?=\d)/giu, "$1đoạn ");
+
+    // Expand Vietnamese Bible book abbreviations followed by chapter number to full book name
+    out = out.replace(VI_BIBLE_ABBR_RE, function (m, pre, abbr, ch) {
+      var full = VI_BIBLE_ABBR_MAP[abbr.replace(/\s+/g, " ")] || abbr;
+      return pre + full + " " + ch;
+    });
+
     // Hyphenated foreign proper nouns (people/place names, Bible book names) transliterated into
     // Vietnamese syllable-by-syllable -- "Giê-hô-va", "Giê-su", "Lê-vi", "Ki-tô" and the like --
     // read unnaturally with a hard pause on every hyphen. Vietnamese TTS reads these smoothly
