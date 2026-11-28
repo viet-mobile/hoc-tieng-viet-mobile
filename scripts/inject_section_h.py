@@ -68,12 +68,15 @@ for m in MEMBERS:
         entry['childOf'] = m['parents']
     default_members.append(entry)
 
+from scripts.inspect_jeonju_schedule import weekend_list as default_weekend_meetings
+
 section_h_code = """
 
-  /* ---------------- SECTION H: Christian Life and Ministry Meeting Assignments (생활과 봉사 집회 임명) ---------------- */
+  /* ---------------- SECTION H: Christian Life and Ministry Meeting Assignments (생활과 봉사 집회 임명 & 주말 모임) ---------------- */
 
   var DEFAULT_MWB_MEMBERS = """ + json.dumps(default_members, ensure_ascii=False) + """;
   var DEFAULT_MWB_PROGRAMS = """ + json.dumps(slim_weeks, ensure_ascii=False) + """;
+  var DEFAULT_WEEKEND_PROGRAMS = """ + json.dumps(default_weekend_meetings, ensure_ascii=False) + """;
 
   var STUDENTS_KO = {
     '김재윤': 1, '오호경': 1, '김종배': 1, '최미순': 1, '박정환': 1, '원혜진': 1, '박유나': 1,
@@ -117,6 +120,32 @@ section_h_code = """
     } catch(e) {}
   }
 
+  function getWeekendAssignmentsMap() {
+    try {
+      var raw = localStorage.getItem('jeonju_weekend_assignments');
+      return raw ? JSON.parse(raw) : {};
+    } catch(e) { return {}; }
+  }
+
+  function saveWeekendAssignmentsMap(map) {
+    try {
+      localStorage.setItem('jeonju_weekend_assignments', JSON.stringify(map));
+    } catch(e) {}
+  }
+
+  function getEffectiveWeekendSchedule() {
+    var map = getWeekendAssignmentsMap();
+    return DEFAULT_WEEKEND_PROGRAMS.map(function (item) {
+      var dStr = (item.year || 2026) + '-' + String(item.month).padStart(2, '0') + '-' + String(item.day).padStart(2, '0');
+      var row = JSON.parse(JSON.stringify(item));
+      if (map[dStr + '-chairman'] !== undefined) row.chairman = map[dStr + '-chairman'];
+      if (map[dStr + '-wtConductor'] !== undefined) row.wtConductor = map[dStr + '-wtConductor'];
+      if (map[dStr + '-wtReader'] !== undefined) row.wtReader = map[dStr + '-wtReader'];
+      if (map[dStr + '-closing'] !== undefined) row.closing = map[dStr + '-closing'];
+      return row;
+    });
+  }
+
   function formatMember(m) {
     if (!m) return '';
     var suffix = (m.gender === 'M') ? '형제' : '자매';
@@ -125,11 +154,9 @@ section_h_code = """
 
   function canPairMembers(m1, m2, isStart) {
     if (!m1 || !m2 || m1.ko === m2.ko) return false;
-    // Return visit (Thăm lại / 재방문) and Disciple making (Đào tạo môn đồ / 제자삼기): SAME GENDER ONLY
     if (!isStart) {
       return m1.gender === m2.gender;
     }
-    // Conversation starter (Bắt đầu cuộc trò chuyện): family allowed (spouse, parent-child), otherwise same gender
     if (m1.gender === m2.gender) return true;
     if (m1.spouse === m2.ko || m2.spouse === m1.ko) return true;
     if ((m1.parentOf || []).indexOf(m2.ko) >= 0 || (m2.parentOf || []).indexOf(m1.ko) >= 0) return true;
@@ -190,27 +217,27 @@ section_h_code = """
       var chosenChair = pickCandidate(chairCands, 'chairman');
       if (chosenChair) assignments[sDate + '-chairman'] = formatMember(chosenChair);
 
-      // 2. 10-min Talk (Item 1)
-      var talkCands = roster.filter(function (m) { return m.roles && m.roles.talk10; });
-      var chosenTalk = pickCandidate(talkCands, 'talk10');
-      if (chosenTalk) assignments[sDate + '-item-1-speaker'] = formatMember(chosenTalk);
-
-      // 3. CBS Conductor
+      // 2. CBS Conductor
       var cbsCondCands = roster.filter(function (m) { return m.roles && m.roles.cbsCond; });
       var chosenCbsCond = pickCandidate(cbsCondCands, 'cbsCond');
       if (chosenCbsCond) assignments[sDate + '-cbs-conductor'] = formatMember(chosenCbsCond);
 
-      // 4. CBS Reader
+      // 3. CBS Reader
       var cbsReadCands = roster.filter(function (m) { return m.roles && m.roles.cbsRead; });
       var chosenCbsRead = pickCandidate(cbsReadCands, 'cbsRead');
       if (chosenCbsRead) assignments[sDate + '-cbs-reader'] = formatMember(chosenCbsRead);
 
-      // 5. Gems (Item 2)
+      // 4. Talk 10
+      var talkCands = roster.filter(function (m) { return m.roles && m.roles.talk10; });
+      var chosenTalk = pickCandidate(talkCands, 'talk10');
+      if (chosenTalk) assignments[sDate + '-item-1-speaker'] = formatMember(chosenTalk);
+
+      // 5. Gems
       var gemsCands = roster.filter(function (m) { return m.roles && m.roles.gems; });
       var chosenGems = pickCandidate(gemsCands, 'gems');
       if (chosenGems) assignments[sDate + '-item-2-speaker'] = formatMember(chosenGems);
 
-      // 6. Bible Reading (Item 3)
+      // 6. Reading
       var readingCands = roster.filter(function (m) { return m.roles && m.roles.reading; });
       var chosenReading = pickCandidate(readingCands, 'reading');
       if (chosenReading) assignments[sDate + '-item-3-student'] = formatMember(chosenReading);
@@ -297,20 +324,23 @@ section_h_code = """
       });
     });
 
-    var subTabNav = '<div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">' +
-      '<button type="button" class="btn ' + (state.mwbSubTab === 'schedule' ? 'btn-primary' : 'btn-secondary') + '" data-act="mwb-subtab" data-subtab="schedule">📅 주차별 배정표 (11주간)</button>' +
+    var subTabNav = '<div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center;">' +
+      '<button type="button" class="btn ' + (state.mwbSubTab === 'schedule' ? 'btn-primary' : 'btn-secondary') + '" data-act="mwb-subtab" data-subtab="schedule">📅 주중 모임 배정표 (화요일 MWB 11주)</button>' +
+      '<button type="button" class="btn ' + (state.mwbSubTab === 'weekend' ? 'btn-primary' : 'btn-secondary') + '" data-act="mwb-subtab" data-subtab="weekend">☀️ 주말 모임 배정표 (일요일 11주)</button>' +
       '<button type="button" class="btn ' + (state.mwbSubTab === 'roster' ? 'btn-primary' : 'btn-secondary') + '" data-act="mwb-subtab" data-subtab="roster">👥 성원 명단 및 역할 자격 (' + roster.length + '명)</button>' +
-      '<button type="button" class="btn btn-primary" data-act="mwb-auto-assign" style="margin-left:auto;background:#059669;border-color:#059669;color:#fff;font-weight:700;">⚡ 자동 배정 실행 (Auto-Assign)</button>' +
+      '<a href="https://jeonju.nhom.tieng.viet.mobile" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-left:auto;text-decoration:none;display:inline-flex;align-items:center;gap:4px;">🌐 전주 집단 집회 일정 사이트 ↗</a>' +
+      (state.mwbSubTab === 'schedule' ? '<button type="button" class="btn btn-primary" data-act="mwb-auto-assign" style="background:#059669;border-color:#059669;color:#fff;font-weight:700;">⚡ 주중 자동 배정 실행</button>' : '') +
       '</div>';
 
     var headerCard = '<div class="card">' +
       '<div class="card-title" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">' +
-      '<span>📖 그리스도인 생활과 봉사 집회 임명 관리 (Lối sống và thánh chức)</span>' +
-      '<span class="tag tag-active" style="background:#e0f2fe;color:#0369a1;font-weight:600;">2026-12-07 ~ 2027-02-15 (11주간)</span>' +
+      '<span>📖 전주 베트남어 집단 집회 일정 및 임명 관리 (Lối sống và thánh chức & Cuối tuần)</span>' +
+      '<span class="tag tag-active" style="background:#e0f2fe;color:#0369a1;font-weight:600;">2026-12-08 ~ 2027-02-21 (11주간)</span>' +
       '</div>' +
       '<p class="help-text" style="margin-bottom:12px;">' +
+      '<strong>집회 일시:</strong> 매주 화요일 저녁 7:30 (그리스도인 생활과 봉사) · 매주 일요일 오후 4:00 (공개강연 & 파수대 연구)<br>' +
       '12월(4주간)은 학생을 제외하고 교사/봉사자가 임명을 수행하며, 2027년 1월부터 학생 임명이 시작됩니다. ' +
-      '재방문·제자삼기는 동성끼리만 짝을 배정하며, 대화 시작하기는 가족(부부/부모자녀) 또는 동성 짝이 배정됩니다.' +
+      '일요일 집회는 JW 스트림 공개강연과 anh Bình(김한빈 형제) 파수대 사회를 기본으로 하며 관리자 모드에서 수정·저장할 수 있습니다.' +
       '</p>' +
       subTabNav +
       '</div>';
@@ -318,10 +348,82 @@ section_h_code = """
     if (state.mwbSubTab === 'roster') {
       var rosterHtml = renderMwbRosterTab(roster, memberCounts);
       c.innerHTML = headerCard + rosterHtml;
+    } else if (state.mwbSubTab === 'weekend') {
+      var weekendHtml = renderMwbWeekendTab(roster, getWeekendAssignmentsMap());
+      c.innerHTML = headerCard + weekendHtml;
     } else {
       var scheduleHtml = renderMwbScheduleTab(programs, roster, assignments, memberCounts);
       c.innerHTML = headerCard + scheduleHtml;
     }
+  }
+
+  function renderMwbWeekendTab(roster, weekendMap) {
+    function weekendSelect(slotKey, currentVal, filterRole) {
+      var opts = '<option value="">-- 미정 (선택/삭제) --</option>';
+      roster.forEach(function (m) {
+        if (m.gender !== 'M') return; // Brothers only for weekend chairman/reader/prayer
+        if (filterRole && (!m.roles || !m.roles[filterRole])) return;
+        var formatted = formatMember(m);
+        var sel = (currentVal === formatted || currentVal.indexOf(m.ko) >= 0) ? ' selected' : '';
+        opts += '<option value="' + esc(formatted) + '"' + sel + '>' + esc(formatted) + '</option>';
+      });
+      return '<div style="display:flex;gap:6px;align-items:center;">' +
+        '<select class="form-control" style="font-size:12px;padding:3px 6px;height:auto;max-width:240px;" data-act="mwb-weekend-change" data-slot-key="' + esc(slotKey) + '">' + opts + '</select>' +
+        (currentVal ? '<button type="button" class="btn move-btn" style="color:var(--danger);font-size:11px;" data-act="mwb-weekend-clear" data-slot-key="' + esc(slotKey) + '" title="비우기/삭제">✕</button>' : '') +
+        '</div>';
+    }
+
+    var cards = DEFAULT_WEEKEND_PROGRAMS.map(function (item, idx) {
+      var dStr = (item.year || 2026) + '-' + String(item.month).padStart(2, '0') + '-' + String(item.day).padStart(2, '0');
+      var chairVal = (weekendMap[dStr + '-chairman'] !== undefined) ? weekendMap[dStr + '-chairman'] : (item.chairman || '');
+      var wtCondVal = (weekendMap[dStr + '-wtConductor'] !== undefined) ? weekendMap[dStr + '-wtConductor'] : (item.wtConductor || 'anh Bình(김한빈 형제)');
+      var wtReadVal = (weekendMap[dStr + '-wtReader'] !== undefined) ? weekendMap[dStr + '-wtReader'] : (item.wtReader || '');
+      var closeVal = (weekendMap[dStr + '-closing'] !== undefined) ? weekendMap[dStr + '-closing'] : (item.closing || '');
+
+      return '<div class="card" style="margin-bottom:14px;border-left:4px solid #10b981;">' +
+        '<div class="card-title" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">' +
+        '<span>☀️ 제 ' + (idx + 1) + '주차: <strong>' + (item.year || 2026) + '년 ' + item.month + '월 ' + item.day + '일 (일요일 오후 4:00)</strong> — Chủ Nhật ' + item.day + '/' + item.month + ' 16:00</span>' +
+        '<span class="tag tag-active" style="background:#d1fae5;color:#065f46;font-weight:700;">' + dStr + '</span>' +
+        '</div>' +
+        '<div style="overflow-x:auto;">' +
+        '<table class="table" style="font-size:13px;">' +
+        '<thead><tr><th style="width:24%;">순서 및 프로그램</th><th style="width:30%;">세부 내용 / 연제</th><th>담당자 (배정 / 수정 / 삭제)</th></tr></thead>' +
+        '<tbody>' +
+        '<tr>' +
+        '<td><strong>공개강연 사회 및 (시작) 기도</strong><br><span style="font-size:12px;color:var(--ink-soft);">Chủ tọa và cầu nguyện mở đầu</span></td>' +
+        '<td>사회 진행 및 개회 기도</td>' +
+        '<td>' + weekendSelect(dStr + '-chairman', chairVal, 'prayer') + '</td>' +
+        '</tr>' +
+        '<tr style="background:#f8fafc;">' +
+        '<td><strong>공개강연 (Bài giảng công cộng)</strong></td>' +
+        '<td><span class="tag" style="background:#e0f2fe;color:#0369a1;font-weight:700;">JW 스트림 연설 시청</span> (Xem bài giảng trên JW Stream)</td>' +
+        '<td style="font-size:12px;color:var(--ink-soft);">(JW 스트림 방송 연설)</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td><strong>파수대 연구 사회 (Điều khiển Tháp Canh)</strong></td>' +
+        '<td>파수대 기사 사회</td>' +
+        '<td>' + weekendSelect(dStr + '-wtConductor', wtCondVal, 'chairman') + '</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td><strong>파수대 연구 낭독 (Đọc Tháp Canh)</strong></td>' +
+        '<td>파수대 본문 낭독</td>' +
+        '<td>' + weekendSelect(dStr + '-wtReader', wtReadVal, 'reading') + '</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td><strong>(마치는) 기도 (Cầu nguyện kết thúc)</strong></td>' +
+        '<td>폐회 기도</td>' +
+        '<td>' + weekendSelect(dStr + '-closing', closeVal, 'prayer') + '</td>' +
+        '</tr>' +
+        '</tbody>' +
+        '</table></div></div>';
+    }).join('');
+
+    return '<div style="margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">' +
+      '<div><strong>전체 11주차 일요일 주말 모임 계획표</strong> (공개강연 & 파수대 연구)</div>' +
+      '<div style="display:flex;gap:8px;">' +
+      '<button type="button" class="btn btn-primary" data-act="mwb-export-weekend">📋 주말 일정 JSON 복사</button>' +
+      '<button type="button" class="btn btn-secondary" data-act="mwb-reset-weekend">기본값 복원</button>' +
+      '</div></div>' + cards;
   }
 
   function renderMwbRosterTab(roster, counts) {
@@ -501,6 +603,53 @@ section_h_code = """
 with open('regional_admin/admin_client.js', 'r', encoding='utf-8') as f:
     client_code = f.read()
 
+# Add event listeners for weekend actions if not present
+if "case 'mwb-weekend-clear':" not in client_code:
+    weekend_listeners = """      case 'mwb-weekend-clear':
+        var clrKey = t.getAttribute('data-slot-key');
+        var wMapClr = getWeekendAssignmentsMap();
+        delete wMapClr[clrKey];
+        saveWeekendAssignmentsMap(wMapClr);
+        toast('임명이 비워졌습니다 (기본값 또는 미정).');
+        renderTab();
+        break;
+      case 'mwb-reset-weekend':
+        if (confirm('일요일 주말 모임 임명을 초기 기본값으로 복원하시겠습니까?')) {
+          localStorage.removeItem('jeonju_weekend_assignments');
+          toast('주말 모임 임명이 기본값으로 복원되었습니다.');
+          renderTab();
+        }
+        break;
+      case 'mwb-export-weekend':
+        var wExport = getEffectiveWeekendSchedule();
+        var jsonText = JSON.stringify(wExport, null, 2);
+        try {
+          navigator.clipboard.writeText(jsonText).then(function() {
+            toast('주말 모임 일정 JSON 데이터가 클립보드에 복사되었습니다!');
+          });
+        } catch(e) {
+          prompt('아래 JSON 데이터를 복사하세요:', jsonText);
+        }
+        break;"""
+    client_code = client_code.replace("case 'mwb-reset-assign':", weekend_listeners + "\n      case 'mwb-reset-assign':")
+
+# Add change listener for mwb-weekend-change if not present
+if "data-act') === 'mwb-weekend-change'" not in client_code:
+    weekend_change_listener = """    if (t && t.getAttribute && t.getAttribute('data-act') === 'mwb-weekend-change') {
+      var wKey = t.getAttribute('data-slot-key');
+      var wVal = t.value.trim();
+      var wMap = getWeekendAssignmentsMap();
+      if (wVal) wMap[wKey] = wVal;
+      else delete wMap[wKey];
+      saveWeekendAssignmentsMap(wMap);
+      toast('주말 임명이 변경되었습니다: ' + (wVal || '(미정)'));
+    }
+"""
+    client_code = client_code.replace(
+        "if (t && t.getAttribute && t.getAttribute('data-act') === 'mwb-role-toggle')",
+        weekend_change_listener + "    if (t && t.getAttribute && t.getAttribute('data-act') === 'mwb-role-toggle')"
+    )
+
 # Replace Section H in client_code
 idx_sec_h = client_code.find('/* ---------------- SECTION H:')
 if idx_sec_h != -1:
@@ -513,4 +662,4 @@ else:
 with open('regional_admin/admin_client.js', 'w', encoding='utf-8') as f:
     f.write(client_code)
 
-print("Updated Section H in regional_admin/admin_client.js successfully!")
+print("Updated scripts/inject_section_h.py and regional_admin/admin_client.js successfully!")
