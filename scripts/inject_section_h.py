@@ -437,21 +437,21 @@ section_h_code = """
           var t10Val = assignments[sDate + '-item-1-speaker'] || it.speaker || '';
           rowsHtml += '<tr>' +
             '<td><span class="tag" style="background:#ecfdf5;color:#047857;">' + secName + '</span> ' + num + '. ' + esc(tVi) + '<br><span style="font-size:12px;color:var(--ink-soft);">' + esc(tKo) + '</span></td>' +
-            '<td>Diễn giả (10분 연설)</td>' +
+            '<td>Anh diễn giả (연설자)</td>' +
             '<td>' + personSelect(sDate + '-item-1-speaker', t10Val, 'talk10', true) + '</td>' +
             '<td></td></tr>';
         } else if (num === 2) {
           var gemsVal = assignments[sDate + '-item-2-speaker'] || it.speaker || '';
           rowsHtml += '<tr>' +
             '<td><span class="tag" style="background:#ecfdf5;color:#047857;">' + secName + '</span> ' + num + '. ' + esc(tVi) + '<br><span style="font-size:12px;color:var(--ink-soft);">' + esc(tKo) + '</span></td>' +
-            '<td>Người hướng dẫn (영적 보물)</td>' +
+            '<td>Anh điều khiển (사회자)</td>' +
             '<td>' + personSelect(sDate + '-item-2-speaker', gemsVal, 'gems', true) + '</td>' +
             '<td></td></tr>';
         } else if (num === 3) {
           var rdVal = assignments[sDate + '-item-3-student'] || it.assignee || '';
           rowsHtml += '<tr>' +
             '<td><span class="tag" style="background:#ecfdf5;color:#047857;">' + secName + '</span> ' + num + '. ' + esc(tVi) + '<br><span style="font-size:12px;color:var(--ink-soft);">' + esc(tKo) + '</span></td>' +
-            '<td>Người đọc (성경 낭독)</td>' +
+            '<td>Anh đọc (낭독자)</td>' +
             '<td>' + personSelect(sDate + '-item-3-student', rdVal, 'reading', true) + '</td>' +
             '<td></td></tr>';
         } else if (it.section === 2) {
@@ -468,7 +468,7 @@ section_h_code = """
           var cbsRdVal = assignments[sDate + '-cbs-reader'] || it.reader || '';
           rowsHtml += '<tr style="background:#faf5ff;">' +
             '<td><span class="tag" style="background:#f3e8ff;color:#7e22ce;">' + secName + '</span> ' + num + '. ' + esc(tVi) + '<br><span style="font-size:12px;color:var(--ink-soft);">' + esc(tKo) + '</span></td>' +
-            '<td>회중 성서 연구 (Chủ tọa/Người đọc)</td>' +
+            '<td>회중 성서 연구 (Anh điều khiển/Anh đọc)</td>' +
             '<td>사회: ' + personSelect(sDate + '-cbs-conductor', condVal, 'cbsCond', true) + '</td>' +
             '<td>낭독: ' + personSelect(sDate + '-cbs-reader', cbsRdVal, 'cbsRead', true) + '</td></tr>';
         }
